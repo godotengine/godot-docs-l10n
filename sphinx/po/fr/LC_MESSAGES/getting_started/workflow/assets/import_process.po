@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-10 12:22+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:4
+msgid "Import process"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:7
+msgid "Importing assets in Godot 3.0+"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:9
+msgid ""
+"Previously, importing assets in Godot 2.x required manual maintenance of a "
+"separate directory with source assets. Without doing this, it was impossible "
+"to specify how to convert and change import flags for textures, audios, "
+"scenes, etc."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:14
+msgid ""
+"In Godot 3.0, we use a more modern approach to importing: Simply drop your "
+"assets (image files, scenes, audios, fonts, etc) directly in the project "
+"folder (copy them manually with your OS file explorer). Godot will "
+"automatically import these files internally and keep the imported resources "
+"hidden in a res://.import folder."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:20
+msgid "This allows changing all the import parameters transparently."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:23
+msgid "Changing import parameters"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:25
+msgid ""
+"Changing the import parameters of an asset in Godot (again, keep in mind "
+"import parameters are only present in non-native Godot resource types) is "
+"easy. Just select in the filesystem dock the relevant resource:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:31
+msgid ""
+"And, after adjusting the parameters, just press \"Reimport\". The parameters "
+"used will be only for this asset and will be used on future reimports."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:34
+msgid ""
+"Changing import parameters of several assets at the same time is also "
+"possible. Simply select all of them together in the resources dock and the "
+"exposed parameters will apply to all of them when reimporting."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:39
+msgid "Automatic reimport"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:41
+msgid ""
+"When the MD5 checksum of the source asset changes, Godot will perform an "
+"automatic reimport of it, applying the preset configured for that specific "
+"asset."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:46
+msgid "Files generated"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:48
+msgid ""
+"Importing will add an extra <asset>.import file, containing the import "
+"configuration. Make sure to commit these to your version control system!"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:53
+msgid ""
+"Additionally, extra assets will be preset in the hidden res://.import folder:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:57
+msgid ""
+"If any of the files present in this folder is erased (or the whole folder), "
+"the asset or assets will be reimported automatically. As such, committing "
+"this folder to the version control system is optional. It can save time on "
+"reimporting time when checking out in another computer, but it takes "
+"considerably more space and transfer time. Pick your poison!"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:64
+msgid "Changing import resource type"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:66
+msgid ""
+"Some source assets can be imported as different types of resources. For "
+"this, just select the relevant type of resource desired and press \"Reimport"
+"\":"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:74
+msgid "Changing default import parameters"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:76
+msgid ""
+"Different types of games might require different defaults. Changing the "
+"defaults per project can be achieved by using the \"Preset..\" Menu. Besides "
+"some resource types offering presets, the default setting can be saved and "
+"cleared too:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:84
+msgid "Simplicity is key!"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:86
+msgid ""
+"This is a very simple workflow which should take very little time to get "
+"used to. It also enforces a more correct way to deal with resources."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/import_process.rst:89
+msgid ""
+"There are many types of assets available for import, so please continue "
+"reading to understand how to work with all of them!"
+msgstr ""
