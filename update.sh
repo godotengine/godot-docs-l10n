@@ -10,11 +10,15 @@ WEBLATE_DIR="weblate"
 WEBLATE_TEMPLATE="$WEBLATE_DIR/docs.pot"
 WEBLATE_POFILES=$(find $WEBLATE_DIR -type f -name "*.po")
 
+# Used only for --add-langs - languages will mostly be added via Weblate directly
+LANGS="es fr zh_CN"
+
 # Options
 update_sphinx_pot=false
 update_sphinx_po=false
 update_weblate_pot=false
 update_weblate_po=false
+add_langs=false
 
 # Command line arguments
 while [ $# -gt 0 ]; do
@@ -44,6 +48,10 @@ while [ $# -gt 0 ]; do
       update_sphinx_po=true
       update_weblate_pot=true
       update_weblate_po=true
+      ;;
+    --add-langs|-l)
+      add_langs=true
+      make_sphinx_po_symlinks=true
       ;;
     *)
       echo "Invalid argument."
@@ -80,6 +88,16 @@ if [ "$update_weblate_po" = true ]; then
     msgmerge -w 79 -i $WEBLATE_TEMPLATE -C $po $po > "$po".new
     mv -f "$po".new $po
   done
+fi
+
+# Manual method to generate new Weblate PO files to bootstrap a lang
+if [ "$add_langs" = true ]; then
+  for lang in $LANGS; do
+    if [ ! -f "$WEBLATE_DIR/$lang.po" ]; then
+      msginit --no-translator -i $WEBLATE_TEMPLATE -o "$WEBLATE_DIR/$lang.po";
+    fi
+  done
+  WEBLATE_POFILES=$(find $WEBLATE_DIR -type f -name "*.po")
 fi
 
 # Generate/Merge Sphinx PO files from Weblate PO file
