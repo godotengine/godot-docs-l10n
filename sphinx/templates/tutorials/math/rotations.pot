@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 12:22+0200\n"
+"POT-Creation-Date: 2018-04-19 09:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "Lie groups is a branch of mathematics which deals with rotations in a sys
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:20
-msgid "So let's start with small steps. Suppose that you want to make a really tiny rotation around some axis. For, concreteness let's say around  :math:`z`-axis by an infinitesimal angle :math:`\\delta\\theta`. For small angles, as illustrated in the figure, the rotation operator can be written as :math:`R_z(\\delta\\theta) = I + \\delta \\theta \\boldsymbol e_z \\times` (neglecting higher order terms :math:`\\mathcal O(\\delta\\theta^2)` ) where :math:`I` is identity operator and :math:`e_z` is a unit vector along the :math:`z`-axis, such that a vector :math:`\\boldsymbol v` becomes"
+msgid "So let's start with small steps. Suppose that you want to make a really tiny rotation around some axis. For, concreteness let's say around  :math:`z`-axis by an infinitesimal angle :math:`\\delta\\theta`. For small angles, as illustrated in the figure, the rotation operator can be written as :math:`R_z(\\delta\\theta) = I + \\delta \\theta \\boldsymbol e_z \\times` (neglecting higher order terms :math:`\\mathcal O(\\delta\\theta^2)` ) where :math:`I` is identity operator and :math:`\\boldsymbol e_z` is a unit vector along the :math:`z`-axis, such that a vector :math:`\\boldsymbol v` becomes"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:26
@@ -41,7 +41,7 @@ msgid "(If this isn't clear, you can verify this by looking at the figure: :math
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:28
-msgid "Now, a practical way of representing operators is by using matrices (note that an operator is not a matrix, and there are different mathematical objects other than matrices which be used to represent operators, such as quaternions, a point which we will come back to later when we're discussing `representations <https://en.wikipedia.org/wiki/Group_representation>`_ . In terms of real :math:`3 \\times 3` matrices, the identity operator :math:`I` simply corresponds to a :math:`3 \\times 3` identity matrix, and the cross product :math:`\\boldsymbol e_z \\times` can be represented as"
+msgid "Now, a practical way of representing operators is by using matrices (note that an `operator <https://en.wikipedia.org/wiki/Operator_(mathematics)>`_ is not a matrix, and there are different mathematical objects other than matrices which be used to represent operators, such as quaternions, a point which we will come back to later when we're discussing `representations <https://en.wikipedia.org/wiki/Group_representation>`_ . In terms of real :math:`3 \\times 3` matrices, the identity operator :math:`I` simply corresponds to a :math:`3 \\times 3` identity matrix, and the cross product :math:`\\boldsymbol e_z \\times` can be represented as"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:38
@@ -69,15 +69,15 @@ msgid "where :math:`\\boldsymbol J = (J_x, J_y, J_z)`. Note how the rotation axi
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:77
-msgid "If you ever tried to derive the rotation matrix corresponding to a :math:`\\theta` rotation around :math:`\\boldsymbol n`, you can appreciate the simplicity and elegance of we obtained this result. To be fair, we still need to figure out how to actually use an operator sitting on top of an exponent (by summing up the Taylor series), of course, but that's merely a \"programmatic\" labor and you just need to follow the finite multiplication table of :math:`J_i` operators. But this is much straightforward than trying to draw geometric diagrams and angles and figure out the rotation matrix. For the particular case of the algebra corresponding to rotations in 3D Euclidean space that we've been talking about so far, the exponent can simply be written as"
+msgid "If you ever tried to derive the rotation matrix corresponding to a :math:`\\theta` rotation around :math:`\\boldsymbol n`, you can appreciate the simplicity and elegance of how we obtained this result. To be fair, we still need to figure out how to actually use an operator sitting on top of an exponent (by summing up the Taylor series), of course, but that's merely a \"programmatic\" labor and you just need to follow the finite multiplication table of :math:`J_i` operators. But this is much straightforward than trying to draw geometric diagrams and angles and figure out the rotation matrix. For the particular case of the algebra corresponding to rotations in 3D Euclidean space that we've been talking about so far, the exponent can simply be written as"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:83
-msgid "which is known as Rodrigues' rotation formula. Note that we only ended up with terms up to second order in :math:`\\boldsymbol n \\cdot \\boldsymbol J` when we summed the series expansion; the reason is higher powers can be reduce to 0th, 1st or 2nd order terms due to the relation :math:`(\\boldsymbol n \\cdot \\boldsymbol J)^3 = -\\boldsymbol n \\cdot \\boldsymbol J`, which makes summing up the series straightforward)."
+msgid "which is known as Rodrigues' rotation formula. Note that we only ended up with terms up to second order in :math:`\\boldsymbol n \\cdot \\boldsymbol J` when we summed the series expansion; the reason is higher powers can be reduced to 0th, 1st or 2nd order terms due to the relation :math:`(\\boldsymbol n \\cdot \\boldsymbol J)^3 = -\\boldsymbol n \\cdot \\boldsymbol J`, which makes summing up the series straightforward."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:85
-msgid "The thing that sits son top of :math:`e`, which is a linear combination :math:`J_i` operators (where :math:`i = x,y,z`), forms an algebra; in fact, you it it a vector space with basis \"vectors\" as :math:`J_i`. Furthermore, the algebra is closed under the Lie bracket (which is essentially a commutator: :math:`[a,b] = a b - ba`, and is something like a cross-product in this vector space). In the particular case of 3D rotations, this \"multiplication table\" is :math:`[J_x, J_y] = J_z` and its cyclic permutations :math:`x\\to y, y\\to z, z\\to x`."
+msgid "The thing that sits on top of :math:`e`, which is a linear combination :math:`J_i` operators (where :math:`i = x,y,z`), forms an algebra; in fact, it forms a vector space whose basis \"vectors\" are :math:`J_i`. Furthermore, the algebra is closed under the Lie bracket (which is essentially a commutator: :math:`[a,b] = a b - ba`, and is something like a cross-product in this vector space). In the particular case of 3D rotations, this \"multiplication table\" is :math:`[J_x, J_y] = J_z` and its cyclic permutations :math:`x\\to y, y\\to z, z\\to x`."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:87
@@ -145,7 +145,7 @@ msgid "So for example, when :math:`\\theta=\\pi/2`, we get :math:`R(\\pi/2) \\bo
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:135
-msgid "In the complex representation, a rotation is represented by  a unit complex number :math:`e^{\\imath\\theta} = \\cos\\theta + \\imath \\sin\\theta`, where we used `Euler's formula <https://en.wikipedia.org/wiki/Euler%27s_formula>`_, is an element of the Lie group U(1), which can be represented by complex numbers of unit norm. Again, for :math:`\\theta=\\pi`, you recover :math:`e^{\\imath\\pi}(x+\\imath y) = \\imath(x+\\imath y) = (-y) + \\imath x`."
+msgid "In the complex representation, a rotation is represented by  a unit complex number :math:`e^{\\imath\\theta} = \\cos\\theta + \\imath \\sin\\theta`, where we used `Euler's formula <https://en.wikipedia.org/wiki/Euler%27s_formula>`_, is an element of the Lie group U(1), which can be represented by complex numbers of unit norm. Again, for :math:`\\theta=\\pi/2`, you recover :math:`e^{\\imath\\pi/2}(x+\\imath y) = \\imath(x+\\imath y) = (-y) + \\imath x`."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:137
@@ -273,7 +273,7 @@ msgid "Just like the 2D rotation matrix, the 3D rotation matrix can also be deri
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:200
-msgid "SO(3) is the group of rotations in Euclidean 3D space (for which the signature is :math:`(+1,+1,+1)`), which preserve the magnitude and handedness of the vectors it acts on. The most typical way to represent its elements is to use :math:`3 \\times 3` real orthogonal matrices with determinant :math:`+1`. This :math:`\\text{Mat}(3, \\mathbb R)` representation is called the fundamental representation of SO(3)."
+msgid "SO(3) is the group of rotations in Euclidean 3D space (for which the `signature <https://en.wikipedia.org/wiki/Metric_signature>`_ is :math:`(+1,+1,+1)`), which preserve the magnitude and handedness of the vectors it acts on. The most typical way to represent its elements is to use :math:`3 \\times 3` real orthogonal matrices with determinant :math:`+1`. This :math:`\\text{Mat}(3, \\mathbb R)` representation is called the fundamental representation of SO(3)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:202
@@ -297,7 +297,7 @@ msgid "(Hint: you can use the relation :math:`(\\boldsymbol n \\cdot \\boldsymbo
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:244
-msgid "However, we don't really *have to* use matrices to represent SO(3) generators :math:`J_i`. Remember how we used :math:`i`, the imaginary unit to emulate :math:`J_z` rather than using a :math:`2 \\times 2` matrix? As it turns out we can do something similar here."
+msgid "However, we don't really *have to* use matrices to represent SO(3) generators :math:`J_i`. Remember how we used :math:`\\imath`, the imaginary unit to emulate :math:`J_z` rather than using a :math:`2 \\times 2` matrix? As it turns out we can do something similar here."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:246
@@ -305,7 +305,7 @@ msgid "`Hamilton <https://en.wikipedia.org/wiki/William_Rowan_Hamilton>`_ is mos
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:248
-msgid "This may sound trivial at this point, because we're equipped with all the machinery of Lie groups and Lie algebras: apparently, quaternion units :math:`\\{i,j,k\\}` are just another representation of the SO(3) generators, which satisfy the Lie bracket. Well, no so fast. While the Lie *algebra* :math:`\\mathfrak{so}(3)`, whose elements are the linear combination of :math:`J_i` s, quaternions are :math:`1 w + x i + y j + z k` in general, so there's also an identity part, which isn't a vector that is a part of any Lie algebra. Quaternions look more like the *group* SO(3) (when they're normalized, because SO(3) preserves vector norms). But it actually isn't isomorphic to SO(3). It turns out that unit quaternions are isomorphic to the group SU(2) (which is isomorphic to Spin(3)), which is a double cover of SO(3)."
+msgid "This may sound trivial at this point, because we're equipped with all the machinery of Lie groups and Lie algebras: apparently, quaternion units :math:`\\{i,j,k\\}` are just another representation of the SO(3) generators, which satisfy the Lie bracket. Well, no so fast. While the Lie *algebra* :math:`\\mathfrak{so}(3)`, whose elements are the linear combination of :math:`J_i` s are isomorphic to unit quaternions, but quaternions are :math:`1 w + x i + y j + z k` in general, so there's also an identity part, which isn't a vector that is a part of any Lie algebra. Quaternions look more like the *group* SO(3) (when they're normalized, because SO(3) preserves vector norms). But it actually isn't isomorphic to SO(3). It turns out that unit quaternions are isomorphic to the group SU(2) (which is isomorphic to Spin(3)), which in turn is a double cover of SO(3)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:251
@@ -321,7 +321,7 @@ msgid "But taking a step back, why do we bother *emulating* SO(3) at all? For co
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:258
-msgid "The answer is the cost of computation, and this is two fold. First, you see, the matrix representation of a rotation has only 3 degrees of freedom: two for the unit vector which is the rotation axis, and one for the rotation angle around that axis. A :math:`3\\times 3` matrix, on the other hand has 9 elements. It's an overkill. For example, whenever you multiply two rotations, you need to multiply two :math:`3\\times 3` matrices, summing and multiplying every single element. In terms of CPU cycles, this is wasted effort and we can be more optimal. Second part is precision errors. The errors are worse in matrix representation, because originally, we have only 3 degrees of freedom,  which means we can have precision errors in axis and angle (only 3 errors) but it's still an element of SO(3), whereas with matrices, we can have errors in any one of the 9 elements in the matrix and so we can even have a matrix that isn't even an element of SO(3). These errors can quickly build up quickly especially if you're for example modifying the orientation of an object every frame by doing a smooth interpolation between an initial and a target orientation (discussed further in SLERP section)."
+msgid "The answer is the cost of computation, and this is two fold. First, you see, a rotation operator has only 3 degrees of freedom: two for the unit vector which is the rotation axis, and one for the rotation angle around that axis. A :math:`3\\times 3` matrix, on the other hand has 9 elements. It's an overkill. For example, whenever you multiply two rotations, you need to multiply two :math:`3\\times 3` matrices, summing and multiplying every single element. In terms of CPU cycles, this is wasted effort and we can be more optimal. Second part is precision errors. The errors are worse in matrix representation, because originally, we have only 3 degrees of freedom,  which means we can have precision errors in axis and angle (only 3 errors) but it's still an element of SO(3), whereas with matrices, we can have errors in any one of the 9 elements in the matrix and so we can even have a matrix that isn't even an element of SO(3). These errors can quickly build up quickly especially if you're for example modifying the orientation of an object every frame by doing a smooth interpolation between an initial and a target orientation (discussed further in SLERP section)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:260
@@ -329,7 +329,7 @@ msgid "Sure, we know that elements of SO(3) can be represented by using orthogon
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:262
-msgid "So, what is the alternative then? Shall we go back to the Rodrigues' formula and hardcode the behavior of :math:`J_i` into our program? A nicer alternative is, we use SU(2) (which we know covers SO(3), twice in fact!), because the equivalent of the Rodrigues' formula is much simple"
+msgid "So, what is the alternative then? Shall we go back to the Rodrigues' formula and hardcode the behavior of :math:`J_i` into our program? A nicer alternative is, we use SU(2) (which we know covers SO(3), twice in fact!), because the equivalent of the Rodrigues' formula is much simpler:"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:268
@@ -369,10 +369,12 @@ msgid "Note that we haven't said a word about Euler angles. In both matrix and q
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:292
+#: ../../docs/tutorials/math/rotations.rst:417
 msgid "Matrix representation of SO(3)"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:292
+#: ../../docs/tutorials/math/rotations.rst:417
 msgid "Quaternion representation of SU(2)"
 msgstr ""
 
@@ -409,11 +411,11 @@ msgid "A note about the SU(2) vector"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:306
-msgid "We earlier mentioned that rotation of a real vector in SU(2) is done via :math:`(R \\boldsymbol v) \\cdot \\boldsymbol \\sigma = U (\\boldsymbol v \\cdot \\boldsymbol \\sigma) U^\\dagger`, and you may be wondering what the complex vector  listed above :math:`|\\psi\\rangle = (\\cos\\frac{\\theta}{2}, e^{\\imath \\phi} \\sin\\frac{\\theta}{2})` has to do with that. The answer is, there vector :math:`|\\psi\\rangle` is the one :math:`U` acts on, and in terms of it, we can rewrite  :math:`U (\\boldsymbol v \\cdot \\boldsymbol \\sigma) U^\\dagger` as :math:`r U (|\\psi\\rangle \\otimes \\langle \\psi|) U^\\dagger` up to some trivial identity term, where :math:`\\langle \\psi| = |\\psi\\rangle^\\dagger` (this is the way complex vectors are typically denoted in quantum mechanics and is called `bra-ket notation <https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation>`_: bra is like the vector and ket is the `conjugate transpose <https://en.wikipedia.org/wiki/Hermitian_adjoint>`_, and people typically omit the :math:`\\otimes`  in between because that's already implied when you multiply a ket with a bra, and likewise there is no :math:`\\cdot` when you multiply a bra with ket since that's also implied)."
+msgid "We earlier mentioned that rotation of a real vector in SU(2) is done via :math:`(R \\boldsymbol v) \\cdot \\boldsymbol \\sigma = U (\\boldsymbol v \\cdot \\boldsymbol \\sigma) U^\\dagger`, and you may be wondering what the complex vector  listed above :math:`|\\psi\\rangle = (\\cos\\frac{\\theta}{2}, e^{\\imath \\phi} \\sin\\frac{\\theta}{2})` has to do with that. The answer is, there vector :math:`|\\psi\\rangle` is the one a single :math:`U` acts on, and in terms of it, we can rewrite  :math:`U (\\boldsymbol v \\cdot \\boldsymbol \\sigma) U^\\dagger` as :math:`r U (|\\psi\\rangle \\otimes \\langle \\psi|) U^\\dagger` up to some trivial identity term, where :math:`\\langle \\psi| = |\\psi\\rangle^\\dagger` (this is the way complex vectors are typically denoted in quantum mechanics and is called `bra-ket notation <https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation>`_: bra is like the vector and ket is the `conjugate transpose <https://en.wikipedia.org/wiki/Hermitian_adjoint>`_, and people typically omit the :math:`\\otimes`  in between because that's already implied when you multiply a ket with a bra, and likewise there is no :math:`\\cdot` when you multiply a bra with ket since that's also implied)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:308
-msgid "So, notational concerns aside long story short, the vector listed above is in a generalized sense \"half\" of what we are rotating:"
+msgid "So, notational concerns aside, long story short, the vector listed above is in a generalized sense \"half\" of what we are rotating:"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:314
@@ -421,7 +423,7 @@ msgid "and each \"half\" goes to one of the :math:`U` s on each side of the modi
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:320
-msgid "so everything is compatible, and :math:`U |\\psi(\\boldsymbol v)\\rangle = |\\psi(R \\boldsymbol v)\\rangle` is satisfied. This parametrization of an SU(2) vector is typically done in spherical coordinates :math:`\\theta,\\phi` (for :math:`r=1`, because state vectors are normalized in quantum mechanics), and the sphere is called `Bloch sphere <https://en.wikipedia.org/wiki/Bloch_sphere>`_)."
+msgid "so everything is compatible, and :math:`|\\psi'\\rangle = U |\\psi(\\boldsymbol v)\\rangle = |\\psi(R \\boldsymbol v)\\rangle` is satisfied. This parametrization of an SU(2) vector is typically done in spherical coordinates :math:`\\theta,\\phi` (for :math:`r=1`, because state vectors are normalized in quantum mechanics), and the sphere is called `Bloch sphere <https://en.wikipedia.org/wiki/Bloch_sphere>`_)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:323
@@ -445,7 +447,7 @@ msgid "As we found out, this is the *de facto* parametrization of rotations in 3
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:340
-msgid "Another advantage of the axis angle parametrization is, it is very easy to interpolate between two different rotations (let's call their parameters :math:`\\boldsymbol n_1, \\varphi_1` and :math:`\\boldsymbol n_2, \\varphi_2`), which is useful when you're changing the orientation of an object, starting from a given initial orientation and going toward a final one. A nice way of doing this turns out to be this: uniformly rotate the axis of rotation from the initial axis :math:`\\boldsymbol n_1` onto the final one :math:`\\boldsymbol n_2` (again, you can imagine that these two vectors represent two points on a sphere, and by doing this, you'd be travelling from the initial to the final point on the sphere using the shortest possible curve  --also called a geodesic), while also linearly interpolating the angle of rotation from the angle of initial rotation :math:`\\varphi_1` to the angle of the final rotation :math:`\\varphi_2`. If you image that :math:`\\boldsymbol n_i` are points specified on the surface of a sphere, this is essentially a linear interpolation on a geodesic on the surface of the sphere connecting the two points. It results in a smooth motion, rather than a \"jerky\" motion which may start fast, go slow in the middle and go fast again etc. It turns out that if a mass is transported this way, it experiences the least amount of torque (compared to other possible trajectories). This way of linearly interpolating rotations in the axis-angle parametrization is called Spherical Linear Interpolation or SLERP, and is almost ubiquitously used in games."
+msgid "Another advantage of the axis angle parametrization is, it is very easy to interpolate between two different rotations (let's call their parameters :math:`\\boldsymbol n_1, \\varphi_1` and :math:`\\boldsymbol n_2, \\varphi_2`), which is useful when you're changing the orientation of an object, starting from a given initial orientation and going toward a final one. A nice way of doing this is described in a later section where we describe SLERP. It results in a smooth motion, rather than a \"jerky\" motion which may start fast, go slow in the middle and go fast again etc. It turns out that if a mass is transported this way, it experiences the least amount of torque (compared to other possible trajectories). This way of linearly interpolating rotations in the axis-angle parametrization is called Spherical Linear Interpolation or SLERP, and is almost ubiquitously used in games."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:345
@@ -453,7 +455,7 @@ msgid "Euler angles (and Tait-Bryan angles): :math:`(\\varphi_1, \\varphi_2, \\v
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:347
-msgid "Another way of parametrizing 3D rotations is by considering a sequence of 3 rotations around certain, fixed axes. This could be, for example \"rotate around the :math:`Z`-axis by :math:`\\varphi_1`, then rotate around the :math:`Y`-axis by :math:`\\varphi_2`, and finally rotate around the :math:`x`-axis by :math:`\\varphi_3`\". Of course, these axes don't have to be Z, then Y, then X. As long as two sequential rotations are not around the same axis (in which case they would combine into a single rotation, hence reducing the number of actually independent parameters by 1), they can be anything. They don't even need to be aligned with any \"named\" axis. Another thing important think to watch out is, if you imagine that there is a local coordinate system \"painted\" on the object, as you go through the 3-step rotation sequence, that local frame rotates with the object itself, while the global frame of course remains as-is. The rotation angles specified with respect to a global, fixed reference frame are sometimes called Tait-Bryan angles. So when we're specifying a general rotation in terms of 3 rotations around certain \"fixed\" axes, you need to specify whether those axes refer to the global (called extrinsic, usually written with an additional prime, :math:`X'` rather than :math:`X`,  after each rotation ) or the local (called intrinsic) frame as well. Typically, extrinsic is used as it is relatively easier to picture, and axes are chosen to coincide with X,Y or Z. The 3 rotation angles used in such representation of rotations is called Euler angles."
+msgid "Another way of parametrizing 3D rotations is by considering a sequence of at least 3 rotations around certain, fixed axes. This could be, for example \"rotate around the :math:`Z`-axis by :math:`\\varphi_1`, then rotate around the :math:`Y`-axis by :math:`\\varphi_2`, and finally rotate around the :math:`x`-axis by :math:`\\varphi_3`\". Of course, these axes don't have to be Z, then Y, then X. As long as two sequential rotations are not around the same axis (in which case they would combine into a single rotation, hence reducing the number of actually independent parameters by 1), they can be anything. They don't even need to be aligned with any \"named\" axis. Another thing important think to watch out is, if you imagine that there is a local coordinate system \"painted\" on the object, as you go through the 3-step rotation sequence, that local frame rotates with the object itself, while the global frame of course remains as-is. The rotation angles specified with respect to a global, fixed reference frame are sometimes called Tait-Bryan angles. So when we're specifying a general rotation in terms of 3 rotations around certain \"fixed\" axes, you need to specify whether those axes refer to the global (called extrinsic, usually written with an additional prime, :math:`X'` rather than :math:`X`,  after each rotation ) or the local (called intrinsic) frame as well. Typically, extrinsic is used as it is relatively easier to picture, and axes are chosen to coincide with X,Y or Z. The 3 rotation angles used in such representation of rotations is called Euler angles."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:354
@@ -469,7 +471,7 @@ msgid "While Euler angles may not be too useful when calculating the rotation op
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:365
-msgid "So the answer to the question \"should I use Euler angles or axis-angle parametrization in my game\" is: unless you're trying to orient an object in a particular way starting from an *unrotated, default orientation* (for which you can still use axis-angle parametrization in your script, if you prefer), you shouldn't be using Euler angles. Major reasons are:"
+msgid "So the answer to the question \"should I use Euler angles or axis-angle parametrization in my game\" is: unless you're trying to *statically* orient an object in a particular way starting from an *unrotated, default orientation* (for which you can still use axis-angle parametrization in your script, if you prefer), you shouldn't be using Euler angles. Major reasons are:"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:367
@@ -497,182 +499,210 @@ msgid "If it keeps walking along either the red or the blue lines, it will event
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:383
-msgid "If you have a set of :math:`n` \"coordinates\" (or angles) which are periodic, just like :math:`\\theta` and :math:`\\phi` were, then people say those coordinates describe a point on the surface of an :math:`n`-torus. (In the case that the period of a \"coordinate\" is different than :math:`2\\pi`, that coordinate can be scaled to make it so, such that it corresponds to an :math:`n`-torus)."
+msgid "If you have a set of :math:`n` \"coordinates\" (or angles) which are periodic, just like :math:`\\theta` and :math:`\\phi` were (which is the case for the three Euler angles), then people say those coordinates describe a point on the surface of an :math:`n`-torus. (In the case that the period of a \"coordinate\" is different than :math:`2\\pi`, that coordinate can be scaled to make it so, such that it corresponds to an :math:`n`-torus)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:385
-msgid "Now, back to our original issue. The axis of the axis-angle parametrization (which is *the* natural way of parametrizing rotations, and is a one-to-one covering map of SO(3); in fact, this is true for all Lie groups, not just rotations in 3D) spans a sphere (every point in a ball of radius :math:`\\pi` corresponds to a rotation in SO(3) where the rotation amount is mapped to radius and rotation axis points is the direction from the origin; with the additional caveat that if you flip the sign of the axis and angle simultaneously, it maps to the same rotation), which is described using spherical coordinates, whereas Euler angles span the surface of a 3-torus (such that every point on the 3-torus corresponds to a rotation), which is described by the three Euler angles. The problem here is, a sphere is topologically different from a torus. In simple terms, this means that it's impossible to deform a sphere to a torus \"smoothly\": at some point, you have to punch a hole in it to make a donut from a ball."
+msgid "Now, back to our original issue. The axis of the axis-angle parametrization (which is *the* natural way of parametrizing rotations, and is a one-to-one covering map of SO(3); in fact, this is true for all Lie groups, not just rotations in 3D) spans a sphere (every point in a ball of radius :math:`\\pi` corresponds to a rotation in SO(3) where the rotation amount is mapped to radius and rotation axis points is the direction from the origin; with the additional caveat that if you flip the sign of the axis and angle simultaneously, it maps to the same rotation), which is described using spherical coordinates, whereas Euler angles span the surface of a 3-torus (such that every point on the 3-torus corresponds to a rotation), which is described by the three Euler angles. The problem here is, a sphere is topologically different from a torus. In simple terms, this means that it's impossible to deform a sphere to a torus \"smoothly\": at some point, you have to punch a hole in it to make a donut from a ball (and you can never \"punch a hole\" or change the topology when you stick with a parametrization: if you use Euler angles, you're forever stuck walking the surface of a 3-donut, and if you use axis-angle, you're forever stuck flying inside the sphere)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:389
-msgid "Why is this a problem at all? Because it means that you a smooth walk (flight?) inside the sphere doesn't always correspond to a smooth walk on the surface of the 3-torus, vice versa: a 3-torus and sphere are globally different, which is a fact you're bound to discover if you walk the parameter space. Axis-angle parametrization has singularities in the poles (the azimuthal angle is-ill defined) but that's fine because that's exactly how SO(3) is, after all, axis-angle is how Lie groups are parametrized. Euler angle parametrization also has singularities corresponding to points when two gimbals are aligned, but those singularities are different from SO(3)'s poles."
+msgid "Why is this a problem at all? Because it means that a smooth walk (flight?) inside the sphere doesn't always correspond to a smooth walk on the surface of the 3-torus, vice versa: a 3-torus and sphere are globally different, which is a fact you're bound to discover if you walk the parameter space by a smoothly rotating a body using these parametrizations. Axis-angle parametrization has singularities at the poles (where the azimuthal angle is ill-defined) but that's fine because that's exactly how SO(3) is, after all, axis-angle is how Lie groups are parametrized. Euler angle parametrization also has singularities corresponding to points where two gimbals are aligned, but those singularities are different from SO(3)'s poles."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:393
+msgid "Suppose that you're at a nice spot, a rotation that can be parametrized by both axis-angle and Euler angles uniquely. Sometimes, it can just happen that if you take a wrong step, you'll fall into a \"hole\" (meaning a singularity at which infinitely many parameters correspond to the same rotation, like at the poles, all choices for the azimuthal angle give the same rotation, or the similar situation with gimbal lock) in one parametrization, while you can continue a smooth journey in the other parametrization. When you fall a \"hole\" using Euler angles, it's called gimbal lock, and since there may not be a corresponding \"hole\" when you take the similar step in the sphere, this tells us that Euler angles is a defective parametrization of SO(3)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:395
+msgid "The root of the problem isn't just the fact that Euler angle parametrization has singularties, just as axis-angle does which is fine on its own, but that those singularities don't match with SO(3)'s singularities."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:398
 msgid "This is the mathematical description of the gimbal-lock problem."
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:399
+#: ../../docs/tutorials/math/rotations.rst:400
+msgid "Here's an example of gimbal lock in Euler angle parametrization. Suppose that one of the rotations is :math:`\\pi/2`, let's say the middle one. By inserting an identity operator :math:`X(-\\pi/2) X(\\pi/2)` to the right side and rearranging terms, we can show that"
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:406
+msgid "(see the section about active transformation below about how a rotation matrix itself transforms, which also explains why and how a Z rotation turns into a Y rotation when surrounded by :math:`\\pi/2` and :math:`-\\pi/2` X rotations) which means we lost a degree of freedom: :math:`\\varphi_y-\\varphi_z` effectively became a single parameter determining the Y rotation and we completely lost the first Z rotation. You can follow similar steps to show that when *any* of the YXZ Euler angles become :math:`\\pm \\pi/2`, you get a gimbal lock."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:408
+msgid "This happens for :math:`\\pm \\pi/2` simply because in the YXZ convention, neighboring axes are related to each other by a :math:`\\pm \\pi/2` rotation around the axis given by the other neighbor. For XZX convention, the gimbal lock would happen at :math:`\\varphi_z = \\pm \\pi` for example."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:412
 msgid "Summary: representation versus parametrization"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:401
+#: ../../docs/tutorials/math/rotations.rst:414
 msgid "We can sum it up in a table:"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:404
+#: ../../docs/tutorials/math/rotations.rst:417
 msgid "Parametrization/Representation"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:404
-msgid "Matrix"
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:404
-msgid "Quaternion"
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:406
+#: ../../docs/tutorials/math/rotations.rst:419
 msgid "Axis-angle"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:406
+#: ../../docs/tutorials/math/rotations.rst:419
 msgid ":math:`e^{\\varphi \\boldsymbol v \\cdot \\boldsymbol J}`"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:406
+#: ../../docs/tutorials/math/rotations.rst:419
 msgid ":math:`e^{\\varphi \\boldsymbol v \\cdot (i,j,k)/2}`"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:408
+#: ../../docs/tutorials/math/rotations.rst:421
 msgid "Euler-angles"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:408
+#: ../../docs/tutorials/math/rotations.rst:421
 msgid ":math:`e^{\\varphi_3 J_y} e^{\\varphi_2 J_x} e^{\\varphi_1 J_z}`"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:408
+#: ../../docs/tutorials/math/rotations.rst:421
 msgid ":math:`e^{\\varphi_3 j/2} e^{\\varphi_2 i/2} e^{\\varphi_1 k/2}`"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:411
+#: ../../docs/tutorials/math/rotations.rst:424
 msgid "where :math:`\\boldsymbol J`  denotes the matrix representation of the :math:`\\boldsymbol J` operators (too lazy to introduce a new symbol for that). YXZ Euler angles is chosen for concreteness (as it is the default convention in Godot), and can be replaced by any three axes (as long as two neighboring axes aren't the same)."
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:413
-msgid "In each case, Rodrigues' formula (or it's analogue for quaternions) given above can be used for practical purposes."
+#: ../../docs/tutorials/math/rotations.rst:426
+msgid "In all cases listed in the above table, Rodrigues' formula (or it's analogue for quaternions) given above can be used for practical purposes."
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:415
-msgid "In the context of 3D rotations, one representation isn't superior or inferior to another. Whatever representation you're using, you are representing exactly the same thing. A difference appears only when you implement it on a computer: different representations have trade offs when it comes to precision errors, CPU cycles and memory usage (for example, accessing to rotation axis-angle with quaternions is trivial but requires some algebra in matrix representation whereas the converse is true when accessing the basis vectors, SLERP, composition of rotations and orthonormalization is faster with quaternions but a conversion to matrix representation, which isn't free, is always required because that's the representation OpenGL uses and rotating a vector), and they may have different characteristics when doing finite precision arithmetic with floating point numbers. In principle, you can do everything you do with quaternions using matrices, vice versa. The performance could be bad in one representation, but the point is, there is nothing in their mathematics that prevent you from doing that."
+#: ../../docs/tutorials/math/rotations.rst:428
+msgid "In the context of 3D rotations, one representation isn't superior or inferior to another. Whatever representation you're using, you are representing exactly the same thing. A difference appears only when you implement it on a computer: different representations have trade offs when it comes to precision errors, CPU cycles and memory usage (for example, accessing to rotation axis-angle with quaternions is trivial but requires some algebra in matrix representation whereas the converse is true when accessing the basis vectors, SLERP, composition of rotations and orthonormalization is faster with quaternions but a conversion to matrix representation, which isn't free, is always required because that's the representation OpenGL uses and rotating a 3D vector is faster in matrix representation since they are written in the same basis), and they may have different characteristics when doing finite precision arithmetic with floating point numbers. In principle, you can do everything you do with quaternions using matrices, vice versa. The performance could be bad in one representation, but the point is, there is nothing in their mathematics that prevent you from doing that."
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:417
-msgid "Parametrizations, on the other hand, are vastly different. Axis-angle is the \"one true\" parametrization of rotations. Euler angles, despite being a defective parametrization of rotations, could be more intuitive for simple (involving only 1 or 2 angles)  and *static* situations like orienting a body/vehicle in the editor, but should be avoided for rotational *dynamics* which would eventually lead to a gimbal lock"
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:421
-msgid "Interpolating rotations"
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:423
-msgid "In games, it's common problem to interpolate between two different orientation in a \"nice way\" which doesn't depend on arbitrary things like how the reference frame, and which doesn't result in a jerky motion such that the angular speed remains constant during the interpolation. These are the properties that we seek when we say \"nice\"."
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:425
-msgid "Formally, we'd like to interpolate between an initial rotation :math:`R_1 = e^{\\lambda \\varphi_1 \\boldsymbol n_1 \\cdot \\boldsymbol J }` and a final one :math:`R_2 = e^{\\varphi_2 \\boldsymbol n \\cdot \\boldsymbol J }` a function of time, and what we're seeking is something that transforms one into another smoothly, :math:`R(\\lambda)`, where :math:`\\lambda` is the normalized time which is 0 at the beginning and 1 at the end. Clearly, we must have :math:`R(\\lambda=0)=R_1` and :math:`R(\\lambda=1) = R_2`. Since we also know that rotations form a group, we can relate :math:`R(\\lambda)` to :math:`R_1` and :math:`R_2` using another rotation, such that we can for example write"
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:431
-msgid "This form makes sense because for :math:`\\lambda=0`, there is no rotation and :math:`R(\\lambda)` automatically becomes :math:`R_1`. But why not pick a different form for the exponent as a function of :math:`\\lambda` which evaluates to 0 when :math:`\\lambda=0`? That's simply because we'd don't want to have a jerky motion, meaning :math:`|| \\dot R(\\lambda)|| = \\dot R(\\lambda) \\dot R^T(\\lambda)` has to be a constant, which can only happen if the time derivative of the exponent is linear in time (which is the case here as :math:`\\dot R(\\lambda) = (\\varphi \\boldsymbol n \\cdot \\boldsymbol J) R(\\lambda)` and :math:`\\dot R(\\lambda) \\dot R^T(\\lambda) = [(\\varphi \\boldsymbol n \\cdot \\boldsymbol J) R(\\lambda)] [(\\varphi \\boldsymbol n \\cdot \\boldsymbol J) R(\\lambda)]^T = (\\varphi \\boldsymbol n \\cdot \\boldsymbol J) [ R(\\lambda) R^T(\\lambda) ] (\\varphi \\boldsymbol n \\cdot \\boldsymbol J)^T  = -\\varphi^2 (\\boldsymbol n \\cdot \\boldsymbol J)^2` which is a constant independent of :math:`\\lambda`, where we used :math:`J_i^T = -J_i`). Or alternatively, you can simply observe that a rotation around a fixed axis (fixed because otherwise if you tilt the rotation axis in time, you'll again get a \"jerky motion\" due to `Euler force <https://en.wikipedia.org/wiki/Euler_force>`_) with constant angular speed is :math:`e^{\\boldsymbol \\omega t \\cdot \\boldsymbol J }` where :math:`\\boldsymbol \\omega` the angular velocity vector, and the exponent is linear in time."
+#: ../../docs/tutorials/math/rotations.rst:430
+msgid "Parametrizations, on the other hand, are vastly different. Axis-angle is the \"one true\" parametrization of rotations. Euler angles, despite being a defective parametrization of rotations, could be more intuitive for simple (involving only 1 or 2 angles)  and *static* situations like orienting a body/vehicle in the editor, but should be avoided for rotational *dynamics* which would eventually lead to a gimbal lock."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:434
+msgid "Interpolating rotations"
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:436
+msgid "In games, it's common problem to interpolate between two different orientation in a \"nice way\" which doesn't depend on arbitrary things like how the reference frame, and which doesn't result in a \"jerky\" motion (that is, a torque-free motion) such that the angular speed remains constant during the interpolation. These are the properties that we seek when we say \"nice\"."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:438
+msgid "Formally, we'd like to interpolate between an initial rotation :math:`R_1 = e^{\\lambda \\varphi_1 \\boldsymbol n_1 \\cdot \\boldsymbol J }` and a final one :math:`R_2 = e^{\\varphi_2 \\boldsymbol n \\cdot \\boldsymbol J }` a function of time, and what we're seeking is something that transforms one into another smoothly, :math:`R(\\lambda)`, where :math:`\\lambda` is the normalized time which is 0 at the beginning and 1 at the end. Clearly, we must have :math:`R(\\lambda=0)=R_1` and :math:`R(\\lambda=1) = R_2`. Since we also know that rotations form a group, we can relate :math:`R(\\lambda)` to :math:`R_1` and :math:`R_2` using another rotation, such that we can for example write"
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:444
+msgid "This form makes sense because for :math:`\\lambda=0`, the interpolation hasn't started and :math:`R(\\lambda)` automatically becomes :math:`R_1`. But why not pick a different form for the exponent as a function of :math:`\\lambda` which evaluates to 0 when :math:`\\lambda=0`? That's simply because we don't want to have a jerky motion, meaning :math:`\\boldsymbol \\omega \\cdot \\boldsymbol J =  R^T(\\lambda) \\dot R(\\lambda)`, where :math:`\\boldsymbol \\omega` is the angular velocity vector, has to be a constant, which can only happen if the time derivative of the exponent is linear in time (in which case we obtain :math:`\\boldsymbol \\omega = \\varphi \\boldsymbol n`). Or equivalently, you can simply observe that a rotation around a fixed axis (fixed because otherwise if you tilt the rotation axis in time, you'll again get a \"jerky motion\" due to `Euler force <https://en.wikipedia.org/wiki/Euler_force>`_) with constant angular speed is :math:`e^{\\boldsymbol \\omega t \\cdot \\boldsymbol J }` where the exponent is linear in time."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:447
 msgid "But how do we choose :math:`\\boldsymbol n` and :math:`\\varphi`? Well, we simply enforce that :math:`R(\\lambda)`  has to becomes :math:`R_2` at the end, when :math:`\\lambda=1`. Although this looks like a very difficult problem, it's actually not. We first make a rearrangement:"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:440
-msgid "From this expression, it becomes evident evident that the solution is :math:`e^{\\varphi \\boldsymbol n \\cdot \\boldsymbol J } = R_2 R_1^T`."
+#: ../../docs/tutorials/math/rotations.rst:453
+msgid "From this expression, it becomes evident that the solution is :math:`e^{\\varphi \\boldsymbol n \\cdot \\boldsymbol J } = R_2 R_1^T`."
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:442
+#: ../../docs/tutorials/math/rotations.rst:455
 msgid "We can also do the same thing in SU(2) and obtain:"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:448
+#: ../../docs/tutorials/math/rotations.rst:461
 msgid "or isomorphically, in terms of quaternions:"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:454
+#: ../../docs/tutorials/math/rotations.rst:467
 msgid "For any Lie group, including SO(3) and SU(2), this \"nice\" interpolation is called SLERP."
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:456
-msgid "Note that at no step we made any reference to axes of some fixed reference frame (as it is in the case of Euler angle parametrization), everything we did is independent of the reference frame. Also note that this scheme can work for any Lie group, and is independent of the representation used (matrix, quaternion, ...)."
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:458
-msgid "After some tedious algebra (which involves using :math:`\\text{tr}(\\sigma_i \\sigma_j) = 2 \\delta_{ij}`), this result can be simplified to"
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:464
-msgid "when :math:`q_1 \\neq \\pm q_2`, where we introduced :math:`\\cos\\Omega \\equiv \\cos\\frac{\\varphi_1}{2}\\cos\\frac{\\varphi_2}{2} + \\sin\\frac{\\varphi_1}{2}\\sin\\frac{\\varphi_2}{2} \\boldsymbol n_1 \\cdot \\boldsymbol n_2` (or equivalently, in terms of an artificial vector which contains the coefficients of the quaternions, as we discussed above, :math:`\\boldsymbol q_1 \\cdot \\boldsymbol q_2`). This result has a very simple geometric interpretation when a (unit) quaternion is taken to be a point on the 3-sphere and when one introduces an inner product of the 4D Euclidean space, but we'll skip that because it's a bit off topic in our treatment. We'll however note that this is where the name *Spherical* Linear intERpolation comes from, which refers to the 4D sphere."
-msgstr ""
-
 #: ../../docs/tutorials/math/rotations.rst:469
-msgid "Reference frames: global, parent-local, object-local"
+msgid "Note that at no step we made any reference to axes of some fixed reference frame (as it is in the case of Euler angle parametrization, which are defined with respect to certain \"special\" 3 axes), everything we did is independent of the reference frame. Also note that this scheme can work for any Lie group, and is independent of the representation used (matrix, quaternion, ...)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:471
-msgid "A reference frame essentially how and where how place the origin and axes of your coordinate system. In Godot, there are three different reference frames. The first is the global reference frame. It exist as the \"anchor\" frame, where all other frames can be defined with respect to. The other types of reference frames appear when you have objects which have children objects. Here's an example which illustrates these frames."
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:473
-msgid "Consider a ship in the ocean. You can imagine, however that there's a coordinate system painted on the ground somewhere in the ship. This coordinate system moves and rotates with the ship, so it's called ship's local frame. Furthermore, we can attach a reference frame to passengers on the ship (for example, let's say, for each passenger, their left is their :math:`x`-axis and their forward is their :math:`z` axis, and their origin is where they stand)."
-msgstr ""
-
-#: ../../docs/tutorials/math/rotations.rst:475
-msgid "The global coordinate system corresponds to a coordinate system world painted somewhere on the ground in the world (let's say we live in a flat world for simplicity). Then every object, including the ship and the passengers have their own reference frames, they're called object-local frames. But notice that for passengers, the most natural frame would be where they are located (and how they're oriented) relative to the ship. After all, when someone asks \"Where's Joe?\", you'd reply with something like \"I saw him in the front deck\" rather than trying to look up GPS coordinates (global frame) or saying something like \"7 meters to my five o'clock\" (passenger/object-local). The ship is referred to as the parent-local frame."
+msgid "After some tedious algebra (which involves using :math:`\\text{tr}(\\sigma_i \\sigma_j) = 2 \\delta_{ij}`), this result can be simplified to"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:477
-msgid "In Godot, Basis matrices refer to the parent-local frame. It the object is top level, then it's Basis is written in the global frame."
+msgid "when :math:`q_1 \\neq \\pm q_2`, where we introduced :math:`\\cos\\Omega \\equiv \\cos\\frac{\\varphi_1}{2}\\cos\\frac{\\varphi_2}{2} + \\sin\\frac{\\varphi_1}{2}\\sin\\frac{\\varphi_2}{2} \\boldsymbol n_1 \\cdot \\boldsymbol n_2` (or equivalently, in terms of an artificial vector which contains the coefficients of the quaternions, as we discussed above, :math:`\\boldsymbol q_1 \\cdot \\boldsymbol q_2`). This result has a very simple geometric interpretation when a (unit) quaternion is taken to be a point on the 3-sphere and when one introduces an inner product of the 4D Euclidean space, but we'll skip that because it's a bit off topic in our treatment. We'll however note that this is where the name *Spherical* Linear intERpolation comes from, which refers to the 4D sphere."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:482
-msgid "Active and passive transformations"
+msgid "Reference frames: global, parent-local, object-local"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:484
-msgid "While operators (such as :math:`e^{\\varphi \\boldsymbol n \\cdot \\boldsymbol J}` ) and vectors :math:`\\boldsymbol v` are \"out there\" and are independent of the reference frame, their coordinates aren't. For example, a vector can be aligned with the :math:`x`-axis in some frame  whereas in can be aligned with :math:`y`-axis in another, if you choose to draw your coordinate system differently. But the vector doesn't know about your arbitrary choice of how and where you draw your coordinate system. When we have multiple reference frames, it's important how the coordinates would transform between them."
+msgid "A reference frame essentially how and where how place the origin and axes of your coordinate system. In Godot, there are three different reference frames. The first is the global reference frame. It exist as the \"anchor\" frame, where all other frames can be defined with respect to. The other types of reference frames appear when you have objects which have children objects. Here's an example which illustrates these frames."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:486
-msgid "For example, if you know that the coordinates of a vector :math:`\\boldsymbol v` are given as :math:`v_x, v_y, v_z` in some reference frame, you can obtain the coordinates in a different frame which is rotated which respect to the first one around some :math:`\\boldsymbol n` axis by :math:`-\\varphi` as"
+msgid "Consider a ship in the ocean. You can imagine, however that there's a coordinate system painted on the ground somewhere in the ship. This coordinate system moves and rotates with the ship, so it's called ship's local frame. Furthermore, we can attach a reference frame to passengers on the ship (for example, let's say, for each passenger, their left is their :math:`x`-axis and their forward is their :math:`z` axis, and their origin is where they stand)."
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:492
-msgid "where primed coordinates correspond to coordinates in the rotated *frame*. You can also transform the matrix representations of operators. For example, :math:`M_{ij} = \\boldsymbol e_i \\cdot M  \\boldsymbol e_j` but what is the rotation matrix if we used the basis vectors of a different frame :math:`\\{\\boldsymbol e_i'\\}`? To obtain the matrix representation of :math:`M` in the new frame, you can do"
+#: ../../docs/tutorials/math/rotations.rst:488
+msgid "The global coordinate system corresponds to a coordinate system world painted somewhere on the ground in the world (let's say we live in a flat world for simplicity). Then every object, including the ship and the passengers have their own reference frames, they're called object-local frames. But notice that for passengers, the most natural frame would be where they are located (and how they're oriented) relative to the ship. After all, when someone asks \"Where's Joe?\", you'd reply with something like \"I saw him in the front deck\" rather than trying to look up GPS coordinates (global frame) or saying something like \"7 meters to my five o'clock\" (passenger/object-local). The ship is referred to as the parent-local frame."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:490
+msgid "In Godot, Basis matrices refer to the parent-local frame. If the object is top level, then it's Basis is written in the global frame."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:495
+msgid "Active and passive transformations"
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:497
+msgid "While operators (such as :math:`e^{\\varphi \\boldsymbol n \\cdot \\boldsymbol J}` ) and vectors :math:`\\boldsymbol v` are \"out there\" and are independent of the reference frame, their coordinates aren't. For example, a vector can be aligned with the :math:`x`-axis in some frame  whereas in can be aligned with :math:`y`-axis in another, if you choose to draw your coordinate system differently. But the vector doesn't know about your arbitrary choice of how and where you draw your coordinate system. When we have multiple reference frames, it's important how the coordinates would transform between them."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:499
-msgid "These are called passive transformation."
+msgid "For example, if you know that the coordinates of a vector :math:`\\boldsymbol v` are given as :math:`v_x, v_y, v_z` in some reference frame, you can obtain the coordinates in a different frame which is rotated which respect to the first one around some :math:`\\boldsymbol n` axis by :math:`-\\varphi` as"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:501
+#: ../../docs/tutorials/math/rotations.rst:505
+msgid "where primed coordinates correspond to coordinates in the rotated *frame*. You can also transform the matrix representations of operators. For example, :math:`M_{ij} = \\boldsymbol e_i \\cdot M  \\boldsymbol e_j` but what is the rotation matrix if we used the basis vectors of a different frame :math:`\\{\\boldsymbol e_i'\\}`? To obtain the matrix representation of :math:`M` in the new frame, you can do"
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:512
+msgid "These are called passive transformations."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:514
 msgid "Now let's consider actually moving those objects (we consider only one reference frame and it's fixed). We rotate a vector around some :math:`\\boldsymbol n` axis by :math:`\\varphi`"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:507
+#: ../../docs/tutorials/math/rotations.rst:520
 msgid "where primed coordinates are the coordinates of the rotated *vector*, in the same reference frame. Similarly, for matrices"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:515
+#: ../../docs/tutorials/math/rotations.rst:527
+msgid "These are called active transformations."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:530
 msgid "Note how things fit nicely, for example, when you consider how a rotated vector :math:`R_0 \\boldsymbol v_0` transforms:"
 msgstr ""
 
-#: ../../docs/tutorials/math/rotations.rst:521
+#: ../../docs/tutorials/math/rotations.rst:536
 msgid "The left hand side is rotation of the vector :math:`(R_0 \\boldsymbol v_0)` and the right hand side is the rotation of the vector :math:`v_0` and the matrix :math:`R_0` that acts on it, which of course agree."
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:539
+msgid "The rotation operator itself rotates in a very expected way (you can use Rodrigues' formula along with the equation above, if you prefer):"
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:545
+msgid "For example, if we have a rotation around the :math:`z`-axis by :math:`\\varphi_0 = \\varphi_z` and we would like to rotate it around the :math:`x`-axis by :math:`\\varphi = \\pi/2`, we'd have"
+msgstr ""
+
+#: ../../docs/tutorials/math/rotations.rst:551
+msgid "that is, the original rotation axis :math:`\\boldsymbol n_0 = \\boldsymbol e_z` gets rotated around the :math:`x`-axis by :math:`\\varphi = \\pi/2` and becomes a rotation around the :math:`y`-axis by :math:`-\\varphi_z`."
 msgstr ""
 
