@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 12:22+0200\n"
+"POT-Creation-Date: 2018-04-19 09:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,46 +18,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
+#, fuzzy
 msgid "GDScript format strings"
-msgstr ""
+msgstr "Chaînes de formatage GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
 "GDScript offers a feature called *format strings* which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
+"GDScript fournit une fonctionnalité appelée *chaînes de formatage* qui "
+"permet de réutiliser des modèles de texte pour créer de manière succincte "
+"des chaînes différentes mais similaires."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
+#, fuzzy
 msgid ""
 "Format strings are just like normal strings, except they contain certain "
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
+"Les chaînes de formatages sont comme les chaînes normales, sauf qu'elles "
+"contiennent certaines séquences de caractères génériques. Ces espaces "
+"réservés peuvent ensuite être facilement remplacés par des paramètres "
+"transmis à la chaîne de formatage."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
+#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
 "how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
+"Par exemple, avec ``% s`` comme espace réservé, la chaîne de formatage `` "
+"\"Hello% s, comment allez-vous?\" Peut facilement être changée en `` \"Hello "
+"World, comment allez-vous?\" ``. Notez que l'espace réservé est au milieu de "
+"la chaîne, la modifier sans les chaînes de formatage peut être fastidieux."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
+#, fuzzy
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "Utilisation en GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
+#, fuzzy
 msgid "Examine this concrete GDScript example::"
-msgstr ""
+msgstr "Examinez cet exemple concret en GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:33
+#, fuzzy
 msgid ""
 "Placeholders always start with a ``%``, but the next character or "
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
+"Les espaces réservés commencent toujours par un ``% ``, mais le ou les "
+"caractères suivants, le * spécificateur de format *, détermine comment la "
+"valeur donnée est convertie en chaîne."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:37
+#, fuzzy
 msgid ""
 "The ``%s`` seen in the example above is the simplest placeholder and works "
 "for most use cases: it converts the value by the same method by which an "
@@ -66,24 +87,41 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"Le ``% s`` vu dans l'exemple ci-dessus est l'espace réservé le plus simple "
+"et fonctionne pour la plupart des cas d'utilisation: il convertit la valeur "
+"par la même méthode par laquelle une conversion de chaîne implicite ou `` "
+"str () `la convertirait. Les chaînes restent inchangées, les Booléens "
+"deviennent soit `` \"True\" `` ou `` \"False\" ``, un nombre entier ou réel "
+"devient un nombre décimal, les autres types retournent généralement leurs "
+"données dans une chaîne lisible par un être humain."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:44
+#, fuzzy
 msgid ""
 "There is also another way to format text in GDScript, namely the ``String."
 "format()`` method. It replaces all occurrences of a key in the string with "
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"Il existe également une autre façon de formater du texte dans GDScript, à "
+"savoir la méthode `` String.format () ``. Elle remplace toutes les "
+"occurrences d'une clé dans la chaîne par la valeur correspondante. La "
+"méthode peut gérer des tableaux ou des dictionnaires pour les paires clé / "
+"valeur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:48
+#, fuzzy
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"Les tableaux peuvent être utilisés comme clé, index ou un mélange des deux "
+"(voir les exemples ci-dessous). L'ordre n'a d'importance que lorsque l'index "
+"ou le style mixte de Array est utilisé."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:51
 msgid "A quick example in GDScript::"
-msgstr ""
+msgstr "Un exemple rapide en GDScript :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:62
 msgid ""
@@ -93,7 +131,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:67
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "Espaces réservés multiples"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:69
 msgid ""

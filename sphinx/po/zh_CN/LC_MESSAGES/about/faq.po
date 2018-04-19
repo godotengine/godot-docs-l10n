@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 12:22+0200\n"
+"POT-Creation-Date: 2018-04-19 09:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,47 +19,51 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:4
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "常见问题"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr ""
+msgstr "我可以用Godot做什么？它要花多少钱？它有哪些许可条款？"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
+"Godot是免费/自由开源软件, 在 `OSI-approved <https://opensource.org/licenses/"
+"MIT>`_ MIT许可证下发布。"
 
 #: ../../docs/about/faq.rst:11
 msgid ""
 "This means it is free as in \"free speech\" as well as in \"free beer\"."
-msgstr ""
+msgstr "这就是说它是免费的，对，就是“免费的午餐”。"
 
 #: ../../docs/about/faq.rst:13
 msgid "In short:"
-msgstr ""
+msgstr "总之:"
 
 #: ../../docs/about/faq.rst:15
 msgid "There are no usage restrictions on Godot"
-msgstr ""
+msgstr "Godot没有任何使用限制"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
-msgstr ""
+msgstr "这意味着你可以使用它在任何行业内制作商业或非商业的游戏或应用"
 
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
-msgstr ""
+msgstr "你可以自由修改, (重新) 分发和组织Godot的内容"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
+"有关详细情况, 请参阅 `此处 <https://tldrlegal.com/license/mit-license>`_ 或咨"
+"询律师。"
 
 #: ../../docs/about/faq.rst:21
 msgid ""
@@ -68,6 +72,9 @@ msgid ""
 "by/3.0/>`_) license, with attribution to \"Juan Linietsky, Ariel Manzur and "
 "the Godot Engine community\"."
 msgstr ""
+"文档的所有内容都由Creative Commons Attribution 3.0(' CC-3.0 <https://"
+"creativecommons.org/licenses/by/3.0/> ' _) 许可证签署, 版权归 \"娟（Juan "
+"Linietsky）, Ariel Manzur 和Godot引擎社区\" 所有。"
 
 #: ../../docs/about/faq.rst:25
 msgid ""
@@ -75,6 +82,8 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"Logo徽标和图标均在相同的CC共享许可下。注意, Godot的源代码中包含的某些第三方库"
+"可能具有不同的许可。"
 
 #: ../../docs/about/faq.rst:28
 msgid ""
@@ -84,28 +93,33 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"有关完整的详细信息, 请查看 `COPYRIGHT.txt <https://github.com/godotengine/"
+"godot/blob/master/COPYRIGHT.txt>`_ 以及 `LICENSE.txt <https://github.com/"
+"godotengine/godot/blob/master/LICENSE.txt> `_ 和`LOGO_LICENSE https://github/"
+"godotengine/godot/blob/master/LOGO_LICENSE.md >`_ 在Godot仓库中的文件。"
 
 #: ../../docs/about/faq.rst:31
 msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"还可以查阅 `Godot网站上的许可页面 <https://godotengine.org/license>`_ 。"
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Godot支持哪些平台？"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**对于编辑器：**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
@@ -113,11 +127,11 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**对于游戏的导出：**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (包括 UWP)"
 
 #: ../../docs/about/faq.rst:47
 msgid "Android"
@@ -135,7 +149,7 @@ msgstr ""
 msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr ""
+msgstr "同时支持32位和64位，默认为64位"
 
 #: ../../docs/about/faq.rst:53
 msgid ""
@@ -144,16 +158,21 @@ msgid ""
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
+"一些用户在基于ARM的Linux系统上成功构建和使用Godot，比如Raspberry Pi。还有一些"
+"非官方组织在为游戏机进行构建。不过，这些都不包含在默认的构建脚本和导出模板"
+"中。"
 
 #: ../../docs/about/faq.rst:57
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"欲了解更多信息, 请参阅 :ref:`导出 <toc-learn-workflow-export>` 和 :ref:`编译"
+"Godot <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:60
 msgid "Which languages are supported in Godot?"
-msgstr ""
+msgstr "Godot支持哪些语言?"
 
 #: ../../docs/about/faq.rst:62
 msgid ""
@@ -161,18 +180,22 @@ msgid ""
 "C# and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Godot官方语言为GDScript、可视化脚本、C#和C++。具体请参阅 :ref:`游戏脚本 <toc-"
+"learn-scripting>` 章节。"
 
 #: ../../docs/about/faq.rst:65
 msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
-msgstr ""
+msgstr "注意C#和可视化脚本支持还相对不完善，GDScript仍然优势，下面会提到。"
 
 #: ../../docs/about/faq.rst:68
 msgid ""
 "Support for new languages can be added by third parties using the GDNative / "
 "NativeScript / PluginScript facilities. (See question about plugins below.)"
 msgstr ""
+"可以使用GDNative / NativeScript / PluginScript工具添加对新语言的支持。（请参"
+"阅下面关于插件的问题。）"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -180,12 +203,14 @@ msgid ""
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"目前已经开展一些工作了，比如Godot绑定 `Python <https://github.com/touilleMan/"
+"godot-python>`_ 和 `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
-msgstr ""
+msgstr "GDScript？为什么使用自定义脚本语言而不是我当前选择的现有语言？"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -197,6 +222,10 @@ msgid ""
 "language in Godot (see list of supported options above), but we strongly "
 "encourage you to try it and see the benefits for yourself."
 msgstr ""
+"简单来讲，我们认为，这个额外的成本无论是对您来说（学习Godot和GDScript）还是对"
+"我们来说（维护）都是值得的，它能获得更好的整合和无缝的体验（而不是用更熟悉的"
+"语言吸引用户，但体验糟糕）我们理解您想在Godot中使用其他语言的意愿（参阅上面的"
+"支持列表），但我们强烈建议您尝试一下GDScript，看看它有啥好处。"
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -205,6 +234,9 @@ msgid ""
 "most a day or two to get comfortable and it's very easy to see the benefits "
 "once you do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
+"GDScript旨在从底层整合Godot的工作方式，它比任何其他语言都更加完美，而且非常简"
+"单易学。花最多一两天就可以用的很爽，一旦你做到了，很容易能看到它的优势。请尽"
+"力学习GDScript，你不会后悔的。"
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -213,6 +245,9 @@ msgid ""
 "but trying to use it instead of GDScript for an entire game is, in most "
 "cases, a waste of time."
 msgstr ""
+"Godot C ++ API也是高效易用的（整个Godot编辑器就是用这个API编写的），并且是优"
+"化项目性能的优秀工具，但是在整个游戏中使用它代替GDScript，在大多数情况下都是"
+"浪费时间。"
 
 #: ../../docs/about/faq.rst:96
 msgid ""
@@ -221,6 +256,9 @@ msgid ""
 "fact we authored tolua++ in the past, one of the most popular C++ binders). "
 "None of them worked as well as GDScript does now."
 msgstr ""
+"是的，我们十多年来尝试整合了几种虚拟机（甚至用它们发行游戏），比如Python，"
+"Squirrel和Lua（事实上我们曾参与开发过tolua++，最流行的C++绑定器之一）。但他们"
+"都没有像GDScript现在这样好。"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -228,18 +266,20 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"有关使用GDScript或动态类型语言的更多信息，请参阅教程 :ref:"
+"`doc_gdscript_more_efficiently`。"
 
 #: ../../docs/about/faq.rst:105
 msgid "For the more technically versed, proceed to the next item."
-msgstr ""
+msgstr "有关技术上的解释，请看下一项。"
 
 #: ../../docs/about/faq.rst:108
 msgid "I don't believe you. What are the technical reasons for the item above?"
-msgstr ""
+msgstr "我不信。上面所说的技术原因呢？"
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
-msgstr ""
+msgstr "主要原因："
 
 #: ../../docs/about/faq.rst:112
 msgid ""

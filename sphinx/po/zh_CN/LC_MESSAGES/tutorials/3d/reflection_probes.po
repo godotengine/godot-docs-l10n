@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 12:22+0200\n"
+"POT-Creation-Date: 2018-04-19 09:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:7
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:9
 msgid ""
@@ -54,7 +54,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/reflection_probes.rst:18
 msgid ""
 "They work best for rectangular shaped rooms or places, otherwise the "
-"reflections shown are not as faithful (specially when roughness is 0)."
+"reflections shown are not as faithful (especially when roughness is 0)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:21
@@ -70,7 +70,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/reflection_probes.rst:27
 msgid ""
 "This should result in immediate local reflections. If you are using a Sky "
-"texture, reflections are by default blended. with it."
+"texture, reflections are by default blended with it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:29
@@ -104,7 +104,7 @@ msgid ""
 "By default, shadow mapping is disabled when rendering probes (only in the "
 "rendered image inside the probe, not the actual scene). This is a simple way "
 "to save on performance and memory. If you really want shadows in the probe, "
-"they can be toggled on/of with the *Enable Shadow* setting:"
+"they can be toggled on/off with the *Enable Shadow* setting:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:50
@@ -123,7 +123,7 @@ msgstr ""
 msgid ""
 "If you are using reflection probes in an interior setting, it is recommended "
 "that the **Interior** property is enabled. This makes the probe not render "
-"the sky, and also allows custom amibent lighting settings."
+"the sky, and also allows custom ambient lighting settings."
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:63
@@ -152,7 +152,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/reflection_probes.rst:75
 msgid ""
 "As you can see, this blending is never perfect (after all, these are box "
-"reflections, not real reflections), but these arctifacts are only visible "
+"reflections, not real reflections), but these artifacts are only visible "
 "when using perfectly mirrored reflections. Normally, scenes have normal "
 "mapping and varying levels of roughness which can hide this."
 msgstr ""
@@ -162,7 +162,7 @@ msgid ""
 "Alternatively, Reflection Probes work very well blended together with Screen "
 "Space Reflections to solve these problems. Combining them makes local "
 "reflections appear more faithful, while probes only used as fallback when no "
-"screen-sace information is found:"
+"screen-space information is found:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:84

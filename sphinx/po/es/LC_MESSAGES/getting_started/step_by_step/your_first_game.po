@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 12:22+0200\n"
+"POT-Creation-Date: 2018-04-19 09:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your First Game"
-msgstr ""
+msgstr "Mi Primer Juego"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 msgid "Overview"
-msgstr ""
+msgstr "Resumen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -31,6 +31,9 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
+"Este tutorial lo guiará en la creación del primer proyecto en Godot. "
+"Aprenderá cómo funciona el editor, estructurar un proyecto y construir un "
+"juego 2D."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -38,22 +41,31 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
+"Este proyecto es una introducción al motor Godot. Se asume que el lector "
+"posee alguna experiencia previa en programación. Si eres completamente nuevo "
+"en el tema de programación, ver primero : :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
+"El juego es llamado \"Dodge the Creeps!\". El personaje debe moverse y "
+"esquivar los enemigos tanto tiempo como sea posible. Aquí hay un avance del "
+"resultado final:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
+"**¿Por qué 2D?** Los juegos 3D son mucho más complejos que los 2D. Se "
+"recomienda apegarse a 2D hasta que se haya adquirido un conocimiento "
+"suficiente del proceso de desarrollo de un videojuego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 msgid "Project Setup"
-msgstr ""
+msgstr "Configuración del proyecto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -61,6 +73,10 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"Ejecute Godot y cree un proyecto nuevo. Luego descargue las imágenes y "
+"sonidos que se utilizarán para hacer el juego de :download:`dodge_assets.zip "
+"<files/dodge_assets.zip>`. Descomprima los archivos en la carpeta del "
+"proyecto."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -68,6 +84,9 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"Para este tutorial, asumiremos que ya se es familiar con el editor. Si no se "
+"leyó  :ref:`doc_scenes_and_nodes`,  este es el momento de hacerlo para saber "
+"cómo configurar un proyecto y utilizar el editor."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -75,10 +94,13 @@ msgid ""
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to 480 and \"Height\" to 720."
 msgstr ""
+"Este juego utiliza el modo vertical (portrait), así que tendremos que "
+"ajustar el tamaño de la ventana. Click en Proyecto -> Ajustes del proyecto -"
+"> Display -> Window y colocar \"Width\" en 480 y \"Height\" en 720."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the Project"
-msgstr ""
+msgstr "Organización del Proyecto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
@@ -89,10 +111,17 @@ msgid ""
 "and scripts in the root folder, referred to as ``res://``.  You can see your "
 "project folders in the FileSystem Dock in the upper left corner:"
 msgstr ""
+"En este proyecto, haremos 3 escenas independientes: ``Player`` (jugador), "
+"``Mob`` (enemigo), and ``HUD`` (visualización del estado del juego), los que "
+"se combinarán en la escena ``Main`` (principal). En un proyecto grande, será "
+"útil crear carpetas que contengan las escenas y sus scripts, pero para este "
+"juego relativamente pequeño se pueden grabar las escenas y scripts en la "
+"carpeta raíz, normalmente referida como ``res://``.  Se pueden ver las "
+"carpetas en el Panel de Sistema de Archivos, en la parte superior izquierda:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player Scene"
-msgstr ""
+msgstr "Escena Player"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -100,16 +129,21 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"La primer escena que haremos define el objeto ``Player``. Uno de los "
+"beneficios de crear una escena Player aparte es que se puede probar de "
+"manera separada, aún antes de haber creado otras partes del juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node Structure"
-msgstr ""
+msgstr "Estructura de nodos"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:65
 msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
+"Para comenzar, hacer click en el botón \"Añadir/Crear nodo nuevo\" y agregar "
+"un nodo :ref:`Area2D <class_Area2D>` a la escena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -118,6 +152,10 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
+"Con ``Area2D`` podremos detectar objetos que se superponen o entran en "
+"contacto con el jugador. Cambia su nombre a ``Player`` haciendo click en el "
+"nombre del nodo. Este nodo es el nodo raíz de la escena. Se pueden "
+"incorporar más nodos al jugador para agregar funcionalidad."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
 msgid ""
@@ -126,12 +164,19 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
+"Antes de que agreguemos un hijo al nodo ``Player``, debemos asegurarnos de "
+"no moverlos o escalarlos accidentalmente al hacer click en ellos. "
+"Seleccionar el nodo y hacer click en el ícono a la derecha del candado; su "
+"descripción dice \"Asegurarse de que los hijos de un nodo no sean "
+"seleccionables\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
+"Guardar la escena. Click en Escena -> Guardar, o presionar ``Ctrl+S`` en "
+"Windows/Linux o ``Command+S`` en Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid ""
@@ -139,6 +184,9 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
+"Para este proyecto, usaremos las siguientes convenciones de nombres de "
+"Godot. Clases (nodos) usarán ``PascalCase``, variables y funciones, "
+"utilizarán ``snake_case`` y las constantes ``ALL_CAPS``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
 msgid "Sprite Animation"

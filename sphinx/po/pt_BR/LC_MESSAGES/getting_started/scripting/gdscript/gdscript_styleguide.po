@@ -1,0 +1,219 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
+msgid "GDScript Style Guide"
+msgstr "GDScript Guia de Estilo"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:7
+msgid "Description"
+msgstr "Descrição"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:9
+msgid ""
+"This styleguide lists conventions to write elegant GDScript. The goal is to "
+"encourage writing clean, readable code and promote consistency across "
+"projects, discussions, and tutorials. Hopefully, this will also encourage "
+"development of auto-formatting tools."
+msgstr ""
+"Este guia de estilo lista as convenções utilizadas para escrever código "
+"GDScript elegante. O objetivo é encorajar a escrita de código limpo e "
+"legível, além de promover a consistência entre os projetos, discussões e "
+"tutoriais. Esperamos que isto também encoraje a criação de ferramentas de "
+"auto-formatação."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:14
+msgid ""
+"Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
+"<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
+msgstr ""
+"Já que o GDScript é próximo da linguagem Python, este guia é inspirado no "
+"guia de estilos `PEP 8 <https://www.python.org/dev/peps/pep-0008/>`__ do "
+"Python."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
+msgid ""
+"Godot's built-in script editor uses a lot of these conventions by default. "
+"Let it help you."
+msgstr ""
+"O editor de scripts padrão do Godot usa várias dessas convenções por padrão. "
+"Deixe que isso te ajude."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
+msgid "Code Structure"
+msgstr "Estrutura do Código"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
+msgid "Indentation"
+msgstr "Indentação"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:27
+msgid "Indent type: Tabs *(editor default)*"
+msgstr "Tipo de Indentação: Tabs *(padrão do editor)*"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:29
+msgid "Indent size: 4 *(editor default)*"
+msgstr "Tamanho da indentação: 4 *(padrão do editor)*"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:31
+msgid "Each indent level should be one greater than the block containing it."
+msgstr ""
+"Cada nível de indentação deve ser uma unidade maior que a do bloco que o "
+"contém."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:33
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:53
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:83
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
+msgid "**Good**"
+msgstr "**Bom**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:93
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
+msgid "**Bad**"
+msgstr "**Ruim**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
+msgid ""
+"Use 2 indent levels to distinguish continuation lines from regular code "
+"blocks."
+msgstr ""
+"Use 2 níveis de indentação para distinguir linhas contínuas de blocos de "
+"código regulares."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:70
+msgid "Blank lines"
+msgstr "Linhas em branco"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:72
+msgid "Surround functions and class definitions by a blank line."
+msgstr "Cerque definições de funções e classes com uma linha vazia."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:74
+msgid "Use one blank line inside functions to separate logical sections."
+msgstr "Use uma linha vazia dentro de funções para separar seções lógicas."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:77
+msgid "One Statement per Line"
+msgstr "Uma Declaração por Linha"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:79
+msgid ""
+"Never combine multiple statements on a single line. No, C programmers, not "
+"with a single line conditional statement (except with the ternary operator)!"
+msgstr ""
+"Nunca combine várias instruções em uma única linha. Não, programadores de C, "
+"não com uma expressão condicional de uma linha (com a exceção do operador "
+"ternário)!"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
+msgid "Avoid Unnecessary Parentheses"
+msgstr "Evite Parênteses Desnecessários"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:104
+msgid ""
+"Avoid parentheses in expressions and conditional statements. Unless "
+"necessary for order of operations, they only reduce readability."
+msgstr ""
+"Evite parênteses em instruções e expressões condicionais. A não ser que eles "
+"sejam necessários para garantir a ordem das operações, eles somente reduzem "
+"a legibilidade."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:122
+msgid "Whitespace"
+msgstr "Espaço em branco"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:124
+msgid ""
+"Always use one space around operators and after commas. Avoid extra spaces "
+"in dictionary references and function calls, or to create \"columns.\""
+msgstr ""
+"Sempre use um espaço ao redor de operadores e após vírgulas. Evite espaços "
+"extras em referências de dicionário e chamadas de função, ou a criação de "
+"\"colunas.\""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
+msgid "**Never!**"
+msgstr "**Nunca!**"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
+msgid "Naming Conventions"
+msgstr "Convenções de nomes"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:158
+msgid ""
+"These naming conventions follow the Godot Engine style. Breaking these will "
+"make your code clash with the built-in naming conventions, which is ugly."
+msgstr ""
+"Estas convenções de nomeação seguem o estilo do motor Godot. Quebra-las irá "
+"fazer com que o seu código brigue com as convêncões de nomeação padrão do "
+"motor, o que é feio."
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:163
+msgid "Classes and Nodes"
+msgstr "Classes e Nós"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:165
+msgid "Use PascalCase: ``extends KinematicBody``"
+msgstr "Utilize PascalCase: ``extends KinematicBody``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:167
+msgid "Also when loading a class into a constant or variable:"
+msgstr "Inclusive ao carregar uma classe em uma constante ou variável:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:174
+msgid "Functions and Variables"
+msgstr "Funções e Variáveis"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
+msgid "Use snake\\_case: ``get_node()``"
+msgstr "Utilize snake\\_case: ``get_node()``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
+msgid ""
+"Prepend a single underscore (\\_) to virtual methods (functions the user "
+"must override), private functions, and private variables: ``func _ready()``"
+msgstr ""
+"Prefixe com um único sublinhado (\\_) os métodos virtuais (funçoes que o "
+"usuário deve sobrescrever), funções privadas e variáveis privadas: ``func "
+"_ready()``"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
+msgid "Signals"
+msgstr "Sinais"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:185
+msgid "Use past tense:"
+msgstr "Utilize o tempo pretérito:"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
+msgid "Constants"
+msgstr "Constantes"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
+msgid ""
+"Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
+"``const MAX_SPEED = 200``"
+msgstr ""
+"Utilize CONSTANT\\_CASE, com todas as letras maiúsculas e um sublinhado para "
+"separas as palavras: ``const MAX_SPEED = 200``"

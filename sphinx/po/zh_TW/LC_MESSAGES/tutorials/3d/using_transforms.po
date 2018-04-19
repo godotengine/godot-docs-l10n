@@ -1,0 +1,442 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/3d/using_transforms.rst:4
+msgid "Using 3D transforms in Godot"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:7
+msgid "Introduction"
+msgstr "序言"
+
+#: ../../docs/tutorials/3d/using_transforms.rst:9
+msgid ""
+"If you have never made 3D games before, working with rotations in three "
+"dimensions can be very confusing at first. Coming from 2D, the natural way "
+"of thinking is along the lines of *\"Oh, it's just like rotating in 2D, "
+"except now rotations happen in X, Y and Z\"*."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:12
+msgid ""
+"At first this seems easy and for simple games, this way of thinking may even "
+"be enough. Unfortunately, it's very often incorrect."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:14
+msgid ""
+"Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:18
+msgid ""
+"Euler angles were introduced by mathematician Leonhard Euler in the early "
+"1700s."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:22
+msgid ""
+"This way of representing 3D rotations was groundbreaking at the time, but it "
+"has several shortcomings when used in game development (which is to be "
+"expected from a guy with a funny hat). The idea of this document is to "
+"explain why, as well as outlining best practices for dealing with transforms "
+"when programming 3D games."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:28
+msgid "Problems of Euler Angles"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:30
+msgid ""
+"While it may seem very intuitive that each axis has a rotation, the truth is "
+"that it's just not practical."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:33
+msgid "Axis Order"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:35
+msgid ""
+"The main reason for this is that there isn't a *unique* way to construct an "
+"orientation from the angles. There isn't a standard mathematical function "
+"that takes all the angles together and produces an actual 3D rotation. The "
+"only way an orientation can be produced from angles is to rotate the object "
+"angle by angle, in an *arbitrary order*."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:39
+msgid ""
+"This could be done by first rotating in *X*, then *Y* and then in *Z*. "
+"Alternatively, you could first rotate in *Y*, then in *Z* and finally in "
+"*X*. Anything really works, but depending on the order, the final "
+"orientation of the object will *not necessarily be the same*. Indeed, this "
+"means that there are several ways to construct an orientation from 3 "
+"different angles, depending on *the order of the rotations*."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:43
+msgid ""
+"Following is a visualization of rotation axes (in X,Y,Z order) in a gimbal "
+"(from Wikipedia). As you can see, the orientation of each axis depends on "
+"the rotation of the previous one:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:47
+msgid ""
+"You may be wondering how this affects you. Let's look at a practical example:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:49
+msgid ""
+"Imagine you are working on a first-person controller (FPS game). Moving the "
+"mouse left and right controls your view angle parallel to the ground, while "
+"moving it up and down moves the player's view up and down."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:51
+msgid ""
+"In this case to achieve the desired effect, rotation must be applied first "
+"in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
+"orientation), followed by rotation in the *X* axis."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:55
+msgid ""
+"If we were to apply rotation in the *X* axis first, and then in *Y*, the "
+"effect would be undesired:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:59
+msgid ""
+"Depending on the type of game or effect desired, the order in which you want "
+"axis rotations to be applied may differ. Therefore, applying rotations in X, "
+"Y, and Z is not enough: you also need a *rotation order*."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:63
+msgid "Interpolation"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:65
+msgid ""
+"Another problem with using Euler angles is interpolation. Imagine you want "
+"to transition between two different camera or enemy positions (including "
+"rotations). One logical way to approach this is to interpolate the angles "
+"from one position to the next. One would expect it to look like this:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:69
+msgid "But this does not always have the expected effect when using angles:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:73
+msgid "The camera actually rotated the opposite direction!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:75
+msgid "There are a few reasons this may happen:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:77
+msgid ""
+"Rotations don't map linearly to orientation, so interpolating them does not "
+"always result in the shortest path (i.e., to go from ``270`` to ``0`` "
+"degrees is not the same as going from ``270`` to ``360``, even though the "
+"angles are equivalent)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:78
+msgid ""
+"Gimbal lock is at play (first and last rotated axis align, so a degree of "
+"freedom is lost). See `Wikipedia's page on Gimbal Lock <https://en.wikipedia."
+"org/wiki/Gimbal_lock>`_ for a detailed explanation of this problem."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:81
+msgid "Say no to Euler Angles"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:83
+msgid ""
+"The result of all this is that you should **not use** the ``rotation`` "
+"property of :ref:`class_Spatial` nodes in Godot for games. It's there to be "
+"used mainly in the editor, for coherence with the 2D engine, and for very "
+"simple rotations (generally just one axis, or even two in limited cases). As "
+"much as you may be tempted, don't use it."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:85
+msgid "Instead, there is a better way to solve your rotation problems."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:88
+msgid "Introducing Transforms"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:90
+msgid ""
+"Godot uses the :ref:`class_Transform` datatype for orientations. Each :ref:"
+"`class_Spatial` node contains a ``transform`` property which is relative to "
+"the parent's transform, if the parent is a Spatial-derived type."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:92
+msgid ""
+"It is also possible to access the world coordinate transform via the "
+"``global_transform`` property."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:94
+msgid ""
+"A transform has a :ref:`class_Basis` (transform.basis sub-property), which "
+"consists of three :ref:`class_Vector3` vectors. These are accessed via the "
+"``transform.basis`` property and can be accessed directly by ``transform."
+"basis.x``, ``transform.basis.y``, and ``transform.basis.z``. Each vector "
+"points in the direction its axis has been rotated, so they effectively "
+"describe the node's total rotation. The scale (as long as it's uniform) can "
+"be also be inferred from the length of the axes. A *basis* can also be "
+"interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:96
+msgid "A default basis (unmodified) is akin to:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:106
+msgid "This is also an analog to a 3x3 identity matrix."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:108
+msgid ""
+"Following the OpenGL convention, ``X`` is the *Right* axis, ``Y`` is the "
+"*Up* axis and ``Z`` is the *Forward* axis."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:110
+msgid ""
+"Together with the *basis*, a transform also has an *origin*. This is a "
+"*Vector3* specifying how far away from the actual origin ``(0, 0, 0)`` this "
+"transform is. Combining the *basis* with the *origin*, a *transform* "
+"efficiently represents a unique translation, rotation, and scale in "
+"space. .. image:: img/transforms_camera.png"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:114
+msgid ""
+"One way to visualize a transform is to look at an object's 3D gizmo while in "
+"\"local space\" mode."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:118
+msgid ""
+"The gizmo's arrows show the ``X``, ``Y``, and ``Z`` axes (in red, green, and "
+"blue respectively) of the basis, while gizmo's center is at the object's "
+"origin."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:122
+msgid ""
+"For more information on the mathematics of vectors and transforms, please "
+"read the :ref:`doc_vector_math` tutorials."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:125
+msgid "Manipulating Transforms"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:127
+msgid ""
+"Of course, transforms are not as straightforward to manipulate as angles and "
+"have problems of their own."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:129
+msgid ""
+"It is possible to rotate a transform, either by multiplying its basis by "
+"another (this is called accumulation), or by using the rotation methods."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:139
+msgid "A method in Spatial simplifies this:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:148
+msgid "This rotates the node relative to the parent node."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:150
+msgid ""
+"To rotate relative to object space (the node's own transform) use the "
+"following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:160
+msgid "Precision Errors"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:162
+msgid ""
+"Doing successive operations on transforms will result in a loss of precision "
+"due to floating-point error. This means the scale of each axis may no longer "
+"be exactly ``1.0``, and they may not be exactly ``90`` degrees from each "
+"other."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:164
+msgid ""
+"If a transform is rotated every frame, it will eventually start deforming "
+"over time. This is unavoidable."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:166
+msgid ""
+"There are two different ways to handle this. The first is to "
+"*orthonormalize* the transform after some time (maybe once per frame if you "
+"modify it every frame):"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:172
+msgid ""
+"This will make all axes have ``1.0`` length again and be ``90`` degrees from "
+"each other. However, any scale applied to the transform will be lost."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:174
+msgid ""
+"It is recommended you don't scale nodes that are going to be manipulated. "
+"Scale their children nodes instead (such as MeshInstance). If you absolutely "
+"must scale the node, then re-apply it at the end:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:183
+msgid "Obtaining Information"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:185
+msgid ""
+"You might be thinking at this point: **\"Ok, but how do I get angles from a "
+"transform?\"**. The answer again is: you don't. You must do your best to "
+"stop thinking in angles."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:187
+msgid ""
+"Imagine you need to shoot a bullet in the direction your player is facing. "
+"Just use the forward axis (commonly ``Z`` or ``-Z``)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:194
+msgid ""
+"Is the enemy looking at the player? Use the dot product for this (see the :"
+"ref:`doc_vector_math` tutorial for an explanation of the dot product):"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:203
+msgid "Strafe left:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:211
+msgid "Jump:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:221
+msgid "All common behaviors and logic can be done with just vectors."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:224
+msgid "Setting Information"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:226
+msgid ""
+"There are, of course, cases where you want to set information to a "
+"transform. Imagine a first person controller or orbiting camera. Those are "
+"definitely done using angles, because you *do want* the transforms to happen "
+"in a specific order."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:228
+msgid ""
+"For such cases, keep the angles and rotations *outside* the transform and "
+"set them every frame. Don't try retrieve them and re-use them because the "
+"transform is not meant to be used this way."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:230
+msgid "Example of looking around, FPS style:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:248
+msgid ""
+"As you can see, in such cases it's even simpler to keep the rotation "
+"outside, then use the transform as the *final* orientation."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:251
+msgid "Interpolating with Quaternions"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:253
+msgid ""
+"Interpolating between two transforms can efficiently be done with "
+"quaternions. More information about how quaternions work can be found in "
+"other places around the Internet. For practical use, it's enough to "
+"understand that pretty much their main use is doing a closest path "
+"interpolation. As in, if you have two rotations, a quaternion will smoothly "
+"allow interpolation between them using the closest axis."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:255
+msgid "Converting a rotation to quaternion is straightforward."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:267
+msgid ""
+"The :ref:`class_Quat` type reference has more information on the datatype "
+"(it can also do transform accumulation, transform points, etc. though this "
+"is used less often). If you interpolate or apply operations to quaternions "
+"many times, keep in mind they need to be eventually normalized or they also "
+"may suffer from numerical precision errors."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:269
+msgid ""
+"Quaternions are very useful when doing camera/path/etc. interpolations, as "
+"the result will be always correct and smooth."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:272
+msgid "Transforms are your friend"
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:274
+msgid ""
+"For most beginners, getting used to working with transforms can take some "
+"time. However, once you get used to them, you will appreciate their "
+"simplicity and power."
+msgstr ""
+
+#: ../../docs/tutorials/3d/using_transforms.rst:276
+msgid ""
+"Don't hesitate to ask for help on this topic in any of Godot's `online "
+"communities <https://godotengine.org/community>`_ and, once you become "
+"confident enough, please help others!"
+msgstr ""

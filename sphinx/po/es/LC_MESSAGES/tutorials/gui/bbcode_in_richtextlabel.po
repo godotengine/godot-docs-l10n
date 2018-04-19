@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-10 12:22+0200\n"
+"POT-Creation-Date: 2018-04-19 09:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:27
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:29
 msgid "**bold**"
@@ -270,11 +270,11 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "red"
-msgstr ""
+msgstr "rojo"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:72
 msgid "silver"
-msgstr ""
+msgstr "plata"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "teal"
@@ -282,21 +282,23 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:74
 msgid "white"
-msgstr ""
+msgstr "Blanco"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "yellow"
-msgstr ""
+msgstr "Amarillo"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:78
 msgid "Hexadecimal color codes"
-msgstr ""
+msgstr "Códigos Hexadecimales de color"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:80
 msgid ""
 "For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
 "``[color=#ffffff]white[/color]``."
 msgstr ""
+"Para colores RGB opacos, cualquier código hexadecimal valido de 6-dígitos  "
+"esta soportado, p.ej. ``[color=#ffffff]white[/color]``."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:82
 msgid ""
@@ -304,3 +306,7 @@ msgid ""
 "``[color=#88ffffff]translucent white[/color]``. In this case, note that the "
 "alpha channel is the **first** component of the color code, not the last one."
 msgstr ""
+"Para colores RGB transparentes, puede ser usado cualquier código hexadecimal "
+"valido de 8-dígitos, p.ej. ``[color=#88ffffff]translucent white[/color]``. "
+"En este caso, observa que el canal alpha es el **primer** componente del "
+"código de color, no el ultimo."
