@@ -51,7 +51,6 @@ while [ $# -gt 0 ]; do
       ;;
     --add-langs|-l)
       add_langs=true
-      make_sphinx_po_symlinks=true
       ;;
     *)
       echo "Invalid argument."
