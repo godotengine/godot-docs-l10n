@@ -1,22 +1,28 @@
-# French translations for Godot Engine package
-# Traductions françaises du paquet Godot Engine.
+# Godot Engine Documentation in Chinese (Simplified)
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
-# Automatically generated, 2018.
+#
+# RainVector <y2505418927@gmail.com>, 2018.
+# seanfy <everxiao@qq.com>, 2018.
+# sersoong <seraphim945@qq.com>, 2018.
+# Zae Chao <zae.vito@live.com>, 2018.
+# zaevi <526131722@qq.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-04-10 12:22+0200\n"
-"PO-Revision-Date: 2018-04-10 12:22+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2018-04-19 05:57+0000\n"
+"Last-Translator: RainVector <y2505418927@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"godot-engine/godot-docs/zh_Hans/>\n"
+"Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 3.0-dev\n"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:7
@@ -67,7 +73,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/2d_transforms.rst:7
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:7
 msgid "Introduction"
-msgstr ""
+msgstr "简介"
 
 #: ../../docs/about/introduction.rst:11
 msgid ""
@@ -76,6 +82,9 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
+"欢迎使用Godot引擎的正式文档, 这是一个由免费开源社区驱动的2D 和3D 游戏引擎!在"
+"此之后, 您将发现一个功能强大但十分友好的工具, 您可以使用它开发任何类型的游"
+"戏, 发布在任何平台, 并且没有任何使用限制。"
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -83,10 +92,12 @@ msgid ""
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
+"本页的旨在对引擎和本文档的内容进行广泛的介绍, 以便初学者知道从什么地方开始学"
+"习和查找有关特定功能的信息。"
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
-msgstr ""
+msgstr "关于Godot引擎"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -94,6 +105,8 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
+"游戏引擎是一个复杂的工具, 因此很难用几句话来概括Godot。这是我们的公关介绍, 您"
+"可以自由使用它。"
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -104,6 +117,10 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows) as "
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
+"Godot引擎是一个功能丰富，跨平台且使用友好界面来制作2D和3D游戏的引擎。它提供了"
+"大量的工具让开发者可以将更多的心思花在做游戏上而不是开发这些工具。游戏支持一"
+"键导出到多个平台，包括主流操作系统（Linux，macOS，Windows）以及移动端"
+"（Android，iOS）和网页端（HTML5）。"
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -114,6 +131,10 @@ msgid ""
 "engine to match their expectations. It is supported by the `Software Freedom "
 "Conservancy <https://sfconservancy.org>`_ not-for-profit."
 msgstr ""
+"Godot在非常宽松的MIT许可证下完全免费且开源。没有附加条文，没有特许权使用费，"
+"没有任何要求。用户的游戏使他们自己的，一直到引擎的最后一行代码。Godot的开发完"
+"全是独立而且是社区驱动的，帮助用户塑造出符合他们需求的引擎。它受到`软件自由保"
+"护<https://sfconservancy.org>`_非营利组织的支持。"
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -121,10 +142,12 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
+"想要更深入的了解该引擎，敬请阅读此文档的更多内容，可以从 :ref:`Step by step "
+"<toc-learn-step_by_step>`开始。"
 
 #: ../../docs/about/introduction.rst:46
 msgid "About the documentation"
-msgstr ""
+msgstr "关于文档"
 
 #: ../../docs/about/introduction.rst:48
 msgid ""
@@ -142,6 +165,8 @@ msgid ""
 "sending patches via pull requests on its GitHub `source repository <https://"
 "github.com/godotengine/godot-docs>`_."
 msgstr ""
+"你可以为Godot文档作出贡献，在GitHub上提出问题或提交推送请求：`源码仓库 "
+"<https://github.com/godotengine/godot-docs>`_."
 
 #: ../../docs/about/introduction.rst:59
 msgid ""
@@ -150,10 +175,13 @@ msgid ""
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
 "\"."
 msgstr ""
+"文档的所有内容都由Creative Commons Attribution 3.0(' CC-3.0 <https://"
+"creativecommons.org/licenses/by/3.0/> ' _) 许可证签署, 版权归 \"娟(Juan "
+"Linietsky), Ariel Manzur 和Godot引擎社区\" 所有。"
 
 #: ../../docs/about/introduction.rst:64
 msgid "Organisation of the documentation"
-msgstr ""
+msgstr "文档构成"
 
 #: ../../docs/about/introduction.rst:66
 msgid ""
@@ -161,6 +189,7 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
+"文档由五部分组成。虽然内容分布很不均衡，但是内容分割的方法还是很直观的："
 
 #: ../../docs/about/introduction.rst:70
 msgid ""
@@ -168,6 +197,8 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
+":ref:`sec-general` 部分包括简介、关于引擎的信息、历史、许可证和作者等。这部分"
+"也包含:ref:`doc_faq`。"
 
 #: ../../docs/about/introduction.rst:73
 msgid ""
@@ -176,6 +207,9 @@ msgid ""
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
+":ref:`sec-learn`部分是这份文档存在的主要理由，因为它包含如何使用引擎制作游戏"
+"所需要的所有信息。这一部分以:ref:`Step by step <toc-learn-step_by_step>`教程"
+"开始。这个教程是所有新用户的起点。"
 
 #: ../../docs/about/introduction.rst:78
 msgid ""
@@ -214,55 +248,61 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"除此之外, 您还可以学习各种 `Godot Demo项目 <https://github.com/godotengine/"
+"godot-demo-projects>`_ 。"
 
 #: ../../docs/about/introduction.rst:97
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
+msgstr "感谢您的阅读，祝您Godot旅途愉快！"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "常见问题"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr ""
+msgstr "我可以用Godot做什么？它要花多少钱？它有哪些许可条款？"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
+"Godot是免费/自由开源软件, 在 `OSI-approved <https://opensource.org/licenses/"
+"MIT>`_ MIT许可证下发布。"
 
 #: ../../docs/about/faq.rst:11
 msgid ""
 "This means it is free as in \"free speech\" as well as in \"free beer\"."
-msgstr ""
+msgstr "这就是说它是免费的，对，就是“免费的午餐”。"
 
 #: ../../docs/about/faq.rst:13
 msgid "In short:"
-msgstr ""
+msgstr "总之:"
 
 #: ../../docs/about/faq.rst:15
 msgid "There are no usage restrictions on Godot"
-msgstr ""
+msgstr "Godot没有任何使用限制"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
-msgstr ""
+msgstr "这意味着你可以使用它在任何行业内制作商业或非商业的游戏或应用"
 
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
-msgstr ""
+msgstr "你可以自由修改, (重新) 分发和组织Godot的内容"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
+"有关详细情况, 请参阅 `此处 <https://tldrlegal.com/license/mit-license>`_ 或咨"
+"询律师。"
 
 #: ../../docs/about/faq.rst:21
 msgid ""
@@ -271,6 +311,9 @@ msgid ""
 "by/3.0/>`_) license, with attribution to \"Juan Linietsky, Ariel Manzur and "
 "the Godot Engine community\"."
 msgstr ""
+"文档的所有内容都由Creative Commons Attribution 3.0(' CC-3.0 <https://"
+"creativecommons.org/licenses/by/3.0/> ' _) 许可证签署, 版权归 \"娟（Juan "
+"Linietsky）, Ariel Manzur 和Godot引擎社区\" 所有。"
 
 #: ../../docs/about/faq.rst:25
 msgid ""
@@ -278,6 +321,8 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"Logo徽标和图标均在相同的CC共享许可下。注意, Godot的源代码中包含的某些第三方库"
+"可能具有不同的许可。"
 
 #: ../../docs/about/faq.rst:28
 msgid ""
@@ -287,28 +332,33 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"有关完整的详细信息, 请查看 `COPYRIGHT.txt <https://github.com/godotengine/"
+"godot/blob/master/COPYRIGHT.txt>`_ 以及 `LICENSE.txt <https://github.com/"
+"godotengine/godot/blob/master/LICENSE.txt> `_ 和`LOGO_LICENSE https://github/"
+"godotengine/godot/blob/master/LOGO_LICENSE.md >`_ 在Godot仓库中的文件。"
 
 #: ../../docs/about/faq.rst:31
 msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"还可以查阅 `Godot网站上的许可页面 <https://godotengine.org/license>`_ 。"
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Godot支持哪些平台？"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**对于编辑器：**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
@@ -316,11 +366,11 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**对于游戏的导出：**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (包括 UWP)"
 
 #: ../../docs/about/faq.rst:47
 msgid "Android"
@@ -338,7 +388,7 @@ msgstr ""
 msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr ""
+msgstr "同时支持32位和64位，默认为64位"
 
 #: ../../docs/about/faq.rst:53
 msgid ""
@@ -347,16 +397,21 @@ msgid ""
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
+"一些用户在基于ARM的Linux系统上成功构建和使用Godot，比如Raspberry Pi。还有一些"
+"非官方组织在为游戏机进行构建。不过，这些都不包含在默认的构建脚本和导出模板"
+"中。"
 
 #: ../../docs/about/faq.rst:57
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"欲了解更多信息, 请参阅 :ref:`导出 <toc-learn-workflow-export>` 和 :ref:`编译"
+"Godot <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:60
 msgid "Which languages are supported in Godot?"
-msgstr ""
+msgstr "Godot支持哪些语言?"
 
 #: ../../docs/about/faq.rst:62
 msgid ""
@@ -364,18 +419,22 @@ msgid ""
 "C# and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Godot官方语言为GDScript、可视化脚本、C#和C++。具体请参阅 :ref:`游戏脚本 <toc-"
+"learn-scripting>` 章节。"
 
 #: ../../docs/about/faq.rst:65
 msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
-msgstr ""
+msgstr "注意C#和可视化脚本支持还相对不完善，GDScript仍然优势，下面会提到。"
 
 #: ../../docs/about/faq.rst:68
 msgid ""
 "Support for new languages can be added by third parties using the GDNative / "
 "NativeScript / PluginScript facilities. (See question about plugins below.)"
 msgstr ""
+"可以使用GDNative / NativeScript / PluginScript工具添加对新语言的支持。（请参"
+"阅下面关于插件的问题。）"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -383,12 +442,14 @@ msgid ""
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"目前已经开展一些工作了，比如Godot绑定 `Python <https://github.com/touilleMan/"
+"godot-python>`_ 和 `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
-msgstr ""
+msgstr "GDScript？为什么使用自定义脚本语言而不是我当前选择的现有语言？"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -400,6 +461,10 @@ msgid ""
 "language in Godot (see list of supported options above), but we strongly "
 "encourage you to try it and see the benefits for yourself."
 msgstr ""
+"简单来讲，我们认为，这个额外的成本无论是对您来说（学习Godot和GDScript）还是对"
+"我们来说（维护）都是值得的，它能获得更好的整合和无缝的体验（而不是用更熟悉的"
+"语言吸引用户，但体验糟糕）我们理解您想在Godot中使用其他语言的意愿（参阅上面的"
+"支持列表），但我们强烈建议您尝试一下GDScript，看看它有啥好处。"
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -408,6 +473,9 @@ msgid ""
 "most a day or two to get comfortable and it's very easy to see the benefits "
 "once you do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
+"GDScript旨在从底层整合Godot的工作方式，它比任何其他语言都更加完美，而且非常简"
+"单易学。花最多一两天就可以用的很爽，一旦你做到了，很容易能看到它的优势。请尽"
+"力学习GDScript，你不会后悔的。"
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -416,6 +484,9 @@ msgid ""
 "but trying to use it instead of GDScript for an entire game is, in most "
 "cases, a waste of time."
 msgstr ""
+"Godot C ++ API也是高效易用的（整个Godot编辑器就是用这个API编写的），并且是优"
+"化项目性能的优秀工具，但是在整个游戏中使用它代替GDScript，在大多数情况下都是"
+"浪费时间。"
 
 #: ../../docs/about/faq.rst:96
 msgid ""
@@ -424,6 +495,9 @@ msgid ""
 "fact we authored tolua++ in the past, one of the most popular C++ binders). "
 "None of them worked as well as GDScript does now."
 msgstr ""
+"是的，我们十多年来尝试整合了几种虚拟机（甚至用它们发行游戏），比如Python，"
+"Squirrel和Lua（事实上我们曾参与开发过tolua++，最流行的C++绑定器之一）。但他们"
+"都没有像GDScript现在这样好。"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -431,18 +505,20 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"有关使用GDScript或动态类型语言的更多信息，请参阅教程 :ref:"
+"`doc_gdscript_more_efficiently`。"
 
 #: ../../docs/about/faq.rst:105
 msgid "For the more technically versed, proceed to the next item."
-msgstr ""
+msgstr "有关技术上的解释，请看下一项。"
 
 #: ../../docs/about/faq.rst:108
 msgid "I don't believe you. What are the technical reasons for the item above?"
-msgstr ""
+msgstr "我不信。上面所说的技术原因呢？"
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
-msgstr ""
+msgstr "主要原因："
 
 #: ../../docs/about/faq.rst:112
 msgid ""
@@ -817,7 +893,7 @@ msgstr ""
 #: ../../docs/development/cpp/variant_class.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 msgid "About"
-msgstr ""
+msgstr "关于"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
@@ -1345,7 +1421,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1098
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:27
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:9
 msgid ""
@@ -1497,7 +1573,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr ""
+msgstr "信号"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:185
 msgid "Use past tense:"
@@ -1508,7 +1584,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:211
 #: ../../docs/development/cpp/object_class.rst:94
 msgid "Constants"
-msgstr ""
+msgstr "常量"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
 msgid ""
@@ -1617,7 +1693,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:123
 msgid "Language"
-msgstr ""
+msgstr "语言"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:125
 msgid ""
@@ -2701,7 +2777,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:833
 msgid "Classes"
-msgstr ""
+msgstr "类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:835
 msgid ""
@@ -4057,7 +4133,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
-msgstr ""
+msgstr "功能"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -4582,7 +4658,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr ""
+msgstr "资源路径"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -4614,7 +4690,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
-msgstr ""
+msgstr "条件"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
 msgid ""
@@ -4626,7 +4702,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr ""
+msgstr "遍历（Iterator）"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""
@@ -4647,7 +4723,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
-msgstr ""
+msgstr "返回"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:353
 msgid ""
@@ -4657,7 +4733,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
-msgstr ""
+msgstr "序列"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:360
 msgid ""
@@ -5645,7 +5721,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
-msgstr ""
+msgstr "导出"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:4
 msgid "Customizing the Web export HTML page"
@@ -7123,7 +7199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "Format"
-msgstr ""
+msgstr "格式"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "1 Second of Audio"
@@ -7992,7 +8068,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:212
 msgid "FPS"
-msgstr ""
+msgstr "帧数"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:214
 msgid ""
@@ -8411,7 +8487,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 #: ../../docs/community/contributing/documentation_guidelines.rst:104
 msgid "License"
-msgstr ""
+msgstr "许可证"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid ""
@@ -9004,7 +9080,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 msgid "Editor"
-msgstr ""
+msgstr "编辑器"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
@@ -9044,7 +9120,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
-msgstr ""
+msgstr "路径"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid ""
@@ -9745,7 +9821,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
-msgstr ""
+msgstr "成功！"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
@@ -9812,7 +9888,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
-msgstr ""
+msgstr "动画"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
@@ -10541,7 +10617,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:35
 msgid "AutoLoad"
-msgstr ""
+msgstr "自动加载(AutoLoad)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:37
 msgid ""
@@ -10822,7 +10898,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:65
 #: ../../docs/community/resources.rst:4
 msgid "Resources"
-msgstr ""
+msgstr "资源"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -12752,7 +12828,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Main Scene"
-msgstr ""
+msgstr "主场景"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -13249,7 +13325,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 #: ../../docs/tutorials/shading/shading_language.rst:1077
 msgid "Particles"
-msgstr ""
+msgstr "粒子"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid ""
@@ -13517,7 +13593,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "Button"
-msgstr ""
+msgstr "按钮"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid "The scene tree should look like this:"
@@ -14877,7 +14953,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
-msgstr ""
+msgstr "分组"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
 msgid ""
@@ -17295,7 +17371,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:313
 msgid "Future"
-msgstr ""
+msgstr "未来"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:315
 msgid ""
@@ -17690,7 +17766,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:256
 msgid "Resources:"
-msgstr ""
+msgstr "资源:"
 
 #: ../../docs/development/cpp/object_class.rst:258
 msgid ""
@@ -18470,7 +18546,7 @@ msgstr ""
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:244
 msgid "Tools"
-msgstr ""
+msgstr "工具"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:136
 msgid ""
@@ -19259,7 +19335,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:53
 msgid "Run"
-msgstr ""
+msgstr "运行"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:55
 msgid ""
@@ -20262,7 +20338,7 @@ msgstr ""
 
 #: ../../docs/index.rst:36 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "常规"
 
 #: ../../docs/index.rst:44
 msgid "Getting started"
@@ -20278,7 +20354,7 @@ msgstr ""
 
 #: ../../docs/index.rst:88 ../../docs/community/index.rst:2
 msgid "Community"
-msgstr ""
+msgstr "社区"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
 msgid "Contribute to the Class Reference"
@@ -20644,7 +20720,7 @@ msgstr ""
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
 #: ../../docs/tutorials/misc/background_loading.rst:24
 msgid "Usage"
-msgstr ""
+msgstr "用量"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
 msgid "Result"
@@ -20842,7 +20918,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:280
 msgid "Localization"
-msgstr ""
+msgstr "本地化"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:282
 msgid ""
@@ -20915,6 +20991,13 @@ msgid ""
 "some money to the project, check `our website <http://godotengine.org/"
 "donate>`_ for details."
 msgstr ""
+"**捐献.** Godot是一个非营利项目, 但它仍然可以受益于用户捐赠的许多东西。除了通"
+"常的费用支出, 比如服务器成本或推广材料的物料费用, 我们还使用捐赠资金来购买一"
+"些必要的硬件 (例如, 我们使用捐款购买了一台 Macbook pro, 以实现Retina/HiDPI的"
+"支持和其他各种 macOS 相关功能)。最重要的是, 我们使用捐款聘请我们的首席开发"
+"者“娟”（Juan Linietsky）, 使他为引擎全职工作。即使每月工资较低, 我们仍需要稳"
+"定持续的捐赠收入, 这对项目十分有益。因此, 如果你想为项目捐一些钱, 请查阅 `捐"
+"款页面 <http://godotengine.org/donate> `_ 以了解详情。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:53
 msgid "Contributing code"
@@ -21286,6 +21369,9 @@ msgid ""
 "of the Creative Commons Attribution 3.0 license (CC-BY-3.0), with "
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
+"此文档和它包含的每一页都是根据Creative Commons Attribution 3.0  许可 (CC-"
+"BY-3.0) 的条款发布的, 版权归 \"娟(Juan Linietsky)、Ariel Manzur 和Godot社区"
+"\"所有。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:110
 msgid ""
@@ -23490,7 +23576,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 msgid "Key"
-msgstr ""
+msgstr "关键帧"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
@@ -23526,7 +23612,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:420
 #: ../../docs/tutorials/2d/2d_transforms.rst:64
 msgid "Type"
-msgstr ""
+msgstr "类型"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
 msgid "``name``"
@@ -24246,7 +24332,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "插件"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:4
 msgid "Audio Streams"
@@ -24413,7 +24499,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr ""
+msgstr "音频"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:43
@@ -27732,7 +27818,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/locales.rst:10
 msgid "Locale"
-msgstr ""
+msgstr "地区"
 
 #: ../../docs/tutorials/misc/locales.rst:10
 msgid "Language and Variant"
@@ -30616,7 +30702,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 msgid "Value"
-msgstr ""
+msgstr "值"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "0"
@@ -33263,7 +33349,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"
-msgstr ""
+msgstr "成员"
 
 #: ../../docs/tutorials/shading/shading_language.rst:126
 msgid ""
@@ -36238,7 +36324,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:121
 msgid "Testing"
-msgstr ""
+msgstr "测试"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:123
 msgid ""
@@ -39008,7 +39094,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
 msgid "Deploy with Remote Debug"
-msgstr ""
+msgstr "使用远程调试部署"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid ""
@@ -39018,7 +39104,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Small Deploy with Network FS"
-msgstr ""
+msgstr "小型部署与网络 FS"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid ""
@@ -39030,7 +39116,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr ""
+msgstr "可见碰撞形状"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
@@ -39040,7 +39126,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
-msgstr ""
+msgstr "可见导航"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -39048,7 +39134,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
-msgstr ""
+msgstr "同步场景修改"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:45
 msgid ""
@@ -39059,7 +39145,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr ""
+msgstr "同步脚本变更"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
@@ -39087,7 +39173,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
 msgid "Debugger"
-msgstr ""
+msgstr "调试器"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:68
 msgid "Monitor the game running process."
@@ -39095,7 +39181,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:71
 msgid "Errors"
-msgstr ""
+msgstr "错误"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:73
 msgid "Print out errors when running the game."
@@ -39103,7 +39189,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Profiler"
-msgstr ""
+msgstr "性能分析"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid "Profiling the performance of the any function call in the running game."
@@ -39111,7 +39197,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:81
 msgid "Monitors"
-msgstr ""
+msgstr "显示"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:83
 msgid ""
@@ -39121,7 +39207,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:86
 msgid "Video Mem"
-msgstr ""
+msgstr "显存"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
 msgid "Listing the video memory usage of the running game."
@@ -39129,7 +39215,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:91
 msgid "Misc"
-msgstr ""
+msgstr "杂项"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:93
 msgid "Miscellaneous options for debug."
@@ -39154,7 +39240,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr ""
+msgstr "调试"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:4
 msgid "Working with 3D skeletons"
@@ -47377,7 +47463,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:324
 msgid "Depth"
-msgstr ""
+msgstr "深度"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:326
 msgid ""
@@ -48618,7 +48704,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:283
 #: ../../docs/tutorials/animation/index.rst:2
 msgid "Animation"
-msgstr ""
+msgstr "动画"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:285
 msgid ""
@@ -49659,7 +49745,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:139
 msgid "Local Coords"
-msgstr ""
+msgstr "本地坐标"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid ""
@@ -49821,7 +49907,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:268
 msgid "Color"
-msgstr ""
+msgstr "颜色"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:270
 msgid "Used to change the color of the particles being emitted."
@@ -50837,7 +50923,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "主题"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""

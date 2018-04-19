@@ -84,7 +84,7 @@ if [ "$update_weblate_po" = true ]; then
   echo "=== Merging Weblate PO files with Weblate template ==="
   for po in $WEBLATE_POFILES; do
     echo "Merging $po..."
-    msgmerge -w 79 -i $WEBLATE_TEMPLATE -C $po $po > "$po".new
+    msgmerge -w 79 $po $WEBLATE_TEMPLATE > "$po".new
     mv -f "$po".new $po
   done
 fi
