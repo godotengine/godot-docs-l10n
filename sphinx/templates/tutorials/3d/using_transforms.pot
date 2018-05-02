@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,155 +148,155 @@ msgstr ""
 msgid "A default basis (unmodified) is akin to:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:106
+#: ../../docs/tutorials/3d/using_transforms.rst:124
 msgid "This is also an analog to a 3x3 identity matrix."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:108
+#: ../../docs/tutorials/3d/using_transforms.rst:126
 msgid "Following the OpenGL convention, ``X`` is the *Right* axis, ``Y`` is the *Up* axis and ``Z`` is the *Forward* axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:110
-msgid "Together with the *basis*, a transform also has an *origin*. This is a *Vector3* specifying how far away from the actual origin ``(0, 0, 0)`` this transform is. Combining the *basis* with the *origin*, a *transform* efficiently represents a unique translation, rotation, and scale in space. .. image:: img/transforms_camera.png"
+#: ../../docs/tutorials/3d/using_transforms.rst:128
+msgid "Together with the *basis*, a transform also has an *origin*. This is a *Vector3* specifying how far away from the actual origin ``(0, 0, 0)`` this transform is. Combining the *basis* with the *origin*, a *transform* efficiently represents a unique translation, rotation, and scale in space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:114
+#: ../../docs/tutorials/3d/using_transforms.rst:133
 msgid "One way to visualize a transform is to look at an object's 3D gizmo while in \"local space\" mode."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:118
+#: ../../docs/tutorials/3d/using_transforms.rst:137
 msgid "The gizmo's arrows show the ``X``, ``Y``, and ``Z`` axes (in red, green, and blue respectively) of the basis, while gizmo's center is at the object's origin."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:122
+#: ../../docs/tutorials/3d/using_transforms.rst:141
 msgid "For more information on the mathematics of vectors and transforms, please read the :ref:`doc_vector_math` tutorials."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:125
+#: ../../docs/tutorials/3d/using_transforms.rst:144
 msgid "Manipulating Transforms"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:127
+#: ../../docs/tutorials/3d/using_transforms.rst:146
 msgid "Of course, transforms are not as straightforward to manipulate as angles and have problems of their own."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:129
+#: ../../docs/tutorials/3d/using_transforms.rst:148
 msgid "It is possible to rotate a transform, either by multiplying its basis by another (this is called accumulation), or by using the rotation methods."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:139
+#: ../../docs/tutorials/3d/using_transforms.rst:165
 msgid "A method in Spatial simplifies this:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:148
+#: ../../docs/tutorials/3d/using_transforms.rst:182
 msgid "This rotates the node relative to the parent node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:150
+#: ../../docs/tutorials/3d/using_transforms.rst:184
 msgid "To rotate relative to object space (the node's own transform) use the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:160
+#: ../../docs/tutorials/3d/using_transforms.rst:198
 msgid "Precision Errors"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:162
+#: ../../docs/tutorials/3d/using_transforms.rst:200
 msgid "Doing successive operations on transforms will result in a loss of precision due to floating-point error. This means the scale of each axis may no longer be exactly ``1.0``, and they may not be exactly ``90`` degrees from each other."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:164
+#: ../../docs/tutorials/3d/using_transforms.rst:202
 msgid "If a transform is rotated every frame, it will eventually start deforming over time. This is unavoidable."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:166
+#: ../../docs/tutorials/3d/using_transforms.rst:204
 msgid "There are two different ways to handle this. The first is to *orthonormalize* the transform after some time (maybe once per frame if you modify it every frame):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:172
+#: ../../docs/tutorials/3d/using_transforms.rst:215
 msgid "This will make all axes have ``1.0`` length again and be ``90`` degrees from each other. However, any scale applied to the transform will be lost."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:174
+#: ../../docs/tutorials/3d/using_transforms.rst:217
 msgid "It is recommended you don't scale nodes that are going to be manipulated. Scale their children nodes instead (such as MeshInstance). If you absolutely must scale the node, then re-apply it at the end:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:183
+#: ../../docs/tutorials/3d/using_transforms.rst:231
 msgid "Obtaining Information"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:185
+#: ../../docs/tutorials/3d/using_transforms.rst:233
 msgid "You might be thinking at this point: **\"Ok, but how do I get angles from a transform?\"**. The answer again is: you don't. You must do your best to stop thinking in angles."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:187
+#: ../../docs/tutorials/3d/using_transforms.rst:235
 msgid "Imagine you need to shoot a bullet in the direction your player is facing. Just use the forward axis (commonly ``Z`` or ``-Z``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:194
+#: ../../docs/tutorials/3d/using_transforms.rst:248
 msgid "Is the enemy looking at the player? Use the dot product for this (see the :ref:`doc_vector_math` tutorial for an explanation of the dot product):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:203
+#: ../../docs/tutorials/3d/using_transforms.rst:267
 msgid "Strafe left:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:211
+#: ../../docs/tutorials/3d/using_transforms.rst:284
 msgid "Jump:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:221
+#: ../../docs/tutorials/3d/using_transforms.rst:304
 msgid "All common behaviors and logic can be done with just vectors."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:224
+#: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid "Setting Information"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:226
+#: ../../docs/tutorials/3d/using_transforms.rst:309
 msgid "There are, of course, cases where you want to set information to a transform. Imagine a first person controller or orbiting camera. Those are definitely done using angles, because you *do want* the transforms to happen in a specific order."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:228
+#: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid "For such cases, keep the angles and rotations *outside* the transform and set them every frame. Don't try retrieve them and re-use them because the transform is not meant to be used this way."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:230
+#: ../../docs/tutorials/3d/using_transforms.rst:313
 msgid "Example of looking around, FPS style:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:248
+#: ../../docs/tutorials/3d/using_transforms.rst:356
 msgid "As you can see, in such cases it's even simpler to keep the rotation outside, then use the transform as the *final* orientation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:251
+#: ../../docs/tutorials/3d/using_transforms.rst:359
 msgid "Interpolating with Quaternions"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:253
+#: ../../docs/tutorials/3d/using_transforms.rst:361
 msgid "Interpolating between two transforms can efficiently be done with quaternions. More information about how quaternions work can be found in other places around the Internet. For practical use, it's enough to understand that pretty much their main use is doing a closest path interpolation. As in, if you have two rotations, a quaternion will smoothly allow interpolation between them using the closest axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:255
+#: ../../docs/tutorials/3d/using_transforms.rst:363
 msgid "Converting a rotation to quaternion is straightforward."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:267
+#: ../../docs/tutorials/3d/using_transforms.rst:386
 msgid "The :ref:`class_Quat` type reference has more information on the datatype (it can also do transform accumulation, transform points, etc. though this is used less often). If you interpolate or apply operations to quaternions many times, keep in mind they need to be eventually normalized or they also may suffer from numerical precision errors."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:269
+#: ../../docs/tutorials/3d/using_transforms.rst:388
 msgid "Quaternions are very useful when doing camera/path/etc. interpolations, as the result will be always correct and smooth."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:272
+#: ../../docs/tutorials/3d/using_transforms.rst:391
 msgid "Transforms are your friend"
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:274
+#: ../../docs/tutorials/3d/using_transforms.rst:393
 msgid "For most beginners, getting used to working with transforms can take some time. However, once you get used to them, you will appreciate their simplicity and power."
 msgstr ""
 
-#: ../../docs/tutorials/3d/using_transforms.rst:276
+#: ../../docs/tutorials/3d/using_transforms.rst:395
 msgid "Don't hesitate to ask for help on this topic in any of Godot's `online communities <https://godotengine.org/community>`_ and, once you become confident enough, please help others!"
 msgstr ""
 

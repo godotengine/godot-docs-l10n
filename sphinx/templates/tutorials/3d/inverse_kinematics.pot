@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "This tutorial is a follow-up of :ref:`doc_working_with_3d_skeletons`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:8
-msgid "Before continuing on, I'd recommend reading some theory, the simplest article I find is this:"
+msgid "Before continuing on, I'd recommend reading some theory, the simplest article I could find is this:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:11
@@ -37,23 +37,23 @@ msgid "Initial problem"
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:16
-msgid "Talking in Godot terminology, the task we want to solve here is position our 2 angles we talked about above so, that the tip of lowerarm bone is as close to target point, which is set by target Vector3() as possible using only rotations. This task is very calculation-intensive and never resolved by analytical equation solve. So, it is an underconstrained problem, which means there is unlimited number of solutions to the equation."
+msgid "Talking in Godot terminology, the task we want to solve here is to position our 2 angles we talked about above so, that the tip of the lowerarm bone is as close to the target point (which is set by the target Vector3()) as possible using only rotations. This task is very calculation-intensive and never resolved by analytical equation solving. So, it is an underconstrained problem, which means there is an unlimited number of solutions to the equation."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:26
-msgid "For easy calculation, for this chapter we consider target is also child of Skeleton. If it is not the case for your setup you can always reparent it in your script, as you will save on calculations if you do."
+msgid "For easy calculation, in this chapter we consider the target being a child of Skeleton. If this is not the case for your setup you can always reparent it in your script, as you will save on calculations if you do so."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:31
-msgid "In the picture you see angles alpha and beta. In this case we don't use poles and constraints, so we need to add our own. On the picture the angles are 2D angles living in plane which is defined by bone base, bone tip and target."
+msgid "In the picture you see the angles alpha and beta. In this case we don't use poles and constraints, so we need to add our own. On the picture the angles are 2D angles living in a plane which is defined by bone base, bone tip and target."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:36
-msgid "The rotation axis is easily calculated using cross-product of bone vector and target vector. The rotation in this case will be always in positive direction. If t is the Transform which we get from get_bone_global_pose() function, the bone vector is"
+msgid "The rotation axis is easily calculated using the cross-product of the bone vector and the target vector. The rotation in this case will be always in positive direction. If ``t`` is the Transform which we get from the get_bone_global_pose() function, the bone vector is"
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:45
-msgid "So we have all information here to execute our algorithm."
+msgid "So we have all the information we need to execute our algorithm."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:47
@@ -65,11 +65,11 @@ msgid "**How to find coordinates of the tip of the bone?**"
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:54
-msgid "**How to find vector from bone base to target?**"
+msgid "**How to find the vector from the bone base to the target?**"
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:56
-msgid "For our goal (tip of the bone moved within area of target), we need to know where the tip of our IK bone is. As we don't use a leaf bone as IK bone, we know the coordinate of the bone base is the tip of parent bone. All these calculations are quite dependent on the skeleton's structure. You can use pre-calculated constants as well. You can add an extra bone for the tip of IK and calculate using that."
+msgid "For our goal (tip of the bone moved within area of target), we need to know where the tip of our IK bone is. As we don't use a leaf bone as IK bone, we know the coordinate of the bone base is the tip of the parent bone. All these calculations are quite dependent on the skeleton's structure. You can use pre-calculated constants as well. You can add an extra bone at the tip of the IK bone and calculate using that."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:64
@@ -77,15 +77,15 @@ msgid "Implementation"
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:66
-msgid "We will just use exported variable for bone length to be easy."
+msgid "We will just use an exported variable for the bone length to make it easy."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:74
-msgid "Now, we need to apply our transformations from IK bone to the base of chain. So we apply rotation to IK bone then move from our IK bone up to its parent, then apply rotation again, then move to the parent of current bone again, etc. So we need to limit our chain somewhat."
+msgid "Now, we need to apply our transformations from the IK bone to the base of the chain. So we apply a rotation to the IK bone then move from our IK bone up to its parent, apply rotation again, then move to the parent of the current bone again, etc. So we need to limit our chain somewhat."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:83
-msgid "For ``_ready()`` function:"
+msgid "For the ``_ready()`` function:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:92
@@ -97,18 +97,18 @@ msgid "And for the ``_process()`` function:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:113
-msgid "Executing this script will just pass through bone chain printing bone transforms."
+msgid "Executing this script will just pass through the bone chain, printing bone transforms."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:143
-msgid "Now we need to actually work with target. The target should be placed somewhere accessible. Since \"arm\" is imported scene, we better place target node within our top level scene. But for us to work with target easily its Transform should be on the same level as Skeleton."
+msgid "Now we need to actually work with the target. The target should be placed somewhere accessible. Since \"arm\" is an imported scene, we better place the target node within our top level scene. But for us to work with target easily its Transform should be on the same level as the Skeleton."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:148
-msgid "To cope with this problem we create \"target\" node under our scene root node and at script run we will reparent it copying global transform, which will achieve wanted effect."
+msgid "To cope with this problem we create a \"target\" node under our scene root node and at runtime we will reparent it copying the global transform, which will achieve the desired effect."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:152
-msgid "Create new Spatial node under root node and rename it to \"target\". Then modify ``_ready()`` function to look like this:"
+msgid "Create a new Spatial node under the root node and rename it to \"target\". Then modify the ``_ready()`` function to look like this:"
 msgstr ""
 

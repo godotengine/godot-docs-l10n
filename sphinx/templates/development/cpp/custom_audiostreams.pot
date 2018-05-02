@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,18 +38,18 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:23
 #: ../../docs/development/cpp/custom_audiostreams.rst:119
-#: ../../docs/development/cpp/custom_audiostreams.rst:342
+#: ../../docs/development/cpp/custom_audiostreams.rst:356
 msgid "References:"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:25
 #: ../../docs/development/cpp/custom_audiostreams.rst:121
-#: ../../docs/development/cpp/custom_audiostreams.rst:344
+#: ../../docs/development/cpp/custom_audiostreams.rst:358
 msgid "`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/master/servers/audio/audio_stream.h>`__"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:26
-#: ../../docs/development/cpp/custom_audiostreams.rst:345
+#: ../../docs/development/cpp/custom_audiostreams.rst:359
 msgid "`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/master/scene/audio/audio_player.cpp>`__"
 msgstr ""
 
@@ -93,19 +93,19 @@ msgstr ""
 msgid "Since AudioStreamPlayback is controlled by the audio thread, i/o and dynamic memory allocation are forbidden."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:228
+#: ../../docs/development/cpp/custom_audiostreams.rst:235
 msgid "Resampling"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:231
+#: ../../docs/development/cpp/custom_audiostreams.rst:238
 msgid "Godot’s AudioServer currently uses 44100 Hz sample rate. When other sample rates are needed such as 48000, either provide one or use AudioStreamPlaybackResampled. Godot provides cubic interpolation for audio resampling."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:235
+#: ../../docs/development/cpp/custom_audiostreams.rst:242
 msgid "Instead of overloading ``mix``, AudioStreamPlaybackResampled uses ``_mix_internal`` to query AudioFrames and ``get_stream_sampling_rate`` to query current mix rate."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_audiostreams.rst:343
+#: ../../docs/development/cpp/custom_audiostreams.rst:357
 msgid "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/core/math/audio_frame.h>`__"
 msgstr ""
 
