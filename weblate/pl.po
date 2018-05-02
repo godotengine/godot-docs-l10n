@@ -2,10 +2,12 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
 # Dariusz Król <rexioweb@gmail.com>, 2018.
 # KolegaLiterat <jawor34@gmail.com>, 2018.
 # Rafał Mikrut <synaptykq@gmail.com>, 2018.
+# Saran <saran@op.pl>, 2018.
 # Sebastian Pasich <sebastian.pasich@gmail.com>, 2018.
 #
 msgid ""
@@ -13,8 +15,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-04-19 09:05+0200\n"
-"PO-Revision-Date: 2018-04-19 06:27+0000\n"
-"Last-Translator: Sebastian Pasich <sebastian.pasich@gmail.com>\n"
+"PO-Revision-Date: 2018-04-25 20:40+0000\n"
+"Last-Translator: Adam Jakubczak <adam.per.jakubczak@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -84,11 +86,11 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Witaj! Czytasz oficjalną dokumentację GODOTa, darmowego, otwartoźródłowego i "
+"Witaj w oficjalnej dokumentacji Godota, darmowego, otwartoźródłowego i "
 "rozwijanego przez społeczność silnika do tworzenie gier 2D oraz 3D. Jest to "
-"potężne, ale przyjazne do użytkownika narzędzie, za pomocą, którego będziesz "
-"w stanie stworzyć dowolną grę, na dowolną platformę. GODOTa możesz używać "
-"bez jakichkolwiek ograniczeń."
+"potężne, lecz przyjazne dla użytkownika narzędzie. Za jego pomocą którego "
+"możesz stworzyć dowolny rodzaj gry, na dowolną platformę i bez żadnych "
+"ograniczeń."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -97,9 +99,8 @@ msgid ""
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
 "Zadaniem tej strony jest zaprezentowanie silnika oraz zawartości "
-"dokumentacji, dzięki czemu znajdziesz to, czego szukasz, niezależnie od "
-"tego, czy jesteś początkującym, czy osobą, która poszukuje informacji na "
-"temat konkretnego elementu."
+"dokumentacji, dzięki czemu będziesz wiedział gdzie zacząć, jeśli jesteś "
+"początkującym, lub też gdzie szukać informacji na temat konkretnej rzeczy."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
@@ -111,9 +112,10 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
-"Silnik do tworzenia gier to skomplikowane narzędzie i z racji tego trudno je "
-"opisać w kilku słowach. Mamy jednak PR'ową prezentację, którą możesz się "
-"posłużyć do szybkiego nakreślenia, czym Godot Engine jest."
+"Silnik do tworzenia gier to skomplikowane narzędzie, z racji tego trudno "
+"opisać Godota w kilku słowach. Jednak, to nasza PR'owa prezentacja, którą "
+"możesz się posłużyć do szybkiego nakreślenia, czym jest Godot Engine, jeśli "
+"będziesz potrzebował."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -124,6 +126,13 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows) as "
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
+"Godot Engine jest pełnowymiarowym, wieloplatformowym silnikiem do gier 2D i "
+"3D, który umożliwia tworzenie gier 2D i 3D z wykorzystaniem ujednoliconego "
+"interfejsu. Oferuje kompleksowy zestaw wspólnych narzędzi, dzięki którym "
+"użytkownicy mogą skupić się na tworzeniu gier bez konieczności ponownego "
+"wymyślania koła. Gry można eksportować za pomocą jednego kliknięcia do wielu "
+"platform, w tym na główne platformy desktopowe (Linux, MacOS, Windows), a "
+"także platformy mobilne (Android, iOS) i internetowe (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -134,6 +143,13 @@ msgid ""
 "engine to match their expectations. It is supported by the `Software Freedom "
 "Conservancy <https://sfconservancy.org>`_ not-for-profit."
 msgstr ""
+"Godot jest całkowicie wolnym i otwartym oprogramowaniem na bardzo liberalnej "
+"licencji MIT. Bez zobowiązań, wolny od tantiem, nie wymaga opłat "
+"licencyjnych. Gry użytkowników są ich, aż do ostatniej linii kodu napisanej "
+"w silniku. Rozwój Godota jest w pełni niezależny i napędzany przez "
+"społeczność, dając użytkownikom możliwość kształtowania silnika tak, aby "
+"spełniał ich oczekiwania. Jest on wspierany przez `Software Freedom "
+"Conservancy <https://sfconservancy.org>`_ not-for-profit."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -2980,7 +2996,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1177
 msgid "Memory management"
-msgstr ""
+msgstr "Zarządzanie pamięcią"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1179
 msgid ""
@@ -8529,17 +8545,25 @@ msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"Godot domyślnie będzie traktował pliki CSV jako tłumaczenia. Zaimportuje je "
+"i wygeneruje jedną lub więcej skompresowanych plików źródłowych tłumaczenia "
+"obok tego."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
+#, fuzzy
 msgid ""
 "Importing will also add the translation to the list of translations to load "
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"Importowanie doda także tłumaczenie do listy tłumaczeń do wczytania kiedy "
+"gra się uruchomi, ustalonych w project.godot (lub ustawieniach projektu). "
+"Godot pozwala także na wczytywanie i usuwanie tłumaczeń w czasie wykonywania "
+"programu. [tyle że jakiego?!]"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
 msgid "From Unity3D to Godot Engine"
-msgstr ""
+msgstr "Z Unity3D do Godot Engine"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -8550,7 +8574,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:13
 msgid "Differences"
-msgstr ""
+msgstr "Różnice"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:16
 msgid "Unity"
@@ -8563,7 +8587,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 #: ../../docs/community/contributing/documentation_guidelines.rst:104
 msgid "License"
-msgstr ""
+msgstr "Licencja"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid ""
@@ -8592,7 +8616,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr ""
+msgstr "**Desktop:** Windows, macOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
@@ -8600,11 +8624,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Web:** WebAssembly or asm.js"
-msgstr ""
+msgstr "**Sieć:** WebAssembly lub asm.js"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
-msgstr ""
+msgstr "**Konsole:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid ""
@@ -51023,7 +51047,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:17
 msgid "But..."
-msgstr ""
+msgstr "Ale..."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:19
 msgid ""
@@ -51994,7 +52018,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:7
 msgid "So many controls..."
-msgstr ""
+msgstr "Tak wiele kontrolek..."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:9
 msgid ""
@@ -52008,7 +52032,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:17
 msgid "Drawing"
-msgstr ""
+msgstr "Rysowanie"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:19
 msgid ""
@@ -52019,7 +52043,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:24
 msgid "Checking control size"
-msgstr ""
+msgstr "Sprawdzanie wielkości kontrolki"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:26
 msgid ""
@@ -52067,7 +52091,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:73
 msgid "Or alternatively, set it via function:"
-msgstr ""
+msgstr "Lub alternatywnie, ustaw to za pomocą funkcji:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:83
 msgid ""
@@ -52077,7 +52101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:87
 msgid "Input events"
-msgstr ""
+msgstr "Eventy wejścia"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:89
 msgid ""

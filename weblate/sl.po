@@ -1,35 +1,24 @@
-# Godot Engine Documentation in German
+# Godot Engine Documentation in Slovenian
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
-# Arthur S. Muszynski <artism90@gmail.com>, 2018.
-# DafabHoid <github@dafabhoid.de>, 2018.
-# FlamyAT <Game.Couler@gmail.com>, 2018.
-# M. Feil <git@sgdw.de>, 2018.
-# Neicul <neicul@gmx.de>, 2018.
-# Otto Hakstetter <otto@hakstetter.de>, 2018.
-# Philipp Wabnitz <philipp.wabnitz@s2011.tu-chemnitz.de>, 2018.
-# rama0x9 <5393a6cuwlun@opayq.com>, 2018.
-# Skayo <jonasg.cool@gmail.com>, 2018.
-# So Wieso <sowieso@dukun.de>, 2018.
-# Thomas Eigel <yurumi@gmx.de>, 2018.
-# Timo Schwarzer <account@timoschwarzer.com>, 2018.
-# Übersetzer124 <cloud1@mag-keinen-spam.de>, 2018.
+# matevž lapajne <sivar.lapajne@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-04-19 09:05+0200\n"
-"PO-Revision-Date: 2018-04-25 20:37+0000\n"
-"Last-Translator: M. Feil <git@sgdw.de>\n"
-"Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
-"godot-docs/de/>\n"
-"Language: de\n"
+"PO-Revision-Date: 2018-05-02 10:13+0000\n"
+"Last-Translator: matevž lapajne <sivar.lapajne@gmail.com>\n"
+"Language-Team: Slovenian <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs/sl/>\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 3.0-dev\n"
 
 #: ../../docs/about/introduction.rst:4
@@ -82,7 +71,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/2d_transforms.rst:7
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:7
 msgid "Introduction"
-msgstr "Einführung"
+msgstr "Predstavitev"
 
 #: ../../docs/about/introduction.rst:11
 msgid ""
@@ -91,11 +80,10 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Willkommen zur offiziellen Dokumentation der Godot Engine, der freien, von "
-"einer Open-Source-Gemeinschaft gesteuerten 2D- und 3D-Spiele-Engine! "
-"Dahinter verbirgt sich eine leistungsstarke, und dennoch benutzerfreundliche "
-"Anwendung, mit der jede Art von Spiel programmiert werden kann, für jede "
-"Plattform und ohne jegliche Nutzungseinschränkung."
+"Pozdravljeni v uradni dokumentaciji Godot Engine, brezplačni in odprtokodni "
+"2D in 3D igralni pogon! za tem grižljajem boste našli zmogljivo in še "
+"uporabniku prijazno orodje, ki ga lahko uporabljate za izdelavo katerekoli "
+"igre, za vsako okolje in brez omejitve uporabe."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -103,13 +91,13 @@ msgid ""
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
-"Diese Seite dient als grober Überblick über die Engine und die Inhalte der "
-"Dokumentation. Anfängern wird gezeigt wie sie mit Godot starten können, "
-"Fortgeschrittenen werden Verweise zu spezifischeren Themen aufgelistet."
+"Tale stran ima namen dati osnovno predstavitev igralnega pogona in vsebine "
+"te dokumentacije, tako da boste kot začetnik vedeli kje začeti ali kje "
+"pogledati, če boste potrebovali informacije o specifičnih značilnostih."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
-msgstr "Über die Godot Engine"
+msgstr "O Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -117,9 +105,9 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
-"Spiele-Engines sind komplexe Werkzeuge. Das macht es schwierig, Godot in "
-"wenigen Worten zu beschreiben. Hier ist dafür usere Produktpräsentation, "
-"welche versucht, die Hauptpunkte zusammen zu fassen."
+"Igralni pogon je zahtevno orodje in ga je težko predstaviti v nekaj besedah, "
+"zato je tukaj naša PR predstavitev, ki jo lahko večkrat uporabite, če "
+"potrebujete hitro osvežitev o Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -130,15 +118,12 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows) as "
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Die Godot-Engine ist eine funktionsreiche, plattformunabhängige "
-"Spieleengine, mit der Spiele in 2D und 3D unter einer einheitlichen "
-"Schnittstelle erstellt werden können. Sie beinhaltetet ein umfassendes Set "
-"an Werkzeugen, damit der Anwender sich auf die Spieleentwicklung "
-"konzentrieren kann, ohne ständig das Rad neu erfinden zu müssen. Spiele "
-"können mit nur einem Klick zu vielen Plattformen exportiert werden, "
-"einschließlich den am meisten verbreiteten Desktop-Plattformen (Linux, "
-"MacOS, Windows), sowie mobilen Plattformen (Android, IOS) und dem Web "
-"(HTML5)."
+"Godot Engine je funkcijsko-zapakiran, več-okoljski igralni pogon za izdelavo "
+"2D in 3D iger z enotnega vmesnika. Zagotavlja obširen nabor osnovnih orodij, "
+"da se uporabnik lahko osredotoči na izdelovanje iger brez odkrivanja "
+"Amerike. Igre so lahko izvožene v enem kliku v številna okolja, vključno z "
+"glavnimi platformami (Linux, macOS, Windows) kot tudi mobilne (Android, iOS) "
+"in spletne (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -149,14 +134,12 @@ msgid ""
 "engine to match their expectations. It is supported by the `Software Freedom "
 "Conservancy <https://sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot ist vollständig frei und open source und steht unter der äußerst "
-"freizügigen MIT-Lizenz. Ohne jeglichen Haken, keine versteckten Gebühren, "
-"nichts. Das Spiel gehört ganz allein dem Nutzer, bis zur letzten Zeile "
-"Engine-Code. Die Godot-Weiterentwicklung ist vollständig unabhängig, "
-"gemeinschaftsgesteuert und gibt somit den Nutzern die Möglichkeit "
-"mitzuhelfen, die Engine nach ihren Vorstellungen zu gestalten. Godot wird "
-"unterstützt durch die gemeinnützige `Software Freedom Conservancy <https://"
-"sfconservancy.org>`."
+"Godot je v celoti zastonj in odprtokoden pod zelo svobodno licenco MIT. Brez "
+"obveznosti in licenčnine. Razvijalčeve igre so njegove, do konca zadnje "
+"vrstice kode. Razvoj Godota je v celoti samostojno in skupinsko peljano, s "
+"spodbujanjem uporabnikov za pomoč pri oblikovanju pogona, da se ujema z "
+"njihovimi pričakovanji. Podprto je s strani `Software Freedom Conservancy "
+"<https://sfconservancy.org>`_ not-for-profit."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -164,13 +147,12 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
-"Für einen tieferen Einblick in die Engine empfiehlt es sich, diese "
-"Dokumentation weiter zu lesen, besonders das :ref:`Schritt-für-Schritt <toc-"
-"learn-step_by_step>`–Tutorial."
+"Za poglobljen vpogled v pogon, vam priporočamo, da berete to dokumentacijo "
+"naprej, še posebno :ref:`Step by step <toc-learn-step_by_step>` vajo."
 
 #: ../../docs/about/introduction.rst:46
 msgid "About the documentation"
-msgstr "Über die Dokumentation"
+msgstr "O dokumentaciji"
 
 #: ../../docs/about/introduction.rst:48
 msgid ""
@@ -181,13 +163,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Diese Dokumentation wird ständig weiter geschrieben, korrigiert, bearbeitet "
-"und umgestaltet von den Mitgliedern der Godot-Engine-Gemeinschaft. "
-"Bearbeitet wird sie mit Textdateien, geschrieben in der `reStructuredText "
-"<http://www.sphinx-doc.org/en/stable/rest.html>`_ markup language und dann "
-"kompiliert zu einer statischen Webseite oder einem Offline-Dokument mit den "
-"quell-offenen Werkzeugen `Sphinx <http://www.sphinx-doc.org>`_ und "
-"`ReadTheDocs <https://readthedocs.org/>`."
+"Ta dokumentacija je nenehno pisana, popravljena, urejena in prenovljena s "
+"strani članov Godot Engine skupnosti. Urejeno je s tekstnimi datoteki v "
+"`reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ "
+"označevalni jezik in potem prevedeno v statično stran/dokument z uporabo "
+"odprtokodnega `Sphinx <http://www.sphinx-doc.org>`_ in `ReadTheDocs <https://"
+"readthedocs.org/>`_ orodij."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -197,10 +178,9 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
-"Jeder kann zu Godots Dokumentation beitragen, entweder durch das Erstellen "
-"von Issue-Tickets oder durch das Senden von Patches über Pull-Requests an "
-"das `Quellverzeichnis <https://github.com/godotengine/godot-docs>` auf "
-"Github, oder auch durchs Übersetzen in deine Sprache auf `Hosted Weblate "
+"H dokumentaciji Godot lahko prispevate z odpiranjem težavnih kart ali "
+"pošiljanjem popravkov preko GitHub `vir repozitorija <https://github.com/"
+"godotengine/godot-docs>`_, ali s prevajanjem v svoj jezik na `Domeni Weblate "
 "<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`_."
 
 #: ../../docs/about/introduction.rst:61
@@ -210,14 +190,13 @@ msgid ""
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
 "\"."
 msgstr ""
-"Alle Beiträge werden unter der freizügigen Creative Commons Attribution 3.0 "
-"(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`) Lizenz unter "
-"dem Namen „Juan Linietsky, Ariel Manzur and the Godot Engine community“ "
-"veröffentlicht."
+"Vsebina je licencirana pod odprto Creative Commons Attribution 3.0 (`CC-BY "
+"3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licenco, z avtorstvom "
+"\"Juan Linietsky, Ariel Manzur in skupnosti Godot Engine\"."
 
 #: ../../docs/about/introduction.rst:66
 msgid "Organisation of the documentation"
-msgstr "Aufbau der Dokumentation"
+msgstr "Organizacija dokumentacije"
 
 #: ../../docs/about/introduction.rst:68
 msgid ""
@@ -225,9 +204,9 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"Diese Dokumentation ist in fünf Abschnitte unterteilt, wobei deren Inhalt "
-"beeindruckend unausgeglichen verteilt ist – jedoch sollte die Art der "
-"Aufteilung ziemlich intuitiv sein:"
+"Dokumentacija je organizirana v pet odstavkov z impresivno neuravnovešeno "
+"porazdelitevijo vsebine - vendar na način kako je razdeljena bi moralo biti "
+"intuitivno:"
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -235,9 +214,9 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
-"Der Abschnitt :ref:`sec-general` enthält diese Einführung sowie "
-"Informationen über die Engine, ihre Geschichte, Lizenzierung, Autoren usw. "
-"Er enthält ebenfalls die :ref:`doc_faq`."
+":ref:`sec-general` odstavek vsebuje to predstavitev kot tudi informacije o "
+"pogonu, njegovo zgodovino in licenčnino, avtorje itd. Vsebuje tudi :ref:"
+"`doc_faq`."
 
 #: ../../docs/about/introduction.rst:75
 msgid ""
@@ -246,20 +225,19 @@ msgid ""
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
-"Der Abschnitt :ref:`sec-learn` ist der hauptsächliche Daseinszweck dieser "
-"Dokumentation, da er alle nötigen Informationen zur Verwendung der Engine in "
-"Spielen enthält. Er beginnt mit dem :ref:`Step by step <toc-learn-"
-"step_by_step>` Tutorial, welches der Einstiegspunkt für alle Neueinsteiger "
-"ist."
+":ref:`sec-learn` odstavek je glavni razlog za izdelavo te dokumentacije, ker "
+"vsebuje vse potrebne informacije kako uporabljati igralni pogon za izdelavo "
+"iger. Začne se z :ref:`korak za korakom <toc-learn-step_by_step>` vajo, "
+"katera bi morala biti vstopna točka za vse nove uporabnike."
 
 #: ../../docs/about/introduction.rst:80
 msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
-"Der Abschnitt :ref:`sec-tutorials` dagegen kann ganz nach Bedarf gelesen "
-"werden, in beliebiger Reihenfolge. Er enthält viele Feature-spezifische "
-"Tutorials und Dokumentationen."
+":ref:`sec-tutorials` odstavek, na drugi strani pa je lahko prebran, ko ga "
+"potrebujemo, v katerem koli vrstnem redu. Vsebuje veliko značilno-določenih "
+"vaj in dokumentacij."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -267,9 +245,9 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
-"Der Abschnitt :ref:`sec-devel` richtet sich an Fortgeschrittene und "
-"Mitwirkende an der Entwicklung der Engine, mit Informationen zum Kompilieren "
-"der Engine und zur Entwicklung von C++-Modulen oder Editor Plugins."
+":ref:`sec-devel` odstavek je namenjen za napredne uporabnike in tiste, ki "
+"želijo prispevati pri razvijanju Godot-a, z informacijami kako prevajati "
+"pogon, razvijati C++ module ali vtičnike za urejevalnik."
 
 #: ../../docs/about/introduction.rst:85
 msgid ""
@@ -279,12 +257,11 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-"In :ref:`sec-community` findet man Informationen dazu, wie man zur "
-"Entwicklung der Engine und dem Leben ihrer Community beiträgt, z.B. wie man "
-"Bugs meldet, wie man bei der Dokumentation hilft, etc. Dort sind auch "
-"Verweise auf verschiedene Community-Kanäle wie IRC und Discord aufgeführt "
-"sowie eine Liste empfohlener Tutorials von Dritten außerhalb dieser "
-"Dokumentation."
+"The :ref:`sec-community` daje informacije navezujoče na prispevanje h "
+"razvijanju pogona in življenje skupnosti, npr. kako poročati o napakah, "
+"pomoč pri dokumentaciji, itd. Kaže tudi na različne skupinske kanale kot IRC "
+"in Discord in vsebuje seznam priporočenih \"tretjih\" vaj zunaj te "
+"dokumentacije."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -294,11 +271,11 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
-"Der Abschnitt :ref:`sec-class-ref` schließlich ist die Dokumentation zur "
-"Godot API, welche auch direkt aus dem Skript-Editor der Engine heraus "
-"verfügbar ist. Sie wird automatisch aus einer Datei im Hauptrepository "
-"generiert, daher sind Änderungen der generierten Dateien nicht vorgesehen. "
-"Für Details, siehe :ref:`doc_updating_the_class_reference`."
+"Na koncu, :ref:`sec-class-ref` je dokumentacija Godot API, katera je "
+"dostopna neposredno v urejevalniku skript pogona. Ustvarjena  je samodejno "
+"iz datoteke v glavnem viru repozitorija, zato ustvarjene datoteke "
+"dokumentacije niso mišljene za spreminjanje. Glejte :ref:"
+"`doc_updating_the_class_reference` za podrobnosti."
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -306,70 +283,64 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
-"Zusätzlich zu dieser Dokumentation möchtest du vielleicht auch einen Blick "
-"auf die verschieden `Godot Demoprojekte <https://github.com/godotengine/"
-"godot-demo-projects>`_ werfen."
+"Poleg te dokumentacije si boste morda tudi želeli pogledati različne `Godot "
+"demo projekti <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
-"Viel Spaß beim Lesen und bei der Spieleentwicklung mit der Godot Engine!"
+msgstr "Uživajte ob branju in izdelovanju iger z Godot Engine!"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
 msgid "Frequently asked questions"
-msgstr "Häufig gestellte Fragen"
+msgstr "Pogosto zastavljena vprašanja"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr ""
-"Was kann ich mit Godot machen? Wie viel kostet es? Wie lauten die "
-"Lizenzbedingungen?"
+msgstr "Kaj lahko naredim z Godot? Koliko stane? Kakšni so licenčni pogoji?"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
-"Godot ist eine freie Open Source-Software und verfügbar unter der von der "
-"`OSI anerkannten <https://opensource.org/licenses/MIT>`_ MIT Lizenz."
+"Godot je Free/Libre Open Source Software dostopen pod `OSI-approved <https://"
+"opensource.org/licenses/MIT>`_ MIT license."
 
 #: ../../docs/about/faq.rst:11
 msgid ""
 "This means it is free as in \"free speech\" as well as in \"free beer\"."
-msgstr ""
-"Das heißt es ist sowohl frei im Sinne von \"freiheitlich\" als auch frei "
-"(kostenlos) wie in \"Freibier\"."
+msgstr "To pomeni da je zastonj kot \"free speech\" kot tudi \"free beer\"."
 
 #: ../../docs/about/faq.rst:13
 msgid "In short:"
-msgstr "Zusammengefasst:"
+msgstr "V kratkem:"
 
 #: ../../docs/about/faq.rst:15
 msgid "There are no usage restrictions on Godot"
-msgstr "Es gibt keine Nutzungsbeschränkung für Godot"
+msgstr "Godot nima omejitve uporabe"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
 msgstr ""
-"Das bedeutet, es darf in jedem Spiel und jeder Anwendung, egal ob komerziell "
-"oder nicht-kommerziell, und in jeglicher Industrie verwendet werden"
+"To pomeni, da ga lahko uporabljate za katerokoli igro ali aplikacijo, "
+"komercialno ali nekomercialno, v vsakem podjetju"
 
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr ""
-"Du darfst Godot nach Herzenslust verändern, (erneut) verteilen und vermischen"
+"Lahko spremenite, (re)distribuirate in združite Godot z vsebino vašega srca"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
-"Für weitere Infos, siehe `hier <https://tldrlegal.com/license/mit-license>`_ "
-"oder befrage den Anwalt deiner Wahl."
+"Za več poglejte `tukaj <https://tldrlegal.com/license/mit-license>`_ ali "
+"vprašajte vašega odvetnika za izbiro."
 
 #: ../../docs/about/faq.rst:21
 msgid ""
@@ -378,10 +349,9 @@ msgid ""
 "by/3.0/>`_) license, with attribution to \"Juan Linietsky, Ariel Manzur and "
 "the Godot Engine community\"."
 msgstr ""
-"Alle Inhalte dieser Dokumentation sind unter der freizügigen Creative "
-"Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
-"by/3.0/>`_) Lizenz, mit Zuschreibung an \"Juan Linietsky, Ariel Manzur und "
-"die Godot Engine Community\"."
+"Vsebina je licencirana pod odprto Creative Commons Attribution 3.0 (`CC-BY "
+"3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licenco, z avtorstvom "
+"\"Juan Linietsky, Ariel Manzur in skupnosti Godot Engine\"."
 
 #: ../../docs/about/faq.rst:25
 msgid ""
@@ -389,9 +359,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
-"Für Logos und Icons gilt generell die gleiche Creative Commons Lizenz. "
-"Beachte jedoch, dass manche Drittanbieter-Libraries, die in Godots Quellcode "
-"enthalten sind, abweichende Lizenzen haben können."
+"Logotipi in ikone so ponavadi pod isto Creative Commons licenco. "
+"Upoštevajte, da imajo nekatere \"tretje\" knjižnice, ki jih vsebuje Godot z "
+"izvorno kodo, različne licence."
 
 #: ../../docs/about/faq.rst:28
 msgid ""
@@ -401,27 +371,27 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
-"Für alle Details siehe die Dateien `COPYRIGHT.txt <https://github.com/"
-"godotengine/godot/blob/master/COPYRIGHT.txt>`_ und `LICENSE.txt <https://"
-"github.com/godotengine/godot/blob/master/LICENSE.txt>`_ sowie `LOGO_LICENSE."
-"txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ im "
-"Godot repository."
+"Za vse podrobnosti, poglejte v `COPYRIGHT.txt <https://github.com/"
+"godotengine/godot/blob/master/COPYRIGHT.txt>`_ kot tudi v `LICENSE.txt "
+"<https://github.com/godotengine/godot/blob/master/LICENSE.txt>`_ in "
+"`LOGO_LICENSE.txt <https://github.com/godotengine/godot/blob/master/"
+"LOGO_LICENSE.md>`_ datoteke v Godot repozitoriju."
 
 #: ../../docs/about/faq.rst:31
 msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Siehe auch `die Lizenzseite auf der Godot Website <https://godotengine.org/"
+"Glejte tudi `licenčno stran na strani Godot <https://godotengine.org/"
 "license>`_."
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr "Welche Plattformen werden von Godot unterstützt?"
+msgstr "Katera okolja podpira Godot?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr "**Vom Editor unterstützt:**"
+msgstr "**Za urejevalnik:**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
@@ -429,7 +399,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr "macOS"
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
@@ -437,11 +407,11 @@ msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr "**Für das Exportieren von Spielen:**"
+msgstr "**Za izvoz iger:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr "Windows (und UWP)"
+msgstr "Windows (in UWP)"
 
 #: ../../docs/about/faq.rst:47
 msgid "Android"
@@ -453,15 +423,15 @@ msgstr "iOS"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr "Web"
+msgstr "Splet"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"Sowohl 32- als auch 64-Bit Binaries werden – wo sinnvoll – unterstützt, mit "
-"64 Bit als Standard."
+"Podprte so 32 in 64-bitne datoteke, kjer je to smiselno, pri čemer je "
+"prevzeto 64."
 
 #: ../../docs/about/faq.rst:53
 msgid ""
@@ -470,22 +440,23 @@ msgid ""
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
-"Laut manchen Nutzern lässt sich Godot auch erfolgreich auf ARM-basierten "
-"Systemen mit Linux wie dem Raspberry Pi kompilieren und verwenden. Auch gibt "
-"es Ports für Konsolen von Drittanbietern. Allerdings ist nichts davon "
-"standardmäßig in den Buildskripten oder Exportvorlagen enthalten."
+"Nekateri uporabniki poročajo uspešno grajenje in uporabljanje Godot-a na ARM "
+"procesorjih, ki temeljijo na sistemu linux, npr. Raspberry Pi. Obstaja tudi "
+"nekaj neuradnega \"tretjega\" dela pri izgradnji za nekatere konzole. "
+"Vsekakor pa to ni vključeno v privzete skripte za gradnjo ali izvozne "
+"predloge."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"Mehr davon siehe die Abschnitte :ref:`exporting <toc-learn-workflow-export>` "
-"und :ref:`compiling Godot yourself <toc-devel-compiling>`."
+"Več o tem si poglejte v poglavjih :ref:`izvažanje <toc-learn-workflow-"
+"export>` in :ref:`prevajanje Godot-a sami <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:60
 msgid "Which languages are supported in Godot?"
-msgstr "Welche Programmiersprachen werden in Godot unterstützt?"
+msgstr "Kateri jeziki podpirajo Godot?"
 
 #: ../../docs/about/faq.rst:62
 msgid ""
@@ -493,25 +464,26 @@ msgid ""
 "C# and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"Die offiziellen unterstützten Sprachen für Godot sind GDScript, Visual "
-"Scripting, C# und C++. Genaueres zu jeder Sprache in der jeweiligen "
-"Unterkategorie im :ref:`scripting <toc-learn-scripting>`-Abschnitt."
+"Uradno podprti jeziki za Godot so GDScript, Visual Scripting, C# in C++. "
+"Oglejte si podkategorije za vsak jezik v razdelku :ref:`programiranje <toc-"
+"learn-scripting>`."
 
 #: ../../docs/about/faq.rst:65
 msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
 msgstr ""
-"C# und Visual Scripting sind noch sehr neu in Godot, weswegen GDScript wie "
-"unten beschrieben noch einige Vorteile hat."
+"Upoštevajte, da je podpora C# in Visual Scripting sorazmerno mlada in da ima "
+"GDScript še vedno nekaj prednosti, kot je opisano spodaj."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
 "Support for new languages can be added by third parties using the GDNative / "
 "NativeScript / PluginScript facilities. (See question about plugins below.)"
 msgstr ""
-"Unterstützung für neue Sprachen kann mithilfe von GDNative / NativeScript "
-"und PluginScript hinzugefügt werden."
+"Podpora za nove jezike je lahko dodana z \"tretjimi\" objekti z uporabo "
+"GDNative / NativeScript / PluginScript. (Glejte vprašanja o vtičnikih "
+"spodaj.)"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -519,15 +491,17 @@ msgid ""
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Zum Beispiel wird gerade an unoffiziellen Bindings für Godot für `Python "
-"<https://github.com/touilleMan/godot-python>`_ und `Nim <https://github.com/"
-"pragmagic/godot-nim>`_gearbeitet."
+"Delo trenutno poteka, na primer, neurana povezava Godot z `Python <https://"
+"github.com/touilleMan/godot-python>`_ in `Nim <https://github.com/pragmagic/"
+"godot-nim>`_."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
-msgstr "GDScript? Warum benutzt Godot eine eigene Programmiersprache?"
+msgstr ""
+"GDScript? Zakaj bi uporabljal/a osnovni programerski jezik namesto jezika po "
+"moji izbiri?"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -539,15 +513,13 @@ msgid ""
 "language in Godot (see list of supported options above), but we strongly "
 "encourage you to try it and see the benefits for yourself."
 msgstr ""
-"Die kurze Antwort ist: Wir denken, dass die zusätzliche Komplexität auf "
-"deiner (beim erlernen von Godot und GDScript) und unserer Seite (Wartung) "
-"die besser integrierte und nahtlosere Erlebnis wert ist, im Unterschied "
-"dazu, mehr Benutzer mit bekannten Programmiersprachen anzuziehen und dafür "
-"nur ein schlechteres Erlebnis garantieren zu können.\n"
-"Wir verstehen, wenn du lieber eine andere Sprache in Godot verwenden willst "
-"(siehe die Liste an unterstützten Optionen oben), aber wir legen dir "
-"wärmstens ans Herz, es wenigstens mit GDScript zu versuchen und dir die "
-"Vorteile selbst anzusehen."
+"Kratek odgovor je, da menimo, da je dodatna zapletenost na vaši strani (Ko "
+"se prvič učimo Godot in GDScript), pa tudi na naši strani (vzdrževanje) "
+"vredno večje povezanosti in prezhibne izkušnje kot pa privabljanje dodatnih "
+"uporabnikov z znajem bolj znanih programskih jezikov, katerih razultat bi "
+"prinašal slabše izkustvo. Razumemo, če bi raje uporabljali drug jezik v "
+"Godot (poglejte seznam podprtih možnosti spodaj), vendar vas spodbujamo, da "
+"ga poizkusite in videli boste prednosti, ki jih prinaša."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -556,10 +528,11 @@ msgid ""
 "most a day or two to get comfortable and it's very easy to see the benefits "
 "once you do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
-"GDScript wurde entworfen, um sich perfekt in Godot und dessen Funktionsweise "
-"zu integrieren, und ist gleichzeitig einfach gehalten, um das Erlernen so "
-"simpel wie möglich zu gestalten. Mach dir die Mühe, GDScript zu lernen, und "
-"du wirst es nicht bereuen."
+"GDScript je načrtovan, da vključuje vsa področja kjer Godot deluje, bolje "
+"kot katerikoli jezik in je zelo enostaven in preprost za učenje. Ne "
+"potrebujete več kot dan ali dva, da se ga navadite in je enostavno videti "
+"prednosti, ko se ga naučite. Priporočamo vam, da vložite trud v učenje "
+"GDScript, kar na koncu ne boste obžalovali."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -568,11 +541,10 @@ msgid ""
 "but trying to use it instead of GDScript for an entire game is, in most "
 "cases, a waste of time."
 msgstr ""
-"Die Godot C++ API ist außerdem effizient und einfach zu verwenden (der "
-"gesamte Godot Editor wurde mithilfe dieser API erstellt), und ist ein "
-"hervorragendes Werkzeug, um Teile eines Projektes zu optimieren.\n"
-"Sie allerdings anstatt von GDScript für ein ganzes Spiel zu verwenden, ist "
-"meistens nicht sehr zeiteffizient."
+"Godot C++ API je veliko sposobna in enostavna za uporabo (celoten Godotov "
+"urejevalnik je izdelan s tem API-jem). Je odlično orodje za optimizacijo "
+"delov projekta, vendar bi bilo v večini primerov zapravljanje časa, če bi ga "
+"uporabljali namesto GDScript za izdelavo celotne igre."
 
 #: ../../docs/about/faq.rst:96
 msgid ""
@@ -581,11 +553,10 @@ msgid ""
 "fact we authored tolua++ in the past, one of the most popular C++ binders). "
 "None of them worked as well as GDScript does now."
 msgstr ""
-"Ja, mehr als ein Jahrzehnt lang haben wir versucht, mehrere Virtuelle "
-"Maschinen zu integrieren (und auch Spiele die diese nutzen veröffentlicht), "
-"wie zum Beispiel Python, Squirrel und Lua (in der Tat haben wir tolua++ "
-"verfasst, eines der populärsten C++-Bindings). Keiner funktionierte so gut "
-"wie GDScript es tut."
+"Res je, več kot desetletje smo poizkušali vključiti nekatere VM (in smo celo "
+"izvažali igre), kot so Python, Squirrel in Lua (V resnici smo si v "
+"preteklosti prilastili tolua++, eno najbolj priljubljenih C++ vpenjalnikov). "
+"Nič od tega ni delovalo tako dobro kot GDScript deluje zdaj."
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -593,73 +564,69 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
-"Mehr Informationen, um gut mit GDScript bzw. dynamisch typisierten Sprachen "
-"umgehen zu können, können im Tutorial :ref: `doc_gdscript_more_efficiently` "
-"gefunden werden."
+"Več informacij, da se navadite uporabljati GDScript ali druge tipizirane "
+"jezike najdete v :ref:`doc_gdscript_more_efficiently` vaji."
 
 #: ../../docs/about/faq.rst:105
 msgid "For the more technically versed, proceed to the next item."
-msgstr "Technisch Versiertere können das Folgende überspringen."
+msgstr "Za bolj tehnično dovršene, nadaljujte na naslednji točki."
 
 #: ../../docs/about/faq.rst:108
 msgid "I don't believe you. What are the technical reasons for the item above?"
-msgstr ""
-"Ich glaube euch nicht. Was sind die technischen Gründe für die genannten "
-"Gründe?"
+msgstr "Ne verjamem vam. Kakšni so tehnološki razlogi za zgornjo stvar?"
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
-msgstr "Die Hauptgründe sind:"
+msgstr "Glavni razlogi so:"
 
 #: ../../docs/about/faq.rst:112
 msgid ""
 "No good thread support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JS, AS, etc.)."
 msgstr ""
-"Keine gute Unterstützung für Threads in den meisten Script VMs (Lua, Python, "
-"Squirrel, JS, AS, etc.), Godot verwendet aber Threads."
+"V večini jezikov VM ni dobre podpore za programske niti, Godot pa uporablja "
+"(Lua, Python, Squirrel, JS, AS itd.)."
 
 #: ../../docs/about/faq.rst:114
 msgid ""
 "No good class extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
-"Keine gute Unterstützung für Klassenvererbung in den meisten Skript-VMs, und "
-"das Anpassen an Godots Funktionsweise ist sehr ineffizient (Lua, Python, JS)."
+"V večini jezikov VM, ni dobre razširitvene podpore za razrede. Njihova "
+"prilagoditev delovanju Godota je zelo neučinkovita (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:116
 msgid ""
 "Horrible interface for binding to C++, results in large amount of code, "
 "bugs, bottlenecks and general inefficiency (Lua, Python, Squirrel, JS, etc.)"
 msgstr ""
-"Grauenhafte Schnittstelle zur Anbindung an C++, die zu großen Mengen Code, "
-"Bugs, Bottlenecks und genereller Ineffizienz führt. (Lua, Python, Squirrel, "
-"JS, etc.)"
+"Grozen vmesnik za vezavo na C++ da velikem številu kode kot rezultat, "
+"napake, zastoje in splošno neučinkovitost (Lua, Python, Squirrel, JS, etc.)"
 
 #: ../../docs/about/faq.rst:119
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
-"Keine nativen Vektor-Typen (vector3, matrix4, usw.) → geringere Performance "
-"wenn eigene Objekttypen genutzt werden (Lua, Python, Squirrel, JS, AS, etc.)."
+"Brez vgrajenih algebričnih tipov (vector3, matrix4, itd.), kar ima za "
+"posledico zmanjšano zmogljivost, pri svoji izbiri tipov (Lua, Python, "
+"Squirrel, JS, AS, itd.)."
 
 #: ../../docs/about/faq.rst:122
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
-"Der Garbage Collector führt zu Verzögerungen oder unnötig viel "
-"Speicherbelegung (Lua, Python, JS, AS, etc.)."
+"Zbiralnik smeti se zaustavlja ali ima nepotrebno veliko pomnilnika (Lua, "
+"Python, JS, AS itd.)."
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is very well supported by GDScript."
 msgstr ""
-"Schwierigkeiten, Codevervollständigung in den Codeeditor zu integrieren, "
-"Livebearbeitung, etc. (alle VMs). Dieses wird sehr gut von GDScript "
-"unterstützt."
+"Težavnosti pri spoznavanju urejevalnika kode za zagotavljanje dokončevanja "
+"besed, urejanje v živo, itd. (vse od njih), je dobro podprta z GDScript."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
@@ -668,55 +635,54 @@ msgid ""
 "integration of scripting with the game engine (yes, it's a rare but very "
 "enjoyable situation when things just work). It's worth it, give it a try!"
 msgstr ""
-"GDScript wurde mit dem Ziel entwickelt, die obigen Probleme zu lösen, und "
-"funktionert wunderbar in all den oben genannten Szenarien. Bitte lerne "
-"GDScript und erfreue dich der sehr gelungenen Integration von Skripten in "
-"die Spieleengine (Ja, es ist eine sehr seltene aber erfreuliche Situation, "
-"wenn einfach alles funktioniert). Es ist es wert, versuche es einfach!"
+"GDScript je bila zasnovana za reševanje problemov naštetih zgoraj in v vseh "
+"omenjenih primerih deluje zelo dobro. Svetujemo vam, da se naučite GDScript "
+"in uživate v programiranju brez težav (ja, to je redka, a zelo prijetna "
+"situacija, ko stvari delujejo samo). To je vredno, dajte mu priložnost!"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
-msgstr "Ich möchte Godot erweitern. Wie kann ich Plugins entwickeln?"
+msgstr "Rad bi razširil Godot. Kakšne so moje možnosti za izdelavo vtičnikov?"
 
 #: ../../docs/about/faq.rst:137
 msgid ""
 "For creating Godot Editor plugins look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Für Infos zum Erstellen von Godot Editor Plugins sieh dir :ref:"
-"`EditorPlugins <doc_making_plugins>` und Werkzeug-Skripte an."
+"Za ustvarjanje dodatkov za Godot Editor si oglejte :ref:`EditorPlugins "
+"<doc_making_plugins>` in orodne skripte."
 
 #: ../../docs/about/faq.rst:139
 msgid ""
 "Additional languages could be added via PluginScript or the more low-level "
 "NativeScript."
 msgstr ""
-"Zusätzliche Sprachen können per PluginScript oder das eher low-level "
-"NativeScript hinzugefügt werden."
+"Dodatni jeziki so lahko dodani z PluginScript ali z bolj nizko-nivojskim "
+"NativeScript."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
 "If you want to add a certain native library, your best bet is GDNative and "
 "custom C++ modules."
 msgstr ""
-"Wenn du eine bestimmte native Bibliothek hinzufügen willst, ist es das "
-"beste, GDNative oder benutzerdefinierte C++ Module zu verwenden."
+"Če želite dodati nekatere prevzete knjižnice, bo vaša najboljša izbira "
+"GDNative ali C++ moduli po vaši izbiri."
 
 #: ../../docs/about/faq.rst:143
 msgid "Also see the official blog posts on these topics:"
-msgstr "Siehe auch die offiziellen Blogposts zu diesen Themen (auf Englisch):"
+msgstr "Poglejte si tudi uradne objeve v spletnem blogu na to temo:"
 
 #: ../../docs/about/faq.rst:145
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
-"`Ein Blick auf die GDNative-Architektur <https://godotengine.org/article/"
-"look-gdnative-architecture>`_"
+"`Poglejte si strukturo GDNative <https://godotengine.org/article/look-"
+"gdnative-architecture>`_"
 
 #: ../../docs/about/faq.rst:146
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`GDNative ist hier! <https://godotengine.org/article/dlscript-here>`_"
+msgstr "`Tukaj je GDNative! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:148
 msgid ""
@@ -724,13 +690,12 @@ msgid ""
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot."
 msgstr ""
-"Du kannst auch einen Blick auf die GDScript Implementierung werfen, die "
-"Godot-Module und die `inoffiziellen Python-Unterstützung <https://github.com/"
-"touilleMan/godot-python>`_ für Godot."
+"Lahko si tudi ogledate uporabo GDScript in Godot modulov, kot tudi `neuradno "
+"podporo Pythona <https://github.com/touilleMan/godot-python>`_ za Godot."
 
 #: ../../docs/about/faq.rst:152
 msgid "Why is FBX not supported for import?"
-msgstr "Warum wird der Import von FBX nicht unterstützt?"
+msgstr "Zakaj FBX ni podprt za uvoz?"
 
 #: ../../docs/about/faq.rst:154
 msgid ""
@@ -738,9 +703,9 @@ msgid ""
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<http://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
-"Das FBX SDK hat eine sehr `restriktive Lizenz <http://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>`_, welche inkompatibel mit der `offenen Lizenz "
-"<http://opensource.org/licenses/MIT>`_ von Godot ist."
+"FBX SDK ima zelo `omejeno licenco <http://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf>`_, ki ni združljiva z `odprtokodno licenco <http://"
+"opensource.org/licenses/MIT>`_, ki jo zagotavlja Godot."
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -750,31 +715,31 @@ msgid ""
 "Max. If you are using Blender, take a look at our own `Better Collada "
 "Exporter <https://godotengine.org/download>`_."
 msgstr ""
-"Stattdessen ist Godots Unterstützung für Collada wirklich gut, bitte "
-"verwende den `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools>`_ Exporter für maximale Kompatibilität, falls du Maya "
-"oder 3DS max nutzt. Verwendest du Blender, dann schaue dir unseren eigenen "
-"`Better Collada Exporter <https://godotengine.org/download>`_ an."
+"Dejstvo je da, ima Godot zelo dobro podporo za Collada, zato je priporočeno "
+"uporabljati izvoznik `OpenCollada <https://github.com/KhronosGroup/"
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_, ker ponuja najboljše možno "
+"združljivost, če uporablajte Maya ali 3DS Max. Če pa uporabljate Blender, si "
+"oglejte naš izvoznik `Better Collada Exporter <https://godotengine.org/"
+"download>`_."
 
 #: ../../docs/about/faq.rst:164
 msgid "Also, glTF support was added in Godot 3.0."
-msgstr "Godot 3.0 unterstützt jetzt außerdem auch das glTF Format."
+msgstr "V Godot 3.0 je bila dodana tudi podpora glTF."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question above.)"
 msgstr ""
-"Die Unterstützung für das FBX Format könnte weiterhin von Dritten als Plugin "
-"angeboten werden. (Siehe Plugins Frage oben.)"
+"Podpora FBX je lahko še vedno zagotovljena z dodatnimi \"tretjimi\" "
+"vtičniki. (Glej vprašanje Vtičniki zgoraj.)"
 
 #: ../../docs/about/faq.rst:169
 msgid ""
 "Will [Insert closed SDK such as PhysX, GameWorks, etc.] be supported in "
 "Godot?"
 msgstr ""
-"Wird [Geschlossenes SDK wie PhysX, GameWorks, etc. einfügen] in Godot "
-"unterstützt werden?"
+"Ali bo v Godotu podprta vstavitev zaprtih SDK, kot so PhysX, GameWorks itd. ?"
 
 #: ../../docs/about/faq.rst:171
 msgid ""
@@ -783,10 +748,10 @@ msgid ""
 "versions of functionality or features from such SDKs may be eventually added "
 "though."
 msgstr ""
-"Nein, das Ziel von Godot ist es, eine komplette Open-Source-Engine zu "
-"erstellen, die unter der MIT-Lizenz steht, so dass Sie die volle Kontrolle "
-"über jedes einzelne Teil davon haben. Offene Versionen von Funktionen oder "
-"Features aus solchen SDKs können jedoch eventuell hinzugefügt werden."
+"Ne, cilj Godota je ustvariti popolnoma odprtokodni pogon za igre, katerega "
+"izdana licenca je v okviru MIT, zato imate nadzor nad vsakim posameznim "
+"delom. Odprte različice funkcionalnosti iz nekaterih SDK, se bodo s časoma "
+"verjetno dodale."
 
 #: ../../docs/about/faq.rst:176
 msgid ""
@@ -794,25 +759,18 @@ msgid ""
 "anyone else interested into adding those libraries as a module and ship your "
 "game using them, as either open or closed source. Everything is allowed."
 msgstr ""
-"Da Godot aber Open Source und modular ist, hindert Sie und andere nichts "
-"daran, diese Bibliotheken als Modul Ihrem Spiel hinzuzufügen, entweder als "
-"Open Source oder als Closed Source. Beides ist erlaubt."
 
 #: ../../docs/about/faq.rst:181
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question above."
 msgstr ""
-"Ob Unterstützung für die SDK Ihrer Wahl bereitgestellt werden kann, finden "
-"Sie in der Fragestellung über Plugins oben."
 
 #: ../../docs/about/faq.rst:184
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
-"Wie sollten Assets für einen optimalen Umgang mit verschiedenen "
-"Bildschirmauflösungen und Seitenverhältnissen angelegt werden?"
 
 #: ../../docs/about/faq.rst:186
 msgid ""
@@ -824,14 +782,6 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
-"Diese Frage kommt häufig auf und rührt wahrscheinlich von einem dank Apple "
-"erstandenen Missverständnisses, als sie begannen, die Größe der "
-"Bildschirmauflösungen ihrer Geräte zu verdoppeln. Es ließ die Leute glauben, "
-"dass Assets in verschiedenen Größen mitzuliefern eine gute Idee sei, und so "
-"fand diese Praxis häufig Einzug bei Entwicklern. Dies klappte jedoch nur bis "
-"zu einem gewissen Grad und ausschließlich für Apple-Geräte, nicht jedoch für "
-"Android- und spätere Apple-Geräte, die mit einer großen Bandbreite neuer "
-"Größen und DPIs eingeführt wurden."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -839,10 +789,6 @@ msgid ""
 "base resolution for the game and only handle different screen aspects. This "
 "is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or YFov."
 msgstr ""
-"Der einfachste Weg, dies zu erreichen, ist es stattdessen, eine einfache "
-"Basis-Auflösung für das Spiel zu verwenden und nur mit verschiedenen "
-"Bildschirm-Größen klarzukommen. Dies wird am meisten für 2D benötigt, denn "
-"in 3D ist es einfach eine Frage der Kamera (XFov und YFov)."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -853,14 +799,6 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
-"Wählen Sie eine einfache Basis-Auflösung für das Spiel. Selbst wenn es "
-"Geräte gibt, die über eine Auflösung von 2K gehen und es ebenfalls Geräte "
-"gibt, die nur eine Auflösung unter 400p unterstützen, standardisiertes und "
-"hardwarebasiertes Skalieren wird dieses Problem größtenteils beseitigen mit "
-"mehr oder weniger geringen Kosten an Performance. Die übliche Wahl ist "
-"entweder 1080p (1920x1080) oder 720p (1280x720). Je höher die Auflösung, "
-"desto größer die Texturen, desto mehr Speicher (RAM) wird das Gerät "
-"benötigen und desto länger wird es dauern, bis das Spiel geladen ist."
 
 #: ../../docs/about/faq.rst:208
 msgid ""
@@ -868,9 +806,6 @@ msgid ""
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
 "this."
 msgstr ""
-"Benutzen Sie die Streck-Optionen in Godot, am Besten funktioniert 2D-"
-"Strecken bei Einhalten der Seitenverhältnisse (siehe :ref:"
-"`doc_multiple_resolutions`)."
 
 #: ../../docs/about/faq.rst:212
 msgid ""
@@ -879,10 +814,6 @@ msgid ""
 "there is a minimum one and you want black bars to appear instead. This is "
 "also explained in the previous step."
 msgstr ""
-"Verwende eine minimale Auflösung und entscheide dann, ob das Spiel "
-"horizontal oder vertikal gestreckt werden soll (mit verschiedenen "
-"Seitenverhältnissen), oder ob es ein Minimum geht, sodass dann stattdessen "
-"schwarze Balken an den Seiten erscheinen."
 
 #: ../../docs/about/faq.rst:217
 msgid ""
@@ -890,14 +821,10 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
-"Für GUI: :ref:`anchoring <doc_size_and_anchors>`\n"
-"Das hilft, um entscheiden zu können, ob die Kontrolleinheiten statisch "
-"(fest) oder beweglich sein sollen. Wenn das UI komplex werden soll, hilft "
-"es, etwas über Container zu lernen."
 
 #: ../../docs/about/faq.rst:221
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr "Und das war's! Das Spiel sollte in mehreren Auflösungen funktionieren."
+msgstr ""
 
 #: ../../docs/about/faq.rst:223
 msgid ""
@@ -906,47 +833,36 @@ msgid ""
 "option to shrink images, and set that build to be used for certain screen "
 "sizes in the App Store or Google Play."
 msgstr ""
-"Wenn es wirklich nötig werden sollte, das Spiel auf älteren Geräten mit "
-"kleinen Bildschirmen (weniger als 300 Pixel horizontal), dann kann die "
-"Export-Funktion benutzt werden, um die Bilder zu verkleinern und für "
-"bestimmte Auflösungen im Google Play Store oder im Apple Store freizugeben."
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"
-msgstr "Ich habe eine super Idee, die Godot besser machen wird. Was denkt ihr?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:231
 msgid ""
 "Your idea will most certainly be ignored. Examples of stuff that is ignored "
 "by the developers:"
 msgstr ""
-"Deine Idee wird höchstwahrscheinlich ignoriert. Beispiele von Dingen, die "
-"die Entwickler ignorieren:"
 
 #: ../../docs/about/faq.rst:234
 msgid "Let's do this because it will make Godot better"
-msgstr "Lasst uns dies ändern, weil es Godot einfach besser macht"
+msgstr ""
 
 #: ../../docs/about/faq.rst:235
 msgid "Let's do this in Godot because another game engine does it"
 msgstr ""
-"Godot soll das so machen, weil es eine andere Spieleengine auch so macht"
 
 #: ../../docs/about/faq.rst:236
 msgid "Let's remove this because I think it's not needed"
-msgstr "Lasst uns dies entfernen, weil ich glaube, dass es unnötig ist"
+msgstr ""
 
 #: ../../docs/about/faq.rst:237
 msgid "Let's remove clutter and bloat and make Godot look nicer"
 msgstr ""
-"Lasst uns überflüssiges Zeug und Ballast entfernen und Godot besser aussehen "
-"lassen"
 
 #: ../../docs/about/faq.rst:238
 msgid "Let's add an alternative workflow for people who prefer it"
 msgstr ""
-"Lasst uns einen alternativen Arbeitsablauf hinzufügen, für Leute, die diesen "
-"besser finden"
 
 #: ../../docs/about/faq.rst:240
 msgid ""
@@ -956,47 +872,34 @@ msgid ""
 "ideas solely based on personal belief. Developers are interested in (for "
 "example):"
 msgstr ""
-"Die Godot-Entwickler sind immer bereit, mit dir zu reden und lauschen sehr "
-"offen deinem Feedback, in einem Umfang wie er selten in Open Source "
-"Projekten vorkommt, aber für sie stehen echte Probleme im Umgang mit Godot "
-"im Vordergrund, nicht rein auf persönlichem Glauben basierende Ideen. Die "
-"Entwickler interessiert (als Beispiel):"
 
 #: ../../docs/about/faq.rst:246
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
-"Deine Erfahrung mit der Software und die Probleme, die du hast (uns "
-"interessiert das um einiges mehr als die Ideen, wie man die Software "
-"verbessern kann)."
 
 #: ../../docs/about/faq.rst:248
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
-"Die Funktionen, die du gerne in der Engine implementiert sehen würdest, weil "
-"sie für ein Projekt benötigt werden."
 
 #: ../../docs/about/faq.rst:250
 msgid ""
 "The concepts that were difficult to understand in order to learn the "
 "software."
 msgstr ""
-"Die Konzepte, die schwierig waren, zu verstehen, um die Software zu lernen."
 
 #: ../../docs/about/faq.rst:252
 msgid "The parts of your workflow you would like to see optimized."
-msgstr "Die Teile des Arbeitsablaufes, die du gerne optimiert haben würdest."
+msgstr ""
 
 #: ../../docs/about/faq.rst:253
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't up "
 "to par."
 msgstr ""
-"Teile, wo Ihnen klare Anweisungen in Form von Tutorials fehlen oder wo die "
-"Dokumentation einfach noch nicht ausführlich genug war."
 
 #: ../../docs/about/faq.rst:255
 msgid ""
@@ -1004,10 +907,6 @@ msgid ""
 "and this is where your ideas and suggestions are most valuable and welcome, "
 "they need to be in context of a real issue."
 msgstr ""
-"Sobald einer der oberen Punkte gestellt wurde, können wir an einer Lösung "
-"des Problems arbeiten und das ist, wo deine Ideen und Vorschläge am "
-"wichtigsten und am willkommendsten sind, sie müssen nur im Kontext eines "
-"wirklichen Problems liegen."
 
 #: ../../docs/about/faq.rst:259
 msgid ""
@@ -1015,31 +914,26 @@ msgid ""
 "try to reformulate them as a problem first, so developers and the community "
 "have a base ground to discuss first."
 msgstr ""
-"Wie sonst, bitte habe nicht das Gefühl, dass die Ideen unwillkommen wären. "
-"Stattdessen ist es besser, das Problem neu zu formulieren, sodass die "
-"Entwickler einen festen Boden haben, auf dem sie diskutieren können."
 
 #: ../../docs/about/faq.rst:263
 msgid "Examples of how NOT to state problems generally and vaguely are:"
 msgstr ""
-"Beispiele dafür, wie man allgemeine und vage Probleme NICHT angeben sollte "
-"sind:"
 
 #: ../../docs/about/faq.rst:265
 msgid "Certain feature is ugly"
-msgstr "Eine bestimmtes Merkmal ist unschön"
+msgstr ""
 
 #: ../../docs/about/faq.rst:266
 msgid "Certain workflow is slow"
-msgstr "Ein bestimmter Arbeitsablauf ist langsam"
+msgstr ""
 
 #: ../../docs/about/faq.rst:267
 msgid "Certain feature needs optimization"
-msgstr "Jenes Feature benötigt Optimierung"
+msgstr ""
 
 #: ../../docs/about/faq.rst:268
 msgid "Certain aspect of the UI looks cluttered"
-msgstr "Dieser Aspekt des UI's sieht veraltet aus"
+msgstr ""
 
 #: ../../docs/about/faq.rst:270
 msgid ""
@@ -1047,32 +941,22 @@ msgid ""
 "developers will most likely not understand you. Instead, try to reformulate "
 "your problem as a story such as:"
 msgstr ""
-"Wenn man etwas mit einem Adjektiv assoziiert, wird es nicht viel Bedeutung "
-"erhalten und die Entwickler werden dich wahrscheinlich nicht verstehen. "
-"Versuche stattdessen das Problem neu zu formulieren, wie eine Geschichte, z. "
-"B.:"
 
 #: ../../docs/about/faq.rst:274
 msgid "I try to move objects around but always end up picking the wrong one"
 msgstr ""
-"Ich versuche jedesmal Objekte zu verschieben, aber wähle dann immer das "
-"falsche aus"
 
 #: ../../docs/about/faq.rst:275
 msgid ""
 "I tried to make a game like Battlefield but I'm not managing to understand "
 "how to get lighting to look the same."
 msgstr ""
-"Ich habe versucht, ein Spiel wie Battlefield zu erstellen, aber ich verstehe "
-"nicht, wie ich die optimalen Lichtverhältnisse herstellen kann."
 
 #: ../../docs/about/faq.rst:277
 msgid ""
 "I always forget which script I was editing, and it takes me too many steps "
 "to go back to it."
 msgstr ""
-"Ich vergesse immer, welches Skript ich bearbeitet habe und ich benötige zu "
-"viele Schritte, um wieder dahin zurückzukehren."
 
 #: ../../docs/about/faq.rst:280
 msgid ""
@@ -1081,59 +965,47 @@ msgid ""
 "stories to the developers and the community, before discussing any idea. Be "
 "specific and concrete."
 msgstr ""
-"Das wird dir erlauben, einen stabilen Grund für Diskussionen zu setzen. "
-"Versuche, die Probleme als verständliche Geschichten zu den Entwicklern zu "
-"bringen, bevor jene Idee diskutiert wird. Schreibe möglichst konkret."
 
 #: ../../docs/about/faq.rst:285
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases or "
 "example projects (if applicable)."
 msgstr ""
-"Bonuspunkte gibt es für Bildschirmfotos, konkrete Zahlen, Testfälle oder "
-"Beispielprojekte (falls zutreffend)."
 
 #: ../../docs/about/faq.rst:288
 msgid "How can I support Godot development or contribute?"
 msgstr ""
-"Wie kann ich die Entwicklung der Godot Engine unterstützen oder einen "
-"Beitrag leisten?"
 
 #: ../../docs/about/faq.rst:290
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr "Siehe :ref:`doc_ways_to_contribute`."
+msgstr ""
 
 #: ../../docs/about/faq.rst:293
 msgid "Who is working on Godot? How can I contact you?"
-msgstr "Wer arbeitet an Godot? Wie kann ich euch kontaktieren?"
+msgstr ""
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
-"Siehe die dazugehörige Seite auf der `Godot Website <https://godotengine.org/"
-"contact>`_."
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 msgid "About"
-msgstr "Über"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr "GDScript Zeichenketten formatieren"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
 "GDScript offers a feature called *format strings* which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
-"GDScript bietet ein Feature names *Zeichenketten formatieren* welches "
-"Ermöglicht, Textvorlagen wieder zu benutzen, um schnell unterschiedliche, "
-"aber ähnliche Zeichenketten zu erzeugen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -1141,10 +1013,6 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
-"Formatierte Zeichenketten sind wie normale Zeichenketten, mit der Ausnahme, "
-"dass sie bestimmte Platzhalter für Zeichensequenzen enthalten. Diese "
-"Platzhalter können einfach durch Parameter in der formatierten Zeichenkette "
-"ersetzt werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -1153,19 +1021,14 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
-"Beispielsweise kann mit ``%s`` als ein Platzhalter die formatierte "
-"Zeichenkette ``\"Hallo %s, wie geht es dir?`` einfach zu ``\"Hallo Welt, wie "
-"geht es dir?\"`` geändert werden. Bemerke, dass der Platzhalter mitten in "
-"der Zeichenkette ist, ihn ohne Formatierung zu bearbeiten kann sehr mühsam "
-"sein."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr "Verwendung in GDScript"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example::"
-msgstr "Versuche, das folgende GDScript-Beispiel zu verstehen::"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:33
 msgid ""
@@ -1173,9 +1036,6 @@ msgid ""
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
-"Platzhalter starten immer mit einem ``%``, aber das nächste oder die "
-"nächsten Zeichen, der *Formatkennzeichner*, legt fest, wie der gegebene Wert "
-"zu einer Zeichenkette konvertiert wird."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:37
 msgid ""
@@ -1186,13 +1046,6 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
-"Das ``%s``im Beispiel oben ist der einfachste Platzhalter und funktioniert "
-"in den meisten Fällen: er konvertiert den Wert mit der gleichen Methode, von "
-"welcher eine implizierte Zeichenketten-Konvertierung oder ``str()`` es "
-"konvertieren würde. Zeichenketten bleiben unverändert. Schalter schalten "
-"entweder in ``\"True\"`` (wahr) oder ``\"False\"`` (falsch), eine integrale "
-"oder reale Nummer wird decimal, andere Typen geben meist ihre Daten in einer "
-"lesbaren Zeichenkette zurück."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:44
 msgid ""
@@ -1201,35 +1054,26 @@ msgid ""
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
-"Es gibt auch einen anderen Weg, um Text in GDScript zu formatieren, vor "
-"allen Dingen die ``String.format()`` Methode. Sie ersetzt alle Schlüssel in "
-"der Zeichenkette mit dem entsprechenden Wert. Die Methode kommt mit Arrays "
-"oder Wörterbüchern (Dictonary) für das Schlüssel/Wert-Paar klar."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:48
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
-"Arrays können als Schlüssel, Index oder in gemixtem Stil (siehe untere "
-"Beispiele) vorkommen. Die Reihenfolge ist nur wichtig, wenn der Index oder "
-"der gemixte Stil des Arrays benutzt wird."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:51
 msgid "A quick example in GDScript::"
-msgstr "Ein kurzes Beispiel in GDScript::"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:62
 msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
 msgstr ""
-"Es gibt auch andere `Formatbezeichner`, aber diese sind nur anwendbar, beim "
-"Benutzen des ``%``-Operators."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:67
 msgid "Multiple placeholders"
-msgstr "Mehrere Platzhalter"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:69
 msgid ""
@@ -1237,23 +1081,16 @@ msgid ""
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_)::"
 msgstr ""
-"Formatierte Zeichenketten können mehrere Platzhalter enthalten. In diesem "
-"Fall werden die Werte in der Form eines Arrays gehandhabt, ein Wert pro "
-"Platzhalter (außer es wird ein Formatbezeichner mit ``*`` genutzt, siehe "
-"`dynamic padding`_)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:79
 msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
-"Bemerke, dass die Werte in der Reihenfolge eingefügt werden. Denke daran, "
-"dass alle Platzhalter auf einmal ersetzt werden müssen, es muss also eine "
-"angemessene Anzahl an Werten geben."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:84
 msgid "Format specifiers"
-msgstr "Formatbezeichner"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:86
 msgid ""
@@ -1262,15 +1099,10 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
-"Es gibt weitere Formatbezeichner außer ``s``, die in Platzhaltern genutzt "
-"werden können. Diese bestehen aus einem oder mehreren Zeichen. Manche "
-"funktionieren für sich alleine, wie ``s``, manche stehen vor anderen "
-"Zeichenketten, wieder andere funktionieren in Verbindung mit bestimmten "
-"Werten oder Zeichenketten."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:93
 msgid "Placeholder types"
-msgstr "Platzhalter-Typen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:95
 msgid ""
@@ -1278,112 +1110,92 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
-"Einer – und nur einer – dieser Platzhalter-Typen muss immer als letztes "
-"Zeichen in einem Formatbezeichner auftreten. Abgesehen von ``s`` werden "
-"bestimmte Parametertypen benötigt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "``s``"
-msgstr "``s``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
 msgstr ""
-"**Einfache** Konvertierung von einer Zeichenkette mit der selben Methode, "
-"die bei der Konvertierung von impliziten Zeichenketten genutzt wird."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:102
 msgid "``c``"
-msgstr "``c``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:102
 msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
-"Ein einzelnes **Unicode Zeichen**. Erwartet einen vorzeichenlosen 8-bit "
-"Ganzzahltyp (0-255) für einen Codepunkt oder eine Zeichenkette bestehend aus "
-"einem einzelnen Zeichen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``d``"
-msgstr "``d``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
-"Eine **dezimale Ganz**zahl. Erwartet eine ganze oder reelle Zahl (wird "
-"abgerundet)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``o``"
-msgstr "``o``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
-"Eine **oktale Ganz**zahl. Erwartet eine ganze oder reelle Zahl (wird "
-"abgerundet)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``x``"
-msgstr "``x``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
-"Eine **hexadezimale Ganz**zahl mit **Kleinbuchstaben**. Erwartet eine ganze "
-"oder reelle Zahl (wird abgerundet)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``X``"
-msgstr "``X``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
-"Eine **hexadezimale Ganz**zahl mit **Großbuchstaben**. Erwartet eine ganze "
-"oder reelle Zahl (wird abgerundet)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``f``"
-msgstr "``f``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr "Eine **reelle Dezimal**zahl. Erwartet eine ganze oder reelle Zahl."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:122
 msgid "Placeholder modifiers"
-msgstr "Platzhalter-Modifikatoren"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:124
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
 msgstr ""
-"Diese Zeichen erscheinen vor den obigen. Einige davon funktionieren nur "
-"unter bestimmten Bedingungen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "``+``"
-msgstr "``+``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "In number specifiers, **show + sign** if positive."
 msgstr ""
-"Bei Zahlen-Bezeichnern **das + Vorzeichen** mit angeben, falls die Zahl "
-"positiv ist."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:94
@@ -1406,7 +1218,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:454
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:469
 msgid "Integer"
-msgstr "Ganze Zahl"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
@@ -1416,40 +1228,35 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``.``"
-msgstr "``.``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
-"Vor  ``f`` setzt es die **Präzision** auf 0 Nachkommastellen. Kann von einer "
-"Zahl gefolgt werden, um dies zu ändern. Wird notfalls mit Nullen aufgefüllt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:137
 msgid "``-``"
-msgstr "``-``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:137
 msgid "**Pad to the right** rather than the left."
-msgstr "**Nach rechts auffüllen** statt nach links."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:139
 msgid "``*``"
-msgstr "``*``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:139
 msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
-"**Dynamisches Auffüllen**, erwarte zusätzlichen ganzzahligen Parameter nach "
-"``.`` um den Abstand oder die Genauigkeit zu definieren, siehe auch `dynamic "
-"padding`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "Padding"
-msgstr "Abstand"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:147
 msgid ""
@@ -1457,24 +1264,16 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
-"Die Zeichen ``.`` (*Punkt*), ``*`` (*Sternchen*), ``-`` (*Minus*) und die "
-"Ziffern (``0``-``9``) werden für das Auffüllen benutzt. Dies erlaubt die "
-"Ausgabe mehrerer Werte mit vertikaler Ausrichtung wie in einer Spalte, "
-"vorausgesetzt, eine Schrift mit festgelegter Breite wird verwendet."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:152
 msgid "To pad a string to a minimum length, add an integer to the specifier::"
 msgstr ""
-"Um eine Zeichenfolge auf eine Minimallänge aufzufüllen, füge eine Ganzzahl "
-"zu dem Bezeichner hinzu::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space::"
 msgstr ""
-"Falls die Ganzzahl mit ``0`` beginnt, werden die Ganzzahlwerte mit Nullen "
-"aufgefüllt anstatt mit Leerzeichen::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:164
 msgid ""
@@ -1485,17 +1284,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:176
-#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment::"
 msgstr ""
-"Das Zeichen ``-`` führt zu einem Auffüllen der Abstände von links anstatt "
-"von rechts und kann für rechtsbündigen Text verwendet werden::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:185
 msgid "Dynamic padding"
-msgstr "Dynamischer Abstand"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:187
 msgid ""
@@ -1510,12 +1306,10 @@ msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``::"
 msgstr ""
-"Es ist weiterhin möglich, in Ganzzahl-Platzhaltern mit Nullen aufzufüllen, "
-"indem ``0`` vor ``*`` eingefügt wird::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:206
 msgid "Escape sequence"
-msgstr "Escape-Sequenz"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:208
 msgid ""
@@ -1523,63 +1317,56 @@ msgid ""
 "to avoid reading it as a placeholder. This is done by doubling the "
 "character::"
 msgstr ""
-"Um das Zeichen ``%`` selbst in einen Format-Zeichenkette einzubauen, muss "
-"dieses „escaped“ werden, damit es nicht als Platzhalter aufgefasst wird. "
-"Dies schafft man durch das Verdoppeln des Zeichens::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:217
 msgid "Format method examples"
-msgstr "Beispiele für Formatierungsverfahren"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:219
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
-"Im Folgenden sind einige Beispiele für die verschiedenen Aufrufarten der "
-"``String.format``-Methode."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
 msgid "**Type**"
-msgstr "**Typ**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 msgid "**Style**"
-msgstr "**Stil**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:257
 msgid "**Example**"
-msgstr "**Beispiel**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:257
 msgid "**Result**"
-msgstr "**Ergebnis**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:226
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:228
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:230
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:195
 msgid "Dictionary"
-msgstr "Wörterbuch"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:226
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:232
 msgid "key"
-msgstr "Schlüsselbild"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:226
 msgid ""
 "\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})"
 msgstr ""
-"\"Hallo, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
-"\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:226
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:228
@@ -1588,27 +1375,26 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:234
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:236
 msgid "Hi, Godette v3.0!"
-msgstr "Hallo, Godette v3.0!"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:228
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:234
 msgid "index"
-msgstr "Index"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:228
 msgid "\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
-msgstr "\"Hallo, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:230
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:236
 msgid "mix"
-msgstr "Mix"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:230
 msgid ""
 "\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
 msgstr ""
-"\"Hallo, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:232
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:234
@@ -1616,61 +1402,57 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:174
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:182
 msgid "Array"
-msgstr "Array"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:232
 msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
 "\"])"
 msgstr ""
-"\"Hallo, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":"
-"\"Godette\"])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:234
 msgid "\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
-msgstr "\"Hallo, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:236
 msgid "\"Hi, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
-msgstr "\"Hallo, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:239
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
-"Platzhalter können auch bei ``String.format`` angepasst werden, hier einige "
-"Beispiele zu dieser Funktionalität."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "Infix (default)"
-msgstr "Infix (Standard)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
-msgstr "\"Hallo, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "Hi, Godette v3.0"
-msgstr "Hallo, Godette v3.0"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid "Postfix"
-msgstr "Postfix"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid "\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
-msgstr "\"Hallo, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "Prefix"
-msgstr "Prefix"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
-msgstr "\"Hallo, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:253
 msgid ""
@@ -1678,25 +1460,19 @@ msgid ""
 "useful as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
-"Es kann sinnvoll sein, die ``String.format`` Methode mit dem ``%`` Operator "
-"zu kombinieren, da mit ``String.format`` keine Möglichkeit besteht, die "
-"Repräsentation von Zahlen zu beeinflussen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
 "\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % 3.114})"
 msgstr ""
-"\"Hallo, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
-"3.114})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid "Hi, Godette v3.11"
-msgstr "Hallo, Godette v3.11"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
-#, fuzzy
 msgid "GDScript Style Guide"
-msgstr "GDScript Style Guide"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:7
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:144
@@ -1747,7 +1523,7 @@ msgstr "GDScript Style Guide"
 #: ../../docs/tutorials/shading/shading_language.rst:1098
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:27
 msgid "Description"
-msgstr "Beschreibung"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:9
 msgid ""
@@ -1756,49 +1532,38 @@ msgid ""
 "projects, discussions, and tutorials. Hopefully, this will also encourage "
 "development of auto-formatting tools."
 msgstr ""
-"Dieser Style Guide listet Konventionen zum Schreiben von elegantem GDScript. "
-"Das Ziel ist, einen dazu zu ermutigen, sauberen und lesbaren Code zu "
-"schreiben und die Konsistenz aller Projekte, Diskussionen und Tutorials zu "
-"fördern. Hoffentlich wird dies auch die Entwicklung von Auto-"
-"Formatierungswerkzeugen ankurbeln."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:14
 msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
 msgstr ""
-"Da GDScript Python ähnelt, ist dieser Guide inspiriert von Python's `PEP 8 "
-"<https://www.python.org/dev/peps/pep-0008/>`__ Programmier-Styleguide."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
 msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
-"Godot's integrierter Skripteditor verwendet standardmäßig einige dieser "
-"Konventionen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
 msgid "Code Structure"
-msgstr "Code Struktur"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:25
 msgid "Indentation"
-msgstr "Einrückungen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:27
 msgid "Indent type: Tabs *(editor default)*"
-msgstr "Einrücksungstyp: Tabs *(Standard)*"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:29
 msgid "Indent size: 4 *(editor default)*"
-msgstr "Einrückungsgroße: 4 *(Standard)*"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:31
 msgid "Each indent level should be one greater than the block containing it."
 msgstr ""
-"Jede Einrückungsebene sollte um eins größer sein als die des umgebenden "
-"Blocks."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:33
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:53
@@ -1806,7 +1571,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
 msgid "**Good**"
-msgstr "**Gut**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
@@ -1814,142 +1579,119 @@ msgstr "**Gut**"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
 msgid "**Bad**"
-msgstr "**Schlecht**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
 msgid ""
 "Use 2 indent levels to distinguish continuation lines from regular code "
 "blocks."
 msgstr ""
-"Rücke 2 Ebenen ein, um fortgesetzte Zeilen von regulären Codeblöcken zu "
-"unterscheiden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:70
 msgid "Blank lines"
-msgstr "Leere Zeilen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:72
 msgid "Surround functions and class definitions by a blank line."
 msgstr ""
-"Vor und nach einer Funktion bzw. Klassendefinition sollte eine Leerzeile "
-"sein."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:74
 msgid "Use one blank line inside functions to separate logical sections."
 msgstr ""
-"Verwende eine Leerzeile um logische Abschnitte innerhalb einer Funktion zu "
-"separieren."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:77
 msgid "One Statement per Line"
-msgstr "Eine Anweisung pro Zeile"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:79
 msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "with a single line conditional statement (except with the ternary operator)!"
 msgstr ""
-"Schreibe niemals mehrere Anweisungen in einer Zeile. Nein, liebe C "
-"Programmierer, auch keine einzeiligen bedingten Anweisungen (außer der "
-"Ternäroperator)!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Avoid Unnecessary Parentheses"
-msgstr "Vermeide unnötige Klammern"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:104
 msgid ""
 "Avoid parentheses in expressions and conditional statements. Unless "
 "necessary for order of operations, they only reduce readability."
 msgstr ""
-"Vermeide Klammern in Ausdrücken und Bedingungen. Außer um logische "
-"Reihenfolgen zu bestimmen, sie verringern nur die Lesbarkeit."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:122
 msgid "Whitespace"
-msgstr "Leerzeichen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:124
 msgid ""
 "Always use one space around operators and after commas. Avoid extra spaces "
 "in dictionary references and function calls, or to create \"columns.\""
 msgstr ""
-"Setze immer ein Leerzeichen um Operatoren und nach Kommas. Vermeide "
-"zusätzliche Leerzeichen in Wörterbuch-Referenzen oder Funktionsaufrufen, "
-"oder um „Spalten“ zu erzeugen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
 msgid "**Never!**"
-msgstr "**Niemals!**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
 msgid "Naming Conventions"
-msgstr "Benennungsrichtlinien"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:158
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, which is ugly."
 msgstr ""
-"Diese Benennungsrichtlinien folgen dem Godot Engine Style. Bei "
-"Nichtbeachtung wird dein Code mit den eingebauten Bennennungsrichtlinien "
-"kollidieren, was hässlich ist."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:163
 msgid "Classes and Nodes"
-msgstr "Klassen und Nodes"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:165
 msgid "Use PascalCase: ``extends KinematicBody``"
-msgstr "Nutze PascalCase: ``extends KinematicBody``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:167
 msgid "Also when loading a class into a constant or variable:"
 msgstr ""
-"Außerdem beim abspeichern einer Klasse in einer Konstante oder Variable:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:174
 msgid "Functions and Variables"
-msgstr "Funktionen und Variablen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
 msgid "Use snake\\_case: ``get_node()``"
-msgstr "snake\\_case benutzen: ``get_node()``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
 msgstr ""
-"Benenne virtuelle Methoden (Funktionen, die der Nutzer überschreiben muss), "
-"private Funktionen und private Variablen mit führendem Unterstrich: ``func "
-"_ready()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1189
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr "Signale"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:185
 msgid "Use past tense:"
-msgstr "Vergangenheitsform benutzen:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:508
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:211
 #: ../../docs/development/cpp/object_class.rst:94
 msgid "Constants"
-msgstr "Konstanten"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:195
 msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
 msgstr ""
-"Verwende  CONSTANT\\_CASE, alles in Großbuchstaben, mit einem Unterstrich "
-"zur Worttrennung: ``const MAX_SPEED = 200``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -1962,7 +1704,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
-msgstr "GDScript"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
 msgid ""
@@ -1973,17 +1715,10 @@ msgid ""
 "integrated with Godot Engine, allowing great flexibility for content "
 "creation and integration."
 msgstr ""
-"*GDScript* ist eine high-level, dynamisch typisierte Programmiersprache zum "
-"Erstellen von Inhalten. Es verwendet eine ähnliche Syntax wie `Python "
-"<https://de.wikipedia.org/wiki/Python_%28Programmiersprache%29>`_ (Blöcke "
-"basieren auf Einrückung und viele Schlüsselwörter sind ähnlich). Es zielt "
-"auf eine Optimierung für und eine enge Integration mit der Godot Engine ab, "
-"um große Flexibilität bei der Erstellung von Inhalten und deren Integration "
-"zu ermöglichen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
-msgstr "Geschichte"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:19
 msgid ""
@@ -1993,12 +1728,6 @@ msgid ""
 "of code. After some experiments with `Python <http://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
-"In den Anfängen nutzte die Engine noch `Lua <http://www.lua.org>`__ als "
-"Skriptsprache. Lua ist schnell, aber die Sprachanbindung an ein "
-"objektorientiertes System zu erstellen (durch Verwendung von Fallbacks) war "
-"komplex, langsam und beanspruchte enorm viel Code. Nach einigen Experimenten "
-"mit `Python <http://www.python.org>`__ stellte sie sich auch als schwierig "
-"einzubetten heraus."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid ""
@@ -2007,53 +1736,36 @@ msgid ""
 "point, it became evident that a custom scripting language could more "
 "optimally make use of Godot's particular architecture:"
 msgstr ""
-"Die letzte Skriptsprache von Dritten, die mit ausgelieferten Spielen "
-"verwendet wurde, war `Squirrel <http://squirrel-lang.org>`__, aber diese "
-"wurde ebenfalls fallen gelassen. An diesem Punkt wurde klar, dass eine "
-"eigene Skriptsprache viel besser Nutzen aus Godots Architektur schlagen "
-"konnte:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:30
 msgid ""
 "Godot embeds scripts in nodes. Most languages are not designed with this in "
 "mind."
 msgstr ""
-"Godot bettet nämlich Skripte in Nodes ein. Die meisten Sprachen sind nicht "
-"in diesem Sinne entworfen worden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:32
 msgid ""
 "Godot uses several built-in data types for 2D and 3D math. Script languages "
 "do not provide this, and binding them is inefficient."
 msgstr ""
-"Godot nutzt mehrere eingebaute Datentypen für 2D- und 3D-Mathematik. "
-"Skriptsprachen bieten dies jedoch nicht an, und sie aus anderen Sprachen "
-"anzubinden ist ineffizient."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:34
 msgid ""
 "Godot uses threads heavily for lifting and initializing data from the net or "
 "disk. Script interpreters for common languages are not friendly to this."
 msgstr ""
-"Godot benutzt Threads in großem Maße, um Daten vom Netzwerk oder der "
-"Festplatte zu holen und zu initialisieren. Skriptinterpreter für übliche "
-"Sprachen taugen dafür nicht."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:37
 msgid ""
 "Godot already has a memory management model for resources, most script "
 "languages provide their own, which results in duplicate effort and bugs."
 msgstr ""
-"Godot hat bereits ein Speichermanagement-Modell für Ressourcen; die meisten "
-"Skriptsprachen bieten eigene an, was zu doppeltem Aufwand und Bugs führt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:40
 msgid ""
 "Binding code is always messy and results in several failure points, "
 "unexpected bugs and generally low maintainability."
 msgstr ""
-"Code für Sprachanbindungen ist immer unordentlich und führt zu mehreren "
-"Schwachstellen, unerwarteten Bugs und allgemein schlechter Wartbarkeit."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:43
 msgid ""
@@ -2062,22 +1774,16 @@ msgid ""
 "for Lua and Squirrel, while having equal functionality. With time, having a "
 "built-in language has proven to be a huge advantage."
 msgstr ""
-"Das Ergebnis dieser Überlegungen ist *GDScript*. Die Sprache und der "
-"Interpreter für GDScript waren am Ende kleiner als der Sprachanbindungs-Code "
-"für Lua und Squirrel, trotz gleicher Funktionalität. Einge eingebaute "
-"Sprache zu haben stellte sich mit der Zeit als riesiger Vorteil heraus."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:49
 msgid "Example of GDScript"
-msgstr "Beispiel von GDScript"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:51
 msgid ""
 "Some people can learn better by just taking a look at the syntax, so here's "
 "a simple example of how GDScript looks."
 msgstr ""
-"Manche Leute lernen besser, indem sie einfach die Syntax betrachten, deshalb "
-"hier ein Beispiel wie GDScript aussieht."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:118
 msgid ""
@@ -2085,13 +1791,10 @@ msgid ""
 "+, or C# but never used a dynamically typed one before, it is advised you "
 "read this tutorial: :ref:`doc_gdscript_more_efficiently`."
 msgstr ""
-"Wenn du bereits Erfahrung mit statisch typisierten Sprachen wie C, C++ oder "
-"C# hast, aber bisher keine dynamisch typisierte verwendet hast, wird das "
-"Lesen dieses Tutorials empfohlen: :ref:`doc_gdscript_more_efficiently`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:123
 msgid "Language"
-msgstr "Sprache"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:125
 msgid ""
@@ -2099,13 +1802,10 @@ msgid ""
 "methods are available to arrays or other objects, should be looked up in the "
 "linked class descriptions."
 msgstr ""
-"Im Folgenden sei ein Überblick über GDScript gegeben. Details, wie welche "
-"Methoden es für Arrays oder andere Objekte gibt, sollten in den verlinkten "
-"Klassenbeschreibungen nachgeschlagen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:130
 msgid "Identifiers"
-msgstr "Identifizierer"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:132
 msgid ""
@@ -2114,326 +1814,306 @@ msgid ""
 "identifier. Additionally, identifiers must not begin with a digit. "
 "Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
 msgstr ""
-"Jede Zeichenkette, die beschränkt ist auf Zeichen des Alphabets (``a`` bis "
-"``z`` und ``A`` bis ``Z``), Ziffern (``0`` bis ``9``) und ``_``, ist ein "
-"gültiger Indentifizierer. Zusätzlich dürfen Identifizierer nicht mit einer "
-"Ziffer beginnen. Bei Identifizierern wird Groß- und Kleinschreibung beachtet "
-"(``foo`` unterscheidet sich von ``FOO``)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:138
 msgid "Keywords"
-msgstr "Schlüsselwörter"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:140
 msgid ""
 "The following is the list of keywords supported by the language. Since "
 "keywords are reserved words (tokens), they can't be used as identifiers."
 msgstr ""
-"Das Folgende ist eine Auflistung von der Sprache unterstützter "
-"Schlüsselwörter. Weil Schlüsselwörter reservierte Begriffe sind, können sie "
-"nicht als Bezeichner verwendet werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:144
 msgid "Keyword"
-msgstr "Schlüsselwort"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:146
 msgid "if"
-msgstr "if"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:146
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:148
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:150
 msgid "See `if/else/elif`_."
-msgstr "Siehe `if/else/elif`_."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:148
 msgid "elif"
-msgstr "elif"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:150
 msgid "else"
-msgstr "else"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:152
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:663
 msgid "for"
-msgstr "for"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:152
 msgid "See for_."
-msgstr "Siehe for_."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:154
 msgid "do"
-msgstr "do"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:154
 msgid "Reserved for future implementation of do...while loops."
-msgstr "Reserviert für zukünftige Implementationen von do...while Schleifen."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:156
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:652
 msgid "while"
-msgstr "while"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:156
 msgid "See while_."
-msgstr "Siehe while_."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:158
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:692
 msgid "match"
-msgstr "match"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:158
 msgid "See match_."
-msgstr "Siehe match_."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:160
 msgid "switch"
-msgstr "switch"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:160
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:162
 msgid "Reserved for future implementation."
-msgstr "Reserviert für zukünftige Implementationen."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:162
 msgid "case"
-msgstr "case"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 msgid "break"
-msgstr "break"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
-msgstr "Beendet die Ausführung der aktuellen ``for`` oder ``while`` Schleife."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 msgid "continue"
-msgstr "continue"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 msgid ""
 "Immediately skips to the next iteration of the ``for`` or ``while`` loop."
 msgstr ""
-"Springt sofort zur nächsten Iteration der ``for`` oder ``while`` Schleife."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 msgid "pass"
-msgstr "pass"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 msgid ""
 "Used where a statement is required syntactically but execution of code is "
 "undesired, e.g. in empty functions."
 msgstr ""
-"Benutzt man, wo eine Anweisung zwar syntaktisch benötigt wird, aber die "
-"Ausführung von Code eigentlich ungewünscht ist, z.B. in leeren Funktionen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 msgid "return"
-msgstr "return"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 msgid "Returns a value from a function."
-msgstr "Gibt einen Wert aus einer Funktion zurück."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 msgid "class"
-msgstr "class"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 msgid "Defines a class."
-msgstr "Definiert eine Klasse."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "extends"
-msgstr "extends"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "Defines what class to extend with the current class."
 msgstr ""
-"Definiert die Basisklasse, von welcher diese Klasse abgeleitet werden soll."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 #: ../../docs/tutorials/i18n/locales.rst:360
 msgid "is"
-msgstr "is"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid "Tests whether a variable extends a given class."
-msgstr "Testet, ob eine Variable von einer gegeben Klasse abgeleitet ist."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "tool"
-msgstr "tool"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "Executes the script in the editor."
-msgstr "Führt ein Skript im Editor aus."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "signal"
-msgstr "signal"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "Defines a signal."
-msgstr "Definiert ein Signal."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "func"
-msgstr "func"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "Defines a function."
-msgstr "Definiert eine Funktion."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "static"
-msgstr "static"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "Defines a static function. Static member variables are not allowed."
 msgstr ""
-"Definiert eine statische Funktion. Statische Member-Variablen sind nicht "
-"erlaubt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:186
 msgid "const"
-msgstr "const"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:186
 msgid "Defines a constant."
-msgstr "Definiert eine Konstante."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "enum"
-msgstr "enum"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "Defines an enum."
-msgstr "Definiert eine Aufzählung."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "var"
-msgstr "var"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "Defines a variable."
-msgstr "Definiert eine Variable."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "onready"
-msgstr "onready"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid ""
 "Initializes a variable once the Node the script is attached to and its "
 "children are part of the scene tree."
 msgstr ""
-"Initialisiert eine Variable sobald das Node, an dem das Skript angehängt "
-"wurde, und ihre Unterobjekte Teil des Szenenbaums sind."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "export"
-msgstr "export"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid ""
 "Saves a variable along with the resource it's attached to and makes it "
 "visible and modifiable in the editor."
 msgstr ""
-"Speichert eine Variable zusammen mit der Ressource, an der sie hängt, und "
-"macht sie im Editor sicht- und modifizierbar."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "setget"
-msgstr "setget"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "Defines setter and getter functions for a variable."
-msgstr "Definiert setter und getter Funktionen für eine Variable."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "breakpoint"
-msgstr "breakpoint"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "Editor helper for debugger breakpoints."
-msgstr "Helfer für den Editor für Haltepunkte des Debuggers."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid "Operators"
-msgstr "Operatoren"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid ""
 "The following is the list of supported operators and their precedence (TODO, "
 "change since this was made to reflect python operators)"
 msgstr ""
-"Das folgende ist einer Liste der unterstützen Operatoren in ihre "
-"Auswertungsreihenfolge"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:208
 msgid "**Operator**"
-msgstr "**Operator**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:208
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:32
 msgid "**Description**"
-msgstr "**Beschreibung**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "``x[index]``"
-msgstr "``x[index]``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "Subscription, Highest Priority"
-msgstr "Indexierung, höchste Priorität"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "``x.attribute``"
-msgstr "``x.attribute``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Attribute Reference"
-msgstr "Referenzierung eines Attributs"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "``is``"
-msgstr "``is``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "Instance Type Checker"
-msgstr "Prüfung des Instanztyps"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "``~``"
-msgstr "``~``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "Bitwise NOT"
-msgstr "Bitweise Negation"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "``-x``"
-msgstr "``-x``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "Negative"
-msgstr "Negativ"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "``*`` ``/`` ``%``"
-msgstr "``*`` ``/`` ``%``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "Multiplication / Division / Remainder"
-msgstr "Multiplikation / Division / Modulus (Restbetrag)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid ""
@@ -2442,236 +2122,223 @@ msgid ""
 "instead of 0.1. If at least one of the operands is a float, then the result "
 "is a float: float(1)/10 or 1.0/10 return both 0.1."
 msgstr ""
-"BEACHTE: Das Ergebnis dieser Operation hängt von den Operandentypen ab. Wenn "
-"beide Ganzzahlen sind, ist das Ergebnis auch eine Ganzzahl. Das heißt, 1/10 "
-"liefert 0 statt 0.1. Wenn mindestens einer der Operanden eine Fließkommazahl "
-"ist, ist es das Ergebnis ebenfalls: float(1)/10 oder 1.0/10 liefern beide "
-"0.1."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:231
 msgid "``+`` ``-``"
-msgstr "``+`` ``-``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:231
 msgid "Addition / Subtraction"
-msgstr "Addition / Subtraktion"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:233
 msgid "``<<`` ``>>``"
-msgstr "``<<`` ``>>``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:233
 msgid "Bit Shifting"
-msgstr "Bit-Schieben"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:235
 msgid "``&``"
-msgstr "``&``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:235
 msgid "Bitwise AND"
-msgstr "Bitweises UND"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:237
 msgid "``^``"
-msgstr "``^``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:237
 msgid "Bitwise XOR"
-msgstr "Bitweises exklusiv-ODER (XOR)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:239
 msgid "``|``"
-msgstr "``|``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:239
 msgid "Bitwise OR"
-msgstr "Bitweises (inklusiv-) ODER"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:241
 msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
-msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:241
 msgid "Comparisons"
-msgstr "Vergleiche"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:243
 msgid "``in``"
-msgstr "``in``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:243
 msgid "Content Test"
-msgstr "Prüfung auf „enthält“"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:245
 msgid "``!`` ``not``"
-msgstr "``!`` ``not``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:245
 msgid "Boolean NOT"
-msgstr "Boolsches NICHT"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:247
 msgid "``and`` ``&&``"
-msgstr "``and`` ``&&``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:247
 msgid "Boolean AND"
-msgstr "Boolsches UND"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
 msgid "``or`` ``||``"
-msgstr "``or`` ``||``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:249
 msgid "Boolean OR"
-msgstr "Boolsches ODER"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
 msgid "``if x else``"
-msgstr "``if x else``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:251
-#, fuzzy
 msgid "Ternary if/else"
-msgstr "Bedingte (ternäre) if/else Anweisung"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
-msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "Assignment, Lowest Priority"
-msgstr "Zuweisung, niedrigste Priorität"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:257
 msgid "Literals"
-msgstr "Literale"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:260
 msgid "**Literal**"
-msgstr "**Literal**"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "``45``"
-msgstr "``45``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:262
 msgid "Base 10 integer"
-msgstr "Dezimale Ganzzahl (Basis 10)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "``0x8F51``"
-msgstr "``0x8F51``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:264
 msgid "Base 16 (hex) integer"
-msgstr "Hexadezimale Ganzzahl (Basis 16)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "``3.14``, ``58.1e-10``"
-msgstr "``3.14``, ``58.1e-10``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "Floating point number (real)"
-msgstr "Fließkommazahl (reell)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "``\"Hello\"``, ``\"Hi\"``"
-msgstr "``\"Hallo\"``, ``\"Hey\"``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "Strings"
-msgstr "Zeichenketten"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
 msgid "``\"\"\"Hello, Dude\"\"\"``"
-msgstr "``\"\"\"Hey, Kumpel\"\"\"``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:270
 msgid "Multiline string"
-msgstr "Mehrzeilige Zeichenkette"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
 msgid "``@\"Node/Label\"``"
-msgstr "``@\"Node/Label\"``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:272
 msgid "NodePath or StringName"
-msgstr "NodePath oder StringName"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "Comments"
-msgstr "Kommentare"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
 msgstr ""
-"Alles von einem ``#`` bis zum Ende der Zeile wird ignoriert und als "
-"Kommentar aufgefasst."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "Built-in types"
-msgstr "Eingebaute Typen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:300
 msgid "Basic built-in types"
-msgstr "Einfache eingebaute Typen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:302
 msgid "A variable in GDScript can be assigned to several built-in types."
 msgstr ""
-"Eine Variable in GDScript kann mehreren eingebauten Typen zugewiesen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:305
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "null"
-msgstr "null"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:307
 msgid ""
 "``null`` is an empty data type that contains no information and can not be "
 "assigned any other value."
 msgstr ""
-"``null`` ist ein leerer Datentyp, der keine Information enthält und dem kein "
-"anderer Wert zugewiesen werden kann."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:311
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 msgid "bool"
-msgstr "bool"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:313
 msgid "The Boolean data type can only contain ``true`` or ``false``."
-msgstr "Der Boolean-Datentyp kann nur ``true`` oder ``false`` enthalten."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:316
 msgid "int"
-msgstr "int"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:318
 msgid ""
 "The integer data type can only contain integer numbers, (both negative and "
 "positive)."
 msgstr ""
-"Der Ganzzahl-Datentyp int kann nur ganzzahlige Zahlen enthalten (positiv und "
-"negativ)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:322
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "float"
-msgstr "float"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:324
 msgid "Used to contain a floating point value (real numbers)."
-msgstr "Enthält eine Fließkommazahl (reelle Zahlen)."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:327
 msgid ":ref:`String <class_String>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:329
 msgid ""
@@ -2680,20 +2347,14 @@ msgid ""
 "wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript supports :ref:`format "
 "strings aka printf functionality <doc_gdscript_printf>`."
 msgstr ""
-"Eine Sequenz von Zeichen im `Unicode-Format <https://de.wikipedia.org/wiki/"
-"Unicode>`_. Zeichenketten können die `Standard C Escape-Sequenzen <https://"
-"de.wikipedia.org/wiki/Escape-"
-"Sequenz#In_C_und_verwandten_Programmiersprachen>`_ enthalten. GDScript "
-"unterstützt :ref:`Format-Zeichenketten alias printf Funktionalität "
-"<doc_gdscript_printf>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:335
 msgid "Vector built-in types"
-msgstr "eingebaute Vektor-Typen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:338
 msgid ":ref:`Vector2 <class_Vector2>`"
-msgstr ":ref:`Vector2 <class_Vector2>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:340
 msgid ""
@@ -2703,7 +2364,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:344
 msgid ":ref:`Rect2 <class_Rect2>`"
-msgstr ":ref:`Rect2 <class_Rect2>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:346
 msgid ""
@@ -2713,7 +2374,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:350
 msgid ":ref:`Vector3 <class_Vector3>`"
-msgstr ":ref:`Vector3 <class_Vector3>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
 msgid ""
@@ -2723,57 +2384,46 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:356
 msgid ":ref:`Transform2D <class_Transform2D>`"
-msgstr ":ref:`Transform2D <class_Transform2D>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:358
 msgid "3x2 matrix used for 2D transforms."
-msgstr "Eine 3x2 Matrix, welche für 2D Transformationen verwendet wird."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:361
 msgid ":ref:`Plane <class_Plane>`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:363
-#, fuzzy
 msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
 msgstr ""
-"3D Ebenentyp in Einheitsform, welcher ein ``normal`` Vektor Feld und ein "
-"``d`` Skalardistanz Feld besitzt."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:367
 msgid ":ref:`Quat <class_Quat>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:369
-#, fuzzy
 msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
 "for interpolating rotations."
 msgstr ""
-"Quaternion ist ein Datentyp, welcher für die Repräsentation von 3D "
-"Rotationen verwendet wird. Er ist sehr nützlich für das Interpolieren von "
-"Rotationen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:373
 msgid ":ref:`AABB <class_AABB>`"
-msgstr ":ref:`AABB <class_AABB>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:375
-#, fuzzy
 msgid ""
 "Axis-aligned bounding box (or 3D box) contains 2 vectors fields: "
 "``position`` and ``size``. Alternatively contains an ``end`` field which is "
 "``position+size``."
 msgstr ""
-"Axis-aligned bounding box (oder 3D Box) besitzen 2 Vektorfelder: "
-"``position`` und ``size``. Besitzt alternativ ein ``end`` Feld, welches "
-"``position+size`` entspricht."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:380
 msgid ":ref:`Basis <class_Basis>`"
-msgstr ":ref:`Basis <class_Basis>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:382
 msgid ""
@@ -2783,7 +2433,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:387
 msgid ":ref:`Transform <class_Transform>`"
-msgstr ":ref:`Transform <class_Transform>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:389
 msgid ""
@@ -2792,37 +2442,31 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:393
 msgid "Engine built-in types"
-msgstr "In die Engine eingebaute Typen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:396
 msgid ":ref:`Color <class_Color>`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:398
-#, fuzzy
 msgid ""
 "Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
 msgstr ""
-"Der Color Datentyp besitzt jeweils ein ``r``, ein ``g``, ein ``b`` und ein "
-"``a`` Feld. Es kann auch mit ``h``, ``s`` und ``v``, welche für Farbwert/"
-"Farbsättigung/Dunkelstufe stehen, aufgerufen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:402
 msgid ":ref:`NodePath <class_NodePath>`"
-msgstr ":ref:`NodePath <class_NodePath>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
 msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
 msgstr ""
-"Hauptsächlich im Szenen-System genutzter kompilierter Pfad zu einem Knoten. "
-"Zuweisung kann einfach zu und von einer Zeichenkette erfolgen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:408
 msgid ":ref:`RID <class_RID>`"
-msgstr ":ref:`RID <class_RID>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:410
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
@@ -2830,12 +2474,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:413
 msgid ":ref:`Object <class_Object>`"
-msgstr ":ref:`Object <class_Object>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:415
-#, fuzzy
 msgid "Base class for anything that is not a built-in type."
-msgstr "Basisklasse für alles, was kein eingebauter Typ ist."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:418
 msgid "Container built-in types"
@@ -2843,7 +2486,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
 msgid ":ref:`Array <class_Array>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:423
 msgid ""
@@ -2868,50 +2511,40 @@ msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
-":ref:`PoolByteArray <class_PoolByteArray>`: Ein Array aus Bytes (Integer von "
-"0 bis 255)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:445
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
-msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: Ein Array aus ganzen Zahlen."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:446
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
 msgstr ""
-":ref:`PoolRealArray <class_PoolRealArray>`: Ein Array aus Fließkommazahlen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:447
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
 msgstr ""
-":ref:`PoolStringArray <class_PoolStringArray>`: Ein Array aus Zeichenketten."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:448
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`: Ein Array aus :ref:"
-"`Vector2 <class_Vector2>` Objekten."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:449
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
 msgstr ""
-":ref:`PoolVector3Array <class_PoolVector3Array>`: Ein Array aus :ref:"
-"`Vector3 <class_Vector3>` Objekten."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
 msgstr ""
-":ref:`PoolColorArray <class_PoolColorArray>`: Ein Array aus :ref:`Color "
-"<class_Color>` Objekten."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:453
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr ":ref:`Dictionary <class_Dictionary>`"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:455
 msgid "Associative container which contains values referenced by unique keys."
@@ -2934,12 +2567,12 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:491
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
-msgstr "Daten"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:494
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
 msgid "Variables"
-msgstr "Variablen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:496
 msgid ""
@@ -2947,9 +2580,6 @@ msgid ""
 "with the ``var`` keyword and may, optionally, be assigned a value upon "
 "initialization."
 msgstr ""
-"Variablen können als Klassen-Member oder lokal in Funktionen existieren. Sie "
-"werden mit dem Schlüsselwort ``var`` erzeugt und können optional mit einem "
-"Wert initialisiert werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:510
 msgid ""
@@ -2959,15 +2589,13 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:524
 msgid "Enums"
-msgstr "Enumeratoren (Aufzählungen)"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:526
 msgid ""
 "Enums are basically a shorthand for constants, and are pretty useful if you "
 "want to assign consecutive integers to some constant."
 msgstr ""
-"Enumeratoren sind im Grunde ein Kürzel für Konstanten und sind nützlich, "
-"wenn aufeinanderfolgende Ganzzahlen Kontanten zugeordnet werden sollen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:529
 msgid ""
@@ -2979,7 +2607,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 #: ../../docs/tutorials/shading/shading_language.rst:255
 msgid "Functions"
-msgstr "Funktionen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:552
 msgid ""
@@ -2997,16 +2625,13 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:568
 msgid "Referencing Functions"
-msgstr "Funktionen referenzieren"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:570
 msgid ""
 "To call a function in a *base class* (i.e. one ``extend``-ed in your current "
 "class), prepend ``.`` to the function name:"
 msgstr ""
-"Um eine Funktion einer *Basisklasse* (d.h. die aktuelle Klasse erweitert "
-"eine Basisklasse mit ``extend``), muss ``.`` dem Funktionsnamen "
-"vorangestellt werden:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:577
 msgid ""
@@ -3030,15 +2655,10 @@ msgid ""
 "are called in all base classes automatically. So there is only a need to "
 "call the function explicitly when overloading them in some way."
 msgstr ""
-"Beachte, dass Standard-Funktionen wie ``_init`` und die meisten "
-"Benachrichtigungen wie ``_enter_tree``, ``_exit_tree``, ``_process``, "
-"``_physics_process``, usw. in allen Basisklassen automatisch aufgerufen "
-"werden. Die Funktionen explizit aufzurufen ist also nur dann notwendig, wenn "
-"sie in irgendeiner Weise überladen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:602
 msgid "Static functions"
-msgstr "Statische Funktionen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:604
 msgid ""
@@ -3046,14 +2666,10 @@ msgid ""
 "access to the instance member variables or ``self``. This is mainly useful "
 "to make libraries of helper functions:"
 msgstr ""
-"Eine Funktion kann als statisch deklariert werden. Wenn eine Funktion "
-"statisch ist, hat sie keinen Zugriff auf die Member der Instanz oder "
-"``self``. Dies ist hauptsächlich für Bibliotheken und Hilfsfunktionen "
-"nützlich:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:615
 msgid "Statements and control flow"
-msgstr "Anweisungen und Kontrollstrukturen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:617
 msgid ""
@@ -3064,7 +2680,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:622
 msgid "if/else/elif"
-msgstr "if/else/elif"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:624
 msgid ""
@@ -3104,42 +2720,36 @@ msgid ""
 "equivalent of the ``switch`` statement found in many other languages but "
 "offers some additional features."
 msgstr ""
-"Eine ``match``-Anweisung benutzt man, um die Ausführung des Programms zu "
-"verzweigen. Sie ist äquivalent zur ``switch``-Anweisung, wie sie aus vielen "
-"anderen Sprachen bekannt ist, aber bietet so manche zusätzliche "
-"Funktionalität."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:697
 msgid "Basic syntax:"
-msgstr "Grundlegende Syntax:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:710
 msgid "**Crash-course for people who are familiar to switch statements**:"
-msgstr "**Crashkurs für jene, die mit switch-Anweisungen vertraut sind**:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:712
 msgid "Replace ``switch`` with ``match``"
-msgstr "Ersetze ``switch`` mit ``match``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:713
 msgid "Remove ``case``"
-msgstr "Entferne ``case``"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:714
 msgid ""
 "Remove any ``break``'s. If you don't want to ``break`` by default you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
-"Entfernt jedes ``break``. Sollte das standardmäßige ``break`` ungewünscht "
-"sein, so kann durch ein ``continue`` ein Fortfahren erzielt werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:715
 msgid "Change ``default`` to a single underscore."
-msgstr "Ändere ``default`` zu einem einzelnen Unterstrich."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:718
 msgid "**Control flow**:"
-msgstr "**Kontrollfluss**:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:720
 msgid ""
@@ -3149,48 +2759,40 @@ msgid ""
 "``continue`` to stop execution in the current block and check the ones below "
 "it."
 msgstr ""
-"Die Schemas werden von oben nach unten abgeglichen. Wenn ein Schema passt, "
-"wird der entsprechende Block ausgeführt. Danach setzt die Ausführung unter "
-"der ``match``-Anweisung fort. Wenn stattdessen ein Durchrutschen "
-"(Fallthrough) gewünscht ist, kann durch ein ``continue`` innerhalb eines "
-"Blocks die Ausführung angehalten und in den folgenden gesprungen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:724
 msgid "There are 6 pattern types:"
-msgstr "Es gibt 6 Schematypen:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:736
 msgid "constant pattern"
-msgstr "Konstantes Schema"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:727
 msgid "constant primitives, like numbers and strings ::"
-msgstr "Konstante Primitivtypen, wie Zahlen und Zeichenketten ::"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:748
 msgid "variable pattern"
-msgstr "Variablen-Schema"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:739
 msgid "matches the contents of a variable/enum ::"
-msgstr "gleicht mit dem Inhalt einer Variable oder Aufzählung ab ::"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:762
 msgid "wildcard pattern"
-msgstr "Platzhalter-Schema"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:751
 msgid "This pattern matches everything. It's written as a single underscore."
 msgstr ""
-"Dieses Schema passt auf alles. Es wird als einzelner Unterstrich geschrieben."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:753
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages. ::"
 msgstr ""
-"Es kann als das Äquivalent von ``default`` in einer ``switch``-Anweisung "
-"anderer Sprachen gesehen werden. ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:775
 msgid "binding pattern"
@@ -3276,7 +2878,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:833
 msgid "Classes"
-msgstr "Klassen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:835
 msgid ""
@@ -3288,58 +2890,48 @@ msgid ""
 "the user knowing). In the same way, member variables (including arrays and "
 "dictionaries) are initialized every time an instance is created."
 msgstr ""
-"Standardmäßig ist der Inhalt einer Skriptdatei eine namenlose Klasse und "
-"kann extern nur als Ressource oder Datei referenziert werden. Die Syntax für "
-"Klassen ist absichtlich sehr kompakt und kann nur Membervariablen oder "
-"Funktionen beinhalten. Statische Funktionen sind erlaubt, aber nicht "
-"statische Member (das ist im Sinne der Threadsicherheit, da Skripte in "
-"separaten Threads ohne Kenntnis des Nutzers initialisiert werden können). "
-"Auf die gleiche Weise werden Membervariablen (inklusive Felder und "
-"Wörterbücher) jedesmal initialisiert, wenn eine neue Instanz erstellt wird."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:844
 msgid "Below is an example of a class file."
-msgstr "Unterhalb ist ein Beispiel einer Klassen-Datei."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:856
 msgid "Inheritance"
-msgstr "Vererbung"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:858
 msgid "A class (stored as a file) can inherit from"
-msgstr "Eine Klasse (gespeichert als Datei) kann erben von"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:860
 msgid "A global class"
-msgstr "Einer globalen Klasse"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:861
 msgid "Another class file"
-msgstr "Einer anderen Klassendatei"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:862
 msgid "An inner class inside another class file."
-msgstr "Eine lokale Klasse innerhalb einer anderen Klassendatei."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:864
 msgid "Multiple inheritance is not allowed."
-msgstr "Mehrfache Vererbung ist nicht erlaubt."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:866
 msgid "Inheritance uses the ``extends`` keyword:"
-msgstr "Vererbung benutzt das Schlüsselwort ``extends``:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:880
 msgid ""
 "To check if a given instance inherits from a given class the ``is`` keyword "
 "can be used:"
 msgstr ""
-"Um zu prüfen, ob eine gegebene Instanz von einer gegebenen Klasse erbt, "
-"verwendet man das ``is`` Schlüsselwort:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:895
 msgid "Class Constructor"
-msgstr "Klassen-Konstruktor"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:897
 msgid ""
@@ -3348,32 +2940,24 @@ msgid ""
 "automatically when inheriting a class. So there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
-"Der Konstruktor einer Klasse heißt ``_init`` und wird beim Instanzieren "
-"einer Klasse aufgerufen. Wie vorher erwähnt, werden die Konstruktoren der "
-"Elternklassen automatisch aufgerufen, wenn man von ihnen erbt. Daher muss "
-"man normalerweise ``._init()`` nicht explizit aufrufen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:901
 msgid "If a parent constructor takes arguments, they are passed like this:"
 msgstr ""
-"Wenn der Elternkonstruktor Argumente benötigt, werden sie so übergeben:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:909
 msgid "Inner classes"
-msgstr "Innere Klassen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:911
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
-"Eine Klassendatei kann lokale Klassen beinhalten. Lokale Klassen werden "
-"durch das ``class`` Schlüsselwort definiert. Sie werden mithilfe der "
-"``Klassenname.new()``-Funktion instanziert."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:931
 msgid "Classes as resources"
-msgstr "Klassen als Ressourcen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:933
 msgid ""
@@ -3383,16 +2967,10 @@ msgid ""
 "of a loaded class resource is done by calling the ``new`` function on the "
 "class object::"
 msgstr ""
-"Klassen, die als Datei gespeichert sind, werden als :ref:`resources "
-"<class_GDScript>` behandelt. Sie müssen von der Festplatte geladen werden, "
-"um auf sie in anderen Klassen zuzugreifen. Dies macht man mit den Funktionen "
-"``load`` oder ``preload`` (siehe weiter unten). Das Instanzieren einer "
-"geladenen Klassenressource erledigt man durch Aufruf der ``new``-Funktion "
-"auf dem Klassenobjekt::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
 msgid "Exports"
-msgstr "Exporte"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:951
 msgid ""
@@ -3454,7 +3032,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1076
 msgid "Exporting arrays"
-msgstr "Arrays exportieren"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1078
 msgid ""
@@ -3467,7 +3045,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1104
 msgid "Setters/getters"
-msgstr "Setter/Getter"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1106
 msgid ""
@@ -3510,7 +3088,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1160
 msgid "Tool mode"
-msgstr "Werkzeug-Modus"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1162
 msgid ""
@@ -3523,7 +3101,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1177
 msgid "Memory management"
-msgstr "Speicher-Management"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1179
 msgid ""
@@ -3570,7 +3148,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1249
 msgid "Coroutines"
-msgstr "Co-Routinen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1251
 msgid ""
@@ -3585,7 +3163,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1273
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1297
 msgid "Will print:"
-msgstr "Ausgabe:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1281
 msgid ""
@@ -3594,7 +3172,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
 msgid "Coroutines & signals"
-msgstr "Co-Routinen & Signale"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1308
 msgid ""
@@ -3605,7 +3183,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1324
 msgid "Onready keyword"
-msgstr "Onready Schlüsselwort"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1326
 msgid ""
@@ -3676,7 +3254,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:30
 msgid "Runtime is tiny."
-msgstr "Laufzeit ist gering."
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:31
 msgid "Duck-typing and polymorphism by nature."
@@ -3732,12 +3310,12 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
 msgid "Static:"
-msgstr "Statisch:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:66
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:94
 msgid "Dynamic:"
-msgstr "Dynamisch:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
@@ -3771,15 +3349,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:119
 msgid "C++:"
-msgstr "C++:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:135
 msgid "Java:"
-msgstr "Java:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:153
 msgid "GDScript:"
-msgstr "GDScript:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:165
 msgid ""
@@ -3793,7 +3371,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:173
 msgid "Arrays"
-msgstr "Arrays"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:175
 msgid ""
@@ -3804,7 +3382,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:202
 msgid "And in GDScript:"
-msgstr "Und in GDScript:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:211
 msgid ""
@@ -3886,37 +3464,36 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:362
 msgid "The range() function can take 3 arguments:"
-msgstr "Die range() Funktion nimmt bis zu 3 Argumente an:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:370
 msgid "Some examples:"
-msgstr "Einige Beispiele:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:380
 msgid "Translate to:"
-msgstr "Sind gleichbedeutend mit:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:390
 msgid "And backwards looping is done through a negative counter:"
 msgstr ""
-"Rückwärts durch die Schleife iterieren kann man mit einem negativen Zähler:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:396
 msgid "becomes"
-msgstr "wird zu"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:403
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "While"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:405
 msgid "while() loops are the same everywhere:"
-msgstr "while() Schleifen sind überall gleich:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:416
 msgid "Custom iterators"
-msgstr "Benutzerdefinierte Iteratoren"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:417
 msgid ""
@@ -3925,28 +3502,20 @@ msgid ""
 "and ``_iter_get`` functions in your script. An example implementation of a "
 "forward iterator follows:"
 msgstr ""
-"Du kannst benutzerdefinierte Iteratoren generieren, wenn die vorgegebenen "
-"nicht ganz deinen Anforderungen entsprechen, indem du die ``_iter_init``, "
-"``_iter_next``, und ``_iter_get`` Funktionen der <<Variant class?>> "
-"überschreibst.\n"
-"Es folgt eine Implementierung für einen Vorwärts-Iterator:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:449
 msgid "And it can be used like any other iterator:"
-msgstr "Und er kann wie jeder andere Iterator verwendet werden:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:457
 msgid ""
 "Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
 "nested for-loops that use custom iterators will not work as expected."
 msgstr ""
-"Stelle sicher, dass der Status des Iterators in ``_iter_init`` zurückgesetzt "
-"wird, sonst kann es passieren, dass sich verschachtelte for-loops nicht wie "
-"gewünscht verhalten."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:461
 msgid "Duck typing"
-msgstr "Duck typing"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:463
 msgid ""
@@ -3955,11 +3524,6 @@ msgid ""
 "code design much simpler and straightforward to write, but it's not obvious "
 "how it works."
 msgstr ""
-"Eines der am schwersten zu erfassenden Konzepte, wenn man von einer statisch "
-"typisierten zu einer dynamisch typisierten Sprache wechselt, ist duck "
-"typing. Duck typing macht allgemeines Code-Design viel leichter und "
-"unkomplizierter zu schreiben, aber es ist vielleicht nicht gleich "
-"ersichtlich, wie es funktioniert."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:468
 msgid ""
@@ -4093,7 +3657,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:34
 msgid "Configuring an external editor"
-msgstr "Einen externen Editor konfigurieren"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:36
 msgid ""
@@ -4108,7 +3672,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:45
 msgid "Creating a C# script"
-msgstr "Erstellen eines C# Skripts"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:47
 msgid ""
@@ -4680,7 +4244,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
-msgstr "Funktionen"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
 msgid ""
@@ -4746,9 +4310,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:63
-#, fuzzy
 msgid "C# Signals"
-msgstr "Signale"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:65
 msgid ""
@@ -5181,7 +4744,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr "Selbst"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -5226,7 +4789,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr "Ressourcenpfad"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -5258,7 +4821,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
-msgstr "Bedingung"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
 msgid ""
@@ -5270,7 +4833,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr "Iterator"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""
@@ -5291,7 +4854,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
-msgstr "Rückgabe"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:353
 msgid ""
@@ -5301,7 +4864,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
-msgstr "Sequenz"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:360
 msgid ""
@@ -5328,7 +4891,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
 msgid "Switch"
-msgstr "Switch"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:380
 msgid ""
@@ -5379,7 +4942,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid "Call"
-msgstr "Aufruf"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:415
 msgid ""
@@ -6297,7 +5860,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
-msgstr "Exportieren"
+msgstr "Izvozi"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:4
 msgid "Customizing the Web export HTML page"
@@ -7388,7 +6951,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr "GDNative"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
 msgid "Clipboard synchronisation between engine and operating system"
@@ -7828,7 +7391,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "Format"
-msgstr "Format"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "1 Second of Audio"
@@ -8697,7 +8260,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:212
 msgid "FPS"
-msgstr "FPS"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:214
 msgid ""
@@ -9116,7 +8679,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 #: ../../docs/community/contributing/documentation_guidelines.rst:104
 msgid "License"
-msgstr "Lizenz"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid ""
@@ -9137,7 +8700,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "OS (export)"
@@ -9719,7 +9282,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/external_editor.rst:32
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 msgid "Editor"
-msgstr "Editor"
+msgstr "Urejevalnik"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
@@ -9759,7 +9322,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
-msgstr "Pfad"
+msgstr "Pot"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid ""
@@ -10460,7 +10023,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
-msgstr "Erfolgreich!"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
@@ -10527,7 +10090,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
-msgstr "Animationen"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
@@ -11256,7 +10819,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:35
 msgid "AutoLoad"
-msgstr "Autoload"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:37
 msgid ""
@@ -11537,7 +11100,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:65
 #: ../../docs/community/resources.rst:4
 msgid "Resources"
-msgstr "Ressourcen"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -13475,7 +13038,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:585
 msgid "Main Scene"
-msgstr "Hauptszene"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -13972,7 +13535,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 #: ../../docs/tutorials/shading/shading_language.rst:1077
 msgid "Particles"
-msgstr "Partikel"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid ""
@@ -14240,7 +13803,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "Button"
-msgstr "Schaltfläche"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid "The scene tree should look like this:"
@@ -15600,7 +15163,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
-msgstr "Gruppen"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
 msgid ""
@@ -17579,7 +17142,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Set"
-msgstr "Setzen"
+msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:146
 msgid "Map"
@@ -18018,7 +17581,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:313
 msgid "Future"
-msgstr "Zukunft"
+msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:315
 msgid ""
@@ -18413,7 +17976,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:256
 msgid "Resources:"
-msgstr "Ressourcen:"
+msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:258
 msgid ""
@@ -19193,7 +18756,7 @@ msgstr ""
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:410
 msgid "Tools"
-msgstr "Werkzeuge"
+msgstr "Orodja"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:136
 msgid ""
@@ -19975,7 +19538,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:53
 msgid "Run"
-msgstr "Ausführen"
+msgstr "Zaženi"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:55
 msgid ""
@@ -20978,7 +20541,7 @@ msgstr ""
 
 #: ../../docs/index.rst:36 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr "Allgemein"
+msgstr ""
 
 #: ../../docs/index.rst:44
 msgid "Getting started"
@@ -20994,7 +20557,7 @@ msgstr ""
 
 #: ../../docs/index.rst:90 ../../docs/community/index.rst:2
 msgid "Community"
-msgstr "Gemeinschaft"
+msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
 msgid "Contribute to the Class Reference"
@@ -21360,7 +20923,7 @@ msgstr ""
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
 #: ../../docs/tutorials/io/background_loading.rst:24
 msgid "Usage"
-msgstr "Nutzung"
+msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
 msgid "Result"
@@ -21558,7 +21121,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:280
 msgid "Localization"
-msgstr "Lokalisierung"
+msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:282
 msgid ""
@@ -24218,7 +23781,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 msgid "Key"
-msgstr "Schlüsselbild"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
@@ -24254,7 +23817,7 @@ msgstr "Schlüsselbild"
 #: ../../docs/tutorials/shading/shading_language.rst:420
 #: ../../docs/tutorials/2d/2d_transforms.rst:64
 msgid "Type"
-msgstr "Art"
+msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:244
 msgid "``name``"
@@ -24974,7 +24537,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr "Erweiterungen"
+msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:4
 msgid "Audio Streams"
@@ -25141,7 +24704,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr "Audio"
+msgstr "Zvok"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:43
@@ -27412,7 +26975,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:133
 msgid "Examples"
-msgstr "Beispiele"
+msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:135
 msgid ""
@@ -28973,7 +28536,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid "KEY"
-msgstr "Schlüsselbild"
+msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid "Contains a scancode and unicode value, as well as modifiers."
@@ -29225,7 +28788,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 msgid "Value"
-msgstr "Wert"
+msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "0"
@@ -31379,7 +30942,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"
-msgstr "Mitglieder"
+msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:126
 msgid ""
@@ -34354,7 +33917,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:121
 msgid "Testing"
-msgstr "Testphase"
+msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:123
 msgid ""
@@ -34760,7 +34323,7 @@ msgstr ""
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 #: ../../docs/tutorials/2d/2d_transforms.rst:64
 msgid "Transform"
-msgstr "Transformation"
+msgstr "Preoblikovanje"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:344
 msgid ""
@@ -37188,7 +36751,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
 msgid "Deploy with Remote Debug"
-msgstr "Mit Fern-Fehlerbehebung starten"
+msgstr "Uvajanje z Oddaljenim Razhroščevanjem"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid ""
@@ -37198,7 +36761,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Small Deploy with Network FS"
-msgstr "Kleine Programmdatei über ein Netzwerkdateisystem"
+msgstr "Kratko Uvajanje z Omrežjem FS"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid ""
@@ -37210,7 +36773,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr "Collision Shapes sichtbar"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
@@ -37220,7 +36783,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
-msgstr "Navigation sichtbar"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -37228,7 +36791,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
-msgstr "Szenenänderungen synchronisieren"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:45
 msgid ""
@@ -37239,7 +36802,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr "Skriptänderungen synchronisieren"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
@@ -37267,7 +36830,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
 msgid "Debugger"
-msgstr "Debugger"
+msgstr "Razhroščevalnik"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:68
 msgid "Monitor the game running process."
@@ -37275,7 +36838,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:71
 msgid "Errors"
-msgstr "Fehler"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:73
 msgid "Print out errors when running the game."
@@ -37283,7 +36846,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Profiler"
-msgstr "Profiler"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid "Profiling the performance of the any function call in the running game."
@@ -37291,7 +36854,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:81
 msgid "Monitors"
-msgstr "Monitore"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:83
 msgid ""
@@ -37301,7 +36864,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:86
 msgid "Video Mem"
-msgstr "Grafikspeicher"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
 msgid "Listing the video memory usage of the running game."
@@ -37309,7 +36872,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:91
 msgid "Misc"
-msgstr "Verschiedenes"
+msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:93
 msgid "Miscellaneous options for debug."
@@ -37334,7 +36897,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr "Debuggen"
+msgstr "Razhroščevalnik"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:4
 msgid "Working with 3D skeletons"
@@ -45557,7 +45120,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:324
 msgid "Depth"
-msgstr "Tiefe"
+msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:326
 msgid ""
@@ -46798,7 +46361,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:283
 #: ../../docs/tutorials/animation/index.rst:2
 msgid "Animation"
-msgstr "Animation"
+msgstr "Animacija"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:285
 msgid ""
@@ -47663,7 +47226,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
-msgstr "Lokalisierung"
+msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"
@@ -50523,7 +50086,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
-msgstr "Internationalisierung"
+msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:4
 msgid "Internationalizing games"
@@ -50851,7 +50414,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:139
 msgid "Local Coords"
-msgstr "Lokale Koordinaten"
+msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid ""
@@ -51013,7 +50576,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:268
 msgid "Color"
-msgstr "Farbe"
+msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:270
 msgid "Used to change the color of the particles being emitted."
@@ -52029,7 +51592,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
 msgid "Theme"
-msgstr "Motiv"
+msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
 msgid ""
@@ -52620,7 +52183,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:73
 msgid "Or alternatively, set it via function:"
-msgstr "Oder, alternativ, gesetzt durch eine Funktion:"
+msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:83
 msgid ""
@@ -52630,7 +52193,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:87
 msgid "Input events"
-msgstr "Eingabe-Events"
+msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:89
 msgid ""
@@ -52665,7 +52228,6 @@ msgid ""
 "For more information about events themselves, check the :ref:"
 "`doc_inputevent` tutorial."
 msgstr ""
-"Für mehr Informationen über Events, siehe :ref:`doc_inputevent` Tutorial."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:117
 msgid ""
