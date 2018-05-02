@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:35
 msgid "AutoLoad"
-msgstr ""
+msgstr "Carregamento automático"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:37
 msgid ""
@@ -107,15 +107,15 @@ msgid ""
 "with:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:54
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid "Or even simpler using the name directly:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:61
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid "Custom scene switcher"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:63
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:75
 msgid ""
 "This short tutorial will explain how to make a scene switcher using "
 "autoload. For simple scene switching, the :ref:`SceneTree.change_scene() "
@@ -124,13 +124,13 @@ msgid ""
 "switching between scenes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:69
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:81
 msgid ""
 "First download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>`, then open it."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:72
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:84
 msgid ""
 "Two scenes are present, scene_a.tscn and scene_b.tscn on an otherwise empty "
 "project. Each are identical and contain a button connected to a callback for "
@@ -139,21 +139,21 @@ msgid ""
 "work."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:79
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:91
 msgid "global.gd"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:81
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid ""
 "First of all, create a global.gd script. The easy way to create a resource "
 "from scratch is from the new resource button in the inspector tab:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:98
 msgid "Save the script as `global.gd`:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:90
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:102
 msgid ""
 "The script should open in the script editor. The next step is to add it to "
 "AutoLoad list. Select Project > Project Settings from the menu, switch to "
@@ -161,11 +161,11 @@ msgid ""
 "this file:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:97
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:109
 msgid "Now, whenever you run any of your scenes, the script is always loaded."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:99
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:111
 msgid ""
 "Returning to our script, the current scene needs to be fetched in the "
 "`_ready()` function. Both the current scene and `global.gd` are children of "
@@ -173,18 +173,18 @@ msgid ""
 "child of root is always the loaded scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:116
 msgid ""
 "Note: Make sure that global.gd extends Node, otherwise it won't be loaded!"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:146
 msgid ""
 "Next up is the function for changing the scene. This function frees the "
 "current scene and replaces it with the requested one."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:154
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:218
 msgid ""
 "As mentioned in the comments above, we really want to avoid the situation of "
 "having the current scene being deleted while being used (code from functions "
@@ -194,23 +194,23 @@ msgid ""
 "when no code from the current scene is running."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:162
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:226
 msgid ""
 "Finally, all that is left is to fill the empty functions in scene_a.gd and "
 "scene_b.gd:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:172
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:247
 msgid "and"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:181
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:267
 msgid ""
 "Now if you run the project, you can switch between both scenes by pressing "
 "the button!"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:184
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:270
 msgid ""
 "To load scenes with a progress bar, check out the next tutorial, :ref:"
 "`doc_background_loading`"

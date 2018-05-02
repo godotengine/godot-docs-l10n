@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
-"Godot是免费/自由开源软件, 在 `OSI-approved <https://opensource.org/licenses/"
-"MIT>`_ MIT许可证下发布。"
+"Godot是免费/自由开源软件, 在 `MIT许可证 <https://opensource.org/licenses/"
+"MIT>`_ 下发布。"
 
 #: ../../docs/about/faq.rst:11
 msgid ""
@@ -72,7 +72,7 @@ msgid ""
 "by/3.0/>`_) license, with attribution to \"Juan Linietsky, Ariel Manzur and "
 "the Godot Engine community\"."
 msgstr ""
-"文档的所有内容都由Creative Commons Attribution 3.0(' CC-3.0 <https://"
+"文档的所有内容都由Creative Commons Attribution 3.0 (' CC-3.0 <https://"
 "creativecommons.org/licenses/by/3.0/> ' _) 许可证签署, 版权归 \"娟（Juan "
 "Linietsky）, Ariel Manzur 和Godot引擎社区\" 所有。"
 
@@ -95,8 +95,9 @@ msgid ""
 msgstr ""
 "有关完整的详细信息, 请查看 `COPYRIGHT.txt <https://github.com/godotengine/"
 "godot/blob/master/COPYRIGHT.txt>`_ 以及 `LICENSE.txt <https://github.com/"
-"godotengine/godot/blob/master/LICENSE.txt> `_ 和`LOGO_LICENSE https://github/"
-"godotengine/godot/blob/master/LOGO_LICENSE.md >`_ 在Godot仓库中的文件。"
+"godotengine/godot/blob/master/LICENSE.txt> `_ 和 `LOGO_LICENSE https://"
+"github/godotengine/godot/blob/master/LOGO_LICENSE.md >`_ 在Godot仓库中的文"
+"件。"
 
 #: ../../docs/about/faq.rst:31
 msgid ""
@@ -123,7 +124,7 @@ msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
@@ -135,21 +136,21 @@ msgstr "Windows (包括 UWP)"
 
 #: ../../docs/about/faq.rst:47
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr ""
+msgstr "Web"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr "同时支持32位和64位，默认为64位"
+msgstr "同时支持32位和64位，默认为64位。"
 
 #: ../../docs/about/faq.rst:53
 msgid ""
@@ -187,7 +188,7 @@ msgstr ""
 msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
-msgstr "注意C#和可视化脚本支持还相对不完善，GDScript仍然优势，下面会提到。"
+msgstr "注意C#和可视化脚本支持还相对不完善，GDScript仍然有优势，下面会提到。"
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -210,7 +211,7 @@ msgstr ""
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
-msgstr "GDScript？为什么使用自定义脚本语言而不是我当前选择的现有语言？"
+msgstr "GDScript？为什么使用自定义脚本语言而不是我选择的现有语言？"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -286,36 +287,46 @@ msgid ""
 "No good thread support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"Godot使用线程，但大多数虚拟机都没有很好的线程支持（Lua、Python、Squirrel、"
+"JS、AS等）。"
 
 #: ../../docs/about/faq.rst:114
 msgid ""
 "No good class extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"大多数虚拟机没有很好地支持类扩展，开发Godot时适应起来效率极低（Lua、Python、"
+"JS）。"
 
 #: ../../docs/about/faq.rst:116
 msgid ""
 "Horrible interface for binding to C++, results in large amount of code, "
 "bugs, bottlenecks and general inefficiency (Lua, Python, Squirrel, JS, etc.)"
 msgstr ""
+"它们的C++绑定接口很糟糕，会产生大量的代码、BUG、巨坑，并且效率低下（Lua、"
+"Python、Squirrel、JS等）。"
 
 #: ../../docs/about/faq.rst:119
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"没有内置矢量类型（vector3、matrix4等），而用自定义类型实现它们会大幅降低性能"
+"（Lua、Python、Squirrel、JS、AS等）。"
 
 #: ../../docs/about/faq.rst:122
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
-msgstr ""
+msgstr "垃圾回收器难于控制或浪费大量内存（Lua、Python、JS、AS等）。"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is very well supported by GDScript."
 msgstr ""
+"难以与代码编辑器集成，难以实现代码补全、动态编辑等功能。这方面GDScript就做得"
+"很好。"
 
 #: ../../docs/about/faq.rst:128
 msgid ""
@@ -324,42 +335,51 @@ msgid ""
 "integration of scripting with the game engine (yes, it's a rare but very "
 "enjoyable situation when things just work). It's worth it, give it a try!"
 msgstr ""
+"GDScript旨在解决上述问题，并且表现良好。请学习一下GDScript并且享受丝滑如顺般"
+"的游戏开发过程（是的，虽然听上去不可能但真的很爽）。这是值得的，试一试吧！"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
-msgstr ""
+msgstr "我想扩展Godot引擎。有什么开发插件的选项吗？"
 
 #: ../../docs/about/faq.rst:137
+#, fuzzy
 msgid ""
 "For creating Godot Editor plugins look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"如果想开发编辑器插件，请参阅 :ref:`EditorPlugins <doc_making_plugins>` 和插件"
+"脚本。"
 
 #: ../../docs/about/faq.rst:139
 msgid ""
 "Additional languages could be added via PluginScript or the more low-level "
 "NativeScript."
-msgstr ""
+msgstr "其它语言的插件可以通过PluginScript或更底层的NativeScript添加。"
 
 #: ../../docs/about/faq.rst:141
+#, fuzzy
 msgid ""
 "If you want to add a certain native library, your best bet is GDNative and "
 "custom C++ modules."
-msgstr ""
+msgstr "如果你想加一个本地库，最好用GDNative或定制C++模块。"
 
 #: ../../docs/about/faq.rst:143
+#, fuzzy
 msgid "Also see the official blog posts on these topics:"
-msgstr ""
+msgstr "另请参阅官方博客的相关文章："
 
 #: ../../docs/about/faq.rst:145
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"`看看GDNative架构<https://godotengine.org/article/look-gdnative-"
+"architecture>`_"
 
 #: ../../docs/about/faq.rst:146
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "`GDNative 就在这! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:148
 msgid ""
@@ -367,10 +387,12 @@ msgid ""
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot."
 msgstr ""
+"您还可以查看GDScript的实现，Godot模组以及 `Godot的非官方Python支持<https://"
+"github.com/touilleMan/godot-python>`_ 。"
 
 #: ../../docs/about/faq.rst:152
 msgid "Why is FBX not supported for import?"
-msgstr ""
+msgstr "为什么不支持导入FBX？"
 
 #: ../../docs/about/faq.rst:154
 msgid ""
@@ -378,6 +400,9 @@ msgid ""
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<http://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
+"FBX SDK有一个非常 `严格的许可 <http://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf>`_，它和Godot的 `开放许可 <http://opensource.org/"
+"licenses/MIT>`_不兼容。"
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -387,22 +412,26 @@ msgid ""
 "Max. If you are using Blender, take a look at our own `Better Collada "
 "Exporter <https://godotengine.org/download>`_."
 msgstr ""
+"不过，Godot对Collada的支持非常好，如果您在用Maya或3DS Max，请使用 "
+"`OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-"
+"Tools>`_ 导出，以便最大程度地兼容。如果您使用的是Blender，可以用我们的 "
+"`Better Collada Exporter <https://godotengine.org/download>`_。"
 
 #: ../../docs/about/faq.rst:164
 msgid "Also, glTF support was added in Godot 3.0."
-msgstr ""
+msgstr "另外，Godot在3.0加入了glTF支持。"
 
 #: ../../docs/about/faq.rst:166
 msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question above.)"
-msgstr ""
+msgstr "FBX支持仍然可以由第三方以插件形式提供。（请参阅上面插件相关问题。）"
 
 #: ../../docs/about/faq.rst:169
 msgid ""
 "Will [Insert closed SDK such as PhysX, GameWorks, etc.] be supported in "
 "Godot?"
-msgstr ""
+msgstr "能否在Godot中加入闭源SDK，比如PhysX、GameWorks？"
 
 #: ../../docs/about/faq.rst:171
 msgid ""
@@ -411,6 +440,8 @@ msgid ""
 "versions of functionality or features from such SDKs may be eventually added "
 "though."
 msgstr ""
+"不行，Godot的目标是创建一个基于MIT许可的完全开源引擎，以便于完全控制它的每一"
+"块。不过这些SDK的功能或其开放版本最终有可能会添加进来。"
 
 #: ../../docs/about/faq.rst:176
 msgid ""
@@ -418,20 +449,23 @@ msgid ""
 "anyone else interested into adding those libraries as a module and ship your "
 "game using them, as either open or closed source. Everything is allowed."
 msgstr ""
+"也就是说，因为它是开源的，模块化的，所以开发者们可以任意地添加使用这些库，并"
+"发布游戏，无论开源或闭源。万事皆允。"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question above."
-msgstr ""
+msgstr "欲了解如何支持您想用的SDK，请查看上面的插件问题。"
 
 #: ../../docs/about/faq.rst:184
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
-msgstr ""
+msgstr "如何处理多分辨率和长宽比的问题？"
 
 #: ../../docs/about/faq.rst:186
+#, fuzzy
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -441,6 +475,10 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"这个问题很常见，这归功于苹果公司。苹果一开始将它们的设备分辨率加倍，让人觉得"
+"不同分辨率使用相同的资源是个好主意，所以很多人就这么做下去了。起初只有苹果设"
+"备这么做，但安卓和后来的苹果设备又有了不同的分辨率和宽高比，它们的尺寸和DPI变"
+"得多种多样。"
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -448,6 +486,8 @@ msgid ""
 "base resolution for the game and only handle different screen aspects. This "
 "is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or YFov."
 msgstr ""
+"然而，最常见且正确的处理方法是，在常规分辨率下开发游戏、然后只处理的屏幕适配"
+"方面的问题。一般2D需要这么做，因为3D只需要处理相机的XFov或YFov。"
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -458,6 +498,9 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"为游戏选一个常规分辨率。即使有高达2K或低于400p的设备，它们硬件缩放也能以低耗"
+"甚至无消耗的性能来处理分辨率。通常选择1080p(1920x1080)或720p(1280x720)。注"
+"意，分辨率越高，资产越大，它们需要的内存就越多，加载所需时间也会越长。"
 
 #: ../../docs/about/faq.rst:208
 msgid ""
@@ -465,6 +508,8 @@ msgid ""
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
 "this."
 msgstr ""
+"使用Godot中的拉伸(Stretch)选项，2D的保持拉伸效果最好。参阅教程：ref："
+"`doc_multiple_resolutions`来学习如何实现它。"
 
 #: ../../docs/about/faq.rst:212
 msgid ""
@@ -473,6 +518,8 @@ msgid ""
 "there is a minimum one and you want black bars to appear instead. This is "
 "also explained in the previous step."
 msgstr ""
+"确定最小分辨率，然后决定是否让游戏根据不同的纵横比进行垂直或水平拉伸，或者在"
+"想要显示黑边的情况下确定一个最小分辨率。这在前面的步骤中有所解释。"
 
 #: ../../docs/about/faq.rst:217
 msgid ""
@@ -480,10 +527,12 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"对于用户界面，使用 :ref:`Anchor <doc_size_and_anchors>` 来确定控件应停留或移"
+"动的位置。如果UI比较复杂，则考虑使用一下容器。"
 
 #: ../../docs/about/faq.rst:221
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr ""
+msgstr "就是这样！你的游戏现在应该能适应多分辨率了。"
 
 #: ../../docs/about/faq.rst:223
 msgid ""
@@ -492,36 +541,38 @@ msgid ""
 "option to shrink images, and set that build to be used for certain screen "
 "sizes in the App Store or Google Play."
 msgstr ""
+"如果真的要让您的游戏在超小屏幕（宽度小于300像素）的老设备上工作，可以在导出选"
+"项中缩小图像，并且在App Store或Google Play中将它设为用于确定的屏幕大小。"
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"
-msgstr ""
+msgstr "我有一个好想法能让Godot变得更好！你觉得呢？"
 
 #: ../../docs/about/faq.rst:231
 msgid ""
 "Your idea will most certainly be ignored. Examples of stuff that is ignored "
 "by the developers:"
-msgstr ""
+msgstr "你的想法基本会被忽视。开发者们会无视下面的例子："
 
 #: ../../docs/about/faq.rst:234
 msgid "Let's do this because it will make Godot better"
-msgstr ""
+msgstr "大家来做吧！它会让Godot变得更好"
 
 #: ../../docs/about/faq.rst:235
 msgid "Let's do this in Godot because another game engine does it"
-msgstr ""
+msgstr "大家来实现这个吧！其它游戏引擎就是这么做的"
 
 #: ../../docs/about/faq.rst:236
 msgid "Let's remove this because I think it's not needed"
-msgstr ""
+msgstr "删掉这个功能！因为我觉得它没什么用"
 
 #: ../../docs/about/faq.rst:237
 msgid "Let's remove clutter and bloat and make Godot look nicer"
-msgstr ""
+msgstr "把这些乱七八糟的东西取消吧！这样Godot看起来会更好点"
 
 #: ../../docs/about/faq.rst:238
 msgid "Let's add an alternative workflow for people who prefer it"
-msgstr ""
+msgstr "来确立新的开发流程吧！有的人会很喜欢"
 
 #: ../../docs/about/faq.rst:240
 msgid ""
@@ -531,34 +582,37 @@ msgid ""
 "ideas solely based on personal belief. Developers are interested in (for "
 "example):"
 msgstr ""
+"Godot开发人员总是愿意与您交流并且非常开放地倾听您的反馈意见，这在开源项目中很"
+"罕见，但他们将主要关注您在使用Godot时遇到的实际问题，而不是仅基于个人的想法。"
+"开发人员会感兴趣的（例如）："
 
 #: ../../docs/about/faq.rst:246
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
-msgstr ""
+msgstr "您的引擎使用经历和您遇到的问题（我们关心的远不止如何改进它）。"
 
 #: ../../docs/about/faq.rst:248
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
-msgstr ""
+msgstr "您希望实现的功能，因为您想要用到您的项目上。"
 
 #: ../../docs/about/faq.rst:250
 msgid ""
 "The concepts that were difficult to understand in order to learn the "
 "software."
-msgstr ""
+msgstr "学习引擎时遇到的难以理解的概念。"
 
 #: ../../docs/about/faq.rst:252
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "您希望优化的部分开发流程。"
 
 #: ../../docs/about/faq.rst:253
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't up "
 "to par."
-msgstr ""
+msgstr "教程不全的部分或者文档不符标准的部分。"
 
 #: ../../docs/about/faq.rst:255
 msgid ""
@@ -566,6 +620,8 @@ msgid ""
 "and this is where your ideas and suggestions are most valuable and welcome, "
 "they need to be in context of a real issue."
 msgstr ""
+"只要提出上述内容之一，我们就可以一起解决问题，这就是您的想法和建议最有价值和"
+"最受欢迎的地方，它们才是正式的问题。"
 
 #: ../../docs/about/faq.rst:259
 msgid ""
@@ -573,26 +629,28 @@ msgid ""
 "try to reformulate them as a problem first, so developers and the community "
 "have a base ground to discuss first."
 msgstr ""
+"因此，请不要觉得你对Godot的想法是不受欢迎的。相反，首先尝试将它们作为问题重新"
+"定义一下，开发人员和社区才能有基础去讨论。"
 
 #: ../../docs/about/faq.rst:263
 msgid "Examples of how NOT to state problems generally and vaguely are:"
-msgstr ""
+msgstr "不要像这样普通地和模糊地陈述问题："
 
 #: ../../docs/about/faq.rst:265
 msgid "Certain feature is ugly"
-msgstr ""
+msgstr "某些功能很糟糕"
 
 #: ../../docs/about/faq.rst:266
 msgid "Certain workflow is slow"
-msgstr ""
+msgstr "某些工作流程很慢"
 
 #: ../../docs/about/faq.rst:267
 msgid "Certain feature needs optimization"
-msgstr ""
+msgstr "某些功能需要优化"
 
 #: ../../docs/about/faq.rst:268
 msgid "Certain aspect of the UI looks cluttered"
-msgstr ""
+msgstr "UI的某些地方看起来很乱"
 
 #: ../../docs/about/faq.rst:270
 msgid ""
@@ -600,22 +658,24 @@ msgid ""
 "developers will most likely not understand you. Instead, try to reformulate "
 "your problem as a story such as:"
 msgstr ""
+"将某些东西与形容词联系起来并不会引人注意，开发者们也很可能不会理解。相反，尝"
+"试将您的问题作为例子重新表达，例如："
 
 #: ../../docs/about/faq.rst:274
 msgid "I try to move objects around but always end up picking the wrong one"
-msgstr ""
+msgstr "我尝试移动物件，但总是选错了一个"
 
 #: ../../docs/about/faq.rst:275
 msgid ""
 "I tried to make a game like Battlefield but I'm not managing to understand "
 "how to get lighting to look the same."
-msgstr ""
+msgstr "我试图做像战地这样的游戏，但我并没有理解清楚如何让灯光看起来一模一样。"
 
 #: ../../docs/about/faq.rst:277
 msgid ""
 "I always forget which script I was editing, and it takes me too many steps "
 "to go back to it."
-msgstr ""
+msgstr "我老是忘记我正编辑的是哪个脚本，而且我要花太多的步骤才能找到它。"
 
 #: ../../docs/about/faq.rst:280
 msgid ""
@@ -624,27 +684,29 @@ msgid ""
 "stories to the developers and the community, before discussing any idea. Be "
 "specific and concrete."
 msgstr ""
+"这将使你能够更好地表达你的想法，并为讨论建立一个共同点。在讨论任何想法之前，"
+"请尽量将您的问题作为例子向开发人员和社区说明，具体而形象。"
 
 #: ../../docs/about/faq.rst:285
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases or "
 "example projects (if applicable)."
-msgstr ""
+msgstr "可以附上截图、具体数值、测试用例或示例项目（如果有的话）。"
 
 #: ../../docs/about/faq.rst:288
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "我要怎样支持或参与Godot的发展呢？"
 
 #: ../../docs/about/faq.rst:290
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "参阅 :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:293
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "谁在为Godot工作？我该如何联系你们？"
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
-msgstr ""
+msgstr "请参照 `Godot官网 <https://godotengine.org/contact>`_ 上的相应页面。"

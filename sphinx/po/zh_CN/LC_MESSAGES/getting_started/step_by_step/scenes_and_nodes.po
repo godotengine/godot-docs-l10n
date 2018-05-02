@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "场景与节点"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
 msgid "Introduction"
@@ -32,6 +32,8 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"试想一下你不再是一个游戏开发者。取而代之地，你是一个大厨！把你时髦的着装换成"
+"无檐帽和双排扣夹克。现在，你是在为你的宾客打造一个美味的菜肴而不是在做游戏。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -40,6 +42,8 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"所以，一个厨子如何打造一个菜品呢？菜谱被分为两部分，第一个是成分，第二个是关"
+"于准备它的说明。以这种方式，任何人都能够遵照菜谱并调制出你的绝佳创意。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -47,16 +51,20 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"在Godot中制作游戏和这种方式非常相同。使用这个引擎感觉就像是在厨房里。在这个厨"
+"房里，*节点（Nodes）*就是装满了用于烹饪的新鲜材料的冰箱。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"有很多种类型的节点，有的显示图像、有的播放声音、有的节点显示3D模型等等。它们"
+"有很多。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 msgid "Nodes"
-msgstr ""
+msgstr "节点（Nodes）"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -65,32 +73,36 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"但先让我们来走基础。节点是创建一个游戏的基本元素。像上面提到的，一个节点可以"
+"执行很多特定的功能，但都具有以下属性："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "有名字（Name）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "具有可编辑的属性。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "每帧（Frame）都能接收对进程的回调（Callback）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "能够被继承（以便拥有更多的功能）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to other nodes as children."
-msgstr ""
+msgstr "能够被加到其他节点作为子节点（Children）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is very important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"最后一个很重要。节点能够使其他节点作为子节点。以这种方式编排的话，这些节点就"
+"会变成一个**树**。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -98,6 +110,8 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"在Godot中，以这种方式来编排节点的特点为组织工程创造了一个强有力的工具。因为不"
+"同的节点有不同的功能，将他们结合起来则允许了创建更多复杂的功能。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -105,40 +119,44 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"如果现在没有领悟它，不要担心。我们会再接下来几节里继续探讨。目前要记住最重要"
+"的一点是有节点这个东西存在，并且能够按这种方式来编排。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr ""
+msgstr "场景（Scene）"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
-msgstr ""
+msgstr "既然定义了节点的概念，那么下一个合逻辑的步骤就是解释什么是场景了。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
-msgstr ""
+msgstr "一个场景由一组被分层组织的节点组成（树形的方式）。此外，一个场景："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has only one root node."
-msgstr ""
+msgstr "只能有一个根节点（Root Node）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "能够被保存到磁盘上，也能被载入回来。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "场景能够被*实例化*（后文详细说明）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"运行一个游戏意味着运行一个场景。一个项目可以有多个场景，但是为了游戏的启动，"
+"必须有一个作为主场景。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -146,10 +164,13 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"基本上，Godot编辑器就是一个**场景编辑器**（Scene Editor）。它有很多工具来编辑"
+"2D和3D场景以及用户界面（UI），但是编辑器的所有内容都是围绕着编辑构成它的场景"
+"和节点的概念展开的。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
-msgstr ""
+msgstr "创建一个新工程（Project）"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
@@ -157,18 +178,24 @@ msgid ""
 "a long tradition in tutorials, we'll start with a \"Hello World\" project. "
 "This will introduce us to using the editor."
 msgstr ""
+"让我们通过一个例子来更加具体地描述这些抽象概念。遵循教程中的悠久传统，我们将"
+"从“Hello World”项目开始。接下来将介绍如何使用编辑器。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
 msgid ""
 "If you run the godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
+"当Godot程序在项目之外运行，工程管理器（Project Manager）就出现了，它帮助开发"
+"者管理他们的工程。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
+"要创建一个新工程，点击“新建工程”（New Project）选项。选择并创建一个路径"
+"（Path）然后指定工程名为“New Project”："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 msgid "Editor"
@@ -178,7 +205,7 @@ msgstr "编辑器"
 msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
-msgstr ""
+msgstr "一旦这个“New Project”被创建，下一步就是打开它。这将会打开Godot编辑器："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
 msgid ""
@@ -186,27 +213,31 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World!\" message that we'll put on the screen."
 msgstr ""
+"如前文所述，在Godot中制作游戏就像是在厨房里一样，所以我们来打开冰箱然后加入一"
+"些新鲜的节点到工程中。我们将开始试着输出一条“Hello World!”消息。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
-msgstr ""
+msgstr "要实现它，先按下“新建节点”（New Node）按钮（看着像+号的那个）："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"这将会打开创建节点（Create Node）对话框，展示了一长串能够被创建的节点列表："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the quickest way:"
-msgstr ""
+msgstr "在这里，先选择“标签”（Label）节点。直接搜索它可能是最快捷的方式："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
+"最终，我们创建了一个标签（Label）！当创建按钮被按下时，很多事情就发生了："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
 msgid ""
@@ -214,6 +245,8 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"首先，界面变成了一个2D编辑器（因为Label是一个2D节点类型），并且Label出现，处"
+"于选中状态，在视图的左上角。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
 msgid ""
@@ -221,28 +254,35 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
+"这个节点出现在了场景树编辑器（Scene Tree Editor）（左上方的一栏里），而且标签"
+"的属性（Property）出现在了检查工具（Inspector）中（右侧的一栏）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello, World!\":"
 msgstr ""
+"下一步就是去改变标签的“文本”（Text）属性了，我们来把它改成“Hello,World!”："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
+"好了，一切都已就绪来运行场景了！在顶栏按下“运行场景”（Play Scene）按钮（或敲"
+"击F6）："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "然后…噢天哪！"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"场景需要被保存才能运行，所以在场景→保存（Scene->Save）菜单中把场景保存成"
+"hello.tscn："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -254,12 +294,16 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"然后，有趣的事情发生了。这个文件对话框是一个特别的文件对话框，只允许保存在工"
+"程内。工程根目录是“res://”，意为“资源路径”（Resource Path）。这也就意味着，文"
+"件只可以被保存到工程的内部。以后，当进行文件操作的时候记住，“res://”就是资源"
+"的路径，不论无论平台和安装位置，它都是游戏中的资源文件的定位方式。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello, World!\" "
 "demo should finally execute:"
-msgstr ""
+msgstr "在保存场景并再一次按下运行场景之后，“Hello, World!”演示应该被执行："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
@@ -267,7 +311,7 @@ msgstr "成功！"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
-msgstr ""
+msgstr "配置工程"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid ""
@@ -276,6 +320,9 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"好了，是时候去给工程做点配置（Configuration）了。现在，唯一运行某些东西的方式"
+"就是执行当前的场景。然而，工程有多个场景，因此其中一个必须被设定为主场景"
+"（Main Scene）。这个场景是将会在工程运行时被载入的场景。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid ""
@@ -285,22 +332,29 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"这些设定将全部被存在project.godot文件中，一个win.ini格式的普通文本文件（以便"
+"编辑）。有一些设定可以在这个文件中修改，来更改工程的执行方式。为了方便修改，"
+"Godot提供了工程设置对话框，作为project.godot文件的可视修改工具"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
-msgstr ""
+msgstr "要打开这个对话框，选择 Project -> Project Settings。试试吧。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'hello.tscn'."
 msgstr ""
+"窗口打开后，我们来修改主场景。定位到 `Application/Run/Main Scene` 属性然后点"
+"击并选择 'hello.tscn'。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"随着这个改动，按下常规运行（Play）按钮（或者F5）就会运行这个场景，无论它现在"
+"是否正被编辑。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
 msgid ""
@@ -309,6 +363,9 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"工程设置对话框提供了许多能够被保存至project.godot文件的选项并且显示出了他们的"
+"默认值。当你改变了一个值，一个对勾被标记在属性名的左侧。这意味着这个属性将被"
+"保存到project.godot文件中并被记住。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
 msgid ""
@@ -316,10 +373,12 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"另外，还可以添加自定义配置选项，并在运行时使用 :ref:`ProjectSettings "
+"<class_ProjectSettings>` 单例来读取它们。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid "To be continued..."
-msgstr ""
+msgstr "接下来…"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
 msgid ""
@@ -327,3 +386,5 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"这篇教程谈论了“场景和节点”，但是目前为止，还只有*一个*场景和*一个*节点！别担"
+"心，下一篇教程将会继续延伸…"

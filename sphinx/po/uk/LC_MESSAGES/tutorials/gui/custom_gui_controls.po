@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:17
 msgid "Drawing"
-msgstr ""
+msgstr "Малюнок"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:19
 msgid ""
@@ -74,11 +74,11 @@ msgid ""
 "<class_Control_has_focus>` method exists. Example"
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:54
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:69
 msgid "Sizing"
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:56
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:71
 msgid ""
 "As mentioned before, size is very important to controls. This allows them to "
 "lay out properly, when set into grids, containers, or anchored. Controls "
@@ -88,69 +88,69 @@ msgid ""
 "your custom control is not squished by the other controls in the container."
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:64
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:79
 msgid ""
 "To provide this callback, just override :ref:`Control.get_minimum_size() "
 "<class_Control_get_minimum_size>`, for example:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:73
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:96
 msgid "Or alternatively, set it via function:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:81
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 msgid "Input"
-msgstr ""
+msgstr "Ввід"
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:83
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:114
 msgid ""
 "Controls provide a few helpers to make managing input events much easier "
 "than regular nodes."
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:87
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:118
 msgid "Input events"
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:89
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:120
 msgid ""
 "There are a few tutorials about input before this one, but it's worth "
 "mentioning that controls have a special input method that only works when:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:93
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:124
 msgid "The mouse pointer is over the control."
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:94
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:125
 msgid ""
 "The button was pressed over this control (control always captures input "
 "until button is released)"
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:96
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:127
 msgid ""
 "Control provides keyboard/joypad focus via :ref:`Control.focus_mode "
 "<class_Control_focus_mode>`."
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:99
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:130
 msgid ""
 "This function is :ref:`Control._gui_input() <class_Control__gui_input>`. "
 "Simply override it in your control. No processing needs to be set."
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:111
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:167
 msgid ""
 "For more information about events themselves, check the :ref:"
 "`doc_inputevent` tutorial."
 msgstr ""
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:115
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:171
 msgid "Notifications"
-msgstr ""
+msgstr "Сповіщення"
 
-#: ../../docs/tutorials/gui/custom_gui_controls.rst:117
+#: ../../docs/tutorials/gui/custom_gui_controls.rst:173
 msgid ""
 "Controls also have many useful notifications for which no callback exists, "
 "but can be checked with the _notification callback:"

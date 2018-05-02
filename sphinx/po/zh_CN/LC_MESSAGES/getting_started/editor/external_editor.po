@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "使用外部的文本编辑器"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
 msgid ""
@@ -28,6 +28,8 @@ msgid ""
 "via the options under ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"虽然 Godot 拥有内置的文本编辑器，但一些开发人员倾向于使用他们熟悉的文本编辑"
+"器。 Godot 通过“编辑器 - >编辑器设置 - >文本编辑器 - >外部”下的选项提供此选项"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
 msgid ""
@@ -35,14 +37,16 @@ msgid ""
 "allow you to better integrate the editor with godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
+"有两个字段：可执行路径和命令行标志。 这些标志允许您更好地将编辑器集成到 Godot"
+"上。 Godot 将在标志参数中替换以下内容："
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Exec 标志中的字段"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
-msgstr ""
+msgstr "被替换为"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{project}"
@@ -50,7 +54,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "项目目录的绝对路径"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{file}"
@@ -58,7 +62,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "文件的绝对路径"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{col}"
@@ -66,7 +70,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
-msgstr ""
+msgstr "错误的列号"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "{line}"
@@ -74,11 +78,11 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
-msgstr ""
+msgstr "错误的行号"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "各种编辑器的一些示例Exec标志："
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"
@@ -86,7 +90,7 @@ msgstr "编辑器"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
-msgstr ""
+msgstr "Exec 标志"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "geany/kate"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:83
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-msgid "**Good**"
+#, fuzzy
+msgid "**Good**:"
 msgstr "**Bom**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
@@ -90,7 +91,8 @@ msgstr "**Bom**"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:93
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
-msgid "**Bad**"
+#, fuzzy
+msgid "**Bad**:"
 msgstr "**Ruim**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
@@ -153,8 +155,8 @@ msgstr ""
 "\"colunas.\""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
-msgid "**Never!**"
-msgstr "**Nunca!**"
+msgid "**NEVER**:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
 msgid "Naming Conventions"
@@ -165,9 +167,9 @@ msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, which is ugly."
 msgstr ""
-"Estas convenções de nomeação seguem o estilo do motor Godot. Quebra-las irá "
-"fazer com que o seu código brigue com as convêncões de nomeação padrão do "
-"motor, o que é feio."
+"Estas convenções de nomeação seguem o estilo do Godot Engine. Quebra-las irá "
+"fazer com que o seu código brigue com as convenções de nomeação embutidas, o "
+"que é feio."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:163
 msgid "Classes and Nodes"
@@ -194,7 +196,7 @@ msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
 msgstr ""
-"Prefixe com um único sublinhado (\\_) os métodos virtuais (funçoes que o "
+"Prefixe com um único sublinhado (\\_) métodos virtuais (funções que o "
 "usuário deve sobrescrever), funções privadas e variáveis privadas: ``func "
 "_ready()``"
 

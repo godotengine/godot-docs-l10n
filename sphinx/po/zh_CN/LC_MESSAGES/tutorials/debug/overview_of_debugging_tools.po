@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
-msgstr ""
+msgstr "调试工具概述"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:7
 msgid "Introduction"
@@ -31,10 +31,12 @@ msgid ""
 "problems occurred. Godot provides several debugging options and tools which "
 "aid your debugging process."
 msgstr ""
+"在游戏开发过程中时常需要对游戏进行调试来解决我们遇到的问题。 Godot 提供了一些"
+"调试选项和工具来帮助你进行调试工作。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:12
 msgid "Debug options"
-msgstr ""
+msgstr "调试选项"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:14
 msgid ""
@@ -42,10 +44,12 @@ msgid ""
 "editor which can help you in debugging your game. These options are located "
 "in ``DEBUG`` in the main menus."
 msgstr ""
+"在编辑器中运行游戏时可以启用几个选项，以帮助您调试游戏。 这些选项位于主菜单中"
+"的 调试（Debug） 中。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:19
 msgid "Here are the descriptions of the options:"
-msgstr ""
+msgstr "下面是这些选项的说明："
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
 msgid "Deploy with Remote Debug"
@@ -56,10 +60,12 @@ msgid ""
 "When exporting and deploying, the resulting executable will attempt to "
 "connect to the IP of your computer, in order to be debugged."
 msgstr ""
+"在导出和发布游戏的调试版本时，导出的可执行文件将尝试连接到你本机的IP进行进行"
+"调试。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Small Deploy with Network FS"
-msgstr "小型部署与网络 FS"
+msgstr "小型部署与网络文件系统"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid ""
@@ -68,16 +74,19 @@ msgid ""
 "will use the USB cable for faster performance. This option speeds up testing "
 "for games with a large footprint."
 msgstr ""
+"导出时生成最小化的可执行文件。改可执行文件将通过本地网络连接编辑器来使用文件"
+"系统； 在 Android 平台上，可以使用 USB 进行来提高传输效率。 这个选项能够加速"
+"偏大型游戏的测试工作。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr "可见碰撞形状"
+msgstr "可见碰撞区域"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
 "Collision shapes and raycast nodes(for 2D and 3D) will be visible on the "
 "running game."
-msgstr ""
+msgstr "可以在运行游戏的时候看到碰撞区域和射线节点。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
@@ -85,7 +94,7 @@ msgstr "可见导航"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
-msgstr ""
+msgstr "可以在运行的游戏的时候看到导航网格和多边形。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
@@ -97,6 +106,8 @@ msgid ""
 "running game. When used remotely on a device, this is more efficient with "
 "network filesystem."
 msgstr ""
+"在编辑器中对场景所做的任何更改都将在正在运行的游戏中出现。 当在设备上远程使用"
+"时，这对网络文件系统更有效。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
@@ -107,24 +118,27 @@ msgid ""
 "Any script that is saved will be reloaded on the running game. When used "
 "remotely on a device, this is more efficient with network filesystem."
 msgstr ""
+"任何已修改并保存的脚本将在正在运行的游戏中重新加载。 当在设备上远程使用时，这"
+"对网络文件系统更有效。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:55
 msgid "Debugging tools"
-msgstr ""
+msgstr "调试工具"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:57
 msgid ""
 "The ``Debugger`` is the second option in the bottom panel. Click on it and a "
 "new panel occurs."
 msgstr ""
+"``调试器 (Debugger)`` 按钮在底部面板中可以找到，点击后可以打开调试工具面板。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:61
 msgid "The ``Debugger`` provides certain tools under different tabs."
-msgstr ""
+msgstr "调试工具中的各个切页提供了不同的的调试功能。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:63
 msgid "Here are some brief descriptions of the tools:"
-msgstr ""
+msgstr "下面是对这些工具的一些简要说明："
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
 msgid "Debugger"
@@ -132,7 +146,7 @@ msgstr "调试器"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:68
 msgid "Monitor the game running process."
-msgstr ""
+msgstr "显示正在运行的游戏进程。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:71
 msgid "Errors"
@@ -140,7 +154,7 @@ msgstr "错误"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:73
 msgid "Print out errors when running the game."
-msgstr ""
+msgstr "输出游戏运行时发生的错误信息。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Profiler"
@@ -148,7 +162,7 @@ msgstr "性能分析"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid "Profiling the performance of the any function call in the running game."
-msgstr ""
+msgstr "对正在运行中的游戏进行性能分析。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:81
 msgid "Monitors"
@@ -158,7 +172,7 @@ msgstr "显示"
 msgid ""
 "Monitors the performance of the running game, such as the fps and physics "
 "collisions."
-msgstr ""
+msgstr "监视正在运行的游戏的运行状况，例如 FPS 和物理碰撞。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:86
 msgid "Video Mem"
@@ -166,19 +180,19 @@ msgstr "显存"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:88
 msgid "Listing the video memory usage of the running game."
-msgstr ""
+msgstr "列出运行中的游戏所有的现存占用列表。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:91
 msgid "Misc"
-msgstr "杂项"
+msgstr "其他"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:93
 msgid "Miscellaneous options for debug."
-msgstr ""
+msgstr "其他调试用的选项和功能。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:97
 msgid "Remote in Scene dock"
-msgstr ""
+msgstr "远程场景树"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:99
 msgid ""
@@ -186,9 +200,13 @@ msgid ""
 "You can switch to ``Remote`` and inspect or change the nodes' parameters in "
 "the running game."
 msgstr ""
+"在启动游戏后，``场景 (Scene)`` 停靠窗的顶部会出现一条切页栏，你可以切换到 ``"
+"远程 (Remote) `` 然后检视运行中节点和他们属性的变化。"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:103
 msgid ""
 "Some editor settings related to debugging can be find in the ``Editor "
 "Settings``, under Network>Debug and Debugger sections."
 msgstr ""
+"在编辑器设置（Editor Settings）中可以找到一些调试相关的配置，你可以在在 "
+"``Network > Debug`` 和 ``Debug`` 分类中找到。"

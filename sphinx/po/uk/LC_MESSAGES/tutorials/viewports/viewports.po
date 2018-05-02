@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "4 панелі перегляду"
 
 #: ../../docs/tutorials/viewports/viewports.rst:7
 msgid "Introduction"
@@ -59,7 +59,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:28
 msgid "Input"
-msgstr ""
+msgstr "Ввід"
 
 #: ../../docs/tutorials/viewports/viewports.rst:30
 msgid ""
@@ -95,14 +95,14 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:53
 #: ../../docs/tutorials/viewports/viewports.rst:61
-#: ../../docs/tutorials/viewports/viewports.rst:148
+#: ../../docs/tutorials/viewports/viewports.rst:159
 msgid "Viewport"
-msgstr ""
+msgstr "Демонстраційне вікно"
 
 #: ../../docs/tutorials/viewports/viewports.rst:55
 #: ../../docs/tutorials/viewports/viewports.rst:59
 msgid "Camera"
-msgstr ""
+msgstr "Фотоапарат"
 
 #: ../../docs/tutorials/viewports/viewports.rst:57
 msgid "Camera will display on the parent viewport, but in the following one:"
@@ -179,7 +179,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:119
 msgid "Capture"
-msgstr ""
+msgstr "Захоплення"
 
 #: ../../docs/tutorials/viewports/viewports.rst:121
 msgid ""
@@ -188,49 +188,56 @@ msgid ""
 "following API:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:130
+#: ../../docs/tutorials/viewports/viewports.rst:137
 msgid ""
-"After a frame or two (check _process()), the capture will be ready, get it "
-"back by using:"
+"But if you use this in _ready() or from the very first frame of the "
+"viewport's initialization you will get an empty texture cause there is "
+"nothing to get as texture. You can deal with it using (for example):"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:137
+#: ../../docs/tutorials/viewports/viewports.rst:148
 msgid ""
 "If the returned image is empty, capture still didn't happen, wait a little "
 "more, as this API is asynchronous."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:141
+#: ../../docs/tutorials/viewports/viewports.rst:152
 msgid "Sub-viewport"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:143
+#: ../../docs/tutorials/viewports/viewports.rst:154
 msgid ""
-"If the viewport is a child of a control, it will become active and display "
-"anything it has inside. The layout is something like this:"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:146
-msgid "Control"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:150
-msgid "The viewport will cover the area of its parent control completely."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:155
-msgid "Render target"
+"If the viewport is a child of a :ref:`ViewportContainer "
+"<class_viewportcontainer>`, it will become active and display anything it "
+"has inside. The layout is something like this:"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:157
+#, fuzzy
+msgid "ViewportContainer"
+msgstr "Демонстраційне вікно"
+
+#: ../../docs/tutorials/viewports/viewports.rst:161
 msgid ""
-"To set as a render target, just toggle the \"render target\" property of the "
-"viewport to enabled. Note that whatever is inside will not be visible in the "
-"scene editor. To display the contents, the render target texture must be "
-"used. This can be requested via code using (for example):"
+"The viewport will cover the area of its parent control completely, if "
+"stretch is set to true in Viewport Container. But you will have to setup the "
+"Viewport Size to get the the appropriate part of the Viewport. And Viewport "
+"Container can not be smaller than the size of the Viewport."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:168
+msgid "Render target"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:170
+msgid ""
+"To set as a render target, just toggle the \"render target\" property of the "
+"viewport to enabled. Note that whatever is inside will not be visible in the "
+"scene editor. To display the contents, the method remains the same. This can "
+"be requested via code using (for example):"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:181
 msgid ""
 "By default, re-rendering of the render target happens when the render target "
 "texture has been drawn in a frame. If visible, it will be rendered, "
@@ -238,30 +245,11 @@ msgid ""
 "(once), or always render, no matter if visible or not."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:173
-msgid ""
-"A few classes are created to make this easier in most common cases inside "
-"the editor:"
+#: ../../docs/tutorials/viewports/viewports.rst:186
+msgid "``TODO: Review the doc, change outdated and add more images.``"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:176
-msgid ":ref:`ViewportSprite <class_ViewportSprite>` (for 2D)."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:177
-msgid "ViewportQuad (for 3D)."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:178
-msgid "ViewportFrame (for GUI)."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:180
-msgid ""
-"*TODO: Review the doc, ViewportQuad and ViewportFrame don't exist in 2.0.*"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:182
+#: ../../docs/tutorials/viewports/viewports.rst:188
 msgid ""
 "Make sure to check the viewport demos! Viewport folder in the demos archive "
 "available to download, or https://github.com/godotengine/godot-demo-projects/"

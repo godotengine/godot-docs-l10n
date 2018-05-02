@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
 msgid "From Unity3D to Godot Engine"
-msgstr ""
+msgstr "De Unity3D à Godot Engine"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -27,94 +27,100 @@ msgid ""
 "Unity user, and aims to help you migrate your existing Unity experience into "
 "the world of Godot."
 msgstr ""
+"Ce guide fournit un aperçu de Godot Engine d’un point de vue d’un "
+"utilisateur de Unity, et vise à vous aider à transiter de votre expérience "
+"de Unity vers le monde de Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:13
 msgid "Differences"
-msgstr ""
+msgstr "Différences"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:16
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:16
 msgid "Godot"
-msgstr ""
+msgstr "Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "License"
-msgstr ""
+msgstr "Licence"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid ""
 "Proprietary, closed, free license with revenue caps and usage restrictions"
 msgstr ""
+"Propriétaire, fermé, licence gratuite avec une limite de revenus et des "
+"restrictions d’usage"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "MIT license, free and fully open source without any restriction"
-msgstr ""
+msgstr "Licence MIT, libre et open source sans aucune restriction"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "OS (editor)"
-msgstr ""
+msgstr "OS (éditeur)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
-msgstr ""
+msgstr "Windows, macOS, Linux (non-official and non-supported)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
-#, fuzzy
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr "X11 (Linux, \\*BSD)"
+msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "OS (export)"
-msgstr ""
+msgstr "OS (export)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr ""
+msgstr "**Bureau :** Windows, macOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
-msgstr ""
+msgstr "**Mobile :** Android, iOS, Windows Phone, Tizen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Web:** WebAssembly or asm.js"
-msgstr ""
+msgstr "**Web :** WebAssembly or asm.js"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
-msgstr ""
+msgstr "**Consoles :** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
 msgstr ""
+"**VR :** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
+"HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
-msgstr ""
+msgstr "**TV :** Android TV, Samsung SMART TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr ""
+msgstr "**Desktop :** Windows, macOS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Mobile:** Android, iOS"
-msgstr ""
+msgstr "**Mobile :** Android, iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Web:** WebAssembly"
-msgstr ""
+msgstr "**Web :** WebAssembly"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Console:** See :ref:`doc_consoles`"
-msgstr ""
+msgstr "**Console :** Voir :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid "**VR:** Oculus Rift, SteamVR"
-msgstr ""
+msgstr "**VR :** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "Scene system"
@@ -122,33 +128,36 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "Component/Scene (GameObject > Component)"
-msgstr ""
+msgstr "Composant/Scène (GameObject > Composant)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "Prefabs"
-msgstr ""
+msgstr "Prefabs"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid ""
 ":ref:`Scene tree and nodes <doc_scenes_and_nodes>`, allowing scenes to be "
 "nested and/or inherit other scenes"
 msgstr ""
+":ref:`Un arbre de scènes et des nœuds <doc_scenes_and_nodes>`, permettant "
+"aux scènes d’être imbriquées ou d’hériter d’autres scènes"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "Third-party tools"
-msgstr ""
+msgstr "Outils de tierce partie"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "Visual Studio or VS Code"
-msgstr ""
+msgstr "Visual Studio ou VS Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid ":ref:`External editors are possible <doc_external_editor>`"
-msgstr ""
+msgstr ":ref:`Les éditeurs externes sont possibles <doc_external_editor>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:33
 msgid ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
 msgstr ""
+":ref:`La SDK Android pour l’export Android <doc_exporting_for_android>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Killer features"

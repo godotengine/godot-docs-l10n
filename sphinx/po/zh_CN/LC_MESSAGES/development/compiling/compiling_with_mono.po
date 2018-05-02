@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:4
 msgid "Compiling with Mono"
-msgstr ""
+msgstr "编译Mono模块"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:9
 msgid "Requirements"
@@ -27,19 +27,19 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:11
 msgid "Mono 5.2.0+ (mono-complete)"
-msgstr ""
+msgstr "Mono 5.2.0+ (mono-complete)"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:12
 msgid "MSBuild"
-msgstr ""
+msgstr "MSBuild"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:13
 msgid "pkg-config"
-msgstr ""
+msgstr "pkg-config"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
 msgid "Environment Variables"
-msgstr ""
+msgstr "环境变量"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:18
 msgid ""
@@ -48,26 +48,33 @@ msgid ""
 "installation directory by using the following environment variables for the "
 "respective ``bits`` option: ``MONO32_PREFIX`` and ``MONO64_PREFIX``."
 msgstr ""
+"默然情况下 Scons 会尝试在 Windows 注册表中查找Mono， 在非 Windows 平台上会使"
+"用 ``pkg-config`` 进行查找。 你可以通过设置下面的环境变量来指定你安装在其他地"
+"方的 mono 安装目录， 根据系统位数不同，这些环境变量分别是 ``MONO32_PREFIX`` "
+"和 ``MONO64_PREFIX``。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:20
 msgid ""
 "The specified directory must contain the subdirectories ``bin``, "
 "``include``, and ``lib``."
 msgstr ""
+"你所指定的文件夹必须包含 ``bin``、 ``include``、 ``lib`` 这几个子目录。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:23
 msgid "Enable Mono Module"
-msgstr ""
+msgstr "启用 Mono 模块"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:25
 msgid ""
 "By default, the mono module is disabled for builds. To enable it you can "
 "pass the option ``module_mono_enabled=yes`` to your SCons command."
 msgstr ""
+"默认情况下 mono 模块是禁用的。你可以通过传递 ``module_mono_enabled=yes`` 参数"
+"给 Scons 构建系统来启用它。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:28
 msgid "Generate The Glue"
-msgstr ""
+msgstr "生成胶水代码"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:30
 msgid ""
@@ -75,6 +82,8 @@ msgid ""
 "managed side. In order to generate them, first, you must build Godot with "
 "the options ``tools=yes`` and ``mono_glue=no``:"
 msgstr ""
+"这些胶水代码用于封装 mono 所需要的一些功能。要生成这些代码，你需要首先通过 "
+"``tools=yes`` 和 ``mono_glue=no`` 配置构建一遍 Godot。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:36
 msgid ""
@@ -82,6 +91,9 @@ msgid ""
 "parameter ``--generate-mono-glue`` followed by the path to an output "
 "directory. This path must be ``modules/mono/glue`` in the Godot directory."
 msgstr ""
+"在你编译完成以后，你可以在命令行中执行你得到的可执行文件，并带上 ``--"
+"generate-mono-glue`` 参数来生成胶水代码到你指定的目录。这里我们传入的路径是 "
+"``modules/mono/glue``。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:42
 msgid ""
@@ -89,6 +101,8 @@ msgid ""
 "mono_glue.gen.cpp*. Once this file is generated, you can build Godot for all "
 "the desired targets without the need to repeat this process."
 msgstr ""
+"这个命令告诉 Godot 生成胶水代码到 *modules/mono/glue/mono_glue.gen.cpp* 文"
+"件。 执行此步骤之后，你后面要再次构建就不需要重复进行这个操作了。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:44
 msgid ""
@@ -96,10 +110,13 @@ msgid ""
 "your PATH, you need to give the full path to the executable, e.g. if it is "
 "located in the ``bin`` subfolder, it becomes ``bin/godot``."
 msgstr ""
+"这里的 ``godot`` 指的是编译好的 Godot 二进制文件。 因此如果它不在你系统的 "
+"PATH 变量中的话，你需要替换成你的可执行文件的绝对路径。 例如，在 ``bin``子目"
+"录中， 它就是 ``bin/godot``。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:47
 msgid "Notes"
-msgstr ""
+msgstr "注意"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:48
 msgid ""
@@ -108,6 +125,9 @@ msgid ""
 "will be used to generate the glue. Godot should print a message at startup "
 "warning you about this."
 msgstr ""
+"**不要** 使用 ``mono_glue=no`` 配置来构建你的发布版 Godot。 此选项会禁用C＃脚"
+"本，它的构建结果是仅用于控制生成胶水代码的临时二进制文件。Godot 会在启动时打"
+"印一条消息，提醒你这件事。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:49
 msgid ""
@@ -115,10 +135,12 @@ msgid ""
 "there is an API mismatch with the generated glue, Godot will print an error "
 "at startup."
 msgstr ""
+"胶水代码在每次 ClassDB 的API有变动时都要重新生成。 如果有API和生成的胶水代码"
+"不匹配， Godot 将在启动时在控制台输出错误信息。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:52
 msgid "Example (x11)"
-msgstr ""
+msgstr "示例 (x11)"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:68
 msgid ""
@@ -126,3 +148,5 @@ msgid ""
 "also built the *GodotSharpTools.dll* assembly and copied it together with "
 "the mono runtime shared library to the ``bin`` subdirectory."
 msgstr ""
+"如果一切顺利的话， 除了通常的可执行文件之外 Scons 应该还在 ``bin`` 目录下生成"
+"了 **GodotSharpTools.dll* 文件。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "Cenas e nós"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
 msgid "Introduction"
@@ -32,6 +32,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Imagine por um momento que você não é um desenvolvedor de jogos mais. Em vez "
+"disso, você é um chef! Troque sua roupa comum por um daqueles longos chapéus "
+"e uma daquelas camisas de abotoamento duplo. Agora, no lugar de jogos, você "
+"cria novas e deliciosas receitas para seus convidados."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -40,6 +44,10 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"E então? Como um chefe de cozinha cria uma receita? Receitas são divididas "
+"em duas seções: a primeira são os ingredientes, e a segunda são as "
+"instruções de preparo. Desta forma, qualquer um pode acompanhar a receita e "
+"saborear sua magnífica criação."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -47,16 +55,21 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"Fazer jogos no Godot usa a mesma estratégia. Usar o motor é como estar em "
+"uma cozinha. Nesta cozinha, os *nós* são como uma geladeira cheia de "
+"ingredientes frescos para serem cozidos."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"Existem muitos tipos de nós. Alguns mostram imagens, outros nós reproduzem "
+"som, outros exibem modelos tridimensionais, etc. Existem dúzias deles."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 msgid "Nodes"
-msgstr ""
+msgstr "Nós"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -65,32 +78,37 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"Mas vamos começar com o básico. Nós são peças fundamentais na criação de um "
+"jogo. Como já mencionado, um nó pode desempenhar uma variedade de funções "
+"especializadas. Entretanto, todo nó sempre terá os seguintes atributos:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "Tem um nome."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "Tem propriedade editáveis."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr ""
+msgstr "Pode receber uma chamada para processar cada quadro."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "Pode ser estendido (ter mais funções)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to other nodes as children."
-msgstr ""
+msgstr "Pode ser adicionado a outro nó como filho dele."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is very important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"Esse último é muito importante: nós podem ter outros nós como filhos. Quando "
+"arranjados dessa maneira, os nós compõem uma **árvore**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -98,6 +116,9 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"No Godot, a habilidade de arranjar os nós desta forma cria uma ferramenta "
+"poderosa para organizar projetos. Já que diferentes nós têm diferentes "
+"funções, combiná-los permite a criação de funções mais complexas."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -105,40 +126,50 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"Não se preocupe se ainda não entendeu. Continuaremos a explorar esse "
+"conceitos nas próximas seções. O fato mais importante para lembrar por ora é "
+"que nós existem e eles podem ser organizados desta forma."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr ""
+msgstr "Cenas"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
 msgstr ""
+"Agora que o conceito de nós foi definido, o próximo passo lógico é explicar "
+"o que é uma Cena."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
+"Uma cena é composta por um grupo de nós organizados hierarquicamente (no "
+"estilo árvore). Além disso, uma cena:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has only one root node."
-msgstr ""
+msgstr "sempre tem um único nó raiz."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "pode ser salva no disco e carregada posteriormente."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "pode ser *instanciada* (mais sobre isso depois)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"Executar um jogo significa executar uma cena. Um projeto pode conter muitas "
+"cenas, mas, para o jogo começar, uma delas deve ser selecionada como cena "
+"principal."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -146,10 +177,13 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"Basicamente, o editor do Godot é um **editor de cena**. Ele tem um monte de "
+"ferramentas para edição de cenas 2D e 3D, assim como interfaces com usuário, "
+"mas o editor é baseado no conceito de editar uma cena e os nós que a compõem."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
-msgstr ""
+msgstr "Criando um novo projeto"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
@@ -157,18 +191,25 @@ msgid ""
 "a long tradition in tutorials, we'll start with a \"Hello World\" project. "
 "This will introduce us to using the editor."
 msgstr ""
+"Vamos tornar esses conceitos abstratos em algo mais concreto com um exemplo. "
+"Seguindo a longa tradição dos tutorias, vamos começar com um projeto \"Olá, "
+"mundo\". Isso nos apresentará o uso do editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
 msgid ""
 "If you run the godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
+"Se você rodar o executável do Godot fora de um projeto, o Gerenciador de "
+"Projetos aparecerá. Isso ajuda os desenvolvedores a gerenciar seus projetos."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
+"Para criar um novo projeto, clique na opção \"Novo Projeto\". Escolha e crie "
+"um caminho para o projeto e especifique o nome \"Novo Projeto\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 msgid "Editor"
@@ -179,6 +220,7 @@ msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
 msgstr ""
+"Uma vez criado o \"Novo Projeto\", abra-o. Isso abrirá o editor do Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
 msgid ""
@@ -186,27 +228,38 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World!\" message that we'll put on the screen."
 msgstr ""
+"Como mencionado antes, fazer jogos no Godot é como estar em uma cozinha. "
+"Então vamos abrir a geladeira e adicionar uns nós frescos ao projeto. Vamos "
+"começar com uma mensagem \"Olá, mundo!\" que vamos colocar na tela."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
 msgstr ""
+"Para fazer isso, pressione o botão \"Novo Nó\" (que se aparenta como um "
+"sinal de adição):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"Isso abre o diálogo Criar Nó, mostrando a longa lista de nós que podem ser "
+"criados:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the quickest way:"
 msgstr ""
+"Nele, selecionamos o nó \"Label\" (rótulo). Pesquisar por ele é "
+"provavelmente o jeito mais rápido:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
+"E, finalmente, criamos o rótulo! Um monte de coisa acontece quando Criar é "
+"pressionado:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
 msgid ""
@@ -214,6 +267,9 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"Primeiramente, a cena se altera para o editr 2D (porque Label é um tipo de "
+"nó 2D), e então o rótulo aparece, selecionado, no canto superior esquerdo da "
+"vista."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
 msgid ""
@@ -221,28 +277,37 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
+"O nó aparece no editor de árvore da cena (caixa no canto superior direito), "
+"e as propriedades do rótulo aparecem no Inspetor (caixa no cano inferior "
+"direito)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello, World!\":"
 msgstr ""
+"O próximo passo é mudar a propriedade \"Texto\" do rótulo. Vamos alterá-la "
+"para \"Olá, mundo!\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
+"Certo, tudo está pronto para executar a cena! Pressione o botão RODAR CENA "
+"na barra superior (ou pressione F6):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "Eeee… Opa."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"As cenas precisam ser salvam para serem executadas, então salve-a com um "
+"nome tipo ola.tscn em Cena -> Salvar:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -254,12 +319,22 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"E aqui é o ponto que algo curioso acontece. O diálogo de arquivo é um "
+"especial, e some lhe permite salvar dentro do projeto. A raiz do projeto é "
+"\"res://\", que significa \"caminho dos recursos\" (\"resources\", em "
+"inglês). Isso significa que arquivos só podem ser salvos dentro do projeto. "
+"No futuro, quando fizer operações com arquivos no Godot, lembre-se de que "
+"\"res://\" é o caminho dos recursos, e, não importa a plataforma ou o local "
+"de instalação, essa é a maneira de localizar onde os arquivos de recursos "
+"estão dentro do jogo."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello, World!\" "
 "demo should finally execute:"
 msgstr ""
+"Depois de salvar a cena e pressionar para rodar a cena de novo, a "
+"demonstração \"Olá, mundo!\" deveria finalmente executar:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
@@ -267,7 +342,7 @@ msgstr "Sucesso!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
-msgstr ""
+msgstr "Configurando o projeto"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid ""
@@ -276,6 +351,10 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"Pronto, hora de configurar o projeto. No momento, a única forma de rodar "
+"alguma coisa é executar a cena atual. Projetos, entretanto, podem ter muitas "
+"cenas, então uma delas deve ser definida como sendo a principal. Esta é a "
+"cena que será carregada sempre o projeto for executado."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid ""
@@ -285,22 +364,36 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"Essas configurações ficam todas armazenadas no arquivo project.godot, que é "
+"um arquivo de texto simples no formato win.ini para fácil edição. Existem "
+"dúzias de configurações que você pode alterar neste arquivo para mudar como "
+"o projeto executa. Para simplificar esse processo, o Godot fornece um "
+"diálogo de configurações de projeto, que age como um editor do arquivo "
+"project.godot."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
+"Para acessar esse diálogo, selecione Projeto -> Configurações do Projeto. "
+"Experimente isso agora."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'hello.tscn'."
 msgstr ""
+"Assim que a janela abrir, vamos selecionar uma cena principal. Localize a "
+"propriedade `Application/Run/Main Scene` (Aplicação/Execução/Cena Principal) "
+"e clique nela para selecionar \"ola.tscn\"."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"Agora, com esta mudança, ao pressionar o tradicional botão Play (ou F5), "
+"esta cena será executada, não importa qual seja a cena que você esteja "
+"editando."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
 msgid ""
@@ -309,6 +402,10 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"O diálogo de configurações do projeto fornece um monte de opções que podem "
+"ser salvas em um arquivo project.godot e mostra seus valores padrões. Se "
+"você alterar um valor, uma marca aparece à esquerda do nome. Isso significa "
+"que a propriedade será gravada no arquivo project.godot e lembrada."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
 msgid ""
@@ -316,10 +413,13 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"Além disso, também é possível adicionar opções de configuração "
+"personalizadas e lê-las em tempo de execução do jogo usando o singleton :ref:"
+"`ProjectSettings <class_ProjectSettings>`."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid "To be continued..."
-msgstr ""
+msgstr "Continua…"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
 msgid ""
@@ -327,3 +427,6 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"Este tutorial foi um guia sobre \"cenas e nós\", mas até agora só tivemos "
+"*uma* cena e *um* nó! Não se preocupe, o próximo tutorial vai ampliar seu "
+"conhecimento sobre isso…"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:45
 msgid "Data types"
-msgstr ""
+msgstr "Типи даних"
 
 #: ../../docs/tutorials/shading/shading_language.rst:47
 msgid "Most GLSL ES 3.0 datatypes are supported:"
@@ -115,7 +115,7 @@ msgstr "Опис"
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "**void**"
-msgstr ""
+msgstr "Пропуск"
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "Void datatype, useful only for functions that return nothing."
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "**bool**"
-msgstr ""
+msgstr "bool"
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "Boolean datatype, can only contain \"true\" or \"false\""
@@ -155,7 +155,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "**int**"
-msgstr ""
+msgstr "int"
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "Signed scalar integer."
@@ -187,7 +187,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "**uint**"
-msgstr ""
+msgstr "uint32"
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "Unsigned scalar integer, can't contain negative numbers."
@@ -219,7 +219,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "**float**"
-msgstr ""
+msgstr "Float"
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "Floating point scalar."
@@ -227,7 +227,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "**vec2**"
-msgstr ""
+msgstr "vec"
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "Two component vector of floating point values."
@@ -235,7 +235,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "**vec3**"
-msgstr ""
+msgstr "vec"
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "Three component vector of floating point values."
@@ -244,7 +244,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:84
 #: ../../docs/tutorials/shading/shading_language.rst:422
 msgid "**vec4**"
-msgstr ""
+msgstr "vec"
 
 #: ../../docs/tutorials/shading/shading_language.rst:84
 msgid "Four component vector of floating point values."
@@ -252,7 +252,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "**mat2**"
-msgstr ""
+msgstr "Маті"
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "2x2 matrix, in column major order."
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "**mat3**"
-msgstr ""
+msgstr "Маті"
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "3x3 matrix, in column major order."
@@ -268,7 +268,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "**mat4**"
-msgstr ""
+msgstr "Маті"
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "4x4 matrix, in column major order."
@@ -327,7 +327,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:107
 msgid "Example:"
-msgstr ""
+msgstr "Приклад:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:115
 msgid ""
@@ -381,7 +381,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:170
 msgid "Precision"
-msgstr ""
+msgstr "Точність"
 
 #: ../../docs/tutorials/shading/shading_language.rst:172
 msgid ""
@@ -409,7 +409,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:189
 msgid "Operators:"
-msgstr ""
+msgstr "Оператори:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:191
 msgid ""
@@ -427,11 +427,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:194
 msgid "Operator"
-msgstr ""
+msgstr "Оператор"
 
 #: ../../docs/tutorials/shading/shading_language.rst:196
 msgid "1 (highest)"
-msgstr ""
+msgstr "1 (найвищий)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:196
 msgid "parenthetical grouping"
@@ -507,7 +507,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:208
 msgid "equality"
-msgstr ""
+msgstr "Рівновага"
 
 #: ../../docs/tutorials/shading/shading_language.rst:208
 msgid "**==, !=**"
@@ -555,7 +555,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:216
 msgid "logical and"
-msgstr ""
+msgstr "Логічне «ТА»"
 
 #: ../../docs/tutorials/shading/shading_language.rst:216
 msgid "**&&**"
@@ -563,7 +563,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:218
 msgid "12 (lowest)"
-msgstr ""
+msgstr "Найнижчий"
 
 #: ../../docs/tutorials/shading/shading_language.rst:218
 msgid "logical inclusive or"
@@ -575,7 +575,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:222
 msgid "Flow Control"
-msgstr ""
+msgstr "Керування потоком"
 
 #: ../../docs/tutorials/shading/shading_language.rst:224
 msgid "Godot Shading language supports the most common types of flow control:"
@@ -600,7 +600,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:255
 msgid "Functions"
-msgstr ""
+msgstr "Функції"
 
 #: ../../docs/tutorials/shading/shading_language.rst:257
 msgid ""
@@ -713,7 +713,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:385
 msgid "**flat**"
-msgstr ""
+msgstr "Нейтральний"
 
 #: ../../docs/tutorials/shading/shading_language.rst:385
 msgid "The value is not interpolated"
@@ -729,7 +729,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:389
 msgid "**smooth**"
-msgstr ""
+msgstr "Згладжування"
 
 #: ../../docs/tutorials/shading/shading_language.rst:389
 msgid ""
@@ -762,7 +762,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:420
 msgid "Hint"
-msgstr ""
+msgstr "Підказка"
 
 #: ../../docs/tutorials/shading/shading_language.rst:422
 msgid "hint_color"
@@ -845,7 +845,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:454
 msgid "Built-in Functions"
-msgstr ""
+msgstr "Вбудовані функції"
 
 #: ../../docs/tutorials/shading/shading_language.rst:456
 msgid ""
@@ -856,7 +856,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:460
 msgid "Function"
-msgstr ""
+msgstr "Функція"
 
 #: ../../docs/tutorials/shading/shading_language.rst:462
 msgid "vec_type **radians** ( vec_type )"
@@ -880,7 +880,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:466
 msgid "Sine"
-msgstr ""
+msgstr "Синус"
 
 #: ../../docs/tutorials/shading/shading_language.rst:468
 msgid "vec_type **cos** ( vec_type )"
@@ -888,7 +888,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:468
 msgid "Cosine"
-msgstr ""
+msgstr "Синусоїда"
 
 #: ../../docs/tutorials/shading/shading_language.rst:470
 msgid "vec_type **tan** ( vec_type )"
@@ -896,7 +896,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:470
 msgid "Tangent"
-msgstr ""
+msgstr "Дотична"
 
 #: ../../docs/tutorials/shading/shading_language.rst:472
 msgid "vec_type **asin** ( vec_type )"
@@ -904,7 +904,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:472
 msgid "Arc-Sine"
-msgstr ""
+msgstr "Арксинус"
 
 #: ../../docs/tutorials/shading/shading_language.rst:474
 msgid "vec_type **acos** ( vec_type )"
@@ -912,7 +912,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:474
 msgid "Arc-Cosine"
-msgstr ""
+msgstr "Арккосинус"
 
 #: ../../docs/tutorials/shading/shading_language.rst:476
 msgid "vec_type **atan** ( vec_type )"
@@ -920,7 +920,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:476
 msgid "Arc-Tangent"
-msgstr ""
+msgstr "Обернений тангенс"
 
 #: ../../docs/tutorials/shading/shading_language.rst:478
 msgid "vec_type **atan** ( vec_type x, vec_type y )"
@@ -936,7 +936,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:480
 msgid "Hyperbolic-Sine"
-msgstr ""
+msgstr "Гіперболічний синус"
 
 #: ../../docs/tutorials/shading/shading_language.rst:482
 msgid "vec_type **cosh** ( vec_type )"
@@ -944,7 +944,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:482
 msgid "Hyperbolic-Cosine"
-msgstr ""
+msgstr "Гіперболічний косинус"
 
 #: ../../docs/tutorials/shading/shading_language.rst:484
 msgid "vec_type **tanh** ( vec_type )"
@@ -952,7 +952,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:484
 msgid "Hyperbolic-Tangent"
-msgstr ""
+msgstr "Гіперболічний тангенс"
 
 #: ../../docs/tutorials/shading/shading_language.rst:486
 msgid "vec_type **asinh** ( vec_type )"
@@ -960,7 +960,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:486
 msgid "Inverse-Hyperbolic-Sine"
-msgstr ""
+msgstr "Обернений гіперболічний синус"
 
 #: ../../docs/tutorials/shading/shading_language.rst:488
 msgid "vec_type **acosh** ( vec_type )"
@@ -968,7 +968,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:488
 msgid "Inverse-Hyperbolic-Cosine"
-msgstr ""
+msgstr "Обернений гіперболічний косинус"
 
 #: ../../docs/tutorials/shading/shading_language.rst:490
 msgid "vec_type **atanh** ( vec_type )"
@@ -976,7 +976,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:490
 msgid "Inverse-Hyperbolic-Tangent"
-msgstr ""
+msgstr "Гіперболічний арктангенс"
 
 #: ../../docs/tutorials/shading/shading_language.rst:492
 msgid "vec_type **pow** ( vec_type, vec_type )"
@@ -984,7 +984,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:492
 msgid "Power"
-msgstr ""
+msgstr "Степінь"
 
 #: ../../docs/tutorials/shading/shading_language.rst:494
 msgid "vec_type **exp** ( vec_type )"
@@ -1016,7 +1016,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:500
 msgid "Base-2 Logarithm"
-msgstr ""
+msgstr "Десятковий логарифм"
 
 #: ../../docs/tutorials/shading/shading_language.rst:502
 msgid "vec_type **sqrt** ( vec_type )"
@@ -1024,7 +1024,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:502
 msgid "Square Root"
-msgstr ""
+msgstr "Квадратний корінь"
 
 #: ../../docs/tutorials/shading/shading_language.rst:504
 msgid "vec_type **inversesqrt** ( vec_type )"
@@ -1041,7 +1041,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:506
 #: ../../docs/tutorials/shading/shading_language.rst:508
 msgid "Absolute"
-msgstr ""
+msgstr "Абсолютний"
 
 #: ../../docs/tutorials/shading/shading_language.rst:508
 msgid "vec_int_type **abs** ( vec_int_type )"
@@ -1054,7 +1054,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:510
 #: ../../docs/tutorials/shading/shading_language.rst:512
 msgid "Sign"
-msgstr ""
+msgstr "Підписати"
 
 #: ../../docs/tutorials/shading/shading_language.rst:512
 msgid "vec_int_type **sign** ( vec_int_type )"
@@ -1066,7 +1066,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:514
 msgid "Floor"
-msgstr ""
+msgstr "Підлога"
 
 #: ../../docs/tutorials/shading/shading_language.rst:516
 msgid "vec_type **round** ( vec_type )"
@@ -1074,7 +1074,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:516
 msgid "Round"
-msgstr ""
+msgstr "Округлені"
 
 #: ../../docs/tutorials/shading/shading_language.rst:518
 msgid "vec_type **roundEven** ( vec_type )"
@@ -1098,7 +1098,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:522
 msgid "Ceiling"
-msgstr ""
+msgstr "ceiling"
 
 #: ../../docs/tutorials/shading/shading_language.rst:524
 msgid "vec_type **fract** ( vec_type )"
@@ -1106,7 +1106,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:524
 msgid "Fractional"
-msgstr ""
+msgstr "дробовий"
 
 #: ../../docs/tutorials/shading/shading_language.rst:526
 msgid "vec_type **mod** ( vec_type, vec_type )"
@@ -1115,7 +1115,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:526
 #: ../../docs/tutorials/shading/shading_language.rst:528
 msgid "Remainder"
-msgstr ""
+msgstr "Залишок"
 
 #: ../../docs/tutorials/shading/shading_language.rst:528
 msgid "vec_type **mod** ( vec_type, float )"
@@ -1135,7 +1135,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:532
 msgid "Minimum"
-msgstr ""
+msgstr "Мінімум"
 
 #: ../../docs/tutorials/shading/shading_language.rst:534
 msgid "vec_scalar_type **max** ( vec_scalar_type a, vec_scalar_type b )"
@@ -1143,7 +1143,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:534
 msgid "Maximum"
-msgstr ""
+msgstr "Максимальний"
 
 #: ../../docs/tutorials/shading/shading_language.rst:536
 msgid ""
@@ -1310,7 +1310,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:576
 msgid "Reflect"
-msgstr ""
+msgstr "Віддзеркалення"
 
 #: ../../docs/tutorials/shading/shading_language.rst:578
 msgid "vec3 **refract** ( vec3 I, vec3 N, float eta )"
@@ -1350,7 +1350,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:586
 msgid "Transpose Matrix"
-msgstr ""
+msgstr "&Транспонувати матрицю"
 
 #: ../../docs/tutorials/shading/shading_language.rst:588
 msgid "float **determinant** ( mat_type )"
@@ -2500,7 +2500,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:964
 msgid "UV."
-msgstr ""
+msgstr "УФ"
 
 #: ../../docs/tutorials/shading/shading_language.rst:966
 msgid "Color from vertex primitive."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
 msgstr ""
-"Это означает что вы можете использовать его для любой игры или приложения, "
+"Это означает, что вы можете использовать его для любой игры или приложения, "
 "коммерческого или некоммерческого, в любой индустрии"
 
 #: ../../docs/about/faq.rst:17
@@ -111,7 +111,7 @@ msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Также посмотрите `на страницу лицензии официального сайта Godot <https://"
+"Также смотрите `страницу лицензии официального сайта Godot <https://"
 "godotengine.org/license>`_."
 
 #: ../../docs/about/faq.rst:34
@@ -152,7 +152,7 @@ msgstr "iOS"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr ""
+msgstr "Web"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
@@ -169,7 +169,7 @@ msgid ""
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
-"У некоторых пользователей получилось собрать и воспользоваться Godot на ARM-"
+"У некоторых пользователей получилось собрать и использовать Godot на ARM-"
 "системах с Linux, например на Raspberry Pi. Ведутся работы (вне основного "
 "проекта Godot) по запуску на игровых консолях, но в стандартные скрипты "
 "сборки и шаблоны экспорта такие расширения не входят."
@@ -227,6 +227,8 @@ msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
 msgstr ""
+"GDScript? Зачем использовать собственный язык сценариев, я не язык, к "
+"которому я привык?"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -238,6 +240,14 @@ msgid ""
 "language in Godot (see list of supported options above), but we strongly "
 "encourage you to try it and see the benefits for yourself."
 msgstr ""
+"Мы считаем, что дополнительные усилия с Вашей (изучение Godot и GDScript) и "
+"нашей стороны (создание и поддержка) с лихвой окупаются, когда Вы получаете "
+"единый слаженно работающий инструмент. Мы считаем, что это более важно, чем "
+"привлечение новых пользователей из других языков программирования ценой "
+"уменьшения слаженности при работе с движком. Мы рекомендуем Вам попробовать "
+"GDScript и убедиться в преимуществах, которые даёт такой подход, но если вы "
+"всё же решите использовать другой язык программирования - список "
+"поддерживаемых языков можно найти в предыдущем разделе."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -287,11 +297,11 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:105
 msgid "For the more technically versed, proceed to the next item."
-msgstr ""
+msgstr "Технически осведомленным можно перейти к следующему пункту."
 
 #: ../../docs/about/faq.rst:108
 msgid "I don't believe you. What are the technical reasons for the item above?"
-msgstr ""
+msgstr "Я вам не верю. Каковы технические причины для пункта выше?"
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
@@ -302,36 +312,51 @@ msgid ""
 "No good thread support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"В большинстве виртуальных машин (VM) нет хорошей поддержки потоков, а Godot "
+"использует потоки (Lua, Python, Squirrel, JS, AS и т.д.)."
 
 #: ../../docs/about/faq.rst:114
 msgid ""
 "No good class extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"В большинстве виртуальных машин нет хорошей поддержки расширения класса и "
+"процесс адаптации к Godot крайне неэффективен (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:116
 msgid ""
 "Horrible interface for binding to C++, results in large amount of code, "
 "bugs, bottlenecks and general inefficiency (Lua, Python, Squirrel, JS, etc.)"
 msgstr ""
+"Ужасный интерфейс для привязки к C++ приводит к большому количеству кода, "
+"ошибкам, узким местам и общей неэффективности (Lua, Python, Squirrel, JS и т."
+"д.)"
 
 #: ../../docs/about/faq.rst:119
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"Отсутствие родных типов (vector3, matrix4, и т.д.), приводило к серьёзному "
+"уменьшению производительности когда использовались собственные типы (Lua, "
+"Python, Squirrel, JS, AS, и т.д.)."
 
 #: ../../docs/about/faq.rst:122
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"Сборщик мусора приводит к остановке или излишне большому использованию "
+"памяти (Lua, Python, JS, AS и т.д.)."
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is very well supported by GDScript."
 msgstr ""
+"Сложная интеграция с редактором кода для обеспечения завершенности кода, "
+"редактирование в реальном времени и т.д. (все они). Это очень хорошо "
+"поддерживает GDScript."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
@@ -340,6 +365,11 @@ msgid ""
 "integration of scripting with the game engine (yes, it's a rare but very "
 "enjoyable situation when things just work). It's worth it, give it a try!"
 msgstr ""
+"GDScript был разработан для решения вышеперечисленных вопросов и очень "
+"хорошо работает во всех вышеперечисленных сценариях. Пожалуйста, изучите "
+"GDScript и вы получите очень плавную интеграцию скриптов с игровым движком "
+"(да, это редкая, но очень приятная ситуация, когда все работает). Это того "
+"стоит, попробуйте!"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
@@ -350,32 +380,40 @@ msgid ""
 "For creating Godot Editor plugins look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"Для создания плагинов к Godot Editor посмотрите: ref: `EditorPlugins "
+"<doc_making_plugins>` и инструмент-скрипты."
 
 #: ../../docs/about/faq.rst:139
 msgid ""
 "Additional languages could be added via PluginScript or the more low-level "
 "NativeScript."
 msgstr ""
+"Дополнительные языки могут быть добавлены через PluginScript или более "
+"низкоуровневый NativeScript."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
 "If you want to add a certain native library, your best bet is GDNative and "
 "custom C++ modules."
 msgstr ""
+"Если вы хотите добавить определенную родную библиотеку, лучшим вариантом "
+"будет GDNative и настраиваемые модули C++."
 
 #: ../../docs/about/faq.rst:143
 msgid "Also see the official blog posts on these topics:"
-msgstr ""
+msgstr "Также смотрите сообщения в официальном блоге по этим темам:"
 
 #: ../../docs/about/faq.rst:145
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
+"`Взгляд на архитектуру GDNative <https://godotengine.org/article/look-"
+"gdnative-architecture>`_"
 
 #: ../../docs/about/faq.rst:146
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr ""
+msgstr "`GDNative здесь! <Https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:148
 msgid ""
@@ -383,6 +421,9 @@ msgid ""
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot."
 msgstr ""
+"Вы также можете взглянуть на реализацию GDScript, модули Godot, а также на "
+"`неофициальную поддержку Python <https://github.com/touilleMan/godot-"
+"python>`_ для Godot."
 
 #: ../../docs/about/faq.rst:152
 msgid "Why is FBX not supported for import?"
@@ -406,24 +447,32 @@ msgid ""
 "Max. If you are using Blender, take a look at our own `Better Collada "
 "Exporter <https://godotengine.org/download>`_."
 msgstr ""
+"Тем не менее, поддержка Collada от Godot действительно хороша. Пожалуйста, "
+"используйте экспортер `OpenCollada <https://github.com/KhronosGroup/"
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>` _ для максимальной совместимости, если "
+"вы используете Maya или 3DS Max. Если вы используете Blender, ознакомьтесь с "
+"нашим собственным «Лучшим экспортером Collada» <https://godotengine.org/"
+"download> `_."
 
 #: ../../docs/about/faq.rst:164
 msgid "Also, glTF support was added in Godot 3.0."
-msgstr ""
+msgstr "Кроме того, в Godot 3.0 была добавлена поддержка glTF."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question above.)"
 msgstr ""
+"Поддержка FBX по-прежнему может предоставляться третьими лицами в качестве "
+"плагина. (см. вопрос о плагинах выше)"
 
 #: ../../docs/about/faq.rst:169
 msgid ""
 "Will [Insert closed SDK such as PhysX, GameWorks, etc.] be supported in "
 "Godot?"
 msgstr ""
-"Будет ли [Закрытый SDK такой как PhysX, GameWorks, и прочее ] поддерживаться "
-"в Godot?"
+"Будет ли [Закрытый SDK такой как PhysX, GameWorks, и т.д.] поддерживаться в "
+"Godot?"
 
 #: ../../docs/about/faq.rst:171
 msgid ""
@@ -443,18 +492,26 @@ msgid ""
 "anyone else interested into adding those libraries as a module and ship your "
 "game using them, as either open or closed source. Everything is allowed."
 msgstr ""
+"Однако, поскольку это свободное ПО с модульной архитектурой, ничто не мешает "
+"вам или кому-то другому добавить эти библиотеки как модуль и распространять "
+"вашу игру хоть со свободной, хоть с закрытой лицензией. Возможности не "
+"ограничены."
 
 #: ../../docs/about/faq.rst:181
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question above."
 msgstr ""
+"Чтобы узнать как еще можно обеспечить поддержку вашего SDK, взгляните на "
+"вопрос о плагинах выше."
 
 #: ../../docs/about/faq.rst:184
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"Как нужно создавать игровые ресурсы для поддержки различных разрешений "
+"экрана и соотношений сторон?"
 
 #: ../../docs/about/faq.rst:186
 msgid ""
@@ -466,6 +523,14 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"Этот вопрос всплывает часто, возможно благодаря недопониманию, созданному "
+"компанией Apple когда они впервые удвоили разрешение экранов их устройств. "
+"Это заставило разработчиков думать, что создавать игровую графику "
+"одновременно в нескольких разрешениях — хорошая идея, поэтому многие "
+"продолжали следовать этим путем. Это срабатывало до какого то времени и "
+"только для устройств Apple, но вспоследствии было выпущено несколько Android "
+"и Apple устройств с различными разрешениями и соотношениями сторон в широком "
+"спектре размеров устройств и DPI."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -473,6 +538,10 @@ msgid ""
 "base resolution for the game and only handle different screen aspects. This "
 "is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or YFov."
 msgstr ""
+"Самый стандартный и правильный способ достичь этого - использовать одно "
+"базовое разрешение для игры и только управлять различными соотношениями "
+"экрана. В основном, это нужно для 2D, так как в 3D это просто вопрос угла "
+"обзора камеры по осям X и Y (Camera XFov/YFov)."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -483,6 +552,13 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"Выберите одно базовое разрешение для своей игры. Даже если есть устройства, "
+"которые поднимаются до 2K и устройства, которые опускаются до 400p, обычное "
+"аппаратное масштабирование на вашем устройстве позаботится об этом "
+"практически без затрат. Наиболее распространенные варианты - либо около "
+"1080p (1920x1080), либо 720p (1280x720). Имейте в виду, что чем выше "
+"разрешение, тем больше ваши ассеты, больше памяти они будут занимать и "
+"больше времени им потребуется для загрузки."
 
 #: ../../docs/about/faq.rst:208
 msgid ""
@@ -490,6 +566,9 @@ msgid ""
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
 "this."
 msgstr ""
+"Используйте опцию растягивания в Godot, 2D растягивание с сохранением "
+"пропорции работает отлично. Смотрите руководство :ref:"
+"`doc_multiple_resolutions` чтобы понять как достичь этого."
 
 #: ../../docs/about/faq.rst:212
 msgid ""
@@ -498,6 +577,10 @@ msgid ""
 "there is a minimum one and you want black bars to appear instead. This is "
 "also explained in the previous step."
 msgstr ""
+"Определите минимальное разрешение, а затем решите, хотите ли вы, чтобы ваша "
+"игра растягивалась вертикально или горизонтально для разных соотношений "
+"сторон или была в одном минимальном разрешении, с отображением черных полос "
+"по краям. Это также объясняется на предыдущем шаге."
 
 #: ../../docs/about/faq.rst:217
 msgid ""
@@ -505,10 +588,14 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"Для пользовательских интерфейсов используйте :ref: `закрепление "
+"<doc_size_and_anchors>`, чтобы определить, где элементы управления должны "
+"оставаться и перемещаться. Если пользовательские интерфейсы являются очень "
+"сложными, подумайте о том, как использовать контейнеры."
 
 #: ../../docs/about/faq.rst:221
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr ""
+msgstr "И всё! Ваша игра будет работать в нескольких разрешениях."
 
 #: ../../docs/about/faq.rst:223
 msgid ""
@@ -517,6 +604,10 @@ msgid ""
 "option to shrink images, and set that build to be used for certain screen "
 "sizes in the App Store or Google Play."
 msgstr ""
+"Если вам очень нужно сделать игру так, чтобы она работала на старых "
+"устройствах с маленькими экранами (меньше чем 300 пикселей в ширину), вы "
+"можете использовать опцию экспорта для сжатия картинок, и настроить проект "
+"на использование необходимых разрешений экрана в App Store или Google Play."
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"
@@ -528,26 +619,30 @@ msgid ""
 "Your idea will most certainly be ignored. Examples of stuff that is ignored "
 "by the developers:"
 msgstr ""
+"Ваша идея скорее всего будет отброшена. Примеры идей которые будут "
+"проигнорированы разработчиками:"
 
 #: ../../docs/about/faq.rst:234
 msgid "Let's do this because it will make Godot better"
-msgstr ""
+msgstr "Давайте сделаем это потому что это сделает Godot лучше"
 
 #: ../../docs/about/faq.rst:235
 msgid "Let's do this in Godot because another game engine does it"
-msgstr ""
+msgstr "Давайте добавим это в Godot потому что это есть в другом движке"
 
 #: ../../docs/about/faq.rst:236
 msgid "Let's remove this because I think it's not needed"
-msgstr ""
+msgstr "Давайте удалим это потому что я думаю что это не нужно"
 
 #: ../../docs/about/faq.rst:237
 msgid "Let's remove clutter and bloat and make Godot look nicer"
-msgstr ""
+msgstr "Давайте уберем беспорядок и навороты и заставим Godot выглядеть лучше"
 
 #: ../../docs/about/faq.rst:238
 msgid "Let's add an alternative workflow for people who prefer it"
 msgstr ""
+"Давайте добавим альтернативный рабочий процесс для людей, которые "
+"предпочитают его"
 
 #: ../../docs/about/faq.rst:240
 msgid ""
@@ -557,34 +652,47 @@ msgid ""
 "ideas solely based on personal belief. Developers are interested in (for "
 "example):"
 msgstr ""
+"Разработчики Godot всегда хотят открыто говорить с вами и слушать ваши "
+"отзывы, что довольно редко встречается в проектах с открытым исходным кодом, "
+"но они будут рассматривать серьёзные проблемы, которые случились с вами при "
+"использовании Godot, а не идеи базирующиеся на личном предпочтении. Например "
+"разработчики заинтересованы:"
 
 #: ../../docs/about/faq.rst:246
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"Ваш опыт использования данного программного обеспечения и возникающие у вас "
+"проблемы (нас волнует это гораздо больше, чем идеи об улучшениях)."
 
 #: ../../docs/about/faq.rst:248
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"Возможности, которые вы бы хотели видеть реализованными, потому что они "
+"нужны вам в вашем проекте."
 
 #: ../../docs/about/faq.rst:250
 msgid ""
 "The concepts that were difficult to understand in order to learn the "
 "software."
-msgstr ""
+msgstr "Концепции, которые было сложно понять в процессе изучения программы."
 
 #: ../../docs/about/faq.rst:252
 msgid "The parts of your workflow you would like to see optimized."
 msgstr ""
+"Части вашего рабочего процесса, которые вы хотели бы видеть "
+"оптимизированными."
 
 #: ../../docs/about/faq.rst:253
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't up "
 "to par."
 msgstr ""
+"Части, где вы чувствовали недостаток обучающих руководств или где "
+"документация была недостаточна подробна."
 
 #: ../../docs/about/faq.rst:255
 msgid ""
@@ -592,6 +700,10 @@ msgid ""
 "and this is where your ideas and suggestions are most valuable and welcome, "
 "they need to be in context of a real issue."
 msgstr ""
+"После того, как один из вышеперечисленных пунктов будет изложен, мы сможем "
+"работать вместе над решением, и именно здесь ваши идеи и предложения "
+"являются наиболее ценными и желанными, они должны быть в контексте реальной "
+"проблемы."
 
 #: ../../docs/about/faq.rst:259
 msgid ""
@@ -599,26 +711,31 @@ msgid ""
 "try to reformulate them as a problem first, so developers and the community "
 "have a base ground to discuss first."
 msgstr ""
+"Поэтому, пожалуйста, не чувствуйте, что ваши идеи для Godot нежелательны. "
+"Вместо этого попробуйте сначала переформулировать их как проблему, таким "
+"образом разработчики и сообщество получат, в первую очередь, основу для "
+"обсуждения."
 
 #: ../../docs/about/faq.rst:263
 msgid "Examples of how NOT to state problems generally and vaguely are:"
-msgstr ""
+msgstr "Примеры как НЕ надо составлять предложения и неясности:"
 
 #: ../../docs/about/faq.rst:265
 msgid "Certain feature is ugly"
-msgstr ""
+msgstr "Конкретная возможность уродлива"
 
 #: ../../docs/about/faq.rst:266
 msgid "Certain workflow is slow"
-msgstr ""
+msgstr "Конкретный рабочий процесс медленный"
 
 #: ../../docs/about/faq.rst:267
 msgid "Certain feature needs optimization"
-msgstr ""
+msgstr "Конкретная возможность нуждается в оптимизации"
 
 #: ../../docs/about/faq.rst:268
 msgid "Certain aspect of the UI looks cluttered"
 msgstr ""
+"Конкретный элемент в интерфейсе с моей точки зрения выглядит неправильно"
 
 #: ../../docs/about/faq.rst:270
 msgid ""
@@ -626,22 +743,29 @@ msgid ""
 "developers will most likely not understand you. Instead, try to reformulate "
 "your problem as a story such as:"
 msgstr ""
+"Описание чего-то прилагательным не привлечет к вам много внимания, и "
+"разработчики, скорее всего, не поймут вас. Вместо этого попробуйте "
+"переформулировать свою проблему как историю, например такую:"
 
 #: ../../docs/about/faq.rst:274
 msgid "I try to move objects around but always end up picking the wrong one"
-msgstr ""
+msgstr "Я пытаюсь перемещать объекты, но всегда выбираю не тот, что хотел."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
 "I tried to make a game like Battlefield but I'm not managing to understand "
 "how to get lighting to look the same."
 msgstr ""
+"Я пытался сделать игру, как Battlefield, но мне не удается понять, как "
+"получить похожее освещение."
 
 #: ../../docs/about/faq.rst:277
 msgid ""
 "I always forget which script I was editing, and it takes me too many steps "
 "to go back to it."
 msgstr ""
+"Я всегда забываю, какой скрипт я редактировал, и мне нужно сделать слишком "
+"много шагов, чтобы вернуться к нему."
 
 #: ../../docs/about/faq.rst:280
 msgid ""
@@ -650,12 +774,18 @@ msgid ""
 "stories to the developers and the community, before discussing any idea. Be "
 "specific and concrete."
 msgstr ""
+"Это позволит вам передать то, что вы думаете гораздо лучше и установить "
+"общую основу для обсуждения. Пожалуйста, попробуйте все возможное, чтобы "
+"представить ваши проблемы как материал для разработчиков и сообщества, "
+"прежде чем обсуждать любую идею. Будьте конкретны и точны."
 
 #: ../../docs/about/faq.rst:285
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases or "
 "example projects (if applicable)."
 msgstr ""
+"Плюс в карму за предоставление скриншотов, конкретных значений, тестовых "
+"случаев или проектов-примеров (если возможно)."
 
 #: ../../docs/about/faq.rst:288
 msgid "How can I support Godot development or contribute?"
@@ -663,7 +793,7 @@ msgstr "Как я могу поддержать разработку Godot ил�
 
 #: ../../docs/about/faq.rst:290
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "Смотрите :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:293
 msgid "Who is working on Godot? How can I contact you?"

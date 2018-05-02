@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,53 +19,63 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
-msgstr ""
+msgstr "Contrôler l'interface utilisateur du jeu avec du code"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 msgid "Intro"
-msgstr ""
+msgstr "Introduction"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
 msgid ""
 "In this tutorial you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
+"Dans ce tutoriel, vous allez connecter un personnage à une barre de vie et "
+"animer la perte de santé."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
 "Here's what you'll create: the bar and the counter animate when the "
 "character takes a hit. They fade when it dies."
 msgstr ""
+"Voici ce que vous allez créer : la barre et le compteur s'animent lorsque le "
+"personnage prend un coup. Ils s'estompent quand il meurt."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:18
 msgid "You will learn:"
-msgstr ""
+msgstr "Vous apprendrez :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
 msgstr ""
+"Comment **connecter** un personnage à une interface graphique avec des "
+"signaux"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr ""
+msgstr "Comment **contrôler** une interface graphique avec GDscript"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
 msgstr ""
+"Comment **animer** une barre de vie avec le nœud :ref:`Tween "
+"<class_Tween_Tween>`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:25
 msgid ""
 "If you want to learn how to set up the interface instead, check out the step-"
 "by-step UI tutorials:"
 msgstr ""
+"Si vous voulez apprendre comment configurer l'interface à la place, "
+"consultez les tutoriels pas-à-pas de l'interface utilisateur :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid "Create a main menu screen"
-msgstr ""
+msgstr "Créer un écran de menu principal"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
 msgid "Create a game user interface"
-msgstr ""
+msgstr "Créer une interface utilisateur de jeu"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -77,6 +87,14 @@ msgid ""
 "manageable, and allows different team members to work on different parts of "
 "the game."
 msgstr ""
+"Lorsque vous codez un jeu, vous voulez d'abord construire le gameplay de "
+"base : les mécaniques principales, les actions du joueur, les conditions de "
+"victoire et de défaite. L'interface utilisateur arrive un peu plus tard. "
+"Vous voulez que tous les éléments qui composent votre projet soient séparés "
+"si possible. Chaque personnage devrait être dans sa propre scène, avec ses "
+"propres scripts, de même que pour les éléments de l'interface utilisateur. "
+"Cela permet d'éviter les bugs, de garder votre projet gérable, et permet à "
+"différents membres de l'équipe de travailler sur différentes parties du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:40
 msgid ""
@@ -85,10 +103,15 @@ msgid ""
 "constant time intervals. We want the life bar to update when the Player "
 "takes damage."
 msgstr ""
+"Une fois que le gameplay de base et l'interface utilisateur sont prêts, vous "
+"devrez les connecter d'une manière ou d'une autre. Dans notre exemple, nous "
+"avons l'ennemi qui attaque le joueur à intervalles de temps constants. Nous "
+"voulons que la barre de vie se mette à jour lorsque le joueur subit des "
+"dégâts."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
 msgid "To do this, we will use **signals**."
-msgstr ""
+msgstr "Pour ce faire, nous utiliserons des **signaux**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
 msgid ""
@@ -101,10 +124,19 @@ msgid ""
 "information on check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
+"Les signaux sont la version Godot du patron de conception Observateur. Ils "
+"nous permettent d'envoyer un message. D'autres nœuds peuvent se connecter à "
+"l'objet qui **émet** le signal et reçoit l'information. C'est un outil "
+"puissant que nous utilisons beaucoup pour l'interface utilisateur et les "
+"systèmes de succès. Mais vous ne voulez pas les utiliser partout. La "
+"connexion de deux nœuds ajoute un certain couplage entre eux. Quand il y a "
+"beaucoup de connexions, elles deviennent difficiles à gérer. Plus "
+"d'informations sur le tutoriel vidéo `Introduction to signals in the Godot "
+"game engine <https://youtu.be/l0BkQxF7X3E>`_ sur GDquest."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
-msgstr ""
+msgstr "Télécharger et explorer le projet de démarrage"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:55
 msgid ""
@@ -112,6 +144,10 @@ msgid ""
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
+"Télécharger le projet Godot : :download:`ui_code_life_bar.zip <files/"
+"ui_code_life_bar.zip>`. Il contient toutes les ressources et les scripts "
+"dont vous avez besoin pour démarrer. Extraire l'archive .zip pour obtenir "
+"deux dossiers : `start` et `end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -122,6 +158,12 @@ msgid ""
 "basic combat mechanics already work. But as the character isn't connected to "
 "the life bar the ``GUI`` doesn't do anything."
 msgstr ""
+"Charger le projet ``start`` dans Godot. Dans le dock ``FileSystem``, double-"
+"cliquez sur LevelMockup.tscn pour l'ouvrir. C'est une maquette de jeu de "
+"rôle où 2 personnages se font face. L'ennemi rose attaque et endommage le "
+"carré vert à intervalles réguliers, jusqu'à sa mort. N'hésitez pas à essayer "
+"le jeu : les mécanismes de combat de base fonctionnent déjà. Mais comme le "
+"personnage n'est pas connecté à la barre de vie, le ``GUI`` ne fait rien."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:68
 msgid ""
@@ -132,6 +174,13 @@ msgid ""
 "prototype and test the gameplay, chances are it won't work well and you'll "
 "have to re-create it from scratch."
 msgstr ""
+"C'est typique de la façon dont vous codez un jeu : vous implémentez d'abord "
+"le gameplay de base, vous gérez la mort du joueur, et seulement ensuite vous "
+"ajouterez l'interface. C'est parce que l'interface utilisateur écoute ce qui "
+"se passe dans le jeu. Il ne peut donc pas fonctionner si d'autres systèmes "
+"ne sont pas encore en place. Si vous concevez l'interface utilisateur avant "
+"de prototyper et de tester le gameplay, il y a de fortes chances qu'il ne "
+"fonctionnera pas bien et que vous devrez le recréer à partir de zéro."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
@@ -140,6 +189,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
 msgstr ""
+"L'arbre des scènes, avec la scène de l'interface graphique pour afficher ses "
+"enfants"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,35 +19,41 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "Instâncias (continuação)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "Recapitulação"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"Instâncias tem muitos usos interessantes. Olhando de relance, com instâncias "
+"você tem:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "A habilidade de subdividir cenas e torná-las mais fáceis de gerenciar."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid ""
 "A more flexible alternative to prefabs (and much more powerful given that "
 "instances can be nested)."
 msgstr ""
+"Uma alternativa mais flexível aos prefabs (e muito mais poderosa, já que "
+"instâncias podem ser aninhadas)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"Uma maneira de organizar e embutir fluxos complexos de jogo e mesmo "
+"interfaces com usuário (no Godot, elementos de interface também são nós)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
 msgid "Design language"
-msgstr ""
+msgstr "Linguagem de concepção"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
 msgid ""
@@ -56,6 +62,10 @@ msgid ""
 "Godot from all the other engines out there. Godot was designed from the "
 "ground up around this concept."
 msgstr ""
+"Mas a maior força que vem de instâncias de cenas é que isso funciona como "
+"uma excelente linguagem de concepção. Isso é o que mais distingue Godot de "
+"todos os outros motores de jogos existentes por aí afora. O Godot foi todo "
+"projetado pensando neste conceito."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
 msgid ""
@@ -65,10 +75,16 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"Ao fazer jogos com o Godot, a abordagem recomendada é dispensar os padrões "
+"de concepção mais comuns, como MVC e diagramas de Entidade-Relacionamento, "
+"e, em vez disso, pensar nas suas cenas de uma forma mais natural. Comece "
+"imaginando os elementos visíveis do seu jogo, aqueles que conseguem ser "
+"citados não só pelo programador, mas por qualquer um."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
 msgid "For example, here's how a simple shooter game could be imagined:"
 msgstr ""
+"Por exemplo, aqui está como um jogo simples de tiro poderia ser imaginado:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
 msgid ""
@@ -76,6 +92,9 @@ msgid ""
 "game. Just write down the parts of the game that you can visualize, and then "
 "add arrows to represent ownership of one component by another."
 msgstr ""
+"É muito fácil chegar a um diagrama desse tipo para quase qualquer tipo de "
+"jogo. Só anote as partes do jogo que consegue visualizar e daí adicione "
+"setas que representam a posso de um componente por outro."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
 msgid ""
@@ -84,6 +103,9 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"Com um diagrama desse tipo, o processo recomendado para fazer um jogo é "
+"criar uma cena para cada elemento listado no diagrama. Você usará instâncias "
+"(seja por código ou diretamente pelo editor) para as relações de posse."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
 msgid ""
@@ -95,12 +117,22 @@ msgid ""
 "design-based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"Muito do tempo gasto em programação de jogos (ou de softwares em geral) é "
+"projetando uma arquitetura e fazendo os componentes do jogo se encaixar "
+"nela. Projeto baseado em cenas substitui essa abordagem e torna o "
+"desenvolvimento muito mais rápido e mais direto, lhe permitindo se "
+"concentrar na lógica do jogo em si. Pelo fato de a maioria dos componentes "
+"do jogo serem mapeados diretamente a uma cena, usar projeto baseado em "
+"instâncias de cena significa que se faz necessário pouco código extra para "
+"arquitetura."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"Vamos dar uma olhada em mais um exemplo, um tanto mais complexo, de um jogo "
+"do tipo mundo aberto, com muitos ativos e elementos aninhados:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
 msgid ""
@@ -109,6 +141,11 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"Dê uma olhada no elemento \"aposento\". Digamos que começamos por lá. Nós "
+"poderíamos fazer algumas outras cenas de aposentos diferentes, com "
+"diferentes disposições dos móveis (que também são cenas) neles. Depois, "
+"poderíamos fazer uma cena de casa, conectando aposentos para compor seu "
+"interior."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
 msgid ""
@@ -116,6 +153,9 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"Então, poderíamos fazer a cena de uma cidadela, que é composta por muitas "
+"instâncias de casas. Assim, poderíamos começar a trabalhar no terreno do "
+"mapa do mundo, adicionando a cidadela nele."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
 msgid ""
@@ -123,6 +163,9 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"Posteriormente, poderíamos criar cenas que representem guardas (e outros "
+"personagens não jogáveis) e adicioná-los na cidadela também. Como resultado, "
+"eles seriam indiretamente adicionados no mundo do jogo."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
 msgid ""
@@ -133,10 +176,16 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Como Godot, é fácil fazer esse tipo de iteração no seu jogo, já que tudo que "
+"você precisa fazer é criar mais cenas e suas instâncias. Além disso, a "
+"interface do editor é projetada para ser amigável para programadores e não-"
+"programadores. Um processo típico de desenvolvimento em equipe pode envolver "
+"artistas 2D e 3D, projetistas de níveis, projetistas de jogo e animadores, "
+"todos trabalhando com a interface do editor."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
 msgid "Information overload!"
-msgstr ""
+msgstr "Sobrecarga de informações!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
 msgid ""
@@ -144,6 +193,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"Esta página fez chover muitas informações de alto nível de uma vez na sua "
+"cabeça. Entretanto, a parte importante deste tutorial era conscientizar como "
+"as cenas e suas instâncias são usadas em projetos reais."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
 msgid ""
@@ -151,3 +203,6 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and just go on to the next tutorial!"
 msgstr ""
+"Tudo discutido aqui se tornará natural assim que você começar a fazer jogos "
+"e colocar esses conceitos em prática. Por ora, não se preocupe demais com "
+"isso e simplesmente prossiga para o próximo tutorial!"

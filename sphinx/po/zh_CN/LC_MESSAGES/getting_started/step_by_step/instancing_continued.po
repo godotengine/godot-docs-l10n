@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,35 +19,36 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "实例化(续)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "概要"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
-msgstr ""
+msgstr "实例化有很多便捷的用途。大致来说，实例化拥有："
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "细分场景并使其更简单地管理的能力。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid ""
 "A more flexible alternative to prefabs (and much more powerful given that "
 "instances can be nested)."
 msgstr ""
+"一种更灵活的预设（Prefabs）替代方案（基于实例的可嵌套性，会更加强大）。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
-msgstr ""
+msgstr "一种方式来设计更复杂的游戏流程甚至是UI（UI元素在Godot中也是节点）。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
 msgid "Design language"
-msgstr ""
+msgstr "设计语言"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
 msgid ""
@@ -56,6 +57,8 @@ msgid ""
 "Godot from all the other engines out there. Godot was designed from the "
 "ground up around this concept."
 msgstr ""
+"但实例场景带来的最大优势在于它可以作为一种优秀的设计语言。这也是Godot区别于其"
+"他游戏引擎的主要因素。Godot引擎就是围绕着这个概念从头设计的。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
 msgid ""
@@ -65,10 +68,13 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"当使用Godot制作游戏时，推荐的方法是把其他的设计风格例如MVC（模型-视图-控制器"
+"模式）或者实体关系图（E-R图）抛开，并且开始以一种自然的方式思考游戏。开始想象"
+"游戏中的所有可见元素，那些能够不只被程序员，而是能被任何人命名的东西。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
 msgid "For example, here's how a simple shooter game could be imagined:"
-msgstr ""
+msgstr "比如说，想象一下有一个简单的射击游戏："
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
 msgid ""
@@ -76,6 +82,8 @@ msgid ""
 "game. Just write down the parts of the game that you can visualize, and then "
 "add arrows to represent ownership of one component by another."
 msgstr ""
+"对于几乎任何类型的游戏来说，想出这样的图很容易。只需要写下游戏中可以看到的部"
+"分，然后用箭头表示它们的所属关系。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
 msgid ""
@@ -84,6 +92,8 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"一旦形成了这样的图，制作一个游戏就可以是为每个图中的节点创建一个场景。然后使"
+"用其实例（或通过代码，或通过编辑器）来表达所属关系。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
 msgid ""
@@ -95,12 +105,16 @@ msgid ""
 "design-based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"开发游戏（或者是通用软件）的大部分时间被花费在设计结构并把游戏组件适配到这个"
+"结构当中。基于场景的设计方法替代了它并使开发变得更快更直接，并允许你关注游戏"
+"逻辑本身。由于大多数游戏组件直接映射到场景中，所以使用基于场景实例的设计手段"
+"意味着很少需要其他结构的代码。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
-msgstr ""
+msgstr "我们来看看另一个更复杂的开放世界类游戏的例子，它有很多资源和嵌套元素："
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
 msgid ""
@@ -109,6 +123,8 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"看一看房间（Room）元素。我们从这开始。我们制作几个不同的房间场景，里面有不同"
+"的家具（和场景）布置。然后我们做一个房屋（House）场景，用这些房间来填充内部。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
 msgid ""
@@ -116,6 +132,8 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"然后，我们可以制作一个城堡（Citadel）场景，有许多实例化的房屋在里面。然后我们"
+"可以在世界地图地形（Terrain）上工作了，将城堡添加进来。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
 msgid ""
@@ -123,6 +141,8 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"然后，我们可以创建代表卫兵（和其它NPC）的场景，并将它们添加到城堡中。因此，它"
+"们会间接地被加入到整个游戏世界。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
 msgid ""
@@ -133,10 +153,14 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"使用Godot，就可以很容易像这样迭代你的游戏，因为你需要做的就是创建和实例化更多"
+"的场景。编辑器UI也被设计成对程序员和非程序员都友好，一个典型的团队开发过程会"
+"涉及2D或3D美术工作者、关卡设计师、游戏设计师、动画师，他们都可以这个编辑器界"
+"面工作。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
 msgid "Information overload!"
-msgstr ""
+msgstr "信息量太大了！"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
 msgid ""
@@ -144,6 +168,8 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"本篇一直涉及到进阶的信息。然而本教程最重要的是让你领悟到实际项目中如何使用场"
+"景和实例。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
 msgid ""
@@ -151,3 +177,5 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and just go on to the next tutorial!"
 msgstr ""
+"一旦你开始制作游戏并将这些概念付诸实践，这里讨论的一切将成为你的“第二天性\"。"
+"现在，不要太担心，继续下一个教程吧！"

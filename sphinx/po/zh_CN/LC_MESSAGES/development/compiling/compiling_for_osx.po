@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,8 @@ msgstr ""
 msgid ""
 "For compiling under Linux or other Unix variants, the following is required:"
 msgstr ""
+"要在 Linux 或者其他类 Unix 操作系统上编译 Godot , 你需要准备以下软件和开源"
+"库："
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
 msgid "Python 2.7+ or Python 3.5+"
@@ -36,7 +38,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
 msgid "SCons build system"
-msgstr ""
+msgstr "Scons 构建系统"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:16
 msgid "Xcode (or the more lightweight Command Line Tools for Xcode)"
@@ -44,12 +46,12 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
 msgid "Compiling"
-msgstr ""
+msgstr "开始编译"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:21
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
-msgstr ""
+msgstr "启动终端，然后进入引擎源代码的根目录。键入下面的指令："
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:27
 msgid ""
@@ -57,6 +59,8 @@ msgid ""
 "\" subdirectory. This executable file contains the whole engine and runs "
 "without any dependencies. Executing it will bring up the project manager."
 msgstr ""
+"如果一切顺利，编译结果将存放在 ``bin`` 目录下。 这个可执行文件包含了整个引"
+"擎，无需任何依赖项。 执行它将会启动项目管理器。"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:32
 msgid ""

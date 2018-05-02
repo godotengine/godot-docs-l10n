@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "导入过程"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "在 Godot 3.0+ 中导入资产"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -32,6 +32,8 @@ msgid ""
 "to specify how to convert and change import flags for textures, audios, "
 "scenes, etc."
 msgstr ""
+"以前，在Godot 2.x中导入资产需要手动维护一个包含源资产的单独目录。 如果不这样"
+"做，就无法指定如何转换和更改纹理，音频，场景等的导入标志。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
 msgid ""
@@ -41,14 +43,17 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
+"在Godot 3.0中，我们使用更现代的导入方法：只需将您的资源（图像文件，场景，音"
+"频，字体等）直接放到项目文件夹中（使用系统文件浏览器手动复制它们）。 Godot会"
+"自动在内部导入这些文件，并将导入的资源隐藏在res：//.import文件夹中。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid "This allows changing all the import parameters transparently."
-msgstr ""
+msgstr "这允许透明地更改所有导入参数。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:23
 msgid "Changing import parameters"
-msgstr ""
+msgstr "更改导入参数"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:25
 msgid ""
@@ -56,12 +61,16 @@ msgid ""
 "import parameters are only present in non-native Godot resource types) is "
 "easy. Just select in the filesystem dock the relevant resource:"
 msgstr ""
+"在Godot中更改资产的导入参数（再次记住，导入参数仅存在于非内置的 Godot 资源类"
+"型中）很容易。 只需在文件系统面板中选择相关资源即可："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
 msgid ""
 "And, after adjusting the parameters, just press \"Reimport\". The parameters "
 "used will be only for this asset and will be used on future reimports."
 msgstr ""
+"并且，在调整参数后，按下“重新导入”。 所使用的参数将仅用于此资产，并将用于未来"
+"的重新导入。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
 msgid ""
@@ -69,10 +78,12 @@ msgid ""
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
+"同时更改多个资产的导入参数也是可能的。 只需在资源面板中一起选择所有这些资产，"
+"当重新导入时, 所暴露的参数将应用于它们。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
-msgstr ""
+msgstr "自动重新导入"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -80,21 +91,25 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
+"当源资产的 MD5 校验发生变化时，Godot 将执行自动重新导入，应用为该特定资产配置"
+"的预设。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Files generated"
-msgstr ""
+msgstr "生成的文件"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"导入将添加一个额外的<asset> .import 文件，其中包含导入配置。 确保将这些提交到"
+"您的版本控制系统！"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:53
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
-msgstr ""
+msgstr "此外，额外的资产将预设在隐藏的res：//.import文件夹中："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
 msgid ""
@@ -104,10 +119,13 @@ msgid ""
 "reimporting time when checking out in another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
+"如果此文件夹中的任何文件被删除（或整个文件夹），则资产将自动重新导入。 因此，"
+"将此文件夹提交给版本控制系统是可选的。 在另一台计算机上检查时，它可以节省重新"
+"导入的时间，但需要更多的空间和传输时间。 请自己决定！"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"
-msgstr ""
+msgstr "更改导入资源类型"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:66
 msgid ""
@@ -115,10 +133,12 @@ msgid ""
 "this, just select the relevant type of resource desired and press \"Reimport"
 "\":"
 msgstr ""
+"一些源资产可以作为不同类型的资源导入。 为此，只需选择所需的相关资源类型并"
+"按“重新导入”即可："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "更改默认导入参数"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
@@ -127,19 +147,23 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
+"不同类型的游戏可能需要不同的默认值。 通过使用“Preset ..”菜单可以更改每个项目"
+"的默认值。 除了某些提供预设的资源类型外，还可以保存和清除默认设置："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "简单是关键!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:86
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
+"这是一个非常简单的工作流程，只需很短的时间来习惯。 它还能以更加正确的方式来处"
+"理资源。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
-msgstr ""
+msgstr "有许多类型的资源可供导入，因此请继续阅读以了解如何使用这些资源！"

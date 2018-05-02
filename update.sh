@@ -106,6 +106,7 @@ if [ "$update_sphinx_po" = true ]; then
   rm -rf $SPHINX_PO_DIR
   mkdir $SPHINX_PO_DIR
   for po in $WEBLATE_POFILES; do
+    echo "Merging $po..."
     lang=$(basename "$po" .po)
     langdir="$SPHINX_PO_DIR/$lang/LC_MESSAGES"
     mkdir -p "$langdir"

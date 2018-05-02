@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,7 @@ msgid "Viewport and Canvas items"
 msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
+#, fuzzy
 msgid ""
 "Regular 2D nodes, such as :ref:`Node2D <class_Node2D>` or :ref:`Control "
 "<class_Control>` both inherit from :ref:`CanvasItem <class_CanvasItem>`, "
@@ -33,12 +34,18 @@ msgid ""
 "they will inherit their transform. This means that when moving the parent, "
 "the children will be moved too."
 msgstr ""
+"一般的2D節點，例如 :ref:`Node2D <class_Node2D>` 或 :ref:`Control "
+"<class_Control>` ，都是繼承自 :ref:`CanvasItem <class_CanvasItem>` ，也就是所"
+"有2D節點的基礎。CanvasItems可以形成樹狀結構，並且座標轉換(transform)會被繼"
+"承。意思是當父節點的座標被移動，子節點的座標也會跟著移動。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
+#, fuzzy
 msgid ""
 "These nodes are placed as direct or indirect children to a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
 msgstr ""
+"這些節點都是 :ref:`Viewport <class_Viewport>` 的子節點，會經由它來顯示。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""

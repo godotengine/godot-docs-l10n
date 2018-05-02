@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,11 +65,11 @@ msgstr "Einrückungen"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:27
 msgid "Indent type: Tabs *(editor default)*"
-msgstr "Einrücksungstyp: Tabs *(Standart)*"
+msgstr "Einrücksungstyp: Tabs *(Standard)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:29
 msgid "Indent size: 4 *(editor default)*"
-msgstr "Einrückungsgroße: 4 *(Standart)*"
+msgstr "Einrückungsgroße: 4 *(Standard)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:31
 msgid "Each indent level should be one greater than the block containing it."
@@ -82,7 +82,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:83
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-msgid "**Good**"
+#, fuzzy
+msgid "**Good**:"
 msgstr "**Gut**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
@@ -90,7 +91,8 @@ msgstr "**Gut**"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:93
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
-msgid "**Bad**"
+#, fuzzy
+msgid "**Bad**:"
 msgstr "**Schlecht**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
@@ -108,8 +110,8 @@ msgstr "Leere Zeilen"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:72
 msgid "Surround functions and class definitions by a blank line."
 msgstr ""
-"Vor und nach einer Funktionens bzw. Klassendefinitionen sollte eine "
-"Leerzeile sein."
+"Vor und nach einer Funktion bzw. Klassendefinition sollte eine Leerzeile "
+"sein."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:74
 msgid "Use one blank line inside functions to separate logical sections."
@@ -140,7 +142,7 @@ msgid ""
 "necessary for order of operations, they only reduce readability."
 msgstr ""
 "Vermeide Klammern in Ausdrücken und Bedingungen. Außer um logische "
-"Reihenfolgen zu bestimmen, sie veringern nur die Lesbarkeit."
+"Reihenfolgen zu bestimmen, sie verringern nur die Lesbarkeit."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:122
 msgid "Whitespace"
@@ -156,8 +158,8 @@ msgstr ""
 "oder um „Spalten“ zu erzeugen."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
-msgid "**Never!**"
-msgstr "**Niemals!**"
+msgid "**NEVER**:"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
 msgid "Naming Conventions"
@@ -198,6 +200,9 @@ msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
 msgstr ""
+"Benenne virtuelle Methoden (Funktionen, die der Nutzer überschreiben muss), "
+"private Funktionen und private Variablen mit führendem Unterstrich: ``func "
+"_ready()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
 msgid "Signals"
@@ -216,3 +221,5 @@ msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
 msgstr ""
+"Verwende  CONSTANT\\_CASE, alles in Großbuchstaben, mit einem Unterstrich "
+"zur Worttrennung: ``const MAX_SPEED = 200``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr ""
+msgstr "GDScript 형식 문자열"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
 "GDScript offers a feature called *format strings* which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
+"GDscript는 비슷비슷한 문자열들을 간결하게 만들기 위한 *형식 문자열* 이라고 하"
+"는 재사용할 수 있는 텍스트 템플릿 기능을 제공한다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -33,6 +35,8 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
+"형식 문자열들은 평범한 문자열들과 달리 특정 플레이스 홀더 문자 시퀀스를 갖습"
+"니다. 플레이스 홀더는 쉽게 형식 문자열의 매개변수로 대체될 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -41,23 +45,30 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
+"예를 들어, ``%s``인 플레이스 홀더라면, 형식 문자열 ``\"Hello %s, how are you?"
+"``는 간단히  ``\"Hello World, how are you?\"``로 바뀝니다. 플레이스 홀더가 문"
+"자열의 핵심인 것에 주목하세요; 형식 문자열 없이 문자열을 수정하는 것은 성가"
+"신 일이기 때문입니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "GDScript에서의 사용법"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-msgid "Examine this concrete GDScript example::"
-msgstr ""
+#, fuzzy
+msgid "Examine this concrete GDScript example:"
+msgstr "구체적인 GDScript 예시를 참고해보세요::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:33
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
 "Placeholders always start with a ``%``, but the next character or "
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
+"플레이스 홀더는 항상 ``%``로 시작하지만, 다음 문자나 문자열인 *형식 지정자*"
+"는 받은 값을 문자로 전환시킬 방법을 정해야 합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:37
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
 msgid ""
 "The ``%s`` seen in the example above is the simplest placeholder and works "
 "for most use cases: it converts the value by the same method by which an "
@@ -66,53 +77,63 @@ msgid ""
 "integral or real number becomes a decimal, other types usually return their "
 "data in a human-readable string."
 msgstr ""
+"``%s``는 가장 간단하고 자주 쓰이는 플레이스 홀더입니다: 암묵적 문자열 변환이"
+"나 ``str()``이 변환하는 것과 같은 방식으로 값을 변환시킵니다. 문자열은 바꾸"
+"지 않고, 불 방식은 ``\"True\"`` 나 ``\"False\"``로, 정수나 실수는 십진수로, "
+"그 외 다른 형식도 사람이 읽을 수 있는 정보로 바꿉니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:44
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
 "There is also another way to format text in GDScript, namely the ``String."
 "format()`` method. It replaces all occurrences of a key in the string with "
 "the corresponding value. The method can handle arrays or dictionaries for "
 "the key/value pairs."
 msgstr ""
+"그리고 GDScript에서 텍스트의 형식을 변환시키는 또 다른 방법으로,``String."
+"format()``메서드가 있습니다. 이것은 문자열의 모든 키를 해당 값으로 바꿉니다. "
+"이것으로 키/값 묶음의 배열이나 딕셔너리를 다룰 수 있습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:48
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:50
 msgid ""
 "Arrays can be used as key, index, or mixed style (see below examples). Order "
 "only matters when the index or mixed style of Array is used."
 msgstr ""
+"배열은 키, 인덱스, 아니면 혼합 스타일로 사용됩니다 (밑의 예시를 참고하세요). "
+"순서는 인덱스나 혼합 스타일의 배열이 사용될 때만 중요합니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:51
-msgid "A quick example in GDScript::"
-msgstr ""
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
+#, fuzzy
+msgid "A quick example in GDScript:"
+msgstr "GDScript의 빠른 예제::"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:62
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
 "There are other `format specifiers`_, but they are only applicable when "
 "using the ``%`` operator."
-msgstr ""
+msgstr "오직 ``%`` 연산자에만 적용 할 수 있는 `형식 지정자`_도 있습니다."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:67
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:71
 msgid "Multiple placeholders"
-msgstr ""
+msgstr "여러가지 자리 표시자"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:69
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
 msgid ""
 "Format strings may contain multiple placeholders. In such a case, the values "
 "are handed in the form of an array, one value per placeholder (unless using "
-"a format specifier with ``*``, see `dynamic padding`_)::"
+"a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:79
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:84
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:86
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
 "There are format specifiers other than ``s`` that can be used in "
 "placeholders. They consist of one or more characters. Some of them work by "
@@ -120,163 +141,163 @@ msgid ""
 "with certain values or characters."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:93
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:95
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
 "One and only one of these must always appear as the last character in a "
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:102
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:102
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:122
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid "Integer"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:137
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "**Pad to the right** rather than the left."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:139
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:139
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:147
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
 "The ``.`` (*dot*), ``*`` (*asterisk*), ``-`` (*minus sign*) and digit (``0``-"
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:152
-msgid "To pad a string to a minimum length, add an integer to the specifier::"
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
+msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
-"instead of white space::"
+"instead of white space:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:164
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
 "Precision can be specified for real numbers by adding a ``.`` (*dot*) with "
 "an integer following it. With no integer after ``.``, a precision of 0 is "
@@ -284,185 +305,184 @@ msgid ""
 "before the dot."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:176
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
-"useful for right text alignment::"
+"useful for right text alignment:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:185
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:187
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
 "By using the ``*`` (*asterisk*) character, the padding or precision can be "
 "set without modifying the format string. It is used in place of an integer "
 "in the format specifier. The values for padding and precision are then "
-"passed when formatting::"
+"passed when formatting:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:198
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
-"``0`` before ``*``::"
+"``0`` before ``*``:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:206
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
-"to avoid reading it as a placeholder. This is done by doubling the "
-"character::"
+"to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:217
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:219
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
 msgid "**Type**"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:275
 msgid "**Example**"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:275
 msgid "**Result**"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:226
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:228
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid "Dictionary"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:226
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:232
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:226
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
 "\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:226
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:228
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:230
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:232
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:234
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:236
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "Hi, Godette v3.0!"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:228
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:234
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:228
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:230
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:236
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:230
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid ""
 "\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:232
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:234
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:236
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "Array"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:232
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
-"\"])"
+"\"]])"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:234
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:236
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "\"Hi, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:239
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:257
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "Infix (default)"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Hi, Godette v3.0"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Postfix"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Prefix"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:253
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:271
 msgid ""
 "Combining both the ``String.format`` method and the ``%`` operator could be "
 "useful as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid ""
 "\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % 3.114})"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "Hi, Godette v3.11"
 msgstr ""

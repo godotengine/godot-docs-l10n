@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:4
 msgid "Custom modules in C++"
-msgstr ""
+msgstr "C++ 模块"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
 msgid "Modules"
-msgstr ""
+msgstr "模块 （Modules）"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
 msgid ""
@@ -32,6 +32,9 @@ msgid ""
 "functionality at every level without modifying the core, which can be split "
 "for use and reuse in different modules."
 msgstr ""
+"Godot 允许通过模块化的方式对引擎进行扩展。 你可以创建新的模块，然后启用/禁用"
+"它。 这允许在我们在各个级别为引擎添加新功能而无需修改引擎现的核心代码，各个模"
+"块这可以拆分不同功能的便于现有代码复用"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:14
 msgid ""
@@ -41,10 +44,14 @@ msgid ""
 "and others. As many new modules as desired can be created and combined, and "
 "the SCons build system will take care of it transparently."
 msgstr ""
+"模块放在构建系统的 ``modules/`` 子目录下。 默认情况下这里已经存在多个不同的模"
+"块如： GDScript 模块（没错，它不是引擎的核心部分，只是一个模块）、Mono 运行时"
+"模块、 正则表达式模块、等等。即使我们不断创建和组合许多新模块，SCons 构建系统"
+"仍能透明、轻松地处理它。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:22
 msgid "What for?"
-msgstr ""
+msgstr "用于做什么？"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
 msgid ""
@@ -52,36 +59,40 @@ msgid ""
 "an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
 "++ modules can be useful in the following scenarios:"
 msgstr ""
+"尽管我们建议使用脚本编写游戏的大部分代码（因为这能够节省大量的时间），但使用 "
+"C++ 进行开发也是完全可能的。 我们推荐在以下情况下添加 C++ 模块："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
 msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
-msgstr ""
+msgstr "绑定第三方库给 Godot 使用 （如 PhysX, FMOD 这类）。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:29
 msgid "Optimize critical parts of a game."
-msgstr ""
+msgstr "优化游戏的核心部分。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:30
 msgid "Adding new functionality to the engine and/or editor."
-msgstr ""
+msgstr "为引擎或编辑器添加新功能。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:31
 msgid "Porting an existing game."
-msgstr ""
+msgstr "移植现有的游戏项目。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:32
 msgid "Write a whole, new game in C++ because you can't live without C++."
-msgstr ""
+msgstr "使用 C++ 编写全部代码，因为你离不开 C++。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:35
 msgid "Creating a new module"
-msgstr ""
+msgstr "创新新模块"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
 msgid ""
 "Before creating a module, make sure to download the source code of Godot and "
 "manage to compile it. There are tutorials in the documentation for this."
 msgstr ""
+"在创建模块之前，请确认你能够下载并顺利编译 Godot 的源代码，你可以在本站找到相"
+"关的文档。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
 msgid ""
@@ -89,6 +100,8 @@ msgid ""
 "``modules/``. If you want to maintain the module separately, you can "
 "checkout a different VCS into modules and use it."
 msgstr ""
+"要创建一个新模块，首先我们要在 ``modules/`` 文件夹下创建一个新目录。 如果需要"
+"分开维护模块，则可以在 版本控制器(VCS) 中检出并使用新的分支。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:44
 msgid ""
@@ -96,36 +109,40 @@ msgid ""
 "Godot source tree (``C:\\godot`` refers to wherever the Godot sources are "
 "located):"
 msgstr ""
+"我们把这里的示例模块叫做 “summator”，并放置在 Godot 源代码目录中（ 这里的 “C:"
+"\\ godot” 指代Godot源所在的地方）："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:55
 msgid "Inside we will create a simple summator class:"
-msgstr ""
+msgstr "然后我们在里面创建一个简单的 summator  类："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:83
 msgid "And then the cpp file."
-msgstr ""
+msgstr "这是该类的 cpp 文件。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:117
 msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
 "to be created:"
-msgstr ""
+msgstr "为了把这个类注册给引擎使用，我们还需要创建另外两个文件："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:125
 msgid "With the following contents:"
-msgstr ""
+msgstr "并填入下面的内容："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:152
 msgid ""
 "Next, we need to create a ``SCsub`` file so the build system compiles this "
 "module:"
-msgstr ""
+msgstr "接下来我们要创建一个 ``SCsub`` 文件告诉构建系统如何编译这个模块："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:162
 msgid ""
 "With multiple sources, you can also add each file individually to a Python "
 "string list:"
 msgstr ""
+"如果你又多个源文件，你可以将要进行编译的源文件添加到一个 Python 的字符串数组"
+"中："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:170
 msgid ""
@@ -133,12 +150,14 @@ msgid ""
 "list using loops and logic statements. Look at some of the other modules "
 "that ship with Godot by default for examples."
 msgstr ""
+"这允许我们使用 Python 在构建时使用循环和逻辑语句，大大增加了构建的灵活度。 通"
+"常情况下，你可以参照 Godot 附带的其他模块。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:174
 msgid ""
 "To add include directories for the compiler to look at you can append it to "
 "the environment's paths:"
-msgstr ""
+msgstr "要添加头文件包含目录，你可以在构建环境中追加路径："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:182
 msgid ""
@@ -146,24 +165,30 @@ msgid ""
 "to clone `env` first, so it won't add those flags to whole Godot build "
 "(which can cause errors). Example `SCsub` with custom flags:"
 msgstr ""
+"如果你希望为你的模块添加自定义编译选项， 你可以克隆全局的构建环境 `env` ， 这"
+"样你的构建选项就不会污染构建系统的其他部分了（污染全局构建环境玩玩会给你造成"
+"麻烦）。 这里是一个使用了自定义编译选项的 `SCsub` 文件:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:195
 msgid ""
 "And finally, the configuration file for the module, this is a simple python "
 "script that must be named ``config.py``:"
 msgstr ""
+"最后还有一个叫作 ``config.py`` 的配置文件 , 这是一个简单的 python 脚本："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:208
 msgid ""
 "The module is asked if it's ok to build for the specific platform (in this "
 "case, True means it will build for every platform)."
 msgstr ""
+"询问该模块是否可以在特定平台上进行构建（在这里，True 表示能在所有平台上构"
+"建）。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:211
 msgid ""
 "And that's it. Hope it was not too complex! Your module should look like "
 "this:"
-msgstr ""
+msgstr "希望它不是太复杂，你的模块应该是这样的："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:223
 msgid ""
@@ -171,35 +196,41 @@ msgid ""
 "for every platform (instructions in the previous sections), your module will "
 "be included."
 msgstr ""
+"你现在可以压缩并与其他人分享这个模块了， 在所有平台上编译后你的模块都将被包含"
+"在内。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:228
 msgid "Using the module"
-msgstr ""
+msgstr "使用模块"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:230
 msgid ""
 "Using your newly created module is very easy, from any script you can now do:"
-msgstr ""
+msgstr "使用你我们创建的模块非常简单， 在任何脚本中我们可以这一个直接使用它："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:242
 msgid "And the output will be ``60``."
-msgstr ""
+msgstr "并且得到正确的输出 ``60``。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:245
 msgid "Improving the build system for development"
-msgstr ""
+msgstr "完善模块开发的建设系统"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:247
 msgid ""
 "So far we defined a clean and simple SCsub that allows us to add the sources "
 "of our new module as part of the Godot binary."
 msgstr ""
+"至此，我们定义了一个简洁的 SCsub 来允许我们向 Godot 的可执行文件通过模块添加"
+"源代码。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:250
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game given we want all the modules in a single binary."
 msgstr ""
+"这种静态链接构建机制对于构建发布版的二进制文件很好用，因为我们可以把所有模块"
+"都编译进我们的可执行文件中。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:253
 msgid ""
@@ -208,12 +239,16 @@ msgid ""
 "have changed, finding such files and eventually linking the final binary is "
 "a long and costly part."
 msgstr ""
+"然而，他的缺点是每次对模块进行修改你都需要重新编译并链接整个引擎。即使 Scons "
+"能够检测到只需要重新编译一小部分文件， 执行这种链接操作会耗费不少时间。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:258
 msgid ""
 "The solution to avoid such a cost is to build our own module as a shared "
 "library that will be dynamically loaded when starting our game's binary."
 msgstr ""
+"我们可以通过将模块构建为动态链接库的方式来避免这些链接上的时间浪费， 这样我们"
+"只需要在启动可执行文件时加载模块的动态库就可以了。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:290
 msgid ""
@@ -222,12 +257,17 @@ msgid ""
 "in a standard directory (like ``/usr/lib``), we have to help our binary find "
 "it during runtime with the ``LD_LIBRARY_PATH`` environ variable:"
 msgstr ""
+"编译完成后，在 ``bin`` 目录下可以找到 ``godot*`` 可执行文件和 我们的模块库 "
+"``libsummator*.so``。 但是这个动态库并没有位于通用目录下（如 ``/usr/lib``）, "
+"我们需要帮助可执行文件在运行时找到它:"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:300
 msgid ""
 "**note**: Pay attention you have to ``export`` the environ variable "
 "otherwise you won't be able to play you project from within the editor."
 msgstr ""
+"**注意**: 请确保你有 ``export`` 这个环境变量， 否则你将无法从编辑器中启动你的"
+"游戏。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:303
 msgid ""
@@ -236,22 +276,29 @@ msgid ""
 "(for release). To do that we can define a custom flag to be passed to SCons "
 "using the `ARGUMENT` command:"
 msgstr ""
+"最重要的是，我们希望能够选择将我们的模块编译是动态库（用于开发）还是作为 "
+"Godot 可执行文件的一部分（用于发布）。 要做到这一点，我们可以使用 `ARGUMENT` "
+"命令定义一个自定义构建配置来传递给 SCons ："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:333
 msgid ""
 "Now by default ``scons`` command will build our module as part of godot's "
 "binary and as a shared library when passing ``summator_shared=yes``."
 msgstr ""
+"现在 Scons 默认会把我们的模块构建到 Godot 的二进制文件中， 如果在构建时传递配"
+"置参数 ``summator_shared=yes`` 的话， 将把模块构建成动态链接库。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:336
 msgid ""
 "Finally you can even speedup build further by explicitly specifying your "
 "shared module as target in the scons command:"
 msgstr ""
+"最后，您可以通过在 scons 命令中明确指定动态构建模块为的输出目标文件来进一步加"
+"速构建："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:344
 msgid "Writing custom documentation"
-msgstr ""
+msgstr "为模块编写文档"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:346
 msgid ""
@@ -261,10 +308,13 @@ msgid ""
 "one year ago may become indistinguishable from the code that was written by "
 "someone else, so be kind to your future self!"
 msgstr ""
+"编写文档看起来可能是一项无聊的任务，但仍然强烈建议你为新创建的模块编写文档，"
+"以便使用这个模块的其他人从中受益。 更不用说，你一年后可能与无法区分它与其他人"
+"写的代码，所以对未来的你自己好一点吧！"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:352
 msgid "There are several steps in order to setup custom docs for the module:"
-msgstr ""
+msgstr "要为模块创建文档需要执行下面的这些操作："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:354
 msgid ""
@@ -272,10 +322,12 @@ msgid ""
 "anything, but we'll be using the ``doc_classes`` name throughout this "
 "section."
 msgstr ""
+"在你模块的根目录下创建一个文件夹，名称你可以根据自己的喜好命名。 官方通用使用"
+"的是 ``doc_classes`` 这个文件夹。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:357
 msgid "Append the following code snippet to ``config.py``:"
-msgstr ""
+msgstr "在你的 ``config.py`` 脚本中添加下面的代码片段："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:369
 msgid ""
@@ -285,6 +337,9 @@ msgid ""
 "class you want to write documentation for. If you need docs for more than "
 "one class, append those as well."
 msgstr ""
+"``get_doc_classes()`` 方法是必不可少的，因为我们往往需要在模块中定义多个类，"
+"它用来告诉构建系统要合并哪些类的文档到文档系统中。 把 ``ClassName` 替换成你要"
+"编写文档的类名， 如果你要编写多个类的文档， 可以在这个列表中添加其他类名。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:375
 msgid ""
@@ -292,10 +347,12 @@ msgid ""
 "location of the docs. In our case, they will be located in the "
 "``doc_classes`` directory."
 msgstr ""
+"``get_doc_path()`` 方法用于告诉构建系统去哪里查找我们的文档。 在这个例子中， "
+"我们返回 ``doc_classes`` 目录。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:379
 msgid "Run command:"
-msgstr ""
+msgstr "运行命令："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:385
 msgid ""
@@ -304,16 +361,20 @@ msgid ""
 "executable, and make sure that you have write access rights. If not, you "
 "might encounter an error similar to the following:"
 msgstr ""
+"这个命令会把引擎的所有API结构输出到 ``<path>`` 目录下， 以 XML 格式保存在改目"
+"录的多个文件内。 请注意你需要确保你编译好的 Godot 二进制文件对你给定的目录有"
+"写入权限， 否则将会出现类似的错误："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:395
 msgid "Get generated doc file from ``godot/doc/classes/ClassName.xml``"
-msgstr ""
+msgstr "找到生成的 ``godot/doc/classes/ClassName.xml`` 文件"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:397
 msgid ""
 "Copy this file to ``doc_classes``, optionally edit it, then compile the "
 "engine."
 msgstr ""
+"将它剪切到我们模块的 ``doc_classes`` 目录下， 然后编辑它， 再重新编译引擎。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:399
 msgid ""
@@ -322,6 +383,8 @@ msgid ""
 "is finished, the docs will become accessible within the engine's built-in "
 "documentation system."
 msgstr ""
+"构建系统在编译文档时会从 ``doc_classes`` 目录中合并我们编写的文档。 构建完成"
+"后，我们就可以在引擎内置的文档系统中找到我们编写的文档了。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:403
 msgid ""
@@ -329,32 +392,39 @@ msgid ""
 "modify one of the ``ClassName.xml`` files and recompile the engine from now "
 "on."
 msgstr ""
+"为了保持文档的更新， 每次你修改 ``ClassName.xml`` 这类文档文件后你都需要重新"
+"编译引擎。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:407
 msgid "Summing up"
-msgstr ""
+msgstr "总结"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:409
 msgid ""
 "As you see, it's really easy to develop Godot in C++. Just write your stuff "
 "normally and remember to:"
 msgstr ""
+"如你所见， 使用 C++ 进行Godot开发如此简单。只需要按照你往常那样编写你的模块代"
+"码， 同时需要记住这几点就可以了："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:412
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
+"使用 ``GDCLASS`` 来声明继承关系， 这样 Godot 能对它进行一些内部封装工作"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:413
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
 msgstr ""
+"使用  ``_bind_methods``  将你的函数绑定给脚本使用， 同时让他们支持回调和信号"
+"等。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "surprises."
-msgstr ""
+msgstr "但这不是全部，取决于你要做什么，你会感受到一些惊喜。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:419
 msgid ""
@@ -362,15 +432,19 @@ msgid ""
 "Sprite), your new class will appear in the editor, in the inheritance tree "
 "in the \"Add Node\" dialog."
 msgstr ""
+"如果你继承了  :ref:`class_Node` (或者诸如 Sprite 之类的其他Node的派生类)， 你"
+"创建的类将会在添加节点对话框中的节点继承树中出现。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
 msgstr ""
+"如果你的类继承自 :ref:`class_Resource`, 它会在资源列表中出现。它的所有导出的"
+"属性都能够被序列化，支持保存和加载。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:425
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."
-msgstr ""
+msgstr "照同样的逻辑，你也可以扩展编辑器或者对引擎的其他领域进行扩展。"

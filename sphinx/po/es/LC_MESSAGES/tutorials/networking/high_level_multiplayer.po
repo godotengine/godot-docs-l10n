@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
-msgstr ""
+msgstr "Multiplayer Alto Nivel"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High level vs low level API"
-msgstr ""
+msgstr "Alto nivel VS Bajo nivel API"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -44,6 +44,15 @@ msgid ""
 "Godot's high-level networking API, which sacrifices some of the fine-grained "
 "control of low-level networking for greater ease of use."
 msgstr ""
+"Godot siempre soportó redes estándar de bajo nivel a través de UDP, TCP y "
+"algunos protocolos de alto nivel como SSL y HTTP. Estos protocolos son "
+"flexibles y se pueden utilizar para casi cualquier cosa. Sin embargo, "
+"usarlos para sincronizar el estado del juego manualmente puede ser una gran "
+"cantidad de trabajo. A veces ese trabajo no se puede evitar o vale la pena, "
+"por ejemplo cuando se trabaja con una implementación de servidor "
+"personalizada en el backend. Pero en la mayoría de los casos vale la pena "
+"considerar la API de red de alto nivel de Godot, que sacrifica algo del "
+"control detallado de la red de bajo nivel para una mayor facilidad de uso."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"

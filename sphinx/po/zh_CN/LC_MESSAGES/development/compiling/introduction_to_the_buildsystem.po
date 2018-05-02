@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:4
 msgid "Introduction to the buildsystem"
-msgstr ""
+msgstr "构建系统介绍"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:9
 msgid "SCons"
-msgstr ""
+msgstr "SCons"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:11
 msgid ""
@@ -34,6 +34,11 @@ msgid ""
 "There are many reasons why we have chosen SCons over other alternatives, for "
 "example:"
 msgstr ""
+"Godot 使用`SCons <http://www.scons.org>`__ 来构建我们的代码。我们喜爱它，并无"
+"打算使用其他的构建系统来替代它。因为我们不确定其他构建系统能够胜任 Godot  这"
+"样复杂的构建工作。 我们听到过很多要求我们切换到 CMake 或者 Visual Studio 的声"
+"音， 但很抱歉这一切是不会发生的。由于我们有太多的原因使我们坚持使用 Scons， "
+"例如："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:18
 msgid ""
@@ -41,6 +46,8 @@ msgid ""
 "mobile platforms, many consoles, and many web-based platforms (such as HTML5 "
 "and Chrome PNACL)."
 msgstr ""
+"Scons 能将 Godot 直接编译到各个平台上。它支持所有的 PC 平台， 所有的移动平"
+"台， 很多主机平台，还有一些基于Web的平台（诸如HTML和Chrome家的PNACL）。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:21
 msgid ""
@@ -49,6 +56,9 @@ msgid ""
 "reconfiguring and rebuilding the project each time. SCons can do this with "
 "no sweat, without breaking the builds."
 msgstr ""
+"开发者们经常需要**同时**支持将代码编译到多个平台上，或者同一个平台的不同架构"
+"上，这往往造成了各项重复的构建命令和重建项目操作。而 SCons 可以毫不费力地完成"
+"这项工作，不会破坏任何平台的构建。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:25
 msgid ""
@@ -56,6 +66,8 @@ msgid ""
 "additions, removals etc. You have more chances to die struck by lightning "
 "than needing to clean and rebuild in SCons."
 msgstr ""
+"不论对项目做出多少修改、配置、增加、删除之类的事情，Scons 都不会把构建工作搞"
+"砸。你需要通过 Scons 进行清理和重新构建的机会比你被雷击致死的几率还要低。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:28
 msgid ""
@@ -65,6 +77,10 @@ msgid ""
 "write in an actual programming language (like Python) rather than using a "
 "mostly macro-based language only meant for building."
 msgstr ""
+"Godot 的构建过程比较复杂。 它需要处理一些生成的代码（编译二进制文件）；一些通"
+"过解析其他文件生成的代码（例如着色器）；还有一些需要其他自定义的构建行为（如"
+"插件和模块）。这种复杂的构建逻辑可以通过实际的编程语言（例如Python）来轻松解"
+"决，如果使用基于宏的配置脚本将会非常麻烦。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:33
 msgid ""
@@ -72,16 +88,20 @@ msgid ""
 "has a specific detection process, and all these must be handled as specific "
 "cases with special code written for each."
 msgstr ""
+"Godot 的构建过程大量使用交叉编译工具。 每个平台都有一些特定的检测过程，所有这"
+"些都必须作为特殊情况处理，我们为每个平台编写了必不可少的构建代码。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:37
 msgid ""
 "So, please try to keep an open mind and get at least a little familiar with "
 "it if you are planning to build Godot yourself."
 msgstr ""
+"因此，如果你想要自己构建 Godot 的话，请持一个开放的态度，至少稍微熟悉一下这个"
+"构建系统。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:41
 msgid "Setup"
-msgstr ""
+msgstr "构建环境搭建"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:42
 msgid ""
@@ -90,6 +110,10 @@ msgid ""
 "`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
 "`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`."
 msgstr ""
+"你可以参照平台相关的构建文档 :ref:`doc_compiling_for_android`, :ref:"
+"`doc_compiling_for_ios`, :ref:`doc_compiling_for_osx`, :ref:"
+"`doc_compiling_for_uwp`, :ref:`doc_compiling_for_web`, :ref:"
+"`doc_compiling_for_windows` and :ref:`doc_compiling_for_x11`。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:44
 msgid ""
@@ -97,10 +121,13 @@ msgid ""
 "Tools Command Prompt for VS 2017`` or similar, depending on your install, "
 "instead of the standard Windows command prompt to enter the commands below."
 msgstr ""
+"注意， 在**Windows/Visual Studio** 环境下，你要使用 ``x86_x64 Cross Tools "
+"Command Prompt for VS 2017``  这类工具（具体命令视你安装的版本来定）， 而不能"
+"直接使用通用的 Windows 命令提示符。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:47
 msgid "Platform selection"
-msgstr ""
+msgstr "选择构建平台"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:49
 msgid ""
@@ -109,22 +136,27 @@ msgid ""
 "available platforms. The build requirements for each platform are described "
 "in the rest of this tutorial section."
 msgstr ""
+"Godot 的构建系统会在启动时检测它在当前环境中可以执行构建的的平台。如果没有检"
+"测到当当前环境不支持的平台，那么这个平台将不会显示在可构建的平台列表中。 本文"
+"的的后续部分将介绍各个平台的构建要求。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:54
 msgid "SCons is invoked by just calling ``scons``."
-msgstr ""
+msgstr "SCons 构建系统可通过调用 ``scons`` 命令来启动。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:56
 msgid ""
 "However, this will do nothing except list the available platforms, for "
 "example:"
-msgstr ""
+msgstr "但是，除了列出可用的平台之外，这并不会执行任何构建任务。例如："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:77
 msgid ""
 "To build for a platform (for example, x11), run with the ``platform=`` (or "
 "just ``p=`` to make it short) argument:"
 msgstr ""
+"我们通过传递平台参数（ 添加``platform=`` 或者缩写 ``p=`` ）来让 Scons 执行对"
+"应平台（例如 x11 ）的构建任务:"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:84
 msgid ""
@@ -133,10 +165,13 @@ msgid ""
 "cores will be used for the build. Or just leave it using one core, so you "
 "can use your computer for something else :)"
 msgstr ""
+"这将开始 Godot 的构建进程，需要花一段时间才能完成。 如果您希望 Scons 的构建速"
+"度更快，请使用 ``-j <cores>`` 参数指定构建任务要使用多少个CPU核心。 或者只是"
+"让它使用一个核心，这样你可以继续使用你的电脑的做其他事情 :)"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:89
 msgid "Example for using 4 cores:"
-msgstr ""
+msgstr "例如启动 4 核进行构建："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:95
 msgid ""
@@ -144,30 +179,35 @@ msgid ""
 "issues/5182>`__ with parallel builds for at least some users, so if you are "
 "running into errors, try building without the ``-j`` parameter."
 msgstr ""
+"提示，少数用户执行多核构建任务中会碰到 `这个问题 <https://github.com/"
+"godotengine/godot/issues/5182>`__ ， 如果你也刚好遇到这个麻烦，请试着去到 ``-"
+"j`` 命令进行构建。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
 msgid "Resulting binary"
-msgstr ""
+msgstr "输出的程序"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:100
 msgid ""
 "The resulting binaries will be placed in the bin/ subdirectory, generally "
 "with this naming convention:"
-msgstr ""
+msgstr "构建所得到的二进制文件将被放置在 bin/ 子目录中，通常使用这种命名约定："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:107
 msgid "For the previous build attempt the result would look like this:"
-msgstr ""
+msgstr "对于上面所说的构建任务，将输出下面这样的二进制文件："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:114
 msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
+"文件名描述了这个二进制文件是 X11 平台的、它没有进行编译优化、它带有工具功能"
+"（整个 Godot 编辑器）、并且它是针对64位架构进行构建的结果。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:117
 msgid "A Windows binary with the same configuration will look like this."
-msgstr ""
+msgstr "同理，同样的构建配置在 Windows 上的构建文件是这样的。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
 msgid ""
@@ -177,16 +217,22 @@ msgid ""
 "are needed (which can be either downloaded from `godotengine.org <https://"
 "godotengine.org/>`__, or you can build them yourself)."
 msgstr ""
+"现在你可以将该二进制文件复制到任何你喜欢的地方，它包含了项目管理器，游戏编辑"
+"器和游戏播放器的所有功能（是不是很酷！）。仅缺少你在游戏开发过程中所需要导出"
+"游戏到其他平台的导出模板（可以从`godotengine.org <https://godotengine.org/"
+">`__下载到，也可以自己构建它们）。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
 msgstr ""
+"除此之外，可以在所有的构建目标中有几个标准选项可以进行设置，下面将对此进行说"
+"明。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 msgid "Tools"
-msgstr "工具"
+msgstr "工具（tools）"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:136
 msgid ""
@@ -194,20 +240,25 @@ msgid ""
 "disabled for everything else. Disabling tools produces a binary that can run "
 "projects but that does not include the editor or the project manager."
 msgstr ""
+"工具选项在所有PC平台（Linux, Windows, macOS）上默认启用，在其他平台上默认禁"
+"用。 禁用工具选项后构建得到的二进制文件会更小，因为它不包括游戏编辑器和项目管"
+"理器功能。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target"
-msgstr ""
+msgstr "构建目标 (target)"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid "Target controls optimization and debug flags. Each mode means:"
-msgstr ""
+msgstr "构建目标控制的是编译器的调试和优化选项， 它支持这些模式："
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
+"**debug**: 带有C ++调试符号的构建，支持运行时检查（执行检查和错误报告）同时不"
+"进行编译任何优化。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:152
 msgid ""
@@ -215,6 +266,8 @@ msgid ""
 "keep the runtime checks (performs checks and reports errors). Official "
 "binaries use this configuration."
 msgstr ""
+"**release_debug**: 不带C ++调试符号和编译器优化，但保持运行时检查（执行检查和"
+"错误报告）。 官方发布的二进制文件就是使用这种配置进行构建的。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:155
 msgid ""
@@ -222,6 +275,9 @@ msgid ""
 "runtime checks. This target can't be used together with tools=yes, as the "
 "tools require some debug functionality and run-time checks to run."
 msgstr ""
+"**release**: 不带调试符号的构建，执行编译器优化，不支持有运行时检查。 该配置"
+"不能与``tools = yes``一起使用，因为这些工具需要一些调试功能和运行时检查才能运"
+"行。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:164
 msgid ""
@@ -229,24 +285,28 @@ msgid ""
 "debug with tools enabled). When optimization is enabled (release) it appends "
 "the \".opt\" suffix."
 msgstr ""
+"根据些选项的配置会在二进制文件名中附加 “.debug” 后缀（用于调试）或 “."
+"tools”（用于启用工具的调试）。 当启用优化（发布版）时，它会附加“.opt”后缀。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
 msgid "Bits"
-msgstr ""
+msgstr "位 (bits)"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:171
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
+"位选项控制的是构建结果的二进制文件指出的CPU或操作系统的版本。它是针对桌面平台"
+"的配置，在其他平台会被忽略掉。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**32**: Build binaries for 32 bits platform."
-msgstr ""
+msgstr "**32**: 构建支持32位系统的二进制文件。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:176
 msgid "**64**: Build binaries for 64 bits platform."
-msgstr ""
+msgstr "**64**:  构建支持64位系统的二进制文件。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:177
 msgid ""
@@ -254,39 +314,67 @@ msgid ""
 "depends on the host platform (if not cross compiling), on Mac it defaults to "
 "64 bits and on Windows it defaults to 32 bits."
 msgstr ""
+"**default**: 让构建系统选择构建它认为最合适的二进制文件。在Linux上，这取决于"
+"你所使用的系统（如果不是交叉编译的话），在Mac上它默认为64位，在Windows上它默"
+"认为32位。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:185
 msgid ""
 "This flag appends \".32\" or \".64\" suffixes to resulting binaries when "
 "relevant."
-msgstr ""
+msgstr "这项配置会在构建结果的二进制文件名中添加  \".32\" 或  \".64\" 后缀。"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
+#, fuzzy
+msgid "Other build options"
+msgstr "调试选项"
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
+msgid ""
+"There are several other build options that you can use to configure the way "
+"Godot should be built (compiler, debug options, etc.) as well as the "
+"features to include/disable."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:195
+msgid ""
+"Check the output of ``scons --help`` for details about each option for the "
+"version you are willing to compile."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
 msgid "Export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
 "build them yourself (in case you want newer ones, you are using custom "
 "modules, or simply don't trust your own shadow)."
 msgstr ""
+"官方的导出模板可以从 `Godot 的官方网站 <https://godotengine.org/>`__ 下载"
+"到。 此外，由于种种原因你可能想要自己构建你的导出模板（可能你想要构建未发布的"
+"新版本、你要使用模块（modules）、你不信任我们编译的包是否安全）。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:206
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most are just optimized binaries or packages for each platform:"
 msgstr ""
+"如果你下载过官方的导出模板压缩包，解压后你会发现里面大多是各个平台通过编译优"
+"化二进制文件或者对应平台的软件包："
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:219
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:229
 msgid ""
 "To create those yourself, just follow the instructions detailed for each "
 "platform in this same tutorial section. Each platform explains how to create "
 "its own template."
 msgstr ""
+"如要自己创建这些文件，只需按照该教程的各个平台的详细说明进行操作即可。 每个平"
+"台的教程都有介绍如何创建导出模板。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:223
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:233
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross compilation, since you can cross-compile "
@@ -294,3 +382,7 @@ msgid ""
 "place, but Linux has the advantage of being the easier platform to set this "
 "up."
 msgstr ""
+"如果你要进行夸平台开发， macOS 绝对是用于交叉编译最方便的平台了， 你可以在 "
+"macOS 上交叉编译出除 UWP 之外的所有平台的二进制文件。 Linux 和 Windows 倒是也"
+"可以进行交叉编译只是没那么轻松， 但 Linux 有一个很好的优点 —— 能够轻易地搭建"
+"好交叉编译所需的环境。"

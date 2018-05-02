@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "实例化"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -33,12 +33,17 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"创建单个场景并向其中添加节点，这可能适用于小型项目，但随着项目规模和复杂度的"
+"增长，节点数量可能很快变得无法管理。为了解决这个问题，Godot允许一个项目被分成"
+"许多场景。这为你提供了一个强大的工具，能够帮助你组织游戏的不同组件。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+"在 :ref:`doc_scenes_and_nodes` 里你学到了场景是以树结构组织的节点集合，并由一"
+"个单独节点作为树根"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -46,32 +51,38 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"你可以创建很多场景并将其保存到磁盘。以这种方式保存的场景被称为“压缩场"
+"景”（Packed Scenes），有着 ``.tscn``扩展名。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene just as "
 "if it were any other node."
 msgstr ""
+"一旦场景被保存，它就可以被实例化到另一个场景中，就相当于是一个节点一样。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
-msgstr ""
+msgstr "在上面的图片中，场景B作为实例被加入到A中。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing By Example"
-msgstr ""
+msgstr "通过例子实例化"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"要了解实例化如何工作，我们先下载一个示例项目： :download:`instancing.zip "
+"<files/instancing.zip>`。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"解压到任意目录。然后打开Godot，用“导入”（Import）将项目加入到项目管理器中："
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -79,6 +90,8 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"浏览到你解压到的目录，打开“project.godot”。然后，这个新的项目就会出现在项目列"
+"表里。按下“编辑”（Edit）来进入场景编辑器。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -87,10 +100,13 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"这个项目包含两个场景：“Ball.tscn”和“Main.tscn”。Ball场景用了 :ref:"
+"`RigidBody2D <class_RigidBody2D>` 来提供物理运动，Main场景则有一些障碍来和球"
+"体进行碰撞（使用 :ref:`StaticBody2D <class_StaticBody2D>`）。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "打开 ``Main`` 场景，然后选择根节点："
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -98,6 +114,8 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"我们要添加一个 ``Ball``场景的实例，作为 ``Main`` 场景的子节点。点击“链接”形状"
+"的按钮（悬浮框写着“从场景文件实例化节点。”）然后选择 ``Ball.tscn``文件。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -105,14 +123,16 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"这个球会被放置在屏幕区域的左上角（即屏幕坐标 ``(0, 0)``）。按下并拖动球到中间"
+"上方："
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
+msgstr "按下“运行”（Play），看到球落到屏幕下方。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple Instances"
-msgstr ""
+msgstr "多个实例"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -120,14 +140,16 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"你可以添加任意多的实例到一个场景中，通过再次用“实例化”（Instance）按钮，或者"
+"点击球的实力然后选择“拷贝”（Duplicate，快捷键Ctrl-D）："
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "再次运行场景，这些球都会落下来。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "编辑实例"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
@@ -136,6 +158,9 @@ msgid ""
 "much more bouncy. Because the instanced balls are based on the saved scene, "
 "changes to that scene will affect all instances."
 msgstr ""
+"打开 ``Ball``场景并在属性编辑器（Inspector）里修改 ``Bounce``属性为1。运行，"
+"可以注意到这些实例化小球变得更有弹性。这是因为这些实例化小球都是基于那个被保"
+"存了的场景，修改它能影响所有的实例。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
@@ -143,6 +168,8 @@ msgid ""
 "``0.5`` and then in the ``Main`` scene, select one of the instanced balls. "
 "Set its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"你也可以调整单个实例。把弹性调回 ``0.5`` 然后回到 ``Main``场景中，选择其中一"
+"个小球，把它的 ``Bounce``设为 ``1``，然后运行。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
@@ -153,13 +180,16 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"可以注意到调整后的属性旁边有一个“还原”按钮。当这个按钮出现，意味着你修改了这"
+"个实例化场景属性，覆盖了它原有的值。即便再次修改原场景的属性，它的值也会保持"
+"不变。按下还原按钮将会把属性值还原为原场景设定值。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:112
 msgid "Conclusion"
-msgstr ""
+msgstr "总结"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:114
 msgid ""
 "Instancing can be very useful when you want to create many copies of the "
 "same object."
-msgstr ""
+msgstr "当你想创建同一对象的多个副本时，实例化会非常有用。"

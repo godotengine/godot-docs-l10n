@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,6 +82,8 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"Logo 與 icon 基本上也是用同一個創用CC條款授權。注意有些 Godot 的源代碼所包含"
+"的第三方函式庫會有不同的授權條款。"
 
 #: ../../docs/about/faq.rst:28
 msgid ""
@@ -91,76 +93,89 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"完整細節請參閱 Godot 的源代碼倉庫中  `COPYRIGHT.txt <https://github.com/"
+"godotengine/godot/blob/master/COPYRIGHT.txt>`_、`LICENSE.txt <https://github."
+"com/godotengine/godot/blob/master/LICENSE.txt>`_、和 `LOGO_LICENSE.txt "
+"<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ 這幾個檔"
+"案。"
 
 #: ../../docs/about/faq.rst:31
+#, fuzzy
 msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
-msgstr ""
+msgstr "也請參閱 `Godot 網站上的條款頁面 <https://godotengine.org/license>`_。"
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Godot 支援哪些平臺?"
 
 #: ../../docs/about/faq.rst:36
+#, fuzzy
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**編輯器:**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**遊戲可輸出到的:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (和 UWP)"
 
 #: ../../docs/about/faq.rst:47
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr ""
+msgstr "網頁"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr ""
+msgstr "32 位元和 64 位元的執行檔都有被支援，其中 64 位元是預設的。"
 
 #: ../../docs/about/faq.rst:53
+#, fuzzy
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "system with Linux, like the Raspberry Pi. There is also some unofficial "
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
+"有些使用者也回報了在基於 ARM 的 Linux 裝置 (像是樹莓派) 上成功的建構並使用 "
+"Godot。有些第三方也有在進行一些遊戲主機的支援工作。不過這些平臺並沒有被包含在"
+"預裝的建構腳本或輸出模板中。"
 
 #: ../../docs/about/faq.rst:57
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"關於這個的更多資訊請見 :ref:`exporting <toc-learn-workflow-export>` 和 :ref:"
+"`compiling Godot yourself <toc-devel-compiling>`。"
 
 #: ../../docs/about/faq.rst:60
 msgid "Which languages are supported in Godot?"
-msgstr ""
+msgstr "Godot 支援哪些程式語言?"
 
 #: ../../docs/about/faq.rst:62
 msgid ""
@@ -168,18 +183,26 @@ msgid ""
 "C# and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Godot 所正式支援的語言有 GDScript、Visual Scripting、C#、和 C++。請見 :ref:"
+"`scripting <toc-learn-scripting>` 章節中各個語言的子分類。"
 
 #: ../../docs/about/faq.rst:65
+#, fuzzy
 msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
 msgstr ""
+"注意 C# 和 Visual Scripting 的支援還很新，而 GDScript 還是有一些好處的，如下"
+"述。"
 
 #: ../../docs/about/faq.rst:68
+#, fuzzy
 msgid ""
 "Support for new languages can be added by third parties using the GDNative / "
 "NativeScript / PluginScript facilities. (See question about plugins below.)"
 msgstr ""
+"第三方能利用 GDNative / NativeScript / PluginScript 的工具來加入新語言的支"
+"援。(見下述關於插件的問題。)"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -187,12 +210,15 @@ msgid ""
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"目前正在進行的工作，比如說 Godot 至 `Python <https://github.com/touilleMan/"
+"godot-python>`_ 的非官方綁定和 `Nim <https://github.com/pragmagic/godot-"
+"nim>`_ 語言綁定."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
-msgstr ""
+msgstr "GDScript? 為什麼要採用一個特製的語言，而不是選擇其他語言呢?"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -204,6 +230,11 @@ msgid ""
 "language in Godot (see list of supported options above), but we strongly "
 "encourage you to try it and see the benefits for yourself."
 msgstr ""
+"簡短的答案是，即使為這個新語言付出額外的複雜性，像你需要學 Godot 和 "
+"GDScript，而我們要維護這個語言，但它最終帶來更深的整合度和無縫的體驗，我們認"
+"為值得。也好過於採用常見的語言來吸引額外使用者但是確有糟糕的體驗。我們能夠理"
+"解你想在 Godot 裡面採用其他語言 (看看上面的清單)，但是我們強烈建議你試試看 "
+"GDScript 並看看他的優點。"
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -212,6 +243,9 @@ msgid ""
 "most a day or two to get comfortable and it's very easy to see the benefits "
 "once you do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
+"GDScript 設計的初衷就在與 Godot 的工作方式深度整合，整合程度超過任何其他语"
+"言，而且 GDScript 非常簡單易學。最多花一兩天你就能上手，而且很輕易就能看見好"
+"處。請付出一些努力學習 GDScript，你不會後悔。"
 
 #: ../../docs/about/faq.rst:91
 msgid ""

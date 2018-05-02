@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
 msgid "Introduction to Godot development"
-msgstr ""
+msgstr "Godot 引擎开发介绍"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:6
 msgid ""
@@ -27,10 +27,12 @@ msgid ""
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
+"本文旨在介绍 Godot 引擎的整体源代码的组织架构，以方便您在 C++ 端对引擎进行扩"
+"展/修复。"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
 msgid "Architecture diagram"
-msgstr ""
+msgstr "架构图"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
 msgid ""
@@ -38,10 +40,12 @@ msgid ""
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr ""
+"下图描述了 Godot 使用的架构，展示了从核心组件到抽象驱动的架构、场景结构和服务"
+"服务结构。"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
 msgid "Debugging the editor with gdb"
-msgstr ""
+msgstr "使用 gdb 调试编辑器"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
 msgid ""
@@ -52,7 +56,11 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
+"如果你想修正 Godot 引擎的 bug 你在调试时需要注意，从你编译好的二进制文件启动 "
+"Godot 引擎的编辑器，这将会启动项目管理器。当你在项目管理器中选择打开的项目"
+"后，编辑器是从另一个进程启动的。 要直接通过编辑器启动你的项目，你需要在你的项"
+"目目录下执行编辑器的时候传递 ``-e`` 参数。 通常是这样："
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
 msgid "Or:"
-msgstr ""
+msgstr "或者："

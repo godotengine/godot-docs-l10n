@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:4
 msgid "Resources"
-msgstr ""
+msgstr "Recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
@@ -129,37 +129,37 @@ msgid ""
 "is to use load(), like this:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:91
+#: ../../docs/getting_started/step_by_step/resources.rst:101
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter, because it loads the resource at compile-time."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:101
+#: ../../docs/getting_started/step_by_step/resources.rst:116
 msgid "Loading scenes"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:102
+#: ../../docs/getting_started/step_by_step/resources.rst:117
 msgid ""
 "Scenes are also resources, but there is a catch. Scenes saved to disk are "
 "resources of type :ref:`PackedScene <class_PackedScene>`. This means that "
 "the scene is packed inside a resource."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:106
+#: ../../docs/getting_started/step_by_step/resources.rst:121
 msgid ""
 "To obtain an instance of the scene, the method :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` must be used."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:116
+#: ../../docs/getting_started/step_by_step/resources.rst:142
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them "
 "(sets all the properties) and returns the root node of the scene, which can "
 "be added to any other node."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:120
+#: ../../docs/getting_started/step_by_step/resources.rst:146
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` function is pretty fast, adding extra content "
@@ -169,11 +169,11 @@ msgid ""
 "are all shared between the scene instances."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:129
+#: ../../docs/getting_started/step_by_step/resources.rst:155
 msgid "Freeing resources"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:131
+#: ../../docs/getting_started/step_by_step/resources.rst:157
 msgid ""
 "Resource extends from :ref:`Reference <class_Reference>`. As such, when a "
 "resource is no longer in use, it will automatically free itself. Since, in "
@@ -181,11 +181,11 @@ msgid ""
 "when a node is removed or freed, all the children resources are freed too."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:138
+#: ../../docs/getting_started/step_by_step/resources.rst:164
 msgid "Scripting"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:140
+#: ../../docs/getting_started/step_by_step/resources.rst:166
 msgid ""
 "Like any object in Godot, not just nodes, resources can be scripted, too. "
 "However, there isn't generally much of an advantage, as resources are just "

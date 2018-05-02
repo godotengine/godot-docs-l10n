@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-19 09:05+0200\n"
+"POT-Creation-Date: 2018-05-02 12:40+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -262,10 +262,27 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
-msgid "Export templates"
+msgid "Other build options"
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
+msgid ""
+"There are several other build options that you can use to configure the way "
+"Godot should be built (compiler, debug options, etc.) as well as the "
+"features to include/disable."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:195
+msgid ""
+"Check the output of ``scons --help`` for details about each option for the "
+"version you are willing to compile."
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
+msgid "Export templates"
+msgstr ""
+
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -273,20 +290,20 @@ msgid ""
 "modules, or simply don't trust your own shadow)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:196
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:206
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most are just optimized binaries or packages for each platform:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:219
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:229
 msgid ""
 "To create those yourself, just follow the instructions detailed for each "
 "platform in this same tutorial section. Each platform explains how to create "
 "its own template."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:223
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:233
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross compilation, since you can cross-compile "
