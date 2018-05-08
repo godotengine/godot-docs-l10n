@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,9 @@ msgid ""
 "GDScript offers a feature called *format strings* which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
-"GDScript ofrece una característica llamada *formateo de cadenas* que permite "
-"reutilizar plantillas de texto para crear cadenas de texto similares de una "
-"manera breve."
+"GDScript ofrece una funcionalidad llamada *cadenas de formato* que permite "
+"reutilizar plantillas de texto para crear distintas cadenas de texto de una "
+"manera breve y compacta."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -36,9 +36,10 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
-"Las format strings son como las cadenas de texto (strings) normales, excepto "
-"en que contienen ciertos parámetros para secuencias de caracteres. Esos "
-"parámetros pueden ser reemplazados por otros enviados a la format string."
+"Las cadenas de formato son como las cadenas normales, excepto que contienen "
+"ciertas secuencias de caracteres de marcadores de posición. Estos marcadores "
+"de posición pueden ser reemplazados fácilmente por parámetros pasados a la "
+"cadena de formato."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -47,17 +48,16 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
-"Como un ejemplo, con ``%s`` como parámetro, la format string ``\"Hello %s, "
-"how are you?`` puede fácilmente ser cambiada a ``\"Hello World, how are you?"
-"``. Nota el parámetro en el medio de la cadena; modificándolo sin la format "
-"string, puede ser engorroso."
+"Por ejemplo, con ``%s`` como marcador de posición, la cadena de formato ``"
+"\"Hello %s, how are you?`` puede cambiarse fácilmente por ``\"Hello World, "
+"how are you?\"``. Note que el marcador de posición está en el medio de la "
+"cadena; modificarlo sin cadenas de formato podría ser engorroso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
 msgstr "Utilización en GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-#, fuzzy
 msgid "Examine this concrete GDScript example:"
 msgstr "Vea este ejemplo concreto en GDScript:"
 
@@ -110,7 +110,6 @@ msgstr ""
 "mixto ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
-#, fuzzy
 msgid "A quick example in GDScript:"
 msgstr "Un ejemplo rápido en GDScript:"
 
@@ -127,16 +126,15 @@ msgid "Multiple placeholders"
 msgstr "Parámetros múltiples"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
-#, fuzzy
 msgid ""
 "Format strings may contain multiple placeholders. In such a case, the values "
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
-"Las format strings pueden contener múltiples parámetros. En cuyo caso, los "
-"valores son manejados en forma de arreglo, un valor por parámetro (a menos "
-"que se utilice un especificador de formato con un ``*``, ver `Relleno "
-"dinámico`_)::"
+"Las cadenas de formato pueden contener múltiples variables. En cuyo caso, "
+"los valores son manejados en forma de array, un valor por variable (a menos "
+"que se utilice un especificador de formato con un ``*``, ver `Rellenador "
+"Dinamico`_):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
@@ -335,20 +333,18 @@ msgstr ""
 "una fuente con ancho fijo."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
-#, fuzzy
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
-"Para alinear una cadena a una longitud mínima, agrega un entero al "
-"especificador::"
+"Para rellenar una cadena a una longitud mínima, añada un número entero al "
+"especifier:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
-#, fuzzy
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
 msgstr ""
 "Si el entero comienza con ``0``, los valores enteros son rellenados con "
-"ceros en lugar de espacios en blanco::"
+"ceros en lugar de espacios en blanco:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -363,20 +359,18 @@ msgstr ""
 "para relleno debe aparecer antes que el el punto."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
-#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
-"El caracter  ``-`` provocará un relleno a la derecha en lugar de la "
-"izquierda, útil para alineamiento de texto a la derecha::"
+"El caracter  ``-`` provocará un relleno a la derecha en vez de la izquierda, "
+"útil para alineo de texto a la derecha::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
 msgstr "Relleno dinámico"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
-#, fuzzy
 msgid ""
 "By using the ``*`` (*asterisk*) character, the padding or precision can be "
 "set without modifying the format string. It is used in place of an integer "
@@ -384,32 +378,30 @@ msgid ""
 "passed when formatting:"
 msgstr ""
 "Al utilizar el caracter  ``*`` (*asterisco*), el relleno o precisión podrán "
-"especificarse sin modificar el format string. Es usado en lugar de un entero "
-"en el especificador de formato. Los valores para relleno y precisión son "
-"pasados cuando se aplica el formato::"
+"especificarse sin modificar la cadena string. Se usa en vez de un entero en "
+"el format specifier. Los valores para relleno y precisión son pasados al "
+"aplicarse el formato:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
-#, fuzzy
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
-"Es posible rellenar con ceros en parámetros enteros agregando ``0`` antes "
-"del ``*``::"
+"Es posible rellenar con ceros en las variables enteras agregando ``0`` antes "
+"del ``*``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
 msgstr "Secuencias de escape"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#, fuzzy
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
-"Para insertar un caracter literal ``%`` dentro de una format string, debe "
-"ser \"escapado\" para para impedir que se lea como parámetro. Esto se "
-"consigue duplicando el caracter::"
+"Para insertar un caracter literal ``%`` dentro de una cadena string, debe "
+"\"escaparse\" para para impedir que se lea como variable. Esto se consigue "
+"duplicando el caracter:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
@@ -499,7 +491,6 @@ msgid "Array"
 msgstr "Arreglo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
-#, fuzzy
 msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
 "\"]])"

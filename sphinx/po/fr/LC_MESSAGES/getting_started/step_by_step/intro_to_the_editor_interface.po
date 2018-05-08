@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Introduction à l'éditeur de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -27,16 +27,22 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"Ce tutoriel va vous présenter l'interface de Godot. Nous allons voir les "
+"**Gestionnaire de projets, docks, espaces de travail** et tout ce que vous "
+"avez besoin de savoir pour démarrer avec le moteur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "Gestionnaire de projets"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
+"Lorsque vous ouvrez Godot, la première fenêtre que vous voyez est le "
+"Gestionnaire de projets. Il vous permet de créer, supprimer, importer ou "
+"lancer les projets."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 msgid "|image0|"
@@ -47,44 +53,54 @@ msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"Dans le coin en haut à gauche vous trouverez un menu déroulant pour changer "
+"la langue de l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos to help you get started faster."
 msgstr ""
+"Depuis l'onglet **Modèles** vous pouvez télécharger des modèles de projet "
+"open source et des démos pour vous aider à démarrer plus rapidement."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
-msgstr ""
+msgstr "Créer ou importer un projet"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
+"Pour créer un nouveau projet, cliquez le bouton ``Nouveau projet`` sur la "
+"droite. Donnez-lui un nom et choisissez un répertoire vide sur votre "
+"ordinateur pour le sauvegarder."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:34
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"Cliquez le bouton Parcourir pour ouvrir navigateur de fichiers de Godot, "
+"puis choisissez un emplacement ou tapez le chemin du répertoire dans le "
+"champ \"Chemin du projet\"."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:39
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
 msgid ""
@@ -92,16 +108,21 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"Lorsque vous voyez la coche verte à droite, cela signifie que le moteur a "
+"détecté un répertoire vide, vous pouvez alors cliquer le bouton ``Créer et "
+"éditer``. Godot ouvrira le projet pour vous et l'affichera dans l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
+"La prochaine fois que Godot s'ouvrira, vous verrez votre nouveau projet dans "
+"la liste. Double-cliquez dessus pour l'ouvrir dans l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 msgid ""
@@ -109,22 +130,25 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"Vous pouvez importer des projets existants de manière similaire, en "
+"utilisant le bouton Importer. Localisez le répertoire contenant le projet ou "
+"le fichier ``project.godot`` pour l'importer et l'éditer."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "When the folder path is correct you'll see a green checkmark."
-msgstr ""
+msgstr "Lorsqu'un chemin de dossier est valide, une coche verte est affichée."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "Premiers pas avec l'éditeur de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -132,44 +156,56 @@ msgid ""
 "interface with the 3d viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2d to switch to the 2d workspace."
 msgstr ""
+"Bienvenue dans Godot ! Une fois votre projet ouvert, vous devriez voir "
+"l'interface de l'éditeur avec la vue \"3D\" activé. Vous pouvez changer de "
+"fvue à l'aide des boutons en haut et au milieu de l'interface. Cliquez sur "
+"\"2D\" pour passer à la vue dédié à la 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 msgid "Now you should see this interface, with empty docks on the right side."
 msgstr ""
+"Vous devriez maintenant voir cette interface, avec le dock vide sur le côté "
+"droit."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"En haut, de gauche à droite, vous voyez les **menus principaux**, les "
+"**fenêtres d'affichage**, et les **boutons de test**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid ""
 "On the left side you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
+"Sur la gauche vous voyez le dock **Système de fichiers**, où vous gèrerez "
+"les fichiers et ressources de vos projets."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
 "On the right side you’ll find the **Scene dock** that lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
+"Sur le côté droit, vous trouverez le dock **Scène** qui liste le contenu de "
+"la scène active, et l'**Inspecteur** dans le coin inférieur droit."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -177,10 +213,13 @@ msgid ""
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
+"Au centre en haut, vous avez la **Barre d'outils**, où vous trouverez des "
+"outils pour déplacer, mettre à l'échelle ou verrouiller les objets de votre "
+"scène. Elle est différente pour chaque espaces de travail."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid ""
@@ -188,45 +227,58 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"La **panneau du bas** contient la console de débogage, l'éditeur "
+"d'animations, le mixeur audio… Ils sont larges et peuvent occuper un espace "
+"précieux, c'est pourquoi ils sont repliés par défaut."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid "The workspaces"
-msgstr ""
+msgstr "Les fenêtres d'affichage"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"Vous pouvez voir quatre boutons de fenêtres d'affichage en haut : 2D, 3D, "
+"Script et AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
 "You’ll use the **2D workspace** for all types of games. On top of 2D games "
 "that is where you’ll build your interfaces. Press F1 to access it. |image15|"
 msgstr ""
+"Vous utiliserez la fenêtre d'affichage **2D** pour tous types de jeux. En "
+"plus des jeux 2D, c'est là que vous construirez vos interfaces. Appuyez sur "
+"F1 pour y accéder. |image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:109
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
+"Dans la fenêtre d'affichage **3D**, vous pouvez utiliser des maillages, des "
+"lumières et concevoir des niveaux pour les jeux 3D. Appuyez sur F2 pour y "
+"accéder."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
 msgid "|image16|"
-msgstr ""
+msgstr "|image16|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:114
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
 msgstr ""
+"Notez le texte [Perspective] sous la barre d'outils, c'est un bouton qui "
+"ouvre une liste d'options liées à la vue 3D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:116
 msgid "|image20|"
-msgstr ""
+msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 msgid ""
@@ -234,20 +286,26 @@ msgid ""
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
+"La fenêtre d'affichage **Script** est un éditeur de code complet avec un "
+"débogueur, une complétion automatique riche et une référence de code "
+"intégrée. Appuyez sur F3 pour y accéder et sur F4 pour rechercher dans la "
+"référence."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:122
 msgid "|image17|"
-msgstr ""
+msgstr "|image17|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"Enfin, **AssetLib** est une bibliothèque d'extensions, de scripts et "
+"d'assets gratuits à utiliser dans vos projets."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
 msgid "Modify the interface"
-msgstr ""
+msgstr "Modifier l'interface"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
 msgid ""
@@ -255,32 +313,41 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
+"L'interface de Godot vit dans une seule fenêtre. Vous ne pouvez pas la "
+"diviser sur plusieurs écrans bien que vous puissiez travailler avec un "
+"éditeur de code externe comme Atom ou Visual Studio par exemple."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
 msgid "Move and resize docks"
-msgstr ""
+msgstr "Déplacer et redimensionner les docks"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"Cliquez sur le bord de n'importe quel dock ou panneau et faites le glisser "
+"pour le redimensionner horizontalement ou verticalement."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid "|image18|"
-msgstr ""
+msgstr "|image18|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
+"Cliquez sur l'icône à trois points en haut de n'importe quel dock pour "
+"changer son emplacement."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid "|image19|"
-msgstr ""
+msgstr "|image19|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"Allez dans le menu ``Éditeur`` et ``Paramètres de l'éditeur`` pour peaufiner "
+"l'apparence de l'éditeur."

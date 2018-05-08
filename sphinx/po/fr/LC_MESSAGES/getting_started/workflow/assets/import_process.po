@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "Processus d’importation"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "Importer des ressources dans Godot 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -32,6 +32,10 @@ msgid ""
 "to specify how to convert and change import flags for textures, audios, "
 "scenes, etc."
 msgstr ""
+"Précédemment, importer des ressources dans Godot 2.x requérait la "
+"maintenance manuelle d’un répertoire avec les fichiers sources. Sans faire "
+"ça, il était impossible de spécifier comment convertir et comment changer "
+"une configuration d’importation pour les textures, l’audio, les scènes, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
 msgid ""
@@ -41,27 +45,44 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
+"Dans Godot 3.0, nous utilisons une approche plus moderne pour importer : "
+"déposez simplement vos ressources (fichiers images, scènes, audios, polices, "
+"etc.) directement dans le répertoire du projet (copiez les manuellement avec "
+"l’explorateur de fichier de système d’exploitation). Godot importera "
+"automatiquement ces fichiers en interne et garder les ressources importées "
+"cachées dans un répertoire res://.import."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid "This allows changing all the import parameters transparently."
 msgstr ""
+"Ceci permet de changer tous les paramètres d’importation de façon "
+"transparente."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:23
 msgid "Changing import parameters"
-msgstr ""
+msgstr "Changer les paramètres d’importation"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:25
+#, fuzzy
 msgid ""
 "Changing the import parameters of an asset in Godot (again, keep in mind "
 "import parameters are only present in non-native Godot resource types) is "
-"easy. Just select in the filesystem dock the relevant resource:"
+"easy. Select the relevant resource in the filesystem dock:"
 msgstr ""
+"Changer les paramètres d’importation d’une ressource dans Godot est facile "
+"(encore une fois, gardez à l’esprit que les paramètres d’importation sont "
+"seulement présents pour les types de ressources non-natifs de Godot). "
+"Sélectionnez une ressource donnée dans l’onglet du système de ficher :"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
+#, fuzzy
 msgid ""
-"And, after adjusting the parameters, just press \"Reimport\". The parameters "
+"Then, after adjusting the parameters, press \"Reimport\". The parameters "
 "used will be only for this asset and will be used on future reimports."
 msgstr ""
+"Et, après ajustement des paramètres, pressez \"Réimporter\". Les paramètres "
+"utilisés seront uniquement appliqués à cette ressource et seront utilisés "
+"pour les réimportations futures."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
 msgid ""
@@ -69,10 +90,14 @@ msgid ""
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
+"Changer les paramètres d’importation pour plusieurs ressources en même temps "
+"est possible également. Sélectionnez-les tous ensemble dans l’onglet "
+"ressources et les paramètres exposés seront appliqués à chacun d’entre entre "
+"lors de leur réimportation."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
-msgstr ""
+msgstr "Réimportation automatique"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -80,16 +105,22 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
+"Lorsque que la somme de contrôle MD5 d’une ressource change, Godot "
+"effectuera une réimportation automatique de celle-ci, en appliquant les "
+"paramètres configurés pour cette ressource spécifique."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Files generated"
-msgstr ""
+msgstr "Fichiers générés"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"Importer ajoutera un fichier <ressource>.import en plus, contenant la "
+"configuration d’importation. Veillez à bien versionner ceux-ci sur votre "
+"système de contrôle de version !"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:53
 msgid ""
@@ -107,18 +138,21 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"
-msgstr ""
+msgstr "Changer le type d’importation de ressource"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:66
+#, fuzzy
 msgid ""
 "Some source assets can be imported as different types of resources. For "
-"this, just select the relevant type of resource desired and press \"Reimport"
-"\":"
+"this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
+"Certaines fichers sources peuvent être importés comme différent types de "
+"ressources. Pour ceci, sélectionnez le type de ressource approprié désiré et "
+"appuyez sur \"Réimporter\" :"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "Changer les paramètres d’importation par défaut"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
@@ -127,10 +161,15 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
+"Différent types de jeux peuvent nécessiter des valeurs par défaut "
+"différentes. Changer ces valeurs par défaut pour un projet peut être "
+"effectué en utilisant le menu \"Pré-configuration\". En plus de certains "
+"types de ressources offrant des pré-configurations, la configuration par "
+"défaut peut-être sauvées et remise à zéro aussi :"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "La simplicité est la clé !"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:86
 msgid ""

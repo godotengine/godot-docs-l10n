@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,10 +56,11 @@ msgstr ""
 "nœuds de contrôles éditables dans un but de lisibilité."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
+#, fuzzy
 msgid ""
 "Nodes still display the required information as text, but editing is done "
-"via the *Inspector*. To edit them, just select any node and edit its "
-"properties in the *Inspector*."
+"via the *Inspector*. To edit them, select any node and edit its properties "
+"in the *Inspector*."
 msgstr ""
 "Les nœuds affichent toujours les informations requises sous forme de texte, "
 "mais l'édition se fait via l'*Inspecteur*. Pour les éditer, il suffit de "
@@ -94,14 +95,14 @@ msgstr ""
 "*Ports* : *Sequence* et *Data*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
+#, fuzzy
 msgid ""
 "*Sequence Ports* indicate the order in which operations are executed. "
 "Typically when a *Node* is done processing, it will go to the next node from "
 "one of the ports at the right. If nothing is connected the function may end, "
 "or another output *Sequence Port* might be tried (this depends on the node). "
-"Thanks to this, it's easy to understand the logic within a function by just "
-"following the white lines. Not every *Node* has *Sequence Ports*. In fact, "
-"most do not."
+"Thanks to this, you can follow the logic flow within a function by following "
+"the white lines. Not every *Node* has *Sequence Ports*. In fact, most do not."
 msgstr ""
 "Les *ports de séquence* indiquent l'ordre dans lequel les opérations sont "
 "exécutées. Typiquement, lorsqu'un *nœud* est traité, il ira au nœud suivant "
@@ -142,9 +143,10 @@ msgid "Connections"
 msgstr "Connexions"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:60
+#, fuzzy
 msgid ""
-"Connecting is a relatively simple process. Just drag an *Output Port* "
-"towards an *Input Port*."
+"Connecting is a relatively simple process. Drag an *Output Port* towards an "
+"*Input Port*."
 msgstr ""
 "Connecter est un processus relativement simple. Glissez un *port de sortie* "
 "vers un *port d’entrée*."
@@ -256,7 +258,7 @@ msgstr ""
 "C'est la manière la plus courante de modifier les *nœuds de scène* en Visual "
 "Scripting. Sélectionnez un *nœud de scène* depuis la *hiérarchie de scène*, "
 "allez dans l'inspecteur, trouvez le *nom* de la propriété que vous voulez "
-"changer (*pas* la valeur !) et glissez la vers le canvas :"
+"changer (*pas* la valeur !) et glissez la vers le canevas :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:120
 msgid ""
@@ -267,9 +269,10 @@ msgstr ""
 "écrivant à un *Port de données*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
+#, fuzzy
 msgid ""
-"If instead reading this value is desired, just drag the node again but hold "
-"the *Control* key (or Command on Mac). This will create a getter:"
+"If instead reading this value is desired, drag the node again but hold the "
+"*Control* key (or Command on Mac). This will create a getter:"
 msgstr ""
 "Si vous voulez lire cette valeur à la place, glissez à nouveau le nœud et "
 "pressez la touche *Contrôle* (ou Command sur Mac). Cela créera un getter :"
@@ -328,7 +331,7 @@ msgid ""
 "getter:"
 msgstr ""
 "Pour utiliser la variable dans le script, il suffit de la faire glisser sur "
-"le canvas pour créer un getter :"
+"le canevas pour créer un getter :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
@@ -357,8 +360,9 @@ msgstr ""
 "personnaliser ses arguments :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
+#, fuzzy
 msgid ""
-"The signal you have just created will appear in the Inspector along with the "
+"The signal you have created will appear in the Inspector along with the "
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
@@ -368,8 +372,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
-msgstr ""
-"Enfin, pour émettre le signal, il suffit de le faire glisser sur le canvas :"
+msgstr "Enfin, pour émettre le signal, glissez le sur le canevas :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:186
 msgid ""
@@ -390,7 +393,7 @@ msgid ""
 "all available node types:"
 msgstr ""
 "Maintenant que les bases sont vues, discutons de la grande quantité de nœuds "
-"utilitaires disponibles pour votre canvas ! Sous le panneau des membres, se "
+"utilitaires disponibles pour votre canevas ! Sous le panneau des membres, se "
 "trouve la liste de tous les types de nœuds disponibles :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
@@ -453,12 +456,18 @@ msgid ""
 "constants for global types in Godot. In there you can find some useful "
 "constants to refer to key names, joystick or mouse buttons, etc."
 msgstr ""
+"Le second est le nœud GlobalConstant, qui contient une longue liste de "
+"constantes pour les types globaux dans Godot. Vous y trouverez des "
+"constantes utiles pour faire référence à des noms de touches, des boutons de "
+"joystick ou de souris, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
 msgid ""
 "The third one is MathConstant, which provides typical mathematical constants "
 "such as PI, E, etc."
 msgstr ""
+"Le troisième est MathConstant, qui fournit des constantes mathématiques "
+"typiques telles que PI, E, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
@@ -470,16 +479,21 @@ msgid ""
 "Godot is accessed via these nodes, so they are some of the most important "
 "ones to use and pretty diverse."
 msgstr ""
+"Les nœuds de données traitent toutes sortes d'accès à l'information. Toute "
+"information dans Godot est accessible par l'intermédiaire de ces nœuds, de "
+"sorte qu'ils sont parmi les plus importants à utiliser et assez divers."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
 msgid ""
 "There are many types of nodes of interest here, so a short attempt to "
 "describe them will follow:"
 msgstr ""
+"Il y a beaucoup de types de nœuds d'intérêt ici, en voici donc une brève "
+"description :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -488,10 +502,14 @@ msgid ""
 "below, the control is moved to the right when the \"move_right\" action is "
 "pressed."
 msgstr ""
+"Les nœuds d'action sont vitaux lorsqu'il s'agit des entrées d'un dispositif. "
+"Vous pouvez en savoir plus sur les actions dans le (@TODO LIEN VERS TUTO "
+"ACTION). Dans l'exemple ci-dessous, le contrôle est déplacé vers la droite "
+"lorsque l'action \"move_right\" est pressée."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
-msgstr ""
+msgstr "Singleton moteur"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
 msgid ""
@@ -500,56 +518,79 @@ msgid ""
 "have several purposes, but in general they are useful for low level access "
 "or OS-related access."
 msgstr ""
+"Les singletons de moteur sont des interfaces globales (ce qui signifie qu'on "
+"peut y accéder sans référence, contrairement aux nœuds de scène, ils sont "
+"toujours disponibles). Ils ont plusieurs buts, mais en général ils sont "
+"utiles pour l'accès de bas niveau ou l'accès lié à l'OS."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
 "Remember that dragging a connection to empty space will help you call "
 "functions or set/get properties on these:"
 msgstr ""
+"Rappelez-vous que faire glisser une connexion vers un espace vide vous "
+"aidera à appeler des fonctions ou des propriétés set/get sur celles-ci :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:263
 msgid "Local Variables"
-msgstr ""
+msgstr "Variables locales"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:265
+#, fuzzy
 msgid ""
-"These are nodes you can use as temporary storage for your graphs. Just make "
-"sure they all have the same name and type when using them and they will "
-"reference the same piece of memory."
+"These are nodes you can use as temporary storage for your graphs. Make sure "
+"they all have the same name and type when using them and they will reference "
+"the same piece of memory."
 msgstr ""
+"Ce sont des nœuds que vous pouvez utiliser comme stockage temporaire pour "
+"vos graphes. Assurez-vous simplement qu'ils ont tous le même nom et le même "
+"type lors de leurs utilisations et ils feront référence aux mêmes "
+"emplacements en mémoire."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced getter (setting requires a sequence port)."
 msgstr ""
+"Comme on peut le voir ci-dessus, il y a deux nœuds disponibles : Un getter "
+"simple, et un getter séquencé (le setter requiert un port de séquence)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
-msgstr ""
+msgstr "Nœud de scène"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
+#, fuzzy
 msgid ""
 "This is just a reference to a node in the tree, but it's easier to use this "
-"node by just dragging the actual node from the scene tree to the canvas "
-"(this will create it and configure it)."
+"node by dragging the actual node from the scene tree to the canvas (this "
+"will create it and configure it)."
 msgstr ""
+"Ceci est seulement une référence à un nœud dans l'arbre, mais il est plus "
+"facile d'utiliser ce nœud en glissant le nœud actuel de l'arbre de la scène "
+"vers le canevas (cela va le créer et le configurer)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
 msgstr "Self"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
+#, fuzzy
 msgid ""
 "In some rare occasions, it may be desired to pass this Scene Node as "
-"argument. It can be used to call functions and set/get properties, or just "
-"drag nodes (or event the node itself that has the script) from the Scene "
-"Tree to the canvas for this."
+"argument. It can be used to call functions and set/get properties, or drag "
+"nodes (or event the node itself that has the script) from the Scene Tree to "
+"the canvas for this."
 msgstr ""
+"À quelques rares occasions, vous pouvez vouloir passer ce nœud de scène "
+"comme argument. Cela peut être utilisé pour appeler des fonctions et "
+"paramétrer/obtenir des propriétés, ou glisser simplement les nœuds (ou même "
+"le nœud lui-même qui a le script) à partir de l'arbre des scènes vers le "
+"canevas pour cela."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr ""
+msgstr "SceneTree"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
 msgid ""
@@ -558,6 +599,10 @@ msgid ""
 "when the node is sitting in the scene and active, otherwise accessing it "
 "will return as an error."
 msgstr ""
+"Ce nœud est similaire au nœud Singleton puisqu'il référence l'arbre des "
+"scènes SceneTree, qui contient la scène active. SceneTree, cependant, "
+"fonctionne seulement lorsque le nœud est dans la scène et actif, sinon y "
+"accéder résultera en une erreur."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -565,18 +610,26 @@ msgid ""
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
+"SceneTree permet nombreuses choses de bas niveau, de régler des options "
+"d'étirement, d'appeler des groupes, de créer des minuteries ou même de "
+"charger une autre scène. C'est une classe qu'il est bon de se familiariser "
+"avec."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr ""
+msgstr "Précharger"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
+#, fuzzy
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
 "resource loaded and ready to use. Rather than instancing the node, it's "
-"simpler to just drag the desired resource from the filesystem dock to the "
-"canvas."
+"simpler to drag the desired resource from the filesystem dock to the canvas."
 msgstr ""
+"Cela fait la même chose que la fonction preload() en GDScript. Cela "
+"maintient la ressource chargée et prête à être utilisée. Au lieu "
+"d'instancier ce nœud, il est plus simple de glisser la ressource désirée du "
+"dock de système de fichier vers le canevas."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
@@ -587,10 +640,13 @@ msgid ""
 "This node is a simple helper to get a string with a path to a resource you "
 "can pick. It's useful in functions that load things from disk."
 msgstr ""
+"Ce nœud est une simple aide pour obtenir une chaîne de caractères avec un "
+"chemin à une ressource que vous pouvez prendre. Cela est utile dans les "
+"fonctions qui charge les éléments à partir du disque."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
-msgstr ""
+msgstr "Commentaire"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -598,16 +654,22 @@ msgid ""
 "will not try to get focus or be brought to top when selecting it. It can "
 "also be used to write text on it."
 msgstr ""
+"Un nœud Commentaire est un nœud que vous pouvez redimensionner pour le "
+"placer autour d'autres nœuds. Il ne tentera pas d'obtenir le focus ou de se "
+"placer au dessus lorsqu'il est sélectionné. Il peut également être utilisé "
+"pour y écrire du texte."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:322
 msgid "Flow Control"
-msgstr ""
+msgstr "Contrôle de flux"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:324
 msgid ""
 "Flow control nodes allow the execution to take different branches, usually "
 "depending on a given condition."
 msgstr ""
+"Les nœuds de contrôle de flux permettent à l'exécution de prendre "
+"différentes branches, généralement en fonction d'une condition donnée."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
@@ -620,6 +682,11 @@ msgid ""
 "them, it goes via the \"done\" port. Leaving sequence ports disconnected is "
 "fine if not all of them are used."
 msgstr ""
+"C'est simplement un nœud qui vérifie un port booléen. Si c'est vrai, "
+"l'exécution se poursuit via la séquence de port \"vraie\". Sinon, la "
+"seconde. Après avoir passé au travers de l'une d'elles, l'exécution passe "
+"dans le port \"terminé\". Laisser les séquences de ports déconnectées est "
+"correcte si elles ne sont pas toutes utilisées."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
@@ -640,10 +707,13 @@ msgid ""
 "via the \"each\" sequence port, making the element available in the \"elem\" "
 "data port."
 msgstr ""
+"Le nœud Iterator passe par tous les éléments et, pour chacun d'entre eux, il "
+"passe par le port de séquence \"each\", rendant l'élément disponible dans le "
+"port de données \"elem\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:347
 msgid "When done, it goes via the \"exit\" sequence port."
-msgstr ""
+msgstr "Une fois terminé, il passe par le port de séquence \"sortie\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
@@ -654,6 +724,9 @@ msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
 "add the Return node for you. A return node forces the function to end."
 msgstr ""
+"Certaines fonctions peuvent renvoyer des valeurs. En général pour celles "
+"virtuelles, Godot ajoutera le nœud Return pour vous. Un nœud de retour force "
+"la fonction à se terminer."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
@@ -664,23 +737,32 @@ msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
 "ports in order."
 msgstr ""
+"Ce nœud est surtout utile pour organiser votre graphe. Il appelle ses ports "
+"de séquence dans l'ordre."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:364
 msgid "TypeCast"
-msgstr ""
+msgstr "TypeCast"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
+#, fuzzy
 msgid ""
-"This is a very useful and commonly used node. You can use it to cast "
-"arguments or other objects to the type you desire. Afterwards, you can even "
-"drag the object output to get full completion."
+"This is a useful and commonly used node. You can use it to cast arguments or "
+"other objects to the type you desire. Afterwards, you can even drag the "
+"object output to get full completion."
 msgstr ""
+"C'est un nœud très utile et couramment utilisé. Vous pouvez l'utiliser pour "
+"convertir des arguments ou d'autres objets au type que vous désirez. "
+"Ensuite, vous pouvez même faire glisser la sortie de l'objet pour en obtenir "
+"le résultat complet."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:372
 msgid ""
 "It is also possible to cast to a script, which will allow complete script "
 "properties and functions:"
 msgstr ""
+"Il est également possible de caster un script, ce qui permettra d'obtenir "
+"des propriétés et des fonctions complètes de script :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
 msgid "Switch"
@@ -691,6 +773,8 @@ msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
 "at the same time."
 msgstr ""
+"Le nœud Switch est similaire au nœud Condition, mais il compare à plusieurs "
+"valeurs en même temps."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
@@ -701,6 +785,9 @@ msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
 "be called as long as the condition in the \"cond\" data port is met."
 msgstr ""
+"C'est une forme plus primitive d'itération. La sortie de la séquence \"repeat"
+"\" sera appelée tant que la condition dans le port de données \"cond\" est "
+"remplie."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 msgid "Functions"
@@ -711,29 +798,43 @@ msgid ""
 "Functions are simple helpers, most of the time deterministic. They take some "
 "arguments as input and return an output. They are almost never sequenced."
 msgstr ""
+"Les fonctions sont des aides simples, la plupart du temps déterministes. Ils "
+"prennent certains arguments en entrée et retournent une sortie. Ils ne sont "
+"presque jamais séquencés."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 msgid "Built-In"
-msgstr ""
+msgstr "Built-In"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
+#, fuzzy
 msgid ""
 "There is a list of built in helpers. The list is almost identical to the one "
 "from GDScript (@TODO, link to gdscript methods?). Most of them are "
-"mathematical functions, but others can be very useful helpers. Just make "
-"sure to take a look at the list at some point."
+"mathematical functions, but others can be useful helpers. Make sure to take "
+"a look at the list at some point."
 msgstr ""
+"Il y a une liste d'aides intégrées. La liste en est presque identique à "
+"celle de GDScript (@TODO, lien vers les méthodes gdscript ?). La plupart "
+"d'entre elles sont des fonctions mathématiques, mais d'autres peuvent être "
+"des aides très utiles. Assurez-vous de jeter un coup d’œil à la liste à "
+"l'occasion."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid "By Type"
-msgstr ""
+msgstr "Par type"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
+#, fuzzy
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
+"Ce sont les méthodes disponibles pour les types de base. Par exemple, si "
+"vous voulez un produit scalaire (dot-product), vous pouvez rechercher \"dot"
+"\" au lieu de la catégorie Vector3. Dans la plupart des cas, recherchez "
+"simplement dans liste des nœuds, ça devrait être plus rapide."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid "Call"
@@ -744,10 +845,12 @@ msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
 msgstr ""
+"Il s'agit du nœud d'appel générique. Il est rarement utilisé directement "
+"mais en faisant glisser un nœud déjà configuré, vers un emplacement vide."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid "Constructors"
-msgstr ""
+msgstr "Constructeurs"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:421
 msgid ""
@@ -755,40 +858,52 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
+"Ce sont toutes les fonctions nécessaires pour créer des types de données de "
+"base de Godot. Par exemple, si vous avez besoin de créer un Vector3 à partir "
+"de 3 flottants, un constructeur doit être utilisé."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid "Destructor"
-msgstr ""
+msgstr "Destructeur"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:429
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
+"C'est le contraire du constructeur, il permet de séparer n'importe quel type "
+"de base (i.e. Vector3) en ses sous-éléments."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid "Emit Signal"
-msgstr ""
+msgstr "Emettre un signal"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
+#, fuzzy
 msgid ""
-"Emits signals from any object. In general it's not very useful, as dragging "
+"Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"Émet un signal depuis n'importe quel objet. En général ce n'est pas très "
+"utile, glisser/déposer le signal vers le canevas fonctionnera nettement "
+"mieux."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid "Get/Set"
-msgstr ""
+msgstr "Get/Set"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:443
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
+"Nœud Getter/Setter générique. Glisser des propriétés à partir de "
+"l'inspecteur fonctionne mieux, car elles apparaissent correctement "
+"configurées au moment du dépôt."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid "Wait"
-msgstr ""
+msgstr "Attendre"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:449
 msgid ""
@@ -797,34 +912,45 @@ msgid ""
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
+"Les nœuds Wait suspendront l'exécution de la fonction jusqu'à ce que quelque "
+"chose se produise (de nombreuses trames peuvent passer jusqu'à la reprise, "
+"en fait). Les nœuds par défaut vous permettent d'attendre qu'une trame "
+"passe, une trame déterminée ou un intervalle de temps donné jusqu'à la "
+"reprise de l'exécution."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid "Yield"
-msgstr ""
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:456
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
 msgstr ""
+"Ce nœud suspend complètement l'exécution du script, et fera retourner à la "
+"fonction une valeur qui peut être utilisée pour reprendre l'exécution."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
+#, fuzzy
 msgid "Yield Signal"
-msgstr ""
+msgstr "Yield Signal"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:462
 msgid "Same as Yield, but will wait until a given signal is emitted."
 msgstr ""
+"Identique à Yield, mais attendra jusqu'à ce qu'un signal donné soit émis."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:468
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr ""
+"Opérateur d'indexation générique, pas souvent utilisé mais existe en cas de "
+"besoin."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid "Operators"
@@ -838,32 +964,44 @@ msgid ""
 "always recommended to set the right type for operators to catch errors "
 "faster and make the graph easier to read."
 msgstr ""
+"Il s'agit le plus souvent d'opérateurs génériques tels que l'addition, la "
+"multiplication, la comparaison, etc. Par défaut, la plupart d'entre eux "
+"acceptent n'importe quel type de données (et généreront des erreurs pendant "
+"l'exécution si les types fournis ne correspondent pas à l'opérateur). Il est "
+"toujours recommandé de définir le bon type pour que les opérateurs captent "
+"les erreurs plus rapidement et rendent le graphe plus facile à lire."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"
-msgstr ""
+msgstr "Nœud d'expression"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
+#, fuzzy
 msgid ""
 "Among the operators, the *Expression* node is the most powerful. If well "
 "used, it allows you to enormously simplify visual scripts that are math or "
-"logic heavy. Just type any expression on it and it will be executed in real-"
-"time."
+"logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
+"Parmi les opérateurs, le noeud *Expression* est le plus puissant. S'il est "
+"bien utilisé, il vous permet de simplifier énormément les scripts visuels "
+"qui sont lourds en mathématiques ou en logique. Il suffit de taper n'importe "
+"quelle expression et elle sera exécutée en temps réel."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid "Expression nodes can:"
-msgstr ""
+msgstr "Les nœuds d'expression peuvent :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:490
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
+"Exécuter des expressions mathématiques et logiques basées sur des entrées "
+"personnalisées (ex : \"a*5+b\", où a et b sont des entrées personnalisées) :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:495
 msgid "Access local variables or properties:"
-msgstr ""
+msgstr "Accédez aux variables ou propriétés locales :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:500
 msgid ""
@@ -871,13 +1009,18 @@ msgid ""
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
 "Rect2(..), etc.:"
 msgstr ""
+"Utilisez la plupart des fonctions intégrées existantes qui sont disponibles "
+"pour GDScript, telles que sin(), cos(), print(), ainsi que des "
+"constructeurs, tels que Vector3(x,y,y,z), Rect2(...), etc. :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:505
 msgid "Call API functions:"
-msgstr ""
+msgstr "Appeler les fonctions de l'API :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:510
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
 msgstr ""
+"Utilisez le mode séquencé, ce qui a plus de sens en cas de respect de "
+"l'ordre de traitement :"

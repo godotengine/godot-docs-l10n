@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,9 +54,10 @@ msgstr ""
 "<doc_scripting <doc_scripting>` du tutoriel pas-à-pas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:16
+#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot it "
-"is implemented with the Mono 5.2 .NET framework including full support for "
+"is implemented with the Mono 5.x .NET framework including full support for "
 "C# 7.0. Mono is an open source implementation of Microsoft's .NET Framework "
 "based on the ECMA standards for C# and the Common Language Runtime. A good "
 "starting point for checking its capabilities is the `Compatibility <http://"
@@ -89,9 +90,11 @@ msgid "Setup C# for Godot"
 msgstr "Configurer C# pour Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:27
+#, fuzzy
 msgid ""
 "To use C# in Godot you must have `Mono <http://www.mono-project.com/download/"
-">`_ installed (at least version 5.2), as well as MSBuild (at least version "
+">`_ installed. Godot 3.0.2 requires Mono 5.4, 3.0.3 requires Mono 5.10 on "
+"Linux and Windows, and 5.8 on MacOS. You also need MSBuild (at least version "
 "15.0) which should come with the Mono installation."
 msgstr ""
 "Pour utiliser C# dans Godot, vous devez avoir `Mono <http://www.mono-project."

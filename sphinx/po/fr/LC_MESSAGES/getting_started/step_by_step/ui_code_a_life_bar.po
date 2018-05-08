@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -319,13 +319,16 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
-msgstr ""
+msgstr "Mettre à jour la santé avec un signal lorsque le joueur prend un coup"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
 msgid ""
 "Our GUI is ready to receive the ``health`` value updates from the "
 "``Player``. To achieve this we're going to use **signals**."
 msgstr ""
+"Notre interface graphique est prête à recevoir les mises-à-jour de la valeur "
+"de ``health`` de ``Player``. Pour ce faire, nous allons utiliser des "
+"**signaux**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:195
 msgid ""
@@ -334,18 +337,33 @@ msgid ""
 "can also create your own using the `signal` keyword. On the `Player` node, "
 "you'll find two signals we created for you: `died` and `health_changed`."
 msgstr ""
+"Il existe de nombreux signaux intégrés utiles comme `enter_tree` et "
+"`exit_tree`, que tous les nœuds émettent lorsqu'ils sont respectivement "
+"créés et détruits. Vous pouvez également créer votre propre signal en "
+"utilisant le mot-clé `signal`. Sur le nœud `Player`, vous trouverez deux "
+"signaux que nous avons créés pour vous : `died` et `health_changed`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
+#, fuzzy
 msgid ""
 "Why don't we directly get the ``Player`` node in the ``_process`` function "
 "and look at the health value? Accessing nodes this way creates tight "
 "coupling between them. If you did it sparingly it may work. As your game "
 "grows bigger, you may have many more connections. If you get nodes this way "
-"it gets very complex quickly. Not only that: you need to listen to the state "
+"it gets complex quickly. Not only that: you need to listen to the state "
 "change constantly in the ``_process`` function. This check happens 60 times "
 "a second and you'll likely break the game because of the order in which the "
 "code runs."
 msgstr ""
+"Pourquoi n'obtenons-nous pas directement le nœud ``Player`` dans la fonction "
+"``_process`` et regardons la valeur santé ? L'accès aux nœuds de cette façon "
+"crée un couplage étroit entre eux. Si vous l'avez fait avec parcimonie, cela "
+"peut fonctionner. Au fur et à mesure que votre jeu grossit, vous pouvez "
+"avoir beaucoup plus de connexions. Si vous obtenez des nœuds de cette façon, "
+"cela devient très complexe rapidement. Non seulement cela : vous vérifiez le "
+"changement d'état en permanence dans la fonction ``_processus``. Cette "
+"vérification se produit 60 fois par seconde et vous casserez probablement le "
+"jeu à cause de l'ordre dans lequel le code s'exécute."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:206
 msgid ""
@@ -356,6 +374,13 @@ msgid ""
 "information. And you will update the state of your connected node *right "
 "after* the change happened."
 msgstr ""
+"À une trame donnée, vous regardez potentiellement la propriété d'un autre "
+"nœud *avant* qu'il ait été mis à jour : vous obtenez une valeur de la "
+"dernière trame. Cela conduit à des bogues obscurs qui sont difficiles à "
+"corriger. D'autre part, un signal est émis juste après qu'un changement "
+"s'est produit. Cela vous **garantit** que vous obtenez des informations "
+"fraîches. Et vous mettrez à jour l'état de votre nœud connecté *directement "
+"après* que le changement se produise."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
 msgid ""
@@ -368,6 +393,16 @@ msgid ""
 "gameprogrammingpatterns.com/observer.html>`_. The `full book <http://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
+"Le patron Observateur, dont dérivent les signaux, ajoute quand même un peu "
+"de couplage entre les branches de nœuds. Mais il est généralement plus léger "
+"et plus sûr que l'accès direct aux nœuds pour communiquer entre deux classes "
+"distinctes. Il peut être acceptable pour un nœud parent d'obtenir les "
+"valeurs de ses enfants. Mais vous voudrez favoriser les signaux si vous "
+"travaillez avec deux branches distinctes. Lisez Game Programming Patterns "
+"pour plus d'informations sur `Observer pattern <http://"
+"gameprogrammingpatterns.com/observer.html>`_. Le `livre complet <http://"
+"gameprogrammingpatterns.com/contents.html>`_ est disponible en ligne "
+"gratuitement."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
 msgid ""
@@ -376,24 +411,33 @@ msgid ""
 "and click on the Node tab. This is the place to connect nodes to listen the "
 "one you selected."
 msgstr ""
+"Dans cette optique, connectons le ``GUI``à ``Player``. Cliquez sur le nœud "
+"``Player``` dans le dock de scène pour le sélectionner. Dirigez-vous vers "
+"l'inspecteur et cliquez sur l'onglet Nœud. C'est l'endroit où connecter les "
+"nœuds, pour écouter celui que vous avez sélectionné."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
 msgid "The first section lists custom signals defined in ``player.GD``:"
 msgstr ""
+"La première section énumère les signaux personnalisés définis dans ``player."
+"GD`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
+#, fuzzy
 msgid ""
-"``died`` is emitted when the character just died. We will use it in a moment "
-"to hide the UI."
+"``died`` is emitted when the character died. We will use it in a moment to "
+"hide the UI."
 msgstr ""
+"``died`` est émis quand le personnage vient de mourir. Nous l'utiliserons "
+"dans un moment pour cacher l'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:228
 msgid "``health_changed`` is emitted when the character got hit."
-msgstr ""
+msgstr "``health_changed`` est émis lorsque le personnage a été touché."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:232
 msgid "We're connecting to the health\\_changed signal"
-msgstr ""
+msgstr "On se connecte au signal health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
 msgid ""
@@ -405,26 +449,40 @@ msgid ""
 "too many arguments using this window as they're less convenient than doing "
 "it from the code."
 msgstr ""
+"Sélectionnez ``health_changed`` et cliquez sur le bouton Connecter dans le "
+"coin inférieur droit pour ouvrir la fenêtre Connecter un signal. Sur le côté "
+"gauche, vous pouvez choisir le nœud qui écoutera ce signal. Sélectionnez le "
+"nœud ``GUI``. Le côté droit de l'écran vous permet d'empaqueter des valeurs "
+"optionnelles avec le signal. Nous nous en sommes déjà occupés dans ``player."
+"GD``. En général, je recommande de ne pas ajouter trop d'arguments en "
+"utilisant cette fenêtre car ils sont moins pratiques que de le faire à "
+"partir du code."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
 msgid "The Connect Signal window with the GUI node selected"
-msgstr ""
+msgstr "La fenêtre Connecter un signal avec le nœud GUI sélectionné"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
 msgid ""
 "You can optionally connect nodes from the code. But doing it from the editor "
 "has two advantages:"
 msgstr ""
+"Vous pouvez éventuellement connecter des nœuds à partir du code. Mais le "
+"faire à partir de l'éditeur a deux avantages :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
+"Godot peut écrire de nouvelles fonctions de rappel pour vous dans le script "
+"connecté"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:251
 msgid ""
 "An emitter icon appears next to the node that emits the signal in the Scene "
 "dock"
 msgstr ""
+"Une icône d'émetteur apparaît à côté du nœud qui émet le signal dans le dock "
+"de scène"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
 msgid ""
@@ -437,6 +495,15 @@ msgid ""
 "creates the method inside the ``GUI`` node. The script editor opens with the "
 "cursor inside a new ``_on_player_health_changed`` function."
 msgstr ""
+"En bas de la fenêtre, vous trouverez le chemin d'accès au nœud que vous avez "
+"sélectionné. Nous nous intéressons à la deuxième ligne appelée \"Méthode "
+"dans le nœud\". C'est la méthode sur le noeud ``GUI`` qui est appelé lorsque "
+"le signal est émis. Cette méthode reçoit les valeurs envoyées avec le signal "
+"et vous permet de les traiter. Si vous regardez à droite, il y a un bouton "
+"radio \"Créer une fonction\" qui est activé par défaut. Cliquez sur le "
+"bouton Connecter au bas de la fenêtre. Godot crée la méthode à l'intérieur "
+"du nœud ``GUI``. L'éditeur de script s'ouvre avec le curseur à l'intérieur "
+"d'une nouvelle fonction ``_on_player_health_changed``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:265
 msgid ""
@@ -445,10 +512,14 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
+"Lorsque vous connectez des nœuds à partir de l'éditeur, Godot génère un nom "
+"de méthode avec le modèle suivant : ``_on_EmitterName_signal_name``. Si vous "
+"avez déjà écrit la méthode, l'option \"Créer une fonction\" la conservera. "
+"Vous pouvez remplacer le nom par ce que vous voulez."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
 msgid "Godot writes the callback method for you and takes you to it"
-msgstr ""
+msgstr "Godot écrit la méthode de rappel pour vous et vous y emmène"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
 msgid ""
@@ -485,8 +556,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
-"The name makes it very clear for our future selves and teammates that when "
-"the player took damage, we update the health count on the GUI"
+"The name makes it clear for our future selves and teammates that when the "
+"player took damage, we update the health count on the GUI"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
@@ -648,7 +719,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 msgid ""
-"Although we could animate the `health` property on the `Player`, we really "
+"Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
 "it a lot easier to manage their state, like to know when one died. You "
 "always want to store animations in a separate data container or node. The "
@@ -715,8 +786,8 @@ msgid ""
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
 "updates the animation and the ``number_label`` and ``bar`` follow in "
 "``_process``. The animated life bar that shows the health going down "
-"gradually is just a trick. It makes the GUI feel alive. If the ``Player`` "
-"takes 3 damage, it happens in an instant."
+"gradually is a trick. It makes the GUI feel alive. If the ``Player`` takes 3 "
+"damage, it happens in an instant."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:570
@@ -734,9 +805,9 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:577
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
-"know when it just died. Press :kbd:`F1` to jump back to the 2D Workspace. "
-"Select the ``Player`` node in the Scene dock and click on the Node tab next "
-"to the Inspector."
+"know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
+"the ``Player`` node in the Scene dock and click on the Node tab next to the "
+"Inspector."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:582

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,12 +27,12 @@ msgstr "Introducció"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
 msgid ""
-"Scene singletons are very useful, catering to a common use case where you "
-"need to store persistent information between scenes."
+"Scene singletons are useful, catering to a common use case where you need to "
+"store persistent information between scenes."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:12
-msgid "Albeit very powerful, the scene system by itself has a few drawbacks:"
+msgid "Albeit powerful, the scene system by itself has a few drawbacks:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:14
@@ -186,9 +186,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:218
 msgid ""
-"As mentioned in the comments above, we really want to avoid the situation of "
-"having the current scene being deleted while being used (code from functions "
-"of it being run), so using :ref:`Object.call_deferred() "
+"As mentioned in the comments above, we want to avoid the situation of having "
+"the current scene being deleted while being used (code from functions of it "
+"being run), so using :ref:`Object.call_deferred() "
 "<class_Object_call_deferred>` is desired at this point. The result is that "
 "execution of the commands in the second function will happen at a later time "
 "when no code from the current scene is running."

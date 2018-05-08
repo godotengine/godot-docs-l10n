@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
 msgid "GDScript Style Guide"
-msgstr ""
+msgstr "Руководство по стилю GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:7
 msgid "Description"
@@ -43,9 +43,11 @@ msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
 msgstr ""
+"Поскольку GDScript похож на Python, данное руководство вдохновлено стилевыми "
+"правилами программирования на Python `PEP 8 <https://www.python.org/dev/peps/"
+"pep-0008/>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
-#, fuzzy
 msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
@@ -80,18 +82,16 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:83
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#, fuzzy
 msgid "**Good**:"
-msgstr "**Хорошо**"
+msgstr "**Хорошо**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:93
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
-#, fuzzy
 msgid "**Bad**:"
-msgstr "**Плохо**"
+msgstr "**Плохо**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
 msgid ""
@@ -110,9 +110,10 @@ msgid "Surround functions and class definitions by a blank line."
 msgstr "Добавляйте пустые строки до и после объявления функций и классов."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:74
-#, fuzzy
 msgid "Use one blank line inside functions to separate logical sections."
-msgstr "Добавляйте пустые строки, чтобы отделить логические разделы."
+msgstr ""
+"Используйте одну пустую строку внутри функций для отделения логических "
+"частей друг от друга."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:77
 msgid "One Statement per Line"
@@ -123,6 +124,9 @@ msgid ""
 "Never combine multiple statements on a single line. No, C programmers, not "
 "with a single line conditional statement (except with the ternary operator)!"
 msgstr ""
+"Никогда не объединяйте несколько выражений в одну строку. Нет, программисты "
+"C, не надо писать условные выражения в одну строку (за исключением "
+"тернарного оператора)!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
 msgid "Avoid Unnecessary Parentheses"
@@ -152,20 +156,20 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
 msgid "**NEVER**:"
-msgstr ""
+msgstr "**НИКОГДА**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
 msgid "Naming Conventions"
 msgstr "Соглашения в именовании"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:158
-#, fuzzy
 msgid ""
 "These naming conventions follow the Godot Engine style. Breaking these will "
 "make your code clash with the built-in naming conventions, which is ugly."
 msgstr ""
-"Эти соглашения в именовании заложены в коде Godot Engine. Их нарушение "
-"приведёт к конфликту со встроенными именами, что не очень красиво."
+"Эти соглашения об именах следуют стилю Godot Engine. Нарушение данных правил "
+"приведет к конфликту вашего кода со встроенными соглашениями об именах, что "
+"является ужасным."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:163
 msgid "Classes and Nodes"
@@ -173,25 +177,28 @@ msgstr "Классы и Узлы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:165
 msgid "Use PascalCase: ``extends KinematicBody``"
-msgstr ""
+msgstr "Используйте PascalCase: ``extends KinematicBody``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:167
 msgid "Also when loading a class into a constant or variable:"
-msgstr ""
+msgstr "Также при загрузке класса в константу или переменную:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:174
 msgid "Functions and Variables"
-msgstr ""
+msgstr "Функции и Переменные"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
 msgid "Use snake\\_case: ``get_node()``"
-msgstr ""
+msgstr "Используйте змеиный_регистр: ``get_node()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
 msgstr ""
+"Добавьте одно нижнее подчеркивание (\\_) к наименованию виртуальных методов "
+"(функции, которые пользователь должен переопределить), приватных функций и "
+"приватных переменных: ``func _ready()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
 msgid "Signals"
@@ -199,7 +206,7 @@ msgstr "Сигналы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:185
 msgid "Use past tense:"
-msgstr ""
+msgstr "Используйте прошедшее время:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
 msgid "Constants"
@@ -210,3 +217,5 @@ msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
 msgstr ""
+"Используйте CONSTANT\\_CASE, все большими буквами, с нижним подчеркиванием "
+"(\\_) в качестве разделителя слов: ``const MAX_SPEED = 200``"

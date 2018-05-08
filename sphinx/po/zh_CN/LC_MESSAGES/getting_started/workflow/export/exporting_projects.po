@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
-msgstr ""
+msgstr "导出项目"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:7
 msgid "Why exporting?"
-msgstr ""
+msgstr "为什么要导出？"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
 msgid ""
@@ -31,6 +31,8 @@ msgid ""
 "would compile the proper binaries and build the packages for each platform "
 "manually."
 msgstr ""
+"起初，Godot 没有任何导出项目的方法。 开发人员将编译适用的二进制文件并手动为每"
+"个平台构建软件包。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:13
 msgid ""
@@ -38,26 +40,36 @@ msgid ""
 "our company started taking more projects at the same time, it became evident "
 "that this was a bottleneck."
 msgstr ""
+"当更多的开发人员（甚至非程序员）开始使用它，并且当我们公司开始同时进行更多项"
+"目时，很明显这是一个瓶颈。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:18
 msgid "On PC"
-msgstr ""
+msgstr "在 PC 上"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:20
+#, fuzzy
 msgid ""
-"Distributing a game project on PC with Godot is rather easy. Just drop the "
-"godot.exe (or godot) binary together in the same place as the engine.cfg "
-"file, zip it and you are done. This can be taken advantage of to make custom "
+"Distributing a game project on PC with Godot is rather easy. Drop the godot."
+"exe (or godot) binary together in the same place as the engine.cfg file, zip "
+"it and you are done. This can be taken advantage of to make custom "
 "installers."
 msgstr ""
+"用Godot在PC上分发游戏项目相当容易。 只需将 godot.exe（或godot）二进制文件放在"
+"与 engine.cfg 文件相同的位置，然后将其压缩并完成。 这可以被利用来制作自定义安"
+"装程序。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:25
+#, fuzzy
 msgid ""
 "It sounds simple, but there are probably a few reasons why the developer may "
 "not want to do this. The first one is that it may not be desirable to "
 "distribute loads of files. Some developers may not like curious users "
-"peeking at how the game was made, others may just find it inelegant, etc."
+"peeking at how the game was made, others may find it inelegant, etc."
 msgstr ""
+"这听起来很简单，但开发人员可能不想这样做的原因可能有几个。 第一个原因是分发大"
+"量文件可能不够理想。 一些开发人员可能不喜欢好奇的用户偷看游戏的制作方式，有些"
+"开发人员可能会觉得它不够好看等等。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:31
 msgid ""
@@ -65,16 +77,18 @@ msgid ""
 "specially compiled binary, which is smaller in size, more optimized and does "
 "not include tools inside (like the editor, debugger, etc.)."
 msgstr ""
+"另一个原因是，为了分发，开发人员可能更喜欢一个特别编译的二进制文件，它的大小"
+"更小，更优化，并且不包含内部工具（如编辑器，调试器等）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:35
 msgid ""
 "Finally, Godot has a simple but efficient system for creating DLCs as extra "
 "package files."
-msgstr ""
+msgstr "最后，Godot 有一个简单而有效的系统来创建 DLC 作为额外的软件包文件。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:39
 msgid "On mobile"
-msgstr ""
+msgstr "在移动端"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:41
 msgid ""
@@ -82,6 +96,8 @@ msgid ""
 "those devices, a binary for each of those platforms is built, then added to "
 "a native project together with the game data."
 msgstr ""
+"移动设备中的相同情况会更糟糕。 要在这些设备中分发项目，将为每个平台构建一个二"
+"进制文件，然后将其与游戏数据一起添加到本地项目中。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
@@ -90,6 +106,8 @@ msgid ""
 "While learning each SDK is always encouraged, it can be frustrating to be "
 "forced to do it at an undesired time."
 msgstr ""
+"这可能很麻烦，因为这意味着开发人员在能够导出前必须熟悉每个平台的SDK。 尽管总"
+"是鼓励学习每个SDK，但在不希望的时间被迫做到这一点令人沮丧。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
 msgid ""
@@ -99,10 +117,13 @@ msgid ""
 "standardized for more than a decade, but mobile devices use different "
 "formats for texture compression, such as PVRCT (iOS) or ETC (Android)."
 msgstr ""
+"这种方法还有另一个问题。 不同的设备偏好一些不同格式的数据来运行。 这个主要的"
+"例子是纹理压缩。 所有PC硬件都使用 S3TC（BC）压缩，并且已经标准化了十多年，但"
+"移动设备使用不同的格式进行纹理压缩，例如PVRCT（iOS）或ETC（Android）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
-msgstr ""
+msgstr "导出菜单"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:60
 msgid ""
@@ -110,14 +131,17 @@ msgid ""
 "proven to work the best. At the time of this writing, not all platforms are "
 "supported yet, but the supported platforms continue to grow."
 msgstr ""
+"经过多次尝试不同的导出工作流后，目前的工作流程已被证明是最好的。 在撰写本文"
+"时，并不是所有平台都支持，但受支持的平台仍在继续增长。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
-msgid "To open the export menu, just click the \"Export\" button:"
-msgstr ""
+#, fuzzy
+msgid "To open the export menu, click the \"Export\" button:"
+msgstr "要打开 \"导出\" 菜单, 只需单击 \"导出\" 按钮:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid "The export menu will open, however it will be completely empty."
-msgstr ""
+msgstr "导出菜单将打开，但它完全是空的。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:72
 msgid ""
@@ -125,6 +149,8 @@ msgid ""
 "` button at the top of the export menu. This will open a drop down list of "
 "platforms to choose from for an export preset."
 msgstr ""
+"这是因为我们需要添加一个导出预设。 要做到这一点，请点击导出菜单顶部的“添"
+"加...”按钮。 这将打开一个平台的下拉列表，以从导出预设中进行选择。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:78
 msgid ""
@@ -135,16 +161,20 @@ msgid ""
 "will complain when something is missing and will not allow the user to "
 "export for that platform until they resolve it:"
 msgstr ""
+"默认选项通常足以导出，因此调整它们不是必需的，但可以提供额外的控制。 但是，许"
+"多平台需要安装额外的工具（SDK）才能导出。 此外，Godot需要安装导出模板来创建"
+"包。 导出菜单会在缺少某些内容时给出提示，并且不会允许用户在解决该问题之前导出"
+"该平台："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:87
 msgid ""
 "At that time, the user is expected to come back to the documentation and "
 "follow instructions on how to properly set up that platform."
-msgstr ""
+msgstr "那时，用户需要回到文档并按照说明如何正确设置该平台。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:91
 msgid "Export templates"
-msgstr ""
+msgstr "导出模板"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:93
 msgid ""
@@ -153,34 +183,37 @@ msgid ""
 "zip) file from the `download page of the website <https://www.godotengine."
 "org/download>`_."
 msgstr ""
+"除了设置平台之外，还必须安装导出模板才能导出项目。 它们可以从网站<https://"
+"www.godotengine.org/download>`_的下载页面以.tpz（更名为.zip）文件的形式获得。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:98
 msgid ""
 "Once downloaded, they can be installed using the \"Install Export Templates"
 "\" option in the editor:"
-msgstr ""
+msgstr "下载后，可以使用编辑器中的“安装导出模板”选项进行安装："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:104
 msgid "Export mode"
-msgstr ""
+msgstr "导出模式"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:106
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
 msgstr ""
+"导出时，Godot会列出所有要导出的文件，然后创建包。 有3种不同的导出模式："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:109
 msgid "Export every single file in the project"
-msgstr ""
+msgstr "导出项目中的每一个文件"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
 msgid "Export only resources (+custom filter), this is default."
-msgstr ""
+msgstr "仅导出资源 (+ 自定义过滤器), 这是默认值。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
 msgid "Export only selected resources (+custom filter)"
-msgstr ""
+msgstr "仅导出所选资源 (+ 自定义过滤器)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:115
 msgid ""
@@ -189,6 +222,9 @@ msgid ""
 "developers often have a lot of unrelated stuff around in the dev directory, "
 "which makes it a bad idea."
 msgstr ""
+"**导出每个单个文件** - 此模式导出项目中的每个单个文件。 这对于测试是否有什么"
+"被遗忘很有用，但是开发人员在开发者目录中通常会有很多不相关的东西，这使得它不"
+"是一个好主意。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:120
 msgid ""
@@ -197,6 +233,9 @@ msgid ""
 "their games. To compensate for this, filters can be added for extra "
 "extensions (like, *.txt,*.csv, etc.)."
 msgstr ""
+"**仅导出资源** - 仅导出资源。 对于大多数项目来说，这就够了。 然而，许多开发人"
+"员喜欢在他们的游戏中使用自定义数据文件。 为了弥补这一点，可以为额外的扩展名添"
+"加过滤器（如* .txt，*。csv等）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:125
 msgid ""
@@ -208,10 +247,14 @@ msgid ""
 "allows to \"Bundle\" scenes and dependencies into a single file, which is "
 "*really* useful for games distributed on optical media."
 msgstr ""
+"**仅导出选定资源** - 仅导出列表中的资源。 这对大多数项目来说可能是过度的，但"
+"在某些情况下它是合理的（通常是巨大的项目）。 该模式提供对输出内容的完全控"
+"制。 可以选择单个资源并执行依赖性检测以确保添加所需的所有内容。 此外，此模式"
+"允许将“场景”和依赖关系“捆绑”到单个文件中，这对于发布到光碟上的游戏非常有用。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:139
 msgid "Export from Command Line"
-msgstr ""
+msgstr "从命令行导出"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:141
 msgid ""
@@ -221,6 +264,9 @@ msgid ""
 "parameters. A basic invocation of the export would be ``godot --export "
 "\"Windows Desktop\" some_name``"
 msgstr ""
+"在生产中，自动化生成是很有用的，并且 Godot 支持这一操作，其中有“--"
+"export”和“--export-debug”命令行参数。从命令行导出仍需要导出模板来定义导出参"
+"数。 一个基本的调用应是“godot --export”Windows Desktop“some_name”"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -229,21 +275,27 @@ msgid ""
 "relative to the project path or absolute. It does not respect the directory "
 "the command was invoked from."
 msgstr ""
+"假设有一个名为“Windows Desktop”的预设，并且可以找到该模板，它将导出"
+"到“some_name.exe”。 输出路径相对于项目路径或绝对路径。 它不遵从命令被调用的目"
+"录。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
+#, fuzzy
 msgid ""
-"You can also configure it to export just the .pck or .zip file (allowing a "
+"You can also configure it to export only the .pck or .zip file (allowing a "
 "single export to be used with multiple Godot executables). This takes place "
 "if:"
 msgstr ""
+"您也可以将其配置为仅导出.pck或.zip文件（允许将单个导出与多个 Godot 可执行文件"
+"一起使用）。 这发生在以下情况下："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid "The export preset is not marked as runnable"
-msgstr ""
+msgstr "导出预设未标记为可执行的"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:157
 msgid "The target name ends with `.pck` or with `.zip`"
-msgstr ""
+msgstr "目标名称以 \". pck\" 或 \". zip\" 结尾"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
 msgid ""
@@ -251,3 +303,5 @@ msgid ""
 "flag, and to create a dedicated export template for automated export: "
 "``godot --path path/to/project --export \"pck\" game_name.pck``"
 msgstr ""
+"将``--export``标志与``--path``标志相结合并创建一个用于自动导出的专用导出模板"
+"通常很有用：``godot --path path/to/project --export \"pck\" game_name.pck``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,8 +41,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:15
 msgid ""
-"While these probes are a very efficient way of storing reflections, they "
-"have a few shortcomings:"
+"While these probes are a efficient way of storing reflections, they have a "
+"few shortcomings:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:17
@@ -63,8 +63,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:23
 msgid ""
-"Setting up reflection probes is really easy! Just create a ReflectionProbe "
-"node, and wrap it around the area where you want to have reflections:"
+"Create a ReflectionProbe node, and wrap it around the area where you want to "
+"have reflections:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:27
@@ -103,8 +103,8 @@ msgstr ""
 msgid ""
 "By default, shadow mapping is disabled when rendering probes (only in the "
 "rendered image inside the probe, not the actual scene). This is a simple way "
-"to save on performance and memory. If you really want shadows in the probe, "
-"they can be toggled on/off with the *Enable Shadow* setting:"
+"to save on performance and memory. If you want shadows in the probe, they "
+"can be toggled on/off with the *Enable Shadow* setting:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:50
@@ -159,7 +159,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:79
 msgid ""
-"Alternatively, Reflection Probes work very well blended together with Screen "
+"Alternatively, Reflection Probes work well blended together with Screen "
 "Space Reflections to solve these problems. Combining them makes local "
 "reflections appear more faithful, while probes only used as fallback when no "
 "screen-space information is found:"

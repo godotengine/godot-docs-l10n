@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,8 +47,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
 msgid ""
 "Nodes still display the required information as text, but editing is done "
-"via the *Inspector*. To edit them, just select any node and edit its "
-"properties in the *Inspector*."
+"via the *Inspector*. To edit them, select any node and edit its properties "
+"in the *Inspector*."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
@@ -78,9 +78,8 @@ msgid ""
 "Typically when a *Node* is done processing, it will go to the next node from "
 "one of the ports at the right. If nothing is connected the function may end, "
 "or another output *Sequence Port* might be tried (this depends on the node). "
-"Thanks to this, it's easy to understand the logic within a function by just "
-"following the white lines. Not every *Node* has *Sequence Ports*. In fact, "
-"most do not."
+"Thanks to this, you can follow the logic flow within a function by following "
+"the white lines. Not every *Node* has *Sequence Ports*. In fact, most do not."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:46
@@ -105,8 +104,8 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:60
 msgid ""
-"Connecting is a relatively simple process. Just drag an *Output Port* "
-"towards an *Input Port*."
+"Connecting is a relatively simple process. Drag an *Output Port* towards an "
+"*Input Port*."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:65
@@ -192,8 +191,8 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
 msgid ""
-"If instead reading this value is desired, just drag the node again but hold "
-"the *Control* key (or Command on Mac). This will create a getter:"
+"If instead reading this value is desired, drag the node again but hold the "
+"*Control* key (or Command on Mac). This will create a getter:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
@@ -258,7 +257,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
 msgid ""
-"The signal you have just created will appear in the Inspector along with the "
+"The signal you have created will appear in the Inspector along with the "
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
@@ -388,9 +387,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:265
 msgid ""
-"These are nodes you can use as temporary storage for your graphs. Just make "
-"sure they all have the same name and type when using them and they will "
-"reference the same piece of memory."
+"These are nodes you can use as temporary storage for your graphs. Make sure "
+"they all have the same name and type when using them and they will reference "
+"the same piece of memory."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
@@ -406,8 +405,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
 msgid ""
 "This is just a reference to a node in the tree, but it's easier to use this "
-"node by just dragging the actual node from the scene tree to the canvas "
-"(this will create it and configure it)."
+"node by dragging the actual node from the scene tree to the canvas (this "
+"will create it and configure it)."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
@@ -417,9 +416,9 @@ msgstr "עצמי"
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
 "In some rare occasions, it may be desired to pass this Scene Node as "
-"argument. It can be used to call functions and set/get properties, or just "
-"drag nodes (or event the node itself that has the script) from the Scene "
-"Tree to the canvas for this."
+"argument. It can be used to call functions and set/get properties, or drag "
+"nodes (or event the node itself that has the script) from the Scene Tree to "
+"the canvas for this."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
@@ -449,8 +448,7 @@ msgstr ""
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
 "resource loaded and ready to use. Rather than instancing the node, it's "
-"simpler to just drag the desired resource from the filesystem dock to the "
-"canvas."
+"simpler to drag the desired resource from the filesystem dock to the canvas."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
@@ -543,9 +541,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
 msgid ""
-"This is a very useful and commonly used node. You can use it to cast "
-"arguments or other objects to the type you desire. Afterwards, you can even "
-"drag the object output to get full completion."
+"This is a useful and commonly used node. You can use it to cast arguments or "
+"other objects to the type you desire. Afterwards, you can even drag the "
+"object output to get full completion."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:372
@@ -592,8 +590,8 @@ msgstr ""
 msgid ""
 "There is a list of built in helpers. The list is almost identical to the one "
 "from GDScript (@TODO, link to gdscript methods?). Most of them are "
-"mathematical functions, but others can be very useful helpers. Just make "
-"sure to take a look at the list at some point."
+"mathematical functions, but others can be useful helpers. Make sure to take "
+"a look at the list at some point."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
@@ -644,7 +642,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
 msgid ""
-"Emits signals from any object. In general it's not very useful, as dragging "
+"Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
 
@@ -719,8 +717,7 @@ msgstr ""
 msgid ""
 "Among the operators, the *Expression* node is the most powerful. If well "
 "used, it allows you to enormously simplify visual scripts that are math or "
-"logic heavy. Just type any expression on it and it will be executed in real-"
-"time."
+"logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488

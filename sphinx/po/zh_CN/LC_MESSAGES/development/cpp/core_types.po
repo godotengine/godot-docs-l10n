@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,16 +92,16 @@ msgstr ""
 msgid ""
 "PC is a wonderful architecture. Computers often have gigabytes of RAM, "
 "terabytes of storage and gigahertz of CPU, and when an application needs "
-"more resources the OS will just swap out the inactive ones. Other "
-"architectures (like mobile or consoles) are in general more limited."
+"more resources the OS will swap out the inactive ones. Other architectures "
+"(like mobile or consoles) are in general more limited."
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
 "The most common memory model is the heap, where an application will request "
 "a region of memory, and the underlying OS will try to fit it somewhere and "
-"return it. This often works best and is very flexible, but over time and "
-"with abuse, this can lead to segmentation."
+"return it. This often works best and is flexible, but over time and with "
+"abuse, this can lead to segmentation."
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:52
@@ -119,7 +119,7 @@ msgid ""
 "the maximum allocation size is below a given threshold in proportion to the "
 "maximum heap size and proportion of memory intended to be unused, "
 "segmentation will not be a problem over time as it will remain constant. In "
-"other words, just leave 10-20% of your memory free and perform all small "
+"other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
 
@@ -157,29 +157,34 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr ""
+msgstr "这些宏可以用来处理 C++ 风格的内存分配："
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr ""
+msgstr "他们对应 new、delete、new[] 和 delete[] 。"
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
 "memnew/memdelete also use a little C++ magic and notify Objects right after "
 "they are created, and right before they are deleted."
 msgstr ""
+"memnew / memdelete 也使用一点 C++ 的魔法，在创建完、删除成后立即通知对象池。"
 
 #: ../../docs/development/cpp/core_types.rst:106
+#, fuzzy
 msgid ""
-"For dynamic memory, the DVector<> template is provided. Just use it like:"
-msgstr ""
+"For dynamic memory, the DVector<> template is provided. Use it like this:"
+msgstr "至于动态内存分配， 使用  DVector<> 模板类， 像这样："
 
 #: ../../docs/development/cpp/core_types.rst:113
+#, fuzzy
 msgid ""
-"DVector is just a standard vector class, it can be accessed using the [] "
+"DVector is a standard vector class, it can be accessed using the [] "
 "operator, but that's probably slow for large amount of accesses (as it has "
 "to lock internally). A few helpers exist for this:"
 msgstr ""
+"DVector 就是通常的 vector 类， 我们可以使用下标运算符取它的元素；大量频繁的读"
+"写可能是低效的（因为它内部使用了锁）。这里是使用示例："
 
 #: ../../docs/development/cpp/core_types.rst:122
 msgid "and"
@@ -189,7 +194,7 @@ msgstr ""
 msgid ""
 "respectively. These allow fast read/write from DVectors and keep it locked "
 "until they go out of scope."
-msgstr ""
+msgstr "这样，允许从 DVectors 快速读写并保持锁定状态，直到它们它们超出作用域。"
 
 #: ../../docs/development/cpp/core_types.rst:135
 msgid ""
@@ -205,11 +210,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:139
 msgid "Containers"
-msgstr ""
+msgstr "容器"
 
 #: ../../docs/development/cpp/core_types.rst:141
 msgid "Godot provides also a set of common containers:"
-msgstr ""
+msgstr "Godot 还提供了一系列通用的容器："
 
 #: ../../docs/development/cpp/core_types.rst:143
 msgid "Vector"
@@ -221,35 +226,38 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Set"
-msgstr "设置"
+msgstr "Set"
 
 #: ../../docs/development/cpp/core_types.rst:146
 msgid "Map"
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:148
+#, fuzzy
 msgid ""
-"They are very simple and aim to be as minimal as possible, as templates in C+"
-"+ are often inlined and make the binary size much fatter, both in debug "
+"They are simple and aim to be as minimal as possible, as templates in C++ "
+"are often inlined and make the binary size much fatter, both in debug "
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
+"由于 C++ 模板类在展开后会增加代码体积，我们尽可能的让他们保持简单小巧。 "
+"List、Set、Map都能够通过指针进行迭代，像这样："
 
 #: ../../docs/development/cpp/core_types.rst:159
 msgid "The Vector<> class also has a few nice features:"
-msgstr ""
+msgstr "使用Vector<> 类有这些好处："
 
 #: ../../docs/development/cpp/core_types.rst:161
 msgid ""
 "It does copy on write, so making copies of it is cheap as long as they are "
 "not modified."
-msgstr ""
+msgstr "它在写入时复制，因此只要它们没有被修改，就无需制作它的副本。"
 
 #: ../../docs/development/cpp/core_types.rst:163
 msgid ""
 "It supports multi-threading, by using atomic operations on the reference "
 "counter."
-msgstr ""
+msgstr "它通过在引用计数器上使用原子操作来支持多线程。"
 
 #: ../../docs/development/cpp/core_types.rst:169
 msgid ""
@@ -284,6 +292,8 @@ msgid ""
 "and utf8 parsing/extracting, as well as helpers for conversion and "
 "visualization."
 msgstr ""
+"Godot 还提供了一个字符串类 String。 这个类有丰富的功能，支持 Unicode 字符"
+"集。 还提供了一些通用的辅助功能（utf8 解析等）。"
 
 #: ../../docs/development/cpp/core_types.rst:185
 msgid ""
@@ -296,18 +306,22 @@ msgid "StringName"
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:190
+#, fuzzy
 msgid ""
 "StringNames are like a String, but they are unique. Creating a StringName "
 "from a string results in a unique internal pointer for all equal strings. "
-"StringNames are really useful for using strings as identifier, as comparing "
-"them is basically comparing a pointer."
+"StringNames are useful for using strings as identifier, as comparing them is "
+"basically comparing a pointer."
 msgstr ""
+"StringName 和 String 类似， 不同的是他们是唯一的。使用同一个字符串创建的 "
+"StringName 对象内部指向同一指针。 StringName 在使用字符处作为标识符时会很有"
+"用，因为比较他们的性能和比较两个指针接近。"
 
 #: ../../docs/development/cpp/core_types.rst:195
 msgid ""
 "Creation of a StringName (especially a new one) is slow, but comparison is "
 "fast."
-msgstr ""
+msgstr "创建一个 StringName (尤其是新的字符串) 很慢， 但比较他们是非常快的。"
 
 #: ../../docs/development/cpp/core_types.rst:201
 msgid ""
@@ -317,13 +331,13 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:204
 msgid "Math types"
-msgstr ""
+msgstr "数学类型"
 
 #: ../../docs/development/cpp/core_types.rst:206
+#, fuzzy
 msgid ""
-"There are several linear math types available in the core/math directory, "
-"they are basically just that."
-msgstr ""
+"There are several linear math types available in the core/math directory."
+msgstr "core/math 目录中有几种线性代数常用的类型，基本上就是这样。"
 
 #: ../../docs/development/cpp/core_types.rst:212
 msgid ""
@@ -332,13 +346,13 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:215
 msgid "NodePath"
-msgstr ""
+msgstr "NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:217
 msgid ""
 "This is a special datatype used for storing paths in a scene tree and "
 "referencing them fast."
-msgstr ""
+msgstr "这是一种特殊的数据类型，用于在场景树中存储路径并快速引用它们。"
 
 #: ../../docs/development/cpp/core_types.rst:223
 msgid ""
@@ -356,6 +370,8 @@ msgid ""
 "RIDs are opaque, meaning that the data they reference can't be accessed "
 "directly. RIDs are unique, even for different types of referenced data."
 msgstr ""
+"RID是资源ID。 Server中使用它们来引用存储在其中的数据。 RID是不透明的，这意味"
+"着它们引用的数据不能直接访问。 即使对于不同类型的数据，RID也是唯一的。"
 
 #: ../../docs/development/cpp/core_types.rst:236
 msgid ""

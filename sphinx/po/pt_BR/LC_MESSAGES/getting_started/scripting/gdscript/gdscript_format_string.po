@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,9 +57,8 @@ msgid "Usage in GDScript"
 msgstr "Uso na GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-#, fuzzy
 msgid "Examine this concrete GDScript example:"
-msgstr "Examine esse exemplo concreto de GDScript::"
+msgstr "Examine este exemplo concreto de GDScript::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -109,9 +108,8 @@ msgstr ""
 "tipos da lista é utilizada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
-#, fuzzy
 msgid "A quick example in GDScript:"
-msgstr "Um rápido exemplo em GDScript::"
+msgstr "Um exemplo rápido em GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
@@ -126,7 +124,6 @@ msgid "Multiple placeholders"
 msgstr "Múltiplos espaços reservados"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
-#, fuzzy
 msgid ""
 "Format strings may contain multiple placeholders. In such a case, the values "
 "are handed in the form of an array, one value per placeholder (unless using "
@@ -135,7 +132,7 @@ msgstr ""
 "Strings de formatação podem conter múltiplos espaços reservados. Nesse caso, "
 "os valores são tratados na forma de um array, um valor para cada espaço "
 "reservado (a não ser que se use um especificador de formato com ``*``, veja "
-"`precisão dinâmica`_)::"
+"`dynamic padding`_ – \"espaço de preenchimento dinâmico\"):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
@@ -338,20 +335,18 @@ msgstr ""
 "uma fonte de largura fixa seja usada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
-#, fuzzy
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
-"Para preencher uma string com comprimento mínimo, acrescente um inteiro ao "
-"especificador::"
+"Para preencher um texto com comprimento mínimo, acrescente um inteiro ao "
+"especificador:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
-#, fuzzy
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
 msgstr ""
 "Se o inteiro inicia com ``0``, os valores inteiros serão preenchidos com "
-"zeros ao invés de com espaços em branco::"
+"zeros ao invés de com espaços em branco:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -367,20 +362,18 @@ msgstr ""
 "antes do ponto."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
-#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
 "O caractere ``-`` fará um preenchimento para a direita, em vez de à "
-"esquerda, sendo útil para o alinhamento do texto à direita::"
+"esquerda, sendo útil para o alinhamento do texto à direita:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
 msgstr "Preenchimento dinâmico"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
-#, fuzzy
 msgid ""
 "By using the ``*`` (*asterisk*) character, the padding or precision can be "
 "set without modifying the format string. It is used in place of an integer "
@@ -388,32 +381,30 @@ msgid ""
 "passed when formatting:"
 msgstr ""
 "Ao usar o caractere ``*`` (*asterisco*), o preenchimento ou a precisão podem "
-"ser definidos sem modificar a string de formatação. Isso é usado no lugar de "
+"ser definidos sem modificar o texto de formatação. Isso é usado no lugar de "
 "um inteiro no especificador de formato. Os valores para preenchimento e "
-"precisão serão então passados ao formatar::"
+"precisão serão então passados ao formatar:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
-#, fuzzy
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
 "É possível preencher com zeros nos locais reservados para inteiros ao "
-"adicionar ``0`` antes de ``*``::"
+"adicionar ``0`` antes de ``*``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
 msgstr "Sequência de escape"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#, fuzzy
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
-"Para inserir um caractere ``%`` literal em uma string de formatação, ele "
-"deve ser escapado para evitar que seja lido como um espaço reservado. Isso é "
-"feito duplicando o caractere::"
+"Para inserir um caractere ``%`` literal em um texto de formatação, ele deve "
+"ser escapado para evitar que seja lido como um espaço reservado. Isso é "
+"feito duplicando o caractere:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
@@ -501,13 +492,12 @@ msgid "Array"
 msgstr "Vetor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
-#, fuzzy
 msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
 "\"]])"
 msgstr ""
 "\"Oi, {nome} v{versao}!\".format([[\"versao\":\"3.0\"], [\"nome\":\"Godette"
-"\"])"
+"\"]])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr ""
+msgstr "Exportation pour la plateforme Windows universelle (UWP)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -27,6 +27,10 @@ msgid ""
 "installed as a Windows App or submited to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
+"Il n'y a pas d'exigence supplémentaire pour exporter un paquet ``.appx`` qui "
+"peut être installé en tant qu'application Windows ou soumis au magasin "
+"Windows. L'exportation de paquets UWP fonctionne également à partir de "
+"n'importe quelle plateforme, pas seulement à partir de Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
@@ -34,66 +38,78 @@ msgid ""
 "trusted signature. Currently, Godot does not support signing of packages, so "
 "you need to use external tools to do so."
 msgstr ""
+"Cependant, si vous voulez installer et exécuter l'application, vous devez la "
+"signer avec une signature de confiance. Actuellement, Godot ne supporte pas "
+"la signature de paquets, vous devez donc utiliser des outils externes pour "
+"le faire."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
 msgstr ""
+"Assurez-vous également que le nom de l'éditeur que vous avez défini lors de "
+"l'exportation du paquet correspond au nom utilisé sur le certificat."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
-msgstr ""
+msgstr "Limitations sur Xbox One"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
 msgid ""
 "As described in `UWP documentation <https://msdn.microsoft.com/en-us/windows/"
 "uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
+"Comme décrit dans la `documentation d'UWP <https://docs.microsoft.com/fr-fr/"
+"windows/uwp/xbox-apps/system-resource-allocation>`__ :"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr ""
+msgstr "Soumis en tant qu'\"Application\""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
 msgid "available memory is 1GB"
-msgstr ""
+msgstr "la mémoire disponible est de 1 Go"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
 msgid "share of 2-4 CPU cores"
-msgstr ""
+msgstr "partage de 2-4 cœurs CPU"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr ""
+msgstr "accès partagé à la puissance du GPU (45%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
+"Soumis en tant que \"Jeu\" (par l'intermédiaire du `Xbox Live Creators "
+"Program <https://www.xbox.com/en-US/developers/creators-program>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
-msgstr ""
+msgstr "la mémoire disponible est de 5 Go"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr ""
+msgstr "4 cœurs CPU exclusifs et 2 cœurs CPU partagés"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr ""
+msgstr "accès exclusif à la puissance du GPU (100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
 msgstr ""
+"Le dépassement de ces limites de mémoire entraînera des échecs d'allocation "
+"et l'application plantera."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
 msgid "Creating a signing certificate"
-msgstr ""
+msgstr "Création d'un certificat de signature"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:37
 msgid ""
@@ -102,6 +118,10 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
+"Cela nécessite les outils ``MakeCert.exe`` et ``Pvk2Pfx.exe``, qui sont "
+"fournis avec le SDK de Windows. Si vous utilisez Visual Studio, vous pouvez "
+"ouvrir l'une de ses invites de développement, puisqu'elle est livrée avec "
+"ces outils et qu'ils peuvent être situés dans le chemin d'accès."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
 msgid ""
@@ -109,28 +129,37 @@ msgid ""
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
+"Vous pouvez obtenir des instructions plus détaillées à partir de "
+"`Microsoft's documentation <https://msdn.microsoft.com/en-us/library/windows/"
+"desktop/jj835832(v=vs.85).aspx>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr ""
+msgstr "Premièrement, lancez ``MakeCert`` pour créer une clé privée::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
+"Où ``publisherName`` correspond au nom de l'éditeur (entreprise ou individu) "
+"de votre paquet et où ``expirationDate`` est dans le format ``mm/jj/aaaa``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
 msgstr ""
+"Ensuite, créez un fichier d'échange de renseignements personnels (.pfx) en "
+"utilisant ``Pvk2Pfx.exe``::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
 msgstr ""
+"Si vous ne spécifiez pas de mot de passe avec l'argument ``/po``, le PFX "
+"aura le même mot de passe que la clé privée."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
 msgid ""
@@ -138,33 +167,45 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
+"Vous devrez également faire confiance à ce certificat afin de pouvoir "
+"installer votre application. Ouvrez l'invite de commandes en tant "
+"qu'administrateur et exécutez la commande suivante::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Signing the package"
-msgstr ""
+msgstr "Signer le paquet"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
 msgstr ""
+"Enfin, utilisez ``SignTool.exe`` depuis le SDK de Windows ou Visual Studio::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"
-msgstr ""
+msgstr "Installation du paquetage"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
+"A partir de la mise à jour anniversaire de Windows 10, vous pouvez installer "
+"des paquets simplement en double-cliquant sur le fichier ``.appx`` à partir "
+"de l'Explorateur Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
 msgstr ""
+"Il est également possible de l'installer en utilisant la commande raccourcie "
+"PowerShell ``Add-AppxPackage``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
 msgstr ""
+"Si vous voulez mettre à jour une de vos applications déjà installées, vous "
+"devez mettre à jour son numéro de version sur le nouveau paquetage ou "
+"désinstaller préalablement le paquetage précédent."

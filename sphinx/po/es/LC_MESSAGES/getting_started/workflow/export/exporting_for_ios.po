@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:4
 msgid "Exporting for iOS"
-msgstr ""
+msgstr "Exportando para iOS"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:6
 msgid ""
@@ -27,71 +27,89 @@ msgid ""
 "build and deploy to an iOS device, build a release for the App Store, and do "
 "everything else you can normally do with Xcode."
 msgstr ""
+"Estos son los pasos para cargar un proyecto de Godot en Xcode. Esto permite "
+"compilar e implementar en un dispositivo iOS, compilar una versión de "
+"distribución para la App Store y todo lo que normalmente puede hacerse con "
+"Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:11
 msgid "Requirements"
-msgstr ""
+msgstr "Requerimientos"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:13
 msgid ""
 "You must export for iOS from a computer running macOS with Xcode installed."
 msgstr ""
+"Deberás exportar a iOS desde una computadora con macOS y Xcode instalado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:14
 msgid ""
 "Download the Godot export templates. Use the Godot menu: Editor > Manage "
 "Export Templates"
 msgstr ""
+"Descarga los templates de Godot. Usa el menu de Godot: Editor > Cargar "
+"Plantillas de Exportación"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:18
 msgid "Export a Godot project to Xcode"
-msgstr ""
+msgstr "Exportar un proyecto de Godot a Xcode"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:20
 msgid ""
 "In the Godot editor, open the **Export** window from the **Project** menu. "
 "When the Export window opens, click **Add..** and select **iOS**."
 msgstr ""
+"En el editor de Godot, abrir la ventana **Exportar** del menú **Proyecto**. "
+"Cuando la ventana Exportar se abra, hacer clic en **Añadir** y seleccionar "
+"**iOS**."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:23
 msgid ""
 "The following export options are required. Leaving any blank with cause the "
 "exporter to throw an error:"
 msgstr ""
+"Las siguientes opciones de exportación son requeridas. Dejando cualquiera en "
+"blanco causará que el exportador lance un error:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:26
 msgid "In the **Application** category * **App Store Team ID**"
-msgstr ""
+msgstr "En la categoría **Application**, **App Store Team ID**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:28
 msgid "Everything in the **Required Icons** category"
-msgstr ""
+msgstr "Todo en la categoría **Required Icons**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:29
 msgid "Everything in the **Landscape Launch Screens** category"
-msgstr ""
+msgstr "Todo en la categoría **Landscape Launch Screens**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:30
 msgid "Everything in the **Portrait Launch Screens** category"
-msgstr ""
+msgstr "Todo en la categoría  **Portrait Launch Screens**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:32
 msgid ""
 "After you click **Export Project**, there are still two important options "
 "left:"
 msgstr ""
+"Después de hacer clic en **Exportar Proyecto**, quedan dos opciones "
+"importantes:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:34
 msgid ""
 "**Path** is an empty folder that will contain the exported Xcode project "
 "files."
 msgstr ""
+"**Path** es una carpeta vacía que contendrá los archivos de proyecto de "
+"Xcode exportados ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:35
 msgid ""
 "**File** will be the name of the Xcode project and several project specific "
 "files and directories."
 msgstr ""
+"**File** será el nombre del proyecto Xcode y varios archivos y directorios "
+"específicos del proyecto."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:39
 msgid ""
@@ -99,58 +117,74 @@ msgid ""
 "project's name. When you see **exported_xcode_project_name** in the "
 "following steps, replace it with the name you used instead."
 msgstr ""
+"Este tutorial utiliza **exported_xcode_project_name**, pero utilizarás el "
+"nombre de tu proyecto. Cuando veas **exported_xcode_project_name** en los "
+"siguientes pasos, reemplázalo con el nombre que usaste en su lugar."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:43
 msgid "When the export completes, the output folder should look like this:"
 msgstr ""
+"Cuando la exportación se completa, la carpeta de salida debe tener el "
+"siguiente aspecto:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:47
 msgid ""
 "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
 "like any other iOS app."
 msgstr ""
+"Al abrir **exported_xcode_project_name.xcodeproj** te permite compilar y "
+"desplegar como cualquier otra aplicación iOS."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:52
 msgid "Active development considerations"
-msgstr ""
+msgstr "Consideraciones activas del desarrollo"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:54
 msgid ""
 "The above method creates an exported project that you can build for release, "
 "but you have to re-export every time you make a change in Godot."
 msgstr ""
+"El método anterior crea un proyecto exportado que puedes compilar para su "
+"publicación, pero tienes que reexportar cada vez que haces un cambio en "
+"Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:57
 msgid ""
 "While developing, you can speed this process up by linking your Godot "
 "project files directly into your app."
 msgstr ""
+"Durante el desarrollo, puedes acelerar este proceso enlazando tus archivos "
+"de proyecto Godot directamente a tu aplicación."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:60
 msgid "In the following example:"
-msgstr ""
+msgstr "En el siguiente ejemplo:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:62
 msgid ""
 "**exported_xcode_project_name** is the name of the exported iOS application "
 "(as above)."
 msgstr ""
+"**exported_xcode_project_name** es el nombre de la aplicación iOS exportada "
+"(como arriba)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:63
 msgid "**godot_project_to_export** is the name of the Godot project."
-msgstr ""
+msgstr "**godot_project_to_export** es el nombre del proyecto Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:66
 msgid "Steps to link an Godot project folder to Xcode"
-msgstr ""
+msgstr "Pasos para enlazar una carpeta de proyecto Godot a Xcode"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:68
 msgid "Start from an exported iOS project (follow the steps above)."
-msgstr ""
+msgstr "Empieza desde un proyecto iOS exportado (sigue los pasos anteriores)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:69
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."
 msgstr ""
+"En Finder, arrastra la carpeta del proyecto Godot al navegador de archivos "
+"Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:73
 msgid ""
@@ -158,14 +192,19 @@ msgid ""
 "means you will be able to continue to edit your Godot project in its current "
 "location."
 msgstr ""
+"3. En el cuadro de diálogo, asegúrate de que **Crear referencias de "
+"carpeta** está seleccionado. Esto significa que podrás continuar editando tu "
+"proyecto Godot en su ubicación actual."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:78
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
 msgstr ""
+"Visualiza la carpeta **godot_project_to_export** en el navegador de archivos "
+"Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:79
 msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
-msgstr ""
+msgstr "Eliminar **exported_xcode_project_name.pck** del proyecto Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:83
 msgid ""
@@ -173,19 +212,26 @@ msgid ""
 "named **godot_path** (this is the real key name) with a value "
 "**godot_project_to_export** (this is the name of your project)"
 msgstr ""
+"6. Abre **exported_xcode_project_name-Info.plist** y añade una propiedad "
+"string llamada **godot_path** (este es el nombre real de la clave) con un "
+"valor **godot_project_to_export** (este es el nombre de tu proyecto)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:89
 msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
 msgstr ""
+"¡Eso es todo! Ahora puedes editar tu proyecto en el editor Godot y "
+"compilarlo en Xcode cuando quieras ejecutarlo en un dispositivo."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:93
 msgid "Services for iOS"
-msgstr ""
+msgstr "Servicios para iOS"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:95
 msgid ""
 "Special iOS services can be used in Godot. Check out the :ref:"
 "`doc_services_for_ios` page."
 msgstr ""
+"Los servicios especiales de iOS se pueden utilizar en Godot. Echa un vistazo "
+"a la página :ref:`doc_services_for_ios`."

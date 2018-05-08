@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,11 +229,12 @@ msgstr ""
 "支持列表），但我们强烈建议您尝试一下GDScript，看看它有啥好处。"
 
 #: ../../docs/about/faq.rst:85
+#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
-"more than any other language, and is very simple and easy to learn. Takes at "
-"most a day or two to get comfortable and it's very easy to see the benefits "
-"once you do. Please do the effort to learn GDScript, you will not regret it."
+"more than any other language, and is simple and easy to learn. Takes at most "
+"a day or two to get comfortable and it's easy to see the benefits once you "
+"do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
 "GDScript旨在从底层整合Godot的工作方式，它比任何其他语言都更加完美，而且非常简"
 "单易学。花最多一两天就可以用的很爽，一旦你做到了，很容易能看到它的优势。请尽"
@@ -321,19 +322,21 @@ msgid ""
 msgstr "垃圾回收器难于控制或浪费大量内存（Lua、Python、JS、AS等）。"
 
 #: ../../docs/about/faq.rst:124
+#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
-"live editing, etc. (all of them). This is very well supported by GDScript."
+"live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
 "难以与代码编辑器集成，难以实现代码补全、动态编辑等功能。这方面GDScript就做得"
 "很好。"
 
 #: ../../docs/about/faq.rst:128
+#, fuzzy
 msgid ""
-"GDScript was designed to solve the issues above, and performs very well in "
-"all the above scenarios. Please learn GDScript and enjoy a very smooth "
-"integration of scripting with the game engine (yes, it's a rare but very "
-"enjoyable situation when things just work). It's worth it, give it a try!"
+"GDScript was designed to solve the issues above, and performs well in all "
+"the above scenarios. Please learn GDScript and enjoy a smooth integration of "
+"scripting with the game engine (yes, it's a rare but enjoyable situation "
+"when things just work). It's worth it, give it a try!"
 msgstr ""
 "GDScript旨在解决上述问题，并且表现良好。请学习一下GDScript并且享受丝滑如顺般"
 "的游戏开发过程（是的，虽然听上去不可能但真的很爽）。这是值得的，试一试吧！"
@@ -343,13 +346,12 @@ msgid "I want to extend Godot. What are my options for creating plugins?"
 msgstr "我想扩展Godot引擎。有什么开发插件的选项吗？"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "For creating Godot Editor plugins look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"如果想开发编辑器插件，请参阅 :ref:`EditorPlugins <doc_making_plugins>` 和插件"
-"脚本。"
+"如果想开发编辑器插件，请参阅 :ref:`编辑器插件 <doc_making_plugins>` 和插件脚"
+"本。"
 
 #: ../../docs/about/faq.rst:139
 msgid ""
@@ -358,11 +360,10 @@ msgid ""
 msgstr "其它语言的插件可以通过PluginScript或更底层的NativeScript添加。"
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "If you want to add a certain native library, your best bet is GDNative and "
 "custom C++ modules."
-msgstr "如果你想加一个本地库，最好用GDNative或定制C++模块。"
+msgstr "如果你想添加一个本地库，最好的选择是使用GDNative或定制C++模块。"
 
 #: ../../docs/about/faq.rst:143
 #, fuzzy
@@ -395,8 +396,9 @@ msgid "Why is FBX not supported for import?"
 msgstr "为什么不支持导入FBX？"
 
 #: ../../docs/about/faq.rst:154
+#, fuzzy
 msgid ""
-"FBX SDK has a very `restrictive license <http://www.blender.org/bf/"
+"FBX SDK has a `restrictive license <http://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<http://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
@@ -405,12 +407,13 @@ msgstr ""
 "licenses/MIT>`_不兼容。"
 
 #: ../../docs/about/faq.rst:158
+#, fuzzy
 msgid ""
-"That said, Godot's Collada support is really good, please use the "
-"`OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-"
-"Tools>`_ exporter for maximum compatibility if you are using Maya or 3DS "
-"Max. If you are using Blender, take a look at our own `Better Collada "
-"Exporter <https://godotengine.org/download>`_."
+"That said, Godot's Collada support is good, please use the `OpenCollada "
+"<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ "
+"exporter for maximum compatibility if you are using Maya or 3DS Max. If you "
+"are using Blender, take a look at our own `Better Collada Exporter <https://"
+"godotengine.org/download>`_."
 msgstr ""
 "不过，Godot对Collada的支持非常好，如果您在用Maya或3DS Max，请使用 "
 "`OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-"
@@ -535,11 +538,12 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "就是这样！你的游戏现在应该能适应多分辨率了。"
 
 #: ../../docs/about/faq.rst:223
+#, fuzzy
 msgid ""
-"If there really is a desire to make your game also work on ancient devices "
-"with tiny screens (less than 300 pixels in width), you can use the export "
-"option to shrink images, and set that build to be used for certain screen "
-"sizes in the App Store or Google Play."
+"If there is a desire to make your game also work on ancient devices with "
+"tiny screens (less than 300 pixels in width), you can use the export option "
+"to shrink images, and set that build to be used for certain screen sizes in "
+"the App Store or Google Play."
 msgstr ""
 "如果真的要让您的游戏在超小屏幕（宽度小于300像素）的老设备上工作，可以在导出选"
 "项中缩小图像，并且在App Store或Google Play中将它设为用于确定的屏幕大小。"

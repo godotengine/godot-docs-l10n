@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
 msgid "Feature Tags"
-msgstr ""
+msgstr "Tags de fonctionnalité"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:7
 msgid "Introduction"
@@ -30,48 +30,55 @@ msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, and it can refer to many of the following:"
 msgstr ""
+"Godot a un système spécial pour marquer la disponibilité des "
+"fonctionnalités. Chaque *fonctionnalité* est représentée par une chaîne de "
+"caractères et peut se référer à plusieurs des éléments suivants :"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
-msgstr ""
+msgstr "Nom de la plate-forme."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform bits (64/32)."
-msgstr ""
+msgstr "Nombre de bits de plate-forme (64/32)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop/mobile)."
-msgstr ""
+msgstr "Type de plate-forme (bureau/mobile)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression in platform."
-msgstr ""
+msgstr "Compression de texture supportée dans la plateforme."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid "Whether a build is debug or release."
-msgstr ""
+msgstr "S'il s'agit d'une compilation de débogage ou de production."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid "Many more things."
-msgstr ""
+msgstr "Et bien d'autres choses."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:19
 msgid "Features can be queried in run-time to the singleton API by calling:"
 msgstr ""
+"Les fonctionnalités peuvent être interrogées à l’exécution auprès du "
+"singleton API en appelant :"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:27
 msgid "Default features"
-msgstr ""
+msgstr "Fonctionnalités par défaut"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:29
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are *case "
 "sensitive*:"
 msgstr ""
+"Voici une liste de la plupart des tags de fonctionnalités de Godot. Gardez à "
+"l'esprit qu'ils sont *sensibles à la casse* :"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:32
 msgid "**Feature Tag**"
-msgstr ""
+msgstr "**Tag de fonctionnalité**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:32
 msgid "**Description**"
@@ -234,14 +241,18 @@ msgid "Custom features"
 msgstr "Fonctionnalités personnalisées"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:77
+#, fuzzy
 msgid ""
-"It is possible to add custom features to a build, just use the relevant "
-"field in the *export preset* used to generate it:"
+"It is possible to add custom features to a build, use the relevant field in "
+"the *export preset* used to generate it:"
 msgstr ""
+"Il est possible d'ajouter des fonctionnalités personnalisées à un build, il "
+"suffit d'utiliser le champ correspondant dans le *préréglage d'exportation* "
+"utilisé pour le générer :"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:83
 msgid "Overriding project settings"
-msgstr ""
+msgstr "Écraser les paramètres du projet"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:85
 msgid ""
@@ -249,6 +260,9 @@ msgid ""
 "*Project Settings*. This allows to better customize any configuration when "
 "doing a build."
 msgstr ""
+"Les fonctionnalités peuvent être utilisées pour remplacer des valeurs de "
+"configuration spécifiques des *réglages du projet*. Cela permet de mieux "
+"personnaliser n'importe quelle configuration lors d'une compilation."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:88
 msgid ""
@@ -256,24 +270,32 @@ msgid ""
 "the game (which was customized in a special export preset which, in turn, "
 "includes only demo levels)."
 msgstr ""
+"Dans l'exemple suivant, une icône différente est ajoutée pour la "
+"construction du jeu de démo (qui a été personnalisé dans un préréglage "
+"d'exportation spécial qui, à son tour, n'inclut que des niveaux de démo)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:93
 msgid "After overriding, a new field is added for this specific configuration:"
 msgstr ""
+"Après écrasement, un nouveau champ est ajouté pour cette configuration "
+"spécifique :"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Default overrides"
-msgstr ""
+msgstr "Écrasements par défaut"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
 msgid ""
 "There are already a lot of settings that come with overrides by default, "
 "they can be found in many sections of the project settings."
 msgstr ""
+"Il y a déjà beaucoup de paramètres qui sont fournis avec des remplacements "
+"par défaut, ils peuvent être trouvés dans de nombreuses sections des "
+"paramètres du projet."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:106
 msgid "Customizing Build"
-msgstr ""
+msgstr "Personnalisation de la compilation"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid ""
@@ -281,3 +303,7 @@ msgid ""
 "custom **ExportPlugin**. They also are used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
+"Les tags de fonctionnalité peuvent aussi être utilisés pour personnaliser un "
+"processus de compilation, en écrivant un fichier **ExportPlugin** "
+"personnalisé. Ils sont également utilisés pour spécifier quelle bibliothèque "
+"partagée est chargée et exportée dans **GDNative**."

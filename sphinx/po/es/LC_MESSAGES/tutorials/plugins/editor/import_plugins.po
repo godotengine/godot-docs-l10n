@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,6 +214,10 @@ msgid ""
 "one preset now, but we can make this method future-proof by returning the "
 "size of our ``Presets`` enumeration."
 msgstr ""
+"El método :ref:`get_preset_count<class_EditorImportPlugin_get_preset_count>` "
+"devuelve la cantidad de presets que definen estos plugins. Sólo tenemos un "
+"preset ahora, pero podemos hacer que este método esté preparado para el "
+"futuro devolviendo el tamaño de nuestra enumeración ``Presets``."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:210
 msgid ""
@@ -230,12 +234,19 @@ msgid ""
 "pattern to return something too. Although Godot won't ask for presets beyond "
 "the preset count you defined, it's always better to be on the safe side."
 msgstr ""
+"Aquí podemos usar la sentencia ``match`` para hacer el código más "
+"estructurado. De esta manera es más fácil añadir nuevos presets en el "
+"futuro. Usamos el patrón de catch all para devolver algo también. Aunque "
+"Godot no pedirá presets más allá del número de presets que definiste, "
+"siempre es mejor ser precavido."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:220
 msgid ""
 "If you have only one preset you could simply return its name directly, but "
 "if you do this you have to be careful when you add more presets."
 msgstr ""
+"Si sólo tiene un preset puede simplemente devolver su nombre directamente, "
+"pero si lo hace debe tener cuidado al añadir más presets."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:235
 msgid ""
@@ -248,7 +259,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 msgid "Key"
-msgstr ""
+msgstr "Clave"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 msgid "Type"
@@ -283,7 +294,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "The default value of the option for this preset."
-msgstr ""
+msgstr "El valor por defecto de la opción para este preset."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid "``property_hint``"
@@ -327,14 +338,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:257
+#, fuzzy
 msgid ""
 "Note that the ``get_import_options`` method receives the preset number, so "
 "you can configure the options for each different preset (especially the "
 "default value). In this example we use the ``match`` statement, but if you "
 "have lots of options and the presets only change the value you may want to "
-"create the array of options first and then just change it based on the "
-"preset."
+"create the array of options first and then change it based on the preset."
 msgstr ""
+"Tenga en cuenta que el método ```get_import_options`` recibe el número de "
+"preset, por lo que puedes configurar las opciones para cada preset diferente "
+"(especialmente el valor por defecto). En este ejemplo usamos la sentencia "
+"``match`` pero si tienes muchas opciones y los presets sólo cambian el "
+"valor, es posible que primero quieras crear un array de opciones y luego "
+"simplemente cambiarlo basado en el preset."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:263
 msgid ""
@@ -476,10 +493,10 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:399
 msgid ""
-"This has been very theoretical, but now that the import plugin is done, "
-"let's test it. Make sure you created the sample file (with the contents "
-"described in the introduction section) and save it as ``test.mtxt``. Then "
-"activate the plugin in the Project Settings."
+"This has been theoretical, but now that the import plugin is done, let's "
+"test it. Make sure you created the sample file (with the contents described "
+"in the introduction section) and save it as ``test.mtxt``. Then activate the "
+"plugin in the Project Settings."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:404

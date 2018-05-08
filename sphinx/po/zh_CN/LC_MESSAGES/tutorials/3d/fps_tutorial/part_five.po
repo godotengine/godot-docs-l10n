@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -209,11 +209,11 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:129
 msgid ""
 "If ``grenade_timer`` is at ``GRENADE_TIMER`` or higher, we then need to "
-"check if we just waited long enough and need to explode. We do this by "
-"checking to see if ``explosion_wait_timer`` is equal to ``0`` or less. Since "
-"we will be adding ``delta`` to ``explosion_wait_timer`` right after, "
-"whatever code under the check will only be called once, right when we've "
-"waited long enough and need to explode."
+"check if we waited long enough and need to explode. We do this by checking "
+"to see if ``explosion_wait_timer`` is equal to ``0`` or less. Since we will "
+"be adding ``delta`` to ``explosion_wait_timer`` right after, whatever code "
+"under the check will only be called once, right when we've waited long "
+"enough and need to explode."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:133
@@ -246,7 +246,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:143
 msgid ""
 "Next we check to see if ``explosion_wait_timer`` is more than or equal to "
-"``EXPLOSTION_WAIT_TIME``. Because we just added ``delta``, this will only be "
+"``EXPLOSTION_WAIT_TIME``. Because we added ``delta``, this will only be "
 "called once. If ``explosion_wait_timer`` is more or equal to "
 "``EXPLOSION_WAIT_TIME``, we've waited long enough to let the :ref:`Particles "
 "<class_Particles>` play and can free/destroy ourselves."
@@ -275,7 +275,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:244
 msgid ""
 "The code above is almost identical to the code for ``Grenade.gd``, so let's "
-"just go over what's changed."
+"go over what's changed."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:246
@@ -323,14 +323,14 @@ msgid ""
 "First we make sure we're not colliding with ourself. Because our :ref:`Area "
 "<class_Area>` does not know it's attached to the grenade's :ref:`RigidBody "
 "<class_RigidBody>`, we need to make sure we're not going to stick to "
-"ourself. If we have collided with ourself, we just ignore it by returning."
+"ourself. If we have collided with ourself, we ignore it by returning."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:267
 msgid ""
 "We then check to see if we have something assigned to ``player_body``, and "
 "if the body we collided with is the player that threw this grenade. If the "
-"body we've collided with is indeed ``player_body``, we just ignore it by "
+"body we've collided with is indeed ``player_body``, we ignore it by "
 "returning."
 msgstr ""
 
@@ -447,8 +447,7 @@ msgid "``GRENADE_THROW_FORCE``: The force at which we throw the grenade at."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:322
-msgid ""
-"Most of these variables are very similar to how we have out weapons set up."
+msgid "Most of these variables are similar to how we have out weapons set up."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:324
@@ -537,16 +536,16 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:408
 msgid ""
-"You can change the ``4`` to a constant if you want. You'd just need to make "
-"a new global constant, something like ``MAX_GRENADES``, and then change the "
-"clamp from ``clamp(grenade_amounts[current_grenade], 0, 4)`` to "
+"You can change the ``4`` to a constant if you want. You'd need to make a new "
+"global constant, something like ``MAX_GRENADES``, and then change the clamp "
+"from ``clamp(grenade_amounts[current_grenade], 0, 4)`` to "
 "``clamp(grenade_amounts[current_grenade], 0, MAX_GRENADES)``"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:411
 msgid ""
-"If you do not want to limit how many grenades you can carry, just remove the "
-"line that clamps the grenades altogether!"
+"If you do not want to limit how many grenades you can carry, remove the line "
+"that clamps the grenades altogether!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:413
@@ -564,7 +563,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:430
 msgid ""
 "Now we're also checking to see if the body has the ``add_grenade`` function. "
-"If it does, we call it just like we call ``add_ammo``."
+"If it does, we call it like we call ``add_ammo``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:432
@@ -639,8 +638,8 @@ msgstr ""
 msgid ""
 "First we check to see if the action pressed is the ``fire`` action, and that "
 "we are using the ``UNARMED`` weapon. This is because we only want to be able "
-"to pick up and throw objects when we're not using any weapons. This is just "
-"a design choice, but I feel it gives ``UNARMED`` a use."
+"to pick up and throw objects when we're not using any weapons. This is a "
+"design choice, but I feel it gives ``UNARMED`` a use."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:512
@@ -779,8 +778,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:568
 msgid ""
 "Before we test this, we need to change something in ``_physics_process``. "
-"While we're holding an object, we really don't want to be able to change "
-"weapons or reload, so change ``_physics_process`` to the following:"
+"While we're holding an object, we don't want to be able to change weapons or "
+"reload, so change ``_physics_process`` to the following:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:585
@@ -816,10 +815,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:598
 msgid ""
-"Open up ``Base`` and you'll find it's just a :ref:`StaticBody "
-"<class_StaticBody>` and a mesh. Open up ``Head`` and you'll find there's "
-"several meshes, a :ref:`StaticBody <class_StaticBody>` and a :ref:`Raycast "
-"<class_Raycast>` node."
+"Open up ``Base`` and you'll find it's a :ref:`StaticBody <class_StaticBody>` "
+"and a mesh. Open up ``Head`` and you'll find there's several meshes, a :ref:"
+"`StaticBody <class_StaticBody>` and a :ref:`Raycast <class_Raycast>` node."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:601
@@ -1081,7 +1079,7 @@ msgid ""
 "Next we check to see if the turret's health is less than or equal to ``0``, "
 "outside of whether we're active or not. If the turret's health is zero or "
 "less, we then check to see if ``destroyed_timer`` is more than zero. If "
-"destroyed timer is more than zero, we just subtract ``delta`` from "
+"destroyed timer is more than zero, we subtract ``delta`` from "
 "``destroyed_timer``."
 msgstr ""
 
@@ -1237,8 +1235,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:935
 msgid ""
 "The last thing we need to do is add a way for the player to be hurt. Since "
-"all of our bullets use the ``bullet_hit`` function, we just need to add that "
-"to our player."
+"all of our bullets use the ``bullet_hit`` function, we need to add that to "
+"our player."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:937

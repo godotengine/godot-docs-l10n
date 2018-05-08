@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,8 @@ msgstr ""
 "avantages sont que :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
-msgid "The language is very simple to learn."
+#, fuzzy
+msgid "The language is simple and easy to learn."
 msgstr "Le langage est très simple à apprendre."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
@@ -121,11 +122,12 @@ msgstr ""
 "ne sont connus qu'au moment de l'exécution)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
+#, fuzzy
 msgid ""
 "This, translated to reality, means that Godot+GDScript are a combination "
-"designed to create games very quickly and efficiently. For games that are "
-"very computationally intensive and can't benefit from the engine built-in "
-"tools (such as the Vector types, Physics Engine, Math library, etc), the "
+"designed to create games quickly and efficiently. For games that are very "
+"computationally intensive and can't benefit from the engine built-in tools "
+"(such as the Vector types, Physics Engine, Math library, etc), the "
 "possibility of using C++ is present too. This allows to still create the "
 "entire game in GDScript and add small bits of C++ in the areas that need a "
 "performance boost."
@@ -270,8 +272,9 @@ msgid "Dictionaries"
 msgstr "Les dictionnaires"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
+#, fuzzy
 msgid ""
-"Dictionaries are a very powerful tool in dynamically typed languages. Most "
+"Dictionaries are a powerful tool in dynamically typed languages. Most "
 "programmers that come from statically typed languages (such as C++ or C#) "
 "ignore their existence and make their life unnecessarily more difficult. "
 "This datatype is generally not present in such languages (or only on limited "
@@ -284,11 +287,12 @@ msgstr ""
 "présent dans ces langues (ou seulement sous une forme limitée)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
+#, fuzzy
 msgid ""
 "Dictionaries can map any value to any other value with complete disregard "
 "for the datatype used as either key or value. Contrary to popular belief, "
-"they are very efficient because they can be implemented with hash tables. "
-"They are, in fact, so efficient that some languages will go as far as "
+"they are efficient because they can be implemented with hash tables. They "
+"are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
 "Les dictionnaires peuvent associer n'importe quelle valeur à n'importe "
@@ -320,11 +324,12 @@ msgstr ""
 "de bataille navale simple :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
+#, fuzzy
 msgid ""
 "Dictionaries can also be used as data markup or quick structures. While "
 "GDScript dictionaries resemble python dictionaries, it also supports Lua "
-"style syntax and indexing, which makes it very useful for writing initial "
-"states and quick structs:"
+"style syntax and indexing, which makes it useful for writing initial states "
+"and quick structs:"
 msgstr ""
 "Les dictionnaires peuvent également être utilisés comme balises de données "
 "ou comme structures rapides. Bien que les dictionnaires GDScript ressemblent "
@@ -377,9 +382,8 @@ msgid "And backwards looping is done through a negative counter:"
 msgstr "Et l'itération à rebours se fait à l'aide d'un compteur négatif :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:399
-#, fuzzy
 msgid "Becomes:"
-msgstr "devient"
+msgstr "devient :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:407
 msgid "While"

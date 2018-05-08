@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,31 +177,30 @@ msgid "Using the module"
 msgstr "Користування модулем"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:230
-msgid ""
-"Using your newly created module is very easy, from any script you can now do:"
+msgid "You can now use your newly created module from any script:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:242
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:241
 msgid "And the output will be ``60``."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:245
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:244
 msgid "Improving the build system for development"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:247
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:246
 msgid ""
 "So far we defined a clean and simple SCsub that allows us to add the sources "
 "of our new module as part of the Godot binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:250
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:249
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game given we want all the modules in a single binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:253
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:252
 msgid ""
 "However the trade-of is every single change means a full recompilation of "
 "the game. Even if SCons is able to detect and recompile only the file that "
@@ -209,13 +208,13 @@ msgid ""
 "a long and costly part."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:258
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:257
 msgid ""
 "The solution to avoid such a cost is to build our own module as a shared "
 "library that will be dynamically loaded when starting our game's binary."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:290
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:289
 msgid ""
 "Once compiled, we should end up with a ``bin`` directory containing both the "
 "``godot*`` binary and our ``libsummator*.so``. However given the .so is not "
@@ -223,13 +222,13 @@ msgid ""
 "it during runtime with the ``LD_LIBRARY_PATH`` environ variable:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:300
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:299
 msgid ""
 "**note**: Pay attention you have to ``export`` the environ variable "
 "otherwise you won't be able to play you project from within the editor."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:303
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:302
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the godot binary "
@@ -237,23 +236,23 @@ msgid ""
 "using the `ARGUMENT` command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:333
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:332
 msgid ""
 "Now by default ``scons`` command will build our module as part of godot's "
 "binary and as a shared library when passing ``summator_shared=yes``."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:336
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:335
 msgid ""
 "Finally you can even speedup build further by explicitly specifying your "
 "shared module as target in the scons command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:344
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:343
 msgid "Writing custom documentation"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:346
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:345
 msgid ""
 "Writing documentation may seem like a boring task, but it is highly "
 "recommended to document your newly created module in order to make it easier "
@@ -262,22 +261,22 @@ msgid ""
 "someone else, so be kind to your future self!"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:352
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:351
 msgid "There are several steps in order to setup custom docs for the module:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:354
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:353
 msgid ""
 "Make a new directory in the root of the module. The directory name can be "
 "anything, but we'll be using the ``doc_classes`` name throughout this "
 "section."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:357
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:356
 msgid "Append the following code snippet to ``config.py``:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:369
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:368
 msgid ""
 "The ``get_doc_classes()`` method is necessary for the build system to know "
 "which documentation classes of the module must be merged, since the module "
@@ -286,18 +285,18 @@ msgid ""
 "one class, append those as well."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:375
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:374
 msgid ""
 "The ``get_doc_path()`` method is used by the build system to determine the "
 "location of the docs. In our case, they will be located in the "
 "``doc_classes`` directory."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:379
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:378
 msgid "Run command:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:385
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:384
 msgid ""
 "This will dump the engine API reference to the given ``<path>`` in XML "
 "format. Notice that you'll need to configure your ``PATH`` to locate Godot's "
@@ -305,17 +304,17 @@ msgid ""
 "might encounter an error similar to the following:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:395
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:394
 msgid "Get generated doc file from ``godot/doc/classes/ClassName.xml``"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:397
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:396
 msgid ""
 "Copy this file to ``doc_classes``, optionally edit it, then compile the "
 "engine."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:399
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:398
 msgid ""
 "The build system will fetch the documentation files from the ``doc_classes`` "
 "directory and merge them with the base types. Once the compilation process "
@@ -323,53 +322,51 @@ msgid ""
 "documentation system."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:403
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:402
 msgid ""
 "In order to keep documentation up-to-date, all you'll have to do is simply "
 "modify one of the ``ClassName.xml`` files and recompile the engine from now "
 "on."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:407
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:406
 msgid "Summing up"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:409
-msgid ""
-"As you see, it's really easy to develop Godot in C++. Just write your stuff "
-"normally and remember to:"
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:408
+msgid "Remember to:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:412
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:410
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:413
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:411
 msgid ""
 "use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:414
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
-"surprises."
+"(hopefully positive) surprises."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:419
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:417
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite), your new class will appear in the editor, in the inheritance tree "
 "in the \"Add Node\" dialog."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:422
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:420
 msgid ""
 "If you inherit from :ref:`class_Resource`, it will appear in the resource "
 "list, and all the exposed properties can be serialized when saved/loaded."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_modules_in_cpp.rst:425
+#: ../../docs/development/cpp/custom_modules_in_cpp.rst:423
 msgid ""
 "By this same logic, you can extend the Editor and almost any area of the "
 "engine."

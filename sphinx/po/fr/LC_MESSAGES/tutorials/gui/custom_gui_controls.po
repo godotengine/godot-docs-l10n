@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:26
 msgid ""
-"Unlike 2D nodes, \"size\" is very important with controls, as it helps to "
+"Unlike 2D nodes, \"size\" is important with controls, as it helps to "
 "organize them in proper layouts. For this, the :ref:`Control.rect_size "
 "<class_Control_rect_size>` member variable is provided. Checking it during "
 "_draw() is vital to ensure everything is kept in-bounds."
@@ -80,12 +80,12 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:71
 msgid ""
-"As mentioned before, size is very important to controls. This allows them to "
-"lay out properly, when set into grids, containers, or anchored. Controls "
-"most of the time provide a *minimum size* to help to properly lay them out. "
-"For example, if controls are placed vertically on top of each other using a :"
-"ref:`VBoxContainer <class_VBoxContainer>`, the minimum size will make sure "
-"your custom control is not squished by the other controls in the container."
+"As mentioned before, size is important to controls. This allows them to lay "
+"out properly, when set into grids, containers, or anchored. Controls most of "
+"the time provide a *minimum size* to help to properly lay them out. For "
+"example, if controls are placed vertically on top of each other using a :ref:"
+"`VBoxContainer <class_VBoxContainer>`, the minimum size will make sure your "
+"custom control is not squished by the other controls in the container."
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:79
@@ -110,7 +110,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:118
 msgid "Input events"
-msgstr ""
+msgstr "Événement d’entrée"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:120
 msgid ""

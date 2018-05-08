@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,16 +92,16 @@ msgstr ""
 msgid ""
 "PC is a wonderful architecture. Computers often have gigabytes of RAM, "
 "terabytes of storage and gigahertz of CPU, and when an application needs "
-"more resources the OS will just swap out the inactive ones. Other "
-"architectures (like mobile or consoles) are in general more limited."
+"more resources the OS will swap out the inactive ones. Other architectures "
+"(like mobile or consoles) are in general more limited."
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
 "The most common memory model is the heap, where an application will request "
 "a region of memory, and the underlying OS will try to fit it somewhere and "
-"return it. This often works best and is very flexible, but over time and "
-"with abuse, this can lead to segmentation."
+"return it. This often works best and is flexible, but over time and with "
+"abuse, this can lead to segmentation."
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:52
@@ -119,7 +119,7 @@ msgid ""
 "the maximum allocation size is below a given threshold in proportion to the "
 "maximum heap size and proportion of memory intended to be unused, "
 "segmentation will not be a problem over time as it will remain constant. In "
-"other words, just leave 10-20% of your memory free and perform all small "
+"other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
 
@@ -171,12 +171,12 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:106
 msgid ""
-"For dynamic memory, the DVector<> template is provided. Just use it like:"
+"For dynamic memory, the DVector<> template is provided. Use it like this:"
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:113
 msgid ""
-"DVector is just a standard vector class, it can be accessed using the [] "
+"DVector is a standard vector class, it can be accessed using the [] "
 "operator, but that's probably slow for large amount of accesses (as it has "
 "to lock internally). A few helpers exist for this:"
 msgstr ""
@@ -229,8 +229,8 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:148
 msgid ""
-"They are very simple and aim to be as minimal as possible, as templates in C+"
-"+ are often inlined and make the binary size much fatter, both in debug "
+"They are simple and aim to be as minimal as possible, as templates in C++ "
+"are often inlined and make the binary size much fatter, both in debug "
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
@@ -299,8 +299,8 @@ msgstr ""
 msgid ""
 "StringNames are like a String, but they are unique. Creating a StringName "
 "from a string results in a unique internal pointer for all equal strings. "
-"StringNames are really useful for using strings as identifier, as comparing "
-"them is basically comparing a pointer."
+"StringNames are useful for using strings as identifier, as comparing them is "
+"basically comparing a pointer."
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:195
@@ -321,8 +321,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:206
 msgid ""
-"There are several linear math types available in the core/math directory, "
-"they are basically just that."
+"There are several linear math types available in the core/math directory."
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:212

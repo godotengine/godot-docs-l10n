@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,15 +72,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:30
 msgid ""
 "The ``Background_Animation`` node is just so the background of the menu is a "
-"bit more interesting than a solid color. It's just a camera looking around "
-"the skybox, nothing fancy."
+"bit more interesting than a solid color. It's a camera looking around the "
+"skybox, nothing fancy."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:33
 msgid ""
-"Feel free to expand all of the nodes and see how their set up. Just remember "
-"to keep only ``Start_Menu`` visible when you're done, as that's the screen "
-"we want to show first when we enter the main menu."
+"Feel free to expand all of the nodes and see how their set up. Remember to "
+"keep only ``Start_Menu`` visible when you're done, as that's the screen we "
+"want to show first when we enter the main menu."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:36
@@ -91,9 +91,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:123
 msgid ""
-"Most of the code here relates to making UIs, which is really outside of the "
-"purpose of this tutorial series. **We're only going to look at the UI "
-"related code briefly.**"
+"Most of the code here relates to making UIs, which is outside of the purpose "
+"of this tutorial series. **We're only going to look at the UI related code "
+"briefly.**"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:126
@@ -258,8 +258,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:192
 msgid ""
-"Now, for this all to work we really need to make the ``Globals`` singleton. "
-"Make a new script in the ``Script`` tab and call it ``Globals.gd``."
+"Now, for this all to work we need to create the ``Globals`` singleton. Make "
+"a new script in the ``Script`` tab and call it ``Globals.gd``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:194
@@ -268,10 +268,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:209
 msgid ""
-"As you can see, it's really quite small and simple. As this part progresses "
-"we will keeping adding complexities to ``Global.gd``, but for now all it "
-"really is doing is holding two variables for us, and abstracting how we "
-"change scenes."
+"As you can see, it's quite small and simple. As this part progresses we will "
+"keeping adding complexities to ``Global.gd``, but for now all it is doing is "
+"holding two variables for us, and abstracting how we change scenes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:212
@@ -479,7 +478,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:336
-msgid "Now we just need to add ``set_debug_display`` to ``Globals.gd``:"
+msgid "Now we need to add ``set_debug_display`` to ``Globals.gd``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:350
@@ -656,8 +655,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:459
 msgid ""
-"``popup_quit`` is very similar, but we're also making sure the mouse is "
-"visible and changing scenes to the title screen."
+"``popup_quit`` is similar, but we're also making sure the mouse is visible "
+"and changing scenes to the title screen."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:476
@@ -1123,9 +1122,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:889
 msgid ""
-"If you want to add additional audio, you just need to add it to "
-"``audio_clips``. No audio files are provided in this tutorial, so you will "
-"have to provide your own."
+"If you want to add additional audio, you need to add it to ``audio_clips``. "
+"No audio files are provided in this tutorial, so you will have to provide "
+"your own."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:892

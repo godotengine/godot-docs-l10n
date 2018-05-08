@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgstr "Introduction"
 
 #: ../../docs/tutorials/shading/shading_language.rst:9
 msgid ""
-"Godot uses a shading language very similar to GLSL ES 3.0. Most datatypes "
-"and functions are supported, and the few remaining ones will likely be added "
+"Godot uses a shading language similar to GLSL ES 3.0. Most datatypes and "
+"functions are supported, and the few remaining ones will likely be added "
 "over time."
 msgstr ""
 
@@ -402,9 +402,9 @@ msgid ""
 "Keep in mind that some architectures (mainly mobile) benefit a lot from "
 "this, but are also restricted (conversion between precisions has a cost). "
 "Please read the relevant documentation on the target architecture to find "
-"out more. In all honesty though, mobile drivers are really buggy so just "
-"stay out of trouble and make simple shaders without specifying precision "
-"unless you *really* need to."
+"out more. In all honesty though, mobile drivers are buggy so to stay out of "
+"trouble make simple shaders without specifying precision unless you *really* "
+"need to."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:189
@@ -575,7 +575,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:222
 msgid "Flow Control"
-msgstr ""
+msgstr "Contrôle de flux"
 
 #: ../../docs/tutorials/shading/shading_language.rst:224
 msgid "Godot Shading language supports the most common types of flow control:"
@@ -1796,7 +1796,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1040
 #: ../../docs/tutorials/shading/shading_language.rst:1098
 msgid "Built-In"
-msgstr ""
+msgstr "Built-In"
 
 #: ../../docs/tutorials/shading/shading_language.rst:714
 msgid "out mat4 **WORLD_MATRIX**"
@@ -2055,22 +2055,22 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:877
 #: ../../docs/tutorials/shading/shading_language.rst:950
 msgid "in mat4 **WORLD_MATRIX**"
-msgstr ""
+msgstr "in mat4 **WORLD_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:798
 #: ../../docs/tutorials/shading/shading_language.rst:881
 #: ../../docs/tutorials/shading/shading_language.rst:954
 msgid "in mat4 **PROJECTION_MATRIX**"
-msgstr ""
+msgstr "in mat4 **PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:800
 #: ../../docs/tutorials/shading/shading_language.rst:883
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
-msgstr ""
+msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:806
 msgid "in vec3 **VERTEX**"
-msgstr ""
+msgstr "in vec3 **VERTEX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:806
 msgid "Vertex that comes from vertex function, in view space."
@@ -2079,7 +2079,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:808
 #: ../../docs/tutorials/shading/shading_language.rst:1005
 msgid "in vec4 **FRAGCOORD**"
-msgstr ""
+msgstr "in vec4 **FRAGCOORD**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:808
 #: ../../docs/tutorials/shading/shading_language.rst:1005
@@ -2089,7 +2089,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:810
 msgid "in bool **FRONT_FACING**"
-msgstr ""
+msgstr "in bool **FRONT_FACING**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:810
 msgid "true whether current face is front face."
@@ -2110,7 +2110,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:818
 #: ../../docs/tutorials/shading/shading_language.rst:1009
 msgid "out vec3 **NORMALMAP**"
-msgstr ""
+msgstr "out vec3 **NORMALMAP**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:818
 msgid "Output this if reading normal from a texture instead of NORMAL."
@@ -2119,7 +2119,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:820
 #: ../../docs/tutorials/shading/shading_language.rst:1011
 msgid "out float **NORMALMAP_DEPTH**"
-msgstr ""
+msgstr "out float **NORMALMAP_DEPTH**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:820
 msgid "Depth from variable above. Defaults to 1.0."
@@ -2129,7 +2129,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1013
 #: ../../docs/tutorials/shading/shading_language.rst:1047
 msgid "in vec2 **UV**"
-msgstr ""
+msgstr "in vec2 **UV**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:822
 msgid "UV that comes from vertex function."
@@ -2137,7 +2137,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:824
 msgid "in vec2 **UV2**"
-msgstr ""
+msgstr "in vec2 **UV2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:824
 msgid "UV2 that comes from vertex function."
@@ -2146,7 +2146,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:826
 #: ../../docs/tutorials/shading/shading_language.rst:1049
 msgid "in vec4 **COLOR**"
-msgstr ""
+msgstr "in vec4 **COLOR**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:826
 msgid "COLOR that comes from vertex function."
@@ -2154,7 +2154,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:828
 msgid "out vec3 **ALBEDO**"
-msgstr ""
+msgstr "out vec3 **ALBEDO**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:828
 msgid "Albedo (default white)."
@@ -2162,7 +2162,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:830
 msgid "out float **ALPHA**"
-msgstr ""
+msgstr "out float **ALPHA**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:830
 msgid ""
@@ -2171,7 +2171,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:832
 msgid "out float **METALLIC**"
-msgstr ""
+msgstr "out float **METALLIC**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:832
 msgid "Metallic (0..1)."
@@ -2179,12 +2179,13 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:834
 msgid "out float **SPECULAR**"
-msgstr ""
+msgstr "out float **SPECULAR**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:834
 msgid ""
 "Specular. Defaults to 0.5, best to not modify unless you want to change IOR."
 msgstr ""
+"Specular. Defaults to 0.5, best to not modify unless you want to change IOR."
 
 #: ../../docs/tutorials/shading/shading_language.rst:836
 msgid "Roughness (0..1)."
@@ -2192,7 +2193,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:838
 msgid "out float **RIM**"
-msgstr ""
+msgstr "out float **RIM**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:838
 msgid "Rim (0..1)."
@@ -2200,7 +2201,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:840
 msgid "out float **RIM_TINT**"
-msgstr ""
+msgstr "out float **RIM_TINT**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:840
 msgid "Rim Tint, goes from 0 (white) to 1 (albedo)."
@@ -2208,7 +2209,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:842
 msgid "out float **CLEARCOAT**"
-msgstr ""
+msgstr "out float **CLEARCOAT**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:842
 msgid "Small added specular blob."
@@ -2216,7 +2217,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:844
 msgid "out float **CLEARCOAT_GLOSS**"
-msgstr ""
+msgstr "out float **CLEARCOAT_GLOSS**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:844
 msgid "Gloss of Clearcoat."
@@ -2224,7 +2225,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:846
 msgid "out float **ANISOTROPY**"
-msgstr ""
+msgstr "out float **ANISOTROPY**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:846
 msgid "For distorting the specular blob according to tangent space."
@@ -2232,7 +2233,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:848
 msgid "out vec2 **ANISOTROPY_FLOW**"
-msgstr ""
+msgstr "out vec2 **ANISOTROPY_FLOW**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:848
 msgid "Distortion direction, use with flowmaps."
@@ -2240,7 +2241,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:850
 msgid "out float **SSS_STRENGTH**"
-msgstr ""
+msgstr "out float **SSS_STRENGTH**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:850
 msgid "Strength of Subsurface Scattering (default 0)."
@@ -2248,7 +2249,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:852
 msgid "out vec3 **TRANSMISSION**"
-msgstr ""
+msgstr "out vec3 **TRANSMISSION**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:852
 msgid "Transmission mask (default 0,0,0)."
@@ -2256,7 +2257,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:854
 msgid "out float **AO**"
-msgstr ""
+msgstr "out float **AO**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:854
 msgid "Ambient Occlusion (pre-baked)."
@@ -2264,7 +2265,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:856
 msgid "out float **AO_LIGHT_AFFECT**"
-msgstr ""
+msgstr "out float **AO_LIGHT_AFFECT**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:856
 msgid "How much AO affects lights (0..1. default 0, none)."
@@ -2272,7 +2273,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:858
 msgid "out vec3 **EMISSION**"
-msgstr ""
+msgstr "out vec3 **EMISSION**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:858
 msgid "Emission color (can go over 1,1,1 for HDR)."
@@ -2281,7 +2282,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:860
 #: ../../docs/tutorials/shading/shading_language.rst:1033
 msgid "sampler2D **SCREEN_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **SCREEN_TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:860
 msgid ""
@@ -2291,7 +2292,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:862
 msgid "sampler2D **DEPTH_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **DEPTH_TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:862
 msgid ""
@@ -2301,7 +2302,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:864
 msgid "out vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "out vec2 **SCREEN_UV**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:864
 msgid "Screen UV coordinate for current pixel."
@@ -2311,7 +2312,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1027
 #: ../../docs/tutorials/shading/shading_language.rst:1058
 msgid "in vec2 **POINT_COORD**"
-msgstr ""
+msgstr "in vec2 **POINT_COORD**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:866
 msgid "Point Coord for drawing points with POINT_SIZE."
@@ -2319,7 +2320,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:868
 msgid "out float **ALPHA_SCISSOR**"
-msgstr ""
+msgstr "out float **ALPHA_SCISSOR**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:868
 msgid "If written to, values below a certain amount of alpha are discarded."
@@ -2328,7 +2329,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:872
 #: ../../docs/tutorials/shading/shading_language.rst:1037
 msgid "Light Built-Ins"
-msgstr ""
+msgstr "Light Built-Ins"
 
 #: ../../docs/tutorials/shading/shading_language.rst:875
 msgid "Built-in"
@@ -2337,7 +2338,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:889
 #: ../../docs/tutorials/shading/shading_language.rst:1044
 msgid "in vec3 **NORMAL**"
-msgstr ""
+msgstr "in vec3 **NORMAL**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:889
 msgid "Normal vector."
@@ -2345,7 +2346,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:891
 msgid "in vec3 **VIEW**"
-msgstr ""
+msgstr "in vec3 **VIEW**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:891
 msgid "View vector."
@@ -2353,7 +2354,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:893
 msgid "in vec3 **LIGHT**"
-msgstr ""
+msgstr "in vec3 **LIGHT**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:893
 msgid "Light Vector."
@@ -2361,7 +2362,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:895
 msgid "in vec3 **LIGHT_COLOR**"
-msgstr ""
+msgstr "in vec3 **LIGHT_COLOR**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:895
 msgid "Color of light multiplied by energy."
@@ -2369,7 +2370,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:897
 msgid "in vec3 **ATTENUATION**"
-msgstr ""
+msgstr "in vec3 **ATTENUATION**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:897
 msgid "Attenuation based on distance or shadow."
@@ -2377,7 +2378,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:899
 msgid "in vec3 **ALBEDO**"
-msgstr ""
+msgstr "in vec3 **ALBEDO**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:899
 msgid "Base albedo."
@@ -2385,7 +2386,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:901
 msgid "in vec3 **TRANSMISSION**"
-msgstr ""
+msgstr "in vec3 **TRANSMISSION**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:901
 msgid "Transmission mask."
@@ -2393,7 +2394,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:903
 msgid "in float **ROUGHNESS**"
-msgstr ""
+msgstr "in float **ROUGHNESS**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:903
 msgid "Roughness."
@@ -2401,7 +2402,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:905
 msgid "out vec3 **DIFFUSE_LIGHT**"
-msgstr ""
+msgstr "out vec3 **DIFFUSE_LIGHT**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:905
 msgid "Diffuse light result."
@@ -2409,7 +2410,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:907
 msgid "out vec3 **SPECULAR_LIGHT**"
-msgstr ""
+msgstr "out vec3 **SPECULAR_LIGHT**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:907
 msgid "Specular light result."
@@ -2462,7 +2463,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:952
 msgid "in mat4 **EXTRA_MATRIX**"
-msgstr ""
+msgstr "in mat4 **EXTRA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:952
 msgid "Extra transform."
@@ -2483,7 +2484,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:960
 #: ../../docs/tutorials/shading/shading_language.rst:1031
 msgid "in bool **AT_LIGHT_PASS**"
-msgstr ""
+msgstr "in bool **AT_LIGHT_PASS**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:960
 #: ../../docs/tutorials/shading/shading_language.rst:1031
@@ -2492,7 +2493,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:962
 msgid "out vec2 **VERTEX**"
-msgstr ""
+msgstr "out vec2 **VERTEX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:962
 msgid "Vertex in image space."
@@ -2500,7 +2501,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:964
 msgid "UV."
-msgstr ""
+msgstr "UV."
 
 #: ../../docs/tutorials/shading/shading_language.rst:966
 msgid "Color from vertex primitive."
@@ -2552,24 +2553,24 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1017
 #: ../../docs/tutorials/shading/shading_language.rst:1052
 msgid "sampler2D **TEXTURE**"
-msgstr ""
+msgstr "sampler2D **TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1017
 msgid "Default 2D texture."
-msgstr ""
+msgstr "Texture 2D par défault."
 
 #: ../../docs/tutorials/shading/shading_language.rst:1019
 msgid "sampler2D **NORMAL_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **NORMAL_TEXTURE**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1019
 msgid "Default 2D normal texture."
-msgstr ""
+msgstr "Texture 2D des normales par défaut."
 
 #: ../../docs/tutorials/shading/shading_language.rst:1021
 #: ../../docs/tutorials/shading/shading_language.rst:1054
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
-msgstr ""
+msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1021
 msgid "Default 2D texture pixel size."
@@ -2578,7 +2579,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1023
 #: ../../docs/tutorials/shading/shading_language.rst:1056
 msgid "in vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "in vec2 **SCREEN_UV**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1023
 msgid "Screen UV for use with SCREEN_TEXTURE."
@@ -2586,7 +2587,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1025
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
-msgstr ""
+msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1025
 msgid "Screen pixel size."
@@ -2608,7 +2609,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1042
 msgid "in vec2 **POSITION**"
-msgstr ""
+msgstr "in vec2 **POSITION**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1044
 msgid ""
@@ -2644,7 +2645,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1062
 msgid "out vec2 **LIGHT_VEC**"
-msgstr ""
+msgstr "out vec2 **LIGHT_VEC**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1062
 msgid ""
@@ -2653,7 +2654,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1064
 msgid "out float **LIGHT_HEIGHT**"
-msgstr ""
+msgstr "out float **LIGHT_HEIGHT**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1064
 msgid "Height of Light."
@@ -2661,7 +2662,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1066
 msgid "out vec4 **LIGHT_COLOR**"
-msgstr ""
+msgstr "out vec4 **LIGHT_COLOR**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1066
 msgid "Color of Light."
@@ -2669,7 +2670,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1068
 msgid "out vec2 **LIGHT_UV**"
-msgstr ""
+msgstr "out vec2 **LIGHT_UV**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1068
 msgid "UV for Light texture."
@@ -2677,7 +2678,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1070
 msgid "out vec4 **SHADOW_COLOR**"
-msgstr ""
+msgstr "out vec4 **SHADOW_COLOR**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1070
 msgid "Shadow Color of Light. **(not yet implemented)**"
@@ -2685,7 +2686,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1072
 msgid "out vec4 **LIGHT**"
-msgstr ""
+msgstr "out vec4 **LIGHT**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1072
 msgid ""
@@ -2711,7 +2712,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1089
 msgid "**disable_force**"
-msgstr ""
+msgstr "**disable_force**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1089
 msgid "Disable force."
@@ -2719,7 +2720,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1091
 msgid "**disable_velocity**"
-msgstr ""
+msgstr "**disable_velocity**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1091
 msgid "Disable velocity."
@@ -2731,7 +2732,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1102
 msgid "out vec3 **VELOCITY**"
-msgstr ""
+msgstr "out vec3 **VELOCITY**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1102
 msgid "Particle velocity, can be modified."
@@ -2739,7 +2740,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1104
 msgid "out float **MASS**"
-msgstr ""
+msgstr "out float **MASS**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1104
 msgid "Particle mass, use for attractors (default 1)."
@@ -2747,7 +2748,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1106
 msgid "out bool **ACTIVE**"
-msgstr ""
+msgstr "out bool **ACTIVE**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1106
 msgid "Particle is active, can be set to false."
@@ -2755,7 +2756,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1108
 msgid "in bool **RESTART**"
-msgstr ""
+msgstr "in bool **RESTART**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1108
 msgid "Set to true when particle must restart (lifetime cycled)."
@@ -2763,7 +2764,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1110
 msgid "out vec4 **CUSTOM**"
-msgstr ""
+msgstr "out vec4 **CUSTOM**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1110
 msgid "Custom particle data."
@@ -2771,7 +2772,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1112
 msgid "out mat4 **TRANSFORM**"
-msgstr ""
+msgstr "out mat4 **TRANSFORM**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1112
 msgid "Particle transform."
@@ -2779,7 +2780,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1116
 msgid "in float **LIFETIME**"
-msgstr ""
+msgstr "in float **LIFETIME**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1116
 msgid "Particle lifetime."
@@ -2787,7 +2788,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1118
 msgid "in float **DELTA**"
-msgstr ""
+msgstr "in float **DELTA**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1118
 msgid "Delta process time."
@@ -2795,7 +2796,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1120
 msgid "in uint **NUMBER**"
-msgstr ""
+msgstr "in uint **NUMBER**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1120
 msgid "Unique number since emission start."
@@ -2803,7 +2804,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1122
 msgid "in int **INDEX**"
-msgstr ""
+msgstr "in int **INDEX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1122
 msgid "Particle index (from total particles)."
@@ -2811,7 +2812,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1124
 msgid "in mat4 **EMISSION_TRANSFORM**"
-msgstr ""
+msgstr "in mat4 **EMISSION_TRANSFORM**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1124
 msgid "Emitter transform (used for non-local systems)."
@@ -2819,7 +2820,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1126
 msgid "in uint **RANDOM_SEED**"
-msgstr ""
+msgstr "in uint **RANDOM_SEED**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1126
 msgid "Random seed used as base for random."

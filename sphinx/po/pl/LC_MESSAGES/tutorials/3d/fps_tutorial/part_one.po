@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -566,7 +566,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:353
 msgid ""
 "Notice how we do not need to do any calculations to get world space "
-"directional vectors. We can just define a few :ref:`Vector3 <class_Vector3>` "
+"directional vectors. We can define a few :ref:`Vector3 <class_Vector3>` "
 "variables and input the values pointing in each direction."
 msgstr ""
 
@@ -940,7 +940,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:556
 msgid ""
-"Now we just need to add a few lines of code, starting in ``_ready``. Add the "
+"Now we need to add a few lines of code, starting in ``_ready``. Add the "
 "following to ``_ready``:"
 msgstr ""
 
@@ -964,8 +964,8 @@ msgid ""
 "We set ``is_sprinting`` to true when we are holding down the "
 "``movement_sprint`` action, and false when the ``movement_sprint`` action is "
 "released. In ``process_movement`` we'll add the code that makes the player "
-"faster when they sprint. Here in ``process_input`` we're just going to "
-"change the ``is_sprinting`` variable."
+"faster when they sprint. Here in ``process_input`` we're going to change the "
+"``is_sprinting`` variable."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:593
@@ -978,7 +978,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:598
 msgid ""
-"Now we just need to change a couple things in ``process_movement``. First, "
+"Now we need to change a couple things in ``process_movement``. First, "
 "replace ``target *= MAX_SPEED`` with the following:"
 msgstr ""
 

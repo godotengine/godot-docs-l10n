@@ -11,7 +11,7 @@ SPHINX_PO_DIR="sphinx/po"
 
 WEBLATE_DIR="weblate"
 WEBLATE_TEMPLATE="$WEBLATE_DIR/docs.pot"
-WEBLATE_POFILES=$(find $WEBLATE_DIR -type f -name "*.po")
+WEBLATE_POFILES=$(find $WEBLATE_DIR -type f -name "*.po" | sort)
 
 # Used only for --add-langs - languages will mostly be added via Weblate directly
 LANGS="es fr zh_CN"

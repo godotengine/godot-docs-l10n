@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,22 +62,22 @@ msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:35
 msgid ""
-"The class :ref:`File <class_File>` is simple to use, just open a location "
-"and read/write data (integers, strings and variants). To create an encrypted "
-"file, a passphrase must be provided, like this:"
+"The class :ref:`File <class_File>` can open a file at a location and read/"
+"write data (integers, strings and variants). It also supports encryption. To "
+"create an encrypted file, a passphrase must be provided, like this:"
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:54
+#: ../../docs/tutorials/io/encrypting_save_games.rst:55
 msgid ""
-"This will make the file unreadable to users, but will still not avoid them "
-"to share savefiles. To solve this, using the device unique id or some unique "
-"user identifier is needed, for example:"
+"This will make the file unreadable to users, but will still not prevent them "
+"sharing save files. To solve this, use the device unique id or some unique "
+"user identifier, for example:"
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:73
+#: ../../docs/tutorials/io/encrypting_save_games.rst:74
 msgid "Note that ``OS.get_unique_id()`` only works on iOS and Android."
 msgstr ""
 
-#: ../../docs/tutorials/io/encrypting_save_games.rst:75
+#: ../../docs/tutorials/io/encrypting_save_games.rst:76
 msgid "This is all! Thanks for your cooperation, citizen."
 msgstr ""

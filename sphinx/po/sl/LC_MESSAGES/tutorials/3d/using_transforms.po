@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,15 +28,15 @@ msgstr "Predstavitev"
 #: ../../docs/tutorials/3d/using_transforms.rst:9
 msgid ""
 "If you have never made 3D games before, working with rotations in three "
-"dimensions can be very confusing at first. Coming from 2D, the natural way "
-"of thinking is along the lines of *\"Oh, it's just like rotating in 2D, "
-"except now rotations happen in X, Y and Z\"*."
+"dimensions can be confusing at first. Coming from 2D, the natural way of "
+"thinking is along the lines of *\"Oh, it's just like rotating in 2D, except "
+"now rotations happen in X, Y and Z\"*."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:12
 msgid ""
 "At first this seems easy and for simple games, this way of thinking may even "
-"be enough. Unfortunately, it's very often incorrect."
+"be enough. Unfortunately, it's often incorrect."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:14
@@ -65,8 +65,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:30
 msgid ""
-"While it may seem very intuitive that each axis has a rotation, the truth is "
-"that it's just not practical."
+"While it may seem intuitive that each axis has a rotation, the truth is that "
+"it's just not practical."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
@@ -86,10 +86,10 @@ msgstr ""
 msgid ""
 "This could be done by first rotating in *X*, then *Y* and then in *Z*. "
 "Alternatively, you could first rotate in *Y*, then in *Z* and finally in "
-"*X*. Anything really works, but depending on the order, the final "
-"orientation of the object will *not necessarily be the same*. Indeed, this "
-"means that there are several ways to construct an orientation from 3 "
-"different angles, depending on *the order of the rotations*."
+"*X*. Anything works, but depending on the order, the final orientation of "
+"the object will *not necessarily be the same*. Indeed, this means that there "
+"are several ways to construct an orientation from 3 different angles, "
+"depending on *the order of the rotations*."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
@@ -178,9 +178,9 @@ msgstr ""
 msgid ""
 "The result of all this is that you should **not use** the ``rotation`` "
 "property of :ref:`class_Spatial` nodes in Godot for games. It's there to be "
-"used mainly in the editor, for coherence with the 2D engine, and for very "
-"simple rotations (generally just one axis, or even two in limited cases). As "
-"much as you may be tempted, don't use it."
+"used mainly in the editor, for coherence with the 2D engine, and for simple "
+"rotations (generally just one axis, or even two in limited cases). As much "
+"as you may be tempted, don't use it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:85
@@ -418,8 +418,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:388
 msgid ""
-"Quaternions are very useful when doing camera/path/etc. interpolations, as "
-"the result will be always correct and smooth."
+"Quaternions are useful when doing camera/path/etc. interpolations, as the "
+"result will be always correct and smooth."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:391

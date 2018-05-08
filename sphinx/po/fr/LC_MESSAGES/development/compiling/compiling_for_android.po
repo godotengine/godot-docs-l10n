@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:20
 msgid "Requirements"
-msgstr ""
+msgstr "Pré-requis"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:22
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
@@ -117,9 +117,9 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:56
 msgid ""
 "We usually try to keep the Godot Android build code up to date, but Google "
-"changes their toolchain versions very often, so if compilation fails due to "
-"wrong toolchain version, go to your NDK directory and check the current "
-"number, then set the following environment variable:"
+"changes their toolchain versions often, so if compilation fails due to wrong "
+"toolchain version, go to your NDK directory and check the current number, "
+"then set the following environment variable:"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:66
@@ -182,7 +182,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:131
-#: ../../docs/development/compiling/compiling_for_android.rst:174
+#: ../../docs/development/compiling/compiling_for_android.rst:173
 msgid "Troubleshooting"
 msgstr ""
 
@@ -207,159 +207,158 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:145
 msgid ""
-"When exporting your game, Godot opens the APK, changes a few things inside, "
-"adds your file and spits it back. It's really handy! (and required some "
-"reverse engineering of the format)."
+"When exporting your game, Godot opens the APK, changes a few things inside "
+"and adds your files."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:150
+#: ../../docs/development/compiling/compiling_for_android.rst:149
 msgid "Installing the templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:152
+#: ../../docs/development/compiling/compiling_for_android.rst:151
 msgid ""
 "The newly-compiled templates (android_debug.apk and android_release.apk) "
 "must be copied to Godot's templates folder with their respective names. The "
 "templates folder can be located in:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:156
+#: ../../docs/development/compiling/compiling_for_android.rst:155
 msgid "Windows: ``C:\\Users\\[username]\\AppData\\Roaming\\Godot\\templates``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:157
+#: ../../docs/development/compiling/compiling_for_android.rst:156
 msgid "Linux: ``/home/[username]/.local/share/godot/templates/[gd-version]/``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:158
+#: ../../docs/development/compiling/compiling_for_android.rst:157
 msgid "macOS: ``/users/[username]/.godot/templates``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:162
+#: ../../docs/development/compiling/compiling_for_android.rst:161
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your APKs as custom export templates here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:168
+#: ../../docs/development/compiling/compiling_for_android.rst:167
 msgid ""
 "You don't even need to copy them, you can just reference the resulting file "
 "in the ``bin\\`` directory of your Godot source folder, so that the next "
 "time you build you will automatically have the custom templates referenced."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:177
+#: ../../docs/development/compiling/compiling_for_android.rst:176
 msgid "Application not installed"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:179
+#: ../../docs/development/compiling/compiling_for_android.rst:178
 msgid ""
 "Android might complain the application is not correctly installed. If so, "
 "check the following:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:182
+#: ../../docs/development/compiling/compiling_for_android.rst:181
 msgid "Check that the debug keystore is properly generated."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:183
+#: ../../docs/development/compiling/compiling_for_android.rst:182
 msgid "Check that jarsigner is from JDK 6, 7 or 8."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:185
+#: ../../docs/development/compiling/compiling_for_android.rst:184
 msgid "If it still fails, open a command line and run logcat:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:191
+#: ../../docs/development/compiling/compiling_for_android.rst:190
 msgid ""
 "And check the output while the application is installed. Reason for failure "
 "should be presented there."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:194
+#: ../../docs/development/compiling/compiling_for_android.rst:193
 msgid "Seek assistance if you can't figure it out."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:197
+#: ../../docs/development/compiling/compiling_for_android.rst:196
 msgid "Application exits immediately"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:199
+#: ../../docs/development/compiling/compiling_for_android.rst:198
 msgid ""
 "If the application runs but exits immediately, there might be one of the "
 "following reasons:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:202
+#: ../../docs/development/compiling/compiling_for_android.rst:201
 msgid ""
 "Make sure to use export templates that match your editor version; if you use "
 "a new Godot version, you *have* to update the templates too."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:204
+#: ../../docs/development/compiling/compiling_for_android.rst:203
 msgid "libgodot_android.so is not in ``lib/armeabi-v7a`` or ``lib/armeabi``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:205
+#: ../../docs/development/compiling/compiling_for_android.rst:204
 msgid "Device does not support armv7 (try compiling yourself for armv6)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:206
+#: ../../docs/development/compiling/compiling_for_android.rst:205
 msgid "Device is Intel, and apk is compiled for ARM."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:208
+#: ../../docs/development/compiling/compiling_for_android.rst:207
 msgid "In any case, ``adb logcat`` should also show the cause of the error."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:211
+#: ../../docs/development/compiling/compiling_for_android.rst:210
 msgid "Compilation fails"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:213
+#: ../../docs/development/compiling/compiling_for_android.rst:212
 msgid ""
 "On Linux systems with Kernel version 4.3 or newer, compilation may fail with "
 "the error \"pthread_create failed: Resource temporarily unavailable.\""
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:216
+#: ../../docs/development/compiling/compiling_for_android.rst:215
 msgid ""
 "This is because of a change in the way Linux limits thread creation. But you "
 "can change those limits through the command line. Please read this section "
 "thoroughly before beginning."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:220
+#: ../../docs/development/compiling/compiling_for_android.rst:219
 msgid ""
 "First open a terminal, then begin compilation as usual (it may be a good "
 "idea to run a --clean first). While compiling enter the following in your "
 "terminal:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:228
+#: ../../docs/development/compiling/compiling_for_android.rst:227
 msgid ""
 "The output should list a scons process, with its PID as the first number in "
 "the output. For example the PID 1077 in the output shown below:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:236
+#: ../../docs/development/compiling/compiling_for_android.rst:235
 msgid ""
 "Now you can use another command to increase the number of processes that "
 "scons is allowed to spawn. You can check its current limits with:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:243
+#: ../../docs/development/compiling/compiling_for_android.rst:242
 msgid "You can increase those limits with the command:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:249
+#: ../../docs/development/compiling/compiling_for_android.rst:248
 msgid ""
 "Obviously you should substitute the scons PID output by top and a limits "
 "that you think suitable. These are in the form --nproc=soft:hard where soft "
 "must be lesser than or equal to hard. See the man page for more information."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:254
+#: ../../docs/development/compiling/compiling_for_android.rst:253
 msgid ""
 "If all went well, and you entered the prlimit command while scons was "
 "running, then your compilation should continue without the error."

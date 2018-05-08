@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,8 +29,8 @@ msgstr "Einführung"
 msgid ""
 "Baked lightmaps are an alternative workflow for adding indirect (or baked) "
 "lighting to a scene. Unlike the :ref:`doc_gi_probes` approach, baked "
-"lightmaps work fine on very low end PCs and mobile as they consume almost no "
-"resources in run-time."
+"lightmaps work fine on low end PCs and mobile devices as they consume almost "
+"no resources in run-time."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:12
@@ -95,9 +95,9 @@ msgstr ""
 msgid ""
 "One option is to do it from your favorite 3D app. This approach is generally "
 "not recommended but it's explained first so you know it exists. The main "
-"advantage is that, on very complex objects that you may want to re-import a "
-"lot, the texture generation process can be quite costly within Godot, so "
-"having it unwrapped before import can be faster."
+"advantage is that, on complex objects that you may want to re-import a lot, "
+"the texture generation process can be quite costly within Godot, so having "
+"it unwrapped before import can be faster."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:46
@@ -113,9 +113,9 @@ msgstr ""
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:54
 msgid ""
 "If you use external meshes on import, the size will be kept. Be wary that "
-"most unwrappers in 3D DCCs are not very quality oriented, as they are meant "
-"to work quick. You will mostly need to use seams or other techniques to "
-"create better unwrapping."
+"most unwrappers in 3D DCCs are not quality oriented, as they are meant to "
+"work quick. You will mostly need to use seams or other techniques to create "
+"better unwrapping."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:58
@@ -166,7 +166,7 @@ msgid ""
 "UVs will be generated for the first instance found. If the mesh is re-used "
 "with different scales (and the scales are wildly different, more than half "
 "or twice), this will result in inefficient lightmaps. Just don't reuse a "
-"source mesh at very different scales if you are planning to use lightmapping."
+"source mesh at different scales if you are planning to use lightmapping."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:83
@@ -291,8 +291,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:147
 msgid ""
-"**Voxel Cone**: Trace: Is the default one, it's less precise but very fast. "
-"Look similar (but slightly better) to GIProbe."
+"**Voxel Cone**: Trace: Is the default one, it's less precise but fast. Look "
+"similar (but slightly better) to GIProbe."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:148
@@ -330,8 +330,7 @@ msgstr ""
 msgid ""
 "**Bake Subdiv**: Godot lightmapper uses a grid to transfer light information "
 "around. The default value is fine and should work for most cases. Increase "
-"it in case you want better lighting on very small details or your scene is "
-"very large."
+"it in case you want better lighting on small details or your scene is large."
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:166

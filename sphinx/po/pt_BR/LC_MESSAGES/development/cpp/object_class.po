@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -241,12 +241,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:205
+#, fuzzy
 msgid ""
 "If cast fails, NULL is returned. This system uses RTTI, but it also works "
 "fine (although a bit slower) when RTTI is disabled. This is useful on "
-"platforms where a very small binary size is ideal, such as HTML5 or consoles "
+"platforms where a small binary size is ideal, such as HTML5 or consoles "
 "(with low memory footprint)."
 msgstr ""
+"Se a conversão falhar, NULL será retornado. Este sistema usa o RTTI, mas "
+"também funciona bem (embora um pouco mais lento) quando o RTTI está "
+"desativado. Isso é útil em plataformas em que um tamanho binário muito "
+"pequeno é ideal, como HTML5 ou consoles (com baixo consumo de memória)."
 
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"

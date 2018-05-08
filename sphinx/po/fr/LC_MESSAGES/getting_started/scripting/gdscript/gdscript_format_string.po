@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,10 +56,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr "Façon de procéder en GDScript"
+msgstr "Utilisation en GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-#, fuzzy
 msgid "Examine this concrete GDScript example:"
 msgstr "Examinez cet exemple concret en GDScript :"
 
@@ -85,10 +84,10 @@ msgstr ""
 "Le ``%s`` vu dans l'exemple ci-dessus est l'espace réservé le plus simple et "
 "fonctionne pour la plupart des cas d'utilisation : il convertit la valeur "
 "par la même méthode par laquelle une conversion de chaîne implicite ou "
-"``str()`la convertirait. Les chaînes restent inchangées, les booléens "
+"``str()`` la convertirait. Les chaînes restent inchangées, les booléens "
 "deviennent soit ``\"True\"`` ou ``\"False\"``, un nombre entier ou réel "
 "devient un nombre décimal, les autres types retournent généralement leurs "
-"données dans une chaîne lisible par un être humain."
+"données dans une chaîne de caractère lisible par un être humain."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:46
 msgid ""
@@ -112,9 +111,8 @@ msgstr ""
 "l'index ou le style mixte de Array."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
-#, fuzzy
 msgid "A quick example in GDScript:"
-msgstr "Un exemple rapide en GDScript :"
+msgstr "Un bref exemple en GDScript :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
@@ -138,7 +136,7 @@ msgstr ""
 "Les chaînes de formatage peuvent contenir plusieurs espaces réservés. Dans "
 "un tel cas, les valeurs sont présentées sous la forme d'un tableau, une "
 "valeur par espace réservé (sauf si vous utilisez un spécificateur de format "
-"avec ``*``, voir `dynamic padding`_) :"
+"avec ``*``, voir `rembourrage dynamique`_) :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
@@ -371,13 +369,12 @@ msgstr ""
 "remplissage doit apparaître avant le point."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
-#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
 "Le caractère ``-`` provoquera le remplissage à droite plutôt qu'à gauche, ce "
-"qui est utile pour l'alignement du texte::"
+"qui est utile pour l'alignement du texte :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
@@ -410,14 +407,13 @@ msgid "Escape sequence"
 msgstr "Séquence d'échappement"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#, fuzzy
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
 "Pour insérer un caractère littéral ``%`` dans une chaîne de formatage, il "
 "faut l'échapper pour éviter de le lire comme un caractère de remplacement. "
-"Cela se fait en doublant le caractère::"
+"Cela se fait en doublant le caractère :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"

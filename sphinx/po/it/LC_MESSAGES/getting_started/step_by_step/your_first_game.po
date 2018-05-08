@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -247,9 +247,9 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
 msgid ""
 "Using the ``export`` keyword on the first variable ``SPEED`` allows us to "
-"set its value in the Inspector. This can be very handy for values that you "
-"want to be able to adjust just like a node's built-in properties. Click on "
-"the ``Player`` node and set the speed property to ``400``."
+"set its value in the Inspector. This can be handy for values that you want "
+"to be able to adjust just like a node's built-in properties. Click on the "
+"``Player`` node and set the speed property to ``400``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
@@ -317,9 +317,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:276
 msgid ""
-"If you've never used vector math before, or just need a refresher, you can "
-"see an explanation of vector usage in Godot at :ref:`doc_vector_math`. It's "
-"good to know but won't be necessary for the rest of this tutorial."
+"If you've never used vector math before, or need a refresher, you can see an "
+"explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
+"know but won't be necessary for the rest of this tutorial."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:280
@@ -332,7 +332,7 @@ msgstr ""
 msgid ""
 "``$`` returns the node at the relative path from this node, or returns "
 "``null`` if the node is not found. Since AnimatedSprite is a child of the "
-"current node, we can just use ``$AnimatedSprite``."
+"current node, we can use ``$AnimatedSprite``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:286
@@ -915,7 +915,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid ""
-"The default font for ``Control`` nodes is very small and doesn't scale well. "
+"The default font for ``Control`` nodes is small and doesn't scale well. "
 "There is a font file included in the game assets called \"Xolonium-Regular."
 "ttf\". To use this font, do the following for each of the three ``Control`` "
 "nodes:"
@@ -927,7 +927,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid ""
-"Click on the \"DynamicFont\" you just added, and under \"Font Data\", choose "
+"Click on the \"DynamicFont\" you added, and under \"Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
@@ -1085,7 +1085,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1137
 msgid ""
-"There are a very large number of properties to choose from when configuring "
+"There are a large number of properties to choose from when configuring "
 "particles. Feel free to experiment and create different effects. For the "
 "effect in this example, use the following settings:"
 msgstr ""

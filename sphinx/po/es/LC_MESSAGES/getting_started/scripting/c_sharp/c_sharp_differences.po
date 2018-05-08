@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,7 +63,6 @@ msgid "``ERR_*`` constants were moved to ``Godot.Error``."
 msgstr "Las constantes de ``ERR_*`` fueron movidas a ``Godot.Error``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:26
-#, fuzzy
 msgid "Math"
 msgstr "Math"
 
@@ -78,7 +77,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "Random"
-msgstr "Random"
+msgstr "Aleatorio(Random)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:35
 msgid ""
@@ -103,13 +102,12 @@ msgid "Signal keyword"
 msgstr "Palabra clave signal"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:46
-#, fuzzy
 msgid ""
 "Use the ``[Signal]`` attribute instead of the GDScript ``signal`` keyword. "
 "This attribute should be used on a `delegate`, whose name signature will be "
 "used to define the signal."
 msgstr ""
-"Utilice el atributo ``[Signal]`` en lugar de la etiqueta GDScript "
+"Use el atributo ``[Signal]`` en lugar de la palabre clave GDScript "
 "``signal``. Este atributo debe ser usado en un `delegate`, cuya definición "
 "de nombre será usado para identificar la señal."
 
@@ -148,7 +146,6 @@ msgid "There are a few differences though:"
 msgstr "Sin embargo, hay algunas diferencias:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:79
-#, fuzzy
 msgid ""
 "``erase``: Strings are immutable in C#, so we cannot modify the string "
 "passed to the extension method. For this reason ``Erase`` was added as an "
@@ -185,7 +182,6 @@ msgid "Basis"
 msgstr "Basis"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:107
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#, therefore ``new "
 "Basis()`` initializes all primitive members to their default value. Use "
@@ -235,14 +231,13 @@ msgstr "get_scale()"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:116
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:133
 msgid "Scale"
-msgstr "Scale"
+msgstr "Escala"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:120
 msgid "Transform2D"
 msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:122
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#, therefore ``new "
 "Transform2D()`` initializes all primitive members to their default value. "
@@ -260,7 +255,7 @@ msgstr "get_origin()"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:131
 msgid "Origin"
-msgstr "Origin"
+msgstr "Origen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:132
 msgid "get_rotation()"
@@ -268,11 +263,11 @@ msgstr "get_rotation()"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:132
 msgid "Rotation"
-msgstr "Rotation"
+msgstr "Rotación"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:137
 msgid "Plane"
-msgstr "Plane"
+msgstr "Plano"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:144
 msgid "center()"
@@ -315,7 +310,6 @@ msgid "Quat"
 msgstr "Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:169
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#, therefore ``new "
 "Quat()`` initializes all primitive members to their default value. Please "
@@ -418,8 +412,8 @@ msgid ""
 "*This is temporary. Array is ref-counted, so it will need its own type that "
 "wraps the native side.*"
 msgstr ""
-"*Esto es temporal. Array es contado por referencia, así que necesita su "
-"propio tipo que lo encapsule en el lado nativo."
+"*Esto es temporal. El array es contado por referencia, así que necesita su "
+"propio tipo que lo encapsule en el lado nativo.*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:199
 msgid "Use ``Dictionary<object, object>``."
@@ -504,7 +498,7 @@ msgstr "inst2dict"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:230
 msgid "load"
-msgstr "load"
+msgstr "cargar"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:230
 msgid "GD.load which is the same as ResourceLoader.load"

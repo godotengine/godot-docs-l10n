@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,7 +57,6 @@ msgid "Usage in GDScript"
 msgstr "Использование в GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-#, fuzzy
 msgid "Examine this concrete GDScript example:"
 msgstr "Изучите конкретный пример на GDScript::"
 
@@ -109,7 +108,6 @@ msgstr ""
 "или массива в смешанном стиле."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
-#, fuzzy
 msgid "A quick example in GDScript:"
 msgstr "Быстрый пример на GDScript::"
 
@@ -126,7 +124,6 @@ msgid "Multiple placeholders"
 msgstr "Несколько заполнителей"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
-#, fuzzy
 msgid ""
 "Format strings may contain multiple placeholders. In such a case, the values "
 "are handed in the form of an array, one value per placeholder (unless using "
@@ -134,8 +131,7 @@ msgid ""
 msgstr ""
 "Строки формата могут содержать несколько заполнителей. В таком случае "
 "значения передаются в виде массива, по одному значению на заполнитель (если "
-"не используется спецификатор формата с ``*``, см. `динамическое "
-"заполнение`_)::"
+"не используется спецификатор формата ``*``, см. `динамическое заполнение`_)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
@@ -343,19 +339,17 @@ msgstr ""
 "используется шрифт с фиксированной шириной."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
-#, fuzzy
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
-"Чтобы отступить строку на минимальную длину, добавьте целое число в "
-"спецификатор::"
+"Чтобы заполнить строку до минимальной длины, добавьте целое число в "
+"спецификатор:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
-#, fuzzy
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
 msgstr ""
-"Если целое число начинается с ''0'', целочисленные значения заполняются "
+"Если целое число начинается с ``0``, целочисленные значения заполняются "
 "нулями вместо пробела:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
@@ -375,6 +369,8 @@ msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
+"Символ ``-`` приведет к отступу справа, а не слева, полезному для "
+"выравнивания текста справа:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
@@ -387,26 +383,31 @@ msgid ""
 "in the format specifier. The values for padding and precision are then "
 "passed when formatting:"
 msgstr ""
+"Используя символ ``*`` (*звездочка*), отступ или точность могут быть "
+"установлены без изменения формата строки. Он используется вместо целого "
+"числа в спецификаторе формата. Затем значения для отступа и точности "
+"передаются при форматировании:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
+"По-прежнему можно поместить нули в целочисленные заполнители, добавив ``0`` "
+"перед ``*``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
 msgstr "Escape-последовательность"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#, fuzzy
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
-"Чтобы вставить буквенный символ ``%``в строку формата, он должен быть "
+"Чтобы вставить литерал ``%`` в строку форматирования, он должен быть "
 "экранирован, чтобы не читать его в качестве заполнителя. Это делается путем "
-"дублирования символа::"
+"дублирования символа:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
@@ -418,7 +419,7 @@ msgid ""
 "``String.format``  method."
 msgstr ""
 "Далее следуют несколько примеров того, как использовать различные вариации "
-"метода ``String.format``"
+"метода ``String.format``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
@@ -496,7 +497,6 @@ msgid "Array"
 msgstr "Массив"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
-#, fuzzy
 msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
 "\"]])"
@@ -517,14 +517,16 @@ msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
+"Заполнители также могут быть настроены при использовании ``String.format``. "
+"Вот несколько примеров этого функционала."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "Infix (default)"
-msgstr ""
+msgstr "Infix (по умолчанию)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
-msgstr ""
+msgstr "\"Привет, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
@@ -534,19 +536,19 @@ msgstr "Привет, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Postfix"
-msgstr ""
+msgstr "Постфикс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
-msgstr ""
+msgstr "\"Привет, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Prefix"
-msgstr ""
+msgstr "Префикс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
-msgstr ""
+msgstr "\"Привет, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:271
 msgid ""

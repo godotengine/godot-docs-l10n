@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,7 +153,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:70
 msgid ""
-"There are two types of ambient light, the *Ambient Color* (which is just a "
+"There are two types of ambient light, the *Ambient Color* (which is a "
 "constant color multiplied by the material albedo), and then one obtained "
 "from the *Sky* (as described before, but a sky needs to be set as background "
 "for this to be enabled)."
@@ -172,8 +172,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:81
 msgid ""
-"Finally there is a **Energy** setting, which is just a multiplier, useful "
-"when working with HDR."
+"Finally there is a **Energy** setting, which is a multiplier, useful when "
+"working with HDR."
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:83
@@ -198,9 +198,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:93
 msgid ""
-"Fog, just as in real life, makes distant objects fade away into an uniform "
-"color. The physical effect is actually pretty complex, but Godot provides a "
-"good approximation. There are two kinds of fog in Godot:"
+"Fog, as in real life, makes distant objects fade away into an uniform color. "
+"The physical effect is actually pretty complex, but Godot provides a good "
+"approximation. There are two kinds of fog in Godot:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:95
@@ -436,7 +436,7 @@ msgstr ""
 msgid ""
 "This is why, in the image above, the effect is less noticeable under the "
 "direct light (at the left). If you want to force SSAO to work with direct "
-"light too, just use the **Light Affect** parameter (even though this is not "
+"light too, use the **Light Affect** parameter (even though this is not "
 "correct, some artists like how it looks)."
 msgstr ""
 
@@ -526,8 +526,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:221
 msgid ""
-"It is very common to use both blurs together to focus the viewer's attention "
-"on a given object:"
+"It is common to use both blurs together to focus the viewer's attention on a "
+"given object:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:227
@@ -543,8 +543,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:234
 msgid ""
-"By default, even if the effect is enabled, it will be very weak or "
-"invisible. One of two conditions need to happen for it to actually show:"
+"By default, even if the effect is enabled, it will be weak or invisible. One "
+"of two conditions need to happen for it to actually show:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:236

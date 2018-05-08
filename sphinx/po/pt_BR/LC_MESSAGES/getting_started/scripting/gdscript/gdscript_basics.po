@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,9 +132,10 @@ msgid "Example of GDScript"
 msgstr "Exemplo de GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:51
+#, fuzzy
 msgid ""
-"Some people can learn better by just taking a look at the syntax, so here's "
-"a simple example of how GDScript looks."
+"Some people can learn better by taking a look at the syntax, so here's a "
+"simple example of how GDScript looks."
 msgstr ""
 "Algumas pessoas aprendem melhor simplesmente olhando para a sintaxe, então "
 "aqui está um simples exemplo de como o GDScript é."
@@ -184,7 +185,6 @@ msgid "Keywords"
 msgstr "Palavras-chave"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
-#, fuzzy
 msgid ""
 "The following is the list of keywords supported by the language. Since "
 "keywords are reserved words (tokens), they can't be used as identifiers. "
@@ -193,7 +193,9 @@ msgid ""
 msgstr ""
 "A seguir está a lista de palavras-chaves suportadas pela linguagem. Já que "
 "as palavras-chaves são palavras reservadas (código), elas não podem ser "
-"usadas como identificadores."
+"usadas como identificadores. Operadores (como ``in``, ``not``, ``and`` ou "
+"``or``) e nomes de tipos embutidos como os listados nas seções seguintes são "
+"também palavras reservadas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:150
 msgid ""
@@ -201,6 +203,9 @@ msgid ""
 "godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
 "case you want to take a look under the hood."
 msgstr ""
+"Palavras chaves são definidas no `tokenizador da GDScript <https://github."
+"com/godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ "
+"no caso de você querer dar uma olhada nos bastidores."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:154
 msgid "Keyword"
@@ -212,7 +217,7 @@ msgstr "Descrição"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:156
 msgid "if"
-msgstr "se"
+msgstr "if"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:156
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:158
@@ -239,7 +244,7 @@ msgstr "Veja for_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 msgid "do"
-msgstr "faça"
+msgstr "do"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 msgid "Reserved for future implementation of do...while loops."
@@ -257,15 +262,15 @@ msgstr "Veja while_."
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:724
 msgid "match"
-msgstr "combina"
+msgstr "match"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 msgid "See match_."
-msgstr "Veja combina_."
+msgstr "Veja match_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 msgid "switch"
-msgstr "escolha"
+msgstr "switch"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
@@ -274,11 +279,11 @@ msgstr "Reservado para implementação futura."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 msgid "case"
-msgstr "caso"
+msgstr "case"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "break"
-msgstr "parar"
+msgstr "break"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
@@ -295,7 +300,7 @@ msgstr "Pula imediatamente a próxima iteração do laço ``for`` ou ``while``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "pass"
-msgstr "passe"
+msgstr "pass"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid ""
@@ -307,7 +312,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "return"
-msgstr "retorne"
+msgstr "return"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "Returns a value from a function."
@@ -315,7 +320,7 @@ msgstr "Retorna um valor de uma função."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "class"
-msgstr "classe"
+msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "Defines a class."
@@ -323,7 +328,7 @@ msgstr "Define uma classe."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "extends"
-msgstr "extende"
+msgstr "extends"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "Defines what class to extend with the current class."
@@ -331,7 +336,7 @@ msgstr "Define qual classe estender com a classe atual."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:186
 msgid "is"
-msgstr "é"
+msgstr "is"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:186
 msgid "Tests whether a variable extends a given class."
@@ -339,15 +344,15 @@ msgstr "Testa onde uma variável estende uma classe dada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "self"
-msgstr ""
+msgstr "self"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "Refers to current class instance."
-msgstr ""
+msgstr "Refere-se a instância atual da classe."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "tool"
-msgstr "ferramenta"
+msgstr "tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "Executes the script in the editor."
@@ -355,7 +360,7 @@ msgstr "Executa o script no editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "signal"
-msgstr "sinal"
+msgstr "signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Defines a signal."
@@ -371,7 +376,7 @@ msgstr "Define uma função."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "static"
-msgstr "estático"
+msgstr "static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "Defines a static function. Static member variables are not allowed."
@@ -416,7 +421,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid "export"
-msgstr "exporte"
+msgstr "export"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid ""
@@ -436,7 +441,7 @@ msgstr "Define funções setter e getter para uma variável."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "breakpoint"
-msgstr "ponto de parada"
+msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "Editor helper for debugger breakpoints."
@@ -444,34 +449,36 @@ msgstr "Ajudante do Editor para debugar pontos de parada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "preload"
-msgstr ""
+msgstr "preload"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Preloads a class or variable. See `Classes as resources`_."
 msgstr ""
+"Pré-carrega uma classe ou uma variável. Consulte 'Classes como recursos' _."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "yield"
-msgstr ""
+msgstr "yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "Coroutine support. See `Coroutines with yield`_."
-msgstr ""
+msgstr "Co-rotina de suporte. Consulte \" co-rotinas com o rendimento`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
-#, fuzzy
 msgid "assert"
-msgstr "Classes"
+msgstr "assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid ""
 "Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
 "`Assert keyword`_."
 msgstr ""
+"Declara uma condição, erro de logs em caso de falha. Ignorado em compilações "
+"de não-depuração. Consulte 'Afirmar a palavra-chave' _."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "remote"
-msgstr ""
+msgstr "remote"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
@@ -481,63 +488,60 @@ msgid ""
 "Networking RPC annotation. See :ref:`high-level multiplayer docs "
 "<doc_high_level_multiplayer>`."
 msgstr ""
+"Anotação de RPC de redes. Consulte: ref: 'documentos de multijogador de alto "
+"nível <doc_high_level_multiplayer>'."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "master"
-msgstr ""
+msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid "slave"
-msgstr ""
+msgstr "slave"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
 msgid "sync"
-msgstr ""
+msgstr "sync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 msgid "PI"
-msgstr ""
+msgstr "PI"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
-#, fuzzy
 msgid "PI constant."
-msgstr "Constantes"
+msgstr "A constante PI."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
 msgid "TAU"
-msgstr ""
+msgstr "TAU"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
-#, fuzzy
 msgid "TAU constant."
-msgstr "Constantes"
+msgstr "A constante TAU."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "INF"
-msgstr ""
+msgstr "INF"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "Infinity constant. Used for comparisons."
-msgstr ""
+msgstr "Constante de infinito. Usada para comparações."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "NAN"
-msgstr ""
+msgstr "NAN"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "NAN (not a number) constant. Used for comparisons."
-msgstr ""
+msgstr "Constante de NAN (não um número). Usada para comparações."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "Operators"
 msgstr "Operadores"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
-#, fuzzy
 msgid "The following is the list of supported operators and their precedence."
-msgstr ""
-"A seguir está presente a lista de operadores suportados e sua precedência "
-"(TODO, mudar quando isso foi feito para refletir os operadores do python)"
+msgstr "A seguir, está a lista de operadores suportados e sua precedência."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:241
 msgid "**Operator**"
@@ -549,7 +553,7 @@ msgstr "**Descrição**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:243
 msgid "``x[index]``"
-msgstr "``x[índice]``"
+msgstr "``x[index]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:243
 msgid "Subscription, Highest Priority"
@@ -557,7 +561,7 @@ msgstr "Inscrição, Prioridade Máxima"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:245
 msgid "``x.attribute``"
-msgstr "``x.atributo``"
+msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:245
 msgid "Attribute Reference"
@@ -621,7 +625,7 @@ msgstr "``<<`` ``>>``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:266
 msgid "Bit Shifting"
-msgstr "Shift de Bits"
+msgstr "Mudança de Bit"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:268
 msgid "``&``"
@@ -665,7 +669,7 @@ msgstr "Teste de Conteúdo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "``!`` ``not``"
-msgstr "``!`` ``não``"
+msgstr "``!`` ``not``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "Boolean NOT"
@@ -673,7 +677,7 @@ msgstr "NÃO Booleano"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "``and`` ``&&``"
-msgstr "``e`` ``&&``"
+msgstr "``and`` ``&&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Boolean AND"
@@ -681,7 +685,7 @@ msgstr "E Booleano"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
 msgid "``or`` ``||``"
-msgstr "``ou`` ``||``"
+msgstr "``or`` ``||``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
 msgid "Boolean OR"
@@ -748,9 +752,8 @@ msgid "Strings"
 msgstr "Strings"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
-#, fuzzy
 msgid "``\"\"\"Hello\"\"\"``"
-msgstr "``\"\"\"Olá, Cara\"\"\"``"
+msgstr "``\"\"\"Olá\"\"\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "Multiline string"
@@ -782,20 +785,31 @@ msgid ""
 "the beginning and end of a block of text. Note that this creates a string, "
 "therefore, it will not be stripped away when the script is compiled."
 msgstr ""
+"Comentários de várias linhas podem ser criados usando \"\"\"(três aspas em "
+"uma fileira) no início e no final de um bloco de texto. Note que isto cria "
+"uma sequência de caracteres, portanto, ele não será retirado quando o script "
+"for compilado."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:330
 msgid "Built-in types"
 msgstr "Tipos definidos por padrão"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:332
+#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
-"functions. The only exceptions are ``Array``s and ``Dictionaries``, which "
-"are passed by reference so they are shared. (Not ``PoolArray``s like "
+"functions. The only exceptions are ``Array``\\ s and ``Dictionaries``, which "
+"are passed by reference so they are shared. (Not ``PoolArray``\\ s like "
 "``PoolByteArray`` though, those are passed as values too, so consider this "
 "when deciding which to use!)"
 msgstr ""
+"Tipos definidos por padrão são alocados em pilha. Eles são passados como "
+"valores. Isso significa que uma cópia é criada em cada atribuição ou quando "
+"passadas como argumentos para funções. As únicas exceções são `` Array``s e "
+"`` Dictionaries``, que são passados por referência para serem "
+"compartilhados. (Não `` PoolArray``s como `` PoolByteArray``, porém, esses "
+"são passados como valores também, então considere isso ao decidir qual usar!)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
 msgid "Basic built-in types"
@@ -803,11 +817,13 @@ msgstr "Tipos básicos definidos por padrão"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:341
 msgid "A variable in GDScript can be assigned to several built-in types."
-msgstr "Uma variável no GDScript pode ser atribuída a vários tipos internos."
+msgstr ""
+"Uma variável no GDScript pode ser atribuída a vários tipos definidos por "
+"padrão."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:344
 msgid "null"
-msgstr "nulo"
+msgstr "null"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:346
 msgid ""
@@ -819,7 +835,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:350
 msgid "bool"
-msgstr "booleano"
+msgstr "bool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
 msgid "The Boolean data type can only contain ``true`` or ``false``."
@@ -827,7 +843,7 @@ msgstr "O tipo de dados Booleano pode conter apenas ``true`` ou ``false``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:355
 msgid "int"
-msgstr "inteiro"
+msgstr "int"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:357
 msgid ""
@@ -887,8 +903,8 @@ msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Alternatively contains an ``end`` field which is ``position+size``."
 msgstr ""
-"O tipo 2D Rectangle contém dois campos vetoriais: \"posição\" e \"tamanho\". "
-"Alternativamente contém um campo \"fim\" que é \"posição + tamanho\"."
+"O tipo 2D Rectangle contém dois campos vetoriais: \"position\" e \"size\". "
+"Alternativamente contém um campo \"end\" que é \"position+size\"."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:389
 msgid ":ref:`Vector3 <class_Vector3>`"
@@ -945,8 +961,8 @@ msgid ""
 "``position+size``."
 msgstr ""
 "Caixa delimitadora alinhada por eixo (ou caixa 3D) contém 2 campos "
-"vetoriais: \"posição\" e \"tamanho\". Alternativamente contém um campo \"fim"
-"\" que é \"posição + tamanho\"."
+"vetoriais: \"position\" e \"size\". Alternativamente contém um campo \"end\" "
+"que é \"position+size\"."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:419
 msgid ":ref:`Basis <class_Basis>`"
@@ -1021,7 +1037,7 @@ msgstr "Classe base para qualquer coisa que não seja um tipo básico."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:457
 msgid "Container built-in types"
-msgstr "Tipos Embutidos de Container"
+msgstr "Tipos contêiner definidos por padrão"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:460
 msgid ":ref:`Array <class_Array>`"
@@ -1040,13 +1056,14 @@ msgstr ""
 "podem ser negativos como em Python, para contar do final."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:476
+#, fuzzy
 msgid ""
-"GDScript arrays are allocated linearly in memory for speed. Very large "
-"arrays (more than tens of thousands of elements) may however cause memory "
+"GDScript arrays are allocated linearly in memory for speed. Large arrays "
+"(more than tens of thousands of elements) may however cause memory "
 "fragmentation. If this is a concern special types of arrays are available. "
 "These only accept a single data type. They avoid memory fragmentation and "
 "also use less memory but are atomic and tend to run slower than generic "
-"arrays. They are therefore only recommended to use for very large data sets:"
+"arrays. They are therefore only recommended to use for large data sets:"
 msgstr ""
 "Os arrays em GDSCript são alocados linearmente na memória para aumentar sua "
 "velocidade. Arrays muito grandes (mais de dezenas de milhares de elementos) "
@@ -1107,7 +1124,7 @@ msgstr ":ref:`Dictionary <class_Dictionary>`"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:494
 msgid "Associative container which contains values referenced by unique keys."
 msgstr ""
-"Container associativo que armazena valores referenciados por chaves únicas."
+"Contêiner associativo que armazena valores referenciados por chaves únicas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:507
 msgid ""
@@ -1132,7 +1149,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:530
 msgid "Data"
-msgstr "Dado"
+msgstr "Dados"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:533
 msgid "Variables"
@@ -1519,13 +1536,14 @@ msgid "Classes"
 msgstr "Classes"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
+#, fuzzy
 msgid ""
 "By default, the body of a script file is an unnamed class and it can only be "
 "referenced externally as a resource or file. Class syntax is meant to be "
-"very compact and can only contain member variables or functions. Static "
-"functions are allowed, but not static members (this is in the spirit of "
-"thread safety, since scripts can be initialized in separate threads without "
-"the user knowing). In the same way, member variables (including arrays and "
+"compact and can only contain member variables or functions. Static functions "
+"are allowed, but not static members (this is in the spirit of thread safety, "
+"since scripts can be initialized in separate threads without the user "
+"knowing). In the same way, member variables (including arrays and "
 "dictionaries) are initialized every time an instance is created."
 msgstr ""
 "Por padrão, o corpo de um arquivo de script é uma classe anônima e só pode "
@@ -1591,6 +1609,10 @@ msgid ""
 "functions with the same name in their base classes. So if you still want to "
 "call them, you can use ``.`` like the ``super`` keyword in other languages:"
 msgstr ""
+"Isso é especialmente útil porque funções de extensões de classes substituem "
+"as funções com o mesmo nome em suas classes de base. Então se você ainda "
+"quiser chamá-los, você pode usar ``.`` como a ``super`` palavra-chave em "
+"outros idiomas:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:943
 msgid "Class Constructor"
@@ -1680,7 +1702,7 @@ msgstr ""
 "podem modificar valores que influenciam como o programa funciona. Para isso, "
 "há uma sintaxe especial para exportação."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1091
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1097
 msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
@@ -1689,11 +1711,11 @@ msgstr ""
 "editor, as propriedades exportadas ainda são editáveis (veja \"ferramenta\" "
 "abaixo)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1096
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1102
 msgid "Exporting bit flags"
 msgstr "Exportando sinalizadores"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1098
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1104
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
@@ -1703,15 +1725,16 @@ msgstr ""
 "``verdadeiro``/``falso`` (boolianos) em uma propriedade. Usando a dica de "
 "exportação ``int, FLAGS``, eles podem ser configurados a partir do editor:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1107
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1113
+#, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
-"The syntax is very similar to the enumeration syntax:"
+"The syntax is similar to the enumeration syntax:"
 msgstr ""
 "Restringir os sinalizadores a uma certa quantidade de sinalizadores nomeados "
 "também é possível. A sintaxe é muito similar à de enumeração:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1115
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1121
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
@@ -1722,7 +1745,7 @@ msgstr ""
 "ser definidas em conformidade (por exemplo, ``const ELEMENT_WIND = 8`` e "
 "assim por diante)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1120
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1126
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
@@ -1730,11 +1753,11 @@ msgstr ""
 "O uso de sinalizadores exige certo conhecimento de operações bit a bit. Na "
 "dúvida, exporte variáveis boolianas."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1124
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1130
 msgid "Exporting arrays"
 msgstr "Exportando arrays"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1126
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1132
 msgid ""
 "Exporting arrays works but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -1749,11 +1772,11 @@ msgstr ""
 "exportados podem ter inicializadores, mas eles precisam ser expressões "
 "constantes."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1152
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1169
 msgid "Setters/getters"
 msgstr "Setters (setadores) /getters (coletores)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1154
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1171
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
@@ -1763,7 +1786,7 @@ msgstr ""
 "por qualquer que seja o motivo. Também pode ser desejado encapsular seu "
 "acesso de alguma forma."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1157
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1174
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
@@ -1771,7 +1794,7 @@ msgstr ""
 "Para isso, a GDScript provê uma sintaxe de *setter/getter* usando a palavra-"
 "chave ``setget``, usada diretamente depois de uma definição de variável:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1164
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -1787,11 +1810,11 @@ msgstr ""
 "``variável`` é acessada, a função *getter* (``getterfunc`` acima) deve "
 "``retornar`` o valor desejado. Abaixo temos um exemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1198
 msgid "Either of the *setter* or *getter* functions can be omitted:"
 msgstr "Qualquer uma das funções *setter* ou *getter* podem ser omitidas:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1190
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1207
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
@@ -1799,7 +1822,7 @@ msgstr ""
 "Get/Setter são úteis especialmente ao exportar variáveis ao editor em "
 "scripts de ferramentas ou plugin, para validação do input."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1193
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
 msgid ""
 "As said *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
@@ -1807,11 +1830,11 @@ msgstr ""
 "Como dito acesso *local* *não* irá iniciar o setter e getter. Aqui temos uma "
 "ilustração disso:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1208
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1225
 msgid "Tool mode"
 msgstr "Modo de Ferramenta"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1227
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
 "properties can be changed. In some cases it is desired that they do run "
@@ -1825,16 +1848,17 @@ msgstr ""
 "manualmente de fazê-lo). Para isso, a palavra ``tool`` existe e deve ser "
 "colocada no topo do arquivo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1225
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1242
 msgid "Memory management"
 msgstr "Gerenciamento de memória"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1227
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1244
+#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
-"freed when no longer in use. No garbage collector exists, just simple "
-"reference counting. By default, all classes that don't define inheritance "
-"extend **Reference**. If this is not desired, then a class must inherit :ref:"
+"freed when no longer in use. No garbage collector exists, just reference "
+"counting. By default, all classes that don't define inheritance extend "
+"**Reference**. If this is not desired, then a class must inherit :ref:"
 "`class_Object` manually and must call instance.free(). To avoid reference "
 "cycles that can't be freed, a ``weakref`` function is provided for creating "
 "weak references."
@@ -1847,11 +1871,18 @@ msgstr ""
 "free(). Para evitar ciclos de referências que não podem ser liberadas, uma "
 "função ``weakref`` é providenciada para criar fracas referências."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1237
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1252
+msgid ""
+"Alternatively, when not using references, the "
+"``is_instance_valid(instance)`` can be used to check if an object has been "
+"freed."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
 msgid "Signals"
 msgstr "Sinais"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1239
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
 msgid ""
 "It is often desired to send a notification that something happened in an "
 "instance. GDScript supports creation of built-in Godot signals. Declaring a "
@@ -1862,17 +1893,18 @@ msgstr ""
 "embutidos. Declarar um sinal em GDScript é fácil, apenas se deve utilizar a "
 "palavra `signal`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1250
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1270
+#, fuzzy
 msgid ""
-"These signals, just like regular signals, can be connected in the editor or "
-"from code. Just take the instance of a class where the signal was declared "
-"and connect it to the method of another instance:"
+"These signals can be connected in the editor or from code like regular "
+"signals. Take the instance of a class where the signal was declared and "
+"connect it to the method of another instance:"
 msgstr ""
 "Esses sinais, assim como sinais comuns, podem ser conectados dentro do "
 "editor ou por meio de código. Utilize o exemplo da instância da classe, onde "
 "o sinal foi declarado e conecte ao método de outra instância:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1266
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1286
 msgid ""
 "It is also possible to bind arguments to a signal that lacks them with your "
 "custom values:"
@@ -1880,15 +1912,16 @@ msgstr ""
 "É também, possível ligar argumentos à um sinal que os falta com seus valores "
 "personalizados:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1274
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1294
+#, fuzzy
 msgid ""
-"This is very useful when a signal from many objects is connected to a single "
+"This is useful when a signal from many objects is connected to a single "
 "callback and the sender must be identified:"
 msgstr ""
 "Isto é extremamente útil quando o sinal de vários objetos está conectado a "
 "um único retorno e o remetente precisa ser identificado:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1286
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
 msgid ""
 "Finally, emitting a custom signal is done by using the Object.emit_signal "
 "method:"
@@ -1896,12 +1929,11 @@ msgstr ""
 "Finalmente, é possível emitir um sinal personalizado por meio do método "
 "Object.emit_signal:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1297
-#, fuzzy
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
 msgid "Coroutines with yield"
-msgstr "Corrotinas e sinais"
+msgstr "Corrotinas com yield"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1299
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -1918,22 +1950,22 @@ msgstr ""
 "quer que a função retorne. Assim que retomada a execução da função suspensa, "
 "o objeto de estado se torna inválido. Aqui está um exemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1321
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1345
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1341
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1365
 msgid "Will print:"
 msgstr "Imprimirá:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1329
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1349
 msgid ""
 "It is also possible to pass values between yield() and resume(), for example:"
 msgstr ""
 "Também é possível passar valores entre yield() e resume(), por exemplo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1354
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1374
 msgid "Coroutines & signals"
 msgstr "Corrotinas e sinais"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1356
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1376
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two parameters, an object and a signal. When the signal "
@@ -1943,14 +1975,15 @@ msgstr ""
 "``yield`` pode aceitar até dois parâmetros, um objeto e um sinal. Quando um "
 "sinal é recebido, a execução irá recomeçar. Abaixo temos alguns exemplos:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1372
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1392
 msgid "Onready keyword"
 msgstr "Palavra-chave Onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1374
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1394
+#, fuzzy
 msgid ""
-"When using nodes, it's very common to desire to keep references to parts of "
-"the scene in a variable. As scenes are only warranted to be configured when "
+"When using nodes, it's common to desire to keep references to parts of the "
+"scene in a variable. As scenes are only warranted to be configured when "
 "entering the active scene tree, the sub-nodes can only be obtained when a "
 "call to Node._ready() is made."
 msgstr ""
@@ -1959,7 +1992,7 @@ msgstr ""
 "configuradas ao entrarem na árvore de cenas ativas, assim, os sub-nodes(sub-"
 "nós) só podem ser obtidos quando uma chamada à Node._Ready() é feita."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1386
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -1971,13 +2004,15 @@ msgstr ""
 "``onready``, que atrasa a inicialização da variável de um membro até que "
 "until_ready é chamado. Pode ser colocado acima do código apenas uma linha:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1396
-#, fuzzy
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1416
 msgid "Assert keyword"
-msgstr "Palavra-chave Onready"
+msgstr "Palavra-chave assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1398
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."
 msgstr ""
+"A palavra-chave ``assert`` pode ser usada para verificar as condições em "
+"compilações de depuração. Estas afirmações são ignoradas em compilações de "
+"não-depuração."

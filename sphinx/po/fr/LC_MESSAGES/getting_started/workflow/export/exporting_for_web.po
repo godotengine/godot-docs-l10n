@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,9 +19,10 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:4
 msgid "Exporting for the Web"
-msgstr ""
+msgstr "Exporter pour le Web"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
+#, fuzzy
 msgid ""
 "HTML5 export allows publishing games made in Godot Engine to the browser. "
 "This requires support for the recent technologies `WebAssembly <http://"
@@ -31,22 +32,36 @@ msgid ""
 "**iOS**, all browsers must be based on WebKit (i.e. Safari), so they will "
 "also not work."
 msgstr ""
+"L'exportation HTML5 permet de publier les jeux réalisés dans Godot Engine "
+"vers le navigateur. Cela nécessite le support des technologies récentes "
+"`WebAssembly <http://webassembly.org/>`__ et `WebGL 2.0 <https://www.khronos."
+"org/webgl/>`__ dans le navigateur de l'utilisateur. Firefox** et "
+"**Chromium** (Chrome, Opera) sont les navigateurs les plus populaires, "
+"**Safari** et **Edge** ne fonctionnent pas encore. Sur **iOS**, tous les "
+"navigateurs doivent être basés sur WebKit (ex. Safari), donc ils ne "
+"fonctionneront pas non plus."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid "Limitations"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:17
+#, fuzzy
 msgid ""
 "For security and privacy reasons, many features that work effortlessly on "
 "native platforms are more complicated on the web platform. Following is a "
 "list of limitations you should be aware of when porting a Godot game to the "
 "web."
 msgstr ""
+"Pour des raisons de sécurité et de confidentialité, de nombreuses "
+"fonctionnalités qui fonctionnent sans effort sur les plates-formes natives "
+"sont plus compliquées sur la plate-forme Web. Voici une liste de limitations "
+"dont vous devez être conscient lorsque vous portez un jeu Godot sur le web..."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:22
+#, fuzzy
 msgid "Exported ``.html`` file must not be reused"
-msgstr ""
+msgstr "Le fichier exporté ``.html`` ne doit pas être réutilisé."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
 msgid ""

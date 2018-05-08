@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 msgid "Project Setup"
-msgstr ""
+msgstr "Configuração do Projeto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -73,6 +73,9 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"Execute o Godot e crie um novo projeto. Então, baixe :download:`dodge_assets."
+"zip <files/dodge_assets.zip>` – as imagens e os sons que você usará para "
+"fazer o jogo. Descompacte esses arquivos na pasta do seu projeto."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -80,6 +83,9 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"Para este tutorial, vamos assumir que você está familiarizado com o editor. "
+"Se ainda não leu :ref:`doc_scenes_and_nodes`, faça isso agora para uma "
+"explicação de configuração de um projeto e de uso do editor."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -87,10 +93,14 @@ msgid ""
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to 480 and \"Height\" to 720."
 msgstr ""
+"Este jogo usa o modo retrato, então precisamos ajustar as dimensões da "
+"janela de jogo. Clique em Projeto -> Configurações do Projeto -> Display "
+"(Exibição) -> Window (Janela) e configure \"Width\" (\"Largura\") para 480 e "
+"\"Height\" (Altura) para 720."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the Project"
-msgstr ""
+msgstr "Organizando o Projeto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
@@ -101,10 +111,16 @@ msgid ""
 "and scripts in the root folder, referred to as ``res://``.  You can see your "
 "project folders in the FileSystem Dock in the upper left corner:"
 msgstr ""
+"Neste projeto, vamos criar três cenas independentes: ``Jogador``, ``Turba`` "
+"e ``HUD``, que combinaremos na cena ``Principal`` do jogo. Em um projeto "
+"maior, pode ser útil criar pastas para armazenar as várias cenas e seus "
+"roteiros, mas para este jogo relativamente pequeno, você pode salvar tudo na "
+"pasta raiz, referenciada como ``res://``. Você pode ver as pastas do seu "
+"projeto no painel Arquivos no canto superior esquerdo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player Scene"
-msgstr ""
+msgstr "Cena Jogador"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -112,16 +128,21 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"A primeira cena que faremos define o objeto ``Jogador``. Um dos benefícios "
+"de criar uma cena Jogador em separado é que podemos testá-la separadamente, "
+"mesmo antes de criarmos outras partes do jogo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node Structure"
-msgstr ""
+msgstr "Estrutura de nós"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:65
 msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
+"Para começar, clique no botão \"Adicionar Nó Filho\" e adicione à cena um "
+"nó :ref:`Area2D <class_Area2D>`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -130,6 +151,10 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
+"Com ``Area2D``, nós podemos detectar objetos que se sobreponham ou vão de "
+"encontro ao jogador. Mude seu nome para ``Jogador`` clicando no nome do nó. "
+"Este é o nó raiz da cena. Nós podemos inserir nós adicionais ao jogador para "
+"adicionar funcionalidades."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
 msgid ""
@@ -138,12 +163,18 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
+"Antes de adicionar filhos ao nó ``Player``, queremos ter certeza que não os "
+"moveremos nem os redimensionaremos acidentalmente ao clicar neles. Selecione "
+"o nó e clique no ícone à direita do cadeado; seu texto de dica diz \"Garanta "
+"que os filhos do objeto não sejam selecionáveis.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
+"Salve a cena: clique em Cena -> Salvar ou pressione ``Ctrl+S`` no Windows/"
+"Linux ou ``Command+S`` no Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid ""
@@ -151,10 +182,14 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
+"Para este projeto, nós adotaremos a convenção de nomes do Godot. Classes "
+"(nós) usam o estilo ``PascalCase`` (IniciaisMaiúsculas), variáveis e funções "
+"usam ``snake_case`` (minúsculas_separadas_por_sublinha), e constantes usam "
+"``ALL_CAPS`` (TODAS_MAIÚSCULAS)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
 msgid "Sprite Animation"
-msgstr ""
+msgstr "Animação por Sprites"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -167,6 +202,15 @@ msgid ""
 "click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
 "``<SpriteFrames>`` to open the \"SpriteFrames\" panel:"
 msgstr ""
+"Clique no nó ``Jogador`` e adicione um nó :ref:`AnimatedSprite "
+"<class_AnimatedSprite>` (sprite animado) como filho. O ``AnimatedSprite`` "
+"irá lidar com a aparência e as animações do nosso jogador. Note que existe "
+"um símbolo de alerta ao lado do nó. Um ``AnimatedSprite`` exige um recurso "
+"do tipo :ref:`SpriteFrames <class_SpriteFrames>` (quadros de sprite), que é "
+"uma lista das animações que ele pode mostrar. Para criar um, encontre a "
+"propriedade ``Frames`` no Inspetor e clique em \"<null>\" -> \"Novo "
+"SpriteFrames\". Em seguida, no mesmo local, clique em ``<SpriteFrames>`` "
+"para abrir o painel \"SpriteFrames\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:102
 msgid ""
@@ -176,6 +220,11 @@ msgid ""
 "``playerGrey_up[1/2]`` and ``playerGrey_walk[1/2]``, into the \"Animation "
 "Frames\" side of the panel:"
 msgstr ""
+"À esquerda, está uma lista de animações. Clique na \"default\" e a renomeie "
+"para \"direita\". Então, clique no botão \"Adicionar\" para criar uma "
+"segunda animação chamada \"cima\". Arraste as duas imagens de cada animação, "
+"chamadas ``playerGrey_up[1/2]`` e ``playerGrey_walk[1/2]`` para o lado "
+"\"Quadros da Animação\" do painel:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:109
 msgid ""
@@ -184,6 +233,10 @@ msgid ""
 "property to ``(0.5, 0.5)``. You can find it in the Inspector under the "
 "``Node2D`` heading."
 msgstr ""
+"As imagens do jogador são um tanto grandes demais para a janela de jogo, "
+"então precisamos reduzir sua escala. Clique no nó ``AnimatedSprite`` e "
+"configure a propriedade ``Scale`` para ``(0.5, 0.5)``. Você pode encontrá-la "
+"no Inspetor na seção ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:116
 msgid ""
@@ -193,20 +246,29 @@ msgid ""
 "best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
 "CapsuleShape2D\".  Resize the shape to cover the sprite:"
 msgstr ""
+"Finalmente, adicione uma :ref:`CollisionShape2D <class_CollisionShape2D>` "
+"(forma de colisão 2D) como filha de ``Jogador``. Isso determina a \"caixa de "
+"pancada\" do jogador, ou os limites da sua área de colisão. Para este "
+"personagem, um nó ``CapsuleShape2D`` (forma cápsula 2D) é o que melhor se "
+"encaixa, então ao lado de \"Shape\" (forma) no Inspetor, clique em  \"<null>"
+"\"\" -> \"Novo CapsuleShape2D\". Redimensione a forma para cobrir o sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
 msgid ""
 "Don't scale the shape's outline! Only use the size handles (circled in red) "
 "to adjust the shape!"
 msgstr ""
+"Não mude a escala do contorno da forma! Somente use os manípulos de tamanho "
+"(circulados em vermelho) para ajustar a forma!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:127
 msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr ""
+"Quando tiver finalizado, sua cena ``Jogador`` deveria se parecer assim:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:132
 msgid "Moving the Player"
-msgstr ""
+msgstr "Movendo o Jogador"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid ""
@@ -240,9 +302,9 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
 msgid ""
 "Using the ``export`` keyword on the first variable ``SPEED`` allows us to "
-"set its value in the Inspector. This can be very handy for values that you "
-"want to be able to adjust just like a node's built-in properties. Click on "
-"the ``Player`` node and set the speed property to ``400``."
+"set its value in the Inspector. This can be handy for values that you want "
+"to be able to adjust just like a node's built-in properties. Click on the "
+"``Player`` node and set the speed property to ``400``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
@@ -310,9 +372,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:276
 msgid ""
-"If you've never used vector math before, or just need a refresher, you can "
-"see an explanation of vector usage in Godot at :ref:`doc_vector_math`. It's "
-"good to know but won't be necessary for the rest of this tutorial."
+"If you've never used vector math before, or need a refresher, you can see an "
+"explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
+"know but won't be necessary for the rest of this tutorial."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:280
@@ -325,7 +387,7 @@ msgstr ""
 msgid ""
 "``$`` returns the node at the relative path from this node, or returns "
 "``null`` if the node is not found. Since AnimatedSprite is a child of the "
-"current node, we can just use ``$AnimatedSprite``."
+"current node, we can use ``$AnimatedSprite``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:286
@@ -908,7 +970,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid ""
-"The default font for ``Control`` nodes is very small and doesn't scale well. "
+"The default font for ``Control`` nodes is small and doesn't scale well. "
 "There is a font file included in the game assets called \"Xolonium-Regular."
 "ttf\". To use this font, do the following for each of the three ``Control`` "
 "nodes:"
@@ -920,7 +982,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid ""
-"Click on the \"DynamicFont\" you just added, and under \"Font Data\", choose "
+"Click on the \"DynamicFont\" you added, and under \"Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
@@ -1078,7 +1140,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1137
 msgid ""
-"There are a very large number of properties to choose from when configuring "
+"There are a large number of properties to choose from when configuring "
 "particles. Feel free to experiment and create different effects. For the "
 "effect in this example, use the following settings:"
 msgstr ""

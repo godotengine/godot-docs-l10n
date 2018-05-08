@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,16 +19,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
 msgid "Importing 3D Scenes"
-msgstr ""
+msgstr "Importation de scènes 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
 msgid "Godot Scene Importer"
-msgstr ""
+msgstr "Importeur de scènes Godot"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
 msgid ""
-"When dealing with 3D assets, Godot has a very flexible and configurable "
-"importer."
+"When dealing with 3D assets, Godot has a flexible and configurable importer."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:11
@@ -65,7 +64,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:23
 msgid "Why not FBX?"
-msgstr ""
+msgstr "Pourquoi pas FBX ?"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:25
 msgid ""
@@ -83,20 +82,20 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:33
 msgid "Exporting DAE files from Maya and 3DS Max"
-msgstr ""
+msgstr "Exportation de fichiers DAE de Maya et de 3DS Max"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:35
 msgid ""
 "Autodesk added built-in collada support to Maya and 3DS Max, but it's broken "
 "by default and should not be used. The best way to export this format is by "
 "using the `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools>`__ plugins. They work really well, although they are not "
-"always up-to date with the latest version of the software."
+"OpenCOLLADA-Tools>`__ plugins. They work well, although they are not always "
+"up-to date with the latest version of the software."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:43
 msgid "Exporting DAE files from Blender"
-msgstr ""
+msgstr "Exportation de fichiers DAE de Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:45
 msgid ""
@@ -112,7 +111,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
 msgid "Import workflows"
-msgstr ""
+msgstr "Processus d’importation"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
 msgid ""
@@ -196,7 +195,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
-msgid "Create a script that basically looks like this:"
+msgid "Create a script that like this:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
@@ -509,10 +508,11 @@ msgid "Clips"
 msgstr "Clips"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
+#, fuzzy
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
-"clips. Just specify from which frame to which frame each clip must be taken "
-"(and, of course, don't forget to specify the FPS option above)."
+"clips. Specify from which frame to which frame each clip must be taken (and, "
+"of course, don't forget to specify the FPS option above)."
 msgstr ""
 "Il est possible de spécifier plusieurs animations à partir d'une seule ligne "
 "de temps en tant que clips. Il suffit de spécifier à partir de quelle image "
@@ -524,9 +524,10 @@ msgid "Scene Inheritance"
 msgstr "Héritage de scène"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
+#, fuzzy
 msgid ""
 "In many cases, it may be desired to do modifications to the imported scene. "
-"By default, this is not really possible because if the source asset changes "
+"By default, this is not possible because if the source asset changes "
 "(source .dae,.gltf,.obj file re-exported from 3D modelling app), Godot will "
 "re-import the whole scene."
 msgstr ""
@@ -536,10 +537,11 @@ msgstr ""
 "d'une application de modélisation 3D), Godot réimporte la scène entière."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:249
+#, fuzzy
 msgid ""
 "It is possible, however, to do local modifications by using *Scene "
-"Inheritance*. Just try to open the imported scene and the following dialog "
-"will appear:"
+"Inheritance*. Try to open the imported scene and the following dialog will "
+"appear:"
 msgstr ""
 "Il est cependant possible de faire des modifications locales en utilisant "
 "l'*héritage de scène*. Essayez simplement d'ouvrir la scène importée et la "
@@ -613,8 +615,9 @@ msgid "Remove nodes (-noimp)"
 msgstr "Supprimer les nœuds (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
+#, fuzzy
 msgid ""
-"Node names that have this suffix will be removed at import time, mo matter "
+"Node names that have this suffix will be removed at import time, no matter "
 "what their type is. They will not appear in the imported scene."
 msgstr ""
 "Les noms de nœuds qui ont ce suffixe seront supprimés au moment de "

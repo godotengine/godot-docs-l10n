@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,6 @@ msgstr ""
 "轻易地被传递过来的参数替代。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
-#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
 "how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
@@ -47,15 +46,14 @@ msgid ""
 "format strings could be cumbersome."
 msgstr ""
 "举一个例子，使用``%s``作为占位符，格式化字符串``\"Hello %s, how are you?``可"
-"以很容易改为``\"Hello World, how are you?\"``。注意占位符在字符串的中间，不适"
-"用格式化字符串去修改它可能会有点麻烦。"
+"以很容易改为``\"Hello World, how are you?\"``。注意占位符在字符串的中间，如果"
+"不使用格式化字符串去修改这个字符串可能会有点麻烦。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
 msgstr "在GDScript中的用法"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-#, fuzzy
 msgid "Examine this concrete GDScript example:"
 msgstr "检查这个具体的GDScript示例："
 
@@ -100,7 +98,6 @@ msgstr ""
 "样式时，顺序才是重要的。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
-#, fuzzy
 msgid "A quick example in GDScript:"
 msgstr "一个简单的 GDScript 例子："
 
@@ -115,7 +112,6 @@ msgid "Multiple placeholders"
 msgstr "多个占位符"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
-#, fuzzy
 msgid ""
 "Format strings may contain multiple placeholders. In such a case, the values "
 "are handed in the form of an array, one value per placeholder (unless using "
@@ -299,34 +295,40 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
+"字符``.`` (点), ``*`` (星号), ``-`` (减号) and 数字 (``0``-``9``) 被用作占位"
+"符。使一列定宽字体的值在垂直方向上可以保持对齐。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
-msgstr ""
+msgstr "要使字符串满足一个最小长度，需要在标识符前添加一个整数："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
-msgstr ""
+msgstr "如果这个整数以0开头，那么整数值字符串将前置填充0，而不是空格："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
+#, fuzzy
 msgid ""
 "Precision can be specified for real numbers by adding a ``.`` (*dot*) with "
 "an integer following it. With no integer after ``.``, a precision of 0 is "
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"可以通过添加``.``（*点*）和一个整数来指定实数的精度。``.``后没整数时，精度为"
+"0，舍入为整数值。要用于填充的整数则必须出现在点之前。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
+#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
-msgstr ""
+msgstr "``-``字符向右填充，而不是向左，对于右对其的文本很有用："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
-msgstr ""
+msgstr "动态填充"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""

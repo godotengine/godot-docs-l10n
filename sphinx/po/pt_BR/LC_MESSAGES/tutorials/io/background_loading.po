@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,7 +115,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:87
 msgid "Example"
-msgstr ""
+msgstr "Exemplo"
 
 #: ../../docs/tutorials/io/background_loading.rst:89
 msgid ""
@@ -150,10 +150,10 @@ msgstr ""
 #: ../../docs/tutorials/io/background_loading.rst:134
 msgid ""
 "Note how we use ``OS.get_ticks_msec`` to control how long we block the "
-"thread. Some stages might load really fast, which means we might be able to "
-"cram more than one call to ``poll`` in one frame, some might take way more "
-"than your value for ``time_max``, so keep in mind we won't have precise "
-"control over the timings."
+"thread. Some stages might load fast, which means we might be able to cram "
+"more than one call to ``poll`` in one frame, some might take way more than "
+"your value for ``time_max``, so keep in mind we won't have precise control "
+"over the timings."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:170

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
 msgid "Project organization"
-msgstr ""
+msgstr "Organización del proyecto"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:7
 msgid "Introduction"
@@ -33,34 +33,48 @@ msgid ""
 "engine can be a little challenging. Because of this, a simple workflow will "
 "be described, which can be used or not, but should work as a starting point."
 msgstr ""
+"Este tutorial está apuntado a proponer un flujo de trabajo simple para "
+"organizar proyectos. Como Godot permite que el programador utilice el "
+"sistema de archivos como lo desee, encontrar un modo de organizar proyectos "
+"cuando se comienza a usar el motor puede ser un desafío. A raíz de esto, un "
+"modo de trabajo simple será descripto, el que puede ser usado o no, pero "
+"servirá como punto de partida."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
 msgid ""
 "Additionally, using version control can be challenging so this proposition "
 "will include that too."
 msgstr ""
+"Adicionalmente, usando control deversiones puede ser otro desafío así que "
+"esta propuesta incluirá eso también."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid "Organization"
-msgstr ""
+msgstr "Organización"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
 msgid ""
 "Godot is scene based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
+"Godot es basado en escenas por naturaleza, y usa el sistema de archivos como "
+"tal, sin metadatos o una base de datos de recursos."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:25
 msgid ""
 "Unlike other engines, a lot of resource are contained within the scene "
 "itself, so the amount of files in the filesystem is considerably lower."
 msgstr ""
+"A diferencia de otros motores, muchos recursos son contenidos en la escena "
+"misma, así que la cantidad de archivos es considerablemente menor."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:28
 msgid ""
 "Considering that, the most common approach is to group assets close to "
 "scenes as, when a project grows, it makes it more maintainable."
 msgstr ""
+"Considerando eso, el enfoque más común es agrupar los recursos cerca de las "
+"escenas así, cuando el proyecto crece, se hace más manejable."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:31
 msgid ""
@@ -68,26 +82,38 @@ msgid ""
 "can usually be organized in a place, while a separate folder is used to "
 "store built levels that use them."
 msgstr ""
+"Un ejemplo, imágenes basadas en sprites, modelos de escenas 3D o mallas, "
+"materiales, etcétera, pueden usualmente organizarse en un lugar, mientras "
+"una carpeta separada es utilizada para construir los niveles que las usan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid "Importing"
-msgstr ""
+msgstr "Importando"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
+#, fuzzy
 msgid ""
 "Godot version previous to 3.0 did the import process from files outside the "
-"project. While this can be useful in very large projects, it resulted in an "
+"project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
+"Versiones de Godot anteriores a 3.0 hacían el proceso de importación de "
+"archivos desde fuera del proyecto. Mientras que esto puede ser útil en "
+"proyectos muy grandes, resultaba en una organización engorrosa para la "
+"mayoría de los desarrolladores."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
 "Because of this, assets are now imported from within the project folder "
 "transparently."
 msgstr ""
+"A razón de esto, los recursos ahora son importados desde dentro de la "
+"carpeta del proyecto, transparentemente."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:61
 msgid ""
 "If a folder shouldn't be imported into Godot an exception can be made with "
 "a .gdignore file."
 msgstr ""
+"Si no se quiere que una carpeta sea importada in Godot, se puede hacer una "
+"excepción con un archivo .gdignore ."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -290,7 +290,7 @@ msgid ""
 "and look at the health value? Accessing nodes this way creates tight "
 "coupling between them. If you did it sparingly it may work. As your game "
 "grows bigger, you may have many more connections. If you get nodes this way "
-"it gets very complex quickly. Not only that: you need to listen to the state "
+"it gets complex quickly. Not only that: you need to listen to the state "
 "change constantly in the ``_process`` function. This check happens 60 times "
 "a second and you'll likely break the game because of the order in which the "
 "code runs."
@@ -332,8 +332,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
 msgid ""
-"``died`` is emitted when the character just died. We will use it in a moment "
-"to hide the UI."
+"``died`` is emitted when the character died. We will use it in a moment to "
+"hide the UI."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:228
@@ -434,8 +434,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
-"The name makes it very clear for our future selves and teammates that when "
-"the player took damage, we update the health count on the GUI"
+"The name makes it clear for our future selves and teammates that when the "
+"player took damage, we update the health count on the GUI"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
@@ -597,7 +597,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 msgid ""
-"Although we could animate the `health` property on the `Player`, we really "
+"Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
 "it a lot easier to manage their state, like to know when one died. You "
 "always want to store animations in a separate data container or node. The "
@@ -664,8 +664,8 @@ msgid ""
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
 "updates the animation and the ``number_label`` and ``bar`` follow in "
 "``_process``. The animated life bar that shows the health going down "
-"gradually is just a trick. It makes the GUI feel alive. If the ``Player`` "
-"takes 3 damage, it happens in an instant."
+"gradually is a trick. It makes the GUI feel alive. If the ``Player`` takes 3 "
+"damage, it happens in an instant."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:570
@@ -683,9 +683,9 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:577
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
-"know when it just died. Press :kbd:`F1` to jump back to the 2D Workspace. "
-"Select the ``Player`` node in the Scene dock and click on the Node tab next "
-"to the Inspector."
+"know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
+"the ``Player`` node in the Scene dock and click on the Node tab next to the "
+"Inspector."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:582

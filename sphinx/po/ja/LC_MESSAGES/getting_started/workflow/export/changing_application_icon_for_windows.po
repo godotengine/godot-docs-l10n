@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
+msgid "Changing application icon for windows"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
+msgid ""
+"By default, the exported game icon will be the Godot icon. Most likely you "
+"will want to change that for your game. There are two types of icons that "
+"can be changed: the file icon and the taskbar icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:9
+msgid "Changing the taskbar icon"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
+msgid ""
+"The taskbar icon is the icon that shows up on the taskbar when your game is "
+"running."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:15
+msgid ""
+"To change the taskbar icon, go to Project>Project "
+"Settings>Application>Config>Icon. Click on the folder icon and select your "
+"desired icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:17
+msgid "This is also the icon that gets displayed in the Godot project list."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
+msgid "Changing the file icon"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:24
+msgid ""
+"The file icon is the icon of the executable that you click on to start the "
+"game."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:28
+msgid ""
+"Before selecting it in the export options, you will need to install an extra "
+"tool called **rcedit**. You can download it here: https://github.com/"
+"electron/rcedit/releases"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:32
+msgid ""
+"After downloading, you need to tell Godot the path to the **rcedit** "
+"executable on your computer. Go to Editor>Editor Settings>Export>Windows. "
+"Click on the folder icon for the **rcedit** entry. Navigate to and select "
+"the **rcedit** executable."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:34
+msgid ""
+"For Linux users, you will also need to install wine in order to use rcedit. "
+"For more information, check https://www.winehq.org/"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
+msgid ""
+"Now you have everything ready for changing the file icon. To do that, you "
+"will need to specify the icon when exporting. Go to Project>Export. Assuming "
+"you have a windows desktop preset ready, in the options, under Application, "
+"you will find Icon, select your desired image in ICO format as your file "
+"icon."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:40
+msgid ""
+"To export an ICO image, you can use GIMP. For more details, please refer to "
+"this tutorial: http://skyboygames.com/easily-create-a-windows-app-icon-with-"
+"gimp/"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:42
+msgid "Check the documentation for more info about exporting."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
+msgid "Testing the result"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:50
+msgid ""
+"You can now export the game and see whether you have change the icons "
+"successfully or not. If everything works fine, you will see this."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:56
+msgid "Icon (ICO) file requirements"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:58
+msgid ""
+"Regardless of which program you use to create your ICO file, there are some "
+"requirements to ensure the icon (and your executable) works on Windows."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:60
+msgid ""
+"This is a bit tricky, as can be seen in the following StackOverflow threads: "
+"`one <https://stackoverflow.com/questions/3236115/which-icon-sizes-should-my-"
+"windows-applications-icon-include>`__, `two <https://stackoverflow.com/"
+"questions/40749785/windows-10-all-icon-resolutions-on-all-dpi-settings-"
+"format-pixel-art-as-icon>`__."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
+msgid ""
+"Your ICO file should at least contain icons in the following resolutions: "
+"16x16, 48x48 and 256x256. They should also be uncompressed. The 256x256 icon "
+"*can* be compressed, but this breaks backwards compatibility with Windows XP."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:65
+msgid ""
+"If you want to fully support high-DPI screens, this is the full list of "
+"supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
+"48, 56, 60, 63, 84 and one larger than 255px. (I.e. 256 or 512 or 1024)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:68
+msgid ""
+"Note that for high-DPI compression may be used, also they should be using "
+"24bpp mode in contrast to the lower resolutions."
+msgstr ""

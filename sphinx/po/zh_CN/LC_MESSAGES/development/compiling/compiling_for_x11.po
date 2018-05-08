@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,59 +73,64 @@ msgid "OpenSSL (for HTTPS and TLS)"
 msgstr "OpenSSL (用于 HTTPS 和 TLS 功能的实现)"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:24
-msgid "libudev (optional, build with `udev=yes`)"
+#, fuzzy
+msgid "*Optional* - libudev (build with ``udev=yes``)"
 msgstr "libudev (可选的, 使用构建参数 `udev=yes` 时需要)"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:27
+#: ../../docs/development/compiling/compiling_for_x11.rst:25
+msgid "*Optional* - yasm (for WebM SIMD optimizations)"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:28
 msgid "Distro-specific oneliners"
 msgstr "各个发型版的安装指令"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:29
+#: ../../docs/development/compiling/compiling_for_x11.rst:30
 msgid "**Arch**"
 msgstr "**Arch**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:33
+#: ../../docs/development/compiling/compiling_for_x11.rst:34
 msgid "**Debian** / **Ubuntu**"
 msgstr "**Debian** / **Ubuntu**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:39
+#: ../../docs/development/compiling/compiling_for_x11.rst:40
 msgid "**Fedora**"
 msgstr "**Fedora**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:45
+#: ../../docs/development/compiling/compiling_for_x11.rst:46
 msgid "**FreeBSD**"
 msgstr "**FreeBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:50
+#: ../../docs/development/compiling/compiling_for_x11.rst:51
 msgid "**Gentoo**"
 msgstr "**Gentoo**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:55
+#: ../../docs/development/compiling/compiling_for_x11.rst:56
 msgid "**Mageia**"
 msgstr "**Mageia**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:61
+#: ../../docs/development/compiling/compiling_for_x11.rst:62
 msgid "**OpenBSD**"
 msgstr "**OpenBSD**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:65
+#: ../../docs/development/compiling/compiling_for_x11.rst:66
 msgid "**openSUSE**"
 msgstr "**openSUSE**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:71
+#: ../../docs/development/compiling/compiling_for_x11.rst:72
 msgid "**Solus**"
 msgstr "**Solus**"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:78
+#: ../../docs/development/compiling/compiling_for_x11.rst:79
 msgid "Compiling"
 msgstr "开始编译"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:80
+#: ../../docs/development/compiling/compiling_for_x11.rst:81
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr "启动终端，然后进入引擎源代码的根目录。键入下面的指令："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:86
+#: ../../docs/development/compiling/compiling_for_x11.rst:87
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the \"bin"
 "\" subdirectory. This executable file contains the whole engine and runs "
@@ -134,37 +139,37 @@ msgstr ""
 "如果一切顺利，编译结果将存放在 ``bin`` 目录下。 这个可执行文件包含了整个引"
 "擎，无需任何依赖项。 执行它将会启动项目管理器。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:93
+#: ../../docs/development/compiling/compiling_for_x11.rst:94
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr "如果你希望使用 Clang 而不是 GCC 编译器， 可以使用这个命令："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:99
+#: ../../docs/development/compiling/compiling_for_x11.rst:100
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
 msgstr ""
 "在 OpenBSD 平台上必须使用 Clang，否则在构建字体相关的依赖时会遇到一些麻烦。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:103
+#: ../../docs/development/compiling/compiling_for_x11.rst:104
 msgid "Building export templates"
 msgstr "构建导出模板"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:105
+#: ../../docs/development/compiling/compiling_for_x11.rst:106
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr ""
 "要构建 X11 （Linux，\\*BSD）平台的导出模板， 执行构建系统时需要带上这些参数："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:108
+#: ../../docs/development/compiling/compiling_for_x11.rst:109
 msgid "(32 bits)"
 msgstr "（ 32 位 ）"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:115
+#: ../../docs/development/compiling/compiling_for_x11.rst:116
 msgid "(64 bits)"
 msgstr "( 64 位 )"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:122
+#: ../../docs/development/compiling/compiling_for_x11.rst:123
 msgid ""
 "Note that cross compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -172,12 +177,12 @@ msgstr ""
 "请注意，跨CPU位数( 64/32)编译不总是这样直截了当，这可能还需要你通过 "
 "``chroot`` 切换编译环境。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:125
+#: ../../docs/development/compiling/compiling_for_x11.rst:126
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr "要创建导出模板，需要你手动把编译出来的二进制文件拷贝到这里："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:131
+#: ../../docs/development/compiling/compiling_for_x11.rst:132
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
@@ -185,7 +190,7 @@ msgstr ""
 "并且还需要将文件命名成这样（在 Godot 中， \\*BSD 平台也被视为 \"Linux "
 "X11\"）："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:140
+#: ../../docs/development/compiling/compiling_for_x11.rst:141
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -194,7 +199,7 @@ msgstr ""
 "此外，如果你正在开发自定义模块或修改引擎的其他 C++ 代码，则可以在此处将你编译"
 "好的二进制文件配置为自定义导出模板："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:146
+#: ../../docs/development/compiling/compiling_for_x11.rst:147
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the bin/ directory of your Godot source folder, so the next time you "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,8 +27,8 @@ msgstr "Introducción"
 
 #: ../../docs/tutorials/shading/shading_language.rst:9
 msgid ""
-"Godot uses a shading language very similar to GLSL ES 3.0. Most datatypes "
-"and functions are supported, and the few remaining ones will likely be added "
+"Godot uses a shading language similar to GLSL ES 3.0. Most datatypes and "
+"functions are supported, and the few remaining ones will likely be added "
 "over time."
 msgstr ""
 
@@ -402,9 +402,9 @@ msgid ""
 "Keep in mind that some architectures (mainly mobile) benefit a lot from "
 "this, but are also restricted (conversion between precisions has a cost). "
 "Please read the relevant documentation on the target architecture to find "
-"out more. In all honesty though, mobile drivers are really buggy so just "
-"stay out of trouble and make simple shaders without specifying precision "
-"unless you *really* need to."
+"out more. In all honesty though, mobile drivers are buggy so to stay out of "
+"trouble make simple shaders without specifying precision unless you *really* "
+"need to."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:189
@@ -575,7 +575,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:222
 msgid "Flow Control"
-msgstr ""
+msgstr "Control de Flujo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:224
 msgid "Godot Shading language supports the most common types of flow control:"
@@ -853,6 +853,9 @@ msgid ""
 "GLSL ES 3.0. When vec_type (float), vec_int_type, vec_uint_type, "
 "vec_bool_type nomenclature is used, it can be scalar or vector."
 msgstr ""
+"Se soporta un gran número de funciones propias de GLSL ES 3.0. Cuando se "
+"utiliza la nomenclatura vec_type (float), vec_int_type, vec_uint_type, "
+"vec_bool_type, puede ser scalar o vector."
 
 #: ../../docs/tutorials/shading/shading_language.rst:460
 msgid "Function"
@@ -1796,7 +1799,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1040
 #: ../../docs/tutorials/shading/shading_language.rst:1098
 msgid "Built-In"
-msgstr ""
+msgstr "Funciones propias"
 
 #: ../../docs/tutorials/shading/shading_language.rst:714
 msgid "out mat4 **WORLD_MATRIX**"

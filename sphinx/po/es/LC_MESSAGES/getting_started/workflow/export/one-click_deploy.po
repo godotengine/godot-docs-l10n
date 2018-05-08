@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
-msgstr ""
+msgstr "Despliegue con un solo clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
 msgid "Sounds good, what is it?"
-msgstr ""
+msgstr "Suena bien, ¿qué es?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""
@@ -33,6 +33,12 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, kitty ate "
 "the USB cable, etc.), it's good to let the user know that it exists."
 msgstr ""
+"Esta característica aparecerá automáticamente una vez que una nueva "
+"plataforma sea configurada correctamente y que un dispositivo soportado esté "
+"conectado al computador. Ya que las cosas pueden fallar en muchos niveles "
+"(La plataforma no se ha configurado correctamente, el SDK pudo haberse "
+"instalado con errores, el dispositivo puede estar mal configurado, el gatito "
+"se comió el cable USB, etc), es bueno dejar que el usuario sepa que existe."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:16
 msgid ""
@@ -42,29 +48,39 @@ msgid ""
 "the device. This feature is called, in industry buzz-words, \"One Click "
 "Deploy\" (though, it's technically two clicks...)."
 msgstr ""
+"Algunas plataformas (en el momento de escribir este artículo, sólo Android y "
+"Blackberry 10) pueden detectar cuándo un dispositivo USB está conectado a la "
+"computadora y ofrecer al usuario la posibilidad de exportar, instalar y "
+"ejecutar automáticamente el proyecto (en modo depuración) en el dispositivo. "
+"Esta característica se llama, en palabras de moda de la industria, "
+"\"Despliegue con un solo clic\" (o \"One Click Deploy\", aunque, "
+"técnicamente son dos clics...)."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Steps for one-click deploy"
-msgstr ""
+msgstr "Pasos para el despliegue con un solo clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:25
 msgid "Configure target platform."
-msgstr ""
+msgstr "Configura la plataforma de destino."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
 msgid ""
 "Configure device (make sure it's in developer mode, likes the computer, usb "
 "is recognized, usb cable is plugged, etc.)."
 msgstr ""
+"Configure el dispositivo (asegúrese de que está en modo desarrollador, como "
+"si fuera una computadora, USB es reconocido, el cable USB está conectado, "
+"etc.)."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:28
 msgid "Connect the device.."
-msgstr ""
+msgstr "Conecta el dispositivo..."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
 msgid "And voila!"
-msgstr ""
+msgstr "Y listo!"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:33
 msgid "Click once.. and deploy!"
-msgstr ""
+msgstr "Haga clic una vez... y despliegue!"

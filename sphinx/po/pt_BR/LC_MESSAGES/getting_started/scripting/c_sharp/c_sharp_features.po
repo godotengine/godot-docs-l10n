@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,29 +26,36 @@ msgid ""
 "This page provides an overview over the commonly used features of both C# "
 "and Godot and how they are used together."
 msgstr ""
+"Esta página fornece uma visão geral sobre os recursos comumente usados no C# "
+"e no Godot e como eles são usados juntos."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
 msgid "Type Conversion and Casting"
-msgstr ""
+msgstr "Conversão de Tipos e Casting"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
 msgid ""
 "C# is a statically typed language. Therefore you can't do the following:"
 msgstr ""
+"C# é uma linguagem estaticamente tipada. Portanto, você não pode fazer o "
+"seguinte:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:19
 msgid ""
 "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly "
 "convert it to the desired derived type, ``Sprite`` in this case."
 msgstr ""
+"O método ``GetNode()`` retorna uma instância do ``Node``. Você deve "
+"explicitamente converter para o tipo derivado desejado, ``Sprite`` neste "
+"caso."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:22
 msgid "For this, you have various options in C#."
-msgstr ""
+msgstr "Para isso, você tem várias opções em C#."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:24
 msgid "**Casting and Type Checking**"
-msgstr ""
+msgstr "**Casting e Verificação de Tipo**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
 msgid ""
@@ -56,20 +63,25 @@ msgid ""
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
 "sure it won't fail."
 msgstr ""
+"Lança ``InvalidCastException`` se o nó retornado não puder ser convertido em "
+"Sprite. Você o usaria em vez do operador ``as`` se tiver certeza de que não "
+"falhará."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:34
 msgid "**Using the AS operator**"
-msgstr ""
+msgstr "**Usando o operador AS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid ""
 "The ``as`` operator returns null if the node cannot be casted to Sprite, and "
 "for this reason it cannot be used with value types."
 msgstr ""
+"O operador ``as`` retorna nulo se o nó não pode ser fundido para Sprite e "
+"por esta razão não pode ser usado com tipos de valor."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:45
 msgid "**Type checking using the IS operator**"
-msgstr ""
+msgstr "**Verificação de tipo usando o operador IS**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid ""
@@ -77,12 +89,18 @@ msgid ""
 "operator. The ``is`` operator returns false if the node cannot be casted to "
 "Sprite, otherwise it returns true."
 msgstr ""
+"Para verificar se o nó pode ser fundido para Sprite, você pode usar o "
+"operador ``is``. O operador ``is`` retorna falso se o nó não pode ser "
+"fundido para Sprite, caso contrário, ele retorna verdadeiro."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:58
 msgid ""
 "For more advanced type checking, you can look into `Pattern Matching "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
+"Para uma verificação de tipos mais avançada, você pode procurar em "
+"`Correspondência de Padrões <https://docs.microsoft.com/en-us/dotnet/csharp/"
+"pattern-matching>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:63
 msgid "C# Signals"
@@ -93,34 +111,44 @@ msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
+"Para um exemplo completo de C#, veja a seção **Manipulando um sinal** no "
+"tutorial passo a passo: ref: `doc_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:67
 msgid ""
 "Declaring a signal in C# is done with the ``[Signal]`` attribute on a "
 "delegate."
 msgstr ""
+"A declaração de um sinal em C# é feito com o atributo ``[Signal]`` em um "
+"delegate."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:77
 msgid ""
 "These signals can then be connected either in the editor or from code with "
 "``Connect``."
 msgstr ""
+"Estes sinais podem então ser conectados no editor ou no código com o "
+"``Connect``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:97
 msgid "Emitting signals is done with the ``EmitSignal`` method."
-msgstr ""
+msgstr "A emissão de sinais é feita com o método ``EmitSignal``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:107
 msgid ""
 "Notice that you can always reference a signal name with the ``nameof`` "
 "keyword (applied on the delegate itself)."
 msgstr ""
+"Observe que você sempre pode referenciar um nome de sinal com a palavra-"
+"chave ``nameof`` (aplicada no próprio delegate)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:109
 msgid ""
 "It is possible to bind values when establishing a connection by passing an "
 "object array."
 msgstr ""
+"É possível vincular valores ao estabelecer uma conexão passando um objeto "
+"array."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:129
 msgid ""
@@ -131,6 +159,13 @@ msgid ""
 "compatible automatically but custom data objects will need to extend from "
 "`Godot.Object` or one of its subclasses."
 msgstr ""
+"Os sinais suportam parâmetros e valores vinculados de todos os `tipos "
+"incorporados <https://docs.microsoft.com/en-us/dotnet/csharp/language-"
+"reference/keywords/built-in-types-table>`_ e Classes derivadas de: ref: "
+"`Godot.Object <class_Object>`. Consequentemente, qualquer ``Node`` ou "
+"``Reference`` será compatível automaticamente, mas os objetos de dados "
+"personalizados precisarão ser estendidos de `Godot.Object` ou de uma de suas "
+"subclasses."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:141
 msgid ""
@@ -138,3 +173,6 @@ msgid ""
 "that it should be executed before any use of said signals (with ``Connect`` "
 "or ``EmitSignal``)."
 msgstr ""
+"Finalmente, os sinais podem ser criados chamando ``AddUserSignal``, mas "
+"esteja ciente de que ele deve ser executado antes de qualquer uso de tais "
+"sinais (com ``Connect`` ou ``EmitSignal``)."
