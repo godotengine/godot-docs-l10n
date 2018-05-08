@@ -3,7 +3,10 @@
 # Defines
 SOURCE_DIR="docs"
 SPHINX_TEMPLATES_DIR="sphinx/templates"
-SPHINX_TEMPLATES=$(find $SPHINX_TEMPLATES_DIR -type f -name "*.pot")
+# This variant comes ordered alphabetically instead of following the TOC, not nice for translators
+#SPHINX_TEMPLATES=$(find $SPHINX_TEMPLATES_DIR -type f -name "*.pot")
+# This one is manually maintained, see --templates-list switch
+SPHINX_TEMPLATES=$(sed -e 's@^@'$SPHINX_TEMPLATES_DIR'/@' templates_list.txt)
 SPHINX_PO_DIR="sphinx/po"
 
 WEBLATE_DIR="weblate"
@@ -14,6 +17,7 @@ WEBLATE_POFILES=$(find $WEBLATE_DIR -type f -name "*.po")
 LANGS="es fr zh_CN"
 
 # Options
+make_templates_list=false
 update_sphinx_pot=false
 update_sphinx_po=false
 update_weblate_pot=false
@@ -23,6 +27,9 @@ add_langs=false
 # Command line arguments
 while [ $# -gt 0 ]; do
   case "$1" in
+    --templates-list|-tl)
+      make_templates_list=true
+      ;;
     --sphinx-pot|-st)
       update_sphinx_pot=true
       ;;
@@ -58,6 +65,22 @@ while [ $# -gt 0 ]; do
   shift
 done
 
+# Make ordered list of Sphinx templates based on table of contents in index.html
+# This requires having run `make html` in the docs repo and copied the main
+# `index.html` over next to this script.
+if [ "$make_templates_list" = true ]; then
+  echo "=== Making ordered list of Sphinx templates based on table of contents ==="
+  if [ ! -f "index.html" ]; then
+    echo "Main 'index.html' file is missing, build it with 'make docs' and copy it here."
+    exit 1
+  fi
+  # The strings we are interested in are of the form:
+  # <li class="toctree-l1"><a class="reference internal" href="about/index.html">About</a><ul>
+  toc=$(grep "<li class=\"toctree-.*href=\".*.html\">.*" index.html)
+  templates=$(echo "$toc" | sed -e 's@^.*href="\(.*\)\.html".*@\1.pot@' | awk '!x[$0]++')
+  echo -e "index.pot\n$templates" > templates_list.txt
+fi
+
 # Generate/Update Sphinx template from rst files
 if [ "$update_sphinx_pot" = true ]; then
   echo "=== Updating Sphinx templates from source rst files ==="
@@ -71,6 +94,7 @@ if [ "$update_weblate_pot" = true ]; then
   echo "=== Updating Weblate monolithic template from Sphinx templates ==="
   if [ ! -d "$SPHINX_TEMPLATES_DIR" ]; then
     echo "Sphinx templates are missing, please run with --sphinx-pot."
+    exit 1
   fi
   if [ ! -d "$WEBLATE_DIR" ]; then
     mkdir $WEBLATE_DIR
