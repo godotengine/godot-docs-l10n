@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,7 +195,7 @@ msgid "Adding reloading to the weapons"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:191
-msgid "Now that we can run our weapons out of ammo, we really need a way to fill them back up. Let's add reloading next!"
+msgid "Now that we can run our weapons out of ammo, we need a way to fill them back up. Let's add reloading next!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:193
@@ -259,7 +259,7 @@ msgid "These variables are exactly the same as the pistol, just with ``RELOADING
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:270
-msgid "Now we just need to add ``reload_weapon`` to ``Weapon_Rifle.gd``:"
+msgid "Now we need to add ``reload_weapon`` to ``Weapon_Rifle.gd``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:299
@@ -275,11 +275,11 @@ msgid "Since we both cannot reload or refill a knife, we set both constants to `
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:315
-msgid "Now we just need to add ``reloading_weapon``, and thankfully it's really simple:"
+msgid "Now we need to add ``reloading_weapon``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:322
-msgid "Since we cannot reload a knife, we just always return ``false``."
+msgid "Since we cannot reload a knife, we always return ``false``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:325
@@ -287,7 +287,7 @@ msgid "Adding reloading to the player"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:327
-msgid "Now we just need to add a few things to ``Player.gd``. First we need to define a new global variable:"
+msgid "Now we need to add a few things to ``Player.gd``. First we need to define a new global variable:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:333
@@ -480,7 +480,7 @@ msgid "With that done, let's open up ``Player.gd`` again. First we need to load 
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:587
-msgid "Now we just need to instance the simple audio player when we need it, and then call its ``play_sound`` function and pass the name of the sound we want to play. To make the process simpler, let's create a ``create_sound`` function:"
+msgid "Now we need to instance the simple audio player when we need it, and then call its ``play_sound`` function and pass the name of the sound we want to play. To make the process simpler, let's create a ``create_sound`` function:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:599
@@ -496,7 +496,7 @@ msgid "The second line gets the scene root, using one large assumption. We first
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:612
-msgid "If this doesn't make sense to you, don't worry too much about it. The second line of code only doesn't work reliably if you have multiple scenes loaded as children to the root node at a time, which will rarely happen for most projects. This is really only potentially a issue depending on how you handle scene loading."
+msgid "If this doesn't make sense to you, don't worry too much about it. The second line of code only doesn't work reliably if you have multiple scenes loaded as children to the root node at a time, which will rarely happen for most projects. This is only potentially a issue depending on how you handle scene loading."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:616
@@ -525,7 +525,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:636
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:658
-msgid "To make a sound when we reload, we just need to add the following right under ``player_node.animation_manager.set_animation(RELOADING_ANIM_NAME)`` in the ``reload_weapon`` function:"
+msgid "To make a sound when we reload, we need to add the following right under ``player_node.animation_manager.set_animation(RELOADING_ANIM_NAME)`` in the ``reload_weapon`` function:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:643
@@ -558,7 +558,7 @@ msgid "At this point we have all of the basics of a FPS working. There's still a
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:677
-msgid "For example, right now we have no way to add ammo to our spares, so we'll eventually run out. Also, we don't really have anything to shoot at outside of the :ref:`RigidBody <class_RigidBody>` nodes."
+msgid "For example, right now we have no way to add ammo to our spares, so we'll eventually run out. Also, we don't have anything to shoot at outside of the :ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:680

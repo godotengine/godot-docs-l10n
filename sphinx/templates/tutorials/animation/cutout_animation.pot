@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "With the advent of the digital age, this technique became possible using 
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:23
-msgid "In video games, this technique also become very popular. Examples of this are `Paper Mario <http://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman Origins <http://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
+msgid "In video games, this technique has also become popular. Examples of this are `Paper Mario <http://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman Origins <http://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:29
@@ -49,7 +49,7 @@ msgid "**The animation system is fully integrated with the engine**: This means,
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:39
-msgid "**Mix with Traditional**: AnimatedSprite allows traditional animation to be mixed, very useful for complex objects, such as shape of hands and foot, changing facial expression, etc."
+msgid "**Mix with Traditional**: AnimatedSprite allows traditional animation to be mixed, useful for complex objects, such as shape of hands and foot, changing facial expression, etc."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:42
@@ -101,7 +101,7 @@ msgid "Next will be the torso. The torso needs to be a child of the hip, so crea
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:83
-msgid "This looks good. Let's see if our hierarchy works as a skeleton by rotating the torso. We can do this be pressing ``E`` to enter rotate mode, and dragging with the left mouse button. To exit rotate mode just hit ``ESC``."
+msgid "This looks good. Let's see if our hierarchy works as a skeleton by rotating the torso. We can do this be pressing ``E`` to enter rotate mode, and dragging with the left mouse button. To exit rotate mode hit ``ESC``."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:89
@@ -133,258 +133,254 @@ msgid "This seems easy, so continue with the left arm. The rest should be simple
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:124
-msgid "Right. Remember your tutorials, Luke. In 2D, parent nodes appear below children nodes. Well, this sucks. It seems Godot does not support cutout rigs after all. Come back next year, maybe for 3.0.. no wait. Just Kidding! It works just fine."
+msgid "Right. In 2D, parent nodes appear below children nodes. Well, this sucks. But how can this problem be solved? We want the left arm to appear behind the hip and the torso. For this, we can move the nodes behind the hip (note that you can bypass this by setting the Node2D Z property, but then you won't learn about all this!):"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:129
-msgid "But how can this problem be solved? We want the left arm to appear behind the hip and the torso. For this, we can move the nodes behind the hip (note that you can bypass this by setting the Node2D Z property, but then you won't learn about all this!):"
-msgstr ""
-
-#: ../../docs/tutorials/animation/cutout_animation.rst:136
+#: ../../docs/tutorials/animation/cutout_animation.rst:132
 msgid "But then, we lose the hierarchy layout, which allows to control the skeleton like.. a skeleton. Is there any hope?.. Of Course!"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:140
+#: ../../docs/tutorials/animation/cutout_animation.rst:136
 msgid "RemoteTransform2D node"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:142
+#: ../../docs/tutorials/animation/cutout_animation.rst:138
 msgid "Godot provides a special node, :ref:`RemoteTransform2D <class_RemoteTransform2D>`. This node will transform nodes that are sitting somewhere else in the hierarchy, by applying the transform to the remote nodes."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:146
+#: ../../docs/tutorials/animation/cutout_animation.rst:142
 msgid "This enables to have a visibility order independent from the hierarchy."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:149
+#: ../../docs/tutorials/animation/cutout_animation.rst:145
 msgid "Simply create two more nodes as children from torso, remote_arm_l and remote_hand_l and link them to the actual sprites:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:154
+#: ../../docs/tutorials/animation/cutout_animation.rst:150
 msgid "Moving the remote transform nodes will move the sprites, allowing you to easily animate and pose the character:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:160
+#: ../../docs/tutorials/animation/cutout_animation.rst:156
 msgid "Completing the skeleton"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:162
+#: ../../docs/tutorials/animation/cutout_animation.rst:158
 msgid "Complete the skeleton by following the same steps for the rest of the parts. The resulting scene should look similar to this:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:167
+#: ../../docs/tutorials/animation/cutout_animation.rst:163
 msgid "The resulting rig will be easy to animate. By selecting the nodes and rotating them you can animate forward kinematics (FK) efficiently."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:170
+#: ../../docs/tutorials/animation/cutout_animation.rst:166
 msgid "For simple objects and rigs this is fine, however the following problems are common:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:173
+#: ../../docs/tutorials/animation/cutout_animation.rst:169
 msgid "Selecting sprites can become difficult for complex rigs, and the scene tree ends being used due to the difficulty of clicking over the proper sprite."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:176
+#: ../../docs/tutorials/animation/cutout_animation.rst:172
 msgid "Inverse Kinematics is often desired for extremities."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:178
+#: ../../docs/tutorials/animation/cutout_animation.rst:174
 msgid "To solve these problems, Godot supports a simple method of skeletons."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:181
+#: ../../docs/tutorials/animation/cutout_animation.rst:177
 msgid "Skeletons"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:183
+#: ../../docs/tutorials/animation/cutout_animation.rst:179
 msgid "Godot doesn't actually support *true* Skeketons, but it does feature a helper to create \"bones\" between nodes. This is enough for most cases, but the way it works is not completely obvious."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:189
+#: ../../docs/tutorials/animation/cutout_animation.rst:185
 msgid "As an example, let's turn the right arm into a skeleton. To create skeletons, a chain of nodes must be selected from top to bottom:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:194
+#: ../../docs/tutorials/animation/cutout_animation.rst:190
 msgid "Then, click on the Skeleton menu and select ``Make Bones``."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:198
+#: ../../docs/tutorials/animation/cutout_animation.rst:194
 msgid "This will add bones covering the arm, but the result is not quite what is expected."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:203
+#: ../../docs/tutorials/animation/cutout_animation.rst:199
 msgid "It looks like the bones are shifted up in the hierarchy. The hand connects to the arm, and the arm to the body. So the question is:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:206
+#: ../../docs/tutorials/animation/cutout_animation.rst:202
 msgid "Why does the hand lack a bone?"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:207
+#: ../../docs/tutorials/animation/cutout_animation.rst:203
 msgid "Why does the arm connect to the body?"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:209
+#: ../../docs/tutorials/animation/cutout_animation.rst:205
 msgid "This might seem strange at first, but will make sense later on. In traditional skeleton systems, bones have a position, an orientation and a length. In Godot, bones are mostly helpers so they connect the current node with the parent. Because of this, **toggling a node as a bone will just connect it to the parent**."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:215
+#: ../../docs/tutorials/animation/cutout_animation.rst:211
 msgid "So, with this knowledge. Let's do the same again so we have an actual, useful skeleton."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:218
+#: ../../docs/tutorials/animation/cutout_animation.rst:214
 msgid "The first step is creating an endpoint node. Any kind of node will do, but :ref:`Position2D <class_Position2D>` is preferred because it's visible in the editor. The endpoint node will ensure that the last bone has orientation."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:225
+#: ../../docs/tutorials/animation/cutout_animation.rst:221
 msgid "Now select the whole chain, from the endpoint to the arm and create bones:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:230
+#: ../../docs/tutorials/animation/cutout_animation.rst:226
 msgid "The result resembles a skeleton a lot more, and now the arm and forearm can be selected and animated."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:233
+#: ../../docs/tutorials/animation/cutout_animation.rst:229
 msgid "Finally, create endpoints in all meaningful extremities and connect the whole skeleton with bones up to the hip."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:236
+#: ../../docs/tutorials/animation/cutout_animation.rst:232
 msgid "You may notice when connecting the hip and torso, that an extra bone is created. To fix this, select the root and hip node, open the Skeleton menu, click ``clear bones``."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:242
+#: ../../docs/tutorials/animation/cutout_animation.rst:238
 msgid "After fixing that your final skeleton should look something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:246
+#: ../../docs/tutorials/animation/cutout_animation.rst:242
 msgid "Finally! the whole skeleton is rigged! On close look, it is noticeable that there is a second set of endpoints in the hands. This will make sense soon."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:250
+#: ../../docs/tutorials/animation/cutout_animation.rst:246
 msgid "Now that a whole skeleton is rigged, the next step is setting up the IK chains. IK chains allow for more natural control of extremities."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:254
+#: ../../docs/tutorials/animation/cutout_animation.rst:250
 msgid "IK chains"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:256
+#: ../../docs/tutorials/animation/cutout_animation.rst:252
 msgid "IK chains are a powerful animation tool. Imagine you want to pose a character's foot in a specific position on the ground. Without IK chains, each motion of the foot would require rotating and positioning several other bones. This would be quite complex and lead to imprecise results."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:258
+#: ../../docs/tutorials/animation/cutout_animation.rst:254
 msgid "What if we could move the foot and let the rest of the leg self-adjust?"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:260
+#: ../../docs/tutorials/animation/cutout_animation.rst:256
 msgid "This type of posing is called IK (Inverse Kinematic)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:262
+#: ../../docs/tutorials/animation/cutout_animation.rst:258
 msgid "To create an IK chain, simply select a chain of bones from endpoint to the base for the chain. For example, to create an IK chain for the right leg, select the following:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:268
+#: ../../docs/tutorials/animation/cutout_animation.rst:264
 msgid "Then enable this chain for IK. Go to Edit > Make IK Chain."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:272
+#: ../../docs/tutorials/animation/cutout_animation.rst:268
 msgid "As a result, the base of the chain will turn *Yellow*."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:276
+#: ../../docs/tutorials/animation/cutout_animation.rst:272
 msgid "Once the IK chain is set-up, simply grab any of the bones in the extremity, any child or grand-child of the base of the chain and try to grab it and move it. Result will be pleasant, satisfaction warranted!"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:283
+#: ../../docs/tutorials/animation/cutout_animation.rst:279
 msgid "Animation"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:285
+#: ../../docs/tutorials/animation/cutout_animation.rst:281
 msgid "The following section will be a collection of tips for creating animation for your rigs. If unsure about how the animation system in Godot works, refresh it by checking again the :ref:`doc_animations`."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:290
+#: ../../docs/tutorials/animation/cutout_animation.rst:286
 msgid "2D animation"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:292
+#: ../../docs/tutorials/animation/cutout_animation.rst:288
 msgid "When doing animation in 2D, a helper will be present in the top menu. This helper only appears when the animation editor window is opened:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:297
+#: ../../docs/tutorials/animation/cutout_animation.rst:293
 msgid "The key button will insert location/rotation/scale keyframes to the selected objects or bones. This depends on the mask enabled. Green items will insert keys while red ones will not, so modify the key insertion mask to your preference."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:303
+#: ../../docs/tutorials/animation/cutout_animation.rst:299
 msgid "Rest pose"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:305
+#: ../../docs/tutorials/animation/cutout_animation.rst:301
 msgid "These kind of rigs do not have a \"rest\" pose, so it's recommended to create a reference rest pose in one of the animations."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:308
+#: ../../docs/tutorials/animation/cutout_animation.rst:304
 msgid "Simply do the following steps:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:310
+#: ../../docs/tutorials/animation/cutout_animation.rst:306
 msgid "Make sure the rig is in \"rest\" (not doing any specific pose)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:312
+#: ../../docs/tutorials/animation/cutout_animation.rst:308
 msgid "Create a new animation, rename it to \"rest\"."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:314
+#: ../../docs/tutorials/animation/cutout_animation.rst:310
 msgid "Select all nodes (box selection should work fine)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:316
+#: ../../docs/tutorials/animation/cutout_animation.rst:312
 msgid "Select \"loc\" and \"rot\" on the top menu."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:318
+#: ../../docs/tutorials/animation/cutout_animation.rst:314
 msgid "Push the key button. Keys will be inserted for everything, creating a default pose."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:324
+#: ../../docs/tutorials/animation/cutout_animation.rst:320
 msgid "Rotation"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:326
+#: ../../docs/tutorials/animation/cutout_animation.rst:322
 msgid "Animating these models means only modifying the rotation of the nodes. Location and scale are rarely used, with the only exception of moving the entire rig from the hip (which is the root node)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:330
+#: ../../docs/tutorials/animation/cutout_animation.rst:326
 msgid "As a result, when inserting keys, only the \"rot\" button needs to be pressed most of the time:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:335
+#: ../../docs/tutorials/animation/cutout_animation.rst:331
 msgid "This will avoid the creation of extra animation tracks for the position that will remain unused."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:339
+#: ../../docs/tutorials/animation/cutout_animation.rst:335
 msgid "Keyframing IK"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:341
+#: ../../docs/tutorials/animation/cutout_animation.rst:337
 msgid "When editing IK chains, it is not necessary to select the whole chain to add keyframes. Selecting the endpoint of the chain and inserting a keyframe will automatically insert keyframes until the chain base too. This makes the task of animating extremities much simpler."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:347
+#: ../../docs/tutorials/animation/cutout_animation.rst:343
 msgid "Moving sprites above and behind others."
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:349
-msgid "RemoteTransform2D works in most cases, but sometimes it is really necessary to have a node above and below others during an animation. To aid on this the \"Behind Parent\" property exists on any Node2D:"
+#: ../../docs/tutorials/animation/cutout_animation.rst:345
+msgid "RemoteTransform2D works in most cases, but sometimes it is necessary to have a node above and below others during an animation. To aid on this the \"Behind Parent\" property exists on any Node2D:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:356
+#: ../../docs/tutorials/animation/cutout_animation.rst:352
 msgid "Batch setting transition curves"
 msgstr ""
 
-#: ../../docs/tutorials/animation/cutout_animation.rst:358
-msgid "When creating really complex animations and inserting lots of keyframes, editing the individual keyframe curves for each can become an endless task. For this, the Animation Editor has a small menu where changing animation curves is easy. First select the appropriate keys. Next click on the pencil icon in the bottom right of the animation panel, this will open the transition editor. Now click on one of the curve options most appropriate for your animation."
+#: ../../docs/tutorials/animation/cutout_animation.rst:354
+msgid "When creating complex animations and inserting many keyframes, editing the individual keyframe curves for each can become an endless task. For this, the Animation Editor has a small menu where changing animation curves is easy. First select the appropriate keys. Next click on the pencil icon in the bottom right of the animation panel, this will open the transition editor. Now click on one of the curve options most appropriate for your animation."
 msgstr ""
 

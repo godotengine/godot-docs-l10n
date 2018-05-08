@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,7 +213,7 @@ msgid "Omni light is a point source that emits light spherically in all directio
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:140
-msgid "In real life, light attenuation is an inverse function, which means omni lights don't really have a radius. This is a problem, because it means computing several omni lights would become really demanding."
+msgid "In real life, light attenuation is an inverse function, which means omni lights don't have a radius. This is a problem, because it means computing several omni lights would become demanding."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
@@ -229,11 +229,11 @@ msgid "Omni Shadow Mapping"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:155
-msgid "Omni light shadow mapping is relatively straightforward, as it just works. The main issue that needs to be considered is the algorithm used to render it."
+msgid "Omni light shadow mapping is relatively straightforward. The main issue that needs to be considered is the algorithm used to render it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:158
-msgid "Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped\"**. The former renders very quickly but can cause deformations, while the later is more correct but more costly."
+msgid "Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped\"**. The former renders quickly but can cause deformations, while the later is more correct but more costly."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:163
@@ -265,7 +265,7 @@ msgid "Spot Shadow Mapping"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:186
-msgid "Spots don't need any parameters for shadow mapping, they should just work. Keep in mind that, at more than 89 degrees of aperture, shadows stop functioning for spots, and you should consider using an Omni light."
+msgid "Spots don't need any parameters for shadow mapping. Keep in mind that, at more than 89 degrees of aperture, shadows stop functioning for spots, and you should consider using an Omni light."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:190

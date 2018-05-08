@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "A probe of this type captures the surroundings (as a sort of 360 degrees 
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:15
-msgid "While these probes are a very efficient way of storing reflections, they have a few shortcomings:"
+msgid "While these probes are a efficient way of storing reflections, they have a few shortcomings:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:17
@@ -49,7 +49,7 @@ msgid "Setting Up"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:23
-msgid "Setting up reflection probes is really easy! Just create a ReflectionProbe node, and wrap it around the area where you want to have reflections:"
+msgid "Create a ReflectionProbe node, and wrap it around the area where you want to have reflections:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:27
@@ -73,7 +73,7 @@ msgid "The probe captures the surrounding from the center of the gizmo. If, for 
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:45
-msgid "By default, shadow mapping is disabled when rendering probes (only in the rendered image inside the probe, not the actual scene). This is a simple way to save on performance and memory. If you really want shadows in the probe, they can be toggled on/off with the *Enable Shadow* setting:"
+msgid "By default, shadow mapping is disabled when rendering probes (only in the rendered image inside the probe, not the actual scene). This is a simple way to save on performance and memory. If you want shadows in the probe, they can be toggled on/off with the *Enable Shadow* setting:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:50
@@ -109,7 +109,7 @@ msgid "As you can see, this blending is never perfect (after all, these are box 
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:79
-msgid "Alternatively, Reflection Probes work very well blended together with Screen Space Reflections to solve these problems. Combining them makes local reflections appear more faithful, while probes only used as fallback when no screen-space information is found:"
+msgid "Alternatively, Reflection Probes work well blended together with Screen Space Reflections to solve these problems. Combining them makes local reflections appear more faithful, while probes only used as fallback when no screen-space information is found:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:84

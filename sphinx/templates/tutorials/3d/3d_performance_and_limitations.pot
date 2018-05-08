@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "Configuring the properties of every material for every object that needs 
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:22
-msgid "In 3D physics a similar situation happens. The best algorithms to handle large amounts of physics objects (such as SAP) are very slow at insertion/removal of objects and ray-casting. Algorithms that allow faster insertion and removal, as well as ray-casting will not be able to handle as many active objects."
+msgid "In 3D physics a similar situation happens. The best algorithms to handle large amounts of physics objects (such as SAP) are slow at insertion/removal of objects and ray-casting. Algorithms that allow faster insertion and removal, as well as ray-casting will not be able to handle as many active objects."
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:28
@@ -77,7 +77,7 @@ msgid "**Reusing Shaders**: If materials can't be reused, at least try to re-use
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:65
-msgid "If a scene has, for example, 20.000 objects with 20.000 different materials each, rendering will be really slow. If the same scene has 20.000 objects, but only uses 100 materials, rendering will be blazing fast."
+msgid "If a scene has, for example, 20.000 objects with 20.000 different materials each, rendering will be slow. If the same scene has 20.000 objects, but only uses 100 materials, rendering will be blazing fast."
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:71
@@ -89,7 +89,7 @@ msgid "It is a common thought that the lower the number of polygons in a model, 
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:77
-msgid "On a modern PC and console, vertex cost is low. Very low. GPUs originally only rendered triangles, so all the vertices:"
+msgid "On a modern PC and console, vertex cost is low. GPUs originally only rendered triangles, so all the vertices:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:80
@@ -109,7 +109,7 @@ msgid "On mobile devices, the story is different. PC and Console GPUs are brute-
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:96
-msgid "To be more efficient, mobile GPUs attempt to avoid *overdraw*. This means, the same pixel on the screen being rendered (as in, with lighting calculation, etc.) more than once. Imagine a town with several buildings, GPUs don't really know what is visible and what is hidden until they draw it. A house might be drawn and then another house in front of it (rendering happened twice for the same pixel!). PC GPUs normally don't care much about this and just throw more pixel processors to the hardware to increase performance (but this also increases power consumption)."
+msgid "To be more efficient, mobile GPUs attempt to avoid *overdraw*. This means, the same pixel on the screen being rendered (as in, with lighting calculation, etc.) more than once. Imagine a town with several buildings, GPUs don't know what is visible and what is hidden until they draw it. A house might be drawn and then another house in front of it (rendering happened twice for the same pixel!). PC GPUs normally don't care much about this and just throw more pixel processors to the hardware to increase performance (but this also increases power consumption)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:106
@@ -173,7 +173,7 @@ msgid "Level of detail (LOD)"
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:164
-msgid "As also mentioned before, using objects with less vertices can improve performance in some cases. Godot has a very simple system to change level of detail, :ref:`GeometryInstance <class_GeometryInstance>` based objects have a visibility range that can be defined. Having several GeometryInstance objects in different ranges works as LOD."
+msgid "As also mentioned before, using objects with less vertices can improve performance in some cases. Godot has a simple system to change level of detail, :ref:`GeometryInstance <class_GeometryInstance>` based objects have a visibility range that can be defined. Having several GeometryInstance objects in different ranges works as LOD."
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:172

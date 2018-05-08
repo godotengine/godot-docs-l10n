@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,7 +125,7 @@ msgid "Creating nodes"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:273
-msgid "To create a node from code, call the ``.new()`` method, just like for any other class-based datatype. For example:"
+msgid "To create a node from code, call the ``.new()`` method, like for any other class-based datatype. For example:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
@@ -133,7 +133,7 @@ msgid "To delete a node, be it inside or outside the scene, ``free()`` must be u
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:313
-msgid "When a node is freed, it also frees all its children nodes. Because of this, manually deleting nodes is much simpler than it appears. Just free the base node and everything else in the subtree goes away with it."
+msgid "When a node is freed, it also frees all its children nodes. Because of this, manually deleting nodes is much simpler than it appears. Free the base node and everything else in the subtree goes away with it."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:317

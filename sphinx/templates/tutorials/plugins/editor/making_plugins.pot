@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,11 +133,11 @@ msgid "Save this scene as ``my_dock.tscn``."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:190
-msgid "Now you need to grab that scene you just created and add it as a dock in the editor. For this you can rely on the function :ref:`add_control_to_dock() <class_EditorPlugin_add_control_to_dock>` from the :ref:`EditorPlugin <class_EditorPlugin>` class."
+msgid "Now you need to grab that scene you created and add it as a dock in the editor. For this you can rely on the function :ref:`add_control_to_dock() <class_EditorPlugin_add_control_to_dock>` from the :ref:`EditorPlugin <class_EditorPlugin>` class."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:195
-msgid "The code is very straightforward, you just need to select a dock position to add it and have a control to add (which is the scene you just created). It is also very important that you remember to **remove the dock** when the plugin is deactivated. The code can be like this::"
+msgid "The code is straightforward, you need to select a dock position to add it and have a control to add (which is the scene you just created). It is also important that you remember to **remove the dock** when the plugin is deactivated. The code can be like this::"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:220
@@ -153,7 +153,7 @@ msgid "Now it is the moment to check the results of your work. Open the *Project
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:233
-msgid "At the *Status* column, you can see that the plugin is inactive. So you just need to click on the status to select *Active*. The dock should be immediately visible, even before you close the settings window. And now, lo and behold, you have a custom dock! In just a bit of coding and a simple scene."
+msgid "At the *Status* column, you can see that the plugin is inactive. So you need to click on the status to select *Active*. The dock should be immediately visible, even before you close the settings window. You should have a custom dock:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:241

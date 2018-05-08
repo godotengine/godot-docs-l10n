@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Rotations"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:6
-msgid "In the context of 3D transforms, rotations are the nontrivial and complicated part. While it is possible to describe 3D rotations using geometrical drawings and derive the rotation matrices, which is what most people would be more familiar with, it offers a very limited picture, and fails to give any insight on related practical things such quaternions and SLERP. For this reason, this document takes a different approach, a very general (although a little abstract at first) approach which was popularized by its extensive use in local gauge theories in physics. That being said, the aim of this text is to provide a minimal background to understand 2D and 3D rotations in a general way and shed light on practical things such as gimbal lock, quaternions and SLERP using an accessible language for programmers, and not completeness or mathematical rigor."
+msgid "In the context of 3D transforms, rotations are the nontrivial and complicated part. While it is possible to describe 3D rotations using geometrical drawings and derive the rotation matrices, which is what most people would be more familiar with, it offers a limited picture, and fails to give any insight on related practical things such quaternions and SLERP. For this reason, this document takes a different approach, a general (although a little abstract at first) approach which was popularized by its extensive use in local gauge theories in physics. That being said, the aim of this text is to provide a minimal background to understand 2D and 3D rotations in a general way and shed light on practical things such as gimbal lock, quaternions and SLERP using an accessible language for programmers, and not completeness or mathematical rigor."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:12
@@ -29,11 +29,11 @@ msgid "A crash course in Lie groups and algebras for programmers"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:14
-msgid "Lie groups is a branch of mathematics which deals with rotations in a systematic way. While it is a very extensive subject and most programmers haven't even heard of it, it is very relevant in game development, because it provides a coherent and unified view of 3D rotations."
+msgid "Lie groups is a branch of mathematics which deals with rotations in a systematic way. While it is a extensive subject and most programmers haven't even heard of it, it is relevant in game development, because it provides a coherent and unified view of 3D rotations."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:20
-msgid "So let's start with small steps. Suppose that you want to make a really tiny rotation around some axis. For, concreteness let's say around  :math:`z`-axis by an infinitesimal angle :math:`\\delta\\theta`. For small angles, as illustrated in the figure, the rotation operator can be written as :math:`R_z(\\delta\\theta) = I + \\delta \\theta \\boldsymbol e_z \\times` (neglecting higher order terms :math:`\\mathcal O(\\delta\\theta^2)` ) where :math:`I` is identity operator and :math:`\\boldsymbol e_z` is a unit vector along the :math:`z`-axis, such that a vector :math:`\\boldsymbol v` becomes"
+msgid "So let's start with small steps. Suppose that you want to make a tiny rotation around some axis. For, concreteness let's say around  :math:`z`-axis by an infinitesimal angle :math:`\\delta\\theta`. For small angles, as illustrated in the figure, the rotation operator can be written as :math:`R_z(\\delta\\theta) = I + \\delta \\theta \\boldsymbol e_z \\times` (neglecting higher order terms :math:`\\mathcal O(\\delta\\theta^2)` ) where :math:`I` is identity operator and :math:`\\boldsymbol e_z` is a unit vector along the :math:`z`-axis, such that a vector :math:`\\boldsymbol v` becomes"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:26
@@ -57,7 +57,7 @@ msgid "So, how about finite rotations? We simply can apply this infinitesimal ro
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:53
-msgid "(If you're confused about seeing a matrix as an exponent: the meaning of an operator :math:`A` in `exponential map <https://en.wikipedia.org/wiki/Exponential_map_(Lie_theory)>`_ is given by its series expansion as :math:`e^A = 1 + A + A^2/2! + \\ldots` ). This is arguably the most important relation in this write up, and lies at the heart of Lie groups, whose significance will be clarified in a moment. But first, let's take step back and observe the significance of this result: using a very simple picture of an infinitesimal rotation, we derived a general expression for arbitrary rotations around the :math:`z`-axis. In fact, this gets even better. If we repeated the same analysis for rotations around :math:`x`- and :math:`y`-axes, we would have obtained similar results :math:`e^{\\theta J_x}` and :math:`e^{\\theta J_y}` respectively, where"
+msgid "(If you're confused about seeing a matrix as an exponent: the meaning of an operator :math:`A` in `exponential map <https://en.wikipedia.org/wiki/Exponential_map_(Lie_theory)>`_ is given by its series expansion as :math:`e^A = 1 + A + A^2/2! + \\ldots` ). This is arguably the most important relation in this write up, and lies at the heart of Lie groups, whose significance will be clarified in a moment. But first, let's take step back and observe the significance of this result: using a simple picture of an infinitesimal rotation, we derived a general expression for arbitrary rotations around the :math:`z`-axis. In fact, this gets even better. If we repeated the same analysis for rotations around :math:`x`- and :math:`y`-axes, we would have obtained similar results :math:`e^{\\theta J_x}` and :math:`e^{\\theta J_y}` respectively, where"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:68
@@ -269,7 +269,7 @@ msgid "In 2D, we considered vectors lying in the :math:`xy` plane, and the only 
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:198
-msgid "Just like the 2D rotation matrix, the 3D rotation matrix can also be derived with some effort by drawing lots of arrows and angles and some linear algebra, but this would be very opaque and won't give us much insight to what's really going on. A less straightforward, but more rewarding way of deriving this matrix is to understand the rotation group SO(3)."
+msgid "Just like the 2D rotation matrix, the 3D rotation matrix can also be derived with some effort by drawing lots of arrows and angles and some linear algebra, but this would be opaque and won't give us much insight to what's going on. A less straightforward, but more rewarding way of deriving this matrix is to understand the rotation group SO(3)."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:200
@@ -297,7 +297,7 @@ msgid "(Hint: you can use the relation :math:`(\\boldsymbol n \\cdot \\boldsymbo
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:244
-msgid "However, we don't really *have to* use matrices to represent SO(3) generators :math:`J_i`. Remember how we used :math:`\\imath`, the imaginary unit to emulate :math:`J_z` rather than using a :math:`2 \\times 2` matrix? As it turns out we can do something similar here."
+msgid "However, we don't *have to* use matrices to represent SO(3) generators :math:`J_i`. Remember how we used :math:`\\imath`, the imaginary unit to emulate :math:`J_z` rather than using a :math:`2 \\times 2` matrix? As it turns out we can do something similar here."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:246
@@ -357,7 +357,7 @@ msgid "Using matrices, you can practically do everything you do with quaternions
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:284
-msgid "The relationship between quaternions and 3D rotation matrices is the roughly the same as the relation between the complex number :math:`e^{\\imath\\theta}` and a 2D rotation matrix. Just as the complex number :math:`\\imath \\cong J_z` rotates by :math:`\\pi/2` (which is, as we saw, what a *generator* does), :math:`i,j,k` (which are :math:`\\cong J_x, J_y, J_z`) rotate by :math:`\\pi/2` around :math:`x, y, z` axes; they don't commute with each other because in 3D, the order of rotations is important. Owing to this isomorphism between their generators, an SO(3) rotation :math:`e^{\\varphi \\boldsymbol n \\cdot \\boldsymbol J}` corresponds to the SU(2) rotation :math:`e^{\\varphi \\boldsymbol n \\cdot (i,j,k)/2}`. This is a very helpful picture to gain an intuition on quaternions. While the SO(3) is familiar to many people,  the \"Rodrigues' formula\" for the SU(2) one is much preferable graphics programming due to it's simplicity, and hence you see quaternions in game engines."
+msgid "The relationship between quaternions and 3D rotation matrices is the roughly the same as the relation between the complex number :math:`e^{\\imath\\theta}` and a 2D rotation matrix. Just as the complex number :math:`\\imath \\cong J_z` rotates by :math:`\\pi/2` (which is, as we saw, what a *generator* does), :math:`i,j,k` (which are :math:`\\cong J_x, J_y, J_z`) rotate by :math:`\\pi/2` around :math:`x, y, z` axes; they don't commute with each other because in 3D, the order of rotations is important. Owing to this isomorphism between their generators, an SO(3) rotation :math:`e^{\\varphi \\boldsymbol n \\cdot \\boldsymbol J}` corresponds to the SU(2) rotation :math:`e^{\\varphi \\boldsymbol n \\cdot (i,j,k)/2}`. This is a helpful picture to gain an intuition on quaternions. While the SO(3) is familiar to many people,  the \"Rodrigues' formula\" for the SU(2) one is much preferable graphics programming due to it's simplicity, and hence you see quaternions in game engines."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:286
@@ -447,7 +447,7 @@ msgid "As we found out, this is the *de facto* parametrization of rotations in 3
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:340
-msgid "Another advantage of the axis angle parametrization is, it is very easy to interpolate between two different rotations (let's call their parameters :math:`\\boldsymbol n_1, \\varphi_1` and :math:`\\boldsymbol n_2, \\varphi_2`), which is useful when you're changing the orientation of an object, starting from a given initial orientation and going toward a final one. A nice way of doing this is described in a later section where we describe SLERP. It results in a smooth motion, rather than a \"jerky\" motion which may start fast, go slow in the middle and go fast again etc. It turns out that if a mass is transported this way, it experiences the least amount of torque (compared to other possible trajectories). This way of linearly interpolating rotations in the axis-angle parametrization is called Spherical Linear Interpolation or SLERP, and is almost ubiquitously used in games."
+msgid "Another advantage of the axis angle parametrization is, it is easy to interpolate between two different rotations (let's call their parameters :math:`\\boldsymbol n_1, \\varphi_1` and :math:`\\boldsymbol n_2, \\varphi_2`), which is useful when you're changing the orientation of an object, starting from a given initial orientation and going toward a final one. A nice way of doing this is described in a later section where we describe SLERP. It results in a smooth motion, rather than a \"jerky\" motion which may start fast, go slow in the middle and go fast again etc. It turns out that if a mass is transported this way, it experiences the least amount of torque (compared to other possible trajectories). This way of linearly interpolating rotations in the axis-angle parametrization is called Spherical Linear Interpolation or SLERP, and is almost ubiquitously used in games."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:345
@@ -467,7 +467,7 @@ msgid "All in all, despite being an ill-defined parametrization for rotations, E
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:363
-msgid "While Euler angles may not be too useful when calculating the rotation operator (be it a matrix or a quaternion) in body dynamics, people still find them useful to think about and describe the *orientation* of 3D objects starting from the initial default *\"unrotated\"* state (it's very difficult to calculate the 3 Euler angles for driving an object from a non-trivial initial orientation to a non-trivial final orientation ---it can't be calculated intuitively in general, it is a task for computers). For this reason, Godot's property editor uses Euler angles (in extrinsic YXZ convention; if the node has a parent node, the YXZ axes refer to the local axes of the parent) for the rotation property of a Transform --this is pretty much the only place Euler angles are used in Godot."
+msgid "While Euler angles may not be too useful when calculating the rotation operator (be it a matrix or a quaternion) in body dynamics, people still find them useful to think about and describe the *orientation* of 3D objects starting from the initial default *\"unrotated\"* state (it's difficult to calculate the 3 Euler angles for driving an object from a non-trivial initial orientation to a non-trivial final orientation ---it can't be calculated intuitively in general, it is a task for computers). For this reason, Godot's property editor uses Euler angles (in extrinsic YXZ convention; if the node has a parent node, the YXZ axes refer to the local axes of the parent) for the rotation property of a Transform --this is pretty much the only place Euler angles are used in Godot."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:365
@@ -603,7 +603,7 @@ msgid "This form makes sense because for :math:`\\lambda=0`, the interpolation h
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:447
-msgid "But how do we choose :math:`\\boldsymbol n` and :math:`\\varphi`? Well, we simply enforce that :math:`R(\\lambda)`  has to becomes :math:`R_2` at the end, when :math:`\\lambda=1`. Although this looks like a very difficult problem, it's actually not. We first make a rearrangement:"
+msgid "But how do we choose :math:`\\boldsymbol n` and :math:`\\varphi`? Well, we simply enforce that :math:`R(\\lambda)`  has to becomes :math:`R_2` at the end, when :math:`\\lambda=1`. Although this looks like a difficult problem, it's actually not. We first make a rearrangement:"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:453
@@ -631,7 +631,7 @@ msgid "After some tedious algebra (which involves using :math:`\\text{tr}(\\sigm
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:477
-msgid "when :math:`q_1 \\neq \\pm q_2`, where we introduced :math:`\\cos\\Omega \\equiv \\cos\\frac{\\varphi_1}{2}\\cos\\frac{\\varphi_2}{2} + \\sin\\frac{\\varphi_1}{2}\\sin\\frac{\\varphi_2}{2} \\boldsymbol n_1 \\cdot \\boldsymbol n_2` (or equivalently, in terms of an artificial vector which contains the coefficients of the quaternions, as we discussed above, :math:`\\boldsymbol q_1 \\cdot \\boldsymbol q_2`). This result has a very simple geometric interpretation when a (unit) quaternion is taken to be a point on the 3-sphere and when one introduces an inner product of the 4D Euclidean space, but we'll skip that because it's a bit off topic in our treatment. We'll however note that this is where the name *Spherical* Linear intERpolation comes from, which refers to the 4D sphere."
+msgid "when :math:`q_1 \\neq \\pm q_2`, where we introduced :math:`\\cos\\Omega \\equiv \\cos\\frac{\\varphi_1}{2}\\cos\\frac{\\varphi_2}{2} + \\sin\\frac{\\varphi_1}{2}\\sin\\frac{\\varphi_2}{2} \\boldsymbol n_1 \\cdot \\boldsymbol n_2` (or equivalently, in terms of an artificial vector which contains the coefficients of the quaternions, as we discussed above, :math:`\\boldsymbol q_1 \\cdot \\boldsymbol q_2`). This result has a simple geometric interpretation when a (unit) quaternion is taken to be a point on the 3-sphere and when one introduces an inner product of the 4D Euclidean space, but we'll skip that because it's a bit off topic in our treatment. We'll however note that this is where the name *Spherical* Linear intERpolation comes from, which refers to the 4D sphere."
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:482
@@ -695,7 +695,7 @@ msgid "The left hand side is rotation of the vector :math:`(R_0 \\boldsymbol v_0
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:539
-msgid "The rotation operator itself rotates in a very expected way (you can use Rodrigues' formula along with the equation above, if you prefer):"
+msgid "The rotation operator itself rotates in a expected way (you can use Rodrigues' formula along with the equation above, if you prefer):"
 msgstr ""
 
 #: ../../docs/tutorials/math/rotations.rst:545

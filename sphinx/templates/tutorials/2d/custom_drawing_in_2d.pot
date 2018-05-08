@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,7 @@ msgid "The next step consists of computing the actual positions of these 32 poin
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:195
-msgid "The reason why each angle is reduced by 90° is that we will compute 2D positions out of each angle using trigonometry (you know, cosine and sine stuff...). However, to be simple, cos() and sin() use radians, not degrees. The angle of 0° (0 radian) starts at 3 o'clock, although we want to start counting at 0 o'clock. So, we just reduce each angle by 90° in order to start counting from 0 o'clock."
+msgid "The reason why each angle is reduced by 90° is that we will compute 2D positions out of each angle using trigonometry (you know, cosine and sine stuff...). However, to be simple, cos() and sin() use radians, not degrees. The angle of 0° (0 radian) starts at 3 o'clock, although we want to start counting at 0 o'clock. So we reduce each angle by 90° in order to start counting from 0 o'clock."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:197
@@ -121,7 +121,7 @@ msgid "The actual position of a point located on a circle at angle 'angle' (in r
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:199
-msgid "Now, we need to actually draw our points. As you can imagine, we will not simply draw our 32 points: we need to draw everything that is between each of them. We could have computed every point ourselves using the previous method, and drew it one by one. But this is too complicated and inefficient (except if explicitly needed). So, we simply draw lines between each pair of points. Unless the radius of our support circle is very big, the length of each line between a pair of points will never be long enough to see them. If this happens, we simply would need to increase the number of points."
+msgid "Now, we need to actually draw our points. As you can imagine, we will not simply draw our 32 points: we need to draw everything that is between each of them. We could have computed every point ourselves using the previous method, and drew it one by one. But this is too complicated and inefficient (except if explicitly needed). So, we simply draw lines between each pair of points. Unless the radius of our support circle is big, the length of each line between a pair of points will never be long enough to see them. If this happens, we simply would need to increase the number of points."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:202
@@ -149,7 +149,7 @@ msgid "Dynamic custom drawing"
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:276
-msgid "Alright, we are now able to draw custom stuff on screen. However, it is very static: let's make this shape turn around the center. The solution to do this is simply to change the angle_from and angle_to values over time. For our example, we will simply increment them by 50. This increment value has to remain constant, else the rotation speed will change accordingly."
+msgid "Alright, we are now able to draw custom stuff on screen. However, it is static: let's make this shape turn around the center. The solution to do this is simply to change the angle_from and angle_to values over time. For our example, we will simply increment them by 50. This increment value has to remain constant, else the rotation speed will change accordingly."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:278
@@ -197,6 +197,6 @@ msgid "Drawing your own nodes might also be desired while running them in the ed
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
-msgid "Remember, to just use the \"tool\" keyword at the top of the script (check the :ref:`doc_gdscript` reference if you forgot what this does)."
+msgid "Remember to use the \"tool\" keyword at the top of the script (check the :ref:`doc_gdscript` reference if you forgot what this does)."
 msgstr ""
 

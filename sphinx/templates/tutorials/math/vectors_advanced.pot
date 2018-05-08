@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-02 12:40+0200\n"
+"POT-Creation-Date: 2018-05-08 21:18+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,7 @@ msgid "This will, again, return either a positive or negative distance."
 msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:118
-msgid "Flipping the polarity of the plane is also very simple, just negate both N and D. This will result in a plane in the same position, but with inverted negative and positive half spaces:"
+msgid "Flipping the polarity of the plane can be done by negating both N and D. This will result in a plane in the same position, but with inverted negative and positive half spaces:"
 msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:133
@@ -154,7 +154,7 @@ msgid "Pretty cool, huh? But this gets much better! With a little more effort, s
 msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:270
-msgid "The idea is really simple! With a point, just checking if a plane returns a positive distance is enough to tell if the point is outside. With another polygon, we must find a plane where *all* *the* *other* *polygon* *points* return a positive distance to it. This check is performed with the planes of A against the points of B, and then with the planes of B against the points of A:"
+msgid "With a point, just checking if a plane returns a positive distance is enough to tell if the point is outside. With another polygon, we must find a plane where *all* *the* *other* *polygon* *points* return a positive distance to it. This check is performed with the planes of A against the points of B, and then with the planes of B against the points of A:"
 msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:370
@@ -166,30 +166,30 @@ msgid "Collision detection in 3D"
 msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:379
-msgid "This is another bonus bit, a reward for being patient and keeping up with this long tutorial. Here is another piece of wisdom. This might not be something with a direct use case (Godot already does collision detection pretty well) but It's a really cool algorithm to understand anyway, because it's used by almost all physics engines and collision detection libraries :)"
+msgid "This is another bonus bit, a reward for being patient and keeping up with this long tutorial. Here is another piece of wisdom. This might not be something with a direct use case (Godot already does collision detection pretty well) but it's used by almost all physics engines and collision detection libraries :)"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:386
+#: ../../docs/tutorials/math/vectors_advanced.rst:385
 msgid "Remember that converting a convex shape in 2D to an array of 2D planes was useful for collision detection? You could detect if a point was inside any convex shape, or if two 2D convex shapes were overlapping."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:390
+#: ../../docs/tutorials/math/vectors_advanced.rst:389
 msgid "Well, this works in 3D too, if two 3D polyhedral shapes are colliding, you won't be able to find a separating plane. If a separating plane is found, then the shapes are definitely not colliding."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:394
+#: ../../docs/tutorials/math/vectors_advanced.rst:393
 msgid "To refresh a bit a separating plane means that all vertices of polygon A are in one side of the plane, and all vertices of polygon B are in the other side. This plane is always one of the face-planes of either polygon A or polygon B."
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:399
+#: ../../docs/tutorials/math/vectors_advanced.rst:398
 msgid "In 3D though, there is a problem to this approach, because it is possible that, in some cases a separating plane can't be found. This is an example of such situation:"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:405
+#: ../../docs/tutorials/math/vectors_advanced.rst:404
 msgid "To avoid it, some extra planes need to be tested as separators, these planes are the cross product between the edges of polygon A and the edges of polygon B"
 msgstr ""
 
-#: ../../docs/tutorials/math/vectors_advanced.rst:411
+#: ../../docs/tutorials/math/vectors_advanced.rst:410
 msgid "So the final algorithm is something like:"
 msgstr ""
 
