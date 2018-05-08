@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-02 12:40+0200\n"
-"PO-Revision-Date: 2018-04-28 09:43+0000\n"
+"PO-Revision-Date: 2018-05-08 19:07+0000\n"
 "Last-Translator: Максим Якимчук <xpinovo@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -220,7 +220,7 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
-":ref:`sec-general` розділ містить цей вступ, а також інформацію про рушій, "
+"Розділ :ref:`sec-general` містить цей вступ, а також інформацію про рушій, "
 "його історію, ліцензування, авторів тощо. Він також містить :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:75
@@ -230,7 +230,7 @@ msgid ""
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
-":ref:`sec-learn` розділ є головною *raison d'être* (причиною існування) цієї "
+"Розділ :ref:`sec-learn` є головною *raison d'être* (причиною існування) цієї "
 "документації, оскільки містить всю необхідну інформацію про використання "
 "рушія для створення ігор. Він починається з посібника :ref:`Крок за кроком "
 "<toc-learn-step_by_step>`, який повинен бути точкою входу для всіх нових "
@@ -311,11 +311,15 @@ msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
+"Godot - це відкрите та вільне програмне забезпечення, що розповсюджується "
+"під `OSI-затвердженою <https://opensource.org/licenses/MIT>`_ ліцензією MIT."
 
 #: ../../docs/about/faq.rst:11
 msgid ""
 "This means it is free as in \"free speech\" as well as in \"free beer\"."
 msgstr ""
+"Це означає, що воно вільне як \"свобода слова\", а також як і \"вільне пиво"
+"\"."
 
 #: ../../docs/about/faq.rst:13
 msgid "In short:"
@@ -336,6 +340,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr ""
+"Ви можете модифікувати, (повторно) поширювати і змішувати Godot так, як це "
+"задовольняє ваше серце"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
@@ -352,6 +358,10 @@ msgid ""
 "by/3.0/>`_) license, with attribution to \"Juan Linietsky, Ariel Manzur and "
 "the Godot Engine community\"."
 msgstr ""
+"Весь вміст документації знаходиться під дозвільною ліцензією Creative "
+"Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
+"by/3.0/>`_) за авторством \"Juan Linietsky, Ariel Manzur та спільноти Godot "
+"Engine\"."
 
 #: ../../docs/about/faq.rst:25
 msgid ""
@@ -438,12 +448,20 @@ msgid ""
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
+"Деякі користувачі повідомляють про успішну побудову та використання \"Godot"
+"\" на основі ARM систем з Linux, такими як \"Raspberry Pi\". Також "
+"проводяться деякі неофіційні роботи третіх сторін над запуском збірок для "
+"деяких консолей, однак їх не включено в типові скрипти збірки або шаблони "
+"експорту."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"Щоб дізнатись більше про це, перегляньте розділи про :ref:`експортування "
+"<toc-learn-workflow-export>` та :ref:`компілювання Godot самостійно <toc-"
+"devel-compiling>`."
 
 #: ../../docs/about/faq.rst:60
 msgid "Which languages are supported in Godot?"
@@ -456,7 +474,7 @@ msgid ""
 "<toc-learn-scripting>` section."
 msgstr ""
 "Офіційно підтримуваними мовами для Godot є GDScript, Visual Scripting, C# і C"
-"++. Див. підкатегорії для кожної мови в розділі :ref:`scripting <toc-learn-"
+"++. Див. підкатегорії для кожної мови в розділі :ref:`скриптинґ <toc-learn-"
 "scripting>`."
 
 #: ../../docs/about/faq.rst:65
@@ -464,12 +482,17 @@ msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
 msgstr ""
+"Зверніть увагу, що підтримка C# та Visual Scripting є порівняно молодою, і "
+"GDScript як і раніше має деякі переваги, як зазначено нижче."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
 "Support for new languages can be added by third parties using the GDNative / "
 "NativeScript / PluginScript facilities. (See question about plugins below.)"
 msgstr ""
+"Підтримка нових мов може бути додана третіми особами за допомогою "
+"можливостей GDNative / NativeScript / PluginScript. (Див. питання про "
+"плаґіни нижче.)"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -536,7 +559,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
-msgstr ""
+msgstr "Основними причинами є:"
 
 #: ../../docs/about/faq.rst:112
 msgid ""
@@ -584,7 +607,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
-msgstr ""
+msgstr "Я хочу розширити Godot. Які є у мене варіанти для створення плаґінів?"
 
 #: ../../docs/about/faq.rst:137
 msgid ""
@@ -3657,7 +3680,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr "Скрипти"
+msgstr "Скриптинґ"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:6
 msgid ""
@@ -6247,7 +6270,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
-msgstr "Експортувати"
+msgstr "Експортування"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:4
 msgid "Customizing the Web export HTML page"
@@ -18134,9 +18157,8 @@ msgid "`Mediator Pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:31
-#, fuzzy
 msgid "Adding AI"
-msgstr "Доповнення"
+msgstr "Додавання ШІ"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:32
 msgid "Adding a custom asynchronous threads"
@@ -19642,7 +19664,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_windows.rst:85
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:221
 msgid "Compiling"
-msgstr "Збирання 4.10.3"
+msgstr "Компілювання"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:80
 #: ../../docs/development/compiling/compiling_for_osx.rst:21
@@ -21122,7 +21144,7 @@ msgstr ""
 
 #: ../../docs/index.rst:36 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr "Загальне"
+msgstr "\"Загальне\""
 
 #: ../../docs/index.rst:44
 msgid "Getting started"
@@ -31516,7 +31538,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"
-msgstr "Учасники"
+msgstr "Члени"
 
 #: ../../docs/tutorials/shading/shading_language.rst:126
 msgid ""
@@ -37347,7 +37369,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr "Видимі форми зіткнень"
+msgstr "Видимі контури зіткнень"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
@@ -38153,9 +38175,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:4
-#, fuzzy
 msgid "Part 6"
-msgstr "Частина"
+msgstr "Частина 6"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:7
@@ -44039,9 +44060,8 @@ msgid "FPS tutorial"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:4
-#, fuzzy
 msgid "Part 5"
-msgstr "Частина"
+msgstr "Частина 5"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:9
 msgid ""
@@ -50672,7 +50692,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
-msgstr "Локаль"
+msgstr "Мова"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"

@@ -5,13 +5,14 @@
 # geun-tak Jeong <beroberos@gmail.com>, 2018.
 # Sun Kim <perplexingsun@gmail.com>, 2018.
 # 박한얼 <volzhs@gmail.com>, 2018.
+# 송태섭 <xotjq237@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-02 12:40+0200\n"
-"PO-Revision-Date: 2018-04-30 14:41+0000\n"
+"PO-Revision-Date: 2018-05-08 19:07+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -1071,9 +1072,8 @@ msgid "Usage in GDScript"
 msgstr "GDScript에서의 사용법"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-#, fuzzy
 msgid "Examine this concrete GDScript example:"
-msgstr "구체적인 GDScript 예시를 참고해보세요::"
+msgstr "구체적인 GDScript 예시를 참고해보세요:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -1118,9 +1118,8 @@ msgstr ""
 "순서는 인덱스나 혼합 스타일의 배열이 사용될 때만 중요합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
-#, fuzzy
 msgid "A quick example in GDScript:"
-msgstr "GDScript의 빠른 예제::"
+msgstr "GDScript의 빠른 예제:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:66
 msgid ""
@@ -1138,16 +1137,21 @@ msgid ""
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
+"형식 문자열은 여러가지 플레이스 홀더를 포함할 수 있습니다. 예를 들어, 값은 배"
+"열의 형식으로, 각각의 플레이스 홀더에 하나의 값으로 전달됩니다 (``*``으로 이"
+"루어진 형식 지정자를 사용하지 않는다면, `동적 패딩`_을 보세요):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
+"값은 순서대로 삽입됩니다. 모든 플레이스 홀더는 동시에 바뀌므로 적절한 수의 값"
+"이 있어야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
-msgstr ""
+msgstr "형식 지정자"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:92
 msgid ""
@@ -1156,10 +1160,13 @@ msgid ""
 "themselves like ``s``, some appear before other characters, some only work "
 "with certain values or characters."
 msgstr ""
+"플레이스 홀더에 사용되는 ``s``말고도 다른 형식 지정자가 있습니다. 이들은 하"
+"나 이상의 문자로 구성됩니다. ``s``처럼 몇몇은 스스로 작동하지만, 일부는 다른 "
+"문자들 앞에 나타나기도 하며, 어떤 것은 오직 특정 값이나 문자에만 작동합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:99
 msgid "Placeholder types"
-msgstr ""
+msgstr "플레이스 홀더 유형"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:101
 msgid ""
@@ -1167,92 +1174,99 @@ msgid ""
 "format specifier. Apart from ``s``, these require certain types of "
 "parameters."
 msgstr ""
+"형식 지정자의 마지막 문자처럼 항상 나타나는 유형이 있습니다. ``s``와는 별개"
+"로, 이들은 특정 유형의 매개변수가 필요합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
-msgstr ""
+msgstr "``s``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid ""
 "**Simple** conversion to String by the same method as implicit String "
 "conversion."
-msgstr ""
+msgstr "암시적 문자열 변환과 같은 방법으로 문자열을 **간단히** 변환."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
-msgstr ""
+msgstr "``c``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid ""
 "A single **Unicode character**. Expects an unsigned 8-bit integer (0-255) "
 "for a code point or a single-character string."
 msgstr ""
+"하나의 **유니코드 문자**. 코드 포인트나 단일 문자의 경우 부호없는 8비트 정수 "
+"(0-255) 가 필요합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid ""
 "A **decimal integral** number. Expects an integral or real number (will be "
 "floored)."
-msgstr ""
+msgstr "**십진법 정수**. 정수나 (반올림 할) 실수가 필요합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
-msgstr ""
+msgstr "``o``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid ""
 "An **octal integral** number. Expects an integral or real number (will be "
 "floored)."
-msgstr ""
+msgstr "**8진법 정수**. 정수나 (반올림 할) 실수가 필요합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid "``x``"
-msgstr ""
+msgstr "``x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:117
 msgid ""
 "A **hexadecimal integral** number with **lower-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"**소문자**로 이루어진 **16진법 정수**. 정수나 (반올림 할) 실수가 필요합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid "``X``"
-msgstr ""
+msgstr "``X``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:120
 msgid ""
 "A **hexadecimal integral** number with **upper-case** letters. Expects an "
 "integral or real number (will be floored)."
 msgstr ""
+"**대문자**로 이루어진 **16진법 정수**. 정수나 (반올림 할) 실수가 필요합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
-msgstr ""
+msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr ""
+msgstr "**실수**. 정수나 실수가 필요합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:128
 msgid "Placeholder modifiers"
-msgstr ""
+msgstr "플레이스 홀더 수정자"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:130
 msgid ""
 "These characters appear before the above. Some of them work only under "
 "certain conditions."
 msgstr ""
+"이 문자는 위 문자들보다 앞에서 나타납니다. 일부는 특정 조건에서만 작동합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
-msgstr ""
+msgstr "숫자 지정자에서, 숫자가 양수라면 **+ 부호를 표시**."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:94
@@ -1275,45 +1289,51 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:454
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:469
 msgid "Integer"
-msgstr ""
+msgstr "정수"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:136
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer placeholder. When used after ``.``, see ``.``."
 msgstr ""
+"**채우기**를 설정. 정수 플레이스 홀더에서 정수가 ``0``으로 시작한다면 그곳을 "
+"0이나 공백으로 채웁니다. ``.``뒤에서 쓴다면, ``.``를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
-msgstr ""
+msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid ""
 "Before ``f``, set **precision** to 0 decimal places. Can be followed up with "
 "numbers to change. Padded with zeroes."
 msgstr ""
+"``f``이전에, **정밀도**를 소수점 이하까지 설정하십시오. 변경할 숫자를 추적할 "
+"수 있습니다. 0으로 채워집니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
-msgstr ""
+msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "**Pad to the right** rather than the left."
-msgstr ""
+msgstr "왼쪽 대신 **오른쪽을 채웁니다**."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
-msgstr ""
+msgstr "``*``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid ""
 "**Dynamic padding**, expect additional integral parameter to set padding or "
 "precision after ``.``, see `dynamic padding`_."
 msgstr ""
+"**동적 채우기**로, 채우기나 ``.``이후의 정밀도를 설정하기 위한 추가 적분 매개"
+"변수가 필요합니다, `동적 채우기`_를 참고하세요."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr ""
+msgstr "채우기"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -1321,16 +1341,19 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
+"``.`` (*점*), ``*`` (*별표*), ``-`` (*마이너스 문자*) 그리고 한 자리수 "
+"(``0``-``9``) 문자들이 채우기에 사용됩니다. 이것을 고정 너비 글꼴에 사용한다"
+"면, 세로로 정렬된 여러 값들을 프린트할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
-msgstr ""
+msgstr "문자열을 최소 길이로 채우려면, 지정자에 정수를 추가하십시오:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
-msgstr ""
+msgstr "정수가 ``0``으로 시작한다면, 적분 값은 공백 대신 0으로 채워집니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -1339,16 +1362,21 @@ msgid ""
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"정밀도는 정수 뒤에 ``.``(*점*)을 추가해서 실수로 지정할 수 있습니다. ``.``뒤"
+"에 정수가 없다면, 정밀도가 0으로, 적분 값에 반올림됩니다. 채우기에 쓰이는 정"
+"수는 점 앞에 나와야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
+"``-`` 문자는 왼쪽이 아닌 오른쪽으로 채우므로, 오른쪽 텍스트 정렬에 유용합니"
+"다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
-msgstr ""
+msgstr "동적 채우기"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
@@ -1357,72 +1385,80 @@ msgid ""
 "in the format specifier. The values for padding and precision are then "
 "passed when formatting:"
 msgstr ""
+"``*`` (*별표*) 문자를 사용해서, 형식 문자열을 수정하지 않고 채우기나 정밀도"
+"를 설정할 수 있습니다. 이는 형식 지정자에서 정수 대신 사용됩니다. 그 후 서식"
+"을 지정 할 때 채우기와 정밀도의 값은 전달됩니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
+"정수 자리 표시자에서 ``*`` 앞에 ``0``을 추가해 0으로 채울 수도 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
-msgstr ""
+msgstr "이스케이프 시퀀스"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
+"리터럴 ``%`` 문자를 형식 문자열에 넣으려면, 플레이스 홀더처럼 읽히지 않도록 "
+"이스케이프 해야 합니다. 잘못하면 문자를 두 배로 만들 것입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
-msgstr ""
+msgstr "형식 메서드 예제"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
 msgstr ""
+"``String.format``  메서드의 호출을 사용하는 방법에는 이런 것들이 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "**Type**"
-msgstr ""
+msgstr "**타입**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
-msgstr ""
+msgstr "**스타일**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:275
 msgid "**Example**"
-msgstr ""
+msgstr "**예**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:275
 msgid "**Result**"
-msgstr ""
+msgstr "**결과**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:195
 msgid "Dictionary"
-msgstr ""
+msgstr "딕셔너리"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid "key"
-msgstr ""
+msgstr "키"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 msgid ""
 "\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})"
 msgstr ""
+"\"안녕, {이름} v{버전}!\".format({\"이름\":\"Godette\", \"버전\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -1431,26 +1467,26 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "Hi, Godette v3.0!"
-msgstr ""
+msgstr "안녕, Godette v3.0!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "index"
-msgstr ""
+msgstr "인덱스"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
-msgstr ""
+msgstr "\"안녕, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "mix"
-msgstr ""
+msgstr "믹스"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 msgid ""
 "\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
-msgstr ""
+msgstr "\"안녕, {0} v{버전}!\".format({\"0\":\"Godette\", \"버전\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -1458,27 +1494,31 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:174
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:182
 msgid "Array"
-msgstr ""
+msgstr "배열"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
 "\"]])"
 msgstr ""
+"\"안녕, {이름} v{버전}!\".format([[\"버전\":\"3.0\"], [\"이름\":\"Godette"
+"\"]])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
-msgstr ""
+msgstr "\"안녕, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "\"Hi, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
-msgstr ""
+msgstr "\"안녕, {이름} v{0}!\".format([3.0, [\"이름\":\"Godette\"]])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:257
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
+"플레이스 홀더도 ``String.format``을 사용할 때 사용자 정의를 할 수 있습니다, "
+"이 기능의 몇 가지 예를 소개합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "Infix (default)"
@@ -2138,9 +2178,8 @@ msgid "Coroutine support. See `Coroutines with yield`_."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
-#, fuzzy
 msgid "assert"
-msgstr "클래스"
+msgstr "어서트"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid ""
@@ -2178,18 +2217,16 @@ msgid "PI"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
-#, fuzzy
 msgid "PI constant."
-msgstr "상수"
+msgstr "PI 상수."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
 msgid "TAU"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
-#, fuzzy
 msgid "TAU constant."
-msgstr "상수"
+msgstr "TAU 상수."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "INF"
@@ -18353,9 +18390,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:351
-#, fuzzy
 msgid "Binding Signals"
-msgstr "C# 시그널"
+msgstr "바인딩 시그널"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:353
 msgid ""
@@ -18387,9 +18423,8 @@ msgid "Summing it up"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:436
-#, fuzzy
 msgid "Here is the GDScript sample code"
-msgstr "구체적인 GDScript 예시를 참고해보세요::"
+msgstr "GDScript 샘플 코드입니다"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:469
 #: ../../docs/development/compiling/compiling_with_mono.rst:47

@@ -25,8 +25,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-02 12:40+0200\n"
-"PO-Revision-Date: 2018-05-02 10:13+0000\n"
-"Last-Translator: korge Rodriguez <jorge.3dcomv@gmail.com>\n"
+"PO-Revision-Date: 2018-05-08 19:07+0000\n"
+"Last-Translator: Elias Mascheroni <eliasmg-py@outlook.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -125,8 +125,8 @@ msgid ""
 msgstr ""
 "Un motor de juego es una herramienta compleja, y por lo tanto es difícil "
 "presentar a Godot en pocas palabras. Sin embargo, aquí está nuestra "
-"presentación de relaciones públicas, que eres libre de reutilizar si "
-"necesitas un resumen rápido sobre Godot Engine."
+"presentación publica, eres libre de reutilizar si necesitas un resumen "
+"rápido sobre Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -141,7 +141,7 @@ msgstr ""
 "características, para crear juegos 2d y 3d desde una interfaz unida. Provee "
 "un conjunto exhaustivo de herramientas comunes, para que los usuarios puedan "
 "enfocarse en crear juegos sin tener que reinventar la rueda. Los juegos "
-"pueden ser exportados en un sólo click a numerosas plataformas, incluyendo "
+"pueden ser exportados en un sólo clic a numerosas plataformas, incluyendo "
 "las mayores plataformas de escritorio (Linux, macOS, Windows) así como "
 "móviles (Android, iOS) y basadas en la web (HTML5)."
 
@@ -688,8 +688,8 @@ msgid ""
 "For creating Godot Editor plugins look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Para crear plugins para el Editor de Godot, vea :ref:`EditorPlugins "
-"<doc_making_plugins>` y los scripts para herramientas."
+"Para crear complementos para el Editor de Godot, vea :ref:`EditorPlugins "
+"<doc_making_plugins>` y tool scripts."
 
 #: ../../docs/about/faq.rst:139
 msgid ""
@@ -885,10 +885,10 @@ msgid ""
 "there is a minimum one and you want black bars to appear instead. This is "
 "also explained in the previous step."
 msgstr ""
-"Determine una resolución mínima y luego decida si quiere que su juego se "
-"estire vertical u horizontalmente para distintas relaciones de aspecto, o si "
-"habrá una resolución mínima y se quiere que aparezcan barras negras a los "
-"lados. Esto está explicado también en el paso previo."
+"Determine una resolución mínima y después decida si quiere que su juego se "
+"estire de manera vertical u horizontal para los diferentes relaciones de "
+"aspecto, o si hay algún limite y prefiere que aparezcan barras negras en los "
+"bordes. Esto también esta explicado en el paso anterior."
 
 #: ../../docs/about/faq.rst:217
 msgid ""
@@ -950,7 +950,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:238
 msgid "Let's add an alternative workflow for people who prefer it"
 msgstr ""
-"Agreguemos un flujo de trabajo alternativo para la gente que así lo prefiera"
+"Agregamos un metodo alterno al flujo de trabajo para las personas que así lo "
+"prefieran"
 
 #: ../../docs/about/faq.rst:240
 msgid ""
@@ -971,8 +972,8 @@ msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
-"Tu experiencia utilizando el software y los problemas que tienes (nos "
-"importa esto más que la ideas sobre cómo mejorarlo)."
+"Tu experiencia usando el software y los problemas que tengas (Nos importa "
+"mucho más, que las ideas de como mejorarlo)."
 
 #: ../../docs/about/faq.rst:248
 msgid ""
@@ -1128,9 +1129,9 @@ msgid ""
 "GDScript offers a feature called *format strings* which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
-"GDScript ofrece una característica llamada *formateo de cadenas* que permite "
-"reutilizar plantillas de texto para crear cadenas de texto similares de una "
-"manera breve."
+"GDScript ofrece una funcionalidad llamada *cadenas de formato* que permite "
+"reutilizar plantillas de texto para crear distintas cadenas de texto de una "
+"manera breve y compacta."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -1138,9 +1139,10 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
-"Las format strings son como las cadenas de texto (strings) normales, excepto "
-"en que contienen ciertos parámetros para secuencias de caracteres. Esos "
-"parámetros pueden ser reemplazados por otros enviados a la format string."
+"Las cadenas de formato son como las cadenas normales, excepto que contienen "
+"ciertas secuencias de caracteres de marcadores de posición. Estos marcadores "
+"de posición pueden ser reemplazados fácilmente por parámetros pasados a la "
+"cadena de formato."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -1149,17 +1151,16 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
-"Como un ejemplo, con ``%s`` como parámetro, la format string ``\"Hello %s, "
-"how are you?`` puede fácilmente ser cambiada a ``\"Hello World, how are you?"
-"``. Nota el parámetro en el medio de la cadena; modificándolo sin la format "
-"string, puede ser engorroso."
+"Por ejemplo, con ``%s`` como marcador de posición, la cadena de formato ``"
+"\"Hello %s, how are you?`` puede cambiarse fácilmente por ``\"Hello World, "
+"how are you?\"``. Note que el marcador de posición está en el medio de la "
+"cadena; modificarlo sin cadenas de formato podría ser engorroso."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
 msgstr "Utilización en GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-#, fuzzy
 msgid "Examine this concrete GDScript example:"
 msgstr "Vea este ejemplo concreto en GDScript:"
 
@@ -1212,7 +1213,6 @@ msgstr ""
 "mixto ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
-#, fuzzy
 msgid "A quick example in GDScript:"
 msgstr "Un ejemplo rápido en GDScript:"
 
@@ -1229,16 +1229,15 @@ msgid "Multiple placeholders"
 msgstr "Parámetros múltiples"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
-#, fuzzy
 msgid ""
 "Format strings may contain multiple placeholders. In such a case, the values "
 "are handed in the form of an array, one value per placeholder (unless using "
 "a format specifier with ``*``, see `dynamic padding`_):"
 msgstr ""
-"Las format strings pueden contener múltiples parámetros. En cuyo caso, los "
-"valores son manejados en forma de arreglo, un valor por parámetro (a menos "
-"que se utilice un especificador de formato con un ``*``, ver `Relleno "
-"dinámico`_)::"
+"Las cadenas de formato pueden contener múltiples variables. En cuyo caso, "
+"los valores son manejados en forma de array, un valor por variable (a menos "
+"que se utilice un especificador de formato con un ``*``, ver `Rellenador "
+"Dinamico`_):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:85
 msgid ""
@@ -1456,20 +1455,18 @@ msgstr ""
 "una fuente con ancho fijo."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
-#, fuzzy
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
-"Para alinear una cadena a una longitud mínima, agrega un entero al "
-"especificador::"
+"Para rellenar una cadena a una longitud mínima, añada un número entero al "
+"especifier:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
-#, fuzzy
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
 msgstr ""
 "Si el entero comienza con ``0``, los valores enteros son rellenados con "
-"ceros en lugar de espacios en blanco::"
+"ceros en lugar de espacios en blanco:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
 msgid ""
@@ -1484,20 +1481,18 @@ msgstr ""
 "para relleno debe aparecer antes que el el punto."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
-#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
-"El caracter  ``-`` provocará un relleno a la derecha en lugar de la "
-"izquierda, útil para alineamiento de texto a la derecha::"
+"El caracter  ``-`` provocará un relleno a la derecha en vez de la izquierda, "
+"útil para alineo de texto a la derecha::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
 msgstr "Relleno dinámico"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
-#, fuzzy
 msgid ""
 "By using the ``*`` (*asterisk*) character, the padding or precision can be "
 "set without modifying the format string. It is used in place of an integer "
@@ -1505,32 +1500,30 @@ msgid ""
 "passed when formatting:"
 msgstr ""
 "Al utilizar el caracter  ``*`` (*asterisco*), el relleno o precisión podrán "
-"especificarse sin modificar el format string. Es usado en lugar de un entero "
-"en el especificador de formato. Los valores para relleno y precisión son "
-"pasados cuando se aplica el formato::"
+"especificarse sin modificar la cadena string. Se usa en vez de un entero en "
+"el format specifier. Los valores para relleno y precisión son pasados al "
+"aplicarse el formato:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
-#, fuzzy
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
 msgstr ""
-"Es posible rellenar con ceros en parámetros enteros agregando ``0`` antes "
-"del ``*``::"
+"Es posible rellenar con ceros en las variables enteras agregando ``0`` antes "
+"del ``*``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
 msgstr "Secuencias de escape"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
-#, fuzzy
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
-"Para insertar un caracter literal ``%`` dentro de una format string, debe "
-"ser \"escapado\" para para impedir que se lea como parámetro. Esto se "
-"consigue duplicando el caracter::"
+"Para insertar un caracter literal ``%`` dentro de una cadena string, debe "
+"\"escaparse\" para para impedir que se lea como variable. Esto se consigue "
+"duplicando el caracter:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
@@ -1624,7 +1617,6 @@ msgid "Array"
 msgstr "Arreglo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
-#, fuzzy
 msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
 "\"]])"
@@ -1809,18 +1801,16 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:83
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#, fuzzy
 msgid "**Good**:"
-msgstr "**Bien**"
+msgstr "**Bien**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:93
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
-#, fuzzy
 msgid "**Bad**:"
-msgstr "**Mal**"
+msgstr "**Mal**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
 msgid ""
@@ -1879,11 +1869,11 @@ msgid ""
 msgstr ""
 "Siempre use un espacio en blanco alrededor de operadores y después de comas. "
 "Evite espacios innecesarios en las referencias de diccionarios y en las "
-"llamadas de las funciones, o para crear \"columnas.\""
+"llamadas de las funciones, o para crear \"columnas\"."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
 msgid "**NEVER**:"
-msgstr ""
+msgstr "**NUNCA**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:193
@@ -1909,7 +1899,7 @@ msgstr "Usa PascalCase: ``extends KinematicBody``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:167
 msgid "Also when loading a class into a constant or variable:"
-msgstr "También cuando se carga una clase en una constante o una variable:"
+msgstr "También cuando se carga una clase en una constante o variable:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:174
 msgid "Functions and Variables"
@@ -2125,16 +2115,17 @@ msgid "Keywords"
 msgstr "Palabras clave"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:145
-#, fuzzy
 msgid ""
 "The following is the list of keywords supported by the language. Since "
 "keywords are reserved words (tokens), they can't be used as identifiers. "
 "Operators (like ``in``, ``not``, ``and`` or ``or``) and names of built-in "
 "types as listed in the following sections are also reserved."
 msgstr ""
-"La siguiente es la lista de palabras clave soportadas por el lenguaje. Como "
-"las palabras claves son palabras reservadas (símbolos), no pueden ser "
-"utilizadas como identificadores."
+"La siguiente lista de palabras clave soportadas por el lenguaje. Como las "
+"palabras claves son palabras reservadas (símbolos), no pueden ser utilizadas "
+"como identificadores. Operadores(como ``in``, ``not``, ``and`` or ``or``) y "
+"nombres de tipo integrados listados en la siguiente sección tambien son "
+"reservados."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:150
 msgid ""
@@ -2142,6 +2133,9 @@ msgid ""
 "godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ in "
 "case you want to take a look under the hood."
 msgstr ""
+"Las palabras clave están definidas en el `GDScript tokenizer <https://github."
+"com/godotengine/godot/blob/master/modules/gdscript/gdscript_tokenizer.cpp>`_ "
+"en caso de que se desee ver en detalle su funcionamiento."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:154
 msgid "Keyword"
@@ -2278,11 +2272,11 @@ msgstr "Prueba si una variable extiende de la clase dada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "self"
-msgstr ""
+msgstr "self"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "Refers to current class instance."
-msgstr ""
+msgstr "Se refiere a la instancia de clase actual."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "tool"
@@ -2294,7 +2288,7 @@ msgstr "Ejecuta el script en el editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "signal"
-msgstr "signal"
+msgstr "señal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Defines a signal."
@@ -2331,7 +2325,7 @@ msgstr "enum"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "Defines an enum."
-msgstr "Define una enumeración."
+msgstr "Define una enum."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 msgid "var"
@@ -2379,39 +2373,39 @@ msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
 msgid "Editor helper for debugger breakpoints."
-msgstr "Asistencia del editor para puntos de interrupción del depurador."
+msgstr "Editor helper para puntos de interrupción del depurador."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
-#, fuzzy
 msgid "preload"
-msgstr "load"
+msgstr "precargar"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Preloads a class or variable. See `Classes as resources`_."
-msgstr ""
+msgstr "Precarga una clase o variable. Ver `Clases como recursos`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "yield"
-msgstr ""
+msgstr "yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "Coroutine support. See `Coroutines with yield`_."
-msgstr ""
+msgstr "Soporte de corrutinas. Ver `Corrutinas con yield`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
-#, fuzzy
 msgid "assert"
-msgstr "Clases"
+msgstr "assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid ""
 "Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
 "`Assert keyword`_."
 msgstr ""
+"Afirma una condición, registra un error si falla. Ignorado en builds que no "
+"son de depuración. Ver `Palabra clave Assert`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "remote"
-msgstr ""
+msgstr "remoto"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
@@ -2421,52 +2415,52 @@ msgid ""
 "Networking RPC annotation. See :ref:`high-level multiplayer docs "
 "<doc_high_level_multiplayer>`."
 msgstr ""
+"Anotación de Networking RPC. Ver :ref:`high-level multiplayer docs "
+"<doc_high_level_multiplayer>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "master"
-msgstr ""
+msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid "slave"
-msgstr ""
+msgstr "slave"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
 msgid "sync"
-msgstr ""
+msgstr "sincronizar"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 msgid "PI"
-msgstr ""
+msgstr "PI"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
-#, fuzzy
 msgid "PI constant."
-msgstr "Constantes"
+msgstr "Constante PI."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
 msgid "TAU"
-msgstr ""
+msgstr "TAU"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
-#, fuzzy
 msgid "TAU constant."
-msgstr "Constantes"
+msgstr "Constante TAU."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "INF"
-msgstr ""
+msgstr "INF"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "Infinity constant. Used for comparisons."
-msgstr ""
+msgstr "Constante de infinito. Utilizado para comparaciones."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "NAN"
-msgstr ""
+msgstr "NAN"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 msgid "NAN (not a number) constant. Used for comparisons."
-msgstr ""
+msgstr "Constante NAN (no es un número). Usada para comparaciones."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
@@ -2474,9 +2468,8 @@ msgid "Operators"
 msgstr "Operadores"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
-#, fuzzy
 msgid "The following is the list of supported operators and their precedence."
-msgstr "La siguiente lista muestra los operadores soportados y su precedencia"
+msgstr "La siguiente lista muestra los operadores soportados y su precedencia."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:241
 msgid "**Operator**"
@@ -2493,7 +2486,7 @@ msgstr "``x[index]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:243
 msgid "Subscription, Highest Priority"
-msgstr "Suscripción, alta prioridad"
+msgstr "Suscripción, máxima prioridad"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:245
 msgid "``x.attribute``"
@@ -2610,7 +2603,7 @@ msgstr "``!`` ``not``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "Boolean NOT"
-msgstr "NOT Booleano"
+msgstr "Negación booleana"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "``and`` ``&&``"
@@ -2618,7 +2611,7 @@ msgstr "``and`` ``&&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Boolean AND"
-msgstr "AND Booleano"
+msgstr "Conjunción booleana"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
 msgid "``or`` ``||``"
@@ -2626,7 +2619,7 @@ msgstr "``or`` ``||``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
 msgid "Boolean OR"
-msgstr "OR Booleano"
+msgstr "Disyunción booleana"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:284
 msgid "``if x else``"
@@ -2678,16 +2671,15 @@ msgstr "Número de coma flotante (real)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "``\"Hello\"``, ``\"Hi\"``"
-msgstr "``\"Hola\"``, ``\"Hey\"``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "Strings"
 msgstr "Cadenas de caracteres"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
-#, fuzzy
 msgid "``\"\"\"Hello\"\"\"``"
-msgstr "``\"\"\"Hola, Amigo\"\"\"``"
+msgstr "``\"\"\"Hola\"\"\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "Multiline string"
@@ -2719,6 +2711,10 @@ msgid ""
 "the beginning and end of a block of text. Note that this creates a string, "
 "therefore, it will not be stripped away when the script is compiled."
 msgstr ""
+"Comentarios multilíne pueden ser creados usando \"\"\" (tres comillas "
+"seguidas) al principio y fin del bloque de texto. Tener en cuenta que esto "
+"crea una cadena (String), por lo tanto no será removido del script cuando es "
+"compilado."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:330
 msgid "Built-in types"
@@ -2733,6 +2729,12 @@ msgid ""
 "``PoolByteArray`` though, those are passed as values too, so consider this "
 "when deciding which to use!)"
 msgstr ""
+"Los tipos built-in son alojados en pila y son pasados por valor. Esto "
+"significa que una copia es creada en cada asignación o cuando se pasan como "
+"argumento a funciones. La única excepción son los ``Array`` y "
+"``Dictionary``, que son pasados por referencia así que son compartidos. (No "
+"los ``PoolArray`` como ``PoolByteArray``, esos son pasados por valor "
+"también, así que considera esto cuando decidas cuál usar!)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
 msgid "Basic built-in types"
@@ -2797,13 +2799,14 @@ msgid ""
 "strings aka printf functionality <doc_gdscript_printf>`."
 msgstr ""
 "Una secuencia de caracteres en `formato Unicode<https://es.wikipedia.org/"
-"wiki/Unicode>`_. Los Strings pueden contener `secuencias de escape estándar "
-"C <https://en.wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript soporta :"
-"ref:`cadenas con formato, alias funcionalidad printf<doc_gdscript_printf>`."
+"wiki/Unicode>`_. Los Strings pueden contener `secuencias de escape C "
+"estándar <https://en.wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript "
+"soporta :ref:`cadenas de formato, alias funcionalidad "
+"printf<doc_gdscript_printf>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "Vector built-in types"
-msgstr "Tipos incorporados de Vectores"
+msgstr "Tipos de Vectores propios"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:377
 msgid ":ref:`Vector2 <class_Vector2>`"
@@ -2826,8 +2829,9 @@ msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Alternatively contains an ``end`` field which is ``position+size``."
 msgstr ""
-"Tipo de Rectángulo 2D que contiene dos vectores: ``position`` y ``size``. "
-"También contiene ``end`` definido como ``position+size``."
+"Tipo de rectángulo 2D que contiene dos campos de vectores. ``position`` y "
+"``size``. Alternativamente contiene un campo ``end`` el cual es `position"
+"+size``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:389
 msgid ":ref:`Vector3 <class_Vector3>`"
@@ -2883,9 +2887,9 @@ msgid ""
 "``position`` and ``size``. Alternatively contains an ``end`` field which is "
 "``position+size``."
 msgstr ""
-"Caja limitante alineada-al-eje (o caja 3D) contiene 2 campos para vector "
-"``position`` y ``size``. Alternativamente contiene un campo ``end`` que "
-"equivale a ``position+size``."
+"El cuadro delimitador \"Axis-aligned\" (o 3D box) contiene 2 campos "
+"vectoriales: ``position`` y ``size``. Opcionalmente contiene un campo "
+"```end`` que es ``position+size``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:419
 msgid ":ref:`Basis <class_Basis>`"
@@ -2913,7 +2917,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:432
 msgid "Engine built-in types"
-msgstr "Los tipos incluidos en el motor"
+msgstr "Tipos integrados del motor"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
 msgid ":ref:`Color <class_Color>`"
@@ -2989,13 +2993,13 @@ msgid ""
 "arrays. They are therefore only recommended to use for very large data sets:"
 msgstr ""
 "Los arrays en Gdscript son asignados en memoria de forma lineal para hacer "
-"su acceso más veloz. No obstante, arrays muy largos (de más de algunas "
-"decenas de miles de elementos) pueden causar fragmentación en la memoria. Si "
-"esto te supone un problema, hay disponibles varios tipos especiales de "
-"arrays. Estos solo aceptan un tipo concreto de dato, previenen la "
-"fragmentación de la memoria y también usan menos cantidad, pero son atómicos "
-"y suelen ser de acceso más lento que los arrays  genéricos. Por eso solo se "
-"recomiendan para grandes cantidades de datos:"
+"su acceso más veloz. No obstante, arrays muy largos (más de decenas de miles "
+"de elementos) pueden causar fragmentación en la memoria. Si esto te supone "
+"un problema, hay disponibles varios tipos especiales de arrays. Estos solo "
+"aceptan un tipo concreto de dato, previenen la fragmentación de la memoria y "
+"también usan una menor cantidad de ésta, pero son atómicos y suelen ser de "
+"acceso más lento que los arrays  genéricos. Por eso solo se recomiendan para "
+"grandes cantidades de datos:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:483
 msgid ""
@@ -3045,7 +3049,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:492
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr ":ref:`Dictionary <class_Dictionary>`"
+msgstr ":ref:`Diccionario <class_Dictionary>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:494
 msgid "Associative container which contains values referenced by unique keys."
@@ -3076,7 +3080,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:530
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
-msgstr "Data"
+msgstr "Datos"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:533
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
@@ -3200,9 +3204,9 @@ msgid ""
 "to make libraries of helper functions:"
 msgstr ""
 "Una función puede ser declarada como estática. Cuando una función es "
-"estática la misma no tiene acceso a las variables miembro de la instancia o "
-"a ``self``. Esto es útil sobre todo para hacer librerías de funciones de "
-"ayuda:"
+"estática no tiene acceso a las variables de miembro de la instancia o a "
+"``self``. Esto es útil principalmente para hacer bibliotecas de funciones "
+"helper:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:647
 msgid "Statements and control flow"
@@ -3491,7 +3495,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:876
 msgid "Below is an example of a class file."
-msgstr "Aquí abajo tenemos un ejemplo de un archivo de clase."
+msgstr "Abajo se muestra un ejemplo de archivo de clase."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:888
 msgid "Inheritance"
@@ -3543,6 +3547,9 @@ msgid ""
 "functions with the same name in their base classes. So if you still want to "
 "call them, you can use ``.`` like the ``super`` keyword in other languages:"
 msgstr ""
+"Esto es especialmente útil porque extendiendo clases se reemplazan funciones "
+"con el mismo nombre en la clase base. Si se quiere llamar a estas, puedes "
+"utilizar ``.`` que es como la palabra clave ``super`` en otros lenguajes:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:943
 msgid "Class Constructor"
@@ -3854,9 +3861,8 @@ msgstr ""
 "emit_signal:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1297
-#, fuzzy
 msgid "Coroutines with yield"
-msgstr "Señales y co-rutinas"
+msgstr "Corrutinas con ``yield``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1299
 msgid ""
@@ -3867,7 +3873,7 @@ msgid ""
 "resulting object will continue execution and return whatever the function "
 "returns. Once resumed the state object becomes invalid. Here is an example:"
 msgstr ""
-"GDScript ofrece soporte para `co-routinas <https://en.wikipedia.org/wiki/"
+"GDScript ofrece soporte para `Corrutinas <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ a través de la función integrada ``yield``. Ejecutar "
 "``yield()`` hará que se retorne de la función actual, con el estado "
 "congelado que esta función tenga como valor de retorno. Ejecutando "
@@ -3931,15 +3937,16 @@ msgstr ""
 "abajo en una sola línea:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1396
-#, fuzzy
 msgid "Assert keyword"
-msgstr "Palabra clave export"
+msgstr "Palabra clave Assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1398
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."
 msgstr ""
+"La palabra clave ``assert`` se puede usar para comprobar condiciones en "
+"versiones de depuración. Son ignoradas en versiones no debug."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:4
 msgid "GDScript: An introduction to dynamic languages"
@@ -4051,13 +4058,14 @@ msgid ""
 "entire game in GDScript and add small bits of C++ in the areas that need a "
 "performance boost."
 msgstr ""
-"Esto, trasladado a la realidad, significa que Godot+GDScript son una "
-"combinación diseñada para crear juegos rápida y eficientemente. Para juegos "
-"computacionalmente intensivos y que no se beneficien de las funcionalidades "
-"integradas (como los tipos Vector, el motor de físicas, la librería de "
-"matemáticas, etc), la posibilidad de usar C++ existe. Esto también te "
-"permite crear el juego entero en GDScript y añadir pequeñas partes en C++ en "
-"las áreas donde se necesite más rendimiento."
+"Esto, traducido a la realidad, significa que Godot+GDScript son una "
+"combinación diseñada para crear juegos muy rápida y eficientemente. Para "
+"juegos que son muy exigentes desde el punto de vista de computación y que no "
+"pueden beneficiarse de las herramientas incorporadas en el motor (como los "
+"tipos de vectores, el motor de física, la biblioteca de matemáticas, etc.), "
+"también existe la posibilidad de usar C++. Esto permite crear todo el juego "
+"en GDScript y añadir pequeños trozos de C++ en las áreas que necesitan un "
+"aumento de rendimiento."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
@@ -4196,8 +4204,8 @@ msgid ""
 "This datatype is generally not present in such languages (or only on limited "
 "form)."
 msgstr ""
-"Los diccionarios son una herramienta muy poderosa en lenguajes tipados "
-"dinámicamente. La mayoría de los programadores que provienen de lenguajes de "
+"Los diccionarios son una herramienta muy poderosa en lenguajes de tipado "
+"dinámico. La mayoría de los programadores que provienen de lenguajes de "
 "programación estáticos (como C++ o C#) ignoran su existencia y hacen su vida "
 "innecesariamente más difícil. Este tipo de datos generalmente no está "
 "presente en tales lenguajes (o sólo en forma limitada)."
@@ -4210,11 +4218,11 @@ msgid ""
 "They are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
-"Los diccionarios pueden relacionar cualquier valor a cualquier otro valor "
-"sin tener en cuenta el tipo de datos usado para la clave o valor. Contrario "
-"a la creencia popular, son muy eficientes porque se pueden implementar con "
-"tablas hash. Y de hecho, son tan eficientes que algunos lenguajes se atreven "
-"a implementar arrays como diccionarios."
+"Los diccionarios pueden asignar cualquier valor a cualquier otro valor con "
+"total desprecio por el tipo de datos utilizado como clave o valor. "
+"Contrariamente a la creencia popular, son muy eficientes porque pueden "
+"implementarse con tablas hash. Son, de hecho, tan eficientes que algunos "
+"idiomas llegarán a implementar arreglos como diccionarios."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
@@ -4268,8 +4276,8 @@ msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
 msgstr ""
-"Los tipos de datos de los contenedores (matrices y diccionarios) son "
-"iterables. Los diccionarios permiten iterar las claves:"
+"Los tipos de datos de los contenedores (arrays y diccionarios) son "
+"iterables. Los diccionarios permiten iterar entre las claves:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:355
 msgid "Iterating with indices is also possible:"
@@ -4292,9 +4300,8 @@ msgid "And backwards looping is done through a negative counter:"
 msgstr "Y el loop invertido se realiza a través de un contador negativo:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:399
-#, fuzzy
 msgid "Becomes:"
-msgstr "Se vuelve"
+msgstr "Se vuelve:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:407
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
@@ -4317,8 +4324,8 @@ msgid ""
 "forward iterator follows:"
 msgstr ""
 "Puedes crear iteradores personalizados en caso de que los predeterminados no "
-"resuelvan tus necesidades anulando las funciones ```_iter_init``, "
-"```_iter_next``, e ```_iter_get`` de la clase Variant en su script. A "
+"cumplan con tus necesidades anulando las funciones ``_iter_init``, "
+"``_iter_next``, e ``_iter_get`` de la clase Variant en su script. A "
 "continuación se muestra un ejemplo de implementación de un iterador avanzado:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:453
@@ -4556,10 +4563,10 @@ msgstr ""
 "Siendo que Godot tiene su propio editor de código, su soporte para C# es "
 "mínimo, y se recomienda usar un IDE o editor externo, como Visual Studio "
 "Code, o MonoDevelop, que tienen autocompletado, debugging y otras "
-"características útiles cuando se trabaja con C#. Para configurarlo, haz "
-"click en ``Editor``, después en ``Editor Settings``. Haz scroll hasta la "
-"parte inferior, a la opción ``Mono``. Dentro de esa opción haz click en "
-"``Editor``, y en esa página elige tu editor externo."
+"características útiles cuando se trabaja con C#. Para configurarlo, haz clic "
+"en ``Editor``, después en ``Editor Settings``. Haz scroll hasta la parte "
+"inferior, a la opción ``Mono``. Dentro de esa opción haz clic en ``Editor``, "
+"y en esa página elige tu editor externo."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:45
 msgid "Creating a C# script"
@@ -4680,7 +4687,7 @@ msgid ""
 "as the ``.cs`` file. If not, you will get the following error and won't be "
 "able to run the scene: ``Cannot find class XXX for script res://XXX.cs``."
 msgstr ""
-"Tenga en cuenta que la clase que deseas adjuntar a su nodo debe de ser "
+"Tén en cuenta que la clase que deseas adjuntar a tu nodo debe de ser "
 "nombrada como el archivo ``.cs``. De lo contrario, obtendrás el siguiente "
 "error y no podrás ejecutar la escena: ``Cannot find class XXX for script "
 "res://XXX.cs``."
@@ -4690,7 +4697,6 @@ msgid "General differences between C# and GDScript"
 msgstr "Diferencias generales entre C# y GDScript"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:119
-#, fuzzy
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -4699,8 +4705,8 @@ msgid ""
 msgstr ""
 "La API de C# usa ``PascalCase`` en lugar de ``snake_case`` en GDScript/C++. "
 "En la medida de lo posible, los campos y los getters/setters se han "
-"convertido en propiedades. En general, la API de C# Godot se esfuerza por "
-"ser tan idiomática como sea razonablemente posible."
+"convertido en propiedades. En general, la API de C# Godot se esfuerza en ser "
+"idiomática dentro de lo razonable."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:123
 msgid "For more, see the :ref:`doc_c_sharp_differences` page."
@@ -4830,7 +4836,6 @@ msgstr "Las constantes de ``ERR_*`` fueron movidas a ``Godot.Error``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:26
 #: ../../docs/tutorials/math/index.rst:2
-#, fuzzy
 msgid "Math"
 msgstr "Math"
 
@@ -4845,7 +4850,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "Random"
-msgstr "Random"
+msgstr "Aleatorio(Random)"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:35
 msgid ""
@@ -4870,13 +4875,12 @@ msgid "Signal keyword"
 msgstr "Palabra clave signal"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:46
-#, fuzzy
 msgid ""
 "Use the ``[Signal]`` attribute instead of the GDScript ``signal`` keyword. "
 "This attribute should be used on a `delegate`, whose name signature will be "
 "used to define the signal."
 msgstr ""
-"Utilice el atributo ``[Signal]`` en lugar de la etiqueta GDScript "
+"Use el atributo ``[Signal]`` en lugar de la palabre clave GDScript "
 "``signal``. Este atributo debe ser usado en un `delegate`, cuya definición "
 "de nombre será usado para identificar la señal."
 
@@ -4918,7 +4922,6 @@ msgid "There are a few differences though:"
 msgstr "Sin embargo, hay algunas diferencias:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:79
-#, fuzzy
 msgid ""
 "``erase``: Strings are immutable in C#, so we cannot modify the string "
 "passed to the extension method. For this reason ``Erase`` was added as an "
@@ -4957,7 +4960,6 @@ msgid "Basis"
 msgstr "Basis"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:107
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#, therefore ``new "
 "Basis()`` initializes all primitive members to their default value. Use "
@@ -5001,7 +5003,7 @@ msgstr "get_scale()"
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:64
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:261
 msgid "Scale"
-msgstr "Scale"
+msgstr "Escala"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:120
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:157
@@ -5009,7 +5011,6 @@ msgid "Transform2D"
 msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:122
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#, therefore ``new "
 "Transform2D()`` initializes all primitive members to their default value. "
@@ -5027,7 +5028,7 @@ msgstr "get_origin()"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:131
 msgid "Origin"
-msgstr "Origin"
+msgstr "Origen"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:132
 msgid "get_rotation()"
@@ -5037,11 +5038,11 @@ msgstr "get_rotation()"
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:223
 #: ../../docs/tutorials/animation/cutout_animation.rst:324
 msgid "Rotation"
-msgstr "Rotation"
+msgstr "Rotación"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:137
 msgid "Plane"
-msgstr "Plane"
+msgstr "Plano"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:144
 msgid "center()"
@@ -5084,7 +5085,6 @@ msgid "Quat"
 msgstr "Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:169
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#, therefore ``new "
 "Quat()`` initializes all primitive members to their default value. Please "
@@ -5178,8 +5178,8 @@ msgid ""
 "*This is temporary. Array is ref-counted, so it will need its own type that "
 "wraps the native side.*"
 msgstr ""
-"*Esto es temporal. Array es contado por referencia, así que necesita su "
-"propio tipo que lo encapsule en el lado nativo."
+"*Esto es temporal. El array es contado por referencia, así que necesita su "
+"propio tipo que lo encapsule en el lado nativo.*"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:199
 msgid "Use ``Dictionary<object, object>``."
@@ -5264,7 +5264,7 @@ msgstr "inst2dict"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:230
 msgid "load"
-msgstr "load"
+msgstr "cargar"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:230
 msgid "GD.load which is the same as ResourceLoader.load"
@@ -5362,7 +5362,8 @@ msgid ""
 "For a complete C# example, see the **Handling a signal** section in the step "
 "by step :ref:`doc_scripting` tutorial."
 msgstr ""
-"Para ejemplos completos de C#, ver la sección **Manipulando una señal**"
+"Para ejemplos completos de C#, ver la sección **Manipulando una señal** en "
+"el tutorial paso a paso :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:67
 msgid ""
@@ -5426,15 +5427,16 @@ msgstr ""
 "señal (con ``Connect`` o ``EmitSignal``)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:4
-#, fuzzy
 msgid "Style Guide"
-msgstr "Guía del estilo de GDScript"
+msgstr "Guía de estilo"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:6
 msgid ""
 "Having well-defined and consistent coding conventions is important for every "
 "project, and Godot is no exception to this rule."
 msgstr ""
+"Tener convenciones de codificación bien definidas y consistentes es "
+"importante para cada proyecto, y Godot no es una excepción a esta regla."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:9
 msgid ""
@@ -5445,6 +5447,12 @@ msgid ""
 "language, we encourage you to do the same, especially if you do not have "
 "such a guide yet."
 msgstr ""
+"Esta página contiene una guía de estilo de codificación que es seguida por "
+"los desarrolladores y colaboradores de Godot. Como tal, está dirigido "
+"principalmente a aquellos que quieren contribuir al proyecto, pero dado que "
+"las convenciones y directrices mencionadas en este artículo son las de mayor "
+"adopción por parte de los usuarios del lenguaje, te animamos a que hagas lo "
+"mismo, especialmente si aún no dispones de dicha guía."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:14
 msgid ""
@@ -5456,10 +5464,17 @@ msgid ""
 "`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
 "standard/design-guidelines/naming-guidelines>`_."
 msgstr ""
+"Este artículo no es de ninguna manera una guía exhaustiva sobre cómo seguir "
+"las convenciones de codificación estándar o las mejores prácticas. Si se "
+"siente inseguro de un aspecto que no se cubre aquí, por favor refiérase a "
+"una documentación más completa, tal como `C# Coding Conventions <https://"
+"docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/"
+"coding-conventions>`_ o `Framework Design Guidelines <https://docs.microsoft."
+"com/en-us/dotnet/standard/design-guidelines/naming-guidelines>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:21
 msgid "Language Specification"
-msgstr ""
+msgstr "Especificación del lenguaje"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:23
 msgid ""
@@ -5468,6 +5483,11 @@ msgid ""
 "language features only available in C# 7.0 or later, such as pattern "
 "matching or expression-bodied members inside get/set accessors."
 msgstr ""
+"Actualmente, Godot utiliza la versión 6.0 de C# en su motor y código fuente "
+"de ejemplo. Por lo tanto, antes de pasar a una versión más nueva, hay que "
+"tener cuidado de no mezclar las funciones de lenguaje sólo disponibles en C# "
+"7.0 o posterior, como la concordancia de patrones o los miembros con cuerpo "
+"de expresión dentro de los accesorios get/set."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:27
 msgid ""
@@ -5475,33 +5495,41 @@ msgid ""
 "`What's New in C# <https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/"
 ">`_."
 msgstr ""
+"Para obtener más información sobre las características de C# en diferentes "
+"versiones, consulte `What's New in C# <https://docs.microsoft.com/en-us/"
+"dotnet/csharp/whats-new/>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:31
-#, fuzzy
 msgid "Formatting Conventions"
-msgstr "Convenciones para la definición de nombres"
+msgstr "Convenciones de Formato"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:33
 msgid ""
 "If you create a new file, make sure that it uses linefeed (*LF*) characters "
 "to break lines, not *CRLF* or *CR*."
 msgstr ""
+"Si creas un nuevo archivo, asegúrate de que utiliza caracteres de salto de "
+"línea (*LF*) para separar líneas, no *CRLF* o *CR*."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:34
 msgid ""
 "Use UTF-8 encoding without a byte order mark (BOM <https://en.wikipedia.org/"
 "wiki/Byte_order_mark>)."
 msgstr ""
+"Utilice la codificación UTF-8 sin BOM (BOM <https://en.wikipedia.org/wiki/"
+"Byte_order_mark>)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:35
 msgid ""
 "Use 4 spaces instead of tabs for indentation (which is referred to as 'soft "
 "tabs')."
 msgstr ""
+"Utilice 4 espacios en lugar de tabuladores para la sangría (lo que se "
+"denomina 'tabulaciones suaves')."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:38
 msgid "Line Breaks and Blank Lines"
-msgstr ""
+msgstr "Saltos de línea y Líneas en blanco"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:40
 msgid ""
@@ -5510,34 +5538,41 @@ msgid ""
 "placing the brace associated with a control statement on the next line, "
 "indented to the same level:"
 msgstr ""
+"Para una regla general de identación, sigue  `The 'Allman Style' <https://en."
+"wikipedia.org/wiki/Identation_style#Allman_style>_ que recomienda poner el "
+"corchete asociado con una estructura de control en la siguiente línea, "
+"identado al mismo nivel:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:57
 msgid "However, you may choose to omit line breaks inside brackets,"
 msgstr ""
+"Sin embargo, puede optar por omitir los saltos de línea entre paréntesis,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:59
 msgid "For simple property accessors."
-msgstr ""
+msgstr "Para operadores de miembros simples."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:60
 msgid "For simple object, array, or collection initializers."
-msgstr ""
+msgstr "Para objetos simples, arrays o inicializadores de colección."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:61
 msgid "For abstract auto property, indexer, or event declarations."
 msgstr ""
+"Para abstraciones de propiedades auto, indexaciones, o declaraciones de "
+"evento."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:83
 msgid "Insert a blank line,"
-msgstr ""
+msgstr "Inserte una línea en blanco,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:85
 msgid "After *using* statement list."
-msgstr ""
+msgstr "Después de *usar* la lista de sentencias."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:86
 msgid "Between method, properties, and inner type declarations."
-msgstr ""
+msgstr "Entre métodos, propiedades y declaraciones de tipo internas."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:88
 msgid ""
@@ -5545,26 +5580,30 @@ msgid ""
 "relevance. In that case, consider inserting a blank line between the groups "
 "for easier reading."
 msgstr ""
+"Las declaraciones de campos y constantes se pueden agrupar según la "
+"relevancia. En ese caso, considera insertar una línea en blanco entre los "
+"grupos para facilitar la lectura."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:91
 msgid "Avoid inserting a blank line,"
-msgstr ""
+msgstr "Evita insertar una línea en blanco,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:93
 msgid "After an opening bracket ('{')."
-msgstr ""
+msgstr "Después de un corchete de apertura ('{')."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:94
 msgid "Before a closing bracket ('}')."
-msgstr ""
+msgstr "Antes de un corchete de cierre ('}')."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:95
 msgid "After a comment block, or a single line comment."
 msgstr ""
+"Después de un bloque de comentarios, o un comentario de una sola línea."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:96
 msgid "Adjacent to another blank line."
-msgstr ""
+msgstr "Adyacente a otra línea en blanco."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:133
 msgid ""
@@ -5573,82 +5612,95 @@ msgid ""
 "because some utilities have trouble recognizing the last line without it (i."
 "e. Linux's *cat* command)."
 msgstr ""
+"Considera romper una línea cuando tiene más de 100 caracteres. También es "
+"una buena práctica insertar un carácter de salto de línea (LF) al final de "
+"un archivo porque algunas utilidades tienen problemas para reconocer la "
+"última línea sin él (por ejemplo, el comando *cat* de Linux)."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:138
 msgid "Using Spaces"
-msgstr ""
+msgstr "Usar espacios"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:140
 msgid "Insert a space,"
-msgstr ""
+msgstr "Inserta un espacio,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:142
 msgid "Around a binary and tertiary operator."
-msgstr ""
+msgstr "Alrededor de un operador binario y ternario."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:143
 msgid ""
 "Between an opening parenthesis and *if*, *for*, *foreach*, *catch*, *while*, "
 "*lock* or *using* keywords."
 msgstr ""
+"Entre un paréntesis de apertura y las palabras clave *if*, *for*, *foreach*, "
+"*catch*, *while*, *lock* o *using*."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:144
 msgid "Before and within a single line accessor block."
-msgstr ""
+msgstr "Antes y dentro de un bloque de accesorios de una sola línea."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:145
 msgid "Between accessors in a single line accessor block."
-msgstr ""
+msgstr "Entre los accesorios en un bloque de accesorios de una sola línea."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:146
 msgid "After a comma."
-msgstr ""
+msgstr "Después de una coma."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:147
 msgid "After a semi-colon in a *for* statement."
-msgstr ""
+msgstr "Después de un punto y coma en una sentencia *for*."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:148
 msgid "After a colon in a single line *case* statement."
-msgstr ""
+msgstr "Después de una sentencia de dos puntos en una sola línea *case*."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:149
 msgid "Around a colon in a type declaration."
-msgstr ""
+msgstr "En torno a los dos puntos en una declaración de tipo."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:150
 msgid "Around a lambda arrow."
-msgstr ""
+msgstr "En torno a una flecha lambda."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:151
 msgid ""
 "After a single line comment symbol ('//'), and before it if used at the end "
 "of a line."
 msgstr ""
+"Después de un símbolo de comentario de una sola línea ('//'), y antes de él "
+"si se utiliza al final de una línea."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:153
 msgid "Do not use a space,"
-msgstr ""
+msgstr "No uses un espacio,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:155
 msgid "After a type cast parentheses."
-msgstr ""
+msgstr "Despues de un llamado de Tipo paréntesis."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:156
 msgid "Within single line initializer braces."
-msgstr ""
+msgstr "inicialización de llaves de una sola línea."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:158
 msgid ""
 "The following example shows a proper use of spaces, according to some of the "
 "the above mentioned conventions:"
 msgstr ""
+"El siguiente ejemplo muestra un uso adecuado de los espacios, de acuerdo con "
+"algunas de las convenciones antes mencionadas:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:195
 msgid ""
 "Use *PascalCase* for all namespaces, type names and member level identifiers "
 "(i.e. methods, properties, constants, events), except for private fields:"
 msgstr ""
+"Utiliza *PascalCase* para todos los espacios de nombres, tipo de nombre e "
+"identificadores de miembro (es decir, métodos, propiedades, constantes, "
+"eventos), excepto para campos privados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:216
 msgid ""
@@ -5656,6 +5708,10 @@ msgid ""
 "arguments), and use underscore('_') as a prefix for private fields (but not "
 "for methods or properties, as explained above):"
 msgstr ""
+"Utiliza *camelCase* para todos los demás identificadores (es decir, "
+"variables locales, argumentos de método), y utiliza underscore('_') como "
+"prefijo para los campos privados (pero no para los métodos o propiedades, "
+"como se explicó anteriormente):"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:230
 msgid ""
@@ -5663,12 +5719,17 @@ msgid ""
 "which should be written in upper case letters when used where Pascal case "
 "would be expected, and in lower case letters otherwise."
 msgstr ""
+"Hay una excepción con los acrónimos que consiste en dos letras como *'UI'* "
+"que debe escribirse en mayúsculas cuando se usa en PascalCase, y en "
+"minúscula en caso contrario."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:233
 msgid ""
 "Note that *'id'* is **not** an acronym, so it should be treated as a normal "
 "identifier:"
 msgstr ""
+"Tenga en cuenta que *'id'* **no** es un acrónimo, por lo que debe tratarse "
+"como un identificador normal:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:244
 msgid ""
@@ -5678,26 +5739,35 @@ msgid ""
 "an upper case *'I'* as a prefix, like *'IInventoryHolder'* or "
 "*'IDamageable'*."
 msgstr ""
+"En general, se desaconseja utilizar un nombre de tipo como prefijo de un "
+"identificador como *'string strText'* o *'float fPower'*, por ejemplo. Sin "
+"embargo, hay una excepción acerca de las interfaces, en cuyo caso "
+"**deberían** ser nombradas usando una mayúscula *'I'* como prefijo, como "
+"*'IInventoryHolder'* o *'IDamageable'*."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:248
 msgid ""
 "Lastly, consider choosing descriptive names and do not try to shorten them "
 "too much if it affects readability."
 msgstr ""
+"Por último, considera elegir nombres descriptivos y no trates de acortarlos "
+"demasiado si eso afecta la legibilidad."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:251
 msgid ""
 "For instance, if you want to write a code to find a nearby enemy and hit "
 "with an weapon, prefer"
 msgstr ""
+"En instancias, Si quieres escribir un codigo para encontrar un enemigo "
+"cercano y golpearlo con un arma, Prefiere"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:257
 msgid "Rather than,"
-msgstr ""
+msgstr "En vez de,"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:264
 msgid "Implicitly Typed Local Variables"
-msgstr ""
+msgstr "Variables de Tipo Local Implícitos"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:266
 msgid ""
@@ -5705,50 +5775,61 @@ msgid ""
 "variable, but do so **only when the type is evident** from the right side of "
 "the assignment:"
 msgstr ""
+"Considera usar tipeo implícito (*'var'*) para declaracion de variables "
+"locales, pero hágalo **sólo cuando el tipo sea evidente** desde el lado "
+"derecho de la asignación:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
 msgid "Other Considerations"
-msgstr ""
+msgstr "Otras Consideraciones"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
 msgid "Use explicit access modifiers."
-msgstr ""
+msgstr "Usa modificadores de acceso explícito."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:299
 msgid "Use properties instead of non-private fields."
-msgstr ""
+msgstr "Use propiedades en lugar de campos no privados."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:300
 msgid ""
 "Use modifiers in this order: *'public/protected/private/internal virtual/"
 "override/abstract/new static readonly'*."
 msgstr ""
+"Use modificadores en este orden: *'public/protected/private/internal virtual/"
+"override/abstract/new static readonly'*."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:301
 msgid ""
 "Avoid using fully qualified names or *'this.'* prefix for members when it's "
 "not necessary."
 msgstr ""
+"Evitar el uso de nombres completamente calificados o prefijos *'this.'* para "
+"miembros cuando no sea necesario."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:302
 msgid "Remove unused *'using'* statements and unnecessary parentheses."
-msgstr ""
+msgstr "Remueva las frases *'using'* no utilizadas y paréntesis innecesarios."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:303
 msgid "Consider omitting default initial value for a type."
-msgstr ""
+msgstr "Considere la omisión del valor inicial predeterminado para un tipo."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:304
 msgid ""
 "Consider using null-conditional operators or type initializers to make the "
 "code more compact."
 msgstr ""
+"Considere usar operadores condicion nula(null-conditional) o inicializadores "
+"de tipo(type initializers) para hacer el código más compacto."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:305
 msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."
 msgstr ""
+"Use llamados seguros(safe cast) cuando haya posibilidad de que el valor sea "
+"de otro tipo, y use llamado directo en caso contrario."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
 msgid "Nodes and Terminology"
@@ -5944,7 +6025,7 @@ msgid ""
 msgstr ""
 "Una de las tareas más comunes es acceder a Nodos del árbol de escena (de "
 "nuevo, no confundir con *Nodos de Visual Script*). Arrastrando del árbol de "
-"escena y soltando en la zona de edición, pedirá *seleccionar un método* (a "
+"escena y soltando en el área de trabajo, pedirá *seleccionar un método* (a "
 "veces referido como *función miembro*) de este nodo."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
@@ -5985,7 +6066,7 @@ msgstr ""
 "Este es el modo más común de editar *Nodos de la escena* en Visual "
 "Scripting. Seleccione un *Nodo de la escena* del *Árbol de escena*, vaya al "
 "Inspector, encuentre *el Nombre* de la propiedad que quiere editar (el "
-"nombre, *no* el valor!) y arrástrelo al área de edición:"
+"nombre, *no* el valor!) y arrástrelo al área de trabajo:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:120
 msgid ""
@@ -6024,11 +6105,11 @@ msgid ""
 "Members panel. Double-click the new variable to rename it:"
 msgstr ""
 "Para agregar una variable, presione el botón \"+\" en la sección Variables "
-"del panel Miembros. Doble click en la nueva variable para renombrarla:"
+"del panel Miembros. Doble clic en la nueva variable para renombrarla:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:140
 msgid "Right-clicking the variable allows you to configure its properties:"
-msgstr "Click derecho en la variable permite configurar sus propiedades:"
+msgstr "Clic derecho en la variable permite configurar sus propiedades:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
 msgid ""
@@ -6049,8 +6130,8 @@ msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
-"Para utilizar una variable en el script, simplemente arrástrela al espacio "
-"de trabajo para crear un getter:"
+"Para utilizar una variable en el script, simplemente arrástrela al área de "
+"trabajo para crear un getter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
@@ -6072,7 +6153,7 @@ msgstr ""
 msgid ""
 "A signal can also be edited via right-click menu to customize its arguments:"
 msgstr ""
-"Una señal también puede ser editada con el menú de click derecho para "
+"Una señal también puede ser editada con el menú de clic derecho para "
 "personalizar sus argumentos:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
@@ -6082,7 +6163,7 @@ msgid ""
 "from another *Scene Node*:"
 msgstr ""
 "La señal creada aparecerá en el inspector junto con las señales built-in del "
-"nodo. Esto permite conectarlas desde otro script en otro *Nodo de la escena*"
+"nodo. Esto permite conectarlas desde otro script en otro *Nodo de la escena*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
@@ -6107,10 +6188,14 @@ msgid ""
 "nodes available for your canvas! Below the member panel, exists the list of "
 "all available node types:"
 msgstr ""
+"Ahora que lo básico está cubierto, hablemos de la gran la gran cantidad de "
+"nodos de utilidad (utility nodes) disponibles para tu área de trabajo! En el "
+"panel de miembros de abajo, existe la lista de todos los tipos de nodos "
+"disponibles:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
 msgid "Ctrl-F (Command-F on Mac) allows you to search the list."
-msgstr ""
+msgstr "Ctrl-F (Command-F en Mac) le permite buscar en la lista."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200
 msgid ""
@@ -6119,6 +6204,10 @@ msgid ""
 "automatically), these are added without any \"contextual\" information, so "
 "this has to be done manually."
 msgstr ""
+"Cualquiera de ellos peude ser arrastrado a la escena. A diferencia de los "
+"nodos(ejemplo, arrastrar una propiedad del inspector establece que el "
+"contexto del nodo se edita automáticamente), éstos se añaden sin ninguna "
+"información \"contextual\", por eso se tiene que hacer manualmente."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:206
 msgid ""
@@ -6126,6 +6215,9 @@ msgid ""
 "they are documented there. That mentioned, a brief overview of node types "
 "follows:"
 msgstr ""
+"Recuerda que puedes verificar la clase de referencia a cada nodo que se "
+"realiza, ya que estan documentados, que se mencionan, en un breve resumen de "
+"los siguientes tipos de nodos:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:213
 msgid ""
@@ -6133,6 +6225,9 @@ msgid ""
 "time, can be useful as reference values. Most of the time they are integer "
 "or float."
 msgstr ""
+"Nodos constantes pueden proveer valores que, aunque no cambian con el "
+"tiempo, pueden ser útiles como valores de referencia. En la mayor parte del "
+"tiempo son enteros o flotantes."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
 msgid ""
@@ -6141,6 +6236,11 @@ msgid ""
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
+"La primera es \"Constante\"(Constant) que permite seleccionar cualquier "
+"valor de cualquier tipo como constante, desde un entero(42) a un String "
+"(\"Hola!\"). En general este nodo no se utiliza tan a menudo debido a los "
+"valores de entrada por defecto en *Puertos de Datos*(Data Ports), pero es "
+"bueno saber que existe."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:221
 msgid ""
@@ -6148,12 +6248,17 @@ msgid ""
 "constants for global types in Godot. In there you can find some useful "
 "constants to refer to key names, joystick or mouse buttons, etc."
 msgstr ""
+"El segundo es el nodo GlobalConstant, que contiene una larga lista de "
+"constantes para tipos globales en Godot. Allí encontrarás constantes útiles "
+"para referirse a nombres clave, botones de joystick o ratón, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
 msgid ""
 "The third one is MathConstant, which provides typical mathematical constants "
 "such as PI, E, etc."
 msgstr ""
+"El tercero es MathConstant, el cual provee constantes típicas en matemáticas "
+"como PI, E, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:230
 msgid ""
@@ -6161,16 +6266,21 @@ msgid ""
 "Godot is accessed via these nodes, so they are some of the most important "
 "ones to use and pretty diverse."
 msgstr ""
+"Los nodos Data tratan todo tipo de acceso a información. Cualquier "
+"información en Godot es accedida mediante esos nodos, esos son los más "
+"importantes para usar y también muy diversos."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
 msgid ""
 "There are many types of nodes of interest here, so a short attempt to "
 "describe them will follow:"
 msgstr ""
+"Hay muchos tipos de nodo de interés aquí, a continuación hay una breve "
+"descripción de ellos:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Action"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -6179,10 +6289,13 @@ msgid ""
 "below, the control is moved to the right when the \"move_right\" action is "
 "pressed."
 msgstr ""
+"Los nodos Action son vitales cuando se trata la entrada desde un "
+"dispositivo. En el siguiente ejemplo, el control es trasladado hacia la "
+"derecha cuando la acción \"move_right\" es presionada."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
-msgstr ""
+msgstr "Instancia Única de Motor(Engine Singleton)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
 msgid ""
@@ -6191,16 +6304,22 @@ msgid ""
 "have several purposes, but in general they are useful for low level access "
 "or OS-related access."
 msgstr ""
+"Los Engine Singletons son interfaces globales (pueden ser accedidas sin una "
+"referencia, y están siempre disponibles a diferencia de Nodos de la Escena). "
+"Tienen muchos propósitos pero, en general, son útiles para acceso a "
+"funciones de bajo nivel del SO."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
 "Remember that dragging a connection to empty space will help you call "
 "functions or set/get properties on these:"
 msgstr ""
+"Recuerda que arrastrando una conexión a un espacio vacío ayudará a llamar "
+"funciones o asignar/obtener (set/get) propiedades en los siguientes:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:263
 msgid "Local Variables"
-msgstr ""
+msgstr "Variables locales"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:265
 msgid ""
@@ -6208,16 +6327,21 @@ msgid ""
 "sure they all have the same name and type when using them and they will "
 "reference the same piece of memory."
 msgstr ""
+"Son nodos que puedes usar como almacenamiento temporal en tus grafos. "
+"Asegúrate de que todos tienen el mismo nombre y tipo cuando los utilizas y "
+"que referencian la misma poción de memoria."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced getter (setting requires a sequence port)."
 msgstr ""
+"Como se puede apreciar arriba, hay dos nodos disponibles: Un getter simple y "
+"un getter secuenciado (la asignación requiere un puerto secuenciado)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
-msgstr ""
+msgstr "Nodo de Escena"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
 msgid ""
@@ -6225,6 +6349,9 @@ msgid ""
 "node by just dragging the actual node from the scene tree to the canvas "
 "(this will create it and configure it)."
 msgstr ""
+"Esto es sólo una referencia a un nodo en el árbol, pero es más fácil usar "
+"este nodo simplemente arrastrando el nodo actual desde el árbol de escena "
+"hasta el área de trabajo (esto lo creará y lo configurará)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
@@ -6237,12 +6364,16 @@ msgid ""
 "drag nodes (or event the node itself that has the script) from the Scene "
 "Tree to the canvas for this."
 msgstr ""
+"En alguna rara ocasión, se puede desear pasar este Nodo de Escena como "
+"argumento. Esto se puede utilizar para llamar funciones y asignar/obtener "
+"propiedades, se puede arrastrar nodos (o eventos que el nodo tenga en su "
+"script) del árbol de escenas al área de trabajo para esto."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:42
 msgid "SceneTree"
-msgstr ""
+msgstr "Árbol de Escenas"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
 msgid ""
@@ -6251,6 +6382,10 @@ msgid ""
 "when the node is sitting in the scene and active, otherwise accessing it "
 "will return as an error."
 msgstr ""
+"Este nodo es similar al Singleton porque tiene una referencia al SceneTree, "
+"el cual contiene la escena activa. Sin embargo, SceneTree sólo funciona "
+"cuando el nodo es parte de una escena y está activo en ella, de otro modo, "
+"el intento de accederlo retornará un error."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -6258,10 +6393,13 @@ msgid ""
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
+"SceneTree permite hacer muchas cosas de bajo nivel, como cambiar las "
+"opciones de ajuste de pantalla, llamar grupos, crear temporizadores o cargar "
+"otra escena principal. Es una clase con la que hay que estar familiarizado."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr ""
+msgstr "Precarga"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
 msgid ""
@@ -6270,6 +6408,10 @@ msgid ""
 "simpler to just drag the desired resource from the filesystem dock to the "
 "canvas."
 msgstr ""
+"Esto hace lo mismo que la función preload() en GDScript. Mantiene este "
+"recurso cargado en memoria y listo para usar. En lugar de instanciar el "
+"nodo, es más simple arrastrar el recurso deseado del panel de Sistema de "
+"Archivos al área de trabajo."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
@@ -6280,10 +6422,13 @@ msgid ""
 "This node is a simple helper to get a string with a path to a resource you "
 "can pick. It's useful in functions that load things from disk."
 msgstr ""
+"Este nodo es un simple helper para obtener una cadena con una ruta a un "
+"recurso que puedes elegir. Es útil en funciones que cargan cosas desde el "
+"disco."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
-msgstr ""
+msgstr "Comentario"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -6291,17 +6436,23 @@ msgid ""
 "will not try to get focus or be brought to top when selecting it. It can "
 "also be used to write text on it."
 msgstr ""
+"Un nodo Comentario funciona como un nodo que puede ser redimensionado para "
+"colocarlo alrededor de otros nodos. No tratará de obtener el foco o ser "
+"puesto al frente al seleccionarlo. También se puede utilizar para escribir "
+"texto en él."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:322
 #: ../../docs/tutorials/shading/shading_language.rst:222
 msgid "Flow Control"
-msgstr ""
+msgstr "Control de Flujo"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:324
 msgid ""
 "Flow control nodes allow the execution to take different branches, usually "
 "depending on a given condition."
 msgstr ""
+"Los nodos de control de flujo permiten que la ejecución tome diferentes "
+"caminos, normalmente dependiendo de una condición determinada."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
@@ -6314,6 +6465,11 @@ msgid ""
 "them, it goes via the \"done\" port. Leaving sequence ports disconnected is "
 "fine if not all of them are used."
 msgstr ""
+"Este es un nodo simple que compara un puerto booleano. Si es true, "
+"continuará por el puerto secuencia true. Si es falso, irá por el segundo. "
+"Después de ir por cualquiera de ellos, sigue por el puerto \"done\". Dejar "
+"los puertos de secuencia desconectados está bien si alguno de ellos no es "
+"usado."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
@@ -6324,6 +6480,9 @@ msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
 "that a bit of code can run for each element that it has."
 msgstr ""
+"Algunos tipos de dato en Godot (por ejemplo array y diccionarios) son "
+"iterables. Esto significa que una porción de código puede ser ejecutada por "
+"cada elemento que tiene."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
 msgid ""
@@ -6331,10 +6490,13 @@ msgid ""
 "via the \"each\" sequence port, making the element available in the \"elem\" "
 "data port."
 msgstr ""
+"El nodo Iterator va a través de todos los elementos y, por cada uno, pasa "
+"por el puerto secuencia \"each\", haciendo que el elemento esté disponible "
+"en el puerto de datos \"elem\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:347
 msgid "When done, it goes via the \"exit\" sequence port."
-msgstr ""
+msgstr "Cuando está listo, va por el puerto secuencia \"exit\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
@@ -6345,6 +6507,9 @@ msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
 "add the Return node for you. A return node forces the function to end."
 msgstr ""
+"Algunas funciones pueden retornar valores. En general, para las funciones "
+"virtuales, Godot agregará el nodo Return. Un nodo return fuerza a la función "
+"a terminar."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
@@ -6355,10 +6520,12 @@ msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
 "ports in order."
 msgstr ""
+"Este nodo es útil principalmente para organizar el grafo. Llama a sus "
+"puertos secuencia en orden."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:364
 msgid "TypeCast"
-msgstr ""
+msgstr "TypeCast"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
 msgid ""
@@ -6366,12 +6533,17 @@ msgid ""
 "arguments or other objects to the type you desire. Afterwards, you can even "
 "drag the object output to get full completion."
 msgstr ""
+"Es un nodo útil de uso muy común. Puedes usarlo para convertir argumentos y "
+"otros objetos al tipo deseado. Luego puedes arrastrar el objeto output para "
+"obtener mejor completado."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:372
 msgid ""
 "It is also possible to cast to a script, which will allow complete script "
 "properties and functions:"
 msgstr ""
+"También es posible convertir a un script, lo que permite obtener propiedades "
+"y funciones del script:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
 msgid "Switch"
@@ -6382,18 +6554,26 @@ msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
 "at the same time."
 msgstr ""
+"El nodo Switch es similar al nodo Condition, pero iguala muchos valores al "
+"mismo tiempo."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:386
 msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
 "be called as long as the condition in the \"cond\" data port is met."
 msgstr ""
+"Esta es una forma primitiva de iteración. La salida de secuencia \"repeat\" "
+"será llamada tantas veces como la condición en el puerto de datos \"cond\" "
+"se cumpla."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:393
 msgid ""
 "Functions are simple helpers, most of the time deterministic. They take some "
 "arguments as input and return an output. They are almost never sequenced."
 msgstr ""
+"Los Function son ayudantes, la mayoría del tiempo deterministas. Toman "
+"algunos argumentos de entrada y devuelven una salida. En general no son "
+"secuenciados."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 #: ../../docs/tutorials/shading/shading_language.rst:712
@@ -6403,7 +6583,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1040
 #: ../../docs/tutorials/shading/shading_language.rst:1098
 msgid "Built-In"
-msgstr ""
+msgstr "Funciones propias"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""
@@ -6412,10 +6592,14 @@ msgid ""
 "mathematical functions, but others can be very useful helpers. Just make "
 "sure to take a look at the list at some point."
 msgstr ""
+"Hay una lista de helpers integrados. La lista es casi idéntica a la de "
+"GDScript (@TODO, enlace a métodos gdscript?). La mayoría de ellos son "
+"funciones matemáticas, pero otros pueden ser de gran utilidad. Sólo "
+"asegúrate de echar un vistazo a la lista en algún momento."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid "By Type"
-msgstr ""
+msgstr "By Type"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
 msgid ""
@@ -6423,6 +6607,10 @@ msgid ""
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
+"Son métodos disponibles para tipos básicos. Por ejemplo, si quieres realizar "
+"un producto punto (dot product) puedes buscar \"dot\" en lugar de la "
+"categoría Vector3. En la mayoría de los casos sólo busca en la lista de "
+"nodos, debería ser mas rápido."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid "Call"
@@ -6433,10 +6621,12 @@ msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
 msgstr ""
+"Esta es la llamada a nodo genérica. Es raramente utilizada directamente, se "
+"utiliza arrastrando desde un nodo ya configurado."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid "Constructors"
-msgstr ""
+msgstr "Constructores"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:421
 msgid ""
@@ -6444,40 +6634,49 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
+"Esas son todas las funciones necesarias para crear tipos de datos básicos de "
+"Godot. Por ejemplo, si necesitas crear un Vector3 desde 3 floats, se debe "
+"utilizar un constructor."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid "Destructor"
-msgstr ""
+msgstr "Destructor"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:429
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
+"Es lo contrario al Constructor, permite separar tipos básicos en sus sub-"
+"elementos."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid "Emit Signal"
-msgstr ""
+msgstr "Emitir Señal"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
 msgid ""
 "Emits signals from any object. In general it's not very useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"Emite una señal desde cualquier objeto. En general no es muy útil ya que "
+"arrastrando la señal al área de trabajo es más simple."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid "Get/Set"
-msgstr ""
+msgstr "Get/Set"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:443
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
+"Nodo Setter/Getter genérico. Arrastrando propiedades desde el Inspector "
+"suele ser mejor, ya que aparecen configuradas al soltar."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid "Wait"
-msgstr ""
+msgstr "Wait"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:449
 msgid ""
@@ -6486,34 +6685,42 @@ msgid ""
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
+"El nodo Wait suspende la ejecución de la función hasta que suceda algo (de "
+"hecho, pueden pasar muchos frames hasta llegar resumirla). Por defecto los "
+"nodos permiten esperar un frame, un fixed frame o una cantidad de tiempo "
+"dada antes de resumir la ejecución."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid "Yield"
-msgstr ""
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:456
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
 msgstr ""
+"Este nodo suspende completamente la ejecución del script y hará que la "
+"función retorne un valor que puede ser utilizado para continuar la ejecución."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Yield Signal"
-msgstr ""
+msgstr "Señal Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:462
 msgid "Same as Yield, but will wait until a given signal is emitted."
-msgstr ""
+msgstr "Lo mismo que Yield, pero espera a que determinada señal sea emitida."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:468
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr ""
+"Operador de indexación genérico, no muy usado pero es bueno que esté por si "
+"acaso."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
 msgid ""
@@ -6523,10 +6730,15 @@ msgid ""
 "always recommended to set the right type for operators to catch errors "
 "faster and make the graph easier to read."
 msgstr ""
+"Estos son operadores genéricos como suma, multiplicación, comparación, etc. "
+"Por defecto suelen aceptar cualquier tipo de datos (y devolverán un error en "
+"giempo de ejecución si los tipos no coinciden con el operador). Es siempre "
+"recomendable asignar el tipo correcto de operadores para encontrar errores "
+"rápido y hacer que el grafo sea fácil de leer."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"
-msgstr ""
+msgstr "Expression Node"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
 msgid ""
@@ -6535,20 +6747,26 @@ msgid ""
 "logic heavy. Just type any expression on it and it will be executed in real-"
 "time."
 msgstr ""
+"Entre los operadore, el operador *Expression* es el nodo más poderoso. Bien "
+"usado, permite simplificar visual scripts que poseen matemática o lógica "
+"compleja. Sólo escriba la expresión en este y será ejecutada en tiempo real."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid "Expression nodes can:"
-msgstr ""
+msgstr "Los nodos Expression pueden:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:490
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
+"Ejecutar expresiones lógicas y matemáticas basadas en entradas "
+"personalizadas (ej. \"a*5+b\", donde a y b son tipos de entrada "
+"personalizados):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:495
 msgid "Access local variables or properties:"
-msgstr ""
+msgstr "Acceder a variables locales o propiedades:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:500
 msgid ""
@@ -6556,20 +6774,25 @@ msgid ""
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
 "Rect2(..), etc.:"
 msgstr ""
+"Utilizar la mayoría de las funciones built-in disponibles en GDScript, como "
+"sin(), cos(), print, así como constructores como Vector3(x,y,z),Rect2(...), "
+"etc.:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:505
 msgid "Call API functions:"
-msgstr ""
+msgstr "Funciones API Call:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:510
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
 msgstr ""
+"Usar modo secuenciado, lo que tiene más sentido en caso de respetar el orden "
+"de procesamiento:"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:4
 msgid "What is Visual Scripting"
-msgstr ""
+msgstr "Qué es Visual Scripting"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:6
 msgid ""
@@ -6578,6 +6801,10 @@ msgid ""
 "understood. Any artist, animator, game designer, etc. can look at it and "
 "quickly grasp the flow of logic."
 msgstr ""
+"Visual Scripting es una herramienta designada a bajar la barrera de entrada "
+"de programación. Como el código es más visual, necesita menor pensamiento "
+"abstracto para comprenderlo. Cualquier artista, animador, diseñador, etc. "
+"puede mirarlo y comprender el flujo de la lógica."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:11
 msgid ""
@@ -6586,28 +6813,38 @@ msgid ""
 "with it, and it's often more difficult to modify than just writing a few "
 "characters."
 msgstr ""
+"La razón por la que no hace obsoleta la programación existente es, "
+"simplemente, que no escala muy bien. Toma más tiempo crear código con él y "
+"suele ser más difícil de modificar que sólo escribiendo unos pocos "
+"caracteres."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:15
 msgid ""
 "With the misunderstanding cleared up, the question that remains is what are "
 "the practical uses for Visual Scripting."
 msgstr ""
+"Con este malentendido aclarado, queda la cuestión de cuáles son los usos "
+"prácticos de Visual Scripting."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:18
 msgid "The most common use cases are as follows:"
-msgstr ""
+msgstr "Algunos casos de uso comunes son:"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:20
 msgid ""
 "Game development beginners who want to learn an engine but have no "
 "programming experience yet."
 msgstr ""
+"Desarrolladores de videojuegos principiantes que quieren aprender a utilizar "
+"el motor pero no tienen experiencia previa en programación."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:21
 msgid ""
 "Artists and Game Designers who have no experience in programming and want to "
 "create quick prototypes or simple games."
 msgstr ""
+"Artistas y diseñadores de videojuegos que no tienen experiencia programando "
+"y quieren crear prototipos rápidos o juegos simples."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:22
 msgid ""
@@ -6615,21 +6852,26 @@ msgid ""
 "available to Artists or Game Designers in order to offload some of their "
 "work."
 msgstr ""
+"Programadores trabajando en un equipo que quieren hacer que parte de la "
+"lógica esté disponible para artistas o diseñadores para liberar un poco la "
+"carga de trabajo."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:24
 msgid ""
 "These scenarios are far more common than one might think, so this is why "
 "Godot has added this feature."
 msgstr ""
+"Esos escenarios son más comunes de lo que se cree, por eso es que Godot "
+"agregó esta característica."
 
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 msgid "VisualScript"
-msgstr ""
+msgstr "VisualScript"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:4
 msgid "Getting started with Visual Scripting"
-msgstr ""
+msgstr "Comenzando con Visual Scripting"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:6
 msgid ""
@@ -6638,12 +6880,18 @@ msgid ""
 "workflow. This led us to write our own version of how we believe this "
 "feature would work best with the engine."
 msgstr ""
+"Como todo en Godot, priorizamos una buena experiencia en lugar de copiar o "
+"integrar soluciones de terceros, las que pueden no encajar con el modo de "
+"trabajo. Esto nos permite escribir nuestra propia versión de cómo creemos "
+"que esta característica funcionará mejor con el motor."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
+"En Godot, un Visual Script se integra perfectamente con los scripts normales "
+"en la pestaña Editor"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -6652,10 +6900,15 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
+"De hecho, Visual Scripting se integra tan bien en Godot que es difícil de "
+"creer que se haya agregado sólo en la versión 3.0. Esto se debe a que, "
+"cuando se edita, el resto de los paneles y docks de Godot actúan como una "
+"paleta desde la que se puede arrastrar y soltar todo tipo de información al "
+"área de trabajo del script:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
 msgid "Creating a Script"
-msgstr ""
+msgstr "Creación de un Script"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
 msgid ""
@@ -6663,22 +6916,30 @@ msgid ""
 "select any node in the scene and push the \"New Script\" button at the top "
 "right corner of the Scene Tree dock:"
 msgstr ""
+"La creación de scripts funciona igual que con otros lenguajes de scripts: "
+"Simplemente seleccione cualquier nodo de la escena y pulse el botón \"Nuevo "
+"Script\" en la esquina superior derecha del Dock del Árbol de Escenas:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
+"Una vez abierto, se debe seleccionar el tipo de script \"Visual Script\" de "
+"la lista desplegable. La extensión del script debe ser \".vs\" (¡para Visual "
+"Script!)."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
 msgid ""
 "Finally, the Script Editor will open, allowing to start the editing of the "
 "visual script:"
 msgstr ""
+"Finalmente, se abrirá el Editor de Script, permitiendo iniciar la edición "
+"del visual script:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
 msgid "Adding a Function"
-msgstr ""
+msgstr "Añadir una Función"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -6687,24 +6948,31 @@ msgid ""
 "to communicate with the engine as other scripting engines. In Godot, the "
 "scripting interface is universal and all implementations conform to it."
 msgstr ""
+"A diferencia de otras implementaciones de Visual Scripting, Visual Scripting "
+"en Godot se basa en gran medida en funciones. Esto sucede porque utiliza la "
+"misma interfaz para comunicarse con el motor que otros motores de scripting. "
+"En Godot, la interfaz de scripting es universal y todas las implementaciones "
+"se ajustan a ella."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
-msgstr ""
+msgstr "Una función es un área de trabajo individual con nodos conectados."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:51
 msgid ""
 "A single script can contain many functions, each of which will have a canvas "
 "of its own, allowing for more organization."
 msgstr ""
+"Un solo script puede contener muchas funciones, cada una de las cuales "
+"tendrá su propia área de trabajo, lo que permite una mayor organización."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
-msgstr ""
+msgstr "Hay tres maneras principales de añadir funciones en un script:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
 msgid "Overriding a Virtual Function"
-msgstr ""
+msgstr "Sobreescribir una Función Virtual"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:58
 msgid ""
@@ -6713,6 +6981,10 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
+"La mayoría de nodos y otros tipos de objetos en Godot contienen funciones "
+"virtuales. Estas son funciones que será llamado(Ejecutará su código) cuando "
+"algo sucede y puede ser consultado en la referencia. Funciones Virtuales son "
+"listados cuando se presiona el icono \"Override\" en el panel de miembros:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -6720,20 +6992,27 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
+"En el siguiente ejemplo, se ejecutará una función cuando el nodo es cargado "
+"y agregado a la escena en ejecución. Para esto, el método virtual _ready() "
+"será sobrescrito:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"
 msgstr ""
+"Finalmente, aparece un área de trabajo para esta función, mostrando la "
+"sobreescritura:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:76
 msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
+"Como algunas funciones esperan que se retorna un valor, tambien se puede "
+"añadir un nodo de retorno donde se supone que dicho valor es proveido:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
 msgid "Connecting a Signal to a Function"
-msgstr ""
+msgstr "Conectar una Señal(Signal) a una Función"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:85
 msgid ""
@@ -6741,6 +7020,9 @@ msgid ""
 "all sorts of things. A typical example would be a button that emits a "
 "\"pressed\" signal when actually pressed."
 msgstr ""
+"Nodos de un árbol emiten señales cuando algo sucede. Godot usa señales para "
+"todo tipo de cosas. Un ejemplo típico sería un botón que emite una señal "
+"\"pulsado\" cuando se pulsa realmente."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:88
 msgid ""
@@ -6748,6 +7030,9 @@ msgid ""
 "inspecting the signals. Once they are displayed, connect the \"pressed\" "
 "signal:"
 msgstr ""
+"Para ello, un nodo debe de ser selecionado y el Nodo Tab abierto. Esto "
+"permite inspeccionar las señales. Una vez visualizado, conectar la señal "
+"\"presionado\":"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:94
 msgid ""
@@ -6755,16 +7040,20 @@ msgid ""
 "node where the signal will be connected to, and the function that will "
 "receive the signal:"
 msgstr ""
+"Esto permite abrir la ventana de coneción. En esta ventana, Debes selecionar "
+"el nodo en cual la señal se conectará, y la función que recibirá la señal:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:100
 msgid ""
 "If this is done right, a new function will be created in our script and a "
 "signal will automatically be connected to it:"
 msgstr ""
+"Si esto se hace de manera correcta, una nueva función sera creada en nuestro "
+"script y la señal automáticamente sera conectada a él:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:107
 msgid "Creating a Function Manually"
-msgstr ""
+msgstr "Creando una función manualmente"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:109
 msgid ""
@@ -6773,18 +7062,27 @@ msgid ""
 "(or the same) script calls them manually. The main use case for this is to "
 "separate a function into more, or reusing your visual code."
 msgstr ""
+"La ultima manera de crear funciones es hacerlo manualmente. En general no es "
+"tan común a menos que realmente lo necesites. Funciones personalizadas "
+"trabajan cuando otro(o él mismo) script llama manualmente. El principal uso "
+"en este caso es descomponer la funcion en otras, o reutilizar el codigo "
+"visual."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:113
 msgid ""
 "To create a function manually, push the big \"Plus\" button, and a new "
 "function will be added with a default name:"
 msgstr ""
+"Para crear una funcion manualmente, Pulsa el botón grande \"Suma\", y se "
+"creará la nueva funcion con un nombre por defecto:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:119
 msgid ""
 "This will add a new function, which can be renamed by simply double clicking "
 "its name:"
 msgstr ""
+"Esto agregará una nueva función, de lo cual puede ser renombrado haciendo "
+"doble clic sobre él mismo:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:125
 msgid ""
@@ -6792,10 +7090,13 @@ msgid ""
 "when you call this function), simply click the Function node and check the "
 "inspector:"
 msgstr ""
+"Para editar los \"argumentos\" esta funcion puede obtener(los valores que "
+"pasan a través de él cuando llamas a esta función),  simplemente haz clic en "
+"el nodo Función y chequea en el Inspector:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:131
 msgid "More on that will be explained later in this document."
-msgstr ""
+msgstr "Más sobre esto se explicará más adelante en este documento."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
@@ -6933,7 +7234,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, just click the \"Export\" button:"
 msgstr ""
-"Para abrir el menú de exportación, simplemente haz click en el botón "
+"Para abrir el menú de exportación, simplemente haz clic en el botón "
 "\"Exportar\":"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
@@ -6947,10 +7248,10 @@ msgid ""
 "` button at the top of the export menu. This will open a drop down list of "
 "platforms to choose from for an export preset."
 msgstr ""
-"Esto es porque primero necesitamos añadir algunos \"presets\". Para "
-"añadirlos haz click en el botón `Añadir` que hay encima del menú de "
-"exportación. Esto abrirá una lista con todas la plataformas elegibles para "
-"hacer un \"preset\" de exportación."
+"Esto es porque primero necesitamos añadir algunos presets. Para añadirlos "
+"haz clic en el botón `Añadir` que hay encima del menú de exportación. Esto "
+"abrirá una lista con todas la plataformas elegibles para hacer un preset de "
+"exportación."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:78
 msgid ""
@@ -6990,34 +7291,44 @@ msgid ""
 "zip) file from the `download page of the website <https://www.godotengine."
 "org/download>`_."
 msgstr ""
+"Aparte de configurar la plataforma, las plantillas de exportación deben de "
+"instalarse para poder exportar proyectos. Se pueden conseguir como un "
+"archivo .tpz (un .zip renombrado) desde la `página de descarga de la web "
+"<https://www.godotengine.org/download>`_."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:98
 msgid ""
 "Once downloaded, they can be installed using the \"Install Export Templates"
 "\" option in the editor:"
 msgstr ""
+"Una vez descargadas, se pueden instalar usando la opción del editor "
+"\"Instalar Plantillas de Exportación\":"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:104
 msgid "Export mode"
-msgstr ""
+msgstr "Modo de exportación"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:106
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
 msgstr ""
+"Cuando se exporta, Godot hace una lista de todos los archivos a exportar y "
+"después hace el empaquetamiento. Hay 3 diferentes modos de exportación:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:109
 msgid "Export every single file in the project"
-msgstr ""
+msgstr "Exportar todos los archivos del proyecto"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
 msgid "Export only resources (+custom filter), this is default."
 msgstr ""
+"Exportar solo los recursos (+filtro personalizado), esta es la opción por "
+"defecto."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
 msgid "Export only selected resources (+custom filter)"
-msgstr ""
+msgstr "Exportar solo los recursos seleccionados (+filtro personalizado)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:115
 msgid ""
@@ -7026,6 +7337,11 @@ msgid ""
 "developers often have a lot of unrelated stuff around in the dev directory, "
 "which makes it a bad idea."
 msgstr ""
+"**Exportar todos los archivos del proyecto** - Este modo exporta todos los "
+"archivos del proyecto. Esto sirve para comprobar si se nos ha olvidado algo, "
+"pero los desarrolladores suelen tener muchos archivos innecesarios en el "
+"directorio de desarrollo, lo que hace que usar esta opción pueda ser una "
+"mala idea."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:120
 msgid ""
@@ -7034,6 +7350,11 @@ msgid ""
 "their games. To compensate for this, filters can be added for extra "
 "extensions (like, *.txt,*.csv, etc.)."
 msgstr ""
+"**Exportar solo los recursos** - Solo se exportan los recursos. Para la "
+"mayoría de los proyectos esto es suficiente. No obstante, a muchos "
+"desarrolladores les gusta tener tipos de archivos personalizados en sus "
+"juegos. Para compensar esto, se pueden añadir filtros para extensiones "
+"adicionales (como . *.txt, *.csv, etc.)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:125
 msgid ""
@@ -7045,10 +7366,19 @@ msgid ""
 "allows to \"Bundle\" scenes and dependencies into a single file, which is "
 "*really* useful for games distributed on optical media."
 msgstr ""
+"**Exportar solo los recursos seleccionados** - Solo se exportan los recursos "
+"de la lista.  Esto probablemente es demasiado para muchos proyectos, pero en "
+"algunos casos está justificado (usualmente en proyectos enormes). Este modo "
+"ofrece un control total de lo que se exporta. Hay que seleccionar cada "
+"recurso individualmente y la detección de dependencias se ejecuta para "
+"asegurarnos de que se añade todo lo necesario. Como algo adicional, este "
+"modo permite \"Empaquetar\" escenas y dependencias en un archivo único, lo "
+"que es **verdaderamente** útil para los juegos que se distribuyan en "
+"dispositivos ópticos."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:139
 msgid "Export from Command Line"
-msgstr ""
+msgstr "Exportar desde la línea de comandos"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:141
 msgid ""
@@ -7058,6 +7388,12 @@ msgid ""
 "parameters. A basic invocation of the export would be ``godot --export "
 "\"Windows Desktop\" some_name``"
 msgstr ""
+"En producción es útil automatizar las compilaciones, y Godot ofrece soporte "
+"a esto con los parámetros de línea de commandos ``--export`` y ``--export-"
+"debug``. Exportar desde la línea de comandos aún requiere una plantilla de "
+"exportación para definir los parámetros de exportación. Una invocación "
+"básica de exportación podría se ``godot --export \"Windows Desktop\" "
+"some_name``"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -7066,6 +7402,10 @@ msgid ""
 "relative to the project path or absolute. It does not respect the directory "
 "the command was invoked from."
 msgstr ""
+"Asumiendo que hay un preset llamado \"Windows Desktop\" y que la plantilla "
+"se puede encontrar, se exportará a ``some_name.exe``. La ruta de salida es "
+"relativa a la ruta del proyecto o absoluta. No se respeta el directorio "
+"desde el que el comando fue invocado."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
 msgid ""
@@ -7073,14 +7413,17 @@ msgid ""
 "single export to be used with multiple Godot executables). This takes place "
 "if:"
 msgstr ""
+"También puedes configurarlo para exportar simplemente el archivo .pck o .zip "
+"(permitiendo que una única exportación sea usada para varios ejecutables de "
+"Godot). Esto sucede si:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid "The export preset is not marked as runnable"
-msgstr ""
+msgstr "El preset de exportación no está marcado como ejecutable"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:157
 msgid "The target name ends with `.pck` or with `.zip`"
-msgstr ""
+msgstr "El nombre elegido acaba con `.pck`o con `.zip`"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
 msgid ""
@@ -7088,14 +7431,17 @@ msgid ""
 "flag, and to create a dedicated export template for automated export: "
 "``godot --path path/to/project --export \"pck\" game_name.pck``"
 msgstr ""
+"A menudo es útil combinar la bandera ``--export`` con la bandera ``--path``, "
+"y crear una plantilla de exportación dedicada a exportar de manera "
+"automatizada: ``godot --path path/to/project --export \"pck\" game_name.pck``"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
-msgstr ""
+msgstr "Despliegue con un solo clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:7
 msgid "Sounds good, what is it?"
-msgstr ""
+msgstr "Suena bien, ¿qué es?"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:9
 msgid ""
@@ -7105,6 +7451,12 @@ msgid ""
 "may be incorrectly installed, device may be improperly configured, kitty ate "
 "the USB cable, etc.), it's good to let the user know that it exists."
 msgstr ""
+"Esta característica aparecerá automáticamente una vez que una nueva "
+"plataforma sea configurada correctamente y que un dispositivo soportado esté "
+"conectado al computador. Ya que las cosas pueden fallar en muchos niveles "
+"(La plataforma no se ha configurado correctamente, el SDK pudo haberse "
+"instalado con errores, el dispositivo puede estar mal configurado, el gatito "
+"se comió el cable USB, etc), es bueno dejar que el usuario sepa que existe."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:16
 msgid ""
@@ -7114,250 +7466,270 @@ msgid ""
 "the device. This feature is called, in industry buzz-words, \"One Click "
 "Deploy\" (though, it's technically two clicks...)."
 msgstr ""
+"Algunas plataformas (en el momento de escribir este artículo, sólo Android y "
+"Blackberry 10) pueden detectar cuándo un dispositivo USB está conectado a la "
+"computadora y ofrecer al usuario la posibilidad de exportar, instalar y "
+"ejecutar automáticamente el proyecto (en modo depuración) en el dispositivo. "
+"Esta característica se llama, en palabras de moda de la industria, "
+"\"Despliegue con un solo clic\" (o \"One Click Deploy\", aunque, "
+"técnicamente son dos clics...)."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:23
 msgid "Steps for one-click deploy"
-msgstr ""
+msgstr "Pasos para el despliegue con un solo clic"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:25
 msgid "Configure target platform."
-msgstr ""
+msgstr "Configura la plataforma de destino."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:26
 msgid ""
 "Configure device (make sure it's in developer mode, likes the computer, usb "
 "is recognized, usb cable is plugged, etc.)."
 msgstr ""
+"Configure el dispositivo (asegúrese de que está en modo desarrollador, como "
+"si fuera una computadora, USB es reconocido, el cable USB está conectado, "
+"etc.)."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:28
 msgid "Connect the device.."
-msgstr ""
+msgstr "Conecta el dispositivo..."
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:29
 msgid "And voila!"
-msgstr ""
+msgstr "Y listo!"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:33
 msgid "Click once.. and deploy!"
-msgstr ""
+msgstr "Haga clic una vez... y despliegue!"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
 msgid "Feature Tags"
-msgstr ""
+msgstr "Etiquetas de caractrísticas"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:9
 msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, and it can refer to many of the following:"
 msgstr ""
+"Godot tiene un sistema especial para etiquetar la disponibilidad de las "
+"características. Cada *característica* se representa como una cadena, y "
+"puede referirse a muchas de las siguientes:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
-msgstr ""
+msgstr "Nombre de la plataforma."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform bits (64/32)."
-msgstr ""
+msgstr "Bits de plataforma (64/32)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop/mobile)."
-msgstr ""
+msgstr "Tipo de plataforma (escritorio/móvil)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression in platform."
-msgstr ""
+msgstr "Compresión de texturas soportada en la plataforma."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid "Whether a build is debug or release."
-msgstr ""
+msgstr "Si la compilación es depurada o lanzada."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid "Many more things."
-msgstr ""
+msgstr "Muchas más cosas."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:19
 msgid "Features can be queried in run-time to the singleton API by calling:"
 msgstr ""
+"Las funciones pueden consultarse en tiempo de ejecución a la API de "
+"singleton mediante una llamada:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:27
 msgid "Default features"
-msgstr ""
+msgstr "Características por defecto"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:29
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are *case "
 "sensitive*:"
 msgstr ""
+"Aquí hay una lista de la mayoría de las etiquetas de características en "
+"Godot. Tenga en cuenta que son *sensibles a mayúsculas y minúsculas*:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:32
 msgid "**Feature Tag**"
-msgstr ""
+msgstr "**Etiquetas de características**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:34
 msgid "**Android**"
-msgstr ""
+msgstr "**Android**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:34
 msgid "Running on Android"
-msgstr ""
+msgstr "Ejecución en Android"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:36
 msgid "**HTML5**"
-msgstr ""
+msgstr "**HTML5**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:36
 msgid "Running on HTML5"
-msgstr ""
+msgstr "Ejecución en HTML5"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:38
 msgid "**JavaScript**"
-msgstr ""
+msgstr "**JavaScript**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:38
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
-msgstr ""
+msgstr "El :ref:`singleton JavaScript <doc_javascript_eval>` está disponible"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:41
 msgid "**OSX**"
-msgstr ""
+msgstr "**OSX**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:41
 msgid "Running on macOS"
-msgstr ""
+msgstr "Ejecución en macOS"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:43
 msgid "**iOS**"
-msgstr ""
+msgstr "**iOS**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:43
 msgid "Running on iOS"
-msgstr ""
+msgstr "Ejecución en iOS"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:45
 msgid "**UWP**"
-msgstr ""
+msgstr "**UWP**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:45
 msgid "Running on UWP"
-msgstr ""
+msgstr "Ejecución en UWP"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:47
 msgid "**Windows**"
-msgstr ""
+msgstr "**Windows**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:47
 msgid "Running on Windows"
-msgstr ""
+msgstr "Ejecución en Windows"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:49
 msgid "**X11**"
-msgstr ""
+msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:49
 msgid "Running on X11"
-msgstr ""
+msgstr "Ejecución en X11"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:51
 msgid "**debug**"
-msgstr ""
+msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:51
 msgid "Running on a debug build"
-msgstr ""
+msgstr "Ejecución en una versión de depuración"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:53
 msgid "**release**"
-msgstr ""
+msgstr "**versión**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:53
 msgid "Running on a release build"
-msgstr ""
+msgstr "Ejecución en una versión de lanzamiento"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:55
 msgid "**32**"
-msgstr ""
+msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:55
 msgid "Running on a 32-bit build"
-msgstr ""
+msgstr "Ejecutando en una versión de 32 bits"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:57
 msgid "**64**"
-msgstr ""
+msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:57
 msgid "Running on a 64-bit build"
-msgstr ""
+msgstr "Ejecutando en una versión de 64 bits"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:59
 msgid "**mobile**"
-msgstr ""
+msgstr "**móvil**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:59
 msgid "Host OS is a mobile platform"
-msgstr ""
+msgstr "El sistema operativo anfitrión es una plataforma móvil"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:61
 msgid "**pc**"
-msgstr ""
+msgstr "**pc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:61
 msgid "Host OS is a PC platform (desktop/laptop)"
-msgstr ""
+msgstr "El sistema operativo anfitrión es una PC (escritorio/laptop)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:63
 msgid "**web**"
-msgstr ""
+msgstr "**web**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:63
 msgid "Host OS is a Web browser"
-msgstr ""
+msgstr "El sistema operativo anfitrión es un navegador Web"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:65
 msgid "**etc**"
-msgstr ""
+msgstr "**etc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:65
 msgid "Textures using ETC1 compression are supported"
-msgstr ""
+msgstr "Las texturas que utilizan una compresión ETC1 son soportadas"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:67
 msgid "**etc2**"
-msgstr ""
+msgstr "**etc2**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:67
 msgid "Textures using ETC2 compression are supported"
-msgstr ""
+msgstr "Las texturas que utilizan una compresión ETC2 son soportadas"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:69
 msgid "**s3tc**"
-msgstr ""
+msgstr "**s3tc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:69
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr ""
+msgstr "Las texturas que utilizan una compresión  S3TC (DXT/BC) son soportadas"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:71
 msgid "**pvrtc**"
-msgstr ""
+msgstr "**pvrtc**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:71
 msgid "Textures using PVRTC compression are supported"
-msgstr ""
+msgstr "Las texturas que utilizan una compresión  PVRTC  son soportadas"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:75
 msgid "Custom features"
-msgstr ""
+msgstr "Funcionalidades personalizadas"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:77
 msgid ""
 "It is possible to add custom features to a build, just use the relevant "
 "field in the *export preset* used to generate it:"
 msgstr ""
+"Es posible añadir funciones personalizadas a una compilación, sólo tiene que "
+"utilizar el campo correspondiente en el *preset de exportación* utilizado "
+"para generarla:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:83
 msgid "Overriding project settings"
-msgstr ""
+msgstr "Sobrescribir los ajustes del proyecto"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:85
 msgid ""
@@ -7365,6 +7737,9 @@ msgid ""
 "*Project Settings*. This allows to better customize any configuration when "
 "doing a build."
 msgstr ""
+"Las funciones se pueden utilizar para sobrescribir valores de configuración "
+"específicos en los\" Ajustes del proyecto\". Esto permite personalizar mejor "
+"cualquier configuración al hacer una compilación."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:88
 msgid ""
@@ -7372,24 +7747,31 @@ msgid ""
 "the game (which was customized in a special export preset which, in turn, "
 "includes only demo levels)."
 msgstr ""
+"En el siguiente ejemplo, se añade un icono diferente para la compilación de "
+"la demo del juego (que se personalizó en un preset de exportación especial "
+"que, a su vez, sólo incluye niveles de demo)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:93
 msgid "After overriding, a new field is added for this specific configuration:"
 msgstr ""
+"Después de sobrescribir, se añade un nuevo campo para esta configuración "
+"específica:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Default overrides"
-msgstr ""
+msgstr "Sobreescritura de valores por defecto"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
 msgid ""
 "There are already a lot of settings that come with overrides by default, "
 "they can be found in many sections of the project settings."
 msgstr ""
+"Ya hay muchos ajustes que vienen con sobreescrituras por defecto, se pueden "
+"encontrar en muchas secciones de los ajustes del proyecto."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:106
 msgid "Customizing Build"
-msgstr ""
+msgstr "Personalización de la Compilación"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid ""
@@ -7397,6 +7779,10 @@ msgid ""
 "custom **ExportPlugin**. They also are used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
+"Las etiquetas de características pueden ser usadas para personalizar el "
+"proceso de compilación, escribiendo un **ExportPlugin** personalizado. "
+"También son usadas para especificar qué librerías serán cargadas y "
+"exportadas en **GDNative**."
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
@@ -7404,7 +7790,7 @@ msgstr "Export"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:4
 msgid "Customizing the Web export HTML page"
-msgstr ""
+msgstr "Personalizando la página HTML de exportación a Web"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:6
 msgid ""
@@ -7414,6 +7800,11 @@ msgid ""
 "custom HTML page is specified in the export options as ``Html/Custom Html "
 "Shell``."
 msgstr ""
+"En lugar de la página HTML que viene por defecto con las plantillas de "
+"exportación, también es posible personalizar la página HTML. Esto permite "
+"una personalización drástica de la presentación y comportamiento de la "
+"página web. La ruta de la página HTML personalizada está especificada en las "
+"opciones de exportación como ``Html/Custom Html Shell``."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:11
 msgid ""
@@ -7422,75 +7813,91 @@ msgid ""
 "misc/dist/html/default.html>`_. Some simple use-cases where customizing the "
 "default page is useful include:"
 msgstr ""
+"La página HTML por defecto está disponible en el repositorio del motor Godot "
+"en `/mist/dist/html/default.html <https://github.com/godotengine/godot/blob/"
+"master/misc/dist/html/default.html>`_. Algunos casos de uso simple donde es "
+"útil personalizar la página por defecto incluyen:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:15
 msgid "Loading files from a different directory"
-msgstr ""
+msgstr "Cargar archivos de diferentes directorios"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:16
 msgid "Loading a ``.zip`` file instead of a ``.pck`` file as main pack"
-msgstr ""
+msgstr "Cargar archivos ``.zip`` en lugar de ``.pck`` como paquete principal"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:17
 msgid "Loading engine files from a different directory than the main pack file"
 msgstr ""
+"Cargar archivos del motor desde un directorio distinto al paquete de datos "
+"principal"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:18
 msgid ""
 "Loading some extra files before the engine starts, so they are available in "
 "the file system later"
 msgstr ""
+"Cargar archivos extra antes de que arranque el motor, así estarán "
+"disponibles en el sistema de archivos luego"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:20
 msgid ""
 "Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
 "script"
 msgstr ""
+"Pasar argumentos de la línea de comandos, por ejemplo, ``-s`` para iniciar "
+"un script MainLoop"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:23
 msgid "Placeholder substitution"
-msgstr ""
+msgstr "Sustitución de placeholders"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:25
 msgid ""
 "When exporting the game, several placeholders in the HTML page are "
 "substituted by values dependening on the export:"
 msgstr ""
+"Cuando se exporta el juego, muchos placeholders en la página HTML son "
+"sustituidos por valores de acuerdo a la exportación:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:29
 msgid "Placeholder"
-msgstr ""
+msgstr "Marcador de posición"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:29
 msgid "substituted by"
-msgstr ""
+msgstr "sustituido por"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:31
 msgid "``$GODOT_BASENAME``"
-msgstr ""
+msgstr "``$GODOT_BASENAME``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:31
 msgid ""
 "Basename of exported files without suffixes, e.g. ``game`` when exporting "
 "``game.html``"
 msgstr ""
+"Nombre base de los archivos exportados sin sufijos, ej. ``game`` cuando se "
+"exporta ``game.html``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
 msgid "``$GODOT_DEBUG_ENABLED``"
-msgstr ""
+msgstr "``$GODOT_DEBUG_ENABLED``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
 msgid "``true`` if debugging, ``false`` otherwise"
-msgstr ""
+msgstr "``true`` si es de depuración, ``false`` en caso contrario"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:36
 msgid "``$GODOT_HEAD_INCLUDE``"
-msgstr ""
+msgstr "``$GODOT_HEAD_INCLUDE``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:36
 msgid ""
 "Custom string to include just before the end of the HTML ``<head>`` element"
 msgstr ""
+"Cadena personalizada para incluir antes del final del elemento HTML "
+"``<head>``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:40
 msgid ""
@@ -7498,80 +7905,98 @@ msgid ""
 "file defines a global ``Engine`` object used to start the engine, :ref:`see "
 "below <doc_javascript_engine_object>` for details."
 msgstr ""
+"El arcivo HTML debe evaluar el archivo JavaScript ``$GODOT_BASENAME.js``.  "
+"Este archivo define un objeto global ``Engine`` usado al iniciar el motor, :"
+"ref:`ver debajo <doc_javascript_engine_object>` para más detalles."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:44
 msgid ""
 "The boot splash image is exported as ``$GODOT_BASENAME.png`` and can be used "
 "e.g. in ``<img />`` elements."
 msgstr ""
+"La imagen splash de inicio es exportada como ``$GODOT_BASENAME.png`` y puede "
+"ser usada en elementos como ``<img />``."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:47
 msgid ""
 "``$GODOT_DEBUG_ENABLED`` can be useful to optionally display e.g. an output "
 "console or other debug tools."
 msgstr ""
+"``$GODOT_DEBUG_ENABLED`` puede ser útil para, opcionalmente, mostrar salida "
+"de consola u otras herramientas de depuración."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:50
 msgid ""
 "``$GODOT_HEAD_INCLUDE`` is substituted with the string specified by the "
 "export option ``Html/Head Include``."
 msgstr ""
+"``$GODOT_HEAD_INCLUDE`` es sustituida con la cadena especificada por la "
+"opción de exportación ``Html/Head Include``."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:56
 msgid "The ``Engine`` object"
-msgstr ""
+msgstr "El objeto ``Engine``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:58
 msgid ""
 "The JavaScript global object ``Engine`` is defined by ``$GODOT_BASENAME.js`` "
 "and serves as an interface to the engine start-up process."
 msgstr ""
+"El objeto global JavaScript es definido por ``$GODOT_BASENAME.js`` y sirve "
+"como una interfaz para los procesos de inicio del motor."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:61
 msgid "The object itself has only two methods, ``load()`` and ``unload()``."
-msgstr ""
+msgstr "El objeto tiene solamente dos métodos, ``load()`` y ``unload()``."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:64
 msgid "``Engine.load(basePath)``"
-msgstr ""
+msgstr "``Engine.load(basePath)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:66
 msgid "Loads the engine from the passed base path."
-msgstr ""
+msgstr "Carga el motor desde la ruta indicada."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:68
 msgid "Returns a promise that resolves once the engine is loaded."
-msgstr ""
+msgstr "Devuelve una promesa de que resolverá una vez cargado el motor."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:71
 msgid "``Engine.unload()``"
-msgstr ""
+msgstr "``Engine.unload()``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:73
 msgid ""
 "Unloads the module to free memory. This is called automatically once the "
 "module is instantiated unless explicitly disabled."
 msgstr ""
+"Descarga el módulo para liberar memoria. Esto es llamado automáticamente una "
+"vez que el módulo es instanciado a menos que sea deshabilitado "
+"explícitamente."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:77
 msgid "``Engine.isWebGLAvailable(majorVersion = 1)``"
-msgstr ""
+msgstr "``Engine.isWebGLAvailable(majorVersion = 1)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:79
 msgid ""
 "Returns ``true`` if the given major version of WebGL is available, ``false`` "
 "otherwise. Defaults to ``1`` for WebGL 1.0."
 msgstr ""
+"Devuelve  ``true`` si la versión mayor de WebGL dada está disponible, "
+"``false`` falso de otro modo. Por defecto es ``1`` para WebGL 1.0."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:83
 msgid "Starting an ``Engine`` instance"
-msgstr ""
+msgstr "Comenzando una instancia de ``Engine``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:85
 msgid ""
 "The more interesting interface is accessed by instantiating ``Engine`` using "
 "the ``new`` operator:"
 msgstr ""
+"La interfaz más interesante es accedida instanciando ``Engine`` usando el "
+"operador ``new``:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:92
 msgid ""
@@ -7580,32 +8005,43 @@ msgid ""
 "such an instance, the global ``Engine`` object must be loaded, then the "
 "``engine`` instance must be initialized and started."
 msgstr ""
+"Esta instancia ``Engine``, referida como ``engine`` con una ``e`` minúscula "
+"desde ahora, es una instancia iniciable desde el motor, usualmente un juego. "
+"Para iniciar esta instancia, el objeto global ``Engine`` debe ser cargado, "
+"luego, la instancia ``engine`` debe ser inicializada e iniciada."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:98
 msgid "``engine.init(basePath)``"
-msgstr ""
+msgstr "``engine.init(basePath)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:100
 msgid ""
 "Initializes the instance. If the engine wasn't loaded yet, a base path must "
 "be passed from which the engine will be loaded."
 msgstr ""
+"Inicializa la instancia. Si el motor no fue cargado todavía, una ruta base "
+"debe ser pasada desde donte el motor será gargado."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:103
 msgid ""
 "Returns a promise that resolves once the engine is loaded and initialized. "
 "It can then be started with ``engine.startGame()``"
 msgstr ""
+"Devuelve una promesa de que resolverá cuando el motor es cargado e "
+"inicializado. Puede ser iniciada con ``engine.startGame()``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:107
 msgid "``engine.preloadFile(file, path)``"
-msgstr ""
+msgstr "``engine.preloadFile(file, path)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:109
 msgid ""
 "This loads a file so it is available in the file system once the instance is "
 "started. This must be called **before** starting the instance."
 msgstr ""
+"Esto carga un archivo para que esté disponible en el sistema de archivos una "
+"vez que la instancia es iniciada. Esto debe llamarse **antes** de iniciar la "
+"instancia."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:112
 msgid ""
@@ -7613,6 +8049,9 @@ msgid ""
 "is an ``ArrayBuffer`` or a view on one, the buffer will used as content of "
 "the file."
 msgstr ""
+"Si el ``file`` es una cadena, el archivo será cargado desde una URL. Si "
+"``file`` es un ``ArrayBuffer`` o una vista de uno, el buffer será usado como "
+"un contenido del archivo."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:116
 msgid ""
@@ -7620,14 +8059,18 @@ msgid ""
 "available. This is mandatory if ``file`` is not a string. Otherwise, the "
 "path is derived from the URL of the loaded file."
 msgstr ""
+"Si ``path`` es una cadena, especifica la ruta en la cual el archivo estará "
+"disponible. Es mandatorio si ``file`` no es una cadena. De otro modo, la "
+"ruta será derivada desde la URL del archivo cargado."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:120
 msgid "Returns a promise that resolves once the file is preloaded."
 msgstr ""
+"Devuelve una promesa de que resolverá una vez el archivo es precargado."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:123
 msgid "``engine.start(arg1, arg2, …)``"
-msgstr ""
+msgstr "``engine.start(arg1, arg2, …)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:125
 msgid ""
@@ -7636,44 +8079,55 @@ msgid ""
 "used, but usually the other methods whose names start with ``engine.start`` "
 "are simpler to use."
 msgstr ""
+"Comienza la instancia del motor, pasando la cadena indicada como argumento "
+"de la función ``main()``. Esto permite un gran control sobre cómo el motor "
+"es usado, pero usualmente los otros métodos cuyos nombres comienzan con "
+"``engine.start`` son más simples de usar."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:130
 msgid "Returns a promise that resolves once the engine started."
-msgstr ""
+msgstr "Devuelve una promesa de que resolverá una vez el motor a iniciado."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:133
 msgid "``engine.startGame(mainPack)``"
-msgstr ""
+msgstr "``engine.startGame(mainPack)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:135
 msgid ""
 "Starts the game with the main pack loaded from the passed URL string and "
 "starts the engine with it."
 msgstr ""
+"Comienza el juego con el paquete principal cargado desde la cadena URL "
+"indicada e inicia el motor."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:138
 msgid ""
 "If the engine isn't loaded yet, the base path of the passed URL will be used "
 "to load the engine."
 msgstr ""
+"Si el motor no está cargado todavía, la ruta base de la URL indicada será "
+"utilizada para cargar el motor."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:141
 msgid "Returns a promise that resolves once the game started."
 msgstr ""
+"Devuelve una promesa de que resolverá una vez que el juego ha arrancado."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:144
 msgid "Configuring start-up behaviour"
-msgstr ""
+msgstr "Configurando comportamiento de inicio"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:146
 msgid ""
 "Beside starting the engine, other methods of the engine instance allow "
 "configuring the behavior:"
 msgstr ""
+"Además de comenzar el engine, otros métodos de la instancia engine permite "
+"configurar el comportamiento:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:150
 msgid "``engine.setUnloadAfterInit(enabled)``"
-msgstr ""
+msgstr "``engine.setUnloadAfterInit(enabled)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:152
 msgid ""
@@ -7682,34 +8136,45 @@ msgid ""
 "needed once the instance is initialized. However, if more instances of the "
 "engine will be started, the Engine will have to be loaded again."
 msgstr ""
+"Especifica si Engine será removido automáticamente una vez que la instancia "
+"es inicializada. Esto libera memoria del navegador removiendo archivos "
+"cargados que no son necesarios una vez que la instancia es inicializada. Sin "
+"embargo, si más instancias de engine son iniciadas, Engine tendrá que ser "
+"cargado nuevamente."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:157
 msgid "Defaults to ``true``."
-msgstr ""
+msgstr "Es ``true`` por defecto."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:160
 msgid "``engine.setCanvas(canvasElem)``"
-msgstr ""
+msgstr "``engine.setCanvas(canvasElem)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:162
 msgid ""
 "By default, the first canvas element on the page is used for rendering. By "
 "calling this method, another canvas can be specified."
 msgstr ""
+"Por defecto, el primer elemento del área de trabajo de la página se utiliza "
+"para el renderizado. Llamando a este método, se puede especificar otra área "
+"de trabajo."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:166
 msgid "``engine.setCanvasResizedOnStart(enabled)``"
-msgstr ""
+msgstr "``engine.setCanvasResizedOnStart(enabled)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:168
 msgid ""
 "Sets whether the canvas will be resized to the width and height specified in "
 "the project settings on start. Defaults to ``true``."
 msgstr ""
+"Establece si el área de trabajo se redimensionará a la anchura y la altura "
+"especificadas en la configuración del proyecto al inicio. Por defecto es "
+"``true``."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:172
 msgid "``engine.setLocale(locale)``"
-msgstr ""
+msgstr "``engine.setLocale(locale)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:174
 msgid ""
@@ -7718,28 +8183,35 @@ msgid ""
 "specified locale, or at least use the locale requested in the HTTP ``Accept-"
 "Language`` header. This method allows specifying such a custom locale string."
 msgstr ""
+"Por defecto, el motor tratará de adivinar la localización a usar desde el "
+"entorno JavaScript. Es usualemente preferible para usar una localización "
+"especificada por el usuario desde el lado del servidor, o al menos usará la "
+"localización solicitada en la cabecera HTTP ``Accept-Language``. Este método "
+"permitirá especificar la cadena de localización personalizada."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:181
 msgid "``engine.setExecutableName(execName)``"
-msgstr ""
+msgstr "``engine.setExecutableName(execName)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:183
 msgid ""
 "By default, the base name of the loaded engine files is used for the "
 "executable name. This method allows specifying another name."
 msgstr ""
+"Por defecto, el nombre base de los archivos del engine cargados son usados "
+"para el nombre del ejecutable. Este método permite especificar otro nombre."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:187
 msgid "Customizing the presentation"
-msgstr ""
+msgstr "Personalizando la presentación"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:189
 msgid "The following methods are used to implement the presentation:"
-msgstr ""
+msgstr "Los siguientes métodos son usados para implementar la presentación:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:192
 msgid "``engine.setProgressFunc(func)``"
-msgstr ""
+msgstr "``engine.setProgressFunc(func)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:194
 msgid ""
@@ -7748,28 +8220,37 @@ msgid ""
 "bytes loaded so far, the second argument specifies the total number of bytes "
 "to load."
 msgstr ""
+"Este método es usado para mostrar el progreso de la descarga. La función "
+"callback pasada es llamada con dos números de argumento, el primer argumento "
+"especifica los bytes cargados, el segundo especifica el total de bytes a "
+"cargar."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:206
 msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
-msgstr ""
+msgstr "Si el total es 0, no puede ser calculado. Posibles razones incluyen:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:209
 msgid "Files are delivered with server-side chunked compression"
 msgstr ""
+"Los archivos son distribuidos con chunked compression del lado del servidor"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:210
 msgid "Files are delivered with server-side compression on Chromium"
 msgstr ""
+"Los archivos son distribuidos con compresión del lado del servidor en "
+"Chromium"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:211
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
 msgstr ""
+"Algunas descargas no han iniciado todavía (usualmente en servidores sin "
+"multi-threading)"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:214
 msgid "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
-msgstr ""
+msgstr "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:216
 msgid ""
@@ -7777,21 +8258,28 @@ msgid ""
 "``stderr`` streams. The functions passed in will be called with one string "
 "argument specifying the string to print."
 msgstr ""
+"Esos métodos permiten implementar comportamientos personalizados para los "
+"streams de ``stdout`` y ``stderr``. Las funciones pasadas serán llamadas con "
+"un argumento en forma de cadena, especificando la cadena a imprimir."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:227
 msgid ""
 "These methods should usually only be used in debug pages. The ``"
 "$GODOT_DEBUG_ENABLED`` placeholder can be used to check for this."
 msgstr ""
+"Esos métodos deben, usualmente, solo ser usados en páginas de depuración; El "
+"placeholder ``$GODOT_DEBUG_ENABLED`` puede ser usado para verificar esto."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:230
 msgid ""
 "By default, ``console.log()`` and ``console.warn()`` are used respectively."
 msgstr ""
+"Por defecto, ``console.log()`` y ``console.warn()`` son usadas "
+"respectivamente."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:233
 msgid "Accessing the Emscripten ``Module``"
-msgstr ""
+msgstr "Accediendo el módulo Emscripten"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:235
 msgid ""
@@ -7800,10 +8288,14 @@ msgid ""
 "documentation for information on how to use it: https://kripken.github.io/"
 "emscripten-site/docs/api_reference/module.html"
 msgstr ""
+"Si sabes lo que estás haciendo, puedes acceder al entorno de ejecución "
+"(módulo Emscripten) como ``engine.rtenv``. Revisa la documentación oficial "
+"para información de cómo usarlo: https://kripken.github.io/emscripten-site/"
+"docs/api_reference/module.html"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:4
 msgid "Changing application icon for windows"
-msgstr ""
+msgstr "Cambiar el icono de la aplicación para Windows"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
 msgid ""
@@ -7811,16 +8303,21 @@ msgid ""
 "will want to change that for your game. There are two types of icons that "
 "can be changed: the file icon and the taskbar icon."
 msgstr ""
+"Por defecto, el icono del juego exportado será el icono de Godot. Lo más "
+"probable es que quieras cambiar esto para tu juego. Hay dos tipos de iconos "
+"que se pueden cambiar: el icono del archivo y el icono de la barra de tareas."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:9
 msgid "Changing the taskbar icon"
-msgstr ""
+msgstr "Cambiar el icono de la barra de tareas"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid ""
 "The taskbar icon is the icon that shows up on the taskbar when your game is "
 "running."
 msgstr ""
+"El icono de la barra de tareas es el icono que aparece en la barra de tareas "
+"cuando se está ejecutando el juego."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:15
 msgid ""
@@ -7828,20 +8325,26 @@ msgid ""
 "Settings>Application>Config>Icon. Click on the folder icon and select your "
 "desired icon."
 msgstr ""
+"Para cambiar el icono de la barra de tareas, vaya a Proyecto>Ajustes del "
+"proyecto>Application>Config>Icon. Haz clic en el icono de la carpeta y "
+"selecciona el icono deseado."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:17
 msgid "This is also the icon that gets displayed in the Godot project list."
 msgstr ""
+"Este es el icono que también será mostrado en la lista de proyectos de Godot."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:22
 msgid "Changing the file icon"
-msgstr ""
+msgstr "Cambiar el ícono del archivo"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:24
 msgid ""
 "The file icon is the icon of the executable that you click on to start the "
 "game."
 msgstr ""
+"El icono de archivo es el icono del ejecutable sobre el que se hace clic "
+"para iniciar el juego."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:28
 msgid ""
@@ -7849,6 +8352,9 @@ msgid ""
 "tool called **rcedit**. You can download it here: https://github.com/"
 "electron/rcedit/releases"
 msgstr ""
+"Antes de seleccionarlo en las opciones de exportación, necesitarás instalar "
+"una herramienta extra llamada **rcedit*. La puedes descargar desde aquí: "
+"https://github.com/electron/rcedit/releases"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:32
 msgid ""
@@ -7857,12 +8363,18 @@ msgid ""
 "Click on the folder icon for the **rcedit** entry. Navigate to and select "
 "the **rcedit** executable."
 msgstr ""
+"Después de descargar, necesitarás indicarle a Godot la ruta al ejecutable de "
+"**rcedit** en tu computadora. Ir a Editor>Ajustes del Editor>Export>Windows. "
+"Clic en el botón con ícono de carpeta en la entrada **rcedit**. Navegue y "
+"seleccione el ejecutable **rcedit**."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:34
 msgid ""
 "For Linux users, you will also need to install wine in order to use rcedit. "
 "For more information, check https://www.winehq.org/"
 msgstr ""
+"Usuarios de Linux también deberán instalar wine para poder usar rcedit. Para "
+"más información, ver https://www.winehq.org/"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
 msgid ""
@@ -7872,6 +8384,11 @@ msgid ""
 "you will find Icon, select your desired image in ICO format as your file "
 "icon."
 msgstr ""
+"Ahora todo está listo para cambiar el ícono de archivo. Para ello, deberás "
+"especificar el icono al exportar. Ve a Proyecto>Exportar. Suponiendo que "
+"tengas listo un preset de Windows Desktop listo, en las opciones, dentro de "
+"Application, encontrarás Icon, seleccionar la imagen deseada en formato ICO "
+"como icono de archivo."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:40
 msgid ""
@@ -7879,30 +8396,38 @@ msgid ""
 "this tutorial: http://skyboygames.com/easily-create-a-windows-app-icon-with-"
 "gimp/"
 msgstr ""
+"Para exportar una imagen ICO, se puede utilizar GIMP. Para más detalles, "
+"referirse a este tutorial: http://skyboygames.com/easily-create-a-windows-"
+"app-icon-with-gimp/"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:42
 msgid "Check the documentation for more info about exporting."
-msgstr ""
+msgstr "Revisar la documentación para más información sobre exportación."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:48
 msgid "Testing the result"
-msgstr ""
+msgstr "Probando el resultado"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:50
 msgid ""
 "You can now export the game and see whether you have change the icons "
 "successfully or not. If everything works fine, you will see this."
 msgstr ""
+"Ahora puedes exportar el juego y ver si los cambios de íconos fueron "
+"exitosos o no. Si todo funciona bien, verás esto."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:56
 msgid "Icon (ICO) file requirements"
-msgstr ""
+msgstr "Requerimientos de archivos de íconos (ICO)"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:58
 msgid ""
 "Regardless of which program you use to create your ICO file, there are some "
 "requirements to ensure the icon (and your executable) works on Windows."
 msgstr ""
+"Independientemente de qué programas usas para crear archivos ICO, estos son "
+"algunos requerimientos para asegurarse de que el ícono (y su ejecutable) "
+"funcionan en Windows."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:60
 msgid ""
@@ -7912,6 +8437,11 @@ msgid ""
 "questions/40749785/windows-10-all-icon-resolutions-on-all-dpi-settings-"
 "format-pixel-art-as-icon>`__."
 msgstr ""
+"Esto es un poco complicado, como se puede ver en los siguientes hilos de "
+"StackOverflow: `uno <https://stackoverflow.com/questions/3236115/which-icon-"
+"sizes-should-my-windows-applications-icon-include>`__, `dos <https://"
+"stackoverflow.com/questions/40749785/windows-10-all-icon-resolutions-on-all-"
+"dpi-settings-format-pixel-art-as-icon>`__."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:62
 msgid ""
@@ -7919,6 +8449,10 @@ msgid ""
 "16x16, 48x48 and 256x256. They should also be uncompressed. The 256x256 icon "
 "*can* be compressed, but this breaks backwards compatibility with Windows XP."
 msgstr ""
+"Tu archivo ICO debe contener al menos íconos para las siguientes "
+"resoluciones: 16x16, 48x48 and 256x256. Además no deben estar comprimidos. "
+"El ícono 256x256 *puede* ser comprimido, pero esto romperá compatibilidad "
+"con Windows XP."
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:65
 msgid ""
@@ -7926,16 +8460,21 @@ msgid ""
 "supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
 "48, 56, 60, 63, 84 and one larger than 255px. (I.e. 256 or 512 or 1024)"
 msgstr ""
+"Si quieres soporte completo para pantallas high-DPI, esta es la lista de "
+"tamaños de íconos soportados en Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, "
+"42, 47, 48, 56, 60, 63, 84 y una mayor a 255px. (por ej. 256, 512 o 1024)"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:68
 msgid ""
 "Note that for high-DPI compression may be used, also they should be using "
 "24bpp mode in contrast to the lower resolutions."
 msgstr ""
+"Tener en cuenta que la compresión para high-DPI puede ser usada, también "
+"deberán usar modo 24bpp a diferencia de resoluciones menores."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:4
 msgid "Exporting for iOS"
-msgstr ""
+msgstr "Exportando para iOS"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:6
 msgid ""
@@ -7943,6 +8482,10 @@ msgid ""
 "build and deploy to an iOS device, build a release for the App Store, and do "
 "everything else you can normally do with Xcode."
 msgstr ""
+"Estos son los pasos para cargar un proyecto de Godot en Xcode. Esto permite "
+"compilar e implementar en un dispositivo iOS, compilar una versión de "
+"distribución para la App Store y todo lo que normalmente puede hacerse con "
+"Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:11
 #: ../../docs/development/compiling/compiling_with_mono.rst:9
@@ -7955,68 +8498,82 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_osx.rst:9
 #: ../../docs/development/compiling/compiling_for_windows.rst:9
 msgid "Requirements"
-msgstr ""
+msgstr "Requerimientos"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:13
 msgid ""
 "You must export for iOS from a computer running macOS with Xcode installed."
 msgstr ""
+"Deberás exportar a iOS desde una computadora con macOS y Xcode instalado."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:14
 msgid ""
 "Download the Godot export templates. Use the Godot menu: Editor > Manage "
 "Export Templates"
 msgstr ""
+"Descarga los templates de Godot. Usa el menu de Godot: Editor > Cargar "
+"Plantillas de Exportación"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:18
 msgid "Export a Godot project to Xcode"
-msgstr ""
+msgstr "Exportar un proyecto de Godot a Xcode"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:20
 msgid ""
 "In the Godot editor, open the **Export** window from the **Project** menu. "
 "When the Export window opens, click **Add..** and select **iOS**."
 msgstr ""
+"En el editor de Godot, abrir la ventana **Exportar** del menú **Proyecto**. "
+"Cuando la ventana Exportar se abra, hacer clic en **Añadir** y seleccionar "
+"**iOS**."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:23
 msgid ""
 "The following export options are required. Leaving any blank with cause the "
 "exporter to throw an error:"
 msgstr ""
+"Las siguientes opciones de exportación son requeridas. Dejando cualquiera en "
+"blanco causará que el exportador lance un error:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:26
 msgid "In the **Application** category * **App Store Team ID**"
-msgstr ""
+msgstr "En la categoría **Application**, **App Store Team ID**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:28
 msgid "Everything in the **Required Icons** category"
-msgstr ""
+msgstr "Todo en la categoría **Required Icons**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:29
 msgid "Everything in the **Landscape Launch Screens** category"
-msgstr ""
+msgstr "Todo en la categoría **Landscape Launch Screens**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:30
 msgid "Everything in the **Portrait Launch Screens** category"
-msgstr ""
+msgstr "Todo en la categoría  **Portrait Launch Screens**"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:32
 msgid ""
 "After you click **Export Project**, there are still two important options "
 "left:"
 msgstr ""
+"Después de hacer clic en **Exportar Proyecto**, quedan dos opciones "
+"importantes:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:34
 msgid ""
 "**Path** is an empty folder that will contain the exported Xcode project "
 "files."
 msgstr ""
+"**Path** es una carpeta vacía que contendrá los archivos de proyecto de "
+"Xcode exportados ."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:35
 msgid ""
 "**File** will be the name of the Xcode project and several project specific "
 "files and directories."
 msgstr ""
+"**File** será el nombre del proyecto Xcode y varios archivos y directorios "
+"específicos del proyecto."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:39
 msgid ""
@@ -8024,58 +8581,74 @@ msgid ""
 "project's name. When you see **exported_xcode_project_name** in the "
 "following steps, replace it with the name you used instead."
 msgstr ""
+"Este tutorial utiliza **exported_xcode_project_name**, pero utilizarás el "
+"nombre de tu proyecto. Cuando veas **exported_xcode_project_name** en los "
+"siguientes pasos, reemplázalo con el nombre que usaste en su lugar."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:43
 msgid "When the export completes, the output folder should look like this:"
 msgstr ""
+"Cuando la exportación se completa, la carpeta de salida debe tener el "
+"siguiente aspecto:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:47
 msgid ""
 "Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
 "like any other iOS app."
 msgstr ""
+"Al abrir **exported_xcode_project_name.xcodeproj** te permite compilar y "
+"desplegar como cualquier otra aplicación iOS."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:52
 msgid "Active development considerations"
-msgstr ""
+msgstr "Consideraciones activas del desarrollo"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:54
 msgid ""
 "The above method creates an exported project that you can build for release, "
 "but you have to re-export every time you make a change in Godot."
 msgstr ""
+"El método anterior crea un proyecto exportado que puedes compilar para su "
+"publicación, pero tienes que reexportar cada vez que haces un cambio en "
+"Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:57
 msgid ""
 "While developing, you can speed this process up by linking your Godot "
 "project files directly into your app."
 msgstr ""
+"Durante el desarrollo, puedes acelerar este proceso enlazando tus archivos "
+"de proyecto Godot directamente a tu aplicación."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:60
 msgid "In the following example:"
-msgstr ""
+msgstr "En el siguiente ejemplo:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:62
 msgid ""
 "**exported_xcode_project_name** is the name of the exported iOS application "
 "(as above)."
 msgstr ""
+"**exported_xcode_project_name** es el nombre de la aplicación iOS exportada "
+"(como arriba)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:63
 msgid "**godot_project_to_export** is the name of the Godot project."
-msgstr ""
+msgstr "**godot_project_to_export** es el nombre del proyecto Godot."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:66
 msgid "Steps to link an Godot project folder to Xcode"
-msgstr ""
+msgstr "Pasos para enlazar una carpeta de proyecto Godot a Xcode"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:68
 msgid "Start from an exported iOS project (follow the steps above)."
-msgstr ""
+msgstr "Empieza desde un proyecto iOS exportado (sigue los pasos anteriores)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:69
 msgid "In Finder, drag the Godot project folder into the Xcode file browser."
 msgstr ""
+"En Finder, arrastra la carpeta del proyecto Godot al navegador de archivos "
+"Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:73
 msgid ""
@@ -8083,14 +8656,19 @@ msgid ""
 "means you will be able to continue to edit your Godot project in its current "
 "location."
 msgstr ""
+"3. En el cuadro de diálogo, asegúrate de que **Crear referencias de "
+"carpeta** está seleccionado. Esto significa que podrás continuar editando tu "
+"proyecto Godot en su ubicación actual."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:78
 msgid "See the **godot_project_to_export** folder in the Xcode file browser."
 msgstr ""
+"Visualiza la carpeta **godot_project_to_export** en el navegador de archivos "
+"Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:79
 msgid "Delete **exported_xcode_project_name.pck** from the Xcode project."
-msgstr ""
+msgstr "Eliminar **exported_xcode_project_name.pck** del proyecto Xcode."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:83
 msgid ""
@@ -8098,47 +8676,59 @@ msgid ""
 "named **godot_path** (this is the real key name) with a value "
 "**godot_project_to_export** (this is the name of your project)"
 msgstr ""
+"6. Abre **exported_xcode_project_name-Info.plist** y añade una propiedad "
+"string llamada **godot_path** (este es el nombre real de la clave) con un "
+"valor **godot_project_to_export** (este es el nombre de tu proyecto)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:89
 msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
 msgstr ""
+"¡Eso es todo! Ahora puedes editar tu proyecto en el editor Godot y "
+"compilarlo en Xcode cuando quieras ejecutarlo en un dispositivo."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:93
 #: ../../docs/tutorials/platform/services_for_ios.rst:4
 msgid "Services for iOS"
-msgstr ""
+msgstr "Servicios para iOS"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:95
 msgid ""
 "Special iOS services can be used in Godot. Check out the :ref:"
 "`doc_services_for_ios` page."
 msgstr ""
+"Los servicios especiales de iOS se pueden utilizar en Godot. Echa un vistazo "
+"a la página :ref:`doc_services_for_ios`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr ""
+msgstr "Exportación para Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
+"Exportar para Android tiene menos requisitos que compilar Godot para él. Los "
+"siguientes pasos detallan lo que se necesita para configurar el SDK y el "
+"motor."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
-msgstr ""
+msgstr "Descargar el SDK de Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 msgid ""
 "Download and install the Android SDK from http://developer.android.com/sdk/"
 "index.html"
 msgstr ""
+"Descarga e instala el SDK de Android desde http://developer.android.com/sdk/"
+"index.html"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid "Install OpenJDK or Oracle JDK"
-msgstr ""
+msgstr "Instalar OpenJDK u Oracle JDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
 msgid ""
@@ -8147,10 +8737,15 @@ msgid ""
 "index.html>`__. Versions below JDK 8 may not work, some users have reported "
 "issues with the jarsigner (used to sign the APKs) in JDK 7."
 msgstr ""
+"Descarga e instala `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ u "
+"`Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/index."
+"html>`__. Es posible que las versiones inferiores a JDK 8 no funcionen, "
+"algunos usuarios han informado de problemas con el jarsigner (utilizado para "
+"firmar los APK) en JDK 7."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
 msgid "Create a debug.keystore"
-msgstr ""
+msgstr "Crear un debug.keystore"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
 msgid ""
@@ -8552,6 +9147,11 @@ msgid ""
 "dimensions. This way it can be inserted into an ``<iframe>`` with the game's "
 "size, as is common on most web game hosting sites."
 msgstr ""
+"La página HTML está diseñada para encajar perfectamente en el juego sin "
+"cortar partes del canvas cuando la ventana del navegador es escalada a las "
+"dimensiones del juego. De esta manera se puede insertar en un ``<iframe>`` "
+"con el tamaño del juego, como es común en la mayoría de los sitios web de "
+"alojamiento de juegos."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:105
 msgid ""
@@ -8697,16 +9297,16 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "Flujo de trabajo del proyecto"
 
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
 msgid "Project setup"
-msgstr ""
+msgstr "Configuración del proyecto"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
 #: ../../docs/getting_started/editor/unity_to_godot.rst:120
 msgid "Project organization"
-msgstr ""
+msgstr "Organización del proyecto"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:9
 msgid ""
@@ -8716,34 +9316,48 @@ msgid ""
 "engine can be a little challenging. Because of this, a simple workflow will "
 "be described, which can be used or not, but should work as a starting point."
 msgstr ""
+"Este tutorial está apuntado a proponer un flujo de trabajo simple para "
+"organizar proyectos. Como Godot permite que el programador utilice el "
+"sistema de archivos como lo desee, encontrar un modo de organizar proyectos "
+"cuando se comienza a usar el motor puede ser un desafío. A raíz de esto, un "
+"modo de trabajo simple será descripto, el que puede ser usado o no, pero "
+"servirá como punto de partida."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
 msgid ""
 "Additionally, using version control can be challenging so this proposition "
 "will include that too."
 msgstr ""
+"Adicionalmente, usando control deversiones puede ser otro desafío así que "
+"esta propuesta incluirá eso también."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid "Organization"
-msgstr ""
+msgstr "Organización"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
 msgid ""
 "Godot is scene based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
+"Godot es basado en escenas por naturaleza, y usa el sistema de archivos como "
+"tal, sin metadatos o una base de datos de recursos."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:25
 msgid ""
 "Unlike other engines, a lot of resource are contained within the scene "
 "itself, so the amount of files in the filesystem is considerably lower."
 msgstr ""
+"A diferencia de otros motores, muchos recursos son contenidos en la escena "
+"misma, así que la cantidad de archivos es considerablemente menor."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:28
 msgid ""
 "Considering that, the most common approach is to group assets close to "
 "scenes as, when a project grows, it makes it more maintainable."
 msgstr ""
+"Considerando eso, el enfoque más común es agrupar los recursos cerca de las "
+"escenas así, cuando el proyecto crece, se hace más manejable."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:31
 msgid ""
@@ -8751,10 +9365,13 @@ msgid ""
 "can usually be organized in a place, while a separate folder is used to "
 "store built levels that use them."
 msgstr ""
+"Un ejemplo, imágenes basadas en sprites, modelos de escenas 3D o mallas, "
+"materiales, etcétera, pueden usualmente organizarse en un lugar, mientras "
+"una carpeta separada es utilizada para construir los niveles que las usan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid "Importing"
-msgstr ""
+msgstr "Importando"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
 msgid ""
@@ -8762,26 +9379,34 @@ msgid ""
 "project. While this can be useful in very large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
+"Versiones de Godot anteriores a 3.0 hacían el proceso de importación de "
+"archivos desde fuera del proyecto. Mientras que esto puede ser útil en "
+"proyectos muy grandes, resultaba en una organización engorrosa para la "
+"mayoría de los desarrolladores."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
 "Because of this, assets are now imported from within the project folder "
 "transparently."
 msgstr ""
+"A razón de esto, los recursos ahora son importados desde dentro de la "
+"carpeta del proyecto, transparentemente."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:61
 msgid ""
 "If a folder shouldn't be imported into Godot an exception can be made with "
 "a .gdignore file."
 msgstr ""
+"Si no se quiere que una carpeta sea importada in Godot, se puede hacer una "
+"excepción con un archivo .gdignore ."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "Proceso de importación"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "Importando recursos en Godot 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -8790,6 +9415,10 @@ msgid ""
 "to specify how to convert and change import flags for textures, audios, "
 "scenes, etc."
 msgstr ""
+"Previamente, importar recursos en Godot 2.x requería mantener una carpeta "
+"separada del directorio con los recursos originales. Sin hacer esto, era "
+"imposible especificar cómo convertir y cambiar banderas de texturas, audios, "
+"escenas, etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
 msgid ""
@@ -8799,14 +9428,20 @@ msgid ""
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
+"En Godot 3.0, podemos usar un enfoque más moderno para importar: Simplemente "
+"suelta tus recursos (archivos de imágenes, escenas, audios, fuentes, etc.) "
+"directamente en la carpeta del proyecto (cópialos manualmente desde el "
+"explorador de archivos de tu SO). Godot importará esos archivos "
+"automáticamente y mantendrá los recursos importados oculto en la carpeta "
+"res://.import ."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:20
 msgid "This allows changing all the import parameters transparently."
-msgstr ""
+msgstr "Esto permite cambiar los parámetros de importación transparentemente."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:23
 msgid "Changing import parameters"
-msgstr ""
+msgstr "Cambiando parámetros de importación"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:25
 msgid ""
@@ -8814,12 +9449,19 @@ msgid ""
 "import parameters are only present in non-native Godot resource types) is "
 "easy. Just select in the filesystem dock the relevant resource:"
 msgstr ""
+"Cambiar los parámetros de importación de un recurso en Godot es simple "
+"(tener en mente que los parámetros son presentes sólo en tipos de recursos "
+"no nativos de Godot). Seleccione el recurso en el panel de sistema de "
+"archivos:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
 msgid ""
 "And, after adjusting the parameters, just press \"Reimport\". The parameters "
 "used will be only for this asset and will be used on future reimports."
 msgstr ""
+"Y, después de ajustar los parámetros, presione \"Reimportar\". Los "
+"parámetros serán usados sólo para este recurso y serán utilizados para "
+"reimportaciones futuras."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
 msgid ""
@@ -8827,10 +9469,13 @@ msgid ""
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
+"Cambiando los parámetros de importación de varios recursos al mismo tiempo "
+"también es posible. Simplemente selecciónelos a todos juntos en el panel de "
+"recursos y los parámetros expuestos se aplicarán a todos ellos al reimportar."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
-msgstr ""
+msgstr "Reimportación automática"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -8838,21 +9483,29 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
+"Cuando el checksum MD5 de un recurso de origen cambia, Godot realizará una "
+"reimportación automática del mismo, aplicando el preset configurado para ese "
+"asset específico."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Files generated"
-msgstr ""
+msgstr "Archivos generados"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"Al importar se agregará un archivo adicional <asset>.import, que contiene la "
+"configuración de importación. Asegúrese de enviarlos a su sistema de control "
+"de versiones!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:53
 msgid ""
 "Additionally, extra assets will be preset in the hidden res://.import folder:"
 msgstr ""
+"Además, los assets adicionales estarán preestablecidos en la carpeta oculta "
+"res://.import:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
 msgid ""
@@ -8862,10 +9515,16 @@ msgid ""
 "reimporting time when checking out in another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
+"Si alguno de los archivos presentes en esta carpeta se borra (o toda la "
+"carpeta), el asset o assets se reimportarán automáticamente. Como tal, la "
+"confirmación de esta carpeta al sistema de control de versiones es opcional. "
+"Puedes ahorrar tiempo en la reimportación al realizar el proceso en otra "
+"computadora, pero ocupa mucho más espacio y tiempo de transferencia. ¡Escoge "
+"tu veneno!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"
-msgstr ""
+msgstr "Cambiar el tipo de recurso importado"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:66
 msgid ""
@@ -8873,10 +9532,13 @@ msgid ""
 "this, just select the relevant type of resource desired and press \"Reimport"
 "\":"
 msgstr ""
+"Algunos recursos de origen pueden importarse como diferente tipos de "
+"recursos. Para esto, sólo seleccione el tipo relevante de recurso y presione "
+"\"Reimportar\":"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "Cambiar los parámetros de importación por defecto"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
@@ -8885,36 +9547,48 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
+"Diferentes tipos de juegos pueden requerir diferentes valores por defecto. "
+"El cambio de los valores predeterminados por proyecto se puede realizar "
+"utilizando el botón \"Preset...\". Menú. Además de algunos tipos de recursos "
+"que ofrecen presets, también se puede guardar y borrar la configuración por "
+"defecto:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "!Simplicidad es la clave!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:86
 msgid ""
 "This is a very simple workflow which should take very little time to get "
 "used to. It also enforces a more correct way to deal with resources."
 msgstr ""
+"Esto es un flujo de trabajo simple el cual tomará poco tiempo en "
+"acostumbrarse. También fuerza un modo mejor para tratar con recursos."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:89
 msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
+"Existen muchos tipos de recursos disponibles para importar, así que por "
+"favor continúa leyendo para entender cómo trabajar con todos ellos!"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:4
 msgid "Importing audio samples"
-msgstr ""
+msgstr "Importar muestras de audio"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
 msgid "Why importing?"
-msgstr ""
+msgstr "¿Por qué importar?"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:9
 msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
 "options to import your audio data: WAV and OGG Vorbis."
 msgstr ""
+"Los datos de audio RAW en general son grandes e indeseados. Godot "
+"proporciona dos opciones principales para importar sus datos de audio: WAV y "
+"OGG Vorbis."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
 msgid ""
@@ -11654,6 +12328,9 @@ msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'hello.tscn'."
 msgstr ""
+"Una vez que se abra la ventana, seleccionaremos una escena principal. "
+"Localiza la propiedad `Application/Run/Main Scene` y haz clic en ella para "
+"seleccionar `hello.tscn'."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
@@ -11783,6 +12460,9 @@ msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
 msgstr ""
+"Haz clic en el botón \"Autoplay on Load\" (Reproducción automática al "
+"cargar) para que la animación se inicie automáticamente cuando se inicie la "
+"escena."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:81
 msgid ""
@@ -11973,6 +12653,9 @@ msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's colour. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
+"Al igual que con los nodos Sprite, puedes modular el color de la "
+"TextureRect. Haz clic en la propiedad ``Modulate`` y utiliza el selector de "
+"colores."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:92
 msgid "TextureRect modulated with a red color"
@@ -11990,6 +12673,12 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 2-bit, pure black and white image."
 msgstr ""
+"**TextureButton** es como TextureRect, excepto que tiene 5 ranuras de "
+"textura: una para cada uno de los estados del botón. La mayor parte del "
+"tiempo, usted usará las texturas Normal, Pressed y Hover. Focused es útil si "
+"tu interfaz escucha la entrada del teclado. La sexta ranura de imagen, la "
+"Máscara de Clic, te permite definir el área en la que se puede hacer clic "
+"utilizando una imagen en blanco y negro puro de 2 bits."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:104
 msgid ""
@@ -12315,6 +13004,12 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"Hay dos BoxContainers: VBoxContainer y HBoxContainer. No se puede añadir el "
+"nodo BoxContainer en sí, ya que es una clase helper, pero se pueden utilizar "
+"contenedores verticales y horizontales. Ordena los nodos en filas o "
+"columnas. Utilízalos para alinear artículos en una tienda o para construir "
+"cuadrículas complejas con filas y columnas de diferentes tamaños, ya que "
+"puedes anidarlas a tu gusto."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
 msgid "The HBoxContainer horizontally aligns UI elements"
@@ -13318,6 +14013,9 @@ msgid ""
 "``Number``'s ``text`` property requires a string so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
+"``str`` es una función incorporada que convierte cualquier valor en texto. "
+"La propiedad ``Number``'s ``text`` requiere un string por lo que no podemos "
+"asignarlo a ``new_value`` directamente"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:353
 msgid ""
@@ -13366,7 +14064,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
 msgid "The property's identifier as a string"
-msgstr ""
+msgstr "El identificador de la propiedad es un string"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
 msgid "The starting value"
@@ -13422,6 +14120,9 @@ msgid ""
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
 "That's why we write it as ``\"animated_health\"``."
 msgstr ""
+"Apuntamos a ``animated_health`` en ``self``, es decir, el nodo ``GUI``. "
+"Interpolate_property toma el nombre de la propiedad como un string. Por eso "
+"lo escribimos como ``\"animated_health\"``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:434
 msgid ""
@@ -15290,6 +15991,8 @@ msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
+"Tiene tipos de vectores propios (tales como Vector, transforms, etc.), "
+"haciéndolo eficiente para el uso intensivo del álgebra lineal."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
@@ -19300,7 +20003,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:313
 msgid "Future"
-msgstr ""
+msgstr "Posterior"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:315
 msgid ""
@@ -19433,9 +20136,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
-#, fuzzy
 msgid "Custom Godot Servers"
-msgstr "Itineradores personalizados"
+msgstr "Servidores de Godot personalizados"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
 msgid ""
@@ -19461,9 +20163,8 @@ msgid "`Mediator Pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:31
-#, fuzzy
 msgid "Adding AI"
-msgstr "Agregando Nodos"
+msgstr "Añadir AI"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:32
 msgid "Adding a custom asynchronous threads"
@@ -19487,9 +20188,8 @@ msgid "etc."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:39
-#, fuzzy
 msgid "Creating a Godot Server"
-msgstr "Creando un nuevo proyecto"
+msgstr "Creando un Servidor Godot"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:41
 msgid ""
@@ -19510,14 +20210,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:281
-#, fuzzy
 msgid ":ref:`RID<class_rid>`"
 msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:286
-#, fuzzy
 msgid "Registering the class to GDScript"
-msgstr "Diferencias con la API de GDScript"
+msgstr "Registrando una clase en GDScript"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:288
 msgid ""
@@ -19557,9 +20255,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:351
-#, fuzzy
 msgid "Binding Signals"
-msgstr "Señales en C#"
+msgstr "Señales Binding"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:353
 msgid ""
@@ -19591,9 +20288,8 @@ msgid "Summing it up"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:436
-#, fuzzy
 msgid "Here is the GDScript sample code"
-msgstr "Vea este ejemplo concreto en GDScript:"
+msgstr "Aquí está el código de ejemplo de GDScript"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:469
 #: ../../docs/development/compiling/compiling_with_mono.rst:47
@@ -19763,6 +20459,10 @@ msgid ""
 "allow the defined hint ones. Since no usage flags were specified, the "
 "default ones are PROPERTY_USAGE_STORAGE and PROPERTY_USAGE_EDITOR."
 msgstr ""
+"Esta es una propiedad de string, puede tomar cualquier string pero el editor "
+"sólo permitirá los que estén definidos como hint. Puesto que no se "
+"especificó ningún indicador de uso, los valores por defecto son "
+"PROPERTY_USAGE_STORAGE y PROPERTY_USAGE_EDITOR."
 
 #: ../../docs/development/cpp/object_class.rst:154
 msgid ""
@@ -25652,6 +26352,10 @@ msgid ""
 "one preset now, but we can make this method future-proof by returning the "
 "size of our ``Presets`` enumeration."
 msgstr ""
+"El método :ref:`get_preset_count<class_EditorImportPlugin_get_preset_count>` "
+"devuelve la cantidad de presets que definen estos plugins. Sólo tenemos un "
+"preset ahora, pero podemos hacer que este método esté preparado para el "
+"futuro devolviendo el tamaño de nuestra enumeración ``Presets``."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:210
 msgid ""
@@ -25668,12 +26372,19 @@ msgid ""
 "pattern to return something too. Although Godot won't ask for presets beyond "
 "the preset count you defined, it's always better to be on the safe side."
 msgstr ""
+"Aquí podemos usar la sentencia ``match`` para hacer el código más "
+"estructurado. De esta manera es más fácil añadir nuevos presets en el "
+"futuro. Usamos el patrón de catch all para devolver algo también. Aunque "
+"Godot no pedirá presets más allá del número de presets que definiste, "
+"siempre es mejor ser precavido."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:220
 msgid ""
 "If you have only one preset you could simply return its name directly, but "
 "if you do this you have to be careful when you add more presets."
 msgstr ""
+"Si sólo tiene un preset puede simplemente devolver su nombre directamente, "
+"pero si lo hace debe tener cuidado al añadir más presets."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:235
 msgid ""
@@ -25686,7 +26397,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 msgid "Key"
-msgstr ""
+msgstr "Clave"
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:242
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
@@ -25744,7 +26455,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:246
 msgid "The default value of the option for this preset."
-msgstr ""
+msgstr "El valor por defecto de la opción para este preset."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:248
 msgid "``property_hint``"
@@ -25796,6 +26507,12 @@ msgid ""
 "create the array of options first and then just change it based on the "
 "preset."
 msgstr ""
+"Tenga en cuenta que el método ```get_import_options`` recibe el número de "
+"preset, por lo que puedes configurar las opciones para cada preset diferente "
+"(especialmente el valor por defecto). En este ejemplo usamos la sentencia "
+"``match`` pero si tienes muchas opciones y los presets sólo cambian el "
+"valor, es posible que primero quieras crear un array de opciones y luego "
+"simplemente cambiarlo basado en el preset."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:263
 msgid ""
@@ -26912,6 +27629,8 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:152
 msgid "This is a simple helper to pan sound left or right."
 msgstr ""
+"Este es un simple helper para ajustar el sonido a la izquierda o a la "
+"derecha."
 
 #: ../../docs/tutorials/audio/audio_buses.rst:155
 msgid "Phaser"
@@ -27046,6 +27765,14 @@ msgid ""
 "Our node needs to contain a save function that returns this data. The save "
 "function will look like this:"
 msgstr ""
+"El siguiente paso es serializar los datos. Esto hace que sea mucho más fácil "
+"de leer y almacenar en el disco. En este caso, estamos asumiendo que cada "
+"miembro del grupo Persist es un nodo instanciado y por lo tanto tiene una "
+"ruta. GDScript tiene funciones helper para esto, como :ref:`to_json() "
+"<class_@GDScript_to_json>` y :ref:`parse_json() "
+"<class_@GDScript_parse_json>`, así que usaremos un diccionario. Nuestro nodo "
+"necesita contener una función de guardar que devuelva estos datos. La "
+"función de guardar tendrá el siguiente aspecto:"
 
 #: ../../docs/tutorials/io/saving_games.rst:114
 msgid ""
@@ -27242,6 +27969,12 @@ msgid ""
 "scene on the tree. Because it's a scene being loaded, ``instance()`` needs "
 "to be called on the resource obtained from the loader."
 msgstr ""
+"Algunas funciones helper adicionales. ``update_progress`` actualiza una "
+"barra de progreso, o también puede actualizar una animación pausada (la "
+"animación representa todo el proceso de carga de principio a fin). "
+"``set_new_scene`` pone la escena recién cargada en el árbol. Debido a que es "
+"una escena que está siendo cargada, ``instance()`` necesita ser llamada en "
+"el recurso obtenido del cargador."
 
 #: ../../docs/tutorials/io/background_loading.rst:195
 msgid "Using multiple threads"
@@ -27744,6 +28477,10 @@ msgid ""
 "use its own World. This is very useful when you want to instance 3D "
 "characters or objects in the 2D world."
 msgstr ""
+"Como un ayudante para situaciones en las que quieras crear vistas que "
+"muestren objetos individuales y no quieras crear un mundo, viewport tiene la "
+"opción de usar su propio Mundo. Esto es muy útil cuando se desea crear "
+"personajes u objetos 3D en el mundo 2D."
 
 #: ../../docs/tutorials/viewports/viewports.rst:114
 msgid ""
@@ -33315,6 +34052,9 @@ msgid ""
 "GLSL ES 3.0. When vec_type (float), vec_int_type, vec_uint_type, "
 "vec_bool_type nomenclature is used, it can be scalar or vector."
 msgstr ""
+"Se soporta un gran número de funciones propias de GLSL ES 3.0. Cuando se "
+"utiliza la nomenclatura vec_type (float), vec_int_type, vec_uint_type, "
+"vec_bool_type, puede ser scalar o vector."
 
 #: ../../docs/tutorials/shading/shading_language.rst:460
 msgid "Function"
@@ -36185,6 +36925,8 @@ msgid ""
 "But even better, there are helper functions for this as you can read in the "
 "next sections."
 msgstr ""
+"Pero aún mejor, hay funciones helper para esto como se puede leer en las "
+"siguientes secciones."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:301
 msgid "Local to global coordinates and vice versa"
@@ -36194,6 +36936,7 @@ msgstr ""
 msgid ""
 "There are helper methods for converting between local and global coordinates."
 msgstr ""
+"Hay métodos helper para convertir entre coordenadas locales y globales."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:305
 msgid ""
@@ -36228,7 +36971,7 @@ msgstr ""
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 #: ../../docs/tutorials/2d/2d_transforms.rst:64
 msgid "Transform"
-msgstr ""
+msgstr "Transformar"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:344
 msgid ""
@@ -36589,6 +37332,9 @@ msgid ""
 "Constructing them in 2D is easy, this can be done from either a normal (unit "
 "vector) and a point, or from two points in space."
 msgstr ""
+"Los planos claramente no salen de la nada, así que deben ser construidos. "
+"Construirlos en 2D es fácil, esto se puede hacer desde un vector normal "
+"(unit vector) y un punto, o a partir de dos puntos en el espacio."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:159
 msgid ""
@@ -38688,7 +39434,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
-msgstr ""
+msgstr "Navegación visible"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -38707,7 +39453,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr ""
+msgstr "Actualizar cambios en scripts"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
@@ -38751,7 +39497,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:76
 msgid "Profiler"
-msgstr ""
+msgstr "Profiler"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:78
 msgid "Profiling the performance of the any function call in the running game."
@@ -41663,9 +42409,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:18
-#, fuzzy
 msgid "A knife (using an :ref:`Area <class_Area>`)"
-msgstr ":ref:`Array <class_Array>`"
+msgstr "Un cuchillo (usando un :ref:`Area <class_Area>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:19
 msgid "A pistol (Bullet scenes)"
@@ -42104,9 +42849,8 @@ msgid "Let's look is ``process_movement`` next:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:317
-#, fuzzy
 msgid "First we set ``dir`` to an empty :ref:`Vector3 <class_Vector3>`."
-msgstr ":ref:`Vector3 <class_Vector3>`"
+msgstr "Primero ponemos ``dir`` a un :ref:`Vector3 <class_Vector3>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:319
 msgid ""
@@ -43547,9 +44291,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:680
-#, fuzzy
 msgid "In this case, we want to respawn our target."
-msgstr "En este caso, el valor podrá ser leído desde un *Puerto de datos*."
+msgstr "En este caso, queremos volver a generar nuestro objetivo."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:682
 msgid ""
@@ -45392,9 +46135,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:20
-#, fuzzy
 msgid "Adding grenades"
-msgstr "Agregando más nodos"
+msgstr "Añadir granadas"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:22
 msgid ""
@@ -46979,6 +47721,12 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
+"Es posible crear geometrías personalizadas usando el recurso :ref:`Mesh "
+"<class_Mesh>` directamente, simplemente cree sus arrays y use la función :"
+"ref:`Mesh.add_surface() <class_Mesh_add_surface>`. También está disponible "
+"una clase helper, :ref:`SurfaceTool <class_SurfaceTool>`, que proporciona "
+"una API más sencilla y helpers para indexar, generar normales, tangentes, "
+"etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:70
 msgid ""
@@ -51000,6 +51748,9 @@ msgid ""
 "helper to create \"bones\" between nodes. This is enough for most cases, but "
 "the way it works is not completely obvious."
 msgstr ""
+"Godot en realidad no soporta *true* Skeketons, pero sí cuenta con un "
+"ayudante para crear \"huesos\" entre nodos. Esto puede ser suficiente para "
+"la mayoría de los casos, pero la forma en que esta funciona no es muy clara."
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:189
 msgid ""
@@ -51156,6 +51907,9 @@ msgid ""
 "When doing animation in 2D, a helper will be present in the top menu. This "
 "helper only appears when the animation editor window is opened:"
 msgstr ""
+"Al hacer animación en 2D, un ayudante estará presente en el menú superior. "
+"Este asistente sólo aparece cuando se abre la ventana del editor de "
+"animación:"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:297
 msgid ""
@@ -56986,7 +57740,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:124
 msgid "The mouse pointer is over the control."
-msgstr ""
+msgstr "El puntero del mouse está sobre el control."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:125
 msgid ""
@@ -57005,18 +57759,26 @@ msgid ""
 "This function is :ref:`Control._gui_input() <class_Control__gui_input>`. "
 "Simply override it in your control. No processing needs to be set."
 msgstr ""
+"Esta función es is :ref:`Control._gui_input() <class_Control__gui_input>`. "
+"Simplemente sobrescríbelo en tu control. No es necesario establecer ningún "
+"procesamiento."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:167
 msgid ""
 "For more information about events themselves, check the :ref:"
 "`doc_inputevent` tutorial."
 msgstr ""
+"Para obtener más información sobre los eventos propios, consulte el "
+"tutorial :ref:`doc_inputevent`."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:173
 msgid ""
 "Controls also have many useful notifications for which no callback exists, "
 "but can be checked with the _notification callback:"
 msgstr ""
+"Los controles también tienen muchos avisos útiles para los que no existe "
+"ninguna llamada de retorno, pero que se pueden verificar con la llamada de "
+"retorno _notification:"
 
 #~ msgid "**Never!**"
 #~ msgstr "**Nunca!**"

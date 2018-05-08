@@ -4,6 +4,8 @@
 #
 # bladesero <872461916@qq.com>, 2018.
 # Geequlim <geequlim@gmail.com>, 2018.
+# Griant <goooosick@gmail.com>, 2018.
+# Harlan Howell <lin_032@hotmail.com>, 2018.
 # py_co <py_co@outlook.com>, 2018.
 # RainVector <y2505418927@gmail.com>, 2018.
 # seanfy <everxiao@qq.com>, 2018.
@@ -18,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-02 12:40+0200\n"
-"PO-Revision-Date: 2018-05-02 05:35+0000\n"
-"Last-Translator: Zae Chao <zae.vito@live.com>\n"
+"PO-Revision-Date: 2018-05-08 06:35+0000\n"
+"Last-Translator: bladesero <872461916@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -244,7 +246,6 @@ msgstr ""
 "擎，开发C++组件和编辑器插件等信息。"
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` gives information related to contributing to the "
 "engine development and the life of its community, e.g. how to report bugs, "
@@ -608,13 +609,12 @@ msgid "I want to extend Godot. What are my options for creating plugins?"
 msgstr "我想扩展Godot引擎。有什么开发插件的选项吗？"
 
 #: ../../docs/about/faq.rst:137
-#, fuzzy
 msgid ""
 "For creating Godot Editor plugins look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"如果想开发编辑器插件，请参阅 :ref:`EditorPlugins <doc_making_plugins>` 和插件"
-"脚本。"
+"如果想开发编辑器插件，请参阅 :ref:`编辑器插件 <doc_making_plugins>` 和插件脚"
+"本。"
 
 #: ../../docs/about/faq.rst:139
 msgid ""
@@ -623,11 +623,10 @@ msgid ""
 msgstr "其它语言的插件可以通过PluginScript或更底层的NativeScript添加。"
 
 #: ../../docs/about/faq.rst:141
-#, fuzzy
 msgid ""
 "If you want to add a certain native library, your best bet is GDNative and "
 "custom C++ modules."
-msgstr "如果你想加一个本地库，最好用GDNative或定制C++模块。"
+msgstr "如果你想添加一个本地库，最好的选择是使用GDNative或定制C++模块。"
 
 #: ../../docs/about/faq.rst:143
 #, fuzzy
@@ -1005,7 +1004,6 @@ msgstr ""
 "轻易地被传递过来的参数替代。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
-#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
 "how are you?`` can easily be changed to ``\"Hello World, how are you?\"``. "
@@ -1013,15 +1011,14 @@ msgid ""
 "format strings could be cumbersome."
 msgstr ""
 "举一个例子，使用``%s``作为占位符，格式化字符串``\"Hello %s, how are you?``可"
-"以很容易改为``\"Hello World, how are you?\"``。注意占位符在字符串的中间，不适"
-"用格式化字符串去修改它可能会有点麻烦。"
+"以很容易改为``\"Hello World, how are you?\"``。注意占位符在字符串的中间，如果"
+"不使用格式化字符串去修改这个字符串可能会有点麻烦。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
 msgstr "在GDScript中的用法"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
-#, fuzzy
 msgid "Examine this concrete GDScript example:"
 msgstr "检查这个具体的GDScript示例："
 
@@ -1066,7 +1063,6 @@ msgstr ""
 "样式时，顺序才是重要的。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:53
-#, fuzzy
 msgid "A quick example in GDScript:"
 msgstr "一个简单的 GDScript 例子："
 
@@ -1081,7 +1077,6 @@ msgid "Multiple placeholders"
 msgstr "多个占位符"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:73
-#, fuzzy
 msgid ""
 "Format strings may contain multiple placeholders. In such a case, the values "
 "are handed in the form of an array, one value per placeholder (unless using "
@@ -1284,34 +1279,40 @@ msgid ""
 "``9``) characters are used for padding. This allows printing several values "
 "aligned vertically as if in a column, provided a fixed-width font is used."
 msgstr ""
+"字符``.`` (点), ``*`` (星号), ``-`` (减号) and 数字 (``0``-``9``) 被用作占位"
+"符。使一列定宽字体的值在垂直方向上可以保持对齐。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
-msgstr ""
+msgstr "要使字符串满足一个最小长度，需要在标识符前添加一个整数："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
 "If the integer starts with ``0``, integral values are padded with zeroes "
 "instead of white space:"
-msgstr ""
+msgstr "如果这个整数以0开头，那么整数值字符串将前置填充0，而不是空格："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
+#, fuzzy
 msgid ""
 "Precision can be specified for real numbers by adding a ``.`` (*dot*) with "
 "an integer following it. With no integer after ``.``, a precision of 0 is "
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
+"可以通过添加``.``（*点*）和一个整数来指定实数的精度。``.``后没整数时，精度为"
+"0，舍入为整数值。要用于填充的整数则必须出现在点之前。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
+#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
-msgstr ""
+msgstr "``-``字符向右填充，而不是向左，对于右对其的文本很有用："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
-msgstr ""
+msgstr "动态填充"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:199
 msgid ""
@@ -5814,11 +5815,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
-msgstr ""
+msgstr "导出项目"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:7
 msgid "Why exporting?"
-msgstr ""
+msgstr "为什么要导出？"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
 msgid ""
@@ -5826,6 +5827,8 @@ msgid ""
 "would compile the proper binaries and build the packages for each platform "
 "manually."
 msgstr ""
+"起初，Godot 没有任何导出项目的方法。 开发人员将编译适用的二进制文件并手动为每"
+"个平台构建软件包。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:13
 msgid ""
@@ -5833,10 +5836,12 @@ msgid ""
 "our company started taking more projects at the same time, it became evident "
 "that this was a bottleneck."
 msgstr ""
+"当更多的开发人员（甚至非程序员）开始使用它，并且当我们公司开始同时进行更多项"
+"目时，很明显这是一个瓶颈。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:18
 msgid "On PC"
-msgstr ""
+msgstr "在 PC 上"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:20
 msgid ""
@@ -5845,6 +5850,9 @@ msgid ""
 "file, zip it and you are done. This can be taken advantage of to make custom "
 "installers."
 msgstr ""
+"用Godot在PC上分发游戏项目相当容易。 只需将 godot.exe（或godot）二进制文件放在"
+"与 engine.cfg 文件相同的位置，然后将其压缩并完成。 这可以被利用来制作自定义安"
+"装程序。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:25
 msgid ""
@@ -5853,6 +5861,9 @@ msgid ""
 "distribute loads of files. Some developers may not like curious users "
 "peeking at how the game was made, others may just find it inelegant, etc."
 msgstr ""
+"这听起来很简单，但开发人员可能不想这样做的原因可能有几个。 第一个原因是分发大"
+"量文件可能不够理想。 一些开发人员可能不喜欢好奇的用户偷看游戏的制作方式，有些"
+"开发人员可能会觉得它不够好看等等。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:31
 msgid ""
@@ -5860,16 +5871,18 @@ msgid ""
 "specially compiled binary, which is smaller in size, more optimized and does "
 "not include tools inside (like the editor, debugger, etc.)."
 msgstr ""
+"另一个原因是，为了分发，开发人员可能更喜欢一个特别编译的二进制文件，它的大小"
+"更小，更优化，并且不包含内部工具（如编辑器，调试器等）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:35
 msgid ""
 "Finally, Godot has a simple but efficient system for creating DLCs as extra "
 "package files."
-msgstr ""
+msgstr "最后，Godot 有一个简单而有效的系统来创建 DLC 作为额外的软件包文件。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:39
 msgid "On mobile"
-msgstr ""
+msgstr "在移动端"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:41
 msgid ""
@@ -5877,6 +5890,8 @@ msgid ""
 "those devices, a binary for each of those platforms is built, then added to "
 "a native project together with the game data."
 msgstr ""
+"移动设备中的相同情况会更糟糕。 要在这些设备中分发项目，将为每个平台构建一个二"
+"进制文件，然后将其与游戏数据一起添加到本地项目中。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:45
 msgid ""
@@ -5885,6 +5900,8 @@ msgid ""
 "While learning each SDK is always encouraged, it can be frustrating to be "
 "forced to do it at an undesired time."
 msgstr ""
+"这可能很麻烦，因为这意味着开发人员在能够导出前必须熟悉每个平台的SDK。 尽管总"
+"是鼓励学习每个SDK，但在不希望的时间被迫做到这一点令人沮丧。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
 msgid ""
@@ -5894,10 +5911,13 @@ msgid ""
 "standardized for more than a decade, but mobile devices use different "
 "formats for texture compression, such as PVRCT (iOS) or ETC (Android)."
 msgstr ""
+"这种方法还有另一个问题。 不同的设备偏好一些不同格式的数据来运行。 这个主要的"
+"例子是纹理压缩。 所有PC硬件都使用 S3TC（BC）压缩，并且已经标准化了十多年，但"
+"移动设备使用不同的格式进行纹理压缩，例如PVRCT（iOS）或ETC（Android）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
-msgstr ""
+msgstr "导出菜单"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:60
 msgid ""
@@ -5905,14 +5925,16 @@ msgid ""
 "proven to work the best. At the time of this writing, not all platforms are "
 "supported yet, but the supported platforms continue to grow."
 msgstr ""
+"经过多次尝试不同的导出工作流后，目前的工作流程已被证明是最好的。 在撰写本文"
+"时，并不是所有平台都支持，但受支持的平台仍在继续增长。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
 msgid "To open the export menu, just click the \"Export\" button:"
-msgstr ""
+msgstr "要打开 \"导出\" 菜单, 只需单击 \"导出\" 按钮:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid "The export menu will open, however it will be completely empty."
-msgstr ""
+msgstr "导出菜单将打开，但它完全是空的。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:72
 msgid ""
@@ -5920,6 +5942,8 @@ msgid ""
 "` button at the top of the export menu. This will open a drop down list of "
 "platforms to choose from for an export preset."
 msgstr ""
+"这是因为我们需要添加一个导出预设。 要做到这一点，请点击导出菜单顶部的“添"
+"加...”按钮。 这将打开一个平台的下拉列表，以从导出预设中进行选择。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:78
 msgid ""
@@ -5930,17 +5954,21 @@ msgid ""
 "will complain when something is missing and will not allow the user to "
 "export for that platform until they resolve it:"
 msgstr ""
+"默认选项通常足以导出，因此调整它们不是必需的，但可以提供额外的控制。 但是，许"
+"多平台需要安装额外的工具（SDK）才能导出。 此外，Godot需要安装导出模板来创建"
+"包。 导出菜单会在缺少某些内容时给出提示，并且不会允许用户在解决该问题之前导出"
+"该平台："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:87
 msgid ""
 "At that time, the user is expected to come back to the documentation and "
 "follow instructions on how to properly set up that platform."
-msgstr ""
+msgstr "那时，用户需要回到文档并按照说明如何正确设置该平台。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:91
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
 msgid "Export templates"
-msgstr ""
+msgstr "导出模板"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:93
 msgid ""
@@ -5949,34 +5977,37 @@ msgid ""
 "zip) file from the `download page of the website <https://www.godotengine."
 "org/download>`_."
 msgstr ""
+"除了设置平台之外，还必须安装导出模板才能导出项目。 它们可以从网站<https://"
+"www.godotengine.org/download>`_的下载页面以.tpz（更名为.zip）文件的形式获得。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:98
 msgid ""
 "Once downloaded, they can be installed using the \"Install Export Templates"
 "\" option in the editor:"
-msgstr ""
+msgstr "下载后，可以使用编辑器中的“安装导出模板”选项进行安装："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:104
 msgid "Export mode"
-msgstr ""
+msgstr "导出模式"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:106
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
 msgstr ""
+"导出时，Godot会列出所有要导出的文件，然后创建包。 有3种不同的导出模式："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:109
 msgid "Export every single file in the project"
-msgstr ""
+msgstr "导出项目中的每一个文件"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
 msgid "Export only resources (+custom filter), this is default."
-msgstr ""
+msgstr "仅导出资源 (+ 自定义过滤器), 这是默认值。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:111
 msgid "Export only selected resources (+custom filter)"
-msgstr ""
+msgstr "仅导出所选资源 (+ 自定义过滤器)"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:115
 msgid ""
@@ -5985,6 +6016,9 @@ msgid ""
 "developers often have a lot of unrelated stuff around in the dev directory, "
 "which makes it a bad idea."
 msgstr ""
+"**导出每个单个文件** - 此模式导出项目中的每个单个文件。 这对于测试是否有什么"
+"被遗忘很有用，但是开发人员在开发者目录中通常会有很多不相关的东西，这使得它不"
+"是一个好主意。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:120
 msgid ""
@@ -5993,6 +6027,9 @@ msgid ""
 "their games. To compensate for this, filters can be added for extra "
 "extensions (like, *.txt,*.csv, etc.)."
 msgstr ""
+"**仅导出资源** - 仅导出资源。 对于大多数项目来说，这就够了。 然而，许多开发人"
+"员喜欢在他们的游戏中使用自定义数据文件。 为了弥补这一点，可以为额外的扩展名添"
+"加过滤器（如* .txt，*。csv等）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:125
 msgid ""
@@ -6004,10 +6041,14 @@ msgid ""
 "allows to \"Bundle\" scenes and dependencies into a single file, which is "
 "*really* useful for games distributed on optical media."
 msgstr ""
+"**仅导出选定资源** - 仅导出列表中的资源。 这对大多数项目来说可能是过度的，但"
+"在某些情况下它是合理的（通常是巨大的项目）。 该模式提供对输出内容的完全控"
+"制。 可以选择单个资源并执行依赖性检测以确保添加所需的所有内容。 此外，此模式"
+"允许将“场景”和依赖关系“捆绑”到单个文件中，这对于发布到光碟上的游戏非常有用。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:139
 msgid "Export from Command Line"
-msgstr ""
+msgstr "从命令行导出"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:141
 msgid ""
@@ -6017,6 +6058,9 @@ msgid ""
 "parameters. A basic invocation of the export would be ``godot --export "
 "\"Windows Desktop\" some_name``"
 msgstr ""
+"在生产中，自动化生成是很有用的，并且 Godot 支持这一操作，其中有“--"
+"export”和“--export-debug”命令行参数。从命令行导出仍需要导出模板来定义导出参"
+"数。 一个基本的调用应是“godot --export”Windows Desktop“some_name”"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -6025,6 +6069,9 @@ msgid ""
 "relative to the project path or absolute. It does not respect the directory "
 "the command was invoked from."
 msgstr ""
+"假设有一个名为“Windows Desktop”的预设，并且可以找到该模板，它将导出"
+"到“some_name.exe”。 输出路径相对于项目路径或绝对路径。 它不遵从命令被调用的目"
+"录。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
 msgid ""
@@ -6032,14 +6079,16 @@ msgid ""
 "single export to be used with multiple Godot executables). This takes place "
 "if:"
 msgstr ""
+"您也可以将其配置为仅导出.pck或.zip文件（允许将单个导出与多个 Godot 可执行文件"
+"一起使用）。 这发生在以下情况下："
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid "The export preset is not marked as runnable"
-msgstr ""
+msgstr "导出预设未标记为可执行的"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:157
 msgid "The target name ends with `.pck` or with `.zip`"
-msgstr ""
+msgstr "目标名称以 \". pck\" 或 \". zip\" 结尾"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:159
 msgid ""
@@ -6047,6 +6096,8 @@ msgid ""
 "flag, and to create a dedicated export template for automated export: "
 "``godot --path path/to/project --export \"pck\" game_name.pck``"
 msgstr ""
+"将``--export``标志与``--path``标志相结合并创建一个用于自动导出的专用导出模板"
+"通常很有用：``godot --path path/to/project --export \"pck\" game_name.pck``"
 
 #: ../../docs/getting_started/workflow/export/one-click_deploy.rst:4
 msgid "One-click deploy"
@@ -6102,55 +6153,57 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
 msgid "Feature Tags"
-msgstr ""
+msgstr "功能标签"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:9
 msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, and it can refer to many of the following:"
 msgstr ""
+"Godot 有一个特殊的系统来标记功能的可用性。 每个*特性*表示为一个字符串，它可以"
+"引用以下许多内容："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
-msgstr ""
+msgstr "平台名称。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform bits (64/32)."
-msgstr ""
+msgstr "平台位数 (64/32)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop/mobile)."
-msgstr ""
+msgstr "平台类型 (台式机/移动式)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
 msgid "Supported texture compression in platform."
-msgstr ""
+msgstr "支持平台的纹理压缩。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid "Whether a build is debug or release."
-msgstr ""
+msgstr "生成是调试还是发布。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid "Many more things."
-msgstr ""
+msgstr "更多的东西。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:19
 msgid "Features can be queried in run-time to the singleton API by calling:"
-msgstr ""
+msgstr "通过调用以下功能可以在运行时查询单例API："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:27
 msgid "Default features"
-msgstr ""
+msgstr "默认功能"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:29
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are *case "
 "sensitive*:"
-msgstr ""
+msgstr "以下是 Godot 中大多数功能标签的列表。 请记住它们*区分大小写*："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:32
 msgid "**Feature Tag**"
-msgstr ""
+msgstr "** 功能标签 **"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:34
 msgid "**Android**"
@@ -6158,7 +6211,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:34
 msgid "Running on Android"
-msgstr ""
+msgstr "在Android上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:36
 msgid "**HTML5**"
@@ -6166,7 +6219,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:36
 msgid "Running on HTML5"
-msgstr ""
+msgstr "在 HTML5 上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:38
 msgid "**JavaScript**"
@@ -6174,7 +6227,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:38
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
-msgstr ""
+msgstr ":ref:`JavaScript singleton <doc_javascript_eval>`可用"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:41
 msgid "**OSX**"
@@ -6182,7 +6235,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:41
 msgid "Running on macOS"
-msgstr ""
+msgstr "在 macOS 上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:43
 msgid "**iOS**"
@@ -6190,7 +6243,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:43
 msgid "Running on iOS"
-msgstr ""
+msgstr "在 iOS 上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:45
 msgid "**UWP**"
@@ -6198,7 +6251,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:45
 msgid "Running on UWP"
-msgstr ""
+msgstr "在 UWP 上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:47
 msgid "**Windows**"
@@ -6206,7 +6259,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:47
 msgid "Running on Windows"
-msgstr ""
+msgstr "在 Windows 上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:49
 msgid "**X11**"
@@ -6214,7 +6267,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:49
 msgid "Running on X11"
-msgstr ""
+msgstr "在 X11 上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:51
 msgid "**debug**"
@@ -6222,7 +6275,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:51
 msgid "Running on a debug build"
-msgstr ""
+msgstr "以调试版本运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:53
 msgid "**release**"
@@ -6230,7 +6283,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:53
 msgid "Running on a release build"
-msgstr ""
+msgstr "以发布版本运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:55
 msgid "**32**"
@@ -6238,7 +6291,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:55
 msgid "Running on a 32-bit build"
-msgstr ""
+msgstr "以32位运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:57
 msgid "**64**"
@@ -6246,7 +6299,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:57
 msgid "Running on a 64-bit build"
-msgstr ""
+msgstr "以64位运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:59
 msgid "**mobile**"
@@ -6254,7 +6307,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:59
 msgid "Host OS is a mobile platform"
-msgstr ""
+msgstr "宿主操作系统为移动平台"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:61
 msgid "**pc**"
@@ -6262,7 +6315,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:61
 msgid "Host OS is a PC platform (desktop/laptop)"
-msgstr ""
+msgstr "宿主操作系统是 PC 平台 (台式机/笔记本电脑)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:63
 msgid "**web**"
@@ -6270,7 +6323,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:63
 msgid "Host OS is a Web browser"
-msgstr ""
+msgstr "宿主操作系统是网页浏览器"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:65
 msgid "**etc**"
@@ -6278,7 +6331,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:65
 msgid "Textures using ETC1 compression are supported"
-msgstr ""
+msgstr "支持使用 ETC1 压缩的纹理"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:67
 msgid "**etc2**"
@@ -6286,7 +6339,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:67
 msgid "Textures using ETC2 compression are supported"
-msgstr ""
+msgstr "支持使用 ETC2 压缩的纹理"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:69
 msgid "**s3tc**"
@@ -6294,7 +6347,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:69
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr ""
+msgstr "支持使用 S3TC (DXT/BC) 压缩的纹理"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:71
 msgid "**pvrtc**"
@@ -6302,21 +6355,21 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:71
 msgid "Textures using PVRTC compression are supported"
-msgstr ""
+msgstr "支持使用 PVRTC 压缩的纹理"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:75
 msgid "Custom features"
-msgstr ""
+msgstr "自定义功能"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:77
 msgid ""
 "It is possible to add custom features to a build, just use the relevant "
 "field in the *export preset* used to generate it:"
-msgstr ""
+msgstr "可以向构建添加自定义功能，只需在*导出预置*中使用生成它的相关字段："
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:83
 msgid "Overriding project settings"
-msgstr ""
+msgstr "重载项目设置"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:85
 msgid ""
@@ -6324,6 +6377,8 @@ msgid ""
 "*Project Settings*. This allows to better customize any configuration when "
 "doing a build."
 msgstr ""
+"功能可用于重载* Project Settings *中的特定配置值。 这样可以在构建时更好地定制"
+"任意配置。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:88
 msgid ""
@@ -6331,24 +6386,28 @@ msgid ""
 "the game (which was customized in a special export preset which, in turn, "
 "includes only demo levels)."
 msgstr ""
+"在下面的示例中，为游戏的演示版本添加了一个不同的图标（在特定的导出预设中进行"
+"了自定义，而该预设仅包含演示关卡）。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:93
 msgid "After overriding, a new field is added for this specific configuration:"
-msgstr ""
+msgstr "重写后, 将为此特定配置添加一个新字段:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Default overrides"
-msgstr ""
+msgstr "默认重载"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
 msgid ""
 "There are already a lot of settings that come with overrides by default, "
 "they can be found in many sections of the project settings."
 msgstr ""
+"默认情况下，已有很多设置与其重载一起出现，它们可以在项目设置的许多地方中找"
+"到。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:106
 msgid "Customizing Build"
-msgstr ""
+msgstr "自定义生成"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid ""
@@ -6356,6 +6415,8 @@ msgid ""
 "custom **ExportPlugin**. They also are used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
+"通过编写自定义的** ExportPlugin **，功能标签也可用于定制构建过程。 它们也被用"
+"来指定在** GDNative **中加载和导出哪个共享库。"
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
@@ -8449,53 +8510,57 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
 msgid "Importing 3D Scenes"
-msgstr ""
+msgstr "导入3D场景"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
 msgid "Godot Scene Importer"
-msgstr ""
+msgstr "Godot 场景导入器"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
 msgid ""
 "When dealing with 3D assets, Godot has a very flexible and configurable "
 "importer."
-msgstr ""
+msgstr "在处理 3D 资产时, Godot 有一个非常灵活且可配置的导入器。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:11
 msgid ""
 "Godot works with *scenes*. This means that the entire scene being worked on "
 "in your favorite 3D DCC will be transferred as close as possible."
 msgstr ""
+"Godot 与*场景*一起工作。 这意味着用您最喜爱的3D软件制作的整个场景可以尽可能完"
+"整地被导入。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
 msgid "Godot supports the following 3D *scene file fomats*:"
-msgstr ""
+msgstr "Godot支持以下3D *场景文件格式*："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
 msgid "DAE (Collada), which is currently the most mature workflow."
-msgstr ""
+msgstr "DAE (Collada), 它是当前最成熟的工作流。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid ""
 "GLTF 2.0. Both text and binary formats are supported. Godot has full support "
 "for it, but the format is new and gaining traction."
 msgstr ""
+"GLTF 2.0。 支持文本格式和二进制格式。 戈多已经全力支持它，但格式是新的并且一"
+"直受到引导。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""
 "OBJ (Wavefront) formats. It is also fully supported, but pretty limited (no "
 "support for pivots, skeletons, etc)."
-msgstr ""
+msgstr "OBJ (Wavefront) 格式。它也完全支持, 但相当有限 (不支持支点, 骨架等)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
 msgid ""
 "Just copy the scene file together with the texture to the project "
 "repository, and Godot will do a full import."
-msgstr ""
+msgstr "只需将场景文件和纹理一起复制到项目存储库中，Godot 就可以完全导入。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:23
 msgid "Why not FBX?"
-msgstr ""
+msgstr "为什么不用 FBX？"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:25
 msgid ""
@@ -8504,16 +8569,19 @@ msgid ""
 "format requires the use of a closed library from Autodesk which is "
 "distributed with a more restrictive licensing terms than Godot."
 msgstr ""
+"大多数游戏引擎使用 FBX 格式导入 3D 场景，这绝对是业界最标准化的场景之一。 但"
+"是，这种格式需要使用 Autodesk 的封闭库，这个封闭库分发的授权条款比 Godot 更具"
+"有限制性。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:30
 msgid ""
 "The plan is, sometime in the future, to offer a binary plug-in using "
 "GDNative."
-msgstr ""
+msgstr "计划是，在未来的某个时候将使用GDNative提供二进制插件。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:33
 msgid "Exporting DAE files from Maya and 3DS Max"
-msgstr ""
+msgstr "从 maya 和 3DS Max 中输出 DAE 文件"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:35
 msgid ""
@@ -8523,100 +8591,108 @@ msgid ""
 "OpenCOLLADA-Tools>`__ plugins. They work really well, although they are not "
 "always up-to date with the latest version of the software."
 msgstr ""
+"Autodesk 为 Maya 和 3DS Max添加了内置的 collada 支持，但默认情况下已损坏，不"
+"应使用。 导出这种格式的最好方法是使用`OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`__插件。 他们工作得很好，虽"
+"然它们并不总是与最新版本的软件保持同步更新。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:43
 msgid "Exporting DAE files from Blender"
-msgstr ""
+msgstr "从 Blender 导出 DAE 文件"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:45
 msgid ""
 "Blender has built-in collada support too, but it's also broken and should "
 "not be used."
-msgstr ""
+msgstr "Blender也有内置的collada支持，但它也是损坏的，不应该使用。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:48
 msgid ""
 "Godot provides a `Python Plugin <https://github.com/godotengine/collada-"
 "exporter>`__ that will do a much better job of exporting the scenes."
 msgstr ""
+"Godot 提供了一个`Python插件<https://github.com/godotengine/collada-"
+"exporter>`__，可以更好地导出场景。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
 msgid "Import workflows"
-msgstr ""
+msgstr "导入工作流"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
 msgstr ""
+"Godot 场景导入器支持对数据的导入方式进行不同的工作流。 根据许多选项，可以通过"
+"以下方式导入场景："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:58
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
-msgstr ""
+msgstr "外部材质（默认）：每种材料保存到文件资源的位置。 可以对它们进行修改。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:59
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
-msgstr ""
+msgstr "外部网格：每个网格被保存到不同的文件。 许多用户更喜欢直接处理网格。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
-msgstr ""
+msgstr "外部动画：允许修改已保存的动画并在源更改时进行合并。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:61
 msgid ""
 "External scenes: Save the root nodes of the imported scenes each as a "
 "separate scene."
-msgstr ""
+msgstr "外部场景：将导入的场景的根节点分别保存为单独的场景。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:62
 msgid "Single Scene: A single scene file with everything built in."
-msgstr ""
+msgstr "单场景：一个场景文件，内置所有内容。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
 msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
-msgstr ""
+msgstr "由于不同的开发人员有不同的需求, 这个导入过程是高度可定制的。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:69
 msgid "Import Options"
-msgstr ""
+msgstr "导入选项"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
 msgid "The importer has several options, which will be discussed below:"
-msgstr ""
+msgstr "导入器有几种选项，这将在下面讨论："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
 msgid "Nodes:"
-msgstr ""
+msgstr "节点："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:79
 msgid "Root Type"
-msgstr ""
+msgstr "根类型"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:81
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
-msgstr ""
+msgstr "默认情况下，导入场景中根节点的类型为“Spatial”，但可以修改。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:84
 msgid "Root Name"
-msgstr ""
+msgstr "根名称"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:86
 msgid "Allows setting a specific name to the generated root node."
-msgstr ""
+msgstr "允许为生成的根节点设置特定的名称。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:89
 msgid "Custom Script"
-msgstr ""
+msgstr "自定义脚本"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:91
 msgid ""
@@ -8624,10 +8700,12 @@ msgid ""
 "This is great for post processing, changing materials, doing funny stuff "
 "with the geometry etc."
 msgstr ""
+"可以提供导入后处理整个场景的特殊脚本。 这对于后期处理，更换材质，用几何体做些"
+"有趣的事情等非常有用。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid "Create a script that basically looks like this:"
-msgstr ""
+msgstr "创建脚本基本如下所示:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
 msgid ""
@@ -8635,13 +8713,15 @@ msgid ""
 "is actually the root node of the scene). The scene that will finally be used "
 "must be returned. It can be a different one."
 msgstr ""
+"导入后函数将导入的场景作为参数（参数实际上是场景的根节点）。 必须返回将最终使"
+"用的场景。 它可以是不同的。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:130
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
 msgid "Storage"
-msgstr ""
+msgstr "存储"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
 msgid ""
@@ -8649,26 +8729,28 @@ msgid ""
 "nodes below the root will each be a separate scene and instanced into the "
 "imported one."
 msgstr ""
+"默认情况下，Godot导入一个单独的场景。 此选项允许指定根节点下方的节点将分别为"
+"单独的场景并实例化为导入的节点。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:117
 msgid ""
 "Of course, instancing such imported scenes in other places manually works "
 "too."
-msgstr ""
+msgstr "当然，在其他地方手动实例导入的场景也是可以的。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
 msgid "Materials"
-msgstr ""
+msgstr "材质"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:124
 msgid "Location"
-msgstr ""
+msgstr "位置"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:126
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
-msgstr ""
+msgstr "Godot 支持网格或节点中的材料。 默认情况下，材料将放置在每个节点上。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:132
 msgid ""
@@ -8677,16 +8759,19 @@ msgid ""
 "because most 3D DCCs don't have the same material options as those present "
 "in Godot."
 msgstr ""
+"材质可以存储在场景中或外部文件中。 默认情况下，它们存储在外部文件中，因此可以"
+"进行编辑。 这是因为大多数 3D 数字创作软件没有与 Godot 中的材料相同的材料选"
+"项。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:136
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
-msgstr ""
+msgstr "当材料内置时，每当源场景被修改并重新导入时，它们都会丢失。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:140
 msgid "Keep on Reimport"
-msgstr ""
+msgstr "保留重新导入"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:142
 msgid ""
@@ -8694,95 +8779,99 @@ msgid ""
 "edited ones and ignore the ones coming from the source scene. This option is "
 "only present if materials are saved as files."
 msgstr ""
+"一旦材质被编辑为使用Godot功能，导入器将保留编辑过的材质并忽略来自源场景的材"
+"质。 该选项仅在材质保存为文件时才存在。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:147
 msgid "Compress"
-msgstr ""
+msgstr "压缩"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:149
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
-msgstr ""
+msgstr "使网格在网格的多个方面使用较少的精确数字以节省空间。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:162
 msgid "These are:"
-msgstr ""
+msgstr "这些是:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:153
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
-msgstr ""
+msgstr "变换矩阵（位置，旋转和缩放）：32位浮点数到16位有符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
-msgstr ""
+msgstr "顶点:32 位浮点数到16位有符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:155
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "法线:32 位浮点数到32位无符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:156
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "切线:32 位浮点数到32位无符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "顶点色:32 位浮点数到32位无符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:158
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "UV:32 位浮点数到32位无符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:159
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "UV2:32 位浮点数到32位无符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
-msgstr ""
+msgstr "顶点权重:32 位浮点数到32位无符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:161
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
-msgstr ""
+msgstr "骨架骨骼:32 位浮点数到16位无符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:162
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
-msgstr ""
+msgstr "数组索引: 基于具体有多少元素的32位或16位无符号整数。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
 msgid "Additional info:"
-msgstr ""
+msgstr "附加信息："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:165
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
-msgstr ""
+msgstr "UV2 = 用于细节纹理和烘焙光照纹理的第二个 UV 通道。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
 msgstr ""
+"数组索引 = 一个数字数组, 它为上面数组的每个元素编号;即, 他们的顶点和法线的数"
+"量。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:168
 msgid ""
@@ -8792,14 +8881,17 @@ msgid ""
 "this mesh(s) may lead to gaps in geometry or vertices not being exactly "
 "where they should be."
 msgstr ""
+"在某些情况下，这可能会导致精度损失，因此可能需要禁用此选项。 例如，如果网格非"
+"常大或导入了多个覆盖大面积的网格，则压缩此网格的导入可能会导致几何图形或顶点"
+"间的间隙不在他们应在的位置。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:174
 msgid "Meshes"
-msgstr ""
+msgstr "网格"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
 msgid "Ensure Tangents"
-msgstr ""
+msgstr "计算的切线"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:179
 msgid ""
@@ -8808,6 +8900,8 @@ msgid ""
 "source scene. Godot uses Mikktspace for this, but it's always better to have "
 "them generated in the exporter."
 msgstr ""
+"如果要使用正常贴图的纹理，网格需要有切线阵列。 此选项可确保在源场景中不存在时"
+"生成这些阵列。 Godot 使用 Mikktspace 来做这件事，但最好让它们在导出器中生成。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:187
 msgid ""
@@ -8815,26 +8909,28 @@ msgid ""
 "does not have much practical use unless one wants to build objects with them "
 "directly."
 msgstr ""
+"网格可以存储在单独的文件（资源）中，而不是内置的。 除非有人想直接用它们建立对"
+"象，否则这没有多少实际用途。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
-msgstr ""
+msgstr "此选项用于帮助那些喜欢直接使用网格而不是场景的人。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
 msgid "External Files"
-msgstr ""
+msgstr "外部文件"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
-msgstr ""
+msgstr "生成的网格和材质可以选择存储在具有场景名称的子目录中。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:200
 msgid "Animation Options"
-msgstr ""
+msgstr "动画选项"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
 msgid ""
@@ -8843,10 +8939,13 @@ msgid ""
 "Others, such as 3DS Max or Maya, need many animations put into the same "
 "timeline or, at worst, put each animation in a separate file."
 msgstr ""
+"Godot提供了许多有关如何处理动画数据的选项。 一些导出器（如Blender）可以在一个"
+"文件中生成许多动画。 其他的，如3DS Max 或 Maya，需要将许多动画放入同一时间"
+"线，或者最糟糕的情况是将每个动画放在单独的文件中。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:209
 msgid "Import of animations is enabled by default."
-msgstr ""
+msgstr "默认情况下启用动画导入。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:212
 msgid "FPS"
@@ -8859,10 +8958,12 @@ msgid ""
 "specify the frames per second used to edit them. Failing to do this may "
 "result in minimal jitter."
 msgstr ""
+"大多数 3D 导出格式以秒为单位存储的动画时间线，而不是帧。 为了确保尽可能忠实地"
+"导入动画，请指定用于编辑它们的每秒帧数。 未能这样做可能会导致极小的抖动。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:219
 msgid "Filter Script"
-msgstr ""
+msgstr "过滤器脚本"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:221
 msgid ""
@@ -8870,6 +8971,7 @@ msgid ""
 "which tracks from which animations should be kept. (@TODO this needs "
 "documentation)"
 msgstr ""
+"可以用特殊的语法指定过滤器脚本, 以决定哪些轨道应保留动画。(@TODO 这需要文档)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
 msgid ""
@@ -8877,10 +8979,12 @@ msgid ""
 "a file instead. This allows adding custom tracks to the animations and "
 "keeping them after a reimport."
 msgstr ""
+"默认情况下，动画保存为内置。 可以将它们保存到文件中。 这允许向动画添加自定义"
+"轨道并在重新导入后保留它们。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
 msgid "Optimizer"
-msgstr ""
+msgstr "优化"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:234
 msgid ""
@@ -8888,10 +8992,12 @@ msgid ""
 "the animation considerably. In general, this should always be turned on "
 "unless you suspect that an animation might be broken due to it being enabled."
 msgstr ""
+"导入动画时，会运行优化程序，从而大大减少动画的大小。 一般情况下，除非您怀疑动"
+"画可能因启用而被破坏，否则应始终启用此功能。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
 msgid "Clips"
-msgstr ""
+msgstr "片段"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
 msgid ""
@@ -8899,10 +9005,12 @@ msgid ""
 "clips. Just specify from which frame to which frame each clip must be taken "
 "(and, of course, don't forget to specify the FPS option above)."
 msgstr ""
+"可以将单个时间线中的多个动画指定为片段。只需指定从哪帧到哪帧（当然，不要忘记"
+"指定上面的FPS选项）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
 msgid "Scene Inheritance"
-msgstr ""
+msgstr "场景继承"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
 msgid ""
@@ -8911,6 +9019,9 @@ msgid ""
 "(source .dae,.gltf,.obj file re-exported from 3D modelling app), Godot will "
 "re-import the whole scene."
 msgstr ""
+"在许多情况下，可能希望对导入的场景进行修改。 默认情况下，这是不可能的，因为如"
+"果源资源发生变化（从3D建模应用程序重新导出源.dae，.gltf，.obj文件），Godot将"
+"重新导入整个场景。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:249
 msgid ""
@@ -8918,48 +9029,50 @@ msgid ""
 "Inheritance*. Just try to open the imported scene and the following dialog "
 "will appear:"
 msgstr ""
+"但是，可以使用* Scene Inheritance *进行本地修改。 试着打开导入的场景，会出现"
+"下面的对话框："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:254
 msgid "In inherited scenes, the only limitations for modifications are:"
-msgstr ""
+msgstr "在继承场景中，修改的唯一限制是："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
 msgid "Nodes can't be removed (but can be added anywhere)."
-msgstr ""
+msgstr "无法删除节点 (但可以在任何位置添加)。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:257
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
-msgstr ""
+msgstr "子资源无法编辑（如上所述它们将保存在外部）"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
 msgid "Other than that, everything is allowed!"
-msgstr ""
+msgstr "除了这些, 一切都是允许的!"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:262
 msgid "Import Hints"
-msgstr ""
+msgstr "导入提示"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:264
 msgid ""
 "Many times, when editing a scene, there are common tasks that need to be "
 "done after exporting:"
-msgstr ""
+msgstr "很多时候, 在编辑场景时, 导出后需要完成一些常见的任务:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
 msgid "Adding collision detection to objects:"
-msgstr ""
+msgstr "向对象添加碰撞检测:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:267
 msgid "Setting objects as navigation meshes"
-msgstr ""
+msgstr "将对象设置为导航网格"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)"
-msgstr ""
+msgstr "删除游戏引擎中未使用的节点 (如用于建模的特定光源)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
 msgid ""
@@ -8967,32 +9080,39 @@ msgid ""
 "the names of the objects in your 3D modelling software. When imported, Godot "
 "will detect them and perform actions automatically:"
 msgstr ""
+"为了简化这一工作流程，Godot 提供了一些后缀，可以添加到3D建模软件中的对象名称"
+"中。 当输入时，Godot会自动检测它们并执行操作："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:275
 msgid "Remove nodes (-noimp)"
-msgstr ""
+msgstr "删除节点 (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
 msgid ""
 "Node names that have this suffix will be removed at import time, mo matter "
 "what their type is. They will not appear in the imported scene."
 msgstr ""
+"具有此后缀的节点名称将在导入时被删除, 不管它们的类型是什么。它们不会出现在导"
+"入的场景中。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
 msgid "Create collisions (-col, -colonly, -convcolonly)"
-msgstr ""
+msgstr "创建碰撞体 (-colonly,-convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
 msgid ""
 "Option \"-col\" will work only for Mesh nodes. If it is detected, a child "
 "static collision node will be added, using the same geometry as the mesh."
 msgstr ""
+"选项“-col”只能用于 Mesh 节点。 如果检测到，则会添加子静态碰撞节点，使用与网格"
+"相同的几何体。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:286
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
 msgstr ""
+"然而，通常是可视几何体对于碰撞来说太复杂或太不平滑，这最终不能很好地工作。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:289
 msgid ""
@@ -9000,12 +9120,16 @@ msgid ""
 "upon import and create a :ref:`class_staticbody` collision instead. This "
 "helps the visual mesh and actual collision to be separated."
 msgstr ""
+"为了解决这个问题, \"-colonly\" 修饰符存在, 它将在导入时删除网格, 并创建一个: "
+"ref: \"class_staticbody\" 碰撞体。这有助于将可视的网格和实际碰撞体分开。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
 msgid ""
 "Option \"-convcolonly\" will create :ref:`class_convexpolygonshape` instead "
 "of :ref:`class_concavepolygonshape`."
 msgstr ""
+"选项“-convcolonly”将创建：ref：`class_convexpolygonshape`而不是：ref："
+"`class_concavepolygonshape`。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:295
 msgid ""
@@ -9014,22 +9138,25 @@ msgid ""
 "Collision node will have one of predefined shapes, depending on the "
 "Blender's empty draw type:"
 msgstr ""
+"选项“--colonly”也可以与Blender的空物件一起使用。 在导入时，它会创建一个带有碰"
+"撞节点的：ref：`class_staticbody`作为孩子。 Collision节点将有一个预定义的形"
+"状，具体取决于Blender的空物体类型："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:302
 msgid "Single arrow will create :ref:`class_rayshape`"
-msgstr ""
+msgstr "单箭头将创建: ref: ' class_rayshape '"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:303
 msgid "Cube will create :ref:`class_boxshape`"
-msgstr ""
+msgstr "方块将创建：ref：`class_boxshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:304
 msgid "Image will create :ref:`class_planeshape`"
-msgstr ""
+msgstr "图像将创建: ref: ' class_planeshape '"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
 msgid "Sphere (and other non-listed) will create :ref:`class_sphereshape`"
-msgstr ""
+msgstr "球体 (和其他未列出的) 将创建: ref: ' class_sphereshape '"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
 msgid ""
@@ -9037,28 +9164,30 @@ msgid ""
 "collision empties and set some distinct color for them in User Preferences / "
 "Themes / 3D View / Empty."
 msgstr ""
+"为了提高Blender编辑器的可见性，用户可以在碰撞体上设置“X-Ray”选项，并在用户首"
+"选项/主题/ 3D视图/空物体中为它们设置不同的颜色。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:311
 msgid "Create navigatopm (-navmesh)"
-msgstr ""
+msgstr "创建navigatopm（-navmesh）"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
 msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
-msgstr ""
+msgstr "具有此后缀的网格节点将被转换为导航网格。原始网格节点将被删除。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:317
 msgid "Rigid Body (-rigid)"
-msgstr ""
+msgstr "刚体 (-rigid)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:319
 msgid "Creates a rigid body from this mesh."
-msgstr ""
+msgstr "从这个网格中创建一个刚体。"
 
 #: ../../docs/getting_started/workflow/assets/index.rst:2
 msgid "Assets workflow"
-msgstr ""
+msgstr "资产工作流"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
@@ -17983,7 +18112,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
-msgstr ""
+msgstr "Variant 类"
 
 #: ../../docs/development/cpp/variant_class.rst:9
 msgid ""
@@ -17993,55 +18122,60 @@ msgid ""
 "information for long periods of time, instead they are used mainly for "
 "communication, editing, serialization and generally moving data around."
 msgstr ""
+"Variant 是 Godot引 擎中最重要的数据类型，也是引擎中最重要的类。 一个 Variant "
+"对象值占用 20 个字节内存，但它能够存储引擎中几乎所有的数据类型。 Variant 很少"
+"用于长时间保存信息，而主要用于通信，编辑，序列化 和移动数据。"
 
 #: ../../docs/development/cpp/variant_class.rst:16
 msgid "A Variant can:"
-msgstr ""
+msgstr "一个 Variant 对象支持："
 
 #: ../../docs/development/cpp/variant_class.rst:18
 msgid "Store almost any datatype"
-msgstr ""
+msgstr "存储任意类型的数据"
 
 #: ../../docs/development/cpp/variant_class.rst:19
 msgid ""
 "Perform operations between many variants (GDScript uses Variant as its "
 "atomic/native datatype)."
 msgstr ""
+"在多个 Variant 对象间执行操作符运算 （GDScript 使用 Variant 作为原生最基础的"
+"数据类型）。"
 
 #: ../../docs/development/cpp/variant_class.rst:21
 msgid "Be hashed, so it can be compared quickly to other variants"
-msgstr ""
+msgstr "能被哈希， 因此能够与其他 Variant 对象进行快速比较。"
 
 #: ../../docs/development/cpp/variant_class.rst:22
 msgid "Be used to convert safely between datatypes"
-msgstr ""
+msgstr "能够安全地进行类型转换"
 
 #: ../../docs/development/cpp/variant_class.rst:23
 msgid ""
 "Be used to abstract calling methods and their arguments (Godot exports all "
 "its functions through variants)"
-msgstr ""
+msgstr "能用于抽象调用方法及其参数（Godot通过 Variant 导出其所有功能）"
 
 #: ../../docs/development/cpp/variant_class.rst:25
 msgid "Be used to defer calls or move data between threads."
-msgstr ""
+msgstr "用于推迟调用或在线程之间交换数据。"
 
 #: ../../docs/development/cpp/variant_class.rst:26
 msgid "Be serialized as binary and stored to disk, or transferred via network."
-msgstr ""
+msgstr "支持序列化为二进制格式，能被存储到磁盘或通过网络进行传输。"
 
 #: ../../docs/development/cpp/variant_class.rst:28
 msgid ""
 "Be serialized to text and use it for printing values and editable settings."
-msgstr ""
+msgstr "能被序列化为文本，用于输出值和编辑配置。"
 
 #: ../../docs/development/cpp/variant_class.rst:30
 msgid "Work as an exported property, so the editor can edit it universally."
-msgstr ""
+msgstr "作为导出的属性， 这样编辑器能够使用统一的方式进行修改值。"
 
 #: ../../docs/development/cpp/variant_class.rst:31
 msgid "Be used for dictionaries, arrays, parsers, etc."
-msgstr ""
+msgstr "能被用于字典、数组、解析器等等常用工具中。"
 
 #: ../../docs/development/cpp/variant_class.rst:33
 msgid ""
@@ -18049,6 +18183,9 @@ msgid ""
 "much easier task, as it allows for highly dynamic constructs not common of C+"
 "+ with little effort. Become a friend of Variant today."
 msgstr ""
+"基本上归功于Variant类，编写 Godot 本身变成了一件更加轻松的工作，因为它允许使"
+"用 C++ 中不常见的高度动态构造，并只需要写很少的代码。 今天就和 Variant 成为朋"
+"友吧。"
 
 #: ../../docs/development/cpp/variant_class.rst:40
 msgid ""
@@ -18058,7 +18195,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
-msgstr ""
+msgstr "容器： 字典(Dictionary) 和 数组(Array)"
 
 #: ../../docs/development/cpp/variant_class.rst:45
 msgid ""
@@ -18066,7 +18203,7 @@ msgid ""
 "used as key to any other datatype. An Array just holds an array of Variants. "
 "Of course, a Variant can also hold a Dictionary and an Array inside, making "
 "it even more flexible."
-msgstr ""
+msgstr "他们都是使用 Variant 实现的。"
 
 #: ../../docs/development/cpp/variant_class.rst:50
 msgid ""
@@ -18077,7 +18214,7 @@ msgstr ""
 #: ../../docs/development/cpp/variant_class.rst:54
 msgid ""
 "Copy-on-write (COW) mode support for containers was dropped with Godot 3.0."
-msgstr ""
+msgstr "Godot 3.0 删除了对容器的写时拷贝（COW）模式支持。"
 
 #: ../../docs/development/cpp/variant_class.rst:59
 msgid ""
@@ -18220,22 +18357,23 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr ""
+msgstr "这些宏可以用来处理 C++ 风格的内存分配："
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr ""
+msgstr "他们对应 new、delete、new[] 和 delete[] 。"
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
 "memnew/memdelete also use a little C++ magic and notify Objects right after "
 "they are created, and right before they are deleted."
 msgstr ""
+"memnew / memdelete 也使用一点 C++ 的魔法，在创建完、删除成后立即通知对象池。"
 
 #: ../../docs/development/cpp/core_types.rst:106
 msgid ""
 "For dynamic memory, the DVector<> template is provided. Just use it like:"
-msgstr ""
+msgstr "至于动态内存分配， 使用  DVector<> 模板类， 像这样："
 
 #: ../../docs/development/cpp/core_types.rst:113
 msgid ""
@@ -18243,12 +18381,14 @@ msgid ""
 "operator, but that's probably slow for large amount of accesses (as it has "
 "to lock internally). A few helpers exist for this:"
 msgstr ""
+"DVector 就是通常的 vector 类， 我们可以使用下标运算符取它的元素；大量频繁的读"
+"写可能是低效的（因为它内部使用了锁）。这里是使用示例："
 
 #: ../../docs/development/cpp/core_types.rst:129
 msgid ""
 "respectively. These allow fast read/write from DVectors and keep it locked "
 "until they go out of scope."
-msgstr ""
+msgstr "这样，允许从 DVectors 快速读写并保持锁定状态，直到它们它们超出作用域。"
 
 #: ../../docs/development/cpp/core_types.rst:135
 msgid ""
@@ -18264,11 +18404,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:139
 msgid "Containers"
-msgstr ""
+msgstr "容器"
 
 #: ../../docs/development/cpp/core_types.rst:141
 msgid "Godot provides also a set of common containers:"
-msgstr ""
+msgstr "Godot 还提供了一系列通用的容器："
 
 #: ../../docs/development/cpp/core_types.rst:143
 #: ../../docs/tutorials/math/rotations.rst:162
@@ -18282,7 +18422,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Set"
-msgstr "设置"
+msgstr "Set"
 
 #: ../../docs/development/cpp/core_types.rst:146
 msgid "Map"
@@ -18295,22 +18435,24 @@ msgid ""
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
+"由于 C++ 模板类在展开后会增加代码体积，我们尽可能的让他们保持简单小巧。 "
+"List、Set、Map都能够通过指针进行迭代，像这样："
 
 #: ../../docs/development/cpp/core_types.rst:159
 msgid "The Vector<> class also has a few nice features:"
-msgstr ""
+msgstr "使用Vector<> 类有这些好处："
 
 #: ../../docs/development/cpp/core_types.rst:161
 msgid ""
 "It does copy on write, so making copies of it is cheap as long as they are "
 "not modified."
-msgstr ""
+msgstr "它在写入时复制，因此只要它们没有被修改，就无需制作它的副本。"
 
 #: ../../docs/development/cpp/core_types.rst:163
 msgid ""
 "It supports multi-threading, by using atomic operations on the reference "
 "counter."
-msgstr ""
+msgstr "它通过在引用计数器上使用原子操作来支持多线程。"
 
 #: ../../docs/development/cpp/core_types.rst:169
 msgid ""
@@ -18341,6 +18483,8 @@ msgid ""
 "and utf8 parsing/extracting, as well as helpers for conversion and "
 "visualization."
 msgstr ""
+"Godot 还提供了一个字符串类 String。 这个类有丰富的功能，支持 Unicode 字符"
+"集。 还提供了一些通用的辅助功能（utf8 解析等）。"
 
 #: ../../docs/development/cpp/core_types.rst:185
 msgid ""
@@ -18359,12 +18503,15 @@ msgid ""
 "StringNames are really useful for using strings as identifier, as comparing "
 "them is basically comparing a pointer."
 msgstr ""
+"StringName 和 String 类似， 不同的是他们是唯一的。使用同一个字符串创建的 "
+"StringName 对象内部指向同一指针。 StringName 在使用字符处作为标识符时会很有"
+"用，因为比较他们的性能和比较两个指针接近。"
 
 #: ../../docs/development/cpp/core_types.rst:195
 msgid ""
 "Creation of a StringName (especially a new one) is slow, but comparison is "
 "fast."
-msgstr ""
+msgstr "创建一个 StringName (尤其是新的字符串) 很慢， 但比较他们是非常快的。"
 
 #: ../../docs/development/cpp/core_types.rst:201
 msgid ""
@@ -18374,13 +18521,13 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:204
 msgid "Math types"
-msgstr ""
+msgstr "数学类型"
 
 #: ../../docs/development/cpp/core_types.rst:206
 msgid ""
 "There are several linear math types available in the core/math directory, "
 "they are basically just that."
-msgstr ""
+msgstr "core/math 目录中有几种线性代数常用的类型，基本上就是这样。"
 
 #: ../../docs/development/cpp/core_types.rst:212
 msgid ""
@@ -18389,13 +18536,13 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:215
 msgid "NodePath"
-msgstr ""
+msgstr "NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:217
 msgid ""
 "This is a special datatype used for storing paths in a scene tree and "
 "referencing them fast."
-msgstr ""
+msgstr "这是一种特殊的数据类型，用于在场景树中存储路径并快速引用它们。"
 
 #: ../../docs/development/cpp/core_types.rst:223
 msgid ""
@@ -18413,6 +18560,8 @@ msgid ""
 "RIDs are opaque, meaning that the data they reference can't be accessed "
 "directly. RIDs are unique, even for different types of referenced data."
 msgstr ""
+"RID是资源ID。 Server中使用它们来引用存储在其中的数据。 RID是不透明的，这意味"
+"着它们引用的数据不能直接访问。 即使对于不同类型的数据，RID也是唯一的。"
 
 #: ../../docs/development/cpp/core_types.rst:236
 #: ../../docs/development/cpp/custom_godot_servers.rst:282
@@ -46471,7 +46620,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
-msgstr ""
+msgstr "3D简介"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
