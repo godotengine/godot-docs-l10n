@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: 2018-04-29 15:59+0000\n"
 "Last-Translator: Dante Marshal <Marshal.Devilhunter@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/godot-engine/"
@@ -447,10 +447,12 @@ msgid "Windows (and UWP)"
 msgstr ""
 
 #: ../../docs/about/faq.rst:47
+#: ../../docs/getting_started/step_by_step/exporting.rst:185
 msgid "Android"
 msgstr ""
 
 #: ../../docs/about/faq.rst:48
+#: ../../docs/getting_started/step_by_step/exporting.rst:237
 msgid "iOS"
 msgstr ""
 
@@ -2506,6 +2508,7 @@ msgid "Your First Game"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
+#: ../../docs/getting_started/step_by_step/exporting.rst:7
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
@@ -3601,6 +3604,333 @@ msgstr ""
 msgid ""
 "You can find a completed version of this project here: https://github.com/"
 "kidscancode/Godot3_dodge/releases"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:4
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:123
+msgid "Exporting"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:9
+msgid ""
+"Now that you have a working game, you probably want to share your success "
+"with others. However, it's not practical to ask your friends to download "
+"Godot just so they can open your project. Instead, you can *export* your "
+"project, converting it into a \"package\" that can be run by anyone."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:14
+msgid ""
+"The way you export your game depends on what platform you are targeting. In "
+"this tutorial, you'll learn how to export the \"Dodge the Creeps\" game for "
+"a variety of platforms. First, however, we need to make some changes to the "
+"way the game works."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:19
+msgid ""
+"If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
+"`doc_your_first_game` before continuing with this tutorial."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:23
+msgid "Preparing the project"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:25
+msgid ""
+"In \"Dodge the Creeps\" we used keyboard controls to move the player's "
+"character. This is fine if your game is being played on a PC platform, but "
+"on a phone or tablet, you need to support touchscreen input. Because a click "
+"event can be treated the same as a touch event, we'll convert the game to a "
+"click-and-move input style."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:31
+msgid ""
+"The first step is to open \"Project Settings\" and find the *Handheld* "
+"section. Enable the *Emulate Touchscreen* option. This lets you treat mouse "
+"click events the same as touch events, so you can test the game on a "
+"computer without a touchscreen. Also, make sure to select \"portrait\" under "
+"*Orientation*."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:36
+msgid ""
+"In the *Stretch* section, set *Mode* to \"2d\" and *Aspect* to \"keep\". "
+"This ensures that the game scales consistently on different sized screens."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:41
+msgid ""
+"Next, we need to modify the ``Player.gd`` script to change the input method. "
+"We'll remove the key inputs and make the player move towards a \"target\" "
+"that's set by the touch (or click) event."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:45
+msgid ""
+"Here is the full script for the player, with comments noting what we've "
+"changed:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:122
+#, fuzzy
+msgid "Export Templates"
+msgstr "منوی خروجی گرفتن"
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:124
+msgid ""
+"In order to export, you need to download the *export templates* from the "
+"http://godotengine.org/download. These templates are optimized versions of "
+"the engine without the editor pre-compiled for each platform . You can also "
+"download them in Godot by clicking on *Editor -> Manage Export Templates*:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:131
+msgid ""
+"In the window that appears, you can click \"Download\" to get the template "
+"version that matches your version of Godot."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:136
+msgid ""
+"If you upgrade Godot, you must download templates that match the new version "
+"or your exported projects may not work correctly."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:140
+#, fuzzy
+msgid "Export Presets"
+msgstr "منوی خروجی گرفتن"
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:142
+msgid ""
+"Next, you can configure the export settings by clicking on *Project -> "
+"Export*:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:146
+msgid ""
+"Create a new export preset by clicking \"Add...\" and selecting a platform. "
+"You can make as many presets as you like with different settings."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:149
+msgid ""
+"At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
+"a packed version of your project's data. This doesn't include an executable "
+"so the project can't be run on its own."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:153
+msgid ""
+"The second button, \"Export Project\", creates a complete executable version "
+"of your game, such as an `.apk` for Android or an `.exe` for Windows."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:156
+msgid ""
+"In the \"Resources\" and \"Features\" tabs you can customize how the game is "
+"exported for each platform. We can leave those settings alone for now."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:160
+msgid "Exporting by Platform"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:162
+msgid ""
+"In this section, we'll walk through the process for each platform, including "
+"any additional software or requirements you'll need."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:166
+msgid "PC (Linux/MacOS/Windows)"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:168
+msgid ""
+"Exporting PC platforms works the same across the three supported operating "
+"systems. Open the export window and click \"Add..\" to create the preset(s) "
+"you want to make. Then click \"Export Project\" and choose a name and "
+"destination folder. Choose a location *outside* of your project folder."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:173
+msgid "Click \"Save\" and the engine will build the export files."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:175
+msgid ""
+"When exporting for MacOS, if you export on a MacOS computer, you'll end up "
+"with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
+"either case, the compressed file contains a MacOS `.app` that you can double-"
+"click and run."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:180
+msgid ""
+"On Windows, if you want your exported executable to have a different icon "
+"than the default one, you need to change it manually. See: :ref:"
+"`doc_changing_application_icon_for_windows`."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:187
+msgid ""
+"Mobile devices come with a wide variety of capabilities. In most cases, "
+"Godot's default settings will work, but mobile development is sometimes more "
+"art than science, and you may need to do some experimenting and searching "
+"for help in order to get everything working."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:193
+msgid ""
+"Before you can export your project for Android, you must download the "
+"following software:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:196
+msgid "Android SDK: https://developer.android.com/studio/"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:197
+msgid ""
+"Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:199
+msgid ""
+"When you run Android Studio for the first time, click on *Configure -> SDK "
+"Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
+"command-line tool that Godot uses to communicate with your device."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:203
+msgid ""
+"Next, create a debug keystore with by running the following command on your "
+"system's command line:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:210
+msgid ""
+"Click on *Editor -> Editor Settings* in Godot and select the *Export/"
+"Android* section. Here, you need to set the paths to the Android SDK "
+"applications on your system and the location of the keystore you just "
+"created."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:216
+msgid ""
+"Now you're ready to export. Click on *Project -> Export* and add a preset "
+"for Android (see above)."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:219
+msgid ""
+"Click the \"Export Project\" button and Godot will build an APK you can "
+"download on your device. To do this on the command line, use the following:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:226
+msgid ""
+"Your device may need to be in *developer mode*. Consult your device's "
+"documentation for details."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:229
+msgid ""
+"If your system supports it, connecting a compatible Android device will "
+"cause a \"One-click Deploy\" button to appear in Godot's playtest button "
+"area:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:234
+msgid ""
+"Clicking this button builds the APK and copies it onto your device in one "
+"step."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:239
+msgid ""
+"In order to build your game for iOS, you must have a computer running MacOS "
+"with Xcode installed."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:242
+msgid ""
+"Before exporting, there are some settings that you *must* complete for the "
+"project to export successfully. First, the \"App Store Team Id\", which you "
+"can find by logging in to your Apple developer account and looking in the "
+"\"Membership\" section."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:246
+msgid "You must also provide icons and splash screen images as shown below:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:250
+msgid "Click \"Export Project\" and select a destination folder."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:252
+msgid ""
+"Once you have successfully exported the project, you'll find the following "
+"folders and files have been created in your selected location:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:257
+msgid ""
+"You can now open the project in Xcode and build the project for iOS. Xcode "
+"build procedure is beyond the scope of this tutorial. See https://help.apple."
+"com/xcode/mac/current/#/devc8c2a6be1 for more information."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:263
+msgid "HTML5 (web)"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:265
+msgid ""
+"Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
+"the default settings."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:268
+msgid ""
+"When the export is complete, you'll have a folder containing the following "
+"files:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:273
+msgid ""
+"Viewing the `.html` file in your browser lets you play the game. However, "
+"you can't open the file directly, it neds to be served by a web server. If "
+"you don't have one set up on your computer, you can use Google to find "
+"suggestions for your specific OS."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:278
+msgid ""
+"Point your browser at the URL where you've placed the html file. You may "
+"have to wait a few moments while the game loads before you see the start "
+"screen."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:283
+msgid ""
+"The console window beneath the game tells you if anything goes wrong. You "
+"can disable it by setting \"Export With Debug\" off when you export the "
+"project."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/exporting.rst:286
+msgid ""
+"Browser support for WASM is not very widespread. Firefox and Chrome both "
+"support it, but you may still find some things that don't work. Make sure "
+"you have updated your browser to the most recent version, and report any "
+"bugs you find at the `Godot Github repository <https://github.com/"
+"godotengine/godot/issues>`_."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
@@ -4877,7 +5207,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:613
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
 msgid "The final result"
 msgstr ""
 
@@ -4905,40 +5235,46 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
+msgid ""
+"You can watch this tutorial as a `video on Youtube <https://www.youtube.com/"
+"watch?v=y1E_y9AIqow>`_."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
 msgid "Breaking down the UI"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:27
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
 msgid ""
 "Let's break down the final UI and plan the containers we'll use. As in the :"
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:31
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
 msgid "The life and energy counters on the left"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:32
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:35
 msgid "The life and energy bars"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:33
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:39
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
 msgid "The bomb and rupee counters on the right"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:35
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -4948,22 +5284,22 @@ msgid ""
 "side-by-side."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:50
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:52
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
 msgid ""
 "We will need extra containers inside the individual UI components, but this "
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:57
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
 msgid "Create the base GUI"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:59
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
 msgid ""
 "There are two possible approaches to the GUI: we can design elements in "
 "separate scenes and put them together, or prototype everything in a single "
@@ -4973,18 +5309,18 @@ msgid ""
 "scenes. We'll do that in a moment."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:66
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
 msgid "For now, let's start with a few containers."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:68
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``. Then save the scene as ``GUI.tscn``. It will contain the entire "
 "GUI."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:72
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:75
 msgid ""
 "With the ``MarginContainer`` selected, head to the inspector and scroll down "
 "to the custom constants section. Unfold it and click the field next to each "
@@ -4993,7 +5329,7 @@ msgid ""
 "separate them from the two counters on the right."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:78
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:81
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. To do "
 "this, let's add a ``VBoxContainer``. Name it ``Bars``. Select the parent "
@@ -5002,11 +5338,11 @@ msgid ""
 "containers, we have the base for our GUI scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:86
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:89
 msgid "You should have 4 containers that look like this"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:90
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:93
 msgid ""
 "We can work this way because we first broke down our UI design and took a "
 "few moments to think about the containers we'd use. When you follow a "
@@ -5014,11 +5350,11 @@ msgid ""
 "games, you'll see it's an efficient workflow."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:96
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid "Create the bars' base"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:98
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:101
 msgid ""
 "Each bar is split into two sub-elements that align horizontally: the label "
 "with the health count on the left, and the gauge on the right. Once again, "
@@ -5026,7 +5362,7 @@ msgid ""
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:104
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
 msgid ""
 "The label itself requires at least three nodes: a ``NinePatchRect`` for the "
 "background, on top of which we'll add a texture on the left, either ``HP`` "
@@ -5039,39 +5375,39 @@ msgid ""
 "``MarginContainer``. Name it ``Count``. Inside of it, add three nodes:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:115
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:118
 msgid "A ``NinePatchRect`` named ``Background``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:116
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:119
 msgid "A ``TextureRect`` named ``Title``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:117
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:120
 msgid "And a ``Label`` named ``Number``"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:119
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:122
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:123
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:129
 msgid ""
 "Our scene is still empty. It's time to throw in some textures. To load the "
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:132
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid "You should see a list of textures that we'll use to skin our interface."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:138
 msgid ""
 "Select the ``Background`` in the Scene dock. In the Inspector, you should "
 "see a ``Texture`` property. In the FileSystem tab, click and drag "
@@ -5082,7 +5418,7 @@ msgid ""
 "You should see the ``Background`` resize along with its parent containers."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:147
 msgid ""
 "Next, select the ``Title`` and drag and drop ``label_HP.png`` into its "
 "``Texture`` slot. Select the ``Number`` node, click the field next to the "
@@ -5091,11 +5427,11 @@ msgid ""
 "``MarginContainer``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:152
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:155
 msgid "If you select both nodes, you should see something like this"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:154
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:157
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
@@ -5104,7 +5440,7 @@ msgid ""
 "dock. They'll snap back to their previous size and position."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:161
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:164
 msgid ""
 "Parent containers control the size, the scale, the margins, and the anchors "
 "of their direct children. To modify the nodes, you must nest them inside a "
@@ -5113,13 +5449,13 @@ msgid ""
 "``Number``, and drag and drop them onto ``Background``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:173
 msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:173
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:176
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -5133,17 +5469,17 @@ msgid ""
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:186
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:189
 msgid ""
 "Here's how the nodes' bounding boxes should look in the viewport. Keep it "
 "rough, you don't need to place them too precisely for now."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:190
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:193
 msgid "Replace the Label's font"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:192
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
 msgid ""
 "The label's font is too small. We need to replace it. Select the ``Number`` "
 "node and in the Inspector, scroll down to the ``Control`` class, and find "
@@ -5151,7 +5487,7 @@ msgid ""
 "and click on ``New Dynamic Font``. Click on the field again and select Edit."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:198
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:201
 msgid ""
 "You will enter the ``Dynamic Font`` resource. Unfold the ``Font`` category "
 "and click the field next to ``Font Data``. Click the ``Load`` button. In the "
@@ -5161,7 +5497,7 @@ msgid ""
 "``Size`` property to a higher value, like ``24`` or ``28``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:206
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:209
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -5173,27 +5509,27 @@ msgid ""
 "text aligns with the ``Title`` node. I used a value of ``2`` pixels."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:218
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:221
 msgid "With a Bottom value of 2 pixels, the Number aligns with the Title"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:220
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:223
 msgid ""
 "With this, we finished the hardest part of the GUI. Congratulations! Let's "
 "move on to the simpler nodes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:224
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
 msgid "Add the progress bar"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:226
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
 msgid ""
 "We need one last element to complete our life bar: the gauge itself. Godot "
 "ships with a ``TextureProgress`` node that has everything we need."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:232
 msgid ""
 "Select the Bar node and add a ``TextureProgress`` inside of it. Name it "
 "``Gauge``. In the inspector unfold the ``Textures`` section. Head to the "
@@ -5203,27 +5539,27 @@ msgid ""
 "change the ``Value`` property to ``50`` to see the gauge fill up."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:237
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:240
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:241
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:244
 msgid ""
 "That's it, our life bar is ready. This last part was quick, wasn't it? "
 "That's thanks to our robust container setup."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:245
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:248
 msgid "Design the bomb and rupee counters"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:247
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
 msgid ""
 "The bomb and rupee counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:253
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press Ctrl D to duplicate it. "
 "Drag and drop the new node under the ``Counters`` ``HBoxContainer`` at the "
@@ -5231,7 +5567,7 @@ msgid ""
 "worry about this for now, we'll fix the size soon."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:255
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:258
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -5241,11 +5577,11 @@ msgid ""
 "it to ``Icon``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:267
 msgid "Here's how your node tree should look so far"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:266
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:269
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -5255,11 +5591,11 @@ msgid ""
 "nodes will update to fit the size of the ``Background``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:276
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:279
 msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:278
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:281
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -5268,11 +5604,11 @@ msgid ""
 "of the ``Background`` and the text."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:286
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:289
 msgid "The Number node aligned to the left and centre"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:288
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:291
 msgid ""
 "To overlap the Icon and the background, we need a few tweaks. First, our "
 "background is a bit too tall. It's because it's inside a margin container "
@@ -5283,7 +5619,7 @@ msgid ""
 "container's margins also weigh in."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:296
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:299
 msgid ""
 "Select the Icon, click the Layout menu, and select ``Full Rect`` to re-"
 "center it. We need it to anchor to the ``Background``'s right edge. Open the "
@@ -5291,13 +5627,13 @@ msgid ""
 "centered vertically with the ``Background``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:304
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:307
 msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:307
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:310
 msgid ""
 "Because we duplicated the ``Counter`` from the bar's ``Count``, the "
 "``Number`` node's font is off. Select the ``Number`` node again, head to the "
@@ -5306,7 +5642,7 @@ msgid ""
 "the font's baseline. Our counter now works as expected."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:314
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:317
 msgid ""
 "While we are at it, let's make it so the ``Counters`` snap to the right edge "
 "of the viewport. To achieve this we will set the ``Bars`` container to "
@@ -5316,17 +5652,17 @@ msgid ""
 "counter to the rightmost of the screen."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:326
 msgid ""
 "An expanding container eats all the space it can from its parent, pushing "
 "everything else along the way"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:327
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:330
 msgid "Turn the bar and counter into reusable UI components"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:329
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:332
 msgid ""
 "We have one bar and one counter widget. But we need two of each. We may need "
 "to change the bars' design or their functionality later on. It'd be great if "
@@ -5334,7 +5670,7 @@ msgid ""
 "scenes to work on variations. Godot lets us do this with Inherited Scenes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:338
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -5344,7 +5680,7 @@ msgid ""
 "node."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:344
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:347
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -5354,7 +5690,7 @@ msgid ""
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:355
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -5365,15 +5701,15 @@ msgid ""
 "the same for the ``Counter``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:362
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:365
 msgid "With no extra changes, our Bar is ready to use"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:365
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:368
 msgid "Use Scene Inheritance to create the remaining elements"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:367
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid ""
 "We need two bars that work the same way: they should feature a label on the "
 "left, with some value, and a horizontal gauge on the right. The only "
@@ -5382,13 +5718,13 @@ msgid ""
 "base to reuse for all bars in the game: **inherited scenes**."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:378
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:378
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:381
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -5399,13 +5735,13 @@ msgid ""
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:387
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:390
 msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:392
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
 "Think of scene inheritance like the node tree, or the ``extends`` keyword in "
 "GDScript. An inherited scene does everything like its parent, but you can "
@@ -5413,11 +5749,11 @@ msgid ""
 "functionality."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:398
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:401
 msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:403
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
@@ -5425,11 +5761,11 @@ msgid ""
 "+S`` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:411
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:410
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:413
 msgid ""
 "First, rename the root or top level node to ``LifeBar``. We always want the "
 "root to describe exactly what this UI component is. The name differentiates "
@@ -5439,7 +5775,7 @@ msgid ""
 "nodes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:419
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:422
 msgid ""
 "If you've ever done web design, it's the same spirit as working with CSS: "
 "you create a base class, and add variations with modifier classes. From a "
@@ -5450,17 +5786,17 @@ msgid ""
 "we're doing the same thing."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:428
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:431
 msgid "Design the EnergyBar"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:430
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:433
 msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:433
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid ""
 "Let's create a new inherited scene, and once again select the ``Bar.tscn`` "
 "scene and open it. Double-click on the ``Bar`` root node and rename it to "
@@ -5468,7 +5804,7 @@ msgid ""
 "the HP texture with EP one, and to change the textures on the gauge."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:439
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:442
 msgid ""
 "Head to the FileSystem dock on the left, select the ``Title`` node in the "
 "Scene tree and drag and drop the ``label_EP.png`` file onto the texture "
@@ -5476,7 +5812,7 @@ msgid ""
 "different value like ``14``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:444
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
 msgid ""
 "You'll notice the EP texture is smaller than the HP one. We should update "
 "the ``Number``'s font size to better fit it. A font is a resource. All the "
@@ -5486,11 +5822,11 @@ msgid ""
 "see the text increased in size."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:453
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:456
 msgid "If we change the font resource, all the nodes that use it are affected"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:456
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:459
 msgid ""
 "To change the font size on this node only, we must create a copy of the font "
 "resource. Select the ``Number`` node again and click on the wrench and "
@@ -5499,11 +5835,11 @@ msgid ""
 "resources this node uses and create unique copies for us."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:464
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:467
 msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:468
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:471
 msgid ""
 "When you duplicate a node from the Scene tree, with ``Meta+D``, it shares "
 "its resources with the original node. You need to use ``Make Sub-Resources "
@@ -5511,7 +5847,7 @@ msgid ""
 "node."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:473
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
 msgid ""
 "Scroll down to the ``Custom Font`` section and open ``Font``. Lower the "
 "``Size`` to a smaller value like ``20`` or ``22``. You may also need to "
@@ -5519,18 +5855,18 @@ msgid ""
 "label on the left."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:480
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:483
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:482
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:485
 msgid ""
 "Now, select the ``TextureProgress`` node. Drag the ``energy_bar_bg.png`` "
 "file onto the ``Under`` slot and do the same for ``energy_bar_fill.png`` and "
 "drop it onto the ``Progress`` texture slot."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:486
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:489
 msgid ""
 "You can resize the node vertically so that its bounding rectangle fits the "
 "gauge. Do the same with the ``Count`` node until its size aligns with that "
@@ -5540,7 +5876,7 @@ msgid ""
 "this one as well."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:493
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:496
 msgid ""
 "Last but not least, the ``Background`` container has a minimum size that "
 "makes it a bit large. Select it and in the ``Rect`` section, change the "
@@ -5548,11 +5884,11 @@ msgid ""
 "and the ``Title`` and ``Number`` nodes should reposition as well."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:501
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:504
 msgid "The Count looks better now it's a bit smaller"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:505
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:508
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -5561,11 +5897,11 @@ msgid ""
 "align perfectly."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:512
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:515
 msgid "Prepare the bomb and rupee counters"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:514
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:517
 msgid ""
 "Let us now take care of the counters. Go to ``Scene -> New Inherited Scene`` "
 "and select the ``Counter.tscn`` as a base. Rename the root node as "
@@ -5573,11 +5909,11 @@ msgid ""
 "for this scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:521
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:524
 msgid "The bomb counter is the same as the original Counter scene"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:523
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:526
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``RupeeCounter`` and save the scene as "
@@ -5591,15 +5927,15 @@ msgid ""
 "elements."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:536
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:539
 msgid "The rupee counter should look about like this"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:539
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:542
 msgid "Add the UI components to the final GUI"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:541
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 msgid ""
 "Time to add all the UI elements to the main GUI scene. Open the ``GUI.tscn`` "
 "scene again, and delete the ``Bar`` and ``Counter`` nodes. In the FileSystem "
@@ -5608,21 +5944,21 @@ msgid ""
 "see them align vertically."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:552
 msgid "The LifeBar and the EnergyBar align automatically"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:551
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:554
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
 "onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:556
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:558
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:561
 msgid ""
 "To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -5632,17 +5968,17 @@ msgid ""
 "``HBoxContainer``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:567
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:570
 msgid "Now both counters have a decent size"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:571
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:574
 msgid ""
 "Change the ``Min Size`` property of the ``Counters`` container to control "
 "the height of the counters' background."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:574
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:577
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -5653,32 +5989,32 @@ msgid ""
 "back to the GUI scene, it will be aligned vertically with the ``LifeBar``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:585
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:588
 msgid "The 2 bars align perfectly"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:589
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:592
 msgid ""
 "We could have setup the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:594
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 msgid "Place the GUI onto the game's mockup"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:596
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:599
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
 "scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:599
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:601
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
 msgid ""
 "Drag-and-drop the ``GUI.tscn`` scene right below the ``bg`` node and above "
 "the ``Characters``. The GUI will scale to fit the entire viewport. Head to "
@@ -5688,13 +6024,13 @@ msgid ""
 "of the game."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:608
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:611
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "final project `here <#>`__."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:617
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:620
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -8087,10 +8423,6 @@ msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for both running the game or a simple scene."
-msgstr ""
-
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:123
-msgid "Exporting"
 msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:125
@@ -11948,17 +12280,25 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:30
 msgid ""
+"For instructions on installing older versions of Mono on Linux see `this "
+"page <http://www.mono-project.com/docs/getting-started/install/linux/"
+"#accessing-older-releases>`_. Older versions of Mono for MacOS and Windows "
+"can be found `here <https://download.mono-project.com/archive/>`_."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:33
+msgid ""
 "Additionally, your Godot version must have Mono support enabled, so take "
 "care to download the **Mono version** of Godot. If you are building Godot "
 "from source, make sure to follow the steps to include Mono support in your "
 "build outlined on the  :ref:`doc_compiling_with_mono` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:34
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:37
 msgid "Configuring an external editor"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:36
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:39
 msgid ""
 "While Godot does have its own scripting editor, its support for C# is kept "
 "minimal, and it's recommended that you use an external IDE or editor, such "
@@ -11969,18 +12309,18 @@ msgid ""
 "on that page choose your external editor of choice."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:45
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:48
 msgid "Creating a C# script"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:47
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:50
 msgid ""
 "After you successfully setup C# for Godot, you should see the following "
 "option when selecting ``Attach script`` in the context menu of a node in "
 "your scene:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:51
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:54
 msgid ""
 "Note that while some specifics change, most of the things work the same when "
 "using C# for scripting. If you're new to Godot, you may want to peruse the "
@@ -11989,11 +12329,11 @@ msgid ""
 "from GDScript."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:56
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:59
 msgid "Project setup and workflow"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:58
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:61
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
@@ -12004,7 +12344,7 @@ msgid ""
 "help to delete the ``.mono`` folder and let it regenerate."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:63
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
 msgid ""
 "Note that currently there are some issues where the Godot and the C# project "
 "don't stay in sync; if you delete, rename or move things like scripts or "
@@ -12012,7 +12352,7 @@ msgid ""
 "solution files manually."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:66
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:69
 msgid ""
 "Example: If you created a script (e.g. ``Test.cs``) and delete it in Godot, "
 "compilation will fail because the now missing file is still expected to be "
@@ -12021,25 +12361,25 @@ msgid ""
 "following:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:77
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:80
 msgid ""
 "Simply remove that line and your project should now again build fine. Same "
 "for renaming and moving things, simply rename and move them in the project "
 "file if needed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:80
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:83
 #: ../../docs/tutorials/io/background_loading.rst:87
 #: ../../docs/tutorials/misc/pausing_games.rst:72
 msgid "Example"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:82
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:85
 msgid ""
 "Here's a blank C# script with some comments to demonstrate how it works."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:109
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:112
 msgid ""
 "As you can see, the things normally in global scope in GDScript like Godot's "
 "``print`` function are available in the ``GD`` namespace. For a list of "
@@ -12047,18 +12387,18 @@ msgid ""
 "and :ref:`@GlobalScope <class_@globalscope>`."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:113
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:116
 msgid ""
 "Keep in mind that the class you wish to attach to your node should be named "
 "as the ``.cs`` file. If not, you will get the following error and won't be "
 "able to run the scene: ``Cannot find class XXX for script res://XXX.cs``."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:117
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:120
 msgid "General differences between C# and GDScript"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:119
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:122
 msgid ""
 "The C# API uses ``PascalCase`` instead of ``snake_case`` in GDScript/C++. "
 "Where possible, fields and getters/setters have been converted to "
@@ -12066,15 +12406,15 @@ msgid ""
 "reasonably possible."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:123
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:126
 msgid "For more, see the :ref:`doc_c_sharp_differences` page."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:126
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:129
 msgid "Current gotchas and known issues"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:131
 msgid ""
 "As C# support is quite new to Godot, there are some growing pains and things "
 "that still need to be ironed out. Below is a list of the most important "
@@ -12083,34 +12423,34 @@ msgid ""
 "github.com/godotengine/godot/labels/topic%3Amono>`_."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:131
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:134
 msgid ""
 "As explained above, the C# project isn't always kept in sync automatically "
 "when things are deleted, renamed or moved in Godot (`#12917 <https://github."
 "com/godotengine/godot/issues/12917>`_)"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:132
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:135
 msgid "Writing editor plugins and tool scripts in C# is not yet supported"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:133
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:136
 msgid ""
 "Exporting a project may not yet work (`#15615 <https://github.com/"
 "godotengine/godot/issues/15615>`_)"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:134
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:137
 msgid ""
 "Signals with parameters are broken in 3.0.2-stable (`#17553 <https://github."
 "com/godotengine/godot/issues/17553>`_)"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:137
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:140
 msgid "Performance of C# in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:139
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
 "bunnymark>`_, performance of C# in Godot - while generally in the same order "
@@ -31009,6 +31349,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:133
+#: ../../docs/development/compiling/compiling_with_mono.rst:52
 msgid "Examples"
 msgstr ""
 
@@ -43090,7 +43431,7 @@ msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1025
-msgid "Screen pixel size."
+msgid "Size of individual pixels. Equal to inverse of resolution."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1027
@@ -50278,11 +50619,15 @@ msgid ""
 "at startup."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:52
+#: ../../docs/development/compiling/compiling_with_mono.rst:55
+msgid "Example (Windows)"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:71
 msgid "Example (x11)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:68
+#: ../../docs/development/compiling/compiling_with_mono.rst:86
 msgid ""
 "If everything went well, apart from the normal output, SCons should have "
 "also built the *GodotSharpTools.dll* assembly and copied it together with "
