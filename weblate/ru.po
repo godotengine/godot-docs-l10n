@@ -9,8 +9,8 @@
 # Forest Swamp <sample1989@mail.ru>, 2018.
 # gl <glorphindale+dev@gmail.com>, 2018.
 # ijet <my-ijet@mail.ru>, 2018.
-# Omicron <omicron666.dev@gmail.com>, 2018.
 # Neo6666666 <Neo6666666@gmail.com>, 2018.
+# Omicron <omicron666.dev@gmail.com>, 2018.
 # Sergey Grinev <sgreenyov@gmail.com>, 2018.
 # Аркадий Авас <savvot@gmail.com>, 2018.
 # Семён Рассохин <forzcross@gmail.com>, 2018.
@@ -20,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-18 08:46+0000\n"
-"Last-Translator: batonbl4 <batonbl4@yandex.ru>\n"
+"PO-Revision-Date: 2018-05-18 13:56+0000\n"
+"Last-Translator: Forest Swamp <sample1989@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -837,7 +837,6 @@ msgstr ""
 "<http://opensource.org/licenses/MIT>`_ движка Godot."
 
 #: ../../docs/about/faq.rst:158
-#, fuzzy
 msgid ""
 "That said, Godot's Collada support is good, please use the `OpenCollada "
 "<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ "
@@ -847,10 +846,10 @@ msgid ""
 msgstr ""
 "Тем не менее, поддержка Collada от Godot действительно хороша. Пожалуйста, "
 "используйте экспортер `OpenCollada <https://github.com/KhronosGroup/"
-"OpenCOLLADA/wiki/OpenCOLLADA-Tools>` _ для максимальной совместимости, если "
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ для максимальной совместимости, если "
 "вы используете Maya или 3DS Max. Если вы используете Blender, ознакомьтесь с "
-"нашим собственным «Лучшим экспортером Collada» <https://godotengine.org/"
-"download> `_."
+"нашим собственным `Better Collada Exporter <https://godotengine.org/"
+"download>`_."
 
 #: ../../docs/about/faq.rst:164
 msgid "Also, glTF support was added in Godot 3.0."
@@ -2366,7 +2365,8 @@ msgid ""
 msgstr ""
 "До Godot 3.0, единственным выбором для написания скриптов игры был :ref:"
 "`doc_gdscript`. В настоящее время Godot официально поддерживает четыре (да, "
-"четыре!) языка и возможность динамически применять дополнительные языки!"
+"четыре!) языка и имеет возможность динамически добавлять дополнительные "
+"скриптовые языки!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -2465,12 +2465,17 @@ msgid ""
 "GDNative) if more performance is required, all without recompiling the "
 "engine."
 msgstr ""
+"Его динамическая природа упрощает оптимизацию разделов кода на C++ (через "
+"GDNative), если требуется большая производительность, без перекомпиляции "
+"движка."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
 msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
+"Если вы не определились с выбором языка, но имеете опыт программирования, "
+"особенно на динамически типизированных языках, попробуйте GDScript!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
@@ -2483,6 +2488,9 @@ msgid ""
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
+"Начиная с версии 3.0, Godot предлагает :ref:`Визуальный "
+"Скриптинг<doc_what_is_visual_script>`. Это типичная реализация языка "
+"\"блоков и соединений\", но адаптированная к тому, как работает Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
 msgid ""
@@ -2490,12 +2498,18 @@ msgid ""
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
+"Визуальный скриптинг - это отличный инструмент для непрограммистов или для "
+"опытных разработчиков, которые хотят сделать части кода более доступными для "
+"других, например, дизайнеров игр или художников."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
 msgstr ""
+"Он также может использоваться программистами для создания машин состояний "
+"или пользовательских визуальных узлов рабочих процессов - например, "
+"диалоговой системы."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
 msgid ".NET / C#"
@@ -2507,12 +2521,18 @@ msgid ""
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
+"Поскольку Microsoft C# является любимцем среди разработчиков игр, мы "
+"добавили официальную поддержку для него. C# - зрелый язык с тоннами кода, "
+"написанных для него, и его поддержка была добавлена благодаря щедрому "
+"пожертвованию от Microsoft."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
 msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
 msgstr ""
+"У него есть превосходный компромисс между производительностью и простотой "
+"использования, но нужно знать его сборщик мусора."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
 msgid ""
@@ -2539,6 +2559,9 @@ msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
+"Наконец, одно из наших самых ярких дополнений для версии 3.0: GDNative "
+"позволяет создавать скрипты на C++ без необходимости перекомпилировать (или "
+"даже перезапускать) Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
 msgid ""
@@ -2554,12 +2577,18 @@ msgid ""
 "Visual Script. However the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
+"Этот язык является лучшим выбором для производительности и не должен "
+"использоваться во всей игре, так как другие части могут быть написаны в "
+"GDScript или Visual Script. Однако API ясен и прост в использовании, так как "
+"по большей части он похож на C++ API Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
+"Больше языков могут быть доступны через интерфейс GDNative, но имейте в "
+"виду, что у нас нет официальной поддержки для них."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:94
 msgid "Scripting a scene"
@@ -2571,18 +2600,22 @@ msgid ""
 "button and a label, where pressing the button will update the label. This "
 "will demonstrate:"
 msgstr ""
+"В оставшейся части этого урока мы настроим сцену с графическим интерфейсом, "
+"состоящую из кнопки и ярлыка, где нажатие кнопки будет обновлять ярлык. Это "
+"продемонстрирует:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid "Writing a script and attaching it to a node."
-msgstr ""
+msgstr "Написание скрипта и его привязку к узлу."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:101
 msgid "Hooking up UI elements via signals."
-msgstr ""
+msgstr "Подключение элементов пользовательского интерфейса через сигналы."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:102
 msgid "Writing a script that can access other nodes in the scene."
 msgstr ""
+"Написание скрипта, который может получать доступ к другим узлам в сцене."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:104
 msgid ""
@@ -2591,27 +2624,33 @@ msgid ""
 "short, so it will not take more than a few minutes to get an overview of the "
 "concepts."
 msgstr ""
+"Прежде чем продолжить, обязательно почитайте о :ref:`doc_gdscript`. Это "
+"простой язык, и ссылка на него является короткой, поэтому для обзора "
+"концепций потребуется не более нескольких минут."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:80
 #: ../../docs/tutorials/animation/introduction_2d.rst:113
 msgid "Scene setup"
-msgstr ""
+msgstr "Настройка сцены"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:111
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
+"Используйте диалог \"Добавить дочерний узел\", доступ к которому "
+"осуществляется из вкладки \"Сцена\" (или нажатием ``Ctrl+A``), чтобы создать "
+"иерархию со следующими узлами:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:114
 msgid "Panel"
-msgstr ""
+msgstr "Панель"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:116
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
-msgstr ""
+msgstr "Ярлык"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "Button"
@@ -2619,39 +2658,48 @@ msgstr "Кнопка"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid "The scene tree should look like this:"
-msgstr ""
+msgstr "Дерево сцены должно выглядеть так:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:123
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
+"Используйте 2D-редактор для позиционирования и изменения размера Кнопки и "
+"Ярлыка, чтобы они выглядели как на изображении ниже. Вы можете набрать текст "
+"во вкладке \"Инспектор\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:128
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr ""
+msgstr "Наконец, сохраните сцену с именем ``sayhello.tscn``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:133
 msgid "Adding a script"
-msgstr ""
+msgstr "Добавление скрипта"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:135
 msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
+"Щелкните правой кнопкой мыши на узел Panel и выберите \"Прикрепить скрипт\" "
+"в контекстном меню:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:140
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
+"Откроется диалоговое окно создания скрипта. В этом диалоговом окне вы можете "
+"указать язык скрипта, имя класса и другие параметры."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:143
 msgid ""
 "In GDScript the file itself represents the class, so the class name field is "
 "not editable."
 msgstr ""
+"В GDScript сам файл представляет собой класс, поэтому поле имени класса не "
+"редактируется."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid ""
@@ -2659,6 +2707,10 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
+"Узел, к которому мы прикрепляем скрипт, представляет собой панель, поэтому в "
+"поле \"Наследование\" будет автоматически вписано \"Панель\". Это то, что "
+"нам нужно, поскольку цель скрипта заключается в расширении функциональности "
+"нашего узла панели."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid "Finally, enter a path name for the script and select Create:"

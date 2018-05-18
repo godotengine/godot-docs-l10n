@@ -24,16 +24,16 @@
 # Renne Sampaio <rennesampaio97@gmail.com>, 2018.
 # Rodolfo R Gomes <rodolforg@gmail.com>, 2018.
 # ShallZ <vzinbr@gmail.com>, 2018.
-# Vito Chiarella <vitochiarella@gmail.com>, 2018.
 # suxuf@2odem.com <suxuf@2odem.com>, 2018.
+# Vito Chiarella <vitochiarella@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-16 21:40+0000\n"
-"Last-Translator: Eduardo Abreu <eduo.abreu@gmail.com>\n"
+"PO-Revision-Date: 2018-05-18 13:56+0000\n"
+"Last-Translator: Alex Cunha Ramos <oemaildoalexr@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -3901,7 +3901,6 @@ msgstr ""
 "em linha reta, então, irão desaparecer caso saiam da tela."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:460
-#, fuzzy
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
@@ -3923,21 +3922,23 @@ msgstr "A cena Inimigo utilizará os seguintes nodes:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:470
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (chamado ``Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:472
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ""
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:473
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr ""
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:474
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
+":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (chamado "
+"``Visibility``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:476
 msgid ""
@@ -3954,6 +3955,11 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
+"Dentro da propriedade :ref:`RigidBody2D <class_RigidBody2D>`, configurar "
+"``Gravity Scale`` para ``0``, para que os inimigos não caiam. Além disso, "
+"dentro da seção ``PhysicsBody2D``, clique na propriedade ``Mask`` e "
+"desmarque a primeira caixa para garantir que o inimigos não colidam uns com "
+"os outros."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:486
 msgid ""

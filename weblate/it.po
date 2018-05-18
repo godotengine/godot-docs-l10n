@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Alessio Corridori <alessiocorridori@hotmail.com>, 2018.
 # Dario D'Ambra <legione0@ymail.com>, 2018.
 # Davide Cristini <davcri91@gmail.com>, 2018.
 # Giacomo Bella <foliestere@gmail.com>, 2018.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-07 11:38+0000\n"
-"Last-Translator: anonymous <>\n"
+"PO-Revision-Date: 2018-05-18 13:56+0000\n"
+"Last-Translator: Alessio Corridori <alessiocorridori@hotmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -26,7 +27,7 @@ msgstr ""
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "Documentazione di Godot - versione *master*"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -34,6 +35,9 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"Questa è la documentazione per la versione non stabile (master). Stai "
+"cercando la documentazione per la versione correntemente **stabile**? `Dai "
+"un'occhiata qui <http://docs.godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -43,6 +47,11 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"Benvenuto nella documentazione ufficiale di Godot Engine, il motore di gioco "
+"2D e 3D gratuito e open source gestito dalla community! Se è la prima volta "
+"che utilizzi questa documentazione, ti raccomandiamo di leggere la :ref:"
+"`pagina di introduzione <doc_about_intro>` per avere una panoramica di cosa "
+"questa documentazione ha da offrirti."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -50,6 +59,10 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"La tabella dei contenuti qui sotto e nella barra laterale ti dovrebbero "
+"consentire un accesso facile alla documentazione degli argomenti che ti "
+"interessano. Puoi usare anche la funzione di ricerca nell'angolo in alto a "
+"sinistra."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -59,6 +72,12 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine è un progetto open source sviluppato da una comunità di "
+"volontari. Il team della documentazione può utilizzare sempre i tuoi "
+"feedback ed il tuo aiuto per migliorare i tutorial ed i riferimenti alle "
+"classi. Se non comprendi qualcosa, o non riesci a trovare quello che stai "
+"cercando in questi documenti, aiutaci a migliorare la documentazione "
+"facendocelo sapere!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -69,38 +88,46 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Invia un problema o una richiesta sul `repository di GitHub <https://github."
+"com/godotengine/godot-docs/issues>`_, aiutaci a `tradurre la documentazione "
+"<https://hosted.weblate.org/engage/godot-engine/>`_ nella tua lingua, o stai "
+"in contatto con noi sia sul canale della ``#documentazione`` su `Discord "
+"<https://discord.gg/zH7NUgz>`_, o sul canale ``#godotengine-doc`` su `irc."
+"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr ""
+"La documentazione principale per il sito è organizzato nelle seguenti "
+"sezioni:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "Informazioni Generali"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "Per Iniziare"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "Esercitazioni"
 
 #: ../../docs/index.rst:89
 msgid "Development"
-msgstr ""
+msgstr "Sviluppo"
 
 #: ../../docs/index.rst:99 ../../docs/community/index.rst:2
 msgid "Community"
-msgstr ""
+msgstr "Comunità"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "Riguardo a"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -963,6 +990,9 @@ msgid ""
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
 "this."
 msgstr ""
+"Utilizza le opzioni di adattamento, l'allungamento 2D con il mantenimento "
+"dell'aspetto da i migliori risultati. Controlla il :ref:"
+"`doc_multiple_resolutions` tutorial su come ottenere questo risultato."
 
 #: ../../docs/about/faq.rst:212
 msgid ""
@@ -1013,26 +1043,31 @@ msgid ""
 "Your idea will most certainly be ignored. Examples of stuff that is ignored "
 "by the developers:"
 msgstr ""
+"La tua idea sarà quasi sicuramente ignorata. Esempi di argomenti che vengono "
+"ignorati dagli sviluppatori:"
 
 #: ../../docs/about/faq.rst:234
 msgid "Let's do this because it will make Godot better"
-msgstr ""
+msgstr "Facciamo questo perchè renderà Godot migliore"
 
 #: ../../docs/about/faq.rst:235
 msgid "Let's do this in Godot because another game engine does it"
-msgstr ""
+msgstr "Facciamo questo in Godot perchè un altro motore di gioco lo fa"
 
 #: ../../docs/about/faq.rst:236
 msgid "Let's remove this because I think it's not needed"
-msgstr ""
+msgstr "Togliamo questo perchè credo che non sia necessario"
 
 #: ../../docs/about/faq.rst:237
 msgid "Let's remove clutter and bloat and make Godot look nicer"
 msgstr ""
+"Rimuoviamo tutto quello che è in  più e crea disordine e rendiamo Godot bello"
 
 #: ../../docs/about/faq.rst:238
 msgid "Let's add an alternative workflow for people who prefer it"
 msgstr ""
+"Aggiungiamo dei flussi di lavoro alternativi per le persone che li "
+"preferiscono"
 
 #: ../../docs/about/faq.rst:240
 msgid ""
@@ -1042,34 +1077,46 @@ msgid ""
 "ideas solely based on personal belief. Developers are interested in (for "
 "example):"
 msgstr ""
+"Gli sviluppatori di Godot sono sempre disposti a parlare con te ed ascoltare "
+"ituoi feedback in modo molto aperto, in una misura raramente vista in "
+"progetti open source, ma si preoccuperanno soprattutto dei problemi reali "
+"che hai durante l'utilizzo di Godot, non di idee basate esclusivamente sul "
+"convinzioni personali. Gli sviluppatori sono interessati (per esempio):"
 
 #: ../../docs/about/faq.rst:246
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"La tua esperienza nell'utilizzo del software ed i problemi che hai (ci "
+"preoccupiamo di questo molto di più che di nuove idee su come migliorarlo)."
 
 #: ../../docs/about/faq.rst:248
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"Le funzionalità che ti piacerebbe vedere implementate perchè ne hai bisogno "
+"per il tuo progetto."
 
 #: ../../docs/about/faq.rst:250
 msgid ""
 "The concepts that were difficult to understand in order to learn the "
 "software."
 msgstr ""
+"I concetti che erano difficili da comprendere per imparare il software."
 
 #: ../../docs/about/faq.rst:252
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "Le parti del tuo processo di lavoro che vorresti vedere ottimizzate."
 
 #: ../../docs/about/faq.rst:253
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't up "
 "to par."
 msgstr ""
+"Le parti di cui non riescivi a trovare dei tutorial chiari o per cui la "
+"documentazione non era all'altezza."
 
 #: ../../docs/about/faq.rst:255
 msgid ""

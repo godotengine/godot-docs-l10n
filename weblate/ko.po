@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-16 09:39+0000\n"
+"PO-Revision-Date: 2018-05-18 20:13+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -1674,27 +1674,33 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World!\" message that we'll put on the screen."
 msgstr ""
+"앞에서 언급했듯이, Godot으로 게임을 만드는 거는 주방에서 요리하는 느낌입니"
+"다, 그러면 냉장고를 열고 프로젝트에 신선한 노드들을 추가해 봅시다. 우리는 실"
+"행을 누르면 \"Hello World!\"가 화면에 나오게 할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
-msgstr ""
+msgstr "그러기 위해, \"새 노드\" 버튼을 누르세요 (더하기 모양):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
-msgstr ""
+msgstr "그러면 당신이 만들 수 있는 긴 노드 목록이 나옵니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the quickest way:"
 msgstr ""
+"거기서, \"Label\" 노드를 먼저 선택하세요. 검색으로 더 빨리 찾을 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
+"그리고 마침내, Label을 생성합니다! 생성 버튼을 누르는 순간 많은 작업이 이루어"
+"집니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
 msgid ""
@@ -1702,6 +1708,8 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"먼저, 씬이 2D 에디터로 바뀝니다 (Label은 2D 노드 타입이기 때문입니다), 그리"
+"고 Label이 선택 된 채로, 뷰포트의 왼쪽 위에 보입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
 msgid ""
@@ -1709,28 +1717,36 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
+"노트는 씬 트리 에디터에 나타납니다 (오른쪽 위 상자), 그리고 라벨 속성은 인스"
+"펙터에 나타납니다 (오른쪽 아래 상자)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello, World!\":"
 msgstr ""
+"다음 작업은 라벨 내의 \"Text\" 속성을 바꾸는 것입니다. \"Hello, World!\"라고 "
+"입력합시다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
+"오케이, 씬을 실행할 준비를 마쳤습니다! 위 버튼들 중 씬 실행 버튼을 눌르세요 "
+"(단축키로 F6을 누르세요):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "그러면은... 이런."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"씬은 실행하려면 저장을 해야합니다, 고로 씬 -> 씬 저장 에 가서 hello.tscn 같"
+"은 것으로 이름 지어 저장합시다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -1742,12 +1758,19 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"그리고 재미난 일이 발생합니다. 파일 다이얼로그가  특별한 파일 다이얼로그라"
+"서, 프로젝트 안에다가만 저장할 수 있습니다. 프로젝트 경로는 \"res://\"로 \"리"
+"소스 경로\"를 의미합니다. 이는 파일은 프로젝트 안에만 저장할 수 있다는 것입니"
+"다. 나중에 Godot에서 파일을 관리할 때 \"res://\"가 리소스 경로 임을 기억하세"
+"요, 그리고 이것이 어떤 플랫폼이나 설치 경로와 관계없이 게임 내에서 리소스 파"
+"일을 찾을 수 있게 하는 방법입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello, World!\" "
 "demo should finally execute:"
 msgstr ""
+"씬을 저장하고 씬을 다시 실행하면, \"Hello, World\" 데모가 마침내 실행됩니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
