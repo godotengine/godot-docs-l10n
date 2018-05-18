@@ -8,6 +8,7 @@ SPHINX_TEMPLATES_DIR="sphinx/templates"
 # This one is manually maintained, see --templates-list switch
 SPHINX_TEMPLATES=$(sed -e 's@^@'$SPHINX_TEMPLATES_DIR'/@' templates_list.txt)
 SPHINX_PO_DIR="sphinx/po"
+SPHINX_BUILD_LANGS=$(cat build_langs.txt)
 
 WEBLATE_DIR="weblate"
 WEBLATE_TEMPLATE="$WEBLATE_DIR/docs.pot"
@@ -129,9 +130,9 @@ if [ "$update_sphinx_po" = true ]; then
   # First clean previous folder to take into account potentially removed files
   rm -rf $SPHINX_PO_DIR
   mkdir $SPHINX_PO_DIR
-  for po in $WEBLATE_POFILES; do
+  for lang in $SPHINX_BUILD_LANGS; do
+    po=$WEBLATE_DIR"/"$lang".po"
     echo "Merging $po..."
-    lang=$(basename "$po" .po)
     langdir="$SPHINX_PO_DIR/$lang/LC_MESSAGES"
     mkdir -p "$langdir"
     for template in $SPHINX_TEMPLATES; do
