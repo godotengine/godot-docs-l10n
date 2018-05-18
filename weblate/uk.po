@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-08 21:18+0200\n"
-"PO-Revision-Date: 2018-05-08 19:07+0000\n"
+"PO-Revision-Date: 2018-05-18 10:42+0000\n"
 "Last-Translator: Максим Якимчук <xpinovo@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -24,7 +24,7 @@ msgstr ""
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "Документація Godot – гілка *основної*"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -32,6 +32,9 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"Це документація для нестабільної (основної) гілки. Шукаєте документацію "
+"поточної **стабільної** гілки? `Подивіться тут <http://docs.godotengine.org/"
+"en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -41,6 +44,10 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"Ласкаво просимо в офіційну документацію Godot Engine, вільним та з відкритим "
+"сирцевим кодом, керованим спільнотою 2D та 3D-ігровим рушієм! Якщо ви "
+"новачок у цій документації, радимо ознайомитись з :ref:`сторінка введення "
+"<doc_about_intro>`, щоб оглянути те, що ця документація може запропонувати."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -48,6 +55,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"Зміст, наведений нижче і на бічній панелі, повинен дозволити вам легко "
+"отримати доступ до документації з цікавої вам теми. Ви також можете "
+"використовувати функцію пошуку у верхньому лівому куті."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -57,6 +67,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine - це проект з відкритим кодом, розроблений спільнотою "
+"волонтерів. Команда документації завжди може використовувати ваш відгук та "
+"допомогти покращити навчальні посібники та довідників класів. Якщо ви щось "
+"не розумієте або не можете знайти те, що шукаєте в документації, допоможіть "
+"нам покращити документацію, повідомивши нам про це!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -67,11 +82,17 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Надішліть проблему (issue) або потягніть запит (pull request) у `репозиторії "
+"GitHub <https://github.com/godotengine/godot-docs/issues>`_, допоможіть нам "
+"`перекласти документацію <https://hosted.weblate.org/engage/godot-engine/>`_ "
+"на вашу мову або обговоріть з нами по каналу ``#documentation`` на `Discord "
+"<https://discord.gg/zH7NUgz>`_, або на каналі ``#godotengine-doc`` у `irc."
+"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "Основна документація на сайті складається з наступних розділів:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
@@ -98,7 +119,7 @@ msgstr "Спільнота"
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "Про програму"
+msgstr "Про"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -208,7 +229,6 @@ msgstr ""
 "платформи (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -419,8 +439,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr ""
-"Ви можете модифікувати, (повторно) поширювати і змішувати Godot так, як це "
-"задовольняє ваше серце"
+"Ви можете модифікувати, поширювати і змішувати Godot так, як це задовольняє "
+"ваше серце"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
@@ -519,6 +539,8 @@ msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"Підтримується створення 32-х, та 64-х бітних виконуваних файлів, де це "
+"можливо, а 64-х - типові."
 
 #: ../../docs/about/faq.rst:53
 msgid ""
@@ -579,12 +601,17 @@ msgid ""
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"Також ведуться роботи, наприклад, над неофіційними прив'язками Godot до "
+"`Python <https://github.com/touilleMan/godot-python>`_ і `Nim <https://"
+"github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
 msgstr ""
+"GDScript? Навіщо використовувати власну мову скриптинґу замість обраної мною "
+"мови?"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -596,6 +623,14 @@ msgid ""
 "language in Godot (see list of supported options above), but we strongly "
 "encourage you to try it and see the benefits for yourself."
 msgstr ""
+"Коротка відповідь полягає в тому, що ми вважаємо, що додаткова складність як "
+"з вашої сторони (коли ви вперше вивчаєте Godot та GDScript), так із нашої "
+"сторони (технічне обслуговування) коштує більш інтегрованого та бездоганного "
+"досвіду щодо залучення додаткових користувачів з більш знайомими мовами "
+"програмування, які призводять до гіршого досвіду. Ми зрозуміємо, якщо ви "
+"бажаєте скористатися іншою мовою в Godot (див. список підтримуваних "
+"варіантів вище), але ми настійно рекомендуємо вам спробувати це та побачити "
+"переваги для себе."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -604,6 +639,11 @@ msgid ""
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
+"GDScript призначений для інтеграції від фундаменту до шляху роботи Godot, "
+"більш ніж будь-яка інша мова, і є простим, і легким у вивченні. Це забирає "
+"щонайбільше день чи два, щоб зручно користуватися, і ви легко побачите "
+"переваги, як зробите це. Будь ласка докладіть зусиль, щоб вивчити GDScript, "
+"ви не пошкодуєте про це."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -612,6 +652,10 @@ msgid ""
 "but trying to use it instead of GDScript for an entire game is, in most "
 "cases, a waste of time."
 msgstr ""
+"Godot C++ API також є ефективним і простим у використанні (весь редактор "
+"Godot створено за допомогою цього API), а також чудовий інструмент для "
+"оптимізації частин проекту, але спроба використовувати його замість GDScript "
+"для всієї гри в більшості випадків , марна трата часу."
 
 #: ../../docs/about/faq.rst:96
 msgid ""
@@ -627,14 +671,17 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Більш детальну інформацію про те, як зручніше працювати з GDScript або "
+"динамічно типізованими мовами, можна знайти в посібнику :ref:"
+"`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:105
 msgid "For the more technically versed, proceed to the next item."
-msgstr ""
+msgstr "Для найбільш технічно досвідчених, переходьте до наступного пункту."
 
 #: ../../docs/about/faq.rst:108
 msgid "I don't believe you. What are the technical reasons for the item above?"
-msgstr ""
+msgstr "Я не вірю вам. Які технічні причини для вищезазначеного пункту?"
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
@@ -1301,7 +1348,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "Сцени та вузли"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
 msgid ""
@@ -1387,7 +1434,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr ""
+msgstr "Сцени"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
@@ -1516,7 +1563,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "Іііі... Упс."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
 msgid ""
@@ -1599,7 +1646,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid "To be continued..."
-msgstr ""
+msgstr "Далі буде..."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
 msgid ""
@@ -8708,27 +8755,24 @@ msgid "Editor helper for debugger breakpoints."
 msgstr "Допоміжний засіб редактора для точок зупинки для діагностики."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
-#, fuzzy
 msgid "preload"
-msgstr "Попереднє завантаження"
+msgstr "preload"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Preloads a class or variable. See `Classes as resources`_."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
-#, fuzzy
 msgid "yield"
-msgstr "Yield"
+msgstr "yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "Coroutine support. See `Coroutines with yield`_."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
-#, fuzzy
 msgid "assert"
-msgstr "Класи"
+msgstr "assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid ""
@@ -8737,9 +8781,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
-#, fuzzy
 msgid "remote"
-msgstr "Віддалений"
+msgstr "remote"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
@@ -8751,37 +8794,32 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
-#, fuzzy
 msgid "master"
-msgstr "основний"
+msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
-#, fuzzy
 msgid "slave"
-msgstr "SLAVE"
+msgstr "slave"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
-#, fuzzy
 msgid "sync"
-msgstr "Синхронізувати"
+msgstr "sync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 msgid "PI"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
-#, fuzzy
 msgid "PI constant."
-msgstr "Константи"
+msgstr "Стала π."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
 msgid "TAU"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
-#, fuzzy
 msgid "TAU constant."
-msgstr "Константи"
+msgstr "Стала τ."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "INF"
@@ -9016,7 +9054,6 @@ msgid "Strings"
 msgstr "Рядки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
-#, fuzzy
 msgid "``\"\"\"Hello\"\"\"``"
 msgstr "``\"\"\"Hello, Dude\"\"\"``"
 
@@ -10291,9 +10328,8 @@ msgid "And backwards looping is done through a negative counter:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:399
-#, fuzzy
 msgid "Becomes:"
-msgstr "перетворюється на"
+msgstr "Перетворюється на:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:407
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
@@ -10453,18 +10489,16 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:83
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#, fuzzy
 msgid "**Good**:"
-msgstr "**Добрий**"
+msgstr "**Правильно**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:93
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
-#, fuzzy
 msgid "**Bad**:"
-msgstr "**Поганий**"
+msgstr "**Неправильно**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
 msgid ""
@@ -13002,9 +13036,8 @@ msgid "Rather than,"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:264
-#, fuzzy
 msgid "Implicitly Typed Local Variables"
-msgstr "Локальні змінні"
+msgstr "Локальні змінні із неявною типізацією"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:266
 msgid ""
@@ -13014,9 +13047,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:296
-#, fuzzy
 msgid "Other Considerations"
-msgstr "Налаштування"
+msgstr "Інші загальноприйняті правила"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:298
 msgid "Use explicit access modifiers."
@@ -22822,9 +22854,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
-#, fuzzy
 msgid "Getting everything ready"
-msgstr "Перші кроки"
+msgstr "Готуємо усе"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:79
 msgid "Launch Godot and open up the project included in the starter assets."
@@ -29132,9 +29163,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:500
-#, fuzzy
 msgid "Starting the respawn system"
-msgstr "Як розпочати гру"
+msgstr "Запускаємо систему повернення гравця"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:502
 msgid ""
@@ -29755,7 +29785,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr "Звук"
+msgstr "Аудіо"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:43
@@ -40359,9 +40389,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:157
-#, fuzzy
 msgid "ViewportContainer"
-msgstr "Демонстраційне вікно"
+msgstr "ViewportContainer"
 
 #: ../../docs/tutorials/viewports/viewports.rst:161
 msgid ""
@@ -48571,9 +48600,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
-#, fuzzy
 msgid "Other build options"
-msgstr "Параметри налагоджування"
+msgstr "Інші параметри збирання"
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
 msgid ""
@@ -52282,9 +52310,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
-#, fuzzy
 msgid "Custom Godot Servers"
-msgstr "Нетипові можливості"
+msgstr "Нетипові сервери Godot"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
 msgid ""
@@ -52330,9 +52357,8 @@ msgid "Adding custom VOIP protocol"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:39
-#, fuzzy
 msgid "Creating a Godot Server"
-msgstr "Як створити проект"
+msgstr "Створення сервера Godot"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:41
 msgid ""
@@ -52398,9 +52424,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:351
-#, fuzzy
 msgid "Binding Signals"
-msgstr "Сигнали C#"
+msgstr "Прив'язка сигналів"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:353
 msgid ""
@@ -53801,9 +53826,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:438
-#, fuzzy
 msgid "Deleting a Git branch"
-msgstr "Вилучити доріжку"
+msgstr "Вилучення гілки git"
 
 #: ../../docs/community/contributing/pr_workflow.rst:440
 msgid ""

@@ -3,14 +3,16 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Javier Elias Barrón López <isc.jbarron@gmail.com>, 2018.
+# Javier Ocampos <xavier.ocampos@gmail.com>, 2018.
+# Lukas <crakernet0@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-08 21:18+0200\n"
-"PO-Revision-Date: 2018-04-21 12:41+0000\n"
-"Last-Translator: Javier Elias Barrón López <isc.jbarron@gmail.com>\n"
+"PO-Revision-Date: 2018-05-17 20:41+0000\n"
+"Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
 "Language-Team: Spanish (Mexico) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/es_MX/>\n"
 "Language: es_MX\n"
@@ -149,7 +151,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 #: ../../docs/development/cpp/creating_android_modules.rst:7
 msgid "Introduction"
-msgstr "Introducción"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:11
 msgid ""
@@ -158,11 +160,6 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"Bienvenido a la documentación oficial de Godot Engine, ¡el motor de "
-"videojuegos 2D y 3D libre, de código abierto y guiado por la comunidad!. "
-"Detrás de todo esto, encontrarás una herramienta fácil de usar, y poderosa, "
-"que puedes usar para desarrollar cualquier clase de juego, para cualquier "
-"plataforma y sin ninguna restricción."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -170,14 +167,10 @@ msgid ""
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
-"El objetivo de esta página es el de dar una breve presentación del motor y "
-"del contenido de esta documentación, para que así puedas saber en dónde "
-"comenzar si eres  un principiante o dónde buscar si necesitas información de "
-"una característica específica."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
-msgstr "Acerca de Godot Engine"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -185,10 +178,6 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
-"Un juego es una herramienta compleja y es por eso que es difícil presentar a "
-"Godot en pocas palabras. Sin embargo aquí está nuestra presentación pública, "
-"la cuál eres libre de reutilizar si necesitas un resumen rápido de Godot "
-"Engine."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -199,16 +188,8 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows) as "
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine es un motor de videojuegos multiplataforma lleno de funciones "
-"para crear videojuegos 2D y 3D desde una interfaz unificada. Proveé un juego "
-"comprensivo de herramientas comunes, para que los usuarios puedan "
-"concentrarse en hacer juegos sin tener que reinventar la rueda. Los juegos "
-"pueden ser exportados en un solo click a varias plataformas, incluyendo los "
-"sistemas operativos principales (Linux, MacOS y Windows) así como para "
-"móviles (Android y iOS) y plataformas web (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -217,13 +198,6 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot es completamente gratis y de código abierto bajo la muy permisiva "
-"licencia MIT. Sin compromisos, sin regalias, nada. Los juegos de los "
-"usuarios son propiedad de ellos, hasta la última línea de código. El "
-"desarrollo de Godot es completamente independiente y guiado por la "
-"comunidad, permitiendo a los usuarios ayudar en el desarrollo del motor para "
-"que cumpla con sus expectativas. Esta protegido por la  `Software Freedom "
-"Conservancy <https://sfconservancy.org>` sin fines de lucro."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -231,13 +205,10 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
-"Para una vista mas profunda del motor, se te invita a seguir leyendo esta "
-"documentación, especialmente el tutorial :ref:`Paso a Paso <toc-learn-"
-"step_by_step>`."
 
 #: ../../docs/about/introduction.rst:46
 msgid "About the documentation"
-msgstr "Acerca de la documentación"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:48
 msgid ""
@@ -248,12 +219,6 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Esta documentación es escrita, corregida, editada y actualizada por miembros "
-"de la comunidad de Godot Engine. Es editada por medio de archivos de texto "
-"en el lenguaje  `reStructuredText <http://www.sphinx-doc.org/en/stable/rest."
-"html>` y luego compilado a un sitio estático/documentación fuera de línea "
-"usando las herramientas de código abierto `Sphinx <http://www.sphinx-doc."
-"org>`_ y `ReadTheDocs <https://readthedocs.org/>`_ tools."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -263,11 +228,6 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
-"Puedes contribuir a la documentación de Godot abriendo tickets de problemas "
-"o enviando parches mediante solicitudes pull en su GitHub `source repository "
-"<https://github.com/godotengine/godot-docs>`_, o traduciéndola a tu idioma "
-"en `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
-"docs/>`_."
 
 #: ../../docs/about/introduction.rst:61
 msgid ""
@@ -276,14 +236,10 @@ msgid ""
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
 "\"."
 msgstr ""
-"Todo el contenido está bajo la licencia permisiva Creative Commons "
-"Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/"
-">`_), atribuida a \"Juan Linietsky, Ariel Manzur y la comunidad de Godot "
-"Engine\"."
 
 #: ../../docs/about/introduction.rst:66
 msgid "Organisation of the documentation"
-msgstr "Organización de la documentación"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:68
 msgid ""
@@ -291,9 +247,6 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"Esta documentación está organizada en cinco secciones con una distribución "
-"de contenido impresionantemente desbalanceada - pero la forma en que está "
-"dividida debería ser relativamente intuitiva:"
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -301,9 +254,6 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
-"La sección  :ref:`sec-general` contiene esta introducción así como también "
-"información acerca del motor, su historia, sus licencias, autores, etc. "
-"También contiene las preguntas frequentes  :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:75
 msgid ""
@@ -312,20 +262,12 @@ msgid ""
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
-"La sección :ref:`sec-learn` es la principal razón de esta documentación, "
-"pues contiene toda la información necesaria sobre cómo usar el motor para "
-"crear juegos. Inicia con el tutorial :ref:`Paso a paso <toc-learn-"
-"step_by_step>`  que debería ser el punto de entrada para todos los usuarios "
-"nuevos."
 
 #: ../../docs/about/introduction.rst:80
 msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
-"La sección  :ref:`sec-tutorials`, por otra parte, puede ser consultada "
-"conforme se necesite, en cualquier orden. Contiene muchos tutoriales y "
-"documentación de características específicas."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -333,9 +275,6 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
-"La sección :ref:`sec-devel` está dirigida hacia usuarios avanzados y "
-"contribuyentes del desarrollo del motor, contiene información acerca de cómo "
-"compilar el motor y desarrollar módulos  o plugins para el editor en C++."
 
 #: ../../docs/about/introduction.rst:85
 msgid ""
@@ -345,11 +284,6 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-"La sección  :ref:`sec-community` proveé información relacionada a cómo "
-"contribuir al desarrollo del motor y la vida de la comunidad, por ejemplo: "
-"cómo reportar bugs, ayudar con la documentación, etc.  También refiere a "
-"varios canales de la comunidad como IRC y Discord y contiene una lista de "
-"tutoriales de terceros recomendados fuera de esta documentación."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""

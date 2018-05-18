@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-08 21:18+0200\n"
-"PO-Revision-Date: 2018-05-05 20:37+0000\n"
-"Last-Translator: Skayo <jonasg.cool@gmail.com>\n"
+"PO-Revision-Date: 2018-05-14 22:37+0000\n"
+"Last-Translator: Thomas Eigel <yurumi@gmx.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -59,6 +59,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"Über das Inhaltsverzeichnis unterhalb und in der Seitenleiste solltest Du "
+"einfachen Zugriff auf das interessierende Thema erhalten. Du kannst außerdem "
+"die Suche in der Ecke oben links nutzen."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -68,6 +71,12 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Die Godot Engine ist ein quelloffenes Projekt einer Gemeinschaft von "
+"Freiwilligen. Das für die Dokumentation zuständige Team ist für "
+"Rückmeldungen und Hilfe dankbar, um Anleitungen und die Klassenreferenz zu "
+"verbessern. Wenn Du etwas nicht verstehst oder Du etwas in der Dokumentation "
+"nicht finden kannst, hilf uns die Dokumentation zu verbessern, indem Du uns "
+"Bescheid gibst!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -90,15 +99,15 @@ msgstr "Allgemein"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "Erste Schritte"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "Anleitungen"
 
 #: ../../docs/index.rst:89
 msgid "Development"
-msgstr ""
+msgstr "Entwicklung"
 
 #: ../../docs/index.rst:99 ../../docs/community/index.rst:2
 msgid "Community"
@@ -221,7 +230,6 @@ msgstr ""
 "(HTML5)."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -230,7 +238,7 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot ist vollständig frei und open source und steht unter der äußerst "
+"Godot ist vollständig frei und quelloffen und steht unter der äußerst "
 "freizügigen MIT-Lizenz. Ohne jeglichen Haken, keine versteckten Gebühren, "
 "nichts. Das Spiel gehört ganz allein dem Nutzer, bis zur letzten Zeile "
 "Engine-Code. Die Godot-Weiterentwicklung ist vollständig unabhängig, "
@@ -328,10 +336,10 @@ msgid ""
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
 "Der Abschnitt :ref:`sec-learn` ist der hauptsächliche Daseinszweck dieser "
-"Dokumentation, da er alle nötigen Informationen zur Verwendung der Engine in "
-"Spielen enthält. Er beginnt mit dem :ref:`Step by step <toc-learn-"
-"step_by_step>` Tutorial, welches der Einstiegspunkt für alle Neueinsteiger "
-"ist."
+"Dokumentation, da er alle nötigen Informationen zur Verwendung der Engine "
+"zum Entwickeln von Spielen enthält. Er beginnt mit dem :ref:`Step by step "
+"<toc-learn-step_by_step>` Tutorial, welches der Einstiegspunkt für alle "
+"Neueinsteiger ist."
 
 #: ../../docs/about/introduction.rst:80
 msgid ""
@@ -745,7 +753,6 @@ msgstr ""
 "unterstützt."
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "GDScript was designed to solve the issues above, and performs well in all "
 "the above scenarios. Please learn GDScript and enjoy a smooth integration of "
@@ -753,10 +760,10 @@ msgid ""
 "when things just work). It's worth it, give it a try!"
 msgstr ""
 "GDScript wurde mit dem Ziel entwickelt, die obigen Probleme zu lösen, und "
-"funktionert wunderbar in all den oben genannten Szenarien. Bitte lerne "
+"funktioniert wunderbar in all den oben genannten Szenarien. Bitte lerne "
 "GDScript und erfreue dich der sehr gelungenen Integration von Skripten in "
-"die Spieleengine (Ja, es ist eine sehr seltene aber erfreuliche Situation, "
-"wenn einfach alles funktioniert). Es ist es wert, versuche es einfach!"
+"die Spiele-Engine (Ja, es ist eine sehr seltene aber erfreuliche Situation, "
+"wenn einfach alles funktioniert). Es lohnt sich, versuche es einfach!"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
@@ -986,17 +993,16 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "Und das war's! Das Spiel sollte in mehreren Auflösungen funktionieren."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (less than 300 pixels in width), you can use the export option "
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
-"Wenn es wirklich nötig werden sollte, das Spiel auf älteren Geräten mit "
-"kleinen Bildschirmen (weniger als 300 Pixel horizontal), dann kann die "
-"Export-Funktion benutzt werden, um die Bilder zu verkleinern und für "
-"bestimmte Auflösungen im Google Play Store oder im Apple Store freizugeben."
+"Ist es erwünscht, das Spiel auf älteren Geräten mit kleinen Bildschirmen "
+"(weniger als 300 Pixel horizontal) laufen zu lassen, können die Bilder mit "
+"der Export-Option verkleinert werden und für bestimmte Bildschirmgrößen im "
+"Google Play Store oder im Apple Store genutzt werden."
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"
@@ -1204,11 +1210,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 msgid "Step by step"
-msgstr ""
+msgstr "Schritt für Schritt"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Einführung in den Godot-Editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1216,16 +1222,21 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"Diese Anleitung zeigt dir die Oberfläche von Godot. Wir werden einen Blick "
+"auf **die Projektverwaltung, andockbare Bereiche, Arbeitsbereiche** und "
+"alles, was du zum Loslegen mit der Engine wissen musst, werfen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "Projektverwaltung"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
+"Wenn du Godot startest, erscheint als erstes Fenster die Projektverwaltung. "
+"Hier kannst du Projekte erzeugen, entfernen, importieren oder spielen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:46
@@ -1239,6 +1250,8 @@ msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"In der rechten oberen Ecke findest du ein Aufklappmenü, um die Sprache des "
+"Editors zu ändern."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:54
@@ -1260,7 +1273,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
-msgstr ""
+msgstr "Erzeugen oder Importieren eines Projekts"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
@@ -9407,6 +9420,8 @@ msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as "
 "array."
 msgstr ""
+"2D-Vektortyp, der ``x`` und ``y`` Felder enthält. Kann auch als Array "
+"angesprochen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -9417,6 +9432,9 @@ msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Alternatively contains an ``end`` field which is ``position+size``."
 msgstr ""
+"2D-Rechtecktyp, der zwei Vektorenfelder enthält: ``Position`` und ``Größe``. "
+"Alternativ kann auch ein ``Ende``-Feld enthalten sein, welches ``Position"
+"+Größe`` ist."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:389
 msgid ":ref:`Vector3 <class_Vector3>`"
@@ -9427,6 +9445,8 @@ msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
 msgstr ""
+"3D-Vektortyp, der die Felder ``x``, ``y`` und ``z`` enthält. Auf diese kann "
+"auch als Array zugegriffen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:395
 msgid ":ref:`Transform2D <class_Transform2D>`"
@@ -9487,6 +9507,9 @@ msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
+"3x3-Matrix für 3D-Rotation und Skalierung. Es enthält 3 Vektorfelder "
+"(``x```, ``y`` und ``z``) und kann auch als Array von 3D-Vektoren "
+"angesprochen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:426
 msgid ":ref:`Transform <class_Transform>`"
@@ -9496,6 +9519,8 @@ msgstr ":ref:`Transform <class_Transform>`"
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
+"3D Transform enthält ein Basisfeld ```basis`` und ein Vector3-Feld "
+"``origin``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:432
 msgid "Engine built-in types"
@@ -9534,6 +9559,8 @@ msgstr ":ref:`RID <class_RID>`"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:449
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
+"Ressourcen-ID (RID). Server verwenden generische RIDs, um opake Daten zu "
+"referenzieren."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:452
 msgid ":ref:`Object <class_Object>`"
@@ -9623,6 +9650,8 @@ msgstr ":ref:`Dictionary <class_Dictionary>`"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:494
 msgid "Associative container which contains values referenced by unique keys."
 msgstr ""
+"Zugehöriger Container, der durch eindeutige Schlüssel referenzierte Werte "
+"enthält."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:507
 msgid ""
@@ -9708,6 +9737,8 @@ msgstr ""
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
+"Eine Funktion kann jederzeit ``zurückkehren``. Der Standard-Rückgabewert ist "
+"``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:607
 msgid "Referencing Functions"
@@ -11981,6 +12012,8 @@ msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
+"Um die Variable in dem Skript zu verwenden, ziehe sie einfach in das Canvas "
+"um ein Getter zu erstellen."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"

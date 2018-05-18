@@ -2,10 +2,13 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# baiwu liu <bovy.liu@gmail.com>, 2018.
 # bladesero <872461916@qq.com>, 2018.
+# DKLost <514dklost@gmail.com>, 2018.
 # Geequlim <geequlim@gmail.com>, 2018.
 # Griant <goooosick@gmail.com>, 2018.
 # Harlan Howell <lin_032@hotmail.com>, 2018.
+# plumsky <x-wolf@163.com>, 2018.
 # py_co <py_co@outlook.com>, 2018.
 # RainVector <y2505418927@gmail.com>, 2018.
 # seanfy <everxiao@qq.com>, 2018.
@@ -20,8 +23,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-08 21:18+0200\n"
-"PO-Revision-Date: 2018-05-08 06:35+0000\n"
-"Last-Translator: bladesero <872461916@qq.com>\n"
+"PO-Revision-Date: 2018-05-18 01:35+0000\n"
+"Last-Translator: plumsky <x-wolf@163.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -34,6 +37,8 @@ msgstr ""
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
 msgstr ""
+"额                                                             Godot 文档 - "
+"*master* 分支"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -41,6 +46,8 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"这是不稳定(master)分支的文档。想要看当前**稳定**分支的文档? `请查看这里"
+"<http://docs.godotengine.org/en/stable>`_。"
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -50,6 +57,9 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"欢迎来到戈多游戏引擎的官方文档，戈多引擎是一款免费，开源社区驱动的2D和3D游戏"
+"引擎，如果你是新手，我建议您先阅读 `文档简介` 链接以便全面了解该文档所提供到"
+"内容。"
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -57,6 +67,8 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"在内容下面和侧栏中的列表应让您可以轻松访问感兴趣主题的文档。您也可以使用左上"
+"角的搜索功能。"
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -66,8 +78,12 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot引擎是一个由自愿者社区开发的开源项目。文档团队可以随时使用您的反馈，并帮"
+"助改进教程和课程参考。如果您不明白某些内容，或无法在文档中找到您要查找的内"
+"容，请告知我们以帮助我们更好地编写文档！"
 
 #: ../../docs/index.rst:29
+#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -76,11 +92,16 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"提交问题或提交请求在`GitHub 仓库<https://github.com/godotengine/godot-docs/"
+"issues>`_，帮助我们`翻译文档 <https://hosted.weblate.org/engage/godot-engine/"
+">`_到你的语言，或者 ``#godotengine-doc`` 频道 `irc.freenode.net <http://"
+"webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
+#, fuzzy
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "该网站的主要文档分为以下几部分："
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
@@ -88,15 +109,15 @@ msgstr "常规"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "入门"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "教程"
 
 #: ../../docs/index.rst:89
 msgid "Development"
-msgstr ""
+msgstr "开发"
 
 #: ../../docs/index.rst:99 ../../docs/community/index.rst:2
 msgid "Community"
@@ -838,6 +859,7 @@ msgstr ""
 "方面的问题。一般2D需要这么做，因为3D只需要处理相机的XFov或YFov。"
 
 #: ../../docs/about/faq.rst:200
+#, fuzzy
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -848,7 +870,7 @@ msgid ""
 msgstr ""
 "为游戏选一个常规分辨率。即使有高达2K或低于400p的设备，它们硬件缩放也能以低耗"
 "甚至无消耗的性能来处理分辨率。通常选择1080p(1920x1080)或720p(1280x720)。注"
-"意，分辨率越高，资产越大，它们需要的内存就越多，加载所需时间也会越长。"
+"意，分辨率越高，资源越多，它们需要的内存就越多，加载所需时间也会越长。"
 
 #: ../../docs/about/faq.rst:208
 msgid ""
@@ -1062,7 +1084,7 @@ msgstr "请参照 `Godot官网 <https://godotengine.org/contact>`_ 上的相应�
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 msgid "Step by step"
-msgstr ""
+msgstr "逐步引导"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
@@ -1199,9 +1221,8 @@ msgid "|image8|"
 msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
-#, fuzzy
 msgid "Your first look at Godot’s editor"
-msgstr "Godot编辑器"
+msgstr "初识Godot编辑器"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -1231,13 +1252,14 @@ msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
-"在顶部，从左到右，你可以看到**主菜单**、**工作区** 以及 **各调试按钮**。"
+"在顶部，从左到右，你可以看到**主菜单**(main menus)、**工作区**(workspaces) 以"
+"及 **各调试按钮**(playtest buttons)。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid ""
 "On the left side you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
-msgstr "在左侧你可以看到**文件系统面板**，在这里你可以管理你的项目文件和资产。"
+msgstr "在左侧你可以看到**文件系统面板**，在这里你可以管理你的项目文件和资源。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:152
@@ -1291,7 +1313,7 @@ msgstr "工作区"
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
-msgstr "你可以看到顶部有四个工作区按钮：2D、3D、脚本和资产库。"
+msgstr "你可以看到顶部有四个工作区按钮：2D、3D、脚本和资源库。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
@@ -1341,7 +1363,7 @@ msgstr "|image17|"
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
-msgstr "最后的**资产库**有免费的插件、脚本、资产可以用到你的项目中。"
+msgstr "最后的**资源库**有免费的插件、脚本、资产可以用到你的项目中。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
 msgid "Modify the interface"
@@ -1358,7 +1380,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
 msgid "Move and resize docks"
-msgstr "移动、修改尺寸"
+msgstr "移动、修改面板尺寸"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
 msgid ""
@@ -1641,7 +1663,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
-msgstr "然后…噢天哪！"
+msgstr "然后……噢天哪！"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
 msgid ""
@@ -2101,7 +2123,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr ""
+msgstr "脚本"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
@@ -2212,7 +2234,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
 msgid "VisualScript"
-msgstr ""
+msgstr "可视化脚本"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""
@@ -2371,7 +2393,7 @@ msgstr "面板"
 #: ../../docs/getting_started/step_by_step/scripting.rst:116
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
-msgstr ""
+msgstr "标签"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "Button"
@@ -2651,56 +2673,71 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "脚本（续）"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "流程"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
+#, fuzzy
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Godot中的许多动作是由回调函数或虚函数触发，所以不需要编写一直运行的代码。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"但是，在每一帧上都需要处理脚本仍然很常见。有两种类型的处理：空闲处理和物理处"
+"理。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
+#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
+"当 :ref:`Node._process() <class_Node__process>` 方法在函数中被定义处理流程就"
+"会被激活.。可以通过 :ref:`Node.set_process() <class_Node_set_process>` 函数来"
+"进行开关."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
 "This method will be called every time a frame is drawn, so it's fully "
 "dependent on how many frames per second (FPS) the application is running at:"
 msgstr ""
+"每次绘制时都会调用此方法，因此调用频率完全取决于应用程序在每秒运行的帧数"
+"（FPS）："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
+#, fuzzy
 msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
 msgstr ""
+"delta参数包含自从上一次调用``_process（）``以来以秒为单位的时间，类型是浮点"
+"数。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
-msgstr ""
+msgstr "无论游戏的FPS如何，这个参数都可以用来确保每帧花费的真实时间。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
-msgstr ""
+msgstr "例如，运动常常乘以时间增量以使运动速度既恒定又独立于帧速率。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+#, fuzzy
 msgid ""
 "Physics processing with ``_physics_process()`` is similar, but it should be "
 "used for processes that must happen before each physics step, such as "
@@ -2709,6 +2746,10 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"使用``_physics_process()``进行物理处理是类似的，但它发生的进程必须是在应用于"
+"每个物理步骤之前，比如控制一个角色。它始终在物理步骤之前运行，并以固定的时间"
+"间隔调用：默认情况下每秒60次。您可以从项目设置中更改物理 - >常用 - >物理Fps下"
+"的时间间隔。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -2716,33 +2757,38 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"函数``_process()``不与物理同步。它的帧频不是恒定的，并且取决于硬件和游戏优"
+"化。在单线程游戏中它的执行是在的物理步骤之后完成的。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
 "A simple way to test this is to create a scene with a single Label node, "
 "with the following script:"
-msgstr ""
+msgstr "测试此方法的一种简单方法是使用以下脚本创建具有单个标签节点的场景："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:82
 msgid "Which will show a counter increasing each frame."
-msgstr ""
+msgstr "这将显示一个每帧增加的计数器。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
 msgstr "分组"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
+#, fuzzy
 msgid ""
 "Nodes can be added to groups, as many as desired per node, and is a useful "
 "feature for organizing large scenes. There are two ways to do this. The "
 "first is from the UI, from the Groups button under the Node panel:"
 msgstr ""
+"可以将节点添加到组中，每个节点所需的数量尽可能多，并且是组织大型场景的有用功"
+"能。有两种方法可以做到这一点。第一个来自UI，从Node面板下的Groups按钮："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
 msgid ""
 "And the second way is from code. One example would be to tag scenes which "
 "are enemies:"
-msgstr ""
+msgstr "第二种方法来自代码。一个例子在场景中标记出敌人："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
 msgid ""
@@ -2752,16 +2798,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
+#, fuzzy
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
+"上面的代码在群组``enemies``的每个成员上调用函数``player_was_discovered``。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
 msgstr ""
+"通过调用：ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_get_nodes_in_group>`也可以获得``enemies``节点的完整列表："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -9374,55 +9424,57 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:276
 msgid "Content Test"
-msgstr ""
+msgstr "内容测试"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "``!`` ``not``"
-msgstr ""
+msgstr "``!`` ``not``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:278
 msgid "Boolean NOT"
-msgstr ""
+msgstr "布尔NOT"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "``and`` ``&&``"
-msgstr ""
+msgstr "``and``  ``&&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:280
 msgid "Boolean AND"
-msgstr ""
+msgstr "布尔AND"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
 msgid "``or`` ``||``"
-msgstr ""
+msgstr "``or``  ``||``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:282
 msgid "Boolean OR"
-msgstr ""
+msgstr "布尔OR"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:284
 msgid "``if x else``"
-msgstr ""
+msgstr "``if x else``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:284
 msgid "Ternary if/else"
-msgstr ""
+msgstr "三元 if/else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:286
+#, fuzzy
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
-msgstr ""
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:286
 msgid "Assignment, Lowest Priority"
-msgstr ""
+msgstr "作业，最低优先级"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:290
+#, fuzzy
 msgid "Literals"
-msgstr ""
+msgstr "字面"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "**Literal**"
-msgstr ""
+msgstr "**文字**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
@@ -9431,62 +9483,66 @@ msgid "**Type**"
 msgstr "**类型**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
+#, fuzzy
 msgid "``45``"
-msgstr ""
+msgstr "``45``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Base 10 integer"
-msgstr ""
+msgstr "基数为10的整数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
+#, fuzzy
 msgid "``0x8F51``"
-msgstr ""
+msgstr "``0x8F51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "Base 16 (hex) integer"
-msgstr ""
+msgstr "基数16（十六进制）整数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "``3.14``, ``58.1e-10``"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
+#, fuzzy
 msgid "Floating point number (real)"
-msgstr ""
+msgstr "浮点数（实数）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "``\"Hello\"``, ``\"Hi\"``"
-msgstr ""
+msgstr "``\"你好\"``, ``\"嗨\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:301
 msgid "Strings"
-msgstr ""
+msgstr "字符串"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "``\"\"\"Hello\"\"\"``"
-msgstr ""
+msgstr "``\"\"\"你好\"\"\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:303
 msgid "Multiline string"
-msgstr ""
+msgstr "多行字符串"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:305
 msgid "``@\"Node/Label\"``"
-msgstr ""
+msgstr "``@\"节点/标签\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:305
+#, fuzzy
 msgid "NodePath or StringName"
-msgstr ""
+msgstr "节点路径和字符串名称"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:309
 msgid "Comments"
-msgstr ""
+msgstr "注释"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:311
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
-msgstr ""
+msgstr "任何从``＃``到行尾的内容都会被忽略，并被视为注释。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:319
 msgid ""
@@ -18549,6 +18605,10 @@ msgid ""
 "3D kinematic character tutorials, which are almost identical to their 2D "
 "counterparts."
 msgstr ""
+"创造一个3D游戏很有挑战性。 多余的Z坐标使许多有助于使2D游戏变得简单的常用技术"
+"不再起作用。 为了帮助实现这一转变，值得一提的是，Godot在2D和3D上使用了类似的"
+"API。 大多数节点是相同的，并且以2D和3D版本存在。 事实上，看看3D平台游戏教程或"
+"3D运动学角色教程是值得的，这些教程大部分与2D游戏相同。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
@@ -18557,10 +18617,12 @@ msgid ""
 "developers, not mathematicians or engineers) will help pave the way into "
 "efficiently developing 3D games."
 msgstr ""
+"在3D中，数学比2D更复杂一些，所以看看wiki：ref：`doc_vector_math`（特别是为游"
+"戏开发者，而不是数学家或工程师创建的）将有助于为有效开发3D游戏铺平道路。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr ""
+msgstr "空间节点"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -18569,6 +18631,9 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
+"：ref：`Node2D <class_Node2D>`是2D的基本节点。 ：ref：`Control "
+"<class_Control>`是所有GUI的基础节点。 按照这个推理，3D引擎中的所有3D物体使"
+"用：ref：`Spatial <class_Spatial>`节点。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -18578,10 +18643,13 @@ msgid ""
 "3 :ref:`Vector3 <class_Vector3>` members representing location, Euler "
 "rotation (x,y and z angles) and scale."
 msgstr ""
+"空间节点有一个局部变换，它与父节点相关（只要父节点也是**或者继承** Spatial类"
+"型）。 这个变换可以作为4x3：ref：`Transform <class_Transform>`或3个：ref："
+"`Vector3 <class_Vector3>`成员来表示位置，欧拉旋转（x，y和z角度）和比例。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
-msgstr ""
+msgstr "3D内容"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
@@ -18591,10 +18659,13 @@ msgid ""
 "in order to be imported in Godot (3D formats are not as standardized as "
 "images)."
 msgstr ""
+"与2D不同，2D加载图像内容和绘图非常简单，但3D更难一些。 内容需要使用特殊的3D工"
+"具（通常称为DCC）创造，并导出为交换文件格式以导入Godot（3D格式不像图像那样标"
+"准化）。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
-msgstr ""
+msgstr "DCC 创建的模型"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:50
 msgid ""
@@ -18603,6 +18674,9 @@ msgid ""
 "allows to import entire scenes (just as they look in the DCC), including "
 "animation, skeletal rigs, blend shapes, etc."
 msgstr ""
+"有两条管线可以导入3D模型到Godot中。 第一个也是最常见的一个，是通过：ref："
+"`doc_importing_3d_scenes`导入器，它允许导入整个场景（就像它们在DCC中看起来一"
+"样），包括动画，骨架绑定，混合形状等。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:55
 msgid ""
