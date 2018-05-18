@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,9 +45,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:23
-#, fuzzy
 msgid "So, what is the difference?:"
-msgstr "Otras diferencias:"
+msgstr "Entonces, ¿cuál es la diferencia?:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:25
 msgid ""
@@ -93,10 +92,17 @@ msgid ""
 "in a more predictable way than using regular process, which might have "
 "spikes or lose precision if the frame rate is too high or too low."
 msgstr ""
+"Para manejar la lógica de un personaje o cuerpo cinemático (kinematic body), "
+"siempre se aconseja utilizar el proceso de la física, ya que es llamado "
+"antes del paso de la física y su ejecución está sincronizada con el servidor "
+"de física, también siempre es llamado la misma cantidad de veces por "
+"segundo. Esto hace que la física y el cálculo de movimiento funcionen de una "
+"manera más predecible que el proceso normal, que puede tener picos o perder "
+"precisión si la frecuencia de imagen es demasiado alta o demasiado baja."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:80
 msgid "Scene setup"
-msgstr ""
+msgstr "Configuración de la escena"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:82
 msgid ""
@@ -164,6 +170,8 @@ msgid ""
 "The next step will be adding gravity to the mix, this way it behaves a "
 "little more like an actual game character:"
 msgstr ""
+"El siguiente paso será añadir gravedad a la combinación, de esta manera se "
+"comporta de una manera más parecida a la de un personaje real de un juego:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:185
 msgid ""

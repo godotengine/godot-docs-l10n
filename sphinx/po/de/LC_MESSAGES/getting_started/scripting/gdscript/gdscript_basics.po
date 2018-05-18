@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -885,6 +885,8 @@ msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as "
 "array."
 msgstr ""
+"2D-Vektortyp, der ``x`` und ``y`` Felder enthält. Kann auch als Array "
+"angesprochen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -895,6 +897,9 @@ msgid ""
 "2D Rectangle type containing two vectors fields: ``position`` and ``size``. "
 "Alternatively contains an ``end`` field which is ``position+size``."
 msgstr ""
+"2D-Rechtecktyp, der zwei Vektorenfelder enthält: ``Position`` und ``Größe``. "
+"Alternativ kann auch ein ``Ende``-Feld enthalten sein, welches ``Position"
+"+Größe`` ist."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:389
 msgid ":ref:`Vector3 <class_Vector3>`"
@@ -905,6 +910,8 @@ msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
 msgstr ""
+"3D-Vektortyp, der die Felder ``x``, ``y`` und ``z`` enthält. Auf diese kann "
+"auch als Array zugegriffen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:395
 msgid ":ref:`Transform2D <class_Transform2D>`"
@@ -965,6 +972,9 @@ msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
+"3x3-Matrix für 3D-Rotation und Skalierung. Es enthält 3 Vektorfelder "
+"(``x```, ``y`` und ``z``) und kann auch als Array von 3D-Vektoren "
+"angesprochen werden."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:426
 msgid ":ref:`Transform <class_Transform>`"
@@ -974,6 +984,8 @@ msgstr ":ref:`Transform <class_Transform>`"
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
+"3D Transform enthält ein Basisfeld ```basis`` und ein Vector3-Feld "
+"``origin``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:432
 msgid "Engine built-in types"
@@ -1012,6 +1024,8 @@ msgstr ":ref:`RID <class_RID>`"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:449
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
+"Ressourcen-ID (RID). Server verwenden generische RIDs, um opake Daten zu "
+"referenzieren."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:452
 msgid ":ref:`Object <class_Object>`"
@@ -1101,6 +1115,8 @@ msgstr ":ref:`Dictionary <class_Dictionary>`"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:494
 msgid "Associative container which contains values referenced by unique keys."
 msgstr ""
+"Zugehöriger Container, der durch eindeutige Schlüssel referenzierte Werte "
+"enthält."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:507
 msgid ""
@@ -1179,6 +1195,8 @@ msgstr ""
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
+"Eine Funktion kann jederzeit ``zurückkehren``. Der Standard-Rückgabewert ist "
+"``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:607
 msgid "Referencing Functions"

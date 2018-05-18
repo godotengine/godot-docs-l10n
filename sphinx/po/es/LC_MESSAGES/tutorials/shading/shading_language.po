@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -778,11 +778,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:424
 msgid "hint_range(min,max [,step] )"
-msgstr ""
+msgstr "hint_range(min,max [,step] )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:424
 msgid "Used as range (with min/max/step)"
-msgstr ""
+msgstr "Se utiliza como rango (con mín./máx./paso)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:426
 msgid "hint_albedo"
@@ -1192,7 +1192,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:546
 msgid "vec_type **step** ( vec_type a, vec_type b )"
-msgstr ""
+msgstr "vec_type **step** ( vec_type a, vec_type b )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:546
 msgid "\\` b[i] < a[i] ? 0.0 : 1.0 \\`"
@@ -1200,7 +1200,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:548
 msgid "vec_type **step** ( float a, vec_type b )"
-msgstr ""
+msgstr "vec_type **step** ( float a, vec_type b )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:548
 msgid "\\` b[i] < a ? 0.0 : 1.0 \\`"
@@ -2592,7 +2592,7 @@ msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1025
-msgid "Screen pixel size."
+msgid "Size of individual pixels. Equal to inverse of resolution."
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1027

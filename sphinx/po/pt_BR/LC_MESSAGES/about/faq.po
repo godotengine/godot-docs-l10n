@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,6 @@ msgstr ""
 "encorajamos fortemente que você tente e veja os benefícios por si mesmo."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
@@ -261,10 +260,10 @@ msgid ""
 "do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
 "GDScript é projetada para se integrar perfeitamente com a forma como o Godot "
-"funciona, mais do que qualquer outra linguagem e é muito simples e fácil de "
-"aprender. Leva no máximo um ou dois dias para ficar confortável e é muito "
-"fácil de observar os benefícios quando você se acostumar. Por favor, faça o "
-"esforço de aprender GDScript, você não vai se arrepender."
+"funciona, mais do que qualquer outra linguagem, e é simples e fácil de "
+"aprender. Leva no máximo um ou dois dias para se ficar confortável com ela, "
+"e é muito fácil de observar os benefícios quando você se acostumar. Por "
+"favor, faça o esforço de aprender GDScript, você não vai se arrepender."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -356,7 +355,6 @@ msgstr ""
 "(Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:124
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
@@ -366,7 +364,6 @@ msgstr ""
 "suportado por GDScript."
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "GDScript was designed to solve the issues above, and performs well in all "
 "the above scenarios. Please learn GDScript and enjoy a smooth integration of "
@@ -375,9 +372,9 @@ msgid ""
 msgstr ""
 "GDScript foi projetada para resolver os problemas acima, e tem um desempenho "
 "muito bom nos casos demonstrados. Por favor, aprenda GDScript e aproveite a "
-"integração suave de scripting com o motor de jogos (sim, é uma sensação rara "
-"mais muito prazerosa quando as coisas simplesmente funcionam). Vale a pena, "
-"dê uma chance!"
+"integração suave de roteirizar com o motor de jogos (sim, é um caso raro, "
+"mas prazeroso, quando as coisas simplesmente funcionam). Vale a pena, dê uma "
+"chance!"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
@@ -440,18 +437,16 @@ msgid "Why is FBX not supported for import?"
 msgstr "Por que FBX não é suportado na importação?"
 
 #: ../../docs/about/faq.rst:154
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <http://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<http://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
-"A SDK do FBX tem uma licença `muito restritiva <http://www.blender.org/bf/"
+"A SDK do FBX tem uma `licença restritiva <http://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, que é incompatível com a `licença aberta "
-"<http://opensource.org/licenses/MIT>`_ proporcionada por Godot."
+"<http://opensource.org/licenses/MIT>`_ usada pelo Godot."
 
 #: ../../docs/about/faq.rst:158
-#, fuzzy
 msgid ""
 "That said, Godot's Collada support is good, please use the `OpenCollada "
 "<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ "
@@ -459,11 +454,11 @@ msgid ""
 "are using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Dito isso, o suporte a Collada por Godot é muito bom. Por favor, use o "
-"exportador `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools>`_ para maior compatibilidade se você estiver usando Maya "
-"ou 3DS Max. Se você estiver usando Blender, dê uma olhada no nosso próprio "
-"`Exportador Better Collada <https://godotengine.org/download>`_."
+"Dito isso, o suporte a Collada por Godot é bom. Por favor, use o exportador "
+"`OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-"
+"Tools>`_ para maior compatibilidade se você estiver usando Maya ou 3DS Max. "
+"Se você estiver usando Blender, dê uma olhada no nosso próprio `Exportador "
+"Better Collada <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:164
 msgid "Also, glTF support was added in Godot 3.0."
@@ -607,18 +602,16 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "E é isso! Seu jogo deve funcionar em múltiplas resoluções."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (less than 300 pixels in width), you can use the export option "
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
-"Se você realmente deseja que seu jogo também funcione em dispositivos "
-"antigos com telas minúsculas (menos de 300 pixels de largura), você pode "
-"usar a opção de exportação para diminuir imagens, e definir para que essa "
-"compilação seja usada para determinados tamanhos de tela na App Store ou "
-"Google Play."
+"Se você deseja que seu jogo também funcione em dispositivos antigos com "
+"telas minúsculas (menos de 300 pixels de largura), você pode usar a opção de "
+"exportação para diminuir imagens, e definir para que essa compilação seja "
+"usada para determinados tamanhos de tela na App Store ou Google Play."
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"

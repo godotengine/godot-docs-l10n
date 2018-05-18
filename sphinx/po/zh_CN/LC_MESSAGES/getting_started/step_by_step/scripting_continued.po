@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,56 +19,71 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "脚本（续）"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "流程"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
+#, fuzzy
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Godot中的许多动作是由回调函数或虚函数触发，所以不需要编写一直运行的代码。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"但是，在每一帧上都需要处理脚本仍然很常见。有两种类型的处理：空闲处理和物理处"
+"理。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
+#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
+"当 :ref:`Node._process() <class_Node__process>` 方法在函数中被定义处理流程就"
+"会被激活.。可以通过 :ref:`Node.set_process() <class_Node_set_process>` 函数来"
+"进行开关."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
 "This method will be called every time a frame is drawn, so it's fully "
 "dependent on how many frames per second (FPS) the application is running at:"
 msgstr ""
+"每次绘制时都会调用此方法，因此调用频率完全取决于应用程序在每秒运行的帧数"
+"（FPS）："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
+#, fuzzy
 msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
 msgstr ""
+"delta参数包含自从上一次调用``_process（）``以来以秒为单位的时间，类型是浮点"
+"数。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
+#, fuzzy
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
-msgstr ""
+msgstr "无论游戏的FPS如何，这个参数都可以用来确保每帧花费的真实时间。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
-msgstr ""
+msgstr "例如，运动常常乘以时间增量以使运动速度既恒定又独立于帧速率。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
+#, fuzzy
 msgid ""
 "Physics processing with ``_physics_process()`` is similar, but it should be "
 "used for processes that must happen before each physics step, such as "
@@ -77,6 +92,10 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"使用``_physics_process()``进行物理处理是类似的，但它发生的进程必须是在应用于"
+"每个物理步骤之前，比如控制一个角色。它始终在物理步骤之前运行，并以固定的时间"
+"间隔调用：默认情况下每秒60次。您可以从项目设置中更改物理 - >常用 - >物理Fps下"
+"的时间间隔。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -84,33 +103,38 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"函数``_process()``不与物理同步。它的帧频不是恒定的，并且取决于硬件和游戏优"
+"化。在单线程游戏中它的执行是在的物理步骤之后完成的。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
 "A simple way to test this is to create a scene with a single Label node, "
 "with the following script:"
-msgstr ""
+msgstr "测试此方法的一种简单方法是使用以下脚本创建具有单个标签节点的场景："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:82
 msgid "Which will show a counter increasing each frame."
-msgstr ""
+msgstr "这将显示一个每帧增加的计数器。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
 msgstr "分组"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
+#, fuzzy
 msgid ""
 "Nodes can be added to groups, as many as desired per node, and is a useful "
 "feature for organizing large scenes. There are two ways to do this. The "
 "first is from the UI, from the Groups button under the Node panel:"
 msgstr ""
+"可以将节点添加到组中，每个节点所需的数量尽可能多，并且是组织大型场景的有用功"
+"能。有两种方法可以做到这一点。第一个来自UI，从Node面板下的Groups按钮："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
 msgid ""
 "And the second way is from code. One example would be to tag scenes which "
 "are enemies:"
-msgstr ""
+msgstr "第二种方法来自代码。一个例子在场景中标记出敌人："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
 msgid ""
@@ -120,16 +144,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
+#, fuzzy
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
+"上面的代码在群组``enemies``的每个成员上调用函数``player_was_discovered``。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
 msgstr ""
+"通过调用：ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_get_nodes_in_group>`也可以获得``enemies``节点的完整列表："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""

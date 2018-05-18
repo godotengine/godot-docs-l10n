@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,7 @@ msgstr "Introducción"
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
 msgstr ""
+"El sistema de animación de Godot es extremadamente poderoso y flexible."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:11
 msgid ""
@@ -36,35 +37,46 @@ msgid ""
 "splash image. Here's a copy just in case: :download:`robisplash.zip <files/"
 "robisplash.zip>`."
 msgstr ""
+"Para empezar, usemos la escena del tutorial anterior (:ref:"
+"`doc_splash_screen`). El objetivo es añadir una animación \"fade-in\" a la "
+"imagen de inicio. Aquí hay una copia por si acaso: :download:`robisplash.zip "
+"<files/robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
 msgid "Add an animation player"
-msgstr ""
+msgstr "Agregar un reproductor de animaciones"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:18
 msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
+"Primero agregaremos un nodo :ref:`AnimationPlayer <class_AnimationPlayer>` a "
+"la escena, como hijo de \"background\" (el nodo raíz):"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
 msgstr ""
+"Cuando se selecciona un nodo de este tipo, aparece el panel de edición de "
+"animación:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
 msgstr ""
+"El editor de animaciones permanecerá visible hasta que se oculte manualmente."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
-msgstr ""
+msgstr "Crear una animación"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
 msgid ""
 "It's time to create a new animation! Press the new animation button and name "
 "the animation \"intro\" when the dialog appears."
 msgstr ""
+"¡Es hora de crear una nueva animación! Presiona el botón de nueva animación "
+"y nombra la animación \"intro\" cuando aparezca el cuadro de diálogo."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:38
 msgid ""
@@ -72,14 +84,18 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot any property of an object can be animated:"
 msgstr ""
+"Ahora que tenemos una animación, el editor de propiedades entra en modo "
+"\"edición de animación\". En este modo, aparece un icono con forma de llave "
+"junto a cada propiedad del editor de propiedades. En Godot cualquier "
+"propiedad de un objeto puede ser animada:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:46
 msgid "Editing the animation"
-msgstr ""
+msgstr "Editando la animación"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "The logo will appear from the top of the screen."
-msgstr ""
+msgstr "El logo aparecerá desde la parte superior de la pantalla."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:50
 msgid ""
@@ -87,30 +103,37 @@ msgid ""
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property:"
 msgstr ""
+"Con el editor de animaciones abierto, selecciona el nodo \"logo\" y "
+"establece la propiedad \"Rect / Position\" en ``(118, -400)`` y pulsa el "
+"botón de la llave junto a la propiedad:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:56
 msgid "When the dialog appears, confirm that you are creating a new track."
-msgstr ""
+msgstr "Cuando el diálogo aparezca, confirme la creación de la nueva pista."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "The keyframe will be added in the animation player editor:"
-msgstr ""
+msgstr "El fotograma clave sera agregado al editor de animaciones:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:62
 msgid "Move the editor cursor to the end, by clicking here:"
-msgstr ""
+msgstr "Mueva el cursor al final haciendo click aquí:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:66
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes, the animation happens."
 msgstr ""
+"Cambia la posición del logo a ``(118, 0)`` y vuelve a añadir un fotograma "
+"clave. Con dos fotogramas clave, la animación sucede."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:71
 msgid ""
 "Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
 "panel will make the logo descend."
 msgstr ""
+"Presionando \"Reproducir la animación seleccionada desde el principio. "
+"(Mayúsculas-D)\" en el panel de animaciones hará que el logo descienda."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:76
 msgid ""
@@ -124,4 +147,4 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/animations.rst:81
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
-msgstr ""
+msgstr "Y finalmente, cuando ejecute la escena, la animación deberá verse así:"

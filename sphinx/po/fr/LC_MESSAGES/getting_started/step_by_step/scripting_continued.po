@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,29 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "Scripting (suite)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "Traitement"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Plusieurs actions dans Godot sont déclenchées par des callbacks ou des "
+"fonctions virtuelles, il n'y a donc pas besoin d'écrire du code qui "
+"s'exécute en permanence."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"Cependant, il est fréquent d'avoir besoin qu'un script soit exécuté à chaque "
+"rafraichissement. Il y a deux types de traitements : les traitements passifs "
+"et les traitements physiques."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -43,30 +49,44 @@ msgid ""
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
+"Le traitement passif est activé lorsque la méthode :ref:`Node._process() "
+"<class_Node__process>` se trouve dans un script. Il peut être activé ou "
+"désactivé avec la fonction :ref:`Node.set_process() "
+"<class_Node_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
 "This method will be called every time a frame is drawn, so it's fully "
 "dependent on how many frames per second (FPS) the application is running at:"
 msgstr ""
+"Cette méthode sera appelée à chaque fois qu'une image est dessinée, elle "
+"dépend donc entièrement du nombre d'images par seconde (IPS/FPS) auquel "
+"l'application s'exécute :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
 msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
 msgstr ""
+"Le paramètre delta contient le temps écoulé en secondes, en virgule "
+"flottante, depuis l'appel précédent à ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"Ce paramètre peut être utilisé pour garantir que les actions prendront le "
+"même temps, quelque soit le nombre d'images par secondes du jeu."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
+"Par exemple, le mouvement est souvent multiplié par un delta-temps pour que "
+"la vitesse de mouvement soit constante et indépendante de la fréquence de "
+"rafraichissement."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
@@ -77,6 +97,12 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"Le traitement physique avec ``_physics_process()`` est similaire, mais "
+"devrait être utilisé pour des traitements qui doivent se produire avant "
+"chaque étape physique, comme lorsqu'on contrôle un personnage. Il est "
+"toujours exécuté avant une étape physique et est appelé à intervalles "
+"fixes : 60 fois par secondes par défaut. Vous pouvez changer l'intervalle "
+"dans les paramètres du projet sous Physics -> Common -> Physics Fps."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -84,16 +110,22 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"La fonction  ``_process()``, cependant, n'est pas synchronisée avec la "
+"physique. Son taux de rafraîchissement n'est pas constant et dépend de "
+"l'optimisation du hardware et du jeu. Son exécution se fait après le "
+"traitement de la physique sur les jeux mono-threadés."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
 "A simple way to test this is to create a scene with a single Label node, "
 "with the following script:"
 msgstr ""
+"Une façon simple de tester ceci est de créer une scène avec un seul nœud "
+"Label, avec le script suivant :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:82
 msgid "Which will show a counter increasing each frame."
-msgstr ""
+msgstr "Ce qui montrera un compteur s'incrémentant à chaque image."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
@@ -105,12 +137,18 @@ msgid ""
 "feature for organizing large scenes. There are two ways to do this. The "
 "first is from the UI, from the Groups button under the Node panel:"
 msgstr ""
+"Les nœuds peuvent être ajoutés à des groupes, autant que souhaité par nœud, "
+"et c'est une fonctionnalité utile pour organiser de grandes scènes. Il y a "
+"deux façons de le faire. La première provient de l'interface utilisateur, du "
+"bouton Groupes sous le panneau Nœud :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
 msgid ""
 "And the second way is from code. One example would be to tag scenes which "
 "are enemies:"
 msgstr ""
+"Et la deuxième manière est par le code. Un exemple serait de marquer les "
+"scènes qui sont des ennemis :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
 msgid ""
@@ -118,18 +156,27 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_call_group>`:"
 msgstr ""
+"De cette façon, si le joueur est découvert en s'infiltrant dans une base "
+"secrète, tous les ennemis peuvent être avertis de l'alarme qu'il déclenche "
+"en utilisant :ref:`SceneTree.call_group() "
+"<class_SceneTree_Scale_call_group>>` :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
+"Le code ci-dessus appelle la fonction ``player_was_discovered`` sur chaque "
+"membre du groupe ``ennemies``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
 msgstr ""
+"Il est également possible d'obtenir la liste complète des nœuds ``ennemies`` "
+"en appelant :ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_get_nodes_in_group_in_group>` :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -139,10 +186,15 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you got some time!"
 msgstr ""
+"La classe :ref:`SceneTree <class_SceneTree>` fournit de nombreuses méthodes "
+"utiles, comme l'interaction avec les scènes, leur hiérarchie de nœuds et "
+"leur groupes de nœuds. Elle vous permet de changer facilement de scènes ou "
+"de les recharger, de quitter le jeu ou de le dé-pauser. Elle contient même "
+"des signaux intéressants. Alors allez voir si vous avez le temps !"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
 msgid "Notifications"
-msgstr ""
+msgstr "Notifications"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
 msgid ""
@@ -152,6 +204,12 @@ msgid ""
 "`Object._notification() <class_Object__notification>` function in your "
 "script:"
 msgstr ""
+"Godot possède un système de notifications. Celles-ci ne sont généralement "
+"pas nécessaires pour le scripting, car elles sont de trop bas niveau et des "
+"fonctions virtuelles sont fournies pour la plupart d'entre elles. C'est "
+"cependant bien de savoir qu'elles existent. Par exemple, vous pouvez ajouter "
+"une fonction :ref:`Object.Notification() "
+"<class_Object__notification__notification>` dans votre script :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -159,37 +217,48 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overrideable functions."
 msgstr ""
+"La documentation de chaque classe dans la :ref:`Class Reference <toc-class-"
+"ref>` montre les notifications qu'elle peut recevoir. Cependant, dans la "
+"plupart des cas, GDScript fournit des fonctions de surcharge plus simples."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr ""
+msgstr "Fonctions surchargeables"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
+"De telles fonctions surchargeables, décrites comme suit, peuvent être "
+"appliquées aux nœuds :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:267
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
 msgstr ""
+"Comme mentionné précédemment, il est préférable d'utiliser ces fonctions "
+"plutôt que le système de notification."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:271
 msgid "Creating nodes"
-msgstr ""
+msgstr "Création de nœuds"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:273
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
+"Pour créer un nœud à partir du code, appelez la méthode ``.new()``, comme "
+"pour tout autre type de données de classe. Par exemple :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
+"Pour supprimer un nœud, que ce soit à l'intérieur ou à l'extérieur de la "
+"scène, il faut utiliser ``free()`` :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:313
 msgid ""
@@ -197,6 +266,10 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
+"Lorsqu'un nœud est libéré, il libère également tous ses nœuds enfants. Pour "
+"cette raison, la suppression manuelle des nœuds est beaucoup plus simple "
+"qu'il n'y paraît. Libérez le nœud de base et tout le reste dans le sous-"
+"arbre disparaît avec lui."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:317
 msgid ""
@@ -205,26 +278,37 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
+"Une situation peut se produire dans laquelle nous voulons supprimer un nœud "
+"qui est actuellement \"bloqué\", parce qu'il émet un signal ou appelle une "
+"fonction. Ceci fera planter le jeu. Lancer Godot avec le débogueur permet "
+"souvent de détecter ce cas et de vous en avertir."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_queue_free>`. This erases the node safely during idle."
 msgstr ""
+"La façon la plus sûre de supprimer un nœud est d'utiliser :ref:`Node."
+"queue_free() <class_Node_Node_queue_free>`. Ceci efface le nœud en toute "
+"sécurité pendant la période d'inactivité."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
-msgstr ""
+msgstr "Instancier des scènes"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:342
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
+"Instancier une scène depuis le code se fait en deux étapes. La première est "
+"de charger la scène à partir de votre disque dur :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
 msgid "Preloading it can be more convenient, as it happens at parse time:"
 msgstr ""
+"Le préchargement peut être plus pratique, car il se produit lors de "
+"l'analyse du code :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""
@@ -234,6 +318,12 @@ msgid ""
 "called. This will return the tree of nodes that can be added to the active "
 "scene:"
 msgstr ""
+"Mais ``scene`` n'est pas encore un nœud. Il est emballé dans une ressource "
+"spéciale appelée :ref:`PackedScene <class_PackedScene>`. Pour créer le "
+"noeud, la fonction :ref:`PackedScene.instance() "
+"<class_PackedScene_instance_PackedScene_instance>` doit être appelée. Celà "
+"retournera l'arborescence des nœuds qui peuvent être ajoutés à la scène "
+"active :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:380
 msgid ""
@@ -242,3 +332,7 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
+"L'avantage de ce processus en deux temps est qu'une scène emballée peut être "
+"chargée et prête à l'emploi afin que vous puissiez créer autant d'instances "
+"que vous le souhaitez. C'est particulièrement utile pour instancier "
+"rapidement plusieurs ennemis, balles et autres entités dans la scène active."

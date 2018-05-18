@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:80
 msgid "Java singleton"
-msgstr ""
+msgstr "Singleton Java"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:82
 msgid ""
@@ -170,10 +170,15 @@ msgid ""
 "any additional resources you have provided for the module will be in the "
 "``com.godot.game.R`` class, so you'll likely want to import it."
 msgstr ""
+"Un módulo Android normalmente tendrá una clase singleton que lo cargará, "
+"esta clase hereda de ``Godot.SingletonBase``. Los identificadores de "
+"recursos para cualquier recurso adicional que haya proporcionado para el "
+"módulo estarán en el juego ``com.godot.game.R``, por lo que probablemente "
+"querrás importarlo."
 
 #: ../../docs/development/cpp/creating_android_modules.rst:87
 msgid "A singleton object template follows:"
-msgstr ""
+msgstr "A continuación se muestra una plantilla de objeto singleton:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:134
 msgid ""
@@ -194,6 +199,8 @@ msgid ""
 "Add this singleton to the build of the project by adding the following to "
 "config.py:"
 msgstr ""
+"Añade este singleton a la compilación del proyecto agregando lo siguiente a "
+"config.py:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:162
 msgid "AndroidManifest"
@@ -294,15 +301,17 @@ msgid ""
 "To use the module from GDScript, first enable the singleton by adding the "
 "following line to project.godot:"
 msgstr ""
+"Para utilizar el módulo de GDScript, primero habilita el singleton añadiendo "
+"la siguiente línea a project.godot:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:280
 msgid ""
 "More than one singleton module can be enabled by separating with commas:"
-msgstr ""
+msgstr "Se puede habilitar más de un módulo singleton separándolo con comas:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:288
 msgid "Then request the singleton Java object from Globals like this:"
-msgstr ""
+msgstr "Luego solicita el singleton objeto Java de Globals de esta manera:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:301
 msgid "Troubleshooting"
@@ -325,6 +334,8 @@ msgid ""
 "Check that the methods used in the Java singleton only use simple Java "
 "datatypes, more complex ones are not supported."
 msgstr ""
+"Comprueba que los métodos utilizados en el singleton de Java sólo utilizan "
+"tipos de datos Java simples, los más complejos no son soportados."
 
 #: ../../docs/development/cpp/creating_android_modules.rst:313
 msgid "Future"

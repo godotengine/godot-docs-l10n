@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
-msgstr ""
+msgstr "Filosofía del diseño de Godot"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
 msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
-msgstr ""
+msgstr "Ahora que te haz ensuciado las manos, hablemos del diseño de Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
 msgid ""
@@ -32,6 +32,11 @@ msgid ""
 "leads to different workflows and different ways to form your games’ "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
+"**Cada motor de videojuegos es diferente y se ajusta a diferentes "
+"necesidades.** No sólo ofrecen un amplio rango de características, el diseño "
+"de cada motor es único. Esto lleva a diferentes flujos de trabajo y "
+"diferentes modos de construir la estructura de los juegos. Todo esto surge "
+"de las respectivas filosofías de diseño."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:11
 msgid ""
@@ -41,16 +46,25 @@ msgid ""
 "you need to try it out for yourself and understand its design and "
 "limitations."
 msgstr ""
+"En esta página está para ayudar a comprender cómo funciona Godot. comenzando "
+"con algunos de sus pilares fundamentales. Esta no es una lista de "
+"características disponibles ni una comparación de motores. Para saber si un "
+"motor es bueno para su proyecto, deberá probarlo por sí mismo y comprender "
+"su diseño y limitaciones."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:17
 msgid ""
 "Please watch `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
+"Por favor, vea `Discover Godot 3, the Free game engine <https://youtu."
+"be/4v3qge-3CqQ>`_ (la presentación está disponible en otros idiomas "
+"en`<https://github.com/GDquest/godot-3-presentation>`) si está buscando un "
+"resumen de las características del motor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:20
 msgid "Object-oriented design and composition"
-msgstr ""
+msgstr "Diseño orientado a objetos y composición"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:22
 msgid ""
@@ -58,6 +72,10 @@ msgid ""
 "system and Node hierarchy. It tries to stay away from strict programming "
 "patterns to offer an intuitive way to structure your game."
 msgstr ""
+"Godot adopta un diseño orientado a objetos desde el núcleo con su sistema "
+"flexible de escenas y jerarquía de nodos. Esto intenta mantenerlo lejos de "
+"patrones de programación estrictos para ofrecer un modo intuitivo de "
+"estructurar su juego."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:26
 msgid ""
@@ -67,10 +85,15 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
+"Godot permite **componer o agregar** escenas. Esto es como prefabs anidados: "
+"puedes crear una escena LuzIntermitente y una escena LamparaRota que usa "
+"LuzIntermitente. Luego crea una ciudad llena de LamparaRota. Cambie el color "
+"de la LuzIntermitente, grabe y todas las LamparaRota en la ciudad se "
+"actualizarán instantáneamente."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:33
 msgid "On top of that, you can **inherit** from any scene."
-msgstr ""
+msgstr "Además, puede **heredar** desde cualquier escena."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:35
 msgid ""
@@ -79,6 +102,10 @@ msgid ""
 "you’re free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
+"Una escena de Godot puede ser un Arma, un Personaje, un Item, una Puerta, un "
+"Nivel, parte de un nivel, cualquier cosa que quiera. Esto trabaja como una "
+"clase en código puro, excepto que se es libre de diseñarla usando el editor, "
+"utilizando sólo código o una mezcla de las dos."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:40
 msgid ""
@@ -88,10 +115,15 @@ msgid ""
 "update as well. It helps you build your projects so that their structure "
 "matches the game’s design."
 msgstr ""
+"Esto es diferente de los prefabs que se encuentran en distintos motores 3D, "
+"ya que se puede heredar y extender las escenas. Se podría crear un Mago que "
+"extienda un Personaje. Modifique el Personaje en el editor y el Mago se "
+"actualizará. Esto ayuda a construir proyectos así las estructuras se ajustan "
+"al diseño del juego."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:46
 msgid "|image0|"
-msgstr ""
+msgstr "|image0|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:48
 msgid ""
@@ -100,10 +132,15 @@ msgid ""
 "from their parents up to the Node class. Although the engine does feature "
 "components like collision shapes, they’re the exception, not the norm."
 msgstr ""
+"Note también que Godot ofrece diferentes tipos de objetos llamados nodos, "
+"cada uno con un propósito específico. Los nodos son parte de un árbol y "
+"siempre heredan de sus padres hacia arriba hasta la clase Node. Aunque el "
+"motor posee componentes como las figuras de colisión, esos son la excepción, "
+"no la regla."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:54
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:56
 msgid ""
@@ -111,10 +148,14 @@ msgid ""
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
+"Sprite es un Node2D, un CanvasItem y un Node. Todos estos tienen las "
+"propiedades y carecterísticas de sus clases padre, como transforms y la "
+"habilidad de dibujar figuras personalizadas o utilizar un shader "
+"personalizado."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:61
 msgid "All-inclusive package"
-msgstr ""
+msgstr "Paquete con todo incluído"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:63
 msgid ""
@@ -123,10 +164,14 @@ msgid ""
 "shader editor, a debugger, a profiler, the ability to hot-reload locally and "
 "on remote devices, etc."
 msgstr ""
+"Godot intenta proveer sus propias características para los usos más comunes. "
+"Tiene un espacio de trabajo dedicado a scripting, un editor de animaciones, "
+"un editor de tilemaps, un editor de shader, un depurador, un perfilador, la "
+"habilidad de recargar localmente y en dispositivos remotos, etc."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:68
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:70
 msgid ""
@@ -135,6 +180,10 @@ msgid ""
 "import plugin for it. Or you can create one, like the `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 msgstr ""
+"El objetivo es ofrecer un paquete completo para crear juegos y una buena "
+"experiencia de usuario continuada. Se pueden utilizar programas externos "
+"siempre que haya un plugin de importación para este. O puedes crear uno como "
+"el `Tiled Map Importer <https://github.com/vnen/godot-tiled-importer>`__."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:75
 msgid ""
@@ -143,6 +192,10 @@ msgid ""
 "developers and game designers, and they’re tightly integrated in the engine "
 "and the editor."
 msgstr ""
+"Esto es una de las razones por la que Godot ofrece su propio lenguaje de "
+"programación GDscript y VisualScript, junto con C#. Están diseñados para las "
+"necesidades de los desarrolladores y diseñadores de videojuegos, y están "
+"fuertemente integrados al motor y el editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:80
 msgid ""
@@ -150,6 +203,10 @@ msgid ""
 "types and offers a static-language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
+"GDscript permite escribir código simple usando una sintaxis similar a "
+"Python, detecta tipos y ofrece autocompletado de simialr calidad a lenguajes "
+"estáticos. Es también optimizado para código de juegos con tipos built-in "
+"como para vectores y colores."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:84
 msgid ""
@@ -157,10 +214,13 @@ msgid ""
 "languages like C, C++, Rust, or Python (using the Cython compiler) without "
 "recompiling the engine."
 msgstr ""
+"Note que con GDNative se puede escribir código de alta performance usando "
+"lenguajes compilados como C, C++, Rust o Python (usando el compilador "
+"Cython) sin recompilar el motor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:88
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:90
 msgid ""
@@ -168,6 +228,9 @@ msgid ""
 "the editor. You can drag and drop nodes or resources into the graph to "
 "create new code blocks.*"
 msgstr ""
+"*VisualScript es un lenguaje de programación basado en nodos que se integra "
+"al editor. Puedes arrastrar y soltar nodos o recursos dentro del grafo para "
+"crear nuevos bloques de código.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:94
 msgid ""
@@ -177,20 +240,27 @@ msgid ""
 "extend the editor’s functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
+"Notar que el area de trabajo 3D no tiene tantas herramientas como el 2D. "
+"Necesitará programas externos, add-ons para editar terrenos, animar "
+"personajes complejos, etc. Godot provee un API completa para extender la "
+"funcionalidad del editor usando código de juegos. Ver `The Godot editor is a "
+"Godot game`_ debajo."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:99
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:101
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually*"
 msgstr ""
+"*Un plugin editor de Máquina de Estados en Godot 2, por kubecz3k. Este "
+"permite manejar estados y transiciones visualmente*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:105
 msgid "Open-source"
-msgstr ""
+msgstr "Código abierto"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:107
 msgid ""
@@ -198,6 +268,10 @@ msgid ""
 "means all the technologies that ship with it have to be Free (as in freedom) "
 "as well. For the most part, they’re coded from the ground-up by contributors."
 msgstr ""
+"Godot ofrece un código base completamente abierto bajo la **licencia MIT**. "
+"Esto significa que todas las tecnologías que vienen con este deben ser "
+"también Libres (no sólo gratis). La mayor parte del código está creado por "
+"los que contribuyen."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:111
 msgid ""
@@ -206,6 +280,10 @@ msgid ""
 "Admob, or an FBX file importer. Any of these can come as third-party plugins "
 "instead."
 msgstr ""
+"Cualquiera puede asociar herramientas propietarias para las necesidades de "
+"su proyecto - pero no se distribuirán con el motor. Esto incluye NVVIDIA "
+"PhysX, Google Admob, o un importador de FBX. En cualquier caso, pueden "
+"llegar a conseguirse como plugins."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:116
 msgid ""
@@ -214,16 +292,22 @@ msgid ""
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
+"Por otra parte, tener un código base abierto significa que puede **aprender "
+"del motor y extenderlo** si lo desea. Puede también depurar juegos "
+"fácilmente ya que Godot imprimirá errores con un volcado de pila, aún si "
+"vienen del motor mismo."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:122
 msgid ""
 "This **does not affect the work you do with Godot** in any way: there’s no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
+"Esto **no afecta el modo en que trabajes con Godot** de ningún modo: no hay "
+"\"ataduras\" al motor o a ninguna cosa que hagas con este."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:127
 msgid "Community-driven"
-msgstr ""
+msgstr "Manejado por la comunidad"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:129
 msgid ""
@@ -232,6 +316,11 @@ msgid ""
 "drive the core updates. New features from the core developers often focus on "
 "what will benefit the most users first."
 msgstr ""
+"**Godot es hecho por su comunidad, para la comunidad y para todos los "
+"creadores de videojuegos** Es la necesidad de los usuarios y discusiones "
+"abiertas las que dirigen las actualizaciones fundamentales. Nuevas "
+"característias creadas por los desarrolladores principales normalmente se "
+"enfocan en beneficios para la mayoría primero."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:134
 msgid ""
@@ -241,10 +330,15 @@ msgid ""
 "improvements in all corners of the engine at the same time in every major "
 "release."
 msgstr ""
+"Dicho esto, aún con un puñado de desarrolladores principales trabajando a "
+"tiempo completo, el proyecto tiene más de 500 contribuyentes en este "
+"momento. Programadores benevolentes que trabajan en características que "
+"podrían necesitar ellos mismos, así que verás mejoras en todos los rincones "
+"del motor al mismo tiempo en cada versión mayor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:141
 msgid "The Godot editor is a Godot game"
-msgstr ""
+msgstr "El editor de Godot es un juego de Godot"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:143
 msgid ""
@@ -253,16 +347,24 @@ msgid ""
 "run game code in the editor. This means you can **use the same code** and "
 "scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
+"El editor de Godot funciona desde el motor de juego. Utiliza el propio "
+"sistema de UI del motor, puede recargar en vivo código y escenas cuando se "
+"prueban los proyectos, o ejecutar código de juego en el editor. Esto "
+"significa que puedes **usar el mismo código** y las mismas escenas para tus "
+"juegos, o **construir plugins y extender el editor.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:148
 msgid ""
 "This leads to a reliable and flexible UI system as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
+"Esto lleva a un sistema confiable y flexible para UI ya que es usado por el "
+"editor mismo. Con la palabra clave ``tool``, puedes ejecutar código de juego "
+"en el editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:153
 msgid ""
@@ -270,6 +372,9 @@ msgid ""
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
+"*RPG-in-a-Box es un editor RPG basado en voxels, hecho en Godot 2. Utiliza "
+"las herramientas de interfaz de Godot para su sistema de programación basado "
+"en dodos y para el resto de la interfaz.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:157
 msgid ""
@@ -278,10 +383,14 @@ msgid ""
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
+"Coloque la palabra clave ``tool`` al principio de un archivo de GDScript y "
+"se ejecutará en el editor. Esto permite importar y exportar plugins, crear "
+"plugins como editores de niveles personalizados, o crear scripts con los "
+"mismos nodos y API usada para los proyectos."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:163
 msgid "Separate 2D and 3D engines"
-msgstr ""
+msgstr "Motores 2D y 3D separados"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:165
 msgid ""
@@ -290,3 +399,7 @@ msgid ""
 "can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interface over "
 "your 3D world."
 msgstr ""
+"Godot ofrece motores de rendering 2D y 3D dedicados. Como resultado **la "
+"unidad base para 2D es en pixeles**. Aunque los motores sean separados, "
+"puedes mostrar 2D en 3D, 3D en 2D, y superponer 2D e interfaces en el mundo "
+"3D."

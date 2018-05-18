@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
-msgstr ""
+msgstr "Nodos y recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
 msgid ""
@@ -32,18 +32,27 @@ msgid ""
 "through them. There is another datatype that is equally important: :ref:"
 "`Resource <class_Resource>`."
 msgstr ""
+"Hasta ahora, los :ref:`Nodos <class_Node>` han sido el tipo de datos más "
+"importante en Godot, ya que la mayoría de los comportamientos y "
+"características del motor se implementan a través de ellos. Hay otro tipo de "
+"datos que es igualmente importante :ref:`Recursos <class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
 "Where *Nodes* focus on behaviors, such as drawing a sprite, drawing a 3D "
 "model, physics, GUI controls, etc,"
 msgstr ""
+"Donde los *Nodos* se enfocan en comportamientos como dibujar un sprite, "
+"dibujar un modelo 3D, física, controles GUI, etc,"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:18
 msgid ""
 "**Resources** are mere **data containers**. This means that they don't do "
 "any action nor process any information. Resources just contain data."
 msgstr ""
+"Los **Recursos** son simples **contenedores de datos**. Esto significa que "
+"no realizan ninguna acción ni procesan ninguna información. Los recursos "
+"sólo contienen datos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:22
 msgid ""
@@ -52,6 +61,10 @@ msgid ""
 "<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
 "<class_Font>`, :ref:`Translation <class_Translation>`, etc."
 msgstr ""
+"Ejemplos de recursos son :ref:`Texture <class_Texture>`, :ref:`Script "
+"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
+"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
+"<class_Font>`, :ref:`Translation <class_Translation>`, etc."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:32
 msgid ""
@@ -59,6 +72,9 @@ msgid ""
 "(png, jpg), a script (.gd) or pretty much anything, that file is considered "
 "a resource."
 msgstr ""
+"Cuando Godot guarda o carga (desde el disco) una escena (.tscn o.scn), una "
+"imagen (png, jpg), un script (.gd) o casi cualquier cosa, ese archivo se "
+"considera un recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:36
 msgid ""
@@ -68,6 +84,11 @@ msgid ""
 "corresponds with the fact that resources are just data containers, so there "
 "is no need to have them duplicated."
 msgstr ""
+"Cuando se carga un recurso desde el disco, **siempre se carga una vez**. "
+"Esto significa que, si hay una copia de ese recurso ya cargado en la "
+"memoria, intentar cargar el recurso de nuevo devolverá la misma copia una y "
+"otra vez. Esto se corresponde con el hecho de que los recursos son sólo "
+"contenedores de datos, por lo que no es necesario duplicarlos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:42
 msgid ""
@@ -77,22 +98,31 @@ msgid ""
 "nodes and resources can contain resources as properties. To make it a little "
 "more visual:"
 msgstr ""
+"Normalmente, cada objeto en Godot (Nodo, Recurso, o cualquier otra cosa) "
+"puede exportar propiedades, las propiedades pueden ser de muchos tipos (como "
+"un string, integer, Vector2, etc) y uno de esos tipos puede ser un recurso. "
+"Esto significa que tanto los nodos como los recursos pueden contener "
+"recursos como propiedades. Para hacerlo un poco más visual:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid "External vs built-in"
-msgstr ""
+msgstr "Externo vs built-in"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:53
 msgid ""
 "The resource properties can reference resources in two ways, *external* (on "
 "disk) or **built-in**."
 msgstr ""
+"Las propiedades del recurso pueden hacer referencia a los recursos de dos "
+"maneras, *externo* (en disco) o **integrado**."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:56
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
+"Para ser más específico, aquí tenemos :ref:`Texture <class_Texture>` en un "
+"nodo :ref:`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:61
 msgid ""
@@ -100,6 +130,9 @@ msgid ""
 "and edit the resources properties. One of the properties (path) shows where "
 "it comes from. In this case, it comes from a png image."
 msgstr ""
+"Haciendo click en el campo del recurso, permite ver y editar las "
+"propiedades. Una de las propiedades muestra desde dónde viene. En ese caso, "
+"viene de una imagen png."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:67
 msgid ""
@@ -107,6 +140,9 @@ msgid ""
 "resource. If the path property is erased (or it never had a path to begin "
 "with), it is considered a built-in resource."
 msgstr ""
+"Cuando el recurso proviene de un archivo, se considera un recurso *externo*. "
+"Si la propiedad path es eliminada (o nunca tuvo una ruta de inicio), se "
+"considera un recurso integrado."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:71
 msgid ""
@@ -118,26 +154,37 @@ msgid ""
 "loaded only once. That means, different Robi robot scenes instanced at the "
 "same time will still share the same image."
 msgstr ""
+"Por ejemplo, si la ruta \\`\"res://robi.png\"\\` es eliminada de la "
+"propiedad \"path\" en el ejemplo anterior, y la escena es grabada, el "
+"recurso se grabará dentro del archivo de escena .tscn, no referenciando más "
+"al \"robi.png\" externo. Sin embargo, aún guardada como built-in, aunque la "
+"escena sea instanciada muchas veces, el recurso será cargado sólo una vez. "
+"Esto significa que diferentes escenas del robot Robi pueden ser instanciadas "
+"al mismo tiempo y compartirán la imagen."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:80
 msgid "Loading resources from code"
-msgstr ""
+msgstr "Cargando recursos desde código"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:82
 msgid ""
 "Loading resources from code is easy. There are two ways to do it. The first "
 "is to use load(), like this:"
 msgstr ""
+"Cargar recursos desde código es simple. Hay dos modos de hacerlo, el primero "
+"es usar load(), de este modo:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter, because it loads the resource at compile-time."
 msgstr ""
+"El segundo modo es más óptimo, pero sólo funciona con una cadena constante "
+"como parámetro, porque carga el recurso en tiempo de compilación."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:116
 msgid "Loading scenes"
-msgstr ""
+msgstr "Cargando escenas"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:117
 msgid ""
@@ -145,12 +192,17 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. This means that "
 "the scene is packed inside a resource."
 msgstr ""
+"Las escenas también son recursos, pero hay una trampa. Las escenas guardadas "
+"en el disco son recursos del tipo :ref:`PackedScene <class_PackedScene>`. "
+"Esto significa que la escena está empaquetada dentro de un recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:121
 msgid ""
 "To obtain an instance of the scene, the method :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` must be used."
 msgstr ""
+"Para obtener una instancia de la escena, se debe usar el método :ref:"
+"`PackedScene.instance() <class_PackedScene_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:142
 msgid ""
@@ -158,6 +210,9 @@ msgid ""
 "(sets all the properties) and returns the root node of the scene, which can "
 "be added to any other node."
 msgstr ""
+"Este método crea nodos en la estructura de la escena, los configura (asigna "
+"las propiedades) y retorna el nodo raíz de la escena, el cual puede ser "
+"agregado a cualquier otro nodo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
 msgid ""
@@ -168,10 +223,17 @@ msgid ""
 "each time. It is important to remember that, as always, images, meshes, etc "
 "are all shared between the scene instances."
 msgstr ""
+"Este enfoque tiene muchas ventajas. Como la función :ref:`PackedScene."
+"instance() <class_PackedScene_instance>` es bastante rápida, agregar "
+"contenido extra a la escena puede hacerse de manera eficiente. Nuevos "
+"enemigos, balas, efectos, etc. pueden ser agregados o removidos rápidamente "
+"si tener que cargarlos nuevamente de  disco cada vez. Es importante recordar "
+"que, como siempre, imágenes, mallas, etc. son compartidas entre las "
+"instancias de escena."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:155
 msgid "Freeing resources"
-msgstr ""
+msgstr "Liberando recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:157
 msgid ""
@@ -180,6 +242,11 @@ msgid ""
 "most cases, Resources are contained in Nodes, scripts or other resources, "
 "when a node is removed or freed, all the children resources are freed too."
 msgstr ""
+"El recurso se extiende desde :ref:`Referencia <class_Reference>`. Como tal, "
+"cuando un recurso ya no está en uso, se liberará automáticamente. Dado que, "
+"en la mayoría de los casos, los Recursos están contenidos en Nodos, scripts "
+"u otros recursos, cuando un nodo es eliminado o liberado, todos los recursos "
+"hijos también son liberados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:164
 msgid "Scripting"
@@ -191,3 +258,6 @@ msgid ""
 "However, there isn't generally much of an advantage, as resources are just "
 "data containers."
 msgstr ""
+"Como cualquier objeto en Godot, no sólo nodos, Resources pueden contener "
+"scripts también. Sin embargo, no hay mucha ventaja ya que los recursos son "
+"sólo contenedores de datos."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,6 +137,10 @@ msgid ""
 "Therefore, a dummy class must be created to reference the proper Godot "
 "Server."
 msgstr ""
+"Ya que la clase Godot Server crea una instancia y la enlaza a un singleton "
+"estático, enlazar la clase podría no hacer referencia a la instancia "
+"correcta. Por lo tanto, se debe crear una clase dummy para hacer referencia "
+"al Servidor Godot apropiado."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:296
 msgid ""
@@ -155,10 +159,13 @@ msgid "Bind methods"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:343
+#, fuzzy
 msgid ""
 "The dummy class binds singleton methods to gdscript. In most cases, the "
 "dummy class methods wraps around."
 msgstr ""
+"La clase dummy une métodos singleton a gdscript. En la mayoría de los casos, "
+"los métodos de la clase dummy se usan."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:351
 msgid "Binding Signals"

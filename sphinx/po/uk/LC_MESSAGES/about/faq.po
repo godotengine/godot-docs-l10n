@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,8 @@ msgstr ""
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr ""
-"Ви можете модифікувати, (повторно) поширювати і змішувати Godot так, як це "
-"задовольняє ваше серце"
+"Ви можете модифікувати, поширювати і змішувати Godot так, як це задовольняє "
+"ваше серце"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
@@ -160,6 +160,8 @@ msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"Підтримується створення 32-х, та 64-х бітних виконуваних файлів, де це "
+"можливо, а 64-х - типові."
 
 #: ../../docs/about/faq.rst:53
 msgid ""
@@ -220,12 +222,17 @@ msgid ""
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"Також ведуться роботи, наприклад, над неофіційними прив'язками Godot до "
+"`Python <https://github.com/touilleMan/godot-python>`_ і `Nim <https://"
+"github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
 msgstr ""
+"GDScript? Навіщо використовувати власну мову скриптинґу замість обраної мною "
+"мови?"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -237,6 +244,14 @@ msgid ""
 "language in Godot (see list of supported options above), but we strongly "
 "encourage you to try it and see the benefits for yourself."
 msgstr ""
+"Коротка відповідь полягає в тому, що ми вважаємо, що додаткова складність як "
+"з вашої сторони (коли ви вперше вивчаєте Godot та GDScript), так із нашої "
+"сторони (технічне обслуговування) коштує більш інтегрованого та бездоганного "
+"досвіду щодо залучення додаткових користувачів з більш знайомими мовами "
+"програмування, які призводять до гіршого досвіду. Ми зрозуміємо, якщо ви "
+"бажаєте скористатися іншою мовою в Godot (див. список підтримуваних "
+"варіантів вище), але ми настійно рекомендуємо вам спробувати це та побачити "
+"переваги для себе."
 
 #: ../../docs/about/faq.rst:85
 msgid ""
@@ -245,6 +260,11 @@ msgid ""
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
+"GDScript призначений для інтеграції від фундаменту до шляху роботи Godot, "
+"більш ніж будь-яка інша мова, і є простим, і легким у вивченні. Це забирає "
+"щонайбільше день чи два, щоб зручно користуватися, і ви легко побачите "
+"переваги, як зробите це. Будь ласка докладіть зусиль, щоб вивчити GDScript, "
+"ви не пошкодуєте про це."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -253,6 +273,10 @@ msgid ""
 "but trying to use it instead of GDScript for an entire game is, in most "
 "cases, a waste of time."
 msgstr ""
+"Godot C++ API також є ефективним і простим у використанні (весь редактор "
+"Godot створено за допомогою цього API), а також чудовий інструмент для "
+"оптимізації частин проекту, але спроба використовувати його замість GDScript "
+"для всієї гри в більшості випадків , марна трата часу."
 
 #: ../../docs/about/faq.rst:96
 msgid ""
@@ -268,14 +292,17 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Більш детальну інформацію про те, як зручніше працювати з GDScript або "
+"динамічно типізованими мовами, можна знайти в посібнику :ref:"
+"`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:105
 msgid "For the more technically versed, proceed to the next item."
-msgstr ""
+msgstr "Для найбільш технічно досвідчених, переходьте до наступного пункту."
 
 #: ../../docs/about/faq.rst:108
 msgid "I don't believe you. What are the technical reasons for the item above?"
-msgstr ""
+msgstr "Я не вірю вам. Які технічні причини для вищезазначеного пункту?"
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"

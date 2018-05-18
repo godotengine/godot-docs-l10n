@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "Instanciar"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:7
 msgid "Introduction"
@@ -33,12 +33,21 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"Crear una escena simple y agregar nodos puede servir para proyectos "
+"pequeños, pero cuando un proyecto crece en tamaño y complejidad, el número "
+"de nodos se puede volver rápidamente inmanejable. Para abordar eso, Godot "
+"permite que sea separada en cualquier número de escenas. Esto provee una "
+"poderosa herramienta que ayuda a organizar los diferentes componentes de tu "
+"juego."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+"En :ref:`doc_scenes_and_nodes` has aprendido que una escena es una colección "
+"de nodos organizados en una estructura de árbol, con un simple nodo como "
+"raíz del árbol."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -46,32 +55,42 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"Puedes crear cuantas escenas quieras y grabarlas en el disco. Las escenas "
+"son grabadas de esta manera, llamadas \"Packed Scenes\" y tienen una "
+"extensión de archivo ``.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"Una vez que la escena ha sido guardada, se puede instanciar en otra escena "
+"como cualquier otro nodo."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr ""
+"En la imagen anterior, Scene B fue agregada a Scene A como una instancia."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing By Example"
-msgstr ""
+msgstr "Instanciando con ejemplos"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"Para aprender cómo funciona instanciar, comencemos descargando un proyecto "
+"de ejemplo: :download:`instancing.zip <files/instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"Descomprima el proyecto donde desee. Luego abra Godot y agregue este "
+"proyecto al administrador de proyectos usando el botón 'Importar':"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -79,6 +98,9 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"Navegue a la carpeta donde se extrajo el proyecto y abra el archivo "
+"\"project.godot\" que está dentro. Después de hacer esto, el proyecto nuevo "
+"aparecerá en la lista. Edite el proyecto presionando el botón 'Editar'."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -87,10 +109,15 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"Este proyecto contiene dos escenas: \"Ball.tscn\" y \"Main.tscn\". La escena "
+"ball usa un :ref:`RigidBody2D <class_RigidBody2D>` para otorgar un "
+"comportamiento físico mientras que la escena principal tiene una serie de "
+"obstáculos para que la bola colisione con ellos (usando :ref:`StaticBody2D "
+"<class_StaticBody2D>`)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "Abra la escena ``Main`` y luego seleccione el nodo raíz:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -98,6 +125,10 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"Queremos agregar la instancia de la escena ``Ball`` como hija de ``Main``. "
+"Click en el botón con forma de \"cadena\" (su texto emergente dice "
+"\"Instanciar un archivo desde escena como Nodo.\") y seleccione el archivo "
+"``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -105,14 +136,18 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"La bola se colocará en la esquina superior izquierda del área de pantalla "
+"(esto es ``(0, 0)`` en coordenadas de pantalla). Haz clic y arrastra la bola "
+"cerca de la parte superior central de la escena:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
 msgstr ""
+"Presione \"Play\" y vea la bola caer a la parte inferior de la pantalla:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple Instances"
-msgstr ""
+msgstr "Instancias múltiples"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -120,14 +155,17 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"Puede añadir tantas instancias como desee a una escena, ya sea usando el "
+"botón \"Instancia\" nuevamente, o haciendo clic en la instancia de la bola y "
+"presionando \"Duplicar\" (Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "Ejecute la escena de nuevo y todas las bolas caerán."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "Editar instancias"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
@@ -136,6 +174,10 @@ msgid ""
 "much more bouncy. Because the instanced balls are based on the saved scene, "
 "changes to that scene will affect all instances."
 msgstr ""
+"Abre la escena ``Ball`` y cambia la propiedad ``Bounce`` (elasticidad) en el "
+"inspector a `1`. Presione \"Play\" y vea que las escenas Ball instanciadas "
+"ahora son mucho más elásticas. Como las instancias están basadas en la "
+"escena guardada, los cambios a la escena afectarán todas las instancias."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
@@ -143,6 +185,9 @@ msgid ""
 "``0.5`` and then in the ``Main`` scene, select one of the instanced balls. "
 "Set its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"Puedes ajustar instancias individuales. Pon el valor de nuevo en ``0.5`` y "
+"en la escena ``Main``, selecciona una de las instancias. Asigna ``1`` a "
+"``Bounce`` y presiona \"Play\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
@@ -153,13 +198,21 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"Notar el botón gris de \"revertir\" que aparece junto a la propiedad "
+"modificada. Cuando este botón está presente, quiere decir que has modificado "
+"una propiedad en la escena instanciada cambiando su valor respecto de la "
+"escena guardada. Aunque esa propiedad sea modificada en la escena original, "
+"el valor modificado permanecerá. Presionando el botón para revertir "
+"restaurará la propiedad del valor en la escena guardada."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:112
 msgid "Conclusion"
-msgstr ""
+msgstr "Conclusión"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:114
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object."
 msgstr ""
+"Instanciar puede ser útil cuando quieres crear muchas copias de un mismo "
+"objeto."

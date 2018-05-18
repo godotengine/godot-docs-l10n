@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -350,7 +350,7 @@ msgstr ""
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 msgid "Transform"
-msgstr "Transformar"
+msgstr "Transform"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:344
 msgid ""
@@ -515,7 +515,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:635
 msgid "Or, alternatively as:"
-msgstr ""
+msgstr "O, de forma alternativa, como:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:652
 msgid "The Identity Basis has the following values:"
@@ -527,7 +527,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:682
 msgid "Rotation in 3D"
-msgstr ""
+msgstr "Rotación en 3D"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:684
 msgid ""
@@ -535,33 +535,44 @@ msgid ""
 "same), because rotation is an implicit 2D operation. To rotate in 3D, an "
 "*axis*, must be picked. Rotation, then, happens around this axis."
 msgstr ""
+"La rotación en 3D es más compleja que en 2D (traslation y scale son "
+"iguales), porque la rotación es una operación 2D implícita. Para rotar en "
+"3D, se debe seleccionar un *eje*. La rotación, entonces, ocurre alrededor de "
+"este eje."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:688
 msgid ""
 "The axis for the rotation must be a *normal vector*. As in, a vector that "
 "can point to any direction, but length must be one (1.0)."
 msgstr ""
+"El eje para la rotación debe ser un *vector normal*. Es decir, un vector que "
+"puede apuntar a cualquier dirección, pero la longitud debe ser uno (1.0)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:707
 msgid ""
 "To add the final component to the mix, Godot provides the :ref:`Transform "
 "<class_Transform>` type. Transform has two members:"
 msgstr ""
+"Para añadir el componente final a la mezcla, Godot proporciona el tipo :ref:"
+"`Transform <class_Transform>`. Transform tiene dos miembros:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:710
 msgid "*basis* (of type :ref:`Basis <class_Basis>`)"
-msgstr ""
+msgstr "*basis* (de tipo :ref:`Basis <class_Basis>`)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:711
 msgid "*origin* (of type :ref:`Vector3 <class_Vector3>`)"
-msgstr ""
+msgstr "*origin* (de tipo :ref:`Vector3 <class_Vector3>`)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:713
 msgid ""
 "Any 3D transform can be represented with Transform, and the separation of "
 "basis and origin makes it easier to work translation and rotation separately."
 msgstr ""
+"Cualquier transformación 3D puede ser representada con Transform, y la "
+"separación de la base y el origen hace más fácil trabajar el traslado y la "
+"rotación por separado."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:717
 msgid "An example:"
-msgstr ""
+msgstr "Un ejemplo:"

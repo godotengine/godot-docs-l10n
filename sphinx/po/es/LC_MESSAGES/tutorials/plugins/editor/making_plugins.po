@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,6 +43,10 @@ msgid ""
 "will be a custom node that you can add to any scene in the project and the "
 "other will be a custom dock added to the editor."
 msgstr ""
+"Este tutorial te guiará a través de la creación de dos sencillos plugins "
+"para que puedas entender cómo funcionan y ser capaz de desarrollar los tuyos "
+"propios. El primero será un nodo personalizado que puede añadir a cualquier "
+"escena del proyecto y el otro será un panel personalizado añadido al editor."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:22
 msgid "Creating a plugin"
@@ -170,7 +174,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:154
 msgid "A custom dock"
-msgstr ""
+msgstr "Un panel personalizado"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:156
 msgid ""
@@ -179,6 +183,10 @@ msgid ""
 "scenes based on control, so how to create them is not far beyond your "
 "knowledge."
 msgstr ""
+"Quizás necesites ampliar el editor y añadir herramientas que estén siempre "
+"disponibles. Una forma fácil de hacerlo es añadir un nuevo panel con un "
+"plugin. Los Paneles son sólo escenas basadas en el control, por lo que la "
+"forma de crearlos no está muy lejos de tu conocimiento."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:160
 msgid ""
@@ -200,6 +208,10 @@ msgid ""
 "of such dock. This is nothing more than a standard Godot scene. So you can "
 "create a new scene in the editor and start creating it."
 msgstr ""
+"Dado que estamos intentando añadir un nuevo panel personalizado, necesitamos "
+"crear el contenido de dicho panel. Esto no es más que una escena estándar de "
+"Godot. Así que puedes crear una nueva escena en el editor y empezar a "
+"hacerlo."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:180
 msgid ""
@@ -209,6 +221,11 @@ msgid ""
 "name that appears on the dock tab, so be sure to put a descriptive but short "
 "one. Don't forget to add a text to your button."
 msgstr ""
+"Para un panel de editor, es obligatorio que la raíz de la escena sea un :ref:"
+"`Control <class_Control>` o una de sus clases hijas. Para este tutorial, "
+"puedes hacer un solo botón. El nombre del nodo raíz también será el nombre "
+"que aparezca en la pestaña panel, así que asegúrate de poner uno descriptivo "
+"pero corto. No olvides añadir un texto a tu botón."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:188
 msgid "Save this scene as ``my_dock.tscn``."
@@ -221,6 +238,10 @@ msgid ""
 "<class_EditorPlugin_add_control_to_dock>` from the :ref:`EditorPlugin "
 "<class_EditorPlugin>` class."
 msgstr ""
+"Ahora necesitas seleccionar la escena que creaste y añadirla como un panel "
+"en el editor. Para ello puedes confiar en la función :ref:"
+"`add_control_to_dock() <class_EditorPlugin_add_control_to_dock>` de la clase "
+"`EditorPlugin <class_EditorPlugin>`."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:195
 msgid ""
@@ -229,12 +250,18 @@ msgid ""
 "important that you remember to **remove the dock** when the plugin is "
 "deactivated. The code can be like this::"
 msgstr ""
+"El código es sencillo, necesitas seleccionar una posición de panel para "
+"añadirlo y tener un control para añadir (que es la escena que acabas de "
+"crear). También es importante que recuerdes **quitar el panel** cuando el "
+"plugin está desactivado. El código puede ser así:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:220
 msgid ""
 "While the dock position is chosen when adding it, the user is free to move "
 "it and save the layout with the dock in any position."
 msgstr ""
+"Mientras que la posición del panel se determina al añadirlo, el usuario es "
+"libre de moverlo y guardar el diseño con el panel en cualquier posición."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:224
 msgid "Checking the results"
@@ -255,6 +282,10 @@ msgid ""
 "visible, even before you close the settings window. You should have a custom "
 "dock:"
 msgstr ""
+"En la columna *Estado*, puedes ver que el plugin está inactivo. Por lo "
+"tanto, debe hacer clic en el estado para seleccionar *Activo*. El panel debe "
+"ser visible inmediatamente, incluso antes de cerrar la ventana de "
+"configuración. Deberías tener un panel personalizado:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:241
 msgid "Going beyond"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,58 +42,64 @@ msgid ""
 "* Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but uses significantly more processor to play back."
 msgstr ""
+"Cada uno tiene diferentes ventajas. Los archivos wav usan datos sin formato "
+"o compresión ligera, requieren una pequeña cantidad de CPU para reproducirse "
+"(este formato es bueno para cientos de voces simultáneas), pero ocupan un "
+"espacio significativo. Los archivos Ogg Vorbis usan una compresión mayor que "
+"da como resultado un tamaño de archivo mucho más pequeño, pero usa "
+"significativamente más procesador para reproducirse."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:19
 msgid "Here is a comparative chart."
-msgstr ""
+msgstr "Aquí hay una tabla comparativa."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "Format"
-msgstr "Format"
+msgstr "Formato"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "1 Second of Audio"
-msgstr ""
+msgstr "1 Segundo de Audio"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:24
 msgid "WAV 24 bits, 96 kHz, Stereo"
-msgstr ""
+msgstr "WAV 24 bits, 96 kHz, Stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:24
 msgid "576kb"
-msgstr ""
+msgstr "576kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:26
 msgid "WAV 16 bits, 44 kHz, Mono"
-msgstr ""
+msgstr "WAV 16 bits, 44 kHz, Mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:26
 msgid "88kb"
-msgstr ""
+msgstr "88kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "WAV 16 bits, IMA-ADPCM, Mono"
-msgstr ""
+msgstr "WAV 16 bits, IMA-ADPCM, Mono"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:28
 msgid "22kb"
-msgstr ""
+msgstr "22kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:30
 msgid "OGG 128kbps, Stereo"
-msgstr ""
+msgstr "OGG 128kbps, Stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:30
 msgid "16kb"
-msgstr ""
+msgstr "16kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:32
 msgid "OGG Vorbis 96kbps, Stereo"
-msgstr ""
+msgstr "OGG Vorbis 96kbps, Stereo"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:32
 msgid "12kb"
-msgstr ""
+msgstr "12kb"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:35
 msgid ""
@@ -101,10 +107,13 @@ msgid ""
 "especially those that are short and repetitive, and OGG for music, voice and "
 "long sound effects."
 msgstr ""
+"En general, lo que se recomienda es usar WAV para la mayoría de los efectos "
+"de sonido, especialmente aquellos que son cortos y repetitivos, y OGG para "
+"música, voz y efectos de sonido largos."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:38
 msgid "Best Practices"
-msgstr ""
+msgstr "Buenas prácticas"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
 msgid ""

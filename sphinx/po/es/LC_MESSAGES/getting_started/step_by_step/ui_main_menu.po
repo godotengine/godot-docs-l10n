@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr ""
+msgstr "Diseñar una pantalla de título"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
 msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
+"En los próximos dos tutoriales, crearás dos escenas UI (interfaz de usuario) "
+"paso a paso utilizando el sistema de UI del motor:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu"
-msgstr ""
+msgstr "El menú principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
 msgid "A game UI with a health bar, energy bar, bomb and money counters"
@@ -57,7 +59,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
-msgstr ""
+msgstr "Cómo diseñar tu UI del juego"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:35
 msgid ""
@@ -115,6 +117,8 @@ msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes"
 msgstr ""
+"Crea escenas de plantilla para componentes reutilizables y crea componentes "
+"específicos que heredan de tus escenas base"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:71
 msgid ""
@@ -195,7 +199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:120
 msgid "Prepare the Main Menu scene"
-msgstr ""
+msgstr "Preparar la escena del Menú Principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:122
 msgid ""
@@ -211,6 +215,12 @@ msgid ""
 "interfaces, as you often need padding around the UI. Press ``Meta+S`` to "
 "save the scene to the disk. Name it *MainMenu*."
 msgstr ""
+"Tenemos que añadir un nodo raíz antes de poder guardar la escena. La raíz de "
+"tu interfaz debe ser el container o elemento más cercano. En este caso es un "
+"``MarginContainer``. ``MarginContainer`` es un buen punto de partida para la "
+"mayoría de las interfaces, ya que a menudo necesita relleno alrededor de la "
+"interfaz de usuario. Presiona ``Meta+S`` para guardar la escena en el disco. "
+"Nómbrala *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:131
 msgid ""
@@ -221,29 +231,32 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:135
 msgid "Margin Right: *120*"
-msgstr ""
+msgstr "Margin Right: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
 msgid "Margin Top: *80*"
-msgstr ""
+msgstr "Margin Top: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:137
 msgid "Margin Left: *120*"
-msgstr ""
+msgstr "Margin Left: *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:138
 msgid "Margin Bottom: *80*"
-msgstr ""
+msgstr "Margin Bottom: *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:140
 msgid ""
 "We want the container to fit the window. In the Viewport, open the "
 "``Layout`` menu and select the last option, ``Full Rect``."
 msgstr ""
+"Queremos que el container quepa en la ventana. En la ventana de "
+"visualización, abre el menú ``Disposición`` y selecciona la última opción, "
+"``Full Rect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:144
 msgid "Add the UI sprites"
-msgstr ""
+msgstr "Añadir los sprites de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
 msgid ""
@@ -253,19 +266,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "The title, or logo"
-msgstr ""
+msgstr "El título o logo"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
 msgid "The three text options, as individual nodes"
-msgstr ""
+msgstr "Las tres opciones de texto, como nodos individuales"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
 msgid "The version note"
-msgstr ""
+msgstr "Las notas de la versión"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
 msgid "And the main menu’s illustration"
-msgstr ""
+msgstr "Y la ilustración del menú principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:154
 msgid ""
@@ -284,7 +297,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid "The file browser lets you find and load textures"
-msgstr ""
+msgstr "El navegador de archivos te permite encontrar y cargar texturas"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
 msgid ""
@@ -296,17 +309,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
 msgid "The six nodes, with textures loaded"
-msgstr ""
+msgstr "Los seis nodos, con texturas cargadas"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
+"Si quieres apoyar la localización en tu juego, usa ``Labels`` para opciones "
+"de menú en lugar de ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:182
 msgid "Add containers to place UI elements automatically"
-msgstr ""
+msgstr "Añade contenedores para colocar elementos de UI automáticamente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
 msgid ""
@@ -320,6 +335,17 @@ msgid ""
 "as it has children. Although you can deactivate the split container's resize "
 "behaviour, I recommend to favour box containers."
 msgstr ""
+"Nuestro menú principal tiene algún margen alrededor de los bordes de la "
+"pantalla. Está dividido en dos partes: a la izquierda, tiene el logotipo y "
+"las opciones del menú. A la derecha, tienes los personajes. Podemos utilizar "
+"uno de dos containers para conseguirlo: ``HSplitContainer`` o "
+"``HBoxContainer``. Los split containers dividen el área en dos: un lado "
+"izquierdo y un lado derecho o un lado superior y un lado inferior. También "
+"permiten al usuario cambiar el tamaño de las áreas izquierda y derecha "
+"mediante una barra interactiva. Por otro lado, ``HBoxContainer`` simplemente "
+"se divide en tantas columnas como hijos tenga. Aunque se puede desactivar el "
+"comportamiento de redimensionamiento del split container, se recomienda "
+"utilizar los box containers."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:195
 msgid ""
@@ -345,11 +371,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
 msgid "Containers automatically place and resize textures"
-msgstr ""
+msgstr "Los contenedores colocan y redimensionan las texturas automáticamente"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "We're left with two problems to solve:"
-msgstr ""
+msgstr "Nos quedan dos problemas por resolver:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "The characters on the right aren't centered"
@@ -384,11 +410,20 @@ msgid ""
 "and ``Options``, and drag and drop them inside the new ``VBoxContainer``. "
 "The UI's layout should barely change, if at all."
 msgstr ""
+"Para espaciar las opciones del menú y el logotipo a la izquierda, usaremos "
+"un último container y sus size flags. Selecciona el ``VBoxContainer`` y "
+"pulsa ``Meta+A`` para añadir un nuevo nodo dentro de él. Añade un segundo "
+"``VBoxContainer`` y llámalo \"MenuOptions\". Selecciona las tres opciones "
+"del menú, ``Continue``, ``NewGame`` y ``Options``, y arrástralas y suéltalas "
+"dentro del nuevo ``VBoxContainer``. El diseño de la UI apenas debería "
+"cambiar, si es que lo hace."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:241
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr ""
+"Coloca el nuevo container entre los otros dos nodos para mantener la "
+"disposición de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
 msgid ""
@@ -399,6 +434,13 @@ msgid ""
 "check ``Expand``. The container expands to take all the available vertical "
 "space. But it respects its neighbors, the ``Logo`` and ``Version`` elements."
 msgstr ""
+"Ahora que hemos agrupado las opciones del menú, podemos decirle a su "
+"container que se expanda para que ocupe el mayor espacio vertical posible. "
+"Selecciona el nodo ``MenuOptions``. En el Inspector, ve hacia abajo a la "
+"categoría ``Size Flags``. Haz clic en el campo a la derecha de la propiedad "
+"``Vertical`` y activa ``Expand``. El container se expande para ocupar todo "
+"el espacio vertical disponible. Pero respeta a sus prójimos, los elementos "
+"```Logo`` y ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:252
 msgid ""
@@ -421,12 +463,13 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:267
 msgid "The final interface"
-msgstr ""
+msgstr "La interfaz final"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:269
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
+"Sin una sola línea de código, tenemos un menú principal preciso y responsivo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
 msgid ""
@@ -450,6 +493,11 @@ msgid ""
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
+"El orden en el que se anida es importante. Para ver si tu UI se adapta bien "
+"a las diferentes relaciones de pantalla, selecciona el nodo raíz, pulsa la "
+"tecla Q para activar el Modo de Selección, selecciona el container y "
+"arrastra una de las esquinas del container para redimensionarlo. Los "
+"componentes de la UI deben fluir dentro del mismo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:290
 msgid ""

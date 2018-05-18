@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
 msgid "Importing Images"
-msgstr ""
+msgstr "Importar imágenes"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
 msgid "Why importing them?"
-msgstr ""
+msgstr "¿Por qué importarlas?"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid ""
@@ -31,16 +31,21 @@ msgid ""
 "imported. The reason behind this is the large amount of configuration "
 "parameters that image files can be imported with."
 msgstr ""
+"En Godot 3+, los archivos de imagen ya no son recursos nativos y deben "
+"importarse. La razón de esto es la gran cantidad de parámetros de "
+"configuración con los que se pueden importar los archivos de imagen."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
 "This small tutorial will explain what these parameters are and how to best "
 "make use of them."
 msgstr ""
+"Este tutorial explicará cuáles son estos parámetros y cómo hacer mejor uso "
+"de ellos."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:17
 msgid "Importing Textures"
-msgstr ""
+msgstr "Importar texturas"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:19
 msgid ""
@@ -48,14 +53,17 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
+"El comportamiento predeterminado en Godot es importar imágenes como "
+"texturas. Las texturas se almacenan en la memoria de video y no se puede "
+"acceder directamente. Esto es lo que hace que sean eficientes."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
-msgstr ""
+msgstr "Hay múltiples opciones de importación :"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
 msgid "Compression:"
-msgstr ""
+msgstr "Compresión:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
 msgid ""
@@ -63,10 +71,13 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
+"Las imágenes son uno de los recursos que más ocupan en un juego. Para "
+"manejarlos de manera eficiente, se necesita comprimirlos. Godot ofrece "
+"varios métodos de compresión, dependiendo de como se usen."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid "Compress Mode"
-msgstr ""
+msgstr "Modos de compresión"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
 msgid ""
@@ -74,6 +85,10 @@ msgid ""
 "File on disk is reduced and video memory usage is also reduced considerably. "
 "For 3D, it may present unwanted artifacts, though."
 msgstr ""
+"Compresión VRAM: este es el modo de compresión más común para los recursos "
+"3D. El tamaño del archivo en el disco se reduce y el uso de la memoria de "
+"video también se reduce considerablemente. Para 3D, sin embargo, se pueden "
+"obtener objetos no deseados."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
 msgid ""
@@ -82,6 +97,10 @@ msgid ""
 "decent. It will use considerably more amount of video memory than VRAM, "
 "though."
 msgstr ""
+"Compresión sin pérdida: esta es la compresión más común para los recursos en "
+"2D. Muestra las imágenes sin ningún tipo de defecto, y la compresión en el "
+"disco es decente. Sin embargo, usará una cantidad considerablemente mayor de "
+"memoria de video que VRAM."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid ""
@@ -89,34 +108,42 @@ msgid ""
 "can be a great choice. It has some artifacting, but less than VRAM and the "
 "file size is almost a tenth of Lossless."
 msgstr ""
+"Compresión con pérdidas: para juegos con muchos recursos grandes en 2D, la "
+"compresión con pérdida puede ser una buena opción. Presenta algunos "
+"defectos, pero menos que la compresión VRAM y el tamaño del archivo es casi "
+"una décima parte de la compresión sin pérdidas."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:42
 msgid ""
 "Uncompressed: Only useful for formats that can't be compressed (like, raw "
 "float)."
 msgstr ""
+"Sin compresión: Sólo es útil para archivos de formatos que no se pueden "
+"comprimir (como raw float)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:44
 msgid ""
 "In this table, each of the four options are described together with their "
 "advantages and disadvantages ( |good| = Best, |bad| =Worst ):"
 msgstr ""
+"En esta tabla, se describen cada una de las cuatro opciones junto con sus "
+"ventajas y desventajas (|good| = Mejor, |bad| = Peor):"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid "Uncompressed"
-msgstr ""
+msgstr "Sin comprimir"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid "Compress Lossless (PNG)"
-msgstr ""
+msgstr "Compresión sin pérdida (PNG)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid "Compress Lossy (WebP)"
-msgstr ""
+msgstr "Compresión con pérdidas (WebP)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:48
 msgid "Compress VRAM"
-msgstr ""
+msgstr "Compresion VRAM"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Description"
@@ -124,86 +151,86 @@ msgstr "Descripción"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as raw pixels"
-msgstr ""
+msgstr "Guardado como pixeles sin procesar"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as PNG"
-msgstr ""
+msgstr "Guardado como PNG"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as WebP"
-msgstr ""
+msgstr "Guardado como WebP"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as S3TC/BC,PVRTC/ETC, depending on platform"
-msgstr ""
+msgstr "Guardado como S3TC/BC,PVRTC/ETC, según plataforma"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "Size on Disk"
-msgstr ""
+msgstr "Tamaño en disco"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "|bad| Large"
-msgstr ""
+msgstr "|bad| Grande"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "|regular| Small"
-msgstr ""
+msgstr "|regular| Pequeño"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "|good| Very Small"
-msgstr ""
+msgstr "|good| Muy pequeño"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "Memory Usage"
-msgstr ""
+msgstr "Uso de la memoria"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "|good| Small"
-msgstr ""
+msgstr "|good| Pequeña"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 msgid "Performance"
-msgstr ""
+msgstr "Rendimiento"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|regular| Normal"
-msgstr ""
+msgstr "|regular| Normal"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:56
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|good| Fast"
-msgstr ""
+msgstr "|good| Rápido"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "Quality Loss"
-msgstr ""
+msgstr "Pérdida de calidad"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|good| None"
-msgstr ""
+msgstr "|good| Nada"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|regular| Slight"
-msgstr ""
+msgstr "|regular| Leve"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:58
 msgid "|bad| Moderate"
-msgstr ""
+msgstr "|bad| Regular"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "Load Time"
-msgstr ""
+msgstr "Tiempo de carga"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:60
 msgid "|bad| Slow"
-msgstr ""
+msgstr "|bad| Lenta"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:70
 msgid "HDR Mode"
-msgstr ""
+msgstr "Modo HDR"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:72
 msgid ""
@@ -213,16 +240,23 @@ msgid ""
 "Godot 2.x. Modern PCs support the BC6H VRAM format, but there are still "
 "plenty that do not."
 msgstr ""
+"Godot admite texturas de alto rango dinámico (como .HDR o .EXR). Estos son "
+"principalmente útiles como cielos panoramicos equirectanculares de alto "
+"rango dinámico (Internet tiene mucho de si los buscas), que reemplazan a "
+"Cubemaps en Godot 2.x. Los PC modernos admiten el formato BC6H VRAM, pero "
+"aún hay muchos que no lo hacen."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
 msgid ""
 "If you want Godot to ensure full compatibility in for kind of textures, "
 "enable the \"Force RGBE\" option."
 msgstr ""
+"Si quieres que Godot garantice la compatibilidad completa para todo tipo de "
+"texturas, activa la opción \"Forzar RGBE\"."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
 msgid "Normal Map"
-msgstr ""
+msgstr "Mapa de Normales"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
 msgid ""
@@ -234,20 +268,30 @@ msgid ""
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
+"Cuando se utiliza una textura como mapa de normales, solo se requieren los "
+"canales rojo y verde. Dado que los algoritmos de compresión de texturas "
+"regulares producen objetos que no se ven tan bien en los mapas normales, el "
+"formato de compresión RGTC es el más adecuado para estos datos. Al forzar "
+"esta opción a \"Habilitar\", Godot importará la imagen como RGTC comprimida. "
+"De forma predeterminada, se establece en \"Detectar\", lo que significa que "
+"si la textura se utiliza alguna vez como un mapa normal, se cambiará a "
+"\"Activado\" y se volverá a importar automáticamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
 msgid "Flags"
-msgstr ""
+msgstr "Indicadores"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:88
 msgid ""
 "There are plenty of settings that can be toggled when importing an image as "
 "a texture, depending on the use case."
 msgstr ""
+"Hay una gran cantidad de configuraciones que se pueden alternar cuando se "
+"importa una imagen como una textura, dependiendo de cada caso."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:91
 msgid "Repeat"
-msgstr ""
+msgstr "Repetición"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:93
 msgid ""
@@ -255,10 +299,14 @@ msgid ""
 "disabled in 2D). It makes UV coordinates going beyond the 0,0 - 1,1 range to "
 "\"loop\". Repeating can optionally be set to mirrored mode."
 msgstr ""
+"Esta configuración se usa comúnmente en 3D y no en 2D (por lo tanto, "
+"generalmente está desactivada en 2D). Hace que las coordenadas UV vayan más "
+"allá del rango de 0,0 - 1,1 para \"bucle\". La repetición puede configurarse "
+"opcionalmente en modo reflejado."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:97
 msgid "Filter"
-msgstr ""
+msgstr "Filtro"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:99
 msgid ""
@@ -267,10 +315,15 @@ msgid ""
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
 msgstr ""
+"Cuando los píxeles se vuelven más grandes que los píxeles de la pantalla, "
+"estas opciones permiten la interpolación lineal entre ellos. El resultado es "
+"una textura más suave (menos pixelada). Esta configuración se puede usar "
+"comúnmente en 2D y 3D, pero generalmente está desactivada al hacer juegos "
+"pixelados."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Mipmaps"
-msgstr ""
+msgstr "Mipmaps"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:105
 msgid ""
@@ -279,40 +332,51 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
+"Cuando los píxeles se vuelven más pequeños que la pantalla, aparecen los "
+"mipmaps. Esto ayuda a reducir el efecto granulado al reducir las texturas. "
+"Tenga en cuenta que, en hardware antiguo (GLES2, principalmente móvil), "
+"existen algunos requisitos para usar mipmaps:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:108
 msgid "Texture width and height must be powers of 2"
-msgstr ""
+msgstr "La altura y anchura de la textura deben ser potencias de 2"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:109
 msgid "Repeat must be enabled"
-msgstr ""
+msgstr "Repetir debe estar activada"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:111
 msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
+"Ten en cuenta lo anterior al hacer juegos y aplicaciones para móviles, "
+"quiere la compatibilidad total y necesita utilizar mipmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid ""
 "When doing 3D, mipmap should be turned on as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
+"Al hacer 3D, debe activarse mipmaps ya que también mejora el rendimiento "
+"(las versiones más pequeñas de la textura se utilizan para objetos más "
+"alejados)."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:116
 msgid "Anisotropic"
-msgstr ""
+msgstr "Anisótropo"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:118
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurryness."
 msgstr ""
+"Cuando las texturas son casi paralelas a la vista (como los suelos), esta "
+"opción les permite tener más detalles al reducir la borrosidad."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid "SRGB"
-msgstr ""
+msgstr "SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:123
 msgid ""
@@ -321,19 +385,25 @@ msgid ""
 "look correct. When set to \"Detect\" mode, the texture will be marked as "
 "SRGB when used in albedo channels."
 msgstr ""
+"Godot usa espacio de color lineal cuando renderiza 3D. Las texturas mapeadas "
+"a canales de albedo o de detalles necesitan tener esta opción activada para "
+"que los colores se vean correctamente. Cuando se ajusta en el modo \"Detectar"
+"\", la textura se marcará como SRGB cuando se utilice en canales de albedo."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:127
 msgid "Process"
-msgstr ""
+msgstr "Procesos"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:129
 msgid ""
 "Some special processes can be applied to images when importe as texture."
 msgstr ""
+"Se pueden aplicar algunos procesos especiales a las imágenes cuando se "
+"importan como textura."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:132
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "Fix Alpha Border"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:134
 msgid ""
@@ -341,16 +411,21 @@ msgid ""
 "transparency to non transparency. It helps mitigate the outline effect when "
 "exporting images from Photoshop and the likes."
 msgstr ""
+"Esto coloca píxeles del mismo color circundante pasando de transparente a no "
+"transparente. Ayuda a mitigar el efecto de contorno al exportar imágenes "
+"desde Photoshop y similares."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:139
 msgid ""
 "It's a good idea to leave it on by default, unless specific values are "
 "needed."
 msgstr ""
+"Es una buena idea dejarlo activado por defecto, a menos que se necesiten "
+"valores específicos."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:142
 msgid "Premultiplied Alpha"
-msgstr ""
+msgstr "Premult Alpha"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:144
 msgid ""
@@ -359,10 +434,14 @@ msgid ""
 "mind that a material will need to be created that uses the PREMULT ALPHA "
 "blend mode on canvas items that need it."
 msgstr ""
+"Una alternativa para arreglar bordes oscurecidos es usar un canal alfa "
+"premultiplicado. Al habilitar esta opción, la textura se convertirá a este "
+"formato. Tenga en cuenta que será necesario crear un material que utilice el "
+"modo de mezcla PREMULT ALPHA en los elementos del lienzo que lo necesiten."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:148
 msgid "HDR as SRGB"
-msgstr ""
+msgstr "HDR como SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
 msgid ""
@@ -370,10 +449,13 @@ msgid ""
 "not use them but, in the worst case, toggling this option on will make them "
 "look right."
 msgstr ""
+"Algunos archivos HDR están rotos y contienen datos de color SRGB. Se "
+"aconseja no utilizarlos, pero, en el peor de los casos, alternar esta opción "
+"los hará parecer correctos."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:154
 msgid "Detect 3D"
-msgstr ""
+msgstr "Detectar 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:156
 msgid ""
@@ -383,3 +465,9 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
+"Esta opción hace que Godot tenga en cuenta cuándo una textura (que se "
+"importa para 2D como valor predeterminado) se usa en 3D. Si esto sucede, la "
+"configuración se cambia para que los indicadores de textura sean más "
+"amigables con 3D (los mipmaps, filtro y repetición se habilitan y la "
+"compresión se cambia a VRAM). La textura también se reimporta "
+"automáticamente."

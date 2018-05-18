@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,12 +176,17 @@ msgid ""
 "ref:`HSlider <class_HSlider>` nodes so their values line up with the mouse "
 "and joypad sensitivity in the singleton."
 msgstr ""
+"Luego tenemos un singleton, llamado ``Globals``. A continuación establecemos "
+"los valores para los nodos :ref:`HSlider <class_HSlider>` de forma que sus "
+"valores se alineen con la sensibilidad del ratón y el joypad en el singleton."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:152
 msgid ""
 "We have not made the ``Globals`` singleton yet, so don't worry! We're going "
 "to make it soon!"
 msgstr ""
+"Aún no hemos hecho el singleton ``Globals``, así que no te preocupes! ¡Vamos "
+"a hacerlo pronto!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:156
 msgid "In ``start_menu_pressed``, we check to see which button is pressed."
@@ -214,10 +219,15 @@ msgid ""
 "change nodes using it's ``load_new_scene`` function, passing in the file "
 "path of the scene we're wanting to change to."
 msgstr ""
+"Si se pulsa uno de los botones de cambio de escena, primero llamamos "
+"``set_mouse_and_joypad_sensitivity`` por lo que nuestro singleton tiene los "
+"valores de los nodos :ref:`HSlider <class_HSlider>`. Luego le decimos al "
+"singleton que cambie los nodos usando su función ``load_new_scene``, pasando "
+"la ruta del archivo de la escena que queremos cambiar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:169
 msgid "Don't worry about the singleton, we'll get there soon!"
-msgstr ""
+msgstr "No te preocupes por el singleton ¡Llegaremos pronto!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:173
 msgid ""
@@ -244,6 +254,8 @@ msgstr ""
 msgid ""
 "First we get the ``Globals`` singleton and assign it to a local variable."
 msgstr ""
+"Primero obtenemos el singleton ``Globals`` y lo asignamos a una variable "
+"local."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:187
 msgid ""
@@ -254,13 +266,16 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:190
 msgid "Making the ``Globals`` singleton"
-msgstr ""
+msgstr "Haciendo el singleton ``Globals``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:192
 msgid ""
 "Now, for this all to work we need to create the ``Globals`` singleton. Make "
 "a new script in the ``Script`` tab and call it ``Globals.gd``."
 msgstr ""
+"Ahora, para que todo esto funcione necesitamos crear el singleton "
+"``Globals``. Crea un nuevo script en la pestaña ``Script`` y llámalo "
+"``Globals.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:194
 msgid "Add the following to ``Globals.gd``."
@@ -324,18 +339,24 @@ msgid ""
 "This will make ``Globals.gd`` a singleton/autoload script, which will allow "
 "us to access it from anywhere in any scene."
 msgstr ""
+"Esto hará de ``Globals.gd`` un script singleton/autoload, que nos permitirá "
+"acceder a él desde cualquier lugar en cualquier escena."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:231
 msgid ""
 "For more information on singleton/autoload scripts, see :ref:"
 "`doc_singletons_autoload`."
 msgstr ""
+"Para más información sobre scripts singleton/autoload, ve :ref:"
+"`doc_singletons_autoload`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:233
 msgid ""
 "Now that ``Globals.gd`` is a singleton/autoload script, you can test the "
 "main menu!"
 msgstr ""
+"Ahora que ``Globals.gd`` es un script singleton/autoload ¡puedes probar el "
+"menú principal!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:235
 msgid ""
@@ -423,10 +444,13 @@ msgid "to this instead:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:294
+#, fuzzy
 msgid ""
 "This will call a new function in our singleton called ``set_debug_display``, "
 "so let's add that next!"
 msgstr ""
+"Esto llamará a una nueva función en nuestra llamada singleton "
+"``set_debug_display`` ¡así que agreguemos eso a continuación!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:298
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:386
@@ -467,6 +491,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:330
+#, fuzzy
 msgid ""
 "When adding nodes to a singleton/autoload, you have to be careful not to "
 "lose reference to any of the child nodes. This is because nodes will not be "
@@ -474,6 +499,11 @@ msgid ""
 "problems if you are instancing/spawning lots of nodes and are not freeing "
 "them."
 msgstr ""
+"Al añadir nodos a un singleton/autoload, debe tener cuidado de no perder la "
+"referencia a ninguno de los nodos hijos. Esto se debe a que los nodos no "
+"serán liberados/destruidos cuando cambies de escena, lo que significa que "
+"puedes encontrarte con problemas de memoria si estás instanciando/generando "
+"muchos nodos y no los estás liberando."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:336
 msgid "Now we need to add ``set_debug_display`` to ``Globals.gd``:"
@@ -523,6 +553,12 @@ msgid ""
 "children of the singleton/autoload will stay for as long as the game is "
 "running, without any additional work on our part!"
 msgstr ""
+"Observa cómo la pantalla de depuración permanece incluso cuando cambias "
+"escenas del ``Menu_Main.tscn`` a otra escena (como ``Testing_Area.tscn``). "
+"Esta es la belleza de instanciar/generar nodos en un singleton/autoload y "
+"añadirlos como hijos al singleton/autoload. Cualquiera de los nodos añadidos "
+"como hijos del singleton/autoload permanecerán mientras el juego esté en "
+"marcha ¡sin ningún trabajo adicional por nuestra parte!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:369
 msgid "Adding a pause menu"
@@ -732,7 +768,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:520
 msgid "``globals``: A variable to hold the ``Globals.gd`` singleton."
-msgstr ""
+msgstr "``globals``: Una variable para contener el singleton ``Globals.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:524
 msgid ""
@@ -747,6 +783,10 @@ msgid ""
 "global :ref:`Transform <class_Transform>` to the position returned by "
 "``globals.get_respawn_position``."
 msgstr ""
+"Ahora obtenemos el singleton ``Globals.gd`` y lo asignamos a ``globals``. "
+"También establecemos nuestra posición global usando el origen de nuestra :"
+"ref:`Transform <class_Transform>` a la posición devuelta por ``globals."
+"get_respawn_position``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:535
 msgid "Don't worry, we'll add ``get_respawn_position`` further below!"
@@ -1054,12 +1094,18 @@ msgid ""
 "scene. We now need to store the ``Globals.gd`` singleton so when we destroy "
 "the audio player, we also remove it from a list in ``Globals.gd``."
 msgstr ""
+"Finalmente, en lugar de ser instanciado/generado en ``Player.gd``, se va a "
+"generar en ``Globals.gd`` para que podamos crear sonidos desde cualquier "
+"escena. Ahora necesitamos almacenar el singleton ``Globals.gd`` para que "
+"cuando destruyamos el reproductor de audio, también lo eliminemos de una "
+"lista en ``Globals.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:844
 msgid "Let's go over the changes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:848
+#, fuzzy
 msgid ""
 "For the global variables we removed all of the ``audio_[insert name here]`` "
 "variables since we will instead have these passed in to. We also added two "
@@ -1067,12 +1113,19 @@ msgid ""
 "``should_loop`` to tell whether we want to loop when the sound has finished, "
 "and ``globals`` will hold the ``Globals.gd`` singleton."
 msgstr ""
+"Para las variables globales eliminamos todas las variables ``audio_[insert "
+"name here]`` ya que en su lugar las pasaremos al archivo. También añadimos "
+"dos nuevas variables globales, ``should_loop`` y ``globals``. Usaremos "
+"``should_loop`` para decir si queremos hacer un loop cuando el sonido haya "
+"terminado, y ``globals`` contendrá el ``Globals.gd`` singleton."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:853
 msgid ""
 "The only change in ``_ready`` is now we're getting the ``Globals.gd`` "
 "singleton and assigning it to ``globals``"
 msgstr ""
+"El único cambio en ``_ready`` es que ahora obtenemos el singleton ``Globals."
+"gd`` y lo asignamos a ``globals``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:855
 msgid ""
@@ -1083,6 +1136,13 @@ msgid ""
 "an error message, remove the audio player from a list in the ``Globals.gd`` "
 "singleton called ``created_audio``, and then free the audio player."
 msgstr ""
+"En ``play_sound`` se espera un stream de audio, llamado ``audio_stream``, en "
+"lugar de ```sound_name``. En lugar de comprobar el nombre del sonido y "
+"configurar el stream para el reproductor de audio, comprobamos que se ha "
+"introducido un stream de audio. Si no se pasa un stream de audio, se imprime "
+"un mensaje de error, se elimina el reproductor de audio de una lista en el "
+"singleton ```Globals.gd`` llamado ``created_audio``, y luego se libera el "
+"reproductor de audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:859
 msgid ""
@@ -1092,6 +1152,12 @@ msgid ""
 "supposed to loop, we remove the audio player from a list in the ``Globals."
 "gd`` singleton called ``created_audio``, and then free the audio player."
 msgstr ""
+"Finalmente, en ``sound_finished`` primero comprobamos si se debe usar "
+"``should_loop`` o no. Si se supone que debemos hacer un bucle, reproducimos "
+"el sonido de nuevo desde el principio del audio, en la posición ``0.0``. Si "
+"no se supone que debemos hacer un bucle, quitamos el reproductor de audio de "
+"la lista en el singleton ```Globals.gd`` llamado ``created_audio``, y luego "
+"liberamos el reproductor de audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:865
 msgid ""
@@ -1172,6 +1238,8 @@ msgid ""
 "Remember, we have to be careful adding nodes to a singleton, since these "
 "nodes will not be destroyed when changing scenes."
 msgstr ""
+"Recuerda, debemos tener cuidado al añadir nodos a un singleton, ya que estos "
+"nodos no se destruirán al cambiar de escena."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:929
 msgid ""
@@ -1222,8 +1290,14 @@ msgid ""
 "the name of the sound we want to play, whether we want it to loop or not, "
 "and the position to play the sound from."
 msgstr ""
+"Ahora todos los sonidos de nuestro FPS se pueden reproducir desde cualquier "
+"lugar. Todo lo que tenemos que hacer es tomar el singleton ``Globals.gd``, y "
+"llamar ``play_sound``, pasando el nombre del sonido que queremos reproducir, "
+"si queremos que se reproduzca en bucle o no, y la posición para reproducir "
+"el sonido."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:966
+#, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenades "
 "explode you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
@@ -1232,6 +1306,12 @@ msgid ""
 "in the grenades ``_process`` function, right after the grenade damages all "
 "of the bodies within it's blast radius."
 msgstr ""
+"Por ejemplo, si quieres reproducir un sonido de explosión cuando las "
+"granadas explotan necesitarás añadir un nuevo sonido a ``audio_clips`` en "
+"``Globals.gd``, accede al singleton ``Globals.gd``, y entonces sólo "
+"necesitas añadir algo como ``globals.play_sound(\"explosion\", false, "
+"global_transform.origin)`` en las granadas ``_process``, justo después de "
+"que la granada dañe todos los cuerpos dentro de su radio de explosión."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:972
 msgid "Final notes"

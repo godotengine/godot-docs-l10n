@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,32 +50,29 @@ msgid "On PC"
 msgstr "En PC"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:20
-#, fuzzy
 msgid ""
 "Distributing a game project on PC with Godot is rather easy. Drop the godot."
 "exe (or godot) binary together in the same place as the engine.cfg file, zip "
 "it and you are done. This can be taken advantage of to make custom "
 "installers."
 msgstr ""
-"Distribuir un proyecto de juego en PC con Godot es bastante sencillo. "
-"Simplemente deja caer el archivo binario godot.exe (o godot) en el mismo "
-"lugar que el archivo engine.cfg (project.godot en Godot3), empaqueta todo en "
-"un zip y ya está hecho. Esto también puede ser una ventaja a la hora de "
-"hacer instaladores propios."
+"Distribuir un proyecto de juego en PC con Godot es bastante fácil. Deje el "
+"binario godot.exe (o godot) en el mismo lugar que el archivo engine.cfg, "
+"comprímalo y listo. Esto puede ser utilizado para hacer instaladores "
+"personalizados."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:25
-#, fuzzy
 msgid ""
 "It sounds simple, but there are probably a few reasons why the developer may "
 "not want to do this. The first one is that it may not be desirable to "
 "distribute loads of files. Some developers may not like curious users "
 "peeking at how the game was made, others may find it inelegant, etc."
 msgstr ""
-"Suena sencillo, pero probablemente hay algunas razones por las que el "
-"desarrollador no quiera hacer esto. La primera es que no se desee distribuir "
-"un montón de archivos. A Algunos desarrolladores no les gusta que los "
-"usuarios curiosos miren como está hecho el juego, otros consideran que es "
-"poco elegante, etc."
+"Suena sencillo, pero probablemente haya algunas razones por las que el "
+"desarrollador no quiera hacer esto. La primera es que podría no ser "
+"conveniente distribuir una gran cantidad de archivos. Algunos "
+"desarrolladores no les gustará que los usuarios curiosos se fijen en cómo se "
+"hizo el juego, otros pueden encontrarlo poco elegante, etc."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:31
 msgid ""
@@ -153,11 +150,8 @@ msgstr ""
 "continúa creciendo."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
-#, fuzzy
 msgid "To open the export menu, click the \"Export\" button:"
-msgstr ""
-"Para abrir el menú de exportación, simplemente haz clic en el botón "
-"\"Exportar\":"
+msgstr "Para abrir el menú de exportación, haga clic en el botón \"Exportar\":"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
 msgid "The export menu will open, however it will be completely empty."
@@ -329,14 +323,13 @@ msgstr ""
 "desde el que el comando fue invocado."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:152
-#, fuzzy
 msgid ""
 "You can also configure it to export only the .pck or .zip file (allowing a "
 "single export to be used with multiple Godot executables). This takes place "
 "if:"
 msgstr ""
-"También puedes configurarlo para exportar simplemente el archivo .pck o .zip "
-"(permitiendo que una única exportación sea usada para varios ejecutables de "
+"También puedes configurarlo para exportar sólo el archivo.pck o .zip "
+"(permitiendo que una sola exportación sea usada con múltiples ejecutables de "
 "Godot). Esto sucede si:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156

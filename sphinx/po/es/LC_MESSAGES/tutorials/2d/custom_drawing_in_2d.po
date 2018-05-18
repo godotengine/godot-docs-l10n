@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
-msgstr ""
+msgstr "Dibujos personalizados en 2D"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
 msgid "Why?"
-msgstr ""
+msgstr "¿Por qué?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:9
 msgid ""
@@ -34,16 +34,24 @@ msgid ""
 "node (be it :ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>` "
 "based) draw custom commands. It is *really* easy to do it too."
 msgstr ""
+"Godot posee nodos para dibujar sprites, polígonos, partículas, etc., para la "
+"mayoría de los casos, eso es suficiente, pero no siempre. Antes de "
+"desesperar al ver que no existe un nodo para dibujar al *específico* sería "
+"bueno saber que es posible hacer que cualquier nodo 2D (ya sea uno basado "
+"en :ref:`Control <class_Control>` o :ref:`Node2D <class_Node2D>` ) puede "
+"aceptar comandos de dibujo personalizados. Esto es muy fácil de hacer."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:17
 msgid "But..."
-msgstr ""
+msgstr "Pero..."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:19
 msgid ""
 "Custom drawing manually in a node is *really* useful. Here are some examples "
 "why:"
 msgstr ""
+"Dibujar manualmente en un nodo es muy útil, aquí hay unos ejemplos de por "
+"qué:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:22
 msgid ""
@@ -51,12 +59,17 @@ msgid ""
 "that draws a circle, an image with trails, a special kind of animated "
 "polygon, etc)."
 msgstr ""
+"Dibujar figuras o crear lógica que no es manejada por nodos (ejemplo: hacer "
+"que un nodo dibuje un círculo, una imagen con un rastro o trail, un modo "
+"especial de polígono animado, etc.)."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:25
 msgid ""
 "Visualizations that are not that compatible with nodes: (example: a tetris "
 "board). The tetris example uses a custom draw function to draw the blocks."
 msgstr ""
+"Visualizaciones que no son compatibles con nodos, por ejemplo una rejilla de "
+"un juego simple de tablero."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
 msgid ""
@@ -65,16 +78,22 @@ msgid ""
 "drawing, but a thousand of draw calls are cheap. Check the \"Shower of "
 "Bullets\" demo as example."
 msgstr ""
+"Administrando la lógica de dibujado de gran número de objetos (cientos de "
+"miles). Usar miles de nodos probablemente no sea igualmente de eficiente que "
+"dibujar, ya que miles de \"draw calls\" (llamadas a proceso de dibujado) son "
+"baratas."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:32
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but it's "
 "easy to run into the need to make a new, custom one."
 msgstr ""
+"Hacer un control de UI personalizado. Hay muchos nodos Control disponibles "
+"pero puede existir la necesidad de crear uno nuevo, diferente."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:36
 msgid "OK, how?"
-msgstr ""
+msgstr "Bien, ¿cómo?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:38
 msgid ""
@@ -82,22 +101,29 @@ msgid ""
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
 "the _draw() function."
 msgstr ""
+"Agrega un script a cualquier nodo derivado de  :ref:`CanvasItem "
+"<class_CanvasItem>`, como:ref:`Control <class_Control>` o :ref:`Node2D "
+"<class_Node2D>`. Luego sobreescribe la función _draw()."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:58
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
 msgstr ""
+"Los comandos están descriptos en la referencia de la clase :ref:`CanvasItem "
+"<class_CanvasItem>`."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
 msgid "Updating"
-msgstr ""
+msgstr "Actualizando"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:64
 msgid ""
 "The _draw() function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
 msgstr ""
+"Una vez que la función `_draw()` es llamada una vez, los comandos son "
+"guardados y recordados, así que no es necesario llamarla continuamente."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:67
 msgid ""
@@ -105,22 +131,29 @@ msgid ""
 "call :ref:`CanvasItem.update() <class_CanvasItem_update>` in that same node "
 "and a new _draw() call will happen."
 msgstr ""
+"Si es necesario volver a dibujar porque algo ha cambiado, simplemente "
+"llama  :ref:`CanvasItem.update() <class_CanvasItem_update>` en el nodo y se "
+"ejecutará una nueva llamada a _draw()."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:71
 msgid ""
 "Here is a little more complex example. A texture variable that will be "
 "redrawn if modified:"
 msgstr ""
+"Aquí hay un ejemplo más complejo. Una textura variable que se dibujará "
+"nuevamente si es modificada:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:115
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "update() from the _process() callback, like this:"
 msgstr ""
+"En algunos casos, puede ser deseable dibujar en cada frame. Para esto, sólo "
+"llama update() dentro de _process(), así:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:147
 msgid "An example: drawing circular arcs"
-msgstr ""
+msgstr "Un ejemplo: dibujando arcos de curva"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:149
 msgid ""
@@ -130,10 +163,15 @@ msgid ""
 "about drawing a portion of a circle? You will have to code a function to "
 "perform this, and draw it yourself."
 msgstr ""
+"Ahora veremos el uso de la funcionalidad de dibujo personalizado de Godot "
+"Engine para dibujar algo para lo que el motor no provee ninguna función. Por "
+"ejemplo, Godot provee la función draw_circle() que dibuja un círculo "
+"completo, pero ¿y si queremos dibujar una porción de un círculo? Deberás "
+"crear una función para hacer eso y dibujarlo."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:152
 msgid "Arc function"
-msgstr ""
+msgstr "Función arco"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
 msgid ""
@@ -143,6 +181,11 @@ msgid ""
 "have to provide to our drawing. We'll also provide the color value so we can "
 "draw the arc in different colors if we wish."
 msgstr ""
+"Un arco está depende de los parámetros de un círculo, es decir, posición "
+"central y radio. El arco en sí es definido por el ángulo en el que comienza "
+"y el ángulo en el que termina. Esos son los 4 parámetros que pasamos a "
+"nuestro dibujo. Podemos también agregar un valor de color para dibujar el "
+"arco en diferentes colores."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
 msgid ""
@@ -157,6 +200,15 @@ msgid ""
 "our example, we will simply use a fixed number of points, no matter the "
 "radius."
 msgstr ""
+"Básicamente, dibujar una figura requiere descomponerla en cierto número de "
+"puntos, vinculados uno al otro. Como puedes imaginar, mientras más puntos "
+"posea la figura, más suave que se verá, pero será más \"pesada\" en términos "
+"de procesamiento. En general, si una figura es muy grande, requerirá más "
+"puntos para ser dibujada sin verse muy angulosa. Al contrario, si una figura "
+"es muy pequeña, se pueden reducir los puntos para ahorrar costo de "
+"procesamiento. Esto es llamado *nivel de detalle* (LoD por sus siglas en "
+"inglés). En nuestro ejemplo usaremos un número fijo de puntos, sin importar "
+"el radio."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:191
 msgid ""
@@ -164,6 +216,9 @@ msgid ""
 "this number in the nb_points variable to a value of 32. Then, we initialize "
 "an empty PoolVector2Array, which is simply an array of Vector2."
 msgstr ""
+"Recuerdas el número de puntos en el cual nuestra figura fue descompuesta? "
+"Fijamos este número en la variable nb_points a un valor de 32, luego "
+"inicializamos un PoolVector2Array vacío, que es un arreglo de Vector2."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:193
 msgid ""
@@ -173,6 +228,11 @@ msgid ""
 "include the last point. We first determine the angle of each point, between "
 "the starting and ending angles."
 msgstr ""
+"El siguiente paso consiste en calcular las posiciones reales de estos 32 "
+"puntos que componen un arco. Esto se hace en el primer bucle for: iteramos "
+"sobre el número de puntos para los que queremos calcular las posiciones, más "
+"uno para incluir el último punto. Primero determinamos el ángulo de cada "
+"punto, entre el ángulo inicial y el ángulo final."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:195
 msgid ""
@@ -183,6 +243,11 @@ msgid ""
 "counting at 0 o'clock. So we reduce each angle by 90° in order to start "
 "counting from 0 o'clock."
 msgstr ""
+"La razón por la que reducimos cada ángulo en 90° es porque computamos "
+"posiciones de cada ángulo utilizando trigonometría. cos() y sin() utilizan "
+"radianes, no grados, el ángulo de 0° (0 PI radianes) comienza apuntando "
+"hacia la derecha, pero queremos que comience apuntando hacia arriba. Así que "
+"reducimos el ángulo en 90° para conseguirlo."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:197
 msgid ""
@@ -195,6 +260,15 @@ msgid ""
 "performed by adding it to our Vector2 value. Finally, we insert the point in "
 "the PoolVector2Array which was previously defined."
 msgstr ""
+"La posición actual de un punto ubicado en un angulo 'angle' (en radianes) es "
+"dada por Vector2(cos(angle), sin(angle)). Como cos() y sin () retornan "
+"valores entre -1 y 1, la posición es ubicada en un círculo de radio 1. Para "
+"tener esta posición en nuestro círculo de soporte, que tiene un radio de "
+"'radius', simplemente tenemos que multiplicar la posición por 'radius'. "
+"Finalmente, tenemos la posición del círculo de soporte del arco en la "
+"posición 'center', lo que se consigue agregando esto a nuestro valor "
+"Vector2. Finalmente insertamos el punto en e PoolVector2Array que fue "
+"definido previamente."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:199
 msgid ""
@@ -233,6 +307,10 @@ msgid ""
 "is exactly the same as previously, except that we draw a polygon instead of "
 "lines:"
 msgstr ""
+"Podemos llevar esto un paso más allá y no sólo escribir una función que "
+"dibuje la parte plana del disco definida por el arco, sino también su forma. "
+"El método es exactamente el mismo que el anterior, excepto que dibujamos un "
+"polígono en lugar de líneas:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:275
 msgid "Dynamic custom drawing"

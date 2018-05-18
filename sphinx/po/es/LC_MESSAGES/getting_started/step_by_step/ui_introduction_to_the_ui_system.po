@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr ""
+msgstr "Diseño de interfaces con nodos Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -32,37 +32,54 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
+"Pantallas de computadoras, teléfonos móviles y pantallas de televisión "
+"vienen en todas las formas y tamaños. Para distribuir un juego, tendrás que "
+"admitir diferentes proporciones y resoluciones de pantalla. Puede ser "
+"difícil crear interfaces responsivas que se adapten a todas las plataformas. "
+"Afortunadamente, Godot viene con herramientas robustas para diseñar y "
+"administrar una interfaz de usuario responsiva. Para diseñar su interfaz de "
+"usuario, utilizarás los nodos de Control. Estos son los nodos con iconos "
+"verdes en el editor. Hay docenas de ellos, para crear cualquier cosa, desde "
+"barras de vida hasta aplicaciones complejas. Todo el editor y los plugins de "
+"Godot usan estos nodos."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr ""
+msgstr "El editor de Godot está hecho con el framework UI del motor"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "This guide will get you started with UI design. You will learn:"
-msgstr ""
+msgstr "Esta guía te ayudará a comenzar con el diseño de la UI. Aprenderás:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:21
 msgid "The five most useful control nodes to build your games’ interface"
 msgstr ""
+"Los cinco nodos de control más útiles para construir la interfaz de tus "
+"juegos"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid "How to work with the anchor of UI elements"
-msgstr ""
+msgstr "Cómo trabajar con el anclaje de los elementos de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:23
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
+"Cómo colocar y organizar eficientemente tu interfaz de usuario usando "
+"contenedores"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid "The five most common containers"
-msgstr ""
+msgstr "Los cinco contenedores más comunes"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:27
 msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
+"Para aprender a controlar la interfaz y conectarla a otros scripts, lee :"
+"ref: `Construye tu primera UI de juego en Godot "
+"<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
 msgid ""
@@ -72,87 +89,105 @@ msgid ""
 "with others like the AnimationPlayer, Tween or the StreamPlayer. Control "
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
+"Utiliza únicamente nodos de Control cuando diseñes tus interfaces. Tienen "
+"propiedades únicas que les permiten trabajar unos con otros. Otros nodos "
+"como Node2D, Sprite, etc. no funcionarán. Todavía puedes usar algunos nodos "
+"que funcionan con otros como el AnimationPlayer, Tween o StreamPlayer. Los "
+"nodos de control son CanvasItems como Node2D, por lo que puede aplicarles "
+"shaders."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
 msgid "All control nodes share the same main properties:"
 msgstr ""
+"Todos los nodos de control comparten las mismas propiedades principales:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Anchor"
-msgstr ""
+msgstr "Anchor"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
-msgstr ""
+msgstr "Bounding rectangle"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Focus and focus neighbour"
-msgstr ""
+msgstr "Focus and focus neighbour"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
-msgstr ""
+msgstr "Size flags"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "Margin"
-msgstr ""
+msgstr "Margin"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:44
 msgid "The optional UI theme"
-msgstr ""
+msgstr "The optional UI theme"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:46
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
+"Una vez que hayas entendido los conceptos básicos del nodo Control, te "
+"llevará menos tiempo aprender todos los nodos que se derivan de él."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:51
 msgid "The 5 most common UI elements"
-msgstr ""
+msgstr "Los 5 elementos más comunes de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:53
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
+"Godot viene con docenas de nodos de control. Muchos de ellos están para "
+"ayudarte a construir plugins para el editor y plugins para tus aplicaciones."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:56
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
+"Para la mayoría de los juegos, solo necesitaras cinco tipos de elementos de "
+"interfaz, y algunos contenedores. Estos elementos son:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid "Label: for displaying text"
-msgstr ""
+msgstr "Etiqueta (Label): Para mostrar texto"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:60
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
 msgstr ""
+"TextureRect: Usado principalmente para fondos, o todo lo que debería ser una "
+"imagen estática"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:62
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
+"TextureProgress: para barras de vida, barras de cargas. Pueden ser "
+"horizontales, verticales o radiales"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "NinePatchRect: for scalable panels"
-msgstr ""
+msgstr "NinePatchRect: para paneles escalables"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:65
 msgid "TextureButton: to create buttons"
-msgstr ""
+msgstr "TextureButton: para crear botones con texturas"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:69
 msgid "The 5 most common Control nodes for UI design"
 msgstr ""
+"Los 5 nodos de control mas comunes para el diseño de interfaces de usuario"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
-msgstr ""
+msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
 msgid ""
@@ -160,6 +195,9 @@ msgid ""
 "the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behaviour:"
 msgstr ""
+"**TextureRect** muestra una textura o imagen dentro de una UI. Parece "
+"similar al nodo Sprite pero ofrece múltiples modos de escalado. Establece la "
+"propiedad Stretch Mode para cambiar su comportamiento:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -167,20 +205,29 @@ msgid ""
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
+"`` Scale On Expand (compat) `` escala la textura para ajustarse al "
+"rectángulo delimitador del nodo, solo si la propiedad `` expand`` es `` "
+"true``; de lo contrario, se comporta como el modo `` Keep``. Modo "
+"predeterminado para compatibilidad con versiones anteriores."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:79
 msgid "``Scale`` scales the texture to fit the node’s bounding rectangle"
 msgstr ""
+"``Scale`` escala la textura para que se ajuste al rectángulo delimitador del "
+"nodo"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Tile`` makes the texture repeat, but it won't scale"
-msgstr ""
+msgstr "``Tile`` hace que la textura se repita, pero no escalará"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively"
 msgstr ""
+"``Keep`` y``Keep Centered`` fuerzan a que la textura mantenga su tamaño "
+"original, en la esquina superior izquierda, o en el centro del marco "
+"respectivamente"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:84
 msgid ""
@@ -188,6 +235,9 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively"
 msgstr ""
+"``Keep Aspect`` y ``Keep Aspect Centered`` escala la textura pero la obliga "
+"a mantener su relación de aspecto original, en la esquina superior izquierda "
+"o en el centro del marco, respectivamente"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -195,6 +245,9 @@ msgid ""
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node’s limits"
 msgstr ""
+"`` Keep Aspect Covered`` funciona igual que `` Keep Aspect Centered`` pero "
+"el lado más corto se ajusta al rectángulo delimitador y el otro a los "
+"límites del nodo"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
 msgid ""
@@ -207,11 +260,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:92
 msgid "TextureRect modulated with a red color"
-msgstr ""
+msgstr "TextureRect modulado con un color rojo"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureButton"
-msgstr ""
+msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -238,14 +291,21 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
+"En la sección del Botón Base, encontrará algunas casillas de verificación "
+"que cambian el comportamiento del botón. Cuando `` Toggle Mode`` está "
+"activado, el botón alternará entre los estados activo y normal cuando lo "
+"presione. `` Disabled`` lo desactiva por defecto, en cuyo caso usará la "
+"textura `` Disabled``. TextureButton comparte algunas propiedades con el "
+"marco de textura: tiene una propiedad `` modulate``, para cambiar su color, "
+"y `` Resize`` y `` Stretch`` para cambiar su comportamiento de escala."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:114
 msgid "TextureButton and its 5 texture slots"
-msgstr ""
+msgstr "TextureButton y sus 5 ranuras de textura"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureProgress"
-msgstr ""
+msgstr "TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
 msgid ""
@@ -253,6 +313,9 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
+"**TextureProgress** permite crear una barra de progreso con hasta 3 sprites. "
+"Las texturas Under, Over se intercalan con Progress, que muestra el "
+"contenido de la barra."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:123
 msgid ""
@@ -261,6 +324,10 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
+"La propiedad ``Mode`` controla la dirección en la que la barra crece: "
+"horizontal, vertical o radial. Si lo ajustas a radial, las propiedades "
+"``Initial Angle`` y ``Fill Degrees`` te permiten limitar el rango del "
+"medidor."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:128
 msgid ""
@@ -272,14 +339,22 @@ msgid ""
 "the default of ``1`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
+"Para animar la barra, querrás ver la sección Range. Establece las "
+"propiedades ``Min`` y ``Max`` para definir el rango del medidor. Por "
+"ejemplo, para representar la vida de un personaje, querrás poner ``Min`` a "
+"``0,`` y ``Max`` a la máxima vida del personaje. Cambia la propiedad "
+"``Value`` para actualizar la barra. Si dejas los valores ``Min`` y ``Max`` "
+"al valor por defecto de ``1`` y ``100`` y estableces la propiedad ``Value`` "
+"a ``40``, el 40% de la textura ``Progress`` se mostrará, y el 60% "
+"permanecerá oculto."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:138
 msgid "TextureProgress bar, two thirds filled"
-msgstr ""
+msgstr "Barra TextureProgress, dos tercios rellenados"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
 msgid ""
@@ -289,14 +364,20 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign respectively."
 msgstr ""
+"**Label** imprime el texto en la pantalla. Encontrará todas sus propiedades "
+"en la sección Label, en el Inspector. Escribe el texto en la propiedad "
+"``Text`` y selecciona Autowrap si quieres que respete el tamaño del cuadro "
+"de texto. Si Autowrap está desactivado, no podrá escalar el nodo. Puede "
+"alinear el texto horizontal y verticalmente con Align y Valign "
+"respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
 msgid "Picture of a Label"
-msgstr ""
+msgstr "Imagen de un Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "NinePatchRect"
-msgstr ""
+msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
 msgid ""
@@ -305,31 +386,41 @@ msgid ""
 "corners. It is useful to build panels, dialogue boxes and scalable "
 "backgrounds for your UI."
 msgstr ""
+"**NinePatchRect** toma una textura dividida en 3 filas y 3 columnas. Alinea "
+"los centros y los lados de la textura, pero mantiene el tamaño original de "
+"las esquinas. Es útil para construir paneles, cuadros de diálogo y fondos "
+"escalables para su UI."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr ""
+msgstr "NinePatchRect escalado con la propiedad min\\_size"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "There are two workflows to build responsive UIs"
-msgstr ""
+msgstr "Existen dos flujos de trabajo para crear UIs responsivas"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:169
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
 msgstr ""
+"Hay dos flujos de trabajo para construir interfaces escalables y flexibles "
+"en Godot:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:171
 msgid ""
 "You have many container nodes at your disposal that scale and place UI "
 "elements for you. They take control over their children."
 msgstr ""
+"Tienes muchos nodos container a tu disposición que escalan y colocan "
+"elementos de UI por ti. Ellos toman el control de sus hijos."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
+"En el otro lado, se encuentra el menú de disposición. Le ayuda a anclar, "
+"colocar y redimensionar un elemento de UI dentro de su padre."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
 msgid ""
@@ -341,16 +432,26 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
+"Los dos enfoques no son siempre compatibles. Dado que un container controla "
+"a sus hijos, no se puede utilizar el menú de disposición en ellos. Cada "
+"container tiene un efecto específico, por lo que puede ser necesario anidar "
+"varios de ellos para obtener una interfaz de trabajo. Con el enfoque de "
+"disposición se trabaja de abajo hacia arriba, en los hijos. Como no inserta "
+"containers adicionales en la escena, puede hacer que las jerarquías sean más "
+"limpias, pero es más difícil organizar los elementos en una fila, columna, "
+"cuadrícula, etc."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:176
 msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
 msgstr ""
+"A medida que crees UIs para tus juegos y herramientas, desarrollarás un "
+"sentido de lo que mejor se adapta a cada situación."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:180
 msgid "Place UI elements precisely with anchors"
-msgstr ""
+msgstr "Posicionamiento preciso de elementos UI con anclajes"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:182
 msgid ""
@@ -359,14 +460,19 @@ msgid ""
 "Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
 "change the reference point of the margins."
 msgstr ""
+"Los nodos de control tienen una posición y tamaño, pero también tienen "
+"anclas y márgenes. Los anclajes definen el origen, o el punto de referencia, "
+"para los bordes izquierdo, superior, derecho e inferior del nodo. Cambia "
+"cualquiera de los 4 anclajes para cambiar el punto de referencia de los "
+"márgenes."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:189
 msgid "The anchor property"
-msgstr ""
+msgstr "La propiedad del anclaje"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "How to change the anchor"
-msgstr ""
+msgstr "Cómo cambiar el anclaje"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:194
 msgid ""
@@ -377,14 +483,21 @@ msgid ""
 "inspector’s 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
+"Como cualquier otra propiedad, puedes editar los 4 puntos de anclaje en el "
+"Inspector, pero esta no es la forma más conveniente. Cuando seleccionas un "
+"nodo de control, el menú de configuración aparece encima de la ventana de "
+"visualización, en la barra de herramientas. Le da una lista de iconos para "
+"establecer los 4 anclajes con un solo clic, en lugar de usar las 4 "
+"propiedades del inspector. El menú de configuración sólo aparecerá cuando "
+"selecciones un nodo de control."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:203
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "El menú de disposición de la ventana de visualización"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "Anchors are relative to the parent container"
-msgstr ""
+msgstr "Los anclajes son relativos al container principal"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:208
 msgid ""
@@ -396,16 +509,26 @@ msgid ""
 "position in pixels, while anchors are relative to the parent container's "
 "size."
 msgstr ""
+"Cada ancla es un valor entre 0 y 1. Para las anclas izquierda y superior, un "
+"valor de 0 significará que no hay ningún margen, los bordes del nodo se "
+"alinearán con los bordes izquierdo y superior de su padre. Para los bordes "
+"derecho e inferior, un valor de 1 significa que se alinearán con los bordes "
+"derecho e inferior del container padre. Por otro lado, los márgenes "
+"representan una distancia a la posición del ancla en píxeles, mientras que "
+"los anclajes son relativos al tamaño del container padre."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:218
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
+"Los márgenes son relativos a la posición del ancla, que es relativa a los "
+"anclajes. En la práctica, a menudo dejarás que el container actualice los "
+"márgenes por ti"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:223
 msgid "Margins change with the anchor"
-msgstr ""
+msgstr "Los márgenes cambian con el anclaje"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:225
 msgid ""
@@ -416,10 +539,17 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
+"Los márgenes se actualizan automáticamente al mover o cambiar el tamaño de "
+"un nodo de control. Representan la distancia entre los bordes del nodo de "
+"control y su ancla, que es relativa al nodo de control padre o container. "
+"Por eso tus nodos de control deben estar siempre dentro de un container, "
+"como veremos en un momento. Si no hay un padre, los márgenes serán relativos "
+"al Rectangle delimitador del propio nodo, establecido en la sección Rect, en "
+"el inspector."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:235
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
-msgstr ""
+msgstr "Márgenes en un CenterContainer fijado al ancla \"Full Rect\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:237
 msgid ""
@@ -430,10 +560,19 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"Intenta cambiar las anclas o anidar los nodos de Control dentro de "
+"Containers: los márgenes se actualizarán. Rara vez necesitarás editar los "
+"márgenes manualmente. Siempre trata de encontrar un container que te ayude "
+"primero; Godot viene con nodos para resolver todos los casos más comunes "
+"¿Necesitas añadir espacio entre una barra de vida y el borde de la pantalla? "
+"Utiliza el MarginContainer. ¿Desea crear un menú vertical? Usa el "
+"VBoxContainer. Más sobre estos a continuación."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
+"Usar etiquetas size para cambiar la forma en que los elementos de la UI "
+"llenan el espacio disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:248
 msgid ""
@@ -445,10 +584,18 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"Cada nodo de control tiene Size Flags. Indican a los container cómo deben "
+"escalarse los elementos de interfaz de usuario. Si añade el indicador \"Fill"
+"\" a la propiedad Horizontal o Vertical, el cuadro de delimitación del nodo "
+"ocupará todo el espacio que pueda, pero respetará a sus hermanos y "
+"conservará su tamaño. Si hay 3 nodos TextureRect en un HBoxContainer, con "
+"los indicadores \"Fill\" en ambos ejes, cada uno ocupará hasta un tercio del "
+"espacio disponible, pero no más. El container tomará el nodo y lo "
+"redimensionará automáticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:258
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr ""
+msgstr "3 elementos UI en un HBoxContainer, se alinean horizontalmente"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:260
 msgid ""
@@ -456,21 +603,28 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"La opción \"Expand\" permite que el elemento UI ocupe todo el espacio que "
+"pueda y empuje a sus hermanos. Su rectángulo delimitador crecerá hasta los "
+"bordes de su padre, o hasta que sea bloqueado por otro nodo UI."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:266
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
 msgstr ""
+"El mismo ejemplo que el anterior, pero el nodo central tiene el size flag "
+"\"Expand\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"Necesitarás algo de práctica para entender los size tags, ya que su efecto "
+"puede cambiar bastante dependiendo de cómo configures tu interfaz."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:273
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "Disposición automática de los nodos de control con contenedores"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
 msgid ""
@@ -479,6 +633,11 @@ msgid ""
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor so you can see the effect instantly."
 msgstr ""
+"Los containers organizan automáticamente todos los nodos de Control de los "
+"hijos, incluyendo otros contenedores en filas, columnas y más. Utilízalos "
+"para añadir relleno alrededor de tu interfaz o nodos centrales en sus "
+"rectángulos delimitadores. Todos los containers incorporados se actualizan "
+"en el editor para que pueda ver el efecto instantáneamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""
@@ -489,7 +648,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "Los 5 contenedores más útiles"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:288
 msgid ""
@@ -522,11 +681,18 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer centra a todos sus hijos dentro de su rectángulo "
+"delimitador. Por lo general, se utiliza para las pantallas de título, si "
+"quieres que las opciones permanezcan en el centro de la ventana. Como lo "
+"centra todo, a menudo querrás un solo container anidado dentro de él. Si "
+"usas texturas y botones en su lugar, se acumularán."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:305
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
+"CenterContainer en acción. La barra de vida se centra dentro de su container "
+"padre."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
@@ -537,6 +703,12 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"El MarginContainer añade un margen en cualquier lado de los nodos hijos. "
+"Añade un MarginContainer que abarque toda la ventana para añadir una "
+"separación entre el borde de la ventana y la UI. Puedes establecer un margen "
+"en la parte superior, izquierda, derecha o inferior del container. No es "
+"necesario marcar la casilla de verificación: haz clic en la casilla de valor "
+"correspondiente y escribe cualquier número. Se activará automáticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"

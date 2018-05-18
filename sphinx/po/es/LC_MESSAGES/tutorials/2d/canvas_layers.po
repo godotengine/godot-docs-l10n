@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,12 +33,19 @@ msgid ""
 "they will inherit their transform. This means that when moving the parent, "
 "the children will be moved too."
 msgstr ""
+"Los nodos 2D comunes, como :ref:`Node2D <class_Node2D>` o :ref:`Control "
+"<class_Control>` heredan ambos de :ref:`CanvasItem <class_CanvasItem>`, que "
+"es la base de todos los nodos 2D. Los CanvasItems se pueden organizar en "
+"árboles y heredarán su transformación. Esto significa que al mover al padre, "
+"los hijos también se moverán."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
 msgid ""
 "These nodes are placed as direct or indirect children to a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
 msgstr ""
+"Esos nodos son situados directa o indirectamente como hijos de un :ref:"
+"`Viewport <class_Viewport>`, y son mostrados en pantalla por este."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -48,6 +55,11 @@ msgid ""
 "transform. Nodes such as :ref:`Camera2D <class_Camera2D>`, work by changing "
 "that transform."
 msgstr ""
+"El nodo Viewport tiene la propiedad :ref:`Viewport.canvas_transform "
+"<class_Viewport_canvas_transform>`, que permite transformar toda la "
+"jerarquía de CanvasItem mediante una transformación :ref:`Transform2D "
+"<class_Transform2D>`. Nodos como :ref:`Camera2D <class_Camera2D>`, funcionan "
+"cambiando esa transformación."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -56,10 +68,14 @@ msgid ""
 "transform is a simple matrix that offsets the whole 2D drawing, so it's the "
 "most efficient way to do scrolling."
 msgstr ""
+"Cambiar el canvas transform es útil porque es mucho más eficiente que mover "
+"el elemento raíz del canvas (y por lo tanto toda la escena). Canvas "
+"transform es una simple matriz que desplaza todo el trazado 2D, por lo que "
+"es la forma más eficiente de hacer scrolling."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid "Not enough..."
-msgstr ""
+msgstr "No es suficiente..."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:33
 msgid ""
@@ -67,28 +83,39 @@ msgid ""
 "application may not want *everything* transformed by the canvas transform. "
 "Examples of this are:"
 msgstr ""
+"Esto no es suficiente, hay situaciones donde el juego o la aplicación no "
+"quiere que *todo* sea transformado por el canvas transform. Ejemplos de esto "
+"son:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:37
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
 msgstr ""
+"**Fondos de paralaje**: O parallax background en inglés, son fondos de "
+"pantalla que se mueven más lento que el resto del nivel."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid ""
 "**HUD**: Head's up display, or user interface. If the world moves, the life "
 "counter, score, etc. must stay static."
 msgstr ""
+"**HUD**: del inglés \"Head's up display\", referido a interfaces de usuario, "
+"barras de estado, etc. Si el mundo se mueve, los contadores de vida, "
+"puntaje, etc. deben permanecer en el lugar."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
 "**Transitions**: Effects used for transitions (fades, blends) may also want "
 "it to remain at a fixed location."
 msgstr ""
+"**Transiciones** Efectos usados para transiciones (mezclas, "
+"desvanecimientos) también deben permanecer en un lugar fijo."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:44
 msgid "How can these problems be solved in a single scene tree?"
 msgstr ""
+"¿Cómo se pueden resolver esos problemas desde un único árbol de escenas?"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:47
 msgid "CanvasLayers"
@@ -104,6 +131,14 @@ msgid ""
 "transform, and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in-place, while the world moves."
 msgstr ""
+"La respuesta es :ref:`CanvasLayer <class_CanvasLayer>`, que es un nodo que "
+"añade una capa de renderizado 2D separada para todos sus hijos y nietos. Los "
+"niños de Viewport dibujarán por defecto en la capa \"0\", mientras que "
+"CanvasLayer dibujará en cualquier capa numérica. Las capas con un número "
+"mayor se sortearán por encima de las capas con un número menor. CanvasLayers "
+"también tienen su propia transformación, y no dependen de la transformación "
+"de otras capas. Esto permite que la interfaz de usuario se fije en el lugar, "
+"mientras el mundo se mueve."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
@@ -111,20 +146,26 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
+"Un ejemplo de esto es la creación de un fondo de paralaje, esto se puede "
+"realizar con una CanvasLayer \"-1\". La pantalla con los puntos, contador de "
+"vida y botón de pausa pueden crearse en la capa \"1\"."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:62
 msgid "Here's a diagram of how it looks:"
-msgstr ""
+msgstr "Aquí hay un diagrama de cómo se ve:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:66
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
 msgstr ""
+"Los nodos CanvasLayer son independientes del orden en el árbol y sólo "
+"dependen del número de capa, así que pueden ser instanciados cuando y donde "
+"sean necesarios."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:70
 msgid "Performance"
-msgstr ""
+msgstr "Rendimiento"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:72
 msgid ""
@@ -134,3 +175,8 @@ msgid ""
 "have a property for controlling their drawing order (see :ref:`Node2D."
 "z_index <class_Node2D_z_index>`)."
 msgstr ""
+"Aunque no debería existir ninguna limitación de desempeño, no es "
+"recomendable utilizar una cantidad excesiva de capas para organizar el orden "
+"de dibujado de nodos. El modo óptimo es acomodarlos por orden en el árbol. "
+"Nodos 2D tienen una propiedad para controlar el orden en que son dibujados "
+"en pantalla (ver :ref:`Node2D.z_index <class_Node2D_z_index>`)."

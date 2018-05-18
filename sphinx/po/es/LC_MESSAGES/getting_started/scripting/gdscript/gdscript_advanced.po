@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,9 +61,8 @@ msgstr ""
 "son:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
-#, fuzzy
 msgid "The language is simple and easy to learn."
-msgstr "El lenguaje es muy sencillo de aprender."
+msgstr "El idioma es simple y fácil de aprender."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
 msgid "Most code can be written and changed quickly and without hassle."
@@ -123,7 +122,6 @@ msgstr ""
 "variables solo se conocen en tiempo de ejecución)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
-#, fuzzy
 msgid ""
 "This, translated to reality, means that Godot+GDScript are a combination "
 "designed to create games quickly and efficiently. For games that are very "
@@ -133,14 +131,14 @@ msgid ""
 "entire game in GDScript and add small bits of C++ in the areas that need a "
 "performance boost."
 msgstr ""
-"Esto, traducido a la realidad, significa que Godot+GDScript son una "
-"combinación diseñada para crear juegos muy rápida y eficientemente. Para "
-"juegos que son muy exigentes desde el punto de vista de computación y que no "
+"Esto, si lo traducimos a la realidad, significa que Godot+GDScript son una "
+"combinación diseñada para crear juegos de forma rápida y eficiente. Para "
+"juegos que son muy exigentes desde el punto de vista computacional y que no "
 "pueden beneficiarse de las herramientas incorporadas en el motor (como los "
-"tipos de vectores, el motor de física, la biblioteca de matemáticas, etc.), "
-"también existe la posibilidad de usar C++. Esto permite crear todo el juego "
-"en GDScript y añadir pequeños trozos de C++ en las áreas que necesitan un "
-"aumento de rendimiento."
+"tipos de Vector, el Motor de Física, la biblioteca de Matemáticas, etc.), la "
+"posibilidad de usar C++ también está presente. Esto permite crear todo el "
+"juego en GDScript y añadir pequeños trozos de C++ en las áreas que necesitan "
+"un aumento de rendimiento."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
@@ -272,7 +270,6 @@ msgid "Dictionaries"
 msgstr "Diccionarios"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
-#, fuzzy
 msgid ""
 "Dictionaries are a powerful tool in dynamically typed languages. Most "
 "programmers that come from statically typed languages (such as C++ or C#) "
@@ -280,14 +277,13 @@ msgid ""
 "This datatype is generally not present in such languages (or only on limited "
 "form)."
 msgstr ""
-"Los diccionarios son una herramienta muy poderosa en lenguajes de tipado "
+"Los diccionarios son una herramienta poderosa en lenguajes de tipado "
 "dinámico. La mayoría de los programadores que provienen de lenguajes de "
 "programación estáticos (como C++ o C#) ignoran su existencia y hacen su vida "
-"innecesariamente más difícil. Este tipo de datos generalmente no está "
+"más difícil innecesariamente. Este tipo de datos generalmente no está "
 "presente en tales lenguajes (o sólo en forma limitada)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
-#, fuzzy
 msgid ""
 "Dictionaries can map any value to any other value with complete disregard "
 "for the datatype used as either key or value. Contrary to popular belief, "
@@ -295,11 +291,11 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
-"Los diccionarios pueden asignar cualquier valor a cualquier otro valor con "
-"total desprecio por el tipo de datos utilizado como clave o valor. "
-"Contrariamente a la creencia popular, son muy eficientes porque pueden "
-"implementarse con tablas hash. Son, de hecho, tan eficientes que algunos "
-"idiomas llegarán a implementar arreglos como diccionarios."
+"Los diccionarios pueden asignar cualquier valor a cualquier otro valor sin "
+"tener en cuenta el tipo de datos utilizado como clave o valor. En contra de "
+"la creencia popular, son eficientes porque se pueden implementar con tablas "
+"de hash. De hecho, son tan eficientes que algunos idiomas llegan a "
+"implementar arrays como diccionarios."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
@@ -323,17 +319,16 @@ msgstr ""
 "de batalla naval de ejemplo:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
-#, fuzzy
 msgid ""
 "Dictionaries can also be used as data markup or quick structures. While "
 "GDScript dictionaries resemble python dictionaries, it also supports Lua "
 "style syntax and indexing, which makes it useful for writing initial states "
 "and quick structs:"
 msgstr ""
-"Los diccionarios también pueden ser usado para etiquetados o estructuras "
-"simples. Aunque los diccionarios de GDScript tienen un parecido a los de "
-"python, también soporta la sintaxis estilo Lua e indexado, lo que lo hace "
-"muy útil para escribir estados iniciales y estructuras simples:"
+"Los diccionarios también se pueden utilizar como marcadores de datos o "
+"estructuras rápidas. Mientras que los diccionarios GDScript se asemejan a "
+"los diccionarios python, también soportan sintaxis e indexación estilo Lua, "
+"lo que lo hace útil para escribir estados iniciales y estructuras rápidas:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:317
 msgid "For & while"
@@ -354,7 +349,7 @@ msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
 msgstr ""
-"Los tipos de datos de los contenedores (arrays y diccionarios) son "
+"Los tipos de datos de los containers (matrices y diccionarios) son "
 "iterables. Los diccionarios permiten iterar entre las claves:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:355

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,6 +78,8 @@ msgid ""
 "Acts like a singleton, since GDScript does not support global variables by "
 "design."
 msgstr ""
+"Actúa como un singleton, ya que GDScript no soporta variables globales por "
+"diseño."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Auto-loading nodes and scripts caters to this need."
@@ -106,10 +108,12 @@ msgid ""
 "This means that any node can access a singleton named \"playervariables\" "
 "with:"
 msgstr ""
+"Esto significa que cualquier nodo puede acceder a un singleton llamado "
+"\"playervariables\" con:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid "Or even simpler using the name directly:"
-msgstr ""
+msgstr "O incluso más simple usando el nombre directamente:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid "Custom scene switcher"
@@ -160,6 +164,10 @@ msgid ""
 "the AutoLoad tab and add a new entry with name \"global\" that points to "
 "this file:"
 msgstr ""
+"El script debería abrirse en el editor de scripts. El siguiente paso es "
+"añadirlo a la lista AutoLoad. Selecciona Proyecto > Ajustes del proyecto en "
+"el menú, ve a la pestaña AutoLoad y añade una nueva entrada con el nombre "
+"\"global\" que apunte a este archivo:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:109
 msgid "Now, whenever you run any of your scenes, the script is always loaded."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,10 @@ msgid ""
 "3D kinematic character tutorials, which are almost identical to their 2D "
 "counterparts."
 msgstr ""
+"创造一个3D游戏很有挑战性。 多余的Z坐标使许多有助于使2D游戏变得简单的常用技术"
+"不再起作用。 为了帮助实现这一转变，值得一提的是，Godot在2D和3D上使用了类似的"
+"API。 大多数节点是相同的，并且以2D和3D版本存在。 事实上，看看3D平台游戏教程或"
+"3D运动学角色教程是值得的，这些教程大部分与2D游戏相同。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
@@ -39,10 +43,12 @@ msgid ""
 "developers, not mathematicians or engineers) will help pave the way into "
 "efficiently developing 3D games."
 msgstr ""
+"在3D中，数学比2D更复杂一些，所以看看wiki：ref：`doc_vector_math`（特别是为游"
+"戏开发者，而不是数学家或工程师创建的）将有助于为有效开发3D游戏铺平道路。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr ""
+msgstr "空间节点"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -51,6 +57,9 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
+"：ref：`Node2D <class_Node2D>`是2D的基本节点。 ：ref：`Control "
+"<class_Control>`是所有GUI的基础节点。 按照这个推理，3D引擎中的所有3D物体使"
+"用：ref：`Spatial <class_Spatial>`节点。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -60,10 +69,13 @@ msgid ""
 "3 :ref:`Vector3 <class_Vector3>` members representing location, Euler "
 "rotation (x,y and z angles) and scale."
 msgstr ""
+"空间节点有一个局部变换，它与父节点相关（只要父节点也是**或者继承** Spatial类"
+"型）。 这个变换可以作为4x3：ref：`Transform <class_Transform>`或3个：ref："
+"`Vector3 <class_Vector3>`成员来表示位置，欧拉旋转（x，y和z角度）和比例。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
-msgstr ""
+msgstr "3D内容"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
@@ -73,10 +85,13 @@ msgid ""
 "in order to be imported in Godot (3D formats are not as standardized as "
 "images)."
 msgstr ""
+"与2D不同，2D加载图像内容和绘图非常简单，但3D更难一些。 内容需要使用特殊的3D工"
+"具（通常称为DCC）创造，并导出为交换文件格式以导入Godot（3D格式不像图像那样标"
+"准化）。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
-msgstr ""
+msgstr "DCC 创建的模型"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:50
 msgid ""
@@ -85,6 +100,9 @@ msgid ""
 "allows to import entire scenes (just as they look in the DCC), including "
 "animation, skeletal rigs, blend shapes, etc."
 msgstr ""
+"有两条管线可以导入3D模型到Godot中。 第一个也是最常见的一个，是通过：ref："
+"`doc_importing_3d_scenes`导入器，它允许导入整个场景（就像它们在DCC中看起来一"
+"样），包括动画，骨架绑定，混合形状等。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:55
 msgid ""

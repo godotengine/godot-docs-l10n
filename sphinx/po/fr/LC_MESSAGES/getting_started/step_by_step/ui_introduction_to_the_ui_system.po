@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr ""
+msgstr "Conception d'interfaces avec les nœuds Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -32,10 +32,20 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
+"Les écrans d'ordinateur, de téléphones portables et de télévision sont de "
+"différentes formes et tailles. Pour publier un jeu, vous devrez prendre en "
+"charge différents ratios et résolutions d'écran. Il peut être difficile de "
+"construire des interfaces réactives qui s'adaptent à toutes les plates-"
+"formes. Heureusement, Godot est fourni avec des outils robustes pour "
+"concevoir et gérer une interface utilisateur réactive. Pour concevoir votre "
+"interface utilisateur, vous utiliserez les nœuds Control. Ce sont les nœuds "
+"avec des icônes vertes dans l'éditeur. Il y en a des dizaines, pour créer "
+"n'importe quoi, des barres de vie aux applications complexes. L'intégralité "
+"de l'éditeur et des plugins de Godot utilisent ces nœuds."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr ""
+msgstr "L'éditeur de Godot est réalisé avec le framework UI du moteur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "This guide will get you started with UI design. You will learn:"
@@ -46,25 +56,33 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:21
 msgid "The five most useful control nodes to build your games’ interface"
 msgstr ""
+"Les cinq nœuds de contrôle les plus utiles pour construire l'interface de "
+"vos jeux"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid "How to work with the anchor of UI elements"
 msgstr ""
+"Comment travailler avec l'ancrage des éléments de l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:23
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
+"Comment placer et organiser efficacement votre interface utilisateur à "
+"l'aide de conteneurs"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid "The five most common containers"
-msgstr ""
+msgstr "Les cinq conteneurs les plus courants"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:27
 msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
+"Pour apprendre à contrôler l'interface et à la connecter à d'autres scripts, "
+"lisez :ref:`Construisez votre première interface utilisateur de jeu dans "
+"Godot <doc_ui_game_user_interface_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
 msgid ""
@@ -74,87 +92,107 @@ msgid ""
 "with others like the AnimationPlayer, Tween or the StreamPlayer. Control "
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
+"Utilisez uniquement les nœuds Control lorsque vous concevez vos interfaces. "
+"Ils ont des propriétés uniques qui leur permettent d'intéragir les uns avec "
+"les autres. D'autres nœuds comme Node2D, Sprite, etc. ne fonctionneront pas. "
+"Vous pouvez toujours utiliser certains nœuds qui fonctionnent avec d'autres "
+"comme AnimationPlayer, Tween ou StreamPlayer. Les nœuds Control sont des "
+"CanvasItems comme Node2D, vous pouvez donc leur appliquer des shaders."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
 msgid "All control nodes share the same main properties:"
-msgstr ""
+msgstr "Tous les nœuds Control partagent les mêmes propriétés principales :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Anchor"
-msgstr ""
+msgstr "Ancrage"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
-msgstr ""
+msgstr "Rectangle de délimitation"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
+#, fuzzy
 msgid "Focus and focus neighbour"
-msgstr ""
+msgstr "Se concentrer et se concentrer sur son voisin"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
-msgstr ""
+msgstr "Drapeaux de taille"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "Margin"
-msgstr ""
+msgstr "Marge"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:44
 msgid "The optional UI theme"
-msgstr ""
+msgstr "Le thème optionnel de l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:46
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
+"Une fois que vous aurez compris les bases du nœud Control, il vous faudra "
+"moins de temps pour apprendre tous les nœuds qui en dérivent."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:51
 msgid "The 5 most common UI elements"
-msgstr ""
+msgstr "Les 5 éléments les plus courants de l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:53
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
+"Godot propose des douzaines de nœuds Control. Beaucoup d'entre eux sont là "
+"pour vous aider à réaliser des plugins pour l'éditeur et des applications."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:56
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
+"Pour la plupart des jeux, vous n'aurez besoin que de cinq types d'éléments "
+"d'interface utilisateur, et de quelques Containers. Ces cinq nœuds Control "
+"sont :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid "Label: for displaying text"
-msgstr ""
+msgstr "Label : pour afficher du texte"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:60
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
 msgstr ""
+"TextureRect : utilisé principalement pour les arrière-plans, ou tout ce qui "
+"doit être une image statique"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:62
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
+"TextureProgress : pour les barres de vie, les barres de chargement, "
+"horizontales, verticales ou radiales"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "NinePatchRect: for scalable panels"
-msgstr ""
+msgstr "NinePatchRect : pour des panneaux redimensionnables"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:65
 msgid "TextureButton: to create buttons"
-msgstr ""
+msgstr "TextureButton : pour créer des boutons"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:69
 msgid "The 5 most common Control nodes for UI design"
 msgstr ""
+"Les 5 nœuds Control les plus courants pour la conception de l'interface "
+"utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
-msgstr ""
+msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
 msgid ""
@@ -162,6 +200,10 @@ msgid ""
 "the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behaviour:"
 msgstr ""
+"**TextureRect** affiche une texture ou une image à l'intérieur d'une "
+"interface utilisateur. Il ressemble au nœud Sprite mais il offre plusieurs "
+"modes de mise à l'échelle. Définissez la propriété Stretch Mode pour changer "
+"son comportement :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -169,20 +211,29 @@ msgid ""
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
+"``Scale On Expand (compat)`` met à l'échelle la texture afin de s'ajuster au "
+"rectangle englobant le noeud, seulement si la propriété ``expand`` est égale "
+"à ``true``; sinon, le comportement est le même que le mode ``Keep`` qui est "
+"le mode par défaut pour des raisons de rétro-compatibilité."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:79
 msgid "``Scale`` scales the texture to fit the node’s bounding rectangle"
 msgstr ""
+"``Scale`` met à l'échelle la texture afin de s'ajuster au rectangle "
+"englobant le noeud"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Tile`` makes the texture repeat, but it won't scale"
 msgstr ""
+"``Tile`` permet à la texture de se répéter, mais ne se mettra pas à l'échelle"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively"
 msgstr ""
+"``Keep`` et ``Keep Centered`` force la texture à garder sa taille d'origine, "
+"dans le coin supérieur gauche ou au centre du cadre respectivement"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:84
 msgid ""
@@ -190,6 +241,9 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively"
 msgstr ""
+"``Keep Aspect`` et ``Keep Aspect Centered`` met à l'échelle la texture mais "
+"la force à garder le rapport hauteur/largeur d'origine, dans le coin "
+"supérieur gauche ou au centre du cadre respectivement"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -197,20 +251,27 @@ msgid ""
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node’s limits"
 msgstr ""
+"``Keep Aspect Covered`` fonctionne comme ``Keep Aspect Centered`` mais le "
+"côté le plus court s'étend jusqu'au rectangle de délimitation et le côté le "
+"plus long est coupé aux limites du noeud"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's colour. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
+"Comme pour les noeuds Sprite, vous pouvez moduler la couleur du noeud "
+"TextureRect. Cliquez sur la propriété ``Modulate`` et utilisez le sélecteur "
+"de couleur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:92
 msgid "TextureRect modulated with a red color"
-msgstr ""
+msgstr "TextureRect modulé par la couleur rouge"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
+#, fuzzy
 msgid "TextureButton"
-msgstr ""
+msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -220,8 +281,15 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 2-bit, pure black and white image."
 msgstr ""
+"**TextureButton** est comme TextureRect, sauf qu'il a cinq emplacements de "
+"texture: un pour chacun des états du bouton. La plupart du temps, vous "
+"utiliserez les textures Normal, Pressed et Hover. La texture Focused est "
+"utile si votre interface réagit à la saisie clavier. Le sixième emplacement "
+"d'image, Click Mask, vous permet de définir la zone cliquable à l'aide d'une "
+"image en noir et blanc de 2 bits."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:104
+#, fuzzy
 msgid ""
 "In the Base Button section, you'll find a few checkboxes that change how the "
 "button behaves. When ``Toggle Mode`` is on, the button will toggle between "
@@ -231,14 +299,23 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
+"Dans la section Bouton de base, vous trouverez quelques cases à cocher qui "
+"modifient le comportement du bouton. Lorsque l'option ``Toggle Mode`` est "
+"activée, le bouton bascule entre l'état actif et l'état normal lorsque vous "
+"appuyez dessus. Désactivé\" le désactive par défaut, auquel cas il utilisera "
+"la texture ``Disabled``. TextureButton partage quelques propriétés avec le "
+"cadre de texture : il a une propriété ``modulate``, pour changer sa couleur, "
+"et les modes ``Resize`` et ``Stretch`` pour changer son comportement "
+"d'échelle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:114
+#, fuzzy
 msgid "TextureButton and its 5 texture slots"
-msgstr ""
+msgstr "BoutonTexture et ses 5 fentes de texture"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureProgress"
-msgstr ""
+msgstr "TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
 msgid ""
@@ -246,6 +323,9 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
+"**TextureProgress** empile jusqu'à 3 sprites pour créer une barre de "
+"progression. Les textures Under et Over prennent en sandwich la texture "
+"Progress, qui affiche la valeur de la barre."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:123
 msgid ""
@@ -254,6 +334,10 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
+"La propriété ``Mode`` contrôle la direction dans laquelle la barre se "
+"développe : horizontalement, verticalement ou radialement. Si vous la réglez "
+"sur radial, les propriétés ``Initial Angle`` et ``Fill Degrees`` vous "
+"permettent de limiter la plage de valeurs de la jauge."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:128
 msgid ""
@@ -265,14 +349,22 @@ msgid ""
 "the default of ``1`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
+"Pour animer la barre, allez voir du coté de la section Range. Réglez les "
+"propriétés ``Min`` et ``Max`` pour définir la plage de valeurs de la jauge. "
+"Par exemple, pour représenter la vie d'un personnage, vous régleriez ``Min`` "
+"sur ``0,`` et ``Max`` sur la vie maximale du personnage. Changez la "
+"propriété ``Value`` pour mettre à jour la barre. Si vous laissez les valeurs "
+"``Min`` et ``Max`` à la valeur par défaut de ``1`` et ``100,`` et mettez la "
+"propriété ``Value`` à ``40``, 40% de la texture ``Progress`` apparaîtra, et "
+"60% restera caché."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:138
 msgid "TextureProgress bar, two thirds filled"
-msgstr ""
+msgstr "Barre TextureProgress, remplie aux deux tiers"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
 msgid ""
@@ -282,14 +374,20 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign respectively."
 msgstr ""
+"Un **Label** affiche du texte à l'écran. Vous trouverez toutes ses "
+"propriétés dans la section Label, dans l'Inspecteur. Ecrivez le texte dans "
+"la propriété ``Text``, et cochez Autowrap si vous voulez qu'il respecte la "
+"taille de la zone de texte. Si la fonction Autowrap est désactivée, vous ne "
+"pourrez pas mettre à l'échelle le nœud. Vous pouvez aligner le texte "
+"horizontalement et verticalement avec Align et Valign respectivement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
 msgid "Picture of a Label"
-msgstr ""
+msgstr "Image d'un Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "NinePatchRect"
-msgstr ""
+msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
 msgid ""
@@ -298,31 +396,45 @@ msgid ""
 "corners. It is useful to build panels, dialogue boxes and scalable "
 "backgrounds for your UI."
 msgstr ""
+"**NinePatchRect** prend une texture divisée en 3 lignes et 3 colonnes. Le "
+"centre et les côtés du carreau se dupliquent lorsque vous mettez à l'échelle "
+"la texture, mais jamais les coins. Il est utile pour créer des panneaux, des "
+"boîtes de dialogue et des arrière-plans flexible pour votre interface "
+"utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr ""
+msgstr "NinePatchRect mis à l'échelle avec la propriété min\\_size"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "There are two workflows to build responsive UIs"
 msgstr ""
+"Il existe deux méthodes de travail pour créer des interfaces utilisateur "
+"réactives"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:169
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
 msgstr ""
+"Il existe deux méthodes de travail pour construire des interfaces évolutives "
+"et flexibles dans Godot :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:171
 msgid ""
 "You have many container nodes at your disposal that scale and place UI "
 "elements for you. They take control over their children."
 msgstr ""
+"Vous avez de nombreux nœuds conteneurs à votre disposition qui mettent à "
+"l'échelle et placent des éléments de l'interface utilisateur pour vous. Ils "
+"prennent le contrôle de leurs enfants."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
+"De l'autre côté, vous avez le menu de mise en page. Il vous aide à ancrer, "
+"placer et redimensionner un élément d'interface utilisateur dans son parent."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
 msgid ""
@@ -340,10 +452,15 @@ msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
 msgstr ""
+"Au fur et à mesure que vous créerez des interfaces utilisateur pour vos jeux "
+"et outils, vous développerez une intuition de ce qui convient le mieux à "
+"chaque situation."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:180
 msgid "Place UI elements precisely with anchors"
 msgstr ""
+"Placer précisément les éléments de l'interface utilisateur à l'aide "
+"d'ancrages"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:182
 msgid ""

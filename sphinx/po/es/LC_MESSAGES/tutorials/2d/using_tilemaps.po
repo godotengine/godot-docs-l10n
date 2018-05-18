@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 21:18+0200\n"
+"POT-Creation-Date: 2018-05-18 14:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using tilemaps"
-msgstr ""
+msgstr "Usando tilemaps"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
@@ -31,16 +31,23 @@ msgid ""
 "start with bunch of reference tiles (or pieces) that can be put on a grid, "
 "as many times each as desired - think of it like a map editor:"
 msgstr ""
+"Los tilemaps son un modo simple y rápido de crear niveles para juegos 2D. "
+"Básicamente, comienzas con una lista de tiles de referencia (o piezas) que "
+"se pueden colocar en una rejilla, tantas veces como se desee, imagínalo como "
+"un editor de mapas:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
 msgid ""
 "Collisions can also be added to the tiles, allowing for both 2D side "
 "scrolling and top down games."
 msgstr ""
+"También se pueden agregar figuras de colisión a los tiles, permitiendo crear "
+"juegos tanto \"side scrolling\" (vista lateral) como \"top down\" (vista "
+"superior)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:19
 msgid "Making a tileset"
-msgstr ""
+msgstr "Creando un tileset"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid ""
@@ -49,6 +56,11 @@ msgid ""
 "packers* that will generate these spritesheets out of your separate texture "
 "files. Having them as separate images also works."
 msgstr ""
+"Para comenzar, un tileset (conjunto de tiles) debe ser creado. Aquí hay "
+"algunos tiles, todos están en la misma imagen por razones de optimización. "
+"Los programas llamado *texture packers* se utilizan para generar "
+"spritesheets de los archivos separados de imágenes usados como textura. "
+"También se pueden utilizar archivos de imagen individuales."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid ""
@@ -57,6 +69,10 @@ msgid ""
 "will cause issues later. ``Mipmaps`` should already be disabled, if not, "
 "disable this too."
 msgstr ""
+"Crea un proyecto nuevo y mueve la imagen PNG mostrada arriba dentro de la "
+"carpeta. Luego, en la configuración de importación (panel Importar) "
+"desactivar ``Filter`` de las opciones. ``Mipmaps`` debería estar "
+"desactivado, en caso contrario, desactivar esto también."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:33
 msgid ""
@@ -65,6 +81,9 @@ msgid ""
 "it and maintain it. Here is what it would look like to manually edit the "
 "resource:"
 msgstr ""
+"Crearemos un recurso :ref:`TileSet <class_TileSet>`. Aunque este recurso "
+"exporte propiedades, es difícil incluir y mantener datos complejos. Así es "
+"como se ve si se intenta editar el recurso manualmente:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:40
 msgid ""
@@ -72,10 +91,13 @@ msgid ""
 "work. But the easiest way to edit and maintain a tileset is exporting it "
 "from a specially-crafted scene!"
 msgstr ""
+"Hay muchas propiedades y, con un poco de esfuerzo, este modo de editar puede "
+"funcionar, pero el modo más simple para mantener tilesets ¡es exportándolos "
+"desde una escena creada especialmente para esto!"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid "TileSet scene"
-msgstr ""
+msgstr "Escena TileSet"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:47
 msgid ""
@@ -85,6 +107,11 @@ msgid ""
 "snap (``Use Snap`` icon or ``S`` key). Moving tiles with the mouse might "
 "still be a inaccurate so use your arrow keys as well."
 msgstr ""
+"Crea una nueva escena con un Node o Node2D como raíz. Agrega un sprite por "
+"cada tile que quieras definir, como los tiles quií son de 50x50, deberías "
+"activar la rejilla (``Vista -> Mostrar rejilla``) y activa el fijado (botón "
+"``Usar Fijado`` o tecla ``S``). Mover tiles con el mouse puede seguir siendo "
+"poco preciso así que también conviene usar las flechas del teclado."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:53
 msgid ""
@@ -92,6 +119,9 @@ msgid ""
 "region property of the sprite to adjust which part of the texture is being "
 "used."
 msgstr ""
+"Si hay más de un tile presente en la imagen de orígen, asegúrate de utilizar "
+"la propiedad \"region\" o \"frame\" (si están empaquetados de manera "
+"uniforme) del sprite para ajustar qué parte de la textura será utilizada."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:57
 msgid ""
@@ -100,12 +130,18 @@ msgid ""
 "changed the region, etc), the tile will still be **identified correctly and "
 "updated**. This name should be unique."
 msgstr ""
+"Finalmente, cerciórate de nombrar tus nodos sprites correctamente. Para "
+"asegurarse de que en futuras ediciones (por ejemplo, agregando colisiones, "
+"cambiando regiones de imagen, etc.), el tile seguirá siendo **identificado y "
+"actualizado correctamente**. El nombre debe ser único."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
 "Sounds like a lot of requirements, so here's a screenshot that shows where "
 "everything of relevance is:"
 msgstr ""
+"Parecen muchos requerimientos, así que aquí hay una captura de pantalla que "
+"muestra dónde está todo lo importante:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:67
 msgid ""
@@ -113,10 +149,13 @@ msgid ""
 "you have multiple tiles in a single source image). Again, *remember that "
 "their names must be unique*."
 msgstr ""
+"Continúe agregando todos los tiles, ajustando posiciones de la textura donde "
+"sea necesario (en caso de usar una única imagen para muchos tiles). *No "
+"olvides que sus nombres deben ser únicos*."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:74
 msgid "Collision"
-msgstr ""
+msgstr "Colisiones"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:76
 msgid ""
@@ -125,6 +164,11 @@ msgid ""
 "CollisionPolygon as a child of the StaticBody2D. The CollisionPolygon is "
 "recommended because it is easier to edit."
 msgstr ""
+"Para agregar colisiones a un tile, crea un StaticBody2D como hijo de cada "
+"sprite \"sólido\". Este nodo representa a un cuerpo estático de colisión. "
+"Luego crea un CollisionShape2D o ColissionPolygon2D como hijo del "
+"StaticBody2D. El nodo CollisionPolygon2D es recomendable ya que es más fácil "
+"de editar."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:83
 msgid ""
@@ -135,28 +179,41 @@ msgid ""
 "move** the collision and/or collision polygon nodes. Leave them at offset "
 "0,0, with scale 1,1 and rotation 0 with respect to the parent sprite."
 msgstr ""
+"Finalmente, edita el polígono o figura, todo esto le dará una colisión al "
+"tile además de cumplir los requerimientos indicados por el icono de "
+"advertencia, junto al nodo de colisión. **Recuerde usar ajuste a rejilla**, "
+"utilizando el ajuste asegurarás que los puntos estén propiamente alineados, "
+"permitiendo que un personaje pueda caminar sin problemas de tile a tile. "
+"También **no escales o muevas** los cuerpos o nodos de figuras de colisión, "
+"déjalos en posición 0,0 con escala 1,1 y rotación 0 respecto al sprite padre."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
 "Keep adding collisions to the tiles until we are done. Note that BG is just "
 "a background, so it should not have a collision."
 msgstr ""
+"Agrega colisiones hasta que esté todo listo. Notar que BG en la imagen es "
+"sólo para el fondo y no debería tener colisiones."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:97
 msgid ""
 "OK! We're done! Remember to save this scene for future edit. Name it "
 "\"tileset_edit.scn\" or something like that."
 msgstr ""
+"Ya está listo, recuerda grabar la escena para ediciones futuras. Puedes "
+"llamarla \"tileset_edit.tscn\" o como desees."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:101
 msgid "Exporting a TileSet"
-msgstr ""
+msgstr "Exportando un Tileset"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:103
 msgid ""
 "With the scene created and opened in the editor, the next step will be to "
 "create a tileset. Use Scene > Convert To > Tile Set from the Scene Menu:"
 msgstr ""
+"Con la escena creada y abierta en el editor, el siguiente paso será crear un "
+"tileset. Usa Escena > Convertir a > Tileset en el Menú de Escena:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:108
 msgid ""
@@ -165,22 +222,29 @@ msgid ""
 "file is overwritten, existing tiles are merged and updated (they are "
 "referenced by their unique name, so again, **name your tiles properly**)."
 msgstr ""
+"Luego coloque un nombre, como \"mytileset.tres\". Asegúrate que la opción "
+"\"Unir con Existente\" está activada. De este modo, cada vez que un recurso "
+"de tileset es sobreescrito, los tiles existentes serán combinados y "
+"actualizados (referenciados por su nombre único, por eso se debe **nombrar "
+"los tiles apropiadamente**)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:117
 msgid "Using the TileSet in a TileMap"
-msgstr ""
+msgstr "Usando el TileSet en un TileMap"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:119
 msgid ""
 "Create a new scene, using any node or node2d as root, and then create a :ref:"
 "`TileMap <class_TileMap>` as a child."
 msgstr ""
+"Crea una nueva escena usando cualquier Node o Node2d como raíz, luego agrega "
+"un :ref:`TileMap <class_TileMap>` como hijo."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:125
 msgid ""
 "Go to the TileSet property of this node and assign the one created in "
 "previous steps:"
-msgstr ""
+msgstr "Ve a la propiedad TileSet de este nodo y asigna lo creado previamente:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:130
 msgid ""
@@ -190,10 +254,16 @@ msgid ""
 "does not need to be changed, but can be used to fine tune performance in "
 "specific cases (if you know what you are doing)."
 msgstr ""
+"Cambia el \"cell size\" a `50`, ya que es el tamaño utilizado por los tiles. "
+"El \"quadrant size\" es un valor de ajuste especial, es lo que el motor "
+"usará para dibujar y descartar porciones del tilemap, por defecto en bloques "
+"de 16x16 tiles. Este valor normalmente no necesita ser cambiado pero se "
+"puede utilizar para un ajuste fino de desempeño en algunos casos "
+"particulares."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid "Painting your world"
-msgstr ""
+msgstr "Pintando tu mundo"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:139
 msgid ""
@@ -201,6 +271,9 @@ msgid ""
 "on screen, allowing to paint on it with the selected tile on the left "
 "palette."
 msgstr ""
+"Con todo listo, asegúrate que el nodo TileMap está seleccionado. Una rejilla "
+"roja aparecerá en pantalla, permitiendo pintar en esta con el tile "
+"seleccionado de la palera a la izquierda."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
@@ -208,12 +281,17 @@ msgid ""
 "common, given it's a huge node), it is recommended that you lock it, using "
 "the lock button:"
 msgstr ""
+"Para prevenir mover accidentalmente el nodo TileMap (algo común ya que es un "
+"nodo normalmente grande), es recomendable bloquearlo utilizando el botón con "
+"forma de candado:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:151
 msgid ""
 "If you accidentally place a tile somewhere you don't want it to be, you can "
 "delete it with ``RMB`` while in the tilemap editor."
 msgstr ""
+"Si se coloca accidentalmente un tile en un lugar no deseado, se puede "
+"eliminar con ``click derecho`` mientras se está editando."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid ""
@@ -226,10 +304,18 @@ msgid ""
 "entire region of bricks. But for some kinds of tiles, flipping can be a "
 "convenient and space-saving feature."
 msgstr ""
+"También se pueden invertir y rotar sprites en el editor de TileMap (nota que "
+"girar el sprite en el TileSet no tendrá efecto). Iconos en la parte superior "
+"derecha del editor permiten invertir y rotar el sprite seleccionado - "
+"también se pueden utilizar las teclas A y S para voltear horizontal y "
+"verticalmente. Con un patrón de ladrillos como los de este tutorial, "
+"invertir sprites puede crear discontinuidades poco agradables a menos que "
+"gires grandes zonas de ladrillos, pero para algunos tipos de tiles esto "
+"puede ser conveniente para ahorrar espacio y recursos en general."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:164
 msgid "Offset and scaling artifacts"
-msgstr ""
+msgstr "Desplazamiento y errores de escalado"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid ""
@@ -237,6 +323,9 @@ msgid ""
 "moving to a non pixel-aligned location) will most likely result in filtering "
 "artifacts like so:"
 msgstr ""
+"Cuando se utiliza una textura única para los tiles, escalar el tilemap (o "
+"moviéndolo a una posición no alineada a pixeles) puede resultar en errores "
+"visuales o artefactos:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:172
 msgid ""
@@ -244,19 +333,28 @@ msgid ""
 "So, to avoid this situation, there are a few workarounds. Try the one that "
 "looks better for you:"
 msgstr ""
+"Esto es inevitable, ya que es el modo en el que funciona el filtro bilinear "
+"del hardware. Para no llegar a esta situación hay varias cosas que se pueden "
+"hacer, prueba la que es mejor para tí:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:177
+#, fuzzy
 msgid ""
 "Disable filtering and mipmaps for either the tileset texture or all tile "
 "textures if using separate images (see the :ref:`doc_import_images` asset "
 "pipeline tutorial)."
 msgstr ""
+"Desactiva filtros y mipmaps para la textura o texturas utilizada en el "
+"tileset (ver :ref:`doc_import_images` asset pipeline tutorial)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:178
 msgid ""
 "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > "
 "2d > Use Pixel Snap`` to true, you can also search for ``Pixel Snap``)."
 msgstr ""
+"Activa pixel snap, se encuentra en ``Project > Project Settings > Rendering "
+"> Quality > 2d > Use Pixel Snap``, también se puede escribir ``Pixel Snap`` "
+"en la barra de búsqueda para localizarlo rápidamente."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
@@ -264,9 +362,14 @@ msgid ""
 "`doc_viewports` tutorial). Simply adding a camera, setting it to ``Current`` "
 "and playing around with it's ``Zoom`` may be a good starting point."
 msgstr ""
+"El escalado del viewport (scaling) puede ayudar al reducir tamaño del mapa "
+"(ver tutorial :ref:`doc_viewports`). Simplemente agrega una cámara, "
+"configurándola como ``current`` y probando con el ``zoom``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
 msgid ""
 "You can use a single, separate image for each tile. This will remove all "
 "artifacts, but can be more cumbersome to implement and is less optimized."
 msgstr ""
+"Puedes utilizar una imagen para cada tile. Esto removerá todos los "
+"artefactos pero puede ser complicado de implementar y es menos óptimo."
