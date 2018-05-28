@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: 2018-05-21 09:40+0000\n"
 "Last-Translator: matevž lapajne <sivar.lapajne@gmail.com>\n"
 "Language-Team: Slovenian <https://hosted.weblate.org/projects/godot-engine/"
@@ -516,9 +516,10 @@ msgstr ""
 "prevzeto 64."
 
 #: ../../docs/about/faq.rst:53
+#, fuzzy
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
-"system with Linux, like the Raspberry Pi. There is also some unofficial "
+"systems with Linux, like the Raspberry Pi. There is also some unofficial "
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
@@ -2680,7 +2681,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
-#: ../../docs/development/cpp/configuring_an_ide.rst:106
+#: ../../docs/development/cpp/configuring_an_ide.rst:147
 msgid "Project Setup"
 msgstr ""
 
@@ -3472,23 +3473,23 @@ msgid "MessageLabel"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:875
-msgid "``Layout``: \"Center Bottom\""
+msgid "``Layout``: \"Center\""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:878
-msgid "Left: ``-100``"
+msgid "Left: ``-200``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:879
-msgid "Top: ``-200``"
+msgid "Top: ``-150``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:880
-msgid "Right: ``100``"
+msgid "Right: ``200``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:881
-msgid "Bottom: ``-100``"
+msgid "Bottom: ``0``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:883
@@ -3500,23 +3501,23 @@ msgid "StartButton"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:888
-msgid "``Layout``: \"Center\""
+msgid "``Layout``: \"Center Bottom\""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:891
-msgid "Left: ``-60``"
+msgid "Left: ``-100``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:892
-msgid "Top: ``70``"
+msgid "Top: ``-200``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:893
-msgid "Right: ``60``"
+msgid "Right: ``100``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
-msgid "Bottom: ``150``"
+msgid "Bottom: ``-100``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:896
@@ -7900,7 +7901,7 @@ msgid "Godot"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
-#: ../../docs/community/contributing/documentation_guidelines.rst:104
+#: ../../docs/community/contributing/documentation_guidelines.rst:102
 msgid "License"
 msgstr "Licenca"
 
@@ -10371,11 +10372,22 @@ msgid ""
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1392
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
+msgid ""
+"Coroutines themselves use the ``completed`` signal when they transition into "
+"an invalid state, for example:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+msgid ""
+"``my_func`` will only continue execution once both the buttons are pressed."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
 msgid "Onready keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1394
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1409
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -10383,7 +10395,7 @@ msgid ""
 "call to Node._ready() is made."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1421
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -10391,11 +10403,11 @@ msgid ""
 "replace the above code with a single line:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1416
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
 msgid "Assert keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."
@@ -12593,6 +12605,23 @@ msgid ""
 "vary according to your use case. GDScript is likely fast enough for most "
 "general scripting workloads. C# is faster, but requires some expensive "
 "marshalling when talking to Godot."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
+msgid "Using Nuget Packages in Godot"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+msgid ""
+"`Nuget <https://www.nuget.org/>`_ Packages can be installed and used with "
+"Godot, as with any project. Many IDEs (such as vs code) can add packages "
+"directly. They can also be added manually by adding the package reference in "
+"the .csproj file located in the project root:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:164
+msgid ""
+"Then using the dotnet command line to restore package, in the project root::"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
@@ -29241,8 +29270,8 @@ msgstr ""
 msgid ""
 "In ``_process`` we set the text of the ``FPS_Label`` to ``Engine."
 "get_frames_per_second``, but because ``get_frames_per_second`` returns a "
-"int, we have to cast it to a string using ``str`` before we can add it to "
-"our label."
+"integer, we have to cast it to a string using ``str`` before we can add it "
+"to our label."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:280
@@ -29388,9 +29417,9 @@ msgstr ""
 msgid ""
 "Now that we've looked at how ``Pause_Popup.tscn`` is set up, lets write the "
 "code to make it work. Normally we'd attach a script to the root node of the "
-"scene, ``Pause_Popup`` in this case, but since we'll be needed to receive a "
-"couple signals in ``Globals.gd``, we'll write all of the code for the pop up "
-"there."
+"scene, ``Pause_Popup`` in this case, but since we'll need to receive a "
+"couple of signals in ``Globals.gd``, we'll write all of the code for the pop "
+"up there."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:394
@@ -29811,7 +29840,7 @@ msgid ""
 "Now when a node with ``Respawn_Point_Setter.gd`` has it's ``_ready`` "
 "function called, all of the children nodes of the node with "
 "``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level."
-"tscn``, we be added to ``respawn_points`` in ``Globals.gd``."
+"tscn``, will be added to ``respawn_points`` in ``Globals.gd``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:775
@@ -50967,7 +50996,7 @@ msgid "That's it! Now you should be good to go :)"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:71
-msgid "QtCreator"
+msgid "Qt Creator"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:74
@@ -50978,11 +51007,11 @@ msgstr ""
 msgid "Choose *New Project* -> *Import Project* -> *Import Existing Project*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:77
+#: ../../docs/development/cpp/configuring_an_ide.rst:80
 msgid "Set the path to your Godot root directory and enter the project name."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:78
+#: ../../docs/development/cpp/configuring_an_ide.rst:84
 msgid ""
 "Here you can choose which folders and files will be visible to the project. "
 "C/C++ files are added automatically. Potentially useful additions: \\*.py "
@@ -50990,253 +51019,278 @@ msgid ""
 "Click \"Next\"."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:81
+#: ../../docs/development/cpp/configuring_an_ide.rst:90
 msgid "Click *Finish*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:82
+#: ../../docs/development/cpp/configuring_an_ide.rst:91
 msgid ""
 "Add a line containing ``.`` to *project_name.includes* to get working code "
 "completion."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:85
+#: ../../docs/development/cpp/configuring_an_ide.rst:96
 msgid "Build and run"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:87
+#: ../../docs/development/cpp/configuring_an_ide.rst:98
 msgid "Build configuration:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:89
+#: ../../docs/development/cpp/configuring_an_ide.rst:100
 msgid "Click on *Projects* and open the *Build* tab."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:90
+#: ../../docs/development/cpp/configuring_an_ide.rst:101
 msgid "Delete the pre-defined ``make`` build step."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:91
+#: ../../docs/development/cpp/configuring_an_ide.rst:105
 msgid "Click *Add Build Step* -> *Custom Process Step*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:92
+#: ../../docs/development/cpp/configuring_an_ide.rst:109
 msgid "Type ``scons`` in the *Command* field."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:93
+#: ../../docs/development/cpp/configuring_an_ide.rst:110
 msgid ""
 "Fill the *Arguments* field with your compilation options. (e.g.: ``p=x11 "
 "target=debug -j 4``)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:95
+#: ../../docs/development/cpp/configuring_an_ide.rst:114
 msgid "Run configuration:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:97
+#: ../../docs/development/cpp/configuring_an_ide.rst:116
 msgid "Open the *Run* tab."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:98
+#: ../../docs/development/cpp/configuring_an_ide.rst:117
 msgid ""
-"Point the *Executable* to your compiled Godot binary (e.g: ``%{buildDir}\\bin"
-"\\godot.windows.tools.64.exe``)"
+"Point the *Executable* to your compiled Godot binary (e.g: ``%{buildDir}/bin/"
+"godot.x11.opt.tools.64``)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:99
+#: ../../docs/development/cpp/configuring_an_ide.rst:118
 msgid ""
 "If you want to run a specific game or project, point *Working directory* to "
 "the game directory."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:100
+#: ../../docs/development/cpp/configuring_an_ide.rst:119
 msgid ""
 "If you want to run the editor, add ``-e`` to the *Command line arguments* "
 "field."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:103
+#: ../../docs/development/cpp/configuring_an_ide.rst:124
+msgid "Updating Sources after pulling latest commits"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:126
+msgid ""
+"As a developer you usually want to frequently pull the latest commits from "
+"the upstream git repository or a specific fork etc. However this brings a "
+"little problem with it: as the development continues, source files (and "
+"folders) are added or removed. These changes needs to be reflected in your "
+"project files for Qt Creator too, so you continue to have a nice experience "
+"coding in it. A simple way to check these things, is to right click at your "
+"root folder in the \"Projects View\" and click on \"Edit files...\""
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:136
+msgid ""
+"Now a new dialog should appear that is similar in functionality to the one "
+"in the third step of the \"Importing the project\" section. Here now you can "
+"check whether you want to add/remove specific files and/or folders. You can "
+"chose by clicking with your mouse or just simply by clicking the \"Apply "
+"Filter\" button. A simple click on \"Ok\" and you're ready to continue your "
+"work."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:144
 msgid "Xcode"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:108
+#: ../../docs/development/cpp/configuring_an_ide.rst:149
 msgid "Create an Xcode external build project anywhere"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:112
+#: ../../docs/development/cpp/configuring_an_ide.rst:153
 msgid "Set the *Build tool* to the path to scons"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:114
+#: ../../docs/development/cpp/configuring_an_ide.rst:155
 msgid "Modify Build Target's Xcode Info Tab:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:116
+#: ../../docs/development/cpp/configuring_an_ide.rst:157
 msgid ""
 "Set *Arguments* to something like: platform=osx tools=yes bits=64 "
 "target=debug"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:117
+#: ../../docs/development/cpp/configuring_an_ide.rst:158
 msgid ""
 "Set *Directory* to the path to Godot's source folder. Keep it blank if "
 "project is already there."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:118
+#: ../../docs/development/cpp/configuring_an_ide.rst:159
 msgid "You may uncheck *Pass build settings in environment*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:122
+#: ../../docs/development/cpp/configuring_an_ide.rst:163
 msgid "Add a Command Line Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:124
+#: ../../docs/development/cpp/configuring_an_ide.rst:165
 msgid ""
 "Go to Xcode File > New > Target... and add a new Xcode command line target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:130
+#: ../../docs/development/cpp/configuring_an_ide.rst:171
 msgid "Name it something so you know not to compile with this target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:131
+#: ../../docs/development/cpp/configuring_an_ide.rst:172
 msgid "e.g. ``GodotXcodeIndex``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:132
+#: ../../docs/development/cpp/configuring_an_ide.rst:173
 msgid ""
 "Goto the newly created target's *Build Settings* tab and search for *Header "
 "Search Paths*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:133
+#: ../../docs/development/cpp/configuring_an_ide.rst:174
 msgid "Set *Header Search Paths* to an absolute path to Godot's source folder"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:134
+#: ../../docs/development/cpp/configuring_an_ide.rst:175
 msgid "Make it recursive by adding two \\*'s to the end of the path"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:135
+#: ../../docs/development/cpp/configuring_an_ide.rst:176
 msgid "e.g. ``/Users/me/repos/godot-source/\\**``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:137
+#: ../../docs/development/cpp/configuring_an_ide.rst:178
 msgid "Add Godot Source to the Project:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:139
+#: ../../docs/development/cpp/configuring_an_ide.rst:180
 msgid "Drag and drop godot source into project file browser."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:140
+#: ../../docs/development/cpp/configuring_an_ide.rst:181
 msgid "Uncheck *Create External Build System*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:144
+#: ../../docs/development/cpp/configuring_an_ide.rst:185
 msgid "Click Next"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:145
+#: ../../docs/development/cpp/configuring_an_ide.rst:186
 msgid "Select *create groups*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:149
+#: ../../docs/development/cpp/configuring_an_ide.rst:190
 msgid "Check off only your command line target in the *Add to targets* section"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:150
+#: ../../docs/development/cpp/configuring_an_ide.rst:191
 msgid "Click finish. Xcode will now index the files."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:151
+#: ../../docs/development/cpp/configuring_an_ide.rst:192
 msgid "Grab a cup of coffee... Maybe make something to eat, too"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:152
+#: ../../docs/development/cpp/configuring_an_ide.rst:193
 msgid ""
 "You should have jump to definition, auto completion, and full syntax "
 "highlighting when it is done."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:155
+#: ../../docs/development/cpp/configuring_an_ide.rst:196
 msgid "Scheme Setup"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:157
+#: ../../docs/development/cpp/configuring_an_ide.rst:198
 msgid "Edit Build Scheme of External Build Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:159
+#: ../../docs/development/cpp/configuring_an_ide.rst:200
 msgid "Open scheme editor of external build target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:160
+#: ../../docs/development/cpp/configuring_an_ide.rst:201
 msgid "Expand the *Build* menu"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:161
+#: ../../docs/development/cpp/configuring_an_ide.rst:202
 msgid "Goto *Post Actions*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:162
+#: ../../docs/development/cpp/configuring_an_ide.rst:203
 msgid ""
 "Add a new script run action, select your project in ``Provide build settings "
 "from`` as this allows you to use ``${PROJECT_DIR}`` variable."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:166
+#: ../../docs/development/cpp/configuring_an_ide.rst:207
 msgid "Write a script that gives the binary a name that Xcode will recognize"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:167
+#: ../../docs/development/cpp/configuring_an_ide.rst:208
 msgid ""
 "e.g. ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/"
 "godot/bin/godot``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:168
+#: ../../docs/development/cpp/configuring_an_ide.rst:209
 msgid "Build the external build target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:170
+#: ../../docs/development/cpp/configuring_an_ide.rst:211
 msgid "Edit Run Scheme of External Build Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:172
+#: ../../docs/development/cpp/configuring_an_ide.rst:213
 msgid "Open the scheme editor again"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:173
+#: ../../docs/development/cpp/configuring_an_ide.rst:214
 msgid "Click Run"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:177
+#: ../../docs/development/cpp/configuring_an_ide.rst:218
 msgid ""
 "Set the *Executable* to the file you linked in your post build action script"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:178
+#: ../../docs/development/cpp/configuring_an_ide.rst:219
 msgid "Check *Debug executable* if it isn't already"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:179
+#: ../../docs/development/cpp/configuring_an_ide.rst:220
 msgid ""
 "You can go to *Arguments* tab and add an -e and a -path to a project to "
 "debug the editor not the project selection screen"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:182
+#: ../../docs/development/cpp/configuring_an_ide.rst:223
 msgid "Test it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:184
+#: ../../docs/development/cpp/configuring_an_ide.rst:225
 msgid "Set a breakpoint in platform/osx/godot_main_osx.mm"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:185
+#: ../../docs/development/cpp/configuring_an_ide.rst:226
 msgid "It should break at the point!"
 msgstr ""
 
@@ -53430,38 +53484,38 @@ msgid ""
 "code via pull requests, testing the development snapshots or directly the "
 "git *master* branch, report bugs or suggest enhancements on the issue "
 "tracker, improve the official documentation (both the class reference and "
-"tutorials). The following sections will cover each of those \"direct\" ways "
-"of contributing to the engine."
+"tutorials) and its translations. The following sections will cover each of "
+"those \"direct\" ways of contributing to the engine."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:39
+#: ../../docs/community/contributing/ways_to_contribute.rst:40
 msgid ""
 "**Donate.** Godot is a non-profit project, but it can still benefit from "
 "user donations for many things. Apart from usual expenses such as hosting "
 "costs or promotion material on events, we also use donation money to acquire "
 "hardware when necessary (e.g. we used donation money to buy a Macbook Pro to "
 "implement Retina/HiDPI support and various other macOS-related features). "
-"Most importantly, we also used donation money to hire our lead developer "
-"Juan Linietsky, so that he can work full-time on the engine. Even with a low "
-"monthly wage, we need a steady donation income to continue doing this, which "
-"has been very beneficial to the project so far. So if you want to donate "
-"some money to the project, check `our website <http://godotengine.org/"
-"donate>`_ for details."
+"Most importantly, we also used donation money to hire core developers so "
+"they can work full-time on the engine. Even with a low monthly wage, we need "
+"a steady donation income to continue doing this, which has been very "
+"beneficial to the project so far. So if you want to donate some money to the "
+"project, check `our website <http://godotengine.org/donate>`_ for details."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:53
+#: ../../docs/community/contributing/ways_to_contribute.rst:54
 msgid "Contributing code"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:55
+#: ../../docs/community/contributing/ways_to_contribute.rst:56
 msgid ""
 "The possibility to study, use, modify and redistribute modifications of the "
-"engine's source code are the fundamental rights that Godot's license grant "
-"you, making it `free and open source software <https://en.wikipedia.org/wiki/"
-"Free_and_open-source_software>`_."
+"engine's source code are the fundamental rights that Godot's `MIT <https://"
+"tldrlegal.com/license/mit-license>`_ license grants you, making it `free and "
+"open source software <https://en.wikipedia.org/wiki/Free_and_open-"
+"source_software>`_."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:59
+#: ../../docs/community/contributing/ways_to_contribute.rst:61
 msgid ""
 "As such, everyone is entitled to modify `Godot's source code <https://github."
 "com/godotengine/godot>`_, and send those modifications back to the upstream "
@@ -53471,11 +53525,11 @@ msgid ""
 "git commits (patches) into the main development branch."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:66
+#: ../../docs/community/contributing/ways_to_contribute.rst:68
 msgid "Contributing code changes upstream has two big advantages:"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:68
+#: ../../docs/community/contributing/ways_to_contribute.rst:70
 msgid ""
 "Your own code will be reviewed and improved by other developers, and will be "
 "further maintained directly in the upstream project, so you won't have to "
@@ -53486,7 +53540,7 @@ msgid ""
 "own project, if they are too specific."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:76
+#: ../../docs/community/contributing/ways_to_contribute.rst:78
 msgid ""
 "The whole community will benefit from your work, and other contributors will "
 "behave the same way, contributing code that will be beneficial to you. At "
@@ -53494,7 +53548,7 @@ msgid ""
 "changes to the engine!"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:81
+#: ../../docs/community/contributing/ways_to_contribute.rst:83
 msgid ""
 "To ensure good collaboration and overall quality, the Godot developers "
 "enforce some rules for code contributions, for example regarding the style "
@@ -53502,23 +53556,30 @@ msgid ""
 "workflow."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:85
+#: ../../docs/community/contributing/ways_to_contribute.rst:87
+msgid ""
+"A nice place to start may be the issue tagged as `junior jobs <https://"
+"github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3A%22junior"
+"+job%22>`_ on GitHub."
+msgstr ""
+
+#: ../../docs/community/contributing/ways_to_contribute.rst:89
 msgid ""
 "Technical details about the PR workflow are outlined in a specific section, :"
 "ref:`doc_pr_workflow`."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:88
+#: ../../docs/community/contributing/ways_to_contribute.rst:92
 msgid ""
 "Details about the code style guidelines and the ``clang-format`` tool used "
 "to enforce them are outlined in :ref:`doc_code_style_guidelines`."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:93
+#: ../../docs/community/contributing/ways_to_contribute.rst:97
 msgid "Testing and reporting issues"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:95
+#: ../../docs/community/contributing/ways_to_contribute.rst:99
 msgid ""
 "Another great way of contributing to the engine is to test development "
 "releases or the development branch and to report issues. It is also helpful "
@@ -53526,28 +53587,28 @@ msgid ""
 "the development branch and in future maintenance releases."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:101
+#: ../../docs/community/contributing/ways_to_contribute.rst:105
 msgid "Testing development versions"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:103
+#: ../../docs/community/contributing/ways_to_contribute.rst:107
 msgid "To help with the testing, you have several possibilities:"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:105
+#: ../../docs/community/contributing/ways_to_contribute.rst:109
 msgid ""
 "Compile the engine from source yourself, following the instructions of the :"
 "ref:`Compiling <toc-devel-compiling>` page for your platform."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:108
+#: ../../docs/community/contributing/ways_to_contribute.rst:112
 msgid ""
 "Test official pre-release binaries when they are announced (usually on the "
-"blog and other community platforms), such as alpha, beta and RC (release "
-"candidate) builds."
+"blog and other community platforms), such as alpha, beta and release "
+"candidate (RC) builds."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:112
+#: ../../docs/community/contributing/ways_to_contribute.rst:115
 msgid ""
 "Test \"trusted\" unofficial builds of the development branch; just ask "
 "community members for reliable providers. Whenever possible, it's best to "
@@ -53555,7 +53616,7 @@ msgid ""
 "provenance of your binaries."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:117
+#: ../../docs/community/contributing/ways_to_contribute.rst:120
 msgid ""
 "As mentioned previously, it is also helpful to keep your eyes peeled for "
 "potential bugs that might still be present in the stable releases, "
@@ -53563,11 +53624,11 @@ msgid ""
 "testing by the developers."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:123
+#: ../../docs/community/contributing/ways_to_contribute.rst:126
 msgid "Filing an issue on GitHub"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:125
+#: ../../docs/community/contributing/ways_to_contribute.rst:128
 msgid ""
 "Godot uses `GitHub's issue tracker <https://github.com/godotengine/godot/"
 "issues>`_ for bug reports and enhancement suggestions. You will need a "
@@ -53575,7 +53636,7 @@ msgid ""
 "issue\" button."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:129
+#: ../../docs/community/contributing/ways_to_contribute.rst:132
 msgid ""
 "When you report a bug, you should keep in mind that the process is similar "
 "to an appointment with your doctor. You noticed *symptoms* that make you "
@@ -53585,7 +53646,7 @@ msgid ""
 "actual cause of the bug can be identified and addressed."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:136
+#: ../../docs/community/contributing/ways_to_contribute.rst:139
 msgid ""
 "You should therefore always ask yourself: what is relevant information to "
 "give so that other Godot contributors can understand the bug, identify it "
@@ -53593,7 +53654,7 @@ msgid ""
 "should always provide:"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:141
+#: ../../docs/community/contributing/ways_to_contribute.rst:144
 msgid ""
 "**Operating system.** Sometimes bugs are system-specific, i.e. they happen "
 "only on Windows, or only on Linux, etc. That's particularly relevant for all "
@@ -53601,14 +53662,14 @@ msgid ""
 "management, audio, etc."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:146
+#: ../../docs/community/contributing/ways_to_contribute.rst:149
 msgid ""
 "**Hardware.** Sometimes bugs are hardware-specific, i.e. they happen only on "
 "certain processors, graphic cards, etc. If you are able to, it can be "
 "helpful to include information on your hardware."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:150
+#: ../../docs/community/contributing/ways_to_contribute.rst:153
 msgid ""
 "**Godot version.** This is a must have. Some issues might be relevant in the "
 "current stable release, but fixed in the development branch, or the other "
@@ -53617,7 +53678,7 @@ msgid ""
 "the start helps to speed up the diagnosis."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:156
+#: ../../docs/community/contributing/ways_to_contribute.rst:159
 msgid ""
 "**How to reproduce the bug.** In the majority of cases, bugs are "
 "reproducible, i.e. it is possible to trigger them reliably by following some "
@@ -53631,23 +53692,23 @@ msgid ""
 "each issue."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:167
+#: ../../docs/community/contributing/ways_to_contribute.rst:170
 msgid ""
 "When you click the \"New issue\" button, you should be presented with a text "
 "area prefilled with our issue template. Please try to follow it so that all "
 "issues are consistent and provide the required information."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:172
+#: ../../docs/community/contributing/ways_to_contribute.rst:175
 msgid "Contributing to the documentation"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:174
+#: ../../docs/community/contributing/ways_to_contribute.rst:177
 msgid ""
 "There are two separate resources referred to as \"documentation\" in Godot:"
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:176
+#: ../../docs/community/contributing/ways_to_contribute.rst:179
 msgid ""
 "**The class reference.** This is the documentation for the complete Godot "
 "API as exposed to GDScript and the other scripting languages. It can be "
@@ -53657,14 +53718,14 @@ msgid ""
 "request. See :ref:`doc_updating_the_class_reference` for more details."
 msgstr ""
 
-#: ../../docs/community/contributing/ways_to_contribute.rst:184
+#: ../../docs/community/contributing/ways_to_contribute.rst:187
 msgid ""
-"**The tutorials and engine documentation.** This is the part you are reading "
-"now, which is distributed in the HTML, PDF and EPUB formats. Its contents "
-"are generated from plain text files in the reStructured Text (rst) format, "
-"to which you can contribute via pull requests on the `godot-docs <https://"
-"github.com/godotengine/godot-docs>`_ GitHub repository. See :ref:"
-"`doc_documentation_guidelines` for more details."
+"**The tutorials and engine documentation and its translations.** This is the "
+"part you are reading now, which is distributed in the HTML, PDF and EPUB "
+"formats. Its contents are generated from plain text files in the "
+"reStructured Text (rst) format, to which you can contribute via pull "
+"requests on the `godot-docs <https://github.com/godotengine/godot-docs>`_ "
+"GitHub repository. See :ref:`doc_documentation_guidelines` for more details."
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:4
@@ -54731,15 +54792,18 @@ msgstr ""
 msgid ""
 "This page describes the rules to follow if you want to contribute to Godot "
 "Engine by writing or reviewing documentation, or by translating existing "
-"documentation."
+"documentation. Also have a look at README of the `godot-docs GitHub "
+"repository <https://github.com/godotengine/godot-docs>`_ and the `docs front "
+"page <http://docs.godotengine.org>`_ on what steps to follow and how to "
+"contact the docs team."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:11
+#: ../../docs/community/contributing/documentation_guidelines.rst:14
 #: ../../docs/community/contributing/updating_the_class_reference.rst:17
 msgid "How to contribute"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:13
+#: ../../docs/community/contributing/documentation_guidelines.rst:16
 msgid ""
 "Creating or modifying documentation pages is mainly done via the `godot-docs "
 "GitHub repository <https://github.com/godotengine/godot-docs>`_. The HTML "
@@ -54749,21 +54813,21 @@ msgid ""
 "documentation."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:20
+#: ../../docs/community/contributing/documentation_guidelines.rst:23
 msgid ""
 "For details on Git usage and the pull request workflow, please refer to the :"
 "ref:`doc_pr_workflow` page. Most of what it describes regarding the main "
 "godotengine/godot repository is also valid for the docs repository."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:25
+#: ../../docs/community/contributing/documentation_guidelines.rst:28
 msgid ""
 "The README.md file contains all the information you need to get you started, "
 "please read it. In particular, it contains some tips and tricks and links to "
 "reference documentation about the reStructuredText markup language."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:29
+#: ../../docs/community/contributing/documentation_guidelines.rst:32
 msgid ""
 "If you want to edit the **API reference**, please note that it should *not* "
 "be done in the godot-docs repository. Instead, you should edit the ``doc/"
@@ -54772,24 +54836,24 @@ msgid ""
 "the online docs. Read more here: :ref:`doc_updating_the_class_reference`."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:37
+#: ../../docs/community/contributing/documentation_guidelines.rst:40
 msgid "What makes good documentation?"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:39
+#: ../../docs/community/contributing/documentation_guidelines.rst:42
 msgid ""
 "Documentation should be well written in plain English, using well-formed "
 "sentences and various levels of sections and subsections. It should be clear "
-"and objective."
+"and objective. Also have a look at the :ref:`doc_docs_writing_guidelines`."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:43
+#: ../../docs/community/contributing/documentation_guidelines.rst:46
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:46
+#: ../../docs/community/contributing/documentation_guidelines.rst:49
 msgid ""
 "Tutorial: a page aiming at explaining how to use one or more concepts in the "
 "editor or scripts in order to achieve a specific goal with a learning "
@@ -54797,20 +54861,17 @@ msgid ""
 "object\")."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:50
+#: ../../docs/community/contributing/documentation_guidelines.rst:53
 msgid ""
 "Documentation: a page describing precisely one and only one concept at a "
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
 "class, or an overview of the input management in Godot)."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:54
+#: ../../docs/community/contributing/documentation_guidelines.rst:57
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
-"respect the following rules (and the ones on the repo). In particular, you "
-"can contribute tutorials in the \"Community\" section of the docs, where "
-"they could be merged relatively easily, improved by other contributors and "
-"eventually moved to an \"official\" section if relevant."
+"respect the following rules (and the ones on the repo)."
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:61
@@ -54859,29 +54920,30 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:92
 msgid ""
-"For the moment, only English documentation is provided. We want to propose "
-"localized documentation in the future, but this is not a priority for now. "
-"Indeed, since the English documentation is still evolving a lot as the "
-"community improves it and make it more professional, we prefer that "
-"translators do not spend too much time on it, as their translated "
-"documentation might quickly grow out of sync with the original."
+"You can help to translate the official Godot documentation on our `Hosted "
+"Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:99
 msgid ""
-"When the English documentation is ready for translations, we will provide "
-"tools to simplify the work of translators by tracking changes to the English "
-"docs that they should translate on their end."
+"There also is the official `Godot I18N repository <https://github.com/"
+"godotengine/godot-docs-l10n>`_. where you can see when the data was last "
+"synced."
 msgstr ""
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:106
+#: ../../docs/community/contributing/documentation_guidelines.rst:104
+#, fuzzy
 msgid ""
 "This documentation and every page it contains is published under the terms "
-"of the Creative Commons Attribution 3.0 license (CC-BY-3.0), with "
-"attribution to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
+"of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
+"tldrlegal.com/license/creative-commons-attribution-(cc)>`_, with attribution "
+"to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
+"Vsebina je licencirana pod odprto Creative Commons Attribution 3.0 (`CC-BY "
+"3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licenco, z avtorstvom "
+"\"Juan Linietsky, Ariel Manzur in skupnosti Godot Engine\"."
 
-#: ../../docs/community/contributing/documentation_guidelines.rst:110
+#: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid ""
 "By contributing to the documentation on the GitHub repository, you agree "
 "that your changes are distributed under this license."
