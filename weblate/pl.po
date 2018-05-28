@@ -5,6 +5,7 @@
 # Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
 # Dariusz Król <rexioweb@gmail.com>, 2018.
+# Igor <igor.gielzak@gmail.com>, 2018.
 # KolegaLiterat <jawor34@gmail.com>, 2018.
 # Rafał Mikrut <synaptykq@gmail.com>, 2018.
 # Saran <saran@op.pl>, 2018.
@@ -16,8 +17,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-16 11:39+0000\n"
-"Last-Translator: Sebastian Pasich <sebastian.pasich@gmail.com>\n"
+"PO-Revision-Date: 2018-05-26 14:09+0000\n"
+"Last-Translator: Igor <igor.gielzak@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -30,7 +31,7 @@ msgstr ""
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "Dokumentacja Godot - gałąź *master*"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -38,6 +39,9 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"To jest dokumentacja dla niestabilnej gałęzi (master). Szukasz dokumentacji "
+"obecnej **stabilnej** gałęzi? `Sprawdź tutaj <http://docs.godotengine.org/en/"
+"stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -58,6 +62,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"Spis treści poniżej oraz ten na pasku bocznym powinien pozwolić Tobie "
+"odnaleźć dokumentacje, która Cię interesuje. Możesz również skorzystać z "
+"paska wyszukiwania w lewym górnym rogu."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -67,6 +74,12 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Silnik Godot to projekt open source, który rozwijany jest przez społeczność "
+"składającą się z wielu osób. Zespół zajmujący się dokumentacja stara się "
+"wykorzystać Twoje uwagi, aby ulepszyć samouczki, czy tez referencje klas. "
+"Jeżeli czegoś nie rozumiesz lub nie możesz znaleźć informacji, która wydaje "
+"się być ważna z punktu widzenia silnika, możesz nam pomóc informując nas o "
+"tym!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -77,38 +90,44 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Zgłoś problem lub wgraj zmiane w naszym ` repozytorium GitHub <https://"
+"github.com/godotengine/godot-docs/issues>`_, pomóz nam `przetłumaczyć "
+"dokumentacje <https://hosted.weblate.org/engage/godot-engine/>`_ na twój "
+"język, lub podyskutuj z nami na kanale ``#documentation`` na `Discordzie "
+"<https://discord.gg/zH7NUgz>`_, lub kanale ``#godotengine-doc`` na `irc."
+"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "Główna dokumentacja dla tej strony dzieli się na następujące sekcje:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "Ogólne"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "Podstawy"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "Samouczki"
 
 #: ../../docs/index.rst:89
 msgid "Development"
-msgstr ""
+msgstr "Rozwój"
 
 #: ../../docs/index.rst:99 ../../docs/community/index.rst:2
 msgid "Community"
-msgstr ""
+msgstr "Społeczność"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "O silniku"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -259,6 +278,13 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
+"Dokumentacja silnika jest bez przerwy pisana, poprawiana, edytowana oraz "
+"odświerzana (jeżeli zachodzi taka potrzeba) przez członków społeczności. "
+"Jest ona edytowana za pomocą plików tekstowych `reStructuredText <http://www."
+"sphinx-doc.org/en/stable/rest.html>`_ języka znaczników a nastepnie "
+"kompilowana do statycznej strony internetowej/dokumentacji offline przy "
+"użyciu `Sphinx <http://www.sphinx-doc.org>`_ oraz narzędziu`ReadTheDocs "
+"<https://readthedocs.org/>`_."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -343,10 +369,14 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"Oprócz dokumentacji mogą zainteresować Cię `projekty demo dla Godota "
+"<https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
 msgstr ""
+"Czerp przyjemność z nauki, a następnie tworzenia gier przy pomocy silnika "
+"Godot!"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -357,17 +387,21 @@ msgstr "Często zadawane pytania"
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
 msgstr ""
+"Co mogę stworzyć przy pomocy Godota? Ile on kosztuje? Jakie są zasady "
+"licencji?"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
+"Godot jest darmowym Open Sourcowym oprogramowanie dostępnym z `(OSI-"
+"approved) <https://opensource.org/licenses/MIT>`_ licencją MIT."
 
 #: ../../docs/about/faq.rst:11
 msgid ""
 "This means it is free as in \"free speech\" as well as in \"free beer\"."
-msgstr ""
+msgstr "To oznacza iż jest całkowicie darmowe, bez żadnych ograniczeń."
 
 #: ../../docs/about/faq.rst:13
 msgid "In short:"
@@ -375,23 +409,28 @@ msgstr "W skrócie:"
 
 #: ../../docs/about/faq.rst:15
 msgid "There are no usage restrictions on Godot"
-msgstr ""
+msgstr "Nie ma żadnych ograniczeń w stosowaniu Godota"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
 msgstr ""
+"To oznacza, że możesz wykorzystać silnik tworząc grę lub program, nie tylko "
+"do celów prywatnych ale również komercyjnych"
 
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr ""
+"Możesz modyfikować, (re)dystrybuować robić z Godotem co Ci się tylko podoba"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
+"Więcej informacji tutaj `here <https://tldrlegal.com/license/mit-license>`_ "
+"lub jeżeli dalej masz wątpliwości skontaktuj sie z prawnikiem."
 
 #: ../../docs/about/faq.rst:21
 msgid ""
@@ -425,19 +464,19 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Jakie platformy są wspierane przez Godota?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**Dla wydawców:**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
@@ -445,11 +484,11 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**Eksport gier dla:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (oraz Universal Windows Platform)"
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
@@ -503,12 +542,17 @@ msgid ""
 "C# and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Oficjalnie wspierane języki w Godocie to GDScript, Visual Scripting, C# oraz "
+"C++. Więcej na temat danego języka znajdziesz w sekcji :ref:`skryptów <toc-"
+"learn-scripting>`."
 
 #: ../../docs/about/faq.rst:65
 msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
 msgstr ""
+"Zauważ, że wsparcie C# oraz Visual Scripting zostało wprowadzone stosunkowo "
+"niedawno dlatego GDScript wciąż jest opcją posiadająca lekka przewage."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -12000,7 +12044,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr ""
+msgstr "Iterator"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""

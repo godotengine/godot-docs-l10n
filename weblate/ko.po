@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Alegruz <alegruz@khu.ac.kr>, 2018.
 # geun-tak Jeong <beroberos@gmail.com>, 2018.
 # lptprjh <lptprjh@gmail.com>, 2018.
 # MJ Kim <mjnkim@protonmail.com>, 2018.
@@ -14,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-18 20:13+0000\n"
+"PO-Revision-Date: 2018-05-28 08:21+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -1778,7 +1779,7 @@ msgstr "성공!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
-msgstr ""
+msgstr "프로젝트 구성"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid ""
@@ -1787,6 +1788,10 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"좋아요, 프로젝트를 구성할 때군요. 지금은 할 수 있는 일은 여기 있는 씬을 실행"
+"하는 것 밖에 없습니다. 하지만, 프로젝트는 여러 씬을 가질 수 있기 때문에, 하나"
+"를 메인 씬으로 지정 할 필요가 있습니다. 언제나 프로젝트를 실행할 때 준비가 "
+"된 씬 말이죠."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid ""
@@ -1796,22 +1801,31 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"이 설정들은 모두 project.godot 파일 내에 들어갑니다, 이것은 win.ini 형식으로 "
+"된 텍스트 문서입니다 (편집을 쉽게 하기 위한 겁니다).당신이 프로젝트를 실행하"
+"는 방법을 바꿀 수 있는 많은 설정들이 이 파일 안에 있습니다. 프로젝트를 간단"
+"히 하기 위해, Godot은 project.godot 파일을 편집하기 위한 프로젝트 설정 다이얼"
+"로그를 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
-msgstr ""
+msgstr "다이얼로그에 들어가기 위해, 프로젝트 -> 프로젝트 설정으로 가세요."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'hello.tscn'."
 msgstr ""
+"설정을 열었다면, 메인 씬을 설정합시다. 'Application/Run/Main Scene' 속성으로 "
+"가서 'hello.tsce'을 선택합니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"이제 변경했으니, 보통의 실행 버튼을 누를 때 (단축키로 F5를 누를 때), 어떤 씬"
+"을 편집하는 도중이더라도, 설정한 씬이 실행될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
 msgid ""
@@ -1820,6 +1834,10 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"프로젝트 설정 다이얼로그는 많은 설정을 제공하고 이것들을 project.godot 파일"
+"에 저장하거나 기본 값으로 되돌릴 수 있습니다. 값을 변경하게 되면, 이른 왼쪽"
+"에 체크 표시가 뜹니다. 이는 그 속성이 project.godot 파일에 저장되었다는 것입"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
 msgid ""
@@ -1827,10 +1845,12 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"또한, :ref:`ProjectSettings <class_ProjectSettings>` 싱글톤을 사용해서 런타임"
+"에 쓰이는 사용자 구성 옵션을 추가할 수도 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid "To be continued..."
-msgstr ""
+msgstr "계속..."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
 msgid ""
@@ -1838,10 +1858,13 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"이 튜토리얼은 \"씬과 노드\"에 대해서만, 그러니까 단 *하나의* 씬과 *하나의* 노"
+"드만을 설명했습니다! 걱정하지 마세요, 다음 튜토리얼로 가서 개념을 확장시킬 겁"
+"니다..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "인스턴스"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -1851,12 +1874,19 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"하나의 씬에 노드를 넣는 걸로도 작은 프로젝트는 작업할 수 있을 겁니다, 하지만 "
+"프로젝트의 규모가 커지고 복잡하게 되면, 수많은 노드들을 다루기 어렵게 됩니"
+"다. 이를 해결하기 위해, Godot은 프로젝트를 여러 개의 씬으로 나눌 수 있게 합니"
+"다. 이것은 당신이 게임 내의 다른 구성 요소들을 결합할 수 있도록 하는 강력한 "
+"도구입니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+":ref:`doc_scenes_and_nodes`에서 당신은 씬은 노드 들이 트리 형태로 결합된 모임"
+"이고, 하나의 노드가 트리 루트라고 배웠습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -1864,32 +1894,40 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"당신은 원하는 만큼 많은 씬들을 만들 수 있습니다. 씬들은 \"압축된 씬\"이라 불"
+"리는 방법으로 저장되며 ``.tscn`` 파일 확장자 명을 갖습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"하나의 씬이 저장되면, 다른 노드인 것처럼 다른 씬으로 인스턴스화 될 수 있습니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
-msgstr ""
+msgstr "위 그림에서 씬 B는 씬 A에 인스턴스로 추가되었습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing By Example"
-msgstr ""
+msgstr "예제를 통해 인스턴스화하기"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"어떻게 인스턴스가 이루어지는지 배우기 위해, 샘플 프로젝트를 다운받읍시다: :"
+"download:`instancing.zip <files/instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"원하는 위치에 이 프로젝트를 풀으세요. 그리고 Godot을 키고 프로젝트 매니저에"
+"서 '가져오기' 버튼을 눌러 이 프로젝트를 추가하세요:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -1897,6 +1935,9 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"당신이 추출한 폴더를 검색하고 그 안에 있는 \"project.godot\" 파일을 여세요. "
+"그러면, 새 프로젝트가 프로젝트 목록에 뜰 것입니다. '편집' 버튼을 눌러 프로젝"
+"트를 편집하세요."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -1905,10 +1946,14 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"이 프로젝트는 두 개의 씬을 갖고 있습니다: \"Ball.tscn\" 과  \"Main.tscn\" 이"
+"죠. 공 씬은 물리 행동을 주기 위해 :ref:`RigidBody2D <class_RigidBody2D>`를 사"
+"용하고 메인 씬은 (:ref:`StaticBody2D <class_StaticBody2D>`를 사용해) 공과 충"
+"돌하기 위한 장애물들이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "``메인`` 씬을 열고, 루트 노드를 선택하세요:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -1916,6 +1961,9 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"우리는 ``공``씬을 ``메인`` 씬의 자식으로 인스턴스하여 추가할 겁니다. \"사슬"
+"\" 모양 버튼을 누르세요 (커서를 올리면 \"씬 파일을 노드로 추가합니다.\" 라고 "
+"뜹니다.) 그리고 ``Ball.tscn`` 파일을 선택하세요."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -1923,14 +1971,16 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"공은 화면 영역의 왼쪽 위에 자리잡을 것입니다 (거기가 화면 좌표에서 ``(0, 0)``"
+"인 부분입니다.). 공을 클릭하고 가운데 쯤에 드래그하세요:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
+msgstr "\"재생\" 버튼을 눌러 공이 화면의 아래로 떨어지는지 확인하세요:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple Instances"
-msgstr ""
+msgstr "여러 인스턴스"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -1938,14 +1988,16 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"당신은 씬에 원하는 만큼 많은 인스턴스를 추가할 수 있습니다, 다시 \"인스턴스"
+"\" 버튼을 누르거나, 공 인스턴스를 클릭하고 \"복사\" (Ctrl-D)를 눌러서 말이죠:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "씬을 다시 실행시키면 모든 공들이 떨어질 겁니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "인스턴스 편집"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
@@ -1954,6 +2006,10 @@ msgid ""
 "much more bouncy. Because the instanced balls are based on the saved scene, "
 "changes to that scene will affect all instances."
 msgstr ""
+"``공`` 씬을 열고 인스펙터 내에 있는 ``Bounce`` 속성을 `1`로 변경하세요. \"재"
+"생\"을 누르면 모든 인스턴스된 공들이 더 많이 튀어오르는 것에 주목하세요. 인스"
+"턴스된 공들은 저장된 씬을 기반으로 두기 때문에, 그 씬에 변화를 준다면 씬의 인"
+"스턴스에 영향을 줍니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
@@ -1961,6 +2017,9 @@ msgid ""
 "``0.5`` and then in the ``Main`` scene, select one of the instanced balls. "
 "Set its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"또한 각각의 인스턴스들도 조절할 수 있습니다. 바운스 값을 ``0.5``로 돌려 놓고 "
+"``메인`` 씬으로 돌아간 다음, 인스턴스된 공들 중 하나를 선택하세요. 그것의 "
+"``Bounce`` 값을 ``1``로 맞추고 \"재생\"을 누르세요."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
@@ -1971,48 +2030,59 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"조절된 속성 옆에 회색 \"새로고침\" 버튼이 나타난 것에 주목하세요. 이 버튼이 "
+"있다는 것은, 당신이 인스턴스된 씬의 속성을 수정하여 저장된 씬의 값을 무시하"
+"게 만든 것입니다. 비록 그 속성이 원래 씬에서 수정되더라도, 사용자 지정 값은 "
+"유지됩니다. 새로고침 버튼을 눌러 저장된 씬의 값으로 속성을 복원시킬 수 있을 "
+"것입니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:112
 msgid "Conclusion"
-msgstr ""
+msgstr "결론"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:114
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object."
-msgstr ""
+msgstr "인스턴스화는 많은 양의 오브젝트 복사본을 만들 때 유용합니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "인스턴스 (이어서)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "요약"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"인스턴스화는 매우 다양하게 쓰입니다. 인스턴스화를 통해 무엇을 할 수 있는지 대"
+"충 살표보시죠:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "관리하기 편하게 하기 위해 씬들을 여러 하위 객체로 나눌 수 있는 것."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid ""
 "A more flexible alternative to prefabs (and much more powerful given that "
 "instances can be nested)."
 msgstr ""
+"유니티의 프리팹보다 더 유연하게 쓰일 수 있음 (인스턴스는 중첩될 수 있기에 더 "
+"강력하기도 합니다)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"복잡한 게임 플로우나 심지어는 UI를 구조화하고 내장하는 방법 (Godot에서는 UI"
+"의 원소들 마저도 노드들입니다)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
 msgid "Design language"
-msgstr ""
+msgstr "언어의 설계"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
 msgid ""
@@ -2021,6 +2091,9 @@ msgid ""
 "Godot from all the other engines out there. Godot was designed from the "
 "ground up around this concept."
 msgstr ""
+"씬을 인스턴스화하는 것의 가장 강력한 장점은 디자인 언어와 아주 잘 맞는다는 것"
+"입니다. 이것이 사실상 Godot와 다른 알려진 엔진들을 구분하는 부분입니다. Godot"
+"는 애초에 바닥부터 이러한 컨셉으로 디자인되었습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
 msgid ""
@@ -2030,10 +2103,13 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"고도로 게임을 만들 때에는 통상적으로 쓰이는 디자인 패턴들(MVC 혹은 개체-관계 "
+"다이어그램 등)을 버리고 씬들을 좀 더 자연스럽게 바라보기를 권장합니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
 msgid "For example, here's how a simple shooter game could be imagined:"
 msgstr ""
+"예를 들자면 우리는 간단한 슈팅 게임을 다음과 같이 상상해볼 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
 msgid ""
@@ -2041,6 +2117,9 @@ msgid ""
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
+"무슨 게임을 디자인하든, 위와 같은 다이어그램을 그릴 수 있을 것입니다. 게임에"
+"서 시각화할 수 있는 부분들을 쭉 적어보고, 각 컴포넌트들의 소유권을 나타내주"
+"기 위한 화살표를 추가해줍니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
 msgid ""
@@ -2049,6 +2128,9 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"다이어그램이 완성되었다면 게임을 만들 때 다이어그램에 있는 원소들에 대응되는 "
+"씬을 만들기를 권장합니다. 여기서 소유 관계를 나타내주기 위해 코드를 사용하"
+"든, 에디터로 직접하든 인스턴스화를 사용할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
 msgid ""
@@ -2060,12 +2142,20 @@ msgid ""
 "design-based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"게임을 프로그래밍할 때, 혹은 일반적으로 소프트웨어를 짤 때 가장 오래 걸리는 "
+"부분은 구조를 디자인하고 게임의 컴포넌트들을 그 구조에 알맞게 끼워넣는 것입니"
+"다. 씬을 기반으로 디자인하는 것은 이 방법을 대체하기에 게임의 로직 자체에 신"
+"경 쓸 수 있게 되어 개발을 좀 더 빠르고, 간단하게 만듭니다. 대부분의 게임 컴포"
+"넌트가 그대로 씬으로 되기 때문에 씬 인스턴화를 사용하게 되면 구조 디자인에 따"
+"른 구조적인 코드가 딱히 필요하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"좀 더 복잡한 예시를 들어보겠습니다. 한 번 애셋들도 많고, 중첩된 원소들이 많"
+"은 오픈월드 게임을 살펴보죠:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
 msgid ""
@@ -2074,6 +2164,9 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"방 원소를 살펴보죠. 우리가 시작하는 부분을 봅시다. 우리는 가구 배치를 달리하"
+"여 서로 다른 두 가지의 방 씬을 만들 수 있습니다. 나중에는, 방들을 연결해서 "
+"집 씬을 만들 수도 있습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
 msgid ""
@@ -2081,6 +2174,8 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"그런 뒤, 많은 인스턴스된 집들로 이루어진 성 씬을 만들 수 있습니다. 그리고, 월"
+"드 맵 지형에 성을 추가하는 작업을 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
 msgid ""
@@ -2088,6 +2183,8 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"나중에는, 경호원이나 다른 NPC들의 씬을 만들고 성에 추가 할 수 있습니다. 그 결"
+"과, 그것들은 게임 세상에 간접적으로 추가됩니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
 msgid ""
@@ -2098,10 +2195,15 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Godot이라면, 당신은 씬을 만들고 그것을 인스턴스하면 되니까 작업을 쉽게 반복"
+"할 수 있습니다. 게다가, 에디터 UI는 프로그래머나 비 프로그래머에게도 친근하"
+"게 디자인 되었습니다. 전형적인 개발 팀은 2D나 3D 아티스트, 레벨 디자이너, 게"
+"임 디자이너, 애니메이터를 포함하지만, 모두가 이 에디터 내에서 작업 할 수 있습"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
 msgid "Information overload!"
-msgstr ""
+msgstr "정보가 너무 많아요!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
 msgid ""
@@ -2109,6 +2211,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"많은 정보들을 당신이 한번에 이해하긴 어려울 겁니다. 하지만 이 튜토리얼의 핵심"
+"은 씬이 프로젝트에서 씬과 인스턴스화가 어떻게 이용되는지를 알면 되는 것입니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
 msgid ""
@@ -2116,13 +2221,15 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
+"여기에서 다룬 모든 내용은 게임을 처음 만들게 되면서 자연스럽게 익히게 될 것입"
+"니다. 지금은, 너무 걱정하지 마시고, 다음 튜토리얼로 넘어갑시다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/step_by_step/resources.rst:164
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr ""
+msgstr "스크립팅"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
@@ -2130,12 +2237,17 @@ msgid ""
 "`doc_gdscript`. Nowadays, Godot has four (yes, four!) official languages and "
 "the ability to add extra scripting languages dynamically!"
 msgstr ""
+"Godot 3.0 이전에는, 스크립팅 하는 법이 :ref:`doc_gdscript`뿐 이었습니다. 지금"
+"은, Godot은 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 스크립트 언어"
+"를 추가하는 기능도 있습니다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
 "This is great, mostly due the large amount of flexibility provided, but it "
 "also makes our work supporting languages more difficult."
 msgstr ""
+"이것은 대단합니다, 기존의 경우에는 유연성을 제공해 주었지만, 다른 언어를 지원"
+"하기 어렵게 만들기도 했습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 msgid ""
@@ -2145,6 +2257,10 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
+"Godot에서 \"메인\" 언어는 GDScript와 VisualScript입니다. 이들이 선택된 주된 "
+"이유는 Godot과 통합 능력이 좋기 때문입니다, 둘다 매끄러운 에디터 통합을 갖고 "
+"있습니다, 반면 C#과 C++는 별도의 IDE에 속합니다. 당신이 정적 언어를 좋아한다"
+"면, C#과 C++로 이동하세요."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -2157,7 +2273,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:180
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 msgid "GDScript"
-msgstr ""
+msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
 msgid ""
@@ -2165,40 +2281,53 @@ msgid ""
 "Using it has some positive points compared to other languages due to its "
 "high integration with Godot:"
 msgstr ""
+":ref:`doc_gdscript`는 앞에서 말했듯, Godot에서 사용되는 메인 언어입니다. 이 "
+"언어는 다른 언어들에 비해 Godot과의 높은 통합성으로 인해 갖는 장점이 있습니"
+"다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
 "It's simple, elegant, and designed to be familiar for users of other "
 "languages such as Lua, Python, Squirrel, etc."
 msgstr ""
+"간단하고, 우아하고, 그리고 디자인 면에서도 Lua, Python, Squirrel 등과 같은 다"
+"른 언어들과 비슷합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr ""
+msgstr "매우 빠르게 로드되고 컴파일됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
+"에디터 통합은 노드, 시그널, 그리고 작업 중인 씬과 관련된 많은 항목들의 코드 "
+"완성을 작업하는 즐거움입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
 msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
+"(Vectors, transforms 등과 같은) 많은 벡터 타입을 지니고 있어서, 선형 대수를 "
+"많이 사용하는데 효율적입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
 "Supports multiple threads as efficiently as statically typed languages - one "
 "of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
 msgstr ""
+"정적 언어처럼 효율적인 여러 스레드를 지원합니다 - 이것이 Lua, Squirrel 등의 "
+"가상 머신을 피하게 만든 이유입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:33
 msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
+"가비지 컬렉터를 쓰지 않아서, 작업이 약간의 자동화를 버리는 대신 결정론적으로 "
+"처리됩니다 (어쨌든 대부분의 오브젝트들은 참조 카운트됩니다)."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -2206,17 +2335,21 @@ msgid ""
 "GDNative) if more performance is required, all without recompiling the "
 "engine."
 msgstr ""
+"더 많은 퍼포먼스가 필요하다면, 엔진을 전부 다시 컴파일하지 않아도 (GDNative"
+"를 통해) C++의 코드 섹션을 쉽게 최적화할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
 msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
+"아직 프로그래밍에 경험이 없고 특히 동적 언어를 정하지 않았다면, GDScript로 시"
+"작해보세요!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
 msgid "VisualScript"
-msgstr ""
+msgstr "VisualScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""
@@ -2224,6 +2357,9 @@ msgid ""
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
+"3.0을 시작하면서, Godot은 :ref:`Visual Scripting<doc_what_is_visual_script>`"
+"을 제공합니다. 이것은 \"블록과 연결\" 언어의 일반적인 구현이지만, Godot의 작"
+"동 방식에 맞게 조정됬습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
 msgid ""
@@ -2231,16 +2367,21 @@ msgid ""
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
+"Visual scripting은 비 프로그래머 뿐만 아니라 경험있는 프로그래머도 게임 디자"
+"이너나 아티스트와 같은 사람들이 코드 일부분을 보기 쉽게 만들어 주는 멋진 도구"
+"입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
 msgstr ""
+"프로그래머에게는 이걸로 상태 시스템이나 사용자 지정 시각적 노드 워크플로워를 "
+"만들 수도 있습니다 - 예를 들면 대화 시스템이죠."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
 msgid ".NET / C#"
-msgstr ""
+msgstr ".NET / C#"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:57
 msgid ""
@@ -2248,12 +2389,17 @@ msgid ""
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
+"마이크로소프트의 C#은 게임 개발자들 사이에서 사랑받는 언어이기에, 우리는 이"
+"걸 공식 지원합니다. C#은 많은 코드들로 작성된 완전한 언어로, 마이크로소프트"
+"의 풍부한 도움에 우리는 지원하게 되었습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
 msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
 msgstr ""
+"비록 가비지 컬랙터에 대해 알아야 하지만, 이것은 퍼포먼스와 사용의 용이성 두가"
+"지를 절충하고 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
 msgid ""
@@ -2261,6 +2407,8 @@ msgid ""
 "familiar with it means less time can be spent learning Godot and more time "
 "can be spent programming with it."
 msgstr ""
+"C#은 보통 회사에게 잘 쓰입니다. 많은 프로그래머들이 Godot을 배우는 대신 이걸 "
+"가지고 프로그래밍하는데 시간을 투자 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:69
 msgid ""
@@ -2270,16 +2418,24 @@ msgid ""
 "programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
 "is the only officially supported .NET option."
 msgstr ""
+"Godot이 `Mono <https://mono-project.com>`_ .NET 런타임을 사용하기 때문에, 이"
+"론적으로 어떤 서드 파티 .NET 라이브러리나 프레임워크라도 Godot의 스크립트에 "
+"사용될 수 있고, F#, Boo, ClojureCLR와 같은 공용 언어 인프라 호환 프로그래밍 "
+"언어 또한 가능합니다. 하지만, 실제로는 C#만 공식으로 지원하는 .NET 옵션입니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:75
 msgid "GDNative / C++"
-msgstr ""
+msgstr "GDNative / C++"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
 msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
+"마침내 3.0 출시에 가장 빛나는 추가점들 중 하나인: GDNative는 Godot을 다시 컴"
+"파일 하지 않아도 (심지어 재시작을 하지않아도) C++에서 스크립팅 할 수 있게 만"
+"듭니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
 msgid ""
@@ -3935,9 +4091,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
-#, fuzzy
 msgid "Preparing the project"
-msgstr "새 프로젝트 만들기"
+msgstr "프로젝트 구성"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -4001,9 +4156,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export Presets"
-msgstr "내보내기"
+msgstr "프리셋 내보내기"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:142
 msgid ""

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-18 13:57+0000\n"
+"PO-Revision-Date: 2018-05-26 10:45+0000\n"
 "Last-Translator: Максим Якимчук <xpinovo@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -699,36 +699,52 @@ msgid ""
 "No good thread support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"У більшості віртуальних машин для скриптів немає хорошої підтримки потоку, а "
+"Godot використовує потоки (Lua, Python, Squirrel, JS, AS та ін.)."
 
 #: ../../docs/about/faq.rst:114
 msgid ""
 "No good class extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"У більшості віртуальних машин для скриптів немає хорошої підтримки класу "
+"розширення, а адаптація до шляху роботи Godot дуже неефективна (Lua, Python, "
+"JS)."
 
 #: ../../docs/about/faq.rst:116
 msgid ""
 "Horrible interface for binding to C++, results in large amount of code, "
 "bugs, bottlenecks and general inefficiency (Lua, Python, Squirrel, JS, etc.)"
 msgstr ""
+"Жахливий інтерфейс для зв'язування з C++ призводить до великої кількості "
+"коду, помилок, вузьких місць та загальної неефективності (Lua, Python, "
+"Squirrel, JS та ін.)"
 
 #: ../../docs/about/faq.rst:119
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"Немає рідних векторних типів (vector3, matrix4 та ін.), що призводить до "
+"значного зниження продуктивності при використанні власних типів (Lua, "
+"Python, Squirrel, JS, AS та ін.)."
 
 #: ../../docs/about/faq.rst:122
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"Збирач сміття призводить до зупинки або надмірного використання пам'яті "
+"(Lua, Python, JS, AS та ін.)."
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"Труднощі інтеграції з редактором коду для забезпечення завершення коду, "
+"редагування в реальному часі тощо (всі вони). Це добре підтримується "
+"GDScript."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
@@ -737,6 +753,11 @@ msgid ""
 "scripting with the game engine (yes, it's a rare but enjoyable situation "
 "when things just work). It's worth it, give it a try!"
 msgstr ""
+"GDScript був розроблений для вирішення вищезазначених проблем і добре працює "
+"у всіх вищенаведених сценаріях. Будь ласка, вивчайте GDScript і "
+"насолоджуйтеся плавною інтеграцією скриптинґу з ігровим рушієм (так, це "
+"рідкісна, але приємна ситуація, коли все просто працює). Це варте того, щоб "
+"спробувати!"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
@@ -747,18 +768,24 @@ msgid ""
 "For creating Godot Editor plugins look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
+"Як створювати плаґініи до редактора Godot, перегляньте на :ref:`Плаґіни "
+"редактора <doc_making_plugins>` та інструментарій скриптів."
 
 #: ../../docs/about/faq.rst:139
 msgid ""
 "Additional languages could be added via PluginScript or the more low-level "
 "NativeScript."
 msgstr ""
+"Додаткові мови можуть бути додані за допомогою PluginScript або більш "
+"нижчому рівні NativeScript."
 
 #: ../../docs/about/faq.rst:141
 msgid ""
 "If you want to add a certain native library, your best bet is GDNative and "
 "custom C++ modules."
 msgstr ""
+"Якщо ви хочете додати певну рідну бібліотеку, кращим варіантом є GDNative та "
+"власні C++ модулі."
 
 #: ../../docs/about/faq.rst:143
 msgid "Also see the official blog posts on these topics:"
@@ -782,10 +809,13 @@ msgid ""
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot."
 msgstr ""
+"Ви також можете поглянути на реалізацію GDScript, модулів Godot, а також на "
+"`неофіційну підтримку Python <https://github.com/touilleMan/godot-python>`_ "
+"для Godot."
 
 #: ../../docs/about/faq.rst:152
 msgid "Why is FBX not supported for import?"
-msgstr ""
+msgstr "Чому FBX не підтримується для імпортування?"
 
 #: ../../docs/about/faq.rst:154
 msgid ""
@@ -793,6 +823,9 @@ msgid ""
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<http://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
+"FBX SDK має `обмежувальну ліцензію <http://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf>`_, що несумісна з `відкритою ліцензією <http://"
+"opensource.org/licenses/MIT>`_ наданою Godot."
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -802,22 +835,31 @@ msgid ""
 "are using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
+"Тим не менш, підтримка Collada у Godot хороша, будь ласка, використовуйте "
+"`OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-"
+"Tools>`_ експортер для максимальної сумісності, якщо ви використовуєте Maya "
+"або 3DS Max. Якщо ви використовуєте Blender, подивіться на наш власний "
+"`Better Collada Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:164
 msgid "Also, glTF support was added in Godot 3.0."
-msgstr ""
+msgstr "Крім того, підтримка glTF була додана в Godot 3.0."
 
 #: ../../docs/about/faq.rst:166
 msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question above.)"
 msgstr ""
+"Підтримка FBX може бути надана сторонніми розробниками як плаґін. (Див. "
+"питання про плаґіни вище.)"
 
 #: ../../docs/about/faq.rst:169
 msgid ""
 "Will [Insert closed SDK such as PhysX, GameWorks, etc.] be supported in "
 "Godot?"
 msgstr ""
+"Чи будуть [Пропрієтарні закриті SDK, такі як PhysX, GameWorks тощо] "
+"підтримуватися в Godot?"
 
 #: ../../docs/about/faq.rst:171
 msgid ""
@@ -826,6 +868,9 @@ msgid ""
 "versions of functionality or features from such SDKs may be eventually added "
 "though."
 msgstr ""
+"Ні, мета Godot - створити повноцінний рушій з відкритим кодом, ліцензованим "
+"під MIT, щоб ви мали повний контроль над кожною його частиною. Хоча відкриті "
+"версії функціональності або функції з таких SDK можуть бути додані."
 
 #: ../../docs/about/faq.rst:176
 msgid ""
@@ -833,18 +878,26 @@ msgid ""
 "anyone else interested into adding those libraries as a module and ship your "
 "game using them, as either open or closed source. Everything is allowed."
 msgstr ""
+"Тим не менш, оскільки він з відкритим джерелом, та модульний, ніщо не "
+"заважає вам або будь-кому іншому зацікавленому додавати ці бібліотеки в "
+"якості модуля та поширювати вашу гру за допомогою них як відкритого, так і "
+"закритого джерела. Все дозволено."
 
 #: ../../docs/about/faq.rst:181
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question above."
 msgstr ""
+"Щоб дізнатись, як може бути надана підтримка вашого SDK, перегляньте "
+"запитання про плаґіни вище."
 
 #: ../../docs/about/faq.rst:184
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
+"Як слід створювати активи для обробки різних роздільних здатностей та "
+"співвідношення сторін?"
 
 #: ../../docs/about/faq.rst:186
 msgid ""
@@ -856,6 +909,13 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
+"Це питання часто з'являється, ймовірно, це пов'язано з непорозумінням, "
+"створеною Apple, коли вони спочатку подвоїли роздільну здатність своїх "
+"пристроїв. Це змусило людей вважати, що однакові активи в різних "
+"роздільностях були гарною ідеєю, тому багато людей продовжували рухатись до "
+"цього шляху. Це спочатку спрацювало лише для пристроїв Apple, але потім було "
+"створено кілька пристроїв Android і Apple із різними роздільною здатністю та "
+"співвідношенням сторін, з дуже широким діапазоном розмірів та DPI."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -3760,9 +3820,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
-#, fuzzy
 msgid "Preparing the project"
-msgstr "Як створити проект"
+msgstr "Приготування проекту"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -3802,9 +3861,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
-#, fuzzy
 msgid "Export Templates"
-msgstr "Режим експортування"
+msgstr "Шаблони експортування"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:124
 msgid ""
@@ -3827,9 +3885,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export Presets"
-msgstr "Експорт"
+msgstr "Взірці експортування"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:142
 msgid ""
@@ -3863,9 +3920,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
-#, fuzzy
 msgid "Exporting by Platform"
-msgstr "Експортування"
+msgstr "Експортування за платформами"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:162
 msgid ""
@@ -7905,7 +7961,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "OS (editor)"
-msgstr ""
+msgstr "ОС (редактор)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
@@ -7917,15 +7973,15 @@ msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "OS (export)"
-msgstr ""
+msgstr "ОС (експорт)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr ""
+msgstr "**Настільні:** Windows, macOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
-msgstr ""
+msgstr "**Мобільні:** Android, iOS, Windows Phone, Tizen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Web:** WebAssembly or asm.js"
@@ -7989,7 +8045,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "Visual Studio or VS Code"
-msgstr ""
+msgstr "Visual Studio або VS Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid ":ref:`External editors are possible <doc_external_editor>`"
@@ -50743,9 +50799,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:55
-#, fuzzy
 msgid "Example (Windows)"
-msgstr "Приклад (x11)"
+msgstr "Приклад (Windows)"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:71
 msgid "Example (x11)"

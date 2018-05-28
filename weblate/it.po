@@ -3,9 +3,13 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alessio Corridori <alessiocorridori@hotmail.com>, 2018.
+# Andrea Brunato <andrewlloys@gmail.com>, 2018.
+# cento <a.cento@icloud.com>, 2018.
+# Daniele Tolomelli <daniel.tolomelli@gmail.com>, 2018.
 # Dario D'Ambra <legione0@ymail.com>, 2018.
 # Davide Cristini <davcri91@gmail.com>, 2018.
 # Giacomo Bella <foliestere@gmail.com>, 2018.
+# Mario Rossi <mr_do@hotmail.it>, 2018.
 # Matteo <matteo.guglielmetti@hotmail.it>, 2018.
 # Myself <whatamidoing.wt@gmail.com>, 2018.
 #
@@ -14,8 +18,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-18 13:56+0000\n"
-"Last-Translator: Alessio Corridori <alessiocorridori@hotmail.com>\n"
+"PO-Revision-Date: 2018-05-28 08:21+0000\n"
+"Last-Translator: Andrea Brunato <andrewlloys@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -36,7 +40,7 @@ msgid ""
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
 "Questa è la documentazione per la versione non stabile (master). Stai "
-"cercando la documentazione per la versione correntemente **stabile**? `Dai "
+"cercando la documentazione per la corrente versione  **stabile**? `Dai "
 "un'occhiata qui <http://docs.godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
@@ -112,7 +116,7 @@ msgstr "Per Iniziare"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr "Esercitazioni"
+msgstr "Esercitazioni Tutorial"
 
 #: ../../docs/index.rst:89
 msgid "Development"
@@ -190,24 +194,25 @@ msgid ""
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
 "Benvenuto sulla documentazione ufficiale di Godot Engine, il motore di gioco "
-"2D e 3D gratuito, open source e costruito dalla community. Dietro questo "
-"scioglilingua, scoprirai uno strumento potente ma anche user-friendly che "
-"potrai utilizzare per sviluppare ogni tipo di gioco, per qualunque "
-"piattaforma senza alcun tipo di limitazione."
+"2D e 3D gratuito, open source e costruito dalla community. Scoprirai uno "
+"strumento potente ma anche user-friendly che potrai utilizzare per "
+"sviluppare ogni tipo di gioco, per qualunque piattaforma senza alcun tipo di "
+"limitazione."
 
 #: ../../docs/about/introduction.rst:16
+#, fuzzy
 msgid ""
 "This page aims at giving a broad presentation of the engine and of the "
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
 "Questa pagina ha lo scopo di dare una panoramica del motore e dei contenuti "
-"della documentazione, in modo da indicarti come iniziare se sei un novizio o "
-"dove trovare informazioni su una specifica funzione."
+"della documentazione, in modo da indicarti come iniziare se stai iniziando o "
+"dove trovare informazioni su una specifica funzionalita."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
-msgstr "Su Godot Engine"
+msgstr "Riguardo a Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -216,11 +221,11 @@ msgid ""
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
 "Un motore di gioco è uno strumento complesso, per cui è difficile presentare "
-"Godot in poche parole. In ogni caso qui c'è una presentazione, che siete "
-"liberi di utilizzare se avete bisogno di una breve descrizione di Godot "
-"Engine."
+"Godot in poche parole. In ogni caso qui c'è una presentazione, che sei "
+"libero di utilizzare se hai bisogno di una breve descrizione di Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
+#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -230,14 +235,13 @@ msgid ""
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
 "Godot Engine è un motore di gioco ricco di funzionalità, multi piattaforma, "
-"per creare giochi 2D e 3D da un'interfaccia unificata. Offre un ampio set di "
-"strumenti comuni, in modo da permettere agli utenti di focalizzarsi sullo "
+"per creare giochi 2D e 3D da un'unica interfaccia.Godot offre un ampio set "
+"di strumenti base, in modo da permettere agli utenti di focalizzarsi sullo "
 "sviluppo dei giochi senza dover reinventare la ruota. I giochi possono "
 "essere esportati in un click su numerose piattaforme di gioco, inclusi i "
 "sistemi desktop (Linux, macOS, Windows), mobili (Android, iOS) e web (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -246,14 +250,14 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot è completamente gratuito e open source sotto la molto permissiva "
-"licenza MIT. Nessuna clausola nascosta, nessuna royalty, niente. I giochi "
-"degli utenti sono di loro proprietà, fino all'ultima riga di codice del "
-"motore. Lo sviluppo di Godot è completamente indipendente e guidato dalla "
-"community, dando agli utenti la possibilità di aiutare a dare forma al "
-"motore di gioco in modo che sia sempre all'altezza delle loro aspettative. "
-"Godot è supportato dall'organizzazione no-profit `Software Freedom "
-"Conservancy <https://sfconservancy.org>`_ ."
+"Godot è completamente gratuito e open source sotto la permissiva licenza "
+"MIT. Nessuna clausola annessa, nessuna royalty, niente. I giochi degli "
+"utenti sono di loro proprietà, fino all'ultima riga di codice del motore. Lo "
+"sviluppo di Godot è completamente indipendente e guidato dalla community, "
+"dando agli utenti la possibilità di aiutare a dare forma al motore di gioco "
+"in modo che sia sempre all'altezza delle loro aspettative. Godot è "
+"supportato dall'organizzazione no-profit `Software Freedom Conservancy "
+"<https://sfconservancy.org>`_ ."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -262,8 +266,8 @@ msgid ""
 "step_by_step>` tutorial."
 msgstr ""
 "Per un'occhiata più approfondita al motore, siete incoraggiati a leggere "
-"ulteriormente questa documentazione, specialmente il tutorial :ref:`Step by "
-"step <toc-learn-step_by_step>` ."
+"ulteriormente questa documentazione, in particolar modo il tutorial :ref:"
+"`Step by step <toc-learn-step_by_step>` ."
 
 #: ../../docs/about/introduction.rst:46
 msgid "About the documentation"
@@ -454,7 +458,6 @@ msgstr ""
 "commerciale o meno, in ogni tipo di settore"
 
 #: ../../docs/about/faq.rst:17
-#, fuzzy
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr "Puoi modificare e (ri)distribuire Godot a tuo completo piacimento"
 
@@ -556,16 +559,14 @@ msgid "Web"
 msgstr "Web"
 
 #: ../../docs/about/faq.rst:51
-#, fuzzy
 msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"I binari a 32 e 64 bit sono entrambi supportati qualora abbia senso, con i "
-"64 bit come formato di default."
+"I binari a 32 e 64 bit sono entrambi supportati qualora abbia senso, con la "
+"versione a 64 bit di default."
 
 #: ../../docs/about/faq.rst:53
-#, fuzzy
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "system with Linux, like the Raspberry Pi. There is also some unofficial "
@@ -575,7 +576,7 @@ msgstr ""
 "Alcuni utenti riportano la possibilità di compilare ed eseguire con successo "
 "Godot su sistemi basati su architettura ARM e Linux, ad esempio i Raspberry "
 "Pi. Ci sono inoltre lavori fatti da terzi che permettono a Godot di "
-"funzionare su alcune consolle. Nulla di tutto questo però è incluso di "
+"funzionare su alcune console. Nulla di tutto questo però è incluso di "
 "default negli script di compilazione o nei template per l'export."
 
 #: ../../docs/about/faq.rst:57
@@ -602,37 +603,33 @@ msgstr ""
 "sezione :ref:`scripting <toc-learn-scripting>`."
 
 #: ../../docs/about/faq.rst:65
-#, fuzzy
 msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
 msgstr ""
-"Notare che il support per C# e VisualScript sono relativamente recenti e "
-"GDScript ha ancora alcuni vantaggi come indicato in seguito."
+"Notare che il supporto a C# e VisualScript è relativamente recente e "
+"GDScript presenta ancora dei vantaggi come indicato in seguito."
 
 #: ../../docs/about/faq.rst:68
-#, fuzzy
 msgid ""
 "Support for new languages can be added by third parties using the GDNative / "
 "NativeScript / PluginScript facilities. (See question about plugins below.)"
 msgstr ""
-"Il supporto per nuovi linguaggi può essere aggiunto da terze parti "
-"attraverso l'uso degli strumenti GDNative/NativeScript/PluginScript. (Vedere "
-"la domanda sui plugin più sotto)"
+"Il supporto per nuovi linguaggi può essere aggiunto da terze parti tramite "
+"gli strumenti GDNative/NativeScript/PluginScript. (Vedere la domanda sui "
+"plugin più sotto)"
 
 #: ../../docs/about/faq.rst:71
-#, fuzzy
 msgid ""
 "Work is currently underway, for example, on unofficial bindings for Godot to "
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
 "Attualmente sono in lavorazione, per esempio, dei bindings non ufficiali per "
-"Godot per collegare i linugaggi `Python <https://github.com/touilleMan/godot-"
-"python>`_  e `Nim <https://github.com/pragmagic/godot-nim>`_."
+"Godot per i linguaggi `Python <https://github.com/touilleMan/godot-python>`_ "
+"e `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:75
-#, fuzzy
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
@@ -641,7 +638,6 @@ msgstr ""
 "del mio linguaggio preferito?"
 
 #: ../../docs/about/faq.rst:77
-#, fuzzy
 msgid ""
 "The short answer is that we think the additional complexity both on your "
 "side (when first learning Godot and GDScript) as well as our side "
@@ -655,12 +651,11 @@ msgstr ""
 "quando approcciate Godot e GDScript, che dal nostro, la manutenzione, ci "
 "permetta di offrire un’esperienza più fluida rispetto al cercare di attirare "
 "un maggior numero di utenti offrendo linguaggi più familiari offrendo però "
-"un’esperienza peggiore. Capiamo la voglia di utilizzare un altro linguaggio "
-"in Godot (vedere la lista dei linguaggi supportati poco sopra), ma "
-"consigliamo caldamente di provare e scoprirne in prima persona i benefici."
+"un’esperienza peggiore. Comprendiamo la voglia di utilizzare un altro "
+"linguaggio in Godot (vedere la lista dei linguaggi supportati poco sopra), "
+"ma consigliamo caldamente di provare a scoprirne in prima persona i benefici."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
@@ -671,10 +666,9 @@ msgstr ""
 "funzionamento di Godot, molto più di ogni altro linguaggio, ed è molto "
 "semplice e facile da imparare. Ci vogliono al massimo un paio di giorni per "
 "familiarizzare con il lingaggio e una volta fatto è molto semplice capirne i "
-"benefici. Non vi pentirete di avere fatto lo sforzo di imparare GDScript"
+"benefici. Non vi pentirete di avere fatto lo sforzo di imparare GDScript."
 
 #: ../../docs/about/faq.rst:91
-#, fuzzy
 msgid ""
 "Godot C++ API is also efficient and easy to use (the entire Godot editor is "
 "made with this API), and an excellent tool to optimize parts of a project, "
@@ -688,7 +682,6 @@ msgstr ""
 "spreco di tempo."
 
 #: ../../docs/about/faq.rst:96
-#, fuzzy
 msgid ""
 "Yes, for more than a decade we tried in the past integrating several VMs "
 "(and even shipped games using them), such as Python, Squirrel and Lua (in "
@@ -697,7 +690,7 @@ msgid ""
 msgstr ""
 "Sì, per più di una decade abbiamo cercato di integrare varie VM (e abbiamo "
 "anche rilasciato giochi con queste) come Python, Squirrel e Lua (in effetti "
-"abbiamo scritto tolua++ in passato, uno dei binder per C++ più popolari). "
+"abbiamo scritto tolua++ in passato, uno dei bind per C++ più popolari). "
 "Nessuno di essi ha funzionato così bene come GDScript ora."
 
 #: ../../docs/about/faq.rst:101
@@ -715,23 +708,20 @@ msgid "For the more technically versed, proceed to the next item."
 msgstr "Per coloro più versati tecnicamente, procedere al punto seguente."
 
 #: ../../docs/about/faq.rst:108
-#, fuzzy
 msgid "I don't believe you. What are the technical reasons for the item above?"
-msgstr ""
-"Non ti credo. Quali sono le ragioni tecniche per ciò che hai appena detto?"
+msgstr "Non ti credo. Quali sono le ragioni tecniche del punto precedente?"
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
 msgstr "Le ragioni principali sono:"
 
 #: ../../docs/about/faq.rst:112
-#, fuzzy
 msgid ""
 "No good thread support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JS, AS, etc.)."
 msgstr ""
 "Nessun buon supporto per i thread nella maggior parte delle VM degli altri "
-"linguaggi, e Godot usa thread (Lua, Python, Squirrel, JS, AS, ecc.)"
+"linguaggi, e Godot usa thread (Lua, Python, Squirrel, JS, AS, ecc.)."
 
 #: ../../docs/about/faq.rst:114
 msgid ""
@@ -769,7 +759,6 @@ msgstr ""
 "(Lua, Python, JS, AS, ecc.)."
 
 #: ../../docs/about/faq.rst:124
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
@@ -779,7 +768,6 @@ msgstr ""
 "ottimo supporto per questo."
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "GDScript was designed to solve the issues above, and performs well in all "
 "the above scenarios. Please learn GDScript and enjoy a smooth integration of "
@@ -862,7 +850,6 @@ msgstr ""
 "<http://opensource.org/licenses/MIT>`_ di Godot."
 
 #: ../../docs/about/faq.rst:158
-#, fuzzy
 msgid ""
 "That said, Godot's Collada support is good, please use the `OpenCollada "
 "<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ "
@@ -920,7 +907,6 @@ msgstr ""
 "permesso."
 
 #: ../../docs/about/faq.rst:181
-#, fuzzy
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question above."
@@ -937,7 +923,6 @@ msgstr ""
 "rapporti di aspetto?"
 
 #: ../../docs/about/faq.rst:186
-#, fuzzy
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -967,7 +952,6 @@ msgstr ""
 "è solo una questione di Camera XFov o YFov."
 
 #: ../../docs/about/faq.rst:200
-#, fuzzy
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -977,12 +961,13 @@ msgid ""
 "will take and the longer the time it will take for loading."
 msgstr ""
 "Scegli una singola risoluzione di base per il tuo gioco. Anche se ci sono "
-"dispositivi che vanno fino a 2K e dispositivi che hanno solo 400p, il comune "
-"scaling hardware nel tuo dispositivo si prenderà cura di questo per un costo "
-"prestazionale irrisorio. Le scelte più comuni sono vicino a 1080p "
-"(1920x1080) oppure 720p(1280x720). Tieni a mente che all'aumentare della "
-"risoluzione, aumenteranno la dimensione dei tuoi asset, la memoria da loro "
-"richiesta e il tempo necessario per il caricamento."
+"dispositivi che vanno fino a 2K e dispositivi che hanno solo 400p, il "
+"normale ridimensionamento attraverso l'hardware del tuo dispositivo si "
+"prenderà cura di ciò ad un costo pressoché impercettibile. Le scelte più "
+"comuni sono solitamente 1080p (1920x1080) oppure 720p (1280x720). Tieni a "
+"mente che all'aumentare della risoluzione, aumenteranno la dimensione dei "
+"tuoi asset, la memoria da loro richiesta e il tempo necessario per il "
+"caricamento."
 
 #: ../../docs/about/faq.rst:208
 msgid ""
@@ -1021,7 +1006,6 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "Ecco qui! Il tuo gioco dovrebbe funzionare su risoluzioni multiple."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (less than 300 pixels in width), you can use the export option "
@@ -1030,9 +1014,9 @@ msgid ""
 msgstr ""
 "Se davvero desideri di far funzionare il tuo gioco anche su vecchi device "
 "con piccoli schermi (meno di 300 pixel in larghezza), puoi usare l'opzione "
-"di esportazione per ridurre la dimensione delle immagini, e impostare la "
+"di esportazione per ridurre la dimensione delle immagini, e impostare quella "
 "build per essere usata con schermi di determinate dimesioni nell'App Store o "
-"Google Play."
+"in Google Play."
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"
@@ -1124,6 +1108,9 @@ msgid ""
 "and this is where your ideas and suggestions are most valuable and welcome, "
 "they need to be in context of a real issue."
 msgstr ""
+"Dopo aver soddisfatto uno di questi punti, possiamo lavorare insieme a una "
+"soluzione ed è qui che le tue idee e suggerimenti sono più prezione ed ben "
+"accette, devono essere contestualizzate in un vero problema."
 
 #: ../../docs/about/faq.rst:259
 msgid ""
@@ -1131,26 +1118,29 @@ msgid ""
 "try to reformulate them as a problem first, so developers and the community "
 "have a base ground to discuss first."
 msgstr ""
+"Quindi non credere che le tue idee per Godot non siano ben accette. Prova "
+"invece a riformularle prima come un problema, in modo che gli sviluppatori e "
+"la community abbiano una base da cui partire."
 
 #: ../../docs/about/faq.rst:263
 msgid "Examples of how NOT to state problems generally and vaguely are:"
-msgstr ""
+msgstr "Esempi di come NON impostare un problema di solito sono:"
 
 #: ../../docs/about/faq.rst:265
 msgid "Certain feature is ugly"
-msgstr ""
+msgstr "Una feature è brutta"
 
 #: ../../docs/about/faq.rst:266
 msgid "Certain workflow is slow"
-msgstr ""
+msgstr "Un certo modo di lavorare è lento"
 
 #: ../../docs/about/faq.rst:267
 msgid "Certain feature needs optimization"
-msgstr ""
+msgstr "Alcune features devono essere ottimizzate"
 
 #: ../../docs/about/faq.rst:268
 msgid "Certain aspect of the UI looks cluttered"
-msgstr ""
+msgstr "Alcune parti dell'interfaccia sembrano troppo pesanti"
 
 #: ../../docs/about/faq.rst:270
 msgid ""
@@ -1158,22 +1148,29 @@ msgid ""
 "developers will most likely not understand you. Instead, try to reformulate "
 "your problem as a story such as:"
 msgstr ""
+"Descrivere un problema con un aggettivo non attirerà molto l'attenzione ed è "
+"probabile che gli sviluppatori sviluppatori non ti capiranno. Prova invece a "
+"riformulare il tuo problema come una storia, ad esempio:"
 
 #: ../../docs/about/faq.rst:274
 msgid "I try to move objects around but always end up picking the wrong one"
-msgstr ""
+msgstr "Provo a spostare oggetti ma prendo sempre quello sbagliato"
 
 #: ../../docs/about/faq.rst:275
 msgid ""
 "I tried to make a game like Battlefield but I'm not managing to understand "
 "how to get lighting to look the same."
 msgstr ""
+"Ho provato a rendere il gioco come un campo di battaglia ma non capisco come "
+"rendere la luce allo stesso modo."
 
 #: ../../docs/about/faq.rst:277
 msgid ""
 "I always forget which script I was editing, and it takes me too many steps "
 "to go back to it."
 msgstr ""
+"Mi dimentico sempre quale script stavo modificando e ci metto troppo a "
+"tornare indietro."
 
 #: ../../docs/about/faq.rst:280
 msgid ""
@@ -1182,133 +1179,162 @@ msgid ""
 "stories to the developers and the community, before discussing any idea. Be "
 "specific and concrete."
 msgstr ""
+"Questo permetterà di arrivare a ciò che stai pensando più in fretta "
+"impostando una base per discutere per la community. Fai del tuo meglio a "
+"dichiarare i tuoi problemi come delle storie agli sviluppatori e la "
+"community prima di discutere qualsiasi idea. Sii specifico e concreto."
 
 #: ../../docs/about/faq.rst:285
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases or "
 "example projects (if applicable)."
 msgstr ""
+"Punto bonus se provvedi qualche screenshot, numeri cnocreti, casi d'uso o "
+"progetti d'esempio (se possibile)."
 
 #: ../../docs/about/faq.rst:288
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "Come posso supportare lo sviluppo di Godot o contribuire?"
 
 #: ../../docs/about/faq.rst:290
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "Dai un'occhiata a :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:293
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "Chi lavora a Godot? Come posso contattarti?"
 
 #: ../../docs/about/faq.rst:295
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"Visita la pagina corrispondente sul `sito di Godot <https://godotengine.org/"
+"contact>`_."
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 msgid "Step by step"
-msgstr ""
+msgstr "Passo passo"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Introduzione all'editor di Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
+#, fuzzy
 msgid ""
 "This tutorial will run you through Godot’s interface. We’re going to look at "
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"Questo tutorial presenterà l'interfaccia di Godot. Vedremo le schermate di "
+"**Gestione Progetti, docks, spazi di lavoro** e tutto quello che serve per "
+"iniziare a lavorare con Godot."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "Gestore di Progetto"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
+"Quando lanci Godot, la prima finestra che vedi è il gestore di progetto. Ti "
+"permette di creare, eliminare, importare o eseguire i progetti."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:46
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:16
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:22
 msgid "|image0|"
-msgstr ""
+msgstr "|image0|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:18
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"Nell'angolo in alto a destra vedrai un menù a tendina per cambiare la lingua "
+"dell'editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:54
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos to help you get started faster."
 msgstr ""
+"Dalla scheda **Templates** puoi scaricare i modelli di progetto open source "
+"e i progetti dimostrativi per riuscire ad iniziare più in fretta."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
-msgstr ""
+msgstr "Creare o importare un progetto"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
+"Per iniziare un nuovo progetto, clicca il bottone ``Nuovo Progetto`` sulla "
+"destra. Dagli un nome e scegli una cartella vuota nel tuo computer per "
+"salvarlo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:34
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:88
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:83
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"Clicca il bottone Browse per aprire il file browser di Godot e scegliere una "
+"location o scrivi il percorso della cartella nel campo Project Path"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:39
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:99
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
+#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"Quando compare la spunta verde sulla destra significa che Godot ha trovato "
+"una cartella vuota e si può cliccare \"Crea\". Godot procederà creando il "
+"progetto e aprendolo nell'editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
+"La prossima volta che aprirai Godot, vedrai il nuovo progetto nella lista. "
+"Un doppio click sul progetto lo aprirà nell'editor."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 msgid ""
@@ -1316,44 +1342,56 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"Si possono importare progetti esistenti in maniera simile, utilizzando il "
+"bottone Importa. Trova la cartella che contiene il progetto o il file "
+"``project.godot`` per importarlo e modificarlo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "When the folder path is correct you'll see a green checkmark."
 msgstr ""
+"Se il percorso della cartella è corretto vedrai un segno di spunta verde."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:120
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "Una prima occhiata all'editor di Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
+#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open you should see the editor’s "
 "interface with the 3d viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2d to switch to the 2d workspace."
 msgstr ""
+"Benvenuti in Godot! Con il progetto aperto dovreste vedere l'interfaccia "
+"dell'editor con il viewport 3D attivo. In alto nell'interfaccia è possibile "
+"cambiare lo spazio di lavoro. Facendo click su 2D si passerà allo spazio di "
+"lavoro 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
+#, fuzzy
 msgid "Now you should see this interface, with empty docks on the right side."
 msgstr ""
+"Ora dovresti vedere questa interfaccia, con i pannelli vuoti nel lato di "
+"sinistra."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:147
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 msgid ""
@@ -1370,7 +1408,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:152
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
@@ -1381,19 +1419,23 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:160
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
+#, fuzzy
 msgid ""
 "In the center you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
+"Al centro, in alto, si trova la **Toolbar**, dove si possono trovare gli "
+"strumenti per muovere, ridimensionare o bloccare gli oggetti nella scena e "
+"cambia quando si passa tra i differenti spazi di lavoro."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:167
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid ""

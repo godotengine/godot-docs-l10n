@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alexandre Badalo <alexandre.badalo@sapo.pt>, 2018.
+# João <joao@nogordio.com>, 2018.
 # João Lopes <linux-man@hotmail.com>, 2018.
 # Nuno Lopes <n.triguinho@gmail.com>, 2018.
 #
@@ -11,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-04-25 10:40+0000\n"
-"Last-Translator: anonymous <>\n"
+"PO-Revision-Date: 2018-05-26 14:09+0000\n"
+"Last-Translator: João <joao@nogordio.com>\n"
 "Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -24,7 +25,7 @@ msgstr ""
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "Documentação - ramo \"master\""
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -32,6 +33,9 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"Esta é a documentação para o ramo **master** em desenvolvimento e por isso "
+"instável. Procura a documentação do ramo em produção e **estável**? Veja em "
+"<http://docs.godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -41,6 +45,13 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"Bem-vindo à documentação oficial da aplicação de autoria de videojogos Godot "
+"(Godot Game Engine). Godot é uma aplicação para autoria de videojogos de "
+"gráficos bi e tridimensionais. É  distribuída através de uma licença aberta "
+"e livre, um esforço conjunto de uma comunidade de entusiastas, voluntários, "
+"das mais diversas áreas. Se é a primeira vez que aqui está, recomendamos que "
+"leia a :ref:`página de introdução <doc_about_intro>` para obter um panorama "
+"geral da informação constante desta documentação."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -48,6 +59,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"O índice abaixo e na coluna lateral providenciam um acesso fácil à "
+"documentação, de acordo com os seus interesses. Pode também usar a função de "
+"pesquisa, no canto superior esquerdo."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -57,6 +71,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"A aplicação de autoria de videojogos Godot é um projecto de licença aberta, "
+"mantido por uma comunidade de voluntários. A equipa de documentação está ao "
+"dispôr para ouvir as suas sugestões e ajudar a melhorar os tutoriais e o "
+"glossário de classes. Se não compreender ou não encontrar o que está a "
+"procura na documentação, ajude-nos a melhorar, contactando-nos!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -71,7 +90,7 @@ msgstr ""
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "A documentação principal está organizada nas seguintes secções:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
@@ -79,15 +98,15 @@ msgstr "Geral"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "Como Começar"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "Tutoriais"
 
 #: ../../docs/index.rst:89
 msgid "Development"
-msgstr ""
+msgstr "Desenvolvimento"
 
 #: ../../docs/index.rst:99 ../../docs/community/index.rst:2
 msgid "Community"
@@ -98,7 +117,7 @@ msgstr "Comunidade"
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr "Sobre"
+msgstr "Sobre Nós"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -187,6 +206,10 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
+"Uma aplicação de autoria de videojogos é relativamente complexa, como tal "
+"não é fácil resumi-la em poucas palavras. Nesse sentido, disponibilizamos "
+"aqui uma apresentação que criámos para apresentação do projecto, que é livre "
+"de reutilizar se precisar de um pequeno resumo."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -197,6 +220,16 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows) as "
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
+"A aplicação de autoria de videojogos Godot é uma aplicação de autoria "
+"multimédia estanque, multi-plataforma, que pode ser utilizada para a "
+"produção de videojogos bi e tridimensionais a partir de uma interface de "
+"utilização partilhada permitindo exportar o projecto para um conjunto de "
+"plataformas. Inclui um conjunto alargado de ferramentas e funcionalidades "
+"normalmente usadas na autoria de videojogos, para que os utilizadores se "
+"possam focar na autoria de videojogos sem ter de re-inventar a roda. Os "
+"videojogos produzidos podem ser publicados/exportados para várias "
+"plataformas, incluíndo as fixas (Linux, macOS, Windows), as móveis (Android, "
+"iOS) e através da Web (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -207,6 +240,15 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
+"Godot é disponibilizado através da permissiva licença MIT, em código aberto "
+"e de forma gratuita. Sem letras miudinhas, sem royalties, nada. Os "
+"videojogos que os utilizadores produzem são propriedade intelectual dos "
+"mesmos, da primeira até à última linha de código bem como todos os recursos "
+"artísticos. O desenvolvimento de Godot é totalmente independente e conduzido "
+"por uma comunidade, que promove o melhoramento da aplicação pelos "
+"utilizadores para que esta vá ao encontro das suas expectativas. É suportado "
+"pela `Software Freedom Conservancy <https://sfconservancy.org>`_, entidade "
+"sem fins lucrativos."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""

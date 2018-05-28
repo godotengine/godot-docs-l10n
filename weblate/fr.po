@@ -11,10 +11,12 @@
 # Jean-François Michaud <jfmichaud31@gmail.com>, 2018.
 # Jérôme Bignon <iphonejeromebignon@gmail.com>, 2018.
 # John Bernier <john.bp@unknit.net>, 2018.
+# Jules Teneul <julesteneul@gmail.com>, 2018.
 # Kanabenki <lucien.menassol@gmail.com>, 2018.
 # keltwookie <keltwookie@protonmail.com>, 2018.
 # Luc Stepniewski <lior@gradstein.info>, 2018.
 # Michel Durand <ledragonseveille@gmail.com>, 2018.
+# mutergfp <lucas.desnoue@free.fr>, 2018.
 # Nathan Lovato <nathan.lovato.art@gmail.com>, 2018.
 # Nathan Vallet <nathanvalletmarseille@gmail.com>, 2018.
 # Nocta Senestra <nocta@net-c.com>, 2018.
@@ -32,8 +34,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-18 13:56+0000\n"
-"Last-Translator: Rémi Verschelde <rverschelde@gmail.com>\n"
+"PO-Revision-Date: 2018-05-28 08:21+0000\n"
+"Last-Translator: keltwookie <keltwookie@protonmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -265,9 +267,9 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot est complètement libre et open source sous la licence très permissive "
-"du MIT. Sans conditions attachées, sans royalties, rien. Les jeux des "
-"utilisateurs sont les leurs, jusqu'à la dernière ligne de code du moteur. Le "
+"Godot est complètement libre et open source sous la  très permissive licence "
+"MIT. Sans conditions liées, sans royalties, rien. Les jeux des utilisateurs "
+"sont les leurs, jusqu'à la dernière ligne de code du moteur. Le "
 "développement de Godot est totalement indépendant et communautaire, ce qui "
 "donne la possibilité aux utilisateurs d'aider à façonner leur moteur pour le "
 "faire correspondre à leurs attentes. Il est soutenu par la fondation "
@@ -275,13 +277,14 @@ msgstr ""
 "lucratif."
 
 #: ../../docs/about/introduction.rst:41
+#, fuzzy
 msgid ""
 "For a more in-depth view of the engine, you are encouraged to read this "
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
 "Pour une vue plus en profondeur du moteur, vous êtes encouragés à lire cette "
-"documentation davantage, et spécialement le tutoriel :ref:`Pas à pas <toc-"
+"documentation plus avant, et spécialement le tutoriel :ref:`Pas à pas <toc-"
 "learn-step_by_step>`."
 
 #: ../../docs/about/introduction.rst:46
@@ -4883,29 +4886,43 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "Exporting"
-msgstr ""
+msgstr "Exportation"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
+#, fuzzy
 msgid ""
 "Now that you have a working game, you probably want to share your success "
 "with others. However, it's not practical to ask your friends to download "
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
+"Maintenant que votre jeu fonctionne, vous voulez surement le partager. "
+"Seulement, demander à ses amis de télécharger Godot pour ouvrir votre "
+"projet, ce n'est pas très pratique. A la place, vous pouvez *exporter* votre "
+"projet, en le convertissant en \"package\" pouvant être lancé par tout le "
+"monde."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
+#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the \"Dodge the Creeps\" game for "
 "a variety of platforms. First, however, we need to make some changes to the "
 "way the game works."
 msgstr ""
+"La façon dont vous exportez votre jeu dépend de la plateforme visée. Dans ce "
+"tutoriel, vous allez apprendre comment exporter le jeu \"Dodge the Creeps\" "
+"pour un panel de plateformes. D'abord, nous devons faire plusieurs "
+"modification sur la manière dont marche le jeu."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
+#, fuzzy
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"Si vous n'avez pas fait \"Dodge the Creeps\", merci de lire :ref:"
+"`doc_your_first_game` avant de continuer ce tutoriel."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 #, fuzzy
@@ -4920,6 +4937,12 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"Dans \"Dodge the Creeps\", nous avons utilisé les commandes du clavier pour "
+"déplacer le personnage du joueur. Cela convient bien si votre jeu est joué "
+"sur un ordinateur, mais sur un téléphone ou une tablette, vous devez gérer "
+"l'entrée de l'écran tactile. Parce qu'un événement de clic peut être traité "
+"de la même façon qu'un événement de toucher de l'écran tactile, nous allons "
+"convertir le jeu vers un style de commande clic-déplacement."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
 msgid ""
@@ -4929,12 +4952,21 @@ msgid ""
 "computer without a touchscreen. Also, make sure to select \"portrait\" under "
 "*Orientation*."
 msgstr ""
+"La première étape consiste à ouvrir \"Paramètres du projet\" puis trouver la "
+"section *Handheld*. Activez l'option *Emulate Touchscreen*. Cela vous permet "
+"de traiter les événements de clics de souris de la même manière que les "
+"événements tactiles, de sorte que vous puissiez tester le jeu sur un "
+"ordinateur sans écran tactile. Veillez également à sélectionner \"portrait\" "
+"sous *Orientation*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
 "In the *Stretch* section, set *Mode* to \"2d\" and *Aspect* to \"keep\". "
 "This ensures that the game scales consistently on different sized screens."
 msgstr ""
+"Dans la section *Stretch*, réglez *Mode* sur \"2d\" et *Aspect* sur \"keep"
+"\". Cela permet de s'assurer que le jeu se met à l'échelle uniformément sur "
+"des écrans de différentes tailles."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 msgid ""
@@ -4942,12 +4974,18 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"Nous devons ensuite modifier le script ``Player.gd`` pour changer la méthode "
+"d'entrée. Nous allons supprimer les entrées de touches du clavier et faire "
+"avancer le joueur vers une \"cible\" définie par l'événement de toucher (ou "
+"de clic)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
 msgstr ""
+"Voici le script complet pour le joueur, avec des commentaires détaillant ce "
+"que nous avons changé :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
 #, fuzzy
@@ -4961,18 +4999,28 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"Pour exporter, vous devez télécharger les *modèles d'exportation* à partir "
+"du site http://godotengine.org/download. Ces modèles sont des versions "
+"optimisées du moteur sans l'éditeur, pré-compilées pour chaque plate-forme. "
+"Vous pouvez également les télécharger dans Godot en cliquant sur *Éditeur -> "
+"Gérer les modèles d'exportation* :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"Dans la fenêtre qui apparaît, vous pouvez cliquer sur \"Télécharger\" pour "
+"obtenir la version du modèle qui correspond à votre version de Godot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"Si vous mettez à jour Godot, vous devez télécharger les modèles qui "
+"correspondent à la nouvelle version ou vos projets exportés risquent de ne "
+"pas fonctionner correctement."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
 #, fuzzy
@@ -4984,12 +5032,17 @@ msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
 msgstr ""
+"Ensuite, vous pouvez configurer les paramètres d'exportation en cliquant sur "
+"*Projet -> Exporter* :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:146
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"Créez un nouveau préréglage d'exportation en cliquant sur \"Ajouter....\" et "
+"en sélectionnant une plate-forme. Vous pouvez faire autant de préréglages "
+"que vous le souhaitez avec des paramètres différents."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
 msgid ""
@@ -4997,33 +5050,44 @@ msgid ""
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"Au bas de la fenêtre se trouvent deux boutons. \"Export PCK/ZIP\" ne crée "
+"qu'une version compressée des données de votre projet. Cela n'inclut pas "
+"d'exécutable, le projet ne peut pas donc pas être exécuté seul."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"Le deuxième bouton, \"Export Project\", crée une version exécutable complète "
+"de votre jeu, comme un `.apk` pour Android ou un `.exe` pour Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
 msgid ""
 "In the \"Resources\" and \"Features\" tabs you can customize how the game is "
 "exported for each platform. We can leave those settings alone for now."
 msgstr ""
+"Dans les onglets \"Ressources\" et \"Fonctionnalités\", vous pouvez "
+"personnaliser la manière dont le jeu est exporté pour chaque plate-forme. "
+"Nous pouvons laisser ces réglages tels-quels pour l'instant."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
 #, fuzzy
 msgid "Exporting by Platform"
-msgstr "Exportation des indicateurs binaires"
+msgstr "Exporter par plateforme"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:162
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
 msgstr ""
+"Dans cette section, nous passerons en revue le processus pour chaque plate-"
+"forme, y compris tout logiciel ou pré-requis supplémentaire dont vous aurez "
+"besoin."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
 msgid "PC (Linux/MacOS/Windows)"
-msgstr ""
+msgstr "PC (Linux/MacOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:168
 msgid ""
@@ -5032,10 +5096,18 @@ msgid ""
 "you want to make. Then click \"Export Project\" and choose a name and "
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
+"L'exportation vers les plates-formes PC fonctionne de la même manière sur "
+"les trois systèmes d'exploitation pris en charge. Ouvrez la fenêtre "
+"d'exportation et cliquez sur \"Ajouter...\" pour créer le(s) pré-réglage(s) "
+"que vous voulez faire. Cliquez ensuite sur \"Exporter le projet\" et "
+"choisissez un nom et un dossier de destination. Choisissez un emplacement *à "
+"l'extérieur* de votre dossier de projet."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:173
 msgid "Click \"Save\" and the engine will build the export files."
 msgstr ""
+"Cliquez sur \"Enregistrer\" et le moteur compilera les fichiers "
+"d'exportation."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
 msgid ""
@@ -5044,6 +5116,10 @@ msgid ""
 "either case, the compressed file contains a MacOS `.app` that you can double-"
 "click and run."
 msgstr ""
+"Lors de l'exportation pour MacOS, si vous exportez sur un ordinateur MacOS, "
+"vous obtiendrez un fichier `.dmg', alors que l'exportation sous Linux ou "
+"Windows produit un `.zip'. Dans les deux cas, le fichier compressé contient "
+"un fichier MacOS `.app` que vous pouvez double-cliquer et exécuter."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:180
 msgid ""
@@ -5051,6 +5127,9 @@ msgid ""
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
+"Sous Windows, si vous voulez que votre exécutable exporté ait une icône "
+"différente de celle par défaut, vous devez la changer manuellement. Voir : :"
+"ref:`doc_changing_application_icon_for_windows`."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:187
 msgid ""
@@ -5059,12 +5138,19 @@ msgid ""
 "art than science, and you may need to do some experimenting and searching "
 "for help in order to get everything working."
 msgstr ""
+"Les appareils mobiles sont dotés d'une grande diversité de caractéristiques. "
+"Dans la plupart des cas, les paramètres par défaut de Godot fonctionneront, "
+"mais le développement mobile est parfois plus artistique que scientifique, "
+"et vous aurez peut-être besoin d'expérimenter et de chercher de l'aide pour "
+"que tout fonctionne."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:193
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
 msgstr ""
+"Avant de pouvoir exporter votre projet pour Android, vous devez télécharger "
+"le logiciel suivant :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:196
 #, fuzzy
@@ -5077,6 +5163,7 @@ msgstr ""
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
+"Java JDK : http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:199
 msgid ""
@@ -5084,12 +5171,18 @@ msgid ""
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
+"Lorsque vous lancez Android Studio pour la première fois, cliquez sur "
+"*Configure -> SDK Manager* et installez \"Android SDK Platform Tools\". Ceci "
+"installe l'outil en ligne de commande `adb` que Godot utilise pour "
+"communiquer avec votre appareil."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
 msgid ""
 "Next, create a debug keystore with by running the following command on your "
 "system's command line:"
 msgstr ""
+"Créez ensuite une keystore de débogage en exécutant la commande suivante sur "
+"la ligne de commande de votre système :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:210
 msgid ""
@@ -5098,24 +5191,35 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
+"Cliquez sur *Éditeur -> Paramètres de l'éditeur* dans Godot et sélectionnez "
+"la section *Export/Android*. Ici, vous devez définir les chemins d'accès aux "
+"applications Android SDK sur votre système et l'emplacement du keystore que "
+"vous venez de créer."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:216
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
 msgstr ""
+"Vous êtes maintenant prêt à exporter. Cliquez sur *Projet -> Exporter* et "
+"ajoutez un pré-réglage pour Android (voir ci-dessus)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:219
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
+"Cliquez sur le bouton \"Exporter le projet\" et Godot construira un APK que "
+"vous pourrez télécharger sur votre appareil. Pour ce faire utilisez ceci sur "
+"la ligne de commande :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:226
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
 msgstr ""
+"Il se peut que votre appareil nécessite d'être en mode *développeur*. "
+"Consultez la documentation de votre appareil pour plus de détails."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:229
 msgid ""
@@ -5123,12 +5227,17 @@ msgid ""
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
+"Si votre système le prend en charge, la connexion d'un appareil Android "
+"compatible fera apparaître un bouton \"Déploiement en un clic\" dans la zone "
+"des boutons de test de Godot :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
 msgstr ""
+"Cliquez sur ce bouton pour construire l'APK et le copier sur votre appareil "
+"en une seule étape."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
 #, fuzzy
@@ -5146,20 +5255,30 @@ msgid ""
 "can find by logging in to your Apple developer account and looking in the "
 "\"Membership\" section."
 msgstr ""
+"Avant d'exporter, il y a quelques paramètres que vous *devez* remplir pour "
+"que le projet puisse être exporté avec succès. Tout d'abord, l'\"App Store "
+"Team Id\", que vous pouvez trouver en vous connectant à votre compte de "
+"développeur Apple et en consultant la section \"Membership\"."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:246
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
+"Vous devez également fournir des icônes et des images pour l'écran d'accueil "
+"comme indiqué ci-dessous :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Click \"Export Project\" and select a destination folder."
 msgstr ""
+"Cliquez sur \"Exporter le projet\" et sélectionnez un dossier de destination."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
 msgstr ""
+"Une fois que vous avez exporté le projet avec succès, vous trouverez les "
+"dossiers et fichiers suivants qui ont été créés à l'emplacement que vous "
+"avez choisi :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:257
 msgid ""
@@ -5167,16 +5286,22 @@ msgid ""
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
 "com/xcode/mac/current/#/devc8c2a6be1 for more information."
 msgstr ""
+"Vous pouvez maintenant ouvrir le projet dans Xcode et compiler le projet "
+"pour iOS. La procédure de compilation Xcode dépasse le cadre de ce tutoriel. "
+"Voir https://help.apple.com/xcode/mac/current/#/devc8c2a6be1 pour plus "
+"d'informations."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:263
 msgid "HTML5 (web)"
-msgstr ""
+msgstr "HTML5 (web)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:265
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
+"Cliquez sur \"Exporter le projet\" sur le pré-réglage HTML5. Nous n'avons "
+"pas besoin de modifier les paramètres par défaut."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:268
 #, fuzzy
@@ -5194,6 +5319,11 @@ msgid ""
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""
+"L'affichage du fichier `.html` dans votre navigateur vous permet de jouer au "
+"jeu. Cependant, vous ne pouvez pas ouvrir le fichier directement, il doit "
+"être servi par un serveur web. Si vous n'en avez pas sur votre ordinateur, "
+"vous pouvez utiliser Google pour trouver des suggestions spécifique à votre "
+"système d'exploitation."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:278
 msgid ""
@@ -5201,6 +5331,9 @@ msgid ""
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
+"Pointez votre navigateur à l'URL où vous avez placé le fichier html. Vous "
+"devrez peut-être attendre quelques instants pendant que le jeu se charge "
+"avant de voir l'écran titre."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:283
 msgid ""
@@ -5208,6 +5341,9 @@ msgid ""
 "can disable it by setting \"Export With Debug\" off when you export the "
 "project."
 msgstr ""
+"La fenêtre de la console sous le jeu vous indique si quelque chose ne va "
+"pas. Vous pouvez la désactiver en désactivant \"Exporter avec débogage\" "
+"lorsque vous exportez le projet."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
 msgid ""
@@ -5217,6 +5353,12 @@ msgid ""
 "bugs you find at the `Godot Github repository <https://github.com/"
 "godotengine/godot/issues>`_."
 msgstr ""
+"Le support des navigateurs pour WASM n'est pas très répandu. Firefox et "
+"Chrome le supportent tous les deux, mais il se peut que vous trouviez encore "
+"des choses qui ne fonctionnent pas. Assurez-vous d'avoir mis à jour votre "
+"navigateur à la version la plus récente, et signalez tout bogue que vous "
+"trouvez sur le `répertoire Github de Godot <https://github.com/godotengine/"
+"godot/issues>`_."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
@@ -6019,6 +6161,15 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
+"Les deux approches ne sont pas toujours compatibles. Puisqu'un conteneur "
+"contrôle ses enfants, vous ne pouvez pas utiliser le menu de mise en page "
+"sur eux. Chaque conteneur ayant un effet spécifique, vous aurez peut-être "
+"d'en emboîter plusieurs pour obtenir une interface fonctionnelle. Avec "
+"l'approche de mise en page, vous travaillez sur l'enfant à partir du bas "
+"vers le haut. Étant donné que vous n'insérez pas de conteneurs "
+"supplémentaires dans la scène, vous obtiendrez des hiérarchies plus nettes, "
+"mais il sera plus difficile de disposer les éléments en rangée, en colonne, "
+"grille, etc."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:176
 msgid ""
@@ -6042,14 +6193,19 @@ msgid ""
 "Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
 "change the reference point of the margins."
 msgstr ""
+"Les nœuds de contrôles ont une position et une taille, mais ils ont "
+"également des ancrages et des marges. Les ancrages définissent l'origine, ou "
+"le point de référence, pour les cotés Gauche, Haut, Droit et Bas du nœud. "
+"Modifier n'importe lequel valeur des 4 ancrages pour modifier le point de "
+"référence des marges."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:189
 msgid "The anchor property"
-msgstr ""
+msgstr "La propriété d'ancrage"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "How to change the anchor"
-msgstr ""
+msgstr "Comment modifier l'ancrage"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:194
 msgid ""
@@ -6060,14 +6216,21 @@ msgid ""
 "inspector’s 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
+"Comme toutes les propriétés, vous pouvez modifier les 4 points d'ancrage "
+"dans l'Inspecteur, mais il ne s'agit pas de la façon la plus conviviale. "
+"Lorsque vous sélectionnez un nœud de contrôle, le menu de mise en page "
+"s'affiche au-dessus de la vue, dans la barre d'outils. Il vous donne une "
+"liste d'icônes pour paramétrer les 4 ancrages en un seul clic, au lieu "
+"d'utiliser les 4 propriétés dans l'Inspecteur. Le menu de mise en page "
+"s'affichera seulement lorsque vous sélectionnez un nœud de contrôle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:203
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "Le menu de mise en page dans la vue"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "Anchors are relative to the parent container"
-msgstr ""
+msgstr "Les ancrages sont relatifs à leur conteneur parent"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:208
 msgid ""
@@ -6079,16 +6242,27 @@ msgid ""
 "position in pixels, while anchors are relative to the parent container's "
 "size."
 msgstr ""
+"Chaque ancrage est une valeur qui se situe entre 0 et 1. Pour les ancrages "
+"du haut et de gauche, une valeur de 0 signifie que, sans aucune marge, les "
+"bords du nœud s'aligneront avec les bords de gauche et de haut de son "
+"parent. Pour les bords droit et bas, une valeur de 1 signifie qu'ils "
+"s'aligneront avec les bords de droite et du bas de son conteneur parent. "
+"Dans une autre ordre d'idée, les marges représentent une distance jusqu'au "
+"position d'un ancrage en pixels, tandis que les ancrages sont relatifs à la "
+"taille de leur conteneur parent."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:218
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
+"Les marges sont relatives à la position de l'ancrage, ce qui est relatif aux "
+"ancrages. En pratique, vous allez laisser souvent le conteneur mettre à jour "
+"les marges pour vous"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:223
 msgid "Margins change with the anchor"
-msgstr ""
+msgstr "Les marges changent avec l'ancrage"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:225
 msgid ""
@@ -6099,10 +6273,18 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
+"Les marges se mettent à jour automatiquement lorsque vous déplacez ou "
+"redimensionnez un nœud de contrôle. Elles représentent la distance des bords "
+"du nœud de contrôle à son ancrage, qui est relatif au nœud de contrôle "
+"parent ou au conteneur. C'est pourquoi vos nœuds de contrôle devraient "
+"toujours se trouver à l'intérieur d'un conteneur, comme nous le verrons dans "
+"un instant. S'il n'y a pas de parent, les marges seront relatives au "
+"rectangle de délimitation du nœud, défini dans la section Rect, dans "
+"l'inspecteur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:235
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
-msgstr ""
+msgstr "Marges sur un CenterContainer réglé sur l'ancre \"Full Rect\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:237
 msgid ""
@@ -6113,10 +6295,20 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"Essayez de changer les ancres ou d'imbriquer vos nœuds de contrôle à "
+"l'intérieur des conteneurs : les marges se mettront à jour. Vous aurez "
+"rarement besoin d'éditer les marges manuellement. Essayez toujours de "
+"trouver un conteneur pour vous aider en premier; Godot est fourni avec des "
+"nœuds pour résoudre tous les cas courants pour vous. Besoin d'ajouter de "
+"l'espace entre une barre de vie et le bord de l'écran ? Utilisez le "
+"MarginContainer. Vous voulez construire un menu vertical ? Utilisez le "
+"VBoxContainer. Plus d'informations à ce sujet ci-dessous."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
+"Utilisez les balises de taille pour modifier la façon dont les éléments de "
+"l'interface utilisateur remplissent l'espace disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:248
 msgid ""
@@ -6128,10 +6320,21 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"Chaque nœud de contrôle a des drapeaux de taille. Ils indiquent aux "
+"conteneurs comment les éléments de l'interface utilisateur doivent être mis "
+"à l'échelle. Si vous ajoutez le drapeau \"Fill\" à la propriété Horizontal "
+"ou Vertical, la boîte de délimitation du nœud prendra tout l'espace qu'elle "
+"peut, mais elle respectera ses noeuds frères et conservera sa taille. S'il y "
+"a 3 nœuds TextureRect dans un HBoxContainer, avec les drapeaux \"Fill\" sur "
+"les deux axes, ils occuperont chacun jusqu'à un tiers de l'espace "
+"disponible, mais pas plus. Le conteneur va prendre le contrôle du nœud et le "
+"redimensionner automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:258
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
 msgstr ""
+"3 éléments d'interface utilisateur dans un HBoxContainer, qui s'alignent "
+"horizontalement"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:260
 msgid ""
@@ -6139,29 +6342,45 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"Le drapeau \"Expand\" permet à l'élément de l'interface de prendre tout "
+"l'espace qu'il peut, et de pousser ses éléments frères. Son rectangle "
+"délimitant grandira jusqu'aux bords de son parent, ou jusqu'à ce qu'il soit "
+"bloqué par un autre nœud d'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:266
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
 msgstr ""
+"Le même exemple que ci-dessus, mais le nœud central a le drapeau de taille "
+"\"Expand\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"Vous aurez besoin d'un peu de pratique pour comprendre les balises de "
+"taille, car leur effet peut assez varier en fonction de la façon dont vous "
+"configurez votre interface."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:273
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "Arrangez automatiquement les nœuds de contrôle avec les conteneurs"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
+#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor so you can see the effect instantly."
 msgstr ""
+"Les conteneurs rangent automatiquement tous les noeuds enfants Control, y "
+"compris les autres conteneurs en rangées, colonnes et plus encore. Utilisez-"
+"les pour ajouter du remplissage autour de votre interface ou des nœuds "
+"centraux dans leurs rectangles de délimitation. Tous les conteneurs intégrés "
+"sont mis à jour dans l'éditeur pour que vous puissiez voir l'effet "
+"instantanément."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""
@@ -6169,33 +6388,46 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"Les conteneurs ont quelques propriétés spéciales pour contrôler la façon "
+"dont ils organisent les éléments de l'interface utilisateur. Pour les "
+"modifier, naviguez jusqu'à la section personnalisée Constants dans "
+"l'inspecteur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "Les 5 conteneurs les plus utiles"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:288
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"Si vous créez des outils, vous pourriez avoir besoin de tous les conteneurs. "
+"Mais pour la plupart des jeux, une poignée suffira :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid "MarginContainer, to add margins around part of the UI"
 msgstr ""
+"MarginContainer, pour ajouter des marges autour d'une partie de l'interface "
+"utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
 msgid "CenterContainer, to center its children in its bounding box"
 msgstr ""
+"CenterContainer, pour centrer ses enfants dans sa boîte de délimitation"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
 msgstr ""
+"VboxContainer et HboxContainer, pour organiser les éléments de l'interface "
+"utilisateur en lignes ou en colonnes"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr ""
+"GridContainer, pour disposer les nœuds Control dans un motif en forme de "
+"grille"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -6205,11 +6437,19 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer centre tous ses enfants à l'intérieur de son rectangle "
+"délimitant. C'est celui que vous utilisez généralement pour les écrans de "
+"titre, si vous voulez que les options restent au centre de la fenêtre "
+"d'affichage. Comme il centre tout, vous aurez souvent besoin d'un seul "
+"conteneur imbriqué à l'intérieur. Si vous utilisez des textures et des "
+"boutons à la place, ils s'empileront."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:305
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
+"CenterContainer en action. La barre de vie se centre à l'intérieur de son "
+"conteneur parent."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
@@ -6220,10 +6460,19 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"Le MarginContainer ajoute une marge de n'importe quel côté des nœuds "
+"enfants. Ajoutez un MarginContainer qui englobe l'ensemble de la fenêtre "
+"pour ajouter une séparation entre le bord de la fenêtre et l'interface "
+"utilisateur. Vous pouvez définir une marge en haut, à gauche, à droite, ou "
+"en bas du conteneur. Pas besoin de cocher la case : cliquez sur le champ de "
+"valeur correspondant et tapez n'importe quel nombre. Il s'activera "
+"automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"Le MarginContainer ajoute une marge de 40px autour de l'interface "
+"utilisateur du jeu"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:319
 msgid ""
@@ -6234,10 +6483,18 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"Il y a deux BoxContainers : VBoxContainer et HBoxContainer. Vous ne pouvez "
+"pas ajouter le nœud BoxContainer lui-même, car il s'agit d'une classe "
+"d'aide, mais vous pouvez utiliser des conteneurs de boîtes verticaux et "
+"horizontaux. Ils organisent les nœuds en lignes ou en colonnes. Utilisez-les "
+"pour aligner des articles dans une boutique, ou pour construire des grilles "
+"complexes avec des lignes et des colonnes de différentes tailles, car vous "
+"pouvez les emboîter à votre guise."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
 msgid "The HBoxContainer horizontally aligns UI elements"
 msgstr ""
+"Le HBoxContainer aligne horizontalement les éléments d'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:330
 msgid ""
@@ -6248,6 +6505,13 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer organise automatiquement ses enfants dans une colonne. Il les "
+"place les un après les autres. Si vous utilisez le paramètre de séparation, "
+"il laissera un espace entre ses enfants. HBoxContainer organise les éléments "
+"d'interface utilisateur dans une rangée. Il est similaire au VBoxContainer, "
+"avec une méthode supplémentaire ``add_spacer`` pour ajouter un noeud de "
+"contrôle spacer avant son premier enfant ou après son dernier enfant, à "
+"partir d'un script."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:337
 msgid ""
@@ -6260,10 +6524,21 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"Le GridContainer vous permet d'organiser les éléments de l'interface "
+"utilisateur selon un motif en forme de grille. Vous ne pouvez contrôler que "
+"le nombre de colonnes qu'il a, et il fixera le nombre de lignes par lui-"
+"même, en se basant sur le nombre de ses enfants. Si vous avez neuf enfants "
+"et trois colonnes, vous aurez 9÷3 = 3 lignes. Ajoutez trois enfants de plus "
+"et vous aurez quatre rangées. En d'autres termes, il créera de nouvelles "
+"lignes au fur et à mesure que vous ajouterez des textures et des boutons. "
+"Comme les conteneurs box, il a deux propriétés pour définir la séparation "
+"verticale et horizontale entre les lignes et les colonnes respectivement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:348
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr ""
+"Un GridContainer avec 2 colonnes. Il dimensionne chaque colonne "
+"automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
 msgid ""
@@ -6271,24 +6546,33 @@ msgid ""
 "design more advanced interface, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
+"Le système d'interface utilisatuer de Godot est complexe et a beaucoup plus "
+"à offrir. Pour apprendre à concevoir une interface plus avancée, rendez-vous "
+"dans la section :ref:`GUI section <toc-learn-features-gui>` de la "
+"documentation."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr ""
+msgstr "Concevoir un écran titre"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
 msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
+"Dans les deux prochains tutoriels, vous créerez deux scènes d'interface "
+"utilisateur, étape par étape, en utilisant le système d'interface "
+"utilisateur du moteur :"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu"
-msgstr ""
+msgstr "Un menu principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
 msgid "A game UI with a health bar, energy bar, bomb and money counters"
 msgstr ""
+"Une interface utilisateur de jeu avec une barre de santé, une barre "
+"d'énergie, une bombe et des compteurs d'argent"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -6296,10 +6580,12 @@ msgid ""
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
+"Vous allez apprendre comment concevoir une interface utilisateur (UI) "
+"efficace, et comment utilisé"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
-msgstr ""
+msgstr "L'interface graphique que vous allez créer"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -6309,12 +6595,18 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu``` "
 "folder."
 msgstr ""
+"Télécharger les fichiers du projet : :téléchargement:`ui_main_menu_design."
+"zip <files/ui_main_menu_design.zip>`et extrayez l'archive. Importez le "
+"projet ``start/`` dans Godot pour suivre ce tutoriel. Le dossier ``end/`` "
+"contient le résultat final. Vous trouverez tous les sprites dans le dossier "
+"``start/assets/main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
-msgstr ""
+msgstr "Comment concevoir l'interface utilisateur de votre jeu"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:35
+#, fuzzy
 msgid ""
 "To design a good UI, you want to come up with a rough mockup first: a plain "
 "drawing version that focuses on the placement of your UI components, their "
@@ -6324,29 +6616,50 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
+"Pour concevoir une bonne interface utilisateur, vous voudrez d'abord créer "
+"une maquette grossière : une version dessin simple qui met l'accent sur le "
+"placement des composants de votre interface utilisateur, leur taille et "
+"l'interaction avec l'utilisateur. Un stylo et du papier, c'est tout ce dont "
+"vous avez besoin. Vous ne devriez pas utiliser de graphiques fantaisistes et "
+"finaux à ce stade. Ensuite, vous n'avez besoin que de simples places "
+"réservées pour vos tuiles et vous êtes bon pour plonger dans Godot. Vous "
+"voulez vous assurer que les joueurs puissent trouver leur chemin parmi "
+"l'interface en utilisant ces espaces réservés."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:45
+#, fuzzy
 msgid "The UI's rough plan or mockup"
-msgstr ""
+msgstr "Le plan basique de l'UI ou sa maquette"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
+#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you had players playtest your UI. Otherwise:"
 msgstr ""
+"Les places réservées n'ont pas à être laides, mais vous devriez garder les "
+"graphiques simples et concis. Evitez tout effet spécial, animation, et "
+"illustration détaillée avant que les joueurs ne testent votre interface "
+"utilisateur. Sinon :"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:51
+#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback"
 msgstr ""
+"Les graphismes peuvent fausser la perception du joueur durant l"
+"\"expérimentation et vous passeriez à côté de précieux renseignements."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:53
 msgid "If the User Experience doesn't work, you'll have to redo some sprites"
 msgstr ""
+"Si l'Expérience Utilisateur (UX) n'est pas bien, vous aurez à refaire des "
+"sprites"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:57
+#, fuzzy
 msgid ""
 "Always try to make the interface work with simple text and boxes first. It's "
 "easy to replace the textures later. Professional UX designers often work "
@@ -6354,80 +6667,121 @@ msgid ""
 "visuals away, it's a lot easier to size and place UI elements properly. It "
 "helps you refine the design foundation you'll build upon."
 msgstr ""
+"Toujours essayer de faire une interface fonctionnel avec des textes et des "
+"carrés. Il est facile de remplacer les textures plus tard. Les "
+"professionnels de la conception UX travail souvent avec un plan et des "
+"carrés de couleur grises. Quand vous prenez des couleur et des visuels non "
+"fantaisiste, il sera plus facile de placer les éléments de l'UI. Cela vous "
+"aide à affiner le design principal que vous construirez plus tard."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:64
 msgid "There are two ways to design your UI in Godot. You can:"
-msgstr ""
+msgstr "Il y a 2 possibilités pour créer votre UI dans Godot. Vous pouvez :"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:66
+#, fuzzy
 msgid ""
 "Build it all in a single scene, and eventually save some branches as "
 "reusable scenes"
 msgstr ""
+"Construire le tout en une seule scène, et éventuellement sauvegarder "
+"certaines branches comme scènes réutilisables."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:68
+#, fuzzy
 msgid ""
 "Build template scenes for reusable components and create specific components "
 "that inherit from your base scenes"
 msgstr ""
+"Créez des scènes modèles pour les composants réutilisables et créez des "
+"composants spécifiques qui héritent de vos scènes de base."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:71
+#, fuzzy
 msgid ""
 "We will use the first approach, because the first version of your UI may not "
 "work as well as you’d like. You’re likely to throw parts away and redesign "
 "components as you go. When you're sure everything works, it's easy to make "
 "some parts reusable, as you'll see below."
 msgstr ""
+"Nous utiliserons la première approche, car la première version de votre "
+"interface utilisateur pourrait ne pas fonctionner aussi bien que vous le "
+"souhaitez. Vous risquez d'en jeter des parties et de redessiner des "
+"composants au fur et à mesure. Lorsque vous êtes sûr que tout fonctionne, il "
+"est facile de rendre certaines parties réutilisables, comme vous le verrez "
+"ci-dessous."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:78
+#, fuzzy
 msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders"
 msgstr ""
+"Les fichiers que vous trouverez dans Godot. Les graphiques paraissent plus "
+"attrayants que sur le dessin brut, mais ce sont quand même des espaces "
+"réservés."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:82
 msgid "Design the main menu"
-msgstr ""
+msgstr "Construire le menu principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:84
+#, fuzzy
 msgid ""
 "Before we jump into the editor, we want to plan how we'll nest containers "
 "based on our mockup image."
 msgstr ""
+"Avant de passer à l'éditeur, nous voudrions planifier comment nous "
+"imbriquerons les conteneurs sur la base de notre maquette."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:277
+#, fuzzy
 msgid "Break down the UI mockup"
-msgstr ""
+msgstr "Décomposez la maquette d'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:90
+#, fuzzy
 msgid "Here are my three rules of thumb to find the right containers:"
-msgstr ""
+msgstr "Voici mes trois règles de base pour trouver les bons conteneurs  :"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:92
+#, fuzzy
 msgid ""
 "Break down the UI into nested boxes, from the largest that contains "
 "everything, to the smallest ones, that encompass one widget, like a bar with "
 "its label, a panel or a button"
 msgstr ""
+"Décomposez l'interface utilisateur en cases, de la plus grande qui contient "
+"le tout, aux plus petites, qui englobent un widget, comme une barre avec son "
+"étiquette, un panneau ou un bouton."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:95
+#, fuzzy
 msgid "If there's some padding around an area, use a ``MarginContainer``"
 msgstr ""
+"S'il y a amoncellement autour d'une zone, utilisez un ``MarginContainer``"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:96
+#, fuzzy
 msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``"
 msgstr ""
+"Si les éléments sont disposés en lignes ou en colonnes, utilisez un "
+"``HBoxContainer`` ou un ``VBoxContainer```."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:99
+#, fuzzy
 msgid ""
 "These rules are enough to get us started, and work well for simple "
 "interfaces."
 msgstr ""
+"Ces règles sont suffisantes pour nous permettre de démarrer, et fonctionnent "
+"bien pour des interfaces simples."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:102
+#, fuzzy
 msgid ""
 "For the main menu, the largest box is the entire game window. There's "
 "padding between the edges of the window and the first components: this "
@@ -6436,27 +6790,46 @@ msgid ""
 "with a ``VBoxContainer``. And in the right column, we'll center the "
 "illustration with a ``CenterContainer``."
 msgstr ""
+"Pour le menu principal, la case la plus grande est la fenêtre du jeu dans sa "
+"totalité. Il y a amoncellement entre les bords de la fenêtre et les premiers "
+"composants : cela devrait être un ``MarginContainer``. Ensuite, l'écran est "
+"divisé en deux colonnes, ous utiliserons donc un ``HBoxContainer``. Dans la "
+"colonne de gauche, nous allons gérer les lignes avec un ``VBoxContainer``. "
+"Et dans la colonne de droite, nous centrerons l'illustration avec un "
+"``CenterContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:111
+#, fuzzy
 msgid "Interface building blocks, broken down using the three rules of thumb"
 msgstr ""
+"Les blocs de construction de l'interface, décomposés selon les trois règles "
+"de base."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:115
+#, fuzzy
 msgid ""
 "Containers adapt to the window's resolution and width-to-height ratio. "
 "Although we could place UI elements by hand, containers are faster, more "
 "precise, and **responsive**."
 msgstr ""
+"Les conteneurs s'adaptent à la résolution de la fenêtre et au rapport "
+"largeur/hauteur. Bien que nous puissions placer les éléments de l'interface "
+"utilisateur à la main, les conteneurs sont plus rapides, plus précis et plus "
+"**réactifs**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:120
+#, fuzzy
 msgid "Prepare the Main Menu scene"
-msgstr ""
+msgstr "Prépare le Menu Principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:122
+#, fuzzy
 msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on the Scene menu -> New Scene."
 msgstr ""
+"Créons le menu principal. Nous le construirons en une seule scène. Pour "
+"créer une scène vide, cliquez sur le menu Scène -> Nouvelle scène."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
 msgid ""
@@ -6466,104 +6839,154 @@ msgid ""
 "interfaces, as you often need padding around the UI. Press ``Meta+S`` to "
 "save the scene to the disk. Name it *MainMenu*."
 msgstr ""
+"Nous devons ajouter un nœud racine avant de pouvoir sauvegarder la scène. La "
+"racine de votre interface utilisateur doit être le conteneur ou l'élément le "
+"plus à l'extérieur. Dans ce cas, il s'agit d'un ``MarginContainer``. Le "
+"``MarginContainer`` est un bon point de départ pour la plupart des "
+"interfaces, car vous avez souvent besoin d'espace autour de l'interface "
+"utilisateur. Appuyez sur ``Meta+S`` pour enregistrer la scène sur le disque. "
+"Nommez-la *MainMenu*."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:131
+#, fuzzy
 msgid ""
 "Select the ``MarginContainer`` again, and head to the inspector to define "
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
 "Constants`` section. Unfold it. Set the margins as such:"
 msgstr ""
+"Sélectionnez à nouveau ``MarginContainer`` et dirigez-vous vers l'inspecteur "
+"pour définir la taille des marges. Faites défiler la classe ``Control`` vers "
+"le bas, jusqu'à la section ``Custom Constants``. Développez-la. Définissez "
+"les marges ainsi :"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:135
+#, fuzzy
 msgid "Margin Right: *120*"
-msgstr ""
+msgstr "Marge droite : *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:136
+#, fuzzy
 msgid "Margin Top: *80*"
-msgstr ""
+msgstr "Marge du haut : *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:137
+#, fuzzy
 msgid "Margin Left: *120*"
-msgstr ""
+msgstr "Marge gauche : *120*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:138
+#, fuzzy
 msgid "Margin Bottom: *80*"
-msgstr ""
+msgstr "Marge du bas : *80*"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:140
+#, fuzzy
 msgid ""
 "We want the container to fit the window. In the Viewport, open the "
 "``Layout`` menu and select the last option, ``Full Rect``."
 msgstr ""
+"Nous voulons que le conteneur s'adapte à la fenêtre. Dans le viewport, "
+"ouvrez le menu ``Layout`` et sélectionnez la dernière option, ``Full Rect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:144
+#, fuzzy
 msgid "Add the UI sprites"
-msgstr ""
+msgstr "Ajoutez les tuiles d'interface"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:146
+#, fuzzy
 msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
+"Sélectionnez ``MarginContainer``, et créez les éléments de l'interface "
+"utilisateur en tant que nœuds ``TextureRect``. Nous avons besoin :"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "The title, or logo"
-msgstr ""
+msgstr "Le titre, ou logo"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:150
+#, fuzzy
 msgid "The three text options, as individual nodes"
-msgstr ""
+msgstr "Les trois options de texte, en tant que nœuds individuels"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:151
+#, fuzzy
 msgid "The version note"
-msgstr ""
+msgstr "La note de version"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
 msgid "And the main menu’s illustration"
-msgstr ""
+msgstr "Et l'illustration du menu principal"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:154
+#, fuzzy
 msgid ""
 "Click the ``Add Node`` button or press ``Meta+A`` on your keyboard. Start to "
 "type ``TextureRect`` to find the corresponding node and press enter. With "
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
+"Cliquez sur le bouton ``Add Node`` ou appuyez sur les touches ``Meta+A`` de "
+"votre clavier. Commencez par taper ``TextureRect`` pour trouver le noeud "
+"correspondant et appuyer sur entrer. Avec le nouveau noeud selectionné, "
+"appuyez cinq fois sur les touches ``Meta+D`` pour créé cinq autre instance "
+"de ``TextureRect``"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
+#, fuzzy
 msgid ""
 "Click each of the nodes to select it. In the inspector, click the ``…`` Icon "
 "to the right of the Texture property, and click on ``Load``. A file browser "
 "opens and lets you pick a sprite to load into the texture slot."
 msgstr ""
+"Cliquez sur chacun des nœuds pour le sélectionner. Dans l'inspecteur, "
+"cliquez sur l'icône ``....``` à droite de la propriété Texture, et cliquez "
+"sur ``Charger``. Un navigateur de fichiers s'ouvre et vous permet de choisir "
+"une tuile à charger dans le slot de texture."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid "The file browser lets you find and load textures"
 msgstr ""
+"Le navigateur de fichier vous permet de trouver et de charger les textures"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
+#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
 "a separate node. Then, double click on each of the nodes in the Inspector to "
 "rename them"
 msgstr ""
+"Répétez l'opération pour tous les nœuds ``TextureRect``. Vous devriez avoir "
+"le logo, l'illustration, les trois options de menu et la note de version, "
+"chacun en tant que nœud séparé. Ensuite, double-cliquez sur chacun des nœuds "
+"de l'Inspecteur pour les renommer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
+#, fuzzy
 msgid "The six nodes, with textures loaded"
-msgstr ""
+msgstr "Les six nœuds, avec des textures chargées."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
+#, fuzzy
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
+"Si vous voulez supporter les traductions dans votre jeu, utilisez ``Labels`` "
+"pour les options de menu au lieu de ``TextureRect```."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:182
+#, fuzzy
 msgid "Add containers to place UI elements automatically"
 msgstr ""
+"Ajoutez des conteneurs pour placer automatiquement les éléments de "
+"l'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
+#, fuzzy
 msgid ""
 "Our main menu has some margin around the edges of the screen. It is split in "
 "two parts: on the left, you have the logo and the menu options. On the "
@@ -6575,46 +6998,74 @@ msgid ""
 "as it has children. Although you can deactivate the split container's resize "
 "behaviour, I recommend to favour box containers."
 msgstr ""
+"Notre menu principal a une certaine marge autour des bords de l'écran. Il "
+"est divisé en deux parties : A gauche, vous avez le logo et les options de "
+"menu. A droite, vous avez les personnages. Nous pouvons utiliser l'un des "
+"deux conteneurs pour y parvenir : ``HSplitContainer`` ou ``HBoxContainer``. "
+"Les conteneurs divisés divisent la zone en deux : un côté gauche et un côté "
+"droit ou un côté supérieur et un côté inférieur. Ils permettent également à "
+"l'utilisateur de redimensionner les zones gauche et droite à l'aide d'une "
+"barre interactive. D'un autre côté, \"HBoxContainer\" se divise en autant de "
+"colonnes qu'il y a d'enfants. Bien que vous puissiez désactiver le "
+"comportement de redimensionnement de la division du conteneur, je recommande "
+"de privilégier les conteneurs Box."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:195
+#, fuzzy
 msgid ""
 "Select the ``MarginContainer`` and add an ``HBoxContainer``. Then, we need "
 "two containers as children of our ``HBoxContainer``: a ``VBoxContainer`` for "
 "the menu options on the left, and a ``CenterContainer`` for the illustration "
 "on the right."
 msgstr ""
+"Sélectionnez ``MarginContainer`` et ajoutez un ``HBoxContainer``. Ensuite, "
+"nous avons besoin de deux conteneurs comme enfants de notre "
+"``HBoxContainer`` : un ``VBoxContainer`` pour les options de menu à gauche, "
+"et un ``CenterContainer`` pour l'illustration à droite."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:202
+#, fuzzy
 msgid ""
 "You should have four nested containers, and the TextureRect nodes sitting "
 "aside from it"
 msgstr ""
+"Vous devriez avoir quatre conteneurs imbriqués, et les nœuds TextureRect "
+"placés à côté de celui-ci."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
+#, fuzzy
 msgid ""
 "In the node tree, select all the ``TextureRect`` nodes that should go on the "
 "left side: the logo, the menu options and the version note. Drag and drop "
 "them into the ``VBoxContainer``. Then, drag the illustration node into the "
 "``CenterContainer``. The nodes should position automatically."
 msgstr ""
+"Dans l'arborescence des nœuds, sélectionnez tous les nœuds ``TextureRect`` "
+"qui doivent aller sur le côté gauche : le logo, les options de menu et la "
+"note de version. Faites un glissé-déposé dans le ``VBoxContainer``. Ensuite, "
+"faites glisser le nœud d'illustration dans le ``CenterContainer``. Les nœuds "
+"devraient se positionner automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
+#, fuzzy
 msgid "Containers automatically place and resize textures"
 msgstr ""
+"Les conteneurs placent et redimensionnent automatiquement les textures."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "We're left with two problems to solve:"
-msgstr ""
+msgstr "Nous avons encore deux problème à résoudre :"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "The characters on the right aren't centered"
-msgstr ""
+msgstr "Les caractères à droite ne sont pas centré"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid "There's no space between the logo and the other UI elements"
-msgstr ""
+msgstr "Il n'y a pas d'espace entre le logo et les autres élements de l'UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
+#, fuzzy
 msgid ""
 "To center the characters on the right, we'll use a ``CenterContainer``.  Add "
 "a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the "
@@ -6623,14 +7074,26 @@ msgid ""
 "for the ``Horizontal`` property. Finally drag and drop the Characters into "
 "the ``CenterContainer``. The Characters element will center automatically."
 msgstr ""
+"Pour centrer les caractères à droite, nous utiliserons un "
+"``CenterContainer``.  Ajoutez un noeud ``CenterContainer`` comme enfant du "
+"``HBoxContainer``. Ensuite, dans l'inspecteur, faites défiler vers le bas "
+"jusqu'à la catégorie \" Taille des drapeaux \" et cliquez sur le champ à "
+"droite de la propriété \" Vertical \", et cochez \" Développer \". Faites de "
+"même pour la propriété \"Horizontal\". Enfin, glissez et déposez les "
+"Characters dans le ``CenterContainer``. Les éléments Characters se centre "
+"automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
+#, fuzzy
 msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer"
 msgstr ""
+"Le nœud Character se centre dans la moitié droite de l'écran dès que vous le "
+"placez à l'intérieur du CenterContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
+#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -6639,13 +7102,25 @@ msgid ""
 "and ``Options``, and drag and drop them inside the new ``VBoxContainer``. "
 "The UI's layout should barely change, if at all."
 msgstr ""
+"Pour espacer les options du menu et le logo à gauche, nous utiliserons un "
+"conteneur final et ses tailles de drapeaux. Sélectionnez le "
+"``VBoxContainer`` et appuyez sur ``Meta+A`` pour ajouter un nouveau nœud "
+"dedans. Ajoutez un second ``VBoxContainer`` et nommez-le \"MenuOptions\". "
+"Sélectionnez les trois options de menu, ``Continue``, ``NewGame`` et "
+"``Options``, et faites-les glisser puis déposez les à l'intérieur du nouveau "
+"``VBoxContainer``. La disposition de l'interface utilisateur devrait à peine "
+"changer, voire pas du tout."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:241
+#, fuzzy
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr ""
+"Placez le nouveau conteneur entre les deux autres nœuds pour conserver la "
+"disposition de l'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
+#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -6654,16 +7129,28 @@ msgid ""
 "check ``Expand``. The container expands to take all the available vertical "
 "space. But it respects its neighbors, the ``Logo`` and ``Version`` elements."
 msgstr ""
+"Maintenant que nous avons regroupé les options de menu tous ensemble, nous "
+"pouvons dire à leur conteneur de se développer pour prendre autant d'espace "
+"vertical que possible. Sélectionnez le noeud ``MenuOptions``. Dans "
+"l'inspecteur, faites défiler vers le bas jusqu'à la catégorie \" Size Flags "
+"\". Cliquez sur le champ à droite de la propriété ``Vertical`` et cochez "
+"``Expand``. Le conteneur se dilate pour prendre tout l'espace vertical "
+"disponible. Mais elle respecte ses voisins, les éléments \"Logo\" et "
+"\"Version\"."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:252
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the ``Alignment`` property to ``Center``."
 msgstr ""
+"Pour centrer les nœuds dans le ``VBoxContainer``, faites défiler jusqu'en "
+"haut de l'Inspecteur et changez la propriété ``Alignment`` en ``Center``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:257
 msgid "The menu options should center vertically in the UI's left column"
 msgstr ""
+"Les options du menu devraient se centrer verticalement dans la colonne de "
+"gauche de l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:259
 msgid ""
@@ -6673,15 +7160,21 @@ msgid ""
 "enter, the ``Separation`` property becomes active and Godot adds 30 pixels "
 "between menu options."
 msgstr ""
+"Pour conclure, ajoutons une séparation entre les options du menu. Développez "
+"la catégorie ``Custom Constants`` sous ``Size Flags``, et cliquez sur le "
+"champ à côté du paramètre ``Separation``. Réglez-le à 30. Après avoir pressé "
+"Entrée, la propriété ``Separation`` devient active et Godot ajoute 30 pixels "
+"entre les options du menu."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:267
 msgid "The final interface"
-msgstr ""
+msgstr "L'interface finale"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:269
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
+"Sans une seule ligne de code, nous avons un menu principal précis et réactif."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
 msgid ""
@@ -6689,32 +7182,57 @@ msgid ""
 "to compare with your own. In the next tutorial, you'll create a Game User "
 "Interface with bars and item counters."
 msgstr ""
+"Félicitations d'être arrivé jusqu'ici ! Vous pouvez télécharger le `menu "
+"final <#>`__ pour le comparer avec le vôtre. Dans le prochain tutoriel, vous "
+"créerez une interface utilisateur de jeu avec des barres et des compteurs "
+"d'objets."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
+#, fuzzy
 msgid ""
 "Responsive User Interface is all about making sure our UIs scale well on all "
 "screen types. TV screens and computer displays have different sizes and "
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
+"Une interface utilisateur réactive consiste à s'assurer que nos interfaces "
+"utilisateur s'adaptent bien à tous les types d'écran. Les écrans de "
+"télévision et les écrans d'ordinateur ont des tailles et des ratios "
+"différents. Dans Godot, nous utilisons des conteneurs pour contrôler la "
+"position et la taille des éléments de l'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
+#, fuzzy
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press the Q key to activate "
 "the Select Mode, select the container and click and drag on one of the "
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
+"L'ordre dans lequel vous faites votre imbrication est important. Pour voir "
+"si votre interface utilisateur s'adapte bien aux différents ratios d'écran, "
+"sélectionnez le nœud racine, appuyez sur la touche Q pour activer le mode "
+"Select, sélectionnez le conteneur, cliquez et glissez sur l'un des coins du "
+"conteneur pour le redimensionner. Les composants de l'interface utilisateur "
+"devraient circuler à l'intérieur."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:290
+#, fuzzy
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
 "ratios, but we also need the entire game to adapt to different screen "
 "resolutions. To do this, Godot scales the entire window up and down."
 msgstr ""
+"Vous remarquerez que même si les conteneurs déplacent les tuiles, ils ne les "
+"mettent pas à l'échelle. C'est normal. Nous voulons que le système "
+"d'interface utilisateur gère différents ratios d'écran, mais nous avons "
+"aussi besoin que le jeu entier s'adapte à différentes résolutions d'écran. "
+"Pour ce faire, Godot met à l'échelle toute la fenêtre vers le haut et vers "
+"le bas."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:296
+#, fuzzy
 msgid ""
 "You can change the scale mode in the project settings: click the Project "
 "menu -> Project Settings. In the window's left column, look for the Display "
@@ -6723,88 +7241,119 @@ msgid ""
 "control the screen size. For more information, see :ref:"
 "`doc_multiple_resolutions`."
 msgstr ""
+"Vous pouvez changer le mode d'échelle dans les paramètres du projet : "
+"cliquez sur le menu Projet -> Paramètres du projet. Dans la colonne de "
+"gauche de la fenêtre, recherchez la catégorie Afficher. Cliquez sur la sous-"
+"catégorie Fenêtre. Sur le côté droit de la fenêtre, vous trouverez une "
+"section Étirement. Les trois paramètres, Mode, Aspect et Rétrécissement, "
+"contrôlent la taille de l'écran. Pour plus d'informations, voir :ref:"
+"`doc_multiple_resolutions`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr ""
+msgstr "Créer l'IHM"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
+#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a Game "
 "User Interface (GUI) with reusable UI components: a life bar, an energy bar, "
 "and bomb and rupee counters. By the end of this tutorial, you'll have a game "
 "GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
+"Maintenant que vous avez fait les bases, nous allons voir comment construire "
+"une Interface Homme-Machine (IHM) avec des"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
 msgid "The final result"
-msgstr ""
+msgstr "Le résultat final"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:15
 msgid "You'll also learn to:"
-msgstr ""
+msgstr "Vous allez aussi apprendre à :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
+#, fuzzy
 msgid "Create flexible UI components"
-msgstr ""
+msgstr "Créer des composants d'interface utilisateur flexibles"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
+#, fuzzy
 msgid "Use scene inheritance"
-msgstr ""
+msgstr "Utiliser l'héritage de scène"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
+#, fuzzy
 msgid "Build a complex UI"
-msgstr ""
+msgstr "Concevoir une interface utilisateur complexe"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
+#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_gui_design.zip <files/"
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
+"Télécharger les fichiers du projet : :download: :`ui_gui_design.zip <files/"
+"ui_gui_design.zip>` et extraire l'archive. Importer le projet `start/` dans "
+"Godot pour suivre ce tutoriel. Le dossier `end/` contient le résultat final."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
 msgid ""
 "You can watch this tutorial as a `video on Youtube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
 msgstr ""
+"Vous pouvez regarder le `tutoriel vidéo sur Youtube <https://www.youtube.com/"
+"watch?v=y1E_y9AIqow>`_."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
+#, fuzzy
 msgid "Breaking down the UI"
-msgstr ""
+msgstr "Décomposer l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
+#, fuzzy
 msgid ""
 "Let's break down the final UI and plan the containers we'll use. As in the :"
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
+"Décomposons l'interface utilisateur finale et prévoyons les conteneurs que "
+"nous utiliserons. Comme dans le :doc:`ui_main_menu_main`, il commence par un "
+"``MarginContainer``. Ensuite, nous pouvons voir jusqu'à trois colonnes :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
+#, fuzzy
 msgid "The life and energy counters on the left"
-msgstr ""
+msgstr "Les compteurs de vie et d'énergie à gauche"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:35
 msgid "The life and energy bars"
-msgstr ""
+msgstr "Les barres de vie et d’énergie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
+#, fuzzy
 msgid "The bomb and rupee counters on the right"
-msgstr ""
+msgstr "Le compteur de bombes et de roupies sur la droite"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
+#, fuzzy
 msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
 msgstr ""
+"Mais l'étiquette de la barre et la jauge sont deux parties d'un même élément "
+"d'interface utilisateur. Si nous pensons à eux de cette façon, il nous reste "
+"deux colonnes :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
-msgstr ""
+msgstr "Les bars de vie et d'énergie à gauche"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
+#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -6813,23 +7362,38 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and rupee counters "
 "side-by-side."
 msgstr ""
+"Cela facilite l'imbrication des conteneurs : nous avons des marges autour de "
+"la bordure de l'écran en utilisant un ``MarginContainer``, suivi d'un "
+"``HBoxContainer`` pour gérer nos deux colonnes. Les deux barres s'empilent "
+"l'une sur l'autre à l'intérieur d'un ``VBoxContainer``. Et nous aurons "
+"besoin d'un dernier \"HBoxContainer\" dans la colonne de droite pour placer "
+"les compteurs de bombes et de roupies côte à côte."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
+#, fuzzy
 msgid "We get a clean UI layout with only 4 containers"
 msgstr ""
+"Nous obtenons une disposition propre de l'interface utilisateur avec "
+"seulement 4 conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
+#, fuzzy
 msgid ""
 "We will need extra containers inside the individual UI components, but this "
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
+"Nous aurons besoin de conteneurs supplémentaires à l'intérieur des "
+"composants individuels de l'interface utilisateur, mais cela nous donne la "
+"structure de la scène principale de l'interface graphique. Avec ce plan en "
+"place, nous pouvons passer à Godot et créer notre interface graphique."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
 msgid "Create the base GUI"
-msgstr ""
+msgstr "Créer les bases de l'IHM"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
+#, fuzzy
 msgid ""
 "There are two possible approaches to the GUI: we can design elements in "
 "separate scenes and put them together, or prototype everything in a single "
@@ -6838,19 +7402,33 @@ msgid ""
 "it looks good, you can save entire sections of the node tree as reusable sub-"
 "scenes. We'll do that in a moment."
 msgstr ""
+"Il y a deux approches possibles pour l'interface graphique : nous pouvons "
+"concevoir des éléments dans des scènes séparées et les assembler, ou bien "
+"faire un prototype du tout dans une seule scène et décomposer plus tard. Je "
+"vous recommande de travailler avec une seule scène car vous pouvez jouer "
+"avec l'emplacement et les proportions de votre interface utilisateur plus "
+"rapidement de cette façon. Une fois que ça a l'air bon, vous pouvez "
+"sauvegarder des sections entières de l'arborescence des nœuds en tant que "
+"sous-scènes réutilisables. Nous le ferons dans un instant."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
+#, fuzzy
 msgid "For now, let's start with a few containers."
-msgstr ""
+msgstr "Pour l'instant, commençons avec quelques conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
+#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``. Then save the scene as ``GUI.tscn``. It will contain the entire "
 "GUI."
 msgstr ""
+"Créez une nouvelle scène et ajoutez un ``MarginContainer``. Sélectionnez le "
+"nœud et nommez-le ``GUI``. Sauvegardez ensuite la scène sous le nom ``GUI."
+"tscn``. Il contiendra toute l'interface graphique."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:75
+#, fuzzy
 msgid ""
 "With the ``MarginContainer`` selected, head to the inspector and scroll down "
 "to the custom constants section. Unfold it and click the field next to each "
@@ -6858,8 +7436,15 @@ msgid ""
 "``HBoxContainer`` node. This one will contain our two bars on the left and "
 "separate them from the two counters on the right."
 msgstr ""
+"Avec le ``MarginContainer`` sélectionné, dirigez-vous vers l'inspecteur et "
+"faites défiler vers le bas jusqu'à la section des constantes personnalisées. "
+"Dépliez-le et cliquez sur le champ à côté de chacune des propriétés "
+"``Margin``. Réglez-les tous sur ``20`` pixels. Ensuite, ajoutez un noeud "
+"``HBoxContainer``. Celui-ci contiendra nos deux barres à gauche et les "
+"séparera des deux compteurs à droite."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:81
+#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. To do "
 "this, let's add a ``VBoxContainer``. Name it ``Bars``. Select the parent "
@@ -6867,32 +7452,54 @@ msgid ""
 "one will hold the counters, so call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
+"Nous voulons empiler les barres verticalement à l'intérieur du "
+"``HBoxContainer``. Pour ce faire, ajoutons un ``VBoxContainer``. Donnez-lui "
+"le nom de \"Bars\". Sélectionnez à nouveau le parent ``HBoxContainer`` et "
+"cette fois, ajoutez un autre ``HBoxContainer``. Celui-ci contiendra les "
+"compteurs, alors appelez-le \"Counters\". Avec ces quatre conteneurs, nous "
+"avons la base de notre scène GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:89
+#, fuzzy
 msgid "You should have 4 containers that look like this"
-msgstr ""
+msgstr "Vous devriez avoir 4 conteneurs ressemblant à ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:93
+#, fuzzy
 msgid ""
 "We can work this way because we first broke down our UI design and took a "
 "few moments to think about the containers we'd use. When you follow a "
 "tutorial like this, it may seem weird. But once you're working on real "
 "games, you'll see it's an efficient workflow."
 msgstr ""
+"Nous pouvons travailler de cette façon parce que nous avons d'abord "
+"décomposé la conception de notre interface utilisateur et que nous avons "
+"pris quelques instants pour réfléchir aux conteneurs que nous utiliserions. "
+"Quand vous suivez un tutoriel comme celui-ci, cela peut sembler bizarre. "
+"Mais une fois que vous travaillez sur de vrais jeux, vous verrez qu'il "
+"s'agit d'une méthode de travail efficace."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
+#, fuzzy
 msgid "Create the bars' base"
-msgstr ""
+msgstr "Créez la base des barres"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:101
+#, fuzzy
 msgid ""
 "Each bar is split into two sub-elements that align horizontally: the label "
 "with the health count on the left, and the gauge on the right. Once again, "
 "the ``HBoxContainer`` is the perfect tool for the job. Select the ``Bars`` "
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
+"Chaque barre est divisée en deux sous-éléments qui s'alignent "
+"horizontalement : L'étiquette avec le compte de santé à gauche et la jauge à "
+"droite. Une fois de plus, le ``HBoxContainer`` est l'outil parfait pour le "
+"travail. Sélectionnez le noeud ``Bars`` et ajoutez un nouveau "
+"``HBoxContainer`` à l'intérieur. Donnez-lui le nom de \"Bar\"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
+#, fuzzy
 msgid ""
 "The label itself requires at least three nodes: a ``NinePatchRect`` for the "
 "background, on top of which we'll add a texture on the left, either ``HP`` "
@@ -6904,40 +7511,64 @@ msgid ""
 "between the life count and the gauge. Select the ``Bar`` and add a "
 "``MarginContainer``. Name it ``Count``. Inside of it, add three nodes:"
 msgstr ""
+"L'étiquette elle-même nécessite au moins trois nœuds : Un ``NinePatchRect`` "
+"pour le fond, sur lequel nous ajouterons une texture à gauche, soit ``HP``, "
+"soit ``EP``, et un ``Label`` à droite pour la valeur. Nous pouvons emboîter "
+"les nœuds \"Control\" comme nous le voulons. Nous pourrions utiliser le "
+"``NinePatchRect`` comme parent pour les deux autres éléments, car il les "
+"englobe. En général, vous voudrez utiliser des conteneurs à la place, car "
+"leur rôle est d'aider à organiser les composants de l'interface utilisateur. "
+"Nous aurons besoin d'un ``MarginContainer`` plus tard de toute façon pour "
+"ajouter de l'espace entre la durée de vie et la jauge. Sélectionnez ``Bar`` "
+"et ajoutez un ``MarginContainer``. Donnez-lui le nom de \"Count\". A "
+"l'intérieur, ajoutez trois nœuds :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:118
 msgid "A ``NinePatchRect`` named ``Background``"
-msgstr ""
+msgstr "Un ``NinePatchRect`` nommé ``Background``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:119
 msgid "A ``TextureRect`` named ``Title``"
-msgstr ""
+msgstr "Un ``TextureRect`` nommé ``Title``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:120
 msgid "And a ``Label`` named ``Number``"
-msgstr ""
+msgstr "Et un ``Label`` nommé ``Number``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:122
+#, fuzzy
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
+"Pour ajouter les noeuds en tant que frères, sélectionnez toujours le noeud "
+"``Count`` en premier."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
+#, fuzzy
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
+"Votre arbre de scène devrait ressembler à ceci. Nous sommes prêts à ajouter "
+"des textures."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:129
+#, fuzzy
 msgid ""
 "Our scene is still empty. It's time to throw in some textures. To load the "
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
+"Notre scène est encore vide. Il est temps d'ajouter des textures. Pour "
+"charger les textures, dirigez-vous vers le dock FileSystem à gauche de la "
+"fenêtre. Naviguez jusqu'au dossier res://assets/GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid "You should see a list of textures that we'll use to skin our interface."
 msgstr ""
+"Vous devriez vous la liste de texture que vous allez pouvoir utiliser pour "
+"votre interface."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:138
+#, fuzzy
 msgid ""
 "Select the ``Background`` in the Scene dock. In the Inspector, you should "
 "see a ``Texture`` property. In the FileSystem tab, click and drag "
@@ -6947,8 +7578,18 @@ msgid ""
 "Inspector, scroll down to the Rect section. Set ``Min Size`` to (100, 40). "
 "You should see the ``Background`` resize along with its parent containers."
 msgstr ""
+"Sélectionnez ``Background`` dans le dock Scène. Dans l'inspecteur, vous "
+"devriez voir une propriété ``Texture``. Dans l'onglet Système de fichiers, "
+"cliquez et faites glisser ``label_HP_bg.png`` sur l'emplacement ``Texture``. "
+"Il reste écrasé. Le conteneur MarginContainer parent forcera sa taille à 0 "
+"jusqu'à ce que nous forcions les éléments à l'intérieur du conteneur à avoir "
+"une taille minimale. Sélectionnez le nœud ``Background``. Dans l'inspecteur, "
+"faites défiler vers le bas jusqu'à la section Rect. Réglez \"Taille minimale"
+"\" sur (100, 40). Vous devriez voir le ``Background`` redimensionné avec ses "
+"conteneurs parents."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:147
+#, fuzzy
 msgid ""
 "Next, select the ``Title`` and drag and drop ``label_HP.png`` into its "
 "``Texture`` slot. Select the ``Number`` node, click the field next to the "
@@ -6956,12 +7597,21 @@ msgid ""
 "viewport. They should stack up in the top-left corner of their parent "
 "``MarginContainer``."
 msgstr ""
+"Ensuite, sélectionnez le ``Title`` et glissez-déposez ``label_HP.png`` dans "
+"son emplacement ``Texture``. Sélectionnez le noeud ``Number```, cliquez sur "
+"le champ à côté de la propriété ``Text`` et tapez ``10``. De cette façon, "
+"nous pouvons voir les deux nœuds dans le viewport. Ils devraient s'empiler "
+"dans le coin supérieur gauche de leur parent ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:155
+#, fuzzy
 msgid "If you select both nodes, you should see something like this"
 msgstr ""
+"Si vous sélectionnez les deux nœuds, vous devriez voir quelque chose comme "
+"ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:157
+#, fuzzy
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
@@ -6969,8 +7619,15 @@ msgid ""
 "three textures and press Ctrl Up or Ctrl Down to reorder them in the Scene "
 "dock. They'll snap back to their previous size and position."
 msgstr ""
+"Comme ils ont un conteneur comme parent direct, nous ne pouvons pas les "
+"déplacer librement : le nœud ``Count`` réinitialise toujours leurs ancres, "
+"leur taille et leur position. Essayez de déplacer et de redimensionner les "
+"nœuds dans la fenêtre d'affichage. Ensuite, sélectionnez l'une des trois "
+"textures et appuyez sur Ctrl+Haut ou Ctrl+Bas pour les réorganiser dans le "
+"dock Scène. Ils retrouveront leur taille et leur position antérieures."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:164
+#, fuzzy
 msgid ""
 "Parent containers control the size, the scale, the margins, and the anchors "
 "of their direct children. To modify the nodes, you must nest them inside a "
@@ -6978,14 +7635,24 @@ msgid ""
 "parent for the ``Title`` and ``Number``. Select both the ``Title`` and "
 "``Number``, and drag and drop them onto ``Background``."
 msgstr ""
+"Les conteneurs parents contrôlent la taille, l'échelle, les marges et les "
+"ancres de leurs enfants directs. Pour modifier les nœuds, vous devez les "
+"imbriquer à l'intérieur d'un Control standard ou d'un autre élément de "
+"l'interface utilisateur. Nous utiliserons ``Background`` comme parent pour "
+"\"Title\" et \"Number\". Sélectionnez \"Title\" et \"Number\"`, puis faites-"
+"les glisser-et déposez les sur ``Background``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:173
+#, fuzzy
 msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
 msgstr ""
+"En utilisant le noeud Background comme parent des deux textures, nous "
+"prenons le contrôle du Count MarginContainer."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:176
+#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -6998,16 +7665,31 @@ msgid ""
 "Resize the node horizontally so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
+"Sélectionnez `Title`` et dans l'Inspecteur, changez sa propriété ``Stretch "
+"Mode`` pour ``Keep Centered```. Trouvez ensuite la catégorie ``Rect`` dans "
+"l'Inspecteur et changez la propriété ``Size`` en (50, 40) pour qu'il ne "
+"prenne que la moitié gauche de l'arrière-plan.  Ensuite, sélectionnez le "
+"noeud ``Number```. Dans la fenêtre d'affichage, cliquez sur le menu "
+"``Layout`` et cliquez sur ``Full Rect``. Le nœud sera redimensionné pour "
+"s'adapter au ``Background``. Rendez-vous chez l'inspecteur et changez sa "
+"propriété \" Align \" en \" Right \", et la propriété \" Align \" en \" "
+"Center \". Le texte doit s'accrocher au centre du bord droit de l'arrière-"
+"plan. Redimensionner le nœud horizontalement pour qu'il prenne la moitié "
+"droite de l'arrière-plan et qu'il y ait un peu de padding avec le bord droit."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:189
+#, fuzzy
 msgid ""
 "Here's how the nodes' bounding boxes should look in the viewport. Keep it "
 "rough, you don't need to place them too precisely for now."
 msgstr ""
+"Voici à quoi devraient ressembler les boîtes de délimitation des nœuds dans "
+"la fenêtre d'affichage. Gardez-les bruts, vous n'avez pas besoin de les "
+"placer trop précisément pour l'instant."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:193
 msgid "Replace the Label's font"
-msgstr ""
+msgstr "Remplacer la police du label"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
 msgid ""
@@ -7016,6 +7698,11 @@ msgid ""
 "the ``Custom Font`` category. Click the field next to the ``Font`` property "
 "and click on ``New Dynamic Font``. Click on the field again and select Edit."
 msgstr ""
+"La police du label est trop petite. Nous devons la remplacer. Sélectionner "
+"le nœud ``Number`` et, dans l'inspecteur, déroulez jusqu'à la classe "
+"``Control``, et trouver la catégorie ``Custom Font` `. Cliquer sur le champ "
+"à coté de la propriété ``Font`` et cliquer sur ``New Dynamic Font``. Cliquer "
+"sur le champ de nouveau et sélectionner Modifier."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:201
 msgid ""
@@ -7026,6 +7713,13 @@ msgid ""
 "viewport. Unfold the settings category to change the font size. Set the "
 "``Size`` property to a higher value, like ``24`` or ``28``."
 msgstr ""
+"Vous allez entrer dans la ressource ``Dynamic Font``. Déplier la catégorie "
+"``Font`` et cliquer sur le champ à coté de ``Font Data``. Cliquer sur le "
+"bouton ``Load``. Dans l'explorateur de fichiers, naviguer dans le dossier "
+"asset/font et double-cliquer sur ``Comfortaa-Bold.ttf`` pour l'ouvrir. Vous "
+"devriez voir la police se mettre à jour dans la fenêtre d'affichage. Déplier "
+"la catégorie des paramètres pour changer la taille de la police. Changer la "
+"propriété ``Size`` pour une valeur plus grande, comme ``24`` ou ``28``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:209
 msgid ""
@@ -7038,26 +7732,41 @@ msgid ""
 "``Custom Font`` category again and tweak the ``Bottom`` property until the "
 "text aligns with the ``Title`` node. I used a value of ``2`` pixels."
 msgstr ""
+"Nous avons maintenant besoin que la ligne du texte et que le bas du nombre "
+"s’alignent avec la texture HP sur la gauche. Pour ce faire, toujours dans la "
+"ressource ``Dynamic Font``, vous pouvez ajuster la propriété ``Bottom`` sous "
+"la catégorie ``Extra Spacing``. Cela ajoute de l'espace sous le texte. "
+"Cliquer sur le nœud ``Number`` dans l'onglet Scène pour retourner aux "
+"propriétés du nœud et changer le ``VAlign`` pour ``Bottom``. Pour ajuster la "
+"ligne du texte, cliquer sur le champ de police sous la catégorie ``Custom "
+"Font`` de nouveau et ajuster la propriété ``Bottom`` jusqu'à ce que le texte "
+"s'aligne avec le nœud ``Title``. J'ai utilisé une valeur de ``2`` pixels."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:221
 msgid "With a Bottom value of 2 pixels, the Number aligns with the Title"
-msgstr ""
+msgstr "Avec une valeur pour Bas de 2 pixels, le Nombre s'aligne avec le Titre"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:223
 msgid ""
 "With this, we finished the hardest part of the GUI. Congratulations! Let's "
 "move on to the simpler nodes."
 msgstr ""
+"Avec cela, nous avons terminé la partie la plus difficile de l'interface "
+"utilisateur graphique. Félicitations ! Allons-y maintenant avec des nœuds "
+"plus simples."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
 msgid "Add the progress bar"
-msgstr ""
+msgstr "Ajouter une bar de progresssion"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
 msgid ""
 "We need one last element to complete our life bar: the gauge itself. Godot "
 "ships with a ``TextureProgress`` node that has everything we need."
 msgstr ""
+"Nous avons besoin d'un dernier élément pour compléter notre barre de vie : "
+"la jauge elle-même. Godot est fourni avec un nœud ``TextureProgress`` qui "
+"comprend tout ce dont nous avons besoin."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:232
 msgid ""
@@ -7068,34 +7777,56 @@ msgid ""
 "onto the ``Progress`` slot. Under the ``Range`` class in the inspector, "
 "change the ``Value`` property to ``50`` to see the gauge fill up."
 msgstr ""
+"Sélectionnez le nœud Bar et ajoutez-y un ``TextureProgress`` à l'intérieur. "
+"Nommez-le ``Gauge``, dans l'inspecteur, déployez la section ``Textures``. "
+"Dirigez-vous vers le dock FileSystem et glissez-déposez la texture "
+"``lifebar_bg.png` dans l'emplacement ``Under``. Faites de même avec l'image "
+"``lifebar_fill.png`` et déposez-le sur l'emplacement ``Progress``? Sous la "
+"classe ``Range`` dans l'inspecteur, changez la propriété `Value`` à ``50`` "
+"pour voir la jauge se remplir."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:240
+#, fuzzy
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
 msgstr ""
+"Avec seulement cinq noeuds ``Control``, notre première barre est prête à "
+"être utilisée."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:244
+#, fuzzy
 msgid ""
 "That's it, our life bar is ready. This last part was quick, wasn't it? "
 "That's thanks to our robust container setup."
 msgstr ""
+"Nous y voilà, notre barre de vie est prête. Cette dernière partie fut "
+"rapide, n'est-ce pas ? C'est grâce à la robustesse de nos conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:248
 msgid "Design the bomb and rupee counters"
-msgstr ""
+msgstr "Créer un compteur de bombe et de rubis"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
+#, fuzzy
 msgid ""
 "The bomb and rupee counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
 msgstr ""
+"Les compteurs de bombes et de rubis sont comme le nœud ``Count`` de la "
+"barre. Nous allons donc le dupliquer et l'utiliser comme modèle."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:253
+#, fuzzy
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press Ctrl D to duplicate it. "
 "Drag and drop the new node under the ``Counters`` ``HBoxContainer`` at the "
 "bottom of the scene tree. You should see it resize automatically. Don't "
 "worry about this for now, we'll fix the size soon."
 msgstr ""
+"Sous le nœud ``Bar```, sélectionnez ``Count`` et appuyez sur Ctrl D pour le "
+"dupliquer. Faites glisser et déposez le nouveau nœud sous le "
+"``HBoxContainer`` ``Counters`` au bas de l'arbre de scène. Vous devriez le "
+"voir se redimensionner automatiquement. Ne vous inquiétez pas pour "
+"l'instant, nous allons corriger la taille bientôt."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:258
 msgid ""
@@ -7106,12 +7837,21 @@ msgid ""
 "display the icon. In the scene tree, select the ``Title`` node, and rename "
 "it to ``Icon``."
 msgstr ""
+"Renommer le nœud ``Count2`` pour ``Counter``. Contrairement aux barres, nous "
+"voulons que le nombre soit sur la gauche, et une icône à la droite. La mise "
+"en place est la même : nous avons besoin d'un arrière-plan, un "
+"``NinePatchFrame``, un titre, et les nœuds des nombres. Le nœud ``Title`` "
+"est un ``TextureRect``, alors c'est ce dont nous avons besoin pour afficher "
+"l'icône. Dans l'arbre des scènes, sélectionner le nœud ``Title``, et "
+"renommez-le pour ``Icon``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:267
+#, fuzzy
 msgid "Here's how your node tree should look so far"
-msgstr ""
+msgstr "Voici à quoi devrait ressembler votre arbre nodal jusqu'à présent"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:269
+#, fuzzy
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -7120,12 +7860,24 @@ msgid ""
 "in the toolbar at the top of the viewport and select ``Full Rect``. Both "
 "nodes will update to fit the size of the ``Background``."
 msgstr ""
+"Avec le noeud ``Icon'' sélectionné, dans l'inspecteur, faites défiler vers "
+"le haut pour voir l'emplacement ``Texture``. Dirigez-vous vers le dock "
+"FileSystem à gauche et sélectionnez ``bombs_icon.png``. Faites-le glisser et "
+"déposez-le sur l'emplacement ``Texture``. Dans l'onglet Scène, sélectionnez "
+"à la fois le nœud \" Icône \" et le nœud \" Nombre \". Cliquez sur le menu "
+"Layout dans la barre d'outils en haut de la fenêtre d'affichage et "
+"sélectionnez ``Full Rect``. Les deux nœuds seront mis à jour pour s'adapter "
+"à la taille de ``Background`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:279
+#, fuzzy
 msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr ""
+"Les noeuds s'ancrent à l'arrière-plan en entier, mais leur position est "
+"désactivée."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:281
+#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -7133,12 +7885,19 @@ msgid ""
 "resize its left edge a little bit to add some padding between the left edge "
 "of the ``Background`` and the text."
 msgstr ""
+"Changeons les propriétés d'alignement de ``Number`` pour le déplacer vers la "
+"gauche et le centre de ``Background``. Sélectionnez le nœud ``Number```, "
+"changez sa propriété ``Align`` à gauche et la propriété ``VAlign``` au "
+"centre. Puis redimensionner un peu son bord gauche pour ajouter un peu de "
+"padding entre le bord gauche de l'arrière-plan et le texte."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:289
+#, fuzzy
 msgid "The Number node aligned to the left and centre"
-msgstr ""
+msgstr "Le nœud Number aligné à gauche et au centre."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:291
+#, fuzzy
 msgid ""
 "To overlap the Icon and the background, we need a few tweaks. First, our "
 "background is a bit too tall. It's because it's inside a margin container "
@@ -7148,22 +7907,42 @@ msgid ""
 "container cannot be smaller than the minimal size of its children. The "
 "container's margins also weigh in."
 msgstr ""
+"Pour superposer l'icône et l'arrière-plan, nous avons besoin de quelques "
+"ajustements. Tout d'abord, notre arrière-plan est un peu trop grand. C'est "
+"parce qu'il se trouve à l'intérieur d'un conteneur de marge qui est contrôlé "
+"par le nœud le plus haut de l'interface graphique. Sélectionnez le nœud de "
+"l'interface graphique en haut de l'arbre de scène et réduisez-le "
+"verticalement pour qu'il soit le plus fin possible. Vous verrez que la jauge "
+"vous empêche de la rendre trop petite. Un conteneur ne peut pas être plus "
+"petit que la taille minimale de ses enfants. Les marges du conteneur "
+"comptent également."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:299
+#, fuzzy
 msgid ""
 "Select the Icon, click the Layout menu, and select ``Full Rect`` to re-"
 "center it. We need it to anchor to the ``Background``'s right edge. Open the "
 "Layout menu again and select ``Center Right``. Move the icon up so it is "
 "centered vertically with the ``Background``."
 msgstr ""
+"Sélectionnez l'icône, cliquez sur le menu Layout et sélectionnez ``Full "
+"Rect`` pour recentrer. Nous avons besoin de l'ancrer sur le bord droit de "
+"\"Background\". Ouvrez à nouveau le menu Layout et sélectionnez ``Center "
+"Right``. Déplacez l'icône vers le haut de façon à ce qu'elle soit centrée "
+"verticalement avec l'arrière-plan."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:307
+#, fuzzy
 msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
 msgstr ""
+"L'icône de la bombe s'ancre sur le bord droit de l'arrière-plan. "
+"Redimensionner le conteneur Counter pour voir le nœud Icon coller sur le "
+"côté droit."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:310
+#, fuzzy
 msgid ""
 "Because we duplicated the ``Counter`` from the bar's ``Count``, the "
 "``Number`` node's font is off. Select the ``Number`` node again, head to the "
@@ -7171,6 +7950,12 @@ msgid ""
 "the ``Extra Spacing`` section, change the ``Bottom`` value to ``0`` to reset "
 "the font's baseline. Our counter now works as expected."
 msgstr ""
+"Parce que nous avons dupliqué le ``Counter`` du ``Count`` de la barre, la "
+"police du noeud ``Number`` est désactivée. Sélectionnez à nouveau le noeud "
+"``Number```, dirigez-vous vers la propriété ``Font`` et cliquez dessus pour "
+"accéder à la ressource ``DynamicFont``. Dans la section ``Extra Spacing``, "
+"changez la valeur ``Bottom`` à ``0`` pour réinitialiser la ligne de base de "
+"la police. Notre compteur fonctionne maintenant comme prévu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:317
 msgid ""
@@ -7187,10 +7972,14 @@ msgid ""
 "An expanding container eats all the space it can from its parent, pushing "
 "everything else along the way"
 msgstr ""
+"Un conteneur extensible prend tout l'espace qu'il peut de son parent, en "
+"poussant tout le reste du même coup"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:330
 msgid "Turn the bar and counter into reusable UI components"
 msgstr ""
+"Transformer la barre et le compteur en composants d'interface graphique "
+"réutilisables"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:332
 msgid ""
@@ -7199,6 +7988,12 @@ msgid ""
 "we could have a single scene to store a UI element's template, and child "
 "scenes to work on variations. Godot lets us do this with Inherited Scenes."
 msgstr ""
+"Nous avons une barre et un widget compteur. Cependant, nous en avons besoin "
+"de deux exemplaires chacun. Nous aurons peut-être à changer l'apparence de "
+"la barre ou la fonctionnalité éventuellement. Ça serait bien si nous aurions "
+"une seule scène qui permet de conserver un modèle d'un élément de IU, et des "
+"scènes enfants pour travailler sur des variations. Godot nous permet de "
+"faire cela avec les scènes héritées."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:338
 msgid ""
@@ -7209,6 +8004,12 @@ msgid ""
 "``Bar.tscn``. You should see the node branch turn it to a single ``Bar`` "
 "node."
 msgstr ""
+"Sauvegardons le ``Counter`` et la ``Bar`` en scènes séparées  que nous "
+"allons réduire à créer la ``LifeBar``, la``EnergyBar``, le``BombCounter``, "
+"et le ``RupeeCounter``. Sélectionner le HBoxContainer ``Bar``. Faites un "
+"clic droit dessus et cliquer sur ``Save Branch as Scene``. Sauvergarder la "
+"scène en tant que ``Bar.tscn``. Vous devriez voir la branche de nœud se "
+"transformer en un seul nœud ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:347
 msgid ""
@@ -7233,7 +8034,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:365
 msgid "With no extra changes, our Bar is ready to use"
-msgstr ""
+msgstr "Sans aucun autre changement, votre barre est prête à être utilisé"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:368
 msgid "Use Scene Inheritance to create the remaining elements"
@@ -7318,7 +8119,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:431
 msgid "Design the EnergyBar"
-msgstr ""
+msgstr "Créer la barre d'énergie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:433
 msgid ""
@@ -7475,8 +8276,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:552
+#, fuzzy
 msgid "The LifeBar and the EnergyBar align automatically"
-msgstr ""
+msgstr "La barre de vie et la barre d'énergie sont automatiquement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:554
 msgid ""
@@ -7500,13 +8302,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:570
 msgid "Now both counters have a decent size"
-msgstr ""
+msgstr "Maintenant, les compteurs ont une bonne taille"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:574
 msgid ""
 "Change the ``Min Size`` property of the ``Counters`` container to control "
 "the height of the counters' background."
 msgstr ""
+"Changer la propriété ``Min Size`` du conteneur ``Counters``  pour contrôler "
+"la hauteur du fond des compteurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:577
 msgid ""
@@ -7521,7 +8325,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:588
 msgid "The 2 bars align perfectly"
-msgstr ""
+msgstr "Les 2 barres sont parfaitement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:592
 msgid ""
@@ -7559,6 +8363,8 @@ msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "final project `here <#>`__."
 msgstr ""
+"Félicitation, vous avez atteint la fin de ce long tutoriel. Vous pouvez "
+"retrouver le projet final `ici <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:620
 msgid ""
@@ -8467,13 +9273,16 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutoriel"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
+#, fuzzy
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
+"Il est simple pour établir un idée basique de comment fonctionne le sous-"
+"système d'une IHM. Le but est de créer un simple écran"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
 msgid ""
@@ -8484,18 +9293,20 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
-msgstr ""
+msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:21
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:16
 msgid "Setting up"
-msgstr ""
+msgstr "Mise en place"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:23
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
 msgstr ""
+"Mettez la résolution d'affichage à 800x450 depuis les Paramètre du Projet, "
+"et organisez la nouvelle comme cela :"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
 msgid ""
@@ -8516,8 +9327,9 @@ msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
+#, fuzzy
 msgid "Your final scene should look something like this."
-msgstr ""
+msgstr "Votre scène finale devrait ressembler à peu près à cela."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
 msgid ""
@@ -40526,8 +41338,9 @@ msgstr ""
 "langue :"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
+#, fuzzy
 msgid "Locale"
-msgstr "Identificateur linguistique"
+msgstr "Traduction"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"
@@ -59554,7 +60367,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:34
 msgid "Social networks"
-msgstr ""
+msgstr "Réseaux sociaux"
 
 #: ../../docs/community/channels.rst:36
 msgid "`GitHub <https://github.com/godotengine/>`_"
@@ -59582,7 +60395,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:44
 msgid "Forum"
-msgstr ""
+msgstr "Forum"
 
 #: ../../docs/community/channels.rst:46
 msgid "`Forum (godotdevelopers.org) <http://godotdevelopers.org/>`_"
@@ -59639,6 +60452,8 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: Un répertoire de ressources épuré par Andre Schmitz "
+"<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 
 #~ msgid "**Never!**"
 #~ msgstr "**Jamais!**"

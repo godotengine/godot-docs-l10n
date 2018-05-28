@@ -2,16 +2,19 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Altan Demirkilic <demirkilic@gmail.com>, 2018.
 # Can Delibaş <candelibas96@gmail.com>, 2018.
+# monolifed <monolifed@gmail.com>, 2018.
 # H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018.
+# Halil Üneş <halilunes@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-04-19 06:28+0000\n"
-"Last-Translator: H.Hüseyin CİHANGİR <hashusfb@gmail.com>\n"
+"PO-Revision-Date: 2018-05-28 08:22+0000\n"
+"Last-Translator: Altan Demirkilic <demirkilic@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -23,7 +26,7 @@ msgstr ""
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "Godot Belgeleri - *master* dalı"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -31,8 +34,12 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"Bu, kararsız (master) dal için belgedir. Mevcut **kararlı* dalın "
+"belgelemesini arıyorsanız, `Şuraya göz atın <http://docs.godotengine.org/en/"
+"stable>`_."
 
 #: ../../docs/index.rst:13
+#, fuzzy
 msgid ""
 "Welcome to the official documentation of Godot Engine, the free and open "
 "source community-driven 2D and 3D game engine! If you are new to this "
@@ -40,13 +47,21 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"Ücretsiz ve açık kaynaklı topluluk odaklı 2D ve 3D oyun motoru Godot "
+"Engine'in resmi belgelerine hoş geldiniz! Bu belgede yeniyseniz, bu "
+"dokümanın sunması gerekenlere genel bir bakış için: ref: `tanıtım sayfası "
+"<doc_about_intro>` bölümünü okumanızı öneririz."
 
 #: ../../docs/index.rst:18
+#, fuzzy
 msgid ""
 "The table of contents below and in the sidebar should let you easily access "
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"Aşağıdaki ve kenar çubuğundaki içerikler, ilgilendiğiniz konunun belgelerine "
+"kolayca erişmenize izin vermelidir. Arama fonksiyonunu sol üst köşede de "
+"kullanabilirsiniz."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -56,6 +71,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine, bir gönüllüler topluluğu tarafından geliştirilmiş açık kaynak "
+"projesidir. Belgeleme ekibi her zaman sizin geri bildirimlerinizi "
+"kullanabilir, dersleri ve sınıf referanslarını geliştirmek için yardım "
+"edebilir. Eğer bir şeyi anlamıyorsanız ya da belgelerde aradığınız şeyi "
+"bulamıyorsanız, bize bildirerek daha iyi belgelemeyi yapmamıza yardım edin!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -70,23 +90,26 @@ msgstr ""
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "Site için olan ana belgeleme, şu bölümlere tertiplendi:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
 msgstr "Genel"
 
 #: ../../docs/index.rst:53
+#, fuzzy
 msgid "Getting started"
-msgstr ""
+msgstr "Başlarken"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
+#, fuzzy
 msgid "Tutorials"
-msgstr ""
+msgstr "Öğreticiler"
 
 #: ../../docs/index.rst:89
+#, fuzzy
 msgid "Development"
-msgstr ""
+msgstr "Geliştirme"
 
 #: ../../docs/index.rst:99 ../../docs/community/index.rst:2
 msgid "Community"
@@ -149,8 +172,9 @@ msgstr "Hakkında"
 #: ../../docs/development/cpp/custom_audiostreams.rst:7
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 #: ../../docs/development/cpp/creating_android_modules.rst:7
+#, fuzzy
 msgid "Introduction"
-msgstr "Başlangıç"
+msgstr "Giriş"
 
 #: ../../docs/about/introduction.rst:11
 msgid ""
@@ -160,17 +184,22 @@ msgid ""
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
 "Ücretsiz, açık kaynak topluluk tarafından yönetilen 2B ve 3B oyun motoru "
-"olan Godot Engine resmi dokümantasyonuna hoş geldiniz! Herhangi bir kullanım "
+"olan Godot Engine resmî belgelemesine hoş geldiniz! Herhangi bir kullanım "
 "kısıtlaması olmaksızın, herhangi bir platforma, herhangi türdeki oyunu "
-"geliştirebileceğiniz, güçlü, ayni zamanda kullanıcı dostu bir araç "
+"geliştirebileceğiniz, güçlü, aynı zamanda kullanıcı dostu bir araç "
 "bulacaksınız."
 
 #: ../../docs/about/introduction.rst:16
+#, fuzzy
 msgid ""
 "This page aims at giving a broad presentation of the engine and of the "
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
+"Eğer acemiyseniz nereden başlamanız veya belirli bir özellik hakkında "
+"bilgiye ihtiyaç duyuyorsanız nereye bakmanız gerektiğini öğrenebilmeniz için "
+"bu sayfa, motorun ve bu belgeleme içeriğinin geniş bir sunumunu vermeyi "
+"amaçlamaktadır."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
@@ -182,6 +211,10 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
+"Bir oyun motor karmaşık bir araçtır ve Godot'u bu yüzden birkaç kelimede "
+"tanıtmak zordur. Bununla birlikte, Godot Engine hakkında hızlıca bir yazıya "
+"ihtiyacınız olursa yeniden kullanmakta özgür olduğunuz Halkla İlişkiler "
+"sunumumuz işte burada."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -192,8 +225,15 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows) as "
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
+"Godot Engine, birleşik bir arayüzden 2D ve 3D oyunlar oluşturmak özelliklere "
+"sahip, çapraz platform oyun motorudur. Kapsamlı bir takım, ortak araçlar "
+"sunar, böylece kullanıcılar tekerleği yeniden icat etmeden oyun yapmaya "
+"odaklanabilirler. Oyunlar tek bir tıklamayla, büyük masaüstü platformları "
+"(Linux, macOS, Windows) ve mobil (Android, iOS) ve web tabanlı (HTML5) "
+"platformlar dahil olmak üzere bir dizi platformda dışa aktarılabilir."
 
 #: ../../docs/about/introduction.rst:34
+#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -201,7 +241,7 @@ msgid ""
 "community-driven, empowering users to help shape their engine to match their "
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
-msgstr ""
+msgstr "Godot serbest MIT lisansı altında tamamen ücretsiz ve açık kaynaktır."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -215,7 +255,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:46
 msgid "About the documentation"
-msgstr "Dokümantasyon hakkında"
+msgstr "Belgeleme hakkında"
 
 #: ../../docs/about/introduction.rst:48
 msgid ""
@@ -256,11 +296,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/introduction.rst:72
+#, fuzzy
 msgid ""
 "The :ref:`sec-general` section contains this introduction as well as "
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
+":ref:`sec-general` bölümü motor, tarihi, lisanslanması, yazarlar vb. "
+"hakkında bilginin yanı sıra bu girişi de kapsar. Ayruca :ref:`doc_faq` 'i de "
+"kapsar."
 
 #: ../../docs/about/introduction.rst:75
 msgid ""
@@ -310,17 +354,17 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
+msgstr "Godot Engine'le okurken ve oyun yaparken eğlen!"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "Sıkça Sorulan Sorular"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr ""
+msgstr "Godot'la ne yapabilirim? Ne kadar tutar? Lisans şartları nelerdir?"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
@@ -339,13 +383,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:15
 msgid "There are no usage restrictions on Godot"
-msgstr ""
+msgstr "Godot'ta kullanım kısıtlaması yoktur"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
 msgstr ""
+"Yani herhangi bir oyun veya uygulama için,ticari olsun veya olmasın, "
+"herhangi bir endüstride kullanabilirsiniz"
 
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
@@ -389,7 +435,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:34
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Godot hangi platformları destekler?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
@@ -409,11 +455,11 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**Oyunlarınızı aktarmak için:**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (ve UWP)"
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
@@ -451,7 +497,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:60
 msgid "Which languages are supported in Godot?"
-msgstr ""
+msgstr "Godot hangi dilleri destekler?"
 
 #: ../../docs/about/faq.rst:62
 msgid ""
@@ -459,6 +505,9 @@ msgid ""
 "C# and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Resmî olarak Godot için desteklenen diller; GDScript, Visual Scripting, C# "
+"ve C++. Her bir dil için :ref:`scripting <toc-learn-scripting>` bölümündeki "
+"alt kategorileri bakınız."
 
 #: ../../docs/about/faq.rst:65
 msgid ""
@@ -537,7 +586,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
-msgstr ""
+msgstr "Ana nedenler:"
 
 #: ../../docs/about/faq.rst:112
 msgid ""
@@ -48342,9 +48391,8 @@ msgid "Here are the descriptions of the options:"
 msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
-#, fuzzy
 msgid "Deploy with Remote Debug"
-msgstr "Uzaktan Hata Ayıklama ile Aç"
+msgstr "Uzaktan Hata Ayıklama ile Dağıt"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid ""

@@ -6,6 +6,7 @@
 # B10nicMachine <shumik1337@gmail.com>, 2018.
 # Chaosus89 <chaosus89@gmail.com>, 2018.
 # Constantin Moskvitin <cmoskvitin@gmail.com>, 2018.
+# Denis K <dekasoftware@mail.ru>, 2018.
 # Forest Swamp <sample1989@mail.ru>, 2018.
 # gl <glorphindale+dev@gmail.com>, 2018.
 # ijet <my-ijet@mail.ru>, 2018.
@@ -20,8 +21,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-18 14:12+0200\n"
-"PO-Revision-Date: 2018-05-18 13:56+0000\n"
-"Last-Translator: Forest Swamp <sample1989@mail.ru>\n"
+"PO-Revision-Date: 2018-05-27 21:42+0000\n"
+"Last-Translator: Denis K <dekasoftware@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -43,7 +44,7 @@ msgid ""
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
 "Это документация для нестабильной (master) ветки. Ищете документацию для "
-"текущей **stable** ветки? `Посмотрите здесь <http://docs.godotengine.org/en/"
+"текущей **stable** ветки? 'Смотрите здесь <http://docs.godotengine.org/en/"
 "stable>`_."
 
 #: ../../docs/index.rst:13
@@ -520,7 +521,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr "Mac OS X"
+msgstr "MacOS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
@@ -745,17 +746,15 @@ msgstr ""
 "памяти (Lua, Python, JS, AS и т.д.)."
 
 #: ../../docs/about/faq.rst:124
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"Сложная интеграция с редактором кода для обеспечения завершенности кода, "
-"редактирование в реальном времени и т.д. (все они). Это очень хорошо "
+"Сложно интегрировать с редактором для обеспечения автозавершения кода, "
+"редактирования в реальном времени и т.д. (все вместе). Это очень хорошо "
 "поддерживает GDScript."
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "GDScript was designed to solve the issues above, and performs well in all "
 "the above scenarios. Please learn GDScript and enjoy a smooth integration of "
@@ -764,9 +763,9 @@ msgid ""
 msgstr ""
 "GDScript был разработан для решения вышеперечисленных вопросов и очень "
 "хорошо работает во всех вышеперечисленных сценариях. Пожалуйста, изучите "
-"GDScript и вы получите очень плавную интеграцию скриптов с игровым движком "
-"(да, это редкая, но очень приятная ситуация, когда все работает). Это того "
-"стоит, попробуйте!"
+"GDScript и вы получите полную интеграцию скриптов с игровым движком (да, это "
+"редкая, но очень приятная ситуация, когда все работает). Это того стоит, "
+"попробуйте!"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
@@ -2100,6 +2099,9 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"Вы можете добавить столько экземпляров, сколько захотите на сцену, либо с "
+"помощью кнопки «Добавить сцену как узел», либо нажав на экземпляр шарика и "
+"нажав «Дублировать» (Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -2158,7 +2160,7 @@ msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object."
 msgstr ""
-"Инстанцирование может быть полезно, если вы хотите создать много копий "
+"Создавать экземпляры может быть полезно, если вы хотите создать много копий "
 "одного и того же объекта."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
@@ -2402,7 +2404,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:180
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 msgid "GDScript"
-msgstr "GDScript"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
 msgid ""
@@ -2458,6 +2460,9 @@ msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
+"Не использует сборщик мусора, поэтому он располагает небольшой "
+"автоматизацией (в любом случае большинство объектов подсчитываются "
+"ссылками), детерминизмом."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -2480,7 +2485,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
 msgid "VisualScript"
-msgstr ""
+msgstr "VisualScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""
@@ -2513,7 +2518,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
 msgid ".NET / C#"
-msgstr ""
+msgstr ".NET / C#"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:57
 msgid ""
@@ -2532,7 +2537,7 @@ msgid ""
 "one must be aware of its garbage collector."
 msgstr ""
 "У него есть превосходный компромисс между производительностью и простотой "
-"использования, но нужно знать его сборщик мусора."
+"использования, но нужно знать о его сборщике мусора."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
 msgid ""
@@ -2540,6 +2545,10 @@ msgid ""
 "familiar with it means less time can be spent learning Godot and more time "
 "can be spent programming with it."
 msgstr ""
+"C#, как правило, лучший выбор для компаний. Большое количество "
+"программистов, знакомых с ним, означает то, что на обучение Godot можно "
+"потратить меньше времени, и сконцентрировать свои силы на самом "
+"программировании."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:69
 msgid ""
@@ -2549,10 +2558,16 @@ msgid ""
 "programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
 "is the only officially supported .NET option."
 msgstr ""
+"Поскольку Godot использует среду выполнения `Mono <https://mono-project."
+"com>`_.NET, теоретически любая сторонняя библиотека .NET или программная "
+"платформа может использоваться для написания скриптов в Godot, так же как "
+"любой CLR-совместимый язык программирования, такой как F#, Boo или "
+"ClojureCLR. Однако, на практике C# является единственным официально "
+"поддерживаемым .NET вариантом."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:75
 msgid "GDNative / C++"
-msgstr ""
+msgstr "GDNative / C++"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
 msgid ""
@@ -2569,6 +2584,9 @@ msgid ""
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
+"Любая версия C++ может быть использована, а смешение брендов и версий "
+"компиляторов для сгенерированных общих библиотек прекрасно работает "
+"благодаря нашему использованию внутреннего C API Моста."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:85
 msgid ""
@@ -2592,7 +2610,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:94
 msgid "Scripting a scene"
-msgstr ""
+msgstr "Создание сценариев сцены"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid ""
@@ -2601,12 +2619,12 @@ msgid ""
 "will demonstrate:"
 msgstr ""
 "В оставшейся части этого урока мы настроим сцену с графическим интерфейсом, "
-"состоящую из кнопки и ярлыка, где нажатие кнопки будет обновлять ярлык. Это "
-"продемонстрирует:"
+"состоящую из кнопки и ярлыка, где нажатие кнопки будет обновлять ярлык. "
+"Продемонстрируем это:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid "Writing a script and attaching it to a node."
-msgstr "Написание скрипта и его привязку к узлу."
+msgstr "Написание сценария и его привязку к узлу."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:101
 msgid "Hooking up UI elements via signals."
@@ -2615,7 +2633,7 @@ msgstr "Подключение элементов пользовательско
 #: ../../docs/getting_started/step_by_step/scripting.rst:102
 msgid "Writing a script that can access other nodes in the scene."
 msgstr ""
-"Написание скрипта, который может получать доступ к другим узлам в сцене."
+"Написание сценария, который может получать доступ к другим узлам в сцене."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:104
 msgid ""
@@ -2625,7 +2643,7 @@ msgid ""
 "concepts."
 msgstr ""
 "Прежде чем продолжить, обязательно почитайте о :ref:`doc_gdscript`. Это "
-"простой язык, и ссылка на него является короткой, поэтому для обзора "
+"простой язык, и справочный материал для него не объемный, поэтому для обзора "
 "концепций потребуется не более нескольких минут."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
@@ -2675,7 +2693,7 @@ msgstr "Наконец, сохраните сцену с именем ``sayhello
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:133
 msgid "Adding a script"
-msgstr "Добавление скрипта"
+msgstr "Добавление сценария"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:135
 msgid ""
@@ -2690,8 +2708,8 @@ msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
-"Откроется диалоговое окно создания скрипта. В этом диалоговом окне вы можете "
-"указать язык скрипта, имя класса и другие параметры."
+"Откроется диалоговое окно создания сценария. В этом диалоговом окне вы "
+"можете указать язык сценария, имя класса и другие параметры."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:143
 msgid ""
@@ -2707,14 +2725,14 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
-"Узел, к которому мы прикрепляем скрипт, представляет собой панель, поэтому в "
-"поле \"Наследование\" будет автоматически вписано \"Панель\". Это то, что "
-"нам нужно, поскольку цель скрипта заключается в расширении функциональности "
+"Узел, к которому мы прикрепляем сценарий, представляет собой панель, поэтому "
+"в поле \"Наследование\" будет автоматически вписано \"Panel\". Это то, что "
+"нам нужно, поскольку цель сценария заключается в расширении функциональности "
 "нашего узла панели."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid "Finally, enter a path name for the script and select Create:"
-msgstr ""
+msgstr "Наконец, введите путь к сценарию и нажмите кнопку \"Создать\":"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:154
 msgid ""
@@ -2722,6 +2740,9 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
+"После этого сценарий будет создан и добавлен к узлу. Вы можете понять это по "
+"значку \"Открыть сценарий\" рядом с узлом на вкладке \"Сцена\", а также в "
+"свойстве сценария в \"Инспекторе\":"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:160
 msgid ""
@@ -2729,6 +2750,9 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor "
 "where a default template will be included:"
 msgstr ""
+"Чтобы отредактировать сценарий, нажмите одну из кнопок, которые отмечены в "
+"приведенном выше изображении. Это приведет вас к редактору сценариев, в "
+"котором будет отображен шаблон сценария по умолчанию:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:165
 msgid ""
@@ -2736,10 +2760,13 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
+"Там не так много. Функция ``_ready()`` вызывается, когда узел и все его "
+"дочерние элементы входят в активную сцену. **Примечание:** ``_ready()`` не "
+"является конструктором; конструктором является ``_init()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:170
 msgid "The role of the script"
-msgstr ""
+msgstr "Роль сценария"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:172
 msgid ""
@@ -2748,10 +2775,15 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
+"Сценарий добавляет узлу поведение. Он используется для управления "
+"функционированием узла, а также его взаимодействия с другими узлами: "
+"дочерними, родительскими, родственными и т.д. Локальная область сценария - "
+"это узел. Другими словами, сценарий наследует функции, предоставляемые этим "
+"узлом."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:180
 msgid "Handling a signal"
-msgstr ""
+msgstr "Обработка сигнала"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:182
 msgid ""
@@ -2760,6 +2792,11 @@ msgid ""
 "mostly in GUI nodes, although other nodes have them too, and you can even "
 "define custom signals in your own scripts."
 msgstr ""
+"Сигналы \"излучаются\", когда происходит определенный вид действий, и они "
+"могут быть подключены к любой функции любого экземпляра сценария. Сигналы "
+"используются в основном в GUI-узлах, хотя они также есть и в других узлах, и "
+"вы даже можете определить пользовательские сигналы в своих собственных "
+"сценариях."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:187
 msgid ""
@@ -2768,18 +2805,28 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
+"На этом этапе мы подключим сигнал \"pressed\" (\"нажато\") к "
+"пользовательской функции. Формирование соединений - это первая часть, а "
+"определение пользовательской функции - вторая. Для первой части Godot "
+"предоставляет два способа создания соединений: через визуальный интерфейс, "
+"который редактор предоставляет, или через код."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:192
 msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
+"Хоть мы и будем использовать метод написания кода для оставшейся части этой "
+"серии уроков, давайте рассмотрим как работает интерфейс редактора, для "
+"дальнейшего использования."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:195
 msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
 msgstr ""
+"Выберите узел Кнопка (Button) в дереве сцен и затем выберите вкладку \"Узел"
+"\". Далее, убедитесь, что вы выбрали \"Сигналы\"."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:200
 msgid ""
@@ -2787,6 +2834,8 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
+"Затем, если выберете \"pressed()\" в разделе \"BaseButton\" и нажмете кнопку "
+"\"Подключить...\" в правом нижнем углу, откроется диалог создания соединения."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
 msgid ""
@@ -2794,6 +2843,9 @@ msgid ""
 "node which implements the method you want to trigger (represented here as a "
 "NodePath) and the name of the method to trigger."
 msgstr ""
+"В левом нижнем углу находятся ключевые поля, необходимые для создания "
+"соединения: узел, реализующий метод, который вы хотите вызвать (представлен "
+"здесь как NodePath), и имя метода для запуска."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:209
 msgid ""
@@ -2802,6 +2854,10 @@ msgid ""
 "select a node, the NodePath at the bottom will automatically update to point "
 "a relative path from the emitting node to the selected node."
 msgstr ""
+"В левом верхнем разделе отображается список узлов вашей сцены, где имя "
+"излучающего узла выделено красным цветом. Выберите узел \"Panel\". Когда вы "
+"выбираете узел, NodePath внизу будет автоматически обновляться, указывая "
+"относительный путь от излучающего к выбранному узлу."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:214
 msgid ""
@@ -2810,6 +2866,10 @@ msgid ""
 "do have the \"Make Function\" check button checked, then the editor will "
 "generate the function for you before setting up the connection."
 msgstr ""
+"По умолчанию имя метода будет содержать имя излучающего узла (в данном "
+"случае - \"Button\"), в результате чего \"_on_[EmitterNode]_[signal_name]\". "
+"Если у вас включена кнопка \"Сделать функцию\", то редактор будет "
+"генерировать эту функцию перед настройкой соединения."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
 msgid ""
@@ -2817,6 +2877,9 @@ msgid ""
 "this is a scripting tutorial, so for the sake of learning, let's dive in to "
 "the manual process!"
 msgstr ""
+"На этом завершим наше обучение по использованию визуального интерфейса. Всё "
+"же, это урок по сценариям, поэтому, ради изучения, давайте погрузиться в "
+"ручной процесс!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
@@ -2825,12 +2888,18 @@ msgid ""
 "This function uses paths to fetch nodes anywhere in the scene, relative to "
 "the node that owns the script."
 msgstr ""
+"Для этого мы познакомимся с функцией, которая, вероятно, наиболее часто "
+"используется программистами Godot: :ref:`Node.get_node() "
+"<class_Node_get_node>`. Эта функция использует пути для извлечения узлов из "
+"любого места сцены, относительно узла, которому принадлежит сценарий."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:228
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
+"Для удобства удалите все под ``extends Panel``. Вы заполните остальную часть "
+"сценария вручную."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:231
 msgid ""
@@ -2838,29 +2907,35 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
+"Поскольку Button и Label являются братьями по отношению к Panel, к которой "
+"прикреплен сценарий, вы можете выбрать Button, набрав следующее под функцией "
+"``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:248
 msgid "Next, write a function which will be called when the button is pressed:"
-msgstr ""
+msgstr "Затем напишите функцию, которая будет вызываться при нажатии кнопки:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:264
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_connect>`."
 msgstr ""
+"Наконец, подключите сигнал \"pressed\" к функции ``_ready()``, используя :"
+"ref:`Object.connect() <class_Object_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:280
 msgid "The final script should look like this:"
-msgstr ""
+msgstr "В итоге сценарий должен выглядеть так:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:314
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr ""
+"Запустите сцену и нажмите кнопку. Вы должны получить следующий результат:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:318
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr ""
+msgstr "Поздравляем с написанием сценария к вашей первой сцене."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:322
 msgid ""
@@ -2869,10 +2944,15 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
+"Общим недопониманием в отношении этого урока является то, как работает "
+"``get_node(path)``. Для данного узла ``get_node(path)`` ищет своих "
+"непосредственных детей. В приведенном выше коде это означает, что Button "
+"должен быть дочерним элементом Panel. Если бы Button был дочерним элементом "
+"Label, код для его получения выглядел бы так:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid "Also, remember that nodes are referenced by name, not by type."
-msgstr ""
+msgstr "Кроме того, помните, что узлы ссылаются по имени, а не по типу."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:344
 msgid ""
@@ -2880,6 +2960,9 @@ msgid ""
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
+"Правая панель диалога подключения предназначена для привязки определенных "
+"значений к параметрам подключенной функции. Вы можете добавлять и удалять "
+"значения разных типов."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:348
 msgid ""
@@ -2887,26 +2970,33 @@ msgid ""
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
+"Если реализовывать это в коде, то можно работать с 4-м параметром ``Array``, "
+"который по умолчанию пуст. Для получения дополнительной информации не "
+"забудьте ознакомиться с методом ``Object.connect``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "Написание сценариев (продолжение)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "Обработка"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"Некоторые действия в Godot инициируются обратными вызовами или виртуальными "
+"функциями, поэтому нет необходимости писать код, который работает все время."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"Однако, бывает необходимо, чтобы сценарий обрабатывался в каждом кадре. "
+"Существует два типа обработки: обработка простоя и обработка физики."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -2914,30 +3004,42 @@ msgid ""
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
+"Обработка простоя активируется, когда метод :ref:`Node._process() "
+"<class_Node__process>` находится в сценарии. Его можно отключить и включить "
+"с помощью функции :ref:`Node.set_process() <class_Node_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
 "This method will be called every time a frame is drawn, so it's fully "
 "dependent on how many frames per second (FPS) the application is running at:"
 msgstr ""
+"Этот метод будет вызываться каждый раз при отрисовке кадра, поэтому он "
+"полностью зависит от количества кадров в секунду (FPS), при котором работает "
+"приложение:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
 msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
 msgstr ""
+"Параметр delta содержит время (в виде числа с плавающей запятой), прошедшее "
+"в секундах после предыдущего вызова функции ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"Этот параметр можно использовать для того, чтобы различные операции всегда "
+"занимали одинаковое количество времени, независимо от FPS игры."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
+"Например, перемещение часто умножается на дельту времени, чтобы скорость "
+"движения была постоянной и не зависела от частоты кадров."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
@@ -2948,6 +3050,12 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"Обработка физики с помощью ``_physics_process()`` аналогична, но она должна "
+"использоваться для процессов, которые должны выполняться до каждого этапа "
+"физики, такого как управление персонажем. Она всегда запускается до этапа "
+"физики и вызывается с фиксированными временными интервалами: 60 раз в "
+"секунду по умолчанию. Вы можете изменить интервал в настройках проекта, в "
+"разделе Физика -> Общие -> Физическая Fps."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -2955,16 +3063,22 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"Однако, функция ``_process()`` не синхронизируется с физикой. Ее частота "
+"кадров не является постоянной и зависит от аппаратной и игровой оптимизации. "
+"В однопоточных играх ее выполнение осуществляется после этапа физики."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
 "A simple way to test this is to create a scene with a single Label node, "
 "with the following script:"
 msgstr ""
+"Простой способ проверить это - создать сцену с одним узлом Label со "
+"следующим скриптом:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:82
 msgid "Which will show a counter increasing each frame."
 msgstr ""
+"Он будет показывать счетчик, который будет увеличиваться на каждом кадре."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
@@ -2976,12 +3090,18 @@ msgid ""
 "feature for organizing large scenes. There are two ways to do this. The "
 "first is from the UI, from the Groups button under the Node panel:"
 msgstr ""
+"Узлы могут быть объединены в группы, по сколько угодно узлов, которые "
+"являются полезной особенностью для организации больших сцен. Есть два "
+"способа сделать это. Первый - из пользовательского интерфейса, с помощью "
+"кнопки \"Группы\" под панелью \"Узел\":"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
 msgid ""
 "And the second way is from code. One example would be to tag scenes which "
 "are enemies:"
 msgstr ""
+"И второй способ - из кода. Одним из примеров было бы помечать сцены, которые "
+"являются врагами:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
 msgid ""
@@ -2989,18 +3109,25 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_call_group>`:"
 msgstr ""
+"Таким образом, если игрок обнаружен крадущимся на секретной базе, все враги "
+"могут быть уведомлены об этом звуковым сигналом тревоги с помощью функции :"
+"ref:`SceneTree.call_group() <class_SceneTree_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
+"Вышеупомянутый код вызывает функцию ``player_was_discovered`` для каждого "
+"члена группы ``enemies``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
 msgstr ""
+"Также можно получить полный список узлов ``enemies``, вызвав функцию :ref:"
+"`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -3010,11 +3137,16 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you got some time!"
 msgstr ""
+"Класс :ref:`SceneTree <class_SceneTree>` предоставляет множество полезных "
+"методов, таких как взаимодействие со сценами, иерархия узлов и групп узлов. "
+"Он позволяет вам легко переключать сцены или перезагружать их, выходить из "
+"игры или делать паузу и продолжать далее. У него также есть интересные "
+"сигналы. Поэтому ознакомьтесь с ним, когда будет время!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:171
 msgid "Notifications"
-msgstr ""
+msgstr "Уведомления"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
 msgid ""
@@ -3024,6 +3156,10 @@ msgid ""
 "`Object._notification() <class_Object__notification>` function in your "
 "script:"
 msgstr ""
+"Godot имеет систему уведомлений. Они, как правило, не нужны для сценариев, "
+"так как это слишком низкоуровневые и для большинства из них есть виртуальные "
+"функции. Просто приятно знать, что они существуют. Например, можно добавить :"
+"ref:`Object._notification() <class_Object__notification>` в вашем сценарии:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -3031,37 +3167,48 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overrideable functions."
 msgstr ""
+"В документации каждого класса в :ref:`Class Reference <toc-class-ref>` "
+"описаны уведомления, которые он может получить. Однако в большинстве случаев "
+"GDScript предоставляет более простые переопределяемые функции."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr ""
+msgstr "Переопределяемые функции"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
 msgstr ""
+"Такие переопределяемые функции, которые описываются ниже, могут быть "
+"применены к узлам:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:267
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
 msgstr ""
+"Как упоминалось ранее, лучше использовать эти функции вместо системы "
+"уведомлений."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:271
 msgid "Creating nodes"
-msgstr ""
+msgstr "Создание узлов"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:273
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
+"Чтобы создать узел из кода вызовите метод ``.new()`` как и для любого "
+"другого типа данных на основе классов. Например:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
+"Для удаления узла, будь он внутри или снаружи сцены, необходимо использовать "
+"метод ``free()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:313
 msgid ""
@@ -3069,6 +3216,9 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
+"Когда узел освобождается, он также освобождает все свои дочерние узлы. Из-за "
+"этого удаление узлов вручную намного проще, чем кажется. Освободите базовый "
+"узел, и все остальное в поддереве исчезнет вместе с ним."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:317
 msgid ""
@@ -3077,26 +3227,37 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
+"Может возникнуть ситуация, когда мы хотим удалить узел, который в настоящее "
+"время \"заблокирован\", так как он излучает сигнал или вызывает функцию. Это "
+"приведет к сбою игры. Запуск Godot с отладчиком будет отлавливать такие "
+"ситуации и предупреждать вас об этом."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_queue_free>`. This erases the node safely during idle."
 msgstr ""
+"Самый безопасный способ удалить узел - использовать функцию :ref:`Node."
+"queue_free() <class_Node_queue_free>`. Это безопасно удаляет узел во время "
+"его бездействия."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
-msgstr ""
+msgstr "Инстанцирование сцен"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:342
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
+"Инстанцирование сцены из кода выполняется в два этапа. Первый - загрузить "
+"сцену с жесткого диска:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
 msgid "Preloading it can be more convenient, as it happens at parse time:"
 msgstr ""
+"Предварительная загрузка может быть более удобной, т.к. происходит во время "
+"парсинга:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""
@@ -3106,6 +3267,11 @@ msgid ""
 "called. This will return the tree of nodes that can be added to the active "
 "scene:"
 msgstr ""
+"Но ``scene`` еще не является узлом. Она упакована в специальный ресурс, "
+"называемый :ref:`PackedScene <class_PackedScene>`. Чтобы создать настоящий "
+"узел, необходимо вызвать функцию :ref:`PackedScene.instance() "
+"<class_PackedScene_instance>`. Это вернет дерево узлов, которое можно "
+"добавить в активную сцену:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:380
 msgid ""
@@ -3114,17 +3280,21 @@ msgid ""
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
+"Преимущество этого двухэтапного процесса заключается в том, что упакованная "
+"сцена может быть загружена и готова к использованию, так что вы можете "
+"создать сколько угодно экземпляров. Это особенно полезно для быстрого "
+"инстанцирования нескольких врагов, пуль и других объектов в активной сцене."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your First Game"
-msgstr ""
+msgstr "Ваша Первая Игра"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "Обзор"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -3132,6 +3302,8 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
+"Этот урок поможет вам сделать свой первый проект в Godot. Вы узнаете, как "
+"работает редактор Godot, как структурировать проект и как построить 2D-игру."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -3139,23 +3311,31 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
+"Этот проект представляет собой введение в движок Godot. Предполагается, что "
+"у вас уже есть опыт программирования. Если вы новичок в программировании, "
+"вам нужно начать отсюда: :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
+"Игра называется \"Увернись от Крипов!\". Ваш персонаж должен двигаться и "
+"избегать врагов как можно дольше. Вот предварительная демонстрация "
+"финального результата:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
+"**Почему 2D?** 3D-игры намного сложнее, чем 2D. Вы должны придерживаться 2D, "
+"пока не получите хорошее представление о процессе разработки игр."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/development/cpp/configuring_an_ide.rst:106
 msgid "Project Setup"
-msgstr ""
+msgstr "Настройка Проекта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -3163,6 +3343,10 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"Запустите Godot и создайте новый проект. Затем загрузите :download:"
+"`dodge_assets.zip <files/dodge_assets.zip>` - изображения и звуки, которые "
+"вы будете использовать для создания игры. Разархивируйте эти файлы в папку "
+"вашего проекта."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -3170,6 +3354,9 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"Для этого урока мы предположим, что вы уже знакомы с редактором. Если вы еще "
+"не читали :ref:`doc_scenes_and_nodes`, сделайте это сейчас для объяснения "
+"настройки проекта и использования редактора."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -3177,10 +3364,14 @@ msgid ""
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to 480 and \"Height\" to 720."
 msgstr ""
+"В данной игре будет использоваться портретный режим, поэтому нам нужно "
+"настроить размер игрового окна. Нажмите \"Проект\" -> \"Настройки проекта\" -"
+"> \"Дисплей\" -> \"Окно\" и установите значения полей \"Ширина\" - 480 и "
+"\"Высота\" - 720."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the Project"
-msgstr ""
+msgstr "Организация Проекта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
@@ -3191,10 +3382,17 @@ msgid ""
 "and scripts in the root folder, referred to as ``res://``.  You can see your "
 "project folders in the FileSystem Dock in the upper left corner:"
 msgstr ""
+"В этом проекте мы создадим 3 независимые сцены: ``Player``, ``Mob`` и "
+"``HUD``, которые мы будем комбинировать со сценой игры ``Main``. В более "
+"крупном проекте было бы полезно сделать папки для хранения различных сцен и "
+"их скриптов, но для этой относительно небольшой игры вы можете сохранять "
+"свои сцены и скрипты в корневой папке, называемой ``res://``. Вы можете "
+"видеть папки проекта в доке FileSystem (Файловая Система) в верхнем левом "
+"углу:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player Scene"
-msgstr ""
+msgstr "Сцена Игрока"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -3202,16 +3400,22 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"Первая сцена, которую мы создадим, определяет объект ``Player`` (Игрок). "
+"Одним из преимуществ создания отдельной сцены игрока является то, что мы "
+"можем протестировать ее отдельно, даже до того, как мы создали другие части "
+"игры."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node Structure"
-msgstr ""
+msgstr "Структура Узла"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:65
 msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
+"Для начала нажмите кнопку \"Добавить/Создать новый узел\" и добавьте в сцену "
+"узел :ref:`Area2D <class_Area2D>'."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -3220,6 +3424,10 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
+"С помощью ``Area2D`` мы можем обнаруживать объекты, которые перекрывают или "
+"сталкиваются с игроком. Измените его имя на ``Player``, нажав на имя узла. "
+"Это корневой узел сцены. Мы можем добавить к игроку дополнительные узлы для "
+"расширения его функциональности."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
 msgid ""
@@ -3228,12 +3436,18 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
+"Прежде чем мы добавим детей на узел ``Player``, мы хотим убедиться, что "
+"нажав на них мы не переместим их и не изменим их размер. Выберите узел и "
+"нажмите на значок справа от блокировки; его всплывающая подсказка гласит: "
+"\"Гарантирует, что дети объекта не могут быть выбраны.\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
+"Сохраните сцену. Выберите меню \"Сцена\" -> \"Сохранить\" или нажмите \"Ctrl"
+"+S\" на Windows/Linux или ``Command+S`` на Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid ""
@@ -3241,10 +3455,13 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
+"Для этого проекта мы будем следовать соглашениям об именах Godot. Классы "
+"(узлы) используют ``PascalCase``, переменные и функции используют "
+"``snake_case``, а константы используют ``ALL_CAPS``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
 msgid "Sprite Animation"
-msgstr ""
+msgstr "Спрайтовая Анимация"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -3257,6 +3474,15 @@ msgid ""
 "click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
 "``<SpriteFrames>`` to open the \"SpriteFrames\" panel:"
 msgstr ""
+"Нажмите на узел ``Player`` и добавьте ему дочерний узел :ref:`AnimatedSprite "
+"<class_AnimatedSprite>`. ``AnimatedSprite`` будет обрабатывать внешний вид и "
+"анимацию для нашего игрока. Обратите внимание, что рядом с узлом есть "
+"предупреждающий символ. Для ``AnimatedSprite`` нужен ресурс :ref:"
+"`SpriteFrames <class_SpriteFrames>`, который представляет собой список "
+"анимаций, которые он может отображать. Чтобы создать его, найдите свойство "
+"``Frames`` в инспекторе и нажмите \"<null>\" -> \"Новый SpriteFrames\". "
+"Затем, в том же месте, нажмите ``<SpriteFrames>``, чтобы открыть панель "
+"\"SpriteFrames\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:102
 msgid ""
@@ -8397,7 +8623,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "OS (export)"
@@ -9404,11 +9630,11 @@ msgstr "Смотрите `if/else/elif`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:158
 msgid "elif"
-msgstr "elif"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:160
 msgid "else"
-msgstr "else"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:162
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:695
@@ -9430,7 +9656,7 @@ msgstr "Зарезервировано для будущей реализаци�
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:684
 msgid "while"
-msgstr "while"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 msgid "See while_."
@@ -9439,7 +9665,7 @@ msgstr "Смотрите while_."
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:724
 msgid "match"
-msgstr "match"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 msgid "See match_."
@@ -9447,7 +9673,7 @@ msgstr "Смотрите match_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 msgid "switch"
-msgstr "switch"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:170
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
@@ -9456,11 +9682,11 @@ msgstr "Зарезервировано для будущей реализаци�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 msgid "case"
-msgstr "case"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "break"
-msgstr "break"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
@@ -9468,7 +9694,7 @@ msgstr "Выход из выполнения текущего ``for`` или ``w
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid "continue"
-msgstr "continue"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid ""
@@ -9497,7 +9723,7 @@ msgstr "Возвращает значение из функции."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "class"
-msgstr "class"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "Defines a class."
@@ -9505,7 +9731,7 @@ msgstr "Объявляет класс."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "extends"
-msgstr "extends"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:184
 msgid "Defines what class to extend with the current class."
@@ -9522,7 +9748,7 @@ msgstr "Проверяет что значение расширяет указа
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "self"
-msgstr "self"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "Refers to current class instance."
@@ -9530,7 +9756,7 @@ msgstr "Ссылается на текущий экземпляр класса."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "tool"
-msgstr "tool"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "Executes the script in the editor."
@@ -9538,7 +9764,7 @@ msgstr "Выполняет скрипт в редакторе."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "signal"
-msgstr "signal"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Defines a signal."
@@ -9546,7 +9772,7 @@ msgstr "Объявляет сигнал."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "func"
-msgstr "func"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Defines a function."
@@ -9554,7 +9780,7 @@ msgstr "Объявляет функцию."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "static"
-msgstr "static"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "Defines a static function. Static member variables are not allowed."
@@ -9562,7 +9788,7 @@ msgstr "Объявление статической функции. Статич
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "const"
-msgstr "const"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "Defines a constant."
@@ -9586,7 +9812,7 @@ msgstr "Объявляет переменную."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid "onready"
-msgstr "onready"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid ""
@@ -9643,7 +9869,7 @@ msgstr "Поддержка сопрограмм. См. `Сопрограммы �
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "assert"
-msgstr "assert"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid ""
@@ -12710,7 +12936,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr "Self"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -16711,7 +16937,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr "GDNative"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
 msgid "Clipboard synchronisation between engine and operating system"
