@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,5 +150,17 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:142
 msgid "According to some preliminary `benchmarks <https://github.com/cart/godot3-bunnymark>`_, performance of C# in Godot - while generally in the same order of magnitude - is roughly **~4x** that of GDScript in some naive cases. For full performance, C++ is still a little faster; the specifics are going to vary according to your use case. GDScript is likely fast enough for most general scripting workloads. C# is faster, but requires some expensive marshalling when talking to Godot."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
+msgid "Using Nuget Packages in Godot"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+msgid "`Nuget <https://www.nuget.org/>`_ Packages can be installed and used with Godot, as with any project. Many IDEs (such as vs code) can add packages directly. They can also be added manually by adding the package reference in the .csproj file located in the project root:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:164
+msgid "Then using the dotnet command line to restore package, in the project root::"
 msgstr ""
 

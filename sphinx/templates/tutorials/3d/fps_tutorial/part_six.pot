@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -275,7 +275,7 @@ msgid "Then we set the ``Engine_Label``'s text to the version info provided by `
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:275
-msgid "In ``_process`` we set the text of the ``FPS_Label`` to ``Engine.get_frames_per_second``, but because ``get_frames_per_second`` returns a int, we have to cast it to a string using ``str`` before we can add it to our label."
+msgid "In ``_process`` we set the text of the ``FPS_Label`` to ``Engine.get_frames_per_second``, but because ``get_frames_per_second`` returns a integer, we have to cast it to a string using ``str`` before we can add it to our label."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:280
@@ -372,7 +372,7 @@ msgid "Select ``Pause_Popup`` and scroll down all the way till you get to the ``
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:382
-msgid "Now that we've looked at how ``Pause_Popup.tscn`` is set up, lets write the code to make it work. Normally we'd attach a script to the root node of the scene, ``Pause_Popup`` in this case, but since we'll be needed to receive a couple signals in ``Globals.gd``, we'll write all of the code for the pop up there."
+msgid "Now that we've looked at how ``Pause_Popup.tscn`` is set up, lets write the code to make it work. Normally we'd attach a script to the root node of the scene, ``Pause_Popup`` in this case, but since we'll need to receive a couple of signals in ``Globals.gd``, we'll write all of the code for the pop up there."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:394
@@ -677,7 +677,7 @@ msgid "Now all we need is a way to set the respawn points. Open up ``Ruins_Level
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:771
-msgid "Now when a node with ``Respawn_Point_Setter.gd`` has it's ``_ready`` function called, all of the children nodes of the node with ``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level.tscn``, we be added to ``respawn_points`` in ``Globals.gd``."
+msgid "Now when a node with ``Respawn_Point_Setter.gd`` has it's ``_ready`` function called, all of the children nodes of the node with ``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level.tscn``, will be added to ``respawn_points`` in ``Globals.gd``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:775
