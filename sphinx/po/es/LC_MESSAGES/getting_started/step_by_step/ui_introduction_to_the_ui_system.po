@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,16 +32,16 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
-"Pantallas de computadoras, teléfonos móviles y pantallas de televisión "
-"vienen en todas las formas y tamaños. Para distribuir un juego, tendrás que "
-"admitir diferentes proporciones y resoluciones de pantalla. Puede ser "
-"difícil crear interfaces responsivas que se adapten a todas las plataformas. "
-"Afortunadamente, Godot viene con herramientas robustas para diseñar y "
-"administrar una interfaz de usuario responsiva. Para diseñar su interfaz de "
-"usuario, utilizarás los nodos de Control. Estos son los nodos con iconos "
-"verdes en el editor. Hay docenas de ellos, para crear cualquier cosa, desde "
-"barras de vida hasta aplicaciones complejas. Todo el editor y los plugins de "
-"Godot usan estos nodos."
+"Las pantallas de computadoras, los teléfonos móviles y las pantallas de "
+"televisión vienen en todas las formas y tamaños. Para distribuir un juego, "
+"tendrás que admitir diferentes proporciones y resoluciones de pantalla. "
+"Puede ser difícil crear interfaces sensibles que se adapten a todas las "
+"plataformas. Afortunadamente, Godot viene con herramientas robustas para "
+"diseñar y administrar una interfaz de usuario sensible. Para diseñar su "
+"interfaz de usuario, utilizarás los nodos de Control. Estos son los nodos "
+"con iconos verdes en el editor. Hay docenas de ellos, para crear cualquier "
+"cosa, desde barras de vida hasta aplicaciones complejas. Todo el editor y "
+"los plugins de Godot usan estos nodos."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
@@ -103,11 +103,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Anchor"
-msgstr "Anchor"
+msgstr "Anclaje"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
-msgstr "Bounding rectangle"
+msgstr "Rectangulo delimitador"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Focus and focus neighbour"
@@ -645,6 +645,9 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"Los Containers tienen algunas propiedades especiales para controlar la forma "
+"en que organizan los elementos de la interfaz de usuario. Para cambiarlas, "
+"ve a la sección Custom Constants en el Inspector."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
 msgid "The 5 most useful containers"
@@ -655,23 +658,29 @@ msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"Si construyes herramientas, es posible que necesites todos los containers. "
+"Pero para la mayoría de los juegos, unos cuantos serán suficientes:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid "MarginContainer, to add margins around part of the UI"
-msgstr ""
+msgstr "MarginContainer, para añadir márgenes alrededor de parte de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
 msgid "CenterContainer, to center its children in its bounding box"
-msgstr ""
+msgstr "CenterContainer, para centrar a sus hijos en su caja delimitadora"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
 msgstr ""
+"VboxContainer y HboxContainer, para organizar los elementos de la UI en "
+"filas o columnas"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr ""
+"GridContainer, para ordenar los nodos de Control en un patrón similar al de "
+"una rejilla"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -713,6 +722,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"El MarginContainer añade un margen de 40px alrededor de la UI del juego"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:319
 msgid ""
@@ -732,7 +742,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
 msgid "The HBoxContainer horizontally aligns UI elements"
-msgstr ""
+msgstr "El HBoxContainer alinea horizontalmente los elementos de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:330
 msgid ""
@@ -743,6 +753,12 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer ordena automáticamente a sus hijos en una columna. Los pone "
+"uno tras otro. Si se utiliza el parámetro de separación, dejará un espacio "
+"entre sus hijos. HBoxContainer ordena los elementos de la UI en una fila. Es "
+"similar al VBoxContainer, con un método adicional ``add_spacer`` para añadir "
+"un nodo de control de espaciador antes de su primer hijo o después de su "
+"último hijo, desde un script."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:337
 msgid ""
@@ -755,10 +771,20 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"El GridContainer permite organizar los elementos de la UI en un patrón "
+"similar al de una rejilla. Sólo se puede controlar el número de columnas que "
+"tiene, y se establecerá el número de filas por sí mismo, sobre la base de su "
+"cuenta de los hijos. Si tiene nueve hijos y tres columnas, tendrá 9÷3 = 3 "
+"filas. Añade tres hijos más y tendrás cuatro filas. En otras palabras, "
+"creará nuevas filas a medida que añada más texturas y botones. Al igual que "
+"los contenedores de caja, tiene dos propiedades para establecer la "
+"separación vertical y horizontal entre las filas y columnas respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:348
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr ""
+"Un GridContainer con 2 columnas. Determina el tamaño de cada columna "
+"automáticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
 msgid ""
@@ -766,3 +792,6 @@ msgid ""
 "design more advanced interface, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
+"El sistema de UI de Godot es complejo, y tiene mucho más que ofrecer. Para "
+"aprender a diseñar una interfaz más avanzada, consulta la sección :ref:`GUI "
+"section <toc-learn-features-gui>` de la documentación."

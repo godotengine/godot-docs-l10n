@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,8 +146,8 @@ msgid ""
 "And the second way is from code. One example would be to tag scenes which "
 "are enemies:"
 msgstr ""
-"Y la segunda forma es por código. Un ejemplo sería etiquetar escenas que son "
-"enemigas:"
+"Y la segunda forma es por código. Un ejemplo sería etiquetar escenas que "
+"representan a los enemigos ('enemies'):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
 msgid ""
@@ -220,7 +220,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr "Funciones Overrideable"
+msgstr "Funciones anulables"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""
@@ -247,8 +247,8 @@ msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
-"Para crear un nodo a partir de código, se debe llamar al método ``.new()``, "
-"como en cualquier otro tipo de dato basado en una clase. Por ejemplo:"
+"Para crear un nodo desde código, se debe llamar al método ``.new()``, como "
+"en cualquier otro tipo de dato basado en una clase. Por ejemplo:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
 msgid ""
@@ -263,7 +263,7 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"Cuando un nodo es liberado, también libera todos sus nodos hijos. Debido a "
+"Cuando un nodo se libera, también libera todos sus nodos hijos. Debido a "
 "esto, el borrado manual de nodos es mucho más sencillo de lo que parece. "
 "Libera el nodo base y todo lo demás en el subárbol desaparecerá con él."
 
@@ -303,8 +303,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
 msgid "Preloading it can be more convenient, as it happens at parse time:"
 msgstr ""
-"La precarga puede ser más conveniente, como ocurre en el momento del "
-"análisis:"
+"Puede ser más conveniente la precarga , ya que ocurre en tiempo de análisis:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""

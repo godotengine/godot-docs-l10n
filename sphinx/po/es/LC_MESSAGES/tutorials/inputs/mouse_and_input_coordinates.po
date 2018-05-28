@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:4
 msgid "Mouse and input coordinates"
-msgstr ""
+msgstr "Mouse y coordenadas de entrada"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 msgid "About"
@@ -30,10 +30,13 @@ msgid ""
 "The reason for this small tutorial is to clear up many common mistakes about "
 "input coordinates, obtaining mouse position and screen resolution, etc."
 msgstr ""
+"El objetivo de este pequeño tutorial es evitar errores comunes sobre "
+"coordenadas de entrada, obtención de posiciones en relación a mouse y "
+"resolución, etc."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:14
 msgid "Hardware display coordinates"
-msgstr ""
+msgstr "Coordenadas de pantalla basadas en hardware"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
 msgid ""
@@ -41,10 +44,14 @@ msgid ""
 "meant to run on PC, such as editors, MMOs, tools, etc. Yet, it does not make "
 "as much sense outside of that scope."
 msgstr ""
+"La utilización de coordenadas de hardware tiene sentido en el caso de "
+"escribir interfaces de usuario complejas que deben funcionar en PC, como "
+"editores, MMOs, herramientas, etc. No tiene mucho sentido utilizarlas fuera "
+"de este ámbito."
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
 msgid "Viewport display coordinates"
-msgstr ""
+msgstr "Coordenadas de pantalla de Viewport"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:23
 msgid ""
@@ -53,7 +60,12 @@ msgid ""
 "the functions in nodes to obtain the mouse coordinates and viewport size, "
 "for example:"
 msgstr ""
+"Godot utiliza Viewports para mostrar contenido y estos pueden ser escalados "
+"con diversas opciones (ver tutorial :ref:`doc_multiple_resolutions`). Usa "
+"las funciones de los nodos para obtener coordenadas de mouse y tamaño del "
+"Viewport, por ejemplo:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
 msgid "Alternatively it's possible to ask the viewport for the mouse position:"
 msgstr ""
+"Alternativamente, es posible preguntar al Viewport por la posición del mouse:"

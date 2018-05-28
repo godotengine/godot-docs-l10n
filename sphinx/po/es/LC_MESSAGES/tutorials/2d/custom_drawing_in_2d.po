@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,11 +181,11 @@ msgid ""
 "have to provide to our drawing. We'll also provide the color value so we can "
 "draw the arc in different colors if we wish."
 msgstr ""
-"Un arco está depende de los parámetros de un círculo, es decir, posición "
-"central y radio. El arco en sí es definido por el ángulo en el que comienza "
-"y el ángulo en el que termina. Esos son los 4 parámetros que pasamos a "
-"nuestro dibujo. Podemos también agregar un valor de color para dibujar el "
-"arco en diferentes colores."
+"Un arco está depende de los parámetros de un círculo de soporte, es decir, "
+"posición central y radio. El arco en sí es definido por el ángulo en el que "
+"comienza y el ángulo en el que termina. Esos son los 4 parámetros que "
+"pasamos a nuestro dibujo. Podemos también agregar un valor de color para "
+"dibujar el arco en diferentes colores."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
 msgid ""
@@ -261,7 +261,7 @@ msgid ""
 "the PoolVector2Array which was previously defined."
 msgstr ""
 "La posición actual de un punto ubicado en un angulo 'angle' (en radianes) es "
-"dada por Vector2(cos(angle), sin(angle)). Como cos() y sin () retornan "
+"dada por Vector2(cos(angle), sin(angle)). Como cos() y sin() retornan "
 "valores entre -1 y 1, la posición es ubicada en un círculo de radio 1. Para "
 "tener esta posición en nuestro círculo de soporte, que tiene un radio de "
 "'radius', simplemente tenemos que multiplicar la posición por 'radius'. "
@@ -281,24 +281,34 @@ msgid ""
 "line between a pair of points will never be long enough to see them. If this "
 "happens, we simply would need to increase the number of points."
 msgstr ""
+"Ahora dibujaremos los puntos. Como puedes imaginar, no dibujaremos nuestros "
+"32 puntos solamente, tendremos que dibujar todo lo que está entre ellos. "
+"Podríamos haber calculado los puntos nosotros mismos utilizando el método "
+"previo y dibujarlos uno a uno, pero esto es muy complicado e ineficiente. "
+"Así que simplemente dibujaremos líneas entre cada par de puntos. A menos que "
+"el radio de nuestro círculo de soporte sea muy grande, el largo de la línea "
+"entre cada par de puntos nunca será lo suficientemente larga para verlos. Si "
+"esto sucede, simplemente aumentamos el número de puntos."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:202
 msgid "Draw the arc on screen"
-msgstr ""
+msgstr "Dibujar el arco en pantalla"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:203
 msgid ""
 "We now have a function that draws stuff on the screen: it is time to call in "
 "the _draw() function."
 msgstr ""
+"Ahora tenemos una función que dibuja cosas en la pantalla: es momento de "
+"llamar la función _draw()."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:229
 msgid "Result:"
-msgstr ""
+msgstr "Resultado:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
 msgid "Arc polygon function"
-msgstr ""
+msgstr "Función de polígono arco"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:237
 msgid ""
@@ -314,7 +324,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:275
 msgid "Dynamic custom drawing"
-msgstr ""
+msgstr "Dibujos personalizados dinámicos"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:276
 msgid ""
@@ -324,6 +334,12 @@ msgid ""
 "our example, we will simply increment them by 50. This increment value has "
 "to remain constant, else the rotation speed will change accordingly."
 msgstr ""
+"Ahora somos capaces de dibujar figuras personalizadas en pantalla, sin "
+"embargo, son estáticas. Hagamos que la figura gire en torno al centro. La "
+"solución para esto es simplemente cambiar los valores angle_from y angle_to "
+"a través del tiempo. Para nuestro ejemplo, simplemente lo incrementaremos en "
+"50, valor deberá permanecer constante sino la velocidad de rotación cambiará "
+"de acuerdo a las modificaciones."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:278
 msgid ""
@@ -331,10 +347,14 @@ msgid ""
 "top of our script. Also note that you can store them in other nodes and "
 "access them using get_node()."
 msgstr ""
+"Primero, tenemos que hacer que ambos, angle_from y angle_to sean variables "
+"del ámbito de la instancia (al alcance de cualquier función) al principio "
+"del script. También se pueden colocar en otros nodos y accederlas mediante "
+"``get_node(\"nombre_nodo\").nombre_variable``."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:298
 msgid "We make these values change in the _process(delta) function."
-msgstr ""
+msgstr "Haremos que esos valores cambien en la función _process(delta)."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:300
 msgid ""
@@ -347,6 +367,13 @@ msgid ""
 "Since Godot doesn't provide a wrap() function, we'll create it here, as it "
 "is relatively simple."
 msgstr ""
+"También incrementaremos nuestros valores angle_from y angle_to aquí. Sin "
+"embargo no debemos olvidar de aplicar ajuste en el valor resultante para "
+"contenerlo entre 0 y 360 grados. Si no se ajustan esos valores, el script "
+"funcionará bien por un largo tiempo pero los valores se incrementarán hasta "
+"el máximo que puede manejar Godot (2^31 - 1). Cuando esto sucede, el "
+"programa puede cerrarse o realizar un comportamiento no esperado. Como Godot "
+"no provee una función así, la crearemos aquí, es relativamente simple."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:302
 msgid ""
@@ -354,17 +381,24 @@ msgid ""
 "automatically calls _draw(). This way, you can control when you want to "
 "refresh the frame."
 msgstr ""
+"Finalmente, no debemos olvidar llamar la función update(), la que provoca "
+"una llamada a _draw(). de este modo, podrás controlar cuando quieres que se "
+"actualice."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:346
 msgid ""
 "Also, don't forget to modify the _draw() function to make use of these "
 "variables:"
 msgstr ""
+"Y no olvides modificar la función _draw() para que haga uso de estas "
+"variables:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:370
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
+"Ejecutémoslo y veamos como funciona. Podemos notar que el arco rota "
+"demasiado rápido, qué está mal?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:373
 msgid ""
@@ -376,6 +410,14 @@ msgid ""
 "So, using 'delta' to control your drawing ensures that your program runs at "
 "the same speed on everybody's hardware."
 msgstr ""
+"La razón es que tu GPU está mostrando frames tan rápido como puede, "
+"necesitamos \"estabilizar\" la velocidad de dibujado acorde a esta. Para "
+"conseguirlo, nos aseguraremos de utilizar el parámetro 'delta' de la función "
+"_process(). 'delta' contiene un número que representa el tiempo transcurrido "
+"entre dos frames. Generalmente es un valor muy bajo (alrededor de 0.0003 "
+"segundos, pero depende del hardware). Así que utilizando 'delta' se puede "
+"asegurar que el programa se ejecutará a la misma velocidad en todo tipo de "
+"hardware."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:375
 msgid ""
@@ -383,23 +425,32 @@ msgid ""
 "'delta' in the _process() function. This way, our 2 angles will be increased "
 "by a much smaller value, which directly depends on the rendering speed."
 msgstr ""
+"En nuestro caso, simplemente multiplicaremos nuestra variable 'rotation_ang' "
+"por 'delta' en la función _process(). De este modo, nuestros 2 ángulos se "
+"incrementarán por un valor muy bajo, dependiendo directamente de nuestra "
+"velocidad de procesamiento."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:407
 msgid "Let's run again! This time, the rotation displays fine!"
-msgstr ""
+msgstr "¡Ejecutémoslo de nuevo! ¡Esta vez, la rotación se muestra bien!"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:410
 msgid "Tools"
-msgstr "Herramientas"
+msgstr "Tools"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:412
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor, to use as preview or visualization of some feature or behavior."
 msgstr ""
+"Dibujar tus propios nodos puede ser deseable mientras se ejecutan en el "
+"editor, para usarlo como previsualización de alguna característica o "
+"comportamiento."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:416
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."
 msgstr ""
+"Recuerde usar la palabra clave \"tool\" al principio del script (ver la "
+"referencia :ref:`doc_gdscript` si olvidas lo que hace)."

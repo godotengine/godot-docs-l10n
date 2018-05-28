@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,8 @@ msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"Por ejemplo, el comando completo para exportar tu juego (como se explica a "
+"continuación) podría verse así:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "Creating a project"
@@ -139,7 +141,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "Exporting"
-msgstr ""
+msgstr "Exportar"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:125
 msgid ""
@@ -147,6 +149,9 @@ msgid ""
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
+"También se puede exportar el proyecto desde la línea de comandos. Esto es "
+"especialmente útil para configuraciones de integración continua. La versión "
+"de Godot que es headless (server build, no video) es ideal para esto."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:134
 msgid ""
@@ -155,6 +160,11 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
+"Los nombres de plataforma reconocidos por el parámetro ``--export`` son los "
+"mismos que se muestran en el asistente de exportación del editor. Para "
+"obtener una lista de plataformas compatibles desde la línea de comandos, "
+"intenta exportar a una plataforma no reconocida y se mostrará la lista "
+"completa de plataformas compatibles con tu configuración."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:140
 msgid ""

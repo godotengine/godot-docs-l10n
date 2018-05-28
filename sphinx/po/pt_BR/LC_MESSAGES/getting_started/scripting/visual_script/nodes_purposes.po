@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,15 +56,14 @@ msgstr ""
 "controles editáveis para uma melhor leitura do todo."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
-#, fuzzy
 msgid ""
 "Nodes still display the required information as text, but editing is done "
 "via the *Inspector*. To edit them, select any node and edit its properties "
 "in the *Inspector*."
 msgstr ""
-"Nodes porém mostram o que requer de informação como texto, mas a edição é "
-"feita no *Inspetor*. Para editar tais informações, apenas selecione algum "
-"node e edite-as no *Inspetor*."
+"s nós ainda exibem as informações necessárias como texto, mas a edição é "
+"feita por meio do *Inspector*. Para editá-los, selecione qualquer nó e edite "
+"suas propriedades no *Inspector*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
 msgid "Ports and Connections"
@@ -93,7 +92,6 @@ msgstr ""
 "*Portas*: De *Sequencia* e *Dado*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
-#, fuzzy
 msgid ""
 "*Sequence Ports* indicate the order in which operations are executed. "
 "Typically when a *Node* is done processing, it will go to the next node from "
@@ -102,12 +100,13 @@ msgid ""
 "Thanks to this, you can follow the logic flow within a function by following "
 "the white lines. Not every *Node* has *Sequence Ports*. In fact, most do not."
 msgstr ""
-"*Portas de Sequencia* indicam a ordem que as operações são executadas. "
-"Geralmente quando um *Node* já foi processado, outro começa pelas *Portas de "
-"Sequencia* a direita. Sem conexão numa, a função acaba ou segue outra (isso "
-"depende de cada node); por isso é fácil entender a lógica duma função apenas "
-"seguindo as linhas brancas. Note que nem todo *Node* tem *Portas de "
-"Sequencia*, ao contrário, a maioria não."
+"*Sequence Ports* indica a ordem na qual as operações são executadas. "
+"Normalmente, quando um *Node* é processado, ele irá para o próximo nó a "
+"partir de uma das portas à direita. Se nada estiver conectado, a função pode "
+"terminar ou outra saída *Sequence Port* pode ser tentada (isso depende do "
+"nó). Graças a isso, você pode seguir o fluxo lógico dentro de uma função "
+"seguindo as linhas brancas. Nem todo *Node* possui *Sequence Port*. Na "
+"verdade, a maioria não."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:46
 msgid ""
@@ -138,7 +137,6 @@ msgid "Connections"
 msgstr "Conexões"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:60
-#, fuzzy
 msgid ""
 "Connecting is a relatively simple process. Drag an *Output Port* towards an "
 "*Input Port*."
@@ -197,7 +195,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
 msgid "Accessing Scene Nodes"
-msgstr ""
+msgstr "Acessando os Nós de Cena"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:96
 msgid ""
@@ -280,6 +278,9 @@ msgid ""
 "This value can be read from any of the functions of the script or from other "
 "scripts via the method described in the previous step."
 msgstr ""
+"Variáveis são contêineres de memória locais para o script que podem conter "
+"um valor. Esse valor pode ser lido de qualquer uma das funções do script ou "
+"de outros scripts por meio do método descrito na etapa anterior."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:135
 msgid ""
@@ -314,8 +315,8 @@ msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
-"Para suas variáveis em um script, simplesmente arraste-a à tela para criar "
-"um getter:"
+"Para usar a variável no script, basta arrastá-la para a tela para criar um "
+"getter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
@@ -331,6 +332,9 @@ msgid ""
 "this, do the same steps you did for variables in the previous step, except "
 "for *Signals*:"
 msgstr ""
+"Também é possível criar seus próprios sinais em um script e usá-los. Para "
+"isso, faça as mesmas etapas que você fez para as variáveis na etapa "
+"anterior, exceto para *Signals*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
 msgid ""
@@ -622,13 +626,12 @@ msgid "TypeCast"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
-#, fuzzy
 msgid ""
 "This is a useful and commonly used node. You can use it to cast arguments or "
 "other objects to the type you desire. Afterwards, you can even drag the "
 "object output to get full completion."
 msgstr ""
-"Este é um nó muito útil e comumente usado. Você pode usá-lo para converter "
+"Este é um nó útil e comumente usado. Você pode usá-lo para transmitir "
 "argumentos ou outros objetos para o tipo desejado. Depois, você pode até "
 "mesmo arrastar a saída do objeto para obter a conclusão completa."
 

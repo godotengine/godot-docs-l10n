@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,8 +91,9 @@ msgid "That's it! Now you should be good to go :)"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:71
-msgid "QtCreator"
-msgstr ""
+#, fuzzy
+msgid "Qt Creator"
+msgstr "Ітератор"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:74
 msgid "Importing the project"
@@ -102,11 +103,11 @@ msgstr ""
 msgid "Choose *New Project* -> *Import Project* -> *Import Existing Project*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:77
+#: ../../docs/development/cpp/configuring_an_ide.rst:80
 msgid "Set the path to your Godot root directory and enter the project name."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:78
+#: ../../docs/development/cpp/configuring_an_ide.rst:84
 msgid ""
 "Here you can choose which folders and files will be visible to the project. "
 "C/C++ files are added automatically. Potentially useful additions: \\*.py "
@@ -114,256 +115,281 @@ msgid ""
 "Click \"Next\"."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:81
+#: ../../docs/development/cpp/configuring_an_ide.rst:90
 msgid "Click *Finish*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:82
+#: ../../docs/development/cpp/configuring_an_ide.rst:91
 msgid ""
 "Add a line containing ``.`` to *project_name.includes* to get working code "
 "completion."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:85
+#: ../../docs/development/cpp/configuring_an_ide.rst:96
 msgid "Build and run"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:87
+#: ../../docs/development/cpp/configuring_an_ide.rst:98
 msgid "Build configuration:"
 msgstr "Налаштування збирання:"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:89
+#: ../../docs/development/cpp/configuring_an_ide.rst:100
 msgid "Click on *Projects* and open the *Build* tab."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:90
+#: ../../docs/development/cpp/configuring_an_ide.rst:101
 msgid "Delete the pre-defined ``make`` build step."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:91
+#: ../../docs/development/cpp/configuring_an_ide.rst:105
 msgid "Click *Add Build Step* -> *Custom Process Step*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:92
+#: ../../docs/development/cpp/configuring_an_ide.rst:109
 msgid "Type ``scons`` in the *Command* field."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:93
+#: ../../docs/development/cpp/configuring_an_ide.rst:110
 msgid ""
 "Fill the *Arguments* field with your compilation options. (e.g.: ``p=x11 "
 "target=debug -j 4``)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:95
+#: ../../docs/development/cpp/configuring_an_ide.rst:114
 msgid "Run configuration:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:97
+#: ../../docs/development/cpp/configuring_an_ide.rst:116
 msgid "Open the *Run* tab."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:98
+#: ../../docs/development/cpp/configuring_an_ide.rst:117
 msgid ""
-"Point the *Executable* to your compiled Godot binary (e.g: ``%{buildDir}\\bin"
-"\\godot.windows.tools.64.exe``)"
+"Point the *Executable* to your compiled Godot binary (e.g: ``%{buildDir}/bin/"
+"godot.x11.opt.tools.64``)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:99
+#: ../../docs/development/cpp/configuring_an_ide.rst:118
 msgid ""
 "If you want to run a specific game or project, point *Working directory* to "
 "the game directory."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:100
+#: ../../docs/development/cpp/configuring_an_ide.rst:119
 msgid ""
 "If you want to run the editor, add ``-e`` to the *Command line arguments* "
 "field."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:103
+#: ../../docs/development/cpp/configuring_an_ide.rst:124
+msgid "Updating Sources after pulling latest commits"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:126
+msgid ""
+"As a developer you usually want to frequently pull the latest commits from "
+"the upstream git repository or a specific fork etc. However this brings a "
+"little problem with it: as the development continues, source files (and "
+"folders) are added or removed. These changes needs to be reflected in your "
+"project files for Qt Creator too, so you continue to have a nice experience "
+"coding in it. A simple way to check these things, is to right click at your "
+"root folder in the \"Projects View\" and click on \"Edit files...\""
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:136
+msgid ""
+"Now a new dialog should appear that is similar in functionality to the one "
+"in the third step of the \"Importing the project\" section. Here now you can "
+"check whether you want to add/remove specific files and/or folders. You can "
+"chose by clicking with your mouse or just simply by clicking the \"Apply "
+"Filter\" button. A simple click on \"Ok\" and you're ready to continue your "
+"work."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:144
 msgid "Xcode"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:106
+#: ../../docs/development/cpp/configuring_an_ide.rst:147
 msgid "Project Setup"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:108
+#: ../../docs/development/cpp/configuring_an_ide.rst:149
 msgid "Create an Xcode external build project anywhere"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:112
+#: ../../docs/development/cpp/configuring_an_ide.rst:153
 msgid "Set the *Build tool* to the path to scons"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:114
+#: ../../docs/development/cpp/configuring_an_ide.rst:155
 msgid "Modify Build Target's Xcode Info Tab:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:116
+#: ../../docs/development/cpp/configuring_an_ide.rst:157
 msgid ""
 "Set *Arguments* to something like: platform=osx tools=yes bits=64 "
 "target=debug"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:117
+#: ../../docs/development/cpp/configuring_an_ide.rst:158
 msgid ""
 "Set *Directory* to the path to Godot's source folder. Keep it blank if "
 "project is already there."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:118
+#: ../../docs/development/cpp/configuring_an_ide.rst:159
 msgid "You may uncheck *Pass build settings in environment*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:122
+#: ../../docs/development/cpp/configuring_an_ide.rst:163
 msgid "Add a Command Line Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:124
+#: ../../docs/development/cpp/configuring_an_ide.rst:165
 msgid ""
 "Go to Xcode File > New > Target... and add a new Xcode command line target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:130
+#: ../../docs/development/cpp/configuring_an_ide.rst:171
 msgid "Name it something so you know not to compile with this target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:131
+#: ../../docs/development/cpp/configuring_an_ide.rst:172
 msgid "e.g. ``GodotXcodeIndex``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:132
+#: ../../docs/development/cpp/configuring_an_ide.rst:173
 msgid ""
 "Goto the newly created target's *Build Settings* tab and search for *Header "
 "Search Paths*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:133
+#: ../../docs/development/cpp/configuring_an_ide.rst:174
 msgid "Set *Header Search Paths* to an absolute path to Godot's source folder"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:134
+#: ../../docs/development/cpp/configuring_an_ide.rst:175
 msgid "Make it recursive by adding two \\*'s to the end of the path"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:135
+#: ../../docs/development/cpp/configuring_an_ide.rst:176
 msgid "e.g. ``/Users/me/repos/godot-source/\\**``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:137
+#: ../../docs/development/cpp/configuring_an_ide.rst:178
 msgid "Add Godot Source to the Project:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:139
+#: ../../docs/development/cpp/configuring_an_ide.rst:180
 msgid "Drag and drop godot source into project file browser."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:140
+#: ../../docs/development/cpp/configuring_an_ide.rst:181
 msgid "Uncheck *Create External Build System*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:144
+#: ../../docs/development/cpp/configuring_an_ide.rst:185
 msgid "Click Next"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:145
+#: ../../docs/development/cpp/configuring_an_ide.rst:186
 msgid "Select *create groups*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:149
+#: ../../docs/development/cpp/configuring_an_ide.rst:190
 msgid "Check off only your command line target in the *Add to targets* section"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:150
+#: ../../docs/development/cpp/configuring_an_ide.rst:191
 msgid "Click finish. Xcode will now index the files."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:151
+#: ../../docs/development/cpp/configuring_an_ide.rst:192
 msgid "Grab a cup of coffee... Maybe make something to eat, too"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:152
+#: ../../docs/development/cpp/configuring_an_ide.rst:193
 msgid ""
 "You should have jump to definition, auto completion, and full syntax "
 "highlighting when it is done."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:155
+#: ../../docs/development/cpp/configuring_an_ide.rst:196
 msgid "Scheme Setup"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:157
+#: ../../docs/development/cpp/configuring_an_ide.rst:198
 msgid "Edit Build Scheme of External Build Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:159
+#: ../../docs/development/cpp/configuring_an_ide.rst:200
 msgid "Open scheme editor of external build target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:160
+#: ../../docs/development/cpp/configuring_an_ide.rst:201
 msgid "Expand the *Build* menu"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:161
+#: ../../docs/development/cpp/configuring_an_ide.rst:202
 msgid "Goto *Post Actions*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:162
+#: ../../docs/development/cpp/configuring_an_ide.rst:203
 msgid ""
 "Add a new script run action, select your project in ``Provide build settings "
 "from`` as this allows you to use ``${PROJECT_DIR}`` variable."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:166
+#: ../../docs/development/cpp/configuring_an_ide.rst:207
 msgid "Write a script that gives the binary a name that Xcode will recognize"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:167
+#: ../../docs/development/cpp/configuring_an_ide.rst:208
 msgid ""
 "e.g. ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/"
 "godot/bin/godot``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:168
+#: ../../docs/development/cpp/configuring_an_ide.rst:209
 msgid "Build the external build target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:170
+#: ../../docs/development/cpp/configuring_an_ide.rst:211
 msgid "Edit Run Scheme of External Build Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:172
+#: ../../docs/development/cpp/configuring_an_ide.rst:213
 msgid "Open the scheme editor again"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:173
+#: ../../docs/development/cpp/configuring_an_ide.rst:214
 msgid "Click Run"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:177
+#: ../../docs/development/cpp/configuring_an_ide.rst:218
 msgid ""
 "Set the *Executable* to the file you linked in your post build action script"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:178
+#: ../../docs/development/cpp/configuring_an_ide.rst:219
 msgid "Check *Debug executable* if it isn't already"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:179
+#: ../../docs/development/cpp/configuring_an_ide.rst:220
 msgid ""
 "You can go to *Arguments* tab and add an -e and a -path to a project to "
 "debug the editor not the project selection screen"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:182
+#: ../../docs/development/cpp/configuring_an_ide.rst:223
 msgid "Test it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:184
+#: ../../docs/development/cpp/configuring_an_ide.rst:225
 msgid "Set a breakpoint in platform/osx/godot_main_osx.mm"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:185
+#: ../../docs/development/cpp/configuring_an_ide.rst:226
 msgid "It should break at the point!"
 msgstr ""

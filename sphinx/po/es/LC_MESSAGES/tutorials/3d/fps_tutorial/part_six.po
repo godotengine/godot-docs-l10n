@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -429,8 +429,8 @@ msgstr ""
 msgid ""
 "In ``_process`` we set the text of the ``FPS_Label`` to ``Engine."
 "get_frames_per_second``, but because ``get_frames_per_second`` returns a "
-"int, we have to cast it to a string using ``str`` before we can add it to "
-"our label."
+"integer, we have to cast it to a string using ``str`` before we can add it "
+"to our label."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:280
@@ -444,7 +444,6 @@ msgid "to this instead:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:294
-#, fuzzy
 msgid ""
 "This will call a new function in our singleton called ``set_debug_display``, "
 "so let's add that next!"
@@ -491,7 +490,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:330
-#, fuzzy
 msgid ""
 "When adding nodes to a singleton/autoload, you have to be careful not to "
 "lose reference to any of the child nodes. This is because nodes will not be "
@@ -595,9 +593,9 @@ msgstr ""
 msgid ""
 "Now that we've looked at how ``Pause_Popup.tscn`` is set up, lets write the "
 "code to make it work. Normally we'd attach a script to the root node of the "
-"scene, ``Pause_Popup`` in this case, but since we'll be needed to receive a "
-"couple signals in ``Globals.gd``, we'll write all of the code for the pop up "
-"there."
+"scene, ``Pause_Popup`` in this case, but since we'll need to receive a "
+"couple of signals in ``Globals.gd``, we'll write all of the code for the pop "
+"up there."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:394
@@ -1034,7 +1032,7 @@ msgid ""
 "Now when a node with ``Respawn_Point_Setter.gd`` has it's ``_ready`` "
 "function called, all of the children nodes of the node with "
 "``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level."
-"tscn``, we be added to ``respawn_points`` in ``Globals.gd``."
+"tscn``, will be added to ``respawn_points`` in ``Globals.gd``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:775
@@ -1105,7 +1103,6 @@ msgid "Let's go over the changes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:848
-#, fuzzy
 msgid ""
 "For the global variables we removed all of the ``audio_[insert name here]`` "
 "variables since we will instead have these passed in to. We also added two "
@@ -1113,8 +1110,8 @@ msgid ""
 "``should_loop`` to tell whether we want to loop when the sound has finished, "
 "and ``globals`` will hold the ``Globals.gd`` singleton."
 msgstr ""
-"Para las variables globales eliminamos todas las variables ``audio_[insert "
-"name here]`` ya que en su lugar las pasaremos al archivo. También añadimos "
+"Para las variables globales eliminamos todas las variables ``audio_[insertar "
+"nombre aquí]`` ya que en su lugar las pasaremos al archivo. También añadimos "
 "dos nuevas variables globales, ``should_loop`` y ``globals``. Usaremos "
 "``should_loop`` para decir si queremos hacer un loop cuando el sonido haya "
 "terminado, y ``globals`` contendrá el ``Globals.gd`` singleton."
@@ -1297,7 +1294,6 @@ msgstr ""
 "el sonido."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:966
-#, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenades "
 "explode you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "

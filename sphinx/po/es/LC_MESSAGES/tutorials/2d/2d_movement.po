@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D Movement Overview"
-msgstr ""
+msgstr "Movimiento en 2D"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:7
 msgid "Introduction"
@@ -31,6 +31,10 @@ msgid ""
 "the style of game you're making, you may have special requirements, but in "
 "general the movement in most 2D games is based on a small number of designs."
 msgstr ""
+"Todos los principiantes han pasado por esto: \"¿Cómo muevo mi personaje?\" "
+"Dependiendo del estilo de juego que estés haciendo, puedes tener "
+"requerimientos especiales pero, en general, el movimiento en la mayoría de "
+"los juegos 2D está basado en una pequeña cantidad de estilos."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
@@ -38,10 +42,13 @@ msgid ""
 "but the principles will apply to other node types (Area2D, RigidBody2D) as "
 "well."
 msgstr ""
+"Utilizaremos :ref:`KinematicBody2D <class_KinematicBody2D>` para estos "
+"ejemplos, pero el principio aplica también a otros tipos de nodos (Area2D, "
+"RigidBody2D)."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:17
 msgid "Setup"
-msgstr ""
+msgstr "Organización"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:19
 msgid ""
@@ -50,6 +57,10 @@ msgid ""
 "You can use the Godot icon (\"icon.png\") for the Sprite's texture or use "
 "any other 2D image you have."
 msgstr ""
+"Cada ejemplo mostrado debajo, usa la misma organización de escena. Comienza "
+"con un ``KinematicBody2D`` con dos hijos: ``Sprite`` y ``CollisionShape2D``. "
+"Puedes utilizar el ícono de Godot (\"icon.png\") o cualquier otra imagen que "
+"tengas para la textura del Sprite."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:23
 msgid ""
@@ -57,10 +68,13 @@ msgid ""
 "the following input actions (see :ref:`InputEvent <doc_inputevent>` for "
 "details):"
 msgstr ""
+"Abre ``Projecto -> Ajustes del Proyecto`` y selecciona la pestaña ``Mapa de "
+"entradas``. Agrega las siguientes acciones (ver  :ref:`InputEvent "
+"<doc_inputevent>` para más detalles):"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:29
 msgid "8-Way Movement"
-msgstr ""
+msgstr "Movimiento en 8 sentidos"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid ""
@@ -69,10 +83,15 @@ msgid ""
 "way movement\" comes from the fact that the player can move diagonally by "
 "pressing two keys at the same time."
 msgstr ""
+"En este escenario, quieres que el usuario pueda presionar las cuatro teclas "
+"direccionales (arriba/izquierda/abajo/derecha o W/A/S/D) y se mueva en la "
+"dirección indicada. El nombre \"movimiento en 8 sentidos\" (o 8-way movement "
+"en inglés) viene del hecho de que el jugador se puede mover diagonalmente al "
+"presionar dos teclas al mismo tiempo."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:37
 msgid "Add a script to the kinematic body and add the following code:"
-msgstr ""
+msgstr "Agrega un script al KinematicBody2D e incluya el siguiente código:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:104
 msgid ""
@@ -81,22 +100,32 @@ msgid ""
 "opposite keys cancel each other out, but will also result in diagonal "
 "movement being faster due to the two directions being added together."
 msgstr ""
+"En la función ``get_input()`` comprobamos si están presionadas las 4 teclas "
+"y las sumamos para obtener el vector velocidad. Esto tiene el beneficio de "
+"que dos teclas opuestas se cancelan, pero también resulta en un movimiento "
+"diagonal más rápido debido a que ambas direcciones son agregadas juntas."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:109
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed."
 msgstr ""
+"Podemos prevenir eso si *normalizamos* el vector velocidad, lo que significa "
+"que el vector tendrá una longitud total igual a ``1``, y de ese modo "
+"multiplicamos por el valor total esperado de velocidad."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:112
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
+"Si nunca antes has usado cálculo vectorial (operaciones matemáticas entre "
+"vectores) o necesitas un recordatorio, puedes ver la explicación del uso en "
+"Godot en :ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:120
 msgid "Rotation + Movement"
-msgstr ""
+msgstr "Rotación + Movimiento"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:122
 msgid ""
@@ -105,6 +134,10 @@ msgid ""
 "the character, while up/down moves it forward or backward in whatever "
 "direction it's facing."
 msgstr ""
+"Este tipo de movimientos es a veces llamado \"estilo Asteroids\" porque "
+"recuerda al funcionamiento del juego clásico de ese nombre. Presionando "
+"izquierda/derecha rota el personaje, mientras que arriba/abajo lo mueve "
+"hacia adelante y hacia atrás acorde a la dirección a la que apunta."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:200
 msgid ""
@@ -113,6 +146,10 @@ msgid ""
 "rotation. The rotation is applied directly to the body's ``rotation`` "
 "property."
 msgstr ""
+"Aquí hemos agregado dos variables nuevas para seguir la dirección de "
+"rotación y velocidad. De nuevo, presionando dos teclas cancelará el valor "
+"resultando una rotación nula. La rotación es aplicada directamente a la "
+"propiedad ``rotation`` del cuerpo."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:204
 msgid ""
@@ -121,10 +158,14 @@ msgid ""
 "function that you can use in many circumstances where you would otherwise "
 "need to apply trigonometric functions."
 msgstr ""
+"Para asignar la velocidad, usamos el método ``Vector1.rotated`` así apunta a "
+"la misma dirección que el cuerpo. ``rotated()`` es una función útil de los "
+"tipos vectores que se puede usar en muchas circunstancias en la que de otro "
+"modo se deberían aplicar funciones trigonométricas."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:210
 msgid "Rotation + Movement (mouse)"
-msgstr ""
+msgstr "Rotación + movimiento (ratón)"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:212
 msgid ""
@@ -133,6 +174,10 @@ msgid ""
 "character will always \"look at\" the mouse pointer. The forward/back inputs "
 "remain the same, however."
 msgstr ""
+"Este estilo de movimiento es una variante del anterior. Ahora, la dirección "
+"es indicada por la posición del ratón en lugar del teclado. El personaje "
+"siempre \"mirará hacia\" el puntero del ratón. El movimiento hacia adelante "
+"y hacia atras se mantiene igual."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:272
 msgid ""
@@ -140,16 +185,22 @@ msgid ""
 "point the player towards a given position. Without this function, you could "
 "get the same effect by setting the angle like this:"
 msgstr ""
+"Aquí utilizamos el método ``look_at()`` de :ref:`Node2D <class_Node2D>` para "
+"apuntar el jugador a una posición dada. Sin esta función se puede obtener el "
+"mismo efecto asignando el ángulo de este modo:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:287
 msgid "Click-and-Move"
-msgstr ""
+msgstr "Click y mover"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:289
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
 msgstr ""
+"Este último ejemplo utiliza sólo el ratón para controlar el personaje. "
+"Haciendo click en la pantalla ocasiona que el jugador se mueva a la posición "
+"indicada."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:346
 msgid ""
@@ -158,12 +209,18 @@ msgid ""
 "slightly past the position and tries to move back, only to move too far and "
 "repeat."
 msgstr ""
+"Note la comprobación ``length()`` que se hace antes del movimiento. Sin "
+"esto, el cuerpo podría \"temblar\" al llegar al destino, ya que el "
+"movimiento puede pasarse un poco e intentará moverse hacia atrás, pasándose "
+"de largo nuevamente y repitiendo el proceso."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:351
 msgid ""
 "Uncommenting the ``rotation`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
+"Quitando los comentarios en la línea que dice ``rotation`` hará también que "
+"el cuerpo apunte a la dirección del movimiento."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:354
 msgid ""
@@ -176,7 +233,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:358
 msgid "Summary"
-msgstr ""
+msgstr "Sumario"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:360
 msgid ""
@@ -184,9 +241,14 @@ msgid ""
 "projects. Feel free to use them and experiment with them to see what you can "
 "make."
 msgstr ""
+"Estos ejemplos pueden ser útiles como punto de partida para tus propios "
+"proyectos. Siéntete libre de usarlos y experimentar con ellos para ver lo "
+"que puedes hacer."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:363
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"
 msgstr ""
+"Puedes descargar este proyecto de ejemplo aquí: :download:`2D_movement_demo."
+"zip <files/2D_movement_demo.zip>`"

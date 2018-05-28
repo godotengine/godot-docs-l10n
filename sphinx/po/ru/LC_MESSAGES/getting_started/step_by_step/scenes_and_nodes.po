@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
+msgid "Scenes and nodes"
+msgstr "Сцены и узлы"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
+msgid "Introduction"
+msgstr "Введение"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
+msgid ""
+"Imagine for a second that you are not a game developer anymore. Instead, "
+"you're a chef! Change your hipster outfit for a toque and a double breasted "
+"jacket. Now, instead of making games, you create new and delicious recipes "
+"for your guests."
+msgstr ""
+"Представьте себе, что вы уже не разработчик игр. Вместо этого вы шеф-повар! "
+"Смените вашу хипстерскую одежду на поварской колпак и двубортный пиджак. "
+"Теперь вместо создания игр вы создаете новые и вкусные рецепты для ваших "
+"гостей."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
+msgid ""
+"So, how does a chef create a recipe? Recipes are divided into two sections: "
+"the first is the ingredients and the second is the instructions to prepare "
+"it. This way, anyone can follow the recipe and savor your magnificent "
+"creation."
+msgstr ""
+"Итак, как шеф-повар создает рецепт? Рецепты делятся на две части: первая - "
+"это ингредиенты, а вторая - инструкции для их приготовления. Таким образом, "
+"каждый может следовать рецепту и наслаждаться своим великолепным творением."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
+msgid ""
+"Making games in Godot feels pretty much the same way. Using the engine feels "
+"like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
+"full of fresh ingredients with which to cook."
+msgstr ""
+"Создание игр в Godot имеет похожий принцип. Использование движка похоже на "
+"работу на кухне. На этой кухне *узлы* похожи на холодильник, заполненный "
+"свежими ингредиентами, из которых можно приготовить блюдо."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
+msgid ""
+"There are many types of nodes. Some show images, others play sound, other "
+"nodes display 3D models, etc. There are dozens of them."
+msgstr ""
+"Существует множество типов узлов. Некоторые показывают изображения, другие "
+"воспроизводят звук, другие узлы отображают 3D-модели и т.д. Их десятки."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
+msgid "Nodes"
+msgstr "Узлы"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
+msgid ""
+"But let's start with the basics. Nodes are fundamental building blocks for "
+"creating a game. As mentioned above, a node can perform a variety of "
+"specialized functions. However, any given node always has the following "
+"attributes:"
+msgstr ""
+"Но давайте начнем с основ. Узлы являются фундаментальными строительными "
+"блоками для создания игры. Как упоминалось ранее, узел может выполнять "
+"множество специализированных функций. Однако любой используемый узел всегда "
+"имеет следующие атрибуты:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
+msgid "It has a name."
+msgstr "У него есть имя."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
+msgid "It has editable properties."
+msgstr "Он имеет редактируемые свойства."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
+msgid "It can receive a callback to process every frame."
+msgstr "Он может принимать обратный вызов для обработки каждого кадра."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
+msgid "It can be extended (to have more functions)."
+msgstr "Он может быть расширен (чтобы иметь больше функций)."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
+msgid "It can be added to other nodes as children."
+msgstr "Он может быть добавлен к другому узлу в качестве дочернего."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
+msgid ""
+"The last one is important. Nodes can have other nodes as children. When "
+"arranged in this way, the nodes become a **tree**."
+msgstr ""
+"Последний пункт важен. Узлы могут иметь другие узлы в качестве дочерних. При "
+"такой структуре узлы становятся **деревом**."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
+msgid ""
+"In Godot, the ability to arrange nodes in this way creates a powerful tool "
+"for organizing projects. Since different nodes have different functions, "
+"combining them allows for the creation of more complex functions."
+msgstr ""
+"Способность располагать узлы таким образом создает мощный инструмент для "
+"организации проектов. Поскольку разные узлы имеют разные функции, "
+"объединение их позволяет создавать более сложные функции."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
+msgid ""
+"Don't worry if this doesn't click yet. We will continue to explore this over "
+"the next few sections. The most important fact to remember for now is that "
+"nodes exist and can be arranged this way."
+msgstr ""
+"Не беспокойтесь, если вам что-то непонятно. Мы продолжим изучение этого в "
+"следующих нескольких разделах. Важно запомнить тот факт, что узлы могут "
+"существовать и быть организованы таким образом."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
+msgid "Scenes"
+msgstr "Сцены"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
+msgid ""
+"Now that the concept of nodes has been defined, the next logical step is to "
+"explain what a Scene is."
+msgstr ""
+"Теперь, когда концепция узлов определена, следующим логическим шагом "
+"является объяснение того, что такое Сцена."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
+msgid ""
+"A scene is composed of a group of nodes organized hierarchically (in tree "
+"fashion). Furthermore, a scene:"
+msgstr ""
+"Сцена состоит из группы узлов, организованных иерархически (в виде дерева). "
+"Кроме того, сцена:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
+msgid "always has only one root node."
+msgstr "всегда имеет только один корневой узел."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
+msgid "can be saved to disk and loaded back."
+msgstr "может быть сохранена на диск и загружена обратно."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
+msgid "can be *instanced* (more on that later)."
+msgstr "может быть *инстанцирован* (подробнее об этом позже)."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
+msgid ""
+"Running a game means running a scene. A project can contain several scenes, "
+"but for the game to start, one of them must be selected as the main scene."
+msgstr ""
+"Запуск игры означает запуск сцены. Проект может содержать несколько сцен, но "
+"для начала игры одна из них должна быть выбрана в качестве главной сцены."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
+msgid ""
+"Basically, the Godot editor is a **scene editor**. It has plenty of tools "
+"for editing 2D and 3D scenes as well as user interfaces, but the editor is "
+"based on the concept of editing a scene and the nodes that compose it."
+msgstr ""
+"В целом, редактор Godot является **редактором сцены**. Он имеет множество "
+"инструментов для редактирования 2D и 3D-сцен, а также пользовательских "
+"интерфейсов, но основан он на концепции редактирования сцены и узлов, "
+"которые ее составляют."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
+msgid "Creating a new project"
+msgstr "Создание нового проекта"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
+msgid ""
+"Let's make these abstract concepts more concrete with an example. Following "
+"a long tradition in tutorials, we'll start with a \"Hello World\" project. "
+"This will introduce us to using the editor."
+msgstr ""
+"Давайте сделаем эти абстрактные понятия более конкретными на примере. Следуя "
+"давней традиции в учебниках, мы начнем с проекта \"Hello World\". Это введет "
+"нас в использование редактора."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
+msgid ""
+"If you run the godot executable outside of a project, the Project Manager "
+"appears. This helps developers manage their projects."
+msgstr ""
+"Если вы запустите исполняемый файл godot вне проекта, появится Менеджер "
+"Проектов. Это помогает разработчикам управлять их проектами."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
+msgid ""
+"To create a new project, click the \"New Project\" option. Choose and create "
+"a path for the project and specify the project name \"New Project\":"
+msgstr ""
+"Чтобы создать новый проект, нажмите \"Новый проект\". Выберите и создайте "
+"путь для проекта, укажите его название \"Новый проект\":"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
+msgid "Editor"
+msgstr "Редактор"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:96
+msgid ""
+"Once you've created the \"New Project\", then open it. This will open the "
+"Godot editor:"
+msgstr ""
+"После того, как вы создали \"Новый проект\", откройте его. Запустится "
+"редактор Godot:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
+msgid ""
+"As mentioned before, making games in Godot feels like being in a kitchen, so "
+"let's open the refrigerator and add some fresh nodes to the project. We'll "
+"begin with a \"Hello World!\" message that we'll put on the screen."
+msgstr ""
+"Как упоминалось ранее, создание игр в Godot похоже на работу на кухне, "
+"поэтому давайте откроем холодильник и добавим свежие узлы в проект. Мы "
+"начнем с сообщения \"Hello World!\", которое поместим на экран."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
+msgid ""
+"To do this, press the \"New Node\" button (which looks like a plus symbol):"
+msgstr ""
+"Для этого нажмите кнопку \"Новый узел\" (который выглядит как символ плюс):"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
+msgid ""
+"This will open the Create Node dialog, showing the long list of nodes that "
+"can be created:"
+msgstr ""
+"Откроется диалоговое окно Создания Узла, показывающее длинный список узлов, "
+"которые могут быть созданы:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
+msgid ""
+"From there, select the \"Label\" node first. Searching for it is probably "
+"the quickest way:"
+msgstr ""
+"Выберите узел \"Label\" (Ярлык). Найти его через поиск, вероятно, самый "
+"быстрый способ:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
+msgid "And finally, create the Label! A lot happens when Create is pressed:"
+msgstr ""
+"И наконец, создайте Label! При нажатии кнопки \"Создать\" происходит многое:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
+msgid ""
+"First of all, the scene changes to the 2D editor (because Label is a 2D Node "
+"type), and the Label appears, selected, at the top left corner of the "
+"viewport."
+msgstr ""
+"В первую очередь, сцена меняется на 2D-редактор (потому что Label является "
+"2D Узлом) и в верхнем левом углу окна просмотра появляется Ярлык."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
+msgid ""
+"The node appears in the scene tree editor (box in the top right corner), and "
+"the label properties appear in the Inspector (box in the bottom right "
+"corner)."
+msgstr ""
+"Узел появляется в редакторе дерева сцен (область в правом верхнем углу) и "
+"его свойства отображаются в Инспекторе (область в правом нижнем углу)."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
+msgid ""
+"The next step will be to change the \"Text\" Property of the label. Let's "
+"change it to \"Hello, World!\":"
+msgstr ""
+"Следующим шагом будет изменение свойства \"Текст\". Давайте изменим его на "
+"\"Hello, World!\":"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
+msgid ""
+"Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
+"top bar (or hit F6):"
+msgstr ""
+"Хорошо, все готово для запуска сцены! Нажмите кнопку \"Воспроизвести сцену\" "
+"на верхней панели (или нажмите F6):"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
+msgid "Aaaand... Oops."
+msgstr "Ииии... Ой."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
+msgid ""
+"Scenes need to be saved to be run, so save the scene to something like hello."
+"tscn in Scene -> Save:"
+msgstr ""
+"Сцены должны быть сохранены перед запуском, поэтому сохраните сцену, "
+"например, как hello.tscn через меню Сцена -> Сохранить:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
+msgid ""
+"And here's when something funny happens. The file dialog is a special file "
+"dialog, and only allows you to save inside the project. The project root is "
+"\"res://\" which means \"resource path\". This means that files can only be "
+"saved inside the project. For the future, when doing file operations in "
+"Godot, remember that \"res://\" is the resource path, and no matter the "
+"platform or install location, it is the way to locate where resource files "
+"are from inside the game."
+msgstr ""
+"И вот что забавное происходит. Диалоговое окно файла является специальным "
+"диалоговым окном файла, которое позволяет вам сохранить его внутри проекта. "
+"Корнем проекта является \"res://\", что означает \"путь ресурса\". Это "
+"означает, что файлы могут быть сохранены только внутри проекта. На будущее, "
+"при выполнении файловых операций в Godot, помните, что \"res://\" - это путь "
+"к ресурсам, и независимо от платформы или места установки, это способ найти "
+"файлы ресурсов, которые находятся внутри игры."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
+msgid ""
+"After saving the scene and pressing run scene again, the \"Hello, World!\" "
+"demo should finally execute:"
+msgstr ""
+"После сохранения сцены и повторного ее запуска, демо \"Hello, World!\" "
+"должно, наконец, запуститься:"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
+msgid "Success!"
+msgstr "Успех!"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
+msgid "Configuring the project"
+msgstr "Настройка проекта"
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
+msgid ""
+"Ok, it's time to configure the project. Right now, the only way to run "
+"something is to execute the current scene. Projects, however, may have "
+"several scenes, so one of them must be set as the main scene. This is the "
+"scene that will be loaded any time the project is run."
+msgstr ""
+"Хорошо, пришло время настроить проект. Прямо сейчас, единственный способ "
+"запустить что-то - это запустить текущую сцену. Однако, проекты могут иметь "
+"несколько сцен, поэтому одна из них должна быть установлена как главная "
+"сцена. Именно эта сцена будет загружаться при каждом запуске проекта."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
+msgid ""
+"These settings are all stored in a project.godot file, which is a plaintext "
+"file in win.ini format (for easy editing). There are dozens of settings that "
+"you can change in this file to alter how a project executes. To simplify "
+"this process, Godot provides a project settings dialog, which acts as a sort "
+"of frontend to editing a project.godot file."
+msgstr ""
+"Эти настройки хранятся в файле project.godot, который является текстовым "
+"файлом в формате win.ini (для удобства редактирования). Существуют десятки "
+"настроек, которые вы можете изменить в этом файле, для изменения способа "
+"запуска проекта. Чтобы упростить этот процесс, Godot предоставляет диалог "
+"настроек проекта, который действует как своего рода интерфейс для "
+"редактирования файла project.godot."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
+msgid "To access that dialog, select Project -> Project Settings. Try it now."
+msgstr ""
+"Чтобы открыть это диалоговое окно, выберите меню Проект -> Настройки "
+"проекта. Попробуйте прямо сейчас."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+msgid ""
+"Once the window opens, let's select a main scene. Locate the `Application/"
+"Run/Main Scene` property and click on it to select 'hello.tscn'."
+msgstr ""
+"Как только откроется окно, давайте выберем главную сцену. Найдите свойство "
+"`Application/Run/Main Scene` и нажмите на него, чтобы выбрать 'hello.tscn'."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
+msgid ""
+"Now, with this change, when you press the regular Play button (or F5), this "
+"scene will run, no matter which scene is actively being edited."
+msgstr ""
+"Теперь, после этих изменений, когда вы нажимаете кнопку Воспроизвести (или "
+"F5), эта сцена будет запускаться независимо от того, какая сцена активно "
+"редактируется в данный момент."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
+msgid ""
+"The project settings dialog provides a lot of options that can be saved to a "
+"project.godot file and shows their default values. If you change a value, a "
+"tick is marked to the left of its name. This means that the property will be "
+"saved to the project.godot file and remembered."
+msgstr ""
+"Диалог настроек проекта предоставляет множество параметров, которые могут "
+"быть сохранены в файле project.godot, и отображает их значения по умолчанию. "
+"Если вы измените значение, появится галочка слева от ее имени. Это означает, "
+"что свойство будет сохранено в файле project.godot и запомнено."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
+msgid ""
+"As a side note, it is also possible to add custom configuration options and "
+"read them in at run-time using the :ref:`ProjectSettings "
+"<class_ProjectSettings>` singleton."
+msgstr ""
+"В качестве примечания, также можно добавить пользовательские параметры "
+"конфигурации и прочитать их во время выполнения, используя одиночку "
+"(singleton) :ref:`ProjectSettings <class_ProjectSettings>`."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
+msgid "To be continued..."
+msgstr "Продолжение следует..."
+
+#: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
+msgid ""
+"This tutorial talked about \"scenes and nodes\", but so far there has been "
+"only *one* scene and *one* node! Don't worry, the next tutorial will expand "
+"on that..."
+msgstr ""
+"В этом уроке рассказывалось о \"сценах и узлах\", но до сих пор была только "
+"*одна* сцена и *один* узел! Не волнуйтесь, следующий урок будет шире..."

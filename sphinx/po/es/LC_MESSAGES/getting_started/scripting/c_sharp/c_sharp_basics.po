@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -358,3 +358,20 @@ msgstr ""
 "mayoría de las cargas de trabajo de scripting general. C# es más rápido, "
 "pero requiere un procedimiento (marshalling) más costoso al comunicarse con "
 "Godot."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
+msgid "Using Nuget Packages in Godot"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+msgid ""
+"`Nuget <https://www.nuget.org/>`_ Packages can be installed and used with "
+"Godot, as with any project. Many IDEs (such as vs code) can add packages "
+"directly. They can also be added manually by adding the package reference in "
+"the .csproj file located in the project root:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:164
+msgid ""
+"Then using the dotnet command line to restore package, in the project root::"
+msgstr ""

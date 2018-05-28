@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:4
 msgid "InputEvent"
-msgstr ""
+msgstr "InputEvent"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:7
 msgid "What is it?"
@@ -33,10 +33,18 @@ msgid ""
 "types of input events. Input events travel through the engine and can be "
 "received in multiple locations, depending on the purpose."
 msgstr ""
+"Administrar inputs (o entradas) es normalmente complejo, sin importar en qué "
+"SO o plataforma. Para aliviar un poco esto se provee un tipo built-in "
+"especial,  :ref:`InputEvent <class_InputEvent>`, este puede ser configurado "
+"para contener varios tipos de eventos. Los eventos de entrada van a través "
+"del motor y pueden ser recibidos en múltiples lugares, dependiendo de su "
+"propósito."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:15
 msgid "Here is a quick example, closing your game if the escape key is hit:"
 msgstr ""
+"Aquí hay un ejemplo rápido de cerrar el juego cuando se presiona la tecla "
+"\"escape\":"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:34
 msgid ""
@@ -48,16 +56,25 @@ msgid ""
 "settings without updating your code, and even build a key mapping feature on "
 "top of it to allow your game to change the key mapping at runtime!"
 msgstr ""
+"Sin embargo, es más limpio y flexible usar la funcionalidad :ref:`InputMap "
+"<class_InputMap>`, la que permite definir acciones de entrada y asignarlas a "
+"diferentes teclas. De este modo, se pueden definir múltiples teclas para la "
+"misma acción (por ejemplo, la tecla escape y el botón start de un gamepad). "
+"Así se puede cambiar el mapeo fácilmente en el proyecto sin necesidad de "
+"modificar el código, incluso se puede crear una funcionalidad de mapeo que "
+"permita cambiar las teclas utilizadas dentro del juego en ejecución."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:40
 msgid ""
 "You can setup your InputMap under **Project > Project Settings > Input Map** "
 "and then use those actions like this:"
 msgstr ""
+"Puedes configurar el InputMap dentro de **Proyecto > Ajustes del Proyecto > "
+"Mapa de Entradas** y luego usa las acciones de este modo:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:60
 msgid "How does it work?"
-msgstr ""
+msgstr "¿Cómo funciona?"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:62
 msgid ""
@@ -68,6 +85,13 @@ msgid ""
 "the default MainLoop implementation, events are fed to it. Godot provides a "
 "function to get the current SceneTree object : **get_tree()**."
 msgstr ""
+"Cada evento de entrada es originado por el usuario/jugador (aunque también "
+"es posible generar un InputEvent y enviarlos al motor, algo útil para "
+"funciones como gestos). El objeto OS de cada plataforma leerá eventos desde "
+"un dispositivo y los transmitirá a MainLoop. Como :ref:`SceneTree "
+"<class_SceneTree>` es la implementación por defecto de MainLoop, los eventos "
+"irán a este. Godot provee una función para obtener el objeto SceneTree "
+"actual: **get_tree()**."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:70
 msgid ""
@@ -76,6 +100,10 @@ msgid ""
 "(the first node of the scene tree). Viewport does quite a lot of stuff with "
 "the received input, in order:"
 msgstr ""
+"Pero SceneTree no sabe qué hacer con el evento, así que lo envía a los "
+"viewports, comenzando por el :ref:`Viewport <class_Viewport>` \"root\" (el "
+"primero nodo del árbol de escenas). Viewport hace varias cosas cuando recibe "
+"una entrada, en este orden:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:77
 msgid ""
@@ -90,6 +118,16 @@ msgid ""
 "<class_Node__unhandled_input>`) is generally a better fit, because it allows "
 "the GUI to intercept the events."
 msgstr ""
+"Primero, la función estándar  :ref:`Node._input() <class_Node__input>`) será "
+"llamada en cualquier nodo que la haya sobreescrito (y que no tenga "
+"deshabilitado el procesamiento de entradas con :ref:`Node."
+"set_process_input() <class_Node_set_process_input>`). Si cualquier función "
+"consume el evento, podrá llamar a :ref:`SceneTree.set_input_as_handled() "
+"<class_SceneTree_set_input_as_handled>` y el evento no se propagará más. "
+"Esto asegura que se puedan filtrar eventos de interes, incluso antes de que "
+"lleguen a la GUI. Para entradas de gameplay, generalmente es mejor utilizar :"
+"ref:`Node._unhandled_input() <class_Node__unhandled_input>`) porque permite "
+"que la GUI intercepte los eventos previamente."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:82
 msgid ""
@@ -107,6 +145,19 @@ msgid ""
 "<class_Control__gui_input>` callback, and whether these events are "
 "propagated further."
 msgstr ""
+"Seguido, intentará transmitir el evento a la GUI y ver si algún Control la "
+"puede recibir. De ser así, el :ref:`Control <class_Control>` será llamado "
+"mediante la función virtual :ref:`Control._gui_input() "
+"<class_Control__gui_input>` y la señal \"input_event\" será emitida (esta "
+"función se puede re-implementar por script en caso utilizar herencia). Si el "
+"Control quiere \"consumir\" el evento, llamará a :ref:`Control."
+"accept_event() <class_Control_accept_event>` y el evento no se propagará "
+"más. Los eventos que no son consumidos, se propagarán **hacia arriba** hasta "
+"sus ancestros. Utiliza la propiedad :ref:`Control.mouse_filter "
+"<class_Control_mouse_filter>` para controlar si un :ref:`Control "
+"<class_Control>` es notificado de eventos de ratón mediante :ref:`Control."
+"_gui_input() <class_Control__gui_input>` y si esos eventos deberán "
+"propagarse más."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:93
 msgid ""
@@ -118,6 +169,14 @@ msgid ""
 "event will not spread any more. The unhandled input callback is ideal for "
 "full-screen gameplay events, so they are not received when a GUI is active."
 msgstr ""
+"Si hasta el momento ningún evento fue consumido, se utilizará la llamada a "
+"`_unhandled_input` si fue redefinida en el script (y no desactivada con :ref:"
+"`Node.set_process_unhandled_input() "
+"<class_Node_set_process_unhandled_input>`). Si alguna función consume el "
+"evento, esta podrá llamar a :ref:`SceneTree.set_input_as_handled() "
+"<class_SceneTree_set_input_as_handled>`, y el evento no se propagará más. La "
+"llamada a _unhandled_input es ideal para eventos de gameplay de pantalla "
+"completa que deben ser ignorados si hay elementos de GUI activos."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:98
 msgid ""
@@ -129,16 +188,23 @@ msgid ""
 "default, but areas do not. This can be configured through :ref:`Area "
 "<class_Area>` properties)."
 msgstr ""
+"Si nadie quiso usar el evento hasta este punto, y una :ref:`Camera "
+"<class_Camera>` está asignada al Viewport, se disparará un rayo al mundo "
+"físico (ray cast, en dirección al click). Si este rayo golpea un objeto, "
+"llamará al la función :ref:`CollisionObject._input_event() "
+"<class_CollisionObject__input_event>` en el objeto físico impactado."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:104
 msgid ""
 "Finally, if the event was unhandled, it will be passed to the next Viewport "
 "in the tree, otherwise it will be ignored."
 msgstr ""
+"Finalmente, si el evento no fue capturado por ningún objeto, se pasará al "
+"siguiente Viewport del árbol o ignorado si no hay ninguno."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:108
 msgid "Anatomy of an InputEvent"
-msgstr ""
+msgstr "Anatomía de un InputEvent"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:110
 msgid ""
@@ -146,20 +212,26 @@ msgid ""
 "not represent anything and only contains some basic information, such as "
 "event ID (which is increased for each event), device index, etc."
 msgstr ""
+":ref:`InputEvent <class_InputEvent>` es un tipo base integrado, no "
+"representa nada y sólo contiene información básica, como el identificador "
+"del evento (ID, el cual es incrementado por cada evento), índice de "
+"dispositivo, etc."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:114
 msgid ""
 "There are several specialised types of InputEvent, described in the table "
 "below:"
 msgstr ""
+"Existen varios tipos de InputEvent especializados, descriptos en la "
+"siguiente tabla:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:117
 msgid "Event"
-msgstr ""
+msgstr "Evento"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:117
 msgid "Type Index"
-msgstr ""
+msgstr "Índice de Tipo"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:117
 msgid "Description"
@@ -167,121 +239,131 @@ msgstr "Descripción"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:119
 msgid ":ref:`InputEvent <class_InputEvent>`"
-msgstr ""
+msgstr ":ref:`InputEvent <class_InputEvent>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:119
 msgid "NONE"
-msgstr ""
+msgstr "NONE"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:119
 msgid "Empty Input Event."
-msgstr ""
+msgstr "Evento de entrada vacío."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid ":ref:`InputEventKey <class_InputEventKey>`"
-msgstr ""
+msgstr ":ref:`InputEventKey <class_InputEventKey>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid "KEY"
-msgstr ""
+msgstr "KEY"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid "Contains a scancode and unicode value, as well as modifiers."
-msgstr ""
+msgstr "Contiene un scancode y un valor unicode, así como modificadores."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:124
 msgid ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
-msgstr ""
+msgstr ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:124
 msgid "MOUSE_BUTTON"
-msgstr ""
+msgstr "MOUSE_BUTTON"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:124
 msgid "Contains click information, such as button, modifiers, etc."
-msgstr ""
+msgstr "Contiene información de click como botón, modificadores, etc."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:127
 msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:127
 msgid "MOUSE_MOTION"
-msgstr ""
+msgstr "MOUSE_MOTION"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:127
 msgid ""
 "Contains motion information, such as relative, absolute positions and speed."
 msgstr ""
+"Contiene información de movimiento, como posiciones relativas y absolutas "
+"así como velocidad."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "JOYSTICK_MOTION"
-msgstr ""
+msgstr "JOYSTICK_MOTION"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Contains Joystick/Joypad analog axis information."
-msgstr ""
+msgstr "Contiene información de ejes análogos de Joystick/Joypad."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:133
 msgid ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:133
 msgid "JOYSTICK_BUTTON"
-msgstr ""
+msgstr "JOYSTICK_BUTTON"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:133
 msgid "Contains Joystick/Joypad button information."
-msgstr ""
+msgstr "Contiene información de botones de Joystick/Joypad."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:136
 msgid ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
-msgstr ""
+msgstr ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:136
 msgid "SCREEN_TOUCH"
-msgstr ""
+msgstr "SCREEN_TOUCH"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:136
+#, fuzzy
 msgid ""
 "Contains multi-touch press/release information. (only available on mobile "
 "devices)"
 msgstr ""
+"Contiene información sobre press/release de multi-touch. (sólo disponible en "
+"dispositivos móviles)"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
-msgstr ""
+msgstr ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid "SCREEN_DRAG"
-msgstr ""
+msgstr "SCREEN_DRAG"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid ""
 "Contains multi-touch drag information. (only available on mobile devices)"
 msgstr ""
+"Contiene información de arrastre multi-touch. (sólo disponible en "
+"dispositivos móviles)"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid ":ref:`InputEventAction <class_InputEventAction>`"
-msgstr ""
+msgstr ":ref:`InputEventAction <class_InputEventAction>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid "SCREEN_ACTION"
-msgstr ""
+msgstr "SCREEN_ACTION"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
+#, fuzzy
 msgid ""
 "Contains a generic action. These events are often generated by the "
 "programmer as feedback. (more on this below)"
 msgstr ""
+"Contiene una acción genérica. Esos eventos son normalmente generados por el "
+"programador como feedback. (más sobre esto debajo)"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:149
 msgid "Actions"
-msgstr ""
+msgstr "Acciones"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:151
 msgid ""
@@ -289,21 +371,28 @@ msgid ""
 "useful because they abstract the input device when programming the game "
 "logic. This allows for:"
 msgstr ""
+"Un InputEvent puede representar o no una acción predefinida. Las acciones "
+"son útiles porque abstraen el dispositivo de entrada utilizado cuando se "
+"programa la lógica del juego. Esto permite:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:155
 msgid ""
 "The same code to work on different devices with different inputs (e.g., "
 "keyboard on PC, Joypad on console)."
 msgstr ""
+"Que el mismo código funcione para diferentes dispositivos con distintos "
+"dispositivos de entrada (por ejemplo, teclado en PC, Joypad en consolas)."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:157
 msgid "Input to be reconfigured at run-time."
-msgstr ""
+msgstr "Las entradas pueden ser reconfiguradas en tiempo de ejecución."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:159
 msgid ""
 "Actions can be created from the Project Settings menu in the Actions tab."
 msgstr ""
+"Las acciones pueden ser creadas en Project Settings, pestaña Mapa de "
+"Entradas."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:162
 msgid ""
@@ -311,6 +400,9 @@ msgid ""
 "<class_InputEvent_is_action>`, :ref:`InputEvent.is_pressed() "
 "<class_InputEvent_is_pressed>` and :ref:`InputEvent <class_InputEvent>`."
 msgstr ""
+"Todos los eventos tienen los métodos :ref:`InputEvent.is_action() "
+"<class_InputEvent_is_action>`, :ref:`InputEvent.is_pressed() "
+"<class_InputEvent_is_pressed>` y :ref:`InputEvent <class_InputEvent>`."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:165
 #, fuzzy
@@ -320,14 +412,14 @@ msgid ""
 "singleton has a method for this: :ref:`Input.parse_input_event() "
 "<class_input_parse_input_event>`. You would normally use it like this:"
 msgstr ""
-"Como alternativa, es posible que quieras que el juego regrese una acción "
-"desde el código (un buen ejemplo de esto es la detección de gestos). La "
-"entrada singleton tiene un método para esto: :ref:`Input.parse_input_event() "
-"<class_input_parse_input_event>`. Normalmente lo usarías así:"
+"Como alternativa, es posible que quieras enviar una acción al juego desde el "
+"código (un ejemplo de esto es la detección de gestos). El singleton Input "
+"tiene un método para esto: :ref:`Input.parse_input_event() "
+"<class_input_parse_input_event>`. Se usa normalmente así:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:189
 msgid "InputMap"
-msgstr ""
+msgstr "InputMap"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:191
 msgid ""
@@ -338,8 +430,8 @@ msgid ""
 "the project settings (project.godot). So any dynamic system of this type "
 "needs to store settings in the way the programmer best sees fit."
 msgstr ""
-"A menudo se desea personalizar y re-mapear la entrada del código. Si todo su "
-"flujo de trabajo depende de las acciones, el singleton :ref:`InputMap "
+"A menudo se desea personalizar y re-mapear la entrada desde código. Si todo "
+"el flujo de trabajo depende de las acciones, el singleton :ref:`InputMap "
 "<class_InputMap>` es ideal para reasignar o crear diferentes acciones en "
 "tiempo de ejecución. Este singleton no se guarda (debe ser modificado "
 "manualmente) y su estado se ejecuta desde la configuración del proyecto "

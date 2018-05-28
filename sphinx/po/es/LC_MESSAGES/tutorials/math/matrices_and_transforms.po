@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:4
 msgid "Matrices and transforms"
-msgstr ""
+msgstr "Matrices y transformaciones"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:7
 msgid "Introduction"
@@ -30,28 +30,36 @@ msgid ""
 "Before reading this tutorial, it is advised to read the previous one about :"
 "ref:`doc_vector_math` as this one is a direct continuation."
 msgstr ""
+"Antes de leer este tutorial, se recomienda leer el anterior sobre :ref:"
+"`doc_vector_math` ya que éste es una continuación directa."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:12
 msgid ""
 "This tutorial will be about *transformations* and will cover a little about "
 "matrices (but not in-depth)."
 msgstr ""
+"Este tutorial será sobre *transformaciones* y cubrirá un poco sobre matrices "
+"(pero no en profundidad)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:15
 msgid ""
 "Transformations are most of the time applied as translation, rotation and "
 "scale so they will be considered as priority here."
 msgstr ""
+"Las transformaciones se aplican la mayor parte del tiempo como traslación, "
+"rotación y escala, por lo que se considerarán prioritarias aquí."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:19
 msgid "Oriented coordinate system (OCS)"
-msgstr ""
+msgstr "Orientación de un sistema de coordenadas (OCS)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
 "Imagine we have a spaceship somewhere in space. In Godot this is easy, just "
 "move the ship somewhere and rotate it:"
 msgstr ""
+"Imagina que tenemos una nave espacial en el espacio. En Godot esto es fácil, "
+"basta con mover la nave hacia algún sitio y rotarla:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
@@ -59,6 +67,9 @@ msgid ""
 "remember, we are grown ups here and don't use angles (plus, angles are not "
 "even that useful when working in 3D)."
 msgstr ""
+"Ok, entonces en 2D esto parece simple, una posición y un ángulo para una "
+"rotación. Pero recuerda, somos adultos aquí y no usamos ángulos (además, los "
+"ángulos ni siquiera son tan útiles cuando se trabaja en 3D)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:30
 msgid ""
@@ -66,22 +77,30 @@ msgid ""
 "it for 2D in a drawing such as Paint.net, Gimp, Photoshop, etc. or in 3D "
 "through a 3D DCC tool such as Blender, Max, Maya, etc."
 msgstr ""
+"Deberíamos darnos cuenta de que en algún momento, alguien *diseñó* esta nave "
+"espacial. Ya sea para 2D en un dibujo como Paint.net, Gimp, Photoshop, etc. "
+"o en 3D a través de una herramienta DCC 3D como Blender, Max, Maya, etc."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:35
 msgid ""
 "When it was designed, it was not rotated. It was designed in its own "
 "*coordinate system*."
 msgstr ""
+"Cuando se diseñó, no estaba rotado. Fue diseñado en su propio *sistema de "
+"coordenadas*."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "This means that the tip of the ship has a coordinate, the fin has another, "
 "etc. Be it in pixels (2D) or vertices (3D)."
 msgstr ""
+"Esto significa que la punta de la nave tiene una coordenada, la aleta tiene "
+"otra, etc. Ya sea en píxeles (2D) o vértices (3D)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid "So, let's recall again that the ship was somewhere in space:"
 msgstr ""
+"Así, recordemos de nuevo que la nave estaba en algún lugar en el espacio:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:47
 msgid ""
@@ -90,6 +109,10 @@ msgid ""
 "was *transformed* from their original position to the new one. This allows "
 "the ship to be displayed where it is."
 msgstr ""
+"¿Cómo llegó a estar allí? ¿Qué la trasladó y la giró desde el lugar en que "
+"fue diseñado a su posición actual? La respuesta es... un **transform**; la "
+"nave fue *transformada* desde su posición original a la nueva. Esto permite "
+"que la nave se muestre donde está."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:52
 msgid ""
@@ -97,6 +120,9 @@ msgid ""
 "this puzzle, we will superimpose the ship's original design position at "
 "their current position:"
 msgstr ""
+"Pero “transformar” es un término muy genérico para describir este proceso. "
+"Para solucionar este puzle, superpondremos la posición original de diseño de "
+"la nave en su posición actual:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:58
 msgid ""
@@ -105,49 +131,67 @@ msgid ""
 "a unit vector pointing towards X positive, a unit vector pointing towards Y "
 "positive and a translation."
 msgstr ""
+"Entonces, podemos ver que el \"espacio diseño\" también ha sido "
+"transformado. ¿Cuál es la manera mejor de representar esta transformación? "
+"Usemos 3 vectores para esto (en 2D): un vector unitario que señala hacia el "
+"eje X positivo, un vector unitario que señala hacia el Y positivo y un "
+"desplazamiento."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:65
 msgid ""
 "Let's call the 3 vectors \"X\", \"Y\" and \"Origin\", and let's also "
 "superimpose them over the ship so it makes more sense:"
 msgstr ""
+"Llamemos los vectores \"X\", \"Y\" y \"Origen\", y los superpongamos en la "
+"nave para que tenga más sentido:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:70
 msgid ""
 "Ok, this is nicer, but it still does not make sense. What do X,Y and Origin "
 "have to do with how the ship got there?"
 msgstr ""
+"Vale, esto es mejor, pero todavía no tiene sentido. ¿Qué tienen que ver los "
+"vectores X, Y y Origin con cómo la nave llegó allí?"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "Well, let's take the point from top tip of the ship as reference:"
-msgstr ""
+msgstr "Bueno, tomemos como referencia el extremo superior de la nave:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:77
 msgid ""
 "And let's apply the following operation to it (and to all the points in the "
 "ship too, but we'll track the top tip as our reference point):"
 msgstr ""
+"Y vamos a aplicarle la siguiente operación (y también a todos los puntos de "
+"la nave, pero rastrearemos la parte superior como nuestro punto de "
+"referencia):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:89
 msgid "Doing this to the selected point will move it back to the center:"
-msgstr ""
+msgstr "Haciendo esto al punto seleccionado lo moverá de nuevo al centro:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:93
 msgid ""
 "This was expected, but then let's do something more interesting. Use the dot "
 "product of X and the point, and add it to the dot product of Y and the point:"
 msgstr ""
+"Esto era de esperar, pero entonces hagamos algo más interesante. Utiliza el "
+"producto de X y el punto, y añádelo al producto de Y y el punto:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:106
 msgid ""
 "Then what we have is.. wait a minute, it's the ship in its design position!"
 msgstr ""
+"Entonces lo que tenemos es... espera un minuto, ¡es la nave en su posición "
+"de diseño!"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:111
 msgid ""
 "How did this black magic happen? The ship was lost in space, and now it's "
 "back home!"
 msgstr ""
+"¿Cómo sucedió esta magia negra? ¡La nave se perdió en el espacio y ahora ha "
+"vuelto a casa!"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:114
 msgid ""

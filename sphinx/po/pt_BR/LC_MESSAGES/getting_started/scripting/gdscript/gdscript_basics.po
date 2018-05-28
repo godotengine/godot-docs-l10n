@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,13 +132,12 @@ msgid "Example of GDScript"
 msgstr "Exemplo de GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:51
-#, fuzzy
 msgid ""
 "Some people can learn better by taking a look at the syntax, so here's a "
 "simple example of how GDScript looks."
 msgstr ""
-"Algumas pessoas aprendem melhor simplesmente olhando para a sintaxe, então "
-"aqui está um simples exemplo de como o GDScript é."
+"Algumas pessoas podem aprender melhor dando uma olhada na sintaxe, então "
+"aqui está um exemplo simples de como o GDScript parece."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:123
 msgid ""
@@ -795,7 +794,6 @@ msgid "Built-in types"
 msgstr "Tipos definidos por padrão"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:332
-#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
@@ -806,9 +804,9 @@ msgid ""
 msgstr ""
 "Tipos definidos por padrão são alocados em pilha. Eles são passados como "
 "valores. Isso significa que uma cópia é criada em cada atribuição ou quando "
-"passadas como argumentos para funções. As únicas exceções são `` Array``s e "
-"`` Dictionaries``, que são passados por referência para serem "
-"compartilhados. (Não `` PoolArray``s como `` PoolByteArray``, porém, esses "
+"passadas como argumentos para funções. As únicas exceções são ``Array``\\ s "
+"e ``Dictionaries``, que são passados por referência para serem "
+"compartilhados. (Não ``PoolArray``\\ s como ``PoolByteArray``, porém, esses "
 "são passados como valores também, então considere isso ao decidir qual usar!)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:339
@@ -1056,7 +1054,6 @@ msgstr ""
 "podem ser negativos como em Python, para contar do final."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:476
-#, fuzzy
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
@@ -1067,11 +1064,11 @@ msgid ""
 msgstr ""
 "Os arrays em GDSCript são alocados linearmente na memória para aumentar sua "
 "velocidade. Arrays muito grandes (mais de dezenas de milhares de elementos) "
-"podem, no entanto, causar fragmentação de memória. Se essa for uma "
-"preocupação tipos especiais de arrays estão disponíveis. Estes aceitam "
-"somente um tipo de dado. Eles evitam fragmentação e também usam menos "
-"memória mas são atômicos e tendem a rodar mais devagar que arrays genéricos. "
-"Eles , portanto, só são recomendados para conjuntos de dados muito grandes:"
+"podem, no entanto, causar fragmentação de memória. Estes aceitam apenas um "
+"único tipo de dados. Eles evitam a fragmentação de memória e também usam "
+"menos memória, mas são atômicos e tendem a ser mais lentos que os arrays "
+"genéricos. Portanto, eles são recomendados somente para grandes conjuntos de "
+"dados:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:483
 msgid ""
@@ -1536,7 +1533,6 @@ msgid "Classes"
 msgstr "Classes"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
-#, fuzzy
 msgid ""
 "By default, the body of a script file is an unnamed class and it can only be "
 "referenced externally as a resource or file. Class syntax is meant to be "
@@ -1546,14 +1542,14 @@ msgid ""
 "knowing). In the same way, member variables (including arrays and "
 "dictionaries) are initialized every time an instance is created."
 msgstr ""
-"Por padrão, o corpo de um arquivo de script é uma classe anônima e só pode "
-"ser referenciada externamente como um recurso ou um arquivo. A sintaxe de "
-"classes é para ser muito compacta e só pode conter variáveis e funções "
-"membros. Funções estáticas são permitidas, mas isso não vale para membros "
-"estáticos (isso é feito pensando na segurança com threads, já que scripts "
-"podem ser inicializados em threads diferentes sem o usuário saber). Da mesma "
-"forma, variáveis membros (incluindo arrays e dicionários) são inicializadas "
-"toda vez que uma instância é criada."
+"Por padrão, o corpo de um arquivo de script é uma classe sem nome e só pode "
+"ser referenciado externamente como um recurso ou arquivo. A sintaxe de "
+"classe é feita para ser compacta e pode conter apenas variáveis ou funções "
+"de membros. Funções estáticas são permitidas, mas não membros estáticos "
+"(isso é no espírito da segurança do encadeamento, já que os scripts podem "
+"ser inicializados em encadeamentos separados sem que o usuário saiba). Da "
+"mesma forma, as variáveis de membro (incluindo matrizes e dicionários) são "
+"inicializadas sempre que uma instância é criada."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:876
 msgid "Below is an example of a class file."
@@ -1726,13 +1722,12 @@ msgstr ""
 "exportação ``int, FLAGS``, eles podem ser configurados a partir do editor:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1113
-#, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax:"
 msgstr ""
-"Restringir os sinalizadores a uma certa quantidade de sinalizadores nomeados "
-"também é possível. A sintaxe é muito similar à de enumeração:"
+"Restringir as flags a um certo número de flags nomeadas também é possível. A "
+"sintaxe é semelhante à sintaxe de enumeração:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1121
 msgid ""
@@ -1853,7 +1848,6 @@ msgid "Memory management"
 msgstr "Gerenciamento de memória"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1244
-#, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -1863,13 +1857,13 @@ msgid ""
 "cycles that can't be freed, a ``weakref`` function is provided for creating "
 "weak references."
 msgstr ""
-"Se uma classe herda de :ref:`class_Reference`, então, instâncias serão "
-"liberadas quando não estão mais em uso. Não existe coletor de lixo, apenas "
-"contador de referências. Por padrão, todas as classes que não definem "
-"herança extendem **Reference**. Se isto não é desejável, então uma classe "
-"deve herdar :ref:`class_Object` manualmente e precisa chamar instance."
-"free(). Para evitar ciclos de referências que não podem ser liberadas, uma "
-"função ``weakref`` é providenciada para criar fracas referências."
+"Se uma classe herdar de: ref: `class_Reference`, as instâncias serão "
+"liberadas quando não estiverem mais em uso. Nenhum coletor de lixo existe, "
+"apenas a contagem de referência. Por padrão, todas as classes que não "
+"definem herança se estendem **Reference**. Se isto não for desejado, então "
+"uma classe deve herdar: ref: `class_Object` manualmente e deve chamar "
+"instance.free (). Para evitar ciclos de referência que não podem ser "
+"liberados, uma função ``weakref`` é fornecida para criar referências fracas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1252
 msgid ""
@@ -1894,15 +1888,14 @@ msgstr ""
 "palavra `signal`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1270
-#, fuzzy
 msgid ""
 "These signals can be connected in the editor or from code like regular "
 "signals. Take the instance of a class where the signal was declared and "
 "connect it to the method of another instance:"
 msgstr ""
-"Esses sinais, assim como sinais comuns, podem ser conectados dentro do "
-"editor ou por meio de código. Utilize o exemplo da instância da classe, onde "
-"o sinal foi declarado e conecte ao método de outra instância:"
+"Esses sinais podem ser conectados no editor ou a partir do código, como "
+"sinais regulares. Tome a instância de uma classe onde o sinal foi declarado "
+"e conecte-o ao método de outra instância:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1286
 msgid ""
@@ -1913,13 +1906,12 @@ msgstr ""
 "personalizados:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1294
-#, fuzzy
 msgid ""
 "This is useful when a signal from many objects is connected to a single "
 "callback and the sender must be identified:"
 msgstr ""
-"Isto é extremamente útil quando o sinal de vários objetos está conectado a "
-"um único retorno e o remetente precisa ser identificado:"
+"Isso é útil quando um sinal de muitos objetos está conectado a um único "
+"retorno de chamada e o remetente deve ser identificado:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
 msgid ""
@@ -1975,24 +1967,34 @@ msgstr ""
 "``yield`` pode aceitar até dois parâmetros, um objeto e um sinal. Quando um "
 "sinal é recebido, a execução irá recomeçar. Abaixo temos alguns exemplos:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1392
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
+msgid ""
+"Coroutines themselves use the ``completed`` signal when they transition into "
+"an invalid state, for example:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+msgid ""
+"``my_func`` will only continue execution once both the buttons are pressed."
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
 msgid "Onready keyword"
 msgstr "Palavra-chave Onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1394
-#, fuzzy
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1409
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
 "entering the active scene tree, the sub-nodes can only be obtained when a "
 "call to Node._ready() is made."
 msgstr ""
-"Ao utilizar nodes(nós), é comum desejar manter referências de partes da cena "
-"em uma variável. Já que, cenas são apenas justificáveis para ser "
-"configuradas ao entrarem na árvore de cenas ativas, assim, os sub-nodes(sub-"
-"nós) só podem ser obtidos quando uma chamada à Node._Ready() é feita."
+"Ao usar nós, é comum desejar manter referências a partes da cena em uma "
+"variável. Como as cenas só podem ser configuradas ao entrar na árvore da "
+"cena ativa, os subnós só podem ser obtidos quando uma chamada para Node."
+"_ready() é feita."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1421
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2004,11 +2006,11 @@ msgstr ""
 "``onready``, que atrasa a inicialização da variável de um membro até que "
 "until_ready é chamado. Pode ser colocado acima do código apenas uma linha:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1416
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
 msgid "Assert keyword"
 msgstr "Palavra-chave assert"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1418
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."

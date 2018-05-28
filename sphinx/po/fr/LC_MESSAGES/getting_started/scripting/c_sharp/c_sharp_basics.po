@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -365,3 +365,21 @@ msgstr ""
 "d'utilisation. GDScript est probablement assez rapide pour la plupart des "
 "charges de travail des script en général. C# est plus rapide, mais nécessite "
 "une transformation des objets coûteuse lorsqu'on parle à Godot."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
+#, fuzzy
+msgid "Using Nuget Packages in Godot"
+msgstr "Utilisation de transformation 3D dans Godot"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
+msgid ""
+"`Nuget <https://www.nuget.org/>`_ Packages can be installed and used with "
+"Godot, as with any project. Many IDEs (such as vs code) can add packages "
+"directly. They can also be added manually by adding the package reference in "
+"the .csproj file located in the project root:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:164
+msgid ""
+"Then using the dotnet command line to restore package, in the project root::"
+msgstr ""

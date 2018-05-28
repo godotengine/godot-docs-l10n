@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:4
 msgid "Exporting for the Web"
-msgstr ""
+msgstr "Exportar para la Web"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
 msgid ""
@@ -189,6 +189,10 @@ msgid ""
 "server, including a default HTML page for presentation. A custom HTML file "
 "can be used, see :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Exportar para la web genera varios archivos para ser servidos desde un "
+"servidor web, incluyendo una página HTML por defecto para la presentación. "
+"Se puede utilizar un archivo HTML personalizado, visita :ref:"
+"`doc_customizing_html5_shell`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:96
 msgid ""
@@ -269,6 +273,13 @@ msgid ""
 "usually opened with the F12 key, which often shows more information, "
 "including WebGL errors."
 msgstr ""
+"Al activar **Exportar con depuración** al exportar, además de habilitar "
+"varias funciones de depuración del motor, se mostrará una salida de "
+"depuración debajo del canvas cuando se utilice la página HTML "
+"predeterminada, mostrando errores de JavaScript y del motor. También puedes "
+"usar la consola de desarrollo integrada en el navegador, normalmente se abre "
+"con la tecla F12, que a menudo muestra más información, incluyendo errores "
+"WebGL."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
 msgid "Calling JavaScript from script"

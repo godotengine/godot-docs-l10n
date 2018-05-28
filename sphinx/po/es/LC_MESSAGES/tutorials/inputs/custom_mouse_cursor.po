@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
 msgid "Customizing mouse cursor"
-msgstr ""
+msgstr "Personalizando el puntero del mouse"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:6
 msgid ""
@@ -27,28 +27,35 @@ msgid ""
 "order to suit the overall design. There are two ways to customize the mouse "
 "cursor:"
 msgstr ""
+"Puedes querer cambiar la apariencia del puntero del mouse en tu juego para "
+"ajustarse al diseño. Hay dos modos de hacer esto:"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:8
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:14
 msgid "Using project settings"
-msgstr ""
+msgstr "Usando Ajustes del Proyecto"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:9
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:26
 msgid "Using a script"
-msgstr ""
+msgstr "Utilizando un script"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:11
 msgid ""
 "Using project settings is a simpler but more limited way to customize the "
 "mouse cursor. The second way is more customizable but involves scripting."
 msgstr ""
+"Usar Ajustes del Proyecto es un modo simple, aunque limitado, de "
+"personalizar el puntero del mouse. El segundo modo da más opciones pero "
+"implica scripting."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:16
 msgid ""
 "Open project settings, go to Display>Mouse Cursor. You will see Custom Image "
 "and Custom Image Hotspot."
 msgstr ""
+"Abre Ajustes del Proyecto, ve a Display>Mouse Cursor. Allí verás Custom "
+"Image y Custom Image Hotspot."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:20
 msgid ""
@@ -56,30 +63,37 @@ msgid ""
 "cursor. Custom Hotspot is the point in the image that you would like to use "
 "as the cursor's detection point."
 msgstr ""
+"Custom Image es la imagen que se desea asignar como puntero del mouse. "
+"Custom Hotspot es el punto en la imagen que quieres que se utilice como "
+"punto de detección del puntero."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:23
 msgid "The custom image **must** be less than 256x256."
-msgstr ""
+msgstr "La imagen personalizada **debe** ser menor a 256x256."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:28
 msgid "Create a Node and attach the following script."
-msgstr ""
+msgstr "Crea un Node y anéxale el siguiente script."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:64
 msgid ""
 "Check :ref:`Input.set_custom_mouse_cursor() "
 "<class_Input_set_custom_mouse_cursor>`."
 msgstr ""
+"Revisa :ref:`Input.set_custom_mouse_cursor() "
+"<class_Input_set_custom_mouse_cursor>`."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:68
 msgid "Demo project"
-msgstr ""
+msgstr "Proyecto de ejemplo"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:70
 msgid ""
 "Find out more by studying this demo project: https://github.com/"
 "guilhermefelipecgs/custom_hardware_cursor"
 msgstr ""
+"Aprende más estudiando este proyecto de ejemplo: https://github.com/"
+"guilhermefelipecgs/custom_hardware_cursor"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:74
 msgid "Cursor list"
@@ -91,3 +105,6 @@ msgid ""
 "**CursorShape** enum), there are multiple mouse cursors you can define. "
 "Which ones you want to use depends on your use case."
 msgstr ""
+"Como se indica en :ref:`Input <class_Input>` class (see the **CursorShape** "
+"enum), hay múltiples punteros de mouse que se pueden definir. El que quieras "
+"usar dependerá de cada caso."

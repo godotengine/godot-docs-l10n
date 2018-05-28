@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-18 14:12+0200\n"
+"POT-Creation-Date: 2018-05-28 10:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -446,6 +446,15 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
+"Les deux approches ne sont pas toujours compatibles. Puisqu'un conteneur "
+"contrôle ses enfants, vous ne pouvez pas utiliser le menu de mise en page "
+"sur eux. Chaque conteneur ayant un effet spécifique, vous aurez peut-être "
+"d'en emboîter plusieurs pour obtenir une interface fonctionnelle. Avec "
+"l'approche de mise en page, vous travaillez sur l'enfant à partir du bas "
+"vers le haut. Étant donné que vous n'insérez pas de conteneurs "
+"supplémentaires dans la scène, vous obtiendrez des hiérarchies plus nettes, "
+"mais il sera plus difficile de disposer les éléments en rangée, en colonne, "
+"grille, etc."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:176
 msgid ""
@@ -469,14 +478,19 @@ msgid ""
 "Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
 "change the reference point of the margins."
 msgstr ""
+"Les nœuds de contrôles ont une position et une taille, mais ils ont "
+"également des ancrages et des marges. Les ancrages définissent l'origine, ou "
+"le point de référence, pour les cotés Gauche, Haut, Droit et Bas du nœud. "
+"Modifier n'importe lequel valeur des 4 ancrages pour modifier le point de "
+"référence des marges."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:189
 msgid "The anchor property"
-msgstr ""
+msgstr "La propriété d'ancrage"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "How to change the anchor"
-msgstr ""
+msgstr "Comment modifier l'ancrage"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:194
 msgid ""
@@ -487,14 +501,21 @@ msgid ""
 "inspector’s 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
+"Comme toutes les propriétés, vous pouvez modifier les 4 points d'ancrage "
+"dans l'Inspecteur, mais il ne s'agit pas de la façon la plus conviviale. "
+"Lorsque vous sélectionnez un nœud de contrôle, le menu de mise en page "
+"s'affiche au-dessus de la vue, dans la barre d'outils. Il vous donne une "
+"liste d'icônes pour paramétrer les 4 ancrages en un seul clic, au lieu "
+"d'utiliser les 4 propriétés dans l'Inspecteur. Le menu de mise en page "
+"s'affichera seulement lorsque vous sélectionnez un nœud de contrôle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:203
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "Le menu de mise en page dans la vue"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "Anchors are relative to the parent container"
-msgstr ""
+msgstr "Les ancrages sont relatifs à leur conteneur parent"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:208
 msgid ""
@@ -506,16 +527,27 @@ msgid ""
 "position in pixels, while anchors are relative to the parent container's "
 "size."
 msgstr ""
+"Chaque ancrage est une valeur qui se situe entre 0 et 1. Pour les ancrages "
+"du haut et de gauche, une valeur de 0 signifie que, sans aucune marge, les "
+"bords du nœud s'aligneront avec les bords de gauche et de haut de son "
+"parent. Pour les bords droit et bas, une valeur de 1 signifie qu'ils "
+"s'aligneront avec les bords de droite et du bas de son conteneur parent. "
+"Dans une autre ordre d'idée, les marges représentent une distance jusqu'au "
+"position d'un ancrage en pixels, tandis que les ancrages sont relatifs à la "
+"taille de leur conteneur parent."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:218
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
+"Les marges sont relatives à la position de l'ancrage, ce qui est relatif aux "
+"ancrages. En pratique, vous allez laisser souvent le conteneur mettre à jour "
+"les marges pour vous"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:223
 msgid "Margins change with the anchor"
-msgstr ""
+msgstr "Les marges changent avec l'ancrage"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:225
 msgid ""
@@ -526,10 +558,18 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
+"Les marges se mettent à jour automatiquement lorsque vous déplacez ou "
+"redimensionnez un nœud de contrôle. Elles représentent la distance des bords "
+"du nœud de contrôle à son ancrage, qui est relatif au nœud de contrôle "
+"parent ou au conteneur. C'est pourquoi vos nœuds de contrôle devraient "
+"toujours se trouver à l'intérieur d'un conteneur, comme nous le verrons dans "
+"un instant. S'il n'y a pas de parent, les marges seront relatives au "
+"rectangle de délimitation du nœud, défini dans la section Rect, dans "
+"l'inspecteur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:235
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
-msgstr ""
+msgstr "Marges sur un CenterContainer réglé sur l'ancre \"Full Rect\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:237
 msgid ""
@@ -540,10 +580,20 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"Essayez de changer les ancres ou d'imbriquer vos nœuds de contrôle à "
+"l'intérieur des conteneurs : les marges se mettront à jour. Vous aurez "
+"rarement besoin d'éditer les marges manuellement. Essayez toujours de "
+"trouver un conteneur pour vous aider en premier; Godot est fourni avec des "
+"nœuds pour résoudre tous les cas courants pour vous. Besoin d'ajouter de "
+"l'espace entre une barre de vie et le bord de l'écran ? Utilisez le "
+"MarginContainer. Vous voulez construire un menu vertical ? Utilisez le "
+"VBoxContainer. Plus d'informations à ce sujet ci-dessous."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
+"Utilisez les balises de taille pour modifier la façon dont les éléments de "
+"l'interface utilisateur remplissent l'espace disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:248
 msgid ""
@@ -555,10 +605,21 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"Chaque nœud de contrôle a des drapeaux de taille. Ils indiquent aux "
+"conteneurs comment les éléments de l'interface utilisateur doivent être mis "
+"à l'échelle. Si vous ajoutez le drapeau \"Fill\" à la propriété Horizontal "
+"ou Vertical, la boîte de délimitation du nœud prendra tout l'espace qu'elle "
+"peut, mais elle respectera ses noeuds frères et conservera sa taille. S'il y "
+"a 3 nœuds TextureRect dans un HBoxContainer, avec les drapeaux \"Fill\" sur "
+"les deux axes, ils occuperont chacun jusqu'à un tiers de l'espace "
+"disponible, mais pas plus. Le conteneur va prendre le contrôle du nœud et le "
+"redimensionner automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:258
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
 msgstr ""
+"3 éléments d'interface utilisateur dans un HBoxContainer, qui s'alignent "
+"horizontalement"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:260
 msgid ""
@@ -566,29 +627,45 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"Le drapeau \"Expand\" permet à l'élément de l'interface de prendre tout "
+"l'espace qu'il peut, et de pousser ses éléments frères. Son rectangle "
+"délimitant grandira jusqu'aux bords de son parent, ou jusqu'à ce qu'il soit "
+"bloqué par un autre nœud d'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:266
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
 msgstr ""
+"Le même exemple que ci-dessus, mais le nœud central a le drapeau de taille "
+"\"Expand\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"Vous aurez besoin d'un peu de pratique pour comprendre les balises de "
+"taille, car leur effet peut assez varier en fonction de la façon dont vous "
+"configurez votre interface."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:273
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "Arrangez automatiquement les nœuds de contrôle avec les conteneurs"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
+#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor so you can see the effect instantly."
 msgstr ""
+"Les conteneurs rangent automatiquement tous les noeuds enfants Control, y "
+"compris les autres conteneurs en rangées, colonnes et plus encore. Utilisez-"
+"les pour ajouter du remplissage autour de votre interface ou des nœuds "
+"centraux dans leurs rectangles de délimitation. Tous les conteneurs intégrés "
+"sont mis à jour dans l'éditeur pour que vous puissiez voir l'effet "
+"instantanément."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""
@@ -596,33 +673,46 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"Les conteneurs ont quelques propriétés spéciales pour contrôler la façon "
+"dont ils organisent les éléments de l'interface utilisateur. Pour les "
+"modifier, naviguez jusqu'à la section personnalisée Constants dans "
+"l'inspecteur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "Les 5 conteneurs les plus utiles"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:288
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"Si vous créez des outils, vous pourriez avoir besoin de tous les conteneurs. "
+"Mais pour la plupart des jeux, une poignée suffira :"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid "MarginContainer, to add margins around part of the UI"
 msgstr ""
+"MarginContainer, pour ajouter des marges autour d'une partie de l'interface "
+"utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
 msgid "CenterContainer, to center its children in its bounding box"
 msgstr ""
+"CenterContainer, pour centrer ses enfants dans sa boîte de délimitation"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
 msgstr ""
+"VboxContainer et HboxContainer, pour organiser les éléments de l'interface "
+"utilisateur en lignes ou en colonnes"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr ""
+"GridContainer, pour disposer les nœuds Control dans un motif en forme de "
+"grille"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -632,11 +722,19 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer centre tous ses enfants à l'intérieur de son rectangle "
+"délimitant. C'est celui que vous utilisez généralement pour les écrans de "
+"titre, si vous voulez que les options restent au centre de la fenêtre "
+"d'affichage. Comme il centre tout, vous aurez souvent besoin d'un seul "
+"conteneur imbriqué à l'intérieur. Si vous utilisez des textures et des "
+"boutons à la place, ils s'empileront."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:305
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
+"CenterContainer en action. La barre de vie se centre à l'intérieur de son "
+"conteneur parent."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
@@ -647,10 +745,19 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"Le MarginContainer ajoute une marge de n'importe quel côté des nœuds "
+"enfants. Ajoutez un MarginContainer qui englobe l'ensemble de la fenêtre "
+"pour ajouter une séparation entre le bord de la fenêtre et l'interface "
+"utilisateur. Vous pouvez définir une marge en haut, à gauche, à droite, ou "
+"en bas du conteneur. Pas besoin de cocher la case : cliquez sur le champ de "
+"valeur correspondant et tapez n'importe quel nombre. Il s'activera "
+"automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"Le MarginContainer ajoute une marge de 40px autour de l'interface "
+"utilisateur du jeu"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:319
 msgid ""
@@ -661,10 +768,18 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"Il y a deux BoxContainers : VBoxContainer et HBoxContainer. Vous ne pouvez "
+"pas ajouter le nœud BoxContainer lui-même, car il s'agit d'une classe "
+"d'aide, mais vous pouvez utiliser des conteneurs de boîtes verticaux et "
+"horizontaux. Ils organisent les nœuds en lignes ou en colonnes. Utilisez-les "
+"pour aligner des articles dans une boutique, ou pour construire des grilles "
+"complexes avec des lignes et des colonnes de différentes tailles, car vous "
+"pouvez les emboîter à votre guise."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
 msgid "The HBoxContainer horizontally aligns UI elements"
 msgstr ""
+"Le HBoxContainer aligne horizontalement les éléments d'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:330
 msgid ""
@@ -675,6 +790,13 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer organise automatiquement ses enfants dans une colonne. Il les "
+"place les un après les autres. Si vous utilisez le paramètre de séparation, "
+"il laissera un espace entre ses enfants. HBoxContainer organise les éléments "
+"d'interface utilisateur dans une rangée. Il est similaire au VBoxContainer, "
+"avec une méthode supplémentaire ``add_spacer`` pour ajouter un noeud de "
+"contrôle spacer avant son premier enfant ou après son dernier enfant, à "
+"partir d'un script."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:337
 msgid ""
@@ -687,10 +809,21 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"Le GridContainer vous permet d'organiser les éléments de l'interface "
+"utilisateur selon un motif en forme de grille. Vous ne pouvez contrôler que "
+"le nombre de colonnes qu'il a, et il fixera le nombre de lignes par lui-"
+"même, en se basant sur le nombre de ses enfants. Si vous avez neuf enfants "
+"et trois colonnes, vous aurez 9÷3 = 3 lignes. Ajoutez trois enfants de plus "
+"et vous aurez quatre rangées. En d'autres termes, il créera de nouvelles "
+"lignes au fur et à mesure que vous ajouterez des textures et des boutons. "
+"Comme les conteneurs box, il a deux propriétés pour définir la séparation "
+"verticale et horizontale entre les lignes et les colonnes respectivement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:348
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr ""
+"Un GridContainer avec 2 colonnes. Il dimensionne chaque colonne "
+"automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
 msgid ""
@@ -698,3 +831,7 @@ msgid ""
 "design more advanced interface, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
+"Le système d'interface utilisatuer de Godot est complexe et a beaucoup plus "
+"à offrir. Pour apprendre à concevoir une interface plus avancée, rendez-vous "
+"dans la section :ref:`GUI section <toc-learn-features-gui>` de la "
+"documentation."
