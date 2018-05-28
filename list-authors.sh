@@ -7,7 +7,13 @@ fi
 
 commit=$1
 
+rm -f authors.txt langs.txt
+
 for file in weblate/*.po; do
-  echo -e "\n* $file:\n"
-  git log $commit..HEAD --date=format:"%Y" --format="%aN <%aE>, %ad." $file | grep -v 'anonymous' | sort -u
+  authors=$(git log $commit..HEAD --date=format:"%Y" --format="%aN <%aE>, %ad." $file | grep -v 'anonymous' | sort -u)
+  if [ ! -z "$authors" ]; then
+    echo "$file" >> langs.txt
+    echo -e "\n* $file:\n" >> authors.txt
+    echo "$authors" >> authors.txt
+  fi
 done
