@@ -4,6 +4,7 @@
 #
 # Antoine Carrier <ac.g392@gmail.com>, 2018.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
+# Bresere <berserk172.cl215@gmail.com>, 2018.
 # Cindy Dallaire <c.dallaire93@gmail.com>, 2018.
 # didier-v <didierv@mac.com>, 2018.
 # Eric Chirnside <echirnside@gmail.com>, 2018.
@@ -34,8 +35,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-05-28 10:49+0200\n"
-"PO-Revision-Date: 2018-05-28 08:21+0000\n"
-"Last-Translator: keltwookie <keltwookie@protonmail.com>\n"
+"PO-Revision-Date: 2018-06-06 07:06+0000\n"
+"Last-Translator: Rémi Verschelde <akien@godotengine.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -43,11 +44,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.0\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr "Documentation de Godot – branche *master*"
+msgstr "Documentation Godot – Branche *master*"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -7963,6 +7964,7 @@ msgstr ""
 "la police. Notre compteur fonctionne maintenant comme prévu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:317
+#, fuzzy
 msgid ""
 "While we are at it, let's make it so the ``Counters`` snap to the right edge "
 "of the viewport. To achieve this we will set the ``Bars`` container to "
@@ -7971,6 +7973,13 @@ msgid ""
 "check the ``Expand`` value. The ``Bars`` node should resize and push the "
 "counter to the rightmost of the screen."
 msgstr ""
+"Pendant que nous y sommes, faisons en sorte que les \"Counters\" "
+"s'enclenchent sur le bord droit de la fenêtre. Pour ce faire, nous allons "
+"régler le conteneur ``Bars`` pour qu'il se dilate et prenne tout l'espace "
+"horizontal. Sélectionnez le nœud \"Bars \" et faites défiler vers le bas "
+"jusqu'à la catégorie \" Size Flags \". Dans la catégorie ``Horizontal``, "
+"cochez la valeur ``Expand``. Le nœud ``Bars`` devrait se redimensionner et "
+"pousser le compteur à l'extrême droite de l'écran."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:326
 msgid ""
@@ -8025,8 +8034,17 @@ msgid ""
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
+"Une scène est une arborescence de nœuds. Le nœud le plus haut est la "
+"**racine** de l'arbre, et les enfants au bas de la hiérarchie sont des "
+"**feuilles**. Tout nœud autre que la racine avec un enfant ou plus est une "
+"**branche**. Nous pouvons encapsuler les branches de nœuds dans des scènes "
+"séparées, ou les charger et les fusionner à partir d'autres scènes dans la "
+"scène active. Cliquez avec le bouton droit de la souris sur n'importe quel "
+"nœud du dock Scène et sélectionnez \" Enregistrer la branche comme scène \" "
+"ou \" Fusionner à partir de la scène \"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:355
+#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -8036,16 +8054,26 @@ msgid ""
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
+"Ensuite, sélectionnez le nœud ``Counter`` et faites de même. Clic droit, "
+"``Save Branch as Scene``, et l'enregistrer en tant que ``Counter.tscn``. Une "
+"nouvelle icône de modification de scène apparaît à droite des nœuds dans "
+"l'arborescence des scènes. Cliquez sur celui à côté de ``Bar`` pour ouvrir "
+"la scène correspondante. Redimensionner le nœud ``Bar`` pour que sa boîte de "
+"délimitation s'adapte à son contenu. Comme nous avons nommé et placé les "
+"nœuds Control, nous sommes prêts à hériter de ce modèle et à créer la barre "
+"de vie. C'est la même chose pour \"Counter\"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:365
 msgid "With no extra changes, our Bar is ready to use"
 msgstr "Sans aucun autre changement, votre barre est prête à être utilisé"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:368
+#, fuzzy
 msgid "Use Scene Inheritance to create the remaining elements"
-msgstr ""
+msgstr "Utiliser l'héritage de scène pour créer les éléments restants."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
+#, fuzzy
 msgid ""
 "We need two bars that work the same way: they should feature a label on the "
 "left, with some value, and a horizontal gauge on the right. The only "
@@ -8053,14 +8081,25 @@ msgid ""
 "called EP and is yellow. Godot gives us a powerful tool to create a common "
 "base to reuse for all bars in the game: **inherited scenes**."
 msgstr ""
+"Nous avons besoin de deux barres qui fonctionnent de la même manière : Elles "
+"devraient comporter une étiquette à gauche, avec une certaine valeur, et une "
+"jauge horizontale à droite. La seule différence est que l'un a l'étiquette "
+"HP et est vert, tandis que l'autre s'appelle EP et est jaune. Godot nous "
+"donne un outil puissant pour créer une base commune à réutiliser pour toutes "
+"les barres du jeu : des **scènes héritées**."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:378
+#, fuzzy
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
 msgstr ""
+"Les scènes héritées nous aident à garder la scène de l'interface graphique "
+"propre. En fin de compte, nous n'aurons que des conteneurs et un nœud pour "
+"chaque composant de l'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:381
+#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -8070,36 +8109,63 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
+"Sur une scène héritée, vous pouvez changer n'importe quelle propriété de "
+"chaque nœud de l'inspecteur, à part son nom. Si vous modifiez et enregistrez "
+"la scène mère, toutes les scènes héritées sont mises à jour pour refléter "
+"les changements. Si vous changez une valeur dans la scène héritée, elle "
+"remplacera toujours la propriété du parent. C'est utile pour les interfaces "
+"utilisateur car elles nécessitent souvent des variations des mêmes éléments. "
+"En général, dans la conception de l'interface utilisateur, les boutons, les "
+"panneaux, etc. partagent un style de base et des interactions communes. Nous "
+"ne voulons pas le copier manuellement dans toutes les variations."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:390
+#, fuzzy
 msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
+"Une icône de rechargement apparaîtra à côté des propriétés que vous "
+"remplacez. Cliquez dessus pour réinitialiser la valeur à la valeur par "
+"défaut de la scène mère."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
+#, fuzzy
 msgid ""
 "Think of scene inheritance like the node tree, or the ``extends`` keyword in "
 "GDScript. An inherited scene does everything like its parent, but you can "
 "override properties, resources and add extra nodes and scripts to extend its "
 "functionality."
 msgstr ""
+"Pensez à l'héritage de scène comme l'arbre des nœuds, ou le mot clé "
+"``extends`` dans GDScript. Une scène héritée fait tout comme son parent, "
+"mais vous pouvez remplacer les propriétés, les ressources et ajouter des "
+"nœuds et des scripts supplémentaires pour étendre ses fonctionnalités."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:401
+#, fuzzy
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr ""
+msgstr "Hériter de la scène Bar pour construire la barre de vie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:403
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
 "like your ``Bar``, but with all nodes except the root in grey. Press ``Meta"
 "+S`` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
+"Allez dans ``Scene -> New Inherited Scene`` pour créer un nouveau type de "
+"barre.  Sélectionnez la scène Bar et ouvrez-la. Vous devriez voir un nouvel "
+"onglet[unsaved], c'est comme votre ``Bar``, mais avec tous les nœuds excepté "
+"la racine qui est en gris. Appuyez sur ``Meta+S`` pour sauvegarder la "
+"nouvelle scène héritée et nommez-la ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:411
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
+"Vous ne pouvez pas renommer les nœuds grisés. Cela signifie qu'ils ont une "
+"scène parente"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:413
 msgid ""
@@ -8110,6 +8176,13 @@ msgid ""
 "works with all inherited scenes. Like our ``TextureProgress`` and ``Number`` "
 "nodes."
 msgstr ""
+"Renommez d'abord le nœud racine ou le nœud de niveau supérieur en "
+"``LifeBar``. Nous voulons toujours que la racine décrive exactement ce "
+"qu'est ce composant de l'interface utilisateur. Le nom différencie cette "
+"barre de l'``EnergyBar`` que nous allons créer. Les autres nœuds à "
+"l'intérieur de la scène doivent décrire la structure du composant en termes "
+"généraux, de sorte qu'il fonctionne avec toutes les scènes héritées. Comme "
+"nos nœuds ``TextureProgress`` et ``Number``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:422
 msgid ""
@@ -8121,6 +8194,14 @@ msgid ""
 "we create an inherited scene and change the name of the top level node, "
 "we're doing the same thing."
 msgstr ""
+"Si vous avez déjà fait du design web, c'est le même esprit que de travailler "
+"avec CSS : vous créez une classe de base, et ajoutez des variations avec des "
+"classes de modificateurs. À partir d'une classe de bouton de base, vous "
+"aurez des variations de boutons vert et rouge pour que l'utilisateur accepte "
+"et refuse les propositions. La nouvelle classe contient le nom de l'élément "
+"parent et un mot-clé supplémentaire pour expliquer comment il le modifie. "
+"Lorsque nous créons une scène héritée et changeons le nom du nœud de niveau "
+"supérieur, nous faisons la même chose."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:431
 msgid "Design the EnergyBar"
@@ -8131,6 +8212,8 @@ msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
 msgstr ""
+"Nous avons déjà mis en place le design de la ``LifeBar`` avec la scène "
+"principale ``Bar``. Nous avons maintenant besoin d'``EnergyBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid ""
@@ -8139,16 +8222,27 @@ msgid ""
 "``EnergyBar``. Save the new scene as ``EnergyBar.tscn``. We need to replace "
 "the HP texture with EP one, and to change the textures on the gauge."
 msgstr ""
+"Créons une nouvelle scène héritée, sélectionnons à nouveau la scène ``Bar."
+"tscn`` et ouvrons-la. Double-cliquez sur le nœud racine ``Bar`` et renommez-"
+"le en ``EnergyBar``. Sauvegardez la nouvelle scène sous le nom ``EnergyBar."
+"tscn``. Nous devons remplacer la texture HP par une texture EP, et changer "
+"les textures sur la jauge."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:442
+#, fuzzy
 msgid ""
 "Head to the FileSystem dock on the left, select the ``Title`` node in the "
 "Scene tree and drag and drop the ``label_EP.png`` file onto the texture "
 "slot. Select the ``Number`` node and change the ``Text`` property to a "
 "different value like ``14``."
 msgstr ""
+"Dirigez-vous vers le dock FileSystem sur la gauche, sélectionnez le nœud "
+"``Title`` dans l'arbre de scène et glissez-déposez le fichier ``label_EP."
+"png`` sur l'emplacement de texture. Sélectionnez le noeud ``Number``` et "
+"changez la propriété ``Text`` à une valeur différente, comme ``14```."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
+#, fuzzy
 msgid ""
 "You'll notice the EP texture is smaller than the HP one. We should update "
 "the ``Number``'s font size to better fit it. A font is a resource. All the "
@@ -8157,12 +8251,23 @@ msgid ""
 "``40`` and switch back to the ``LifeBar`` or the ``Bar`` scenes. You will "
 "see the text increased in size."
 msgstr ""
+"Vous remarquerez que la texture EP est plus petite que la texture HP. Nous "
+"devrions mettre à jour la taille de police de ``Number`` pour mieux "
+"l'adapter. Une police est une ressource. Tous les nœuds de l'ensemble du "
+"projet qui utilisent cette ressource seront affectés par toute propriété que "
+"nous modifions. Vous pouvez essayer de changer la taille à une valeur énorme "
+"comme ``40`` et revenir aux scènes ``LifeBar`` ou ``Bar``. Vous verrez que "
+"la taille du texte a augmenté."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:456
+#, fuzzy
 msgid "If we change the font resource, all the nodes that use it are affected"
 msgstr ""
+"Si nous changeons la ressource de police, tous les nœuds qui l'utilisent "
+"seront affectés."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:459
+#, fuzzy
 msgid ""
 "To change the font size on this node only, we must create a copy of the font "
 "resource. Select the ``Number`` node again and click on the wrench and "
@@ -8170,39 +8275,65 @@ msgid ""
 "select the ``Make Sub-Resources Unique`` option. Godot will find all the "
 "resources this node uses and create unique copies for us."
 msgstr ""
+"Pour modifier la taille de police sur ce nœud uniquement, nous devons créer "
+"une copie de la ressource de police. Sélectionnez à nouveau le nœud "
+"``Number`` et cliquez sur l'icône de la clé à molette et du tournevis en "
+"haut à droite de l'inspecteur. Dans le menu déroulant, sélectionnez l'option "
+"\" Make Sub-Resources Unique\". Godot trouvera toutes les ressources que ce "
+"nœud utilise et créera des copies uniques pour nous."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:467
+#, fuzzy
 msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
+"Utilisez cette option pour créer des copies uniques des ressources pour un "
+"nœud."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:471
+#, fuzzy
 msgid ""
 "When you duplicate a node from the Scene tree, with ``Meta+D``, it shares "
 "its resources with the original node. You need to use ``Make Sub-Resources "
 "Unique`` before you can tweak the resources without affecting the source "
 "node."
 msgstr ""
+"Lorsque vous dupliquez un nœud de l'arbre de scène, avec ``Meta+D``, il "
+"partage ses ressources avec le nœud d'origine. Vous devez utiliser ``Make "
+"Sub-Resources Unique`` avant de pouvoir modifier les ressources sans "
+"affecter le nœud source."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
+#, fuzzy
 msgid ""
 "Scroll down to the ``Custom Font`` section and open ``Font``. Lower the "
 "``Size`` to a smaller value like ``20`` or ``22``. You may also need to "
 "adjust the ``Bottom`` spacing value to align the text's baseline with the EP "
 "label on the left."
 msgstr ""
+"Faites défiler vers le bas jusqu'à la section ``Custom Font`` et ouvrez "
+"``Font``. Baissez \"Size\" à une valeur plus petite comme ``20`` ou ``22``. "
+"Vous devrez peut-être aussi ajuster la valeur de l'espacement \" Bottom \" "
+"pour aligner la ligne de base du texte avec l'étiquette EP à gauche."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:483
+#, fuzzy
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
-msgstr ""
+msgstr "Le widget EP Count, avec une police plus petite que son homologue HP."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:485
+#, fuzzy
 msgid ""
 "Now, select the ``TextureProgress`` node. Drag the ``energy_bar_bg.png`` "
 "file onto the ``Under`` slot and do the same for ``energy_bar_fill.png`` and "
 "drop it onto the ``Progress`` texture slot."
 msgstr ""
+"Maintenant, sélectionnez le noeud ``TextureProgress``. Faites glisser le "
+"fichier ``energy_bar_bg.png`` sur l'emplacement ``Under`` et faites de même "
+"pour ``energy_bar_fill.png`` et déposez-le sur l'emplacement de texture "
+"``Progress``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:489
+#, fuzzy
 msgid ""
 "You can resize the node vertically so that its bounding rectangle fits the "
 "gauge. Do the same with the ``Count`` node until its size aligns with that "
@@ -8211,20 +8342,35 @@ msgid ""
 "That is also the size the ``Bar`` container will have. You may downscale "
 "this one as well."
 msgstr ""
+"Vous pouvez redimensionner le nœud verticalement de sorte que son rectangle "
+"de délimitation s'adapte à la jauge. Faites de même avec le nœud ``Count`` "
+"jusqu'à ce que sa taille s'aligne avec celle de la barre. Parce que la "
+"taille minimale de ``TextureProgress`` est définie en fonction de ses "
+"textures, vous ne pourrez pas réduire la taille du nœud ``Count`` en "
+"dessous. C'est aussi la taille que le conteneur \"Bar\" aura. Vous pouvez "
+"également réduire l'échelle de celui-ci."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:496
+#, fuzzy
 msgid ""
 "Last but not least, the ``Background`` container has a minimum size that "
 "makes it a bit large. Select it and in the ``Rect`` section, change the "
 "``Min Size`` property down to ``80`` pixels. It should resize automatically "
 "and the ``Title`` and ``Number`` nodes should reposition as well."
 msgstr ""
+"Enfin, le conteneur \"Background\" a une taille minimale qui le rend un peu "
+"trop large. Sélectionnez-le et dans la section ``Rect``, changez la "
+"propriété ``Min Size`` jusqu'à ``80`` pixels. Il devrait se redimensionner "
+"automatiquement et les nœuds ``Title`` et ``Number`` devraient le faire  "
+"également."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:504
+#, fuzzy
 msgid "The Count looks better now it's a bit smaller"
-msgstr ""
+msgstr "Count paraît mieux maintenant qu'il est un peu plus petit."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:508
+#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -8232,24 +8378,38 @@ msgid ""
 "the LifeBar's Count nodes are one hundred pixels wide, so both gauges will "
 "align perfectly."
 msgstr ""
+"La taille du nœud Count affecte la position de TextureProgress. Comme nous "
+"allons aligner nos barres verticalement dans un moment, il vaut mieux "
+"utiliser la marge gauche du compteur pour redimensionner notre étiquette EP. "
+"De cette façon, les nœuds de compteur de la barre d'énergie et de barre de "
+"vie ont une centaine de pixels de large, de sorte que les deux jauges "
+"s'alignent parfaitement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:515
+#, fuzzy
 msgid "Prepare the bomb and rupee counters"
-msgstr ""
+msgstr "Préparer les compteurs de bombes et de rubis"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:517
+#, fuzzy
 msgid ""
 "Let us now take care of the counters. Go to ``Scene -> New Inherited Scene`` "
 "and select the ``Counter.tscn`` as a base. Rename the root node as "
 "``BombCounter`` too. Save the new scene as ``BombCounter.tscn``. That's all "
 "for this scene."
 msgstr ""
+"Occupons-nous maintenant des compteurs. Allez dans ``Scene -> New Inherited "
+"Scene`` et sélectionnez ``Counter.tscn`` comme base. Renommez le noeud "
+"racine en tant que ``BombCounter```. Sauvegardez la nouvelle scène sous le "
+"nom de ``BombCounter.tscn``. C'est tout pour cette scène."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:524
+#, fuzzy
 msgid "The bomb counter is the same as the original Counter scene"
-msgstr ""
+msgstr "Le compteur de bombes est le même que celui de la scène originale"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:526
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``RupeeCounter`` and save the scene as "
@@ -8262,16 +8422,33 @@ msgid ""
 "keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
+"Allez à nouveau dans ``Scene -> New Inherited Scene`` et sélectionnez "
+"``Counter.tscn`` une fois de plus. Renommez le noeud racine ``RupeeCounter`` "
+"et enregistrez la scène sous ``RupeeCounter.tscn``. Pour celui-ci, nous "
+"avons principalement besoin de remplacer l'icône de la bombe par l'icône du "
+"rubis. Dans l'onglet Système de fichiers, faites glisser le fichier "
+"``rupees_icon.png`` sur l'emplacement ``Texture`` du nœud  ``Icon`` . Celui-"
+"ci s'ancre déjà sur le bord droit du nœud \"Background\" afin que nous "
+"puissions changer sa position et qu'il se repositionne avec le conteneur "
+"\"RupeeCounter\". Déplacez un peu l'icône du rubis vers la droite et vers le "
+"bas. Utilisez les touches fléchées du clavier pour rectifier sa position. "
+"Sauvegardez, et nous en avons fini avec tous les éléments de l'interface "
+"utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:539
+#, fuzzy
 msgid "The rupee counter should look about like this"
-msgstr ""
+msgstr "Le compteur de rubis devrait ressembler à ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:542
+#, fuzzy
 msgid "Add the UI components to the final GUI"
 msgstr ""
+"Ajouter les composants de l'interface utilisateur à l'interface graphique "
+"finale."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
+#, fuzzy
 msgid ""
 "Time to add all the UI elements to the main GUI scene. Open the ``GUI.tscn`` "
 "scene again, and delete the ``Bar`` and ``Counter`` nodes. In the FileSystem "
@@ -8279,6 +8456,12 @@ msgid ""
 "container in the scene tree. Do the same for the ``EnergyBar``. You should "
 "see them align vertically."
 msgstr ""
+"Il est temps d'ajouter tous les éléments de l'interface utilisateur à la "
+"scène principale de l'interface graphique. Ouvrez à nouveau la scène ``GUI."
+"tscn`` et supprimez les nœuds ``Bar`` et ``Counter``. Dans le dock "
+"FileSystem, trouvez le ``LifeBar.tscn`` et faites-le glisser et déposez-le "
+"sur le conteneur ``Bars`` dans l'arbre de scène. Faites de même pour "
+"``EnergyBar``. Vous devriez les voir s'aligner verticalement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:552
 #, fuzzy
@@ -8286,16 +8469,23 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "La barre de vie et la barre d'énergie sont automatiquement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:554
+#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
 "onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
+"Maintenant, faites glissez et déposez les scènes ``BombCounter.tscn``et "
+"``RupeeCounter.tscn``sur le nœud ``Counters``. Ils se redimensionneront "
+"automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
+#, fuzzy
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
+"Les nœuds se redimensionnent pour prendre tout l'espace vertical disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:561
+#, fuzzy
 msgid ""
 "To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -8304,6 +8494,12 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
+"Pour que ``RupeeCounter`` et ``BombCounter`` utilisent la taille que nous "
+"avons définie dans ``Counter.tscn``, nous devons changer ``Size Flags`` sur "
+"le conteneur ``Counters``. Sélectionnez le  nœud ``Counters`` et dépliez la "
+"section ``Size Flags`` dans l'Inspecteur. Décochez la balise ``Fill`` pour "
+"la propriété ``Vertical`` et cochez ``Shrink Center`` pour que le conteneur "
+"soit centré à l'intérieur de ``HBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:570
 msgid "Now both counters have a decent size"
@@ -8318,6 +8514,7 @@ msgstr ""
 "la hauteur du fond des compteurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:577
+#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -8327,33 +8524,52 @@ msgid ""
 "The ``Count`` should now have some margin on the left. If you save and go "
 "back to the GUI scene, it will be aligned vertically with the ``LifeBar``."
 msgstr ""
+"Nous avons un petit problème avec le label EP sur la barre d'énergie : Les 2 "
+"barres doivent être alignées verticalement. Cliquez sur l'icône à côté du "
+"nœud ``EnergyBar`` pour ouvrir sa scène. Sélectionnez le nœud ``Count`` et "
+"faites défiler vers le bas jusqu'à la section ``Custom Constant``. Mettre "
+"``20`` à  ``Margin Left``. Dans la section ``Rect``, réglez ``Min Size`` à "
+"100, la même valeur que sur la barre de vie. ``Count`` devrait maintenant "
+"avoir une marge à gauche. Si vous sauvegardez et retournez à la scène de "
+"l'interface graphique, elle sera alignée verticalement avec ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:588
 msgid "The 2 bars align perfectly"
 msgstr "Les 2 barres sont parfaitement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:592
+#, fuzzy
 msgid ""
 "We could have setup the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
+"Nous aurions pu installer ``EnergyBar`` de cette façon il y a quelques "
+"instants. Mais cela vous montre que vous pouvez retourner à n'importe quelle "
+"scène à tout moment, l'ajuster et voir les changements se répercuter tout le "
+"long du projet !"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
+#, fuzzy
 msgid "Place the GUI onto the game's mockup"
-msgstr ""
+msgstr "Placez l'interface graphique sur la maquette du jeu"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:599
+#, fuzzy
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
 "scene."
 msgstr ""
+"Pour conclure le tutoriel, nous allons insérer l'interface graphique sur la "
+"scène de la maquette du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
+#, fuzzy
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
-msgstr ""
+msgstr "Dirigez-vous vers le dock FileSystem et ouvrez ``LevelMockup.tscn``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
+#, fuzzy
 msgid ""
 "Drag-and-drop the ``GUI.tscn`` scene right below the ``bg`` node and above "
 "the ``Characters``. The GUI will scale to fit the entire viewport. Head to "
@@ -8362,6 +8578,13 @@ msgid ""
 "possible vertically. Now you can see how the interface looks in the context "
 "of the game."
 msgstr ""
+"Glissez-déposez la scène ``GUI.tscn`` juste en dessous du nœud ``bg`` et au-"
+"dessus de ``Characters``. L'interface graphique sera mise à l'échelle pour "
+"s'adapter à l'ensemble de la fenêtre d'affichage. Allez dans le menu Layout "
+"et sélectionnez l'option ``Center Top`` pour qu'elle s'ancre au bord "
+"supérieur de la fenêtre de jeu. Ensuite, redimensionnez l'interface "
+"graphique pour la rendre aussi petite que possible verticalement. Maintenant "
+"vous pouvez voir à quoi ressemble l'interface dans le contexte du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:611
 msgid ""
@@ -8372,6 +8595,7 @@ msgstr ""
 "retrouver le projet final `ici <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:620
+#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -8382,6 +8606,16 @@ msgid ""
 "16:9. They are close to one another. That's why it’s enough for the GUI "
 "elements to only move horizontally when we change the window size."
 msgstr ""
+"**Une note finale sur le design \"Responsive\"**. Si vous redimensionnez "
+"l'interface graphique, vous verrez les nœuds se déplacer, mais les textures "
+"et le texte ne se redimensionneront pas. L'interface graphique a également "
+"une taille minimale, basée sur les textures qu'elle contient. Dans les jeux, "
+"nous n'avons pas besoin d'une interface aussi flexible que celle d'un site "
+"web. Vous ne voudriez presque jamais utiliser à la fois les modes paysage et "
+"portrait. C'est l'un ou l'autre. En mode paysage, les rapports les plus "
+"courants vont de 4:3 à 16:9. Ils sont proches l'un de l'autre. C'est "
+"pourquoi il suffit que les éléments de l'interface graphique ne se déplacent "
+"horizontalement que lorsque nous changeons la taille de la fenêtre."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
@@ -8552,6 +8786,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
 msgstr ""
+"Cette scène contient un background, une interface graphique, et deux "
+"personnages."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
@@ -8560,31 +8796,43 @@ msgstr ""
 "enfants"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
+#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the Game User Interface. It comes with a "
 "barebones script where we get the path to nodes that exist inside the scene:"
 msgstr ""
+"La scène de l'interface graphique contient tous les éléments de l'interface "
+"graphique. Elle est attaché à un script permettant de récupérer les "
+"informations des différents éléments de la scène:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
+"``number_label`` fait référence à un nœud ``Label``. Il contient le compteur "
+"de vie"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
 msgstr ""
+"``bar`` fait référence à un nœud ``TextureProgress``, permettant de "
+"contrôler la barre de vie"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
 msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
 msgstr ""
+"``tween`` est un nœud de type composant qui permet d'animer et contrôler une "
+"valeur ou une méthode de n'importe quel autre nœud"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
 msgid ""
 "The project uses a simple organisation that works for game jams and tiny "
 "games."
 msgstr ""
+"Le projet utilise une organisation simple fonctionnelle pour les Game Jams "
+"et les petits jeux."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -8595,6 +8843,12 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
+"A la racine du projet, dans le dossier `res://`, vous trouverez le "
+"`LevelMockup`. C'est la scène principale du jeu et notre scène de travail. "
+"Tous les éléments qui composent notre jeu sont dans le dossier `scenes/`. Le "
+"dossier `assets/` contient toute les sprites et la police pour le compteur "
+"de vie. Dans le dossier `scripts/, vous trouverez les scripts contrôlant le "
+"joueur, de l'ennemi et l'interface graphique du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
 msgid ""
@@ -8602,14 +8856,19 @@ msgid ""
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
 "themselves."
 msgstr ""
+"Cliquez sur l'icône d'édition de scène (Clap) à droite du nœud dans l'arbre "
+"des scènes pour ouvrir la scène dans l'éditeur. Vous verrez que la barre de "
+"vie et d'énergie sont aussi des sous-scènes."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
 msgid "The scene tree, with the Player scene set to display its children"
 msgstr ""
+"L'arbre des scènes, avec la scène du joueur ``Player`` ouverte pour afficher "
+"ses enfants"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
-msgstr ""
+msgstr "Initialiser la barre de vie avec la valeur maximale de vie du joueur"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
 msgid ""
@@ -8619,6 +8878,13 @@ msgid ""
 "player's health to the GUI every time they take damage. The GUI will then "
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
+"On doit donner l 'information à l’interface graphique du nombre de points de "
+"vie actuel du joueur, pour mettre à jour la texture de la barre de vie, et "
+"afficher le nombre de points de vie restant du joueur dans le compteur en "
+"dans le coin haut droit de l'écran. Pour faire cela, on envoie la vie du "
+"joueur à l’interface graphique à chaque fois que le joueur prends un coup. "
+"Une fois reçu, on mets à jour les nœuds ``Lifebar``et ``Number``avec cette "
+"valeur."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
 msgid ""
@@ -8627,6 +8893,10 @@ msgid ""
 "step is thus to tell the ``GUI`` what the green character's ``max_health`` "
 "is."
 msgstr ""
+"On pourrait s’arrêter là pour afficher la valeur dans le compteur; mais on "
+"doit initialiser la valeur maximale ``max_value`` de la barre de vie pour la "
+"mettre à jour dans les bonnes proportions. Cette première étape permettra de "
+"donner à ``GUI`` quel est la valeur maximale ``max_health`` de vie du joueur."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:139
 msgid ""
@@ -8635,45 +8905,80 @@ msgid ""
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
+"La barre de vie, un noeud `TextureProgress`, dans la section `Range` a la "
+"propriété `max_value` à `100` par défaut. Si l'on a pas besoin d'afficher la "
+"vie du joueur à l'aide d'un nombre, il n'est pas nécessaire de modifier "
+"cette propriété. On enverra, un pourcentage de la vie restante, du joueur "
+"`Player` à l'interface `GUI` : `health / max_health * 100` ."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
+#, fuzzy
 msgid ""
 "Click the script icon to the right of the ``GUI`` in the Scene dock to open "
 "its script. In the ``_ready`` function, we're going to store the "
 "``Player``'s ``max_health`` in a new variable and use it to set the "
 "``bar``'s ``max_value``:"
 msgstr ""
+"Cliquez sur l'icône de script à droite du nœud ``GUI`` dans l'arbre des "
+"scènes pour ouvrir son script dans l'éditeur. Dans la fonction ``_ready``, "
+"nous allons récupérer la vie maximale ``max_health`` du joueur ``Player`` et "
+"la stocker dans une nouvelle variable ``player_max_health``. Cette variable "
+"est ensuite utilisée pour initialiser la valeur maximale ``max_value`` de la "
+"barre de vie ``bar``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
+#, fuzzy
 msgid ""
 "Let's break it down. ``$\"../Characters/Player\"`` is a shorthand that goes "
 "one node up in the scene tree, and retrieves the ``Characters/Player`` node "
 "from there. It gives us access to the node. The second part of the "
 "statement, ``.max_health``, accesses the ``max_health`` on the Player node."
 msgstr ""
+"Décomposons ce script. \n"
+"L'instruction ``$\"../Characters/Player\"`` permet de récupérer, dans le "
+"nœud parent ``LevelMockup`` de notre nœud ``GUI`` à l'aide du chemin ``../"
+"``, le nœud ``Player`` dans le nœud ``Characters``. Le symbole ``$`` permet "
+"de récupérer le nœud. \n"
+"Nous accédons ensuite à la variable ``max_health`` du nœud ``Player`` à "
+"l'aide du symbole ``.``.\n"
+"On accèdent donc bien à la valeur maximale de vie du joueur."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
+#, fuzzy
 msgid ""
 "The second line assigns this value to ``bar.max_value``. You could combine "
 "the two lines into one, but we'll need to use ``player_max_health`` again "
 "later in the tutorial."
 msgstr ""
+"La seconde ligne assigne cette valeur à ``bar.max_value``. On pourrait "
+"combiner ces deux lignes en une seule mais on a besoin de cette valeur plus "
+"tard dans ce tutoriel, il donc plus judicieux de la stocker dans une "
+"variable``player_max_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
+#, fuzzy
 msgid ""
 "``Player.gd`` sets the ``health`` to ``max_health`` at the start of the "
 "game, so we could work with this. Why do we still use ``max_health``? There "
 "are two reasons:"
 msgstr ""
+"Le script associée au nœud joueur``Player.gd`` initialise la valeur de vie à "
+"la valeur de vie maximale au début du jeu. Alors pourquoi utiliser la "
+"variable ``max_health``?  Il y a deux raisons:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
+#, fuzzy
 msgid ""
 "We don't have the guarantee that ``health`` will always equal "
 "``max_health``: a future version of the game may load a level where the "
 "player already lost some health."
 msgstr ""
+"On a pas la garantie que la vie actuelle``health` sera toujours égal à la "
+"vie maximale``max_health`: une version future du jeu pourrait charger un "
+"niveau où le joueur a déjà perdu de la vie."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
+#, fuzzy
 msgid ""
 "When you open a scene in the game, Godot creates nodes one by one, following "
 "the order in your Scene dock, from top to bottom. `GUI` and `Player` are not "
@@ -8683,6 +8988,14 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
+"Quand vous ouvrez une scène dans le jeu, Godot créer les nœuds un par un, en "
+"suivant l 'ordre donnée dans votre arbre des scènes, du haut vers le bas. "
+"`GUI` et `Player`ne font pas partis de la même branche de nœud. Pour être "
+"sûr, qu'elles existent lorsqu'on y accèdent, on doit utiliser la fonction "
+"`_ready`. Godot appelle ces fonctions `_ready` après avoir chargé tous les "
+"nœuds, avant que le jeu commence. C'est la fonction parfaite pour "
+"initialiser notre jeu  et préparer le jeu. Vous apprendrez plus sur cette "
+"fonction `_ready`dans : :doc:`scripting_continued`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
@@ -8889,11 +9202,16 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot écrit la méthode de rappel pour vous et vous y emmène"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
+#, fuzzy
 msgid ""
 "Inside the parens after the function name, add a ``player_health`` argument. "
 "When the player emits the ``health_changed`` signal it will send its current "
 "``health`` alongside it. Your code should look like:"
 msgstr ""
+"Entre les parenthèses après le nom de notre méthode, ajouter un argument "
+"``player_health``. Quand le signal ``health_changed`` sera émis, il enverra "
+"l'information de point de vie actuel ``health`` avec. \n"
+"Votre code devrait ressembler à :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
 msgid ""
@@ -8904,78 +9222,115 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
+#, fuzzy
 msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
+"Dans le script Player.gd, quand le joueur émets le signal health\\_changed, "
+"il envoies aussi la valeur health"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
+#, fuzzy
 msgid ""
 "Inside ``_on_Player_health_changed`` let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
+"Dans la méthode ``_on_Player_health_changed``, appelons une seconde fonction "
+"``update_health`` avec la variable ``player_health`` comme argument."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:307
+#, fuzzy
 msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
+"On pourrait directement mettre à jour la valeur de vie dans `LifeBar` et "
+"`Number`. Il y a deux raisons pour utilisé cette fonction :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
+#, fuzzy
 msgid ""
 "The name makes it clear for our future selves and teammates that when the "
 "player took damage, we update the health count on the GUI"
 msgstr ""
+"Le nom est plus représentatif pour nous et nos camarades que lorsque le "
+"joueur prends un coup, nous mettons à jour le compteur de vie dans "
+"l'interface."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
+#, fuzzy
 msgid "We will reuse this method a bit later"
-msgstr ""
+msgstr "On réutilisera cette fonction plus tard"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
+#, fuzzy
 msgid ""
 "Create a new ``update_health`` method below ``_on_Player_health_changed``. "
 "It takes a new\\_value as its only argument:"
 msgstr ""
+"Créer une nouvelle fonction  ``update_health`` après "
+"``_on_Player_health_changed``. Elle prends ``new\\_value`` comme seul "
+"argument."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:326
+#, fuzzy
 msgid "This method needs to:"
-msgstr ""
+msgstr "Cette fonction a besoin de :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:328
+#, fuzzy
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
+"d'assigner ``new_value`` à la propriété ``text`` du nœud ``Number``. Il ne "
+"faut pas oublier de convertir cette valeur en chaîne de caractères."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:330
+#, fuzzy
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr ""
+"d'assigner ``new_value`` à la propriété ``value`` du nœud "
+"``TextureProgress``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:349
+#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
 "``Number``'s ``text`` property requires a string so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
+"``str`` est une fonction qui converti une valeur en texte. La propriété "
+"``text`` de ``Number`` n 'accepte que les chaîne de caractères, on ne peut "
+"pas assigner ``new_value`` directement"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:353
+#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
 "of the game. Press F5 to test the game: the life bar updates with every "
 "attack!"
 msgstr ""
+"Il faut appeler notre nouvelle fonction ``update_health`` à la  fin de la "
+"fonction ``_ready`` pour initialiser la propriété ``text`` dans le nœud "
+"``Number`` avec la bonne valeur.\n"
+"Lancez le jeu avec F5: la barre de vie se mets à jour à chaque coup!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:360
+#, fuzzy
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
-msgstr ""
+msgstr "A chaque coup, le nombre et la barre de vie se mettes à jour"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:364
+#, fuzzy
 msgid "Animate the loss of life with the Tween node"
-msgstr ""
+msgstr "Animer la perte de vie avec un nœud Tween"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:366
+#, fuzzy
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
@@ -8984,55 +9339,79 @@ msgid ""
 "``TextureProgress`` from its current level to the ``Player``'s new "
 "``health`` when the character takes damage."
 msgstr ""
+"Notre interface est fonctionnel, mais elle pourrait bénéficier d'un peu "
+"d'animation. C'est une bonne opportunité d'introduire le nœud ``Tween``, un "
+"outil essentiel pour animer des propriété. Ce nœud permet d'animer entre "
+"deux état sur une certaine durée. par exemple il peut animer la barre de vie "
+"``TextureProgress`` entre deux états, avant et après le coup."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:373
+#, fuzzy
 msgid ""
 "The ``GUI`` scene already contains a ``Tween`` child node stored in the "
 "``tween`` variable. Let's now use it. We have to make some changes to "
 "``update_health``."
 msgstr ""
+"La scène ``GUI`` contient déjà un nœud enfant ``Tween`` qui est assigné à la "
+"variable ``tween`` dans notre script. On peut maintenant l'utiliser, et "
+"faire quelques modifications dans notre fonction ``update_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:377
+#, fuzzy
 msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
 msgstr ""
+"Nous utiliserons la méthode ``interpolate_property`` du nœud ``Tween``. Elle "
+"prends sept paramètres :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:380
+#, fuzzy
 msgid "A reference to the node who owns the property to animate"
-msgstr ""
+msgstr "Le nœud dont la propriété est à animer"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
+#, fuzzy
 msgid "The property's identifier as a string"
-msgstr ""
+msgstr "Le nom de la propriété en chaîne de caractère"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
+#, fuzzy
 msgid "The starting value"
-msgstr ""
+msgstr "La valeur initiale"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
+#, fuzzy
 msgid "The end value"
-msgstr ""
+msgstr "La valeur finale"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
+#, fuzzy
 msgid "The animation's duration in seconds"
-msgstr ""
+msgstr "La durée de l'animation en seconde"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
+#, fuzzy
 msgid "The type of the transition"
-msgstr ""
+msgstr "Le type de transition"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
+#, fuzzy
 msgid "The easing to use in combination with the equation."
-msgstr ""
+msgstr "Le \"easing\" à utiliser."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:388
+#, fuzzy
 msgid ""
 "The last two arguments combined correspond to an `easing equation <#>`__. "
 "This controls how the value evolves from the start to the end point."
 msgstr ""
+"Les deux derniers paramètres combinées correspondent à une `équation "
+"d'easing <#>`__. Cela permet de contrôler l'évolution de la valeur entre la "
+"valeur initiale et finale."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:392
+#, fuzzy
 msgid ""
 "Click the script icon next to the ``GUI`` node to open it again. The "
 "``Number`` node needs text to update itself, and the ``Bar`` needs a float "
@@ -9040,8 +9419,15 @@ msgid ""
 "not to animate text directly. We're going to use it to animate a new ``GUI`` "
 "variable named ``animated_health``."
 msgstr ""
+"Cliquez sur l'icône de script à côté du nœud ``GUI`` pour l'ouvrir à "
+"nouveau. Le nœud ``Number`` a besoin de texte pour se mettre à jour, et "
+"``Bar`` a besoin d'une flottante ou d'un entier. On peut utiliser "
+"``interpolate_property`` pour animer un nombre, mais pas pour animer du "
+"texte directement. Nous allons l'utiliser pour animer une nouvelle variable "
+"``GUI`` nommée ``animated_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:398
+#, fuzzy
 msgid ""
 "At the top of the script, define a new variable, name it "
 "``animated_health``, and set its value to 0. Navigate back to the "
@@ -9049,42 +9435,69 @@ msgid ""
 "``animated_health`` value. Call the ``Tween`` node's "
 "``interpolate_property`` method:"
 msgstr ""
+"En haut du script, définissez une nouvelle variable, nommez-la "
+"``animated_health``, et mettez sa valeur à 0, puis revenez à la fonction "
+"``update_health`` et effacez son contenu. Animons la valeur \"animated_health"
+"\". Appelez la fonction``interpolate_property`` du nœud ``Tween`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:420
+#, fuzzy
 msgid "Let's break down the call:"
-msgstr ""
+msgstr "Décomposons l'appel :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:426
+#, fuzzy
 msgid ""
 "We target ``animated_health`` on ``self``, that is to say the ``GUI`` node. "
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
 "That's why we write it as ``\"animated_health\"``."
 msgstr ""
+"On veut animer dans le nœud ``GUI``, la propriété ``animated_health``, or ce "
+"script étant rattaché à ``GUI``, on peut s'y référer avec ``self``.\n"
+"La méthode ``interpolate_property`` du nœud ``Tween`` a besoin du nom de la "
+"propriété en chaîne de caractère. C'est pour cela qu'on l'écrit ``"
+"\"animated_health\"``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:434
+#, fuzzy
 msgid ""
 "The starting point is the current value the bar's at. We still have to code "
 "this part, but it's going to be ``animated_health``. The end point of the "
 "animation is the ``Player``'s ``health`` after the ``health_changed``: "
 "that's ``new_value``. And ``0.6`` is the animation's duration in seconds."
 msgstr ""
+"La valeur initiale est la valeur actuelle de la barre de vie. Il faudra "
+"coder cette partie, mais dans notre cas on utilisera ``animated_health``.\n"
+"La valeur finale de l'animation sera la ``new_value`` dans notre fonction "
+"``update_health``. \n"
+"Et ``0.6`` est la durée de l'animation en seconde."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:444
+#, fuzzy
 msgid ""
 "The last two arguments are constants from the ``Tween`` class. "
 "``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` doesn't "
 "do anything with a linear transition, but we must provide this last argument "
 "or we'll get an error."
 msgstr ""
+"Les deux derniers arguments sont des constantes de la classe ``Tween``. "
+"``TRANS_LINEAR`` nous donnera une animation linéaire et ``EASE_IN`` n'a pas "
+"d'action sur une animation linéaire, mais on doit donner un dernier argument "
+"sinon on aura une erreur."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:449
+#, fuzzy
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
 "``tween.start()``. We only have to do this once if the node is not active. "
 "Add this code after the last line:"
 msgstr ""
+"Cette animation étant défini, elle ne sera joué que lorsque le nœud "
+"``Tween``sera activé avec ``tween.start()``. On peut lancé l'animation une "
+"fois si le nœud n'est pas actif, en ajoutant ce code à la dernière ligne :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
+#, fuzzy
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -9093,20 +9506,32 @@ msgid ""
 "`tween` node is perfect for code-controlled animations. For hand-made "
 "animations, check out `AnimationPlayer`."
 msgstr ""
+"Même si on aurait pu animer la propriété `health` de `Player`, ce n'est pas "
+"intéressant dans notre cas. Les personnages devrait perdre leur vie "
+"instantanément quand ils sont touchés. Sinon on pourrait être encore en vie "
+"durant l'animation de la propriété. On voudra toujours stocker les "
+"animations dans des nœuds différents. Le nœud `Tween` est parfait pour "
+"animer à l'aide d'un script, mais pour lancer autrement l'animation, il "
+"faudrait utiliser le nœud `AnimationPlayer`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:471
+#, fuzzy
 msgid "Assign the animated\\_health to the LifeBar"
-msgstr ""
+msgstr "Relier animated\\_health et la barre de vie"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:473
+#, fuzzy
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
 msgstr ""
+"Notre variable ``animated_health`` est maintenant animée mais elle n'est pas "
+"relier aux nœuds ``Bar``et ``Number``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:476
+#, fuzzy
 msgid "So far, the update\\_health method looks like this:"
-msgstr ""
+msgstr "Jusqu'à maintenant, la fonction update\\_health ressemble à cela:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:500
 msgid ""
@@ -11005,71 +11430,91 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
+#, fuzzy
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Utiliser un éditeur externe de texte"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
+#, fuzzy
 msgid ""
 "While godot has an inbuilt text editor, some developers have a tendency to "
 "want to use a text editor they are familiar with. Godot provides this option "
 "via the options under ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Même si Godot a un éditeur interne de texte , certains développeurs ont une "
+"tendance à utilisé un éditeur de texte dont ils sont familier. Godot permet "
+"de le faire dans les options sous ``Editor -> Editor Settings -> Text Editor "
+"-> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
+#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to better integrate the editor with godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
+"Il y a deux champs: le chemin de l’exécutable et les lignes de commandes "
+"d’exécution. Les lignes de commandes avec les drapeaux permettront de mieux "
+"intégrer l'éditeur avec Godot. Godot remplacera par les champs suivant les "
+"drapeaux:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
+#, fuzzy
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Drapeaux dans la ligne de commande d’exécution"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
+#, fuzzy
 msgid "Is replaced with"
-msgstr ""
+msgstr "Est remplacé par"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{project}"
 msgstr "{project}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
+#, fuzzy
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "Le chemin absolu du projet"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{file}"
 msgstr "{file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
+#, fuzzy
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "Le chemin absolu du fichier"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{col}"
 msgstr "{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
+#, fuzzy
 msgid "The column number of the error"
-msgstr ""
+msgstr "Le numéro de colonne de l'erreur"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "{line}"
 msgstr "{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
+#, fuzzy
 msgid "The line number of the error"
-msgstr ""
+msgstr "Le numéro de ligne de l’erreur"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
+#, fuzzy
 msgid "Some example Exec Flags for various editors include:"
 msgstr ""
+"Quelques exemples de ligne de commande pour différents éditeur de texte:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
+#, fuzzy
 msgid "Exec Flags"
-msgstr ""
+msgstr "Ligne de commande"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "geany/kate"
@@ -41372,9 +41817,8 @@ msgstr ""
 "langue :"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
-#, fuzzy
 msgid "Locale"
-msgstr "Traduction"
+msgstr "Langue"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"
@@ -55222,32 +55666,44 @@ msgid "Engine development"
 msgstr "Développement du moteur"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
+#, fuzzy
 msgid "Introduction to Godot development"
-msgstr ""
+msgstr "Introduction au développement de Godot"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:6
+#, fuzzy
 msgid ""
 "This page is meant to introduce the global organization of Godot Engine's "
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
+"Cette page sert à introduire à l'organisation globale du code source du "
+"moteur de jeu Godot, et donne quelques conseils utiles pour étendre/corriger "
+"les fonctionnalités du moteur en C++."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
+#, fuzzy
 msgid "Architecture diagram"
-msgstr ""
+msgstr "Diagramme d'architecture"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
+#, fuzzy
 msgid ""
 "The following diagram describes the architecture used by Godot, from the "
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr ""
+"Le diagramme suivant décrit l'architecture utilisée par Godot, en partant "
+"des composants essentiels jusqu'aux pilotes(drivers), via la structure de la "
+"scène et des serveurs."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
+#, fuzzy
 msgid "Debugging the editor with gdb"
-msgstr ""
+msgstr "Déboguer l'éditeur avec gdb"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
+#, fuzzy
 msgid ""
 "If you are writing or correcting bugs affecting Godot Engine's editor, "
 "remember that the binary will by default run the project manager first, and "
@@ -55256,44 +55712,64 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
+"Si vous rencontrez ou corriger des bugs affectant l'éditeur du moteur de jeu "
+"de Godot, rappelez vous que par défaut le gestionnaire de projets est lancé "
+"en premier, et ensuite lance l'éditeur par un autre processus une fois un "
+"projet sélectionné. Pour lancer directement un projet, vous avez besoin de "
+"lancer l'éditeur avec l'argument ``-e`` à partir du dossier de votre projet. "
+"Par exemple :"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
+#, fuzzy
 msgid "Or:"
-msgstr ""
+msgstr "Ou en précisant le chemin :"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:4
+#, fuzzy
 msgid "Configuring an IDE"
-msgstr ""
+msgstr "Configurer un EDI"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:6
+#, fuzzy
 msgid ""
 "We assume that you already `cloned <https://github.com/godotengine/godot>`_ "
 "and :ref:`compiled <toc-devel-compiling>` Godot."
 msgstr ""
+"On admets que vous avez `cloné <https://github.com/godotengine/godot>`_ et :"
+"ref:`compilé <toc-devel-compiling>` Godot."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:10
+#, fuzzy
 msgid "Kdevelop"
-msgstr ""
+msgstr "Kdevelop"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:12
+#, fuzzy
 msgid ""
 "It is a free, open source IDE (Integrated Development Environment) for "
 "Linux, Solaris, FreeBSD, Mac OS X and other Unix flavors."
 msgstr ""
+"C'est un EDI (Environnement de développement) gratuit et open source pour "
+"Linux, Solaris, FreeBSD, Mac OS X et d'autres saveurs Unix."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:15
+#, fuzzy
 msgid ""
 "You can find a video tutorial `here <https://www.youtube.com/watch?"
 "v=yNVoWQi9TJA>`_. Or you may follow this text version tutorial."
 msgstr ""
+"Vous pourrez trouver un tutoriel vidéo `ici <https://www.youtube.com/watch?"
+"v=yNVoWQi9TJA>`_. Ou vous pouvez suivre la version manuscrite du tutoriel."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:18
+#, fuzzy
 msgid "Start by opening Kdevelop and choosing \"open project\"."
-msgstr ""
+msgstr "Commencez par ouvrir Kdevelop et choisir \"open project\"."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:22
+#, fuzzy
 msgid "Choose the directory where you cloned Godot."
-msgstr ""
+msgstr "Choisissez le dossier où vous avez cloné Godot."
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:26
 msgid "For the build system, choose \"custom build system\"."
@@ -56437,22 +56913,31 @@ msgid "Source files: :download:`class_tree.zip <files/class_tree.zip>`."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:4
+#, fuzzy
 msgid "Custom modules in C++"
-msgstr ""
+msgstr "Modules personnalisées dans C++"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:7
+#, fuzzy
 msgid "Modules"
-msgstr ""
+msgstr "Modules"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:9
+#, fuzzy
 msgid ""
 "Godot allows extending the engine in a modular way. New modules can be "
 "created and then enabled/disabled. This allows for adding new engine "
 "functionality at every level without modifying the core, which can be split "
 "for use and reuse in different modules."
 msgstr ""
+"Godot permets d'étendre le moteur de façon modulaire. Les nouveaux modules "
+"peuvent être créer et être ensuite activer ou désactiver. Cela permets "
+"d'ajouter de nouvelles fonctionnalités au moteur à chaque niveau sans "
+"modifier le cœur du moteur , qui peuvent être découpé pour l’utilisation et "
+"la réutilisation dans d'autres modules."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:14
+#, fuzzy
 msgid ""
 "Modules are located in the ``modules/`` subdirectory of the build system. By "
 "default, many different modules exist, such as GDScript (which, yes, is not "
@@ -56460,88 +56945,125 @@ msgid ""
 "and others. As many new modules as desired can be created and combined, and "
 "the SCons build system will take care of it transparently."
 msgstr ""
+"Les modules sont situés dans le sous-dossier ``modules/`` du répertoire de "
+"construction du moteur. Par défaut, plusieurs modules existent, telles que "
+"GDScript (qui, oui, ne fait pas parti de la base du moteur), l’exécuteur "
+"Mono, un module d'expressions usuelles, et pleins d'autres. Autant de "
+"modules que l'on désirent peuvent être créer et combiné, et leur intégration "
+"dans la construction du moteur sera transparente grâce à SCons."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:22
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:25
 #: ../../docs/development/cpp/custom_audiostreams.rst:31
 #: ../../docs/development/cpp/custom_godot_servers.rst:29
+#, fuzzy
 msgid "What for?"
-msgstr ""
+msgstr "Pourquoi ?"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:24
+#, fuzzy
 msgid ""
 "While it's recommended that most of a game is written in scripting (as it is "
 "an enormous time saver), it's perfectly possible to use C++ instead. Adding C"
 "++ modules can be useful in the following scenarios:"
 msgstr ""
+"Il est recommandé d'écrire la majeure partie d'un jeu dans un langage de "
+"script (gain de temps), il est parfaitement possible d'utiliser C++. Ajouter "
+"des modules C++ est utile dans les cas suivants :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:28
+#, fuzzy
 msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
-msgstr ""
+msgstr "Relier une librairie externe à Godot (comme PhysX, FMOD, etc)."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:29
+#, fuzzy
 msgid "Optimize critical parts of a game."
-msgstr ""
+msgstr "Optimiser des parties critiques d'un jeu"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:30
+#, fuzzy
 msgid "Adding new functionality to the engine and/or editor."
-msgstr ""
+msgstr "Ajouter de nouvelles fonctionnalités au moteur et/ou à l'éditeur."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:31
+#, fuzzy
 msgid "Porting an existing game."
-msgstr ""
+msgstr "Porter un jeu déjà existant."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:32
+#, fuzzy
 msgid "Write a whole, new game in C++ because you can't live without C++."
-msgstr ""
+msgstr "Écrire tout un jeu en C++ car vivre est impossible sans C++."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:35
+#, fuzzy
 msgid "Creating a new module"
-msgstr ""
+msgstr "Créer un nouveau module"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
+#, fuzzy
 msgid ""
 "Before creating a module, make sure to download the source code of Godot and "
 "manage to compile it. There are tutorials in the documentation for this."
 msgstr ""
+"Avant de créer un module, assurer vous d'abord de récupérer le code source "
+"de Godot et de le compiler. Il y a des tutoriels dans la documentation à ce "
+"sujet."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:40
+#, fuzzy
 msgid ""
 "To create a new module, the first step is creating a directory inside "
 "``modules/``. If you want to maintain the module separately, you can "
 "checkout a different VCS into modules and use it."
 msgstr ""
+"Pour créer un nouveau module, la première étape est de créer un dossier dans "
+"``modules/``. Si vous voulez maintenir votre module séparément, vous pouvez "
+"mettre en place un système de gestion de versions dans modules."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:44
+#, fuzzy
 msgid ""
 "The example module will be called \"summator\", and is placed inside the "
 "Godot source tree (``C:\\godot`` refers to wherever the Godot sources are "
 "located):"
 msgstr ""
+"Le module d'exemple sera nommée \"summator\", et placé dans le répertoire du "
+"code source."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:55
+#, fuzzy
 msgid "Inside we will create a simple summator class:"
-msgstr ""
+msgstr "On va créer dans le fichier en-tête (h) une classe summator :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:83
+#, fuzzy
 msgid "And then the cpp file."
-msgstr ""
+msgstr "Et dans le fichier source (cpp)."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:117
+#, fuzzy
 msgid ""
 "Then, the new class needs to be registered somehow, so two more files need "
 "to be created:"
 msgstr ""
+"Il faut maintenant enregistrer cette nouvelle classe pour qu'elle soit "
+"accessible par Godot, avec deux nouveaux fichiers :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:125
+#, fuzzy
 msgid "With the following contents:"
-msgstr ""
+msgstr "Avec les éléments suivants :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:152
+#, fuzzy
 msgid ""
 "Next, we need to create a ``SCsub`` file so the build system compiles this "
 "module:"
 msgstr ""
+"Ensuite, il faut créer un fichier ``SCsub`` pour que SCons compile ce "
+"module :"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:162
 msgid ""
@@ -57558,10 +58080,12 @@ msgid "Godot file formats"
 msgstr "Formats de fichier"
 
 #: ../../docs/development/file_formats/tscn.rst:2
+#, fuzzy
 msgid "TSCN File Format"
-msgstr ""
+msgstr "Le Format de Fichier TSCN"
 
 #: ../../docs/development/file_formats/tscn.rst:4
+#, fuzzy
 msgid ""
 "A :code:`.tscn` File format is the \"Text SCeNe\" file format and represents "
 "a single scene-tree inside Godot. TSCN files have the advantage of being "
@@ -57569,29 +58093,46 @@ msgid ""
 "import the TSCN files are compiled into binary :code:`.scn` files stored "
 "inside the .import folder. This reduces the data size and speed up loading."
 msgstr ""
+"Le format de fichier :code:`.tscn` est  le format \"Text SCeNe\" et "
+"représente un seul arbre des scènes dans Godot. Les fichiers TSCN ont "
+"l'avantage d'être lisible par et facilite les systèmes de  gestion de "
+"version. Durant l'import, les fichiers TSCN sont compilés en fichiers "
+"binaires :code:`.scn` enregistrés dans le dossier ``.import``. Ceci réduit "
+"l'espace occupé et accélère le chargement."
 
 #: ../../docs/development/file_formats/tscn.rst:10
+#, fuzzy
 msgid ""
 "The :code:`.escn` file format is identical to the TSCN file format, but is "
 "used to indicate to Godot that the file has been exported from another "
 "program and should not be edited by the user from within Godot."
 msgstr ""
+"Le format de fichier :code:`.escn` est identique aux fichiers TSCN, mais il "
+"permet d'indiquer à Godot que le fichier a été exporté d'un autre programme "
+"et qu'il ne doit pas être édité par l'utilisateur dans Godot."
 
 #: ../../docs/development/file_formats/tscn.rst:14
+#, fuzzy
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "file `scene_format_text.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/resources/scene_format_text.cpp>`_ in the class :code:"
 "`ResourceFormatLoaderText`"
 msgstr ""
+"Pour ceux à la recherche d'une description plus complète, le parsing est "
+"effectué dans le fichier `scene_format_text.cpp <https://github.com/"
+"godotengine/godot/blob/master/scene/resources/scene_format_text.cpp>`_ dans "
+"la classe :code:`ResourceFormatLoaderText`"
 
 #: ../../docs/development/file_formats/tscn.rst:20
+#, fuzzy
 msgid "File Structure"
-msgstr ""
+msgstr "La structure du fichier"
 
 #: ../../docs/development/file_formats/tscn.rst:22
+#, fuzzy
 msgid "There are five main sections inside the TSCN File:"
-msgstr ""
+msgstr "Il y a cinq sections principale dans les fichiers TSCN:"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 msgid "File Descriptor"
