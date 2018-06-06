@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -726,6 +726,7 @@ msgstr ""
 "la police. Notre compteur fonctionne maintenant comme prévu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:317
+#, fuzzy
 msgid ""
 "While we are at it, let's make it so the ``Counters`` snap to the right edge "
 "of the viewport. To achieve this we will set the ``Bars`` container to "
@@ -734,6 +735,13 @@ msgid ""
 "check the ``Expand`` value. The ``Bars`` node should resize and push the "
 "counter to the rightmost of the screen."
 msgstr ""
+"Pendant que nous y sommes, faisons en sorte que les \"Counters\" "
+"s'enclenchent sur le bord droit de la fenêtre. Pour ce faire, nous allons "
+"régler le conteneur ``Bars`` pour qu'il se dilate et prenne tout l'espace "
+"horizontal. Sélectionnez le nœud \"Bars \" et faites défiler vers le bas "
+"jusqu'à la catégorie \" Size Flags \". Dans la catégorie ``Horizontal``, "
+"cochez la valeur ``Expand``. Le nœud ``Bars`` devrait se redimensionner et "
+"pousser le compteur à l'extrême droite de l'écran."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:326
 msgid ""
@@ -788,8 +796,17 @@ msgid ""
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
 msgstr ""
+"Une scène est une arborescence de nœuds. Le nœud le plus haut est la "
+"**racine** de l'arbre, et les enfants au bas de la hiérarchie sont des "
+"**feuilles**. Tout nœud autre que la racine avec un enfant ou plus est une "
+"**branche**. Nous pouvons encapsuler les branches de nœuds dans des scènes "
+"séparées, ou les charger et les fusionner à partir d'autres scènes dans la "
+"scène active. Cliquez avec le bouton droit de la souris sur n'importe quel "
+"nœud du dock Scène et sélectionnez \" Enregistrer la branche comme scène \" "
+"ou \" Fusionner à partir de la scène \"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:355
+#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -799,16 +816,26 @@ msgid ""
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
+"Ensuite, sélectionnez le nœud ``Counter`` et faites de même. Clic droit, "
+"``Save Branch as Scene``, et l'enregistrer en tant que ``Counter.tscn``. Une "
+"nouvelle icône de modification de scène apparaît à droite des nœuds dans "
+"l'arborescence des scènes. Cliquez sur celui à côté de ``Bar`` pour ouvrir "
+"la scène correspondante. Redimensionner le nœud ``Bar`` pour que sa boîte de "
+"délimitation s'adapte à son contenu. Comme nous avons nommé et placé les "
+"nœuds Control, nous sommes prêts à hériter de ce modèle et à créer la barre "
+"de vie. C'est la même chose pour \"Counter\"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:365
 msgid "With no extra changes, our Bar is ready to use"
 msgstr "Sans aucun autre changement, votre barre est prête à être utilisé"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:368
+#, fuzzy
 msgid "Use Scene Inheritance to create the remaining elements"
-msgstr ""
+msgstr "Utiliser l'héritage de scène pour créer les éléments restants."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
+#, fuzzy
 msgid ""
 "We need two bars that work the same way: they should feature a label on the "
 "left, with some value, and a horizontal gauge on the right. The only "
@@ -816,14 +843,25 @@ msgid ""
 "called EP and is yellow. Godot gives us a powerful tool to create a common "
 "base to reuse for all bars in the game: **inherited scenes**."
 msgstr ""
+"Nous avons besoin de deux barres qui fonctionnent de la même manière : Elles "
+"devraient comporter une étiquette à gauche, avec une certaine valeur, et une "
+"jauge horizontale à droite. La seule différence est que l'un a l'étiquette "
+"HP et est vert, tandis que l'autre s'appelle EP et est jaune. Godot nous "
+"donne un outil puissant pour créer une base commune à réutiliser pour toutes "
+"les barres du jeu : des **scènes héritées**."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:378
+#, fuzzy
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
 msgstr ""
+"Les scènes héritées nous aident à garder la scène de l'interface graphique "
+"propre. En fin de compte, nous n'aurons que des conteneurs et un nœud pour "
+"chaque composant de l'interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:381
+#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -833,36 +871,63 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
+"Sur une scène héritée, vous pouvez changer n'importe quelle propriété de "
+"chaque nœud de l'inspecteur, à part son nom. Si vous modifiez et enregistrez "
+"la scène mère, toutes les scènes héritées sont mises à jour pour refléter "
+"les changements. Si vous changez une valeur dans la scène héritée, elle "
+"remplacera toujours la propriété du parent. C'est utile pour les interfaces "
+"utilisateur car elles nécessitent souvent des variations des mêmes éléments. "
+"En général, dans la conception de l'interface utilisateur, les boutons, les "
+"panneaux, etc. partagent un style de base et des interactions communes. Nous "
+"ne voulons pas le copier manuellement dans toutes les variations."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:390
+#, fuzzy
 msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
+"Une icône de rechargement apparaîtra à côté des propriétés que vous "
+"remplacez. Cliquez dessus pour réinitialiser la valeur à la valeur par "
+"défaut de la scène mère."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
+#, fuzzy
 msgid ""
 "Think of scene inheritance like the node tree, or the ``extends`` keyword in "
 "GDScript. An inherited scene does everything like its parent, but you can "
 "override properties, resources and add extra nodes and scripts to extend its "
 "functionality."
 msgstr ""
+"Pensez à l'héritage de scène comme l'arbre des nœuds, ou le mot clé "
+"``extends`` dans GDScript. Une scène héritée fait tout comme son parent, "
+"mais vous pouvez remplacer les propriétés, les ressources et ajouter des "
+"nœuds et des scripts supplémentaires pour étendre ses fonctionnalités."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:401
+#, fuzzy
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr ""
+msgstr "Hériter de la scène Bar pour construire la barre de vie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:403
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
 "like your ``Bar``, but with all nodes except the root in grey. Press ``Meta"
 "+S`` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
+"Allez dans ``Scene -> New Inherited Scene`` pour créer un nouveau type de "
+"barre.  Sélectionnez la scène Bar et ouvrez-la. Vous devriez voir un nouvel "
+"onglet[unsaved], c'est comme votre ``Bar``, mais avec tous les nœuds excepté "
+"la racine qui est en gris. Appuyez sur ``Meta+S`` pour sauvegarder la "
+"nouvelle scène héritée et nommez-la ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:411
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
+"Vous ne pouvez pas renommer les nœuds grisés. Cela signifie qu'ils ont une "
+"scène parente"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:413
 msgid ""
@@ -873,6 +938,13 @@ msgid ""
 "works with all inherited scenes. Like our ``TextureProgress`` and ``Number`` "
 "nodes."
 msgstr ""
+"Renommez d'abord le nœud racine ou le nœud de niveau supérieur en "
+"``LifeBar``. Nous voulons toujours que la racine décrive exactement ce "
+"qu'est ce composant de l'interface utilisateur. Le nom différencie cette "
+"barre de l'``EnergyBar`` que nous allons créer. Les autres nœuds à "
+"l'intérieur de la scène doivent décrire la structure du composant en termes "
+"généraux, de sorte qu'il fonctionne avec toutes les scènes héritées. Comme "
+"nos nœuds ``TextureProgress`` et ``Number``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:422
 msgid ""
@@ -884,6 +956,14 @@ msgid ""
 "we create an inherited scene and change the name of the top level node, "
 "we're doing the same thing."
 msgstr ""
+"Si vous avez déjà fait du design web, c'est le même esprit que de travailler "
+"avec CSS : vous créez une classe de base, et ajoutez des variations avec des "
+"classes de modificateurs. À partir d'une classe de bouton de base, vous "
+"aurez des variations de boutons vert et rouge pour que l'utilisateur accepte "
+"et refuse les propositions. La nouvelle classe contient le nom de l'élément "
+"parent et un mot-clé supplémentaire pour expliquer comment il le modifie. "
+"Lorsque nous créons une scène héritée et changeons le nom du nœud de niveau "
+"supérieur, nous faisons la même chose."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:431
 msgid "Design the EnergyBar"
@@ -894,6 +974,8 @@ msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
 msgstr ""
+"Nous avons déjà mis en place le design de la ``LifeBar`` avec la scène "
+"principale ``Bar``. Nous avons maintenant besoin d'``EnergyBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid ""
@@ -902,16 +984,27 @@ msgid ""
 "``EnergyBar``. Save the new scene as ``EnergyBar.tscn``. We need to replace "
 "the HP texture with EP one, and to change the textures on the gauge."
 msgstr ""
+"Créons une nouvelle scène héritée, sélectionnons à nouveau la scène ``Bar."
+"tscn`` et ouvrons-la. Double-cliquez sur le nœud racine ``Bar`` et renommez-"
+"le en ``EnergyBar``. Sauvegardez la nouvelle scène sous le nom ``EnergyBar."
+"tscn``. Nous devons remplacer la texture HP par une texture EP, et changer "
+"les textures sur la jauge."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:442
+#, fuzzy
 msgid ""
 "Head to the FileSystem dock on the left, select the ``Title`` node in the "
 "Scene tree and drag and drop the ``label_EP.png`` file onto the texture "
 "slot. Select the ``Number`` node and change the ``Text`` property to a "
 "different value like ``14``."
 msgstr ""
+"Dirigez-vous vers le dock FileSystem sur la gauche, sélectionnez le nœud "
+"``Title`` dans l'arbre de scène et glissez-déposez le fichier ``label_EP."
+"png`` sur l'emplacement de texture. Sélectionnez le noeud ``Number``` et "
+"changez la propriété ``Text`` à une valeur différente, comme ``14```."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
+#, fuzzy
 msgid ""
 "You'll notice the EP texture is smaller than the HP one. We should update "
 "the ``Number``'s font size to better fit it. A font is a resource. All the "
@@ -920,12 +1013,23 @@ msgid ""
 "``40`` and switch back to the ``LifeBar`` or the ``Bar`` scenes. You will "
 "see the text increased in size."
 msgstr ""
+"Vous remarquerez que la texture EP est plus petite que la texture HP. Nous "
+"devrions mettre à jour la taille de police de ``Number`` pour mieux "
+"l'adapter. Une police est une ressource. Tous les nœuds de l'ensemble du "
+"projet qui utilisent cette ressource seront affectés par toute propriété que "
+"nous modifions. Vous pouvez essayer de changer la taille à une valeur énorme "
+"comme ``40`` et revenir aux scènes ``LifeBar`` ou ``Bar``. Vous verrez que "
+"la taille du texte a augmenté."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:456
+#, fuzzy
 msgid "If we change the font resource, all the nodes that use it are affected"
 msgstr ""
+"Si nous changeons la ressource de police, tous les nœuds qui l'utilisent "
+"seront affectés."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:459
+#, fuzzy
 msgid ""
 "To change the font size on this node only, we must create a copy of the font "
 "resource. Select the ``Number`` node again and click on the wrench and "
@@ -933,39 +1037,65 @@ msgid ""
 "select the ``Make Sub-Resources Unique`` option. Godot will find all the "
 "resources this node uses and create unique copies for us."
 msgstr ""
+"Pour modifier la taille de police sur ce nœud uniquement, nous devons créer "
+"une copie de la ressource de police. Sélectionnez à nouveau le nœud "
+"``Number`` et cliquez sur l'icône de la clé à molette et du tournevis en "
+"haut à droite de l'inspecteur. Dans le menu déroulant, sélectionnez l'option "
+"\" Make Sub-Resources Unique\". Godot trouvera toutes les ressources que ce "
+"nœud utilise et créera des copies uniques pour nous."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:467
+#, fuzzy
 msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
+"Utilisez cette option pour créer des copies uniques des ressources pour un "
+"nœud."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:471
+#, fuzzy
 msgid ""
 "When you duplicate a node from the Scene tree, with ``Meta+D``, it shares "
 "its resources with the original node. You need to use ``Make Sub-Resources "
 "Unique`` before you can tweak the resources without affecting the source "
 "node."
 msgstr ""
+"Lorsque vous dupliquez un nœud de l'arbre de scène, avec ``Meta+D``, il "
+"partage ses ressources avec le nœud d'origine. Vous devez utiliser ``Make "
+"Sub-Resources Unique`` avant de pouvoir modifier les ressources sans "
+"affecter le nœud source."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
+#, fuzzy
 msgid ""
 "Scroll down to the ``Custom Font`` section and open ``Font``. Lower the "
 "``Size`` to a smaller value like ``20`` or ``22``. You may also need to "
 "adjust the ``Bottom`` spacing value to align the text's baseline with the EP "
 "label on the left."
 msgstr ""
+"Faites défiler vers le bas jusqu'à la section ``Custom Font`` et ouvrez "
+"``Font``. Baissez \"Size\" à une valeur plus petite comme ``20`` ou ``22``. "
+"Vous devrez peut-être aussi ajuster la valeur de l'espacement \" Bottom \" "
+"pour aligner la ligne de base du texte avec l'étiquette EP à gauche."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:483
+#, fuzzy
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
-msgstr ""
+msgstr "Le widget EP Count, avec une police plus petite que son homologue HP."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:485
+#, fuzzy
 msgid ""
 "Now, select the ``TextureProgress`` node. Drag the ``energy_bar_bg.png`` "
 "file onto the ``Under`` slot and do the same for ``energy_bar_fill.png`` and "
 "drop it onto the ``Progress`` texture slot."
 msgstr ""
+"Maintenant, sélectionnez le noeud ``TextureProgress``. Faites glisser le "
+"fichier ``energy_bar_bg.png`` sur l'emplacement ``Under`` et faites de même "
+"pour ``energy_bar_fill.png`` et déposez-le sur l'emplacement de texture "
+"``Progress``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:489
+#, fuzzy
 msgid ""
 "You can resize the node vertically so that its bounding rectangle fits the "
 "gauge. Do the same with the ``Count`` node until its size aligns with that "
@@ -974,20 +1104,35 @@ msgid ""
 "That is also the size the ``Bar`` container will have. You may downscale "
 "this one as well."
 msgstr ""
+"Vous pouvez redimensionner le nœud verticalement de sorte que son rectangle "
+"de délimitation s'adapte à la jauge. Faites de même avec le nœud ``Count`` "
+"jusqu'à ce que sa taille s'aligne avec celle de la barre. Parce que la "
+"taille minimale de ``TextureProgress`` est définie en fonction de ses "
+"textures, vous ne pourrez pas réduire la taille du nœud ``Count`` en "
+"dessous. C'est aussi la taille que le conteneur \"Bar\" aura. Vous pouvez "
+"également réduire l'échelle de celui-ci."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:496
+#, fuzzy
 msgid ""
 "Last but not least, the ``Background`` container has a minimum size that "
 "makes it a bit large. Select it and in the ``Rect`` section, change the "
 "``Min Size`` property down to ``80`` pixels. It should resize automatically "
 "and the ``Title`` and ``Number`` nodes should reposition as well."
 msgstr ""
+"Enfin, le conteneur \"Background\" a une taille minimale qui le rend un peu "
+"trop large. Sélectionnez-le et dans la section ``Rect``, changez la "
+"propriété ``Min Size`` jusqu'à ``80`` pixels. Il devrait se redimensionner "
+"automatiquement et les nœuds ``Title`` et ``Number`` devraient le faire  "
+"également."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:504
+#, fuzzy
 msgid "The Count looks better now it's a bit smaller"
-msgstr ""
+msgstr "Count paraît mieux maintenant qu'il est un peu plus petit."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:508
+#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -995,24 +1140,38 @@ msgid ""
 "the LifeBar's Count nodes are one hundred pixels wide, so both gauges will "
 "align perfectly."
 msgstr ""
+"La taille du nœud Count affecte la position de TextureProgress. Comme nous "
+"allons aligner nos barres verticalement dans un moment, il vaut mieux "
+"utiliser la marge gauche du compteur pour redimensionner notre étiquette EP. "
+"De cette façon, les nœuds de compteur de la barre d'énergie et de barre de "
+"vie ont une centaine de pixels de large, de sorte que les deux jauges "
+"s'alignent parfaitement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:515
+#, fuzzy
 msgid "Prepare the bomb and rupee counters"
-msgstr ""
+msgstr "Préparer les compteurs de bombes et de rubis"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:517
+#, fuzzy
 msgid ""
 "Let us now take care of the counters. Go to ``Scene -> New Inherited Scene`` "
 "and select the ``Counter.tscn`` as a base. Rename the root node as "
 "``BombCounter`` too. Save the new scene as ``BombCounter.tscn``. That's all "
 "for this scene."
 msgstr ""
+"Occupons-nous maintenant des compteurs. Allez dans ``Scene -> New Inherited "
+"Scene`` et sélectionnez ``Counter.tscn`` comme base. Renommez le noeud "
+"racine en tant que ``BombCounter```. Sauvegardez la nouvelle scène sous le "
+"nom de ``BombCounter.tscn``. C'est tout pour cette scène."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:524
+#, fuzzy
 msgid "The bomb counter is the same as the original Counter scene"
-msgstr ""
+msgstr "Le compteur de bombes est le même que celui de la scène originale"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:526
+#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``RupeeCounter`` and save the scene as "
@@ -1025,16 +1184,33 @@ msgid ""
 "keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
+"Allez à nouveau dans ``Scene -> New Inherited Scene`` et sélectionnez "
+"``Counter.tscn`` une fois de plus. Renommez le noeud racine ``RupeeCounter`` "
+"et enregistrez la scène sous ``RupeeCounter.tscn``. Pour celui-ci, nous "
+"avons principalement besoin de remplacer l'icône de la bombe par l'icône du "
+"rubis. Dans l'onglet Système de fichiers, faites glisser le fichier "
+"``rupees_icon.png`` sur l'emplacement ``Texture`` du nœud  ``Icon`` . Celui-"
+"ci s'ancre déjà sur le bord droit du nœud \"Background\" afin que nous "
+"puissions changer sa position et qu'il se repositionne avec le conteneur "
+"\"RupeeCounter\". Déplacez un peu l'icône du rubis vers la droite et vers le "
+"bas. Utilisez les touches fléchées du clavier pour rectifier sa position. "
+"Sauvegardez, et nous en avons fini avec tous les éléments de l'interface "
+"utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:539
+#, fuzzy
 msgid "The rupee counter should look about like this"
-msgstr ""
+msgstr "Le compteur de rubis devrait ressembler à ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:542
+#, fuzzy
 msgid "Add the UI components to the final GUI"
 msgstr ""
+"Ajouter les composants de l'interface utilisateur à l'interface graphique "
+"finale."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
+#, fuzzy
 msgid ""
 "Time to add all the UI elements to the main GUI scene. Open the ``GUI.tscn`` "
 "scene again, and delete the ``Bar`` and ``Counter`` nodes. In the FileSystem "
@@ -1042,6 +1218,12 @@ msgid ""
 "container in the scene tree. Do the same for the ``EnergyBar``. You should "
 "see them align vertically."
 msgstr ""
+"Il est temps d'ajouter tous les éléments de l'interface utilisateur à la "
+"scène principale de l'interface graphique. Ouvrez à nouveau la scène ``GUI."
+"tscn`` et supprimez les nœuds ``Bar`` et ``Counter``. Dans le dock "
+"FileSystem, trouvez le ``LifeBar.tscn`` et faites-le glisser et déposez-le "
+"sur le conteneur ``Bars`` dans l'arbre de scène. Faites de même pour "
+"``EnergyBar``. Vous devriez les voir s'aligner verticalement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:552
 #, fuzzy
@@ -1049,16 +1231,23 @@ msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "La barre de vie et la barre d'énergie sont automatiquement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:554
+#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
 "onto the ``Counters`` node. They'll resize automatically."
 msgstr ""
+"Maintenant, faites glissez et déposez les scènes ``BombCounter.tscn``et "
+"``RupeeCounter.tscn``sur le nœud ``Counters``. Ils se redimensionneront "
+"automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
+#, fuzzy
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
+"Les nœuds se redimensionnent pour prendre tout l'espace vertical disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:561
+#, fuzzy
 msgid ""
 "To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -1067,6 +1256,12 @@ msgid ""
 "property, and check ``Shrink Center`` so the container centers inside the "
 "``HBoxContainer``."
 msgstr ""
+"Pour que ``RupeeCounter`` et ``BombCounter`` utilisent la taille que nous "
+"avons définie dans ``Counter.tscn``, nous devons changer ``Size Flags`` sur "
+"le conteneur ``Counters``. Sélectionnez le  nœud ``Counters`` et dépliez la "
+"section ``Size Flags`` dans l'Inspecteur. Décochez la balise ``Fill`` pour "
+"la propriété ``Vertical`` et cochez ``Shrink Center`` pour que le conteneur "
+"soit centré à l'intérieur de ``HBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:570
 msgid "Now both counters have a decent size"
@@ -1081,6 +1276,7 @@ msgstr ""
 "la hauteur du fond des compteurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:577
+#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -1090,33 +1286,52 @@ msgid ""
 "The ``Count`` should now have some margin on the left. If you save and go "
 "back to the GUI scene, it will be aligned vertically with the ``LifeBar``."
 msgstr ""
+"Nous avons un petit problème avec le label EP sur la barre d'énergie : Les 2 "
+"barres doivent être alignées verticalement. Cliquez sur l'icône à côté du "
+"nœud ``EnergyBar`` pour ouvrir sa scène. Sélectionnez le nœud ``Count`` et "
+"faites défiler vers le bas jusqu'à la section ``Custom Constant``. Mettre "
+"``20`` à  ``Margin Left``. Dans la section ``Rect``, réglez ``Min Size`` à "
+"100, la même valeur que sur la barre de vie. ``Count`` devrait maintenant "
+"avoir une marge à gauche. Si vous sauvegardez et retournez à la scène de "
+"l'interface graphique, elle sera alignée verticalement avec ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:588
 msgid "The 2 bars align perfectly"
 msgstr "Les 2 barres sont parfaitement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:592
+#, fuzzy
 msgid ""
 "We could have setup the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
+"Nous aurions pu installer ``EnergyBar`` de cette façon il y a quelques "
+"instants. Mais cela vous montre que vous pouvez retourner à n'importe quelle "
+"scène à tout moment, l'ajuster et voir les changements se répercuter tout le "
+"long du projet !"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
+#, fuzzy
 msgid "Place the GUI onto the game's mockup"
-msgstr ""
+msgstr "Placez l'interface graphique sur la maquette du jeu"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:599
+#, fuzzy
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
 "scene."
 msgstr ""
+"Pour conclure le tutoriel, nous allons insérer l'interface graphique sur la "
+"scène de la maquette du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
+#, fuzzy
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
-msgstr ""
+msgstr "Dirigez-vous vers le dock FileSystem et ouvrez ``LevelMockup.tscn``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
+#, fuzzy
 msgid ""
 "Drag-and-drop the ``GUI.tscn`` scene right below the ``bg`` node and above "
 "the ``Characters``. The GUI will scale to fit the entire viewport. Head to "
@@ -1125,6 +1340,13 @@ msgid ""
 "possible vertically. Now you can see how the interface looks in the context "
 "of the game."
 msgstr ""
+"Glissez-déposez la scène ``GUI.tscn`` juste en dessous du nœud ``bg`` et au-"
+"dessus de ``Characters``. L'interface graphique sera mise à l'échelle pour "
+"s'adapter à l'ensemble de la fenêtre d'affichage. Allez dans le menu Layout "
+"et sélectionnez l'option ``Center Top`` pour qu'elle s'ancre au bord "
+"supérieur de la fenêtre de jeu. Ensuite, redimensionnez l'interface "
+"graphique pour la rendre aussi petite que possible verticalement. Maintenant "
+"vous pouvez voir à quoi ressemble l'interface dans le contexte du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:611
 msgid ""
@@ -1135,6 +1357,7 @@ msgstr ""
 "retrouver le projet final `ici <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:620
+#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -1145,3 +1368,13 @@ msgid ""
 "16:9. They are close to one another. That's why it’s enough for the GUI "
 "elements to only move horizontally when we change the window size."
 msgstr ""
+"**Une note finale sur le design \"Responsive\"**. Si vous redimensionnez "
+"l'interface graphique, vous verrez les nœuds se déplacer, mais les textures "
+"et le texte ne se redimensionneront pas. L'interface graphique a également "
+"une taille minimale, basée sur les textures qu'elle contient. Dans les jeux, "
+"nous n'avons pas besoin d'une interface aussi flexible que celle d'un site "
+"web. Vous ne voudriez presque jamais utiliser à la fois les modes paysage et "
+"portrait. C'est l'un ou l'autre. En mode paysage, les rapports les plus "
+"courants vont de 4:3 à 16:9. Ils sont proches l'un de l'autre. C'est "
+"pourquoi il suffit que les éléments de l'interface graphique ne se déplacent "
+"horizontalement que lorsque nous changeons la taille de la fenêtre."

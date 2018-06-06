@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,17 +163,16 @@ msgstr ""
 "платформ, где это возможно); по умолчанию создаются 64-х битные файлы."
 
 #: ../../docs/about/faq.rst:53
-#, fuzzy
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi. There is also some unofficial "
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
-"У некоторых пользователей получилось собрать и использовать Godot на ARM-"
-"системах с Linux, например на Raspberry Pi. Ведутся работы (вне основного "
-"проекта Godot) по запуску на игровых консолях, но в стандартные скрипты "
-"сборки и шаблоны экспорта такие расширения не входят."
+"Также, некоторые пользователи сообщают об успешной сборке и использовании "
+"Godot на ARM-системах с Linux, например на Raspberry Pi. Ведутся работы (вне "
+"основного проекта Godot) по запуску на игровых консолях, но в стандартные "
+"скрипты сборки и шаблоны экспорта такие расширения не входят."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -432,10 +431,11 @@ msgid "Why is FBX not supported for import?"
 msgstr "Почему FBX не поддерживается в импорте?"
 
 #: ../../docs/about/faq.rst:154
+#, fuzzy
 msgid ""
-"FBX SDK has a `restrictive license <http://www.blender.org/bf/"
+"FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
-"<http://opensource.org/licenses/MIT>`_ provided by Godot."
+"<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
 "SDK для FBX имеет очень `ограниченную лицензию <http://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, которая несовместима с `открытой лицензией "
@@ -600,17 +600,16 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "И всё! Ваша игра будет работать в нескольких разрешениях."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (less than 300 pixels in width), you can use the export option "
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
-"Если вам очень нужно сделать игру так, чтобы она работала на старых "
-"устройствах с маленькими экранами (меньше чем 300 пикселей в ширину), вы "
-"можете использовать опцию экспорта для сжатия картинок, и настроить проект "
-"на использование необходимых разрешений экрана в App Store или Google Play."
+"Если вы хотите сделать игру пригодной к работе на старых устройствах с "
+"маленькими экранами (меньше чем 300 пикселей в ширину), вы можете "
+"использовать опцию экспорта для сжатия картинок, и настроить проект на "
+"использование необходимых разрешений экрана в App Store или Google Play."
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"

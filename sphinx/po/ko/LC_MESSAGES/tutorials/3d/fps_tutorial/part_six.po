@@ -1,0 +1,1346 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:4
+msgid "Part 6"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
+msgid "Part Overview"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:9
+msgid ""
+"In this part we're going to add a main menu and pause menu, add a respawn "
+"system for the player, and change/move the sound system so we can use it "
+"from any script."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:12
+msgid ""
+"This is the last part of the FPS tutorial, by the end of this you will have "
+"a solid base to build amazing FPS games with Godot!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:16
+msgid ""
+"You are assumed to have finished :ref:`doc_fps_tutorial_part_five` before "
+"moving on to this part of the tutorial."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:18
+msgid ""
+"The finished project from :ref:`doc_fps_tutorial_part_four` will be the "
+"starting project for part 6"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:20
+msgid "Let's get started!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:23
+msgid "Adding the main menu"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:25
+msgid ""
+"First, open up ``Main_Menu.tscn`` and take a look at how the scene is set up."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:27
+msgid ""
+"The main menu is broken up into three different panels, each representing a "
+"different 'screen' of our main menu."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:30
+msgid ""
+"The ``Background_Animation`` node is just so the background of the menu is a "
+"bit more interesting than a solid color. It's a camera looking around the "
+"skybox, nothing fancy."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:33
+msgid ""
+"Feel free to expand all of the nodes and see how their set up. Remember to "
+"keep only ``Start_Menu`` visible when you're done, as that's the screen we "
+"want to show first when we enter the main menu."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:36
+msgid ""
+"Select ``Main_Menu`` (the root node) and create a new script called "
+"``Main_Menu.gd``. Add the following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:123
+msgid ""
+"Most of the code here relates to making UIs, which is outside of the purpose "
+"of this tutorial series. **We're only going to look at the UI related code "
+"briefly.**"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:126
+msgid ""
+"See :ref:`doc_ui_main_menu` and the tutorials following for better ways to "
+"make GUIs and UIs!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:128
+msgid "Let's look at the global variables first."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:130
+msgid ""
+"``start_menu``: A variable to hold the ``Start_Menu`` :ref:`Panel "
+"<class_Panel>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:131
+msgid ""
+"``level_select_menu``: A variable to hold the ``Level_Select_Menu`` :ref:"
+"`Panel <class_Panel>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:132
+msgid ""
+"``options_menu``: A variable to hold the ``Options_Menu`` :ref:`Panel "
+"<class_Panel>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:133
+msgid ""
+"``testing_area_scene``: The path to the ``Testing_Area.tscn`` file, so we "
+"can change to it from this scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:134
+msgid ""
+"``space_level_scene``: The path to the ``Space_Level.tscn`` file, so we can "
+"change to it from this scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:135
+msgid ""
+"``ruins_level_scene``: The path to the ``Ruins_Level.tscn`` file, so we can "
+"change to it from this scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:137
+msgid ""
+"You'll have to set the paths to the correct files in the editor before "
+"testing this script! Otherwise it will not work!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:141
+msgid "Now let's go over ``_ready``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:143
+msgid ""
+"First we get all of the :ref:`Panel <class_Panel>` nodes and assign them to "
+"the proper variables."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:145
+msgid ""
+"Next we connect all of the buttons ``pressed`` signals to their respective "
+"``[panel_name_here]_button_pressed`` functions."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:147
+msgid ""
+"We then set the mouse mode to ``MOUSE_MODE_VISIBLE`` to ensure whenever we "
+"return to this scene our mouse will be visible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:149
+msgid ""
+"Then we get a singleton, called ``Globals``. We then set the values for the :"
+"ref:`HSlider <class_HSlider>` nodes so their values line up with the mouse "
+"and joypad sensitivity in the singleton."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:152
+msgid ""
+"We have not made the ``Globals`` singleton yet, so don't worry! We're going "
+"to make it soon!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:156
+msgid "In ``start_menu_pressed``, we check to see which button is pressed."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:158
+msgid ""
+"Based on the button pressed, we either change the currently visible panel, "
+"quit the application, or open the Godot engine website."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:162
+msgid ""
+"In ``level_select_menu_button_pressed``, we check to see which button is "
+"pressed."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:164
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:175
+msgid ""
+"If the ``back`` button has been pressed, we change the currently visible "
+"panels so we return to the main menu."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:166
+msgid ""
+"If one of the scene changing buttons are pressed, we fist call "
+"``set_mouse_and_joypad_sensitivity`` so our singleton has the values from "
+"the :ref:`HSlider <class_HSlider>` nodes. Then we tell the singleton to "
+"change nodes using it's ``load_new_scene`` function, passing in the file "
+"path of the scene we're wanting to change to."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:169
+msgid "Don't worry about the singleton, we'll get there soon!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:173
+msgid ""
+"In ``options_menu_button_pressed``, we check to see which button is pressed."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:177
+msgid ""
+"If the ``fullscreen`` button is pressed we toggle the :ref:`OS <class_OS>`'s "
+"full screen mode by setting it to the flipped version of it's current value."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:179
+msgid ""
+"If the ``vsync`` button is pressed we set the :ref:`OS <class_OS>`'s Vsync "
+"based on the state of the Vsync check button."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:183
+msgid "Finally, lets take a look at ``set_mouse_and_joypad_sensitivity``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:185
+msgid ""
+"First we get the ``Globals`` singleton and assign it to a local variable."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:187
+msgid ""
+"We then set the ``mouse_sensitivity`` and ``joypad_sensitvity`` variables to "
+"the values in their respective :ref:`HSlider <class_HSlider>` node "
+"counterparts."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:190
+msgid "Making the ``Globals`` singleton"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:192
+msgid ""
+"Now, for this all to work we need to create the ``Globals`` singleton. Make "
+"a new script in the ``Script`` tab and call it ``Globals.gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:194
+msgid "Add the following to ``Globals.gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:209
+msgid ""
+"As you can see, it's quite small and simple. As this part progresses we will "
+"keeping adding complexities to ``Global.gd``, but for now all it is doing is "
+"holding two variables for us, and abstracting how we change scenes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:212
+msgid ""
+"``mouse_sensitivity``: The current sensitivity for our mouse, so we can load "
+"it in ``Player.gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:213
+msgid ""
+"``joypad_sensitivity``: The current sensitivity for our joypad, so we can "
+"load it in ``Player.gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:215
+msgid ""
+"Right now all we're using ``Globals.gd`` for is a way to carry variables "
+"across scenes. Because the sensitivity for our mouse and joypad are stored "
+"in ``Globals.gd``, any changes we make in one scene (like ``Main_Menu``) "
+"effect the sensitivity for our player."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:218
+msgid ""
+"All we're doing in ``load_new_scene`` is calling :ref:`SceneTree "
+"<class_SceneTree>`'s ``change_scene`` function, passing in the scene path "
+"given in ``load_new_scene``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:220
+msgid ""
+"That's all of the code needed for ``Globals.gd`` right now! Before we can "
+"test the main menu, we first need to set ``Globals.gd`` as an autoload "
+"script."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:222
+msgid "Open up the project settings and click the ``AutoLoad`` tab."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:226
+msgid ""
+"Then select the path to ``Globals.gd`` in the ``Path`` field by clicking the "
+"button beside it. Make sure the name in the ``Node Name`` field is "
+"``Globals``. If you have everything like the picture above, then press "
+"``Add``!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:229
+msgid ""
+"This will make ``Globals.gd`` a singleton/autoload script, which will allow "
+"us to access it from anywhere in any scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:231
+msgid ""
+"For more information on singleton/autoload scripts, see :ref:"
+"`doc_singletons_autoload`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:233
+msgid ""
+"Now that ``Globals.gd`` is a singleton/autoload script, you can test the "
+"main menu!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:235
+msgid ""
+"You may also want to change the main scene from ``Testing_Area.tscn`` to "
+"``Main_Menu.tscn`` so when we export the game we start at the main menu. You "
+"can do this through the project settings, under the ``General`` tab. Then in "
+"the ``Application`` category, click the ``Run`` subcategory and you can "
+"change the main scene by changing the value in ``Main Scene``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:239
+msgid ""
+"You'll have to set the paths to the correct files in ``Main_Menu`` in the "
+"editor before testing the main menu! Otherwise you will not be able to "
+"change scenes from the level select menu/screen."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:243
+msgid "Adding the debug menu"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:245
+msgid ""
+"Now let's add a simple debugging scene so we can track things like FPS in "
+"game. Open up ``Debug_Display.tscn``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:247
+msgid ""
+"You can see it's a :ref:`Panel <class_Panel>` positioned in the top right "
+"corner of the screen. It has three :ref:`Labels <class_Label>`, one for "
+"displaying the FPS the game is running at, one for showing what OS the game "
+"is running on, and a label for showing the Godot version the game is running "
+"with."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:250
+msgid ""
+"Let's add the code needed to fill these :ref:`Labels <class_Label>`. Select "
+"``Debug_Display`` and create a new script called ``Debug_Display.gd``. Add "
+"the following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:263
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:919
+msgid "Let's go over what this script does."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:267
+msgid ""
+"In ``_ready`` we set the ``OS_Label``'s text to the name provided in :ref:"
+"`OS <class_OS>` using the ``get_name`` function. This will return the name "
+"of the OS (or Operating System) that Godot was compiled for. For example, "
+"when you are running Windows it will return ``Windows``, while when you are "
+"running Linux it will return ``X11``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:271
+msgid ""
+"Then we set the ``Engine_Label``'s text to the version info provided by "
+"``Engine.get_version_info``. ``Engine.get_version_info`` returns a "
+"dictionary full of useful information about the version Godot is currently "
+"running with. We only care for the string version for the purposes of this "
+"display, so we get the string and assign that as the ``text`` in "
+"``Engine_Label``. See :ref:`Engine <class_Engine>` for more information on "
+"the values ``get_version_info`` returns."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:275
+msgid ""
+"In ``_process`` we set the text of the ``FPS_Label`` to ``Engine."
+"get_frames_per_second``, but because ``get_frames_per_second`` returns a "
+"integer, we have to cast it to a string using ``str`` before we can add it "
+"to our label."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:280
+msgid ""
+"Now let's jump back to ``Main_Menu.gd`` and change the following in "
+"``options_menu_button_pressed``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:287
+msgid "to this instead:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:294
+msgid ""
+"This will call a new function in our singleton called ``set_debug_display``, "
+"so let's add that next!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:298
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:386
+msgid "Open up ``Globals.gd`` and add the following global variables:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:312
+msgid "``canvas_layer``: A canvas layer so our GUI/UI is always drawn on top."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:313
+msgid "``DEBUG_DISPLAY``: The debug display scene we worked on earlier."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:314
+msgid ""
+"``debug_display``: A variable to hold the debug display when there is one."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:316
+msgid ""
+"Now that we have our global variables defined, we need to add a few lines to "
+"ready so we have a canvas layer to use in ``canvas_layer``. Change "
+"``_ready`` to the following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:325
+msgid ""
+"Now in ``_ready`` we're creating a new canvas layer and adding it as a child "
+"of the autoload script."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:327
+msgid ""
+"The reason we're adding a :ref:`CanvasLayer <class_CanvasLayer>` is so all "
+"of our GUI and UI nodes we instance/spawn in ``Globals.gd`` are always drawn "
+"on top of everything else."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:330
+msgid ""
+"When adding nodes to a singleton/autoload, you have to be careful not to "
+"lose reference to any of the child nodes. This is because nodes will not be "
+"freed/destroyed when you change scene, meaning you can run into memory "
+"problems if you are instancing/spawning lots of nodes and are not freeing "
+"them."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:336
+msgid "Now we need to add ``set_debug_display`` to ``Globals.gd``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:350
+msgid "Let's go over what's happening."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:352
+msgid ""
+"First we check to see if we're trying to turn on the debug display, or turn "
+"it off."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:354
+msgid ""
+"If we are turning off the display, we then check to see if ``debug_display`` "
+"is not equal to ``null``. If ``debug_display`` is not equal to ``null``, "
+"then we most have a debug display currently active. If we have a debug "
+"display active, we free it using ``queue_free`` and then assign "
+"``debug_display`` to ``null``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:357
+msgid ""
+"If we are turning on the display, we then check to make sure we do not "
+"already have a debug display active. We do this by making sure "
+"``debug_display`` is equal to ``null``. If ``debug_display`` is ``null``, we "
+"instance a new ``DEBUG_DISPLAY_SCENE``, and add it as a child of "
+"``canvas_layer``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:362
+msgid ""
+"With that done, we can now toggle the debug display on and off by switching "
+"the :ref:`CheckButton <class_CheckButton>` in the ``Options_Menu`` panel. Go "
+"give it a try!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:364
+msgid ""
+"Notice how the debug display stays even when you change scenes from the "
+"``Main_Menu.tscn`` to another scene (like ``Testing_Area.tscn``). This is "
+"the beauty of instancing/spawning nodes in a singleton/autoload and adding "
+"them as children to the singleton/autoload. Any of the nodes added as "
+"children of the singleton/autoload will stay for as long as the game is "
+"running, without any additional work on our part!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:369
+msgid "Adding a pause menu"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:371
+msgid ""
+"Let's add a pause menu so we can return to the main menu when we press the "
+"``ui_cancel`` action."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:373
+msgid "Open up ``Pause_Popup.tscn``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:375
+msgid ""
+"Notice how the root node in ``Pause_Popup`` is a :ref:`WindowDialog "
+"<class_WindowDialog>`. :ref:`WindowDialog <class_WindowDialog>` inherits "
+"from :ref:`Popup <class_Popup>`, which means :ref:`WindowDialog "
+"<class_WindowDialog>` can act like a popup."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:378
+msgid ""
+"Select ``Pause_Popup`` and scroll down all the way till you get to the "
+"``Pause`` menu in the inspector. Notice how the pause mode is set to "
+"``process`` instead of ``inherit`` like it is normally set by default. This "
+"makes it where it will continue to process even when the game is paused, "
+"which we need in order to interact with the UI elements."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:382
+msgid ""
+"Now that we've looked at how ``Pause_Popup.tscn`` is set up, lets write the "
+"code to make it work. Normally we'd attach a script to the root node of the "
+"scene, ``Pause_Popup`` in this case, but since we'll need to receive a "
+"couple of signals in ``Globals.gd``, we'll write all of the code for the pop "
+"up there."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:394
+msgid "``MAIN_MENU_PATH``: The path to the main menu scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:395
+msgid "``POPUP_SCENE``: The pop up scene we looked at earlier."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:396
+msgid "``popup``: A variable to hold the pop up scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:398
+msgid ""
+"Now we need to add ``_process`` to ``Globals.gd`` so we can respond when the "
+"``ui_cancel`` action is pressed. Add the following to ``_process``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:419
+msgid "Let's go over what's happening here."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:423
+msgid ""
+"First we check to see if the ``ui_cancel`` action is pressed. Then we check "
+"to make sure we do not already have a ``popup`` open by checking to see if "
+"``popup`` is equal to ``null``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:426
+msgid ""
+"If we do not have a pop up open, we instance ``POPUP_SCENE`` and assign it "
+"to ``popup``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:428
+msgid ""
+"We then get the quit button and assign it's ``pressed`` signal to "
+"``popup_quit``, which we will be adding shortly."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:430
+msgid ""
+"Next we assign both the ``popup_hide`` signal from the :ref:`WindowDialog "
+"<class_WindowDialog>` and the ``pressed`` signal from the resume button to "
+"``popup_closed``, which we will be adding shortly."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:433
+msgid ""
+"Then we add ``popup`` as a child of ``canvas_layer`` so it's drawn on top. "
+"We then tell ``popup`` to pop up at the center of the screen using "
+"``popup_centered``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:435
+msgid ""
+"Next we make sure the mouse mode is ``MOUSE_MODE_VISIBLE`` to we can "
+"interact with the pop up. If we did not do this, we would not be able to "
+"interact with the pop up in any scene where the mouse mode is "
+"``MOUSE_MODE_CAPTURED``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:438
+msgid "Finally, get pause the entire :ref:`SceneTree <class_SceneTree>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:440
+msgid "For more information on pausing in Godot, see :ref:`doc_pausing_games`"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:444
+msgid ""
+"Now we need to add the functions we've connected the signals to. Let's add "
+"``popup_closed`` first."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:446
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:461
+msgid "Add the following to ``Globals.gd``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:457
+msgid ""
+"``popup_closed`` will resume the game and destroy the pop up if there is one."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:459
+msgid ""
+"``popup_quit`` is similar, but we're also making sure the mouse is visible "
+"and changing scenes to the title screen."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:476
+msgid ""
+"``popup_quit`` will resume the game, set the mouse mode to "
+"``MOUSE_MODE_VISIBLE`` to ensure the mouse is visible in the main menu, "
+"destroy the pop up if there is one, and change scenes to the main menu."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:481
+msgid ""
+"Before we're ready to test the pop up, we should change one thing in "
+"``Player.gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:483
+msgid ""
+"Open up ``Player.gd`` and in ``process_input``, change the code for "
+"capturing/freeing the cursor to the following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:490
+msgid ""
+"Now instead of capturing/freeing the mouse, we check to see if the current "
+"mouse mode is ``MOUSE_MODE_VISIBLE``. If it is, we set it back to "
+"``MOUSE_MODE_CAPTURED``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:493
+msgid ""
+"Because the pop up makes the mouse mode ``MOUSE_MODE_VISIBLE`` whenever you "
+"pause, we no longer have to worry about freeing the cursor in ``Player.gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:497
+msgid ""
+"Now the pause menu pop up is finished. You can now pause at any point in the "
+"game and return to the main menu!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:500
+msgid "Starting the respawn system"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:502
+msgid ""
+"Since our player can lose all their health, it would be ideal if our players "
+"died and respawned too, so let's add that!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:504
+msgid ""
+"First, open up ``Player.tscn`` and expand ``HUD``. Notice how there's a :ref:"
+"`ColorRect <class_ColorRect>` called ``Death_Screen``. When the player dies, "
+"we're going to make ``Death_Screen`` visible, and show them how long they "
+"have to wait before they're able to respawn."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:507
+msgid "Open up ``Player.gd`` and add the following global variables:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:517
+msgid "``RESPAWN_TIME``: The amount of time (in seconds) it takes to respawn."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:518
+msgid "``dead_time``: A variable to track how long the player has been dead."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:519
+msgid ""
+"``is_dead``: A variable to track whether or not the player is currently dead."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:520
+msgid "``globals``: A variable to hold the ``Globals.gd`` singleton."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:524
+msgid ""
+"We now need to add a couple lines to ``_ready``, so we can use ``Globals."
+"gd``. Add the following to ``_ready``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:532
+msgid ""
+"Now we're getting the ``Globals.gd`` singleton and assigning it to "
+"``globals``. We also set our global position using the origin from our "
+"global :ref:`Transform <class_Transform>` to the position returned by "
+"``globals.get_respawn_position``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:535
+msgid "Don't worry, we'll add ``get_respawn_position`` further below!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:539
+msgid ""
+"Next we need to make a few changes to ``physics_process``. Change "
+"``physics_processing`` to the following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:557
+msgid ""
+"Now we're not processing input or movement input when we're dead. We're also "
+"now calling ``process_respawn``, but we haven't written ``process_respawn`` "
+"yet, so let's change that."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:562
+msgid "Let's add ``process_respawn``. Add the following to ``Player.gd``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:621
+msgid "Let's go through what this function is doing."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:625
+msgid ""
+"First we check to see if we just died by checking to see if ``health`` is "
+"equal or less than ``0`` and ``is_dead`` is ``false``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:627
+msgid ""
+"If we just died, we disable our collision shapes for the player. We do this "
+"to make sure we're not blocking anything with our dead body."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:629
+msgid ""
+"We next set ``changing_weapon`` to ``true`` and set ``changing_weapon_name`` "
+"to ``UNARMED``. This is so if we are using a weapon, we put it away when we "
+"die."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:632
+msgid ""
+"We then make the ``Death_Screen`` :ref:`ColorRect <class_ColorRect>` visible "
+"so we get a nice grey overlay over everything. We then make the rest of the "
+"UI, the ``Panel`` and ``Crosshair`` nodes, invisible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:635
+msgid ""
+"Next we set ``dead_time`` to ``RESPAWN_TIME`` so we can start counting down "
+"how long we've been dead. We also set ``is_dead`` to ``true`` so we know "
+"we've died."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:637
+msgid ""
+"If we are holding an object when we died, we need to throw it. We first "
+"check to see if we are holding an object or not. If we are, we then throw "
+"it, using the same code as the throwing code we added in :ref:"
+"`doc_fps_tutorial_part_five`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:642
+msgid ""
+"Then we check to see if we are dead. If we are, we then remove ``delta`` "
+"from ``dead_time``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:644
+msgid ""
+"We then make a new variable called ``dead_time_pretty``, where we convert "
+"``dead_time`` to a string, using only the first three characters starting "
+"from the left. This gives us a nice looking string showing how much time we "
+"have left to wait before we respawn."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:647
+msgid ""
+"We then change the :ref:`Label <class_Label>` in ``Death_Screen`` to show "
+"how much time we have left."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:649
+msgid ""
+"Next we check to see if we've waited long enough and can respawn. We do this "
+"by checking to see if ``dead_time`` is ``0`` or less."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:651
+msgid ""
+"If we have waited long enough to respawn, we set the player's position to a "
+"new respawn position provided by ``get_respawn_position``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:653
+msgid ""
+"We then enable both of our collision shapes so the player can collide with "
+"the environment."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:655
+msgid ""
+"Next we make the ``Death_Screen`` invisible and make the rest of the UI, the "
+"``Panel`` and ``Crosshair`` nodes, visible again."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:657
+msgid ""
+"We then go through each weapon and call it's ``reset_weapon`` function. "
+"We'll add ``reset_weapon`` soon."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:659
+msgid ""
+"Then we reset ``health`` to ``100``, ``grenade_amounts`` to it's default "
+"values, and change ``current_grenade`` to ``Grenade``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:661
+msgid "Finally, we set ``is_dead`` to ``false``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:665
+msgid ""
+"Before we leave ``Player.gd``, we need to add one quick thing to ``_input``. "
+"Add the following at the beginning of ``_input``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:672
+msgid "Now when we're dead we cannot look around with the mouse."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:675
+msgid "Finishing the respawn system"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:677
+msgid ""
+"First let's open ``Weapon_Pistol.gd`` and add the ``reset_weapon`` function. "
+"Add the following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:685
+msgid ""
+"Now when we call ``reset_weapon``, the ammo in our weapon and the ammo in "
+"the spares will be reset to their default values."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:687
+msgid "Now let's add ``reset_weapon`` in ``Weapon_Rifle.gd``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:695
+msgid "And add the following to ``Weapon_Knife.gd``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:703
+msgid "Now our weapons will reset when we die."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:707
+msgid ""
+"Now we need to add a few things to ``Globals.gd``. First, add the following "
+"global variable:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:713
+msgid ""
+"``respawn_points``: A variable to hold all of the respawn points in a level"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:715
+msgid ""
+"Because we're getting a random spawn point each time, we need to randomize "
+"the number generator. Add the following to ``_ready``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:721
+msgid ""
+"``randomize`` will get us a new random seed so we get a (relatively) random "
+"string of numbers when we using any of the random functions."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:723
+msgid "Now let's add ``get_respawn_position`` to ``Globals.gd``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:734
+msgid "Let's go over what this function does."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:738
+msgid ""
+"First we check to see if we have any ``respawn_points`` by checking to see "
+"if ``respawn_points`` is ``null`` or not."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:740
+msgid ""
+"If ``respawn_points`` is ``null``, we return a position of empty :ref:"
+"`Vector 3 <class_Vector3>` with the position ``(0, 0, 0)``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:742
+msgid ""
+"If ``respawn_points`` is not ``null``, we then get a random number between "
+"``0`` and the number of elements we have in ``respawn_points``, minus ``1`` "
+"since most programming languages (including ``GDScript``) start counting "
+"from ``0`` when you are accessing elements in a list."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:745
+msgid ""
+"We then return the position of the :ref:`Spatial <class_Spatial>` node at "
+"``respawn_point`` position in ``respawn_points``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:749
+msgid ""
+"Before we're done with ``Globals.gd``. We need to add the following to "
+"``load_new_scene``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:755
+msgid ""
+"We set ``respawn_points`` to ``null`` so when/if we get to a level with no "
+"respawn points, we do not respawn at the respawn points in the level prior."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:760
+msgid ""
+"Now all we need is a way to set the respawn points. Open up ``Ruins_Level."
+"tscn`` and select ``Spawn_Points``. Add a new script called "
+"``Respawn_Point_Setter.gd`` and attach it to ``Spawn_Points``. Add the "
+"following to ``Respawn_Point_Setter.gd``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:771
+msgid ""
+"Now when a node with ``Respawn_Point_Setter.gd`` has it's ``_ready`` "
+"function called, all of the children nodes of the node with "
+"``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level."
+"tscn``, will be added to ``respawn_points`` in ``Globals.gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:775
+msgid ""
+"Any node with ``Respawn_Point_Setter.gd`` has to be above the player in the :"
+"ref:`SceneTree <class_SceneTree>` so the respawn points are set before the "
+"player needs them in the player's ``_ready`` function."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:780
+msgid "Now when you die you'll respawn after waiting ``4`` seconds!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:782
+msgid ""
+"No spawn points are already set up for any of the levels besides "
+"``Ruins_Level.tscn``! Adding spawn points to ``Space_Level.tscn`` is left as "
+"an exercise for the reader."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:786
+msgid "Writing a sound system we can use anywhere"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:788
+msgid ""
+"Finally, lets make a sound system so we can play sounds from anywhere, "
+"without having to use the player."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:790
+msgid "First, open up ``SimpleAudioPlayer.gd`` and change it to the following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:833
+msgid ""
+"There's several changes from the old version, first and foremost being we're "
+"no longer storing the sound files in ``SimpleAudioPlayer.gd`` anymore. This "
+"is much better for performance since we're no longer loading each audio clip "
+"when we create a sound, but instead we're forcing a audio stream to be "
+"passed in to ``play_sound``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:837
+msgid ""
+"Another change is we have a new global variable called ``should_loop``. "
+"Instead of just destroying the audio player every time it's finished, we "
+"instead want check to see if we are set to loop or not. This allows us to "
+"have audio like looping background music without having to spawn a new audio "
+"player with the music when the old one is finished."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:841
+msgid ""
+"Finally, instead of being instanced/spawned in ``Player.gd``, we're instead "
+"going to be spawned in ``Globals.gd`` so we can create sounds from any "
+"scene. We now need to store the ``Globals.gd`` singleton so when we destroy "
+"the audio player, we also remove it from a list in ``Globals.gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:844
+msgid "Let's go over the changes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:848
+msgid ""
+"For the global variables we removed all of the ``audio_[insert name here]`` "
+"variables since we will instead have these passed in to. We also added two "
+"new global variables, ``should_loop`` and ``globals``. We'll use "
+"``should_loop`` to tell whether we want to loop when the sound has finished, "
+"and ``globals`` will hold the ``Globals.gd`` singleton."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:853
+msgid ""
+"The only change in ``_ready`` is now we're getting the ``Globals.gd`` "
+"singleton and assigning it to ``globals``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:855
+msgid ""
+"In ``play_sound`` we now expect a audio stream, named ``audio_stream``, to "
+"be passed in, instead of ``sound_name``. Instead of checking the sound name "
+"and setting the stream for the audio player, we instead check to make sure "
+"an audio stream was passed in. If a audio stream is not passed in, we print "
+"an error message, remove the audio player from a list in the ``Globals.gd`` "
+"singleton called ``created_audio``, and then free the audio player."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:859
+msgid ""
+"Finally, in ``sound_finished`` we first check to see if we are supposed to "
+"loop or not using ``should_loop``. If we are supposed to loop, we play the "
+"sound again from the start of the audio, at position ``0.0``. If we are not "
+"supposed to loop, we remove the audio player from a list in the ``Globals."
+"gd`` singleton called ``created_audio``, and then free the audio player."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:865
+msgid ""
+"Now that we've finished our changes to ``SimpleAudioPlayer.gd``, we now need "
+"to turn our attention to ``Globals.gd``. First, add the following global "
+"variables:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:883
+msgid "Lets go over these global variables."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:885
+msgid ""
+"``audio_clips``: A dictionary holding all of the audio clips we can play."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:886
+msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:887
+msgid ""
+"``created_audio``: A list to hold all of the simple audio players we create"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:889
+msgid ""
+"If you want to add additional audio, you need to add it to ``audio_clips``. "
+"No audio files are provided in this tutorial, so you will have to provide "
+"your own."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:892
+msgid ""
+"One site I'd recommend is **GameSounds.xyz**. I'm using the Gamemaster audio "
+"gun sound pack included in the Sonniss' GDC Game Audio bundle for 2017. The "
+"tracks I've used (with some minor editing) are as follows:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:896
+msgid "gun_revolver_pistol_shot_04,"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:897
+msgid "gun_semi_auto_rifle_cock_02,"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:898
+msgid "gun_submachine_auto_shot_00_automatic_preview_01"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:902
+msgid ""
+"Now we need to add a new function called ``play_sound`` to ``Globals.gd``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:921
+msgid ""
+"First we check to see if we have a audio clip with the name ``sound_name`` "
+"in ``audio_clips``. If we do not, we print an error message."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:923
+msgid ""
+"If we do have a audio clip with the name ``sound_name``, we then instance/"
+"spawn a new ``SIMPLE_AUDIO_PLAYER_SCENE`` and assign it to ``new_audio``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:925
+msgid ""
+"We then set ``should_loop``, and add ``new_audio`` as a child of ``Globals."
+"gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:927
+msgid ""
+"Remember, we have to be careful adding nodes to a singleton, since these "
+"nodes will not be destroyed when changing scenes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:929
+msgid ""
+"We then call ``play_sound``, passing in the audio clip associated with "
+"``sound_name``, and the sound position."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:933
+msgid ""
+"Before we leave ``Globals.gd``, we need to add a few lines of code to "
+"``load_new_scene`` so when we change scenes, we destroy all of the audio."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:935
+msgid "Add the following to ``load_new_scene``:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:944
+msgid ""
+"Now before we change scenes we go through each simple audio player in "
+"``created_sounds`` and free/destroy them. Once we've gone through all of the "
+"sounds in ``created_audio``, we clear ``created_audio`` so it no longer "
+"holds any references to any of the previously created simple audio players."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:949
+msgid ""
+"Let's change ``create_sound`` in ``Player.gd`` to use this new system. "
+"First, remove ``simple_audio_player`` from ``Player.gd``'s global variables, "
+"since we will no longer be directly instancing/spawning sounds from ``Player."
+"gd``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:952
+msgid "Now, change ``create_sound`` to the following:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:959
+msgid ""
+"Now whenever ``create_sound`` is called, we simply call ``play_sound`` in "
+"``Globals.gd``, passing in all of the arguments we've revived."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:963
+msgid ""
+"Now all of the sounds in our FPS can be played from anywhere. All we have to "
+"do is get the ``Globals.gd`` singleton, and call ``play_sound``, passing in "
+"the name of the sound we want to play, whether we want it to loop or not, "
+"and the position to play the sound from."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:966
+msgid ""
+"For example, if you want to play an explosion sound when the grenades "
+"explode you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
+"get the ``Globals.gd`` singleton, and then you just need to add something "
+"like ``globals.play_sound(\"explosion\", false, global_transform.origin)`` "
+"in the grenades ``_process`` function, right after the grenade damages all "
+"of the bodies within it's blast radius."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:972
+msgid "Final notes"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:976
+msgid "Now you have a fully working single player FPS!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:978
+msgid "At this point you have a good base to build more complicated FPS games."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:980
+msgid "If you ever get lost, be sure to read over the code again!"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:982
+msgid ""
+"You can download the finished project for the entire tutorial here: :"
+"download:`Godot_FPS_Part_6.zip <files/Godot_FPS_Finished.zip>`"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:984
+msgid ""
+"The finished project source files contain the same exact code, just written "
+"in a different order. This is because the finished project source files are "
+"what the tutorial is based on."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:987
+msgid ""
+"The finished project code was written in the order that features were "
+"created, not necessarily in a order that is ideal for learning."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:990
+msgid ""
+"Other than that, the source is exactly the same, just with helpful comments "
+"explaining what each part does."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:993
+msgid ""
+"The finished project source is hosted on Github as well: https://github.com/"
+"TwistedTwigleg/Godot_FPS_Tutorial"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:995
+msgid ""
+"**Please note that the code in Github may or may not be in sync with the "
+"tutorial on the documentation**."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:997
+msgid ""
+"The code in the documentation is likely better managed and/or more up to "
+"date. If you are unsure on which to use, use the project(s) provided in the "
+"documentation as they are maintained by the Godot community."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1000
+msgid ""
+"You can download all of the ``.blend`` files used in this tutorial here: :"
+"download:`Godot_FPS_BlenderFiles.zip <files/Godot_FPS_BlenderFiles.zip>`"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1002
+msgid ""
+"All assets provided in the started assets (unless otherwise noted) were "
+"**originally created by TwistedTwigleg, with changes/additions by the Godot "
+"community.** All original assets provided for this tutorial are released "
+"under the ``MIT`` license."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1005
+msgid ""
+"Feel free to use these assets however you want! All original assets belong "
+"to the Godot community, with the other assets belonging to those listed "
+"below:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1007
+msgid ""
+"The skybox is created by **StumpyStrust** and can be found at OpenGameArt."
+"org. https://opengameart.org/content/space-skyboxes-0 . The skybox is "
+"licensed under the ``CC0`` license."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1010
+msgid ""
+"The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
+"Font License, Version 1.1``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1012
+msgid ""
+"The skybox was convert to a 360 equirectangular image using this tool: "
+"https://www.360toolkit.co/convert-cubemap-to-spherical-equirectangular.html"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1014
+msgid ""
+"While no sounds are provided, you can find many game ready sounds at https://"
+"gamesounds.xyz/"
+msgstr ""
+
+#: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1016
+msgid ""
+"**OpenGameArt.org, 360toolkit.co, the creator(s) of Titillium-Regular, "
+"StumpyStrust, and GameSounds.xyz are in no way involved in this tutorial.**"
+msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,75 +18,95 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
+#, fuzzy
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Utiliser un éditeur externe de texte"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
+#, fuzzy
 msgid ""
 "While godot has an inbuilt text editor, some developers have a tendency to "
 "want to use a text editor they are familiar with. Godot provides this option "
 "via the options under ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Même si Godot a un éditeur interne de texte , certains développeurs ont une "
+"tendance à utilisé un éditeur de texte dont ils sont familier. Godot permet "
+"de le faire dans les options sous ``Editor -> Editor Settings -> Text Editor "
+"-> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
+#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to better integrate the editor with godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
+"Il y a deux champs: le chemin de l’exécutable et les lignes de commandes "
+"d’exécution. Les lignes de commandes avec les drapeaux permettront de mieux "
+"intégrer l'éditeur avec Godot. Godot remplacera par les champs suivant les "
+"drapeaux:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
+#, fuzzy
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Drapeaux dans la ligne de commande d’exécution"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
+#, fuzzy
 msgid "Is replaced with"
-msgstr ""
+msgstr "Est remplacé par"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{project}"
 msgstr "{project}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
+#, fuzzy
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "Le chemin absolu du projet"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{file}"
 msgstr "{file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
+#, fuzzy
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "Le chemin absolu du fichier"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{col}"
 msgstr "{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
+#, fuzzy
 msgid "The column number of the error"
-msgstr ""
+msgstr "Le numéro de colonne de l'erreur"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "{line}"
 msgstr "{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
+#, fuzzy
 msgid "The line number of the error"
-msgstr ""
+msgstr "Le numéro de ligne de l’erreur"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
+#, fuzzy
 msgid "Some example Exec Flags for various editors include:"
 msgstr ""
+"Quelques exemples de ligne de commande pour différents éditeur de texte:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"
 msgstr "Éditeur"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
+#, fuzzy
 msgid "Exec Flags"
-msgstr ""
+msgstr "Ligne de commande"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "geany/kate"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,12 +26,11 @@ msgid "Processing"
 msgstr "流程"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
-#, fuzzy
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
-"Godot中的许多动作是由回调函数或虚函数触发，所以不需要编写一直运行的代码。"
+"Godot中的许多动作是由回调函数或虚函数触发，所以不需要编写那些总是运行的代码。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
@@ -42,15 +41,14 @@ msgstr ""
 "理。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
-#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
-"当 :ref:`Node._process() <class_Node__process>` 方法在函数中被定义处理流程就"
-"会被激活.。可以通过 :ref:`Node.set_process() <class_Node_set_process>` 函数来"
-"进行开关."
+"当脚本中存在 :ref:`Node._process() <class_Node__process>` 方法时空闲处理"
+"（Idle processing）就会被激活。可以通过 :ref:`Node.set_process() "
+"<class_Node_set_process>` 函数来进行开关."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
@@ -142,6 +140,9 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_call_group>`:"
 msgstr ""
+"这样一来, 如果玩家在潜入一个秘密基地时被发现, 所有的敌人都可以通过使用: "
+"\"SceneTree. call_group () <class_SceneTree_call_group>\" 发出的警报声来通知"
+"到："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 #, fuzzy
@@ -170,7 +171,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
 msgid "Notifications"
-msgstr ""
+msgstr "通知"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
 msgid ""
@@ -190,34 +191,36 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr ""
+msgstr "可覆写的函数"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""
 "Such overrideable functions, which are described as follows, can be applied "
 "to nodes:"
-msgstr ""
+msgstr "以下所描述的这些可覆写的函数，能够应用于节点："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:267
 msgid ""
 "As mentioned before, it's better to use these functions instead of the "
 "notification system."
-msgstr ""
+msgstr "如前所诉，用这些函数替代通知系统是更好的选择。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:271
 msgid "Creating nodes"
-msgstr ""
+msgstr "创建节点"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:273
 msgid ""
 "To create a node from code, call the ``.new()`` method, like for any other "
 "class-based datatype. For example:"
 msgstr ""
+"如果要用代码方式创建一个节点， 只需调用“.new()”方法即可，这也适用于其他的基于"
+"类的数据类型。举例说明："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
-msgstr ""
+msgstr "若要删除一个节点，无论其是否在场景树之内，“free()”方法一定会被调用:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:313
 msgid ""
@@ -225,6 +228,8 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
+"当一个节点被释放时, 它也会释放其所有子节点。因此, 手动删除节点比看起来简单得"
+"多。释放基节点, 那么子树中的其他所有东西都会随之消失。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:317
 msgid ""
@@ -233,26 +238,31 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
+"当我们要删除一个当前处于“阻塞”状态的节点时，就可能发生这种情况， 因为此时它正"
+"在发出信号或者在调用一个函数。这会导致游戏崩溃。使用调试器运行Godot通常能捕获"
+"这种情况并向你发出警告。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_queue_free>`. This erases the node safely during idle."
 msgstr ""
+"删除一个节点最安全的方法是使用: ref: \"节点. queue_free () "
+"<class_Node_queue_free>\"。这会在程序空闲时安全地擦除该节点。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
-msgstr ""
+msgstr "实例化场景"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:342
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
-msgstr ""
+msgstr "用代码方法实例化一个场景分为两步。 第一个步骤是从你的硬盘中加载场景："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
 msgid "Preloading it can be more convenient, as it happens at parse time:"
-msgstr ""
+msgstr "预加载它可以更方便, 因为它发生在语法解析的时候:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""

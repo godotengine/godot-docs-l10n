@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -800,14 +800,14 @@ msgid ""
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
-"En una escena heredada, puede cambiar cualquier propiedad de cada nodo en el "
-"inspector, además de su nombre. Si modifica y guarda la escena principal, "
-"todas las escenas heredadas se actualizarán para reflejar los cambios. Si "
-"cambia un valor en la escena heredada, siempre anulará la propiedad del "
-"padre. Es útil para UI ya que a menudo requieren variaciones de los mismos "
-"elementos. En general, en el diseño de la interfaz de usuario, botones, "
-"paneles, etc. comparten un estilo de base común e interacciones. No queremos "
-"copiarlo a todas las variaciones de forma manual."
+"En una escena heredada, puedes cambiar cualquier propiedad de cada nodo en "
+"el inspector, además de su nombre. Si modificas y guardas la escena "
+"principal, todas las escenas heredadas se actualizarán para reflejar los "
+"cambios. Si cambias un valor en la escena heredada, siempre anulará la "
+"propiedad del padre. Es útil para UI ya que a menudo requieren variaciones "
+"de los mismos elementos. En general, en el diseño de la interfaz de usuario, "
+"botones, paneles, etc. comparten un estilo de base común e interacciones. No "
+"queremos copiarlo a todas las variaciones de forma manual."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:390
 msgid ""
@@ -831,7 +831,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:401
 msgid "Inherit the Bar Scene to build the LifeBar"
-msgstr "Heredar la escena Bar para construir el LifeBar"
+msgstr "Hereda la escena Bar para construir el LifeBar"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:403
 msgid ""
@@ -866,7 +866,7 @@ msgstr ""
 "componente de la interfaz de usuario. El nombre diferencia esta barra de "
 "``EnergyBar`` que crearemos a continuación. Los otros nodos dentro de la "
 "escena deben describir la estructura del componente con términos amplios, "
-"por lo que funciona con todas las escenas heredadas. Me gusta nuestros nodos "
+"por lo que funciona con todas las escenas heredadas. Como nuestros nodos "
 "``TextureProgress`` y ``Number``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:422
@@ -889,7 +889,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:431
 msgid "Design the EnergyBar"
-msgstr "Diseña la barra de energía"
+msgstr "Diseño de la barra de energía"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:433
 msgid ""
@@ -1101,7 +1101,7 @@ msgstr "El contador de rupias debe verse así"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:542
 msgid "Add the UI components to the final GUI"
-msgstr "Añadir los componentes de la UI a la GUI final"
+msgstr "Añade los componentes de la UI a la GUI final"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 msgid ""
@@ -1111,7 +1111,7 @@ msgid ""
 "container in the scene tree. Do the same for the ``EnergyBar``. You should "
 "see them align vertically."
 msgstr ""
-"Es tiempo de añadir todos los elementos de la UI a la escena principal GUI. "
+"Es hora de añadir todos los elementos de la UI a la escena principal GUI. "
 "Abre de nuevo la escena ``GUI.tscn`` y borra los nodos ``Bar`` y "
 "``Counter``. En el panel de Sistema de Archivos, busca el archivo ``LifeBar."
 "tscn`` y arrástralo y suéltalo en el contenedor ``Bars`` en el árbol de "
@@ -1133,7 +1133,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
-"Los nodos se redimensionan para tomar todo el espacio vertical disponible"
+"Los nodos se redimensionan para ocupar todo el espacio vertical disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:561
 msgid ""
@@ -1199,7 +1199,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 msgid "Place the GUI onto the game's mockup"
-msgstr "Colocar el GUI en la maqueta del juego"
+msgstr "Coloca el GUI en la maqueta del juego"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:599
 msgid ""
@@ -1234,8 +1234,8 @@ msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "final project `here <#>`__."
 msgstr ""
-"Felicitaciones por llegar al final de este largo tutorial. Puedes encontrar "
-"el proyecto final `aquí <#>`__."
+"Enhorabuena por llegar al final de este largo tutorial. Puedes encontrar el "
+"proyecto final `aquí <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:620
 msgid ""

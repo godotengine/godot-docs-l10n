@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:4
 msgid "Size and anchors"
-msgstr ""
+msgstr "尺寸和锚定点"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:6
 msgid ""
@@ -28,6 +28,8 @@ msgid ""
 "position and size of each one of them. Unfortunately, that is rarely the "
 "case."
 msgstr ""
+"如果一个游戏总是用同一分辨率在同样的设备上运行, 摆放控件将是一个简单的事, 只"
+"要逐个设置它们的位置属性和尺寸属性即可。不幸的是, 能像这样处理的情况很少。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:11
 msgid ""
@@ -35,6 +37,8 @@ msgid ""
 "else, from computer monitors to tablets, portable consoles and mobile phones "
 "have different resolutions and aspect ratios."
 msgstr ""
+"如今只有电视机有标准分辨率和纵横比。而其他所有设备，从计算机显示器到平板电"
+"脑、便携游戏主机和手机等等，都有不同的分辨率和纵横比。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:15
 msgid ""
@@ -43,6 +47,9 @@ msgid ""
 "Some will need to follow the bottom of the screen, others the top of the "
 "screen, or maybe the right or left margins."
 msgstr ""
+"有好几种方法可以处理此问题, 但现在让我们试想一下, 当屏幕分辨率被改变后, 控件"
+"需要重新摆放位置的情况。有些控件需要跟随屏幕的底边, 其他的一些要跟着屏幕的顶"
+"部, 或者可能是右边或左边的边距。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:22
 msgid ""
@@ -51,6 +58,9 @@ msgid ""
 "represent a distance in pixels relative to the top-left corner of the parent "
 "control or (in case there is no parent control) the viewport."
 msgstr ""
+"这样的需求通过编辑控件的 * 边距 *（*margin*） 属性来实现。每个控件都有四个页"
+"边距: 左、右、下和上。默认情况下, 它们都表示相对于父控件或 (如果没有父控件) "
+"视区的左上角的像素距离。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:29
 msgid ""
@@ -58,6 +68,8 @@ msgid ""
 "changed to END, the margin values become relative to the bottom-right corner "
 "of the parent control or viewport."
 msgstr ""
+"当水平 (左、右) 和/或垂直 (顶部、底部) 锚点变为END值时, 边距值将以父控件或视"
+"区的右下角作为参照点。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:35
 msgid ""
@@ -65,3 +77,5 @@ msgid ""
 "parent, so when re-sizing the parent, the control will always cover it, "
 "leaving a 20 pixel margin:"
 msgstr ""
+"这幅图中的例子表示, 控件被设置为延展到父控件的右下角, 因此当重新调整父控件"
+"（或视口）大小时, 控件将始终覆盖父控件, 每边留下20像素的边距:"

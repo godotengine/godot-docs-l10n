@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,15 +134,14 @@ msgstr ""
 "importantes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened, to become part of the *Scene Tree* "
 "(more on that next)"
 msgstr ""
 "Contiene el  :ref:`Viewport <class_Viewport>` raíz, al cual se añade una "
-"escena hija cuando se abre por primera vez, para ser parte del *árbol de "
-"escenas* (más información a continuación)"
+"escena hija cuando se abre por primera vez, para ser parte del *Árbol de "
+"Escenas* (más información a continuación)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
 msgid ""
@@ -175,13 +174,13 @@ msgid "Root viewport"
 msgstr "Viewport raíz"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:73
-#, fuzzy
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
-"El :ref:`Viewport <class_Viewport>` raíz se encuentra siempre en lo más alto "
-"del árbol. Desde un nodo, se puede obtener de dos formas diferentes:"
+"La raíz del :ref:`Viewport <class_Viewport>` está siempre en la parte "
+"superior de la escena. Desde un nodo, se puede obtener de dos maneras "
+"diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
 msgid ""
@@ -262,15 +261,14 @@ msgid "A scene is loaded from disk or created by scripting."
 msgstr "Una escena es cargada desde disco o creada mediante scripting."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
-#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
 "child of the \"root\" Viewport (from SceneTree), or to any child or grand-"
 "child of it."
 msgstr ""
-"El nodo raíz de esa escena (únicamente una raíz, ¿recuerdan?) se añade o "
-"como hijo al viewport \"raíz\" (del árbol de escenas), o como cualquier hijo "
-"o nieto de este."
+"El nodo raíz de esa escena (sólo una raíz, ¿recuerdas?) se añade como hijo "
+"del Viewport \"raíz\" (de Árbol de Escenas), o a cualquier hijo o nieto del "
+"mismo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:130
 msgid ""
@@ -281,39 +279,35 @@ msgstr ""
 "\" (llamada de retorno _enter_tree() en GDScript) en orden descendente."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:133
-#, fuzzy
 msgid ""
 "An extra notification, \"ready\" ( _ready() callback in GDScript) is "
 "provided for convenience, when a node and all its children are inside the "
 "active scene."
 msgstr ""
-"Una notificación extra, \"ready\" (llamada de retorno _ready() en GDScript) "
-"se dá por conveniencia, cuando un nodo y todos sus hijos entran a la escena "
-"activa"
+"Se proporciona una notificación adicional, \"ready\" ( _ready() callback en "
+"GDScript) por conveniencia, cuando un nodo y todos sus hijos están dentro de "
+"la escena activa."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:136
-#, fuzzy
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
 msgstr ""
-"Cuando un escena (o parte de esta) es removida, estos reciben la "
-"notificación \"exit scene\" (función callback _exit_tree() en GDScript) en "
-"el orden de abajo hacia arriba."
+"Cuando se elimina una escena (o parte de ella), reciben la notificación "
+"\"exit scene\" ( _exit_tree() callback en GDScript) en orden descendente"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:141
 msgid "Changing current scene"
 msgstr "Cambiando la escena actual"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
-#, fuzzy
 msgid ""
 "After a scene is loaded, it is often desired to change this scene for "
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_change_scene>` function:"
 msgstr ""
-"Después que una escena se ha cargado, a menudo se desea cambiarla por otra "
-"escena. Una forma simple de hacerlo es usando la función :ref:`SceneTree."
+"Después de cargar una escena, a menudo se desea cambiar esta escena por "
+"otra. La forma más sencilla de hacerlo es usar la función :ref:`SceneTree."
 "change_scene() <class_SceneTree_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
@@ -325,3 +319,9 @@ msgid ""
 "be done manually using autoloads (see next chapter!) and :ref:"
 "`doc_background_loading`."
 msgstr ""
+"Esta es una forma rápida y útil de cambiar de escena, pero tiene el "
+"inconveniente de que el juego se detendrá hasta que la nueva escena se "
+"cargue y se ejecute. En algún momento del juego, puede ser conveniente crear "
+"pantallas de carga adecuadas con una barra de progreso, indicadores animados "
+"o carga de hilos (fondo). Esto debe hacerse manualmente usando autoloads "
+"(¡véase el siguiente capítulo!) y :ref:`doc_background_loading`."

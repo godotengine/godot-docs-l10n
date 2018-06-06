@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,32 +18,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:4
+#, fuzzy
 msgid "Introduction to Godot development"
-msgstr ""
+msgstr "Introduction au développement de Godot"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:6
+#, fuzzy
 msgid ""
 "This page is meant to introduce the global organization of Godot Engine's "
 "source code, and give useful tips for extending/fixing the engine on the C++ "
 "side."
 msgstr ""
+"Cette page sert à introduire à l'organisation globale du code source du "
+"moteur de jeu Godot, et donne quelques conseils utiles pour étendre/corriger "
+"les fonctionnalités du moteur en C++."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:11
+#, fuzzy
 msgid "Architecture diagram"
-msgstr ""
+msgstr "Diagramme d'architecture"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:13
+#, fuzzy
 msgid ""
 "The following diagram describes the architecture used by Godot, from the "
 "core components down to the abstracted drivers, via the scene structure and "
 "the servers."
 msgstr ""
+"Le diagramme suivant décrit l'architecture utilisée par Godot, en partant "
+"des composants essentiels jusqu'aux pilotes(drivers), via la structure de la "
+"scène et des serveurs."
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:20
+#, fuzzy
 msgid "Debugging the editor with gdb"
-msgstr ""
+msgstr "Déboguer l'éditeur avec gdb"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:22
+#, fuzzy
 msgid ""
 "If you are writing or correcting bugs affecting Godot Engine's editor, "
 "remember that the binary will by default run the project manager first, and "
@@ -52,7 +64,14 @@ msgid ""
 "e`` argument to Godot Engine's binary from within your project's folder. "
 "Typically:"
 msgstr ""
+"Si vous rencontrez ou corriger des bugs affectant l'éditeur du moteur de jeu "
+"de Godot, rappelez vous que par défaut le gestionnaire de projets est lancé "
+"en premier, et ensuite lance l'éditeur par un autre processus une fois un "
+"projet sélectionné. Pour lancer directement un projet, vous avez besoin de "
+"lancer l'éditeur avec l'argument ``-e`` à partir du dossier de votre projet. "
+"Par exemple :"
 
 #: ../../docs/development/cpp/introduction_to_godot_development.rst:35
+#, fuzzy
 msgid "Or:"
-msgstr ""
+msgstr "Ou en précisant le chemin :"

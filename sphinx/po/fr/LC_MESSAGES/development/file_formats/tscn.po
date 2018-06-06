@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/file_formats/tscn.rst:2
+#, fuzzy
 msgid "TSCN File Format"
-msgstr ""
+msgstr "Le Format de Fichier TSCN"
 
 #: ../../docs/development/file_formats/tscn.rst:4
+#, fuzzy
 msgid ""
 "A :code:`.tscn` File format is the \"Text SCeNe\" file format and represents "
 "a single scene-tree inside Godot. TSCN files have the advantage of being "
@@ -29,29 +31,46 @@ msgid ""
 "import the TSCN files are compiled into binary :code:`.scn` files stored "
 "inside the .import folder. This reduces the data size and speed up loading."
 msgstr ""
+"Le format de fichier :code:`.tscn` est  le format \"Text SCeNe\" et "
+"représente un seul arbre des scènes dans Godot. Les fichiers TSCN ont "
+"l'avantage d'être lisible par et facilite les systèmes de  gestion de "
+"version. Durant l'import, les fichiers TSCN sont compilés en fichiers "
+"binaires :code:`.scn` enregistrés dans le dossier ``.import``. Ceci réduit "
+"l'espace occupé et accélère le chargement."
 
 #: ../../docs/development/file_formats/tscn.rst:10
+#, fuzzy
 msgid ""
 "The :code:`.escn` file format is identical to the TSCN file format, but is "
 "used to indicate to Godot that the file has been exported from another "
 "program and should not be edited by the user from within Godot."
 msgstr ""
+"Le format de fichier :code:`.escn` est identique aux fichiers TSCN, mais il "
+"permet d'indiquer à Godot que le fichier a été exporté d'un autre programme "
+"et qu'il ne doit pas être édité par l'utilisateur dans Godot."
 
 #: ../../docs/development/file_formats/tscn.rst:14
+#, fuzzy
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
 "file `scene_format_text.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/resources/scene_format_text.cpp>`_ in the class :code:"
 "`ResourceFormatLoaderText`"
 msgstr ""
+"Pour ceux à la recherche d'une description plus complète, le parsing est "
+"effectué dans le fichier `scene_format_text.cpp <https://github.com/"
+"godotengine/godot/blob/master/scene/resources/scene_format_text.cpp>`_ dans "
+"la classe :code:`ResourceFormatLoaderText`"
 
 #: ../../docs/development/file_formats/tscn.rst:20
+#, fuzzy
 msgid "File Structure"
-msgstr ""
+msgstr "La structure du fichier"
 
 #: ../../docs/development/file_formats/tscn.rst:22
+#, fuzzy
 msgid "There are five main sections inside the TSCN File:"
-msgstr ""
+msgstr "Il y a cinq sections principale dans les fichiers TSCN:"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 msgid "File Descriptor"

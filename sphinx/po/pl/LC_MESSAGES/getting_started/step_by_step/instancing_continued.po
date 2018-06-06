@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
+msgid "Instancing (continued)"
+msgstr "Instancje (kontynuacja)"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
+msgid "Recap"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
+msgid "Instancing has many handy uses. At a glance, with instancing you have:"
+msgstr ""
+"Instancjonowanie ma wiele przydatnych zastosowań. Na pierwszy rzut oka, z "
+"instancją masz:"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
+msgid "The ability to subdivide scenes and make them easier to manage."
+msgstr "Możliwość podziału scen i ułatwienia zarządzania nimi."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
+msgid ""
+"A more flexible alternative to prefabs (and much more powerful given that "
+"instances can be nested)."
+msgstr ""
+"Bardziej elastyczna alternatywa dla obiektów będących szablonami (i o wiele "
+"mocniejsza, biorąc pod uwagę możliwość zagnieżdżenia się instancji)."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
+msgid ""
+"A way to organize and embed complex game flows or even UIs (in Godot, UI "
+"Elements are nodes, too)."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
+msgid "Design language"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
+msgid ""
+"But the greatest strength that comes with instancing scenes is that it works "
+"as an excellent design language. This is pretty much what distinguishes "
+"Godot from all the other engines out there. Godot was designed from the "
+"ground up around this concept."
+msgstr ""
+"Jednak największą zaletą scen instancjujących jest to że idealnie nadaje się "
+"tworzenia bardzo zaawansowanych scen. To właśnie odróżnia Godota od "
+"wszystkich innych silników. Godot został zaprojektowany od podstaw wokół "
+"tego konceptu."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
+msgid ""
+"When making games with Godot, the recommended approach is to dismiss most "
+"common design patterns, such as MVC or Entity-Relationship diagrams, and "
+"instead think about your scenes in a more natural way. Start by imagining "
+"the visible elements in your game, the ones that can be named not just by a "
+"programmer, but by anyone."
+msgstr ""
+"Podczas tworzenia gier z Godot, zalecane jest, aby odrzucić najbardziej "
+"powszechne wzorce projektowe, takie jak MVC lub diagramy Entity-Relationhip, "
+"a zamiast tego myśleć o swoich scenach w bardziej naturalny sposób. Zacznij "
+"od wyobrażenia sobie elementów widocznych w grze, które mogą być nazwane nie "
+"tylko przez programistę, ale przez każdego."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
+msgid "For example, here's how a simple shooter game could be imagined:"
+msgstr "Na przykład, oto jak można sobie wyobrazić prostą grę strzelecką:"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
+msgid ""
+"You can come up with a diagram like this for almost any kind of game. Write "
+"down the parts of the game that you can visualize, and then add arrows to "
+"represent ownership of one component by another."
+msgstr ""
+"Możesz wymyślić taki schemat dla prawie każdego rodzaju gry. Zapisz części "
+"gry, które możesz wizualizować, a następnie dodaj strzałki, aby "
+"reprezentować własność jednego komponentu przez drugi."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
+msgid ""
+"Once you have a diagram like this, the recommended process for making a game "
+"is to create a scene for each element listed in the diagram. You'll use "
+"instancing (either by code or directly in the editor) for the ownership "
+"relationships."
+msgstr ""
+"Gdy masz już taki schemat, zalecanym procesem tworzenia gry jest stworzenie "
+"sceny dla każdego z elementów wymienionych na diagramie. Użyjesz "
+"instancjonowania (za pomocą kodu lub bezpośrednio w edytorze) dla relacji "
+"własnościowych."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
+msgid ""
+"A lot of time spent in programming games (or software in general) is on "
+"designing an architecture and fitting game components to that architecture. "
+"Designing based on scenes replaces that approach and makes development much "
+"faster and more straightforward, allowing you to concentrate on the game "
+"logic itself. Because most game components map directly to a scene, using a "
+"design-based on scene instantiation means little other architectural code is "
+"needed."
+msgstr ""
+"Wiele czasu spędzanego w grach (lub ogólnie w oprogramowaniu) to "
+"projektowanie architektury i dopasowywanie komponentów gier do tej "
+"architektury. Projektowanie w oparciu o sceny zastępuje to podejście i "
+"znacznie przyspiesza i upraszcza rozwój, pozwalając skupić się na samej "
+"logice gry. Ponieważ większość komponentów gry oddziałuje bezpośrednio na "
+"scenę, zastosowanie instancji opartej na projekcie oznacza, że nie jest "
+"potrzebny żaden inny kod architektoniczny."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
+msgid ""
+"Let's take a look at one more, somewhat more complex, example of an open-"
+"world type game with lots of assets and nested elements:"
+msgstr ""
+"Przyjrzyjmy się jeszcze jednemu, nieco bardziej złożonemu przykładowi gry "
+"typu open-world z dużą ilością zasobów i elementów zagnieżdżonych:"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
+msgid ""
+"Take a look at the room element. Let's say we started there. We could make a "
+"couple of different room scenes, with different arrangements of furniture "
+"(also scenes) in them. Later, we could make a house scene, connecting rooms "
+"to make up its interior."
+msgstr ""
+"Przyjrzyj się pokojowi. Powiedzmy, że właśnie tutaj zaczynamy. Mogliśmy "
+"wykonać kilka różnych scen pokojów, z różnymi aranżacjami mebli (także scen) "
+"w nich. Potem mogliśmy stworzyć scenę dom, łączącą pokoje i tworzącą jej "
+"wnętrze."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
+msgid ""
+"Then, we could make a citadel scene, which is made out of many instanced "
+"houses. Then, we could start working on the world map terrain, adding the "
+"citadel onto it."
+msgstr ""
+"Wtedy moglibyśmy stworzyć scenę cytadeli, która składa się z wielu instancji "
+"domów. Wtedy moglibyśmy zacząć pracę na mapie świata, dodając do niej "
+"cytadelę."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
+msgid ""
+"Later, we could create scenes that represent guards (and other NPCs) and add "
+"them to the citadel as well. As a result, they would be indirectly added to "
+"the overall game world."
+msgstr ""
+"Później mogliśmy tworzyć sceny reprezentujące strażników (i innych NPC-ów) i "
+"dodawać je do cytadeli. W rezultacie zostałyby one pośrednio dodane do "
+"całego świata gier."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
+msgid ""
+"With Godot, it's easy to iterate on your game like this, as all you need to "
+"do is create and instance more scenes. Furthermore, the editor UI is "
+"designed to be user friendly for programmers and non-programmers alike. A "
+"typical team development process can involve 2D or 3D artists, level "
+"designers, game designers, and animators, all working with the editor "
+"interface."
+msgstr ""
+"Z Godotem, łatwo jest tworzyć grę w ten sposób, ponieważ wszystko co musisz "
+"zrobić to stworzyć i wyświetlić więcej scen. Ponadto, interfejs użytkownika "
+"edytora jest zaprojektowany tak, aby był przyjazny dla programistów, jak i "
+"dla innych użytkowników. Typowy proces tworzenia może obejmować artystów 2D "
+"lub 3D, projektantów poziomów, projektantów gier i animatorów, którzy "
+"współpracują z interfejsem edytora."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
+msgid "Information overload!"
+msgstr "Przeciążenie informacjami!"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
+msgid ""
+"This has been a lot of high level information dropped on you all at once. "
+"However, the important part of this tutorial was to create an awareness of "
+"how scenes and instancing are used in real projects."
+msgstr ""
+"To było wiele informacji na wysokim poziomie które spadły na wszystkich na "
+"raz. Ważną częścią tego samouczka było jednak uświadomienie sobie, jak sceny "
+"i instancje są wykorzystywane w rzeczywistych projektach."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
+msgid ""
+"Everything discussed here will become second nature to you once you start "
+"making games and putting these concepts into practice. For now, don't worry "
+"about it too much, and go on to the next tutorial!"
+msgstr ""
+"Wszystko, o czym tutaj rozmawiamy, stanie się dla Ciebie drugą naturą, gdy "
+"zaczniesz grać i wdrażać te koncepcje w życie. Na razie nie martw się tym za "
+"bardzo i przejdź do następnego samouczka!"

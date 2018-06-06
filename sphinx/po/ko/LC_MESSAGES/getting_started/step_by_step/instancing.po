@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:4
+msgid "Instancing"
+msgstr "인스턴스"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:7
+msgid "Introduction"
+msgstr "소개"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:9
+msgid ""
+"Creating a single scene and adding nodes into it might work for small "
+"projects, but as a project grows in size and complexity, the number of nodes "
+"can quickly become unmanageable. To address this, Godot allows a project to "
+"be separated into any number of scenes. This provides you with a powerful "
+"tool that helps you organize the different components of your game."
+msgstr ""
+"하나의 씬에 노드를 넣는 걸로도 작은 프로젝트는 작업할 수 있을 겁니다, 하지만 "
+"프로젝트의 규모가 커지고 복잡하게 되면, 수많은 노드들을 다루기 어렵게 됩니"
+"다. 이를 해결하기 위해, Godot은 프로젝트를 여러 개의 씬으로 나눌 수 있게 합니"
+"다. 이것은 당신이 게임 내의 다른 구성 요소들을 결합할 수 있도록 하는 강력한 "
+"도구입니다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:15
+msgid ""
+"In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
+"nodes organized in a tree structure, with a single node as the tree root."
+msgstr ""
+":ref:`doc_scenes_and_nodes`에서 당신은 씬은 노드 들이 트리 형태로 결합된 모임"
+"이고, 하나의 노드가 트리 루트라고 배웠습니다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:20
+msgid ""
+"You can create as many scenes as you like and save them to disk. Scenes "
+"saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
+"filename extension."
+msgstr ""
+"당신은 원하는 만큼 많은 씬들을 만들 수 있습니다. 씬들은 \"압축된 씬\"이라 불"
+"리는 방법으로 저장되며 ``.tscn`` 파일 확장자 명을 갖습니다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:26
+msgid ""
+"Once a scene has been saved, it can be instanced into another scene as if it "
+"were any other node."
+msgstr ""
+"하나의 씬이 저장되면, 다른 노드인 것처럼 다른 씬으로 인스턴스화 될 수 있습니"
+"다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:31
+msgid "In the above picture, Scene B was added to Scene A as an instance."
+msgstr "위 그림에서 씬 B는 씬 A에 인스턴스로 추가되었습니다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:34
+msgid "Instancing By Example"
+msgstr "예제를 통해 인스턴스화하기"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:36
+msgid ""
+"To learn how instancing works, let's start by downloading a sample project: :"
+"download:`instancing.zip <files/instancing.zip>`."
+msgstr ""
+"어떻게 인스턴스가 이루어지는지 배우기 위해, 샘플 프로젝트를 다운받읍시다: :"
+"download:`instancing.zip <files/instancing.zip>`."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:39
+msgid ""
+"Unzip this project anywhere you like. Then open Godot and add this project "
+"to the project manager using the 'Import' button:"
+msgstr ""
+"원하는 위치에 이 프로젝트를 풀으세요. 그리고 Godot을 키고 프로젝트 매니저에"
+"서 '가져오기' 버튼을 눌러 이 프로젝트를 추가하세요:"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:44
+msgid ""
+"Browse to the folder you extracted and open the \"project.godot\" file you "
+"can find inside it. After doing this, the new project will appear on the "
+"list of projects. Edit the project by pressing the 'Edit' button."
+msgstr ""
+"당신이 추출한 폴더를 검색하고 그 안에 있는 \"project.godot\" 파일을 여세요. "
+"그러면, 새 프로젝트가 프로젝트 목록에 뜰 것입니다. '편집' 버튼을 눌러 프로젝"
+"트를 편집하세요."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:48
+msgid ""
+"This project contains two scenes: \"Ball.tscn\" and \"Main.tscn\". The ball "
+"scene uses a :ref:`RigidBody2D <class_RigidBody2D>` to provide physics "
+"behavior while the main scene has a set of obstacles for the ball to collide "
+"with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
+msgstr ""
+"이 프로젝트는 두 개의 씬을 갖고 있습니다: \"Ball.tscn\" 과  \"Main.tscn\" 이"
+"죠. 공 씬은 물리 행동을 주기 위해 :ref:`RigidBody2D <class_RigidBody2D>`를 사"
+"용하고 메인 씬은 (:ref:`StaticBody2D <class_StaticBody2D>`를 사용해) 공과 충"
+"돌하기 위한 장애물들이 있습니다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:57
+msgid "Open the ``Main`` scene, and then select the root node:"
+msgstr "``메인`` 씬을 열고, 루트 노드를 선택하세요:"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:61
+msgid ""
+"We want to add an instance of the ``Ball`` scene as a child of ``Main``. "
+"Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
+"file as a Node.\") and select the ``Ball.tscn`` file."
+msgstr ""
+"우리는 ``공``씬을 ``메인`` 씬의 자식으로 인스턴스하여 추가할 겁니다. \"사슬"
+"\" 모양 버튼을 누르세요 (커서를 올리면 \"씬 파일을 노드로 추가합니다.\" 라고 "
+"뜹니다.) 그리고 ``Ball.tscn`` 파일을 선택하세요."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:67
+msgid ""
+"The ball will be placed at the top-left corner of the screen area (this is "
+"``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
+"the top-center of the scene:"
+msgstr ""
+"공은 화면 영역의 왼쪽 위에 자리잡을 것입니다 (거기가 화면 좌표에서 ``(0, 0)``"
+"인 부분입니다.). 공을 클릭하고 가운데 쯤에 드래그하세요:"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:73
+msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
+msgstr "\"재생\" 버튼을 눌러 공이 화면의 아래로 떨어지는지 확인하세요:"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:78
+msgid "Multiple Instances"
+msgstr "여러 인스턴스"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:80
+msgid ""
+"You can add as many instances as you like to a scene, either by using the "
+"\"Instance\" button again, or by clicking on the ball instance and pressing "
+"\"Duplicate\" (Ctrl-D):"
+msgstr ""
+"당신은 씬에 원하는 만큼 많은 인스턴스를 추가할 수 있습니다, 다시 \"인스턴스"
+"\" 버튼을 누르거나, 공 인스턴스를 클릭하고 \"복사\" (Ctrl-D)를 눌러서 말이죠:"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:86
+msgid "Run the scene again and all of the balls will fall."
+msgstr "씬을 다시 실행시키면 모든 공들이 떨어질 겁니다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:91
+msgid "Editing instances"
+msgstr "인스턴스 편집"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:93
+msgid ""
+"Open the ``Ball`` scene and change the ``Bounce`` property in the Inspector "
+"to `1`. Press \"Play\" and notice that all of the instanced balls are now "
+"much more bouncy. Because the instanced balls are based on the saved scene, "
+"changes to that scene will affect all instances."
+msgstr ""
+"``공`` 씬을 열고 인스펙터 내에 있는 ``Bounce`` 속성을 `1`로 변경하세요. \"재"
+"생\"을 누르면 모든 인스턴스된 공들이 더 많이 튀어오르는 것에 주목하세요. 인스"
+"턴스된 공들은 저장된 씬을 기반으로 두기 때문에, 그 씬에 변화를 준다면 씬의 인"
+"스턴스에 영향을 줍니다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:98
+msgid ""
+"You can also adjust individual instances. Set the bounce value back to "
+"``0.5`` and then in the ``Main`` scene, select one of the instanced balls. "
+"Set its ``Bounce`` to ``1`` and press \"Play\"."
+msgstr ""
+"또한 각각의 인스턴스들도 조절할 수 있습니다. 바운스 값을 ``0.5``로 돌려 놓고 "
+"``메인`` 씬으로 돌아간 다음, 인스턴스된 공들 중 하나를 선택하세요. 그것의 "
+"``Bounce`` 값을 ``1``로 맞추고 \"재생\"을 누르세요."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:104
+msgid ""
+"Notice that a grey \"revert\" button appears next to the adjusted property. "
+"When this button is present, it means you modified a property in the "
+"instanced scene to override its value in the saved scene. Even if that "
+"property is modified in the original scene, the custom value will remain. "
+"Pressing the revert button will restore the property to the value in the "
+"saved scene."
+msgstr ""
+"조절된 속성 옆에 회색 \"새로고침\" 버튼이 나타난 것에 주목하세요. 이 버튼이 "
+"있다는 것은, 당신이 인스턴스된 씬의 속성을 수정하여 저장된 씬의 값을 무시하"
+"게 만든 것입니다. 비록 그 속성이 원래 씬에서 수정되더라도, 사용자 지정 값은 "
+"유지됩니다. 새로고침 버튼을 눌러 저장된 씬의 값으로 속성을 복원시킬 수 있을 "
+"것입니다."
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:112
+msgid "Conclusion"
+msgstr "결론"
+
+#: ../../docs/getting_started/step_by_step/instancing.rst:114
+msgid ""
+"Instancing can be useful when you want to create many copies of the same "
+"object."
+msgstr "인스턴스화는 많은 양의 오브젝트 복사본을 만들 때 유용합니다."

@@ -1,0 +1,196 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
+msgid "Instancing (continued)"
+msgstr "인스턴스 (이어서)"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
+msgid "Recap"
+msgstr "요약"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
+msgid "Instancing has many handy uses. At a glance, with instancing you have:"
+msgstr ""
+"인스턴스화는 매우 다양하게 쓰입니다. 인스턴스화를 통해 무엇을 할 수 있는지 대"
+"충 살표보시죠:"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
+msgid "The ability to subdivide scenes and make them easier to manage."
+msgstr "관리하기 편하게 하기 위해 씬들을 여러 하위 객체로 나눌 수 있는 것."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
+msgid ""
+"A more flexible alternative to prefabs (and much more powerful given that "
+"instances can be nested)."
+msgstr ""
+"유니티의 프리팹보다 더 유연하게 쓰일 수 있음 (인스턴스는 중첩될 수 있기에 더 "
+"강력하기도 합니다)."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
+msgid ""
+"A way to organize and embed complex game flows or even UIs (in Godot, UI "
+"Elements are nodes, too)."
+msgstr ""
+"복잡한 게임 플로우나 심지어는 UI를 구조화하고 내장하는 방법 (Godot에서는 UI"
+"의 원소들 마저도 노드들입니다)."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
+msgid "Design language"
+msgstr "언어의 설계"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
+msgid ""
+"But the greatest strength that comes with instancing scenes is that it works "
+"as an excellent design language. This is pretty much what distinguishes "
+"Godot from all the other engines out there. Godot was designed from the "
+"ground up around this concept."
+msgstr ""
+"씬을 인스턴스화하는 것의 가장 강력한 장점은 디자인 언어와 아주 잘 맞는다는 것"
+"입니다. 이것이 사실상 Godot와 다른 알려진 엔진들을 구분하는 부분입니다. Godot"
+"는 애초에 바닥부터 이러한 컨셉으로 디자인되었습니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
+msgid ""
+"When making games with Godot, the recommended approach is to dismiss most "
+"common design patterns, such as MVC or Entity-Relationship diagrams, and "
+"instead think about your scenes in a more natural way. Start by imagining "
+"the visible elements in your game, the ones that can be named not just by a "
+"programmer, but by anyone."
+msgstr ""
+"고도로 게임을 만들 때에는 통상적으로 쓰이는 디자인 패턴들(MVC 혹은 개체-관계 "
+"다이어그램 등)을 버리고 씬들을 좀 더 자연스럽게 바라보기를 권장합니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
+msgid "For example, here's how a simple shooter game could be imagined:"
+msgstr ""
+"예를 들자면 우리는 간단한 슈팅 게임을 다음과 같이 상상해볼 수 있습니다:"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
+msgid ""
+"You can come up with a diagram like this for almost any kind of game. Write "
+"down the parts of the game that you can visualize, and then add arrows to "
+"represent ownership of one component by another."
+msgstr ""
+"무슨 게임을 디자인하든, 위와 같은 다이어그램을 그릴 수 있을 것입니다. 게임에"
+"서 시각화할 수 있는 부분들을 쭉 적어보고, 각 컴포넌트들의 소유권을 나타내주"
+"기 위한 화살표를 추가해줍니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
+msgid ""
+"Once you have a diagram like this, the recommended process for making a game "
+"is to create a scene for each element listed in the diagram. You'll use "
+"instancing (either by code or directly in the editor) for the ownership "
+"relationships."
+msgstr ""
+"다이어그램이 완성되었다면 게임을 만들 때 다이어그램에 있는 원소들에 대응되는 "
+"씬을 만들기를 권장합니다. 여기서 소유 관계를 나타내주기 위해 코드를 사용하"
+"든, 에디터로 직접하든 인스턴스화를 사용할 것입니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
+msgid ""
+"A lot of time spent in programming games (or software in general) is on "
+"designing an architecture and fitting game components to that architecture. "
+"Designing based on scenes replaces that approach and makes development much "
+"faster and more straightforward, allowing you to concentrate on the game "
+"logic itself. Because most game components map directly to a scene, using a "
+"design-based on scene instantiation means little other architectural code is "
+"needed."
+msgstr ""
+"게임을 프로그래밍할 때, 혹은 일반적으로 소프트웨어를 짤 때 가장 오래 걸리는 "
+"부분은 구조를 디자인하고 게임의 컴포넌트들을 그 구조에 알맞게 끼워넣는 것입니"
+"다. 씬을 기반으로 디자인하는 것은 이 방법을 대체하기에 게임의 로직 자체에 신"
+"경 쓸 수 있게 되어 개발을 좀 더 빠르고, 간단하게 만듭니다. 대부분의 게임 컴포"
+"넌트가 그대로 씬으로 되기 때문에 씬 인스턴화를 사용하게 되면 구조 디자인에 따"
+"른 구조적인 코드가 딱히 필요하지 않습니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
+msgid ""
+"Let's take a look at one more, somewhat more complex, example of an open-"
+"world type game with lots of assets and nested elements:"
+msgstr ""
+"좀 더 복잡한 예시를 들어보겠습니다. 한 번 애셋들도 많고, 중첩된 원소들이 많"
+"은 오픈월드 게임을 살펴보죠:"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
+msgid ""
+"Take a look at the room element. Let's say we started there. We could make a "
+"couple of different room scenes, with different arrangements of furniture "
+"(also scenes) in them. Later, we could make a house scene, connecting rooms "
+"to make up its interior."
+msgstr ""
+"방 원소를 살펴보죠. 우리가 시작하는 부분을 봅시다. 우리는 가구 배치를 달리하"
+"여 서로 다른 두 가지의 방 씬을 만들 수 있습니다. 나중에는, 방들을 연결해서 "
+"집 씬을 만들 수도 있습니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
+msgid ""
+"Then, we could make a citadel scene, which is made out of many instanced "
+"houses. Then, we could start working on the world map terrain, adding the "
+"citadel onto it."
+msgstr ""
+"그런 뒤, 많은 인스턴스된 집들로 이루어진 성 씬을 만들 수 있습니다. 그리고, 월"
+"드 맵 지형에 성을 추가하는 작업을 할 수 있습니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
+msgid ""
+"Later, we could create scenes that represent guards (and other NPCs) and add "
+"them to the citadel as well. As a result, they would be indirectly added to "
+"the overall game world."
+msgstr ""
+"나중에는, 경호원이나 다른 NPC들의 씬을 만들고 성에 추가 할 수 있습니다. 그 결"
+"과, 그것들은 게임 세상에 간접적으로 추가됩니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
+msgid ""
+"With Godot, it's easy to iterate on your game like this, as all you need to "
+"do is create and instance more scenes. Furthermore, the editor UI is "
+"designed to be user friendly for programmers and non-programmers alike. A "
+"typical team development process can involve 2D or 3D artists, level "
+"designers, game designers, and animators, all working with the editor "
+"interface."
+msgstr ""
+"Godot이라면, 당신은 씬을 만들고 그것을 인스턴스하면 되니까 작업을 쉽게 반복"
+"할 수 있습니다. 게다가, 에디터 UI는 프로그래머나 비 프로그래머에게도 친근하"
+"게 디자인 되었습니다. 전형적인 개발 팀은 2D나 3D 아티스트, 레벨 디자이너, 게"
+"임 디자이너, 애니메이터를 포함하지만, 모두가 이 에디터 내에서 작업 할 수 있습"
+"니다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
+msgid "Information overload!"
+msgstr "정보가 너무 많아요!"
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
+msgid ""
+"This has been a lot of high level information dropped on you all at once. "
+"However, the important part of this tutorial was to create an awareness of "
+"how scenes and instancing are used in real projects."
+msgstr ""
+"많은 정보들을 당신이 한번에 이해하긴 어려울 겁니다. 하지만 이 튜토리얼의 핵심"
+"은 씬이 프로젝트에서 씬과 인스턴스화가 어떻게 이용되는지를 알면 되는 것입니"
+"다."
+
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
+msgid ""
+"Everything discussed here will become second nature to you once you start "
+"making games and putting these concepts into practice. For now, don't worry "
+"about it too much, and go on to the next tutorial!"
+msgstr ""
+"여기에서 다룬 모든 내용은 게임을 처음 만들게 되면서 자연스럽게 익히게 될 것입"
+"니다. 지금은, 너무 걱정하지 마시고, 다음 튜토리얼로 넘어갑시다!"

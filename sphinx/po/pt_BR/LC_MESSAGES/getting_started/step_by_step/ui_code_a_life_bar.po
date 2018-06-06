@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,53 +19,59 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
-msgstr ""
+msgstr "Controlar a interface do jogo com código"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 msgid "Intro"
-msgstr ""
+msgstr "Introdução"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
 msgid ""
 "In this tutorial you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
+"Neste tutorial, você conectará um personagem a uma barra de vida e animará a "
+"perda desta vida."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
 "Here's what you'll create: the bar and the counter animate when the "
 "character takes a hit. They fade when it dies."
 msgstr ""
+"Aqui está o que você vai criar: a barra e o contador que animara quando o "
+"personagem recebe um hit. Eles desaparecem quando morre."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:18
 msgid "You will learn:"
-msgstr ""
+msgstr "Você vai aprender:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
-msgstr ""
+msgstr "Como conectar um caractere a uma interface gráfica com sinais"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr ""
+msgstr "Como **controlar** uma GUI com GDscript"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
-msgstr ""
+msgstr "Como animar uma barra de vida com o nó: ref: `Tween <class_Tween>`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:25
 msgid ""
 "If you want to learn how to set up the interface instead, check out the step-"
 "by-step UI tutorials:"
 msgstr ""
+"Se você quiser aprender como configurar a interface, confira os tutoriais "
+"passo a passo da interface do usuário:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid "Create a main menu screen"
-msgstr ""
+msgstr "Criar uma tela do menu principal"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
 msgid "Create a game user interface"
-msgstr ""
+msgstr "Crie uma interface de usuário do jogo"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -77,6 +83,14 @@ msgid ""
 "manageable, and allows different team members to work on different parts of "
 "the game."
 msgstr ""
+"Quando você codifica um jogo, você quer construir a jogabilidade central "
+"primeiro: a mecânica principal, a entrada do jogador, as condições de "
+"vitória e derrota. A interface do usuário vem um pouco depois. Você quer "
+"manter todos os elementos que compõem seu projeto separados, se possível. "
+"Cada personagem deve estar em sua própria cena, com seus próprios scripts, "
+"assim como os elementos da interface do usuário. Isso evita bugs, mantém seu "
+"projeto gerenciável e permite que diferentes membros da equipe trabalhem em "
+"diferentes partes do jogo."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:40
 msgid ""
@@ -85,12 +99,18 @@ msgid ""
 "constant time intervals. We want the life bar to update when the Player "
 "takes damage."
 msgstr ""
+"Quando a jogabilidade central e a interface do usuário estiverem prontas, "
+"você precisará conectá-las de alguma forma. Em nosso exemplo, temos o "
+"inimigo que ataca o jogador em intervalos de tempo constantes. Queremos que "
+"a barra de vida seja atualizada quando o jogador sofrer dano."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
+#, fuzzy
 msgid "To do this, we will use **signals**."
-msgstr ""
+msgstr "Para fazer isso, usaremos ** sinais **."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
+#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
@@ -101,10 +121,18 @@ msgid ""
 "information on check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
+"Sinais são a versão do padrão da Godot. Eles nos permitem enviar algumas "
+"mensagens. Outros podem nos conectar ao objeto que **emits** emite o sinal e "
+"receber as informações. É uma ferramenta poderosa que usamos muito para "
+"Interface de Usuário e sistemas de conquistas. Embora você não queira usá-"
+"los em todos os lugares. Conectar dois nós adiciona algum acoplamento entre "
+"eles. Quando há muitas conexões, elas se tornam difíceis de gerenciar. Para "
+"mais informações sobre o check-out, consulte o tutorial sobre sinais de "
+"vídeo <https://youtu.be/l0BkQxF7X3E> `_ no GDquest."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
-msgstr ""
+msgstr "Baixe e explore o projeto inicial"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:55
 msgid ""
@@ -112,6 +140,10 @@ msgid ""
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
+"Baixe o projeto Godot:: download: `ui_code_life_bar.zip <arquivos / "
+"ui_code_life_bar.zip>`. Ele contém todos os recursos e scripts de que você "
+"precisa para começar. Extraia o arquivo .zip para obter duas pastas: `start` "
+"e` end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -122,6 +154,12 @@ msgid ""
 "basic combat mechanics already work. But as the character isn't connected to "
 "the life bar the ``GUI`` doesn't do anything."
 msgstr ""
+"Carregue o projeto `` start`` na Godot. No dock `` FileSystem`` clique duas "
+"vezes em LevelMockup.tscn para abri-lo. É uma maquete de um jogo de RPG onde "
+"dois personagens se enfrentam. O inimigo rosa ataca e danifica o quadrado "
+"verde em intervalos de tempo regulares, até a sua morte. Sinta-se livre para "
+"experimentar o jogo: a mecânica básica de combate já funciona. Mas como o "
+"personagem não está conectado à barra de vida, o `` GUI`` não faz nada."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:68
 msgid ""
@@ -132,41 +170,59 @@ msgid ""
 "prototype and test the gameplay, chances are it won't work well and you'll "
 "have to re-create it from scratch."
 msgstr ""
+"Isso é típico de como você codificava um jogo: você primeiro implementa a "
+"jogabilidade central, controla a morte do jogador e somente então você "
+"adicionará a interface. Isso porque a interface do usuário ouve o que está "
+"acontecendo no jogo. Portanto, não pode funcionar se outros sistemas ainda "
+"não estiverem funcionando. Se você projetar a interface do usuário antes de "
+"prototipar e testar a jogabilidade, é provável que ela não funcione bem e "
+"você terá que recriá-la do zero."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
-msgstr ""
+msgstr "A cena contém uma sprite de fundo, uma GUI e dois caracteres."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
-msgstr ""
+msgstr "A árvore de cena, com a cena GUI configurada para exibir seus filhos"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
+#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the Game User Interface. It comes with a "
 "barebones script where we get the path to nodes that exist inside the scene:"
 msgstr ""
+"A cena GUI encapsula toda a interface do usuário do jogo. Ele vem com um "
+"script de barebones onde obtemos o caminho para os nós que existem dentro da "
+"cena:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
+"`` number_label`` exibe uma contagem de vida como um número. É um nó `` "
+"Label``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
-msgstr ""
+msgstr "`` bar`` é a própria barra de vida. É um nó `` TextureProgress``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
 msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
 msgstr ""
+"`` tween`` é um nó de estilo de componente que pode animar e controlar "
+"qualquer valor ou método de qualquer outro nó"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
+#, fuzzy
 msgid ""
 "The project uses a simple organisation that works for game jams and tiny "
 "games."
 msgstr ""
+"O projeto usa uma organização simples que funciona para competições de jogos "
+"e pequenos jogos."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -177,6 +233,11 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
+"Na raiz do projeto, na pasta `res: //`, você encontrará o `LevelMockup`. "
+"Essa é a cena principal do jogo e a que vamos trabalhar. Todos os "
+"componentes que compõem o jogo estão na pasta `scenes /`. A pasta `assets /` "
+"contém os sprites do jogo e a fonte do contador de HP. Na pasta `scripts /`, "
+"você encontrará o inimigo, o player e os scripts do controlador GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
 msgid ""
@@ -184,14 +245,17 @@ msgid ""
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
 "themselves."
 msgstr ""
+"Clique no ícone de edição de cena à direita do nó na árvore de cena para "
+"abrir a cena no editor. Você verá o LifeBar e o EnergyBar como subcenas."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
 msgid "The scene tree, with the Player scene set to display its children"
 msgstr ""
+"A árvore de cena, com a cena Player configurada para exibir seus filhos"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
-msgstr ""
+msgstr "Configurar a barra de vida com o máximo de segurança do jogador"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
 msgid ""
@@ -201,6 +265,11 @@ msgid ""
 "player's health to the GUI every time they take damage. The GUI will then "
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
+"Temos que dizer à GUI de alguma forma qual é a saúde atual do player, "
+"atualizar a textura da barra de vida e exibir a integridade restante no "
+"contador HP no canto superior esquerdo da tela. Para fazer isso, enviamos a "
+"saúde do jogador para a GUI toda vez que receberem dano. A GUI irá então "
+"atualizar os nós `` Lifebar`` e `` Number`` com este valor."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
 msgid ""
@@ -209,6 +278,10 @@ msgid ""
 "step is thus to tell the ``GUI`` what the green character's ``max_health`` "
 "is."
 msgstr ""
+"Nós poderíamos parar aqui para exibir o número, mas precisamos inicializar o "
+"`` max_value`` para que ele seja atualizado nas proporções corretas. O "
+"primeiro passo é dizer ao `` GUI`` qual é o `` max_health`` do personagem "
+"verde."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:139
 msgid ""
@@ -217,14 +290,23 @@ msgid ""
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
+"A barra, `TextureProgress`, tem um` max_value` de `100` por padrão. Se você "
+"não precisa exibir a saúde do personagem com um número, não é necessário "
+"alterar a propriedade `max_value`. Você envia uma porcentagem do `Player` "
+"para o` GUI` em vez disso:`health / max_health * 100`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
+#, fuzzy
 msgid ""
 "Click the script icon to the right of the ``GUI`` in the Scene dock to open "
 "its script. In the ``_ready`` function, we're going to store the "
 "``Player``'s ``max_health`` in a new variable and use it to set the "
 "``bar``'s ``max_value``:"
 msgstr ""
+"Clique no ícone de script à direita da `` GUI`` na doca Scene para abrir seu "
+"script. Na função `` _ready``, vamos armazenar `` max_health`` do `` "
+"Player`` em uma nova variável e usá-la para definir `` max_value`` do `` "
+"bar`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
 msgid ""
@@ -233,6 +315,10 @@ msgid ""
 "from there. It gives us access to the node. The second part of the "
 "statement, ``.max_health``, accesses the ``max_health`` on the Player node."
 msgstr ""
+"Vamos acabar com isso. `` $ \"../ Characters / Player\" `` é uma abreviação "
+"que sobe um nó na árvore de cena, e recupera o nó `` Characters / Player`` "
+"de lá. Isso nos dá acesso ao nó. A segunda parte da instrução, `` ."
+"max_health``, acessa o `` max_health`` no nó do Player."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
 msgid ""
@@ -240,6 +326,9 @@ msgid ""
 "the two lines into one, but we'll need to use ``player_max_health`` again "
 "later in the tutorial."
 msgstr ""
+"A segunda linha atribui este valor a `` bar.max_value``. Você pode combinar "
+"as duas linhas em uma, mas precisaremos usar `` player_max_health`` "
+"novamente mais tarde no tutorial."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
 msgid ""
@@ -247,6 +336,9 @@ msgid ""
 "game, so we could work with this. Why do we still use ``max_health``? There "
 "are two reasons:"
 msgstr ""
+"`` Player.gd`` define o `` health`` para `` max_health`` no início do jogo, "
+"então podemos trabalhar com isso. Por que ainda usamos `` max_health``? "
+"Existem dois motivos:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
 msgid ""
@@ -254,8 +346,12 @@ msgid ""
 "``max_health``: a future version of the game may load a level where the "
 "player already lost some health."
 msgstr ""
+"Nós não temos a garantia de que `` health`` será sempre igual a `` "
+"max_health``: uma versão futura do jogo pode carregar um nível em que o "
+"jogador já perdeu alguma vida."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
+#, fuzzy
 msgid ""
 "When you open a scene in the game, Godot creates nodes one by one, following "
 "the order in your Scene dock, from top to bottom. `GUI` and `Player` are not "
@@ -265,16 +361,25 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
+"Quando você abre uma cena no jogo, Godot cria nós um por um, seguindo a "
+"ordem no seu Dock de cena, de cima para baixo. `GUI` e` Player` não fazem "
+"parte do mesmo ramo de nó. Para ter certeza de que ambos existem quando nos "
+"acessamos, temos que usar a função `_ready`. Godot chama `_ready` logo após "
+"carregar todos os nós, antes do jogo começar. É a função perfeita para "
+"configurar tudo e preparar a sessão do jogo. Saiba mais sobre _ready:: doc: "
+"`scripting_continued`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
-msgstr ""
+msgstr "Atualize a vida com um sinal quando o jogador leva um golpe"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
 msgid ""
 "Our GUI is ready to receive the ``health`` value updates from the "
 "``Player``. To achieve this we're going to use **signals**."
 msgstr ""
+"Nossa GUI está pronta para receber as atualizações do valor `` health`` do "
+"`` Player``. Para conseguir isso, vamos usar ** sinais **."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:195
 msgid ""
@@ -283,8 +388,14 @@ msgid ""
 "can also create your own using the `signal` keyword. On the `Player` node, "
 "you'll find two signals we created for you: `died` and `health_changed`."
 msgstr ""
+"Existem muitos sinais internos úteis como `enter_tree` e` exit_tree`, que "
+"todos os nós emitem quando são respectivamente criados e destruídos. Você "
+"também pode criar seus próprios usando a palavra-chave `signal`. No nó "
+"`Player`, você encontrará dois sinais que criamos para você:` died` e "
+"`health_changed`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
+#, fuzzy
 msgid ""
 "Why don't we directly get the ``Player`` node in the ``_process`` function "
 "and look at the health value? Accessing nodes this way creates tight "
@@ -295,8 +406,18 @@ msgid ""
 "a second and you'll likely break the game because of the order in which the "
 "code runs."
 msgstr ""
+"Por que nós não obtemos diretamente o nó `` Player`` na função `` _process`` "
+"e olhamos o valor de saúde? O acesso aos nós dessa maneira cria um "
+"acoplamento firme entre eles. Se você fez isso com moderação, pode "
+"funcionar. Conforme seu jogo cresce, você pode ter muito mais conexões. Se "
+"você conseguir os nós dessa maneira, fica complexo rapidamente. Não só isso: "
+"você precisa ouvir a mudança de estado constantemente na função `` "
+"_process``. Essa verificação acontece 60 vezes por segundo e você "
+"provavelmente quebrará o jogo por causa da ordem na qual o código é "
+"executado."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:206
+#, fuzzy
 msgid ""
 "On a given frame you may look at another node's property *before* it was "
 "updated: you get a value from the last frame. This leads to obscure bugs "
@@ -305,6 +426,12 @@ msgid ""
 "information. And you will update the state of your connected node *right "
 "after* the change happened."
 msgstr ""
+"Em um determinado quadro, você pode olhar para a propriedade de outro nó * "
+"antes de * ele ser atualizado: você obtém um valor do último quadro. Isso "
+"leva a erros obscuros que são difíceis de corrigir. Por outro lado, um sinal "
+"é emitido logo após a ocorrência de uma mudança. Isso garante que você está "
+"recebendo uma nova informação. E você irá atualizar o estado do seu nó "
+"conectado * logo após * a mudança aconteceu."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
 msgid ""

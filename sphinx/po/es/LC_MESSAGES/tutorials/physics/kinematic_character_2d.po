@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,6 +110,9 @@ msgid ""
 "download:`kbscene.zip <files/kbscene.zip>`. We'll be creating a new scene "
 "for the character. Use the robot sprite and create a scene like this:"
 msgstr ""
+"Para tener algo que probar, aquí está la escena (del tutorial de tilemap): :"
+"download:`kbscene.zip <files/kbscene.zip>`. Vamos a crear una nueva escena "
+"para el personaje. Usa el sprite robot y crea una escena como esta:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:88
 msgid ""
@@ -118,6 +121,10 @@ msgid ""
 "in the shape property of CollisionShape2D. Click on <CircleShape2D> to go to "
 "the options for it, and set the radius to 30:"
 msgstr ""
+"Notarás que hay un icono de advertencia junto al nodo CollisionShape2D, "
+"porque no hemos definido una forma para él. Crea un nuevo CircleShape2D en "
+"la propiedad shape de CollisionShape2D. Haz clic en <CircleShape2D> para ir "
+"a las opciones correspondientes, y establece el radio en 30:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:95
 msgid ""
@@ -127,22 +134,32 @@ msgid ""
 "shape instead of scaling it. The same is also true for the kinematic/rigid/"
 "static bodies themselves, as their scale affect the shape scale.**"
 msgstr ""
+"**Nota: Como se mencionó anteriormente en el tutorial de física, el motor de "
+"física no puede manejar la escala en la mayoría de los tipos de formas (sólo "
+"funcionan los polígonos de colisión, planos y segmentos), así que cambia "
+"siempre los parámetros (como el radio) de la forma en lugar de escalarla. Lo "
+"mismo ocurre con los cuerpos cinemáticos/rígidos/estáticos, ya que su escala "
+"afecta a la escala de la forma.**"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:102
 msgid ""
 "Now create a script for the character, the one used as an example above "
 "should work as a base."
 msgstr ""
+"Ahora crea un script para el personaje, el que se usa como ejemplo anterior "
+"debería funcionar como base."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:105
 msgid ""
 "Finally, instance that character scene in the tilemap, and make the map "
 "scene the main one, so it runs when pressing play."
 msgstr ""
+"Por último, instancia la escena del personaje en el tilemap, y haz que la "
+"escena del mapa sea la principal, para que se ejecute al presionar play."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:111
 msgid "Moving the Kinematic character"
-msgstr ""
+msgstr "Movimiento del personaje cinemático"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:113
 msgid ""
@@ -154,16 +171,25 @@ msgid ""
 "the kinematic body. If a collision happens, it stops right at the moment of "
 "the collision."
 msgstr ""
+"Vuelve a la escena del personaje y abre el script ¡la magia comienza ahora! "
+"El cuerpo cinemático no hará nada por defecto, pero tiene una función muy "
+"útil llamada :ref:`KinematicBody2D.move_and_collide() "
+"<class_KinematicBody2D_move_and_collide>`. Esta función toma un :ref:"
+"`Vector2 <class_Vector2>` como argumento, e intenta aplicar ese movimiento "
+"al cuerpo cinemático. Si se produce una colisión, se detiene justo en el "
+"momento de la colisión."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:121
 msgid "So, let's move our sprite downwards until it hits the floor:"
-msgstr ""
+msgstr "Entonces, movamos nuestro sprite hacia abajo hasta que toque el suelo:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:146
 msgid ""
 "The result is that the character will move, but stop right when hitting the "
 "floor. Pretty cool, huh?"
 msgstr ""
+"El resultado es que el personaje se moverá, pero se detendrá justo cuando "
+"golpee el suelo. Bastante genial, ¿no?"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:149
 msgid ""
@@ -179,14 +205,18 @@ msgid ""
 "right when touching the directional keys. Remember that the values being "
 "used (for speed at least) is pixels/second."
 msgstr ""
+"Ahora el personaje cae suavemente. Hagamos que camine hacia los lados, "
+"izquierda y derecha cuando se presionen las teclas de dirección. Recuerda "
+"que los valores utilizados (al menos para la velocidad) son píxeles/segundo."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:189
 msgid "This adds simple walking support by pressing left and right:"
 msgstr ""
+"Esto añade un sencillo soporte para caminar presionando izquierda y derecha:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:254
 msgid "And give it a try."
-msgstr ""
+msgstr "E inténtalo."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:256
 msgid ""
@@ -194,3 +224,7 @@ msgid ""
 "found in the demo zip distributed with the engine, or in the https://github."
 "com/godotengine/godot-demo-projects/tree/master/2d/kinematic_character."
 msgstr ""
+"Este es un buen punto de partida para un juego de plataformas. Se puede "
+"encontrar una demostración más completa en el zip de demostración "
+"distribuido con el motor, o en https://github.com/godotengine/godot-demo-"
+"projects/tree/master/2d/kinematic_character."
