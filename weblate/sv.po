@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2018-05-28 10:49+0200\n"
+"POT-Creation-Date: 2018-06-06 09:15+0200\n"
 "PO-Revision-Date: 2018-05-07 08:41+0000\n"
 "Last-Translator: . <grenoscar@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/godot-engine/"
@@ -624,9 +624,9 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:154
 msgid ""
-"FBX SDK has a `restrictive license <http://www.blender.org/bf/"
+"FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
-"<http://opensource.org/licenses/MIT>`_ provided by Godot."
+"<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
 
 #: ../../docs/about/faq.rst:158
@@ -3381,27 +3381,27 @@ msgid ""
 "and set the ``One Shot`` property to \"On\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:984
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:982
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and show the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1002
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1000
 msgid "This function is called in ``Main`` whenever the score changes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1004
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1002
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1032
 msgid "Connecting HUD to Main"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1036
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
 msgid ""
 "Now that we're done creating the ``HUD`` scene, save it and go back to "
 "``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` "
@@ -3409,57 +3409,57 @@ msgid ""
 "like this, so make sure you didn't miss anything:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1041
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1046
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1044
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1049
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1047
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1064
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1062
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1074
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1089
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1087
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1093
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1091
 msgid "Finishing Up"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1095
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1093
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
 "Feel free to expand the gameplay with your own ideas."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1100
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1098
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:51
 msgid "Background"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1102
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1100
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -3469,17 +3469,17 @@ msgid ""
 "screen."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1109
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1107
 msgid ""
 "You can also add a background image, if you have one, by using a ``Sprite`` "
 "node."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1113
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1111
 msgid "Sound Effects"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1115
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1113
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -3487,7 +3487,7 @@ msgid ""
 "for when the player loses."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1120
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1118
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -3495,55 +3495,55 @@ msgid ""
 "corresponding audio file."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1125
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1123
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1128
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1126
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 #: ../../docs/tutorials/shading/shading_language.rst:1077
 msgid "Particles"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid ""
 "For one last bit of visual appeal, let's add a trail effect to the player's "
 "movement. Choose your ``Player`` scene and add a :ref:`Particles2D "
 "<class_Particles2D>` node named ``Trail``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1137
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
 "There are a large number of properties to choose from when configuring "
 "particles. Feel free to experiment and create different effects. For the "
 "effect in this example, use the following settings:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1141
 msgid ""
 "You also need to create a ``Material`` by clicking on ``<null>`` and then "
 "\"New ParticlesMaterial\". The settings for that are below:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1148
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1146
 msgid ""
 "To make the gradient for the \"Color Ramp\" setting, we want a gradient "
 "taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to "
 "0.0 (fully transparent)."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1152
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1150
 msgid ""
 "Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient"
 "\". You'll see a window like this:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1157
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1155
 msgid ""
 "The left and right boxes represent the start and end colors. Click on each "
 "and then click the large square on the right to choose the color. For the "
@@ -3551,17 +3551,17 @@ msgid ""
 "set it all the way to ``0``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1162
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1160
 msgid ""
 "See :ref:`Particles2D <class_Particles2D>` for more details on using "
 "particle effects."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1166
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid "Project Files"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1168
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1166
 msgid ""
 "You can find a completed version of this project here: https://github.com/"
 "kidscancode/Godot3_dodge/releases"
@@ -8536,7 +8536,7 @@ msgid ""
 "In the early days, the engine used the `Lua <http://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
 "system (by using fallbacks) was complex and slow and took an enormous amount "
-"of code. After some experiments with `Python <http://www.python.org>`__, it "
+"of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
 
@@ -12239,9 +12239,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:27
 msgid ""
 "To use C# in Godot you must have `Mono <http://www.mono-project.com/download/"
-">`_ installed. Godot 3.0.2 requires Mono 5.4, 3.0.3 requires Mono 5.10 on "
-"Linux and Windows, and 5.8 on MacOS. You also need MSBuild (at least version "
-"15.0) which should come with the Mono installation."
+">`_ installed. Godot 3.0.2 requires Mono 5.4, 3.0.3 requires Mono 5.12 on "
+"all platforms. You also need MSBuild (at least version 15.0) which should "
+"come with the Mono installation."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:30
@@ -15525,7 +15525,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
 msgid ""
-"As described in `UWP documentation <https://msdn.microsoft.com/en-us/windows/"
+"As described in `UWP documentation <https://docs.microsoft.com/en-us/windows/"
 "uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
 
@@ -15663,15 +15663,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 msgid ""
-"Download and install the Android SDK from http://developer.android.com/sdk/"
-"index.html"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
-msgid "Install OpenJDK or Oracle JDK"
+"Download and install the Android SDK from https://developer.android.com/"
+"studio/"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
+msgid "Install OpenJDK or Oracle JDK"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 msgid ""
 "Download and install  `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ "
 "or `Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/"
@@ -15679,11 +15679,11 @@ msgid ""
 "issues with the jarsigner (used to sign the APKs) in JDK 7."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:20
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
 msgid "Create a debug.keystore"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:22
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid ""
 "Android needs a debug keystore file to install to devices and distribute non-"
 "release APKs. If you have used the SDK before and have built projects, ant "
@@ -15691,17 +15691,17 @@ msgid ""
 "it in the ``~/.android`` directory)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:27
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:35
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid "Make sure you have adb"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:37
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:38
 msgid ""
 "Android Debug Bridge (adb) is the command line tool used to communicate with "
 "Android devices. It's installed with the SDK, but you may need to install "
@@ -15709,37 +15709,37 @@ msgid ""
 "directory."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:42
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
 msgid "Setting it up in Godot"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:44
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid ""
 "Enter the Editor Settings screen. This screens contains the editor settings "
 "for the user account in the computer (It's independent from the project)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:50
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
 msgid "Scroll down to the section where the Android settings are located:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:54
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
 msgid "In that screen, the path to 3 files needs to be set:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:56
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid "The *adb* executable (adb.exe on Windows)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "The *jarsigner* executable (from JDK 6 or 8)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:59
 msgid "The debug *keystore*"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:60
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
 msgstr ""
 
@@ -15750,7 +15750,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:6
 msgid ""
 "HTML5 export allows publishing games made in Godot Engine to the browser. "
-"This requires support for the recent technologies `WebAssembly <http://"
+"This requires support for the recent technologies `WebAssembly <https://"
 "webassembly.org/>`__ and `WebGL 2.0 <https://www.khronos.org/webgl/>`__ in "
 "the user's browser. **Firefox** and **Chromium** (Chrome, Opera) are the "
 "most popular supported browsers, **Safari** and **Edge** do not work yet. On "
@@ -18195,7 +18195,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid ""
-"Godot uses the `metric <http://en.wikipedia.org/wiki/Metric_system>`__ "
+"Godot uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__ "
 "system for everything. 3D Physics and other areas are tuned for this, so "
 "attempting to use a different scale is usually a bad idea (unless you know "
 "what you are doing)."
@@ -26613,7 +26613,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:109
 msgid ""
 "You can find a great article explaining all about how to handle joypad/"
-"controller dead zones here: https://www.third-helix.com/2013/04/12/doing-"
+"controller dead zones here: http://www.third-helix.com/2013/04/12/doing-"
 "thumbstick-dead-zones-right.html"
 msgstr ""
 
@@ -32409,7 +32409,7 @@ msgstr ""
 #: ../../docs/tutorials/math/vectors_advanced.rst:225
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
-"`convex <http://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
+"`convex <https://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
 "example, a rectangle, a trapezoid, a triangle, or just any polygon where no "
 "faces bend inwards."
 msgstr ""
@@ -35318,23 +35318,23 @@ msgid ""
 "Cut-out is a technique of animating in 2D where pieces of paper (or similar "
 "material) are cut in special shapes and laid one over the other. The papers "
 "are animated and photographed, frame by frame using a stop motion technique "
-"(more info `here <http://en.wikipedia.org/wiki/Cutout_animation>`__)."
+"(more info `here <https://en.wikipedia.org/wiki/Cutout_animation>`__)."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:15
 msgid ""
 "With the advent of the digital age, this technique became possible using "
 "computers, which resulted in an increased amount of animation TV shows using "
-"digital Cut-out. Notable examples are `South Park <http://en.wikipedia.org/"
-"wiki/South_Park>`__ or `Jake and the Never Land Pirates <http://en.wikipedia."
-"org/wiki/Jake_and_the_Never_Land_Pirates>`__ ."
+"digital Cut-out. Notable examples are `South Park <https://en.wikipedia.org/"
+"wiki/South_Park>`__ or `Jake and the Never Land Pirates <https://en."
+"wikipedia.org/wiki/Jake_and_the_Never_Land_Pirates>`__ ."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:23
 msgid ""
 "In video games, this technique has also become popular. Examples of this are "
-"`Paper Mario <http://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman "
-"Origins <http://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
+"`Paper Mario <https://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman "
+"Origins <https://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
 msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:29
@@ -44651,7 +44651,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:21
 msgid ""
-"This file should contain any number of public certificates in http://en."
+"This file should contain any number of public certificates in https://en."
 "wikipedia.org/wiki/Privacy-enhanced_Electronic_Mail format."
 msgstr ""
 
@@ -44678,10 +44678,10 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:38
 msgid ""
-"OpenSSL has `some documentation <https://www.openssl.org/docs/HOWTO/keys."
-"txt>`__ about this. This approach also **does not require domain "
-"validation** nor requires you to spend a considerable amount of money in "
-"purchasing certificates from a CA."
+"OpenSSL has `some documentation <https://raw.githubusercontent.com/openssl/"
+"openssl/master/doc/HOWTO/keys.txt>`__ about this. This approach also **does "
+"not require domain validation** nor requires you to spend a considerable "
+"amount of money in purchasing certificates from a CA."
 msgstr ""
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:45
@@ -44741,7 +44741,7 @@ msgid ""
 "user-submitted Godot addons, scripts, tools and other resources, "
 "collectively referred to as assets. They're available to all Godot users for "
 "download directly from within the engine, but it can also be accessed at "
-"Godot's `official website <https://godotengine.org/asset-library>`_."
+"Godot's `official website <https://godotengine.org/asset-library/asset>`_."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:11
@@ -44773,9 +44773,9 @@ msgstr ""
 msgid ""
 "Please note that the AssetLib is relatively young - it may have various pain "
 "points, bugs and usability issues. As with all Godot projects, the code "
-"repository is available on `GitHub <https://github.com/godotengine/asset-"
-"library>`_, where you can submit pull requests and issues, so please do not "
-"hesitate to visit it!"
+"repository is available on `GitHub <https://github.com/godotengine/godot-"
+"asset-library>`_, where you can submit pull requests and issues, so please "
+"do not hesitate to visit it!"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:32
@@ -44800,8 +44800,8 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:12
 msgid ""
 "As mentioned before, you can access the web frontend of the AssetLib on "
-"`Godot's official website <https://godotengine.org/asset-library>`_, and "
-"this is what it looks like when you first visit it:"
+"`Godot's official website <https://godotengine.org/asset-library/asset>`_, "
+"and this is what it looks like when you first visit it:"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:18
@@ -45618,7 +45618,7 @@ msgid ""
 "set up the name and description so users can understand what it does. Add "
 "your own name so you can be properly credited. A version number is useful so "
 "users can see if they have an outdated version (if you are unsure on how to "
-"come up with the version number, check `SemVer <http://semver.org/>`_). And "
+"come up with the version number, check `SemVer <https://semver.org/>`_). And "
 "finally a main script file to load when your plugin is active."
 msgstr ""
 
@@ -48576,9 +48576,9 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:11
 msgid ""
-"Godot uses `SCons <http://www.scons.org>`__ to build. We love it, we are not "
-"changing it for anything else. We are not even sure other build systems are "
-"up to the task of building Godot. We constantly get requests to move the "
+"Godot uses `SCons <https://www.scons.org/>`__ to build. We love it, we are "
+"not changing it for anything else. We are not even sure other build systems "
+"are up to the task of building Godot. We constantly get requests to move the "
 "build system to CMake, or Visual Studio, but this is not going to happen. "
 "There are many reasons why we have chosen SCons over other alternatives, for "
 "example:"
@@ -48859,10 +48859,10 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:13
 msgid ""
-"Visual C++, `Visual Studio Community <https://www.visualstudio.com/en-us/"
-"products/visual-studio-community-vs.aspx>`__ (recommended), version 2013 "
-"(12.0) or later. **Make sure you read Installing Visual Studio caveats below "
-"or you will have to run/download the installer again.**"
+"Visual C++, `Visual Studio Community <https://www.visualstudio.com/vs/"
+"community/>`__ (recommended), version 2013 (12.0) or later. **Make sure you "
+"read Installing Visual Studio caveats below or you will have to run/download "
+"the installer again.**"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:18
@@ -48876,7 +48876,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:21
-msgid "`SCons <http://www.scons.org>`__ build system."
+msgid "`SCons <https://www.scons.org>`__ build system."
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:24
@@ -49302,8 +49302,9 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_windows.rst:345
 msgid ""
 "If you are a Linux or macOS user, you need to install `MinGW-w64 <https://"
-"mingw-w64.org>`_, which typically comes in 32-bit and 64-bit variants. The "
-"package names may differ based on your distro, here are some known ones:"
+"mingw-w64.org/doku.php>`_, which typically comes in 32-bit and 64-bit "
+"variants. The package names may differ based on your distro, here are some "
+"known ones:"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:350
@@ -50091,8 +50092,8 @@ msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:34
 msgid ""
-"`Fuse <http://fuse.sourceforge.net>`__ for mounting and umounting the dmg "
-"image."
+"`Fuse <https://github.com/libfuse/libfuse>`__ for mounting and umounting the "
+"dmg image."
 msgstr ""
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:36
@@ -50407,10 +50408,10 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid ""
-"`Emscripten 1.37.9+ <http://emscripten.org/>`__: If the version available "
-"per package manager is not recent enough, the best alternative is to install "
-"using the `Emscripten SDK <http://kripken.github.io/emscripten-site/docs/"
-"gettng_started/downloads.html>`__"
+"`Emscripten 1.37.9+ <http://kripken.github.io/emscripten-site>`__: If the "
+"version available per package manager is not recent enough, the best "
+"alternative is to install using the `Emscripten SDK <http://kripken.github."
+"io/emscripten-site/docs/getting_started/downloads.html>`__"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:16
@@ -50418,7 +50419,7 @@ msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/>`__"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:17
-msgid "`SCons <http://www.scons.org>`__ build system"
+msgid "`SCons <https://www.scons.org>`__ build system"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:22
@@ -51429,7 +51430,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:212
 msgid ""
-"`core/math <https://github.com/godotengine/godot/blob/master/core/math>`__"
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:215
@@ -51444,8 +51445,8 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:223
 msgid ""
-"`core/path_db.h <https://github.com/godotengine/godot/blob/master/core/"
-"path_db.h>`__"
+"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
+"node_path.h>`__"
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:226
@@ -53319,7 +53320,7 @@ msgid ""
 "they can work full-time on the engine. Even with a low monthly wage, we need "
 "a steady donation income to continue doing this, which has been very "
 "beneficial to the project so far. So if you want to donate some money to the "
-"project, check `our website <http://godotengine.org/donate>`_ for details."
+"project, check `our website <https://godotengine.org/donate>`_ for details."
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:54
@@ -54190,14 +54191,14 @@ msgid ""
 "Linux: It will usually be available out-of-the-box with the clang toolchain "
 "packaged by your distribution. If your distro version is not the required "
 "one, you can download a pre-compiled version from the `LLVM website <http://"
-"llvm.org/releases/download.html>`__, or if you are on a Debian derivative, "
+"releases.llvm.org/download.html>`__, or if you are on a Debian derivative, "
 "use the `upstream repos <http://apt.llvm.org/>`__."
 msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:68
 msgid ""
 "macOS and Windows: You can download precompiled binaries from the `LLVM "
-"website <http://llvm.org/releases/download.html>`__. You may need to add the "
+"website <http://releases.llvm.org/download.html>`__. You may need to add the "
 "path to the binary's folder to your system's ``PATH`` environment variable "
 "to be able to call ``clang-format`` out of the box."
 msgstr ""
@@ -54326,7 +54327,7 @@ msgid ""
 "For those, we follow the `PEP-8 style guide <https://www.python.org/dev/peps/"
 "pep-0008/>`__, this is however not as strongly enforced as for the C++ code. "
 "If you are so inclined, you can check and format your Python changes using "
-"`autopep8 <https://pypi.python.org/pypi/autopep8>`__."
+"`autopep8 <https://pypi.org/project/autopep8/>`__."
 msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:4
@@ -55889,7 +55890,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/channels.rst:31
-msgid "`Discord <https://discord.gg/zH7NUgz>`_"
+msgid "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
 msgstr ""
 
 #: ../../docs/community/channels.rst:34
@@ -55925,7 +55926,7 @@ msgid "Forum"
 msgstr ""
 
 #: ../../docs/community/channels.rst:46
-msgid "`Forum (godotdevelopers.org) <http://godotdevelopers.org/>`_"
+msgid "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:6
