@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,7 +89,6 @@ msgstr ""
 "manera que un vector :math:`\\boldsymbol v` se convierte en"
 
 #: ../../docs/tutorials/math/rotations.rst:26
-#, fuzzy
 msgid ""
 "(If this isn't clear, you can verify this by looking at the figure: :math:`"
 "\\boldsymbol v` is rotated into :math:`\\boldsymbol v'` in the plane (so the "
@@ -123,7 +122,6 @@ msgstr ""
 "\\boldsymbol v` también es comprobado.)"
 
 #: ../../docs/tutorials/math/rotations.rst:28
-#, fuzzy
 msgid ""
 "Now, a practical way of representing operators is by using matrices (note "
 "that an `operator <https://en.wikipedia.org/wiki/Operator_(mathematics)>`_ "
@@ -146,7 +144,6 @@ msgstr ""
 "el producto cruzado :math:`\\boldsymbol e_z \\times` puede representarse como"
 
 #: ../../docs/tutorials/math/rotations.rst:38
-#, fuzzy
 msgid ""
 "(If you're curious how you can find the matrix representation of an "
 "operator :math:`A` in some set of real basis :math:`\\{ \\boldsymbol e_i\\}"
@@ -189,7 +186,6 @@ msgstr ""
 "finita :math:`\\theta \\equiv N \\delta \\theta`:"
 
 #: ../../docs/tutorials/math/rotations.rst:53
-#, fuzzy
 msgid ""
 "(If you're confused about seeing a matrix as an exponent: the meaning of an "
 "operator :math:`A` in `exponential map <https://en.wikipedia.org/wiki/"
@@ -244,7 +240,6 @@ msgstr ""
 "las rotaciones en 3D.)"
 
 #: ../../docs/tutorials/math/rotations.rst:77
-#, fuzzy
 msgid ""
 "If you ever tried to derive the rotation matrix corresponding to a :math:`"
 "\\theta` rotation around :math:`\\boldsymbol n`, you can appreciate the "
@@ -671,7 +666,6 @@ msgstr ""
 "\\sin\\theta`"
 
 #: ../../docs/tutorials/math/rotations.rst:169
-#, fuzzy
 msgid ""
 "Clearly, introduction of the unit imaginary number is enough to capture the "
 "behavior of 2D rotation matrices. As a footnote remark, while the number :"
@@ -701,7 +695,6 @@ msgstr ""
 "Lie SO(2) y U(1) <https://en.wikipedia.org/wiki/Circle_group#Isomorphisms>`_."
 
 #: ../../docs/tutorials/math/rotations.rst:174
-#, fuzzy
 msgid ""
 "Furthermore, in this representation, it is clear that you can do a \"smooth"
 "\" rotation by slowly changing :math:`\\theta`, which is the 2D analogue of "
@@ -750,7 +743,6 @@ msgstr ""
 "entendimiento/conocimiento de números complejos o de la fórmula de Euler."
 
 #: ../../docs/tutorials/math/rotations.rst:180
-#, fuzzy
 msgid ""
 "The introduction of the imaginary :math:`\\imath` is not black magic: it's "
 "just something that mimics :math:`2 \\times 2` matrix :math:`J_z`: :math:`1` "
@@ -764,7 +756,6 @@ msgstr ""
 "mostrada más arriba)."
 
 #: ../../docs/tutorials/math/rotations.rst:182
-#, fuzzy
 msgid ""
 "These are often sources of confusion in 3D: introducing a third dimension "
 "means we have new rotation axes (rotations around X and Y axes) giving rise "
@@ -784,7 +775,6 @@ msgstr ""
 "Algunos comentarios matemáticos (de nuevo, siéntete libre de omitirlos)"
 
 #: ../../docs/tutorials/math/rotations.rst:187
-#, fuzzy
 msgid ""
 "The fact that SO(3) has 3 generators is an accident: SO(:math:`n`) has :math:"
 "`n(n-1)/2` generators. Furthermore, the next step (after quaternions, which "
@@ -862,7 +852,6 @@ msgstr ""
 "gratificante de derivar esta matriz es entender el grupo de rotación SO(3)."
 
 #: ../../docs/tutorials/math/rotations.rst:200
-#, fuzzy
 msgid ""
 "SO(3) is the group of rotations in Euclidean 3D space (for which the "
 "`signature <https://en.wikipedia.org/wiki/Metric_signature>`_ is :math:`(+1,"
@@ -914,7 +903,6 @@ msgstr ""
 "`J_i` y derivar la complicada matriz de rotación :math:`3\\times 3 que es"
 
 #: ../../docs/tutorials/math/rotations.rst:242
-#, fuzzy
 msgid ""
 "(Hint: you can use the relation :math:`(\\boldsymbol n \\cdot \\boldsymbol "
 "J)^2 = \\boldsymbol n \\otimes \\boldsymbol n-I` to quickly evaluate the "
@@ -1007,7 +995,6 @@ msgstr ""
 "isomórfico a Spin(3)), que a su vez es una doble cobertura de SO(3)."
 
 #: ../../docs/tutorials/math/rotations.rst:251
-#, fuzzy
 msgid ""
 "SU(2) is essentially the group of unitary rotations with determinant +1 "
 "(called Special Unitary groups) which preserve the norm of complex vectors "
@@ -1106,7 +1093,6 @@ msgstr ""
 "orientación objetivo (discutida más adelante en la sección SLERP)."
 
 #: ../../docs/tutorials/math/rotations.rst:260
-#, fuzzy
 msgid ""
 "Sure, we know that elements of SO(3) can be represented by using orthogonal "
 "matrices with determinant +1 (hence the name Special Orthogonal) such that :"
@@ -2219,7 +2205,6 @@ msgstr ""
 "a"
 
 #: ../../docs/tutorials/math/rotations.rst:477
-#, fuzzy
 msgid ""
 "when :math:`q_1 \\neq \\pm q_2`, where we introduced :math:`\\cos\\Omega "
 "\\equiv \\cos\\frac{\\varphi_1}{2}\\cos\\frac{\\varphi_2}{2} + \\sin"

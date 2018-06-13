@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,9 @@ msgid ""
 "Unity user, and aims to help you migrate your existing Unity experience into "
 "the world of Godot."
 msgstr ""
+"Niniejszy przewodnik zawiera przegląd Godot Engine z punktu widzenia "
+"użytkownika Unit i ma na celu pomóc w migracji istniejącego doświadczenia z "
+"silnika Unity do świata Godota."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:13
 msgid "Differences"
@@ -34,11 +37,11 @@ msgstr "Różnice"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:16
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:16
 msgid "Godot"
-msgstr ""
+msgstr "Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "License"
@@ -48,26 +51,29 @@ msgstr "Licencja"
 msgid ""
 "Proprietary, closed, free license with revenue caps and usage restrictions"
 msgstr ""
+"Własnościowa, zamknięta, darmowa licencja z limitami przychodów i "
+"ograniczeniami w użytkowaniu"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "MIT license, free and fully open source without any restriction"
 msgstr ""
+"Licencja MIT, wolne i w pełni otwarte oprogramowanie bez żadnych ograniczeń"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "OS (editor)"
-msgstr ""
+msgstr "System Operacyjny (edytor)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
-msgstr ""
+msgstr "Windows, MacOS, Linux (nieoficjalny i niewspierany)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "OS (export)"
-msgstr ""
+msgstr "System Operacyjny (gra)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "**Desktop:** Windows, macOS, Linux"
@@ -75,7 +81,7 @@ msgstr "**Desktop:** Windows, macOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
-msgstr ""
+msgstr "**Mobilne:**Android, iOS, Windows Phone, Tizen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Web:** WebAssembly or asm.js"
@@ -90,80 +96,84 @@ msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
 msgstr ""
+"**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
+"HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
-msgstr ""
+msgstr "**TV:** Android TV, Samsung SMART TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr ""
+msgstr "**PC:** Windows, macOS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Mobile:** Android, iOS"
-msgstr ""
+msgstr "**Mobilne:** Android, iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Web:** WebAssembly"
-msgstr ""
+msgstr "**Web:** WebAssembly"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Console:** See :ref:`doc_consoles`"
-msgstr ""
+msgstr "**Konsola:** Patrz :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid "**VR:** Oculus Rift, SteamVR"
-msgstr ""
+msgstr "**VR:** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "Scene system"
-msgstr ""
+msgstr "System scen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "Component/Scene (GameObject > Component)"
-msgstr ""
+msgstr "Komponent/Scena (Obiekt w grze > Komponent)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "Prefabs"
-msgstr ""
+msgstr "Prefaby"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid ""
 ":ref:`Scene tree and nodes <doc_scenes_and_nodes>`, allowing scenes to be "
 "nested and/or inherit other scenes"
 msgstr ""
+":ref:`Drzewo sceny i węzły<doc_scenes_and_nodes>`, umożliwiające "
+"zagnieżdżenie scen i/lub dziedziczenie innych scen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "Third-party tools"
-msgstr ""
+msgstr "Obce narzędzia"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "Visual Studio or VS Code"
-msgstr ""
+msgstr "Visual Studio lub VS Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid ":ref:`External editors are possible <doc_external_editor>`"
-msgstr ""
+msgstr ":ref:`Możliwe są edytory zewnętrzne <doc_external_editor>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:33
 msgid ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
-msgstr ""
+msgstr ":ref:`Android SDK dla eksportu na Android <doc_exporting_for_android>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Killer features"
-msgstr ""
+msgstr "Wybitne elementy w programie"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Huge community"
-msgstr ""
+msgstr "Ogromna społeczność"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:36
 msgid "Large assets store"
-msgstr ""
+msgstr "Duży sklep zasobów do gry"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Scene System"
-msgstr ""
+msgstr "System scen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:36
 msgid ":ref:`Animation Pipeline <doc_animations>`"
@@ -171,15 +181,15 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`Proste pisanie Shaderów <doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:38
 msgid "Debug on Device"
-msgstr ""
+msgstr "Debugowanie na urządzeniu"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:45
 msgid "The editor"
-msgstr ""
+msgstr "Edytor"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:47
 msgid ""
@@ -187,12 +197,17 @@ msgid ""
 "games. The pictures below display both editors with colored blocks to "
 "indicate common functionalities."
 msgstr ""
+"Godot Engine udostępnia bogaty edytor, który umożliwia tworzenie gier. "
+"Poniższe ilustracje przedstawiają oba edytory z kolorowymi blokami, aby "
+"wskazać wspólne funkcjonalności."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:53
 msgid ""
 "Note that Godot editor allows you to dock each panel at the side of the "
 "scene editor you wish."
 msgstr ""
+"Zauważ, że edytor Godot umożliwia zadokowanie każdego panelu, po obu "
+"stronach edytora sceny."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:55
 msgid ""
@@ -202,6 +217,12 @@ msgid ""
 "format, and no metadata. All this contributes to Godot being much friendlier "
 "to VCS systems such as Git, Subversion or Mercurial."
 msgstr ""
+"Oba edytory mogą wydawać się podobne, ale pod maską skrywają wiele różnic. "
+"Obydwa pozwalają zorganizować projekt przy użyciu systemu plików, ale "
+"podejście Godota jest prostsze, z pojedynczym plikiem konfiguracyjnym, "
+"minimalistycznym formatem tekstu i brakiem metadanych. Wszystko to sprawia, "
+"że Godot jest znacznie bardziej przyjazny dla systemów VCS takich jak Git, "
+"Subversion czy Mercurial."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:57
 msgid ""
@@ -210,6 +231,10 @@ msgid ""
 "descriptive. In other words, it's easier to understand what a specific scene "
 "does at a glance."
 msgstr ""
+"Panel sceny Godota jest podobny do panelu hierarchii w Unity, ale ponieważ "
+"każdy węzeł ma określoną funkcję, podejście użyte przez Godota jest opisane "
+"bardziej wizualnie. Innymi słowy, łatwiej jest zrozumieć, co konkretna scena "
+"robi na pierwszy rzut oka."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:59
 msgid ""
@@ -220,6 +245,13 @@ msgid ""
 "visually, so changing colors, textures, enumerations or even links to "
 "resources in real-time is possible without involving code."
 msgstr ""
+"Inspektor w Godocie jest bardziej minimalistyczny i ma za zadanie jedynie "
+"pokazywać właściwości. Dzięki temu obiekty mogą eksportować większą ilość "
+"użytecznych parametrów do użytkownika, bez konieczności ukrywania "
+"funkcjonalności w językach API. Dodatkowo, Godot umożliwia wizualną animację "
+"każdej z tych właściwości, dzięki czemu możliwa jest zmiana kolorów, "
+"tekstur, wyliczeń, a nawet linków do zasobów w czasie rzeczywistym bez "
+"konieczności stosowania kodu."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:61
 msgid ""
@@ -236,12 +268,17 @@ msgid ""
 "displaying collision gizmos in the running game is already possible), but in "
 "exchange has several advantages:"
 msgstr ""
+"Takie podejście ma tę wadę, że gra nie może być wystarczająco dobrze "
+"sprawdzona(choć może to być wspierane w przyszłości, a wyświetlanie kolizji "
+"w uruchomionej grze jest już możliwe), ale w zamian ma kilka zalet:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:65
 msgid ""
 "Running the project and closing it is fast (Unity has to save, run the "
 "project, close the project and then reload the previous state)."
 msgstr ""
+"Uruchamianie i zamykanie projektu jest szybkie (Unity musi zapisać, "
+"uruchomić projekt, zamknąć projekt, a następnie załadować poprzedni stan)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:66
 msgid ""
@@ -250,10 +287,16 @@ msgid ""
 "when the game is closed. This allows fantastic workflows, like creating "
 "levels while you play them."
 msgstr ""
+"Edycja na żywo jest o wiele bardziej przydatna, ponieważ zmiany dokonane w "
+"edytorze wchodzą w życie natychmiast w grze i nie są tracone (ani nie muszą "
+"być zsynchronizowane) po zamknięciu gry. Pozwala to na np. tworzenie "
+"poziomów podczas ich odtwarzania."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:67
 msgid "The editor is more stable, because the game runs in a separate process."
 msgstr ""
+"Edytor jest bardziej stabilny, ponieważ gra odtwarza się w oddzielnym "
+"procesie."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:69
 msgid ""
@@ -261,22 +304,30 @@ msgid ""
 "make it simple to deploy to a device (connected phone, tablet or browser via "
 "HTML5), and debug/live edit on it after the game was exported."
 msgstr ""
+"Na górnym pasku narzędzi znajduje się również menu do zdalnego debugowania. "
+"Opcje te ułatwia przesłanie gry na urządzenie (telefon, tablet lub "
+"przeglądarka poprzez HTML5) i edycję debugowania/edycji na żywo po "
+"wyeksportowaniu gry."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:72
 msgid "The scene system"
-msgstr ""
+msgstr "System sceny"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:74
 msgid ""
 "This is the most important difference between Unity and Godot, and actually "
 "the favourite feature of most Godot users."
 msgstr ""
+"Jest to najważniejsza różnica pomiędzy Unity i Godotem, a ulubioną cechą "
+"większości użytkowników Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:76
 msgid ""
 "Unity's scene system consist in embedding all the required assets in a "
 "scene, and link them together by setting components and scripts to them."
 msgstr ""
+"System sceny Unity polega na osadzeniu wszystkich wymaganych zasobów w "
+"scenie i połączeniu ich poprzez ustawienie komponentów i skryptów."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:78
 msgid ""
@@ -286,28 +337,36 @@ msgid ""
 "children, which make each a subscene of the main scene. This means you can "
 "compose a whole scene with different scenes, stored in different files."
 msgstr ""
+"System scen Godota jest inny: w rzeczywistości składa się z drzewa "
+"zbudowanego z węzłów. Każdy węzeł spełnia swoją rolę: Sprite, Mesh, Light... "
+"Zasadniczo jest to system podobny do systemu scen w Unity. Jednak każdy "
+"węzeł może mieć więcej niż jedno dziecko, co sprawia, że każdy z nich jest "
+"podsceną sceny głównej. Oznacza to, że można utworzyć całą scenę z różnymi "
+"scenami, przechowywaną w różnych plikach."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:80
 msgid ""
 "For example, think of a platformer level. You would compose it with multiple "
 "elements:"
 msgstr ""
+"Na przykład, pomyśl o poziomie z gry platformowej. Można go skomponować z "
+"wielu elementów:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:82
 msgid "Bricks"
-msgstr ""
+msgstr "Cegły"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:83
 msgid "Coins"
-msgstr ""
+msgstr "Monety"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:84
 msgid "The player"
-msgstr ""
+msgstr "Gracz"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:85
 msgid "The enemies"
-msgstr ""
+msgstr "Wrogowie"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:88
 msgid ""
@@ -318,16 +377,23 @@ msgid ""
 "level: for example, you'd add a BoxCollider2D to all the elements of the "
 "scene so that they can collide. This principle is different in Godot."
 msgstr ""
+"W Unity, można umieścić wszystkie obiekty gry(GameObjects) na scenie: gracz, "
+"wiele instancji wrogów, cegły tworzące grunt i wiele instancji monet na "
+"całym poziomie. Następnie do każdego elementu można dodać różne komponenty, "
+"aby je połączyć: na przykład do wszystkich elementów sceny można dodać "
+"BoxCollider2D, aby mogły się zderzać. Zasada ta jest odmienna u Godota."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
 msgid ""
 "In Godot, you would split your whole scene into 3 separate, smaller scenes, "
 "which you would then instance in the main scene."
 msgstr ""
+"W Godot podzieliłbyś całą scenę na 3 mniejsze, oddzielne sceny, które można "
+"by potem były instancjowane w głównej scenie."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:92
 msgid "**First, a scene for the Player alone.**"
-msgstr ""
+msgstr "** Po pierwsze, scena dla gracza.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:94
 msgid ""
@@ -335,10 +401,14 @@ msgid ""
 "one node in particular: an AnimatedSprite node, which contains the sprite "
 "textures to form various animations (for example, walking animation)"
 msgstr ""
+"Rozważ również gracza jako element wielokrotnego użytku na innych poziomach. "
+"Składa się on w szczególności z jednego węzła: węzła AnimatedSprite, który "
+"zawiera teksturę sprite, tworzącą różne animacje (na przykład animację "
+"chodzenia)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:96
 msgid "**Second, a scene for the Enemy.**"
-msgstr ""
+msgstr "**Po drugie, scena dla wrogów.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:98
 msgid ""
@@ -346,10 +416,14 @@ msgid ""
 "the same as the Player node - the only differences are the script (that "
 "manages AI, mostly) and sprite textures used by the AnimatedSprite."
 msgstr ""
+"Również wróg jest elementem wielokrotnego użytku na innych poziomach. Jest "
+"prawie taki sam jak węzeł gracza - jedyną różnicą jest skrypt (który "
+"zarządza głównie sztuczną inteligencją) i sprity używane przez "
+"AnimatedSprite."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
 msgid "**Lastly, the Level scene.**"
-msgstr ""
+msgstr "**Na koniec, scena poziomu**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:102
 msgid ""
@@ -360,6 +434,11 @@ msgid ""
 "the Level scene tree. Of course, you can set different properties for each "
 "enemy node (to change its color for example)."
 msgstr ""
+"Składa się z Cegieł (platformy), Monet (zbieranych przez gracza) i pewnej "
+"liczby instancji sceny wroga. Będą to wrogowie, których zachowanie i wygląd "
+"będą takie same jak w ich scenie źródłowej. Każda instancja jest wówczas "
+"traktowana jako węzeł w drzewie sceny Level. Oczywiście możesz ustawić różne "
+"właściwości dla każdego węzła wroga (na przykład zmienić jego kolor)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:104
 msgid ""
@@ -563,10 +642,15 @@ msgid ""
 "This feature is documented `here <../scripting/gdscript/gdscript_basics."
 "html#signals>`_."
 msgstr ""
+"Ale to nie wszystko! Niektóre węzły wysyłają sygnały, gdy pewne działania "
+"mają miejsce. Sygnały te można podłączyć w celu wywołania określonej "
+"funkcji. Należy pamiętać, że można zdefiniować własne sygnały i wysyłać je w "
+"dowolnym czasie. Ta cecha jest udokumentowana `tutaj <../scripting/gdscript/"
+"gdscript_basics.html#signals>`_."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:180
 msgid "Using Godot in C++"
-msgstr ""
+msgstr "Używanie C++ w Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:182
 msgid ""
@@ -575,9 +659,16 @@ msgid ""
 "an example, you can consider Godot Engine's editor as a \"game\" written in C"
 "++ using Godot API."
 msgstr ""
+"Godot pozwala również na opracowanie projektu bezpośrednio w C++ za pomocą "
+"jego API, co w chwili obecnej nie jest możliwe w przypadku Unity. Jako "
+"przykład, można rozważyć edytor Godot Engine jako \"grę\" napisaną w C++ za "
+"pomocą Godot API."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:184
 msgid ""
 "If you are interested in using Godot in C++, you may want to start reading "
 "the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."
 msgstr ""
+"Jeśli jesteś zainteresowany wykorzystaniem Godota w C++, możesz chcieć "
+"rozpocząć czytanie :ref:`Developing in C++ "
+"<doc_introduction_to_godot_development>`."

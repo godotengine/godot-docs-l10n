@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -119,20 +119,19 @@ msgid "Groups"
 msgstr "分组"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
-#, fuzzy
 msgid ""
 "Nodes can be added to groups, as many as desired per node, and is a useful "
 "feature for organizing large scenes. There are two ways to do this. The "
 "first is from the UI, from the Groups button under the Node panel:"
 msgstr ""
-"可以将节点添加到组中，每个节点所需的数量尽可能多，并且是组织大型场景的有用功"
-"能。有两种方法可以做到这一点。第一个来自UI，从Node面板下的Groups按钮："
+"随着节点数的增加，一个有用的管理方式是把节点添加到组里。有两种方法可以做到这"
+"一点。第一个通过UI实现，在Node面板下的Groups按钮："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
 msgid ""
 "And the second way is from code. One example would be to tag scenes which "
 "are enemies:"
-msgstr "第二种方法来自代码。一个例子在场景中标记出敌人："
+msgstr "第二种方法是通过代码实现。下面的例子是在场景中标记出敌人："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
 msgid ""
@@ -140,17 +139,16 @@ msgid ""
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_call_group>`:"
 msgstr ""
-"这样一来, 如果玩家在潜入一个秘密基地时被发现, 所有的敌人都可以通过使用: "
-"\"SceneTree. call_group () <class_SceneTree_call_group>\" 发出的警报声来通知"
-"到："
+"这样一来, 如果玩家在潜入一个秘密基地时被发现时, 可以通过使用 :ref:`SceneTree."
+"call_group() <class_SceneTree_call_group>` 发出的警报声来通知到所有的敌人："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
-#, fuzzy
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
-"上面的代码在群组``enemies``的每个成员上调用函数``player_was_discovered``。"
+"上面的代码会使在群组 ``enemies`` 里的每个成员都会调用函数"
+"``player_was_discovered``。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
 msgid ""
@@ -168,6 +166,9 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you got some time!"
 msgstr ""
+"类 :ref:`SceneTree <class_SceneTree>` 提供了很多有用的方法，例如与场景、场景"
+"中节点的层次、节点分组交互。它让你可以很方便切换场景，重载场景，退出游戏，暂"
+"停和继续游戏。它还有一些有趣的信号，如果你有空可以详细去查看！"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
 msgid "Notifications"
@@ -181,6 +182,9 @@ msgid ""
 "`Object._notification() <class_Object__notification>` function in your "
 "script:"
 msgstr ""
+"Godot 有一个通知系统。这个是非常底层的虚函数，通常不需要放入代码里。只需要知"
+"道有这个系统的存在。例如，你可以添加 :ref:`Object._notification() "
+"<class_Object__notification>` 到你的代码里："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -188,10 +192,12 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overrideable functions."
 msgstr ""
+"在 :ref:`Class Reference <toc-class-ref>` 里的所有类的文档里说明了他们能接受"
+"的通知。然而，在GDScript里有类似的更简便的可重写函数。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr "可覆写的函数"
+msgstr "可重写的函数"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""

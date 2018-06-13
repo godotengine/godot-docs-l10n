@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -845,7 +845,7 @@ msgstr "``ScoreTimer``: ``1``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:608
 msgid "``StartTimer``: ``2``"
-msgstr ""
+msgstr "``StartTimer``: ``2``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:610
 msgid ""
@@ -967,11 +967,18 @@ msgid ""
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
+"В функции ``_on_MobTimer_timeout()`` мы создадим экземпляр моба, выберем "
+"случайное начальное местоположение вдоль ``Path2D`` и настроим моба в "
+"движении. Узел ``PathFollow2D`` будет автоматически вращаться следуя по "
+"пути, поэтому мы будем использовать это, чтобы выбрать направление моба, а "
+"также его позицию."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:766
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr ""
+"Обратите внимание, что новый экземпляр должен быть добавлен в сцену с "
+"помощью функции ``add_child()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:809
 msgid ""
@@ -979,12 +986,16 @@ msgid ""
 "you're more comfortable working with degrees, you'll need to use the "
 "``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
+"В тригонометрических функциях, GDScript использует * радианы*, а не градусы. "
+"Если вам удобнее работать со степенями, вам нужно использовать функции "
+"``deg2rad()`` и ``rad2deg()`` для преобразования между ними."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:815
 msgid "HUD"
-msgstr ""
+msgstr "HUD"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:817
+#, fuzzy
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -992,56 +1003,74 @@ msgid ""
 "stands for \"heads-up display\", an informational display that appears as an "
 "overlay on top of the game view."
 msgstr ""
+"В финале нашей игры нужен UI: интерфейс для отображения таких элементов, как "
+"игровой счет, сообщение \"игра окончена\" и кнопка перезапуска. Создайте "
+"новую сцену и добавьте :ref:`Canvas Layer <Class_canvas Layer>` узел с "
+"именем``HUD``. \"HUD\" означает \"heads-up display\", информационный "
+"дисплей, отображающаяся на фоне виртуального игрового пространства в "
+"процессе игры."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:823
+#, fuzzy
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
 "isn't covered up by any game elements like the player or mobs."
 msgstr ""
+"Узел :ref:`CanvasLayer <class_CanvasLayer>` позволяет нам изобразить "
+"элементы UI на слое выше остальной частью игры, чтобы отображаемая "
+"информация не покрывалась какими-либо игровыми элементами, такими как игрок "
+"или мобы."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:827
 msgid "The HUD displays the following information:"
-msgstr ""
+msgstr "HUD отображает следующую информацию:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:829
 msgid "Score, changed by ``ScoreTimer``."
-msgstr ""
+msgstr "Счет, измененный ``ScoreTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:830
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
-msgstr ""
+msgstr "Сообщение, например \"Game Over\" или \"Get Ready!\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:831
 msgid "A \"Start\" button to begin the game."
-msgstr ""
+msgstr "Кнопка \"Start\" чтобы начать игру."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:833
+#, fuzzy
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
 "`Label <class_Label>` and :ref:`Button <class_Button>`."
 msgstr ""
+"Основной узел для элементов пользовательского интерфейса :ref:`Control "
+"<class_Control>`. Чтобы создать UI, мы будем использовать два вида :ref:"
+"`Control <class_Control>` nodes: :ref:`Label <class_Label>` и :ref:`Button "
+"<class_Button>`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:837
+#, fuzzy
 msgid "Create the following as children of the ``HUD`` node:"
-msgstr ""
+msgstr "Создайте в качестве потомка узла '' HUD'' следующие:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:839
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
-msgstr ""
+msgstr ":ref:`Label<class_Label>` названный ``ScoreLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:840
 msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
-msgstr ""
+msgstr ":ref:`Label <class_Label>` названный ``MessageLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:841
+#, fuzzy
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
-msgstr ""
+msgstr ":ref:`Кнопка <class_Button>` с именем ``StartButto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:842
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
-msgstr ""
+msgstr ":ref:`Timer <class_Timer>` названный ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:844
 msgid ""

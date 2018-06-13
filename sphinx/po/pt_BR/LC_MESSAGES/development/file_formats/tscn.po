@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,130 +122,42 @@ msgid ""
 "so on. For example, a spatial node looks like:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:65
-msgid "Resources"
-msgstr "Recursos"
-
-#: ../../docs/development/file_formats/tscn.rst:66
-msgid ""
-"Resources are components that make up the nodes. For example, a MeshInstance "
-"node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
-"may be either internal or external to the TSCN file."
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:70
-msgid ""
-"References to the resources are handled by id numbers in the resources "
-"heading. External resources and internal resource are referred to with :code:"
-"`ExtResource(id)` and :code:`SubResource(id)`. Because there have different "
-"methods to refer to internal and external resource, you can have the same ID "
-"for both an internal and external resource."
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:76
-msgid ""
-"For example, to refer to the resource :code:`[ext_resource id=3 type="
-"\"PackedScene\" path=....]` you would use :code:`ExtResource(3)`"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:82
-msgid "External Resources"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:84
-msgid ""
-"External resources are links to resources not contained within the TSCN file "
-"itself. An external resource consists of:"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:87
-msgid "A path"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:88
-msgid "A type"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:89
-msgid "An ID"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:91
-msgid ""
-"Godot alway generates absolute paths relative to the resource directory and "
-"thus prefixed with :code:`res://`, but paths relative to the TSCN file's "
-"location are also valid."
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:95
-msgid "Some example external resources are:"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:104
-msgid "Internal Resources"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:106
-msgid ""
-"A TSCN file can contain meshes, materials and other data, and these are "
-"contained in the internal resources section of the file. The heading for an "
-"internal resource looks similar to those of external resources, but does not "
-"have a path. Internal resources also have :code:`key=value` pairs under each "
-"heading. For example, a capsule collision shape looks like:"
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:119
-msgid ""
-"Some internal resource contain links to other internal resources (such as a "
-"mesh having a material). In this case, the referring resource must appear "
-"before the reference to it. Thus, in the internal resources section of the "
-"file, order does matter."
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:124
-msgid ""
-"Unfortunately, documentation on the formats for these subresources is "
-"completely absent, and while some can be found through inspecting resources "
-"of saved files, but others can only be found by looking through Godot's "
-"source."
-msgstr ""
-
-#: ../../docs/development/file_formats/tscn.rst:130
+#: ../../docs/development/file_formats/tscn.rst:64
 msgid "The Scene Tree"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:132
+#: ../../docs/development/file_formats/tscn.rst:66
 msgid ""
 "The scene tree is made up of ... nodes! The heading of each node consists of "
 "it's name, parent and (most of the time) a type. For example :code:`[node "
 "type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]`"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:136
+#: ../../docs/development/file_formats/tscn.rst:70
 msgid "Other valid keywords include:"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:138
+#: ../../docs/development/file_formats/tscn.rst:72
 msgid "instance"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:139
+#: ../../docs/development/file_formats/tscn.rst:73
 msgid "instance_placeholder"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:140
+#: ../../docs/development/file_formats/tscn.rst:74
 msgid "owner"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:141
+#: ../../docs/development/file_formats/tscn.rst:75
 msgid "index (if two nodes have the same name)"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:142
+#: ../../docs/development/file_formats/tscn.rst:76
 msgid "groups"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:144
+#: ../../docs/development/file_formats/tscn.rst:78
 msgid ""
 "The first node in the file should not have the :code:`parent=Path/To/Node` "
 "entry in it's heading, and it is the scene root. All scene files should have "
@@ -255,9 +167,408 @@ msgid ""
 "\".\"`. Here is an example scene tree (but without any node content). ::"
 msgstr ""
 
-#: ../../docs/development/file_formats/tscn.rst:157
+#: ../../docs/development/file_formats/tscn.rst:91
 msgid ""
-"Similar to the internal resource, the content for each node is currently "
-"undocumented. Fortunately it is easy to find out because you can simply save "
-"a file with that node in it. Some example nodes are:"
+"Similar to the internal resource, the document for each node is currently "
+"incomplete. Fortunately it is easy to find out because you can simply save a "
+"file with that node in it. Some example nodes are:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:129
+#, fuzzy
+msgid "Node Path"
+msgstr "Caminho do Recurso"
+
+#: ../../docs/development/file_formats/tscn.rst:131
+msgid ""
+"A tree structure is not enough to represent the whole scene, Godot use a :"
+"code:`NodePath(Path/To/Node)` structure to refer to another node or "
+"attribute of the node anywhere in the scene tree. Some typical usages of "
+"NodePath like mesh node use :code:`NodePath()` to point to its skeleton, "
+"animation track use :code:`NodePath()` points to animated attribute in node."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:154
+#, fuzzy
+msgid "Skeleton"
+msgstr "Singletons"
+
+#: ../../docs/development/file_formats/tscn.rst:155
+msgid ""
+"Skeleton node inherits Spatial node, besides that it may have a list of "
+"bones described in key, value pair in the format :code:`bones/Id/"
+"Attribute=Value`, attributes of bone consisits of"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:159
+msgid "name"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:160
+msgid "parent"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:161
+msgid "rest"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:162
+msgid "pose"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:163
+#: ../../docs/development/file_formats/tscn.rst:384
+msgid "enabled"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:164
+msgid "bound_children"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:166
+msgid ":code:`name` must put as the first attribute of each bone"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:168
+msgid ""
+":code:`parent` is the index of parent bone in the bone list, with parent "
+"index, the bone list is built to a bone tree"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:171
+msgid ":code:`rest` is the transform matrix of bone in rest position"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:173
+msgid ":code:`pose` is the pose matrix use :code:`rest` as basis"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:175
+msgid ""
+":code:`bound_children` is a list of NodePath() points to BoneAttachments "
+"belong to this bone"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:178
+msgid "An example of a skeleton node with two bones:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:198
+msgid "BoneAttachment"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:199
+msgid ""
+"BoneAttachment node is an intermediate node to describe some node being "
+"parented to a single bone in Skeleton node. The BoneAttachment has a :code:"
+"`bone_name=NameOfBone`, and the corresponding bone being the parent has the "
+"BoneAttachment node in its :code:`bound_children` list."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:204
+msgid "An example of one MeshInstance parented to a bone in Skeleton:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:228
+#, fuzzy
+msgid "AnimationPlayer"
+msgstr "Animação"
+
+#: ../../docs/development/file_formats/tscn.rst:229
+msgid ""
+"AnimationPlayer works as an animation lib. it has animations listed in the "
+"format :code:`anim/Name=SubResource(ResourceId)`, each refers to a Animation "
+"internal resource. All the animation resources use the root node of "
+"AnimationPlayer. The root node is stored as :code:`root_node=NodePath(Path/"
+"To/Node)`."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:249
+msgid "Resources"
+msgstr "Recursos"
+
+#: ../../docs/development/file_formats/tscn.rst:250
+msgid ""
+"Resources are components that make up the nodes. For example, a MeshInstance "
+"node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
+"may be either internal or external to the TSCN file."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:254
+msgid ""
+"References to the resources are handled by id numbers in the resources "
+"heading. External resources and internal resource are referred to with :code:"
+"`ExtResource(id)` and :code:`SubResource(id)`. Because there have different "
+"methods to refer to internal and external resource, you can have the same ID "
+"for both an internal and external resource."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:260
+msgid ""
+"For example, to refer to the resource :code:`[ext_resource id=3 type="
+"\"PackedScene\" path=....]` you would use :code:`ExtResource(3)`"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:266
+msgid "External Resources"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:268
+msgid ""
+"External resources are links to resources not contained within the TSCN file "
+"itself. An external resource consists of:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:271
+msgid "A path"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:272
+msgid "A type"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:273
+msgid "An ID"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:275
+msgid ""
+"Godot alway generates absolute paths relative to the resource directory and "
+"thus prefixed with :code:`res://`, but paths relative to the TSCN file's "
+"location are also valid."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:279
+msgid "Some example external resources are:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:288
+msgid "Internal Resources"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:290
+msgid ""
+"A TSCN file can contain meshes, materials and other data, and these are "
+"contained in the internal resources section of the file. The heading for an "
+"internal resource looks similar to those of external resources, but does not "
+"have a path. Internal resources also have :code:`key=value` pairs under each "
+"heading. For example, a capsule collision shape looks like:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:303
+msgid ""
+"Some internal resource contain links to other internal resources (such as a "
+"mesh having a material). In this case, the referring resource must appear "
+"before the reference to it. Thus, in the internal resources section of the "
+"file, order does matter."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:308
+msgid ""
+"Unfortunately, documentation on the formats for these subresources is not "
+"complete, and while some can be found through inspecting resources of saved "
+"files, others can only be found by looking through Godot's source."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:313
+#, fuzzy
+msgid "ArrayMesh"
+msgstr "Arrays"
+
+#: ../../docs/development/file_formats/tscn.rst:314
+msgid ""
+"ArrayMesh consists of several surfaces, each in the format :code:`surface"
+"\\Index={}`, each surface is a set of vertex and a material."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:317
+msgid "TSCN support two format of surface,"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:319
+msgid "for the old format, each surface has three essential keys:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:321
+msgid "primitive"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:322
+#, fuzzy
+msgid "arrays"
+msgstr "Arrays"
+
+#: ../../docs/development/file_formats/tscn.rst:323
+msgid "morph_arrays"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:325
+msgid ""
+":code:`primitive` is an enumerate variable, :code:`primitive=4` which is "
+"PRIMITIVE_TRIANGLES is frequently used."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:328
+msgid ":code:`arrays` as name suggestes is an array of array, it contains:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:330
+msgid "a array of vertex position"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:331
+msgid "tagents array"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:332
+msgid "vertex color array"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:333
+msgid "UV array 1"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:334
+msgid "UV array 2"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:335
+msgid "bone index array"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:336
+msgid "bone weight array"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:337
+msgid "vertex index array"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:339
+msgid ""
+":code:`morph_arrays` is an array of morph, each morph is exactly an :code:"
+"`arrays` without vertex index array."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:342
+msgid "An example of ArrayMesh:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:365
+msgid "Animation"
+msgstr "Animação"
+
+#: ../../docs/development/file_formats/tscn.rst:366
+msgid ""
+"An animation resource consists of tracks. Besides, it has 'length', 'loop' "
+"and 'step' applied to all the tracks."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:369
+msgid "length"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:370
+msgid "loop"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:371
+msgid "step"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:373
+msgid ":code:`length` and :code:`step` are both time in seconds"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:375
+msgid ""
+"Each track is described by a list of key, value pairt in the format :code:"
+"`tracks/Id/Attribute`, it includs:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:378
+msgid "type"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:379
+#, fuzzy
+msgid "path"
+msgstr "Caminho do usuário"
+
+#: ../../docs/development/file_formats/tscn.rst:380
+#, fuzzy
+msgid "interp"
+msgstr "Center"
+
+#: ../../docs/development/file_formats/tscn.rst:381
+msgid "keys"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:382
+msgid "loop_wrap"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:383
+msgid "imported"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:387
+msgid ""
+"The :code:`type` must be put as the first attribute of each track. The value "
+"of :code:`type` can be:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:390
+#, fuzzy
+msgid "'transform'"
+msgstr "Transformação"
+
+#: ../../docs/development/file_formats/tscn.rst:391
+#, fuzzy
+msgid "'value'"
+msgstr "Valor"
+
+#: ../../docs/development/file_formats/tscn.rst:392
+msgid "'method'"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:394
+msgid ""
+"The :code:`path` has the format :code:`NodePath(Path/To/Node:Attribute)`. It "
+"is the path from animation root node (property of AnimationPlayer) to the "
+"animated node or attrbute."
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:398
+msgid ""
+"The :code:`interp` is the method to interpolate frames from the keyframes. "
+"it is a enum variable and can has value:"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:401
+#, fuzzy
+msgid "0 (constant)"
+msgstr "A constante PI."
+
+#: ../../docs/development/file_formats/tscn.rst:402
+msgid "1 (linear)"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:403
+msgid "2 (cubic)"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:405
+msgid ""
+"The :code:`keys` is the keyframes, it appears as a PoolRealArray() but have "
+"different structure for track with different type"
+msgstr ""
+
+#: ../../docs/development/file_formats/tscn.rst:408
+msgid ""
+"A transform track use every 12 real number in the :code:`keys` to describte "
+"a keyframe. The first number is the timestamp, the second number is the "
+"transision (default 1.0 in transform track), followed by a three number "
+"translation vector, followed by four number rotation quaternion (x,y,z,w) "
+"and finally a three number scale vector."
 msgstr ""

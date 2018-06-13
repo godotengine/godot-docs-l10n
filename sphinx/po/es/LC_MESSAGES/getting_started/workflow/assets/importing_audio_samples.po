@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,14 +121,20 @@ msgid ""
 "artists the need to add reverb to the sound effects, reducing their size "
 "greatly and ensuring correct trimming. Say no to SFX with baked reverb!"
 msgstr ""
+"Godot 3+ tiene un increíble sistema de bus con efectos incorporados. Esto "
+"ahorra a los artistas de SFX la necesidad de agregar reverberación a los "
+"efectos de sonido, reduciendo su tamaño en gran medida y asegurando un  "
+"correcto recorte. ¡Diga no a SFX con reverberación preparada!"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:47
 msgid "As you can see above, sound effects become huge with reverb added."
 msgstr ""
+"Como puede ver arriba, los efectos de sonido se vuelven enormes cuando se "
+"agrega reverberación."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:50
 msgid "Trimming"
-msgstr ""
+msgstr "Trimming"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
 msgid ""
@@ -137,14 +143,21 @@ msgid ""
 "saving to a waveform, increase their size unnecessarily and add latency to "
 "the moment they are played back."
 msgstr ""
+"Un problema que ocurre a menudo es que las formas de onda se exportan con "
+"largos silencios al principio y al final. Estos son insertados por los DAW "
+"(estación de trabajo de audio digital) cuando se guardan en una forma de "
+"onda, aumentan su tamaño innecesariamente y agregan latencia al momento en "
+"que se reproducen."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:57
 msgid "Importing as WAV with the Trimming option enabled solves this."
 msgstr ""
+"La importación como WAV con la opción de Trimming activada resuelve este "
+"problema."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:61
 msgid "Looping"
-msgstr ""
+msgstr "Looping"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid ""
@@ -152,9 +165,15 @@ msgid ""
 "can add loop points to wav files). This is useful for sound effects such as "
 "engines, machine guns, etc. Ping-pong looping is also supported."
 msgstr ""
+"Godot soporta looping en los samples (Herramientas como Sound Forge o "
+"Audition pueden añadir puntos de loop a los archivos wav). Esto es útil para "
+"efectos de sonido como motores, ametralladoras, etc. También soporta el Ping-"
+"pong looping."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:68
 msgid ""
 "As an alternative, the import screen has a \"loop\" option that enables "
 "looping for the entire sample when importing."
 msgstr ""
+"Como alternativa, la pantalla de importación tiene una opción de \"repetir\" "
+"que permite la repetición de la totalidad de la muestra al importar."

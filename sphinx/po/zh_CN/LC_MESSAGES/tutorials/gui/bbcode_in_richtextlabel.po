@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,12 +31,16 @@ msgid ""
 "control. It has a built-in API for generating the markup, but can also parse "
 "a BBCode."
 msgstr ""
+":ref:`class_RichTextLabel` 类允许在控件上显示复杂的标记。它提供了内置的API用"
+"以生成这些标记，并且能解析BBCode。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:12
 msgid ""
 "Note that the BBCode tags can also be used to some extent in the :ref:`XML "
 "source of the class reference <doc_updating_the_class_reference>`."
 msgstr ""
+"需要注意到BBCode 标记也可以在某种程度上使用于“类的参考资料”，见 :ref:`XML "
+"source of the class reference <doc_updating_the_class_reference>`。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:16
 msgid "Setting up"
@@ -47,18 +51,20 @@ msgid ""
 "For RichTextLabel to work properly, it must be set up. This means loading "
 "the intended fonts in the relevant properties:"
 msgstr ""
+"要让 RichTextLabel 正常工作, 必须设置它。这意味着要在相关属性中加载预期的字"
+"体:"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:24
 msgid "Reference"
-msgstr ""
+msgstr "参考"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:27
 msgid "Command"
-msgstr ""
+msgstr "命令"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:27
 msgid "Tag"
-msgstr ""
+msgstr "标签"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:27
 msgid "Description"
@@ -66,237 +72,240 @@ msgstr "描述"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:29
 msgid "**bold**"
-msgstr ""
+msgstr "**bold**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:29
 msgid "``[b]{text}[/b]``"
-msgstr ""
+msgstr "``[b]{text}[/b]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:29
 msgid "Makes {text} bold."
-msgstr ""
+msgstr "使得 {text} 呈现粗体。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:31
 msgid "**italics**"
-msgstr ""
+msgstr "**italics**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:31
 msgid "``[i]{text}[/i]``"
-msgstr ""
+msgstr "``[i]{text}[/i]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:31
 msgid "Makes {text} italics."
-msgstr ""
+msgstr "使得 {text} 呈现斜体。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:33
 msgid "**underline**"
-msgstr ""
+msgstr "**underline**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:33
 msgid "``[u]{text}[/u]``"
-msgstr ""
+msgstr "``[u]{text}[/u]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:33
 msgid "Makes {text} underline."
-msgstr ""
+msgstr "使得 {text} 呈现下划线。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
 msgid "**code**"
-msgstr ""
+msgstr "**code**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
 msgid "``[code]{text}[/code]``"
-msgstr ""
+msgstr "``[code]{text}[/code]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
 msgid "Makes {text} monospace."
-msgstr ""
+msgstr "使得 {text} 呈现等宽（monospace）字体样式。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "**center**"
-msgstr ""
+msgstr "**center**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "``[center]{text}[/center]``"
-msgstr ""
+msgstr "``[center]{text}[/center]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "Makes {text} centered."
-msgstr ""
+msgstr "使得 {text} 居中。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "**right**"
-msgstr ""
+msgstr "**right**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "``[right]{text}[/right]``"
-msgstr ""
+msgstr "``[right]{text}[/right]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "Makes {text} right-aligned."
-msgstr ""
+msgstr "使得 {text} 右对齐。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "**fill**"
-msgstr ""
+msgstr "**fill**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "``[fill]{text}[/fill]``"
-msgstr ""
+msgstr "``[fill]{text}[/fill]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "Makes {text} fill width."
-msgstr ""
+msgstr "使得 {text} 填充整个宽度。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "**indent**"
-msgstr ""
+msgstr "**indent**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "``[indent]{text}[/indent]``"
-msgstr ""
+msgstr "``[indent]{text}[/indent]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "Increase indent level of {text}."
-msgstr ""
+msgstr "增加 {text} 的缩进级别。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "**url**"
-msgstr ""
+msgstr "**url**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "``[url]{url}[/url]``"
-msgstr ""
+msgstr "``[url]{url}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "Show {url} as such."
-msgstr ""
+msgstr "将 {url} 显示为一个统一资源定位符（URL，Uniform Resource Locator）。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "**url (ref)**"
-msgstr ""
+msgstr "**url (ref)**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "``[url=<url>]{text}[/url]``"
-msgstr ""
+msgstr "``[url=<url>]{text}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "Makes {text} reference <url>."
-msgstr ""
+msgstr "使得 {text} 引用指向 <url> 。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "**image**"
-msgstr ""
+msgstr "**image**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "``[img]{path}[/img]``"
-msgstr ""
+msgstr "``[img]{path}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "Insert image at resource {path}."
-msgstr ""
+msgstr "插入由资源路径 {path} 所指示的图片。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "**font**"
-msgstr ""
+msgstr "**font**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "``[font=<path>]{text}[/font]``"
-msgstr ""
+msgstr "``[font=<path>]{text}[/font]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "Use custom font at <path> for {text}."
-msgstr ""
+msgstr "为 {text} 内容设置自定义字体，字体由 <path> 指定。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "**color**"
-msgstr ""
+msgstr "**color**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "``[color=<code/name>]{text}[/color]``"
-msgstr ""
+msgstr "``[color=<code/name>]{text}[/color]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "Change {text} color, use # format such as #ff00ff or name."
 msgstr ""
+"改变 {text} 的颜色, 可以使用十六进制码指定颜色，如#ff00ff。或者使用颜色名称。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "Built-in color names"
-msgstr ""
+msgstr "内置的颜色名称列表"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "List of valid color names for the [color=<name>] tag:"
-msgstr ""
+msgstr "以下列出[color=<name>]标签所支持的有效颜色名称："
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "aqua"
-msgstr ""
+msgstr "aqua"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:62
 msgid "black"
-msgstr ""
+msgstr "black"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "blue"
-msgstr ""
+msgstr "blue"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:64
 msgid "fuchsia"
-msgstr ""
+msgstr "fuchsia"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "gray"
-msgstr ""
+msgstr "gray"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:66
 msgid "green"
-msgstr ""
+msgstr "green"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "lime"
-msgstr ""
+msgstr "lime"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:68
 msgid "maroon"
-msgstr ""
+msgstr "maroon"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "navy"
-msgstr ""
+msgstr "navy"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:70
 msgid "purple"
-msgstr ""
+msgstr "purple"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "red"
-msgstr ""
+msgstr "red"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:72
 msgid "silver"
-msgstr ""
+msgstr "silver"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "teal"
-msgstr ""
+msgstr "teal"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:74
 msgid "white"
-msgstr ""
+msgstr "white"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "yellow"
-msgstr ""
+msgstr "yellow"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:78
 msgid "Hexadecimal color codes"
-msgstr ""
+msgstr "十六进制颜色代码"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:80
 msgid ""
 "For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
 "``[color=#ffffff]white[/color]``."
 msgstr ""
+"对于不透明的 RGB 颜色, 支持任何有效的6位数的十六进制代码, 例如 "
+"``[color=#ffffff]white[/color]``。"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:82
 msgid ""
@@ -304,3 +313,6 @@ msgid ""
 "``[color=#88ffffff]translucent white[/color]``. In this case, note that the "
 "alpha channel is the **first** component of the color code, not the last one."
 msgstr ""
+"对于透明的 RGB 颜色, 可以使用任意8位的十六进制代码, 例如 "
+"``[color=#88ffffff]translucent white[/color]``。在这种情况下, 请注意 alpha 通"
+"道是颜色代码的第一个分量, 而不是最后一个。"

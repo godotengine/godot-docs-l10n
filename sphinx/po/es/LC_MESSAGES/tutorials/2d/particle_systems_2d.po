@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:4
 msgid "Particle Systems (2D)"
-msgstr ""
+msgstr "Sistemas de partículas (2D)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:7
 msgid "Intro"
@@ -31,6 +31,10 @@ msgid ""
 "Particle systems are used to simulate complex physical effects such as "
 "sparks, fire, magic particles, smoke, mist, magic, etc."
 msgstr ""
+"Se proporciona un sistema de partículas simple (pero lo suficientemente "
+"flexible para la mayoría de los usos). Los sistemas de partículas se "
+"utilizan para simular efectos físicos complejos como chispas, fuego, "
+"partículas mágicas, humo, niebla, magia, etc."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
 msgid ""
@@ -41,10 +45,16 @@ msgid ""
 "creating a particle system means setting base physics parameters and then "
 "adding randomness to them."
 msgstr ""
+"La idea es que una \"partícula\" se emite a un intervalo fijo y con una vida "
+"útil fija. Durante su vida útil, cada partícula tendrá el mismo "
+"comportamiento básico. Lo que hace que cada partícula sea diferente y "
+"proporciona un aspecto más orgánico es la \"aleatoriedad\" asociada a cada "
+"parámetro. En esencia, crear un sistema de partículas significa establecer "
+"parámetros físicos básicos y luego agregarles aleatoriedad."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
 msgid "Particles2D"
-msgstr ""
+msgstr "Particles2D"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:23
 msgid ""
@@ -57,7 +67,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:30
 msgid "ParticlesMaterial"
-msgstr ""
+msgstr "ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:32
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,33 +94,33 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid "string"
-msgstr ""
+msgstr "字符串"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid "KEYN"
-msgstr ""
+msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 msgid ""
@@ -129,80 +129,85 @@ msgid ""
 "be unique and represent a string universally (they are usually in uppercase, "
 "to differentiate from other strings). Here's an example:"
 msgstr ""
+"<lang*> 标签必须表示一种语言, 它必须选自 :ref:`valid locales <doc_locales>` "
+"中的Locale列的有效值才能被引擎支持。KEY 标签必须是唯一的, 并普遍地代表某个字"
+"符串 (它们通常是全大写, 以区别于其他字符串)。下面是一个示例:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "id"
-msgstr ""
+msgstr "id"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "ja"
-msgstr ""
+msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "GREET"
-msgstr ""
+msgstr "GREET"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "Hola, Amigo!"
-msgstr ""
+msgstr "Hola, Amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "ASK"
-msgstr ""
+msgstr "ASK"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "How are you?"
-msgstr ""
+msgstr "How are you?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "Cómo está?"
-msgstr ""
+msgstr "Cómo está?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "BYE"
-msgstr ""
+msgstr "BYE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "Good Bye"
-msgstr ""
+msgstr "Good Bye"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
 msgid "CSV Importer"
-msgstr ""
+msgstr "CSV导入器"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"Godot 将 CSV 文件默认作为译文处理。它将导入该文件并在其旁边位置生成一个或多个"
+"压缩过的翻译资源文件。"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid ""
@@ -210,3 +215,5 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"导入过程还会将翻译添加到在游戏运行时加载的翻译列表中, 在 project.godot文件 "
+"(或项目设置) 中指定。Godot还允许在运行时加载和删除翻译。"

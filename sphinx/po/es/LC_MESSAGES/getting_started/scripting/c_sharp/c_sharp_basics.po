@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,7 +86,6 @@ msgid "Setup C# for Godot"
 msgstr "Configuración C# para Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:27
-#, fuzzy
 msgid ""
 "To use C# in Godot you must have `Mono <http://www.mono-project.com/download/"
 ">`_ installed. Godot 3.0.2 requires Mono 5.4, 3.0.3 requires Mono 5.12 on "
@@ -95,8 +94,8 @@ msgid ""
 msgstr ""
 "Para usar C# en Godot debes tener `Mono <http://www.mono-project.com/"
 "download/>`_ instalado. Godot 3.0.2 requiere Mono 5.4, 3.0.3 requiere Mono "
-"5.10 en Linux y Windows, y 5.8 en MacOS. También necesita MSBuild (al menos "
-"la versión 15.0) que debe venir con la instalación Mono."
+"5.12 en todas las plataformas. También necesitas MSBuild (al menos la "
+"versión 15.0) que debe venir con la instalación Mono."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:30
 msgid ""
@@ -105,6 +104,11 @@ msgid ""
 "#accessing-older-releases>`_. Older versions of Mono for MacOS and Windows "
 "can be found `here <https://download.mono-project.com/archive/>`_."
 msgstr ""
+"Para obtener instrucciones sobre la instalación de versiones anteriores de "
+"Mono en Linux, consulta `esta página <http://www.mono-project.com/docs/"
+"getting-started/install/linux/#accessing-older-releases>`_. Las versiones "
+"más antiguas de Mono para MacOS y Windows se encuentran `aquí <https://"
+"download.mono-project.com/archive/>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:33
 msgid ""
@@ -362,7 +366,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
 msgid "Using Nuget Packages in Godot"
-msgstr ""
+msgstr "Uso de los paquetes NuGet en Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
 msgid ""
@@ -371,8 +375,15 @@ msgid ""
 "directly. They can also be added manually by adding the package reference in "
 "the .csproj file located in the project root:"
 msgstr ""
+"`NuGet <https://www.nuget.org/>`_ Los paquetes pueden ser instalados y "
+"usados con Godot, como con cualquier proyecto. Muchos IDEs (como VS Code) "
+"pueden añadir paquetes directamente. También se pueden añadir manualmente "
+"añadiendo la referencia del paquete en el archivo .csproj ubicado en la raíz "
+"del proyecto:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:164
 msgid ""
-"Then using the dotnet command line to restore package, in the project root::"
+"Whenever packages are added or modified, run nuget restore in the root of "
+"the project directory, to ensure that the nuget packages will be available "
+"for msbuild to use, run::"
 msgstr ""

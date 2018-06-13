@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -619,6 +619,11 @@ msgid ""
 "follows the official `C# naming conventions. <https://docs.microsoft.com/en-"
 "us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
+"Le moteur ne convertit pas PascalCase en snake_case, pour les exemples C# "
+"nous utiliserons PascalCase pour les noms de méthode et camelCase pour les "
+"paramètres de méthode, ce qui suit `les conventions de nommage officielles "
+"C#. <https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/"
+"capitalization-conventions>`_"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
 #, fuzzy
@@ -938,40 +943,59 @@ msgid ""
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
 "``TextureProgress`` nodes like before, inside of ``_process``:"
 msgstr ""
+"Dans ce cas particulier, parce que ``number_label`` prend du text, nous "
+"avons besoin d'utiliser la méthode ``_process`` pour l'animer. C'est parti "
+"pour mettre à jour les noeuds ``Number`` et ``TextureProgress`` comme avant, "
+"à l'intérieur de ``_process``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
 msgstr ""
+"`number_label` et `bar` sont des variables qui stocke les références vers "
+"les noeuds `Number` et `TextureProgress`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
+#, fuzzy
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
 "nice for the life bar to animate in a choppier fashion."
 msgstr ""
+"Jouer au jeu pour observer la barre animée. Mais le texte affiche un nombre "
+"décimal et fait n'importe quoi. En considérant le style du jeu, ça serait "
+"bien pour la barre de vie de s'animer d'une façon plus saccadé."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:530
+#, fuzzy
 msgid "The animation is smooth but the number is broken"
-msgstr ""
+msgstr "L'animation est fluide mais le nombre est cassé"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:532
+#, fuzzy
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
 "variable named ``round_value`` to store the rounded ``animated_health``. "
 "Then assign it to ``number_label.text`` and ``bar.value``:"
 msgstr ""
+"On peut résoudre les deux problemes en arondissant la variable "
+"``animated_health``. Utiliser une varible locale ``round_value`` pour "
+"stocker l'arrondi. Puis assigner la à ``number_label.text`` et ``bar.value``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
+#, fuzzy
 msgid "Try the game again to see a nice blocky animation."
 msgstr ""
+"Essayez le jeu une nouvelle fois pour voir une belle animation groupée."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:558
+#, fuzzy
 msgid "By rounding out animated\\_health we hit two birds with one stone"
-msgstr ""
+msgstr "En arrondissant animated\\_health, on a fait d'une pierre deux coups"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:562
+#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -980,36 +1004,58 @@ msgid ""
 "gradually is a trick. It makes the GUI feel alive. If the ``Player`` takes 3 "
 "damage, it happens in an instant."
 msgstr ""
+"A chaque fois que le joueur prends un coup, il envoie le signal  "
+"``health_changed``, à partir  duquel ``GUI`` appelle "
+"``_on_Player_health_changed``, qui appelle la fonction ``update_health``.\n"
+"Cela mets à jour la valeur animée et les variables ``number_label`` et "
+"``bar`` suivent dans la fonction ``_process``.\n"
+"Il ne faut pas oublier, que l'animation de la barre de vie est une belle "
+"illusion. Si le joueur prends 3 dégâts, c'est immédiat."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:570
+#, fuzzy
 msgid "Fade the bar when the Player dies"
-msgstr ""
+msgstr "Fais un fondu de la barre quand le joueur meurt"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:572
+#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
 "well when the character died. We will reuse the same ``Tween`` node as it "
 "manages multiple animations in parallel for us."
 msgstr ""
+"Quand le personnage vert meurt, il joue une animation de mort et disparait. "
+"A ce moment on ne veut plus afficher l'interface. Il faut faire disparaître "
+"la barre quand le personnage meurt. On réutilisera le nœud ``Tween`` "
+"puisqu'il peut gérer plusieurs animations en parallèle."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:577
+#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
 "the ``Player`` node in the Scene dock and click on the Node tab next to the "
 "Inspector."
 msgstr ""
+"Tout d'abord l'interface ``GUI`` doit être connecté au signal envoyé à la "
+"mort ``died`` du joueur ``Player`. Appuyer sur :kbd:`F1` pour repasser sur "
+"l'espace de travail 2D. Sélectionner le nœud ``Player``dans le dock des "
+"scène et cliquer dans l'inspecteur sur l'onglet Node."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:582
+#, fuzzy
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr ""
+"Trouver et sélectionner le signal ``died``, et cliquer sur le bouton Connect."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:586
+#, fuzzy
 msgid "The signal should already have the Enemy connected to it"
-msgstr ""
+msgstr "Ce signal est déjà connecté à l’ennemi."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
+#, fuzzy
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -1017,10 +1063,16 @@ msgid ""
 "the bottom of the window. This will take you to the ``GUI.gd`` file in the "
 "Script Workspace."
 msgstr ""
+"Dans la fenêtre de connexion des signaux, connecter le nœud ``GUI``. Le "
+"chemin du nœud devrait être ``../../GUI`` et la méthode ``_on_Player_died``. "
+"Laisser l'option Make Function activé et cliquer sur Connect au bas de la "
+"fenêtre. Cela vous emmènera sur le script ``GUI.gd``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:596
+#, fuzzy
 msgid "You should get these values in the Connecting Signal window"
 msgstr ""
+"Vous devriez avoir ces valeurs dans la fenêtre de connexion des signaux"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
 msgid ""

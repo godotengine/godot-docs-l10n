@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-06 09:15+0200\n"
+"POT-Creation-Date: 2018-06-13 14:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:4
 msgid "Multiple resolutions"
-msgstr ""
+msgstr "多分辨率"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:7
 msgid "Base resolution"
-msgstr ""
+msgstr "基本分辨率"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:9
 msgid ""
 "A base screen resolution for the project can be specified in the project "
 "settings under ``display``, ``window``"
 msgstr ""
+"项目的基本屏幕分辨率可以在项目设置的 ``显示（display）``、``窗口（window）`` "
+"中指定"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:14
 msgid ""
@@ -40,10 +42,15 @@ msgid ""
 "will be used instead. To compensate for this, Godot offers many ways to "
 "control how the screen will resize and stretch to different screen sizes."
 msgstr ""
+"然而, 这个设置所做的具体事情并不完全显而易见。比如在 PC 上运行时, 引擎将尝试"
+"设置成此分辨率 (如果失败则使用更小的尺寸)。但在移动端、游戏主机或其他具有固定"
+"分辨率或全屏渲染的设备上时, 此分辨率将被忽略, 取而代之使用设备的本机分辨率。"
+"作为这个设置分辨率功能的补充, Godot提供了许多方法来控制屏幕尺寸的调整方式和拉"
+"伸到不同的屏幕大小时的方式。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:23
 msgid "Resizing"
-msgstr ""
+msgstr "调整尺寸"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:25
 msgid ""
@@ -55,6 +62,11 @@ msgid ""
 "(scenes loaded are instanced as a child of it, and it can always be accessed "
 "by calling ``get_tree().get_root()`` or ``get_node(\"/root\")``)."
 msgstr ""
+"市面上有着各种各样的设备, 拥有各种类型的屏幕, 依次有着不同的像素密度和分辨"
+"率。处理所有的类型工作量巨大, 所以Godot试图让开发者的生活变得更简单。:ref:"
+"`Viewport <class_Viewport>` 节点提供了几个处理尺寸调整的函数, 而场景树的根节"
+"点始终是一个Viewport (场景将作为它的子节点被实例化, 并且始终可以通过调用"
+"``get_tree().get_root()`` 或``get_node(\"/root\")`` 来访问它。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:34
 msgid ""
@@ -63,20 +75,23 @@ msgid ""
 "guessing, so Godot provides a simple set of parameters in the project "
 "settings to handle multiple resolutions."
 msgstr ""
+"在任何情况下, 虽然更改”根视区“的参数可能是解决问题的最灵活方法, 但这样做的可"
+"能包含大量工作、大量代码和大量推测过程, 因此Godot在“项目设置”中提供了一组简单"
+"的参数来处理多分辨率问题。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:40
 msgid "Stretch settings"
-msgstr ""
+msgstr "拉伸设置"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:42
 msgid ""
 "Stretch settings are located in the project settings, it's just a bunch of "
 "configuration variables that provide several options:"
-msgstr ""
+msgstr "拉伸设置位于项目设置中, 它只是一系列提供多种选项的配置变量:"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:48
 msgid "Stretch mode"
-msgstr ""
+msgstr "拉伸模式 （Stretch mode）"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:50
 msgid ""
@@ -84,6 +99,8 @@ msgid ""
 "which means no stretching happens (the bigger the screen or window, the "
 "bigger the resolution, always matching pixels 1:1)."
 msgstr ""
+"** Disabled **: 这是我们的第一个拉伸模式。默认情况下, 拉伸模式就是被禁用的，"
+"这意味着不发生任何拉伸（屏幕或窗口越大, 分辨率就越大, 总是匹配像素 1:1）。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:53
 msgid ""
@@ -92,6 +109,9 @@ msgid ""
 "This means that 3D will be unaffected (will just render to higher-res) and "
 "2D will also be rendered at higher-res, just enlarged."
 msgstr ""
+"** 2D **: 在这种模式下, 由”项目设置“中的display/width和display/height指定的分"
+"辨率将被拉伸至覆盖整个屏幕。这意味着3D将不受影响 (只不过渲染到更高的分辨率), "
+"2D也将渲染到更高的分辨率, 只是增大了。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:58
 msgid ""
@@ -102,10 +122,15 @@ msgid ""
 "This mode is useful when working with pixel-precise games, or for the sake "
 "of rendering to a lower resolution for improving performance."
 msgstr ""
+"** Viewport **: Viewport模式的缩放就有所不同, 根节点位置的:ref:`Viewport "
+"<class_Viewport>`  被设置为“渲染目标”, 并且仍然精确按照“项目设置”中的 "
+"``display/``部分指定的分辨率来渲染。最后, 这个viewport会被复制并缩放以适配屏"
+"幕大小。当处理像素精确的游戏或者为了提高性能而渲染到低分辨率时，这个模式很有"
+"用。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:70
 msgid "Stretch aspect"
-msgstr ""
+msgstr "拉伸比例（Stretch aspect）"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:72
 msgid ""
@@ -113,6 +138,8 @@ msgid ""
 "that the original resolution will be stretched to fit the new one, even if "
 "it's wider or narrower."
 msgstr ""
+"** Ignore **: 在拉伸屏幕时忽略长宽比。这意味着在适配新的屏幕尺寸时，原始分辨"
+"率将被拉伸, 即使它更宽或更窄。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:75
 msgid ""
@@ -120,6 +147,8 @@ msgid ""
 "original resolution will be kept when fitting the new one, and black bars "
 "will be added to the sides or the top/bottom of the screen."
 msgstr ""
+"** Keep **: 拉伸屏幕时保持纵横比。这意味着在适配新的屏幕尺寸时, 将保留原始分"
+"辨率, 黑色条状图将被添加到屏幕的两侧或顶部/底部。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:79
 msgid ""
@@ -130,6 +159,10 @@ msgid ""
 "or HUDs that scale, so some controls can be anchored to the bottom (:ref:"
 "`doc_size_and_anchors`)."
 msgstr ""
+"** Keep Width **: 拉伸屏幕时保持纵横比, 但如果最终屏幕高度比指定分辨率更高, "
+"则垂直拉伸 (在viewport中按比例显示更多垂直分辨率)。这通常是创建可缩放的 GUI "
+"或 HUD 的最佳选项, 因此某些控件就可以锚定到底部了 (见文章:ref:"
+"`doc_size_and_anchors`)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:85
 msgid ""
@@ -139,6 +172,9 @@ msgid ""
 "the viewport, proportionally). This is usually the best option for 2D games "
 "that scroll horizontally (like runners or platformers)."
 msgstr ""
+"** Keep Height **: 拉伸屏幕时保持纵横比, 但如果最终屏幕宽度比指定分辨率更宽, "
+"则将水平拉伸 (按比例显示更多水平分辨率)。对于2D横板滚轴游戏来说, 这通常是最好"
+"的选择 (如跑酷类和平台跳跃类游戏)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:91
 msgid ""
@@ -148,3 +184,6 @@ msgid ""
 "original resolution) or more vertical resolution (if the screen is taller "
 "than the original resolution)."
 msgstr ""
+"** Expand **: 拉伸屏幕时保持纵横比, 但不保持宽度和高度。视屏幕纵横比而定, 视"
+"区将显示更多水平分辨率 (如果屏幕宽度比原始分辨率宽) 或更多垂直分辨率 (如果屏"
+"幕高度比原始分辨率高)。"
