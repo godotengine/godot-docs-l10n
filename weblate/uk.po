@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-06 09:15+0200\n"
-"PO-Revision-Date: 2018-05-29 12:43+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"PO-Revision-Date: 2018-06-13 11:53+0000\n"
+"Last-Translator: Максим Якимчук <xpinovo@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
 "Language: uk\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -818,15 +818,14 @@ msgid "Why is FBX not supported for import?"
 msgstr "Чому FBX не підтримується для імпортування?"
 
 #: ../../docs/about/faq.rst:154
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
-"FBX SDK має `обмежувальну ліцензію <http://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>`_, що несумісна з `відкритою ліцензією <http://"
-"opensource.org/licenses/MIT>`_ наданою Godot."
+"FBX SDK розповсюджується відповідно до `обмежувальних умов ліцензування "
+"<https://www.blender.org/bf/Autodesk_FBX_License.rtf>`_, які не сумісні з "
+"`відкритою ліцензією <https://opensource.org/licenses/MIT>`_ наданою Godot."
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -924,6 +923,10 @@ msgid ""
 "base resolution for the game and only handle different screen aspects. This "
 "is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or YFov."
 msgstr ""
+"Найпоширеніший і правильний спосіб досягти цього полягає в тому, щоб замість "
+"цього застосовувати єдину базову роздільну здатність для гри та обробляти "
+"лише різні співвідношення екрану. Це, в основному, потрібно для 2D, так як у "
+"3D це просто питання осей камери (Camera XFov або YFov)."
 
 #: ../../docs/about/faq.rst:200
 msgid ""
@@ -934,6 +937,13 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
+"Виберіть єдину базову роздільну здатність для вашої гри. Навіть якщо є "
+"пристрої, які досягають 2K, та пристрої, які знижуються до 400p, звичайне "
+"апаратне масштабування на вашому пристрої буде забезпечувати її за невелику "
+"втрату або без втрати продуктивності. Найпоширеніші варіанти вибору - біля "
+"1080p (1920x1080) або 720p (1280x720). Пам'ятайте, чим більша роздільна "
+"здатність, тим більші ваші активи, та тим більше пам'яті вони забирають, і "
+"довшим буде час для завантаження."
 
 #: ../../docs/about/faq.rst:208
 msgid ""
@@ -941,6 +951,9 @@ msgid ""
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
 "this."
 msgstr ""
+"Використовуйте параметри розтяжки в Godot, 2D розтягування з підтримкою "
+"пропорції працює краще. Перевірте :ref:`doc_multiple_resolutions` посібник "
+"про те, як це досягти."
 
 #: ../../docs/about/faq.rst:212
 msgid ""
@@ -949,6 +962,11 @@ msgid ""
 "there is a minimum one and you want black bars to appear instead. This is "
 "also explained in the previous step."
 msgstr ""
+"Визначте мінімальну роздільну здатність, а потім вирішіть, чи потрібно вам, "
+"щоб ваша гра розтягувалася по вертикалі або по горизонталі для "
+"співвідношення сторін, або була в одному мінімальному співвідношенні, з "
+"відображенням чорних смуг по краях. Це також пояснюється у попередньому "
+"кроці."
 
 #: ../../docs/about/faq.rst:217
 msgid ""
@@ -956,10 +974,14 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
+"Для користувацьких інтерфейсів використовуйте :ref:`закріплення "
+"<doc_size_and_anchors>`, щоб визначити, де елементи керування повинні "
+"залишатися, а де рухатися. Якщо користувацькі інтерфейси (UI) складніші, "
+"ознайомтеся з інформацією про контейнери (Containers)."
 
 #: ../../docs/about/faq.rst:221
 msgid "And that's it! Your game should work in multiple resolutions."
-msgstr ""
+msgstr "І це все! Ваша гра повинна працювати в декількох роздільностях."
 
 #: ../../docs/about/faq.rst:223
 msgid ""
@@ -968,36 +990,45 @@ msgid ""
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
+"Якщо є бажання, щоб ваша гра також працювала на стародавніх пристроях із "
+"крихітними екранами (шириною менше 300 пікселів в ширину), ви можете "
+"скористатись експортом, щоб зменшити зображення, і встановити, які збірки "
+"використовуватимуться для певних розмірів екрана в App Store або Google Play."
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"
-msgstr ""
+msgstr "У мене є чудова ідея, яка зробить Godot краще. Що ви думаєте?"
 
 #: ../../docs/about/faq.rst:231
 msgid ""
 "Your idea will most certainly be ignored. Examples of stuff that is ignored "
 "by the developers:"
 msgstr ""
+"Ваша ідея, безсумнівно, буде проігнорована. Приклади ідей, які ігноруються "
+"розробниками:"
 
 #: ../../docs/about/faq.rst:234
 msgid "Let's do this because it will make Godot better"
-msgstr ""
+msgstr "Давайте зробимо це, бо це зробить Godot краще"
 
 #: ../../docs/about/faq.rst:235
 msgid "Let's do this in Godot because another game engine does it"
-msgstr ""
+msgstr "Давайте зробимо це в Godot, тому що інший ігровий рушій це робить"
 
 #: ../../docs/about/faq.rst:236
 msgid "Let's remove this because I think it's not needed"
-msgstr ""
+msgstr "Давайте видалимо це, оскільки я думаю, що це не потрібно"
 
 #: ../../docs/about/faq.rst:237
 msgid "Let's remove clutter and bloat and make Godot look nicer"
 msgstr ""
+"Давайте вилучимо безлад та зайві елементи, і зробимо Godot ще красивішим"
 
 #: ../../docs/about/faq.rst:238
 msgid "Let's add an alternative workflow for people who prefer it"
 msgstr ""
+"Давайте додамо альтернативний робочий процес для людей, які надають перевагу "
+"йому"
 
 #: ../../docs/about/faq.rst:240
 msgid ""
@@ -1109,15 +1140,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:288
 msgid "How can I support Godot development or contribute?"
-msgstr ""
+msgstr "Як я можу підтримати розвиток Godot або зробити свій внесок?"
 
 #: ../../docs/about/faq.rst:290
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "Див. :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:293
 msgid "Who is working on Godot? How can I contact you?"
-msgstr ""
+msgstr "Хто працює над Godot? Як я можу зв'язатися з вами?"
 
 #: ../../docs/about/faq.rst:295
 msgid ""

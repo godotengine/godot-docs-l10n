@@ -14,10 +14,12 @@
 # Filipe Dias <filipediascontato@gmail.com>, 2018.
 # Flávio Henrique <flavio.pessini@outlook.com>, 2018.
 # George Marques <georgemjesus@gmail.com>, 2018.
+# Gilberto Lopes <gilbertolopes@ufrj.br>, 2018.
 # Guilherme Felipe C G Silva <guilhermefelipecgs@gmail.com>, 2018.
 # Jessé Silva <starclock@gmail.com>, 2018.
 # João Victor Lima <victordevtb@outlook.com>, 2018.
 # Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018.
+# Luccas Brandão <srluccasbrandao@gmail.com>, 2018.
 # Luciano Pestana Santos <lucianopestana@hotmail.com>, 2018.
 # M4gma <lucboari@gmail.com>, 2018.
 # Marcus Correia <marknokalt@live.com>, 2018.
@@ -35,7 +37,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-06 09:15+0200\n"
-"PO-Revision-Date: 2018-06-03 18:41+0000\n"
+"PO-Revision-Date: 2018-06-13 11:53+0000\n"
 "Last-Translator: Rodolfo R Gomes <rodolforg@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
@@ -44,7 +46,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -814,7 +816,7 @@ msgid ""
 "custom C++ modules."
 msgstr ""
 "Se você quer adicionar uma certa biblioteca nativa, sua melhor opção é "
-"GDNative e módulos C++ customizados."
+"GDNative e módulos C++ personalizados."
 
 #: ../../docs/about/faq.rst:143
 msgid "Also see the official blog posts on these topics:"
@@ -848,15 +850,14 @@ msgid "Why is FBX not supported for import?"
 msgstr "Por que FBX não é suportado na importação?"
 
 #: ../../docs/about/faq.rst:154
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
-"A SDK do FBX tem uma `licença restritiva <http://www.blender.org/bf/"
+"A SDK do FBX tem uma `licença restritiva <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, que é incompatível com a `licença aberta "
-"<http://opensource.org/licenses/MIT>`_ usada pelo Godot."
+"<https://opensource.org/licenses/MIT>`_ usada pelo Godot."
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -3978,7 +3979,7 @@ msgid ""
 "randomly so that the mobs will have some variety."
 msgstr ""
 "Configure o :ref:`AnimatedSprite <class_AnimatedSprite>` assim como você fez "
-"para o jogador. Desta vez, temos 3 animações: ``voar`` (*fly*), ``nadas`` "
+"para o jogador. Desta vez, temos 3 animações: ``voar`` (*fly*), ``nadar`` "
 "(*swim*) e ``andar`` (*walk*). Defina a propriedade ``Playing`` "
 "(reproduzindo_ no Inspetor para \"Ativo\" e ajuste a configuração "
 "\"Velocidade (FPS)\" como mostrado abaixo. Vamos selecionar uma dessas "
@@ -5470,16 +5471,15 @@ msgid "Open-source"
 msgstr "Código aberto"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:107
-#, fuzzy
 msgid ""
 "Godot offers a fully open-source codebase under the **MIT license.** This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
 "as well. For the most part, they’re coded from the ground-up by contributors."
 msgstr ""
-"O Godot oferece uma base de código totalmente open source sob a **licença "
-"MIT**. Isso significa que todas as tecnologias que acompanham o produto têm "
-"que ser Livres (como em liberdade) também. Na maior parte, eles são "
-"codificados desde o início pelos colaboradores."
+"O Godot oferece uma base de código totalmente aberto sob a **licença MIT**. "
+"Isso significa que todas as tecnologias que acompanham o produto têm que ser "
+"Livres (como em liberdade) também. Na maior parte, eles são codificados do "
+"zero pelos colaboradores."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:111
 msgid ""
@@ -6881,7 +6881,6 @@ msgstr ""
 "você o coloca dentro do CenterContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
-#, fuzzy
 msgid ""
 "To space out the menu options and the logo on the left, we'll use one final "
 "container and its size flags. Select the ``VBoxContainer`` and press ``Meta"
@@ -6895,8 +6894,8 @@ msgstr ""
 "pressione ``Meta+A`` para adicionar um novo nó dentro dele. Adicione um "
 "segundo ``VBoxContainer`` e nomeie-o como \"MenuOptions\". Selecione todas "
 "as três opções de menu, ``Continue``, ``NewGame`` e ``Options``, e arraste e "
-"solte-as dentro do novo ``VBoxContainer``. O layout da interface do usuário "
-"apenas deve mudar, se em todos."
+"solte-as dentro do novo ``VBoxContainer``. A disposição da interface do "
+"usuário deve mudar pouco, isso se mudar."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:241
 msgid ""
@@ -8334,12 +8333,10 @@ msgstr ""
 "a barra de vida seja atualizada quando o jogador sofrer dano."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
-#, fuzzy
 msgid "To do this, we will use **signals**."
-msgstr "Para fazer isso, usaremos ** sinais **."
+msgstr "Para fazer isso, usaremos **sinais**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
@@ -8350,14 +8347,14 @@ msgid ""
 "information on check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
-"Sinais são a versão do padrão da Godot. Eles nos permitem enviar algumas "
-"mensagens. Outros podem nos conectar ao objeto que **emits** emite o sinal e "
-"receber as informações. É uma ferramenta poderosa que usamos muito para "
-"Interface de Usuário e sistemas de conquistas. Embora você não queira usá-"
-"los em todos os lugares. Conectar dois nós adiciona algum acoplamento entre "
-"eles. Quando há muitas conexões, elas se tornam difíceis de gerenciar. Para "
-"mais informações sobre o check-out, consulte o tutorial sobre sinais de "
-"vídeo <https://youtu.be/l0BkQxF7X3E> `_ no GDquest."
+"Sinais são a versão Godot do padrão Observador. Eles nos permitem enviar "
+"algumas mensagens. Outros nós podem se conectar ao objeto que **emite** o "
+"sinal e receber as informações. É uma ferramenta poderosa que usamos muito "
+"para Interface de Usuário e sistemas de conquistas. Contudo, você não quer "
+"usá-los em todos os lugares. Conectar dois nós adiciona algum acoplamento "
+"entre eles. Quando há muitas conexões, elas se tornam difíceis de gerenciar. "
+"Para mais informações, consulte o `tutorial em vídeo sobre sinais <https://"
+"youtu.be/l0BkQxF7X3E>`_ no GDquest."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
@@ -8416,13 +8413,12 @@ msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "A árvore de cena, com a cena GUI configurada para exibir seus filhos"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
-#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the Game User Interface. It comes with a "
 "barebones script where we get the path to nodes that exist inside the scene:"
 msgstr ""
-"A cena GUI encapsula toda a interface do usuário do jogo. Ele vem com um "
-"script de barebones onde obtemos o caminho para os nós que existem dentro da "
+"A cena GUI encapsula toda a interface do usuário do jogo. Ela vem com um "
+"roteiro rascunhado, onde obtemos o caminho para os nós que existem dentro da "
 "cena:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
@@ -8445,7 +8441,6 @@ msgstr ""
 "qualquer valor ou método de qualquer outro nó"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
-#, fuzzy
 msgid ""
 "The project uses a simple organisation that works for game jams and tiny "
 "games."
@@ -8525,17 +8520,16 @@ msgstr ""
 "para o` GUI` em vez disso:`health / max_health * 100`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
-#, fuzzy
 msgid ""
 "Click the script icon to the right of the ``GUI`` in the Scene dock to open "
 "its script. In the ``_ready`` function, we're going to store the "
 "``Player``'s ``max_health`` in a new variable and use it to set the "
 "``bar``'s ``max_value``:"
 msgstr ""
-"Clique no ícone de script à direita da `` GUI`` na doca Scene para abrir seu "
-"script. Na função `` _ready``, vamos armazenar `` max_health`` do `` "
-"Player`` em uma nova variável e usá-la para definir `` max_value`` do `` "
-"bar`` :"
+"Clique no ícone de roteiro à direita da `` GUI`` no painel Cena para abrir "
+"seu roteiro. Na função ``_ready``, vamos armazenar ``max_health`` do "
+"``Player`` em uma nova variável e usá-la para definir o ``max_value`` do "
+"``bar``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
 msgid ""
@@ -8580,7 +8574,6 @@ msgstr ""
 "jogador já perdeu alguma vida."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
-#, fuzzy
 msgid ""
 "When you open a scene in the game, Godot creates nodes one by one, following "
 "the order in your Scene dock, from top to bottom. `GUI` and `Player` are not "
@@ -8590,12 +8583,12 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
-"Quando você abre uma cena no jogo, Godot cria nós um por um, seguindo a "
-"ordem no seu Dock de cena, de cima para baixo. `GUI` e` Player` não fazem "
-"parte do mesmo ramo de nó. Para ter certeza de que ambos existem quando nos "
-"acessamos, temos que usar a função `_ready`. Godot chama `_ready` logo após "
-"carregar todos os nós, antes do jogo começar. É a função perfeita para "
-"configurar tudo e preparar a sessão do jogo. Saiba mais sobre _ready:: doc: "
+"Quando você abre uma cena no jogo, Godot cria os nós um por um, seguindo a "
+"ordem no seu painel Cena, de cima para baixo. `GUI` e `Player` não fazem "
+"parte do mesmo ramo de nó. Para ter certeza de que ambos existem quando nós "
+"os acessamos, temos que usar a função `_ready`. Godot chama `_ready` logo "
+"após carregar todos os nós, antes do jogo começar. É a função perfeita para "
+"configurar tudo e preparar a sessão do jogo. Saiba mais sobre _ready: :doc:"
 "`scripting_continued`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
@@ -8624,7 +8617,6 @@ msgstr ""
 "`health_changed`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
-#, fuzzy
 msgid ""
 "Why don't we directly get the ``Player`` node in the ``_process`` function "
 "and look at the health value? Accessing nodes this way creates tight "
@@ -8635,18 +8627,16 @@ msgid ""
 "a second and you'll likely break the game because of the order in which the "
 "code runs."
 msgstr ""
-"Por que nós não obtemos diretamente o nó `` Player`` na função `` _process`` "
-"e olhamos o valor de saúde? O acesso aos nós dessa maneira cria um "
-"acoplamento firme entre eles. Se você fez isso com moderação, pode "
-"funcionar. Conforme seu jogo cresce, você pode ter muito mais conexões. Se "
-"você conseguir os nós dessa maneira, fica complexo rapidamente. Não só isso: "
-"você precisa ouvir a mudança de estado constantemente na função `` "
-"_process``. Essa verificação acontece 60 vezes por segundo e você "
-"provavelmente quebrará o jogo por causa da ordem na qual o código é "
-"executado."
+"Por que nós não pegamos diretamente o nó ``Player`` na função ``_process`` e "
+"olhamos o valor de saúde? Acessar nós dessa maneira cria um acoplamento "
+"firme entre eles. Se você faz isso com moderação, pode funcionar. Conforme "
+"seu jogo cresce, você pode ter muito mais conexões. Se você pegar nós dessa "
+"maneira, as coisas ficam complexas rapidamente. Não só isso: você precisa "
+"ouvir a mudança de estado constantemente na função ``_process``. Essa "
+"verificação acontece 60 vezes por segundo e você provavelmente quebrará o "
+"jogo por causa da ordem na qual o código é executado."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:206
-#, fuzzy
 msgid ""
 "On a given frame you may look at another node's property *before* it was "
 "updated: you get a value from the last frame. This leads to obscure bugs "
@@ -8655,12 +8645,12 @@ msgid ""
 "information. And you will update the state of your connected node *right "
 "after* the change happened."
 msgstr ""
-"Em um determinado quadro, você pode olhar para a propriedade de outro nó * "
-"antes de * ele ser atualizado: você obtém um valor do último quadro. Isso "
+"Em um determinado quadro, você pode olhar para a propriedade de outro nó "
+"*antes* de ele ser atualizado: você obtém um valor do último quadro. Isso "
 "leva a erros obscuros que são difíceis de corrigir. Por outro lado, um sinal "
-"é emitido logo após a ocorrência de uma mudança. Isso garante que você está "
-"recebendo uma nova informação. E você irá atualizar o estado do seu nó "
-"conectado * logo após * a mudança aconteceu."
+"é emitido logo após a ocorrência de uma mudança. Isso **garante** que você "
+"está recebendo uma informação recente. E você irá atualizar o estado do seu "
+"nó conectado *logo após* a mudança acontecer."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
 msgid ""
@@ -8673,6 +8663,15 @@ msgid ""
 "gameprogrammingpatterns.com/observer.html>`_. The `full book <http://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
+"O padrão Observador, de onde os sinais derivam, ainda adiciona um pouco de "
+"acoplamento entre os ramos do nó. Mas geralmente é mais leve e mais seguro "
+"do que acessar nós diretamente para se comunicar entre duas classes "
+"separadas. Pode ser bom para um nó pai obter valores de seus filhos. Mas "
+"você vai querer favorecer sinais se estiver trabalhando com dois ramos "
+"separados. Leia os Padrões de Programação de Jogos para mais informações "
+"sobre o 'Observer pattern <http://gameprogrammingpatterns.com/observer."
+"html>' . O `livro completo <http://gameprogrammingpatterns.com/contents."
+"html>` _ está disponível online gratuitamente."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
 msgid ""
@@ -8681,24 +8680,31 @@ msgid ""
 "and click on the Node tab. This is the place to connect nodes to listen the "
 "one you selected."
 msgstr ""
+"Com isso em mente, vamos conectar a ``GUI`` ao ``Player``. Clique no nó "
+"``Player`` no painel Cena para selecioná-lo. Vá até o Inspetor e clique na "
+"guia Nó. Este é o lugar para conectar nós para escutar aquele que você "
+"selecionou."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
 msgid "The first section lists custom signals defined in ``player.GD``:"
 msgstr ""
+"A primeira seção lista os sinais personalizados definidos em `` player.GD``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
 msgid ""
 "``died`` is emitted when the character died. We will use it in a moment to "
 "hide the UI."
 msgstr ""
+"``died`` (\"morreu\") é emitido quando o personagem morre. Vamos usá-lo em "
+"um momento para esconder a interface do usuário."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:228
 msgid "``health_changed`` is emitted when the character got hit."
-msgstr ""
+msgstr "`` health_changed`` é emitido quando o personagem é atingido."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:232
 msgid "We're connecting to the health\\_changed signal"
-msgstr ""
+msgstr "Estamos nos conectando ao sinal health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
 msgid ""
@@ -8710,26 +8716,38 @@ msgid ""
 "too many arguments using this window as they're less convenient than doing "
 "it from the code."
 msgstr ""
+"Selecione ``health_changed`` e clique no botão Conectar no canto inferior "
+"direito para abrir a janela Conectar Sinal. No lado esquerdo, você pode "
+"escolher o nó que escutará este sinal. Selecione o nó ``GUI``. O lado "
+"direito da tela permite empacotar valores opcionais com o sinal. Nós já "
+"cuidamos disso em ``player.GD``. Em geral, eu recomendo não adicionar muitos "
+"argumentos usando esta janela, já que eles são menos convenientes do que "
+"fazer a partir do código."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
 msgid "The Connect Signal window with the GUI node selected"
-msgstr ""
+msgstr "A janela Conectar Sinal com o nó GUI selecionado"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
 msgid ""
 "You can optionally connect nodes from the code. But doing it from the editor "
 "has two advantages:"
 msgstr ""
+"Você pode, opcionalmente, conectar nós do código. Mas fazê-lo do editor tem "
+"duas vantagens:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
+"Godot pode escrever novas funções de retorno de chamada para você no script "
+"conectado"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:251
 msgid ""
 "An emitter icon appears next to the node that emits the signal in the Scene "
 "dock"
 msgstr ""
+"Um ícone de emissor aparece ao lado do nó que emite o sinal na doca Scene"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
 msgid ""
@@ -8742,6 +8760,14 @@ msgid ""
 "creates the method inside the ``GUI`` node. The script editor opens with the "
 "cursor inside a new ``_on_player_health_changed`` function."
 msgstr ""
+"Na parte inferior da janela, você encontrará o caminho para o nó "
+"selecionado. Estamos interessados na segunda linha chamada \"Método no Nó\". "
+"Este é o método no nó `` GUI`` que é chamado quando o sinal é emitido. Este "
+"método recebe os valores enviados com o sinal e permite processá-los. Se "
+"você olhar para a direita, há um botão de opção \"Make Function\" que está "
+"ativado por padrão. Clique no botão de conexão na parte inferior da janela. "
+"Godot cria o método dentro do nó `` GUI``. O editor de script é aberto com o "
+"cursor dentro de uma nova função `` _on_player_health_changed``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:265
 msgid ""
@@ -8750,10 +8776,14 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
+"Quando você conecta nós no editor, Godot gera um nome de método com o "
+"seguinte padrão: `` _on_EmitterName_signal_name``. Se você já escreveu o "
+"método, a opção \"Make Function\" irá mantê-lo. Você pode substituir o nome "
+"com o que quiser."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
 msgid "Godot writes the callback method for you and takes you to it"
-msgstr ""
+msgstr "Godot escreve o método de callback para você e leva você até ele"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
 msgid ""
@@ -8761,6 +8791,9 @@ msgid ""
 "When the player emits the ``health_changed`` signal it will send its current "
 "``health`` alongside it. Your code should look like:"
 msgstr ""
+"Dentro dos parênteses após o nome da função, adicione um argumento "
+"``player_health``. Quando o jogador emite o sinal ``health_changed``, ele "
+"enviará sua ``health`` atual juntamente. Seu código deve se parecer com:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
 msgid ""
@@ -8769,53 +8802,70 @@ msgid ""
 "follows the official `C# naming conventions. <https://docs.microsoft.com/en-"
 "us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
+"A engine não converte PascalCase para snake_case, por exemplos em C # "
+"estaremos usando PascalCase para nomes de métodos e camelCase para "
+"parâmetros de métodos que seguem as convenções oficiais de nomenclatura `C "
+"#. <https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/"
+"capitalization-conventions> `_"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
 msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
+"No Player.gd, quando o Player emite o sinal health \\ _changed, ele também "
+"envia seu valor de integridade"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
 msgid ""
 "Inside ``_on_Player_health_changed`` let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
+"Dentro de `` _on_Player_health_changed`` vamos chamar uma segunda função "
+"chamada `` update_health`` e passar a variável `` player_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:307
 msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
+"Poderíamos atualizar diretamente o valor de saúde em `LifeBar` e` Number`. "
+"Existem duas razões para usar este método:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
 "The name makes it clear for our future selves and teammates that when the "
 "player took damage, we update the health count on the GUI"
 msgstr ""
+"O nome deixa claro para os nossos futuros eus e companheiros de equipe que, "
+"quando o jogador levou dano, nós atualizamos a contagem de saúde na GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
 msgid "We will reuse this method a bit later"
-msgstr ""
+msgstr "Nós vamos reutilizar este método um pouco mais tarde"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
 msgid ""
 "Create a new ``update_health`` method below ``_on_Player_health_changed``. "
 "It takes a new\\_value as its only argument:"
 msgstr ""
+"Crie um novo método `` update_health`` abaixo de `` "
+"_on_Player_health_changed``. Leva um novo valor como seu único argumento:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:326
 msgid "This method needs to:"
-msgstr ""
+msgstr "Este método precisa:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:328
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
+"setar o `` text`` do nó `` Number`` para `` new_value`` convertido para uma "
+"string"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:330
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
-msgstr ""
+msgstr "setar `` value`` do `` TextureProgress`` para `` new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:349
 msgid ""
@@ -8823,6 +8873,9 @@ msgid ""
 "``Number``'s ``text`` property requires a string so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
+"`` str`` é uma função interna que converte qualquer valor em texto. A "
+"propriedade `` text`` do `` Number`` requer uma string, então não podemos "
+"atribuí-la ao `` new_value`` diretamente"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:353
 msgid ""
@@ -8831,16 +8884,21 @@ msgid ""
 "of the game. Press F5 to test the game: the life bar updates with every "
 "attack!"
 msgstr ""
+"Também chame `` update_health`` no final da função `` _ready`` para "
+"inicializar o `` text`` do nó `` Number`` com o valor correto no início do "
+"jogo. Pressione F5 para testar o jogo: a barra de vida é atualizada a cada "
+"ataque!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:360
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
 msgstr ""
+"O nó Number e o TextureProgress são atualizados quando o Player recebe um hit"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:364
 msgid "Animate the loss of life with the Tween node"
-msgstr ""
+msgstr "Animar a perda de vida com o nó Tween"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:366
 msgid ""
@@ -8851,6 +8909,12 @@ msgid ""
 "``TextureProgress`` from its current level to the ``Player``'s new "
 "``health`` when the character takes damage."
 msgstr ""
+"Nossa interface é funcional, mas pode usar alguma animação. Essa é uma boa "
+"oportunidade para introduzir o nó `` Tween``, uma ferramenta essencial para "
+"animar propriedades. `` Tween`` anima tudo o que você quiser desde o início "
+"até o final de uma determinada duração. Por exemplo, ele pode animar a saúde "
+"no `` TextureProgress`` do seu nível atual para o novo `` health`` do `` "
+"Player`` quando o personagem recebe dano."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:373
 msgid ""
@@ -8858,46 +8922,54 @@ msgid ""
 "``tween`` variable. Let's now use it. We have to make some changes to "
 "``update_health``."
 msgstr ""
+"A cena `` GUI`` já contém um nó filho `` Tween`` armazenado na variável `` "
+"tween``. Vamos agora usá-lo. Nós temos que fazer algumas mudanças em `` "
+"update_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:377
 msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
 msgstr ""
+"Nós usaremos o método `` interpolate_property`` do nó `` Tween``. São "
+"necessários sete argumentos:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:380
 msgid "A reference to the node who owns the property to animate"
-msgstr ""
+msgstr "Uma referência ao nó que possui a propriedade para animar"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
 msgid "The property's identifier as a string"
-msgstr ""
+msgstr "O identificador da propriedade como uma string"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
 msgid "The starting value"
-msgstr ""
+msgstr "O valor inicial"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
 msgid "The end value"
-msgstr ""
+msgstr "O valor final"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
 msgid "The animation's duration in seconds"
-msgstr ""
+msgstr "A duração da animação em segundos"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
 msgid "The type of the transition"
-msgstr ""
+msgstr "O tipo da transição"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
 msgid "The easing to use in combination with the equation."
-msgstr ""
+msgstr "O alívio para usar em combinação com a equação."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:388
 msgid ""
 "The last two arguments combined correspond to an `easing equation <#>`__. "
 "This controls how the value evolves from the start to the end point."
 msgstr ""
+"Os dois últimos argumentos combinados correspondem a uma equação de "
+"atenuação <#> `__. Isso controla como o valor evolui do início ao ponto "
+"final."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:392
 msgid ""
@@ -8907,6 +8979,11 @@ msgid ""
 "not to animate text directly. We're going to use it to animate a new ``GUI`` "
 "variable named ``animated_health``."
 msgstr ""
+"Clique no ícone do script ao lado do nó `` GUI`` para abri-lo novamente. O "
+"nó `` Number`` precisa de texto para se atualizar, e a `` Bar`` precisa de "
+"um float ou um inteiro. Podemos usar `` interpolate_property`` para animar "
+"um número, mas não para animar o texto diretamente. Vamos usá-lo para animar "
+"uma nova variável `` GUI`` chamada `` animated_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:398
 msgid ""
@@ -8916,10 +8993,14 @@ msgid ""
 "``animated_health`` value. Call the ``Tween`` node's "
 "``interpolate_property`` method:"
 msgstr ""
+"No topo do script, defina uma nova variável, nomeie-a como `` "
+"animated_health`` e defina seu valor como 0. Navegue de volta para o método "
+"`` update_health`` e limpe seu conteúdo. Vamos animar o valor `` "
+"animated_health``. Chame o método `` interpolate_property`` do nó `` Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:420
 msgid "Let's break down the call:"
-msgstr ""
+msgstr "Vamos dividir a ligação:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:426
 msgid ""
@@ -8927,6 +9008,9 @@ msgid ""
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
 "That's why we write it as ``\"animated_health\"``."
 msgstr ""
+"Nosso alvo é `` animated_health`` em `` self``, isto é, o nó `` GUI``. A "
+"interpolação de `` Tween`` \\ _property toma o nome da propriedade como uma "
+"string. É por isso que nós escrevemos como `` \"animated_health\" ``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:434
 msgid ""
@@ -8935,6 +9019,10 @@ msgid ""
 "animation is the ``Player``'s ``health`` after the ``health_changed``: "
 "that's ``new_value``. And ``0.6`` is the animation's duration in seconds."
 msgstr ""
+"O ponto de partida é o valor atual em que a barra está. Nós ainda temos que "
+"codificar esta parte, mas ela será `` animated_health``. O ponto final da "
+"animação é `` health`` do `` Player`` depois do `` health_changed``: é `` "
+"new_value``. E `` 0.6`` é a duração da animação em segundos."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:444
 msgid ""
@@ -8943,6 +9031,10 @@ msgid ""
 "do anything with a linear transition, but we must provide this last argument "
 "or we'll get an error."
 msgstr ""
+"Os dois últimos argumentos são constantes da classe `` Tween``. `` "
+"TRANS_LINEAR`` significa que a animação deve ser linear. `` EASE_IN`` não "
+"faz nada com uma transição linear, mas devemos fornecer este último "
+"argumento ou obteremos um erro."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:449
 msgid ""
@@ -8950,6 +9042,9 @@ msgid ""
 "``tween.start()``. We only have to do this once if the node is not active. "
 "Add this code after the last line:"
 msgstr ""
+"A animação não será reproduzida até que ativemos o nó `` Tween`` com `` "
+"tween.start () ``. Nós só temos que fazer isso uma vez se o nó não estiver "
+"ativo. Adicione este código após a última linha:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
 msgid ""
@@ -8960,20 +9055,28 @@ msgid ""
 "`tween` node is perfect for code-controlled animations. For hand-made "
 "animations, check out `AnimationPlayer`."
 msgstr ""
+"Embora possamos animar a propriedade `health` no` Player`, não devemos. "
+"Personagens devem perder a vida instantaneamente quando são atingidos. Isso "
+"torna muito mais fácil gerenciar seu estado, como saber quando um morreu. "
+"Você sempre deseja armazenar animações em um contêiner de dados ou nó "
+"separado. O nó `tween` é perfeito para animações controladas por código. "
+"Para animações feitas à mão, confira `AnimationPlayer`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:471
 msgid "Assign the animated\\_health to the LifeBar"
-msgstr ""
+msgstr "Atribuir a \\ _health animada para o LifeBar"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:473
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
 msgstr ""
+"Agora a variável `` animated_health`` anima, mas nós não atualizamos mais os "
+"nós `` Bar`` e `` Number``. Vamos consertar isso."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:476
 msgid "So far, the update\\_health method looks like this:"
-msgstr ""
+msgstr "Até agora, o método update \\ _health se parece com isto:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:500
 msgid ""
@@ -8981,12 +9084,17 @@ msgid ""
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
 "``TextureProgress`` nodes like before, inside of ``_process``:"
 msgstr ""
+"Neste caso específico, porque `` number_label`` recebe texto, nós precisamos "
+"usar o método `` _process`` para animá-lo. Vamos agora atualizar os nós `` "
+"Number`` e `` TextureProgress`` como antes, dentro de `` _process``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
 msgstr ""
+"`number_label` e` bar` são variáveis que armazenam referências aos nós "
+"`Number` e` TextureProgress`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
 msgid ""
@@ -8994,10 +9102,13 @@ msgid ""
 "number and looks like a mess. And considering the style of the game, it'd be "
 "nice for the life bar to animate in a choppier fashion."
 msgstr ""
+"Jogue o jogo para ver a barra animar suavemente. Mas o texto exibe o número "
+"decimal e parece uma bagunça. E considerando o estilo do jogo, seria bom "
+"para a barra de vida para animar de uma forma mais bonita."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:530
 msgid "The animation is smooth but the number is broken"
-msgstr ""
+msgstr "A animação é suave, mas o número está quebrado"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:532
 msgid ""
@@ -9005,16 +9116,22 @@ msgid ""
 "variable named ``round_value`` to store the rounded ``animated_health``. "
 "Then assign it to ``number_label.text`` and ``bar.value``:"
 msgstr ""
+"Podemos consertar ambos os problemas, completando `` animated_health``. Use "
+"uma variável local chamada `` round_value`` para armazenar o `` "
+"animated_health`` arredondado. Em seguida, atribua-o a `` number_label."
+"text`` e `` bar.value``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
 msgid "Try the game again to see a nice blocky animation."
-msgstr ""
+msgstr "Rode o jogo novamente para ver uma bela animação em blocos."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:558
 msgid "By rounding out animated\\_health we hit two birds with one stone"
 msgstr ""
+"Ao arredondar animated\\_health, acertamos dois coelhos com uma só cajadada"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:562
+#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -9023,34 +9140,50 @@ msgid ""
 "gradually is a trick. It makes the GUI feel alive. If the ``Player`` takes 3 "
 "damage, it happens in an instant."
 msgstr ""
+"Toda vez que o jogador recebe um hit, o `` GUI`` chama `` "
+"_on_Player_health_changed``, que por sua vez chama `` update_health``. Isto "
+"atualiza a animação e o `` number_label`` e `` bar`` seguem em `` "
+"_process``. A barra de vida animada que mostra a saúde a baixando "
+"gradualmente é um truque. Faz a GUI parecer viva. Se o `` Player`` receber 3 "
+"de dano, isso acontece em um instante."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:570
 msgid "Fade the bar when the Player dies"
-msgstr ""
+msgstr "Clareia a barra quando o jogador morre"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:572
+#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
 "well when the character died. We will reuse the same ``Tween`` node as it "
 "manages multiple animations in parallel for us."
 msgstr ""
+"Quando o personagem verde morre, ele executa uma animação de morte e "
+"desaparece. Neste ponto, não devemos mais mostrar a interface. Vamos "
+"desaparecer também quando o personagem morrer. Vamos reutilizar o mesmo nó "
+"`` Tween`` enquanto ele gerencia múltiplas animações em paralelo para nós."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:577
+#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
 "the ``Player`` node in the Scene dock and click on the Node tab next to the "
 "Inspector."
 msgstr ""
+"Primeiro, o `` GUI`` precisa se conectar ao sinal `` died`` do `` Player`` "
+"para saber quando ele morreu. Pressione: kbd: `F1` para voltar ao espaço de "
+"trabalho 2D. Selecione o nó `` Player`` na doca Scene e clique na aba Node "
+"ao lado do Inspector."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:582
 msgid "Find the ``died`` signal, select it, and click the Connect button."
-msgstr ""
+msgstr "Encontre o sinal `` morreu``, selecione-o e clique no botão Conectar."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:586
 msgid "The signal should already have the Enemy connected to it"
-msgstr ""
+msgstr "O sinal já deve ter o inimigo conectado a ele"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
 msgid ""
@@ -9060,10 +9193,15 @@ msgid ""
 "the bottom of the window. This will take you to the ``GUI.gd`` file in the "
 "Script Workspace."
 msgstr ""
+"Na janela Connecting Signal, conecte-se ao nó `` GUI`` novamente. O caminho "
+"para o nó deve ser `` ../../ GUI`` e o método no nó deve mostrar `` "
+"_on_Player_died``. Deixe a opção Make Function ativada e clique em Connect "
+"na parte inferior da janela. Isso levará você ao arquivo `` GUI.gd`` no "
+"espaço de trabalho do Script."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:596
 msgid "You should get these values in the Connecting Signal window"
-msgstr ""
+msgstr "Você deve obter esses valores na janela Conectando um sinal"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
 msgid ""
@@ -9071,12 +9209,18 @@ msgid ""
 "information, we emit a new signal. Use them wisely: the more connections you "
 "add, the harder they are to track."
 msgstr ""
+"Você deve ver um padrão agora: toda vez que a GUI precisar de uma nova "
+"informação, emitimos um novo sinal. Use-os com sabedoria: quanto mais "
+"conexões você adicionar, mais difícil será rastrear."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
+"Para animar um fade em um elemento da interface do usuário, temos que usar "
+"sua propriedade `` modulate``. `` modulate`` é uma `` Cor`` que multiplica "
+"as cores de nossas texturas."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:608
 msgid ""
@@ -9084,6 +9228,9 @@ msgid ""
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
+"`modulate` vem da classe` CanvasItem`, todos os nós 2D e UI são herdados. "
+"Ele permite que você alterne a visibilidade do nó, atribua um sombreador a "
+"ele e modifique-o usando uma cor com `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:610
 msgid ""
@@ -9091,6 +9238,9 @@ msgid ""
 "alpha. If we darken any of the first three channels it darkens the "
 "interface. If we lower the alpha channel our interface fades out."
 msgstr ""
+"`` modulate`` recebe um valor `` Color`` com 4 canais: vermelho, verde, azul "
+"e alfa. Se escurecermos qualquer um dos três primeiros canais, escurecerá a "
+"interface. Se abaixarmos o canal alfa, nossa interface desaparece."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:614
 msgid ""
@@ -9100,6 +9250,11 @@ msgid ""
 "``_on_Player_died`` method and name them ``start_color`` and ``end_color``. "
 "Use the ``Color()`` constructor to build two ``Color`` values."
 msgstr ""
+"Vamos interpor entre dois valores de cores: de um branco com um alfa de `` "
+"1``, isto é, com opacidade total, a um branco puro com um valor alfa de `` "
+"0``, completamente transparente. Vamos adicionar duas variáveis no topo do "
+"método `` _on_Player_died`` e nomea-las `` start_color`` e `` end_color``. "
+"Use o construtor `` Color () `` para construir dois valores `` Color``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:636
 msgid ""
@@ -9107,12 +9262,17 @@ msgid ""
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
+"`` Color (1.0, 1.0, 1.0) `` corresponde ao branco. O quarto argumento, "
+"respectivamente `` 1.0`` e `` 0.0`` em `` start_color`` e `` end_color``, é "
+"o canal alfa."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:640
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
 msgstr ""
+"Nós então temos que chamar o método `` interpolate_property`` do nó `` "
+"Tween`` novamente:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:653
 msgid ""
@@ -9121,14 +9281,18 @@ msgid ""
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
+"Desta vez nós mudamos a propriedade `` modulate`` e a animamos de `` "
+"start_color`` para `` end_color``. A duração é de um segundo, com uma "
+"transição linear. Aqui, novamente, porque a transição é linear, o alívio não "
+"importa. Aqui está o método `` _on_Player_died`` completo:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:678
 msgid "And that is it. You may now play the game to see the final result!"
-msgstr ""
+msgstr "E é isso. Agora você pode jogar o jogo para ver o resultado final!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:682
 msgid "The final result. Congratulations for getting there!"
-msgstr ""
+msgstr "O resultado, final Parabéns por chegar lá!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:686
 msgid ""
@@ -9138,20 +9302,28 @@ msgid ""
 "signal to forward the information from the `Player` to the `GUI` and let the "
 "`GUI` process it."
 msgstr ""
+"Usando exatamente as mesmas técnicas, você pode mudar a cor da barra quando "
+"o jogador é envenenado, transformar a barra em vermelho quando a sua saúde "
+"cai, sacudir a interface do usuário quando eles tomam um dano crítico ... o "
+"princípio é o mesmo: emitir um sinal para encaminhar as informações do "
+"`Player` para o` GUI` e deixar o `GUI` processá-lo."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
 msgid "Splash screen"
-msgstr ""
+msgstr "Tela de abertura"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutorial"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
+"Este é um tutorial simples para estabelecer a ideia básica de como o "
+"subsistema da GUI funciona. O objetivo é criar uma tela inicial simples e "
+"estática."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
 msgid ""
@@ -9159,28 +9331,38 @@ msgid ""
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
+"A seguir, um arquivo com os ativos que serão usados. Os arquivos extraídos "
+"podem ser colocados diretamente na pasta do seu projeto e Godot irá importá-"
+"los automaticamente."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
+#, fuzzy
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
-msgstr ""
+msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:21
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:16
 msgid "Setting up"
-msgstr ""
+msgstr "Configurando"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:23
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
 msgstr ""
+"Defina a resolução de exibição para 800x450 em Configurações do projeto e "
+"configure uma nova cena como esta:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
+#, fuzzy
 msgid ""
 "The nodes \"background\" and \"logo\" are of :ref:`TextureRect "
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
+"Os nós \"background\" e \"logo\" são do tipo: ref: `TextureRect "
+"<class_TextureRect>`. Para exibir uma imagem, arraste o ativo correspondente "
+"para a propriedade texture."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
 msgid ""
@@ -9188,20 +9370,26 @@ msgid ""
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
+"O nó \"start\" é um: ref: `TextureButton <class_TextureButton>`. São "
+"necessárias várias imagens para estados diferentes, mas somente o estado "
+"normal e pressionado serão conhecidos neste exemplo:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
-msgstr ""
+msgstr "Finalmente, o nó \"copyright\" é um: ref: `Label <class_Label>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
 msgid "Your final scene should look something like this."
-msgstr ""
+msgstr "Sua cena final deve ser algo como isto."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
+#, fuzzy
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
+"Vá em frente e execute o projeto. Se você estiver satisfeito com os "
+"resultados, continue no próximo tutorial."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
@@ -9209,7 +9397,7 @@ msgstr "Animações"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
-msgstr ""
+msgstr "O sistema de animação da Godot é extremamente poderoso e flexível."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:11
 msgid ""
@@ -9218,35 +9406,47 @@ msgid ""
 "splash image. Here's a copy just in case: :download:`robisplash.zip <files/"
 "robisplash.zip>`."
 msgstr ""
+"Para começar, vamos usar a cena do tutorial anterior (: ref: "
+"`doc_splash_screen`). O objetivo é adicionar uma animação \"fade-in\" à "
+"imagem inicial. Aqui está uma cópia para o caso: download: `robisplash.zip "
+"<files / robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
 msgid "Add an animation player"
-msgstr ""
+msgstr "Adicionar um player de animação"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:18
 msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
+"Primeiro de tudo, adicione um nó: ref: `AnimationPlayer "
+"<class_AnimationPlayer>` à cena como um filho de \"background\" (o nó raiz):"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
 msgstr ""
+"Quando um nó desse tipo é selecionado, o painel do editor de animação é "
+"exibido:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
 msgstr ""
+"O painel do editor de animação permanece visível até ser ocultado "
+"manualmente."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
-msgstr ""
+msgstr "Criando a animação"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
 msgid ""
 "It's time to create a new animation! Press the new animation button and name "
 "the animation \"intro\" when the dialog appears."
 msgstr ""
+"Chegou a hora de criar uma nova animação! Pressione o novo botão de animação "
+"e nomeie a animação \"intro\" quando a caixa de diálogo aparecer."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:38
 msgid ""
@@ -9254,14 +9454,18 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot any property of an object can be animated:"
 msgstr ""
+"Agora que temos uma animação, o editor de propriedades entra no modo "
+"\"edição de animação\". Neste modo, um ícone de chave aparece ao lado de "
+"todas as propriedades do editor de propriedades. Em Godot, qualquer "
+"propriedade de um objeto pode ser animada:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:46
 msgid "Editing the animation"
-msgstr ""
+msgstr "Editando a animação"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "The logo will appear from the top of the screen."
-msgstr ""
+msgstr "O logotipo aparecerá na parte superior da tela."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:50
 msgid ""
@@ -9269,41 +9473,52 @@ msgid ""
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property:"
 msgstr ""
+"Com o painel do editor de animação aberto, selecione o nó \"logo\" e defina "
+"a propriedade \"Rect / Position\" para \"(118, -400)\" e pressione o botão "
+"ao lado da propriedade:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:56
 msgid "When the dialog appears, confirm that you are creating a new track."
 msgstr ""
+"Quando a caixa de diálogo aparecer, confirme se você está criando uma nova "
+"faixa."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "The keyframe will be added in the animation player editor:"
-msgstr ""
+msgstr "O quadro-chave será adicionado ao editor do player de animação:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:62
 msgid "Move the editor cursor to the end, by clicking here:"
-msgstr ""
+msgstr "Mova o cursor do editor para o final, clicando aqui:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:66
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes, the animation happens."
 msgstr ""
+"Mude a posição do logo para `` (118, 0) `` e adicione um quadro-chave "
+"novamente. Com dois quadros-chave, a animação acontece."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:71
 msgid ""
 "Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
 "panel will make the logo descend."
 msgstr ""
+"Pressionar \"Reproduzir animação selecionada a partir do início (Shift-D)\" "
+"no painel de animação fará o logotipo descer."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:76
 msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
 msgstr ""
+"Clique no botão \"Autoplay on Load\" para definir a animação para iniciar "
+"automaticamente quando a cena começar."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:81
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
-msgstr ""
+msgstr "E finalmente, ao executar a cena, a animação deve ficar assim:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:4
 #: ../../docs/development/cpp/creating_android_modules.rst:185
@@ -9314,7 +9529,7 @@ msgstr "Recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
-msgstr ""
+msgstr "Nós e recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
 msgid ""
@@ -9323,18 +9538,27 @@ msgid ""
 "through them. There is another datatype that is equally important: :ref:"
 "`Resource <class_Resource>`."
 msgstr ""
+"Até agora, ref: `Nodes <class_Node>` tem sido o tipo de dados mais "
+"importante na Godot, já que a maioria dos comportamentos e recursos do "
+"mecanismo são implementados através deles. Existe outro tipo de dados que é "
+"igualmente importante: ref: `Resource <class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
 "Where *Nodes* focus on behaviors, such as drawing a sprite, drawing a 3D "
 "model, physics, GUI controls, etc,"
 msgstr ""
+"Onde * Nodes * foca em comportamentos, como desenhar um sprite, desenhar um "
+"modelo 3D, física, controles GUI, etc,"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:18
 msgid ""
 "**Resources** are mere **data containers**. This means that they don't do "
 "any action nor process any information. Resources just contain data."
 msgstr ""
+"** Recursos ** são meros ** contêineres de dados **. Isso significa que eles "
+"não fazem nenhuma ação nem processam nenhuma informação. Recursos apenas "
+"contêm dados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:22
 msgid ""
@@ -9343,6 +9567,10 @@ msgid ""
 "<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
 "<class_Font>`, :ref:`Translation <class_Translation>`, etc."
 msgstr ""
+"Exemplos de recursos são: ref: `Textura <class_Texture>`,: ref: `Script "
+"<class_Script>`,: ref: `Mesh <class_Mesh>`,: ref: `Animação "
+"<class_Animation>`,: ref: `AudioStream < class_AudioStream> `,: ref:` Fonte "
+"<class_Font> `,: ref:` Tradução <class_Translation> `, etc."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:32
 msgid ""
@@ -9350,6 +9578,9 @@ msgid ""
 "(png, jpg), a script (.gd) or pretty much anything, that file is considered "
 "a resource."
 msgstr ""
+"Quando Godot salva ou carrega (do disco) uma cena (.tscn ou .scn), uma "
+"imagem (png, jpg), um script (.gd) ou praticamente qualquer coisa, esse "
+"arquivo é considerado um recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:36
 msgid ""
@@ -9359,6 +9590,11 @@ msgid ""
 "corresponds with the fact that resources are just data containers, so there "
 "is no need to have them duplicated."
 msgstr ""
+"Quando um recurso é carregado do disco, ** sempre é carregado uma vez **. "
+"Isso significa que, se houver uma cópia desse recurso já carregada na "
+"memória, tentar carregar o recurso novamente retornará a mesma cópia várias "
+"vezes. Isso corresponde ao fato de que os recursos são apenas contêineres de "
+"dados, portanto, não é necessário duplicá-los."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:42
 msgid ""
@@ -9368,22 +9604,31 @@ msgid ""
 "nodes and resources can contain resources as properties. To make it a little "
 "more visual:"
 msgstr ""
+"Normalmente, todos os objetos em Godot (Node, Resource ou qualquer outra "
+"coisa) podem exportar propriedades, as propriedades podem ser de vários "
+"tipos (como string, inteiros, Vector2, etc) e um desses tipos pode ser um "
+"recurso. Isso significa que os nós e recursos podem conter recursos como "
+"propriedades. Para torná-lo um pouco mais visual:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid "External vs built-in"
-msgstr ""
+msgstr "Externo vs embutido"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:53
 msgid ""
 "The resource properties can reference resources in two ways, *external* (on "
 "disk) or **built-in**."
 msgstr ""
+"As propriedades do recurso podem referenciar recursos de duas maneiras: * "
+"externo * (no disco) ou ** interno **."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:56
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
+"Para ser mais específico, aqui está um: ref: `Texture <class_Texture>` em um "
+"nó: ref: `Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:61
 msgid ""
@@ -9391,6 +9636,9 @@ msgid ""
 "and edit the resources properties. One of the properties (path) shows where "
 "it comes from. In this case, it comes from a png image."
 msgstr ""
+"Pressionar o botão \">\" no lado direito da visualização permite visualizar "
+"e editar as propriedades dos recursos. Uma das propriedades (caminho) mostra "
+"de onde vem. Neste caso, vem de uma imagem png."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:67
 msgid ""
@@ -9398,6 +9646,9 @@ msgid ""
 "resource. If the path property is erased (or it never had a path to begin "
 "with), it is considered a built-in resource."
 msgstr ""
+"Quando o recurso vem de um arquivo, ele é considerado um recurso * externo "
+"*. Se a propriedade path for apagada (ou nunca teve um caminho para "
+"começar), ela será considerada um recurso interno."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:71
 msgid ""
@@ -9409,26 +9660,37 @@ msgid ""
 "loaded only once. That means, different Robi robot scenes instanced at the "
 "same time will still share the same image."
 msgstr ""
+"Por exemplo, se o caminho \\ `\" res: //robi.png \"\\` for apagado da "
+"propriedade \"path\" no exemplo acima e, em seguida, a cena for salva, o "
+"recurso será salvo dentro do arquivo de cena .tscn , não mais referenciando "
+"o \"robi.png\" externo. No entanto, mesmo se salvo como interno, e mesmo que "
+"a cena possa ser instanciada várias vezes, o recurso sempre será carregado "
+"apenas uma vez. Isso significa que diferentes cenas robóticas Robi "
+"instanciadas ao mesmo tempo ainda compartilharão a mesma imagem."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:80
 msgid "Loading resources from code"
-msgstr ""
+msgstr "Carregando recursos do código"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:82
 msgid ""
 "Loading resources from code is easy. There are two ways to do it. The first "
 "is to use load(), like this:"
 msgstr ""
+"Carregar recursos do código é fácil. Existem duas maneiras de fazer isso. O "
+"primeiro é usar o load(), assim:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter, because it loads the resource at compile-time."
 msgstr ""
+"A segunda maneira é mais ideal, mas só funciona com um parâmetro de "
+"constante de string, porque ele carrega o recurso em tempo de compilação."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:116
 msgid "Loading scenes"
-msgstr ""
+msgstr "Carregando cenas"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:117
 msgid ""
@@ -9436,12 +9698,17 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. This means that "
 "the scene is packed inside a resource."
 msgstr ""
+"Cenas também são recursos, mas há um problema. Cenas salvas no disco são "
+"recursos do tipo: ref: `PackedScene <class_PackedScene>`. Isso significa que "
+"a cena é compactada dentro de um recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:121
 msgid ""
 "To obtain an instance of the scene, the method :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` must be used."
 msgstr ""
+"Para obter uma instância da cena, o método: ref: `PackedScene.instance () "
+"<class_PackedScene_instance>` deve ser usado."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:142
 msgid ""
@@ -9449,6 +9716,9 @@ msgid ""
 "(sets all the properties) and returns the root node of the scene, which can "
 "be added to any other node."
 msgstr ""
+"Esse método cria os nós na hierarquia da cena, configura-os (define todas as "
+"propriedades) e retorna o nó raiz da cena, que pode ser adicionado a "
+"qualquer outro nó."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
 msgid ""
@@ -9459,10 +9729,17 @@ msgid ""
 "each time. It is important to remember that, as always, images, meshes, etc "
 "are all shared between the scene instances."
 msgstr ""
+"A abordagem tem várias vantagens. Como a função: ref: `PackedScene.instance "
+"() <class_PackedScene_instance>` é bastante rápida, adicionar conteúdo extra "
+"à cena pode ser feito de forma eficiente. Novos inimigos, marcadores, "
+"efeitos, etc podem ser adicionados ou removidos rapidamente, sem ter que "
+"carregá-los novamente a partir do disco de cada vez. É importante lembrar "
+"que, como sempre, imagens, malhas, etc são todos compartilhados entre as "
+"instâncias da cena."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:155
 msgid "Freeing resources"
-msgstr ""
+msgstr "Liberando recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:157
 msgid ""
@@ -9471,6 +9748,11 @@ msgid ""
 "most cases, Resources are contained in Nodes, scripts or other resources, "
 "when a node is removed or freed, all the children resources are freed too."
 msgstr ""
+"O recurso é extendido de: ref: `Reference <class_Reference>`. Assim, quando "
+"um recurso não estiver mais em uso, ele será automaticamente liberado. Como, "
+"na maioria dos casos, os recursos estão contidos em nós, scripts ou outros "
+"recursos, quando um nó é removido ou liberado, todos os recursos filhos são "
+"liberados também."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:166
 msgid ""
@@ -9478,10 +9760,13 @@ msgid ""
 "However, there isn't generally much of an advantage, as resources are just "
 "data containers."
 msgstr ""
+"Como qualquer objeto em Godot, não apenas nós, os recursos também podem ser "
+"roteirizados. No entanto, geralmente não há muita vantagem, pois os recursos "
+"são apenas contêineres de dados."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
-msgstr ""
+msgstr "Sistema de arquivo"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
 msgid ""
@@ -9490,6 +9775,11 @@ msgid ""
 "designed file system also allows multiple developers to edit the same source "
 "files and assets while collaborating together."
 msgstr ""
+"Os sistemas de arquivos são outro tópico importante no desenvolvimento de "
+"mecanismos. O sistema de arquivos gerenciam como os ativos são armazenados e "
+"como são acessados. Um sistema de arquivos bem projetado também permite que "
+"vários desenvolvedores editem os mesmos arquivos e ativos de origem enquanto "
+"colaboram em conjunto."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:14
 msgid ""
@@ -9499,11 +9789,17 @@ msgid ""
 "metadata, etc. In the end the simple approach won and now Godot stores all "
 "assets as files in the file system."
 msgstr ""
+"As versões iniciais do mecanismo Godot (e iterações anteriores antes de se "
+"chamar Godot) usavam um banco de dados. Os ativos foram armazenados nele e "
+"receberam um ID. Outras abordagens também foram tentadas, como bancos de "
+"dados locais, arquivos com metadados, etc. No final, a abordagem simples "
+"ganhou e agora Godot armazena todos os ativos como arquivos no sistema de "
+"arquivos."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:21
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:64
 msgid "Implementation"
-msgstr ""
+msgstr "Implementação"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:23
 msgid ""
@@ -9515,22 +9811,35 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
+"O sistema de arquivos armazena recursos no disco. Qualquer coisa, desde um "
+"script, até uma cena ou uma imagem PNG é um recurso para o mecanismo. Se um "
+"recurso contiver propriedades que fazem referência a outros recursos no "
+"disco, os caminhos para esses recursos também serão incluídos. Se um recurso "
+"tiver sub-recursos internos, o recurso será salvo em um único arquivo junto "
+"com todos os sub-recursos incluídos. Por exemplo, um recurso de fonte "
+"geralmente é empacotado junto com as texturas de fonte."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
+#, fuzzy
 msgid ""
 "In general the Godot file system avoids using metadata files. The reason for "
 "this is simple, existing asset managers and VCSs are simply much better than "
 "anything we can implement, so Godot tries the best to play along with SVN, "
 "Git, Mercurial, Perforce, etc."
 msgstr ""
+"Em geral, o sistema de arquivos Godot evita o uso de arquivos de metadados. "
+"A razão para isso é simples, os gerenciadores de ativos existentes e VCSs "
+"são simplesmente muito melhores do que qualquer coisa que possamos "
+"implementar, então Godot tenta o melhor para jogar junto com SVN, Git, "
+"Mercurial, Performance, etc."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:35
 msgid "Example of a file system contents:"
-msgstr ""
+msgstr "Exemplo de um conteúdo do sistema de arquivos:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:46
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:48
 msgid ""
@@ -9538,6 +9847,9 @@ msgid ""
 "found at the root of the project. In fact its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
+"O arquivo project.godot é o arquivo de descrição do projeto, e é sempre "
+"encontrado na raiz do projeto. Na verdade, sua localização define onde está "
+"a raiz. Este é o primeiro arquivo que Godot procura ao abrir um projeto."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
 msgid ""
@@ -9545,10 +9857,13 @@ msgid ""
 "ini format. Even an empty project.godot can function as a basic definition "
 "of a blank project."
 msgstr ""
+"Este arquivo contém a configuração do projeto em texto simples, usando o "
+"formato win.ini. Até mesmo um projeto vazio.godot pode funcionar como uma "
+"definição básica de um projeto em branco."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:57
 msgid "Path delimiter"
-msgstr ""
+msgstr "Delimitador de caminho"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:59
 msgid ""
@@ -9557,11 +9872,15 @@ msgid ""
 "``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
 "godot``."
 msgstr ""
+"Godot suporta apenas `` / `` como um delimitador de caminho. Isso é feito "
+"por razões de portabilidade. Todos os sistemas operacionais suportam isto, "
+"mesmo o Windows, então um caminho como `` c: \\ project \\ project.godot`` "
+"precisa ser digitado como `` c: / project / project.godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:65
 #: ../../docs/tutorials/io/data_paths.rst:16
 msgid "Resource path"
-msgstr ""
+msgstr "Caminho do recurso"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:67
 msgid ""
@@ -9569,12 +9888,18 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
+"Ao acessar recursos, o uso do layout do sistema de hospedagem de arquivos do "
+"sistema operacional, podem ser incômodo e não portátil. Para resolver este "
+"problema, o caminho especial `` res: // `` foi criado."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:71
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so in fact ``res://project.godot`` is always valid)."
 msgstr ""
+"O caminho `` res: // `` sempre apontará para a raiz do projeto (onde project."
+"godot está localizado, então na verdade `` res: // project.godot`` é sempre "
+"válido)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:75
 msgid ""
@@ -9583,10 +9908,15 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
+"Este sistema de arquivos é somente leitura e gravação quando executa o "
+"projeto localmente a partir do editor. Quando exportado ou quando executado "
+"em dispositivos diferentes (como telefones ou consoles ou em execução no "
+"DVD), o sistema de arquivos se tornará somente leitura e a gravação não será "
+"mais permitida."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "User path"
-msgstr ""
+msgstr "Caminho do usuário"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid ""
@@ -9594,10 +9924,14 @@ msgid ""
 "state or downloading content packs. To this end, the engine ensures that "
 "there is a special path ``user://`` that is always writable."
 msgstr ""
+"Normalmente, ainda é necessário gravar em disco para várias tarefas, como "
+"salvar o estado do jogo ou baixar pacotes de conteúdo. Para este fim, o "
+"mecanismo garante que existe um caminho especial `` user: // `` que é sempre "
+"gravável."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:88
 msgid "Host file system"
-msgstr ""
+msgstr "Sistema de arquivos do host"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:90
 msgid ""
@@ -9606,10 +9940,15 @@ msgid ""
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot!"
 msgstr ""
+"Alternativamente, os caminhos do sistema de arquivos do host também podem "
+"ser usados, mas isso não é recomendado para um produto liberado, pois esses "
+"caminhos não têm garantia de funcionar em todas as plataformas. No entanto, "
+"o uso de caminhos do sistema de arquivos do host pode ser útil ao escrever "
+"ferramentas de desenvolvimento na Godot!"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:96
 msgid "Drawbacks"
-msgstr ""
+msgstr "Desvantagens"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
@@ -9619,6 +9958,11 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
+"Existem algumas desvantagens nesse design simples do sistema de arquivos. A "
+"primeira questão é que a movimentação de ativos (renomeá-los ou movê-los de "
+"um caminho para outro dentro do projeto) quebrará as referências existentes "
+"a esses ativos. Essas referências terão que ser redefinidas para apontar "
+"para o novo local do ativo."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
 msgid ""
@@ -9627,6 +9971,11 @@ msgid ""
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why going the hardest route?)."
 msgstr ""
+"Para evitar isso, faça todas as suas movimentações, exclua e renomeie as "
+"operações de dentro da Godot, na estação FileSystem. Nunca mova ativos de "
+"fora da Godot, ou as dependências terão que ser consertadas manualmente "
+"(Godot detecta isso e ajuda você a consertá-las de qualquer maneira, mas por "
+"que seguir o caminho mais difícil?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
 msgid ""
@@ -9637,6 +9986,13 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
+"A segunda é que, no Windows e no MacOS, os nomes dos arquivos e dos caminhos "
+"não diferenciam maiúsculas de minúsculas. Se um desenvolvedor que trabalha "
+"em um sistema de arquivos host insensível a maiúsculas e minúsculas salva um "
+"ativo como \"myfile.PNG\", mas o referencia como \"myfile.png\", ele "
+"funcionará bem em sua plataforma, mas não em outras plataformas, como Linux, "
+"Android, etc. Isso também pode se aplicar a exportados binários, que usam um "
+"pacote compactado para armazenar todos os arquivos."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
 msgid ""
@@ -9644,18 +10000,23 @@ msgid ""
 "files when working with Godot! One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
+"É recomendado que sua equipe defina claramente uma convenção de nomenclatura "
+"para arquivos ao trabalhar com Godot! Uma convenção simples é apenas "
+"permitir nomes de arquivos e caminhos em minúsculas."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr ""
+msgstr "Árvore de cena"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
 msgid ""
 "This is where things start getting abstract, but don't panic. There's not "
 "much more depth than this."
 msgstr ""
+"É aqui que as coisas começam a ficar abstratas, mas não entre em pânico. Não "
+"há muito mais profundidade do que isso."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:12
 msgid ""
@@ -9663,6 +10024,9 @@ msgid ""
 "Scenes are simply a collection of nodes. They become active once they enter "
 "the *scene tree*."
 msgstr ""
+"Nos tutoriais anteriores, tudo girava em torno do conceito de nós. Cenas são "
+"simplesmente uma coleção de nós. Elas se tornam ativos quando entram na * "
+"árvore de cena *."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -9671,18 +10035,27 @@ msgid ""
 "and write a script (or C++ code) that talks directly to the servers. But "
 "making a game that way would be a lot of work."
 msgstr ""
+"Este conceito merece entrar em mais detalhes. Na verdade, o sistema de cena "
+"não é nem mesmo um componente central da Godot, já que é possível ignorá-lo "
+"e escrever um script (ou código C ++) que converse diretamente com os "
+"servidores. Mas fazer um jogo assim seria muito trabalho."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
-msgstr ""
+msgstr "Loop principal"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:24
+#, fuzzy
 msgid ""
 "The way Godot works internally is as follows. There is the :ref:`OS "
 "<class_OS>` class, which is the only instance that runs at the beginning. "
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"A maneira como Godot trabalha internamente é a seguinte. Existe a classe: "
+"ref: `OS <class_OS>`, que é a única instância que é executada no começo. "
+"Depois disso, todos os drivers, servidores, linguagens de script, sistema de "
+"cena, etc são carregados."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:29
 msgid ""
@@ -9691,6 +10064,11 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"Quando a inicialização estiver completa,: ref: `OS <class_OS>` precisa ser "
+"fornecido a: ref: `MainLoop <class_MainLoop>` para ser executado. Até este "
+"ponto, tudo isso é funcionamento interno (você pode verificar o arquivo "
+"main / main.cpp no código-fonte, se você estiver interessado em ver como "
+"isso funciona internamente)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -9699,18 +10077,27 @@ msgid ""
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
+"O programa do usuário, ou jogo, inicia no MainLoop. Essa classe tem alguns "
+"métodos, para inicialização, ocioso (retorno de chamada com sincronia de "
+"quadros), fixo (retorno de chamada com sincronização física) e entrada. "
+"Novamente, isso é de baixo nível e ao fazer jogos na Godot, escrever seu "
+"próprio MainLoop raramente faz sentido."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
 msgid ""
 "One of the ways to explain how Godot works, is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
+"Uma das maneiras de explicar como Godot funciona é que é um mecanismo de "
+"jogo de alto nível sobre um middleware de baixo nível."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
 msgstr ""
+"O sistema de cena é o mecanismo do jogo, enquanto o: ref: `OS <class_OS>` e "
+"os servidores são a API de baixo nível."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
 msgid ""
@@ -9718,12 +10105,17 @@ msgid ""
 "`SceneTree <class_SceneTree>`. This is automatically instanced and set when "
 "running a scene, no need to do any extra work."
 msgstr ""
+"Em qualquer caso, o sistema de cena fornece seu próprio loop principal para "
+"o SO,: ref: `SceneTree <class_SceneTree>`. Isso é automaticamente "
+"instanciado e definido ao executar uma cena, sem necessidade de qualquer "
+"trabalho extra."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It's important to know that this class exists because it has a few important "
 "uses:"
 msgstr ""
+"É importante saber que essa classe existe porque tem alguns usos importantes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 msgid ""
@@ -9731,18 +10123,25 @@ msgid ""
 "added as a child when it's first opened, to become part of the *Scene Tree* "
 "(more on that next)"
 msgstr ""
+"Ele contém a raiz: ref: `Viewport <class_Viewport>`, para a qual uma cena é "
+"adicionada como uma criança quando é aberta pela primeira vez, para se "
+"tornar parte da * Scene Tree * (mais sobre isso a seguir)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
 msgid ""
 "It contains information about the groups, and has means to call all nodes in "
 "a group, or get a list of them."
 msgstr ""
+"Ele contém informações sobre os grupos e tem meios para chamar todos os nós "
+"de um grupo ou obter uma lista deles."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
 msgid ""
 "It contains some global state functionality, such as setting pause mode, or "
 "quitting the process."
 msgstr ""
+"Ela contém alguma funcionalidade de estado global, como configurar o modo de "
+"pausa ou encerrar o processo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
@@ -9750,16 +10149,21 @@ msgid ""
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
 "get_tree() <class_Node_get_tree>`."
 msgstr ""
+"Quando um nó é parte da Scene Tree, o singleton: ref: `SceneTree "
+"<class_SceneTree> pode ser obtido simplesmente chamando: ref:` Node.get_tree "
+"() <class_Node_get_tree> `."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
 msgid "Root viewport"
-msgstr ""
+msgstr "Viewport raiz"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:73
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
+"A raiz: ref: `Viewport <class_Viewport> está sempre no topo da cena. De um "
+"nó, ele pode ser obtido de duas maneiras diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
 msgid ""
@@ -9768,6 +10172,10 @@ msgid ""
 "sense that the top of all nodes is always a node of this type, otherwise "
 "nothing would be seen!"
 msgstr ""
+"Este nó contém o viewport principal, qualquer coisa que é filho de: ref: "
+"`Viewport <class_Viewport>` é desenhado dentro dele por padrão, então faz "
+"sentido que o topo de todos os nós seja sempre um nó deste tipo, caso "
+"contrário nada seria visto!"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:93
 msgid ""
@@ -9775,22 +10183,29 @@ msgid ""
 "and such), this one is the only one that is never created by the user. It's "
 "created automatically inside SceneTree."
 msgstr ""
+"Enquanto outras viewports podem ser criadas na cena (para efeitos de tela "
+"dividida e tal), esta é a única que nunca é criada pelo usuário. É criado "
+"automaticamente dentro do SceneTree."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:98
 msgid "Scene tree"
-msgstr ""
+msgstr "Árvore de cena"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
 msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
 msgstr ""
+"Quando um nó é conectado, direta ou indiretamente, à viewport raiz, ele se "
+"torna parte da * árvore de cena *."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
 msgid ""
 "This means that, as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
 msgstr ""
+"Isso significa que, como explicado nos tutoriais anteriores, ele obterá os "
+"retornos de chamada _enter_tree () e _ready () (assim como _exit_tree ())."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
 msgid ""
@@ -9799,26 +10214,35 @@ msgid ""
 "notifications, play sound, groups, etc. When they are removed from the "
 "*scene tree*, they lose access."
 msgstr ""
+"Quando os nós entram na * Scene Tree *, eles se tornam ativos. Eles têm "
+"acesso a tudo o que precisam para processar, obter entrada, exibir 2D e 3D, "
+"notificações, reproduzir sons, grupos etc. Quando são removidos da * árvore "
+"de cena *, eles perdem o acesso."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:114
 msgid "Tree order"
-msgstr ""
+msgstr "Ordem da árvore"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
+#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing or getting "
 "notifications are done in tree order. This means that parents and siblings "
 "with a smaller rank in the tree order will get notified before the current "
 "node."
 msgstr ""
+"A maioria das operações de nó na Godot, como desenhar 2D, processar ou obter "
+"notificações, é feita em ordem de árvore. Isso significa que pais e irmãos "
+"com uma classificação menor na ordem de árvore serão notificados antes do nó "
+"atual."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:124
 msgid "\"Becoming active\" by entering the *Scene Tree*"
-msgstr ""
+msgstr "\"Tornando-se ativo\" entrando na * Scene Tree *"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:126
 msgid "A scene is loaded from disk or created by scripting."
-msgstr ""
+msgstr "Uma cena é carregada do disco ou criada pelo script."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
 msgid ""
@@ -9826,12 +10250,16 @@ msgid ""
 "child of the \"root\" Viewport (from SceneTree), or to any child or grand-"
 "child of it."
 msgstr ""
+"O nó raiz dessa cena (apenas uma raiz, lembra?) É adicionado como um filho "
+"da viewport \"root\" (de SceneTree), ou para qualquer filho ou neto dela."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:130
 msgid ""
 "Every node of the newly added scene, will receive the \"enter_tree\" "
 "notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
 msgstr ""
+"Cada nó da cena recém-adicionada receberá a notificação \"enter_tree"
+"\" (callback _enter_tree () no GDScript) na ordem de cima para baixo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:133
 msgid ""
@@ -9839,16 +10267,22 @@ msgid ""
 "provided for convenience, when a node and all its children are inside the "
 "active scene."
 msgstr ""
+"Uma notificação extra, \"ready\" (retorno de chamada _ready () no GDScript) "
+"é fornecida por conveniência, quando um nó e todos os seus filhos estão "
+"dentro da cena ativa."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:136
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
 msgstr ""
+"Quando uma cena (ou parte dela) é removida, eles recebem a notificação "
+"\"exit scene\" (retorno de chamada _exit_tree() na GDScript) na ordem de "
+"baixo para cima"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:141
 msgid "Changing current scene"
-msgstr ""
+msgstr "Alterando a cena atual"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
 msgid ""
@@ -9856,6 +10290,9 @@ msgid ""
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_change_scene>` function:"
 msgstr ""
+"Depois que uma cena é carregada, muitas vezes é desejado mudar essa cena "
+"para outra. A maneira simples de fazer isso é usar a função: ref: `SceneTree."
+"change_scene () <class_SceneTree_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 msgid ""
@@ -9866,26 +10303,37 @@ msgid ""
 "be done manually using autoloads (see next chapter!) and :ref:"
 "`doc_background_loading`."
 msgstr ""
+"Esta é uma maneira rápida e útil de trocar de cena, mas tem a desvantagem de "
+"o jogo parar até que a nova cena seja carregada e executada. Em algum "
+"momento do seu jogo, pode ser necessário criar telas de carregamento "
+"adequadas com barra de progresso, indicadores animados ou carregamento de "
+"thread (plano de fundo). Isso deve ser feito manualmente usando autoloads "
+"(veja o próximo capítulo!) E: ref: `doc_background_loading`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
+#, fuzzy
 msgid "Singletons (AutoLoad)"
-msgstr ""
+msgstr "Singletons (AutoLoad)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
 msgid ""
 "Scene singletons are useful, catering to a common use case where you need to "
 "store persistent information between scenes."
 msgstr ""
+"Singletons de cena são úteis, atendendo a um caso de uso comum em que você "
+"precisa armazenar informações persistentes entre as cenas."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:12
 msgid "Albeit powerful, the scene system by itself has a few drawbacks:"
-msgstr ""
+msgstr "Embora poderoso, o sistema de cena por si só tem algumas desvantagens:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:14
 msgid ""
 "There is no common place to store information (e.g. a player's items etc.) "
 "required by more than one scene."
 msgstr ""
+"Não há lugar comum para armazenar informações (por exemplo, itens de um "
+"jogador, etc.) exigidas por mais de uma cena."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -9893,6 +10341,10 @@ msgid ""
 "children to store information common to these child scenes, it is no longer "
 "possible to run these scenes by themselves and expect them to work correctly."
 msgstr ""
+"Embora seja possível que uma cena carregue e descarregue outras cenas como "
+"seus filhos para armazenar informações comuns a essas cenas filhas, não será "
+"mais possível executar essas cenas sozinhas e esperar que elas funcionem "
+"corretamente."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:20
 msgid ""
@@ -9900,34 +10352,44 @@ msgid ""
 "information can be loaded by scenes that require it, continuously saving and "
 "loading this data when changing scenes is cumbersome and may be slow."
 msgstr ""
+"Embora a informação possa ser armazenada no disco em \\ `user: // \\` e esta "
+"informação possa ser carregada por cenas que a exijam, salvar e carregar "
+"continuamente esses dados ao alterar cenas é trabalhoso e pode ser lento."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:24
 msgid "However there is still a need in Godot to create parts of a scene that:"
 msgstr ""
+"No entanto, ainda há uma necessidade em Godot de criar partes de uma cena "
+"que:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:26
 msgid "Are always loaded, no matter which scene is opened from the editor"
-msgstr ""
+msgstr "São sempre carregados, não importa qual cena seja aberta no editor"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:27
 msgid ""
 "Can store global variables, such as player information, items, money etc. "
 "and share information between scenes"
 msgstr ""
+"Pode armazenar variáveis globais, como informações do jogador, itens, "
+"dinheiro etc. e compartilhar informações entre cenas"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Can handle switching scenes and transitions"
-msgstr ""
+msgstr "Pode lidar com cenas de comutação e transições"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:30
 msgid ""
 "Acts like a singleton, since GDScript does not support global variables by "
 "design."
 msgstr ""
+"Atua como um singleton, já que o GDScript não suporta variáveis globais por "
+"design."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
+#, fuzzy
 msgid "Auto-loading nodes and scripts caters to this need."
-msgstr ""
+msgstr "Nós e scripts de carregamento automático atendem a essa necessidade."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:35
 msgid "AutoLoad"
@@ -9938,28 +10400,39 @@ msgid ""
 "You can use AutoLoad to load a scene, or a script that inherits from Node (a "
 "node will be created and the script will be set to it)."
 msgstr ""
+"Você pode usar o Carregamento Automático para carregar uma cena ou um script "
+"que herda do Nó (um nó será criado e o script será definido para ele)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:40
+#, fuzzy
 msgid ""
 "To autoload a scene or script, select Project > Project Settings from the "
 "menu and switch to the AutoLoad tab. Each entry in the list requires a name, "
 "which is used as the name of the node, and the node is always added to the "
 "root viewport before any other scenes are loaded."
 msgstr ""
+"Para carregar automaticamente uma cena ou script, selecione Projeto> "
+"Configurações do Projeto no menu e alterne para a guia Carregamento "
+"Automático. Cada entrada na lista requer um nome, que é usado como o nome do "
+"nó, e o nó é sempre adicionado à viewport raiz antes que qualquer outra cena "
+"seja carregada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:47
 msgid ""
 "This means that any node can access a singleton named \"playervariables\" "
 "with:"
 msgstr ""
+"Isso significa que qualquer nó pode acessar um singleton chamado "
+"\"playervariables\" com:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid "Or even simpler using the name directly:"
-msgstr ""
+msgstr "Ou ainda mais simples usando o nome diretamente:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
+#, fuzzy
 msgid "Custom scene switcher"
-msgstr ""
+msgstr "Comutador de cena personalizado"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:75
 msgid ""
@@ -9969,12 +10442,19 @@ msgid ""
 "`doc_scene_tree`), so this method is for more complex behavior when "
 "switching between scenes."
 msgstr ""
+"Este breve tutorial explicará como fazer um switcher de cena usando o "
+"autoload. Para troca de cena simples, o método: ref: `SceneTree.change_scene "
+"() <class_SceneTree_change_scene>` é suficiente (descrito em: ref: "
+"`doc_scene_tree`), então este método é para um comportamento mais complexo "
+"ao alternar entre cenas."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:81
 msgid ""
 "First download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>`, then open it."
 msgstr ""
+"Primeiro faça o download do modelo aqui:: download: `autoload.zip <files / "
+"autoload.zip>` e abra-o."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:84
 msgid ""
@@ -9984,20 +10464,27 @@ msgid ""
 "tscn. However, this currently does nothing and pressing the button does not "
 "work."
 msgstr ""
+"Duas cenas estão presentes, scene_a.tscn e scene_b.tscn em um projeto vazio. "
+"Cada um é idêntico e contém um botão conectado a um retorno de chamada para "
+"alternar para a outra cena. Quando o projeto é executado, ele começa em "
+"scene_a.tscn. No entanto, isso atualmente não faz nada e pressionar o botão "
+"não funciona."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:91
 msgid "global.gd"
-msgstr ""
+msgstr "global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid ""
 "First of all, create a global.gd script. The easy way to create a resource "
 "from scratch is from the new resource button in the inspector tab:"
 msgstr ""
+"Primeiramente, crie um script global.gd. O jeito mais fácil de criar um "
+"recurso do zero é através do botão de novo recurso na guia Inspetor:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:98
 msgid "Save the script as `global.gd`:"
-msgstr ""
+msgstr "Salve o script como `global.gd`:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:102
 msgid ""
@@ -10006,10 +10493,16 @@ msgid ""
 "the AutoLoad tab and add a new entry with name \"global\" that points to "
 "this file:"
 msgstr ""
+"O script deve abrir no editor de script. O próximo pásso é adicioná-lo à "
+"lista AutoLoad. Clique em Projeto > Configurações de Projeto no menu, mude "
+"para a guia AutoLoad e adicione uma nova entrada com o nome \"global\" que "
+"aponte para este arquivo:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:109
 msgid "Now, whenever you run any of your scenes, the script is always loaded."
 msgstr ""
+"Agora, sempre que você executar qualquer uma de suas cenas, o script será "
+"sempre carregado."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:111
 msgid ""
@@ -10018,17 +10511,25 @@ msgid ""
 "root, but the autoloaded nodes are always first. This means that the last "
 "child of root is always the loaded scene."
 msgstr ""
+"Voltando ao nosso script, a cena atual precisa ser recuperada na função "
+"`_ready()`. Tanto a cena atual quanto `global.gd` são filhos do nó raiz, mas "
+"os nós carregados automaticamente são sempre os primeiros. Isto significa "
+"que o último filho da raiz é sempre a cena carregada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:116
 msgid ""
 "Note: Make sure that global.gd extends Node, otherwise it won't be loaded!"
 msgstr ""
+"Nota: Se assegure de que global.gd extenda Node, caso contrário ele não será "
+"carregado!"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:146
 msgid ""
 "Next up is the function for changing the scene. This function frees the "
 "current scene and replaces it with the requested one."
 msgstr ""
+"Em seguida vem a função para trocar de cena. Esta função libera a cena atual "
+"e a substitui pela cena requisitada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:218
 msgid ""
@@ -10039,38 +10540,49 @@ msgid ""
 "execution of the commands in the second function will happen at a later time "
 "when no code from the current scene is running."
 msgstr ""
+"Como mencionado anteriormente, queremos evitar a situação em que a cena "
+"atual é deletada enquanto em uso (código de suas funções sendo executado), "
+"então usar :ref:`Object.call_deferred() <class_Object_call_deferred>` é "
+"desejado neste ponto. O resultado é que a execução dos comandos na segunda "
+"função acontecerá num momento posterior em que nenhum código da cena atual "
+"esteja rodando."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:226
 msgid ""
 "Finally, all that is left is to fill the empty functions in scene_a.gd and "
 "scene_b.gd:"
 msgstr ""
+"Finalmente, tudo que resta é completar as funções vazias em scene_a.gd e "
+"scene_b.gd:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:247
 #: ../../docs/tutorials/math/vector_math.rst:276
 #: ../../docs/development/cpp/core_types.rst:122
 msgid "and"
-msgstr ""
+msgstr "e"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:267
 msgid ""
 "Now if you run the project, you can switch between both scenes by pressing "
 "the button!"
 msgstr ""
+"Agora se você roda o projeto, você pode trocar de cena pressionando o botão!"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:270
 msgid ""
 "To load scenes with a progress bar, check out the next tutorial, :ref:"
 "`doc_background_loading`"
 msgstr ""
+"Para carregar as cenas com uma barra de progresso, veja o próximo tutorial, :"
+"ref:`doc_background_loading`"
 
 #: ../../docs/getting_started/editor/index.rst:2
 msgid "Editor manual"
-msgstr ""
+msgstr "Manual do editor"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
 msgid "From Unity3D to Godot Engine"
-msgstr ""
+msgstr "De Unity3D à Godot Engine"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -10078,18 +10590,21 @@ msgid ""
 "Unity user, and aims to help you migrate your existing Unity experience into "
 "the world of Godot."
 msgstr ""
+"Este guia provê uma visão geral do motor Godot do ponto de vista de um "
+"usuário Unity, e procura te ajudar a migrar sua experiência em Unity para o "
+"mundo do Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:13
 msgid "Differences"
-msgstr ""
+msgstr "Diferenças"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:16
 msgid "Unity"
-msgstr ""
+msgstr "Unity"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:16
 msgid "Godot"
-msgstr ""
+msgstr "Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 #: ../../docs/community/contributing/documentation_guidelines.rst:102
@@ -10100,18 +10615,20 @@ msgstr "Licença"
 msgid ""
 "Proprietary, closed, free license with revenue caps and usage restrictions"
 msgstr ""
+"Proprietário, código fechado, licença grátis com teto de rendimento e "
+"restrições de uso"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:18
 msgid "MIT license, free and fully open source without any restriction"
-msgstr ""
+msgstr "Licença MIT, grátis e código totalmente aberto sem nenhuma restrição"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "OS (editor)"
-msgstr ""
+msgstr "OS (editor)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
-msgstr ""
+msgstr "Windows, macOS, Linux (não oficial e sem suporte)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:20
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
@@ -10119,119 +10636,124 @@ msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "OS (export)"
-msgstr ""
+msgstr "OS (exportar)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr ""
+msgstr "**Desktop:** Windows, macOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
-msgstr ""
+msgstr "**Dispositivos móveis:** Android, iOS, Windows Phone, Tizen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Web:** WebAssembly or asm.js"
-msgstr ""
+msgstr "**Web:** WebAssembly ou asm.js"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
-msgstr ""
+msgstr "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
 msgstr ""
+"**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
+"HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
-msgstr ""
+msgstr "**TV:** Android TV, Samsung Smart TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:22
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr ""
+msgstr "**Desktop:** Windows, macOS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Mobile:** Android, iOS"
-msgstr ""
+msgstr "**Dispositivos móveis:** Android, iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Web:** WebAssembly"
-msgstr ""
+msgstr "**Web:** WebAssembly"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Console:** See :ref:`doc_consoles`"
-msgstr ""
+msgstr "**Console:** Ver :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid "**VR:** Oculus Rift, SteamVR"
-msgstr ""
+msgstr "**VR:** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "Scene system"
-msgstr ""
+msgstr "Sistema de cenas"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid "Component/Scene (GameObject > Component)"
-msgstr ""
+msgstr "Componente/Cena (GameObject > Component)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "Prefabs"
-msgstr ""
+msgstr "Prefabs"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:29
 msgid ""
 ":ref:`Scene tree and nodes <doc_scenes_and_nodes>`, allowing scenes to be "
 "nested and/or inherit other scenes"
 msgstr ""
+":ref:`Árvore de cenas e nós <doc_scenes_and_nodes>`, permitindo que cenas "
+"sejam aninhadas e/ou herdem outras cenas"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "Third-party tools"
-msgstr ""
+msgstr "Ferramentas de terceiros"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid "Visual Studio or VS Code"
-msgstr ""
+msgstr "Visual Studio ou VS Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:32
 msgid ":ref:`External editors are possible <doc_external_editor>`"
-msgstr ""
+msgstr ":ref:`Editores externos são possíveis <doc_external_editor>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:33
 msgid ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
 msgstr ""
+":ref:`Android SDK para exportação a Android <doc_exporting_for_android>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Killer features"
-msgstr ""
+msgstr "Recursos decisivos"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Huge community"
-msgstr ""
+msgstr "Comunidade enorme"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:36
 msgid "Large assets store"
-msgstr ""
+msgstr "Grande armazém de recursos"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:35
 msgid "Scene System"
-msgstr ""
+msgstr "Sistema de cenas"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:36
 msgid ":ref:`Animation Pipeline <doc_animations>`"
-msgstr ""
+msgstr ":ref:`Canalização de Animações <doc_animations>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`Facilidade para escrever Shaders <doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:38
 msgid "Debug on Device"
-msgstr ""
+msgstr "Depuração no dispositivo"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:45
 msgid "The editor"
-msgstr ""
+msgstr "O editor"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:47
 msgid ""
@@ -10930,9 +11452,9 @@ msgid ""
 "point, it became evident that a custom scripting language could more "
 "optimally make use of Godot's particular architecture:"
 msgstr ""
-"A última linguagem script de terceiros que foi utilizada para lançar jogos "
+"A última linguagem script de terceiros que foi utilizada para jogos lançados "
 "foi `Squirrel <http://squirrel-lang.org>`__, mas ela também for largada. "
-"Naquele ponto, se tornou evidente que uma linguagem script customizada "
+"Naquele ponto, se tornou evidente que uma linguagem script personalizada "
 "poderia fazer um melhor uso da arquitetura particular do Godot:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:30
@@ -13326,10 +13848,10 @@ msgid ""
 "and ``_iter_get`` functions in your script. An example implementation of a "
 "forward iterator follows:"
 msgstr ""
-"Você pode criar iteradores customizados caso os defaults não satisfaçam suas "
-"necessidades, sobrescrevendo as funções `` _iter_init``, `` _iter_next`` e "
-"`` _iter_get`` da classe Variant em seu script. Um exemplo de implementação "
-"de um iterador avançado segue:"
+"Você pode criar iteradores personalizados caso os existentes não satisfaçam "
+"suas necessidades, sobrescrevendo as funções `` _iter_init``, `` "
+"_iter_next`` e `` _iter_get`` da classe Variant em seu script. Aqui está um "
+"exemplo de implementação de um iterador avançado:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:453
 msgid "And it can be used like any other iterator:"
@@ -14157,7 +14679,7 @@ msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
 msgstr ""
-"Espaços reservados também podem ser customizados utilizando ``String."
+"Espaços reservados também podem ser personalizados utilizando ``String."
 "format``, aqui estão alguns exemplos dessa funcionalidade."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
@@ -26202,39 +26724,46 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/index.rst:2
 msgid "FPS tutorial"
-msgstr ""
+msgstr "Jogo de tiro em primeira pessoa (FPS)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:4
 msgid "Part 1"
-msgstr ""
+msgstr "Parte 1"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:7
 msgid "Tutorial introduction"
-msgstr ""
+msgstr "Introdução"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:11
 msgid ""
 "This tutorial series will show you how to make a single player FPS game."
 msgstr ""
+"Esta série de tutoriais lhe mostrará como fazer um jogo de tiro em primeira "
+"pessoa para um jogador."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:13
 msgid "Throughout the course of this tutorial series, we will cover how:"
-msgstr ""
+msgstr "Ao longo desta série, nós cobriremos como:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:15
 msgid "To make a first person character that can move, sprint, and jump."
 msgstr ""
+"Fazer um personagem em primeira pessoa que pode se mover, correr e pular."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:16
 msgid ""
 "To make a simple animation state machine for handling animation transitions."
 msgstr ""
+"Fazer uma máquina de estado de animação simples para manipular transições de "
+"animações."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:17
 msgid ""
 "To add three weapons to the first person character, each using a different "
 "way to handle bullet collisions:"
 msgstr ""
+"Adicionar três armas para o personagem, cada uma usando uma maneira "
+"diferente para lidar com colisões:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:18
 msgid "A knife (using an :ref:`Area <class_Area>`)"
@@ -26242,76 +26771,80 @@ msgstr "Uma faca (usando uma :ref:`Area <class_Area>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:19
 msgid "A pistol (Bullet scenes)"
-msgstr ""
+msgstr "Uma pistola (cenas Bala)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:20
 msgid "A rifle (using a :ref:`Raycast <class_Raycast>`)"
-msgstr ""
+msgstr "Uma espingarda (usando um :ref:`Raycast <class_Raycast>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:21
 msgid "To add two different types of grenades to the first person character:"
-msgstr ""
+msgstr "Adicionar dois tipos diferentes de granadas para o personagem:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:22
 msgid "A normal grenade"
-msgstr ""
+msgstr "Uma granada normal"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:23
 msgid "A sticky grenade"
-msgstr ""
+msgstr "Uma granada adesiva"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:24
 msgid ""
 "To add the ability to grab and throw :ref:`RigidBody <class_RigidBody>` nodes"
 msgstr ""
+"Adicionar a habilidade de agarrar e arremessar nós :ref:`RigidBody "
+"<class_RigidBody>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:25
 msgid "To add joypad input for the player"
-msgstr ""
+msgstr "Adicionar entradas de controle para o jogador"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:26
 msgid "To add ammo and reloading for all weapons that consume ammo."
-msgstr ""
+msgstr "Adicionar munição e recarga para todas as armas que consomem munição."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:27
 msgid "To add ammo and health pick ups"
-msgstr ""
+msgstr "Adicionar itens de munição e saúde"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:28
 msgid "In two sizes: big and small"
-msgstr ""
+msgstr "Em dois tamanhos: grandes e pequenos"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:29
 msgid "To add an automatic turret"
-msgstr ""
+msgstr "Adicionar um torreão automático"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:30
 msgid "That can fire using bullet objects or a :ref:`Raycast <class_Raycast>`"
 msgstr ""
+"Que pode disparar atacando objetos bala ou um :ref:`Raycast <class_Raycast>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:31
 msgid "To add targets that break when they've taken enough damage"
-msgstr ""
+msgstr "Adicionar alvos que quebram quando recebem dano o suficiente"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:32
 msgid "To add sounds that play when the guns fire."
-msgstr ""
+msgstr "Adicionar sons que são reproduzidos quando armas disparam."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:33
 msgid "To add a simple main menu:"
-msgstr ""
+msgstr "Adicionar um menu principal simples:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:34
 msgid "With an options menu for changing how the game runs"
-msgstr ""
+msgstr "Com um menu de opções para alterar como o jogo é executado"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:35
 msgid "With a level select screen"
-msgstr ""
+msgstr "Com uma tela de seleção de níveis"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:36
 msgid "To add a universal pause menu we can access anywhere"
 msgstr ""
+"Adicionar um menu de pausa universal, que pode ser acessado em qualquer lugar"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:38
 msgid ""
@@ -26319,12 +26852,18 @@ msgid ""
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development **before** going through this tutorial series."
 msgstr ""
+"Embora este guia possa ser seguido por iniciantes, é altamente aconselhado "
+"completar :ref:`doc_your_first_game` se você é novo no Godot e/ou "
+"desenvolvimento de jogos **antes** de prosseguir nesta série de tutoriais."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
 msgid ""
 "Remember: Making 3D games is much harder than making 2D games. If you do not "
 "know how to make 2D games you will likely struggle making 3D games."
 msgstr ""
+"Lembre-se: Fazer jogos 3D é muito mais difícil que os 2D. Se você não sabe "
+"fazer jogos bidimensionais, você vai passar um aperto fazendo jogos "
+"tridimensionais."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:46
 msgid ""
@@ -26332,12 +26871,17 @@ msgid ""
 "editor, have basic programming experience in GDScript, and have basic "
 "experience in game development."
 msgstr ""
+"Este tutorial assume que você tem experiência em mexer o editor Godot, tem "
+"experiência básica em programação com GDScript e tem experiência básica em "
+"desenvolvimento de jogos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:49
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 msgstr ""
+"Você pode achar os ativos iniciais para este tutorial aqui: :download:"
+"`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:51
 msgid ""
@@ -26345,6 +26889,9 @@ msgid ""
 "models for making levels, and a few scenes already configured for this "
 "tutorial."
 msgstr ""
+"Os ativos iniciais fornecidos contêm um modelo 3D animado, um bocado de "
+"modelos 3D para fazer níveis e umas poucas cenas já configuradas para este "
+"tutorial."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:54
 msgid ""
@@ -26352,6 +26899,10 @@ msgid ""
 "TwistedTwigleg, with changes/additions by the Godot community. All original "
 "assets provided for this tutorial are released under the ``MIT`` license."
 msgstr ""
+"Todos os ativos fornecidos (a menos que indicado o contrário) foram "
+"originalmente criados por TwistedTwigleg, com alterações/adições feitas pela "
+"comunidade Godot. Todos os ativos originais fornecidos para este tutorial "
+"são disponibilizados sob a licença ``MIT``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:57
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1005
@@ -26360,12 +26911,17 @@ msgid ""
 "to the Godot community, with the other assets belonging to those listed "
 "below:"
 msgstr ""
+"Sinta-se à vontade para usá-los como quiser! Todos esses ativos originais "
+"pertencem à comunidade Godot, com os outros ativos pertencendo às pessoas "
+"listadas abaixo:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:59
 msgid ""
 "The skybox is created by **StumpyStrust** on OpenGameArt. The skybox used is "
 "licensed under ``CC0``."
 msgstr ""
+"A cúpula celeste foi criada por **StumpyStrust** no OpenGameArt. Ela é "
+"licenciada sob a ``CC0``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:62
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1010
@@ -26373,12 +26929,16 @@ msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
 "Font License, Version 1.1``."
 msgstr ""
+"A fonte usada é **Titillium-Regular**, licenciada sob a ``SIL Open Font "
+"License, Version 1.1``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:64
 msgid ""
 "You can find the finished project for each part at the bottom of each part's "
 "page"
 msgstr ""
+"Você pode encontrar o projeto finalizado para cada parte ao final da página "
+"da respectiva parte"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:67
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:7
@@ -26387,13 +26947,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:7
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
 msgid "Part Overview"
-msgstr ""
+msgstr "Parte Panorama"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:69
 msgid ""
 "In this part we will be making a first person player that can move around "
 "the environment."
 msgstr ""
+"Nesta parte, faremos um jogador em primeira pessoa que pode se mover pelo "
+"ambiente."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:74
 msgid ""
@@ -26402,14 +26964,18 @@ msgid ""
 "person camera, that can jump into the air, turn on and off a flash light, "
 "and sprint."
 msgstr ""
+"Ao final deste tutorial, você terá um personagem em primeira pessoa que pode "
+"se mover pelo ambiente de jogo, olhar ao redor com uma câmera de primeira "
+"pessoa baseada no mouse, que pode pular no ar, ligar e desligar uma lanterna "
+"e correr."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
 msgid "Getting everything ready"
-msgstr ""
+msgstr "Preparando tudo"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:79
 msgid "Launch Godot and open up the project included in the starter assets."
-msgstr ""
+msgstr "Execute o Godot e abra o projeto incluso nos ativos iniciais."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:81
 msgid ""
@@ -26417,6 +26983,10 @@ msgid ""
 "in this tutorial, they will make the tutorial much easier to follow as there "
 "are several pre-setup scenes we will be using throughout the tutorial series."
 msgstr ""
+"Embora estes ativos não são necessariamente exigidos para usar os roteiros "
+"fornecidos neste tutorial, eles tornam o tutorial muito mais fácil de "
+"acompanhar, já que existem muitas cenas pré-configuradas que usaremos ao "
+"longo desse guia."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:85
 msgid ""
@@ -26425,10 +26995,14 @@ msgid ""
 "actions for our player. Feel free to change the keys bound to these actions "
 "if you want."
 msgstr ""
+"Primeiro, abra as configurações do projeto e vá para a guia \"Mapa de "
+"Entradas\". Você verá que várias ações já foram definidas. Nós as usaremos "
+"para nosso jogador. Fique à vontade para alterar as teclas associadas a "
+"essas ações, se desejar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:91
 msgid "Let's take a second to see what we have in the starter assets."
-msgstr ""
+msgstr "Vamos olhar por um momento o que temos nos ativos iniciais."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:93
 msgid ""
@@ -26436,10 +27010,12 @@ msgid ""
 "we have 14 scenes, most of which we will be visiting as we go through this "
 "tutorial series."
 msgstr ""
+"Existem muitas cenas inclusas nos ativos iniciais. Por exemplo, em `res://`, "
+"temos 14 cenas, sendo que visitaremos a maioria ao longo desse curso."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:96
 msgid "For now let's open up ``Player.tscn``."
-msgstr ""
+msgstr "Por ora, vamos abrir ``Player.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:98
 msgid ""
@@ -26448,16 +27024,22 @@ msgid ""
 "``Assets`` in this tutorial series. ``Assets`` contains all of the models "
 "used for each of the levels, as well as some textures and materials."
 msgstr ""
+"Existem muitas cenas e umas texturas na pasta ``Assets`` (\"ativos\"). Você "
+"pode olhá-las se quiser, mas não exploraremos essa pasta nesta série de "
+"tutoriais. ``Assets`` contém todos os modelos usados para todos os níveis, "
+"assim como algumas texturas e materiais."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:103
 msgid "Making the FPS movement logic"
-msgstr ""
+msgstr "Fazendo a lógica de movimento em FPS"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:105
 msgid ""
 "Once you have ``Player.tscn`` open, let's take a quick look at how it is set "
 "up"
 msgstr ""
+"Depois de abrir ``Player.tscn``, vamos dar uma olhada rápida em como ela "
+"está configurada"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:109
 msgid ""
@@ -43335,7 +43917,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:4
 msgid "Custom GUI controls"
-msgstr "Controles de GUI customizados"
+msgstr "Controles de GUI personalizados"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:7
 msgid "So many controls..."

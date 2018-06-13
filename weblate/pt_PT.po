@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-06 09:15+0200\n"
-"PO-Revision-Date: 2018-05-26 14:09+0000\n"
-"Last-Translator: João <joao@nogordio.com>\n"
+"PO-Revision-Date: 2018-06-12 10:42+0000\n"
+"Last-Translator: Alexandre Badalo <alexandre.badalo@sapo.pt>\n"
 "Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_PT/>\n"
 "Language: pt_PT\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -34,8 +34,8 @@ msgid ""
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
 "Esta é a documentação para o ramo **master** em desenvolvimento e por isso "
-"instável. Procura a documentação do ramo em produção e **estável**? Veja em "
-"<http://docs.godotengine.org/en/stable>`_."
+"instável. Procura a documentação do ramo **estável**? Veja em <http://docs."
+"godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -8918,59 +8918,63 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "Executes the script in the editor."
-msgstr ""
+msgstr "Executa o script no editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "signal"
-msgstr ""
+msgstr "signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Defines a signal."
-msgstr ""
+msgstr "Define um sinal."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
+#, fuzzy
 msgid "func"
-msgstr ""
+msgstr "func"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Defines a function."
-msgstr ""
+msgstr "Define uma função."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "static"
-msgstr ""
+msgstr "static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
+#, fuzzy
 msgid "Defines a static function. Static member variables are not allowed."
 msgstr ""
+"Define uma função estática. Variaveis membro estáticas não são permitidas."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "const"
-msgstr ""
+msgstr "const"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "Defines a constant."
-msgstr ""
+msgstr "Define uma constante."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "enum"
-msgstr ""
+msgstr "enum"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "Defines an enum."
-msgstr ""
+msgstr "Define uma enumeração."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
+#, fuzzy
 msgid "var"
-msgstr ""
+msgstr "var"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 msgid "Defines a variable."
-msgstr ""
+msgstr "Define uma variavel."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid "onready"
-msgstr ""
+msgstr "onready"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid ""
@@ -8980,17 +8984,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid "export"
-msgstr ""
+msgstr "export"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid ""
 "Saves a variable along with the resource it's attached to and makes it "
 "visible and modifiable in the editor."
 msgstr ""
+"Guarda uma variável junto com o recurso que lhe está atribuído e fá-la "
+"visível e modificável pelo editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:208
 msgid "setget"
-msgstr ""
+msgstr "setget"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:208
 msgid "Defines setter and getter functions for a variable."
@@ -9001,8 +9007,9 @@ msgid "breakpoint"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:210
+#, fuzzy
 msgid "Editor helper for debugger breakpoints."
-msgstr ""
+msgstr "Ajudante do editor para os pontos de pausa do debuggger"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "preload"
@@ -9021,9 +9028,8 @@ msgid "Coroutine support. See `Coroutines with yield`_."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
-#, fuzzy
 msgid "assert"
-msgstr "Classes"
+msgstr "assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid ""

@@ -22,6 +22,7 @@
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
 # Oscar Vila <codemoscar@gmail.com>, 2018.
+# Renato Pereson <peresonrenato@gmail.com>, 2018.
 # Ricardo Pérez <ricpelo@gmail.com>, 2018.
 # Roberto Sosa Cano <roberto.cano@gmail.com>, 2018.
 # Rodolfo Lam <r_lam@hotmail.com>, 2018.
@@ -35,8 +36,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-06 09:15+0200\n"
-"PO-Revision-Date: 2018-06-06 07:07+0000\n"
-"Last-Translator: Jose Maria Martinez <josemar1992@hotmail.com>\n"
+"PO-Revision-Date: 2018-06-13 11:53+0000\n"
+"Last-Translator: AnyMan <romopua@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -44,7 +45,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.0\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -855,15 +856,14 @@ msgid "Why is FBX not supported for import?"
 msgstr "¿Por qué FBX no está soportado para ser importado?"
 
 #: ../../docs/about/faq.rst:154
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
-"FBX SDK tiene una `licencia restrictiva <http://www.blender.org/bf/"
+"FBX SDK tiene una `licencia restrictiva <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, que es incompatible con la `licencia abierta "
-"<http://opensource.org/licenses/MIT>`_ proporcionada por Godot."
+"<https://opensource.org/licenses/MIT>`_ proporcionada por Godot."
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -1788,7 +1788,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"
-msgstr "El editor"
+msgstr "Editor"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:96
 msgid ""
@@ -11033,16 +11033,15 @@ msgid "**Second, a scene for the Enemy.**"
 msgstr "**Segundo, una escena para el Enemigo.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:98
-#, fuzzy
 msgid ""
 "There again, an enemy is a reusable element in other levels. It is almost "
 "the same as the Player node - the only differences are the script (that "
 "manages AI, mostly) and sprite textures used by the AnimatedSprite."
 msgstr ""
-"De nuevo, un enemigo es un elemento reutilizable en otros niveles. Es casi "
-"lo mismo que el nodo del Jugador - las únicas diferencias son el script (en "
-"el que se procesará la IA del enemigo, mayoritariamente) y las texturas "
-"usadas por el AnimatedSprite."
+"Una vez más, un enemigo es un elemento reutilizable en otros niveles. Es "
+"casi igual que el nodo Player - las únicas diferencias son el script (que "
+"gestiona la IA, principalmente) y las texturas de sprite usadas por el "
+"AnimatedSprite."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
 msgid "**Lastly, the Level scene.**"
@@ -11244,7 +11243,6 @@ msgid "Glossary correspondence"
 msgstr "Correspondencia del glosario"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:147
-#, fuzzy
 msgid ""
 "GameObject -> Node Add a component -> Inheriting Prefab -> Externalized "
 "branch"
@@ -11427,7 +11425,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
 msgid "Setting the project path"
-msgstr ""
+msgstr "Configuración de la ruta del proyecto"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:25
 msgid ""
@@ -11486,7 +11484,7 @@ msgid ""
 "must be done from within the project directory, or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"Ejecutar el editor se hace ejecutando Godot con la marca ``-e``. Esto debe "
+"Ejecutar el editor se hace ejecutando Godot con el flag ``-e``. Esto debe "
 "hacerse desde el directorio del proyecto, o desde un subdirectorio, de lo "
 "contrario el comando se ignora y aparece el gestor de proyectos."
 
@@ -11610,10 +11608,13 @@ msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
+"Si no existe el archivo project.godot en la ruta, se asume que la ruta "
+"actual es el directorio de trabajo actual (a menos que se especifique ``-"
+"path``)."
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Uso de un editor de texto externo"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
 msgid ""
@@ -11622,6 +11623,10 @@ msgid ""
 "via the options under ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Mientras que godot tiene un editor de texto incorporado, algunos "
+"desarrolladores tienen la tendencia de querer usar un editor de texto con el "
+"que estén más familiarizados. Godot ofrece esta posibilidad en el apartado "
+"``Editor -> Ajustes del editor -> Text Editor -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
 msgid ""
@@ -11629,70 +11634,73 @@ msgid ""
 "allow you to better integrate the editor with godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
+"Hay dos campos: la ruta del ejecutable y los flags de la línea de comandos. "
+"Los flags te permiten integrar mejor el editor con Godot. Godot reemplazará "
+"lo siguiente dentro del parámetro flags:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Campo en Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
-msgstr ""
+msgstr "Es reemplazado por"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{project}"
-msgstr ""
+msgstr "{project}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "La ruta absoluta al directorio del proyecto"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{file}"
-msgstr ""
+msgstr "{file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "La ruta absoluta al archivo"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{col}"
-msgstr ""
+msgstr "{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
-msgstr ""
+msgstr "El número de columna del error"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "{line}"
-msgstr ""
+msgstr "{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
-msgstr ""
+msgstr "El número de línea del error"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "Algunos ejemplos de Exec Flags para varios editores incluyen:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
-msgstr ""
+msgstr "Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "geany/kate"
-msgstr ""
+msgstr "geany/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "{file} --line {line} --column {col}"
-msgstr ""
+msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "atom/sublime text"
-msgstr ""
+msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "{file}:{line}"
-msgstr ""
+msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
 msgid ""
@@ -11715,7 +11723,6 @@ msgid "History"
 msgstr "Historia"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:19
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <http://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -11723,11 +11730,11 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
-"En los primeros días, el motor usaba el lenguaje de scripting `Lua <http://"
-"www.lua.org>`__ . Lua es rápido, pero crear bindings a un sistema orientado "
-"a objetos (utilizando fallbacks) era complejo y lento y necesitó una enorme "
-"cantidad de código. Después de algunos experimentos con `Python <http://www."
-"python.org>`__, también demostró ser difícil de embeber."
+"En los primeros tiempos, el motor utilizaba el lenguaje de scripting `Lua "
+"<http://www.lua.org>`__. Lua es rápido, pero la creación de enlaces a un "
+"sistema orientado a objetos (usando fallbacks) era compleja y lenta y "
+"requería una enorme cantidad de código. Después de algunos experimentos con "
+"`Python <https://www.python.org>`__, también resultó difícil de incrustar."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid ""
@@ -13623,6 +13630,9 @@ msgid ""
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
+"Por otra parte, cuando no se utilizan referencias, el "
+"``is_instance_valid(instance)`` puede usarse para comprobar si un objeto ha "
+"sido liberado."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
@@ -13728,11 +13738,15 @@ msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
 msgstr ""
+"Las corrutinas mismas usan la señal ``completed`` cuando pasan a un estado "
+"inválido, por ejemplo:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
 msgid ""
 "``my_func`` will only continue execution once both the buttons are pressed."
 msgstr ""
+"``my_func`` sólo continuará la ejecución una vez que se hayan presionado "
+"ambos botones."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
 msgid "Onready keyword"
@@ -16364,7 +16378,6 @@ msgid "Setup C# for Godot"
 msgstr "Configuración C# para Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:27
-#, fuzzy
 msgid ""
 "To use C# in Godot you must have `Mono <http://www.mono-project.com/download/"
 ">`_ installed. Godot 3.0.2 requires Mono 5.4, 3.0.3 requires Mono 5.12 on "
@@ -16373,8 +16386,8 @@ msgid ""
 msgstr ""
 "Para usar C# en Godot debes tener `Mono <http://www.mono-project.com/"
 "download/>`_ instalado. Godot 3.0.2 requiere Mono 5.4, 3.0.3 requiere Mono "
-"5.10 en Linux y Windows, y 5.8 en MacOS. También necesita MSBuild (al menos "
-"la versión 15.0) que debe venir con la instalación Mono."
+"5.12 en todas las plataformas. También necesitas MSBuild (al menos la "
+"versión 15.0) que debe venir con la instalación Mono."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:30
 msgid ""
@@ -16383,6 +16396,11 @@ msgid ""
 "#accessing-older-releases>`_. Older versions of Mono for MacOS and Windows "
 "can be found `here <https://download.mono-project.com/archive/>`_."
 msgstr ""
+"Para obtener instrucciones sobre la instalación de versiones anteriores de "
+"Mono en Linux, consulta `esta página <http://www.mono-project.com/docs/"
+"getting-started/install/linux/#accessing-older-releases>`_. Las versiones "
+"más antiguas de Mono para MacOS y Windows se encuentran `aquí <https://"
+"download.mono-project.com/archive/>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:33
 msgid ""
@@ -16642,7 +16660,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
 msgid "Using Nuget Packages in Godot"
-msgstr ""
+msgstr "Uso de los paquetes NuGet en Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
 msgid ""
@@ -16651,11 +16669,18 @@ msgid ""
 "directly. They can also be added manually by adding the package reference in "
 "the .csproj file located in the project root:"
 msgstr ""
+"`NuGet <https://www.nuget.org/>`_ Los paquetes pueden ser instalados y "
+"usados con Godot, como con cualquier proyecto. Muchos IDEs (como VS Code) "
+"pueden añadir paquetes directamente. También se pueden añadir manualmente "
+"añadiendo la referencia del paquete en el archivo .csproj ubicado en la raíz "
+"del proyecto:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:164
 msgid ""
 "Then using the dotnet command line to restore package, in the project root::"
 msgstr ""
+"Luego se utiliza la línea de comandos dotnet para restaurar el paquete, en "
+"la raíz del proyecto:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
@@ -17790,7 +17815,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/index.rst:2
 msgid "Assets workflow"
-msgstr ""
+msgstr "Flujo de trabajo de los Assets"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
@@ -18522,14 +18547,20 @@ msgid ""
 "artists the need to add reverb to the sound effects, reducing their size "
 "greatly and ensuring correct trimming. Say no to SFX with baked reverb!"
 msgstr ""
+"Godot 3+ tiene un increíble sistema de bus con efectos incorporados. Esto "
+"ahorra a los artistas de SFX la necesidad de agregar reverberación a los "
+"efectos de sonido, reduciendo su tamaño en gran medida y asegurando un  "
+"correcto recorte. ¡Diga no a SFX con reverberación preparada!"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:47
 msgid "As you can see above, sound effects become huge with reverb added."
 msgstr ""
+"Como puede ver arriba, los efectos de sonido se vuelven enormes cuando se "
+"agrega reverberación."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:50
 msgid "Trimming"
-msgstr ""
+msgstr "Trimming"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
 msgid ""
@@ -18538,14 +18569,21 @@ msgid ""
 "saving to a waveform, increase their size unnecessarily and add latency to "
 "the moment they are played back."
 msgstr ""
+"Un problema que ocurre a menudo es que las formas de onda se exportan con "
+"largos silencios al principio y al final. Estos son insertados por los DAW "
+"(estación de trabajo de audio digital) cuando se guardan en una forma de "
+"onda, aumentan su tamaño innecesariamente y agregan latencia al momento en "
+"que se reproducen."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:57
 msgid "Importing as WAV with the Trimming option enabled solves this."
 msgstr ""
+"La importación como WAV con la opción de Trimming activada resuelve este "
+"problema."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:61
 msgid "Looping"
-msgstr ""
+msgstr "Looping"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 msgid ""
@@ -18553,20 +18591,26 @@ msgid ""
 "can add loop points to wav files). This is useful for sound effects such as "
 "engines, machine guns, etc. Ping-pong looping is also supported."
 msgstr ""
+"Godot soporta looping en los samples (Herramientas como Sound Forge o "
+"Audition pueden añadir puntos de loop a los archivos wav). Esto es útil para "
+"efectos de sonido como motores, ametralladoras, etc. También soporta el Ping-"
+"pong looping."
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:68
 msgid ""
 "As an alternative, the import screen has a \"loop\" option that enables "
 "looping for the entire sample when importing."
 msgstr ""
+"Como alternativa, la pantalla de importación tiene una opción de \"repetir\" "
+"que permite la repetición de la totalidad de la muestra al importar."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
-msgstr ""
+msgstr "Importar traducciones"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
 msgid "Games and internationalization"
-msgstr ""
+msgstr "Juegos e internacionalización"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
 msgid ""
@@ -18574,6 +18618,10 @@ msgid ""
 "profits™, nowadays games are released in several languages. To solve this, "
 "internationalized text must be supported in any modern game engine."
 msgstr ""
+"El mundo está lleno de diferentes mercados y culturas y, para maximizar "
+"profits™, hoy en día los juegos se lanzan en varios idiomas. Para resolver "
+"esto, el texto internacionalizado debe ser soportado en cualquier motor de "
+"juegos moderno."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
 msgid ""
@@ -18582,6 +18630,12 @@ msgid ""
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
+"En las aplicaciones normales de escritorio o móviles, el texto "
+"internacionalizado se encuentra normalmente en archivos fuente (o archivos ."
+"po para asuntos de GNU). Sin embargo, los juegos pueden necesitar un volumen "
+"de texto mayor que las aplicaciones en diferentes órdenes de magnitud, por "
+"lo que deben ser compatibles con métodos eficaces para manejar una gran "
+"cantidad de texto multilingüe."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
 msgid ""
@@ -18592,6 +18646,12 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
+"Existen dos enfoques para generar juegos y aplicaciones multilingües. Ambos "
+"se basan en un sistema key:value. La primera es usar uno de los idiomas como "
+"clave (generalmente inglés), la segunda es usar un identificador específico. "
+"El primer enfoque es probablemente más fácil para el desarrollo si un juego "
+"se lanza primero en inglés y luego en otros idiomas, pero es una completa "
+"pesadilla si se trabaja con varios idiomas al mismo tiempo."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
 msgid ""
@@ -18600,14 +18660,18 @@ msgid ""
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
+"En general, los juegos utilizan el segundo método y se utiliza un ID único "
+"para cada cadena. Esto le permite revisar el texto mientras se está "
+"traduciendo a otros idiomas. El ID único puede ser un número, una cadena o "
+"una cadena con un número (de todos modos es sólo una cadena única)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
 msgid "Translators also usually prefer to work with spreadsheets."
-msgstr ""
+msgstr "Los traductores también suelen preferir trabajar con hojas de cálculo."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:36
 msgid "Translation format"
-msgstr ""
+msgstr "Formato de traducción"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid ""
@@ -18618,37 +18682,44 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
+"Para completar la imagen y permitir un soporte eficiente para las "
+"traducciones, Godot tiene un importador especial que puede leer archivos "
+"CSV. Todos los editores de hojas de cálculo (ya sea Libreoffice, Microsoft "
+"Office, Google Docs, etc.) pueden exportar a este formato, por lo que el "
+"único requisito es que los archivos tengan un arreglo especial. Los archivos "
+"CSV deben guardarse en codificación UTF-8 y estar formateados de la "
+"siguiente manera:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<lang1>"
-msgstr ""
+msgstr "<lang1>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<lang2>"
-msgstr ""
+msgstr "<lang2>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<langN>"
-msgstr ""
+msgstr "<langN>"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 msgid "KEY1"
-msgstr ""
+msgstr "KEY1"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:48
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
 msgid "string"
-msgstr ""
+msgstr "string"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 msgid "KEY2"
-msgstr ""
+msgstr "KEY2"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid "KEYN"
-msgstr ""
+msgstr "KEYN"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:55
 msgid ""
@@ -18657,84 +18728,92 @@ msgid ""
 "be unique and represent a string universally (they are usually in uppercase, "
 "to differentiate from other strings). Here's an example:"
 msgstr ""
+"Las etiquetas \"lang\" deben representar un lenguaje, que debe ser uno de "
+"los :ref:`locales válidos <doc_locales>` soportados por el motor. Las "
+"etiquetas \"KEY\" deben ser únicas y representar una cadena universalmente "
+"(normalmente están en mayúsculas, para diferenciarse de otras cadenas). Aquí "
+"hay un ejemplo:"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/tutorials/i18n/locales.rst:352
 msgid "id"
-msgstr ""
+msgstr "id"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/tutorials/i18n/locales.rst:178
 msgid "en"
-msgstr ""
+msgstr "en"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/tutorials/i18n/locales.rst:220
 msgid "es"
-msgstr ""
+msgstr "es"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 #: ../../docs/tutorials/i18n/locales.rst:372
 msgid "ja"
-msgstr ""
+msgstr "ja"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "GREET"
-msgstr ""
+msgstr "GREET"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "Hello, friend!"
-msgstr ""
+msgstr "Hello, friend!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "Hola, Amigo!"
-msgstr ""
+msgstr "Hola, Amigo!"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:63
 msgid "こんにちは"
-msgstr ""
+msgstr "こんにちは"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "ASK"
-msgstr ""
+msgstr "ASK"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "How are you?"
-msgstr ""
+msgstr "How are you?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "Cómo está?"
-msgstr ""
+msgstr "Cómo está?"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:65
 msgid "元気ですか"
-msgstr ""
+msgstr "元気ですか"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "BYE"
-msgstr ""
+msgstr "BYE"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "Good Bye"
-msgstr ""
+msgstr "Good Bye"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "Adiós"
-msgstr ""
+msgstr "Adiós"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:67
 msgid "さようなら"
-msgstr ""
+msgstr "さようなら"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:71
 msgid "CSV Importer"
-msgstr ""
+msgstr "Importador CSV"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:73
 msgid ""
 "Godot will treat CSV files as translations by default. It will import them "
 "and generate one or more compressed translation resource files next to it."
 msgstr ""
+"Godot tratará los archivos CSV como traducciones por defecto. Los importará "
+"y generará uno o más archivos de recursos de traducción comprimidos junto a "
+"ellos."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:76
 msgid ""
@@ -18742,55 +18821,70 @@ msgid ""
 "when the game runs, specified in project.godot (or the project settings). "
 "Godot allows loading and removing translations at runtime as well."
 msgstr ""
+"La importación también agregará la traducción a la lista de traducciones a "
+"cargar cuando se ejecute el juego, especificado en project.godot (o en los "
+"ajustes del proyecto). Godot también permite cargar y eliminar traducciones "
+"en tiempo de ejecución."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
 msgid "Importing 3D Scenes"
-msgstr ""
+msgstr "Importación de escenas 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
 msgid "Godot Scene Importer"
-msgstr ""
+msgstr "Importador de Escenas Godot"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
 msgid ""
 "When dealing with 3D assets, Godot has a flexible and configurable importer."
 msgstr ""
+"Cuando se trata de recursos 3D, Godot tiene un importador flexible y "
+"configurable."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:11
 msgid ""
 "Godot works with *scenes*. This means that the entire scene being worked on "
 "in your favorite 3D DCC will be transferred as close as possible."
 msgstr ""
+"Godot trabaja con *escenas*. Esto significa que toda la escena en la que se "
+"está trabajando en su DCC 3D favorito se transferirá lo más fielmente "
+"posible."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
 msgid "Godot supports the following 3D *scene file fomats*:"
-msgstr ""
+msgstr "Godot soporta los siguientes formatos de *archivo de escena 3D*:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
 msgid "DAE (Collada), which is currently the most mature workflow."
-msgstr ""
+msgstr "DAE (Collada), que es actualmente el workflow más maduro."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid ""
 "GLTF 2.0. Both text and binary formats are supported. Godot has full support "
 "for it, but the format is new and gaining traction."
 msgstr ""
+"GLTF 2.0. Se admiten tanto formatos de texto como binarios. Godot tiene todo "
+"el soporte para ello, pero el formato es nuevo y está ganando terreno."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""
 "OBJ (Wavefront) formats. It is also fully supported, but pretty limited (no "
 "support for pivots, skeletons, etc)."
 msgstr ""
+"Formatos OBJ (Wavefront). También está totalmente soportado, pero bastante "
+"limitado (sin soporte para pivotes, esqueletos, etc)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:20
 msgid ""
 "Just copy the scene file together with the texture to the project "
 "repository, and Godot will do a full import."
 msgstr ""
+"Simplemente copia el archivo de escena junto con la textura al repositorio "
+"del proyecto, y Godot hará una importación completa."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:23
 msgid "Why not FBX?"
-msgstr ""
+msgstr "¿Por qué no FBX?"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:25
 msgid ""
@@ -18799,12 +18893,19 @@ msgid ""
 "format requires the use of a closed library from Autodesk which is "
 "distributed with a more restrictive licensing terms than Godot."
 msgstr ""
+"La mayoría de los motores de juego utilizan el formato FBX para importar "
+"escenas 3D, que es definitivamente uno de los más estandarizados de la "
+"industria. Sin embargo, este formato requiere el uso de una librería cerrada "
+"de Autodesk que se distribuye con términos de licencia más restrictivos que "
+"Godot."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:30
 msgid ""
 "The plan is, sometime in the future, to offer a binary plug-in using "
 "GDNative."
 msgstr ""
+"El plan es, en algún momento en el futuro, ofrecer un plug-in binario usando "
+"GDNative."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:33
 msgid "Exporting DAE files from Maya and 3DS Max"
@@ -18818,6 +18919,11 @@ msgid ""
 "OpenCOLLADA-Tools>`__ plugins. They work well, although they are not always "
 "up-to date with the latest version of the software."
 msgstr ""
+"Autodesk agregó soporte integrado para collada a Maya y 3DS Max, pero está "
+"roto por defecto y no debería ser usado. La mejor manera de exportar este "
+"formato es usando los plugins `OpenCollada <https://github.com/KhronosGroup/"
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`__. Funcionan bien, aunque no siempre "
+"están actualizados con las últimas versiones del software."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:43
 msgid "Exporting DAE files from Blender"
@@ -18828,6 +18934,8 @@ msgid ""
 "Blender has built-in collada support too, but it's also broken and should "
 "not be used."
 msgstr ""
+"Blender también tiene integrado soporte para collada, pero igualmente está "
+"roto y no debe ser usado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:48
 msgid ""
@@ -18839,81 +18947,96 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
 msgid "Import workflows"
-msgstr ""
+msgstr "Flujos de trabajo de importación"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
 msgstr ""
+"El importador de escenas Godot permite diferentes flujos de trabajo con "
+"respecto a cómo se importan los datos. Dependiendo de muchas opciones, es "
+"posible importar una escena con:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:58
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
 msgstr ""
+"Materiales externos (por defecto): Donde cada material se guarda en un "
+"archivo de recursos. Se mantienen las modificaciones."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:59
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
 msgstr ""
+"Mallas externas: Donde cada malla se guarda en un archivo diferente. Muchos "
+"usuarios prefieren trabajar con mallas directamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
 msgstr ""
+"Animaciones externas: Permitir que las animaciones guardadas se modifiquen y "
+"combinen cuando cambien las fuentes."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:61
 msgid ""
 "External scenes: Save the root nodes of the imported scenes each as a "
 "separate scene."
 msgstr ""
+"Escenas externas: Guarda los nodos raíz de las escenas importadas, cada uno "
+"como una escena separada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:62
 msgid "Single Scene: A single scene file with everything built in."
-msgstr ""
+msgstr "Una sola escena: Un único archivo de escena con todo integrado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
 msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
 msgstr ""
+"Como los distintos desarrolladores tienen necesidades diferentes, este "
+"proceso de importación es altamente personalizable."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:69
 msgid "Import Options"
-msgstr ""
+msgstr "Opciones de Importación"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
 msgid "The importer has several options, which will be discussed below:"
-msgstr ""
+msgstr "El importador tiene varias opciones, que se analizarán más adelante:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
 msgid "Nodes:"
-msgstr ""
+msgstr "Nodos:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:79
 msgid "Root Type"
-msgstr ""
+msgstr "Tipos de Raíz"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:81
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
 msgstr ""
+"Por defecto, el tipo de nodo raíz en las escenas importadas es \"Spatial\", "
+"pero puede modificarse."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:84
 msgid "Root Name"
-msgstr ""
+msgstr "Nombre de la Raíz"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:86
 msgid "Allows setting a specific name to the generated root node."
-msgstr ""
+msgstr "Permite establecer un nombre específico para el nodo raíz generado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:89
 msgid "Custom Script"
-msgstr ""
+msgstr "Script Personalizado"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:91
 msgid ""
@@ -18921,10 +19044,13 @@ msgid ""
 "This is great for post processing, changing materials, doing funny stuff "
 "with the geometry etc."
 msgstr ""
+"Se puede proporcionar un script especial para procesar toda la escena "
+"después de la importación. Esto es ideal para post-procesamiento, cambio de "
+"materiales, hacer cosas divertidas con la geometría, etc."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid "Create a script that like this:"
-msgstr ""
+msgstr "Crea un script como este:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
 msgid ""
@@ -18932,13 +19058,16 @@ msgid ""
 "is actually the root node of the scene). The scene that will finally be used "
 "must be returned. It can be a different one."
 msgstr ""
+"La función de post-importación toma la escena importada como argumento (el "
+"parámetro es en realidad el nodo raíz de la escena). La escena que será "
+"utilizada debe ser devuelta. Puede ser una diferente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:130
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
 msgid "Storage"
-msgstr ""
+msgstr "Almacenamiento"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
 msgid ""
@@ -18946,26 +19075,33 @@ msgid ""
 "nodes below the root will each be a separate scene and instanced into the "
 "imported one."
 msgstr ""
+"Por defecto, Godot importa una sola escena. Esta opción permite especificar "
+"que los nodos debajo de la raíz serán cada uno una escena separada e "
+"instanciada en la importada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:117
 msgid ""
 "Of course, instancing such imported scenes in other places manually works "
 "too."
 msgstr ""
+"Por supuesto, instanciar estas escenas importadas en otros lados también "
+"funciona manualmente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
 msgid "Materials"
-msgstr ""
+msgstr "Materiales"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:124
 msgid "Location"
-msgstr ""
+msgstr "Localización"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:126
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
 msgstr ""
+"Godot soporta materiales en mallas o nodos. Por defecto, los materiales se "
+"colocarán en cada nodo."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:132
 msgid ""
@@ -18974,16 +19110,22 @@ msgid ""
 "because most 3D DCCs don't have the same material options as those present "
 "in Godot."
 msgstr ""
+"Los materiales pueden almacenarse dentro de la escena o en archivos "
+"externos. Por defecto, se almacenan en archivos externos, por lo que es "
+"posible editarlos. Esto se debe a que la mayoría de los DCC 3D no tienen las "
+"mismas opciones de materiales que las presentes en Godot."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:136
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
 msgstr ""
+"Cuando los materiales están integrados, se perderán cada vez que se "
+"modifique y se vuelva a importar la escena de origen."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:140
 msgid "Keep on Reimport"
-msgstr ""
+msgstr "Continuar con la reimportación"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:142
 msgid ""
@@ -18991,95 +19133,112 @@ msgid ""
 "edited ones and ignore the ones coming from the source scene. This option is "
 "only present if materials are saved as files."
 msgstr ""
+"Una vez que los materiales son editados para usar las características de "
+"Godot, el importador mantendrá los editados e ignorará los que vienen de la "
+"escena fuente. Esta opción sólo está presente si los materiales se guardan "
+"como archivos."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:147
 msgid "Compress"
-msgstr ""
+msgstr "Compresión"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:149
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
 msgstr ""
+"Hace que las mallas utilicen números menos precisos para múltiples aspectos "
+"de la malla con el fin de ahorrar espacio."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:162
 msgid "These are:"
-msgstr ""
+msgstr "Estos son:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:153
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
 msgstr ""
+"Matriz de Transformación (Ubicación, rotación y escala): flotante de 32 bits "
+"a entero con signo de 16 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
-msgstr ""
+msgstr "Vértices: Flotante de 32 bits a un entero con signo de 16 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:155
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "Normal: Flotante de 32 bits a un entero sin signo de 32 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:156
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "Tangentes: Flotante de 32 bits a un entero sin signo de 32 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr ""
+"Colores de vértices: Flotante de 32 bits a un entero sin signo de 32 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:158
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "UV: Flotante de 32 bits a un entero sin signo de 32 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:159
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
-msgstr ""
+msgstr "UV2: Flotante de 32 bits a un entero sin signo de 32 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr ""
+"Pesos de los vértices: Flotante de 32 bits a un entero sin signo de 16 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:161
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr ""
+"Huesos del armazón: Flotante de 32 bits a un entero sin signo de 16 bits."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:162
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
 msgstr ""
+"Índice del array: entero sin signo de 32 o 16 bits en función de cuántos "
+"elementos contiene."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
 msgid "Additional info:"
-msgstr ""
+msgstr "Información adicional:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:165
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr ""
+"UV2 = El segundo canal UV para texturas de detalle y texturas lightmap "
+"preparadas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
 msgstr ""
+"Índice de array = Un array de números que numeran cada elemento de los "
+"arrays anteriores; es decir, numeran los vértices y normales."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:168
 msgid ""
@@ -19089,14 +19248,20 @@ msgid ""
 "this mesh(s) may lead to gaps in geometry or vertices not being exactly "
 "where they should be."
 msgstr ""
+"En algunos casos, esto podría causar perdida de precisión, así que tal vez "
+"convenga deshabilitar esta opción. Por ejemplo, si importamos un modelo muy "
+"grande o varios modelos que a su vez cubren una gran área, el comprimir la "
+"importación de este(os) modelo(s) probablemente resultaría en "
+"discontinuidades en la geometría o en vértices movidos de donde deberían de "
+"estar."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:174
 msgid "Meshes"
-msgstr ""
+msgstr "Modelos"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
 msgid "Ensure Tangents"
-msgstr ""
+msgstr "Asegurar Tangentes"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:179
 msgid ""
@@ -19105,6 +19270,10 @@ msgid ""
 "source scene. Godot uses Mikktspace for this, but it's always better to have "
 "them generated in the exporter."
 msgstr ""
+"Si se van a utilizar texturas con normalmapping, las mallas deben tener "
+"arrays tangentes. Esta opción garantiza que se generen si no están presentes "
+"en la escena de origen. Godot usa Mikktspace para esto, pero siempre es "
+"mejor tenerlos generados en el exportador."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:187
 msgid ""
@@ -19112,26 +19281,33 @@ msgid ""
 "does not have much practical use unless one wants to build objects with them "
 "directly."
 msgstr ""
+"Las mallas se pueden almacenar en archivos separados (recursos) en lugar de "
+"integrados. Esto no tiene una gran utilidad a menos que uno quiera construir "
+"objetos con ellas directamente."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
 msgstr ""
+"Esta opción se ofrece para ayudar a aquellos que prefieren trabajar "
+"directamente con mallas en lugar de escenas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
 msgid "External Files"
-msgstr ""
+msgstr "Archivos Externos"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
 msgstr ""
+"Las mallas y los materiales generados se pueden almacenar opcionalmente en "
+"un subdirectorio con el nombre de la escena."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:200
 msgid "Animation Options"
-msgstr ""
+msgstr "Opciones de animación"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
 msgid ""
@@ -19140,10 +19316,15 @@ msgid ""
 "Others, such as 3DS Max or Maya, need many animations put into the same "
 "timeline or, at worst, put each animation in a separate file."
 msgstr ""
+"Godot proporciona muchas opciones con respecto a cómo se tratan los datos de "
+"animación. Algunos exportadores (como Blender), pueden generar muchas "
+"animaciones en un solo archivo. Otros, como 3DS Max o Maya, necesitan muchas "
+"animaciones en la misma línea de tiempo o, en el peor de los casos, poner "
+"cada animación en un archivo separado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:209
 msgid "Import of animations is enabled by default."
-msgstr ""
+msgstr "La importación de animaciones está activada de forma predeterminada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:212
 msgid "FPS"
@@ -19156,10 +19337,15 @@ msgid ""
 "specify the frames per second used to edit them. Failing to do this may "
 "result in minimal jitter."
 msgstr ""
+"La mayoría de los formatos de exportación 3D almacenan la línea de tiempo de "
+"la animación en segundos en lugar de fotogramas. Para garantizar que las "
+"animaciones se importan lo más fielmente posible, especifica los fotogramas "
+"por segundo utilizados para editarlas. Si no se hace esto, el resultado "
+"puede ser una fluctuación mínima."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:219
 msgid "Filter Script"
-msgstr ""
+msgstr "Filtro de Script"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:221
 msgid ""
@@ -19167,6 +19353,9 @@ msgid ""
 "which tracks from which animations should be kept. (@TODO this needs "
 "documentation)"
 msgstr ""
+"Es posible especificar un filtro de script en una sintaxis especial para "
+"decidir qué pistas de qué animaciones se deben mantener. (@TODO necesita "
+"documentación)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
 msgid ""
@@ -19174,10 +19363,13 @@ msgid ""
 "a file instead. This allows adding custom tracks to the animations and "
 "keeping them after a reimport."
 msgstr ""
+"Por defecto, las animaciones se guardan como integradas. En su lugar, es "
+"posible guardarlas en un archivo. Esto permite añadir pistas personalizadas "
+"a las animaciones y mantenerlas después de una reimportación."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
 msgid "Optimizer"
-msgstr ""
+msgstr "Optimizador"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:234
 msgid ""
@@ -19185,10 +19377,14 @@ msgid ""
 "the animation considerably. In general, this should always be turned on "
 "unless you suspect that an animation might be broken due to it being enabled."
 msgstr ""
+"Cuando se importan animaciones, se ejecuta un optimizador que reduce "
+"considerablemente el tamaño de la animación. En general, esto siempre debe "
+"estar activado, a menos que sospeche que una animación puede estar rota "
+"debido a que está habilitado."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
 msgid "Clips"
-msgstr ""
+msgstr "Clips"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
 msgid ""
@@ -19196,10 +19392,13 @@ msgid ""
 "clips. Specify from which frame to which frame each clip must be taken (and, "
 "of course, don't forget to specify the FPS option above)."
 msgstr ""
+"Es posible especificar varias animaciones de una misma línea de tiempo como "
+"clips. Especifica de qué fotograma debe tomarse cada clip (y, por supuesto, "
+"no olvides especificar la opción FPS de arriba)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
 msgid "Scene Inheritance"
-msgstr ""
+msgstr "Herencia de Escenas"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
 msgid ""
@@ -19208,6 +19407,10 @@ msgid ""
 "(source .dae,.gltf,.obj file re-exported from 3D modelling app), Godot will "
 "re-import the whole scene."
 msgstr ""
+"En algunos casos, es posible que prefieras hacer modificaciones en la escena "
+"importada. Por defecto, esto no es posible porque si el recurso de origen "
+"cambia (archivo.dae, .gltf, .obj re-exportado desde la aplicación de "
+"modelado 3D), Godot reimportará toda la escena."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:249
 msgid ""
@@ -19215,28 +19418,37 @@ msgid ""
 "Inheritance*. Try to open the imported scene and the following dialog will "
 "appear:"
 msgstr ""
+"Sin embargo, es posible hacer modificaciones locales utilizando la *Herencia "
+"de Escenas*. Intenta abrir la escena importada y aparecerá el siguiente "
+"cuadro de diálogo:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:254
 msgid "In inherited scenes, the only limitations for modifications are:"
 msgstr ""
+"En las escenas heredadas, las únicas limitaciones para las modificaciones "
+"son:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
 msgid "Nodes can't be removed (but can be added anywhere)."
 msgstr ""
+"Los nodos no pueden ser eliminados (pero pueden ser agregados en cualquier "
+"parte)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:257
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
 msgstr ""
+"Los Sub-Recursos no pueden ser editados (guárdalos externamente como se "
+"describe arriba para este caso)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
 msgid "Other than that, everything is allowed!"
-msgstr ""
+msgstr "Aparte de eso, ¡todo está permitido!"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:262
 msgid "Import Hints"
-msgstr ""
+msgstr "Consejos para la Importación"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:264
 msgid ""
@@ -19248,17 +19460,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
 msgid "Adding collision detection to objects:"
-msgstr ""
+msgstr "Añadiendo detección de colisiones a los objetos:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:267
 msgid "Setting objects as navigation meshes"
-msgstr ""
+msgstr "Configurar objetos como mallas de navegación"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)"
 msgstr ""
+"Eliminar nodos que no se usan en el motor del juego (como luces específicas "
+"usadas para modelar)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
 msgid ""
@@ -19266,32 +19480,43 @@ msgid ""
 "the names of the objects in your 3D modelling software. When imported, Godot "
 "will detect them and perform actions automatically:"
 msgstr ""
+"Para simplificar este flujo de trabajo, Godot ofrece algunos sufijos que se "
+"pueden añadir a los nombres de los objetos en su software de modelado 3D. "
+"Cuando se importan, Godot los detecta y realiza acciones automáticamente:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:275
 msgid "Remove nodes (-noimp)"
-msgstr ""
+msgstr "Eliminar nodos (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
 msgid ""
 "Node names that have this suffix will be removed at import time, no matter "
 "what their type is. They will not appear in the imported scene."
 msgstr ""
+"Los nombres de nodos que tengan este sufijo se eliminarán en el momento de "
+"la importación, independientemente de su tipo. No aparecerán en la escena "
+"importada."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
 msgid "Create collisions (-col, -colonly, -convcolonly)"
-msgstr ""
+msgstr "Crear colisiones (-col, -colonly, -convcolonly)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
 msgid ""
 "Option \"-col\" will work only for Mesh nodes. If it is detected, a child "
 "static collision node will be added, using the same geometry as the mesh."
 msgstr ""
+"La opción \"-col\" funcionará sólo para los nodos Mesh. Si se detecta, se "
+"añadirá un nodo hijo de colisión estática, utilizando la misma geometría que "
+"la malla."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:286
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
 msgstr ""
+"Sin embargo, a menudo se da el caso de que la geometría visual es demasiado "
+"compleja o irregular para las colisiones, que terminan por no funcionar bien."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:289
 msgid ""
@@ -19299,12 +19524,17 @@ msgid ""
 "upon import and create a :ref:`class_staticbody` collision instead. This "
 "helps the visual mesh and actual collision to be separated."
 msgstr ""
+"Para resolver esto, existe el modificador \"-colonly\", que eliminará la "
+"malla al importarla y creará una colisión :ref:`class_staticbody` en su "
+"lugar. Esto ayuda a separar la malla visual de la colisión real."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
 msgid ""
 "Option \"-convcolonly\" will create :ref:`class_convexpolygonshape` instead "
 "of :ref:`class_concavepolygonshape`."
 msgstr ""
+"La opción \"-convcolonly\" creará :ref:`class_convexpolygonshape` en lugar "
+"de :ref:`class_concavepolygonshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:295
 msgid ""
@@ -19313,22 +19543,26 @@ msgid ""
 "Collision node will have one of predefined shapes, depending on the "
 "Blender's empty draw type:"
 msgstr ""
+"La opción \"-colonly\" también se puede utilizar con los objetos vacíos de "
+"Blender. Al importarlo creará un :ref:`class_staticbody` con el nodo de "
+"colisión como hijo. El nodo de colisión tendrá una de las formas "
+"predefinidas, dependiendo del tipo de dibujo vacío del Blender:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:302
 msgid "Single arrow will create :ref:`class_rayshape`"
-msgstr ""
+msgstr "Flecha simple creará :ref:`class_rayshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:303
 msgid "Cube will create :ref:`class_boxshape`"
-msgstr ""
+msgstr "Cubo creará :ref:`class_boxshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:304
 msgid "Image will create :ref:`class_planeshape`"
-msgstr ""
+msgstr "Imagen creará :ref:`class_planeshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
 msgid "Sphere (and other non-listed) will create :ref:`class_sphereshape`"
-msgstr ""
+msgstr "Esfera (y otras no listadas) creará :ref:`class_sphereshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
 msgid ""
@@ -19336,24 +19570,30 @@ msgid ""
 "collision empties and set some distinct color for them in User Preferences / "
 "Themes / 3D View / Empty."
 msgstr ""
+"Para una mejor visibilidad en el editor de Blender, el usuario puede "
+"configurar la opción \"X-Ray\" en los vacíos de colisión y establecer un "
+"color distinto para ellos en Preferencias de Usuario / Temas / Vista 3D / "
+"Vacío."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:311
 msgid "Create navigatopm (-navmesh)"
-msgstr ""
+msgstr "Crear navigatopm (-navmesh)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
 msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
 msgstr ""
+"Un nodo de malla con este sufijo se convertirá en una malla de navegación. "
+"Se eliminará el nodo Mesh original."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:317
 msgid "Rigid Body (-rigid)"
-msgstr ""
+msgstr "Rigid Body (-rigid)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:319
 msgid "Creates a rigid body from this mesh."
-msgstr ""
+msgstr "Crea un rigid body a partir de esta malla."
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
@@ -19689,8 +19929,8 @@ msgid ""
 "flag, and to create a dedicated export template for automated export: "
 "``godot --path path/to/project --export \"pck\" game_name.pck``"
 msgstr ""
-"A menudo es útil combinar la bandera ``--export`` con la bandera ``--path``, "
-"y crear una plantilla de exportación dedicada a exportar de manera "
+"A menudo es útil combinar el flag ``--export`` con el flag ``--path``, y "
+"crear una plantilla de exportación dedicada a exportar de manera "
 "automatizada: ``godot --path path/to/project --export \"pck\" game_name.pck``"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
@@ -19983,6 +20223,9 @@ msgid ""
 "(godot.exe on windows, godot on the rest), zip the folder and send it to "
 "someone else. However, this is often not desired."
 msgstr ""
+"La forma más sencilla de distribuir un juego para PC es copiar los "
+"ejecutables (godot.exe en windows, godot en el resto), comprimir la carpeta "
+"y enviarla a otra persona. Sin embargo, esto a menudo no es recomendable."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_pc.rst:10
 msgid ""
@@ -20004,6 +20247,8 @@ msgid ""
 "Optionally, the files can be bundled inside the executable, though this does "
 "not always works properly."
 msgstr ""
+"Opcionalmente, los archivos se pueden agrupar dentro del ejecutable, aunque "
+"esto no siempre funciona correctamente."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_ios.rst:4
 msgid "Exporting for iOS"
@@ -20255,6 +20500,9 @@ msgid ""
 "trusted signature. Currently, Godot does not support signing of packages, so "
 "you need to use external tools to do so."
 msgstr ""
+"Sin embargo, si quieres instalar y ejecutar la aplicación, debes firmarla "
+"con una firma de seguridad. Actualmente, Godot no soporta la firma de "
+"paquetes, por lo que necesita utilizar herramientas externas para hacerlo."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
@@ -20266,57 +20514,63 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
-msgstr ""
+msgstr "Limitaciones en Xbox One"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
 msgid ""
 "As described in `UWP documentation <https://docs.microsoft.com/en-us/windows/"
 "uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
+"Como se describe en la `documentación UWP <https://docs.microsoft.com/en-us/"
+"windows/uwp/xbox-apps/system-resource-allocation>`__:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr ""
+msgstr "Enviado como una \"App\""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
 msgid "available memory is 1GB"
-msgstr ""
+msgstr "la memoria disponible es de 1 GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
 msgid "share of 2-4 CPU cores"
-msgstr ""
+msgstr "compartir de 2-4 núcleos de CPU"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr ""
+msgstr "acceso compartido a la potencia de la GPU (45%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
+"Enviado como un \"Juego\" (a través del `Programa de Creadores de Xbox Live "
+"<https://www.xbox.com/en-US/developers/creators-program>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
-msgstr ""
+msgstr "la memoria disponible es de 5 GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr ""
+msgstr "4 núcleos de CPU exclusivos y 2 núcleos de CPU compartidos"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr ""
+msgstr "acceso exclusivo a la potencia de la GPU (100%)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
 msgstr ""
+"Si se superan estas limitaciones de memoria, se producirán fallos de "
+"asignación y la aplicación se bloqueará."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
 msgid "Creating a signing certificate"
-msgstr ""
+msgstr "Creación de un certificado de firma"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:37
 msgid ""
@@ -20325,6 +20579,10 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
+"Esto requiere las herramientas ``MakeCert.exe`` y ``Pvk2Pfx.exe``, que "
+"vienen con el SDK de Windows. Si usas Visual Studio, puedes abrir uno de sus "
+"Developer Prompts, ya que viene con estas herramientas y pueden estar "
+"ubicadas en la ruta."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
 msgid ""
@@ -20332,28 +20590,37 @@ msgid ""
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
+"Puedes obtener instrucciones más detalladas en `Microsoft's documentation "
+"<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
+"aspx>`__."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr ""
+msgstr "Primero, ejecuta ``MakeCert`` para crear una clave privada:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
+"Donde dice ``publisherName`` coincide con el nombre del editor de su paquete "
+"y ``expirationDate`` está en el formato ``mm/dd/yyyy``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
 msgstr ""
+"A continuación, crea un archivo de Intercambio de Información Personal (."
+"pfx) usando ``Pvk2Pfx.exe``:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
 msgstr ""
+"Si no se especifica una contraseña con el argumento ``/po``, el PFX tendrá "
+"la misma contraseña que la clave privada."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
 msgid ""
@@ -20361,36 +20628,47 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
+"También tendrás que confiar en este certificado para poder instalar tu "
+"aplicación. Abre el Símbolo del sistema como Administrador y ejecuta el "
+"siguiente comando:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Signing the package"
-msgstr ""
+msgstr "Firma del paquete"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
 msgstr ""
+"Finalmente, utiliza ``SignTool.exe`` desde el SDK de Windows o Visual Studio:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"
-msgstr ""
+msgstr "Instalando el paquete"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
+"A partir de la Actualización Windows 10 Anniversary, es posible instalar "
+"paquetes simplemente haciendo doble clic en el archivo ``.appx`` desde el "
+"Explorador de Windows."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
 msgstr ""
+"También es posible instalarlo usando el cmdlet de PowerShell ``Add-"
+"AppxPackage``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
 msgstr ""
+"Si quieres actualizar tu aplicación ya instalada, debes actualizar el número "
+"de versión en el nuevo paquete o primero desinstalar el paquete anterior."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
@@ -20410,7 +20688,6 @@ msgid "Download the Android SDK"
 msgstr "Descargar el SDK de Android"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
-#, fuzzy
 msgid ""
 "Download and install the Android SDK from https://developer.android.com/"
 "studio/"
@@ -20446,16 +20723,23 @@ msgid ""
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
+"Android necesita un archivo de almacenamiento de claves de depuración para "
+"instalarlo en dispositivos y distribuir APKs no liberados. Si has usado el "
+"SDK antes y has construido proyectos, ant o eclipse probablemente generó uno "
+"para ti (en Linux y macOS, puedes encontrarlo en el directorio ``~/."
+"android``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose:"
 msgstr ""
+"Si no puede encontrar o generar uno, el comando keytool de JDK puede usarse "
+"para éste propósito:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid "Make sure you have adb"
-msgstr ""
+msgstr "Asegúrate de que tienes adb"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:38
 msgid ""
@@ -20464,40 +20748,49 @@ msgid ""
 "one (any) of the Android API levels for it to be installed in the SDK "
 "directory."
 msgstr ""
+"Android Debug Bridge (adb) es la herramienta de línea de comandos utilizada "
+"para comunicarse con dispositivos Android. Se instala con el SDK, pero es "
+"posible que necesites instalar uno (cualquiera) de los niveles de la API de "
+"Android para que se instale en el directorio del SDK."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
 msgid "Setting it up in Godot"
-msgstr ""
+msgstr "Instalándolo en Godot"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid ""
 "Enter the Editor Settings screen. This screens contains the editor settings "
 "for the user account in the computer (It's independent from the project)."
 msgstr ""
+"Acceda a la pantalla Ajustes del editor. Esta pantalla contiene la "
+"configuración del editor para la cuenta de usuario en la computadora (Es "
+"independiente del proyecto)."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
 msgid "Scroll down to the section where the Android settings are located:"
 msgstr ""
+"Desplázate hacia abajo hasta la sección donde se encuentra la configuración "
+"de Android:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
 msgid "In that screen, the path to 3 files needs to be set:"
-msgstr ""
+msgstr "En esta pantalla, se debe establecer la ruta a 3 archivos:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid "The *adb* executable (adb.exe on Windows)"
-msgstr ""
+msgstr "El ejecutable *adb* (adb.exe en Windows)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "The *jarsigner* executable (from JDK 6 or 8)"
-msgstr ""
+msgstr "El ejecutable *jarsigner* (desde JDK 6 u 8)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:59
 msgid "The debug *keystore*"
-msgstr ""
+msgstr "El depurador *keystore*"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr ""
+msgstr "Una vez configurado ¡todo está listo para exportar a Android!"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:4
 msgid "Exporting for the Web"
@@ -20513,10 +20806,17 @@ msgid ""
 "**iOS**, all browsers must be based on WebKit (i.e. Safari), so they will "
 "also not work."
 msgstr ""
+"La exportación a HTML5 permite publicar juegos hechos en Godot Engine en el "
+"navegador. Esto requiere soporte para las tecnologías recientes `WebAssembly "
+"<https://webassembly.org/>`__ y `WebGL 2.0 <https://www.khronos.org/webgl/"
+">`__ en el navegador del usuario. **Firefox** y **Chromium** (Chrome, Opera) "
+"son los navegadores compatibles más populares, **Safari** y **Edge** aún no "
+"funcionan. En **iOS**, todos los navegadores deben estar basados en WebKit "
+"(es decir, Safari), por lo que tampoco funcionarán."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid "Limitations"
-msgstr ""
+msgstr "Limitaciones"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:17
 msgid ""
@@ -20525,10 +20825,14 @@ msgid ""
 "list of limitations you should be aware of when porting a Godot game to the "
 "web."
 msgstr ""
+"Por razones de seguridad y privacidad, muchas de las funciones que funcionan "
+"sin esfuerzo en plataformas nativas son más complicadas en la plataforma "
+"web. A continuación hay una lista de limitaciones que debes tener en cuenta "
+"a la hora de portar un juego Godot a la web."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:22
 msgid "Exported ``.html`` file must not be reused"
-msgstr ""
+msgstr "El archivo exportado ``.html`` no debe ser reutilizado"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:24
 msgid ""
@@ -20536,10 +20840,13 @@ msgid ""
 "file** specifically for the given export options. It must not be reused in "
 "further exports."
 msgstr ""
+"Al exportar, varios marcadores de posición de texto se reemplazan en el "
+"**archivo HTML generado** específicamente para las opciones de exportación "
+"correspondientes. No debe ser reutilizado en otras exportaciones."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:29
 msgid "Using cookies for data persistence"
-msgstr ""
+msgstr "Uso de cookies para la persistencia de datos"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:31
 msgid ""
@@ -20548,6 +20855,11 @@ msgid ""
 "``iframe``, **third-party** cookies must also be enabled. Incognito/private "
 "browsing mode also prevents persistence."
 msgstr ""
+"Los usuarios deben **permitir cookies** (específicamente IndexedDB) si se "
+"desea la persistencia del sistema de archivos ``user://``. Cuando se juega a "
+"un juego presentado en un ``iframe``, también deben estar habilitadas las "
+"cookies de **terceros**. El modo de navegación de incógnito/privado también "
+"evita la persistencia."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:36
 msgid ""
@@ -20555,10 +20867,13 @@ msgid ""
 "``user://`` file system is persistent, but can give false positives in some "
 "cases."
 msgstr ""
+"El método ``OS.is_userfs_persistent()`` puede usarse para comprobar si el "
+"sistema de ficheros ``user://`` es persistente, pero puede dar falsos "
+"positivos en algunos casos."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:41
 msgid "Full screen and mouse capture"
-msgstr ""
+msgstr "Captura de pantalla completa y ratón"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:43
 msgid ""
@@ -20568,60 +20883,75 @@ msgid ""
 "done by entering full screen from within an input callback such as "
 "``_input`` or ``_unhandled_input``."
 msgstr ""
+"Los navegadores no permiten **ingresar a pantalla completa** arbitrariamente "
+"en ningún momento. Lo mismo ocurre con **capturar el cursor**. En su lugar, "
+"estas acciones tienen que ocurrir como respuesta a un evento de entrada de "
+"JavaScript. En Godot, esto se hace más fácilmente entrando a pantalla "
+"completa desde una llamada de entrada como ``_input`` o ``_unhandled_input``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:49
 msgid "For the same reason, the full screen project setting is ignored."
 msgstr ""
+"Por esta misma razón, se ignora la configuración del proyecto a pantalla "
+"completa."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:52
 msgid "HTTPClient"
-msgstr ""
+msgstr "HTTPClient"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:54
 msgid ""
 "The ``HTTPClient`` implementation for the HTML5 platform has several "
 "restrictions:"
 msgstr ""
+"La implementación de ``HTTPClient`` para la plataforma HTML5 tiene varias "
+"restricciones:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:57
 msgid "Accessing or changing the ``StreamPeer`` is not possible"
-msgstr ""
+msgstr "No es posible acceder o cambiar el ``StreamPeer``"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:58
 msgid "Blocking mode is not available"
-msgstr ""
+msgstr "El modo de bloqueo no está disponible"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:59
 msgid ""
 "Cannot progress more than once per frame, so polling in a loop will freeze"
 msgstr ""
+"No se puede progresar más de una vez por fotograma, por lo que el sondeo en "
+"un bucle se congelará"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:60
 msgid "No chunked responses"
-msgstr ""
+msgstr "No hay respuestas fragmentadas"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:61
 msgid "Host verification cannot be disabled"
-msgstr ""
+msgstr "La verificación del host no se puede deshabilitar"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:62
 msgid ""
 "Subject to `same-origin policy <https://developer.mozilla.org/en-US/docs/Web/"
 "Security/Same-origin_policy>`_"
 msgstr ""
+"Sujeto a la `política de mismo origen <https://developer.mozilla.org/en-US/"
+"docs/Web/Security/Same-origin_policy>`_"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:65
 msgid "Unimplemented functionality"
-msgstr ""
+msgstr "Funcionalidad no implementada"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:67
 msgid ""
 "The following functionality is currently unavailable on the HTML5 platform:"
 msgstr ""
+"La siguiente funcionalidad no está disponible actualmente en la plataforma "
+"HTML5:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:69
 msgid "Threads"
-msgstr ""
+msgstr "Hilos"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
@@ -20630,11 +20960,11 @@ msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
 msgid "Clipboard synchronisation between engine and operating system"
-msgstr ""
+msgstr "Sincronización del portapapeles entre el motor y el sistema operativo"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:72
 msgid "Networking other than ``HTTPClient``"
-msgstr ""
+msgstr "Redes distintas de ``HTTPClient``"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:74
 msgid ""
@@ -20643,10 +20973,14 @@ msgid ""
 "if functionality you're interested in has an issue yet. If not, open one to "
 "communicate your interest."
 msgstr ""
+"Compruebe la `lista de asuntos HTML5 abiertos en Github <https://github.com/"
+"godotengine/godot/issues?q=is:open+is:issue+label:platform:html5>`_ para ver "
+"si la funcionalidad que te interesa ya tiene un asunto. Si no, inicia uno "
+"para comunicar hacernos llegar tu interés."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:79
 msgid "Starting exported games from the local file system"
-msgstr ""
+msgstr "Inicio de juegos exportados desde el sistema de archivos local"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:81
 msgid ""
@@ -20654,6 +20988,9 @@ msgid ""
 "projects when **opened locally** per ``file://`` protocol. To get around "
 "this, use a local server."
 msgstr ""
+"Muchos navegadores, específicamente los basados en Chromium, no cargan "
+"proyectos exportados cuando se **abren localmente** según el protocolo "
+"``file://``. Para evitar esto, utiliza un servidor local."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:85
 msgid ""
@@ -20661,10 +20998,14 @@ msgid ""
 "with Python 2 or ``python -m http.server`` with Python 3 will serve the "
 "current working directory on ``http://localhost:8000``."
 msgstr ""
+"Python ofrece un método fácil para esto, usando ``python -m "
+"SimpleHTTPServer`` con Python 2 o ``python -m http.server`` con Python 3 "
+"servirá al entregar el directorio de trabajo actual en ``http://"
+"localhost:8000``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:90
 msgid "Serving the files"
-msgstr ""
+msgstr "Entrega de archivos"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:92
 msgid ""
@@ -20683,6 +21024,9 @@ msgid ""
 "servers and can be renamed to e.g. ``index.html`` at any time, its name is "
 "never depended on by default."
 msgstr ""
+"El archivo ``.html`` generado puede ser usado como ``DirectoryIndex`` en los "
+"servidores Apache y puede ser renombrado a e.g. ``index.html`` en cualquier "
+"momento, nunca dependerá de su nombre por defecto."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:100
 msgid ""
@@ -20707,6 +21051,14 @@ msgid ""
 "image. It is not used in the default HTML page, but is included for :ref:"
 "`custom HTML pages <doc_customizing_html5_shell>`."
 msgstr ""
+"Los otros archivos exportados se sirven tal cual, junto al archivo ``."
+"html``, sin cambios en los nombres. El archivo ``.wasm`` es un módulo "
+"binario de WebAssembly que implementa el motor. El archivo ``.pck`` es el "
+"paquete principal de Godot que contiene tu juego. El archivo ``.js`` "
+"contiene código de inicio y es usado por el archivo ``.html`` para acceder "
+"al motor. El archivo ``.png`` contiene la imagen de bienvenida al inicio. No "
+"se utiliza en la página HTML por defecto, pero se incluye para :ref:`páginas "
+"HTML personalizadas <doc_customizing_html5_shell>`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:113
 msgid ""
@@ -20714,6 +21066,9 @@ msgid ""
 "``application/octet-stream``. The ``.wasm`` file is delivered as "
 "``application/wasm``."
 msgstr ""
+"El archivo ``.pck`` es binario, normalmente se entrega con el MIME-type "
+"``application/octet-stream``. El archivo ``.wasm`` se entrega como "
+"``application/wasm``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:117
 msgid ""
@@ -20722,10 +21077,14 @@ msgid ""
 "WebAssembly module compresses particularly well, down to around a quarter of "
 "its original size with gzip compression."
 msgstr ""
+"Se recomienda entregar los archivos con compresión del lado del servidor "
+"especialmente para los archivos ``.pck`` y ``.wasm``, que suelen ser de gran "
+"tamaño. El módulo WebAssembly se comprime particularmente bien, hasta "
+"alrededor de un cuarto de su tamaño original con compresión gzip."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:123
 msgid "Export options"
-msgstr ""
+msgstr "Opciones de exportación"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:125
 msgid ""
@@ -20733,12 +21092,19 @@ msgid ""
 "*Stop scene* and *Play edited Scene* buttons in the editor to quickly open "
 "the game in the default browser for testing."
 msgstr ""
+"Si hay disponible una plantilla de exportación web ejecutable, aparece un "
+"botón entre los botones *Detener escena* y *Reproducir escena* en el editor "
+"para abrir rápidamente el juego en el navegador predeterminado para realizar "
+"pruebas."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:129
 msgid ""
 "If a path to a **Custom HTML shell** file is given, it will be used instead "
 "of the default HTML page. See :ref:`doc_customizing_html5_shell`."
 msgstr ""
+"Si se da una ruta a un archivo **HTML shell personalizado**, se utilizará en "
+"lugar de la página HTML predeterminada. Ver :ref:"
+"`doc_customizing_html5_shell`."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:132
 msgid ""
@@ -20746,6 +21112,9 @@ msgid ""
 "HTML page. This allows to, for example, load webfonts and third-party "
 "JavaScript APIs, include CSS, or run JavaScript code."
 msgstr ""
+"**Head Include** se agrega al elemento ``<head>`` de la página HTML "
+"generada. Esto permite, por ejemplo, cargar fuentes web y APIs JavaScript de "
+"terceros, incluir CSS o ejecutar código JavaScript."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:136
 msgid ""
@@ -20766,7 +21135,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:145
 msgid "Calling JavaScript from script"
-msgstr ""
+msgstr "Llamada a JavaScript desde script"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:147
 msgid ""
@@ -20787,28 +21156,32 @@ msgid ""
 "The value of the last JavaScript statement is converted to a GDScript value "
 "and returned by ``eval()`` under certain circumstances:"
 msgstr ""
+"El valor de la última sentencia JavaScript es convertido a un valor GDScript "
+"y devuelto por ``eval()`` bajo ciertas circunstancias:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:161
 msgid "JavaScript ``number`` is returned as GDScript :ref:`class_float`"
-msgstr ""
+msgstr "JavaScript ``number`` se devuelve como GDScript :ref:`class_float`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:162
 msgid "JavaScript ``boolean`` is returned as GDScript :ref:`class_bool`"
-msgstr ""
+msgstr "JavaScript ``boolean`` se devuelve como GDScript :ref:`class_bool`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:163
 msgid "JavaScript ``string`` is returned as GDScript :ref:`class_String`"
-msgstr ""
+msgstr "JavaScript ``string`` se devuelve como GDScript :ref:`class_String`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:164
 msgid ""
 "JavaScript ``ArrayBuffer``, ``TypedArray`` and ``DataView`` are returned as "
 "GDScript :ref:`class_PoolByteArray`"
 msgstr ""
+"JavaScript ``ArrayBuffer``, ``TypedArray`` y ``DataView`` se devuelven como "
+"GDScript :ref:`class_PoolByteArray`"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:173
 msgid "Any other JavaScript value is returned as ``null``."
-msgstr ""
+msgstr "Cualquier otro valor de JavaScript se devuelve como ``null``."
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:175
 msgid ""
@@ -20829,6 +21202,9 @@ msgid ""
 "specifies whether to execute the code in the global execution context, "
 "defaulting to ``false`` to prevent polluting the global namespace::"
 msgstr ""
+"El método ``eval`` también acepta un segundo argumento booleano opcional, "
+"que especifica si se debe ejecutar el código en el contexto de ejecución "
+"global, por defecto ``false`` para evitar contaminar el namespace global:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:4
 msgid "Customizing the Web export HTML page"
@@ -21584,15 +21960,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
-msgstr ""
+msgstr "Canvas layers"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr ""
+msgstr "Vistas y Canvas items"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
 msgid ""
@@ -21775,9 +22151,9 @@ msgid ""
 msgstr ""
 "Como se mencionó en el tutorial anterior, :ref:`doc_canvas_layers`, cada "
 "nodo CanvasItem (recuerda que los nodos basados en Node2D y Control usan "
-"CanvasItem como su raíz común) residirá en una *Canvas Layer*. Cada capa de "
-"lienzo tiene una transformación (translation, rotation, scale, etc.) a la "
-"que se puede acceder mediante :ref:`Transform2D <class_Transform2D>`."
+"CanvasItem como su raíz común) residirá en una *Canvas Layer*. Cada canvas "
+"layer tiene una transformación (translation, rotation, scale, etc.) a la que "
+"se puede acceder mediante :ref:`Transform2D <class_Transform2D>`."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:23
 msgid ""
@@ -21809,7 +22185,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:37
 msgid "Stretch transform"
-msgstr ""
+msgstr "Stretch transform"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:39
 msgid ""
@@ -21841,7 +22217,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:51
 msgid "Transform order"
-msgstr ""
+msgstr "Orden de Transform"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:53
 msgid ""
@@ -21854,7 +22230,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:59
 msgid "Transform functions"
-msgstr ""
+msgstr "Funciones de Transform"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:61
 msgid "Obtaining each transform can be achieved with the following functions:"
@@ -21928,7 +22304,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:70
 msgid "CanvasLayer+GlobalCanvas+Stretch"
-msgstr ""
+msgstr "CanvasLayer+GlobalCanvas+Stretch"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:70
 msgid ""
@@ -22765,7 +23141,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:4
 msgid "Particle Systems (2D)"
-msgstr ""
+msgstr "Sistemas de partículas (2D)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
 msgid ""
@@ -22773,6 +23149,10 @@ msgid ""
 "Particle systems are used to simulate complex physical effects such as "
 "sparks, fire, magic particles, smoke, mist, magic, etc."
 msgstr ""
+"Se proporciona un sistema de partículas simple (pero lo suficientemente "
+"flexible para la mayoría de los usos). Los sistemas de partículas se "
+"utilizan para simular efectos físicos complejos como chispas, fuego, "
+"partículas mágicas, humo, niebla, magia, etc."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
 msgid ""
@@ -22783,10 +23163,16 @@ msgid ""
 "creating a particle system means setting base physics parameters and then "
 "adding randomness to them."
 msgstr ""
+"La idea es que una \"partícula\" se emite a un intervalo fijo y con una vida "
+"útil fija. Durante su vida útil, cada partícula tendrá el mismo "
+"comportamiento básico. Lo que hace que cada partícula sea diferente y "
+"proporciona un aspecto más orgánico es la \"aleatoriedad\" asociada a cada "
+"parámetro. En esencia, crear un sistema de partículas significa establecer "
+"parámetros físicos básicos y luego agregarles aleatoriedad."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:21
 msgid "Particles2D"
-msgstr ""
+msgstr "Particles2D"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:23
 msgid ""
@@ -22799,7 +23185,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:30
 msgid "ParticlesMaterial"
-msgstr ""
+msgstr "ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:32
 msgid ""
@@ -38504,17 +38890,16 @@ msgid "Some examples of planes"
 msgstr "Algunos ejemplos de planos"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:225
-#, fuzzy
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
 "`convex <https://www.mathsisfun.com/definitions/convex.html>`__ polygon. For "
 "example, a rectangle, a trapezoid, a triangle, or just any polygon where no "
 "faces bend inwards."
 msgstr ""
-"Aquí hay un ejemplo simple de para qué sirven los planos. Imagina que tienes "
-"un polígono `convexo <http://www.mathsisfun.com/definitions/convex.html>`__. "
-"Por ejemplo, un rectángulo, un trapezoide, un triángulo o cualquier polígono "
-"en el que no haya caras que se plieguen hacia adentro."
+"He aquí un ejemplo sencillo de para qué sirven los planos. Imagina que "
+"tienes un polígono `convexo <https://www.mathsisfun.com/definitions/convex."
+"html>`__. Por ejemplo, un rectángulo, un trapezoide, un triángulo o "
+"cualquier polígono en el que no haya caras que se doblen hacia adentro."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:230
 msgid ""
@@ -38726,7 +39111,6 @@ msgstr ""
 "manera que un vector :math:`\\boldsymbol v` se convierte en"
 
 #: ../../docs/tutorials/math/rotations.rst:26
-#, fuzzy
 msgid ""
 "(If this isn't clear, you can verify this by looking at the figure: :math:`"
 "\\boldsymbol v` is rotated into :math:`\\boldsymbol v'` in the plane (so the "
@@ -38760,7 +39144,6 @@ msgstr ""
 "\\boldsymbol v` también es comprobado.)"
 
 #: ../../docs/tutorials/math/rotations.rst:28
-#, fuzzy
 msgid ""
 "Now, a practical way of representing operators is by using matrices (note "
 "that an `operator <https://en.wikipedia.org/wiki/Operator_(mathematics)>`_ "
@@ -38783,7 +39166,6 @@ msgstr ""
 "el producto cruzado :math:`\\boldsymbol e_z \\times` puede representarse como"
 
 #: ../../docs/tutorials/math/rotations.rst:38
-#, fuzzy
 msgid ""
 "(If you're curious how you can find the matrix representation of an "
 "operator :math:`A` in some set of real basis :math:`\\{ \\boldsymbol e_i\\}"
@@ -38826,7 +39208,6 @@ msgstr ""
 "finita :math:`\\theta \\equiv N \\delta \\theta`:"
 
 #: ../../docs/tutorials/math/rotations.rst:53
-#, fuzzy
 msgid ""
 "(If you're confused about seeing a matrix as an exponent: the meaning of an "
 "operator :math:`A` in `exponential map <https://en.wikipedia.org/wiki/"
@@ -38881,7 +39262,6 @@ msgstr ""
 "las rotaciones en 3D.)"
 
 #: ../../docs/tutorials/math/rotations.rst:77
-#, fuzzy
 msgid ""
 "If you ever tried to derive the rotation matrix corresponding to a :math:`"
 "\\theta` rotation around :math:`\\boldsymbol n`, you can appreciate the "
@@ -39309,7 +39689,6 @@ msgstr ""
 "\\sin\\theta`"
 
 #: ../../docs/tutorials/math/rotations.rst:169
-#, fuzzy
 msgid ""
 "Clearly, introduction of the unit imaginary number is enough to capture the "
 "behavior of 2D rotation matrices. As a footnote remark, while the number :"
@@ -39339,7 +39718,6 @@ msgstr ""
 "Lie SO(2) y U(1) <https://en.wikipedia.org/wiki/Circle_group#Isomorphisms>`_."
 
 #: ../../docs/tutorials/math/rotations.rst:174
-#, fuzzy
 msgid ""
 "Furthermore, in this representation, it is clear that you can do a \"smooth"
 "\" rotation by slowly changing :math:`\\theta`, which is the 2D analogue of "
@@ -39388,7 +39766,6 @@ msgstr ""
 "entendimiento/conocimiento de números complejos o de la fórmula de Euler."
 
 #: ../../docs/tutorials/math/rotations.rst:180
-#, fuzzy
 msgid ""
 "The introduction of the imaginary :math:`\\imath` is not black magic: it's "
 "just something that mimics :math:`2 \\times 2` matrix :math:`J_z`: :math:`1` "
@@ -39402,7 +39779,6 @@ msgstr ""
 "mostrada más arriba)."
 
 #: ../../docs/tutorials/math/rotations.rst:182
-#, fuzzy
 msgid ""
 "These are often sources of confusion in 3D: introducing a third dimension "
 "means we have new rotation axes (rotations around X and Y axes) giving rise "
@@ -39422,7 +39798,6 @@ msgstr ""
 "Algunos comentarios matemáticos (de nuevo, siéntete libre de omitirlos)"
 
 #: ../../docs/tutorials/math/rotations.rst:187
-#, fuzzy
 msgid ""
 "The fact that SO(3) has 3 generators is an accident: SO(:math:`n`) has :math:"
 "`n(n-1)/2` generators. Furthermore, the next step (after quaternions, which "
@@ -39500,7 +39875,6 @@ msgstr ""
 "gratificante de derivar esta matriz es entender el grupo de rotación SO(3)."
 
 #: ../../docs/tutorials/math/rotations.rst:200
-#, fuzzy
 msgid ""
 "SO(3) is the group of rotations in Euclidean 3D space (for which the "
 "`signature <https://en.wikipedia.org/wiki/Metric_signature>`_ is :math:`(+1,"
@@ -39552,7 +39926,6 @@ msgstr ""
 "`J_i` y derivar la complicada matriz de rotación :math:`3\\times 3 que es"
 
 #: ../../docs/tutorials/math/rotations.rst:242
-#, fuzzy
 msgid ""
 "(Hint: you can use the relation :math:`(\\boldsymbol n \\cdot \\boldsymbol "
 "J)^2 = \\boldsymbol n \\otimes \\boldsymbol n-I` to quickly evaluate the "
@@ -39645,7 +40018,6 @@ msgstr ""
 "isomórfico a Spin(3)), que a su vez es una doble cobertura de SO(3)."
 
 #: ../../docs/tutorials/math/rotations.rst:251
-#, fuzzy
 msgid ""
 "SU(2) is essentially the group of unitary rotations with determinant +1 "
 "(called Special Unitary groups) which preserve the norm of complex vectors "
@@ -39744,7 +40116,6 @@ msgstr ""
 "orientación objetivo (discutida más adelante en la sección SLERP)."
 
 #: ../../docs/tutorials/math/rotations.rst:260
-#, fuzzy
 msgid ""
 "Sure, we know that elements of SO(3) can be represented by using orthogonal "
 "matrices with determinant +1 (hence the name Special Orthogonal) such that :"
@@ -40857,7 +41228,6 @@ msgstr ""
 "a"
 
 #: ../../docs/tutorials/math/rotations.rst:477
-#, fuzzy
 msgid ""
 "when :math:`q_1 \\neq \\pm q_2`, where we introduced :math:`\\cos\\Omega "
 "\\equiv \\cos\\frac{\\varphi_1}{2}\\cos\\frac{\\varphi_2}{2} + \\sin"
@@ -43486,7 +43856,6 @@ msgid "SCREEN_TOUCH"
 msgstr "SCREEN_TOUCH"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:136
-#, fuzzy
 msgid ""
 "Contains multi-touch press/release information. (only available on mobile "
 "devices)"
@@ -43569,7 +43938,6 @@ msgstr ""
 "<class_InputEvent_is_pressed>` y :ref:`InputEvent <class_InputEvent>`."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:165
-#, fuzzy
 msgid ""
 "Alternatively, it may be desired to supply the game back with an action from "
 "the game code (a good example of this is detecting gestures). The Input "
@@ -52359,7 +52727,6 @@ msgid "About the Asset Library"
 msgstr "Acerca de la Biblioteca de Assets"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:6
-#, fuzzy
 msgid ""
 "The Godot Asset Library, otherwise known as the AssetLib, is a repository of "
 "user-submitted Godot addons, scripts, tools and other resources, "
@@ -52414,7 +52781,6 @@ msgstr ""
 "cuáles son las pautas de envío."
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:24
-#, fuzzy
 msgid ""
 "Please note that the AssetLib is relatively young - it may have various pain "
 "points, bugs and usability issues. As with all Godot projects, the code "
@@ -52451,7 +52817,6 @@ msgid "On the website"
 msgstr "En el sitio web"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:12
-#, fuzzy
 msgid ""
 "As mentioned before, you can access the web frontend of the AssetLib on "
 "`Godot's official website <https://godotengine.org/asset-library/asset>`_, "
@@ -58603,9 +58968,8 @@ msgid "That's it! Now you should be good to go :)"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:71
-#, fuzzy
 msgid "Qt Creator"
-msgstr "Iterador"
+msgstr "Qt Creator"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:74
 msgid "Importing the project"
@@ -59216,10 +59580,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:212
-#, fuzzy
 msgid ""
 "`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 
 #: ../../docs/development/cpp/core_types.rst:215
 msgid "NodePath"
@@ -61152,7 +61516,6 @@ msgstr ""
 "mercado de desarrollo de videojuegos!"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:32
-#, fuzzy
 msgid ""
 "**Get involved in the engine's development.** This can be by contributing "
 "code via pull requests, testing the development snapshots or directly the "
@@ -61161,12 +61524,13 @@ msgid ""
 "tutorials) and its translations. The following sections will cover each of "
 "those \"direct\" ways of contributing to the engine."
 msgstr ""
-"Esto puede ser contribuyendo código a través de un pull requests, probando "
-"los snapshots de desarrollo o directamente la rama git *master*, reportando "
-"bugs o sugiriendo mejoras en el issue tracker, mejorando la documentación "
-"oficial (tanto la referencia de la clase como los tutoriales). Las "
-"siguientes secciones cubrirán cada una de esas formas \"directas\" de "
-"contribuir al motor."
+"**Involucrate en el desarrollo del motor.** Esto puede ser contribuyendo "
+"código a través de pull requests, probando los snapshots de desarrollo o "
+"directamente en la rama git *master*, reportando bugs o sugiriendo mejoras "
+"en el issue tracker, mejorando la documentación oficial (tanto la referencia "
+"de la clase como los tutoriales) y sus traducciones.  Las siguientes "
+"secciones cubrirán cada una de esas formas \"directas\" de contribuir al "
+"motor."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:40
 msgid ""
@@ -62617,17 +62981,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:104
-#, fuzzy
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_, with attribution "
 "to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
-"Todos los contenidos de esta documentación están bajo la permisiva licencia "
-"Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/"
-"licenses/by/3.0/>`_), con atribución a \"Juan Linietsky, Ariel Manzul y a la "
-"comunidad del motor Godot\"."
+"Esta documentación y todas las páginas que contiene están publicadas bajo "
+"los términos de la licencia Creative Commons Attribution 3.0 (`CC-BY 3.0 "
+"<https://creativecommons.org/licenses/by/3.0/>`_), con atribución a \"Juan "
+"Linietsky, Ariel Manzur y la comunidad Godot\"."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid ""
@@ -63432,27 +63795,27 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:170
 msgid "<description></description>"
-msgstr ""
+msgstr "<description></description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:171
 msgid "<brief_description></brief_description>"
-msgstr ""
+msgstr "<brief_description></brief_description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:172
 msgid "<constant></constant>"
-msgstr ""
+msgstr "<constant></constant>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:173
 msgid "<method></method>"
-msgstr ""
+msgstr "<method></method>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:174
 msgid "<member></member>"
-msgstr ""
+msgstr "<member></member>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:175
 msgid "<signal></signal>"
-msgstr ""
+msgstr "<signal></signal>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:177
 msgid ""
@@ -63492,7 +63855,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "[Class]"
-msgstr ""
+msgstr "[Class]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "Link a class"
@@ -63595,7 +63958,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "[b] [/b]"
-msgstr ""
+msgstr "[b] [/b]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Bold"
@@ -63611,7 +63974,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "[i] [/i]"
-msgstr ""
+msgstr "[i] [/i]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Italic"
@@ -63627,7 +63990,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "[code] [/code]"
-msgstr ""
+msgstr "[code] [/code]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Monospace"
@@ -63643,7 +64006,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "[codeblock] [/codeblock]"
-msgstr ""
+msgstr "[codeblock] [/codeblock]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Multiline preformatted block"
@@ -63714,7 +64077,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q & A"
-msgstr ""
+msgstr "Preguntas y respuestas"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
@@ -63755,11 +64118,11 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:25
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
-msgstr ""
+msgstr "`IRC logs <https://godot.eska.me/irc-logs/>`_"
 
 #: ../../docs/community/channels.rst:28
 msgid "Other chats"
-msgstr ""
+msgstr "Otros chats"
 
 #: ../../docs/community/channels.rst:30
 msgid ""
@@ -63768,7 +64131,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:31
 msgid "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
-msgstr ""
+msgstr "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
 
 #: ../../docs/community/channels.rst:34
 msgid "Social networks"
@@ -63803,9 +64166,8 @@ msgid "Forum"
 msgstr "Foro"
 
 #: ../../docs/community/channels.rst:46
-#, fuzzy
 msgid "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
-msgstr "`Foro (godotdevelopers.org) <http://godotdevelopers.org/>`_"
+msgstr "`Foro (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
 
 #: ../../docs/community/tutorials.rst:6
 msgid ""

@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-06 09:15+0200\n"
-"PO-Revision-Date: 2018-06-05 19:37+0000\n"
-"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
+"PO-Revision-Date: 2018-06-13 11:52+0000\n"
+"Last-Translator: ekeimaja <ekeimaja@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -21,11 +21,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "Godot Dokumentaatio – *master* haara"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -33,6 +33,8 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"Tämä on epävakaan (master) haaran dokumentaatio. Etsitkö **vakaa** haaran "
+"dokumentaatiota? `Katso täältä <http://docs.godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -42,6 +44,11 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"Tervetuloa viralliseen Godot Enginen dokumentaatioon, joka on vapaa ja "
+"avoimen lähdekoodin yhteisön tekemä 2D ja 3D pelimoottori! Jos olet "
+"ensimmäistä kertaa täällä, suosittelemme sinua lukemaan :ref:`esittelysivun "
+"<doc_about_intro>` saadaksesi yleiskatsauksen tämän dokumentaation "
+"tarjontaan."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -49,6 +56,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"Alla ja sivupalkissa olevasta sisällysluettelosta pääset helposti selaamaan "
+"sinua kiinnostavia aiheita. Voit käyttää myös hakutoimintoa ylävasemmassa "
+"kulmassa."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -58,6 +68,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine avoimen lähdekoodin projekti, jota kehittää vapaaehtoisten "
+"yhteisö. Dokumentaatiosta vastaava ryhmä voi hyödyntää palautettasi apuna "
+"parantaakseen oppaita ja luokkakaaviota. Jos et ymmärrä jotakin, tai et "
+"löydä etsimääsi dokumentaatiosta, auta meitä tekemään dokumentaatiosta "
+"parempi kertomalla siitä meille!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -68,27 +83,33 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Lähetä ongelma tai pull request `GitHub repositoryyn <https://github.com/"
+"godotengine/godot-docs/issues>`_, auta meitä `kääntämällä dokumentaatio "
+"<https://hosted.weblate.org/engage/godot-engine/>`_ omalle kielellesi, tai "
+"keskustele kanssamme joko ``#documentation`` kanavalla `Discordissa <https://"
+"discord.gg/zH7NUgz>`_, tai ``#godotengine-doc`` IRC-kanavalla `irc.freenode."
+"net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "Päädokumentaatio tällä sivustolla on järjestelty seuraaviin lukuihin:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "Yleistä"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "Alkuun pääseminen"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "Tutoriaalit"
 
 #: ../../docs/index.rst:89
 msgid "Development"
-msgstr ""
+msgstr "Kehitys"
 
 #: ../../docs/index.rst:99 ../../docs/community/index.rst:2
 msgid "Community"
@@ -187,10 +208,9 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
-"Pelimoottori on monimutkainen työkalu, joten on vaikeaa esittää Godot "
-"muutamalla sanalla. Tässä on kuitenkin meidän tiedotus- ja suhdetoiminta "
-"(PR) esitys, jota voit vapaasti käyttää jos haluat kirjoittaa Godot "
-"Enginestä."
+"Pelimoottori on monimutkainen työkalu, joten on vaikeaa esitellä Godot "
+"muutamalla sanalla. Tässä on kuitenkin meidän PR-esitys, jota voit vapaasti "
+"käyttää jos tarvitset lyhyen kirjoitelman Godot Enginestä."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -392,11 +412,15 @@ msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
+"Godot on vapaata/avointa lähdekoodia `OSI-hyväksytyn <https://opensource.org/"
+"licenses/MIT>`_ MIT-lisenssin alaisuudessa."
 
 #: ../../docs/about/faq.rst:11
 msgid ""
 "This means it is free as in \"free speech\" as well as in \"free beer\"."
 msgstr ""
+"Tämä tarkoittaa sen olevan yhtä vapaa kuin \"sananvapaus\" tai yhtä ilmainen "
+"kuin \"ilmainen kalja\"."
 
 #: ../../docs/about/faq.rst:13
 msgid "In short:"
@@ -502,6 +526,8 @@ msgid ""
 "Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"Sekä 32-bittinen että 64-bittinen ovat tuettuja, joista ymmärrettävästi 64-"
+"bittinen on oletus."
 
 #: ../../docs/about/faq.rst:53
 msgid ""
@@ -519,7 +545,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:60
 msgid "Which languages are supported in Godot?"
-msgstr ""
+msgstr "Mitkä kielet ovat tuettuina Godotissa?"
 
 #: ../../docs/about/faq.rst:62
 msgid ""
@@ -527,6 +553,9 @@ msgid ""
 "C# and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Godotin virallisesti tukemia kieliä ovat GDScript, Visual Scripting, C# sekä "
+"C++. Katso jokaisen kielen alakategoria :ref:`skriptaus <toc-learn-"
+"scripting>` luvusta."
 
 #: ../../docs/about/faq.rst:65
 msgid ""
@@ -601,11 +630,11 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:108
 msgid "I don't believe you. What are the technical reasons for the item above?"
-msgstr ""
+msgstr "En usko teitä. Mitkä ovat tekniset syyt ylläolevaan kohtaan?"
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
-msgstr ""
+msgstr "Pääasialliset syyt ovat:"
 
 #: ../../docs/about/faq.rst:112
 msgid ""
@@ -977,11 +1006,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 msgid "Step by step"
-msgstr ""
+msgstr "Kohta kohdalta"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Tutustuminen Godotin editoriin"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1566,7 +1595,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid "To be continued..."
-msgstr ""
+msgstr "Jatkuu..."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:202
 msgid ""
@@ -2092,7 +2121,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "Button"
-msgstr ""
+msgstr "Painike"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid "The scene tree should look like this:"
@@ -7636,7 +7665,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:35
 msgid "AutoLoad"
-msgstr ""
+msgstr "Automaattilataus"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:37
 msgid ""
@@ -10593,7 +10622,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:407
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr ""
+msgstr "Kun (While)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:409
 msgid "while() loops are the same everywhere:"
@@ -11928,7 +11957,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr ""
+msgstr "Itse"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -12010,7 +12039,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
-msgstr ""
+msgstr "Iteraattori"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:341
 msgid ""
@@ -12068,7 +12097,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:378
 msgid "Switch"
-msgstr ""
+msgstr "Valinta (Switch)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:380
 msgid ""
@@ -12119,7 +12148,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid "Call"
-msgstr ""
+msgstr "Kutsu"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:415
 msgid ""
@@ -13973,7 +14002,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "Format"
-msgstr ""
+msgstr "Muoto"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:22
 msgid "1 Second of Audio"
@@ -15945,7 +15974,6 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
-#, fuzzy
 msgid "GDNative"
 msgstr "GDNative"
 
@@ -16948,7 +16976,7 @@ msgstr "Tyyppi"
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 msgid "Transform"
-msgstr ""
+msgstr "Muunna"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:66
 msgid "CanvasItem"
@@ -17551,7 +17579,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:410
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 msgid "Tools"
-msgstr ""
+msgstr "Työkalut"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:412
 msgid ""
@@ -17915,7 +17943,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:272
 msgid "Color"
-msgstr ""
+msgstr "Väri"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:274
 msgid "Used to change the color of the particles being emitted."
@@ -19735,7 +19763,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:329
 msgid "Depth"
-msgstr ""
+msgstr "Syvyys"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:331
 msgid ""
@@ -36937,7 +36965,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
-msgstr ""
+msgstr "Kielialue"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"
@@ -45624,7 +45652,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "Lisäosat"
 
 #: ../../docs/tutorials/plugins/editor/index.rst:2
 msgid "Editor plugins"
@@ -46974,7 +47002,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:121
 msgid "Testing"
-msgstr ""
+msgstr "Testaus"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:123
 msgid ""
@@ -48404,7 +48432,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr ""
+msgstr "Virheenkorjaus"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -48513,7 +48541,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:66
 msgid "Debugger"
-msgstr ""
+msgstr "Debuggeri"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:68
 msgid "Monitor the game running process."
@@ -51406,7 +51434,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Set"
-msgstr ""
+msgstr "Aseta"
 
 #: ../../docs/development/cpp/core_types.rst:146
 msgid "Map"

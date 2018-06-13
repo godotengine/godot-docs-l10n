@@ -3,9 +3,11 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alegruz <alegruz@khu.ac.kr>, 2018.
+# Ch <ccwpc@hanmail.net>, 2018.
 # geun-tak Jeong <beroberos@gmail.com>, 2018.
 # lptprjh <lptprjh@gmail.com>, 2018.
 # MJ Kim <mjnkim@protonmail.com>, 2018.
+# pgyage3263 <pgyage3263@naver.com>, 2018.
 # Sun Kim <perplexingsun@gmail.com>, 2018.
 # 박한얼 <volzhs@gmail.com>, 2018.
 # 송태섭 <xotjq237@gmail.com>, 2018.
@@ -15,7 +17,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-06 09:15+0200\n"
-"PO-Revision-Date: 2018-05-28 08:21+0000\n"
+"PO-Revision-Date: 2018-06-11 16:39+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -24,11 +26,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr "Godot 문서 – *master* 지점"
+msgstr "Godot 문서 – *master* 브랜치"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -36,8 +38,8 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
-"이 문서는 불안정한 (master) 지점입니다. **안정된** 지점의 문서를 찾으시나요? "
-"<http://docs.godotengine.org/en/stable>`_로 가세요."
+"이 문서는 불안정한 (master) 브랜치입니다. **안정된** 브랜치의 문서를 찾으시나"
+"요? <http://docs.godotengine.org/en/stable>`_로 가세요."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -47,9 +49,10 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
-"무료 오픈 소스이자 커뮤니티 참여로 개발되는 Godot Engine의 공식 문서에 오신 "
-"것을 환영합니다! 처음이시라면, 문서에 대한 전반적인 `소개 페이지"
-"<doc_about_intro>`를 읽어보시기를 권장합니다."
+"커뮤니티 기반으로 개발되는 자유 오픈소스 2D & 3D 게임 엔진 Godot Engine의 공"
+"식 문서에 오신 것을 환영합니다! 처음 오셨다면 :ref:`소개 페이지"
+"<doc_about_intro>`를 읽어보시고 저희 문서가 전반적으로 무엇을 제공하는지 파악"
+"해보시기를 권장해드립니다."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -57,8 +60,8 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
-"본문 아래 및 좌측 사이드바에 있는 목차, 또는 좌측 상단의 검색창을 통해 원하시"
-"는 문서를 열람하실 수 있습니다."
+"본문 아래 및 좌측 사이드바의 목차로부터 원하시는 문서를 열람하실 수 있습니"
+"다. 또한 좌측 상단의 검색창에서 검색도 가능합니다."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -69,9 +72,10 @@ msgid ""
 "the documentation better by letting us know!"
 msgstr ""
 "Godot Engine은 사용자들에 의해 자발적으로 개발되는 오픈 소스 프로젝트입니다. "
-"문서화 팀은 튜토리얼이나 클래스 참조 등을 향상시키는 데에 여러분의 의견을 받"
+"문서화 팀은 튜토리얼이나 클래스 참조 등을 향상시키기 위해 여러분의 의견을 받"
 "고 있습니다. 만약 튜토리얼 중에 이해가 가지 않는 부분이 있거나, 설명이 애매하"
-"거나 부족한 부분이 있다면 저희에게 의견을 제출해 주세요!"
+"거나 부족한 부분이 있다면 저희에게 알려주셔서 더 나은 문서를 만들 수 있게 도"
+"와주세요!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -82,11 +86,11 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"`깃허브 저장소 <https://github.com/godotengine/godot-docs/issues>`_에서 문제"
+"`깃허브 저장소 <https://github.com/godotengine/godot-docs/issues>`_에서 이슈"
 "를 제출하거나, `문서 현지화 <https://hosted.weblate.org/engage/godot-engine/"
 ">`_를 돕거나, `디스코드 <https://discord.gg/zH7NUgz>`_의 ``#documentation``이"
 "나 `irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
-"doc>`_의 ``#godotengine-doc``에서 우리들과 함께 논의를 할 수도 있습니다!"
+"doc>`_의 ``#godotengine-doc``에서 저희와 함께 논의를 할 수도 있습니다!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -204,8 +208,8 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
-"게임 엔진은 복잡한 도구인 만큼 Godot을 단 몇 마디로 소개하기는 어렵습니다. 그"
-"래도 우리는 다음과 같은 홍보 문구를 씁니다. Godot Engine을 소개하는 짧은 글"
+"게임 엔진은 복잡한 도구인 만큼 Godot만을 단 몇 마디로 소개하기는 어렵습니다. "
+"그래도 우리는 다음과 같은 홍보 문구를 씁니다. Godot Engine을 소개하는 짧은 글"
 "이 필요하다면 이 내용을 자유롭게 가져다 쓰셔도 됩니다."
 
 #: ../../docs/about/introduction.rst:27
@@ -217,12 +221,12 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows) as "
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
-"Godot Engine은 통합된 인터페이스로 2D 및 3D 게임을 만들 수 있도록 많은 기능"
-"을 갖춘 크로스플랫폼 게임 엔진입니다. 이 엔진은 사용자가 일반적인 기능을 처음"
-"부터 구축할 필요 없이 게임을 만드는 데 집중할 수 있도록 종합적인 도구들을 제"
-"공합니다. 만든 게임은 클릭 한 번으로 주요 데스크톱 플랫폼(리눅스, 맥OS, 윈도"
-"우)은 물론 모바일 (안드로이드, iOS) 및 웹 기반 (HTML 5) 플랫폼으로 내보낼 수 "
-"있습니다."
+"Godot Engine은 통일된 하나의 인터페이스 안에서 2D 및 3D 게임을 만들 수 있는 "
+"여러 기능으로 가득 찬 크로스 플랫폼 게임 엔진입니다. 이 엔진은 사용자가 일반"
+"적인 기능을 처음부터 구축할 필요 없이 게임을 만드는 데 집중할 수 있도록 종합"
+"적인 도구들을 제공합니다. 만든 게임은 클릭 한 번으로 주요 데스크톱 플랫폼(리"
+"눅스, 맥OS, 윈도우)은 물론 모바일 (안드로이드, iOS) 및 웹 기반 (HTML 5) 플랫"
+"폼으로 내보낼 수 있습니다."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -531,7 +535,6 @@ msgstr ""
 "64비트 바이너리가 기본이지만 해당되는 곳에는 32비트와 64비트 모두 지원합니다."
 
 #: ../../docs/about/faq.rst:53
-#, fuzzy
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi. There is also some unofficial "
@@ -790,15 +793,14 @@ msgid "Why is FBX not supported for import?"
 msgstr "왜 FBX 가져오기를 지원하지 않나요?"
 
 #: ../../docs/about/faq.rst:154
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
-"FBX SDK는 `라이선스가 제한적 <http://www.blender.org/bf/Autodesk_FBX_License."
-"rtf>`_이기 때문에, Godot의 `개방된 라이선스 <http://opensource.org/licenses/"
-"MIT>`_와 호환되지 않습니다."
+"FBX SDK는 `제한적인 라이센스를 갖고 있기 때문에 <http://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf>`, Godot의 `오픈 라이선스 <http://opensource.org/"
+"licenses/MIT>`_와 호환되지 않습니다."
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -2445,6 +2447,8 @@ msgid ""
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
+"모든 C++버전을 사용할 수 있으며, 내부 C API Bridge를 사용하여 생성된 공유 라"
+"이브러리의 컴파일러 브랜드와 버전을 완벽하게 혼합할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:85
 msgid ""
@@ -2453,16 +2457,22 @@ msgid ""
 "Visual Script. However the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
+"이 언어는 훌륭한 성능을 가지며, GDScript또는 VisualScript을 통해 다른 부분을 "
+"작성할 수 있으므로 게임 전체에서 사용할 필요는 없습니다. 그러나 이 API는 명확"
+"하고 사용하기 쉽습니다. 이 API의 대부분은 Godot의 실제 C++API와 유사하기 때문"
+"이죠."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
+"GDNative 인터페이스를 통해 더 많은 언어를 사용할 수 있지만, 이 인터페이스에 "
+"대한 공식적인 지원은 없습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:94
 msgid "Scripting a scene"
-msgstr ""
+msgstr "씬 스크립팅"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid ""
@@ -2470,18 +2480,21 @@ msgid ""
 "button and a label, where pressing the button will update the label. This "
 "will demonstrate:"
 msgstr ""
+"본 튜토리얼의 나머지 부분에서는 버튼과 레이블로 구성된 GUI장면을 설정합니다. "
+"여기서 버튼을 누르면 라벨이 업데이트됩니다. 이를 통해 다음을 증명할 수 있습니"
+"다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid "Writing a script and attaching it to a node."
-msgstr ""
+msgstr "스크립트를 작성하여 노드에 연결합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:101
 msgid "Hooking up UI elements via signals."
-msgstr ""
+msgstr "신호를 통해 UI요소들을 후크 하는 중입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:102
 msgid "Writing a script that can access other nodes in the scene."
-msgstr ""
+msgstr "씬(scene)의 다른 노드에 접근 할 수 있는 스크립트를 작성하는 중입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:104
 msgid ""
@@ -2490,27 +2503,32 @@ msgid ""
 "short, so it will not take more than a few minutes to get an overview of the "
 "concepts."
 msgstr ""
+"계속하기 전에 :ref:`doc_gdscript`레퍼런스를 반드시 읽어 보시기 바랍니다. 이 "
+"언어는 간단하게 설계되었고, 참조 문헌(reference)이 짧기 때문에 개념을 파악하"
+"는 데 몇분 정도 밖에 걸리지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:80
 #: ../../docs/tutorials/animation/introduction_2d.rst:113
 msgid "Scene setup"
-msgstr ""
+msgstr "씬(Scene) 설정"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:111
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
+"씬(Scene) 탭에서 액세스 하는 \"하위 노드 추가\"대화 상자를 사용하여(Ctrl+A), "
+"다음 노드로 계층을 생성합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:114
 msgid "Panel"
-msgstr ""
+msgstr "패널"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:116
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
-msgstr ""
+msgstr "라벨"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "Button"
@@ -2518,39 +2536,47 @@ msgstr "버튼"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid "The scene tree should look like this:"
-msgstr ""
+msgstr "씬(Scene)트리는 다음과 같아야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:123
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
+"2D편집기를 사용하여 Button 및 Label을 아래 이미지와 같이 배치하고 크기를 조정"
+"합니다. Inspector탭에서 텍스트를 설정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:128
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr ""
+msgstr "마지막으로,\"sayhello.tscn\"와 같은 이름으로 씬(Scene)을 저장합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:133
 msgid "Adding a script"
-msgstr ""
+msgstr "스크립트 추가"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:135
 msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
+"패널 노드에서 마우스 오른쪽 버튼을 클릭한 다음 상황에 맞는 메뉴에서 \"스크립"
+"트 첨부\"를 선택합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:140
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
+"스크립트 생성 대화 상자가 나타날겁니다. 이 대화 상자에서 스크립트의 언어, 클"
+"래스 이름 및 기타 관련 옵션을 설정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:143
 msgid ""
 "In GDScript the file itself represents the class, so the class name field is "
 "not editable."
 msgstr ""
+"GDScript에서 파일 자체는 클래스를 나타내므로 클래스 이름 필드는 편집할 수 없"
+"습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid ""
@@ -2558,10 +2584,13 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
+"스크립트를 연결할 노드는 패널이므로 상속받는 위치는 \"Panel\"로 자동으로 채워"
+"집니다. 스크립트의 목표가 패널 노드의 기능을 확장하는 것이기 때문에, 이것이 "
+"우리가 원하는 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid "Finally, enter a path name for the script and select Create:"
-msgstr ""
+msgstr "마지막으로 스크립트 경로 이름을 입력하고 Create(생성)을 선택합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:154
 msgid ""
@@ -2569,6 +2598,9 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
+"그런 다음 스크립트가 생성되어 노드에 추가됩니다. 이 아이콘은 씬(scene)탭의 노"
+"드 옆에 있는 \"스크립트 열기\"아이콘뿐만 아니라 검사자 아래의 스크립트 속성에"
+"서도 볼 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:160
 msgid ""
@@ -2576,6 +2608,8 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor "
 "where a default template will be included:"
 msgstr ""
+"스크립트를 편집하려면 위 이미지에 강조 표시된 두 버튼 중 하나를 선택합니다. "
+"그러면 기본 템플릿이 포함된 스크립트 편집기로 이동할겁니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:165
 msgid ""
@@ -2583,10 +2617,13 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
+"안에는 많은 내용이 있지 않습니다. ``_ready()`` 함수는 노드와 모든 자식들이 "
+"active scene으로 들어갈 때 호출됩니다. **참고:** ``_ready()``는 생성자가 아닙"
+"니다. 생성자는``_init()`` 대신합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:170
 msgid "The role of the script"
-msgstr ""
+msgstr "스크립트의 역할"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:172
 msgid ""
@@ -2595,10 +2632,13 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
+"스크립트는 노드에 동작을 추가합니다. 노드가 작동하는 방식뿐만 아니라 하위 노"
+"드, 상위 노드, 형제 노드 등과 상호 작용하는 방식을 제어하는 데 사용됩니다. 스"
+"크립트는 노드에게, 그 노드의 함수들을 상속해줍니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:180
 msgid "Handling a signal"
-msgstr ""
+msgstr "시그널 처리"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:182
 msgid ""
@@ -2607,6 +2647,10 @@ msgid ""
 "mostly in GUI nodes, although other nodes have them too, and you can even "
 "define custom signals in your own scripts."
 msgstr ""
+"시그널은 특정한 종류의 작업이 발생할 때 \"방출\" 되며 스크립트 인스턴스의 모"
+"든 기능에 연결될 수 있습니다. 시그널은 대부분 GUI노드에서 사용되며, 다른 노드"
+"에도 시그널이 있고 사용자 스크립트에서 사용자 지정 시그널을 정의할 수도 있습"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:187
 msgid ""
@@ -2615,18 +2659,27 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
+"이 단계에서 우리는 \"pressed\" 시그널을 사용자 지정 기능에 연결할 겁니다. 먼"
+"저 연결 형식을 지정한 후에 두 번째로 사용자 지정 기능을 정의합니다. Godot에서"
+"는 연결하기 위한 2가지 방법을 제공합니다: 에디터에서 제공하는 시각적 인터페이"
+"스나 코드를 통해 사용자 지정 기능에 연결할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:192
 msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
+"이 튜토리얼 시리즈의 나머지 부분에서는 코드 메서드를 사용하겠습니다만, 나중"
+"에 참고하기 위한 에디터 인터페이스가 어떻게 작동하는지에 대해서는 설명하겠습"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:195
 msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
 msgstr ""
+"씬 트리에서 버튼 노드를 고르고 \"노드\" 탭을 선택하세요. 그런 후, \"시그널"
+"\"이 선택되어 있는지 확인하세요."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:200
 msgid ""
@@ -2634,6 +2687,8 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
+"\"BaseButton\" 밑에 있는 \"pressed()\"를 고르고 오른쪽 아래 \"연결하기...\"버"
+"튼을 누르신다면, 연결 생성 다이얼로그가 열릴겁니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
 msgid ""
@@ -2641,6 +2696,8 @@ msgid ""
 "node which implements the method you want to trigger (represented here as a "
 "NodePath) and the name of the method to trigger."
 msgstr ""
+"왼쪽 아래에 당신이 연결을 만드는데 필요한 핵심 사항이 있습니다:사용하길 원하"
+"는 메서드를 실행할 (NodePath로 정의된) 하나의 노드와 그 메서드의 이름입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:209
 msgid ""
@@ -2649,6 +2706,10 @@ msgid ""
 "select a node, the NodePath at the bottom will automatically update to point "
 "a relative path from the emitting node to the selected node."
 msgstr ""
+"왼쪽 위 구역은 씬에 있는 노드들을 보여주며 방출하는 노드 이름은 빨갛게 표시됩"
+"니다. \"Panel\" 노드를 선택해봅시다. 노드를 선택하면, 밑에 NodePath가 자동으"
+"로 방출하는 노드부터 선택된 노드까지의 경로를 가리키기 위해 자동으로 업데이트"
+"됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:214
 msgid ""
@@ -2657,6 +2718,10 @@ msgid ""
 "do have the \"Make Function\" check button checked, then the editor will "
 "generate the function for you before setting up the connection."
 msgstr ""
+"기본적으로, 메서드의 이름은 방출하는 노드의 이름에 포함되어서 "
+"\"_on_[EmitterNode]_[signal_name]\"으로 표시됩니다 (이 경우에는 \"Button\"이"
+"죠). 만일 \"함수 만들기\" 버튼이 체크되어 있다면, 에디터는 연결을 설정하기 전"
+"에 함수를 생성할 겁니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
 msgid ""
@@ -2664,6 +2729,8 @@ msgid ""
 "this is a scripting tutorial, so for the sake of learning, let's dive in to "
 "the manual process!"
 msgstr ""
+"그리고 이것으로 시각 인터페이스를 사용하는 법에 관한 강좌를 마칩니다. 하지"
+"만, 이것이 스크립팅 튜토리얼이므로, 학습을 위해 수동 프로세스를 알아봅시다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
@@ -2672,12 +2739,18 @@ msgid ""
 "This function uses paths to fetch nodes anywhere in the scene, relative to "
 "the node that owns the script."
 msgstr ""
+"이것에 도달하기 위해서는, 우리는 아마도 가장 많이 Godot 프로그래머가 사용하"
+"는 기능을 소개할 겁니다: :ref:`Node.get_node() <class_Node_get_node>`. 이 기"
+"능은 스크립트를 소유한 노드라면 씬 내 어느 곳에서라도 경로를 사용해서 노드를 "
+"가져옵니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:228
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
+"편의성을 위해, ``extend Panel`` 아래에 있는 모든 것을 지우세요. 당신이 나머지"
+"를 수동으로 채울 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:231
 msgid ""
@@ -2685,6 +2758,8 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
+"버튼과 라벨은 스크립트가 붙어있는 패널의 자식이기 때문에, 밑의 ``_ready()`` "
+"함수를 따라 타이핑해서 버튼을 가져올 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:248
 msgid "Next, write a function which will be called when the button is pressed:"
@@ -51375,9 +51450,8 @@ msgid "That's it! Now you should be good to go :)"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:71
-#, fuzzy
 msgid "Qt Creator"
-msgstr "반복자"
+msgstr "Qt Creator"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:74
 msgid "Importing the project"
@@ -55312,17 +55386,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:104
-#, fuzzy
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_, with attribution "
 "to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
-"이 문서의 모든 내용은 크리에이티브 커먼스 저작자 표시 3.0 (`CC-BY 3.0 "
-"<https://creativecommons.org/licenses/by/3.0/>`_) 라이선스로 사용할 수 있고, "
-"저작자 표시는 \"Juan Linietsky, Ariel Manzur, Godot Engine 커뮤니티\"로 하면 "
-"됩니다."
+"이 문서의 모든 내용은 `크리에이티브 커먼스 저작자 표시 3.0 라이선스 (`CC-BY "
+"3.0 <https://creativecommons.org/licenses/by/3.0/>`_로 사용할 수 있고, 저작"
+"자 표시는 \"Juan Linietsky, Ariel Manzur, Godot Engine 커뮤니티\"로 하면 됩니"
+"다."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid ""
