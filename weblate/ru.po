@@ -2,12 +2,14 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Andrii Doroshenko <xrayez@gmail.com>, 2018.
 # batonbl4 <batonbl4@yandex.ru>, 2018.
 # B10nicMachine <shumik1337@gmail.com>, 2018.
 # Chaosus89 <chaosus89@gmail.com>, 2018.
 # Constantin Moskvitin <cmoskvitin@gmail.com>, 2018.
 # Denis <miraakdovahkiin45@gmail.com>, 2018.
 # Denis K <dekasoftware@mail.ru>, 2018.
+# Dmitry Derbin <dimderbin@mail.ru>, 2018.
 # Forest Swamp <sample1989@mail.ru>, 2018.
 # gl <glorphindale+dev@gmail.com>, 2018.
 # ijet <my-ijet@mail.ru>, 2018.
@@ -26,8 +28,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-13 14:08+0200\n"
-"PO-Revision-Date: 2018-06-13 11:53+0000\n"
-"Last-Translator: Forest Swamp <sample1989@mail.ru>\n"
+"PO-Revision-Date: 2018-06-18 06:42+0000\n"
+"Last-Translator: ijet <my-ijet@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -109,7 +111,7 @@ msgstr ""
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr "Основная документация на сайте собрана в следующих разделах:"
+msgstr "Основная документация для сайта собрана в следующих разделах:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
@@ -452,8 +454,8 @@ msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
 msgstr ""
-"Это означает, что вы можете использовать его для любой игры или приложения, "
-"коммерческого или некоммерческого, в любой индустрии"
+"Это значит, что Вы можете использовать его в любой игре или приложении, в "
+"любой сфере, коммерческой и некоммерческой"
 
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
@@ -526,7 +528,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr "MacOS X"
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
@@ -706,7 +708,7 @@ msgstr "Я вам не верю. Каковы технические причи�
 
 #: ../../docs/about/faq.rst:110
 msgid "The main reasons are:"
-msgstr "Главные причины это:"
+msgstr "Приведём главные причины:"
 
 #: ../../docs/about/faq.rst:112
 msgid ""
@@ -731,7 +733,7 @@ msgid ""
 msgstr ""
 "Ужасный интерфейс для привязки к C++ приводит к большому количеству кода, "
 "ошибкам, узким местам и общей неэффективности (Lua, Python, Squirrel, JS и т."
-"д.)"
+"д)."
 
 #: ../../docs/about/faq.rst:119
 msgid ""
@@ -740,7 +742,7 @@ msgid ""
 msgstr ""
 "Отсутствие родных типов (vector3, matrix4, и т.д.), приводило к серьёзному "
 "уменьшению производительности когда использовались собственные типы (Lua, "
-"Python, Squirrel, JS, AS, и т.д.)."
+"Python, Squirrel, JS, AS и т.д.)."
 
 #: ../../docs/about/faq.rst:122
 msgid ""
@@ -755,8 +757,8 @@ msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"Сложно интегрировать с редактором для обеспечения автозавершения кода, "
-"редактирования в реальном времени и т.д. (все вместе). Это очень хорошо "
+"Сложная интеграция с редактором кода для обеспечения его завершенности, "
+"редактирование в реальном времени и т.д. (все они). Это очень хорошо "
 "поддерживает GDScript."
 
 #: ../../docs/about/faq.rst:128
@@ -893,10 +895,10 @@ msgid ""
 "anyone else interested into adding those libraries as a module and ship your "
 "game using them, as either open or closed source. Everything is allowed."
 msgstr ""
-"Однако, поскольку это свободное ПО с модульной архитектурой, ничто не мешает "
-"вам или кому-то другому добавить эти библиотеки как модуль и распространять "
-"вашу игру хоть со свободной, хоть с закрытой лицензией. Возможности не "
-"ограничены."
+"Тем не менее, поскольку он является открытым и модульным, ничто не мешает "
+"вам или кому-либо еще заинтересоваться добавлением этих библиотек в качестве "
+"модуля и загрузить вашу игру используя его, либо в качестве открытого или "
+"закрытого источника. Все позволено."
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -911,8 +913,8 @@ msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
 msgstr ""
-"Как нужно создавать игровые ресурсы для поддержки различных разрешений "
-"экрана и соотношений сторон?"
+"Как ассеты должны быть созданы, чтобы поддерживать множество разрешений и "
+"соотношений сторон экрана?"
 
 #: ../../docs/about/faq.rst:186
 msgid ""
@@ -924,14 +926,14 @@ msgid ""
 "Android and Apple devices with different resolutions and aspect ratios were "
 "created, with a very wide range of sizes and DPIs."
 msgstr ""
-"Этот вопрос всплывает часто, возможно благодаря недопониманию, созданному "
-"компанией Apple когда они впервые удвоили разрешение экранов их устройств. "
-"Это заставило разработчиков думать, что создавать игровую графику "
-"одновременно в нескольких разрешениях — хорошая идея, поэтому многие "
-"продолжали следовать этим путем. Это срабатывало до какого то времени и "
-"только для устройств Apple, но вспоследствии было выпущено несколько Android "
-"и Apple устройств с различными разрешениями и соотношениями сторон в широком "
-"спектре размеров устройств и DPI."
+"Этот вопрос возникает часто, и это, вероятно, благодаря недопониманию, "
+"созданному Apple, когда они изначально удвоили разрешение своих устройств. "
+"Это заставляло людей думать, что иметь одинаковые ассеты в разных "
+"разрешениях было хорошей идеей, поэтому многие продолжали идти по этому "
+"пути. Это работало до определенного момента и только для устройств Apple, но "
+"затем было создано несколько устройств Android и Apple с различными "
+"разрешениями и соотношениями сторон с очень широким диапазоном размеров и "
+"DPI."
 
 #: ../../docs/about/faq.rst:195
 msgid ""
@@ -967,9 +969,9 @@ msgid ""
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
 "this."
 msgstr ""
-"Используйте опцию растягивания в Godot, 2D растягивание с сохранением "
-"пропорции работает отлично. Смотрите руководство :ref:"
-"`doc_multiple_resolutions` чтобы понять как достичь этого."
+"Используйте варианты растягивания в Godot. 2D растяжение с сохранением "
+"пропорций работает лучше всего. Проверьте :ref:`doc_multiple_resolutions` "
+"урок о том, как этого достичь."
 
 #: ../../docs/about/faq.rst:212
 msgid ""
@@ -1092,8 +1094,8 @@ msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't up "
 "to par."
 msgstr ""
-"Части, где вы чувствовали недостаток обучающих руководств или где "
-"документация была недостаточна подробна."
+"Части, для которых вам не хватает понятных уроков, или они были недостаточно "
+"хорошо документированы."
 
 #: ../../docs/about/faq.rst:255
 msgid ""
@@ -1101,7 +1103,7 @@ msgid ""
 "and this is where your ideas and suggestions are most valuable and welcome, "
 "they need to be in context of a real issue."
 msgstr ""
-"После того, как один из вышеперечисленных пунктов будет изложен, мы сможем "
+"После того, как один из вышеперечисленных пунктов будет изложен, мы можем "
 "работать вместе над решением, и именно здесь ваши идеи и предложения "
 "являются наиболее ценными и желанными, они должны быть в контексте реальной "
 "проблемы."
@@ -1112,10 +1114,9 @@ msgid ""
 "try to reformulate them as a problem first, so developers and the community "
 "have a base ground to discuss first."
 msgstr ""
-"Поэтому, пожалуйста, не чувствуйте, что ваши идеи для Godot нежелательны. "
-"Вместо этого попробуйте сначала переформулировать их как проблему, таким "
-"образом разработчики и сообщество получат, в первую очередь, основу для "
-"обсуждения."
+"Поэтому, пожалуйста, не думайте, что ваши идеи для Godot не принимаются. "
+"Возможно, нужно их переформулировать их изначально как проблему, чтобы "
+"разработчики и сообщество имели какую-то основу для обсуждения."
 
 #: ../../docs/about/faq.rst:263
 msgid "Examples of how NOT to state problems generally and vaguely are:"
@@ -1150,15 +1151,17 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:274
 msgid "I try to move objects around but always end up picking the wrong one"
-msgstr "Я пытаюсь перемещать объекты, но всегда выбираю не тот, что хотел"
+msgstr ""
+"Я пытаюсь переместить один из близко расположенных объектов, но всегда "
+"выбирается последний взамен первого"
 
 #: ../../docs/about/faq.rst:275
 msgid ""
 "I tried to make a game like Battlefield but I'm not managing to understand "
 "how to get lighting to look the same."
 msgstr ""
-"Я пытался сделать игру, как Battlefield, но мне не удается понять, как "
-"получить похожее освещение."
+"Я пытался сделать игру вроде Battlefield, но не могу сообразить, как сделать "
+"такое же освещение."
 
 #: ../../docs/about/faq.rst:277
 msgid ""
@@ -1574,10 +1577,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
-"Представьте себе, что вы уже не разработчик игр. Вместо этого вы шеф-повар! "
-"Смените вашу хипстерскую одежду на поварской колпак и двубортный пиджак. "
-"Теперь вместо создания игр вы создаете новые и вкусные рецепты для ваших "
-"гостей."
+"Забудьте на минуту, что вы – разработчик видеоигр и вместо этого представьте "
+"себя в роли шеф-повара! Скиньте с себя хипстерский фасон и вместо этого "
+"наденьте поварской колпак и жакет. Теперь все, что от вас требуется – это "
+"создавать новые и вкусные рецепты для ваших гостей."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -1586,9 +1589,11 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
-"Итак, как шеф-повар создает рецепт? Рецепты делятся на две части: первая - "
-"это ингредиенты, а вторая - инструкции для их приготовления. Таким образом, "
-"каждый может следовать рецепту и наслаждаться своим великолепным творением."
+"И так же, как именно шеф-повар создает рецепт? Каждый рецепт разделён на две "
+"части: в первой приведён список ингридиентов, а во второй – "
+"последовательность их приготовления. Таким образом, каждый имеет возможность "
+"приготовить блюдо по созданому рецепту и насладиться вашим великолепным "
+"творением."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -1631,11 +1636,11 @@ msgstr "У него есть имя."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr "Он имеет редактируемые свойства."
+msgstr "Это его редактируемые свойства."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr "Он может принимать обратный вызов для обработки каждого кадра."
+msgstr "Он может получать обратный вызов для обработки каждого кадра."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
@@ -1650,8 +1655,8 @@ msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
-"Последний пункт важен. Узлы могут иметь другие узлы в качестве дочерних. При "
-"такой структуре узлы становятся **деревом**."
+"Еще одно важное замечание. У узлов могут быть другие узлы в качестве "
+"дочерних. При расположении таким образом узлы образуют **дерево**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -1669,9 +1674,9 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
-"Не беспокойтесь, если вам что-то непонятно. Мы продолжим изучение этого в "
-"следующих нескольких разделах. Важно запомнить тот факт, что узлы могут "
-"существовать и быть организованы таким образом."
+"Не беспокойтесь, если не разобрались в этом. Мы продолжим изучение этого в "
+"следующих нескольких разделах. Самое важное что, нужно запомнить на данный "
+"момент, это то, что узлы существуют и могут быть организованы таким образом."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
@@ -1695,15 +1700,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has only one root node."
-msgstr "всегда имеет только один корневой узел."
+msgstr "всегда есть только один корневой узел."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr "может быть сохранена на диск и загружена обратно."
+msgstr "могут быть сохранены на диск и загружены обратно."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "может быть *инстанцирован* (подробнее об этом позже)."
+msgstr "может быть * instanced * (подробнее об этом позже)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -1781,7 +1786,7 @@ msgstr ""
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
 msgstr ""
-"Для этого нажмите кнопку \"Новый узел\" (который выглядит как символ плюс):"
+"Для этого нажмите кнопку «Создать узел» (который выглядит как символ плюс):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -1796,13 +1801,12 @@ msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the quickest way:"
 msgstr ""
-"Выберите узел \"Label\" (Ярлык). Найти его через поиск, вероятно, самый "
-"быстрый способ:"
+"Здесь выберите узел «Label». Найти его через поиск, вероятно самый быстрый "
+"способ:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
-msgstr ""
-"И наконец, создайте Label! При нажатии кнопки \"Создать\" происходит многое:"
+msgstr "Выберите \"Label\" и нажмите кнопку «Создать»:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
 msgid ""
@@ -1819,24 +1823,24 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
-"Узел появляется в редакторе дерева сцен (область в правом верхнем углу) и "
-"его свойства отображаются в Инспекторе (область в правом нижнем углу)."
+"Узел(\"Label\") появляется в редакторе узлов сцены (поле в правом верхнем "
+"углу), а свойства узла отображаются в \"инспекторе\" (в нижнем правом углу)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello, World!\":"
 msgstr ""
-"Следующим шагом будет изменение свойства \"Текст\". Давайте изменим его на "
-"\"Hello, World!\":"
+"Следующим шагом будет изменение свойства «Text». Изменим его на «Hello, "
+"World!»:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
-"Хорошо, все готово для запуска сцены! Нажмите кнопку \"Воспроизвести сцену\" "
-"на верхней панели (или нажмите F6):"
+"Хорошо, сцена готова! Нажмите кнопку \"Воспроизвести сцену\" справа вверху, "
+"над панелью редактора узлов сцены (или нажмите F6):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
@@ -4357,108 +4361,120 @@ msgid ""
 "control node's edges to its anchor. See :ref:"
 "`doc_design_interfaces_with_the_control_nodes` for more details."
 msgstr ""
+"**Якоря и поля:** Узлы ``Control`` имеют не только положение и размер, но "
+"также привязки(якоря) и поля. Якоря определяют начало координат - опорную "
+"точку для ребер узла. Поля обновляются автоматически при перемещении или "
+"изменении размера узла управления. Они представляют расстояние от краев "
+"``Control`` - узла до его якоря. См.: ref: "
+"`doc_design_interfaces_with_the_control_nodes` для получения более подробной "
+"информации."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:851
 msgid ""
 "Arrange the nodes as shown below. Click the \"Anchor\" button to set a "
 "Control node's anchor:"
 msgstr ""
+"Организуйте узлы, как показано ниже. Нажмите кнопку \"Якорь\" для установки "
+"узла управления якорем:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:856
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
 msgstr ""
+"Можно перетаскивать узлы, чтобы разместить их вручную, или для более точного "
+"размещения, используйте следующие параметры:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:860
+#, fuzzy
 msgid "ScoreLabel"
-msgstr ""
+msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:862
 msgid "``Layout``: \"Center Top\""
-msgstr ""
+msgstr "``Layout``: \"Center Top\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:863
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:876
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:889
 msgid "``Margin``:"
-msgstr ""
+msgstr "``Margin``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid "Left: ``-25``"
-msgstr ""
+msgstr "Left: ``-25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:866
 msgid "Top: ``0``"
-msgstr ""
+msgstr "Top: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:867
 msgid "Right: ``25``"
-msgstr ""
+msgstr "Right: ``25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:868
 msgid "Bottom: ``100``"
-msgstr ""
+msgstr "Bottom: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:870
 msgid "Text: ``0``"
-msgstr ""
+msgstr "Text: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:873
 msgid "MessageLabel"
-msgstr ""
+msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:875
 msgid "``Layout``: \"Center\""
-msgstr ""
+msgstr "``Layout``: \"Center\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:878
 msgid "Left: ``-200``"
-msgstr ""
+msgstr "Left: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:879
 msgid "Top: ``-150``"
-msgstr ""
+msgstr "Top: ``-150``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:880
 msgid "Right: ``200``"
-msgstr ""
+msgstr "Right: ``200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:881
 msgid "Bottom: ``0``"
-msgstr ""
+msgstr "Bottom: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:883
 msgid "Text: ``Dodge the Creeps!``"
-msgstr ""
+msgstr "Text: ``Dodge the Creeps!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:886
 msgid "StartButton"
-msgstr ""
+msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:888
 msgid "``Layout``: \"Center Bottom\""
-msgstr ""
+msgstr "``Layout``: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:891
 msgid "Left: ``-100``"
-msgstr ""
+msgstr "Left: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid "Top: ``-200``"
-msgstr ""
+msgstr "Top: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:893
 msgid "Right: ``100``"
-msgstr ""
+msgstr "Right: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
 msgid "Bottom: ``-100``"
-msgstr ""
+msgstr "Bottom: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:896
 msgid "Text: ``Start``"
-msgstr ""
+msgstr "Text: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid ""
@@ -4467,10 +4483,14 @@ msgid ""
 "ttf\". To use this font, do the following for each of the three ``Control`` "
 "nodes:"
 msgstr ""
+"Шрифт по умолчанию для узлов ``Control`` небольшие и плохо масштабируется. "
+"Есть файл шрифта, включенного в ресурсы игры под названием \"Xolonium-"
+"Regular.ttf\". Чтобы использовать этот шрифт, выполните следующие действия "
+"для каждой из трех узлов ``Control``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:903
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
-msgstr ""
+msgstr "Под \"Custom Fonts\", выберите \"New DynamicFont\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid ""
@@ -4478,10 +4498,13 @@ msgid ""
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
+"Нажмите на кнопку \"DynamicFont\", и в разделе \"Font Data\", выбрать \"Load"
+"\" и выберите \"Xolonium-Regular.ttf\" . Необходимо также установить размер "
+"шрифта ``Size``. Значение ``64`` работает хорошо."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:913
 msgid "Now add this script to ``HUD``:"
-msgstr ""
+msgstr "Теперь добавьте этот сценарий '' HUD'':"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 msgid ""
@@ -4495,16 +4518,22 @@ msgid ""
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
 "and set the ``One Shot`` property to \"On\"."
 msgstr ""
+"Эта функция будет вызывается, когда мы хотим показать временное сообщение, "
+"например, \"приготовиться\". На ``MessageTimer``, измените ``Wait Time`` до "
+"``2`` и измените ``One Shot`` установить на  \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:982
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and show the \"Start\" button."
 msgstr ""
+"Эта функция вызывается, когда игрок проигрывает. Она будет показывать \"Game "
+"Over\" на 2 секунды, затем вернуться к экрану названия и появится кнопка "
+"\"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1000
 msgid "This function is called in ``Main`` whenever the score changes."
-msgstr ""
+msgstr "Эта функция вызывается в ``Main`` всякий раз, когда изменяется оценка."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1002
 msgid ""
@@ -4514,7 +4543,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1032
 msgid "Connecting HUD to Main"
-msgstr ""
+msgstr "Подключение к главной HUD"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
 msgid ""
@@ -4523,44 +4552,56 @@ msgid ""
 "scene, and place it at the bottom of the tree. The full tree should look "
 "like this, so make sure you didn't miss anything:"
 msgstr ""
+"Закончив создание ``HUD`` сцены, сохраните её и вернитесь к  ``Main``."
+"``HUD`` сцену поместите в нижнюю часть дерева ``Main``. Дерево должно "
+"выглядеть так, поэтому убедитесь, что вы ничего не пропустили:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1041
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
 msgstr ""
+"Теперь нам нужно подключить ``HUD`` функцию для ``Main`` скрипта. Для этого "
+"требуется несколько дополнений к ``Main`` сцены:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1044
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function."
 msgstr ""
+"Во вкладке Узел подключите к HUD сигнал ``start_game`` и ``new_game()`` "
+"функций."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1047
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
 msgstr ""
+"В ``new_game()``, обновит счет дисплея и покажет сообщение \"Get Ready\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1062
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
-msgstr ""
+msgstr "В ``game_over()`` нам нужно вызвать соответствующую функцию ``HUD``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1074
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
+"Наконец добавьте в ``_on_ScoreTimer_timeout()`` для синхронизации "
+"отображения с меняющемся очками:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1087
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
+"Теперь вы готовы к игре! Нажмите на кнопку \"Запустить проект\" или F5. Вам "
+"будет предложено выбрать основную сцену, выбирайте ``Main.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1091
 msgid "Finishing Up"
-msgstr ""
+msgstr "Завершение"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1093
 msgid ""
@@ -4568,11 +4609,15 @@ msgid ""
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
 "Feel free to expand the gameplay with your own ideas."
 msgstr ""
+"Сейчас мы завершили всю функциональность для нашей игры. Ниже приведены "
+"некоторые оставшиеся шаги, чтобы добавить немного \"изюминки\" для повышения "
+"игрового опыта. Не стесняйтесь совершенствовать геймплей вашими собственными "
+"идеями."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1098
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:51
 msgid "Background"
-msgstr ""
+msgstr "Фон"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1100
 msgid ""
@@ -4583,16 +4628,24 @@ msgid ""
 "color you like and drag the size of the ``ColorRect`` so that it covers the "
 "screen."
 msgstr ""
+"По умолчанию серый фон не очень привлекательный, так что давайте поменяем "
+"цвет на свой. Один из способов сделать это заключается в использовании :ref:"
+"`ColorRect <class_ColorRect>` узла. Сделайте первый узел под ``Main``  так, "
+"что он будет тянутся за другими узлами. ``ColorRect`` имеет только одно "
+"свойство: ``Color``. Выберите цвет, который вам нравится и измените размер "
+"``ColorRect``, так чтобы он покрывал экран."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1107
 msgid ""
 "You can also add a background image, if you have one, by using a ``Sprite`` "
 "node."
 msgstr ""
+"Вы также можете добавить фоновое изображение, если у вас оно есть, с помощью "
+"``Sprite``узла."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1111
 msgid "Sound Effects"
-msgstr ""
+msgstr "Звуковые эффекты"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1113
 msgid ""
@@ -4601,6 +4654,10 @@ msgid ""
 "\"House In a Forest Loop.ogg\" for background music, and \"gameover.wav\" "
 "for when the player loses."
 msgstr ""
+"Звук и музыка могут быть самым эффективным способом, чтобы добавить больше "
+"привлекательности к игре. В папке активов вашей игры, есть два звуковых "
+"файла: \"House In a Forest Loop.ogg\" для фоновой музыки и \"gameover.wav\", "
+"когда игрок проигрывает."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1118
 msgid ""
@@ -4609,16 +4666,22 @@ msgid ""
 "each one, click on the ``Stream`` property, select \"Load\", and choose the "
 "corresponding audio file."
 msgstr ""
+"Добавьте два :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` узла, как "
+"дочерний для ``Main``. Назовите одну из них ``Music``, а другие "
+"``DeathSound``. На каждом из них, нажмите на кнопку ``Stream`` свойствах "
+"выберите \"загрузить\" и добавьте соответствующий звуковой файл."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1123
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
 msgstr ""
+"Для воспроизведения музыки, добавьте ``$Music.play()`` функцию в "
+"``new_game()`` и ``$Music.stop()`` в ``game_over()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1126
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
-msgstr ""
+msgstr "Наконец, добавить ``$DeathSound.play()`` в ``game_over()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 #: ../../docs/tutorials/shading/shading_language.rst:1077
@@ -4631,6 +4694,9 @@ msgid ""
 "movement. Choose your ``Player`` scene and add a :ref:`Particles2D "
 "<class_Particles2D>` node named ``Trail``."
 msgstr ""
+"Для еще одной визуальной привлекательности, давайте добавим след к движению "
+"игрока. Выберите свою ``Player`` сцену и добавьте :ref:`Particles2D "
+"<class_Particles2D>` узел под названием ``Trail``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
@@ -4638,12 +4704,17 @@ msgid ""
 "particles. Feel free to experiment and create different effects. For the "
 "effect in this example, use the following settings:"
 msgstr ""
+"Существует большое количество свойств на выбор при настройке частиц. Не "
+"стесняйтесь экспериментировать и создавать различные эффекты. Для эффекта в "
+"этом примере используйте следующие параметры:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1141
 msgid ""
 "You also need to create a ``Material`` by clicking on ``<null>`` and then "
 "\"New ParticlesMaterial\". The settings for that are below:"
 msgstr ""
+"Также нужно создать ``Material``, нажав на ``<null>``, а затем на \"New "
+"ParticlesMaterial\". Параметры для этого приведены ниже:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1146
 msgid ""
@@ -4651,12 +4722,17 @@ msgid ""
 "taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to "
 "0.0 (fully transparent)."
 msgstr ""
+"Чтобы сделать градиент для параметра \"Color Ramp\", нам нужно, чтобы "
+"градиент, принимал alpha (прозрачность) спрайта от 0.5 (полупрозрачным) до "
+"0,0 (полностью прозрачный)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1150
 msgid ""
 "Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient"
 "\". You'll see a window like this:"
 msgstr ""
+"Нажмите кнопку \"Новый GradientTexture\", в \"Gradient\", нажмите кнопку "
+"\"Новый Gradient\".  Вы увидите окно, как это:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1155
 msgid ""
@@ -4665,27 +4741,35 @@ msgid ""
 "first color, set the ``A`` (alpha) value to around halfway. For the second, "
 "set it all the way to ``0``."
 msgstr ""
+"Левое и правое поля представляют начало и конец цвета. Нажмите на каждый "
+"ползунок, а затем с права на поле выбора цвета. Для первого цвета значения "
+"''A'' (альфа) сдвинуть ползунок на половину. Для второго установите ползунок "
+"до конца в ''0''."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1160
 msgid ""
 "See :ref:`Particles2D <class_Particles2D>` for more details on using "
 "particle effects."
 msgstr ""
+"См. :ref:`Particles2D <class_Particles2D>` для более подробной информации по "
+"использованию эффекта частиц."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid "Project Files"
-msgstr ""
+msgstr "Файлы проекта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1166
 msgid ""
 "You can find a completed version of this project here: https://github.com/"
 "kidscancode/Godot3_dodge/releases"
 msgstr ""
+"Вы можете найти полную версию этого проекта здесь: https://github.com/"
+"kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:123
 msgid "Exporting"
-msgstr ""
+msgstr "Экспорт"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
 msgid ""
@@ -4694,6 +4778,11 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
+"Теперь у вас есть рабочая игра, вы, вероятно, хотите поделиться своим "
+"успехом с другими. Однако это не практично просить ваших друзей, чтобы "
+"скачали Godot, для открытия вашего проекта с игрой. Вместо этого, вы можете "
+"*экспортировать* ваш проект, превращая его в \"пакет\", который может "
+"открыть любой пользователь."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -4702,12 +4791,18 @@ msgid ""
 "a variety of platforms. First, however, we need to make some changes to the "
 "way the game works."
 msgstr ""
+"Способ экспорта вашей игры зависит от того, на какую платформу вы "
+"ориентируетесь. В этом уроке вы научитесь экспортировать \"Dodge the Creeps"
+"\" игру для различных платформ. Во-первых, нам нужно внести некоторые "
+"изменения в работе игры."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"Если вы не сделали \"Dodge the Creeps\" для себя, пожалуйста, прочтите :ref:"
+"`doc_your_first_game`, прежде чем продолжить этот урок."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 #, fuzzy
@@ -4722,6 +4817,11 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"В \"Dodge the Creeps\" мы использовали клавиши управления для перемещения "
+"игрока. Это хорошо, если ваша игра для PC, но на телефоне или планшете, "
+"требуется поддержка сенсорного ввода. Потому что событие Click может быть "
+"обрабатываться так же, как сенсорное событие, мы превращаем игру в click-and-"
+"move (клик и перемещение)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
 msgid ""
@@ -4731,12 +4831,19 @@ msgid ""
 "computer without a touchscreen. Also, make sure to select \"portrait\" under "
 "*Orientation*."
 msgstr ""
+"Первый шаг, открыть «Параметры проекта» и найти *Handheld* раздел. Включите "
+"*Emulate Touchscreen*. Это позволит обрабатывать события щелчка мыши так же, "
+"как сенсорные события, так что вы можете проверить игру на компьютере без "
+"сенсорного экрана. Кроме того, не забудьте выбрать \"portrait\" под "
+"*Orientation*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
 "In the *Stretch* section, set *Mode* to \"2d\" and *Aspect* to \"keep\". "
 "This ensures that the game scales consistently on different sized screens."
 msgstr ""
+"В разделе *Stretch*, измените *Mode* на «2d» и *Aspect* на \"keep\".Теперь "
+"игра будет масштабируется на экранах разных размеров."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 msgid ""
@@ -4932,6 +5039,8 @@ msgid ""
 "In order to build your game for iOS, you must have a computer running MacOS "
 "with Xcode installed."
 msgstr ""
+"Чтобы создать игру для iOS, вы должны иметь компьютер с операционной "
+"системой MacOS с установленным Xcode."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -4940,20 +5049,27 @@ msgid ""
 "can find by logging in to your Apple developer account and looking in the "
 "\"Membership\" section."
 msgstr ""
+"Перед экспортом, вы должны изменить некоторые параметры . Во-первых, \"App "
+"Store Team Id\" вы можете найти, войдя вашу учетную запись разработчика "
+"Apple и посмотреть в разделе \"Membership\" ."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:246
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
+"Вы также должны загрузить значки и изображение заставки экрана, как показано "
+"ниже:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Click \"Export Project\" and select a destination folder."
-msgstr ""
+msgstr "Нажмите кнопку «Экспортировать проект» и выберите папку назначения."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
 msgstr ""
+"Как только вы успешно экспортируете проект, вы обнаружите, что в вашем "
+"выбранном месте созданы следующие папки и файлы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:257
 msgid ""
@@ -4961,22 +5077,29 @@ msgid ""
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
 "com/xcode/mac/current/#/devc8c2a6be1 for more information."
 msgstr ""
+"Теперь вы можете открыть в Xcode и создать проект для iOS. Порядок сборки "
+"Xcode выходит за рамки данного урока. См. https://help.apple.com/xcode/mac/"
+"current/#/devc8c2a6be1 для получения дополнительной информации."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:263
 msgid "HTML5 (web)"
-msgstr ""
+msgstr "HTML5 (web)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:265
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
+"Нажмите кнопку \"Экспорт проекта\" на базе предустановки HTML5 . Нам не "
+"нужно изменять какие-либо параметры по умолчанию."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:268
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
 msgstr ""
+"Когда экспорт будет завершен, будет создана папка, содержащая следующие "
+"файлы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""
@@ -5011,11 +5134,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
-msgstr ""
+msgstr "Философия дизайна Godot"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
 msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
-msgstr ""
+msgstr "Теперь, когда вы \"набили руку\", давайте поговорим о дизайне Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
 msgid ""
@@ -5098,7 +5221,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:61
 msgid "All-inclusive package"
-msgstr ""
+msgstr "Комплексный"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:63
 msgid ""
@@ -17204,9 +17327,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
-#, fuzzy
 msgid "GDNative"
-msgstr "GDNative"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
 msgid "Clipboard synchronisation between engine and operating system"

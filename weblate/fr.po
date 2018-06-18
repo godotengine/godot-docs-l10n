@@ -28,6 +28,7 @@
 # Rémi Verschelde <rverschelde@gmail.com>, 2018.
 # Sagi <tanguy1.husseini@gmail.com>, 2018.
 # salty64 <cedric.arrabie@univ-pau.fr>, 2018.
+# Smiley32 <jeannin.emile@laposte.net>, 2018.
 # Thibaut Magnier <magniertibo@gmail.com>, 2018.
 # Thomas Baijot <thomasbaijot@gmail.com>, 2018.
 # Trystan SARRADE <trystansarrade@gmail.com>, 2018.
@@ -37,8 +38,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-13 14:08+0200\n"
-"PO-Revision-Date: 2018-06-13 11:52+0000\n"
-"Last-Translator: Mohamed Ali Salman Meftah <momosmarty@yahoo.fr>\n"
+"PO-Revision-Date: 2018-06-16 12:37+0000\n"
+"Last-Translator: Smiley32 <jeannin.emile@laposte.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -679,7 +680,6 @@ msgstr ""
 "vous-même pour en constater les avantages."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
@@ -687,11 +687,10 @@ msgid ""
 "do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
 "GDScript est conçu pour une intégration totale avec le fonctionnement de "
-"Godot, plus que n'importe quel autre langage, et est vraiment simple et "
-"facile à apprendre. Il vous faudra au maximum un ou deux jours pour vous "
-"sentir à l'aise, temps durant lequel vous en verrez facilement tous les "
-"avantages. Si vous faites l'effort d'apprendre GDScript, vous ne le "
-"regretterez pas."
+"Godot, plus que n'importe quel autre langage, et est vraiment facile à "
+"apprendre. Il vous faudra au maximum un ou deux jours pour vous sentir à "
+"l'aise, temps durant lequel vous en verrez facilement tous les avantages. Si "
+"vous faites l'effort d'apprendre GDScript, vous ne le regretterez pas."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -795,7 +794,6 @@ msgstr ""
 "l'édition en direct, etc. Ceci est très bien supporté par GDScript."
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "GDScript was designed to solve the issues above, and performs well in all "
 "the above scenarios. Please learn GDScript and enjoy a smooth integration of "
@@ -803,10 +801,10 @@ msgid ""
 "when things just work). It's worth it, give it a try!"
 msgstr ""
 "GDScript a été conçu pour résoudre les problèmes ci-dessus, et fonctionne "
-"très bien dans tous les scénarios ci-dessus. Veuillez apprendre GDScript, et "
-"profitez d'une intégration sans couture des scripts avec le moteur de jeu "
-"(oui, c'est une situation rare mais très agréable quand les choses "
-"fonctionnent juste). Ça vaut le coup d'essayer !"
+"très bien dans tous les scénarios présentés. Apprenez GDScript, et profitez "
+"d'une parfaite intégration des scripts avec le moteur de jeu (oui, c'est une "
+"situation rare mais très agréable quand tout fonctionne bien). Ça vaut le "
+"coup d'essayer !"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
@@ -868,18 +866,16 @@ msgid "Why is FBX not supported for import?"
 msgstr "Pourquoi FBX n'est pas supporté pour les imports ?"
 
 #: ../../docs/about/faq.rst:154
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
-"La SDK de FBX a une `licence très restrictive <http://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>`_, qui est incompatible avec la `licence ouverte "
+"Le SDK FBX a une `licence très restrictive <http://www.blender.org/bf/"
+"Autodesk_FBX_License.rtf>`_, ce qui est incompatible avec la `licence libre "
 "<http://opensource.org/licenses/MIT>`_ fournie par Godot."
 
 #: ../../docs/about/faq.rst:158
-#, fuzzy
 msgid ""
 "That said, Godot's Collada support is good, please use the `OpenCollada "
 "<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ "
@@ -887,12 +883,11 @@ msgid ""
 "are using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Cela dit, le support par Godot de Collada est vraiment bon, veuillez "
-"utiliser l'exporteur `OpenCollada <https://github.com/KhronosGroup/"
-"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ pour une compatibilité maximale si "
-"vous utilisez Maya ou 3DS Max. Si vous utilisez Blender, jetez un coup d’œil "
-"à notre propre exporteur `Better Collada Exporter <https://godotengine.org/"
-"download>`_."
+"Cela dit, le support par Godot de Collada est vraiment bon, utilisez "
+"l'exporteur `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
+"OpenCOLLADA-Tools>`_ pour une compatibilité maximale si vous utilisez Maya "
+"ou 3DS Max. Si vous utilisez Blender, jetez un coup d’œil à notre exporteur "
+"`Better Collada Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:164
 msgid "Also, glTF support was added in Godot 3.0."
@@ -1039,18 +1034,17 @@ msgstr ""
 "Et c'est tout ! Votre jeu devrait fonctionner en plusieurs résolutions."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (less than 300 pixels in width), you can use the export option "
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
-"S'il y a vraiment un désir de faire fonctionner votre jeu également sur des "
-"appareils anciens avec des écrans minuscules (moins de 300 pixels de "
-"largeur), vous pouvez utiliser l'option d'exportation pour réduire les "
-"images, et définir ce binaire pour une utilisation dans certaines tailles "
-"d'écran dans l'App Store ou Google Play."
+"Si vous souhaitez également faire fonctionner votre jeu sur des appareils "
+"anciens avec des écrans minuscules (moins de 300 pixels de largeur), vous "
+"pouvez utiliser l'option d'exportation pour réduire les images, et définir "
+"l'utilisation de ce build pour certaines tailles d'écran dans l'App Store ou "
+"Google Play."
 
 #: ../../docs/about/faq.rst:229
 msgid "I have a great idea that will make Godot better. What do you think?"
@@ -2809,16 +2803,15 @@ msgstr ""
 "champ du nom de la classe n'est pas modifiable."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
-#, fuzzy
 msgid ""
 "The node we're attaching the script to is a panel, so the Inherits field "
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
 "Le nœud auquel nous attachons le script est un panneau, donc le champ "
-"\"hérite\" sera automatiquement rempli avec \"Panel\". C'est ce que nous "
+"\"hérite\" sera automatiquement rempli avec \"Panneau\". C'est ce que nous "
 "voulons, car le but du script est d'étendre la fonctionnalité de notre nœud "
-"de panneau."
+"panneau."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid "Finally, enter a path name for the script and select Create:"
@@ -4538,24 +4531,20 @@ msgid "``Layout``: \"Center\""
 msgstr "``Layout`` : \"Center\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:878
-#, fuzzy
 msgid "Left: ``-200``"
-msgstr "Left : ``-100``"
+msgstr "Gauche : ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:879
-#, fuzzy
 msgid "Top: ``-150``"
-msgstr "Top : ``0``"
+msgstr "Haut : ``-150``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:880
-#, fuzzy
 msgid "Right: ``200``"
-msgstr "Right : ``100``"
+msgstr "Droite : ``200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:881
-#, fuzzy
 msgid "Bottom: ``0``"
-msgstr "Bottom : ``100``"
+msgstr "Bas : ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:883
 msgid "Text: ``Dodge the Creeps!``"
@@ -4896,7 +4885,6 @@ msgid "Exporting"
 msgstr "Exportation"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
-#, fuzzy
 msgid ""
 "Now that you have a working game, you probably want to share your success "
 "with others. However, it's not practical to ask your friends to download "
@@ -4905,12 +4893,11 @@ msgid ""
 msgstr ""
 "Maintenant que votre jeu fonctionne, vous voulez surement le partager. "
 "Seulement, demander à ses amis de télécharger Godot pour ouvrir votre "
-"projet, ce n'est pas très pratique. A la place, vous pouvez *exporter* votre "
-"projet, en le convertissant en \"package\" pouvant être lancé par tout le "
-"monde."
+"projet, ce n'est pas très pratique. À la place, vous pouvez *exporter* votre "
+"projet, en le convertissant en un \"package\" pouvant être exécuté par "
+"n'importe qui."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
-#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the \"Dodge the Creeps\" game for "
@@ -4919,22 +4906,20 @@ msgid ""
 msgstr ""
 "La façon dont vous exportez votre jeu dépend de la plateforme visée. Dans ce "
 "tutoriel, vous allez apprendre comment exporter le jeu \"Dodge the Creeps\" "
-"pour un panel de plateformes. D'abord, nous devons faire plusieurs "
-"modification sur la manière dont marche le jeu."
+"pour un panel de plateformes. Pour cela, nous devons déjà faire plusieurs "
+"modification sur la manière dont fonctionne le jeu."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
-"Si vous n'avez pas fait \"Dodge the Creeps\", merci de lire :ref:"
+"Si vous n'avez pas encore créé \"Dodge the Creeps\" vous même, lisez :ref:"
 "`doc_your_first_game` avant de continuer ce tutoriel."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
-#, fuzzy
 msgid "Preparing the project"
-msgstr "Organisation du projet"
+msgstr "Préparation du projet"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -4995,9 +4980,8 @@ msgstr ""
 "que nous avons changé :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
-#, fuzzy
 msgid "Export Templates"
-msgstr "Exporter des modèles"
+msgstr "Exporter les modèles"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:124
 msgid ""
@@ -5079,7 +5063,6 @@ msgstr ""
 "Nous pouvons laisser ces réglages tels-quels pour l'instant."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
-#, fuzzy
 msgid "Exporting by Platform"
 msgstr "Exporter par plateforme"
 
@@ -5160,7 +5143,6 @@ msgstr ""
 "le logiciel suivant :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:196
-#, fuzzy
 msgid "Android SDK: https://developer.android.com/studio/"
 msgstr ""
 "Téléchargez et installez le SDK Android à partir de http://developer.android."
@@ -5247,13 +5229,12 @@ msgstr ""
 "en une seule étape."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running MacOS "
 "with Xcode installed."
 msgstr ""
 "Vous devez impérativement disposer d'un ordinateur macOS avec Xcode installé "
-"pour exporter vers IOS."
+"pour exporter vers iOS."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -5311,7 +5292,6 @@ msgstr ""
 "pas besoin de modifier les paramètres par défaut."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:268
-#, fuzzy
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
@@ -6035,9 +6015,8 @@ msgstr ""
 "d'échelle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:114
-#, fuzzy
 msgid "TextureButton and its 5 texture slots"
-msgstr "BoutonTexture et ses 5 fentes de texture"
+msgstr "Un TextureButton et ses 5 emplacements à texture"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureProgress"

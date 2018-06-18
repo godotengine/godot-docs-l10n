@@ -22,6 +22,7 @@
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
 # Oscar Vila <codemoscar@gmail.com>, 2018.
+# R. Joshua Seville <rjoshua@protonmail.com>, 2018.
 # Renato Pereson <peresonrenato@gmail.com>, 2018.
 # Ricardo Pérez <ricpelo@gmail.com>, 2018.
 # Roberto Sosa Cano <roberto.cano@gmail.com>, 2018.
@@ -36,8 +37,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-13 14:08+0200\n"
-"PO-Revision-Date: 2018-06-13 11:53+0000\n"
-"Last-Translator: AnyMan <romopua@gmail.com>\n"
+"PO-Revision-Date: 2018-06-15 21:44+0000\n"
+"Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -16682,6 +16683,9 @@ msgid ""
 "the project directory, to ensure that the nuget packages will be available "
 "for msbuild to use, run::"
 msgstr ""
+"Cada vez que se agreguen o modifiquen paquetes, ejecute el comando nuget "
+"restore en la raíz del directorio del proyecto, para asegurarse de que los "
+"paquetes nuget estén disponibles para que msbuild los use, ejecute::"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
@@ -23183,6 +23187,11 @@ msgid ""
 "your Particles2D node in the inspector. This is because the node needs a "
 "ParticlesMaterial to function."
 msgstr ""
+"Los sistemas de partículas se agregan a la escena a través del nodo :ref:"
+"`Particles2D <class_Particles2D>`. Sin embargo, después de crear ese nodo, "
+"notará que solo se creó un punto blanco y que hay un icono de advertencia al "
+"lado de su nodo Particles2D en el inspector. Esto se debe a que el nodo "
+"necesita un material ParticlesMaterial para funcionar."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:30
 msgid "ParticlesMaterial"
@@ -23194,14 +23203,18 @@ msgid ""
 "your inspector panel. Click on the box next to material, and from the "
 "dropdown menu select New Particles Material."
 msgstr ""
+"Para agregar un material de proceso a su nodo de partículas, vaya a Process "
+"Material en su panel del inspector. Haga clic en la casilla junto al "
+"material y, en el menú desplegable, seleccione Nuevo ParticlesMaterial."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:38
 msgid "Your Particles2D node should now be emitting white points downward."
 msgstr ""
+"Su nodo Particles2D ahora debería estar emitiendo puntos blancos hacia abajo."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:44
 msgid "Texture"
-msgstr ""
+msgstr "Textura"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:46
 msgid ""
@@ -23209,42 +23222,49 @@ msgid ""
 "extended to animated textures via spritesheet). The texture is set via the "
 "relevant texture property:"
 msgstr ""
+"Un sistema de partículas utiliza una sola textura (en el futuro, esto podría "
+"extenderse a texturas animadas mediante spritesheet). La textura se "
+"establece a través de la relevante propiedad texture:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:53
 msgid "Time Parameters"
-msgstr ""
+msgstr "Parámetros de Tiempo"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
 msgid "Lifetime"
-msgstr ""
+msgstr "Lifetime (Tiempo de vida)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:58
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
 "a new particle is created to replace it."
 msgstr ""
+"El tiempo en segundos que cada partícula estará viva. Cuando termina su "
+"tiempo de vida, se crea una nueva partícula para reemplazarla."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:61
 msgid "Lifetime: 0.5"
-msgstr ""
+msgstr "Lifetime: 0.5"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:65
 msgid "Lifetime: 4.0"
-msgstr ""
+msgstr "Lifetime: 4.0"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:70
 msgid "One Shot"
-msgstr ""
+msgstr "One Shot (Una Vez)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:72
 msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
 "then never again."
 msgstr ""
+"Cuando está habilitado, un nodo Particles2D emitirá todas sus partículas una "
+"vez y después nunca más."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:76
 msgid "Preprocess"
-msgstr ""
+msgstr "Preprocess (Preproceso)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:78
 msgid ""
@@ -23254,10 +23274,16 @@ msgid ""
 "the system process a given number of seconds before it is actually drawn the "
 "first time."
 msgstr ""
+"Los sistemas de partículas comienzan con cero partículas emitidas, luego "
+"comienzan a emitir. Esto puede ser un inconveniente al cargar una escena y "
+"sistemas de partículas como una antorcha, niebla, etc. ya que comienzan a "
+"emitir en el momento en que entras. El preproceso se usa para permitir que "
+"el sistema procese un número determinado de segundos antes de que se dibuje "
+"por primera vez."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:85
 msgid "Speed Scale"
-msgstr ""
+msgstr "Speed Scale (Escala de Velocidad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:87
 msgid ""
@@ -23265,10 +23291,14 @@ msgid ""
 "speed of a particle system. Lowering the value will make the particles "
 "slower, increasing the value will make the particles much faster."
 msgstr ""
+"La escala de velocidad tiene un valor predeterminado de ``1``, y se usa para "
+"ajustar la velocidad de un sistema de partículas. Disminuir el valor hará "
+"que las partículas se vuelvan más lentas, aumentar el valor hará que las "
+"partículas sean mucho más rápidas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:92
 msgid "Explosiveness"
-msgstr ""
+msgstr "Explosiveness (Explosividad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:94
 msgid ""
@@ -23276,34 +23306,41 @@ msgid ""
 "be emitted every 0.1 seconds. The explosiveness parameter changes this, and "
 "forces particles to be emitted all together. Ranges are:"
 msgstr ""
+"Si el tiempo de vida es ``1`` y hay diez partículas, significa que se "
+"emitirá una partícula cada 0.1 segundos. El parámetro de explosividad cambia "
+"esto y obliga a las partículas a emitirse juntas. Los rangos son:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:98
 msgid "0: Emit particles at regular intervals (default value)."
-msgstr ""
+msgstr "0: Emite partículas a intervalos regulares (valor predeterminado)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:99
 msgid "1: Emit all particles simultaneously."
-msgstr ""
+msgstr "1: Emite todas las partículas simultáneamente."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:101
 msgid ""
 "Values in the middle are also allowed. This feature is useful for creating "
 "explosions or sudden bursts of particles:"
 msgstr ""
+"Los valores intermedios también están permitidos. Esta característica es "
+"útil para crear explosiones o ráfagas repentinas de partículas:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:107
 msgid "Randomness"
-msgstr ""
+msgstr "Randomness (Aleatoriedad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:109
 msgid ""
 "All physics parameters can be randomized. Random values range from ``0`` to "
 "``1``. The formula to randomize a parameter is:"
 msgstr ""
+"Todos los parámetros de física se pueden aleatorizar. Los valores aleatorios "
+"varían de ``0`` a ``1``. La fórmula para aleatorizar un parámetro es:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:117
 msgid "Fixed FPS"
-msgstr ""
+msgstr "Fixed FPS (FPS Fijo)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:119
 msgid ""
@@ -23312,22 +23349,27 @@ msgid ""
 "render at 2 frames per second. Note this does not slow down the particle "
 "system itself."
 msgstr ""
+"Esta configuración se puede usar para configurar el sistema de partículas "
+"para que se renderice a un FPS(Fotogramas Por Segundo) fijo. Por ejemplo, "
+"cambiar el valor a ``2`` hará que las partículas se rendericen a 2 "
+"fotogramas por segundo. Tenga en cuenta que esto no ralentiza el sistema de "
+"partículas en sí."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:124
 msgid "Fract Delta"
-msgstr ""
+msgstr "Fract Delta"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:126
 msgid "This can be used to turn Fract Delta on or off."
-msgstr ""
+msgstr "Esto se puede usar para activar o desactivar Fract Delta."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
 msgid "Drawing Parameters"
-msgstr ""
+msgstr "Drawing Parameters (Parámetros de Dibujo)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:132
 msgid "Visibility Rect"
-msgstr ""
+msgstr "Visibility Rect (Rectángulo de Visibilidad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:134
 msgid ""
@@ -23335,10 +23377,14 @@ msgid ""
 "rectangle. The ``X`` and ``Y`` values control the position of the upper-left "
 "corner of the visibility rectangle relative to the particle emitter."
 msgstr ""
+"Los valores ``W`` y ``H`` controlan el ancho y alto del rectángulo de "
+"visibilidad. Los valores ``X`` y ``Y`` controlan la posición de la esquina "
+"superior izquierda del rectángulo de visibilidad con respecto al emisor de "
+"partículas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:139
 msgid "Local Coords"
-msgstr "Coordenadas Locales"
+msgstr "Local Coords (Coordenadas Locales)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid ""
@@ -23346,16 +23392,22 @@ msgid ""
 "emitted to is relative to the node. If the node is moved, all particles are "
 "moved with it:"
 msgstr ""
+"Por defecto esta opción está activada, y significa que el espacio al que se "
+"emiten las partículas es relativo al nodo. Si se mueve el nodo, todas las "
+"partículas se mueven con él:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:147
 msgid ""
 "If disabled, particles will emit to global space, meaning that if the node "
 "is moved, already emitted particles are not affected:"
 msgstr ""
+"Si se desactiva, las partículas se emitirán en el espacio global, lo que "
+"significa que si el nodo se mueve, las partículas ya emitidas no se verán "
+"afectadas:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:153
 msgid "Draw Order"
-msgstr ""
+msgstr "Draw Order (Orden de Dibujo)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:155
 msgid ""
@@ -23363,35 +23415,45 @@ msgid ""
 "means particles are drawn according to their emission order (default). "
 "``Lifetime`` means they are drawn in order of remaining lifetime."
 msgstr ""
+"Esto controla el orden en el que se dibujan las partículas individuales. "
+"``Index`` significa que las partículas son dibujadas de acuerdo a su orden "
+"de emisión (por defecto). ``Lifetime`` significa que se dibujan en el orden "
+"de la vida restante."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid "ParticlesMaterial settings"
-msgstr ""
+msgstr "Ajustes de ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:164
 msgid "Commented out as not implemented in 3.x for now."
-msgstr ""
+msgstr "Comentado como no implementado en 3.x por ahora."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:169
 msgid ""
 "This is the base angle at which particles emit. Default is ``0`` (down):"
 msgstr ""
+"Este es el ángulo base en el que se emiten las partículas. Por defecto es "
+"``0`` (abajo):"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:173
 msgid ""
 "Changing it will change the emissor direction, but gravity will still affect "
 "them:"
 msgstr ""
+"Cambiarlo cambiará la dirección de emisión, pero la gravedad aún las "
+"afectará:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:178
 msgid ""
 "This parameter is useful because, by rotating the node, gravity will also be "
 "rotated. Changing direction allows them to be separated."
 msgstr ""
+"Este parámetro es útil porque, al girar el nodo, también se girará la "
+"gravedad. El cambio de dirección permite separarlas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
 msgid "Spread"
-msgstr ""
+msgstr "Spread (Propagación)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:184
 msgid ""
@@ -23399,18 +23461,21 @@ msgid ""
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
 "all directions (+/- 180)."
 msgstr ""
+"Este parámetro es el ángulo en grados que se añadirá aleatoriamente en "
+"cualquier dirección a la base ``Direction``. Un spread de ``180`` emitirá en "
+"todas las direcciones (+/- 180)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:191
 msgid "Gravity"
-msgstr ""
+msgstr "Gravity (Gravedad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:193
 msgid "The gravity applied to every particle."
-msgstr ""
+msgstr "La gravedad aplicada a cada partícula."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:198
 msgid "Initial Velocity"
-msgstr ""
+msgstr "Initial Velocity (Velocidad Inicial)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:200
 msgid ""
@@ -23418,64 +23483,76 @@ msgid ""
 "sec). Speed might later be modified by gravity or other accelerations (as "
 "described further below)."
 msgstr ""
+"La velocidad lineal es la velocidad a la que se emitirán las partículas (en "
+"píxeles/segundo). La velocidad puede ser modificada posteriormente por la "
+"gravedad u otras aceleraciones (como se explica más adelante)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
 msgid "Angular Velocity"
-msgstr ""
+msgstr "Angular Velocity (Velocidad Angular)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr ""
+"Angular velocity es la velocidad angular inicial aplicada a las partículas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:212
 msgid "Spin Velocity"
-msgstr ""
+msgstr "Spin Velocity (Velocidad de Giro)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:214
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
 msgstr ""
+"Spin velocity es la velocidad a la que las partículas giran alrededor de su "
+"centro (en grados/segundo)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:220
 msgid "Orbit Velocity"
-msgstr ""
+msgstr "Orbit Velocity (Velocidad de la Órbita)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:222
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr ""
+"Orbit velocity se utiliza para hacer que las partículas giren alrededor de "
+"su centro."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:227
 msgid "Linear Acceleration"
-msgstr ""
+msgstr "Linear Acceleration (Aceleración Lineal)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:229
 msgid "The linear acceleration applied to each particle."
-msgstr ""
+msgstr "La aceleración lineal aplicada a cada partícula."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:232
 msgid "Radial Acceleration"
-msgstr ""
+msgstr "Radial Acceleration (Aceleración Radial)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:234
 msgid ""
 "If this acceleration is positive, particles are accelerated away from the "
 "center. If negative, they are absorbed towards it."
 msgstr ""
+"Si esta aceleración es positiva, las partículas se aceleran lejos del "
+"centro. Si es negativo, se atraen hacia él."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:240
 msgid "Tangential Acceleration"
-msgstr ""
+msgstr "Tangential Acceleration (Aceleración Tangencial)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:242
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
 msgstr ""
+"Esta aceleración utilizará el vector tangente hasta el centro. La "
+"combinación con la aceleración radial puede producir buenos efectos."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:248
 msgid "Damping"
-msgstr ""
+msgstr "Damping (Amortiguación)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:250
 msgid ""
@@ -23483,20 +23560,25 @@ msgid ""
 "especially useful for sparks or explosions, which usually begin with a high "
 "linear velocity and then stop as they fade."
 msgstr ""
+"Damping aplica fricción a las partículas, forzándolas a detenerse. Es "
+"especialmente útil para chispas o explosiones, que generalmente comienzan "
+"con una alta velocidad lineal y luego se detienen a medida que se desvanecen."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:257
 msgid "Angle"
-msgstr ""
+msgstr "Angle (Ángulo)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:259
 msgid ""
 "Determines the initial angle of the particle (in degress). This parameter is "
 "mostly useful randomized."
 msgstr ""
+"Determina el ángulo inicial de la partícula (en grados). Este parámetro es "
+"mayormente útil aleatorizado."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:267
 msgid "Determines the initial scale of the particles."
-msgstr ""
+msgstr "Determina la escala inicial de las partículas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:272
 msgid "Color"
@@ -23504,17 +23586,20 @@ msgstr "Color"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:274
 msgid "Used to change the color of the particles being emitted."
-msgstr ""
+msgstr "Permite cambiar el color de las partículas emitidas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:277
 msgid "Hue variation"
-msgstr ""
+msgstr "Hue variation (Variación de tono)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:279
 msgid ""
 "The variation value sets the initial hue variation applied to each particle. "
 "The Variation rand value controls the hue variation randomness ratio."
 msgstr ""
+"El valor de variación establece la variación de tono inicial aplicada a cada "
+"partícula. El valor de rand de la variación controla la relación de "
+"aleatoriedad de la variación del tono."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D Movement Overview"
@@ -23751,11 +23836,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
-msgstr ""
+msgstr "Introducción al 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
@@ -23767,6 +23852,13 @@ msgid ""
 "3D kinematic character tutorials, which are almost identical to their 2D "
 "counterparts."
 msgstr ""
+"Crear un juego en 3D puede ser todo un reto. Esa coordenada Z extra hace que "
+"muchas de las técnicas comunes que ayudaron a hacer juegos 2D simples ya no "
+"funcionen. Para ayudar en esta transición, vale la pena mencionar que Godot "
+"utiliza APIs similares para 2D y 3D. La mayoría de los nodos son iguales y "
+"están presentes en las versiones 2D y 3D. De hecho, vale la pena comprobar "
+"el tutorial de plataformas 3D, o los tutoriales de personajes cinemáticos "
+"3D, que son casi idénticos a sus homólogos 2D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
 msgid ""
@@ -23775,10 +23867,15 @@ msgid ""
 "developers, not mathematicians or engineers) will help pave the way into "
 "efficiently developing 3D games."
 msgstr ""
+"En 3D, las matemáticas son un poco más complejas que en 2D, así que también "
+"revisar el :ref:`doc_vector_math` en el wiki (que fueron creados "
+"especialmente para desarrolladores de juegos, no para matemáticos o "
+"ingenieros) ayudará a allanar el camino hacia el desarrollo eficiente de "
+"juegos 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
-msgstr ""
+msgstr "Nodo Spatial"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:22
 msgid ""
@@ -23787,6 +23884,10 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
+":ref:`Node2D <class_Node2D>` es el nodo base para 2D. :ref:`Control "
+"<class_Control>` es el nodo base para todo el GUI. Siguiendo este "
+"razonamiento, el motor 3D utiliza el nodo :ref:`Spatial <class_Spatial>` "
+"para todo lo que es 3D."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -23796,10 +23897,15 @@ msgid ""
 "3 :ref:`Vector3 <class_Vector3>` members representing location, Euler "
 "rotation (x,y and z angles) and scale."
 msgstr ""
+"Los nodos Spatial tienen una transformación local, que es relativa al nodo "
+"padre (siempre y cuando el nodo padre sea también **heredado** del tipo "
+"Spatial). Se puede acceder a esta transformación como un 4x3 :ref:`Transform "
+"<class_Transform>`, o como 3 :ref:`Vector3 <class_Vector3>` miembros que "
+"representan la ubicación, la rotación de Euler (ángulos x,y y z) y la escala."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
-msgstr ""
+msgstr "Contenido 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
@@ -23809,10 +23915,15 @@ msgid ""
 "in order to be imported in Godot (3D formats are not as standardized as "
 "images)."
 msgstr ""
+"A diferencia de 2D, donde la carga de contenido y dibujo de imágenes es "
+"directa, 3D es un poco más difícil. El contenido debe crearse con una "
+"herramienta 3D especial (normalmente denominada DCC) y exportarse a un "
+"formato de archivo de intercambio para poder importarse en Godot (los "
+"formatos 3D no están tan estandarizados como las imágenes)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:48
 msgid "DCC-created models"
-msgstr ""
+msgstr "Modelos creados por DCC"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:50
 msgid ""
@@ -23821,6 +23932,10 @@ msgid ""
 "allows to import entire scenes (just as they look in the DCC), including "
 "animation, skeletal rigs, blend shapes, etc."
 msgstr ""
+"Hay dos vías para importar modelos 3D en Godot. La primera y más común es a "
+"través del importador :ref:`doc_importing_3d_scenes`, que permite importar "
+"escenas completas (tal y como se ven en el DCC), incluyendo animaciones, "
+"rigs esqueléticos, blend shapes, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:55
 msgid ""
@@ -23829,10 +23944,14 @@ msgid ""
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
+"La segunda vía es a través del importador :ref:`doc_importing_3d_meshes`. "
+"Este segundo método permite importar archivos.OBJ simples como recursos de "
+"malla, que pueden ser colocados dentro de un nodo :ref:`MeshInstance "
+"<class_MeshInstance>` para su visualización."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:61
 msgid "Generated geometry"
-msgstr ""
+msgstr "Geometría generada"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid ""
@@ -23856,10 +23975,14 @@ msgid ""
 "that will not be updated often), as creating vertex arrays and submitting "
 "them to the 3D API has a significant performance cost."
 msgstr ""
+"En cualquier caso, este método está destinado a generar geometría estática "
+"(modelos que no se actualizarán con frecuencia), ya que la creación de "
+"arrays de vértices y su envío a la API 3D tiene un coste de rendimiento "
+"significativo."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:75
 msgid "Immediate geometry"
-msgstr ""
+msgstr "Geometría inmediata"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
 msgid ""
@@ -23868,10 +23991,14 @@ msgid ""
 "<class_ImmediateGeometry>` which provides an OpenGL 1.x style immediate-mode "
 "API to create points, lines, triangles, etc."
 msgstr ""
+"En cambio, si se requiere generar una geometría simple que se actualice con "
+"frecuencia, Godot proporciona un nodo especial, :ref:`ImmediateGeometry "
+"<class_ImmediateGeometry>` que proporciona una API de modo inmediato estilo "
+"OpenGL 1.x para crear puntos, líneas, triángulos, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:84
 msgid "2D in 3D"
-msgstr ""
+msgstr "2D en 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid ""
@@ -23895,11 +24022,14 @@ msgid ""
 "performance in comparison to plain 2D, as well as the lack of reference of "
 "working in pixels."
 msgstr ""
+"La desventaja es, por supuesto, que la complejidad añadida y el rendimiento "
+"reducido en comparación con 2D simple, así como la falta de referencia de "
+"trabajo en píxeles."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:99
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:9
 msgid "Environment"
-msgstr ""
+msgstr "Entorno"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid ""
@@ -23909,16 +24039,24 @@ msgid ""
 "several types of built-in post-processing effects. Environments can also be "
 "overridden in the Camera."
 msgstr ""
+"Además de editar una escena, a menudo es común editar el entorno. Godot "
+"proporciona un nodo :ref:`WorldEnvironment <class_WorldEnvironment>` que "
+"permite cambiar el color de fondo, el modo (como por ejemplo, poner un "
+"skybox), y aplicar varios tipos de efectos de post-procesamiento "
+"incorporados. Los entornos también se pueden anular en la cámara."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:108
 msgid "3D viewport"
-msgstr ""
+msgstr "Vista 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid ""
 "Editing 3D scenes is done in the 3D tab. This tab can be selected manually, "
 "but it will be automatically enabled when a Spatial node is selected."
 msgstr ""
+"La edición de escenas 3D se realiza en la pestaña 3D. Esta pestaña se puede "
+"seleccionar manualmente, pero se habilitará automáticamente cuando se "
+"seleccione un nodo Spatial (espacial)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:116
 msgid ""
@@ -23927,10 +24065,15 @@ msgid ""
 "included to customize mouse buttons and behavior to be similar to other "
 "tools in Editor Settings:"
 msgstr ""
+"Los controles de navegación de escena 3D predeterminados son similares a "
+"Blender (con el objetivo de tener algún tipo de consistencia en el conducto "
+"de software libre ...), pero se incluyen opciones para personalizar los "
+"botones y el comportamiento del mouse para que sean similares a otras "
+"herramientas en Ajustes del Editor:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:124
 msgid "Coordinate system"
-msgstr ""
+msgstr "Sistema de coordenadas"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid ""
@@ -23939,6 +24082,10 @@ msgid ""
 "attempting to use a different scale is usually a bad idea (unless you know "
 "what you are doing)."
 msgstr ""
+"Godot usa el sistema `métrico <https://es.wikipedia.org/wiki/Sistema_m"
+"%C3%A9trico_decimal>`__ para todo. La Física 3D y otras áreas están "
+"preparadas para esto, por lo que intentar usar una escala diferente suele "
+"ser una mala idea (a menos que sepas lo que estás haciendo)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:131
 msgid ""
@@ -23949,6 +24096,13 @@ msgid ""
 "rendering or physics. So, make sure your artists always work in the right "
 "scale!"
 msgstr ""
+"Al trabajar con recursos 3D, siempre es mejor trabajar en la escala correcta "
+"(ajusta el DCC a métrico). Godot permite escalar después de la importación "
+"y, aunque esto funciona en la mayoría de los casos, en situaciones poco "
+"frecuentes puede presentar problemas de precisión de coma flotante (y por lo "
+"tanto, errores o defectos) en áreas delicadas como el renderizado o la "
+"física. Por lo tanto ¡asegúrate de que tus artistas siempre trabajen en la "
+"escala correcta!"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:138
 msgid ""
@@ -23957,22 +24111,26 @@ msgid ""
 "axis is used as a \"pointing towards\" direction. This convention roughly "
 "means that:"
 msgstr ""
+"La coordenada Y se usa para \"arriba\", pensado para la mayoría de los "
+"objetos que necesitan alineación (como luces, cámaras, colisionador de "
+"cápsula, vehículo, etc.), el eje Z se usa como una dirección \"apuntando al "
+"frente\". Esta convención significa aproximadamente que:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:143
 msgid "**X** is sides"
-msgstr ""
+msgstr "**X** es los lados"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:144
 msgid "**Y** is up/down"
-msgstr ""
+msgstr "**Y** es arriba/abajo"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**Z** is front/back"
-msgstr ""
+msgstr "**Z** es adelante/atrás"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:148
 msgid "Space and manipulation gizmos"
-msgstr ""
+msgstr "Gizmos de espacio y manipulación"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:150
 msgid ""
@@ -23981,16 +24139,23 @@ msgid ""
 "respectively. This convention applies to the grid and other gizmos too (and "
 "also to the shader language, ordering of components for Vector3,Color,etc.)."
 msgstr ""
+"El movimiento de objetos en la vista 3D se realiza a través de los gizmos "
+"del manipulación. Cada eje está representado por un color: Rojo, Verde, Azul "
+"representan X, Y, Z respectivamente. Esta convención se aplica también a la "
+"cuadrícula y a otros gizmos (y también al lenguaje de shaders, el orden de "
+"los componentes para Vector3, Color, etc.)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:158
 msgid "Some useful keybindings:"
-msgstr ""
+msgstr "Algunos keybindings útiles:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid ""
 "To snap motion or rotation, press the \"s\" key while moving, scaling or "
 "rotating."
 msgstr ""
+"Para ajustar el movimiento o la rotación, pulsa la tecla \"s\" mientras te "
+"mueves, escalas o giras."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
 msgid "To center the view on the selected object, press the \"f\" key."
@@ -28970,9 +29135,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:260
-#, fuzzy
 msgid "Let's go through each of the class variables:"
-msgstr "Veamos cada una de las propiedades:"
+msgstr "Vamos a repasar cada una de las variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:262
 msgid "``GRAV``: How strong gravity pulls us down."
@@ -29558,12 +29722,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:561
-#, fuzzy
 msgid ""
 "This gets the flash light node and assigns it to the ``flashlight`` variable."
 msgstr ""
-"Primero obtenemos el singleton ``Globals`` y lo asignamos a una variable "
-"local."
+"Esto obtiene el nodo flash light y lo asigna a la variable ``flashlight``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:565
 msgid ""
@@ -29740,9 +29902,8 @@ msgid "Lets go over what this script is doing:"
 msgstr "Repasemos lo que hace este script:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:157
-#, fuzzy
 msgid "Lets start with this script's class variables:"
-msgstr "Empecemos con los variables globales de este script:"
+msgstr "Empecemos con las variables de clase de este script:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:159
 msgid ""
@@ -31548,11 +31709,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:83
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:192
-#, fuzzy
 msgid "Open up ``Weapon_Pistol.gd`` and add the following class variables:"
-msgstr ""
-"Añade un script al nodo ``Mob`` y luego añade las siguientes variables "
-"miembro:"
+msgstr "Abre ``Weapon_Pistol.gd`` y añade las siguientes variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:91
 msgid "``ammo_in_weapon``: The amount of ammo currently in the pistol"
@@ -31604,9 +31762,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:112
-#, fuzzy
 msgid "Add the following class variables to ``Weapon_Rifle.gd``:"
-msgstr "Añade el código siguiente a ``AnimationPlayer_Manager.gd``:"
+msgstr "Añade las siguientes variables de clase a ``Weapon_Rifle.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:120
 msgid ""
@@ -31776,13 +31933,12 @@ msgid "If the player could not reload, we return ``false``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:256
-#, fuzzy
 msgid ""
 "Now we need to add reloading to the rifle. Open up ``Weapon_Rifle.gd`` and "
 "add the following class variables:"
 msgstr ""
-"Añade un script al nodo ``Mob`` y luego añade las siguientes variables "
-"miembro:"
+"Ahora tenemos que añadir recarga al rifle. Abre ``Weapon_Rifle.gd`` y añade "
+"las siguientes variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:265
 msgid ""
@@ -32570,11 +32726,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:200
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:458
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:511
-#, fuzzy
 msgid "Open up ``Player.gd`` and add the following class variables:"
-msgstr ""
-"Añade un script al nodo ``Mob`` y luego añade las siguientes variables "
-"miembro:"
+msgstr "Abre ``Player.gd`` y añade las siguientes variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:207
 msgid "Let's go over what each of these new variables will be doing:"
@@ -32721,10 +32874,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:351
-#, fuzzy
 msgid ""
 "Let's go over what this script is doing, starting with its class variables:"
-msgstr "Repasemos lo que hace este script:"
+msgstr ""
+"Vamos a repasar lo que está haciendo este script, empezando por sus "
+"variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:353
 msgid ""
@@ -32904,11 +33058,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:426
-#, fuzzy
 msgid "Open up ``Player.gd`` and add the following class variable:"
-msgstr ""
-"Añade un script al nodo ``Mob`` y luego añade las siguientes variables "
-"miembro:"
+msgstr "Abre ``Player.gd`` y añade la siguiente variable de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:432
 msgid "``MAX_HEALTH``: The maximum amount of health a player can have."
@@ -33098,9 +33249,9 @@ msgid "Add the following code to ``Target.gd``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:641
-#, fuzzy
 msgid "Let's go over what this script does, starting with the class variables:"
-msgstr "Repasemos lo que hace este script:"
+msgstr ""
+"Repasemos lo que hace este script, empezando por las variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:643
 msgid ""
@@ -33206,7 +33357,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:680
-#, fuzzy
 msgid "In this case, we want to respawn the target."
 msgstr "En este caso, queremos volver a generar nuestro objetivo."
 
@@ -33470,13 +33620,12 @@ msgid "Now let's turn our attention to ``_ready``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:111
-#, fuzzy
 msgid ""
 "First we get all of the nodes we'll need and assign them to the proper class "
 "variables."
 msgstr ""
-"Primero obtenemos el singleton ``Globals`` y lo asignamos a una variable "
-"local."
+"Primero obtenemos todos los nodos que necesitaremos y los asignamos a las "
+"variables de clase apropiadas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:113
 msgid ""
@@ -33744,12 +33893,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:321
-#, fuzzy
 msgid ""
 "``current_grenade``: The name of the grenade the player is currently using."
 msgstr ""
-"``current_state``: Un variable para contener el nombre del estado de "
-"animación en que estamos actualmente."
+"``current_grenade``: El nombre de la granada que el jugador está usando "
+"actualmente."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:322
 msgid "``grenade_scene``: The grenade scene we worked on earlier."
@@ -34772,7 +34920,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:166
-#, fuzzy
 msgid ""
 "If one of the scene changing buttons are pressed, we fist call "
 "``set_mouse_and_joypad_sensitivity`` so the singleton (``Globals.gd``) has "
@@ -34780,11 +34927,12 @@ msgid ""
 "singleton to change nodes using it's ``load_new_scene`` function, passing in "
 "the file path of the scene the player has selected."
 msgstr ""
-"Si se pulsa uno de los botones de cambio de escena, primero llamamos "
-"``set_mouse_and_joypad_sensitivity`` por lo que nuestro singleton tiene los "
-"valores de los nodos :ref:`HSlider <class_HSlider>`. Luego le decimos al "
-"singleton que cambie los nodos usando su función ``load_new_scene``, pasando "
-"la ruta del archivo de la escena que queremos cambiar."
+"Si se pulsa uno de los botones de cambio de escena, llamaremos "
+"``set_mouse_and_joypad_sensitivity`` para que el singleton (``Globals.gd``) "
+"tenga los valores de los nodos :ref:`HSlider <class_HSlider>`. Luego le "
+"decimos al singleton que cambie los nodos usando su función "
+"``load_new_scene``, pasando la ruta del archivo de la escena que el jugador "
+"ha seleccionado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:170
 msgid "Don't worry about the singleton, we'll get there soon!"
@@ -34896,13 +35044,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:230
-#, fuzzy
 msgid ""
 "This will make ``Globals.gd`` a singleton/autoload script, which will allow "
 "us to access it from any script, in any scene."
 msgstr ""
 "Esto hará de ``Globals.gd`` un script singleton/autoload, que nos permitirá "
-"acceder a él desde cualquier lugar en cualquier escena."
+"acceder a él desde cualquier script, en cualquier escena."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:232
 msgid ""
@@ -35015,11 +35162,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:299
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:390
-#, fuzzy
 msgid "Open up ``Globals.gd`` and add the following class variables:"
-msgstr ""
-"Añade un script al nodo ``Mob`` y luego añade las siguientes variables "
-"miembro:"
+msgstr "Abre ``Globals.gd`` y añade las siguientes variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:313
 msgid ""
@@ -35032,10 +35176,11 @@ msgid "``DEBUG_DISPLAY``: The debug display scene we worked on earlier."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:315
-#, fuzzy
 msgid ""
 "``debug_display``: A variable to hold the debug display when/if there is one."
-msgstr "``globals``: Una variable para contener el singleton ``Globals.gd``."
+msgstr ""
+"``debug_display``: Una variable para mantener la pantalla de depuración "
+"cuando/si la hay."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:317
 msgid ""
@@ -35335,7 +35480,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:536
-#, fuzzy
 msgid ""
 "Now we're getting the ``Globals.gd`` singleton and assigning it to "
 "``globals``. We also set the player's global position by setting the origin "
@@ -35343,7 +35487,7 @@ msgid ""
 "returned by ``globals.get_respawn_position``."
 msgstr ""
 "Ahora obtenemos el singleton ``Globals.gd`` y lo asignamos a ``globals``. "
-"También establecemos nuestra posición global usando el origen de nuestra :"
+"También establecemos nuestra posición global usando el origen de nuestro :"
 "ref:`Transform <class_Transform>` a la posición devuelta por ``globals."
 "get_respawn_position``."
 
@@ -35512,9 +35656,8 @@ msgid "And add the following to ``Weapon_Knife.gd``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:708
-#, fuzzy
 msgid "Now all of the weapons will reset when the player dies."
-msgstr "Desvanecer la barra cuando el jugador muere"
+msgstr "Ahora todas las armas se resetearán cuando el jugador muera."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:712
 msgid ""
@@ -35650,7 +35793,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:846
-#, fuzzy
 msgid ""
 "Finally, instead of being instanced/spawned in ``Player.gd``, the audio "
 "player is instead going to be spawned in ``Globals.gd`` so we can create "
@@ -35675,30 +35817,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:855
-#, fuzzy
 msgid ""
 "We also added two new class variables, ``should_loop`` and ``globals``. "
 "We'll use ``should_loop`` to tell whether the audio player should loop when "
 "the sound has finished, and ``globals`` will hold the ``Globals.gd`` "
 "singleton."
 msgstr ""
-"Para las variables globales eliminamos todas las variables ``audio_[insertar "
-"nombre aquí]`` ya que en su lugar las pasaremos al archivo. También añadimos "
-"dos nuevas variables globales, ``should_loop`` y ``globals``. Usaremos "
-"``should_loop`` para decir si queremos hacer un loop cuando el sonido haya "
-"terminado, y ``globals`` contendrá el ``Globals.gd`` singleton."
+"También agregamos dos nuevas variables de clase, ``should_loop`` y "
+"``globals``. Usaremos ``should_loop`` para decir si el reproductor de audio "
+"debe hacer un bucle cuando el sonido haya terminado, y ``globals`` contendrá "
+"el singleton ``Globals.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:858
-#, fuzzy
 msgid ""
 "The only change in ``_ready`` is now audio player is getting the ``Globals."
 "gd`` singleton and assigning it to ``globals``"
 msgstr ""
-"El único cambio en ``_ready`` es que ahora obtenemos el singleton ``Globals."
-"gd`` y lo asignamos a ``globals``"
+"El único cambio en ``_ready`` es que ahora el reproductor de audio recupera "
+"el singleton ``Globals.gd`` y lo asigna a ``globals``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:860
-#, fuzzy
 msgid ""
 "``play_sound`` now expects a audio stream, named ``audio_stream``, to be "
 "passed in, instead of ``sound_name``. Instead of checking the sound name and "
@@ -35707,16 +35845,15 @@ msgid ""
 "error message, remove the audio player from a list in the ``Globals.gd`` "
 "singleton called ``created_audio``, and then free the audio player."
 msgstr ""
-"En ``play_sound`` se espera un stream de audio, llamado ``audio_stream``, en "
-"lugar de ```sound_name``. En lugar de comprobar el nombre del sonido y "
-"configurar el stream para el reproductor de audio, comprobamos que se ha "
-"introducido un stream de audio. Si no se pasa un stream de audio, se imprime "
-"un mensaje de error, se elimina el reproductor de audio de una lista en el "
-"singleton ```Globals.gd`` llamado ``created_audio``, y luego se libera el "
-"reproductor de audio."
+"``play_sound`` espera ahora que se pase un stream de audio, llamado "
+"``audio_stream``, en lugar de ``sound_name``. En lugar de comprobar el "
+"nombre del sonido y configurar el stream para el reproductor de audio, "
+"comprobamos que se ha introducido un stream de audio. Si no se pasa un "
+"stream de audio, se imprime un mensaje de error, se elimina el reproductor "
+"de audio de la lista del singleton ``Globals.gd`` llamado ``created_audio``, "
+"y luego se libera el reproductor de audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:864
-#, fuzzy
 msgid ""
 "Finally, in ``sound_finished`` we first check to see if the audio player is "
 "supposed to loop or not using ``should_loop``. If the audio player is "
@@ -35729,7 +35866,7 @@ msgstr ""
 "``should_loop`` o no. Si se supone que debemos hacer un bucle, reproducimos "
 "el sonido de nuevo desde el principio del audio, en la posición ``0.0``. Si "
 "no se supone que debemos hacer un bucle, quitamos el reproductor de audio de "
-"la lista en el singleton ```Globals.gd`` llamado ``created_audio``, y luego "
+"la lista en el singleton ``Globals.gd`` llamado ``created_audio``, y luego "
 "liberamos el reproductor de audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:870
@@ -35744,13 +35881,12 @@ msgid "Lets go over these global variables."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:890
-#, fuzzy
 msgid ""
 "``audio_clips``: A dictionary holding all of the audio clips ``Globals.gd`` "
 "can play."
 msgstr ""
-"``animation_speeds``: Un diccionario para contener todas las velocidades de "
-"nuestras animaciones."
+"``audio_clips``: Un diccionario que contiene todos los clips de audio que "
+"``Global.gd`` puede reproducir."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:891
 msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
@@ -35865,7 +36001,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:968
-#, fuzzy
 msgid ""
 "Now all of the sounds in our FPS can be played from anywhere. All we have to "
 "do is get the ``Globals.gd`` singleton, and call ``play_sound``, pass in the "
@@ -35879,7 +36014,6 @@ msgstr ""
 "el sonido."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:971
-#, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenades "
 "explode you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
@@ -35892,8 +36026,9 @@ msgstr ""
 "granadas explotan necesitarás añadir un nuevo sonido a ``audio_clips`` en "
 "``Globals.gd``, accede al singleton ``Globals.gd``, y entonces sólo "
 "necesitas añadir algo como ``globals.play_sound(\"explosion\", false, "
-"global_transform.origin)`` en las granadas ``_process``, justo después de "
-"que la granada dañe todos los cuerpos dentro de su radio de explosión."
+"global_transform.origin)`` en la función ``_process`` de la granada, justo "
+"después de que la granada dañe todos los cuerpos dentro de su radio de "
+"explosión."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:981
 msgid "Now you have a fully working single player FPS!"
@@ -44792,7 +44927,6 @@ msgid "Configuring the imported translation"
 msgstr "Configuración de la traducción importada"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:30
-#, fuzzy
 msgid ""
 "The translations can get updated and re-imported when they change, but they "
 "still have to be added to the project. This is done in Project > Project "
@@ -55031,9 +55165,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:4
-#, fuzzy
 msgid "GDNative C++ example"
-msgstr "GDNative / C++"
+msgstr "GDNative C++ ejemplo"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:8
 msgid ""
@@ -55063,14 +55196,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:17
-#, fuzzy
 msgid "Setting up your project"
-msgstr "Creación de un proyecto"
+msgstr "Configuración de un proyecto"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:18
-#, fuzzy
 msgid "There are a few prerequisites you'll need:"
-msgstr "Sin embargo, hay algunas diferencias:"
+msgstr "Hay algunos requisitos previos que necesitarás:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:20
 msgid "A Godot 3.x executable"
@@ -55172,9 +55303,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:75
-#, fuzzy
 msgid "Creating a simple plugin"
-msgstr "Crear una animación simple"
+msgstr "Creación de un simple plugin"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:76
 msgid "Now it's time to build an actual plugin."
@@ -55236,9 +55366,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:125
-#, fuzzy
 msgid "After that we declare a single member variables called ``time_passed``."
-msgstr "Comienza declarando las variables miembro que este objeto necesitará:"
+msgstr ""
+"Después de eso declaramos una sola variable de miembro llamada "
+"``time_passed``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:127
 msgid ""
@@ -61918,9 +62049,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:129
-#, fuzzy
 msgid "Node Path"
-msgstr "Ruta de recursos"
+msgstr "Ruta del nodo"
 
 #: ../../docs/development/file_formats/tscn.rst:131
 msgid ""
@@ -61932,9 +62062,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:154
-#, fuzzy
 msgid "Skeleton"
-msgstr "Singletons"
+msgstr "Skeleton"
 
 #: ../../docs/development/file_formats/tscn.rst:155
 msgid ""
@@ -62013,9 +62142,8 @@ msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:228
-#, fuzzy
 msgid "AnimationPlayer"
-msgstr "El nodo AnimationPlayer"
+msgstr "AnimationPlayer"
 
 #: ../../docs/development/file_formats/tscn.rst:229
 msgid ""
@@ -62110,9 +62238,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:313
-#, fuzzy
 msgid "ArrayMesh"
-msgstr "Arreglos"
+msgstr "ArrayMesh"
 
 #: ../../docs/development/file_formats/tscn.rst:314
 msgid ""
@@ -62133,9 +62260,8 @@ msgid "primitive"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:322
-#, fuzzy
 msgid "arrays"
-msgstr "Arreglos"
+msgstr "arrays"
 
 #: ../../docs/development/file_formats/tscn.rst:323
 msgid "morph_arrays"
@@ -62190,9 +62316,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:342
-#, fuzzy
 msgid "An example of ArrayMesh:"
-msgstr "Algunos ejemplos de planos"
+msgstr "Un ejemplo de ArrayMesh:"
 
 #: ../../docs/development/file_formats/tscn.rst:366
 msgid ""
@@ -62227,14 +62352,12 @@ msgid "type"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:379
-#, fuzzy
 msgid "path"
-msgstr "Ruta de usuario"
+msgstr "ruta"
 
 #: ../../docs/development/file_formats/tscn.rst:380
-#, fuzzy
 msgid "interp"
-msgstr "Center"
+msgstr "interp"
 
 #: ../../docs/development/file_formats/tscn.rst:381
 msgid "keys"
@@ -62245,9 +62368,8 @@ msgid "loop_wrap"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:383
-#, fuzzy
 msgid "imported"
-msgstr "Importador CSV"
+msgstr "importado"
 
 #: ../../docs/development/file_formats/tscn.rst:387
 msgid ""
@@ -62256,14 +62378,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:390
-#, fuzzy
 msgid "'transform'"
-msgstr "Transform"
+msgstr "'transform'"
 
 #: ../../docs/development/file_formats/tscn.rst:391
-#, fuzzy
 msgid "'value'"
-msgstr "Valor"
+msgstr "'value'"
 
 #: ../../docs/development/file_formats/tscn.rst:392
 msgid "'method'"
@@ -62283,9 +62403,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:401
-#, fuzzy
 msgid "0 (constant)"
-msgstr "Constante PI."
+msgstr "0 (constante)"
 
 #: ../../docs/development/file_formats/tscn.rst:402
 msgid "1 (linear)"
@@ -62326,9 +62445,9 @@ msgid ""
 "love of creating a libre engine of exceptional quality."
 msgstr ""
 "Godot Engine es un proyecto sin fines de lucro, impulsado por la comunidad, "
-"libre y de código abierto. Casi todos (pero el desarrollador que nos lidera "
-"es Juan, más sobre esto abajo) están trabajando *pro bono* en su tiempo "
-"libre, por interés personal y por el amor de crear un motor libre de calidad "
+"libre y de código abierto. Casi todos (excepto nuestro desarrollador líder, "
+"Juan. Más sobre esto abajo) están trabajando *pro bono* en su tiempo libre, "
+"por interés personal y por el amor de crear un motor libre de calidad "
 "excepcional."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:11
@@ -65071,9 +65190,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/tutorials.rst:15
-#, fuzzy
 msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
-msgstr "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
+msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/resources.rst:6
 msgid ""

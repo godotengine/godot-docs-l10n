@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-13 14:08+0200\n"
-"PO-Revision-Date: 2018-06-13 11:52+0000\n"
-"Last-Translator: ekeimaja <ekeimaja@gmail.com>\n"
+"PO-Revision-Date: 2018-06-18 06:41+0000\n"
+"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -231,7 +231,6 @@ msgstr ""
 "alustat."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -241,11 +240,12 @@ msgid ""
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
 "Godot on täysin ilmainen ja avoimen lähdekoodin ohjelma hyvin sallivalla MIT "
-"lisenssillä. Ei vaatimuksia, ei rojalteja, ei mitään. Käyttäjän peli on "
-"hänen omansa, jokaista koodiriviä myöten. Godotin kehitys on täysin "
-"itsenäistä ja yhteisön ohjaamaa, joka kannustaa käyttäjiä muovaamaan "
-"moottoria odotuksia vastaavaksi. Godotia tukee ’Software Freedom Conservancy "
-"<https://sfconservancy.org>’ _not-for-profit. (voittoa tavoittelematon)."
+"lisenssillä. Ei vaatimuksia, ei rojalteja, ei mitään. Käyttäjien pelit ovat "
+"heidän omiaan, aina viimeistä pelimoottorin koodiriviä myöten. Godotin "
+"kehitys on täysin itsenäistä ja yhteisövetoista, mahdollistaen käyttäjiä "
+"muovaamaan moottoria odotuksiaan vastaavaksi. Sitä tukee ’Software Freedom "
+"Conservancy <https://sfconservancy.org>’ _not-for-profit. (voittoa "
+"tavoittelematon)."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -277,7 +277,6 @@ msgstr ""
 "org>`_ ja `ReadTheDocs <https://readthedocs.org/>`_ työkaluja."
 
 #: ../../docs/about/introduction.rst:55
-#, fuzzy
 msgid ""
 "You can contribute to Godot's documentation by opening issue tickets or "
 "sending patches via pull requests on its GitHub `source repository <https://"
@@ -286,8 +285,10 @@ msgid ""
 "docs/>`_."
 msgstr ""
 "Voit osallistua Godotin dokumentointiin avaamalla aiheen (issue) tai "
-"lähettämällä korjauksia muutospyyntönä (pull request) Godotin GitHub sivulla "
-"`source repository <https://github.com/godotengine/godot-docs>`_."
+"lähettämällä korjauksia muutospyyntönä (pull request) sen GitHub sivulla "
+"`source repository <https://github.com/godotengine/godot-docs>`_, tai "
+"kääntämällä sitä omalle kielellesi sivulla `Hosted Weblate <https://hosted."
+"weblate.org/projects/godot-engine/godot-docs/>`_."
 
 #: ../../docs/about/introduction.rst:61
 msgid ""
@@ -325,17 +326,16 @@ msgstr ""
 "`doc_faq`."
 
 #: ../../docs/about/introduction.rst:75
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the main *raison d'être* of this "
 "documentation, as it contains all the necessary information on using the "
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
-":ref:`sec-learn` osuus on syy tämän dokumentin olemassaololle, sillä se "
-"sisältää kaiken tarvittavan tiedon moottorin käyttämisestä pelien "
-"tekemiseen. Se alkaa :ref:`Askelittain <toc-learn-step_by_step>` "
-"tutoriaalilla, jonka tulisi olla aloituspiste kaikille uusille käyttäjille."
+":ref:`sec-learn` osuus on pääasiallinen syy tämän dokumentin olemassaololle, "
+"sillä se sisältää kaiken tarvittavan tiedon moottorin käyttämisestä pelien "
+"tekemiseen. Se alkaa :ref:`Askelittain <toc-learn-step_by_step>` oppaalla, "
+"jonka tulisi olla aloituspiste kaikille uusille käyttäjille."
 
 #: ../../docs/about/introduction.rst:80
 msgid ""
@@ -432,17 +432,17 @@ msgid "There are no usage restrictions on Godot"
 msgstr "Godotissa ei ole mitään käyttörajoituksia"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
 msgstr ""
-"Tämä tarkoittaa että voit käyttää sitä mitä tahansa peliä tai sovellusta "
-"varten, kaupallisesti, tai epäkaupallisesti"
+"Tämä tarkoittaa, että voit käyttää sitä mihin tahansa peliin tai "
+"sovellukseen, kaupallisesti, tai epäkaupallisesti, millä tahansa "
+"teollisuudenalalla"
 
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
-msgstr ""
+msgstr "Voit muokata, jakaa ja remiksata Godotia sydämesi kyllyydestä"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
@@ -486,41 +486,41 @@ msgstr "Mitä laitealustoja Godot tukee?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**Editorissa:**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**Pelien viennissä**"
 
 #: ../../docs/about/faq.rst:44
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (ja UWP)"
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr ""
+msgstr "Web"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
@@ -537,6 +537,11 @@ msgid ""
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
+"Jotkut käyttäjät ovat raportoineet kääntäneensä ja käyttäneensä Godotia "
+"Linuxissa ARM-pohjaisilla järjestelmillä, kuten Raspberry Pi:llä. "
+"Konsoleille on myös tekeillä joitakin kolmannen osapuolen epävirallisia "
+"käännöksiä. Mikään tästä ei kuitenkaan sisälly mukana tuleviin "
+"käännösskripteihin tai vientimalleihin."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -563,12 +568,18 @@ msgid ""
 "Note that C# and Visual Scripting support is comparatively young and "
 "GDScript still has some advantages as outlined below."
 msgstr ""
+"Huomioi, että C# ja Visual Scripting tuet ovat verrattain uusia ja "
+"GDScriptillä on edelleen joitakin etuja muihin kieliin nähden, kuten alla on "
+"kuvattu."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
 "Support for new languages can be added by third parties using the GDNative / "
 "NativeScript / PluginScript facilities. (See question about plugins below.)"
 msgstr ""
+"Kolmannet osapuolet voivat lisätä tukia uusille ohjelmointikielille "
+"käyttämällä GDNative / NativeScript / PluginScript palveluita. (Katso "
+"kysymys lisäosista alla.)"
 
 #: ../../docs/about/faq.rst:71
 msgid ""
@@ -576,12 +587,15 @@ msgid ""
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"Työn alla ovat esimerkiksi `Python <https://github.com/touilleMan/godot-"
+"python>`_ ja `Nim <https://github.com/pragmagic/godot-nim>`_ tuet Godotille."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
 "GDScript? Why use a custom scripting language instead of my language of "
 "choice?"
 msgstr ""
+"GDScript? Miksi käyttää räätälöityä skriptikieltä suosimani kielen sijaan?"
 
 #: ../../docs/about/faq.rst:77
 msgid ""
@@ -601,6 +615,10 @@ msgid ""
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please do the effort to learn GDScript, you will not regret it."
 msgstr ""
+"GDScript on suunniteltu alun alkaen toimimaan Godotin tapaan, enemmän kuin "
+"mikään muu kieli, ja se on yksinkertainen ja helppo oppia. Siihen "
+"tutustuminen ottaa vain päivän tai pari, jonka jälkeen sen hyödyt on helppo "
+"nähdä. Näe pikku vaiva ja opettele GDScriptiä, et tule katumaan sitä."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -609,6 +627,10 @@ msgid ""
 "but trying to use it instead of GDScript for an entire game is, in most "
 "cases, a waste of time."
 msgstr ""
+"Godotin C++-ohjelmointirajapinta on tehokas ja helppokäyttöinen (koko "
+"Godotin editori on tehty sillä), ja erinomainen väline peliprojektin "
+"joidenkin osien optimointiin, mutta koko pelin tekeminen sillä GDScriptin "
+"sijaan on useimmissa tapauksissa ajanhukkaa."
 
 #: ../../docs/about/faq.rst:96
 msgid ""
@@ -617,6 +639,11 @@ msgid ""
 "fact we authored tolua++ in the past, one of the most popular C++ binders). "
 "None of them worked as well as GDScript does now."
 msgstr ""
+"Kyllä, yli vuosikymmenen ajan koetimme käyttää useita eri virtuaalikoneita "
+"(ja jopa julkaisimme pelejä niitä käyttäen), sellaisia kuten Python, "
+"Squirrel ja Lua (itse asiassa vastasimme ennen tolua++ projektista, yhdestä "
+"suosituimmista C++-liitoksista). Mikään niistä ei toiminut yhtä hyvin kuin "
+"GDScript toimii nyt."
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -624,10 +651,12 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Lisää tietoa GDScriptiin tai dynaamisesti tyypitettyihin kieliin "
+"tutustumista varten löydät :ref:`doc_gdscript_more_efficiently` oppaasta."
 
 #: ../../docs/about/faq.rst:105
 msgid "For the more technically versed, proceed to the next item."
-msgstr ""
+msgstr "Teknisempää vastausta kaipaavat, siirtykää seuraavaan osioon."
 
 #: ../../docs/about/faq.rst:108
 msgid "I don't believe you. What are the technical reasons for the item above?"
@@ -642,36 +671,52 @@ msgid ""
 "No good thread support in most script VMs, and Godot uses threads (Lua, "
 "Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"Useimmissa virtuaalikoneissa (Lua, Python, Squirrel, JS, AS, jne.) ei ole "
+"hyvää säikeistystukea ja Godot käyttää säikeitä."
 
 #: ../../docs/about/faq.rst:114
 msgid ""
 "No good class extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"Useimmissa virtuaalikoneissa ei ole hyvää luokkien laajennustukea, josta "
+"johtuen Godotin toimintatapaan mukautuminen on hyvin tehotonta (Lua, Python, "
+"JS)."
 
 #: ../../docs/about/faq.rst:116
 msgid ""
 "Horrible interface for binding to C++, results in large amount of code, "
 "bugs, bottlenecks and general inefficiency (Lua, Python, Squirrel, JS, etc.)"
 msgstr ""
+"Kaamea rajapinta C++ liitäntää varten, mikä johtaa suureen määrään koodia, "
+"bugeja, pullonkauloja ja yleistä tehottomuutta (Lua, Python, Squirrel, JS, "
+"jne.)"
 
 #: ../../docs/about/faq.rst:119
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"Natiivien vektorityyppien puute (vector3, matrix4, jne.), joka johtaa hyvin "
+"alhaiseen suorituskykyyn räätälöityjä tyyppejä käyttäessä (Lua, Python, "
+"Squirrel, JS, AS, jne)."
 
 #: ../../docs/about/faq.rst:122
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"Roskienkerääjän käyttö aiheuttaa pysähdyksiä tai tarpeettoman suurta "
+"muistinkulutusta (Lua, Python, JS, AS, jne)."
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"Hankaluudet yhdistää koodieditoriin niin, että voitaisiin tarjota koodin "
+"täydennys, ajonaikainen editointi, jne. Kaikki tämä on hyvin tuettuna "
+"GDScriptissä."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
@@ -680,6 +725,10 @@ msgid ""
 "scripting with the game engine (yes, it's a rare but enjoyable situation "
 "when things just work). It's worth it, give it a try!"
 msgstr ""
+"GDScript on suunniteltu ratkaisemaan yllä mainitut ongelmat ja suoriutuu "
+"siitä hyvin. Opettele GDScript ja nauti sulavasta skriptauksen ja "
+"pelimoottorin integraatiosta (kyllä, tilanne jossa asiat vain toimivat on "
+"harvinainen ja nautinnollinen). Se on sen arvoista, kokeile!"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
@@ -53635,7 +53684,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:2
 msgid "TSCN File Format"
-msgstr ""
+msgstr "TSCN tiedostomuoto"
 
 #: ../../docs/development/file_formats/tscn.rst:4
 msgid ""
@@ -53645,6 +53694,12 @@ msgid ""
 "import the TSCN files are compiled into binary :code:`.scn` files stored "
 "inside the .import folder. This reduces the data size and speed up loading."
 msgstr ""
+":code:`.tscn` tiedostomuoto tulee sanoista \"Text SCeNe\" ja yksi tiedosto "
+"edustaa yhtä skenepuuta Godotissa. TSCN-tiedostoilla on se etu, että ne ovat "
+"lähes täysin ihmisen luettavissa ja helppoja hallita "
+"versionhallintajärjestelmissä. TSCN-tiedostojen tuonnin aikana ne "
+"käännetään :code:`.scn` binääritiedostoiksi ja tallennetaan .import "
+"kansioon. Tämä pienentää datakokoa ja nopeuttaa lataamista."
 
 #: ../../docs/development/file_formats/tscn.rst:10
 msgid ""
@@ -53652,6 +53707,9 @@ msgid ""
 "used to indicate to Godot that the file has been exported from another "
 "program and should not be edited by the user from within Godot."
 msgstr ""
+":code:`.escn` tiedostot ovat identtisiä TSCN-tiedostoihin nähden, mutta "
+"niitä käytetään ilmaisemaan Godotille, että tiedosto on tuotu toisesta "
+"ohjelmasta, eikä käyttäjän tule voida muokata sitä Godotissa."
 
 #: ../../docs/development/file_formats/tscn.rst:14
 msgid ""
@@ -53660,26 +53718,30 @@ msgid ""
 "master/scene/resources/scene_format_text.cpp>`_ in the class :code:"
 "`ResourceFormatLoaderText`"
 msgstr ""
+"Jos etsit täydellistä kuvausta, jäsennys on käsitelty tiedostossa "
+"`scene_format_text.cpp <https://github.com/godotengine/godot/blob/master/"
+"scene/resources/scene_format_text.cpp>`_, luokassa :code:"
+"`ResourceFormatLoaderText`"
 
 #: ../../docs/development/file_formats/tscn.rst:20
 msgid "File Structure"
-msgstr ""
+msgstr "Tiedoston rakenne"
 
 #: ../../docs/development/file_formats/tscn.rst:22
 msgid "There are five main sections inside the TSCN File:"
-msgstr ""
+msgstr "TSCN-tiedosto sisältää viisi pääosiota:"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 msgid "File Descriptor"
-msgstr ""
+msgstr "Tiedoston kuvaus"
 
 #: ../../docs/development/file_formats/tscn.rst:25
 msgid "External resources"
-msgstr ""
+msgstr "Ulkoiset resurssit"
 
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Internal resources"
-msgstr ""
+msgstr "Sisäiset resurssit"
 
 #: ../../docs/development/file_formats/tscn.rst:31
 msgid ""
@@ -53688,6 +53750,10 @@ msgid ""
 "theory) be the number of resources within the file, though in practice it's "
 "value seems not to matter."
 msgstr ""
+"Tiedoston kuvaus on muotoa :code:`[gd_scene load_steps=1 format=2]` ja sen "
+"tulee sijaita tiedostossa ensimmäisenä. Parametrin load_steps pitäisi "
+"(teoriassa) olla tiedoston sisältämien resurssien lukumäärä, joskaan sillä "
+"ei käytännössä tunnu olevan väliä."
 
 #: ../../docs/development/file_formats/tscn.rst:36
 msgid ""
@@ -53696,32 +53762,38 @@ msgid ""
 "for all of the items in the section. For example, the heading of all "
 "external resources should start with :code:`[ext_resource .....]`"
 msgstr ""
+"Näiden osioiden tulisi esiintyä järjestyksessä, mutta niiden erottelu voi "
+"olla hankalaa. Ainoa ero niiden välillä on otsikon ensimmäinen elementti, "
+"joka on yhdistävä tekijä kaikille osion muille kohdille. Esimerkiksi "
+"kaikkien ulkoisten resurssien otsikko alkaa :code:`[ext_resource .....]`"
 
 #: ../../docs/development/file_formats/tscn.rst:44
 msgid "Entries inside the file"
-msgstr ""
+msgstr "Tiedoston kohdat"
 
 #: ../../docs/development/file_formats/tscn.rst:45
 msgid ""
 "A heading looks like: :code:`[<resource_type> key=value key=value "
 "key=value ...]` Where resource_type is one of:"
 msgstr ""
+"Otsikko on muotoa :code:`[<resource_type> key=value key=value "
+"key=value ...]`, missä resource_type on jokin seuraavista:"
 
 #: ../../docs/development/file_formats/tscn.rst:49
 msgid "ext_resource"
-msgstr ""
+msgstr "ext_resource"
 
 #: ../../docs/development/file_formats/tscn.rst:50
 msgid "sub_resource"
-msgstr ""
+msgstr "sub_resource"
 
 #: ../../docs/development/file_formats/tscn.rst:51
 msgid "node"
-msgstr ""
+msgstr "node"
 
 #: ../../docs/development/file_formats/tscn.rst:52
 msgid "connection"
-msgstr ""
+msgstr "connection"
 
 #: ../../docs/development/file_formats/tscn.rst:54
 msgid ""
@@ -53729,10 +53801,14 @@ msgid ""
 "values can be complex datatypes such as arrays, transformations, colors, and "
 "so on. For example, a spatial node looks like:"
 msgstr ""
+"Kunkin otsikon alla voi olla vapaavalintainen määrä :code:`key = value` "
+"(avain-arvo) pareja. Arvot voivat olla monimutkaisia tietotyyppejä, kuten "
+"taulukoita, muunnoksia, värejä ja niin edelleen. Esimerkiksi tilasolmu "
+"(spatial node) näyttää tältä:"
 
 #: ../../docs/development/file_formats/tscn.rst:64
 msgid "The Scene Tree"
-msgstr ""
+msgstr "Skenepuu"
 
 #: ../../docs/development/file_formats/tscn.rst:66
 msgid ""
@@ -53740,30 +53816,33 @@ msgid ""
 "it's name, parent and (most of the time) a type. For example :code:`[node "
 "type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]`"
 msgstr ""
+"Skenepuu koostuu... solmuista! Kunkin solmun otsikko sisältää nimen, "
+"yläsolmun nimen ja (yleensä) tyypin. Esimerkiksi :code:`[node type=\"Camera"
+"\" name=\"PlayerCamera\" parent=\"Player/Head\"]`"
 
 #: ../../docs/development/file_formats/tscn.rst:70
 msgid "Other valid keywords include:"
-msgstr ""
+msgstr "Muita avainsanoja ovat:"
 
 #: ../../docs/development/file_formats/tscn.rst:72
 msgid "instance"
-msgstr ""
+msgstr "instance (ilmentymä)"
 
 #: ../../docs/development/file_formats/tscn.rst:73
 msgid "instance_placeholder"
-msgstr ""
+msgstr "instance_placeholder (ilmentymän paikanpitäjä)"
 
 #: ../../docs/development/file_formats/tscn.rst:74
 msgid "owner"
-msgstr ""
+msgstr "owner (omistaja)"
 
 #: ../../docs/development/file_formats/tscn.rst:75
 msgid "index (if two nodes have the same name)"
-msgstr ""
+msgstr "index (jos kahdella solmulla on sama nimi)"
 
 #: ../../docs/development/file_formats/tscn.rst:76
 msgid "groups"
-msgstr ""
+msgstr "groups (ryhmät)"
 
 #: ../../docs/development/file_formats/tscn.rst:78
 msgid ""
@@ -53774,6 +53853,13 @@ msgid ""
 "root's name. If it is a direct child of the scene root, it should be :code:`"
 "\".\"`. Here is an example scene tree (but without any node content). ::"
 msgstr ""
+"Ensimmäinen solmu on juurisolmu ja sen otsikossa ei tule olla :code:"
+"`parent=Path/To/Node` attribuuttia. Kaikissa skenetiedostoissa tulee olla "
+"tasan yksi juurisolmu. Jos näin ei ole, Godot ei pysty lataamaan tai tuomaan "
+"tiedostoa. Muiden solmujen yläsolmujen polkujen tulee olla absoluuttisia, "
+"eikä niiden tule sisältää skenen juuren nimeä. Jos ne sijaitsevat suoraan "
+"skenen juuren alla, niiden polkujen tulee olla :code:`\".\"`. Seuraavassa on "
+"esimerkki skenepuusta ilman solmusisältöä. ::"
 
 #: ../../docs/development/file_formats/tscn.rst:91
 msgid ""
@@ -53781,11 +53867,13 @@ msgid ""
 "incomplete. Fortunately it is easy to find out because you can simply save a "
 "file with that node in it. Some example nodes are:"
 msgstr ""
+"Kuten sisäisten resurssien tapauksessa, dokumentaatio kullekin solmulle on "
+"tällä hetkellä keskeneräinen. Niiden sisältö on kuitenkin helppo selvittää "
+"tallentamalla haluttu solmu tiedostoon. Joitakin esimerkkejä solmuista:"
 
 #: ../../docs/development/file_formats/tscn.rst:129
-#, fuzzy
 msgid "Node Path"
-msgstr "Resurssipolku"
+msgstr "Solmun polku"
 
 #: ../../docs/development/file_formats/tscn.rst:131
 msgid ""
@@ -53795,10 +53883,17 @@ msgid ""
 "NodePath like mesh node use :code:`NodePath()` to point to its skeleton, "
 "animation track use :code:`NodePath()` points to animated attribute in node."
 msgstr ""
+"Koska puurakenne on riittämätön kuvaamaan koko skeneä, Godot käyttää :code:"
+"`NodePath(Path/To/Node)` rakennetta viittaamaan toiseen solmuun tai "
+"attribuuttiin missä tahansa skenepuussa. Esimerkkinä tyypillisistä "
+"käyttötapauksista NodePath-rakenteelle, mesh-solmu käyttää :code:"
+"`NodePath()` rakennetta osoittamaan luurankomalliin ja animaatioraita "
+"käyttää :code:`NodePath()` rakennetta osoittamaan solmun animoitavaa "
+"attribuuttia."
 
 #: ../../docs/development/file_formats/tscn.rst:154
 msgid "Skeleton"
-msgstr ""
+msgstr "Skeleton"
 
 #: ../../docs/development/file_formats/tscn.rst:155
 msgid ""
@@ -53806,63 +53901,70 @@ msgid ""
 "bones described in key, value pair in the format :code:`bones/Id/"
 "Attribute=Value`, attributes of bone consisits of"
 msgstr ""
+"Skeleton-solmu periytyy Spatial-solmusta. Sen lisäksi sillä voi olla lista "
+"luita (bones) avain-arvo pareina muodossa :code:`bones/Id/Attribute=Value`. "
+"Luiden attribuutit ovat"
 
 #: ../../docs/development/file_formats/tscn.rst:159
 msgid "name"
-msgstr ""
+msgstr "name"
 
 #: ../../docs/development/file_formats/tscn.rst:160
 msgid "parent"
-msgstr ""
+msgstr "parent"
 
 #: ../../docs/development/file_formats/tscn.rst:161
 msgid "rest"
-msgstr ""
+msgstr "rest"
 
 #: ../../docs/development/file_formats/tscn.rst:162
 msgid "pose"
-msgstr ""
+msgstr "pose"
 
 #: ../../docs/development/file_formats/tscn.rst:163
 #: ../../docs/development/file_formats/tscn.rst:384
 msgid "enabled"
-msgstr ""
+msgstr "enabled"
 
 #: ../../docs/development/file_formats/tscn.rst:164
 msgid "bound_children"
-msgstr ""
+msgstr "bound_children"
 
 #: ../../docs/development/file_formats/tscn.rst:166
 msgid ":code:`name` must put as the first attribute of each bone"
-msgstr ""
+msgstr ":code:`name` täytyy olla jokaisen luun ensimmäinen attribuutti"
 
 #: ../../docs/development/file_formats/tscn.rst:168
 msgid ""
 ":code:`parent` is the index of parent bone in the bone list, with parent "
 "index, the bone list is built to a bone tree"
 msgstr ""
+":code:`parent` on indeksi ylempään luuhun luulistassa. Sen avulla "
+"luulistasta muodostuu puu"
 
 #: ../../docs/development/file_formats/tscn.rst:171
 msgid ":code:`rest` is the transform matrix of bone in rest position"
-msgstr ""
+msgstr ":code:`rest` on luun muunnosmatriisi lepoasennossa"
 
 #: ../../docs/development/file_formats/tscn.rst:173
 msgid ":code:`pose` is the pose matrix use :code:`rest` as basis"
-msgstr ""
+msgstr ":code:`pose` on asentomatriisi, joka käyttää :code:`rest` pohjanaan"
 
 #: ../../docs/development/file_formats/tscn.rst:175
 msgid ""
 ":code:`bound_children` is a list of NodePath() points to BoneAttachments "
 "belong to this bone"
 msgstr ""
+":code:`bound_children` on lista NodePath() rakenteita, jotka viittaavat "
+"BoneAttachment-solmuihin, jotka kuuluvat tälle luulle"
 
 #: ../../docs/development/file_formats/tscn.rst:178
 msgid "An example of a skeleton node with two bones:"
-msgstr ""
+msgstr "Esimerkki skeleton-solmusta kahdella luulla:"
 
 #: ../../docs/development/file_formats/tscn.rst:198
 msgid "BoneAttachment"
-msgstr ""
+msgstr "BoneAttachment"
 
 #: ../../docs/development/file_formats/tscn.rst:199
 msgid ""
@@ -53871,15 +53973,20 @@ msgid ""
 "`bone_name=NameOfBone`, and the corresponding bone being the parent has the "
 "BoneAttachment node in its :code:`bound_children` list."
 msgstr ""
+"BoneAttachment-solmu on välillinen solmu, jolla kuvataan jonkin solmun "
+"kiinnittymistä yhteen luuhun Skeleton-solmussa. BoneAttachment-solmulla on :"
+"code:`bone_name=NameOfBone` ja vastaavalla isäntäluulla on BoneAttachment-"
+"solmu :code:`bound_children` listassaan."
 
 #: ../../docs/development/file_formats/tscn.rst:204
 msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
+"Esimerkki yhdestä MeshInstance-solmusta, joka toimii Skeletonin luun "
+"isäntänä:"
 
 #: ../../docs/development/file_formats/tscn.rst:228
-#, fuzzy
 msgid "AnimationPlayer"
-msgstr "Animaatio"
+msgstr "Animaatiotoistin (AnimationPlayer)"
 
 #: ../../docs/development/file_formats/tscn.rst:229
 msgid ""
@@ -53889,6 +53996,11 @@ msgid ""
 "AnimationPlayer. The root node is stored as :code:`root_node=NodePath(Path/"
 "To/Node)`."
 msgstr ""
+"AnimationPlayer toimii animaatiokirjastona. Animaatiot on listattu muodossa :"
+"code:`anim/Name=SubResource(ResourceId)`, joista kukin viittaa Animationin "
+"sisäiseen resurssiin. Kaikki animaatioresurssit käyttävät AnimationPlayer "
+"juurisolmua. Juurisolmu on tallennettu muodossa :code:"
+"`root_node=NodePath(Path/To/Node)`."
 
 #: ../../docs/development/file_formats/tscn.rst:250
 msgid ""
@@ -53896,6 +54008,9 @@ msgid ""
 "node will have an accompanying ArrayMesh resource. The ArrayMesh resource "
 "may be either internal or external to the TSCN file."
 msgstr ""
+"Resurssit ovat komponentteja, joista solmut muodostuvat. Esimerkiksi "
+"MeshInstance-solmulla on ArrayMesh-resurssi. ArrayMesh-resurssi voi olla "
+"joko TSCN-tiedoston sisäinen tai sen ulkopuolinen."
 
 #: ../../docs/development/file_formats/tscn.rst:254
 msgid ""
@@ -53905,34 +54020,42 @@ msgid ""
 "methods to refer to internal and external resource, you can have the same ID "
 "for both an internal and external resource."
 msgstr ""
+"Viittaukset resursseihin hoidetaan resurssien otsikoissa olevilla "
+"tunnusnumeroilla. Ulkoisiin ja sisäisiin resursseihin viitataan :code:"
+"`ExtResource(id)` ja :code:`SubResource(id)`. Koska sisäisiin ja ulkoisiin "
+"resursseihin viitataan eri metodeilla, niillä voi olla sama tunnusluku."
 
 #: ../../docs/development/file_formats/tscn.rst:260
 msgid ""
 "For example, to refer to the resource :code:`[ext_resource id=3 type="
 "\"PackedScene\" path=....]` you would use :code:`ExtResource(3)`"
 msgstr ""
+"Esimerkiksi resurssiin :code:`[ext_resource id=3 type=\"PackedScene\" "
+"path=....]` voidaan viitata näin: :code:`ExtResource(3)`"
 
 #: ../../docs/development/file_formats/tscn.rst:266
 msgid "External Resources"
-msgstr ""
+msgstr "Ulkoiset resurssit"
 
 #: ../../docs/development/file_formats/tscn.rst:268
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
 "itself. An external resource consists of:"
 msgstr ""
+"Ulkoiset resurssit ovat linkkejä resursseihin, jotka eivät sisälly TSCN-"
+"tiedostoon itsessään. Ulkoinen resurssi koostuu seuraavista:"
 
 #: ../../docs/development/file_formats/tscn.rst:271
 msgid "A path"
-msgstr ""
+msgstr "Polku (\"path\")"
 
 #: ../../docs/development/file_formats/tscn.rst:272
 msgid "A type"
-msgstr ""
+msgstr "Tyyppi (\"type\")"
 
 #: ../../docs/development/file_formats/tscn.rst:273
 msgid "An ID"
-msgstr ""
+msgstr "Tunnus (\"id\")"
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
@@ -53940,14 +54063,17 @@ msgid ""
 "thus prefixed with :code:`res://`, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
+"Godot luo absoluuttiset polut aina suhteessa resurssihakemistoon ja siksi ne "
+"alkavat :code:`res://`, mutta TSCN-tiedoston sijaintiin suhteelliset polut "
+"ovat myös mahdollisia."
 
 #: ../../docs/development/file_formats/tscn.rst:279
 msgid "Some example external resources are:"
-msgstr ""
+msgstr "Joitakin esimerkkejä ulkoisista resursseista:"
 
 #: ../../docs/development/file_formats/tscn.rst:288
 msgid "Internal Resources"
-msgstr ""
+msgstr "Sisäiset resurssit"
 
 #: ../../docs/development/file_formats/tscn.rst:290
 msgid ""
@@ -53957,6 +54083,11 @@ msgid ""
 "have a path. Internal resources also have :code:`key=value` pairs under each "
 "heading. For example, a capsule collision shape looks like:"
 msgstr ""
+"TSCN-tiedosto voi sisältää meshejä, materiaaleja ja muuta dataa, ja nämä "
+"sisältyvät tiedoston sisäisten resurssien osioon. Sisäisen resurssin otsikko "
+"näyttää samalta kuin ulkoisenkin, mutta sillä ei ole polkua. Sisäisillä "
+"resursseilla on myös :code:`key=value` pareja kunkin otsikon alla. "
+"Esimerkiksi kapselitörmäysmuoto näyttää tältä:"
 
 #: ../../docs/development/file_formats/tscn.rst:303
 msgid ""
@@ -53965,6 +54096,10 @@ msgid ""
 "before the reference to it. Thus, in the internal resources section of the "
 "file, order does matter."
 msgstr ""
+"Jotkin sisäiset resurssit voivat sisältää linkkejä muihin sisäisiin "
+"resursseihin (kuten mesh, jolla on materiaali). Tässä tapauksessa "
+"viitattavan resurssin on esiinnyttävä ennen viittausta siihen. Näin ollen "
+"tiedoston sisäisten resurssien osiossa järjestyksellä on väliä."
 
 #: ../../docs/development/file_formats/tscn.rst:308
 msgid ""
@@ -53972,160 +54107,174 @@ msgid ""
 "complete, and while some can be found through inspecting resources of saved "
 "files, others can only be found by looking through Godot's source."
 msgstr ""
+"Valitettavasti näiden aliresurssien dokumentaatio ei ole vielä valmis, ja "
+"vaikka osaa niistä voi tutkia tarkastelemalla tallennettujen tiedostojen "
+"resursseja, toisia voi tutkia vain lukemalla Godotin lähdekoodia."
 
 #: ../../docs/development/file_formats/tscn.rst:313
 msgid "ArrayMesh"
-msgstr ""
+msgstr "ArrayMesh"
 
 #: ../../docs/development/file_formats/tscn.rst:314
 msgid ""
 "ArrayMesh consists of several surfaces, each in the format :code:`surface"
 "\\Index={}`, each surface is a set of vertex and a material."
 msgstr ""
+"ArrayMesh koostuu useista pinnoista, jotka ovat muodossa :code:`surface"
+"\\Index={}`. Kullakin pinnalla on joukko kärkipisteitä ja materiaali."
 
 #: ../../docs/development/file_formats/tscn.rst:317
 msgid "TSCN support two format of surface,"
-msgstr ""
+msgstr "TSCN tukee kahta erilaista pinnan formaattia,"
 
 #: ../../docs/development/file_formats/tscn.rst:319
 msgid "for the old format, each surface has three essential keys:"
-msgstr ""
+msgstr "vanhassa formaatissa kullakin pinnalla on kolme olennaista avainta:"
 
 #: ../../docs/development/file_formats/tscn.rst:321
 msgid "primitive"
-msgstr ""
+msgstr "primitive"
 
 #: ../../docs/development/file_formats/tscn.rst:322
 msgid "arrays"
-msgstr ""
+msgstr "arrays"
 
 #: ../../docs/development/file_formats/tscn.rst:323
 msgid "morph_arrays"
-msgstr ""
+msgstr "morph_arrays"
 
 #: ../../docs/development/file_formats/tscn.rst:325
 msgid ""
 ":code:`primitive` is an enumerate variable, :code:`primitive=4` which is "
 "PRIMITIVE_TRIANGLES is frequently used."
 msgstr ""
+":code:`primitive` on enumeroitu muuttuja, :code:`primitive=4` joka on "
+"PRIMITIVE_TRIANGLES on usein käytetty."
 
 #: ../../docs/development/file_formats/tscn.rst:328
 msgid ":code:`arrays` as name suggestes is an array of array, it contains:"
 msgstr ""
+":code:`arrays` kuten nimikin vihjaa, on taulukko taulukoita, joka sisältää:"
 
 #: ../../docs/development/file_formats/tscn.rst:330
 msgid "a array of vertex position"
-msgstr ""
+msgstr "taulukko kärkipisteiden sijainteja"
 
 #: ../../docs/development/file_formats/tscn.rst:331
 msgid "tagents array"
-msgstr ""
+msgstr "taulukko tangentteja"
 
 #: ../../docs/development/file_formats/tscn.rst:332
 msgid "vertex color array"
-msgstr ""
+msgstr "taulukko kärkipisteiden värejä"
 
 #: ../../docs/development/file_formats/tscn.rst:333
 msgid "UV array 1"
-msgstr ""
+msgstr "UV-taulukko 1"
 
 #: ../../docs/development/file_formats/tscn.rst:334
 msgid "UV array 2"
-msgstr ""
+msgstr "UV-taulukko 2"
 
 #: ../../docs/development/file_formats/tscn.rst:335
 msgid "bone index array"
-msgstr ""
+msgstr "taulukko luuindeksejä"
 
 #: ../../docs/development/file_formats/tscn.rst:336
 msgid "bone weight array"
-msgstr ""
+msgstr "taulukko luiden painoja"
 
 #: ../../docs/development/file_formats/tscn.rst:337
 msgid "vertex index array"
-msgstr ""
+msgstr "taulukko kärkipisteiden indeksejä"
 
 #: ../../docs/development/file_formats/tscn.rst:339
 msgid ""
 ":code:`morph_arrays` is an array of morph, each morph is exactly an :code:"
 "`arrays` without vertex index array."
 msgstr ""
+":code:`morph_arrays` on taulukko morpheja. Kukin morph on tarkalleen :code:"
+"`arrays` ilman kärkipisteiden indeksitaulukkoa."
 
 #: ../../docs/development/file_formats/tscn.rst:342
 msgid "An example of ArrayMesh:"
-msgstr ""
+msgstr "Esimerkki ArrayMeshistä:"
 
 #: ../../docs/development/file_formats/tscn.rst:366
 msgid ""
 "An animation resource consists of tracks. Besides, it has 'length', 'loop' "
 "and 'step' applied to all the tracks."
 msgstr ""
+"Animaatioresurssi koostuu raidoista. Lisäksi kullakin raidalla on pituus "
+"('length'), kierto ('loop') ja askellus ('step')."
 
 #: ../../docs/development/file_formats/tscn.rst:369
 msgid "length"
-msgstr ""
+msgstr "length"
 
 #: ../../docs/development/file_formats/tscn.rst:370
 msgid "loop"
-msgstr ""
+msgstr "loop"
 
 #: ../../docs/development/file_formats/tscn.rst:371
 msgid "step"
-msgstr ""
+msgstr "step"
 
 #: ../../docs/development/file_formats/tscn.rst:373
 msgid ":code:`length` and :code:`step` are both time in seconds"
-msgstr ""
+msgstr "Sekä :code:`length` että :code:`step` ilmaisevat aikaa sekunteina"
 
 #: ../../docs/development/file_formats/tscn.rst:375
 msgid ""
 "Each track is described by a list of key, value pairt in the format :code:"
 "`tracks/Id/Attribute`, it includs:"
 msgstr ""
+"Kukin raita on kuvattu listana avainruutujen ja arvojen pareja :code:`tracks/"
+"Id/Attribute` muodossa, sisältäen:"
 
 #: ../../docs/development/file_formats/tscn.rst:378
 msgid "type"
-msgstr ""
+msgstr "type (tyyppi)"
 
 #: ../../docs/development/file_formats/tscn.rst:379
 msgid "path"
-msgstr ""
+msgstr "path (polku)"
 
 #: ../../docs/development/file_formats/tscn.rst:380
 msgid "interp"
-msgstr ""
+msgstr "interp (interpolaatio)"
 
 #: ../../docs/development/file_formats/tscn.rst:381
 msgid "keys"
-msgstr ""
+msgstr "keys (avainruudut)"
 
 #: ../../docs/development/file_formats/tscn.rst:382
 msgid "loop_wrap"
-msgstr ""
+msgstr "loop_wrap (kierron tyyppi)"
 
 #: ../../docs/development/file_formats/tscn.rst:383
 msgid "imported"
-msgstr ""
+msgstr "imported"
 
 #: ../../docs/development/file_formats/tscn.rst:387
 msgid ""
 "The :code:`type` must be put as the first attribute of each track. The value "
 "of :code:`type` can be:"
 msgstr ""
+"Kunkin raidan ensimmäisen attribuutin on oltava :code:`type`. :code:`type` "
+"arvo voi olla:"
 
 #: ../../docs/development/file_formats/tscn.rst:390
-#, fuzzy
 msgid "'transform'"
-msgstr "Muunna"
+msgstr "'transform' (muunnos)"
 
 #: ../../docs/development/file_formats/tscn.rst:391
-#, fuzzy
 msgid "'value'"
-msgstr "Arvo"
+msgstr "'value' (arvo)"
 
 #: ../../docs/development/file_formats/tscn.rst:392
 msgid "'method'"
-msgstr ""
+msgstr "'method' (metodi)"
 
 #: ../../docs/development/file_formats/tscn.rst:394
 msgid ""
@@ -54133,25 +54282,29 @@ msgid ""
 "is the path from animation root node (property of AnimationPlayer) to the "
 "animated node or attrbute."
 msgstr ""
+"Attribuutilla :code:`path` muoto on :code:`NodePath(Path/To/Node:"
+"Attribute)`. Se on polku animaation juurisolmusta (AnimationPlayer solmun "
+"ominaisuus) animoituun solmuun tai attribuuttiin."
 
 #: ../../docs/development/file_formats/tscn.rst:398
 msgid ""
 "The :code:`interp` is the method to interpolate frames from the keyframes. "
 "it is a enum variable and can has value:"
 msgstr ""
+":code:`interp` on menetelmä, jolla ruutuja interpoloidaan avainruuduista. Se "
+"on enumeraatiomuuttuja, jolla voi olla seuraavat arvot:"
 
 #: ../../docs/development/file_formats/tscn.rst:401
-#, fuzzy
 msgid "0 (constant)"
-msgstr "Vakiot"
+msgstr "0 (vakio)"
 
 #: ../../docs/development/file_formats/tscn.rst:402
 msgid "1 (linear)"
-msgstr ""
+msgstr "1 (lineaarinen)"
 
 #: ../../docs/development/file_formats/tscn.rst:403
 msgid "2 (cubic)"
-msgstr ""
+msgstr "2 (kuutiollinen)"
 
 #: ../../docs/development/file_formats/tscn.rst:405
 msgid ""
@@ -55667,16 +55820,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:104
-#, fuzzy
 msgid ""
 "This documentation and every page it contains is published under the terms "
 "of the `Creative Commons Attribution 3.0 license (CC-BY-3.0) <https://"
 "tldrlegal.com/license/creative-commons-attribution-(cc)>`_, with attribution "
 "to \"Juan Linietsky, Ariel Manzur and the Godot community\"."
 msgstr ""
-"Kaikki sisältö on sallivan Creative Commons Attribution 3.0 (`CC-BY 3.0 "
-"<https://creativecommons.org/licenses/by/3.0/>`_) lisenssin alaista, "
-"liitteellä \"Juan Linietsky, Ariel Manzur and the Godot Engine community\"."
+"Tämä dokumentaatio ja sen sisältö on `Creative Commons Attribution 3.0 "
+"license (CC-BY-3.0) <https://tldrlegal.com/license/creative-commons-"
+"attribution-(cc)>`_ lisenssin alaista, liitteellä \"Juan Linietsky, Ariel "
+"Manzur and the Godot Engine community\"."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:107
 msgid ""
