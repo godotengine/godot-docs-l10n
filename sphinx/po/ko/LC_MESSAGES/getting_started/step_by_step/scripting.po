@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -540,49 +540,60 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:248
 msgid "Next, write a function which will be called when the button is pressed:"
-msgstr ""
+msgstr "그런 다음 버튼을 누르면 호출되는 기능을 작성합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:264
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_connect>`."
 msgstr ""
+"마지막으로 버튼의 \"누름\"신호를 \"ref:\"Object."
+"connect()<class_Object_connect>을 사용하여\"_Ready\"에 연결합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:280
 msgid "The final script should look like this:"
-msgstr ""
+msgstr "최종 스크립트는 다음과 같아야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:314
+#: ../../docs/getting_started/step_by_step/scripting.rst:317
 msgid ""
 "Run the scene and press the button. You should get the following result:"
-msgstr ""
+msgstr "씬을 실행하고 버튼을 누르면 다음과 같은 결과를 얻을 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:318
+#: ../../docs/getting_started/step_by_step/scripting.rst:321
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr ""
+msgstr "어머, 안녕하세요! 첫번째 씬을 스크립팅 하신 것을 축하 드립니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:322
+#: ../../docs/getting_started/step_by_step/scripting.rst:325
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
+"이 튜토리얼에 관한 흔한 오해는 ``get_node(path)``가 작동하는 방법입니다. 주어"
+"진 노드의 경우,``get_node(path)``는 직계 자식을 검색합니다. 위 코드에서 버튼"
+"은 패널의 자식임을 의미합니다. 만일 버튼이 패널이 아닌 라벨의 하위 항목이라"
+"면 얻게 될 코드는 다음과 같습니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:340
+#: ../../docs/getting_started/step_by_step/scripting.rst:343
 msgid "Also, remember that nodes are referenced by name, not by type."
-msgstr ""
+msgstr "또한 노드는 유형이 아닌 이름으로 참조됩니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:344
+#: ../../docs/getting_started/step_by_step/scripting.rst:347
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
+"연결 다이얼로그의 오른쪽 패널은 특정 값을 연결된 함수의 매개변수에 바인딩 하"
+"기 위한 것입니다. 다른 유형의 값을 추가하거나 제거할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:348
+#: ../../docs/getting_started/step_by_step/scripting.rst:351
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
+"코드 접근도 기본적으로 비어 있는 4번째 ``배열`` 매개 변수를 사용하여 이를 가"
+"능하게 합니다. 더 많은 정보를 원하시면 언제든지 ``Object.connect`` 방법에 대"
+"해 읽어 보시기 바랍니다."

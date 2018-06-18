@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 msgid "Exporting"
-msgstr ""
+msgstr "Экспорт"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 msgid "Overview"
@@ -32,6 +32,11 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
+"Теперь у вас есть рабочая игра, вы, вероятно, хотите поделиться своим "
+"успехом с другими. Однако это не практично просить ваших друзей, чтобы "
+"скачали Godot, для открытия вашего проекта с игрой. Вместо этого, вы можете "
+"*экспортировать* ваш проект, превращая его в \"пакет\", который может "
+"открыть любой пользователь."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -40,12 +45,18 @@ msgid ""
 "a variety of platforms. First, however, we need to make some changes to the "
 "way the game works."
 msgstr ""
+"Способ экспорта вашей игры зависит от того, на какую платформу вы "
+"ориентируетесь. В этом уроке вы научитесь экспортировать \"Dodge the Creeps"
+"\" игру для различных платформ. Во-первых, нам нужно внести некоторые "
+"изменения в работе игры."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"Если вы не сделали \"Dodge the Creeps\" для себя, пожалуйста, прочтите :ref:"
+"`doc_your_first_game`, прежде чем продолжить этот урок."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 #, fuzzy
@@ -60,6 +71,11 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"В \"Dodge the Creeps\" мы использовали клавиши управления для перемещения "
+"игрока. Это хорошо, если ваша игра для PC, но на телефоне или планшете, "
+"требуется поддержка сенсорного ввода. Потому что событие Click может быть "
+"обрабатываться так же, как сенсорное событие, мы превращаем игру в click-and-"
+"move (клик и перемещение)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
 msgid ""
@@ -69,12 +85,19 @@ msgid ""
 "computer without a touchscreen. Also, make sure to select \"portrait\" under "
 "*Orientation*."
 msgstr ""
+"Первый шаг, открыть «Параметры проекта» и найти *Handheld* раздел. Включите "
+"*Emulate Touchscreen*. Это позволит обрабатывать события щелчка мыши так же, "
+"как сенсорные события, так что вы можете проверить игру на компьютере без "
+"сенсорного экрана. Кроме того, не забудьте выбрать \"portrait\" под "
+"*Orientation*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
 "In the *Stretch* section, set *Mode* to \"2d\" and *Aspect* to \"keep\". "
 "This ensures that the game scales consistently on different sized screens."
 msgstr ""
+"В разделе *Stretch*, измените *Mode* на «2d» и *Aspect* на \"keep\".Теперь "
+"игра будет масштабируется на экранах разных размеров."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 msgid ""
@@ -278,6 +301,8 @@ msgid ""
 "In order to build your game for iOS, you must have a computer running MacOS "
 "with Xcode installed."
 msgstr ""
+"Чтобы создать игру для iOS, вы должны иметь компьютер с операционной "
+"системой MacOS с установленным Xcode."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -286,20 +311,27 @@ msgid ""
 "can find by logging in to your Apple developer account and looking in the "
 "\"Membership\" section."
 msgstr ""
+"Перед экспортом, вы должны изменить некоторые параметры . Во-первых, \"App "
+"Store Team Id\" вы можете найти, войдя вашу учетную запись разработчика "
+"Apple и посмотреть в разделе \"Membership\" ."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:246
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
+"Вы также должны загрузить значки и изображение заставки экрана, как показано "
+"ниже:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Click \"Export Project\" and select a destination folder."
-msgstr ""
+msgstr "Нажмите кнопку «Экспортировать проект» и выберите папку назначения."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
 msgstr ""
+"Как только вы успешно экспортируете проект, вы обнаружите, что в вашем "
+"выбранном месте созданы следующие папки и файлы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:257
 msgid ""
@@ -307,22 +339,29 @@ msgid ""
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
 "com/xcode/mac/current/#/devc8c2a6be1 for more information."
 msgstr ""
+"Теперь вы можете открыть в Xcode и создать проект для iOS. Порядок сборки "
+"Xcode выходит за рамки данного урока. См. https://help.apple.com/xcode/mac/"
+"current/#/devc8c2a6be1 для получения дополнительной информации."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:263
 msgid "HTML5 (web)"
-msgstr ""
+msgstr "HTML5 (web)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:265
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
+"Нажмите кнопку \"Экспорт проекта\" на базе предустановки HTML5 . Нам не "
+"нужно изменять какие-либо параметры по умолчанию."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:268
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
 msgstr ""
+"Когда экспорт будет завершен, будет создана папка, содержащая следующие "
+"файлы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""

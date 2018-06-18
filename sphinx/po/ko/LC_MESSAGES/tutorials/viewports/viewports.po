@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,230 +27,353 @@ msgstr "소개"
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
 msgid ""
-"Godot has a small but useful feature called viewports. Viewports are, as the "
-"name implies, rectangles where the world is drawn. They have three main "
-"uses, but can flexibly adapted to a lot more. All this is done via the :ref:"
-"`Viewport <class_Viewport>` node."
+"Think of :ref:`Viewports <class_Viewport>` as a screen that the game is "
+"projected onto. In order to see the game we need to have a surface to draw "
+"it on, this surface is the Root :ref:`Viewport <class_Viewport>`."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:16
-msgid "The main uses in question are:"
+msgid ""
+":ref:`Viewports <class_Viewport>` can also be added to the scene so that "
+"there are multiple surfaces to draw on. When we are drawing to a :ref:"
+"`Viewport <class_Viewport>` that is not the Root we call it a render target. "
+"We can access the contents of a render target by accessing its "
+"corresponding :ref:`texture <class_ViewportTexture>`. By using a :ref:"
+"`Viewport <class_Viewport>` as a render target we can either render multiple "
+"scenes simultaneously or we can render to a :ref:`texture "
+"<class_ViewportTexture>` which is applied to an object in the scene, for "
+"example a dynamic skybox."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:18
+#: ../../docs/tutorials/viewports/viewports.rst:25
 msgid ""
-"**Scene Root**: The root of the active scene is always a Viewport. This is "
-"what displays the scenes created by the user. (You should know this by "
-"having read previous tutorials!)"
+":ref:`Viewports <class_Viewport>` have a variety of use cases including:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:21
-msgid ""
-"**Sub-Viewports**: These can be created when a Viewport is a child of a :ref:"
-"`Control <class_Control>`."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:23
-msgid ""
-"**Render Targets**: Viewports can be set to \"RenderTarget\" mode. This "
-"means that the viewport is not directly visible, but its contents can be "
-"accessed via a :ref:`Texture <class_Texture>`."
+#: ../../docs/tutorials/viewports/viewports.rst:27
+msgid "Rendering 3d objects within a 2d game"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:28
-msgid "Input"
+msgid "Rendering 2d elements in a 3d game"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:29
+msgid "Rendering dynamic textures"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:30
+msgid "Generating procedural textures at runtime"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:31
+msgid "Rendering multiple cameras in the same scene"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:33
 msgid ""
-"Viewports are also responsible of delivering properly adjusted and scaled "
-"input events to all its children nodes. Both the root viewport and sub-"
-"viewports do this automatically, but render targets do not. Because of this, "
-"the user must do it manually via the :ref:`Viewport.input() "
-"<class_Viewport_input>` function if needed."
+"What all these use cases have in common is that you are given the ability to "
+"draw objects to a texture as if it were another screen and then you can "
+"choose what to do with the resulting texture."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:37
-msgid "Listener"
+#: ../../docs/tutorials/viewports/viewports.rst:38
+msgid "Input"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:39
+#: ../../docs/tutorials/viewports/viewports.rst:40
 msgid ""
-"Godot supports 3D sound (in both 2D and 3D nodes), more on this can be found "
-"in another tutorial (one day..). For this type of sound to be audible, the "
-"viewport needs to be enabled as a listener (for 2D or 3D). If you are using "
-"a custom viewport to display your world, don't forget to enable this!"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:46
-msgid "Cameras (2D & 3D)"
+":ref:`Viewports <class_Viewport>` are also responsible for delivering "
+"properly adjusted and scaled input events to all their children nodes. "
+"Typically input is received by the nearest :ref:`Viewport <class_Viewport>` "
+"in the tree, but you can set :ref:`Viewports <class_Viewport>` to not "
+"recieve input by checking 'Disable Input' to 'on', this will allow the next "
+"nearest :ref:`Viewport <class_Viewport>` in the tree to capture the input."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
 msgid ""
-"When using a 2D or 3D :ref:`Camera <class_Camera>` / :ref:`Camera2D "
-"<class_Camera2D>`, cameras will always display on the closest parent "
-"viewport (going towards the root). For example, in the following hierarchy:"
+"For more information on how Godot handles input please read the :ref:`Input "
+"Event Tutorial<doc_inputevent>`."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:51
+msgid "Listener"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:53
-#: ../../docs/tutorials/viewports/viewports.rst:61
-#: ../../docs/tutorials/viewports/viewports.rst:159
-msgid "Viewport"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:55
-#: ../../docs/tutorials/viewports/viewports.rst:59
-msgid "Camera"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:57
-msgid "Camera will display on the parent viewport, but in the following one:"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:63
 msgid ""
-"It will not (or may display in the root viewport if this is a subscene)."
+"Godot supports 3D sound (in both 2D and 3D nodes), more on this can be found "
+"in the :ref:`Audio Streams Tutorial<doc_audio-streams>`. For this type of "
+"sound to be audible, the :ref:`Viewport <class_Viewport>` needs to be "
+"enabled as a listener (for 2D or 3D). If you are using a custom :ref:"
+"`Viewport <class_Viewport>` to display your :ref:`World <class_World>`, "
+"don't forget to enable this!"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:65
+#: ../../docs/tutorials/viewports/viewports.rst:60
+msgid "Cameras (2D & 3D)"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:62
 msgid ""
-"There can be only one active camera per viewport, so if there is more than "
-"one, make sure that the desired one has the \"current\" property set, or "
-"make it the current camera by calling:"
+"When using a :ref:`Camera <class_Camera>` / :ref:`Camera2D "
+"<class_Camera2D>`, cameras will always display on the closest parent :ref:"
+"`Viewport <class_Viewport>` (going towards the root). For example, in the "
+"following hierarchy:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:74
+#: ../../docs/tutorials/viewports/viewports.rst:69
+msgid ""
+"CameraA will display on the Root :ref:`Viewport <class_Viewport>` and it "
+"will draw MeshA. CameraB will be captured by the :ref:`Viewport "
+"<class_Viewport>` Node along with MeshB. Even though MeshB is in the scene "
+"heirarchy, it will still not be drawn to the Root :ref:`Viewport "
+"<class_Viewport>`. Similarly MeshA will not be visible from the :ref:"
+"`Viewport <class_Viewport>` node becuase :ref:`Viewport <class_Viewport>` "
+"nodes only capture nodes below them in the heirarchy."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:75
+msgid ""
+"There can only be one active camera per :ref:`Viewport <class_Viewport>`, so "
+"if there is more than one, make sure that the desired one has the \"current"
+"\" property set, or make it the current camera by calling:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:84
 msgid "Scale & stretching"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:76
+#: ../../docs/tutorials/viewports/viewports.rst:86
 msgid ""
-"Viewports have a \"rect\" property. X and Y are often not used (only the "
-"root viewport uses them), while WIDTH AND HEIGHT represent the size of the "
-"viewport in pixels. For Sub-Viewports, these values are overridden by the "
-"ones from the parent control, but for render targets this sets their "
-"resolution."
+":ref:`Viewports <class_Viewport>` have a \"size\" property which represents "
+"the size of the :ref:`Viewport <class_Viewport>` in pixels. For :ref:"
+"`Viewports <class_Viewport>` which are children of :ref:`ViewportContainers "
+"<class_viewportcontainer>`, these values are overridden, but for all others "
+"this sets their resolution."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:82
+#: ../../docs/tutorials/viewports/viewports.rst:90
 msgid ""
-"It is also possible to scale the 2D content and make it believe the viewport "
-"resolution is other than the one specified in the rect, by calling:"
+"It is also possible to scale the 2D content and make the :ref:`Viewport "
+"<class_Viewport>` resolution different than the one specified in size, by "
+"calling:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:91
+#: ../../docs/tutorials/viewports/viewports.rst:98
 msgid ""
-"The root viewport uses this for the stretch options in the project settings."
+"The root :ref:`Viewport <class_Viewport>` uses this for the stretch options "
+"in the project settings. For more information on scaling and stretching "
+"visit the :ref:`Multiple Resolutions Tutorial <doc_multiple_resolutions>`"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:95
+#: ../../docs/tutorials/viewports/viewports.rst:102
 msgid "Worlds"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:97
+#: ../../docs/tutorials/viewports/viewports.rst:104
 msgid ""
-"For 3D, a Viewport will contain a :ref:`World <class_World>`. This is "
-"basically the universe that links physics and rendering together. Spatial-"
-"base nodes will register using the World of the closest viewport. By "
-"default, newly created viewports do not contain a World but use the same as "
-"a parent viewport (root viewport does contain one though, which is the one "
-"objects are rendered to by default). A world can be set in a viewport using "
-"the \"world\" property, and that will separate all children nodes of that "
-"viewport from interacting with the parent viewport world. This is especially "
-"useful in scenarios where, for example, you might want to show a separate "
-"character in 3D imposed over the game (like in Starcraft)."
+"For 3D, a :ref:`Viewport <class_Viewport>` will contain a :ref:`World "
+"<class_World>`. This is basically the universe that links physics and "
+"rendering together. Spatial-base nodes will register using the :ref:`World "
+"<class_World>` of the closest :ref:`Viewport <class_Viewport>`. By default, "
+"newly created :ref:`Viewports <class_Viewport>` do not contain a :ref:`World "
+"<class_World>` but use the same as their parent :ref:`Viewport "
+"<class_Viewport>` (root :ref:`Viewport <class_Viewport>` always contains a :"
+"ref:`World <class_World>`, which is the one objects are rendered to by "
+"default). A :ref:`World <class_World>` can be set in a :ref:`Viewport "
+"<class_Viewport>` using the \"world\" property, and that will separate all "
+"children nodes of that :ref:`Viewport <class_Viewport>` from interacting "
+"with the parent :ref:`Viewport's <class_Viewport>` :ref:`World "
+"<class_World>`. This is especially useful in scenarios where, for example, "
+"you might want to show a separate character in 3D imposed over the game "
+"(like in Starcraft)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:109
+#: ../../docs/tutorials/viewports/viewports.rst:116
 msgid ""
-"As a helper for situations where you want to create viewports that display "
-"single objects and don't want to create a world, viewport has the option to "
-"use its own World. This is useful when you want to instance 3D characters or "
-"objects in the 2D world."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:114
-msgid ""
-"For 2D, each Viewport always contains its own :ref:`World2D "
-"<class_World2D>`. This suffices in most cases, but in case sharing them may "
-"be desired, it is possible to do so by calling the viewport API manually."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:119
-msgid "Capture"
+"As a helper for situations where you want to create :ref:`Viewports "
+"<class_Viewport>` that display single objects and don't want to create a :"
+"ref:`World <class_World>`, :ref:`Viewport <class_Viewport>` has the option "
+"to use its own :ref:`World <class_World>`. This is useful when you want to "
+"instance 3D characters or objects in a 2D :ref:`World <class_World2D>`."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:121
 msgid ""
-"It is possible to query a capture of the viewport contents. For the root "
-"viewport this is effectively a screen capture. This is done with the "
-"following API:"
+"For 2D, each :ref:`Viewport <class_Viewport>` always contains its own :ref:"
+"`World2D <class_World2D>`. This suffices in most cases, but in case sharing "
+"them may be desired, it is possible to do so by setting the :ref:`Viewport's "
+"<class_Viewport>` :ref:`World2D <class_World2D>` manually."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:137
+#: ../../docs/tutorials/viewports/viewports.rst:125
 msgid ""
-"But if you use this in _ready() or from the first frame of the viewport's "
-"initialization you will get an empty texture cause there is nothing to get "
-"as texture. You can deal with it using (for example):"
+"For an example of how this works see the demo projects `3D in 2D <https://"
+"github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_in_2d>`_ "
+"and `2D in 3D <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/viewport/2d_in_3d>`_ respectively."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:148
+#: ../../docs/tutorials/viewports/viewports.rst:128
+msgid "Capture"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:130
+msgid ""
+"It is possible to query a capture of the :ref:`Viewport <class_Viewport>` "
+"contents. For the root :ref:`Viewport <class_Viewport>` this is effectively "
+"a screen capture. This is done with the following code:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:147
+msgid ""
+"But if you use this in _ready() or from the first frame of the :ref:"
+"`Viewport's <class_Viewport>` initialization you will get an empty texture "
+"cause there is nothing to get as texture. You can deal with it using (for "
+"example):"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:158
 msgid ""
 "If the returned image is empty, capture still didn't happen, wait a little "
-"more, as this API is asynchronous."
+"more, as Godot's rendering API is asynchronous. For a working example of "
+"this check out the `Screen Capture example <https://github.com/godotengine/"
+"godot-demo-projects/tree/master/viewport/screen_capture>`_ in the demo "
+"projects"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:152
-msgid "Sub-viewport"
+#: ../../docs/tutorials/viewports/viewports.rst:163
+msgid "Viewport Container"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:154
+#: ../../docs/tutorials/viewports/viewports.rst:165
 msgid ""
-"If the viewport is a child of a :ref:`ViewportContainer "
-"<class_viewportcontainer>`, it will become active and display anything it "
-"has inside. The layout is something like this:"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:157
-msgid "ViewportContainer"
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:161
-msgid ""
-"The viewport will cover the area of its parent control completely, if "
-"stretch is set to true in Viewport Container. But you will have to setup the "
-"Viewport Size to get the the appropriate part of the Viewport. And Viewport "
-"Container can not be smaller than the size of the Viewport."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/viewports.rst:168
-msgid "Render target"
+"If the :ref:`Viewport <class_Viewport>` is a child of a :ref:"
+"`ViewportContainer <class_viewportcontainer>`, it will become active and "
+"display anything it has inside. The layout looks like this:"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:170
 msgid ""
-"To set as a render target, toggle the \"render target\" property of the "
-"viewport to enabled. Note that whatever is inside will not be visible in the "
-"scene editor. To display the contents, the method remains the same. This can "
-"be requested via code using (for example):"
+"The :ref:`Viewport <class_Viewport>` will cover the area of its parent :ref:"
+"`ViewportContainer <class_viewportcontainer>` completely if stretch is set "
+"to true in :ref:`ViewportContainer <class_viewportcontainer>`. Note: The "
+"size of the :ref:`ViewportContainer <class_viewportcontainer>` cannot be "
+"smaller than the size of the :ref:`Viewport <class_Viewport>`."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:181
+#: ../../docs/tutorials/viewports/viewports.rst:175
+msgid "Rendering"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:177
 msgid ""
-"By default, re-rendering of the render target happens when the render target "
-"texture has been drawn in a frame. If visible, it will be rendered, "
-"otherwise it will not. This behavior can be changed to manual rendering "
-"(once), or always render, no matter if visible or not."
+"Due to the fact that the :ref:`Viewport <class_Viewport>` is an entryway "
+"into another rendering surface, it exposes a few rendering properties that "
+"can be different from the project settings. The first is MSAA, you can "
+"choose to use a different level of MSAA for each :ref:`Viewport "
+"<class_Viewport>`, the default behavior is DISABLED. You can also set the :"
+"ref:`Viewport <class_Viewport>` to use HDR, HDR is very useful for when you "
+"want to store values in the texture that are outside the range 0.0 - 1.0."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:183
+msgid ""
+"If you know how the :ref:`Viewport <class_Viewport>` is going to be used, "
+"you can set its Usage to either 3D or 2D. Godot will then restrict how the :"
+"ref:`Viewport <class_Viewport>` is drawn to in accordance with your choice, "
+"default is 3D."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:186
-msgid "``TODO: Review the doc, change outdated and add more images.``"
+msgid ""
+"Godot also provides a way of customizing how everything is drawn inside :ref:"
+"`Viewports <class_Viewport>` using “Debug Draw”. Debug Draw allows you to "
+"specify one of four options for how the :ref:`Viewport <class_Viewport>` "
+"will display things drawn inside it. Debug Draw is disabled by default."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:188
+#: ../../docs/tutorials/viewports/viewports.rst:192
+msgid "*A scene drawn with Debug Draw disabled*"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:194
 msgid ""
-"Make sure to check the viewport demos! Viewport folder in the demos archive "
+"The other three options are Unshaded, Overdraw, and Wireframe. Unshaded "
+"draws the scene without using lighting information so all the objects appear "
+"flatly colored the color of their albedo."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:200
+msgid "*The same scene with Debug Draw set to Unshaded*"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:202
+msgid ""
+"Overdraw draws the meshes semi-transparent with an additive blend so you can "
+"see how the meshes overlap."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:206
+msgid "*The same scene with Debug Draw set to Overdraw*"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:208
+msgid ""
+"Lastly, Wireframe draws the scene using only the edges of triangles in the "
+"meshes. NOTE: as of the writting of this (v3.0.2) wireframe is broken and "
+"currently just renders the scene normally."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:212
+msgid "Render target"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:214
+msgid ""
+"When rendering to a :ref:`Viewport <class_Viewport>` whatever is inside will "
+"not be visible in the scene editor. To display the contents, you have to "
+"draw the :ref:`Viewport's <class_Viewport>` :ref:`ViewportTexture "
+"<class_ViewportTexture>` somewhere. This can be requested via code using "
+"(for example):"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:224
+msgid ""
+"Or it can be assigned in the editor by selecting \"New ViewportTexture\""
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:228
+msgid ""
+"and then selecting the :ref:`Viewport <class_Viewport>` you want to use."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:232
+msgid ""
+"Every frame the :ref:`Viewport <class_Viewport>`'s texture is cleared away "
+"with the default clear color (or a transparent color if Transparent BG is "
+"set to true). This can be changed by setting Clear Mode to Never or Next "
+"Frame. As the name implies, Never means the texture will never be cleared "
+"while next frame will clear the texture on the next frame and then set "
+"itself to Never."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:237
+msgid ""
+"By default, re-rendering of the :ref:`Viewport <class_Viewport>` happens "
+"when the :ref:`Viewport <class_Viewport>`'s :ref:`ViewportTexture "
+"<class_ViewportTexture>` has been drawn in a frame. If visible, it will be "
+"rendered, otherwise it will not. This behavior can be changed to manual "
+"rendering (once), or always render, no matter if visible or not. This "
+"flexibility allows users to render an image once and then use the texture "
+"without incurring the cost of rendering every frame."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/viewports.rst:245
+msgid ""
+"Make sure to check the Viewport demos! Viewport folder in the demos archive "
 "available to download, or https://github.com/godotengine/godot-demo-projects/"
 "tree/master/viewport"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,10 @@ msgid "Nodes and resources"
 msgstr "Nós e recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
+#, fuzzy
 msgid ""
 "So far, :ref:`Nodes <class_Node>` have been the most important datatype in "
-"Godot, as most of the behaviors and features of the engine are implemented "
+"Godot as most of the behaviors and features of the engine are implemented "
 "through them. There is another datatype that is equally important: :ref:"
 "`Resource <class_Resource>`."
 msgstr ""
@@ -91,9 +92,10 @@ msgstr ""
 "dados, portanto, não é necessário duplicá-los."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:42
+#, fuzzy
 msgid ""
 "Typically, every object in Godot (Node, Resource, or anything else) can "
-"export properties, properties can be of many types (like a string, integer, "
+"export properties. Properties can be of many types (like a string, integer, "
 "Vector2, etc) and one of those types can be a resource. This means that both "
 "nodes and resources can contain resources as properties. To make it a little "
 "more visual:"
@@ -125,8 +127,9 @@ msgstr ""
 "nó: ref: `Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:61
+#, fuzzy
 msgid ""
-"Pressing the \">\" button on the right side of the preview allows to view "
+"Pressing the \">\" button on the right side of the preview allows us to view "
 "and edit the resources properties. One of the properties (path) shows where "
 "it comes from. In this case, it comes from a png image."
 msgstr ""
@@ -175,9 +178,10 @@ msgstr ""
 "primeiro é usar o load(), assim:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
+#, fuzzy
 msgid ""
 "The second way is more optimal, but only works with a string constant "
-"parameter, because it loads the resource at compile-time."
+"parameter because it loads the resource at compile-time."
 msgstr ""
 "A segunda maneira é mais ideal, mas só funciona com um parâmetro de "
 "constante de string, porque ele carrega o recurso em tempo de compilação."
@@ -204,7 +208,7 @@ msgstr ""
 "Para obter uma instância da cena, o método: ref: `PackedScene.instance () "
 "<class_PackedScene_instance>` deve ser usado."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:142
+#: ../../docs/getting_started/step_by_step/resources.rst:143
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them "
 "(sets all the properties) and returns the root node of the scene, which can "
@@ -214,7 +218,7 @@ msgstr ""
 "propriedades) e retorna o nó raiz da cena, que pode ser adicionado a "
 "qualquer outro nó."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:146
+#: ../../docs/getting_started/step_by_step/resources.rst:147
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` function is pretty fast, adding extra content "
@@ -231,11 +235,11 @@ msgstr ""
 "que, como sempre, imagens, malhas, etc são todos compartilhados entre as "
 "instâncias da cena."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:155
+#: ../../docs/getting_started/step_by_step/resources.rst:156
 msgid "Freeing resources"
 msgstr "Liberando recursos"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:157
+#: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
 "Resource extends from :ref:`Reference <class_Reference>`. As such, when a "
 "resource is no longer in use, it will automatically free itself. Since, in "
@@ -248,11 +252,11 @@ msgstr ""
 "recursos, quando um nó é removido ou liberado, todos os recursos filhos são "
 "liberados também."
 
-#: ../../docs/getting_started/step_by_step/resources.rst:164
+#: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid "Scripting"
 msgstr "Scripting"
 
-#: ../../docs/getting_started/step_by_step/resources.rst:166
+#: ../../docs/getting_started/step_by_step/resources.rst:167
 msgid ""
 "Like any object in Godot, not just nodes, resources can be scripted, too. "
 "However, there isn't generally much of an advantage, as resources are just "

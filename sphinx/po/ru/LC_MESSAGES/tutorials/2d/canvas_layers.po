@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid ""
-"**HUD**: Head's up display, or user interface. If the world moves, the life "
+"**HUD**: Heads-up display, or user interface. If the world moves, the life "
 "counter, score, etc. must stay static."
 msgstr ""
 
@@ -101,8 +101,8 @@ msgid ""
 "Viewport children will draw by default at layer \"0\", while a CanvasLayer "
 "will draw at any numeric layer. Layers with a greater number will be drawn "
 "above those with a smaller number. CanvasLayers also have their own "
-"transform, and do not depend on the transform of other layers. This allows "
-"the UI to be fixed in-place, while the world moves."
+"transform and do not depend on the transform of other layers. This allows "
+"the UI to be fixed in-place while the world moves."
 msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:58

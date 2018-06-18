@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:4
-#, fuzzy
 msgid "GDNative C++ example"
-msgstr "GDNative / C++"
+msgstr "GDNative C++ ejemplo"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:7
 msgid "Introduction"
@@ -54,14 +53,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:17
-#, fuzzy
 msgid "Setting up your project"
-msgstr "Creación de un proyecto"
+msgstr "Configuración de un proyecto"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:18
-#, fuzzy
 msgid "There are a few prerequisites you'll need:"
-msgstr "Sin embargo, hay algunas diferencias:"
+msgstr "Hay algunos requisitos previos que necesitarás:"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:20
 msgid "A Godot 3.x executable"
@@ -163,9 +160,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:75
-#, fuzzy
 msgid "Creating a simple plugin"
-msgstr "Crear una animación simple"
+msgstr "Creación de un simple plugin"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:76
 msgid "Now it's time to build an actual plugin."
@@ -227,9 +223,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:125
-#, fuzzy
 msgid "After that we declare a single member variables called ``time_passed``."
-msgstr "Comienza declarando las variables miembro que este objeto necesitará:"
+msgstr ""
+"Después de eso declaramos una sola variable de miembro llamada "
+"``time_passed``."
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:127
 msgid ""
@@ -342,9 +339,9 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:212
 msgid ""
-"Before we jump back into Godot we need to create two more files. Both can "
-"now be created through the interface in Godot but I find it easier to just "
-"create them directly."
+"Before we jump back into Godot we need to create two more files in ``demo/"
+"bin/`` . Both can now be created through the interface in Godot but I find "
+"it easier to just create them directly."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:214
@@ -398,7 +395,7 @@ msgid ""
 "easier in (re)using your native_script. The important bits here are that "
 "we're pointing to our gdnlib file so Godot knows which dynamic library "
 "contains our native_script, and the ``class_name`` which identifies the "
-"natice_script in our plugin we want to use."
+"native_script in our plugin we want to use."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:264

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,10 +125,29 @@ msgstr ""
 "exporter>`__，可以更好地导出场景。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
+#, fuzzy
+msgid "Exporting ESCN files from Blender"
+msgstr "从 Blender 导出 DAE 文件"
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
+msgid ""
+"The most powerful one, called `godot-blender-exporter <https://github.com/"
+"godotengine/godot-blender-exporter>`__. It uses .escn files which is kind of "
+"another name of .tscn file(Godot scene file), it keeps as much information "
+"as possible from a Blender scene."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
+msgid ""
+"ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
+"describing its functionality and usage."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:64
 msgid "Import workflows"
 msgstr "导入工作流"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
 msgid ""
 "Godot scene importer allows different workflows regarding how data is "
 "imported. Depending on many options, it is possible to import a scene with:"
@@ -136,75 +155,75 @@ msgstr ""
 "Godot 场景导入器支持对数据的导入方式进行不同的工作流。 根据许多选项，可以通过"
 "以下方式导入场景："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:58
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:69
 msgid ""
 "External materials (default): Where each material is saved to a file "
 "resource. Modifications to them are kept."
 msgstr "外部材质（默认）：每种材料保存到文件资源的位置。 可以对它们进行修改。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:59
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:70
 msgid ""
 "External meshes: Where each mesh is saved to a different file. Many users "
 "prefer to deal with meshes directly."
 msgstr "外部网格：每个网格被保存到不同的文件。 许多用户更喜欢直接处理网格。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
 msgid ""
 "External animations: Allowing saved animations to be modified and merged "
 "when sources change."
 msgstr "外部动画：允许修改已保存的动画并在源更改时进行合并。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:61
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:72
 msgid ""
 "External scenes: Save the root nodes of the imported scenes each as a "
 "separate scene."
 msgstr "外部场景：将导入的场景的根节点分别保存为单独的场景。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:62
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
 msgid "Single Scene: A single scene file with everything built in."
 msgstr "单场景：一个场景文件，内置所有内容。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:66
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:77
 msgid ""
 "As different developers have different needs, this import process is highly "
 "customizable."
 msgstr "由于不同的开发人员有不同的需求, 这个导入过程是高度可定制的。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:69
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
 msgid "Import Options"
 msgstr "导入选项"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:71
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:82
 msgid "The importer has several options, which will be discussed below:"
 msgstr "导入器有几种选项，这将在下面讨论："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:76
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:87
 msgid "Nodes:"
 msgstr "节点："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:79
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
 msgid "Root Type"
 msgstr "根类型"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:81
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:92
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
 "this can be modified."
 msgstr "默认情况下，导入场景中根节点的类型为“Spatial”，但可以修改。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:84
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
 msgid "Root Name"
 msgstr "根名称"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:86
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:97
 msgid "Allows setting a specific name to the generated root node."
 msgstr "允许为生成的根节点设置特定的名称。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:89
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:100
 msgid "Custom Script"
 msgstr "自定义脚本"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:91
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:102
 msgid ""
 "A special script to process the whole scene after import can be provided. "
 "This is great for post processing, changing materials, doing funny stuff "
@@ -213,12 +232,12 @@ msgstr ""
 "可以提供导入后处理整个场景的特殊脚本。 这对于后期处理，更换材质，用几何体做些"
 "有趣的事情等非常有用。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:95
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
 #, fuzzy
 msgid "Create a script that like this:"
 msgstr "创建脚本基本如下所示:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:117
 msgid ""
 "The post-import function takes the imported scene as argument (the parameter "
 "is actually the root node of the scene). The scene that will finally be used "
@@ -227,14 +246,14 @@ msgstr ""
 "导入后函数将导入的场景作为参数（参数实际上是场景的根节点）。 必须返回将最终使"
 "用的场景。 它可以是不同的。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:111
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:130
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:122
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:141
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:236
 msgid "Storage"
 msgstr "存储"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:113
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:124
 msgid ""
 "By default, Godot imports a single scene. This option allows specifying that "
 "nodes below the root will each be a separate scene and instanced into the "
@@ -243,27 +262,27 @@ msgstr ""
 "默认情况下，Godot导入一个单独的场景。 此选项允许指定根节点下方的节点将分别为"
 "单独的场景并实例化为导入的节点。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:117
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:128
 msgid ""
 "Of course, instancing such imported scenes in other places manually works "
 "too."
 msgstr "当然，在其他地方手动实例导入的场景也是可以的。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:121
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:132
 msgid "Materials"
 msgstr "材质"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:124
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:135
 msgid "Location"
 msgstr "位置"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:126
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:137
 msgid ""
 "Godot supports materials in meshes or nodes. By default, materials will be "
 "put on each node."
 msgstr "Godot 支持网格或节点中的材料。 默认情况下，材料将放置在每个节点上。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:132
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:143
 msgid ""
 "Materials can be stored within the scene or in external files. By default, "
 "they are stored in external files so editing them is possible. This is "
@@ -274,17 +293,17 @@ msgstr ""
 "进行编辑。 这是因为大多数 3D 数字创作软件没有与 Godot 中的材料相同的材料选"
 "项。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:136
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:147
 msgid ""
 "When materials are built-in, they will be lost each time the source scene is "
 "modified and re-imported."
 msgstr "当材料内置时，每当源场景被修改并重新导入时，它们都会丢失。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:140
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:151
 msgid "Keep on Reimport"
 msgstr "保留重新导入"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:142
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:153
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
 "edited ones and ignore the ones coming from the source scene. This option is "
@@ -293,90 +312,90 @@ msgstr ""
 "一旦材质被编辑为使用Godot功能，导入器将保留编辑过的材质并忽略来自源场景的材"
 "质。 该选项仅在材质保存为文件时才存在。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:147
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:158
 msgid "Compress"
 msgstr "压缩"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:149
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
 "order to save space."
 msgstr "使网格在网格的多个方面使用较少的精确数字以节省空间。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:162
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:173
 msgid "These are:"
 msgstr "这些是:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:153
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:164
 msgid ""
 "Transform Matrix (Location, rotation, and scale)             : 32-bit float "
 "to 16-bit signed integer."
 msgstr "变换矩阵（位置，旋转和缩放）：32位浮点数到16位有符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:154
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:165
 msgid ""
 "Vertices                                                     : 32-bit float "
 "to 16-bit signed integer."
 msgstr "顶点:32 位浮点数到16位有符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:155
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
 msgid ""
 "Normals                                                      : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "法线:32 位浮点数到32位无符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:156
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:167
 msgid ""
 "Tangents                                                     : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "切线:32 位浮点数到32位无符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:157
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:168
 msgid ""
 "Vertex Colors                                                : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "顶点色:32 位浮点数到32位无符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:158
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:169
 msgid ""
 "UV                                                           : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "UV:32 位浮点数到32位无符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:159
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:170
 msgid ""
 "UV2                                                          : 32-bit float "
 "to 32-bit unsigned integer."
 msgstr "UV2:32 位浮点数到32位无符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:171
 msgid ""
 "Vertex weights                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr "顶点权重:32 位浮点数到32位无符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:161
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:172
 msgid ""
 "Armature bones                                               : 32-bit float "
 "to 16-bit unsigned integer."
 msgstr "骨架骨骼:32 位浮点数到16位无符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:162
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:173
 msgid ""
 "Array index                                                  : 32-bit or 16-"
 "bit unsigned integer based on how many elements there are."
 msgstr "数组索引: 基于具体有多少元素的32位或16位无符号整数。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
 msgid "Additional info:"
 msgstr "附加信息："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:165
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:176
 msgid ""
 "UV2 = The second UV channel for detail textures and baked lightmap textures."
 msgstr "UV2 = 用于细节纹理和烘焙光照纹理的第二个 UV 通道。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:166
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
 msgid ""
 "Array index = An array of numbers that number each element of the arrays "
 "above; i.e. they number the vertices and normals."
@@ -384,7 +403,7 @@ msgstr ""
 "数组索引 = 一个数字数组, 它为上面数组的每个元素编号;即, 他们的顶点和法线的数"
 "量。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:168
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:179
 msgid ""
 "In some cases, this might lead to loss of precision so disabling this option "
 "may be needed. For instance, if a mesh is very big or there are multiple "
@@ -396,15 +415,15 @@ msgstr ""
 "常大或导入了多个覆盖大面积的网格，则压缩此网格的导入可能会导致几何图形或顶点"
 "间的间隙不在他们应在的位置。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:174
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
 msgid "Meshes"
 msgstr "网格"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:188
 msgid "Ensure Tangents"
 msgstr "计算的切线"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:179
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
 msgid ""
 "If textures with normalmapping are to be used, meshes need to have tangent "
 "arrays. This option ensures that these are generated if not present in the "
@@ -414,7 +433,7 @@ msgstr ""
 "如果要使用正常贴图的纹理，网格需要有切线阵列。 此选项可确保在源场景中不存在时"
 "生成这些阵列。 Godot 使用 Mikktspace 来做这件事，但最好让它们在导出器中生成。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:187
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:198
 msgid ""
 "Meshes can be stored in separate files (resources) instead of built-in. This "
 "does not have much practical use unless one wants to build objects with them "
@@ -423,27 +442,27 @@ msgstr ""
 "网格可以存储在单独的文件（资源）中，而不是内置的。 除非有人想直接用它们建立对"
 "象，否则这没有多少实际用途。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:190
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:201
 msgid ""
 "This option is provided to help those who prefer working directly with "
 "meshes instead of scenes."
 msgstr "此选项用于帮助那些喜欢直接使用网格而不是场景的人。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:194
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
 msgid "External Files"
 msgstr "外部文件"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:196
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:207
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
 "with the name of the scene."
 msgstr "生成的网格和材质可以选择存储在具有场景名称的子目录中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:200
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:211
 msgid "Animation Options"
 msgstr "动画选项"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:202
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:213
 msgid ""
 "Godot provides many options regarding how animation data is dealt with. Some "
 "exporters (such as Blender), can generate many animations in a single file. "
@@ -454,15 +473,15 @@ msgstr ""
 "文件中生成许多动画。 其他的，如3DS Max 或 Maya，需要将许多动画放入同一时间"
 "线，或者最糟糕的情况是将每个动画放在单独的文件中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:209
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:220
 msgid "Import of animations is enabled by default."
 msgstr "默认情况下启用动画导入。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:212
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid "FPS"
 msgstr "帧数"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:214
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
 msgid ""
 "Most 3D export formats store animation timeline in seconds instead of "
 "frames. To ensure animations are imported as faithfully as possible, please "
@@ -472,11 +491,11 @@ msgstr ""
 "大多数 3D 导出格式以秒为单位存储的动画时间线，而不是帧。 为了确保尽可能忠实地"
 "导入动画，请指定用于编辑它们的每秒帧数。 未能这样做可能会导致极小的抖动。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:219
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:230
 msgid "Filter Script"
 msgstr "过滤器脚本"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:221
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
 "which tracks from which animations should be kept. (@TODO this needs "
@@ -484,7 +503,7 @@ msgid ""
 msgstr ""
 "可以用特殊的语法指定过滤器脚本, 以决定哪些轨道应保留动画。(@TODO 这需要文档)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:227
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
 msgid ""
 "By default, animations are saved as built-in. It is possible to save them to "
 "a file instead. This allows adding custom tracks to the animations and "
@@ -493,11 +512,11 @@ msgstr ""
 "默认情况下，动画保存为内置。 可以将它们保存到文件中。 这允许向动画添加自定义"
 "轨道并在重新导入后保留它们。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:232
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:243
 msgid "Optimizer"
 msgstr "优化"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:234
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:245
 msgid ""
 "When animations are imported, an optimizer is run which reduces the size of "
 "the animation considerably. In general, this should always be turned on "
@@ -506,11 +525,11 @@ msgstr ""
 "导入动画时，会运行优化程序，从而大大减少动画的大小。 一般情况下，除非您怀疑动"
 "画可能因启用而被破坏，否则应始终启用此功能。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:238
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:249
 msgid "Clips"
 msgstr "片段"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:240
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:251
 #, fuzzy
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
@@ -520,11 +539,11 @@ msgstr ""
 "可以将单个时间线中的多个动画指定为片段。只需指定从哪帧到哪帧（当然，不要忘记"
 "指定上面的FPS选项）。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:244
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:255
 msgid "Scene Inheritance"
 msgstr "场景继承"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:246
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:257
 #, fuzzy
 msgid ""
 "In many cases, it may be desired to do modifications to the imported scene. "
@@ -536,7 +555,7 @@ msgstr ""
 "果源资源发生变化（从3D建模应用程序重新导出源.dae，.gltf，.obj文件），Godot将"
 "重新导入整个场景。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:249
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:260
 #, fuzzy
 msgid ""
 "It is possible, however, to do local modifications by using *Scene "
@@ -546,49 +565,49 @@ msgstr ""
 "但是，可以使用* Scene Inheritance *进行本地修改。 试着打开导入的场景，会出现"
 "下面的对话框："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:254
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:265
 msgid "In inherited scenes, the only limitations for modifications are:"
 msgstr "在继承场景中，修改的唯一限制是："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:256
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:267
 msgid "Nodes can't be removed (but can be added anywhere)."
 msgstr "无法删除节点 (但可以在任何位置添加)。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:257
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
 msgid ""
 "Sub-Resources can't be edited (save them externally as described above for "
 "this)"
 msgstr "子资源无法编辑（如上所述它们将保存在外部）"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:259
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
 msgid "Other than that, everything is allowed!"
 msgstr "除了这些, 一切都是允许的!"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:262
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:273
 msgid "Import Hints"
 msgstr "导入提示"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:264
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:275
 msgid ""
 "Many times, when editing a scene, there are common tasks that need to be "
 "done after exporting:"
 msgstr "很多时候, 在编辑场景时, 导出后需要完成一些常见的任务:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:266
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
 msgid "Adding collision detection to objects:"
 msgstr "向对象添加碰撞检测:"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:267
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:278
 msgid "Setting objects as navigation meshes"
 msgstr "将对象设置为导航网格"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:268
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:279
 msgid ""
 "Deleting nodes that are not used in the game engine (like specific lights "
 "used for modelling)"
 msgstr "删除游戏引擎中未使用的节点 (如用于建模的特定光源)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:270
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
 msgid ""
 "To simplify this workflow, Godot offers a few suffixes that can be added to "
 "the names of the objects in your 3D modelling software. When imported, Godot "
@@ -597,11 +616,11 @@ msgstr ""
 "为了简化这一工作流程，Godot 提供了一些后缀，可以添加到3D建模软件中的对象名称"
 "中。 当输入时，Godot会自动检测它们并执行操作："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:275
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:286
 msgid "Remove nodes (-noimp)"
 msgstr "删除节点 (-noimp)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:277
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:288
 #, fuzzy
 msgid ""
 "Node names that have this suffix will be removed at import time, no matter "
@@ -610,11 +629,11 @@ msgstr ""
 "具有此后缀的节点名称将在导入时被删除, 不管它们的类型是什么。它们不会出现在导"
 "入的场景中。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:281
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:292
 msgid "Create collisions (-col, -colonly, -convcolonly)"
 msgstr "创建碰撞体 (-colonly,-convcolonly)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:283
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:294
 msgid ""
 "Option \"-col\" will work only for Mesh nodes. If it is detected, a child "
 "static collision node will be added, using the same geometry as the mesh."
@@ -622,14 +641,14 @@ msgstr ""
 "选项“-col”只能用于 Mesh 节点。 如果检测到，则会添加子静态碰撞节点，使用与网格"
 "相同的几何体。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:286
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:297
 msgid ""
 "However, it is often the case that the visual geometry is too complex or too "
 "un-smooth for collisions, which ends up not working well."
 msgstr ""
 "然而，通常是可视几何体对于碰撞来说太复杂或太不平滑，这最终不能很好地工作。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:289
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:300
 msgid ""
 "To solve this, the \"-colonly\" modifier exists, which will remove the mesh "
 "upon import and create a :ref:`class_staticbody` collision instead. This "
@@ -638,7 +657,7 @@ msgstr ""
 "为了解决这个问题, \"-colonly\" 修饰符存在, 它将在导入时删除网格, 并创建一个: "
 "ref: \"class_staticbody\" 碰撞体。这有助于将可视的网格和实际碰撞体分开。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:293
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:304
 msgid ""
 "Option \"-convcolonly\" will create :ref:`class_convexpolygonshape` instead "
 "of :ref:`class_concavepolygonshape`."
@@ -646,7 +665,7 @@ msgstr ""
 "选项“-convcolonly”将创建：ref：`class_convexpolygonshape`而不是：ref："
 "`class_concavepolygonshape`。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:295
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:306
 msgid ""
 "Option \"-colonly\" can be also used with Blender's empty objects. On import "
 "it will create a :ref:`class_staticbody` with collision node as a child. "
@@ -657,23 +676,23 @@ msgstr ""
 "撞节点的：ref：`class_staticbody`作为孩子。 Collision节点将有一个预定义的形"
 "状，具体取决于Blender的空物体类型："
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:302
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
 msgid "Single arrow will create :ref:`class_rayshape`"
 msgstr "单箭头将创建: ref: ' class_rayshape '"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:303
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:314
 msgid "Cube will create :ref:`class_boxshape`"
 msgstr "方块将创建：ref：`class_boxshape`"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:304
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:315
 msgid "Image will create :ref:`class_planeshape`"
 msgstr "图像将创建: ref: ' class_planeshape '"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:316
 msgid "Sphere (and other non-listed) will create :ref:`class_sphereshape`"
 msgstr "球体 (和其他未列出的) 将创建: ref: ' class_sphereshape '"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:307
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:318
 msgid ""
 "For better visibility in Blender's editor user can set \"X-Ray\" option on "
 "collision empties and set some distinct color for them in User Preferences / "
@@ -682,20 +701,20 @@ msgstr ""
 "为了提高Blender编辑器的可见性，用户可以在碰撞体上设置“X-Ray”选项，并在用户首"
 "选项/主题/ 3D视图/空物体中为它们设置不同的颜色。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:311
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:322
 msgid "Create navigatopm (-navmesh)"
 msgstr "创建navigatopm（-navmesh）"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:324
 msgid ""
 "A mesh node with this suffix will be converted to a navigation mesh. "
 "Original Mesh node will be removed."
 msgstr "具有此后缀的网格节点将被转换为导航网格。原始网格节点将被删除。"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:317
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:328
 msgid "Rigid Body (-rigid)"
 msgstr "刚体 (-rigid)"
 
-#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:319
+#: ../../docs/getting_started/workflow/assets/importing_scenes.rst:330
 msgid "Creates a rigid body from this mesh."
 msgstr "从这个网格中创建一个刚体。"

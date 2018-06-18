@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,10 +57,10 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:30
 msgid ""
-"Except the scene is more contrasted, because there is a higher light range "
-"in play. What is this all useful for? The idea is that the scene luminance "
-"will change while you move through the world, allowing situations like this "
-"to happen:"
+"Except the scene is more contrasted because there is a higher light range at "
+"play. What is this all useful for? The idea is that the scene luminance will "
+"change while you move through the world, allowing situations like this to "
+"happen:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:37
@@ -112,11 +112,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:71
 msgid ""
-"This is the most compatible way of using linear-space assets and it will "
+"This is the most compatible way of using linear-space assets, and it will "
 "work everywhere including all mobile devices. The main issue with this is "
 "loss of quality, as sRGB exists to avoid this same problem. Using 8 bits per "
 "channel to represent linear colors is inefficient from the point of view of "
-"the human eye. These textures might be later compressed too, which makes the "
+"the human eye. These textures might be later compressed too which makes the "
 "problem worse."
 msgstr ""
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid ""
 "Keep in mind that sRGB -> Linear and Linear -> sRGB conversions must always "
 "be **both** enabled. Failing to enable one of them will result in horrible "
-"visuals suitable only for avant garde experimental indie games."
+"visuals suitable only for avant-garde experimental indie games."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:102
@@ -163,8 +163,8 @@ msgstr ""
 msgid ""
 "HDR is found in the :ref:`Environment <class_Environment>` resource. These "
 "are found most of the time inside a :ref:`WorldEnvironment "
-"<class_WorldEnvironment>` node, or set in a camera. There are many "
-"parameters for HDR:"
+"<class_WorldEnvironment>` node or set in a camera. There are many parameters "
+"for HDR:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:112
@@ -179,23 +179,24 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:117
 msgid ""
-"Linear: Simplest tonemapper. It does its job for adjusting scene brightness, "
-"but if the differences in light are too big, it will cause colors to be too "
-"saturated."
+"**Linear:** Simplest tonemapper. It does its job for adjusting scene "
+"brightness, but if the differences in light are too big, it will cause "
+"colors to be too saturated."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:120
-msgid "Log: Similar to linear, but not as extreme."
+msgid "**Log:** Similar to linear but not as extreme."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:121
 msgid ""
-"Reinhardt: Classical tonemapper (modified so it will not desaturate as much)"
+"**Reinhardt:** Classical tonemapper (modified so it will not desaturate as "
+"much)"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:123
 msgid ""
-"ReinhardtAutoWhite: Same as above, but uses the max scene luminance to "
+"**ReinhardtAutoWhite:** Same as above but uses the max scene luminance to "
 "adjust the white value."
 msgstr ""
 
@@ -206,7 +207,7 @@ msgstr "Експозиція"
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:129
 msgid ""
 "The same exposure parameter as in real cameras. Controls how much light "
-"enters the camera. Higher values will result in a brighter scene and lower "
+"enters the camera. Higher values will result in a brighter scene, and lower "
 "values will result in a darker scene."
 msgstr ""
 

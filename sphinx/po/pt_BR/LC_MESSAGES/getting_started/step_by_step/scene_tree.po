@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,10 +45,11 @@ msgstr ""
 "árvore de cena *."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
+#, fuzzy
 msgid ""
 "This concept deserves going into a little more detail. In fact, the scene "
-"system is not even a core component of Godot, as it is possible to skip it "
-"and write a script (or C++ code) that talks directly to the servers. But "
+"system is not even a core component of Godot as it is possible to skip it "
+"and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
 "Este conceito merece entrar em mais detalhes. Na verdade, o sistema de cena "
@@ -100,8 +101,9 @@ msgstr ""
 "próprio MainLoop raramente faz sentido."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
+#, fuzzy
 msgid ""
-"One of the ways to explain how Godot works, is that it's a high level game "
+"One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
 "Uma das maneiras de explicar como Godot funciona é que é um mecanismo de "
@@ -134,9 +136,10 @@ msgstr ""
 "É importante saber que essa classe existe porque tem alguns usos importantes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
+#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
-"added as a child when it's first opened, to become part of the *Scene Tree* "
+"added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)"
 msgstr ""
 "Ele contém a raiz: ref: `Viewport <class_Viewport>`, para a qual uma cena é "
@@ -144,16 +147,18 @@ msgstr ""
 "tornar parte da * Scene Tree * (mais sobre isso a seguir)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
+#, fuzzy
 msgid ""
-"It contains information about the groups, and has means to call all nodes in "
-"a group, or get a list of them."
+"It contains information about the groups and has the means to call all nodes "
+"in a group or get a list of them."
 msgstr ""
 "Ele contém informações sobre os grupos e tem meios para chamar todos os nós "
 "de um grupo ou obter uma lista deles."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
+#, fuzzy
 msgid ""
-"It contains some global state functionality, such as setting pause mode, or "
+"It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
 msgstr ""
 "Ela contém alguma funcionalidade de estado global, como configurar o modo de "
@@ -182,10 +187,11 @@ msgstr ""
 "nó, ele pode ser obtido de duas maneiras diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
+#, fuzzy
 msgid ""
 "This node contains the main viewport, anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
-"sense that the top of all nodes is always a node of this type, otherwise "
+"sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen!"
 msgstr ""
 "Este nó contém o viewport principal, qualquer coisa que é filho de: ref: "
@@ -216,8 +222,9 @@ msgstr ""
 "torna parte da * árvore de cena *."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
+#, fuzzy
 msgid ""
-"This means that, as explained in previous tutorials, it will get the "
+"This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
 msgstr ""
 "Isso significa que, como explicado nos tutoriais anteriores, ele obterá os "
@@ -242,7 +249,7 @@ msgstr "Ordem da árvore"
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 #, fuzzy
 msgid ""
-"Most node operations in Godot, such as drawing 2D, processing or getting "
+"Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
 "with a smaller rank in the tree order will get notified before the current "
 "node."
@@ -261,10 +268,11 @@ msgid "A scene is loaded from disk or created by scripting."
 msgstr "Uma cena é carregada do disco ou criada pelo script."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
+#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
-"child of the \"root\" Viewport (from SceneTree), or to any child or grand-"
-"child of it."
+"child of the \"root\" Viewport (from SceneTree), or to any child or "
+"grandchild of it."
 msgstr ""
 "O nó raiz dessa cena (apenas uma raiz, lembra?) É adicionado como um filho "
 "da viewport \"root\" (de SceneTree), ou para qualquer filho ou neto dela."
@@ -311,8 +319,9 @@ msgstr ""
 "change_scene () <class_SceneTree_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
+#, fuzzy
 msgid ""
-"This is a quick and useful way to switch scenes, but has the drawback that "
+"This is a quick and useful way to switch scenes but has the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
 "in your game, it may be desired to create proper loading screens with "
 "progress bar, animated indicators or thread (background) loading. This must "

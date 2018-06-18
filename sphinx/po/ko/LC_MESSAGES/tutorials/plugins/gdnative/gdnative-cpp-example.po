@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:4
-#, fuzzy
 msgid "GDNative C++ example"
-msgstr "GDNative / C++"
+msgstr "GDNative  C++ 예제"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:7
 msgid "Introduction"
@@ -54,9 +53,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:17
-#, fuzzy
 msgid "Setting up your project"
-msgstr "새 프로젝트 만들기"
+msgstr "당신의 프로젝트 만들기"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:18
 msgid "There are a few prerequisites you'll need:"
@@ -162,9 +160,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:75
-#, fuzzy
 msgid "Creating a simple plugin"
-msgstr "새 프로젝트 만들기"
+msgstr "간단한 플러그인 만들기"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:76
 msgid "Now it's time to build an actual plugin."
@@ -340,9 +337,9 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:212
 msgid ""
-"Before we jump back into Godot we need to create two more files. Both can "
-"now be created through the interface in Godot but I find it easier to just "
-"create them directly."
+"Before we jump back into Godot we need to create two more files in ``demo/"
+"bin/`` . Both can now be created through the interface in Godot but I find "
+"it easier to just create them directly."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:214
@@ -396,7 +393,7 @@ msgid ""
 "easier in (re)using your native_script. The important bits here are that "
 "we're pointing to our gdnlib file so Godot knows which dynamic library "
 "contains our native_script, and the ``class_name`` which identifies the "
-"natice_script in our plugin we want to use."
+"native_script in our plugin we want to use."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:264

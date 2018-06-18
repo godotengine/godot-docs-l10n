@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -212,7 +212,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:166
-#, fuzzy
 msgid ""
 "If one of the scene changing buttons are pressed, we fist call "
 "``set_mouse_and_joypad_sensitivity`` so the singleton (``Globals.gd``) has "
@@ -220,11 +219,12 @@ msgid ""
 "singleton to change nodes using it's ``load_new_scene`` function, passing in "
 "the file path of the scene the player has selected."
 msgstr ""
-"Si se pulsa uno de los botones de cambio de escena, primero llamamos "
-"``set_mouse_and_joypad_sensitivity`` por lo que nuestro singleton tiene los "
-"valores de los nodos :ref:`HSlider <class_HSlider>`. Luego le decimos al "
-"singleton que cambie los nodos usando su función ``load_new_scene``, pasando "
-"la ruta del archivo de la escena que queremos cambiar."
+"Si se pulsa uno de los botones de cambio de escena, llamaremos "
+"``set_mouse_and_joypad_sensitivity`` para que el singleton (``Globals.gd``) "
+"tenga los valores de los nodos :ref:`HSlider <class_HSlider>`. Luego le "
+"decimos al singleton que cambie los nodos usando su función "
+"``load_new_scene``, pasando la ruta del archivo de la escena que el jugador "
+"ha seleccionado."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:170
 msgid "Don't worry about the singleton, we'll get there soon!"
@@ -336,13 +336,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:230
-#, fuzzy
 msgid ""
 "This will make ``Globals.gd`` a singleton/autoload script, which will allow "
 "us to access it from any script, in any scene."
 msgstr ""
 "Esto hará de ``Globals.gd`` un script singleton/autoload, que nos permitirá "
-"acceder a él desde cualquier lugar en cualquier escena."
+"acceder a él desde cualquier script, en cualquier escena."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:232
 msgid ""
@@ -455,11 +454,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:299
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:390
-#, fuzzy
 msgid "Open up ``Globals.gd`` and add the following class variables:"
-msgstr ""
-"Añade un script al nodo ``Mob`` y luego añade las siguientes variables "
-"miembro:"
+msgstr "Abre ``Globals.gd`` y añade las siguientes variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:313
 msgid ""
@@ -472,10 +468,11 @@ msgid "``DEBUG_DISPLAY``: The debug display scene we worked on earlier."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:315
-#, fuzzy
 msgid ""
 "``debug_display``: A variable to hold the debug display when/if there is one."
-msgstr "``globals``: Una variable para contener el singleton ``Globals.gd``."
+msgstr ""
+"``debug_display``: Una variable para mantener la pantalla de depuración "
+"cuando/si la hay."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:317
 msgid ""
@@ -760,11 +757,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:511
-#, fuzzy
 msgid "Open up ``Player.gd`` and add the following class variables:"
-msgstr ""
-"Añade un script al nodo ``Mob`` y luego añade las siguientes variables "
-"miembro:"
+msgstr "Abre ``Player.gd`` y añade las siguientes variables de clase:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:521
 msgid "``RESPAWN_TIME``: The amount of time (in seconds) it takes to respawn."
@@ -790,7 +784,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:536
-#, fuzzy
 msgid ""
 "Now we're getting the ``Globals.gd`` singleton and assigning it to "
 "``globals``. We also set the player's global position by setting the origin "
@@ -798,7 +791,7 @@ msgid ""
 "returned by ``globals.get_respawn_position``."
 msgstr ""
 "Ahora obtenemos el singleton ``Globals.gd`` y lo asignamos a ``globals``. "
-"También establecemos nuestra posición global usando el origen de nuestra :"
+"También establecemos nuestra posición global usando el origen de nuestro :"
 "ref:`Transform <class_Transform>` a la posición devuelta por ``globals."
 "get_respawn_position``."
 
@@ -967,9 +960,8 @@ msgid "And add the following to ``Weapon_Knife.gd``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:708
-#, fuzzy
 msgid "Now all of the weapons will reset when the player dies."
-msgstr "Desvanecer la barra cuando el jugador muere"
+msgstr "Ahora todas las armas se resetearán cuando el jugador muera."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:712
 msgid ""
@@ -1110,7 +1102,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:846
-#, fuzzy
 msgid ""
 "Finally, instead of being instanced/spawned in ``Player.gd``, the audio "
 "player is instead going to be spawned in ``Globals.gd`` so we can create "
@@ -1135,30 +1126,26 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:855
-#, fuzzy
 msgid ""
 "We also added two new class variables, ``should_loop`` and ``globals``. "
 "We'll use ``should_loop`` to tell whether the audio player should loop when "
 "the sound has finished, and ``globals`` will hold the ``Globals.gd`` "
 "singleton."
 msgstr ""
-"Para las variables globales eliminamos todas las variables ``audio_[insertar "
-"nombre aquí]`` ya que en su lugar las pasaremos al archivo. También añadimos "
-"dos nuevas variables globales, ``should_loop`` y ``globals``. Usaremos "
-"``should_loop`` para decir si queremos hacer un loop cuando el sonido haya "
-"terminado, y ``globals`` contendrá el ``Globals.gd`` singleton."
+"También agregamos dos nuevas variables de clase, ``should_loop`` y "
+"``globals``. Usaremos ``should_loop`` para decir si el reproductor de audio "
+"debe hacer un bucle cuando el sonido haya terminado, y ``globals`` contendrá "
+"el singleton ``Globals.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:858
-#, fuzzy
 msgid ""
 "The only change in ``_ready`` is now audio player is getting the ``Globals."
 "gd`` singleton and assigning it to ``globals``"
 msgstr ""
-"El único cambio en ``_ready`` es que ahora obtenemos el singleton ``Globals."
-"gd`` y lo asignamos a ``globals``"
+"El único cambio en ``_ready`` es que ahora el reproductor de audio recupera "
+"el singleton ``Globals.gd`` y lo asigna a ``globals``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:860
-#, fuzzy
 msgid ""
 "``play_sound`` now expects a audio stream, named ``audio_stream``, to be "
 "passed in, instead of ``sound_name``. Instead of checking the sound name and "
@@ -1167,16 +1154,15 @@ msgid ""
 "error message, remove the audio player from a list in the ``Globals.gd`` "
 "singleton called ``created_audio``, and then free the audio player."
 msgstr ""
-"En ``play_sound`` se espera un stream de audio, llamado ``audio_stream``, en "
-"lugar de ```sound_name``. En lugar de comprobar el nombre del sonido y "
-"configurar el stream para el reproductor de audio, comprobamos que se ha "
-"introducido un stream de audio. Si no se pasa un stream de audio, se imprime "
-"un mensaje de error, se elimina el reproductor de audio de una lista en el "
-"singleton ```Globals.gd`` llamado ``created_audio``, y luego se libera el "
-"reproductor de audio."
+"``play_sound`` espera ahora que se pase un stream de audio, llamado "
+"``audio_stream``, en lugar de ``sound_name``. En lugar de comprobar el "
+"nombre del sonido y configurar el stream para el reproductor de audio, "
+"comprobamos que se ha introducido un stream de audio. Si no se pasa un "
+"stream de audio, se imprime un mensaje de error, se elimina el reproductor "
+"de audio de la lista del singleton ``Globals.gd`` llamado ``created_audio``, "
+"y luego se libera el reproductor de audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:864
-#, fuzzy
 msgid ""
 "Finally, in ``sound_finished`` we first check to see if the audio player is "
 "supposed to loop or not using ``should_loop``. If the audio player is "
@@ -1189,7 +1175,7 @@ msgstr ""
 "``should_loop`` o no. Si se supone que debemos hacer un bucle, reproducimos "
 "el sonido de nuevo desde el principio del audio, en la posición ``0.0``. Si "
 "no se supone que debemos hacer un bucle, quitamos el reproductor de audio de "
-"la lista en el singleton ```Globals.gd`` llamado ``created_audio``, y luego "
+"la lista en el singleton ``Globals.gd`` llamado ``created_audio``, y luego "
 "liberamos el reproductor de audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:870
@@ -1204,13 +1190,12 @@ msgid "Lets go over these global variables."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:890
-#, fuzzy
 msgid ""
 "``audio_clips``: A dictionary holding all of the audio clips ``Globals.gd`` "
 "can play."
 msgstr ""
-"``animation_speeds``: Un diccionario para contener todas las velocidades de "
-"nuestras animaciones."
+"``audio_clips``: Un diccionario que contiene todos los clips de audio que "
+"``Global.gd`` puede reproducir."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:891
 msgid "``SIMPLE_AUDIO_PLAYER_SCENE``: The simple audio player scene."
@@ -1325,7 +1310,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:968
-#, fuzzy
 msgid ""
 "Now all of the sounds in our FPS can be played from anywhere. All we have to "
 "do is get the ``Globals.gd`` singleton, and call ``play_sound``, pass in the "
@@ -1339,7 +1323,6 @@ msgstr ""
 "el sonido."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:971
-#, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenades "
 "explode you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
@@ -1352,8 +1335,9 @@ msgstr ""
 "granadas explotan necesitarás añadir un nuevo sonido a ``audio_clips`` en "
 "``Globals.gd``, accede al singleton ``Globals.gd``, y entonces sólo "
 "necesitas añadir algo como ``globals.play_sound(\"explosion\", false, "
-"global_transform.origin)`` en las granadas ``_process``, justo después de "
-"que la granada dañe todos los cuerpos dentro de su radio de explosión."
+"global_transform.origin)`` en la función ``_process`` de la granada, justo "
+"después de que la granada dañe todos los cuerpos dentro de su radio de "
+"explosión."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:977
 msgid "Final notes"

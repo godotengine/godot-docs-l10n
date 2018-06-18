@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Overview"
 msgstr "Vue d'ensemble"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
-#, fuzzy
 msgid ""
 "Now that you have a working game, you probably want to share your success "
 "with others. However, it's not practical to ask your friends to download "
@@ -35,12 +34,11 @@ msgid ""
 msgstr ""
 "Maintenant que votre jeu fonctionne, vous voulez surement le partager. "
 "Seulement, demander à ses amis de télécharger Godot pour ouvrir votre "
-"projet, ce n'est pas très pratique. A la place, vous pouvez *exporter* votre "
-"projet, en le convertissant en \"package\" pouvant être lancé par tout le "
-"monde."
+"projet, ce n'est pas très pratique. À la place, vous pouvez *exporter* votre "
+"projet, en le convertissant en un \"package\" pouvant être exécuté par "
+"n'importe qui."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
-#, fuzzy
 msgid ""
 "The way you export your game depends on what platform you are targeting. In "
 "this tutorial, you'll learn how to export the \"Dodge the Creeps\" game for "
@@ -49,22 +47,20 @@ msgid ""
 msgstr ""
 "La façon dont vous exportez votre jeu dépend de la plateforme visée. Dans ce "
 "tutoriel, vous allez apprendre comment exporter le jeu \"Dodge the Creeps\" "
-"pour un panel de plateformes. D'abord, nous devons faire plusieurs "
-"modification sur la manière dont marche le jeu."
+"pour un panel de plateformes. Pour cela, nous devons déjà faire plusieurs "
+"modification sur la manière dont fonctionne le jeu."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
-#, fuzzy
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
-"Si vous n'avez pas fait \"Dodge the Creeps\", merci de lire :ref:"
+"Si vous n'avez pas encore créé \"Dodge the Creeps\" vous même, lisez :ref:"
 "`doc_your_first_game` avant de continuer ce tutoriel."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
-#, fuzzy
 msgid "Preparing the project"
-msgstr "Organisation du projet"
+msgstr "Préparation du projet"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -125,9 +121,8 @@ msgstr ""
 "que nous avons changé :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
-#, fuzzy
 msgid "Export Templates"
-msgstr "Exporter des modèles"
+msgstr "Exporter les modèles"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:124
 msgid ""
@@ -209,7 +204,6 @@ msgstr ""
 "Nous pouvons laisser ces réglages tels-quels pour l'instant."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
-#, fuzzy
 msgid "Exporting by Platform"
 msgstr "Exporter par plateforme"
 
@@ -294,7 +288,6 @@ msgstr ""
 "le logiciel suivant :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:196
-#, fuzzy
 msgid "Android SDK: https://developer.android.com/studio/"
 msgstr ""
 "Téléchargez et installez le SDK Android à partir de http://developer.android."
@@ -385,13 +378,12 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running MacOS "
 "with Xcode installed."
 msgstr ""
 "Vous devez impérativement disposer d'un ordinateur macOS avec Xcode installé "
-"pour exporter vers IOS."
+"pour exporter vers iOS."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -449,7 +441,6 @@ msgstr ""
 "pas besoin de modifier les paramètres par défaut."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:268
-#, fuzzy
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"

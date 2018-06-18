@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,8 +42,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
 "This concept deserves going into a little more detail. In fact, the scene "
-"system is not even a core component of Godot, as it is possible to skip it "
-"and write a script (or C++ code) that talks directly to the servers. But "
+"system is not even a core component of Godot as it is possible to skip it "
+"and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
 
@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
 msgid ""
-"One of the ways to explain how Godot works, is that it's a high level game "
+"One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
 
@@ -103,19 +103,19 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
-"added as a child when it's first opened, to become part of the *Scene Tree* "
+"added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
 msgid ""
-"It contains information about the groups, and has means to call all nodes in "
-"a group, or get a list of them."
+"It contains information about the groups and has the means to call all nodes "
+"in a group or get a list of them."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
 msgid ""
-"It contains some global state functionality, such as setting pause mode, or "
+"It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
 msgstr ""
 
@@ -140,7 +140,7 @@ msgstr ""
 msgid ""
 "This node contains the main viewport, anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
-"sense that the top of all nodes is always a node of this type, otherwise "
+"sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen!"
 msgstr ""
 
@@ -163,7 +163,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
 msgid ""
-"This means that, as explained in previous tutorials, it will get the "
+"This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
 msgstr ""
 
@@ -181,7 +181,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid ""
-"Most node operations in Godot, such as drawing 2D, processing or getting "
+"Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
 "with a smaller rank in the tree order will get notified before the current "
 "node."
@@ -198,8 +198,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
-"child of the \"root\" Viewport (from SceneTree), or to any child or grand-"
-"child of it."
+"child of the \"root\" Viewport (from SceneTree), or to any child or "
+"grandchild of it."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:130
@@ -234,7 +234,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 msgid ""
-"This is a quick and useful way to switch scenes, but has the drawback that "
+"This is a quick and useful way to switch scenes but has the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
 "in your game, it may be desired to create proper loading screens with "
 "progress bar, animated indicators or thread (background) loading. This must "

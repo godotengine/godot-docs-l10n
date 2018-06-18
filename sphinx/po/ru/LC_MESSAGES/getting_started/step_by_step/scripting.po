@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -580,17 +580,17 @@ msgstr ""
 msgid "The final script should look like this:"
 msgstr "В итоге сценарий должен выглядеть так:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:314
+#: ../../docs/getting_started/step_by_step/scripting.rst:317
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr ""
 "Запустите сцену и нажмите кнопку. Вы должны получить следующий результат:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:318
+#: ../../docs/getting_started/step_by_step/scripting.rst:321
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr "Поздравляем с написанием сценария к вашей первой сцене."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:322
+#: ../../docs/getting_started/step_by_step/scripting.rst:325
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -603,11 +603,11 @@ msgstr ""
 "должен быть дочерним элементом Panel. Если бы Button был дочерним элементом "
 "Label, код для его получения выглядел бы так:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:340
+#: ../../docs/getting_started/step_by_step/scripting.rst:343
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "Кроме того, помните, что узлы ссылаются по имени, а не по типу."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:344
+#: ../../docs/getting_started/step_by_step/scripting.rst:347
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
@@ -617,7 +617,7 @@ msgstr ""
 "значений к параметрам подключенной функции. Вы можете добавлять и удалять "
 "значения разных типов."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:348
+#: ../../docs/getting_started/step_by_step/scripting.rst:351
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

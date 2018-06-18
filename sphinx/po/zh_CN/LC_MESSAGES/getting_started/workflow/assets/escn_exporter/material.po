@@ -1,0 +1,99 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:2
+msgid "Materials"
+msgstr "材质"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
+msgid "Using existing Godot materials"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:6
+msgid ""
+"One way in which the exporter can handle materials is to attempt to match "
+"the Blender material with an existing Godot material. This has the advantage "
+"of being able to use all of the features of Godot's material system, but it "
+"means that you cannot see your model with the material applied inside "
+"Blender."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:11
+msgid ""
+"To do this, the exporter attempts to find Godot materials with names that "
+"match those of the material name in Blender. So if you export an object in "
+"Blender with the material name ``PurpleDots`` then the exporter will search "
+"for the file ``PurpleDots.tres`` and assign it to the object. If this file "
+"is not a ``SpatialMaterial`` or ``ShaderMaterial`` or if it cannot be found, "
+"then the exporter will fall back to exporting the material from Blender."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:19
+msgid ""
+"Where the exporter searches for the ``.tres`` file is determined by the "
+"\"Material Search Paths\" option:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
+msgid "This can take the value of:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:25
+msgid ""
+"Project Directory - Attempts to find the ``project.Godot`` and recursively "
+"searches through subdirectories. If ``project.Godot`` cannot be found it "
+"will throw an error. This is useful for most projects where naming conflicts "
+"are unlikely."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:29
+msgid ""
+"Export Directory - Look for materials in subdirectories of the export "
+"location. This is useful for projects where you may have duplicate material "
+"names and need more control over what material gets assigned."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:32
+msgid "None - Do not search for materials. Export them from the Blender file."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:36
+#, fuzzy
+msgid "Export of Blender materials"
+msgstr "导出模板"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:38
+msgid ""
+"The other way materials are handled is for the exporter to export them from "
+"Blender. Currently only the diffuse color and a few flags (eg unshaded) are "
+"exported."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
+msgid ""
+"Export of Blender materials is currently very primitive. However, it is the "
+"focus of a current GSOC project"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:47
+msgid ""
+"Materials are currently exported using their \"Blender Render\" settings. "
+"When Blender 2.8 is released, this will be removed and this part of the "
+"exporter will change."
+msgstr ""

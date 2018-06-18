@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
-"Представьте себе, что вы уже не разработчик игр. Вместо этого вы шеф-повар! "
-"Смените вашу хипстерскую одежду на поварской колпак и двубортный пиджак. "
-"Теперь вместо создания игр вы создаете новые и вкусные рецепты для ваших "
-"гостей."
+"Забудьте на минуту, что вы – разработчик видеоигр и вместо этого представьте "
+"себя в роли шеф-повара! Скиньте с себя хипстерский фасон и вместо этого "
+"наденьте поварской колпак и жакет. Теперь все, что от вас требуется – это "
+"создавать новые и вкусные рецепты для ваших гостей."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -44,9 +44,11 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
-"Итак, как шеф-повар создает рецепт? Рецепты делятся на две части: первая - "
-"это ингредиенты, а вторая - инструкции для их приготовления. Таким образом, "
-"каждый может следовать рецепту и наслаждаться своим великолепным творением."
+"И так же, как именно шеф-повар создает рецепт? Каждый рецепт разделён на две "
+"части: в первой приведён список ингридиентов, а во второй – "
+"последовательность их приготовления. Таким образом, каждый имеет возможность "
+"приготовить блюдо по созданому рецепту и насладиться вашим великолепным "
+"творением."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -88,11 +90,11 @@ msgstr "У него есть имя."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr "Он имеет редактируемые свойства."
+msgstr "Это его редактируемые свойства."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
-msgstr "Он может принимать обратный вызов для обработки каждого кадра."
+msgstr "Он может получать обратный вызов для обработки каждого кадра."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
@@ -107,8 +109,8 @@ msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
-"Последний пункт важен. Узлы могут иметь другие узлы в качестве дочерних. При "
-"такой структуре узлы становятся **деревом**."
+"Еще одно важное замечание. У узлов могут быть другие узлы в качестве "
+"дочерних. При расположении таким образом узлы образуют **дерево**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -126,9 +128,9 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
-"Не беспокойтесь, если вам что-то непонятно. Мы продолжим изучение этого в "
-"следующих нескольких разделах. Важно запомнить тот факт, что узлы могут "
-"существовать и быть организованы таким образом."
+"Не беспокойтесь, если не разобрались в этом. Мы продолжим изучение этого в "
+"следующих нескольких разделах. Самое важное что, нужно запомнить на данный "
+"момент, это то, что узлы существуют и могут быть организованы таким образом."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
@@ -152,15 +154,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has only one root node."
-msgstr "всегда имеет только один корневой узел."
+msgstr "всегда есть только один корневой узел."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr "может быть сохранена на диск и загружена обратно."
+msgstr "могут быть сохранены на диск и загружены обратно."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "может быть *инстанцирован* (подробнее об этом позже)."
+msgstr "может быть * instanced * (подробнее об этом позже)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
@@ -237,7 +239,7 @@ msgstr ""
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
 msgstr ""
-"Для этого нажмите кнопку \"Новый узел\" (который выглядит как символ плюс):"
+"Для этого нажмите кнопку «Создать узел» (который выглядит как символ плюс):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -252,13 +254,12 @@ msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the quickest way:"
 msgstr ""
-"Выберите узел \"Label\" (Ярлык). Найти его через поиск, вероятно, самый "
-"быстрый способ:"
+"Здесь выберите узел «Label». Найти его через поиск, вероятно самый быстрый "
+"способ:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
-msgstr ""
-"И наконец, создайте Label! При нажатии кнопки \"Создать\" происходит многое:"
+msgstr "Выберите \"Label\" и нажмите кнопку «Создать»:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
 msgid ""
@@ -275,24 +276,24 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
-"Узел появляется в редакторе дерева сцен (область в правом верхнем углу) и "
-"его свойства отображаются в Инспекторе (область в правом нижнем углу)."
+"Узел(\"Label\") появляется в редакторе узлов сцены (поле в правом верхнем "
+"углу), а свойства узла отображаются в \"инспекторе\" (в нижнем правом углу)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello, World!\":"
 msgstr ""
-"Следующим шагом будет изменение свойства \"Текст\". Давайте изменим его на "
-"\"Hello, World!\":"
+"Следующим шагом будет изменение свойства «Text». Изменим его на «Hello, "
+"World!»:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
-"Хорошо, все готово для запуска сцены! Нажмите кнопку \"Воспроизвести сцену\" "
-"на верхней панели (или нажмите F6):"
+"Хорошо, сцена готова! Нажмите кнопку \"Воспроизвести сцену\" справа вверху, "
+"над панелью редактора узлов сцены (или нажмите F6):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."

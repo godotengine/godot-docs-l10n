@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,9 +120,10 @@ msgid "Generated geometry"
 msgstr "生成的几何体"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
+#, fuzzy
 msgid ""
 "It is possible to create custom geometry by using the :ref:`Mesh "
-"<class_Mesh>` resource directly, simply create your arrays and use the :ref:"
+"<class_Mesh>` resource directly. Simply create your arrays and use the :ref:"
 "`Mesh.add_surface() <class_Mesh_add_surface>` function. A helper class is "
 "also available, :ref:`SurfaceTool <class_SurfaceTool>`, which provides a "
 "more straightforward API and helpers for indexing, generating normals, "
@@ -345,8 +346,9 @@ msgstr ""
 "否则不会显示任何内容。 相机可以在正交或透视投影中工作："
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
+#, fuzzy
 msgid ""
-"Cameras are associated and only display to a parent or grand-parent "
+"Cameras are associated with and only display to a parent or grandparent "
 "viewport. Since the root of the scene tree is a viewport, cameras will "
 "display on it by default, but if sub-viewports (either as render target or "
 "picture-in-picture) are desired, they need their own children cameras to "

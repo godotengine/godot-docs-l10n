@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-13 14:08+0200\n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -465,7 +465,8 @@ msgstr ""
 "los nodos para que escuche el que seleccionaste."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
-msgid "The first section lists custom signals defined in ``player.GD``:"
+#, fuzzy
+msgid "The first section lists custom signals defined in ``Player.gd``:"
 msgstr ""
 "La primera sección enlista las señales personalizadas definidas en ``player."
 "GD``:"
@@ -487,12 +488,13 @@ msgid "We're connecting to the health\\_changed signal"
 msgstr "Nos estamos conectando a la señal health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
+#, fuzzy
 msgid ""
 "Select ``health_changed`` and click on the Connect button in the bottom "
 "right corner to open the Connect Signal window. On the left side you can "
 "pick the node that will listen to this signal. Select the ``GUI`` node. The "
 "right side of the screen lets you pack optional values with the signal. We "
-"already took care of it in ``player.GD``. In general I recommend not to add "
+"already took care of it in ``Player.gd``. In general I recommend not to add "
 "too many arguments using this window as they're less convenient than doing "
 "it from the code."
 msgstr ""
@@ -509,9 +511,10 @@ msgid "The Connect Signal window with the GUI node selected"
 msgstr "La ventana Conectando Señal con el nodo GUI seleccionado"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
+#, fuzzy
 msgid ""
-"You can optionally connect nodes from the code. But doing it from the editor "
-"has two advantages:"
+"You can optionally connect nodes from the code. However doing it from the "
+"editor has two advantages:"
 msgstr ""
 "Opcionalmente se pueden conectar nodos desde el código. Pero hacerlo desde "
 "el editor tiene dos ventajas:"
@@ -531,6 +534,7 @@ msgstr ""
 "panel de Escenas"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
+#, fuzzy
 msgid ""
 "At the bottom of the window you will find the path to the node you selected. "
 "We're interested in the second row called \"Method in Node\". This is the "
@@ -539,7 +543,7 @@ msgid ""
 "If you look to the right, there is a \"Make Function\" radio button that is "
 "on by default. Click the connect button at the bottom of the window. Godot "
 "creates the method inside the ``GUI`` node. The script editor opens with the "
-"cursor inside a new ``_on_player_health_changed`` function."
+"cursor inside a new ``_on_Player_health_changed`` function."
 msgstr ""
 "En la parte inferior de la ventana se encuentra la ruta al nodo "
 "seleccionado. Nos interesa la segunda fila llamada \"Method in Node\". Este "
@@ -637,22 +641,22 @@ msgstr ""
 "``_on_Player_health_changed``. Solo necesita new\\_value como único "
 "argumento:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:326
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:327
 msgid "This method needs to:"
 msgstr "Este método necesita hacer:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:328
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:329
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
 "establece ``text`` del nodo ``Number`` en ``new_value`` convertido en un "
 "string"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:330
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:331
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr "establece el ``value`` de ``TextureProgress`` en ``new_value``"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:349
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
 "``Number``'s ``text`` property requires a string so we can't assign it to "
@@ -662,7 +666,7 @@ msgstr ""
 "La propiedad ``Number``'s ``text`` requiere un string por lo que no podemos "
 "asignarlo a ``new_value`` directamente"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:353
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
@@ -674,7 +678,7 @@ msgstr ""
 "del juego. Pulsa F5 para probar el juego: ¡la barra de vida se actualiza con "
 "cada ataque!"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:360
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
@@ -682,11 +686,11 @@ msgstr ""
 "Tanto el nodo Number como el TextureProgress se actualizan cuando el jugador "
 "recibe un golpe"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:364
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:365
 msgid "Animate the loss of life with the Tween node"
 msgstr "Animar la pérdida de vida con el nodo Tween"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:366
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
@@ -702,7 +706,7 @@ msgstr ""
 "puede animar la salud del ``TextureProgress`` desde su nivel actual hasta el "
 "nuevo valor de ``health`` del ``Player`` cuando el personaje sufre daños."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:373
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
 msgid ""
 "The ``GUI`` scene already contains a ``Tween`` child node stored in the "
 "``tween`` variable. Let's now use it. We have to make some changes to "
@@ -712,7 +716,7 @@ msgstr ""
 "variable ``tween``. Ahora vamos a usarlo. Tenemos que hacer algunos cambios "
 "en ``update_health``."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:377
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:378
 msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
@@ -720,35 +724,35 @@ msgstr ""
 "Usaremos el método ``Tween`` del nodo ``interpolate_property``. Se necesitan "
 "siete argumentos:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:380
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
 msgid "A reference to the node who owns the property to animate"
 msgstr "Una referencia al nodo que posee la propiedad para animar"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
 msgid "The property's identifier as a string"
 msgstr "El identificador de la propiedad es un string"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
 msgid "The starting value"
 msgstr "El valor inicial"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
 msgid "The end value"
 msgstr "El valor final"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
 msgid "The animation's duration in seconds"
 msgstr "Duración de la animación en segundos"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
 msgid "The type of the transition"
 msgstr "El tipo de transición"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
 msgid "The easing to use in combination with the equation."
 msgstr "La facilidad de uso en combinación con la ecuación."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:388
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
 msgid ""
 "The last two arguments combined correspond to an `easing equation <#>`__. "
 "This controls how the value evolves from the start to the end point."
@@ -757,7 +761,7 @@ msgstr ""
 "relajación <#>`__. Esto controla cómo evoluciona el valor desde el punto de "
 "inicio hasta el punto final."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:392
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
 msgid ""
 "Click the script icon next to the ``GUI`` node to open it again. The "
 "``Number`` node needs text to update itself, and the ``Bar`` needs a float "
@@ -771,7 +775,7 @@ msgstr ""
 "número, pero no para animar texto directamente. Vamos a usarlo para animar "
 "una nueva variable ``GUI`` llamada ``animated_health``."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:398
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:399
 msgid ""
 "At the top of the script, define a new variable, name it "
 "``animated_health``, and set its value to 0. Navigate back to the "
@@ -785,11 +789,11 @@ msgstr ""
 "``animated_health``. Llama al método ``Tween`` del nodo "
 "``interpolate_property``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:420
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:421
 msgid "Let's break down the call:"
 msgstr "Vamos a interrumpir la llamada:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:426
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:427
 msgid ""
 "We target ``animated_health`` on ``self``, that is to say the ``GUI`` node. "
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
@@ -799,7 +803,7 @@ msgstr ""
 "Interpolate_property toma el nombre de la propiedad como un string. Por eso "
 "lo escribimos como ``\"animated_health\"``."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:434
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:435
 msgid ""
 "The starting point is the current value the bar's at. We still have to code "
 "this part, but it's going to be ``animated_health``. The end point of the "
@@ -812,7 +816,7 @@ msgstr ""
 "``health_changed``: ese es el ``new_value``. Y ``0.6`` es la duración de la "
 "animación en segundos."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:444
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
 msgid ""
 "The last two arguments are constants from the ``Tween`` class. "
 "``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` doesn't "
@@ -824,7 +828,7 @@ msgstr ""
 "hace nada con una transición lineal, pero debemos proporcionar este último "
 "argumento si no queremos recibir un error."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:449
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
 "``tween.start()``. We only have to do this once if the node is not active. "
@@ -834,7 +838,7 @@ msgstr ""
 "``tween.start()``. Sólo tenemos que hacerlo una vez si el nodo no está "
 "activo. Añade este código después de la última línea:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:468
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -851,11 +855,11 @@ msgstr ""
 "controladas por código. Para animaciones hechas a mano, echa un vistazo a "
 "`AnimationPlayer`."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:471
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
 msgid "Assign the animated\\_health to the LifeBar"
 msgstr "Asignar animated\\_health a LifeBar"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:473
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
@@ -863,11 +867,11 @@ msgstr ""
 "Ahora la variable ``animated_health`` anima pero ya no se actualizan los "
 "nodos ``Bar`` y ``Number`` existentes. Solucionemos esto."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:476
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
 msgid "So far, the update\\_health method looks like this:"
 msgstr "Hasta ahora, el método update\\_health se ve así:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:500
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
@@ -878,7 +882,7 @@ msgstr ""
 "los nodos ``Number`` y ``TextureProgress`` como antes, dentro de "
 "``_process``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:522
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
@@ -886,7 +890,7 @@ msgstr ""
 "`number_label` y `bar` son variables que guardan referencias a los nodos "
 "`Number` y `TextureProgress`."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:524
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
@@ -897,11 +901,11 @@ msgstr ""
 "del juego, sería bueno que la barra de vida se animara de una manera más "
 "atractiva."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:530
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
 msgid "The animation is smooth but the number is broken"
 msgstr "La animación es suave pero el número está roto"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:532
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
 "variable named ``round_value`` to store the rounded ``animated_health``. "
@@ -911,15 +915,15 @@ msgstr ""
 "variable local llamada ``round_value`` para guardar el valor redondeado "
 "``animated_health``. Luego asígnalo a ``number_label.text`` y ``bar.value``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:554
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
 msgid "Try the game again to see a nice blocky animation."
 msgstr "Intenta jugar de nuevo para ver una bonita animación de bloques."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:558
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
 msgid "By rounding out animated\\_health we hit two birds with one stone"
 msgstr "Gracias a redondear animated\\_health matamos dos pájaros de un tiro"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:562
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -935,11 +939,11 @@ msgstr ""
 "gradualmente es un truco. Hace que el GUI se sienta vivo. Si el ``Player`` "
 "recibe 3 de daño, ocurre en un instante."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:570
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
 msgid "Fade the bar when the Player dies"
 msgstr "Desvanecer la barra cuando el jugador muere"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:572
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -952,7 +956,7 @@ msgstr ""
 "mismo nodo ``Tween`` ya que gestiona múltiples animaciones en paralelo por "
 "nosotros."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:577
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
@@ -964,15 +968,15 @@ msgstr ""
 "2D. Selecciona el nodo ``Player`` en el panel de Escenas y haz clic en la "
 "pestaña Nodos junto al Inspector."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:582
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr "Busca la señal ``died``, selecciónala y haz clic en el botón Conectar."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:586
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
 msgid "The signal should already have the Enemy connected to it"
 msgstr "La señal ya debería tener al enemigo conectado"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:588
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -986,11 +990,11 @@ msgstr ""
 "Conectar en la parte inferior de la ventana. Esto te llevará al archivo "
 "``GUI.gd`` en el Área de Trabajo de Scripts."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:596
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
 msgid "You should get these values in the Connecting Signal window"
 msgstr "Se debe obtener estos valores en la ventana Conectando Señal"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:600
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
 msgid ""
 "You should see a pattern by now: every time the GUI needs a new piece of "
 "information, we emit a new signal. Use them wisely: the more connections you "
@@ -1000,7 +1004,7 @@ msgstr ""
 "información, emitimos una nueva señal. Úsalas sabiamente: mientras más "
 "conexiones añadas, serán más difíciles de seguir."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:602
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
@@ -1009,7 +1013,7 @@ msgstr ""
 "propiedad ``modulate``. ``modulate`` es un ``Color``que multiplica los "
 "colores de nuestras texturas."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:608
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
 msgid ""
 "`modulate` comes from the `CanvasItem` class, All 2D and UI nodes inherit "
 "from it. It lets you toggle the visibility of the node, assign a shader to "
@@ -1019,7 +1023,7 @@ msgstr ""
 "UI heredan de él. Este permite alternar la visiblidad del nodo, asignarle un "
 "shader y modificarlo usando un color mediante `modulate`."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:610
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -1030,7 +1034,7 @@ msgstr ""
 "obscurece. Si reducimos el valor del canal alfa la interfaz se va "
 "desvaneciendo."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:614
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -1045,7 +1049,7 @@ msgstr ""
 "``end_color``. Usa el constructor ``Color()`` para crear dos valores "
 "``Color``."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:636
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
 msgid ""
 "``Color(1.0, 1.0, 1.0)`` corresponds to white. The fourth argument, "
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
@@ -1055,7 +1059,7 @@ msgstr ""
 "respectivamente ``1.0`` y ``0.0``en ``start_color`` y ``end_color``, es el "
 "canal alfa."
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:640
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
@@ -1063,7 +1067,7 @@ msgstr ""
 "Luego debemos llamar nuevamente al método ``interpolate_property`` del nodo "
 "``Tween``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:653
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
 msgid ""
 "This time we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
@@ -1075,16 +1079,16 @@ msgstr ""
 "transición lineal. Aquí también, debido a que la transición es lineal, la "
 "relajación no importa. Aquí está el método completo ``_on_Player_died``:"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:678
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr ""
 "Y eso es todo ¡Ahora puedes jugar el juego para ver el resultado final!"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:682
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
 msgid "The final result. Congratulations for getting there!"
 msgstr "El resultado final ¡Felicidades por llegar hasta aquí!"
 
-#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:686
+#: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "
 "the Player gets poisoned, turn the bar red when its health drops low, shake "

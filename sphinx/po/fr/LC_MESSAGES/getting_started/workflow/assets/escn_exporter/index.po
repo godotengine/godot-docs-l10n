@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
+#, fuzzy
+msgid "Godot-Blender-Exporter"
+msgstr "Importeur de scènes Godot"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:5
+msgid "Details on exporting"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:16
+msgid "Disabling specific objects"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:17
+msgid ""
+"Sometimes you don't want some objects exported (eg high-res models used for "
+"baking). An object will not be exported if it is not rendered in the scene. "
+"This can be set in the outliner:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
+msgid ""
+"Objects hidden in the viewport will be exported, but will be hidden in the "
+"Godot scene."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:28
+msgid "Build Pipeline Integration"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
+msgid ""
+"If you have hundreds of model files, you don't want your artists to waste "
+"time manually exporting their blend files. To combat this, the exporter "
+"provides a python function ``io_scene_godot.export(out_file_path)`` that can "
+"be called to export a file. This allows easy integration with other build "
+"systems. An example Makefile and python script that exports all the blends "
+"in a directory is present in the Godot-Blender-exporter repository."
+msgstr ""
