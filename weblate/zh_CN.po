@@ -9,12 +9,15 @@
 # Griant <goooosick@gmail.com>, 2018.
 # Harlan Howell <lin_032@hotmail.com>, 2018.
 # Jingtian Pan <panjingtian@126.com>, 2018.
+# Oberon Zheng <360119124@qq.com>, 2018.
 # plumsky <x-wolf@163.com>, 2018.
+# pokemonchw <admin@byayoi.org>, 2018.
 # py_co <py_co@outlook.com>, 2018.
 # RainVector <y2505418927@gmail.com>, 2018.
 # redity su <2215523266@qq.com>, 2018.
 # seanfy <everxiao@qq.com>, 2018.
 # sersoong <seraphim945@qq.com>, 2018.
+# tf <1353699675@qq.com>, 2018.
 # XQDD <1032453509@qq.com>, 2018.
 # yuetian <18829280955@163.com>, 2018.
 # Zae Chao <zae.vito@live.com>, 2018.
@@ -26,8 +29,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-06-10 15:37+0000\n"
-"Last-Translator: bladesero <872461916@qq.com>\n"
+"PO-Revision-Date: 2018-06-27 05:35+0000\n"
+"Last-Translator: Oberon Zheng <360119124@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -35,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.0.1-dev\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -84,7 +87,6 @@ msgstr ""
 "容，请告知我们以帮助我们更好地编写文档！"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -93,10 +95,10 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"提交问题或提交请求在`GitHub 仓库<https://github.com/godotengine/godot-docs/"
-"issues>`_，帮助我们`翻译文档 <https://hosted.weblate.org/engage/godot-engine/"
-">`_到你的语言，或者 ``#godotengine-doc`` 频道 `irc.freenode.net <http://"
-"webchat.freenode.net/?channels=#godotengine-doc>`_!"
+"在`GitHub 仓库<https://github.com/godotengine/godot-docs/issues>`_提交问题或"
+"提交请求，帮助我们`将文档 <https://hosted.weblate.org/engage/godot-engine/>`_"
+"翻译到你的语言，或者在 ``#godotengine-doc`` 频道 `irc.freenode.net <http://"
+"webchat.freenode.net/?channels=#godotengine-doc>`_和我们讨论一下!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -598,16 +600,15 @@ msgstr ""
 "支持列表），但我们强烈建议您尝试一下GDScript，看看它有啥好处。"
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please make the effort to learn GDScript, you will not regret it."
 msgstr ""
-"GDScript为从底层整合Godot的工作方式而生，这方面它比任何其他语言都更加契合引"
-"擎，并且简单易学。最多只需一两天就可以舒适的使用它，一旦你那样做了，很容易便"
-"会看到它的优势。请花这些功夫学习GDScript，你不会后悔的。"
+"GDScript是为了从底层整合Godot的工作方式而诞生的，这方面它比任何其他语言都更加"
+"契合引擎，并且简单易学。最多只需一两天就可以舒适的使用它，一旦你那样做了，很"
+"容易便会看到它的优势。请花些功夫学习GDScript，你不会后悔的。"
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -699,15 +700,14 @@ msgstr ""
 "好。"
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "GDScript was designed to solve the issues above, and performs well in all "
 "the above scenarios. Please learn GDScript and enjoy a smooth integration of "
 "scripting with the game engine (yes, it's a rare but enjoyable situation "
 "when things just work). It's worth it, give it a try!"
 msgstr ""
-"GDScript旨在解决上述问题，并且表现良好。请学习一下GDScript并且享受丝滑如顺般"
-"的游戏开发过程（是的，虽然听上去不可能但真的很爽）。这是值得的，试一试吧！"
+"GDScript旨在解决上述问题，并且表现良好。请学习GDScript并享受GDScript和游戏引"
+"擎的平滑集成（是的，虽然听上去不可能但真的很爽）。这是值得的，试一试吧！"
 
 #: ../../docs/about/faq.rst:135
 msgid "I want to extend Godot. What are my options for creating plugins?"
@@ -764,15 +764,13 @@ msgid "Why is FBX not supported for import?"
 msgstr "为什么不支持导入FBX？"
 
 #: ../../docs/about/faq.rst:154
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
 "<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
-"FBX SDK有一个非常 `严格的许可 <http://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>`_，它和Godot的 `开放许可 <http://opensource.org/"
-"licenses/MIT>`_不兼容。"
+"FBX SDK的 `有限性许可 <http://www.blender.org/bf/Autodesk_FBX_License."
+"rtf>`_，与Godot的 `开放许可 <http://opensource.org/licenses/MIT>`_不兼容。"
 
 #: ../../docs/about/faq.rst:158
 #, fuzzy
@@ -2696,9 +2694,9 @@ msgid ""
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
-"当脚本中存在 :ref:`Node._process() <class_Node__process>` 方法时空闲处理"
-"（Idle processing）就会被激活。可以通过 :ref:`Node.set_process() "
-"<class_Node_set_process>` 函数来进行开关."
+"当 :ref:`Node._process() <class_Node__process>` 方法在函数中被定义处理流程就"
+"会被激活.。可以通过 :ref:`Node.set_process() <class_Node_set_process>` 函数来"
+"进行开关."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
@@ -2848,7 +2846,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr "可重写的函数"
+msgstr "可覆写的函数"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""
@@ -2932,25 +2930,33 @@ msgid ""
 "called. This will return the tree of nodes that can be added to the active "
 "scene:"
 msgstr ""
+"但是``场景``还不是一个节点，它被打包在一类称为:ref:"
+"`PackedScene<class_PackedScene>`（封包场景）的资源。要想创建实际的节点，就必"
+"须调用函数:ref:`PackedScene.instance() <class_PackedScene_instance>`。它会返"
+"回能够被添加到该活动 场景中的节点树："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:380
+#, fuzzy
 msgid ""
 "The advantage of this two-step process is that a packed scene may be kept "
 "loaded and ready to use so that you can create as many instances as desired. "
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
+"两步处理的好处是打包好的场景可以保持被加载并且可以直接使用，因此你可以按照你"
+"的想法不断创造实例。这对在一个激活的场景里快速的添加例如一些敌人、子弹或其它"
+"实体时是很实用的。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your First Game"
-msgstr ""
+msgstr "你的第一个游戏"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "概览"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -2958,6 +2964,8 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
+"这个教学将会全程引导你做一个你的第一个Godot工程。你能从中学到Godot编辑器如何"
+"工作，一个工程如何构造出来，还有2D游戏如何做出来。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -2965,23 +2973,30 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
+"这个工程是Godot引擎的一个介绍。是以你已经有了一些编程经验为前提的。如果你对编"
+"程完全是菜鸟，你应当从这一条开始: :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
+"这个游戏叫做“Dodge the Creeps!”。\n"
+"你的角色必须尽力的通过移动来避开敌人。下面是最终效果的预览："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
+"**为什么是2D？**3D游戏比2D游戏复杂很多。你应当从2D游戏入手直到你能很好的理解"
+"游戏开发工序。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/development/cpp/configuring_an_ide.rst:147
+#, fuzzy
 msgid "Project Setup"
-msgstr ""
+msgstr "工程准备"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -2989,26 +3004,37 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"运行Godot新建一个工程。\n"
+"然后下载:download:`dodge_assets.zip <files/dodge_assets.zip>` -你会在游戏中用"
+"到的图片和声音。解压这个文件到你的工程文件夹。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
+#, fuzzy
 msgid ""
 "For this tutorial, we will assume you are familiar with the editor. If you "
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"我们以为你熟悉编辑器的使用。为此，如果你还没有读过ref:`doc_scenes_and_nodes`,"
+"现在就看看，找出准备工程的解释以及使用编辑器的方法。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
+#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to 480 and \"Height\" to 720."
 msgstr ""
+"这个游戏会要使用肖像模式，因此我们需要调整游戏窗口的尺寸。依次点击Project -> "
+"Project Settings -> Display -> Window 然后调整宽度为480，高度为720。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
+#, fuzzy
 msgid "Organizing the Project"
-msgstr ""
+msgstr "管理工程"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
+#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -3017,27 +3043,40 @@ msgid ""
 "and scripts in the root folder, referred to as ``res://``.  You can see your "
 "project folders in the FileSystem Dock in the upper left corner:"
 msgstr ""
+"在这个工程里，我们会做出来3个独立的场景: ``Player``, ``Mob``, and ``HUD``,我"
+"们的游戏的主场景由这3个场景组合而成。在更大的工程里，这会对不同的文件夹容纳不"
+"同的场景以及它们各自的脚本很有帮助，但是对于这次的小游戏，你可以将你的场景和"
+"脚本存在根目录，称为“res://”。你能在文件系统的停靠栏的左上角看到你的工程文件"
+"夹。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
+#, fuzzy
 msgid "Player Scene"
-msgstr ""
+msgstr "玩家场景"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
+#, fuzzy
 msgid ""
 "The first scene we will make defines the ``Player`` object. One of the "
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"第一个场景，我们会定义“player”对象。创建一个分开的玩家场景的好处是我们可以单"
+"独测试它，即使我们还没有创建游戏的其它部分。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
+#, fuzzy
 msgid "Node Structure"
-msgstr ""
+msgstr "节点结构"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:65
+#, fuzzy
 msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
+"一开始，点击“Add/Create a New Node”按钮添加一个:ref:`Area2D <class_Area2D>`节"
+"点给场景。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -3046,6 +3085,9 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
+"使用``Area2D``类我们可以检测物体是否跑到玩家之中或者与玩家发生交叠。点击节点"
+"将其重命名为``Player``，它是场景的根节点，我们可以对该玩家节点添加额外的节点"
+"来添加其功能。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
 msgid ""
@@ -3054,12 +3096,17 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
+"在我们向``Player``节点添加子节点之前，我们可能希望确保不会因为点击他们而不小"
+"心移动或缩放他们，那就选中该节点然后点击锁头右侧的图标，它的工具提示描述为“确"
+"保物体的子节点不会被选中。”"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
+"保存场景，点击场景→保存，或者在Windows/Linux平台上按下``Ctrl+S``或是Mac上按下"
+"``Command+S``。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid ""
@@ -3067,10 +3114,13 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
+"对于该项目，我们会遵循Godot的命名规范，类（节点）使用``PascalCase``（大写分"
+"隔）命名，变量和函数使用``snake_case``（下划线分隔）命名，常量使用"
+"``ALL_CAPS``（全大写）命名。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
 msgid "Sprite Animation"
-msgstr ""
+msgstr "精灵动画"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -3083,6 +3133,13 @@ msgid ""
 "click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
 "``<SpriteFrames>`` to open the \"SpriteFrames\" panel:"
 msgstr ""
+"点击``Player``节点然后添加一个:ref:`AnimatedSprite "
+"<class_AnimatedSprite>`（动画精灵）节点作为子节点，``AnimateSprite``会处理我"
+"们的玩家的外观与动画。请注意在该节点的旁边会出现一个警告标志，一个"
+"``AnimatedSprite``需要一个:ref:`SpriteFrames <class_SpriteFrames>`（精灵帧"
+"集）资源，作为它能够显示的动画图像。欲创建之，在属性窗格（Inspector）里找到"
+"``Frames``属性，然后点击\"<无>\"→\"新建精灵帧集\"。接下来在同一位置点击"
+"``<SpriteFrames>``打开\"SpriteFrames\"面板："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:102
 msgid ""

@@ -9,6 +9,7 @@
 # didier-v <didierv@mac.com>, 2018.
 # Eric Chirnside <echirnside@gmail.com>, 2018.
 # Gilles Roudiere <gilles.roudiere@gmail.com>, 2018.
+# Hasenn <eliottarloveyrier@live.fr>, 2018.
 # Jean-François Michaud <jfmichaud31@gmail.com>, 2018.
 # Jérôme Bignon <iphonejeromebignon@gmail.com>, 2018.
 # John Bernier <john.bp@unknit.net>, 2018.
@@ -32,14 +33,15 @@
 # Thibaut Magnier <magniertibo@gmail.com>, 2018.
 # Thomas Baijot <thomasbaijot@gmail.com>, 2018.
 # Trystan SARRADE <trystansarrade@gmail.com>, 2018.
+# Valrog <ctop37@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-06-16 12:37+0000\n"
-"Last-Translator: Smiley32 <jeannin.emile@laposte.net>\n"
+"PO-Revision-Date: 2018-06-24 02:37+0000\n"
+"Last-Translator: Cindy Dallaire <c.dallaire93@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -47,7 +49,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -588,7 +590,6 @@ msgstr ""
 "bit étant utilisé par défaut."
 
 #: ../../docs/about/faq.rst:53
-#, fuzzy
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi. There is also some unofficial "
@@ -596,11 +597,11 @@ msgid ""
 "included in the default build scripts or export templates, however."
 msgstr ""
 "Certains utilisateurs rapportent avoir compilé et utilisé Godot avec succès "
-"sur des systèmes basés sur l'architecture ARM avec Linux, tels que la "
-"Raspberry Pi. Il y a aussi certains tiers qui non-officiellement travaillent "
-"pour permettre à Godot de fonctionner sur certaines consoles. Cependant, "
-"rien de ça n'est inclus dans les scripts de compilations originaux ou dans "
-"les modèles d'exportations."
+"sur des systèmes basés sur l'architecture ARM avec Linux, tels que le "
+"Raspberry Pi. Il y a aussi certains tiers qui, non-officiellement, "
+"travaillent pour permettre à Godot de fonctionner sur certaines consoles. "
+"Cependant, rien de ça n'est inclus dans les scripts de compilations "
+"originaux ou dans les modèles d'exportations."
 
 #: ../../docs/about/faq.rst:57
 msgid ""
@@ -786,13 +787,12 @@ msgstr ""
 "importante de la mémoire (Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:124
-#, fuzzy
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
 "Difficulté d'intégration avec l'éditeur de code pour compléter le code, "
-"l'édition en direct, etc. Ceci est très bien supporté par GDScript."
+"éditer en direct, etc. Ceci est très bien supporté par GDScript."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
@@ -3362,7 +3362,7 @@ msgid ""
 "only):"
 msgstr ""
 "Le préchargement peut être plus pratique, car il se produit lors de "
-"l'analyse du code :"
+"l'analyse du code (En GDScript seulement) :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""
@@ -3691,7 +3691,6 @@ msgstr ""
 "Commencez par déclarer les variables membres dont cet objet aura besoin :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -3699,7 +3698,7 @@ msgid ""
 "``Player`` node and set the speed property to ``400``."
 msgstr ""
 "L'utilisation du mot-clé ``export`` sur la première variable ``SPEED`` nous "
-"permet de définir sa valeur dans l'inspecteur. Celà peut être pratique pour "
+"permet de définir sa valeur dans l'inspecteur. Cela peut être pratique pour "
 "les valeurs que vous voulez pouvoir ajuster de la même manière que les "
 "propriétés intégrées d'un nœud. Cliquez sur le nœud ``Player`` et réglez la "
 "propriété \"speed\" sur ``400``."
@@ -4122,8 +4121,8 @@ msgstr ""
 "``MAX_SPEED`` pour la vitesse à laquelle chaque monstre bougera (ce serait "
 "ennuyant s'ils bougeaient tous à la même vitesse). Paramétrez-les à ``150`` "
 "et``250`` dans l'inspecteur. Nous avons également un tableau qui contient "
-"les noms des trois animations, lequel nous utiliserons pour en choisir un au "
-"hasard."
+"les noms des trois animations que nous utiliserons pour en choisir 1 "
+"aléatoirement."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:535
 msgid ""
@@ -5021,9 +5020,8 @@ msgstr ""
 "pas fonctionner correctement."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export Presets"
-msgstr "Exporter des projets"
+msgstr "Presets d'exportation"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:142
 msgid ""
@@ -5825,9 +5823,8 @@ msgid "Bounding rectangle"
 msgstr "Rectangle de délimitation"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-#, fuzzy
 msgid "Focus and focus neighbour"
-msgstr "Se concentrer et se concentrer sur son voisin"
+msgstr "Focus et focus voisin"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
@@ -5982,7 +5979,6 @@ msgid "TextureRect modulated with a red color"
 msgstr "TextureRect modulé par la couleur rouge"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
-#, fuzzy
 msgid "TextureButton"
 msgstr "TextureButton"
 
@@ -6002,7 +5998,6 @@ msgstr ""
 "image en noir et blanc de 2 bits."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:104
-#, fuzzy
 msgid ""
 "In the Base Button section, you'll find a few checkboxes that change how the "
 "button behaves. When ``Toggle Mode`` is on, the button will toggle between "
@@ -6015,11 +6010,11 @@ msgstr ""
 "Dans la section Bouton de base, vous trouverez quelques cases à cocher qui "
 "modifient le comportement du bouton. Lorsque l'option ``Toggle Mode`` est "
 "activée, le bouton bascule entre l'état actif et l'état normal lorsque vous "
-"appuyez dessus. Désactivé\" le désactive par défaut, auquel cas il utilisera "
-"la texture ``Disabled``. TextureButton partage quelques propriétés avec le "
-"cadre de texture : il a une propriété ``modulate``, pour changer sa couleur, "
-"et les modes ``Resize`` et ``Stretch`` pour changer son comportement "
-"d'échelle."
+"appuyez dessus. ``Disabled`` le désactive par défaut, auquel cas il "
+"utilisera la texture ``Disabled``. TextureButton partage quelques propriétés "
+"avec le cadre de texture : il a une propriété ``modulate``, pour changer sa "
+"couleur, et les modes ``Resize`` et ``Stretch`` pour changer son "
+"comportement d'échelle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:114
 msgid "TextureButton and its 5 texture slots"
@@ -6368,8 +6363,8 @@ msgid ""
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor so you can see the effect instantly."
 msgstr ""
-"Les conteneurs rangent automatiquement tous les noeuds enfants Control, y "
-"compris les autres conteneurs en rangées, colonnes et plus encore. Utilisez-"
+"Les conteneurs rangent automatiquement tous les nœuds Control enfants, y "
+"compris les autres conteneurs, en rangées, colonnes et plus encore. Utilisez-"
 "les pour ajouter du remplissage autour de votre interface ou des nœuds "
 "centraux dans leurs rectangles de délimitation. Tous les conteneurs intégrés "
 "sont mis à jour dans l'éditeur pour que vous puissiez voir l'effet "
@@ -9672,12 +9667,19 @@ msgid ""
 "information, we emit a new signal. Use them wisely: the more connections you "
 "add, the harder they are to track."
 msgstr ""
+"Vous devriez maintenant voir un modèle : chaque fois que le GUI a besoin "
+"d'une nouvelle pièce d'informations, nous émettons un nouveau signal. "
+"Utilisez-les judicieusement : plus vous ajoutez des connexions, plus elles "
+"seront difficiles à suivre."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
+"Pour animer un fondu sur un élément UI, nous devons utiliser la propriété "
+"``modulate``. ``modulate`` est une ``Color`` qui multiplie les couleurs de "
+"nos textures."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
 msgid ""
@@ -9685,6 +9687,9 @@ msgid ""
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
+"`modulate` provient de la classe `CanvasItem`, tous les nœuds 2D et UI en "
+"hérite. Cela vous permet de contrôler la visibilité du nœud, d'y assigner un "
+"shader, et de le modifier en utilisant une couleur avec `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
 msgid ""
@@ -9692,6 +9697,10 @@ msgid ""
 "alpha. If we darken any of the first three channels it darkens the "
 "interface. If we lower the alpha channel our interface fades out."
 msgstr ""
+"``modulate`` prend une valeur ``Color`` avec 4 canaux : rouge, vert, bleu et "
+"alpha. Si vous assombrissons n'importe lequel des trois premiers canaux, "
+"cela assombrit l'interface. Si nous abaissons le canal alpha, notre "
+"interface disparaît."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
 msgid ""

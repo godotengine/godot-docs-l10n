@@ -12,6 +12,7 @@
 # Mark B <berezun.mark@gmail.com>, 2018.
 # Martin Ziegler <martin.zie@gmx.de>, 2018.
 # Neicul <neicul@gmx.de>, 2018.
+# nimradium <nimra242001@gmail.com>, 2018.
 # Otto Hakstetter <otto@hakstetter.de>, 2018.
 # Philipp Wabnitz <philipp.wabnitz@s2011.tu-chemnitz.de>, 2018.
 # rama0x9 <5393a6cuwlun@opayq.com>, 2018.
@@ -26,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-06-06 07:06+0000\n"
-"Last-Translator: kdankert <k.dankert@wtnet.de>\n"
+"PO-Revision-Date: 2018-06-28 16:16+0000\n"
+"Last-Translator: nimradium <nimra242001@gmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -35,7 +36,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -99,6 +100,13 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Senden Sie ein Problem oder ein \"pull request\" über das `GitHub-Repository "
+"<https://github.com/godotengine/godot-docs/issues>`_, helfen Sie uns, `die "
+"Dokumentation in Ihre Sprache zu übersetzen<https://hosted.weblate.org/"
+"engage/godot-engine/>`_ , oder diskutieren Sie mit uns entweder in dem "
+"``#documentation``-Kanal auf `Discord <https://discord.gg/zH7NUgz>`_ oder "
+"dem ``#godotengine-doc``-Kanal auf `irc.freenode.net <http://webchat."
+"freenode.net/?channels=#godotengdoc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -569,7 +577,6 @@ msgstr ""
 "64 Bit als Standard."
 
 #: ../../docs/about/faq.rst:53
-#, fuzzy
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi. There is also some unofficial "
@@ -577,8 +584,8 @@ msgid ""
 "included in the default build scripts or export templates, however."
 msgstr ""
 "Laut manchen Nutzern lässt sich Godot auch erfolgreich auf ARM-basierten "
-"Systemen mit Linux wie dem Raspberry Pi kompilieren und verwenden. Auch gibt "
-"es Ports für Konsolen von Drittanbietern. Allerdings ist nichts davon "
+"Systemen mit Linux, wie dem Raspberry Pi kompilieren und verwenden. Auch "
+"gibt es Ports für Konsolen von Drittanbietern. Allerdings ist nichts davon "
 "standardmäßig in den Buildskripten oder Exportvorlagen enthalten."
 
 #: ../../docs/about/faq.rst:57
@@ -656,17 +663,18 @@ msgstr ""
 "Vorteile selbst anzusehen."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please make the effort to learn GDScript, you will not regret it."
 msgstr ""
-"GDScript wurde entworfen, um sich perfekt in Godot und dessen Funktionsweise "
-"zu integrieren, und ist gleichzeitig einfach gehalten, um das Erlernen so "
-"simpel wie möglich zu gestalten. Bitze mache dir die Mühe, GDScript zu "
-"lernen, du wirst es nicht bereuen."
+"GDScript ist so konzipiert, dass es sich von Grund auf in die Funktionsweise "
+"von Godot integrieren lässt, mehr als jede andere Sprache, und ist einfach "
+"und leicht zu erlernen. Es dauert höchstens ein oder zwei Tage, um sich an "
+"sie zu gewöhnen, und es ist einfach, die Vorteile zu sehen, wenn man sie "
+"erst einmal gelernt hat. Bitte machen Sie sich die Mühe, GDScript zu "
+"erlernen, Sie werden es nicht bereuen."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -852,7 +860,6 @@ msgstr ""
 "<http://opensource.org/licenses/MIT>`_ von Godot ist."
 
 #: ../../docs/about/faq.rst:158
-#, fuzzy
 msgid ""
 "That said, Godot's Collada support is good, please use the `OpenCollada "
 "<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ "
@@ -860,11 +867,11 @@ msgid ""
 "are using Blender, take a look at our own `Better Collada Exporter <https://"
 "godotengine.org/download>`_."
 msgstr ""
-"Stattdessen ist Godots Unterstützung für Collada wirklich gut, bitte "
-"verwende den `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools>`_ Exporter für maximale Kompatibilität, falls du Maya "
-"oder 3DS max nutzt. Verwendest du Blender, dann schaue dir unseren eigenen "
-"`Better Collada Exporter <https://godotengine.org/download>`_ an."
+"Das heißt, die Unterstützung von Godot für Collada ist wirklich gut, bitte "
+"verwenden Sie den `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/"
+"wiki/OpenCOLLADA-Tools>`_ Exporter für maximale Kompatibilität, falls Sie "
+"Maya oder 3DS Max nutzen. Verwenden Sie Blender, dann schaue Sie unseren "
+"eigenen `Better Collada Exporter <https://godotengine.org/download>`_ an."
 
 #: ../../docs/about/faq.rst:164
 msgid "Also, glTF support was added in Godot 3.0."
@@ -1261,7 +1268,7 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:16
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:22
 msgid "|image0|"
-msgstr ""
+msgstr "|image0|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:18
 msgid ""
@@ -1275,7 +1282,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:54
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
 msgid ""
@@ -1289,7 +1296,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
@@ -1308,7 +1315,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:88
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:83
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
 msgid ""
@@ -1322,7 +1329,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:99
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
 msgid ""
@@ -1347,7 +1354,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 msgid ""
@@ -1355,19 +1362,24 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"Du kannst bereits existierende Projekte auf eine ähnliche Art importieren, "
+"mithilfe des Import Buttons. Wähle das Verzeichnis welches das Projekt oder "
+"die ``project.godot`` Datei enthält um es zu importieren und zu editieren."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "When the folder path is correct you'll see a green checkmark."
 msgstr ""
+"Wenn der Dateipfad zum Ordner korrekt ist, werden Sie einen grünen Haken "
+"sehen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:120
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
@@ -1383,44 +1395,52 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 msgid "Now you should see this interface, with empty docks on the right side."
 msgstr ""
+"Nun sollten Sie diese Benutzeroberfläche mit leeren Docks auf der rechten "
+"Seite sehen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:147
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"Oben, von links nach rechts, sehen Sie die **Hauptmenüs**, die "
+"**Arbeitsbereiche** und die **Playtest-Tasten**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid ""
 "On the left side you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
+"Auf der linken Seite befindet sich das **FileSystem Dock**, wo Sie Ihre "
+"Projektdateien und Assets verwalten können."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:152
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
 "On the right side you’ll find the **Scene dock** that lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
+"Auf der rechten Seite befindet sich das **Scene Dock**, das den Inhalt der "
+"aktiven Szene und den **Inspector** in der rechten unteren Ecke auflistet."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:160
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -1432,7 +1452,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:167
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid ""
@@ -1440,35 +1460,44 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"Das **Bottom Panel** ist der Host für die Debug-Konsole, den Animations-"
+"Editor, den Audiomixer.... Sie sind breit und können wertvollen Platz "
+"einnehmen. Deshalb werden sie standardmäßig zusammengeklappt."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
+#, fuzzy
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid "The workspaces"
-msgstr ""
+msgstr "Die Arbeitsbereiche"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
-msgstr ""
+msgstr "Oben sehen Sie vier Schaltflächen: 2D, 3D, Script und AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
 "You’ll use the **2D workspace** for all types of games. On top of 2D games "
 "that is where you’ll build your interfaces. Press F1 to access it. |image15|"
 msgstr ""
+"Sie werden den **2D-Arbeitsbereich** für alle Arten von Spielen benutzen. "
+"Zusätzlich zu den 2D-Spielen werden Sie dort Ihre Benutzeroberflächen "
+"erstellen. Drücken Sie F1, um darauf zuzugreifen. |image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:109
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
+"Im **3D-Arbeitsbereich** können Sie mit Meshes, Lichtern arbeiten und Level "
+"für 3D-Spiele erstellen. Drücken Sie F2, um darauf zuzugreifen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
 msgid "|image16|"
-msgstr ""
+msgstr "|image16|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:114
 msgid ""
@@ -1478,7 +1507,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:116
 msgid "|image20|"
-msgstr ""
+msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 msgid ""
@@ -1489,17 +1518,21 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:122
 msgid "|image17|"
-msgstr ""
+msgstr "|image17|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
+#, fuzzy
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"Zum Schluss die **AssetLib**, sie ist eine Bibliothek mit kostenlosen Add-"
+"ons, Skripten und Assets, die Sie in Ihren Projekten verwenden können."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
+#, fuzzy
 msgid "Modify the interface"
-msgstr ""
+msgstr "Oberfläche bearbeiten"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
 msgid ""
@@ -1510,7 +1543,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
 msgid "Move and resize docks"
-msgstr ""
+msgstr "Docks verschieben und skalieren"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
 msgid ""
@@ -1520,22 +1553,27 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid "|image18|"
-msgstr ""
+msgstr "|image18|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
+"Klicken Sie auf das drei-gepunktete Symbol am oberen Rand eines beliebigen "
+"Docks, um seine Position zu ändern."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid "|image19|"
-msgstr ""
+msgstr "|image19|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#, fuzzy
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"Gehen Sie zum Menü ```Editor`` und ```Editor Settings``, um das Aussehen des "
+"Editors zu anzupassen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
@@ -1548,6 +1586,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Stellen Sie sich für eine Sekunde vor, dass Sie kein Spieleentwickler mehr "
+"sind. Stattdessen sind Sie ein Koch! Wechseln Sie Ihr Hipster-Outfit gegen "
+"eine Toque und eine Zweireiher-Jacke. Statt Spiele zu erstellen, kreieren "
+"Sie jetzt neue und leckere Rezepte für Ihre Gäste."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -1556,6 +1598,10 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"Also, wie kreiert ein Koch ein Rezept? Rezepte sind in zwei Abschnitte "
+"unterteilt: der erste beinhaltet die Zutaten und der zweite Anleitung. Auf "
+"diese Weise kann jeder dem Rezept folgen und Ihre großartige Kreation "
+"genießen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -1585,11 +1631,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "Er hat einen Namen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "Er hat veränderbare Eigenschaften."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
@@ -1625,7 +1671,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr ""
+msgstr "Szenen"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""

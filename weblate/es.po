@@ -16,8 +16,10 @@
 # Javier López Úbeda <jlopezcur@gmail.com>, 2018.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2018.
 # Jorge Araya Navarro <jorge@esavara.cr>, 2018.
+# Jorge Marcos <jorgemarcos@protonmail.com>, 2018.
 # Jose Maria Martinez <josemar1992@hotmail.com>, 2018.
 # Juan Carlos <juanvelandia@protonmail.com>, 2018.
+# Juan Jesús Ligero <jjhaggar@gmail.com>, 2018.
 # Julio Alvar Tamaño <alvarjt@gmail.com>, 2018.
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
@@ -37,8 +39,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-06-15 21:44+0000\n"
-"Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
+"PO-Revision-Date: 2018-06-28 16:17+0000\n"
+"Last-Translator: R. Joshua Seville <rjoshua@protonmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -46,7 +48,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -72,9 +74,9 @@ msgid ""
 msgstr ""
 "Bienvenido a la documentación oficial de Godot Engine, el motor de juegos 2D "
 "y 3D gratuito y de código abierto impulsado por la comunidad! Si lees por "
-"primera vez esta documentación, recomendamos que veas la página de "
-"introducción :ref:`Página de introducción <doc_about_intro>` para obtener "
-"una visión general de lo que ofrece esta documentación."
+"primera vez esta documentación, recomendamos que veas la :ref:`página de "
+"introducción <doc_about_intro>` para obtener una visión general de lo que "
+"ofrece esta documentación."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -110,12 +112,12 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Envíanos un issue o pull request en el `repositorio GitHub <https://github."
-"com/godotengine/godot-docs/issues>`_, ayúdanos a `traducir la documentación "
-"<https://hosted.weblate.org/engage/godot-engine/>`_ a tu idioma, o discute "
-"con nosotros en el canal ``#documentation`` en `Discord <https://discord.gg/"
-"zH7NUgz>`_, o en el canal ``#godotengine-doc`` en `irc.freenode.net <http://"
-"webchat.freenode.net/?channels=#godotengine-doc>`_!"
+"Envíanos un issue o pull request en el `repositorio de GitHub <https://"
+"github.com/godotengine/godot-docs/issues>`_, ayúdanos a `traducir la "
+"documentación <https://hosted.weblate.org/engage/godot-engine/>`_ a tu "
+"idioma, o discute con nosotros en el canal ``#documentation`` en `Discord "
+"<https://discord.gg/zH7NUgz>`_, o en el canal ``#godotengine-doc`` en `irc."
+"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -254,7 +256,7 @@ msgid ""
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
 "Godot Engine es un motor de videojuegos multiplataforma, con múltiples "
-"características, para crear juegos 2d y 3d desde una interfaz homogenea. "
+"características, para crear juegos 2d y 3d desde una interfaz unificada. "
 "Provee un conjunto exhaustivo de herramientas comunes, para que los usuarios "
 "puedan enfocarse en crear juegos sin tener que reinventar la rueda. Los "
 "juegos se pueden exportar en un sólo clic a numerosas plataformas, "
@@ -305,7 +307,7 @@ msgstr ""
 "continuamente por miembros de la comunidad de Godot Engine. Se edita "
 "mediante archivos de texto en el lenguaje de marcado `reStructuredText "
 "<http://www.sphinx-doc.org/en/stable/rest.html>`_ y luego se compila en un "
-"sitio web estático/documento offline utilizando las herramientas ``Sphinx "
+"sitio web estático/documento offline utilizando las herramientas `Sphinx "
 "<http://www.sphinx-doc.org>`_ y `ReadTheDocs <https://readthedocs.org/>`_ de "
 "código abierto."
 
@@ -417,7 +419,7 @@ msgstr ""
 "Godot, que también está disponible directamente desde el editor de scripts "
 "del motor. Se genera automáticamente desde un archivo en el repositorio "
 "prinicipal del código fuente, por lo tanto los archivos generados no están "
-"hechos para ser modificados. Vea :ref:`doc_updating_the_class_reference` "
+"hechos para ser modificados. Mira :ref:`doc_updating_the_class_reference` "
 "para más detalles."
 
 #: ../../docs/about/introduction.rst:96
@@ -487,7 +489,7 @@ msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
-"Para más información, vea `aqui <https://tldrlegal.com/license/mit-"
+"Para más información, mira `aqui <https://tldrlegal.com/license/mit-"
 "license>`_ o pregunta a tu abogado."
 
 #: ../../docs/about/faq.rst:21
@@ -500,7 +502,7 @@ msgstr ""
 "Todos los contenidos de esta documentación están bajo la permisiva licencia "
 "Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/"
 "licenses/by/3.0/>`_), con atribución a \"Juan Linietsky, Ariel Manzul y a la "
-"comunidad del motor Godot\"."
+"comunidad de Godot Engine\"."
 
 #: ../../docs/about/faq.rst:25
 msgid ""
@@ -521,7 +523,7 @@ msgid ""
 "files in the Godot repository."
 msgstr ""
 "Para más detalles, revisa los archivos  `COPYRIGHT.txt <https://github.com/"
-"godotengine/godot/blob/master/COPYRIGHT.txt>`_ al igual que la LICENCIA.txt "
+"godotengine/godot/blob/master/COPYRIGHT.txt>`_ al igual que la `LICENCIA.txt "
 "<https://github.com/godotengine/godot/blob/master/LICENSE.txt>`_ y "
 "`LOGO_LICENSE.txt <https://github.com/godotengine/godot/blob/master/"
 "LOGO_LICENSE.md>`_  en el repositorio de Godot."
@@ -602,7 +604,7 @@ msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"Para mas sobre esto, mira las secciones de :ref:`exportando <toc-learn-"
+"Para más sobre esto, mira las secciones de :ref:`exportando <toc-learn-"
 "workflow-export>` y de :ref:`compilado Godot tu mismo <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:60
@@ -670,11 +672,10 @@ msgstr ""
 "integrada y natural por encima de atraer usuarios adicionales con lenguajes "
 "de programación más familiares que terminan en una mala experiencia. "
 "Nosotros entendemos si prefieres usar otros lenguajes de programación en "
-"Godot (Véase la lista de lenguajes soportados más abajo), pero te animamos a "
+"Godot (Mira la lista de lenguajes soportados más abajo), pero te animamos a "
 "intentarlo y ver los beneficios por ti mismo."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
@@ -808,7 +809,7 @@ msgid ""
 "For creating Godot Editor plugins look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Para crear complementos para el Editor de Godot, vea :ref:`EditorPlugins "
+"Para crear complementos para el Editor de Godot, mira :ref:`EditorPlugins "
 "<doc_making_plugins>` y tool scripts."
 
 #: ../../docs/about/faq.rst:139
@@ -995,7 +996,7 @@ msgid ""
 "this."
 msgstr ""
 "Utiliza las opciones de stretch en Godot, 2D stretch junto con keeping "
-"aspect es la mejor. Vea el tutorial  :ref:`doc_multiple_resolutions` sobre "
+"aspect es la mejor. Mira el tutorial  :ref:`doc_multiple_resolutions` sobre "
 "cómo hacer esto."
 
 #: ../../docs/about/faq.rst:212
@@ -1026,7 +1027,6 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "Y eso es todo! Tu juego debería funcionar en múltiples resoluciones."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -1220,7 +1220,7 @@ msgstr "¿Cómo puedo apoyar el desarrollo de Godot o contribuir?"
 
 #: ../../docs/about/faq.rst:290
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr "Vea :ref:`doc_ways_to_contribute`."
+msgstr "Mira :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:293
 msgid "Who is working on Godot? How can I contact you?"
@@ -1231,8 +1231,8 @@ msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
-"Vea la pagina correspondiente en el `sitio web de Godot <https://godotengine."
-"org/contact>`_."
+"Mira la pagina correspondiente en el `sitio web de Godot <https://"
+"godotengine.org/contact>`_."
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 msgid "Step by step"
@@ -1393,8 +1393,8 @@ msgid ""
 msgstr ""
 "¡Bienvenido a Godot! Con tu proyecto abierto deberías ver la interfaz del "
 "editor con la vista 3D activa. Puedes cambiar el espacio de trabajo actual "
-"en la parte superior de la interfaz. Haz clic en 2d para cambiar al espacio "
-"de trabajo 2d."
+"en la parte superior de la interfaz. Haz clic en 2D para cambiar al espacio "
+"de trabajo 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
@@ -1493,8 +1493,8 @@ msgid ""
 "that is where you’ll build your interfaces. Press F1 to access it. |image15|"
 msgstr ""
 "Utilizarás el **espacio de trabajo 2D** para todo tipo de juegos. Además de "
-"juegos 2D que es donde construirás tus interfaces. Presione F1 para acceder "
-"a este.\n"
+"los juegos en 2D, es donde construirás tus interfaces. Presiona F1 para "
+"acceder a este.\n"
 "|image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:109
@@ -1817,8 +1817,7 @@ msgstr ""
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
 msgstr ""
-"Para hacer esto, presiona el botón \"Crear nodo nuevo\" (que tiene un "
-"símbolo más):"
+"Para hacer esto, presiona el botón \"Nuevo Nodo\" (que tiene un símbolo más):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -2119,7 +2118,7 @@ msgid ""
 msgstr ""
 "Queremos agregar la instancia de la escena ``Ball`` como hija de ``Main``. "
 "Click en el botón con forma de \"cadena\" (su texto emergente dice "
-"\"Instanciar un archivo desde escena como Nodo.\") y selecciona el archivo "
+"\"Instanciar un archivo de escena como Nodo.\") y selecciona el archivo "
 "``Ball.tscn``."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
@@ -2135,7 +2134,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
 msgstr ""
-"Presiona \"Play\" y verás la bola caer hasta la parte inferior de la "
+"Presiona \"Reproducir\" y verás la bola caer hasta la parte inferior de la "
 "pantalla:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
@@ -2671,7 +2670,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid "Writing a script and attaching it to a node."
-msgstr "Escribir un script y adjuntarlo a un nodo."
+msgstr "Escribir un script y añadirlo a un nodo."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:101
 msgid "Hooking up UI elements via signals."
@@ -3314,12 +3313,12 @@ msgstr ""
 "El primero es cargar la escena desde el disco duro:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
-#, fuzzy
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
-"Puede ser más conveniente la precarga , ya que ocurre en tiempo de análisis:"
+"La precarga puede ser más conveniente, ya que ocurre en tiempo de análisis "
+"(sólo GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""
@@ -3641,7 +3640,6 @@ msgid "Start by declaring the member variables this object will need:"
 msgstr "Comienza declarando las variables miembro que este objeto necesitará:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -4060,7 +4058,6 @@ msgstr ""
 "miembro:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:529
-#, fuzzy
 msgid ""
 "We'll pick a random value between ``min_speed`` and ``max_speed`` for how "
 "fast each mob will move (it would be boring if they were all moving at the "
@@ -4068,7 +4065,7 @@ msgid ""
 "an array containing the names of the three animations, which we'll use to "
 "select a random one."
 msgstr ""
-"Tomaremos un número al azar entre ``MIN_SPEED`` y ``MAX_SPEED`` para decidir "
+"Tomaremos un número al azar entre ``min_speed`` y ``max_speed`` para decidir "
 "cuán rápido se debe mover cada enemigo (sería aburrido si todos se moviesen "
 "igual). Asignaremos ``150`` y ``250`` en el Inspector. También tendremos un "
 "array que contendrá las tres animaciones, el cual usaremos para tomar una al "
@@ -4125,7 +4122,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:593
 msgid "See :ref:`doc_instancing` to learn more about instancing."
-msgstr "Vea :ref:`doc_instancing` para aprender más sobre instanciación."
+msgstr "Mira :ref:`doc_instancing` para aprender más sobre instanciación."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:595
 msgid ""
@@ -4807,7 +4804,7 @@ msgid ""
 "See :ref:`Particles2D <class_Particles2D>` for more details on using "
 "particle effects."
 msgstr ""
-"Vea :ref:`Particles2D <class_Particles2D>`  para más detalles sobre el uso "
+"Mira :ref:`Particles2D <class_Particles2D>` para más detalles sobre el uso "
 "de efectos de partículas."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
@@ -5317,7 +5314,7 @@ msgid ""
 "Please watch `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
-"Por favor, lee `Discover Godot 3, the Free game engine <https://youtu."
+"Por favor, mira `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ (la presentación está disponible en otros idiomas "
 "en`<https://github.com/GDquest/godot-3-presentation>`) si estás buscando un "
 "resumen de las características del motor."
@@ -8735,11 +8732,10 @@ msgstr ""
 "los nodos para que escuche el que seleccionaste."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
-#, fuzzy
 msgid "The first section lists custom signals defined in ``Player.gd``:"
 msgstr ""
-"La primera sección enlista las señales personalizadas definidas en ``player."
-"GD``:"
+"La primera sección enlista las señales personalizadas definidas en ``Player."
+"gd``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
 msgid ""
@@ -8758,7 +8754,6 @@ msgid "We're connecting to the health\\_changed signal"
 msgstr "Nos estamos conectando a la señal health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
-#, fuzzy
 msgid ""
 "Select ``health_changed`` and click on the Connect button in the bottom "
 "right corner to open the Connect Signal window. On the left side you can "
@@ -8772,7 +8767,7 @@ msgstr ""
 "esquina inferior derecha para abrir la ventana Contectando señal. En el lado "
 "izquierdo puedes elegir el nodo que escuchará esta señal. Selecciona el nodo "
 "``GUI``. El lado derecho de la pantalla permite agrupar valores opcionales "
-"con la señal. Ya nos encargamos de ello en ``player.GD``. En general se "
+"con la señal. Ya nos encargamos de ello en ``Player.gd`. En general se "
 "recomienda no añadir demasiados argumentos usando esta ventana ya que son "
 "menos convenientes que hacerlo desde el código."
 
@@ -8781,7 +8776,6 @@ msgid "The Connect Signal window with the GUI node selected"
 msgstr "La ventana Conectando Señal con el nodo GUI seleccionado"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
-#, fuzzy
 msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
@@ -8804,7 +8798,6 @@ msgstr ""
 "panel de Escenas"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
-#, fuzzy
 msgid ""
 "At the bottom of the window you will find the path to the node you selected. "
 "We're interested in the second row called \"Method in Node\". This is the "
@@ -8823,7 +8816,7 @@ msgstr ""
 "está activado por defecto. Haz clic en el botón de conexión en la parte "
 "inferior de la ventana. Godot crea el método dentro del nodo ``GUI``. El "
 "editor de scripts se abre con el cursor dentro de una nueva función "
-"``_on_player_health_changed``."
+"``_on_Player_health_changed``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:265
 msgid ""
@@ -9547,9 +9540,8 @@ msgid "The keyframe will be added in the animation player editor:"
 msgstr "El fotograma clave sera agregado al editor de animaciones:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:62
-#, fuzzy
 msgid "Move the editor cursor to the end by clicking here:"
-msgstr "Mueva el cursor al final haciendo click aquí:"
+msgstr "Mueve el cursor del editor al final haciendo clic aquí:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:66
 msgid ""
@@ -9592,7 +9584,6 @@ msgid "Nodes and resources"
 msgstr "Nodos y recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
-#, fuzzy
 msgid ""
 "So far, :ref:`Nodes <class_Node>` have been the most important datatype in "
 "Godot as most of the behaviors and features of the engine are implemented "
@@ -9658,7 +9649,6 @@ msgstr ""
 "contenedores de datos, por lo que no es necesario duplicarlos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:42
-#, fuzzy
 msgid ""
 "Typically, every object in Godot (Node, Resource, or anything else) can "
 "export properties. Properties can be of many types (like a string, integer, "
@@ -9693,15 +9683,14 @@ msgstr ""
 "nodo :ref:`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:61
-#, fuzzy
 msgid ""
 "Pressing the \">\" button on the right side of the preview allows us to view "
 "and edit the resources properties. One of the properties (path) shows where "
 "it comes from. In this case, it comes from a png image."
 msgstr ""
-"Haciendo click en el campo del recurso, permite ver y editar las "
-"propiedades. Una de las propiedades muestra desde dónde viene. En ese caso, "
-"viene de una imagen png."
+"Pulsando el botón \">\" a la derecha de la vista previa podemos ver y editar "
+"las propiedades de los recursos. Una de las propiedades (path) muestra de "
+"dónde proviene. En este caso, proviene de una imagen png."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:67
 msgid ""
@@ -9744,12 +9733,11 @@ msgstr ""
 "es usar load(), de este modo:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
-#, fuzzy
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter because it loads the resource at compile-time."
 msgstr ""
-"El segundo modo es más óptimo, pero sólo funciona con una cadena constante "
+"La segunda forma es más óptima, pero sólo funciona con una cadena constante "
 "como parámetro, porque carga el recurso en tiempo de compilación."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:116
@@ -9833,16 +9821,15 @@ msgid "File system"
 msgstr "Sistema de archivos"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "File systems are yet another hot topic in engine development. The file "
 "system manages how the assets are stored and how they are accessed. A well "
 "designed file system also allows multiple developers to edit the same source "
 "files and assets while collaborating together."
 msgstr ""
-"Los sistemas de archivos son otro tema destacado en el desarrollo de "
+"Los sistemas de archivos son otro tema importante en el desarrollo de "
 "motores. El sistema de archivos gestiona cómo se almacenan los recursos y "
-"cómo se accede a ellos. Un sistema de archivos bien diseñado también permite "
+"cómo se accede a éstos. Un sistema de archivos bien diseñado también permite "
 "a varios desarrolladores editar los mismos archivos y recursos de origen "
 "mientras colaboran entre sí."
 
@@ -10030,7 +10017,6 @@ msgstr ""
 "nueva ubicación del recurso."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
-#, fuzzy
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
@@ -10038,10 +10024,10 @@ msgid ""
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
 "Para evitar esto, realiza todas tus operaciones de mover, borrar y renombrar "
-"desde Godot, en el panel de Sistema de Archivos. Nunca mueva assets desde "
+"desde Godot, en el panel de Sistema de Archivos. Nunca muevas recursos desde "
 "fuera de Godot, o las dependencias tendrán que ser arregladas manualmente "
 "(Godot detecta esto y te ayuda a arreglarlas de todos modos, pero ¿por qué "
-"ir por la ruta más difícil?)."
+"ir por el camino difícil?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
 msgid ""
@@ -10096,17 +10082,16 @@ msgstr ""
 "entran al *scene tree*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
-#, fuzzy
 msgid ""
 "This concept deserves going into a little more detail. In fact, the scene "
 "system is not even a core component of Godot as it is possible to skip it "
 "and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
-"Este concepto merece un poco más de detalle. De hecho, el sistema de escena "
-"no es ni siquiera un componente central de Godot, ya que es posible saltarlo "
-"y escribir un script (o código C++) que converse directamente con los "
-"servidores. Pero desarollar un juego de esta forma exigiría mucho trabajo."
+"Este concepto merece un poco más de detalle. De hecho, el sistema de escenas "
+"ni siquiera es un componente central de Godot ya que es posible omitirlo y "
+"escribir un script (o código C++) que se comunique directamente con los "
+"servidores, pero hacer un juego de esa manera sería mucho trabajo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
@@ -10151,13 +10136,12 @@ msgstr ""
 "Godot, escribir tu propio MainLoop tiene poco sentido."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
-#, fuzzy
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
-"Una de las maneras de explicar cómo funciona Godot, es que se trata de un "
-"motor de juegos de alto nivel sobre un middleware de bajo nivel."
+"Una de las maneras de explicar cómo funciona Godot es que es un motor de "
+"juegos de alto nivel sobre un middleware de bajo nivel."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
@@ -10187,7 +10171,6 @@ msgstr ""
 "importantes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
@@ -10198,16 +10181,14 @@ msgstr ""
 "Escenas* (más información a continuación)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
-#, fuzzy
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
 msgstr ""
-"Contiene información sobre los grupos, y posee medios para llamar a todos "
-"los nodos de un grupo u obtener una lista de ellos."
+"Contiene información sobre los grupos y dispone de los medios para llamar a "
+"todos los nodos de un grupo u obtener una lista de ellos."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
-#, fuzzy
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
@@ -10221,8 +10202,8 @@ msgid ""
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
 "get_tree() <class_Node_get_tree>`."
 msgstr ""
-"Cuando un nodo es parte del Árbol de Escenas, el :ref:`SceneTree "
-"<class_SceneTree>` singleton puede obtenerse simplemente llamando :ref:`Node."
+"Cuando un nodo es parte del Árbol de Escenas, el singleton :ref:`SceneTree "
+"<class_SceneTree>` puede obtenerse simplemente llamando :ref:`Node."
 "get_tree() <class_Node_get_tree>`."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
@@ -10239,7 +10220,6 @@ msgstr ""
 "diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
-#, fuzzy
 msgid ""
 "This node contains the main viewport, anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
@@ -10247,9 +10227,9 @@ msgid ""
 "nothing would be seen!"
 msgstr ""
 "Este nodo contiene el viewport principal, cualquier otro elemento es un "
-"pariente de :ref:`Viewport <class_Viewport>` y es dibujado en su interior "
-"por defecto, toma sentido entonces que el nodo principal sea siempre uno de "
-"este tipo, de otro modo no se podría dibujar nada en pantalla!"
+"pariente de :ref:`Viewport <class_Viewport>` y por defecto es dibujado en su "
+"interior, toma sentido entonces que el nodo principal sea siempre uno de "
+"este tipo ¡de otro modo no se podría dibujar nada en pantalla!"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:93
 msgid ""
@@ -10259,7 +10239,7 @@ msgid ""
 msgstr ""
 "Mientras que se pueden crear otras vistas en la escena (para obtener "
 "resultados en pantalla dividida, etc.), ésta es la única que nunca es creada "
-"por el usuario. Se crea automáticamente dentro del Árbol de escenas."
+"por el usuario. Se crea automáticamente dentro de SceneTree."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:98
 msgid "Scene tree"
@@ -10274,7 +10254,6 @@ msgstr ""
 "principal, este se vuelve parte del *Árbol de escenas*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
-#, fuzzy
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
@@ -10299,7 +10278,6 @@ msgid "Tree order"
 msgstr "Orden del árbol"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
@@ -10320,15 +10298,13 @@ msgid "A scene is loaded from disk or created by scripting."
 msgstr "Una escena es cargada desde disco o creada mediante scripting."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
-#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
 "El nodo raíz de esa escena (sólo una raíz, ¿recuerdas?) se añade como hijo "
-"del Viewport \"raíz\" (de Árbol de Escenas), o a cualquier hijo o nieto del "
-"mismo."
+"del Viewport \"raíz\" (del SceneTree), o a cualquier hijo o nieto del mismo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:130
 msgid ""
@@ -10371,7 +10347,6 @@ msgstr ""
 "change_scene() <class_SceneTree_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
-#, fuzzy
 msgid ""
 "This is a quick and useful way to switch scenes but has the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -10385,7 +10360,7 @@ msgstr ""
 "cargue y se ejecute. En algún momento del juego, puede ser conveniente crear "
 "pantallas de carga adecuadas con una barra de progreso, indicadores animados "
 "o carga de hilos (fondo). Esto debe hacerse manualmente usando autoloads "
-"(¡véase el siguiente capítulo!) y :ref:`doc_background_loading`."
+"(¡ver el próximo capítulo!) y :ref:`doc_background_loading`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
@@ -10852,7 +10827,6 @@ msgstr ""
 "editor de escenas que desees."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:57
-#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
@@ -10880,7 +10854,6 @@ msgstr ""
 "que hace una escena específica a primera vista."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:66
-#, fuzzy
 msgid ""
 "The Inspector in Godot is more minimalist and designed to only show "
 "properties. Thanks to this, objects can export a much larger amount of "
@@ -10911,75 +10884,66 @@ msgstr ""
 "explorar en la ventana del depurador)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:75
-#, fuzzy
 msgid ""
 "This approach has the disadvantage that the running game can't be explored "
 "from different angles (though this may be supported in the future and "
 "displaying collision gizmos in the running game is already possible), but in "
 "exchange has several advantages:"
 msgstr ""
-"Este método tiene como desventaja el no poder explorar el juego actual desde "
-"otros ángulos (sin embargo, esta funcionalidad podría ser incorporada en el "
-"futuro; es posible actualmente mostrar aparatos de colisión en el juego "
-"actual), pero a cambio, tiene varias ventajas:"
+"Este método tiene la desventaja no poder explorar el juego actual desde "
+"otros ángulos (aunque esto podría ser soportado en el futuro y actualmente "
+"ya es posible mostrar gizmos de colisión en el juego actual), pero a cambio "
+"tiene varias ventajas:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:79
-#, fuzzy
 msgid ""
 "Running the project and closing it is fast (Unity has to save, run the "
 "project, close the project, and then reload the previous state)."
 msgstr ""
-"La velocidad con la que el proyecto inicia, así como la velocidad con la que "
-"se cierra es rápida (En cambio, Unity necesita guardar, iniciar el proyecto, "
-"cerrar el proyecto, y después recargar el estado anterior)."
+"Ejecutar el proyecto y cerrarlo es rápido (Unity tiene que guardar, ejecutar "
+"el proyecto, cerrar el proyecto, y luego recargar el estado anterior)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:80
-#, fuzzy
 msgid ""
 "Live editing is a lot more useful because changes done to the editor take "
 "effect immediately in the game and are not lost (nor have to be synced) when "
 "the game is closed. This allows fantastic workflows, like creating levels "
 "while you play them."
 msgstr ""
-"La edición en tiempo real es mucho mas útil, porque los cambios hechos "
-"dentro del editor toman efecto inmediatamente en el juego. Estos cambios no "
-"se pierden (ni tienen que ser sincronizados) cuando se cierra el juego. Esto "
-"permite fantásticos flujos de trabajo, como crear niveles mientras juegas en "
-"ellos."
+"La edición en vivo es mucho más útil porque los cambios hechos al editor "
+"tienen efecto inmediatamente en el juego y no se pierden (ni tienen que ser "
+"sincronizados) cuando el juego está cerrado. Esto permite flujos de trabajo "
+"fantásticos, como crear niveles mientras los reproduces."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:81
-#, fuzzy
 msgid "The editor is more stable because the game runs in a separate process."
 msgstr ""
-"El editor es mas estable, porque el juego corre en un proceso separado."
+"El editor es más estable porque el juego se ejecuta en un proceso separado."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:83
-#, fuzzy
 msgid ""
 "Finally, the top toolbar includes a menu for remote debugging. These options "
 "make it simple to deploy to a device (connected phone, tablet, or browser "
 "via HTML5), and debug/live edit on it after the game was exported."
 msgstr ""
 "Finalmente, la barra de herramientas superior incluye un menú para "
-"depuración remota. Estas opciones hacen fácil desplegar a un dispositivo "
-"(teléfono conectado, tableta, o a un navegador vía HTML5), y depurar/editar "
-"en tiempo real en el una vez el juego a sido exportado."
+"depuración remota. Estas opciones facilitan la implementación en un "
+"dispositivo (teléfono, tableta o navegador conectado a través de HTML5) y la "
+"depuración/edición en vivo en él después de exportar el juego."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:88
 msgid "The scene system"
 msgstr "El sistema de escenas"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
-#, fuzzy
 msgid ""
 "This is the most important difference between Unity and Godot and, actually, "
 "the favourite feature of most Godot users."
 msgstr ""
-"Esta es la diferencia mas importante entre Unity y Godot, y actualmente "
-"también la funcionalidad favorita de la mayoría de los usuarios de Godot."
+"Esta es la diferencia más importante entre Unity y Godot y, de hecho, la "
+"característica favorita de la mayoría de los usuarios de Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:92
-#, fuzzy
 msgid ""
 "Unity's scene system consists of embedding all the required assets in a "
 "scene and linking them together by setting components and scripts to them."
@@ -10989,7 +10953,6 @@ msgstr ""
 "componentes y scripts."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:95
-#, fuzzy
 msgid ""
 "Godot's scene system is different: it actually consists in a tree made of "
 "nodes. Each node serves a purpose: Sprite, Mesh, Light, etc. Basically, this "
@@ -11002,7 +10965,7 @@ msgstr ""
 "Básicamente, esto es similar al sistema de escena Unity. Sin embargo, cada "
 "nodo puede tener varios hijos, lo que hace de cada uno una subescena de la "
 "escena principal. Esto significa que se puede componer una escena completa "
-"con escenas diferentes, almacenadas en archivos diferentes."
+"con escenas diferentes, almacenadas en diferentes archivos."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
 msgid ""
@@ -11029,7 +10992,6 @@ msgid "The enemies"
 msgstr "Los enemigos"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:108
-#, fuzzy
 msgid ""
 "In Unity, you would put all the GameObjects in the scene: the player, "
 "multiple instances of enemies, bricks everywhere to form the ground of the "
@@ -11089,7 +11051,6 @@ msgid "**Lastly, the Level scene.**"
 msgstr "**Por último, la escena del nivel.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:128
-#, fuzzy
 msgid ""
 "It is composed of Bricks (for platforms), Coins (for the player to grab) and "
 "a certain number of instances of the previous Enemy scene. These will be "
@@ -11098,13 +11059,13 @@ msgid ""
 "the Level scene tree. Of course, you can set different properties for each "
 "Enemy node (to change its color, for example)."
 msgstr ""
-"Está compuesta de muros/paredes (para plataformas), Monedas (para que el "
-"jugador las recoja) y un cierto numero de instancias de la escena del "
-"Enemigo anterior. Estos serán diferentes, enemigos separados, cuyo "
-"comportamiento y apariencia será la misma que se definió en la escena "
-"Enemigo. Cada instancia será considerada como un nodo en el árbol de escenas "
-"del nivel. Por supuesto, puedes establecer diferentes propiedades para cada "
-"nodo Enemigo (como cambiar su color por ejemplo)."
+"Se compone de Bricks (bloques, para plataformas), Coins (monedas, para que "
+"el jugador las tome) y un cierto número de instancias de la escena Enemy "
+"(enemigo) anterior. Serán enemigos diferentes, separados, cuyo "
+"comportamiento y apariencia serán los mismos que los definidos en la escena "
+"Enemiga. Cada instancia se considera entonces como un nodo en el árbol de "
+"escenas de nivel. Por supuesto, puedes establecer diferentes propiedades "
+"para cada nodo Enemy (por ejemplo, para cambiar su color)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:134
 msgid ""
@@ -11149,19 +11110,17 @@ msgstr ""
 "Unity permite organizar GameObjects poniéndolos en GameObjects vacíos."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:147
-#, fuzzy
 msgid ""
 "First, this system is closer to the well-known object-oriented paradigm: "
 "Godot provides a number of nodes which are not clearly \"Game Objects\", but "
 "they provide their children with their own capabilities: this is inheritance."
 msgstr ""
-"Primero, este sistema está más cerca del conocido paradigma Orientado a "
-"Objetos: Godot proporciona una serie de nodos que no son claramente "
+"En primer lugar, este sistema se acerca más al conocido paradigma orientado "
+"a objetos: Godot proporciona una serie de nodos que no son claramente "
 "\"Objetos de Juego\", pero que proporcionan a sus hijos sus propias "
 "capacidades: esto es herencia."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:148
-#, fuzzy
 msgid ""
 "Second, it allows the extraction a subtree of scene to make it a scene of "
 "its own, which answers the second and third questions: even if a scene tree "
@@ -11172,19 +11131,18 @@ msgid ""
 msgstr ""
 "En segundo lugar, permite extraer un subárbol de escena para convertirlo en "
 "una escena propia, lo que responde a las preguntas segunda y tercera: "
-"incluso si un árbol de escena se hace demasiado profundo, puede dividirse en "
+"incluso si un árbol de escena se profundiza demasiado, puede dividirse en "
 "subárboles más pequeños. Esto también permite una mejor solución para la "
-"reutilización, ya que se puede incluir cualquier subárbol como hijo de "
+"reutilización, ya que puede incluir cualquier subárbol como hijo de "
 "cualquier nodo. Poner múltiples nodos en un GameObject vacío en Unity no "
 "proporciona la misma posibilidad, aparte de una organización visual."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:151
-#, fuzzy
 msgid ""
 "These are the most important concepts you need to remember: \"node\", "
 "\"parent node\", and \"child node\"."
 msgstr ""
-"Estos son los conceptos más importantes que se deben recordar: \"nodo\", "
+"Estos son los conceptos más importantes que necesitas recordar: \"nodo\", "
 "\"nodo padre\" y \"nodo hijo\"."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:155
@@ -11203,7 +11161,6 @@ msgstr ""
 "Godot, así que este punto tiene una importancia menor."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:162
-#, fuzzy
 msgid ""
 "However, we often observe a common architecture for Unity projects, which "
 "consists of having one Assets folder in the root directory that contains "
@@ -11211,12 +11168,11 @@ msgid ""
 "Scripts, Scenes, etc."
 msgstr ""
 "Sin embargo, a menudo observamos una arquitectura común para los proyectos "
-"de Unity, que consiste en tener una carpeta Assets en el directorio raíz, "
-"que contiene varias carpetas, una por tipo de activo: Audio, Graphics, "
-"Models, Materials, Scripts, Scenes, etc."
+"de Unity, que consiste en tener una carpeta Assets en el directorio raíz que "
+"contiene varias carpetas, una por tipo de recurso: Audio, Graphics, Models, "
+"Materials, Scripts, Scenes, etc."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:165
-#, fuzzy
 msgid ""
 "As described before, the Godot scene system allows splitting scenes into "
 "smaller scenes. Since each scene and subscene is actually one scene file in "
@@ -11246,7 +11202,6 @@ msgstr ""
 "prefab."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:177
-#, fuzzy
 msgid ""
 "Godot does not provide prefabs as such, but this functionality is here, "
 "again, filled thanks to its scene system: As we saw the scene system is "
@@ -11266,7 +11221,6 @@ msgstr ""
 "ningún impacto en la escena `plantilla'."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:185
-#, fuzzy
 msgid ""
 "To be precise, you can modify the parameters of the instance in the "
 "Inspector panel. However, the nodes that compose this instance are locked "
@@ -11316,7 +11270,6 @@ msgstr ""
 "Visual Studio y otras características, como el tipado estático."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:210
-#, fuzzy
 msgid ""
 "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` "
 "as well as support for :ref:`Visual Script <toc-learn-scripting-"
@@ -11336,7 +11289,6 @@ msgstr ""
 "está fuertemente unido a la API de Godot, pero es fácil de aprender."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:216
-#, fuzzy
 msgid ""
 "Unity allows you to attach as many scripts as you want to a GameObject. Each "
 "script adds a behaviour to the GameObject: For example, you can attach a "
@@ -11349,7 +11301,6 @@ msgstr ""
 "controle su lógica de juego específica."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:220
-#, fuzzy
 msgid ""
 "In Godot, you can only attach one script per node. You can use either an "
 "external GDScript file or include the script directly in the node. If you "
@@ -11378,7 +11329,6 @@ msgstr ""
 "a cada uno de ellos."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:227
-#, fuzzy
 msgid ""
 "As you can see, it can be easy to turn a scene tree to a mess. This is why "
 "it is important to have a real reflection and consider splitting a "
@@ -11393,7 +11343,6 @@ msgid "Connections : groups and signals"
 msgstr "Conexiones : grupos y señales"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
-#, fuzzy
 msgid ""
 "You can control nodes by accessing them using a script and calling functions "
 "(built-in or user-defined) on them. But there's more: You can also place "
@@ -11407,7 +11356,6 @@ msgstr ""
 "<doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
-#, fuzzy
 msgid ""
 "But there's more! Certain nodes throw signals when certain actions happen. "
 "You can connect these signals to call a specific function when they happen. "
@@ -11417,8 +11365,8 @@ msgstr ""
 "¡Pero hay más! Ciertos nodos emiten señales cuando ocurren ciertas acciones. "
 "Se pueden conectar estas señales para llamar a una función específica cuando "
 "se producen. Hay que tener en cuenta que puedes definir tus propias señales "
-"y enviarlas cuando quieras. Esta característica está documentada `aquí <../"
-"scripting/gdscript/gdscript_basics.html#signals>`_."
+"y enviarlas cuando quieras. Esta característica está documentada `aquí "
+"<gdscript.html#signals>`_."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
 msgid "Using Godot in C++"
@@ -11467,7 +11415,6 @@ msgid "Path"
 msgstr "Ruta"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid ""
 "It is recommended that your Godot binary is in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
@@ -11519,7 +11466,6 @@ msgid "Creating a project"
 msgstr "Creación de un proyecto"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
-#, fuzzy
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
@@ -11536,7 +11482,6 @@ msgid "Running the editor"
 msgstr "Ejecutar el editor"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
-#, fuzzy
 msgid ""
 "Running the editor is done by executing godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
@@ -11559,7 +11504,6 @@ msgid "Erasing a scene"
 msgstr "Borrar una escena"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:87
-#, fuzzy
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
@@ -12143,7 +12087,7 @@ msgstr "Ejecuta el script en el editor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "signal"
-msgstr "señal"
+msgstr "signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:192
 msgid "Defines a signal."
@@ -12232,7 +12176,7 @@ msgstr "Editor helper para puntos de interrupción del depurador."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "preload"
-msgstr "precargar"
+msgstr "preload"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "Preloads a class or variable. See `Classes as resources`_."
@@ -12260,7 +12204,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "remote"
-msgstr "remoto"
+msgstr "remote"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
@@ -12283,7 +12227,7 @@ msgstr "slave"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
 msgid "sync"
-msgstr "sincronizar"
+msgstr "sync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 msgid "PI"
@@ -12345,7 +12289,7 @@ msgstr "Suscripción, máxima prioridad"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:245
 msgid "``x.attribute``"
-msgstr "``x.atributo``"
+msgstr "``x.atribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:245
 msgid "Attribute Reference"
@@ -12572,7 +12516,7 @@ msgid ""
 "the beginning and end of a block of text. Note that this creates a string, "
 "therefore, it will not be stripped away when the script is compiled."
 msgstr ""
-"Comentarios multilíne pueden ser creados usando \"\"\" (tres comillas "
+"Comentarios multilínea pueden ser creados usando \"\"\" (tres comillas "
 "seguidas) al principio y fin del bloque de texto. Tener en cuenta que esto "
 "crea una cadena (String), por lo tanto no será removido del script cuando es "
 "compilado."
@@ -12659,7 +12603,7 @@ msgid ""
 "wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript supports :ref:`format "
 "strings aka printf functionality <doc_gdscript_printf>`."
 msgstr ""
-"Una secuencia de caracteres en `formato Unicode<https://es.wikipedia.org/"
+"Una secuencia de caracteres en `formato Unicode <https://es.wikipedia.org/"
 "wiki/Unicode>`_. Los Strings pueden contener `secuencias de escape estándar "
 "en C <https://en.wikipedia.org/wiki/Escape_sequences_in_C>`_. GDScript "
 "soporta :ref:`cadenas de formato, alias funcionalidad "
@@ -12818,7 +12762,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:452
 msgid ":ref:`Object <class_Object>`"
-msgstr ":red:`Object <class_Object>`"
+msgstr ":ref:`Object <class_Object>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:454
 msgid "Base class for anything that is not a built-in type."
@@ -13677,11 +13621,10 @@ msgstr ""
 "Si una clase hereda de :ref:`class_Reference`, entonces las instancias serán "
 "liberadas cuando ya no estén en uso. No existe ningún recolector de basura, "
 "sólo un conteo de referencia. Por defecto, todas las clases que no definan "
-"herencias se extienden **Referencia**. Si esto no es lo deseado, entonces "
-"una clase debe heredar :ref:`class_Object` manualmente y debe llamar a "
-"instance.free(). Para evitar ciclos de referencia que no puedan ser "
-"liberados, se proporciona una función ``weakref`` para crear referencias "
-"débiles."
+"herencias se extienden **Reference**. Si esto no es lo deseado, entonces una "
+"clase debe heredar :ref:`class_Object` manualmente y debe llamar a instance."
+"free(). Para evitar ciclos de referencia que no puedan ser liberados, se "
+"proporciona una función ``weakref`` para crear referencias débiles."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1252
 msgid ""
@@ -14583,7 +14526,7 @@ msgstr "Utilización en GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
-msgstr "Vea este ejemplo concreto en GDScript:"
+msgstr "Mira este ejemplo concreto en GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -15689,7 +15632,6 @@ msgid "Right-clicking the variable allows you to configure its properties:"
 msgstr "Clic derecho en la variable permite configurar sus propiedades:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
-#, fuzzy
 msgid ""
 "As it can be seen above, the type and initial value of the variable can be "
 "changed, as well as some property hints. Ticking the \"Export\" options "
@@ -15701,7 +15643,7 @@ msgstr ""
 "cambiados, así como algunos hints de propiedades. Seleccionando la opción "
 "\"Export\" se hace que la variable sea visible en el Inspector  cuando se "
 "selecciona el nodo. Esto hace también la hace disponible a otros scripts "
-"mediante el método descripto en el paso anterior."
+"mediante el método descrito en el paso anterior."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
 msgid ""
@@ -15955,10 +15897,10 @@ msgid ""
 "when the node is sitting in the scene and active, otherwise accessing it "
 "will return as an error."
 msgstr ""
-"Este nodo es similar al nodo Singleton porque hace referencia al Árbol de "
-"escenas, que contiene la escena activa. El Árbol de escenas, sin embargo, "
-"sólo funciona cuando el nodo se encuentra activo en la escena, de lo "
-"contrario, el acceso a él retornará como un error."
+"Este nodo es similar al nodo Singleton porque hace referencia al SceneTree, "
+"que contiene la escena activa. El SceneTree, sin embargo, sólo funciona "
+"cuando el nodo se encuentra activo en la escena, de lo contrario, el acceso "
+"a él retornará como un error."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -16606,7 +16548,7 @@ msgid ""
 msgstr ""
 "Como puedes ver, las cosas que normalmente están en el ámbito global de "
 "GDScript como la función ``print`` de Godot están disponibles en el espacio "
-"de nombres ``GD``. Para ver una lista de éstos, vea las páginas de "
+"de nombres ``GD``. Para ver una lista de éstos, mira las páginas de "
 "referencia de la clase para :ref:`@GDScript <class_@gdscript>` y :ref:"
 "`@GlobalScope <class_@globalscope>`."
 
@@ -16932,7 +16874,7 @@ msgid ""
 "like Math and Random. See below."
 msgstr ""
 "Disponible bajo ``Godot.GD``. Algunas cosas fueron trasladadas a sus propias "
-"clases, como Math y Random. Véase más adelante."
+"clases, como Math y Random. Mira más adelante."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:20
 msgid ""
@@ -17877,17 +17819,16 @@ msgstr ""
 "excepción con un archivo .gdignore ."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
-#, fuzzy
 msgid "Godot-Blender-Exporter"
-msgstr "Importador de Escenas Godot"
+msgstr "Exportador de Godot-Blender"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:5
 msgid "Details on exporting"
-msgstr ""
+msgstr "Detalles sobre exportar"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:16
 msgid "Disabling specific objects"
-msgstr ""
+msgstr "Deshabilitar objetos específicos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:17
 msgid ""
@@ -17895,16 +17836,21 @@ msgid ""
 "baking). An object will not be exported if it is not rendered in the scene. "
 "This can be set in the outliner:"
 msgstr ""
+"A veces no quieres que se exporten algunos objetos (por ejemplo, modelos de "
+"alta resolución utilizados para baking). Un objeto no se exportará si no se "
+"renderiza en la escena. Esto se puede establecer en el esquema:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
 msgstr ""
+"Los objetos ocultos en el viewport se exportarán, pero se ocultarán en la "
+"escena de Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:28
 msgid "Build Pipeline Integration"
-msgstr ""
+msgstr "Integración de la Construcción de Pipeline"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
 msgid ""
@@ -17915,6 +17861,13 @@ msgid ""
 "systems. An example Makefile and python script that exports all the blends "
 "in a directory is present in the Godot-Blender-exporter repository."
 msgstr ""
+"Si tienes cientos de archivos de modelos, no querrás que tus artistas "
+"pierdan el tiempo exportando manualmente sus archivos blend. Para evitar "
+"esto, el exportador proporciona una función python ``io_scene_godot."
+"export(out_file_path)`` que puede ser llamada para exportar un archivo. Esto "
+"permite una fácil integración con otros sistemas de construcción. Un ejemplo "
+"de Makefile y script python que exporta todos los blends en un directorio "
+"está presente en el repositorio de Godot-Blender-exporter."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:2
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:132
@@ -17923,7 +17876,7 @@ msgstr "Materiales"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
-msgstr ""
+msgstr "Uso de materiales Godot existentes"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:6
 msgid ""
@@ -17933,6 +17886,11 @@ msgid ""
 "means that you cannot see your model with the material applied inside "
 "Blender."
 msgstr ""
+"Una de las maneras en que el exportador puede manejar los materiales es "
+"intentar combinar el material de Blender con un material Godot existente. "
+"Esto tiene la ventaja de poder utilizar todas las características del "
+"sistema de materiales de Godot, pero significa que no puedes ver tu modelo "
+"con el material aplicado dentro de Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:11
 msgid ""
@@ -17943,16 +17901,25 @@ msgid ""
 "is not a ``SpatialMaterial`` or ``ShaderMaterial`` or if it cannot be found, "
 "then the exporter will fall back to exporting the material from Blender."
 msgstr ""
+"Para ello, el exportador intenta encontrar materiales Godot con nombres que "
+"coincidan con los del nombre material en Blender. Así que si exportas un "
+"objeto en Blender con el nombre material ``PurpleDots`` entonces el "
+"exportador buscará el archivo ``PurpleDots.tres`` y lo asignará al objeto. "
+"Si este archivo no es un ``SpatialMaterial`` o ``ShaderMaterial`` o si no "
+"puede ser encontrado, entonces el exportador volverá a exportar el material "
+"desde Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:19
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
 msgstr ""
+"El lugar donde el exportador busca el archivo ``.tres`` se determina "
+"mediante la opción \"Material Search Paths\":"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "This can take the value of:"
-msgstr ""
+msgstr "Esto puede tener un valor de:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:25
 msgid ""
@@ -17961,6 +17928,10 @@ msgid ""
 "will throw an error. This is useful for most projects where naming conflicts "
 "are unlikely."
 msgstr ""
+"Directorio del Proyecto - Intenta encontrar el ``project.Godot`` y busca "
+"recursivamente a través de subdirectorios. Si el ``project.Godot`` no puede "
+"ser encontrado lanzará un error. Esto es útil para la mayoría de los "
+"proyectos en los que los conflictos de nombres son poco probables."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:29
 msgid ""
@@ -17968,15 +17939,19 @@ msgid ""
 "location. This is useful for projects where you may have duplicate material "
 "names and need more control over what material gets assigned."
 msgstr ""
+"Directorio de exportación - Busque materiales en los subdirectorios de la "
+"ubicación de exportación. Esto es útil para proyectos en los que se pueden "
+"tener nombres de materiales duplicados y se necesita más control sobre el "
+"material que se asigna."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:32
 msgid "None - Do not search for materials. Export them from the Blender file."
 msgstr ""
+"Ninguno - No buscar materiales. Expórtalos desde el archivo de Blender."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:36
-#, fuzzy
 msgid "Export of Blender materials"
-msgstr "Plantillas de exportación"
+msgstr "Exportar materiales de Blender"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:38
 msgid ""
@@ -17984,12 +17959,17 @@ msgid ""
 "Blender. Currently only the diffuse color and a few flags (eg unshaded) are "
 "exported."
 msgstr ""
+"La otra forma de manejar los materiales es que el exportador los exporte "
+"desde Blender. Actualmente sólo se exportan diffuse color y algunos flags "
+"(por ejemplo, unshaded)."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid ""
 "Export of Blender materials is currently very primitive. However, it is the "
 "focus of a current GSOC project"
 msgstr ""
+"La exportación de materiales de Blender es actualmente muy primitiva. Sin "
+"embargo, es el enfoque de un proyecto actual de GSOC"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:47
 msgid ""
@@ -17997,34 +17977,43 @@ msgid ""
 "When Blender 2.8 is released, this will be removed and this part of the "
 "exporter will change."
 msgstr ""
+"Los materiales se exportan actualmente utilizando su configuración de "
+"\"Blender Render\". Cuando se libere Blender 2.8, se eliminará y esta parte "
+"del exportador cambiará."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:2
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:214
 msgid "Lights"
-msgstr ""
+msgstr "Luces"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:4
 msgid ""
 "By default, lamps in Blender have shadows enabled. This can cause "
 "performance issues in Godot."
 msgstr ""
+"Por defecto, las lámparas de Blender tienen habilitadas las sombras. Esto "
+"puede causar problemas de rendimiento en Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:8
 msgid ""
 "Lamps are exported using their \"Blender Render\" settings. When Blender 2.8 "
 "is released, this will be removed and this part of the exporter will change."
 msgstr ""
+"Las lámparas se exportan utilizando su configuración de \"Blender Render\". "
+"Cuando se libere Blender 2.8, se eliminará y esta parte del exportador "
+"cambiará."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:11
 msgid ""
 "Sun, point and spot lamps are all exported from Blender along with many of "
 "their properties:"
 msgstr ""
+"Las lámparas de sol, punto y foco son todas exportadas de Blender junto con "
+"muchas de sus propiedades:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
-#, fuzzy
 msgid "There are some things to note:"
-msgstr "No hay restricciones de uso para Godot"
+msgstr "Hay algunas cosas a tener en cuenta:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -18032,12 +18021,19 @@ msgid ""
 "clamped by the attenuation distance. To most closely match between the "
 "viewport and Godot, enable the \"Sphere\" checkbox. (Highlighted green)"
 msgstr ""
+"En Blender, una luz proyecta luz hasta el infinito. En Godot, está sujeta "
+"por la distancia de atenuación. Para que la coincidencia entre el viewport y "
+"Godot sea lo más cercana posible, activa la casilla de verificación \"Sphere"
+"\". (Resaltado en verde)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:21
 msgid ""
 "Light attenuation models differ between Godot and Blender. The exporter "
 "attempts to make them match, but it isn't always very good."
 msgstr ""
+"Los modelos de atenuación de luz difieren entre Godot y Blender. El "
+"exportador intenta hacerlos coincidir, aunque no siempre resulta "
+"satisfactorio."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:23
 msgid ""
@@ -18045,33 +18041,39 @@ msgid ""
 "The exporter attempts to make them similar, but it doesn't always look the "
 "same."
 msgstr ""
+"Los modelos de atenuación angular de los focos también difieren entre Godot "
+"y Blender. El exportador intenta hacerlos similares, pero no siempre se ven "
+"iguales."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:26
 msgid ""
 "There is no difference between buffer shadow and ray shadow in the export."
-msgstr ""
+msgstr "No hay diferencia entre buffer shadow y ray shadow en la exportación."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
-#, fuzzy
 msgid "Physics Properties"
-msgstr "Propiedades de los nodos"
+msgstr "Propiedades Físicas"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:3
 msgid ""
 "Exporting physics properties is done by enabling \"Rigid Body\" in Blenders "
 "physics tab:"
 msgstr ""
+"La exportación de las propiedades físicas se realiza habilitando \"Rigid Body"
+"\" en la pestaña physics de Blender:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:9
 msgid ""
 "By default, a single Blender object with rigid body enabled will export as "
 "three nodes: a PhysicsBody, a CollisionShape, and a MeshInstance."
 msgstr ""
+"Por defecto, un solo objeto Blender con cuerpo rígido habilitado se "
+"exportará como tres nodos: un PhysicsBody, un CollisionShape y un "
+"MeshInstance."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
-#, fuzzy
 msgid "Body Type"
-msgstr "By Type"
+msgstr "Tipo de Cuerpos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:15
 msgid ""
@@ -18079,11 +18081,15 @@ msgid ""
 "These turn into Static and RigidBody nodes. To create a kinematic body, "
 "enable the \"animated\" checkbox on an \"Active\" body:"
 msgstr ""
+"Blender sólo tiene el concepto de cuerpos rígidos \"Active\" y \"Passive\". "
+"Estos se convierten en nodos Static y RigidBody. Para crear un cuerpo "
+"cinemático, activa la casilla de verificación \"animated\" en un cuerpo "
+"\"Active\":"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
 msgid "Collision Shapes"
-msgstr "Figuras de Colisión"
+msgstr "Formas de Colisión"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:24
 msgid ""
@@ -18092,11 +18098,14 @@ msgid ""
 "the options in Blender's rigid body collision and rigid body dynamics "
 "interfaces are supported:"
 msgstr ""
+"En Blender faltan muchos de los parámetros para las formas de colisión, y "
+"muchas de las formas de colisión tampoco están presentes. Sin embargo, casi "
+"todas las opciones en las interfaces de colisión de cuerpo rígido y dinámica "
+"de cuerpo rígido de Blender son soportadas:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:38
-#, fuzzy
 msgid "There are the following caveats:"
-msgstr "Tenemos entonces la siguiente tabla:"
+msgstr "Hay las siguientes advertencias:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:32
 msgid ""
@@ -18104,6 +18113,9 @@ msgid ""
 "Hull``, ``Capsule``, ``Sphere`` and ``Box`` are supported in both Blender "
 "and Godot"
 msgstr ""
+"No todas las formas de colisión son compatibles. Sólo ``Mesh``, ``Convex "
+"Hull``, ``Capsule``, ``Sphere`` y ``Box`` son compatibles tanto con Blender "
+"como con Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:35
 msgid ""
@@ -18112,11 +18124,14 @@ msgid ""
 "collision mask is equal to it's collision group. Most of the time, this is "
 "what you want."
 msgstr ""
+"En Godot, puedes tener diferentes grupos de colisión y máscaras de colisión. "
+"En Blender sólo tienes grupos de colisión. Como resultado, la máscara de "
+"colisión del objeto exportado es igual a su grupo de colisión. En la mayoría "
+"de los casos, esto era lo que buscabas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:47
-#, fuzzy
 msgid "Collision Geometry Only"
-msgstr "Detección de colisiones en 3D"
+msgstr "Sólo Geometría de Colisión"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:48
 msgid ""
@@ -18125,6 +18140,10 @@ msgid ""
 "the collision shape. To only export the collision shape, set the objects "
 "maximum draw type to Wire:"
 msgstr ""
+"Con frecuencia se necesita una geometría diferente para las mallas de "
+"colisión y las mallas gráficas, pero por defecto el exportador exportará una "
+"malla junto con la forma de la colisión. Para exportar sólo la forma de "
+"colisión, establece el tipo de dibujo máximo para los objetos en Wire:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:55
 msgid ""
@@ -18132,6 +18151,10 @@ msgid ""
 "of the time, you want your collision geometry to be shown see-through when "
 "working on the models, so this works out fairly nicely."
 msgstr ""
+"Esto también influirá en cómo se muestra el objeto en la vista de Blender. "
+"La mayoría de las veces, es conveniente que la geometría de la colisión se "
+"muestre transparente cuando se trabaja con los modelos, para que esto "
+"funcione correctamente."
 
 #: ../../docs/getting_started/workflow/assets/index.rst:2
 msgid "Assets workflow"
@@ -19266,9 +19289,8 @@ msgstr ""
 "exporter>`__ que hará un trabajo mucho mejor al exportar las escenas."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
-#, fuzzy
 msgid "Exporting ESCN files from Blender"
-msgstr "Exportación de archivos DAE desde Blender"
+msgstr "Exportar archivos ESCN desde Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
 msgid ""
@@ -19277,12 +19299,18 @@ msgid ""
 "another name of .tscn file(Godot scene file), it keeps as much information "
 "as possible from a Blender scene."
 msgstr ""
+"El más poderoso, llamado `godot-blender-exporter <https://github.com/"
+"godotengine/godot-blender-exporter>`__. Utiliza archivos .escn que es una "
+"clase con otro nombre de archivo .tscn (archivo de escena Godot), guarda la "
+"mayor cantidad de información posible de una escena de Blender."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
 msgid ""
 "ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
 msgstr ""
+"El exportador ESCN tiene un detallado `documento <escn_exporter/index."
+"html>`__ que describe su funcionalidad y uso."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:64
 msgid "Import workflows"
@@ -22376,14 +22404,12 @@ msgstr ""
 "del escenario."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
-#, fuzzy
 msgid ""
 "**HUD**: Heads-up display, or user interface. If the world moves, the life "
 "counter, score, etc. must stay static."
 msgstr ""
-"**HUD**: del inglés \"Head's up display\", referido a interfaces de usuario, "
-"barras de estado, etc. Si el mundo se mueve, los contadores de vida, "
-"puntaje, etc. deben permanecer en el lugar."
+"**HUD**: Heads-up Display, o interfaz de usuario. Si el mundo se mueve, el "
+"contador de vida, la puntuación, etc. deben permanecer estáticos."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
@@ -22403,7 +22429,6 @@ msgid "CanvasLayers"
 msgstr "CanvasLayers"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:49
-#, fuzzy
 msgid ""
 "The answer is :ref:`CanvasLayer <class_CanvasLayer>`, which is a node that "
 "adds a separate 2D rendering layer for all its children and grand-children. "
@@ -22464,16 +22489,15 @@ msgid "Viewport and canvas transforms"
 msgstr "Transformación de Viewport y Canvas"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:9
-#, fuzzy
 msgid ""
 "This tutorial is created after a topic that is a little dark for most users "
 "and explains all the 2D transforms going on for nodes from the moment they "
 "draw their content locally to the time they are drawn into the screen."
 msgstr ""
-"Este tutorial es creado a raíz de un tema que es poco claro para la mayoría "
-"de los usuarios y explica sobre lo que sucede con los nodos 2D y sus "
-"transforms desde el momento en que son dibujados localmente hasta el momento "
-"en que se presentan en la pantalla."
+"Este tutorial se crea después de un tema que es un poco confuso para la "
+"mayoría de los usuarios y explica todas las transformaciones 2D de los nodos "
+"desde el momento en que dibujan su contenido localmente hasta el momento en "
+"que son dibujados en la pantalla."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:15
 msgid "Canvas transform"
@@ -22515,7 +22539,7 @@ msgid ""
 "individual *Canvas Layer* transforms. Generally this transform is not of "
 "much use, but is used in the CanvasItem Editor in Godot's editor."
 msgstr ""
-"Los Viewports también tienen una transformación Global Canvas (también un :"
+"Los viewports también tienen una transformación Global Canvas (también un :"
 "ref:`Transform2D <class_Transform2D>`). Esta es la transformación principal "
 "y afecta a todas las transformaciones individuales de *Canvas Layer*. "
 "Generalmente esta transformación no es de mucha utilidad, pero se usa en el "
@@ -22526,21 +22550,18 @@ msgid "Stretch transform"
 msgstr "Stretch transform"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:39
-#, fuzzy
 msgid ""
 "Finally, viewports have a *Stretch Transform*, which is used when resizing "
 "or stretching the screen. This transform is used internally (as described "
 "in :ref:`doc_multiple_resolutions`) but can also be manually set on each "
 "viewport."
 msgstr ""
-"Por último, las ventanas de visualización tienen un *Stretch Transform*, que "
-"se utiliza al cambiar el tamaño o estirar la pantalla. Esta transformación "
-"se utiliza internamente (como se describe en :ref:"
-"`doc_multiple_resolutions`), pero también se puede configurar manualmente en "
-"cada viewport."
+"Por último, los viewports tienen un *Stretch Transform*, que se utiliza al "
+"cambiar el tamaño o estirar la pantalla. Esta transformación se utiliza "
+"internamente (como se describe en :ref:`doc_multiple_resolutions`) pero "
+"también se puede configurar manualmente en cada viewport."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:44
-#, fuzzy
 msgid ""
 "Input events received in the :ref:`MainLoop._input_event() "
 "<class_MainLoop__input_event>` callback are multiplied by this transform but "
@@ -22553,7 +22574,7 @@ msgstr ""
 "transform, pero carecen de los presentados anteriormente. Para convertir "
 "fácilmente coordenadas de InputEvent a coordenadas locales de CanvasItem, se "
 "agregó la función :ref:`CanvasItem.make_input_local() "
-"<class_CanvasItem_make_input_local>`."
+"<class_CanvasItem_make_input_local>` por conveniencia."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:51
 msgid "Transform order"
@@ -22655,7 +22676,6 @@ msgstr ""
 "<class_CanvasItem_get_viewport_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:73
-#, fuzzy
 msgid ""
 "Finally, then, to convert a CanvasItem local coordinates to screen "
 "coordinates, just multiply in the following order:"
@@ -22838,7 +22858,6 @@ msgstr ""
 "de editar."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:83
-#, fuzzy
 msgid ""
 "Finally, edit the polygon, this will give the tile a collision and fix the "
 "warning icon next to the CollisionPolygon node. **Remember to use snap!** "
@@ -23034,13 +23053,13 @@ msgstr ""
 "configurándola como ``current`` y probando con el ``zoom``."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
-#, fuzzy
 msgid ""
 "You can use a single, separate image for each tile. This will remove all "
 "artifacts but can be more cumbersome to implement and is less optimized."
 msgstr ""
-"Puedes utilizar una imagen para cada tile. Esto eliminará todos los "
-"artefactos pero puede ser complicado de implementar y es menos óptimo."
+"Puedes usar una sola imagen separada para cada tile. Esto eliminará todos "
+"los defectos, pero puede resultar más complicado de implementar y está menos "
+"optimizado."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
@@ -23052,7 +23071,6 @@ msgid "Why?"
 msgstr "¿Por qué?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:9
-#, fuzzy
 msgid ""
 "Godot has nodes to draw sprites, polygons, particles, and all sorts of "
 "stuff. For most cases this is enough but not always. Before crying in fear, "
@@ -23183,7 +23201,6 @@ msgid "An example: drawing circular arcs"
 msgstr "Un ejemplo: dibujando arcos de curva"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:149
-#, fuzzy
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
 "something that Godot doesn't provide functions for. As an example, Godot "
@@ -23191,18 +23208,17 @@ msgid ""
 "about drawing a portion of a circle? You will have to code a function to "
 "perform this and draw it yourself."
 msgstr ""
-"Ahora veremos el uso de la funcionalidad de dibujo personalizado de Godot "
-"Engine para dibujar algo para lo que el motor no provee ninguna función. Por "
-"ejemplo, Godot provee la función draw_circle() que dibuja un círculo "
-"completo, pero ¿y si queremos dibujar una porción de un círculo? Deberás "
-"crear una función para hacer eso y dibujarlo."
+"Ahora usaremos la funcionalidad de dibujo personalizado del Motor Godot para "
+"dibujar algo para lo que Godot no ofrece ninguna función. Por ejemplo, Godot "
+"proporciona una función draw_circle() que dibuja un círculo entero. Sin "
+"embargo, ¿qué tal dibujar una porción de un círculo? Tendrás que codificar "
+"una función para realizarlo y dibujarlo tú mismo."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
 msgid "Arc function"
 msgstr "Función arco"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:158
-#, fuzzy
 msgid ""
 "An arc is defined by its support circle parameters. That is: the center "
 "position and the radius. The arc itself is then defined by the angle it "
@@ -23217,7 +23233,6 @@ msgstr ""
 "dibujar el arco en diferentes colores."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:163
-#, fuzzy
 msgid ""
 "Basically, drawing a shape on screen requires it to be decomposed into a "
 "certain number of points linked from one to the following one. As you can "
@@ -23236,7 +23251,7 @@ msgstr ""
 "de procesamiento. En general, si una figura es muy grande, requerirá más "
 "puntos para ser dibujada sin verse muy angulosa. Al contrario, si una figura "
 "es muy pequeña, se pueden reducir los puntos para ahorrar costo de "
-"procesamiento. Esto es llamado *nivel de detalle* (LoD por sus siglas en "
+"procesamiento. Esto es llamado *Nivel de Detalle* (LoD, por sus siglas en "
 "inglés). En nuestro ejemplo usaremos un número fijo de puntos, sin importar "
 "el radio."
 
@@ -23265,7 +23280,6 @@ msgstr ""
 "punto, entre el ángulo inicial y el ángulo final."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:212
-#, fuzzy
 msgid ""
 "The reason why each angle is reduced by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
@@ -23274,11 +23288,12 @@ msgid ""
 "counting at 12 o'clock. So we reduce each angle by 90° in order to start "
 "counting from 12 o'clock."
 msgstr ""
-"La razón por la que reducimos cada ángulo en 90° es porque computamos "
-"posiciones de cada ángulo utilizando trigonometría. cos() y sin() utilizan "
-"radianes, no grados, el ángulo de 0° (0 PI radianes) comienza apuntando "
-"hacia la derecha, pero queremos que comience apuntando hacia arriba. Así que "
-"reducimos el ángulo en 90° para conseguirlo."
+"La razón por la que cada ángulo se reduce en 90° es que calcularemos las "
+"posiciones 2D de cada ángulo usando trigonometría (ya sabes, cosas de coseno "
+"y seno...). Sin embargo, para simplificarlo, cos() y sin() usan radianes, no "
+"grados. El ángulo de 0° (0 radián) comienza a las 3 en punto, aunque "
+"queremos empezar a contar a las 12 en punto. Así que reducimos cada ángulo "
+"en 90° para empezar a contar desde las 12 en punto."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:218
 msgid ""
@@ -23326,13 +23341,12 @@ msgid "Draw the arc on screen"
 msgstr "Dibujar el arco en pantalla"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:237
-#, fuzzy
 msgid ""
 "We now have a function that draws stuff on the screen: It is time to call in "
 "the _draw() function."
 msgstr ""
-"Ahora tenemos una función que dibuja cosas en la pantalla: es momento de "
-"llamar la función _draw()."
+"Ahora tenemos una función que dibuja cosas en la pantalla: Es hora de llamar "
+"a la función _draw()."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
 msgid "Result:"
@@ -23359,7 +23373,6 @@ msgid "Dynamic custom drawing"
 msgstr "Dibujos personalizados dinámicos"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:313
-#, fuzzy
 msgid ""
 "Alright, we are now able to draw custom stuff on screen. However, it is "
 "static: Let's make this shape turn around the center. The solution to do "
@@ -23367,12 +23380,12 @@ msgid ""
 "our example, we will simply increment them by 50. This increment value has "
 "to remain constant or else the rotation speed will change accordingly."
 msgstr ""
-"Ahora somos capaces de dibujar figuras personalizadas en pantalla, sin "
-"embargo, son estáticas. Hagamos que la figura gire en torno al centro. La "
-"solución para esto es simplemente cambiar los valores angle_from y angle_to "
-"a través del tiempo. Para nuestro ejemplo, simplemente lo incrementaremos en "
-"50, este valor de incremento deberá permanecer constante sino la velocidad "
-"de rotación cambiará de acuerdo a las modificaciones."
+"Muy bien, ahora podemos hacer dibujos personalizados en la pantalla. Sin "
+"embargo, es estático: Hagamos que esta forma gire alrededor del centro. La "
+"solución para hacer esto es simplemente cambiar los valores angle_from y "
+"angle_to a lo largo del tiempo. Para nuestro ejemplo, simplemente los "
+"incrementaremos en 50. Este valor de incremento tiene que permanecer "
+"constante o bien la velocidad de rotación cambiará en consecuencia."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:319
 msgid ""
@@ -23390,7 +23403,6 @@ msgid "We make these values change in the _process(delta) function."
 msgstr "Haremos que esos valores cambien en la función _process(delta)."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:343
-#, fuzzy
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to wrap() the resulting values between 0 and 360°! That is, if "
@@ -23401,13 +23413,14 @@ msgid ""
 "behavior. Since Godot doesn't provide a wrap() function, we'll create it "
 "here, as it is relatively simple."
 msgstr ""
-"También incrementaremos nuestros valores angle_from y angle_to aquí. Sin "
-"embargo no debemos olvidar de aplicar ajuste en el valor resultante para "
-"contenerlo entre 0 y 360 grados. Si no se ajustan esos valores, el script "
-"funcionará bien por un largo tiempo pero los valores se incrementarán hasta "
-"el máximo que puede manejar Godot (2^31 - 1). Cuando esto sucede, el "
-"programa puede cerrarse o realizar un comportamiento no esperado. Como Godot "
-"no provee una función así, la crearemos aquí, es relativamente simple."
+"También incrementamos nuestros valores angle_from y angle_to. Sin embargo, "
+"no debemos olvidarnos de ajustar los valores resultantes entre 0 y 360°, es "
+"decir, si el ángulo es 361°, entonces en realidad es 1°. Si no ajustas estos "
+"valores, el script funcionará correctamente, pero los valores de los ángulos "
+"crecerán más y más con el tiempo hasta que alcancen el máximo valor entero "
+"que Godot puede manejar (2^31 - 1). Cuando esto sucede, Godot puede fallar o "
+"producir un comportamiento inesperado. Como Godot no proporciona una función "
+"wrap(), la crearemos aquí, ya que es relativamente simple."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:352
 msgid ""
@@ -23474,14 +23487,13 @@ msgid "Tools"
 msgstr "Tools"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
-#, fuzzy
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
-"Dibujar tus propios nodos puede ser deseable mientras se ejecutan en el "
-"editor, para usarlo como previsualización de alguna característica o "
-"comportamiento."
+"Dibujar tus propios nodos también puede ser conveniente mientras los "
+"ejecutas en el editor para usarlos como vista previa o visualización de "
+"alguna característica o comportamiento."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:475
 msgid ""
@@ -23633,7 +23645,6 @@ msgid "Speed Scale"
 msgstr "Speed Scale (Escala de Velocidad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:87
-#, fuzzy
 msgid ""
 "The speed scale has a default value of ``1`` and is used to adjust the speed "
 "of a particle system. Lowering the value will make the particles slower "
@@ -23649,7 +23660,6 @@ msgid "Explosiveness"
 msgstr "Explosiveness (Explosividad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:94
-#, fuzzy
 msgid ""
 "If lifetime is ``1`` and there are 10 particles, it means a particle will be "
 "emitted every 0.1 seconds. The explosiveness parameter changes this, and "
@@ -23657,7 +23667,8 @@ msgid ""
 msgstr ""
 "Si el tiempo de vida es ``1`` y hay diez partículas, significa que se "
 "emitirá una partícula cada 0.1 segundos. El parámetro de explosividad cambia "
-"esto y obliga a las partículas a emitirse juntas. Los rangos son:"
+"esto y obliga a las partículas a emitirse todas al mismo tiempo. Los rangos "
+"son:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:98
 msgid "0: Emit particles at regular intervals (default value)."
@@ -23942,14 +23953,13 @@ msgid "Hue variation"
 msgstr "Hue variation (Variación de tono)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:279
-#, fuzzy
 msgid ""
 "The Variation value sets the initial hue variation applied to each particle. "
 "The Variation Rand value controls the hue variation randomness ratio."
 msgstr ""
-"El valor de variación establece la variación de tono inicial aplicada a cada "
-"partícula. El valor de rand de la variación controla la relación de "
-"aleatoriedad de la variación del tono."
+"El valor de Variation establece la variación de tono inicial aplicada a cada "
+"partícula. El valor Variation Rand controla la relación de aleatoriedad de "
+"la variación de tono."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
 msgid "2D Movement Overview"
@@ -24304,7 +24314,6 @@ msgid "Generated geometry"
 msgstr "Geometría generada"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
-#, fuzzy
 msgid ""
 "It is possible to create custom geometry by using the :ref:`Mesh "
 "<class_Mesh>` resource directly. Simply create your arrays and use the :ref:"
@@ -24313,12 +24322,11 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
-"Es posible crear geometrías personalizadas usando el recurso :ref:`Mesh "
-"<class_Mesh>` directamente, simplemente cree sus arrays y use la función :"
+"Es posible crear geometría personalizada usando el recurso :ref:`Mesh "
+"<class_Mesh>` directamente. Simplemente crea tus arrays y usa la función :"
 "ref:`Mesh.add_surface() <class_Mesh_add_surface>`. También está disponible "
 "una clase helper, :ref:`SurfaceTool <class_SurfaceTool>`, que proporciona "
-"una API más sencilla y helpers para indexar, generar normales, tangentes, "
-"etc."
+"una API más sencilla y ayuda para indexar, generar normales, tangentes, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:70
 msgid ""
@@ -24511,25 +24519,31 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
 msgid "To center the view on the selected object, press the \"f\" key."
 msgstr ""
+"Para centrar la vista en el objeto seleccionado, pulsar la tecla \"f\"."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:165
 msgid "View menu"
-msgstr ""
+msgstr "Menú Ver"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid ""
 "The view options are controlled by the \"[ view ]\" menu. Pay attention to "
 "this little menu inside the window because it is often overlooked!"
 msgstr ""
+"Las opciones de visualización se controlan mediante el menú \"[ ver ]\". "
+"¡Presta atención a este pequeño menú dentro de la ventana porque a menudo se "
+"pasa por alto!"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "Default environment"
-msgstr ""
+msgstr "Entorno por defecto"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:175
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr ""
+"Cuando se crea desde el Administrador de Proyectos, el entorno 3D tiene un "
+"cielo por defecto."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:179
 msgid ""
@@ -24537,10 +24551,13 @@ msgid ""
 "work with a default environment in order to provide indirect and reflected "
 "light to your objects."
 msgstr ""
+"Dada la forma en que funciona la renderización basada en la física, se "
+"recomienda intentar siempre trabajar con un entorno predeterminado para "
+"proporcionar luz indirecta y reflejada a los objetos."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:184
 msgid "Cameras"
-msgstr ""
+msgstr "Cámaras"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:186
 msgid ""
@@ -24548,6 +24565,9 @@ msgid ""
 "unless a :ref:`Camera <class_Camera>` is also added to the scene. Cameras "
 "can either work in orthogonal or perspective projections:"
 msgstr ""
+"No importa cuántos objetos se coloquen en el espacio 3D, no se mostrará nada "
+"a menos que se añada una :ref: `Cámara <class_Camera>` a la escena. Las "
+"cámaras pueden trabajar en proyecciones ortogonales o en perspectiva:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid ""
@@ -24557,12 +24577,19 @@ msgid ""
 "picture-in-picture) are desired, they need their own children cameras to "
 "display."
 msgstr ""
+"Las cámaras están asociadas y sólo se muestran en la vista de un padre o "
+"abuelo. Dado que la raíz del árbol de escenas es un viewport, las cámaras se "
+"mostrarán en él de forma predeterminada, pero si se desean sub-viewports (ya "
+"sea como objetivo de render o como imagen-en-imagen), necesitan las cámaras "
+"de sus propios hijos para que se muestren."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:201
 msgid ""
 "When dealing with multiple cameras, the following rules are followed for "
 "each viewport:"
 msgstr ""
+"Cuando se trata de varias cámaras, se siguen las siguientes reglas para cada "
+"viewport:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:204
 msgid ""
@@ -24570,6 +24597,9 @@ msgid ""
 "will become the active camera. Further cameras entering the scene will be "
 "ignored (unless they are set as *current*)."
 msgstr ""
+"Si no hay cámaras en el árbol de escenas, la primera que entre en él se "
+"convertirá en la cámara activa. Otras cámaras que entren en la escena serán "
+"ignoradas (a menos que estén configuradas como *actual*)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:207
 msgid ""
@@ -24577,22 +24607,29 @@ msgid ""
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
+"Si una cámara tiene la propiedad \"*actual*\" establecida, se utilizará "
+"independientemente de cualquier otra cámara de la escena. Si la propiedad "
+"está configurada, se activará, sustituyendo a la cámara anterior."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:210
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr ""
+"Si una cámara activa deja el árbol de escena, la primera cámara en orden de "
+"árbol tomará su lugar."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:216
 msgid ""
 "There is no limitation on the number of lights nor of types of lights in "
 "Godot. As many as desired can be added (as long as performance allows)."
 msgstr ""
+"No hay limitación en el número de luces ni de tipos de luces en Godot. Se "
+"pueden añadir tantos como se desee (siempre que el rendimiento lo permita)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:4
 msgid "Using 3D transforms in Godot"
-msgstr ""
+msgstr "Usando transformaciones 3D en Godot"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:9
 msgid ""
@@ -24601,23 +24638,33 @@ msgid ""
 "thinking is along the lines of *\"Oh, it's just like rotating in 2D, except "
 "now rotations happen in X, Y and Z\"*."
 msgstr ""
+"Si nunca has hecho juegos 3D antes, trabajar con rotaciones en tres "
+"dimensiones puede resultar confuso al principio. Viniendo de 2D, la forma "
+"natural de pensar es como *\"Oh, es como rotar en 2D, excepto que ahora las "
+"rotaciones ocurren en X, Y y Z \"*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:12
 msgid ""
 "At first this seems easy and for simple games, this way of thinking may even "
 "be enough. Unfortunately, it's often incorrect."
 msgstr ""
+"Al principio esto puede parecer fácil y para los juegos simples, esta forma "
+"de pensar puede incluso ser suficiente. Por desgracia, con frecuencia es "
+"incorrecto."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:14
 msgid ""
 "Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
 msgstr ""
+"Los ángulos en tres dimensiones se denominan comúnmente \"Ángulos de Euler\"."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:18
 msgid ""
 "Euler angles were introduced by mathematician Leonhard Euler in the early "
 "1700s."
 msgstr ""
+"Los ángulos de Euler fueron introducidos por el matemático Leonhard Euler a "
+"principios del siglo XVIII."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:22
 msgid ""
@@ -24627,20 +24674,27 @@ msgid ""
 "explain why, as well as outlining best practices for dealing with transforms "
 "when programming 3D games."
 msgstr ""
+"Esta forma de representar rotaciones en 3D fue revolucionaria en su momento, "
+"pero tiene varios defectos cuando se utiliza en el desarrollo de juegos (lo "
+"cual es de esperar de un sujeto con un sombrero gracioso). La idea de este "
+"documento es explicar por qué, así como esbozar las mejores prácticas para "
+"hacer frente a las transformaciones en la programación de juegos 3D."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
 msgid "Problems of Euler Angles"
-msgstr ""
+msgstr "Problemas de los ángulos de Euler"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:30
 msgid ""
 "While it may seem intuitive that each axis has a rotation, the truth is that "
 "it's just not practical."
 msgstr ""
+"Si bien puede parecer intuitivo que cada eje tenga una rotación, la realidad "
+"es que no resulta práctico."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
 msgid "Axis Order"
-msgstr ""
+msgstr "Orden de los ejes"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:35
 msgid ""
@@ -24650,6 +24704,11 @@ msgid ""
 "only way an orientation can be produced from angles is to rotate the object "
 "angle by angle, in an *arbitrary order*."
 msgstr ""
+"La razón principal de esto es que no hay una forma *única* de construir una "
+"orientación desde los ángulos. No hay una función matemática estándar que "
+"tome todos los ángulos juntos y produzca una rotación 3D real. La única "
+"manera de producir una orientación desde ángulos es girar el objeto ángulo "
+"por ángulo, en un *orden arbitrario*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:39
 msgid ""
@@ -24660,6 +24719,12 @@ msgid ""
 "are several ways to construct an orientation from 3 different angles, "
 "depending on *the order of the rotations*."
 msgstr ""
+"Esto podría hacerse rotando primero en *X*, luego en *Y* y luego en *Z*. O "
+"bien, se puede rotar primero en *Y*, luego en *Z* y finalmente en *X*. "
+"Cualquier método funciona, pero dependiendo del orden, la orientación final "
+"del objeto *no será necesariamente la misma*. De hecho, esto significa que "
+"hay varias maneras de construir una orientación desde 3 ángulos diferentes, "
+"dependiendo de *el orden de las rotaciones*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
 msgid ""
@@ -24667,11 +24732,15 @@ msgid ""
 "(from Wikipedia). As you can see, the orientation of each axis depends on "
 "the rotation of the previous one:"
 msgstr ""
+"A continuación se muestra una visualización de los ejes de rotación (en "
+"orden X, Y, Z) en un cardán (de Wikipedia). Como se puede ver, la "
+"orientación de cada eje depende de la rotación del anterior:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:47
 msgid ""
 "You may be wondering how this affects you. Let's look at a practical example:"
 msgstr ""
+"Puede que te preguntes cómo te afecta esto. Veamos un ejemplo práctico:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
 msgid ""
@@ -24679,6 +24748,10 @@ msgid ""
 "mouse left and right controls your view angle parallel to the ground, while "
 "moving it up and down moves the player's view up and down."
 msgstr ""
+"Imagina que estás trabajando en un juego de control en primera persona "
+"(FPS). Mover el ratón a la izquierda y a la derecha controla el ángulo de "
+"visión paralelo al suelo, mientras que moverlo hacia arriba y hacia abajo "
+"mueve la vista del jugador hacia arriba y hacia abajo."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:51
 msgid ""
@@ -24686,12 +24759,17 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
+"En este caso para conseguir el efecto deseado, la rotación se debe aplicar "
+"primero en el eje *Y* (en este caso \"arriba\", ya que Godot utiliza una "
+"orientación \"Y-Up\"), seguido de la rotación en el eje *X*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
+"Si primero aplicáramos la rotación en el eje *X*, y luego en el eje *Y*, el "
+"resultado no sería el deseado:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -24699,10 +24777,14 @@ msgid ""
 "axis rotations to be applied may differ. Therefore, applying rotations in X, "
 "Y, and Z is not enough: you also need a *rotation order*."
 msgstr ""
+"Dependiendo del tipo de juego o efecto deseado, el orden en el que desea que "
+"se apliquen las rotaciones de los ejes puede variar. Por lo tanto, la "
+"aplicación de rotaciones en X, Y y Z no es suficiente: también es necesario "
+"un *orden de rotación*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:63
 msgid "Interpolation"
-msgstr ""
+msgstr "Interpolación"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:65
 msgid ""
@@ -24711,18 +24793,24 @@ msgid ""
 "rotations). One logical way to approach this is to interpolate the angles "
 "from one position to the next. One would expect it to look like this:"
 msgstr ""
+"Otro problema con el uso de los ángulos de Euler es la interpolación. "
+"Imagina que quieres hacer la transición entre dos cámaras diferentes o "
+"posiciones enemigas (incluyendo rotaciones). Una manera lógica de acercarse "
+"a esto es interpolar los ángulos de una posición a otra. Uno esperaría que "
+"se viera así:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:69
 msgid "But this does not always have the expected effect when using angles:"
 msgstr ""
+"Pero esto no siempre tiene el resultado esperado cuando se utilizan ángulos:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:73
 msgid "The camera actually rotated the opposite direction!"
-msgstr ""
+msgstr "¡La cámara giró en la dirección opuesta!"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:75
 msgid "There are a few reasons this may happen:"
-msgstr ""
+msgstr "Hay algunas razones por las que esto puede suceder:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -24731,6 +24819,10 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
+"Las rotaciones no se mapean linealmente a la orientación, por lo que "
+"interpolarlas no siempre da como resultado la trayectoria más corta (es "
+"decir, pasar de ``270`` a ``0`` grados no es lo mismo que pasar de ``270`` a "
+"``360``, aunque los ángulos sean equivalentes)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:78
 msgid ""
@@ -24738,10 +24830,15 @@ msgid ""
 "freedom is lost). See `Wikipedia's page on Gimbal Lock <https://en.wikipedia."
 "org/wiki/Gimbal_lock>`_ for a detailed explanation of this problem."
 msgstr ""
+"El bloqueo del cardán está en juego (el primer y último eje de rotación se "
+"alinean, por lo que se pierde un grado de libertad). Consulta la página de "
+"`Wikipedia en Bloqueo del cardán <https://es.wikipedia.org/wiki/"
+"Bloqueo_del_card%C3%A1n>`_ para obtener una explicación más detallada acerca "
+"de este problema."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:81
 msgid "Say no to Euler Angles"
-msgstr ""
+msgstr "Di no a los ángulos de Euler"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:83
 msgid ""
@@ -24751,14 +24848,20 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
+"El resultado de todo esto es que deberías **no usar** la propiedad "
+"``rotation`` de :ref:`class_Spatial`` en Godot para los juegos. Está ahí "
+"para ser usado principalmente en el editor, para la coherencia con el motor "
+"2D, y para rotaciones simples (generalmente sólo un eje, o incluso dos en "
+"casos limitados). Por mucho que te sientas tentado, no lo uses."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:85
 msgid "Instead, there is a better way to solve your rotation problems."
 msgstr ""
+"En cambio, hay una mejor manera de resolver estos problemas de rotación."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:88
 msgid "Introducing Transforms"
-msgstr ""
+msgstr "Introducción a Transforms"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:90
 msgid ""
@@ -24766,12 +24869,17 @@ msgid ""
 "`class_Spatial` node contains a ``transform`` property which is relative to "
 "the parent's transform, if the parent is a Spatial-derived type."
 msgstr ""
+"Godot usa el tipo de datos :ref:`class_Transform` para las orientaciones. "
+"Cada nodo :ref:`class_Spatial`` contiene una propiedad ``transform`` "
+"relativa a la transformación del padre, si el padre es de tipo Spatial."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:92
 msgid ""
 "It is also possible to access the world coordinate transform via the "
 "``global_transform`` property."
 msgstr ""
+"También es posible acceder a la transformación de coordenadas del mundo a "
+"través de la propiedad ``global_transform``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:94
 msgid ""
@@ -24784,20 +24892,31 @@ msgid ""
 "be also be inferred from the length of the axes. A *basis* can also be "
 "interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
 msgstr ""
+"Un transform tiene una :ref:`class_Basis` (sub-propiedad transform.basis), "
+"que consiste en tres vectores :ref:`class_Vector3`. Se accede a ellos a "
+"través de la propiedad ``transform.basis`` y se puede acceder a ellos "
+"directamente a través de ``transform.basis.x``, ``transform.basis.y ``, y "
+"``transformar.basis.z``. Cada vector apunta en la dirección en la que se ha "
+"girado cada eje, por lo que describe eficazmente la rotación total del nodo. "
+"La escala (siempre que sea uniforme) también se puede calcular a partir de "
+"la longitud de los ejes. Una *base* también puede ser interpretada como una "
+"matriz 3x3 y usada como ``transform.basis[x][y]``."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:96
 msgid "A default basis (unmodified) is akin to:"
-msgstr ""
+msgstr "Una base por defecto (sin modificar) es similar a:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:124
 msgid "This is also an analog to a 3x3 identity matrix."
-msgstr ""
+msgstr "Esto también es similar a una matriz de identidad 3x3."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:126
 msgid ""
 "Following the OpenGL convention, ``X`` is the *Right* axis, ``Y`` is the "
 "*Up* axis and ``Z`` is the *Forward* axis."
 msgstr ""
+"Siguiendo la convención OpenGL, ``X`` es el eje horizontal (*Right*), ``Y`` "
+"es el eje vertical (*Up*) y Z es el eje frontal (*Forward*)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:128
 msgid ""
@@ -24806,12 +24925,19 @@ msgid ""
 "transform is. Combining the *basis* with the *origin*, a *transform* "
 "efficiently represents a unique translation, rotation, and scale in space."
 msgstr ""
+"Junto con la *base*, una transformación también tiene un *origen*. Este es "
+"un *Vector3* especificando cuán lejos del origen real ``(0, 0, 0)`` se "
+"encuentra esta transformación. Combinando la *base* con el *origen*, una "
+"*transformación* representa eficientemente un desplazamiento, rotación y "
+"escala únicos en el espacio."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:133
 msgid ""
 "One way to visualize a transform is to look at an object's 3D gizmo while in "
 "\"local space\" mode."
 msgstr ""
+"Una forma de visualizar una transformación es mirar el gizmo 3D de un objeto "
+"mientras está en modo \"espacio local\"."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:137
 msgid ""
@@ -24819,46 +24945,57 @@ msgid ""
 "blue respectively) of the basis, while gizmo's center is at the object's "
 "origin."
 msgstr ""
+"Las flechas del Gizmo muestran los ejes ``X``. ``Y`` y ``Z`` (En rojo, "
+"verde, y azul respectivamente) de la base, mientras que el centro del Gizmo "
+"está en el origen del objeto."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:141
 msgid ""
 "For more information on the mathematics of vectors and transforms, please "
 "read the :ref:`doc_vector_math` tutorials."
 msgstr ""
+"Para más información sobre las matemáticas de vectores y transformaciones, "
+"por favor lee los tutoriales :ref:`doc_vector_math`."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:144
 msgid "Manipulating Transforms"
-msgstr ""
+msgstr "Manipular Transforms"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:146
 msgid ""
 "Of course, transforms are not as straightforward to manipulate as angles and "
 "have problems of their own."
 msgstr ""
+"Por supuesto, las transformaciones no son tan sencillas de manipular como "
+"los ángulos y tienen sus propios problemas."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:148
 msgid ""
 "It is possible to rotate a transform, either by multiplying its basis by "
 "another (this is called accumulation), or by using the rotation methods."
 msgstr ""
+"Es posible rotar un transformación, ya sea multiplicando su base por otra "
+"(esto es llamado acumulación), o usando los métodos de rotación."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:165
 msgid "A method in Spatial simplifies this:"
-msgstr ""
+msgstr "El método en Spatial simplifica esto:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:182
 msgid "This rotates the node relative to the parent node."
-msgstr ""
+msgstr "Esto rota el nodo relativo al nodo padre."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:184
 msgid ""
 "To rotate relative to object space (the node's own transform) use the "
 "following:"
 msgstr ""
+"Para rotar en relación con el espacio del objeto (la transformación propia "
+"del nodo) se utiliza lo siguiente:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:198
 msgid "Precision Errors"
-msgstr ""
+msgstr "Errores de precisión"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:200
 msgid ""
@@ -24867,12 +25004,18 @@ msgid ""
 "be exactly ``1.0``, and they may not be exactly ``90`` degrees from each "
 "other."
 msgstr ""
+"Si se realizan operaciones consecutivas con transformaciones, se producirá "
+"una pérdida de precisión debido a un error de punto flotante. Esto significa "
+"que la escala de cada eje puede que ya no sea exactamente ``1.0``, y puede "
+"que no sea exactamente ``90`` grados entre sí."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:202
 msgid ""
 "If a transform is rotated every frame, it will eventually start deforming "
 "over time. This is unavoidable."
 msgstr ""
+"Si se rota una transformación en cada cuadro, eventualmente comenzará a "
+"deformarse con el tiempo. Esto es inevitable."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:204
 msgid ""
@@ -24880,12 +25023,18 @@ msgid ""
 "*orthonormalize* the transform after some time (maybe once per frame if you "
 "modify it every frame):"
 msgstr ""
+"Hay dos maneras diferentes de resolver esto. La primera es *ortonormalizar* "
+"la transformación después de algún tiempo (tal vez una vez por fotograma si "
+"se modifica cada fotograma):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:215
 msgid ""
 "This will make all axes have ``1.0`` length again and be ``90`` degrees from "
 "each other. However, any scale applied to the transform will be lost."
 msgstr ""
+"Esto hará que todos los ejes tengan de nuevo una longitud de ``1.0`` y estén "
+"a ``90`` grados entre sí. Sin embargo, cualquier escala aplicada a la "
+"transformación se perderá."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:217
 msgid ""
@@ -24893,10 +25042,13 @@ msgid ""
 "Scale their children nodes instead (such as MeshInstance). If you absolutely "
 "must scale the node, then re-apply it at the end:"
 msgstr ""
+"Se recomienda no escalar los nodos que van a ser manipulados. Escale los "
+"nodos hijos en su lugar (como MeshInstance). Si es absolutamente necesario "
+"escalar el nodo, se debe volver a aplicar al final:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:231
 msgid "Obtaining Information"
-msgstr ""
+msgstr "Obtener información"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:233
 msgid ""
@@ -24904,34 +25056,45 @@ msgid ""
 "transform?\"**. The answer again is: you don't. You must do your best to "
 "stop thinking in angles."
 msgstr ""
+"Podrías estar pensando en este momento: **\"Bueno, ¿pero cómo obtengo los "
+"ángulos de una transformación?\"** La respuesta de nuevo es: no se puede. "
+"Debes hacer todo lo posible para dejar de pensar en ángulos."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:235
 msgid ""
 "Imagine you need to shoot a bullet in the direction your player is facing. "
 "Just use the forward axis (commonly ``Z`` or ``-Z``)."
 msgstr ""
+"Imagina que necesitas disparar una bala en la dirección en la que tu jugador "
+"está mirando. Sólo usa el eje delantero (o forward, comúnmente ``Z`` o ``-"
+"Z``)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:248
 msgid ""
 "Is the enemy looking at the player? Use the dot product for this (see the :"
 "ref:`doc_vector_math` tutorial for an explanation of the dot product):"
 msgstr ""
+"¿El enemigo está mirando al jugador? Usa el producto escalar para esto (ver "
+"el tutorial :ref:`doc_vector_math` para una explicación del producto "
+"escalar):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:267
 msgid "Strafe left:"
-msgstr ""
+msgstr "Ataque a la izquierda:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:284
 msgid "Jump:"
-msgstr ""
+msgstr "Salto:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:304
 msgid "All common behaviors and logic can be done with just vectors."
 msgstr ""
+"Todos los comportamientos comunes y la lógica se pueden hacer sólo con "
+"vectores."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:307
 msgid "Setting Information"
-msgstr ""
+msgstr "Información de ajustes"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:309
 msgid ""
@@ -24940,6 +25103,10 @@ msgid ""
 "definitely done using angles, because you *do want* the transforms to happen "
 "in a specific order."
 msgstr ""
+"Hay, por supuesto, casos en los que se desea establecer la información como "
+"una transformación. Imagina un controlador de primera persona o una cámara "
+"en órbita. Estos se hacen definitivamente usando ángulos, porque *quieres* "
+"que las transformaciones ocurran en un orden específico."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:311
 msgid ""
@@ -24947,20 +25114,25 @@ msgid ""
 "set them every frame. Don't try retrieve them and re-use them because the "
 "transform is not meant to be used this way."
 msgstr ""
+"En estos casos, mantén los ángulos y rotaciones *fuera* del transform y "
+"ponlos en cada fotograma. No intentes recuperarlos y reutilizarlos porque el "
+"transform no está hecho para ser usado de esta manera."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:313
 msgid "Example of looking around, FPS style:"
-msgstr ""
+msgstr "Un ejemplo de cómo mirar alrededor, al estilo FPS:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:356
 msgid ""
 "As you can see, in such cases it's even simpler to keep the rotation "
 "outside, then use the transform as the *final* orientation."
 msgstr ""
+"Como puedes ver, en estos casos es aún más simple mantener la rotación "
+"fuera, y luego usar el transform como orientación *final*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:359
 msgid "Interpolating with Quaternions"
-msgstr ""
+msgstr "Interpolación con Quaternions"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:361
 msgid ""
@@ -24971,10 +25143,16 @@ msgid ""
 "interpolation. As in, if you have two rotations, a quaternion will smoothly "
 "allow interpolation between them using the closest axis."
 msgstr ""
+"La interpolación entre dos transformaciones se puede hacer eficientemente "
+"con quaternions. Para más información sobre cómo funcionan los quaternions, "
+"puedes consultar otros sitios de Internet. Para uso práctico, es suficiente "
+"entender que su uso principal es hacer una interpolación de ruta más "
+"cercana. Como en el caso anterior, si tiene dos rotaciones, un quaternion "
+"permitirá suavemente la interpolación entre ellas usando el eje más cercano."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:363
 msgid "Converting a rotation to quaternion is straightforward."
-msgstr ""
+msgstr "Convertir una rotación a quaternion es sencillo."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:386
 msgid ""
@@ -24984,16 +25162,24 @@ msgid ""
 "many times, keep in mind they need to be eventually normalized or they also "
 "may suffer from numerical precision errors."
 msgstr ""
+"La referencia de tipo :ref:`class_Quat` tiene más información sobre el tipo "
+"de datos (también es posible realizar acumulación de transformaciones, "
+"puntos de transformación, etc. aunque se utiliza con menos frecuencia). Si "
+"interpolas o aplicas operaciones a quaternions muchas veces, ten en cuenta "
+"que necesitan ser eventualmente normalizadas o también pueden sufrir errores "
+"de precisión numérica."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:388
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will be always correct and smooth."
 msgstr ""
+"Los quaternions son útiles cuando se realizan interpolaciones cámara/"
+"trayectoria/etc., ya que el resultado será siempre correcto y suave."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:391
 msgid "Transforms are your friend"
-msgstr ""
+msgstr "Los Transforms son tus amigos"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:393
 msgid ""
@@ -25001,6 +25187,9 @@ msgid ""
 "time. However, once you get used to them, you will appreciate their "
 "simplicity and power."
 msgstr ""
+"Para la mayoría de los principiantes, acostumbrarse a trabajar con "
+"transformaciones puede llevar algún tiempo. Sin embargo, una vez que te "
+"acostumbres a ellos, apreciarás su simplicidad y poder."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:395
 msgid ""
@@ -25008,10 +25197,13 @@ msgid ""
 "communities <https://godotengine.org/community>`_ and, once you become "
 "confident enough, please help others!"
 msgstr ""
+"No dudes en pedir ayuda sobre este tema en cualquiera de las `comunidades en "
+"línea <https://godotengine.org/community>`_ de Godot y, una vez que tengas "
+"suficiente experiencia ¡ayuda a los demás!"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:4
 msgid "3D performance and limitations"
-msgstr ""
+msgstr "Rendimiento y limitaciones del 3D"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:9
 msgid ""
@@ -25019,6 +25211,10 @@ msgid ""
 "are always trade-offs which consist in trading speed for usability and "
 "flexibility. Some practical examples of this are:"
 msgstr ""
+"Godot sigue una filosofía de rendimiento equilibrado. En el campo del "
+"rendimiento, siempre hay compensaciones que consisten en la velocidad de "
+"intercambio en términos de usabilidad y flexibilidad. Algunos ejemplos "
+"prácticos de esto son:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:13
 msgid ""
@@ -25028,6 +25224,12 @@ msgid ""
 "efficient, but, at the same time, less objects are rendered, so efficiency "
 "overall improves."
 msgstr ""
+"Renderizar objetos eficientemente en grandes cantidades es fácil, pero "
+"cuando se debe renderizar una escena grande, puede volverse ineficiente. "
+"Para resolver esto, el cálculo de visibilidad debe ser añadido al "
+"renderizado, lo que hace que el renderizado sea menos eficiente, pero, al "
+"mismo tiempo, se renderizan menos objetos, por lo que la eficiencia en "
+"general mejora."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:18
 msgid ""
@@ -25035,6 +25237,10 @@ msgid ""
 "be rendered is also slow. To solve this, objects are sorted by material to "
 "reduce the costs, but at the same time sorting has a cost."
 msgstr ""
+"La configuración de las propiedades de cada material para cada objeto que "
+"necesita ser renderizado también es lenta. Para resolver esto, los objetos "
+"se clasifican por material para reducir los costes, pero al mismo tiempo la "
+"clasificación tiene un coste."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:22
 msgid ""
@@ -25044,6 +25250,11 @@ msgid ""
 "removal, as well as ray-casting will not be able to handle as many active "
 "objects."
 msgstr ""
+"En la física 3D ocurre una situación similar. Los mejores algoritmos para "
+"manejar grandes cantidades de objetos físicos (tales como SAP) son lentos en "
+"la inserción/eliminación de objetos y el ray-casting. Los algoritmos que "
+"permiten una inserción y eliminación más rápida, así como el ray-casting no "
+"serán capaces de manejar tantos objetos activos."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:28
 msgid ""
@@ -25052,6 +25263,11 @@ msgid ""
 "that might be the fast in some situations and slow in others.. or algorithms "
 "that are fast but make usability more difficult."
 msgstr ""
+"¡Y hay muchos más ejemplos de esto! Los motores de juegos se esfuerzan por "
+"ser de propósito general en la naturaleza, por lo que los algoritmos "
+"balanceados siempre son favorecidos sobre los algoritmos que pueden ser "
+"rápidos en algunas situaciones y lentos en otras... o los algoritmos que son "
+"rápidos pero hacen la usabilidad más difícil."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:33
 msgid ""
@@ -25060,27 +25276,35 @@ msgid ""
 "ones that are there for now) prioritize balance and flexibility over "
 "performance."
 msgstr ""
+"Godot no es una excepción y, aunque está diseñado para tener backends "
+"intercambiables para diferentes algoritmos, los predeterminados (o más bien, "
+"los únicos que están ahí por ahora) priorizan el equilibrio y la "
+"flexibilidad sobre el rendimiento."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:38
 msgid ""
 "With this clear, the aim of this tutorial is to explain how to get the "
 "maximum performance out of Godot."
 msgstr ""
+"Con esto claro, el objetivo de este tutorial es explicar cómo obtener el "
+"máximo rendimiento de Godot."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:42
 #: ../../docs/tutorials/viewports/viewports.rst:175
 msgid "Rendering"
-msgstr ""
+msgstr "Renderización"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:44
 msgid ""
 "3D rendering is one of the most difficult areas to get performance from, so "
 "this section will have a list of tips."
 msgstr ""
+"El renderizado 3D es una de las áreas más difíciles de obtener un buen "
+"rendimiento, por lo que esta sección tendrá una lista de consejos."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:48
 msgid "Reuse shaders and materials"
-msgstr ""
+msgstr "Reutilizar shaders y materiales"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:50
 msgid ""
@@ -25090,6 +25314,12 @@ msgid ""
 "similar shaders but, if custom shaders are used, make sure to reuse them as "
 "much as possible. Godot's priorities will be like this:"
 msgstr ""
+"El renderizador de Godot es un poco diferente a cualquier otro. Está "
+"diseñado para minimizar al máximo los cambios de estado de la GPU. :ref:"
+"`class_SpatialMaterial` hace un buen trabajo en la reutilización de "
+"materiales que necesitan shaders similares pero, si se utilizan shaders "
+"personalizados, asegúrate de reutilizarlos tanto como sea posible. Las "
+"prioridades de Godot serán así:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:57
 msgid ""
@@ -25098,6 +25328,10 @@ msgid ""
 "(in the hundreds or thousands) try reusing the materials or in the worst "
 "case use atlases."
 msgstr ""
+"**Reutilización de Materiales**: Cuanto menor sea la cantidad de materiales "
+"diferentes en la escena, más rápido será el renderizado. Si una escena tiene "
+"una gran cantidad de objetos (cientos o miles) intenta reutilizar los "
+"materiales o, en el peor de los casos, utiliza un atlas."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:61
 msgid ""
@@ -25105,6 +25339,9 @@ msgid ""
 "shaders (or SpatialMaterials with different parameters but same "
 "configuration)."
 msgstr ""
+"**Reutilización de Shaders**: Si los materiales no pueden ser reutilizados, "
+"al menos intenta reutilizar los shaders (o SpatialMaterials con diferentes "
+"parámetros pero la misma configuración)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:65
 msgid ""
@@ -25112,10 +25349,14 @@ msgid ""
 "each, rendering will be slow. If the same scene has 20.000 objects, but only "
 "uses 100 materials, rendering will be blazing fast."
 msgstr ""
+"Si una escena tiene, por ejemplo, 20.000 objetos con 20.000 materiales "
+"diferentes cada uno, el renderizado será lento. Si la misma escena tiene "
+"20.000 objetos, pero sólo utiliza 100 materiales, el renderizado será más "
+"rápido."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:71
 msgid "Pixels cost vs vertex cost"
-msgstr ""
+msgstr "Coste de los píxeles vs coste de los vértices"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:73
 msgid ""
@@ -25123,20 +25364,26 @@ msgid ""
 "faster it will be rendered. This is *really* relative and depends on many "
 "factors."
 msgstr ""
+"Es un pensamiento común que cuanto menor sea el número de polígonos en un "
+"modelo, más rápido se renderizará. Esto es *muy* relativo y depende de "
+"muchos factores."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:77
 msgid ""
 "On a modern PC and console, vertex cost is low. GPUs originally only "
 "rendered triangles, so all the vertices:"
 msgstr ""
+"En un PC y consola modernos, el costo de los vértices es bajo. Las GPUs "
+"originalmente sólo renderizaban triángulos, así como todos los vértices:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:80
 msgid "Had to be transformed by the CPU (including clipping)."
-msgstr ""
+msgstr "Tuvo que ser transformado por la CPU (incluyendo el recorte)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:82
 msgid "Had to be sent to the GPU memory from the main RAM."
 msgstr ""
+"Tuvo que enviarse a la memoria de la GPU desde la memoria RAM principal."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:84
 msgid ""
@@ -25147,6 +25394,13 @@ msgid ""
 "performance. Truth is, a model rendered by a 3D engine is much more optimal "
 "than how 3D DCCs display them."
 msgstr ""
+"Hoy en día, todo esto se maneja dentro de la GPU, por lo que el rendimiento "
+"es extremadamente alto. Los artistas 3D suelen tener una idea equivocada "
+"sobre el rendimiento de los recuentos porque los DCC 3D (como Blender, Max, "
+"etc.) necesitan mantener la geometría en la memoria de la CPU para poder "
+"editarla, lo que reduce el rendimiento real. La verdad es que un modelo "
+"renderizado por un motor 3D es mucho más óptimo que la forma en que los DCCs "
+"3D los muestran."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:91
 msgid ""
@@ -25217,7 +25471,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:134
 msgid "Texture compression"
-msgstr ""
+msgstr "Compresión de texturas"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:136
 msgid ""
@@ -25248,7 +25502,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:152
 msgid "Transparent objects"
-msgstr ""
+msgstr "Objetos transparentes"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:154
 msgid ""
@@ -25262,7 +25516,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:162
 msgid "Level of detail (LOD)"
-msgstr ""
+msgstr "Nivel de detalle (LOD)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:164
 msgid ""
@@ -25302,6 +25556,8 @@ msgid ""
 "If working on mobile, baking to texture is recommended, since this method is "
 "even faster."
 msgstr ""
+"Si se trabaja en móvil, se recomienda trabajar con texturas, ya que este "
+"método es más rápido."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:4
 msgid "Spatial Material"
@@ -25335,7 +25591,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:27
 msgid "Transparent"
-msgstr ""
+msgstr "Transparente"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:29
 msgid ""
@@ -25470,7 +25726,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:101
 msgid "Do Not Receive Shadows"
-msgstr ""
+msgstr "No recibir sombras"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:103
 msgid ""
@@ -25513,7 +25769,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:220
 #: ../../docs/tutorials/platform/services_for_ios.rst:365
 msgid "Parameters"
-msgstr ""
+msgstr "Parámetros"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:128
 msgid ""
@@ -25767,7 +26023,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:247
 msgid "Albedo"
-msgstr ""
+msgstr "Albedo"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:249
 msgid ""
@@ -38379,7 +38635,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
-msgstr ""
+msgstr "Ray casting"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:9
 msgid ""
@@ -38388,6 +38644,10 @@ msgid ""
 "AI, etc. to take place. This tutorial will explain how to do this in 2D and "
 "3D."
 msgstr ""
+"Una de las tareas más comunes en el desarrollo de juegos es lanzar un rayo "
+"(o un objeto con forma personalizada) y comprobar con qué choca. Esto "
+"permite que ocurran comportamientos complejos (IA, etcétera). Este tutorial "
+"explicará cómo hacer esto en 2D y 3D."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:14
 msgid ""
@@ -38397,16 +38657,24 @@ msgid ""
 "`RayCast2D <class_RayCast2D>` will work, as they will return every frame "
 "what the result of a raycast is."
 msgstr ""
+"Godot almacena toda la información de bajo nivel del juego en servidores, "
+"mientras que la escena es solo una interfaz. Como tal, el ray casting es "
+"generalmente una tarea de bajo nivel. Para raycasts simples, los nodos :ref:"
+"`RayCast <class_RayCast>` y :ref:`RayCast2D <class_RayCast2D>` funcionarán, "
+"ya que devolverán a cada cuadro el resultado de un raycast."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
 "Many times, though, ray-casting needs to be a more interactive process so a "
 "way to do this by code must exist."
 msgstr ""
+"Sin embargo, muchas veces el ray-casting debe ser un proceso más "
+"interactivo, así que es necesario que exista una forma de hacer esto por "
+"código."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
-msgstr ""
+msgstr "Espacio"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
@@ -38416,6 +38684,11 @@ msgid ""
 "<class_CanvasItem_get_world_2d>`. For 3D, it's :ref:`Spatial.get_world()."
 "space <class_Spatial_get_world>`."
 msgstr ""
+"En el mundo de las físicas, Godot almacena toda la información de bajo nivel "
+"sobre colisiones y física en un *espacio*. El espacio 2d actual (para Física "
+"2D) se puede obtener accediendo a :ref:`CanvasItem.get_world_2d().space "
+"<class_CanvasItem_get_world_2d>`. Para 3D, accediendo a :ref:`Spatial."
+"get_world().space <class_Spatial_get_world>`."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
@@ -38423,10 +38696,13 @@ msgid ""
 "`PhysicsServer <class_PhysicsServer>` and :ref:`Physics2DServer "
 "<class_Physics2DServer>` respectively for 3D and 2D."
 msgstr ""
+"El espacio resultante :ref:`RID <class_RID>` puede usarse en :ref:"
+"`PhysicsServer <class_PhysicsServer>` y :ref:`Physics2DServer "
+"<class_Physics2DServer>` respectivamente para  3D y 2D."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:38
 msgid "Accessing space"
-msgstr ""
+msgstr "Accediendo al espacio"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:40
 msgid ""
@@ -38437,6 +38713,13 @@ msgid ""
 "from outside this function may result in an error due to space being "
 "*locked*."
 msgstr ""
+"La física de Godot se ejecuta de manera predeterminada en el mismo hilo que "
+"la lógica del juego, pero puede configurarse para que se ejecute en un hilo "
+"separado y así funcione de manera más eficiente. Debido a esto, el único "
+"momento en que acceder al espacio es seguro es durante la devolución de "
+"llamada (callback) de :ref:`Node._physics_process() "
+"<class_Node__physics_process>`. Acceder desde fuera de esta función puede "
+"provocar un error debido a que el espacio está *bloqueado*."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:47
 msgid ""
@@ -38444,22 +38727,25 @@ msgid ""
 "<class_Physics2DDirectSpaceState>` and :ref:`PhysicsDirectSpaceState "
 "<class_PhysicsDirectSpaceState>` must be used."
 msgstr ""
+"Para realizar consultas en el espacio de física, se deben utilizar :ref:"
+"`Physics2DDirectSpaceState <class_Physics2DDirectSpaceState>` y :ref:"
+"`PhysicsDirectSpaceState <class_PhysicsDirectSpaceState>`."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
-msgstr ""
+msgstr "Utilice el siguiente código en 2D:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:69
 msgid "Or more directly:"
-msgstr ""
+msgstr "O más directamente:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:84
 msgid "And in 3D:"
-msgstr ""
+msgstr "Y en 3D:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:100
 msgid "Raycast query"
-msgstr ""
+msgstr "Consulta de Raycast"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:102
 msgid ""
@@ -38467,26 +38753,33 @@ msgid ""
 "`Physics2DDirectSpaceState.intersect_ray() "
 "<class_Physics2DDirectSpaceState_intersect_ray>` may be used. For example:"
 msgstr ""
+"Para realizar una consulta de raycast 2D se puede utilizar el método :ref:"
+"`Physics2DDirectSpaceState.intersect_ray() "
+"<class_Physics2DDirectSpaceState_intersect_ray>`. Por ejemplo:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:123
 msgid ""
 "The result is a dictionary. If the ray didn't hit anything, the dictionary "
 "will be empty. If it did hit something it will contain collision information:"
 msgstr ""
+"El resultado es un diccionario. Si el rayo no le dio a nada, el diccionario "
+"estará vacío. Si chocó con algo, contendrá información de colisión:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:137
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
 msgstr ""
+"El diccionario resultante ``result`` cuando ocurre una colisión contiene los "
+"siguientes datos:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
-msgstr ""
+msgstr "Los datos son similares en el espacio 3D, usando coordenadas Vector3."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
-msgstr ""
+msgstr "Excepciones de colisión"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
@@ -38495,6 +38788,11 @@ msgid ""
 "has a collider, so the ray will only detect its parent's collider, as shown "
 "in the following image:"
 msgstr ""
+"Un caso de uso común de ray casting es un permitir que un personaje reúna "
+"datos sobre el mundo que lo rodea. Un problema que surge en estos casos es "
+"que ese mismo personaje tiene un Colisionador, por lo que el rayo sólo "
+"detectará el Colisionador de su padre, como se muestra en la siguiente "
+"imagen:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:164
 msgid ""
@@ -38502,14 +38800,20 @@ msgid ""
 "optional third parameter which is an array of exceptions. This is an example "
 "of how to use it from a KinematicBody2D or any other collision object node:"
 msgstr ""
+"Para evitar la autointersección, la función ``intersect_ray()`` puede "
+"recibir un tercer parámetro opcional que es una matriz de excepciones. Aquí "
+"se muestra un ejemplo de cómo utilizarlo desde un KinematicBody2D o desde "
+"cualquier otro nodo de objeto de colisión:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
 msgstr ""
+"La matriz de excepciones puede contener objetos o identificadores relativos "
+"(RIDs)."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr ""
+msgstr "Máscara de colisión"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -38518,6 +38822,10 @@ msgid ""
 "exceptions. In this case, it is much more efficient to use the collision "
 "layer/mask system."
 msgstr ""
+"Mientras que el método de excepciones funciona bien para excluir el cuerpo "
+"padre, resulta muy incómodo si se necesita una lista grande y dinámica de "
+"las excepciones. En ese caso, es mucho más eficiente utilizar el sistema de "
+"máscaras/capas de colisión."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:198
 msgid ""
@@ -38525,10 +38833,13 @@ msgid ""
 "For example, to use same mask as the parent body, use the ``collision_mask`` "
 "member variable:"
 msgstr ""
+"El cuarto argumento opcional para ``intersect_ray()`` es una máscara de "
+"colisión. Por ejemplo, para usar la misma máscara que el cuerpo padre, use "
+"la variable miembro ``collision_mask``:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:226
 msgid "3D ray casting from screen"
-msgstr ""
+msgstr "Ray casting 3D desde la pantalla"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:228
 msgid ""
@@ -38538,6 +38849,11 @@ msgid ""
 "know when it was clicked, but in case there is any desire to do it manually, "
 "here's how."
 msgstr ""
+"Lanzar un rayo de la pantalla al espacio de físicas 3D es útil para recoger "
+"objetos. No hay demasiada necesidad de hacer esto porque :ref:"
+"`CollisionObject <class_CollisionObject>` tiene una señal de \"input_event\" "
+"que permite saber cuando ha hecho clic, pero en el caso de querer hacerlo "
+"manualmente, esta es la forma."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:234
 msgid ""
@@ -38547,20 +38863,29 @@ msgid ""
 "because ``origin`` changes in orthogonal mode, while ``normal`` changes in "
 "perspective mode:"
 msgstr ""
+"Para lanzar un rayo desde la pantalla, se necesita un nodo :ref:`Camera "
+"<class_Camera>`. Una ``Camera`` (cámara) puede estar en dos modos de "
+"proyección: perspectiva y ortogonal. Debido a esto, deben obtenerse el "
+"origen del rayo y su dirección. Esto es porque en el modo ortogonal "
+"``origin`` (origen) cambia, mientras que en el modo perspectiva ``normal`` "
+"cambia:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:242
 msgid "To obtain it using a camera, the following code can be used:"
 msgstr ""
+"Para obtenerlo mediante una cámara, se puede utilizar el siguiente código:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:270
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."
 msgstr ""
+"Recuerde que durante ``_input()``, el espacio puede estar bloqueado, por lo "
+"que en la práctica esta consulta debe ejecutarse en ``_physics_process()``."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
 msgid "Kinematic Character (2D)"
-msgstr ""
+msgstr "Personaje cinemático (2D)"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:9
 msgid ""
@@ -38573,6 +38898,15 @@ msgid ""
 "platformer demo), but using it requires a considerable level of skill and "
 "understanding of physics engines (or a lot of patience with trial and error)."
 msgstr ""
+"Sí, el nombre suena extraño. \"Personaje cinemático\". ¿Qué es eso? La razón "
+"es que cuando aparecieron los motores de físicas, fueron llamados motores de "
+"\"Dinámicas\" (porque tratan principalmente con respuestas de colisiones). "
+"Se llevaron a cabo muchos intentos para crear un controlador de personajes "
+"utilizando los motores de dinámicas, pero no era tan fácil como parecía. "
+"Godot tiene una de las mejores implementaciones de controlador de personajes "
+"dinámicos (como puede verse en la demo 2d/plataformas), pero usarlo requiere "
+"un considerable nivel de habilidad y conocimiento de motores de físicas (o "
+"mucha paciencia con el ensayo y error)."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:19
 msgid ""
@@ -38580,6 +38914,9 @@ msgid ""
 "controllers as the best alternative, while others (PhysX) would rather "
 "promote the Kinematic one."
 msgstr ""
+"Algunos motores de física como Havok parecen apostar por los controladores "
+"de personaje dinámico como la mejor alternativa, mientras que otros (PhysX) "
+"prefieren promover los de personaje cinemático."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:23
 msgid "So, what is the difference?:"
@@ -38596,6 +38933,16 @@ msgid ""
 "one frame to be solved, so a few collisions may seem to displace a tiny bit. "
 "Those problems can be fixed, but require a certain amount of skill."
 msgstr ""
+"A **controlador de personaje dinámico** utiliza un cuerpo rígido con tensor "
+"de inercia infinita. Básicamente, es un cuerpo rígido que no puede rotar. "
+"Los motores de físicas siempre dejan a lo objetos chocar, y entonces "
+"resuelven sus colisiones todas juntas. Esto hace los controladores de "
+"personaje dinámico capaces de interactuar con otros objetos con físicas "
+"perfectamente (como se ve en la demo del juego de plataformas), sin embargo "
+"estas interacciones no siempre son predecibles. Las colisiones también "
+"pueden tardar más de un fotograma en ser resueltas, así que unas pocas "
+"colisiones pueden verse desplazadas un poquito. Esos problemas pueden "
+"solucionarse, pero requieren de cierta habilidad."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:34
 msgid ""
@@ -46594,7 +46941,7 @@ msgstr ""
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "Viewports (Ventanas)"
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
 msgid ""
@@ -46659,13 +47006,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
-#, fuzzy
 msgid ""
 "For more information on how Godot handles input please read the :ref:`Input "
 "Event Tutorial<doc_inputevent>`."
 msgstr ""
-"Para obtener más información sobre los eventos propios, consulte el "
-"tutorial :ref:`doc_inputevent`."
+"Para más información sobre cómo maneja Godot las entradas, por favor lee el :"
+"ref:`Tutorial de eventos de entrada<doc_inputevent>`."
 
 #: ../../docs/tutorials/viewports/viewports.rst:51
 msgid "Listener"
@@ -46762,7 +47108,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:116
-#, fuzzy
 msgid ""
 "As a helper for situations where you want to create :ref:`Viewports "
 "<class_Viewport>` that display single objects and don't want to create a :"
@@ -46770,10 +47115,11 @@ msgid ""
 "to use its own :ref:`World <class_World>`. This is useful when you want to "
 "instance 3D characters or objects in a 2D :ref:`World <class_World2D>`."
 msgstr ""
-"Como ayudante para situaciones en las que quieras crear vistas que muestren "
-"objetos individuales y no quieras crear un mundo, la vista tiene la opción "
-"de usar su propio Mundo. Esto es muy útil cuando se desea crear personajes u "
-"objetos 3D en el mundo 2D."
+"Como ayudante para situaciones en las que se quiera crear :ref:`Viewports "
+"<class_Viewport>` que muestren objetos individuales y no se quiera crear un :"
+"ref:`World <class_World>`, :ref:`Viewport <class_Viewport>` tiene la opción "
+"de usar su propio :ref:`World <class_World>`. Esto es muy útil cuando se "
+"desea crear personajes u objetos 3D en un 2D :ref:`World <class_World2D>`."
 
 #: ../../docs/tutorials/viewports/viewports.rst:121
 msgid ""
@@ -46820,9 +47166,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:163
-#, fuzzy
 msgid "Viewport Container"
-msgstr "Vistas y Canvas items"
+msgstr "Container Viewport"
 
 #: ../../docs/tutorials/viewports/viewports.rst:165
 msgid ""
@@ -46832,7 +47177,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:170
-#, fuzzy
 msgid ""
 "The :ref:`Viewport <class_Viewport>` will cover the area of its parent :ref:"
 "`ViewportContainer <class_viewportcontainer>` completely if stretch is set "
@@ -46840,10 +47184,11 @@ msgid ""
 "size of the :ref:`ViewportContainer <class_viewportcontainer>` cannot be "
 "smaller than the size of the :ref:`Viewport <class_Viewport>`."
 msgstr ""
-"El Viewport cubrirá completamente el área de su control padre, si el "
-"estiramiento se establece en true en Viewport Container. Pero tendrás que "
-"configurar el tamaño del Viewport para ver la parte apropiada del Viewport. "
-"Y el Container Viewport no puede ser más pequeño que el tamaño del Viewport."
+"El :ref:`Viewport <class_Viewport>` abarcará completamente el área de su "
+"padre :ref:`ViewportContainer <class_viewportcontainer>` si stretch está "
+"ajustado a true en :ref:`ViewportContainer <class_viewportcontainer>`. Nota: "
+"El tamaño del :ref:`ViewportContainer <class_viewportcontainer>` no puede "
+"ser menor que el tamaño del :ref:`Viewport <class_Viewport>`."
 
 #: ../../docs/tutorials/viewports/viewports.rst:177
 msgid ""
@@ -46949,16 +47294,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:245
-#, fuzzy
 msgid ""
 "Make sure to check the Viewport demos! Viewport folder in the demos archive "
 "available to download, or https://github.com/godotengine/godot-demo-projects/"
 "tree/master/viewport"
 msgstr ""
-"Este es un buen punto de partida para un juego de plataformas. Se puede "
-"encontrar una demostración más completa en el zip de demostración "
-"distribuido con el motor, o en https://github.com/godotengine/godot-demo-"
-"projects/tree/master/2d/kinematic_character."
+"¡Asegúrate de revisar las demos de Viewport! Carpeta Viewport en el archivo "
+"de demos disponible para descargar, o https://github.com/godotengine/godot-"
+"demo-projects/tree/master/viewport"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:4
 msgid "Multiple resolutions"
@@ -50210,7 +50553,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "Networking (Redes)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
@@ -50227,6 +50570,10 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
+"A continuación se explican las diferencias de redes de alto y bajo nivel en "
+"Godot, así como algunos aspectos fundamentales. Si deseas saltar de cabeza y "
+"agregar redes a tus primeros nodos, salta a `Inicializando la red`_ a "
+"continuación. ¡Pero asegúrate de leer el resto más tarde!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -50252,6 +50599,7 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
 msgstr ""
+"Esto se debe a las limitaciones inherentes de los protocolos de bajo nivel:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -50264,6 +50612,16 @@ msgid ""
 "for games. Some of this can be configured and disabled (e.g. by disabling "
 "\"Nagle's algorithm\" for the TCP connection)."
 msgstr ""
+"TCP asegura que los paquetes siempre llegarán de manera confiable y en "
+"orden, pero la latencia generalmente es más alta debido a la corrección de "
+"errores. También es un protocolo bastante complejo porque entiende lo que es "
+"una \"conexión\" y se optimiza para los objetivos que a menudo no se adaptan "
+"a aplicaciones como los juegos multijugador. Los paquetes se almacenan en el "
+"búfer para enviarlos en lotes más grandes, intercambiando menos sobrecarga "
+"por paquete para una mayor latencia. Esto puede ser útil para cosas como "
+"HTTP, pero generalmente no para juegos. Parte de esto se puede configurar y "
+"desactivar (por ejemplo, desactivando el \"algoritmo de Nagle\" para la "
+"conexión TCP)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
 msgid ""
@@ -50274,6 +50632,13 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"UDP es un protocolo más simple que solo envía paquetes (y no tiene ningún "
+"concepto de \"conexión\"). Ninguna corrección de errores lo hace bastante "
+"rápido (baja latencia), pero los paquetes pueden perderse en el camino o ser "
+"recibidos en el orden incorrecto. Además de eso, el MTU (tamaño máximo de "
+"paquete) para UDP es generalmente baja (solo unos pocos cientos de bytes), "
+"por lo que la transmisión de paquetes más grandes significa dividirlos, "
+"reorganizarlos y volver a intentar si una pieza falla."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
 msgid ""
@@ -50285,6 +50650,14 @@ msgid ""
 "this most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"En general, se puede pensar que TCP es confiable, ordenado y lento; UDP como "
+"no confiable, desordenado y rápido. Debido a la gran diferencia en el "
+"rendimiento, a menudo tiene sentido volver a construir las partes de TCP "
+"deseadas para los juegos (confiabilidad opcional y orden de paquetes) "
+"mientras se evitan las partes no deseadas (funciones de congestión/control "
+"de tráfico, algoritmo de Nagle, etc.). Debido a esto, la mayoría de los "
+"motores de juegos vienen con una implementación así, y Godot no es una "
+"excepción."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
@@ -50293,6 +50666,11 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
+"En resumen, puedes usar la API de red de bajo nivel para obtener el máximo "
+"control e implementar todo encima de los protocolos de red desnudos o usar "
+"la API de alto nivel basada en :ref:`SceneTree <class_SceneTree>` que hace "
+"la mayor parte del trabajo pesado detrás de las escenas de una manera "
+"generalmente optimizada."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""
@@ -50303,12 +50681,21 @@ msgid ""
 "currently only offers WebSocket support and lacks some of the higher level "
 "features as well as raw access to low-level protocols like TCP and UDP."
 msgstr ""
+"La mayoría de las plataformas compatibles con Godot ofrecen todas o la "
+"mayoría de las funciones de red de alto y bajo nivel mencionadas. Sin "
+"embargo, como las redes siempre dependen en gran medida del hardware y del "
+"sistema operativo, algunas funciones pueden cambiar o no estar disponibles "
+"en algunas plataformas de destino. En particular, la plataforma HTML5 "
+"actualmente solo ofrece compatibilidad con WebSocket y carece de algunas de "
+"las características de mayor nivel, así como del acceso sin formato a "
+"protocolos de bajo nivel como TCP y UDP."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 msgid ""
 "More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
 msgstr ""
+"Más sobre TCP/IP, UDP y redes: https://gafferongames.com/post/udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
 msgid ""
@@ -50318,6 +50705,12 @@ msgid ""
 "gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
+"Gaffer On Games tiene muchos artículos útiles sobre la creación de redes en "
+"Juegos (`aquí <https://gafferongames.com/tags/networking>`__), incluida la "
+"exhaustiva `introduction to networking models in games <https://"
+"gafferongames.com/post/"
+"what_every_programmer_needs_to_know_about_game_networking/>`__ (introducción "
+"a modelos de redes en juegos)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:41
 msgid ""
@@ -50325,6 +50718,9 @@ msgid ""
 "Godot's built-in networking, see here for an example: https://github.com/"
 "PerduGames/gdnet3"
 msgstr ""
+"Si deseas utilizar tu biblioteca de redes de bajo nivel preferida en lugar "
+"de la red integrada de Godot, consulta aquí un ejemplo: https://github.com/"
+"PerduGames/gdnet3"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:45
 msgid ""
@@ -50334,6 +50730,11 @@ msgid ""
 "application runs on and use your servers to send spam, attack others or "
 "steal your users data if they play your game."
 msgstr ""
+"Agregar red a tu juego viene con algo de responsabilidad. Puede hacer que tu "
+"aplicación sea vulnerable si se hace mal y puede generar trampas o exploits. "
+"Incluso puede permitir que un atacante comprometa las máquinas en las que se "
+"ejecuta tu aplicación y use tus servidores para enviar correo no deseado "
+"(spam), ataque a otros o robe los datos de tus usuarios si juegan tu juego."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:50
 msgid ""
@@ -50341,10 +50742,13 @@ msgid ""
 "with Godot. You can of course experiment, but when you release a networked "
 "application, always take care of any possible security concerns."
 msgstr ""
+"Este es siempre el caso cuando se trata de redes y no tiene nada que ver con "
+"Godot. Por supuesto, puedes experimentar, pero cuando liberes una aplicación "
+"en red, siempre ocúpate de cualquier posible problema de seguridad."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:55
 msgid "Mid level abstraction"
-msgstr ""
+msgstr "Abstracción de nivel medio"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:57
 msgid ""
@@ -50352,6 +50756,9 @@ msgid ""
 "network, it can be helpful to understand how the base network API for "
 "synchronization works."
 msgstr ""
+"Antes de entrar en cómo nos gustaría sincronizar un juego en la red, puede "
+"ser útil entender cómo funciona la base de la API de red  para la "
+"sincronización."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:59
 msgid ""
@@ -50359,6 +50766,10 @@ msgid ""
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
 "directly, but is designed so that several implementations can provide it:"
 msgstr ""
+"Godot usa un objeto de nivel medio :ref:`NetworkedMultiplayerPeer "
+"<class_NetworkedMultiplayerPeer>`. Este objeto no esta hecho para crearse "
+"directamente, sino que está diseñado para que varias implementaciones puedan "
+"proporcionarlo:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
 msgid ""
@@ -50367,6 +50778,11 @@ msgid ""
 "On top of that, it adds methods to set a peer, transfer mode, etc. It also "
 "includes signals that will let you know when peers connect or disconnect."
 msgstr ""
+"Este objeto se extiende de :ref:`PacketPeer <class_PacketPeer>`, por lo que "
+"hereda todos los métodos útiles para serializar, enviar y recibir datos. "
+"Encima de eso, agrega métodos para configurar un peer, modo de "
+"transferencia, etc. También incluye señales que le permitirán saber cuándo "
+"se conectan o desconectan los peers."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:66
 msgid ""
@@ -50376,6 +50792,12 @@ msgid ""
 "could be used to implement mobile APIs (for adhoc WiFi, Bluetooth) or custom "
 "device/console-specific networking APIs."
 msgstr ""
+"Esta interfaz de clase puede abstraer la mayoría de los tipos de capas de "
+"red, topologías y bibliotecas. Por defecto, Godot proporciona una "
+"implementación basada en ENet (:ref:`NetworkedMultiplayerEnet "
+"<class_NetworkedMultiplayerENet>`), pero esto podría usarse para implementar "
+"APIs móviles (para adhoc WiFi, Bluetooth) o personalizadas APIs de red "
+"específicas del dispositivo/consola."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:69
 msgid ""
@@ -50383,37 +50805,50 @@ msgid ""
 "provides even higher level networking facilities. Yet it is made available "
 "in case a game has specific needs for a lower level API."
 msgstr ""
+"Para la mayoría de los casos comunes, se desaconseja usar este objeto "
+"directamente, ya que Godot proporciona funciones de red de nivel aún más "
+"alto. Sin embargo, está disponible en caso de que un juego tenga necesidades "
+"específicas de un API de nivel inferior."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:73
 msgid "Initializing the network"
-msgstr ""
+msgstr "Inicializando la red"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:75
 msgid ""
 "The object that controls networking in Godot is the same one that controls "
 "everything tree-related: :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
+"El objeto que controla las redes en Godot es el mismo que controla todo lo "
+"relacionado con el árbol: :ref:`SceneTree <class_SceneTree>`."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:77
 msgid ""
 "To initialize high level networking, the SceneTree must be provided a "
 "NetworkedMultiplayerPeer object."
 msgstr ""
+"Para inicializar redes de alto nivel, el SceneTree debe proporcionar un "
+"objeto NetworkedMultiplayerPeer."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:79
 msgid ""
 "To create that object it first has to be initialized as a server or client."
 msgstr ""
+"Para crear ese objeto primero tiene que ser inicializado como un servidor o "
+"cliente."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:81
 msgid ""
 "Initializing as a server, listening on the given port, with a given maximum "
 "number of peers:"
 msgstr ""
+"Inicializando como un servidor, escuchando en el puerto dado, con un número "
+"máximo de pares dado:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:89
 msgid "Initializing as a client, connecting to a given IP and port:"
 msgstr ""
+"Inicializando como un cliente, conectándose a una IP y un puerto dados:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:97
 msgid ""
@@ -50422,14 +50857,18 @@ msgid ""
 "`get_tree().get_network_peer()`. This can be done via SceneTree's metadata "
 "feature:"
 msgstr ""
+"Tenga en cuenta que puede tener sentido almacenar la instancia del peer de "
+"la red local en SceneTree para poder acceder a ella más adelante, ya que "
+"actualmente no hay `get_tree().get_network_peer()`. Esto se puede hacer a "
+"través de la función de metadatos de SceneTree:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:104
 msgid "Checking whether the tree is initialized as a server or client:"
-msgstr ""
+msgstr "Comprobando si el árbol se inicializó como servidor o cliente:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:110
 msgid "Terminating the networking feature:"
-msgstr ""
+msgstr "Terminar la función de red:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:116
 msgid ""
@@ -50437,10 +50876,13 @@ msgid ""
 "know you're going away instead of letting the connection close or timeout, "
 "depending on your game.)"
 msgstr ""
+"(Aunque puede tener sentido enviar un mensaje primero para que los otros "
+"compañeros sepan que te vas a ir en lugar de dejar que la conexión se cierre "
+"o se agote el tiempo de espera, dependiendo de tu juego.)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:119
 msgid "Managing connections"
-msgstr ""
+msgstr "Administrar conexiones"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
 msgid ""
@@ -50450,10 +50892,16 @@ msgid ""
 "`SceneTree <class_SceneTree>`). To manage who connects, Godot provides the "
 "following signals in SceneTree:"
 msgstr ""
+"Algunos juegos aceptan conexiones en cualquier momento, otros durante la "
+"fase de lobby(vestíbulo). Se puede solicitar a Godot que ya no acepte "
+"conexiones en ningún punto (mira `set_refuse_new_network_connections(bool)` "
+"y métodos relacionados en :ref:`SceneTree <class_SceneTree>`). Para "
+"administrar quién se conecta, Godot proporciona las siguientes señales en "
+"SceneTree:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:124
 msgid "Server and Clients:"
-msgstr ""
+msgstr "Servidor y Clientes:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:126
 msgid "`network_peer_connected(int id)`"
@@ -50475,10 +50923,20 @@ msgid ""
 "they identify connected peers and thus players. You can also use IDs to send "
 "messages only to certain peers."
 msgstr ""
+"Las señales anteriores se invocan en cada peer conectado al servidor "
+"(incluso en el servidor) cuando un nuevo peer se conecta o desconecta. Los "
+"clientes se conectarán con una ID única mayor que 1, mientras que la ID de "
+"red peer 1 es siempre el servidor. Cualquier cosa por debajo de 1 debe "
+"manejarse como inválida. Puedes recuperar la ID para el sistema local a "
+"través de :ref:`SceneTree.get_network_unique_id() "
+"<class_SceneTree_get_network_unique_id>`. Estas IDs serán útiles sobre todo "
+"para la gestión del lobby y, en general, se deben almacenar ya que "
+"identifican a los peers conectados y, por tanto, a los jugadores. También "
+"puedes usar las IDs para enviar mensajes solo a ciertos peers."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:135
 msgid "Clients:"
-msgstr ""
+msgstr "Clientes:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
 msgid "`connected_to_server`"
@@ -50500,6 +50958,12 @@ msgid ""
 "connected player information about other already connected players (e.g. "
 "their names, stats, etc)."
 msgstr ""
+"Una vez más, todas estas funciones son principalmente útiles para la gestión "
+"del lobby o para agregar/quitar jugadores en el momento. Para estas tareas, "
+"el servidor claramente tiene que funcionar como servidor y tu debes realizar "
+"tareas manualmente, como enviar un jugador recién conectado o información "
+"sobre otros jugadores que ya están conectados (por ejemplo, sus nombres, "
+"estadísticas, etc.)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:145
 msgid ""
@@ -50508,9 +50972,9 @@ msgid ""
 "autoloaded node/singleton is a great fit for this, to always have access to, "
 "e.g. \"/root/lobby\"."
 msgstr ""
-"Los Lobbies pueden ser implementados de la forma que desees, pero la manera "
+"Los lobbys pueden ser implementados de la forma que desees, pero la manera "
 "más común es usar un nodo con el mismo nombre a través de escenas en todos "
-"los pares. Generalmente, un nodo/singleton autocargado es ideal para esto, "
+"los peers. Generalmente, un nodo/singleton autocargado es ideal para esto, "
 "para tener siempre acceso a, por ejemplo, \"/root/lobby\"."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:149
@@ -50523,6 +50987,9 @@ msgid ""
 "procedure calls). This is implemented as a set of functions in :ref:`Node "
 "<class_Node>`:"
 msgstr ""
+"Para comunicarse entre peers, la forma más fácil es usar RPC (llamadas de "
+"procedimiento remoto). Esto se implementa como un conjunto de funciones en :"
+"ref:`Node <class_Node>`:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:154
 msgid "`rpc(\"function_name\", <optional_args>)`"
@@ -50562,19 +51029,23 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:166
 msgid "Functions can be called in two fashions:"
-msgstr ""
+msgstr "Las funciones se pueden llamar de dos maneras:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:168
 msgid ""
 "Reliable: the function call will arrive no matter what, but may take longer "
 "because it will be re-transmitted in case of failure."
 msgstr ""
+"Confiable: la llamada a la función llegará sin importar qué, pero puede "
+"llevar más tiempo porque se retransmitirá en caso de falla."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:169
 msgid ""
 "Unreliable: if the function call does not arrive, it will not be re-"
 "transmitted, but if it arrives it will do it quickly."
 msgstr ""
+"No Confiable: si la llamada de función no llega, no se retransmitirá, pero "
+"si llega, lo hará rápidamente."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:171
 msgid ""
@@ -50584,28 +51055,40 @@ msgid ""
 "would likely be outdated because the object moved further in the meantime, "
 "even if it was resent reliably)."
 msgstr ""
+"En la mayoría de los casos, confiable es deseado. No confiable es útil "
+"principalmente para sincronizar posiciones de objetos (la sincronización "
+"debe ocurrir constantemente, y si se pierde un paquete, no es tan malo "
+"porque finalmente llegará uno nuevo y es probable que esté desactualizado "
+"porque, mientras tanto el objeto se movió aún más, incluso si fue reenviado "
+"de manera confiable)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
 msgid ""
 "There is also the `get_rpc_sender_id` function in `SceneTree` which can be "
 "used to check which peer (or peer ID) sent a RPC call."
 msgstr ""
+"También está la función `get_rpc_sender_id` en `SceneTree` que se puede usar "
+"para verificar qué peer (o ID peer) envió una llamada RPC."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:177
 msgid "Back to lobby"
-msgstr ""
+msgstr "De vuelta al lobby"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:179
 msgid ""
 "Let's get back to the lobby. Imagine that each player that connects to the "
 "server will tell everyone about it."
 msgstr ""
+"Volvamos al lobby. Imagina que cada jugador que se conecta al servidor se lo "
+"cuenta a todos."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:230
 msgid ""
 "You might have noticed already something different, which is the usage of "
 "the `remote` keyword on the `register_player` function:"
 msgstr ""
+"Ya habrás notado algo diferente, que es el uso de la palabra clave `remote` "
+"en la función `register_player`:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:236
 msgid ""
@@ -50615,12 +51098,20 @@ msgid ""
 "easier (so a client can't call a function to delete a file on another "
 "client's system)."
 msgstr ""
+"Esta palabra clave tiene dos usos principales. El primero es dejar que Godot "
+"sepa que esta función se puede llamar desde RPC. Si no se agregan palabras "
+"clave, Godot bloqueará cualquier intento de invocar funciones por razones de "
+"seguridad. Esto hace que la seguridad funcione mucho más fácilmente (por lo "
+"que un cliente no puede llamar a una función para eliminar un archivo en el "
+"sistema de otro cliente)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:240
 msgid ""
 "The second use is to specify how the function will be called via RPC. There "
 "are four different keywords:"
 msgstr ""
+"El segundo uso es especificar cómo se llamará la función a través de RPC. "
+"Hay cuatro palabras clave diferentes:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:242
 msgid "`remote`"
@@ -50643,12 +51134,17 @@ msgid ""
 "The `remote` keyword means that the `rpc()` call will go via network and "
 "execute remotely."
 msgstr ""
+"La palabra clave `remote` significa que la llamada `rpc()` irá a través de "
+"la red y se ejecutará de forma remota."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid ""
 "The `sync` keyword means that the `rpc()` call will go via network and "
 "execute remotely, but will also execute locally (do a normal function call)."
 msgstr ""
+"La palabra clave `sync` significa que la llamada`rpc()` irá a través de la "
+"red y se ejecutará de forma remota, pero también se ejecutará localmente "
+"(realiza una llamada a función normal)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:251
 msgid ""
@@ -50656,6 +51152,9 @@ msgid ""
 "`get_rpc_sender_id` function on `SceneTree` to check which peer actually "
 "made the RPC call to `register_player`."
 msgstr ""
+"Los otros serán explicados más abajo. Tenga en cuenta que también puede usar "
+"la función `get_rpc_sender_id` en` SceneTree` para verificar qué peer "
+"realmente hizo la llamada RPC a `register_player`."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:254
 msgid ""
@@ -50665,10 +51164,16 @@ msgid ""
 "time to time, or before game start). For the sake of simplicity and because "
 "each game will share different information, this is not shown here."
 msgstr ""
+"Con esto, la gestión del lobby debería ser más o menos explicada. Una vez "
+"que tengas listo tu juego, lo más probable es que quieras agregar un poco de "
+"seguridad adicional para asegurarse de que los clientes no hagan nada "
+"gracioso (solo valida la información que envían de vez en cuando, o antes de "
+"que comience el juego). Por el bien de la simplicidad y porque cada juego "
+"compartirá información diferente, esto no se muestra aquí."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:259
 msgid "Starting the game"
-msgstr ""
+msgstr "Comenzando el juego"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:261
 msgid ""
@@ -50676,10 +51181,14 @@ msgid ""
 "start the game. This is nothing special in itself, but we'll explain a few "
 "nice tricks that can be done at this point to make your life much easier."
 msgstr ""
+"Una vez que se hayan reunido suficientes jugadores en el lobby, el servidor "
+"probablemente debería comenzar el juego. Esto no es nada especial en sí "
+"mismo, pero explicaremos algunos trucos agradables que se pueden hacer en "
+"este punto para hacer tu vida mucho más fácil."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:265
 msgid "Player scenes"
-msgstr ""
+msgstr "Escenas del jugador"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:267
 msgid ""
@@ -50688,6 +51197,10 @@ msgid ""
 "scene for each player connected to it**. For a 4 player game, each peer "
 "needs to instance 4 player nodes."
 msgstr ""
+"En la mayoría de los juegos, cada jugador probablemente tendrá su propia "
+"escena. Recuerda que este es un juego multijugador, por lo que en cada peer "
+"debes incluir **una escena para cada jugador conectado a ella**. Para un "
+"juego de 4 jugadores, cada peer necesita instaurar 4 nodos de jugador."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:270
 msgid ""
@@ -50695,6 +51208,9 @@ msgid ""
 "must also be relatively easy for a player to tell which nodes represent each "
 "player ID."
 msgstr ""
+"Entonces, ¿cómo nombrar esos nodos? En Godot, los nodos deben tener un "
+"nombre único. También debe ser relativamente fácil para un jugador decir qué "
+"nodos representan cada ID de jugador."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:273
 msgid ""
@@ -50702,6 +51218,9 @@ msgid ""
 "scenes as their network ID*. This way, they will be the same in every peer "
 "and RPC will work great! Here is an example:"
 msgstr ""
+"La solución es simplemente nombrar el *nodo raíz de las escenas del jugador "
+"instanciadas como su ID de red*. De esta forma, serán iguales en todos los "
+"pares y RPC funcionará de maravilla. Aquí hay un ejemplo:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
 msgid ""
@@ -50710,10 +51229,14 @@ msgid ""
 "SceneTree is locked while the scene is being created (e.g. when ``_ready()`` "
 "is being called)."
 msgstr ""
+"Dependiendo de cuándo ejecutes pre_configure_game(), es posible que "
+"necesites cambiar algunas llamadas a ``add_child()`` a ser diferidas "
+"mediante ``call_deferred()``, ya que SceneTree está bloqueado mientras se "
+"está creando la escena (por ejemplo, cuando ``_ready()`` se está llamando)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:305
 msgid "Synchronizing game start"
-msgstr ""
+msgstr "Sincronizando el inicio del juego"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
 msgid ""
@@ -50722,16 +51245,22 @@ msgid ""
 "actually start when everyone is ready, pausing the game until all players "
 "are ready can be useful:"
 msgstr ""
+"Configurar los jugadores puede tomar una cantidad de tiempo diferente en "
+"cada peer debido al lag(retraso), hardware diferente u otras razones. Para "
+"asegurarte de que el juego realmente comience cuando todos estén listos, "
+"pausar el juego hasta que todos los jugadores estén listos puede ser útil:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:316
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
 msgstr ""
+"Cuando el servidor obtiene el OK de todos los peers, puede indicarles que "
+"comiencen, como por ejemplo:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
 msgid "Synchronizing the game"
-msgstr ""
+msgstr "Sincronizando el juego"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
 msgid ""
@@ -50740,16 +51269,21 @@ msgid ""
 "remote member variable set implementation, Godot adds the concept network "
 "masters."
 msgstr ""
+"En la mayoría de los juegos, el objetivo de las redes multijugador es que el "
+"juego se ejecute sincronizado con todos los peers que lo juegan. Además de "
+"proporcionar un RPC y la implementación de un conjunto de variables miembro "
+"remotas, Godot añade el concepto de red maestra."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
 msgid "Network master"
-msgstr ""
+msgstr "Red maestra"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
 msgid ""
 "The network master of a node is the peer that has the ultimate authority "
 "over it."
 msgstr ""
+"La red maestra de un nodo es el peer que tiene la máxima autoridad sobre él."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
 msgid ""
@@ -50757,6 +51291,9 @@ msgid ""
 "node, which if not changed is always going to be the server (ID 1). Thus the "
 "server has authority over all nodes by default."
 msgstr ""
+"Cuando no se establece explícitamente la red maestra es heredada del nodo "
+"padre, que si no se cambia siempre será el servidor (ID 1). Por tanto, el "
+"servidor tiene autoridad sobre todos los nodos por defecto."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
 msgid ""
@@ -50765,6 +51302,11 @@ msgid ""
 "(recursive is true by default and means the network master is recursively "
 "set on all child nodes of the node as well)."
 msgstr ""
+"La red maestra se puede configurar con la función :ref:`Node."
+"set_network_master(id, recursive) <class_Node_set_network_master>` "
+"(recursive es verdadero de manera predeterminada y significa que la red "
+"maestra también se establece recursivamente en todos los nodos hijos del "
+"nodo también)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
 msgid ""
@@ -50773,6 +51315,11 @@ msgid ""
 "is_network_master() <class_Node_is_network_master>`. This will return true "
 "when executed on the server and false on all client peers."
 msgstr ""
+"Comprobar que una instancia de nodo específica en un peer es la red maestra "
+"para este nodo, para todos los peers conectados se hace llamando a :ref:"
+"`Node.is_network_master() <class_Node_is_network_master>`. Este retornara "
+"verdadero cuando se ejecute en el servidor y falso en todos los peers "
+"clientes."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
 msgid ""
@@ -50780,6 +51327,9 @@ msgid ""
 "noticed that the local peer is set to have network master authority for "
 "their own player instead of the server:"
 msgstr ""
+"Si has prestado atención al ejemplo anterior, es posible que haya notado que "
+"el peer local está configurado para tener autoridad de red maestra para su "
+"propio jugador en lugar del servidor:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:373
 msgid ""
@@ -50787,6 +51337,9 @@ msgid ""
 "master on the node it controls, and all other nodes remain as slaves with "
 "the server being their network master."
 msgstr ""
+"Cada vez que esta pieza de código se ejecuta en cada peer, el peer se hace "
+"maestro en el nodo que controla, y todos los otros nodos permanecen como "
+"esclavos con el servidor siendo su red maestra."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:375
 msgid ""
@@ -50794,10 +51347,13 @@ msgid ""
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
 "multiplayer_bomber>`_:"
 msgstr ""
+"Para aclarar, aquí hay un ejemplo de cómo se ve esto en el `bomber demo "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
+"multiplayer_bomber>`_:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:382
 msgid "Master and slave keywords"
-msgstr ""
+msgstr "Palabras clave master y slave"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
 msgid ""
@@ -50805,14 +51361,18 @@ msgid ""
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
 "Similarly to the `remote` keyword, functions can also be tagged with them:"
 msgstr ""
+"La verdadera ventaja de este modelo es cuando se usa con las palabras clave "
+"`master`/`slave` en GDScript (o su equivalente en C# y Visual Script). "
+"Similar a la palabra clave `remote`, las funciones también se pueden "
+"etiquetar con ellas:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:389
 msgid "Example bomb code:"
-msgstr ""
+msgstr "Ejemplo de código de bomba:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:397
 msgid "Example player code:"
-msgstr ""
+msgstr "Ejemplo de código de jugador:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
 msgid ""
@@ -50820,6 +51380,9 @@ msgid ""
 "is master). The bomb knows the bodies in the area, so it checks them and "
 "checks that they contain an `exploded` function."
 msgstr ""
+"En el ejemplo anterior, una bomba explota en algún lugar (probablemente sea "
+"administrada por quien sea master). La bomba conoce los cuerpos en el área, "
+"por lo que los verifica y verifica que contengan una función 'exploded'."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
 msgid ""
@@ -50827,6 +51390,10 @@ msgid ""
 "in the player has a `master` keyword. This means that only the player who is "
 "master for that instance will actually get the function."
 msgstr ""
+"Si lo tienen, la bomba llama 'exploded' en él. Sin embargo, el método "
+"`exploded` en el jugador tiene una palabra clave`master`. Esto significa que "
+"solo el jugador que es master para esa instancia realmente obtendrá la "
+"función."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
 msgid ""
@@ -50835,6 +51402,10 @@ msgid ""
 "making the player look stunned in all the peers (as well as the current, "
 "master one)."
 msgstr ""
+"Esta instancia, entonces, llama a la función `stun` en las mismas instancias "
+"de ese mismo jugador (pero en diferentes peers), y solo aquellos que se "
+"establecen como slave, haciendo que el jugador se vea aturdido en todos los "
+"peers (así como en el actual , único master)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:420
 msgid ""
@@ -50843,10 +51414,14 @@ msgid ""
 "sense for an area-of-effect case like the bomb but in other cases, like "
 "single target damage."
 msgstr ""
+"Ten en cuenta que también puedes enviar el mensaje stun() solo a un jugador "
+"específico utilizando rpc_id(<id>, \"exploded\", bomb_owner). Esto puede no "
+"tener mucho sentido para un caso de área de efecto como el de la bomba, sino "
+"en otros casos, como daño a un solo objetivo."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:4
 msgid "Making HTTP requests"
-msgstr ""
+msgstr "Haciendo solicitudes HTTP"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:6
 msgid ""
@@ -50855,16 +51430,23 @@ msgid ""
 "<class_HTTPClient>`, for which a tutorial is available :ref:`here "
 "<doc_http_client_class>`."
 msgstr ""
+"El nodo :ref:`HTTPRequest <class_HTTPRequest>` es la forma más fácil de "
+"realizar solicitudes HTTP en Godot. Está respaldado por el :ref:`HTTPClient "
+"<class_HTTPClient>` de más bajo nivel, para el cual hay un tutorial "
+"disponible :ref:`aquí <doc_http_client_class>`."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:9
 msgid ""
 "For the sake of this example, we will create a simple UI with a button, that "
 "when pressed will start the HTTP request to the specified URL."
 msgstr ""
+"Por el bien de este ejemplo, crearemos una interfaz de usuario simple con un "
+"botón, que cuando se presione iniciará la solicitud HTTP a la URL "
+"especificada."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:12
 msgid "Preparing scene"
-msgstr ""
+msgstr "Preparando la escena"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:14
 msgid ""
@@ -50873,16 +51455,22 @@ msgid ""
 "node. You will need to connect the following signals to the CanvasLayer "
 "script:"
 msgstr ""
+"Crea una nueva escena vacía, añade un CanvasLayer como nodo raíz y añádele "
+"un script. Luego, añádele dos nodos hijos: un botón y un nodo HTTPRequest. "
+"Deberás conectar las siguientes señales al script de CanvasLayer:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:16
 msgid "Button.pressed: When the button is pressed, we will start the request."
 msgstr ""
+"Button.pressed: Cuando se presione el botón, comenzaremos la solicitud."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:17
 msgid ""
 "HTTPRequest.request_completed: When the request is completed, we will get "
 "the requested data as an argument."
 msgstr ""
+"HTTPRequest.request_completed: Cuando se complete la solicitud, obtendremos "
+"los datos solicitados como un argumento."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:24
 msgid ""
@@ -50890,18 +51478,26 @@ msgid ""
 "API mocker; it returns a pre-defined JSON string, which we will then parse "
 "to get access to the data."
 msgstr ""
+"Abajo se muestra todo el código que necesitamos para que funcione. La URL "
+"apunta a una API mocker en línea; devuelve una cadena JSON predefinida, que "
+"luego analizaremos para obtener acceso a los datos."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:40
 msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
 msgstr ""
+"Con esto, deberías ver ``(hello:world)`` impreso en la consola; hello es una "
+"clave, y world es un valor, ambas son cadenas."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:42
 msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
 msgstr ""
+"Para obtener más información sobre el análisis de JSON, mira las referencias "
+"de clase para :ref:`JSON <class_JSON>` y :ref:`JSONParseResult "
+"<class_JSONParseResult>`."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:44
 msgid ""
@@ -50909,6 +51505,10 @@ msgid ""
 "``RESULT_SUCCESS`` and whether a JSON parsing error occurred, see the JSON "
 "class reference and :ref:`HTTPRequest <class_HTTPRequest>` for more."
 msgstr ""
+"Nota que es posible que quieras comprobar si el ``resultado`` es igual a "
+"``RESULT_SUCCESS`` y si se produjo un error de análisis JSON, mira la "
+"referencia de clase de JSON y :ref:`HTTPRequest <class_HTTPRequest>` para "
+"obtener más información."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:46
 msgid ""
@@ -50917,12 +51517,20 @@ msgid ""
 "\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
 "header) you could use the following:"
 msgstr ""
+"Por supuesto, también puedes establecer encabezados HTTP personalizados. "
+"Estos se dan como un array de cadenas, con cada cadena conteniendo un "
+"encabezado en el formato ``\"encabezado:valor\"``. Por ejemplo, para "
+"establecer un agente de usuario personalizado (el encabezado de ``agente-"
+"usuario`` de HTTP) puedes usar lo siguiente:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:53
 msgid ""
 "Please note that for SSL/TLS encryption and thus HTTPS URLs to work you may "
 "need to take some steps as described :ref:`here <doc_ssl_certificates>`."
 msgstr ""
+"Nota por favor, que para que el cifrado SSL/TLS y, por tanto, las URL HTTPS "
+"funcionen, es posible que necesites realizar algunos pasos, tal como se "
+"describe :ref:`aquí <doc_ssl_certificates>`."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:55
 msgid ""
@@ -50933,10 +51541,17 @@ msgid ""
 "access credentials inside your game. Avoid providing information useful to "
 "an attacker whenever possible."
 msgstr ""
+"Además, cuando llames APIs usando autorización, sé consciente que alguien "
+"puede analizar y descompilar tu aplicación lanzada y, por tanto, puede "
+"obtener acceso a cualquier información de autorización incrustada como "
+"tokens, nombres de usuario o contraseñas. Eso significa que generalmente no "
+"es una buena idea incluir cosas como las credenciales de acceso a la base de "
+"datos dentro de tu juego. Evita proporcionar información útil para un "
+"atacante siempre que sea posible."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:59
 msgid "Sending data to server"
-msgstr ""
+msgstr "Enviando datos al servidor"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:61
 msgid ""
@@ -50944,10 +51559,12 @@ msgid ""
 "what if you need to send data to the server? Here is a common way of doing "
 "it:"
 msgstr ""
+"Hasta ahora nos hemos limitado a solicitar datos de un servidor. Pero, ¿Qué "
+"si necesitas enviar datos al servidor? Aquí hay una forma común de hacerlo:"
 
 #: ../../docs/tutorials/networking/http_client_class.rst:4
 msgid "HTTP client class"
-msgstr ""
+msgstr "Clase cliente HTTP"
 
 #: ../../docs/tutorials/networking/http_client_class.rst:6
 msgid ""
@@ -50956,20 +51573,27 @@ msgid ""
 "look at :ref:`HTTPRequest <class_HTTPRequest>` first, which has a tutorial "
 "available :ref:`here <doc_http_request_class>`."
 msgstr ""
+":ref:`HTTPClient <class_HTTPClient>` proporciona acceso de bajo nivel a la "
+"comunicación HTTP. Para una interfaz de más alto nivel, es posible que "
+"desees echarle un vistazo a :ref:`HTTPRequest <class_HTTPRequest>` primero, "
+"que tiene un tutorial disponible :ref:`aquí <doc_http_request_class>`."
 
 #: ../../docs/tutorials/networking/http_client_class.rst:10
 msgid ""
 "Here's an example of using the :ref:`HTTPClient <class_HTTPClient>` class. "
 "It's just a script, so it can be run by executing:"
 msgstr ""
+"Aquí hay un ejemplo del uso de la clase :ref:`HTTPClient "
+"<class_HTTPClient>`. Es solo un script, por lo que se puede correr "
+"ejecutando:"
 
 #: ../../docs/tutorials/networking/http_client_class.rst:17
 msgid "It will connect and fetch a website."
-msgstr ""
+msgstr "Se conectará y buscará un sitio web."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:4
 msgid "SSL certificates"
-msgstr ""
+msgstr "Certificados SSL"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:9
 msgid ""
@@ -50979,18 +51603,28 @@ msgid ""
 "around it. The :ref:`HTTPClient <class_HTTPClient>` class also supports "
 "HTTPS by using this same wrapper."
 msgstr ""
+"A menudo se desea usar conexiones SSL para las comunicaciones para evitar "
+"ataques \"man in the middle\"(hombre en el medio). Godot tiene una envoltura "
+"de conexión, :ref:`StreamPeerSSL <class_StreamPeerSSL>`, que puede tomar una "
+"conexión regular y añadir seguridad a su alrededor. La clase :ref:"
+"`HTTPClient <class_HTTPClient>` también soporta HTTPS utilizando esta misma "
+"envoltura."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:16
 msgid ""
 "For SSL to work, certificates need to be provided. A .crt file must be "
 "specified in the project settings:"
 msgstr ""
+"Para que SSL funcione, es necesario proporcionar certificados. Se debe "
+"especificar un archivo.crt en los ajustes del proyecto:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:21
 msgid ""
 "This file should contain any number of public certificates in https://en."
 "wikipedia.org/wiki/Privacy-enhanced_Electronic_Mail format."
 msgstr ""
+"Este archivo debe contener cualquier número de certificados públicos en "
+"formato `PEM <https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail>`."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:24
 msgid ""
@@ -51002,11 +51636,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:29
 msgid "There are two ways to obtain certificates:"
-msgstr ""
+msgstr "Hay dos formas de obtener certificados:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:32
 msgid "Approach 1: self signed cert"
-msgstr ""
+msgstr "Enfoque 1: certificado autofirmado"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:34
 msgid ""
@@ -51014,6 +51648,9 @@ msgid ""
 "and put the public pair in the .crt file (again, in PEM format). The private "
 "key should go to your server."
 msgstr ""
+"El primer enfoque es el más simple: genera un par de claves privadas y "
+"públicas, y pon el par público en el archivo.crt (de nuevo, en formato PEM). "
+"La clave privada debe ir a tu servidor."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:38
 msgid ""
@@ -51022,10 +51659,14 @@ msgid ""
 "not require domain validation** nor requires you to spend a considerable "
 "amount of money in purchasing certificates from a CA."
 msgstr ""
+"OpenSSL tiene `algo de documentación <https://raw.githubusercontent.com/"
+"openssl/openssl/master/doc/HOWTO/keys.txt>`__ sobre esto. Este enfoque "
+"también **no requiere validación de dominio** ni requiere que tu gastes una "
+"cantidad considerable de dinero en la compra de certificados de una CA."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:45
 msgid "Approach 2: CA cert"
-msgstr ""
+msgstr "Enfoque 2: certificado CA"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:47
 msgid ""
@@ -51033,6 +51674,9 @@ msgid ""
 "Verisign, Geotrust, etc. This is a more cumbersome process, but it's more "
 "\"official\" and ensures your identity is clearly represented."
 msgstr ""
+"El segundo enfoque consiste en utilizar una autoridad de certificación (CA) "
+"como Verisign, Geotrust, etc. Este es un proceso más engorroso, pero es más "
+"\"oficial\" y asegura que tu identidad está claramente representada."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:52
 msgid ""
@@ -51040,6 +51684,10 @@ msgid ""
 "connect to someone else's servers (i.e., connecting to Google or some other "
 "REST API provider via HTTPS) this method is not as useful."
 msgstr ""
+"A menos que estés trabajando con grandes empresas o corporaciones, o "
+"necesites conectarte a los servidores de otra persona (es decir, conectarte "
+"a Google o a algún otro proveedor de REST API a través de HTTPS), este "
+"método no es tan útil."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:56
 msgid ""
@@ -51047,24 +51695,34 @@ msgid ""
 "ensure the domain you are connecting to is the one intended, otherwise any "
 "website can issue any certificate in the same CA and it will work."
 msgstr ""
+"Además, cuando se utiliza un certificado emitido por CA, **debes habilitar "
+"la validación de dominio**, para asegurarte de que el dominio al que te "
+"estás conectando es el deseado, de lo contrario cualquier sitio web puede "
+"emitir cualquier certificado en la misma CA y funcionará."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:61
 msgid ""
 "If you are using Linux, you can use the supplied certs file, generally "
 "located in:"
 msgstr ""
+"Si estás usando Linux, puedes usar el archivo certs suministrado, "
+"generalmente ubicado en:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:68
 msgid ""
 "This file allows HTTPS connections to virtually any website (i.e., Google, "
 "Microsoft, etc.)."
 msgstr ""
+"Este archivo permite conexiones HTTPS a prácticamente cualquier sitio web "
+"(por ejemplo, Google, Microsoft, etc.)."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:71
 msgid ""
 "Or pick any of the more specific certificates there if you are connecting to "
 "a specific one."
 msgstr ""
+"O elije cualquiera de los certificados más específicos si te estás "
+"conectando a uno específico."
 
 #: ../../docs/tutorials/assetlib/index.rst:2
 msgid "Asset Library"
@@ -62477,7 +63135,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:367
 msgid "Overview of the interface and common vocabulary"
-msgstr ""
+msgstr "Visión general de la interfaz y vocabulario común"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:369
 msgid ""
@@ -62519,7 +63177,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:391
 msgid "Image Contribution guidelines"
-msgstr ""
+msgstr "Pautas para la contribución de imágenes"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:393
 msgid ""
@@ -62548,6 +63206,8 @@ msgid ""
 "When you need to highlight an area of the editor to show something, like a "
 "button or option, use a 2 pixel thick outline without a bevel."
 msgstr ""
+"Cuando necesites resaltar un área del editor para mostrar algo, como un "
+"botón o una opción, utiliza un contorno de 2 píxeles de grosor sin bisel."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:406
 msgid ""
@@ -62560,7 +63220,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:4
 msgid "Contribute to the Class Reference"
-msgstr ""
+msgstr "Contribuir a la Referencia de Clases"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:6
 msgid ""
@@ -62633,13 +63293,15 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:32
 msgid "Get started with GitHub"
-msgstr ""
+msgstr "Comenzar con GitHub"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:34
 msgid ""
 "If you're new to git and GitHub, this guide will help you get started. "
 "You'll learn to:"
 msgstr ""
+"Si eres nuevo en git y GitHub, esta guía te ayudará a empezar. Aprenderás a "
+"hacerlo:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:36
 msgid "Fork and clone Godot's repository"
@@ -62670,7 +63332,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:47
 msgid "Clone the repository on your computer:"
-msgstr ""
+msgstr "Clonar el repositorio en tu computadora:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:53
 msgid ""
@@ -62717,6 +63379,8 @@ msgid ""
 "Each time you want to sync your branch to the state of the upstream "
 "repository, enter:"
 msgstr ""
+"Cada vez que quieras sincronizar tu rama con el estado del repositorio "
+"upstream, introduce:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:94
 msgid ""
@@ -62729,6 +63393,8 @@ msgid ""
 "If you made changes you don't want to keep in your local branch, use the "
 "following commands instead:"
 msgstr ""
+"Si has hecho cambios que no quieres mantener en tu rama local, usa en su "
+"lugar los siguientes comandos:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:103
 msgid ""
@@ -62752,7 +63418,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:117
 msgid "Updating the documentation template"
-msgstr ""
+msgstr "Actualización de la plantilla de documentación"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:119
 msgid ""
@@ -62774,7 +63440,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:132
 msgid "You are now ready to edit this file to add stuff."
-msgstr ""
+msgstr "Ahora estás listo para editar este archivo y añadir cosas."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:134
 msgid ""
@@ -62819,7 +63485,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:157
 msgid "How to edit class XML"
-msgstr ""
+msgstr "Cómo editar una clase XML"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:159
 msgid ""
@@ -62851,7 +63517,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:168
 msgid "Our job is to add the missing text between these marks:"
-msgstr ""
+msgstr "Nuestro trabajo es añadir el texto que falta entre estas marcas:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:170
 msgid "<description></description>"
@@ -62887,7 +63553,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:179
 msgid "Here's how a class looks like in XML:"
-msgstr ""
+msgstr "Así es como se ve una clase en XML:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:218
 msgid ""
@@ -62897,7 +63563,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:222
 msgid "Improve formatting with BBcode style tags"
-msgstr ""
+msgstr "Mejorar el formato con etiquetas de estilo BBcode"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:224
 msgid ""
@@ -62907,11 +63573,11 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
 msgid "Effect"
-msgstr ""
+msgstr "Efecto"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
 msgid "Result"
-msgstr ""
+msgstr "Resultado"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "[Class]"
@@ -62919,7 +63585,7 @@ msgstr "[Class]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "Link a class"
-msgstr ""
+msgstr "Enlazar a una clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "Move the [Sprite]."
@@ -62935,7 +63601,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Link to a method in this class"
-msgstr ""
+msgstr "Enlazar a un método de esta clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Call [method hide]."
@@ -62964,7 +63630,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid "Link to a member in this class"
-msgstr ""
+msgstr "Enlazar a un miembro de esta clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid "Get [member scale]."
@@ -62981,7 +63647,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Link to another class's member"
-msgstr ""
+msgstr "Enlazar a otro miembro de la clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Get [member Node2D.scale]."
@@ -62993,7 +63659,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Link to a signal in this class"
-msgstr ""
+msgstr "Enlazar con una señal de esta clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Emit [signal renamed]."
@@ -63022,7 +63688,7 @@ msgstr "[b] [/b]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Bold"
-msgstr ""
+msgstr "Negrita"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Some [b]bold[/b] text."
@@ -63038,7 +63704,7 @@ msgstr "[i] [/i]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Italic"
-msgstr ""
+msgstr "Cursiva"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Some [i]italic[/i] text."
@@ -63074,7 +63740,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "*See below.*"
-msgstr ""
+msgstr "*Ver a continuación.*"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid ""
@@ -63095,6 +63761,8 @@ msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
+"No hay problema. Déjalo atrás, y enumera los métodos que omitiste cuando "
+"solicitaste un pull de tus cambios. Otro redactor se encargará de ello."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:276
 msgid ""
@@ -63112,6 +63780,9 @@ msgid ""
 "Before we translate the documentation, we need to complete and proof-read it "
 "in English. We'll work on localization when we get past 90% completion."
 msgstr ""
+"Antes de traducir la documentación, necesitamos completarla y revisarla en "
+"inglés. Trabajaremos en la localización cuando hayamos superado el 90% del "
+"proceso."
 
 #: ../../docs/community/channels.rst:4
 msgid "Channels"
@@ -63128,12 +63799,16 @@ msgid ""
 "Note that some of these channels are run and moderated by members of the "
 "Godot community or third parties."
 msgstr ""
+"Hay que tener en cuenta que algunos de estos canales son administrados y "
+"moderados por miembros de la comunidad Godot o terceros."
 
 #: ../../docs/community/channels.rst:10
 msgid ""
 "A brief overview over these channels is also available on the `website "
 "<https://godotengine.org/community>`_."
 msgstr ""
+"Una breve reseña sobre estos canales también está disponible en el `sitio "
+"web <https://godotengine.org/community>`_."
 
 #: ../../docs/community/channels.rst:13
 msgid "Q & A"
@@ -63145,12 +63820,13 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:18
 msgid "IRC on Freenode"
-msgstr ""
+msgstr "IRC en Freenode"
 
 #: ../../docs/community/channels.rst:20
 msgid ""
 "`General: #godotengine <http://webchat.freenode.net/?channels=#godotengine>`_"
 msgstr ""
+"`General: #godotengine <http://webchat.freenode.net/?channels=#godotengine>`_"
 
 #: ../../docs/community/channels.rst:21
 msgid ""
@@ -63169,12 +63845,16 @@ msgid ""
 "`GDNative: #godotengine-gdnative <http://webchat.freenode.net/?"
 "channels=#godotengine-gdnative>`_"
 msgstr ""
+"`GDNative: #godotengine-gdnative <http://webchat.freenode.net/?"
+"channels=#godotengine-gdnative>`_"
 
 #: ../../docs/community/channels.rst:24
 msgid ""
 "`Webseite/PR: #godotengine-atelier <http://webchat.freenode.net/?"
 "channels=#godotengine-atelier>`_"
 msgstr ""
+"`Webseite/PR: #godotengine-atelier <http://webchat.freenode.net/?"
+"channels=#godotengine-atelier>`_"
 
 #: ../../docs/community/channels.rst:25
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
@@ -63188,6 +63868,7 @@ msgstr "Otros chats"
 msgid ""
 "`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 msgstr ""
+"`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 
 #: ../../docs/community/channels.rst:31
 msgid "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
@@ -63219,7 +63900,7 @@ msgstr "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 
 #: ../../docs/community/channels.rst:41
 msgid "`Steam <https://steamcommunity.com/app/404790>`_"
-msgstr ""
+msgstr "`Steam <https://steamcommunity.com/app/404790>`_"
 
 #: ../../docs/community/channels.rst:44
 msgid "Forum"
@@ -63246,24 +63927,32 @@ msgid ""
 "`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
 "playlists>`_"
 msgstr ""
+"`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
+"playlists>`_"
 
 #: ../../docs/community/tutorials.rst:12
 msgid ""
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
 "playlists>`_"
 msgstr ""
+"`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
+"playlists>`_"
 
 #: ../../docs/community/tutorials.rst:13
 msgid ""
 "`Game from Scratch: Godot 3 Tutorial Series <https://www.youtube.com/watch?"
 "v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 msgstr ""
+"`Game from Scratch: Godot 3 Tutorial Series <https://www.youtube.com/watch?"
+"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 
 #: ../../docs/community/tutorials.rst:14
 msgid ""
 "`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
 "m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
 msgstr ""
+"`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
+"m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
 
 #: ../../docs/community/tutorials.rst:15
 msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"

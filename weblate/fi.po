@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-06-18 06:41+0000\n"
+"PO-Revision-Date: 2018-06-23 08:37+0000\n"
 "Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -17059,7 +17059,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
@@ -17077,12 +17077,20 @@ msgid ""
 "they will inherit their transform. This means that when moving the parent, "
 "the children will be moved too."
 msgstr ""
+"Tavalliset 2D-solmut, kuten :ref:`Node2D <class_Node2D>` ja :ref:`Control "
+"<class_Control>`, periytyvät :ref:`CanvasItem <class_CanvasItem>` solmusta, "
+"joka on kaikkien 2D-solmujen perusta. CanvasItemit voidaan järjestää "
+"puurakenteisiin ja ne perivät muunnoksensa ylemmältä tasolta. Tämä "
+"tarkoittaa, että siirtämällä yhtä solmua myös kaikki sen alisolmut siirtyvät "
+"sen mukana."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
 msgid ""
 "These nodes are placed as direct or indirect children to a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
 msgstr ""
+"Nämä solmut asetetaan suoraan tai epäsuorasti :ref:`Viewport "
+"<class_Viewport>` solmun alle, jolloin ne näytetään sen lävitse."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -17092,6 +17100,11 @@ msgid ""
 "transform. Nodes such as :ref:`Camera2D <class_Camera2D>`, work by changing "
 "that transform."
 msgstr ""
+"Viewport-solmulla on ominaisuus :ref:`Viewport.canvas_transform "
+"<class_Viewport_canvas_transform>`, joka mahdollistaa koko CanvasItem-"
+"hierarkian muuntamisen mukautetulla :ref:`Transform2D <class_Transform2D>` "
+"muunnoksella. Sellaiset solmut kuten :ref:`Camera2D <class_Camera2D>` "
+"toimivat muuttamalla tuota muunnosta."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -17100,6 +17113,11 @@ msgid ""
 "transform is a simple matrix that offsets the whole 2D drawing, so it's the "
 "most efficient way to do scrolling."
 msgstr ""
+"Canvas-muunnoksen muuttaminen on hyödyllistä, koska se on paljon "
+"tehokkaampaa kuin koko piirtoalueena toimivan pääsolmun (ja samalla koko "
+"skenen) siirtäminen. Canvas-muunnos on yksinkertainen matriisi, joka siirtää "
+"koko 2D-piirtoa tietyn poikkeaman verran, joten se on tehokkain tapa "
+"vierittää ruutua."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid "Not enough..."

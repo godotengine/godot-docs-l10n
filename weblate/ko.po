@@ -9,6 +9,7 @@
 # MJ Kim <mjnkim@protonmail.com>, 2018.
 # pgyage3263 <pgyage3263@naver.com>, 2018.
 # Sun Kim <perplexingsun@gmail.com>, 2018.
+# 이용재 <lyj7339@gmail.com>, 2018.
 # 박한얼 <volzhs@gmail.com>, 2018.
 # 송태섭 <xotjq237@gmail.com>, 2018.
 #
@@ -17,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-06-18 06:42+0000\n"
+"PO-Revision-Date: 2018-06-28 16:16+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -39,7 +40,7 @@ msgid ""
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
 "이 문서는 불안정한 (master) 브랜치입니다. **안정된** 브랜치의 문서를 찾으시나"
-"요? <http://docs.godotengine.org/en/stable>`_로 가세요."
+"요? <http://docs.godotengine.org/en/stable>`_ 로 가세요."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -51,8 +52,8 @@ msgid ""
 msgstr ""
 "커뮤니티 기반으로 개발되는 자유 오픈소스 2D & 3D 게임 엔진 Godot Engine의 공"
 "식 문서에 오신 것을 환영합니다! 처음 오셨다면 :ref:`소개 페이지"
-"<doc_about_intro>`를 읽어보시고 저희 문서가 전반적으로 무엇을 제공하는지 파악"
-"해보시기를 권장해드립니다."
+"<doc_about_intro>` 를 읽어보시고 저희 문서가 전반적으로 무엇을 제공하는지 파"
+"악해보시기를 권장해드립니다."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -86,11 +87,12 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"`깃허브 저장소 <https://github.com/godotengine/godot-docs/issues>`_에서 이슈"
+"`깃허브 저장소 <https://github.com/godotengine/godot-docs/issues>`_ 에서 이슈"
 "를 제출하거나, `문서 현지화 <https://hosted.weblate.org/engage/godot-engine/"
-">`_를 돕거나, `디스코드 <https://discord.gg/zH7NUgz>`_의 ``#documentation``이"
-"나 `irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
-"doc>`_의 ``#godotengine-doc``에서 저희와 함께 논의를 할 수도 있습니다!"
+">`_ 를 돕거나, `디스코드 <https://discord.gg/zH7NUgz>`_ 의 "
+"``#documentation`` 이나 `irc.freenode.net <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_ 의 ``#godotengine-doc`` 에서 저희와 함께 논의를 "
+"할 수도 있습니다!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -209,8 +211,8 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
-"게임 엔진은 복잡한 도구인 만큼 Godot만을 단 몇 마디로 소개하기는 어렵습니다. "
-"그래도 우리는 다음과 같은 홍보 문구를 씁니다. Godot Engine을 소개하는 짧은 글"
+"게임 엔진은 복잡한 도구인 만큼 Godot을 단 몇 마디로 표현하기는 어렵습니다. 그"
+"래도 우리는 다음과 같은 홍보 문구를 씁니다. Godot Engine을 소개하는 짧은 글"
 "이 필요하다면 이 내용을 자유롭게 가져다 쓰셔도 됩니다."
 
 #: ../../docs/about/introduction.rst:27
@@ -226,8 +228,8 @@ msgstr ""
 "여러 기능으로 가득 찬 크로스 플랫폼 게임 엔진입니다. 이 엔진은 사용자가 일반"
 "적인 기능을 처음부터 구축할 필요 없이 게임을 만드는 데 집중할 수 있도록 종합"
 "적인 도구들을 제공합니다. 만든 게임은 클릭 한 번으로 주요 데스크톱 플랫폼(리"
-"눅스, 맥OS, 윈도우)은 물론 모바일 (안드로이드, iOS) 및 웹 기반 (HTML 5) 플랫"
-"폼으로 내보낼 수 있습니다."
+"눅스, 맥OS, 윈도우)은 물론 모바일(안드로이드, iOS) 및 웹 기반(HTML 5) 플랫폼"
+"으로 내보낼 수 있습니다."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -242,7 +244,7 @@ msgstr ""
 "다른 조건도 없고 로열티 요구도 없습니다. 엔진 사용자가 만든 게임은 엔진 코드"
 "의 마지막 줄까지 사용자의 소유입니다. Godot의 개발은 독립적이고 커뮤니티가 주"
 "도하기 때문에 사용자들 스스로 원하는 대로 엔진의 발전을 도울 수 있습니다. "
-"Godot는 `소프트웨어 자유 단체 <https://sfconservancy.org>`_로부터 비영리 운"
+"Godot는 `소프트웨어 자유 단체 <https://sfconservancy.org>`_ 로부터 비영리 운"
 "영 지원을 받습니다."
 
 #: ../../docs/about/introduction.rst:41
@@ -270,8 +272,8 @@ msgstr ""
 "이 문서는 Godot Engine 커뮤니티 멤버들이 지속적으로 쓰고, 교정하고, 편집하"
 "고, 개정하고 있습니다. 문서는 `reStructuredText <http://www.sphinx-doc.org/"
 "en/stable/rest.html>` 마크업 언어로 된 텍스트 파일로 편집한 뒤 오픈 소스 툴"
-"인 `Sphinx <http://www.sphinx-doc.org>`와 `ReadTheDocs <https://readthedocs."
-"org/>`를 사용해 정적 웹사이트/오프라인 문서로 컴파일됩니다."
+"인 `Sphinx <http://www.sphinx-doc.org>` 와 `ReadTheDocs <https://readthedocs."
+"org/>` 를 사용해 정적 웹사이트/오프라인 문서로 컴파일됩니다."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -282,9 +284,9 @@ msgid ""
 "docs/>`_."
 msgstr ""
 "Godot 문서에 기여하려면 GitHub `소스 저장소 <https://github.com/godotengine/"
-"godot-docs>`_에서 이슈를 열거나 풀 리퀘스트로 패치를 보내거나, `Hosted "
-"Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/>`_에서 "
-"사용하는 언어로 번역할 수 있습니다."
+"godot-docs>`_ 에서 이슈를 열거나 풀 리퀘스트로 패치를 보내거나, `Hosted "
+"Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/>`_ 에"
+"서 사용하는 언어로 번역할 수 있습니다."
 
 #: ../../docs/about/introduction.rst:61
 msgid ""
@@ -317,7 +319,7 @@ msgid ""
 "also contains the :ref:`doc_faq`."
 msgstr ""
 ":ref:`sec-general` 섹션은 이 소개문과 엔진의 역사, 라이선스, 제작자 등 기본적"
-"인 정보를 담고 있습니다. :ref:`doc_faq`도 여기 속합니다."
+"인 정보를 담고 있습니다. :ref:`doc_faq` 도 여기 속합니다."
 
 #: ../../docs/about/introduction.rst:75
 msgid ""
@@ -336,8 +338,8 @@ msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
-"반면 :ref:`sec-tutorials` 섹션은 필요한 순서대로 읽을 수 있습니다. 이 섹션에"
-"는 특정 기능 관련 튜토리얼과 문서가 많이 있습니다."
+"반면 :ref:`sec-tutorials` 섹션은 순서에 상관 없이 필요에 따라 읽을 수 있습니"
+"다. 이 섹션에는 특정 기능 관련 튜토리얼과 문서가 많이 있습니다."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -369,10 +371,10 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
-"마지막으로 :ref:`sec-class-ref`는 Godot API 문서로 엔진의 스크립트 에디터에서"
-"도 바로 읽어볼 수 있습니다. 이 섹션은 엔진 소스 저장소에 있는 파일에서 자동으"
-"로 생성되기 때문에 생성된 문서 파일은 직접 수정하지 않습니다. 자세한 내용은 :"
-"ref:`doc_updating_the_class_reference`을 확인하세요."
+"마지막으로 :ref:`sec-class-ref` 는 Godot API 문서로 엔진의 스크립트 에디터에"
+"서도 바로 읽어볼 수 있습니다. 이 섹션은 엔진 소스 저장소에 있는 파일에서 자동"
+"으로 생성되기 때문에 생성된 문서 파일은 직접 수정하지 않습니다. 자세한 내용"
+"은 :ref:`doc_updating_the_class_reference` 을 확인하세요."
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -381,7 +383,7 @@ msgid ""
 "projects>`_."
 msgstr ""
 "이 문서 외에 여러가지 `Godot 데모 프로젝트들 <https://github.com/godotengine/"
-"godot-demo-projects>`_도 살펴보면 좋습니다."
+"godot-demo-projects>`_ 도 살펴보면 좋습니다."
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
@@ -404,8 +406,8 @@ msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
-"Godot는 `OSI가 인정한 <https://opensource.org/licenses/MIT>`_ MIT 라이선스로 "
-"사용할 수 있는 무료/자유 오픈 소스 소프트웨어입니다."
+"Godot는 `OSI가 인정한 <https://opensource.org/licenses/MIT>`_  MIT 라이선스"
+"로 사용할 수 있는 무료/자유 오픈 소스 소프트웨어입니다."
 
 #: ../../docs/about/faq.rst:11
 msgid ""
@@ -439,7 +441,7 @@ msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
-"자세한 내용은 `여기 <https://tldrlegal.com/license/mit-license>`를 참고하거"
+"자세한 내용은 `여기 <https://tldrlegal.com/license/mit-license>`_ 를 참고하거"
 "나 변호사에게 문의하세요."
 
 #: ../../docs/about/faq.rst:21
@@ -473,8 +475,8 @@ msgid ""
 "files in the Godot repository."
 msgstr ""
 "전체 세부사항은 Godot 저장소에 있는 `COPYRIGHT.txt <https://github.com/"
-"godotengine/godot/blob/master/COPYRIGHT.txt>`_와 `LICENSE.txt <https://"
-"github.com/godotengine/godot/blob/master/LICENSE.txt>`_, `LOGO_LICENSE.txt "
+"godotengine/godot/blob/master/COPYRIGHT.txt>`_ 와 `LICENSE.txt <https://"
+"github.com/godotengine/godot/blob/master/LICENSE.txt>`_ , `LOGO_LICENSE.txt "
 "<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ 파일을 "
 "참고하세요."
 
@@ -483,7 +485,7 @@ msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"`Godot 웹사이트의 라이선스 페이지 <https://godotengine.org/license>`_도 참고"
+"`Godot 웹사이트의 라이선스 페이지 <https://godotengine.org/license>`_ 도 참고"
 "하세요."
 
 #: ../../docs/about/faq.rst:34
@@ -552,8 +554,8 @@ msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
-"더 자세한 정보는 :ref:`내보내기 <toc-learn-workflow-export>`와 :ref:`Godot 직"
-"접 컴파일하기 <toc-devel-compiling>`를 다루는 섹션을 참고하세요."
+"더 자세한 정보는 :ref:`내보내기 <toc-learn-workflow-export>` 와 :ref:`Godot "
+"직접 컴파일하기 <toc-devel-compiling>` 를 다루는 섹션을 참고하세요."
 
 #: ../../docs/about/faq.rst:60
 msgid "Which languages are supported in Godot?"
@@ -591,7 +593,7 @@ msgid ""
 "`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
 "github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"예를 들어 비공식 `Python <https://github.com/touilleMan/godot-python>`_과 "
+"예를 들어 비공식 `Python <https://github.com/touilleMan/godot-python>`_ 과 "
 "`Nim <https://github.com/pragmagic/godot-nim>`_ 바인딩 개발이 현재 진행되고 "
 "있습니다."
 
@@ -621,7 +623,6 @@ msgstr ""
 "를 사용해보고 그 장점을 직접 경험해보시길 권합니다."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
@@ -663,7 +664,7 @@ msgid ""
 "tutorial."
 msgstr ""
 "GDScript 또는 동적타입 언어에 익숙해지고 싶다면 :ref:"
-"`doc_gdscript_more_efficiently`튜토리얼을 참고하세요."
+"`doc_gdscript_more_efficiently` 튜토리얼을 참고하세요."
 
 #: ../../docs/about/faq.rst:105
 msgid "For the more technically versed, proceed to the next item."
@@ -747,7 +748,7 @@ msgid ""
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
 "Godot 에디터 플러그인 제작에 관한 정보는 :ref:`에디터 플러그인 제작 "
-"<doc_making_plugins>`과 tool 스크립트를 참고하세요."
+"<doc_making_plugins>` 과 tool 스크립트를 참고하세요."
 
 #: ../../docs/about/faq.rst:139
 msgid ""
@@ -779,7 +780,7 @@ msgstr ""
 #: ../../docs/about/faq.rst:146
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr ""
-"`GDNative가 여기 있습니다!<https://godotengine.org/article/dlscript-here>`_"
+"`GDNative가 여기 있습니다! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:148
 msgid ""
@@ -801,8 +802,8 @@ msgid ""
 "<https://opensource.org/licenses/MIT>`_ provided by Godot."
 msgstr ""
 "FBX SDK는 `제한적인 라이센스를 갖고 있기 때문에 <http://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>`, Godot의 `오픈 라이선스 <http://opensource.org/"
-"licenses/MIT>`_와 호환되지 않습니다."
+"Autodesk_FBX_License.rtf>` , Godot의 `오픈 라이선스 <http://opensource.org/"
+"licenses/MIT>`_ 와 호환되지 않습니다."
 
 #: ../../docs/about/faq.rst:158
 msgid ""
@@ -815,7 +816,7 @@ msgstr ""
 "그렇지만 Godot의 Collada 지원이 정말 좋기 때문에 Maya나 3DS Max를 사용한다면 "
 "가장 호환성이 좋은 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/"
 "wiki/OpenCOLLADA-Tools>`_ 내보내기 도구를 사용해주세요. Blender를 사용한다면 "
-"우리가 만든 `Better Collada Exporter <https://godotengine.org/download>`_를 "
+"우리가 만든 `Better Collada Exporter <https://godotengine.org/download>`_ 를 "
 "살펴보세요."
 
 #: ../../docs/about/faq.rst:164
@@ -918,8 +919,8 @@ msgid ""
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
 "this."
 msgstr ""
-"늘이기 옵션을 사용해보세요, 2D 늘이기는 형태를 유지하면서도 잘 작동됩니다. :"
-"ref:`doc_multiple_resolutions`튜토리얼에서 확인해보세요."
+"Godot에서 늘이기 옵션을 사용해보세요. 비율을 유지하는 2D 늘이기는 잘 작동됩니"
+"다. :ref:`doc_multiple_resolutions` 튜토리얼에서 확인해보세요."
 
 #: ../../docs/about/faq.rst:212
 msgid ""
@@ -928,8 +929,9 @@ msgid ""
 "there is a minimum one and you want black bars to appear instead. This is "
 "also explained in the previous step."
 msgstr ""
-"게임에서 화면비를 맞추고 싶다면, 아니면 의도적으로 화면비를 유지시키고 싶다"
-"면 최소 해상도를 정하십시오. 이 또한 전 단계에서 설명했습니다."
+"최소 해상도를 선택한 다음, 게임의 화면을 다른 화면비에 맞게 늘릴 것인지 또는 "
+"검정색 막대를 사용하여 화면비를 유지할 것인지를 정하십시오. 이 또한 이전 단계"
+"에서 설명했습니다."
 
 #: ../../docs/about/faq.rst:217
 msgid ""
@@ -937,8 +939,8 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
-"사용자 인터페이스에 대해서는, :ref:`anchoring <doc_size_and_anchors>`을 보고 "
-"컨트롤이 이동하거나 정지해야할 위치를 결정하세요. UI가 더 복잡하다면 "
+"사용자 인터페이스에 대해서는, :ref:`anchoring <doc_size_and_anchors>` 을 보"
+"고 컨트롤이 이동하거나 정지해야할 위치를 결정하세요. UI가 더 복잡하다면 "
 "Containers 사용을 고려해보세요."
 
 #: ../../docs/about/faq.rst:221
@@ -946,14 +948,13 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "다 됐습니다! 게임이 이제 다양한 해상도에서 작동합니다."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
 "to shrink images, and set that build to be used for certain screen sizes in "
 "the App Store or Google Play."
 msgstr ""
-"오래된 기기의 (가로 300화소도 안되는) 작은 화면에서도 게임이 작동하기를 정말 "
+"(가로 300화소도 안되는) 오래된 기기의 작은 화면에서도 게임이 작동하기를 정말 "
 "원하시다면, 내보내기를 통해 이미지를 수축시켜 앱스토어나 구글 플레이에 적합"
 "한 화면으로 만들 수 있습니다."
 
@@ -1119,7 +1120,7 @@ msgstr "어떻게 Godot 개발을 돕거나 후원할 수 있나요?"
 
 #: ../../docs/about/faq.rst:290
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ":ref:`doc_ways_to_contribute`를 참고하세요."
+msgstr ":ref:`doc_ways_to_contribute` 를 참고하세요."
 
 #: ../../docs/about/faq.rst:293
 msgid "Who is working on Godot? How can I contact you?"
@@ -1130,7 +1131,7 @@ msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
-"같은`Godot 웹사이트 <https://godotengine.org/contact>`_ 페이지에서 참고하세"
+"같은 `Godot 웹사이트 <https://godotengine.org/contact>`_ 페이지에서 참고하세"
 "요."
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
@@ -1235,7 +1236,7 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"오른쪽에 초록불이 들어오면, 엔진이 빈 폴더를 감지했다는 것이므로 ``생성``을 "
+"오른쪽에 초록불이 들어오면, 엔진이 빈 폴더를 감지했다는 것이므로 ``생성`` 을 "
 "누릅시다. Godot은 프로젝트를 만들고 에디터에서 열어볼 것입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
@@ -1277,7 +1278,7 @@ msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr "Godot 에디터의 첫 인상"
+msgstr "Godot 에디터와의 첫 만남"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -1316,7 +1317,7 @@ msgid ""
 "On the left side you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"왼쪽에는 **파일 시스템 독**이 있는데, 여기서 당신의 프로젝트 파일이나 에셋들"
+"왼쪽에는 **파일 시스템 독** 이 있는데, 여기서 당신의 프로젝트 파일이나 에셋들"
 "을 관리할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
@@ -1329,8 +1330,8 @@ msgid ""
 "On the right side you’ll find the **Scene dock** that lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
-"오른쪽에는 활성화된 씬의 내용물들을 보여주는 **씬 독**이 있고 바로 아래에는 "
-"**인스펙터**가 있습니다."
+"오른쪽에는 활성화된 씬의 내용물들을 보여주는 **씬 독** 이 있고 바로 아래에는 "
+"**인스펙터** 가 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:160
@@ -1343,7 +1344,7 @@ msgid ""
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"이동, 규모, 오브젝트 잠금을 할수 있는 **툴바**가 가운데 바로 위에 있습니다. "
+"이동, 규모, 오브젝트 잠금을 할수 있는 **툴바** 가 가운데 바로 위에 있습니다. "
 "툴바는 작업 공간마다 그 구성이 다릅니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
@@ -1357,7 +1358,7 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
-"**하단 패널**은 디버그 콘솔이나 애니메이션 편집, 오디오 믹서 등이 있고... 그"
+"**하단 패널** 은 디버그 콘솔이나 애니메이션 편집, 오디오 믹서 등이 있고... 그"
 "래서 많은 공간을 차지합니다. 그렇기에 이들은 기본적으로 닫혀 있는 상태입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
@@ -1379,7 +1380,7 @@ msgid ""
 "You’ll use the **2D workspace** for all types of games. On top of 2D games "
 "that is where you’ll build your interfaces. Press F1 to access it. |image15|"
 msgstr ""
-"당신은 모든 게임을 만들기 위해 **2D 작업 공간**을 사용하게 됩니다. 2D 게임에"
+"당신은 모든 게임을 만들기 위해 **2D 작업 공간** 을 사용하게 됩니다. 2D 게임에"
 "서 핵심인 인터페이스를 만들기 위한 곳이죠. 단축키는 F1입니다. |image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:109
@@ -1387,7 +1388,7 @@ msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
-"**3D 작업 공간**에서는, 3D 게임을 위한 메시와 빛, 레벨 디자인을 할 수 있습니"
+"**3D 작업 공간** 에서는, 3D 게임을 위한 메시와 빛, 레벨 디자인을 할 수 있습니"
 "다. 단축키는 F2입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
@@ -1425,8 +1426,8 @@ msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
-"마지막으로 **AssetLib**은 프로젝트에 쓰일 무료 애드온, 스크립트 그리고 에셋들"
-"이 있는 라이브러리입니다."
+"마지막으로 **AssetLib** 은 프로젝트에 쓰일 무료 애드온, 스크립트 그리고 에셋"
+"들이 있는 라이브러리입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
 msgid "Modify the interface"
@@ -1473,7 +1474,7 @@ msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
-"더 보기 좋은 에디터를 만들고 싶다면 ``에디터`` 메뉴의 ``에디터 설정``으로 가"
+"더 보기 좋은 에디터를 만들고 싶다면 ``에디터`` 메뉴의 ``에디터 설정`` 으로 가"
 "십시오."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
@@ -1488,8 +1489,8 @@ msgid ""
 "for your guests."
 msgstr ""
 "한번 당신이 더이상 게임 개발자가 아니라고 상상해보세요. 이제, 당신은 셰프입니"
-"다! 힙합 복장을 벗어 던지고 토크와 더블 브레스트 재킷을 입읍시다. 이제 게임"
-"을 만드는 대신, 손님을 위한 새롭고 맛있는 레시피를 만들어 봅시다."
+"다! 힙스터 복장을 벗어 던지고 토크와 더블 브레스트 재킷을 입는다고 말이죠. 이"
+"제 게임을 만드는 대신, 손님을 위한 새롭고 맛있는 레시피를 만들어 봅시다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -1500,7 +1501,7 @@ msgid ""
 msgstr ""
 "그럼, 어떻게 셰프가 레시피를 만들까요? 레시피는 두 가지 과정으로 나뉩니다: 첫"
 "째는 재료이고 둘째는 요리하는 방법입니다. 이렇게 한다면, 누구나 레시피에 따라"
-"서 훌륭한 창조물을 맛 볼 수 있을 겁니다."
+"서 훌륭한 음식을 맛 볼 수 있을 겁니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -1509,8 +1510,8 @@ msgid ""
 "full of fresh ingredients with which to cook."
 msgstr ""
 "Godot에서 게임을 만드는 것도 꽤나 요리하는 느낌입니다. 주방에서 요리를 하듯"
-"이 엔진을 사용합니다. 주방으로 본다면, *노드*는 요리를 하기 위한 신선한 재료"
-"들이 가득찬 냉장고로 볼수 있습니다."
+"이 엔진을 사용합니다. 주방으로 본다면, *노드* 는 요리를 하기 위한 신선한 재료"
+"들이 가득찬 냉장고로 볼 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
@@ -1518,7 +1519,7 @@ msgid ""
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
 "많은 타입의 노드들이 있습니다. 어떤거는 이미지를 보여주고, 아니면 소리를 재생"
-"하거나 혹은 3D 모델을 보여주는 것이 있습니다. 수십개나 말입니다."
+"하거나 혹은 3D 모델을 보여주는 것이 있습니다. 그것도 수십 개나 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/development/file_formats/tscn.rst:27
@@ -1689,7 +1690,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
-msgstr "그러기 위해, \"새 노드\" 버튼을 누르세요 (더하기 모양):"
+msgstr "그러기 위해, \"새 노드\" 버튼을 누르세요 (더하기 아이콘):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
@@ -1892,8 +1893,8 @@ msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
-":ref:`doc_scenes_and_nodes`에서 당신은 씬은 노드 들이 트리 형태로 결합된 모임"
-"이고, 하나의 노드가 트리 루트라고 배웠습니다."
+":ref:`doc_scenes_and_nodes` 에서 당신은 씬은 노드 들이 트리 형태로 결합된 모"
+"임이고, 하나의 노드가 트리 루트라고 배웠습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -1954,9 +1955,9 @@ msgid ""
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
 "이 프로젝트는 두 개의 씬을 갖고 있습니다: \"Ball.tscn\" 과  \"Main.tscn\" 이"
-"죠. 공 씬은 물리 행동을 주기 위해 :ref:`RigidBody2D <class_RigidBody2D>`를 사"
-"용하고 메인 씬은 (:ref:`StaticBody2D <class_StaticBody2D>`를 사용해) 공과 충"
-"돌하기 위한 장애물들이 있습니다."
+"죠. 공 씬은 물리 행동을 주기 위해 :ref:`RigidBody2D <class_RigidBody2D>` 를 "
+"사용하고 메인 씬은 (:ref:`StaticBody2D <class_StaticBody2D>` 를 사용해서) 공"
+"과 충돌하는 장애물들이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
@@ -1968,7 +1969,7 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
-"우리는 ``공``씬을 ``메인`` 씬의 자식으로 인스턴스하여 추가할 겁니다. \"사슬"
+"우리는 ``공`` 씬을 ``메인`` 씬의 자식으로 인스턴스하여 추가할 겁니다. \"사슬"
 "\" 모양 버튼을 누르세요 (커서를 올리면 \"씬 파일을 노드로 추가합니다.\" 라고 "
 "뜹니다.) 그리고 ``Ball.tscn`` 파일을 선택하세요."
 
@@ -2244,8 +2245,8 @@ msgid ""
 "`doc_gdscript`. Nowadays, Godot has four (yes, four!) official languages and "
 "the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Godot 3.0 이전에는, 스크립팅 하는 법이 :ref:`doc_gdscript`뿐 이었습니다. 지금"
-"은, Godot은 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 스크립트 언어"
+"Godot 3.0 이전에는, 스크립팅 하는 법이 :ref:`doc_gdscript` 뿐 이었습니다. 지"
+"금은, Godot은 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 스크립트 언어"
 "를 추가하는 기능도 있습니다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
@@ -2288,7 +2289,7 @@ msgid ""
 "Using it has some positive points compared to other languages due to its "
 "high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript`는 앞에서 말했듯, Godot에서 사용되는 메인 언어입니다. 이 "
+":ref:`doc_gdscript` 는 앞에서 말했듯, Godot에서 사용되는 메인 언어입니다. 이 "
 "언어는 다른 언어들에 비해 Godot과의 높은 통합성으로 인해 갖는 장점이 있습니"
 "다:"
 
@@ -2364,7 +2365,7 @@ msgid ""
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
-"3.0을 시작하면서, Godot은 :ref:`Visual Scripting<doc_what_is_visual_script>`"
+"3.0을 시작하면서, Godot은 :ref:`Visual Scripting<doc_what_is_visual_script>` "
 "을 제공합니다. 이것은 \"블록과 연결\" 언어의 일반적인 구현이지만, Godot의 작"
 "동 방식에 맞게 조정됬습니다."
 
@@ -2497,7 +2498,7 @@ msgstr "신호를 통해 UI요소들을 후크 하는 중입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:102
 msgid "Writing a script that can access other nodes in the scene."
-msgstr "씬(scene)의 다른 노드에 접근 할 수 있는 스크립트를 작성하는 중입니다."
+msgstr "씬의 다른 노드에 접근 할 수 있는 스크립트를 작성하는 중입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:104
 msgid ""
@@ -2506,23 +2507,23 @@ msgid ""
 "short, so it will not take more than a few minutes to get an overview of the "
 "concepts."
 msgstr ""
-"계속하기 전에 :ref:`doc_gdscript`레퍼런스를 반드시 읽어 보시기 바랍니다. 이 "
-"언어는 간단하게 설계되었고, 참조 문헌(reference)이 짧기 때문에 개념을 파악하"
-"는 데 몇분 정도 밖에 걸리지 않습니다."
+"계속하기 전에 :ref:`doc_gdscript` 레퍼런스를 반드시 읽어 보시기 바랍니다. 이 "
+"언어는 간단하게 설계되었고, 참조가 짧기 때문에 개념을 파악하는 데 몇 분 정도 "
+"밖에 걸리지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:80
 #: ../../docs/tutorials/animation/introduction_2d.rst:113
 msgid "Scene setup"
-msgstr "씬(Scene) 설정"
+msgstr "씬 설정"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:111
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
-"씬(Scene) 탭에서 액세스 하는 \"하위 노드 추가\"대화 상자를 사용하여(Ctrl+A), "
-"다음 노드로 계층을 생성합니다:"
+"씬 탭에서 액세스 하는 \"하위 노드 추가\" 다이얼로그를 사용하여 (Ctrl+A), 다"
+"음 노드로 계층을 생성합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:114
 msgid "Panel"
@@ -2539,19 +2540,19 @@ msgstr "버튼"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid "The scene tree should look like this:"
-msgstr "씬(Scene)트리는 다음과 같아야 합니다:"
+msgstr "씬 트리는 다음과 같아야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:123
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
-"2D편집기를 사용하여 Button 및 Label을 아래 이미지와 같이 배치하고 크기를 조정"
-"합니다. Inspector탭에서 텍스트를 설정할 수 있습니다."
+"2D 에디터를 사용하여 Button 과 Label을 아래 이미지와 같이 배치하고 크기를 조"
+"정합니다. 인스펙터 탭에서 텍스트를 설정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:128
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr "마지막으로,\"sayhello.tscn\"와 같은 이름으로 씬(Scene)을 저장합니다."
+msgstr "마지막으로, ``sayhello.tscn`` 와 같은 이름으로 씬을 저장합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:133
 msgid "Adding a script"
@@ -2562,24 +2563,24 @@ msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
-"패널 노드에서 마우스 오른쪽 버튼을 클릭한 다음 상황에 맞는 메뉴에서 \"스크립"
-"트 첨부\"를 선택합니다:"
+"패널 노드에서 마우스 오른쪽 버튼을 클릭하고, 메뉴에서 \"스크립트 붙이기\"를 "
+"선택합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:140
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
-"스크립트 생성 대화 상자가 나타날겁니다. 이 대화 상자에서 스크립트의 언어, 클"
-"래스 이름 및 기타 관련 옵션을 설정할 수 있습니다."
+"노드 스크립트 붙이기 다이얼로그가 나타날겁니다. 여기서 스크립트 언어, 클래스"
+"명 및 기타 관련 옵션을 설정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:143
 msgid ""
 "In GDScript the file itself represents the class, so the class name field is "
 "not editable."
 msgstr ""
-"GDScript에서 파일 자체는 클래스를 나타내므로 클래스 이름 필드는 편집할 수 없"
-"습니다."
+"GDScript에서 파일 자체는 클래스를 나타내므로 클래스명 부분은 편집할 수 없습니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid ""
@@ -2593,7 +2594,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid "Finally, enter a path name for the script and select Create:"
-msgstr "마지막으로 스크립트 경로 이름을 입력하고 Create(생성)을 선택합니다:"
+msgstr "마지막으로 스크립트 경로 이름을 입력하고 생성을 선택합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:154
 msgid ""
@@ -2601,8 +2602,8 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
-"그런 다음 스크립트가 생성되어 노드에 추가됩니다. 이 아이콘은 씬(scene)탭의 노"
-"드 옆에 있는 \"스크립트 열기\"아이콘뿐만 아니라 검사자 아래의 스크립트 속성에"
+"그런 다음 스크립트가 생성되어 노드에 추가됩니다. 이 아이콘은 씬 탭의 노드 옆"
+"에 있는 \"스크립트 열기\" 아이콘 뿐만 아니라 인스펙터 아래에 스크립트 속성에"
 "서도 볼 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:160
@@ -2612,7 +2613,7 @@ msgid ""
 "where a default template will be included:"
 msgstr ""
 "스크립트를 편집하려면 위 이미지에 강조 표시된 두 버튼 중 하나를 선택합니다. "
-"그러면 기본 템플릿이 포함된 스크립트 편집기로 이동할겁니다:"
+"그러면 기본 템플릿이 포함된 스크립트 에디터로 이동할겁니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:165
 msgid ""
@@ -2620,9 +2621,9 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
-"안에는 많은 내용이 있지 않습니다. ``_ready()`` 함수는 노드와 모든 자식들이 "
-"active scene으로 들어갈 때 호출됩니다. **참고:** ``_ready()``는 생성자가 아닙"
-"니다. 생성자는``_init()`` 대신합니다."
+"안에는 많은 내용이 있지 않습니다. ``_ready()`` 함수는 노드와 모든 자식들이 활"
+"성화된 씬으로 들어갈 때 호출됩니다. **참고:** ``_ready()`` 는 생성자가 아닙니"
+"다. 생성자는 ``_init()`` 대신합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:170
 msgid "The role of the script"
@@ -2690,8 +2691,8 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
-"\"BaseButton\" 밑에 있는 \"pressed()\"를 고르고 오른쪽 아래 \"연결하기...\"버"
-"튼을 누르신다면, 연결 생성 다이얼로그가 열릴겁니다."
+"\"BaseButton\" 밑에 있는 \"pressed()\"를 고르고 오른쪽 아래 \"연결하기...\" "
+"버튼을 누르신다면, 연결 생성 다이얼로그가 열릴겁니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
 msgid ""
@@ -2743,9 +2744,9 @@ msgid ""
 "the node that owns the script."
 msgstr ""
 "이것에 도달하기 위해서는, 우리는 아마도 가장 많이 Godot 프로그래머가 사용하"
-"는 기능을 소개할 겁니다: :ref:`Node.get_node() <class_Node_get_node>`. 이 기"
-"능은 스크립트를 소유한 노드라면 씬 내 어느 곳에서라도 경로를 사용해서 노드를 "
-"가져옵니다."
+"는 기능을 소개할 겁니다: :ref:`Node.get_node() <class_Node_get_node>` 입니"
+"다. 이 기능은 스크립트를 소유한 노드라면 씬 내 어느 곳에서라도 경로를 사용해"
+"서 노드를 가져옵니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:228
 msgid ""
@@ -2773,8 +2774,8 @@ msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_connect>`."
 msgstr ""
-"마지막으로 버튼의 \"누름\"신호를 \"ref:\"Object."
-"connect()<class_Object_connect>을 사용하여\"_Ready\"에 연결합니다."
+"마지막으로 버튼의 \"누름\" 신호를 :ref:`Object.connect() "
+"<class_Object_connect>` 을 사용하여 ``_Ready`` 에 연결합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:280
 msgid "The final script should look like this:"
@@ -2796,9 +2797,9 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
-"이 튜토리얼에 관한 흔한 오해는 ``get_node(path)``가 작동하는 방법입니다. 주어"
-"진 노드의 경우,``get_node(path)``는 직계 자식을 검색합니다. 위 코드에서 버튼"
-"은 패널의 자식임을 의미합니다. 만일 버튼이 패널이 아닌 라벨의 하위 항목이라"
+"이 튜토리얼에 관한 흔한 오해는 ``get_node(path)`` 가 작동하는 방법입니다. 주"
+"어진 노드의 경우,``get_node(path)`` 는 직계 자식을 검색합니다. 위 코드에서 버"
+"튼은 패널의 자식임을 의미합니다. 만일 버튼이 패널이 아닌 라벨의 하위 항목이라"
 "면 얻게 될 코드는 다음과 같습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:343
@@ -2854,9 +2855,9 @@ msgid ""
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
-"정적 프로세싱은 스크립트에서 :ref:`Node._process() <class_Node__process>`라"
+"정적 프로세싱은 스크립트에서 :ref:`Node._process() <class_Node__process>` 라"
 "는 메서드가 발견되면 활성화됩니다. :ref:`Node.set_process() "
-"<class_Node_set_process>`를 사용해서 이 기능을 끄거나 켤수 있습니다."
+"<class_Node_set_process>` 를 사용해서 이 기능을 끄거나 켤수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
@@ -2871,8 +2872,8 @@ msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
 msgstr ""
-"델타 매개 변수에는 이전 호출에서 ``_proceed()``로 이동한 이후 부터, 경과된 시"
-"간을 유동적인 소수점인 초 단위로 나타냅니다."
+"델타 매개 변수에는 이전 호출에서 ``_process()`` 로 이동한 이후 부터, 경과된 "
+"시간을 유동적인 소수점인 초 단위로 나타냅니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
@@ -2899,11 +2900,11 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
-"``_physics_process()``를 이용한 물리 처리는 이와 유사하지만, 이것은 캐릭터를 "
-"조작하는 과정 같이, 각각의 물리 단계 이전에서 반드시 발생하는 과정에 사용되어"
-"야 한다. 이것은 항상 물리 단계 이전에 실행되며 고정된 시간 간격으로 호출됩니"
-"다: 기본은 초 당 60번 입니다. 프로젝트 설정의 Physics->Common->Physics Fps에"
-"서 시간 간격을 변경할 수 있습니다."
+"``_physics_process()`` 를 이용한 물리 처리는 이와 유사하지만, 이것은 캐릭터"
+"를 조작하는 과정 같이, 각각의 물리 단계 이전에서 반드시 발생하는 과정에 사용"
+"되어야 한다. 이것은 항상 물리 단계 이전에 실행되며 고정된 시간 간격으로 호출"
+"됩니다: 기본은 초 당 60회 입니다. 프로젝트 설정의 Physics->Common->Physics "
+"Fps에서 시간 간격을 변경할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -2911,7 +2912,7 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
-"그러나``_proceed()`` 함수는 물리와 동기화되지 않습니다. 프레임률이 일정하지 "
+"그러나 ``_proceed()`` 함수는 물리와 동기화되지 않습니다. 프레임률이 일정하지 "
 "않고 하드웨어와 게임 최적화에 의존하기 때문입니다. 그것은 단일 스레드 게임의 "
 "물리 단계를 거친 후에 실행됩니다."
 
@@ -2956,15 +2957,15 @@ msgid ""
 "call_group() <class_SceneTree_call_group>`:"
 msgstr ""
 "이렇게 하면 플레이어가 비밀 기지에 몰래 들어간 것이 발견될 경우, :ref:"
-"`SceneTree.call_group() <class_SceneTree_call_group>`을 사용하여 모든 적에게 "
-"경보가 울린다는 사실을 알릴 수 있습니다:"
+"`SceneTree.call_group() <class_SceneTree_call_group>` 을 사용하여 모든 적에"
+"게 경보가 울린다는 사실을 알릴 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 msgid ""
 "The above code calls the function ``player_was_discovered`` on every member "
 "of the group ``enemies``."
 msgstr ""
-"위의 코드는 모든 ``enemies``의 ``player_was_discovered``함수를 호출합니다."
+"위의 코드는 모든 ``enemies`` 의 ``player_was_discovered`` 함수를 호출합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
 msgid ""
@@ -2972,8 +2973,8 @@ msgid ""
 "ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
 msgstr ""
 "또한 :ref:`SceneTree.get_nodes_in_group() "
-"<class_SceneTree_get_nodes_in_group>`을 호출하여``enemies`` 노드의 전체 목록"
-"을 가져올 수도 있습니다:"
+"<class_SceneTree_get_nodes_in_group>` 을 호출하여 ``enemies`` 노드의 전체 목"
+"록을 가져올 수도 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -2983,8 +2984,8 @@ msgid ""
 "and unpause it. It even comes with interesting signals. So check it out if "
 "you got some time!"
 msgstr ""
-":ref:`SceneTree<class_SceneTree>`의 클래스는 씬 들과 노드 계층 및 노드 그룹과"
-"의 상호 작용과 같은 다양한 유용한 방법들을 제공합니다. 이를 통해 씬 들을 쉽"
+":ref:`SceneTree<class_SceneTree>` 의 클래스는 씬 들과 노드 계층 및 노드 그룹"
+"과의 상호 작용과 같은 다양한 유용한 방법들을 제공합니다. 이를 통해 씬 들을 쉽"
 "게 전환하거나 다시 로드하여 게임을 종료하거나 일시 중지하거나 이를 해제할 수 "
 "있습니다. 그것은 심지어 흥미로운 신호를 동반합니다. 시간이 있으면 확인해 보십"
 "시오!"
@@ -3013,9 +3014,9 @@ msgid ""
 "ref>` shows the notifications it can receive. However, in most cases "
 "GDScript provides simpler overrideable functions."
 msgstr ""
-"\"ref:\"ClassReference<toc-class-ref\"의 각 클래스에 대한 문서는 수신 가능한 "
-"알림을 보여 줍니다. 그러나 대부분의 경우 GDScript는 보다 단순한 오버라이딩 할"
-"수 있는 함수들을 제공한다."
+":ref:`Class Reference <toc-class-ref>` 의 각 클래스에 대한 문서는 수신 가능"
+"한 알림을 보여 줍니다. 그러나 대부분의 경우 GDScript는 보다 단순한 오버라이"
+"딩 할수 있는 함수들을 제공한다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
@@ -3044,13 +3045,13 @@ msgid ""
 "class-based datatype. For example:"
 msgstr ""
 "코드를 사용하여 노드를 생성하려면 다른 클래스 기반 데이터 유형과 마찬가지로 "
-"\" 새로운 \"메서드를 호출하십시오. 예:"
+"``.new()`` 메서드를 호출하십시오. 예를들면:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
 msgid ""
 "To delete a node, be it inside or outside the scene, ``free()`` must be used:"
 msgstr ""
-"씬(scene)내부 또는 외부에 있는 노드를 삭제하려면\"free()\"를 사용해야 합니다:"
+"씬 내부 또는 외부에 있는 노드를 삭제하려면 ``free()`` 를 사용해야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:313
 msgid ""
@@ -3069,7 +3070,7 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
-"신호를 보내거나 함수를 호출하기 때문에 현재\"차단된 \"노드를 삭제하려는 경우"
+"신호를 보내거나 함수를 호출하기 때문에 현재 \"차단된 \"노드를 삭제하려는 경우"
 "가 발생할 수 있습니다. 이것은 게임을 망칠 것입니다. 디버거로 Godot을 실행하"
 "면 이 경우를 발견하고 경고를 표시하는 경우가 많습니다."
 
@@ -3090,15 +3091,16 @@ msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
-"코드에서 장면을 인스턴스화하는 작업은 두 단계로 이루어집니다. 첫번째 방법은 "
-"하드 드라이브에서 씬을 로드하는 것입니다:"
+"코드에서 장면을 인스턴스화하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 "
+"하드 드라이브에서 씬을 불러오는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
-#, fuzzy
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
-msgstr "구문 분석 시 발생하는 것처럼 좀 더 편리하게 미리 정렬할 수 있습니다:"
+msgstr ""
+"구문 분석 시 발생하는 것처럼 좀 더 편리하게 미리 정렬할 수 있습니다 (GDScript"
+"만):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""
@@ -3108,10 +3110,10 @@ msgid ""
 "called. This will return the tree of nodes that can be added to the active "
 "scene:"
 msgstr ""
-"그러나 \"씬\"은 아직 하나의 노드가 아니다. \"Ref:"
-"\"PackedScene<class_PackedScene>라는 특수 리소스에 들어 있습니다. 실제 노드"
-"를 생성하려면 ref:\"PackedScene.instance()<class_PackedScene_instance>기능을 "
-"호출해야 합니다. 그러면 활성 장면에 추가할 수 있는 노드 트리가 반환됩니다:"
+"그러나 ``씬`` 은 아직 하나의 노드가 아니다. :ref:`PackedScene "
+"<class_PackedScene>` 라는 특수 리소스에 들어 있습니다. 실제 노드를 생성하려"
+"면 :ref:`PackedScene.instance() <class_PackedScene_instance>` 기능을 호출해"
+"야 합니다. 그러면 활성 장면에 추가할 수 있는 노드 트리가 반환됩니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:380
 msgid ""
@@ -3141,9 +3143,9 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
-"이 튜토리얼은 첫 Godot 프로젝트를 만드는 과정을 안내합니다. Godot편집기가 어"
-"떻게 작동하는지, 프로젝트를 구성하는 방법, 2D게임을 만드는 방법을 배우게 됩니"
-"다."
+"이 튜토리얼은 첫 Godot 프로젝트를 만드는 과정을 안내합니다. Godot 에디터가 어"
+"떻게 작동하는지, 프로젝트를 구성하는 방법, 2D 게임을 만드는 방법을 배우게 됩"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -3151,24 +3153,24 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
-"이 프로젝트는 고도 엔진에 대한 소개이고, 당신이 이미 약간의 프로그래밍 경험"
-"이 있다고 가정합니다. 만약 당신이 초보 프로그래머라면, :ref:`doc_scripting`부"
-"터 시작해야합니다."
+"이 프로젝트는 Godot engine에 대한 소개이고, 당신이 이미 약간의 프로그래밍 경"
+"험이 있다고 가정합니다. 만약 당신이 초보 프로그래머라면, :ref:"
+"`doc_scripting` 부터 시작해야합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
-"그 게임은 \"DodgetheCreeps!\"라고 불려요. 캐릭터는 가능한 한 오랫동안 움직이"
-"고 적을 피해야 합니다. 다음은 최종 결과의 미리 보기입니다:"
+"그 게임은 \"Dodge the Creeps!\"라고 불려요. 캐릭터는 가능한 한 오랫동안 움직"
+"이고 적을 피해야 합니다. 다음은 최종 결과의 미리 보기입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
-"**왜 2D인가?**3D게임은 2D게임보다 훨씬 더 복잡하다. 게임 개발 과정을 잘 이해"
+"**왜 2D인가?** 3D게임은 2D게임보다 훨씬 더 복잡하다. 게임 개발 과정을 잘 이해"
 "할 수 있을 때까지 2D를 고수해야 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
@@ -3182,8 +3184,9 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
-"Godot을 시작하고 새 프로젝트를 만듭니다. 그런 다음, 게임을 만드는 데 사용할 "
-"이미지와 사운드를 다운로드하십시오. 이 파일의 압축을 프로젝트 폴더에 풉니다."
+"Godot을 시작하고 새 프로젝트를 만듭니다. 그런 다음, :download:`dodge_assets."
+"zip <files/dodge_assets.zip>` 당신이 게임에 쓸 이미지와 소리를 내려받으세요. "
+"이 파일을 프로젝트 폴더에 풉니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -3191,9 +3194,9 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
-"본 자습서에서는 편집자에 대해 잘 알고 있다고 가정하겠습니다. :ref:"
-"`doc_scenes_and_nodes`내용을 읽지 않은 경우, 다음 작업을 수행하여 프로젝트를 "
-"설정하고 편집기를 사용하는 방법에 대해 설명하십시오."
+"이 튜토리얼에서는 에디터에 대해 잘 알고 있다고 가정하겠습니다. :ref:"
+"`doc_scenes_and_nodes` 내용을 읽지 않은 경우, 프로젝트를 설정하고 에디터를 사"
+"용하는 방법에 대해 배우러 가세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -3201,9 +3204,9 @@ msgid ""
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to 480 and \"Height\" to 720."
 msgstr ""
-"이 게임은 세로 모드를 사용하므로 게임 창의 크기를 조정해야 합니다. Project-"
-">ProjectSettings->Display->Window를 클릭하고\"폭\"을 480으로,\"높이\"를 720으"
-"로 설정합니다."
+"이 게임은 세로 모드를 사용하므로 게임 창의 크기를 조정해야 합니다. Project -"
+"> ProjectSettings -> Display -> Window를 클릭하고 \"Width\"를 480으로, "
+"\"Height\"를 720으로 설정합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the Project"
@@ -3218,14 +3221,12 @@ msgid ""
 "and scripts in the root folder, referred to as ``res://``.  You can see your "
 "project folders in the FileSystem Dock in the upper left corner:"
 msgstr ""
-"이 프로젝트에서 우리는 \"Player\",\"Mob\",\"HUD\"의 세개의 독립적인 씬을 만"
-"들 것인데 이 씬들은 우리가 게임의 \"메인\"장면으로 결합될 것이다. 더 큰 프로"
-"젝트에서는 다양한 씬과 스크립트를 저장할 폴더를 만드는 것이 유용할 수 있지"
-"만, 상대적으로 작은 이 게임에서는 \"res://\"라고 하는 루트 폴더에 장면과 스크"
-"립트를 저장할 수 있습니다.\n"
-"\n"
-"\n"
-"프로젝트 폴더는 왼쪽 위에 있는 파일 시스템 도크에서 볼 수 있습니다:"
+"이 프로젝트에서 우리는  ``Player`` , ``Mob`` , ``HUD`` 의 세개의 독립적인 씬"
+"을 만들 것인데 이 씬들은 우리가 게임의 ``메인`` 씬으로 결합될 것이다. 더 큰 "
+"프로젝트에서는 다양한 씬과 스크립트를 저장할 폴더를 만드는 것이 유용할 수 있"
+"지만, 상대적으로 작은 이 게임에서는 \"res://\"라고 하는 루트 폴더에 장면과 스"
+"크립트를 저장할 수 있습니다. 프로젝트 폴더는 왼쪽 위에 있는 파일 시스템 도크"
+"에서 볼 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player Scene"
@@ -3237,7 +3238,7 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
-"우리가 만들 첫번째 장면은 \"Player\"객체를 정의합니다. 별도의 플레이어 씬을 "
+"우리가 만들 첫 번째 씬은 ``Player`` 객체를 정의합니다. 별도의 플레이어 씬을 "
 "만들 때의 장점 중 하나는 게임의 다른 부분을 만들기 전에 별도로 테스트할 수 있"
 "다는 것입니다."
 
@@ -3250,8 +3251,8 @@ msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
-"시작하려면'새 노드 추가'버튼을 클릭하고`Area2D <class_Area2D>`노드를 씬에 추"
-"가합니다."
+"시작하려면 \"새 노드 추가/생성\" 버튼을 클릭하고 :ref:`Area2D <class_Area2D>`"
+"노드를 씬에 추가합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -3260,8 +3261,8 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
-"\"Area2D\"를 사용하면 플레이어와 겹치거나 플레이어에 부딪히는 물체를 감지할 "
-"수 있습니다. 노드 이름을 클릭하여 이름을 \"Player\"로 변경합니다. 이것은 씬"
+"``Area2D`` 를 사용하면 플레이어와 겹치거나 플레이어에 부딪히는 물체를 감지할 "
+"수 있습니다. 노드 이름을 클릭하여 이름을 ``Player`` 로 변경합니다. 이것은 씬"
 "의 루트 노드입니다. 플레이어에 노드를 추가하여 함수를 추가할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
@@ -3271,18 +3272,18 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
-"\"Player\"노드에 아이를 추가하기 전에 아이들을 클릭하여 실수로 움직이거나 크"
-"기를 조정하지 않도록 합니다. 노드를 선택하고 잠금 오른쪽에 있는 아이콘을 클릭"
-"합니다. 노드의 툴 팁에 \"개체의 하위 항목을 선택할 수 없습니다.\"라고 표시됩"
-"니다."
+"``Player`` 노드에 자식을 추가하기 전에 자식들을 선택하여 실수로 움직이거나 크"
+"기를 조정하지 않도록 합니다. 노드를 선택하고 자물쇠 오른쪽에 있는 아이콘을 클"
+"릭합니다. 노드의 툴 팁에 \"오브젝트의 자식노드가 선택될 수 없도록 설정합니다."
+"\" 라고 표시됩니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
-"장면을 저장합니다. Scene -> Save을 클릭하거나 Mac에서'Command+S' 또는 "
-"Windows'Linux'에서는는'Ctrl+S'를 누릅니다."
+"장면을 저장합니다. 씬 -> 씬 저장을 클릭하거나 윈도우/리눅스에서는 ``Ctrl+S`` "
+"를, 맥에서는 ``Command+S`` 를 누릅니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid ""
@@ -3290,9 +3291,9 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
-"이 프로젝트에서는 Godot명명 규칙을 따르겠습니다. 클래스(노드)는 \"PascalCase"
-"\"를 사용하고 변수와 함수는 \"snake_case\"를 사용하며 상수는 \"ALL_CAPS\"를 "
-"사용합니다."
+"이 프로젝트에서는 Godot 명명 규칙을 따르겠습니다. 클래스(노드)는 "
+"``PascalCase`` 를 사용하고 변수와 함수는 ``snake_case`` 를 사용하며 상수는 "
+"``ALL_CAPS`` 를 사용합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
 msgid "Sprite Animation"
@@ -3309,13 +3310,14 @@ msgid ""
 "click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
 "``<SpriteFrames>`` to open the \"SpriteFrames\" panel:"
 msgstr ""
-"\"Player\"노드를 클릭하고\"AnimatedSprite<class_AnimatedSprite>노드를 하위 노"
-"드로 추가합니다. \"AnimatedSprite\"는 우리 선수를 위해 외모와 애니메이션을 다"
-"룰 것입니다. 노드 옆에 주의 기호가 있습니다. \"AnimatedSprite\"를 사용하려면 "
-"표시할 수 있는 애니메이션 목록인 \"SpriteFrames<class_SpriteFrames>리소스가 "
-"필요합니다. 작성하려면 검사관에서 \"프레임\"속성을 찾아\"<null>-"
-">NewSpriteFrames\"를 클릭합니다. 그런 다음 같은 위치에서 \"[SpriteFrames]를 "
-"클릭하여\"SpriteFrames\"패널을 엽니다:"
+"``Player`` 노드를 클릭하고 :ref:`AnimatedSprite <class_AnimatedSprite>` 노드"
+"를 하위 노드로 추가합니다. ``AnimatedSprite`` 는 우리 선수를 위해 외모와 애니"
+"메이션을 다룰 것입니다. 노드 옆에 주의 기호가 있습니다. ``AnimatedSprite`` "
+"를 사용하려면 표시할 수 있는 애니메이션 목록인 :ref:`SpriteFrames "
+"<class_SpriteFrames>` 리소스가 필요합니다. 작성하려면 인스펙터에서 "
+"``Frames`` 속성을 찾아 \"<null>\" -> \"New SpriteFrames\"를 클릭합니다. 그런 "
+"다음 같은 위치에서 ``<SpriteFrames>`` 를 클릭하여 \"SpriteFrames\" 패널을 엽"
+"니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:102
 msgid ""
@@ -3328,8 +3330,8 @@ msgstr ""
 "왼쪽에는 애니메이션 목록이 있습니다. \"default\"를 클릭하고 \"right\"로 이름"
 "을 바꾸세요. 그런 뒤 \"추가\" 버튼을 눌러 두 번째 애니메이션을 만들고 \"up"
 "\"이라 이름을 지읍시다. 각 애니메이션에 두 개의 이미지를 드래그 하고, \"애니"
-"메이션 프레임\" 패널 안에 하나는 ``playerGrey_up[1/2]`` 다른 하나는  "
-"``playerGrey_walk[1/2]``라고 이름을 지읍니다:"
+"메이션 프레임\" 패널 안에 하나는 ``playerGrey_up[1/2]`` 다른 하나는 "
+"``playerGrey_walk[1/2]`` 라고 이름을 지읍니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:109
 msgid ""
@@ -3338,6 +3340,9 @@ msgid ""
 "property to ``(0.5, 0.5)``. You can find it in the Inspector under the "
 "``Node2D`` heading."
 msgstr ""
+"플레이어 이미지들이 게임 창에 비해 너무 크기 때문에, 크기를 줄여야 합니다. "
+"``AnimatedSprite`` 노드를 클릭하고 ``Scale`` 속성을 ``(0.5, 0.5)`` 로 설정하"
+"세요. 인스펙터의 ``Node2D`` 에서 찾으실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:116
 msgid ""
@@ -3347,20 +3352,27 @@ msgid ""
 "best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
 "CapsuleShape2D\".  Resize the shape to cover the sprite:"
 msgstr ""
+"마지막으로, :ref:`CollisionShape2D <class_CollisionShape2D>` 를 ``Player``의 "
+"자식으로 추가하세요. 이것이 플레이어의 \"히트박스\", 즉 충돌 영역의 범위를 결"
+"정합니다. 이 캐릭터에게, ``CapsuleShape2D`` 노드가 가장 적합합니다, 그러므로 "
+"인스펙터의 \"Shape\" 옆 \"<null>\"\" -> \"New CapsuleShape2D\" 를 클릭하세"
+"요. 스프라이트를 덮도록 크기를 조정하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
 msgid ""
 "Don't scale the shape's outline! Only use the size handles (circled in red) "
 "to adjust the shape!"
 msgstr ""
+"모양의 겉 테두리를 조정하지 마세요! 모양을 맞추기 위해 크기 핸들만 (빨간 동그"
+"라미 부분) 사용합니다!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:127
 msgid "When you're finished, your ``Player`` scene should look like this:"
-msgstr ""
+msgstr "다 되셨다면, 당신의 ``Player`` 씬은 이렇게 되어야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:132
 msgid "Moving the Player"
-msgstr ""
+msgstr "플레이어 움직이기"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid ""
@@ -3368,28 +3380,37 @@ msgid ""
 "node, so we'll add a script. Click the ``Player`` node and click the \"Add "
 "Script\" button:"
 msgstr ""
+"이제 내장 노드 만으로는 얻을 수 없는 몇 가지 기능을 추가해야 합니다, 그래서 "
+"스크립트를 만들겁니다. ``Player`` 노드를 클릭하고 \"스크립트 추가\" 버튼을 누"
+"르세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:140
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
 msgstr ""
+"스크립트 설정 창에서는, 기본 설정으로 냅두어도 됩니다. 그냥 \"생성\"을 누르세"
+"요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:143
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
 msgstr ""
+"만약 C# 스크립트나 다른 언어로 생성하려한다면, 생성을 누르기 전에 `언어` 메뉴"
+"에서 언어를 선택하세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:148
 msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
 msgstr ""
+"처음 GDScript를 보시는 거라면, 계속하기 전에 :ref:`doc_scripting` 를 읽어주세"
+"요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:151
 msgid "Start by declaring the member variables this object will need:"
-msgstr ""
+msgstr "이 객체가 필요로 하는 멤버 변수를 선언함으로써 시작합시다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
 msgid ""
@@ -3398,18 +3419,25 @@ msgid ""
 "to be able to adjust just like a node's built-in properties. Click on the "
 "``Player`` node and set the speed property to ``400``."
 msgstr ""
+"``export`` 키워드로 첫 번째 변수인 ``speed`` 가 인스펙터 내 값을 설정하도록 "
+"합니다. 이것은 당신이 원하는 값을 노드의 내장 속성처럼 조절할 수 있기 때문에 "
+"편리합니다. ``Player`` 노드를 선택하고 speed 속성을 ``400`` 으로 설정하세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
 msgid ""
 "If you're using C#, you need to restart godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
+"C#을 사용하신다면, 에디터에 내보낸 값을 보기 위해 그것이 고정될 때 까지 "
+"godot 에디터를 일시적으로 재시작해야 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:182
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
 msgstr ""
+"``_ready()`` 함수는 노드가 씬 트리에 들어올 때 호출됩니다, 이는 게임 창의 크"
+"기를 알아보기 좋은 순간입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:198
 msgid ""
@@ -3417,14 +3445,17 @@ msgid ""
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game which we expect will change often. Here we'll make it:"
 msgstr ""
+"이제 우리는 ``_process()`` 함수를 사용해서 플레이어가 무엇을 할 지 정의할 수 "
+"있습니다. ``_process()`` 는 매 프레임마다 호출되므로, 게임에서 자주 업데이트 "
+"되는 것으로 생각되는 요소들에 쓸 것입니다. 이것이 우리가 만들 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:202
 msgid "Check for input."
-msgstr ""
+msgstr "입력을 체크함."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:203
 msgid "Move in the given direction."
-msgstr ""
+msgstr "주어진 방향으로 이동."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:204
 msgid "Play the appropriate animation."
@@ -14294,9 +14325,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
-#, fuzzy
 msgid "There are some things to note:"
-msgstr "Godot를 사용하는 데 제약이 없습니다"
+msgstr "적어놓을 만한 사항들이 있습니다:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -14340,9 +14370,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
-#, fuzzy
 msgid "Body Type"
-msgstr "타입"
+msgstr "바디 유형"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:15
 msgid ""

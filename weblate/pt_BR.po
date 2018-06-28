@@ -31,6 +31,7 @@
 # Rodolfo R Gomes <rodolforg@gmail.com>, 2018.
 # ShallZ <vzinbr@gmail.com>, 2018.
 # suxuf@2odem.com <suxuf@2odem.com>, 2018.
+# Thiago R. Silvestrini <thiagorossi.s@gmail.com>, 2018.
 # Vito Chiarella <vitochiarella@gmail.com>, 2018.
 #
 msgid ""
@@ -38,8 +39,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-06-16 00:43+0000\n"
-"Last-Translator: Julio Yagami <juliohenrique31501234@hotmail.com>\n"
+"PO-Revision-Date: 2018-06-28 16:17+0000\n"
+"Last-Translator: Thiago R. Silvestrini <thiagorossi.s@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -47,7 +48,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -668,18 +669,17 @@ msgstr ""
 "encorajamos fortemente que você tente e veja os benefícios por si mesmo."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please make the effort to learn GDScript, you will not regret it."
 msgstr ""
-"GDScript é projetada para se integrar perfeitamente com a forma como o Godot "
+"O GDScript é projetado para integrar perfeitamente ao modo como Godot "
 "funciona, mais do que qualquer outra linguagem, e é simples e fácil de "
-"aprender. Leva no máximo um ou dois dias para se ficar confortável com ela, "
-"e é muito fácil de observar os benefícios quando você se acostumar. Por "
-"favor, faça o esforço de aprender GDScript, você não vai se arrepender."
+"aprender. Leva no máximo um ou dois dias para ficar confortável e é fácil "
+"ver os benefícios uma vez que você o faça. Por favor, faça o esforço para "
+"aprender GDScript, você não vai se arrepender."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -10810,6 +10810,12 @@ msgid ""
 "format, and no metadata. All this contributes to Godot being much friendlier "
 "to VCS systems such as Git, Subversion, or Mercurial."
 msgstr ""
+"Embora ambos os editores possam parecer semelhantes, há muitas diferenças "
+"por trás. Ambos permitem organizar o projeto usando o sistema de arquivos, "
+"mas a abordagem da Godot é mais simples, com um único arquivo de "
+"configuração, formato de texto minimalista e nenhum metadado. Tudo isso "
+"contribui para a Godot ser muito mais amigável para sistemas VCS, como Git, "
+"Subversion ou Mercurial."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:62
 msgid ""
@@ -10818,6 +10824,10 @@ msgid ""
 "descriptive. In other words, it's easier to understand what a specific scene "
 "does at a glance."
 msgstr ""
+"O painel Scene da Godot é semelhante ao painel Hierarquia da Unity, mas, "
+"como cada nó tem uma função específica, a abordagem usada pela Godot é mais "
+"visualmente descritiva. Em outras palavras, é mais fácil entender o que uma "
+"cena específica faz de relance."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:66
 msgid ""
@@ -10828,6 +10838,13 @@ msgid ""
 "visually, so changing colors, textures, enumerations, or even links to "
 "resources in real-time is possible without involving code."
 msgstr ""
+"O inspetor na Godot é mais minimalista e projetado para mostrar apenas "
+"propriedades. Graças a isso, os objetos podem exportar uma quantidade muito "
+"maior de parâmetros úteis para o usuário sem precisar ocultar a "
+"funcionalidade nas APIs de idioma. Como um acréscimo, Godot permite a "
+"animação visualmente de qualquer uma dessas propriedades, portanto é "
+"possível alterar cores, texturas, enumerações ou mesmo links para recursos "
+"em tempo real sem envolver código."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:71
 msgid ""
@@ -10836,6 +10853,11 @@ msgid ""
 "separate window, as they don't execute inside the editor (but the tree and "
 "objects can still be explored in the debugger window)."
 msgstr ""
+"Finalmente, a barra de ferramentas na parte superior da tela é semelhante no "
+"sentido de permitir o controle da reprodução do projeto, mas os projetos na "
+"Godot são executados em uma janela separada, pois não são executados no "
+"editor (mas a árvore e os objetos ainda podem ser explorados na janela do "
+"depurador)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:75
 msgid ""
@@ -10844,12 +10866,18 @@ msgid ""
 "displaying collision gizmos in the running game is already possible), but in "
 "exchange has several advantages:"
 msgstr ""
+"Esta abordagem tem a desvantagem de que o jogo em execução não pode ser "
+"explorado de diferentes ângulos (embora isso possa ser suportado no futuro e "
+"exibir dispositivos de colisão no jogo em execução já seja possível), mas em "
+"troca tem várias vantagens:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:79
 msgid ""
 "Running the project and closing it is fast (Unity has to save, run the "
 "project, close the project, and then reload the previous state)."
 msgstr ""
+"Executar o projeto e fechá-lo é rápido (A Unity precisa salvar, executar o "
+"projeto, fechar o projeto e, em seguida, recarregar o estado anterior)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:80
 msgid ""
@@ -10858,10 +10886,15 @@ msgid ""
 "the game is closed. This allows fantastic workflows, like creating levels "
 "while you play them."
 msgstr ""
+"A edição ao vivo é muito mais útil porque as alterações feitas ao editor "
+"entram em vigor imediatamente no jogo e não são perdidas (nem precisam ser "
+"sincronizadas) quando o jogo é fechado. Isso permite fluxos de trabalho "
+"fantásticos, como criar níveis enquanto você os reproduz."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:81
 msgid "The editor is more stable because the game runs in a separate process."
 msgstr ""
+"O editor é mais estável porque o jogo é executado em um processo separado."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:83
 msgid ""
@@ -10869,22 +10902,31 @@ msgid ""
 "make it simple to deploy to a device (connected phone, tablet, or browser "
 "via HTML5), and debug/live edit on it after the game was exported."
 msgstr ""
+"Finalmente, a barra de ferramentas superior inclui um menu para depuração "
+"remota. Essas opções simplificam a implantação em um dispositivo (telefone "
+"conectado, tablet ou navegador via HTML5) e a edição de depuração / edição "
+"ao vivo após a exportação do jogo."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:88
 msgid "The scene system"
-msgstr ""
+msgstr "O sistema de cena"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
 msgid ""
 "This is the most important difference between Unity and Godot and, actually, "
 "the favourite feature of most Godot users."
 msgstr ""
+"Esta é a diferença mais importante entre a Unity e a Godot, na verdade, a "
+"característica favorita da maioria dos usuários da Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:92
 msgid ""
 "Unity's scene system consists of embedding all the required assets in a "
 "scene and linking them together by setting components and scripts to them."
 msgstr ""
+"O sistema de cena da Unity consiste em incorporar todos os recursos "
+"necessários em uma cena e vinculá-los, definindo componentes e scripts para "
+"eles."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:95
 msgid ""
@@ -10894,28 +10936,37 @@ msgid ""
 "children, which makes each a subscene of the main scene. This means you can "
 "compose a whole scene with different scenes stored in different files."
 msgstr ""
+"O sistema de cena da Godot é diferente: na verdade consiste em uma árvore "
+"feita de nós. Cada nó serve a um propósito: Sprite, Malha, Luz, etc. "
+"Basicamente, isso é semelhante ao sistema de cena da Unity. No entanto, cada "
+"nó pode ter vários filhos, o que torna cada um sub-cena da cena principal. "
+"Isso significa que você pode compor uma cena inteira com cenas diferentes "
+"armazenadas em arquivos diferentes."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
+#, fuzzy
 msgid ""
 "For example, think of a platformer level. You would compose it with multiple "
 "elements:"
 msgstr ""
+"Por exemplo, pense em um nível de plataforma. Você poderia compor com vários "
+"elementos:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:102
 msgid "Bricks"
-msgstr ""
+msgstr "Tijolos"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:103
 msgid "Coins"
-msgstr ""
+msgstr "Moedas"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:104
 msgid "The player"
-msgstr ""
+msgstr "O jogador"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:105
 msgid "The enemies"
-msgstr ""
+msgstr "Os inimigos"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:108
 msgid ""
@@ -10926,16 +10977,25 @@ msgid ""
 "the level: For example, you'd add a BoxCollider2D to all the elements of the "
 "scene so that they can collide. This principle is different in Godot."
 msgstr ""
+"Na Unity, você colocaria todos os GameObjects na cena: o jogador, várias "
+"instâncias de inimigos, tijolos em todos os lugares para formar o chão do "
+"nível e, em seguida, várias instâncias de moedas em todo o nível. Você "
+"adicionaria vários componentes a cada elemento para vinculá-los e adicionar "
+"lógica ao nível: por exemplo, você adicionaria um BoxCollider2D a todos os "
+"elementos da cena para que eles pudessem colidir. Este princípio é diferente "
+"na Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:113
 msgid ""
 "In Godot, you would split your whole scene into 3 separate, smaller scenes, "
 "which you would then instance in the main scene."
 msgstr ""
+"Na Godot, você dividiria toda a sua cena em três cenas menores e menores, "
+"que você veria na cena principal."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:115
 msgid "**First, a scene for the Player alone.**"
-msgstr ""
+msgstr "** Primeiro, uma cena para o jogador sozinho. **"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:117
 msgid ""
@@ -10943,10 +11003,14 @@ msgid ""
 "one node in particular: an AnimatedSprite node, which contains the sprite "
 "textures to form various animations (for example, walking animation)"
 msgstr ""
+"Considere o jogador como um elemento reutilizável em outros níveis. É "
+"composto de um nó em particular: um nó AnimatedSprite, que contém as "
+"texturas do sprite para formar várias animações (por exemplo, animação "
+"andando)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:120
 msgid "**Second, a scene for the Enemy.**"
-msgstr ""
+msgstr "** Segundo, uma cena para o Inimigo. **"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:122
 msgid ""
@@ -10954,10 +11018,13 @@ msgid ""
 "the same as the Player node - the only differences are the script (that "
 "manages AI, mostly) and sprite textures used by the AnimatedSprite."
 msgstr ""
+"Novamente, um inimigo é um elemento reutilizável em outros níveis. É quase o "
+"mesmo que o nó do Player - as únicas diferenças são o script (que gerencia "
+"AI, principalmente) e as texturas de sprites usadas pelo AnimatedSprite."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:126
 msgid "**Lastly, the Level scene.**"
-msgstr ""
+msgstr "** Por último, a cena do nível. **"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:128
 msgid ""
@@ -10968,6 +11035,12 @@ msgid ""
 "the Level scene tree. Of course, you can set different properties for each "
 "Enemy node (to change its color, for example)."
 msgstr ""
+"Ele é composto de Bricks (para plataformas), Coins (para o jogador pegar) e "
+"um certo número de instâncias da cena anterior do Inimigo. Estes serão "
+"inimigos distintos, separados, cujo comportamento e aparência serão os "
+"mesmos definidos na cena Inimigo. Cada instância é então considerada como um "
+"nó na árvore de cena de Level. Naturalmente, você pode definir propriedades "
+"diferentes para cada nó do Inimigo (para alterar sua cor, por exemplo)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:134
 msgid ""
@@ -10978,6 +11051,12 @@ msgid ""
 "\"Spatial\" (root type of all 3D-related nodes) or \"Control\" (root type of "
 "all GUI-related nodes)."
 msgstr ""
+"Finalmente, a cena principal seria composta de um nó raiz com 2 filhos: um "
+"nó de instância do Player e um nó de instância do Nível. O nó raiz pode ser "
+"qualquer coisa, geralmente um tipo \"raiz\" como \"Nó\", que é o tipo mais "
+"global, ou \"Node2D\" (tipo raiz de todos os nós relacionados a 2D), "
+"\"Espacial\" (tipo raiz de todos os 3D- nós relacionados) ou \"Control"
+"\" (tipo de raiz de todos os nós relacionados à GUI)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:140
 msgid ""
@@ -10988,6 +11067,12 @@ msgid ""
 "collision types nodes, depending of the use (see the :ref:`Physics "
 "introduction <doc_physics_introduction>`)."
 msgstr ""
+"Como você pode ver, cada cena é organizada como uma árvore. O mesmo vale "
+"para as propriedades dos nós: você não adiciona um componente de colisão a "
+"um nó para torná-lo colidível, como acontece com a Unity. Em vez disso, você "
+"torna este nó um * child * de um novo nó específico que possui propriedades "
+"de colisão. Godot possui vários tipos de colisão, dependendo do uso (veja: "
+"ref: `Introdução à física <doc_physics_introduction>`)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
 msgid ""
@@ -10995,13 +11080,21 @@ msgid ""
 "potentially increase the depth of the scene tree? Besides, Unity allows "
 "organizing GameObjects by putting them in empty GameObjects."
 msgstr ""
+"Pergunta: Quais são as vantagens deste sistema? Esse sistema não aumentaria "
+"potencialmente a profundidade da árvore de cena? Além disso, a Unity permite "
+"organizar GameObjects colocando-os em GameObjects vazios."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:147
+#, fuzzy
 msgid ""
 "First, this system is closer to the well-known object-oriented paradigm: "
 "Godot provides a number of nodes which are not clearly \"Game Objects\", but "
 "they provide their children with their own capabilities: this is inheritance."
 msgstr ""
+"Em primeiro lugar, este sistema está mais próximo do paradigma bem conhecido "
+"orientado a objetos: Godot fornece um número de nós que não são claramente "
+"\"Objetos de Jogo\", mas eles fornecem seus filhos com suas próprias "
+"capacidades: isto é herança."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:148
 msgid ""
@@ -11012,17 +11105,26 @@ msgid ""
 "of any node. Putting multiple nodes in an empty GameObject in Unity does not "
 "provide the same possibility, apart from a visual organization."
 msgstr ""
+"Segundo, permite a extração de uma sub-árvore de cena para torná-la uma cena "
+"própria, que responde à segunda e à terceira pergunta: mesmo que uma árvore "
+"de cena fique muito profunda, ela pode ser dividida em sub-árvores menores. "
+"Isso também permite uma solução melhor para a capacidade de reutilização, já "
+"que você pode incluir qualquer sub-árvore como filho de qualquer nó. Colocar "
+"vários nós em um GameObject vazio na Unity não oferece a mesma "
+"possibilidade, além de uma organização visual."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:151
 msgid ""
 "These are the most important concepts you need to remember: \"node\", "
 "\"parent node\", and \"child node\"."
 msgstr ""
+"Estes são os conceitos mais importantes que você precisa lembrar: \"nó\", "
+"\"nó pai\" e \"nó filho\"."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:155
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
 msgid "Project organization"
-msgstr ""
+msgstr "Organização do projeto"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:159
 msgid ""
@@ -11030,6 +11132,9 @@ msgid ""
 "architecture. Any solution will work for Unity and Godot, so this point has "
 "a lesser importance."
 msgstr ""
+"Observamos anteriormente que não há solução perfeita para definir uma "
+"arquitetura de projeto. Qualquer solução funcionará para a Unity e Godot, "
+"então este ponto tem uma importância menor."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:162
 msgid ""
@@ -11038,6 +11143,9 @@ msgid ""
 "various folders, one per type of asset: Audio, Graphics, Models, Materials, "
 "Scripts, Scenes, etc."
 msgstr ""
+"Observamos anteriormente que não há solução perfeita para definir uma "
+"arquitetura de projeto. Qualquer solução funcionará para a Unity e a Godot, "
+"então este ponto tem uma importância menor."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:165
 msgid ""
@@ -11046,10 +11154,15 @@ msgid ""
 "the project, we recommend organizing your project a bit differently. This "
 "wiki provides a page for this: :ref:`doc_project_organization`."
 msgstr ""
+"Como descrito anteriormente, o sistema de cenas da Godot permite dividir as "
+"cenas em cenas menores. Como cada cena é uma sub-cena, na verdade, um "
+"arquivo de cena no projeto, recomendamos que você organize seu projeto de "
+"maneira um pouco diferente. Este wiki fornece uma página para isto:: ref: "
+"`doc_project_organization`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:171
 msgid "Where are my prefabs?"
-msgstr ""
+msgstr "Onde estão meus prefabs?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:173
 msgid ""
@@ -11058,6 +11171,10 @@ msgid ""
 "scene has an existence of its own, but all of them have the same properties "
 "as defined by the prefab."
 msgstr ""
+"O conceito de prefabs fornecido pela Unity é um elemento \"modelo\" da cena. "
+"É reutilizável, e cada instância do prefab que existe na cena tem uma "
+"existência própria, mas todas elas têm as mesmas propriedades definidas pelo "
+"prefab."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:177
 msgid ""
@@ -11069,6 +11186,14 @@ msgid ""
 "separate scene will be applied to its instances. However, any change you "
 "make to the instance will not have any impact on the 'template' scene."
 msgstr ""
+"Godot não fornece prefabs como tal, mas esta funcionalidade está aqui, "
+"novamente, preenchida graças ao seu sistema de cena: Como vimos, o sistema "
+"de cena é organizado como uma árvore. Godot permite que você salve uma sub-"
+"árvore de uma cena como sua própria cena, assim salva em seu próprio "
+"arquivo. Essa nova cena pode ser instanciada quantas vezes você quiser. "
+"Qualquer alteração que você fizer nessa cena nova e separada será aplicada a "
+"suas instâncias. No entanto, qualquer alteração feita na instância não terá "
+"impacto na cena \"modelo\"."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:185
 msgid ""
@@ -11081,30 +11206,44 @@ msgid ""
 "'template' scene. If you want to add new children to all the instances of "
 "your 'template' scene, then you need to add them in the 'template' scene."
 msgstr ""
+"Para ser preciso, você pode modificar os parâmetros da instância no painel "
+"Inspetor. No entanto, os nós que compõem essa instância são bloqueados, "
+"embora você possa desbloqueá-los se precisar clicando com o botão direito do "
+"mouse na árvore Scene e selecionando \"Editable children\" no menu. Você não "
+"precisa fazer isso para adicionar novos nós filhos a esse nó, mas é "
+"possível. Lembre-se de que esses novos filhos pertencerão à instância, não à "
+"cena \"modelo\". Se você quiser adicionar novos filhos a todas as instâncias "
+"da sua cena de 'modelo', você precisa adicioná-los na cena 'modelo'."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:195
+#, fuzzy
 msgid "Glossary correspondence"
-msgstr ""
+msgstr "Correspondência do glossário"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
 msgid ""
 "GameObject -> Node Add a component -> Inheriting Prefab -> Externalized "
 "branch"
 msgstr ""
+"Objeto de Jogo -> Nó Adicionar um componente -> Herdar Prefab -> ramificação "
+"Externalizada"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
-msgstr ""
+msgstr "Scripting: GDScript, C # e Visual Script"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:206
 msgid "Design"
-msgstr ""
+msgstr "Design"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:208
 msgid ""
 "As you may know already, Unity supports C#. C# benefits from its integration "
 "with Visual Studio and other features, such as static typing."
 msgstr ""
+"Como você já deve saber, a Unity suporta o C #. O C # se beneficia da "
+"integração com o Visual Studio e de outros recursos, como a digitação "
+"estática."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:210
 msgid ""
@@ -11117,6 +11256,14 @@ msgid ""
 "really easy to learn: Between one evening for an experienced programmer and "
 "a week for a complete beginner."
 msgstr ""
+"Godot fornece sua própria linguagem de script, ref: `GDScript "
+"<doc_scripting>` bem como suporte para: ref: `Visual Script <toc-learn-"
+"scripting-visual_script> e: ref:` doc_c_sharp`. O GDScript empresta sua "
+"sintaxe do Python, mas não está relacionado a ele. Se você quer saber sobre "
+"o raciocínio para uma linguagem de script customizada, por favor leia: ref: "
+"`GDScript <doc_gdscript>` e `FAQ <faq>` _ pages. GDScript é fortemente "
+"ligado à API de Godot e é realmente fácil de aprender: Entre uma noite para "
+"um programador experiente e uma semana para um iniciante completo."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:216
 msgid ""
@@ -11125,6 +11272,10 @@ msgid ""
 "script so that it reacts to the player's controls, and another that controls "
 "its specific game logic."
 msgstr ""
+"Unity permite que você anexe quantos scripts quiser a um GameObject. Cada "
+"script adiciona um comportamento ao GameObject: Por exemplo, você pode "
+"anexar um script para que ele reaja aos controles do player e outro que "
+"controle sua lógica de jogo específica."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:220
 msgid ""
@@ -11133,18 +11284,26 @@ msgid ""
 "need to attach more scripts to one node, then you may consider two "
 "solutions, depending on your scene and on what you want to achieve:"
 msgstr ""
+"Em Godot, você só pode anexar um script por nó. Você pode usar um arquivo "
+"GDScript externo ou incluir o script diretamente no nó. Se você precisar "
+"anexar mais scripts a um nó, considere duas soluções, dependendo da cena e "
+"do que deseja alcançar:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:224
 msgid ""
 "either add a new node between your target node and its current parent, then "
 "add a script to this new node."
 msgstr ""
+"adicione um novo nó entre o nó de destino e seu pai atual e adicione um "
+"script a esse novo nó."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:225
 msgid ""
 "or, your can split your target node into multiple children and attach one "
 "script to each of them."
 msgstr ""
+"ou, você pode dividir o nó de destino em vários filhos e anexar um script a "
+"cada um deles."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:227
 msgid ""
@@ -11152,10 +11311,13 @@ msgid ""
 "it is important to have a real reflection and consider splitting a "
 "complicated scene into multiple, smaller branches."
 msgstr ""
+"Como você pode ver, pode ser fácil transformar uma cena em uma bagunça. É "
+"por isso que é importante ter uma reflexão real e considerar a divisão de "
+"uma cena complicada em vários ramos menores."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
 msgid "Connections : groups and signals"
-msgstr ""
+msgstr "Conexões: grupos e sinais"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid ""
@@ -11164,18 +11326,28 @@ msgid ""
 "them in a group and call a function on all nodes contained in this group! "
 "This is explained in :ref:`this page <doc_scripting_continued>`."
 msgstr ""
+"Você pode controlar os nós, acessando-os usando um script e chamando funções "
+"(built-in ou definidos pelo usuário) sobre eles. Mas há mais: você também "
+"pode colocá-los em um grupo e chamar uma função em todos os nós contidos "
+"neste grupo! Isto é explicado em: ref: `this page <doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
+#, fuzzy
 msgid ""
 "But there's more! Certain nodes throw signals when certain actions happen. "
 "You can connect these signals to call a specific function when they happen. "
 "Note that you can define your own signals and send them whenever you want. "
 "This feature is documented `here <gdscript.html#signals>`_."
 msgstr ""
+"Mas tem mais! Alguns nós emitem sinais quando certas ações ocorrem. Você "
+"pode conectar esses sinais para chamar uma função específica quando eles "
+"acontecerem. Note que você pode definir seus próprios sinais e enviá-los "
+"sempre que quiser. Esse recurso está documentado `here <gdscript.html # "
+"signals>` _."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
 msgid "Using Godot in C++"
-msgstr ""
+msgstr "Usando Godot com C ++"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
 msgid ""
@@ -11184,16 +11356,23 @@ msgid ""
 "an example, you can consider Godot Engine's editor as a \"game\" written in C"
 "++ using Godot API."
 msgstr ""
+"Para sua informação, Godot também permite que você desenvolva seu projeto "
+"diretamente em C ++ usando sua API, o que não é possível com a Unity no "
+"momento. Como exemplo, você pode considerar o editor do Godot Engine como um "
+"\"jogo\" escrito em C ++ usando a Godot API."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
 msgid ""
 "If you are interested in using Godot in C++, you may want to start reading "
 "the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."
 msgstr ""
+"Se você estiver interessado em usar Godot com C ++, você pode querer começar "
+"a ler a página: ref: `Desenvolvendo em C ++ "
+"<doc_introduction_to_godot_development>`."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr ""
+msgstr "Tutorial de linha de comando"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -11202,6 +11381,11 @@ msgid ""
 "command line. Given the engine relies on little to no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"Alguns desenvolvedores gostam de usar a linha de comando extensivamente. "
+"Godot é projetado para ser amigável para elas, então aqui estão os passos "
+"para trabalhar inteiramente a partir da linha de comando. Como o mecanismo "
+"depende de pouca ou nenhuma biblioteca externa, os tempos de inicialização "
+"são muito rápidos, o que o torna adequado para esse fluxo de trabalho."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
@@ -11214,10 +11398,15 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
+"Recomenda-se que o seu binário na Godot esteja na sua variável de ambiente "
+"PATH, de modo que possa ser executado facilmente de qualquer lugar, "
+"digitando `` godot``. Você pode fazer isso no Linux colocando o binário "
+"Godot em `` / usr / local / bin`` e certificando-se de que ele é chamado  "
+"pela `` godot``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
 msgid "Setting the project path"
-msgstr ""
+msgstr "Definindo o caminho do projeto"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:25
 msgid ""
@@ -11225,40 +11414,49 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
+"Dependendo de onde seu binário Godot está localizado e qual é seu diretório "
+"de trabalho atual, talvez seja necessário definir o caminho para o seu "
+"projeto para que qualquer um dos comandos a seguir funcione corretamente."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:29
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
+"Isto pode ser feito dando o caminho para o arquivo `` project.godot`` do seu "
+"projeto como o primeiro argumento, assim:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "Ou usando o argumento `` --path``:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"Por exemplo, o comando completo para exportar seu jogo (conforme explicado "
+"abaixo) pode ser assim:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "Creating a project"
-msgstr ""
+msgstr "Criando um projeto"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
+"Criar um projeto a partir da linha de comando pode ser feito navegando no "
+"shell até o local desejado e criando um arquivo project.godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "The project can now be opened with Godot."
-msgstr ""
+msgstr "O projeto agora pode ser aberto com Godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Running the editor"
-msgstr ""
+msgstr "Executando o editor"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid ""
@@ -11266,16 +11464,21 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
+"Rodar o editor é feito executando godot com o sinalizador `` -e``. Isso deve "
+"ser feito a partir do diretório do projeto ou de um subdiretório, caso "
+"contrário, o comando será ignorado e o gerenciador de projetos será exibido."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
+"Se uma cena foi criada e salva, ela pode ser editada posteriormente, "
+"executando o mesmo código com aquela cena como argumento."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Erasing a scene"
-msgstr ""
+msgstr "Apagando uma cena"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid ""
@@ -11283,26 +11486,33 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
+"Godot é o amigo do seu sistema de arquivos e não criará arquivos extras de "
+"metadados. Use `` rm`` para apagar um arquivo de cena. Certifique-se de que "
+"nada faça referência a essa cena, senão um erro será lançado na abertura."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Running the game"
-msgstr ""
+msgstr "Executando o jogo"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr ""
+"Para rodar o jogo, simplesmente execute Godot dentro do diretório ou "
+"subdiretório do projeto."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr ""
+"Quando uma cena específica precisa ser testada, passe essa cena para a linha "
+"de comando."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Debugging"
-msgstr ""
+msgstr "Depuração"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid ""
@@ -11310,13 +11520,21 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for both running the game or a simple scene."
 msgstr ""
+"Capturar erros na linha de comando pode ser uma tarefa difícil porque eles "
+"simplesmente voam. Para isso, um depurador de linha de comando é fornecido "
+"adicionando `` -d``. Funciona tanto para rodar o jogo quanto para uma cena "
+"simples."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#, fuzzy
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
+"Exportar o projeto da linha de comando também é suportado. Isso é "
+"especialmente útil para configurações de integração contínua. A versão da "
+"Godot que é sem cabeça (construção de servidor, sem vídeo) é ideal para isso."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid ""
@@ -11325,16 +11543,24 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
+"Os nomes de plataforma reconhecidos pela opção `` --export`` são os mesmos "
+"exibidos no assistente de exportação do editor. Para obter uma lista de "
+"plataformas suportadas a partir da linha de comandos, tente exportar para "
+"uma plataforma não reconhecida e a listagem completa das plataformas "
+"suportadas pela sua configuração será mostrada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
+#, fuzzy
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
+"Para exportar uma versão de depuração do jogo, use a opção `` --export-"
+"debug`` em vez de `` --export``. Seus parâmetros e uso são os mesmos."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid "Running a script"
-msgstr ""
+msgstr "Executando um script"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid ""
@@ -11342,28 +11568,33 @@ msgid ""
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
+"É possível executar um script .gd simples a partir da linha de comando. Esse "
+"recurso é especialmente útil em projetos grandes, para conversão em lote de "
+"ativos ou importação / exportação personalizada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:155
 msgid "The script must inherit from SceneTree or MainLoop."
-msgstr ""
+msgstr "O script deve herdar do SceneTree ou do MainLoop."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:157
 msgid "Here is a simple example of how it works:"
-msgstr ""
+msgstr "Aqui está um exemplo simples de como funciona:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:168
 msgid "And how to run it:"
-msgstr ""
+msgstr "E como executá-lo:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:175
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
+"Se nenhum project.godot existir no caminho, o caminho atual é assumido como "
+"o diretório de trabalho atual (a menos que `` -path`` seja especificado)."
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Usando um editor de texto externo"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
 msgid ""
@@ -11372,77 +11603,91 @@ msgid ""
 "via the options under ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Embora a godot tenha um editor de texto embutido, alguns desenvolvedores "
+"tendem a querer usar um editor de texto com o qual estejam familiarizados. "
+"Godot fornece esta opção através das opções em `` Editor -> Configurações do "
+"Editor -> Editor de Texto -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
+#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to better integrate the editor with godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
+"Existem dois campos: o caminho do executável e os sinalizadores da linha de "
+"comando. As flags permitem integrar melhor o editor com godot. Godot irá "
+"substituir o seguinte dentro do parâmetro flags:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Campo em Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
-msgstr ""
+msgstr "É substituído por"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{project}"
-msgstr ""
+msgstr "{projeto}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "O caminho absoluto para o diretório do projeto"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{file}"
-msgstr ""
+msgstr "{Arquivo}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "O caminho absoluto para o arquivo"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{col}"
-msgstr ""
+msgstr "{coluna}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
-msgstr ""
+msgstr "O número da coluna do erro"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "{line}"
-msgstr ""
+msgstr "{linha}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
-msgstr ""
+msgstr "O número da linha do erro"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
+#, fuzzy
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "Alguns exemplos de Exec Flags para vários editores incluem:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
+#, fuzzy
 msgid "Exec Flags"
-msgstr ""
+msgstr "Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
+#, fuzzy
 msgid "geany/kate"
-msgstr ""
+msgstr "geany / kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
+#, fuzzy
 msgid "{file} --line {line} --column {col}"
-msgstr ""
+msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
+#, fuzzy
 msgid "atom/sublime text"
-msgstr ""
+msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
+#, fuzzy
 msgid "{file}:{line}"
-msgstr ""
+msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
 msgid ""
@@ -11465,7 +11710,6 @@ msgid "History"
 msgstr "História"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:19
-#, fuzzy
 msgid ""
 "In the early days, the engine used the `Lua <http://www.lua.org>`__ "
 "scripting language. Lua is fast, but creating bindings to an object oriented "
@@ -13353,6 +13597,9 @@ msgid ""
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
+"Alternativamente, quando não estiver usando referências, o `` "
+"is_instance_valid (instance) `` pode ser usado para verificar se um objeto "
+"foi liberado."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
@@ -13453,15 +13700,20 @@ msgstr ""
 "sinal é recebido, a execução irá recomeçar. Abaixo temos alguns exemplos:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
+#, fuzzy
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
 msgstr ""
+"As próprias Coroutines usam o sinal `` completed`` quando fazem a transição "
+"para um estado inválido, por exemplo:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
 msgid ""
 "``my_func`` will only continue execution once both the buttons are pressed."
 msgstr ""
+"`` my_func`` somente continuará a execução assim que ambos os botões forem "
+"pressionados."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
 msgid "Onready keyword"
@@ -14768,7 +15020,7 @@ msgstr "Oi, Godette v3.11"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:4
 msgid "What is Visual Scripting"
-msgstr ""
+msgstr "O que é o Visual Scripting?"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:6
 msgid ""
@@ -14777,36 +15029,52 @@ msgid ""
 "understood. Any artist, animator, game designer, etc. can look at it and "
 "quickly grasp the flow of logic."
 msgstr ""
+"O Visual Scripting é uma ferramenta projetada para tornar a barreira de "
+"entrada para programação muito mais baixa. Como o código é mais visual, ele "
+"precisa de menos pensamento abstrato para ser entendido. Qualquer artista, "
+"animador, designer de jogos, etc., pode olhar para ele e captar rapidamente "
+"o fluxo da lógica."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:11
+#, fuzzy
 msgid ""
 "The reason it does not make existing programming obsolete is, simply, that "
 "it does not scale as well. It takes considerably more time to create code "
 "with it, and it's often more difficult to modify than just writing a few "
 "characters."
 msgstr ""
+"A razão pela qual não torna obsoleta a programação existente é, "
+"simplesmente, que ela não se adapte tão bem. Demora consideravelmente mais "
+"tempo para criar código com ele, e geralmente é mais difícil modificar do "
+"que apenas escrever alguns caracteres."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:15
 msgid ""
 "With the misunderstanding cleared up, the question that remains is what are "
 "the practical uses for Visual Scripting."
 msgstr ""
+"Com o mal-entendido esclarecido, a questão que permanece é quais são os usos "
+"práticos para o Visual Scripting."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:18
 msgid "The most common use cases are as follows:"
-msgstr ""
+msgstr "Os casos de uso mais comuns são os seguintes:"
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:20
 msgid ""
 "Game development beginners who want to learn an engine but have no "
 "programming experience yet."
 msgstr ""
+"Iniciantes no desenvolvimento de jogos que desejam aprender um mecanismo, "
+"mas ainda não têm experiência em programação."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:21
 msgid ""
 "Artists and Game Designers who have no experience in programming and want to "
 "create quick prototypes or simple games."
 msgstr ""
+"Artistas e Game Designers que não têm experiência em programação e querem "
+"criar protótipos rápidos ou jogos simples."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:22
 msgid ""
@@ -14814,16 +15082,21 @@ msgid ""
 "available to Artists or Game Designers in order to offload some of their "
 "work."
 msgstr ""
+"Programadores que trabalham em uma equipe que deseja fazer parte da lógica "
+"do jogo disponível para artistas ou designers de jogos, a fim de descarregar "
+"parte de seu trabalho."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:24
 msgid ""
 "These scenarios are far more common than one might think, so this is why "
 "Godot has added this feature."
 msgstr ""
+"Esses cenários são muito mais comuns do que se imagina, então é por isso que "
+"Godot adicionou esse recurso."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:4
 msgid "Getting started with Visual Scripting"
-msgstr ""
+msgstr "Primeiros passos com o Visual Scripting"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:6
 msgid ""
@@ -14832,12 +15105,18 @@ msgid ""
 "workflow. This led us to write our own version of how we believe this "
 "feature would work best with the engine."
 msgstr ""
+"Como em tudo na Godot, priorizamos uma boa experiência ao copiar ou integrar "
+"soluções de terceiros que podem não se encaixar muito bem no fluxo de "
+"trabalho atual. Isso nos levou a escrever nossa própria versão de como "
+"acreditamos que esse recurso funcionaria melhor com o mecanismo."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
+"Em Godot, um script visual se encaixa perfeitamente com scripts regulares na "
+"guia Editor"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -14846,33 +15125,47 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
+"Na verdade, o Visual Scripting se integra tão bem na Godot que é difícil "
+"acreditar que foi adicionado apenas na versão 3.0. Isso ocorre porque, "
+"durante a edição, o restante dos painéis e das docas Godot funcionam como "
+"uma paleta de onde é possível arrastar e soltar todos os tipos de "
+"informações para a tela de script:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
 msgid "Creating a Script"
-msgstr ""
+msgstr "Criando um Script"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
+#, fuzzy
 msgid ""
 "Creating scripts works the same as with other scripting languages: Select "
 "any node in the scene and push the \"New Script\" button at the top right "
 "corner of the Scene Tree dock:"
 msgstr ""
+"A criação de scripts funciona da mesma maneira que com outras linguagens de "
+"script: selecione qualquer nó na cena e pressione o botão \"Novo Script\" no "
+"canto superior direito da estação da Scene Tree:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
+"Uma vez aberto, o tipo de script \"Visual Script\" deve ser selecionado na "
+"lista suspensa. A extensão de script deve ser \".vs\" (para o Visual "
+"Script!)."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
 msgid ""
 "Finally, the Script Editor will open, allowing to start the editing of the "
 "visual script:"
 msgstr ""
+"Finalmente, o Editor de Script será aberto, permitindo iniciar a edição do "
+"script visual:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
 msgid "Adding a Function"
-msgstr ""
+msgstr "Adicionando uma Função"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -14881,24 +15174,31 @@ msgid ""
 "to communicate with the engine as other scripting engines. In Godot, the "
 "scripting interface is universal and all implementations conform to it."
 msgstr ""
+"Ao contrário de outras implementações de scripts visuais, o Visual Scripting "
+"na Godot é fortemente baseado em funções. Isso acontece porque ele usa a "
+"mesma interface para se comunicar com o mecanismo como outros mecanismos de "
+"script. Na Godot, a interface de script é universal e todas as "
+"implementações estão de acordo com ela."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
-msgstr ""
+msgstr "Uma função é uma tela individual com nós conectados."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:51
 msgid ""
 "A single script can contain many functions, each of which will have a canvas "
 "of its own, allowing for more organization."
 msgstr ""
+"Um único script pode conter várias funções, cada uma com uma tela própria, "
+"permitindo mais organização."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
-msgstr ""
+msgstr "Existem três maneiras principais de adicionar funções em um script:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
 msgid "Overriding a Virtual Function"
-msgstr ""
+msgstr "Substituindo uma função virtual"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:58
 msgid ""
@@ -14907,6 +15207,11 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
+"A maioria dos tipos de nós e outros tipos de objetos em Godot contém funções "
+"virtuais. Essas são as funções que serão chamadas (execute seu código) "
+"quando algo acontecer e puderem ser consultadas na referência. As funções "
+"virtuais são listadas ao pressionar o ícone \"Substituir\" no painel de "
+"membros:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -14914,20 +15219,26 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
+"No exemplo a seguir, uma função será executada quando o nó for carregado e "
+"adicionado à cena em execução. Para isso, o método virtual _ready () será "
+"substituído:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"
 msgstr ""
+"Finalmente, uma tela aparece para esta função, mostrando a substituição:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:76
 msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
+"Como algumas funções esperam que você retorne um valor, elas também "
+"adicionarão um nó de retorno onde tal valor deve ser fornecido:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
 msgid "Connecting a Signal to a Function"
-msgstr ""
+msgstr "Conectando um sinal a uma função"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:85
 msgid ""
@@ -14935,6 +15246,9 @@ msgid ""
 "all sorts of things. A typical example would be a button that emits a "
 "\"pressed\" signal when actually pressed."
 msgstr ""
+"Nós em uma árvore emitem sinais quando algo acontece. Godot usa sinais para "
+"todo tipo de coisa. Um exemplo típico seria um botão que emite um sinal "
+"\"pressionado\" quando realmente pressionado."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:88
 msgid ""
@@ -14942,6 +15256,9 @@ msgid ""
 "inspecting the signals. Once they are displayed, connect the \"pressed\" "
 "signal:"
 msgstr ""
+"Para isso, um nó deve ser selecionado e a guia Nó aberta. Isso permitirá "
+"inspecionar os sinais. Uma vez que eles são exibidos, conecte o sinal "
+"\"pressionado\":"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:94
 msgid ""
@@ -14949,16 +15266,21 @@ msgid ""
 "node where the signal will be connected to, and the function that will "
 "receive the signal:"
 msgstr ""
+"Isto irá abrir o diálogo de conexão. Nesta caixa de diálogo, você deve "
+"selecionar o nó ao qual o sinal será conectado e a função que receberá o "
+"sinal:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:100
 msgid ""
 "If this is done right, a new function will be created in our script and a "
 "signal will automatically be connected to it:"
 msgstr ""
+"Se isso for feito corretamente, uma nova função será criada em nosso script "
+"e um sinal será automaticamente conectado a ela:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:107
 msgid "Creating a Function Manually"
-msgstr ""
+msgstr "Criando uma função manualmente"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:109
 msgid ""
@@ -14967,18 +15289,27 @@ msgid ""
 "(or the same) script calls them manually. The main use case for this is to "
 "separate a function into more, or reusing your visual code."
 msgstr ""
+"A última maneira de criar funções é fazer isso manualmente. Em geral, isso "
+"não é tão comum, a menos que você realmente precise. As funções "
+"personalizadas funcionam quando outro script (ou o mesmo) as chama "
+"manualmente. O principal caso de uso para isso é separar uma função em mais "
+"ou reutilizar seu código visual."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:113
 msgid ""
 "To create a function manually, push the big \"Plus\" button, and a new "
 "function will be added with a default name:"
 msgstr ""
+"Para criar uma função manualmente, pressione o botão grande \"Mais\" e uma "
+"nova função será adicionada com um nome padrão:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:119
 msgid ""
 "This will add a new function, which can be renamed by simply double clicking "
 "its name:"
 msgstr ""
+"Isso adicionará uma nova função, que pode ser renomeada simplesmente "
+"clicando duas vezes em seu nome:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:125
 msgid ""
@@ -14986,10 +15317,13 @@ msgid ""
 "when you call this function), simply click the Function node and check the "
 "inspector:"
 msgstr ""
+"Para editar os \"argumentos\" que esta função pode obter (os valores que "
+"você passa para ela quando chama esta função), simplesmente clique no nó "
+"Função e verifique o inspetor:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:131
 msgid "More on that will be explained later in this document."
-msgstr ""
+msgstr "Mais sobre isso será explicado mais adiante neste documento."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
 msgid "Nodes and Terminology"
@@ -15268,7 +15602,6 @@ msgstr ""
 "propiedades:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
-#, fuzzy
 msgid ""
 "As it can be seen above, the type and initial value of the variable can be "
 "changed, as well as some property hints. Ticking the \"Export\" options "
@@ -15279,7 +15612,7 @@ msgstr ""
 "Como pode ser visto acima, o tipo e o valor inicial da variável podem ser "
 "alterados, assim como alguns sinais de propriedade (@TODO, documentar isso). "
 "Marcar a opção \"Export\" torna a variável visível no inspetor ao selecionar "
-"o node. Isso também a torna disponível a outros scripts pelo método descrito "
+"o no. Isso também a torna disponível a outros scripts pelo método descrito "
 "anteriormente."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
@@ -15291,8 +15624,11 @@ msgstr ""
 "getter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
+#, fuzzy
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
 msgstr ""
+"Da mesma forma, segure * Control * (* Command * no Mac) para soltar um "
+"setter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:166
 msgid ""
@@ -15308,6 +15644,8 @@ msgstr ""
 msgid ""
 "A signal can also be edited via right-click menu to customize its arguments:"
 msgstr ""
+"Um sinal também pode ser editado através do menu do botão direito do mouse "
+"para personalizar seus argumentos:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
 msgid ""
@@ -15315,20 +15653,26 @@ msgid ""
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
+"O sinal que você criou aparecerá no Inspector junto com os sinais de nó "
+"embutidos. Isso permite conectá-lo a partir de outro script de outro * Nó da "
+"Cena *:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
-msgstr ""
+msgstr "Finalmente, para emitir o sinal, basta arrastá-lo para a tela:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:186
+#, fuzzy
 msgid ""
 "Remember that emitting a signal is a sequenced operation, so it must come "
 "from a Sequence port."
 msgstr ""
+"Lembre-se de que a emissão de um sinal é uma operação sequenciada, portanto, "
+"ele deve vir de uma porta sequenciada."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:190
 msgid "Adding More Nodes"
-msgstr ""
+msgstr "Adicionando mais nós"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:192
 msgid ""
@@ -15336,10 +15680,13 @@ msgid ""
 "nodes available for your canvas! Below the member panel, exists the list of "
 "all available node types:"
 msgstr ""
+"Agora que as noções básicas são abordadas, vamos discutir a grande "
+"quantidade de nós de utilitários disponíveis para sua tela! Abaixo do painel "
+"de membros, existe a lista de todos os tipos de nós disponíveis:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:198
 msgid "Ctrl-F (Command-F on Mac) allows you to search the list."
-msgstr ""
+msgstr "Ctrl-F (Command-F no Mac) permite procurar na lista."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:200
 msgid ""
@@ -15348,6 +15695,11 @@ msgid ""
 "automatically), these are added without any \"contextual\" information, so "
 "this has to be done manually."
 msgstr ""
+"Qualquer um deles pode ser arrastado para a cena. Ao contrário dos nós (por "
+"exemplo, arrastar uma propriedade do Inspector configura o contexto para o "
+"nó que está sendo editado automaticamente), eles são adicionados sem "
+"qualquer informação \"contextual\", portanto, isso deve ser feito "
+"manualmente."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:206
 msgid ""
@@ -15355,6 +15707,9 @@ msgid ""
 "they are documented there. That mentioned, a brief overview of node types "
 "follows:"
 msgstr ""
+"Lembre-se de que você pode verificar a referência de classe para o que cada "
+"nó faz, conforme eles são documentados lá. Isso mencionado, uma breve visão "
+"geral dos tipos de nós segue:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:213
 msgid ""
@@ -15362,6 +15717,9 @@ msgid ""
 "time, can be useful as reference values. Most of the time they are integer "
 "or float."
 msgstr ""
+"Nós constantes são nós que fornecem valores que, embora não mudem com o "
+"tempo, podem ser úteis como valores de referência. Na maioria das vezes eles "
+"são inteiros ou flutuantes."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
 msgid ""
@@ -15370,6 +15728,10 @@ msgid ""
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
+"O primeiro é \"Constant\", que permite selecionar qualquer valor de qualquer "
+"tipo como constante, de um inteiro (42) a um String (\"Hello!\"). Em geral, "
+"esse nó não é usado frequentemente devido a valores de entrada padrão em * "
+"Data Ports *, mas é bom saber que existe."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:221
 msgid ""
@@ -15377,12 +15739,17 @@ msgid ""
 "constants for global types in Godot. In there you can find some useful "
 "constants to refer to key names, joystick or mouse buttons, etc."
 msgstr ""
+"O segundo é o nó GlobalConstant, que contém uma longa lista de constantes "
+"para tipos globais na Godot. Lá você pode encontrar algumas constantes úteis "
+"para se referir a nomes de teclas, joystick ou botões do mouse, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
 msgid ""
 "The third one is MathConstant, which provides typical mathematical constants "
 "such as PI, E, etc."
 msgstr ""
+"O terceiro é o MathConstant, que fornece constantes matemáticas típicas, "
+"como PI, E, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:230
 msgid ""
@@ -15390,16 +15757,22 @@ msgid ""
 "Godot is accessed via these nodes, so they are some of the most important "
 "ones to use and pretty diverse."
 msgstr ""
+"Os nós de dados lidam com todos os tipos de acesso à informação. Qualquer "
+"informação na Godot é acessada através desses nós, então eles são alguns dos "
+"mais importantes para usar e bastante diversificados."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
+#, fuzzy
 msgid ""
 "There are many types of nodes of interest here, so a short attempt to "
 "describe them will follow:"
 msgstr ""
+"Existem muitos tipos de nós de interessantes aqui, então uma breve tentativa "
+"de descrevê-los seguirá:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Ação"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -15408,10 +15781,14 @@ msgid ""
 "below, the control is moved to the right when the \"move_right\" action is "
 "pressed."
 msgstr ""
+"Os nós de ação são vitais ao lidar com a entrada de um dispositivo. Você "
+"pode ler mais sobre ações no (@TODO ACTION TUTE LINK). No exemplo a seguir "
+"abaixo, o controle é movido para a direita quando a ação \"move_right\" é "
+"pressionada."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:249
 msgid "Engine Singleton"
-msgstr ""
+msgstr "Singleton do Motor"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
 msgid ""
@@ -15420,16 +15797,23 @@ msgid ""
 "have several purposes, but in general they are useful for low level access "
 "or OS-related access."
 msgstr ""
+"Os singletons do mecanismo são interfaces globais (o que significa que eles "
+"podem ser acessados sem uma referência, ao contrário dos Scene Nodes, eles "
+"estão sempre disponíveis). Eles têm várias finalidades, mas em geral são "
+"úteis para acesso de baixo nível ou acesso relacionado ao sistema "
+"operacional."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:257
 msgid ""
 "Remember that dragging a connection to empty space will help you call "
 "functions or set/get properties on these:"
 msgstr ""
+"Lembre-se de que arrastar uma conexão para um espaço vazio ajudará você a "
+"chamar funções ou definir / obter propriedades sobre elas:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:263
 msgid "Local Variables"
-msgstr ""
+msgstr "Variáveis Locais"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:265
 msgid ""
@@ -15437,16 +15821,21 @@ msgid ""
 "they all have the same name and type when using them and they will reference "
 "the same piece of memory."
 msgstr ""
+"Esses são nós que você pode usar como armazenamento temporário para seus "
+"gráficos. Certifique-se de que todos tenham o mesmo nome e tipo ao usá-los e "
+"eles farão referência à mesma parte da memória."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:270
 msgid ""
 "As it can be seen above, there are two nodes available: A simple getter, and "
 "a sequenced getter (setting requires a sequence port)."
 msgstr ""
+"Como pode ser visto acima, há dois nós disponíveis: Um getter simples e um "
+"getter sequenciado (a configuração requer uma porta de seqüência)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
-msgstr ""
+msgstr "Nó de Cena"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
 msgid ""
@@ -15454,6 +15843,9 @@ msgid ""
 "node by dragging the actual node from the scene tree to the canvas (this "
 "will create it and configure it)."
 msgstr ""
+"Esta é apenas uma referência a um nó na árvore, mas é mais fácil usar esse "
+"nó arrastando o nó real da árvore de cena para a tela (isso irá criá-lo e "
+"configurá-lo)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
@@ -15466,14 +15858,23 @@ msgid ""
 "nodes (or event the node itself that has the script) from the Scene Tree to "
 "the canvas for this."
 msgstr ""
+"Em algumas raras ocasiões, pode ser desejado passar este Nó de Cena como "
+"argumento. Ele pode ser usado para chamar funções e definir / obter "
+"propriedades ou arrastar nós (ou o próprio nó do evento que possui o script) "
+"da Árvore de cena para a tela para isso."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
+#, fuzzy
 msgid ""
 "This node is similar to the Singleton node because it references the "
 "SceneTree, which contains the active scene. SceneTree, however, only works "
 "when the node is sitting in the scene and active, otherwise accessing it "
 "will return as an error."
 msgstr ""
+"Esse nó é semelhante ao nó Singleton porque ele faz referência à SceneTree, "
+"que contém a cena ativa. O SceneTree, no entanto, só funciona quando o nó "
+"está sentado na cena e ativo, caso contrário, o acesso retornará como um "
+"erro."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
 msgid ""
@@ -15481,17 +15882,25 @@ msgid ""
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
+"O SceneTree permite muitas coisas de baixo nível, como definir opções de "
+"alongamento, chamar grupos, criar temporizadores ou até mesmo carregar outra "
+"cena. É uma boa aula para se familiarizar."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:299
 msgid "Preload"
-msgstr ""
+msgstr "Pré-carregamento"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
+#, fuzzy
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
 "resource loaded and ready to use. Rather than instancing the node, it's "
 "simpler to drag the desired resource from the filesystem dock to the canvas."
 msgstr ""
+"Isso faz a mesma função que o preload () no GDScript. Ele mantém esse "
+"recurso carregado e pronto para uso. Em vez de instanciar o nó, é mais "
+"simples arrastar o recurso desejado da doca do sistema de arquivos para a "
+"tela."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
@@ -15502,10 +15911,14 @@ msgid ""
 "This node is a simple helper to get a string with a path to a resource you "
 "can pick. It's useful in functions that load things from disk."
 msgstr ""
+"Este nó é um auxiliar simples para obter uma cadeia com um caminho para um "
+"recurso que você pode escolher. É útil em funções que carregam coisas do "
+"disco."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
+#, fuzzy
 msgid "Comment"
-msgstr ""
+msgstr "Comente"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -15513,29 +15926,39 @@ msgid ""
 "will not try to get focus or be brought to top when selecting it. It can "
 "also be used to write text on it."
 msgstr ""
+"Um nó Comentário funciona como um nó que você pode redimensionar para "
+"colocar em outros nós. Não vai tentar obter foco ou ser levado ao topo ao "
+"selecioná-lo. Também pode ser usado para escrever texto nele."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:322
 #: ../../docs/tutorials/shading/shading_language.rst:222
 msgid "Flow Control"
-msgstr ""
+msgstr "Controle de fluxo"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:324
 msgid ""
 "Flow control nodes allow the execution to take different branches, usually "
 "depending on a given condition."
 msgstr ""
+"Os nós de controle de fluxo permitem que a execução tenha ramificações "
+"diferentes, geralmente dependendo de uma determinada condição."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:331
 msgid "Condition"
 msgstr "Condição"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
+#, fuzzy
 msgid ""
 "This is a simple node that checks a bool port. If true, it will go via the "
 "\"true\" sequence port. If false, the second. After going for either of "
 "them, it goes via the \"done\" port. Leaving sequence ports disconnected is "
 "fine if not all of them are used."
 msgstr ""
+"Este é um nó simples que verifica uma porta booleana. Se for verdade, ele "
+"será enviado pela porta da sequência \"true\". Se falso, o segundo. Depois "
+"de ir para qualquer um deles, ele passa pela porta \"done\". Deixar as "
+"portas da seqüência desconectadas é bom se nem todas forem usadas."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:339
 msgid "Iterator"
@@ -15546,17 +15969,24 @@ msgid ""
 "Some data types in Godot (ie, arrays, dictionaries) are iterable. This means "
 "that a bit of code can run for each element that it has."
 msgstr ""
+"Alguns tipos de dados na Godot (isto é, matrizes, dicionários) são "
+"iteráveis. Isso significa que um pouco de código pode ser executado para "
+"cada elemento que ele possui."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
+#, fuzzy
 msgid ""
 "The Iterator node goes through all elements and, for each of them, it goes "
 "via the \"each\" sequence port, making the element available in the \"elem\" "
 "data port."
 msgstr ""
+"O nó Iterator passa por todos os elementos e, para cada um deles, passa pela "
+"porta de seqüência \"each\", disponibilizando o elemento na porta de dados "
+"\"elem\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:347
 msgid "When done, it goes via the \"exit\" sequence port."
-msgstr ""
+msgstr "Quando concluído, ele passa pela porta de seqüência \"exit\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
@@ -15567,6 +15997,8 @@ msgid ""
 "Some functions can return values. In general for virtual ones, Godot will "
 "add the Return node for you. A return node forces the function to end."
 msgstr ""
+"Algumas funções podem retornar valores. Em geral, para os virtuais, Godot "
+"adicionará o nó Return para você. Um nó de retorno força a função a terminar."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:358
 msgid "Sequence"
@@ -15577,10 +16009,12 @@ msgid ""
 "This node is useful mostly for organizing your graph. It calls its sequence "
 "ports in order."
 msgstr ""
+"Este nó é útil principalmente para organizar seu gráfico. Ele chama suas "
+"portas de seqüência em ordem."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:364
 msgid "TypeCast"
-msgstr ""
+msgstr "Tipo de elenco"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:366
 msgid ""
@@ -15609,18 +16043,25 @@ msgid ""
 "The Switch node is similar to the Condition node, but it matches many values "
 "at the same time."
 msgstr ""
+"O nó Switch é semelhante ao nó Condition, mas corresponde a muitos valores "
+"ao mesmo tempo."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:386
 msgid ""
 "This is a more primitive form of iteration. \"repeat\" sequence output will "
 "be called as long as the condition in the \"cond\" data port is met."
 msgstr ""
+"Essa é uma forma mais primitiva de iteração. A saída de sequência \"repeat\" "
+"será chamada desde que a condição na porta de dados \"cond\" seja atendida."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:393
 msgid ""
 "Functions are simple helpers, most of the time deterministic. They take some "
 "arguments as input and return an output. They are almost never sequenced."
 msgstr ""
+"Funções são ajudantes simples, na maioria das vezes deterministas. Eles "
+"tomam alguns argumentos como entrada e retornam uma saída. Eles quase nunca "
+"são seqüenciados."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
 #: ../../docs/tutorials/shading/shading_language.rst:712
@@ -15629,8 +16070,9 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1003
 #: ../../docs/tutorials/shading/shading_language.rst:1040
 #: ../../docs/tutorials/shading/shading_language.rst:1098
+#, fuzzy
 msgid "Built-In"
-msgstr ""
+msgstr "Construído"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""
@@ -15639,31 +16081,43 @@ msgid ""
 "mathematical functions, but others can be useful helpers. Make sure to take "
 "a look at the list at some point."
 msgstr ""
+"Existe uma lista de ajudantes internos. A lista é quase idêntica à do "
+"GDScript (@TODO, link to gdscript methods?). A maioria deles são funções "
+"matemáticas, mas outros podem ser úteis. Certifique-se de dar uma olhada na "
+"lista em algum momento."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid "By Type"
-msgstr ""
+msgstr "Por tipo"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
+#, fuzzy
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
+"Esses são os métodos disponíveis para tipos básicos. Por exemplo, se você "
+"quiser um produto de ponto, poderá procurar \"ponto\" em vez da categoria "
+"Vetor3. Na maioria dos casos, basta pesquisar a lista de nós, deve ser mais "
+"rápido."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid "Call"
 msgstr "Call"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:415
+#, fuzzy
 msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
 msgstr ""
+"Este é o nó de chamada genérico. Raramente é usado diretamente, mas "
+"arrastando para o espaço vazio em um nó já configurado."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid "Constructors"
-msgstr ""
+msgstr "Construtores"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:421
 msgid ""
@@ -15671,40 +16125,51 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
+"Estas são todas as funções necessárias para criar tipos de dados básicos na "
+"Godot. Por exemplo, se você precisar criar um Vector3 de 3 flutuantes, um "
+"construtor deve ser usado."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid "Destructor"
-msgstr ""
+msgstr "Destruidor"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:429
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
 msgstr ""
+"Isso é o oposto do Construtor, ele permite separar qualquer tipo básico "
+"(isto é, Vector3) em seus sub-elementos."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid "Emit Signal"
-msgstr ""
+msgstr "Emitir sinal"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"Emite sinais de qualquer objeto. Em geral, não é tão útil, pois arrastar um "
+"sinal para a tela funciona melhor."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
+#, fuzzy
 msgid "Get/Set"
-msgstr ""
+msgstr "Get/Set"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:443
+#, fuzzy
 msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
+"Nó Getter / Setter genérico. As propriedades de arrastamento do Inspector "
+"funcionam melhor, já que aparecem corretamente configuradas no drop."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid "Wait"
-msgstr ""
+msgstr "Esperar"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:449
 msgid ""
@@ -15713,34 +16178,43 @@ msgid ""
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
+"Os nós de espera suspenderão a execução da função até que algo aconteça "
+"(muitos quadros podem passar até a retomada, na verdade). Os nós padrão "
+"permitem que você aguarde a passagem de um quadro, um quadro fixo ou um "
+"determinado período de tempo até que a execução seja retomada."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid "Yield"
-msgstr ""
+msgstr "Yield"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:456
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
 msgstr ""
+"Esse nó suspende completamente a execução do script e fará com que a função "
+"retorne um valor que possa ser usado para retomar a execução."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Yield Signal"
-msgstr ""
+msgstr "Yield Signal"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:462
 msgid "Same as Yield, but will wait until a given signal is emitted."
 msgstr ""
+"O mesmo que Yield, mas esperará até que um determinado sinal seja emitido."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:468
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
 msgstr ""
+"Operador genérico de indexação, não é frequentemente usado, mas é bom que "
+"exista apenas no caso."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
 msgid ""
@@ -15750,6 +16224,12 @@ msgid ""
 "always recommended to set the right type for operators to catch errors "
 "faster and make the graph easier to read."
 msgstr ""
+"Estes são principalmente operadores genéricos, como adição, multiplicação, "
+"comparação, etc. Por padrão, estes aceitam principalmente qualquer tipo de "
+"dados (e haverá erro em tempo de execução se os tipos alimentados não "
+"corresponderem ao operador). É sempre recomendável definir o tipo certo para "
+"os operadores capturarem erros mais rapidamente e facilitar a leitura do "
+"gráfico."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"

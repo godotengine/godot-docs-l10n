@@ -12,14 +12,16 @@
 # Mario Rossi <mr_do@hotmail.it>, 2018.
 # Matteo <matteo.guglielmetti@hotmail.it>, 2018.
 # Myself <whatamidoing.wt@gmail.com>, 2018.
+# Nicolas Bonet <nicolasbonet2004@gmail.com>, 2018.
+# Red Pill <redpill902@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-05-28 08:21+0000\n"
-"Last-Translator: Andrea Brunato <andrewlloys@gmail.com>\n"
+"PO-Revision-Date: 2018-06-25 19:39+0000\n"
+"Last-Translator: Red Pill <redpill902@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -27,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -40,8 +42,8 @@ msgid ""
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
 "Questa è la documentazione per la versione non stabile (master). Stai "
-"cercando la documentazione per la corrente versione  **stabile**? `Dai "
-"un'occhiata qui <http://docs.godotengine.org/en/stable>`_."
+"cercando la documentazione per la versione corrente (stabile)? Dai "
+"un'occhiata qui: http://docs.godotengine.org/en/stable> _."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -79,7 +81,7 @@ msgstr ""
 "Godot Engine è un progetto open source sviluppato da una comunità di "
 "volontari. Il team della documentazione può utilizzare sempre i tuoi "
 "feedback ed il tuo aiuto per migliorare i tutorial ed i riferimenti alle "
-"classi. Se non comprendi qualcosa, o non riesci a trovare quello che stai "
+"classi. Se non comprendi qualcosa o non riesci a trovare quello che stai "
 "cercando in questi documenti, aiutaci a migliorare la documentazione "
 "facendocelo sapere!"
 
@@ -94,10 +96,11 @@ msgid ""
 msgstr ""
 "Invia un problema o una richiesta sul `repository di GitHub <https://github."
 "com/godotengine/godot-docs/issues>`_, aiutaci a `tradurre la documentazione "
-"<https://hosted.weblate.org/engage/godot-engine/>`_ nella tua lingua, o stai "
-"in contatto con noi sia sul canale della ``#documentazione`` su `Discord "
-"<https://discord.gg/zH7NUgz>`_, o sul canale ``#godotengine-doc`` su `irc."
-"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
+"<https://hosted.weblate.org/engage/godot-engine/>`_ nella tua lingua, o "
+"rimani in contatto con noi sia sul canale della ``#documentazione`` su "
+"`Discord <https://discord.gg/zH7NUgz>`_, o sul canale ``#godotengine-doc`` "
+"su `irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
+"doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -116,7 +119,7 @@ msgstr "Per Iniziare"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr "Esercitazioni Tutorial"
+msgstr "Tutorial"
 
 #: ../../docs/index.rst:89
 msgid "Development"
@@ -201,15 +204,14 @@ msgstr ""
 "limitazione."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page aims at giving a broad presentation of the engine and of the "
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
 "Questa pagina ha lo scopo di dare una panoramica del motore e dei contenuti "
-"della documentazione, in modo da indicarti come iniziare se stai iniziando o "
-"dove trovare informazioni su una specifica funzionalita."
+"della documentazione, in modo da indicarti come iniziare se sei un "
+"principiante o dove trovare informazioni su una specifica funzionalità."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
@@ -223,10 +225,9 @@ msgid ""
 msgstr ""
 "Un motore di gioco è uno strumento complesso, per cui è difficile presentare "
 "Godot in poche parole. In ogni caso qui c'è una presentazione, che sei "
-"libero di utilizzare se hai bisogno di una breve descrizione di Godot Engine."
+"libero di utilizzare come una breve descrizione di Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -236,11 +237,11 @@ msgid ""
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
 "Godot Engine è un motore di gioco ricco di funzionalità, multi piattaforma, "
-"per creare giochi 2D e 3D da un'unica interfaccia.Godot offre un ampio set "
+"per creare giochi 2D e 3D da un'unica interfaccia. Godot offre un ampio set "
 "di strumenti base, in modo da permettere agli utenti di focalizzarsi sullo "
-"sviluppo dei giochi senza dover reinventare la ruota. I giochi possono "
-"essere esportati in un click su numerose piattaforme di gioco, inclusi i "
-"sistemi desktop (Linux, macOS, Windows), mobili (Android, iOS) e web (HTML5)."
+"sviluppo dei giochi senza sforzarsi nello studio. I giochi possono essere "
+"esportati in un click su numerose piattaforme di gioco, inclusi i sistemi "
+"desktop (Linux, macOS, Windows), mobili (Android, iOS) e web (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -463,14 +464,13 @@ msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr "Puoi modificare e (ri)distribuire Godot a tuo completo piacimento"
 
 #: ../../docs/about/faq.rst:19
-#, fuzzy
 msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
-"Per ulteriori informazioni è possibile leggere `il seguente articolo (in "
+"Per ulteriori informazioni è possibile leggere il seguente articolo (in "
 "inglese) <https://tldrlegal.com/license/mit-license>`_ o chiedere "
-"informazioni al vostro legale di fiducia"
+"informazioni al vostro legale di fiducia."
 
 #: ../../docs/about/faq.rst:21
 msgid ""
@@ -568,17 +568,16 @@ msgstr ""
 "versione a 64 bit di default."
 
 #: ../../docs/about/faq.rst:53
-#, fuzzy
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi. There is also some unofficial "
 "thirdparty work being done on building for some consoles. None of this is "
 "included in the default build scripts or export templates, however."
 msgstr ""
-"Alcuni utenti riportano la possibilità di compilare ed eseguire con successo "
-"Godot su sistemi basati su architettura ARM e Linux, ad esempio i Raspberry "
-"Pi. Ci sono inoltre lavori fatti da terzi che permettono a Godot di "
-"funzionare su alcune console. Nulla di tutto questo però è incluso di "
+"Alcuni utenti evidenziano la possibilità di compilare ed eseguire con "
+"successo Godot con sistemi basati su architettura ARM e Linux, ad esempio i "
+"Raspberry Pi. Ci sono inoltre lavori fatti da terzi che permettono a Godot "
+"di funzionare su alcune console. Nulla di tutto questo però è incluso di "
 "default negli script di compilazione o nei template per l'export."
 
 #: ../../docs/about/faq.rst:57
@@ -658,18 +657,17 @@ msgstr ""
 "ma consigliamo caldamente di provare a scoprirne in prima persona i benefici."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please make the effort to learn GDScript, you will not regret it."
 msgstr ""
-"GDScript è stato disegnato sin dal principio per essere integrato nel "
+"GDScript è stato progettato sin dal principio per essere integrato nel "
 "funzionamento di Godot, molto più di ogni altro linguaggio, ed è molto "
 "semplice e facile da imparare. Ci vogliono al massimo un paio di giorni per "
-"familiarizzare con il lingaggio e una volta fatto è molto semplice capirne i "
-"benefici. Non vi pentirete di avere fatto lo sforzo di imparare GDScript."
+"familiarizzare con il linguaggio e una volta fatto è molto semplice capirne "
+"i benefici. Non vi pentirete di avere fatto lo sforzo di imparare GDScript."
 
 #: ../../docs/about/faq.rst:91
 msgid ""

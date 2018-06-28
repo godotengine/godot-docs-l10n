@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Damar Inderajati <damarind@gmail.com>, 2018.
+# Fajar Ru <kzofajar@gmail.com>, 2018.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
 #
 msgid ""
@@ -10,8 +11,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-05-31 16:39+0000\n"
-"Last-Translator: Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>\n"
+"PO-Revision-Date: 2018-06-22 13:39+0000\n"
+"Last-Translator: Fajar Ru <kzofajar@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -19,11 +20,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "Dokumentasi Godot – branch *master*"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -31,6 +32,9 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"Ini adalah dokumentasi untuk branch (master) unstable. Sedang mencari "
+"dokumentasi dari branch **stable** yang sekarang? `Lihat disini <http://docs."
+"godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -40,6 +44,11 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"Selamat datang di dokumentasi resmi dari Godot Engine, game engine 2D dan 3D "
+"yang gratis dan digerakkan oleh komunitas open source! Jika anda masih baru "
+"di dokumentasi ini, kami sarankan anda untuk membaca :ref:`halaman "
+"pendahuluan <doc_about_intro>` untuk mendapatkan gambaran mengenai apa yang "
+"dokumentasi ini tawarkan."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -47,6 +56,10 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"Daftar isi yang ada dibagian bawah ini dan dibagian sisi akan memberikan "
+"anda kemudahan dalam mengakses dokumentasi untuk topik yang menjadi minat "
+"anda. Anda juga dapat menggunakan fungsi pencarian yang terdapat di pojok "
+"kiri atas."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -56,6 +69,12 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine adalah sebuah proyek open source yang dikembangkan oleh sebuah "
+"komunitas yang terdiri dari banyak relawan. Tim dokumentasi dapat selalu "
+"menggunakan masukan dan bantuan Anda untuk memperbaiki tutorial dan "
+"referensi class yang ada. Jika Anda tidak memahami sesuatu, atau tidak dapat "
+"menemukan apa yang Anda cari didalam dokumentasi, bantu kami untuk membuat "
+"dokumentasi yang lebih baik dengan memberi tahu kami!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -66,38 +85,45 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Sampaikan isu atau permintaan pull request di `repositori GitHub <https://"
+"github.com/godotengine/godot-docs/issues>`_, bantu kami `menerjemahkan "
+"dokumentasi <https://hosted.weblate.org/engage/godot-engine/>`_ ke bahasa "
+"Anda, atau diskusikan dengan kami di kanal ``#documentation`` di `Discord "
+"<https://discord.gg/zH7NUgz>`_, atau kanal ``#godotengine-doc`` di `irc."
+"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr ""
+"Dokumentasi utama untuk situs ini dibagi menjadi bagian-bagian berikut:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "Umum"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "Memulai"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "Tutorial"
 
 #: ../../docs/index.rst:89
 msgid "Development"
-msgstr ""
+msgstr "Pengembangan"
 
 #: ../../docs/index.rst:99 ../../docs/community/index.rst:2
 msgid "Community"
-msgstr ""
+msgstr "Komunitas"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "Tentang"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -210,7 +236,6 @@ msgstr ""
 "platform."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -221,12 +246,11 @@ msgid ""
 msgstr ""
 "Godot sepenuhnya gratis dan kode sumber terbuka dibawah lisensi yang sangat "
 "permisif yaitu MIT. Tanpa pamrih, tidak ada royalti, intinya bebas kalian "
-"gunakan. Permainan yang anda buat adalah milik kalian, sampai ke baris "
+"gunakan. Permainan yang Anda buat adalah milik Anda, sampai ke baris "
 "terakhir kode mesin. Pengembangan Godot sepenuhnya independen dan didorong "
-"oleh komunitas, memberdayakan pengguna untuk membangun game engine untuk "
-"menyesuaikan sesuai ekspektasi mereka sendiri. Godot Engine didukung oleh "
-"`Software Freedom Conservancy <https://sfconservancy.org>`_ tidak-untuk-"
-"keuntungan."
+"oleh komunitas, memberdayakan pengguna untuk membantu membentuk game engine "
+"agar sesuai dengan ekspektasi mereka. Godot Engine didukung oleh `Software "
+"Freedom Conservancy <https://sfconservancy.org>`_ tidak-untuk-keuntungan."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -259,7 +283,6 @@ msgstr ""
 "sphinx-doc.org>`_ dan `ReadTheDocs <https://readthedocs.org/>`_ ."
 
 #: ../../docs/about/introduction.rst:55
-#, fuzzy
 msgid ""
 "You can contribute to Godot's documentation by opening issue tickets or "
 "sending patches via pull requests on its GitHub `source repository <https://"
@@ -268,8 +291,10 @@ msgid ""
 "docs/>`_."
 msgstr ""
 "Anda dapat berkontribusi ke dokumentasi Godot dengan membuka tiket isu atau "
-"mengirim 'patches' lewat 'pull requests' pada repositori Github <https://"
-"github.com/godotengine/godot-docs>`_."
+"mengirim 'patches' lewat 'pull requests' pada repositori GitHub <https://"
+"github.com/godotengine/godot-docs>`_, atau menerjemahkannya kedalam bahasa "
+"Anda di `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/"
+"godot-docs/>`_."
 
 #: ../../docs/about/introduction.rst:61
 msgid ""
@@ -305,23 +330,26 @@ msgstr ""
 "mesin, lisensi, author, dan lainnnya. Dan juga berisi :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:75
-#, fuzzy
 msgid ""
 "The :ref:`sec-learn` section is the main *raison d'être* of this "
 "documentation, as it contains all the necessary information on using the "
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
-"Sesi :ref:`sec-learn`merupakan sesi utama *raison d'être* dari dokumentasi "
-"ini, membahas tentang informasi penting dalam penggunaan mesin untuk membuat "
-"permainan. Dimulai dengan tutorial :ref:`Langkah demi langkah <toc-learn-"
-"step_by_step>` yang mana merupakan titik masuk untuk semua pengguna baru."
+"Bagian :ref:`sec-learn`merupakan bagian utama *raison d'être* dari "
+"dokumentasi ini, karena terdapat semua informasi yang diperlukan dalam "
+"menggunakan engine untuk membuat game. Dimulai dengan tutorial :ref:`Langkah "
+"demi langkah <toc-learn-step_by_step>` yang mana merupakan titik masuk untuk "
+"semua pengguna baru."
 
 #: ../../docs/about/introduction.rst:80
 msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
+"Disamping itu, bagian :ref:`sec-tutorials` dapat dibaca sesuai kebutuhan, "
+"dalam urutan yang bebas. Bagian ini terdapat banyak tutorial dan dokumentasi "
+"yang spesifik dengan fitur."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -329,6 +357,10 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
+"Bagian :ref:`sec-devel` ditujukan untuk pengguna tingkat lanjut dan "
+"kontributor yang berkontribusi ke pengembangan engine, dengan informasi "
+"mengenai proses kompilasi engine, pengembangan modul atau plugin editor "
+"berbasis C++."
 
 #: ../../docs/about/introduction.rst:85
 msgid ""
@@ -338,6 +370,12 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
+"Bagian :ref:`sec-community` memberikan informasi yang berkaitan dengan "
+"kontribusi ke pengembangan engine dan mengenai komunitas, contohnya: "
+"Bagaimana melaporkan bug, membantu dalam dokumentasi, dan lainnya. Bagian "
+"ini juga terdapat berbagai kanal komunitas seperti IRC dan Discord dan "
+"terdapat banyak daftar rekomendasi tutorial dari pihak ketiga yang ada "
+"diluar dokumentasi ini."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -347,6 +385,12 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
+"Terakhir, bagian :ref:`sec-class-ref` adalah dokumentasi dari API Godot, "
+"yang mana juga tersedia secara langsung di script editor dalam engine. "
+"Bagian ini dibuat secara otomatis dari sebuah file didalam sumber utama "
+"repositori, oleh karena itu file dokumentasi yang dihasilkan tidak "
+"diperuntukkan untuk dimodifikasi. Lihat :ref:"
+"`doc_updating_the_class_reference` untuk informasi lebih lanjut."
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -354,15 +398,18 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"Sebagai tambahan untuk dokumentasi ini, Anda mungkin juga ingin melihat "
+"berbagai `proyek demo Godot <https://github.com/godotengine/godot-demo-"
+"projects>`_."
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
+msgstr "Selamat bersenang-senang membaca dan membuat game dengan Godot Engine!"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "Pertanyaan yang sering diajukan (FAQ)"
 
 #: ../../docs/about/faq.rst:7
 msgid ""

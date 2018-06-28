@@ -13,8 +13,11 @@
 # Forest Swamp <sample1989@mail.ru>, 2018.
 # gl <glorphindale+dev@gmail.com>, 2018.
 # ijet <my-ijet@mail.ru>, 2018.
+# Ivan Toropelov <chuchundra06@gmail.com>, 2018.
+# LAT_Rio <AlSenya@yandex.ru>, 2018.
 # luckyuk <im-kerber@mail.ru>, 2018.
 # Neo6666666 <Neo6666666@gmail.com>, 2018.
+# Novikov Vladimir <valdemar.const@gmail.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
 # Sergey <maligin.serega2010@yandex.ru>, 2018.
 # Sergey Grinev <sgreenyov@gmail.com>, 2018.
@@ -28,8 +31,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-18 08:58+0200\n"
-"PO-Revision-Date: 2018-06-18 06:42+0000\n"
-"Last-Translator: ijet <my-ijet@mail.ru>\n"
+"PO-Revision-Date: 2018-06-28 16:17+0000\n"
+"Last-Translator: Siarhei Mashkarniou <irondrain@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -38,7 +41,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -51,7 +54,7 @@ msgid ""
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
 "Это документация для нестабильной (master) ветки. Ищете документацию для "
-"текущей **stable** ветки? 'Смотрите здесь <http://docs.godotengine.org/en/"
+"текущей **stable** ветки? `Смотрите здесь <http://docs.godotengine.org/en/"
 "stable>`_."
 
 #: ../../docs/index.rst:13
@@ -4517,7 +4520,7 @@ msgstr "Теперь добавьте этот сценарий '' HUD'':"
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
-msgstr ""
+msgstr "Сигнал ``start_game`` сообщает узлу ``Main``, что кнопка была нажата."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:958
 msgid ""
@@ -4547,6 +4550,8 @@ msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``."
 msgstr ""
+"Соедините \"timeout()\" сигнал из \"MessageTimer\" и сигнал \"pressed()\" из "
+"\"StartButton\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1037
 msgid "Connecting HUD to Main"
@@ -4853,21 +4858,25 @@ msgstr ""
 "игра будет масштабируется на экранах разных размеров."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
+#, fuzzy
 msgid ""
 "Next, we need to modify the ``Player.gd`` script to change the input method. "
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"Далее, нужно модифицировать скрипт \"Player.gd\", чтобы изменить метод "
+"ввода. Уберем ключи управление и заставим игрока двигаться к цели, которая "
+"задается событием тапа по экрану (или кликом)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
-msgstr ""
+msgstr "Вот полный скрипт для игрока, с комментариями, которые мы изменили:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
 msgid "Export Templates"
-msgstr ""
+msgstr "Шаблоны Экспорта"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:124
 msgid ""
@@ -4876,18 +4885,27 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"Чтобы экспортировать, вам потребуется скачать **шаблоны экспорта** из http://"
+"godotengine.org/download. Эти шаблоны представляют собой оптимизированные "
+"версии движка без редактора скомпилированного для каждой платформы. Вы также "
+"может скачать их в самом Godot кликнув на *Редактор -> Управление шаблонами "
+"экспорта*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"В окне которое откроется, вы может нажать \"Скачать\" чтобы получить шаблон "
+"для версии соответствующей вашей версии Godot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"Если вы обновляете Godot, необходимо скачать шаблоны, соответствующие вашей "
+"новой версии, иначе работа экспортированых проектов может быть нестабильна."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
 #, fuzzy
@@ -4899,35 +4917,47 @@ msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
 msgstr ""
+"Теперь можно изменить настройки экспорта, нажав на *Project -> Export*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:146
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"Создайте новую предустановку экспорта нажав на \"Добавить...\" и выбрав "
+"платформу. Вы можете создать сколько угодно предустановок с различными "
+"настройками."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
+#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"Внизу окна есть две кнопки. \"Экпорт PCK/ZIP\" создает упакованную версию "
+"данных вашего проекта. Он не включает выполняемый файл, поэтому проект не "
+"может быть запущен самостоятельно."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"Вторая кнопка, \"Экпорт Проекта\", создает полную исполняемую версию вашего "
+"проекта, на подобию `.apk`на Android или `.exe`на Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
 msgid ""
 "In the \"Resources\" and \"Features\" tabs you can customize how the game is "
 "exported for each platform. We can leave those settings alone for now."
 msgstr ""
+"На вкладках \"Ресурсы\" и \"Особенности\" вы можете настроить экспорт игры "
+"для каждой платформы. Эти настройки пока оставим."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
 msgid "Exporting by Platform"
-msgstr ""
+msgstr "Экспорт по Платформам"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:162
 msgid ""
@@ -33689,7 +33719,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
-msgstr ""
+msgstr "Векторная алгебра"
 
 #: ../../docs/tutorials/math/vector_math.rst:9
 msgid ""
@@ -33699,6 +33729,11 @@ msgid ""
 "Godot uses them extensively. Developing a good understanding of vector math "
 "is essential to becoming a strong game developer."
 msgstr ""
+"Этот урок - короткое и практичное введение в линейную алгебру, применяемую в "
+"разработке игр. Линейная алгебра изучает векторы и их использование. Векторы "
+"могут применяться в 2D и 3D разработке и Godot использует их интенсивно. "
+"Разработчику игр требуется хорошее понимание векторной алгебры чтобы стать "
+"сильным в этой области."
 
 #: ../../docs/tutorials/math/vector_math.rst:15
 msgid ""
@@ -33706,10 +33741,13 @@ msgid ""
 "be looking at how it is applied to game development. For a broader look at "
 "the mathematics, see https://www.khanacademy.org/math/linear-algebra"
 msgstr ""
+"Этот урок **не** обычная книга по линейной алгебре. Мы рассмотрим только то "
+"что применяется в разработке игр. Для более широкого взгляда на математику, "
+"смотрите https://www.khanacademy.org/math/linear-algebra"
 
 #: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
-msgstr ""
+msgstr "Системы координат (2D)"
 
 #: ../../docs/tutorials/math/vector_math.rst:23
 msgid ""
@@ -33717,6 +33755,9 @@ msgid ""
 "vertical axis (``y``). A particular position in 2D space is written as a "
 "pair of values such as ``(4, 3)``."
 msgstr ""
+"В 2D пространстве, координаты определены использованием горизонтальной оси "
+"(``x``) и вертикальной оси (``y``). Определённая позиция в 2D пространстве "
+"записывается как пара значений, таких как ``(4, 3)``."
 
 #: ../../docs/tutorials/math/vector_math.rst:29
 msgid ""
@@ -33725,6 +33766,10 @@ msgid ""
 "in math class. However, this is common in most computer graphics "
 "applications."
 msgstr ""
+"Если вы новичок в компьютерной графике, это может показаться странным что "
+"положительная ось ``y`` указывает **вниз** вместо вверх, как вы учили в "
+"школе. Хотя, это распространено в большинстве компьютерных графических "
+"приложениях."
 
 #: ../../docs/tutorials/math/vector_math.rst:34
 msgid ""
@@ -33733,6 +33778,10 @@ msgid ""
 "from the ``(0, 0)`` point, or **origin**. Draw an arrow pointing from the "
 "origin to the point:"
 msgstr ""
+"Любая позиция на 2D плоскости может быть определена парой чисел по этому "
+"определению. Хотя, вы можете принять что позиция ``(4, 3)`` это **сдвиг** от "
+"точки ``(0, 0)``, или **начальной** точки координат. Нарисуем стрелку от "
+"начальной точки до заданной точки:"
 
 #: ../../docs/tutorials/math/vector_math.rst:41
 msgid ""
@@ -33742,6 +33791,11 @@ msgid ""
 "is a **position vector** - it denotes a position in space, relative to the "
 "origin."
 msgstr ""
+"Это **вектор**. Вектор представляет множество полезной информации. Помимо "
+"сообщения нам что точка расположена в ``(4, 3)``, мы можем также представить "
+"это в виде угла ``θ`` и длины(или величины(магнитуды)) ``m``. В данном "
+"примере, стрелка это **вектор позиции**  - он обозначает позицию в "
+"пространстве, относительно начала координат."
 
 #: ../../docs/tutorials/math/vector_math.rst:47
 msgid ""
@@ -33749,6 +33803,9 @@ msgid ""
 "**relative** direction and magnitude. There is no concept of a vector's "
 "position. The following two vectors are identical:"
 msgstr ""
+"Очень важным пункт в понимании векторов, это то что они только представляют "
+"только **относительные** направление и магнитуду. Нет понятия векторной "
+"позиции. Два следующих вектора идентичны:"
 
 #: ../../docs/tutorials/math/vector_math.rst:53
 msgid ""
@@ -33756,10 +33813,13 @@ msgid ""
 "starting point. It does not matter where on the plane you draw the vector, "
 "it always represents a relative direction and magnitude."
 msgstr ""
+"Оба вектора представляют точку в 4 пункта вправо и 3 пункта ниже стартовой "
+"точки. Не важно где на плоскости вы нарисуете вектор, он всегда представляет "
+"относительное направление и магнитуду."
 
 #: ../../docs/tutorials/math/vector_math.rst:58
 msgid "Vector Operations"
-msgstr ""
+msgstr "Векторные Операции"
 
 #: ../../docs/tutorials/math/vector_math.rst:60
 msgid ""
@@ -33769,6 +33829,11 @@ msgid ""
 "of the screen, so to place a 2D node named ``Node2D`` 400 pixels to the "
 "right and 300 pixels down, use the following code:"
 msgstr ""
+"Вы можете использовать оба метода (установка x и y координат или угла с "
+"магнитудой) для определения вектора, но обычно программисты используют "
+"установку координат. Для примера, в Godot начало координат это верхний-левый "
+"угол экрана, так что для помещения 2D ноды с названием ``Node2D`` на 400 "
+"пикселей вправо и 300 вниз, используйте следующий код:"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
 msgid ""
@@ -33776,67 +33841,82 @@ msgid ""
 "<class_Vector3>` for 2D and 3D usage respectively. The same mathematical "
 "rules discussed in this article apply for both types."
 msgstr ""
+"Godot поддерживает :ref:`Vector2 <class_Vector2>` и :ref:`Vector3 "
+"<class_Vector3>` для 2D и 3D соответственно. Одинаковые математические "
+"правила, описанные в этой статье, применяются к обоим типам."
 
 #: ../../docs/tutorials/math/vector_math.rst:80
 msgid "Member access"
-msgstr ""
+msgstr "Доступ к полям"
 
 #: ../../docs/tutorials/math/vector_math.rst:82
 msgid ""
 "The individual components of the vector can be accessed directly by name."
 msgstr ""
+"Индивидуальные компоненты вектора могут быть изменены напрямую по имени."
 
 #: ../../docs/tutorials/math/vector_math.rst:103
 msgid "Adding vectors"
-msgstr ""
+msgstr "Сложение векторов"
 
 #: ../../docs/tutorials/math/vector_math.rst:105
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
 msgstr ""
+"Когда два вектора складываются или вычитаются, соответствующие компоненты "
+"добавляются:"
 
 #: ../../docs/tutorials/math/vector_math.rst:116
 msgid ""
 "We can also see this visually by adding the second vector at the end of the "
 "first:"
 msgstr ""
+"Мы также можем посмотреть визуально на добавление второго вектора к концу "
+"первого:"
 
 #: ../../docs/tutorials/math/vector_math.rst:121
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
 msgstr ""
+"Отметьте что сложение ``a + b`` даёт такой же результат что и ``b + a``."
 
 #: ../../docs/tutorials/math/vector_math.rst:123
 msgid "Scalar multiplication"
-msgstr ""
+msgstr "Скалярное перемножение"
 
 #: ../../docs/tutorials/math/vector_math.rst:125
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
 msgstr ""
+"Векторы представляют направление и длину(магнитуду). Значение представленное "
+"только длиной называется **скаляром**."
 
 #: ../../docs/tutorials/math/vector_math.rst:128
 msgid "A vector can be multiplied by a **scalar**:"
-msgstr ""
+msgstr "Вектор может быть умножен на **скаляр**:"
 
 #: ../../docs/tutorials/math/vector_math.rst:143
 msgid ""
 "Multiplying a vector by a scalar does not change its direction, only its "
 "magnitude. This is how you **scale** a vector."
 msgstr ""
+"Умножение вектора на скаляр не меняет направление, только длину. Это как бы "
+"**увеличение** вектора."
 
 #: ../../docs/tutorials/math/vector_math.rst:147
 msgid "Practical applications"
-msgstr ""
+msgstr "Практические применения"
 
 #: ../../docs/tutorials/math/vector_math.rst:149
 msgid "Let's look at two common uses for vector addition and subtraction."
 msgstr ""
+"Давайте посмотрим на два обычных приёма использования для векторного "
+"сложения и вычитания."
 
 #: ../../docs/tutorials/math/vector_math.rst:151
 msgid "Movement"
-msgstr ""
+msgstr "Движение"
 
 #: ../../docs/tutorials/math/vector_math.rst:153
 msgid ""
@@ -33847,16 +33927,24 @@ msgid ""
 "ship moves each step. We can find the position for step 2 by adding the "
 "velocity to the current position."
 msgstr ""
+"Вектор может представлять **любую** длину и направление. Обычные примеры "
+"это: позиция, скорость, ускорение, и сила. На этом изображении, космический "
+"корабль на шаге 1 имеет вектор позиции ``(1,3)`` а вектор скорости "
+"``(2,1)``. Вектор скорости представляет как далеко пойдёт корабль на каждом "
+"шаге. Вы можете найти его позицию на шаге 2 добавляя скорость к текущей "
+"позиции."
 
 #: ../../docs/tutorials/math/vector_math.rst:161
 msgid ""
 "Velocity measures the **change** in position per unit of time. The new "
 "position is found by adding velocity to the previous position."
 msgstr ""
+"Скорость вычисляет **изменение** позиции за единицу времени. Новая позиция "
+"находится добавление скорости к предыдущей позиции."
 
 #: ../../docs/tutorials/math/vector_math.rst:164
 msgid "Pointing toward a target"
-msgstr ""
+msgstr "Направление в сторону цели"
 
 #: ../../docs/tutorials/math/vector_math.rst:166
 msgid ""
@@ -33864,14 +33952,18 @@ msgid ""
 "robot. Subtracting the tank's position from the robot's position gives the "
 "vector pointing from the tank to the robot."
 msgstr ""
+"В этом примере, вы, управляя танком, хотите направить дуло на робота. "
+"Вычитание позиции танка из позиции робота, даёт вектор направленный от танка "
+"на робота."
 
 #: ../../docs/tutorials/math/vector_math.rst:172
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
 msgstr ""
+"Для нахождения вектора направления от ``A`` до ``B`` используйте ``B - A``."
 
 #: ../../docs/tutorials/math/vector_math.rst:175
 msgid "Unit vectors"
-msgstr ""
+msgstr "Единичные векторы"
 
 #: ../../docs/tutorials/math/vector_math.rst:177
 msgid ""
@@ -33879,10 +33971,13 @@ msgid ""
 "also sometimes referred to as **direction vectors** or **normals**. Unit "
 "vectors are helpful when you need to keep track of a direction."
 msgstr ""
+"Вектор с **длиной** равной 1, называется **единичным вектором**. Они также "
+"иногда называются **векторами направления** или **нормалями**. Единичные "
+"векторы полезны когда вам нужно сохранить трэк направления."
 
 #: ../../docs/tutorials/math/vector_math.rst:182
 msgid "Normalization"
-msgstr ""
+msgstr "Нормализация"
 
 #: ../../docs/tutorials/math/vector_math.rst:184
 msgid ""
@@ -33890,12 +33985,17 @@ msgid ""
 "its direction. This is done by dividing each of its components by its "
 "magnitude:"
 msgstr ""
+"Под **нормализацией** вектора подразумевается уменьшения его длины до ``1`` "
+"с сохранением его направления. Это может быть достигнуто делением каждого из "
+"его компонентов на длину:"
 
 #: ../../docs/tutorials/math/vector_math.rst:203
 msgid ""
 "Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
 "a method for normalizing:"
 msgstr ""
+"Поскольку это настолько обыденная операция, ``Vector2`` и ``Vector3`` имеют "
+"встроенный метод для нормализации:"
 
 #: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""
@@ -33903,10 +34003,13 @@ msgid ""
 "normalize a vector of length ``0``. Attempting to do so will result in an "
 "error."
 msgstr ""
+"Поскольку нормализация подразумевает деление на длину вектора, вы не можете "
+"нормализовать вектор с длиной равной ``0``. Попытка сделать это закончится "
+"ошибкой."
 
 #: ../../docs/tutorials/math/vector_math.rst:221
 msgid "Reflection"
-msgstr ""
+msgstr "Отражение"
 
 #: ../../docs/tutorials/math/vector_math.rst:223
 msgid ""
@@ -33915,12 +34018,18 @@ msgid ""
 "They are commonly used for lighting, collisions, and other operations "
 "involving surfaces."
 msgstr ""
+"Обычный пример использования единичных векторов это определение "
+"**нормалей**. Векторы нормалей - это единичные векторы направленные "
+"перпендикулярно поверхности, определяющей их направление. Они обычно "
+"используются в обработке света, коллизий, и других операциях с поверхностями."
 
 #: ../../docs/tutorials/math/vector_math.rst:228
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
 msgstr ""
+"Например, представьте что вы движете шар, который вы хотите отражать от стен "
+"или других объектов:"
 
 #: ../../docs/tutorials/math/vector_math.rst:233
 msgid ""
@@ -33931,10 +34040,17 @@ msgid ""
 "handle this. Here is a GDScript example of the diagram above using a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`:"
 msgstr ""
+"Нормаль плоскости имеет значение ``(0, -1)`` поскольку это горизонтальная "
+"поверхность. Когда шар сталкивается , мы берём оставшийся момент движения "
+"(количество оставшихся \n"
+"шагов когда он ударяется об плоскость) и отражаем его используя нормаль. В "
+"Godot, класс :ref:`Vector2 <class_Vector2>` имеет метод ``bounce()`` для "
+"вычисления этого. Приведём пример диаграммы показанной выше на GDScript "
+"используя :ref:`KinematicBody2D <class_KinematicBody2D>`:"
 
 #: ../../docs/tutorials/math/vector_math.rst:263
 msgid "Dot product"
-msgstr ""
+msgstr "Скалярное произведение"
 
 #: ../../docs/tutorials/math/vector_math.rst:265
 msgid ""
@@ -33943,16 +34059,22 @@ msgid ""
 "returns a **scalar**. Unlike a vector, which contains both magnitude and "
 "direction, a scalar value has only magnitude."
 msgstr ""
+"Результат **скалярного произведения** очень важный аспект в векторной "
+"алгебре, но его также часто плохо понимают. Скалярное произведение это "
+"операция над двумя векторами которая возвращает **скаляр**. В отличии от "
+"вектора, который содержит длину и направление, скаляр содержит только длину."
 
 #: ../../docs/tutorials/math/vector_math.rst:270
 msgid "The formula for dot product takes two common forms:"
-msgstr ""
+msgstr "Формула скалярного произведения имеет две распространённых формы:"
 
 #: ../../docs/tutorials/math/vector_math.rst:282
 msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
+"Также, в большинстве случаев лучше использовать встроенный метод. Обратите "
+"внимание, что порядок двух векторов не имеет значения:"
 
 #: ../../docs/tutorials/math/vector_math.rst:296
 msgid ""
@@ -33960,16 +34082,21 @@ msgid ""
 "formula reduce to just ``cosθ``. This means we can use the dot product to "
 "tell us something about the angle between two vectors:"
 msgstr ""
+"Скалярное произведение очень полезно в использовании с единичными векторами, "
+"сокращая первую формулу до ``cosθ``. Это означает что мы можем использовать "
+"скалярное произведение чтобы получить угол между двумя векторами:"
 
 #: ../../docs/tutorials/math/vector_math.rst:302
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr ""
+"Когда используются единичные вектора, результат будет всегда между ``-1`` "
+"(180°) и``1`` (0°)."
 
 #: ../../docs/tutorials/math/vector_math.rst:306
 msgid "Facing"
-msgstr ""
+msgstr "Направление взгляда"
 
 #: ../../docs/tutorials/math/vector_math.rst:308
 msgid ""
@@ -33978,6 +34105,10 @@ msgid ""
 "zombies ``A`` and ``B``. Assuming a zombie's field of view is **180°**, can "
 "they see the player?"
 msgstr ""
+"Мы можем использовать этот факт для обнаружения, что объект смотрит в "
+"направлении другого объекта. На диаграмме ниже, игрок ``P`` пытается "
+"избежать взгляда зомби ``A`` и ``B``. Могут ли зомби его увидеть если их "
+"угол обзора равен **180°** ?"
 
 #: ../../docs/tutorials/math/vector_math.rst:314
 msgid ""
@@ -33987,14 +34118,19 @@ msgid ""
 "player using ``P - A`` and normalize it. If the angle between this vector "
 "and the facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
+"Зелёные стрелки ``fA`` и ``fB`` это **единичные векторы** представляющие "
+"направление взгляда зомби, а синий полукруг представляет их поле обзора. Для "
+"зомби ``A``, мы находим направление вектора ``AP`` направленного на игрока "
+"использующего ``P - A`` и нормализующего его. Если угол между этим вектором "
+"и вектором взгляда меньше 90°, то зомби увидит игрока."
 
 #: ../../docs/tutorials/math/vector_math.rst:321
 msgid "In code it would look like this:"
-msgstr ""
+msgstr "В коде это бы выглядело как:"
 
 #: ../../docs/tutorials/math/vector_math.rst:339
 msgid "Cross product"
-msgstr ""
+msgstr "Векторное произведение"
 
 #: ../../docs/tutorials/math/vector_math.rst:341
 msgid ""
@@ -34004,14 +34140,19 @@ msgid ""
 "two vectors are parallel, the result of their cross product will be null "
 "vector."
 msgstr ""
+"Также как и скалярное произведение, **векторное произведение** это операция "
+"над двумя векторами. Хотя в результате векторного произведения вы получаете "
+"вектор с направлением перпендикулярным обоим. Его длина зависит от их "
+"относительного угла. Если два вектора параллельны, в результате вы получить "
+"нулевой вектор."
 
 #: ../../docs/tutorials/math/vector_math.rst:352
 msgid "The cross product is calculated like this:"
-msgstr ""
+msgstr "Векторное произведение вычисляется так:"
 
 #: ../../docs/tutorials/math/vector_math.rst:371
 msgid "With Godot, you can use the built-in method:"
-msgstr ""
+msgstr "В Godot, вы можете использовать встроенный метод:"
 
 #: ../../docs/tutorials/math/vector_math.rst:382
 msgid ""
@@ -34019,10 +34160,13 @@ msgid ""
 "result as ``b.cross(a)``. The resulting vectors point in **opposite** "
 "directions."
 msgstr ""
+"В векторном произведении, порядок аргументов важен. ``a.cross(b)`` не даёт "
+"такого же результата что и ``b.cross(a)``. Получаемые векторы имеют "
+"**противоположные** направления."
 
 #: ../../docs/tutorials/math/vector_math.rst:387
 msgid "Calculating Normals"
-msgstr ""
+msgstr "Вычисление Нормалей"
 
 #: ../../docs/tutorials/math/vector_math.rst:389
 msgid ""
@@ -34031,14 +34175,19 @@ msgid ""
 "subtraction to find two edges ``AB`` and ``AC``. Using the cross product, "
 "``AB x AC`` produces a vector perpendicular to both: the surface normal."
 msgstr ""
+"Одно из применений для векторного произведения - это нахождение нормалей "
+"плоскости или поверхности в 3D пространстве. Если мы имеем треугольник "
+"``ABC`` мы можем использовать векторное вычитание для нахождения граней "
+"``AB`` и ``AC``. Используя векторное произведение, ``AB x AC`` возвращает "
+"вектор перпендикулярный обоим векторам: нормаль поверхности."
 
 #: ../../docs/tutorials/math/vector_math.rst:394
 msgid "Here is a function to calculate a triangle's normal:"
-msgstr ""
+msgstr "Здесь показана функция для вычисления нормали треугольника:"
 
 #: ../../docs/tutorials/math/vector_math.rst:418
 msgid "Pointing to a Target"
-msgstr ""
+msgstr "Направление на Цель"
 
 #: ../../docs/tutorials/math/vector_math.rst:420
 msgid ""
@@ -34048,16 +34197,23 @@ msgid ""
 "calculating the cross product of the current facing direction and the target "
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""
+"В скалярном произведении выше, мы видим как оно может использоваться для "
+"нахождения угла между двумя векторами. Но для 3D этого недостаточно. Мы "
+"также должны знать вокруг какой оси нужно вращаться. Мы можем найти это "
+"вычисляя векторное произведение текущего направления взгляда и направлением "
+"цели. В результате мы получим перпендикулярный вектор оси вращения."
 
 #: ../../docs/tutorials/math/vector_math.rst:429
 msgid "More Information"
-msgstr ""
+msgstr "Смотрите также"
 
 #: ../../docs/tutorials/math/vector_math.rst:431
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
 msgstr ""
+"Для большей информации об использовании векторной алгебры в Godot, смотрите "
+"следующие статьи:"
 
 #: ../../docs/tutorials/math/vector_math.rst:433
 msgid ":ref:`doc_vectors_advanced`"
@@ -34069,11 +34225,11 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:4
 msgid "Advanced Vector Math"
-msgstr ""
+msgstr "Продвинутая Векторная Алгебра"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:7
 msgid "Planes"
-msgstr ""
+msgstr "Плоскости"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:9
 msgid ""
@@ -34083,6 +34239,11 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
+"Скалярное произведение имеет одно интересное свойство с единичными "
+"векторами. Вообразите что перпендикуляр к такому вектору(и через начальную "
+"точку) проходит через плоскость. Плоскости разделяют все пространство на "
+"положительное (над плоскостью) и отрицательное (под плоскостью), и (вопреки "
+"популярному мнению) вы сможете также использовать его в 2D:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:17
 msgid ""
@@ -34093,6 +34254,13 @@ msgid ""
 "**normal** *is* a **unit vector**, but it's called *normal* because of its "
 "usage. (Just like we call (0,0) the Origin!)."
 msgstr ""
+"Единичные вектора которые перпендикулярны плоскости (так, что они описывают "
+"ориентацию поверхности) называются **единичными векторами нормали**. Хотя, "
+"обычно это сокращают до **нормалей**. Нормали имеются в плоскостях, 3D "
+"геометрии (чтобы определять которая из сторон или вершин скользит), и т.д. "
+"**Нормаль** это **единичный вектор**, но называется **нормалью** поскольку "
+"имеет такое предназначение. (Так же как мы называем (0,0) Началом "
+"координат !)."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:24
 msgid ""
@@ -41224,7 +41392,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:4
 msgid "Shading language"
-msgstr ""
+msgstr "Язык шейдеров"
 
 #: ../../docs/tutorials/shading/shading_language.rst:9
 msgid ""
@@ -41232,16 +41400,21 @@ msgid ""
 "functions are supported, and the few remaining ones will likely be added "
 "over time."
 msgstr ""
+"Godot использует язык шейдеров похожий на GLSL ES 3.0. Большинство типов "
+"данных и функций поддерживаются, а те что остались за бортом, скорее всего "
+"будет добавлены в будущем."
 
 #: ../../docs/tutorials/shading/shading_language.rst:12
 msgid ""
 "Unlike the shader language in Godot 2.x, this implementation is much closer "
 "to the original."
 msgstr ""
+"В отличие от языка шейдеров в Godot 2.x, эта реализация намного ближе к "
+"оригиналу."
 
 #: ../../docs/tutorials/shading/shading_language.rst:15
 msgid "Shader Types"
-msgstr ""
+msgstr "Типы Шейдеров"
 
 #: ../../docs/tutorials/shading/shading_language.rst:17
 msgid ""
@@ -41249,48 +41422,56 @@ msgid ""
 "must specify what a shader is intended for. Depending on the type, different "
 "render modes, built-in variables and processing functions are supported."
 msgstr ""
+"Вместо того чтобы поддерживать общую конфигурацию, в языке шейдеров Godot "
+"должно быть определено, для чего конкретный шейдер предназначен. В "
+"зависимости от типа, используются  различные опции рендеринга, встроенные "
+"свойства и выполняемые функции."
 
 #: ../../docs/tutorials/shading/shading_language.rst:21
 msgid ""
 "Any shader needs a first line specifying this type, in the following format:"
 msgstr ""
+"В любом шейдере первая строчка определяет этот тип, в следующем формате:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:27
 msgid "Valid types are:"
-msgstr ""
+msgstr "Поддерживаемые типы:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:29
 msgid "\"spatial\": For 3D rendering."
-msgstr ""
+msgstr "\"spatial\": Для 3D рендеринга."
 
 #: ../../docs/tutorials/shading/shading_language.rst:30
 msgid "\"canvas_item\": For 2D rendering."
-msgstr ""
+msgstr "\"canvas_item\": Для 2D рендеринга."
 
 #: ../../docs/tutorials/shading/shading_language.rst:31
 msgid "\"particles\": For particle systems."
-msgstr ""
+msgstr "\"particles\": Для систем частиц."
 
 #: ../../docs/tutorials/shading/shading_language.rst:34
 #: ../../docs/tutorials/shading/shading_language.rst:650
 #: ../../docs/tutorials/shading/shading_language.rst:922
 #: ../../docs/tutorials/shading/shading_language.rst:1082
 msgid "Render Modes"
-msgstr ""
+msgstr "Опции Отрисовки"
 
 #: ../../docs/tutorials/shading/shading_language.rst:36
 msgid ""
 "Different shader types support different render modes. They are optional "
 "but, if specified, must be after the *shader_type*. Example syntax is:"
 msgstr ""
+"Различные шейдерные типы поддерживают различные опции отрисовки. Они "
+"необязательные но, если определены, должны начинаться после ключевого слова "
+"*shader_type*. Пример синтаксиса:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:45
 msgid "Data types"
-msgstr ""
+msgstr "Типы данных"
 
 #: ../../docs/tutorials/shading/shading_language.rst:47
 msgid "Most GLSL ES 3.0 datatypes are supported:"
-msgstr ""
+msgstr "Поддерживаются большинство типов данных из GLSL ES 3.0:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "**void**"
@@ -41299,6 +41480,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "Void datatype, useful only for functions that return nothing."
 msgstr ""
+"Пустой тип данных, используется только для функций которые ничего не "
+"возвращают."
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "**bool**"
@@ -41306,7 +41489,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "Boolean datatype, can only contain \"true\" or \"false\""
-msgstr ""
+msgstr "Булевый тип данных, может содержать только \"true\" или \"false\""
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "**bvec2**"
@@ -41314,7 +41497,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "Two component vector of booleans."
-msgstr ""
+msgstr "Двух-компонентный булевый вектор."
 
 #: ../../docs/tutorials/shading/shading_language.rst:58
 msgid "**bvec3**"
@@ -41322,7 +41505,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:58
 msgid "Three component vector of booleans."
-msgstr ""
+msgstr "Трёх-компонентный булевый вектор."
 
 #: ../../docs/tutorials/shading/shading_language.rst:60
 msgid "**bvec4**"
@@ -41330,7 +41513,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:60
 msgid "Four component vector of booleans."
-msgstr ""
+msgstr "Четырёх-компонентный булевый вектор."
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "**int**"
@@ -41338,7 +41521,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "Signed scalar integer."
-msgstr ""
+msgstr "Знаковое целое число."
 
 #: ../../docs/tutorials/shading/shading_language.rst:64
 msgid "**ivec2**"
@@ -41346,7 +41529,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:64
 msgid "Two component vector of signed integers."
-msgstr ""
+msgstr "Двух-компонентный вектор целых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:66
 msgid "**ivec3**"
@@ -41354,7 +41537,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:66
 msgid "Three component vector of signed integers."
-msgstr ""
+msgstr "Трёх-компонентный вектор целых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:68
 msgid "**ivec4**"
@@ -41362,7 +41545,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:68
 msgid "Four component vector of signed integers."
-msgstr ""
+msgstr "Четырёх-компонентный вектор целых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "**uint**"
@@ -41370,7 +41553,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "Unsigned scalar integer, can't contain negative numbers."
-msgstr ""
+msgstr "Без-знаковое целое число, не может содержать отрицательных значений."
 
 #: ../../docs/tutorials/shading/shading_language.rst:72
 msgid "**uvec2**"
@@ -41378,7 +41561,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:72
 msgid "Two component vector of unsigned integers."
-msgstr ""
+msgstr "Двух-компонентный вектор без-знаковых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:74
 msgid "**uvec3**"
@@ -41386,7 +41569,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:74
 msgid "Three component vector of unsigned integers."
-msgstr ""
+msgstr "Трёх-компонентный вектор без-знаковых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:76
 msgid "**uvec4**"
@@ -41394,7 +41577,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:76
 msgid "Four component vector of unsigned integers."
-msgstr ""
+msgstr "Четырёх-компонентный вектор без-знаковых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "**float**"
@@ -41402,7 +41585,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "Floating point scalar."
-msgstr ""
+msgstr "Число с плавающей точкой(дробное число)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "**vec2**"
@@ -41410,7 +41593,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "Two component vector of floating point values."
-msgstr ""
+msgstr "Двух-компонентный вектор дробных чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "**vec3**"
@@ -41418,7 +41601,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "Three component vector of floating point values."
-msgstr ""
+msgstr "Трёх-компонентный вектор дробных чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:84
 #: ../../docs/tutorials/shading/shading_language.rst:422
@@ -41427,7 +41610,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:84
 msgid "Four component vector of floating point values."
-msgstr ""
+msgstr "Четырёх-компонентный вектор дробных чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "**mat2**"
@@ -41435,7 +41618,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "2x2 matrix, in column major order."
-msgstr ""
+msgstr "Матрица 2x2, с развёрсткой по столбцу."
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "**mat3**"
@@ -41443,7 +41626,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "3x3 matrix, in column major order."
-msgstr ""
+msgstr "Матрица 3x3, с развёрсткой по столбцу."
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "**mat4**"
@@ -41451,7 +41634,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "4x4 matrix, in column major order."
-msgstr ""
+msgstr "Матрица 4x4, с развёрсткой по столбцу."
 
 #: ../../docs/tutorials/shading/shading_language.rst:92
 #: ../../docs/tutorials/shading/shading_language.rst:426
@@ -41466,6 +41649,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:92
 msgid "Sampler type, for binding 2D textures, which are read as float."
 msgstr ""
+"Сэмплер, для биндинга 2D текстур, которые читаются через дробные числа."
 
 #: ../../docs/tutorials/shading/shading_language.rst:94
 msgid "**isampler2D**"
@@ -41473,7 +41657,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:94
 msgid "Sampler type for binding 2D textures, which are read as signed integer."
-msgstr ""
+msgstr "Сэмплер, для биндинга 2D текстур, которые читаются через целые числа."
 
 #: ../../docs/tutorials/shading/shading_language.rst:96
 msgid "**usampler2D**"
@@ -41483,6 +41667,8 @@ msgstr ""
 msgid ""
 "Sampler type for binding 2D textures, which are read as unsigned integer."
 msgstr ""
+"Сэмплер, для биндинга 2D текстур, которые читаются через целые, без-знаковые "
+"числа."
 
 #: ../../docs/tutorials/shading/shading_language.rst:98
 msgid "**samplerCube**"
@@ -41491,10 +41677,12 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:98
 msgid "Sampler type for binding Cubemaps, which are read as floats."
 msgstr ""
+"Сэмплер, для биндинга кубических текстур, которые читаются через дробные "
+"числа."
 
 #: ../../docs/tutorials/shading/shading_language.rst:102
 msgid "Casting"
-msgstr ""
+msgstr "Приведение"
 
 #: ../../docs/tutorials/shading/shading_language.rst:104
 msgid ""
@@ -41503,12 +41691,18 @@ msgid ""
 "size is also not allowed. Conversion must be done explicitly via "
 "constructors."
 msgstr ""
+"Так же как и в GLSL ES 3.0, неявное приведение между скалярами и векторами "
+"одинакового размера но разного типа не разрешено. Приведение типов разной "
+"размерности также не разрешено. Конвертация должны быть произведена явно, "
+"через конструкторы."
 
 #: ../../docs/tutorials/shading/shading_language.rst:115
 msgid ""
 "Default integer constants are signed, so casting is always needed to convert "
 "to unsigned:"
 msgstr ""
+"Числовые константы это целые числа по умолчанию, так что приведение всегда "
+"необходимо при конвертации в без-знаковое целое:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"
