@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:4
 msgid "Getting started with Visual Scripting"
-msgstr ""
+msgstr "Primeiros passos com o Visual Scripting"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:6
 msgid ""
@@ -28,12 +28,18 @@ msgid ""
 "workflow. This led us to write our own version of how we believe this "
 "feature would work best with the engine."
 msgstr ""
+"Como em tudo na Godot, priorizamos uma boa experiência ao copiar ou integrar "
+"soluções de terceiros que podem não se encaixar muito bem no fluxo de "
+"trabalho atual. Isso nos levou a escrever nossa própria versão de como "
+"acreditamos que esse recurso funcionaria melhor com o mecanismo."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
 msgstr ""
+"Em Godot, um script visual se encaixa perfeitamente com scripts regulares na "
+"guia Editor"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -42,33 +48,47 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
+"Na verdade, o Visual Scripting se integra tão bem na Godot que é difícil "
+"acreditar que foi adicionado apenas na versão 3.0. Isso ocorre porque, "
+"durante a edição, o restante dos painéis e das docas Godot funcionam como "
+"uma paleta de onde é possível arrastar e soltar todos os tipos de "
+"informações para a tela de script:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
 msgid "Creating a Script"
-msgstr ""
+msgstr "Criando um Script"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
+#, fuzzy
 msgid ""
 "Creating scripts works the same as with other scripting languages: Select "
 "any node in the scene and push the \"New Script\" button at the top right "
 "corner of the Scene Tree dock:"
 msgstr ""
+"A criação de scripts funciona da mesma maneira que com outras linguagens de "
+"script: selecione qualquer nó na cena e pressione o botão \"Novo Script\" no "
+"canto superior direito da estação da Scene Tree:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
+"Uma vez aberto, o tipo de script \"Visual Script\" deve ser selecionado na "
+"lista suspensa. A extensão de script deve ser \".vs\" (para o Visual "
+"Script!)."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
 msgid ""
 "Finally, the Script Editor will open, allowing to start the editing of the "
 "visual script:"
 msgstr ""
+"Finalmente, o Editor de Script será aberto, permitindo iniciar a edição do "
+"script visual:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
 msgid "Adding a Function"
-msgstr ""
+msgstr "Adicionando uma Função"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
 msgid ""
@@ -77,24 +97,31 @@ msgid ""
 "to communicate with the engine as other scripting engines. In Godot, the "
 "scripting interface is universal and all implementations conform to it."
 msgstr ""
+"Ao contrário de outras implementações de scripts visuais, o Visual Scripting "
+"na Godot é fortemente baseado em funções. Isso acontece porque ele usa a "
+"mesma interface para se comunicar com o mecanismo como outros mecanismos de "
+"script. Na Godot, a interface de script é universal e todas as "
+"implementações estão de acordo com ela."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:49
 msgid "A function is an individual canvas with nodes connected."
-msgstr ""
+msgstr "Uma função é uma tela individual com nós conectados."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:51
 msgid ""
 "A single script can contain many functions, each of which will have a canvas "
 "of its own, allowing for more organization."
 msgstr ""
+"Um único script pode conter várias funções, cada uma com uma tela própria, "
+"permitindo mais organização."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
-msgstr ""
+msgstr "Existem três maneiras principais de adicionar funções em um script:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
 msgid "Overriding a Virtual Function"
-msgstr ""
+msgstr "Substituindo uma função virtual"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:58
 msgid ""
@@ -103,6 +130,11 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
+"A maioria dos tipos de nós e outros tipos de objetos em Godot contém funções "
+"virtuais. Essas são as funções que serão chamadas (execute seu código) "
+"quando algo acontecer e puderem ser consultadas na referência. As funções "
+"virtuais são listadas ao pressionar o ícone \"Substituir\" no painel de "
+"membros:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -110,20 +142,26 @@ msgid ""
 "loaded and added to the running scene. For this, the _ready() virtual method "
 "will be overridden:"
 msgstr ""
+"No exemplo a seguir, uma função será executada quando o nó for carregado e "
+"adicionado à cena em execução. Para isso, o método virtual _ready () será "
+"substituído:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"
 msgstr ""
+"Finalmente, uma tela aparece para esta função, mostrando a substituição:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:76
 msgid ""
 "As some functions expect you to return a value, they will also add a return "
 "node where such value is supposed to be provided:"
 msgstr ""
+"Como algumas funções esperam que você retorne um valor, elas também "
+"adicionarão um nó de retorno onde tal valor deve ser fornecido:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
 msgid "Connecting a Signal to a Function"
-msgstr ""
+msgstr "Conectando um sinal a uma função"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:85
 msgid ""
@@ -131,6 +169,9 @@ msgid ""
 "all sorts of things. A typical example would be a button that emits a "
 "\"pressed\" signal when actually pressed."
 msgstr ""
+"Nós em uma árvore emitem sinais quando algo acontece. Godot usa sinais para "
+"todo tipo de coisa. Um exemplo típico seria um botão que emite um sinal "
+"\"pressionado\" quando realmente pressionado."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:88
 msgid ""
@@ -138,6 +179,9 @@ msgid ""
 "inspecting the signals. Once they are displayed, connect the \"pressed\" "
 "signal:"
 msgstr ""
+"Para isso, um nó deve ser selecionado e a guia Nó aberta. Isso permitirá "
+"inspecionar os sinais. Uma vez que eles são exibidos, conecte o sinal "
+"\"pressionado\":"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:94
 msgid ""
@@ -145,16 +189,21 @@ msgid ""
 "node where the signal will be connected to, and the function that will "
 "receive the signal:"
 msgstr ""
+"Isto irá abrir o diálogo de conexão. Nesta caixa de diálogo, você deve "
+"selecionar o nó ao qual o sinal será conectado e a função que receberá o "
+"sinal:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:100
 msgid ""
 "If this is done right, a new function will be created in our script and a "
 "signal will automatically be connected to it:"
 msgstr ""
+"Se isso for feito corretamente, uma nova função será criada em nosso script "
+"e um sinal será automaticamente conectado a ela:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:107
 msgid "Creating a Function Manually"
-msgstr ""
+msgstr "Criando uma função manualmente"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:109
 msgid ""
@@ -163,18 +212,27 @@ msgid ""
 "(or the same) script calls them manually. The main use case for this is to "
 "separate a function into more, or reusing your visual code."
 msgstr ""
+"A última maneira de criar funções é fazer isso manualmente. Em geral, isso "
+"não é tão comum, a menos que você realmente precise. As funções "
+"personalizadas funcionam quando outro script (ou o mesmo) as chama "
+"manualmente. O principal caso de uso para isso é separar uma função em mais "
+"ou reutilizar seu código visual."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:113
 msgid ""
 "To create a function manually, push the big \"Plus\" button, and a new "
 "function will be added with a default name:"
 msgstr ""
+"Para criar uma função manualmente, pressione o botão grande \"Mais\" e uma "
+"nova função será adicionada com um nome padrão:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:119
 msgid ""
 "This will add a new function, which can be renamed by simply double clicking "
 "its name:"
 msgstr ""
+"Isso adicionará uma nova função, que pode ser renomeada simplesmente "
+"clicando duas vezes em seu nome:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:125
 msgid ""
@@ -182,7 +240,10 @@ msgid ""
 "when you call this function), simply click the Function node and check the "
 "inspector:"
 msgstr ""
+"Para editar os \"argumentos\" que esta função pode obter (os valores que "
+"você passa para ela quando chama esta função), simplesmente clique no nó "
+"Função e verifique o inspetor:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:131
 msgid "More on that will be explained later in this document."
-msgstr ""
+msgstr "Mais sobre isso será explicado mais adiante neste documento."

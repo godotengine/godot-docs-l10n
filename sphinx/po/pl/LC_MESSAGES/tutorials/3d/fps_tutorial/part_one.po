@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,24 +19,25 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:4
 msgid "Part 1"
-msgstr ""
+msgstr "Część 1"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:7
 msgid "Tutorial introduction"
-msgstr ""
+msgstr "Przedstawienie samouczka"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:11
 msgid ""
 "This tutorial series will show you how to make a single player FPS game."
-msgstr ""
+msgstr "Ten samouczek pokaże jak stworzyć pierwszoosobową grę FPS."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:13
 msgid "Throughout the course of this tutorial series, we will cover how:"
-msgstr ""
+msgstr "Podczas tego kursu dowiesz się jak:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:15
 msgid "To make a first person character that can move, sprint, and jump."
 msgstr ""
+"Stworzyć pierwszoosbową postać, która może się poruszać, biegać i skakać."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:16
 msgid ""
@@ -48,10 +49,11 @@ msgid ""
 "To add three weapons to the first person character, each using a different "
 "way to handle bullet collisions:"
 msgstr ""
+"Dodać trzy bronie do postaci, każda inaczej obsługująca kolizję pocisków:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:18
 msgid "A knife (using an :ref:`Area <class_Area>`)"
-msgstr ""
+msgstr "Nóż (używając :ref:`Area <class_Area>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:19
 msgid "A pistol (Bullet scenes)"
@@ -59,7 +61,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:20
 msgid "A rifle (using a :ref:`Raycast <class_Raycast>`)"
-msgstr ""
+msgstr "Karabin (używając :ref:`Raycast <class_Raycast>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:21
 msgid "To add two different types of grenades to the first person character:"
@@ -67,11 +69,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:22
 msgid "A normal grenade"
-msgstr ""
+msgstr "Zwykły granat"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:23
 msgid "A sticky grenade"
-msgstr ""
+msgstr "Granat przylepny"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:24
 msgid ""
@@ -184,16 +186,18 @@ msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
 "Font License, Version 1.1``."
 msgstr ""
+"Używana czcionka to **Titillium-Regular**, i jest licencjonowana jako ``SIL "
+"Open Font License, Version 1.1``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:64
 msgid ""
 "You can find the finished project for each part at the bottom of each part's "
 "page"
-msgstr ""
+msgstr "Możesz znaleźć ukończony projekt dla każdej części, na dole strony"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:67
 msgid "Part Overview"
-msgstr ""
+msgstr "Przegląd części"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:69
 msgid ""
@@ -211,11 +215,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
 msgid "Getting everything ready"
-msgstr ""
+msgstr "Przygotowywanie wszystkiego"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:79
 msgid "Launch Godot and open up the project included in the starter assets."
-msgstr ""
+msgstr "Otwieranie Godota i projektu z zawartymi w nim zasobami startowymi"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:81
 msgid ""
@@ -245,7 +249,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:96
 msgid "For now let's open up ``Player.tscn``."
-msgstr ""
+msgstr "Otwórzmy `Player.tscn``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:98
 msgid ""
@@ -257,7 +261,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:103
 msgid "Making the FPS movement logic"
-msgstr ""
+msgstr "Tworzenie  poruszania FPS"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:105
 msgid ""

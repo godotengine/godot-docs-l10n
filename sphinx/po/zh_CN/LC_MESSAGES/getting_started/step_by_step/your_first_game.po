@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your First Game"
-msgstr ""
+msgstr "你的第一个游戏"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 msgid "Overview"
-msgstr ""
+msgstr "概览"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -31,6 +31,8 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
+"这个教学将会全程引导你做一个你的第一个Godot工程。你能从中学到Godot编辑器如何"
+"工作，一个工程如何构造出来，还有2D游戏如何做出来。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -38,22 +40,29 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
+"这个工程是Godot引擎的一个介绍。是以你已经有了一些编程经验为前提的。如果你对编"
+"程完全是菜鸟，你应当从这一条开始: :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
+"这个游戏叫做“Dodge the Creeps!”。\n"
+"你的角色必须尽力的通过移动来避开敌人。下面是最终效果的预览："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
+"**为什么是2D？**3D游戏比2D游戏复杂很多。你应当从2D游戏入手直到你能很好的理解"
+"游戏开发工序。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
+#, fuzzy
 msgid "Project Setup"
-msgstr ""
+msgstr "工程准备"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -61,26 +70,37 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"运行Godot新建一个工程。\n"
+"然后下载:download:`dodge_assets.zip <files/dodge_assets.zip>` -你会在游戏中用"
+"到的图片和声音。解压这个文件到你的工程文件夹。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
+#, fuzzy
 msgid ""
 "For this tutorial, we will assume you are familiar with the editor. If you "
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"我们以为你熟悉编辑器的使用。为此，如果你还没有读过ref:`doc_scenes_and_nodes`,"
+"现在就看看，找出准备工程的解释以及使用编辑器的方法。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
+#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to 480 and \"Height\" to 720."
 msgstr ""
+"这个游戏会要使用肖像模式，因此我们需要调整游戏窗口的尺寸。依次点击Project -> "
+"Project Settings -> Display -> Window 然后调整宽度为480，高度为720。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
+#, fuzzy
 msgid "Organizing the Project"
-msgstr ""
+msgstr "管理工程"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
+#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
@@ -89,27 +109,40 @@ msgid ""
 "and scripts in the root folder, referred to as ``res://``.  You can see your "
 "project folders in the FileSystem Dock in the upper left corner:"
 msgstr ""
+"在这个工程里，我们会做出来3个独立的场景: ``Player``, ``Mob``, and ``HUD``,我"
+"们的游戏的主场景由这3个场景组合而成。在更大的工程里，这会对不同的文件夹容纳不"
+"同的场景以及它们各自的脚本很有帮助，但是对于这次的小游戏，你可以将你的场景和"
+"脚本存在根目录，称为“res://”。你能在文件系统的停靠栏的左上角看到你的工程文件"
+"夹。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
+#, fuzzy
 msgid "Player Scene"
-msgstr ""
+msgstr "玩家场景"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
+#, fuzzy
 msgid ""
 "The first scene we will make defines the ``Player`` object. One of the "
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"第一个场景，我们会定义“player”对象。创建一个分开的玩家场景的好处是我们可以单"
+"独测试它，即使我们还没有创建游戏的其它部分。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
+#, fuzzy
 msgid "Node Structure"
-msgstr ""
+msgstr "节点结构"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:65
+#, fuzzy
 msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
+"一开始，点击“Add/Create a New Node”按钮添加一个:ref:`Area2D <class_Area2D>`节"
+"点给场景。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -118,6 +151,9 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
+"使用``Area2D``类我们可以检测物体是否跑到玩家之中或者与玩家发生交叠。点击节点"
+"将其重命名为``Player``，它是场景的根节点，我们可以对该玩家节点添加额外的节点"
+"来添加其功能。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
 msgid ""
@@ -126,12 +162,17 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
+"在我们向``Player``节点添加子节点之前，我们可能希望确保不会因为点击他们而不小"
+"心移动或缩放他们，那就选中该节点然后点击锁头右侧的图标，它的工具提示描述为“确"
+"保物体的子节点不会被选中。”"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
+"保存场景，点击场景→保存，或者在Windows/Linux平台上按下``Ctrl+S``或是Mac上按下"
+"``Command+S``。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid ""
@@ -139,10 +180,13 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
+"对于该项目，我们会遵循Godot的命名规范，类（节点）使用``PascalCase``（大写分"
+"隔）命名，变量和函数使用``snake_case``（下划线分隔）命名，常量使用"
+"``ALL_CAPS``（全大写）命名。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
 msgid "Sprite Animation"
-msgstr ""
+msgstr "精灵动画"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -155,6 +199,13 @@ msgid ""
 "click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
 "``<SpriteFrames>`` to open the \"SpriteFrames\" panel:"
 msgstr ""
+"点击``Player``节点然后添加一个:ref:`AnimatedSprite "
+"<class_AnimatedSprite>`（动画精灵）节点作为子节点，``AnimateSprite``会处理我"
+"们的玩家的外观与动画。请注意在该节点的旁边会出现一个警告标志，一个"
+"``AnimatedSprite``需要一个:ref:`SpriteFrames <class_SpriteFrames>`（精灵帧"
+"集）资源，作为它能够显示的动画图像。欲创建之，在属性窗格（Inspector）里找到"
+"``Frames``属性，然后点击\"<无>\"→\"新建精灵帧集\"。接下来在同一位置点击"
+"``<SpriteFrames>``打开\"SpriteFrames\"面板："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:102
 msgid ""

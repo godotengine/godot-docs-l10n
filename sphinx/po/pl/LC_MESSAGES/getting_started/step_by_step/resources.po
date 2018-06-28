@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:4
 msgid "Resources"
-msgstr ""
+msgstr "Zasoby"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
-msgstr ""
+msgstr "Węzły i zasoby"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
 msgid ""
@@ -38,12 +38,17 @@ msgid ""
 "Where *Nodes* focus on behaviors, such as drawing a sprite, drawing a 3D "
 "model, physics, GUI controls, etc,"
 msgstr ""
+"Gdy *Węzły* skupiają się na zachowaniach, takich jak rysowanie spritów, "
+"modeli 3D, fizyki, elementów sterujących GUI itp.,"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:18
 msgid ""
 "**Resources** are mere **data containers**. This means that they don't do "
 "any action nor process any information. Resources just contain data."
 msgstr ""
+"**Zasoby** są jedynie **kontenerami danych**. Oznacza to, że nie wykonują "
+"one żadnych działań ani nie przetwarzają żadnych informacji. Zasoby po "
+"prostu zawierają dane."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:22
 msgid ""
@@ -52,6 +57,10 @@ msgid ""
 "<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
 "<class_Font>`, :ref:`Translation <class_Translation>`, etc."
 msgstr ""
+"Przykładami zasobów są: :ref:`Texture <class_Texture>`, :ref:`Script "
+"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
+"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
+"<class_Font>`, :ref:`Translation <class_Translation>`, itp."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:32
 msgid ""
@@ -59,6 +68,9 @@ msgid ""
 "(png, jpg), a script (.gd) or pretty much anything, that file is considered "
 "a resource."
 msgstr ""
+"Kiedy Godot zapisuje lub ładuje (z dysku) scenę (.tscn lub .scn), obraz "
+"(png, jpg), skrypt (.gd) albo wiele innych rzeczy, to plik ten jest uważany "
+"za zasób."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:36
 msgid ""
@@ -68,6 +80,11 @@ msgid ""
 "corresponds with the fact that resources are just data containers, so there "
 "is no need to have them duplicated."
 msgstr ""
+"W przypadku wczytania zasobu z dysku **jest on zawsze wczytywany raz**. "
+"Oznacza to, że jeśli kopia tego zasobu jest już wczytana do pamięci, próba "
+"wczytania zasobu ponownie zwróci tę samą kopię za każdym razem tą samą. "
+"Odpowiada to temu, że zasoby są tylko pojemnikami na dane, więc nie ma "
+"potrzeby duplikowania ich."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:42
 msgid ""
@@ -77,10 +94,15 @@ msgid ""
 "nodes and resources can contain resources as properties. To make it a little "
 "more visual:"
 msgstr ""
+"Zazwyczaj każdy obiekt w Godocie (Węzeł, Zasób lub cokolwiek innego) może "
+"eksportować właściwości. Właściwości może być wiele typów (np. string, "
+"integer, Vector2 itd.), a jeden z tych typów może być nawet zasobem. Oznacza "
+"to, że zarówno węzły, jak i zasoby mogą zawierać inne zasoby jako "
+"właściwości. Aby uczynić to trochę bardziej zrozumiałym:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid "External vs built-in"
-msgstr ""
+msgstr "Zewnętrzne a wbudowane"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:53
 msgid ""
@@ -93,6 +115,8 @@ msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
+"Mówiąc dokładniej, mamy tu węzeł :ref:`Texture <class_Texture>` w węźle :ref:"
+"`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:61
 msgid ""
@@ -100,6 +124,9 @@ msgid ""
 "and edit the resources properties. One of the properties (path) shows where "
 "it comes from. In this case, it comes from a png image."
 msgstr ""
+"Naciśnięcie przycisku \">\" po prawej stronie podglądu umożliwia nam "
+"przeglądanie i edycję właściwości zasobów. Jedna z właściwości (path) "
+"pokazuje skąd pochodzi. W tym przypadku pochodzi on z obrazu png."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:67
 msgid ""
@@ -107,6 +134,9 @@ msgid ""
 "resource. If the path property is erased (or it never had a path to begin "
 "with), it is considered a built-in resource."
 msgstr ""
+"Gdy zasób pochodzi z pliku, jest uważany za zasób *zewnętrzny*. Jeśli "
+"właściwość ścieżki zostanie skasowana (lub nigdy nie miała ustawionej "
+"ścieżki), jest ona traktowana jako wbudowany zasób."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:71
 msgid ""
@@ -118,26 +148,38 @@ msgid ""
 "loaded only once. That means, different Robi robot scenes instanced at the "
 "same time will still share the same image."
 msgstr ""
+"Na przykład, jeśli ścieżka \\`\"res://robi.png\"\\` zostanie skasowana z "
+"właściwości \"path\" w powyższym przykładzie, a następnie scena zostanie "
+"zapisana, zasób zostanie zapisany jako wewnątrz pliku sceny .tscn, nie "
+"odwołując się już do zewnętrznego \"robi.png\". Jednak nawet jeśli scena "
+"zostanie zapisana jako wbudowana i mimo że można ją wielokrotnie "
+"instancjować, zasób zawsze zostanie załadowany tylko raz. Oznacza to, że "
+"różne sceny robotów Robi wyświetlane w tym samym czasie nadal będą miały ten "
+"sam obraz."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:80
 msgid "Loading resources from code"
-msgstr ""
+msgstr "Ładowanie zasobów z kodu"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:82
 msgid ""
 "Loading resources from code is easy. There are two ways to do it. The first "
 "is to use load(), like this:"
 msgstr ""
+"Ładowanie zasobów z kodu jest łatwe. Można to zrobić na dwa sposoby. "
+"Pierwszym z nich jest użycie load() w ten sposób:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter because it loads the resource at compile-time."
 msgstr ""
+"Drugi sposób jest bardziej optymalny, ale działa tylko ze stałym parametrem "
+"łańcucha znaków, ponieważ ładuje zasób w czasie kompilacji."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:116
 msgid "Loading scenes"
-msgstr ""
+msgstr "Ładowanie scen"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:117
 msgid ""
@@ -145,12 +187,17 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. This means that "
 "the scene is packed inside a resource."
 msgstr ""
+"Sceny są również zasobami, ale jest pewien haczyk. Sceny zapisane na dysku "
+"to zasoby typu :ref:`PackedScene <class_PackedScene>`. Oznacza to, że scena "
+"jest zapakowana wewnątrz zasobu."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:121
 msgid ""
 "To obtain an instance of the scene, the method :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` must be used."
 msgstr ""
+"Aby uzyskać przykład sceny, należy użyć metody `PackedScene.instance() "
+"<class_PackedScene_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:143
 msgid ""
@@ -158,6 +205,9 @@ msgid ""
 "(sets all the properties) and returns the root node of the scene, which can "
 "be added to any other node."
 msgstr ""
+"Metoda ta tworzy węzły w hierarchii sceny, konfiguruje je (ustawia wszystkie "
+"właściwości) i zwraca węzeł główny sceny, który można dodać do dowolnego "
+"innego węzła."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:147
 msgid ""
@@ -168,10 +218,16 @@ msgid ""
 "each time. It is important to remember that, as always, images, meshes, etc "
 "are all shared between the scene instances."
 msgstr ""
+"Podejście to ma kilka zalet. Ponieważ funkcja :ref:`PackedScene.instance() "
+"<class_PackedScene_instance>` jest dość szybka, dodawanie dodatkowej "
+"zawartości do sceny może być wykonane wydajnie. Nowi wrogowie, kule, efekty, "
+"itp. mogą być szybko dodawane lub usuwane, bez konieczności ponownego "
+"ładowania ich za każdym razem z dysku. Należy pamiętać, że jak zawsze "
+"obrazy, siatki itp. są współdzielone pomiędzy instancjami sceny."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:156
 msgid "Freeing resources"
-msgstr ""
+msgstr "Zwalnianie zasobów"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
@@ -180,6 +236,11 @@ msgid ""
 "most cases, Resources are contained in Nodes, scripts or other resources, "
 "when a node is removed or freed, all the children resources are freed too."
 msgstr ""
+"Zasoby pochodzą z :ref:`Reference <class_Reference>`. W związku z tym, gdy "
+"zasób nie jest już używany, zwolni automatycznie się. Ponieważ w większości "
+"przypadków zasoby znajdują się w węzłach, skryptach lub innych zasobach, gdy "
+"węzeł jest usuwany lub uwalniany, wszystkie zasoby dzieci również są "
+"uwalniane."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid "Scripting"
@@ -191,3 +252,6 @@ msgid ""
 "However, there isn't generally much of an advantage, as resources are just "
 "data containers."
 msgstr ""
+"Jak każdy obiekt w Godocie, nie tylko węzły, również zasoby mogą być "
+"oskryptowane. Generalnie to nie daje zbyt dużo, ponieważ zasoby są tylko "
+"pojemnikami na dane."

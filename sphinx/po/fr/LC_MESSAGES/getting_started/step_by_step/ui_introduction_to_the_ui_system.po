@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,9 +112,8 @@ msgid "Bounding rectangle"
 msgstr "Rectangle de délimitation"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-#, fuzzy
 msgid "Focus and focus neighbour"
-msgstr "Se concentrer et se concentrer sur son voisin"
+msgstr "Focus et focus voisin"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
@@ -269,7 +268,6 @@ msgid "TextureRect modulated with a red color"
 msgstr "TextureRect modulé par la couleur rouge"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
-#, fuzzy
 msgid "TextureButton"
 msgstr "TextureButton"
 
@@ -289,7 +287,6 @@ msgstr ""
 "image en noir et blanc de 2 bits."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:104
-#, fuzzy
 msgid ""
 "In the Base Button section, you'll find a few checkboxes that change how the "
 "button behaves. When ``Toggle Mode`` is on, the button will toggle between "
@@ -302,11 +299,11 @@ msgstr ""
 "Dans la section Bouton de base, vous trouverez quelques cases à cocher qui "
 "modifient le comportement du bouton. Lorsque l'option ``Toggle Mode`` est "
 "activée, le bouton bascule entre l'état actif et l'état normal lorsque vous "
-"appuyez dessus. Désactivé\" le désactive par défaut, auquel cas il utilisera "
-"la texture ``Disabled``. TextureButton partage quelques propriétés avec le "
-"cadre de texture : il a une propriété ``modulate``, pour changer sa couleur, "
-"et les modes ``Resize`` et ``Stretch`` pour changer son comportement "
-"d'échelle."
+"appuyez dessus. ``Disabled`` le désactive par défaut, auquel cas il "
+"utilisera la texture ``Disabled``. TextureButton partage quelques propriétés "
+"avec le cadre de texture : il a une propriété ``modulate``, pour changer sa "
+"couleur, et les modes ``Resize`` et ``Stretch`` pour changer son "
+"comportement d'échelle."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:114
 msgid "TextureButton and its 5 texture slots"
@@ -659,8 +656,8 @@ msgid ""
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor so you can see the effect instantly."
 msgstr ""
-"Les conteneurs rangent automatiquement tous les noeuds enfants Control, y "
-"compris les autres conteneurs en rangées, colonnes et plus encore. Utilisez-"
+"Les conteneurs rangent automatiquement tous les nœuds Control enfants, y "
+"compris les autres conteneurs, en rangées, colonnes et plus encore. Utilisez-"
 "les pour ajouter du remplissage autour de votre interface ou des nœuds "
 "centraux dans leurs rectangles de délimitation. Tous les conteneurs intégrés "
 "sont mis à jour dans l'éditeur pour que vous puissiez voir l'effet "

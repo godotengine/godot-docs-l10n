@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,36 +19,42 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
 msgid "Importing 3D Scenes"
-msgstr ""
+msgstr "Importowanie scen 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
 msgid "Godot Scene Importer"
-msgstr ""
+msgstr "Importer scen Godot"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
 msgid ""
 "When dealing with 3D assets, Godot has a flexible and configurable importer."
 msgstr ""
+"W przypadku zasobów 3D, Godot posiada elastyczny i konfigurowalny importer."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:11
 msgid ""
 "Godot works with *scenes*. This means that the entire scene being worked on "
 "in your favorite 3D DCC will be transferred as close as possible."
 msgstr ""
+"Godot pracuje ze *scenami*. Oznacza to, że cała scena, nad którą pracujesz w "
+"programie do tworzenia 3D, zostanie przeniesiona tak, jak to tylko jest "
+"możliwe."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:14
 msgid "Godot supports the following 3D *scene file fomats*:"
-msgstr ""
+msgstr "Godot wspiera następujące *formaty plików scen* 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
 msgid "DAE (Collada), which is currently the most mature workflow."
-msgstr ""
+msgstr "DAE (Collada), który jest obecnie najardziej dojrzałym rozwiązaniem"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:17
 msgid ""
 "GLTF 2.0. Both text and binary formats are supported. Godot has full support "
 "for it, but the format is new and gaining traction."
 msgstr ""
+"GLTF 2.0. Obsługiwane są zarówno formaty tekstowe, jak i binarne. Godot ma "
+"jego pełne wsparcie. Format jest nowy i zyskuje na popularności."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:18
 msgid ""
@@ -64,7 +70,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:23
 msgid "Why not FBX?"
-msgstr ""
+msgstr "Dlaczego nie FBX?"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:25
 msgid ""
@@ -73,16 +79,23 @@ msgid ""
 "format requires the use of a closed library from Autodesk which is "
 "distributed with a more restrictive licensing terms than Godot."
 msgstr ""
+"Większość silników gier używa formatu FBX do importowania scen 3D, który "
+"jest zdecydowanie jednym z najbardziej ustandaryzowanym formatem w branży. "
+"Format ten wymaga jednak korzystania z zamkniętej biblioteki Autodesk, która "
+"jest dystrybuowana na bardziej restrykcyjnych warunkach licencyjnych niż "
+"Godot."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:30
 msgid ""
 "The plan is, sometime in the future, to offer a binary plug-in using "
 "GDNative."
 msgstr ""
+"Planuje się, że w przyszłości będzie stworzona binarna wtyczka "
+"wykorzystująca GDNative."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:33
 msgid "Exporting DAE files from Maya and 3DS Max"
-msgstr ""
+msgstr "Eksportowanie plików DAE z Maya i 3DS Max"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:35
 msgid ""
@@ -95,23 +108,27 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:43
 msgid "Exporting DAE files from Blender"
-msgstr ""
+msgstr "Eksportowanie plików DAE z Blendera"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:45
 msgid ""
 "Blender has built-in collada support too, but it's also broken and should "
 "not be used."
 msgstr ""
+"Blender posiada wbudowaną obsługę dla collada lecz jest ona zepsuta i nie "
+"powinna być używana"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:48
 msgid ""
 "Godot provides a `Python Plugin <https://github.com/godotengine/collada-"
 "exporter>`__ that will do a much better job of exporting the scenes."
 msgstr ""
+"Godot dostarcza `wtyczkę dla Pythona <https://github.com/godotengine/collada-"
+"exporter>`__, która o wiele lepiej wyeksportuje sceny."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
 msgid "Exporting ESCN files from Blender"
-msgstr ""
+msgstr "Eksportowanie plików ESCN z Blendera"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
 msgid ""
@@ -120,12 +137,18 @@ msgid ""
 "another name of .tscn file(Godot scene file), it keeps as much information "
 "as possible from a Blender scene."
 msgstr ""
+"Najlepszym jest `godot-blender-exporter <https://github.com/godotengine/"
+"godot-blender-exporter>`__.  Używa plików .escn, które są rodzajem innej "
+"nazwy pliku .tscn (plik sceny Godota), przechowuje tyle informacji z "
+"Blendera ile się da."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
 msgid ""
 "ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
 msgstr ""
+"Eksporter ESCN posiada szczegółowy `dokument <escn_exporter/index.html>`__ "
+"opisujący jego funkcjonalności."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:64
 msgid "Import workflows"
@@ -173,7 +196,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
 msgid "Import Options"
-msgstr ""
+msgstr "Opcje importowania"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:82
 msgid "The importer has several options, which will be discussed below:"
@@ -181,7 +204,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:87
 msgid "Nodes:"
-msgstr ""
+msgstr "Węzły:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
 msgid "Root Type"
@@ -203,7 +226,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:100
 msgid "Custom Script"
-msgstr ""
+msgstr "Własny skrypt"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:102
 msgid ""
@@ -245,7 +268,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:132
 msgid "Materials"
-msgstr ""
+msgstr "Materiały"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:135
 msgid "Location"
@@ -273,7 +296,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:151
 msgid "Keep on Reimport"
-msgstr ""
+msgstr "Zachowaj przy ponownym imporcie"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:153
 msgid ""
@@ -284,7 +307,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:158
 msgid "Compress"
-msgstr ""
+msgstr "Kompresja"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:160
 msgid ""
@@ -294,7 +317,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:173
 msgid "These are:"
-msgstr ""
+msgstr "Tymi są"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:164
 msgid ""
@@ -358,7 +381,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:177
 msgid "Additional info:"
-msgstr ""
+msgstr "Dodatkowe informacje:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:176
 msgid ""
@@ -411,7 +434,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:205
 msgid "External Files"
-msgstr ""
+msgstr "Zewnętrzne pliki"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:207
 msgid ""
@@ -437,7 +460,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:223
 msgid "FPS"
-msgstr ""
+msgstr "Klatki na sekundę"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:225
 msgid ""
@@ -467,7 +490,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:243
 msgid "Optimizer"
-msgstr ""
+msgstr "Optymalizator"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:245
 msgid ""
@@ -526,7 +549,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:273
 msgid "Import Hints"
-msgstr ""
+msgstr "Wskazówki importowania"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:275
 msgid ""

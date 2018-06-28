@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,16 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
-msgstr ""
+msgstr "GDScript formatowanie łańcuchów znaków"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
 msgid ""
 "GDScript offers a feature called *format strings* which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
+"GDScript oferuje cechę nazywaną *format strings*, która pozwala na ponowne "
+"używanie szablonów tekstu, aby streścić tworzenie różnych, ale podobnych "
+"łańcuchów."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -33,6 +36,9 @@ msgid ""
 "placeholder character-sequences. These placeholders can then easily be "
 "replaced by parameters handed to the format string."
 msgstr ""
+"Formatowane łańcuchy znaków są zwykł ciągami, z wyjątkiem tego, że zawierają "
+"pewne sekwencje znaków zastępczych. Te pola wyboru można łatwo zastąpić "
+"parametrami przekazanymi do formatowanego  łańcucha."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -41,14 +47,18 @@ msgid ""
 "Notice the placeholder is in the middle of the string; modifying it without "
 "format strings could be cumbersome."
 msgstr ""
+"Na przykład, z ``%s`` jako znakiem specjalnym, ciąg ``\"Witaj %s, jak to "
+"robisz?`` można łatwo zmienić na ``\"Witaj Świecie, jak to robisz?\"``. "
+"Zauważ, że okno dialogowe znajduje się pośrodku łańcucha; modyfikowanie go "
+"bez formatowania może być kłopotliwe."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:20
 msgid "Usage in GDScript"
-msgstr ""
+msgstr "Zastosowanie w GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:22
 msgid "Examine this concrete GDScript example:"
-msgstr ""
+msgstr "Przeanalizujemy ten konkretny przykład GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:35
 msgid ""
@@ -56,6 +66,9 @@ msgid ""
 "characters, the *format specifier*, determines how the given value is "
 "converted to a string."
 msgstr ""
+"Znaki specjalne zawsze zaczynają się od ``%``, ale następnie musi być znak "
+"lub znaki, *typ formatu*, określa jak dana wartość jest konwertowana do typu "
+"string(łańcuch/ciąg znaków)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:39
 msgid ""
@@ -289,6 +302,8 @@ msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
 msgstr ""
+"Znak ``-`` spowoduje przesunięcie w prawo, a nie w lewo, przydatne do "
+"wyrównania tekstu w prawo:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
@@ -331,23 +346,23 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
 msgid "**Type**"
-msgstr ""
+msgstr "**Typ**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 msgid "**Style**"
-msgstr ""
+msgstr "**Styl**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:275
 msgid "**Example**"
-msgstr ""
+msgstr "**Przykład**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:275
 msgid "**Result**"
-msgstr ""
+msgstr "**Wynik**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -365,6 +380,8 @@ msgid ""
 "\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})"
 msgstr ""
+"\"Hej, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -373,7 +390,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "Hi, Godette v3.0!"
-msgstr ""
+msgstr "Hej, Godette v3.0!"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -382,7 +399,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
 msgid "\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
-msgstr ""
+msgstr "\"Hej, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
@@ -393,6 +410,7 @@ msgstr ""
 msgid ""
 "\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
 msgstr ""
+"\"Hej, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -405,10 +423,12 @@ msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
 "\"]])"
 msgstr ""
+"\"Hej, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":"
+"\"Godette\"]])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 msgid "\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
-msgstr ""
+msgstr "\"Hej, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "\"Hi, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
@@ -436,19 +456,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Postfix"
-msgstr ""
+msgstr "Postfiks"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
-msgstr ""
+msgstr "\"Hej, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Prefix"
-msgstr ""
+msgstr "Prefiks"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
-msgstr ""
+msgstr "\"Hej, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:271
 msgid ""
@@ -461,7 +481,9 @@ msgstr ""
 msgid ""
 "\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % 3.114})"
 msgstr ""
+"\"Hej, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "Hi, Godette v3.11"
-msgstr ""
+msgstr "Hej, Godette v3.11"

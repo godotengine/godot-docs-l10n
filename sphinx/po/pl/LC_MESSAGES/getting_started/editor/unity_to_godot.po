@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -461,6 +461,12 @@ msgid ""
 "\"Spatial\" (root type of all 3D-related nodes) or \"Control\" (root type of "
 "all GUI-related nodes)."
 msgstr ""
+"Na koniec, główna scena składałaby się z jednego głównego węzła z dwojgiem "
+"dzieci: węzła instancji Player i węzła instancji Level. Węzłem głównym może "
+"być dowolny, zazwyczaj typ \"root\", taki jak \"Node\", który jest "
+"najbardziej globalnym typem, lub \"Node2D\" (typ root wszystkich węzłów "
+"związanych z 2D), \"Spatial\" (typ root wszystkich węzłów związanych z 3D) "
+"lub \"Control\" (typ root wszystkich węzłów związanych z GUI)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:140
 msgid ""
@@ -471,6 +477,12 @@ msgid ""
 "collision types nodes, depending of the use (see the :ref:`Physics "
 "introduction <doc_physics_introduction>`)."
 msgstr ""
+"Jak widać, każda scena jest zorganizowana jako drzewo. To samo dotyczy "
+"właściwości węzłów: nie *dodawaj* komponentu kolizji do węzła, tak jak ma to "
+"miejsce w Unity. Zamiast tego uczynisz z tego węzła *dziecko* nowego węzła, "
+"który ma możliwość kolizji. Godot posiada różne węzły typów kolizji, w "
+"zależności od zastosowania (patrz: :ref:`Fizyka Podstawy "
+"<doc_physics_introduction>`)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
 msgid ""
@@ -501,10 +513,12 @@ msgid ""
 "These are the most important concepts you need to remember: \"node\", "
 "\"parent node\", and \"child node\"."
 msgstr ""
+"Są to najważniejsze pojęcia, o których należy pamiętać: \"węzeł\", \"węzeł "
+"rodzicielski\" i \"węzeł dziecięcy\"."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:155
 msgid "Project organization"
-msgstr ""
+msgstr "Organizacja projektu"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:159
 msgid ""
@@ -512,6 +526,9 @@ msgid ""
 "architecture. Any solution will work for Unity and Godot, so this point has "
 "a lesser importance."
 msgstr ""
+"Wcześniej zauważyliśmy, że nie ma idealnego rozwiązania dla architektury "
+"projektu. Każde rozwiązanie będzie działało na Unity i Godocie, więc ten "
+"punkt ma mniejsze znaczenie."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:162
 msgid ""
@@ -520,6 +537,10 @@ msgid ""
 "various folders, one per type of asset: Audio, Graphics, Models, Materials, "
 "Scripts, Scenes, etc."
 msgstr ""
+"Często jednak obserwujemy wspólną hierarchię plików w projekcie w Unity, "
+"która polega na tym, że w katalogu głównym znajduje się jeden folder Assets "
+"zawierający różne foldery, jeden według rodzaju zasobów: Dźwięk, Grafika, "
+"Modele, Materiały, Skrypty, Sceny itp."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:165
 msgid ""
@@ -528,10 +549,14 @@ msgid ""
 "the project, we recommend organizing your project a bit differently. This "
 "wiki provides a page for this: :ref:`doc_project_organization`."
 msgstr ""
+"Jak opisano powyżej, system sceny Godota umożliwia dzielenie scen na "
+"mniejsze sceny. Ponieważ każda scena i podscena to w rzeczywistości jeden "
+"plik sceny w projekcie, zalecamy zorganizowanie projektu nieco inaczej :ref:"
+"`doc_project_organization`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:171
 msgid "Where are my prefabs?"
-msgstr ""
+msgstr "Gdzie są moje prefaby?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:173
 msgid ""
@@ -540,6 +565,9 @@ msgid ""
 "scene has an existence of its own, but all of them have the same properties "
 "as defined by the prefab."
 msgstr ""
+"Koncepcja prefabów w Unity, który jest \"szablonem\" elementów na scenie. "
+"Można go ponownie wykorzystać, a każda instancja istnieje oddzielnie, ale "
+"wszystkie mają te same właściwości, co prefab."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:177
 msgid ""
@@ -551,6 +579,13 @@ msgid ""
 "separate scene will be applied to its instances. However, any change you "
 "make to the instance will not have any impact on the 'template' scene."
 msgstr ""
+"Godot nie dostarcza prefabów jako takich, ale ta funkcjonalność jest tu "
+"wypełniona dzięki systemowi scen: Jak widzieliśmy jest zorganizowany jako "
+"drzewo. Godot pozwala zapisywać poddrzewo sceny jako swoją własną scenę, a "
+"tym samym zapisywać je do własnego pliku. Ta nowa scena może być "
+"instancjowana tyle razy, ile chcesz. Wszelkie zmiany dokonane w tej nowej, "
+"oddzielnej scenie zostaną zastosowane w jej instancjach. Jednak jakakolwiek "
+"zmiana w instancji nie będzie miała żadnego wpływu na scenę \"szablonu\"."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:185
 msgid ""
@@ -563,6 +598,14 @@ msgid ""
 "'template' scene. If you want to add new children to all the instances of "
 "your 'template' scene, then you need to add them in the 'template' scene."
 msgstr ""
+"Precyzyjnie rzecz ujmując, można modyfikować parametry instancji w panelu "
+"Inspektor. Węzły składające się na tę instancję są jednak zablokowane, ale "
+"można je odblokować, klikając prawym przyciskiem myszy instancję na drzewie "
+"sceny i wybierając w menu \"Edytuj dzieci\". Nie musisz tego robić, aby "
+"dodać nowe węzły dla dzieci tego węzła, ale jest to możliwe. Pamiętaj, że te "
+"nowe dzieci będą należeć do instancji, a nie do sceny \"szablonu\". Jeśli "
+"chcesz dodać nowe dzieci do wszystkich instancji sceny \"szablonu\", musisz "
+"dodać je do sceny \"szablonu\"."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:195
 msgid "Glossary correspondence"
@@ -573,20 +616,24 @@ msgid ""
 "GameObject -> Node Add a component -> Inheriting Prefab -> Externalized "
 "branch"
 msgstr ""
+"GameObject -> Node Add a component -> Inheriting Prefab -> Externalized "
+"branch"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
-msgstr ""
+msgstr "Pisanie skryptów GDScript, C# i Visual Script"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:206
 msgid "Design"
-msgstr ""
+msgstr "Wygląd"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:208
 msgid ""
 "As you may know already, Unity supports C#. C# benefits from its integration "
 "with Visual Studio and other features, such as static typing."
 msgstr ""
+"Jak być może już wiesz, Unity obsługuje C#. C# czerpie korzyści z integracji "
+"z Visual Studio i innymi funkcjami, takimi jak statyczne typowanie."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:210
 msgid ""
@@ -599,6 +646,14 @@ msgid ""
 "really easy to learn: Between one evening for an experienced programmer and "
 "a week for a complete beginner."
 msgstr ""
+"Godot zapewnia swój własny język skryptowy, :ref:`GDScript <doc_scripting>` "
+"oraz wsparcie dla :ref:`Visual Script <toc-learn-scripting-visual_scriptum>` "
+"oraz :ref:`doc_c_sharp`. GDScript pożycza składnię z Pythona, ale nie jest z "
+"nim związany. Jeśli zastanawiasz się nad rozumowaniem niestandardowego "
+"języka skryptowego, przeczytaj :ref:`GDScript <doc_gdscript>` i `FAQ <faq>`. "
+"GDScript jest silnie związany z Godot API i naprawdę łatwy do nauczenia się: "
+"potrwa to od jednego wieczoru dla doświadczonego programisty do tygodnia dla "
+"początkującego."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:216
 msgid ""
@@ -607,6 +662,10 @@ msgid ""
 "script so that it reacts to the player's controls, and another that controls "
 "its specific game logic."
 msgstr ""
+"Unity pozwala dołączyć do GameObject tyle skryptów, ile chcesz. Każdy skrypt "
+"dodaje do GameObject nowe zachowanie: Na przykład, możesz dołączyć skrypt "
+"tak, aby reagował na sterowanie gracza, oraz skrypt, który kontroluje jego "
+"logikę gry."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:220
 msgid ""
@@ -615,18 +674,26 @@ msgid ""
 "need to attach more scripts to one node, then you may consider two "
 "solutions, depending on your scene and on what you want to achieve:"
 msgstr ""
+"W Godot możesz dołączyć tylko jeden skrypt na węzeł. Można użyć zewnętrznego "
+"pliku GDScript lub dołączyć skrypt bezpośrednio do węzła. Jeśli chcesz "
+"dołączyć więcej skryptów do jednego węzła, możesz rozważyć dwa rozwiązania, "
+"w zależności od sceny i tego, co chcesz osiągnąć:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:224
 msgid ""
 "either add a new node between your target node and its current parent, then "
 "add a script to this new node."
 msgstr ""
+"Dodaj nowy węzeł pomiędzy węzłem docelowym a jego bieżącym węzłem "
+"macierzystym, a następnie dodaj skrypt do tego nowego węzła."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:225
 msgid ""
 "or, your can split your target node into multiple children and attach one "
 "script to each of them."
 msgstr ""
+"lub, możesz podzielić swój węzeł docelowy na kilka dzieci i dołączyć po "
+"jednym skrypcie do każdego z nich."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:227
 msgid ""
@@ -634,10 +701,13 @@ msgid ""
 "it is important to have a real reflection and consider splitting a "
 "complicated scene into multiple, smaller branches."
 msgstr ""
+"Jak widać, łatwo jest zmienić drzewo sceny w bałagan. Dlatego ważne jest, "
+"aby mieć rozważyć podzielenie skomplikowanej sceny na wiele mniejszych "
+"gałęzi."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
 msgid "Connections : groups and signals"
-msgstr ""
+msgstr "Połączenia : grupy i sygnały"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid ""
@@ -646,6 +716,11 @@ msgid ""
 "them in a group and call a function on all nodes contained in this group! "
 "This is explained in :ref:`this page <doc_scripting_continued>`."
 msgstr ""
+"Węzły można kontrolować, uzyskując do nich dostęp za pomocą skryptu i "
+"wywoływania funkcji (wbudowanych lub zdefiniowanych przez użytkownika). Ale "
+"to nie wszystko: Możesz również umieścić je w grupie i wywołać funkcję na "
+"wszystkich węzłach znajdujących się w tej grupie! Jest to wyjaśnione w :ref:"
+"`tej stronie <doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
 #, fuzzy

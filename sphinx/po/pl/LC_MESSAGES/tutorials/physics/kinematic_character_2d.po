@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:23
 msgid "So, what is the difference?:"
-msgstr ""
+msgstr "Jaka jest więc różnica?:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:25
 msgid ""
@@ -78,10 +78,14 @@ msgid ""
 "necessarily simpler under the hood, but well hidden and presented as a nice "
 "and simple API)."
 msgstr ""
+"Ten krótki samouczek skoncentruje się na kinematyczny kontrolerze postaci. "
+"Zasadniczo, stary sposób obsługi kolizjami (który niekoniecznie jest "
+"prostszy pod maską, ale dobrze ukryty i przedstawiony jako ładne i proste "
+"API)."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:48
 msgid "Physics process"
-msgstr ""
+msgstr "Proces fizyki"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:50
 msgid ""
@@ -103,6 +107,9 @@ msgid ""
 "download:`kbscene.zip <files/kbscene.zip>`. We'll be creating a new scene "
 "for the character. Use the robot sprite and create a scene like this:"
 msgstr ""
+"Oto scena (z samouczka tilemap) : :download:`kbscene.zip <files/kbscene."
+"zip>`. Stworzymy nową scenę dla bohatera. Użyj robota sprite i stwórz taką "
+"scenę:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:88
 msgid ""
@@ -111,6 +118,10 @@ msgid ""
 "in the shape property of CollisionShape2D. Click on <CircleShape2D> to go to "
 "the options for it, and set the radius to 30:"
 msgstr ""
+"Zauważysz, że obok naszego węzła CollisionShape2D znajduje się ikona "
+"ostrzegawcza, ponieważ nie zdefiniowaliśmy dla niego kształtu. Utwórz nowe "
+"koło CircleShape2D we właściwościach kształtu CollisionShape2D. Kliknij na "
+"<CircleShape2D>, aby przejść do opcji i ustaw promień na 30:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:95
 msgid ""
@@ -126,12 +137,15 @@ msgid ""
 "Now create a script for the character, the one used as an example above "
 "should work as a base."
 msgstr ""
+"Teraz utwórz skrypt dla postaci, ten, który posłużył jako przykład powyżej."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:105
 msgid ""
 "Finally, instance that character scene in the tilemap, and make the map "
 "scene the main one, so it runs when pressing play."
 msgstr ""
+"Na koniec dodaj scenę postaci do tilemapie, i zrób mapę jako główną scenę, "
+"która zostanie uruchomiona natychmiast po naciśnięciu przycisku odtwarzania."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:111
 msgid "Moving the Kinematic character"
@@ -150,13 +164,15 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:121
 msgid "So, let's move our sprite downwards until it hits the floor:"
-msgstr ""
+msgstr "Przesuńmy więc nasz sprite w dół, aż uderzy o podłogę:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:146
 msgid ""
 "The result is that the character will move, but stop right when hitting the "
 "floor. Pretty cool, huh?"
 msgstr ""
+"W rezultacie postać będzie się poruszać, ale zatrzyma się bezpośrednio po "
+"uderzeniu w podłogę. Nieźle, co?"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:149
 msgid ""
@@ -170,14 +186,18 @@ msgid ""
 "right when touching the directional keys. Remember that the values being "
 "used (for speed at least) is pixels/second."
 msgstr ""
+"Teraz postać spada płynnie. Zacznijmy go chodzić na boki, w lewo i w prawo "
+"za pomocą strzałek na klawiaturze. Należy pamiętać, że używane wartości "
+"(przynajmniej dla prędkości) to piksele/sekundę."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:189
 msgid "This adds simple walking support by pressing left and right:"
 msgstr ""
+"Dodaje to proste poruszanie się poprzez naciskania lewego i prawego klawisza:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:254
 msgid "And give it a try."
-msgstr ""
+msgstr "Spróbuj."
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:256
 msgid ""
@@ -185,3 +205,6 @@ msgid ""
 "found in the demo zip distributed with the engine, or in the https://github."
 "com/godotengine/godot-demo-projects/tree/master/2d/kinematic_character."
 msgstr ""
+"Jest to dobry początek dla platformówki. Bardziej dokończone demo można "
+"znaleźć w https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
+"kinematic_character."

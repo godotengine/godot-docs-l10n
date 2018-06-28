@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,26 +18,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:2
-#, fuzzy
 msgid "Physics Properties"
-msgstr "Propiedades de los nodos"
+msgstr "Propiedades Físicas"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:3
 msgid ""
 "Exporting physics properties is done by enabling \"Rigid Body\" in Blenders "
 "physics tab:"
 msgstr ""
+"La exportación de las propiedades físicas se realiza habilitando \"Rigid Body"
+"\" en la pestaña physics de Blender:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:9
 msgid ""
 "By default, a single Blender object with rigid body enabled will export as "
 "three nodes: a PhysicsBody, a CollisionShape, and a MeshInstance."
 msgstr ""
+"Por defecto, un solo objeto Blender con cuerpo rígido habilitado se "
+"exportará como tres nodos: un PhysicsBody, un CollisionShape y un "
+"MeshInstance."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
-#, fuzzy
 msgid "Body Type"
-msgstr "By Type"
+msgstr "Tipo de Cuerpos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:15
 msgid ""
@@ -45,10 +48,14 @@ msgid ""
 "These turn into Static and RigidBody nodes. To create a kinematic body, "
 "enable the \"animated\" checkbox on an \"Active\" body:"
 msgstr ""
+"Blender sólo tiene el concepto de cuerpos rígidos \"Active\" y \"Passive\". "
+"Estos se convierten en nodos Static y RigidBody. Para crear un cuerpo "
+"cinemático, activa la casilla de verificación \"animated\" en un cuerpo "
+"\"Active\":"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
 msgid "Collision Shapes"
-msgstr "Figuras de Colisión"
+msgstr "Formas de Colisión"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:24
 msgid ""
@@ -57,11 +64,14 @@ msgid ""
 "the options in Blender's rigid body collision and rigid body dynamics "
 "interfaces are supported:"
 msgstr ""
+"En Blender faltan muchos de los parámetros para las formas de colisión, y "
+"muchas de las formas de colisión tampoco están presentes. Sin embargo, casi "
+"todas las opciones en las interfaces de colisión de cuerpo rígido y dinámica "
+"de cuerpo rígido de Blender son soportadas:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:38
-#, fuzzy
 msgid "There are the following caveats:"
-msgstr "Tenemos entonces la siguiente tabla:"
+msgstr "Hay las siguientes advertencias:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:32
 msgid ""
@@ -69,6 +79,9 @@ msgid ""
 "Hull``, ``Capsule``, ``Sphere`` and ``Box`` are supported in both Blender "
 "and Godot"
 msgstr ""
+"No todas las formas de colisión son compatibles. Sólo ``Mesh``, ``Convex "
+"Hull``, ``Capsule``, ``Sphere`` y ``Box`` son compatibles tanto con Blender "
+"como con Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:35
 msgid ""
@@ -77,11 +90,14 @@ msgid ""
 "collision mask is equal to it's collision group. Most of the time, this is "
 "what you want."
 msgstr ""
+"En Godot, puedes tener diferentes grupos de colisión y máscaras de colisión. "
+"En Blender sólo tienes grupos de colisión. Como resultado, la máscara de "
+"colisión del objeto exportado es igual a su grupo de colisión. En la mayoría "
+"de los casos, esto era lo que buscabas."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:47
-#, fuzzy
 msgid "Collision Geometry Only"
-msgstr "Detección de colisiones en 3D"
+msgstr "Sólo Geometría de Colisión"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:48
 msgid ""
@@ -90,6 +106,10 @@ msgid ""
 "the collision shape. To only export the collision shape, set the objects "
 "maximum draw type to Wire:"
 msgstr ""
+"Con frecuencia se necesita una geometría diferente para las mallas de "
+"colisión y las mallas gráficas, pero por defecto el exportador exportará una "
+"malla junto con la forma de la colisión. Para exportar sólo la forma de "
+"colisión, establece el tipo de dibujo máximo para los objetos en Wire:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:55
 msgid ""
@@ -97,3 +117,7 @@ msgid ""
 "of the time, you want your collision geometry to be shown see-through when "
 "working on the models, so this works out fairly nicely."
 msgstr ""
+"Esto también influirá en cómo se muestra el objeto en la vista de Blender. "
+"La mayoría de las veces, es conveniente que la geometría de la colisión se "
+"muestre transparente cuando se trabaja con los modelos, para que esto "
+"funcione correctamente."

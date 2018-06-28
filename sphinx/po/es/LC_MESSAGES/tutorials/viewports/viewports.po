@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr ""
+msgstr "Viewports (Ventanas)"
 
 #: ../../docs/tutorials/viewports/viewports.rst:7
 msgid "Introduction"
@@ -92,13 +92,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
-#, fuzzy
 msgid ""
 "For more information on how Godot handles input please read the :ref:`Input "
 "Event Tutorial<doc_inputevent>`."
 msgstr ""
-"Para obtener más información sobre los eventos propios, consulte el "
-"tutorial :ref:`doc_inputevent`."
+"Para más información sobre cómo maneja Godot las entradas, por favor lee el :"
+"ref:`Tutorial de eventos de entrada<doc_inputevent>`."
 
 #: ../../docs/tutorials/viewports/viewports.rst:51
 msgid "Listener"
@@ -195,7 +194,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:116
-#, fuzzy
 msgid ""
 "As a helper for situations where you want to create :ref:`Viewports "
 "<class_Viewport>` that display single objects and don't want to create a :"
@@ -203,10 +201,11 @@ msgid ""
 "to use its own :ref:`World <class_World>`. This is useful when you want to "
 "instance 3D characters or objects in a 2D :ref:`World <class_World2D>`."
 msgstr ""
-"Como ayudante para situaciones en las que quieras crear vistas que muestren "
-"objetos individuales y no quieras crear un mundo, la vista tiene la opción "
-"de usar su propio Mundo. Esto es muy útil cuando se desea crear personajes u "
-"objetos 3D en el mundo 2D."
+"Como ayudante para situaciones en las que se quiera crear :ref:`Viewports "
+"<class_Viewport>` que muestren objetos individuales y no se quiera crear un :"
+"ref:`World <class_World>`, :ref:`Viewport <class_Viewport>` tiene la opción "
+"de usar su propio :ref:`World <class_World>`. Esto es muy útil cuando se "
+"desea crear personajes u objetos 3D en un 2D :ref:`World <class_World2D>`."
 
 #: ../../docs/tutorials/viewports/viewports.rst:121
 msgid ""
@@ -253,9 +252,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:163
-#, fuzzy
 msgid "Viewport Container"
-msgstr "Vistas y Canvas items"
+msgstr "Container Viewport"
 
 #: ../../docs/tutorials/viewports/viewports.rst:165
 msgid ""
@@ -265,7 +263,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:170
-#, fuzzy
 msgid ""
 "The :ref:`Viewport <class_Viewport>` will cover the area of its parent :ref:"
 "`ViewportContainer <class_viewportcontainer>` completely if stretch is set "
@@ -273,14 +270,15 @@ msgid ""
 "size of the :ref:`ViewportContainer <class_viewportcontainer>` cannot be "
 "smaller than the size of the :ref:`Viewport <class_Viewport>`."
 msgstr ""
-"El Viewport cubrirá completamente el área de su control padre, si el "
-"estiramiento se establece en true en Viewport Container. Pero tendrás que "
-"configurar el tamaño del Viewport para ver la parte apropiada del Viewport. "
-"Y el Container Viewport no puede ser más pequeño que el tamaño del Viewport."
+"El :ref:`Viewport <class_Viewport>` abarcará completamente el área de su "
+"padre :ref:`ViewportContainer <class_viewportcontainer>` si stretch está "
+"ajustado a true en :ref:`ViewportContainer <class_viewportcontainer>`. Nota: "
+"El tamaño del :ref:`ViewportContainer <class_viewportcontainer>` no puede "
+"ser menor que el tamaño del :ref:`Viewport <class_Viewport>`."
 
 #: ../../docs/tutorials/viewports/viewports.rst:175
 msgid "Rendering"
-msgstr ""
+msgstr "Renderización"
 
 #: ../../docs/tutorials/viewports/viewports.rst:177
 msgid ""
@@ -386,13 +384,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:245
-#, fuzzy
 msgid ""
 "Make sure to check the Viewport demos! Viewport folder in the demos archive "
 "available to download, or https://github.com/godotengine/godot-demo-projects/"
 "tree/master/viewport"
 msgstr ""
-"Este es un buen punto de partida para un juego de plataformas. Se puede "
-"encontrar una demostración más completa en el zip de demostración "
-"distribuido con el motor, o en https://github.com/godotengine/godot-demo-"
-"projects/tree/master/2d/kinematic_character."
+"¡Asegúrate de revisar las demos de Viewport! Carpeta Viewport en el archivo "
+"de demos disponible para descargar, o https://github.com/godotengine/godot-"
+"demo-projects/tree/master/viewport"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:4
 msgid "Importing Images"
-msgstr ""
+msgstr "Importowanie obrazów"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
 msgid "Why importing them?"
-msgstr ""
+msgstr "Dlaczego imortować je?"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid ""
@@ -31,16 +31,21 @@ msgid ""
 "imported. The reason behind this is the large amount of configuration "
 "parameters that image files can be imported with."
 msgstr ""
+"W Godot 3+ pliki graficzne nie są już zasobami natywnymi i muszą być "
+"zaimportowane. Powodem tego jest duża ilość parametrów konfiguracyjnych, za "
+"pomocą których można zaimportować pliki obrazu."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:13
 msgid ""
 "This small tutorial will explain what these parameters are and how to best "
 "make use of them."
 msgstr ""
+"Ten mały samouczek wyjaśni, czym są te parametry i jak je najlepiej "
+"wykorzystać."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:17
 msgid "Importing Textures"
-msgstr ""
+msgstr "Importowanie tekstur"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:19
 msgid ""
@@ -48,14 +53,18 @@ msgid ""
 "stored in video memory and can't be accessed directly. This is what makes "
 "drawing them efficient."
 msgstr ""
+"Domyślną czynnością w programie Godot jest importowanie obrazów jako "
+"tekstur. Tekstury są przechowywane w pamięci karty graficznej i nie można do "
+"nich uzyskać bezpośredniego dostępu. To właśnie sprawia, że rysowanie ich "
+"jest efektywne."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:23
 msgid "Import options are vast:"
-msgstr ""
+msgstr "Możliwości importu są ogromne:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:28
 msgid "Compression:"
-msgstr ""
+msgstr "Kompresja:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:30
 msgid ""
@@ -63,10 +72,13 @@ msgid ""
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
+"Obrazy są jednym z największych zasobów gry. Aby je efektywnie obsługiwać, "
+"należy je skompresować. Godot oferuje kilka metod kompresji, w zależności "
+"od  zastosowań."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid "Compress Mode"
-msgstr ""
+msgstr "Rodzaj kompresji"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:36
 msgid ""
@@ -74,6 +86,9 @@ msgid ""
 "File on disk is reduced and video memory usage is also reduced considerably. "
 "For 3D, it may present unwanted artifacts, though."
 msgstr ""
+"Kompresja VRAM: Jest to najpopularniejszy tryb kompresji dla zasobów 3D. "
+"Zmniejsza się ilość plików na dysku, a także znacznie zmniejsza się zużycie "
+"pamięci wideo. W 3D mogą pojawić się niechciane artefakty."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:38
 msgid ""
@@ -127,11 +142,11 @@ msgstr "Kompresja VRAM"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as raw pixels"
-msgstr ""
+msgstr "Przechowywane jako surowe piksele"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as PNG"
@@ -152,11 +167,11 @@ msgstr "Rozmiar na dysku"
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:54
 msgid "|bad| Large"
-msgstr ""
+msgstr "|zły| Duży"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "|regular| Small"
-msgstr ""
+msgstr "|zwykły| Mały"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "|good| Very Small"
@@ -278,6 +293,10 @@ msgid ""
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
 msgstr ""
+"Gdy piksele stają się większe niż piksele ekranu, opcje te umożliwiają ich "
+"interpolację liniową. W rezultacie uzyskuje się gładszą (mniej blokową) "
+"teksturę. To ustawienie może być powszechnie używane w 2D i 3D, ale zwykle "
+"jest wyłączone podczas tworzenia gry idealnie pikselowej."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:103
 msgid "Mipmaps"
@@ -290,6 +309,10 @@ msgid ""
 "older hardware (GLES2, mainly mobile), there are some requirements to use "
 "mipmaps:"
 msgstr ""
+"Gdy piksele staną się mniejsze niż ekran, zostaną uruchomione mipmapy. "
+"Pomaga to zredukować efekt ziarnistości podczas kurczenia się tekstury. "
+"Należy pamiętać, że w starszym sprzęcie (GLES2, głównie mobilnym) istnieją "
+"pewne wymagania co do stosowania mipmap:"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:108
 msgid "Texture width and height must be powers of 2"
@@ -323,6 +346,8 @@ msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurryness."
 msgstr ""
+"Gdy tekstury są zbliżone do widoku równoległego (np. podłogi), ta opcja "
+"sprawia, że są one bardziej szczegółowe, zmniejszając rozmycie."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:121
 msgid "SRGB"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -305,6 +305,7 @@ msgstr ""
 "Passe immédiatement à l'itération suivante de la boucle ``for`` ou ``while``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "pass"
 msgstr "pass"
 
@@ -1669,15 +1670,66 @@ msgstr ""
 "n'est donc généralement pas nécessaire d'appeler ``._init()`` explicitement."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
-msgid "If a parent constructor takes arguments, they are passed like this:"
+msgid ""
+"Unlike the call of a regular function like in the above example with ``."
+"some_func``, if the constructor from the inherited class takes arguments, "
+"they are passed like this:"
 msgstr ""
-"Si un constructeur parent prend des arguments, ils sont passés comme ceci :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
+msgid "This is better explained through examples. Say we have this scenario:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
+#, fuzzy
+msgid "There are a few things to keep in mind here:"
+msgstr "Il n'y a aucune restriction d'utilisation de Godot"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
+msgid ""
+"if the inherited class (``State.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case) then the inheriting class (``Idle.gd``) "
+"*has* to define ``_init`` as well and pass appropriate parameters to "
+"``_init`` from ``State.gd``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
+msgid ""
+"``Idle.gd`` can have a different number of arguments than the base class "
+"``State.gd``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
+msgid ""
+"in the example above ``e`` passed to the ``State.gd`` constructor is the "
+"same ``e`` passed in to ``Idle.gd``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:987
+msgid ""
+"if ``Idle.gd``'s ``_init`` constructor takes 0 arguments it still needs to "
+"pass some value to the ``State.gd`` base class even if it does nothing. "
+"Which brings us to the fact that you can pass literals in the base "
+"constructor as well, not just variables. Eg.:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
+msgid "::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
+msgid "# Idle.gd"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
+msgid "func _init().(5):"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "Inner classes"
 msgstr "Classes internes"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:959
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1000
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
@@ -1686,11 +1738,11 @@ msgstr ""
 "internes sont définies à l'aide du mot-clé ``class``. Ils sont instanciés à "
 "l'aide de la fonction ``ClassName.new()``."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1020
 msgid "Classes as resources"
 msgstr "Les classes comme ressources"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1022
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -1705,11 +1757,11 @@ msgstr ""
 "d'une ressource de classe chargée se fait en appelant la fonction ``new`` "
 "sur l'objet de classe :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:997
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1038
 msgid "Exports"
 msgstr "Exportations"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:999
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1040
 msgid ""
 "Class members can be exported. This means their value gets saved along with "
 "the resource (e.g. the :ref:`scene <class_PackedScene>`) they're attached "
@@ -1722,7 +1774,7 @@ msgstr ""
 "disponibles pour l'édition dans l'éditeur de propriétés. L'exportation se "
 "fait en utilisant le mot clé ``export`` :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1008
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1049
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the export keyword (see below)."
@@ -1731,7 +1783,7 @@ msgstr ""
 "avoir une indication d'exportation sous la forme d'un argument au mot-clé "
 "d'exportation (voir ci-dessous)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1011
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1052
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
 "them visible and editable in the editor. This way artists and game designers "
@@ -1744,7 +1796,7 @@ msgstr ""
 "influenceront plus tard le fonctionnement du programme. Pour cela, une "
 "syntaxe spéciale d'exportation est fournie."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1097
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1138
 msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
@@ -1753,11 +1805,11 @@ msgstr ""
 "cours d'édition, les propriétés exportées sont toujours modifiables (voir ci-"
 "dessous pour \"outil\")."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1102
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 msgid "Exporting bit flags"
 msgstr "Exportation des indicateurs binaires"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1104
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1145
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
@@ -1768,7 +1820,7 @@ msgstr ""
 "utilisant l'indication d'exportation ``int, FLAGS``, ils peuvent être "
 "changés dans l'éditeur :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1113
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1154
 #, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
@@ -1777,7 +1829,7 @@ msgstr ""
 "Limiter les drapeaux à un certain nombre de drapeaux nommés est également "
 "possible. La syntaxe est très similaire à la syntaxe d'énumération :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1121
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1162
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
@@ -1788,7 +1840,7 @@ msgstr ""
 "constantes doivent être définies en conséquence (p. ex. ``const ELEMENT_VENT "
 "= 8`` et ainsi de suite)."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1126
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
@@ -1797,11 +1849,11 @@ msgstr ""
 "opérations sur les bits. En cas de doute, les variables booléennes doivent "
 "être exportées à la place."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1130
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1171
 msgid "Exporting arrays"
 msgstr "Exportation de tableaux"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1132
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1173
 msgid ""
 "Exporting arrays works but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -1817,11 +1869,11 @@ msgstr ""
 "exportés peuvent avoir des initialisateurs, mais ceux-ci doivent être des "
 "expressions constantes."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1169
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
 msgid "Setters/getters"
 msgstr "Setters/getters"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1171
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
@@ -1831,7 +1883,7 @@ msgstr ""
 "pour une raison quelconque. Il peut également être souhaitable d'encapsuler "
 "son accès d'une manière ou d'une autre."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1174
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1215
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
@@ -1839,7 +1891,7 @@ msgstr ""
 "Pour cela, GDScript fournit une syntaxe *setter/getter* en utilisant le mot-"
 "clé ``setget``. Il est utilisé directement après une définition de variable :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1222
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -1856,11 +1908,11 @@ msgstr ""
 "``variable``, la fonction *getter* (``getterfunc`` ci-dessus) doit "
 "``retourner`` la valeur désirée. En voici un exemple :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1198
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1239
 msgid "Either of the *setter* or *getter* functions can be omitted:"
 msgstr "Les fonctions *setter* ou *getter* peuvent être omises :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1207
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1248
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
@@ -1869,7 +1921,7 @@ msgstr ""
 "variables vers l'éditeur dans les scripts d'outils ou des plugins, pour "
 "valider les entrées."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1251
 msgid ""
 "As said *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
@@ -1877,11 +1929,11 @@ msgstr ""
 "L'accès dit *local* ne déclenchera *pas* le setter et le getter. En voici "
 "une illustration :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1225
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1266
 msgid "Tool mode"
 msgstr "Mode outil"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1227
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1268
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
 "properties can be changed. In some cases it is desired that they do run "
@@ -1895,11 +1947,11 @@ msgstr ""
 "n'exécutent pas le code du jeu ou spécifiquement évitent de le faire). Pour "
 "cela, le mot-clé ``outil`` existe et doit être placé en haut du fichier :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1283
 msgid "Memory management"
 msgstr "Gestion de la mémoire"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1285
 #, fuzzy
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
@@ -1919,18 +1971,18 @@ msgstr ""
 "référence qui ne peuvent pas être libérés, une fonction ``weakref`` est "
 "fournie pour créer des références faibles."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1293
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1298
 msgid "Signals"
 msgstr "Signaux"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1300
 msgid ""
 "It is often desired to send a notification that something happened in an "
 "instance. GDScript supports creation of built-in Godot signals. Declaring a "
@@ -1941,7 +1993,7 @@ msgstr ""
 "à Godot. Déclarer un signal en GDScript est facile en utilisant le mot-clé "
 "`signal`."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
 #, fuzzy
 msgid ""
 "These signals can be connected in the editor or from code like regular "
@@ -1953,7 +2005,7 @@ msgstr ""
 "où le signal a été déclaré et de le connecter à la méthode d'une autre "
 "instance :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1286
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1327
 msgid ""
 "It is also possible to bind arguments to a signal that lacks them with your "
 "custom values:"
@@ -1961,7 +2013,7 @@ msgstr ""
 "Il est également possible de lier des arguments à un signal qui en est "
 "dépourvu avec des valeurs personnalisées :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1294
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
 #, fuzzy
 msgid ""
 "This is useful when a signal from many objects is connected to a single "
@@ -1971,7 +2023,7 @@ msgstr ""
 "connecté à une seule fonction de rappel et que l'expéditeur doit être "
 "identifié :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1347
 msgid ""
 "Finally, emitting a custom signal is done by using the Object.emit_signal "
 "method:"
@@ -1979,12 +2031,12 @@ msgstr ""
 "Enfin, l'émission d'un signal personnalisé se fait en utilisant la méthode "
 "Object.emit_signal :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1358
 #, fuzzy
 msgid "Coroutines with yield"
 msgstr "Coroutines et signaux"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1360
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -2001,23 +2053,23 @@ msgstr ""
 "fonction retourne. Une fois repris, l'objet d'état devient invalide. Voici "
 "un exemple :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1341
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1365
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
 msgid "Will print:"
 msgstr "Affichera :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1349
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1390
 msgid ""
 "It is also possible to pass values between yield() and resume(), for example:"
 msgstr ""
 "Il est également possible de passer des valeurs entre yield() et resume(), "
 "par exemple :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1374
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1415
 msgid "Coroutines & signals"
 msgstr "Coroutines et signaux"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1376
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1417
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two parameters, an object and a signal. When the signal "
@@ -2027,22 +2079,22 @@ msgstr ""
 "des signaux. ``yield`` peut accepter deux paramètres, un objet et un signal. "
 "Lorsque le signal est reçu, l'exécution reprend. Voici quelques exemples :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1445
 msgid ""
 "``my_func`` will only continue execution once both the buttons are pressed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1448
 msgid "Onready keyword"
 msgstr "Mot-clé onready"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1409
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
 #, fuzzy
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
@@ -2056,7 +2108,7 @@ msgstr ""
 "actives, les sous-nœuds ne peuvent être obtenus que lorsqu'un appel à Node."
 "_ready() est fait."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1421
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1462
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -2069,11 +2121,11 @@ msgstr ""
 "que _ready soit appelé. Il peut remplacer le code ci-dessus par une seule "
 "ligne :"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1472
 msgid "Assert keyword"
 msgstr "Mot-clé d'assertion"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1474
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."

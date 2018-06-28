@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Nodes and resources"
 msgstr "Nodos y recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
-#, fuzzy
 msgid ""
 "So far, :ref:`Nodes <class_Node>` have been the most important datatype in "
 "Godot as most of the behaviors and features of the engine are implemented "
@@ -92,7 +91,6 @@ msgstr ""
 "contenedores de datos, por lo que no es necesario duplicarlos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:42
-#, fuzzy
 msgid ""
 "Typically, every object in Godot (Node, Resource, or anything else) can "
 "export properties. Properties can be of many types (like a string, integer, "
@@ -127,15 +125,14 @@ msgstr ""
 "nodo :ref:`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:61
-#, fuzzy
 msgid ""
 "Pressing the \">\" button on the right side of the preview allows us to view "
 "and edit the resources properties. One of the properties (path) shows where "
 "it comes from. In this case, it comes from a png image."
 msgstr ""
-"Haciendo click en el campo del recurso, permite ver y editar las "
-"propiedades. Una de las propiedades muestra desde dónde viene. En ese caso, "
-"viene de una imagen png."
+"Pulsando el botón \">\" a la derecha de la vista previa podemos ver y editar "
+"las propiedades de los recursos. Una de las propiedades (path) muestra de "
+"dónde proviene. En este caso, proviene de una imagen png."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:67
 msgid ""
@@ -178,12 +175,11 @@ msgstr ""
 "es usar load(), de este modo:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
-#, fuzzy
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter because it loads the resource at compile-time."
 msgstr ""
-"El segundo modo es más óptimo, pero sólo funciona con una cadena constante "
+"La segunda forma es más óptima, pero sólo funciona con una cadena constante "
 "como parámetro, porque carga el recurso en tiempo de compilación."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:116

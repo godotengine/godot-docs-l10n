@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,16 +26,15 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "File systems are yet another hot topic in engine development. The file "
 "system manages how the assets are stored and how they are accessed. A well "
 "designed file system also allows multiple developers to edit the same source "
 "files and assets while collaborating together."
 msgstr ""
-"Los sistemas de archivos son otro tema destacado en el desarrollo de "
+"Los sistemas de archivos son otro tema importante en el desarrollo de "
 "motores. El sistema de archivos gestiona cómo se almacenan los recursos y "
-"cómo se accede a ellos. Un sistema de archivos bien diseñado también permite "
+"cómo se accede a éstos. Un sistema de archivos bien diseñado también permite "
 "a varios desarrolladores editar los mismos archivos y recursos de origen "
 "mientras colaboran entre sí."
 
@@ -221,7 +220,6 @@ msgstr ""
 "nueva ubicación del recurso."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
-#, fuzzy
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
@@ -229,10 +227,10 @@ msgid ""
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
 "Para evitar esto, realiza todas tus operaciones de mover, borrar y renombrar "
-"desde Godot, en el panel de Sistema de Archivos. Nunca mueva assets desde "
+"desde Godot, en el panel de Sistema de Archivos. Nunca muevas recursos desde "
 "fuera de Godot, o las dependencias tendrán que ser arregladas manualmente "
 "(Godot detecta esto y te ayuda a arreglarlas de todos modos, pero ¿por qué "
-"ir por la ruta más difícil?)."
+"ir por el camino difícil?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
 msgid ""

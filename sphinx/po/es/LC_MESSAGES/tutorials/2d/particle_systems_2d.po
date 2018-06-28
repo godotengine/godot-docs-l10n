@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,7 +163,6 @@ msgid "Speed Scale"
 msgstr "Speed Scale (Escala de Velocidad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:87
-#, fuzzy
 msgid ""
 "The speed scale has a default value of ``1`` and is used to adjust the speed "
 "of a particle system. Lowering the value will make the particles slower "
@@ -179,7 +178,6 @@ msgid "Explosiveness"
 msgstr "Explosiveness (Explosividad)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:94
-#, fuzzy
 msgid ""
 "If lifetime is ``1`` and there are 10 particles, it means a particle will be "
 "emitted every 0.1 seconds. The explosiveness parameter changes this, and "
@@ -187,7 +185,8 @@ msgid ""
 msgstr ""
 "Si el tiempo de vida es ``1`` y hay diez partículas, significa que se "
 "emitirá una partícula cada 0.1 segundos. El parámetro de explosividad cambia "
-"esto y obliga a las partículas a emitirse juntas. Los rangos son:"
+"esto y obliga a las partículas a emitirse todas al mismo tiempo. Los rangos "
+"son:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:98
 msgid "0: Emit particles at regular intervals (default value)."
@@ -476,11 +475,10 @@ msgid "Hue variation"
 msgstr "Hue variation (Variación de tono)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:279
-#, fuzzy
 msgid ""
 "The Variation value sets the initial hue variation applied to each particle. "
 "The Variation Rand value controls the hue variation randomness ratio."
 msgstr ""
-"El valor de variación establece la variación de tono inicial aplicada a cada "
-"partícula. El valor de rand de la variación controla la relación de "
-"aleatoriedad de la variación del tono."
+"El valor de Variation establece la variación de tono inicial aplicada a cada "
+"partícula. El valor Variation Rand controla la relación de aleatoriedad de "
+"la variación de tono."

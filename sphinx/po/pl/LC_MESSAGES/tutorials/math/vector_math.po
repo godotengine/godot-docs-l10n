@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
-msgstr ""
+msgstr "Wektory"
 
 #: ../../docs/tutorials/math/vector_math.rst:7
 msgid "Introduction"
@@ -33,6 +33,11 @@ msgid ""
 "Godot uses them extensively. Developing a good understanding of vector math "
 "is essential to becoming a strong game developer."
 msgstr ""
+"Ten samouczek jest krótkim i praktycznym wprowadzeniem do algebry liniowej w "
+"zakresie tworzenia gier. Algebra liniowa jest badaniem wektorów i ich "
+"zastosowań. Wektory mają wiele zastosowań zarówno w 2D, jak i 3D, a Godot "
+"używa ich w szerokim zakresie. Dobre zrozumienie matematyki wektorowej jest "
+"niezbędne, aby stać się potężnym twórcą gier."
 
 #: ../../docs/tutorials/math/vector_math.rst:15
 msgid ""
@@ -40,10 +45,14 @@ msgid ""
 "be looking at how it is applied to game development. For a broader look at "
 "the mathematics, see https://www.khanacademy.org/math/linear-algebra"
 msgstr ""
+"Ten samouczek **nie** jest formalnym podręcznikiem na temat algebry "
+"liniowej. Będziemy się przyglądać tylko temu, w jaki sposób jest ona "
+"stosowany do tworzenia gier. Szersze spojrzenie ten poddział matematyki "
+"można znaleźć na stronie https://www.khanacademy.org/math/linear-algebra"
 
 #: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
-msgstr ""
+msgstr "Układy współrzędnych (2D)"
 
 #: ../../docs/tutorials/math/vector_math.rst:23
 msgid ""
@@ -51,6 +60,9 @@ msgid ""
 "vertical axis (``y``). A particular position in 2D space is written as a "
 "pair of values such as ``(4, 3)``."
 msgstr ""
+"W przestrzeni 2D współrzędne są definiowane za pomocą osi poziomej ( ``x``) "
+"i osi pionowej ( ``y``). Położenie w przestrzeni 2D jest zapisywane jako "
+"para wartości takich jak ``(4, 3)``."
 
 #: ../../docs/tutorials/math/vector_math.rst:29
 msgid ""
@@ -59,6 +71,10 @@ msgid ""
 "in math class. However, this is common in most computer graphics "
 "applications."
 msgstr ""
+"Jeśli jesteś nowicjuszem w grafice komputerowej, może wydawać się dziwne, że "
+"dodatnie wartości osi ``y``  są skierowane **w dół** zamiast w górę, jak "
+"prawdopodobnie uczyliście się na lekcji matematyki. Jest to jednak "
+"powszechne w większości aplikacji graficznych."
 
 #: ../../docs/tutorials/math/vector_math.rst:34
 msgid ""
@@ -67,6 +83,10 @@ msgid ""
 "from the ``(0, 0)`` point, or **origin**. Draw an arrow pointing from the "
 "origin to the point:"
 msgstr ""
+"W ten sposób można zidentyfikować dowolne położenie w płaszczyźnie 2D za "
+"pomocą pary liczb. Jednakże możemy również myśleć o pozycji ``(4, 3)`` jako "
+"**przesunięcie** od punktu ``(0, 0)`` lub **źródło**. Narysuj strzałkę "
+"wskazującą od początku do końca:"
 
 #: ../../docs/tutorials/math/vector_math.rst:41
 msgid ""
@@ -76,6 +96,11 @@ msgid ""
 "is a **position vector** - it denotes a position in space, relative to the "
 "origin."
 msgstr ""
+"Jest to **wektor**. Wektor reprezentuje wiele przydatnych informacji. A "
+"także mówiąc nam, że punkt jest w ``(4, 3) ``, możemy również myśleć o nim "
+"jako o kącie ``θ`` i długości (lub wielkości) ``m``. W tym przypadku "
+"strzałka jest **wektorem pozycji** - oznacza pozycję w przestrzeni względem "
+"początku."
 
 #: ../../docs/tutorials/math/vector_math.rst:47
 msgid ""
@@ -83,6 +108,9 @@ msgid ""
 "**relative** direction and magnitude. There is no concept of a vector's "
 "position. The following two vectors are identical:"
 msgstr ""
+"Bardzo ważną kwestią, którą należy wziąć pod uwagę w przypadku wektorów, "
+"jest to, że reprezentują one jedynie **względny** kierunek i wielkość. Nie "
+"istnieje pojęcie pozycji wektora. Następujące dwa wektory są identyczne:"
 
 #: ../../docs/tutorials/math/vector_math.rst:53
 msgid ""
@@ -90,10 +118,14 @@ msgid ""
 "starting point. It does not matter where on the plane you draw the vector, "
 "it always represents a relative direction and magnitude."
 msgstr ""
+"Oba wektory reprezentują punkt to samo, 4 jednostki w prawą stronę i 3 "
+"jednostki w dół od pewnego punktu początkowego. Nie ma znaczenia, gdzie na "
+"płaszczyźnie rysujesz wektor, zawsze reprezentuje on względny kierunek i "
+"wielkość."
 
 #: ../../docs/tutorials/math/vector_math.rst:58
 msgid "Vector Operations"
-msgstr ""
+msgstr "Operacje wektorowe"
 
 #: ../../docs/tutorials/math/vector_math.rst:60
 msgid ""
@@ -103,6 +135,11 @@ msgid ""
 "of the screen, so to place a 2D node named ``Node2D`` 400 pixels to the "
 "right and 300 pixels down, use the following code:"
 msgstr ""
+"Można użyć metody (współrzędne x i y lub kąt i wielkość) w odniesieniu do "
+"wektora, ale dla wygody programistów zwykle używa się zapisu współrzędnych. "
+"Na przykład, w Godot punkt początkowy jest lewym górnym rogu ekranu, więc "
+"aby umieścić węzeł 2D o nazwie ``Node2D` 400 pikseli po prawej stronie i 300 "
+"pikseli w dół, użyj poniższego kodu:"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
 msgid ""
@@ -110,6 +147,9 @@ msgid ""
 "<class_Vector3>` for 2D and 3D usage respectively. The same mathematical "
 "rules discussed in this article apply for both types."
 msgstr ""
+"Godot obsługuje zarówno :ref:`Vector2 <class_Vector2>` jak i :ref:`Vector3 "
+"<class_Vector3>`dla użytku 2D i 3D. Zasady matematyczne omówione w "
+"niniejszym poradniku mają zastosowanie do obu typów."
 
 #: ../../docs/tutorials/math/vector_math.rst:80
 msgid "Member access"
@@ -118,31 +158,35 @@ msgstr ""
 #: ../../docs/tutorials/math/vector_math.rst:82
 msgid ""
 "The individual components of the vector can be accessed directly by name."
-msgstr ""
+msgstr "Poszczególne komponenty wektora są dostępne bezpośrednio po nazwie."
 
 #: ../../docs/tutorials/math/vector_math.rst:103
 msgid "Adding vectors"
-msgstr ""
+msgstr "Dodawanie wektorów"
 
 #: ../../docs/tutorials/math/vector_math.rst:105
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
 "added:"
 msgstr ""
+"Podczas dodawania lub odejmowania dwóch wektorów dodawane są odpowiednie "
+"składniki:"
 
 #: ../../docs/tutorials/math/vector_math.rst:116
 msgid ""
 "We can also see this visually by adding the second vector at the end of the "
 "first:"
 msgstr ""
+"Widzimy to również wizualnie, dodając drugi wektor na końcu pierwszego:"
 
 #: ../../docs/tutorials/math/vector_math.rst:121
 msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
 msgstr ""
+"Należy pamiętać, że dodanie ``a + b`` daje taki sam rezultat jak ``b + a``."
 
 #: ../../docs/tutorials/math/vector_math.rst:123
 msgid "Scalar multiplication"
-msgstr ""
+msgstr "Mnożenie skalarne"
 
 #: ../../docs/tutorials/math/vector_math.rst:125
 msgid ""
@@ -152,25 +196,29 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:128
 msgid "A vector can be multiplied by a **scalar**:"
-msgstr ""
+msgstr "Wektor można pomnożyć przez **skalar**:"
 
 #: ../../docs/tutorials/math/vector_math.rst:143
 msgid ""
 "Multiplying a vector by a scalar does not change its direction, only its "
 "magnitude. This is how you **scale** a vector."
 msgstr ""
+"Mnożenie wektora przez skalar nie zmienia jego kierunku, a jedynie wielkość. "
+"W ten sposób można **skalować** wektor."
 
 #: ../../docs/tutorials/math/vector_math.rst:147
 msgid "Practical applications"
-msgstr ""
+msgstr "Praktyczne zastosowania"
 
 #: ../../docs/tutorials/math/vector_math.rst:149
 msgid "Let's look at two common uses for vector addition and subtraction."
 msgstr ""
+"Przyjrzyjmy się dwóm powszechnym zastosowaniom dodawania i odejmowania "
+"wektorów."
 
 #: ../../docs/tutorials/math/vector_math.rst:151
 msgid "Movement"
-msgstr ""
+msgstr "Ruch"
 
 #: ../../docs/tutorials/math/vector_math.rst:153
 msgid ""
@@ -284,7 +332,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:276
 msgid "and"
-msgstr ""
+msgstr "i"
 
 #: ../../docs/tutorials/math/vector_math.rst:282
 msgid ""

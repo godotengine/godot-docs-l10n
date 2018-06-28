@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
-#, fuzzy
 msgid "Godot-Blender-Exporter"
-msgstr "Importador de Escenas Godot"
+msgstr "Exportador de Godot-Blender"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:5
 msgid "Details on exporting"
-msgstr ""
+msgstr "Detalles sobre exportar"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:16
 msgid "Disabling specific objects"
-msgstr ""
+msgstr "Deshabilitar objetos específicos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:17
 msgid ""
@@ -36,16 +35,21 @@ msgid ""
 "baking). An object will not be exported if it is not rendered in the scene. "
 "This can be set in the outliner:"
 msgstr ""
+"A veces no quieres que se exporten algunos objetos (por ejemplo, modelos de "
+"alta resolución utilizados para baking). Un objeto no se exportará si no se "
+"renderiza en la escena. Esto se puede establecer en el esquema:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
 msgstr ""
+"Los objetos ocultos en el viewport se exportarán, pero se ocultarán en la "
+"escena de Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:28
 msgid "Build Pipeline Integration"
-msgstr ""
+msgstr "Integración de la Construcción de Pipeline"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
 msgid ""
@@ -56,3 +60,10 @@ msgid ""
 "systems. An example Makefile and python script that exports all the blends "
 "in a directory is present in the Godot-Blender-exporter repository."
 msgstr ""
+"Si tienes cientos de archivos de modelos, no querrás que tus artistas "
+"pierdan el tiempo exportando manualmente sus archivos blend. Para evitar "
+"esto, el exportador proporciona una función python ``io_scene_godot."
+"export(out_file_path)`` que puede ser llamada para exportar un archivo. Esto "
+"permite una fácil integración con otros sistemas de construcción. Un ejemplo "
+"de Makefile y script python que exporta todos los blends en un directorio "
+"está presente en el repositorio de Godot-Blender-exporter."

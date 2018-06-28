@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
-msgstr ""
+msgstr "System plików"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:7
 msgid "Introduction"
@@ -32,6 +32,10 @@ msgid ""
 "designed file system also allows multiple developers to edit the same source "
 "files and assets while collaborating together."
 msgstr ""
+"Systemy plików to kolejny gorący temat w rozwoju silnika. System plików "
+"zarządza sposobem przechowywania i dostępu do zasobów. Dobrze zaprojektowany "
+"system plików umożliwia również wielu programistom edycję tych samych plików "
+"źródłowych i zasobów podczas współpracy."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:14
 msgid ""
@@ -41,10 +45,15 @@ msgid ""
 "metadata, etc. In the end the simple approach won and now Godot stores all "
 "assets as files in the file system."
 msgstr ""
+"Pierwsze wersje silnika Godota (oraz poprzednie jego formy, jeszcze przed "
+"dobrze znaną nazwą Godot) używały bazy danych. Przechowywano w nim zasoby i "
+"nadawano im ID Wypróbowano również inne podejścia, takie jak lokalne bazy "
+"danych, pliki z metadanymi itp. W końcu to proste podejście wygrało i teraz "
+"Godot przechowuje wszystkie zasoby jako pliki w systemie plików."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:21
 msgid "Implementation"
-msgstr ""
+msgstr "Implementacja"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:23
 msgid ""
@@ -56,6 +65,12 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
+"System plików przechowuje zasoby na dysku. Wszystko, od skryptu, po scenę "
+"lub obraz PNG, jest zasobem dla silnika. Jeśli zasób zawiera właściwości, "
+"które odnoszą się do innych zasobów na dysku, ścieżki do tych zasobów są "
+"również dołączone. Jeśli zasób posiada wbudowane pod-zasoby, to jest on "
+"zapisywany w jednym pliku wraz ze wszystkimi dołączonymi pod-zasobami. Na "
+"przykład zasób czcionki jest często łączony z teksturami czcionki."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
 msgid ""
@@ -64,14 +79,18 @@ msgid ""
 "anything we can implement, so Godot tries the best to play along with SVN, "
 "Git, Mercurial, Perforce, etc."
 msgstr ""
+"Ogólnie rzecz biorąc, system plików Godot unika stosowania plików "
+"metadanych. Powód jest prosty, istniejące programy do zarządzania zasobami i "
+"VCSy są po prostu o wiele lepsze niż cokolwiek, co możemy wdrożyć, więc "
+"Godot stara się jak najlepiej współgrać z SVN, Git, Mercurial, Perforce, itp."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:35
 msgid "Example of a file system contents:"
-msgstr ""
+msgstr "Przykład zawartości systemu plików:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:46
 msgid "project.godot"
-msgstr ""
+msgstr "projekt.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:48
 msgid ""
@@ -86,6 +105,9 @@ msgid ""
 "ini format. Even an empty project.godot can function as a basic definition "
 "of a blank project."
 msgstr ""
+"Plik ten zawiera konfigurację projektu w postaci zwykłego tekstu, w formacie "
+"win.ini. Nawet pusty project.godot może funkcjonować jako podstawowa "
+"definicja pustego projektu."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:57
 msgid "Path delimiter"
@@ -98,10 +120,14 @@ msgid ""
 "``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
 "godot``."
 msgstr ""
+"Godot obsługuje tylko ``/`` jako separator ścieżek. Odbywa się to ze względu "
+"na przenośność. Wszystkie systemy operacyjne, nawet Windows, obsługują ten "
+"znacznik, więc ścieżka taka jak ``c:\\project\\project.godot`` musi być "
+"wpisana jako ``c:/project/project.godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:65
 msgid "Resource path"
-msgstr ""
+msgstr "Ścieżka zasobu"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:67
 msgid ""
@@ -109,12 +135,17 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
+"Uzyskując dostęp do zasobów, korzystanie z systemu plików OS hosta może być "
+"kłopotliwe i nieporęczne. W celu rozwiązania tego problemu utworzono "
+"specjalną ścieżkę ``res://``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:71
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so in fact ``res://project.godot`` is always valid)."
 msgstr ""
+"Ścieżka ``res://``będzie zawsze wskazywać na korzeń projektu (miejsce gdzie "
+"znajduje się project.godot, więc ``res://project.godot``zawsze istnieje)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:75
 msgid ""
@@ -123,10 +154,14 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
+"Ten system plików jest odczytywany/zapisywany tylko wtedy, gdy projekt jest "
+"uruchamiany lokalnie z edytora. Po wyeksportowaniu lub uruchomieniu na "
+"różnych urządzeniach (takich jak telefony, konsole lub płyty DVD) system "
+"plików stanie się tylko do odczytu i zapis nie będzie już dozwolony."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "User path"
-msgstr ""
+msgstr "Ścieżka użytkownika"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid ""
@@ -134,10 +169,14 @@ msgid ""
 "state or downloading content packs. To this end, the engine ensures that "
 "there is a special path ``user://`` that is always writable."
 msgstr ""
+"Zapisywanie danych na dysk jest często nadal potrzebne do różnych zadań, "
+"takich jak zapisywanie stanu gry lub pobieranie DLC. W tym celu silnik "
+"zapewnia, że istnieje specjalna ścieżka ``user://``, w której zawsze można "
+"zapisać dane."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:88
 msgid "Host file system"
-msgstr ""
+msgstr "System plików hosta"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:90
 msgid ""
@@ -146,6 +185,11 @@ msgid ""
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot!"
 msgstr ""
+"Alternatywnie można również wykorzystać ścieżki systemu plików hosta, ale "
+"nie jest to zalecane w przypadku produktów dopuszczonych do obrotu, ponieważ "
+"nie ma gwarancji, że ścieżki te będą działać na wszystkich platformach. "
+"Jednak używanie ścieżek systemowych hostów plików może być przydatne podczas "
+"pisania narzędzi programistycznych w Godot!"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:96
 msgid "Drawbacks"
@@ -159,6 +203,11 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
+"Ta prosta konstrukcja systemu plików ma pewne wady. Pierwsza z nich dotyczy "
+"tego, że przeniesienie zasobów (zmiana ich nazwy lub przeniesienie ich z "
+"jednego miejsca na drugie w projekcie) zniszczy istniejące odniesienia do "
+"tych zasobów. Odniesienia te będą musiały zostać ponownie ustawione, aby "
+"wskazać nową lokalizację zasobów."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
 msgid ""
@@ -167,6 +216,11 @@ msgid ""
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
+"Aby tego uniknąć, wykonaj wszystkie operacje przenoszenia, usuwania i zmiany "
+"nazw z poziomu Godota w panelu na systemie plików. Nigdy nie przenoś zasobów "
+"spoza Godota, ponieważ jego błędne zależności będą musiały być naprawione "
+"ręcznie (Godot wykrywa to i pomaga naprawić je tak czy inaczej, ale czemu "
+"sobie życie utrudniać?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
 msgid ""
@@ -177,6 +231,13 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
+"Po drugie, w systemie Windows i MacOS nazwy plików i ścieżek są niewrażliwe "
+"na wielkość liter. Jeśli programista pracujący w przypadku niewrażliwego "
+"systemu plików hosta zapisuje zasób \"mojplik.PNG\", ale następnie nazywa go "
+"\"mojplik.png\", będzie to działać dobrze na jego platformie, ale nie na "
+"innych platformach, takich jak Linux, Android, itp. Może to również dotyczyć "
+"eksportowanych plików binarnych, które do przechowywania wszystkich plików "
+"używają skompresowanego pakietu."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
 msgid ""
@@ -184,3 +245,6 @@ msgid ""
 "files when working with Godot! One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
+"Zaleca się, aby Twój zespół jasno określił konwencję nazewnictwa plików "
+"podczas pracy z Godotem! Jedną z prostych, odpornych na głupie błędy, "
+"konwencji jest dopuszczanie tylko małych liter nazw plików i ścieżek."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:4
 msgid "Shading language"
-msgstr ""
+msgstr "Язык шейдеров"
 
 #: ../../docs/tutorials/shading/shading_language.rst:7
 msgid "Introduction"
@@ -31,16 +31,21 @@ msgid ""
 "functions are supported, and the few remaining ones will likely be added "
 "over time."
 msgstr ""
+"Godot использует язык шейдеров похожий на GLSL ES 3.0. Большинство типов "
+"данных и функций поддерживаются, а те что остались за бортом, скорее всего "
+"будет добавлены в будущем."
 
 #: ../../docs/tutorials/shading/shading_language.rst:12
 msgid ""
 "Unlike the shader language in Godot 2.x, this implementation is much closer "
 "to the original."
 msgstr ""
+"В отличие от языка шейдеров в Godot 2.x, эта реализация намного ближе к "
+"оригиналу."
 
 #: ../../docs/tutorials/shading/shading_language.rst:15
 msgid "Shader Types"
-msgstr ""
+msgstr "Типы Шейдеров"
 
 #: ../../docs/tutorials/shading/shading_language.rst:17
 msgid ""
@@ -48,48 +53,56 @@ msgid ""
 "must specify what a shader is intended for. Depending on the type, different "
 "render modes, built-in variables and processing functions are supported."
 msgstr ""
+"Вместо того чтобы поддерживать общую конфигурацию, в языке шейдеров Godot "
+"должно быть определено, для чего конкретный шейдер предназначен. В "
+"зависимости от типа, используются  различные опции рендеринга, встроенные "
+"свойства и выполняемые функции."
 
 #: ../../docs/tutorials/shading/shading_language.rst:21
 msgid ""
 "Any shader needs a first line specifying this type, in the following format:"
 msgstr ""
+"В любом шейдере первая строчка определяет этот тип, в следующем формате:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:27
 msgid "Valid types are:"
-msgstr ""
+msgstr "Поддерживаемые типы:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:29
 msgid "\"spatial\": For 3D rendering."
-msgstr ""
+msgstr "\"spatial\": Для 3D рендеринга."
 
 #: ../../docs/tutorials/shading/shading_language.rst:30
 msgid "\"canvas_item\": For 2D rendering."
-msgstr ""
+msgstr "\"canvas_item\": Для 2D рендеринга."
 
 #: ../../docs/tutorials/shading/shading_language.rst:31
 msgid "\"particles\": For particle systems."
-msgstr ""
+msgstr "\"particles\": Для систем частиц."
 
 #: ../../docs/tutorials/shading/shading_language.rst:34
 #: ../../docs/tutorials/shading/shading_language.rst:650
 #: ../../docs/tutorials/shading/shading_language.rst:922
 #: ../../docs/tutorials/shading/shading_language.rst:1082
 msgid "Render Modes"
-msgstr ""
+msgstr "Опции Отрисовки"
 
 #: ../../docs/tutorials/shading/shading_language.rst:36
 msgid ""
 "Different shader types support different render modes. They are optional "
 "but, if specified, must be after the *shader_type*. Example syntax is:"
 msgstr ""
+"Различные шейдерные типы поддерживают различные опции отрисовки. Они "
+"необязательные но, если определены, должны начинаться после ключевого слова "
+"*shader_type*. Пример синтаксиса:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:45
 msgid "Data types"
-msgstr ""
+msgstr "Типы данных"
 
 #: ../../docs/tutorials/shading/shading_language.rst:47
 msgid "Most GLSL ES 3.0 datatypes are supported:"
-msgstr ""
+msgstr "Поддерживаются большинство типов данных из GLSL ES 3.0:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:50
 #: ../../docs/tutorials/shading/shading_language.rst:420
@@ -120,6 +133,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "Void datatype, useful only for functions that return nothing."
 msgstr ""
+"Пустой тип данных, используется только для функций которые ничего не "
+"возвращают."
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "**bool**"
@@ -127,7 +142,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "Boolean datatype, can only contain \"true\" or \"false\""
-msgstr ""
+msgstr "Булевый тип данных, может содержать только \"true\" или \"false\""
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "**bvec2**"
@@ -135,7 +150,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "Two component vector of booleans."
-msgstr ""
+msgstr "Двух-компонентный булевый вектор."
 
 #: ../../docs/tutorials/shading/shading_language.rst:58
 msgid "**bvec3**"
@@ -143,7 +158,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:58
 msgid "Three component vector of booleans."
-msgstr ""
+msgstr "Трёх-компонентный булевый вектор."
 
 #: ../../docs/tutorials/shading/shading_language.rst:60
 msgid "**bvec4**"
@@ -151,7 +166,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:60
 msgid "Four component vector of booleans."
-msgstr ""
+msgstr "Четырёх-компонентный булевый вектор."
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "**int**"
@@ -159,7 +174,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "Signed scalar integer."
-msgstr ""
+msgstr "Знаковое целое число."
 
 #: ../../docs/tutorials/shading/shading_language.rst:64
 msgid "**ivec2**"
@@ -167,7 +182,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:64
 msgid "Two component vector of signed integers."
-msgstr ""
+msgstr "Двух-компонентный вектор целых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:66
 msgid "**ivec3**"
@@ -175,7 +190,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:66
 msgid "Three component vector of signed integers."
-msgstr ""
+msgstr "Трёх-компонентный вектор целых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:68
 msgid "**ivec4**"
@@ -183,7 +198,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:68
 msgid "Four component vector of signed integers."
-msgstr ""
+msgstr "Четырёх-компонентный вектор целых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "**uint**"
@@ -191,7 +206,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "Unsigned scalar integer, can't contain negative numbers."
-msgstr ""
+msgstr "Без-знаковое целое число, не может содержать отрицательных значений."
 
 #: ../../docs/tutorials/shading/shading_language.rst:72
 msgid "**uvec2**"
@@ -199,7 +214,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:72
 msgid "Two component vector of unsigned integers."
-msgstr ""
+msgstr "Двух-компонентный вектор без-знаковых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:74
 msgid "**uvec3**"
@@ -207,7 +222,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:74
 msgid "Three component vector of unsigned integers."
-msgstr ""
+msgstr "Трёх-компонентный вектор без-знаковых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:76
 msgid "**uvec4**"
@@ -215,7 +230,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:76
 msgid "Four component vector of unsigned integers."
-msgstr ""
+msgstr "Четырёх-компонентный вектор без-знаковых чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "**float**"
@@ -223,7 +238,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "Floating point scalar."
-msgstr ""
+msgstr "Число с плавающей точкой(дробное число)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "**vec2**"
@@ -231,7 +246,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "Two component vector of floating point values."
-msgstr ""
+msgstr "Двух-компонентный вектор дробных чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "**vec3**"
@@ -239,7 +254,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "Three component vector of floating point values."
-msgstr ""
+msgstr "Трёх-компонентный вектор дробных чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:84
 #: ../../docs/tutorials/shading/shading_language.rst:422
@@ -248,7 +263,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:84
 msgid "Four component vector of floating point values."
-msgstr ""
+msgstr "Четырёх-компонентный вектор дробных чисел."
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "**mat2**"
@@ -256,7 +271,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "2x2 matrix, in column major order."
-msgstr ""
+msgstr "Матрица 2x2, с развёрсткой по столбцу."
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "**mat3**"
@@ -264,7 +279,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "3x3 matrix, in column major order."
-msgstr ""
+msgstr "Матрица 3x3, с развёрсткой по столбцу."
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "**mat4**"
@@ -272,7 +287,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "4x4 matrix, in column major order."
-msgstr ""
+msgstr "Матрица 4x4, с развёрсткой по столбцу."
 
 #: ../../docs/tutorials/shading/shading_language.rst:92
 #: ../../docs/tutorials/shading/shading_language.rst:426
@@ -287,6 +302,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:92
 msgid "Sampler type, for binding 2D textures, which are read as float."
 msgstr ""
+"Сэмплер, для биндинга 2D текстур, которые читаются через дробные числа."
 
 #: ../../docs/tutorials/shading/shading_language.rst:94
 msgid "**isampler2D**"
@@ -294,7 +310,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:94
 msgid "Sampler type for binding 2D textures, which are read as signed integer."
-msgstr ""
+msgstr "Сэмплер, для биндинга 2D текстур, которые читаются через целые числа."
 
 #: ../../docs/tutorials/shading/shading_language.rst:96
 msgid "**usampler2D**"
@@ -304,6 +320,8 @@ msgstr ""
 msgid ""
 "Sampler type for binding 2D textures, which are read as unsigned integer."
 msgstr ""
+"Сэмплер, для биндинга 2D текстур, которые читаются через целые, без-знаковые "
+"числа."
 
 #: ../../docs/tutorials/shading/shading_language.rst:98
 msgid "**samplerCube**"
@@ -312,10 +330,12 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:98
 msgid "Sampler type for binding Cubemaps, which are read as floats."
 msgstr ""
+"Сэмплер, для биндинга кубических текстур, которые читаются через дробные "
+"числа."
 
 #: ../../docs/tutorials/shading/shading_language.rst:102
 msgid "Casting"
-msgstr ""
+msgstr "Приведение"
 
 #: ../../docs/tutorials/shading/shading_language.rst:104
 msgid ""
@@ -324,6 +344,10 @@ msgid ""
 "size is also not allowed. Conversion must be done explicitly via "
 "constructors."
 msgstr ""
+"Так же как и в GLSL ES 3.0, неявное приведение между скалярами и векторами "
+"одинакового размера но разного типа не разрешено. Приведение типов разной "
+"размерности также не разрешено. Конвертация должны быть произведена явно, "
+"через конструкторы."
 
 #: ../../docs/tutorials/shading/shading_language.rst:107
 msgid "Example:"
@@ -334,6 +358,8 @@ msgid ""
 "Default integer constants are signed, so casting is always needed to convert "
 "to unsigned:"
 msgstr ""
+"Числовые константы это целые числа по умолчанию, так что приведение всегда "
+"необходимо при конвертации в без-знаковое целое:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:4
 msgid "Android in-app purchases"
-msgstr ""
+msgstr "Android zakupy w aplikacji"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:8
 msgid ""
@@ -40,13 +40,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:14
 msgid "Find the iap.gd script in"
-msgstr ""
+msgstr "Znajdź skrypt iap.gd"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:21
 msgid ""
 "Add it to the Autoload list and name it as IAP so that we can reference it "
 "anywhere in the game."
 msgstr ""
+"Dodłącz go do listy AutoLoad i nazwij go IAP, mogąc używać tej referencji w "
+"całej swojej grze."
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:24
 msgid "Getting the product details"
@@ -66,7 +68,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:45
 msgid "Check if user purchased an item"
-msgstr ""
+msgstr "Sprawdź czy użytownik kupił przedmiot"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:47
 msgid ""
@@ -86,7 +88,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:63
 msgid "Simple Purchase"
-msgstr ""
+msgstr "Prosty zakup"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:65
 msgid "We can put this purchase logic on a product's buy button."
@@ -100,15 +102,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:82
 msgid "``purchase_fail`` - When the purchase is failed due to any reason"
-msgstr ""
+msgstr "``purchase_fail`` - Kiedy zakup nie powiódł się z pewnego powodu"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:84
 msgid "``purchase_cancel`` - When the user cancels the purchase"
-msgstr ""
+msgstr "``purchase_cancel`` - Kiedy użytkownik wycofał się z zakupu"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:86
 msgid "``purchase_owned`` - When the user already bought the product earlier"
-msgstr ""
+msgstr "``purchase_owned`` - Kiedy użytkownik kupił produkt wcześniej"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:90
 msgid "Consumables and Non-Consumables"
@@ -146,7 +148,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:121
 msgid "Testing"
-msgstr ""
+msgstr "Testowanie"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:123
 msgid ""
@@ -165,15 +167,15 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:127
 msgid "android.test.purchased"
-msgstr ""
+msgstr "android.test.purchased"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:128
 msgid "android.test.canceled"
-msgstr ""
+msgstr "android.test.canceled"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:129
 msgid "android.test.refunded"
-msgstr ""
+msgstr "android.test.refunded"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:130
 msgid "android.test.item_unavailable"

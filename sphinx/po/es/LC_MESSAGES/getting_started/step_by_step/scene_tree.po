@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,17 +45,16 @@ msgstr ""
 "entran al *scene tree*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
-#, fuzzy
 msgid ""
 "This concept deserves going into a little more detail. In fact, the scene "
 "system is not even a core component of Godot as it is possible to skip it "
 "and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
-"Este concepto merece un poco más de detalle. De hecho, el sistema de escena "
-"no es ni siquiera un componente central de Godot, ya que es posible saltarlo "
-"y escribir un script (o código C++) que converse directamente con los "
-"servidores. Pero desarollar un juego de esta forma exigiría mucho trabajo."
+"Este concepto merece un poco más de detalle. De hecho, el sistema de escenas "
+"ni siquiera es un componente central de Godot ya que es posible omitirlo y "
+"escribir un script (o código C++) que se comunique directamente con los "
+"servidores, pero hacer un juego de esa manera sería mucho trabajo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
@@ -100,13 +99,12 @@ msgstr ""
 "Godot, escribir tu propio MainLoop tiene poco sentido."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
-#, fuzzy
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
-"Una de las maneras de explicar cómo funciona Godot, es que se trata de un "
-"motor de juegos de alto nivel sobre un middleware de bajo nivel."
+"Una de las maneras de explicar cómo funciona Godot es que es un motor de "
+"juegos de alto nivel sobre un middleware de bajo nivel."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
@@ -136,7 +134,6 @@ msgstr ""
 "importantes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
@@ -147,16 +144,14 @@ msgstr ""
 "Escenas* (más información a continuación)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
-#, fuzzy
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
 msgstr ""
-"Contiene información sobre los grupos, y posee medios para llamar a todos "
-"los nodos de un grupo u obtener una lista de ellos."
+"Contiene información sobre los grupos y dispone de los medios para llamar a "
+"todos los nodos de un grupo u obtener una lista de ellos."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
-#, fuzzy
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
@@ -170,8 +165,8 @@ msgid ""
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
 "get_tree() <class_Node_get_tree>`."
 msgstr ""
-"Cuando un nodo es parte del Árbol de Escenas, el :ref:`SceneTree "
-"<class_SceneTree>` singleton puede obtenerse simplemente llamando :ref:`Node."
+"Cuando un nodo es parte del Árbol de Escenas, el singleton :ref:`SceneTree "
+"<class_SceneTree>` puede obtenerse simplemente llamando :ref:`Node."
 "get_tree() <class_Node_get_tree>`."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
@@ -188,7 +183,6 @@ msgstr ""
 "diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
-#, fuzzy
 msgid ""
 "This node contains the main viewport, anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
@@ -196,9 +190,9 @@ msgid ""
 "nothing would be seen!"
 msgstr ""
 "Este nodo contiene el viewport principal, cualquier otro elemento es un "
-"pariente de :ref:`Viewport <class_Viewport>` y es dibujado en su interior "
-"por defecto, toma sentido entonces que el nodo principal sea siempre uno de "
-"este tipo, de otro modo no se podría dibujar nada en pantalla!"
+"pariente de :ref:`Viewport <class_Viewport>` y por defecto es dibujado en su "
+"interior, toma sentido entonces que el nodo principal sea siempre uno de "
+"este tipo ¡de otro modo no se podría dibujar nada en pantalla!"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:93
 msgid ""
@@ -208,7 +202,7 @@ msgid ""
 msgstr ""
 "Mientras que se pueden crear otras vistas en la escena (para obtener "
 "resultados en pantalla dividida, etc.), ésta es la única que nunca es creada "
-"por el usuario. Se crea automáticamente dentro del Árbol de escenas."
+"por el usuario. Se crea automáticamente dentro de SceneTree."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:98
 msgid "Scene tree"
@@ -223,7 +217,6 @@ msgstr ""
 "principal, este se vuelve parte del *Árbol de escenas*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
-#, fuzzy
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
@@ -248,7 +241,6 @@ msgid "Tree order"
 msgstr "Orden del árbol"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
@@ -269,15 +261,13 @@ msgid "A scene is loaded from disk or created by scripting."
 msgstr "Una escena es cargada desde disco o creada mediante scripting."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
-#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
 "El nodo raíz de esa escena (sólo una raíz, ¿recuerdas?) se añade como hijo "
-"del Viewport \"raíz\" (de Árbol de Escenas), o a cualquier hijo o nieto del "
-"mismo."
+"del Viewport \"raíz\" (del SceneTree), o a cualquier hijo o nieto del mismo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:130
 msgid ""
@@ -320,7 +310,6 @@ msgstr ""
 "change_scene() <class_SceneTree_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
-#, fuzzy
 msgid ""
 "This is a quick and useful way to switch scenes but has the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -334,4 +323,4 @@ msgstr ""
 "cargue y se ejecute. En algún momento del juego, puede ser conveniente crear "
 "pantallas de carga adecuadas con una barra de progreso, indicadores animados "
 "o carga de hilos (fondo). Esto debe hacerse manualmente usando autoloads "
-"(¡véase el siguiente capítulo!) y :ref:`doc_background_loading`."
+"(¡ver el próximo capítulo!) y :ref:`doc_background_loading`."

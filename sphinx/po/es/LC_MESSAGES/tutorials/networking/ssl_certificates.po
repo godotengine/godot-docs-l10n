@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:4
 msgid "SSL certificates"
-msgstr ""
+msgstr "Certificados SSL"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:7
 msgid "Introduction"
@@ -33,18 +33,28 @@ msgid ""
 "around it. The :ref:`HTTPClient <class_HTTPClient>` class also supports "
 "HTTPS by using this same wrapper."
 msgstr ""
+"A menudo se desea usar conexiones SSL para las comunicaciones para evitar "
+"ataques \"man in the middle\"(hombre en el medio). Godot tiene una envoltura "
+"de conexión, :ref:`StreamPeerSSL <class_StreamPeerSSL>`, que puede tomar una "
+"conexión regular y añadir seguridad a su alrededor. La clase :ref:"
+"`HTTPClient <class_HTTPClient>` también soporta HTTPS utilizando esta misma "
+"envoltura."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:16
 msgid ""
 "For SSL to work, certificates need to be provided. A .crt file must be "
 "specified in the project settings:"
 msgstr ""
+"Para que SSL funcione, es necesario proporcionar certificados. Se debe "
+"especificar un archivo.crt en los ajustes del proyecto:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:21
 msgid ""
 "This file should contain any number of public certificates in https://en."
 "wikipedia.org/wiki/Privacy-enhanced_Electronic_Mail format."
 msgstr ""
+"Este archivo debe contener cualquier número de certificados públicos en "
+"formato `PEM <https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail>`."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:24
 msgid ""
@@ -56,11 +66,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:29
 msgid "There are two ways to obtain certificates:"
-msgstr ""
+msgstr "Hay dos formas de obtener certificados:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:32
 msgid "Approach 1: self signed cert"
-msgstr ""
+msgstr "Enfoque 1: certificado autofirmado"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:34
 msgid ""
@@ -68,6 +78,9 @@ msgid ""
 "and put the public pair in the .crt file (again, in PEM format). The private "
 "key should go to your server."
 msgstr ""
+"El primer enfoque es el más simple: genera un par de claves privadas y "
+"públicas, y pon el par público en el archivo.crt (de nuevo, en formato PEM). "
+"La clave privada debe ir a tu servidor."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:38
 msgid ""
@@ -76,10 +89,14 @@ msgid ""
 "not require domain validation** nor requires you to spend a considerable "
 "amount of money in purchasing certificates from a CA."
 msgstr ""
+"OpenSSL tiene `algo de documentación <https://raw.githubusercontent.com/"
+"openssl/openssl/master/doc/HOWTO/keys.txt>`__ sobre esto. Este enfoque "
+"también **no requiere validación de dominio** ni requiere que tu gastes una "
+"cantidad considerable de dinero en la compra de certificados de una CA."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:45
 msgid "Approach 2: CA cert"
-msgstr ""
+msgstr "Enfoque 2: certificado CA"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:47
 msgid ""
@@ -87,6 +104,9 @@ msgid ""
 "Verisign, Geotrust, etc. This is a more cumbersome process, but it's more "
 "\"official\" and ensures your identity is clearly represented."
 msgstr ""
+"El segundo enfoque consiste en utilizar una autoridad de certificación (CA) "
+"como Verisign, Geotrust, etc. Este es un proceso más engorroso, pero es más "
+"\"oficial\" y asegura que tu identidad está claramente representada."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:52
 msgid ""
@@ -94,6 +114,10 @@ msgid ""
 "connect to someone else's servers (i.e., connecting to Google or some other "
 "REST API provider via HTTPS) this method is not as useful."
 msgstr ""
+"A menos que estés trabajando con grandes empresas o corporaciones, o "
+"necesites conectarte a los servidores de otra persona (es decir, conectarte "
+"a Google o a algún otro proveedor de REST API a través de HTTPS), este "
+"método no es tan útil."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:56
 msgid ""
@@ -101,21 +125,31 @@ msgid ""
 "ensure the domain you are connecting to is the one intended, otherwise any "
 "website can issue any certificate in the same CA and it will work."
 msgstr ""
+"Además, cuando se utiliza un certificado emitido por CA, **debes habilitar "
+"la validación de dominio**, para asegurarte de que el dominio al que te "
+"estás conectando es el deseado, de lo contrario cualquier sitio web puede "
+"emitir cualquier certificado en la misma CA y funcionará."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:61
 msgid ""
 "If you are using Linux, you can use the supplied certs file, generally "
 "located in:"
 msgstr ""
+"Si estás usando Linux, puedes usar el archivo certs suministrado, "
+"generalmente ubicado en:"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:68
 msgid ""
 "This file allows HTTPS connections to virtually any website (i.e., Google, "
 "Microsoft, etc.)."
 msgstr ""
+"Este archivo permite conexiones HTTPS a prácticamente cualquier sitio web "
+"(por ejemplo, Google, Microsoft, etc.)."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:71
 msgid ""
 "Or pick any of the more specific certificates there if you are connecting to "
 "a specific one."
 msgstr ""
+"O elije cualquiera de los certificados más específicos si te estás "
+"conectando a uno específico."

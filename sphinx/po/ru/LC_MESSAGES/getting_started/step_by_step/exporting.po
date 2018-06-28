@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,21 +100,25 @@ msgstr ""
 "игра будет масштабируется на экранах разных размеров."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
+#, fuzzy
 msgid ""
 "Next, we need to modify the ``Player.gd`` script to change the input method. "
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"Далее, нужно модифицировать скрипт \"Player.gd\", чтобы изменить метод "
+"ввода. Уберем ключи управление и заставим игрока двигаться к цели, которая "
+"задается событием тапа по экрану (или кликом)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
-msgstr ""
+msgstr "Вот полный скрипт для игрока, с комментариями, которые мы изменили:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
 msgid "Export Templates"
-msgstr ""
+msgstr "Шаблоны Экспорта"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:124
 msgid ""
@@ -123,18 +127,27 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"Чтобы экспортировать, вам потребуется скачать **шаблоны экспорта** из http://"
+"godotengine.org/download. Эти шаблоны представляют собой оптимизированные "
+"версии движка без редактора скомпилированного для каждой платформы. Вы также "
+"может скачать их в самом Godot кликнув на *Редактор -> Управление шаблонами "
+"экспорта*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"В окне которое откроется, вы может нажать \"Скачать\" чтобы получить шаблон "
+"для версии соответствующей вашей версии Godot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"Если вы обновляете Godot, необходимо скачать шаблоны, соответствующие вашей "
+"новой версии, иначе работа экспортированых проектов может быть нестабильна."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
 #, fuzzy
@@ -146,35 +159,47 @@ msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
 msgstr ""
+"Теперь можно изменить настройки экспорта, нажав на *Project -> Export*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:146
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"Создайте новую предустановку экспорта нажав на \"Добавить...\" и выбрав "
+"платформу. Вы можете создать сколько угодно предустановок с различными "
+"настройками."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
+#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"Внизу окна есть две кнопки. \"Экпорт PCK/ZIP\" создает упакованную версию "
+"данных вашего проекта. Он не включает выполняемый файл, поэтому проект не "
+"может быть запущен самостоятельно."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"Вторая кнопка, \"Экпорт Проекта\", создает полную исполняемую версию вашего "
+"проекта, на подобию `.apk`на Android или `.exe`на Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
 msgid ""
 "In the \"Resources\" and \"Features\" tabs you can customize how the game is "
 "exported for each platform. We can leave those settings alone for now."
 msgstr ""
+"На вкладках \"Ресурсы\" и \"Особенности\" вы можете настроить экспорт игры "
+"для каждой платформы. Эти настройки пока оставим."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
 msgid "Exporting by Platform"
-msgstr ""
+msgstr "Экспорт по Платформам"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:162
 msgid ""

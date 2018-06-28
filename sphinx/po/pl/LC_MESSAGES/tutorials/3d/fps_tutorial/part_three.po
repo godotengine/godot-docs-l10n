@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:4
 msgid "Part 3"
-msgstr ""
+msgstr "Część 3"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:7
 msgid "Part Overview"
-msgstr ""
+msgstr "Przegląd części"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:9
 msgid ""
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:19
 msgid "Let's get started!"
-msgstr ""
+msgstr "Zatem zaczynajmy"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:23
 msgid "Changing levels"
@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:77
 msgid "Adding ammo"
-msgstr ""
+msgstr "Dodanie amunicji"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:79
 msgid ""
@@ -110,6 +110,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:81
 msgid "First we need to define a few variables in each of our weapon scripts."
 msgstr ""
+"Po pierwsze musimy zdefiniować kilka zmiennych do każdego ze skryptów broni"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:83
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:192
@@ -119,16 +120,16 @@ msgstr "Dodaj skrypt do ``Mob`` i dodaj do niego następujące zmienne:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:91
 msgid "``ammo_in_weapon``: The amount of ammo currently in the pistol"
-msgstr ""
+msgstr "``ammo_in_weapon``: Liczba amunicji znajdująca się w broni"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:92
 msgid ""
 "``spare_ammo``: The amount of ammo we have left in reserve for the pistol"
-msgstr ""
+msgstr "``spare_ammo``: Liczna amunicji która została w rezerwie dla pistoletu"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:93
 msgid "``AMMO_IN_MAG``: The amount of ammo in a fully reload weapon/magazine"
-msgstr ""
+msgstr "``AMMO_IN_MAG``: Liczba amunicji w pełni przeładowanej broni/magazynku"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:95
 msgid "Now all we need to do is add a single line of code to ``fire_weapon``."
@@ -150,7 +151,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:104
 msgid "Now we need to add ammo for both the rifle and the knife."
-msgstr ""
+msgstr "Teraz musimy dodać amunicje zarówno dla karabinu i noża."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:106
 msgid ""
@@ -351,11 +352,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:267
 msgid "Now we need to add ``reload_weapon`` to ``Weapon_Rifle.gd``:"
-msgstr ""
+msgstr "Teraz musimy dodać ``reload_weapon`` do ``Weapon_Rifle.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:296
 msgid "This code is exactly the same as the pistol."
-msgstr ""
+msgstr "Kod jest dokładnie taki sam jak przy pistolecie."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:300
 msgid ""
@@ -372,15 +373,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:312
 msgid "Now we need to add ``reloading_weapon``:"
-msgstr ""
+msgstr "Teraz potrzebujemy dodać ``reloading_weapon``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:319
 msgid "Since we cannot reload a knife, we always return ``false``."
-msgstr ""
+msgstr "Niestety nie możemy przeładować noża, więc zawsze zwraca ``false``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:322
 msgid "Adding reloading to the player"
-msgstr ""
+msgstr "Dodanie przeładowania dla gracza"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:324
 msgid ""
@@ -393,6 +394,8 @@ msgid ""
 "``reloading_weapon``: A variable to track whether or not the player is "
 "currently trying to reload."
 msgstr ""
+"``reloading_weapon``: Zmienna umożliwiająca śledzenie, czy gracz próbuje "
+"obecnie przeładować broń."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:333
 msgid "Next we need to add another function call to ``_physics_process``."
@@ -409,15 +412,17 @@ msgid ""
 "Now we need to add ``process_reloading``. Add the following function to "
 "``Player.gd``:"
 msgstr ""
+"Teraz musimy dodać ``process_reloading``. Dodaj poniższe funkcje do ``Player."
+"gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:357
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:408
 msgid "Let's go over what's happening here."
-msgstr ""
+msgstr "Zobaczmy co się tu satanie."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:359
 msgid "First we check to make sure the player is trying to reload."
-msgstr ""
+msgstr "Po pierwsze musimy się upewnić, że gracz próbuje przeładować."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:361
 msgid ""
@@ -431,6 +436,7 @@ msgid ""
 "If the current weapon is equal to ``null``, then the current weapon is "
 "``UNARMED``."
 msgstr ""
+"Jeśli aktualna broń jest ``null``, to aktualną bronią jest ``UNARMED``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:365
 msgid ""
@@ -538,7 +544,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:458
 msgid "Adding sounds"
-msgstr ""
+msgstr "Dodawanie dźwięku"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:460
 msgid ""

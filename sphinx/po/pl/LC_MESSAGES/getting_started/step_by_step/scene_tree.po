@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,8 @@ msgid ""
 "This is where things start getting abstract, but don't panic. There's not "
 "much more depth than this."
 msgstr ""
+"W tym miejscu sprawy zaczynają nabierać abstrakcyjnego charakteru, ale nie "
+"wpadaj w panikę. Niewiele jest później trudniejszych rzeczy."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:12
 msgid ""
@@ -38,6 +40,9 @@ msgid ""
 "Scenes are simply a collection of nodes. They become active once they enter "
 "the *scene tree*."
 msgstr ""
+"W poprzednich samouczkach wszystko kręciło się wokół koncepcji węzłów. Sceny "
+"są po prostu zbiorem węzłów. Stają się one aktywne po wejściu do *drzewa "
+"sceny*(scene tree)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -46,10 +51,14 @@ msgid ""
 "and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
+"Koncepcja ta zasługuje na bardziej szczegółowe omówienie. W rzeczywistości, "
+"system scen nie jest nawet kluczowym elementem Godota, ponieważ można go "
+"pominąć i napisać skrypt (lub kod C++), który komunikuje bezpośrednio się z "
+"serwerami, ale robienie gry w ten sposób wymagałoby dużo pracy."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
-msgstr ""
+msgstr "Pętla Główna"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:24
 msgid ""
@@ -58,6 +67,10 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"Godot działa wewnętrznie w następujący sposób. Istnieje klasa :ref:`OS "
+"<class_OS>`, która jest jedyną instancją działającą na początku. Następnie "
+"wczytywane są wszystkie sterowniki, serwery, języki skryptowe, system scen "
+"itp."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:29
 msgid ""
@@ -66,6 +79,10 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"Po zakończeniu inicjalizacji, :ref:`OS <class_OS>` musi być dostarczony :ref:"
+"`MainLoop <class_MainLoop>` do uruchomienia. Do tej pory wszystko to działa "
+"(możesz sprawdzić plik main/main.cpp w kodzie źródłowym, jeśli jesteś "
+"zainteresowany tym, jak to działa od podstaw)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -80,12 +97,17 @@ msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
+"Jednym ze sposobów, aby wyjaśnić, jak działa Godot jest przedstawienie jego "
+"jako silnik gry wysokopoziomowy o niskim poziomie oprogramowania "
+"pośredniczącego."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
 msgstr ""
+"System scen jest mechanizmem silnika gry, podczas gdy :ref:`OS <class_OS>` i "
+"serwery są niskim poziomem API."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
 msgid ""
@@ -93,12 +115,18 @@ msgid ""
 "`SceneTree <class_SceneTree>`. This is automatically instanced and set when "
 "running a scene, no need to do any extra work."
 msgstr ""
+"W każdym razie, system scen zapewnia własną pętlę główną dla systemu "
+"operacyjnego, :ref:`SceneTree <class_SceneTree>`. Jest on automatycznie "
+"instancjowany i ustawiany podczas uruchamiania sceny, bez konieczności "
+"wykonywania dodatkowej pracy."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It's important to know that this class exists because it has a few important "
 "uses:"
 msgstr ""
+"Ważne jest, aby wiedzieć, że ta klasa istnieje, ponieważ ma kilka ważnych "
+"zastosowań:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 msgid ""
@@ -121,6 +149,8 @@ msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
 msgstr ""
+"Zawiera on pewne funkcje stanu globalnego, takie jak ustawianie trybu pauzy "
+"lub zamykanie procesu."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
@@ -138,6 +168,8 @@ msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
+"Korzeń :ref:`Viewport <class_Viewport>` jest zawsze na górze sceny. W węźle "
+"można go uzyskać na dwa różne sposoby:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
 msgid ""
@@ -192,7 +224,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:124
 msgid "\"Becoming active\" by entering the *Scene Tree*"
-msgstr ""
+msgstr "\"Stanie się aktywnym\" poprzez wejście w *Drzewo Sceny*"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:126
 msgid "A scene is loaded from disk or created by scripting."
@@ -226,7 +258,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:141
 msgid "Changing current scene"
-msgstr ""
+msgstr "Zmiana aktualnej sceny"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
 msgid ""

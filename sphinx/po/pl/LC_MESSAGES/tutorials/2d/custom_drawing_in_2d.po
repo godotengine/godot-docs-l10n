@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,7 +220,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
 msgid "Result:"
-msgstr ""
+msgstr "Rezultat:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:271
 msgid "Arc polygon function"
@@ -282,11 +282,15 @@ msgid ""
 "Also, don't forget to modify the _draw() function to make use of these "
 "variables:"
 msgstr ""
+"Nie zapomnij również zmodyfikować funkcji _draw(), aby wykorzystać te "
+"zmienne:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:421
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
+"Zatem zaczynajmy! Działa ale arc obraca się nieziemsko szybko! Co jest nie "
+"tak?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
 msgid ""
@@ -298,6 +302,13 @@ msgid ""
 "So, using 'delta' to control your drawing ensures that your program runs at "
 "the same speed on everybody's hardware."
 msgstr ""
+"Dzieje się tak dlatego, że twój układ GPU wyświetla klatki tak szybko, jak "
+"to tylko możliwe. Musimy \"znormalizować\" szybkość rysowania. Aby to "
+"osiągnąć musimy skorzystać z parametru \"delta\" funkcji _process(). delta\" "
+"określa czas, jaki upłynął między dwoma ostatnimi renderowanymi klatkami. "
+"Zazwyczaj jest on mały (około 0,0003 sekundy, ale zależy to od sprzętu). Tak "
+"więc użycie 'delty' do sterowania rysunkiem zapewnia, że Twój program będzie "
+"działał z taką samą prędkością na każdym sprzęcie."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:432
 msgid ""
@@ -305,23 +316,32 @@ msgid ""
 "'delta' in the _process() function. This way, our 2 angles will be increased "
 "by a much smaller value, which directly depends on the rendering speed."
 msgstr ""
+"W naszym przypadku musimy po prostu pomnożyć naszą zmienną \"rotation_ang\" "
+"przez \"delta\" w funkcji _process(). W ten sposób nasze 2 kąty zostaną "
+"zwiększone o znacznie mniejszą wartość, która bezpośrednio zależy od "
+"szybkości renderowania."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:466
 msgid "Let's run again! This time, the rotation displays fine!"
-msgstr ""
+msgstr "Uruchommy to znowu! Tym razem, obraca się prawidłowo!"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
 msgid "Tools"
-msgstr ""
+msgstr "Narzędzia"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
+"Podczas uruchamiania węzłów w edytorze może być również pożądane narysowanie "
+"własnych węzłów w celu użycia ich jako podglądu lub wizualizacji jakiejś "
+"funkcji lub zachowania."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:475
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."
 msgstr ""
+"Pamiętaj, aby użyć słowa kluczowego \"tool\" na górze skryptu (sprawdź "
+"odnośnik :ref:`doc_gdscript` jeśli zapomniałeś, co to robi)."

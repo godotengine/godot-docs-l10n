@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:4
 msgid "Advanced Vector Math"
-msgstr ""
+msgstr "Продвинутая Векторная Алгебра"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:7
 msgid "Planes"
-msgstr ""
+msgstr "Плоскости"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:9
 msgid ""
@@ -33,6 +33,11 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
+"Скалярное произведение имеет одно интересное свойство с единичными "
+"векторами. Вообразите что перпендикуляр к такому вектору(и через начальную "
+"точку) проходит через плоскость. Плоскости разделяют все пространство на "
+"положительное (над плоскостью) и отрицательное (под плоскостью), и (вопреки "
+"популярному мнению) вы сможете также использовать его в 2D:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:17
 msgid ""
@@ -43,6 +48,13 @@ msgid ""
 "**normal** *is* a **unit vector**, but it's called *normal* because of its "
 "usage. (Just like we call (0,0) the Origin!)."
 msgstr ""
+"Единичные вектора которые перпендикулярны плоскости (так, что они описывают "
+"ориентацию поверхности) называются **единичными векторами нормали**. Хотя, "
+"обычно это сокращают до **нормалей**. Нормали имеются в плоскостях, 3D "
+"геометрии (чтобы определять которая из сторон или вершин скользит), и т.д. "
+"**Нормаль** это **единичный вектор**, но называется **нормалью** поскольку "
+"имеет такое предназначение. (Так же как мы называем (0,0) Началом "
+"координат !)."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:24
 msgid ""

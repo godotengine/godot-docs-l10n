@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
 #, fuzzy
-msgid "Custom Godot Servers"
+msgid "Custom Godot servers"
 msgstr "Benutzerdefinierte Iteratoren"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
@@ -28,191 +28,195 @@ msgstr "Einführung"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
 msgid ""
-"Godot implements multi threading as servers. Servers are daemons which "
-"manages data, processes, and pushes the result. Server implements the "
+"Godot implements multi-threading as servers. Servers are daemons which "
+"manages data, processes, and pushes the result. Servers implement the "
 "mediator pattern which interprets resource ID and process data for the "
 "engine and other modules. In addition, the server claims ownership for its "
 "RID allocations."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:16
+#: ../../docs/development/cpp/custom_godot_servers.rst:15
 msgid ""
-"This guide assumes the reader knows how to create C++ modules and godot data "
-"types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
+"This guide assumes the reader knows how to create C++ modules and Godot data "
+"types. If not, refer to :ref:`doc_custom_modules_in_c++`."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:20
-#: ../../docs/development/cpp/custom_godot_servers.rst:279
-#: ../../docs/development/cpp/custom_godot_servers.rst:429
-msgid "References:"
+#: ../../docs/development/cpp/custom_godot_servers.rst:19
+#: ../../docs/development/cpp/custom_godot_servers.rst:314
+msgid "References"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:22
+#: ../../docs/development/cpp/custom_godot_servers.rst:21
 msgid ""
-"`Why does Godot use Servers and RIDs? <https://godotengine.org/article/why-"
+"`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-"
 "does-godot-use-servers-and-rids>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:24
-msgid "`Sigleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
+#: ../../docs/development/cpp/custom_godot_servers.rst:23
+msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:26
-msgid "`Mediator Pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+#: ../../docs/development/cpp/custom_godot_servers.rst:25
+msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:29
+#: ../../docs/development/cpp/custom_godot_servers.rst:28
 msgid "What for?"
 msgstr ""
 
+#: ../../docs/development/cpp/custom_godot_servers.rst:30
+msgid "Adding artificial intelligence."
+msgstr ""
+
 #: ../../docs/development/cpp/custom_godot_servers.rst:31
-#, fuzzy
-msgid "Adding AI"
-msgstr "Abstand"
+msgid "Adding custom asynchronous threads."
+msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:32
-msgid "Adding a custom asynchronous threads"
+msgid "Adding support for a new input device."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
-msgid "Adding Input support"
+msgid "Adding writing threads."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:34
-msgid "Adding writing threads"
+msgid "Adding a custom VoIP protocol."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:35
-msgid "Adding custom VOIP protocol"
+msgid "And more..."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:36
-msgid "etc."
-msgstr ""
-
-#: ../../docs/development/cpp/custom_godot_servers.rst:39
+#: ../../docs/development/cpp/custom_godot_servers.rst:38
 #, fuzzy
-msgid "Creating a Godot Server"
+msgid "Creating a Godot server"
 msgstr "Erstellen eines C# Skripts"
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:41
+#: ../../docs/development/cpp/custom_godot_servers.rst:40
 msgid ""
-"At minimum, a server must to have: a static instance, sleep timer, thread "
-"loop, initialize state, and cleanup."
+"At minimum, a server must have a static instance, a sleep timer, a thread "
+"loop, an initialization state and a cleanup procedure."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:245
-msgid "Custom Managed Resource Data"
+#: ../../docs/development/cpp/custom_godot_servers.rst:272
+msgid "Custom managed resource data"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:247
+#: ../../docs/development/cpp/custom_godot_servers.rst:274
 msgid ""
 "Godot servers implement a mediator pattern. All data types inherit "
-"``RID_Data``. `RID_Owner<MyRID_Data>`` owns the object when ``make_rid`` is "
-"called. Only during debug mode, RID_Owner maintains a list of RID. In "
-"practice, RID is similar to writing object oriented C code."
+"``RID_Data``. ``RID_Owner<MyRID_Data>`` owns the object when ``make_rid`` is "
+"called. During debug mode only, RID_Owner maintains a list of RIDs. In "
+"practice, RIDs are similar to writing object-oriented C code."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:281
+#: ../../docs/development/cpp/custom_godot_servers.rst:316
 #, fuzzy
 msgid ":ref:`RID<class_rid>`"
 msgstr ":ref:`RID <class_RID>`"
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:282
+#: ../../docs/development/cpp/custom_godot_servers.rst:317
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:286
-msgid "Registering the class to GDScript"
+#: ../../docs/development/cpp/custom_godot_servers.rst:320
+#, fuzzy
+msgid "Registering the class in GDScript"
+msgstr "Verwendung in GDScript"
+
+#: ../../docs/development/cpp/custom_godot_servers.rst:322
+msgid ""
+"Servers are allocated in ``register_types.cpp``. The constructor sets the "
+"static instance and ``init()`` creates the managed thread; "
+"``unregister_types.cpp`` cleans up the server."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:288
+#: ../../docs/development/cpp/custom_godot_servers.rst:326
 msgid ""
-"Server are allocated in ``register_types.cpp``. The constructor sets the "
-"static instance and init creates the managed thread. ``unregister_types."
-"cpp`` cleans up the server"
-msgstr ""
-
-#: ../../docs/development/cpp/custom_godot_servers.rst:292
-msgid ""
-"Since Godot Server class creates an instance and binds it to a static "
+"Since a Godot server class creates an instance and binds it to a static "
 "singleton, binding the class might not reference the correct instance. "
 "Therefore, a dummy class must be created to reference the proper Godot "
-"Server."
+"server."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:296
+#: ../../docs/development/cpp/custom_godot_servers.rst:330
 msgid ""
-"In ``register_godotserver_types()``, ``Engine::get_singleton()-"
-">add_singleton`` is used to register the dummy class to GDScript."
+"In ``register_server_types()``, ``Engine::get_singleton()->add_singleton`` "
+"is used to register the dummy class in GDScript."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:338
+#: ../../docs/development/cpp/custom_godot_servers.rst:372
 msgid ""
 "`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
 "blob/master/servers/register_server_types.cpp>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:341
+#: ../../docs/development/cpp/custom_godot_servers.rst:375
 msgid "Bind methods"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:343
+#: ../../docs/development/cpp/custom_godot_servers.rst:377
 msgid ""
-"The dummy class binds singleton methods to gdscript. In most cases, the "
+"The dummy class binds singleton methods to GDScript. In most cases, the "
 "dummy class methods wraps around."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:351
+#: ../../docs/development/cpp/custom_godot_servers.rst:385
 #, fuzzy
 msgid "Binding Signals"
 msgstr "Signale"
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:353
+#: ../../docs/development/cpp/custom_godot_servers.rst:387
 msgid ""
-"It is possible to emit signals to gdscript but calling the GDScript dummy "
+"It is possible to emit signals to GDScript but calling the GDScript dummy "
 "object."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:420
+#: ../../docs/development/cpp/custom_godot_servers.rst:462
 msgid "MessageQueue"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:422
+#: ../../docs/development/cpp/custom_godot_servers.rst:464
 msgid ""
-"In order to send commands into scenetree, MessageQueue is a thread safe "
+"In order to send commands into SceneTree, MessageQueue is a thread-safe "
 "buffer to queue set and call methods for other threads. To queue a command, "
-"obtain the target object RID and use either push_call, push_set, or "
-"push_notification to execute the desired behavior. Queue will be flushed "
-"whenever either ``SceneTree::idle`` or ``SceneTree::iteration`` are executed."
+"obtain the target object RID and use either ``push_call``, ``push_set``, or "
+"``push_notification`` to execute the desired behavior. The queue will be "
+"flushed whenever either ``SceneTree::idle`` or ``SceneTree::iteration`` is "
+"executed."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:431
+#: ../../docs/development/cpp/custom_godot_servers.rst:471
+msgid "References:"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_godot_servers.rst:473
 msgid ""
 "`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
 "core/message_queue.cpp>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:434
+#: ../../docs/development/cpp/custom_godot_servers.rst:476
 msgid "Summing it up"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:436
+#: ../../docs/development/cpp/custom_godot_servers.rst:478
 #, fuzzy
-msgid "Here is the GDScript sample code"
+msgid "Here is the GDScript sample code:"
 msgstr "Versuche, das folgende GDScript-Beispiel zu verstehen::"
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:469
+#: ../../docs/development/cpp/custom_godot_servers.rst:502
 msgid "Notes"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:471
+#: ../../docs/development/cpp/custom_godot_servers.rst:504
 msgid ""
-"Actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
-"%27s_paradox_of_the_Grand_Hotel>`__ is impossible"
+"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
+"%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:473
-msgid "Connecting signal example code is pretty hacky"
+#: ../../docs/development/cpp/custom_godot_servers.rst:505
+msgid "Connecting signal example code is pretty hacky."
 msgstr ""

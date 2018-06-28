@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Why?"
 msgstr "¿Por qué?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:9
-#, fuzzy
 msgid ""
 "Godot has nodes to draw sprites, polygons, particles, and all sorts of "
 "stuff. For most cases this is enough but not always. Before crying in fear, "
@@ -157,7 +156,6 @@ msgid "An example: drawing circular arcs"
 msgstr "Un ejemplo: dibujando arcos de curva"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:149
-#, fuzzy
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
 "something that Godot doesn't provide functions for. As an example, Godot "
@@ -165,18 +163,17 @@ msgid ""
 "about drawing a portion of a circle? You will have to code a function to "
 "perform this and draw it yourself."
 msgstr ""
-"Ahora veremos el uso de la funcionalidad de dibujo personalizado de Godot "
-"Engine para dibujar algo para lo que el motor no provee ninguna función. Por "
-"ejemplo, Godot provee la función draw_circle() que dibuja un círculo "
-"completo, pero ¿y si queremos dibujar una porción de un círculo? Deberás "
-"crear una función para hacer eso y dibujarlo."
+"Ahora usaremos la funcionalidad de dibujo personalizado del Motor Godot para "
+"dibujar algo para lo que Godot no ofrece ninguna función. Por ejemplo, Godot "
+"proporciona una función draw_circle() que dibuja un círculo entero. Sin "
+"embargo, ¿qué tal dibujar una porción de un círculo? Tendrás que codificar "
+"una función para realizarlo y dibujarlo tú mismo."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
 msgid "Arc function"
 msgstr "Función arco"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:158
-#, fuzzy
 msgid ""
 "An arc is defined by its support circle parameters. That is: the center "
 "position and the radius. The arc itself is then defined by the angle it "
@@ -191,7 +188,6 @@ msgstr ""
 "dibujar el arco en diferentes colores."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:163
-#, fuzzy
 msgid ""
 "Basically, drawing a shape on screen requires it to be decomposed into a "
 "certain number of points linked from one to the following one. As you can "
@@ -210,7 +206,7 @@ msgstr ""
 "de procesamiento. En general, si una figura es muy grande, requerirá más "
 "puntos para ser dibujada sin verse muy angulosa. Al contrario, si una figura "
 "es muy pequeña, se pueden reducir los puntos para ahorrar costo de "
-"procesamiento. Esto es llamado *nivel de detalle* (LoD por sus siglas en "
+"procesamiento. Esto es llamado *Nivel de Detalle* (LoD, por sus siglas en "
 "inglés). En nuestro ejemplo usaremos un número fijo de puntos, sin importar "
 "el radio."
 
@@ -239,7 +235,6 @@ msgstr ""
 "punto, entre el ángulo inicial y el ángulo final."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:212
-#, fuzzy
 msgid ""
 "The reason why each angle is reduced by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
@@ -248,11 +243,12 @@ msgid ""
 "counting at 12 o'clock. So we reduce each angle by 90° in order to start "
 "counting from 12 o'clock."
 msgstr ""
-"La razón por la que reducimos cada ángulo en 90° es porque computamos "
-"posiciones de cada ángulo utilizando trigonometría. cos() y sin() utilizan "
-"radianes, no grados, el ángulo de 0° (0 PI radianes) comienza apuntando "
-"hacia la derecha, pero queremos que comience apuntando hacia arriba. Así que "
-"reducimos el ángulo en 90° para conseguirlo."
+"La razón por la que cada ángulo se reduce en 90° es que calcularemos las "
+"posiciones 2D de cada ángulo usando trigonometría (ya sabes, cosas de coseno "
+"y seno...). Sin embargo, para simplificarlo, cos() y sin() usan radianes, no "
+"grados. El ángulo de 0° (0 radián) comienza a las 3 en punto, aunque "
+"queremos empezar a contar a las 12 en punto. Así que reducimos cada ángulo "
+"en 90° para empezar a contar desde las 12 en punto."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:218
 msgid ""
@@ -300,13 +296,12 @@ msgid "Draw the arc on screen"
 msgstr "Dibujar el arco en pantalla"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:237
-#, fuzzy
 msgid ""
 "We now have a function that draws stuff on the screen: It is time to call in "
 "the _draw() function."
 msgstr ""
-"Ahora tenemos una función que dibuja cosas en la pantalla: es momento de "
-"llamar la función _draw()."
+"Ahora tenemos una función que dibuja cosas en la pantalla: Es hora de llamar "
+"a la función _draw()."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
 msgid "Result:"
@@ -333,7 +328,6 @@ msgid "Dynamic custom drawing"
 msgstr "Dibujos personalizados dinámicos"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:313
-#, fuzzy
 msgid ""
 "Alright, we are now able to draw custom stuff on screen. However, it is "
 "static: Let's make this shape turn around the center. The solution to do "
@@ -341,12 +335,12 @@ msgid ""
 "our example, we will simply increment them by 50. This increment value has "
 "to remain constant or else the rotation speed will change accordingly."
 msgstr ""
-"Ahora somos capaces de dibujar figuras personalizadas en pantalla, sin "
-"embargo, son estáticas. Hagamos que la figura gire en torno al centro. La "
-"solución para esto es simplemente cambiar los valores angle_from y angle_to "
-"a través del tiempo. Para nuestro ejemplo, simplemente lo incrementaremos en "
-"50, este valor de incremento deberá permanecer constante sino la velocidad "
-"de rotación cambiará de acuerdo a las modificaciones."
+"Muy bien, ahora podemos hacer dibujos personalizados en la pantalla. Sin "
+"embargo, es estático: Hagamos que esta forma gire alrededor del centro. La "
+"solución para hacer esto es simplemente cambiar los valores angle_from y "
+"angle_to a lo largo del tiempo. Para nuestro ejemplo, simplemente los "
+"incrementaremos en 50. Este valor de incremento tiene que permanecer "
+"constante o bien la velocidad de rotación cambiará en consecuencia."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:319
 msgid ""
@@ -364,7 +358,6 @@ msgid "We make these values change in the _process(delta) function."
 msgstr "Haremos que esos valores cambien en la función _process(delta)."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:343
-#, fuzzy
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to wrap() the resulting values between 0 and 360°! That is, if "
@@ -375,13 +368,14 @@ msgid ""
 "behavior. Since Godot doesn't provide a wrap() function, we'll create it "
 "here, as it is relatively simple."
 msgstr ""
-"También incrementaremos nuestros valores angle_from y angle_to aquí. Sin "
-"embargo no debemos olvidar de aplicar ajuste en el valor resultante para "
-"contenerlo entre 0 y 360 grados. Si no se ajustan esos valores, el script "
-"funcionará bien por un largo tiempo pero los valores se incrementarán hasta "
-"el máximo que puede manejar Godot (2^31 - 1). Cuando esto sucede, el "
-"programa puede cerrarse o realizar un comportamiento no esperado. Como Godot "
-"no provee una función así, la crearemos aquí, es relativamente simple."
+"También incrementamos nuestros valores angle_from y angle_to. Sin embargo, "
+"no debemos olvidarnos de ajustar los valores resultantes entre 0 y 360°, es "
+"decir, si el ángulo es 361°, entonces en realidad es 1°. Si no ajustas estos "
+"valores, el script funcionará correctamente, pero los valores de los ángulos "
+"crecerán más y más con el tiempo hasta que alcancen el máximo valor entero "
+"que Godot puede manejar (2^31 - 1). Cuando esto sucede, Godot puede fallar o "
+"producir un comportamiento inesperado. Como Godot no proporciona una función "
+"wrap(), la crearemos aquí, ya que es relativamente simple."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:352
 msgid ""
@@ -447,14 +441,13 @@ msgid "Tools"
 msgstr "Tools"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
-#, fuzzy
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
-"Dibujar tus propios nodos puede ser deseable mientras se ejecutan en el "
-"editor, para usarlo como previsualización de alguna característica o "
-"comportamiento."
+"Dibujar tus propios nodos también puede ser conveniente mientras los "
+"ejecutas en el editor para usarlos como vista previa o visualización de "
+"alguna característica o comportamiento."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:475
 msgid ""

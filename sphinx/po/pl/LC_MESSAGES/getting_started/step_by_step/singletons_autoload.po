@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:35
 msgid "AutoLoad"
-msgstr ""
+msgstr "Autoładowanie"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:37
 msgid ""
@@ -113,7 +113,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid "Custom scene switcher"
-msgstr ""
+msgstr "Własny zmieniacz scen"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:75
 msgid ""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:98
 msgid "Save the script as `global.gd`:"
-msgstr ""
+msgstr "Zapisz skrypt jako `global.gd`:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:102
 msgid ""
@@ -160,10 +160,16 @@ msgid ""
 "the AutoLoad tab and add a new entry with name \"global\" that points to "
 "this file:"
 msgstr ""
+"Skrypt powinien otworzyć się w edytorze skryptów. Następnym krokiem jest "
+"dodanie go do listy AutoLoad. Wybierz Projekt > Ustawienia projektu, przejdź "
+"do zakładki AutoLoad i dodaj nowy wpis o nazwie \"Globalny\", który wskazuje "
+"na ten plik:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:109
 msgid "Now, whenever you run any of your scenes, the script is always loaded."
 msgstr ""
+"Teraz, za każdym razem, gdy uruchomisz dowolną scenę, skrypt jest zawsze "
+"wczytywany."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:111
 msgid ""
@@ -177,12 +183,16 @@ msgstr ""
 msgid ""
 "Note: Make sure that global.gd extends Node, otherwise it won't be loaded!"
 msgstr ""
+"Uwaga: Upewnij się, że global.gd dziedziczy po Node(extends Node), w "
+"przeciwnym razie skrypt nie zostanie załadowany!"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:146
 msgid ""
 "Next up is the function for changing the scene. This function frees the "
 "current scene and replaces it with the requested one."
 msgstr ""
+"Dalej znajduje się funkcja zmiany sceny. Funkcja ta zwalnia bieżącą scenę i "
+"załaduje tą żądaną."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:216
 msgid ""
@@ -193,22 +203,29 @@ msgid ""
 "execution of the commands in the second function will happen at a later time "
 "when no code from the current scene is running."
 msgstr ""
+"Jak wspomniano w komentarzach powyżej, chcemy uniknąć sytuacji, w których w "
+"trakcie użytkowania jest usuwana obecna scena, więc w tym momencie pożądane "
+"jest użycie :ref:`Object.call_deferred() <class_Object_call_deferred>`. W "
+"rezultacie wykonanie komend w drugiej funkcji nastąpi później, gdy nie "
+"będzie uruchomiony żaden kod z bieżącej sceny."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:224
 msgid ""
 "Finally, all that is left is to fill the empty functions in scene_a.gd and "
 "scene_b.gd:"
-msgstr ""
+msgstr "Na koniec wystarczy wypełnić puste funkcje  scene_a.gd i scene_b.gd:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:245
 msgid "and"
-msgstr ""
+msgstr "i"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:265
 msgid ""
 "Now if you run the project, you can switch between both scenes by pressing "
 "the button!"
 msgstr ""
+"Teraz, jeśli uruchomisz projekt, możesz przełączać się pomiędzy obydwoma "
+"scenami, naciskając przycisk!"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:268
 msgid ""

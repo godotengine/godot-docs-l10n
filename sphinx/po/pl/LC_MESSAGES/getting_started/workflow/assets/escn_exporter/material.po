@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:2
 msgid "Materials"
-msgstr ""
+msgstr "Materiały"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
-msgstr ""
+msgstr "Używanie istniejących materiałów"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:6
 msgid ""
@@ -49,10 +49,12 @@ msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
 msgstr ""
+"W przypadku wyszukiwania pliku ``.tres`` przez eksportera, należy skorzystać "
+"z opcji \"Ścieżki wyszukiwania materiału\":"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "This can take the value of:"
-msgstr ""
+msgstr "Może to przyjąć wartość:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:25
 msgid ""
@@ -68,10 +70,14 @@ msgid ""
 "location. This is useful for projects where you may have duplicate material "
 "names and need more control over what material gets assigned."
 msgstr ""
+"Katalog eksportu - wyszukiwanie materiałów w podkatalogach lokalizacji "
+"eksportu. Jest to przydatne w przypadku projektów, w których możesz mieć "
+"podwójne nazwy materiałów i potrzebujesz większej kontroli nad tym, jaki "
+"materiał zostanie przypisany."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:32
 msgid "None - Do not search for materials. Export them from the Blender file."
-msgstr ""
+msgstr "Brak - Nie wyszukuj materiałów. Eksportuj je z pliku Blendera."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:36
 #, fuzzy
@@ -90,6 +96,8 @@ msgid ""
 "Export of Blender materials is currently very primitive. However, it is the "
 "focus of a current GSOC project"
 msgstr ""
+"Eksport materiałów Blendera jest obecnie bardzo prymitywny. Jest to jednak "
+"główny cel tegorocznego GSOC"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:47
 msgid ""

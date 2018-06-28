@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:4
 msgid "Import process"
-msgstr ""
+msgstr "Importowanie"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:7
 msgid "Importing assets in Godot 3.0+"
-msgstr ""
+msgstr "Importowanie zasobów w Godot 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
 msgid ""
@@ -72,7 +72,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:39
 msgid "Automatic reimport"
-msgstr ""
+msgstr "Automatyczne ponowne importowanie"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:41
 msgid ""
@@ -80,16 +80,20 @@ msgid ""
 "automatic reimport of it, applying the preset configured for that specific "
 "asset."
 msgstr ""
+"Gdy zmieni się suma kontrolna MD5 zasobu, Godot dokona automatycznie jego "
+"ponownego importu, ustawiając określone wartości dla tego zasobu."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:46
 msgid "Files generated"
-msgstr ""
+msgstr "Generowane wygenerowane"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:48
 msgid ""
 "Importing will add an extra <asset>.import file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
+"Importowanie doda dodatkowy plik <asset>.import zawierający konfigurację "
+"importu. Upewnij się, że zawarłeś te pliki w swoim systemie kontroli wersji!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:53
 msgid ""
@@ -107,17 +111,19 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:64
 msgid "Changing import resource type"
-msgstr ""
+msgstr "Zmiana typu importortowania zasobu"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:66
 msgid ""
 "Some source assets can be imported as different types of resources. For "
 "this, select the relevant type of resource desired and press \"Reimport\":"
 msgstr ""
+"Niektóre zasoby mogą być importowane jako różne rodzaje zasobów. W tym celu "
+"wybierz odpowiedni rodzaj żądanego zasobu i naciśnij \"Ponowny Import\":"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:74
 msgid "Changing default import parameters"
-msgstr ""
+msgstr "Zmiana domyślnych ustawień importowania"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:76
 msgid ""
@@ -129,7 +135,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
-msgstr ""
+msgstr "Prostota jest kluczem!"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:86
 msgid ""
@@ -142,3 +148,5 @@ msgid ""
 "There are many types of assets available for import, so please continue "
 "reading to understand how to work with all of them!"
 msgstr ""
+"Istnieje wiele rodzajów zasobów dostępnych do importu, więc proszę czytać "
+"dalej, aby zrozumieć, jak pracować z nimi wszystkimi!"

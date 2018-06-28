@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,7 +133,6 @@ msgid "Generated geometry"
 msgstr "Geometría generada"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
-#, fuzzy
 msgid ""
 "It is possible to create custom geometry by using the :ref:`Mesh "
 "<class_Mesh>` resource directly. Simply create your arrays and use the :ref:"
@@ -142,12 +141,11 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
-"Es posible crear geometrías personalizadas usando el recurso :ref:`Mesh "
-"<class_Mesh>` directamente, simplemente cree sus arrays y use la función :"
+"Es posible crear geometría personalizada usando el recurso :ref:`Mesh "
+"<class_Mesh>` directamente. Simplemente crea tus arrays y usa la función :"
 "ref:`Mesh.add_surface() <class_Mesh_add_surface>`. También está disponible "
 "una clase helper, :ref:`SurfaceTool <class_SurfaceTool>`, que proporciona "
-"una API más sencilla y helpers para indexar, generar normales, tangentes, "
-"etc."
+"una API más sencilla y ayuda para indexar, generar normales, tangentes, etc."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:70
 msgid ""
@@ -339,25 +337,31 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
 msgid "To center the view on the selected object, press the \"f\" key."
 msgstr ""
+"Para centrar la vista en el objeto seleccionado, pulsar la tecla \"f\"."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:165
 msgid "View menu"
-msgstr ""
+msgstr "Menú Ver"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid ""
 "The view options are controlled by the \"[ view ]\" menu. Pay attention to "
 "this little menu inside the window because it is often overlooked!"
 msgstr ""
+"Las opciones de visualización se controlan mediante el menú \"[ ver ]\". "
+"¡Presta atención a este pequeño menú dentro de la ventana porque a menudo se "
+"pasa por alto!"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:173
 msgid "Default environment"
-msgstr ""
+msgstr "Entorno por defecto"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:175
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr ""
+"Cuando se crea desde el Administrador de Proyectos, el entorno 3D tiene un "
+"cielo por defecto."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:179
 msgid ""
@@ -365,10 +369,13 @@ msgid ""
 "work with a default environment in order to provide indirect and reflected "
 "light to your objects."
 msgstr ""
+"Dada la forma en que funciona la renderización basada en la física, se "
+"recomienda intentar siempre trabajar con un entorno predeterminado para "
+"proporcionar luz indirecta y reflejada a los objetos."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:184
 msgid "Cameras"
-msgstr ""
+msgstr "Cámaras"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:186
 msgid ""
@@ -376,6 +383,9 @@ msgid ""
 "unless a :ref:`Camera <class_Camera>` is also added to the scene. Cameras "
 "can either work in orthogonal or perspective projections:"
 msgstr ""
+"No importa cuántos objetos se coloquen en el espacio 3D, no se mostrará nada "
+"a menos que se añada una :ref: `Cámara <class_Camera>` a la escena. Las "
+"cámaras pueden trabajar en proyecciones ortogonales o en perspectiva:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid ""
@@ -385,12 +395,19 @@ msgid ""
 "picture-in-picture) are desired, they need their own children cameras to "
 "display."
 msgstr ""
+"Las cámaras están asociadas y sólo se muestran en la vista de un padre o "
+"abuelo. Dado que la raíz del árbol de escenas es un viewport, las cámaras se "
+"mostrarán en él de forma predeterminada, pero si se desean sub-viewports (ya "
+"sea como objetivo de render o como imagen-en-imagen), necesitan las cámaras "
+"de sus propios hijos para que se muestren."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:201
 msgid ""
 "When dealing with multiple cameras, the following rules are followed for "
 "each viewport:"
 msgstr ""
+"Cuando se trata de varias cámaras, se siguen las siguientes reglas para cada "
+"viewport:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:204
 msgid ""
@@ -398,6 +415,9 @@ msgid ""
 "will become the active camera. Further cameras entering the scene will be "
 "ignored (unless they are set as *current*)."
 msgstr ""
+"Si no hay cámaras en el árbol de escenas, la primera que entre en él se "
+"convertirá en la cámara activa. Otras cámaras que entren en la escena serán "
+"ignoradas (a menos que estén configuradas como *actual*)."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:207
 msgid ""
@@ -405,19 +425,26 @@ msgid ""
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
+"Si una cámara tiene la propiedad \"*actual*\" establecida, se utilizará "
+"independientemente de cualquier otra cámara de la escena. Si la propiedad "
+"está configurada, se activará, sustituyendo a la cámara anterior."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:210
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr ""
+"Si una cámara activa deja el árbol de escena, la primera cámara en orden de "
+"árbol tomará su lugar."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:214
 msgid "Lights"
-msgstr ""
+msgstr "Luces"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:216
 msgid ""
 "There is no limitation on the number of lights nor of types of lights in "
 "Godot. As many as desired can be added (as long as performance allows)."
 msgstr ""
+"No hay limitación en el número de luces ni de tipos de luces en Godot. Se "
+"pueden añadir tantos como se desee (siempre que el rendimiento lo permita)."

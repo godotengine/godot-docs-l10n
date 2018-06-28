@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:4
 msgid "Making HTTP requests"
-msgstr ""
+msgstr "Haciendo solicitudes HTTP"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:6
 msgid ""
@@ -28,16 +28,23 @@ msgid ""
 "<class_HTTPClient>`, for which a tutorial is available :ref:`here "
 "<doc_http_client_class>`."
 msgstr ""
+"El nodo :ref:`HTTPRequest <class_HTTPRequest>` es la forma más fácil de "
+"realizar solicitudes HTTP en Godot. Está respaldado por el :ref:`HTTPClient "
+"<class_HTTPClient>` de más bajo nivel, para el cual hay un tutorial "
+"disponible :ref:`aquí <doc_http_client_class>`."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:9
 msgid ""
 "For the sake of this example, we will create a simple UI with a button, that "
 "when pressed will start the HTTP request to the specified URL."
 msgstr ""
+"Por el bien de este ejemplo, crearemos una interfaz de usuario simple con un "
+"botón, que cuando se presione iniciará la solicitud HTTP a la URL "
+"especificada."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:12
 msgid "Preparing scene"
-msgstr ""
+msgstr "Preparando la escena"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:14
 msgid ""
@@ -46,16 +53,22 @@ msgid ""
 "node. You will need to connect the following signals to the CanvasLayer "
 "script:"
 msgstr ""
+"Crea una nueva escena vacía, añade un CanvasLayer como nodo raíz y añádele "
+"un script. Luego, añádele dos nodos hijos: un botón y un nodo HTTPRequest. "
+"Deberás conectar las siguientes señales al script de CanvasLayer:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:16
 msgid "Button.pressed: When the button is pressed, we will start the request."
 msgstr ""
+"Button.pressed: Cuando se presione el botón, comenzaremos la solicitud."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:17
 msgid ""
 "HTTPRequest.request_completed: When the request is completed, we will get "
 "the requested data as an argument."
 msgstr ""
+"HTTPRequest.request_completed: Cuando se complete la solicitud, obtendremos "
+"los datos solicitados como un argumento."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
@@ -67,18 +80,26 @@ msgid ""
 "API mocker; it returns a pre-defined JSON string, which we will then parse "
 "to get access to the data."
 msgstr ""
+"Abajo se muestra todo el código que necesitamos para que funcione. La URL "
+"apunta a una API mocker en línea; devuelve una cadena JSON predefinida, que "
+"luego analizaremos para obtener acceso a los datos."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:40
 msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
 msgstr ""
+"Con esto, deberías ver ``(hello:world)`` impreso en la consola; hello es una "
+"clave, y world es un valor, ambas son cadenas."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:42
 msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
 msgstr ""
+"Para obtener más información sobre el análisis de JSON, mira las referencias "
+"de clase para :ref:`JSON <class_JSON>` y :ref:`JSONParseResult "
+"<class_JSONParseResult>`."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:44
 msgid ""
@@ -86,6 +107,10 @@ msgid ""
 "``RESULT_SUCCESS`` and whether a JSON parsing error occurred, see the JSON "
 "class reference and :ref:`HTTPRequest <class_HTTPRequest>` for more."
 msgstr ""
+"Nota que es posible que quieras comprobar si el ``resultado`` es igual a "
+"``RESULT_SUCCESS`` y si se produjo un error de análisis JSON, mira la "
+"referencia de clase de JSON y :ref:`HTTPRequest <class_HTTPRequest>` para "
+"obtener más información."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:46
 msgid ""
@@ -94,12 +119,20 @@ msgid ""
 "\"``. For example, to set a custom user agent (the HTTP ``user-agent`` "
 "header) you could use the following:"
 msgstr ""
+"Por supuesto, también puedes establecer encabezados HTTP personalizados. "
+"Estos se dan como un array de cadenas, con cada cadena conteniendo un "
+"encabezado en el formato ``\"encabezado:valor\"``. Por ejemplo, para "
+"establecer un agente de usuario personalizado (el encabezado de ``agente-"
+"usuario`` de HTTP) puedes usar lo siguiente:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:53
 msgid ""
 "Please note that for SSL/TLS encryption and thus HTTPS URLs to work you may "
 "need to take some steps as described :ref:`here <doc_ssl_certificates>`."
 msgstr ""
+"Nota por favor, que para que el cifrado SSL/TLS y, por tanto, las URL HTTPS "
+"funcionen, es posible que necesites realizar algunos pasos, tal como se "
+"describe :ref:`aquí <doc_ssl_certificates>`."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:55
 msgid ""
@@ -110,10 +143,17 @@ msgid ""
 "access credentials inside your game. Avoid providing information useful to "
 "an attacker whenever possible."
 msgstr ""
+"Además, cuando llames APIs usando autorización, sé consciente que alguien "
+"puede analizar y descompilar tu aplicación lanzada y, por tanto, puede "
+"obtener acceso a cualquier información de autorización incrustada como "
+"tokens, nombres de usuario o contraseñas. Eso significa que generalmente no "
+"es una buena idea incluir cosas como las credenciales de acceso a la base de "
+"datos dentro de tu juego. Evita proporcionar información útil para un "
+"atacante siempre que sea posible."
 
 #: ../../docs/tutorials/networking/http_request_class.rst:59
 msgid "Sending data to server"
-msgstr ""
+msgstr "Enviando datos al servidor"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:61
 msgid ""
@@ -121,3 +161,5 @@ msgid ""
 "what if you need to send data to the server? Here is a common way of doing "
 "it:"
 msgstr ""
+"Hasta ahora nos hemos limitado a solicitar datos de un servidor. Pero, ¿Qué "
+"si necesitas enviar datos al servidor? Aquí hay una forma común de hacerlo:"

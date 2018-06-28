@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 msgid "Intro"
-msgstr ""
+msgstr "Wstęp"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
 msgid ""
@@ -39,15 +39,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:18
 msgid "You will learn:"
-msgstr ""
+msgstr "Nauczysz się:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
-msgstr ""
+msgstr "Jak **połączyć** GUI z GDScript"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr ""
+msgstr "Jak **kontrolować** GUI z GDScript"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
@@ -61,11 +61,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid "Create a main menu screen"
-msgstr ""
+msgstr "Tworzenie ekranu menu głównego"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
 msgid "Create a game user interface"
-msgstr ""
+msgstr "Tworzenie interfejsu gry"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -268,7 +268,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
-msgstr ""
+msgstr "Aktualizuj zdrowie za pomocą sygnału kiedy gracz otrzyma obrażenia"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
 msgid ""
@@ -440,7 +440,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
 msgid "We will reuse this method a bit later"
-msgstr ""
+msgstr "Użyjemy tą metodę później"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
 msgid ""
@@ -515,23 +515,23 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
 msgid "The property's identifier as a string"
-msgstr ""
+msgstr "Wartość identyfikowana jako string"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
 msgid "The starting value"
-msgstr ""
+msgstr "Początkowa wartość"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
 msgid "The end value"
-msgstr ""
+msgstr "Końcowa wartość"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
 msgid "The animation's duration in seconds"
-msgstr ""
+msgstr "Czas trwania animacji w sekundach"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
 msgid "The type of the transition"
-msgstr ""
+msgstr "Typ połączenia"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
 msgid "The easing to use in combination with the equation."
@@ -675,7 +675,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
 msgid "Fade the bar when the Player dies"
-msgstr ""
+msgstr "Przyciemnij pasek gdy gracz zginie"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
 msgid ""
@@ -720,6 +720,9 @@ msgid ""
 "information, we emit a new signal. Use them wisely: the more connections you "
 "add, the harder they are to track."
 msgstr ""
+"Powinieneś już teraz zobaczyć wzorzec: za każdym razem, gdy GUI potrzebuje "
+"nowej informacji, wysyłamy nowy sygnał. Używaj ich mądrze: im więcej "
+"dodajesz połączeń, tym trudniej je śledzić."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
 msgid ""
@@ -773,11 +776,11 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
 msgid "And that is it. You may now play the game to see the final result!"
-msgstr ""
+msgstr "I to wszystko. Możesz terać uruchomić grę by podziwiać końcowy efekt!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
 msgid "The final result. Congratulations for getting there!"
-msgstr ""
+msgstr "Końcowy efekt. Gratulacje, że doszedłeś aż tutaj!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
 msgid ""
@@ -787,3 +790,8 @@ msgid ""
 "signal to forward the information from the `Player` to the `GUI` and let the "
 "`GUI` process it."
 msgstr ""
+"Używając dokładnie tych samych technik, możesz zmienić kolor paska, gdy "
+"gracz zostanie otruty, np. na kolor czerwony, gdy jego stan zdrowia spada do "
+"zera, potrząsnąć UI, gdy otrzyma krytyczne obrażenia... zasada jest taka "
+"sama: emituj sygnał do przekazania informacji z `Player` do `GUI` i pozwól "
+"`GUI` przetworzyć to."
