@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2018-06-18 08:58+0200\n"
+"POT-Creation-Date: 2018-06-28 18:31+0200\n"
 "PO-Revision-Date: 2018-06-09 01:41+0000\n"
 "Last-Translator: Amir Hossein Mafi <theotheramir@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/godot-engine/"
@@ -2564,7 +2564,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
-#: ../../docs/development/cpp/configuring_an_ide.rst:147
+#: ../../docs/development/cpp/configuring_an_ide.rst:166
 msgid "Project Setup"
 msgstr ""
 
@@ -5038,8 +5038,8 @@ msgstr ""
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
-"a separate node. Then, double click on each of the nodes in the Inspector to "
-"rename them"
+"a separate node. Then, double click on each of the nodes in the Scene tab to "
+"rename them."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
@@ -8848,6 +8848,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "pass"
 msgstr ""
 
@@ -10005,24 +10006,75 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
-msgid "If a parent constructor takes arguments, they are passed like this:"
+msgid ""
+"Unlike the call of a regular function like in the above example with ``."
+"some_func``, if the constructor from the inherited class takes arguments, "
+"they are passed like this:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
+msgid "This is better explained through examples. Say we have this scenario:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
+msgid "There are a few things to keep in mind here:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
+msgid ""
+"if the inherited class (``State.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case) then the inheriting class (``Idle.gd``) "
+"*has* to define ``_init`` as well and pass appropriate parameters to "
+"``_init`` from ``State.gd``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
+msgid ""
+"``Idle.gd`` can have a different number of arguments than the base class "
+"``State.gd``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
+msgid ""
+"in the example above ``e`` passed to the ``State.gd`` constructor is the "
+"same ``e`` passed in to ``Idle.gd``"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:987
+msgid ""
+"if ``Idle.gd``'s ``_init`` constructor takes 0 arguments it still needs to "
+"pass some value to the ``State.gd`` base class even if it does nothing. "
+"Which brings us to the fact that you can pass literals in the base "
+"constructor as well, not just variables. Eg.:"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
+msgid "::"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
+msgid "# Idle.gd"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
+msgid "func _init().(5):"
+msgstr ""
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "Inner classes"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:959
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1000
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1020
 msgid "Classes as resources"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1022
 msgid ""
 "Classes stored as files are treated as :ref:`resources <class_GDScript>`. "
 "They must be loaded from disk to access them in other classes. This is done "
@@ -10031,11 +10083,11 @@ msgid ""
 "class object::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:997
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1038
 msgid "Exports"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:999
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1040
 msgid ""
 "Class members can be exported. This means their value gets saved along with "
 "the resource (e.g. the :ref:`scene <class_PackedScene>`) they're attached "
@@ -10043,13 +10095,13 @@ msgid ""
 "Exporting is done by using the ``export`` keyword::"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1008
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1049
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the export keyword (see below)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1011
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1052
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
 "them visible and editable in the editor. This way artists and game designers "
@@ -10057,47 +10109,47 @@ msgid ""
 "special export syntax is provided."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1097
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1138
 msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1102
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 msgid "Exporting bit flags"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1104
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1145
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1113
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1154
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1121
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1162
 msgid ""
 "In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has "
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
 "defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1126
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1167
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1130
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1171
 msgid "Exporting arrays"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1132
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1173
 msgid ""
 "Exporting arrays works but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -10106,24 +10158,24 @@ msgid ""
 "initializers, but they must be constant expressions."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1169
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
 msgid "Setters/getters"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1171
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
 msgid ""
 "It is often useful to know when a class' member variable changes for "
 "whatever reason. It may also be desired to encapsulate its access in some "
 "way."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1174
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1215
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1222
 msgid ""
 "Whenever the value of ``variable`` is modified by an *external* source (i.e. "
 "not from local usage in the class), the *setter* function (``setterfunc`` "
@@ -10133,27 +10185,27 @@ msgid ""
 "``return`` the desired value. Below is an example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1198
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1239
 msgid "Either of the *setter* or *getter* functions can be omitted:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1207
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1248
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1251
 msgid ""
 "As said *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1225
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1266
 msgid "Tool mode"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1227
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1268
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
 "properties can be changed. In some cases it is desired that they do run "
@@ -10162,11 +10214,11 @@ msgid ""
 "top of the file:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1242
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1283
 msgid "Memory management"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1244
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1285
 msgid ""
 "If a class inherits from :ref:`class_Reference`, then instances will be "
 "freed when no longer in use. No garbage collector exists, just reference "
@@ -10177,57 +10229,57 @@ msgid ""
 "weak references."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1252
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1293
 msgid ""
 "Alternatively, when not using references, the "
 "``is_instance_valid(instance)`` can be used to check if an object has been "
 "freed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1298
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
 msgstr "سیگنال‌ها"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1259
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1300
 msgid ""
 "It is often desired to send a notification that something happened in an "
 "instance. GDScript supports creation of built-in Godot signals. Declaring a "
 "signal in GDScript is easy using the `signal` keyword."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1270
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1311
 msgid ""
 "These signals can be connected in the editor or from code like regular "
 "signals. Take the instance of a class where the signal was declared and "
 "connect it to the method of another instance:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1286
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1327
 msgid ""
 "It is also possible to bind arguments to a signal that lacks them with your "
 "custom values:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1294
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1335
 msgid ""
 "This is useful when a signal from many objects is connected to a single "
 "callback and the sender must be identified:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1347
 msgid ""
 "Finally, emitting a custom signal is done by using the Object.emit_signal "
 "method:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1358
 msgid "Coroutines with yield"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1360
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
@@ -10237,43 +10289,43 @@ msgid ""
 "returns. Once resumed the state object becomes invalid. Here is an example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1341
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1365
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1382
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1406
 msgid "Will print:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1349
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1390
 msgid ""
 "It is also possible to pass values between yield() and resume(), for example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1374
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1415
 msgid "Coroutines & signals"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1376
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1417
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
 "``yield`` can accept two parameters, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1391
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1445
 msgid ""
 "``my_func`` will only continue execution once both the buttons are pressed."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1407
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1448
 msgid "Onready keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1409
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1450
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
 "scene in a variable. As scenes are only warranted to be configured when "
@@ -10281,7 +10333,7 @@ msgid ""
 "call to Node._ready() is made."
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1421
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1462
 msgid ""
 "This can get a little cumbersome, especially when nodes and external "
 "references pile up. For this, GDScript has the ``onready`` keyword, that "
@@ -10289,11 +10341,11 @@ msgid ""
 "replace the above code with a single line:"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1472
 msgid "Assert keyword"
 msgstr ""
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
+#: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1474
 msgid ""
 "The ``assert`` keyword can be used to check conditions in debug builds. "
 "These assertions are ignored in non-debug builds."
@@ -20579,61 +20631,60 @@ msgstr ""
 #: ../../docs/tutorials/3d/reflection_probes.rst:17
 msgid ""
 "They are efficient to render but expensive to compute. This leads to a "
-"default"
+"default behavior where they only capture on scene load."
 msgstr ""
 
 #: ../../docs/tutorials/3d/reflection_probes.rst:18
 msgid ""
-"behavior where they only capture on scene load. * They work best for "
-"rectangular shaped rooms or places, otherwise the reflections shown are not "
-"as faithful (especially when roughness is 0)."
+"They work best for rectangular shaped rooms or places, otherwise the "
+"reflections shown are not as faithful (especially when roughness is 0)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:23
+#: ../../docs/tutorials/3d/reflection_probes.rst:21
 #: ../../docs/tutorials/3d/gi_probes.rst:32
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:41
 msgid "Setting Up"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:25
+#: ../../docs/tutorials/3d/reflection_probes.rst:23
 msgid ""
 "Create a ReflectionProbe node and wrap it around the area where you want to "
 "have reflections:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:29
+#: ../../docs/tutorials/3d/reflection_probes.rst:27
 msgid ""
 "This should result in immediate local reflections. If you are using a Sky "
 "texture, reflections are by default blended with it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:32
+#: ../../docs/tutorials/3d/reflection_probes.rst:30
 msgid ""
 "By default, on interiors, reflections may appear to not have much "
 "consistence. In this scenario, make sure to tick the *\"Box Correct\"* "
 "property."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:38
+#: ../../docs/tutorials/3d/reflection_probes.rst:36
 msgid ""
 "This setting changes the reflection from an infinite skybox to reflecting a "
 "box the size of the probe:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:43
+#: ../../docs/tutorials/3d/reflection_probes.rst:41
 msgid ""
 "Adjusting the box walls may help improve the reflection a bit, but it will "
 "always look the best in box shaped rooms."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:46
+#: ../../docs/tutorials/3d/reflection_probes.rst:44
 msgid ""
 "The probe captures the surrounding from the center of the gizmo. If, for "
 "some reason, the room shape or contents occlude the center, it can be "
 "displaced to an empty place by moving the handles in the center:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:52
+#: ../../docs/tutorials/3d/reflection_probes.rst:50
 msgid ""
 "By default, shadow mapping is disabled when rendering probes (only in the "
 "rendered image inside the probe, not the actual scene). This is a simple way "
@@ -20641,7 +20692,7 @@ msgid ""
 "can be toggled on/off with the *Enable Shadow* setting:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:59
+#: ../../docs/tutorials/3d/reflection_probes.rst:57
 msgid ""
 "Finally, keep in mind that you may not want the Reflection Probe to render "
 "some objects. A typical scenario is an enemy inside the room which will move "
@@ -20649,42 +20700,42 @@ msgid ""
 "*Cull Mask* setting:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:67
+#: ../../docs/tutorials/3d/reflection_probes.rst:65
 #: ../../docs/tutorials/3d/gi_probes.rst:85
 msgid "Interior vs Exterior"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:69
+#: ../../docs/tutorials/3d/reflection_probes.rst:67
 msgid ""
 "If you are using reflection probes in an interior setting, it is recommended "
 "that the **Interior** property is enabled. This stops the probe from "
 "rendering the sky and also allows custom ambient lighting settings."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:75
+#: ../../docs/tutorials/3d/reflection_probes.rst:73
 msgid ""
 "When probes are set to **Interior**, custom constant ambient lighting can be "
 "specified per probe. Just choose a color and an energy."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:78
+#: ../../docs/tutorials/3d/reflection_probes.rst:76
 msgid ""
 "Optionally, you can blend this ambient light with the probe diffuse capture "
 "by tweaking the **Ambient Contribution** property (0.0 means, pure ambient "
 "color, while 1.0 means pure diffuse capture)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:84
+#: ../../docs/tutorials/3d/reflection_probes.rst:82
 msgid "Blending"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:86
+#: ../../docs/tutorials/3d/reflection_probes.rst:84
 msgid ""
 "Multiple reflection probes can be used, and Godot will blend them where they "
 "overlap using a smart algorithm:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:90
+#: ../../docs/tutorials/3d/reflection_probes.rst:88
 msgid ""
 "As you can see, this blending is never perfect (after all, these are box "
 "reflections, not real reflections), but these artifacts are only visible "
@@ -20692,7 +20743,7 @@ msgid ""
 "mapping and varying levels of roughness which can hide this."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:96
+#: ../../docs/tutorials/3d/reflection_probes.rst:94
 msgid ""
 "Alternatively, Reflection Probes work well blended together with Screen "
 "Space Reflections to solve these problems. Combining them makes local "
@@ -20700,7 +20751,7 @@ msgid ""
 "no screen-space information is found:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:102
+#: ../../docs/tutorials/3d/reflection_probes.rst:100
 msgid ""
 "Finally, blending interior and exterior probes is the recommended approach "
 "when making levels that combine both interiors and exteriors. Near the door, "
@@ -20708,11 +20759,11 @@ msgid ""
 "on the inside, it can be interior."
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:107
+#: ../../docs/tutorials/3d/reflection_probes.rst:105
 msgid "Reflection Atlas"
 msgstr ""
 
-#: ../../docs/tutorials/3d/reflection_probes.rst:109
+#: ../../docs/tutorials/3d/reflection_probes.rst:107
 msgid ""
 "In the current renderer implementation, all probes are the same size and are "
 "fit into a Reflection Atlas. The size and amount of probes can be customized "
@@ -34082,6 +34133,8 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:412
 #: ../../docs/development/cpp/object_class.rst:233
+#: ../../docs/development/cpp/custom_godot_servers.rst:19
+#: ../../docs/development/cpp/custom_godot_servers.rst:314
 msgid "References"
 msgstr ""
 
@@ -35411,17 +35464,18 @@ msgstr ""
 #: ../../docs/tutorials/io/data_paths.rst:9
 msgid ""
 "For the sake of supporting as many platforms as possible, Godot only accepts "
-"unix style path separators (``/``). These work everywhere, including Windows."
+"UNIX-style path separators (``/``). These work on all platforms including "
+"Windows."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:13
-msgid "A path like: ``C:\\Projects`` will become ``C:/Projects``."
+msgid "A path like ``C:\\Projects`` will become ``C:/Projects``."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:18
 msgid ""
-"As mentioned before. Godot considers that a project exists at any given "
-"folder that contains an \"project.godot\" text file, even if such file is "
+"As mentioned before, Godot considers that a project exists in any given "
+"folder that contains a ``project.godot`` text file, even if such file is "
 "empty."
 msgstr ""
 
@@ -35429,32 +35483,34 @@ msgstr ""
 msgid ""
 "Accessing project files can be done by opening any path with ``res://`` as a "
 "base. For example, a texture located in the root of the project folder may "
-"be opened from the following path: ``res://sometexture.png``."
+"be opened from the following path: ``res://some_texture.png``."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:27
-msgid "Userdata path (persistent data)"
+msgid "User path (persistent data)"
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:29
 msgid ""
 "While the project is running, it is a common scenario that the resource path "
-"will be read-only, due to it being inside a package, self contained "
-"executable, or system wide install location."
+"will be read-only, due to it being inside a package, self-contained "
+"executable, or system-wide install location."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:33
 msgid ""
 "Storing persistent files in such scenarios should be done by using the "
-"``user://`` prefix, for example: ``user://gamesave.txt``."
+"``user://`` prefix, for example: ``user://game_save.txt``."
 msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:36
 msgid ""
-"In some devices (for example, mobile ad consoles) this path is unique for "
-"the app. Under desktop operating systems, the engine uses the typical ``~/."
-"local/share/godot/app_userdata/Name`` (check the project name under the "
-"settings) in macOS and Linux, and ``APPDATA/Name`` for Windows."
+"On some devices (for example, mobile and consoles), this path is unique to "
+"the project. On desktop operating systems, the engine uses the typical ``~/."
+"local/share/godot/app_userdata/Name`` on macOS and Linux, and ``%APPDATA%/"
+"Name`` on Windows. ``Name`` is taken from the application name defined in "
+"the Project Settings, but it can be overriden on a per-platform basis using :"
+"ref:`feature tags <doc_feature_tags>`."
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:4
@@ -45626,7 +45682,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-c-example.rst:221
 #: ../../docs/development/compiling/index.rst:2
-#: ../../docs/development/compiling/compiling_for_windows.rst:85
+#: ../../docs/development/compiling/compiling_for_windows.rst:87
 #: ../../docs/development/compiling/compiling_for_x11.rst:79
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
 #: ../../docs/development/compiling/compiling_for_ios.rst:16
@@ -48383,11 +48439,11 @@ msgid ""
 "your version of Python (check via ``python --version`` mentioned above)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:58
+#: ../../docs/development/compiling/compiling_for_windows.rst:60
 msgid "Installing Visual Studio caveats"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:60
+#: ../../docs/development/compiling/compiling_for_windows.rst:62
 msgid ""
 "If installing Visual Studio 2015 or later, make sure to run **Custom** "
 "installation, not **Typical** and select C++ as language there (and any "
@@ -48397,7 +48453,7 @@ msgid ""
 ">`__ in Visual Studio 2015."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:66
+#: ../../docs/development/compiling/compiling_for_windows.rst:68
 msgid ""
 "If you have already made the mistake of installing a **Typical**, "
 "installation, rerun the executable installer you downloaded from internet, "
@@ -48406,37 +48462,37 @@ msgid ""
 "nothing for your problem."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:72
+#: ../../docs/development/compiling/compiling_for_windows.rst:74
 msgid ""
 "If you're using Express, make sure you get/have a version that can compile "
 "for ***C++, Desktop***."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:76
+#: ../../docs/development/compiling/compiling_for_windows.rst:78
 msgid "Downloading Godot's source"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:78
+#: ../../docs/development/compiling/compiling_for_windows.rst:80
 msgid ""
 "`Godot's <https://github.com/godotengine/godot>`__ source is hosted on "
 "GitHub. Downloading it (cloning) via `Git <https://git-scm.com/>`__ is "
 "recommended."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:81
+#: ../../docs/development/compiling/compiling_for_windows.rst:83
 msgid ""
 "The tutorial will presume from now on that you placed the source into ``C:"
 "\\godot``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:87
+#: ../../docs/development/compiling/compiling_for_windows.rst:89
 msgid ""
 "SCons will not be able out of the box to compile from the Windows Command "
 "Prompt (``cmd.exe``) because SCons and Visual C++ compiler will not be able "
 "to locate environment variables and executables they need for compilation."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:92
+#: ../../docs/development/compiling/compiling_for_windows.rst:94
 msgid ""
 "Therefore, you need to start a Visual Studio command prompt. It sets up "
 "environment variables needed by SCons to locate the compiler. It should be "
@@ -48444,63 +48500,63 @@ msgid ""
 "Visual Studio):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:97
+#: ../../docs/development/compiling/compiling_for_windows.rst:99
 msgid "\"Developer Command Prompt for VS2013\""
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:98
+#: ../../docs/development/compiling/compiling_for_windows.rst:100
 msgid "\"VS2013 x64 Native Tools Command Prompt\""
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:99
+#: ../../docs/development/compiling/compiling_for_windows.rst:101
 msgid "\"VS2013 x86 Native Tools Command Prompt\""
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:100
+#: ../../docs/development/compiling/compiling_for_windows.rst:102
 msgid "\"VS2013 x64 Cross Tools Command Prompt\""
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:101
+#: ../../docs/development/compiling/compiling_for_windows.rst:103
 msgid "\"VS2013 x86 Cross Tools Command Prompt\""
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:103
+#: ../../docs/development/compiling/compiling_for_windows.rst:105
 msgid ""
 "You should be able to find at least the Developer Command Prompt for your "
 "version of Visual Studio in your start menu."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:106
+#: ../../docs/development/compiling/compiling_for_windows.rst:108
 msgid ""
 "However Visual Studio sometimes seems to not install some of the above "
 "shortcuts, except the Developer Console at these locations that are "
 "automatically searched by the start menu search option:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:116
+#: ../../docs/development/compiling/compiling_for_windows.rst:118
 msgid ""
 "If you found the Developer Console, it will do for now to create a 32-bit "
 "version of Godot, but if you want the 64-bit version, you might need to "
 "setup the prompts manually for easy access."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:120
+#: ../../docs/development/compiling/compiling_for_windows.rst:122
 msgid ""
 "If you don't see some of the shortcuts, \"How the prompts actually work\" "
 "section below will explain how to setup these prompts if you need them."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:124
+#: ../../docs/development/compiling/compiling_for_windows.rst:126
 msgid "About the Developer/Tools Command Prompts and the Visual C++ compiler"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:126
+#: ../../docs/development/compiling/compiling_for_windows.rst:128
 msgid ""
 "There is a few things you need to know about these consoles and the Visual C+"
 "+ compiler."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:129
+#: ../../docs/development/compiling/compiling_for_windows.rst:131
 msgid ""
 "Your Visual Studio installation will ship with several Visual C++ compilers, "
 "them being more or less identical, however each ``cl.exe`` (Visual C++ "
@@ -48508,13 +48564,13 @@ msgid ""
 "bit x86; the ARM compiler is not supported)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:134
+#: ../../docs/development/compiling/compiling_for_windows.rst:136
 msgid ""
 "The **Developer Command Prompt** will build a 32-bit version of Godot by "
 "using the 32-bit Visual C++ compiler."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:137
+#: ../../docs/development/compiling/compiling_for_windows.rst:139
 msgid ""
 "**Native Tools** Prompts (mentioned above) are used when you want the 32-bit "
 "cl.exe to compile a 32-bit executable (x86 Native Tools Command Prompt). For "
@@ -48522,7 +48578,7 @@ msgid ""
 "Command Prompt)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:142
+#: ../../docs/development/compiling/compiling_for_windows.rst:144
 msgid ""
 "The **Cross Tools** are used when your Windows is using one architecture (32-"
 "bit, for example) and you need to compile to a different architecture (64-"
@@ -48530,25 +48586,25 @@ msgid ""
 "executables, but you still might need to compile for them."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:147
+#: ../../docs/development/compiling/compiling_for_windows.rst:149
 #: ../../docs/development/cpp/object_class.rst:134
 msgid "For example:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:149
+#: ../../docs/development/compiling/compiling_for_windows.rst:151
 msgid ""
 "\"VS2013 x64 Cross Tools Command Prompt\" will use a 32-bit cl.exe that will "
 "compile a 64 bit application."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:152
+#: ../../docs/development/compiling/compiling_for_windows.rst:154
 msgid ""
 "\"VS2013 x86 Cross Tools Command Prompt\" will use a 64-bit cl.exe that will "
 "compile a 32-bit application. This one is useful if you are running a 32-bit "
 "Windows."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:156
+#: ../../docs/development/compiling/compiling_for_windows.rst:158
 msgid ""
 "On a 64-bit Windows, you can run any of above prompts and compilers (``cl."
 "exe`` executables) because 64-bit Windows can run any 32-bit application. 32-"
@@ -48556,30 +48612,30 @@ msgid ""
 "won't even install shortcuts for some of these prompts."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:162
+#: ../../docs/development/compiling/compiling_for_windows.rst:164
 msgid ""
 "Note that you need to choose the **Developer Console** or the correct "
 "**Tools Prompt** to build Godot for the correct architecture. Use only "
 "Native Prompts if you are not sure yet what exactly Cross Compile Prompts do."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:168
+#: ../../docs/development/compiling/compiling_for_windows.rst:170
 msgid "Running SCons"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:170
+#: ../../docs/development/compiling/compiling_for_windows.rst:172
 msgid ""
 "Once inside the **Developer Console/Tools Console Prompt**, go to the root "
 "directory of the engine source code and type:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:177
+#: ../../docs/development/compiling/compiling_for_windows.rst:179
 msgid ""
 "Tip: if you installed \"Pywin32 Python Extension\" you can append the -j "
 "command to instruct SCons to run parallel builds like this:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:184
+#: ../../docs/development/compiling/compiling_for_windows.rst:186
 msgid ""
 "In general, it is OK to have at least as many threads compiling Godot as you "
 "have cores in your CPU, if not one or two more. Feel free to add the -j "
@@ -48587,7 +48643,7 @@ msgid ""
 "Extension\"."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:189
+#: ../../docs/development/compiling/compiling_for_windows.rst:191
 msgid ""
 "If all goes well, the resulting binary executable will be placed in ``C:"
 "\\godot\\bin\\`` with the name of ``godot.windows.tools.32.exe`` or ``godot."
@@ -48596,17 +48652,17 @@ msgid ""
 "corresponding executable."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:195
+#: ../../docs/development/compiling/compiling_for_windows.rst:197
 msgid ""
 "This executable file contains the whole engine and runs without any "
 "dependencies. Executing it will bring up the Project Manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:199
+#: ../../docs/development/compiling/compiling_for_windows.rst:201
 msgid "How the prompts actually work"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:201
+#: ../../docs/development/compiling/compiling_for_windows.rst:203
 msgid ""
 "The Visual Studio command prompts are just shortcuts that call the standard "
 "Command Prompt and have it run a batch file before giving  you control. The "
@@ -48617,47 +48673,46 @@ msgid ""
 "enables are needed by Godot/SCons."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:209
+#: ../../docs/development/compiling/compiling_for_windows.rst:211
 msgid ""
 "Since you are probably using Visual Studio 2013 or 2015, if you need to "
 "recreate them manually, use the below folders, or place them on the desktop/"
 "taskbar:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:218
+#: ../../docs/development/compiling/compiling_for_windows.rst:220
 msgid ""
 "Start the creation of the shortcut by pressing the ``right mouse button/New/"
 "Shortcut`` in an empty place in your desired location."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:221
+#: ../../docs/development/compiling/compiling_for_windows.rst:223
 msgid ""
 "Then copy one of these commands below for the corresponding tool you need "
 "into the \"Path\" and \"Name\" sections of the shortcut creation wizard, and "
 "fix the path to the batch file if needed."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:225
+#: ../../docs/development/compiling/compiling_for_windows.rst:227
 msgid "Visual Studio 2013 is in the \"Microsoft Visual Studio 12.0\" folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:226
+#: ../../docs/development/compiling/compiling_for_windows.rst:228
 msgid "Visual Studio 2015 is in the \"Microsoft Visual Studio 14.0\" folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:227
-#: ../../docs/development/cpp/custom_godot_servers.rst:36
+#: ../../docs/development/compiling/compiling_for_windows.rst:229
 msgid "etc."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:246
+#: ../../docs/development/compiling/compiling_for_windows.rst:248
 msgid ""
 "After you create the shortcut, in the shortcut's properties, that you can "
 "access by right clicking with your mouse on the shortcut itself, you can "
 "choose the starting directory of the command prompt (\"Start in\" field)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:251
+#: ../../docs/development/compiling/compiling_for_windows.rst:253
 msgid ""
 "Some of these shortcuts (namely the 64-bit compilers) seem to not be "
 "available in the Express edition of Visual Studio or Visual C++. Before "
@@ -48666,68 +48721,68 @@ msgid ""
 "architecture you want to build from the command prompt."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:272
+#: ../../docs/development/compiling/compiling_for_windows.rst:274
 msgid ""
 "In case you are wondering what these prompt shortcuts do, they call ``cmd."
 "exe`` with the ``\\k`` option and have it run a Batch file."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:284
+#: ../../docs/development/compiling/compiling_for_windows.rst:286
 msgid "How to run an automated build of Godot"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:286
+#: ../../docs/development/compiling/compiling_for_windows.rst:288
 msgid ""
 "If you just need to run the compilation process via a Batch file or directly "
 "in the Windows Command Prompt you need to use the following command:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:294
+#: ../../docs/development/compiling/compiling_for_windows.rst:296
 msgid "with one of the following parameters:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:296
+#: ../../docs/development/compiling/compiling_for_windows.rst:298
 msgid "x86 (32-bit cl.exe to compile for the 32-bit architecture)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:297
+#: ../../docs/development/compiling/compiling_for_windows.rst:299
 msgid "amd64 (64-bit cl.exe to compile for the 64-bit architecture)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:298
+#: ../../docs/development/compiling/compiling_for_windows.rst:300
 msgid "x86_amd64 (32-bit cl.exe to compile for the 64-bit architecture)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:299
+#: ../../docs/development/compiling/compiling_for_windows.rst:301
 msgid "amd64_x86 (64-bit cl.exe to compile for the 32-bit architecture)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:301
+#: ../../docs/development/compiling/compiling_for_windows.rst:303
 msgid "and after that one, you can run SCons:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:307
+#: ../../docs/development/compiling/compiling_for_windows.rst:309
 msgid "or you can run them together:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:318
+#: ../../docs/development/compiling/compiling_for_windows.rst:320
 msgid "Development in Visual Studio or other IDEs"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:320
+#: ../../docs/development/compiling/compiling_for_windows.rst:322
 msgid ""
 "For most projects, using only scripting is enough but when development in C+"
 "+ is needed, for creating modules or extending the engine, working with an "
 "IDE is usually desirable."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:324
+#: ../../docs/development/compiling/compiling_for_windows.rst:326
 msgid ""
 "You can create a Visual Studio solution via SCons by running SCons with the "
 "``vsproj=yes`` parameter, like this:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:331
+#: ../../docs/development/compiling/compiling_for_windows.rst:333
 msgid ""
 "You will be able to open Godot's source in a Visual Studio solution now, and "
 "able to build Godot via the Visual Studio **Build** button. However, make "
@@ -48735,7 +48790,7 @@ msgid ""
 "properly."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:336
+#: ../../docs/development/compiling/compiling_for_windows.rst:338
 msgid ""
 "If you need to edit the compilation commands, they are located in \"Godot\" "
 "project settings, NMAKE sheet. SCons is called at the end of the commands. "
@@ -48744,11 +48799,11 @@ msgid ""
 "They are equivalent."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:343
+#: ../../docs/development/compiling/compiling_for_windows.rst:345
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:345
+#: ../../docs/development/compiling/compiling_for_windows.rst:347
 msgid ""
 "If you are a Linux or macOS user, you need to install `MinGW-w64 <https://"
 "mingw-w64.org/doku.php>`_, which typically comes in 32-bit and 64-bit "
@@ -48756,106 +48811,106 @@ msgid ""
 "known ones:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:350
+#: ../../docs/development/compiling/compiling_for_windows.rst:352
 #: ../../docs/development/compiling/compiling_for_x11.rst:30
 msgid "**Arch**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:354
+#: ../../docs/development/compiling/compiling_for_windows.rst:356
 #: ../../docs/development/compiling/compiling_for_x11.rst:34
 msgid "**Debian** / **Ubuntu**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:358
+#: ../../docs/development/compiling/compiling_for_windows.rst:360
 #: ../../docs/development/compiling/compiling_for_x11.rst:40
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:362
+#: ../../docs/development/compiling/compiling_for_windows.rst:364
 msgid "**macOS**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:366
+#: ../../docs/development/compiling/compiling_for_windows.rst:368
 #: ../../docs/development/compiling/compiling_for_x11.rst:56
 msgid "**Mageia**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:371
+#: ../../docs/development/compiling/compiling_for_windows.rst:373
 msgid ""
 "Before allowing you to attempt the compilation, SCons will check for the "
 "following binaries in your ``$PATH``:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:379
+#: ../../docs/development/compiling/compiling_for_windows.rst:381
 msgid ""
 "If the binaries are not located in the ``$PATH`` (e.g. ``/usr/bin``), you "
 "can define the following environment variables to give a hint to the build "
 "system:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:388
+#: ../../docs/development/compiling/compiling_for_windows.rst:390
 msgid ""
 "To make sure you are doing things correctly, executing the following in the "
 "shell should result in a working compiler (the version output may differ "
 "based on your system):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:398
+#: ../../docs/development/compiling/compiling_for_windows.rst:400
 #: ../../docs/development/compiling/compiling_for_android.rst:131
 #: ../../docs/development/compiling/compiling_for_android.rst:173
 #: ../../docs/development/cpp/creating_android_modules.rst:301
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:400
+#: ../../docs/development/compiling/compiling_for_windows.rst:402
 msgid ""
 "Cross-compiling from some versions of Ubuntu may lead to `this bug <https://"
 "github.com/godotengine/godot/issues/9258>`_, due to a default configuration "
 "lacking support for POSIX threading."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:403
+#: ../../docs/development/compiling/compiling_for_windows.rst:405
 msgid ""
 "You can change that configuration following those instructions, for 32-bit:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:413
+#: ../../docs/development/compiling/compiling_for_windows.rst:415
 msgid "And for 64-bit:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:423
+#: ../../docs/development/compiling/compiling_for_windows.rst:425
 msgid "Creating Windows export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:425
+#: ../../docs/development/compiling/compiling_for_windows.rst:427
 msgid ""
 "Windows export templates are created by compiling Godot as release, with the "
 "following flags:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:428
+#: ../../docs/development/compiling/compiling_for_windows.rst:430
 msgid "(using Mingw32 command prompt, using the bits parameter)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:435
+#: ../../docs/development/compiling/compiling_for_windows.rst:437
 msgid "(using Mingw-w64 command prompt, using the bits parameter)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:442
+#: ../../docs/development/compiling/compiling_for_windows.rst:444
 msgid ""
 "(using the Visual Studio command prompts for the correct architecture, "
 "notice the lack of bits parameter)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:450
+#: ../../docs/development/compiling/compiling_for_windows.rst:452
 msgid "If you plan on replacing the standard templates, copy these to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:456
+#: ../../docs/development/compiling/compiling_for_windows.rst:458
 msgid "With the following names:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:465
+#: ../../docs/development/compiling/compiling_for_windows.rst:467
 #: ../../docs/development/compiling/compiling_for_x11.rst:141
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
@@ -48863,7 +48918,7 @@ msgid ""
 "here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:471
+#: ../../docs/development/compiling/compiling_for_windows.rst:473
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin\\`` directory of your Godot source folder, so the next time you "
@@ -50026,7 +50081,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:47
-#: ../../docs/development/cpp/custom_godot_servers.rst:469
+#: ../../docs/development/cpp/custom_godot_servers.rst:502
 msgid "Notes"
 msgstr ""
 
@@ -50202,87 +50257,54 @@ msgid ""
 "and :ref:`compiled <toc-devel-compiling>` Godot."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:10
-msgid "Kdevelop"
+#: ../../docs/development/cpp/configuring_an_ide.rst:9
+msgid ""
+"You can easily develop Godot with any text editor and by invoking ``scons`` "
+"on the command line, but if you want to work with an IDE (Integrated "
+"Development Environment), here are setup instructions for some popular ones:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:12
+#: ../../docs/development/cpp/configuring_an_ide.rst:13
 msgid ""
-"It is a free, open source IDE (Integrated Development Environment) for "
-"Linux, Solaris, FreeBSD, Mac OS X and other Unix flavors."
+":ref:`Qt Creator <doc_configuring_an_ide_qtcreator>` (all desktop platforms)"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:14
+msgid ""
+":ref:`Kdevelop <doc_configuring_an_ide_kdevelop>` (all desktop platforms)"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:15
-msgid ""
-"You can find a video tutorial `here <https://www.youtube.com/watch?"
-"v=yNVoWQi9TJA>`_. Or you may follow this text version tutorial."
+msgid ":ref:`Xcode <doc_configuring_an_ide_xcode>` (macOS)"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:16
+msgid ":ref:`Visual Studio <doc_compiling_for_windows_install_vs>` (Windows)"
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:18
-msgid "Start by opening Kdevelop and choosing \"open project\"."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:22
-msgid "Choose the directory where you cloned Godot."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:26
-msgid "For the build system, choose \"custom build system\"."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:30
-msgid "Now that the project has been imported, open the project configuration."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:34
-msgid "Add the following includes/imports:"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:48
 msgid ""
-"Apply the changes then switch to the \"Custom Buildsystem\" tab. Leave the "
-"build directory blank. Enable build tools and add ``scons`` as the "
-"executable and add ``platform=x11 target=debug`` (``platform=osx`` if you're "
-"on OS X)."
+"It is possible to use other IDEs, but their setup is not documented yet."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:55
-msgid ""
-"Next we need to tell KDevelop where to find the binary. From the \"run\" "
-"menu, choose \"Configure Launches\"."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:60
-msgid ""
-"Click \"Add new\" if no launcher exists. Then add the path to your "
-"executable in the executable section. Your executable should be located in "
-"the ``bin/`` sub-directory and should be named something like ``godot.x11."
-"tools.64`` (the name could be different depending on your platform and "
-"depending on your build options)."
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:68
-msgid "That's it! Now you should be good to go :)"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:71
+#: ../../docs/development/cpp/configuring_an_ide.rst:23
 #, fuzzy
 msgid "Qt Creator"
 msgstr "تکرارکننده"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:74
+#: ../../docs/development/cpp/configuring_an_ide.rst:26
 msgid "Importing the project"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:76
+#: ../../docs/development/cpp/configuring_an_ide.rst:28
 msgid "Choose *New Project* -> *Import Project* -> *Import Existing Project*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:80
+#: ../../docs/development/cpp/configuring_an_ide.rst:32
 msgid "Set the path to your Godot root directory and enter the project name."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:84
+#: ../../docs/development/cpp/configuring_an_ide.rst:36
 msgid ""
 "Here you can choose which folders and files will be visible to the project. "
 "C/C++ files are added automatically. Potentially useful additions: \\*.py "
@@ -50290,77 +50312,81 @@ msgid ""
 "Click \"Next\"."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:90
+#: ../../docs/development/cpp/configuring_an_ide.rst:42
 msgid "Click *Finish*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:91
+#: ../../docs/development/cpp/configuring_an_ide.rst:43
 msgid ""
 "Add a line containing ``.`` to *project_name.includes* to get working code "
 "completion."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:96
+#: ../../docs/development/cpp/configuring_an_ide.rst:48
 msgid "Build and run"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:98
+#: ../../docs/development/cpp/configuring_an_ide.rst:50
 msgid "Build configuration:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:100
+#: ../../docs/development/cpp/configuring_an_ide.rst:52
 msgid "Click on *Projects* and open the *Build* tab."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:101
+#: ../../docs/development/cpp/configuring_an_ide.rst:53
 msgid "Delete the pre-defined ``make`` build step."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:105
+#: ../../docs/development/cpp/configuring_an_ide.rst:57
 msgid "Click *Add Build Step* -> *Custom Process Step*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:109
-msgid "Type ``scons`` in the *Command* field."
+#: ../../docs/development/cpp/configuring_an_ide.rst:61
+msgid ""
+"Type ``scons`` in the *Command* field. If it fails with 'Could not start "
+"process \"scons\"', it can mean that ``scons`` is not in your ``PATH`` "
+"environment variable, so you may have to use the full path to the SCons "
+"binary."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:110
+#: ../../docs/development/cpp/configuring_an_ide.rst:64
 msgid ""
 "Fill the *Arguments* field with your compilation options. (e.g.: ``p=x11 "
 "target=debug -j 4``)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:114
+#: ../../docs/development/cpp/configuring_an_ide.rst:68
 msgid "Run configuration:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:116
+#: ../../docs/development/cpp/configuring_an_ide.rst:70
 msgid "Open the *Run* tab."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:117
+#: ../../docs/development/cpp/configuring_an_ide.rst:71
 msgid ""
 "Point the *Executable* to your compiled Godot binary (e.g: ``%{buildDir}/bin/"
 "godot.x11.opt.tools.64``)"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:118
+#: ../../docs/development/cpp/configuring_an_ide.rst:72
 msgid ""
 "If you want to run a specific game or project, point *Working directory* to "
 "the game directory."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:119
+#: ../../docs/development/cpp/configuring_an_ide.rst:73
 msgid ""
 "If you want to run the editor, add ``-e`` to the *Command line arguments* "
 "field."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:124
+#: ../../docs/development/cpp/configuring_an_ide.rst:78
 msgid "Updating Sources after pulling latest commits"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:126
+#: ../../docs/development/cpp/configuring_an_ide.rst:80
 msgid ""
 "As a developer you usually want to frequently pull the latest commits from "
 "the upstream git repository or a specific fork etc. However this brings a "
@@ -50371,7 +50397,7 @@ msgid ""
 "root folder in the \"Projects View\" and click on \"Edit files...\""
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:136
+#: ../../docs/development/cpp/configuring_an_ide.rst:90
 msgid ""
 "Now a new dialog should appear that is similar in functionality to the one "
 "in the third step of the \"Importing the project\" section. Here now you can "
@@ -50381,187 +50407,250 @@ msgid ""
 "work."
 msgstr ""
 
+#: ../../docs/development/cpp/configuring_an_ide.rst:100
+msgid "Kdevelop"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:102
+msgid ""
+"`Kdevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
+"desktop platforms."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:104
+msgid ""
+"You can find a video tutorial `here <https://www.youtube.com/watch?"
+"v=yNVoWQi9TJA>`_. Or you may follow this text version tutorial."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:107
+msgid "Start by opening Kdevelop and choosing \"open project\"."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:111
+msgid "Choose the directory where you cloned Godot."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:115
+msgid "For the build system, choose \"custom build system\"."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:119
+msgid "Now that the project has been imported, open the project configuration."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:123
+msgid "Add the following includes/imports:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:137
+msgid ""
+"Apply the changes then switch to the \"Custom Buildsystem\" tab. Leave the "
+"build directory blank. Enable build tools and add ``scons`` as the "
+"executable and add ``platform=x11 target=debug`` (``platform=osx`` if you're "
+"on OS X)."
+msgstr ""
+
 #: ../../docs/development/cpp/configuring_an_ide.rst:144
-msgid "Xcode"
+msgid ""
+"Next we need to tell KDevelop where to find the binary. From the \"run\" "
+"menu, choose \"Configure Launches\"."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:149
-msgid "Create an Xcode external build project anywhere"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:153
-msgid "Set the *Build tool* to the path to scons"
-msgstr ""
-
-#: ../../docs/development/cpp/configuring_an_ide.rst:155
-msgid "Modify Build Target's Xcode Info Tab:"
+msgid ""
+"Click \"Add new\" if no launcher exists. Then add the path to your "
+"executable in the executable section. Your executable should be located in "
+"the ``bin/`` sub-directory and should be named something like ``godot.x11."
+"tools.64`` (the name could be different depending on your platform and "
+"depending on your build options)."
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:157
+msgid "That's it! Now you should be good to go :)"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:163
+msgid "Xcode"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:168
+msgid "Create an Xcode external build project anywhere"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:172
+msgid "Set the *Build tool* to the path to scons"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:174
+msgid "Modify Build Target's Xcode Info Tab:"
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:176
 msgid ""
 "Set *Arguments* to something like: platform=osx tools=yes bits=64 "
 "target=debug"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:158
+#: ../../docs/development/cpp/configuring_an_ide.rst:177
 msgid ""
 "Set *Directory* to the path to Godot's source folder. Keep it blank if "
 "project is already there."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:159
+#: ../../docs/development/cpp/configuring_an_ide.rst:178
 msgid "You may uncheck *Pass build settings in environment*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:163
+#: ../../docs/development/cpp/configuring_an_ide.rst:182
 msgid "Add a Command Line Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:165
+#: ../../docs/development/cpp/configuring_an_ide.rst:184
 msgid ""
 "Go to Xcode File > New > Target... and add a new Xcode command line target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:171
+#: ../../docs/development/cpp/configuring_an_ide.rst:190
 msgid "Name it something so you know not to compile with this target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:172
+#: ../../docs/development/cpp/configuring_an_ide.rst:191
 msgid "e.g. ``GodotXcodeIndex``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:173
+#: ../../docs/development/cpp/configuring_an_ide.rst:192
 msgid ""
 "Goto the newly created target's *Build Settings* tab and search for *Header "
 "Search Paths*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:174
+#: ../../docs/development/cpp/configuring_an_ide.rst:193
 msgid "Set *Header Search Paths* to an absolute path to Godot's source folder"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:175
+#: ../../docs/development/cpp/configuring_an_ide.rst:194
 msgid "Make it recursive by adding two \\*'s to the end of the path"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:176
+#: ../../docs/development/cpp/configuring_an_ide.rst:195
 msgid "e.g. ``/Users/me/repos/godot-source/\\**``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:178
+#: ../../docs/development/cpp/configuring_an_ide.rst:197
 msgid "Add Godot Source to the Project:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:180
+#: ../../docs/development/cpp/configuring_an_ide.rst:199
 msgid "Drag and drop godot source into project file browser."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:181
+#: ../../docs/development/cpp/configuring_an_ide.rst:200
 msgid "Uncheck *Create External Build System*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:185
+#: ../../docs/development/cpp/configuring_an_ide.rst:204
 msgid "Click Next"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:186
+#: ../../docs/development/cpp/configuring_an_ide.rst:205
 msgid "Select *create groups*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:190
+#: ../../docs/development/cpp/configuring_an_ide.rst:209
 msgid "Check off only your command line target in the *Add to targets* section"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:191
+#: ../../docs/development/cpp/configuring_an_ide.rst:210
 msgid "Click finish. Xcode will now index the files."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:192
+#: ../../docs/development/cpp/configuring_an_ide.rst:211
 msgid "Grab a cup of coffee... Maybe make something to eat, too"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:193
+#: ../../docs/development/cpp/configuring_an_ide.rst:212
 msgid ""
 "You should have jump to definition, auto completion, and full syntax "
 "highlighting when it is done."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:196
+#: ../../docs/development/cpp/configuring_an_ide.rst:215
 msgid "Scheme Setup"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:198
+#: ../../docs/development/cpp/configuring_an_ide.rst:217
 msgid "Edit Build Scheme of External Build Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:200
+#: ../../docs/development/cpp/configuring_an_ide.rst:219
 msgid "Open scheme editor of external build target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:201
+#: ../../docs/development/cpp/configuring_an_ide.rst:220
 msgid "Expand the *Build* menu"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:202
+#: ../../docs/development/cpp/configuring_an_ide.rst:221
 msgid "Goto *Post Actions*"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:203
+#: ../../docs/development/cpp/configuring_an_ide.rst:222
 msgid ""
 "Add a new script run action, select your project in ``Provide build settings "
 "from`` as this allows you to use ``${PROJECT_DIR}`` variable."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:207
+#: ../../docs/development/cpp/configuring_an_ide.rst:226
 msgid "Write a script that gives the binary a name that Xcode will recognize"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:208
+#: ../../docs/development/cpp/configuring_an_ide.rst:227
 msgid ""
 "e.g. ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/"
 "godot/bin/godot``"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:209
+#: ../../docs/development/cpp/configuring_an_ide.rst:228
 msgid "Build the external build target"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:211
+#: ../../docs/development/cpp/configuring_an_ide.rst:230
 msgid "Edit Run Scheme of External Build Target:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:213
+#: ../../docs/development/cpp/configuring_an_ide.rst:232
 msgid "Open the scheme editor again"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:214
+#: ../../docs/development/cpp/configuring_an_ide.rst:233
 msgid "Click Run"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:218
+#: ../../docs/development/cpp/configuring_an_ide.rst:237
 msgid ""
 "Set the *Executable* to the file you linked in your post build action script"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:219
+#: ../../docs/development/cpp/configuring_an_ide.rst:238
 msgid "Check *Debug executable* if it isn't already"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:220
+#: ../../docs/development/cpp/configuring_an_ide.rst:239
 msgid ""
 "You can go to *Arguments* tab and add an -e and a -path to a project to "
 "debug the editor not the project selection screen"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:223
+#: ../../docs/development/cpp/configuring_an_ide.rst:242
 msgid "Test it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:225
+#: ../../docs/development/cpp/configuring_an_ide.rst:244
 msgid "Set a breakpoint in platform/osx/godot_main_osx.mm"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:226
+#: ../../docs/development/cpp/configuring_an_ide.rst:245
 msgid "It should break at the point!"
 msgstr ""
 
@@ -50638,9 +50727,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_audiostreams.rst:23
 #: ../../docs/development/cpp/custom_audiostreams.rst:119
 #: ../../docs/development/cpp/custom_audiostreams.rst:356
-#: ../../docs/development/cpp/custom_godot_servers.rst:20
-#: ../../docs/development/cpp/custom_godot_servers.rst:279
-#: ../../docs/development/cpp/custom_godot_servers.rst:429
+#: ../../docs/development/cpp/custom_godot_servers.rst:471
 msgid "References:"
 msgstr ""
 
@@ -50915,7 +51002,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:236
-#: ../../docs/development/cpp/custom_godot_servers.rst:282
+#: ../../docs/development/cpp/custom_godot_servers.rst:317
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
@@ -51399,7 +51486,7 @@ msgstr ""
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:22
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:25
 #: ../../docs/development/cpp/custom_audiostreams.rst:31
-#: ../../docs/development/cpp/custom_godot_servers.rst:29
+#: ../../docs/development/cpp/custom_godot_servers.rst:28
 msgid "What for?"
 msgstr ""
 
@@ -51743,7 +51830,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:14
-#: ../../docs/development/cpp/custom_godot_servers.rst:16
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and godot data "
 "types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
@@ -51997,165 +52083,176 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
-msgid "Custom Godot Servers"
+msgid "Custom Godot servers"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
 msgid ""
-"Godot implements multi threading as servers. Servers are daemons which "
-"manages data, processes, and pushes the result. Server implements the "
+"Godot implements multi-threading as servers. Servers are daemons which "
+"manages data, processes, and pushes the result. Servers implement the "
 "mediator pattern which interprets resource ID and process data for the "
 "engine and other modules. In addition, the server claims ownership for its "
 "RID allocations."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:22
+#: ../../docs/development/cpp/custom_godot_servers.rst:15
 msgid ""
-"`Why does Godot use Servers and RIDs? <https://godotengine.org/article/why-"
+"This guide assumes the reader knows how to create C++ modules and Godot data "
+"types. If not, refer to :ref:`doc_custom_modules_in_c++`."
+msgstr ""
+
+#: ../../docs/development/cpp/custom_godot_servers.rst:21
+msgid ""
+"`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-"
 "does-godot-use-servers-and-rids>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:24
-msgid "`Sigleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
+#: ../../docs/development/cpp/custom_godot_servers.rst:23
+msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:26
-msgid "`Mediator Pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+#: ../../docs/development/cpp/custom_godot_servers.rst:25
+msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+msgstr ""
+
+#: ../../docs/development/cpp/custom_godot_servers.rst:30
+msgid "Adding artificial intelligence."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:31
-msgid "Adding AI"
+msgid "Adding custom asynchronous threads."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:32
-msgid "Adding a custom asynchronous threads"
+msgid "Adding support for a new input device."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
-msgid "Adding Input support"
+msgid "Adding writing threads."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:34
-msgid "Adding writing threads"
+msgid "Adding a custom VoIP protocol."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:35
-msgid "Adding custom VOIP protocol"
+msgid "And more..."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:39
-msgid "Creating a Godot Server"
+#: ../../docs/development/cpp/custom_godot_servers.rst:38
+msgid "Creating a Godot server"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:41
+#: ../../docs/development/cpp/custom_godot_servers.rst:40
 msgid ""
-"At minimum, a server must to have: a static instance, sleep timer, thread "
-"loop, initialize state, and cleanup."
+"At minimum, a server must have a static instance, a sleep timer, a thread "
+"loop, an initialization state and a cleanup procedure."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:245
-msgid "Custom Managed Resource Data"
+#: ../../docs/development/cpp/custom_godot_servers.rst:272
+msgid "Custom managed resource data"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:247
+#: ../../docs/development/cpp/custom_godot_servers.rst:274
 msgid ""
 "Godot servers implement a mediator pattern. All data types inherit "
-"``RID_Data``. `RID_Owner<MyRID_Data>`` owns the object when ``make_rid`` is "
-"called. Only during debug mode, RID_Owner maintains a list of RID. In "
-"practice, RID is similar to writing object oriented C code."
+"``RID_Data``. ``RID_Owner<MyRID_Data>`` owns the object when ``make_rid`` is "
+"called. During debug mode only, RID_Owner maintains a list of RIDs. In "
+"practice, RIDs are similar to writing object-oriented C code."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:281
+#: ../../docs/development/cpp/custom_godot_servers.rst:316
 msgid ":ref:`RID<class_rid>`"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:286
-msgid "Registering the class to GDScript"
+#: ../../docs/development/cpp/custom_godot_servers.rst:320
+msgid "Registering the class in GDScript"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:288
+#: ../../docs/development/cpp/custom_godot_servers.rst:322
 msgid ""
-"Server are allocated in ``register_types.cpp``. The constructor sets the "
-"static instance and init creates the managed thread. ``unregister_types."
-"cpp`` cleans up the server"
+"Servers are allocated in ``register_types.cpp``. The constructor sets the "
+"static instance and ``init()`` creates the managed thread; "
+"``unregister_types.cpp`` cleans up the server."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:292
+#: ../../docs/development/cpp/custom_godot_servers.rst:326
 msgid ""
-"Since Godot Server class creates an instance and binds it to a static "
+"Since a Godot server class creates an instance and binds it to a static "
 "singleton, binding the class might not reference the correct instance. "
 "Therefore, a dummy class must be created to reference the proper Godot "
-"Server."
+"server."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:296
+#: ../../docs/development/cpp/custom_godot_servers.rst:330
 msgid ""
-"In ``register_godotserver_types()``, ``Engine::get_singleton()-"
-">add_singleton`` is used to register the dummy class to GDScript."
+"In ``register_server_types()``, ``Engine::get_singleton()->add_singleton`` "
+"is used to register the dummy class in GDScript."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:338
+#: ../../docs/development/cpp/custom_godot_servers.rst:372
 msgid ""
 "`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
 "blob/master/servers/register_server_types.cpp>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:341
+#: ../../docs/development/cpp/custom_godot_servers.rst:375
 msgid "Bind methods"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:343
+#: ../../docs/development/cpp/custom_godot_servers.rst:377
 msgid ""
-"The dummy class binds singleton methods to gdscript. In most cases, the "
+"The dummy class binds singleton methods to GDScript. In most cases, the "
 "dummy class methods wraps around."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:351
+#: ../../docs/development/cpp/custom_godot_servers.rst:385
 #, fuzzy
 msgid "Binding Signals"
 msgstr "سیگنال‌ها"
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:353
+#: ../../docs/development/cpp/custom_godot_servers.rst:387
 msgid ""
-"It is possible to emit signals to gdscript but calling the GDScript dummy "
+"It is possible to emit signals to GDScript but calling the GDScript dummy "
 "object."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:420
+#: ../../docs/development/cpp/custom_godot_servers.rst:462
 msgid "MessageQueue"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:422
+#: ../../docs/development/cpp/custom_godot_servers.rst:464
 msgid ""
-"In order to send commands into scenetree, MessageQueue is a thread safe "
+"In order to send commands into SceneTree, MessageQueue is a thread-safe "
 "buffer to queue set and call methods for other threads. To queue a command, "
-"obtain the target object RID and use either push_call, push_set, or "
-"push_notification to execute the desired behavior. Queue will be flushed "
-"whenever either ``SceneTree::idle`` or ``SceneTree::iteration`` are executed."
+"obtain the target object RID and use either ``push_call``, ``push_set``, or "
+"``push_notification`` to execute the desired behavior. The queue will be "
+"flushed whenever either ``SceneTree::idle`` or ``SceneTree::iteration`` is "
+"executed."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:431
+#: ../../docs/development/cpp/custom_godot_servers.rst:473
 msgid ""
 "`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
 "core/message_queue.cpp>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:434
+#: ../../docs/development/cpp/custom_godot_servers.rst:476
 msgid "Summing it up"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:436
-msgid "Here is the GDScript sample code"
+#: ../../docs/development/cpp/custom_godot_servers.rst:478
+msgid "Here is the GDScript sample code:"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:471
+#: ../../docs/development/cpp/custom_godot_servers.rst:504
 msgid ""
-"Actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
-"%27s_paradox_of_the_Grand_Hotel>`__ is impossible"
+"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
+"%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_godot_servers.rst:473
-msgid "Connecting signal example code is pretty hacky"
+#: ../../docs/development/cpp/custom_godot_servers.rst:505
+msgid "Connecting signal example code is pretty hacky."
 msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:4
