@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,9 @@ msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
+"W następnych dwóch poradnikach, zbudujesz dwie elastyczne sceny UI "
+"(interfejsy użytkownika), krok po kroku używając systemu UI wbudowanego w "
+"silnik:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu"
@@ -33,7 +36,7 @@ msgstr "Główne menu"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
 msgid "A game UI with a health bar, energy bar, bomb and money counters"
-msgstr ""
+msgstr "UI gry z paskiem życia, energii, licznikiem bomb i monet"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -41,6 +44,10 @@ msgid ""
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
+"Dowiesz się, jak efektywnie zaprojektować interfejs użytkownika i jak używać "
+"węzłów kontrolnych. Ta strona skupia się na części wizualnej: wszystko co "
+"robisz z edytora. Aby dowiedzieć się, jak stworzyć kod do paska życia, "
+"przeczytaj :doc:`ui_code_a_life_bar`"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
@@ -54,6 +61,10 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu``` "
 "folder."
 msgstr ""
+"Pobierz pliki projektu: :download:`ui_main_menu_design.zip <files/"
+"ui_main_menu_design.zip>` i rozpakuj archiwum. Zaimportuj projekt ``start/`` "
+"w Godot, podążając za tym samouczkiem. Folder ``end/`` zawiera wynik "
+"końcowy. Wszystkie obrazy znajdują się w folderze ``start/assets/main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
 msgid "How to design your game UI"
@@ -132,7 +143,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:82
 msgid "Design the main menu"
-msgstr ""
+msgstr "Tworzenie menu głównego"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:84
 msgid ""
@@ -165,12 +176,16 @@ msgid ""
 "If the elements are arranged in rows or columns, use an ``HBoxContainer`` or "
 "``VBoxContainer``"
 msgstr ""
+"Jeżeli elementy są ułożone w rzędach lub kolumnach, należy użyć "
+"``HBoxContainer`` lub ``VBoxContainer``"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:99
 msgid ""
 "These rules are enough to get us started, and work well for simple "
 "interfaces."
 msgstr ""
+"Zasady te wystarczą na początek i będą dobrze działać dla prostych "
+"interfejsów."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:102
 msgid ""
@@ -192,6 +207,9 @@ msgid ""
 "Although we could place UI elements by hand, containers are faster, more "
 "precise, and **responsive**."
 msgstr ""
+"Kontenery dostosowują się do rozdzielczości okna i stosunku szerokości do "
+"wysokości. Choć elementy interfejsu użytkownika można umieszczać ręcznie, "
+"kontenery są szybsze, bardziej precyzyjne i **responsywne**."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:120
 msgid "Prepare the Main Menu scene"
@@ -202,6 +220,8 @@ msgid ""
 "Let's create the main menu. We'll build it in a single scene. To create an "
 "empty scene, click on the Scene menu -> New Scene."
 msgstr ""
+"Stwórzmy menu główne. Zrobimy je w jednej scenie. Aby utworzyć pustą scenę, "
+"kliknij menu Scena -> Nowa scena."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:125
 msgid ""
@@ -218,6 +238,9 @@ msgid ""
 "the margins' size. Scroll down the ``Control`` class, to the ``Custom "
 "Constants`` section. Unfold it. Set the margins as such:"
 msgstr ""
+"Wybierz ponownie ``MarginContainer`` i udaj się do inspektora w celu "
+"zdefiniowania rozmiaru marginesów. Przewinąć w dół klasę ``Control`` do "
+"sekcji ``Custom Constants``. Rozwiń go. Ustaw marginesy takie jak poniżej:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:135
 msgid "Margin Right: *120*"
@@ -240,6 +263,8 @@ msgid ""
 "We want the container to fit the window. In the Viewport, open the "
 "``Layout`` menu and select the last option, ``Full Rect``."
 msgstr ""
+"Chcemy, aby kontener pasował do okna. W oknie Widok otwórz menu ``Layout`` i "
+"wybierz ostatnią opcję ``Full Rect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:144
 msgid "Add the UI sprites"
@@ -250,6 +275,8 @@ msgid ""
 "Select the ``MarginContainer``, and create the UI elements as "
 "``TextureRect`` nodes. We need:"
 msgstr ""
+"Zaznacz ``MarginContainer`` i stwórz elementy interfejsu użytkownika jako "
+"węzły ``TextureRect``. Potrzebujemy:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:149
 msgid "The title, or logo"
@@ -265,7 +292,7 @@ msgstr "Notka o wersji"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:152
 msgid "And the main menu’s illustration"
-msgstr ""
+msgstr "Obraz głównego menu"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:154
 msgid ""
@@ -274,6 +301,10 @@ msgid ""
 "the new node selected, press ``Meta+D`` five times to create five extra "
 "``TextureRect`` instances."
 msgstr ""
+"Kliknij przycisk ``Dodaj węzeł`` lub naciśnij ``Meta+A`` na klawiaturze. "
+"Zacznij wpisywać ``TextureRect`` aby znaleźć odpowiedni węzeł i naciśnij "
+"ENTER. Po wybraniu nowego węzła, naciśnij pięciokrotnie przycisk ``Meta+D``, "
+"aby utworzyć pięć dodatkowych instancji ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:159
 msgid ""
@@ -281,10 +312,14 @@ msgid ""
 "to the right of the Texture property, and click on ``Load``. A file browser "
 "opens and lets you pick a sprite to load into the texture slot."
 msgstr ""
+"Kliknij na każdy z węzłów, aby go zaznaczyć. W inspektorze kliknij ikonę "
+"``...`` po prawej stronie właściwości Tekstury, a następnie kliknij ikonę "
+"``Wczytaj``. Otworzy się przeglądarka plików, w której można wybrać Sprite "
+"do załadowania do miejsca dla tekstury."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:165
 msgid "The file browser lets you find and load textures"
-msgstr ""
+msgstr "Menedżer plików pozwoli tobie znaleźć tekstury"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
 msgid ""
@@ -293,20 +328,26 @@ msgid ""
 "a separate node. Then, double click on each of the nodes in the Scene tab to "
 "rename them."
 msgstr ""
+"Trzeba powtórzyć operację dla wszystkich węzłów ``TextureRect``. Powinieneś "
+"mieć logo, ilustrację, trzy opcje w menu i informację o wersji, każdy jako "
+"oddzielny węzeł. Następnie kliknij dwukrotnie na każdy z węzłów na zakładce "
+"Scena, aby zmienić ich nazwę."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
 msgid "The six nodes, with textures loaded"
-msgstr ""
+msgstr "Sześć węzłów z ustawionymi teksturami"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:178
 msgid ""
 "If you want to support localization in your game, use ``Labels`` for menu "
 "options instead of ``TextureRect``."
 msgstr ""
+"Jeśli chcesz obsługiwać lokalizację w swojej grze, używaj ``Label`` dla "
+"opcji w menu zamiast ``TextureRect``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:182
 msgid "Add containers to place UI elements automatically"
-msgstr ""
+msgstr "Automatyczne dodawanie kontenerów do elementów interfejsu użytkownika"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:184
 msgid ""
@@ -328,12 +369,18 @@ msgid ""
 "the menu options on the left, and a ``CenterContainer`` for the illustration "
 "on the right."
 msgstr ""
+"Wybierz ``MarginContainer`` i dodaj ``HBoxContainer``. Następnie "
+"potrzebujemy dwóch kontenerów jako dzieci naszego ``HBoxContainer``: "
+"``VBoxContainer`` do opcji w menu po lewej stronie i ``CenterContainer`` dla "
+"ilustracji po prawej stronie."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:202
 msgid ""
 "You should have four nested containers, and the TextureRect nodes sitting "
 "aside from it"
 msgstr ""
+"Należy mieć cztery zagnieżdżone kontenery, a węzły TextureRect powinny być "
+"od nich odsunięte"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:205
 msgid ""
@@ -342,22 +389,26 @@ msgid ""
 "them into the ``VBoxContainer``. Then, drag the illustration node into the "
 "``CenterContainer``. The nodes should position automatically."
 msgstr ""
+"W drzewie węzłów wybierz wszystkie węzły ``TextureRect``, które mają być po "
+"lewej stronie: logo, opcje menu i informację o wersji. Przeciągnij i upuść "
+"je do ``VBoxContainer``. Następnie przeciągnij węzeł ilustracji do "
+"``CenterContainer``. Węzły powinny pozycjonować się automatycznie."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:212
 msgid "Containers automatically place and resize textures"
-msgstr ""
+msgstr "Kontenery automatycznie umieszczają i skalują tekstury"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:214
 msgid "We're left with two problems to solve:"
-msgstr ""
+msgstr "Zostały dwa problemy do rozwiązania:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:216
 msgid "The characters on the right aren't centered"
-msgstr ""
+msgstr "Postać po prawej nie jest wycentrowana"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:217
 msgid "There's no space between the logo and the other UI elements"
-msgstr ""
+msgstr "Nie ma przerw pomiędzy logo i innymi elementami UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
 msgid ""
@@ -374,6 +425,8 @@ msgid ""
 "The character node centers inside the right half of the screen as soon as "
 "you place it inside the CenterContainer"
 msgstr ""
+"Węzeł postaci jest wyśrodkowywany w prawej połowie ekranu, gdy tylko "
+"umieścisz go w środku kontenera CenterContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:231
 msgid ""
@@ -389,6 +442,8 @@ msgstr ""
 msgid ""
 "Place the new container between the other two nodes to retain the UI's layout"
 msgstr ""
+"Umieść nowy kontener między dwoma pozostałymi węzłami, aby zachować układ "
+"graficzny interfejsu użytkownika"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
 msgid ""
@@ -405,10 +460,14 @@ msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the ``Alignment`` property to ``Center``."
 msgstr ""
+"W celu wycentrowania węzłów w ``VBoxContainer``, przewiń na górę inspektora "
+"i zmień właściwość ``Alignment`` na ``Center``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:257
 msgid "The menu options should center vertically in the UI's left column"
 msgstr ""
+"Opcje menu powinny być umieszczone pionowo w po środku lewej kolumny "
+"interfejsu użytkownika"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:259
 msgid ""
@@ -427,7 +486,7 @@ msgstr "Końcowy interfejs"
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
-"Bez pisania kodu, stworzyliśmy precyzyjny i rozszerzalny ekran menu głównego"
+"Bez pisania kodu, stworzyliśmy precyzyjny i rozszerzalny ekran menu głównego."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
 msgid ""
@@ -435,6 +494,9 @@ msgid ""
 "to compare with your own. In the next tutorial, you'll create a Game User "
 "Interface with bars and item counters."
 msgstr ""
+"Serdecznie gratulujemy za dotarcie do tego miejsca! Możesz pobrać `stworzone "
+"menu tu <#>`__ aby porównać je z własnym. W następnym samouczku zostanie "
+"utworzony interfejs użytkownika gry z paskami i licznikami przedmiotów."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
 msgid ""

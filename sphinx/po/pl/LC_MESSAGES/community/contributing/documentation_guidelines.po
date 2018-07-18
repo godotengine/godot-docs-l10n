@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,12 @@ msgid ""
 "page <http://docs.godotengine.org>`_ on what steps to follow and how to "
 "contact the docs team."
 msgstr ""
+"Ta strona opisuje zasady, których należy przestrzegać, jeśli chcesz "
+"przyczynić się do rozwoju Godot Engine przeglądając dokumentację w "
+"poszukiwaniu błędów albo tłumacząc nieprzetłumaczone teksty. Zapoznaj się "
+"również z plikiem README w repozytorium `godot-dokumentacja GitHub <https://"
+"github.com/godotengine/godot-docs>`_ oraz stroną główną `dokumentacja "
+"<http://docs.godotengine.org>`_."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:14
 msgid "How to contribute"
@@ -44,6 +50,12 @@ msgid ""
 "in a pull request and getting it merged will trigger a rebuild of the online "
 "documentation."
 msgstr ""
+"Tworzenie lub modyfikowanie stron dokumentacji odbywa się głównie poprzez "
+"repozytorium `godot-docs GitHub <https://github.com/godotengine/godot-"
+"docs>`_. Dokumentacja HTML (lub PDF i EPUB) jest generowana z plików .rst "
+"(język znaczników reStructuredText) z tego repozytorium. Modyfikacja tych "
+"stron w pull requeście i połączenie go z gałęzią master, spowoduje "
+"przebudowę dokumentacji online."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:23
 msgid ""
@@ -70,7 +82,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:40
 msgid "What makes good documentation?"
-msgstr ""
+msgstr "Co tworzy dobrą dokumentację?"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:42
 msgid ""
@@ -144,7 +156,7 @@ msgstr ""
 msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
-msgstr "Tylko projekty, ludzie i nazwy węzłów klas są pisane wielką literą"
+msgstr "Tylko projekty, ludzie i nazwy węzłów klas są pisane wielką literą."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:90
 msgid "Translating existing pages"
@@ -164,7 +176,7 @@ msgid ""
 msgstr ""
 "Jest również oficjalne `repozytorium Godota I18N <https://github.com/"
 "godotengine/godot-docs-l10n>`_. gdzie możesz śledzić które dane zostały "
-"ostatnio zsynchronizowane"
+"ostatnio zsynchronizowane."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:102
 msgid "License"

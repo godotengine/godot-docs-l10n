@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr "Szybko  się ładuje i kompiluje."
+msgstr "Szybko się ładuje i kompiluje."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
@@ -558,24 +558,24 @@ msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_connect>`."
 msgstr ""
-"Na koniec należy podłączyć przycisk do sygnału \"pressed\" do ``_ready() `` "
-"używając  :ref:`Object.connect() <class_Object_connect>`."
+"Na koniec należy podłączyć przycisk do sygnału \"pressed\" do ``_ready()`` "
+"używając :ref:`Object.connect() <class_Object_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:280
 msgid "The final script should look like this:"
 msgstr "Końcowy scenariusz powinien tak wyglądać:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:317
+#: ../../docs/getting_started/step_by_step/scripting.rst:314
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr ""
 "Uruchom scenę i naciśnij przycisk. Powinieneś otrzymać następujący wynik:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:321
+#: ../../docs/getting_started/step_by_step/scripting.rst:318
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr "Witaj! Gratulujemy oskryptowania pierwszej sceny."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:325
+#: ../../docs/getting_started/step_by_step/scripting.rst:322
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -583,18 +583,18 @@ msgid ""
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:343
+#: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:347
+#: ../../docs/getting_started/step_by_step/scripting.rst:344
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:351
+#: ../../docs/getting_started/step_by_step/scripting.rst:348
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

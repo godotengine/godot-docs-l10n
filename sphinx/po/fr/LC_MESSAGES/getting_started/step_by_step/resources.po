@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Ressources"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
-msgstr ""
+msgstr "Nœuds et ressources"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
 msgid ""
@@ -32,18 +32,30 @@ msgid ""
 "through them. There is another datatype that is equally important: :ref:"
 "`Resource <class_Resource>`."
 msgstr ""
+"Jusqu'à présent, les :ref:`Nœuds <class_Node>` ont été le type de donnée le "
+"plus important dans Godot car la plupart des comportements et des "
+"fonctionnalités du moteur sont implémentés par leur biais. Il y a un autre "
+"type de donnée qui est tout aussi important : :ref:`Ressource "
+"<class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
 "Where *Nodes* focus on behaviors, such as drawing a sprite, drawing a 3D "
 "model, physics, GUI controls, etc,"
 msgstr ""
+"Là où les *Nœuds* se concentrent sur les comportements, comme dessiner un "
+"sprite, dessiner un modèle 3D, la physique, les contrôles de l'interface, "
+"etc,"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:18
+#, fuzzy
 msgid ""
 "**Resources** are mere **data containers**. This means that they don't do "
 "any action nor process any information. Resources just contain data."
 msgstr ""
+"Les **Ressources** sont de simples **conteneurs de données**. Cela veut dire "
+"qu'ils ne réalisent aucune action ni ne traitent aucune information. Les "
+"ressources ne contiennent que des données."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:22
 msgid ""
@@ -52,6 +64,10 @@ msgid ""
 "<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
 "<class_Font>`, :ref:`Translation <class_Translation>`, etc."
 msgstr ""
+"Des exemples de ressources sont :ref:`Texture <class_Texture>`, :ref:`Script "
+"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
+"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
+"<class_Font>`, :ref:`Translation <class_Translation>`, etc."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:32
 msgid ""
@@ -59,8 +75,12 @@ msgid ""
 "(png, jpg), a script (.gd) or pretty much anything, that file is considered "
 "a resource."
 msgstr ""
+"Quand Godot sauvegarde ou charge (depuis le disque dur) une scène (.tscn ou ."
+"scn), une image (png, jpg), un script (.gd) ou bien à peu près n'importe "
+"quoi d'autre, ce fichier est considéré comme étant une ressource."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:36
+#, fuzzy
 msgid ""
 "When a resource is loaded from disk, **it is always loaded once**. That "
 "means, if there is a copy of that resource already loaded in memory, trying "
@@ -68,8 +88,15 @@ msgid ""
 "corresponds with the fact that resources are just data containers, so there "
 "is no need to have them duplicated."
 msgstr ""
+"Quand une ressource est chargée depuis le disque dur, **elle est toujours "
+"chargée une fois**. Cela signifie, si il y a une copie de cette ressource "
+"déjà chargée en mémoire, essayer de charger à nouveau cette ressource "
+"retournera la même copie encore et encore. Cela correspond au fait que les "
+"ressources sont justes des conteneurs de données, donc il n'y a pas besoin "
+"de les dupliquer."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:42
+#, fuzzy
 msgid ""
 "Typically, every object in Godot (Node, Resource, or anything else) can "
 "export properties. Properties can be of many types (like a string, integer, "
@@ -77,36 +104,56 @@ msgid ""
 "nodes and resources can contain resources as properties. To make it a little "
 "more visual:"
 msgstr ""
+"Typiquement, chaque objet dans Godot (Nœud, Ressource, ou quoi que ce soit "
+"d'autre) peuvent exporter des propriétés. Les propriétés peuvent être de "
+"types différents (comme une chaîne de caractère, un entier, Vector2, etc) et "
+"l'un de ces types peut être une ressource. Cela veut dire que les nœuds et "
+"les ressources peuvent contenir des ressources comme propriétés. Pour rendre "
+"cette explication plus claire :"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid "External vs built-in"
-msgstr ""
+msgstr "Externe vs intégré"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:53
+#, fuzzy
 msgid ""
 "The resource properties can reference resources in two ways, *external* (on "
 "disk) or **built-in**."
 msgstr ""
+"Les propriétés des ressources peuvent référencer des ressources de deux "
+"façons, *externe* (sur disque) ou **intégré**."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:56
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
+"Pour être plus spécifique, voici une :ref:`Texture <class_Texture>` dans un "
+"nœud :ref:`Sprite <class_Sprite>` :"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:61
+#, fuzzy
 msgid ""
 "Pressing the \">\" button on the right side of the preview allows us to view "
 "and edit the resources properties. One of the properties (path) shows where "
 "it comes from. In this case, it comes from a png image."
 msgstr ""
+"Presser le bouton \">\" à droite de la prévisualisation nous permet de voir "
+"et d'éditer les propriétés de la ressource. Une des propriétés (chemin) "
+"indique d'où elle vient. Dans ce cas, cette ressource vient d'une image png."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:67
+#, fuzzy
 msgid ""
 "When the resource comes from a file, it is considered an *external* "
 "resource. If the path property is erased (or it never had a path to begin "
 "with), it is considered a built-in resource."
 msgstr ""
+"Quand la ressource provient d'un fichier, elle est considérée comme une "
+"ressource *externe*. Si la propriété chemin est effacée (ou si elle n'a "
+"jamais eu de chemin dès le départ), elle est considérée comme une ressource "
+"intégrée."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:71
 msgid ""
@@ -118,26 +165,40 @@ msgid ""
 "loaded only once. That means, different Robi robot scenes instanced at the "
 "same time will still share the same image."
 msgstr ""
+"Par exemple, si le chemin \\`\"res://robi.png\"\\` est effacé de la "
+"propriété \"chemin\" dans l'exemple ci-dessus, et que la scène est "
+"sauvegardée, la ressource sera sauvegardée à l'intérieur du fichier de la "
+"scène .tscn, ne référençant plus le \"robi.png\" externe. Cependant, même si "
+"elle est sauvegardée comme ressource intégrée, et même si la scène peut être "
+"instanciée plusieurs fois, la ressource ne sera toujours chargée qu'une "
+"seule fois. Cela signifie que différentes scènes du robot Robi instanciées "
+"au même moment partageront toujours la même image."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:80
 msgid "Loading resources from code"
-msgstr ""
+msgstr "Chargement de ressources à partir du code"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:82
 msgid ""
 "Loading resources from code is easy. There are two ways to do it. The first "
 "is to use load(), like this:"
 msgstr ""
+"Charger des ressources depuis le code est facile. Il y a deux manières de le "
+"faire. La première est d'utiliser load(), comme ceci :"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
+#, fuzzy
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter because it loads the resource at compile-time."
 msgstr ""
+"La seconde manière est plus optimale, mais ne fonctionne qu'avec une "
+"constante de chaîne de caractère en paramètre car elle charge la ressource "
+"au moment de la compilation."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:116
 msgid "Loading scenes"
-msgstr ""
+msgstr "Chargement de scènes"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:117
 msgid ""

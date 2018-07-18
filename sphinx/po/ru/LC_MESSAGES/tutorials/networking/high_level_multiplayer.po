@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
-msgstr ""
+msgstr "Многопользовательский режим высокого уровня"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High level vs low level API"
-msgstr ""
+msgstr "Программный интерфейс (API) высокого уровня против низкого уровня"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -32,6 +32,10 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
+"Ниже объясняются различия между высоко- и низкоуровневых сетей в Godot, а "
+"также некоторые базовые основы. Если вы хотите перейти сразу к делу и "
+"добавить сеть в свои первые узлы, перейдите к разделу `Инициализация сети`_ "
+"ниже. Но не забудьте прочитать остальные разделы позже!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -44,10 +48,19 @@ msgid ""
 "Godot's high-level networking API, which sacrifices some of the fine-grained "
 "control of low-level networking for greater ease of use."
 msgstr ""
+"Godot всегда поддерживал стандартную низкоуровневую сеть через UDP, TCP и "
+"некоторые протоколы более высокого уровня, такие как SSL и HTTP. Эти "
+"протоколы являются гибкими и могут использоваться почти везде. Однако "
+"использовать их для синхронизации состояния игры вручную может быть большим "
+"объемом работы. Иногда эту работу нельзя избежать, но она может быть "
+"оправдана, например, при работе с пользовательской реализацией сервера на "
+"бэкенд. Однако в большинстве случаев стоит рассмотреть высокоуровневый API-"
+"интерфейс Godot, который жертвует некоторым мелкомасштабным управлением "
+"низкоуровневыми сетями для большей простоты использования."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
-msgstr ""
+msgstr "Это связано с присущими ему ограничениями протоколов низкого уровня:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -70,6 +83,13 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"UDP - это более простой протокол, который только отправляет пакеты (и не "
+"имеет понятия \"соединение\"). Отсутствие коррекции ошибок делает это "
+"довольно быстро (низкая задержка), но пакеты могут быть потеряны по пути или "
+"получены в неправильном порядке. К этому добавляется MTU (максимальный "
+"размер пакета) для UDP, обычно небольшой (всего несколько сотен байтов), "
+"поэтому передача больших пакетов означает их разделение, реорганизацию и "
+"повторную попытку, если какая-то часть не проходит."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
 msgid ""
@@ -81,6 +101,13 @@ msgid ""
 "this most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"В общем, TCP можно считать надежным, упорядоченным и медленным; UDP - "
+"ненадежным, неупорядоченным и быстрым. Из-за большой разницы в "
+"производительности часто имеет смысл перестроить те части TCP, которые нужны "
+"для игр (дополнительная надежность и порядок пакетов), избегая ненужных "
+"частей (функции управления перегрузкой/трафиком, алгоритм Нейгла и т.д.). В "
+"связи с этим большинство игровых движков имеют такую реализацию, и Godot не "
+"исключение."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
@@ -89,6 +116,11 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
+"В итоге вы можете использовать низкоуровневый сетевой API для максимального "
+"контроля, и реализовать все, что находится поверх неизолированных сетевых "
+"протоколов, или использовать API высокого уровня на базе :ref:`SceneTree "
+"<class_SceneTree>`, который делает большую часть тяжелой работы за кулисами, "
+"как правило, оптимальным способом."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""
@@ -105,6 +137,7 @@ msgid ""
 "More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
 msgstr ""
+"Подробнее о TCP/IP, UDP и сети: https://gafferongames.com/post/udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
 msgid ""

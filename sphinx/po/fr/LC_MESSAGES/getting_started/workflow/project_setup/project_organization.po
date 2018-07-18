@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid "Organization"
-msgstr ""
+msgstr "Organisation"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
 msgid ""
@@ -62,6 +62,9 @@ msgid ""
 "Unlike other engines, a lot of resource are contained within the scene "
 "itself, so the amount of files in the filesystem is considerably lower."
 msgstr ""
+"Contrairement à d'autres moteurs, beaucoup de ressources sont contenues dans "
+"la scène même, pour que la quantité de fichiers sur le système soit "
+"considérablement plus basse."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:28
 msgid ""
@@ -78,7 +81,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid "Importing"
-msgstr ""
+msgstr "Importation"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
 msgid ""
@@ -86,15 +89,24 @@ msgid ""
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
+"Godot, dans les versions antérieures à la 3.0, réalisait le processus "
+"d'importation depuis des fichiers extérieurs au projet. Bien que cela puisse "
+"être utile pour des gros projets, cela a entraîné des problèmes "
+"d'organisation pour la plupart des développeurs."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
 "Because of this, assets are now imported from within the project folder "
 "transparently."
 msgstr ""
+"Pour cette raison, les ressources sont maintenant importées de manière "
+"transparente à partir du dossier du projet."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:61
+#, fuzzy
 msgid ""
 "If a folder shouldn't be imported into Godot an exception can be made with "
 "a .gdignore file."
 msgstr ""
+"Si un dossier ne doit pas être importé dans Godot, une exception peut être "
+"faite avec un fichier .gdignore."

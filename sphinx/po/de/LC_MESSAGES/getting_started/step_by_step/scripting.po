@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 msgid "Scripting"
-msgstr ""
+msgstr "Scripting"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:7
 msgid "Introduction"
@@ -31,12 +31,18 @@ msgid ""
 "`doc_gdscript`. Nowadays, Godot has four (yes, four!) official languages and "
 "the ability to add extra scripting languages dynamically!"
 msgstr ""
+"Vor Godot 3.0 gab es zum Programmieren von Spielen nur eine "
+"Programmiersprache zur Auswahl, nämlich :ref:`doc_gdscript`. Heutzutage "
+"unterstütz Godot vier (ja, vier!) offizielle Programmiersprachen und bietet "
+"die Möglichkeit zusätzliche Sprachen dynamisch hinzuzufügen!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
 "This is great, mostly due the large amount of flexibility provided, but it "
 "also makes our work supporting languages more difficult."
 msgstr ""
+"Das ist großartig, da die große Anzahl Sprachen mehr Flexibiliät bieten, "
+"aber es macht unsere Arbeit, diese zu unterstützen, auch schwerer."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 msgid ""
@@ -46,6 +52,12 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
+"Die \"Haupt-\" Sprachen in Godot, sind GDScript und VisualScript. Der "
+"Hauptgrund diese beiden zu wählen ist, die tiefe Integration mit Godot, da "
+"das die Erfahrung reibungsloser macht; beide sind im Editor integriert, wo "
+"hingegen C# und C++ in einer seperaten IDE bearbeitet werden müssen. Falls "
+"du ein großer Fan von statisch typisierten Sprachen bist, wähle stattdessen "
+"C# und C++."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -57,40 +69,55 @@ msgid ""
 "Using it has some positive points compared to other languages due to its "
 "high integration with Godot:"
 msgstr ""
+":ref:`doc_gdscript` ist, wie oben erwähnt, die Hauptsprache in Godot. Diese "
+"zu verwenden hat ein paar Vorteile gegenüber anderer Sprachen in Godot, da "
+"sie gut in Godot integriert ist:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
 "It's simple, elegant, and designed to be familiar for users of other "
 "languages such as Lua, Python, Squirrel, etc."
 msgstr ""
+"Sie ist simpel, elegant und ähnelt Sprachen wie Lua, Python, Squirrel, etc."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr ""
+msgstr "Läd und kompiliert unheimlich schnell."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
+"Durch die Integration im Editor, der Codevervollständigung für Nodes, "
+"Signale und andere Elemente innerhalb einer Szene ist es eine Freude mit der "
+"Sprache zu arbeiten."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
 msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
+"Hat eingebaute Vektortypen ( wie Vectors, transforms, etc.), was sie "
+"effizient für die Arbeit mit linearer Algebra macht."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
 "Supports multiple threads as efficiently as statically typed languages - one "
 "of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
 msgstr ""
+"Unterstützt mehrere Threads, so effizient wie statisch typifizierter "
+"Sprachen - was der Grund ist warum wir andere  VM's wie Lua, Squirrel, etc "
+"mieden."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:33
 msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
+"Nutzt keinen Garbage Collector, also handelt es sich um ein kleines Stück "
+"Automatisierung (die meisten Objekte werden sowieso gezählt), durch "
+"Determinismus."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -98,16 +125,21 @@ msgid ""
 "GDNative) if more performance is required, all without recompiling the "
 "engine."
 msgstr ""
+"Ihre dynamische Natur macht es einfach, Bereiche des Codes in C++ zu "
+"optimieren (via GDNative), falls mehr Leistung nötig ist. Und das alles ohne "
+"die Engine neu zu kompilieren."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
 msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
+"Falls du unentschlossen bist und Erfahrung mit dem Programmieren, besonders "
+"mit dynamischen Programiersprachen besizt, verwende GDScript!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 msgid "VisualScript"
-msgstr ""
+msgstr "VisualScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""
@@ -115,6 +147,10 @@ msgid ""
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
+"Seit Version 3.0 unterstüzt Godot :ref:`Visual "
+"Scripting<doc_what_is_visual_script>`.  Dies ist eine typische "
+"Implementierung einer \"blocks and connections\" Sprache, die aber an die "
+"funktionsweise von Godot angepasst wurde."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
 msgid ""
@@ -430,16 +466,16 @@ msgstr ""
 msgid "The final script should look like this:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:317
+#: ../../docs/getting_started/step_by_step/scripting.rst:314
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:321
+#: ../../docs/getting_started/step_by_step/scripting.rst:318
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:325
+#: ../../docs/getting_started/step_by_step/scripting.rst:322
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -447,18 +483,18 @@ msgid ""
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:343
+#: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:347
+#: ../../docs/getting_started/step_by_step/scripting.rst:344
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:351
+#: ../../docs/getting_started/step_by_step/scripting.rst:348
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

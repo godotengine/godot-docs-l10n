@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -458,10 +458,9 @@ msgstr ""
 "selecionou."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
-#, fuzzy
 msgid "The first section lists custom signals defined in ``Player.gd``:"
 msgstr ""
-"A primeira seção lista os sinais personalizados definidos em `` player.GD``:"
+"A primeira seção lista os sinais personalizados definidos em `` Player.gd``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
 msgid ""
@@ -480,7 +479,6 @@ msgid "We're connecting to the health\\_changed signal"
 msgstr "Estamos nos conectando ao sinal health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
-#, fuzzy
 msgid ""
 "Select ``health_changed`` and click on the Connect button in the bottom "
 "right corner to open the Connect Signal window. On the left side you can "
@@ -494,7 +492,7 @@ msgstr ""
 "direito para abrir a janela Conectar Sinal. No lado esquerdo, você pode "
 "escolher o nó que escutará este sinal. Selecione o nó ``GUI``. O lado "
 "direito da tela permite empacotar valores opcionais com o sinal. Nós já "
-"cuidamos disso em ``player.GD``. Em geral, eu recomendo não adicionar muitos "
+"cuidamos disso em ``Player.gd``. Em geral, eu recomendo não adicionar muitos "
 "argumentos usando esta janela, já que eles são menos convenientes do que "
 "fazer a partir do código."
 
@@ -503,12 +501,11 @@ msgid "The Connect Signal window with the GUI node selected"
 msgstr "A janela Conectar Sinal com o nó GUI selecionado"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
-#, fuzzy
 msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
 msgstr ""
-"Você pode, opcionalmente, conectar nós do código. Mas fazê-lo do editor tem "
+"Opcionalmente você pode conectar nós do código. Mas fazê-lo do editor tem "
 "duas vantagens:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
@@ -522,7 +519,7 @@ msgid ""
 "An emitter icon appears next to the node that emits the signal in the Scene "
 "dock"
 msgstr ""
-"Um ícone de emissor aparece ao lado do nó que emite o sinal na doca Scene"
+"Um ícone de emissor aparece próximo ao nó que emite o sinal no painel Cena"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
 #, fuzzy

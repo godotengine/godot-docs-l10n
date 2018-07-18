@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:4
 msgid "3D performance and limitations"
-msgstr ""
+msgstr "Wydajność 3D i ograniczenia"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:7
 msgid "Introduction"
@@ -37,7 +37,7 @@ msgid ""
 "Rendering objects efficiently in high amounts is easy, but when a large "
 "scene must be rendered, it can become inefficient. To solve this, visibility "
 "computation must be added to the rendering, which makes rendering less "
-"efficient, but, at the same time, less objects are rendered, so efficiency "
+"efficient, but, at the same time, fewer objects are rendered, so efficiency "
 "overall improves."
 msgstr ""
 
@@ -104,10 +104,10 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:57
 msgid ""
-"**Reusing Materials**: The less amount of different materials in the scene, "
-"the faster the rendering will be. If a scene has a huge amount of objects "
-"(in the hundreds or thousands) try reusing the materials or in the worst "
-"case use atlases."
+"**Reusing Materials**: The fewer different materials in the scene, the "
+"faster the rendering will be. If a scene has a huge amount of objects (in "
+"the hundreds or thousands) try reusing the materials or in the worst case "
+"use atlases."
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:61
@@ -186,7 +186,7 @@ msgid ""
 "it), which divide the screen into a grid. Each cell keeps the list of "
 "triangles drawn to it and sorts them by depth to minimize *overdraw*. This "
 "technique improves performance and reduces power consumption, but takes a "
-"toll on vertex performance. As a result, less vertices and triangles can be "
+"toll on vertex performance. As a result, fewer vertices and triangles can be "
 "processed for drawing."
 msgstr ""
 
@@ -236,12 +236,17 @@ msgid ""
 "compression). Video RAM compression is not as efficient in size as PNG or "
 "JPG when stored, but increase performance enormously when drawing."
 msgstr ""
+"Godot oferuje importowane tekstury modeli 3D (kompresja VRAM). Kompresja "
+"VRAM nie waży tak mało jak PNG czy JPG, ale znacznie zwiększa wydajność "
+"podczas rysowania."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:140
 msgid ""
 "This is because the main goal of texture compression is bandwidth reduction "
 "between memory and the GPU."
 msgstr ""
+"Dzieje się tak dlatego, że głównym celem kompresji tekstur jest zmniejszenie "
+"ilości danych przesyłanych pomiędzy pamięcią a procesorem graficznym."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:143
 msgid ""
@@ -250,12 +255,18 @@ msgid ""
 "on shapes inside the textures, so the artifacting resulting from the "
 "compression is more noticeable."
 msgstr ""
+"W 3D, kształty obiektów zależą bardziej od geometrii niż od tekstury, więc "
+"kompresja jest generalnie niezauważalna. W 2D, kompresja zależy bardziej od "
+"kształtów wewnątrz tekstury, więc artefakty wynikające z kompresji są "
+"bardziej zauważalne."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:148
 msgid ""
 "As a warning, most Android devices do not support texture compression of "
 "textures with transparency (only opaque), so keep this in mind."
 msgstr ""
+"Jako ostrzeżenie, większość urządzeń z systemem Android nie obsługuje "
+"kompresji tekstur z przezroczystością (tylko nieprzezroczyste)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:152
 msgid "Transparent objects"
@@ -277,7 +288,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:164
 msgid ""
-"As also mentioned before, using objects with less vertices can improve "
+"As also mentioned before, using objects with fewer vertices can improve "
 "performance in some cases. Godot has a simple system to change level of "
 "detail, :ref:`GeometryInstance <class_GeometryInstance>` based objects have "
 "a visibility range that can be defined. Having several GeometryInstance "
@@ -298,7 +309,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:181
 msgid "Bake lighting"
-msgstr ""
+msgstr "Wypal światło"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:183
 msgid ""

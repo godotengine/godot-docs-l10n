@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Formatowane łańcuchy znaków są zwykł ciągami, z wyjątkiem tego, że zawierają "
 "pewne sekwencje znaków zastępczych. Te pola wyboru można łatwo zastąpić "
-"parametrami przekazanymi do formatowanego  łańcucha."
+"parametrami przekazanymi do formatowanego łańcucha."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:13
 msgid ""
@@ -146,7 +146,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid "``s``"
-msgstr ""
+msgstr "``s``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:105
 msgid ""
@@ -156,7 +156,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid "``c``"
-msgstr ""
+msgstr "``c``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:108
 msgid ""
@@ -166,7 +166,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid "``d``"
-msgstr ""
+msgstr "``d``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:111
 msgid ""
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid "``o``"
-msgstr ""
+msgstr "``o``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:114
 msgid ""
@@ -206,7 +206,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "``f``"
-msgstr ""
+msgstr "``f``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:123
 msgid "A **decimal real** number. Expects an integral or real number."
@@ -224,7 +224,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "``+``"
-msgstr ""
+msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
 msgid "In number specifiers, **show + sign** if positive."
@@ -242,7 +242,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid "``.``"
-msgstr ""
+msgstr "``.``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:140
 msgid ""
@@ -252,7 +252,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "``-``"
-msgstr ""
+msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
 msgid "**Pad to the right** rather than the left."
@@ -260,7 +260,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid "``*``"
-msgstr ""
+msgstr "``*``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:145
 msgid ""
@@ -380,7 +380,7 @@ msgid ""
 "\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})"
 msgstr ""
-"\"Hej, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"Hej, {nazwa} v{wersja}!\".format({\"nazwa\":\"Godette\", \"wersja\":"
 "\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
@@ -410,7 +410,7 @@ msgstr ""
 msgid ""
 "\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
 msgstr ""
-"\"Hej, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
+"\"Hej, {0} v{wersja}!\".format({\"0\":\"Godette\", \"wersja\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -423,7 +423,7 @@ msgid ""
 "\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
 "\"]])"
 msgstr ""
-"\"Hej, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":"
+"\"Hej, {nazwa} v{wersja}!\".format([[\"wersja\":\"3.0\"], [\"nazwa\":"
 "\"Godette\"]])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -432,7 +432,7 @@ msgstr "\"Hej, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
 msgid "\"Hi, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
-msgstr ""
+msgstr "\"Hej, {nazwa} v{0}!\".format([3.0, [\"nazwa\":\"Godette\"]])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:257
 msgid ""
@@ -446,13 +446,13 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
-msgstr ""
+msgstr "\"Hej, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Hi, Godette v3.0"
-msgstr ""
+msgstr "Hej, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Postfix"
@@ -481,8 +481,7 @@ msgstr ""
 msgid ""
 "\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % 3.114})"
 msgstr ""
-"\"Hej, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
-"3.114})"
+"\"Hej, {0} v{wersja}\".format({0:\"Godette\", \"wersja\":\"%0.2f\" % 3.114})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "Hi, Godette v3.11"

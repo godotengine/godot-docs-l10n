@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,7 +72,7 @@ msgid ""
 "applications."
 msgstr ""
 "Jeśli jesteś nowicjuszem w grafice komputerowej, może wydawać się dziwne, że "
-"dodatnie wartości osi ``y``  są skierowane **w dół** zamiast w górę, jak "
+"dodatnie wartości osi ``y`` są skierowane **w dół** zamiast w górę, jak "
 "prawdopodobnie uczyliście się na lekcji matematyki. Jest to jednak "
 "powszechne w większości aplikacji graficznych."
 
@@ -138,8 +138,8 @@ msgstr ""
 "Można użyć metody (współrzędne x i y lub kąt i wielkość) w odniesieniu do "
 "wektora, ale dla wygody programistów zwykle używa się zapisu współrzędnych. "
 "Na przykład, w Godot punkt początkowy jest lewym górnym rogu ekranu, więc "
-"aby umieścić węzeł 2D o nazwie ``Node2D` 400 pikseli po prawej stronie i 300 "
-"pikseli w dół, użyj poniższego kodu:"
+"aby umieścić węzeł 2D o nazwie ``Node2D`` 400 pikseli po prawej stronie i "
+"300 pikseli w dół, użyj poniższego kodu:"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
 msgid ""
@@ -249,7 +249,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:172
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
-msgstr ""
+msgstr "Aby znaleźć wektor z punktu ``A`` do ``B`` użyj ``B - A``."
 
 #: ../../docs/tutorials/math/vector_math.rst:175
 msgid "Unit vectors"
@@ -264,7 +264,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:182
 msgid "Normalization"
-msgstr ""
+msgstr "Normalizacja"
 
 #: ../../docs/tutorials/math/vector_math.rst:184
 msgid ""
@@ -272,12 +272,17 @@ msgid ""
 "its direction. This is done by dividing each of its components by its "
 "magnitude:"
 msgstr ""
+"**Normalizacja** wektora oznacza zmniejszenie jego długości do ``1`` przy "
+"jednoczesnym zachowaniu jego kierunku. Odbywa się to poprzez podzielenie "
+"każdego z jego komponentów przez jego wielkość:"
 
 #: ../../docs/tutorials/math/vector_math.rst:203
 msgid ""
 "Because this is such a common operation, ``Vector2`` and ``Vector3`` provide "
 "a method for normalizing:"
 msgstr ""
+"Ponieważ jest to taka powszechna operacja, ``Vector2`` i ``Vector3`` "
+"zapewniają tę metodę normalizacji:"
 
 #: ../../docs/tutorials/math/vector_math.rst:216
 msgid ""
@@ -285,10 +290,12 @@ msgid ""
 "normalize a vector of length ``0``. Attempting to do so will result in an "
 "error."
 msgstr ""
+"Ponieważ normalizacja polega na dzieleniu przez długość wektora, nie można "
+"normalizować wektora o długości ``0``. Próba zrobienia tego spowoduje błąd."
 
 #: ../../docs/tutorials/math/vector_math.rst:221
 msgid "Reflection"
-msgstr ""
+msgstr "Odbicie"
 
 #: ../../docs/tutorials/math/vector_math.rst:223
 msgid ""
@@ -303,6 +310,8 @@ msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
 msgstr ""
+"Wyobraźmy sobie na przykład, że mamy ruchomą kulę, którą chcemy odbić od "
+"ściany lub innego obiektu:"
 
 #: ../../docs/tutorials/math/vector_math.rst:233
 msgid ""
@@ -316,7 +325,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:263
 msgid "Dot product"
-msgstr ""
+msgstr "Iloczyn skalarny"
 
 #: ../../docs/tutorials/math/vector_math.rst:265
 msgid ""
@@ -325,6 +334,11 @@ msgid ""
 "returns a **scalar**. Unlike a vector, which contains both magnitude and "
 "direction, a scalar value has only magnitude."
 msgstr ""
+"**Wartość skalarna** jest jednym z najważniejszych pojęć w matematyce "
+"wektorowej, ale często jest źle rozumiany. Wartość skalarna to operacja na "
+"dwóch wektorach, która zwraca **skalar**. W przeciwieństwie do wektora, "
+"który zawiera zarówno wielkość, jak i kierunek, wartość skalarna ma tylko "
+"wielkość."
 
 #: ../../docs/tutorials/math/vector_math.rst:270
 msgid "The formula for dot product takes two common forms:"
@@ -339,6 +353,8 @@ msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
+"Jednak w większości przypadków najłatwiej jest użyć metody wbudowanej. "
+"Kolejność dwóch wektorów nie ma znaczenia:"
 
 #: ../../docs/tutorials/math/vector_math.rst:296
 msgid ""
@@ -352,6 +368,8 @@ msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
 msgstr ""
+"Przy zastosowaniu wektorów jednostkowych wynik zawsze będzie pomiędzy ``-1`` "
+"(180°) a ``1`` (0°)."
 
 #: ../../docs/tutorials/math/vector_math.rst:306
 msgid "Facing"
@@ -424,7 +442,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:418
 msgid "Pointing to a Target"
-msgstr ""
+msgstr "Wskazywanie na cel"
 
 #: ../../docs/tutorials/math/vector_math.rst:420
 msgid ""
@@ -437,18 +455,20 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:429
 msgid "More Information"
-msgstr ""
+msgstr "Więcej informacji"
 
 #: ../../docs/tutorials/math/vector_math.rst:431
 msgid ""
 "For more information on using vector math in Godot, see the following "
 "articles:"
 msgstr ""
+"Więcej informacji na temat używania matematyki wektorowej w Godocie można "
+"znaleźć w poniższych artykułach:"
 
 #: ../../docs/tutorials/math/vector_math.rst:433
 msgid ":ref:`doc_vectors_advanced`"
-msgstr ""
+msgstr ":ref:`doc_vectors_advanced`"
 
 #: ../../docs/tutorials/math/vector_math.rst:434
 msgid ":ref:`doc_matrices_and_transforms`"
-msgstr ""
+msgstr ":ref:`doc_matrices_and_transforms`"

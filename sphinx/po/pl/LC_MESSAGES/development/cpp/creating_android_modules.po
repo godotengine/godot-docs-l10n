@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:29
 msgid "Posting to Facebook, Twitter, etc."
-msgstr ""
+msgstr "Publikowanie na Facebooku, Twitterze itp."
 
 #: ../../docs/development/cpp/creating_android_modules.rst:30
 msgid "Push notifications"
@@ -106,16 +106,19 @@ msgid ""
 "On iOS, you can write a C++ module and take advantage of the C++/ObjC "
 "intercommunication."
 msgstr ""
+"W systemie iOS można napisać moduł C++ i skorzystać z komunikacji C++/ObjC."
 
 #: ../../docs/development/cpp/creating_android_modules.rst:35
 msgid ""
 "On Android, interfacing with C++ through JNI (Java Native Interface) isn't "
 "as convenient."
 msgstr ""
+"W systemie Android połączenie z C++ poprzez JNI (Java Native Interface) nie "
+"jest aż tak wygodne."
 
 #: ../../docs/development/cpp/creating_android_modules.rst:38
 msgid "Maybe REST?"
-msgstr ""
+msgstr "Może REST?"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:40
 msgid ""
@@ -123,16 +126,22 @@ msgid ""
 "support for HTTP, HTTPS and JSON, so consider this as an option that works "
 "on every platform. Only write the code once and you are set to go."
 msgstr ""
+"Większość z tych interfejsów umożliwia komunikację za pośrednictwem "
+"interfejsów REST/JSON. Godot ma dobre wsparcie dla HTTP, HTTPS i JSON, więc "
+"rozważ to jako opcję, która działa na każdej platformie. Napisz kod tylko "
+"raz i ruszaj w drogę."
 
 #: ../../docs/development/cpp/creating_android_modules.rst:46
 msgid "Android module"
-msgstr ""
+msgstr "Moduł Androida"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:48
 msgid ""
 "Writing an Android module is similar to :ref:`doc_custom_modules_in_c++`, "
 "but needs a few more steps."
 msgstr ""
+"Pisanie modułu Android jest podobne do :ref:`doc_custom_modules_in_c++`, ale "
+"wymaga kilku dodatkowych kroków."
 
 #: ../../docs/development/cpp/creating_android_modules.rst:51
 msgid ""
@@ -140,10 +149,13 @@ msgid ""
 "templates <doc_compiling_for_android>`, as well as creating :ref:"
 "`doc_custom_modules_in_c++`."
 msgstr ""
+"Upewnij się, że zapoznałeś się z budową :ref:`szablonu eksportu "
+"Androida<doc_compiling_for_android>`, a także tworzenie :ref:"
+"`doc_custom_modules_in_c++`."
 
 #: ../../docs/development/cpp/creating_android_modules.rst:55
 msgid "config.py"
-msgstr ""
+msgstr "config.py"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:57
 msgid ""

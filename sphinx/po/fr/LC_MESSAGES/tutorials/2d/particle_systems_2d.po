@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -273,7 +273,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:191
 msgid "Gravity"
-msgstr ""
+msgstr "Gravité"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:193
 msgid "The gravity applied to every particle."
@@ -281,7 +281,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:198
 msgid "Initial Velocity"
-msgstr ""
+msgstr "Vélocité initiale"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:200
 msgid ""
@@ -289,18 +289,23 @@ msgid ""
 "sec). Speed might later be modified by gravity or other accelerations (as "
 "described further below)."
 msgstr ""
+"La vélocité linéaire est la vitesse à laquelle les particules seront émises "
+"(en pixels par secondes). La vitesse pourra être ultérieurement modifiée par "
+"la gravité ou d'autres accélérations (comme décrit ci-dessous)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
 msgid "Angular Velocity"
-msgstr ""
+msgstr "Vitesse angulaire"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr ""
+"La vitesse angulaire est la vitesse angulaire initiale appliquée aux "
+"particules."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:212
 msgid "Spin Velocity"
-msgstr ""
+msgstr "Vitesse de rotation"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:214
 msgid ""
@@ -356,8 +361,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:257
+#, fuzzy
 msgid "Angle"
-msgstr ""
+msgstr "Angle"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:259
 msgid ""

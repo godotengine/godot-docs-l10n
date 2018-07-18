@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:19
 msgid "Let's get started!"
-msgstr "Zatem zaczynajmy"
+msgstr "Zatem zaczynajmy!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:23
 msgid "Changing levels"
@@ -90,6 +90,7 @@ msgid ""
 "Follow the instructions below for either (or both) of the scenes you want to "
 "use"
 msgstr ""
+"Podążaj za instrukcjami poniżej w zależności, którą scenę chcesz używać"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:74
 msgid ""
@@ -105,12 +106,12 @@ msgstr "Dodanie amunicji"
 msgid ""
 "Now that the player has working guns, let's give them a limited amount of "
 "ammo."
-msgstr ""
+msgstr "Teraz gracz ma działającą broń, dajmy mu określoną ilość amunicji."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:81
 msgid "First we need to define a few variables in each of our weapon scripts."
 msgstr ""
-"Po pierwsze musimy zdefiniować kilka zmiennych do każdego ze skryptów broni"
+"Po pierwsze musimy zdefiniować kilka zmiennych do każdego ze skryptów broni."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:83
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:192
@@ -133,13 +134,15 @@ msgstr "``AMMO_IN_MAG``: Liczba amunicji w pełni przeładowanej broni/magazynku
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:95
 msgid "Now all we need to do is add a single line of code to ``fire_weapon``."
-msgstr ""
+msgstr "Zostało jedynie dodać pojedynczą linię do kodu ``fire_weapon``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:97
 msgid ""
 "Add the following right under ``Clone.BULLET_DAMAGE = DAMAGE``: "
 "``ammo_in_weapon -= 1``"
 msgstr ""
+"Dodaj poniższy kod pod ``Clone.BULLET_DAMAGE = DAMAGE``: ``ammo_in_weapon -= "
+"1``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:99
 msgid ""
@@ -169,7 +172,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:112
 msgid "Add the following class variables to ``Weapon_Rifle.gd``:"
-msgstr ""
+msgstr "Dodaj następującą zmienną do ``Weapon_Rifle.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:120
 msgid ""
@@ -183,21 +186,24 @@ msgstr ""
 msgid ""
 "Now all that's left is the knife. Add the following to ``Weapon_Knife.gd``:"
 msgstr ""
+"Teraz został jedynie nóż. Dodaj następujący kod do ``Weapon_Knife.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:131
 msgid ""
 "And because the knife does not consume ammo, that is all we need to add."
-msgstr ""
+msgstr "Ponieważ nuż nie zużywa amunicji, to mamy już wszystko."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:135
 msgid "Now all we need to do is change a one thing in ``Player.gd``."
-msgstr ""
+msgstr "Teraz wszystko co musimy, to zmienić jedną rzecz w ``Player.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:137
 msgid ""
 "All we need to change how we're firing the weapons in ``process_input``. "
 "Change the code for firing weapons to the following:"
 msgstr ""
+"Potrzebujemy zmienić jak strzelamy broniom w ``process_input``. Zmień kod "
+"obsługujący strzelanie na taki:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:152
 msgid ""
@@ -208,7 +214,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:156
 msgid ""
 "Ideally we'd like to let the player be able to see how much ammo is left. "
-"Let's make a new function called ``process_ui``."
+"Let's make a new function called ``process_UI``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:158
@@ -272,8 +278,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:202
 msgid ""
-"``CAN_REFIL``: A boolean to track whether we can refill this weapon's spare "
-"ammo. We will not be using ``CAN_REFIL`` in this part, but we will in the "
+"``CAN_REFILL``: A boolean to track whether we can refill this weapon's spare "
+"ammo. We will not be using ``CAN_REFILL`` in this part, but we will in the "
 "next part!"
 msgstr ""
 
@@ -418,7 +424,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:357
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:408
 msgid "Let's go over what's happening here."
-msgstr "Zobaczmy co się tu satanie."
+msgstr "Zobaczmy co się tu stanie."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:359
 msgid "First we check to make sure the player is trying to reload."
@@ -460,8 +466,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:383
 msgid ""
-"This makes it where the player cannot change weapons if the player is "
-"reloading."
+"This makes it so the player cannot change weapons if the player is reloading."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:385
@@ -624,6 +629,9 @@ msgid ""
 "Make sure your sound files are **not** set to loop! If it is set to loop the "
 "sounds will continue to play infinitely and the script will not work!"
 msgstr ""
+"Upewnij się, że pliki dźwiękowe są **nie** ustawione w pętlę! Jeśli zostanie "
+"ustawiona pętla, dźwięki będą nadal odtwarzane w nieskończoność, a skrypt "
+"nie będzie działał!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:544
 msgid ""
@@ -638,6 +646,8 @@ msgid ""
 "If it is an unknown sound, we print an error message to the console and free "
 "the audio player."
 msgstr ""
+"Jeśli jest to dźwięk nieznany, wypisujemy w konsoli komunikat o błędzie i "
+"zwalniamy odtwarzacz audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:550
 msgid ""
@@ -651,6 +661,8 @@ msgid ""
 "Finally, we tell the :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` to "
 "play."
 msgstr ""
+"Na koniec trzeba włączyć odtwarzanie :ref:`AudioStreamPlayer "
+"<class_AudioStreamPlayer>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:555
 msgid ""
@@ -662,7 +674,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:559
 msgid "This system is extremely simple and has some major flaws:"
-msgstr ""
+msgstr "System ten jest niezwykle prosty i ma kilka poważnych wad:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:561
 msgid ""
@@ -694,6 +706,8 @@ msgid ""
 "With that done, let's open up ``Player.gd`` again. First we need to load the "
 "``SimpleAudioPlayer.tscn``. Place the following code in the class variables:"
 msgstr ""
+"Otwórzmy więc ponownie ``Player.gd``. Najpierw należy załadować "
+"``SimpleAudioPlayer.tscn``. Umieść następujący kod w zmiennych klasy:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:583
 msgid ""
@@ -705,7 +719,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:595
 msgid "Lets walk through what this function does:"
-msgstr ""
+msgstr "Pozwala przejść przez to, co ta funkcja robi:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:599
 msgid ""
@@ -758,10 +772,12 @@ msgid ""
 "Now all that is left is playing the sounds when we want to. Let's add sound "
 "to the pistol first!"
 msgstr ""
+"Teraz pozostaje nam tylko grać dźwięki, kiedy chcemy. Dodajmy najpierw "
+"dźwięk dla pistoletu!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:624
 msgid "Open up ``Weapon_Pistol.gd``."
-msgstr ""
+msgstr "Otwórz ``Weapon_Pistol.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:626
 msgid ""
@@ -770,9 +786,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:632
+#, fuzzy
 msgid ""
-"Now when the player fires the pistol, we'll play the ``pistol_shot`` sound."
+"Now when the player fires the pistol, we'll play the ``Pistol_shot`` sound."
 msgstr ""
+"Teraz, gdy gracz strzela z pistoletu, odtworzymy dźwięk ``pistol_shot``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:634
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:656
@@ -784,37 +802,45 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:641
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:663
-msgid "Now when the player reloads, we'll play the ``gun_cock`` sound."
-msgstr ""
+#, fuzzy
+msgid "Now when the player reloads, we'll play the ``Gun_cock`` sound."
+msgstr "Teraz, gdy gracz przeładuje, odtworzymy dźwięk ``gun_cock``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:645
 msgid "Now let's add sounds to the rifle. Open up ``Weapon_Rifle.gd``."
-msgstr ""
+msgstr "Teraz dodajmy dźwięk dla karabinu. Otwórz ``Weapon_Rifle.gd``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:648
 msgid ""
 "To play sounds when the rifle is fired, add the following to the end of the "
 "``fire_weapon`` function:"
 msgstr ""
+"Aby odtworzyć dźwięk strzelającego karabinu, dodaj poniższy kod na końcu "
+"``fire_weapon``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:654
+#, fuzzy
 msgid ""
-"Now when the player fires the rifle, we'll play the ``rifle_shot`` sound."
+"Now when the player fires the rifle, we'll play the ``Rifle_shot`` sound."
 msgstr ""
+"Teraz kiedy gracz wystrzeli z karabinu, zostanie puszczony dźwięk "
+"``rifle_shot``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:666
 msgid "Final notes"
-msgstr ""
+msgstr "Uwagi końcowe"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:670
 msgid ""
 "Now you have weapons with limited ammo that play sounds when you fire them!"
 msgstr ""
+"Teraz twoja broń z konkretną ilością amunicji, odtwarza dźwięk, kiedy z niej "
+"strzelasz!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:672
 msgid ""
-"At this point we have all of the basics of a FPS working. There's still a "
-"few things that would be nice to add, and we're going to add them in the "
+"At this point we have all of the basics of a FPS game working. There's still "
+"a few things that would be nice to add, and we're going to add them in the "
 "next three parts!"
 msgstr ""
 
@@ -827,14 +853,14 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:678
 msgid ""
-"In In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, "
+"In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, "
 "along with some health and ammo pick ups! We're also going to add joypad "
 "support, so we can play with wired Xbox 360 controllers!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:681
 msgid "If you ever get lost, be sure to read over the code again!"
-msgstr ""
+msgstr "Jeśli kiedykolwiek się zagubisz, przeczytaj kod ponownie!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:683
 msgid ""

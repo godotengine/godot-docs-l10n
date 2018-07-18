@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
-msgstr ""
+msgstr "Niestandardowe rysowanie 2D"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
 msgid "Why?"
-msgstr ""
+msgstr "Dlaczego?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:9
 msgid ""
@@ -43,7 +43,7 @@ msgstr "Ale..."
 msgid ""
 "Custom drawing manually in a node is *really* useful. Here are some examples "
 "why:"
-msgstr ""
+msgstr "Ręczne rysowanie w węźle jest przydatne. Oto kilka przykładów:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:22
 msgid ""
@@ -71,10 +71,13 @@ msgid ""
 "Making a custom UI control. There are plenty of controls available, but it's "
 "easy to run into the need to make a new, custom one."
 msgstr ""
+"Tworzenie własnego sterowania dla UI. Dostępnych jest wiele elementów "
+"sterujących, ale łatwo można natknąć się na potrzebę stworzenia nowego, "
+"niestandardowego."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:36
 msgid "OK, how?"
-msgstr ""
+msgstr "OK, ale jak?"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:38
 msgid ""
@@ -82,6 +85,9 @@ msgid ""
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
 "the _draw() function."
 msgstr ""
+"Dodaj skrypt do dowolnego węzła pochodnego:ref:`CanvasItem "
+"<class_CanvasItem>`, takiego jak :ref:`Control <class_Control>` lub :ref:"
+"`Node2D <class_Node2D>`. Następnie nadpisz funkcję _draw()."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:58
 msgid ""
@@ -91,13 +97,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
 msgid "Updating"
-msgstr ""
+msgstr "Aktualizowanie"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:64
 msgid ""
 "The _draw() function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
 msgstr ""
+"Funkcja _draw() jest wywoływana tylko raz, a następnie komendy draw są "
+"buforowane i zapamiętywane, kolejne wywołania nie są konieczne."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:67
 msgid ""
@@ -105,18 +113,27 @@ msgid ""
 "call :ref:`CanvasItem.update() <class_CanvasItem_update>` in that same node "
 "and a new _draw() call will happen."
 msgstr ""
+"Jeśli wymagane jest ponowne narysowanie, ponieważ stan lub innego się "
+"zmieniło, po prostu wywołaj :ref:`CanvasItem.update() "
+"<class_CanvasItem_update>` w tym samym węźle a nastąpi nowe wywołanie "
+"_draw()."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:71
 msgid ""
 "Here is a little more complex example. A texture variable that will be "
 "redrawn if modified:"
 msgstr ""
+"Oto nieco bardziej złożony przykład. Zmienna tekstury, która zostanie "
+"ponownie narysowana w przypadku modyfikacji:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:115
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "update() from the _process() callback, like this:"
 msgstr ""
+"W niektórych przypadkach może być konieczne narysowanie każdej ramki. W tym "
+"celu wywołaj wywołanie update() z wywołania zwrotnego _process() w ten "
+"sposób:"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:147
 msgid "An example: drawing circular arcs"
@@ -133,7 +150,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
 msgid "Arc function"
-msgstr ""
+msgstr "Funkcja arc"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:158
 msgid ""
@@ -306,7 +323,7 @@ msgstr ""
 "to tylko możliwe. Musimy \"znormalizować\" szybkość rysowania. Aby to "
 "osiągnąć musimy skorzystać z parametru \"delta\" funkcji _process(). delta\" "
 "określa czas, jaki upłynął między dwoma ostatnimi renderowanymi klatkami. "
-"Zazwyczaj jest on mały (około 0,0003 sekundy, ale zależy to od sprzętu). Tak "
+"Zazwyczaj jest on mały (około 0.0003 sekundy, ale zależy to od sprzętu). Tak "
 "więc użycie 'delty' do sterowania rysunkiem zapewnia, że Twój program będzie "
 "działał z taką samą prędkością na każdym sprzęcie."
 

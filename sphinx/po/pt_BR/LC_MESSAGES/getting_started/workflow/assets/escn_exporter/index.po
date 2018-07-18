@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,35 +18,44 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
+#, fuzzy
 msgid "Godot-Blender-Exporter"
-msgstr ""
+msgstr "Godot-Blender-Exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:5
 msgid "Details on exporting"
-msgstr ""
+msgstr "Detalhes sobre exportação"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:16
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:19
 msgid "Disabling specific objects"
-msgstr ""
+msgstr "Desativando objetos específicos"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:17
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:20
+#, fuzzy
 msgid ""
 "Sometimes you don't want some objects exported (eg high-res models used for "
 "baking). An object will not be exported if it is not rendered in the scene. "
 "This can be set in the outliner:"
 msgstr ""
+"Às vezes você não quer alguns objetos exportados (por exemplo, modelos de "
+"alta resolução usados para assar). Um objeto não será exportado se não for "
+"renderizado na cena. Isso pode ser definido no delineador:"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:26
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
 msgstr ""
+"Objetos ocultos na viewport serão exportados, mas estarão ocultos na cena "
+"Godot."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:28
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:31
+#, fuzzy
 msgid "Build Pipeline Integration"
-msgstr ""
+msgstr "Construir Integração de Pipeline"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:32
+#, fuzzy
 msgid ""
 "If you have hundreds of model files, you don't want your artists to waste "
 "time manually exporting their blend files. To combat this, the exporter "
@@ -55,3 +64,10 @@ msgid ""
 "systems. An example Makefile and python script that exports all the blends "
 "in a directory is present in the Godot-Blender-exporter repository."
 msgstr ""
+"Se você tem centenas de arquivos de modelo, não quer que seus artistas "
+"percam tempo exportando manualmente seus arquivos de mesclagem. Para "
+"combater isso, o exportador fornece uma função python `` io_scene_godot."
+"export (out_file_path) `` que pode ser chamada para exportar um arquivo. "
+"Isso permite fácil integração com outros sistemas de compilação. Um exemplo "
+"de script Makefile e python que exporta todas as misturas em um diretório "
+"está presente no repositório Godot-Blender-exportador."

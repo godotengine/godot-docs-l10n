@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:31
 msgid "``$GODOT_BASENAME``"
-msgstr ""
+msgstr "`$GODOT_BASENAME``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:31
 msgid ""
@@ -92,15 +92,15 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
 msgid "``$GODOT_DEBUG_ENABLED``"
-msgstr ""
+msgstr "``$GODOT_DEBUG_ENABLED``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
 msgid "``true`` if debugging, ``false`` otherwise"
-msgstr ""
+msgstr "``true`` jeśli debuguje, ``false`` w przeciwnym wypadku"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:36
 msgid "``$GODOT_HEAD_INCLUDE``"
-msgstr ""
+msgstr "``$GODOT_HEAD_INCLUDE``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:36
 msgid ""
@@ -148,7 +148,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:64
 msgid "``Engine.load(basePath)``"
-msgstr ""
+msgstr "`Engine.load(bazowaŚcieżka)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:66
 msgid "Loads the engine from the passed base path."
@@ -160,7 +160,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:71
 msgid "``Engine.unload()``"
-msgstr ""
+msgstr "`Engine.unload()``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:73
 msgid ""
@@ -170,7 +170,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:77
 msgid "``Engine.isWebGLAvailable(majorVersion = 1)``"
-msgstr ""
+msgstr "``Engine.isWebGLAvailable(majorVersion = 1)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:79
 msgid ""
@@ -180,7 +180,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:83
 msgid "Starting an ``Engine`` instance"
-msgstr ""
+msgstr "Startuje instancję ``Engine``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:85
 msgid ""
@@ -198,7 +198,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:98
 msgid "``engine.init(basePath)``"
-msgstr ""
+msgstr "``engine.init(bazowaŚcieżka)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:100
 msgid ""
@@ -214,7 +214,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:107
 msgid "``engine.preloadFile(file, path)``"
-msgstr ""
+msgstr "``engine.preloadFile(plik, ścieżka)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:109
 msgid ""
@@ -242,7 +242,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:123
 msgid "``engine.start(arg1, arg2, …)``"
-msgstr ""
+msgstr "``engine.start(arg1, arg2, …)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:125
 msgid ""
@@ -288,7 +288,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:150
 msgid "``engine.setUnloadAfterInit(enabled)``"
-msgstr ""
+msgstr "``engine.setUnloadAfterInit(enabled)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:152
 msgid ""
@@ -300,11 +300,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:157
 msgid "Defaults to ``true``."
-msgstr ""
+msgstr "Wartość domyślna to '' true''."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:160
 msgid "``engine.setCanvas(canvasElem)``"
-msgstr ""
+msgstr "``engine.setCanvas(canvasElem)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:162
 msgid ""
@@ -314,7 +314,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:166
 msgid "``engine.setCanvasResizedOnStart(enabled)``"
-msgstr ""
+msgstr "``engine.setCanvasResizedOnStart(enabled)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:168
 msgid ""
@@ -324,7 +324,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:172
 msgid "``engine.setLocale(locale)``"
-msgstr ""
+msgstr "``engine.setLocale(locale)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:174
 msgid ""
@@ -336,7 +336,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:181
 msgid "``engine.setExecutableName(execName)``"
-msgstr ""
+msgstr "``engine.setExecutableName(execName)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:183
 msgid ""
@@ -354,7 +354,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:192
 msgid "``engine.setProgressFunc(func)``"
-msgstr ""
+msgstr "``engine.setProgressFunc(func)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:194
 msgid ""

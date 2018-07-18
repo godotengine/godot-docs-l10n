@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1644,15 +1644,19 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this:"
 msgstr ""
+"A diferencia de la llamada de una función normal como en el ejemplo anterior "
+"con `` .some_func``, si el constructor de la clase heredada toma argumentos, "
+"se pasan así:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid "This is better explained through examples. Say we have this scenario:"
 msgstr ""
+"Esto se explica mejor a través de ejemplos. Digamos que tenemos este "
+"escenario:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Hay algunas cosas a tener en cuenta:"
+msgstr "Hay algunas cosas a tener en cuenta aquí:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
 msgid ""
@@ -1661,18 +1665,26 @@ msgid ""
 "*has* to define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``"
 msgstr ""
+"si la clase heredada (`` State.gd``) define un constructor `` _init`` que "
+"toma argumentos (`` e`` en este caso), entonces la clase heredada (`` Idle."
+"gd``) * tiene * para definir `` _init`` también y pasar parámetros "
+"apropiados a `` _init`` de `` State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
+"`` Idle.gd`` puede tener un número diferente de argumentos que la clase base "
+"`` State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
 msgid ""
 "in the example above ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
 msgstr ""
+"en el ejemplo anterior, `` e`` pasado al constructor `` State.gd`` es el "
+"mismo `` e`` pasado a `` Idle.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:987
 msgid ""
@@ -1681,18 +1693,22 @@ msgid ""
 "Which brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. Eg.:"
 msgstr ""
+"si el constructor `` Idle.gd`` `` _init`` toma 0 argumentos, aún necesita "
+"pasar algún valor a la clase base `` State.gd`` aunque no haga nada. Lo que "
+"nos lleva al hecho de que también se pueden pasar literales en el "
+"constructor base, no solo variables. Ejemplo.:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
 msgid "# Idle.gd"
-msgstr ""
+msgstr "# Idle.gd"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "func _init().(5):"
-msgstr ""
+msgstr "func _init().(5):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "Inner classes"

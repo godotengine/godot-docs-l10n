@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
-#, fuzzy
 msgid "Custom Godot servers"
-msgstr "Servidores de Godot personalizados"
+msgstr "Servidores Godot personalizados"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 msgid "Introduction"
@@ -77,9 +76,8 @@ msgid "Adding support for a new input device."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
-#, fuzzy
 msgid "Adding writing threads."
-msgstr "Añadir granadas"
+msgstr "Añadiendo hilos de escritura."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:34
 msgid "Adding a custom VoIP protocol."
@@ -90,9 +88,8 @@ msgid "And more..."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:38
-#, fuzzy
 msgid "Creating a Godot server"
-msgstr "Creando un Servidor Godot"
+msgstr "Creando un servidor Godot"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:40
 msgid ""
@@ -122,9 +119,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:320
-#, fuzzy
 msgid "Registering the class in GDScript"
-msgstr "Registrando una clase en GDScript"
+msgstr "Registrar una clase en GDScript"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:322
 msgid ""
@@ -134,17 +130,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:326
-#, fuzzy
 msgid ""
 "Since a Godot server class creates an instance and binds it to a static "
 "singleton, binding the class might not reference the correct instance. "
 "Therefore, a dummy class must be created to reference the proper Godot "
 "server."
 msgstr ""
-"Ya que la clase Godot Server crea una instancia y la enlaza a un singleton "
-"estático, enlazar la clase podría no hacer referencia a la instancia "
-"correcta. Por lo tanto, se debe crear una clase dummy para hacer referencia "
-"al Servidor Godot apropiado."
+"Ya que una clase de servidor Godot crea una instancia y la enlaza a un "
+"singleton estático, enlazar la clase podría no hacer referencia a la "
+"instancia correcta. Por lo tanto, se debe crear una clase dummy para hacer "
+"referencia al servidor Godot apropiado."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:330
 msgid ""
@@ -163,13 +158,12 @@ msgid "Bind methods"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:377
-#, fuzzy
 msgid ""
 "The dummy class binds singleton methods to GDScript. In most cases, the "
 "dummy class methods wraps around."
 msgstr ""
-"La clase dummy une métodos singleton a gdscript. En la mayoría de los casos, "
-"los métodos de la clase dummy se usan."
+"La clase dummy une los métodos singleton a GDScript. En la mayoría de los "
+"casos, los métodos de la clase dummy se utilizan."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:385
 msgid "Binding Signals"
@@ -210,9 +204,8 @@ msgid "Summing it up"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:478
-#, fuzzy
 msgid "Here is the GDScript sample code:"
-msgstr "Aquí está el código de ejemplo de GDScript"
+msgstr "Aquí está el código de ejemplo de GDScript:"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:502
 msgid "Notes"

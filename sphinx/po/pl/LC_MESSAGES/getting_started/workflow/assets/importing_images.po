@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Importowanie obrazów"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
 msgid "Why importing them?"
-msgstr "Dlaczego imortować je?"
+msgstr "Dlaczego importować je?"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
 msgid ""
@@ -73,8 +73,8 @@ msgid ""
 "depending on the use case."
 msgstr ""
 "Obrazy są jednym z największych zasobów gry. Aby je efektywnie obsługiwać, "
-"należy je skompresować. Godot oferuje kilka metod kompresji, w zależności "
-"od  zastosowań."
+"należy je skompresować. Godot oferuje kilka metod kompresji, w zależności od "
+"zastosowań."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:34
 msgid "Compress Mode"
@@ -97,6 +97,9 @@ msgid ""
 "decent. It will use considerably more amount of video memory than VRAM, "
 "though."
 msgstr ""
+"Bezstratna kompresja: Jest to najpowszechniejsza kompresja dla zasobów 2D. "
+"Pokazuje zasoby bez artefaktów i zajmuje niewiele miejsca na dysku. Będzie "
+"jednak zużywać znacznie więcej pamięci VRAM."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:40
 msgid ""
@@ -158,7 +161,7 @@ msgstr "Przechowywane jako WebP"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:50
 msgid "Stored as S3TC/BC,PVRTC/ETC, depending on platform"
-msgstr "Przechowywane jako S3TC/BC,PVRTC/ETC, w zależności od platformy"
+msgstr "Przechowywane jako S3TC/BC, PVRTC/ETC, w zależności od platformy"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:52
 msgid "Size on Disk"
@@ -327,6 +330,8 @@ msgid ""
 "Keep in mind the above when making phone games and applications, want to aim "
 "for full compatibility, and need mipmaps."
 msgstr ""
+"Pamiętaj, że gdy podczas tworzenia gier i aplikacji na telefony, zechcesz "
+"dążyć do pełnej zgodności to będziesz potrzebował mipmap."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
 msgid ""
@@ -366,8 +371,9 @@ msgid "Process"
 msgstr "Przetwarzaj"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:129
+#, fuzzy
 msgid ""
-"Some special processes can be applied to images when importe as texture."
+"Some special processes can be applied to images when imported as textures."
 msgstr ""
 "Pewne procesy mogą zostać zastosowane do obrazów zaimportowanych jako "
 "tekstura."
@@ -429,3 +435,8 @@ msgid ""
 "enabled and compression is changed to VRAM). Texture is also reimported "
 "automatically."
 msgstr ""
+"Ta opcja sprawia, że Godot wie, kiedy tekstura (domyślnie importowana dla "
+"2D) jest używana w 3D. W takim przypadku ustawienia są zmieniane tak, aby "
+"flagi tekstury były bardziej przyjazne dla 3D (mipmapy, filtry i jej "
+"powtarzanie, stają się włączone, a kompresja jest zamieniana na VRAM). "
+"Tekstura jest również ponownie importowana."

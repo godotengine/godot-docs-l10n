@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:17
 msgid "Let's get started!"
-msgstr "Zatem zaczynajmy"
+msgstr "Zatem zaczynajmy!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:20
 msgid "Adding grenades"
@@ -101,18 +101,23 @@ msgstr ""
 msgid ""
 "``GRENADE_DAMAGE``: The amount of damage the grenade causes when it explodes."
 msgstr ""
+"``GRENADE_DAMAGE``: Ilość obrażeń, które zadaje granat podczas eksplozji."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:94
 msgid ""
 "``GRENADE_TIME``: The amount of time the grenade takes (in seconds) to "
 "explode once it's created/thrown."
 msgstr ""
+"``GRENADE_TIME``: Czas(w sekundach), po jakim czasie granat eksploduje po "
+"jego stworzeniu/rzuceniu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:95
 msgid ""
 "``grenade_timer``: A variable for tracking how long the grenade has been "
 "created/thrown."
 msgstr ""
+"``grenade_timer``: Zmienna do śledzenia, kiedy granat został stworzony/"
+"rzucony."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:96
 msgid ""
@@ -125,18 +130,23 @@ msgid ""
 "``explosion_wait_timer``: A variable for tracking how much time has passed "
 "since the grenade exploded."
 msgstr ""
+"``explosion_wait_timer``: Zmienna do śledzenia ile czasu upłynęło od wybuchu "
+"granatu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:98
 msgid ""
 "``rigid_shape``: The :ref:`CollisionShape <class_CollisionShape>` for the "
 "grenade's :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
+"``rigid_shape``: :ref:`CollisionShape <class_CollisionShape>` dla granatu :"
+"ref:`RigidBody <class_RigidBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:99
 msgid ""
 "``grenade_mesh``: The :ref:`MeshInstance <class_MeshInstance>` for the "
 "grenade."
 msgstr ""
+"``grenade_mesh``: :ref:`MeshInstance <class_MeshInstance>` dla granatu."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:100
 msgid ""
@@ -149,6 +159,8 @@ msgid ""
 "``explosion_particles``: The :ref:`Particles <class_Particles>` that play "
 "when the grenade explodes."
 msgstr ""
+"``explosion_particles``: Cząsteczki :ref:`Particles "
+"<class_Particles>`tworzące się gdy granat eksploduje."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:103
 msgid ""
@@ -162,7 +174,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:109
 msgid "Now let's turn our attention to ``_ready``."
-msgstr ""
+msgstr "Teraz zwróćmy uwagę na ``_ready``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:111
 #, fuzzy
@@ -199,7 +211,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:124
 msgid "Now let's look at ``_process``."
-msgstr ""
+msgstr "Spójrzmy teraz na ``_process``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:126
 msgid ""
@@ -247,6 +259,9 @@ msgid ""
 "``EXPLOSION_WAIT_TIME``. If it is, we add ``delta`` to "
 "``explosion_wait_time``."
 msgstr ""
+"Następnie sprawdzamy, czy ``explosion_wait_timer`` jest mniejszy niż "
+"``EXPLOSION_WAIT_TIME``. Jeśli tak, to dodajemy ``delta`` do "
+"``explosion_wait_time``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:143
 msgid ""
@@ -262,7 +277,7 @@ msgstr ""
 msgid ""
 "Let's quickly get the sticky grenade set up too. Open up ``Sticky_Grenade."
 "tscn``."
-msgstr ""
+msgstr "Ustawmy również granat przylepny. Otwórz ``Sticky_Grenade.tscn``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:151
 msgid ""
@@ -277,16 +292,20 @@ msgid ""
 "Select ``Sticky_Grenade`` and make a new script called ``Sticky_Grenade."
 "gd``. Add the following:"
 msgstr ""
+"Wybierz granat ``Sticky_Grenade`` i stwórz nowy skrypt ``Sticky_Grenade."
+"gd``. Dodaj ten kod:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:245
 msgid ""
 "The code above is almost identical to the code for ``Grenade.gd``, so let's "
 "just go over what's changed."
 msgstr ""
+"Powyższy kod jest prawie identyczny z kodem ``Grenade.gd``, więc po prostu "
+"przejdźmy do tego, co się zmieniło."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:247
 msgid "First, we have a few more class variables:"
-msgstr ""
+msgstr "Po pierwsze, mamy jeszcze kilka innych zmiennych klasy:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:249
 msgid ""
@@ -303,7 +322,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:251
 msgid ""
 "``player_body``: The player's :ref:`KinematicBody <class_KinematicBody>`."
-msgstr ""
+msgstr "``player_body``: Gracza :ref:`KinematicBody <class_KinematicBody>`."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:253
 msgid ""
@@ -322,7 +341,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:263
 msgid "Next let's take a look at ``collided_with_body``."
-msgstr ""
+msgstr "Następnie przyjrzyjmy się ``collided_with_body``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:265
 msgid ""
@@ -346,6 +365,8 @@ msgstr ""
 msgid ""
 "Next we check if the sticky grenade has attached to something already or not."
 msgstr ""
+"Następnie sprawdzamy, czy granat przylepny już się do czegoś przyczepił, czy "
+"też nie."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:275
 msgid ""
@@ -382,13 +403,14 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:288
 msgid "Finally, lets go over the few changes in ``_process``."
-msgstr ""
+msgstr "Na koniec wykonajmy kilka zmian w ``_process``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:290
 msgid ""
 "Now we're checking to see if the sticky grenade is attached right at the top "
 "of ``_process``."
 msgstr ""
+"Teraz sprawdzamy, czy granat przylepny jest dołączony na górze ``_process``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:292
 msgid ""
@@ -409,12 +431,12 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:300
 msgid "Adding grenades to the player"
-msgstr ""
+msgstr "Dodawanie granatów do gracza"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:302
 msgid ""
 "Now we need to add some code to ``Player.gd`` so we can use the grenades."
-msgstr ""
+msgstr "Teraz musimy dodać kod do ``player.gd``, abyśmy mogli używać granatów."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:304
 msgid ""
@@ -435,32 +457,38 @@ msgid ""
 "Okay, now let's start making the grenades work with the player. Add the "
 "following class variables to ``Player.gd``:"
 msgstr ""
+"No cóż, zaczniemy teraz zmuszać granaty do współpracy z graczem. Dodaj "
+"następujące zmienne klasy do ``Player.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:320
 msgid ""
 "``grenade_amounts``: The amount of grenades the player is currently carrying "
 "(for each type of grenade)."
 msgstr ""
+"``grenade_amounts``: Ilość granatów, które gracz aktualnie nosi (dla każdego "
+"rodzaju granatu)."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:321
 msgid ""
 "``current_grenade``: The name of the grenade the player is currently using."
-msgstr ""
+msgstr "``current_grenade``: Nazwa granatu, który gracz aktaulnie używa."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:322
 msgid "``grenade_scene``: The grenade scene we worked on earlier."
-msgstr ""
+msgstr "``grenade_scene``: Scena granatu, nad którym wcześniej pracowaliśmy."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:323
 msgid ""
 "``sticky_grenade_scene``: The sticky grenade scene we worked on earlier."
 msgstr ""
+"``sticky_grenade_scene``: Scena granatu przylepnego, nad którym wcześniej "
+"pracowaliśmy."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:324
 msgid ""
 "``GRENADE_THROW_FORCE``: The force at which the player will throw the "
 "grenades at."
-msgstr ""
+msgstr "``GRENADE_THROW_FORCE``: Siła z jaką gracz rzuca granat."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:326
 msgid "Most of these variables are similar to how we have out weapons set up."
@@ -478,11 +506,11 @@ msgstr ""
 msgid ""
 "Now we need to add some code in ``_process_input`` Add the following to "
 "``_process_input``:"
-msgstr ""
+msgstr "Teraz musimy dodać następujący kod do ``_process_input``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:363
 msgid "Let's go over what's happening here."
-msgstr "Zobaczmy co się tu satanie."
+msgstr "Zobaczmy co się tu stanie."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:365
 msgid ""
@@ -536,7 +564,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:400
 msgid "Now we'll show how many grenades the player has left in the UI."
-msgstr ""
+msgstr "Teraz możemy zobaczyć ile granatów zostało graczowi w UI."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:402
 msgid ""
@@ -1043,16 +1071,20 @@ msgid ""
 "Finally, we set the turret's health to ``MAX_TURRET_HEALTH`` so it starts at "
 "full health."
 msgstr ""
+"Ostatecznie ustawiliśmy zdrowie wieżyczki na ``MAX_TURRET_HEALTH`` tak aby "
+"zaczynała w pełni zdrowa."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:829
 msgid "Now let's go through ``_physics_process``."
-msgstr ""
+msgstr "Przejdźmy teraz przez proces ``_physics_process``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:831
 msgid ""
 "First we check to see if the turret is active. If the turret is active we "
 "want to process the firing code."
 msgstr ""
+"Najpierw sprawdzamy, czy wieżyczka jest aktywna. Jeśli wieżyczka jest "
+"aktywna, to chcemy przetworzyć kod strzelania."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:833
 msgid ""
@@ -1276,7 +1308,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:952
 msgid "Final notes"
-msgstr ""
+msgstr "Uwagi końcowe"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:956
 msgid ""
@@ -1293,7 +1325,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:961
 msgid "If you ever get lost, be sure to read over the code again!"
-msgstr ""
+msgstr "Jeśli kiedykolwiek się zagubisz, przeczytaj kod ponownie!"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:963
 msgid ""

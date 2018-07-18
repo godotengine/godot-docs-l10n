@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
-msgstr ""
+msgstr "Kontrola UI gry za pomocą kodu"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 msgid "Intro"
@@ -30,12 +30,16 @@ msgid ""
 "In this tutorial you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
+"W tym poradniku, połączymy postać z paskiem życia i zanimujemy utratę "
+"zdrowia."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
 "Here's what you'll create: the bar and the counter animate when the "
 "character takes a hit. They fade when it dies."
 msgstr ""
+"Oto co storzysz: pasek i licznik zmieniające się gdy postać otrzyma "
+"trafienie. Zanikają po jego śmierci."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:18
 msgid "You will learn:"
@@ -58,6 +62,8 @@ msgid ""
 "If you want to learn how to set up the interface instead, check out the step-"
 "by-step UI tutorials:"
 msgstr ""
+"Jeśli chcesz się nauczyć jak prawidłowo ustawić interfejs, sprawdź nasz "
+"poradnik - UI krok po kroku:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid "Create a main menu screen"
@@ -88,7 +94,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
 msgid "To do this, we will use **signals**."
-msgstr ""
+msgstr "Do zrobienia tego, użyjemy **sygnałów**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
 msgid ""
@@ -135,7 +141,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
-msgstr ""
+msgstr "Scena posiada tło ze spritu, GUI i dwie postacie."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
@@ -167,6 +173,8 @@ msgid ""
 "The project uses a simple organisation that works for game jams and tiny "
 "games."
 msgstr ""
+"Projekt wykorzystuje prostą organizację, która działa dla niewielkich gier "
+"tworzonych na np. \"game jam\"."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -184,14 +192,17 @@ msgid ""
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
 "themselves."
 msgstr ""
+"Kliknij ikonę edycji sceny po prawej stronie węzła w drzewie scen, aby "
+"otworzyć scenę w edytorze. Zobaczysz, że LifeBar i EnergyBar są podscenami."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
 msgid "The scene tree, with the Player scene set to display its children"
-msgstr ""
+msgstr "Drzewo sceny, z ustawioną sceną Player do wyświetlania swoich dzieci"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
 msgstr ""
+"Połącz maksymalną długość paska życia z właściwością gracza max\\_health"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
 msgid ""
@@ -201,6 +212,11 @@ msgid ""
 "player's health to the GUI every time they take damage. The GUI will then "
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
+"Musimy jakoś powiedzieć GUI, jaki jest aktualny stan zdrowia gracza, by "
+"zaktualizować teksturę paska życia i wyświetlić pozostały stan zdrowia w "
+"liczniku HP w lewym górnym rogu ekranu. W tym celu wysyłamy informację o "
+"stanie zdrowia zawodnika do GUI za każdym razem, gdy otrzymuje on obrażenia. "
+"Następnie GUI uaktualni węzły ``Lifebar`` i ``Number`` o tę wartość."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
 msgid ""
@@ -209,6 +225,10 @@ msgid ""
 "step is thus to tell the ``GUI`` what the green character's ``max_health`` "
 "is."
 msgstr ""
+"Moglibyśmy zatrzymać się tutaj, aby wyświetlić liczbę, ale musimy "
+"zainicjalizować pasek ``max_value`` aby działał we właściwych proporcjach. "
+"Pierwszym krokiem jest więc poinformowanie ``GUI`` o tym, czym jest "
+"``max_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:139
 msgid ""
@@ -240,6 +260,9 @@ msgid ""
 "the two lines into one, but we'll need to use ``player_max_health`` again "
 "later in the tutorial."
 msgstr ""
+"W drugim wierszu wartość tę przypisuje się do ``bar.max_value``. Możesz "
+"połączyć te dwie linie w jedną, ale będziemy musieli użyć "
+"``player_max_health`` ponownie później w samouczku."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
 msgid ""
@@ -247,6 +270,9 @@ msgid ""
 "game, so we could work with this. Why do we still use ``max_health``? There "
 "are two reasons:"
 msgstr ""
+"``Player.gd`` ustawia ``health`` na `max_health``na początku gry, abyśmy "
+"mogli pracować z nim. Dlaczego nadal używamy ``max_health``? Istnieją dwa "
+"powody:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
 msgid ""
@@ -254,6 +280,9 @@ msgid ""
 "``max_health``: a future version of the game may load a level where the "
 "player already lost some health."
 msgstr ""
+"Nie mamy gwarancji, że ``health`` zawsze będzie równe ``max_health``: "
+"przyszła wersja gry może załadować poziom, na którym gracz już stracił "
+"zdrowie."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
 msgid ""
@@ -275,6 +304,8 @@ msgid ""
 "Our GUI is ready to receive the ``health`` value updates from the "
 "``Player``. To achieve this we're going to use **signals**."
 msgstr ""
+"Nasz GUI jest gotowy do otrzymywać aktualizacji wartości ``health`` od "
+"gracza. W tym celu będziemy używać **sygnałów**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:195
 msgid ""
@@ -283,6 +314,11 @@ msgid ""
 "can also create your own using the `signal` keyword. On the `Player` node, "
 "you'll find two signals we created for you: `died` and `health_changed`."
 msgstr ""
+"Istnieje wiele użytecznych wbudowanych sygnałów, takich jak `enter_tree` i "
+"`exit_tree`, które emitują wszystkie węzły, gdy są odpowiednio tworzone i "
+"niszczone. Można również utworzyć własne za pomocą słowa kluczowego "
+"`signal`. W węźle `Player` znajdziesz dwa sygnały, które stworzyliśmy dla "
+"ciebie: `died` i `health_changed`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
 msgid ""
@@ -325,24 +361,32 @@ msgid ""
 "and click on the Node tab. This is the place to connect nodes to listen the "
 "one you selected."
 msgstr ""
+"Mając to na uwadze, podłączmy ``GUI`` do ``Player``. Kliknij na węzeł "
+"``Player``, aby go wybrać. Przejdź do Inspektora i kliknij zakładkę Węzeł. "
+"Jest to miejsce do łączenia węzłów w celu nasłuchiwania informacji od "
+"wybranego węzła."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
 msgid "The first section lists custom signals defined in ``Player.gd``:"
 msgstr ""
+"Pierwsza sekcja zawiera listę niestandardowych sygnałów zdefiniowanych w "
+"``Player.gd``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
 msgid ""
 "``died`` is emitted when the character died. We will use it in a moment to "
 "hide the UI."
 msgstr ""
+"``died`` emitowany jest po śmierci postaci. Za chwilę wykorzystamy go do "
+"ukrycia UI."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:228
 msgid "``health_changed`` is emitted when the character got hit."
-msgstr ""
+msgstr "``health_changed`` jest emitowany po trafieniu postaci."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:232
 msgid "We're connecting to the health\\_changed signal"
-msgstr ""
+msgstr "Łączymy się z sygnałem health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
 msgid ""
@@ -357,13 +401,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
 msgid "The Connect Signal window with the GUI node selected"
-msgstr ""
+msgstr "Okno Łączenia sygnału z wybranym węzłem GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
 msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
 msgstr ""
+"Opcjonalnie można połączyć węzły wprost z kodu. Jednak to, co robi edytor, "
+"ma dwie zalety:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
 msgid "Godot can write new callback functions for you in the connected script"
@@ -394,6 +440,10 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
+"Po połączeniu węzłów z edytora, Godot generuje nazwę metody z następującym "
+"wzorem: ``_on_NazwaEmitera_Nazwa_Sygnału``. Jeśli metoda została już "
+"zapisana, opcja \"Utwórz funkcję\" zostanie zachowana. Możesz zastąpić tę "
+"nazwę wszystkim, czymkolwiek zechcesz."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
 msgid "Godot writes the callback method for you and takes you to it"
@@ -419,24 +469,32 @@ msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
+"W Player.gd, gdy Gracz emituje sygnał health\\_changed, przesyła również "
+"swoją wartość zdrowia"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
 msgid ""
 "Inside ``_on_Player_health_changed`` let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
+"Wewnątrz ``_on_Player_health_changed`` wywołajmy drugą funkcję zwaną "
+"``update_health`` i przekażmy jej, zmienną ``player_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:307
 msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
+"Możemy bezpośrednio aktualizować wartość zdrowia dla `LifeBar` i `Number`. "
+"Istnieją dwa powody, dla których należy stosować tę metodę:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
 "The name makes it clear for our future selves and teammates that when the "
 "player took damage, we update the health count on the GUI"
 msgstr ""
+"Nazwa pokazuje jasno dla nas samych i dla wpspółpracowników, że kiedy gracz "
+"doznał obrażeń, aktualizujemy stan zdrowia licznika w GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
 msgid "We will reuse this method a bit later"
@@ -447,10 +505,12 @@ msgid ""
 "Create a new ``update_health`` method below ``_on_Player_health_changed``. "
 "It takes a new\\_value as its only argument:"
 msgstr ""
+"Utworzyć nową metodę ``update_health`` poniżej "
+"``_on_Player_health_changed`` . Pobiera tylko new\\_value jako argument:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:327
 msgid "This method needs to:"
-msgstr ""
+msgstr "Ta funkcja musi:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:329
 msgid ""
@@ -459,7 +519,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:331
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
-msgstr ""
+msgstr "ustaw ``TextureProgress`` ``value``(wartość) na ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
 msgid ""
@@ -475,12 +535,18 @@ msgid ""
 "of the game. Press F5 to test the game: the life bar updates with every "
 "attack!"
 msgstr ""
+"Wywołaj również ``update_health`` na końcu funkcji ``_ready`` do "
+"inicjalizacji tekstu węzła ``Number``, właściwą wartością na początku gry. "
+"Naciśnij F5, aby przetestować grę: pasek życia jest aktualizowany przy "
+"każdym ataku!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
 msgstr ""
+"Zarówno węzeł Number, jak i TextureProgress aktualizują się, gdy gracz "
+"zostanie trafiony"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:365
 msgid "Animate the loss of life with the Tween node"

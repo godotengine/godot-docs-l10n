@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,11 +51,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:27
-msgid "Rendering 3d objects within a 2d game"
+msgid "Rendering 3D objects within a 2D game"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:28
-msgid "Rendering 2d elements in a 3d game"
+msgid "Rendering 2D elements in a 3D game"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:29
@@ -87,7 +87,7 @@ msgid ""
 "properly adjusted and scaled input events to all their children nodes. "
 "Typically input is received by the nearest :ref:`Viewport <class_Viewport>` "
 "in the tree, but you can set :ref:`Viewports <class_Viewport>` to not "
-"recieve input by checking 'Disable Input' to 'on', this will allow the next "
+"receive input by checking 'Disable Input' to 'on', this will allow the next "
 "nearest :ref:`Viewport <class_Viewport>` in the tree to capture the input."
 msgstr ""
 
@@ -128,10 +128,10 @@ msgid ""
 "CameraA will display on the Root :ref:`Viewport <class_Viewport>` and it "
 "will draw MeshA. CameraB will be captured by the :ref:`Viewport "
 "<class_Viewport>` Node along with MeshB. Even though MeshB is in the scene "
-"heirarchy, it will still not be drawn to the Root :ref:`Viewport "
+"hierarchy, it will still not be drawn to the Root :ref:`Viewport "
 "<class_Viewport>`. Similarly MeshA will not be visible from the :ref:"
-"`Viewport <class_Viewport>` node becuase :ref:`Viewport <class_Viewport>` "
-"nodes only capture nodes below them in the heirarchy."
+"`Viewport <class_Viewport>` node because :ref:`Viewport <class_Viewport>` "
+"nodes only capture nodes below them in the hierarchy."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:75
@@ -188,7 +188,7 @@ msgid ""
 "with the parent :ref:`Viewport's <class_Viewport>` :ref:`World "
 "<class_World>`. This is especially useful in scenarios where, for example, "
 "you might want to show a separate character in 3D imposed over the game "
-"(like in Starcraft)."
+"(like in StarCraft)."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:116
@@ -255,7 +255,7 @@ msgid ""
 "display anything it has inside. The layout looks like this:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:170
+#: ../../docs/tutorials/viewports/viewports.rst:169
 msgid ""
 "The :ref:`Viewport <class_Viewport>` will cover the area of its parent :ref:"
 "`ViewportContainer <class_viewportcontainer>` completely if stretch is set "
@@ -264,11 +264,11 @@ msgid ""
 "smaller than the size of the :ref:`Viewport <class_Viewport>`."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:175
+#: ../../docs/tutorials/viewports/viewports.rst:174
 msgid "Rendering"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:177
+#: ../../docs/tutorials/viewports/viewports.rst:176
 msgid ""
 "Due to the fact that the :ref:`Viewport <class_Viewport>` is an entryway "
 "into another rendering surface, it exposes a few rendering properties that "
@@ -279,7 +279,7 @@ msgid ""
 "want to store values in the texture that are outside the range 0.0 - 1.0."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:183
+#: ../../docs/tutorials/viewports/viewports.rst:181
 msgid ""
 "If you know how the :ref:`Viewport <class_Viewport>` is going to be used, "
 "you can set its Usage to either 3D or 2D. Godot will then restrict how the :"
@@ -287,7 +287,7 @@ msgid ""
 "default is 3D."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:186
+#: ../../docs/tutorials/viewports/viewports.rst:184
 msgid ""
 "Godot also provides a way of customizing how everything is drawn inside :ref:"
 "`Viewports <class_Viewport>` using “Debug Draw”. Debug Draw allows you to "
@@ -295,43 +295,43 @@ msgid ""
 "will display things drawn inside it. Debug Draw is disabled by default."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:192
+#: ../../docs/tutorials/viewports/viewports.rst:190
 msgid "*A scene drawn with Debug Draw disabled*"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:194
+#: ../../docs/tutorials/viewports/viewports.rst:192
 msgid ""
 "The other three options are Unshaded, Overdraw, and Wireframe. Unshaded "
 "draws the scene without using lighting information so all the objects appear "
 "flatly colored the color of their albedo."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:200
+#: ../../docs/tutorials/viewports/viewports.rst:198
 msgid "*The same scene with Debug Draw set to Unshaded*"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:202
+#: ../../docs/tutorials/viewports/viewports.rst:200
 msgid ""
 "Overdraw draws the meshes semi-transparent with an additive blend so you can "
 "see how the meshes overlap."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:206
+#: ../../docs/tutorials/viewports/viewports.rst:204
 msgid "*The same scene with Debug Draw set to Overdraw*"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:208
+#: ../../docs/tutorials/viewports/viewports.rst:206
 msgid ""
 "Lastly, Wireframe draws the scene using only the edges of triangles in the "
-"meshes. NOTE: as of the writting of this (v3.0.2) wireframe is broken and "
-"currently just renders the scene normally."
+"meshes. NOTE: As of this writing (v3.0.2), wireframe mode is not functional "
+"and currently renders the scene normally."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:212
+#: ../../docs/tutorials/viewports/viewports.rst:210
 msgid "Render target"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:214
+#: ../../docs/tutorials/viewports/viewports.rst:212
 msgid ""
 "When rendering to a :ref:`Viewport <class_Viewport>` whatever is inside will "
 "not be visible in the scene editor. To display the contents, you have to "
@@ -340,17 +340,17 @@ msgid ""
 "(for example):"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:224
+#: ../../docs/tutorials/viewports/viewports.rst:222
 msgid ""
 "Or it can be assigned in the editor by selecting \"New ViewportTexture\""
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:228
+#: ../../docs/tutorials/viewports/viewports.rst:226
 msgid ""
 "and then selecting the :ref:`Viewport <class_Viewport>` you want to use."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:232
+#: ../../docs/tutorials/viewports/viewports.rst:230
 msgid ""
 "Every frame the :ref:`Viewport <class_Viewport>`'s texture is cleared away "
 "with the default clear color (or a transparent color if Transparent BG is "
@@ -360,7 +360,7 @@ msgid ""
 "itself to Never."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:237
+#: ../../docs/tutorials/viewports/viewports.rst:235
 msgid ""
 "By default, re-rendering of the :ref:`Viewport <class_Viewport>` happens "
 "when the :ref:`Viewport <class_Viewport>`'s :ref:`ViewportTexture "
@@ -371,7 +371,7 @@ msgid ""
 "without incurring the cost of rendering every frame."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/viewports.rst:245
+#: ../../docs/tutorials/viewports/viewports.rst:243
 msgid ""
 "Make sure to check the Viewport demos! Viewport folder in the demos archive "
 "available to download, or https://github.com/godotengine/godot-demo-projects/"

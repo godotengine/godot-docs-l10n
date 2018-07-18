@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr ""
+msgstr "Tworzenie GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
 msgid ""
@@ -28,6 +28,11 @@ msgid ""
 "and bomb and rupee counters. By the end of this tutorial, you'll have a game "
 "GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
+"Teraz, gdy już zapoznałeś się z podstawami, zobaczymy jak zbudować interfejs "
+"użytkownika gry (GUI) z elementami interfejsu użytkownika możliwymi do "
+"wielokrotnego użytku: paskiem życia, paskiem energii oraz licznikami bomby i "
+"rupii. Pod koniec tego samouczka, będziesz miał GUI gry, gotowe do kontroli "
+"za pomocą GDscript lub VisualScript:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
@@ -36,7 +41,7 @@ msgstr "Końcowy wynik"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:15
 msgid "You'll also learn to:"
-msgstr "Nauczysz się również"
+msgstr "Nauczysz się również:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
 msgid "Create flexible UI components"
@@ -56,12 +61,18 @@ msgid ""
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
 "Godot to follow this tutorial. The `end/` folder contains the final result."
 msgstr ""
+"Pobierz pliki projektu: :download:`ui_gui_design.zip <files/ui_gui_design."
+"zip>` i rozpakuj archiwum. Zaimportuj projekt `start/` w Godot, zawierającym "
+"pliki potrzebne do tego samouczka. Folder `end/` zawiera projekt po "
+"wykonaniu kroków z tego samouczka."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
 msgid ""
 "You can watch this tutorial as a `video on Youtube <https://www.youtube.com/"
 "watch?v=y1E_y9AIqow>`_."
 msgstr ""
+"Możesz obejrzeć ten poradnik w formie wideo na `Youtube <https://www.youtube."
+"com/watch?v=y1E_y9AIqow>`_."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
 msgid "Breaking down the UI"
@@ -85,7 +96,7 @@ msgstr "Pasek życia i energii"
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
 msgid "The bomb and rupee counters on the right"
-msgstr ""
+msgstr "Liczniki bomby i rupii znajdują się po prawej stronie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -106,6 +117,12 @@ msgid ""
 "``HBoxContainer`` in the right column to place the bomb and rupee counters "
 "side-by-side."
 msgstr ""
+"Ułatwia to zagnieżdżanie kontenerów: mamy pewne marginesy wokół granicy "
+"ekranu, ustawione za pomocą ``MarginContainer``, a następnie "
+"``HBoxContainer``do zarządzania naszymi dwoma kolumnami. Dwa paski ułożone "
+"jeden nad drugim wewnątrz ``VBoxContainer``. I będziemy potrzebować "
+"ostatniego ``HBoxContainer`` w prawej kolumnie, aby umieścić bomby i ruple "
+"obok siebie."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -117,10 +134,14 @@ msgid ""
 "gives us the main GUI scene's structure. With this plan in place, we can "
 "jump into Godot and create our GUI."
 msgstr ""
+"Będziemy potrzebować dodatkowych kontenerów wewnątrz poszczególnych "
+"komponentów interfejsu użytkownika, daje to nam główną strukturę sceny "
+"interfejsu użytkownika. Za pomocą tego planu możemy stworzyć w Godocie nasze "
+"GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
 msgid "Create the base GUI"
-msgstr ""
+msgstr "Tworzenie podstawowego GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
 msgid ""
@@ -134,7 +155,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
 msgid "For now, let's start with a few containers."
-msgstr ""
+msgstr "Na tą chwilę, zacznijmy z kilkoma kontenerami."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
 msgid ""
@@ -142,6 +163,9 @@ msgid ""
 "it ``GUI``. Then save the scene as ``GUI.tscn``. It will contain the entire "
 "GUI."
 msgstr ""
+"Utwórz nową scenę i dodaj ``MarginContainer``. Zaznacz węzeł i nazwij go "
+"``GUI``. Następnie zapisz scenę jako ``GUI.tscn``. Będzie on zawierał cały "
+"GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:75
 msgid ""
@@ -160,6 +184,11 @@ msgid ""
 "one will hold the counters, so call it ``Counters``. With these four "
 "containers, we have the base for our GUI scene."
 msgstr ""
+"Chcemy układać paski pionowo wewnątrz ``HBoxContainer``. W tym celu dodajmy "
+"``VBoxContainer``. Nazwij to ``Bar``. Wybierz ponownie rodzica "
+"``HBoxContainer`` i tym razem dodaj kolejne ``HBoxContainer``. Ten trzyma "
+"liczniki, więc nazwij go ``Counters``. Z tymi czterema kontenerami mamy bazę "
+"dla naszej sceny GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:89
 msgid "You should have 4 containers that look like this"
@@ -175,7 +204,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid "Create the bars' base"
-msgstr ""
+msgstr "Stwórz podstawę dla pasków"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:101
 msgid ""
@@ -200,24 +229,26 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:118
 msgid "A ``NinePatchRect`` named ``Background``"
-msgstr ""
+msgstr "``NinePatchRect`` nazwany ``Background``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:119
 msgid "A ``TextureRect`` named ``Title``"
-msgstr ""
+msgstr "``TextureRect`` nazwany ``Title``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:120
 msgid "And a ``Label`` named ``Number``"
-msgstr ""
+msgstr "I ``Label`` nazwany ``Number``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:122
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
+"Aby dodać węzły jako rodzeństwo, zawsze najpierw zaznaczaj węzeł ``Count``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
+"Drzewo sceny powinno tak wyglądać. Jesteśmy gotowi wrzucić kilka tekstur"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:129
 msgid ""
@@ -225,10 +256,13 @@ msgid ""
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
 "down to the res://assets/GUI folder."
 msgstr ""
+"Nasza scena jest wciąż pusta. Nadszedł czas, aby wrzucić do środka tekstury. "
+"Aby załadować tekstury, przejdź do panelu Systemu Plików po lewej stronie w "
+"edytorze. Przejdź do folderu res://assets/GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid "You should see a list of textures that we'll use to skin our interface."
-msgstr ""
+msgstr "Powinieneś ujrzeć listę tekstur, którymi obszyjemy nasz interfejs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:138
 msgid ""
@@ -249,6 +283,10 @@ msgid ""
 "viewport. They should stack up in the top-left corner of their parent "
 "``MarginContainer``."
 msgstr ""
+"Następnie wybierz ``Title``, przeciągnij i upuść ``label_HP.png`` na miejsce "
+"``Texture``. Wybierz węzeł ``Number``, kliknij w pole obok właściwości "
+"``Text`` i wpisz ``10``. W ten sposób zobaczymy oba węzły. Powinny one być "
+"ułożone w lewym górnym rogu ich rodzica ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:155
 msgid "If you select both nodes, you should see something like this"
@@ -262,6 +300,12 @@ msgid ""
 "three textures and press Ctrl Up or Ctrl Down to reorder them in the Scene "
 "dock. They'll snap back to their previous size and position."
 msgstr ""
+"Ponieważ ich bezpośrednim rodzicem jest kontener, nie możemy ich swobodnie "
+"przemieszczać: węzeł ``Count`` zawsze resetuje ich kotwice, rozmiar i "
+"położenie. Spróbuj przesunąć i zmienić rozmiar węzłów. Następnie wybierz "
+"dowolną z trzech tekstur i naciśnij Ctrl + Strzałka w Górę lub Ctrl + "
+"Strzałka w Dół, aby zmienić ich kolejność w panelu Sceny. Będą one wracać do "
+"poprzedniego rozmiaru i pozycji."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:164
 msgid ""
@@ -334,13 +378,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:221
 msgid "With a Bottom value of 2 pixels, the Number aligns with the Title"
-msgstr ""
+msgstr "Z dolną wartością 2 pikseli, Number jest zgodny z węzłem Title"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:223
 msgid ""
 "With this, we finished the hardest part of the GUI. Congratulations! Let's "
 "move on to the simpler nodes."
 msgstr ""
+"Dzięki temu zakończyliśmy najtrudniejszą część GUI. Serdecznie gratuluję! "
+"Przejdźmy do prostszych węzłów."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
 msgid "Add the progress bar"
@@ -365,16 +411,20 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:240
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
 msgstr ""
+"Z tylko pięcioma węzłami ``Control``, nasz pierwszy pasek jest gotowy do "
+"użycia."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:244
 msgid ""
 "That's it, our life bar is ready. This last part was quick, wasn't it? "
 "That's thanks to our robust container setup."
 msgstr ""
+"Tak, nasz pasek życia jest gotowy. Ta ostatnia część była szybka, czyż nie? "
+"To dzięki naszej wytrzymałej konstrukcji kontenera."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:248
 msgid "Design the bomb and rupee counters"
-msgstr ""
+msgstr "Zaprojektuj liczniki bomby i rupii"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
 msgid ""
@@ -402,7 +452,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:267
 msgid "Here's how your node tree should look so far"
-msgstr ""
+msgstr "Oto jak twoje drzewo węzłów powinno teraz wyglądać"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:269
 msgid ""
@@ -455,6 +505,8 @@ msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
 msgstr ""
+"Ikona bomby zakotwiczy się po prawej krawędzi tła. Zmień rozmiar kontenera "
+"licznika, aby zobaczyć, jak węzeł ikony przykleja się do jego prawej strony"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:310
 msgid ""
@@ -709,7 +761,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:504
 msgid "The Count looks better now it's a bit smaller"
-msgstr ""
+msgstr "Licznik wygląda lepiej i jest niewiele mniejszy"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:508
 msgid ""
@@ -852,6 +904,8 @@ msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "final project `here <#>`__."
 msgstr ""
+"Gratulacje za to, że ukończyłeś ten poradnik. Możesz znaleźć końcowy projekt "
+"`tu <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:620
 msgid ""

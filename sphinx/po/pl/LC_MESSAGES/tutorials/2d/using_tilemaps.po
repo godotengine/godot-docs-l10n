@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using tilemaps"
-msgstr ""
+msgstr "Używanie tilemap"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
@@ -31,16 +31,21 @@ msgid ""
 "start with bunch of reference tiles (or pieces) that can be put on a grid, "
 "as many times each as desired - think of it like a map editor:"
 msgstr ""
+"Tilemapy są prostym i szybkim sposobem na stworzenie poziomów w grze 2D. "
+"Zasadniczo, zaczynasz od płytek, które można umieścić na siatce, tyle razy "
+"ile jest to wymagane - pomyśl o tym jak o edytorze map:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
 msgid ""
 "Collisions can also be added to the tiles, allowing for both 2D side "
 "scrolling and top down games."
 msgstr ""
+"Do płytek można również dodawać kolizje, co pozwala zarówno na tworzenie "
+"gier 2D z widokiem od góry lub z boku."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:19
 msgid "Making a tileset"
-msgstr ""
+msgstr "Tworzenie tileset"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid ""
@@ -168,7 +173,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:117
 msgid "Using the TileSet in a TileMap"
-msgstr ""
+msgstr "Używanie TileSet w TileMapie"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:119
 msgid ""
@@ -251,12 +256,18 @@ msgid ""
 "textures if using separate images (see the :ref:`doc_import_images` asset "
 "pipeline tutorial)."
 msgstr ""
+"Wyłącz filtrowanie i mipmapy dla tekstury tileset lub wszystkich tekstur "
+"płytek przy użyciu oddzielnych obrazów (zobacz samouczek :ref:"
+"`doc_import_images`)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:178
 msgid ""
 "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > "
 "2d > Use Pixel Snap`` to true, you can also search for ``Pixel Snap``)."
 msgstr ""
+"Włącz wyrównanie do pikseli (Ustaw ``Projekt > Ustawienia projektu > "
+"Renderowanie > Jakość > 2D > Użyj Pixel Snap`` na prawdę, możesz również "
+"wyszukać ``Pixel Snap``)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
@@ -270,3 +281,6 @@ msgid ""
 "You can use a single, separate image for each tile. This will remove all "
 "artifacts but can be more cumbersome to implement and is less optimized."
 msgstr ""
+"Dla każdej płytki można użyć pojedynczego, oddzielnego obrazu. Usunie to "
+"wszystkie artefakty, ale może być bardziej kłopotliwe do wdrożenia i jest "
+"mniej zoptymalizowane."

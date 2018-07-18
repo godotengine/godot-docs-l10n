@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -933,10 +933,11 @@ msgid "Operators"
 msgstr "Operadores"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
+#, fuzzy
 msgid ""
 "These are mostly generic operators such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
-"error in run-time if the types feeded do not match for the operator). It is "
+"error in run-time if the types fed do not match for the operator). It is "
 "always recommended to set the right type for operators to catch errors "
 "faster and make the graph easier to read."
 msgstr ""
@@ -949,7 +950,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"
-msgstr ""
+msgstr "Nó de Expressão"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
 msgid ""
@@ -957,20 +958,26 @@ msgid ""
 "used, it allows you to enormously simplify visual scripts that are math or "
 "logic heavy. Type any expression on it and it will be executed in real-time."
 msgstr ""
+"Entre os operadores, o nó *Expressão* é o mais poderoso. Se bem usado, "
+"permite simplificar enormemente scripts visuais que envolvem muita "
+"matemática ou lógica. Digite qualquer expressão nele e será executado em "
+"tempo real."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:488
 msgid "Expression nodes can:"
-msgstr ""
+msgstr "Os nós de Expressão podem:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:490
 msgid ""
 "Perform math and logic expressions based on custom inputs (eg: \"a*5+b\", "
 "where a and b are custom inputs):"
 msgstr ""
+"Executar expressões matemáticas e lógicas com base em entradas "
+"personalizadas (Exemplo: \"a*5+b\", aonde a e b são valores personalizados):"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:495
 msgid "Access local variables or properties:"
-msgstr ""
+msgstr "Acessar variáveis locais ou propriedades:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:500
 msgid ""
@@ -978,13 +985,18 @@ msgid ""
 "such as sin(),cos(),print(), as well as constructors, such as Vector3(x,y,z),"
 "Rect2(..), etc.:"
 msgstr ""
+"Usar a maioria das funções embutidas já existentes que estão disponíveis "
+"para o GDScript, como  sin(), cos(), print(), como também construtores, como "
+"Vector3(x,y,z), Rect2(..), etc.:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:505
 msgid "Call API functions:"
-msgstr ""
+msgstr "Chamada da API :"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:510
 msgid ""
 "Use sequenced mode, which makes more sense in case of respecting the "
 "processing order:"
 msgstr ""
+"Use o modo sequenciado, o qual faz mais sentido no caso de respeitar a ordem "
+"de processamento:"

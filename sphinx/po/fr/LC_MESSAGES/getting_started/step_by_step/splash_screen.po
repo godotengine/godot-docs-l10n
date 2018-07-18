@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
+#, fuzzy
 msgid "Splash screen"
-msgstr ""
+msgstr "écran d'accueil"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
@@ -35,11 +36,15 @@ msgstr ""
 "système d'une IHM. Le but est de créer un simple écran"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
+#, fuzzy
 msgid ""
 "Following is a file with the assets that will be used. The extracted files "
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
+"Ce qui suit est un fichier avec les ressources qui seront utilisées. Les "
+"fichiers extraits peuvent être placés directement dans votre dossier de "
+"projet et Godot va les importer automatiquement."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
@@ -58,22 +63,30 @@ msgstr ""
 "et organisez la nouvelle comme cela :"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
+#, fuzzy
 msgid ""
 "The nodes \"background\" and \"logo\" are of :ref:`TextureRect "
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
+"les noeuds \"fond\" et \"logo\" sont du type :ref:`TextureRect "
+"<class_TextureRect>`. Pour afficher une image, glissez l'asset correspondant "
+"vers la propriété de la texture"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
+#, fuzzy
 msgid ""
 "The node \"start\" is a :ref:`TextureButton <class_TextureButton>`. It takes "
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
+"le noeud \"start\" est un :ref:`TextureButton <class_TextureButton>`. Il "
+"accepte plusieurs images pour différents états, mais nous traiterons "
+"uniquement les états \"normal\" et \"pressé\" dans cet exemple:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
-msgstr ""
+msgstr "Enfin, le nœud \"copyright\" est un :ref:`Label <class_Label>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
 #, fuzzy
@@ -81,7 +94,10 @@ msgid "Your final scene should look something like this."
 msgstr "Votre scène finale devrait ressembler à peu près à cela."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
+#, fuzzy
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
+"Allez-y et lancez le projet.  Si vous êtes satisfait des résultats, passez "
+"au tutoriel suivant."

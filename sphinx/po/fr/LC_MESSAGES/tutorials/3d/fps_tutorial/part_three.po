@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -208,7 +208,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:156
 msgid ""
 "Ideally we'd like to let the player be able to see how much ammo is left. "
-"Let's make a new function called ``process_ui``."
+"Let's make a new function called ``process_UI``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:158
@@ -272,8 +272,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:202
 msgid ""
-"``CAN_REFIL``: A boolean to track whether we can refill this weapon's spare "
-"ammo. We will not be using ``CAN_REFIL`` in this part, but we will in the "
+"``CAN_REFILL``: A boolean to track whether we can refill this weapon's spare "
+"ammo. We will not be using ``CAN_REFILL`` in this part, but we will in the "
 "next part!"
 msgstr ""
 
@@ -456,8 +456,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:383
 msgid ""
-"This makes it where the player cannot change weapons if the player is "
-"reloading."
+"This makes it so the player cannot change weapons if the player is reloading."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:385
@@ -767,7 +766,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:632
 msgid ""
-"Now when the player fires the pistol, we'll play the ``pistol_shot`` sound."
+"Now when the player fires the pistol, we'll play the ``Pistol_shot`` sound."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:634
@@ -780,7 +779,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:641
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:663
-msgid "Now when the player reloads, we'll play the ``gun_cock`` sound."
+msgid "Now when the player reloads, we'll play the ``Gun_cock`` sound."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:645
@@ -795,7 +794,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:654
 msgid ""
-"Now when the player fires the rifle, we'll play the ``rifle_shot`` sound."
+"Now when the player fires the rifle, we'll play the ``Rifle_shot`` sound."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:666
@@ -809,8 +808,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:672
 msgid ""
-"At this point we have all of the basics of a FPS working. There's still a "
-"few things that would be nice to add, and we're going to add them in the "
+"At this point we have all of the basics of a FPS game working. There's still "
+"a few things that would be nice to add, and we're going to add them in the "
 "next three parts!"
 msgstr ""
 
@@ -823,7 +822,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:678
 msgid ""
-"In In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, "
+"In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, "
 "along with some health and ammo pick ups! We're also going to add joypad "
 "support, so we can play with wired Xbox 360 controllers!"
 msgstr ""

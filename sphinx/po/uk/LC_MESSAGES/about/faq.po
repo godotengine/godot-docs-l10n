@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -254,18 +254,17 @@ msgstr ""
 "переваги для себе."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please make the effort to learn GDScript, you will not regret it."
 msgstr ""
-"GDScript призначений для інтеграції від фундаменту до шляху роботи Godot, "
-"більш ніж будь-яка інша мова, і є простим, і легким у вивченні. Це забирає "
-"щонайбільше день чи два, щоб зручно користуватися, і ви легко побачите "
-"переваги, як зробите це. Будь ласка докладіть зусиль, щоб вивчити GDScript, "
-"ви не пошкодуєте про це."
+"GDScript створений від основи для якомога повнішої інтеграції із робочим "
+"процесом Godot, більш ніж будь-яка інша мова, і є простим і легким у "
+"вивченні. Достатньо дня чи двох, щоб навчитися ним зручно користуватися. "
+"Щойно ви познайомитеся із мовою, вам буде просто оцінити її переваги. Будь "
+"ласка, докладіть зусиль, щоб вивчити GDScript, — ви не пошкодуєте."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -604,7 +603,6 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "І це все! Ваша гра повинна працювати в декількох роздільностях."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -612,8 +610,8 @@ msgid ""
 "the App Store or Google Play."
 msgstr ""
 "Якщо є бажання, щоб ваша гра також працювала на стародавніх пристроях із "
-"крихітними екранами (шириною менше 300 пікселів в ширину), ви можете "
-"скористатись експортом, щоб зменшити зображення, і встановити, які збірки "
+"крихітними екранами (шириною менше 300 пікселів), ви можете скористатись "
+"експортом, щоб зменшити зображення, і встановити, які збірки "
 "використовуватимуться для певних розмірів екрана в App Store або Google Play."
 
 #: ../../docs/about/faq.rst:229
@@ -659,34 +657,47 @@ msgid ""
 "ideas solely based on personal belief. Developers are interested in (for "
 "example):"
 msgstr ""
+"Розробники Godot завжди охочі до спілкування з вами, вони відкриті до "
+"критики до такої міри, яка є рідкісною у проектах з відкритим кодом, але "
+"найбільше їх цікавлять справжні вади, які трапилися вам під час користування "
+"Godot, а зовсім не якісь ідеї, які засновано на ваших особистих "
+"переконаннях. Розробникам, зокрема, цікаві такі речі:"
 
 #: ../../docs/about/faq.rst:246
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"Ваші враження від користування програмним забезпеченням і проблеми, з якими "
+"ви зіткнулися (ми переймаємося цим набагато більше за ідеї щодо поліпшення "
+"програмного забезпечення)."
 
 #: ../../docs/about/faq.rst:248
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"Можливості, які б ви хотіли бачити реалізованими, оскільки вони потрібні для "
+"вашого проекту."
 
 #: ../../docs/about/faq.rst:250
 msgid ""
 "The concepts that were difficult to understand in order to learn the "
 "software."
 msgstr ""
+"Поняття, які було важко зрозуміти під час вивчення програмного забезпечення."
 
 #: ../../docs/about/faq.rst:252
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "Частини вашого робочого процесу, які б ви хотіли оптимізувати."
 
 #: ../../docs/about/faq.rst:253
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't up "
 "to par."
 msgstr ""
+"Частини, для яких би ви хотіли мати зрозумілі покрокові настанови, та "
+"частини, документація до яких не є актуальною."
 
 #: ../../docs/about/faq.rst:255
 msgid ""
@@ -708,19 +719,19 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:265
 msgid "Certain feature is ugly"
-msgstr ""
+msgstr "Певна можливість реалізовано потворно"
 
 #: ../../docs/about/faq.rst:266
 msgid "Certain workflow is slow"
-msgstr ""
+msgstr "Певний робочий процес є повільним"
 
 #: ../../docs/about/faq.rst:267
 msgid "Certain feature needs optimization"
-msgstr ""
+msgstr "Певна можливість потребує оптимізації"
 
 #: ../../docs/about/faq.rst:268
 msgid "Certain aspect of the UI looks cluttered"
-msgstr ""
+msgstr "Якийсь аспект інтерфейсу користувача здається безладним"
 
 #: ../../docs/about/faq.rst:270
 msgid ""
@@ -738,6 +749,8 @@ msgid ""
 "I tried to make a game like Battlefield but I'm not managing to understand "
 "how to get lighting to look the same."
 msgstr ""
+"Хочу створити гру, подібну до Battlefield, але не можу розібратися з тим, як "
+"зробити подібне освітлення."
 
 #: ../../docs/about/faq.rst:277
 msgid ""

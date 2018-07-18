@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:66
 msgid ""
-"The scene tree is made up of ... nodes! The heading of each node consists of "
+"The scene tree is made up of... nodes! The heading of each node consists of "
 "it's name, parent and (most of the time) a type. For example :code:`[node "
 "type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]`"
 msgstr ""
@@ -195,7 +195,7 @@ msgstr "Skeleton"
 msgid ""
 "Skeleton node inherits Spatial node, besides that it may have a list of "
 "bones described in key, value pair in the format :code:`bones/Id/"
-"Attribute=Value`, attributes of bone consisits of"
+"Attribute=Value`, attributes of bone consists of"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:159
@@ -330,7 +330,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
-"Godot alway generates absolute paths relative to the resource directory and "
+"Godot always generates absolute paths relative to the resource directory and "
 "thus prefixed with :code:`res://`, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
@@ -404,20 +404,22 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:328
-msgid ":code:`arrays` as name suggestes is an array of array, it contains:"
+msgid ":code:`arrays` as the name suggests is an array of array, it contains:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:330
-msgid "a array of vertex position"
+msgid "An array of vertex position"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:331
-msgid "tagents array"
-msgstr ""
+#, fuzzy
+msgid "Tangents array"
+msgstr "Tangente"
 
 #: ../../docs/development/file_formats/tscn.rst:332
-msgid "vertex color array"
-msgstr ""
+#, fuzzy
+msgid "Vertex color array"
+msgstr "Vertex Color (Color de vértice)"
 
 #: ../../docs/development/file_formats/tscn.rst:333
 msgid "UV array 1"
@@ -428,15 +430,15 @@ msgid "UV array 2"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:335
-msgid "bone index array"
+msgid "Bone index array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:336
-msgid "bone weight array"
+msgid "Bone weight array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:337
-msgid "vertex index array"
+msgid "Vertex index array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:339
@@ -477,8 +479,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:375
 msgid ""
-"Each track is described by a list of key, value pairt in the format :code:"
-"`tracks/Id/Attribute`, it includs:"
+"Each track is described by a list of (key, value) pairs in the format :code:"
+"`tracks/Id/Attribute`, it includes:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:378
@@ -558,7 +560,7 @@ msgstr ""
 msgid ""
 "A transform track use every 12 real number in the :code:`keys` to describte "
 "a keyframe. The first number is the timestamp, the second number is the "
-"transision (default 1.0 in transform track), followed by a three number "
+"transition (default 1.0 in transform track), followed by a three number "
 "translation vector, followed by four number rotation quaternion (x,y,z,w) "
 "and finally a three number scale vector."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,9 +59,8 @@ msgstr ""
 "`doc_your_first_game`, прежде чем продолжить этот урок."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
-#, fuzzy
 msgid "Preparing the project"
-msgstr "Создание нового проекта"
+msgstr "Подготовка проекта"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -100,15 +99,14 @@ msgstr ""
 "игра будет масштабируется на экранах разных размеров."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
-#, fuzzy
 msgid ""
 "Next, we need to modify the ``Player.gd`` script to change the input method. "
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
-"Далее, нужно модифицировать скрипт \"Player.gd\", чтобы изменить метод "
-"ввода. Уберем ключи управление и заставим игрока двигаться к цели, которая "
-"задается событием тапа по экрану (или кликом)."
+"Далее, нужно модифицировать скрипт \"Player.gd\", для того, чтобы изменить "
+"метод ввода. Мы уберем управление клавишами и сделаем так, чтобы игрок "
+"двигался к цели, которая задается событием тапа по экрану (или кликом)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
@@ -150,9 +148,8 @@ msgstr ""
 "новой версии, иначе работа экспортированых проектов может быть нестабильна."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export Presets"
-msgstr "Экспорт"
+msgstr "Экспорт предустановок"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:142
 msgid ""
@@ -171,15 +168,14 @@ msgstr ""
 "настройками."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
-#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
-"Внизу окна есть две кнопки. \"Экпорт PCK/ZIP\" создает упакованную версию "
-"данных вашего проекта. Он не включает выполняемый файл, поэтому проект не "
-"может быть запущен самостоятельно."
+"Внизу окна есть две кнопки. \"Экпорт PCK/ZIP\" лишь создает упакованную "
+"версию данных вашего проекта. Исполняемый файл при этом не включается, "
+"поэтому проект не может быть запущен самостоятельно."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
@@ -206,10 +202,13 @@ msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
 msgstr ""
+"В данном разделе, мы пройдем через процесс для каждой платформы, включая "
+"любое дополнительное программное обеспечение или требования которые могут "
+"понадобиться."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
 msgid "PC (Linux/MacOS/Windows)"
-msgstr ""
+msgstr "ПК (Linux/MacOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:168
 msgid ""
@@ -218,10 +217,15 @@ msgid ""
 "you want to make. Then click \"Export Project\" and choose a name and "
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
+"Экспорт на PC платформы работает одинаково для трех поддерживаемых "
+"операционных систем. Откройте окно экспорта, кликните \"Добавить..\" и "
+"выберите систему из выпадающего списка. После кликните \"Экспорт Проекта\" и "
+"выберите имя и папку, в которой вы хотите сохранить файл. Выберите место  "
+"*снаружи* вашей папки с проектом."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:173
 msgid "Click \"Save\" and the engine will build the export files."
-msgstr ""
+msgstr "Нажмите \"Сохранить\" и движок соберет экспортируемый файл."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
 msgid ""
@@ -230,6 +234,10 @@ msgid ""
 "either case, the compressed file contains a MacOS `.app` that you can double-"
 "click and run."
 msgstr ""
+"При экспорте на MacOS, если вы экспортируете на компьютере с MacOS, вы "
+"получите `.dmg` файл, а если используете Linux или Windows то результатом "
+"будет `.zip`. В любом случае, сжатый файл содержит в себе `.app`, который вы "
+"можете запустить двойным нажатием."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:180
 msgid ""
@@ -237,6 +245,10 @@ msgid ""
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
+"На Windows, если вы хотите чтобы экспортируемый вами запускаемый файл имел "
+"иконку отличную от той, что установлена по умолчанию, вам необходимо "
+"изменить ее вручную. Смотрите: :ref:"
+"`doc_changing_application_icon_for_windows`."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
 msgid "Android"
@@ -249,21 +261,29 @@ msgid ""
 "art than science, and you may need to do some experimenting and searching "
 "for help in order to get everything working."
 msgstr ""
+"Мобильные устройства обладают широким спектром возможностей, и в большинстве "
+"случаев установленные по умолчанию настойки Годо будут работать. Однако, "
+"временами мобильная разработка это скорее искусство, чем наука, и потому "
+"порой вам придется экспериментировать и искать помощи для того чтобы все "
+"работало."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:193
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
 msgstr ""
+"Прежде чем вы сможете экспортировать свой проект на Android, вы должны "
+"загрузить следующее программное обеспечение:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:196
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr ""
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:197
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
+"Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:199
 msgid ""
@@ -271,12 +291,18 @@ msgid ""
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
+"При запуске Android Studio в первый раз, нажмите на кнопки *Настройки -> SDK "
+"Manager* и установите \"Android SDK Platform Tools\". Таким образом вы "
+"установите `adb` command-line tool, который Годо использует для "
+"взаимодействия с вашим устройством."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
 msgid ""
 "Next, create a debug keystore with by running the following command on your "
 "system's command line:"
 msgstr ""
+"Далее создайте хранилище ключей для отладки, выполнив следующую команду в "
+"консоли вашей системы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:210
 msgid ""
@@ -285,24 +311,36 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
+"Нажмите на *Редактор -> Настройки редактора* в Годо, и затем выберите раздел "
+"*Export/Android*. Здесь вам нужно установить пути к приложениям Android SDK "
+"на вашей системе и расположение хранилища ключей, который вы только что "
+"создали."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:216
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
 msgstr ""
+"Теперь вы готовы экспортировать. Нажмите на *Проект-> Экспорт* и добавьте "
+"предустановку для Android (см. выше)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:219
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
+"Нажмите кнопку \"Экспортировать проект\", и Godot построит файл APK, который "
+"вы сможете загрузить на своё устройство. Чтобы сделать это с помощью "
+"командной строки, выполните следующую команду:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:226
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
 msgstr ""
+"Вашему устройству может потребоваться нахождение в \"режиме разработчика\". "
+"Обратитесь к документации устройства для получения более подробной "
+"информации."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:229
 msgid ""
@@ -310,12 +348,17 @@ msgid ""
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
+"Если ваша система это поддерживает, подключение совместного Андроид "
+"устройства вызовет появление кнопки \"Развертывание в один клик\" в области "
+"кнопок игрового окна Godot:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
 msgstr ""
+"Нажатие этой кнопки приводит к построению APK и к копированию его на Ваше "
+"устройство в один шаг."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
 msgid "iOS"
@@ -395,6 +438,11 @@ msgid ""
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""
+"Просмотр файла `.html` в браузере позволяет вам воспроизводить игру. Не "
+"смотря на это, вы не можете открыть файл напрямую, т.к. он должен "
+"обслуживаться веб-сервером. Если у вас на компьютере нет такого сервера, вы "
+"можете использовать Google, чтобы найти варианты для вашей операционной "
+"системы."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:278
 msgid ""
@@ -402,6 +450,9 @@ msgid ""
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
+"В адресной строке браузера укажите URL расположения HTML-файла. Возможно, "
+"вам придётся немного подождать, пока игра загрузится, и вы увидите стартовый "
+"экран."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:283
 msgid ""
@@ -409,6 +460,9 @@ msgid ""
 "can disable it by setting \"Export With Debug\" off when you export the "
 "project."
 msgstr ""
+"Если что-то пойдёт не так, окно консоли под игрой покажет в чём проблема. Вы "
+"можете отключить её, задав параметр \"Export With Debug\" (экспорт с "
+"отладкой), когда экспортируете проект."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
 msgid ""
@@ -418,3 +472,8 @@ msgid ""
 "bugs you find at the `Godot Github repository <https://github.com/"
 "godotengine/godot/issues>`_."
 msgstr ""
+"Большинство браузеров не поддерживают WASM. Firefox и Chrome обладают такой "
+"поддержкой, но вы можете обнаружить некоторые вещи, которые все ещё не "
+"работают. Убедитесь, что ваш браузер обновлен до найсвежайшей версии и "
+"отправляйте отчет об ошибках, которые вы обнаружили, в репозиторий `Godot "
+"Github - <https://github.com/godotengine/godot/issues>`_."

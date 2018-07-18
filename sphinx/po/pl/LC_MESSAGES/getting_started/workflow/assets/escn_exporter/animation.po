@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
+msgid "Animation"
+msgstr "Animacje"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
+#, fuzzy
+msgid "Supported Animation"
+msgstr "Animacja Sprita"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
+msgid "transform animation of all types of object"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
+msgid "transform animation of pose bone"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:10
+#, fuzzy
+msgid "Action Lib"
+msgstr "Węzły funkcyjne"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
+msgid ""
+"Every action in object's nla tracks would be exported as a separate track "
+"and placed in AnimationPlayer."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:15
+#, fuzzy
+msgid "Placing of AnimationPlayer"
+msgstr "Dodaj animację gracza"
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
+msgid ""
+"Godot and Blender have different structure to store animation data. In Godot "
+"animation data is stored in an AnimationPlayer node, instead of in each "
+"animated node."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:20
+msgid ""
+"The exporter has an option :code:`Separate AnimationPlayer For Each Object` "
+"which controls how the exported AnimationPlayers are placed."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:24
+msgid ""
+"If :code:`Separate AnimationPlayer For Each Object` is **disabled** children "
+"of any animated object shares one AnimationPlayer"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:27
+msgid ""
+"In the following case, animation data of Mesh is also exported to "
+"AnimationPlayer \"RigAnimation\""
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:34
+msgid ""
+"If :code:`Separate AnimationPlayer For Each Object` is **enabled** every "
+"animated object got its own AnimationPlayer. It is useful when artists want "
+"to play multiple animation concurrently, because one AnimationPlayer node "
+"can only play one track at a time."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
+#, fuzzy
+msgid "In the following case, Mesh and Rig have their own AnimationPlayer"
+msgstr "Dodaj następujący kod do ``AnimationPlayer_Manager.gd``:"

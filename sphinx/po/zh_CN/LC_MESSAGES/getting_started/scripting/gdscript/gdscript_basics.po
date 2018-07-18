@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -796,7 +796,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:374
 msgid "Vector built-in types"
-msgstr ""
+msgstr "内置向量类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:377
 msgid ":ref:`Vector2 <class_Vector2>`"
@@ -806,7 +806,7 @@ msgstr ""
 msgid ""
 "2D vector type containing ``x`` and ``y`` fields. Can also be accessed as "
 "array."
-msgstr ""
+msgstr "2D向量类型包含``x``和``y``字段，也可以像数组一样访问。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
 msgid ":ref:`Rect2 <class_Rect2>`"
@@ -826,7 +826,7 @@ msgstr ""
 msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
-msgstr ""
+msgstr "3D向量类型包含``x``, ``y`` 与 ``z``字段，也能够像数组一样访问。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:395
 msgid ":ref:`Transform2D <class_Transform2D>`"
@@ -845,6 +845,7 @@ msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
 msgstr ""
+"3D平面类型的标准形式包含一个``normal``法向量字段以及一个``d``距离标量。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:406
 msgid ":ref:`Quat <class_Quat>`"
@@ -876,6 +877,8 @@ msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
+"3×3矩阵被用于3D旋转与缩放，其包含3个向量字段(``x``, ``y`` 和 ``z``) 并且可以"
+"像3D向量组那样访问。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:426
 msgid ":ref:`Transform <class_Transform>`"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,13 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
-msgstr ""
+msgstr "고도의 디자인 철학"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
 msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
 msgstr ""
+"이제 당신은 손에 땀이 날 지경이니, 고도의 디자인 철학에 대해 얘기해 보겠습니"
+"다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
 msgid ""
@@ -32,8 +34,12 @@ msgid ""
 "leads to different workflows and different ways to form your games’ "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
+"**모든 게임 엔진은 서로 다르고 그렇기에 다른 필요를 충족시킵니다.** 그들이 제"
+"공하는 기능의 범위뿐만 아니라, 각 엔진의 디자인도 독특합니다. 이것은 게임의 "
+"구조를 형성하는 다른 방법과 다른 워크플로우를 하게 만듭니다. 이 모든 것은 각"
+"기 다른 디자인 철학에서 생겨납니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:11
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:13
 msgid ""
 "This page is here to help you understand how Godot works, starting with some "
 "of its core pillars. It is not a list of available features, nor is it an "
@@ -41,25 +47,34 @@ msgid ""
 "you need to try it out for yourself and understand its design and "
 "limitations."
 msgstr ""
+"이 페이지가 고도의 작동방식을 이해하도록 돕기 위해, 여러 핵심 기둥들로 시작합"
+"니다. 이것은 사용가능한 기능의 목록이 아닐 뿐더러, 엔진을 비교하는 것도 아닙"
+"니다. 어떤 엔진이라도 당신의 프로젝트에 잘 맞들어지는지 알기 위해선, 당신이 "
+"스스로 시도하고 그것의 디자인과 한계를 이해해야합니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:17
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:19
 msgid ""
 "Please watch `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
+"엔진의 기능에 관한 개요를 보고 싶다면 `Discover Godot 3, the Free game "
+"engine <https://youtu.be/4v3qge-3CqQ>`_ 를 봐주세요."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:20
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:23
 msgid "Object-oriented design and composition"
-msgstr ""
+msgstr "객체 지향 디자인과 구성"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:22
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:25
 msgid ""
 "Godot embraces object-oriented design at its core with its flexible scene "
 "system and Node hierarchy. It tries to stay away from strict programming "
 "patterns to offer an intuitive way to structure your game."
 msgstr ""
+"고도는 유연한 씬 시스템과 노드 계층 구조를 갖춘 객체 지향 디자인을 핵심으로 "
+"갖고 있습니다. 이것으로 엄격한 프로그래밍 패턴을 피하고 직관적인 방법으로 게"
+"임을 구성하도록 만들었습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:26
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:29
 msgid ""
 "For one, Godot lets you **compose or aggregate** scenes. It's like nested "
 "prefabs: you can create a BlinkingLight scene and a BrokenLantern scene that "
@@ -67,20 +82,29 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
+"이를 위해 고도는 당신이 씬을 **조립하거나 집합하도록** 만들었습니다. 이건 마"
+"치 중첩 물체같습니다: 당신이 깜박이는 빛 씬을 만들고 이 씬이 사용된 고장난 전"
+"봇대 씬을 만들었습니다. 그리고, 고장난 전봇대가 들어간 도시를 만듭니다. 깜박"
+"이는 빛의 색을 바꾸고, 저장해서, 도시의 모든 고장난 전봇대가 즉각적으로 업데"
+"이트될 것입니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:33
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:36
 msgid "On top of that, you can **inherit** from any scene."
-msgstr ""
+msgstr "무엇보다도, 당신이 어떤 씬에서든지 **상속하는 것** 이 가능합니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:35
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code except "
 "you’re free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
+"고도 씬은 무기나 캐릭터, 아이템, 문, 하나의 레벨, 레벨의 일부... 원하는 어떤 "
+"것이든 될수 있습니다. 에디터를 사용하거나, 오직 코드만을 사용하거나 이 둘을 "
+"섞어서 일치시켜서 자유롭게 디자인한다는 경우를 제외하면 클래스가 마치 순수한 "
+"코드처럼 작동합니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:40
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
 msgid ""
 "It’s different from prefabs you find in several 3D engines as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -88,88 +112,118 @@ msgid ""
 "update as well. It helps you build your projects so that their structure "
 "matches the game’s design."
 msgstr ""
+"이것은 씬을 상속하고 확장한다는 점에서 여러 3D 엔진에서 볼수 있는 프리펩과는 "
+"다릅니다. 당신은 캐릭터를 확장시켜 마법사를 만들수도 있습니다. 에디터에 있는 "
+"캐릭터를 수정하면 마법사도 이를 업데이트합니다. 이것은 당신이 프로젝트를 만들"
+"면서 프로젝트 구조가 게임 디자인에 일치하도록 도와줍니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:46
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
 msgid "|image0|"
 msgstr "|image0|"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:48
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:51
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
 "from their parents up to the Node class. Although the engine does feature "
 "components like collision shapes, they’re the exception, not the norm."
 msgstr ""
+"또한 고도는 노드라고 불리는 다양한 유형의 객체를 제공합니다, 이들 각각 특정"
+"한 목적을 지니고 있습니다. 노드는  트리의 일부분으로 항상 그들의 부모 노드에"
+"서 노드 클래스까지 상속합니다. 비록 엔진이 충돌 모양같은 구성 요소를 포함하지"
+"만, 이들은 예외이고, 표준이 아닙니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:54
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
 msgid "|image1|"
 msgstr "|image1|"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:56
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:59
 msgid ""
 "Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
+"Node2D의 Sprite, CanvasItem과 Node. 이 세 개의 부모 클래스는 모든 속성과 기능"
+"을 가지고 있습니다, 예를들면 변환이나 사용자 지정 모양을 그리고 쉐이더로 렌더"
+"하는 것이 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:61
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:64
 msgid "All-inclusive package"
-msgstr ""
+msgstr "모든 것이 들어있는 패키지"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:63
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:66
 msgid ""
 "Godot tries to provide its own tools to answer most common needs. It has a "
 "dedicated scripting workspace, an animation editor, a tilemap editor, a "
 "shader editor, a debugger, a profiler, the ability to hot-reload locally and "
 "on remote devices, etc."
 msgstr ""
+"고도는 가장 보편적인 요구들의 해답을 제공하고자 노력했습니다. 고도는 전용 스"
+"크립팅 작업 공간과 애니메이션 에디터, 타일맵 에디터, 쉐이더 에디터, 디버거, "
+"프로파일러, 로컬 및 원격 장치를 핫 리로드 하는 기능 등등을 가지고 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:68
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
 msgid "|image2|"
 msgstr "|image2|"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:70
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:73
 msgid ""
 "The goal is to offer a full package to create games and a continuous user "
 "experience. You can still work with external programs as long as there is an "
 "import plugin for it. Or you can create one, like the `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 msgstr ""
+"목표는 게임을 만드는 모든 패키지와 끊김없는 사용자 경험을 제공하는 것입니다. "
+"물론 가져오기 플러그인이 있다면 여전히 외부 프로그램과 함께 작업할 수 있습니"
+"다. 아니면  `Tiled Map Importer <https://github.com/vnen/godot-tiled-"
+"importer>`__ 처럼 하나로 만들 수도 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:75
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
 msgid ""
 "That is also partly why Godot offers its own programming languages GDscript "
 "and VisualScript, along with C#. They’re designed for the needs of game "
 "developers and game designers, and they’re tightly integrated in the engine "
 "and the editor."
 msgstr ""
+"이것이 고도가 C#과 함께, 고유의 프로그래밍 언어인 GDScript와 VisualScript를 "
+"제공하는 이유이기도 합니다. 그들은 게임 개발자와 게임 디자이너의 필요를 위해 "
+"제작되었고, 엔진과 에디터에 완벽하게 통합됩니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:80
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
+#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
-"types and offers a static-language's quality of auto-completion. It is also "
+"types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
+"GDScript는 파이썬과 유사한 구문을 사용하여 쉬운 코드를 사용하지만, 타입을 인"
+"지하고 정적 언어의 자동 완성 품질을 제공합니다. 또한 Vectors와 Colors 같은 내"
+"장 함수를 가지고 있어 게임플레이에 최적화되어 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:84
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
 msgid ""
 "Note that with GDNative, you can write high-performance code using compiled "
 "languages like C, C++, Rust, or Python (using the Cython compiler) without "
 "recompiling the engine."
 msgstr ""
+"GDNative를 사용하면, 엔진을 리컴파일하지 않고 C, C++, Rust, 아니면 (Cython 컴"
+"파일러를 사용한) 파이썬과 같이 컴파일된 언어를 사용해 고성능의 코드를 작성할 "
+"수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:88
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
 msgid "|image3|"
 msgstr "|image3|"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:90
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:93
 msgid ""
 "*VisualScript is a node-based programming language that integrates well in "
 "the editor. You can drag and drop nodes or resources into the graph to "
 "create new code blocks.*"
 msgstr ""
+"*VisualScript는 노드 기반 프로그래밍 언어로 에디터에 잘 통합되어 있습니다. 노"
+"드나 리소스를 그래프로 드래그 앤 드롭하여 새 노드 블럭을 생성할 수 있습니다.*"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:94
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:97
 msgid ""
 "Note that the 3D workspace doesn’t feature as many tools as the 2D "
 "workspace. You’ll need external programs or add-ons to edit terrains, "
@@ -177,63 +231,90 @@ msgid ""
 "extend the editor’s functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
+"3D 작업 공간은 2D 작업 공간같은 도구들이 많지 않습니다. 당신은 외부 프로그램"
+"이나 애드온으로 지형을 편집하거나, 복잡한 캐릭터를 애니메이트하거나 해야합니"
+"다. 고도는 게임 코드를 사용하여 에디터의 기능성을 넓히는 완전한 API를 제공합"
+"니다. 하단의 `The Godot editor is a Godot game`_ 을 참고하세요."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:99
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
 msgid "|image4|"
 msgstr "|image4|"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:101
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
+#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
-"states and transitions visually*"
+"states and transitions visually.*"
 msgstr ""
+"*고도 엔진 2에서 kubecz3k이 만드신 State Machine editor 플러그인입니다. 이걸"
+"로 당신은 시각적으로 상태와 변화를 다룰 수 있습니다*"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:105
-msgid "Open-source"
-msgstr ""
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
+#, fuzzy
+msgid "Open source"
+msgstr "오픈 소스"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:107
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
+#, fuzzy
 msgid ""
-"Godot offers a fully open-source codebase under the **MIT license.** This "
+"Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
-"as well. For the most part, they’re coded from the ground-up by contributors."
+"as well. For the most part, they’re developed from the ground up by "
+"contributors."
 msgstr ""
+"고도는 **MIT 라이선스** 하에 완전한 오픈 소스 코드베이스를 제공합니다. 이는 "
+"여기서 제공하는 모든 기술들은 (자유로서의) 무료임을 의미합니다. 대부분의 경"
+"우, 기술들은 참여자들에 의해 처음부터 코드화가 되어있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:111
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
+#, fuzzy
 msgid ""
-"Anyone can plug in proprietary tools for the needs of their projects - they "
-"just won’t ship with the engine. This may include NViDia PhysX, Google "
-"Admob, or an FBX file importer. Any of these can come as third-party plugins "
-"instead."
+"Anyone can plug in proprietary tools for the needs of their projects — they "
+"just won’t ship with the engine. This may include NVIDIA PhysX, Google "
+"AdMob, or an FBX model importer. Any of these can come as third-party "
+"plugins instead."
 msgstr ""
+"누구든지 그들의 프로젝트의 필요에 맞는 도구들을 연결할 수 있습니다 -  다만 그"
+"것들이 엔진과 함께 제공되지 않습니다. 이것은 NViDia PhysX나 구글 애드몹, 혹"
+"은 FBX 파일 importer일지도 모릅니다. 이들은 대신 서드 파티 플러그인으로서 넣"
+"을 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:116
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart’s content. You can also debug games easily as "
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
+"한편, 오픈 코드베이스는 당신이 **엔진에서 배우고 확장하여** 당신의 마음의 콘"
+"텐츠로 만들 수 있다는 것을 의미합니다. 또한 고도는 엔진 차체에서 오는 스택 추"
+"적도 오류로 인식하므로, 게임을 쉽게 디버깅 할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:122
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
 msgid ""
 "This **does not affect the work you do with Godot** in any way: there’s no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
+"이것은 어떤 방식으로라도 **고도를 사용하는 작업에 영향을 주지 않습니다** : 엔"
+"진에는 어떤 문자열도 붙어있지 않고 문자열로 만들 것도 없습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:127
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
 msgid "Community-driven"
-msgstr ""
+msgstr "커뮤니티 중심"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:129
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:132
 msgid ""
 "**Godot is made by its community, for the community, and for all game "
 "creators out there.** It’s the needs of the users and open discussions that "
 "drive the core updates. New features from the core developers often focus on "
 "what will benefit the most users first."
 msgstr ""
+"**고도는 커뮤니티에 의해, 커뮤니티를 위해, 그리고 모든 게임 개발자들을 위해 "
+"만들어졌습니다.** 이것은 핵심 업데이트를 이끌어 내는 열린 토론과 사용자들의 "
+"요구가 반영된 것입니다. 새로은 기능은 핵심 개발자로부터 나오며 대부분의 사용"
+"자들에게 도움을 주는 것을 최우선으로 봅니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:134
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
 "project has over 500 contributors at the time of writing. Benevolent "
@@ -241,52 +322,76 @@ msgid ""
 "improvements in all corners of the engine at the same time in every major "
 "release."
 msgstr ""
+"이는 즉, 비록 소수의 핵심 개발자들이 하루종일 일할지라도, 프로젝트는 그 시간"
+"에 500명이 넘는 참여자가 활동합니다. 자애로운 프로그래머들은 자기들이 필요해 "
+"보이는 기능들을 작업하기때문에, 모든 주요 릴리즈마다 엔진의 모든 방면에서 개"
+"선되는 것을 볼 수 있을겁니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:141
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:144
 msgid "The Godot editor is a Godot game"
-msgstr ""
+msgstr "고도 에디터는 고도 게임입니다"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:143
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:146
 msgid ""
 "The Godot editor runs on the game engine. It uses the engine’s own UI "
 "system, it can hot-reload code and scenes when you test your projects, or "
 "run game code in the editor. This means you can **use the same code** and "
 "scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
+"고도 에디터는 게임 엔진으로 돌아갑니다. 이것은 엔진 스스로의 UI 시스템을 사용"
+"하고, 프로젝트를 테스트하거나 에디터에서 게임 코드를 실행할 때 코드와 씬을 "
+"핫 리로드 할 수 있습니다. 이는 당신이 게임에 쓰는 코드와 **같은 코드와 씬을 "
+"사용해서** , **플러그인을 만들거나 에디터를 확장** 시킬수 있다는 것을 의미합"
+"니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:148
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
 msgid ""
 "This leads to a reliable and flexible UI system as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
+"이로인해 에디터 자체에 권한을 부여하여 안정적이고 유연한 UI 시스템이 탄생하"
+"게 되었습니다. ``tool`` 키워드로 당신은 에디터에서 어떤 게임 코드도 실행시킬 "
+"수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 msgid "|image5|"
 msgstr "|image5|"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:153
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
+#, fuzzy
 msgid ""
-"*RPG in a Box is a voxel RPG editor made in Godot 2. It uses Godot’s UI "
+"*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot’s UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
+"*RPG in a Box는 복셀 RPG 에디터로 고도 2 에서 만들어졌습니다. 노드 기반 프로"
+"그래밍 시스템과 인터페이스의 일부를 위해 고도 UI 툴을 사용했습니다.*"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:157
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
+#, fuzzy
 msgid ""
-"Put the ``tool`` keyword at the top of any GDscript file and it will run in "
+"Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
+"``tool`` 키워드를 GDscript 파일의 맨 위에 놓으면 에디터에서 파일이 실행될 것"
+"입니다. 이걸로 당신은 플러그인을 내보내거나 가져올 수 있고, 커스텀 레벨 에디"
+"터 같은 플러그인을 제작하거나, 프로젝트에 쓰이는 것과 똑같은 노드와 API를 가"
+"지고 스크립트를 만들 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:163
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
 msgid "Separate 2D and 3D engines"
-msgstr ""
+msgstr "2D 와 3D 엔진을 분리함"
 
-#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:165
+#: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
+#, fuzzy
 msgid ""
-"Godot offers dedicated 2D and 3D rendering engines. As a result **the base "
+"Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "
-"can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interface over "
+"can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over "
 "your 3D world."
 msgstr ""
+"고도는 전용 2D 와 3D 렌더링 엔진을 제공합니다. 그 결과 **2D 씬의 기본 단위는 "
+"픽셀입니다.** 비록 엔진이 분리되더라도, 당신은 2D에서 3D를, 3D에서 2D를 렌더"
+"할 수 있고, 3D 월드에 2D 스프라이트와 인터페이스를 씌울 수 있습니다."

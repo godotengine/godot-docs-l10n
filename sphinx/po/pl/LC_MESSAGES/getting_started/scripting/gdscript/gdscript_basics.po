@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,9 +174,9 @@ msgid ""
 "Identifiers are case-sensitive (``foo`` is different from ``FOO``)."
 msgstr ""
 "Każdy ciąg znaków, który ogranicza się do znaków alfabetycznych ( ``a`` do "
-"``z`` i ``A`` do ``Z``), cyfr (``0`` do ``9``) i ```_`` kwalifikuje się jako "
+"``z`` i ``A`` do ``Z``), cyfr (``0`` do ``9``) i ``_`` kwalifikuje się jako "
 "identyfikator. Ponadto identyfikatory nie mogą rozpoczynać się cyfrą. W "
-"identyfikatorach wielkość liter ma znaczenie (``ziemniak``jest różny od "
+"identyfikatorach wielkość liter ma znaczenie (``ziemniak`` jest różny od "
 "``ZIEMNIAK``)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:143
@@ -193,7 +193,7 @@ msgstr ""
 "Poniżej znajduje się lista słów kluczowych obsługiwanych przez ten język. "
 "Ponieważ słowa kluczowe są słowami zastrzeżonymi (tokenami), nie mogą być "
 "używane jako identyfikatory. Operatorzy (jak ``in``, ``not``, ``and`` lub "
-"`or```) oraz nazwy wbudowanych typów jak wymienione w poniższych sekcjach są "
+"`or``) oraz nazwy wbudowanych typów jak wymienione w poniższych sekcjach są "
 "również zastrzeżone."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:150
@@ -488,7 +488,7 @@ msgid ""
 "Networking RPC annotation. See :ref:`high-level multiplayer docs "
 "<doc_high_level_multiplayer>`."
 msgstr ""
-"Sieciowanie adnotaceje RPC. Patrz :ref:`wysokopoziomowy multiplayer "
+"Sieciowanie adnotacje RPC. Patrz :ref:`wysokopoziomowy multiplayer "
 "<doc_high_level_multiplayer>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
@@ -735,7 +735,7 @@ msgstr "``0x8F51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "Base 16 (hex) integer"
-msgstr "Baza heksydecymalna"
+msgstr "Baza heksadecymalna"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:299
 msgid "``3.14``, ``58.1e-10``"
@@ -929,8 +929,8 @@ msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
 msgstr ""
-"3D Plane w znormalizowanej formie, który zawiera pole wektorowe  ``normal`` "
-"i długość skalarną ``d``."
+"3D Plane w znormalizowanej formie, który zawiera pole wektorowe ``normal`` i "
+"długość skalarną ``d``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:406
 msgid ":ref:`Quat <class_Quat>`"
@@ -975,8 +975,8 @@ msgstr ":ref:`Transform <class_Transform>`"
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
-"Przekształcenie(Transform) 3D zawiera pole Basis ``basis`` i Vector3 `` "
-"origin``."
+"Przekształcenie(Transform) 3D zawiera pole Basis ``basis`` i "
+"Vector3``origin``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:432
 msgid "Engine built-in types"
@@ -1055,40 +1055,51 @@ msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: Tablica bajtów (liczby całkowite "
+"od 0 do 255)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:484
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
-msgstr ""
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: Tablica liczb całkowitych."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
 msgstr ""
+":ref:`PoolRealArray <class_PoolRealArray>`: Tablica liczb "
+"zmiennoprzecinkowych."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:486
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
 msgstr ""
+":ref:`PoolStringArray <class_PoolStringArray>`: Tablica łańcuchów znaków."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:487
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
 msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: Tablica obiektów :ref:"
+"`Vector2 <class_Vector2>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:488
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
 msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: Tablica obiektów :ref:"
+"`Vector3 <class_Vector3>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:489
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
 msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: Tablica obiektów :ref:`Color "
+"<class_Color>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:492
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr ""
+msgstr ":ref:`Słownik <class_Dictionary>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:494
 msgid "Associative container which contains values referenced by unique keys."
@@ -1107,6 +1118,8 @@ msgid ""
 "To add a key to an existing dictionary, access it like an existing key and "
 "assign to it::"
 msgstr ""
+"Aby dodać klucz do istniejącego słownika, otwórz go jakby istniał i przypisz "
+"do niego wartość::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:530
 msgid "Data"
@@ -1173,6 +1186,8 @@ msgstr ""
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
+"Funkcja może ``zwrócić`` wartość w dowolnym momencie. Domyślnie zwraca "
+"``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:607
 msgid "Referencing Functions"
@@ -1281,7 +1296,7 @@ msgstr "Podstawowa składnia:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:742
 msgid "**Crash-course for people who are familiar to switch statements**:"
-msgstr ""
+msgstr "**Kurs dla osób, które są zaznajomione z instrukcją switch**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:744
 msgid "Replace ``switch`` with ``match``"
@@ -1299,7 +1314,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:747
 msgid "Change ``default`` to a single underscore."
-msgstr ""
+msgstr "Zamień ``default`` na jedno podkreślenie."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:750
 msgid "**Control flow**:"
@@ -1316,19 +1331,19 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:756
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "Istnieje 6 rodzajów wzorów:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:768
 msgid "constant pattern"
-msgstr ""
+msgstr "stały wzorzec"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:759
 msgid "constant primitives, like numbers and strings ::"
-msgstr ""
+msgstr "stałe wartości podstawowe, takie jak liczby i ciągi znaków ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:780
 msgid "variable pattern"
-msgstr ""
+msgstr "zmienny wzorzec"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:771
 msgid "matches the contents of a variable/enum ::"
@@ -1570,15 +1585,15 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
 msgid "# Idle.gd"
-msgstr ""
+msgstr "# Idle.gd"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "func _init().(5):"
-msgstr ""
+msgstr "func _init().(5):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "Inner classes"
@@ -1640,7 +1655,7 @@ msgid ""
 "can modify values that later influence how the program runs. For this, a "
 "special export syntax is provided."
 msgstr ""
-"Jedną z podstawowych korzyści płynących z eksportowania zmiennych  jest ich "
+"Jedną z podstawowych korzyści płynących z eksportowania zmiennych jest ich "
 "widoczność i możliwość edycji w edytorze. W ten sposób artyści i projektanci "
 "gier mogą modyfikować wartości, które później wpływają na sposób działania "
 "programu. W tym celu dostarczana jest specjalna składnia eksportu."

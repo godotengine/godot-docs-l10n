@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1628,15 +1628,21 @@ msgstr ""
 "necessidade de chamar ``._init()`` explicitamente."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
+#, fuzzy
 msgid ""
 "Unlike the call of a regular function like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this:"
 msgstr ""
+"A o contrário da chamada regular da função como no exemplo acima com ``."
+"some_func``, se o construtor for herdade da classe com argumentos, será "
+"passado da seguinte forma:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
+#, fuzzy
 msgid "This is better explained through examples. Say we have this scenario:"
 msgstr ""
+"A melhor forma de explicar esses exemplos. São vendo o seguinte cenário:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
 #, fuzzy
@@ -1644,44 +1650,60 @@ msgid "There are a few things to keep in mind here:"
 msgstr "Não há restrições para usar Godot"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
+#, fuzzy
 msgid ""
 "if the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case) then the inheriting class (``Idle.gd``) "
 "*has* to define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``"
 msgstr ""
+"Se a classe herdada (``State.gd``) for definida pelo o construtor ``_init`` "
+"será pego o argumento (``e`` nesse caso) então a herança da classe  (``Idle."
+"gd``) *será* definida por ``_init``  assim como a apropriação dos "
+"parâmetros  ``_init`` de ``State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
+#, fuzzy
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
+"``Idle.gd`` pode ter diferentes números de argumentos com base nessa "
+"classe``State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
+#, fuzzy
 msgid ""
 "in the example above ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
 msgstr ""
+"no exemplo acima ``e`` passado por ``State.gd`` com o mesmo construtor ``e`` "
+"que foi passado dentro do``Idle.gd`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:987
+#, fuzzy
 msgid ""
 "if ``Idle.gd``'s ``_init`` constructor takes 0 arguments it still needs to "
 "pass some value to the ``State.gd`` base class even if it does nothing. "
 "Which brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. Eg.:"
 msgstr ""
+"Se``Idle.gd``'s ``_init`` do construtor retornar 0 nos argumentos será "
+"preciso enviar algum valor para o ``State.gd`` mesmo que a classe base não "
+"faça nada. O que nos leva ao fato de que você poderá passar no construtor "
+"base literalmente também, não apenas variáveis. Por exemplo.:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
 msgid "# Idle.gd"
-msgstr ""
+msgstr "# Idle.gd"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "func _init().(5):"
-msgstr ""
+msgstr "func  _init().(5):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "Inner classes"

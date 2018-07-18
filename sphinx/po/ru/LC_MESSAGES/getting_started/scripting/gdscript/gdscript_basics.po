@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1453,7 +1453,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:943
 msgid "Class Constructor"
-msgstr ""
+msgstr "Конструктор класса"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:945
 msgid ""
@@ -1462,6 +1462,10 @@ msgid ""
 "automatically when inheriting a class. So there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
+"Конструктор класса вызывается при создании экземпляра класса "
+"(инстанциировании) и называется ``_init``. Как говорилось ранее, конструктор "
+"класса-родителя вызывается автоматически, когда происходит наследование. "
+"Таким образом, необходимости вызывать ``._init`` вручную обычно нет."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
 msgid ""
@@ -1469,15 +1473,17 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this:"
 msgstr ""
+"В отличие от вызова обычной функции, как в примере выше с ``.some_func``, "
+"если конструктор из унаследованного класса принимает аргументы, то они "
+"передаются вот так:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid "This is better explained through examples. Say we have this scenario:"
-msgstr ""
+msgstr "Это лучше объяснить на примере. Допустим у нас следующая ситуация:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Нет никаких ограничений в использовании Godot"
+msgstr "Здесь есть несколько вещей, который необходимо держать в голове:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
 msgid ""

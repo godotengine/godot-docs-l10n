@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:4
 msgid "Lights And Shadows"
-msgstr ""
+msgstr "Luces y sombras"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:7
 msgid "Introduction"
@@ -30,20 +30,25 @@ msgid ""
 "Lights emit light that mixes with the materials and produces a visible "
 "result. Light can come from several types of sources in a scene:"
 msgstr ""
+"Las luces emiten luz que se mezcla con los materiales produciendo un "
+"resultado visible. La luz puede proceder de varios tipos de fuentes en una "
+"escena:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:12
 msgid ""
 "From the Material itself in the form of the emission color (though it does "
 "not affect nearby objects unless baked)."
 msgstr ""
+"Desde el Material mismo en la forma de color de emisión (aunque esto no "
+"afecta a los objetos cercanos, salvo que la luz sea pre-calculada)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:14
 msgid "Light Nodes: Directional, Omni and Spot."
-msgstr ""
+msgstr "Light Nodes: Directional, Omni y Spot."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:15
 msgid "Ambient Light in the :ref:`Environment <class_Environment>`."
-msgstr ""
+msgstr "Luz Ambiental en :ref:`Environment <class_Environment>`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:17
 msgid "Baked Light (read :ref:`doc_baked_lightmaps`)."
@@ -54,10 +59,12 @@ msgid ""
 "The emission color is a material property. You can read more about it in "
 "the :ref:`doc_spatial_material` tutorial."
 msgstr ""
+"El color de emisión es una propiedad del material. Puedes leer más sobre "
+"ello en el tutorial :ref:`doc_spatial_material`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:23
 msgid "Light nodes"
-msgstr ""
+msgstr "Light nodes"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:25
 msgid ""
@@ -65,20 +72,26 @@ msgid ""
 "and Spot. Each has different uses and will be described in detail below, but "
 "first let's take a look at the common parameters for lights:"
 msgstr ""
+"Como se ha mencionado anteriormente, existen tres tipos de nodos de luz: "
+"Direccional, Omni y Spot. Cada uno tiene diferentes usos y se describirán en "
+"detalle a continuación, pero primero echemos un vistazo a los parámetros "
+"comunes para las luces:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:32
 msgid "Each one has a specific function:"
-msgstr ""
+msgstr "Cada uno tiene una función específica:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:34
 msgid "**Color**: Base color for emitted light."
-msgstr ""
+msgstr "**Color**: Color base para la luz emitida."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:35
 msgid ""
 "**Energy**: Energy multiplier. This is useful for saturating lights or "
 "working with :ref:`doc_high_dynamic_range`."
 msgstr ""
+"**Energía**: Multiplicador de energía. Resulta útil para luces saturadas o "
+"para trabajar con :ref:`doc_high_dynamic_range`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:36
 msgid ""
@@ -91,6 +104,8 @@ msgid ""
 "**Negative**: Light becomes subtractive instead of additive. It's sometimes "
 "useful to manually compensate some dark corners."
 msgstr ""
+"**Negative**: La luz se vuelve sustractiva en lugar de aditiva. A veces es "
+"útil compensar manualmente algunas esquinas oscuras."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:38
 msgid ""
@@ -103,10 +118,12 @@ msgid ""
 "**Cull Mask**: Objects that are in the selected layers below will be "
 "affected by this light."
 msgstr ""
+"**Cul Mask**: Los objetos que se encuentren bajo las capas seleccionadas "
+"serán afectadas por esta luz."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:42
 msgid "Shadow Mapping"
-msgstr ""
+msgstr "Shadow Mapping"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:44
 msgid ""
@@ -115,10 +132,14 @@ msgid ""
 "There is a list of generic shadow parameters, each also has a specific "
 "function:"
 msgstr ""
+"Las luces opcionalmente pueden proyectar sombras. Esto les da mayor realismo "
+"(la luz no llega a las zonas ocluidas), pero puede incurrir en un mayor "
+"coste de rendimiento. Hay una lista de parámetros de sombra genéricos, cada "
+"uno también tiene una función específica:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:48
 msgid "**Enabled**: Check to enable shadow mapping in this light."
-msgstr ""
+msgstr "**Enabled**: Activa el mapeo de sombras con esta luz."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:49
 msgid ""
@@ -157,13 +178,13 @@ msgstr ""
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:63
 msgid ""
 "Any sort of bias issues can always be fixed by increasing the shadow map "
-"resolution, although that may lead to decreased peformance on low-end "
+"resolution, although that may lead to decreased performance on low-end "
 "hardware."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:67
 msgid "Directional light"
-msgstr ""
+msgstr "Directional light"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:69
 msgid ""
@@ -190,7 +211,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:84
 msgid "Directional Shadow Mapping"
-msgstr ""
+msgstr "Directional Shadow Mapping"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:86
 msgid ""
@@ -210,7 +231,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:97
 msgid "With this, shadows become more detailed:"
-msgstr ""
+msgstr "Con esto, las sombras son más detalladas:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:101
 msgid "To control PSSM, a number of parameters are exposed:"
@@ -231,6 +252,9 @@ msgid ""
 "needs. The closer the max distance, the higher quality they shadows will "
 "have."
 msgstr ""
+"Asegúrate de indicar una *Distancia Máxima* de sombra de acuerdo con las "
+"necesidades de la escena. Cuanto más cerca se encuentre la distancia máxima, "
+"mayor será la calidad de las sombras."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:114
 msgid ""
@@ -255,7 +279,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid "Finally, the **\"Depth Range\"** has two settings:"
-msgstr ""
+msgstr "Por último, el **\"Rango de Profundidad**\" tiene dos ajustes:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:131
 msgid ""
@@ -275,7 +299,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:134
 msgid "Just experiment which setting works better for your scene."
-msgstr ""
+msgstr "Experimenta para encontrar el que mejor funcione en tu escena."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:136
 msgid ""
@@ -291,7 +315,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
 msgid "Omni light"
-msgstr ""
+msgstr "Omni luz"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:145
 msgid ""

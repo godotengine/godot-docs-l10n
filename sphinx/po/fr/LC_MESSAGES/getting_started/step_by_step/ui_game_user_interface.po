@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,17 @@ msgid "Design the GUI"
 msgstr "Créer l'IHM"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a Game "
 "User Interface (GUI) with reusable UI components: a life bar, an energy bar, "
 "and bomb and rupee counters. By the end of this tutorial, you'll have a game "
 "GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
-"Maintenant que vous avez fait les bases, nous allons voir comment construire "
-"une Interface Homme-Machine (IHM) avec des"
+"Maintenant que vous avez acquis les bases, nous allons voir comment "
+"construire une interface graphique de jeu ( ou GUI) avec des composants "
+"d'interface réutilisables : une jauge de vie, une jauge d'énergie et des "
+"compteurs de bombes et de roupies. A la fin de ce tutoriel, vous aurez une "
+"interface graphique de jeu prête à contrôler avec GDscript ou Visualscript :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
@@ -42,22 +44,18 @@ msgid "You'll also learn to:"
 msgstr "Vous allez aussi apprendre à :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:17
-#, fuzzy
 msgid "Create flexible UI components"
 msgstr "Créer des composants d'interface utilisateur flexibles"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:18
-#, fuzzy
 msgid "Use scene inheritance"
 msgstr "Utiliser l'héritage de scène"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
-#, fuzzy
 msgid "Build a complex UI"
-msgstr "Concevoir une interface utilisateur complexe"
+msgstr "Construire une interface utilisateur complexe"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
-#, fuzzy
 msgid ""
 "Download the project files: :download:`ui_gui_design.zip <files/"
 "ui_gui_design.zip>` and extract the archive. Import the `start/` project in "
@@ -76,23 +74,20 @@ msgstr ""
 "watch?v=y1E_y9AIqow>`_."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:28
-#, fuzzy
 msgid "Breaking down the UI"
 msgstr "Décomposer l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:30
-#, fuzzy
 msgid ""
 "Let's break down the final UI and plan the containers we'll use. As in the :"
 "doc:`ui_main_menu`, it starts with a ``MarginContainer``. Then, we can see "
 "up to three columns:"
 msgstr ""
 "Décomposons l'interface utilisateur finale et prévoyons les conteneurs que "
-"nous utiliserons. Comme dans le :doc:`ui_main_menu_main`, il commence par un "
-"``MarginContainer``. Ensuite, nous pouvons voir jusqu'à trois colonnes :"
+"nous utiliserons. Comme dans le :doc:`ui_main_menu_main`, elle commence par "
+"un ``MarginContainer``. Ensuite, nous pouvons voir jusqu'à trois colonnes :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:34
-#, fuzzy
 msgid "The life and energy counters on the left"
 msgstr "Les compteurs de vie et d'énergie à gauche"
 
@@ -102,12 +97,10 @@ msgstr "Les barres de vie et d’énergie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
-#, fuzzy
 msgid "The bomb and rupee counters on the right"
 msgstr "Le compteur de bombes et de roupies sur la droite"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
-#, fuzzy
 msgid ""
 "But the bar's label and the gauge are two parts of the same UI element. If "
 "we think of them this way, we're left with two columns:"
@@ -118,10 +111,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:41
 msgid "The life and energy bars on the left"
-msgstr "Les bars de vie et d'énergie à gauche"
+msgstr "Les barres de vie et d'énergie à gauche"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:44
-#, fuzzy
 msgid ""
 "This makes it easier to nest containers: we have some margins around the "
 "border of the screen using a ``MarginContainer``, followed by an "
@@ -138,14 +130,12 @@ msgstr ""
 "les compteurs de bombes et de roupies côte à côte."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
-#, fuzzy
 msgid "We get a clean UI layout with only 4 containers"
 msgstr ""
 "Nous obtenons une disposition propre de l'interface utilisateur avec "
-"seulement 4 conteneurs."
+"seulement 4 conteneurs"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:55
-#, fuzzy
 msgid ""
 "We will need extra containers inside the individual UI components, but this "
 "gives us the main GUI scene's structure. With this plan in place, we can "
@@ -161,7 +151,6 @@ msgid "Create the base GUI"
 msgstr "Créer les bases de l'IHM"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:62
-#, fuzzy
 msgid ""
 "There are two possible approaches to the GUI: we can design elements in "
 "separate scenes and put them together, or prototype everything in a single "

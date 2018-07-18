@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,9 @@ msgid "Requirements"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:11
-msgid "Mono (the required version is listed here: :ref:`doc_c_sharp`)"
-msgstr ""
+#, fuzzy
+msgid "Mono 5.12.0 or greater"
+msgstr "Mono 5.2.0+ (mono-complete)"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:12
 msgid "MSBuild"
@@ -77,13 +78,15 @@ msgid "Generate The Glue"
 msgstr "生成胶水代码"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:30
+#, fuzzy
 msgid ""
-"The glue sources are the wrapper functions that will be called by the "
-"managed side. In order to generate them, first, you must build Godot with "
-"the options ``tools=yes`` and ``mono_glue=no``:"
+"The glue sources are the wrapper functions that will be called by managed "
+"methods. These source files must be generated before building your final "
+"binaries. In order to generate them, first, you must build a temporary Godot "
+"binary with the options ``tools=yes`` and ``mono_glue=no``:"
 msgstr ""
-"这些胶水代码用于封装 mono 所需要的一些功能。要生成这些代码，你需要首先通过 "
-"``tools=yes`` 和 ``mono_glue=no`` 配置构建一遍 Godot。"
+"这些粘合代码用于封装 mono 所需要的一些功能。要生成这些代码，你需要首先通过 "
+"``tools=yes`` 和 ``mono_glue=no`` 配置构建一遍 Godot："
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:36
 msgid ""
@@ -119,21 +122,24 @@ msgid "Notes"
 msgstr "注意"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:48
+#, fuzzy
 msgid ""
-"**Do not** build normal binaries with ``mono_glue=no``. This option disables "
-"C# scripting and therefore must only be used for the temporary binary that "
-"will be used to generate the glue. Godot should print a message at startup "
-"warning you about this."
+"**Do not** build your final binaries with ``mono_glue=no``. This disables C# "
+"scripting. This option must be used only for the temporary binary that will "
+"generate the glue. Godot will print a warning at startup if it was built "
+"without the glue sources."
 msgstr ""
 "**不要** 使用 ``mono_glue=no`` 配置来构建你的发布版 Godot。 此选项会禁用C＃脚"
 "本，它的构建结果是仅用于控制生成胶水代码的临时二进制文件。Godot 会在启动时打"
 "印一条消息，提醒你这件事。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:49
+#, fuzzy
 msgid ""
-"The glue sources must be regenerated every time the ClassDB API changes. If "
-"there is an API mismatch with the generated glue, Godot will print an error "
-"at startup."
+"The glue sources must be regenerated every time the ClassDB bindings "
+"changes. That is, for example, when a new method is added to ClassDB or one "
+"of the parameter of such a method changes. Godot will print an error at "
+"startup if there is an API mismatch between ClassDB and the glue sources."
 msgstr ""
 "胶水代码在每次 ClassDB 的API有变动时都要重新生成。 如果有API和生成的胶水代码"
 "不匹配， Godot 将在启动时在控制台输出错误信息。"
@@ -159,3 +165,58 @@ msgid ""
 msgstr ""
 "如果一切顺利的话， 除了通常的可执行文件之外 Scons 应该还在 ``bin`` 目录下生成"
 "了 **GodotSharpTools.dll* 文件。"
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:89
+#, fuzzy
+msgid "Command-line options"
+msgstr "命令行"
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:91
+msgid ""
+"The following is the list of command-line options available when building "
+"with the mono module:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:94
+msgid ""
+"**module_mono_enabled**: Build Godot with the mono module enabled (yes|no)"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:94
+#: ../../docs/development/compiling/compiling_with_mono.rst:100
+#: ../../docs/development/compiling/compiling_with_mono.rst:103
+#, fuzzy
+msgid "default: no"
+msgstr "默认环境"
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:97
+msgid ""
+"**mono_glue**: Whether to include the glue source files in the build and "
+"define `MONO_GLUE_DISABLED` as a preprocessor macro (yes|no)"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:97
+#, fuzzy
+msgid "default: yes"
+msgstr "默认功能"
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:100
+msgid ""
+"**xbuild_fallback**: Whether to fallback to xbuild if MSBuild is not "
+"available (yes|no)"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:103
+msgid "**mono_static**: Whether to link the mono runtime statically (yes|no)"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:105
+msgid ""
+"**mono_assemblies_output_dir**: Path to the directory where all the managed "
+"assemblies will be copied to. The '#' token indicates de top of the source "
+"directory, the directory in which SConstruct is located"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:106
+msgid "default: #bin"
+msgstr ""

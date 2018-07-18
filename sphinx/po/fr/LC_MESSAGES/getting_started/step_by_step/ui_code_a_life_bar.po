@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -942,6 +942,7 @@ msgid "So far, the update\\_health method looks like this:"
 msgstr "Jusqu'à maintenant, la fonction update\\_health ressemble à cela:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
+#, fuzzy
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
@@ -1127,6 +1128,11 @@ msgid ""
 "``_on_Player_died`` method and name them ``start_color`` and ``end_color``. "
 "Use the ``Color()`` constructor to build two ``Color`` values."
 msgstr ""
+"Nous allons interpoler entre deux couleurs : d'un blanc avec un alpha de "
+"``1`, soit une opacité totale, à un blanc pur avec une valeur alpha de ``0`, "
+"complètement transparent. Ajoutons deux variables en haut de la méthode "
+"``_on_Player_died`` et nommons les ``start_color`` et ``end_color``. "
+"Utilisez le constructeur ``Color()`` pour créer deux valeurs ``Color``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
 msgid ""
@@ -1134,30 +1140,46 @@ msgid ""
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
+"``Color(1.0, 1.0, 1.0)`` correspond au blanc. Le quatrième argument, "
+"respectivement ``1.0`` et ``0.0`` pour ``start_color`` et ``end_color``, est "
+"le canal alpha."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
 msgstr ""
+"Nous devons ensuite appeler à nouveau la méthode ``interpolate_property`` du "
+"noeud ``Tween`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#, fuzzy
 msgid ""
 "This time we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
+"Cette fois nous changeons la propriété ``modulate`` et nous faisons une "
+"animation à partir de la ``start_color`` jusqu'à la ``end_color``. La durée "
+"est d'une seconde, avec une transition linéaire. Ici encore le lissage n'est "
+"pas important parce que la transition est linéaire. Voici la méthode "
+"``_on_Player_died`` complète :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
+#, fuzzy
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr ""
+"Et voilà c'est tout. Vous pouvez jouer au jeu à présent afin de voir le "
+"résultat final !"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
+#, fuzzy
 msgid "The final result. Congratulations for getting there!"
-msgstr ""
+msgstr "Le résultat final. Félicitations d'être arrivé jusque là !"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
+#, fuzzy
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "
 "the Player gets poisoned, turn the bar red when its health drops low, shake "
@@ -1165,3 +1187,8 @@ msgid ""
 "signal to forward the information from the `Player` to the `GUI` and let the "
 "`GUI` process it."
 msgstr ""
+"En utilisant exactement les mêmes méthodes, vous pouvez changer la couleur "
+"de la barre quand le joueur est empoisonné, la mettre au rouge quand sa "
+"santé devient basse, secouer l'interface de l'utilisateur quand il prend un "
+"coup critique...Le principe est le même : émettre un signal pour transférer "
+"l'information du joueur au GUI et laisser le GUI traiter ce signal"

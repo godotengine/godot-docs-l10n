@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,35 +19,42 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:4
 msgid "Part 1"
-msgstr ""
+msgstr "Parte 1"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:7
 msgid "Tutorial introduction"
-msgstr ""
+msgstr "Introducción al tutorial"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:11
 msgid ""
 "This tutorial series will show you how to make a single player FPS game."
 msgstr ""
+"Esta serie de tutoriales te mostrará cómo crear un juego FPS para un solo "
+"jugador."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:13
 msgid "Throughout the course of this tutorial series, we will cover how:"
-msgstr ""
+msgstr "A lo largo del curso de esta serie de tutoriales, cubriremos cómo:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:15
 msgid "To make a first person character that can move, sprint, and jump."
 msgstr ""
+"Hacer un personaje en primera persona que pueda moverse, correr y saltar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:16
 msgid ""
 "To make a simple animation state machine for handling animation transitions."
 msgstr ""
+"Hacer una máquina de estado de animación simple para manejar transiciones de "
+"animación."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:17
 msgid ""
 "To add three weapons to the first person character, each using a different "
 "way to handle bullet collisions:"
 msgstr ""
+"Añadir tres armas al personaje en primera persona, cada una usando una forma "
+"diferente de manejar las colisiones de balas:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:18
 msgid "A knife (using an :ref:`Area <class_Area>`)"
@@ -55,76 +62,81 @@ msgstr "Un cuchillo (usando un :ref:`Area <class_Area>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:19
 msgid "A pistol (Bullet scenes)"
-msgstr ""
+msgstr "Una pistola (Escenas de bala)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:20
 msgid "A rifle (using a :ref:`Raycast <class_Raycast>`)"
-msgstr ""
+msgstr "Un rifle (usando un :ref:`Raycast <class_Raycast>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:21
 msgid "To add two different types of grenades to the first person character:"
 msgstr ""
+"Añadir dos tipos diferentes de granadas al personaje en primera persona:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:22
 msgid "A normal grenade"
-msgstr ""
+msgstr "Una granada normal"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:23
 msgid "A sticky grenade"
-msgstr ""
+msgstr "Una granada pegajosa"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:24
 msgid ""
 "To add the ability to grab and throw :ref:`RigidBody <class_RigidBody>` nodes"
 msgstr ""
+"Añadir la habilidad de agarrar y lanzar nodos :ref:`RigidBody "
+"<class_RigidBody>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:25
 msgid "To add joypad input for the player"
-msgstr ""
+msgstr "Añadir una entrada de mando (joypad) para el jugador"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:26
 msgid "To add ammo and reloading for all weapons that consume ammo."
-msgstr ""
+msgstr "Añadir munición y recargar todas las armas que consumen munición."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:27
 msgid "To add ammo and health pick ups"
-msgstr ""
+msgstr "Añadir munición y recuperadores de salud"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:28
 msgid "In two sizes: big and small"
-msgstr ""
+msgstr "En dos tamaños: grande y pequeño"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:29
 msgid "To add an automatic turret"
-msgstr ""
+msgstr "Añadir una torreta automática"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:30
 msgid "That can fire using bullet objects or a :ref:`Raycast <class_Raycast>`"
 msgstr ""
+"Que puede disparar usando objetos bala o un :ref:`Raycast <class_Raycast>"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:31
 msgid "To add targets that break when they've taken enough damage"
-msgstr ""
+msgstr "Añadir objetivos que se rompen cuando han recibido suficiente daño"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:32
 msgid "To add sounds that play when the guns fire."
-msgstr ""
+msgstr "Añadir sonidos que suenan cuando las armas disparan."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:33
 msgid "To add a simple main menu:"
-msgstr ""
+msgstr "Añadir un menú principal simple:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:34
 msgid "With an options menu for changing how the game runs"
-msgstr ""
+msgstr "Con un menú de opciones para cambiar el funcionamiento del juego"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:35
 msgid "With a level select screen"
-msgstr ""
+msgstr "Con una pantalla de selección de nivel"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:36
 msgid "To add a universal pause menu we can access anywhere"
 msgstr ""
+"Añadir un menú de pausa universal que podemos acceder desde cualquier lugar"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:38
 msgid ""
@@ -132,12 +144,18 @@ msgid ""
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development **before** going through this tutorial series."
 msgstr ""
+"Aunque este tutorial puede ser completado por principiantes, es altamente "
+"aconsejable completar :ref:`doc_your_first_game`, si eres nuevo en Godot y/o "
+"en el desarrollo de juegos **antes de** pasar por esta serie de tutoriales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
 msgid ""
 "Remember: Making 3D games is much harder than making 2D games. If you do not "
 "know how to make 2D games you will likely struggle making 3D games."
 msgstr ""
+"Recuerda: Hacer juegos 3D es mucho más difícil que hacer juegos 2D. Si no "
+"sabes cómo hacer juegos 2D es probable que tengas dificultades para hacer "
+"juegos 3D."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:46
 msgid ""
@@ -145,12 +163,17 @@ msgid ""
 "editor, have basic programming experience in GDScript, and have basic "
 "experience in game development."
 msgstr ""
+"Este tutorial asume que tienes experiencia trabajando con el editor de "
+"Godot, tienes experiencia básica de programación en GDScript, y tienes "
+"experiencia básica en el desarrollo de juegos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:49
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 msgstr ""
+"Puedes encontrar los recursos de inicio para este tutorial aquí: :download:"
+"`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:51
 msgid ""
@@ -158,6 +181,9 @@ msgid ""
 "models for making levels, and a few scenes already configured for this "
 "tutorial."
 msgstr ""
+"Los recursos de inicio proporcionados contienen un modelo 3D animado, un "
+"montón de modelos 3D para hacer niveles y algunas escenas ya configuradas "
+"para este tutorial."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:54
 msgid ""
@@ -165,6 +191,10 @@ msgid ""
 "TwistedTwigleg, with changes/additions by the Godot community. All original "
 "assets provided for this tutorial are released under the ``MIT`` license."
 msgstr ""
+"Todos los recursos proporcionados (a menos que se indique lo contrario) "
+"fueron creados originalmente por TwistedTwigleg, con cambios/adiciones por "
+"la comunidad de Godot. Todos los activos originales proporcionados para este "
+"tutorial están liberados bajo la licencia ``MIT``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:57
 msgid ""
@@ -172,34 +202,45 @@ msgid ""
 "to the Godot community, with the other assets belonging to those listed "
 "below:"
 msgstr ""
+"¡Siéntete libre de usar estos recursos como quieras! Todos los recursos "
+"originales pertenecen a la comunidad Godot, con los otros recursos "
+"pertenecientes a los enumerados a continuación:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:59
 msgid ""
 "The skybox is created by **StumpyStrust** on OpenGameArt. The skybox used is "
 "licensed under ``CC0``."
 msgstr ""
+"El skybox es creado por **StumpyStrust** en OpenGameArt. El skybox utilizado "
+"está bajo licencia ``CC0``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:62
 msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
 "Font License, Version 1.1``."
 msgstr ""
+"La fuente utilizada es **Titillium-Regular**, y está licenciada bajo la "
+"``SIL Open Font License, Version 1.1``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:64
 msgid ""
 "You can find the finished project for each part at the bottom of each part's "
 "page"
 msgstr ""
+"Puedes encontrar el proyecto terminado para cada parte en la parte inferior "
+"de la página de cada parte"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:67
 msgid "Part Overview"
-msgstr ""
+msgstr "Resumen de la Parte"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:69
 msgid ""
 "In this part we will be making a first person player that can move around "
 "the environment."
 msgstr ""
+"En esta parte vamos a hacer un jugador de primera persona que puede moverse "
+"alrededor del entorno."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:74
 msgid ""
@@ -208,14 +249,18 @@ msgid ""
 "person camera, that can jump into the air, turn on and off a flash light, "
 "and sprint."
 msgstr ""
+"Al final de esta parte tendrás un funcional personaje en primera persona que "
+"puede moverse por el entorno del juego, mirar a su alrededor con una cámara "
+"en primera persona basada en el ratón, que puede saltar en el aire, encender "
+"y apagar una linterna y correr."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
 msgid "Getting everything ready"
-msgstr ""
+msgstr "Preparando todo"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:79
 msgid "Launch Godot and open up the project included in the starter assets."
-msgstr ""
+msgstr "Inicia Godot y abre el proyecto incluido en los recursos iniciales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:81
 msgid ""
@@ -223,6 +268,10 @@ msgid ""
 "in this tutorial, they will make the tutorial much easier to follow as there "
 "are several pre-setup scenes we will be using throughout the tutorial series."
 msgstr ""
+"Aunque estos recursos no son necesariamente requeridos para utilizar los "
+"scripts proporcionados en este tutorial, harán que el tutorial sea mucho más "
+"fácil de seguir ya que hay varias escenas preconfiguradas que utilizaremos a "
+"lo largo de la serie de tutoriales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:85
 msgid ""
@@ -231,10 +280,14 @@ msgid ""
 "actions for our player. Feel free to change the keys bound to these actions "
 "if you want."
 msgstr ""
+"En primer lugar, abre los ajustes del proyecto y ve a la pestaña \"Mapa de "
+"Entradas\". Encontrarás que ya se han definido varias acciones. Usaremos "
+"estas acciones para nuestro jugador. Siéntete libre de cambiar las teclas "
+"vinculadas a estas acciones si lo deseas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:91
 msgid "Let's take a second to see what we have in the starter assets."
-msgstr ""
+msgstr "Tomémonos un segundo para ver qué tenemos en los recursos iniciales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:93
 msgid ""
@@ -242,6 +295,9 @@ msgid ""
 "`` we have 14 scenes, most of which we will be visiting as we go through "
 "this tutorial series."
 msgstr ""
+"En los recursos iniciales se incluyen varias escenas. Por ejemplo, en "
+"``res://`` tenemos 14 escenas, la mayoría de los cuales estaremos visitando "
+"a medida que avancemos en esta serie de tutoriales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:96
 msgid "For now let's open up ``Player.tscn``."
@@ -496,7 +552,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:309
 msgid ""
-"``process_movement`` is where we'll send all of the date necessary to the :"
+"``process_movement`` is where we'll send all of the data necessary to the :"
 "ref:`KinematicBody <class_KinematicBody>` so it can move through the game "
 "world."
 msgstr ""
@@ -635,8 +691,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:387
 msgid ""
-"To use the a :ref:`Spatial <class_Spatial>` node's local directional "
-"vectors, we use this code:"
+"To use the :ref:`Spatial <class_Spatial>` node's local directional vectors, "
+"we use this code:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:400

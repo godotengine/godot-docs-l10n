@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,35 +19,40 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "Instanziieren (Fortsetzung)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "Wiederholung"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"Das Instanziieren hat mehrere praktische Einsatzmöglichkeiten. Du hast:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "Die Möglichkeit Szenen aufzuteilen und diese einfacher zu Hand haben."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid ""
 "A more flexible alternative to prefabs (and much more powerful given that "
 "instances can be nested)."
 msgstr ""
+"Eine flexiblere (und sehr viel mächtigere, durch die Möglichkeit Instanzen "
+"zu verschachteln) Alternative zu Prefabs."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"Einen Weg deinen komplexe Spielfluss oder sogar UI's (in Godot sind UI "
+"Elemente auch Nodes) zu organisieren und einzubetten."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
 msgid "Design language"
-msgstr ""
+msgstr "Designsprache"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
 msgid ""
@@ -56,6 +61,10 @@ msgid ""
 "Godot from all the other engines out there. Godot was designed from the "
 "ground up around this concept."
 msgstr ""
+"Aber die größte Stärke, wenn es um das Instanziieren von Szenen geht, ist, "
+"dass es exellent als Designsprache funktioniert. Das ist die Godot von "
+"anderen Engines uunterscheidet. Godot wurde von Anfang an nach diesem "
+"Konzept entworfen."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
 msgid ""
@@ -65,10 +74,16 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"Beim Erstellen von Spielen mit Godot ist die die empfohlene Herangehensweise "
+"die, alle gängigen Designschemas, wie MVC oder Entity-Relationship Diagramme "
+"zu vergessen und statt dessen Szenen auf einem natürlicherem Weg zu "
+"gestalteten. Beginne, in dem du dir die sichtbaren Elemente in deinem Spiel "
+"vorstellst. Nicht nur die, die ein Programmierer nennen kann, sondern die, "
+"die alle sehen."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
 msgid "For example, here's how a simple shooter game could be imagined:"
-msgstr ""
+msgstr "So könnte man sich zum Beispiel einen simplen Shooter vorstellen:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
 msgid ""
@@ -76,6 +91,9 @@ msgid ""
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
+"Solch ein Diagramm kann man für jedes mögliche Spiel erstellen. Schreibe "
+"auf, welche Teile des Spiels du visualisieren kannst und füge Pfeile hinzu "
+"um die Beziehungen zwischen den Komponenten zu repräsentieren."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
 msgid ""
@@ -84,6 +102,9 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"Sobald du solch ein Diagramm hast, empfiehlt es sich für jedes Element im "
+"Diagramm eine Szene zu erstellen. Um die Beziehungen zu verwirklichen wirst "
+"du das Instanziieren (entweder im Code oder direkt im Editor) verwenden."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
 msgid ""
@@ -95,12 +116,22 @@ msgid ""
 "design-based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"Beim Programmieren von Spielen (oder Software allgemein) wird viel Zeit "
+"dafür investiert eine Architektur zu erstellen und die Spielekomponenten "
+"dieser anzupassen. Das Entwerfen anhand von Szenen ersetzt diese "
+"Herangehensweise und macht damit das Entwickeln schneller und mehr gerade "
+"hinaus. Dies erlaubt es sich mehr auf die eigentliche Spiellogik zu "
+"konzentrieren. Da die meisten Spielekomponenten direkt in eine Szene gesetzt "
+"werden, erlaubt der Entwurf rund um Szeneninstanzierung, dass wenig "
+"architektonischer Code nötig ist."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"Schauen wir uns num etwas komplexeres wie zum Beispiel ein Open-World Spiel "
+"an, welches viele Assets und verschachtete Elemente besitzt:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
 msgid ""
@@ -109,6 +140,10 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"Schau die das Raumelement an. Beginnen wir hier. Wir könnten ein Paar "
+"verschiedene Raumszenen anlegen, welche verschiedene Sammlungen an "
+"Möbeln(ebenfalls Szenen) beinhalten. Später können wir eine Hausszene "
+"erstellen, welche die Räume verbindet und so das Innere beschreibt."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
 msgid ""
@@ -116,6 +151,9 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"Dann könnten wir eine Szene für eine Festung erstellen, welche aus vielen "
+"dieser instanziierten Häuser besteht. Danach könnten wir anfangen und das "
+"Terrain auf der Weltkarte erstellen und dort die Festung hinzufügen."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
 msgid ""
@@ -123,6 +161,9 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"Später könnten wir Szenen anlegen, die Wachen repräsentieren (und ander "
+"NPCs) und dieser der Festung hinzufügen. Das Resultat wäre, dass sie "
+"indirekt der kompletten Spielwelt hinzugefügt werden."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
 msgid ""
@@ -133,10 +174,16 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Mit Godot ist es einfach neue Objekte hinzuzufügen, alles was man tun ist "
+"ist mehr Szenen zu erstellen und zu initiieren. Darüber hinaus ist die UI "
+"des Editors so entworfen worden, dass sie benutzerfreunflich für "
+"Programmiere und nicht Programmierer ist. Ein typisches Entwicklerteam kann "
+"2D und 3D Künstler, Leveldesigner, Gamedesigner und Animateure einschließen, "
+"die alle mit diesem Editorinterface arbeiten."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
 msgid "Information overload!"
-msgstr ""
+msgstr "Informationsüberfluss!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
 msgid ""
@@ -144,6 +191,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"Wir haben dir hier viele \"high-level\" Informationen auf einmal an den Kopf "
+"geworfen. Allerdings war ein wichtiger Teil dieses Tutorials der, dir zu "
+"zeigen wie Szenen und Instanziierung in realen Projekten verwendet wird."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
 msgid ""
@@ -151,3 +201,7 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
+"Alles, was wir hier beschrieben haben wird mit der Zeit für die ganz "
+"natürlich, wenn du anfängst Spiele zu erstellen und die Konzepte in die "
+"Praxis umsetzt. Kümmere dich für das erste nicht darum und beginne mit der "
+"nächsten Anleitung!"

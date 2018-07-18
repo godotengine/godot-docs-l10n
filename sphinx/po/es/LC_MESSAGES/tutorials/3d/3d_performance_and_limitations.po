@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,12 @@ msgstr ""
 "prácticos de esto son:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:13
+#, fuzzy
 msgid ""
 "Rendering objects efficiently in high amounts is easy, but when a large "
 "scene must be rendered, it can become inefficient. To solve this, visibility "
 "computation must be added to the rendering, which makes rendering less "
-"efficient, but, at the same time, less objects are rendered, so efficiency "
+"efficient, but, at the same time, fewer objects are rendered, so efficiency "
 "overall improves."
 msgstr ""
 "Renderizar objetos eficientemente en grandes cantidades es fácil, pero "
@@ -141,11 +142,12 @@ msgstr ""
 "prioridades de Godot serán así:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:57
+#, fuzzy
 msgid ""
-"**Reusing Materials**: The less amount of different materials in the scene, "
-"the faster the rendering will be. If a scene has a huge amount of objects "
-"(in the hundreds or thousands) try reusing the materials or in the worst "
-"case use atlases."
+"**Reusing Materials**: The fewer different materials in the scene, the "
+"faster the rendering will be. If a scene has a huge amount of objects (in "
+"the hundreds or thousands) try reusing the materials or in the worst case "
+"use atlases."
 msgstr ""
 "**Reutilización de Materiales**: Cuanto menor sea la cantidad de materiales "
 "diferentes en la escena, más rápido será el renderizado. Si una escena tiene "
@@ -228,6 +230,11 @@ msgid ""
 "grid. Mobile GPUs are limited to a tiny battery, so they need to be a lot "
 "more power efficient."
 msgstr ""
+"En dispositivos móviles, la historia es diferente. Los GPU para computadoras "
+"y consolas son monstruos de fuerza bruta que pueden extraer tanta "
+"electricidad como necesitan de la red eléctrica. Las GPU móviles están "
+"limitadas a una batería pequeña, por lo que deben ser mucho más eficientes "
+"en términos de energía."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:96
 msgid ""
@@ -240,17 +247,35 @@ msgid ""
 "this and just throw more pixel processors to the hardware to increase "
 "performance (but this also increases power consumption)."
 msgstr ""
+"Para ser más eficientes, las GPU móviles intentan evitar el *sobregiro*. "
+"Esto significa que el mismo píxel en la pantalla se procesa (como en, con "
+"cálculo de iluminación, etc.) más de una vez. Imagine una ciudad con varios "
+"edificios, las GPU no saben qué es visible y qué está oculto hasta que lo "
+"dibujen. Se podría dibujar una casa y luego otra casa enfrente (¡la "
+"representación ocurrió dos veces para el mismo píxel!). A las GPU de PC "
+"normalmente no les importa mucho esto y solo lanzan más procesadores de "
+"píxeles al hardware para aumentar el rendimiento (pero esto también aumenta "
+"el consumo de energía)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:106
+#, fuzzy
 msgid ""
 "On mobile, pulling more power is not an option, so a technique called \"Tile "
 "Based Rendering\" is used (almost every mobile hardware uses a variant of "
 "it), which divide the screen into a grid. Each cell keeps the list of "
 "triangles drawn to it and sorts them by depth to minimize *overdraw*. This "
 "technique improves performance and reduces power consumption, but takes a "
-"toll on vertex performance. As a result, less vertices and triangles can be "
+"toll on vertex performance. As a result, fewer vertices and triangles can be "
 "processed for drawing."
 msgstr ""
+"En dispositivos móviles, no es posible extraer más energía, por lo que se "
+"usa una técnica llamada \"Representación basada en mosaico\" (casi todos los "
+"dispositivos móviles usan una variante), que divide la pantalla en una "
+"cuadrícula. Cada celda mantiene la lista de triángulos dibujados y los "
+"ordena en profundidad para minimizar el * sobregiro *. Esta técnica mejora "
+"el rendimiento y reduce el consumo de energía, pero afecta el rendimiento de "
+"los vértices. Como resultado, se pueden procesar menos vértices y triángulos "
+"para dibujar."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:114
 msgid ""
@@ -261,6 +286,12 @@ msgid ""
 "all the other cells must wait for it to complete in order to display the "
 "frame)."
 msgstr ""
+"Generalmente, esto no es tan malo, pero hay un caso en la esquina del móvil "
+"que debe evitarse, que es tener objetos pequeños con mucha geometría dentro "
+"de una pequeña porción de la pantalla. Esto obliga a las GPUs móviles a "
+"ejercer mucha presión sobre una única celda de la pantalla, lo que reduce "
+"considerablemente el rendimiento (ya que todas las demás celdas deben "
+"esperar a que se complete para mostrar el cuadro)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:121
 msgid ""
@@ -269,24 +300,32 @@ msgid ""
 "example, a character, NPC, vehicle, etc. is far away (so it looks tiny), use "
 "a smaller level of detail (LOD) model instead."
 msgstr ""
+"Para resumir, no te preocupes tanto por el número de vértices en los "
+"móviles, sino que evita la concentración de vértices en pequeñas partes de "
+"la pantalla. Si, por ejemplo, un personaje, NPC, vehículo, etc. está lejos "
+"(por lo que parece pequeño), utiliza en su lugar un modelo de nivel de "
+"detalle (LOD) más pequeño."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:126
 msgid ""
 "An extra situation where vertex cost must be considered is objects that have "
 "extra processing per vertex, such as:"
 msgstr ""
+"Una situación adicional en la que se debe tener en cuenta el coste de los "
+"vértices son los objetos que tienen un procesamiento extra por vértice, como "
+"por ejemplo:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:129
 msgid "Skinning (skeletal animation)"
-msgstr ""
+msgstr "Skinning (animación esquelética)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:130
 msgid "Morphs (shape keys)"
-msgstr ""
+msgstr "Morphs (claves de forma)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:131
 msgid "Vertex Lit Objects (common on mobile)"
-msgstr ""
+msgstr "Objetos con vértices iluminados (común en móviles)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:134
 msgid "Texture compression"
@@ -298,12 +337,18 @@ msgid ""
 "compression). Video RAM compression is not as efficient in size as PNG or "
 "JPG when stored, but increase performance enormously when drawing."
 msgstr ""
+"Godot ofrece comprimir texturas de modelos 3D cuando se importan (compresión "
+"VRAM). La compresión de RAM de vídeo no es tan eficiente en tamaño como la "
+"de PNG o JPG cuando se almacena, pero aumenta enormemente el rendimiento "
+"cuando se dibuja."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:140
 msgid ""
 "This is because the main goal of texture compression is bandwidth reduction "
 "between memory and the GPU."
 msgstr ""
+"Esto se debe a que el objetivo principal de la compresión de texturas es la "
+"reducción del ancho de banda entre la memoria y la GPU."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:143
 msgid ""
@@ -312,12 +357,19 @@ msgid ""
 "on shapes inside the textures, so the artifacting resulting from the "
 "compression is more noticeable."
 msgstr ""
+"En 3D, la forma de los objetos depende más de la geometría que de la "
+"textura, por lo que la compresión generalmente no se nota. En 2D, la "
+"compresión depende más de las formas dentro de las texturas, por lo que el "
+"resultado de la compresión es más notable."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:148
 msgid ""
 "As a warning, most Android devices do not support texture compression of "
 "textures with transparency (only opaque), so keep this in mind."
 msgstr ""
+"A modo de advertencia, la mayoría de los dispositivos Android no admiten la "
+"compresión de texturas con transparencia (sólo opacas), así que tenlo en "
+"cuenta."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:152
 msgid "Transparent objects"
@@ -332,23 +384,37 @@ msgid ""
 "a minimum! If an object has a small section with transparency, try to make "
 "that section a separate material."
 msgstr ""
+"Como se mencionó antes, Godot clasifica los objetos por material y shader "
+"para mejorar el rendimiento. Esto, sin embargo, no se puede hacer en objetos "
+"transparentes. Los objetos transparentes se renderizan de atrás hacia "
+"adelante para hacer que se mezclen con lo que hay detrás del trabajo. Por lo "
+"tanto ¡intenta reducir al mínimo la transparencia de los objetos! Si un "
+"objeto tiene una sección pequeña con transparencia, intenta hacer de esa "
+"sección un material independiente."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:162
 msgid "Level of detail (LOD)"
 msgstr "Nivel de detalle (LOD)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:164
+#, fuzzy
 msgid ""
-"As also mentioned before, using objects with less vertices can improve "
+"As also mentioned before, using objects with fewer vertices can improve "
 "performance in some cases. Godot has a simple system to change level of "
 "detail, :ref:`GeometryInstance <class_GeometryInstance>` based objects have "
 "a visibility range that can be defined. Having several GeometryInstance "
 "objects in different ranges works as LOD."
 msgstr ""
+"Como también se mencionó anteriormente, el uso de objetos con menos vértices "
+"puede mejorar el rendimiento en algunos casos. Godot tiene un sistema simple "
+"para cambiar el nivel de detalle, los objetos basados en `:ref:"
+"`GeometryInstance <class_GeometryInstance>` tienen un rango de visibilidad "
+"que puede ser definido. Tener varios objetos GeometryInstance en diferentes "
+"rangos funciona como LOD."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:172
 msgid "Use instancing (MultiMesh)"
-msgstr ""
+msgstr "Usar la instanciación (MultiMesh)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:174
 msgid ""
@@ -357,10 +423,14 @@ msgid ""
 "drawing of dozens of thousands of objects at very little performance cost, "
 "making it ideal for flocks, grass, particles, etc."
 msgstr ""
+"Si hay que dibujar varios objetos iguales en el mismo lugar o cercanos entre "
+"sí, intenta usar :ref:`MultiMesh <class_MultiMesh>` en su lugar. MultiMesh "
+"permite dibujar decenas de miles de objetos con un coste de rendimiento muy "
+"bajo, lo que lo hace ideal para multitudes, hierba, partículas, etc."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:181
 msgid "Bake lighting"
-msgstr ""
+msgstr "Bake de iluminación"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:183
 msgid ""
@@ -369,6 +439,10 @@ msgid ""
 "ref:`doc_baked_lightmaps`). Baking can also improve the scene quality by "
 "adding indirect light bounces."
 msgstr ""
+"Las luces pequeñas no suelen ser un problema de rendimiento. Las sombras un "
+"poco más. En general, si varias luces necesitan afectar una escena, lo ideal "
+"es hacer un bake (:ref:`doc_baked_lightmaps`). El baking también puede "
+"mejorar la calidad de la escena añadiendo rebotes de luz indirectos."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:188
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,7 +128,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:66
 msgid ""
-"The scene tree is made up of ... nodes! The heading of each node consists of "
+"The scene tree is made up of... nodes! The heading of each node consists of "
 "it's name, parent and (most of the time) a type. For example :code:`[node "
 "type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]`"
 msgstr ""
@@ -195,7 +195,7 @@ msgstr ""
 msgid ""
 "Skeleton node inherits Spatial node, besides that it may have a list of "
 "bones described in key, value pair in the format :code:`bones/Id/"
-"Attribute=Value`, attributes of bone consisits of"
+"Attribute=Value`, attributes of bone consists of"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:159
@@ -208,20 +208,20 @@ msgstr "parent"
 
 #: ../../docs/development/file_formats/tscn.rst:161
 msgid "rest"
-msgstr ""
+msgstr "rest"
 
 #: ../../docs/development/file_formats/tscn.rst:162
 msgid "pose"
-msgstr ""
+msgstr "pose"
 
 #: ../../docs/development/file_formats/tscn.rst:163
 #: ../../docs/development/file_formats/tscn.rst:384
 msgid "enabled"
-msgstr ""
+msgstr "enabled"
 
 #: ../../docs/development/file_formats/tscn.rst:164
 msgid "bound_children"
-msgstr ""
+msgstr "bound_children"
 
 #: ../../docs/development/file_formats/tscn.rst:166
 msgid ":code:`name` must put as the first attribute of each bone"
@@ -253,7 +253,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:198
 msgid "BoneAttachment"
-msgstr ""
+msgstr "BoneAttachment"
 
 #: ../../docs/development/file_formats/tscn.rst:199
 msgid ""
@@ -318,26 +318,26 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:271
 msgid "A path"
-msgstr ""
+msgstr "шляху"
 
 #: ../../docs/development/file_formats/tscn.rst:272
 msgid "A type"
-msgstr ""
+msgstr "типу"
 
 #: ../../docs/development/file_formats/tscn.rst:273
 msgid "An ID"
-msgstr ""
+msgstr "ідентифікатора"
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
-"Godot alway generates absolute paths relative to the resource directory and "
+"Godot always generates absolute paths relative to the resource directory and "
 "thus prefixed with :code:`res://`, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:279
 msgid "Some example external resources are:"
-msgstr ""
+msgstr "Ось декілька прикладів зовнішніх ресурсів:"
 
 #: ../../docs/development/file_formats/tscn.rst:288
 msgid "Internal Resources"
@@ -369,7 +369,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:313
 msgid "ArrayMesh"
-msgstr ""
+msgstr "ArrayMesh"
 
 #: ../../docs/development/file_formats/tscn.rst:314
 msgid ""
@@ -395,7 +395,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:323
 msgid "morph_arrays"
-msgstr ""
+msgstr "morph_arrays"
 
 #: ../../docs/development/file_formats/tscn.rst:325
 msgid ""
@@ -404,19 +404,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:328
-msgid ":code:`arrays` as name suggestes is an array of array, it contains:"
+msgid ":code:`arrays` as the name suggests is an array of array, it contains:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:330
-msgid "a array of vertex position"
+msgid "An array of vertex position"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:331
-msgid "tagents array"
-msgstr ""
+#, fuzzy
+msgid "Tangents array"
+msgstr "Дотична"
 
 #: ../../docs/development/file_formats/tscn.rst:332
-msgid "vertex color array"
+msgid "Vertex color array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:333
@@ -428,15 +429,15 @@ msgid "UV array 2"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:335
-msgid "bone index array"
+msgid "Bone index array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:336
-msgid "bone weight array"
+msgid "Bone weight array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:337
-msgid "vertex index array"
+msgid "Vertex index array"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:339
@@ -447,7 +448,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:342
 msgid "An example of ArrayMesh:"
-msgstr ""
+msgstr "Приклад ArrayMesh:"
 
 #: ../../docs/development/file_formats/tscn.rst:365
 msgid "Animation"
@@ -465,11 +466,11 @@ msgstr "length"
 
 #: ../../docs/development/file_formats/tscn.rst:370
 msgid "loop"
-msgstr ""
+msgstr "loop"
 
 #: ../../docs/development/file_formats/tscn.rst:371
 msgid "step"
-msgstr ""
+msgstr "step"
 
 #: ../../docs/development/file_formats/tscn.rst:373
 msgid ":code:`length` and :code:`step` are both time in seconds"
@@ -477,8 +478,8 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:375
 msgid ""
-"Each track is described by a list of key, value pairt in the format :code:"
-"`tracks/Id/Attribute`, it includs:"
+"Each track is described by a list of (key, value) pairs in the format :code:"
+"`tracks/Id/Attribute`, it includes:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:378
@@ -495,11 +496,11 @@ msgstr "interp"
 
 #: ../../docs/development/file_formats/tscn.rst:381
 msgid "keys"
-msgstr ""
+msgstr "keys"
 
 #: ../../docs/development/file_formats/tscn.rst:382
 msgid "loop_wrap"
-msgstr ""
+msgstr "loop_wrap"
 
 #: ../../docs/development/file_formats/tscn.rst:383
 msgid "imported"
@@ -521,7 +522,7 @@ msgstr "'value'"
 
 #: ../../docs/development/file_formats/tscn.rst:392
 msgid "'method'"
-msgstr ""
+msgstr "'method'"
 
 #: ../../docs/development/file_formats/tscn.rst:394
 msgid ""
@@ -538,15 +539,15 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:401
 msgid "0 (constant)"
-msgstr "0 (стала)"
+msgstr "0 (сталий)"
 
 #: ../../docs/development/file_formats/tscn.rst:402
 msgid "1 (linear)"
-msgstr ""
+msgstr "1 (лінійний)"
 
 #: ../../docs/development/file_formats/tscn.rst:403
 msgid "2 (cubic)"
-msgstr ""
+msgstr "2 (кубічний)"
 
 #: ../../docs/development/file_formats/tscn.rst:405
 msgid ""
@@ -558,7 +559,7 @@ msgstr ""
 msgid ""
 "A transform track use every 12 real number in the :code:`keys` to describte "
 "a keyframe. The first number is the timestamp, the second number is the "
-"transision (default 1.0 in transform track), followed by a three number "
+"transition (default 1.0 in transform track), followed by a three number "
 "translation vector, followed by four number rotation quaternion (x,y,z,w) "
 "and finally a three number scale vector."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,9 @@ msgid ""
 "`doc_gdscript`. Nowadays, Godot has four (yes, four!) official languages and "
 "the ability to add extra scripting languages dynamically!"
 msgstr ""
-"Godot 3.0 이전에는, 스크립팅 하는 법이 :ref:`doc_gdscript` 뿐 이었습니다. 지"
-"금은, Godot은 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 스크립트 언어"
-"를 추가하는 기능도 있습니다!"
+"고도 3.0 이전에는, 스크립팅 하는 법이 :ref:`doc_gdscript` 뿐 이었습니다. 지금"
+"은, 고도는 4개를 (그래요, 4개!) 공식 언어로 갖고 있고 추가로 스크립트 언어를 "
+"추가하는 기능도 있습니다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -51,9 +51,9 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
-"Godot에서 \"메인\" 언어는 GDScript와 VisualScript입니다. 이들이 선택된 주된 "
-"이유는 Godot과 통합 능력이 좋기 때문입니다, 둘다 매끄러운 에디터 통합을 갖고 "
-"있습니다, 반면 C#과 C++는 별도의 IDE에 속합니다. 당신이 정적 언어를 좋아한다"
+"고도에서 \"메인\" 언어는 GDScript와 VisualScript입니다. 이들이 선택된 주된 이"
+"유는 고도와 통합 능력이 좋기 때문입니다, 둘다 매끄러운 에디터 통합을 갖고 있"
+"습니다, 반면 C#과 C++는 별도의 IDE에 속합니다. 당신이 정적 언어를 좋아한다"
 "면, C#과 C++로 이동하세요."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
@@ -66,9 +66,8 @@ msgid ""
 "Using it has some positive points compared to other languages due to its "
 "high integration with Godot:"
 msgstr ""
-":ref:`doc_gdscript` 는 앞에서 말했듯, Godot에서 사용되는 메인 언어입니다. 이 "
-"언어는 다른 언어들에 비해 Godot과의 높은 통합성으로 인해 갖는 장점이 있습니"
-"다:"
+":ref:`doc_gdscript` 는 앞에서 말했듯, 고도에서 사용되는 메인 언어입니다. 이 "
+"언어는 다른 언어들에 비해 고도와의 높은 통합성으로 인해 갖는 장점이 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -141,8 +140,8 @@ msgid ""
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
-"3.0을 시작하면서, Godot은 :ref:`Visual Scripting<doc_what_is_visual_script>` "
-"을 제공합니다. 이것은 \"블록과 연결\" 언어의 일반적인 구현이지만, Godot의 작"
+"3.0을 시작하면서, 고도는 :ref:`Visual Scripting<doc_what_is_visual_script>` "
+"을 제공합니다. 이것은 \"블록과 연결\" 언어의 일반적인 구현이지만, 고도의 작"
 "동 방식에 맞게 조정됬습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
@@ -202,11 +201,10 @@ msgid ""
 "programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
 "is the only officially supported .NET option."
 msgstr ""
-"Godot이 `Mono <https://mono-project.com>`_ .NET 런타임을 사용하기 때문에, 이"
-"론적으로 어떤 서드 파티 .NET 라이브러리나 프레임워크라도 Godot의 스크립트에 "
-"사용될 수 있고, F#, Boo, ClojureCLR와 같은 공용 언어 인프라 호환 프로그래밍 "
-"언어 또한 가능합니다. 하지만, 실제로는 C#만 공식으로 지원하는 .NET 옵션입니"
-"다."
+"고도가 `Mono <https://mono-project.com>`_ .NET 런타임을 사용하기 때문에, 이론"
+"적으로 어떤 서드 파티 .NET 라이브러리나 프레임워크라도 고도의 스크립트에 사용"
+"될 수 있고, F#, Boo, ClojureCLR와 같은 공용 언어 인프라 호환 프로그래밍 언어 "
+"또한 가능합니다. 하지만, 실제로는 C#만 공식으로 지원하는 .NET 옵션입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:75
 msgid "GDNative / C++"
@@ -217,9 +215,8 @@ msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
-"마침내 3.0 출시에 가장 빛나는 추가점들 중 하나인: GDNative는 Godot을 다시 컴"
-"파일 하지 않아도 (심지어 재시작을 하지않아도) C++에서 스크립팅 할 수 있게 만"
-"듭니다."
+"마침내 3.0 출시에 가장 빛나는 추가 요소: GDNative는 고도를 다시 컴파일 하지 "
+"않아도 (심지어 재시작을 하지않아도) C++에서 스크립팅 할 수 있게 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
 msgid ""
@@ -239,7 +236,7 @@ msgid ""
 msgstr ""
 "이 언어는 훌륭한 성능을 가지며, GDScript또는 VisualScript을 통해 다른 부분을 "
 "작성할 수 있으므로 게임 전체에서 사용할 필요는 없습니다. 그러나 이 API는 명확"
-"하고 사용하기 쉽습니다. 이 API의 대부분은 Godot의 실제 C++API와 유사하기 때문"
+"하고 사용하기 쉽습니다. 이 API의 대부분은 고도의 실제 C++API와 유사하기 때문"
 "이죠."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
@@ -437,7 +434,7 @@ msgid ""
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
 "이 단계에서 우리는 \"pressed\" 시그널을 사용자 지정 기능에 연결할 겁니다. 먼"
-"저 연결 형식을 지정한 후에 두 번째로 사용자 지정 기능을 정의합니다. Godot에서"
+"저 연결 형식을 지정한 후에 두 번째로 사용자 지정 기능을 정의합니다. 고도에서"
 "는 연결하기 위한 2가지 방법을 제공합니다: 에디터에서 제공하는 시각적 인터페이"
 "스나 코드를 통해 사용자 지정 기능에 연결할 수 있습니다."
 
@@ -554,16 +551,16 @@ msgstr ""
 msgid "The final script should look like this:"
 msgstr "최종 스크립트는 다음과 같아야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:317
+#: ../../docs/getting_started/step_by_step/scripting.rst:314
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr "씬을 실행하고 버튼을 누르면 다음과 같은 결과를 얻을 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:321
+#: ../../docs/getting_started/step_by_step/scripting.rst:318
 msgid "Why, hello there! Congratulations on scripting your first scene."
 msgstr "어머, 안녕하세요! 첫번째 씬을 스크립팅 하신 것을 축하 드립니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:325
+#: ../../docs/getting_started/step_by_step/scripting.rst:322
 msgid ""
 "A common misunderstanding regarding this tutorial is how ``get_node(path)`` "
 "works. For a given node, ``get_node(path)`` searches its immediate children. "
@@ -571,15 +568,15 @@ msgid ""
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
 "이 튜토리얼에 관한 흔한 오해는 ``get_node(path)`` 가 작동하는 방법입니다. 주"
-"어진 노드의 경우,``get_node(path)`` 는 직계 자식을 검색합니다. 위 코드에서 버"
-"튼은 패널의 자식임을 의미합니다. 만일 버튼이 패널이 아닌 라벨의 하위 항목이라"
-"면 얻게 될 코드는 다음과 같습니다:"
+"어진 노드의 경우, ``get_node(path)`` 는 직계 자식을 검색합니다. 위 코드에서 "
+"버튼은 패널의 자식임을 의미합니다. 만일 버튼이 패널이 아닌 라벨의 하위 항목이"
+"라면 얻게 될 코드는 다음과 같습니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:343
+#: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr "또한 노드는 유형이 아닌 이름으로 참조됩니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:347
+#: ../../docs/getting_started/step_by_step/scripting.rst:344
 msgid ""
 "The right-hand panel of the connect dialogue is for binding specific values "
 "to the connected function's parameters. You can add and remove values of "
@@ -588,7 +585,7 @@ msgstr ""
 "연결 다이얼로그의 오른쪽 패널은 특정 값을 연결된 함수의 매개변수에 바인딩 하"
 "기 위한 것입니다. 다른 유형의 값을 추가하거나 제거할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scripting.rst:351
+#: ../../docs/getting_started/step_by_step/scripting.rst:348
 msgid ""
 "The code approach also enables this with a 4th ``Array`` parameter that is "
 "empty by default. Feel free to read up on the ``Object.connect`` method for "

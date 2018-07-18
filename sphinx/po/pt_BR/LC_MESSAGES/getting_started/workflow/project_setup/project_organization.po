@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,34 +33,49 @@ msgid ""
 "engine can be a little challenging. Because of this, a simple workflow will "
 "be described, which can be used or not, but should work as a starting point."
 msgstr ""
+"Esse tutorial foi escrito para propor um simples fluxo de trabalho em como "
+"organizar projetos. Uma vez que o Godot permite ao programador usar o "
+"sistema de arquivos como quiserem, encontrar um modo de organizar os "
+"projetos ao começar a usar a engine pode ser um pouco desafiador. Por causa "
+"disso, um simples fluxo de trabalho será descrito, que pode ser usado ou "
+"não, mas pode funcionar como um ponto inicial."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
 msgid ""
 "Additionally, using version control can be challenging so this proposition "
 "will include that too."
 msgstr ""
+"Adicionalmente, usar controle de versão pode ser desafiador, então essa "
+"proposta incluirá isso também."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid "Organization"
-msgstr ""
+msgstr "Organização"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
 msgid ""
 "Godot is scene based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
+"Godot é baseado em cenas por natureza, e usa o sistema de arquivos como ele "
+"é, sem metadata ou um bando de dados de recursos."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:25
 msgid ""
 "Unlike other engines, a lot of resource are contained within the scene "
 "itself, so the amount of files in the filesystem is considerably lower."
 msgstr ""
+"Ao contrário de outras engines, muitos recursos estão contidos dentro da "
+"própria cena, então a quantidade de arquivos no sistema de arquivos é "
+"consideravelmente mais baixa."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:28
 msgid ""
 "Considering that, the most common approach is to group assets close to "
 "scenes as, when a project grows, it makes it more maintainable."
 msgstr ""
+"Considerando isso, o modo mais comum de lidar com isso é agrupar recursos "
+"com as cenas, assim, quando um projeto cresce, ele fica mais gerenciável."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:31
 msgid ""
@@ -68,26 +83,38 @@ msgid ""
 "can usually be organized in a place, while a separate folder is used to "
 "store built levels that use them."
 msgstr ""
+"Como exemplo, imagens, cenas de modelos 3D ou meshes, materiais, etc. podem "
+"geralmente ser organizados em um lugar, enquanto uma pasta separada é usada "
+"para salvar levels construídos que os usam."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid "Importing"
-msgstr ""
+msgstr "Importando"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
+#, fuzzy
 msgid ""
 "Godot version previous to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
+"A versão Godot anterior ao 3.0 fez o processo de importação dos arquivos "
+"fora do projeto. Embora isso possa ser útil em grandes projetos, isso "
+"resultou em problemas para a maioria dos desenvolvedores."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
 "Because of this, assets are now imported from within the project folder "
 "transparently."
 msgstr ""
+"Por causa disso, os ativos agora são importados de dentro da pasta do "
+"projeto de forma transparente."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:61
+#, fuzzy
 msgid ""
 "If a folder shouldn't be imported into Godot an exception can be made with "
 "a .gdignore file."
 msgstr ""
+"Se uma pasta não deve ser importada para Godot, uma exceção pode ser feita "
+"com um arquivo .gdignore."
