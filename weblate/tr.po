@@ -7,6 +7,7 @@
 # monolifed <monolifed@gmail.com>, 2018.
 # H.Hüseyin CİHANGİR <hashusfb@gmail.com>, 2018.
 # Halil Üneş <halilunes@gmail.com>, 2018.
+# Onur Sanır <onursanir@gmail.com>, 2018.
 # Tuna Soncul <tsoncul@gmail.com>, 2018.
 #
 msgid ""
@@ -14,8 +15,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-28 18:31+0200\n"
-"PO-Revision-Date: 2018-06-08 08:47+0000\n"
-"Last-Translator: Tuna Soncul <tsoncul@gmail.com>\n"
+"PO-Revision-Date: 2018-07-07 20:42+0000\n"
+"Last-Translator: Onur Sanır <onursanir@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/tr/>\n"
 "Language: tr\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -40,7 +41,6 @@ msgstr ""
 "stable>`_."
 
 #: ../../docs/index.rst:13
-#, fuzzy
 msgid ""
 "Welcome to the official documentation of Godot Engine, the free and open "
 "source community-driven 2D and 3D game engine! If you are new to this "
@@ -54,7 +54,6 @@ msgstr ""
 "<doc_about_intro>` bölümünü okumanızı öneririz."
 
 #: ../../docs/index.rst:18
-#, fuzzy
 msgid ""
 "The table of contents below and in the sidebar should let you easily access "
 "the documentation for your topic of interest. You can also use the search "
@@ -98,17 +97,14 @@ msgid "General"
 msgstr "Genel"
 
 #: ../../docs/index.rst:53
-#, fuzzy
 msgid "Getting started"
 msgstr "Başlarken"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
-#, fuzzy
 msgid "Tutorials"
 msgstr "Öğreticiler"
 
 #: ../../docs/index.rst:89
-#, fuzzy
 msgid "Development"
 msgstr "Geliştirme"
 
@@ -174,7 +170,6 @@ msgstr "Hakkında"
 #: ../../docs/development/cpp/custom_audiostreams.rst:7
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 #: ../../docs/development/cpp/creating_android_modules.rst:7
-#, fuzzy
 msgid "Introduction"
 msgstr "Giriş"
 
@@ -192,7 +187,6 @@ msgstr ""
 "bulacaksınız."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page aims at giving a broad presentation of the engine and of the "
 "contents of this documentation, so that you know where to start if you are a "
@@ -298,14 +292,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/introduction.rst:72
-#, fuzzy
 msgid ""
 "The :ref:`sec-general` section contains this introduction as well as "
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
 ":ref:`sec-general` bölümü motor, tarihi, lisanslanması, yazarlar vb. "
-"hakkında bilginin yanı sıra bu girişi de kapsar. Ayruca :ref:`doc_faq` 'i de "
+"hakkında bilginin yanı sıra bu girişi de kapsar. Ayrıca :ref:`doc_faq` 'i de "
 "kapsar."
 
 #: ../../docs/about/introduction.rst:75
@@ -325,6 +318,9 @@ msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
+":ref:`sec-tutorials` bölümü aynı zamanda, herhangi bir sırada, ihtiyaç "
+"halinde okunabilir. Bu bölüm birçok özellik odaklı eğitimler ve dökümanlar "
+"içerir."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -377,15 +373,17 @@ msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
+"Godot, OSI onaylı <https://opensource.org/licenses/MIT> `_ MIT lisansı "
+"altında bulunan Ücretsiz / Açık Kaynak Kodlu Yazılımdır."
 
 #: ../../docs/about/faq.rst:11
 msgid ""
 "This means it is free as in \"free speech\" as well as in \"free beer\"."
-msgstr ""
+msgstr "\"Konuşma özgürlüğü\" gibi özgür, \"bedava bira\" gibi bedavadır."
 
 #: ../../docs/about/faq.rst:13
 msgid "In short:"
-msgstr ""
+msgstr "Kısaca:"
 
 #: ../../docs/about/faq.rst:15
 msgid "There are no usage restrictions on Godot"
@@ -402,12 +400,16 @@ msgstr ""
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr ""
+"Godot'u kalbinizin içeriğine göre düzenleyebilir, yeniden dağıtabilir ve "
+"yeniden düzenleyebilirsiniz"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
+"Daha fazlası için, `buraya <https://tldrlegal.com/license/mit-license>`_ "
+"bakın veya avukatınıza danışın."
 
 #: ../../docs/about/faq.rst:21
 msgid ""
@@ -445,19 +447,19 @@ msgstr "Godot hangi platformları destekler?"
 
 #: ../../docs/about/faq.rst:36
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**Editörler için.**"
 
 #: ../../docs/about/faq.rst:38
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 ( Linux, \\*BSD )"
 
 #: ../../docs/about/faq.rst:42
 msgid "**For exporting your games:**"
@@ -469,17 +471,18 @@ msgstr "Windows (ve UWP)"
 
 #: ../../docs/about/faq.rst:47
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
+#, fuzzy
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:48
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:49
 msgid "Web"
-msgstr ""
+msgstr "Web"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
@@ -10020,9 +10023,8 @@ msgid "This is better explained through examples. Say we have this scenario:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Godot'ta kullanım kısıtlaması yoktur"
+msgstr "İşte aklınızda tutmanız gereken birkaç şey:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
 msgid ""
@@ -12636,9 +12638,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:63
-#, fuzzy
 msgid "C# Signals"
-msgstr "Sinyaller"
+msgstr "C# Sinyaller"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:65
 msgid ""
@@ -13642,9 +13643,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
-#, fuzzy
 msgid "There are some things to note:"
-msgstr "Godot'ta kullanım kısıtlaması yoktur"
+msgstr "Not etmeniz gereken bazı şeyler:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -13688,9 +13688,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:14
-#, fuzzy
 msgid "Body Type"
-msgstr "Tür"
+msgstr "Gövde Tipi"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:15
 msgid ""
@@ -35681,9 +35680,8 @@ msgid "This is all! Thanks for your cooperation, citizen."
 msgstr ""
 
 #: ../../docs/tutorials/i18n/index.rst:2
-#, fuzzy
 msgid "Internationalization"
-msgstr "Yerelleştirme"
+msgstr "Uluslararasılaşma"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:4
 msgid "Internationalizing games"
@@ -52205,9 +52203,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:385
-#, fuzzy
 msgid "Binding Signals"
-msgstr "Sinyaller"
+msgstr "Sinyalleri Atama"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:387
 msgid ""
@@ -52721,9 +52718,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:129
-#, fuzzy
 msgid "Node Path"
-msgstr "Kaynak Yolu"
+msgstr "Düğüm Yolu"
 
 #: ../../docs/development/file_formats/tscn.rst:131
 msgid ""
@@ -53052,14 +53048,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:390
-#, fuzzy
 msgid "'transform'"
-msgstr "Dönüşüm"
+msgstr "'dönüşüm'"
 
 #: ../../docs/development/file_formats/tscn.rst:391
-#, fuzzy
 msgid "'value'"
-msgstr "Değer"
+msgstr "'değer'"
 
 #: ../../docs/development/file_formats/tscn.rst:392
 msgid "'method'"
@@ -53079,9 +53073,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:401
-#, fuzzy
 msgid "0 (constant)"
-msgstr "Sabitler"
+msgstr "0 (sabit)"
 
 #: ../../docs/development/file_formats/tscn.rst:402
 msgid "1 (linear)"

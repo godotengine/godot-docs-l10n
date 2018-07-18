@@ -2,11 +2,16 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Aleksey Terentyev <terentjew.alexey@ya.ru>, 2018.
+# Alex Afterlife <main-site-maker@yandex.ru>, 2018.
+# Alexander Pushkar <alexanderpushkar86@gmail.com>, 2018.
+# Alex <snimalovo@gmail.com>, 2018.
 # Andrii Doroshenko <xrayez@gmail.com>, 2018.
 # batonbl4 <batonbl4@yandex.ru>, 2018.
 # B10nicMachine <shumik1337@gmail.com>, 2018.
 # Chaosus89 <chaosus89@gmail.com>, 2018.
 # Constantin Moskvitin <cmoskvitin@gmail.com>, 2018.
+# Danil Semenov <semenoff.da2018@yandex.ru>, 2018.
 # Denis <miraakdovahkiin45@gmail.com>, 2018.
 # Denis K <dekasoftware@mail.ru>, 2018.
 # Dmitry Derbin <dimderbin@mail.ru>, 2018.
@@ -14,25 +19,32 @@
 # gl <glorphindale+dev@gmail.com>, 2018.
 # ijet <my-ijet@mail.ru>, 2018.
 # Ivan Toropelov <chuchundra06@gmail.com>, 2018.
+# JackLite <jackkdlite@gmail.com>, 2018.
 # LAT_Rio <AlSenya@yandex.ru>, 2018.
 # luckyuk <im-kerber@mail.ru>, 2018.
 # Neo6666666 <Neo6666666@gmail.com>, 2018.
+# Nick <nikita.porutchyk@gmail.com>, 2018.
+# Nikita Nigmatullin <nnigmat@gmail.com>, 2018.
 # Novikov Vladimir <valdemar.const@gmail.com>, 2018.
 # Omicron <omicron666.dev@gmail.com>, 2018.
+# sample text <sampletext32@bk.ru>, 2018.
 # Sergey <maligin.serega2010@yandex.ru>, 2018.
 # Sergey Grinev <sgreenyov@gmail.com>, 2018.
 # Siarhei Mashkarniou <irondrain@gmail.com>, 2018.
+# S.traiker.D <l1evilone@gmail.com>, 2018.
 # teriva <spirin.cos@yandex.ru>, 2018.
 # Аркадий Авас <savvot@gmail.com>, 2018.
 # Семён Рассохин <forzcross@gmail.com>, 2018.
+# Игорь Д <protorian.di@gmail.com>, 2018.
+# Лошаденко Максим Юриевич <vidos4all@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-28 18:31+0200\n"
-"PO-Revision-Date: 2018-06-28 16:17+0000\n"
-"Last-Translator: Siarhei Mashkarniou <irondrain@gmail.com>\n"
+"PO-Revision-Date: 2018-07-18 12:48+0000\n"
+"Last-Translator: Alex <snimalovo@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -231,8 +243,8 @@ msgid ""
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
 "Игровой движок это сложный инструмент, и очень сложно описать Godot в двух "
-"словах. Здесь содержится наша PR документация, которую можно свободно "
-"использовать если вам нужно описание движка Godot."
+"словах. Здесь содержится наша PR-документация, которую можно свободно "
+"использовать, если вам нужно описание движка Godot."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -304,7 +316,7 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
-"Вы можете внести свой вклад в развитие документации Godot открывая карточки "
+"Вы можете внести свой вклад в развитие документации Godot, открывая карточки "
 "с вопросами, отправляя исправления в `репозиторий на GitHub <https://github."
 "com/godotengine/godot-docs>`_ или занимаясь переводами на ваш язык на "
 "`Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/"
@@ -655,7 +667,6 @@ msgstr ""
 "поддерживаемых языков можно найти в предыдущем разделе."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
@@ -737,7 +748,7 @@ msgid ""
 msgstr ""
 "Ужасный интерфейс для привязки к C++ приводит к большому количеству кода, "
 "ошибкам, узким местам и общей неэффективности (Lua, Python, Squirrel, JS и т."
-"д)."
+"д)"
 
 #: ../../docs/about/faq.rst:119
 msgid ""
@@ -1005,7 +1016,6 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "И всё! Ваша игра будет работать в нескольких разрешениях."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -1014,7 +1024,7 @@ msgid ""
 msgstr ""
 "Если вы хотите сделать игру пригодной к работе на старых устройствах с "
 "маленькими экранами (меньше чем 300 пикселей в ширину), вы можете "
-"использовать опцию экспорта для сжатия картинок, и настроить проект на "
+"использовать опцию экспорта для сжатия картинок и настроить проект на "
 "использование необходимых разрешений экрана в App Store или Google Play."
 
 #: ../../docs/about/faq.rst:229
@@ -3267,13 +3277,12 @@ msgstr ""
 "сцену с жесткого диска:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
-#, fuzzy
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
 "Предварительная загрузка может быть более удобной, т.к. происходит во время "
-"парсинга:"
+"парсинга (только для GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""
@@ -3596,14 +3605,13 @@ msgid "Start by declaring the member variables this object will need:"
 msgstr "Чтобы начать объявлять переменные объекта понадобится:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
-#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
 "to be able to adjust just like a node's built-in properties. Click on the "
 "``Player`` node and set the speed property to ``400``."
 msgstr ""
-"Использование ключевого слова ``export`` у первой переменной ``SPEED``, "
+"Использование ключевого слова ``export`` у первой переменной ``speed`` "
 "позволяет устанавливать ее значение в Инспекторе. Это может быть полезно, "
 "если вы хотите изменять значения точно так же как и встроенные в узел "
 "свойства. Щелкните на узел ``Player`` и установите значение скорости равным "
@@ -3932,7 +3940,6 @@ msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:473
-#, fuzzy
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
@@ -4010,7 +4017,6 @@ msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr "Прикрепите скрипт к ``Mob`` и добавьте следующие переменные:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:529
-#, fuzzy
 msgid ""
 "We'll pick a random value between ``min_speed`` and ``max_speed`` for how "
 "fast each mob will move (it would be boring if they were all moving at the "
@@ -4018,12 +4024,12 @@ msgid ""
 "an array containing the names of the three animations, which we'll use to "
 "select a random one."
 msgstr ""
-"Мы будем выбирать случайное значение между ``MIN_SPEED`` и ``MAX_SPEED`` для "
+"Мы будем выбирать случайное значение между ``min_speed`` и ``max_speed`` для "
 "определения того, как быстро каждый моб будет двигаться (было бы скучно, "
 "если бы все они двигались с одинаковой скоростью). Установите значения "
-"скорости соответственно ``150`` (MIN_SPEED) и ``250`` (MAX_SPEED) в "
-"инспекторе. У нас также есть массив, содержащий имена трех анимаций, которые "
-"мы будем выбирать случайным образом."
+"скорости соответственно ``150`` и ``250`` в инспекторе. У нас также есть "
+"массив, содержащий имена трех анимаций, которые мы будем выбирать случайным "
+"образом."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:535
 msgid ""
@@ -4285,7 +4291,6 @@ msgid "HUD"
 msgstr "HUD"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:822
-#, fuzzy
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -4293,24 +4298,21 @@ msgid ""
 "stands for \"heads-up display\", an informational display that appears as an "
 "overlay on top of the game view."
 msgstr ""
-"В финале нашей игры нужен UI: интерфейс для отображения таких элементов, как "
-"игровой счет, сообщение \"игра окончена\" и кнопка перезапуска. Создайте "
+"Финальная часть нашей игры - UI: интерфейс для отображения таких элементов, "
+"как игровой счет, сообщение \"игра окончена\" и кнопка перезапуска. Создайте "
 "новую сцену и добавьте :ref:`Canvas Layer <Class_canvas Layer>` узел с "
 "именем``HUD``. \"HUD\" означает \"heads-up display\", информационный "
-"дисплей, отображающаяся на фоне виртуального игрового пространства в "
-"процессе игры."
+"дисплей, отображающийся поверх игры."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:828
-#, fuzzy
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
 "isn't covered up by any game elements like the player or mobs."
 msgstr ""
-"Узел :ref:`CanvasLayer <class_CanvasLayer>` позволяет нам изобразить "
-"элементы UI на слое выше остальной частью игры, чтобы отображаемая "
-"информация не покрывалась какими-либо игровыми элементами, такими как игрок "
-"или мобы."
+"Узел :ref:`CanvasLayer <class_CanvasLayer>` позволяет нам изображать "
+"элементы UI поверх всей игры. Это значит, что отображаемая информация не "
+"перекрывается никакими игровыми элементами, такими как игрок или мобы."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:832
 msgid "The HUD displays the following information:"
@@ -4329,7 +4331,6 @@ msgid "A \"Start\" button to begin the game."
 msgstr "Кнопка \"Start\" чтобы начать игру."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:838
-#, fuzzy
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -4341,9 +4342,8 @@ msgstr ""
 "<class_Button>`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:842
-#, fuzzy
 msgid "Create the following as children of the ``HUD`` node:"
-msgstr "Создайте в качестве потомка узла '' HUD'' следующие:"
+msgstr "Создайте следующее в качестве потомка узла '' HUD'':"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:844
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
@@ -4354,9 +4354,8 @@ msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
 msgstr ":ref:`Label <class_Label>` названный ``MessageLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:846
-#, fuzzy
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
-msgstr ":ref:`Кнопка <class_Button>` с именем ``StartButto"
+msgstr ":ref:`Кнопка <class_Button>` с именем ``StartButton``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:847
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
@@ -4396,9 +4395,8 @@ msgstr ""
 "размещения, используйте следующие параметры:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:865
-#, fuzzy
 msgid "ScoreLabel"
-msgstr "ScoreLabel"
+msgstr "Надпись счёта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:867
 msgid "``Layout``: \"Center Top\""
@@ -4551,7 +4549,7 @@ msgid ""
 "signal of ``StartButton``."
 msgstr ""
 "Соедините \"timeout()\" сигнал из \"MessageTimer\" и сигнал \"pressed()\" из "
-"\"StartButton\""
+"\"StartButton\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1037
 msgid "Connecting HUD to Main"
@@ -4817,9 +4815,8 @@ msgstr ""
 "`doc_your_first_game`, прежде чем продолжить этот урок."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
-#, fuzzy
 msgid "Preparing the project"
-msgstr "Создание нового проекта"
+msgstr "Подготовка проекта"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -4858,15 +4855,14 @@ msgstr ""
 "игра будет масштабируется на экранах разных размеров."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
-#, fuzzy
 msgid ""
 "Next, we need to modify the ``Player.gd`` script to change the input method. "
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
-"Далее, нужно модифицировать скрипт \"Player.gd\", чтобы изменить метод "
-"ввода. Уберем ключи управление и заставим игрока двигаться к цели, которая "
-"задается событием тапа по экрану (или кликом)."
+"Далее, нужно модифицировать скрипт \"Player.gd\", для того, чтобы изменить "
+"метод ввода. Мы уберем управление клавишами и сделаем так, чтобы игрок "
+"двигался к цели, которая задается событием тапа по экрану (или кликом)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
@@ -4908,9 +4904,8 @@ msgstr ""
 "новой версии, иначе работа экспортированых проектов может быть нестабильна."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export Presets"
-msgstr "Экспорт"
+msgstr "Экспорт предустановок"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:142
 msgid ""
@@ -4929,15 +4924,14 @@ msgstr ""
 "настройками."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
-#, fuzzy
 msgid ""
 "At the bottom of the window are two buttons. \"Export PCK/ZIP\" only creates "
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
-"Внизу окна есть две кнопки. \"Экпорт PCK/ZIP\" создает упакованную версию "
-"данных вашего проекта. Он не включает выполняемый файл, поэтому проект не "
-"может быть запущен самостоятельно."
+"Внизу окна есть две кнопки. \"Экпорт PCK/ZIP\" лишь создает упакованную "
+"версию данных вашего проекта. Исполняемый файл при этом не включается, "
+"поэтому проект не может быть запущен самостоятельно."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
@@ -4964,10 +4958,13 @@ msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
 msgstr ""
+"В данном разделе, мы пройдем через процесс для каждой платформы, включая "
+"любое дополнительное программное обеспечение или требования которые могут "
+"понадобиться."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
 msgid "PC (Linux/MacOS/Windows)"
-msgstr ""
+msgstr "ПК (Linux/MacOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:168
 msgid ""
@@ -4976,10 +4973,15 @@ msgid ""
 "you want to make. Then click \"Export Project\" and choose a name and "
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
+"Экспорт на PC платформы работает одинаково для трех поддерживаемых "
+"операционных систем. Откройте окно экспорта, кликните \"Добавить..\" и "
+"выберите систему из выпадающего списка. После кликните \"Экспорт Проекта\" и "
+"выберите имя и папку, в которой вы хотите сохранить файл. Выберите место  "
+"*снаружи* вашей папки с проектом."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:173
 msgid "Click \"Save\" and the engine will build the export files."
-msgstr ""
+msgstr "Нажмите \"Сохранить\" и движок соберет экспортируемый файл."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
 msgid ""
@@ -4988,6 +4990,10 @@ msgid ""
 "either case, the compressed file contains a MacOS `.app` that you can double-"
 "click and run."
 msgstr ""
+"При экспорте на MacOS, если вы экспортируете на компьютере с MacOS, вы "
+"получите `.dmg` файл, а если используете Linux или Windows то результатом "
+"будет `.zip`. В любом случае, сжатый файл содержит в себе `.app`, который вы "
+"можете запустить двойным нажатием."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:180
 msgid ""
@@ -4995,6 +5001,10 @@ msgid ""
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
+"На Windows, если вы хотите чтобы экспортируемый вами запускаемый файл имел "
+"иконку отличную от той, что установлена по умолчанию, вам необходимо "
+"изменить ее вручную. Смотрите: :ref:"
+"`doc_changing_application_icon_for_windows`."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:187
 msgid ""
@@ -5003,21 +5013,29 @@ msgid ""
 "art than science, and you may need to do some experimenting and searching "
 "for help in order to get everything working."
 msgstr ""
+"Мобильные устройства обладают широким спектром возможностей, и в большинстве "
+"случаев установленные по умолчанию настойки Годо будут работать. Однако, "
+"временами мобильная разработка это скорее искусство, чем наука, и потому "
+"порой вам придется экспериментировать и искать помощи для того чтобы все "
+"работало."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:193
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
 msgstr ""
+"Прежде чем вы сможете экспортировать свой проект на Android, вы должны "
+"загрузить следующее программное обеспечение:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:196
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr ""
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:197
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
+"Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:199
 msgid ""
@@ -5025,12 +5043,18 @@ msgid ""
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
+"При запуске Android Studio в первый раз, нажмите на кнопки *Настройки -> SDK "
+"Manager* и установите \"Android SDK Platform Tools\". Таким образом вы "
+"установите `adb` command-line tool, который Годо использует для "
+"взаимодействия с вашим устройством."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
 msgid ""
 "Next, create a debug keystore with by running the following command on your "
 "system's command line:"
 msgstr ""
+"Далее создайте хранилище ключей для отладки, выполнив следующую команду в "
+"консоли вашей системы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:210
 msgid ""
@@ -5039,24 +5063,36 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
+"Нажмите на *Редактор -> Настройки редактора* в Годо, и затем выберите раздел "
+"*Export/Android*. Здесь вам нужно установить пути к приложениям Android SDK "
+"на вашей системе и расположение хранилища ключей, который вы только что "
+"создали."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:216
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
 msgstr ""
+"Теперь вы готовы экспортировать. Нажмите на *Проект-> Экспорт* и добавьте "
+"предустановку для Android (см. выше)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:219
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
+"Нажмите кнопку \"Экспортировать проект\", и Godot построит файл APK, который "
+"вы сможете загрузить на своё устройство. Чтобы сделать это с помощью "
+"командной строки, выполните следующую команду:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:226
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
 msgstr ""
+"Вашему устройству может потребоваться нахождение в \"режиме разработчика\". "
+"Обратитесь к документации устройства для получения более подробной "
+"информации."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:229
 msgid ""
@@ -5064,12 +5100,17 @@ msgid ""
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
+"Если ваша система это поддерживает, подключение совместного Андроид "
+"устройства вызовет появление кнопки \"Развертывание в один клик\" в области "
+"кнопок игрового окна Godot:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
 msgstr ""
+"Нажатие этой кнопки приводит к построению APK и к копированию его на Ваше "
+"устройство в один шаг."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
 msgid ""
@@ -5145,6 +5186,11 @@ msgid ""
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""
+"Просмотр файла `.html` в браузере позволяет вам воспроизводить игру. Не "
+"смотря на это, вы не можете открыть файл напрямую, т.к. он должен "
+"обслуживаться веб-сервером. Если у вас на компьютере нет такого сервера, вы "
+"можете использовать Google, чтобы найти варианты для вашей операционной "
+"системы."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:278
 msgid ""
@@ -5152,6 +5198,9 @@ msgid ""
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
+"В адресной строке браузера укажите URL расположения HTML-файла. Возможно, "
+"вам придётся немного подождать, пока игра загрузится, и вы увидите стартовый "
+"экран."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:283
 msgid ""
@@ -5159,6 +5208,9 @@ msgid ""
 "can disable it by setting \"Export With Debug\" off when you export the "
 "project."
 msgstr ""
+"Если что-то пойдёт не так, окно консоли под игрой покажет в чём проблема. Вы "
+"можете отключить её, задав параметр \"Export With Debug\" (экспорт с "
+"отладкой), когда экспортируете проект."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
 msgid ""
@@ -5168,6 +5220,11 @@ msgid ""
 "bugs you find at the `Godot Github repository <https://github.com/"
 "godotengine/godot/issues>`_."
 msgstr ""
+"Большинство браузеров не поддерживают WASM. Firefox и Chrome обладают такой "
+"поддержкой, но вы можете обнаружить некоторые вещи, которые все ещё не "
+"работают. Убедитесь, что ваш браузер обновлен до найсвежайшей версии и "
+"отправляйте отчет об ошибках, которые вы обнаружили, в репозиторий `Godot "
+"Github - <https://github.com/godotengine/godot/issues>`_."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
@@ -5184,6 +5241,10 @@ msgid ""
 "leads to different workflows and different ways to form your games’ "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
+"**Каждый игровой движок отличается и соответствует различным потребностям.** "
+"Мало того, что они предлагают ряд функций, дизайн каждого движка уникален. "
+"Это приводит к разным рабочим процессам и различным способам формирования "
+"структур ваших игр. Все это вытекает из их соответствующих концепций дизайна."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:11
 msgid ""
@@ -5193,16 +5254,22 @@ msgid ""
 "you need to try it out for yourself and understand its design and "
 "limitations."
 msgstr ""
+"Эта страница здесь для того, чтобы помочь вам понять как Godot работает, "
+"начиная с самых основ. Это не список доступных возможностей, также это не "
+"сравнение различных движков. Чтобы понять, хорошо ли подходит некий движок в "
+"проект, его необходимо попробовать и понять его архитектуру и ограничения."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:17
 msgid ""
 "Please watch `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
+"Пожалуйста посмотрите `Открытие Godot 3, свободный игровой движок <https://"
+"youtu.be/4v3qge-3CqQ>`_, если вы ищете обзор возможностей движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:20
 msgid "Object-oriented design and composition"
-msgstr ""
+msgstr "Объектно-ориентированный дизайн и композиция"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:22
 msgid ""
@@ -5210,6 +5277,10 @@ msgid ""
 "system and Node hierarchy. It tries to stay away from strict programming "
 "patterns to offer an intuitive way to structure your game."
 msgstr ""
+"Godot включает в себя объектно-ориентированный дизайн с его гибкой системой "
+"сцен и иерархией узлов. Он пытается держаться подальше от строгих шаблонов "
+"программирования, чтобы предложить интуитивный способ структурирования вашей "
+"игры."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:26
 msgid ""
@@ -5219,10 +5290,15 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
+"Во-первых, Godot позволяет вам составлять (или собирать) сцены. Это как "
+"вложенные префабы: вы можете создать мерцающий свет и сцену со сломанным "
+"фонарём, который использует мерцающий свет. Затем создать город наполненный "
+"такими фонарями. Потом поменять цвет мерцания, сохранить объект, и все "
+"фонари тут же обновятся."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:33
 msgid "On top of that, you can **inherit** from any scene."
-msgstr ""
+msgstr "Более того, вы можете **наследовать** от любой сцены."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:35
 msgid ""
@@ -5231,6 +5307,10 @@ msgid ""
 "you’re free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
+"Сценой в Godot может являться Оружие, Персонаж, Элемент, Дверь, Уровень, "
+"часть уровня....всё, что пожелаете. Это работает как классы в коде, за "
+"исключением лишь того, что вы сами создаёте всё сами, используя Редактор, "
+"только код или и то, и другое одновременно."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:40
 msgid ""
@@ -5240,6 +5320,11 @@ msgid ""
 "update as well. It helps you build your projects so that their structure "
 "matches the game’s design."
 msgstr ""
+"Это отличается от префабов, которые можно найти в некоторых 3D движках, так "
+"как вы можете наследовать и расширять любую сцену. Вы можете создать \"Мага"
+"\" который наследует вашего \"Персонажа\". Изменить \"Персонаж\" в редакторе "
+"и \"Маг\" также будет обновлен. Это помогает вам строить ваши проекты таким "
+"образом, что их структура соответствует игровому дизайну."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:48
 msgid ""
@@ -5248,6 +5333,11 @@ msgid ""
 "from their parents up to the Node class. Although the engine does feature "
 "components like collision shapes, they’re the exception, not the norm."
 msgstr ""
+"Также обратите внимание, что Godot предлагает множество различных типов "
+"объектов, называемых узлами, каждый с определенной целью. Узлы являются "
+"частью дерева и всегда наследуются от родителей вплоть до класса Node. Хотя "
+"в движке есть компоненты, например формы столкновения, они являются скорее "
+"исключением, чем нормой."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:56
 msgid ""
@@ -5255,6 +5345,9 @@ msgid ""
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
+"Sprite - это Node2D, CanvasItem и Node. Он имеет все свойства и функции трех "
+"родительских классов, таких как преобразования или возможность рисовать "
+"пользовательские фигуры и рендериться с помощью настраиваемого шейдера."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:61
 msgid "All-inclusive package"
@@ -5267,6 +5360,11 @@ msgid ""
 "shader editor, a debugger, a profiler, the ability to hot-reload locally and "
 "on remote devices, etc."
 msgstr ""
+"Godot предоставляет свои собственные инструменты для удовлетворения наиболее "
+"распространенных потребностей. Он имеет встроенный редактор кода, редактор "
+"анимации, редактор tilemap, редактор шейдеров, отладчик, профилировщик, "
+"возможность перезагрузки на ходу локально и на удаленных устройствах и "
+"многое другое."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:70
 msgid ""
@@ -5275,6 +5373,10 @@ msgid ""
 "import plugin for it. Or you can create one, like the `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 msgstr ""
+"Цель состоит в том, чтобы предложить полный пакет для создания игр и "
+"непрерывного обучения. Вы можете работать с внешними программами, если для "
+"них есть плагин импорта. Или вы можете создать его, например, `Tiled Map "
+"Importer <https://github.com/vnen/godot-tiled-importer>`."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:75
 msgid ""
@@ -5283,6 +5385,10 @@ msgid ""
 "developers and game designers, and they’re tightly integrated in the engine "
 "and the editor."
 msgstr ""
+"Это также отчасти потому, что Godot предлагает свои собственные языки "
+"программирования GDscript и VisualScript вместе с C#. Они разработаны для "
+"нужд разработчиков и гейм дизайнеров и тесно интегрированы в движок и "
+"редактор."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:80
 msgid ""
@@ -5290,6 +5396,10 @@ msgid ""
 "types and offers a static-language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
+"GDscript позволяет писать простой код с использованием синтаксиса, похожего "
+"на Python, но к тому же он обнаруживает типы и предлагает качество "
+"автозаполнения статического языка. Он также оптимизирован для написания кода "
+"игрового процесса со встроенными типами, такими как Vectors и Colors."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:84
 msgid ""
@@ -5297,6 +5407,10 @@ msgid ""
 "languages like C, C++, Rust, or Python (using the Cython compiler) without "
 "recompiling the engine."
 msgstr ""
+"Обратите внимание, что с помощью GDNative вы можете написать "
+"высокопроизводительный код с использованием скомпилированных языков, таких "
+"как C, C ++, Rust или Python (с использованием компилятора Cython) без "
+"перекомпиляции движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:90
 msgid ""
@@ -5304,6 +5418,9 @@ msgid ""
 "the editor. You can drag and drop nodes or resources into the graph to "
 "create new code blocks.*"
 msgstr ""
+"*VisualScript - это язык программирования на основе узлов, который хорошо "
+"интегрируется в редактор. Вы можете перетаскивать узлы или ресурсы в граф "
+"для создания новых блоков кода.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:94
 msgid ""
@@ -5313,16 +5430,24 @@ msgid ""
 "extend the editor’s functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
+"Обратите внимание, что в 3D рабочем пространстве не имеется столько "
+"инструментов, как в 2D рабочем пространстве. Вам понадобятся внешние "
+"программы или аддоны для редактирования ландшафтов, анимации сложных "
+"персонажей и т.д. Godot предоставляет полный API для расширения "
+"функциональности редактора, используя код игры. См. `Редактор Godot - это "
+"игра Godot`_ ниже."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:101
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually*"
 msgstr ""
+"*Плагин State Machine (Машина Состояний) в Godot 2 от kubecz3k. Он позволяет "
+"визуально управлять состояниями и переходами*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:105
 msgid "Open-source"
-msgstr ""
+msgstr "Открытый исходный код"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:107
 msgid ""
@@ -5330,6 +5455,9 @@ msgid ""
 "means all the technologies that ship with it have to be Free (as in freedom) "
 "as well. For the most part, they’re coded from the ground-up by contributors."
 msgstr ""
+"Godot предлагает полностью открытую кодовую базу под лицензией **MIT.** Это "
+"означает, что все технологии, которые поставляются с ней, должны быть "
+"бесплатными (как свобода). По большей части, они кодируются авторами с нуля."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:111
 msgid ""
@@ -5338,6 +5466,10 @@ msgid ""
 "Admob, or an FBX file importer. Any of these can come as third-party plugins "
 "instead."
 msgstr ""
+"Любой может подключить проприетарные инструменты для нужд своих проектов - "
+"они не будут поставляться с движком. Это может быть Nvidia PhysX, Google "
+"Admob или импортер файлов FBX. Любой из них может использоваться как "
+"сторонний плагин."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:116
 msgid ""
@@ -5346,16 +5478,22 @@ msgid ""
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
+"С другой стороны, открытая кодовая база означает, что вы можете **изучать и "
+"расширять движок** как пожелает ваше сердце. Вы также можете легко "
+"отлаживать игры, поскольку Godot будет печатать ошибки с трассировкой стека, "
+"даже если они исходят из самого движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:122
 msgid ""
 "This **does not affect the work you do with Godot** in any way: there’s no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
+"В любом случае, это **не влияет на работу, которую вы совершаете с Godot**: "
+"никаких условий для движка или всего, что вы делаете с ним, нет."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:127
 msgid "Community-driven"
-msgstr ""
+msgstr "Управляемый сообществом"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:129
 msgid ""
@@ -5364,6 +5502,11 @@ msgid ""
 "drive the core updates. New features from the core developers often focus on "
 "what will benefit the most users first."
 msgstr ""
+"**Godot создается сообществом, для сообщества и для всех создателей игр.** "
+"Это потребности пользователей и открытые обсуждения, которые управляют "
+"основными обновлениями. Новые функции от основных разработчиков часто "
+"фокусируются на то, что в первую очередь принесет пользу большинству "
+"пользователей."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:134
 msgid ""
@@ -5373,10 +5516,14 @@ msgid ""
 "improvements in all corners of the engine at the same time in every major "
 "release."
 msgstr ""
+"Несмотря на то, что горстка основных разработчиков работает полный рабочий "
+"день, в проекте более 500 участников. Доброжелательные программисты работают "
+"над функциями, которые им могут понадобиться сами, поэтому во всех основных "
+"версиях вы увидите улучшения во всех углах движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:141
 msgid "The Godot editor is a Godot game"
-msgstr ""
+msgstr "Редактор Godot - это игра Godot"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:143
 msgid ""
@@ -5385,12 +5532,20 @@ msgid ""
 "run game code in the editor. This means you can **use the same code** and "
 "scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
+"Редактор Godot работает на игровом движке. Он использует собственную систему "
+"пользовательского интерфейса движка. Он может перезагружать код и сцены при "
+"тестировании ваших проектов или запускать игровой код в редакторе. Это "
+"означает, что вы можете **использовать один и тот же код** и сцены для своих "
+"игр или **создавать плагины и расширять редактор.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:148
 msgid ""
 "This leads to a reliable and flexible UI system as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
+"Это приводит к созданию надежной и гибкой системы пользовательского "
+"интерфейса, поскольку она сама настраивает редактор. С ключевым словом "
+"``tool`` вы можете запускать любой игровой код в редакторе."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:153
 msgid ""
@@ -5398,6 +5553,9 @@ msgid ""
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
+"*RPG in a Box - это воксельный редактор RPG, сделанный в Godot 2. Он "
+"использует инструменты пользовательского интерфейса Godot для своей системы "
+"программирования на основе узлов и для остальной части интерфейса.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:157
 msgid ""
@@ -5406,10 +5564,14 @@ msgid ""
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
+"Поместите ключевое слово ``tool`` в начало любого файла GDscript, и он будет "
+"запущен в редакторе. Это позволяет импортировать и экспортировать плагины, "
+"создавать плагины, такие как настраиваемые редакторы уровней, или создавать "
+"скрипты с теми же узлами и API, которые вы используете в своих проектах."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:163
 msgid "Separate 2D and 3D engines"
-msgstr ""
+msgstr "Отдельные 2D и 3D движки"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:165
 msgid ""
@@ -5418,10 +5580,14 @@ msgid ""
 "can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interface over "
 "your 3D world."
 msgstr ""
+"Godot предлагает специализированные 2D и 3D движки. В итоге **базовая "
+"единица для 2D-сцен - это пиксели.** Несмотря на то, что двигатели являются "
+"отдельными, вы можете визуализировать 2D в 3D, 3D в 2D и накладывать 2D-"
+"спрайты и интерфейс поверх 3D-мира."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr ""
+msgstr "Дизайн интерфейса с помощью узлов контроля"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -5434,37 +5600,56 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
+"Дисплеи компьютеров, мобильных телефонов, и экраны телевизоров существуют в "
+"разных формах и размерах. Чтоб выпустить игру, Вам необходимо сделать "
+"поддержку разных соотношений сторон и разрешений экранов. Разработка "
+"приложений, которые могут адаптироваться под различные платформы. К счастью, "
+"Godot поставляется с набором надежных инструментов для дизайна и управления "
+"адаптивных пользовательских приложений. Для дизайна вашего UI, вы можете "
+"использовать узлы контроля. Это узлы с зелеными иконками в редакторе. Здесь "
+"их предостаточно, для того чтоб создать что угодно - от полос жизни, до "
+"полноценных приложений. Редактор Godot и его плагины используют данные узлы."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
 msgstr ""
+"Редактор Godot создан с помощью своей же технологии создания интерфейсов"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "This guide will get you started with UI design. You will learn:"
 msgstr ""
+"Это руководство поможет начать разрабатывать пользовательский интефейс. Вот "
+"что вы узнаете:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:21
 msgid "The five most useful control nodes to build your games’ interface"
 msgstr ""
+"Какие пять узлов контроля наиболее рентабельные для использования в создании "
+"интерфейса своих игр"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid "How to work with the anchor of UI elements"
-msgstr ""
+msgstr "Как работать с UI элементами"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:23
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
 msgstr ""
+"Как эффективно разместить и упорядочить Ваш пользовательский интерфейс с "
+"использованием контейнеров"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid "The five most common containers"
-msgstr ""
+msgstr "Пять наиболее распространенных контейнеров"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:27
 msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
+"Чтоб выучить, как контролировать интерфейс и подключить его к другим "
+"скриптам, прочтите :ref:`Создайте пользовательский интерфейс своей первой "
+"игры в Godot <doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
 msgid ""
@@ -5474,87 +5659,106 @@ msgid ""
 "with others like the AnimationPlayer, Tween or the StreamPlayer. Control "
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
+"Используйте исключительно узлы контроля, когда Вы создаете дизайн "
+"интерфейса. У них есть уникальные настройки, которые позволяют им работать с "
+"другими. Другие узлы, как Node2D, Sprite, и другие, не будут работать. Вы до "
+"сих пор можете использовать некоторые узлы, которые работают с другими, как "
+"AnimationPlayer, Tween, или StreamPlayer. Узлы контроля это CanvasItems как "
+"Node2D, поэтому вы можете применять к ним шейдеры."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
 msgid "All control nodes share the same main properties:"
-msgstr ""
+msgstr "У всех узлов контроля имеются одинаковые основные настройки:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
+#, fuzzy
 msgid "Anchor"
-msgstr ""
+msgstr "Якорь"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
-msgstr ""
+msgstr "Ограничительные рамки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Focus and focus neighbour"
-msgstr ""
+msgstr "Фокус и фокус соседей"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
-msgstr ""
+msgstr "Флаги размера"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "Margin"
-msgstr ""
+msgstr "Края"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:44
 msgid "The optional UI theme"
-msgstr ""
+msgstr "Настраевымая тема пользовательского интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:46
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
+"Когда Вы изучите основы узлов контроля, у Вас не уйдет много времени на "
+"изучение всех узлов контроля, которые выходят из них."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:51
 msgid "The 5 most common UI elements"
-msgstr ""
+msgstr "Пять наиболее распространенных элементов пользовательского интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:53
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
+"Godot поставляется с огромным набором узлов контроля. Многие из них нужны "
+"для помощи в создании плагинов для редактора и приложений."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:56
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
 msgstr ""
+"Для большинства игр Вам понадобиться пять видов элементов пользовательского "
+"интерфейса. Вот пять узлов контроля:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid "Label: for displaying text"
-msgstr ""
+msgstr "Label: для отображения текста"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:60
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
 msgstr ""
+"TextureRect: используется, в основном, для картинок заднего плана, или для "
+"чего угодно, что является статическим изображением"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:62
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
+"TextureProgress: для полос жизни, полос загрузки, горизонтальных, "
+"вертикальных или радиальный"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "NinePatchRect: for scalable panels"
-msgstr ""
+msgstr "NinePathRect: для растяжимых панелей"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:65
 msgid "TextureButton: to create buttons"
-msgstr ""
+msgstr "TextureButton: для создания кнопок"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:69
 msgid "The 5 most common Control nodes for UI design"
 msgstr ""
+"Пять наиболее распространенных узлов контроля для дизайна пользовательского "
+"интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
-msgstr ""
+msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
 msgid ""
@@ -5562,6 +5766,9 @@ msgid ""
 "the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behaviour:"
 msgstr ""
+"**TextureRect** отображает текстуру или изображение внутри пользовательского "
+"интерфейса. Он похож на узел Sprite, но он дает множество режимов "
+"растяжения. Установите режим Stretch для изменения поведения:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -5569,20 +5776,28 @@ msgid ""
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
+"\"Scale On Expand (compat)` масштабирует текстуру в соответствии с "
+"ограничивающим прямоугольником узла, только если свойство `expand` имеет "
+"значение `true`; в противном случае оно ведет себя как режим `Keep`. Режим "
+"по умолчанию для обратной совместимости."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:79
 msgid "``Scale`` scales the texture to fit the node’s bounding rectangle"
 msgstr ""
+"\"Scale\" масштабирует текстуру по размеру ограничивающего прямоугольника "
+"узла"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Tile`` makes the texture repeat, but it won't scale"
-msgstr ""
+msgstr "``Tile`` повторяет текстуру, но не масштабируется"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively"
 msgstr ""
+"\"Keep` и\" Keep Centered \" заставляют текстуру оставаться в исходном "
+"размере, в левом верхнем углу или в центре кадра соответственно"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:84
 msgid ""
@@ -5590,6 +5805,9 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively"
 msgstr ""
+"\"Keep Aspect\" и \"Keep Aspect Centered\" масштабируют текстуру, но "
+"заставляют ее сохранять исходное соотношение сторон в левом верхнем углу или "
+"в центре кадра соответственно"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -5597,20 +5815,25 @@ msgid ""
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node’s limits"
 msgstr ""
+"``Keep Aspect Covered`` работает так же, как ``Keep Aspect Centered``, но "
+"более короткая сторона совпадает с ограничивающим прямоугольником, а другая "
+"отсекается границами узла"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's colour. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
+"Как и в случае узлов спрайтов, можно модулировать цвет TextureRect. Щелкните "
+"свойство \"Modulate\" и используйте средство выбора цвета."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:92
 msgid "TextureRect modulated with a red color"
-msgstr ""
+msgstr "TextureRect модулируется с помощью красного цвета"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureButton"
-msgstr ""
+msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -5620,6 +5843,12 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 2-bit, pure black and white image."
 msgstr ""
+"**TextureButton** как TextureRect, кроме него имеется 5 слотов текстуры: "
+"одна для каждого из состояний кнопки. Большую часть времени вы будете "
+"использовать Normal, Pressed и Hover textures. Фокусировка полезна, если ваш "
+"интерфейс слушает ввод с клавиатуры. Шестой слот изображения (Click Mask) "
+"позволяет определить кликабельную область, используя 2-битное, чистое черно-"
+"белое изображение."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:104
 msgid ""
@@ -5631,14 +5860,21 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
+"В разделе Base Button вы найдете несколько флажков, которые изменяют "
+"поведение кнопки. Когда \"Toggle Mode\" включен, кнопка будет переключаться "
+"между активным и нормальным состояниями при нажатии. \"Disabled\" делает его "
+"отключенным по умолчанию, в этом случае он будет использовать текстуру "
+"\"Disabled\". TextureButton имеет несколько общих свойств с рамкой текстуры: "
+"у него есть свойство \"modulate\", чтобы изменить его цвет, и режимы \"Resize"
+"\" и \"Stretch\" (Растянуть), чтобы изменить его поведение масштаба."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:114
 msgid "TextureButton and its 5 texture slots"
-msgstr ""
+msgstr "TextureButton и её 5 слотов текстуры"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureProgress"
-msgstr ""
+msgstr "TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
 msgid ""
@@ -5646,6 +5882,9 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
+"**TextureProgress** накладывается слоями из 3 спрайтов, чтобы создать шкалу "
+"прогресса. Нижняя и верхняя текстуры, как сэндвич, накрывают текстуру "
+"прогресса, которая отображает значение."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:123
 msgid ""
@@ -5654,6 +5893,9 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
+"``Mode`` контролирует направление, в котором расширяется бар: горизонтально, "
+"вертикально или радиально. Если вы установите радиально, то ``Initial "
+"Angle`` и ``Fill Degrees`` позволят ограничить диапазон заполнения бара."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:128
 msgid ""
@@ -5668,7 +5910,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:138
 msgid "TextureProgress bar, two thirds filled"
-msgstr ""
+msgstr "TextureProgress бар, две трети заполнены"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
 msgid ""
@@ -5678,10 +5920,15 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign respectively."
 msgstr ""
+"**Label** выводит текст на экран. Его свойства находятся в разделе Label, в "
+"инспекторе. Напишите текст в поле ``Text``, и проверьте Autowrap если вы не "
+"хотите нарушить размер текстового поля. Если Autowrap выключен, вы не "
+"сможете изменять масштаб узла. Вы можете выровнять текст горизонтально и "
+"вертикально при помощи Align и Valing соответственно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
 msgid "Picture of a Label"
-msgstr ""
+msgstr "Изображение Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "NinePatchRect"
@@ -5701,24 +5948,28 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "There are two workflows to build responsive UIs"
-msgstr ""
+msgstr "Есть два способа создания отзывчивых интерфейсов"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:169
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
-msgstr ""
+msgstr "Есть два способа создания масштабируемых и гибких интерфейсов в Godot:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:171
 msgid ""
 "You have many container nodes at your disposal that scale and place UI "
 "elements for you. They take control over their children."
 msgstr ""
+"У вас в распоряжении есть множество узлов контейнера, которые масштабируют и "
+"размещают элементы интерфейса. Они управляют своими потомками."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
+"С другой стороны, у вас есть макет меню. Он помогает вам закрепить, "
+"разместить и изменить размер элемента внутри его родителя."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
 msgid ""
@@ -5730,16 +5981,25 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
+"Эти два подхода не всегда совместимы. Потому что контейнер управляет своими "
+"потомками, вы не можете использовать макет меню на них. Каждый контейнер "
+"имеет специфичный эффект, так что вам потребуется вложить их несколько, "
+"чтобы получить работающий интерфейс. С подходом макета вы работает снизу "
+"вверх, на потомков. Если вы не добавляете дополнительные контейнеры в сцену, "
+"он может сделать более лаконичные иерархии, но сложнее организовывать "
+"объекты в ряд, колонку, сетку и прочее."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:176
 msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
 msgstr ""
+"По мере создания интерфейсов для ваших игр и инструментов, вы развиваете "
+"ощущение того, что лучше подходит в конкретной ситуации."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:180
 msgid "Place UI elements precisely with anchors"
-msgstr ""
+msgstr "Разместите элементы интерфейса в точности с якорями"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:182
 msgid ""
@@ -5748,14 +6008,17 @@ msgid ""
 "Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
 "change the reference point of the margins."
 msgstr ""
+"У управляющих узлов есть позиция и размер, но они также имеют якоря и "
+"отступы. Якоря обозначают ориентир для левого, верхнего, правого и нижнего "
+"краёв узла. Изменив любой из 4 якорей, можно сдвинуть ориентир для отступов."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:189
 msgid "The anchor property"
-msgstr ""
+msgstr "Свойство якоря"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "How to change the anchor"
-msgstr ""
+msgstr "Как изменять якорь"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:194
 msgid ""
@@ -5766,14 +6029,20 @@ msgid ""
 "inspector’s 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
+"Как и любые свойства, вы можете редактировать 4 точки привязки якорей в "
+"инспекторе, но это не самый удобный путь. Когда вы выделяете управляющий "
+"узел, макет меню появляется над окном просмотра, в панели инструментов. Он "
+"выводит список иконок, чтобы установить 4 якоря одним кликом сразу, вместо "
+"использования четырёх свойств инспектора. Макет меню будет виден лишь тогда, "
+"когда вы выбираете управляющий узел."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:203
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "Макет меню в окне просмотра"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "Anchors are relative to the parent container"
-msgstr ""
+msgstr "Якоря относительны к родительскому контейнеру"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:208
 msgid ""
@@ -5785,16 +6054,24 @@ msgid ""
 "position in pixels, while anchors are relative to the parent container's "
 "size."
 msgstr ""
+"Каждый якорь это значение между 0 и 1. Для левого и верхнего якорей, "
+"значение 0 означает отсутсвие отступа. Верхний и левый края узла будут "
+"выровнены по краям его родителя. Для правого и нижнего краёв, значение в 1 "
+"означает, что они будут выровнены по правому и нижнему краям родителя. С "
+"другой стороны, отступы представляют дистанцию до позиции якоря в пикселях, "
+"в то время как якоря относительны размеру их родителя."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:218
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
+"Отступы относительны к позиции якоря, которая относительна якорям. На "
+"практике, вы зачастую позволяете контейнеру обновлять отступы за вас"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:223
 msgid "Margins change with the anchor"
-msgstr ""
+msgstr "Отступы изменяются вместе с якорем"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:225
 msgid ""
@@ -5805,10 +6082,19 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
+"Отступы обновляются автоматически когда вы перемещяете или изменяете размер "
+"управляющего узла. Они представляют дистанцию от краёв управляющего узла до "
+"его якоря, который относителен родительскому управляющему узлу или "
+"контейнеру. Вот почему ваши управляющие узлы должны всегда быть внутри "
+"контейнера, как мы сейчас увидим. Если отсутствует родитель, то отступы "
+"будут относительны собственному ограничивающему прямоугольнику узла, "
+"заданному в разделе \"Rect\", в инспекторе."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:235
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
 msgstr ""
+"Отступы на CenterContainer установлены в режиме полной привязки \"Full Rect"
+"\" в макет меню на верхней панели инструментов"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:237
 msgid ""
@@ -5819,10 +6105,19 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"Попробуйте изменить якоря или вложить ваши управляющие узлы внутрь "
+"контейнеров: отступы обновятся. Вам врятли потребуется редактировать отступы "
+"вручную. Сначала всегда пробуйте найти контейнер; Godot предоставляет узлы "
+"для решения всех распространенных случаев. Нужно добавить пространство между "
+"полоской здоровья и краем экрана? Используйте узел MarginContainer. Хотите "
+"сделать вертикальное меню? Используйте узел VBoxContainer. Подробнее об этом "
+"ниже."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
+"Используйте размерные тэги, чтобы влиять на то, как элементы интерфейса "
+"заполняют доступное пространство"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:248
 msgid ""
@@ -5834,10 +6129,18 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"Каждый узел управления имеет флаги размера. Они говорят контейнерам, как "
+"элементы пользовательского интерфейса должны масштабироваться. Если добавить "
+"\"Fill\" флаг на горизонтальное или вертикальное свойство, ограничивающий "
+"прямоугольник узла займет всё пространство которое возможно, но он будет "
+"уважать своих братьев и сестёр, и сохранит свои размеры. Если есть 3 узла "
+"TextureRect в HBoxContainer, с флагами \"Fill\" на обеих осях, все это "
+"займет до трети свободного пространства, но не более. Контейнер возьмёт на "
+"себя узел и изменит его автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:258
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr ""
+msgstr "3 элемента интерфейса в  HBoxContainer выровнены по горизонтали"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:260
 msgid ""
@@ -5845,21 +6148,27 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"Флаг «Expand» позволяет элементу заполнить всё возможное пространство, и "
+"растолкнуть своих братьев и сестёр. Его ограничивающий прямоугольник "
+"увеличится до краёв родительского элемента, или до тех пор, пока он не будет "
+"заблокирован другим узлом интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:266
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
-msgstr ""
+msgstr "Такой же пример как и выше, но центральный узел имеет флаг \"Expand\""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"Вам потребуется некоторая практика, чтобы понять размерные теги, как их "
+"эффект может меняться в зависимости от того, как вы настроили свой интерфейс."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:273
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "Автоматическая организация управляющих узлов с контейнерами"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
 msgid ""
@@ -5868,6 +6177,11 @@ msgid ""
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor so you can see the effect instantly."
 msgstr ""
+"Контейнеры автоматически организовывают всех потомков управляющих узлов, "
+"заключая другие контейнеры в строки, столбцы и прочее. Используйте их, чтобы "
+"добавить отступы вокруг вашего интерфейса или центральных узлов в их "
+"ограничивающих прямоугольниках. Все встроенные контейнеры обновятся в "
+"редакторе, так что увидите эффект мгновенно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""
@@ -11284,7 +11598,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:943
 msgid "Class Constructor"
-msgstr ""
+msgstr "Конструктор класса"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:945
 msgid ""
@@ -11293,6 +11607,10 @@ msgid ""
 "automatically when inheriting a class. So there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
+"Конструктор класса вызывается при создании экземпляра класса "
+"(инстанциировании) и называется ``_init``. Как говорилось ранее, конструктор "
+"класса-родителя вызывается автоматически, когда происходит наследование. "
+"Таким образом, необходимости вызывать ``._init`` вручную обычно нет."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
 msgid ""
@@ -11300,15 +11618,17 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this:"
 msgstr ""
+"В отличие от вызова обычной функции, как в примере выше с ``.some_func``, "
+"если конструктор из унаследованного класса принимает аргументы, то они "
+"передаются вот так:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid "This is better explained through examples. Say we have this scenario:"
-msgstr ""
+msgstr "Это лучше объяснить на примере. Допустим у нас следующая ситуация:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Нет никаких ограничений в использовании Godot"
+msgstr "Здесь есть несколько вещей, который необходимо держать в голове:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
 msgid ""
@@ -12162,7 +12482,7 @@ msgid ""
 msgstr ""
 "Всегда ставьте пробел до и после операторов, а также после запятой. "
 "Избегайте лишних пробелов при обращении к словарям и вызовах функций, или "
-"для того, чтобы выровнять \"в столбик\"."
+"для того, чтобы выровнять \"в столбик\""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
 msgid "**NEVER**:"
@@ -13398,7 +13718,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr ""
+msgstr "Субъект"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -15065,9 +15385,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
-#, fuzzy
 msgid "There are some things to note:"
-msgstr "Нет никаких ограничений в использовании Godot"
+msgstr "Есть некоторые вещи, которые следует отметить:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:18
 msgid ""
@@ -15136,9 +15455,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:38
-#, fuzzy
 msgid "There are the following caveats:"
-msgstr "Сцена Моба будет использовать следующие узлы:"
+msgstr "Существуют следующие предостережения:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:32
 msgid ""
@@ -17685,7 +18003,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr ""
+msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
 msgid "Clipboard synchronisation between engine and operating system"
@@ -27596,9 +27914,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:83
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:192
-#, fuzzy
 msgid "Open up ``Weapon_Pistol.gd`` and add the following class variables:"
-msgstr "Прикрепите скрипт к ``Mob`` и добавьте следующие переменные:"
+msgstr "Откройте ``Weapon_Pistol.gd`` и добавьте следующие переменные класса:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:91
 msgid "``ammo_in_weapon``: The amount of ammo currently in the pistol"
@@ -27821,11 +28138,12 @@ msgid "If the player could not reload, we return ``false``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:256
-#, fuzzy
 msgid ""
 "Now we need to add reloading to the rifle. Open up ``Weapon_Rifle.gd`` and "
 "add the following class variables:"
-msgstr "Прикрепите скрипт к ``Mob`` и добавьте следующие переменные:"
+msgstr ""
+"Теперь нам нужно добавить перезарядку для винтовки. Откройте ``Weapon_Rifle."
+"gd`` и добавьте следующие переменные класса:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:265
 msgid ""
@@ -28607,9 +28925,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:200
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:458
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:511
-#, fuzzy
 msgid "Open up ``Player.gd`` and add the following class variables:"
-msgstr "Прикрепите скрипт к ``Mob`` и добавьте следующие переменные:"
+msgstr "Откройте ``Player.gd`` и добавьте следующие переменные класса:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:207
 msgid "Let's go over what each of these new variables will be doing:"
@@ -28938,9 +29255,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:426
-#, fuzzy
 msgid "Open up ``Player.gd`` and add the following class variable:"
-msgstr "Прикрепите скрипт к ``Mob`` и добавьте следующие переменные:"
+msgstr "Откройте ``Player.gd`` и добавьте следующие переменные класса:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:432
 msgid "``MAX_HEALTH``: The maximum amount of health a player can have."
@@ -31014,9 +31330,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:299
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:390
-#, fuzzy
 msgid "Open up ``Globals.gd`` and add the following class variables:"
-msgstr "Прикрепите скрипт к ``Mob`` и добавьте следующие переменные:"
+msgstr "Откройте ``Globals.gd`` и добавьте следующие переменные класса:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:313
 msgid ""
@@ -41026,13 +41341,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
-#, fuzzy
 msgid ""
 "For more information on how Godot handles input please read the :ref:`Input "
 "Event Tutorial<doc_inputevent>`."
 msgstr ""
-"Для получения дополнительной информации о самих событиях посмотрите "
-"руководство :ref:`doc_inputevent`."
+"Для получения дополнительной информации о самих событиях ввода посмотрите "
+"руководство :ref:`Input Event Tutorial<doc_inputevent>`."
 
 #: ../../docs/tutorials/viewports/viewports.rst:51
 msgid "Listener"
@@ -44584,15 +44898,15 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr ""
+msgstr "Сеть"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
-msgstr ""
+msgstr "Многопользовательский режим высокого уровня"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High level vs low level API"
-msgstr ""
+msgstr "Программный интерфейс (API) высокого уровня против низкого уровня"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -44601,6 +44915,10 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
+"Ниже объясняются различия между высоко- и низкоуровневых сетей в Godot, а "
+"также некоторые базовые основы. Если вы хотите перейти сразу к делу и "
+"добавить сеть в свои первые узлы, перейдите к разделу `Инициализация сети`_ "
+"ниже. Но не забудьте прочитать остальные разделы позже!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -44613,10 +44931,19 @@ msgid ""
 "Godot's high-level networking API, which sacrifices some of the fine-grained "
 "control of low-level networking for greater ease of use."
 msgstr ""
+"Godot всегда поддерживал стандартную низкоуровневую сеть через UDP, TCP и "
+"некоторые протоколы более высокого уровня, такие как SSL и HTTP. Эти "
+"протоколы являются гибкими и могут использоваться почти везде. Однако "
+"использовать их для синхронизации состояния игры вручную может быть большим "
+"объемом работы. Иногда эту работу нельзя избежать, но она может быть "
+"оправдана, например, при работе с пользовательской реализацией сервера на "
+"бэкенд. Однако в большинстве случаев стоит рассмотреть высокоуровневый API-"
+"интерфейс Godot, который жертвует некоторым мелкомасштабным управлением "
+"низкоуровневыми сетями для большей простоты использования."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
-msgstr ""
+msgstr "Это связано с присущими ему ограничениями протоколов низкого уровня:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -44639,6 +44966,13 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"UDP - это более простой протокол, который только отправляет пакеты (и не "
+"имеет понятия \"соединение\"). Отсутствие коррекции ошибок делает это "
+"довольно быстро (низкая задержка), но пакеты могут быть потеряны по пути или "
+"получены в неправильном порядке. К этому добавляется MTU (максимальный "
+"размер пакета) для UDP, обычно небольшой (всего несколько сотен байтов), "
+"поэтому передача больших пакетов означает их разделение, реорганизацию и "
+"повторную попытку, если какая-то часть не проходит."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
 msgid ""
@@ -44650,6 +44984,13 @@ msgid ""
 "this most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"В общем, TCP можно считать надежным, упорядоченным и медленным; UDP - "
+"ненадежным, неупорядоченным и быстрым. Из-за большой разницы в "
+"производительности часто имеет смысл перестроить те части TCP, которые нужны "
+"для игр (дополнительная надежность и порядок пакетов), избегая ненужных "
+"частей (функции управления перегрузкой/трафиком, алгоритм Нейгла и т.д.). В "
+"связи с этим большинство игровых движков имеют такую реализацию, и Godot не "
+"исключение."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
@@ -44658,6 +44999,11 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
+"В итоге вы можете использовать низкоуровневый сетевой API для максимального "
+"контроля, и реализовать все, что находится поверх неизолированных сетевых "
+"протоколов, или использовать API высокого уровня на базе :ref:`SceneTree "
+"<class_SceneTree>`, который делает большую часть тяжелой работы за кулисами, "
+"как правило, оптимальным способом."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""
@@ -44674,6 +45020,7 @@ msgid ""
 "More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
 msgstr ""
+"Подробнее о TCP/IP, UDP и сети: https://gafferongames.com/post/udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
 msgid ""
@@ -47463,9 +47810,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:4
-#, fuzzy
 msgid "GDNative C++ example"
-msgstr "GDNative / C++"
+msgstr "GDNative пример на C++"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:8
 msgid ""
@@ -47495,9 +47841,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:17
-#, fuzzy
 msgid "Setting up your project"
-msgstr "Создание нового проекта"
+msgstr "Настройка вашего проекта"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:18
 msgid "There are a few prerequisites you'll need:"
@@ -47603,9 +47948,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:75
-#, fuzzy
 msgid "Creating a simple plugin"
-msgstr "Создание нового проекта"
+msgstr "Создание простого плагина"
 
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:76
 msgid "Now it's time to build an actual plugin."
@@ -51707,9 +52051,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:55
-#, fuzzy
 msgid "Example (Windows)"
-msgstr "Примеры"
+msgstr "Пример (Windows)"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:71
 msgid "Example (x11)"
@@ -51895,9 +52238,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:23
-#, fuzzy
 msgid "Qt Creator"
-msgstr "Итератор"
+msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:26
 msgid "Importing the project"
@@ -53747,9 +54089,8 @@ msgid "And more..."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:38
-#, fuzzy
 msgid "Creating a Godot server"
-msgstr "Создание узлов"
+msgstr "Создание сервера Godot"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:40
 msgid ""
@@ -53774,9 +54115,8 @@ msgid ":ref:`RID<class_rid>`"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:320
-#, fuzzy
 msgid "Registering the class in GDScript"
-msgstr "Использование в GDScript"
+msgstr "Регистрация класса в GDScript"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:322
 msgid ""
@@ -53850,9 +54190,8 @@ msgid "Summing it up"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:478
-#, fuzzy
 msgid "Here is the GDScript sample code:"
-msgstr "Вот пример кода GDScript"
+msgstr "Вот пример кода GDScript:"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:504
 msgid ""
@@ -54426,9 +54765,8 @@ msgid "An example of one MeshInstance parented to a bone in Skeleton:"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:228
-#, fuzzy
 msgid "AnimationPlayer"
-msgstr "Анимация"
+msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:229
 msgid ""
@@ -57454,6 +57792,8 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: Курируемая директория ресурсов от Andre Schmitz <https://"
+"godot-engine.zeef.com/andre.antonio.schmitz>`_"
 
 #~ msgid "Adding AI"
 #~ msgstr "Добавление ИИ"

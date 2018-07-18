@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-28 18:31+0200\n"
-"PO-Revision-Date: 2018-06-23 08:37+0000\n"
+"PO-Revision-Date: 2018-07-18 12:48+0000\n"
 "Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
@@ -1069,75 +1069,90 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
+"Tämä opas kuljettaa sinut läpi Godotin käyttöliittymän. Läpikäytävänä ovat "
+"**Projektinhallinta, telakat ja työtilat** sekä kaikki mitä sinun tarvitsee "
+"tietää voidaksesi aloittaa pelimoottorin parissa."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "Projektinhallinta"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
+"Käynnistäessäsi Godotin, ensimmäinen ikkuna, jonka näet on "
+"Projektinhallinta. Se antaa sinun luoda, poistaa, tuoda tai pelata "
+"peliprojekteja."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:46
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:16
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:22
 msgid "|image0|"
-msgstr ""
+msgstr "|image0|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:18
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"Oikeasta yläkulmasta löydät alasvetovalikon editorissa käytettävän kielen "
+"vaihtamiseksi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:54
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:48
 msgid "|image1|"
-msgstr ""
+msgstr "|image1|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:23
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos to help you get started faster."
 msgstr ""
+"**Mallit** välilehdellä voit ladata avoimen lähdekoodin projektipohjia ja "
+"esimerkkejä päästäksesi nopeammin alkuun."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:58
 msgid "|image2|"
-msgstr ""
+msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
-msgstr ""
+msgstr "Luo tai tuo projekti"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
+"Luodaksesi projektin, napsauta oikealla sijaitsevaa ``Uusi projekti`` "
+"painiketta. Anna sille nimi ja valitse tietokoneeltasi tyhjä hakemisto, "
+"jonne se tallennetaan."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:34
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:88
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:83
 msgid "|image3|"
-msgstr ""
+msgstr "|image3|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:36
 msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"Napsauta Selaa-painiketta avataksesi Godotin tiedostoselaimen ja valitse "
+"sijainti, tai kirjoita kansion polku Projektin polku -kenttään."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:39
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:99
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:88
 msgid "|image4|"
-msgstr ""
+msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:41
 msgid ""
@@ -1145,18 +1160,23 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"Kun näet vihreän merkin oikealla, se tarkoittaa, että hakemisto on "
+"tunnistettu tyhjäksi ja voit napsauttaa ``Luo ja muokkaa``. Godot luo "
+"sinulle projektin ja avaa sen editoriin."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
+"Seuraavan kerran kun avaat Godotin, näet uuden projektisi luettelossa. "
+"Kaksoisnapsauta sitä avataksesi sen editoriin."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:92
 msgid "|image5|"
-msgstr ""
+msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:50
 msgid ""
@@ -1164,23 +1184,26 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"Voit tuoda olemassa olevia projekteja samaan tapaan käyttämällä Tuo "
+"painiketta. Etsi kansio, joka sisältää projektin tai ``project.godot`` "
+"tiedoston, tuodaksesi projektin ja muokataksesi sitä."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "When the folder path is correct you'll see a green checkmark."
-msgstr ""
+msgstr "Kun projektin polku on oikein näet vihreän oikein-merkin."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:120
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "Ensimmäinen katsauksesi Godotin editoriin"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -1188,48 +1211,60 @@ msgid ""
 "interface with the 3d viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2d to switch to the 2d workspace."
 msgstr ""
+"Tervetuloa Godotiin! Nyt kun projektisi on avoinna sinun pitäisi nähdä "
+"editorin käyttöliittymä ja aktiivisena oleva 3D-ikkuna. Voit vaihtaa "
+"nykyistä työtilaa käyttöliittymän ylälaidasta. Napsauta 2D vaihtaaksesi 2D-"
+"työtilaan."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 msgid "Now you should see this interface, with empty docks on the right side."
 msgstr ""
+"Nyt sinun pitäisi nähdä tällainen käyttöliittymä, ja oikeassa laidassa "
+"tyhjiä telakoita."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:147
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"Ylhäällä, vasemmalta oikealle luettuna, voit nähdä **valikot (main menus)**, "
+"**työtilat (workspaces)** ja **pelitestauspainikkeet (playtest buttons)**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid ""
 "On the left side you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
+"Vasemmassa laidassa on **Tiedostojärjestelmän telakka (FileSystem dock)**, "
+"jossa voit hallinnoida projektisi tiedostoja ja varoja."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:152
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
 "On the right side you’ll find the **Scene dock** that lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
+"Oikeasta laidasta löydät **Skene-telakan (Scene dock)**, joka listaa "
+"aktiivisen skenen sisällön, ja alakulmasta **Tarkastelun (Inspector)**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:160
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""
@@ -1237,11 +1272,14 @@ msgid ""
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
+"Keskellä ylhäällä käytössäsi on **Työkalupalkki (Toolbar)**, josta löydät "
+"työkaluja siirtämiseen, koon muuttamiseen ja skenesi objektien "
+"lukitsemiseen. Sen sisältö vaihtuu, kun hypit työtilasta toiseen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:167
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:93
 msgid ""
@@ -1249,45 +1287,56 @@ msgid ""
 "editor, the audio mixer… They are wide and can take precious space. That’s "
 "why they’re folded by default."
 msgstr ""
+"**Alapaneeli** on debuggauskonsolia, animaatioeditoria, audiomikseria, ym. "
+"varten. Ne ovat leveitä ja vievät arvokasta tilaa. Sen vuoksi ne ovat aluksi "
+"suljettuna."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:100
 msgid "The workspaces"
-msgstr ""
+msgstr "Työtilat"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
 msgstr ""
+"Ylhäällä näet painikkeet neljälle työtilalle: 2D, 3D, Script ja AssetLib."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
 "You’ll use the **2D workspace** for all types of games. On top of 2D games "
 "that is where you’ll build your interfaces. Press F1 to access it. |image15|"
 msgstr ""
+"Tulet käyttämään **2D-työtilaa** kaiken tyyppisille peleille. 2D-pelien "
+"lisäksi rakennat siinä myös pelisi käyttöliittymät. Paina F1 päästäksesi "
+"tilaan. |image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:109
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
+"**3D-työtilassa** voit työskennellä meshien, valojen ja kenttäsuunnittelun "
+"parissa. Paina F2 mennäksesi siihen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
 msgid "|image16|"
-msgstr ""
+msgstr "|image16|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:114
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
 msgstr ""
+"Huomaa myös teksti [Perspektiivi] työpalkin alla; se on painike, joka avaa "
+"luettelon 3D-ikkunaan liittyviä vaihtoehtoja."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:116
 msgid "|image20|"
-msgstr ""
+msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 msgid ""
@@ -1295,20 +1344,25 @@ msgid ""
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
+"**Script** työtila on kokonainen koodieditori debuggerilla, monipuolisella "
+"automaattitäydennyksellä ja sisäänrakennetulla koodin lähdeaineistolla "
+"varustettuna. Paina F3 mennäksesi siihen, ja F4 hakeaksesi lähdeaineistosta."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:122
 msgid "|image17|"
-msgstr ""
+msgstr "|image17|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"Lopulta, **AssetLib** on kirjasto vapaita lisäosia, skriptejä ja assetteja, "
+"joita voit käyttää projekteissasi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
 msgid "Modify the interface"
-msgstr ""
+msgstr "Muokkaa käyttöliittymää"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
 msgid ""
@@ -1316,39 +1370,48 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
+"Godotin käyttöliittymä elelee yhdessä ikkunassa. Et voi jakaa sitä useille "
+"näytöille, vaikkakin voit työskennellä ulkoisen koodieditorin, kuten "
+"esimerkiksi Atomin tai Visual Studion, kanssa."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
 msgid "Move and resize docks"
-msgstr ""
+msgstr "Telakoiden siirtäminen ja koon muuttaminen"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"Napsauta ja vedä minkä tahansa telakan tai paneelin reunasta muuttaaksesi "
+"sen kokoa vaaka- tai pystysuunnassa."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid "|image18|"
-msgstr ""
+msgstr "|image18|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
+"Napsauta minkä tahansa telakan ylälaidassa olevaa kolmipisteistä kuvaketta "
+"muuttaaksesi sen sijoittelua."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid "|image19|"
-msgstr ""
+msgstr "|image19|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"Mene ``Editori`` valikkoon and valitse ``Editorin asetukset`` säätääksesi "
+"editorin ulkoasua."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "Skenet ja solmut"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
 msgid ""
@@ -1357,6 +1420,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Kuvittele hetki, ettet ole enää pelisuunnittelija. Sen sijaan, olet kokki! "
+"Vaihda hipsteriasusi kokinhattuun ja kaksirivinapitettuun kokintakkiin. Nyt, "
+"sen sijaan että tekisit pelejä, luotkin uusia ja herkullisia reseptejä "
+"asiakkaillesi."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""
@@ -1365,6 +1432,9 @@ msgid ""
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
+"Joten, miten kokki luo reseptinsä? Reseptit on jaettu kahteen osaan: ensin "
+"tulevat ainesosat ja toisena ohjeet kuinka valmistaa se. Tällä tapaa kuka "
+"tahansa voi seurata reseptiä ja nauttia suurenmoisesta luomuksestasi."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -1372,17 +1442,22 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
+"Pelien tekeminen Godotissa tuntuu hyvin pitkälti samalta. Pelimoottorin "
+"käyttäminen tuntuu kuin olisi keittiössä. Tuossa keittiössä, *solmut* ovat "
+"jääkaappi täynnä tuoreita aineksia, joista kokata."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
 "There are many types of nodes. Some show images, others play sound, other "
 "nodes display 3D models, etc. There are dozens of them."
 msgstr ""
+"Solmuja on montaa tyyppiä. Jotkut näyttävät kuvia, toiset soittavat ääniä, "
+"jotkut solmut esittävät 3D-malleja, jne. Niitä on kymmenittäin."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 #: ../../docs/development/file_formats/tscn.rst:27
 msgid "Nodes"
-msgstr ""
+msgstr "Solmut"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -1391,32 +1466,39 @@ msgid ""
 "specialized functions. However, any given node always has the following "
 "attributes:"
 msgstr ""
+"Mutta aloitetaan perusteista. Solmut ovat pelin luomisen keskeisiä "
+"rakennuspalikoita. Kuten mainittu ylempänä, solmu voi suorittaa moninaisia "
+"erikoistuneita toimintoja. Joka tapauksessa, millä tahansa solmulla on aina "
+"seuraavat piirteet:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:35
 msgid "It has a name."
-msgstr ""
+msgstr "Sillä on nimi."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:36
 msgid "It has editable properties."
-msgstr ""
+msgstr "Sillä on muokattavia ominaisuuksia."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:37
 msgid "It can receive a callback to process every frame."
 msgstr ""
+"Se voi saada vastakutsun (callback) käsiteltäväksi jokaisella ruudulla."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:38
 msgid "It can be extended (to have more functions)."
-msgstr ""
+msgstr "Sitä voidaan laajentaa (jotta se voi saada lisää funktioita)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
 msgid "It can be added to other nodes as children."
-msgstr ""
+msgstr "Se voidaan lisätä muiden solmujen alisolmuksi."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
 msgstr ""
+"Viimeisin on tärkeää. Solmuilla voi olla muita solmuja alisolmuina. Tähän "
+"tapaan järjestettynä solmuista muodostuu **puu**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
 msgid ""
@@ -1424,6 +1506,10 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
+"Mahdollisuus järjestää solmuja tähän tapaan Godotissa luo tehokkaan työkalun "
+"projektien organisoimiseksi. Koska erilaisilla solmuilla voi olla erilaisia "
+"toimintoja, niiden yhdistäminen mahdollistaa vielä monimutkaisempien "
+"toimintojen luomisen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:50
 msgid ""
@@ -1431,40 +1517,50 @@ msgid ""
 "the next few sections. The most important fact to remember for now is that "
 "nodes exist and can be arranged this way."
 msgstr ""
+"Älä murehdi, jos tämä ei vielä loksahda. Jatkamme tämän tutkiskelua "
+"muutamien seuraavien lukujen ajan. Tärkein asia toistaiseksi muistaa on, "
+"että solmuja on olemassa ja että niitä voidaan järjestää tähän tapaan."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr ""
+msgstr "Skenet"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
 "Now that the concept of nodes has been defined, the next logical step is to "
 "explain what a Scene is."
 msgstr ""
+"Nyt kun solmujen käsite on määritetty, seuraava looginen askel on selostaa "
+"mikä Skene on."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:62
 msgid ""
 "A scene is composed of a group of nodes organized hierarchically (in tree "
 "fashion). Furthermore, a scene:"
 msgstr ""
+"Skene muodostuu joukosta solmuja hierarkisesti järjestettynä (puun tapaan). "
+"Lisäksi:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
 msgid "always has only one root node."
-msgstr ""
+msgstr "Skenellä on aina yksi juurisolmu."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
-msgstr ""
+msgstr "Skene voidaan tallentaa levylle ja ladata takaisin."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr ""
+msgstr "Skenestä voidaan luoda *ilmentymiä* (siitä lisää myöhemmin)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
+"Pelin ajaminen tarkoittaa skenen ajamista. Projekti voi sisältää useita "
+"skenejä, mutta jotta peli voi käynnistyä, yksi niistä täytyy valita "
+"pääskeneksi."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -1472,10 +1568,13 @@ msgid ""
 "for editing 2D and 3D scenes as well as user interfaces, but the editor is "
 "based on the concept of editing a scene and the nodes that compose it."
 msgstr ""
+"Pohjimmiltaan Godotin editori on **skene-editori**. Siinä on runsaasti "
+"työkaluja 2D- ja 3D-skenejen sekä käyttöliittymien editointiin, mutta "
+"editori pohjautuu skenejen ja solmujen editoinnin periaatteeseen."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:77
 msgid "Creating a new project"
-msgstr ""
+msgstr "Uuden projektin luominen"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:79
 msgid ""
@@ -1483,18 +1582,25 @@ msgid ""
 "a long tradition in tutorials, we'll start with a \"Hello World\" project. "
 "This will introduce us to using the editor."
 msgstr ""
+"Tehdäänpä näistä abstrakteista käsitteistä kouriintuntuvampia esimerkin "
+"avulla. Noudattaen pitkää perinnettä, aloitamme \"Hello World\" projektilla. "
+"Se esittelee meille editorin käyttöä."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
 msgid ""
 "If you run the godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
+"Jos käynnistät Godotin projektin ulkopuolella, ilmestyy esiin "
+"Projektinhallinta. Se auttaa pelikehittäjiä hallitsemaan projektejaan."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
 "To create a new project, click the \"New Project\" option. Choose and create "
 "a path for the project and specify the project name \"New Project\":"
 msgstr ""
+"Luodaksesi uuden projektin, napsauta \"Uusi projekti\" valintaa. Valitse ja "
+"luo polku projektille, ja määrittele projektille nimi \"New Project\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 #: ../../docs/getting_started/editor/external_editor.rst:32
@@ -1506,6 +1612,8 @@ msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
 msgstr ""
+"Kun olet luonut \"New Project\" projektin, avaa se. Tämä aukaisee Godotin "
+"editorin:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
 msgid ""
@@ -1513,27 +1621,37 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World!\" message that we'll put on the screen."
 msgstr ""
+"Kuten mainittu aiemmin, pelien luonti Godotissa tuntuu kuin olisi "
+"keittiössä, joten avataanpa jääkaappi ja lisätää projektiin muutama tuore "
+"solmu. Aloitamme \"Hello World!\" viestillä, jonka asetamme ruudulle."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
 "To do this, press the \"New Node\" button (which looks like a plus symbol):"
 msgstr ""
+"Tehdäksessi niin, paina \"Uusi solmu\" painiketta (joka näyttää plus-"
+"merkiltä):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:110
 msgid ""
 "This will open the Create Node dialog, showing the long list of nodes that "
 "can be created:"
 msgstr ""
+"Tämä avaa Luo solmu -ikkunan, näyttäen pitkän luettelon solmuista, joita "
+"voidaan luoda:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the quickest way:"
 msgstr ""
+"Sieltä, valitse ensin \"Label\" solmu. Hakeminen on luultavasti nopein tapa "
+"löytää se:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
 msgstr ""
+"Ja lopulta, luo Label-solmu! Paljon tapahtuu, kun Luo-painiketta painetaan:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:124
 msgid ""
@@ -1541,6 +1659,8 @@ msgid ""
 "type), and the Label appears, selected, at the top left corner of the "
 "viewport."
 msgstr ""
+"Ensinnäkin, skene vaihtuu 2D-editoriin (koska Label on 2D-tyyppinen solmu), "
+"ja Label ilmestyy valittuna ikkunan oikeaan yläkulmaan."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:127
 msgid ""
@@ -1548,28 +1668,37 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
+"Solmu ilmestyy skenepuun editoriin (oikeassa yläkulmassa oleva laatikko), ja "
+"viestin (Label) ominaisuudet ilmestyvät Tarkastelijaan (laatikko oikeassa "
+"alakulmassa)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello, World!\":"
 msgstr ""
+"Seuraava askel on muuttaa viestin \"Text\" ominaisuutta. Muutetaanpa siihen "
+"\"Hello, World!\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
 "Ok, everything's ready to run the scene! Press the PLAY SCENE Button on the "
 "top bar (or hit F6):"
 msgstr ""
+"Ok, kaikki on valmista skenen ajamista varten! Paina yläpalkissa olevaa "
+"Pelaa skeneä -painiketta (tai paina F6):"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:141
 msgid "Aaaand... Oops."
-msgstr ""
+msgstr "Jaaaaa... Hups."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like hello."
 "tscn in Scene -> Save:"
 msgstr ""
+"Skenet täytyy tallentaa ennen kuin ne voidaan ajaa, joten tallenna skene "
+"joksikin, kuten hello.tscn, valikossa Skene -> Tallenna skene:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -1581,12 +1710,21 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
+"Ja jotakin hassua tapahtuu. Tiedostoikkuna on erityinen tiedostoikkuna, joka "
+"sallii sinun tallentaa ainoastaan projektin alle. Projektin juuri on \"res://"
+"\", joka tarkoittaa \"resurssipolkua\". Tämä tarkoittaa, että tiedostot "
+"voidaan ainoastaan tallentaa projektin sisällä. Jatkon kannalta, kun teet "
+"toimenpiteitä tiedostoille Godotissa, muista että \"res://\" on "
+"resurssipolku, ja riippumatta alustasta tai asennussijainnista, se on tapa "
+"löytää resurssitiedostot pelistä käsin."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello, World!\" "
 "demo should finally execute:"
 msgstr ""
+"Tallennettuasi skenen ja painettuasi uudelleen Pelaa, \"Hello World!\" "
+"esimerkin pitäisi viimein toimia:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
@@ -1594,7 +1732,7 @@ msgstr "Onnistui!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
-msgstr ""
+msgstr "Projektin määrittäminen"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid ""
@@ -1603,6 +1741,10 @@ msgid ""
 "several scenes, so one of them must be set as the main scene. This is the "
 "scene that will be loaded any time the project is run."
 msgstr ""
+"Ok, on aika määrittää projekti. Juuri nyt, ainoa tapa ajaa jotakin on "
+"käynnistää nykyinen skene. Projekteilla voi kuitenkin olla useita skenejä, "
+"jo yksi niistä täytyy valita pääskeneksi. Se on se skene, joka ladataan, kun "
+"projekti ajetaan."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:175
 msgid ""
@@ -1612,22 +1754,34 @@ msgid ""
 "this process, Godot provides a project settings dialog, which acts as a sort "
 "of frontend to editing a project.godot file."
 msgstr ""
+"Kaikki nämä asetukset tallennetaan project.godot tiedostoon, joka on win.ini "
+"muotoinen tekstitiedosto (helppoa muokkausta varten). Tiedostossa on "
+"kymmenittäin muokattavia asetuksia, jotka määrittävät kuinka projekti "
+"suoritetaan. Prosessin yksinkertaistamiseksi Godot tarjoaa projektin "
+"asetuksille ikkunan, joka toimii eräänlaisena edustana project.godot "
+"tiedoston muokkaamista varten."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr ""
+"Dialogin pääsee valitsemalla valikosta Projekti -> Projektin asetukset. "
+"Kokeile sitä nyt."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'hello.tscn'."
 msgstr ""
+"Kun ikkuna aukeaa, valitaanpa pääskene. Etsi `Application/Run/Main Scene` "
+"ominaisuus ja napsauta sitä valitaksesi 'hello.tscn' tiedoston."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
+"Nyt, tämän muutoksen myötä, kun painat tavallista Pelaa-painiketta (tai F5), "
+"skene ajetaan riippumatta siitä mitä skeneä ollaan aktiivisesti muokkaamassa."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
 msgid ""
@@ -1636,6 +1790,11 @@ msgid ""
 "tick is marked to the left of its name. This means that the property will be "
 "saved to the project.godot file and remembered."
 msgstr ""
+"Projektin asetukset -ikkuna tarjoaa paljon valintoja, jotka voidaan "
+"tallentaa project.godot tiedostoon, ja näyttää niiden oletusarvot. Jos "
+"muutat arvoa, sen nimen vasemmalle puolelle asetetaan pukki merkiksi siitä. "
+"Se tarkoittaa, että ominaisuus tallennetaan project.godot tiedostoon ja "
+"muistetaan."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:196
 msgid ""
@@ -1643,6 +1802,9 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
+"Sivuhuomautuksena, asetuksiin on myös mahdollista lisätä räätälöityjä "
+"valintoja ja lukea ne ajonaikaisesti käyttämällä :ref:`ProjectSettings "
+"<class_ProjectSettings>` singletonia."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid "To be continued..."
@@ -1654,6 +1816,9 @@ msgid ""
 "only *one* scene and *one* node! Don't worry, the next tutorial will expand "
 "on that..."
 msgstr ""
+"Tämä opas kertoi \"skeneistä ja solmuista\", mutta tähän saakka niitä on "
+"ollut vain *yksi* skene ja *yksi* solmu! Älä huoli, seuraava opas kertoo "
+"enemmän siitä..."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
@@ -2948,6 +3113,8 @@ msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions."
 msgstr ""
+"Napsauta \"Pelaa skeneä\" (``F6``) ja varmista, että voit liikuttaa pelaajaa "
+"ympäri ruutua kaikkiin suuntiin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:314
 msgid ""
@@ -13513,7 +13680,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/index.rst:2
 msgid "Project workflow"
-msgstr ""
+msgstr "Projektin työnkulku"
 
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
 msgid "Project setup"
@@ -13527,34 +13694,49 @@ msgid ""
 "engine can be a little challenging. Because of this, a simple workflow will "
 "be described, which can be used or not, but should work as a starting point."
 msgstr ""
+"Tämän oppaan tarkoitus on ehdottaa yksinkertaista työnkulkua projektien "
+"järjestämiseksi. Koska Godot antaa ohjelmoijan käyttää tiedostojärjestelmää "
+"kuinka he haluavat, sopivan tavan löytäminen projektien järjestämiseen "
+"saattaa olla hieman hankalaa pelimoottorin käyttöä aloitellessa. Tästä "
+"syystä esittelemme yksinkertaisen työnkulun, jota voi käyttää tai olla "
+"käyttämättä, mutta sen pitäisi ainakin tarjota lähtökohta."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
 msgid ""
 "Additionally, using version control can be challenging so this proposition "
 "will include that too."
 msgstr ""
+"Lisäksi, versiohallinnan käyttö voi olla haastavaa, joten tämä ehdotus "
+"sisältää myös sen."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
 msgid "Organization"
-msgstr ""
+msgstr "Järjestys"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:22
 msgid ""
 "Godot is scene based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
 msgstr ""
+"Godot on luonnostaan skene-pohjainen ja käyttää tiedostojärjestelmää "
+"sellaisenaan ilman metadataa tai asset-tietokantaa."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:25
 msgid ""
 "Unlike other engines, a lot of resource are contained within the scene "
 "itself, so the amount of files in the filesystem is considerably lower."
 msgstr ""
+"Toisin kuin muissa pelimoottoreissa, suuri osa resursseista sisältyy skeneen "
+"itseensä, joten tiedostojen määrä tiedostojärjestelmässä on huomattavasti "
+"alhaisempi."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:28
 msgid ""
 "Considering that, the most common approach is to group assets close to "
 "scenes as, when a project grows, it makes it more maintainable."
 msgstr ""
+"Ottaen sen huomioon, yleisin lähestymistapa on ryhmitellä assetit lähelle "
+"skenejä, niin että kun projekti kasvaa, se on helpommin ylläpidettävissä."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:31
 msgid ""
@@ -13562,10 +13744,13 @@ msgid ""
 "can usually be organized in a place, while a separate folder is used to "
 "store built levels that use them."
 msgstr ""
+"Esimerkkinä, perustana toimivat spritejen kuvat, 3D-skenemallit tai meshit, "
+"materiaalit, ym. voi yleensä järjestää yhteen paikkaan, kun taas niistä "
+"rakennetuille kentille voi käyttää erillistä kansiota."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:52
 msgid "Importing"
-msgstr ""
+msgstr "Tuonti"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:54
 msgid ""
@@ -13573,18 +13758,23 @@ msgid ""
 "project. While this can be useful in large projects, it resulted in an "
 "organization hassle for most developers."
 msgstr ""
+"Ennen 3.0 versiota Godot hoiti tuontiprosessin projektin ulkopuolisista "
+"tiedostoista. Vaikka tämä saattoi olla hyödyllistä isoissa projekteissa, se "
+"johti useimmilla kehittäjillä järjestämisen sekamelskaan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:58
 msgid ""
 "Because of this, assets are now imported from within the project folder "
 "transparently."
-msgstr ""
+msgstr "Tästä syystä, assetit tuodaan nykyään läpinäkyvästi projektikansiosta."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:61
 msgid ""
 "If a folder shouldn't be imported into Godot an exception can be made with "
 "a .gdignore file."
 msgstr ""
+"Jos kansiota ei pidä tuoda Godotiin, sille voidaan tehdä poikkeus .gdignore "
+"tiedostolla."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
 msgid "Godot-Blender-Exporter"

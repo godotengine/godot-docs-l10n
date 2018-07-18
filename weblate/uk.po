@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-28 18:31+0200\n"
-"PO-Revision-Date: 2018-06-19 10:45+0000\n"
+"PO-Revision-Date: 2018-07-03 10:43+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -636,18 +636,17 @@ msgstr ""
 "переваги для себе."
 
 #: ../../docs/about/faq.rst:85
-#, fuzzy
 msgid ""
 "GDScript is designed to integrate from the ground to the way Godot works, "
 "more than any other language, and is simple and easy to learn. Takes at most "
 "a day or two to get comfortable and it's easy to see the benefits once you "
 "do. Please make the effort to learn GDScript, you will not regret it."
 msgstr ""
-"GDScript призначений для інтеграції від фундаменту до шляху роботи Godot, "
-"більш ніж будь-яка інша мова, і є простим, і легким у вивченні. Це забирає "
-"щонайбільше день чи два, щоб зручно користуватися, і ви легко побачите "
-"переваги, як зробите це. Будь ласка докладіть зусиль, щоб вивчити GDScript, "
-"ви не пошкодуєте про це."
+"GDScript створений від основи для якомога повнішої інтеграції із робочим "
+"процесом Godot, більш ніж будь-яка інша мова, і є простим і легким у "
+"вивченні. Достатньо дня чи двох, щоб навчитися ним зручно користуватися. "
+"Щойно ви познайомитеся із мовою, вам буде просто оцінити її переваги. Будь "
+"ласка, докладіть зусиль, щоб вивчити GDScript, — ви не пошкодуєте."
 
 #: ../../docs/about/faq.rst:91
 msgid ""
@@ -986,7 +985,6 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "І це все! Ваша гра повинна працювати в декількох роздільностях."
 
 #: ../../docs/about/faq.rst:223
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -994,8 +992,8 @@ msgid ""
 "the App Store or Google Play."
 msgstr ""
 "Якщо є бажання, щоб ваша гра також працювала на стародавніх пристроях із "
-"крихітними екранами (шириною менше 300 пікселів в ширину), ви можете "
-"скористатись експортом, щоб зменшити зображення, і встановити, які збірки "
+"крихітними екранами (шириною менше 300 пікселів), ви можете скористатись "
+"експортом, щоб зменшити зображення, і встановити, які збірки "
 "використовуватимуться для певних розмірів екрана в App Store або Google Play."
 
 #: ../../docs/about/faq.rst:229
@@ -1041,34 +1039,47 @@ msgid ""
 "ideas solely based on personal belief. Developers are interested in (for "
 "example):"
 msgstr ""
+"Розробники Godot завжди охочі до спілкування з вами, вони відкриті до "
+"критики до такої міри, яка є рідкісною у проектах з відкритим кодом, але "
+"найбільше їх цікавлять справжні вади, які трапилися вам під час користування "
+"Godot, а зовсім не якісь ідеї, які засновано на ваших особистих "
+"переконаннях. Розробникам, зокрема, цікаві такі речі:"
 
 #: ../../docs/about/faq.rst:246
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
 msgstr ""
+"Ваші враження від користування програмним забезпеченням і проблеми, з якими "
+"ви зіткнулися (ми переймаємося цим набагато більше за ідеї щодо поліпшення "
+"програмного забезпечення)."
 
 #: ../../docs/about/faq.rst:248
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
 msgstr ""
+"Можливості, які б ви хотіли бачити реалізованими, оскільки вони потрібні для "
+"вашого проекту."
 
 #: ../../docs/about/faq.rst:250
 msgid ""
 "The concepts that were difficult to understand in order to learn the "
 "software."
 msgstr ""
+"Поняття, які було важко зрозуміти під час вивчення програмного забезпечення."
 
 #: ../../docs/about/faq.rst:252
 msgid "The parts of your workflow you would like to see optimized."
-msgstr ""
+msgstr "Частини вашого робочого процесу, які б ви хотіли оптимізувати."
 
 #: ../../docs/about/faq.rst:253
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't up "
 "to par."
 msgstr ""
+"Частини, для яких би ви хотіли мати зрозумілі покрокові настанови, та "
+"частини, документація до яких не є актуальною."
 
 #: ../../docs/about/faq.rst:255
 msgid ""
@@ -1090,19 +1101,19 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:265
 msgid "Certain feature is ugly"
-msgstr ""
+msgstr "Певна можливість реалізовано потворно"
 
 #: ../../docs/about/faq.rst:266
 msgid "Certain workflow is slow"
-msgstr ""
+msgstr "Певний робочий процес є повільним"
 
 #: ../../docs/about/faq.rst:267
 msgid "Certain feature needs optimization"
-msgstr ""
+msgstr "Певна можливість потребує оптимізації"
 
 #: ../../docs/about/faq.rst:268
 msgid "Certain aspect of the UI looks cluttered"
-msgstr ""
+msgstr "Якийсь аспект інтерфейсу користувача здається безладним"
 
 #: ../../docs/about/faq.rst:270
 msgid ""
@@ -1120,6 +1131,8 @@ msgid ""
 "I tried to make a game like Battlefield but I'm not managing to understand "
 "how to get lighting to look the same."
 msgstr ""
+"Хочу створити гру, подібну до Battlefield, але не можу розібратися з тим, як "
+"зробити подібне освітлення."
 
 #: ../../docs/about/faq.rst:277
 msgid ""
@@ -1165,7 +1178,7 @@ msgstr "Крок-за-кроком"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Вступ до редактора Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1196,6 +1209,8 @@ msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"У верхньому правому куті вікна розташовано спадне меню, за допомогою якого "
+"ви можете змінити мову інтерфейсу редактора."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:54
@@ -1217,13 +1232,16 @@ msgstr "|image2|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
-msgstr ""
+msgstr "Створення або імпортування проекту"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
+"Щоб створити проект, натисніть кнопкуe ``Новий проект`` праворуч. Вкажіть "
+"назву проекту і виберіть порожню теку на вашому комп'ютері для зберігання "
+"даних проекту."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:34
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:88
@@ -1850,7 +1868,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple Instances"
-msgstr "Багато зразків"
+msgstr "Додавання декількох екземплярів"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:80
 msgid ""
@@ -1858,14 +1876,17 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"Ви можете додавати будь-яку кількість екземплярів на сцену за допомогою "
+"повторного натискання кнопки \"Екземпляр\" або натисканням екземпляра кульки "
+"із наступним натисканням кнопки \"Дублювати\" (Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "Знову запустіть сцену і усі кульки впадуть."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "Редагування екземплярів"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
@@ -3895,7 +3916,7 @@ msgstr ""
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
-msgstr ""
+msgstr "Ось повний скрипт для гравця із коментарями щодо того, що ми змінили:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
 msgid "Export Templates"
@@ -9600,7 +9621,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:377
 msgid ":ref:`Vector2 <class_Vector2>`"
-msgstr ""
+msgstr ":ref:`Vector2 <class_Vector2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:379
 msgid ""
@@ -9610,7 +9631,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:383
 msgid ":ref:`Rect2 <class_Rect2>`"
-msgstr ""
+msgstr ":ref:`Rect2 <class_Rect2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:385
 msgid ""
@@ -9620,7 +9641,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:389
 msgid ":ref:`Vector3 <class_Vector3>`"
-msgstr ""
+msgstr ":ref:`Vector3 <class_Vector3>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:391
 msgid ""
@@ -9630,7 +9651,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:395
 msgid ":ref:`Transform2D <class_Transform2D>`"
-msgstr ""
+msgstr ":ref:`Transform2D <class_Transform2D>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:397
 msgid "3x2 matrix used for 2D transforms."
@@ -9638,7 +9659,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:400
 msgid ":ref:`Plane <class_Plane>`"
-msgstr ""
+msgstr ":ref:`Plane <class_Plane>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:402
 msgid ""
@@ -9648,7 +9669,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:406
 msgid ":ref:`Quat <class_Quat>`"
-msgstr ""
+msgstr ":ref:`Quat <class_Quat>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:408
 msgid ""
@@ -9658,7 +9679,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:412
 msgid ":ref:`AABB <class_AABB>`"
-msgstr ""
+msgstr ":ref:`AABB <class_AABB>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:414
 msgid ""
@@ -9669,7 +9690,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:419
 msgid ":ref:`Basis <class_Basis>`"
-msgstr ""
+msgstr ":ref:`Basis <class_Basis>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
 msgid ""
@@ -9679,7 +9700,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:426
 msgid ":ref:`Transform <class_Transform>`"
-msgstr ""
+msgstr ":ref:`Transform <class_Transform>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:428
 msgid ""
@@ -9692,7 +9713,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:435
 msgid ":ref:`Color <class_Color>`"
-msgstr ""
+msgstr ":ref:`Color <class_Color>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:437
 msgid ""
@@ -9702,7 +9723,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:441
 msgid ":ref:`NodePath <class_NodePath>`"
-msgstr ""
+msgstr ":ref:`NodePath <class_NodePath>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:443
 msgid ""
@@ -9712,7 +9733,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:447
 msgid ":ref:`RID <class_RID>`"
-msgstr ""
+msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:449
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
@@ -9720,7 +9741,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:452
 msgid ":ref:`Object <class_Object>`"
-msgstr ""
+msgstr ":ref:`Object <class_Object>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:454
 msgid "Base class for anything that is not a built-in type."
@@ -9732,7 +9753,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:460
 msgid ":ref:`Array <class_Array>`"
-msgstr ""
+msgstr ":ref:`Array <class_Array>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:462
 msgid ""
@@ -9757,18 +9778,21 @@ msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: масив з байтів (цілих чисел від "
+"0 до 255)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:484
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
-msgstr ""
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: масив з цілих чисел."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:485
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
 msgstr ""
+":ref:`PoolRealArray <class_PoolRealArray>`: масив з чисел із рухомою крапкою."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:486
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
-msgstr ""
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: масив з рядків."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:487
 msgid ""
@@ -10213,7 +10237,6 @@ msgid "This is better explained through examples. Say we have this scenario:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
 msgstr "Тут слід зазначити таке:"
 
@@ -15284,7 +15307,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:286
 msgid "Remove nodes (-noimp)"
-msgstr ""
+msgstr "Вилучити вузли (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:288
 msgid ""
@@ -21037,7 +21060,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:50
 msgid "Adding Lights"
-msgstr ""
+msgstr "Додавання освітлення"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:52
 msgid ""
@@ -36022,6 +36045,8 @@ msgid ""
 "This is the list of supported locales and variants in the engine. It's based "
 "on the Unix standard locale strings:"
 msgstr ""
+"Нижче наведено список підтримуваних рушієм локалей та їхніх варіантів. Його "
+"засновано на стандартних рядках локалей Unix:"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
@@ -36029,11 +36054,11 @@ msgstr "Мова"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"
-msgstr ""
+msgstr "Мова або варіант мови"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "aa"
-msgstr "aAуУ"
+msgstr "aa"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Afar"
@@ -36041,31 +36066,31 @@ msgstr "афар"
 
 #: ../../docs/tutorials/i18n/locales.rst:14
 msgid "aa_DJ"
-msgstr ""
+msgstr "aa_DJ"
 
 #: ../../docs/tutorials/i18n/locales.rst:14
 msgid "Afar (Djibouti)"
-msgstr ""
+msgstr "Афарська (Джибуті)"
 
 #: ../../docs/tutorials/i18n/locales.rst:16
 msgid "aa_ER"
-msgstr ""
+msgstr "aa_ER"
 
 #: ../../docs/tutorials/i18n/locales.rst:16
 msgid "Afar (Eritrea)"
-msgstr ""
+msgstr "Афарська (Еритрея)"
 
 #: ../../docs/tutorials/i18n/locales.rst:18
 msgid "aa_ET"
-msgstr ""
+msgstr "aa_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:18
 msgid "Afar (Ethiopia)"
-msgstr ""
+msgstr "Афарська (Ефіопія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:20
 msgid "af"
-msgstr "AF11"
+msgstr "af"
 
 #: ../../docs/tutorials/i18n/locales.rst:20
 msgid "Afrikaans"
@@ -36073,7 +36098,7 @@ msgstr "африкаанс"
 
 #: ../../docs/tutorials/i18n/locales.rst:22
 msgid "af_ZA"
-msgstr ""
+msgstr "af_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:22
 msgid "Afrikaans (South Africa)"
@@ -36081,23 +36106,23 @@ msgstr "Африкаанс (Південна Африка)"
 
 #: ../../docs/tutorials/i18n/locales.rst:24
 msgid "agr_PE"
-msgstr ""
+msgstr "agr_PE"
 
 #: ../../docs/tutorials/i18n/locales.rst:24
 msgid "Aguaruna (Peru)"
-msgstr ""
+msgstr "Агуаруна (Перу)"
 
 #: ../../docs/tutorials/i18n/locales.rst:26
 msgid "ak_GH"
-msgstr ""
+msgstr "ak_GH"
 
 #: ../../docs/tutorials/i18n/locales.rst:26
 msgid "Akan (Ghana)"
-msgstr ""
+msgstr "Акан (Гана)"
 
 #: ../../docs/tutorials/i18n/locales.rst:28
 msgid "am_ET"
-msgstr ""
+msgstr "am_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:28
 msgid "Amharic (Ethiopia)"
@@ -36105,19 +36130,19 @@ msgstr "Амхарська (Ефіопія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:30
 msgid "an_ES"
-msgstr ""
+msgstr "an_ES"
 
 #: ../../docs/tutorials/i18n/locales.rst:30
 msgid "Aragonese (Spain)"
-msgstr ""
+msgstr "Арагонська (Іспанія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:32
 msgid "anp_IN"
-msgstr ""
+msgstr "anp_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:32
 msgid "Angika (India)"
-msgstr ""
+msgstr "Ангіка (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:34
 msgid "ar"
@@ -36129,15 +36154,15 @@ msgstr "арабська"
 
 #: ../../docs/tutorials/i18n/locales.rst:36
 msgid "ar_AE"
-msgstr ""
+msgstr "ar_AE"
 
 #: ../../docs/tutorials/i18n/locales.rst:36
 msgid "Arabic (United Arab Emirates)"
-msgstr ""
+msgstr "Арабська (Об'єднані Арабські Емірати)"
 
 #: ../../docs/tutorials/i18n/locales.rst:38
 msgid "ar_BH"
-msgstr ""
+msgstr "ar_BH"
 
 #: ../../docs/tutorials/i18n/locales.rst:38
 msgid "Arabic (Bahrain)"
@@ -36145,7 +36170,7 @@ msgstr "Арабська (Бахрейн)"
 
 #: ../../docs/tutorials/i18n/locales.rst:40
 msgid "ar_DZ"
-msgstr ""
+msgstr "ar_DZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:40
 msgid "Arabic (Algeria)"
@@ -36153,7 +36178,7 @@ msgstr "Арабська (Алжир)"
 
 #: ../../docs/tutorials/i18n/locales.rst:42
 msgid "ar_EG"
-msgstr ""
+msgstr "ar_EG"
 
 #: ../../docs/tutorials/i18n/locales.rst:42
 msgid "Arabic (Egypt)"
@@ -36161,7 +36186,7 @@ msgstr "Арабська (Єгипет)"
 
 #: ../../docs/tutorials/i18n/locales.rst:44
 msgid "ar_IQ"
-msgstr ""
+msgstr "ar_IQ"
 
 #: ../../docs/tutorials/i18n/locales.rst:44
 msgid "Arabic (Iraq)"
@@ -36169,7 +36194,7 @@ msgstr "Арабська (Ірак)"
 
 #: ../../docs/tutorials/i18n/locales.rst:46
 msgid "ar_JO"
-msgstr ""
+msgstr "ar_JO"
 
 #: ../../docs/tutorials/i18n/locales.rst:46
 msgid "Arabic (Jordan)"
@@ -36177,7 +36202,7 @@ msgstr "Арабська (Йорданія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:48
 msgid "ar_KW"
-msgstr ""
+msgstr "ar_KW"
 
 #: ../../docs/tutorials/i18n/locales.rst:48
 msgid "Arabic (Kuwait)"
@@ -36185,7 +36210,7 @@ msgstr "Арабська (Кувейт)"
 
 #: ../../docs/tutorials/i18n/locales.rst:50
 msgid "ar_LB"
-msgstr ""
+msgstr "ar_LB"
 
 #: ../../docs/tutorials/i18n/locales.rst:50
 msgid "Arabic (Lebanon)"
@@ -36193,7 +36218,7 @@ msgstr "Арабська (Ліван)"
 
 #: ../../docs/tutorials/i18n/locales.rst:52
 msgid "ar_LY"
-msgstr ""
+msgstr "ar_LY"
 
 #: ../../docs/tutorials/i18n/locales.rst:52
 msgid "Arabic (Libya)"
@@ -36201,7 +36226,7 @@ msgstr "Арабська (Лівія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:54
 msgid "ar_MA"
-msgstr ""
+msgstr "ar_MA"
 
 #: ../../docs/tutorials/i18n/locales.rst:54
 msgid "Arabic (Morocco)"
@@ -36209,7 +36234,7 @@ msgstr "Арабська (Марокко)"
 
 #: ../../docs/tutorials/i18n/locales.rst:56
 msgid "ar_OM"
-msgstr ""
+msgstr "ar_OM"
 
 #: ../../docs/tutorials/i18n/locales.rst:56
 msgid "Arabic (Oman)"
@@ -36217,7 +36242,7 @@ msgstr "Арабська (Оман)"
 
 #: ../../docs/tutorials/i18n/locales.rst:58
 msgid "ar_QA"
-msgstr ""
+msgstr "ar_QA"
 
 #: ../../docs/tutorials/i18n/locales.rst:58
 msgid "Arabic (Qatar)"
@@ -36225,7 +36250,7 @@ msgstr "Арабська (Катар)"
 
 #: ../../docs/tutorials/i18n/locales.rst:60
 msgid "ar_SA"
-msgstr ""
+msgstr "ar_SA"
 
 #: ../../docs/tutorials/i18n/locales.rst:60
 msgid "Arabic (Saudi Arabia)"
@@ -36233,15 +36258,15 @@ msgstr "Арабська (Саудівська Аравія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:62
 msgid "ar_SD"
-msgstr ""
+msgstr "ar_SD"
 
 #: ../../docs/tutorials/i18n/locales.rst:62
 msgid "Arabic (Sudan)"
-msgstr ""
+msgstr "Арабська (Судан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:64
 msgid "ar_SY"
-msgstr ""
+msgstr "ar_SY"
 
 #: ../../docs/tutorials/i18n/locales.rst:64
 msgid "Arabic (Syria)"
@@ -36249,7 +36274,7 @@ msgstr "Арабська (Сирія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:66
 msgid "ar_TN"
-msgstr ""
+msgstr "ar_TN"
 
 #: ../../docs/tutorials/i18n/locales.rst:66
 msgid "Arabic (Tunisia)"
@@ -36257,7 +36282,7 @@ msgstr "Арабська (Туніс)"
 
 #: ../../docs/tutorials/i18n/locales.rst:68
 msgid "ar_YE"
-msgstr ""
+msgstr "ar_YE"
 
 #: ../../docs/tutorials/i18n/locales.rst:68
 msgid "Arabic (Yemen)"
@@ -36265,7 +36290,7 @@ msgstr "Арабська (Ємен)"
 
 #: ../../docs/tutorials/i18n/locales.rst:70
 msgid "as_IN"
-msgstr ""
+msgstr "as_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:70
 msgid "Assamese (India)"
@@ -36273,35 +36298,35 @@ msgstr "Ассамська (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:72
 msgid "ast_ES"
-msgstr ""
+msgstr "ast_ES"
 
 #: ../../docs/tutorials/i18n/locales.rst:72
 msgid "Asturian (Spain)"
-msgstr ""
+msgstr "Астурійська (Іспанія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:74
 msgid "ayc_PE"
-msgstr ""
+msgstr "ayc_PE"
 
 #: ../../docs/tutorials/i18n/locales.rst:74
 msgid "Southern Aymara (Peru)"
-msgstr ""
+msgstr "Південноаймарська (Перу)"
 
 #: ../../docs/tutorials/i18n/locales.rst:76
 msgid "ay_PE"
-msgstr ""
+msgstr "ay_PE"
 
 #: ../../docs/tutorials/i18n/locales.rst:76
 msgid "Aymara (Peru)"
-msgstr ""
+msgstr "Аймарська (Перу)"
 
 #: ../../docs/tutorials/i18n/locales.rst:78
 msgid "az_AZ"
-msgstr ""
+msgstr "az_AZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:78
 msgid "Azerbaijani (Azerbaijan)"
-msgstr ""
+msgstr "Азербайджанська (Азербайджан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:80
 msgid "be"
@@ -36313,7 +36338,7 @@ msgstr "Білоруська"
 
 #: ../../docs/tutorials/i18n/locales.rst:82
 msgid "be_BY"
-msgstr ""
+msgstr "be_BY"
 
 #: ../../docs/tutorials/i18n/locales.rst:82
 msgid "Belarusian (Belarus)"
@@ -36321,27 +36346,27 @@ msgstr "Білоруська (Білорусь)"
 
 #: ../../docs/tutorials/i18n/locales.rst:84
 msgid "bem_ZM"
-msgstr ""
+msgstr "bem_ZM"
 
 #: ../../docs/tutorials/i18n/locales.rst:84
 msgid "Bemba (Zambia)"
-msgstr "бемба (Замбія)"
+msgstr "Бемба (Замбія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:86
 msgid "ber_DZ"
-msgstr ""
+msgstr "ber_DZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:86
 msgid "Berber languages (Algeria)"
-msgstr ""
+msgstr "Берберські мови (Алжир)"
 
 #: ../../docs/tutorials/i18n/locales.rst:88
 msgid "ber_MA"
-msgstr ""
+msgstr "ber_MA"
 
 #: ../../docs/tutorials/i18n/locales.rst:88
 msgid "Berber languages (Morocco)"
-msgstr ""
+msgstr "Берберські мови (Марокко)"
 
 #: ../../docs/tutorials/i18n/locales.rst:90
 msgid "bg"
@@ -36349,11 +36374,11 @@ msgstr "bg"
 
 #: ../../docs/tutorials/i18n/locales.rst:90
 msgid "Bulgarian"
-msgstr "болгарська"
+msgstr "Болгарська"
 
 #: ../../docs/tutorials/i18n/locales.rst:92
 msgid "bg_BG"
-msgstr ""
+msgstr "bg_BG"
 
 #: ../../docs/tutorials/i18n/locales.rst:92
 msgid "Bulgarian (Bulgaria)"
@@ -36361,27 +36386,27 @@ msgstr "Болгарська (Болгарія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:94
 msgid "bhb_IN"
-msgstr ""
+msgstr "bhb_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:94
 msgid "Bhili (India)"
-msgstr ""
+msgstr "Бгілі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:96
 msgid "bho_IN"
-msgstr ""
+msgstr "bho_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:96
 msgid "Bhojpuri (India)"
-msgstr ""
+msgstr "Бходжпурі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:98
 msgid "bi_TV"
-msgstr ""
+msgstr "bi_TV"
 
 #: ../../docs/tutorials/i18n/locales.rst:98
 msgid "Bislama (Tuvalu)"
-msgstr ""
+msgstr "Бісламська (Тувалу)"
 
 #: ../../docs/tutorials/i18n/locales.rst:100
 msgid "bn"
@@ -36389,19 +36414,19 @@ msgstr "bn"
 
 #: ../../docs/tutorials/i18n/locales.rst:100
 msgid "Bengali"
-msgstr "бенгальська"
+msgstr "Бенгальська"
 
 #: ../../docs/tutorials/i18n/locales.rst:102
 msgid "bn_BD"
-msgstr ""
+msgstr "bn_BD"
 
 #: ../../docs/tutorials/i18n/locales.rst:102
 msgid "Bengali (Bangladesh)"
-msgstr ""
+msgstr "Бенгальська (Бангладеш)"
 
 #: ../../docs/tutorials/i18n/locales.rst:104
 msgid "bn_IN"
-msgstr ""
+msgstr "bn_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:104
 msgid "Bengali (India)"
@@ -36417,23 +36442,23 @@ msgstr "Тибетська"
 
 #: ../../docs/tutorials/i18n/locales.rst:108
 msgid "bo_CN"
-msgstr ""
+msgstr "bo_CN"
 
 #: ../../docs/tutorials/i18n/locales.rst:108
 msgid "Tibetan (China)"
-msgstr ""
+msgstr "Тибетська (Китай)"
 
 #: ../../docs/tutorials/i18n/locales.rst:110
 msgid "bo_IN"
-msgstr ""
+msgstr "bo_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:110
 msgid "Tibetan (India)"
-msgstr ""
+msgstr "Тибетська (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:112
 msgid "br_FR"
-msgstr ""
+msgstr "br_FR"
 
 #: ../../docs/tutorials/i18n/locales.rst:112
 msgid "Breton (France)"
@@ -36441,27 +36466,27 @@ msgstr "Бретонська (Франція)"
 
 #: ../../docs/tutorials/i18n/locales.rst:114
 msgid "brx_IN"
-msgstr ""
+msgstr "brx_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:114
 msgid "Bodo (India)"
-msgstr "бодо (Індія)"
+msgstr "Бодо (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:116
 msgid "bs_BA"
-msgstr ""
+msgstr "bs_BA"
 
 #: ../../docs/tutorials/i18n/locales.rst:116
 msgid "Bosnian (Bosnia and Herzegovina)"
-msgstr ""
+msgstr "Боснійська (Боснія та Герцеговина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:118
 msgid "byn_ER"
-msgstr ""
+msgstr "byn_ER"
 
 #: ../../docs/tutorials/i18n/locales.rst:118
 msgid "Bilin (Eritrea)"
-msgstr ""
+msgstr "Білін (Еритрея)"
 
 #: ../../docs/tutorials/i18n/locales.rst:120
 msgid "ca"
@@ -36469,11 +36494,11 @@ msgstr "ca"
 
 #: ../../docs/tutorials/i18n/locales.rst:120
 msgid "Catalan"
-msgstr "каталанська"
+msgstr "Каталанська"
 
 #: ../../docs/tutorials/i18n/locales.rst:122
 msgid "ca_AD"
-msgstr ""
+msgstr "ca_AD"
 
 #: ../../docs/tutorials/i18n/locales.rst:122
 msgid "Catalan (Andorra)"
@@ -36481,7 +36506,7 @@ msgstr "Каталанська (Андорра)"
 
 #: ../../docs/tutorials/i18n/locales.rst:124
 msgid "ca_ES"
-msgstr ""
+msgstr "ca_ES"
 
 #: ../../docs/tutorials/i18n/locales.rst:124
 msgid "Catalan (Spain)"
@@ -36489,7 +36514,7 @@ msgstr "Каталанська (Іспанія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:126
 msgid "ca_FR"
-msgstr ""
+msgstr "ca_FR"
 
 #: ../../docs/tutorials/i18n/locales.rst:126
 msgid "Catalan (France)"
@@ -36497,51 +36522,51 @@ msgstr "Каталанська (Франція)"
 
 #: ../../docs/tutorials/i18n/locales.rst:128
 msgid "ca_IT"
-msgstr ""
+msgstr "ca_IT"
 
 #: ../../docs/tutorials/i18n/locales.rst:128
 msgid "Catalan (Italy)"
-msgstr ""
+msgstr "Каталанська (Італія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:130
 msgid "ce_RU"
-msgstr ""
+msgstr "ce_RU"
 
 #: ../../docs/tutorials/i18n/locales.rst:130
 msgid "Chechen (Russia)"
-msgstr ""
+msgstr "Чеченська (Росія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:132
 msgid "chr_US"
-msgstr ""
+msgstr "chr_US"
 
 #: ../../docs/tutorials/i18n/locales.rst:132
 msgid "Cherokee (United States)"
-msgstr ""
+msgstr "Черокі (США)"
 
 #: ../../docs/tutorials/i18n/locales.rst:134
 msgid "cmn_TW"
-msgstr ""
+msgstr "cmn_TW"
 
 #: ../../docs/tutorials/i18n/locales.rst:134
 msgid "Mandarin Chinese (Taiwan)"
-msgstr ""
+msgstr "Мандаринська китайська (Тайвань)"
 
 #: ../../docs/tutorials/i18n/locales.rst:136
 msgid "crh_UA"
-msgstr ""
+msgstr "crh_UA"
 
 #: ../../docs/tutorials/i18n/locales.rst:136
 msgid "Crimean Tatar (Ukraine)"
-msgstr ""
+msgstr "Кримськотатарська (Україна)"
 
 #: ../../docs/tutorials/i18n/locales.rst:138
 msgid "csb_PL"
-msgstr ""
+msgstr "csb_PL"
 
 #: ../../docs/tutorials/i18n/locales.rst:138
 msgid "Kashubian (Poland)"
-msgstr ""
+msgstr "Кашубська (Польща)"
 
 #: ../../docs/tutorials/i18n/locales.rst:140
 msgid "cs"
@@ -36549,27 +36574,27 @@ msgstr "cs"
 
 #: ../../docs/tutorials/i18n/locales.rst:140
 msgid "Czech"
-msgstr "чеська"
+msgstr "Чеська"
 
 #: ../../docs/tutorials/i18n/locales.rst:142
 msgid "cs_CZ"
-msgstr ""
+msgstr "cs_CZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:142
 msgid "Czech (Czech Republic)"
-msgstr ""
+msgstr "Чеська (Чеська Республіка)"
 
 #: ../../docs/tutorials/i18n/locales.rst:144
 msgid "cv_RU"
-msgstr ""
+msgstr "cv_RU"
 
 #: ../../docs/tutorials/i18n/locales.rst:144
 msgid "Chuvash (Russia)"
-msgstr ""
+msgstr "Чуваська (Росія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:146
 msgid "cy_GB"
-msgstr ""
+msgstr "cy_GB"
 
 #: ../../docs/tutorials/i18n/locales.rst:146
 msgid "Welsh (United Kingdom)"
@@ -36581,11 +36606,11 @@ msgstr "da"
 
 #: ../../docs/tutorials/i18n/locales.rst:148
 msgid "Danish"
-msgstr "данська"
+msgstr "Данська"
 
 #: ../../docs/tutorials/i18n/locales.rst:150
 msgid "da_DK"
-msgstr ""
+msgstr "da_DK"
 
 #: ../../docs/tutorials/i18n/locales.rst:150
 msgid "Danish (Denmark)"
@@ -36597,11 +36622,11 @@ msgstr "de"
 
 #: ../../docs/tutorials/i18n/locales.rst:152
 msgid "German"
-msgstr "німецька"
+msgstr "Німецька"
 
 #: ../../docs/tutorials/i18n/locales.rst:154
 msgid "de_AT"
-msgstr ""
+msgstr "de_AT"
 
 #: ../../docs/tutorials/i18n/locales.rst:154
 msgid "German (Austria)"
@@ -36609,15 +36634,15 @@ msgstr "Німецька (Австрія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:156
 msgid "de_BE"
-msgstr ""
+msgstr "de_BE"
 
 #: ../../docs/tutorials/i18n/locales.rst:156
 msgid "German (Belgium)"
-msgstr ""
+msgstr "Німецька (Бельгія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:158
 msgid "de_CH"
-msgstr ""
+msgstr "de_CH"
 
 #: ../../docs/tutorials/i18n/locales.rst:158
 msgid "German (Switzerland)"
@@ -36625,7 +36650,7 @@ msgstr "Німецька (Швейцарія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:160
 msgid "de_DE"
-msgstr ""
+msgstr "de_DE"
 
 #: ../../docs/tutorials/i18n/locales.rst:160
 msgid "German (Germany)"
@@ -36633,15 +36658,15 @@ msgstr "Німецька (Німеччина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:162
 msgid "de_IT"
-msgstr ""
+msgstr "de_IT"
 
 #: ../../docs/tutorials/i18n/locales.rst:162
 msgid "German (Italy)"
-msgstr ""
+msgstr "Німецька (Італія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:164
 msgid "de_LU"
-msgstr ""
+msgstr "de_LU"
 
 #: ../../docs/tutorials/i18n/locales.rst:164
 msgid "German (Luxembourg)"
@@ -36649,47 +36674,47 @@ msgstr "Німецька (Люксембург)"
 
 #: ../../docs/tutorials/i18n/locales.rst:166
 msgid "doi_IN"
-msgstr ""
+msgstr "doi_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:166
 msgid "Dogri (India)"
-msgstr ""
+msgstr "Догрі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:168
 msgid "dv_MV"
-msgstr ""
+msgstr "dv_MV"
 
 #: ../../docs/tutorials/i18n/locales.rst:168
 msgid "Dhivehi (Maldives)"
-msgstr ""
+msgstr "Мальдівська (Мальдівські острови)"
 
 #: ../../docs/tutorials/i18n/locales.rst:170
 msgid "dz_BT"
-msgstr ""
+msgstr "dz_BT"
 
 #: ../../docs/tutorials/i18n/locales.rst:170
 msgid "Dzongkha (Bhutan)"
-msgstr ""
+msgstr "Дзонг-ке (Бутан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:172
 msgid "el"
-msgstr "Ел"
+msgstr "el"
 
 #: ../../docs/tutorials/i18n/locales.rst:172
 msgid "Greek"
-msgstr "грецька"
+msgstr "Грецька"
 
 #: ../../docs/tutorials/i18n/locales.rst:174
 msgid "el_CY"
-msgstr ""
+msgstr "el_CY"
 
 #: ../../docs/tutorials/i18n/locales.rst:174
 msgid "Greek (Cyprus)"
-msgstr ""
+msgstr "Грецька (Кіпр)"
 
 #: ../../docs/tutorials/i18n/locales.rst:176
 msgid "el_GR"
-msgstr ""
+msgstr "el_GR"
 
 #: ../../docs/tutorials/i18n/locales.rst:176
 msgid "Greek (Greece)"
@@ -36697,19 +36722,19 @@ msgstr "Грецька (Греція)"
 
 #: ../../docs/tutorials/i18n/locales.rst:178
 msgid "English"
-msgstr "англійська"
+msgstr "Англійська"
 
 #: ../../docs/tutorials/i18n/locales.rst:180
 msgid "en_AG"
-msgstr ""
+msgstr "en_AG"
 
 #: ../../docs/tutorials/i18n/locales.rst:180
 msgid "English (Antigua and Barbuda)"
-msgstr ""
+msgstr "Англійська (Антигуа і Барбуда)"
 
 #: ../../docs/tutorials/i18n/locales.rst:182
 msgid "en_AU"
-msgstr ""
+msgstr "en_AU"
 
 #: ../../docs/tutorials/i18n/locales.rst:182
 msgid "English (Australia)"
@@ -36717,15 +36742,15 @@ msgstr "Англійська (Австралія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:184
 msgid "en_BW"
-msgstr ""
+msgstr "en_BW"
 
 #: ../../docs/tutorials/i18n/locales.rst:184
 msgid "English (Botswana)"
-msgstr ""
+msgstr "Англійська (Ботсвана)"
 
 #: ../../docs/tutorials/i18n/locales.rst:186
 msgid "en_CA"
-msgstr ""
+msgstr "en_CA"
 
 #: ../../docs/tutorials/i18n/locales.rst:186
 msgid "English (Canada)"
@@ -36733,15 +36758,15 @@ msgstr "Англійська (Канада)"
 
 #: ../../docs/tutorials/i18n/locales.rst:188
 msgid "en_DK"
-msgstr ""
+msgstr "en_DK"
 
 #: ../../docs/tutorials/i18n/locales.rst:188
 msgid "English (Denmark)"
-msgstr ""
+msgstr "Англійська (Данія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:190
 msgid "en_GB"
-msgstr ""
+msgstr "en_GB"
 
 #: ../../docs/tutorials/i18n/locales.rst:190
 msgid "English (United Kingdom)"
@@ -36749,15 +36774,15 @@ msgstr "Англійська (Великобританія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:192
 msgid "en_HK"
-msgstr ""
+msgstr "en_HK"
 
 #: ../../docs/tutorials/i18n/locales.rst:192
 msgid "English (Hong Kong)"
-msgstr ""
+msgstr "Англійська (Гонконг)"
 
 #: ../../docs/tutorials/i18n/locales.rst:194
 msgid "en_IE"
-msgstr ""
+msgstr "en_IE"
 
 #: ../../docs/tutorials/i18n/locales.rst:194
 msgid "English (Ireland)"
@@ -36765,15 +36790,15 @@ msgstr "Англійська (Ірландія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:196
 msgid "en_IL"
-msgstr ""
+msgstr "en_IL"
 
 #: ../../docs/tutorials/i18n/locales.rst:196
 msgid "English (Israel)"
-msgstr ""
+msgstr "Англійська (Ізраїль)"
 
 #: ../../docs/tutorials/i18n/locales.rst:198
 msgid "en_IN"
-msgstr ""
+msgstr "en_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:198
 msgid "English (India)"
@@ -36781,7 +36806,7 @@ msgstr "Англійська (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:200
 msgid "en_NG"
-msgstr ""
+msgstr "en_NG"
 
 #: ../../docs/tutorials/i18n/locales.rst:200
 msgid "English (Nigeria)"
@@ -36789,15 +36814,15 @@ msgstr "Англійська (Нігерія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:202
 msgid "en_MT"
-msgstr ""
+msgstr "en_MT"
 
 #: ../../docs/tutorials/i18n/locales.rst:202
 msgid "English (Malta)"
-msgstr ""
+msgstr "Англійська (Мальта)"
 
 #: ../../docs/tutorials/i18n/locales.rst:204
 msgid "en_NZ"
-msgstr ""
+msgstr "en_NZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:204
 msgid "English (New Zealand)"
@@ -36805,7 +36830,7 @@ msgstr "Англійська (Нова Зеландія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:206
 msgid "en_PH"
-msgstr ""
+msgstr "en_PH"
 
 #: ../../docs/tutorials/i18n/locales.rst:206
 msgid "English (Philippines)"
@@ -36813,7 +36838,7 @@ msgstr "Англійська (Філіппіни)"
 
 #: ../../docs/tutorials/i18n/locales.rst:208
 msgid "en_SG"
-msgstr ""
+msgstr "en_SG"
 
 #: ../../docs/tutorials/i18n/locales.rst:208
 msgid "English (Singapore)"
@@ -36821,7 +36846,7 @@ msgstr "Англійська (Сингапур)"
 
 #: ../../docs/tutorials/i18n/locales.rst:210
 msgid "en_US"
-msgstr ""
+msgstr "en_US"
 
 #: ../../docs/tutorials/i18n/locales.rst:210
 msgid "English (United States)"
@@ -36829,7 +36854,7 @@ msgstr "Англійська (США)"
 
 #: ../../docs/tutorials/i18n/locales.rst:212
 msgid "en_ZA"
-msgstr ""
+msgstr "en_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:212
 msgid "English (South Africa)"
@@ -36837,15 +36862,15 @@ msgstr "Англійська (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:214
 msgid "en_ZM"
-msgstr ""
+msgstr "en_ZM"
 
 #: ../../docs/tutorials/i18n/locales.rst:214
 msgid "English (Zambia)"
-msgstr ""
+msgstr "Англійська (Замбія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:216
 msgid "en_ZW"
-msgstr ""
+msgstr "en_ZW"
 
 #: ../../docs/tutorials/i18n/locales.rst:216
 msgid "English (Zimbabwe)"
@@ -36861,11 +36886,11 @@ msgstr "Есперанто"
 
 #: ../../docs/tutorials/i18n/locales.rst:220
 msgid "Spanish"
-msgstr "іспанська"
+msgstr "Іспанська"
 
 #: ../../docs/tutorials/i18n/locales.rst:222
 msgid "es_AR"
-msgstr ""
+msgstr "es_AR"
 
 #: ../../docs/tutorials/i18n/locales.rst:222
 msgid "Spanish (Argentina)"
@@ -36873,7 +36898,7 @@ msgstr "Іспанська (Аргентина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:224
 msgid "es_BO"
-msgstr ""
+msgstr "es_BO"
 
 #: ../../docs/tutorials/i18n/locales.rst:224
 msgid "Spanish (Bolivia)"
@@ -36881,7 +36906,7 @@ msgstr "Іспанська (Болівія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:226
 msgid "es_CL"
-msgstr ""
+msgstr "es_CL"
 
 #: ../../docs/tutorials/i18n/locales.rst:226
 msgid "Spanish (Chile)"
@@ -36889,7 +36914,7 @@ msgstr "Іспанська (Чилі)"
 
 #: ../../docs/tutorials/i18n/locales.rst:228
 msgid "es_CO"
-msgstr ""
+msgstr "es_CO"
 
 #: ../../docs/tutorials/i18n/locales.rst:228
 msgid "Spanish (Colombia)"
@@ -36897,7 +36922,7 @@ msgstr "Іспанська (Колумбія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:230
 msgid "es_CR"
-msgstr ""
+msgstr "es_CR"
 
 #: ../../docs/tutorials/i18n/locales.rst:230
 msgid "Spanish (Costa Rica)"
@@ -36905,15 +36930,15 @@ msgstr "Іспанська (Коста-Рика)"
 
 #: ../../docs/tutorials/i18n/locales.rst:232
 msgid "en_CU"
-msgstr ""
+msgstr "en_CU"
 
 #: ../../docs/tutorials/i18n/locales.rst:232
 msgid "Spanish (Cuba)"
-msgstr ""
+msgstr "Іспанська (Куба)"
 
 #: ../../docs/tutorials/i18n/locales.rst:234
 msgid "es_DO"
-msgstr ""
+msgstr "es_DO"
 
 #: ../../docs/tutorials/i18n/locales.rst:234
 msgid "Spanish (Dominican Republic)"
@@ -36921,7 +36946,7 @@ msgstr "Іспанська (Домініканська Республіка)"
 
 #: ../../docs/tutorials/i18n/locales.rst:236
 msgid "es_EC"
-msgstr ""
+msgstr "es_EC"
 
 #: ../../docs/tutorials/i18n/locales.rst:236
 msgid "Spanish (Ecuador)"
@@ -36929,7 +36954,7 @@ msgstr "Іспанська (Еквадор)"
 
 #: ../../docs/tutorials/i18n/locales.rst:238
 msgid "es_ES"
-msgstr ""
+msgstr "es_ES"
 
 #: ../../docs/tutorials/i18n/locales.rst:238
 msgid "Spanish (Spain)"
@@ -36937,7 +36962,7 @@ msgstr "Іспанська (Іспанія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:240
 msgid "es_GT"
-msgstr ""
+msgstr "es_GT"
 
 #: ../../docs/tutorials/i18n/locales.rst:240
 msgid "Spanish (Guatemala)"
@@ -36945,7 +36970,7 @@ msgstr "Іспанська (Гватемала)"
 
 #: ../../docs/tutorials/i18n/locales.rst:242
 msgid "es_HN"
-msgstr ""
+msgstr "es_HN"
 
 #: ../../docs/tutorials/i18n/locales.rst:242
 msgid "Spanish (Honduras)"
@@ -36953,7 +36978,7 @@ msgstr "Іспанська (Гондурас)"
 
 #: ../../docs/tutorials/i18n/locales.rst:244
 msgid "es_MX"
-msgstr ""
+msgstr "es_MX"
 
 #: ../../docs/tutorials/i18n/locales.rst:244
 msgid "Spanish (Mexico)"
@@ -36961,7 +36986,7 @@ msgstr "Іспанська (Мексика)"
 
 #: ../../docs/tutorials/i18n/locales.rst:246
 msgid "es_NI"
-msgstr ""
+msgstr "es_NI"
 
 #: ../../docs/tutorials/i18n/locales.rst:246
 msgid "Spanish (Nicaragua)"
@@ -36969,7 +36994,7 @@ msgstr "Іспанська (Нікарагуа)"
 
 #: ../../docs/tutorials/i18n/locales.rst:248
 msgid "es_PA"
-msgstr ""
+msgstr "es_PA"
 
 #: ../../docs/tutorials/i18n/locales.rst:248
 msgid "Spanish (Panama)"
@@ -36977,7 +37002,7 @@ msgstr "Іспанська (Панама)"
 
 #: ../../docs/tutorials/i18n/locales.rst:250
 msgid "es_PE"
-msgstr ""
+msgstr "es_PE"
 
 #: ../../docs/tutorials/i18n/locales.rst:250
 msgid "Spanish (Peru)"
@@ -36985,7 +37010,7 @@ msgstr "Іспанська (Перу)"
 
 #: ../../docs/tutorials/i18n/locales.rst:252
 msgid "es_PR"
-msgstr ""
+msgstr "es_PR"
 
 #: ../../docs/tutorials/i18n/locales.rst:252
 msgid "Spanish (Puerto Rico)"
@@ -36993,7 +37018,7 @@ msgstr "Іспанська (Пуерто-Рико)"
 
 #: ../../docs/tutorials/i18n/locales.rst:254
 msgid "es_PY"
-msgstr ""
+msgstr "es_PY"
 
 #: ../../docs/tutorials/i18n/locales.rst:254
 msgid "Spanish (Paraguay)"
@@ -37001,7 +37026,7 @@ msgstr "Іспанська (Парагвай)"
 
 #: ../../docs/tutorials/i18n/locales.rst:256
 msgid "es_SV"
-msgstr ""
+msgstr "es_SV"
 
 #: ../../docs/tutorials/i18n/locales.rst:256
 msgid "Spanish (El Salvador)"
@@ -37009,7 +37034,7 @@ msgstr "Іспанська (Сальвадор)"
 
 #: ../../docs/tutorials/i18n/locales.rst:258
 msgid "es_US"
-msgstr ""
+msgstr "es_US"
 
 #: ../../docs/tutorials/i18n/locales.rst:258
 msgid "Spanish (United States)"
@@ -37017,7 +37042,7 @@ msgstr "Іспанська (США)"
 
 #: ../../docs/tutorials/i18n/locales.rst:260
 msgid "es_UY"
-msgstr ""
+msgstr "es_UY"
 
 #: ../../docs/tutorials/i18n/locales.rst:260
 msgid "Spanish (Uruguay)"
@@ -37025,7 +37050,7 @@ msgstr "Іспанська (Уругвай)"
 
 #: ../../docs/tutorials/i18n/locales.rst:262
 msgid "es_VE"
-msgstr ""
+msgstr "es_VE"
 
 #: ../../docs/tutorials/i18n/locales.rst:262
 msgid "Spanish (Venezuela)"
@@ -37037,11 +37062,11 @@ msgstr "et"
 
 #: ../../docs/tutorials/i18n/locales.rst:264
 msgid "Estonian"
-msgstr "естонська"
+msgstr "Естонська"
 
 #: ../../docs/tutorials/i18n/locales.rst:266
 msgid "et_EE"
-msgstr ""
+msgstr "et_EE"
 
 #: ../../docs/tutorials/i18n/locales.rst:266
 msgid "Estonian (Estonia)"
@@ -37053,15 +37078,15 @@ msgstr "eu"
 
 #: ../../docs/tutorials/i18n/locales.rst:268
 msgid "Basque"
-msgstr "баскська"
+msgstr "Баскська"
 
 #: ../../docs/tutorials/i18n/locales.rst:270
 msgid "eu_ES"
-msgstr ""
+msgstr "eu_ES"
 
 #: ../../docs/tutorials/i18n/locales.rst:270
 msgid "Basque (Spain)"
-msgstr ""
+msgstr "Баскська (Іспанія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:272
 msgid "fa"
@@ -37069,11 +37094,11 @@ msgstr "fa"
 
 #: ../../docs/tutorials/i18n/locales.rst:272
 msgid "Persian"
-msgstr "перська"
+msgstr "Перська"
 
 #: ../../docs/tutorials/i18n/locales.rst:274
 msgid "fa_IR"
-msgstr ""
+msgstr "fa_IR"
 
 #: ../../docs/tutorials/i18n/locales.rst:274
 msgid "Persian (Iran)"
@@ -37081,11 +37106,11 @@ msgstr "Перська (Іран)"
 
 #: ../../docs/tutorials/i18n/locales.rst:276
 msgid "ff_SN"
-msgstr ""
+msgstr "ff_SN"
 
 #: ../../docs/tutorials/i18n/locales.rst:276
 msgid "Fulah (Senegal)"
-msgstr ""
+msgstr "Фулах (Сенегал)"
 
 #: ../../docs/tutorials/i18n/locales.rst:278
 msgid "fi"
@@ -37093,11 +37118,11 @@ msgstr "fi"
 
 #: ../../docs/tutorials/i18n/locales.rst:278
 msgid "Finnish"
-msgstr "фінська"
+msgstr "Фінська"
 
 #: ../../docs/tutorials/i18n/locales.rst:280
 msgid "fi_FI"
-msgstr ""
+msgstr "fi_FI"
 
 #: ../../docs/tutorials/i18n/locales.rst:280
 msgid "Finnish (Finland)"
@@ -37105,19 +37130,19 @@ msgstr "Фінська (Фінляндія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:282
 msgid "fil_PH"
-msgstr ""
+msgstr "fil_PH"
 
 #: ../../docs/tutorials/i18n/locales.rst:282
 msgid "Filipino (Philippines)"
-msgstr ""
+msgstr "Філіпіно (Філіппіни)"
 
 #: ../../docs/tutorials/i18n/locales.rst:284
 msgid "fo_FO"
-msgstr ""
+msgstr "fo_FO"
 
 #: ../../docs/tutorials/i18n/locales.rst:284
 msgid "Faroese (Faroe Islands)"
-msgstr ""
+msgstr "Фарерська (Фарерські острови)"
 
 #: ../../docs/tutorials/i18n/locales.rst:286
 msgid "fr"
@@ -37125,11 +37150,11 @@ msgstr "fr"
 
 #: ../../docs/tutorials/i18n/locales.rst:286
 msgid "French"
-msgstr "французька"
+msgstr "Французька"
 
 #: ../../docs/tutorials/i18n/locales.rst:288
 msgid "fr_BE"
-msgstr ""
+msgstr "fr_BE"
 
 #: ../../docs/tutorials/i18n/locales.rst:288
 msgid "French (Belgium)"
@@ -37137,7 +37162,7 @@ msgstr "Французька (Бельгія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:290
 msgid "fr_CA"
-msgstr ""
+msgstr "fr_CA"
 
 #: ../../docs/tutorials/i18n/locales.rst:290
 msgid "French (Canada)"
@@ -37145,7 +37170,7 @@ msgstr "Французька (Канада)"
 
 #: ../../docs/tutorials/i18n/locales.rst:292
 msgid "fr_CH"
-msgstr ""
+msgstr "fr_CH"
 
 #: ../../docs/tutorials/i18n/locales.rst:292
 msgid "French (Switzerland)"
@@ -37153,7 +37178,7 @@ msgstr "Французька (Швейцарія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:294
 msgid "fr_FR"
-msgstr ""
+msgstr "fr_FR"
 
 #: ../../docs/tutorials/i18n/locales.rst:294
 msgid "French (France)"
@@ -37161,7 +37186,7 @@ msgstr "Французька (Франція)"
 
 #: ../../docs/tutorials/i18n/locales.rst:296
 msgid "fr_LU"
-msgstr ""
+msgstr "fr_LU"
 
 #: ../../docs/tutorials/i18n/locales.rst:296
 msgid "French (Luxembourg)"
@@ -37169,7 +37194,7 @@ msgstr "Французька (Люксембург)"
 
 #: ../../docs/tutorials/i18n/locales.rst:298
 msgid "fur_IT"
-msgstr ""
+msgstr "fur_IT"
 
 #: ../../docs/tutorials/i18n/locales.rst:298
 msgid "Friulian (Italy)"
@@ -37177,19 +37202,19 @@ msgstr "Фріульська (Італія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:300
 msgid "fy_DE"
-msgstr ""
+msgstr "fy_DE"
 
 #: ../../docs/tutorials/i18n/locales.rst:300
 msgid "Western Frisian (Germany)"
-msgstr ""
+msgstr "Західнофризька (Німеччина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:302
 msgid "fy_NL"
-msgstr ""
+msgstr "fy_NL"
 
 #: ../../docs/tutorials/i18n/locales.rst:302
 msgid "Western Frisian (Netherlands)"
-msgstr ""
+msgstr "Західнофризька (Нідерланди)"
 
 #: ../../docs/tutorials/i18n/locales.rst:304
 msgid "ga"
@@ -37201,7 +37226,7 @@ msgstr "ірландська"
 
 #: ../../docs/tutorials/i18n/locales.rst:306
 msgid "ga_IE"
-msgstr ""
+msgstr "ga_IE"
 
 #: ../../docs/tutorials/i18n/locales.rst:306
 msgid "Irish (Ireland)"
@@ -37209,39 +37234,39 @@ msgstr "Ірландська (Ірландія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:308
 msgid "gd_GB"
-msgstr ""
+msgstr "gd_GB"
 
 #: ../../docs/tutorials/i18n/locales.rst:308
 msgid "Scottish Gaelic (United Kingdom)"
-msgstr ""
+msgstr "Шотландська гельська (Великобританія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:310
 msgid "gez_ER"
-msgstr ""
+msgstr "gez_ER"
 
 #: ../../docs/tutorials/i18n/locales.rst:310
 msgid "Geez (Eritrea)"
-msgstr ""
+msgstr "Гііз (Еритрея)"
 
 #: ../../docs/tutorials/i18n/locales.rst:312
 msgid "gez_ET"
-msgstr ""
+msgstr "gez_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:312
 msgid "Geez (Ethiopia)"
-msgstr ""
+msgstr "Гііз (Ефіопія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:314
 msgid "gl_ES"
-msgstr ""
+msgstr "gl_ES"
 
 #: ../../docs/tutorials/i18n/locales.rst:314
 msgid "Galician (Spain)"
-msgstr ""
+msgstr "Галісійська (Іспанія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:316
 msgid "gu_IN"
-msgstr ""
+msgstr "gu_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:316
 msgid "Gujarati (India)"
@@ -37249,23 +37274,23 @@ msgstr "Гуджараті (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:318
 msgid "gv_GB"
-msgstr ""
+msgstr "gv_GB"
 
 #: ../../docs/tutorials/i18n/locales.rst:318
 msgid "Manx (United Kingdom)"
-msgstr ""
+msgstr "Менська (Великобританія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:320
 msgid "hak_TW"
-msgstr ""
+msgstr "hak_TW"
 
 #: ../../docs/tutorials/i18n/locales.rst:320
 msgid "Hakka Chinese (Taiwan)"
-msgstr ""
+msgstr "Хаккська китайська (Тайвань)"
 
 #: ../../docs/tutorials/i18n/locales.rst:322
 msgid "ha_NG"
-msgstr ""
+msgstr "ha_NG"
 
 #: ../../docs/tutorials/i18n/locales.rst:322
 msgid "Hausa (Nigeria)"
@@ -37277,15 +37302,15 @@ msgstr "he"
 
 #: ../../docs/tutorials/i18n/locales.rst:324
 msgid "Hebrew"
-msgstr "іврит"
+msgstr "Іврит"
 
 #: ../../docs/tutorials/i18n/locales.rst:326
 msgid "he_IL"
-msgstr ""
+msgstr "he_IL"
 
 #: ../../docs/tutorials/i18n/locales.rst:326
 msgid "Hebrew (Israel)"
-msgstr "Єврейська (Ізраїль)"
+msgstr "Іврит (Ізраїль)"
 
 #: ../../docs/tutorials/i18n/locales.rst:328
 msgid "hi"
@@ -37293,11 +37318,11 @@ msgstr "hi"
 
 #: ../../docs/tutorials/i18n/locales.rst:328
 msgid "Hindi"
-msgstr "хінді"
+msgstr "Хінді"
 
 #: ../../docs/tutorials/i18n/locales.rst:330
 msgid "hi_IN"
-msgstr ""
+msgstr "hi_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:330
 msgid "Hindi (India)"
@@ -37305,11 +37330,11 @@ msgstr "Хінді (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:332
 msgid "hne_IN"
-msgstr ""
+msgstr "hne_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:332
 msgid "Chhattisgarhi (India)"
-msgstr ""
+msgstr "Чхатісгарі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:334
 msgid "hr"
@@ -37317,11 +37342,11 @@ msgstr "hr"
 
 #: ../../docs/tutorials/i18n/locales.rst:334
 msgid "Croatian"
-msgstr "хорватська"
+msgstr "Хорватська"
 
 #: ../../docs/tutorials/i18n/locales.rst:336
 msgid "hr_HR"
-msgstr ""
+msgstr "hr_HR"
 
 #: ../../docs/tutorials/i18n/locales.rst:336
 msgid "Croatian (Croatia)"
@@ -37329,19 +37354,19 @@ msgstr "Хорватська (Хорватія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:338
 msgid "hsb_DE"
-msgstr ""
+msgstr "hsb_DE"
 
 #: ../../docs/tutorials/i18n/locales.rst:338
 msgid "Upper Sorbian (Germany)"
-msgstr ""
+msgstr "Верхньолужицька (Німеччина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:340
 msgid "ht_HT"
-msgstr ""
+msgstr "ht_HT"
 
 #: ../../docs/tutorials/i18n/locales.rst:340
 msgid "Haitian (Haiti)"
-msgstr ""
+msgstr "Гаїтянська (Гаїті)"
 
 #: ../../docs/tutorials/i18n/locales.rst:342
 msgid "hu"
@@ -37349,11 +37374,11 @@ msgstr "hu"
 
 #: ../../docs/tutorials/i18n/locales.rst:342
 msgid "Hungarian"
-msgstr "угорська"
+msgstr "Угорська"
 
 #: ../../docs/tutorials/i18n/locales.rst:344
 msgid "hu_HU"
-msgstr ""
+msgstr "hu_HU"
 
 #: ../../docs/tutorials/i18n/locales.rst:344
 msgid "Hungarian (Hungary)"
@@ -37361,15 +37386,15 @@ msgstr "Угорська (Угорщина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:346
 msgid "hus_MX"
-msgstr ""
+msgstr "hus_MX"
 
 #: ../../docs/tutorials/i18n/locales.rst:346
 msgid "Huastec (Mexico)"
-msgstr ""
+msgstr "Уастек (Мексика)"
 
 #: ../../docs/tutorials/i18n/locales.rst:348
 msgid "hy_AM"
-msgstr ""
+msgstr "hy_AM"
 
 #: ../../docs/tutorials/i18n/locales.rst:348
 msgid "Armenian (Armenia)"
@@ -37377,47 +37402,47 @@ msgstr "Вірменська (Вірменія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:350
 msgid "ia_FR"
-msgstr ""
+msgstr "ia_FR"
 
 #: ../../docs/tutorials/i18n/locales.rst:350
 msgid "Interlingua (France)"
-msgstr ""
+msgstr "Інтерлінгва (Франція)"
 
 #: ../../docs/tutorials/i18n/locales.rst:352
 msgid "Indonesian"
-msgstr "індонезійська"
+msgstr "Індонезійська"
 
 #: ../../docs/tutorials/i18n/locales.rst:354
 msgid "id_ID"
-msgstr ""
+msgstr "id_ID"
 
 #: ../../docs/tutorials/i18n/locales.rst:354
 msgid "Indonesian (Indonesia)"
-msgstr ""
+msgstr "Індонезійська (Індонезія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:356
 msgid "ig_NG"
-msgstr ""
+msgstr "ig_NG"
 
 #: ../../docs/tutorials/i18n/locales.rst:356
 msgid "Igbo (Nigeria)"
-msgstr ""
+msgstr "Ігбо (Нігерія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:358
 msgid "ik_CA"
-msgstr ""
+msgstr "ik_CA"
 
 #: ../../docs/tutorials/i18n/locales.rst:358
 msgid "Inupiaq (Canada)"
-msgstr ""
+msgstr "Інупіак (Канада)"
 
 #: ../../docs/tutorials/i18n/locales.rst:360
 msgid "Icelandic"
-msgstr "ісландська"
+msgstr "Ісландська"
 
 #: ../../docs/tutorials/i18n/locales.rst:362
 msgid "is_IS"
-msgstr ""
+msgstr "is_IS"
 
 #: ../../docs/tutorials/i18n/locales.rst:362
 msgid "Icelandic (Iceland)"
@@ -37429,11 +37454,11 @@ msgstr "it"
 
 #: ../../docs/tutorials/i18n/locales.rst:364
 msgid "Italian"
-msgstr "італійська"
+msgstr "Італійська"
 
 #: ../../docs/tutorials/i18n/locales.rst:366
 msgid "it_CH"
-msgstr ""
+msgstr "it_CH"
 
 #: ../../docs/tutorials/i18n/locales.rst:366
 msgid "Italian (Switzerland)"
@@ -37441,7 +37466,7 @@ msgstr "Італійська (Швейцарія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:368
 msgid "it_IT"
-msgstr ""
+msgstr "it_IT"
 
 #: ../../docs/tutorials/i18n/locales.rst:368
 msgid "Italian (Italy)"
@@ -37449,19 +37474,19 @@ msgstr "Італійська (Італія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:370
 msgid "iu_CA"
-msgstr ""
+msgstr "iu_CA"
 
 #: ../../docs/tutorials/i18n/locales.rst:370
 msgid "Inuktitut (Canada)"
-msgstr ""
+msgstr "Інуктітут (Канада)"
 
 #: ../../docs/tutorials/i18n/locales.rst:372
 msgid "Japanese"
-msgstr "японська"
+msgstr "Японська"
 
 #: ../../docs/tutorials/i18n/locales.rst:374
 msgid "ja_JP"
-msgstr ""
+msgstr "ja_JP"
 
 #: ../../docs/tutorials/i18n/locales.rst:374
 msgid "Japanese (Japan)"
@@ -37469,15 +37494,15 @@ msgstr "Японська (Японія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:376
 msgid "kab_DZ"
-msgstr ""
+msgstr "kab_DZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:376
 msgid "Kabyle (Algeria)"
-msgstr ""
+msgstr "Кабильська (Алжир)"
 
 #: ../../docs/tutorials/i18n/locales.rst:378
 msgid "ka_GE"
-msgstr ""
+msgstr "ka_GE"
 
 #: ../../docs/tutorials/i18n/locales.rst:378
 msgid "Georgian (Georgia)"
@@ -37485,7 +37510,7 @@ msgstr "Грузинська (Грузія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:380
 msgid "kk_KZ"
-msgstr ""
+msgstr "kk_KZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:380
 msgid "Kazakh (Kazakhstan)"
@@ -37493,23 +37518,23 @@ msgstr "Казахська (Казахстан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:382
 msgid "kl_GL"
-msgstr ""
+msgstr "kl_GL"
 
 #: ../../docs/tutorials/i18n/locales.rst:382
 msgid "Kalaallisut (Greenland)"
-msgstr ""
+msgstr "Калаалісут (Гренландія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:384
 msgid "km_KH"
-msgstr ""
+msgstr "km_KH"
 
 #: ../../docs/tutorials/i18n/locales.rst:384
 msgid "Central Khmer (Cambodia)"
-msgstr ""
+msgstr "Центральнокхмерська (Камбоджа)"
 
 #: ../../docs/tutorials/i18n/locales.rst:386
 msgid "kn_IN"
-msgstr ""
+msgstr "kn_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:386
 msgid "Kannada (India)"
@@ -37517,11 +37542,11 @@ msgstr "Каннадська (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:388
 msgid "kok_IN"
-msgstr ""
+msgstr "kok_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:388
 msgid "Konkani (India)"
-msgstr ""
+msgstr "Конканська (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:390
 msgid "ko"
@@ -37533,7 +37558,7 @@ msgstr "Корейська"
 
 #: ../../docs/tutorials/i18n/locales.rst:392
 msgid "ko_KR"
-msgstr ""
+msgstr "ko_KR"
 
 #: ../../docs/tutorials/i18n/locales.rst:392
 msgid "Korean (South Korea)"
@@ -37541,11 +37566,11 @@ msgstr "Корейська (Південна Корея)"
 
 #: ../../docs/tutorials/i18n/locales.rst:394
 msgid "ks_IN"
-msgstr ""
+msgstr "ks_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:394
 msgid "Kashmiri (India)"
-msgstr ""
+msgstr "Кашмірська (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:396
 msgid "ku"
@@ -37553,35 +37578,35 @@ msgstr "ku"
 
 #: ../../docs/tutorials/i18n/locales.rst:396
 msgid "Kurdish"
-msgstr "курдська"
+msgstr "Курдська"
 
 #: ../../docs/tutorials/i18n/locales.rst:398
 msgid "ku_TR"
-msgstr ""
+msgstr "ku_TR"
 
 #: ../../docs/tutorials/i18n/locales.rst:398
 msgid "Kurdish (Turkey)"
-msgstr ""
+msgstr "Курдська (Туреччина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:400
 msgid "kw_GB"
-msgstr ""
+msgstr "kw_GB"
 
 #: ../../docs/tutorials/i18n/locales.rst:400
 msgid "Cornish (United Kingdom)"
-msgstr ""
+msgstr "Корнійська (Великобританія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:402
 msgid "ky_KG"
-msgstr ""
+msgstr "ky_KG"
 
 #: ../../docs/tutorials/i18n/locales.rst:402
 msgid "Kirghiz (Kyrgyzstan)"
-msgstr ""
+msgstr "Киргизька (Киргизстан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:404
 msgid "lb_LU"
-msgstr ""
+msgstr "lb_LU"
 
 #: ../../docs/tutorials/i18n/locales.rst:404
 msgid "Luxembourgish (Luxembourg)"
@@ -37589,51 +37614,51 @@ msgstr "Люксембурзька (Люксембург)"
 
 #: ../../docs/tutorials/i18n/locales.rst:406
 msgid "lg_UG"
-msgstr ""
+msgstr "lg_UG"
 
 #: ../../docs/tutorials/i18n/locales.rst:406
 msgid "Ganda (Uganda)"
-msgstr ""
+msgstr "Ганда (Уганда)"
 
 #: ../../docs/tutorials/i18n/locales.rst:408
 msgid "li_BE"
-msgstr ""
+msgstr "li_BE"
 
 #: ../../docs/tutorials/i18n/locales.rst:408
 msgid "Limburgan (Belgium)"
-msgstr ""
+msgstr "Лімбурганська (Бельгія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:410
 msgid "li_NL"
-msgstr ""
+msgstr "li_NL"
 
 #: ../../docs/tutorials/i18n/locales.rst:410
 msgid "Limburgan (Netherlands)"
-msgstr ""
+msgstr "Лімбурганська (Нідерланди)"
 
 #: ../../docs/tutorials/i18n/locales.rst:412
 msgid "lij_IT"
-msgstr ""
+msgstr "lij_IT"
 
 #: ../../docs/tutorials/i18n/locales.rst:412
 msgid "Ligurian (Italy)"
-msgstr ""
+msgstr "Лігурійська (Італія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:414
 msgid "ln_CD"
-msgstr ""
+msgstr "ln_CD"
 
 #: ../../docs/tutorials/i18n/locales.rst:414
 msgid "Lingala (Congo)"
-msgstr ""
+msgstr "Лінгала (Конго)"
 
 #: ../../docs/tutorials/i18n/locales.rst:416
 msgid "lo_LA"
-msgstr ""
+msgstr "lo_LA"
 
 #: ../../docs/tutorials/i18n/locales.rst:416
 msgid "Lao (Laos)"
-msgstr ""
+msgstr "Лаоська (Лаос)"
 
 #: ../../docs/tutorials/i18n/locales.rst:418
 msgid "lt"
@@ -37641,11 +37666,11 @@ msgstr "lt"
 
 #: ../../docs/tutorials/i18n/locales.rst:418
 msgid "Lithuanian"
-msgstr "литовська"
+msgstr "Литовська"
 
 #: ../../docs/tutorials/i18n/locales.rst:420
 msgid "lt_LT"
-msgstr ""
+msgstr "lt_LT"
 
 #: ../../docs/tutorials/i18n/locales.rst:420
 msgid "Lithuanian (Lithuania)"
@@ -37661,7 +37686,7 @@ msgstr "Латвійська"
 
 #: ../../docs/tutorials/i18n/locales.rst:424
 msgid "lv_LV"
-msgstr ""
+msgstr "lv_LV"
 
 #: ../../docs/tutorials/i18n/locales.rst:424
 msgid "Latvian (Latvia)"
@@ -37669,55 +37694,55 @@ msgstr "Латвійська (Латвія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:426
 msgid "lzh_TW"
-msgstr ""
+msgstr "lzh_TW"
 
 #: ../../docs/tutorials/i18n/locales.rst:426
 msgid "Literary Chinese (Taiwan)"
-msgstr ""
+msgstr "Літературна китайська (Тайвань)"
 
 #: ../../docs/tutorials/i18n/locales.rst:428
 msgid "mag_IN"
-msgstr ""
+msgstr "mag_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:428
 msgid "Magahi (India)"
-msgstr ""
+msgstr "Магахі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:430
 msgid "mai_IN"
-msgstr ""
+msgstr "mai_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:430
 msgid "Maithili (India)"
-msgstr ""
+msgstr "Майтілі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:432
 msgid "mg_MG"
-msgstr ""
+msgstr "mg_MG"
 
 #: ../../docs/tutorials/i18n/locales.rst:432
 msgid "Malagasy (Madagascar)"
-msgstr ""
+msgstr "Малагасійська (Мадагаскар)"
 
 #: ../../docs/tutorials/i18n/locales.rst:434
 msgid "mh_MH"
-msgstr ""
+msgstr "mh_MH"
 
 #: ../../docs/tutorials/i18n/locales.rst:434
 msgid "Marshallese (Marshall Islands)"
-msgstr ""
+msgstr "Маршалійська (Маршаллові острови)"
 
 #: ../../docs/tutorials/i18n/locales.rst:436
 msgid "mhr_RU"
-msgstr ""
+msgstr "mhr_RU"
 
 #: ../../docs/tutorials/i18n/locales.rst:436
 msgid "Eastern Mari (Russia)"
-msgstr ""
+msgstr "Східномарійська (Росія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:438
 msgid "mi_NZ"
-msgstr ""
+msgstr "mi_NZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:438
 msgid "Maori (New Zealand)"
@@ -37725,11 +37750,11 @@ msgstr "Маорійська (Нова Зеландія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:440
 msgid "miq_NI"
-msgstr ""
+msgstr "miq_NI"
 
 #: ../../docs/tutorials/i18n/locales.rst:440
 msgid "Mískito  (Nicaragua)"
-msgstr ""
+msgstr "Міскіто (Нікарагуа)"
 
 #: ../../docs/tutorials/i18n/locales.rst:442
 msgid "mk"
@@ -37741,7 +37766,7 @@ msgstr "Македонська"
 
 #: ../../docs/tutorials/i18n/locales.rst:444
 msgid "mk_MK"
-msgstr ""
+msgstr "mk_MK"
 
 #: ../../docs/tutorials/i18n/locales.rst:444
 msgid "Macedonian (Macedonia)"
@@ -37749,7 +37774,7 @@ msgstr "Македонська (Македонія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:446
 msgid "ml_IN"
-msgstr ""
+msgstr "ml_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:446
 msgid "Malayalam (India)"
@@ -37757,15 +37782,15 @@ msgstr "Малаялам (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:448
 msgid "mni_IN"
-msgstr ""
+msgstr "mni_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:448
 msgid "Manipuri (India)"
-msgstr ""
+msgstr "Маніпурська (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:450
 msgid "mn_MN"
-msgstr ""
+msgstr "mn_MN"
 
 #: ../../docs/tutorials/i18n/locales.rst:450
 msgid "Mongolian (Mongolia)"
@@ -37773,7 +37798,7 @@ msgstr "Монгольська (Монголія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:452
 msgid "mr_IN"
-msgstr ""
+msgstr "mr_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:452
 msgid "Marathi (India)"
@@ -37781,15 +37806,15 @@ msgstr "Мараті (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:454
 msgid "ms"
-msgstr "мс"
+msgstr "ms"
 
 #: ../../docs/tutorials/i18n/locales.rst:454
 msgid "Malay"
-msgstr "малайська"
+msgstr "Малайська"
 
 #: ../../docs/tutorials/i18n/locales.rst:456
 msgid "ms_MY"
-msgstr ""
+msgstr "ms_MY"
 
 #: ../../docs/tutorials/i18n/locales.rst:456
 msgid "Malay (Malaysia)"
@@ -37801,11 +37826,11 @@ msgstr "mt"
 
 #: ../../docs/tutorials/i18n/locales.rst:458
 msgid "Maltese"
-msgstr "мальтійська"
+msgstr "Мальтійська"
 
 #: ../../docs/tutorials/i18n/locales.rst:460
 msgid "mt_MT"
-msgstr ""
+msgstr "mt_MT"
 
 #: ../../docs/tutorials/i18n/locales.rst:460
 msgid "Maltese (Malta)"
@@ -37813,31 +37838,31 @@ msgstr "Мальтійська (Мальта)"
 
 #: ../../docs/tutorials/i18n/locales.rst:462
 msgid "my_MM"
-msgstr ""
+msgstr "my_MM"
 
 #: ../../docs/tutorials/i18n/locales.rst:462
 msgid "Burmese (Myanmar)"
-msgstr ""
+msgstr "Бірманська (М'янма)"
 
 #: ../../docs/tutorials/i18n/locales.rst:464
 msgid "myv_RU"
-msgstr ""
+msgstr "myv_RU"
 
 #: ../../docs/tutorials/i18n/locales.rst:464
 msgid "Erzya  (Russia)"
-msgstr ""
+msgstr "Ерзянська (Росія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:466
 msgid "nah_MX"
-msgstr ""
+msgstr "nah_MX"
 
 #: ../../docs/tutorials/i18n/locales.rst:466
 msgid "Nahuatl languages (Mexico)"
-msgstr ""
+msgstr "Ацтецькі мови (Мексика)"
 
 #: ../../docs/tutorials/i18n/locales.rst:468
 msgid "nan_TW"
-msgstr ""
+msgstr "nan_TW"
 
 #: ../../docs/tutorials/i18n/locales.rst:468
 msgid "Min Nan Chinese (Taiwan)"
@@ -37845,7 +37870,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:470
 msgid "nb"
-msgstr "(1999 NB63)"
+msgstr "nb"
 
 #: ../../docs/tutorials/i18n/locales.rst:470
 msgid "Norwegian Bokmål"
@@ -37853,7 +37878,7 @@ msgstr "Норвезька (Bokmål)"
 
 #: ../../docs/tutorials/i18n/locales.rst:472
 msgid "nb_NO"
-msgstr ""
+msgstr "nb_NO"
 
 #: ../../docs/tutorials/i18n/locales.rst:472
 msgid "Norwegian Bokmål (Norway)"
@@ -37861,23 +37886,23 @@ msgstr "Норвезька Букмол (Норвегія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:474
 msgid "nds_DE"
-msgstr ""
+msgstr "nds_DE"
 
 #: ../../docs/tutorials/i18n/locales.rst:474
 msgid "Low German (Germany)"
-msgstr ""
+msgstr "Нижньонімецька (Німеччина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:476
 msgid "nds_NL"
-msgstr ""
+msgstr "nds_NL"
 
 #: ../../docs/tutorials/i18n/locales.rst:476
 msgid "Low German (Netherlands)"
-msgstr ""
+msgstr "Нижньонімецька (Нідерланди)"
 
 #: ../../docs/tutorials/i18n/locales.rst:478
 msgid "ne_NP"
-msgstr ""
+msgstr "ne_NP"
 
 #: ../../docs/tutorials/i18n/locales.rst:478
 msgid "Nepali (Nepal)"
@@ -37885,27 +37910,27 @@ msgstr "Непальська (Непал)"
 
 #: ../../docs/tutorials/i18n/locales.rst:480
 msgid "nhn_MX"
-msgstr ""
+msgstr "nhn_MX"
 
 #: ../../docs/tutorials/i18n/locales.rst:480
 msgid "Central Nahuatl (Mexico)"
-msgstr ""
+msgstr "Центральноацтецька (Мексика)"
 
 #: ../../docs/tutorials/i18n/locales.rst:482
 msgid "niu_NU"
-msgstr ""
+msgstr "niu_NU"
 
 #: ../../docs/tutorials/i18n/locales.rst:482
 msgid "Niuean (Niue)"
-msgstr ""
+msgstr "Ніуська (Ніуе)"
 
 #: ../../docs/tutorials/i18n/locales.rst:484
 msgid "niu_NZ"
-msgstr ""
+msgstr "niu_NZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:484
 msgid "Niuean (New Zealand)"
-msgstr ""
+msgstr "Ніуська (Нова Зеландія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:486
 msgid "nl"
@@ -37917,15 +37942,15 @@ msgstr "Голландська"
 
 #: ../../docs/tutorials/i18n/locales.rst:488
 msgid "nl_AW"
-msgstr ""
+msgstr "nl_AW"
 
 #: ../../docs/tutorials/i18n/locales.rst:488
 msgid "Dutch (Aruba)"
-msgstr ""
+msgstr "Голландська (Аруба)"
 
 #: ../../docs/tutorials/i18n/locales.rst:490
 msgid "nl_BE"
-msgstr ""
+msgstr "nl_BE"
 
 #: ../../docs/tutorials/i18n/locales.rst:490
 msgid "Dutch (Belgium)"
@@ -37933,7 +37958,7 @@ msgstr "Голландська (Бельгія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:492
 msgid "nl_NL"
-msgstr ""
+msgstr "nl_NL"
 
 #: ../../docs/tutorials/i18n/locales.rst:492
 msgid "Dutch (Netherlands)"
@@ -37941,55 +37966,55 @@ msgstr "Голландська (Нідерланди)"
 
 #: ../../docs/tutorials/i18n/locales.rst:494
 msgid "nn"
-msgstr "nNнН"
+msgstr "nn"
 
 #: ../../docs/tutorials/i18n/locales.rst:494
 msgid "Norwegian Nynorsk"
-msgstr "норвезька нюноршк"
+msgstr "Норвезька нюноршк"
 
 #: ../../docs/tutorials/i18n/locales.rst:496
 msgid "nn_NO"
-msgstr ""
+msgstr "nn_NO"
 
 #: ../../docs/tutorials/i18n/locales.rst:496
 msgid "Norwegian Nynorsk (Norway)"
-msgstr "Норвезька Нюнорск (Норвегія)"
+msgstr "Норвезька нюноршк (Норвегія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:498
 msgid "no"
-msgstr "ні"
+msgstr "no"
 
 #: ../../docs/tutorials/i18n/locales.rst:498
 msgid "Norwegian"
-msgstr "норвезька"
+msgstr "Норвезька"
 
 #: ../../docs/tutorials/i18n/locales.rst:500
 msgid "no_NO"
-msgstr ""
+msgstr "no_NO"
 
 #: ../../docs/tutorials/i18n/locales.rst:500
 msgid "Norwegian (Norway)"
-msgstr ""
+msgstr "Норвезька (Норвегія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:502
 msgid "nr_ZA"
-msgstr ""
+msgstr "nr_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:502
 msgid "South Ndebele (South Africa)"
-msgstr ""
+msgstr "Південна ндебеле (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:504
 msgid "nso_ZA"
-msgstr ""
+msgstr "nso_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:504
 msgid "Pedi (South Africa)"
-msgstr ""
+msgstr "Педі (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:506
 msgid "oc_FR"
-msgstr ""
+msgstr "oc_FR"
 
 #: ../../docs/tutorials/i18n/locales.rst:506
 msgid "Occitan (France)"
@@ -37997,31 +38022,31 @@ msgstr "Окситанська (Франція)"
 
 #: ../../docs/tutorials/i18n/locales.rst:508
 msgid "om"
-msgstr "(2000 OM67)"
+msgstr "om"
 
 #: ../../docs/tutorials/i18n/locales.rst:508
 msgid "Oromo"
-msgstr "оромо"
+msgstr "Оромо"
 
 #: ../../docs/tutorials/i18n/locales.rst:510
 msgid "om_ET"
-msgstr ""
+msgstr "om_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:510
 msgid "Oromo (Ethiopia)"
-msgstr ""
+msgstr "Оромо (Ефіопія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:512
 msgid "om_KE"
-msgstr ""
+msgstr "om_KE"
 
 #: ../../docs/tutorials/i18n/locales.rst:512
 msgid "Oromo (Kenya)"
-msgstr ""
+msgstr "Оромо (Кенія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:514
 msgid "or_IN"
-msgstr ""
+msgstr "or_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:514
 msgid "Oriya (India)"
@@ -38029,59 +38054,59 @@ msgstr "Орія (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:516
 msgid "os_RU"
-msgstr ""
+msgstr "os_RU"
 
 #: ../../docs/tutorials/i18n/locales.rst:516
 msgid "Ossetian (Russia)"
-msgstr ""
+msgstr "Осетинська (Росія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:518
 msgid "pa_IN"
-msgstr ""
+msgstr "pa_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:518
 msgid "Panjabi (India)"
-msgstr ""
+msgstr "Пенджабі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:520
 msgid "pap"
-msgstr "PAP"
+msgstr "pap"
 
 #: ../../docs/tutorials/i18n/locales.rst:520
 msgid "Papiamento"
-msgstr "папьяменто"
+msgstr "Папьяменто"
 
 #: ../../docs/tutorials/i18n/locales.rst:522
 msgid "pap_AN"
-msgstr ""
+msgstr "pap_AN"
 
 #: ../../docs/tutorials/i18n/locales.rst:522
 msgid "Papiamento (Netherlands Antilles)"
-msgstr ""
+msgstr "Пап'яменто (Нідерландські Антильські Острови)"
 
 #: ../../docs/tutorials/i18n/locales.rst:524
 msgid "pap_AW"
-msgstr ""
+msgstr "pap_AW"
 
 #: ../../docs/tutorials/i18n/locales.rst:524
 msgid "Papiamento (Aruba)"
-msgstr ""
+msgstr "Папьяменто (Аруба)"
 
 #: ../../docs/tutorials/i18n/locales.rst:526
 msgid "pap_CW"
-msgstr ""
+msgstr "pap_CW"
 
 #: ../../docs/tutorials/i18n/locales.rst:526
 msgid "Papiamento (Curaçao)"
-msgstr ""
+msgstr "Папьяменто (Кюрасао)"
 
 #: ../../docs/tutorials/i18n/locales.rst:528
 msgid "pa_PK"
-msgstr ""
+msgstr "pa_PK"
 
 #: ../../docs/tutorials/i18n/locales.rst:528
 msgid "Panjabi (Pakistan)"
-msgstr ""
+msgstr "Пенджабі (Пакистан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:530
 msgid "pl"
@@ -38089,11 +38114,11 @@ msgstr "pl"
 
 #: ../../docs/tutorials/i18n/locales.rst:530
 msgid "Polish"
-msgstr "польська"
+msgstr "Польська"
 
 #: ../../docs/tutorials/i18n/locales.rst:532
 msgid "pl_PL"
-msgstr ""
+msgstr "pl_PL"
 
 #: ../../docs/tutorials/i18n/locales.rst:532
 msgid "Polish (Poland)"
@@ -38101,23 +38126,23 @@ msgstr "Польська (Польща)"
 
 #: ../../docs/tutorials/i18n/locales.rst:534
 msgid "pr"
-msgstr "PR"
+msgstr "pr"
 
 #: ../../docs/tutorials/i18n/locales.rst:534
 msgid "Pirate"
-msgstr ""
+msgstr "Піратська"
 
 #: ../../docs/tutorials/i18n/locales.rst:536
 msgid "ps_AF"
-msgstr ""
+msgstr "ps_AF"
 
 #: ../../docs/tutorials/i18n/locales.rst:536
 msgid "Pushto (Afghanistan)"
-msgstr ""
+msgstr "Пушту (Афганістан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:538
 msgid "pt"
-msgstr "пт"
+msgstr "pt"
 
 #: ../../docs/tutorials/i18n/locales.rst:538
 msgid "Portuguese"
@@ -38125,7 +38150,7 @@ msgstr "Португальська"
 
 #: ../../docs/tutorials/i18n/locales.rst:540
 msgid "pt_BR"
-msgstr ""
+msgstr "pt_BR"
 
 #: ../../docs/tutorials/i18n/locales.rst:540
 msgid "Portuguese (Brazil)"
@@ -38133,7 +38158,7 @@ msgstr "Португальська (Бразилія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:542
 msgid "pt_PT"
-msgstr ""
+msgstr "pt_PT"
 
 #: ../../docs/tutorials/i18n/locales.rst:542
 msgid "Portuguese (Portugal)"
@@ -38141,27 +38166,27 @@ msgstr "Португальська (Португалія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:544
 msgid "quy_PE"
-msgstr ""
+msgstr "quy_PE"
 
 #: ../../docs/tutorials/i18n/locales.rst:544
 msgid "Ayacucho Quechua (Peru)"
-msgstr ""
+msgstr "Кечуа, аякучо (Перу)"
 
 #: ../../docs/tutorials/i18n/locales.rst:546
 msgid "quz_PE"
-msgstr ""
+msgstr "quz_PE"
 
 #: ../../docs/tutorials/i18n/locales.rst:546
 msgid "Cusco Quechua (Peru)"
-msgstr ""
+msgstr "Кечуа, Куско (Перу)"
 
 #: ../../docs/tutorials/i18n/locales.rst:548
 msgid "raj_IN"
-msgstr ""
+msgstr "raj_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:548
 msgid "Rajasthani (India)"
-msgstr ""
+msgstr "Раджастані (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:550
 msgid "ro"
@@ -38169,11 +38194,11 @@ msgstr "ro"
 
 #: ../../docs/tutorials/i18n/locales.rst:550
 msgid "Romanian"
-msgstr "румунська"
+msgstr "Румунська"
 
 #: ../../docs/tutorials/i18n/locales.rst:552
 msgid "ro_RO"
-msgstr ""
+msgstr "ro_RO"
 
 #: ../../docs/tutorials/i18n/locales.rst:552
 msgid "Romanian (Romania)"
@@ -38185,11 +38210,11 @@ msgstr "ru"
 
 #: ../../docs/tutorials/i18n/locales.rst:554
 msgid "Russian"
-msgstr "російська"
+msgstr "Російська"
 
 #: ../../docs/tutorials/i18n/locales.rst:556
 msgid "ru_RU"
-msgstr ""
+msgstr "ru_RU"
 
 #: ../../docs/tutorials/i18n/locales.rst:556
 msgid "Russian (Russia)"
@@ -38197,23 +38222,23 @@ msgstr "Російська (Росія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:558
 msgid "ru_UA"
-msgstr ""
+msgstr "ru_UA"
 
 #: ../../docs/tutorials/i18n/locales.rst:558
 msgid "Russian (Ukraine)"
-msgstr ""
+msgstr "Російська (Україна)"
 
 #: ../../docs/tutorials/i18n/locales.rst:560
 msgid "rw_RW"
-msgstr ""
+msgstr "rw_RW"
 
 #: ../../docs/tutorials/i18n/locales.rst:560
 msgid "Kinyarwanda (Rwanda)"
-msgstr "Киньяруанда (Руанда)"
+msgstr "Кіньяруанда (Руанда)"
 
 #: ../../docs/tutorials/i18n/locales.rst:562
 msgid "sa_IN"
-msgstr ""
+msgstr "sa_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:562
 msgid "Sanskrit (India)"
@@ -38221,71 +38246,71 @@ msgstr "Санскрит (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:564
 msgid "sat_IN"
-msgstr ""
+msgstr "sat_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:564
 msgid "Santali (India)"
-msgstr ""
+msgstr "Санталі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:566
 msgid "sc_IT"
-msgstr ""
+msgstr "sc_IT"
 
 #: ../../docs/tutorials/i18n/locales.rst:566
 msgid "Sardinian (Italy)"
-msgstr ""
+msgstr "Сардинська (Італія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:568
 msgid "sco"
-msgstr ""
+msgstr "sco"
 
 #: ../../docs/tutorials/i18n/locales.rst:568
 msgid "Scots"
-msgstr "шотландська"
+msgstr "Шотландська"
 
 #: ../../docs/tutorials/i18n/locales.rst:570
 msgid "sd_IN"
-msgstr ""
+msgstr "sd_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:570
 msgid "Sindhi (India)"
-msgstr ""
+msgstr "Сіндхі (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:572
 msgid "se_NO"
-msgstr ""
+msgstr "se_NO"
 
 #: ../../docs/tutorials/i18n/locales.rst:572
 msgid "Northern Sami (Norway)"
-msgstr ""
+msgstr "Північносаамська (Норвегія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:574
 msgid "sgs_LT"
-msgstr ""
+msgstr "sgs_LT"
 
 #: ../../docs/tutorials/i18n/locales.rst:574
 msgid "Samogitian (Lithuania)"
-msgstr ""
+msgstr "Жемайтська (Литва)"
 
 #: ../../docs/tutorials/i18n/locales.rst:576
 msgid "shs_CA"
-msgstr ""
+msgstr "shs_CA"
 
 #: ../../docs/tutorials/i18n/locales.rst:576
 msgid "Shuswap (Canada)"
-msgstr ""
+msgstr "Шушвап (Канада)"
 
 #: ../../docs/tutorials/i18n/locales.rst:578
 msgid "sid_ET"
-msgstr ""
+msgstr "sid_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:578
 msgid "Sidamo (Ethiopia)"
-msgstr ""
+msgstr "Сідамо (Ефіопія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:580
 msgid "si_LK"
-msgstr ""
+msgstr "si_LK"
 
 #: ../../docs/tutorials/i18n/locales.rst:580
 msgid "Sinhala (Sri Lanka)"
@@ -38297,7 +38322,7 @@ msgstr "sk"
 
 #: ../../docs/tutorials/i18n/locales.rst:582
 msgid "Slovak"
-msgstr "словацька"
+msgstr "Словацька"
 
 #: ../../docs/tutorials/i18n/locales.rst:584
 msgid "sk_SK"
@@ -38313,7 +38338,7 @@ msgstr "sl"
 
 #: ../../docs/tutorials/i18n/locales.rst:586
 msgid "Slovenian"
-msgstr "словенська"
+msgstr "Словенська"
 
 #: ../../docs/tutorials/i18n/locales.rst:588
 msgid "so"
@@ -38321,47 +38346,47 @@ msgstr "so"
 
 #: ../../docs/tutorials/i18n/locales.rst:588
 msgid "Somali"
-msgstr "сомалійська"
+msgstr "Сомалійська"
 
 #: ../../docs/tutorials/i18n/locales.rst:590
 msgid "so_DJ"
-msgstr ""
+msgstr "so_DJ"
 
 #: ../../docs/tutorials/i18n/locales.rst:590
 msgid "Somali (Djibouti)"
-msgstr ""
+msgstr "Сомалійська (Джибуті)"
 
 #: ../../docs/tutorials/i18n/locales.rst:592
 msgid "so_ET"
-msgstr ""
+msgstr "so_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:592
 msgid "Somali (Ethiopia)"
-msgstr ""
+msgstr "Сомалійська (Ефіопія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:594
 msgid "so_KE"
-msgstr ""
+msgstr "so_KE"
 
 #: ../../docs/tutorials/i18n/locales.rst:594
 msgid "Somali (Kenya)"
-msgstr ""
+msgstr "Сомалійська (Кенія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:596
 msgid "so_SO"
-msgstr ""
+msgstr "so_SO"
 
 #: ../../docs/tutorials/i18n/locales.rst:596
 msgid "Somali (Somalia)"
-msgstr ""
+msgstr "Сомалійська (Сомалі)"
 
 #: ../../docs/tutorials/i18n/locales.rst:598
 msgid "son_ML"
-msgstr ""
+msgstr "son_ML"
 
 #: ../../docs/tutorials/i18n/locales.rst:598
 msgid "Songhai languages (Mali)"
-msgstr ""
+msgstr "Сонгхайські мови (Малі)"
 
 #: ../../docs/tutorials/i18n/locales.rst:600
 msgid "sq"
@@ -38369,11 +38394,11 @@ msgstr "sq"
 
 #: ../../docs/tutorials/i18n/locales.rst:600
 msgid "Albanian"
-msgstr "албанська"
+msgstr "Албанська"
 
 #: ../../docs/tutorials/i18n/locales.rst:602
 msgid "sq_AL"
-msgstr ""
+msgstr "sq_AL"
 
 #: ../../docs/tutorials/i18n/locales.rst:602
 msgid "Albanian (Albania)"
@@ -38381,19 +38406,19 @@ msgstr "Албанська (Албанія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:604
 msgid "sq_KV"
-msgstr ""
+msgstr "sq_KV"
 
 #: ../../docs/tutorials/i18n/locales.rst:604
 msgid "Albanian (Kosovo)"
-msgstr ""
+msgstr "Албанська (Косово)"
 
 #: ../../docs/tutorials/i18n/locales.rst:606
 msgid "sq_MK"
-msgstr ""
+msgstr "sq_MK"
 
 #: ../../docs/tutorials/i18n/locales.rst:606
 msgid "Albanian (Macedonia)"
-msgstr ""
+msgstr "Албанська (Македонія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:608
 msgid "sr"
@@ -38401,55 +38426,55 @@ msgstr "sr"
 
 #: ../../docs/tutorials/i18n/locales.rst:608
 msgid "Serbian"
-msgstr "сербська"
+msgstr "Сербська"
 
 #: ../../docs/tutorials/i18n/locales.rst:610
 msgid "sr_BA"
-msgstr ""
+msgstr "sr_BA"
 
 #: ../../docs/tutorials/i18n/locales.rst:610
 msgid "Serbian (Bosnia and Herzegovina)"
-msgstr ""
+msgstr "Сербська (Боснія та Герцеговина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:612
 msgid "sr_CS"
-msgstr ""
+msgstr "sr_CS"
 
 #: ../../docs/tutorials/i18n/locales.rst:612
 msgid "Serbian (Serbia and Montenegro)"
-msgstr ""
+msgstr "Сербська (Сербія і Чорногорія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:614
 msgid "sr_ME"
-msgstr ""
+msgstr "sr_ME"
 
 #: ../../docs/tutorials/i18n/locales.rst:614
 msgid "Serbian (Montenegro)"
-msgstr ""
+msgstr "Сербська (Чорногорія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:616
 msgid "sr_RS"
-msgstr ""
+msgstr "sr_RS"
 
 #: ../../docs/tutorials/i18n/locales.rst:616
 msgid "Serbian (Serbia)"
-msgstr ""
+msgstr "Сербська (Сербія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:618
 msgid "ss_ZA"
-msgstr ""
+msgstr "ss_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:618
 msgid "Swati (South Africa)"
-msgstr ""
+msgstr "Сваті (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:620
 msgid "st_ZA"
-msgstr ""
+msgstr "st_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:620
 msgid "Southern Sotho (South Africa)"
-msgstr ""
+msgstr "Південна сото (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:622
 msgid "sv"
@@ -38457,11 +38482,11 @@ msgstr "sv"
 
 #: ../../docs/tutorials/i18n/locales.rst:622
 msgid "Swedish"
-msgstr "шведська"
+msgstr "Шведська"
 
 #: ../../docs/tutorials/i18n/locales.rst:624
 msgid "sv_FI"
-msgstr ""
+msgstr "sv_FI"
 
 #: ../../docs/tutorials/i18n/locales.rst:624
 msgid "Swedish (Finland)"
@@ -38469,7 +38494,7 @@ msgstr "Шведська (Фінляндія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:626
 msgid "sv_SE"
-msgstr ""
+msgstr "sv_SE"
 
 #: ../../docs/tutorials/i18n/locales.rst:626
 msgid "Swedish (Sweden)"
@@ -38477,7 +38502,7 @@ msgstr "Шведська (Швеція)"
 
 #: ../../docs/tutorials/i18n/locales.rst:628
 msgid "sw_KE"
-msgstr ""
+msgstr "sw_KE"
 
 #: ../../docs/tutorials/i18n/locales.rst:628
 msgid "Swahili (Kenya)"
@@ -38485,7 +38510,7 @@ msgstr "Суахілі (Кенія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:630
 msgid "sw_TZ"
-msgstr ""
+msgstr "sw_TZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:630
 msgid "Swahili (Tanzania)"
@@ -38493,11 +38518,11 @@ msgstr "Суахілі (Танзанія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:632
 msgid "szl_PL"
-msgstr ""
+msgstr "szl_PL"
 
 #: ../../docs/tutorials/i18n/locales.rst:632
 msgid "Silesian (Poland)"
-msgstr ""
+msgstr "Силезька (Польща)"
 
 #: ../../docs/tutorials/i18n/locales.rst:634
 msgid "ta"
@@ -38509,7 +38534,7 @@ msgstr "Тамільська"
 
 #: ../../docs/tutorials/i18n/locales.rst:636
 msgid "ta_IN"
-msgstr ""
+msgstr "ta_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:636
 msgid "Tamil (India)"
@@ -38517,23 +38542,23 @@ msgstr "Тамільська (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:638
 msgid "ta_LK"
-msgstr ""
+msgstr "ta_LK"
 
 #: ../../docs/tutorials/i18n/locales.rst:638
 msgid "Tamil (Sri Lanka)"
-msgstr ""
+msgstr "Тамільська (Шрі-Ланка)"
 
 #: ../../docs/tutorials/i18n/locales.rst:640
 msgid "tcy_IN"
-msgstr ""
+msgstr "tcy_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:640
 msgid "Tulu (India)"
-msgstr ""
+msgstr "Тулу (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:642
 msgid "te_IN"
-msgstr ""
+msgstr "te_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:642
 msgid "Telugu (India)"
@@ -38541,19 +38566,19 @@ msgstr "Телузька (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:644
 msgid "tg_TJ"
-msgstr ""
+msgstr "tg_TJ"
 
 #: ../../docs/tutorials/i18n/locales.rst:644
 msgid "Tajik (Tajikistan)"
-msgstr ""
+msgstr "Таджицька (Таджикистан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:646
 msgid "the_NP"
-msgstr ""
+msgstr "the_NP"
 
 #: ../../docs/tutorials/i18n/locales.rst:646
 msgid "Chitwania Tharu (Nepal)"
-msgstr ""
+msgstr "Тару, читванья (Непал)"
 
 #: ../../docs/tutorials/i18n/locales.rst:648
 msgid "th"
@@ -38561,11 +38586,11 @@ msgstr "th"
 
 #: ../../docs/tutorials/i18n/locales.rst:648
 msgid "Thai"
-msgstr "тайська"
+msgstr "Тайська"
 
 #: ../../docs/tutorials/i18n/locales.rst:650
 msgid "th_TH"
-msgstr ""
+msgstr "th_TH"
 
 #: ../../docs/tutorials/i18n/locales.rst:650
 msgid "Thai (Thailand)"
@@ -38573,47 +38598,47 @@ msgstr "Тайська (Таїланд)"
 
 #: ../../docs/tutorials/i18n/locales.rst:652
 msgid "th_TH_TH"
-msgstr ""
+msgstr "th_TH_TH"
 
 #: ../../docs/tutorials/i18n/locales.rst:652
 msgid "Thai (Thailand,TH)"
-msgstr ""
+msgstr "Тайська (Таїланд, TH)"
 
 #: ../../docs/tutorials/i18n/locales.rst:654
 msgid "ti"
-msgstr ""
+msgstr "ti"
 
 #: ../../docs/tutorials/i18n/locales.rst:654
 msgid "Tigrinya"
-msgstr "тигринійська"
+msgstr "Тигринійська"
 
 #: ../../docs/tutorials/i18n/locales.rst:656
 msgid "ti_ER"
-msgstr ""
+msgstr "ti_ER"
 
 #: ../../docs/tutorials/i18n/locales.rst:656
 msgid "Tigrinya (Eritrea)"
-msgstr ""
+msgstr "Тигринійська (Еритрея)"
 
 #: ../../docs/tutorials/i18n/locales.rst:658
 msgid "ti_ET"
-msgstr ""
+msgstr "ti_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:658
 msgid "Tigrinya (Ethiopia)"
-msgstr ""
+msgstr "Тигринійська (Ефіопія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:660
 msgid "tig_ER"
-msgstr ""
+msgstr "tig_ER"
 
 #: ../../docs/tutorials/i18n/locales.rst:660
 msgid "Tigre (Eritrea)"
-msgstr ""
+msgstr "Тігре (Еритрея)"
 
 #: ../../docs/tutorials/i18n/locales.rst:662
 msgid "tk_TM"
-msgstr ""
+msgstr "tk_TM"
 
 #: ../../docs/tutorials/i18n/locales.rst:662
 msgid "Turkmen (Turkmenistan)"
@@ -38621,19 +38646,19 @@ msgstr "Туркменська (Туркменістан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:664
 msgid "tl_PH"
-msgstr ""
+msgstr "tl_PH"
 
 #: ../../docs/tutorials/i18n/locales.rst:664
 msgid "Tagalog (Philippines)"
-msgstr ""
+msgstr "Тагалозька (Філіппіни)"
 
 #: ../../docs/tutorials/i18n/locales.rst:666
 msgid "tn_ZA"
-msgstr ""
+msgstr "tn_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:666
 msgid "Tswana (South Africa)"
-msgstr ""
+msgstr "Тсвана (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:668
 msgid "tr"
@@ -38641,19 +38666,19 @@ msgstr "tr"
 
 #: ../../docs/tutorials/i18n/locales.rst:668
 msgid "Turkish"
-msgstr "турецька"
+msgstr "Турецька"
 
 #: ../../docs/tutorials/i18n/locales.rst:670
 msgid "tr_CY"
-msgstr ""
+msgstr "tr_CY"
 
 #: ../../docs/tutorials/i18n/locales.rst:670
 msgid "Turkish (Cyprus)"
-msgstr ""
+msgstr "Турецька (Кіпр)"
 
 #: ../../docs/tutorials/i18n/locales.rst:672
 msgid "tr_TR"
-msgstr ""
+msgstr "tr_TR"
 
 #: ../../docs/tutorials/i18n/locales.rst:672
 msgid "Turkish (Turkey)"
@@ -38661,15 +38686,15 @@ msgstr "Турецька (Туреччина)"
 
 #: ../../docs/tutorials/i18n/locales.rst:674
 msgid "ts_ZA"
-msgstr ""
+msgstr "ts_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:674
 msgid "Tsonga (South Africa)"
-msgstr ""
+msgstr "Тсонга (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:676
 msgid "tt_RU"
-msgstr ""
+msgstr "tt_RU"
 
 #: ../../docs/tutorials/i18n/locales.rst:676
 msgid "Tatar (Russia)"
@@ -38677,11 +38702,11 @@ msgstr "Татарська (Росія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:678
 msgid "ug_CN"
-msgstr ""
+msgstr "ug_CN"
 
 #: ../../docs/tutorials/i18n/locales.rst:678
 msgid "Uighur (China)"
-msgstr ""
+msgstr "Уйгурська (Китай)"
 
 #: ../../docs/tutorials/i18n/locales.rst:680
 msgid "uk"
@@ -38689,11 +38714,11 @@ msgstr "uk"
 
 #: ../../docs/tutorials/i18n/locales.rst:680
 msgid "Ukrainian"
-msgstr "українська"
+msgstr "Українська"
 
 #: ../../docs/tutorials/i18n/locales.rst:682
 msgid "uk_UA"
-msgstr ""
+msgstr "uk_UA"
 
 #: ../../docs/tutorials/i18n/locales.rst:682
 msgid "Ukrainian (Ukraine)"
@@ -38701,11 +38726,11 @@ msgstr "Українська (Україна)"
 
 #: ../../docs/tutorials/i18n/locales.rst:684
 msgid "unm_US"
-msgstr ""
+msgstr "unm_US"
 
 #: ../../docs/tutorials/i18n/locales.rst:684
 msgid "Unami (United States)"
-msgstr ""
+msgstr "Унамі (США)"
 
 #: ../../docs/tutorials/i18n/locales.rst:686
 msgid "ur"
@@ -38713,11 +38738,11 @@ msgstr "ur"
 
 #: ../../docs/tutorials/i18n/locales.rst:686
 msgid "Urdu"
-msgstr "урду"
+msgstr "Урду"
 
 #: ../../docs/tutorials/i18n/locales.rst:688
 msgid "ur_IN"
-msgstr ""
+msgstr "ur_IN"
 
 #: ../../docs/tutorials/i18n/locales.rst:688
 msgid "Urdu (India)"
@@ -38725,7 +38750,7 @@ msgstr "Урду (Індія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:690
 msgid "ur_PK"
-msgstr ""
+msgstr "ur_PK"
 
 #: ../../docs/tutorials/i18n/locales.rst:690
 msgid "Urdu (Pakistan)"
@@ -38741,19 +38766,19 @@ msgstr "Узбецька"
 
 #: ../../docs/tutorials/i18n/locales.rst:694
 msgid "uz_UZ"
-msgstr ""
+msgstr "uz_UZ"
 
 #: ../../docs/tutorials/i18n/locales.rst:694
 msgid "Uzbek (Uzbekistan)"
-msgstr ""
+msgstr "Узбецька (Узбекистан)"
 
 #: ../../docs/tutorials/i18n/locales.rst:696
 msgid "ve_ZA"
-msgstr ""
+msgstr "ve_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:696
 msgid "Venda (South Africa)"
-msgstr ""
+msgstr "Венда (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:698
 msgid "vi"
@@ -38761,11 +38786,11 @@ msgstr "vi"
 
 #: ../../docs/tutorials/i18n/locales.rst:698
 msgid "Vietnamese"
-msgstr "в'єтнамська"
+msgstr "В'єтнамська"
 
 #: ../../docs/tutorials/i18n/locales.rst:700
 msgid "vi_VN"
-msgstr ""
+msgstr "vi_VN"
 
 #: ../../docs/tutorials/i18n/locales.rst:700
 msgid "Vietnamese (Vietnam)"
@@ -38773,31 +38798,31 @@ msgstr "В’єтнамська (В’єтнам)"
 
 #: ../../docs/tutorials/i18n/locales.rst:702
 msgid "wa_BE"
-msgstr ""
+msgstr "wa_BE"
 
 #: ../../docs/tutorials/i18n/locales.rst:702
 msgid "Walloon (Belgium)"
-msgstr ""
+msgstr "Валлонська (Бельгія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:704
 msgid "wae_CH"
-msgstr ""
+msgstr "wae_CH"
 
 #: ../../docs/tutorials/i18n/locales.rst:704
 msgid "Walser (Switzerland)"
-msgstr ""
+msgstr "Вальзерська (Швейцарія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:706
 msgid "wal_ET"
-msgstr ""
+msgstr "wal_ET"
 
 #: ../../docs/tutorials/i18n/locales.rst:706
 msgid "Wolaytta (Ethiopia)"
-msgstr ""
+msgstr "Волайтта (Ефіопія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:708
 msgid "wo_SN"
-msgstr ""
+msgstr "wo_SN"
 
 #: ../../docs/tutorials/i18n/locales.rst:708
 msgid "Wolof (Senegal)"
@@ -38805,23 +38830,23 @@ msgstr "Волоф (Сенегал)"
 
 #: ../../docs/tutorials/i18n/locales.rst:710
 msgid "xh_ZA"
-msgstr ""
+msgstr "xh_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:710
 msgid "Xhosa (South Africa)"
-msgstr ""
+msgstr "Кхоса (ПАР)"
 
 #: ../../docs/tutorials/i18n/locales.rst:712
 msgid "yi_US"
-msgstr ""
+msgstr "yi_US"
 
 #: ../../docs/tutorials/i18n/locales.rst:712
 msgid "Yiddish (United States)"
-msgstr ""
+msgstr "Ідіш (США)"
 
 #: ../../docs/tutorials/i18n/locales.rst:714
 msgid "yo_NG"
-msgstr ""
+msgstr "yo_NG"
 
 #: ../../docs/tutorials/i18n/locales.rst:714
 msgid "Yoruba (Nigeria)"
@@ -38829,11 +38854,11 @@ msgstr "Йоруба (Нігерія)"
 
 #: ../../docs/tutorials/i18n/locales.rst:716
 msgid "yue_HK"
-msgstr ""
+msgstr "yue_HK"
 
 #: ../../docs/tutorials/i18n/locales.rst:716
 msgid "Yue Chinese (Hong Kong)"
-msgstr ""
+msgstr "Китайська ю (Гонконг)"
 
 #: ../../docs/tutorials/i18n/locales.rst:718
 msgid "zh"
@@ -38845,15 +38870,15 @@ msgstr "Китайська"
 
 #: ../../docs/tutorials/i18n/locales.rst:720
 msgid "zh_CN"
-msgstr ""
+msgstr "zh_CN"
 
 #: ../../docs/tutorials/i18n/locales.rst:720
 msgid "Chinese (China)"
-msgstr ""
+msgstr "Китайська (Китай)"
 
 #: ../../docs/tutorials/i18n/locales.rst:722
 msgid "zh_HK"
-msgstr ""
+msgstr "zh_HK"
 
 #: ../../docs/tutorials/i18n/locales.rst:722
 msgid "Chinese (Hong Kong)"
@@ -38861,7 +38886,7 @@ msgstr "Китайська (Гонконг)"
 
 #: ../../docs/tutorials/i18n/locales.rst:724
 msgid "zh_SG"
-msgstr ""
+msgstr "zh_SG"
 
 #: ../../docs/tutorials/i18n/locales.rst:724
 msgid "Chinese (Singapore)"
@@ -38869,7 +38894,7 @@ msgstr "Китайська (Сингапур)"
 
 #: ../../docs/tutorials/i18n/locales.rst:726
 msgid "zh_TW"
-msgstr "ZH_TW"
+msgstr "zh_TW"
 
 #: ../../docs/tutorials/i18n/locales.rst:726
 msgid "Chinese (Taiwan)"
@@ -38877,11 +38902,11 @@ msgstr "Китайська (Тайвань)"
 
 #: ../../docs/tutorials/i18n/locales.rst:728
 msgid "zu_ZA"
-msgstr ""
+msgstr "zu_ZA"
 
 #: ../../docs/tutorials/i18n/locales.rst:728
 msgid "Zulu (South Africa)"
-msgstr ""
+msgstr "Зулуська (ПАР)"
 
 #: ../../docs/tutorials/gui/index.rst:2
 msgid "GUI"
@@ -38893,7 +38918,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:7
 msgid "Oh beautiful GUI!"
-msgstr ""
+msgstr "О, чудовий інтерфейс!"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:9
 msgid ""
@@ -39321,7 +39346,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:24
 #: ../../docs/development/cpp/inheritance_class_tree.rst:10
 msgid "Reference"
-msgstr ""
+msgstr "Зразок"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:27
 msgid "Command"
@@ -39330,115 +39355,115 @@ msgstr "Команда"
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:27
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
 msgid "Tag"
-msgstr "Мітка"
+msgstr "Теґ"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:29
 msgid "**bold**"
-msgstr "Жирний"
+msgstr "**напівжирний**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:29
 msgid "``[b]{text}[/b]``"
-msgstr ""
+msgstr "``[b]{текст}[/b]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:29
 msgid "Makes {text} bold."
-msgstr ""
+msgstr "Робить {текст} напівжирним."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:31
 msgid "**italics**"
-msgstr "Курсив"
+msgstr "**курсив**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:31
 msgid "``[i]{text}[/i]``"
-msgstr ""
+msgstr "``[i]{текст}[/i]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:31
 msgid "Makes {text} italics."
-msgstr ""
+msgstr "Робить {текст} курсивним."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:33
 msgid "**underline**"
-msgstr "Підкреслити"
+msgstr "**підкреслення**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:33
 msgid "``[u]{text}[/u]``"
-msgstr ""
+msgstr "``[u]{текст}[/u]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:33
 msgid "Makes {text} underline."
-msgstr ""
+msgstr "Робить {текст} підкресленим."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
 msgid "**code**"
-msgstr "Код"
+msgstr "**код**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
 msgid "``[code]{text}[/code]``"
-msgstr ""
+msgstr "``[code]{текст}[/code]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
 msgid "Makes {text} monospace."
-msgstr ""
+msgstr "Робить {текст} моноширинним."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "**center**"
-msgstr "За центром"
+msgstr "**центр**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "``[center]{text}[/center]``"
-msgstr ""
+msgstr "``[center]{текст}[/center]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "Makes {text} centered."
-msgstr ""
+msgstr "Робить {текст} вирівняним за центром."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "**right**"
-msgstr "Праворуч"
+msgstr "**праворуч**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "``[right]{text}[/right]``"
-msgstr ""
+msgstr "``[right]{текст}[/right]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "Makes {text} right-aligned."
-msgstr ""
+msgstr "Робить {текст} вирівняним праворуч."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "**fill**"
-msgstr "Заповнення"
+msgstr "**заповнення**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "``[fill]{text}[/fill]``"
-msgstr ""
+msgstr "``[fill]{заповнення}[/fill]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "Makes {text} fill width."
-msgstr ""
+msgstr "Робить {текст} вирівняним за шириною."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "**indent**"
-msgstr "Відступ"
+msgstr "**відступ**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "``[indent]{text}[/indent]``"
-msgstr ""
+msgstr "``[indent]{текст}[/indent]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "Increase indent level of {text}."
-msgstr ""
+msgstr "Збільшує рівень відступу тексту {текст}."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "**url**"
-msgstr ""
+msgstr "**адреса**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "``[url]{url}[/url]``"
-msgstr ""
+msgstr "``[url]{адреса}[/url]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "Show {url} as such."
-msgstr ""
+msgstr "Показує адресу {адреса} як посилання."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "**url (ref)**"
@@ -39454,23 +39479,23 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "**image**"
-msgstr "Зображення"
+msgstr "**зображення**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "``[img]{path}[/img]``"
-msgstr ""
+msgstr "``[img]{шлях}[/img]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "Insert image at resource {path}."
-msgstr ""
+msgstr "Вставити зображення, вказане як ресурс {шлях}."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "**font**"
-msgstr "Шрифт"
+msgstr "**шрифт**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "``[font=<path>]{text}[/font]``"
-msgstr ""
+msgstr "``[font=<шлях>]{текст}[/font]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "Use custom font at <path> for {text}."
@@ -39478,11 +39503,11 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "**color**"
-msgstr "Колір"
+msgstr "**колір**"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "``[color=<code/name>]{text}[/color]``"
-msgstr ""
+msgstr "``[color=<код/назва>]{текст}[/color]``"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "Change {text} color, use # format such as #ff00ff or name."
@@ -39490,7 +39515,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
 msgid "Built-in color names"
-msgstr ""
+msgstr "Вбудовані назви кольорів"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "List of valid color names for the [color=<name>] tag:"
@@ -39498,55 +39523,55 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "aqua"
-msgstr "Аква"
+msgstr "aqua"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:62
 msgid "black"
-msgstr "чорний"
+msgstr "black"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "blue"
-msgstr "синій"
+msgstr "blue"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:64
 msgid "fuchsia"
-msgstr "ясно-бурячковий"
+msgstr "fuchsia"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "gray"
-msgstr "сірий"
+msgstr "gray"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:66
 msgid "green"
-msgstr "зелений"
+msgstr "green"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "lime"
-msgstr "світло-зелений"
+msgstr "lime"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:68
 msgid "maroon"
-msgstr "каштановий"
+msgstr "maroon"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "navy"
-msgstr "темно-синій"
+msgstr "navy"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:70
 msgid "purple"
-msgstr "пурпуровий"
+msgstr "purple"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "red"
-msgstr "червоний"
+msgstr "red"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:72
 msgid "silver"
-msgstr "срібний"
+msgstr "silver"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "teal"
-msgstr "cиньо-зелений"
+msgstr "teal"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:74
 msgid "white"
@@ -39554,11 +39579,11 @@ msgstr "білий"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "yellow"
-msgstr "жовтий"
+msgstr "yellow"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:78
 msgid "Hexadecimal color codes"
-msgstr ""
+msgstr "Шістнадцяткові коди кольорів"
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:80
 msgid ""
@@ -39576,7 +39601,7 @@ msgstr ""
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr "4 панелі перегляду"
+msgstr "Панелі перегляду"
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
 msgid ""
@@ -40131,7 +40156,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "**void**"
-msgstr "Пропуск"
+msgstr "**void**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "Void datatype, useful only for functions that return nothing."
@@ -40139,7 +40164,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "**bool**"
-msgstr "bool"
+msgstr "**bool**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "Boolean datatype, can only contain \"true\" or \"false\""
@@ -40147,39 +40172,39 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "**bvec2**"
-msgstr ""
+msgstr "**bvec2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "Two component vector of booleans."
-msgstr ""
+msgstr "Двокомпонентний вектор із булевих значень."
 
 #: ../../docs/tutorials/shading/shading_language.rst:58
 msgid "**bvec3**"
-msgstr ""
+msgstr "**bvec3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:58
 msgid "Three component vector of booleans."
-msgstr ""
+msgstr "Трикомпонентний вектор із булевих значень."
 
 #: ../../docs/tutorials/shading/shading_language.rst:60
 msgid "**bvec4**"
-msgstr ""
+msgstr "**bvec4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:60
 msgid "Four component vector of booleans."
-msgstr ""
+msgstr "Чотирикомпонентний вектор із булевих значень."
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "**int**"
-msgstr "int"
+msgstr "**int**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "Signed scalar integer."
-msgstr ""
+msgstr "Ціле число зі знаком."
 
 #: ../../docs/tutorials/shading/shading_language.rst:64
 msgid "**ivec2**"
-msgstr ""
+msgstr "**ivec2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:64
 msgid "Two component vector of signed integers."
@@ -40187,7 +40212,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:66
 msgid "**ivec3**"
-msgstr ""
+msgstr "**ivec3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:66
 msgid "Three component vector of signed integers."
@@ -40195,7 +40220,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:68
 msgid "**ivec4**"
-msgstr ""
+msgstr "**ivec4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:68
 msgid "Four component vector of signed integers."
@@ -40203,7 +40228,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "**uint**"
-msgstr "uint32"
+msgstr "**uint**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "Unsigned scalar integer, can't contain negative numbers."
@@ -40211,7 +40236,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:72
 msgid "**uvec2**"
-msgstr ""
+msgstr "**uvec2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:72
 msgid "Two component vector of unsigned integers."
@@ -40219,7 +40244,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:74
 msgid "**uvec3**"
-msgstr ""
+msgstr "**uvec3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:74
 msgid "Three component vector of unsigned integers."
@@ -40227,7 +40252,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:76
 msgid "**uvec4**"
-msgstr ""
+msgstr "**uvec4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:76
 msgid "Four component vector of unsigned integers."
@@ -40235,7 +40260,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "**float**"
-msgstr "Float"
+msgstr "**float**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "Floating point scalar."
@@ -40243,7 +40268,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "**vec2**"
-msgstr "vec"
+msgstr "**vec2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "Two component vector of floating point values."
@@ -40251,7 +40276,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "**vec3**"
-msgstr "vec"
+msgstr "**vec3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "Three component vector of floating point values."
@@ -40260,7 +40285,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:84
 #: ../../docs/tutorials/shading/shading_language.rst:422
 msgid "**vec4**"
-msgstr "vec"
+msgstr "**vec4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:84
 msgid "Four component vector of floating point values."
@@ -40268,7 +40293,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "**mat2**"
-msgstr "Маті"
+msgstr "**mat2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "2x2 matrix, in column major order."
@@ -40276,7 +40301,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "**mat3**"
-msgstr "Маті"
+msgstr "**mat3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "3x3 matrix, in column major order."
@@ -40284,7 +40309,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "**mat4**"
-msgstr "Маті"
+msgstr "**mat4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "4x4 matrix, in column major order."
@@ -40298,7 +40323,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:434
 #: ../../docs/tutorials/shading/shading_language.rst:436
 msgid "**sampler2D**"
-msgstr ""
+msgstr "**sampler2D**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:92
 msgid "Sampler type, for binding 2D textures, which are read as float."
@@ -40306,7 +40331,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:94
 msgid "**isampler2D**"
-msgstr ""
+msgstr "**isampler2D**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:94
 msgid "Sampler type for binding 2D textures, which are read as signed integer."
@@ -40314,7 +40339,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:96
 msgid "**usampler2D**"
-msgstr ""
+msgstr "**usampler2D**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:96
 msgid ""
@@ -40323,7 +40348,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:98
 msgid "**samplerCube**"
-msgstr ""
+msgstr "**samplerCube**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:98
 msgid "Sampler type for binding Cubemaps, which are read as floats."
@@ -40447,37 +40472,37 @@ msgstr "1 (найвищий)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:196
 msgid "parenthetical grouping"
-msgstr ""
+msgstr "групування за допомогою дужок"
 
 #: ../../docs/tutorials/shading/shading_language.rst:196
 msgid "**()**"
-msgstr ""
+msgstr "**()**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:198
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../docs/tutorials/shading/shading_language.rst:198
 msgid "unary"
-msgstr ""
+msgstr "унарні"
 
 #: ../../docs/tutorials/shading/shading_language.rst:198
 msgid "**+, -, !, ~**"
-msgstr ""
+msgstr "**+, -, !, ~**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:200
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../docs/tutorials/shading/shading_language.rst:200
 msgid "multiplicative"
-msgstr ""
+msgstr "мультиплікативні"
 
 #: ../../docs/tutorials/shading/shading_language.rst:200
 msgid "**/, \\*, %**"
-msgstr ""
+msgstr "**/, \\*, %**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:202
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
@@ -40565,54 +40590,54 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../docs/tutorials/shading/shading_language.rst:202
 msgid "additive"
-msgstr ""
+msgstr "адитивні"
 
 #: ../../docs/tutorials/shading/shading_language.rst:202
 msgid "**+, -**"
-msgstr ""
+msgstr "**+, -**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:204
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../docs/tutorials/shading/shading_language.rst:204
 msgid "bit-wise shift"
-msgstr ""
+msgstr "зсув за бітами"
 
 #: ../../docs/tutorials/shading/shading_language.rst:204
 msgid "**<<, >>**"
-msgstr ""
+msgstr "**<<, >>**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:206
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../docs/tutorials/shading/shading_language.rst:206
 msgid "relational"
-msgstr ""
+msgstr "реляційні"
 
 #: ../../docs/tutorials/shading/shading_language.rst:206
 msgid "**<, >, <=, >=**"
-msgstr ""
+msgstr "**<, >, <=, >=**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:208
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../docs/tutorials/shading/shading_language.rst:208
 msgid "equality"
-msgstr "Рівновага"
+msgstr "рівність"
 
 #: ../../docs/tutorials/shading/shading_language.rst:208
 msgid "**==, !=**"
-msgstr ""
+msgstr "**==, !=**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:210
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:41
@@ -40630,20 +40655,20 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:334
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../docs/tutorials/shading/shading_language.rst:210
 msgid "bit-wise and"
-msgstr ""
+msgstr "бітове «І»"
 
 #: ../../docs/tutorials/shading/shading_language.rst:210
 msgid "**&**"
-msgstr ""
+msgstr "**&**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:212
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../docs/tutorials/shading/shading_language.rst:212
 msgid "bit-wise exclusive or"
@@ -40651,12 +40676,12 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:212
 msgid "**^**"
-msgstr ""
+msgstr "**^**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:214
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../docs/tutorials/shading/shading_language.rst:214
 msgid "bit-wise inclusive or"
@@ -40664,24 +40689,24 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:214
 msgid "**|**"
-msgstr ""
+msgstr "**|**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:216
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../docs/tutorials/shading/shading_language.rst:216
 msgid "logical and"
-msgstr "Логічне «ТА»"
+msgstr "логічне «І»"
 
 #: ../../docs/tutorials/shading/shading_language.rst:216
 msgid "**&&**"
-msgstr ""
+msgstr "**&&**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:218
 msgid "12 (lowest)"
-msgstr "Найнижчий"
+msgstr "12 (найнижчий)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:218
 msgid "logical inclusive or"
@@ -40689,7 +40714,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:218
 msgid "**||**"
-msgstr ""
+msgstr "**||**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:224
 msgid "Godot Shading language supports the most common types of flow control:"
@@ -40704,7 +40729,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:250
 msgid "Discarding"
-msgstr ""
+msgstr "Відкидання"
 
 #: ../../docs/tutorials/shading/shading_language.rst:252
 msgid ""
@@ -51165,10 +51190,11 @@ msgstr ""
 msgid ""
 "`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
 
 #: ../../docs/development/cpp/core_types.rst:215
 msgid "NodePath"
-msgstr ""
+msgstr "NodePath"
 
 #: ../../docs/development/cpp/core_types.rst:217
 msgid ""
@@ -51181,6 +51207,8 @@ msgid ""
 "`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
 "node_path.h>`__"
 msgstr ""
+"`core/node_path.h <https://github.com/godotengine/godot/blob/master/core/"
+"node_path.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:226
 msgid "RID"
@@ -51198,10 +51226,11 @@ msgstr ""
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:4
 msgid "Variant class"
-msgstr ""
+msgstr "Клас Variant"
 
 #: ../../docs/development/cpp/variant_class.rst:9
 msgid ""
@@ -51273,6 +51302,8 @@ msgid ""
 "`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
 "variant.h>`__"
 msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:43
 msgid "Containers: Dictionary and Array"
@@ -51302,12 +51333,16 @@ msgid ""
 "`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
 "dictionary.h>`__"
 msgstr ""
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"dictionary.h>`__"
 
 #: ../../docs/development/cpp/variant_class.rst:60
 msgid ""
 "`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
 "h>`__"
 msgstr ""
+"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:4
 msgid "Object class"
@@ -51315,7 +51350,7 @@ msgstr "Клас об’єкта"
 
 #: ../../docs/development/cpp/object_class.rst:7
 msgid "General definition"
-msgstr ""
+msgstr "Загальне визначення"
 
 #: ../../docs/development/cpp/object_class.rst:9
 msgid ""
@@ -51334,6 +51369,8 @@ msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
 "h>`__"
 msgstr ""
+"`core/object.h <https://github.com/godotengine/godot/blob/master/core/object."
+"h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:36
 msgid "Registering an Object"
@@ -51403,6 +51440,8 @@ msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
 "class_db.h>`__"
 msgstr ""
+"`core/class_db.h <https://github.com/godotengine/godot/blob/master/core/"
+"class_db.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:96
 msgid "Classes often have enums such as:"
@@ -51420,7 +51459,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:120
 msgid "Properties (set/get)"
-msgstr ""
+msgstr "Властивості (встановити/отримати)"
 
 #: ../../docs/development/cpp/object_class.rst:122
 msgid "Objects export properties, properties are useful for the following:"
@@ -51449,7 +51488,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:144
 msgid "Another example:"
-msgstr ""
+msgstr "Ще один приклад:"
 
 #: ../../docs/development/cpp/object_class.rst:150
 msgid ""
@@ -51559,6 +51598,8 @@ msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
 "reference.h>`__"
 msgstr ""
+"`core/reference.h <https://github.com/godotengine/godot/blob/master/core/"
+"reference.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:256
 msgid "Resources:"
@@ -51582,10 +51623,12 @@ msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
 "resource.h>`__"
 msgstr ""
+"`core/resource.h <https://github.com/godotengine/godot/blob/master/core/"
+"resource.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:272
 msgid "Resource loading"
-msgstr ""
+msgstr "Завантаження ресурсів"
 
 #: ../../docs/development/cpp/object_class.rst:274
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
@@ -51600,13 +51643,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:285
 msgid "resourceinteractiveloader (TODO)"
-msgstr ""
+msgstr "resourceinteractiveloader (ще не написано)"
 
 #: ../../docs/development/cpp/object_class.rst:290
 msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_loader.h>`__"
 msgstr ""
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_loader.h>`__"
 
 #: ../../docs/development/cpp/object_class.rst:293
 msgid "Resource saving"
@@ -51629,6 +51674,8 @@ msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/resource_saver.h>`__"
 msgstr ""
+"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/resource_saver.h>`__"
 
 #: ../../docs/development/cpp/inheritance_class_tree.rst:2
 msgid "Inheritance class tree"
@@ -51703,7 +51750,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:31
 msgid "Porting an existing game."
-msgstr ""
+msgstr "Портування наявної гри."
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:32
 msgid "Write a whole, new game in C++ because you can't live without C++."
@@ -51711,7 +51758,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:35
 msgid "Creating a new module"
-msgstr ""
+msgstr "Створення модуля"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:37
 msgid ""
@@ -52029,21 +52076,23 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
-msgstr ""
+msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:22
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L258>`__"
 msgstr ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp#L258>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:27
 msgid "Adding new support for many file formats"
-msgstr ""
+msgstr "Додавання нової підтримки для багатьох форматів файлів"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:28
 msgid "Audio formats"
-msgstr ""
+msgstr "Формати звукових даних"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:29
 msgid "Video formats"
@@ -52059,7 +52108,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:35
 msgid "Raster images"
-msgstr ""
+msgstr "Растрові зображення"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:37
 msgid "ImageFormatLoader should be used to load images."
@@ -52070,10 +52119,12 @@ msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`__"
 msgstr ""
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:46
 msgid "Creating a ResourceFormatLoader"
-msgstr ""
+msgstr "Створення ResourceFormatLoader"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:48
 msgid ""
@@ -52127,19 +52178,23 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:212
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"
-msgstr ""
+msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:213
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`__"
 msgstr ""
+"`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:214
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`__"
 msgstr ""
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:217
 msgid "Registering the New File Format"
@@ -52156,6 +52211,8 @@ msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L280>`__"
 msgstr ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp#L280>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:249
 msgid "Loading it on GDScript"
@@ -52163,7 +52220,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:4
 msgid "Custom AudioStreams"
-msgstr ""
+msgstr "Нетипові AudioStream-и"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:9
 msgid ""
@@ -52193,6 +52250,8 @@ msgid ""
 "`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
 "master/servers/audio/audio_stream.h>`__"
 msgstr ""
+"`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
+"master/servers/audio/audio_stream.h>`__"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:26
 #: ../../docs/development/cpp/custom_audiostreams.rst:359
@@ -52200,6 +52259,8 @@ msgid ""
 "`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
 "master/scene/audio/audio_player.cpp>`__"
 msgstr ""
+"`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
+"master/scene/audio/audio_player.cpp>`__"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:33
 msgid "Binding external libraries (like Wwise, FMOD, etc)."
@@ -52207,15 +52268,15 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:34
 msgid "Adding custom audio queues"
-msgstr ""
+msgstr "Додавання нетипових черг обробки звукових даних"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:35
 msgid "Adding support for more audio formats"
-msgstr ""
+msgstr "Додавання підтримки додаткових форматів звукових даних"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:38
 msgid "Create an AudioStream"
-msgstr ""
+msgstr "Створення AudioStream"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:41
 msgid ""
@@ -52235,7 +52296,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:125
 msgid "Create an AudioStreamPlayback"
-msgstr ""
+msgstr "Створення AudioStreamPlayback"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:127
 msgid ""
@@ -52251,7 +52312,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:235
 msgid "Resampling"
-msgstr ""
+msgstr "Зміна частоти"
 
 #: ../../docs/development/cpp/custom_audiostreams.rst:238
 msgid ""
@@ -52273,9 +52334,10 @@ msgid ""
 "`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
 "core/math/audio_frame.h>`__"
 msgstr ""
+"`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
+"core/math/audio_frame.h>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
-#, fuzzy
 msgid "Custom Godot servers"
 msgstr "Нетипові сервери Godot"
 
@@ -52329,12 +52391,10 @@ msgid "Adding a custom VoIP protocol."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:35
-#, fuzzy
 msgid "And more..."
-msgstr "…та багато інших можливостей!"
+msgstr "та багато інших можливостей…"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:38
-#, fuzzy
 msgid "Creating a Godot server"
 msgstr "Створення сервера Godot"
 
@@ -52358,7 +52418,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:316
 msgid ":ref:`RID<class_rid>`"
-msgstr ""
+msgstr ":ref:`RID<class_rid>`"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:320
 msgid "Registering the class in GDScript"
@@ -52413,7 +52473,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:462
 msgid "MessageQueue"
-msgstr ""
+msgstr "MessageQueue"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:464
 msgid ""
@@ -52571,7 +52631,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:55
 msgid "config.py"
-msgstr ""
+msgstr "config.py"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:57
 msgid ""
@@ -52625,7 +52685,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:162
 msgid "AndroidManifest"
-msgstr ""
+msgstr "AndroidManifest"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:164
 msgid ""
@@ -52654,7 +52714,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:201
 msgid "SDK library"
-msgstr ""
+msgstr "Бібліотека SDK"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:203
 msgid ""
@@ -52950,20 +53010,20 @@ msgstr "parent"
 
 #: ../../docs/development/file_formats/tscn.rst:161
 msgid "rest"
-msgstr ""
+msgstr "rest"
 
 #: ../../docs/development/file_formats/tscn.rst:162
 msgid "pose"
-msgstr ""
+msgstr "pose"
 
 #: ../../docs/development/file_formats/tscn.rst:163
 #: ../../docs/development/file_formats/tscn.rst:384
 msgid "enabled"
-msgstr ""
+msgstr "enabled"
 
 #: ../../docs/development/file_formats/tscn.rst:164
 msgid "bound_children"
-msgstr ""
+msgstr "bound_children"
 
 #: ../../docs/development/file_formats/tscn.rst:166
 msgid ":code:`name` must put as the first attribute of each bone"
@@ -52995,7 +53055,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:198
 msgid "BoneAttachment"
-msgstr ""
+msgstr "BoneAttachment"
 
 #: ../../docs/development/file_formats/tscn.rst:199
 msgid ""
@@ -53056,15 +53116,15 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:271
 msgid "A path"
-msgstr ""
+msgstr "шляху"
 
 #: ../../docs/development/file_formats/tscn.rst:272
 msgid "A type"
-msgstr ""
+msgstr "типу"
 
 #: ../../docs/development/file_formats/tscn.rst:273
 msgid "An ID"
-msgstr ""
+msgstr "ідентифікатора"
 
 #: ../../docs/development/file_formats/tscn.rst:275
 msgid ""
@@ -53075,7 +53135,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:279
 msgid "Some example external resources are:"
-msgstr ""
+msgstr "Ось декілька прикладів зовнішніх ресурсів:"
 
 #: ../../docs/development/file_formats/tscn.rst:288
 msgid "Internal Resources"
@@ -53107,7 +53167,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:313
 msgid "ArrayMesh"
-msgstr ""
+msgstr "ArrayMesh"
 
 #: ../../docs/development/file_formats/tscn.rst:314
 msgid ""
@@ -53133,7 +53193,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:323
 msgid "morph_arrays"
-msgstr ""
+msgstr "morph_arrays"
 
 #: ../../docs/development/file_formats/tscn.rst:325
 msgid ""
@@ -53185,7 +53245,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:342
 msgid "An example of ArrayMesh:"
-msgstr ""
+msgstr "Приклад ArrayMesh:"
 
 #: ../../docs/development/file_formats/tscn.rst:366
 msgid ""
@@ -53199,11 +53259,11 @@ msgstr "length"
 
 #: ../../docs/development/file_formats/tscn.rst:370
 msgid "loop"
-msgstr ""
+msgstr "loop"
 
 #: ../../docs/development/file_formats/tscn.rst:371
 msgid "step"
-msgstr ""
+msgstr "step"
 
 #: ../../docs/development/file_formats/tscn.rst:373
 msgid ":code:`length` and :code:`step` are both time in seconds"
@@ -53229,11 +53289,11 @@ msgstr "interp"
 
 #: ../../docs/development/file_formats/tscn.rst:381
 msgid "keys"
-msgstr ""
+msgstr "keys"
 
 #: ../../docs/development/file_formats/tscn.rst:382
 msgid "loop_wrap"
-msgstr ""
+msgstr "loop_wrap"
 
 #: ../../docs/development/file_formats/tscn.rst:383
 msgid "imported"
@@ -53255,7 +53315,7 @@ msgstr "'value'"
 
 #: ../../docs/development/file_formats/tscn.rst:392
 msgid "'method'"
-msgstr ""
+msgstr "'method'"
 
 #: ../../docs/development/file_formats/tscn.rst:394
 msgid ""
@@ -53272,15 +53332,15 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:401
 msgid "0 (constant)"
-msgstr "0 (стала)"
+msgstr "0 (сталий)"
 
 #: ../../docs/development/file_formats/tscn.rst:402
 msgid "1 (linear)"
-msgstr ""
+msgstr "1 (лінійний)"
 
 #: ../../docs/development/file_formats/tscn.rst:403
 msgid "2 (cubic)"
-msgstr ""
+msgstr "2 (кубічний)"
 
 #: ../../docs/development/file_formats/tscn.rst:405
 msgid ""
@@ -53299,11 +53359,11 @@ msgstr ""
 
 #: ../../docs/community/contributing/index.rst:2
 msgid "Contributing"
-msgstr ""
+msgstr "Участь у розробці"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:4
 msgid "Ways to contribute"
-msgstr ""
+msgstr "Способи участі у розробці"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:6
 msgid ""
@@ -53368,7 +53428,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:54
 msgid "Contributing code"
-msgstr ""
+msgstr "Програмування"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:56
 msgid ""
@@ -53441,7 +53501,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:97
 msgid "Testing and reporting issues"
-msgstr ""
+msgstr "Тестування та звітування щодо вад"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:99
 msgid ""
@@ -53453,7 +53513,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:105
 msgid "Testing development versions"
-msgstr ""
+msgstr "Тестування версій, які перебувають у розробці"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:107
 msgid "To help with the testing, you have several possibilities:"
@@ -53490,7 +53550,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:126
 msgid "Filing an issue on GitHub"
-msgstr ""
+msgstr "Створення запису вади на GitHub"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:128
 msgid ""
@@ -53565,7 +53625,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:175
 msgid "Contributing to the documentation"
-msgstr ""
+msgstr "Внески до документації"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:177
 msgid ""
@@ -53692,7 +53752,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:69
 msgid "Forking and cloning"
-msgstr ""
+msgstr "Створення відгалуження і клонування"
 
 #: ../../docs/community/contributing/pr_workflow.rst:71
 msgid ""
@@ -53785,7 +53845,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:140
 msgid "Branching"
-msgstr ""
+msgstr "Створення гілки"
 
 #: ../../docs/community/contributing/pr_workflow.rst:142
 msgid ""
@@ -53796,7 +53856,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:154
 msgid "This command is equivalent:"
-msgstr ""
+msgstr "Ця команда є еквівалентною до такої:"
 
 #: ../../docs/community/contributing/pr_workflow.rst:161
 msgid "If you want to go back to the ``master`` branch, you'd use:"
@@ -53810,7 +53870,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:178
 msgid "Updating your branch"
-msgstr ""
+msgstr "Оновлення вашої гілки"
 
 #: ../../docs/community/contributing/pr_workflow.rst:180
 msgid ""
@@ -53845,7 +53905,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:208
 msgid "Making changes"
-msgstr ""
+msgstr "Внесення змін"
 
 #: ../../docs/community/contributing/pr_workflow.rst:210
 msgid ""
@@ -53941,7 +54001,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:284
 msgid "Pushing changes to a remote"
-msgstr ""
+msgstr "Надсилання змін до віддаленого сховища"
 
 #: ../../docs/community/contributing/pr_workflow.rst:286
 msgid ""
@@ -53967,7 +54027,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:308
 msgid "Issuing a pull request"
-msgstr ""
+msgstr "Надсилання запиту щодо злиття"
 
 #: ../../docs/community/contributing/pr_workflow.rst:310
 msgid ""
@@ -54136,7 +54196,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:4
 msgid "Code style guidelines"
-msgstr ""
+msgstr "Настанови щодо стилю програмного коду"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:8
 msgid ""
@@ -54149,7 +54209,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:15
 msgid "C++ and Objective-C"
-msgstr ""
+msgstr "C++ і Objective-C"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:17
 msgid ""
@@ -54210,7 +54270,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:51
 msgid "Using clang-format locally"
-msgstr ""
+msgstr "Використання clang-format локально"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:53
 msgid ""
@@ -54253,7 +54313,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:76
 msgid "Manual usage"
-msgstr ""
+msgstr "Використання вручну"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:78
 msgid ""
@@ -54302,7 +54362,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:108
 msgid "IDE plugin"
-msgstr ""
+msgstr "Додаток до IDE"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:110
 msgid ""
@@ -54319,22 +54379,28 @@ msgid ""
 "Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
 msgstr ""
+"Qt Creator: `додаток Beautifier <http://doc.qt.io/qtcreator/creator-"
+"beautifier.html>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:116
 msgid ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
 msgstr ""
+"Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
+"items?itemName=xaver.clang-format>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:117
 msgid ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
 msgstr ""
+"Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
+"itemName=LLVMExtensions.ClangFormat>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:118
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
-msgstr ""
+msgstr "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:120
 msgid "(Pull requests welcome to extend this list with tested plugins.)"
@@ -54375,7 +54441,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:4
 msgid "Bug triage guidelines"
-msgstr ""
+msgstr "Настанови щодо пошуку причин вад"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:6
 msgid ""
@@ -54388,7 +54454,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:12
 msgid "Issues management"
-msgstr ""
+msgstr "Керування вадами"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:14
 msgid "GitHub proposes various features to manage issues:"
@@ -54523,6 +54589,7 @@ msgstr ""
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:75
 msgid "*Usability*: issues that directly impact user usability."
 msgstr ""
+"*Usability*: вади, які безпосередньо стосуються зручності у користуванні."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:77
 msgid ""
@@ -54539,67 +54606,75 @@ msgstr "Теми"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:85
 msgid "*Assetlib*: relates to issues with the asset library."
-msgstr ""
+msgstr "*Assetlib*: стосується вад у бібліотеці asset."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:86
 msgid "*Audio*: relates to the audio features (low and high level)."
-msgstr ""
+msgstr "*Audio*: стосується звукових можливостей (низько- і високорівневих)."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:87
 msgid ""
 "*Buildsystem*: relates to building issues, either linked to the SCons "
 "buildsystem or to compiler peculiarities."
 msgstr ""
+"*Buildsystem*: стосується вад зі збиранням, пов'язаних або із системою "
+"збирання SCons, або із особливостями компілятора."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:89
 msgid ""
 "*Core*: anything related to the core engine. It might be further split later "
 "on as it's a pretty big topic."
 msgstr ""
+"*Core*: усе, що стосується основного рушія. Може бути пізніше поділено на "
+"дрібніші категорії, оскільки ця категорія є доволі широкою.."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:91
 msgid "*Drivers*: relates to issues with the drivers used by the engine."
-msgstr ""
+msgstr "*Drivers*: стосується вад із драйверами, які використовуються рушієм."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:92
 msgid "*Editor*: relates to issues in the editor (mainly UI)."
 msgstr ""
+"*Editor*: стосується вад у редакторів (в основному, інтерфейсі користувача)."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:93
 msgid "*GDNative*: relates to the GDNative module."
-msgstr ""
+msgstr "*GDNative*: стосується модуля GDNative."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:94
 msgid "*GDScript*: relates to GDScript."
-msgstr ""
+msgstr "*GDScript*: стосується GDScript."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:95
 msgid "*Mono*: relates to the C# / Mono bindings."
-msgstr ""
+msgstr "*Mono*: стосується прив'язок до C# / Mono."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:96
 msgid "*Network*: relates to networking."
-msgstr ""
+msgstr "*Network*: стосується мережі."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:97
 msgid "*Physics*: relates to the physics engine (2D/3D)."
-msgstr ""
+msgstr "*Physics*: стосується фізичного рушія (2D/3D)."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:98
 msgid "*Plugin*: relates to problems encountered while writing plugins."
 msgstr ""
+"*Plugin*: стосується проблем, з якими ви зіштовхнулися під час написання "
+"додатків."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:99
 msgid "*Porting*: relates to some specific platforms."
-msgstr ""
+msgstr "*Porting*: стосується певної платформи."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:100
 msgid "*Rendering*: relates to the 2D and 3D rendering engines."
 msgstr ""
+"*Rendering*: стосується рушіїв обробки плоского і просторового зображення."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:101
 msgid "*VisualScript*: relates to issues with the visual scripting language."
-msgstr ""
+msgstr "*VisualScript*: стосується проблем із мовою візуальних скриптів."
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:103
 msgid ""
@@ -54615,7 +54690,7 @@ msgstr "Платформи"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:110
 msgid "*Android*, *HTML5*, *iOS*, *Linux*, *OS X*, *Windows*, *UWP*"
-msgstr ""
+msgstr "*Android*, *HTML5*, *iOS*, *Linux*, *OS X*, *Windows*, *UWP*"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:112
 msgid ""
@@ -54650,7 +54725,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:4
 msgid "Documentation guidelines"
-msgstr ""
+msgstr "Настанови щодо документації"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:6
 msgid ""
@@ -54766,7 +54841,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:82
 msgid "And this is a bad example:"
-msgstr ""
+msgstr "А оце поганий приклад:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:84
 msgid "Insert Your Title Here"
@@ -54777,6 +54852,8 @@ msgid ""
 "Only project, people and node class names should have capitalized first "
 "letter."
 msgstr ""
+"Велику першу літеру слід використовувати лише для назв проектів, імен людей "
+"та назв класів вузлів."
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:90
 msgid "Translating existing pages"
@@ -54815,7 +54892,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:4
 msgid "Docs writing guidelines"
-msgstr ""
+msgstr "Настанови щодо написання документації"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:6
 msgid ""
@@ -54838,16 +54915,16 @@ msgstr ""
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:15
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:76
 msgid "Use precise action verbs"
-msgstr ""
+msgstr "Використовуйте точні дієслова для опису дій"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:16
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:98
 msgid "Avoid verbs that end in -ing"
-msgstr ""
+msgstr "Уникайте дієслів, які завершуються на -ing"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:17
 msgid "Remove unnecessary adverbs and adjectives."
-msgstr ""
+msgstr "Вилучайте непотрібні прикметники і прислівники."
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:18
 msgid ""
@@ -54858,16 +54935,16 @@ msgstr ""
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:19
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:212
 msgid "Use explicit references"
-msgstr ""
+msgstr "Використовуйте явні посилання"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:20
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:233
 msgid "Use 's to show possession"
-msgstr ""
+msgstr "Використовуйте 's, щоб показати належність"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:21
 msgid "Use the Oxford comma"
-msgstr ""
+msgstr "Використовуйте оксфордську кому"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:23
 msgid "There are 3 rules to describe classes:"
@@ -54908,16 +54985,16 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:48
 msgid "Passive:"
-msgstr ""
+msgstr "Пасивний спосіб:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:54
 msgid "Active:"
-msgstr ""
+msgstr "Активний спосіб:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:61
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:315
 msgid "**Don't** use the passive voice:"
-msgstr ""
+msgstr "**Не** використовуйте пасивний спосіб:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:68
 msgid "**Do** use the node's name as a noun:"
@@ -54989,43 +55066,43 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:146
 msgid "Ban these 8 words"
-msgstr ""
+msgstr "Не використовуйте ці 8 слів"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:148
 msgid "**Don't** ever use these 8 banned words:"
-msgstr ""
+msgstr "Ніколи **не** використовуйте ці 8 заборонених слів:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:150
 msgid "obvious"
-msgstr ""
+msgstr "очевидно (obvious)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:151
 msgid "simple"
-msgstr ""
+msgstr "просто (simple)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:152
 msgid "basic"
-msgstr "Базовий"
+msgstr "базовий (basic)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:153
 msgid "easy"
-msgstr "Проста"
+msgstr "простий (easy)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:154
 msgid "actual"
-msgstr "Поточна"
+msgstr "насправді (actual)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:155
 msgid "just"
-msgstr ""
+msgstr "лише (just)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:156
 msgid "clear"
-msgstr "безхмарно"
+msgstr "зрозуміло (clear)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:157
 msgid "however (some uses)"
-msgstr ""
+msgstr "втім (however, деякі з використань)"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:159
 msgid ""
@@ -55108,7 +55185,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:254
 msgid "From the Oxford dictionary:"
-msgstr ""
+msgstr "З оксфордського словника:"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:256
 msgid ""
@@ -55230,7 +55307,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:367
 msgid "Overview of the interface and common vocabulary"
-msgstr ""
+msgstr "Огляд інтерфейсу і загальний словник"
 
 #: ../../docs/community/contributing/docs_writing_guidelines.rst:369
 msgid ""
@@ -55380,7 +55457,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:32
 msgid "Get started with GitHub"
-msgstr ""
+msgstr "Перші кроки у роботі з GitHub"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:34
 msgid ""
@@ -55409,7 +55486,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:43
 msgid "Fork Godot"
-msgstr ""
+msgstr "Відгалуження Godot"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:45
 msgid "Fork the Godot Engine into a GitHub repository of your own."
@@ -55499,7 +55576,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:117
 msgid "Updating the documentation template"
-msgstr ""
+msgstr "Оновлення шаблона документації"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:119
 msgid ""
@@ -55566,7 +55643,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:157
 msgid "How to edit class XML"
-msgstr ""
+msgstr "Як редагувати XML класу"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:159
 msgid ""
@@ -55585,7 +55662,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:164
 msgid "How to write the class reference"
-msgstr ""
+msgstr "Як створити довідку з класу"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:166
 msgid ""
@@ -55602,27 +55679,27 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:170
 msgid "<description></description>"
-msgstr ""
+msgstr "<description></description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:171
 msgid "<brief_description></brief_description>"
-msgstr ""
+msgstr "<brief_description></brief_description>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:172
 msgid "<constant></constant>"
-msgstr ""
+msgstr "<constant></constant>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:173
 msgid "<method></method>"
-msgstr ""
+msgstr "<method></method>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:174
 msgid "<member></member>"
-msgstr ""
+msgstr "<member></member>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:175
 msgid "<signal></signal>"
-msgstr ""
+msgstr "<signal></signal>"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:177
 msgid ""
@@ -55666,7 +55743,7 @@ msgstr "Клас"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "Link a class"
-msgstr ""
+msgstr "Посилання на клас"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "Move the [Sprite]."
@@ -55753,7 +55830,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "[signal Class.signalname]"
-msgstr ""
+msgstr "[signal Class.signalname]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Link to another class's signal"
@@ -55769,19 +55846,19 @@ msgstr "[b] [/b]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Bold"
-msgstr "Жирний"
+msgstr "Напівжирний"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Some [b]bold[/b] text."
-msgstr ""
+msgstr "Якийсь текст [b]напівжирним шрифтом[/b]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Some **bold** text."
-msgstr ""
+msgstr "Якийсь текст **напівжирним шрифтом**."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "[i] [/i]"
-msgstr ""
+msgstr "[i] [/i]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Italic"
@@ -55789,15 +55866,15 @@ msgstr "Курсив"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Some [i]italic[/i] text."
-msgstr ""
+msgstr "Якийсь текст [i]курсивом[/i]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Some *italic* text."
-msgstr ""
+msgstr "Якийсь текст *курсивом*."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "[code] [/code]"
-msgstr ""
+msgstr "[code] [/code]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Monospace"
@@ -55805,15 +55882,15 @@ msgstr "Моноширинний"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some [code]monospace[/code] text."
-msgstr ""
+msgstr "Якийсь текст [code]моноширинним шрифтом[/code]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some ``monospace`` text."
-msgstr ""
+msgstr "Якийсь текст ``моноширинним шрифтом``."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "[codeblock] [/codeblock]"
-msgstr ""
+msgstr "[codeblock] [/codeblock]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Multiline preformatted block"
@@ -55821,7 +55898,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "*See below.*"
-msgstr ""
+msgstr "*Див. нижче.*"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
 msgid ""
@@ -55835,7 +55912,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:272
 msgid "I don't know what this method does!"
-msgstr ""
+msgstr "Не знаю для чого призначено цей метод!"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:274
 msgid ""
@@ -55884,61 +55961,73 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:13
 msgid "Q & A"
-msgstr ""
+msgstr "Питання і відповіді на них"
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
 msgstr ""
+"`Офіційні питання і відповіді щодо Godot <https://godotengine.org/qa/>`_"
 
 #: ../../docs/community/channels.rst:18
 msgid "IRC on Freenode"
-msgstr ""
+msgstr "IRC на Freenode"
 
 #: ../../docs/community/channels.rst:20
 msgid ""
 "`General: #godotengine <http://webchat.freenode.net/?channels=#godotengine>`_"
 msgstr ""
+"`Загальні питання: #godotengine <http://webchat.freenode.net/?"
+"channels=#godotengine>`_"
 
 #: ../../docs/community/channels.rst:21
 msgid ""
 "`Engine development: #godotengine-devel <http://webchat.freenode.net/?"
 "channels=#godotengine-devel>`_"
 msgstr ""
+"`Розробка рушія: #godotengine-devel <http://webchat.freenode.net/?"
+"channels=#godotengine-devel>`_"
 
 #: ../../docs/community/channels.rst:22
 msgid ""
 "`Documentation: #godotengine-doc <http://webchat.freenode.net/?"
 "channels=#godotengine-doc>`_"
 msgstr ""
+"`Документація: #godotengine-doc <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_"
 
 #: ../../docs/community/channels.rst:23
 msgid ""
 "`GDNative: #godotengine-gdnative <http://webchat.freenode.net/?"
 "channels=#godotengine-gdnative>`_"
 msgstr ""
+"`GDNative: #godotengine-gdnative <http://webchat.freenode.net/?"
+"channels=#godotengine-gdnative>`_"
 
 #: ../../docs/community/channels.rst:24
 msgid ""
 "`Webseite/PR: #godotengine-atelier <http://webchat.freenode.net/?"
 "channels=#godotengine-atelier>`_"
 msgstr ""
+"`Webseite/PR: #godotengine-atelier <http://webchat.freenode.net/?"
+"channels=#godotengine-atelier>`_"
 
 #: ../../docs/community/channels.rst:25
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
-msgstr ""
+msgstr "`Журнал IRC <https://godot.eska.me/irc-logs/>`_"
 
 #: ../../docs/community/channels.rst:28
 msgid "Other chats"
-msgstr ""
+msgstr "Інші канали спілкування"
 
 #: ../../docs/community/channels.rst:30
 msgid ""
 "`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 msgstr ""
+"`Matrix (сумісна з IRC) <https://matrix.to/#/#godotengine:matrix.org>`_"
 
 #: ../../docs/community/channels.rst:31
 msgid "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
-msgstr ""
+msgstr "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
 
 #: ../../docs/community/channels.rst:34
 msgid "Social networks"
@@ -55946,27 +56035,27 @@ msgstr "Соціальні мережі"
 
 #: ../../docs/community/channels.rst:36
 msgid "`GitHub <https://github.com/godotengine/>`_"
-msgstr ""
+msgstr "`GitHub <https://github.com/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:37
 msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
-msgstr ""
+msgstr "`Група на Facebook <https://www.facebook.com/groups/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:38
 msgid "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
-msgstr ""
+msgstr "`Twitter (також #godotengine) <https://twitter.com/godotengine>`_"
 
 #: ../../docs/community/channels.rst:39
 msgid "`Reddit <https://www.reddit.com/r/godot>`_"
-msgstr ""
+msgstr "`Reddit <https://www.reddit.com/r/godot>`_"
 
 #: ../../docs/community/channels.rst:40
 msgid "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
-msgstr ""
+msgstr "`Youtube <https://www.youtube.com/c/GodotEngineOfficial>`_"
 
 #: ../../docs/community/channels.rst:41
 msgid "`Steam <https://steamcommunity.com/app/404790>`_"
-msgstr ""
+msgstr "`Steam <https://steamcommunity.com/app/404790>`_"
 
 #: ../../docs/community/channels.rst:44
 msgid "Forum"
@@ -55974,7 +56063,7 @@ msgstr "Форум"
 
 #: ../../docs/community/channels.rst:46
 msgid "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
-msgstr ""
+msgstr "`Форум (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
 
 #: ../../docs/community/tutorials.rst:6
 msgid ""
@@ -55991,12 +56080,16 @@ msgid ""
 "`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
 "playlists>`_"
 msgstr ""
+"`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
+"playlists>`_"
 
 #: ../../docs/community/tutorials.rst:12
 msgid ""
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
 "playlists>`_"
 msgstr ""
+"`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
+"playlists>`_"
 
 #: ../../docs/community/tutorials.rst:13
 msgid ""
@@ -56009,10 +56102,12 @@ msgid ""
 "`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
 "m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
 msgstr ""
+"`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
+"m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
 
 #: ../../docs/community/tutorials.rst:15
 msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
-msgstr ""
+msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/resources.rst:6
 msgid ""

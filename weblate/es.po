@@ -3,12 +3,15 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alan Arrecis <alan.arrecis@gmail.com>, 2018.
+# Alejo <patto.revuelto@gmail.com>, 2018.
+# Andrus Diaz German <andrusdiazaleman@gmail.com>, 2018.
 # AnyMan <romopua@gmail.com>, 2018.
 # Avocado <avocadosan42@gmail.com>, 2018.
 # Cameron Toms <cameron.toms@gmail.com>, 2018.
 # Carlos Roberto Rojas C <carlosroberto.rojas@gmail.com>, 2018.
 # César León <ceesarleon2002@gmail.com>, 2018.
 # David Arranz <davarrcal@hotmail.com>, 2018.
+# Elena G <elena.guzbla@gmail.com>, 2018.
 # Elias Mascheroni <eliasmg-py@outlook.com>, 2018.
 # eon-s <emanuel.segretin@gmail.com>, 2018.
 # Franco F <ezefran256@gmail.com>, 2018.
@@ -21,9 +24,11 @@
 # Juan Carlos <juanvelandia@protonmail.com>, 2018.
 # Juan Jesús Ligero <jjhaggar@gmail.com>, 2018.
 # Julio Alvar Tamaño <alvarjt@gmail.com>, 2018.
+# Kevin Soto Vallejo <siguemek@gmail.com>, 2018.
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
 # Oscar Vila <codemoscar@gmail.com>, 2018.
+# pablo guevara <pabloguevara@gmail.com>, 2018.
 # R. Joshua Seville <rjoshua@protonmail.com>, 2018.
 # Renato Pereson <peresonrenato@gmail.com>, 2018.
 # Ricardo Pérez <ricpelo@gmail.com>, 2018.
@@ -31,6 +36,7 @@
 # Rodolfo Lam <r_lam@hotmail.com>, 2018.
 # Sebastián Diéguez (SebaSOFT) <sebasoft@gmail.com>, 2018.
 # SI Silicon <sisilicon28@gmail.com>, 2018.
+# Vi <invalid.float@gmail.com>, 2018.
 # yaelatletl <yael.atletl@gmail.com>, 2018.
 # Yovani Damián <blackblex@gmail.com>, 2018.
 #
@@ -39,8 +45,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-06-28 18:31+0200\n"
-"PO-Revision-Date: 2018-06-28 16:17+0000\n"
-"Last-Translator: R. Joshua Seville <rjoshua@protonmail.com>\n"
+"PO-Revision-Date: 2018-07-17 15:42+0000\n"
+"Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -60,8 +66,8 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Esta es la documentación para la rama inestable (master). ¿Busca la "
-"documentación de la actual rama **estable**? `Echa un vistazo aquí <http://"
+"Esta es la documentación para la rama inestable (master). ¿Buscas la "
+"documentación de la rama actual **estable**? `Echa un vistazo aquí <http://"
 "docs.godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
@@ -72,8 +78,8 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
-"Bienvenido a la documentación oficial de Godot Engine, el motor de juegos 2D "
-"y 3D gratuito y de código abierto impulsado por la comunidad! Si lees por "
+"¡Bienvenido a la documentación oficial de Godot Engine, el motor de juegos "
+"2D/3D gratuito y de código abierto impulsado por la comunidad! Si lees por "
 "primera vez esta documentación, recomendamos que veas la :ref:`página de "
 "introducción <doc_about_intro>` para obtener una visión general de lo que "
 "ofrece esta documentación."
@@ -86,7 +92,7 @@ msgid ""
 msgstr ""
 "La tabla de contenidos que aparece a continuación y en la barra lateral te "
 "permitirá acceder fácilmente a la documentación de tu tema de interés. "
-"También puedes utilizar la función de búsqueda en la esquina superior "
+"También se puede usar la función de búsqueda en la esquina superior "
 "izquierda."
 
 #: ../../docs/index.rst:22
@@ -100,8 +106,8 @@ msgstr ""
 "Godot Engine es un proyecto de código abierto desarrollado por una comunidad "
 "de voluntarios. El equipo de documentación siempre puede utilizar tus "
 "comentarios y ayudar a mejorar los tutoriales y la referencia de la clase. "
-"Si no entiendes algo, o no encuentras lo que buscas en los documentos, "
-"¡ayúdanos a mejorar la documentación haciéndonos saber!"
+"Si no entiendes algo, o no encuentras lo que buscas en la documentación, "
+"¡ayúdanos a mejorarla haciéndonoslo saber!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -6110,7 +6116,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:203
 msgid "The layout menu in the viewport"
-msgstr "El menú de disposición de la ventana de visualización"
+msgstr "El menú de disposición en la ventana de visualización"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "Anchors are relative to the parent container"
@@ -6773,17 +6779,16 @@ msgid "The file browser lets you find and load textures"
 msgstr "El navegador de archivos te permite encontrar y cargar texturas"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:167
-#, fuzzy
 msgid ""
 "Repeat the operation for all ``TextureRect`` nodes. You should have the "
 "logo, the illustration, the three menu options and the version note, each as "
 "a separate node. Then, double click on each of the nodes in the Scene tab to "
 "rename them."
 msgstr ""
-"Repite la operación para todos los nodos ``TextureRect``. Deberías tener el "
+"Repite la operación para todos los nodos ``TextureRect``. Debe tener el "
 "logotipo, la ilustración, las tres opciones de menú y la nota de versión, "
 "cada una como un nodo separado. A continuación, haz doble clic en cada uno "
-"de los nodos del Inspector para cambiarles el nombre"
+"de los nodos de la pestaña Escenas para cambiarles el nombre."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
 msgid "The six nodes, with textures loaded"
@@ -7606,9 +7611,9 @@ msgstr ""
 "Con el nodo ``Icon`` seleccionado, en el inspector, desplázate a la parte "
 "superior para ver la ranura ``Texture``. Dirígete al panel del Sistema de "
 "Archivos a la izquierda y selecciona el ``bombs_icon.png``. Arrástralo y "
-"suéltalo en la ranura \"Texture\". En la pestaña Escena selecciona los nodos "
-"```Icon`` y ``Number``. Haz clic en el menú de Disposición en la barra de "
-"herramientas en la parte superior de la ventana y selecciona ```Full Rect``. "
+"suéltalo en la ranura ``Texture``. En la pestaña Escena selecciona los nodos "
+"``Icon`` y ``Number``. Haz clic en el menú de Disposición en la barra de "
+"herramientas en la parte superior de la ventana y selecciona ``Full Rect``. "
 "Ambos nodos se actualizarán para ajustarse al tamaño del ``Background``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:279
@@ -10216,9 +10221,8 @@ msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
-"La raíz del :ref:`Viewport <class_Viewport>` está siempre en la parte "
-"superior de la escena. Desde un nodo, se puede obtener de dos maneras "
-"diferentes:"
+"El :ref:`Viewport <class_Viewport>` raíz está siempre en la parte superior "
+"de la escena. Desde un nodo, se puede obtener de dos maneras diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
 msgid ""
@@ -10238,7 +10242,7 @@ msgid ""
 "and such), this one is the only one that is never created by the user. It's "
 "created automatically inside SceneTree."
 msgstr ""
-"Mientras que se pueden crear otras vistas en la escena (para obtener "
+"Mientras que se pueden crear otros viewports en la escena (para obtener "
 "resultados en pantalla dividida, etc.), ésta es la única que nunca es creada "
 "por el usuario. Se crea automáticamente dentro de SceneTree."
 
@@ -10251,8 +10255,8 @@ msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
 msgstr ""
-"Cuando un nodo es conectado, directa o indirectamente, al viewport "
-"principal, este se vuelve parte del *Árbol de escenas*."
+"Cuando un nodo es conectado, directa o indirectamente, al viewport raíz, se "
+"convierte en parte del *árbol de escenas*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
 msgid ""
@@ -10305,7 +10309,8 @@ msgid ""
 "grandchild of it."
 msgstr ""
 "El nodo raíz de esa escena (sólo una raíz, ¿recuerdas?) se añade como hijo "
-"del Viewport \"raíz\" (del SceneTree), o a cualquier hijo o nieto del mismo."
+"del Viewport \"raíz\" (desde SceneTree), o a cualquier hijo o nieto del "
+"mismo."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:130
 msgid ""
@@ -10463,10 +10468,10 @@ msgid ""
 "root viewport before any other scenes are loaded."
 msgstr ""
 "Para cargar automáticamente una escena o script, selecciona desde el menú "
-"Proyecto > Ajustes y luego selecciona la pestaña AutoLoad. Cada entrada de "
-"la lista requiere un nombre, el cual es usado como nombre del nodo, y el "
-"nodo es siempre agregado a la vista raiz antes que cualquier escena sea "
-"cargada."
+"Proyecto > Ajustes del Proyecto y luego selecciona la pestaña AutoLoad. Cada "
+"entrada de la lista requiere un nombre, el cual es usado como nombre del "
+"nodo, y el nodo es siempre agregado al viewport raíz antes que cualquier "
+"escena sea cargada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:47
 msgid ""
@@ -13387,15 +13392,19 @@ msgid ""
 "some_func``, if the constructor from the inherited class takes arguments, "
 "they are passed like this:"
 msgstr ""
+"A diferencia de la llamada de una función normal como en el ejemplo anterior "
+"con `` .some_func``, si el constructor de la clase heredada toma argumentos, "
+"se pasan así:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid "This is better explained through examples. Say we have this scenario:"
 msgstr ""
+"Esto se explica mejor a través de ejemplos. Digamos que tenemos este "
+"escenario:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Hay algunas cosas a tener en cuenta:"
+msgstr "Hay algunas cosas a tener en cuenta aquí:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
 msgid ""
@@ -13404,18 +13413,26 @@ msgid ""
 "*has* to define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``"
 msgstr ""
+"si la clase heredada (`` State.gd``) define un constructor `` _init`` que "
+"toma argumentos (`` e`` en este caso), entonces la clase heredada (`` Idle."
+"gd``) * tiene * para definir `` _init`` también y pasar parámetros "
+"apropiados a `` _init`` de `` State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
+"`` Idle.gd`` puede tener un número diferente de argumentos que la clase base "
+"`` State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
 msgid ""
 "in the example above ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
 msgstr ""
+"en el ejemplo anterior, `` e`` pasado al constructor `` State.gd`` es el "
+"mismo `` e`` pasado a `` Idle.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:987
 msgid ""
@@ -13424,18 +13441,22 @@ msgid ""
 "Which brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. Eg.:"
 msgstr ""
+"si el constructor `` Idle.gd`` `` _init`` toma 0 argumentos, aún necesita "
+"pasar algún valor a la clase base `` State.gd`` aunque no haga nada. Lo que "
+"nos lleva al hecho de que también se pueden pasar literales en el "
+"constructor base, no solo variables. Ejemplo.:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "::"
-msgstr ""
+msgstr "::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:992
 msgid "# Idle.gd"
-msgstr ""
+msgstr "# Idle.gd"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:995
 msgid "func _init().(5):"
-msgstr ""
+msgstr "func _init().(5):"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:998
 msgid "Inner classes"
@@ -20351,7 +20372,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
 msgid "Feature Tags"
-msgstr "Etiquetas de caractrísticas"
+msgstr "Etiquetas de características"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:9
 msgid ""
@@ -20897,7 +20918,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr "Exportación para la plataforma Windows Universal"
+msgstr "Exportación para Windows Universal Platform"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -22384,7 +22405,7 @@ msgstr "Canvas layers"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr "Vistas y Canvas items"
+msgstr "Viewport y Canvas items"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
 msgid ""
@@ -22690,7 +22711,7 @@ msgstr "Tipo"
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 msgid "Transform"
-msgstr "Transform"
+msgstr "Transformar"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:66
 msgid "CanvasItem"
@@ -23101,9 +23122,10 @@ msgid ""
 "`doc_viewports` tutorial). Simply adding a camera, setting it to ``Current`` "
 "and playing around with it's ``Zoom`` may be a good starting point."
 msgstr ""
-"El escalado del viewport (scaling) puede ayudar al reducir tamaño del mapa "
-"(ver tutorial :ref:`doc_viewports`). Simplemente agrega una cámara, "
-"configurándola como ``current`` y probando con el ``zoom``."
+"Viewport Scaling puede ayudar a menudo a reducir la extensión del mapa (ver "
+"el tutorial :ref:`doc_viewports`). Simplemente añadiendo una cámara, "
+"poniéndola en ``Current`` y jugando con su ``Zoom`` puede ser un buen punto "
+"de partida."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
 msgid ""
@@ -24185,7 +24207,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:287
 msgid "Click-and-Move"
-msgstr "Click y mover"
+msgstr "Clic y mover"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:289
 msgid ""
@@ -25462,6 +25484,11 @@ msgid ""
 "grid. Mobile GPUs are limited to a tiny battery, so they need to be a lot "
 "more power efficient."
 msgstr ""
+"En dispositivos móviles, la historia es diferente. Los GPU para computadoras "
+"y consolas son monstruos de fuerza bruta que pueden extraer tanta "
+"electricidad como necesitan de la red eléctrica. Las GPU móviles están "
+"limitadas a una batería pequeña, por lo que deben ser mucho más eficientes "
+"en términos de energía."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:96
 msgid ""
@@ -25474,6 +25501,15 @@ msgid ""
 "this and just throw more pixel processors to the hardware to increase "
 "performance (but this also increases power consumption)."
 msgstr ""
+"Para ser más eficientes, las GPU móviles intentan evitar el *sobregiro*. "
+"Esto significa que el mismo píxel en la pantalla se procesa (como en, con "
+"cálculo de iluminación, etc.) más de una vez. Imagine una ciudad con varios "
+"edificios, las GPU no saben qué es visible y qué está oculto hasta que lo "
+"dibujen. Se podría dibujar una casa y luego otra casa enfrente (¡la "
+"representación ocurrió dos veces para el mismo píxel!). A las GPU de PC "
+"normalmente no les importa mucho esto y solo lanzan más procesadores de "
+"píxeles al hardware para aumentar el rendimiento (pero esto también aumenta "
+"el consumo de energía)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:106
 msgid ""
@@ -25485,6 +25521,14 @@ msgid ""
 "toll on vertex performance. As a result, less vertices and triangles can be "
 "processed for drawing."
 msgstr ""
+"En dispositivos móviles, no es posible extraer más energía, por lo que se "
+"usa una técnica llamada \"Representación basada en mosaico\" (casi todos los "
+"dispositivos móviles usan una variante), que divide la pantalla en una "
+"cuadrícula. Cada celda mantiene la lista de triángulos dibujados y los "
+"ordena en profundidad para minimizar el * sobregiro *. Esta técnica mejora "
+"el rendimiento y reduce el consumo de energía, pero afecta el rendimiento de "
+"los vértices. Como resultado, se pueden procesar menos vértices y triángulos "
+"para dibujar."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:114
 msgid ""
@@ -25495,6 +25539,12 @@ msgid ""
 "all the other cells must wait for it to complete in order to display the "
 "frame)."
 msgstr ""
+"Generalmente, esto no es tan malo, pero hay un caso en la esquina del móvil "
+"que debe evitarse, que es tener objetos pequeños con mucha geometría dentro "
+"de una pequeña porción de la pantalla. Esto obliga a las GPUs móviles a "
+"ejercer mucha presión sobre una única celda de la pantalla, lo que reduce "
+"considerablemente el rendimiento (ya que todas las demás celdas deben "
+"esperar a que se complete para mostrar el cuadro)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:121
 msgid ""
@@ -25503,24 +25553,32 @@ msgid ""
 "example, a character, NPC, vehicle, etc. is far away (so it looks tiny), use "
 "a smaller level of detail (LOD) model instead."
 msgstr ""
+"Para resumir, no te preocupes tanto por el número de vértices en los "
+"móviles, sino que evita la concentración de vértices en pequeñas partes de "
+"la pantalla. Si, por ejemplo, un personaje, NPC, vehículo, etc. está lejos "
+"(por lo que parece pequeño), utiliza en su lugar un modelo de nivel de "
+"detalle (LOD) más pequeño."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:126
 msgid ""
 "An extra situation where vertex cost must be considered is objects that have "
 "extra processing per vertex, such as:"
 msgstr ""
+"Una situación adicional en la que se debe tener en cuenta el coste de los "
+"vértices son los objetos que tienen un procesamiento extra por vértice, como "
+"por ejemplo:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:129
 msgid "Skinning (skeletal animation)"
-msgstr ""
+msgstr "Skinning (animación esquelética)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:130
 msgid "Morphs (shape keys)"
-msgstr ""
+msgstr "Morphs (claves de forma)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:131
 msgid "Vertex Lit Objects (common on mobile)"
-msgstr ""
+msgstr "Objetos con vértices iluminados (común en móviles)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:134
 msgid "Texture compression"
@@ -25532,12 +25590,18 @@ msgid ""
 "compression). Video RAM compression is not as efficient in size as PNG or "
 "JPG when stored, but increase performance enormously when drawing."
 msgstr ""
+"Godot ofrece comprimir texturas de modelos 3D cuando se importan (compresión "
+"VRAM). La compresión de RAM de vídeo no es tan eficiente en tamaño como la "
+"de PNG o JPG cuando se almacena, pero aumenta enormemente el rendimiento "
+"cuando se dibuja."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:140
 msgid ""
 "This is because the main goal of texture compression is bandwidth reduction "
 "between memory and the GPU."
 msgstr ""
+"Esto se debe a que el objetivo principal de la compresión de texturas es la "
+"reducción del ancho de banda entre la memoria y la GPU."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:143
 msgid ""
@@ -25546,12 +25610,19 @@ msgid ""
 "on shapes inside the textures, so the artifacting resulting from the "
 "compression is more noticeable."
 msgstr ""
+"En 3D, la forma de los objetos depende más de la geometría que de la "
+"textura, por lo que la compresión generalmente no se nota. En 2D, la "
+"compresión depende más de las formas dentro de las texturas, por lo que el "
+"resultado de la compresión es más notable."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:148
 msgid ""
 "As a warning, most Android devices do not support texture compression of "
 "textures with transparency (only opaque), so keep this in mind."
 msgstr ""
+"A modo de advertencia, la mayoría de los dispositivos Android no admiten la "
+"compresión de texturas con transparencia (sólo opacas), así que tenlo en "
+"cuenta."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:152
 msgid "Transparent objects"
@@ -25566,6 +25637,13 @@ msgid ""
 "a minimum! If an object has a small section with transparency, try to make "
 "that section a separate material."
 msgstr ""
+"Como se mencionó antes, Godot clasifica los objetos por material y shader "
+"para mejorar el rendimiento. Esto, sin embargo, no se puede hacer en objetos "
+"transparentes. Los objetos transparentes se renderizan de atrás hacia "
+"adelante para hacer que se mezclen con lo que hay detrás del trabajo. Por lo "
+"tanto ¡intenta reducir al mínimo la transparencia de los objetos! Si un "
+"objeto tiene una sección pequeña con transparencia, intenta hacer de esa "
+"sección un material independiente."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:162
 msgid "Level of detail (LOD)"
@@ -25579,10 +25657,16 @@ msgid ""
 "a visibility range that can be defined. Having several GeometryInstance "
 "objects in different ranges works as LOD."
 msgstr ""
+"Como también se mencionó anteriormente, el uso de objetos con menos vértices "
+"puede mejorar el rendimiento en algunos casos. Godot tiene un sistema simple "
+"para cambiar el nivel de detalle, los objetos basados en `:ref:"
+"`GeometryInstance <class_GeometryInstance>` tienen un rango de visibilidad "
+"que puede ser definido. Tener varios objetos GeometryInstance en diferentes "
+"rangos funciona como LOD."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:172
 msgid "Use instancing (MultiMesh)"
-msgstr ""
+msgstr "Usar la instanciación (MultiMesh)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:174
 msgid ""
@@ -25591,10 +25675,14 @@ msgid ""
 "drawing of dozens of thousands of objects at very little performance cost, "
 "making it ideal for flocks, grass, particles, etc."
 msgstr ""
+"Si hay que dibujar varios objetos iguales en el mismo lugar o cercanos entre "
+"sí, intenta usar :ref:`MultiMesh <class_MultiMesh>` en su lugar. MultiMesh "
+"permite dibujar decenas de miles de objetos con un coste de rendimiento muy "
+"bajo, lo que lo hace ideal para multitudes, hierba, partículas, etc."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:181
 msgid "Bake lighting"
-msgstr ""
+msgstr "Bake de iluminación"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:183
 msgid ""
@@ -25603,6 +25691,10 @@ msgid ""
 "ref:`doc_baked_lightmaps`). Baking can also improve the scene quality by "
 "adding indirect light bounces."
 msgstr ""
+"Las luces pequeñas no suelen ser un problema de rendimiento. Las sombras un "
+"poco más. En general, si varias luces necesitan afectar una escena, lo ideal "
+"es hacer un bake (:ref:`doc_baked_lightmaps`). El baking también puede "
+"mejorar la calidad de la escena añadiendo rebotes de luz indirectos."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:188
 msgid ""
@@ -25614,7 +25706,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:4
 msgid "Spatial Material"
-msgstr ""
+msgstr "Material Spatial"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:9
 msgid ""
@@ -25622,6 +25714,10 @@ msgid ""
 "we put in most of the work offering a default material that covers far more "
 "use cases. This replaces the old \"FixedMaterial\" in Godot 2.x"
 msgstr ""
+"En Godot 3, en lugar de seguir la tendencia y centrarnos en los shader "
+"graphs, invertimos la mayor parte del trabajo para ofrecer un material por "
+"defecto que abarque muchos más casos de uso. Esto reemplaza el antiguo "
+"\"FixedMaterial\" en Godot 2.x"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:13
 msgid ""
@@ -25629,18 +25725,25 @@ msgid ""
 "for in a material. Additionally, it can be converted to shader code and be "
 "further modified if desired."
 msgstr ""
+"SpatialMaterial es un material 3D y su objetivo es que los artistas busquen "
+"la mayoría de las características en un material. Además, puede convertirse "
+"a código de shader y modificarse si se desea."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:17
 msgid ""
 "This tutorial will attempt to cover most parameters present in "
 "SpatialMaterial."
 msgstr ""
+"Este tutorial intentará cubrir la mayoría de los parámetros presentes en "
+"SpatialMaterial."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:22
 msgid ""
 "Spatial materials have many flags determining the general usage of a "
 "material."
 msgstr ""
+"Los materiales spatial tienen muchos indicadores que determinan la "
+"utilización general de un material."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:27
 msgid "Transparent"
@@ -25652,6 +25755,10 @@ msgid ""
 "The main reason behind this is that transparent materials are rendered using "
 "a different technique (sorted from back to front and rendered in order)."
 msgstr ""
+"En Godot, los materiales no son transparentes a menos que se ajusten "
+"específicamente de esta forma. La razón principal es que los materiales "
+"transparentes son renderizados usando una técnica diferente (ordenados de "
+"atrás hacia adelante y renderizados en orden)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:33
 msgid ""
@@ -25659,34 +25766,43 @@ msgid ""
 "materials unusable with many mid and post processing effects (such as SSAO, "
 "SSR, etc) that require perfectly opaque geometry."
 msgstr ""
+"Esta técnica es menos eficiente (ocurren muchos cambios de estado) y hace "
+"que los materiales sean inutilizables con muchos efectos intermedios y "
+"posteriores (como SSAO, SSR, etc.) que requieren una geometría perfectamente "
+"opaca."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:37
 msgid ""
 "For this reason, materials in Godot are assumed opaque unless specified "
 "otherwise. The main settings that enable transparency are:"
 msgstr ""
+"Por esta razón, los materiales en Godot se muestran opacos a menos que se "
+"especifique lo contrario. Los principales ajustes que permiten la "
+"transparencia son:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Transparent flag (this one)"
-msgstr ""
+msgstr "Opción Transparent (esta)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:41
 msgid "Blend mode set to other than Mix"
-msgstr ""
+msgstr "Modo de mezcla configurado en otro que no sea Mix"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:42
 msgid "Enabling distance or proximity fade"
-msgstr ""
+msgstr "Activar el desvanecimiento de la distancia o la proximidad"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:45
 msgid "Unshaded"
-msgstr ""
+msgstr "Unshaded (Sin sombra)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:47
 msgid ""
 "In most cases, it is common for materials to be affected by lighting "
 "(shaded)."
 msgstr ""
+"En la mayoría de los casos, es común que los materiales se vean afectados "
+"por la iluminación (shaded)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:49
 msgid ""
@@ -25694,10 +25810,13 @@ msgid ""
 "ignore the rest. Toggling this flag on will remove all shading and show "
 "pure, unlit, color."
 msgstr ""
+"A veces, sin embargo, uno puede querer mostrar sólo el albedo (color) e "
+"ignorar el resto. Al activar esta opción, se eliminarán todas las sombras y "
+"se mostrará el color puro, sin iluminación."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:55
 msgid "Vertex Lighting"
-msgstr ""
+msgstr "Vertex Lighting (Iluminación de vértices)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:57
 msgid ""
@@ -25705,6 +25824,9 @@ msgid ""
 "All lighting calculations are made by running the lighting shader on every "
 "pixel."
 msgstr ""
+"Godot tiene un coste por píxel más o menos constante (gracias al paso previo "
+"de profundidad). Todos los cálculos de iluminación se realizan ejecutando el "
+"shader de iluminación en cada píxel."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:60
 msgid ""
@@ -25713,22 +25835,31 @@ msgid ""
 "transparency (common in particle systems). Switching to per vertex lighting "
 "may help these cases."
 msgstr ""
+"Dado que estos cálculos son costosos, el rendimiento puede reducirse "
+"considerablemente en algunos casos de esquinas, como el dibujo de varias "
+"capas de transparencia (común en los sistemas de partículas). Cambiar a "
+"iluminación por vértice puede ayudar en estos casos."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:63
 msgid ""
 "Additionally, on low-end or mobile devices, switching to vertex lighting can "
 "considerably increase rendering performance."
 msgstr ""
+"Además, en dispositivos móviles o de gama baja, el cambio a vertex lighting "
+"puede aumentar considerablemente el rendimiento del renderizado."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:68
 msgid ""
 "Keep in mind that when vertex lighting is enabled, only directional lighting "
 "can produce shadows (for performance reasons)."
 msgstr ""
+"Hay que tener en cuenta que cuando la vertex lighting está activado, sólo "
+"directional lighting (iluminación direccional) puede producir sombras (por "
+"razones de rendimiento)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:71
 msgid "No Depth Test"
-msgstr ""
+msgstr "Sin prueba de profundidad"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:73
 msgid ""
@@ -25736,6 +25867,9 @@ msgid ""
 "performed. Disabling it has the result of objects appearing over (or under) "
 "everything else."
 msgstr ""
+"Para que los objetos cercanos aparezcan sobre objetos lejanos, se realiza "
+"una prueba de profundidad. Deshabilitarlo tiene como resultado que los "
+"objetos aparezcan por encima (o por debajo) de todo lo demás."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:76
 msgid ""
@@ -25743,10 +25877,13 @@ msgid ""
 "and works very well with the \"render priority\" property of Material (see "
 "bottom)."
 msgstr ""
+"Desactivar esto tiene más sentido para dibujar indicadores en el espacio del "
+"mundo, y funciona muy bien con la propiedad \"render priority\" de Material "
+"(ver abajo)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:82
 msgid "Use Point Size"
-msgstr ""
+msgstr "Usar Point Size (Tamaño de punto)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:84
 msgid ""
@@ -25754,10 +25891,14 @@ msgid ""
 "generally is just made of triangles when imported from 3D DCCs). If so, then "
 "points can be sized (see below)."
 msgstr ""
+"Esta opción sólo está activa cuando la geometría representada está hecha por "
+"puntos (generalmente sólo está hecha de triángulos cuando se importa desde "
+"DCCs 3D). Si es así, entonces los puntos pueden ser dimensionados (ver "
+"abajo)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:89
 msgid "World Triplanar"
-msgstr ""
+msgstr "World Triplanar (Mundo Triplanar)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:91
 msgid ""
@@ -25765,10 +25906,13 @@ msgid ""
 "triplanar is computed in object local space. This option makes triplanar "
 "work in world space."
 msgstr ""
+"Cuando se utiliza el mapeo triplanar (ver abajo, en los ajustes UV1 y UV2), "
+"el triplanar se calcula en el espacio local del objeto. Esta opción hace que "
+"los triplanares trabajen en el espacio del mundo."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:95
 msgid "Fixed Size"
-msgstr ""
+msgstr "Fixed Size (Tamaño fijo)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:97
 msgid ""
@@ -25776,44 +25920,56 @@ msgid ""
 "again, useful mostly for indicators (no depth test and high render priority) "
 "and some types of billboards."
 msgstr ""
+"Hace que el objeto renderizado tenga el mismo tamaño sin importar la "
+"distancia. Esto es, una vez más, especialmente útil para indicadores (sin "
+"prueba de profundidad y alta prioridad de renderizado) y algunos tipos de "
+"anuncios publicitarios."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:101
 msgid "Do Not Receive Shadows"
-msgstr "No recibir sombras"
+msgstr "Do Not Receive Shadows (No recibir sombras)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:103
 msgid ""
 "Makes the object not receive any kind of shadow that would otherwise be cast "
 "onto it."
 msgstr ""
+"Hace que el objeto no reciba ningún tipo de sombra que de otro modo sería "
+"proyectada sobre él."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:106
 msgid "Vertex Color"
-msgstr ""
+msgstr "Vertex Color (Color de vértice)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:108
 msgid ""
 "This menu allows choosing what is done by default to vertex colors that come "
 "from your 3D modelling application. By default, they are ignored."
 msgstr ""
+"Este menú permite elegir lo que se hace por defecto en los colores de los "
+"vértices que provienen de su aplicación de modelado 3D. Por defecto, se "
+"ignoran."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:114
 msgid "Use as Albedo"
-msgstr ""
+msgstr "Use as Albedo (Usar como Albedo)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:116
 msgid "Vertex color is used as albedo color."
-msgstr ""
+msgstr "El color del vértice se utiliza como color del albedo."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:119
 msgid "Is SRGB"
-msgstr ""
+msgstr "Is SRGB (Es SRGB)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:121
 msgid ""
 "Most 3D DCCs will likely export vertex colors as SRGB, so toggling this "
 "option on will help them look correct."
 msgstr ""
+"La mayoría de los DCCs 3D probablemente exportarán los colores de los "
+"vértices como SRGB, por lo que activar esta opción ayudará a que se vean "
+"correctamente."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:126
 #: ../../docs/tutorials/platform/services_for_ios.rst:86
@@ -25829,26 +25985,33 @@ msgid ""
 "SpatialMaterial also has several configurable parameters to tweak many "
 "aspects of the rendering:"
 msgstr ""
+"SpatialMaterial también tiene varios parámetros que pueden configurarse para "
+"ajustar muchos aspectos del renderizado:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:133
 msgid "Diffuse Mode"
-msgstr ""
+msgstr "Diffuse Mode (Modo difuso)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:135
 msgid ""
 "Specifies the algorithm used by diffuse scattering of light when hitting the "
 "object. The default one is Burley. Other modes are also available:"
 msgstr ""
+"Especifica el algoritmo utilizado por la dispersión difusa de la luz al "
+"golpear el objeto. El predeterminado es Burley. También hay otros modos "
+"disponibles:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:138
 msgid ""
 "**Burley:** Default mode, the original Disney Principled PBS diffuse "
 "algorithm."
 msgstr ""
+"**Burley:** Modo predeterminado, el algoritmo difuso original de Disney "
+"Principled PBS."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:139
 msgid "**Lambert:** Is not affected by roughness."
-msgstr ""
+msgstr "**Lambert:** No se ve afectado por la rugosidad."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:140
 msgid ""
@@ -25856,123 +26019,156 @@ msgid ""
 "roughness increases. Works great for hair and simulating cheap subsurface "
 "scattering. This implementation is energy conserving."
 msgstr ""
+"**Lambert Wrap:** Extiende Lambert para cubrir más de 90 grados cuando la "
+"rugosidad es mayor. Funciona muy bien para el cabello y simula la dispersión "
+"a bajo costo de la superficie. Esta implementación es para conservar energía."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:141
 msgid ""
 "**Oren Nayar:** This implementation aims to take microsurfacing into account "
 "(via roughness). Works well for clay-like materials and some types of cloth."
 msgstr ""
+"**Oren Nayar:** El objetivo de esta implementación es tener en cuenta el "
+"microsurfacing (a través de la rugosidad). Funciona bien con materiales "
+"similares a la arcilla y algunos tipos de tela."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:142
 msgid ""
 "**Toon:** Provides a hard cut for lighting, with smoothing affected by "
 "roughness."
 msgstr ""
+"**Toon:** Proporciona un corte duro para la iluminación, con suavizado "
+"afectado por la rugosidad."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:147
 msgid "Specular Mode"
-msgstr ""
+msgstr "Specular Mode (Modo Specular)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:149
 msgid ""
 "Specifies how the specular blob will be rendered. The specular blob "
 "represents the shape of a light source reflected in the object."
 msgstr ""
+"Especifica cómo se renderizará el specular blob. El specular blob representa "
+"la forma de una fuente de luz reflejada en el objeto."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:151
 msgid "**ShlickGGX:** The most common blob used by PBR 3D engines nowadays."
 msgstr ""
+"**ShlickGGX:**El blob más común usado por los motores PBR 3D hoy en día."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:152
 msgid ""
 "**Blinn:** Common in previous-generation engines. Not worth using nowadays "
 "but left here for the sake of compatibility."
 msgstr ""
+"**Blinn:** Común en motores de generaciones anteriores. No vale la pena "
+"usarlo hoy en día, pero lo hemos dejado por motivos de compatibilidad."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:153
 msgid "**Phong:** Same as above."
-msgstr ""
+msgstr "**Phong:** Igual que arriba."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:154
 msgid ""
 "**Toon:** Creates a toon blob, which changes size depending on roughness."
 msgstr ""
+"**Toon:** Crea un blob toon, que cambia de tamaño dependiendo de la "
+"rugosidad."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:155
 msgid "**Disabled:** Sometimes, that blob gets in the way. Be gone!"
 msgstr ""
+"**Disabled:** A veces, esa mancha se interpone en el camino. ¡Vete de aquí!"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:161
 msgid "Blend Mode"
-msgstr ""
+msgstr "Blend Mode"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:163
 msgid ""
 "Controls the blend mode for the material. Keep in mind that any mode other "
 "than Mix forces the object to go through transparent pipeline."
 msgstr ""
+"Controla el modo de mezcla para el material. Hay que tener en cuenta que "
+"cualquier otro modo que no sea Mix obliga al objeto a pasar por un pipeline "
+"transparente."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:165
 msgid "Mix: Default blend mode, alpha controls how much the object is visible."
 msgstr ""
+"Mix: Modo de mezcla por defecto, alpha controla el grado de transparencia "
+"del objeto."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:166
 msgid ""
 "Add: Object is blended additively, nice for flares or some fire-like effects."
 msgstr ""
+"Add: El objeto es mezclado adicionalmente, bueno para efectos de llamas o "
+"similares al fuego."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:167
 msgid "Sub: Object is subtracted."
-msgstr ""
+msgstr "Sub: El objeto es substraído."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:168
 msgid "Mul: Object is multiplied."
-msgstr ""
+msgstr "Mul: El objeto es multiplicado."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:173
 msgid "Cull Mode"
-msgstr ""
+msgstr "Cull Mode"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:175
 msgid ""
 "Determines which side of the object is not drawn when back-faces are "
 "rendered:"
 msgstr ""
+"Determina qué lado del objeto no se dibuja cuando se muestran los reversos:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:177
 msgid "Back: Back of the object is culled when not visible (default)"
 msgstr ""
+"Back: La parte posterior del objeto es desechada cuando no es visible (por "
+"defecto)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:178
 msgid "Front: Front of the object is culled when not visible"
-msgstr ""
+msgstr "Front: La parte frontal del objeto es desechada cuando no es visible"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:179
 msgid ""
 "Disabled: Used for objects that are double sided (no culling is performed)"
 msgstr ""
+"Disabled: Utilizado para objetos de doble cara (no se realiza ningún proceso "
+"de desecho)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:182
 msgid "Depth Draw Mode"
-msgstr ""
+msgstr "Depth Draw Mode"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:184
 msgid "Specifies when depth rendering must take place."
-msgstr ""
+msgstr "Especifica cuándo se debe realizar el renderizado de profundidad."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:186
 msgid "Opaque Only (default): Depth is only drawn for opaque objects"
 msgstr ""
+"Opaque Only (predeterminado): Sólo se dibuja la profundidad en objetos opacos"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:187
 msgid "Always: Depth draw is drawn for both opaque and transparent objects"
 msgstr ""
+"Always: El dibujo de profundidad se realiza tanto para objetos opacos como "
+"transparentes"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:188
 msgid ""
 "Never: No depth draw takes place (note: do not confuse with depth test "
 "option above)"
 msgstr ""
+"Never: No se realiza ningún dibujo de profundidad (nota: no confundir con la "
+"opción de test de profundidad anterior)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:189
 msgid ""
@@ -25980,92 +26176,115 @@ msgid ""
 "the opaque parts, then transparency is drawn above. Use this option with "
 "transparent grass or tree foliage."
 msgstr ""
+"Depth Pre-Pass: En el caso de los objetos transparentes, primero se hace un "
+"pase opaco con las partes opacas y luego se dibuja la transparencia por "
+"encima. Esta opción se puede utilizar con césped transparente o follaje de "
+"árboles."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:195
 msgid "Line Width"
-msgstr ""
+msgstr "Line Width (Ancho de línea)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:197
 msgid ""
 "When drawing lines, specify the width of the lines being drawn. This option "
 "is not available in most modern hardware."
 msgstr ""
+"Al dibujar líneas, debe especificarse un ancho de las líneas que se están "
+"dibujando. Esta opción no está disponible en la mayoría del hardware moderno."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:200
 msgid "Point Size"
-msgstr ""
+msgstr "Point Size (Tamaño de puntos)"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:202
 msgid "When drawing points, specify the point size in pixels."
 msgstr ""
+"Cuando se dibujen puntos, hay que especificar el tamaño del punto en píxeles."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:205
 msgid "Billboard Mode"
-msgstr ""
+msgstr "Billboard Mode"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:207
 msgid ""
 "Enables billboard mode for drawing materials. This controls how the object "
 "faces the camera:"
 msgstr ""
+"Activa billboard mode para materiales de dibujo. Esto controla la forma en "
+"que el objeto mira hacia la cámara:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:209
 msgid "Disabled: Billboard mode is disabled"
-msgstr ""
+msgstr "Disabled: Billboard mode está desactivado"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:210
 msgid ""
 "Enabled: Billboard mode is enabled, object -Z axis will always face the "
 "camera."
 msgstr ""
+"Enabled: Billboard mode está activado, el eje -Z del objeto siempre estará "
+"de frente a la cámara."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:211
 msgid "Y-Billboard: Object X axis will always be aligned with the camera"
-msgstr ""
+msgstr "Y-Billboard: el eje del Objeto X siempre estará alineado con la cámara"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:212
 msgid ""
 "Particles: When using particle systems, this type of billboard is best, "
 "because it allows specifying animation options."
 msgstr ""
+"Particles: Cuando se utilizan sistemas de partículas, este tipo de billboard "
+"es mejor, porque permite especificar opciones de animación."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:216
 msgid "Above options are only enabled for Particle Billboard."
 msgstr ""
+"Las opciones anteriores sólo están habilitadas para Particle Billboard."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:219
 msgid "Grow"
-msgstr ""
+msgstr "Grow"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:221
 msgid "Grows the object vertices in the direction pointed by their normals:"
 msgstr ""
+"Hace que los vértices del objeto crezcan en la dirección señalada por sus "
+"normales:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:225
 msgid ""
 "This is commonly used to create cheap outlines. Add a second material pass, "
 "make it black and unshaded, reverse culling (Cull Front), and add some grow:"
 msgstr ""
+"Esto se utiliza comúnmente para crear contornos de bajo costo. Añade una "
+"segunda pasada de material, hazlo negro y sin sombrear, reverse culling "
+"(Cull Front), y añade algo de tamaño:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:232
 msgid "Use Alpha Scissor"
-msgstr ""
+msgstr "Usar Alpha Scissor"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:234
 msgid ""
 "When transparency other than 0 or 1 is not needed, it's possible to set a "
 "threshold to avoid the object from rendering these pixels."
 msgstr ""
+"Cuando no se necesita una transparencia distinta de 0 o 1, es posible "
+"establecer un umbral para evitar que el objeto represente estos píxeles."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:238
 msgid ""
 "This renders the object via the opaque pipeline which is faster and allows "
 "it to do mid and post process effects such as SSAO, SSR, etc."
 msgstr ""
+"Esto renderiza el objeto a través de un pipeline opaco que es más rápido y "
+"permite realizar efectos de medio y post proceso como SSAO, SSR, etc."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:241
 msgid "Material colors, maps and channels"
-msgstr ""
+msgstr "Color de materiales, mapas y canales"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:243
 msgid ""
@@ -26073,6 +26292,9 @@ msgid ""
 "textures and channels. Godot supports a extensive list of them. They will be "
 "described in detail below:"
 msgstr ""
+"Además de los parámetros, lo que define a los materiales mismos son los "
+"colores, texturas y canales. Godot soporta una extensa lista de estos. A "
+"continuación se describen con más detalle:"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:247
 msgid "Albedo"
@@ -26086,10 +26308,18 @@ msgid ""
 "name mainly happened because, in PBR rendering, this color affects many more "
 "calculations than just the diffuse lighting path."
 msgstr ""
+"Albedo es el color base del material. Todo lo demás funciona en base a eso. "
+"Cuando se establece en *unshaded* este es el único color que es visible tal "
+"cual. En versiones anteriores de Godot, este canal se llamaba *diffuse*. El "
+"cambio de nombre se produjo principalmente porque, en la representación PBR, "
+"este color afecta a muchos más cálculos que sólo la ruta de iluminación "
+"difusa."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:255
 msgid "Albedo color and texture can be used together as they are multiplied."
 msgstr ""
+"El color y la textura del albedo se pueden utilizar juntos a medida que se "
+"multiplican."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:257
 msgid ""
@@ -26097,10 +26327,14 @@ msgid ""
 "transparency. If you use a color or texture with *alpha channel*, make sure "
 "to either enable transparency or *alpha scissoring* for it to work."
 msgstr ""
+"El *Alpha channel* en el color y la textura del albedo también se utiliza "
+"para la transparencia del objeto. Si se utiliza un color o una textura con "
+"*alpha channel*, asegúrate de habilitar la transparencia o *alpha "
+"scissoring* para que funcione."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:262
 msgid "Metallic"
-msgstr ""
+msgstr "Metallic"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:264
 msgid ""
@@ -26109,6 +26343,11 @@ msgid ""
 "reflective it is, the least diffuse/ambient light and the more reflected "
 "light. This model is called \"energy conserving\"."
 msgstr ""
+"Godot utiliza un modelo metálico por su simplicidad respecto a los modelos "
+"de la competencia. Este parámetro define más o menos qué tan reflectantes "
+"son los materiales. Cuanto más reflectante es, menos difusa/ambiental es la "
+"luz y mayor es el reflejo de ésta. Este modelo se llama \"energy conserving"
+"\" (ahorro de energía)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:269
 msgid ""
@@ -26116,16 +26355,21 @@ msgid ""
 "reflectivity (unlike *metallic*, this one is not energy conserving, so "
 "simply leave it as 0.5 and don't touch it unless you need to)."
 msgstr ""
+"El parámetro \"specular\" es sólo una cantidad general para la reflectividad "
+"(a diferencia de *metallic*, éste no ahorra energía, así que simplemente "
+"déjalo en 0.5 y no lo toques a menos que lo necesites)."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:273
 msgid ""
 "The minimum internal reflectivity is 0.04, so (just like in real life) it's "
 "impossible to make a material completely unreflective."
 msgstr ""
+"El mínimo de reflectividad interna es de 0.04, por lo que (al igual que en "
+"la vida real) es imposible hacer un material completamente antirreflectante."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:279
 msgid "Roughness"
-msgstr ""
+msgstr "Roughness"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:281
 msgid ""
@@ -26134,10 +26378,15 @@ msgid ""
 "(simulating the natural microsurfacing). Most common types of materials can "
 "be achieved from the right combination of *Metallic* and *Roughness*."
 msgstr ""
+"Roughness afecta principalmente a la forma en que se produce la reflexión. "
+"Un valor de 0 lo convierte en un espejo perfecto, mientras que un valor de 1 "
+"difumina completamente el reflejo (simulando la microsuperficie natural). "
+"Los tipos más comunes de materiales se pueden lograr con la combinación "
+"correcta de *Metallic* y *Roughness*."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:288
 msgid "Emission"
-msgstr ""
+msgstr "Emission"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:290
 msgid ""
@@ -26146,10 +26395,14 @@ msgid ""
 "This value is just added to the resulting final image and is not affected by "
 "other lighting in the scene."
 msgstr ""
+"Emisión especifica cuánta luz emite el material (hay que tener en cuenta que "
+"esto no ilumina la geometría circundante a menos que se utilice GI Probe). "
+"Este valor se añade a la imagen final resultante y no se ve afectado por "
+"otras luces de la escena."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:299
 msgid "Normalmap"
-msgstr ""
+msgstr "Normalmap"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:301
 msgid ""
@@ -26158,10 +26411,14 @@ msgid ""
 "only R and G are used for normalmaps, in order to attain better "
 "compatibility."
 msgstr ""
+"Normal mapping permite establecer una textura que representa detalles de "
+"forma más precisos. Esto no modifica la geometría, sólo el ángulo de "
+"incidencia de la luz. En Godot, sólo R y G se utilizan para mapas normales, "
+"con el fin de lograr una mejor compatibilidad."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:308
 msgid "Rim"
-msgstr ""
+msgstr "Rim"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:310
 msgid ""
@@ -26171,6 +26428,11 @@ msgid ""
 "light into account (no light means no rim). This makes the effect "
 "considerably more believable."
 msgstr ""
+"Algunos tejidos tienen micropelículas que hacen que la luz se disperse a su "
+"alrededor. Godot emula esto con el parámetro *rim*. A diferencia de otras "
+"implementaciones de iluminación de bordes que sólo utilizan el canal de "
+"emisión, éste en realidad tiene en cuenta la luz (si no hay luz, no hay "
+"borde). Esto hace que el efecto sea mucho más creíble."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:317
 msgid ""
@@ -26179,10 +26441,15 @@ msgid ""
 "the rim. If *tint* is 1, then the albedo of the material is used. Using "
 "intermediate values generally works best."
 msgstr ""
+"El tamaño del borde depende de las irregularidades, y hay un parámetro "
+"especial para especificar cómo debe ser coloreado. Si *tint* es 0, el color "
+"de la luz se utiliza para el borde. Si *tint* es 1, entonces se utiliza el "
+"albedo del material. El uso de valores intermedios generalmente funciona "
+"mejor."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:322
 msgid "Clearcoat"
-msgstr ""
+msgstr "Clearcoat"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:324
 msgid ""
@@ -26190,10 +26457,14 @@ msgid ""
 "transparent coat to the material. This is common in car paint and toys. In "
 "practice, it's a smaller specular blob added on top of the existing material."
 msgstr ""
+"El parámetro *clearcoat* se utiliza principalmente para añadir una pasada "
+"*secundaria* de recubrimiento transparente al material. Esto es común en la "
+"pintura de automóviles y juguetes. En la práctica, es un specular blob más "
+"pequeño añadido sobre el material existente."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:329
 msgid "Anisotropy"
-msgstr ""
+msgstr "Anisotropy"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:331
 msgid ""
@@ -26202,10 +26473,14 @@ msgid ""
 "aluminium more realistic. It works especially well when combined with "
 "flowmaps."
 msgstr ""
+"Cambia la forma del specular blow y lo alinea con el espacio tangencial. "
+"Anisotropy se utiliza comúnmente con el cabello, o para hacer que materiales "
+"como el aluminio pulido sean más realistas. Funciona especialmente bien "
+"cuando se combina con diagramas de flujo."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:339
 msgid "Ambient Occlusion"
-msgstr ""
+msgstr "Ambient Occlusion"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:341
 msgid ""
@@ -26216,10 +26491,16 @@ msgid ""
 "quality of a nicely baked AO map. It is recommended to pre-bake AO whenever "
 "possible."
 msgstr ""
+"En el nuevo flujo de trabajo PBR de Godot, es posible especificar un mapa de "
+"oclusión ambiental bakeado. Este mapa afecta la cantidad de luz ambiental "
+"que llega a cada superficie del objeto (no afecta la luz directa). Si bien "
+"es posible utilizar la oclusión ambiental en el espacio de la pantalla "
+"(SSAO) para generar AO, nada superará la calidad de un mapa de AO bien "
+"bakeado. Se recomienda prebakear AO siempre que sea posible."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:349
 msgid "Depth"
-msgstr "Profundidad"
+msgstr "Depth"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:351
 msgid ""
@@ -26229,10 +26510,16 @@ msgid ""
 "objets, but it produces a realistic depth effect for textues. For best "
 "results, *Depth* should be used together with normal mapping."
 msgstr ""
+"Establecer un mapa de profundidad a un material genera una trayectoria de "
+"rayo para emular el desplazamiento adecuado de las cavidades a lo largo de "
+"la dirección de la vista. Esto no es una verdadera geometría añadida, sino "
+"una ilusión de profundidad. Puede que no funcione para objetos complejos, "
+"pero produce un efecto de profundidad realista para los textos. Para obtener "
+"mejores resultados, se debe utilizar *Depth* junto con normal mapping."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:359
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "Subsurface Scattering"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:361
 msgid ""
@@ -26240,10 +26527,13 @@ msgid ""
 "scattered, and then comes out. It's useful to make realistic skin, marble, "
 "colored liquids, etc."
 msgstr ""
+"Este efecto emula la luz que va debajo de la superficie de un objeto, se "
+"dispersa y luego sale. Es útil para hacer pieles realistas, mármol, líquidos "
+"de colores, etc."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:368
 msgid "Transmission"
-msgstr ""
+msgstr "Transmission"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:370
 msgid ""
@@ -26251,10 +26541,13 @@ msgid ""
 "to the dark side (opposite side to light). This works well for thin objects "
 "such as tree/plant leaves, grass, human ears, etc."
 msgstr ""
+"Controla cuánta luz del lado iluminado (visible a la luz) se transfiere al "
+"lado oscuro (lado opuesto a la luz). Esto funciona bien para objetos "
+"delgados como hojas de árboles/plantas, césped, orejas humanas, etc."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:377
 msgid "Refraction"
-msgstr ""
+msgstr "Refraction"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:379
 msgid ""
@@ -26262,10 +26555,14 @@ msgid ""
 "to fetch information from behind the object being rendered instead. This "
 "allows distorting the transparency in a way similar to refraction."
 msgstr ""
+"Cuando la refracción está habilitada, reemplaza la mezcla alfa, y Godot "
+"intenta obtener información desde detrás del objeto que se está renderizando "
+"en su lugar. Esto permite distorsionar la transparencia de manera similar a "
+"la refracción."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:386
 msgid "Detail"
-msgstr ""
+msgstr "Detail"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:388
 msgid ""
@@ -26273,10 +26570,14 @@ msgid ""
 "texture, which can be blended in many ways. Combining with secondary UV or "
 "triplanar modes, many interesting textures can be achieved."
 msgstr ""
+"Godot permite usar albedo secundario o mapas normales para generar texturas "
+"de detalle, las cuales pueden ser mezcladas de muchas maneras. Combinado con "
+"UV secundario o modo triplanar, se pueden lograr muchas texturas "
+"interesantes."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:395
 msgid "UV1 and UV2"
-msgstr ""
+msgstr "UV1 y UV2"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:397
 msgid ""
@@ -26284,10 +26585,13 @@ msgid ""
 "AO or Emission (baked light). UVs can be scaled and offseted which is useful "
 "in textures with repeat."
 msgstr ""
+"Godot permite usar hasta 2 canales UV por material. UV secundario es muchas "
+"veces útil para AO o Emisiones (luces pre-calculadas). Los UVs pueden ser "
+"escalados o compensados, lo cual es útil para texturas que se repiten."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:401
 msgid "Triplanar Mapping"
-msgstr ""
+msgstr "Mapeado Triplanar"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:403
 msgid ""
@@ -26296,16 +26600,24 @@ msgid ""
 "are sampled in X,Y and Z and blended by the normal. Triplanar can be either "
 "worldspace or object space."
 msgstr ""
+"El mapeado triplanar se puede usar tanto para UV1 como UV2. Es una forma "
+"alternativa de obtener las coordenadas de texturas, muchas veces llamadas "
+"\"Autotexture\". Las texturas son muestreadas en X-Y-Z y mezcladas por la "
+"normal. Triplanar puede ser tanto en el espacio mundo como en el espacio "
+"objeto."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:408
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so bricks continue smoothly between them."
 msgstr ""
+"En la imagen de abajo, se puede ver como todas las primitivas comparten el "
+"mismo material con el triplanar del mundo, por lo que los ladrillos "
+"continuan de forma continua entre ellos."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:414
 msgid "Proximity and Distance Fade"
-msgstr ""
+msgstr "Desvanecimiento de Proximidad y Distancia"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:416
 msgid ""
@@ -26315,16 +26627,24 @@ msgid ""
 "the shores. Distance fade is useful for light shafts or indicators that are "
 "only present after a given distance."
 msgstr ""
+"Godot permite que los materiales se desvanezcan por proximidad entre ellos, "
+"además de hacerlo por la distancia con el observador. El desvanecimiento por "
+"proximidad es útil para efectos como particulas suaves o masas de agua que "
+"se mezclen de forma suave con la orilla. El desvanecimiento por distancia es "
+"útil para pozos de luz o indicadores que solo estan presentes a cierta "
+"distancia."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:420
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for a "
 "whole scene is not generally a good idea."
 msgstr ""
+"Tenga en cuenta que habilitar estos permite la mezcla alfa, por lo que "
+"abusar de ellos para toda una escena no es generalmente una buena idea."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:425
 msgid "Render Priority"
-msgstr ""
+msgstr "Prioridad de renderizado"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:427
 msgid ""
@@ -26332,30 +26652,38 @@ msgid ""
 "for transparent objects (or opaque objects that do depth draw but no color "
 "draw, useful for cracks on the floor)."
 msgstr ""
+"El orden de renderizado se puede cambiar para los objetos, aunque esto es "
+"útil sobre todo para los objetos transparentes (u objetos opacos que dibujan "
+"en profundidad pero no en color, útil para las grietas en el suelo)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:4
 msgid "Lights And Shadows"
-msgstr ""
+msgstr "Luces y sombras"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:9
 msgid ""
 "Lights emit light that mixes with the materials and produces a visible "
 "result. Light can come from several types of sources in a scene:"
 msgstr ""
+"Las luces emiten luz que se mezcla con los materiales produciendo un "
+"resultado visible. La luz puede proceder de varios tipos de fuentes en una "
+"escena:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:12
 msgid ""
 "From the Material itself in the form of the emission color (though it does "
 "not affect nearby objects unless baked)."
 msgstr ""
+"Desde el Material mismo en la forma de color de emisión (aunque esto no "
+"afecta a los objetos cercanos, salvo que la luz sea pre-calculada)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:14
 msgid "Light Nodes: Directional, Omni and Spot."
-msgstr ""
+msgstr "Light Nodes: Directional, Omni y Spot."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:15
 msgid "Ambient Light in the :ref:`Environment <class_Environment>`."
-msgstr ""
+msgstr "Luz Ambiental en :ref:`Environment <class_Environment>`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:17
 msgid "Baked Light (read :ref:`doc_baked_lightmaps`)."
@@ -26366,10 +26694,12 @@ msgid ""
 "The emission color is a material property. You can read more about it in "
 "the :ref:`doc_spatial_material` tutorial."
 msgstr ""
+"El color de emisión es una propiedad del material. Puedes leer más sobre "
+"ello en el tutorial :ref:`doc_spatial_material`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:23
 msgid "Light nodes"
-msgstr ""
+msgstr "Light nodes"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:25
 msgid ""
@@ -26377,20 +26707,26 @@ msgid ""
 "and Spot. Each has different uses and will be described in detail below, but "
 "first let's take a look at the common parameters for lights:"
 msgstr ""
+"Como se ha mencionado anteriormente, existen tres tipos de nodos de luz: "
+"Direccional, Omni y Spot. Cada uno tiene diferentes usos y se describirán en "
+"detalle a continuación, pero primero echemos un vistazo a los parámetros "
+"comunes para las luces:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:32
 msgid "Each one has a specific function:"
-msgstr ""
+msgstr "Cada uno tiene una función específica:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:34
 msgid "**Color**: Base color for emitted light."
-msgstr ""
+msgstr "**Color**: Color base para la luz emitida."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:35
 msgid ""
 "**Energy**: Energy multiplier. This is useful for saturating lights or "
 "working with :ref:`doc_high_dynamic_range`."
 msgstr ""
+"**Energía**: Multiplicador de energía. Resulta útil para luces saturadas o "
+"para trabajar con :ref:`doc_high_dynamic_range`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:36
 msgid ""
@@ -26403,6 +26739,8 @@ msgid ""
 "**Negative**: Light becomes subtractive instead of additive. It's sometimes "
 "useful to manually compensate some dark corners."
 msgstr ""
+"**Negative**: La luz se vuelve sustractiva en lugar de aditiva. A veces es "
+"útil compensar manualmente algunas esquinas oscuras."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:38
 msgid ""
@@ -26415,10 +26753,12 @@ msgid ""
 "**Cull Mask**: Objects that are in the selected layers below will be "
 "affected by this light."
 msgstr ""
+"**Cul Mask**: Los objetos que se encuentren bajo las capas seleccionadas "
+"serán afectadas por esta luz."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:42
 msgid "Shadow Mapping"
-msgstr ""
+msgstr "Shadow Mapping"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:44
 msgid ""
@@ -26427,10 +26767,14 @@ msgid ""
 "There is a list of generic shadow parameters, each also has a specific "
 "function:"
 msgstr ""
+"Las luces opcionalmente pueden proyectar sombras. Esto les da mayor realismo "
+"(la luz no llega a las zonas ocluidas), pero puede incurrir en un mayor "
+"coste de rendimiento. Hay una lista de parámetros de sombra genéricos, cada "
+"uno también tiene una función específica:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:48
 msgid "**Enabled**: Check to enable shadow mapping in this light."
-msgstr ""
+msgstr "**Enabled**: Activa el mapeo de sombras con esta luz."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:49
 msgid ""
@@ -26475,7 +26819,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:67
 msgid "Directional light"
-msgstr ""
+msgstr "Directional light"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:69
 msgid ""
@@ -26502,7 +26846,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:84
 msgid "Directional Shadow Mapping"
-msgstr ""
+msgstr "Directional Shadow Mapping"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:86
 msgid ""
@@ -26522,7 +26866,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:97
 msgid "With this, shadows become more detailed:"
-msgstr ""
+msgstr "Con esto, las sombras son más detalladas:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:101
 msgid "To control PSSM, a number of parameters are exposed:"
@@ -26543,6 +26887,9 @@ msgid ""
 "needs. The closer the max distance, the higher quality they shadows will "
 "have."
 msgstr ""
+"Asegúrate de indicar una *Distancia Máxima* de sombra de acuerdo con las "
+"necesidades de la escena. Cuanto más cerca se encuentre la distancia máxima, "
+"mayor será la calidad de las sombras."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:114
 msgid ""
@@ -26567,7 +26914,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid "Finally, the **\"Depth Range\"** has two settings:"
-msgstr ""
+msgstr "Por último, el **\"Rango de Profundidad**\" tiene dos ajustes:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:131
 msgid ""
@@ -26587,7 +26934,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:134
 msgid "Just experiment which setting works better for your scene."
-msgstr ""
+msgstr "Experimenta para encontrar el que mejor funcione en tu escena."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:136
 msgid ""
@@ -26603,7 +26950,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
 msgid "Omni light"
-msgstr ""
+msgstr "Omni luz"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:145
 msgid ""
@@ -29453,39 +29800,46 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/index.rst:2
 msgid "FPS tutorial"
-msgstr ""
+msgstr "Tutorial FPS"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:4
 msgid "Part 1"
-msgstr ""
+msgstr "Parte 1"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:7
 msgid "Tutorial introduction"
-msgstr ""
+msgstr "Introducción al tutorial"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:11
 msgid ""
 "This tutorial series will show you how to make a single player FPS game."
 msgstr ""
+"Esta serie de tutoriales te mostrará cómo crear un juego FPS para un solo "
+"jugador."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:13
 msgid "Throughout the course of this tutorial series, we will cover how:"
-msgstr ""
+msgstr "A lo largo del curso de esta serie de tutoriales, cubriremos cómo:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:15
 msgid "To make a first person character that can move, sprint, and jump."
 msgstr ""
+"Hacer un personaje en primera persona que pueda moverse, correr y saltar."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:16
 msgid ""
 "To make a simple animation state machine for handling animation transitions."
 msgstr ""
+"Hacer una máquina de estado de animación simple para manejar transiciones de "
+"animación."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:17
 msgid ""
 "To add three weapons to the first person character, each using a different "
 "way to handle bullet collisions:"
 msgstr ""
+"Añadir tres armas al personaje en primera persona, cada una usando una forma "
+"diferente de manejar las colisiones de balas:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:18
 msgid "A knife (using an :ref:`Area <class_Area>`)"
@@ -29493,76 +29847,81 @@ msgstr "Un cuchillo (usando un :ref:`Area <class_Area>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:19
 msgid "A pistol (Bullet scenes)"
-msgstr ""
+msgstr "Una pistola (Escenas de bala)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:20
 msgid "A rifle (using a :ref:`Raycast <class_Raycast>`)"
-msgstr ""
+msgstr "Un rifle (usando un :ref:`Raycast <class_Raycast>`)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:21
 msgid "To add two different types of grenades to the first person character:"
 msgstr ""
+"Añadir dos tipos diferentes de granadas al personaje en primera persona:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:22
 msgid "A normal grenade"
-msgstr ""
+msgstr "Una granada normal"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:23
 msgid "A sticky grenade"
-msgstr ""
+msgstr "Una granada pegajosa"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:24
 msgid ""
 "To add the ability to grab and throw :ref:`RigidBody <class_RigidBody>` nodes"
 msgstr ""
+"Añadir la habilidad de agarrar y lanzar nodos :ref:`RigidBody "
+"<class_RigidBody>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:25
 msgid "To add joypad input for the player"
-msgstr ""
+msgstr "Añadir una entrada de mando (joypad) para el jugador"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:26
 msgid "To add ammo and reloading for all weapons that consume ammo."
-msgstr ""
+msgstr "Añadir munición y recargar todas las armas que consumen munición."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:27
 msgid "To add ammo and health pick ups"
-msgstr ""
+msgstr "Añadir munición y recuperadores de salud"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:28
 msgid "In two sizes: big and small"
-msgstr ""
+msgstr "En dos tamaños: grande y pequeño"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:29
 msgid "To add an automatic turret"
-msgstr ""
+msgstr "Añadir una torreta automática"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:30
 msgid "That can fire using bullet objects or a :ref:`Raycast <class_Raycast>`"
 msgstr ""
+"Que puede disparar usando objetos bala o un :ref:`Raycast <class_Raycast>"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:31
 msgid "To add targets that break when they've taken enough damage"
-msgstr ""
+msgstr "Añadir objetivos que se rompen cuando han recibido suficiente daño"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:32
 msgid "To add sounds that play when the guns fire."
-msgstr ""
+msgstr "Añadir sonidos que suenan cuando las armas disparan."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:33
 msgid "To add a simple main menu:"
-msgstr ""
+msgstr "Añadir un menú principal simple:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:34
 msgid "With an options menu for changing how the game runs"
-msgstr ""
+msgstr "Con un menú de opciones para cambiar el funcionamiento del juego"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:35
 msgid "With a level select screen"
-msgstr ""
+msgstr "Con una pantalla de selección de nivel"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:36
 msgid "To add a universal pause menu we can access anywhere"
 msgstr ""
+"Añadir un menú de pausa universal que podemos acceder desde cualquier lugar"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:38
 msgid ""
@@ -29570,12 +29929,18 @@ msgid ""
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development **before** going through this tutorial series."
 msgstr ""
+"Aunque este tutorial puede ser completado por principiantes, es altamente "
+"aconsejable completar :ref:`doc_your_first_game`, si eres nuevo en Godot y/o "
+"en el desarrollo de juegos **antes de** pasar por esta serie de tutoriales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
 msgid ""
 "Remember: Making 3D games is much harder than making 2D games. If you do not "
 "know how to make 2D games you will likely struggle making 3D games."
 msgstr ""
+"Recuerda: Hacer juegos 3D es mucho más difícil que hacer juegos 2D. Si no "
+"sabes cómo hacer juegos 2D es probable que tengas dificultades para hacer "
+"juegos 3D."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:46
 msgid ""
@@ -29583,12 +29948,17 @@ msgid ""
 "editor, have basic programming experience in GDScript, and have basic "
 "experience in game development."
 msgstr ""
+"Este tutorial asume que tienes experiencia trabajando con el editor de "
+"Godot, tienes experiencia básica de programación en GDScript, y tienes "
+"experiencia básica en el desarrollo de juegos."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:49
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 msgstr ""
+"Puedes encontrar los recursos de inicio para este tutorial aquí: :download:"
+"`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:51
 msgid ""
@@ -29596,6 +29966,9 @@ msgid ""
 "models for making levels, and a few scenes already configured for this "
 "tutorial."
 msgstr ""
+"Los recursos de inicio proporcionados contienen un modelo 3D animado, un "
+"montón de modelos 3D para hacer niveles y algunas escenas ya configuradas "
+"para este tutorial."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:54
 msgid ""
@@ -29603,6 +29976,10 @@ msgid ""
 "TwistedTwigleg, with changes/additions by the Godot community. All original "
 "assets provided for this tutorial are released under the ``MIT`` license."
 msgstr ""
+"Todos los recursos proporcionados (a menos que se indique lo contrario) "
+"fueron creados originalmente por TwistedTwigleg, con cambios/adiciones por "
+"la comunidad de Godot. Todos los activos originales proporcionados para este "
+"tutorial están liberados bajo la licencia ``MIT``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:57
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1010
@@ -29611,12 +29988,17 @@ msgid ""
 "to the Godot community, with the other assets belonging to those listed "
 "below:"
 msgstr ""
+"¡Siéntete libre de usar estos recursos como quieras! Todos los recursos "
+"originales pertenecen a la comunidad Godot, con los otros recursos "
+"pertenecientes a los enumerados a continuación:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:59
 msgid ""
 "The skybox is created by **StumpyStrust** on OpenGameArt. The skybox used is "
 "licensed under ``CC0``."
 msgstr ""
+"El skybox es creado por **StumpyStrust** en OpenGameArt. El skybox utilizado "
+"está bajo licencia ``CC0``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:62
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:1015
@@ -29624,12 +30006,16 @@ msgid ""
 "The font used is **Titillium-Regular**, and is licensed under the ``SIL Open "
 "Font License, Version 1.1``."
 msgstr ""
+"La fuente utilizada es **Titillium-Regular**, y está licenciada bajo la "
+"``SIL Open Font License, Version 1.1``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:64
 msgid ""
 "You can find the finished project for each part at the bottom of each part's "
 "page"
 msgstr ""
+"Puedes encontrar el proyecto terminado para cada parte en la parte inferior "
+"de la página de cada parte"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:67
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:7
@@ -29638,13 +30024,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:7
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:7
 msgid "Part Overview"
-msgstr ""
+msgstr "Resumen de la Parte"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:69
 msgid ""
 "In this part we will be making a first person player that can move around "
 "the environment."
 msgstr ""
+"En esta parte vamos a hacer un jugador de primera persona que puede moverse "
+"alrededor del entorno."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:74
 msgid ""
@@ -29653,14 +30041,18 @@ msgid ""
 "person camera, that can jump into the air, turn on and off a flash light, "
 "and sprint."
 msgstr ""
+"Al final de esta parte tendrás un funcional personaje en primera persona que "
+"puede moverse por el entorno del juego, mirar a su alrededor con una cámara "
+"en primera persona basada en el ratón, que puede saltar en el aire, encender "
+"y apagar una linterna y correr."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:78
 msgid "Getting everything ready"
-msgstr ""
+msgstr "Preparando todo"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:79
 msgid "Launch Godot and open up the project included in the starter assets."
-msgstr ""
+msgstr "Inicia Godot y abre el proyecto incluido en los recursos iniciales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:81
 msgid ""
@@ -29668,6 +30060,10 @@ msgid ""
 "in this tutorial, they will make the tutorial much easier to follow as there "
 "are several pre-setup scenes we will be using throughout the tutorial series."
 msgstr ""
+"Aunque estos recursos no son necesariamente requeridos para utilizar los "
+"scripts proporcionados en este tutorial, harán que el tutorial sea mucho más "
+"fácil de seguir ya que hay varias escenas preconfiguradas que utilizaremos a "
+"lo largo de la serie de tutoriales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:85
 msgid ""
@@ -29676,10 +30072,14 @@ msgid ""
 "actions for our player. Feel free to change the keys bound to these actions "
 "if you want."
 msgstr ""
+"En primer lugar, abre los ajustes del proyecto y ve a la pestaña \"Mapa de "
+"Entradas\". Encontrarás que ya se han definido varias acciones. Usaremos "
+"estas acciones para nuestro jugador. Siéntete libre de cambiar las teclas "
+"vinculadas a estas acciones si lo deseas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:91
 msgid "Let's take a second to see what we have in the starter assets."
-msgstr ""
+msgstr "Tomémonos un segundo para ver qué tenemos en los recursos iniciales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:93
 msgid ""
@@ -29687,6 +30087,9 @@ msgid ""
 "`` we have 14 scenes, most of which we will be visiting as we go through "
 "this tutorial series."
 msgstr ""
+"En los recursos iniciales se incluyen varias escenas. Por ejemplo, en "
+"``res://`` tenemos 14 escenas, la mayoría de los cuales estaremos visitando "
+"a medida que avancemos en esta serie de tutoriales."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:96
 msgid "For now let's open up ``Player.tscn``."
@@ -42346,11 +42749,14 @@ msgid ""
 "default, but areas do not. This can be configured through :ref:`Area "
 "<class_Area>` properties)."
 msgstr ""
-"Si nadie quiso usar el evento hasta este punto, y una :ref:`Camera "
-"<class_Camera>` está asignada al Viewport, se disparará un rayo al mundo "
-"físico (ray cast, en dirección al click). Si este rayo golpea un objeto, "
-"llamará al la función :ref:`CollisionObject._input_event() "
-"<class_CollisionObject__input_event>` en el objeto físico impactado."
+"Si nadie ha querido realizar el evento hasta ahora, y una :ref:`Camera "
+"<class_Camera>` es asignada al Viewport, se emitirá un rayo al mundo de la "
+"física (en la dirección correspondiente al rayo del clic). Si este rayo "
+"golpea un objeto, llamará a la función :ref:`CollisionObject._input_event() "
+"<class_CollisionObject__input_event>` en el objeto físico correspondiente "
+"(los cuerpos reciben esta llamada de retorno por defecto, pero las áreas no "
+"lo hacen. Esto puede configurarse a través de las propiedades de :ref:`Area "
+"<class_Area>`)."
 
 #: ../../docs/tutorials/inputs/inputevent.rst:104
 msgid ""
@@ -42630,14 +43036,13 @@ msgid ""
 "for example:"
 msgstr ""
 "Godot utiliza Viewports para mostrar contenido y estos pueden ser escalados "
-"con diversas opciones (ver tutorial :ref:`doc_multiple_resolutions`). Usa "
-"las funciones de los nodos para obtener coordenadas de mouse y tamaño del "
-"Viewport, por ejemplo:"
+"con diversas opciones (ver tutorial :ref:`doc_multiple_resolutions`). A "
+"continuación, se utilizan las funciones de los nodos para obtener, por "
+"ejemplo, las coordenadas del ratón y el tamaño del viewport:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
 msgid "Alternatively it's possible to ask the viewport for the mouse position:"
-msgstr ""
-"Alternativamente, es posible preguntar al Viewport por la posición del mouse:"
+msgstr "También es posible preguntar al viewport por la posición del mouse:"
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
 msgid "Customizing mouse cursor"
@@ -46954,7 +47359,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "red"
-msgstr "rojo"
+msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:72
 msgid "silver"
@@ -46998,7 +47403,7 @@ msgstr ""
 #: ../../docs/tutorials/viewports/index.rst:2
 #: ../../docs/tutorials/viewports/viewports.rst:4
 msgid "Viewports"
-msgstr "Viewports (Ventanas)"
+msgstr "Viewports"
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
 msgid ""
@@ -47006,6 +47411,10 @@ msgid ""
 "projected onto. In order to see the game we need to have a surface to draw "
 "it on, this surface is the Root :ref:`Viewport <class_Viewport>`."
 msgstr ""
+"Piensa en las :ref:`Viewports <class_Viewport>` como una pantalla en la que "
+"se proyecta el juego. Para ver el juego necesitamos tener una superficie "
+"sobre la que dibujarlo, esta superficie es la Root :ref:`Viewport "
+"<class_Viewport>`(Ventana Raíz)."
 
 #: ../../docs/tutorials/viewports/viewports.rst:16
 msgid ""
@@ -47019,31 +47428,42 @@ msgid ""
 "<class_ViewportTexture>` which is applied to an object in the scene, for "
 "example a dynamic skybox."
 msgstr ""
+"Los :ref:`Viewports <class_Viewport>` también se puede añadir a la escena "
+"para que haya múltiples superficies sobre las que dibujar. Cuando estamos "
+"dibujando a un :ref:`Viewport <class_Viewport>` que no es el Root lo "
+"llamamos un render target(objetivo de renderizado). Podemos acceder al "
+"contenido de un render target accediendo a su correspondiente :ref:`textura "
+"<class_ViewportTexture>`. Usando un :ref:`Viewport <class_Viewport>` como "
+"objetivo de render podemos renderizar múltiples escenas simultáneamente o "
+"podemos renderizar a una :ref:`textura <class_ViewportTexture>` que se "
+"aplica a un objeto de la escena, por ejemplo un skybox dinámico."
 
 #: ../../docs/tutorials/viewports/viewports.rst:25
 msgid ""
 ":ref:`Viewports <class_Viewport>` have a variety of use cases including:"
 msgstr ""
+"Los :ref:`Viewports <class_Viewport>` tienen una variedad de casos de uso, "
+"incluyendo:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:27
 msgid "Rendering 3d objects within a 2d game"
-msgstr ""
+msgstr "Renderizar objetos 3d dentro de un juego 2d"
 
 #: ../../docs/tutorials/viewports/viewports.rst:28
 msgid "Rendering 2d elements in a 3d game"
-msgstr ""
+msgstr "Renderizar elementos 2d en un juego 3d"
 
 #: ../../docs/tutorials/viewports/viewports.rst:29
 msgid "Rendering dynamic textures"
-msgstr ""
+msgstr "Renderizado de texturas dinámicas"
 
 #: ../../docs/tutorials/viewports/viewports.rst:30
 msgid "Generating procedural textures at runtime"
-msgstr ""
+msgstr "Generación de texturas de procedimiento en tiempo de ejecución"
 
 #: ../../docs/tutorials/viewports/viewports.rst:31
 msgid "Rendering multiple cameras in the same scene"
-msgstr ""
+msgstr "Renderizado de varias cámaras en la misma escena"
 
 #: ../../docs/tutorials/viewports/viewports.rst:33
 msgid ""
@@ -47051,6 +47471,9 @@ msgid ""
 "draw objects to a texture as if it were another screen and then you can "
 "choose what to do with the resulting texture."
 msgstr ""
+"Lo que todos estos casos de uso tienen en común es que se te da la capacidad "
+"de dibujar objetos a una textura como si fuera otra pantalla y luego puedes "
+"elegir qué hacer con la textura resultante."
 
 #: ../../docs/tutorials/viewports/viewports.rst:40
 msgid ""
@@ -47061,6 +47484,13 @@ msgid ""
 "recieve input by checking 'Disable Input' to 'on', this will allow the next "
 "nearest :ref:`Viewport <class_Viewport>` in the tree to capture the input."
 msgstr ""
+"Los :ref:`Viewports <class_Viewport>` son también responsables de entregar "
+"eventos de entrada correctamente ajustados y escalados a todos sus nodos "
+"hijos. Típicamente la entrada es recibida por el :ref:`Viewport "
+"<class_Viewport>` más cercano en el árbol, pero puede establecer :ref:"
+"`Viewports <class_Viewport>` para que no reciba entradas marcando "
+"'Deshabilitar Entrada' en 'on', esto permitirá que el siguiente :ref:"
+"`Viewport <class_Viewport>` más cercano en el árbol capture la entrada."
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
 msgid ""
@@ -47068,7 +47498,7 @@ msgid ""
 "Event Tutorial<doc_inputevent>`."
 msgstr ""
 "Para más información sobre cómo maneja Godot las entradas, por favor lee el :"
-"ref:`Tutorial de eventos de entrada<doc_inputevent>`."
+"ref:`Tutorial de Eventos de Entrada<doc_inputevent>`."
 
 #: ../../docs/tutorials/viewports/viewports.rst:51
 msgid "Listener"
@@ -47224,7 +47654,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:163
 msgid "Viewport Container"
-msgstr "Container Viewport"
+msgstr "Viewport Container"
 
 #: ../../docs/tutorials/viewports/viewports.rst:165
 msgid ""
@@ -47494,11 +47924,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/index.rst:2
 msgid "Shading"
-msgstr ""
+msgstr "Shading"
 
 #: ../../docs/tutorials/shading/shading_language.rst:4
 msgid "Shading language"
-msgstr ""
+msgstr "Lenguaje de shading"
 
 #: ../../docs/tutorials/shading/shading_language.rst:9
 msgid ""
@@ -47506,16 +47936,21 @@ msgid ""
 "functions are supported, and the few remaining ones will likely be added "
 "over time."
 msgstr ""
+"Godot utiliza un lenguaje de shading similar a GLSL ES 3.0. La mayoría de "
+"los tipos de datos y funciones están soportados y los pocos que no figuran "
+"serán agregados posteriormente."
 
 #: ../../docs/tutorials/shading/shading_language.rst:12
 msgid ""
 "Unlike the shader language in Godot 2.x, this implementation is much closer "
 "to the original."
 msgstr ""
+"A diferencia del lenguaje de shaders de Godot 2.x, esta implementación es "
+"mucho más parecida a la original."
 
 #: ../../docs/tutorials/shading/shading_language.rst:15
 msgid "Shader Types"
-msgstr ""
+msgstr "Tipos de Shaders"
 
 #: ../../docs/tutorials/shading/shading_language.rst:17
 msgid ""
@@ -47523,209 +47958,218 @@ msgid ""
 "must specify what a shader is intended for. Depending on the type, different "
 "render modes, built-in variables and processing functions are supported."
 msgstr ""
+"En lugar de ofrecer una configuración de propósito general, el lenguaje de "
+"Shading de Godot debe especificar el propósito del shader. Dependiendo del "
+"tipo, estarán disponibles diferentes modos, variables y funciones para "
+"procesamiento."
 
 #: ../../docs/tutorials/shading/shading_language.rst:21
 msgid ""
 "Any shader needs a first line specifying this type, in the following format:"
 msgstr ""
+"Todos los shaders necesitan especificar el tipo en la primera línea, en el "
+"siguiente formato:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:27
 msgid "Valid types are:"
-msgstr ""
+msgstr "Los tipos válidos son:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:29
 msgid "\"spatial\": For 3D rendering."
-msgstr ""
+msgstr "\"spatial\": Para rendering 3D."
 
 #: ../../docs/tutorials/shading/shading_language.rst:30
 msgid "\"canvas_item\": For 2D rendering."
-msgstr ""
+msgstr "\"canvas_item\": Para rendering 2D."
 
 #: ../../docs/tutorials/shading/shading_language.rst:31
 msgid "\"particles\": For particle systems."
-msgstr ""
+msgstr "\"particles\": Para sistemas de partículas."
 
 #: ../../docs/tutorials/shading/shading_language.rst:34
 #: ../../docs/tutorials/shading/shading_language.rst:650
 #: ../../docs/tutorials/shading/shading_language.rst:922
 #: ../../docs/tutorials/shading/shading_language.rst:1082
 msgid "Render Modes"
-msgstr ""
+msgstr "Modos de Render"
 
 #: ../../docs/tutorials/shading/shading_language.rst:36
 msgid ""
 "Different shader types support different render modes. They are optional "
 "but, if specified, must be after the *shader_type*. Example syntax is:"
 msgstr ""
+"Los distintos tipos de shaders soportan diferentes modos de render. Son "
+"opcionales pero, si se especifican, debe hacerse después del *shader_type*. "
+"Un ejemplo de la sintaxis es:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:45
 msgid "Data types"
-msgstr ""
+msgstr "Tipos de datos"
 
 #: ../../docs/tutorials/shading/shading_language.rst:47
 msgid "Most GLSL ES 3.0 datatypes are supported:"
-msgstr ""
+msgstr "La mayoría de los tipos de datos de GLSL ES 3.0 están soportados:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "**void**"
-msgstr ""
+msgstr "**void**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "Void datatype, useful only for functions that return nothing."
-msgstr ""
+msgstr "Tipo de dato nulo, útil sólo para funciones que no retornan nada."
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "**bool**"
-msgstr ""
+msgstr "**bool**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "Boolean datatype, can only contain \"true\" or \"false\""
-msgstr ""
+msgstr "Tipo de dato booleano, puede contener solamente \"true\" o \"false\""
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "**bvec2**"
-msgstr ""
+msgstr "**bvec2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "Two component vector of booleans."
-msgstr ""
+msgstr "Vector de dos componentes booleanas."
 
 #: ../../docs/tutorials/shading/shading_language.rst:58
 msgid "**bvec3**"
-msgstr ""
+msgstr "**bvec3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:58
 msgid "Three component vector of booleans."
-msgstr ""
+msgstr "Vector de tres componentes booleanas."
 
 #: ../../docs/tutorials/shading/shading_language.rst:60
 msgid "**bvec4**"
-msgstr ""
+msgstr "**bvec4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:60
 msgid "Four component vector of booleans."
-msgstr ""
+msgstr "Vector de cuatro componentes booleanas."
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "**int**"
-msgstr ""
+msgstr "**int**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:62
 msgid "Signed scalar integer."
-msgstr ""
+msgstr "Escalar entero con signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:64
 msgid "**ivec2**"
-msgstr ""
+msgstr "**ivec2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:64
 msgid "Two component vector of signed integers."
-msgstr ""
+msgstr "Vector de dos componentes de entero con signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:66
 msgid "**ivec3**"
-msgstr ""
+msgstr "**ivec3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:66
 msgid "Three component vector of signed integers."
-msgstr ""
+msgstr "Vector de tres componentes de enteros con signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:68
 msgid "**ivec4**"
-msgstr ""
+msgstr "**ivec4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:68
 msgid "Four component vector of signed integers."
-msgstr ""
+msgstr "Vector de cuatro componentes de enteros con signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "**uint**"
-msgstr ""
+msgstr "**uint**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:70
 msgid "Unsigned scalar integer, can't contain negative numbers."
-msgstr ""
+msgstr "Escalar entero sin signo, no puede contener números negativos."
 
 #: ../../docs/tutorials/shading/shading_language.rst:72
 msgid "**uvec2**"
-msgstr ""
+msgstr "**uvec2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:72
 msgid "Two component vector of unsigned integers."
-msgstr ""
+msgstr "Vector de dos componentes de enteros sin signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:74
 msgid "**uvec3**"
-msgstr ""
+msgstr "**uvec3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:74
 msgid "Three component vector of unsigned integers."
-msgstr ""
+msgstr "Vector de tres componentes de enteros sin signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:76
 msgid "**uvec4**"
-msgstr ""
+msgstr "**uvec4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:76
 msgid "Four component vector of unsigned integers."
-msgstr ""
+msgstr "Vector de cuatro componentes de enteros sin signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "**float**"
-msgstr ""
+msgstr "**float**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:78
 msgid "Floating point scalar."
-msgstr ""
+msgstr "Escalar de punto flotante."
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "**vec2**"
-msgstr ""
+msgstr "**vec2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:80
 msgid "Two component vector of floating point values."
-msgstr ""
+msgstr "Vector de dos componentes de valores de punto flotante."
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "**vec3**"
-msgstr ""
+msgstr "**vec3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:82
 msgid "Three component vector of floating point values."
-msgstr ""
+msgstr "Vector de tres componentes de valores de punto flotante."
 
 #: ../../docs/tutorials/shading/shading_language.rst:84
 #: ../../docs/tutorials/shading/shading_language.rst:422
 msgid "**vec4**"
-msgstr ""
+msgstr "**vec4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:84
 msgid "Four component vector of floating point values."
-msgstr ""
+msgstr "Vector de cuatro componentes de valores de punto flotante."
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "**mat2**"
-msgstr ""
+msgstr "**mat2**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:86
 msgid "2x2 matrix, in column major order."
-msgstr ""
+msgstr "Matrix 2x2, ordenada por columna."
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "**mat3**"
-msgstr ""
+msgstr "**mat3**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:88
 msgid "3x3 matrix, in column major order."
-msgstr ""
+msgstr "Matriz 3x3,  ordenada por columnas."
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "**mat4**"
-msgstr ""
+msgstr "**mat4**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:90
 msgid "4x4 matrix, in column major order."
-msgstr ""
+msgstr "Matriz 4x4,  ordenada por columnas."
 
 #: ../../docs/tutorials/shading/shading_language.rst:92
 #: ../../docs/tutorials/shading/shading_language.rst:426
@@ -47735,40 +48179,45 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:434
 #: ../../docs/tutorials/shading/shading_language.rst:436
 msgid "**sampler2D**"
-msgstr ""
+msgstr "**sampler2D**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:92
 msgid "Sampler type, for binding 2D textures, which are read as float."
 msgstr ""
+"Tipo Sampler para vincular texturas 2D, las cuales son leídas como float."
 
 #: ../../docs/tutorials/shading/shading_language.rst:94
 msgid "**isampler2D**"
-msgstr ""
+msgstr "**isampler2D**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:94
 msgid "Sampler type for binding 2D textures, which are read as signed integer."
 msgstr ""
+"Tipo Sampler para vincular texturas 2D, las cuales son leídas como enteros "
+"con signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:96
 msgid "**usampler2D**"
-msgstr ""
+msgstr "**usampler2D**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:96
 msgid ""
 "Sampler type for binding 2D textures, which are read as unsigned integer."
 msgstr ""
+"Tipo Sampler para vincular texturas 2D, las cuales son leídas como enteros "
+"sin signo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:98
 msgid "**samplerCube**"
-msgstr ""
+msgstr "**samplerCube**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:98
 msgid "Sampler type for binding Cubemaps, which are read as floats."
-msgstr ""
+msgstr "Tipo Sampler para vincular Cubemaps, los que son leídos como floats."
 
 #: ../../docs/tutorials/shading/shading_language.rst:102
 msgid "Casting"
-msgstr ""
+msgstr "Casting"
 
 #: ../../docs/tutorials/shading/shading_language.rst:104
 msgid ""
@@ -47777,12 +48226,18 @@ msgid ""
 "size is also not allowed. Conversion must be done explicitly via "
 "constructors."
 msgstr ""
+"Como en GLSL ES 3.0, el casting implícito entre escalares y vectores del "
+"mismo tamaño pero distinto tipo no está permitido. Casting de tipos de "
+"distinto tamaño tampoco está permitido. La conversión debe ser explícita "
+"mediante el uso de constructores."
 
 #: ../../docs/tutorials/shading/shading_language.rst:115
 msgid ""
 "Default integer constants are signed, so casting is always needed to convert "
 "to unsigned:"
 msgstr ""
+"Las constantes enteras son con signo, siempre se necesitará casting para "
+"convertirlas a enteros sin signo:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"
@@ -47794,6 +48249,10 @@ msgid ""
 "\"z\" and \"w\" members. Alternatively, using \"r\", \"g\", \"b\" and \"a\" "
 "also works and is equivalent. Use whatever fits best for your use case."
 msgstr ""
+"Escalares individuales miembros de tipos vectores se acceden mediante los "
+"miembros \"x\", \"y\", \"z\" y \"w\". Alternativamente, \"r\", \"g\", \"b\" "
+"y \"a\" también funciona y es equivalente. Usa la que se ajuste mejor al "
+"caso."
 
 #: ../../docs/tutorials/shading/shading_language.rst:129
 msgid ""
@@ -47801,14 +48260,18 @@ msgid ""
 "m[idx] for access a vector by row index. For example, for accessing y "
 "position of object in mat4 you must use m[3][1] syntax."
 msgstr ""
+"Para matrices, se utiliza indexación m[fila][columna] para acceder a cada "
+"escalar, o m[índice] para acceder al vector por índice de fila. Por ejemplo, "
+"para acceder a la posición Y de un objeto en mat4, deberás usar la sintaxis "
+"m[3][1]."
 
 #: ../../docs/tutorials/shading/shading_language.rst:132
 msgid "Constructing"
-msgstr ""
+msgstr "Construcción"
 
 #: ../../docs/tutorials/shading/shading_language.rst:134
 msgid "Construction of vector types must always pass:"
-msgstr ""
+msgstr "La construcción de tipos vector deberá pasar siempre:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:146
 msgid ""
@@ -47816,10 +48279,13 @@ msgid ""
 "matrix. You could also build a diagonal matrix using matx(float) syntax. So "
 "the mat4(1.0) is an identity matrix."
 msgstr ""
+"La construcción de tipos matriz requiere pasar vectores de la misma "
+"dimensión de la matriz. Puedes también construir una matriz diagonal usando "
+"la sintaxis matx(float). De este modo, mat4(1.0) es una matriz identidad."
 
 #: ../../docs/tutorials/shading/shading_language.rst:155
 msgid "Swizzling"
-msgstr ""
+msgstr "Swizzling"
 
 #: ../../docs/tutorials/shading/shading_language.rst:157
 msgid ""
@@ -47827,16 +48293,21 @@ msgid ""
 "the result is another vector type (or scalar). This is easier shown than "
 "explained:"
 msgstr ""
+"Es posible obtener cualquier combinación de ellos en cualquier orden, "
+"siempre que el resultado sea igual a otro tipo vector (o escalar). Es más "
+"fácil mostrarlo que explicarlo:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:170
 msgid "Precision"
-msgstr ""
+msgstr "Precisión"
 
 #: ../../docs/tutorials/shading/shading_language.rst:172
 msgid ""
 "It is possible to add precision modifiers to datatypes, use them for "
 "uniforms, variables, arguments and varyings:"
 msgstr ""
+"Es posible agregar modificadores de precisión a los tipos de datos, se "
+"pueden usar para uniforms, variables, argumentos y varyings:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:181
 msgid ""
@@ -47845,6 +48316,10 @@ msgid ""
 "shader (where full precision is needed most of the time), but often needed "
 "in the fragment one."
 msgstr ""
+"El uso de baja precisión para algunas operaciones puede acelerar la "
+"matemática involucrada (al costo de, por supuesto, baja precisión). Esto es "
+"raramente necesitado en vertex shaders (donde precisión máxima es necesitada "
+"la mayor parte del tiempo), pero normalmente se necesita en los fragment."
 
 #: ../../docs/tutorials/shading/shading_language.rst:184
 msgid ""
@@ -47855,66 +48330,75 @@ msgid ""
 "trouble make simple shaders without specifying precision unless you *really* "
 "need to."
 msgstr ""
+"Ten en cuenta que algunas arquitecturas (principalmente móviles) se "
+"benefician mucho de esto, pero también están restringidas (conversiones "
+"entre precisiones tiene un costo). Lee la documentación relevante de la "
+"arquitectura destino para saber más al respecto. Honestamente, los drivers "
+"de móviles suelen tener bugs y para no tener problemas hay que intentar "
+"hacer shaders simples y no especificar precisión a menos que sea *realmente* "
+"necesario."
 
 #: ../../docs/tutorials/shading/shading_language.rst:189
 msgid "Operators:"
-msgstr ""
+msgstr "Operadores:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:191
 msgid ""
 "Godot shading language supports the same set of operators as GLSL ES 3.0. "
 "Below is the list of them in precedence order:"
 msgstr ""
+"El lenguaje de shading de Godot soporta el mismo conjunto de operadores de "
+"GLSL ES 3.0. Debajo está la lista de ellos en orden de precedencia:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:194
 msgid "Precedence"
-msgstr ""
+msgstr "Precedencia"
 
 #: ../../docs/tutorials/shading/shading_language.rst:194
 msgid "Class"
-msgstr ""
+msgstr "Tipo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:194
 msgid "Operator"
-msgstr ""
+msgstr "Operador"
 
 #: ../../docs/tutorials/shading/shading_language.rst:196
 msgid "1 (highest)"
-msgstr ""
+msgstr "1 (más alta)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:196
 msgid "parenthetical grouping"
-msgstr ""
+msgstr "agrupamiento entre paréntesis"
 
 #: ../../docs/tutorials/shading/shading_language.rst:196
 msgid "**()**"
-msgstr ""
+msgstr "**()**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:198
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:29
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../docs/tutorials/shading/shading_language.rst:198
 msgid "unary"
-msgstr ""
+msgstr "unario"
 
 #: ../../docs/tutorials/shading/shading_language.rst:198
 msgid "**+, -, !, ~**"
-msgstr ""
+msgstr "**+, -, !, ~**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:200
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "3"
-msgstr ""
+msgstr "3"
 
 #: ../../docs/tutorials/shading/shading_language.rst:200
 msgid "multiplicative"
-msgstr ""
+msgstr "multiplicativo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:200
 msgid "**/, \\*, %**"
-msgstr ""
+msgstr "**/, \\*, %**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:202
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:33
@@ -48002,54 +48486,54 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:475
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:477
 msgid "4"
-msgstr ""
+msgstr "4"
 
 #: ../../docs/tutorials/shading/shading_language.rst:202
 msgid "additive"
-msgstr ""
+msgstr "aditivo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:202
 msgid "**+, -**"
-msgstr ""
+msgstr "**+, -**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:204
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:35
 msgid "5"
-msgstr ""
+msgstr "5"
 
 #: ../../docs/tutorials/shading/shading_language.rst:204
 msgid "bit-wise shift"
-msgstr ""
+msgstr "Desplazamiento bit-wise"
 
 #: ../../docs/tutorials/shading/shading_language.rst:204
 msgid "**<<, >>**"
-msgstr ""
+msgstr "**<<, >>**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:206
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:37
 msgid "6"
-msgstr ""
+msgstr "6"
 
 #: ../../docs/tutorials/shading/shading_language.rst:206
 msgid "relational"
-msgstr ""
+msgstr "relacional"
 
 #: ../../docs/tutorials/shading/shading_language.rst:206
 msgid "**<, >, <=, >=**"
-msgstr ""
+msgstr "**<, >, <=, >=**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:208
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:39
 msgid "7"
-msgstr ""
+msgstr "7"
 
 #: ../../docs/tutorials/shading/shading_language.rst:208
 msgid "equality"
-msgstr ""
+msgstr "igualdad"
 
 #: ../../docs/tutorials/shading/shading_language.rst:208
 msgid "**==, !=**"
-msgstr ""
+msgstr "**==, !=**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:210
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:41
@@ -48067,70 +48551,72 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:334
 msgid "8"
-msgstr ""
+msgstr "8"
 
 #: ../../docs/tutorials/shading/shading_language.rst:210
 msgid "bit-wise and"
-msgstr ""
+msgstr "AND bit-wise"
 
 #: ../../docs/tutorials/shading/shading_language.rst:210
 msgid "**&**"
-msgstr ""
+msgstr "**&**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:212
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:43
 msgid "9"
-msgstr ""
+msgstr "9"
 
 #: ../../docs/tutorials/shading/shading_language.rst:212
 msgid "bit-wise exclusive or"
-msgstr ""
+msgstr "OR exclusivo bit-wise"
 
 #: ../../docs/tutorials/shading/shading_language.rst:212
 msgid "**^**"
-msgstr ""
+msgstr "**^**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:214
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:45
 msgid "10"
-msgstr ""
+msgstr "10"
 
 #: ../../docs/tutorials/shading/shading_language.rst:214
 msgid "bit-wise inclusive or"
-msgstr ""
+msgstr "OR inclusivo bit-wise"
 
 #: ../../docs/tutorials/shading/shading_language.rst:214
 msgid "**|**"
-msgstr ""
+msgstr "**|**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:216
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:47
 msgid "11"
-msgstr ""
+msgstr "11"
 
 #: ../../docs/tutorials/shading/shading_language.rst:216
 msgid "logical and"
-msgstr ""
+msgstr "AND lógico"
 
 #: ../../docs/tutorials/shading/shading_language.rst:216
 msgid "**&&**"
-msgstr ""
+msgstr "**&&**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:218
 msgid "12 (lowest)"
-msgstr ""
+msgstr "12 (la más baja)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:218
 msgid "logical inclusive or"
-msgstr ""
+msgstr "OR inclusivo lógico"
 
 #: ../../docs/tutorials/shading/shading_language.rst:218
 msgid "**||**"
-msgstr ""
+msgstr "**||**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:224
 msgid "Godot Shading language supports the most common types of flow control:"
 msgstr ""
+"El lenguaje de shading de Godot soporta los tipos más comunes de control de "
+"flujo:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:246
 msgid ""
@@ -48138,50 +48624,59 @@ msgid ""
 "your application (including editor). Godot can't protect you from this, so "
 "be careful to not make this mistake!"
 msgstr ""
+"Ten en cuenta que en GPUs modernas pueden generarse bucles infinitos y "
+"pueden congelar la aplicación (incluyendo el editor). Godot no te puede "
+"proteger de esto, así que ten cuidado de no cometer este error."
 
 #: ../../docs/tutorials/shading/shading_language.rst:250
 msgid "Discarding"
-msgstr ""
+msgstr "Descartando"
 
 #: ../../docs/tutorials/shading/shading_language.rst:252
 msgid ""
 "Fragment and light functions can use the **discard** keyword. If used, the "
 "fragment is discarded and nothing is written."
 msgstr ""
+"Las funciones fragment y light pueden usar la palabra clave **discard**. Si "
+"es utilizada, el fragment será descartado y nada será escrito."
 
 #: ../../docs/tutorials/shading/shading_language.rst:257
 msgid ""
 "It's possible to define any function in a Godot shader. They take the "
 "following syntax:"
 msgstr ""
+"Es posible definir cualquier función en un shader de Godot. Estas llevan la "
+"siguiente sintaxis:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:272
 msgid "Functions can be used from any other function that is below it."
 msgstr ""
+"Las funciones pueden ser usadas desde cualquier otra función que se "
+"encuentre por debajo de ella."
 
 #: ../../docs/tutorials/shading/shading_language.rst:274
 msgid "Function argument can have special qualifiers:"
-msgstr ""
+msgstr "Los argumentos de las funciones pueden tener calificadores especiales:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:276
 msgid "**in**: Means the argument is only for reading (default)."
-msgstr ""
+msgstr "**in**: Significa que el argumento es sólo para lectura (por defecto)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:277
 msgid "**out**: Means the argument is only for writing."
-msgstr ""
+msgstr "**out**: Significa que el argumento es sólo para escritura."
 
 #: ../../docs/tutorials/shading/shading_language.rst:278
 msgid "**inout**: Means the argument is fully passed via reference."
-msgstr ""
+msgstr "**inout**: Significa que el argumento es pasado por referencia."
 
 #: ../../docs/tutorials/shading/shading_language.rst:280
 msgid "Example below:"
-msgstr ""
+msgstr "Ejemplo:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:289
 msgid "Processor Functions"
-msgstr ""
+msgstr "Funciones de procesador"
 
 #: ../../docs/tutorials/shading/shading_language.rst:291
 msgid ""
@@ -48190,26 +48685,35 @@ msgid ""
 "\"vertex\", \"fragment\" and \"light\". For \"particles\", only \"vertex\" "
 "can be overridden."
 msgstr ""
+"Dependiendo del tipo de shader, distintas funciones de procesador estarán "
+"disponibles para sobreescribir. Para \"spatial\" y \"canvas_item\", es "
+"posible utilizar \"vertex\", \"fragment\" y \"light\". Para \"particles\" "
+"sólo está disponible \"vertex\"."
 
 #: ../../docs/tutorials/shading/shading_language.rst:296
 msgid "Vertex Processor"
-msgstr ""
+msgstr "Procesador Vertex"
 
 #: ../../docs/tutorials/shading/shading_language.rst:298
 msgid ""
 "The \"vertex\" processing function is called for every vertex, 2D or 3D. For "
 "particles, it's called for every particle."
 msgstr ""
+"La función de procesamiento \"vertex\" es llamada por cada vértice, 2D o 3D. "
+"Para partículas, es llamada por cada partícula."
 
 #: ../../docs/tutorials/shading/shading_language.rst:301
 msgid ""
 "Depending on shader type, a different set of built-in inputs and outputs are "
 "provided. In general, vertex functions are not that commonly used."
 msgstr ""
+"Dependiendo del tipo de shader, se dispone de un conjunto distinto de "
+"entradas y salidas integradas. En general, las funciones vertex no son "
+"usadas comunmente."
 
 #: ../../docs/tutorials/shading/shading_language.rst:313
 msgid "Fragment Processor"
-msgstr ""
+msgstr "Procesador Fragment"
 
 #: ../../docs/tutorials/shading/shading_language.rst:315
 msgid ""
@@ -48217,76 +48721,92 @@ msgid ""
 "per pixel. This code runs on every visible pixel the object or primitive is "
 "drawn to."
 msgstr ""
+"El procesador \"fragment\" es usado para asignar parámetros de materiales "
+"por pixel. Este código es ejecutado por cada pixel visible que es dibujado "
+"en el objeto o primitiva."
 
 #: ../../docs/tutorials/shading/shading_language.rst:327
 msgid "Light Processor"
-msgstr ""
+msgstr "Procesador Light"
 
 #: ../../docs/tutorials/shading/shading_language.rst:329
 msgid ""
 "The \"light\" processor runs per pixel too, but also runs for every light "
 "that affects the object ( and does not run if no lights affect the object)."
 msgstr ""
+"El procesador \"light\" se ejecuta también por pixel, pero también es "
+"ejecutado por cada luz que afecta el objeto (y no es ejecutada si no hay "
+"luces afectando el objeto)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:341
 msgid "Varyings"
-msgstr ""
+msgstr "Varyings"
 
 #: ../../docs/tutorials/shading/shading_language.rst:343
+#, fuzzy
 msgid ""
 "To send data from vertex to fragment shader, *varyings* are used. They are "
 "set for every primitive vertex in the *vertex processor*, and the value is "
 "interpolated (and perspective corrected) when reaching every pixel in the "
 "fragment processor."
 msgstr ""
+"Para enviar datos de un vertex a un fragment shader, son usados los "
+"*varyings*. Estos son asignados por cada vértice primitivo en el *procesador "
+"vertex* y el valor es interpolado (y con corrección de perspectiva) cuando "
+"llega a cada pixel en el procesador fragment."
 
 #: ../../docs/tutorials/shading/shading_language.rst:361
 msgid "Interpolation qualifiers"
-msgstr ""
+msgstr "Calificadores de interpolación"
 
 #: ../../docs/tutorials/shading/shading_language.rst:363
 msgid ""
 "Certain values are interpolated during the shading pipeline. You can modify "
 "how these interpolations are done by using *interpolation qualifiers*."
 msgstr ""
+"Ciertos valores son interpolados durante el shading pipeline. Puedes "
+"modificar cómo se harán esas interpolaciones usando *calificadores de "
+"interpolación*."
 
 #: ../../docs/tutorials/shading/shading_language.rst:380
 msgid "There are three possible interpolation qualifiers:"
-msgstr ""
+msgstr "Estos son los tres posibles calificadores de interpolación:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:383
 msgid "Qualifier"
-msgstr ""
+msgstr "Calificador"
 
 #: ../../docs/tutorials/shading/shading_language.rst:385
 msgid "**flat**"
-msgstr ""
+msgstr "**flat**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:385
 msgid "The value is not interpolated"
-msgstr ""
+msgstr "El valor no es interpolado"
 
 #: ../../docs/tutorials/shading/shading_language.rst:387
 msgid "**noperspective**"
-msgstr ""
+msgstr "**noperspective**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:387
 msgid "The value is linearly interpolated in window-space"
-msgstr ""
+msgstr "El valor es linearmente interpolado en espacio de ventana"
 
 #: ../../docs/tutorials/shading/shading_language.rst:389
 msgid "**smooth**"
-msgstr ""
+msgstr "**smooth**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:389
 msgid ""
 "The value is interpolated in a perspective-correct fashion. This is the "
 "default"
 msgstr ""
+"El valor es interpolado en una manera corregida por perspectiva. Es el modo "
+"por defecto"
 
 #: ../../docs/tutorials/shading/shading_language.rst:394
 msgid "Uniforms"
-msgstr ""
+msgstr "Uniforms"
 
 #: ../../docs/tutorials/shading/shading_language.rst:396
 msgid ""
@@ -48295,6 +48815,10 @@ msgid ""
 "uniforms will appear as editable parameters on it. Uniforms can't be written "
 "from within the shader."
 msgstr ""
+"Es posible pasar valores a shaders. Son globales para todo el shader y se "
+"llaman *uniforms*. Cuando un shader es asignado a un material, los uniforms "
+"aparecerán editables como parámetros. Los uniforms no pueden ser escritos "
+"desde dentro de un shader."
 
 #: ../../docs/tutorials/shading/shading_language.rst:406
 msgid ""
@@ -48302,26 +48826,29 @@ msgid ""
 "optional shader hints to make the compiler understand what the uniform is "
 "used for."
 msgstr ""
+"Cualquier tipo excepto *void*  puede ser un uniform. Adicionalmente, Godot "
+"provee shader hints opcionales para hacer que el compilador entienda para "
+"qué se usará el uniform."
 
 #: ../../docs/tutorials/shading/shading_language.rst:417
 msgid "Full list of hints below:"
-msgstr ""
+msgstr "A continuación está la lista completa de hints:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:420
 msgid "Hint"
-msgstr ""
+msgstr "Hint"
 
 #: ../../docs/tutorials/shading/shading_language.rst:422
 msgid "hint_color"
-msgstr ""
+msgstr "hint_color"
 
 #: ../../docs/tutorials/shading/shading_language.rst:422
 msgid "Used as color"
-msgstr ""
+msgstr "Usado como color"
 
 #: ../../docs/tutorials/shading/shading_language.rst:424
 msgid "**int, float**"
-msgstr ""
+msgstr "**int, float**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:424
 msgid "hint_range(min,max [,step] )"
@@ -48333,51 +48860,51 @@ msgstr "Se utiliza como rango (con mín./máx./paso)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:426
 msgid "hint_albedo"
-msgstr ""
+msgstr "hint_albedo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:426
 msgid "Used as albedo color, default white"
-msgstr ""
+msgstr "Usado como color de albedo, blanco por defecto"
 
 #: ../../docs/tutorials/shading/shading_language.rst:428
 msgid "hint_black_albedo"
-msgstr ""
+msgstr "hint_black_albedo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:428
 msgid "Used as albedo color, default black"
-msgstr ""
+msgstr "Usado como color de albedo, negro por defecto"
 
 #: ../../docs/tutorials/shading/shading_language.rst:430
 msgid "hint_normal"
-msgstr ""
+msgstr "hint_normal"
 
 #: ../../docs/tutorials/shading/shading_language.rst:430
 msgid "Used as normalmap"
-msgstr ""
+msgstr "Usado como normalmap"
 
 #: ../../docs/tutorials/shading/shading_language.rst:432
 msgid "hint_white"
-msgstr ""
+msgstr "hint_white"
 
 #: ../../docs/tutorials/shading/shading_language.rst:432
 msgid "As value, default to white."
-msgstr ""
+msgstr "Como valor, blanco por defecto."
 
 #: ../../docs/tutorials/shading/shading_language.rst:434
 msgid "hint_black"
-msgstr ""
+msgstr "hint_black"
 
 #: ../../docs/tutorials/shading/shading_language.rst:434
 msgid "As value, default to black"
-msgstr ""
+msgstr "Como valor, negro por defecto"
 
 #: ../../docs/tutorials/shading/shading_language.rst:436
 msgid "hint_aniso"
-msgstr ""
+msgstr "hint_aniso"
 
 #: ../../docs/tutorials/shading/shading_language.rst:436
 msgid "As flowmap, default to right."
-msgstr ""
+msgstr "Como flowmap, hacia la derecha por defecto."
 
 #: ../../docs/tutorials/shading/shading_language.rst:440
 msgid ""
@@ -48385,14 +48912,18 @@ msgid ""
 "understand that textures that are supplied as color (ie, albedo) need to be "
 "specified as such for proper SRGB->linear conversion."
 msgstr ""
+"Como el motor 3D de Godot genera las imágenes en espacio de color lineal, es "
+"importante comprender que las texturas que son asignadas como color (por "
+"ejemplo, albedo) necesitan ser especificadas como tal para la correcta "
+"conversión SRGB->linear."
 
 #: ../../docs/tutorials/shading/shading_language.rst:444
 msgid "Uniforms can also be assigned default values:"
-msgstr ""
+msgstr "A los uniforms se les pueden asignar valores por defecto:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:454
 msgid "Built-in Functions"
-msgstr ""
+msgstr "Funciones built-in"
 
 #: ../../docs/tutorials/shading/shading_language.rst:456
 msgid ""
@@ -48402,340 +48933,342 @@ msgid ""
 msgstr ""
 "Se soporta un gran número de funciones propias de GLSL ES 3.0. Cuando se "
 "utiliza la nomenclatura vec_type (float), vec_int_type, vec_uint_type, "
-"vec_bool_type, puede ser scalar o vector."
+"vec_bool_type, puede ser escalar o vector."
 
 #: ../../docs/tutorials/shading/shading_language.rst:460
 msgid "Function"
-msgstr ""
+msgstr "Función"
 
 #: ../../docs/tutorials/shading/shading_language.rst:462
 msgid "vec_type **radians** ( vec_type )"
-msgstr ""
+msgstr "vec_type **radians** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:462
 msgid "Convert degrees to radians"
-msgstr ""
+msgstr "Convierte de grados a radianes"
 
 #: ../../docs/tutorials/shading/shading_language.rst:464
 msgid "vec_type **degrees** ( vec_type )"
-msgstr ""
+msgstr "vec_type **degrees** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:464
 msgid "Convert radians to degrees"
-msgstr ""
+msgstr "Convierte de radianes a grados"
 
 #: ../../docs/tutorials/shading/shading_language.rst:466
 msgid "vec_type **sin** ( vec_type )"
-msgstr ""
+msgstr "vec_type **sin** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:466
 msgid "Sine"
-msgstr ""
+msgstr "Seno"
 
 #: ../../docs/tutorials/shading/shading_language.rst:468
 msgid "vec_type **cos** ( vec_type )"
-msgstr ""
+msgstr "vec_type **cos** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:468
 msgid "Cosine"
-msgstr ""
+msgstr "Coseno"
 
 #: ../../docs/tutorials/shading/shading_language.rst:470
 msgid "vec_type **tan** ( vec_type )"
-msgstr ""
+msgstr "vec_type **tan** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:470
 msgid "Tangent"
-msgstr ""
+msgstr "Tangente"
 
 #: ../../docs/tutorials/shading/shading_language.rst:472
 msgid "vec_type **asin** ( vec_type )"
-msgstr ""
+msgstr "vec_type **asin** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:472
 msgid "Arc-Sine"
-msgstr ""
+msgstr "Arcoseno"
 
 #: ../../docs/tutorials/shading/shading_language.rst:474
 msgid "vec_type **acos** ( vec_type )"
-msgstr ""
+msgstr "vec_type **acos** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:474
 msgid "Arc-Cosine"
-msgstr ""
+msgstr "Arcocoseno"
 
 #: ../../docs/tutorials/shading/shading_language.rst:476
 msgid "vec_type **atan** ( vec_type )"
-msgstr ""
+msgstr "vec_type **atan** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:476
 msgid "Arc-Tangent"
-msgstr ""
+msgstr "Arcotangente"
 
 #: ../../docs/tutorials/shading/shading_language.rst:478
 msgid "vec_type **atan** ( vec_type x, vec_type y )"
-msgstr ""
+msgstr "vec_type **atan** ( vec_type x, vec_type y )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:478
 msgid "Arc-Tangent to convert vector to angle"
-msgstr ""
+msgstr "Arcotangente para convertir vector a ángulo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:480
 msgid "vec_type **sinh** ( vec_type )"
-msgstr ""
+msgstr "vec_type **sinh** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:480
 msgid "Hyperbolic-Sine"
-msgstr ""
+msgstr "Seno hiperbólico"
 
 #: ../../docs/tutorials/shading/shading_language.rst:482
 msgid "vec_type **cosh** ( vec_type )"
-msgstr ""
+msgstr "vec_type **cosh** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:482
 msgid "Hyperbolic-Cosine"
-msgstr ""
+msgstr "Coseno hiperbolico"
 
 #: ../../docs/tutorials/shading/shading_language.rst:484
 msgid "vec_type **tanh** ( vec_type )"
-msgstr ""
+msgstr "vec_type **tanh** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:484
 msgid "Hyperbolic-Tangent"
-msgstr ""
+msgstr "Tangente hiperbólica"
 
 #: ../../docs/tutorials/shading/shading_language.rst:486
 msgid "vec_type **asinh** ( vec_type )"
-msgstr ""
+msgstr "vec_type **asinh** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:486
 msgid "Inverse-Hyperbolic-Sine"
-msgstr ""
+msgstr "Seno hiperbólico inverso"
 
 #: ../../docs/tutorials/shading/shading_language.rst:488
 msgid "vec_type **acosh** ( vec_type )"
-msgstr ""
+msgstr "vec_type **acosh** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:488
 msgid "Inverse-Hyperbolic-Cosine"
-msgstr ""
+msgstr "Coseno hiperbólico inverso"
 
 #: ../../docs/tutorials/shading/shading_language.rst:490
 msgid "vec_type **atanh** ( vec_type )"
-msgstr ""
+msgstr "vec_type **atanh** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:490
 msgid "Inverse-Hyperbolic-Tangent"
-msgstr ""
+msgstr "Tangente hiperbólica inversa"
 
 #: ../../docs/tutorials/shading/shading_language.rst:492
 msgid "vec_type **pow** ( vec_type, vec_type )"
-msgstr ""
+msgstr "vec_type **pow** ( vec_type, vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:492
 msgid "Power"
-msgstr ""
+msgstr "Potencia"
 
 #: ../../docs/tutorials/shading/shading_language.rst:494
 msgid "vec_type **exp** ( vec_type )"
-msgstr ""
+msgstr "vec_type **exp** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:494
 msgid "Base-e Exponential"
-msgstr ""
+msgstr "Exponencial base e"
 
 #: ../../docs/tutorials/shading/shading_language.rst:496
 msgid "vec_type **exp2** ( vec_type )"
-msgstr ""
+msgstr "vec_type **exp2** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:496
 msgid "Base-2 Exponential"
-msgstr ""
+msgstr "Exponencial base 2"
 
 #: ../../docs/tutorials/shading/shading_language.rst:498
 msgid "vec_type **log** ( vec_type )"
-msgstr ""
+msgstr "vec_type **log** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:498
 msgid "Natural Logarithm"
-msgstr ""
+msgstr "Logaritmo natural"
 
 #: ../../docs/tutorials/shading/shading_language.rst:500
 msgid "vec_type **log2** ( vec_type )"
-msgstr ""
+msgstr "vec_type **log2** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:500
 msgid "Base-2 Logarithm"
-msgstr ""
+msgstr "Logartimo base 2"
 
 #: ../../docs/tutorials/shading/shading_language.rst:502
 msgid "vec_type **sqrt** ( vec_type )"
-msgstr ""
+msgstr "vec_type **sqrt** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:502
 msgid "Square Root"
-msgstr ""
+msgstr "Raíz cuadrada"
 
 #: ../../docs/tutorials/shading/shading_language.rst:504
 msgid "vec_type **inversesqrt** ( vec_type )"
-msgstr ""
+msgstr "vec_type **inversesqrt** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:504
 msgid "Inverse Square Root"
-msgstr ""
+msgstr "Raíz cuadrada inversa"
 
 #: ../../docs/tutorials/shading/shading_language.rst:506
 msgid "vec_type **abs** ( vec_type )"
-msgstr ""
+msgstr "vec_type **abs** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:506
 #: ../../docs/tutorials/shading/shading_language.rst:508
 msgid "Absolute"
-msgstr ""
+msgstr "Absoluto"
 
 #: ../../docs/tutorials/shading/shading_language.rst:508
 msgid "vec_int_type **abs** ( vec_int_type )"
-msgstr ""
+msgstr "vec_int_type **abs** ( vec_int_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:510
 msgid "vec_type **sign** ( vec_type )"
-msgstr ""
+msgstr "vec_type **sign** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:510
 #: ../../docs/tutorials/shading/shading_language.rst:512
 msgid "Sign"
-msgstr ""
+msgstr "Signo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:512
 msgid "vec_int_type **sign** ( vec_int_type )"
-msgstr ""
+msgstr "vec_int_type **sign** ( vec_int_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:514
 msgid "vec_type **floor** ( vec_type )"
-msgstr ""
+msgstr "vec_type **floor** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:514
 msgid "Floor"
-msgstr ""
+msgstr "Redondeo hacia abajo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:516
 msgid "vec_type **round** ( vec_type )"
-msgstr ""
+msgstr "vec_type **round** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:516
 msgid "Round"
-msgstr ""
+msgstr "Redondeo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:518
 msgid "vec_type **roundEven** ( vec_type )"
-msgstr ""
+msgstr "vec_type **roundEven** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:518
 msgid "Round nearest even"
-msgstr ""
+msgstr "Redondeo hacia el número par más cercano"
 
 #: ../../docs/tutorials/shading/shading_language.rst:520
 msgid "vec_type **trunc** ( vec_type )"
-msgstr ""
+msgstr "vec_type **trunc** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:520
 msgid "Truncation"
-msgstr ""
+msgstr "Truncamiento"
 
 #: ../../docs/tutorials/shading/shading_language.rst:522
 msgid "vec_type **ceil** ( vec_type )"
-msgstr ""
+msgstr "vec_type **ceil** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:522
 msgid "Ceiling"
-msgstr ""
+msgstr "Redondeo hacia arriba"
 
 #: ../../docs/tutorials/shading/shading_language.rst:524
 msgid "vec_type **fract** ( vec_type )"
-msgstr ""
+msgstr "vec_type **fract** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:524
 msgid "Fractional"
-msgstr ""
+msgstr "Parte fraccionaria"
 
 #: ../../docs/tutorials/shading/shading_language.rst:526
 msgid "vec_type **mod** ( vec_type, vec_type )"
-msgstr ""
+msgstr "vec_type **mod** ( vec_type, vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:526
 #: ../../docs/tutorials/shading/shading_language.rst:528
 msgid "Remainder"
-msgstr ""
+msgstr "Remanente"
 
 #: ../../docs/tutorials/shading/shading_language.rst:528
 msgid "vec_type **mod** ( vec_type, float )"
-msgstr ""
+msgstr "vec_type **mod** ( vec_type, float )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:530
 msgid "vec_type **modf** ( vec_type x, out vec_type i )"
-msgstr ""
+msgstr "vec_type **modf** ( vec_type x, out vec_type i )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:530
 msgid "Fractional of x, with i has integer part"
-msgstr ""
+msgstr "Parte fraccionaria de x, con i como parte entera"
 
 #: ../../docs/tutorials/shading/shading_language.rst:532
 msgid "vec_scalar_type **min** ( vec_scalar_type a, vec_scalar_type b )"
-msgstr ""
+msgstr "vec_scalar_type **min** ( vec_scalar_type a, vec_scalar_type b )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:532
 msgid "Minimum"
-msgstr ""
+msgstr "Mínimo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:534
 msgid "vec_scalar_type **max** ( vec_scalar_type a, vec_scalar_type b )"
-msgstr ""
+msgstr "vec_scalar_type **max** ( vec_scalar_type a, vec_scalar_type b )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:534
 msgid "Maximum"
-msgstr ""
+msgstr "Máximo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:536
 msgid ""
 "vec_scalar_type **clamp** ( vec_scalar_type value, vec_scalar_type min, "
 "vec_scalar_type max )"
 msgstr ""
+"vec_scalar_type **clamp** ( vec_scalar_type value, vec_scalar_type min, "
+"vec_scalar_type max )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:536
 msgid "Clamp to Min-Max"
-msgstr ""
+msgstr "Restringe a Min-Max"
 
 #: ../../docs/tutorials/shading/shading_language.rst:538
 msgid "vec_type **mix** ( vec_type a, vec_type b, float c )"
-msgstr ""
+msgstr "vec_type **mix** ( vec_type a, vec_type b, float c )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:538
 msgid "Linear Interpolate (Scalar Coef.)"
-msgstr ""
+msgstr "Interpolación lineal (coeficiente escalar)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:540
 msgid "vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
-msgstr ""
+msgstr "vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:540
 msgid "Linear Interpolate (Vector Coef.)"
-msgstr ""
+msgstr "Interpolación lineal (coeficiente vectorial)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:542
 msgid "vec_type **mix** ( vec_type a, vec_type b, bool c )"
-msgstr ""
+msgstr "vec_type **mix** ( vec_type a, vec_type b, bool c )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:542
 msgid "Linear Interpolate (Bool Selection)"
-msgstr ""
+msgstr "Interpolación lineal (selección booleana)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:544
 msgid "vec_type **mix** ( vec_type a, vec_type b, vec_bool_type c )"
-msgstr ""
+msgstr "vec_type **mix** ( vec_type a, vec_type b, vec_bool_type c )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:544
 msgid "Linear Interpolate (Bool-Vector Selection)"
-msgstr ""
+msgstr "Interpolación lineal (selección booleana vectorial)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:546
 msgid "vec_type **step** ( vec_type a, vec_type b )"
@@ -48743,7 +49276,7 @@ msgstr "vec_type **step** ( vec_type a, vec_type b )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:546
 msgid "\\` b[i] < a[i] ? 0.0 : 1.0 \\`"
-msgstr ""
+msgstr "\\` b[i] < a[i] ? 0.0 : 1.0 \\`"
 
 #: ../../docs/tutorials/shading/shading_language.rst:548
 msgid "vec_type **step** ( float a, vec_type b )"
@@ -48751,136 +49284,136 @@ msgstr "vec_type **step** ( float a, vec_type b )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:548
 msgid "\\` b[i] < a ? 0.0 : 1.0 \\`"
-msgstr ""
+msgstr "\\` b[i] < a ? 0.0 : 1.0 \\`"
 
 #: ../../docs/tutorials/shading/shading_language.rst:550
 msgid "vec_type **smoothstep** ( vec_type a, vec_type b, vec_type c )"
-msgstr ""
+msgstr "vec_type **smoothstep** ( vec_type a, vec_type b, vec_type c )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:550
 #: ../../docs/tutorials/shading/shading_language.rst:552
 msgid "Hermite Interpolate"
-msgstr ""
+msgstr "Interpolación de Hermite"
 
 #: ../../docs/tutorials/shading/shading_language.rst:552
 msgid "vec_type **smoothstep** ( float a, float b, vec_type c )"
-msgstr ""
+msgstr "vec_type **smoothstep** ( float a, float b, vec_type c )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:554
 msgid "vec_bool_type **isnan** ( vec_type )"
-msgstr ""
+msgstr "vec_bool_type **isnan** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:554
 msgid "Scalar, or vector component being nan"
-msgstr ""
+msgstr "Escalar o componente de un vector siendo NaN (no un número)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:556
 msgid "vec_bool_type **isinf** ( vec_type )"
-msgstr ""
+msgstr "vec_bool_type **isinf** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:556
 msgid "Scalar, or vector component being inf"
-msgstr ""
+msgstr "Escalar o componente de vector siendo infinito"
 
 #: ../../docs/tutorials/shading/shading_language.rst:558
 msgid "vec_int_type **floatBitsToInt** ( vec_type )"
-msgstr ""
+msgstr "vec_int_type **floatBitsToInt** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:558
 msgid "Float->Int bit copying, no conversion"
-msgstr ""
+msgstr "Copia por bits Float->Int, sin conversión"
 
 #: ../../docs/tutorials/shading/shading_language.rst:560
 msgid "vec_uint_type **floatBitsToUint** ( vec_type )"
-msgstr ""
+msgstr "vec_uint_type **floatBitsToUint** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:560
 msgid "Float->UInt bit copying, no conversion"
-msgstr ""
+msgstr "Copia por bits Float->UInt, sin conversión"
 
 #: ../../docs/tutorials/shading/shading_language.rst:562
 msgid "vec_type **intBitsToFloat** ( vec_int_type )"
-msgstr ""
+msgstr "vec_type **intBitsToFloat** ( vec_int_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:562
 msgid "Int->Float bit copying, no conversion"
-msgstr ""
+msgstr "Copia por bit Int->Float, sin conversión"
 
 #: ../../docs/tutorials/shading/shading_language.rst:564
 msgid "vec_type **uintBitsToFloat** ( vec_uint_type )"
-msgstr ""
+msgstr "vec_type **uintBitsToFloat** ( vec_uint_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:564
 msgid "UInt->Float bit copying, no conversion"
-msgstr ""
+msgstr "Copia por bit UInt->Float, sin conversión"
 
 #: ../../docs/tutorials/shading/shading_language.rst:566
 msgid "float **length** ( vec_type )"
-msgstr ""
+msgstr "float **length** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:566
 msgid "Vector Length"
-msgstr ""
+msgstr "Longitud de un vector"
 
 #: ../../docs/tutorials/shading/shading_language.rst:568
 msgid "float **distance** ( vec_type, vec_type )"
-msgstr ""
+msgstr "float **distance** ( vec_type, vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:568
 msgid "Distance between vector"
-msgstr ""
+msgstr "Distancia entre vectores"
 
 #: ../../docs/tutorials/shading/shading_language.rst:570
 msgid "float **dot** ( vec_type, vec_type )"
-msgstr ""
+msgstr "float **dot** ( vec_type, vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:570
 msgid "Dot Product"
-msgstr ""
+msgstr "Producto punto"
 
 #: ../../docs/tutorials/shading/shading_language.rst:572
 msgid "vec3 **cross** ( vec3, vec3 )"
-msgstr ""
+msgstr "vec3 **cross** ( vec3, vec3 )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:572
 msgid "Cross Product"
-msgstr ""
+msgstr "Producto cruz"
 
 #: ../../docs/tutorials/shading/shading_language.rst:574
 msgid "vec_type **normalize** ( vec_type )"
-msgstr ""
+msgstr "vec_type **normalize** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:574
 msgid "Normalize to unit length"
-msgstr ""
+msgstr "Normalizado a la longitud de unidad"
 
 #: ../../docs/tutorials/shading/shading_language.rst:576
 msgid "vec3 **reflect** ( vec3 I, vec3 N )"
-msgstr ""
+msgstr "vec3 **reflect** ( vec3 I, vec3 N )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:576
 msgid "Reflect"
-msgstr ""
+msgstr "Reflejo"
 
 #: ../../docs/tutorials/shading/shading_language.rst:578
 msgid "vec3 **refract** ( vec3 I, vec3 N, float eta )"
-msgstr ""
+msgstr "vec3 **refract** ( vec3 I, vec3 N, float eta )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:578
 msgid "Refract"
-msgstr ""
+msgstr "Refracción"
 
 #: ../../docs/tutorials/shading/shading_language.rst:580
 msgid "vec_type **faceforward** ( vec_type N, vec_type I, vec_type Nref )"
-msgstr ""
+msgstr "vec_type **faceforward** ( vec_type N, vec_type I, vec_type Nref )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:580
 msgid "If dot(Nref, I) < 0 return N, otherwise –N"
-msgstr ""
+msgstr "Si dot(Nref, I) < 0 retorna N, de otro modo –N"
 
 #: ../../docs/tutorials/shading/shading_language.rst:582
 msgid "mat_type **matrixCompMult** ( mat_type, mat_type )"
-msgstr ""
+msgstr "mat_type **matrixCompMult** ( mat_type, mat_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:582
 msgid "Matrix Component Multiplication"
@@ -48888,193 +49421,194 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:584
 msgid "mat_type **outerProduct** ( vec_type, vec_type )"
-msgstr ""
+msgstr "mat_type **outerProduct** ( vec_type, vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:584
 msgid "Matrix Outer Product"
-msgstr ""
+msgstr "Producto tensorial"
 
 #: ../../docs/tutorials/shading/shading_language.rst:586
 msgid "mat_type **transpose** ( mat_type )"
-msgstr ""
+msgstr "mat_type **transpose** ( mat_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:586
 msgid "Transpose Matrix"
-msgstr ""
+msgstr "Matriz transpuesta"
 
 #: ../../docs/tutorials/shading/shading_language.rst:588
 msgid "float **determinant** ( mat_type )"
-msgstr ""
+msgstr "float **determinant** ( mat_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:588
 msgid "Matrix Determinant"
-msgstr ""
+msgstr "Matriz determinante"
 
 #: ../../docs/tutorials/shading/shading_language.rst:590
 msgid "mat_type **inverse** ( mat_type )"
-msgstr ""
+msgstr "mat_type **inverse** ( mat_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:590
 msgid "Inverse Matrix"
-msgstr ""
+msgstr "Matriz inversa"
 
 #: ../../docs/tutorials/shading/shading_language.rst:592
 msgid "vec_bool_type **lessThan** ( vec_scalar_type, vec_scalar_type )"
-msgstr ""
+msgstr "vec_bool_type **lessThan** ( vec_scalar_type, vec_scalar_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:592
 msgid "Bool vector cmp on < int/uint/float vectors"
-msgstr ""
+msgstr "Comparación booleana vectorial < entre vectores int/uint/float"
 
 #: ../../docs/tutorials/shading/shading_language.rst:594
 msgid "vec_bool_type **greaterThan** ( vec_scalar_type, vec_scalar_type )"
-msgstr ""
+msgstr "vec_bool_type **greaterThan** ( vec_scalar_type, vec_scalar_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:594
 msgid "Bool vector cmp on > int/uint/float vectors"
-msgstr ""
+msgstr "Comparación booleana vectorial > entre vectores int/uint/float"
 
 #: ../../docs/tutorials/shading/shading_language.rst:596
 msgid "vec_bool_type **lessThanEqual** ( vec_scalar_type, vec_scalar_type )"
-msgstr ""
+msgstr "vec_bool_type **lessThanEqual** ( vec_scalar_type, vec_scalar_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:596
 msgid "Bool vector cmp on <= int/uint/float vectors"
-msgstr ""
+msgstr "Comparación booleana vectorial <= entre vectores int/uint/float"
 
 #: ../../docs/tutorials/shading/shading_language.rst:598
 msgid "vec_bool_type **greaterThanEqual** ( vec_scalar_type, vec_scalar_type )"
 msgstr ""
+"vec_bool_type **greaterThanEqual** ( vec_scalar_type, vec_scalar_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:598
 msgid "Bool vector cmp on >= int/uint/float vectors"
-msgstr ""
+msgstr "Comparación booleana vectorial >= entre vectores int/uint/float"
 
 #: ../../docs/tutorials/shading/shading_language.rst:600
 msgid "vec_bool_type **equal** ( vec_scalar_type, vec_scalar_type )"
-msgstr ""
+msgstr "vec_bool_type **equal** ( vec_scalar_type, vec_scalar_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:600
 msgid "Bool vector cmp on == int/uint/float vectors"
-msgstr ""
+msgstr "Comparación booleana vectorial == entre vectores int/uint/float"
 
 #: ../../docs/tutorials/shading/shading_language.rst:602
 msgid "vec_bool_type **notEqual** ( vec_scalar_type, vec_scalar_type )"
-msgstr ""
+msgstr "vec_bool_type **notEqual** ( vec_scalar_type, vec_scalar_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:602
 msgid "Bool vector cmp on != int/uint/float vectors"
-msgstr ""
+msgstr "Comparación booleana vectorial != entre vectores int/uint/float"
 
 #: ../../docs/tutorials/shading/shading_language.rst:604
 msgid "bool **any** ( vec_bool_type )"
-msgstr ""
+msgstr "bool **any** ( vec_bool_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:604
 msgid "Any component is true"
-msgstr ""
+msgstr "Cualquier componente es true"
 
 #: ../../docs/tutorials/shading/shading_language.rst:606
 msgid "bool **all** ( vec_bool_type )"
-msgstr ""
+msgstr "bool **all** ( vec_bool_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:606
 msgid "All components are true"
-msgstr ""
+msgstr "Todos los componentes son true"
 
 #: ../../docs/tutorials/shading/shading_language.rst:608
 msgid "bool **not** ( vec_bool_type )"
-msgstr ""
+msgstr "bool **not** ( vec_bool_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:608
 msgid "No components are true"
-msgstr ""
+msgstr "Ningún componente es true"
 
 #: ../../docs/tutorials/shading/shading_language.rst:610
 msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
-msgstr ""
+msgstr "ivec2 **textureSize** ( sampler2D_type s, int lod )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:610
 msgid "Get the size of a texture"
-msgstr ""
+msgstr "Obtiene el tamaño de una textura"
 
 #: ../../docs/tutorials/shading/shading_language.rst:612
 msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
-msgstr ""
+msgstr "ivec2 **textureSize** ( samplerCube s, int lod )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:612
 msgid "Get the size of a cubemap"
-msgstr ""
+msgstr "Obtiene el tamaño de un cubemap"
 
 #: ../../docs/tutorials/shading/shading_language.rst:614
 msgid "vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
-msgstr ""
+msgstr "vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:614
 msgid "Perform a 2D texture read"
-msgstr ""
+msgstr "Realiza una lectura de textura 2D"
 
 #: ../../docs/tutorials/shading/shading_language.rst:616
 msgid "vec4_type **texture** ( samplerCube s, vec3 uv [, float bias] )"
-msgstr ""
+msgstr "vec4_type **texture** ( samplerCube s, vec3 uv [, float bias] )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:616
 msgid "Perform a Cube texture read"
-msgstr ""
+msgstr "Realiza una lectura de textura Cube"
 
 #: ../../docs/tutorials/shading/shading_language.rst:618
 msgid "vec4_type **textureProj** ( sampler2D_type s, vec3 uv [, float bias] )"
-msgstr ""
+msgstr "vec4_type **textureProj** ( sampler2D_type s, vec3 uv [, float bias] )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:618
 #: ../../docs/tutorials/shading/shading_language.rst:620
 msgid "Perform a texture read with projection"
-msgstr ""
+msgstr "Realiza una lectura de textura con proyección"
 
 #: ../../docs/tutorials/shading/shading_language.rst:620
 msgid "vec4_type **textureProj** ( sampler2D_type s, vec4 uv [, float bias] )"
-msgstr ""
+msgstr "vec4_type **textureProj** ( sampler2D_type s, vec4 uv [, float bias] )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:622
 msgid "vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
-msgstr ""
+msgstr "vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:622
 msgid "Perform a 2D texture read at custom mipmap"
-msgstr ""
+msgstr "Realiza una lectura de textura 2D con mipmap personalizado"
 
 #: ../../docs/tutorials/shading/shading_language.rst:624
 msgid "vec4_type **textureLod** ( samplerCube s, vec3 uv, float lod )"
-msgstr ""
+msgstr "vec4_type **textureLod** ( samplerCube s, vec3 uv, float lod )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:624
 msgid "Perform a Cube texture read at custom mipmap"
-msgstr ""
+msgstr "Realiza una lectura de textura Cube con mipmap personalizado"
 
 #: ../../docs/tutorials/shading/shading_language.rst:626
 msgid "vec4_type **textureProjLod** ( sampler2D_type s, vec3 uv, float lod )"
-msgstr ""
+msgstr "vec4_type **textureProjLod** ( sampler2D_type s, vec3 uv, float lod )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:626
 #: ../../docs/tutorials/shading/shading_language.rst:628
 msgid "Perform a texture read with projection/lod"
-msgstr ""
+msgstr "Realiza una lectura de textura con proyección/lod (nivel de detalle)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:628
 msgid "vec4_type **textureProjLod** ( sampler2D_type s, vec4 uv, float lod )"
-msgstr ""
+msgstr "vec4_type **textureProjLod** ( sampler2D_type s, vec4 uv, float lod )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:630
 msgid "vec4_type **texelFetch** ( sampler2D_type s, ivec2 uv, int lod )"
-msgstr ""
+msgstr "vec4_type **texelFetch** ( sampler2D_type s, ivec2 uv, int lod )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:630
 msgid "Fetch a single texel using integer coords"
-msgstr ""
+msgstr "Obtiene un texel usando coordenadas enteras"
 
 #: ../../docs/tutorials/shading/shading_language.rst:632
 msgid "vec_type **dFdx** ( vec_type )"
-msgstr ""
+msgstr "vec_type **dFdx** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:632
 msgid "Derivative in x using local differencing"
@@ -49082,7 +49616,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:634
 msgid "vec_type **dFdy** ( vec_type )"
-msgstr ""
+msgstr "vec_type **dFdy** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:634
 msgid "Derivative in y using local differencing"
@@ -49090,7 +49624,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:636
 msgid "vec_type **fwidth** ( vec_type )"
-msgstr ""
+msgstr "vec_type **fwidth** ( vec_type )"
 
 #: ../../docs/tutorials/shading/shading_language.rst:636
 msgid "Sum of absolute derivative in x and y"
@@ -49098,220 +49632,221 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:642
 msgid "Shader Types In-Depth"
-msgstr ""
+msgstr "Tipos de shader en detalle"
 
 #: ../../docs/tutorials/shading/shading_language.rst:645
 #: ../../docs/development/cpp/inheritance_class_tree.rst:25
 msgid "Spatial"
-msgstr ""
+msgstr "Spatial"
 
 #: ../../docs/tutorials/shading/shading_language.rst:647
 msgid "Accepted render modes and built-ins for **shader_type spatial;**."
-msgstr ""
+msgstr "Modos de render aceptados y built-ins para  **shader_type spatial;**."
 
 #: ../../docs/tutorials/shading/shading_language.rst:653
 #: ../../docs/tutorials/shading/shading_language.rst:925
 #: ../../docs/tutorials/shading/shading_language.rst:1085
 msgid "Render Mode"
-msgstr ""
+msgstr "Modo de render"
 
 #: ../../docs/tutorials/shading/shading_language.rst:655
 #: ../../docs/tutorials/shading/shading_language.rst:927
 msgid "**blend_mix**"
-msgstr ""
+msgstr "**blend_mix**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:655
 #: ../../docs/tutorials/shading/shading_language.rst:927
 msgid "Mix blend mode (alpha is transparency), default."
 msgstr ""
+"Modo de blending por mezcla (alfa es transparencia), es el modo por defecto."
 
 #: ../../docs/tutorials/shading/shading_language.rst:657
 #: ../../docs/tutorials/shading/shading_language.rst:929
 msgid "**blend_add**"
-msgstr ""
+msgstr "**blend_add**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:657
 #: ../../docs/tutorials/shading/shading_language.rst:929
 msgid "Additive blend mode."
-msgstr ""
+msgstr "Modo de blending aditivo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:659
 #: ../../docs/tutorials/shading/shading_language.rst:931
 msgid "**blend_sub**"
-msgstr ""
+msgstr "**blend_sub**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:659
 msgid "Substractive blend mode."
-msgstr ""
+msgstr "Modo de blending substractivo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:661
 #: ../../docs/tutorials/shading/shading_language.rst:933
 msgid "**blend_mul**"
-msgstr ""
+msgstr "**blend_mul**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:661
 #: ../../docs/tutorials/shading/shading_language.rst:933
 msgid "Multiplicative blend mode."
-msgstr ""
+msgstr "Modo de blending multiplicativo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:663
 msgid "**depth_draw_opaque**"
-msgstr ""
+msgstr "**depth_draw_opaque**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:663
 msgid "Only draw depth for opaque geometry (not transparent)."
-msgstr ""
+msgstr "Sólo dibuja \"depth\" para geometría opaca (no transparente)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:665
 msgid "**depth_draw_always**"
-msgstr ""
+msgstr "**depth_draw_always**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:665
 msgid "Always draw depth (opaque and transparent)."
-msgstr ""
+msgstr "Siempre dibuja \"depth\" (opaco y transparente)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:667
 msgid "**depth_draw_never**"
-msgstr ""
+msgstr "**depth_draw_never**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:667
 msgid "Never draw depth."
-msgstr ""
+msgstr "Nunca dibuja depth."
 
 #: ../../docs/tutorials/shading/shading_language.rst:669
 msgid "**depth_draw_alpha_prepass**"
-msgstr ""
+msgstr "**depth_draw_alpha_prepass**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:669
 msgid "Do opaque depth pre-pass for transparent geometry."
-msgstr ""
+msgstr "Realiza un pre-pass de depth opaco para geometría transparente."
 
 #: ../../docs/tutorials/shading/shading_language.rst:671
 msgid "**depth_test_disable**"
-msgstr ""
+msgstr "**depth_test_disable**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:671
 msgid "Disable depth testing."
-msgstr ""
+msgstr "Desactiva testing de depth."
 
 #: ../../docs/tutorials/shading/shading_language.rst:673
 msgid "**cull_front**"
-msgstr ""
+msgstr "**cull_front**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:673
 msgid "Cull front-faces."
-msgstr ""
+msgstr "Culling de caras frontales."
 
 #: ../../docs/tutorials/shading/shading_language.rst:675
 msgid "**cull_back**"
-msgstr ""
+msgstr "**cull_back**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:675
 msgid "Cull back-faces (default)."
-msgstr ""
+msgstr "Culling de caras internas (por defecto)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:677
 msgid "**cull_disabled**"
-msgstr ""
+msgstr "**cull_disabled**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:677
 msgid "Culling disabled (double sided)."
-msgstr ""
+msgstr "Culling deshabilitado (doble cara)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:679
 #: ../../docs/tutorials/shading/shading_language.rst:937
 msgid "**unshaded**"
-msgstr ""
+msgstr "**unshaded**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:679
 #: ../../docs/tutorials/shading/shading_language.rst:937
 msgid "Result is just albedo. No lighting/shading happens in material."
-msgstr ""
+msgstr "El resultado es sólo albedo. El material no recibe luces ni shading."
 
 #: ../../docs/tutorials/shading/shading_language.rst:681
 msgid "**diffuse_lambert**"
-msgstr ""
+msgstr "**diffuse_lambert**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:681
 msgid "Lambert shading for diffuse (default)."
-msgstr ""
+msgstr "Utiliza Lambert shading para diffuse (por defecto)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:683
 msgid "**diffuse_lambert_wrap**"
-msgstr ""
+msgstr "**diffuse_lambert_wrap**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:683
 msgid "Lambert wrapping (roughness dependent) for diffuse."
-msgstr ""
+msgstr "Utiliza Lambert wrapping (dependiente de roughness) para diffuse."
 
 #: ../../docs/tutorials/shading/shading_language.rst:685
 msgid "**diffuse_oren_nayar**"
-msgstr ""
+msgstr "**diffuse_oren_nayar**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:685
 msgid "Oren Nayar for diffuse."
-msgstr ""
+msgstr "Usa Oren Nayar para diffuse."
 
 #: ../../docs/tutorials/shading/shading_language.rst:687
 msgid "**diffuse_burley**"
-msgstr ""
+msgstr "**diffuse_burley**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:687
 msgid "Burley (Disney PBS) for diffuse."
-msgstr ""
+msgstr "Utiliza Burley (Disney PBS) para diffuse."
 
 #: ../../docs/tutorials/shading/shading_language.rst:689
 msgid "**diffuse_toon**"
-msgstr ""
+msgstr "**diffuse_toon**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:689
 msgid "Toon shading for diffuse."
-msgstr ""
+msgstr "Shading Toon para diffuse."
 
 #: ../../docs/tutorials/shading/shading_language.rst:691
 msgid "**specular_schlick_ggx**"
-msgstr ""
+msgstr "**specular_schlick_ggx**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:691
 msgid "Schlick-GGX for specular (default)."
-msgstr ""
+msgstr "Usa Schlick-GGX para specular (por defecto)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:693
 msgid "**specular_blinn**"
-msgstr ""
+msgstr "**specular_blinn**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:693
 msgid "Blinn for specular (compatibility)."
-msgstr ""
+msgstr "Blinn para specular (compatibilidad)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:695
 msgid "**specular_phong**"
-msgstr ""
+msgstr "**specular_phong**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:695
 msgid "Phong for specular (compatibility)."
-msgstr ""
+msgstr "Usa Phong para specular (compatibilidad)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:697
 msgid "**specular_toon**"
-msgstr ""
+msgstr "**specular_toon**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:697
 msgid "Toon for specular."
-msgstr ""
+msgstr "Usa Toon para specular."
 
 #: ../../docs/tutorials/shading/shading_language.rst:699
 msgid "**specular_disabled**"
-msgstr ""
+msgstr "**specular_disabled**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:699
 msgid "Disable specular."
-msgstr ""
+msgstr "Deshabilita specular."
 
 #: ../../docs/tutorials/shading/shading_language.rst:701
 #: ../../docs/tutorials/shading/shading_language.rst:941
 msgid "**skip_vertex_transform**"
-msgstr ""
+msgstr "**skip_vertex_transform**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:701
 #: ../../docs/tutorials/shading/shading_language.rst:941
@@ -49320,19 +49855,21 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:703
 msgid "**world_vertex_coords**"
-msgstr ""
+msgstr "**world_vertex_coords**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:703
 msgid "VERTEX/NORMAL/etc are modified in world coordinates instead of local."
 msgstr ""
+"VERTEX/NORMAL/etc son modificados en coordenadas del mundo en lugar de "
+"locales."
 
 #: ../../docs/tutorials/shading/shading_language.rst:705
 msgid "**vertex_lighting**"
-msgstr ""
+msgstr "**vertex_lighting**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:705
 msgid "Use vertex-based lighting."
-msgstr ""
+msgstr "Usa iluminación basada en vértices."
 
 #: ../../docs/tutorials/shading/shading_language.rst:709
 #: ../../docs/tutorials/shading/shading_language.rst:945
@@ -50610,7 +51147,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/index.rst:2
 msgid "Networking"
-msgstr "Networking (Redes)"
+msgstr "Redes"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
@@ -50618,7 +51155,7 @@ msgstr "Multiplayer Alto Nivel"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High level vs low level API"
-msgstr "Alto nivel VS Bajo nivel API"
+msgstr "Alto nivel VS bajo nivel API"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -51681,7 +52218,7 @@ msgid ""
 "wikipedia.org/wiki/Privacy-enhanced_Electronic_Mail format."
 msgstr ""
 "Este archivo debe contener cualquier número de certificados públicos en "
-"formato `PEM <https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail>`."
+"formato :ref:`PEM <https://en.wikipedia.org/wiki/Privacy-Enhanced_Mail>`."
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:24
 msgid ""
@@ -52443,10 +52980,10 @@ msgid ""
 "some control over the viewport to the interface which automatically enables "
 "things like stereo scopic rendering on the viewport."
 msgstr ""
-"Este código encuentra la interfaz que deseamos utilizar, la inicializa y, si "
-"tiene éxito, enlaza la ventana principal a la interfaz. Este último paso da "
-"un cierto control sobre la vista a la interfaz que automáticamente permite "
-"cosas como la renderización estereoscópica en la ventana de visualización."
+"Este código buscará la interfaz que deseamos utilizar, la inicializará y, si "
+"tiene éxito, enlazará el viewport principal a la interfaz. Este último paso "
+"da un cierto control sobre el viewport a la interfaz que permite hacer "
+"automáticamente cosas como la representación estereoscópica en el viewport."
 
 #: ../../docs/tutorials/vr/vr_primer.rst:37
 msgid ""
@@ -60225,9 +60762,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
-#, fuzzy
 msgid "Custom Godot servers"
-msgstr "Servidores de Godot personalizados"
+msgstr "Servidores Godot personalizados"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:9
 msgid ""
@@ -60271,9 +60807,8 @@ msgid "Adding support for a new input device."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
-#, fuzzy
 msgid "Adding writing threads."
-msgstr "Añadir granadas"
+msgstr "Añadiendo hilos de escritura."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:34
 msgid "Adding a custom VoIP protocol."
@@ -60284,9 +60819,8 @@ msgid "And more..."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:38
-#, fuzzy
 msgid "Creating a Godot server"
-msgstr "Creando un Servidor Godot"
+msgstr "Creando un servidor Godot"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:40
 msgid ""
@@ -60311,9 +60845,8 @@ msgid ":ref:`RID<class_rid>`"
 msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:320
-#, fuzzy
 msgid "Registering the class in GDScript"
-msgstr "Registrando una clase en GDScript"
+msgstr "Registrar una clase en GDScript"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:322
 msgid ""
@@ -60323,17 +60856,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:326
-#, fuzzy
 msgid ""
 "Since a Godot server class creates an instance and binds it to a static "
 "singleton, binding the class might not reference the correct instance. "
 "Therefore, a dummy class must be created to reference the proper Godot "
 "server."
 msgstr ""
-"Ya que la clase Godot Server crea una instancia y la enlaza a un singleton "
-"estático, enlazar la clase podría no hacer referencia a la instancia "
-"correcta. Por lo tanto, se debe crear una clase dummy para hacer referencia "
-"al Servidor Godot apropiado."
+"Ya que una clase de servidor Godot crea una instancia y la enlaza a un "
+"singleton estático, enlazar la clase podría no hacer referencia a la "
+"instancia correcta. Por lo tanto, se debe crear una clase dummy para hacer "
+"referencia al servidor Godot apropiado."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:330
 msgid ""
@@ -60352,13 +60884,12 @@ msgid "Bind methods"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:377
-#, fuzzy
 msgid ""
 "The dummy class binds singleton methods to GDScript. In most cases, the "
 "dummy class methods wraps around."
 msgstr ""
-"La clase dummy une métodos singleton a gdscript. En la mayoría de los casos, "
-"los métodos de la clase dummy se usan."
+"La clase dummy une los métodos singleton a GDScript. En la mayoría de los "
+"casos, los métodos de la clase dummy se utilizan."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:385
 msgid "Binding Signals"
@@ -60395,9 +60926,8 @@ msgid "Summing it up"
 msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:478
-#, fuzzy
 msgid "Here is the GDScript sample code:"
-msgstr "Aquí está el código de ejemplo de GDScript"
+msgstr "Aquí está el código de ejemplo de GDScript:"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:504
 msgid ""
@@ -63556,19 +64086,23 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:137
 msgid "Push and request a pull of your changes"
-msgstr ""
+msgstr "Solicitar push o pull de sus cambios"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:139
 msgid ""
 "Once your modifications are finished, push your changes on your GitHub "
 "repository:"
 msgstr ""
+"Una vez que se hayan terminado las modificaciones, haz un push de los "
+"cambios en el repositorio de GitHub:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:148
 msgid ""
 "When it's done, you can ask for a Pull Request via the GitHub UI of your "
 "Godot fork."
 msgstr ""
+"Cuando este listo, puedes hacer un Pull Request a través de la UI de GitHub "
+"de tu fork de Godot."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:152
 msgid ""
@@ -63609,7 +64143,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:164
 msgid "How to write the class reference"
-msgstr ""
+msgstr "Cómo escribir la referencia de la clase"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:166
 msgid ""
@@ -63715,7 +64249,7 @@ msgstr ""
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "See :ref:`hide <class_spatial_hide>`."
-msgstr ""
+msgstr "See :ref:`hide <class_spatial_hide>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "[method Class.methodname]"
@@ -63744,7 +64278,7 @@ msgstr ""
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Get :ref:`scale <class_node2d_scale>`."
-msgstr ""
+msgstr "Get :ref:`scale <class_node2d_scale>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "[member Class.membername]"
@@ -63760,7 +64294,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "[signal signalname]"
-msgstr ""
+msgstr "[signal nombresignal]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Link to a signal in this class"
@@ -63801,7 +64335,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:243
 msgid "Some **bold** text."
-msgstr ""
+msgstr "Algo de texto en **negrita**."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "[i] [/i]"
@@ -63817,7 +64351,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Some *italic* text."
-msgstr ""
+msgstr "Algo de texto en *cursiva*."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "[code] [/code]"
@@ -63825,7 +64359,7 @@ msgstr "[code] [/code]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Monospace"
-msgstr ""
+msgstr "Monospace"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some [code]monospace[/code] text."
@@ -63841,7 +64375,7 @@ msgstr "[codeblock] [/codeblock]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Multiline preformatted block"
-msgstr ""
+msgstr "Bloque pre-formateado con múltiples líneas"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "*See below.*"
@@ -63852,6 +64386,9 @@ msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use spaces for indentation (the parser will delete tabs). Example:"
 msgstr ""
+"Usa ``[bloque de código]`` para pre-formatear bloques de código. Dentro de "
+"``[bloque de código]``, usa espacios para hacer sangría (el analizador "
+"eliminará las tabulaciones). Como ejemplo:"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "Will display as:"
@@ -63898,6 +64435,8 @@ msgid ""
 "So, where is the Godot community and where can you ask questions and get "
 "help?"
 msgstr ""
+"Entonces, ¿dónde está la comunidad de Godot y dónde puedo hacer preguntas "
+"para obtener ayuda?"
 
 #: ../../docs/community/channels.rst:8
 msgid ""
@@ -63938,12 +64477,16 @@ msgid ""
 "`Engine development: #godotengine-devel <http://webchat.freenode.net/?"
 "channels=#godotengine-devel>`_"
 msgstr ""
+"`Desarrollo del motor: #godotengine-devel <http://webchat.freenode.net/?"
+"channels=#godotengine-devel>`_"
 
 #: ../../docs/community/channels.rst:22
 msgid ""
 "`Documentation: #godotengine-doc <http://webchat.freenode.net/?"
 "channels=#godotengine-doc>`_"
 msgstr ""
+"`Documentación: #godotengine-doc <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_"
 
 #: ../../docs/community/channels.rst:23
 msgid ""
@@ -63989,7 +64532,7 @@ msgstr "`GitHub <https://github.com/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:37
 msgid "`Facebook group <https://www.facebook.com/groups/godotengine/>`_"
-msgstr "`grupo de Facebook <https://www.facebook.com/groups/godotengine/>`_"
+msgstr "`Grupo de Facebook <https://www.facebook.com/groups/godotengine/>`_"
 
 #: ../../docs/community/channels.rst:38
 msgid "`Twitter (also, #godotengine) <https://twitter.com/godotengine>`_"
@@ -64082,6 +64625,8 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: Un directorio de recursos supervisado por Andre Schmitz "
+"<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 
 #~ msgid "If a parent constructor takes arguments, they are passed like this:"
 #~ msgstr ""
