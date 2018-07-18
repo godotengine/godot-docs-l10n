@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-28 18:31+0200\n"
+"POT-Creation-Date: 2018-07-18 14:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -154,7 +154,7 @@ msgid "Now the weapons have a limited amount of ammo, and will stop firing when 
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:156
-msgid "Ideally we'd like to let the player be able to see how much ammo is left. Let's make a new function called ``process_ui``."
+msgid "Ideally we'd like to let the player be able to see how much ammo is left. Let's make a new function called ``process_UI``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:158
@@ -203,7 +203,7 @@ msgid "``CAN_RELOAD``: A boolean to track whether this weapon has the ability to
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:202
-msgid "``CAN_REFIL``: A boolean to track whether we can refill this weapon's spare ammo. We will not be using ``CAN_REFIL`` in this part, but we will in the next part!"
+msgid "``CAN_REFILL``: A boolean to track whether we can refill this weapon's spare ammo. We will not be using ``CAN_REFILL`` in this part, but we will in the next part!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:203
@@ -332,7 +332,7 @@ msgid "The first thing we need to change is in the code for changing weapons. We
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:383
-msgid "This makes it where the player cannot change weapons if the player is reloading."
+msgid "This makes it so the player cannot change weapons if the player is reloading."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:385
@@ -520,7 +520,7 @@ msgid "Now, we want to make a noise when the player fires the pistol, so add the
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:632
-msgid "Now when the player fires the pistol, we'll play the ``pistol_shot`` sound."
+msgid "Now when the player fires the pistol, we'll play the ``Pistol_shot`` sound."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:634
@@ -530,7 +530,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:641
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:663
-msgid "Now when the player reloads, we'll play the ``gun_cock`` sound."
+msgid "Now when the player reloads, we'll play the ``Gun_cock`` sound."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:645
@@ -542,7 +542,7 @@ msgid "To play sounds when the rifle is fired, add the following to the end of t
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:654
-msgid "Now when the player fires the rifle, we'll play the ``rifle_shot`` sound."
+msgid "Now when the player fires the rifle, we'll play the ``Rifle_shot`` sound."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:666
@@ -554,7 +554,7 @@ msgid "Now you have weapons with limited ammo that play sounds when you fire the
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:672
-msgid "At this point we have all of the basics of a FPS working. There's still a few things that would be nice to add, and we're going to add them in the next three parts!"
+msgid "At this point we have all of the basics of a FPS game working. There's still a few things that would be nice to add, and we're going to add them in the next three parts!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:675
@@ -562,7 +562,7 @@ msgid "For example, right now we have no way to add ammo to our spares, so we'll
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:678
-msgid "In In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, along with some health and ammo pick ups! We're also going to add joypad support, so we can play with wired Xbox 360 controllers!"
+msgid "In :ref:`doc_fps_tutorial_part_four` we'll add some targets to shoot at, along with some health and ammo pick ups! We're also going to add joypad support, so we can play with wired Xbox 360 controllers!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:681
