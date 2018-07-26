@@ -45,7 +45,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-18 14:59+0200\n"
-"PO-Revision-Date: 2018-07-17 15:42+0000\n"
+"PO-Revision-Date: 2018-07-25 00:47+0000\n"
 "Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
@@ -4294,15 +4294,14 @@ msgstr ""
 "para un nuevo juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:729
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
 "start the other two timers. ``ScoreTimer`` will increment the score by 1."
 msgstr ""
-"Ahora conecte la señal ``timeout()`` de cada uno de los nodos Timer. "
-"``StartTimer`` comenzará los otros dos temporizadores. ``ScoreTimer`` "
-"incrementará el puntaje en 1."
+"Ahora conecta la señal ``timeout()`` de cada uno de los nodos Timer "
+"(``StartTimer``, ``ScoreTimer`` y ``MobTimer``). ``StartTimer`` iniciará los "
+"otros dos temporizadores. ``ScoreTimer`` incrementará la puntuación en 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:760
 msgid ""
@@ -4327,11 +4326,14 @@ msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
+"Ahora haz clic en ``MobTimer`` en la ventana de la escena, luego ve a la "
+"ventana del inspector, cambia a la vista de nodos, después haz clic en "
+"``timeout()`` y conecta la señal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1092
 msgid "Add the following code:"
-msgstr ""
+msgstr "Añade el siguiente código:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:819
 msgid ""
@@ -5462,16 +5464,15 @@ msgstr ""
 "fuertemente integrados al motor y el editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
-#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
-"GDscript permite escribir código sencillo usando una sintaxis similar a "
-"Python, detecta tipos y ofrece autocompletado de calidad paracida a la que "
-"poseen los lenguajes estáticos. Está también optimizado para código de "
-"juegos con tipos preestablecidos como vectores y colores."
+"GDscript permite escribir código simple utilizando una sintaxis similar a la "
+"de Python, pero detecta tipos y ofrece la calidad de autocompletado de un "
+"lenguaje estático. También está optimizado para código de juegos con tipos "
+"integrados como Vectors y Colors."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
 msgid ""
@@ -5508,21 +5509,18 @@ msgstr ""
 "Godot game`_ debajo."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
-#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
-"*Un plugin editor de Máquina de Estados en Godot 2, por kubecz3k. te permite "
-"manejar estados y transiciones visualmente*"
+"*Un plugin del editor State Machine en Godot 2, por kubecz3k. Permite "
+"gestionar visualmente estados y transiciones.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
-#, fuzzy
 msgid "Open source"
 msgstr "Código abierto"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
-#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
@@ -5530,22 +5528,21 @@ msgid ""
 "contributors."
 msgstr ""
 "Godot ofrece un código base completamente abierto bajo la **licencia MIT**. "
-"Esto significa que todas las tecnologías que vienen con este deben ser "
-"también Libres (no sólo gratis). La mayor parte del código está creado por "
-"los que contribuyen."
+"Esto significa que todas las tecnologías que se distribuyen con él también "
+"tienen que ser Libres (es decir, en libertad). En su mayor parte, son "
+"desarrollados por los contribuidores desde el inicio."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include NVIDIA PhysX, Google "
 "AdMob, or an FBX model importer. Any of these can come as third-party "
 "plugins instead."
 msgstr ""
-"Cualquiera puede asociar herramientas propietarias para las necesidades de "
-"su proyecto - pero no se distribuirán con el motor. Esto incluye NVIDIA "
-"PhysX, Google Admob, o un importador de FBX. En cualquier caso, pueden ir "
-"como plugins de terceros."
+"Cualquiera puede incluir herramientas propietarias para las necesidades de "
+"sus proyectos — simplemente no se envían con el motor. Esto puede incluir "
+"NVIDIA PhysX, Google AdMob o un importador de modelos FBX. Cualquiera de "
+"estos puede incluirse como plugins de terceros."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -5625,45 +5622,42 @@ msgstr ""
 "editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
-#, fuzzy
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot’s UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
-"*RPG-in-a-Box es un editor RPG basado en voxels, hecho en Godot 2. Utiliza "
-"las herramientas de interfaz de Godot para su sistema de programación basado "
-"en nodos y para el resto de la interfaz.*"
+"*RPG in a Box es un editor de RPG de voxel hecho con Godot 2. Utiliza las "
+"herramientas de UI de Godot para su sistema de programación basado en nodos "
+"y para el resto de la interfaz.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
-#, fuzzy
 msgid ""
 "Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
-"Utiliza la palabra clave ``tool`` al principio de un archivo de GDScript y "
-"se ejecutará en el editor. Esto permite importar y exportar plugins, crear "
-"plugins como editores de niveles personalizados, o crear scripts con los "
-"mismos nodos y API usada para los proyectos."
+"Coloca la palabra clave ``tool`` al principio de cualquier archivo GDScript "
+"y se ejecutará en el editor. Esto le permite importar y exportar plugins, "
+"crear plugins como editores de nivel personalizados o crear scripts con los "
+"mismos nodos y API que se utilizan en los proyectos."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
 msgid "Separate 2D and 3D engines"
 msgstr "Motores 2D y 3D separados"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
-#, fuzzy
 msgid ""
 "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "
 "can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over "
 "your 3D world."
 msgstr ""
-"Godot ofrece motores de rendering 2D y 3D dedicados. Como resultado **la "
-"unidad base para 2D es en pixeles**. Aunque los motores esten separados, "
-"puedes mostrar 2D en 3D, 3D en 2D, y superponer 2D e interfaces en el mundo "
-"3D."
+"Godot ofrece motores de renderizado 2D y 3D dedicados. Como resultado, **la "
+"unidad base para escenas 2D son los píxeles.** Aunque los motores están "
+"separados, puedes renderizar 2D en 3D, 3D en 2D, y superponer sprites 2D e "
+"interfaces sobre tu mundo 3D."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
@@ -14916,8 +14910,8 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:158
 msgid "To pad a string to a minimum length, add an integer to the specifier:"
 msgstr ""
-"Para rellenar una cadena a una longitud mínima, añada un número entero al "
-"especifier:"
+"Para rellenar una cadena a una longitud mínima, añade un número entero al "
+"specifier:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:166
 msgid ""
@@ -15957,7 +15951,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
-msgstr "Nodo de Escena"
+msgstr "Nodo Scene"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
 msgid ""
@@ -16332,7 +16326,6 @@ msgstr ""
 "acaso."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
-#, fuzzy
 msgid ""
 "These are mostly generic operators such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
@@ -16340,11 +16333,12 @@ msgid ""
 "always recommended to set the right type for operators to catch errors "
 "faster and make the graph easier to read."
 msgstr ""
-"Estos son operadores genéricos como suma, multiplicación, comparación, etc. "
-"Por defecto suelen aceptar cualquier tipo de datos (y devolverán un error en "
-"giempo de ejecución si los tipos no coinciden con el operador). Es siempre "
-"recomendable asignar el tipo correcto de operadores para encontrar errores "
-"rápido y hacer que el grafo sea fácil de leer."
+"Se trata en su mayoría de operadores genéricos como sumas, multiplicaciones, "
+"comparaciones, etc. De forma predeterminada, aceptan cualquier tipo de datos "
+"(y se producirá un error en tiempo de ejecución si los tipos introducidos no "
+"coinciden con los del operador). Siempre se recomienda configurar el tipo "
+"correcto para que los operadores detecten los errores más rápidamente y "
+"faciliten la lectura del gráfico."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"
@@ -16779,9 +16773,9 @@ msgid ""
 "the project directory, to ensure that the nuget packages will be available "
 "for msbuild to use, run::"
 msgstr ""
-"Cada vez que se agreguen o modifiquen paquetes, ejecute el comando nuget "
-"restore en la raíz del directorio del proyecto, para asegurarse de que los "
-"paquetes nuget estén disponibles para que msbuild los use, ejecute::"
+"Cada vez que se añadan o modifiquen paquetes, ejecuta nuget restore en la "
+"raíz del directorio del proyecto, para asegurarte de que los paquetes nuget "
+"están disponibles para ser usados por msbuild, ejecuta:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:4
 msgid "Features"
@@ -17000,7 +16994,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "Random"
-msgstr "Aleatorio(Random)"
+msgstr "Random"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:35
 msgid ""
@@ -17669,7 +17663,6 @@ msgid "Within single line initializer braces."
 msgstr "inicialización de llaves de una sola línea."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_style_guide.rst:158
-#, fuzzy
 msgid ""
 "The following example shows a proper use of spaces, according to some of the "
 "above mentioned conventions:"
@@ -17812,7 +17805,7 @@ msgid ""
 "Use safe cast when there is a possibility of the value being a different "
 "type, and use direct cast otherwise."
 msgstr ""
-"Use llamados seguros(safe cast) cuando haya posibilidad de que el valor sea "
+"Use llamados seguros (safe cast) cuando haya posibilidad de que el valor sea "
 "de otro tipo, y use llamado directo en caso contrario."
 
 #: ../../docs/getting_started/workflow/index.rst:2
@@ -18163,6 +18156,9 @@ msgid ""
 "rigid body enabled. The physics properties are taken from the parent-most "
 "rigid body, and the rest are used as collision shapes."
 msgstr ""
+"Para construir formas de física compuesta, reúne múltiples objetos con el "
+"rigid body habilitado. Las propiedades de física se toman del mismo rigid "
+"body de los padres, y el resto se usan como formas de colisión."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:47
 msgid "Collision Geometry Only"
@@ -18261,24 +18257,24 @@ msgid ""
 msgstr "No hay diferencia entre buffer shadow y ray shadow en la exportación."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
-#, fuzzy
 msgid "Mesh"
-msgstr "Modelos"
+msgstr "Malla"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
-#, fuzzy
 msgid "Modifiers"
-msgstr "Identificadores"
+msgstr "Modifiers"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
+"Existe una opción de exportación :code:`Apply Modifiers` para controlar si "
+"se aplican modificadores de malla a la malla exportada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
 msgid "Shape Key"
-msgstr ""
+msgstr "Shape Key"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
 msgid ""
@@ -18286,6 +18282,9 @@ msgid ""
 "almost like exporting the mesh again, so don't be surprisied it takes a "
 "relatively long time."
 msgstr ""
+"Se puede exportar la forma clave de una malla, sin embargo, exportar cada "
+"forma clave es casi como exportar la malla nuevamente, así que no te "
+"sorprendas si toma un tiempo relativamente largo."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
 msgid ""
@@ -18296,6 +18295,13 @@ msgid ""
 "github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
 "develop the exporter to have a more precise check of modifiers."
 msgstr ""
+"Muchos modificadores no son compatibles con las formas clave (por ejemplo, "
+"el modificador subsurface), así que si encuentras que has exportado una "
+"forma clave incorrecta, intenta deshabilitar :code:`Apply Modifiers` y "
+"vuelve a exportar. Además, vale la pena reportar el modificador incompatible "
+"en `issue list <https://github.com/godotengine/godot-blender-exporter/"
+"issues>`__, lo que ayuda a desarrollar el exportador para tener un control "
+"más preciso de los modificadores."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:154
@@ -18304,13 +18310,15 @@ msgstr "Skeleton"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
-msgstr ""
+msgstr "Hueso en reposo"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:9
 msgid ""
 "Armature object in Blender is exported as a Skeleton node along with rest "
 "position (transform in Godot) of bones."
 msgstr ""
+"El objeto Armature en Blender se exporta como un nodo Skeleton junto con la "
+"posición en reposo (transform en Godot) de los huesos."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
 msgid ""
@@ -18319,10 +18327,14 @@ msgid ""
 "Blender, so that the exported bone transform would be consistant between "
 "Blender and Godot"
 msgstr ""
+"Las tres cajas :code:`Inheirt Rotation`, :code:`Inheirt Scale`, :code:`Local "
+"Location` (en color rojo) deben estar marcadas cuando hagas una armature en "
+"Blender, así las transformaciones de los huesos exportados serán "
+"consistentes entre Blender y Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:19
 msgid "Bone Weights"
-msgstr ""
+msgstr "Peso de los huesos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
 msgid ""
@@ -18331,10 +18343,14 @@ msgid ""
 "making the mesh deformed. Therefore, the exporter would raise an error for "
 "any no bone weights vertex detected in a rigged mesh."
 msgstr ""
+"Blender pone los vértices que no tienen peso en los huesos de las mallas "
+"riggeadas en su posición original, pero estos vértices se colocan en (0,0,0) "
+"en Godot, lo que deforma la malla. Por lo tanto, el exportador da un error "
+"en cuanto detecta cualquier vértice sin pesos asignados en una malla."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"
-msgstr ""
+msgstr "Hueso sin deformar"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
 msgid ""
@@ -18342,16 +18358,21 @@ msgid ""
 "the :code:`Exclude Control Bones`, the deform bone checkbox is shown in "
 "picture."
 msgstr ""
+"Hay que tener en cuenta que el hueso sin deformar puede configurarse como no "
+"exportado activando el :code:`Exclude Control Bones`, la casilla de "
+"selección para deformar el hueso se muestra en la imagen."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
 msgid "Bone Attachment"
-msgstr ""
+msgstr "Adjuntar hueso"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
 msgid ""
 "Bone can be parent of object in Blender, this relation is exported as a "
 "BoneAttachment node in the Godot scene."
 msgstr ""
+"El hueso puede ser el objeto padre en Blender, esta relación se exporta como "
+"un nodo BoneAttachment en la escena de Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:2
 #: ../../docs/tutorials/animation/index.rst:2
@@ -18361,33 +18382,32 @@ msgid "Animation"
 msgstr "Animación"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
-#, fuzzy
 msgid "Supported Animation"
-msgstr "Animación del Sprite"
+msgstr "Animaciones soportadas"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
 msgid "transform animation of all types of object"
-msgstr ""
+msgstr "transformar la animación de todo tipo de objetos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
 msgid "transform animation of pose bone"
-msgstr ""
+msgstr "transformar la animación de la pose de los huesos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:10
-#, fuzzy
 msgid "Action Lib"
-msgstr "Action"
+msgstr "Librería de acciones"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid ""
 "Every action in object's nla tracks would be exported as a separate track "
 "and placed in AnimationPlayer."
 msgstr ""
+"Cada acción en las pistas NLA de los objetos se exportaría como una pista "
+"separada y se colocaría en el AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:15
-#, fuzzy
 msgid "Placing of AnimationPlayer"
-msgstr "AnimationPlayer"
+msgstr "Colocación de AnimationPlayer"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
@@ -18395,24 +18415,33 @@ msgid ""
 "animation data is stored in an AnimationPlayer node, instead of in each "
 "animated node."
 msgstr ""
+"Godot y Blender tienen una estructura diferente para almacenar datos de "
+"animación. En Godot los datos de animación se almacenan en un nodo "
+"AnimationPlayer, en lugar de en cada nodo animado."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:20
 msgid ""
 "The exporter has an option :code:`Separate AnimationPlayer For Each Object` "
 "which controls how the exported AnimationPlayers are placed."
 msgstr ""
+"El exportador tiene una opción :code:`Separate AnimationPlayer For Each "
+"Object` que controla cómo se colocan los AnimationPlayers exportados."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:24
 msgid ""
 "If :code:`Separate AnimationPlayer For Each Object` is **disabled** children "
 "of any animated object shares one AnimationPlayer"
 msgstr ""
+"Si :code:`Separate AnimationPlayer For Each Object` es **desactivado** los "
+"hijos de cualquier objeto animado comparten un AnimationPlayer"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:27
 msgid ""
 "In the following case, animation data of Mesh is also exported to "
 "AnimationPlayer \"RigAnimation\""
 msgstr ""
+"En el siguiente caso, los datos de animación de Mesh también se exportan a "
+"AnimationPlayer \"RigAnimation\""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:34
 msgid ""
@@ -18421,11 +18450,14 @@ msgid ""
 "to play multiple animation concurrently, because one AnimationPlayer node "
 "can only play one track at a time."
 msgstr ""
+"Si :code:`Separate AnimationPlayer For Each Object` está **habilitado** cada "
+"objeto animado tiene su propio AnimationPlayer. Es útil cuando los artistas "
+"desean reproducir varias animaciones al mismo tiempo, ya que un nodo de "
+"AnimationPlayer sólo puede reproducir una pista a la vez."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
-#, fuzzy
 msgid "In the following case, Mesh and Rig have their own AnimationPlayer"
-msgstr "Añade el código siguiente a ``AnimationPlayer_Manager.gd``:"
+msgstr "En el siguiente caso, Mesh y Rig tienen su propio AnimationPlayer"
 
 #: ../../docs/getting_started/workflow/assets/index.rst:2
 msgid "Assets workflow"
@@ -18578,11 +18610,11 @@ msgid ""
 "some resource types offering presets, the default setting can be saved and "
 "cleared too:"
 msgstr ""
-"Los diferentes tipos de juegos pueden necesitar diferentes valores por "
-"defecto. El cambio de los valores predeterminados por el proyecto se puede "
-"realizar utilizando el botón \"Preset...\". Menú. Además algunos tipos de "
-"recursos que ofrecen parametros predefinidos,  la configuración por defecto "
-"también se puede guardar y borrar:"
+"Diferentes tipos de juegos pueden requerir diferentes valores "
+"predeterminados. El cambio de los valores predeterminados por proyecto se "
+"puede lograr utilizando el botón \"Preset...\" del menú. Además hay algunos "
+"tipos de recursos que ofrecen configuraciones preestablecidas, la "
+"configuración por defecto también se puede guardar y borrar:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:84
 msgid "Simplicity is key!"
@@ -18980,12 +19012,11 @@ msgid "Process"
 msgstr "Procesos"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:129
-#, fuzzy
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr ""
-"Se pueden aplicar algunos procesos especiales a las imágenes cuando se "
-"importan como textura."
+"Algunos procesos especiales se pueden aplicar a las imágenes cuando se "
+"importan como texturas."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:132
 msgid "Fix Alpha Border"
@@ -19883,11 +19914,11 @@ msgid ""
 "this mesh(s) may lead to gaps in geometry or vertices not being exactly "
 "where they should be."
 msgstr ""
-"En algunos casos, esto podría causar perdida de precisión, así que tal vez "
-"convenga deshabilitar esta opción. Por ejemplo, si importamos un modelo muy "
-"grande o varios modelos que a su vez cubren una gran área, el comprimir la "
-"importación de este(os) modelo(s) probablemente resultaría en "
-"discontinuidades en la geometría o en vértices movidos de donde deberían de "
+"En algunos casos, esto podría provocar una pérdida de precisión, por lo que "
+"puede ser conveniente desactivar esta opción. Por ejemplo, si una malla es "
+"muy grande o se están importando múltiples mallas que cubren una gran área, "
+"la compresión de la importación de esta(s) malla(s) puede llevar a que los "
+"espacios en la geometría o los vértices no estén exactamente donde deberían "
 "estar."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:185
@@ -25490,7 +25521,6 @@ msgstr ""
 "prácticos de esto son:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:13
-#, fuzzy
 msgid ""
 "Rendering objects efficiently in high amounts is easy, but when a large "
 "scene must be rendered, it can become inefficient. To solve this, visibility "
@@ -25500,7 +25530,7 @@ msgid ""
 msgstr ""
 "Renderizar objetos eficientemente en grandes cantidades es fácil, pero "
 "cuando se debe renderizar una escena grande, puede volverse ineficiente. "
-"Para resolver esto, el cálculo de visibilidad debe ser añadido al "
+"Para resolver esto, se debe agregar el cálculo de visibilidad al "
 "renderizado, lo que hace que el renderizado sea menos eficiente, pero, al "
 "mismo tiempo, se renderizan menos objetos, por lo que la eficiencia en "
 "general mejora."
@@ -25596,17 +25626,16 @@ msgstr ""
 "prioridades de Godot serán así:"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:57
-#, fuzzy
 msgid ""
 "**Reusing Materials**: The fewer different materials in the scene, the "
 "faster the rendering will be. If a scene has a huge amount of objects (in "
 "the hundreds or thousands) try reusing the materials or in the worst case "
 "use atlases."
 msgstr ""
-"**Reutilización de Materiales**: Cuanto menor sea la cantidad de materiales "
-"diferentes en la escena, más rápido será el renderizado. Si una escena tiene "
-"una gran cantidad de objetos (cientos o miles) intenta reutilizar los "
-"materiales o, en el peor de los casos, utiliza un atlas."
+"**Reutilización de Materiales**: Cuantos menos materiales diferentes haya en "
+"la escena, más rápido será el renderizado. Si una escena tiene una gran "
+"cantidad de objetos (cientos o miles) intenta reutilizar los materiales o, "
+"en el peor de los casos, utiliza un atlas."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:61
 msgid ""
@@ -25712,7 +25741,6 @@ msgstr ""
 "el consumo de energía)."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:106
-#, fuzzy
 msgid ""
 "On mobile, pulling more power is not an option, so a technique called \"Tile "
 "Based Rendering\" is used (almost every mobile hardware uses a variant of "
@@ -25722,14 +25750,14 @@ msgid ""
 "toll on vertex performance. As a result, fewer vertices and triangles can be "
 "processed for drawing."
 msgstr ""
-"En dispositivos móviles, no es posible extraer más energía, por lo que se "
-"usa una técnica llamada \"Representación basada en mosaico\" (casi todos los "
-"dispositivos móviles usan una variante), que divide la pantalla en una "
-"cuadrícula. Cada celda mantiene la lista de triángulos dibujados y los "
-"ordena en profundidad para minimizar el * sobregiro *. Esta técnica mejora "
-"el rendimiento y reduce el consumo de energía, pero afecta el rendimiento de "
-"los vértices. Como resultado, se pueden procesar menos vértices y triángulos "
-"para dibujar."
+"En los dispositivos móviles, no es posible obtener un mayor rendimiento, por "
+"lo que se utiliza una técnica llamada \"Tile Based Rendering\" (casi todos "
+"los equipos móviles utilizan una variante), que divide la pantalla en una "
+"cuadrícula. Cada celda mantiene la lista de triángulos dibujados hacia ella "
+"y los ordena por profundidad para minimizar el *overdraw*. Esta técnica "
+"mejora el rendimiento y reduce el consumo de energía, pero afecta al "
+"rendimiento de los vértices. Como resultado, se pueden procesar menos "
+"vértices y triángulos para dibujar."
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:114
 msgid ""
@@ -25851,7 +25879,6 @@ msgid "Level of detail (LOD)"
 msgstr "Nivel de detalle (LOD)"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:164
-#, fuzzy
 msgid ""
 "As also mentioned before, using objects with fewer vertices can improve "
 "performance in some cases. Godot has a simple system to change level of "
@@ -25861,7 +25888,7 @@ msgid ""
 msgstr ""
 "Como también se mencionó anteriormente, el uso de objetos con menos vértices "
 "puede mejorar el rendimiento en algunos casos. Godot tiene un sistema simple "
-"para cambiar el nivel de detalle, los objetos basados en `:ref:"
+"para cambiar el nivel de detalle, los objetos basados en :ref:"
 "`GeometryInstance <class_GeometryInstance>` tienen un rango de visibilidad "
 "que puede ser definido. Tener varios objetos GeometryInstance en diferentes "
 "rangos funciona como LOD."
@@ -26240,6 +26267,10 @@ msgid ""
 "roughness. It is recommended you disable sky contribution from your "
 "environment's ambient light settings to achieve a better effect."
 msgstr ""
+"**Toon:** Proporciona un acabado duro para la iluminación, con alisado "
+"afectado por la rugosidad. Se recomienda desactivar la influencia del cielo "
+"en la configuración de la luz ambiental del entorno para lograr un mejor "
+"efecto."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:146
 msgid "Specular Mode"
@@ -26704,7 +26735,6 @@ msgid "Depth"
 msgstr "Depth"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:348
-#, fuzzy
 msgid ""
 "Setting a depth map to a material produces a ray-marched search to emulate "
 "the proper displacement of cavities along the view direction. This is not "
@@ -26787,9 +26817,9 @@ msgid ""
 "AO or Emission (baked light). UVs can be scaled and offseted which is useful "
 "in textures with repeat."
 msgstr ""
-"Godot permite usar hasta 2 canales UV por material. UV secundario es muchas "
-"veces útil para AO o Emisiones (luces pre-calculadas). Los UVs pueden ser "
-"escalados o compensados, lo cual es útil para texturas que se repiten."
+"Godot soporta 2 canales UV por material. Los UV secundarios son a menudo "
+"útiles para AO o Emission (baked light). Los UVs pueden ser escalados y "
+"eliminados, lo que es útil en texturas con repetición."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:398
 msgid "Triplanar Mapping"
@@ -26802,20 +26832,19 @@ msgid ""
 "are sampled in X,Y and Z and blended by the normal. Triplanar can be either "
 "worldspace or object space."
 msgstr ""
-"El mapeado triplanar se puede usar tanto para UV1 como UV2. Es una forma "
-"alternativa de obtener las coordenadas de texturas, muchas veces llamadas "
-"\"Autotexture\". Las texturas son muestreadas en X-Y-Z y mezcladas por la "
-"normal. Triplanar puede ser tanto en el espacio mundo como en el espacio "
-"objeto."
+"El mapeo triplanar es compatible tanto para UV1 como para UV2. Esta es una "
+"forma alternativa de obtener coordenadas de textura, a menudo llamada "
+"\"Autotexture\". Las texturas son sampleadas en X, Y y Z y mezcladas por el "
+"normal. Triplanar puede ser espacio de mundo o espacio de objeto."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:405
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so bricks continue smoothly between them."
 msgstr ""
-"En la imagen de abajo, se puede ver como todas las primitivas comparten el "
-"mismo material con el triplanar del mundo, por lo que los ladrillos "
-"continuan de forma continua entre ellos."
+"En la imagen de abajo, puedes ver cómo todos los primitivos comparten el "
+"mismo material con el triplanar del mundo, para que los bloques puedan "
+"continuar con suavidad entre ellos."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:411
 msgid "Proximity and Distance Fade"
@@ -26831,9 +26860,9 @@ msgid ""
 msgstr ""
 "Godot permite que los materiales se desvanezcan por proximidad entre ellos, "
 "además de hacerlo por la distancia con el observador. El desvanecimiento por "
-"proximidad es útil para efectos como particulas suaves o masas de agua que "
+"proximidad es útil para efectos como partículas suaves o masas de agua que "
 "se mezclen de forma suave con la orilla. El desvanecimiento por distancia es "
-"útil para pozos de luz o indicadores que solo estan presentes a cierta "
+"útil para pozos de luz o indicadores que solo están presentes a cierta "
 "distancia."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:417
@@ -26841,12 +26870,12 @@ msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for a "
 "whole scene is not generally a good idea."
 msgstr ""
-"Tenga en cuenta que habilitar estos permite la mezcla alfa, por lo que "
-"abusar de ellos para toda una escena no es generalmente una buena idea."
+"Hay que tener en cuenta que habilitarlos permite la mezcla alfa, por lo que "
+"abusar de ellos durante toda una escena no suele ser una buena idea."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:422
 msgid "Render Priority"
-msgstr "Prioridad de renderizado"
+msgstr "Prioridad de Renderización"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:424
 msgid ""
@@ -26889,7 +26918,7 @@ msgstr "Luz Ambiental en :ref:`Environment <class_Environment>`."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:17
 msgid "Baked Light (read :ref:`doc_baked_lightmaps`)."
-msgstr ""
+msgstr "Baked Light (read :ref:`doc_baked_lightmaps`)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:19
 msgid ""
@@ -26935,6 +26964,8 @@ msgid ""
 "**Indirect Energy**: Secondary multiplier used with indirect light (light "
 "bounces). This works in baked light or GIProbe."
 msgstr ""
+"**Indirect Energy**: Multiplicador secundario utilizado con luz indirecta "
+"(rebote de luz). Esto funciona en luz bakeada o GIProbe."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:37
 msgid ""
@@ -26949,6 +26980,9 @@ msgid ""
 "**Specular**: Affects the intensity of the specular blob in objects affected "
 "by this light. At zero, this light becomes a pure diffuse light."
 msgstr ""
+"**Specular**: Afecta a la intensidad de specular blob en los objetos "
+"afectados por esta luz. A cero, esta luz se convierte en una luz pura y "
+"difusa."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:39
 msgid ""
@@ -28423,8 +28457,8 @@ msgid ""
 "**Fade Out** allows adjusting the fade-out curve, so the step limit fades "
 "out softly."
 msgstr ""
-"** Fundido de salida** permite ajustar la curva de fundido de salida, de "
-"modo que el límite de paso se fundirá suavemente."
+"**Fundido de salida** permite ajustar la curva de fundido de salida, de modo "
+"que el límite de paso se fundirá suavemente."
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:212
 msgid ""
@@ -29058,7 +29092,7 @@ msgid ""
 "the resource file from the FileSystem dock and dropping it in the \"Theme\" "
 "property in the Inspector."
 msgstr ""
-"Crea una nueva escena y añade un nodo GridMap. Añade la librería mesh "
+"Crea una nueva escena y añade un nodo GridMap. Añade la librería de mallas "
 "arrastrando el archivo de recursos desde el panel del Sistema de Archivos y "
 "soltándolo en la propiedad \"Theme\" en el Inspector."
 
@@ -29945,9 +29979,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_displacement_with_shaders.rst:217
-#, fuzzy
 msgid "Fragment Shader"
-msgstr "Procesador Fragment"
+msgstr "Fragment Shader"
 
 #: ../../docs/tutorials/3d/vertex_displacement_with_shaders.rst:219
 msgid ""
@@ -30034,9 +30067,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/vertex_displacement_with_shaders.rst:295
-#, fuzzy
 msgid "Interacting with light"
-msgstr "Interpolación con Quaternions"
+msgstr "Interactuar con la luz"
 
 #: ../../docs/tutorials/3d/vertex_displacement_with_shaders.rst:297
 msgid ""
@@ -31791,7 +31823,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:384
-#, fuzzy
 msgid ""
 "One of the huge disadvantages is performance. While having each bullet "
 "calculate their own paths and handle their own collision allows for a lot of "
@@ -31800,12 +31831,13 @@ msgid ""
 "problem for a few dozen bullets, it can become a huge problem when you "
 "potentially have several hundred bullets."
 msgstr ""
-"Una de las grandes desventajas del rendimiento. Si bien el hecho de que cada "
-"bala calcule sus propias trayectorias y maneje su propia colisión permite "
+"Una de las grandes desventajas es el rendimiento. Si bien el hecho de que "
+"cada bala calcule su propia trayectoria y maneje su propia colisión permite "
 "una gran flexibilidad, esto se produce a costa del rendimiento. Con este "
 "método estamos calculando el movimiento de cada bala en cada paso, y aunque "
 "esto puede no ser un problema para unas pocas docenas de balas, puede "
-"convertirse en un gran problema cuando hay varios cientos de balas activas."
+"convertirse en un gran problema cuando potencialmente tienes varios cientos "
+"de balas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:388
 msgid ""
@@ -38936,10 +38968,9 @@ msgid ""
 "this mode the body's rotation is locked. In this case, you would have to "
 "rotate the attached mesh node instead using the standard Spatial methods."
 msgstr ""
-"Este script no funcionará con cuerpos rigidos con la propiedad mode en "
-"*character* porque en este modo la rotación del cuerpo está bloqueada. En "
-"este caso, deberás rotar el nodo que contenga la Mesh (como MeshInstance) "
-"utilizando los métodos de Spatial."
+"Este script no funcionará con rigid bodies en *character mode* porque en "
+"este modo la rotación del cuerpo está bloqueada. En este caso, tendrías que "
+"rotar el nodo conectado a la malla utilizando el método Spatial estándar."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:4
 msgid "Using KinematicBody2D"
@@ -44012,15 +44043,14 @@ msgstr ""
 "como un seguimiento del mismo."
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:25
-#, fuzzy
 msgid ""
 "We would be using the official demo as an example, you can download it in "
 "the AssetLib: https://godotengine.org/asset-library/asset/134 or find it in "
 "the demo_projects/gui/translation"
 msgstr ""
-"Estaríamos usando la demo oficial como ejemplo, puedes descargarla en el "
-"AssetLib: https://godotengine.org/asset-library/asset/134 or find it in the "
-"demo_projects/gui/translation"
+"Estaremos usando la demo oficial como ejemplo, puedes descargarla en "
+"AssetLib:  https://godotengine.org/asset-library/asset/134 o encontrarla en "
+"la sección demo_projects/gui/translation"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:28
 msgid "Configuring the imported translation"
@@ -47795,14 +47825,12 @@ msgstr ""
 "incluyendo:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:27
-#, fuzzy
 msgid "Rendering 3D objects within a 2D game"
-msgstr "Renderizar objetos 3d dentro de un juego 2d"
+msgstr "Renderización de objetos 3D dentro de un juego 2D"
 
 #: ../../docs/tutorials/viewports/viewports.rst:28
-#, fuzzy
 msgid "Rendering 2D elements in a 3D game"
-msgstr "Renderizar elementos 2d en un juego 3d"
+msgstr "Renderizar elementos 2D en un juego 3D"
 
 #: ../../docs/tutorials/viewports/viewports.rst:29
 msgid "Rendering dynamic textures"
@@ -47827,7 +47855,6 @@ msgstr ""
 "elegir qué hacer con la textura resultante."
 
 #: ../../docs/tutorials/viewports/viewports.rst:40
-#, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` are also responsible for delivering "
 "properly adjusted and scaled input events to all their children nodes. "
@@ -47840,9 +47867,9 @@ msgstr ""
 "eventos de entrada correctamente ajustados y escalados a todos sus nodos "
 "hijos. Típicamente la entrada es recibida por el :ref:`Viewport "
 "<class_Viewport>` más cercano en el árbol, pero puede establecer :ref:"
-"`Viewports <class_Viewport>` para que no reciba entradas marcando "
-"'Deshabilitar Entrada' en 'on', esto permitirá que el siguiente :ref:"
-"`Viewport <class_Viewport>` más cercano en el árbol capture la entrada."
+"`Viewports <class_Viewport>` para que no reciba entradas al marcar 'Disable "
+"Input' en `on', esto permitirá que el siguiente :ref:`Viewport "
+"<class_Viewport>` más cercano en el árbol capture la entrada."
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
 msgid ""
@@ -48151,14 +48178,12 @@ msgid "Base size"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:9
-#, fuzzy
 msgid ""
 "A base size for the window can be specified in the project settings under "
 "\"Display\", \"Window\"."
 msgstr ""
-"Establece si el área de trabajo se redimensionará a la anchura y la altura "
-"especificadas en la configuración del proyecto al inicio. Por defecto es "
-"``true``."
+"El tamaño de la ventana se puede especificar en los ajustes del proyecto en "
+"la sección \"Display\", \"Window\"."
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:14
 msgid ""
@@ -48210,9 +48235,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:51
-#, fuzzy
 msgid "Stretch Mode"
-msgstr "Specular Mode (Modo Specular)"
+msgstr "Stretch Mode"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:53
 msgid ""
@@ -48356,9 +48380,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:170
-#, fuzzy
 msgid "Stretch Shrink"
-msgstr "Stretch transform"
+msgstr "Stretch Shrink"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:172
 msgid ""
@@ -48384,9 +48407,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:187
-#, fuzzy
 msgid "From scripts"
-msgstr "Script Personalizado"
+msgstr "Desde scripts"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:189
 msgid ""
@@ -49216,17 +49238,16 @@ msgid "Varyings"
 msgstr "Varyings"
 
 #: ../../docs/tutorials/shading/shading_language.rst:343
-#, fuzzy
 msgid ""
 "To send data from vertex to fragment shader, *varyings* are used. They are "
 "set for every primitive vertex in the *vertex processor*, and the value is "
 "interpolated (and perspective corrected) when reaching every pixel in the "
 "fragment processor."
 msgstr ""
-"Para enviar datos de un vertex a un fragment shader, son usados los "
-"*varyings*. Estos son asignados por cada vértice primitivo en el *procesador "
-"vertex* y el valor es interpolado (y con corrección de perspectiva) cuando "
-"llega a cada pixel en el procesador fragment."
+"Para enviar datos desde el vértice al fragmento de shader, se utilizan "
+"*variaciones*. Se establecen para cada vértice primitivo en el *procesador "
+"de vértices*, y el valor se interpola (y se corrige la perspectiva) al "
+"alcanzar cada píxel en el procesador de fragmentos."
 
 #: ../../docs/tutorials/shading/shading_language.rst:361
 msgid "Interpolation qualifiers"
@@ -50978,31 +50999,32 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:917
 msgid "Canvas Item"
-msgstr ""
+msgstr "Canvas Item"
 
 #: ../../docs/tutorials/shading/shading_language.rst:919
 msgid "Accepted render modes and built-ins for **shader_type canvas_item;**."
 msgstr ""
+"Modos de render aceptados para built-ins del **shader_type canvas_item;**."
 
 #: ../../docs/tutorials/shading/shading_language.rst:931
 msgid "Subtractive blend mode."
-msgstr ""
+msgstr "Modo de blending substractivo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:935
 msgid "**blend_premul_alpha**"
-msgstr ""
+msgstr "**blend_premul_alpha**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:935
 msgid "Premultiplied alpha blend mode."
-msgstr ""
+msgstr "Modo de blending con alfa premultiplicado."
 
 #: ../../docs/tutorials/shading/shading_language.rst:939
 msgid "**light_only**"
-msgstr ""
+msgstr "**light_only**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:939
 msgid "Only draw for light pass (when multipass is used)."
-msgstr ""
+msgstr "Sólo dibuja el light pass (cuando se usa multipass)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:950
 msgid "Image to World transform."
@@ -51010,11 +51032,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:952
 msgid "in mat4 **EXTRA_MATRIX**"
-msgstr ""
+msgstr "in mat4 **EXTRA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:952
 msgid "Extra transform."
-msgstr ""
+msgstr "Transform extra."
 
 #: ../../docs/tutorials/shading/shading_language.rst:954
 msgid "World to view transform."
@@ -51022,11 +51044,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:956
 msgid "Global time, in seconds."
-msgstr ""
+msgstr "Tiempo global, en segundos."
 
 #: ../../docs/tutorials/shading/shading_language.rst:958
 msgid "Instance custom data."
-msgstr ""
+msgstr "Datos personalizados de la instancia."
 
 #: ../../docs/tutorials/shading/shading_language.rst:960
 #: ../../docs/tutorials/shading/shading_language.rst:1033
@@ -53702,9 +53724,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:22
-#, fuzzy
 msgid "Throughout the course of this tutorial, we will cover:"
-msgstr "A lo largo del curso de esta serie de tutoriales, cubriremos cómo:"
+msgstr "A lo largo del curso de este tutorial, cubriremos:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:24
 msgid "How to tell Godot to run in VR."
@@ -53720,40 +53741,38 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
-#, fuzzy
 msgid ""
 "How to make a :ref:`RigidBody <class_RigidBody>` based pick up and drop "
 "system."
 msgstr ""
-"Añadir la habilidad de agarrar y lanzar nodos :ref:`RigidBody "
-"<class_RigidBody>`"
+"Cómo hacer un sistema :ref:`RigidBody <class_RigidBody>` basado en un "
+"sistema de recogida y entrega."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:28
 msgid "How to make various items that can be used in VR"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:30
-#, fuzzy
 msgid ""
 "While this tutorial can be completed by beginners, it is highly advised to "
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development and have some experience with making 3D games **before** going "
 "through this tutorial series."
 msgstr ""
-"Aunque este tutorial puede ser completado por principiantes, es altamente "
-"aconsejable completar :ref:`doc_your_first_game`, si eres nuevo en Godot y/o "
-"en el desarrollo de juegos **antes de** pasar por esta serie de tutoriales."
+"Aunque este tutorial puede ser completado por principiantes, es muy "
+"recomendable completar :ref:`doc_your_first_game`, si eres nuevo en Godot y/"
+"o en el desarrollo de juegos y tienes alguna experiencia en la creación de "
+"juegos en 3D **antes** de pasar por esta serie de tutoriales."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:35
-#, fuzzy
 msgid ""
 "This tutorial assumes you know have experience working with the Godot "
 "editor, have basic programming experience in GDScript, and have basic 3D "
 "game development experience."
 msgstr ""
-"Este tutorial asume que tienes experiencia trabajando con el editor de "
-"Godot, tienes experiencia básica de programación en GDScript, y tienes "
-"experiencia básica en el desarrollo de juegos."
+"Este tutorial asume que tienes experiencia trabajando con el editor Godot, "
+"tienes experiencia básica en programación en GDScript, y tienes experiencia "
+"básica en desarrollo de juegos 3D."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:38
 msgid ""
@@ -53765,23 +53784,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:41
-#, fuzzy
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`VR_Starter_Tutorial_Start.zip <files/VR_Starter_Tutorial_Start.zip>`"
 msgstr ""
 "Puedes encontrar los recursos de inicio para este tutorial aquí: :download:"
-"`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
+"`VR_Starter_Tutorial_Start.zip <files/VR_Starter_Tutorial_Start.zip>`"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:43
-#, fuzzy
 msgid ""
 "The provided starter assets contain some 3D models, Sounds, and a few scenes "
 "already set up and configured for this tutorial."
 msgstr ""
-"Los recursos de inicio proporcionados contienen un modelo 3D animado, un "
-"montón de modelos 3D para hacer niveles y algunas escenas ya configuradas "
-"para este tutorial."
+"Los recursos de inicio proporcionados contienen algunos modelos 3D, sonidos "
+"y algunas escenas ya configuradas para este tutorial."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:47
 msgid ""
@@ -53814,11 +53830,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:60
-#, fuzzy
 msgid "You can find the finished project at the bottom of this page"
 msgstr ""
-"Puedes encontrar el proyecto terminado para cada parte en la parte inferior "
-"de la página de cada parte"
+"Puedes encontrar el proyecto terminado en la parte inferior de esta página"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:71
 msgid ""
@@ -53902,9 +53916,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:102
-#, fuzzy
 msgid "Starting VR"
-msgstr "Configurando"
+msgstr "Iniciando con la VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:104
 msgid ""
@@ -53923,9 +53936,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:125
-#, fuzzy
 msgid "With that done, let's quickly go over what this script does."
-msgstr "Repasemos lo que hace este script:"
+msgstr "Hecho esto, repasemos rápidamente lo que hace este script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:127
 msgid ""
@@ -53967,9 +53979,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:145
-#, fuzzy
 msgid "Coding the controllers"
-msgstr "Movimiento del jugador (player)"
+msgstr "Codificando los controladores"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:147
 msgid ""
@@ -54679,9 +54690,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:702
-#, fuzzy
 msgid "Adding destroyable targets"
-msgstr "Añadir vectores"
+msgstr "Añadir objetivos destruibles"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:704
 msgid ""
@@ -54705,10 +54715,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:756
-#, fuzzy
 msgid "Let's go over how this script works, starting with the class variables."
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Vamos a repasar cómo funciona este script, empezando por las clases de "
+"variables."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:758
 msgid "``destroyed`` : A variable to track if this target is destroyed or not."
@@ -54731,13 +54741,12 @@ msgid "``health`` : The amount of health the target has."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:762
-#, fuzzy
 msgid ""
 "``RIGID_BODY_TARGET`` : The target broken into several smaller :ref:"
 "`RigidBody <class_RigidBody>` nodes."
 msgstr ""
-"Añadir la habilidad de agarrar y lanzar nodos :ref:`RigidBody "
-"<class_RigidBody>`"
+"``RIGID_BODY_TARGET`` : El objetivo dividido en varios nodos :ref:`RigidBody "
+"<class_RigidBody>`."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:766
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:918
@@ -54777,11 +54786,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:786
-#, fuzzy
 msgid ""
 "If the target has zero or less health, then it has taken enough damage to "
 "break."
-msgstr "Añadir objetivos que se rompen cuando han recibido suficiente daño"
+msgstr ""
+"Si el objetivo tiene cero o menos vida, entonces ha recibido suficiente daño "
+"para destruirse."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:788
 msgid ""
@@ -54804,10 +54814,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:799
-#, fuzzy
 msgid ""
 "First, open up ``Game.gd`` and add the following additional class variables:"
-msgstr "Abre ``Player.gd`` y añade las siguientes variables de clase:"
+msgstr ""
+"Primero, abre ``Game.gd`` y añade las siguientes clases de variables "
+"adicionales:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:806
 msgid "``spheres_left`` : The amount of sphere targets left in the game world."
@@ -54839,9 +54850,8 @@ msgid "Now that we have destroyable targets, we need a way to destroy them!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:827
-#, fuzzy
 msgid "Adding a pistol"
-msgstr "Añadir un script"
+msgstr "Añadir una pistola"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:829
 msgid "Okay, let's add a simple pistol."
@@ -54852,9 +54862,8 @@ msgid "Open up ``Pistol.tscn``, which you will find in the ``Scenes`` folder."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:833
-#, fuzzy
 msgid "There is a few things to note here."
-msgstr "Hay algunas cosas a tener en cuenta:"
+msgstr "Hay algunas cosas a tener en cuenta aquí."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:835
 msgid ""
@@ -54995,9 +55004,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:965
-#, fuzzy
 msgid "Adding a shotgun"
-msgstr "Añadir un script"
+msgstr "Añadir una escopeta"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:967
 msgid ""
@@ -55065,9 +55073,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1051
-#, fuzzy
 msgid "Adding a bomb"
-msgstr "Añadir una Función"
+msgstr "Añadir una bomba"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1053
 msgid ""
@@ -55110,11 +55117,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1157
-#, fuzzy
 msgid ""
 "Let's go through what this script does, starting with the class variables:"
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Vamos a repasar lo que hace este script, empezando por las clases de "
+"variables:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1159
 msgid ""
@@ -55127,12 +55134,11 @@ msgid "``FUSE_TIME``: The length of time the fuse burns for."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1161
-#, fuzzy
 msgid ""
 "``fuse_timer``: A variable for tracking how long the fuse has been burning."
 msgstr ""
-"``current_state``: Un variable para contener el nombre del estado de "
-"animación en que estamos actualmente."
+"``fuse_timer``: Una variable para rastrear cuánto tiempo ha estado encendido "
+"el detonador."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1162
 msgid ""
@@ -55183,13 +55189,12 @@ msgid "Let's go through ``_ready``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1175
-#, fuzzy
 msgid ""
 "First, we get all of the nodes and assign them to the proper variables for "
 "later use."
 msgstr ""
-"Primero obtenemos todos los nodos que necesitaremos y los asignamos a las "
-"variables de clase apropiadas."
+"Primero, obtenemos todos los nodos y los asignamos a las variables "
+"apropiadas para su uso posterior."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1177
 msgid ""
@@ -55286,9 +55291,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1221
-#, fuzzy
 msgid "Adding a sword"
-msgstr "Añadir un script"
+msgstr "Añadir una espada"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1223
 msgid "Finally, let's add a sword so we can slice through things!"
@@ -55324,11 +55328,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1297
-#, fuzzy
 msgid ""
 "Let's go over what this script does, starting with the two class variables:"
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Repasemos lo que hace este script, comenzando con las dos clases de "
+"variables:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1299
 msgid "``SWORD_DAMAGE`` : The amount of damage a single sword slice does."
@@ -55401,9 +55405,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1334
-#, fuzzy
 msgid "Updating the target UI"
-msgstr "Comenzando el juego"
+msgstr "Actualización de la UI de destino"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1336
 msgid "Okay, let's update the UI as the sphere targets are destroyed."
@@ -55418,10 +55421,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1358
-#, fuzzy
 msgid "Let's go over what this script does quickly, as it is fairly simple."
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Vamos a repasar lo que este script hace rápidamente, ya que es bastante "
+"simple."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1360
 msgid ""
@@ -55457,10 +55460,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1410
-#, fuzzy
 msgid "Let's go over what this does quickly, as it is also fairly simple."
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Vamos a repasar lo que esto hace rápidamente, ya que también es bastante "
+"simple."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1412
 msgid ""
@@ -55484,13 +55487,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1419
-#, fuzzy
 msgid ""
 "When the reset box is dropped, we reset the :ref:`Transform "
 "<class_Transform>` and timer."
 msgstr ""
-"Para añadir el componente final a la mezcla, Godot proporciona el tipo :ref:"
-"`Transform <class_Transform>`. Transform tiene dos miembros:"
+"Cuando se omite la casilla de reinicio, reiniciamos el :ref:`Transform "
+"<class_Transform>` y el timer."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1423
 msgid ""
@@ -55503,13 +55505,12 @@ msgid "Phew! That was a lot of work. Now you have a fairly simple VR project!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1434
-#, fuzzy
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`VR_Starter_Tutorial_Complete.zip <files/VR_Starter_Tutorial_Complete.zip>`"
 msgstr ""
-"Puedes descargar este proyecto de ejemplo aquí: :download:`2D_movement_demo."
-"zip <files/2D_movement_demo.zip>`"
+"Puede descargar el proyecto terminado de esta sección aquí: :download:"
+"`VR_Starter_Tutorial_Complete.zip <files/VR_Starter_Tutorial_Complete.zip>`"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1436
 msgid ""
@@ -61104,9 +61105,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:89
-#, fuzzy
 msgid "Command-line options"
-msgstr "Línea de comandos"
+msgstr "Opciones de la línea de comandos"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:91
 msgid ""
@@ -61122,9 +61122,8 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_with_mono.rst:94
 #: ../../docs/development/compiling/compiling_with_mono.rst:100
 #: ../../docs/development/compiling/compiling_with_mono.rst:103
-#, fuzzy
 msgid "default: no"
-msgstr "Entorno por defecto"
+msgstr "por defecto: no"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:97
 msgid ""
@@ -61133,9 +61132,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:97
-#, fuzzy
 msgid "default: yes"
-msgstr "Características por defecto"
+msgstr "por defecto: sí"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:100
 msgid ""
@@ -64033,14 +64031,12 @@ msgid "An array of vertex position"
 msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:331
-#, fuzzy
 msgid "Tangents array"
-msgstr "Tangente"
+msgstr "Array de tangentes"
 
 #: ../../docs/development/file_formats/tscn.rst:332
-#, fuzzy
 msgid "Vertex color array"
-msgstr "Vertex Color (Color de vértice)"
+msgstr "Array de colores de vértices"
 
 #: ../../docs/development/file_formats/tscn.rst:333
 msgid "UV array 1"
@@ -64552,14 +64548,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/pr_workflow.rst:33
-#, fuzzy
 msgid ""
 "If you are contributing to the documentation, its repository can be found "
 "`here <https://github.com/godotengine/godot-docs>`_."
 msgstr ""
-"Además de esta documentación, tal vez quieras echar un vistazo a varios "
-"`proyectos de demostración <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Si está contribuyendo a la documentación, puedes encontrar su repositorio "
+"`aquí <https://github.com/godotengine/godot-docs>`_."
 
 #: ../../docs/community/contributing/pr_workflow.rst:36
 msgid ""

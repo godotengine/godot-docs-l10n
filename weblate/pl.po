@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-18 14:59+0200\n"
-"PO-Revision-Date: 2018-07-17 07:19+0000\n"
+"PO-Revision-Date: 2018-07-20 13:40+0000\n"
 "Last-Translator: RM <synaptykq@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
@@ -1028,7 +1028,7 @@ msgstr "Usuńmy ten bałagan i sprawmy, aby Godot wyglądał ładniej"
 
 #: ../../docs/about/faq.rst:238
 msgid "Let's add an alternative workflow for people who prefer it"
-msgstr ""
+msgstr "Dodajmy alternatywny tryb pracy dla osób, które go preferują"
 
 #: ../../docs/about/faq.rst:240
 msgid ""
@@ -2945,18 +2945,25 @@ msgid ""
 "This method will be called every time a frame is drawn, so it's fully "
 "dependent on how many frames per second (FPS) the application is running at:"
 msgstr ""
+"Ta metoda będzie wywoływana za każdym razem gdy klatka jest rysowana, więc "
+"jest całkowicie zależna od tego, w ilu klatkach na sekundę(FPS) ta aplikacja "
+"pracuje:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
 msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
 msgstr ""
+"Parametr delta, to liczba zmiennoprzecinkowa, zawierająca czas w sekundach "
+"jaki upłynął od poprzedniego wywołania ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"Ten parametr jest stosowany by być zawsze pewnym, że czynność zawsze będzie "
+"trwała określony czas, bez względu na ilość FPS."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
@@ -8218,7 +8225,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
 msgid "The signal should already have the Enemy connected to it"
-msgstr ""
+msgstr "Sygnał powienien być już połączony z Enemy(Wrogiem)"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
 msgid ""
@@ -8696,7 +8703,7 @@ msgid ""
 "To obtain an instance of the scene, the method :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` must be used."
 msgstr ""
-"Aby uzyskać przykład sceny, należy użyć metody `PackedScene.instance() "
+"Aby uzyskać przykład sceny, należy użyć metody :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:143
@@ -8878,7 +8885,7 @@ msgid ""
 "godot is located, so in fact ``res://project.godot`` is always valid)."
 msgstr ""
 "Ścieżka ``res://``będzie zawsze wskazywać na korzeń projektu (miejsce gdzie "
-"znajduje się project.godot, więc ``res://project.godot``zawsze istnieje)."
+"znajduje się project.godot, więc ``res://project.godot`` zawsze istnieje)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:75
 msgid ""
@@ -19826,7 +19833,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:214
 msgid "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
-msgstr ""
+msgstr "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:216
 msgid ""
@@ -48502,7 +48509,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:12
 msgid "AR/VR Server"
-msgstr ""
+msgstr "Serwer AR/VR"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:14
 msgid ""
@@ -53408,7 +53415,7 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:129
 msgid "5: :ref:`Vector2<class_vector2>`"
-msgstr ""
+msgstr "5: :ref:`Vector2<class_vector2>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:134
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:145
@@ -53562,7 +53569,7 @@ msgstr "28"
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:255
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:280
 msgid "32"
-msgstr ""
+msgstr "32"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:257
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:282
@@ -54376,7 +54383,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:18
 msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/downloads/>`__."
-msgstr ""
+msgstr "`Python 2.7+ lub Python 3.5+ <https://www.python.org/downloads/>`__."
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:19
 msgid ""
@@ -54885,7 +54892,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:415
 msgid "And for 64-bit:"
-msgstr ""
+msgstr "I dla 64-bitów:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:425
 msgid "Creating Windows export templates"
@@ -55037,6 +55044,8 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_x11.rst:94
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
+"Jeśli chcesz możesz skompilować to używając Clang zamiast GCC, używając "
+"następujących komend:"
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:100
 msgid ""
@@ -55384,7 +55393,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:176
 msgid "Application not installed"
-msgstr ""
+msgstr "Aplikacja nie zainstalowana"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:178
 msgid ""
@@ -55797,7 +55806,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:52
 msgid "Repeat for the other architectures."
-msgstr ""
+msgstr "Powtórz dla innych architektur sprzętowych."
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:54
 msgid ""
@@ -55922,6 +55931,8 @@ msgstr "Kompilowanie dla sieci Web"
 #: ../../docs/development/compiling/compiling_for_web.rst:11
 msgid "To compile export templates for the Web, the following is required:"
 msgstr ""
+"By skompilować szablony eksportu dla sieci Web, wymagane są następujące "
+"kroki:"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:13
 msgid ""
@@ -55933,11 +55944,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_web.rst:16
 msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/>`__"
-msgstr ""
+msgstr "`Python 2.7+ lub Python 3.5+ <https://www.python.org/>`__"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:17
 msgid "`SCons <https://www.scons.org>`__ build system"
-msgstr ""
+msgstr "System budowania `SCons <https://www.scons.org>`__"
 
 #: ../../docs/development/compiling/compiling_for_web.rst:22
 msgid ""
@@ -56097,7 +56108,7 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_with_mono.rst:47
 #: ../../docs/development/cpp/custom_godot_servers.rst:502
 msgid "Notes"
-msgstr ""
+msgstr "Uwagi"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:48
 msgid ""
@@ -56538,7 +56549,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:157
 msgid "That's it! Now you should be good to go :)"
-msgstr ""
+msgstr "To wszystko! Teraz powinno wszystko działać :)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:163
 msgid "Xcode"
@@ -56605,7 +56616,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:195
 msgid "e.g. ``/Users/me/repos/godot-source/\\**``"
-msgstr ""
+msgstr "np. ``/Users/ja/repo/godot-source/\\**``"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:197
 msgid "Add Godot Source to the Project:"
@@ -56874,21 +56885,22 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:80
 msgid "For C-style allocation, Godot provides a few macros:"
-msgstr ""
+msgstr "Dla stylu alokacji jak w C, Godot zapewnia kilka makr:"
 
 #: ../../docs/development/cpp/core_types.rst:88
 msgid ""
 "These are equivalent to the usual malloc, realloc, free of the standard "
 "library."
 msgstr ""
+"Są one odpowiednikiem dla malloc, realloc, free ze standardowej biblioteki."
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr ""
+msgstr "Dla alokacji w stylu C++, stworzone zostały następujące makra:"
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr ""
+msgstr "które są odpowiednikiem dla new, delete, new[] i delete[]"
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
@@ -56919,12 +56931,16 @@ msgid ""
 "`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
 "memory.h>`__"
 msgstr ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:136
 msgid ""
 "`core/dvector.h <https://github.com/godotengine/godot/blob/master/core/"
 "dvector.h>`__"
 msgstr ""
+"`core/dvector.h <https://github.com/godotengine/godot/blob/master/core/"
+"dvector.h>`__"
 
 #: ../../docs/development/cpp/core_types.rst:139
 msgid "Containers"
@@ -57307,7 +57323,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:120
 msgid "Properties (set/get)"
-msgstr ""
+msgstr "Właściwości (set/get)"
 
 #: ../../docs/development/cpp/object_class.rst:122
 msgid "Objects export properties, properties are useful for the following:"
@@ -57315,7 +57331,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:124
 msgid "Serializing and deserializing the object."
-msgstr ""
+msgstr "Serializacja i deserializacja obiektu."
 
 #: ../../docs/development/cpp/object_class.rst:125
 msgid "Creating a list of editable values for the Object derived class."
@@ -57997,7 +58013,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:111
 msgid "Creating Custom Data Types"
-msgstr ""
+msgstr "Tworzenie własych typów danych"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:113
 msgid ""
@@ -58008,7 +58024,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:117
 msgid "Here is an example of how to create a custom datatype"
-msgstr ""
+msgstr "Oto przykład jak stworzyć własny typ danych"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:174
 msgid "Considerations"
@@ -58726,11 +58742,11 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:22
 msgid "There are five main sections inside the TSCN File:"
-msgstr ""
+msgstr "Jest 5 głównych sekcji w pliku TSCN:"
 
 #: ../../docs/development/file_formats/tscn.rst:24
 msgid "File Descriptor"
-msgstr ""
+msgstr "File Descriptor"
 
 #: ../../docs/development/file_formats/tscn.rst:25
 msgid "External resources"
@@ -58768,7 +58784,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:49
 msgid "ext_resource"
-msgstr ""
+msgstr "ext_resource"
 
 #: ../../docs/development/file_formats/tscn.rst:50
 msgid "sub_resource"
@@ -61831,7 +61847,7 @@ msgstr "Porusz [Sprite]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "Move the :ref:`class_sprite`."
-msgstr ""
+msgstr "Porusz :ref:`class_sprite`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "[method methodname]"

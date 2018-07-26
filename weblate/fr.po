@@ -47,8 +47,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-18 14:59+0200\n"
-"PO-Revision-Date: 2018-07-18 12:48+0000\n"
-"Last-Translator: Ewan Lehnebach <ewan.lehnebach@gmail.com>\n"
+"PO-Revision-Date: 2018-07-21 14:37+0000\n"
+"Last-Translator: Perrier Mathis <mathis.perrier73@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -2370,11 +2370,12 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
-"Jetez un oeil à l'élément \"pièce\". Supposons que nous ayons commencé par "
-"là. Nous pourrions construire quelques scènes de pièces différentes, avec "
-"différents aménagements de mobilier (des scènes aussi) dedans. Plus tard, "
-"nous pourrions construire une scène \"maison\" reliant les pièces entre "
-"elles pour former son intérieur."
+"Prenons par exemple l'élément \"room\" (chambre) du diagramme. Disons que "
+"nous commencions par celui-ci. Nous pourrions alors créer quelques variantes "
+"de la scène \"room\", avec différents arrangements de meubles (eux-même des "
+"scènes) à l'intérieur. Plus tard nous pourrions même créer un scène \"house"
+"\" (maison) faisant la connexion entre les différentes scènes \"room\" et en "
+"créer ainsi l'intérieur."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
 msgid ""
@@ -2852,7 +2853,7 @@ msgid ""
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
 "Il n'y a pas grand-chose. La fonction ``_ready()`` est appelée lorsque le "
-"nœud et tous ses enfants entrent dans la scène active. **Notez : "
+"nœud et tous ses enfants entrent dans la scène active. **Note** : "
 "``_ready()`` n'est pas le constructeur ; le constructeur est ``_init()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:170
@@ -4347,15 +4348,14 @@ msgstr ""
 "une nouvelle partie :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:729
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
 "start the other two timers. ``ScoreTimer`` will increment the score by 1."
 msgstr ""
-"Connectez maintenant le signal ``timeout()`` de chacun des nœuds Timer. "
-"``StartTimer`` démarre les deux autres minuteries. ``ScoreTimer`` "
-"incrémentera le score de 1."
+"Maintenant, connectez le signal ``timeout()`` de chacun des nœuds Timer "
+"(``StartTimer``, ``ScoreTimer`` et ``MobTimer``). ``StartTimer`` démarrera "
+"les deux autres timers. ``ScoreTimer`` incrémentera le score de 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:760
 msgid ""
@@ -4382,11 +4382,14 @@ msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
+"Maintenant cliquez sur ``MobTimer`` dans la vue scène et rendez-vous dans la "
+"vue de l'Inspecteur, passez à la vue nœud puis cliquez sur ``timeout()`` et "
+"connectez le signal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1092
 msgid "Add the following code:"
-msgstr ""
+msgstr "Ajoutez le code suivant :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:819
 msgid ""
@@ -5540,7 +5543,6 @@ msgstr ""
 "étroitement intégrés au moteur et à l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
-#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
@@ -5548,10 +5550,10 @@ msgid ""
 msgstr ""
 "GDscript vous permet d'écrire du code simple en utilisant une syntaxe "
 "ressemblant à celle de Python, tout en ayant la capacité de détecter les "
-"types et d'offrir une saisie assistée de même qualité que celle disponible "
-"avec les langages à typage statique. Il est aussi optimisé pour l'écriture "
-"de code orienté gameplay grâce à des types intégrés tels que Vector et "
-"Colors."
+"types et offre un auto-completion de qualité similaire aux auto-complétions "
+"disponibles avec des langages statiques. Il est également optimisé pour "
+"l'écriture de code orienté gameplay grâce à des types intégrés tels que "
+"Vector et Colors."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
 msgid ""
@@ -5590,45 +5592,41 @@ msgstr ""
 "ci-dessous."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
-#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
-"*Une machine à états proposée sous forme d'extension à l'éditeur par "
-"kubecz3k, vous permettant de gérer les états et les transitions visuellement*"
+"*Un plugin d'éditeur de machine à états dans Godot 2 par kubecz3k. Il vous "
+"permet de gérer les états et les transitions visuellement*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
-#, fuzzy
 msgid "Open source"
 msgstr "Libre"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
-#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
 "as well. For the most part, they’re developed from the ground up by "
 "contributors."
 msgstr ""
-"Godot propose un code source complètement libre sous **licence MIT.** Cela "
+"Godot propose un code source complètement libre sous **licence MIT**. Cela "
 "veut dire que toutes les technologies qui sont intégrées dans le moteur "
 "doivent être sous licence libre également. Pour la plupart, elles sont "
-"entièrement développées par les contributeurs."
+"élaborées à partir de la base des collaborateurs."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include NVIDIA PhysX, Google "
 "AdMob, or an FBX model importer. Any of these can come as third-party "
 "plugins instead."
 msgstr ""
-"N'importe qui peut ajouter des outils propriétaires pour les besoins de "
-"leurs projets - ils ne seront tout simplement pas livrés avec le moteur. Il "
-"peut s'agir de NViDia PhysX, Google Admob ou d'un importateur de fichiers "
-"FBX. Mais n'importe lequel d'entre eux peut venir sous forme de plugins "
-"tiers à la place."
+"N'importe qui peut ajouter des outils propriétaires pour le besoin de leurs "
+"projets - ils ne sont simplement pas fournis avec le moteur. Il peut s'agir "
+"de NViDia PhysX, Google Admob ou d'un importateur de fichiers FBX. Mais "
+"n'importe lequel d'entre eux peut venir sous forme de plugins tiers à la "
+"place."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -5711,44 +5709,40 @@ msgstr ""
 "exécuter n'importe quel code de jeu dans l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
-#, fuzzy
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot’s UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
-"*RPG in a Box est un éditeur de JDRs en style voxel réalisé avec Godot 2. Il "
-"utilise les outils d'interface utilisateur de Godot pour son système de "
-"programmation par nœuds et pour le reste de l'interface.*"
+"*RPG in a Box est un éditeur RPG (Jeux de rôle) en style voxel réalisé avec "
+"Godot 2. Il utilise les outils d'interface utilisateur de Godot pour son "
+"système de programmation par nœuds et pour le reste de l'interface.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
-#, fuzzy
 msgid ""
 "Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
-"Mettez le mot-clé ``tool`` en début de n'importe quel fichier GDScript et il "
-"s'exécutera dans l'éditeur. Cela vous permet d'importer et d'exporter des "
-"plugins, de créer des plugins comme des éditeurs de niveau personnalisé ou "
-"de créer des scripts avec les mêmes nœuds et API que vous utilisez dans vos "
-"projets."
+"Mettez le mot-clé ``tool`` au début de n'importe quel fichier GDScript et il "
+"s'exécutera dans l'éditeur. Cela vous permet d'importer, d'exporter, de "
+"créer des plugins comme des éditeurs de niveau personnalisé ou bien de créer "
+"des scripts avec les mêmes nœuds et API que vous utilisez dans vos projets."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
 msgid "Separate 2D and 3D engines"
 msgstr "Moteurs 2D et 3D séparés"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
-#, fuzzy
 msgid ""
 "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "
 "can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over "
 "your 3D world."
 msgstr ""
-"Godot propose des moteurs de rendu 2D et 3D dédiés. Du fait que **l'unité de "
-"base pour les scène 2D est le pixel**, même si les moteurs sont séparés, "
+"Godot propose des moteurs de rendu 2D et 3D dédiés. Du fait, **l'unité de "
+"base pour les scène 2D est le pixel**. Même si les moteurs sont séparés, "
 "vous pouvez faire un rendu 2D en 3D, 3D en 2D, et superposer des sprites 2D "
 "et une interface sur votre monde 3D."
 
@@ -6188,9 +6182,9 @@ msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
 msgstr ""
-"Au fur et à mesure que vous créerez des interfaces utilisateur pour vos jeux "
-"et outils, vous développerez une intuition de ce qui convient le mieux à "
-"chaque situation."
+"En créant des interfaces utilisateur pour vos jeux et outils, vous "
+"développerez une l'intuition pour ce qui est le plus approprié dans chaque "
+"situation."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:180
 msgid "Place UI elements precisely with anchors"
@@ -6941,7 +6935,7 @@ msgstr ""
 "Répétez l'opération pour tous les nœuds ``TextureRect``. Vous devriez avoir "
 "le logo, l'illustration, les trois options de menu et la note de version, "
 "chacun en tant que nœud séparé. Ensuite, double-cliquez sur chacun des nœuds "
-"de l'Inspecteur pour les renommer."
+"dans l'Inspecteur pour les renommer."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:174
 msgid "The six nodes, with textures loaded"
@@ -7094,27 +7088,26 @@ msgid ""
 "check ``Expand``. The container expands to take all the available vertical "
 "space. But it respects its neighbors, the ``Logo`` and ``Version`` elements."
 msgstr ""
-"Maintenant que nous avons regroupé les options de menu tous ensemble, nous "
-"pouvons dire à leur conteneur de s'étendre pour prendre autant d'espace "
-"vertical que possible. Sélectionnez le noeud ``MenuOptions``. Dans "
-"l'inspecteur, faites défiler vers le bas jusqu'à la catégorie \" Size Flags "
-"\". Cliquez sur le champ à droite de la propriété ``Vertical`` et cochez "
-"``Expand``. Le conteneur s'épanche pour prendre tout l'espace vertical "
-"disponible. Mais elle respecte ses voisins, les éléments \"Logo\" et "
-"\"Version\"."
+"Maintenant que nous avons regroupé les options de menu ensembles, nous "
+"pouvons étendre le conteneur pour qu'il prenne toute l'espace vertical "
+"disponible. Sélectionnez le nœud ``MenuOptions``. Dans l'inspecteur, "
+"naviguez jusqu'à la catégorie ``Size Flags``. Cliquez sur le champs à droite "
+"de la propriété ``Vertical`` et cochez ``Expand``. Le conteneur s'étend à "
+"présent pour prendre tout l'espace vertical disponible en respectant les "
+"élément ``Logo`` et ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:252
 msgid ""
 "To center the nodes in the ``VBoxContainer``, scroll to the top of the "
 "Inspector and change the ``Alignment`` property to ``Center``."
 msgstr ""
-"Pour centrer les nœuds dans le ``VBoxContainer``, faites défiler jusqu'en "
-"haut de l'Inspecteur et changez la propriété ``Alignment`` en ``Center``."
+"Pour centrer les nœuds dans le ``VBoxContainer``, changez la propriété "
+"``Alignement`` pour ``Center`` en haut de l'inspecteur."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:257
 msgid "The menu options should center vertically in the UI's left column"
 msgstr ""
-"Les options du menu devraient se centrer verticalement dans la colonne de "
+"Les options du menu devraient être centrer verticalement dans la colonne de "
 "gauche de l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:259
@@ -7139,7 +7132,8 @@ msgstr "L'interface finale"
 msgid ""
 "Without a single line of code, we have a precise and responsive main menu."
 msgstr ""
-"Sans une seule ligne de code, nous avons un menu principal précis et réactif."
+"Sans la moindre ligne de code, nous avons un menu principal s'adaptant "
+"précisément aux dimensions de l'écran."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
 msgid ""
@@ -7159,11 +7153,11 @@ msgid ""
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
-"Une interface utilisateur adaptative consiste à s'assurer que nos interfaces "
-"utilisateur s'adaptent bien à tous les types d'écran. Les écrans de "
-"télévision et les écrans d'ordinateur ont différentes tailles et ratios . "
-"Dans Godot, nous utilisons des conteneurs pour contrôler la position et la "
-"taille des éléments de l'interface utilisateur."
+"Une interface utilisateur dite \"Responsive\" fait en sorte qu'elle s'adapte "
+"correctement à tous les types d'écrans. Une télévision et un moniteur "
+"d'ordinateur possède des ratios et des tailles différentes. Dans Godot, nous "
+"utilisons des conteneurs pour contrôler la position et la taille des "
+"éléments constituants notre interface."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
 msgid ""
@@ -7245,7 +7239,7 @@ msgstr "Utiliser l'héritage de scène"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
 msgid "Build a complex UI"
-msgstr "Construire une interface utilisateur complexe"
+msgstr "Construire une interface complexe"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
 msgid ""
@@ -7361,12 +7355,10 @@ msgstr ""
 "sous-scènes réutilisables. Nous le ferons dans un instant."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
-#, fuzzy
 msgid "For now, let's start with a few containers."
 msgstr "Pour l'instant, commençons avec quelques conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``. Then save the scene as ``GUI.tscn``. It will contain the entire "
@@ -7377,7 +7369,6 @@ msgstr ""
 "tscn``. Il contiendra toute l'interface graphique."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:75
-#, fuzzy
 msgid ""
 "With the ``MarginContainer`` selected, head to the inspector and scroll down "
 "to the custom constants section. Unfold it and click the field next to each "
@@ -7388,12 +7379,11 @@ msgstr ""
 "Avec le ``MarginContainer`` sélectionné, dirigez-vous vers l'inspecteur et "
 "faites défiler vers le bas jusqu'à la section des constantes personnalisées. "
 "Dépliez-le et cliquez sur le champ à côté de chacune des propriétés "
-"``Margin``. Réglez-les tous sur ``20`` pixels. Ensuite, ajoutez un noeud "
+"``Margin``. Réglez-les tous sur ``20`` pixels. Ensuite, ajoutez un nœud "
 "``HBoxContainer``. Celui-ci contiendra nos deux barres à gauche et les "
 "séparera des deux compteurs à droite."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:81
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. To do "
 "this, let's add a ``VBoxContainer``. Name it ``Bars``. Select the parent "
@@ -7402,39 +7392,35 @@ msgid ""
 "containers, we have the base for our GUI scene."
 msgstr ""
 "Nous voulons empiler les barres verticalement à l'intérieur du "
-"``HBoxContainer``. Pour ce faire, ajoutons un ``VBoxContainer``. Donnez-lui "
-"le nom de \"Bars\". Sélectionnez à nouveau le parent ``HBoxContainer`` et "
-"cette fois, ajoutez un autre ``HBoxContainer``. Celui-ci contiendra les "
+"``HBoxContainer``. Pour ce faire, ajoutons un ``VBoxContainer`` et donnez-"
+"lui le nom de \"Bars\". Sélectionnez à nouveau le parent ``HBoxContainer`` "
+"et cette fois, ajoutez un autre ``HBoxContainer``. Celui-ci contiendra les "
 "compteurs, alors appelez-le \"Counters\". Avec ces quatre conteneurs, nous "
 "avons la base de notre scène GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:89
-#, fuzzy
 msgid "You should have 4 containers that look like this"
 msgstr "Vous devriez avoir 4 conteneurs ressemblant à ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:93
-#, fuzzy
 msgid ""
 "We can work this way because we first broke down our UI design and took a "
 "few moments to think about the containers we'd use. When you follow a "
 "tutorial like this, it may seem weird. But once you're working on real "
 "games, you'll see it's an efficient workflow."
 msgstr ""
-"Nous pouvons travailler de cette façon parce que nous avons d'abord "
-"décomposé la conception de notre interface utilisateur et que nous avons "
-"pris quelques instants pour réfléchir aux conteneurs que nous utiliserions. "
-"Quand vous suivez un tutoriel comme celui-ci, cela peut sembler bizarre. "
-"Mais une fois que vous travaillez sur de vrais jeux, vous verrez qu'il "
-"s'agit d'une méthode de travail efficace."
+"Nous pouvons travailler de cette façon car nous avons d'abord décomposé la "
+"conception de notre interface utilisateur puis nous avons pris quelques "
+"instants pour réfléchir aux conteneurs allons utiliser. Quand vous suivez un "
+"tutoriel comme celui-ci, cela peut sembler bizarre, mais lorsque vous "
+"travaillerez sur de vrais jeux, vous verrez qu'il s'agit d'une méthode de "
+"travail efficace."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
-#, fuzzy
 msgid "Create the bars' base"
 msgstr "Créez la base des barres"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:101
-#, fuzzy
 msgid ""
 "Each bar is split into two sub-elements that align horizontally: the label "
 "with the health count on the left, and the gauge on the right. Once again, "
@@ -7442,13 +7428,12 @@ msgid ""
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
 "Chaque barre est divisée en deux sous-éléments qui s'alignent "
-"horizontalement : L'étiquette avec le compte de santé à gauche et la jauge à "
-"droite. Une fois de plus, le ``HBoxContainer`` est l'outil parfait pour le "
-"travail. Sélectionnez le noeud ``Bars`` et ajoutez un nouveau "
-"``HBoxContainer`` à l'intérieur. Donnez-lui le nom de \"Bar\"."
+"horizontalement : Le texte de la santé à gauche et la jauge à droite. Une "
+"fois de plus, le ``HBoxContainer`` est l'outil parfait pour le travail. "
+"Sélectionnez le nœud ``Bars`` et ajoutez un nouveau ``HBoxContainer`` à "
+"l'intérieur. Donnez-lui le nom de \"Bar\"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
-#, fuzzy
 msgid ""
 "The label itself requires at least three nodes: a ``NinePatchRect`` for the "
 "background, on top of which we'll add a texture on the left, either ``HP`` "
@@ -7460,17 +7445,17 @@ msgid ""
 "between the life count and the gauge. Select the ``Bar`` and add a "
 "``MarginContainer``. Name it ``Count``. Inside of it, add three nodes:"
 msgstr ""
-"L'étiquette elle-même nécessite au moins trois nœuds : Un ``NinePatchRect`` "
-"pour le fond, sur lequel nous ajouterons une texture à gauche, soit ``HP``, "
-"soit ``EP``, et un ``Label`` à droite pour la valeur. Nous pouvons emboîter "
-"les nœuds \"Control\" comme nous le voulons. Nous pourrions utiliser le "
-"``NinePatchRect`` comme parent pour les deux autres éléments, car il les "
-"englobe. En général, vous voudrez utiliser des conteneurs à la place, car "
-"leur rôle est d'aider à organiser les composants de l'interface utilisateur. "
-"Nous aurons besoin d'un ``MarginContainer`` plus tard de toute façon pour "
-"ajouter de l'espace entre la durée de vie et la jauge. Sélectionnez ``Bar`` "
-"et ajoutez un ``MarginContainer``. Donnez-lui le nom de \"Count\". A "
-"l'intérieur, ajoutez trois nœuds :"
+"Le label nécessite au moins trois nœuds : Un ``NinePatchRect`` pour le fond, "
+"sur lequel nous ajouterons une texture à gauche, soit ``HP`` ou``EP``, et un "
+"``Label`` à droite pour la valeur. Nous pouvons emboîter les nœuds \"Control"
+"\" comme nous le souhaitons. Nous pouvons utiliser le ``NinePatchRect`` "
+"comme parent pour les deux autres éléments car il les englobe. En général, "
+"il est préférable d'utiliser des conteneurs à la place, car leur rôle est "
+"d'aider à organiser les composants de l'interface utilisateur. Nous aurons "
+"besoin d'un ``MarginContainer`` plus tard de toute façon pour ajouter de "
+"l'espace entre la durée de vie et la jauge. Sélectionnez ``Bar``, ajoutez un "
+"``MarginContainer`` et donnez-lui le nom de \"Count\". A l'intérieur, "
+"ajoutez trois nœuds :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:118
 msgid "A ``NinePatchRect`` named ``Background``"
@@ -7485,22 +7470,19 @@ msgid "And a ``Label`` named ``Number``"
 msgstr "Et un ``Label`` nommé ``Number``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:122
-#, fuzzy
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
-"Pour ajouter les noeuds en tant que frères, sélectionnez toujours le noeud "
+"Pour ajouter les nœuds en tant que frères, sélectionnez toujours le nœud "
 "``Count`` en premier."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
-#, fuzzy
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
 "Votre arbre de scène devrait ressembler à ceci. Nous sommes prêts à ajouter "
-"des textures."
+"des textures"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:129
-#, fuzzy
 msgid ""
 "Our scene is still empty. It's time to throw in some textures. To load the "
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
@@ -7517,7 +7499,6 @@ msgstr ""
 "votre interface."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:138
-#, fuzzy
 msgid ""
 "Select the ``Background`` in the Scene dock. In the Inspector, you should "
 "see a ``Texture`` property. In the FileSystem tab, click and drag "
@@ -7533,8 +7514,8 @@ msgstr ""
 "Il reste écrasé. Le conteneur MarginContainer parent forcera sa taille à 0 "
 "jusqu'à ce que nous forcions les éléments à l'intérieur du conteneur à avoir "
 "une taille minimale. Sélectionnez le nœud ``Background``. Dans l'inspecteur, "
-"faites défiler vers le bas jusqu'à la section Rect. Réglez \"Taille minimale"
-"\" sur (100, 40). Vous devriez voir le ``Background`` redimensionné avec ses "
+"faites défiler vers le bas jusqu'à la section Rect. Réglez ``Min Size`` à "
+"(100, 40). Vous devriez voir le ``Background`` redimensionné avec ses "
 "conteneurs parents."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:147
@@ -8063,14 +8044,13 @@ msgstr ""
 "ne voulons pas le copier manuellement dans toutes les variations."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:390
-#, fuzzy
 msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
 "Une icône de rechargement apparaîtra à côté des propriétés que vous "
 "remplacez. Cliquez dessus pour réinitialiser la valeur à la valeur par "
-"défaut de la scène mère."
+"défaut de la scène parente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 #, fuzzy
@@ -9486,16 +9466,15 @@ msgid "So far, the update\\_health method looks like this:"
 msgstr "Jusqu'à maintenant, la fonction update\\_health ressemble à cela:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
-#, fuzzy
 msgid ""
 "In this specific case, because ``number_label`` takes text, we need to use "
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
 "``TextureProgress`` nodes like before, inside of ``_process``:"
 msgstr ""
-"Dans ce cas particulier, parce que ``number_label`` prend du text, nous "
-"avons besoin d'utiliser la méthode ``_process`` pour l'animer. C'est parti "
-"pour mettre à jour les noeuds ``Number`` et ``TextureProgress`` comme avant, "
-"à l'intérieur de ``_process``:"
+"Dans ce cas particulier, ``number_label`` prends du texte, nous avons donc "
+"besoin d'utiliser la méthode ``_process`` pour l'animer. Nous allons "
+"maintenant mettre à jour les nœuds ``Number`` et ``TextureProgress`` comme "
+"avant, à l'intérieur de ``_process`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
 msgid ""
@@ -9723,7 +9702,6 @@ msgid "The final result. Congratulations for getting there!"
 msgstr "Le résultat final. Félicitations d'être arrivé jusque là !"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
-#, fuzzy
 msgid ""
 "Using the exact same techniques, you can change the color of the bar when "
 "the Player gets poisoned, turn the bar red when its health drops low, shake "
@@ -9731,29 +9709,28 @@ msgid ""
 "signal to forward the information from the `Player` to the `GUI` and let the "
 "`GUI` process it."
 msgstr ""
-"En utilisant exactement les mêmes méthodes, vous pouvez changer la couleur "
-"de la barre quand le joueur est empoisonné, la mettre au rouge quand sa "
-"santé devient basse, secouer l'interface de l'utilisateur quand il prend un "
-"coup critique...Le principe est le même : émettre un signal pour transférer "
-"l'information du joueur au GUI et laisser le GUI traiter ce signal"
+"En utilisant exactement la même technique, il est possible de changer la "
+"couleur de la barre quand le Joueur s’empoisonne, de la rendre rouge quand "
+"sa santé est faible, de secouer l'interface utilisateur quand il prend un "
+"coup critique ... Le principe est le même : envoyer un signal qui transmet "
+"l'information du \"Joueur\" au \"GUI\" et laisser le \"GUI\" traiter ce "
+"signal."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
-#, fuzzy
 msgid "Splash screen"
-msgstr "écran d'accueil"
+msgstr "Écran de lancement"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
 msgstr "Tutoriel"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
-#, fuzzy
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
-"Il est simple pour établir un idée basique de comment fonctionne le sous-"
-"système d'une IHM. Le but est de créer un simple écran"
+"Ceci est un tutoriel simple pour établir l'idée de base du fonctionnement du "
+"sous système GUI. Le but est de créer un écran d'accueil statique simple."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
 #, fuzzy
@@ -10138,14 +10115,13 @@ msgstr ""
 "faire. La première est d'utiliser load(), comme ceci :"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
-#, fuzzy
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter because it loads the resource at compile-time."
 msgstr ""
 "La seconde manière est plus optimale, mais ne fonctionne qu'avec une "
-"constante de chaîne de caractère en paramètre car elle charge la ressource "
-"au moment de la compilation."
+"constante string en paramètre car elle charge la ressource au moment de la "
+"compilation."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:116
 msgid "Loading scenes"
@@ -10157,12 +10133,18 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. This means that "
 "the scene is packed inside a resource."
 msgstr ""
+"Les scènes sont également des ressources, mais il y a une différence. Les "
+"scènes sauvegardées sur le disque dur sont des ressources de type :ref:"
+"`PackedScene <class_PackedScene>`. Cela signifie que la scène est emballée à "
+"l'intérieur d'une ressource."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:121
 msgid ""
 "To obtain an instance of the scene, the method :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` must be used."
 msgstr ""
+"Pour obtenir une instance de la scène, la méthode :ref:`PackedScene."
+"instance() <class_PackedScene_instance>` doit être utilisée."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:143
 msgid ""
@@ -10170,6 +10152,9 @@ msgid ""
 "(sets all the properties) and returns the root node of the scene, which can "
 "be added to any other node."
 msgstr ""
+"Cette méthode crée les nœuds dans la hiérarchie de la scène, les configure "
+"(définit toutes les propriétés) et retourne le nœud racine de la scène, qui "
+"peut être ajouté à n'importe quel autre nœud."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:147
 msgid ""
@@ -10180,10 +10165,17 @@ msgid ""
 "each time. It is important to remember that, as always, images, meshes, etc "
 "are all shared between the scene instances."
 msgstr ""
+"Cette approche présente plusieurs avantages. Comme la fonction :ref:"
+"`PackedScene.instance() <class_PackedScene_instance>` est assez rapide, "
+"l'ajout de contenu supplémentaire à la scène peut être fait efficacement. De "
+"nouveaux ennemis, balles, effets, etc peuvent être ajoutés ou retirés "
+"rapidement, sans avoir à les recharger à chaque fois à partir du disque dur. "
+"Il est important de se rappeler que, comme toujours, les images, les "
+"maillages, etc sont tous partagés entre les instances de la scène."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:156
 msgid "Freeing resources"
-msgstr ""
+msgstr "Libérer des ressources"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
@@ -10192,6 +10184,12 @@ msgid ""
 "most cases, Resources are contained in Nodes, scripts or other resources, "
 "when a node is removed or freed, all the children resources are freed too."
 msgstr ""
+"Les ressources héritent de la classe :ref:`Reference <class_Reference>`. "
+"Ainsi, lorsqu'une ressource n'est plus utilisée, elle se libère "
+"automatiquement. Puisque, dans la plupart des cas, les ressources sont "
+"contenues dans des Nœuds, des scripts ou d'autres ressources, quand un nœud "
+"est supprimé ou libéré, toutes les ressources enfants de ce nœud sont "
+"libérées également."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
 msgid ""
@@ -10199,10 +10197,14 @@ msgid ""
 "However, there isn't generally much of an advantage, as resources are just "
 "data containers."
 msgstr ""
+"Comme n'importe quel objet dans Godot, pas seulement les nœuds, les "
+"ressources peuvent aussi être scriptées. Cependant, il n'y a généralement "
+"pas beaucoup d'avantages à le faire, car les ressources ne sont que des "
+"conteneurs de données."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
-msgstr ""
+msgstr "Système de fichiers"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
 msgid ""
@@ -10211,6 +10213,11 @@ msgid ""
 "designed file system also allows multiple developers to edit the same source "
 "files and assets while collaborating together."
 msgstr ""
+"Le système de fichier est également un des derniers sujets du développement "
+"du moteur. Le système de fichier gère la façon dont les assets sont stockés "
+"et comment ils sont accessibles. Un système bien prévu permet à plusieurs "
+"développeurs d'éditer les mêmes fichiers et assets lorsqu'ils collaborent "
+"ensembles."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:14
 msgid ""
@@ -10220,11 +10227,17 @@ msgid ""
 "metadata, etc. In the end the simple approach won and now Godot stores all "
 "assets as files in the file system."
 msgstr ""
+"La version initiale du moteur de Godot (avant qu'il soit appelé Godot) "
+"utilisait une base de donnée. Les assets étaient stockés dedans et assigné à "
+"un identifiant (ID). D'autres approches ont été essayées, comme des bases de "
+"données locales, des fichiers avec des métadonnées, etc. L'approche la plus "
+"simple l'a remporté et maintenant Godot stock ses assets sous formes de "
+"fichier dans le système de fichier."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:21
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:68
 msgid "Implementation"
-msgstr ""
+msgstr "Implémentation"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:23
 msgid ""
@@ -10236,6 +10249,13 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
+"Le système de fichier stock ses ressources sur disque. Des scripts aux "
+"scènes en passant par les images en PNG sont des ressources pour le moteur. "
+"Si une ressource contient des propriétés faisant référence à d'autres "
+"ressources sur le disque, le chemin de ces ressources sont également inclus. "
+"Si une ressource est constituée d'une sous ressource, elle est sauvegardé en "
+"un seul fichier avec toutes ses sous-ressources. Par exemple, une ressource "
+"de police est souvent comprise avec une police de caractère."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
 msgid ""
@@ -10244,14 +10264,19 @@ msgid ""
 "anything we can implement, so Godot tries the best to play along with SVN, "
 "Git, Mercurial, Perforce, etc."
 msgstr ""
+"En général, le système de fichier de Godot évite d'utiliser des fichiers de "
+"métadonnées. La raison est simple, les gestionnaires d'assets existants et "
+"les VCS sont tout simplement bien meilleurs que tout ce que nous pouvons "
+"mettre en œuvre, alors Godot essaie de jouer au mieux avec SVN, Git, "
+"Mercurial, Perforce, etc."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:35
 msgid "Example of a file system contents:"
-msgstr ""
+msgstr "Exemple du contenu d'un système de fichier :"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:46
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:48
 msgid ""
@@ -10259,6 +10284,10 @@ msgid ""
 "found at the root of the project. In fact its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
+"Le fichier project.godot est un fichier de description de projet, et il se "
+"trouve toujours à la racine du projet. En faite la localisation définie où "
+"la racine se situe. C'est le premier fichier que Godot va regarder pour "
+"ouvrir le projet."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
 msgid ""
@@ -10266,10 +10295,13 @@ msgid ""
 "ini format. Even an empty project.godot can function as a basic definition "
 "of a blank project."
 msgstr ""
+"Ce fichier contient la configuration du projet en texte brut sous le format "
+"win.ini. Même un fichier project.godot vide peut fonctionner comme une "
+"définition basique d'un projet vide."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:57
 msgid "Path delimiter"
-msgstr ""
+msgstr "Délimiteur de chemin d'accès (Path delimiter)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:59
 msgid ""
@@ -10278,11 +10310,15 @@ msgid ""
 "``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
 "godot``."
 msgstr ""
+"Godot supporte uniquement ``/`` comment délimiteur de chemin d'accès pour "
+"plusieurs raisons. Toutes opérations de système supporte cela, même Windows. "
+"Un chemin tel que ``c:\\project\\project.godot`` doit donc être écrit ``c:/"
+"project/project.godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:65
 #: ../../docs/tutorials/io/data_paths.rst:16
 msgid "Resource path"
-msgstr ""
+msgstr "Chemin des ressources (Resource path)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:67
 msgid ""
@@ -10290,12 +10326,18 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
+"Lorsqu'il faut accéder à des ressources, utiliser le système de fichier du "
+"système d'exploitation peut être encombrante et non portative. Pour résoudre "
+"ce problème, le chemin spécial ``res://`` a été créé."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:71
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so in fact ``res://project.godot`` is always valid)."
 msgstr ""
+"Le chemin ``res://`` pointera toujours vers la racine du projet (là où "
+"project.godot est localisé, alors ``res://project.godot`` est toujours "
+"valide)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:75
 msgid ""
@@ -10304,10 +10346,14 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
+"Le système de fichier est en lecture-écriture uniquement lorsque le projet "
+"est lancé localement de l'éditeur. Lorsqu'il est exporté ou lancé sur des "
+"appareils différents (comme des téléphones, consoles, ou lancé d'un DVD), le "
+"système de fichier passe en lecture seule et l'écriture n'est plus permise."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "User path"
-msgstr ""
+msgstr "Chemin de l'utilisateur (User path)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid ""
@@ -10315,10 +10361,14 @@ msgid ""
 "state or downloading content packs. To this end, the engine ensures that "
 "there is a special path ``user://`` that is always writable."
 msgstr ""
+"Écrire sur le disque est souvent nécessaire lors de diverses tâches comme la "
+"sauvegarde d'une partie ou le téléchargement de contenu additionnel. Pour "
+"cela, le moteur assure le fait que le chemin spécial ``user://`` est "
+"toujours accessible en écriture."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:88
 msgid "Host file system"
-msgstr ""
+msgstr "Système de fichier hôte (Host file system)"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:90
 msgid ""
@@ -10327,10 +10377,15 @@ msgid ""
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot!"
 msgstr ""
+"Autrement le système de fichier hôte peut également être utilisé. Cependant "
+"ce n'est pas recommandé pour un produit commercialisé car il n'est pas "
+"garanti que ces chemins fonctionnent sur toutes les plates-formes. Toutes "
+"fois, utiliser un système de fichier hôte peut être utile lors du "
+"développement d'outils dans Godot !"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:96
 msgid "Drawbacks"
-msgstr ""
+msgstr "Inconvénients"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
@@ -10340,6 +10395,11 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
+"Il y a quelques inconvénients à ce système de fichier. Le premier problème "
+"est lorsqu'il s'agit de tourner autour des assets (les renommer, les bouger "
+"d'un endroit à un autre dans le projet), cela va casser la référence "
+"existante de ces assets. Ces références devront être redéfinie du point de "
+"leur nouvelle position."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
 msgid ""
@@ -10348,6 +10408,11 @@ msgid ""
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
+"Pour éviter ça, faites tous vos changement à l'intérieur de godot, dans "
+"l'emplacement du système de fichier. Ne jamais modifier un asset en dehors "
+"de Godot, sinon les dépendances devront être effectuées manuellement (Godot "
+"détecte ça et vous aides à le faire quand même, mais pourquoi prendre le "
+"chemin compliqué ?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
 msgid ""
@@ -10358,6 +10423,13 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
+"Le second est que sous Windows et macOS, les fichiers et les chemins d'accès "
+"ne sont pas sensible à la casse. Si un développeur travaille dans un "
+"environnement non sensible à la casse et sauvegarde un asset \"MonFichier.PNG"
+"\", mais le référence à \"monfichier.png\", cela marchera sur sa plateforme, "
+"mais pas sur d'autres plateforme tel que Linux, Android, etc. Cela peut "
+"également s'appliquer sur les fichiers binaires exportés, qui utilisent un "
+"paquet compressé pour stocker tous les fichiers."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
 msgid ""
@@ -10365,18 +10437,24 @@ msgid ""
 "files when working with Godot! One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
+"Il est recommandé que votre équipe définisse clairement une convention de "
+"nommage pour les fichier quand elle travaille avec Godot ! Une convention "
+"simple et infaillible est de n'autoriser que les noms de fichiers et de "
+"chemins en minuscules."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr "SceneTree"
+msgstr "L'arbre de scène"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
 msgid ""
 "This is where things start getting abstract, but don't panic. There's not "
 "much more depth than this."
 msgstr ""
+"C'est là où les choses comment à devenir floues, mais ne paniquez pas. Ce "
+"n'est pas si complexe que ça."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:12
 msgid ""
@@ -10384,6 +10462,9 @@ msgid ""
 "Scenes are simply a collection of nodes. They become active once they enter "
 "the *scene tree*."
 msgstr ""
+"Dans le tutoriel précédent, chaque chose tournais autour du concept des "
+"nœuds. Chaque scène est simplement une collection de nœud. Elles deviennent "
+"actives une fois entrée dans *l'arbre de scène*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -14707,8 +14788,9 @@ msgid ""
 "Note the values are inserted in order. Remember all placeholders must be "
 "replaced at once, so there must be an appropriate number of values."
 msgstr ""
-"Les valeurs sont insérées dans l'ordre. Rappelez-vous que tous les espaces "
-"réservés doivent être remplacés en même temps, avec le bon nombre de valeurs."
+"Notez que les valeurs sont insérées dans l'ordre. À chaque espace réservé "
+"doit correspondre une valeur. Pensez donc à passer le nombre de valeurs "
+"adéquat."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:90
 msgid "Format specifiers"
@@ -18245,7 +18327,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
-#, fuzzy
 msgid "Mesh"
 msgstr "Maillages"
 
@@ -41258,7 +41339,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Locale"
-msgstr "Langue"
+msgstr "Localisation"
 
 #: ../../docs/tutorials/i18n/locales.rst:10
 msgid "Language and Variant"

@@ -16,6 +16,7 @@
 # Denis K <dekasoftware@mail.ru>, 2018.
 # Dmitry Derbin <dimderbin@mail.ru>, 2018.
 # Forest Swamp <sample1989@mail.ru>, 2018.
+# GetLocalPlayer <GetLocalPlayer@gmail.com>, 2018.
 # gl <glorphindale+dev@gmail.com>, 2018.
 # ijet <my-ijet@mail.ru>, 2018.
 # Ivan Toropelov <chuchundra06@gmail.com>, 2018.
@@ -35,6 +36,7 @@
 # teriva <spirin.cos@yandex.ru>, 2018.
 # Аркадий Авас <savvot@gmail.com>, 2018.
 # Семён Рассохин <forzcross@gmail.com>, 2018.
+# Егор Бураков <fend.q@mail.ru>, 2018.
 # Игорь Д <protorian.di@gmail.com>, 2018.
 # Лошаденко Максим Юриевич <vidos4all@gmail.com>, 2018.
 #
@@ -43,8 +45,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-18 14:59+0200\n"
-"PO-Revision-Date: 2018-07-18 12:48+0000\n"
-"Last-Translator: Alex <snimalovo@gmail.com>\n"
+"PO-Revision-Date: 2018-07-26 07:41+0000\n"
+"Last-Translator: GetLocalPlayer <GetLocalPlayer@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -65,9 +67,9 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Это документация для нестабильной (master) ветки. Ищете документацию для "
-"текущей **stable** ветки? `Смотрите здесь <http://docs.godotengine.org/en/"
-"stable>`_."
+"Это документация для нестабильной ветки (master). Ищете документацию для "
+"текущей **стабильной** ветки? 'Смотрите здесь <http://docs.godotengine.org/"
+"en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -4247,15 +4249,13 @@ msgstr ""
 "функцию ``new_game`` чтобы настроить всё для новой игры:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:729
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
 "start the other two timers. ``ScoreTimer`` will increment the score by 1."
 msgstr ""
-"Теперь соедините ``timeout()`` сигнал каждого из нодов Таймера. "
-"``StartTimer`` запустит другие два таймера. ``ScoreTimer`` будет увеличивать "
-"счет на 1."
+"Теперь соедините ``timeout()`` сигнал каждого из нодов Timer. ``StartTimer`` "
+"запустит другие два таймера. ``ScoreTimer`` будет увеличивать счет на 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:760
 msgid ""
@@ -4295,7 +4295,7 @@ msgid ""
 "``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
 "В тригонометрических функциях, GDScript использует * радианы*, а не градусы. "
-"Если вам удобнее работать со степенями, вам нужно использовать функции "
+"Если вам удобнее работать с градусами, вам нужно использовать функции "
 "``deg2rad()`` и ``rad2deg()`` для преобразования между ними."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:825
@@ -15521,7 +15521,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
-#, fuzzy
 msgid "Mesh"
 msgstr "Массив"
 
