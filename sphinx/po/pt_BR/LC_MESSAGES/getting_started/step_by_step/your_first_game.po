@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -447,7 +447,7 @@ msgid ""
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
-"``$``é um atalho para ``get_node()``. Então, no código acima, ``"
+"``$`` é um atalho para ``get_node()``. Então, no código acima, ``"
 "$AnimatedSprite.play()`` é o mesmo que ``get_node(\"AnimatedSprite\")."
 "play()``."
 
@@ -964,15 +964,15 @@ msgstr ""
 "novo jogo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:729
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
 "start the other two timers. ``ScoreTimer`` will increment the score by 1."
 msgstr ""
 "Agora, conecte o sinal ``timeout()`` (tempo esgotado) para cada um dos nós "
-"Timer. ``StartTimer`` vai iniciar os outros dois temporizadores. "
-"``ScoreTimer`` vai incrementar a pontuação de 1 em 1."
+"de Timer (``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` "
+"irá iniciar os outros dois temporizadores. ``ScoreTimer`` irá incrementar a "
+"pontuação de 1 em 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:760
 msgid ""
@@ -995,14 +995,18 @@ msgstr ""
 "``add_child()`` (adicionar filho)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:769
+#, fuzzy
 msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
+"Agora clique em ``MobTimer`` na janela de cenas e vá para a janela de "
+"inspeção, troque para a visão de nó e clique em ``timeout()`` e conecte o "
+"sinal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
 msgid "Add the following code:"
-msgstr ""
+msgstr "Adicione o código abaixo:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:819
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -460,7 +460,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:326
-msgid "Most of these variables are similar to how we have out weapons set up."
+msgid "Most of these variables are similar to how we have our weapons set up."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:328
@@ -597,7 +597,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:450
-msgid "Now you should be able to throw grenades now! Go give it a try!"
+msgid "Now you should be able to throw grenades! Go give it a try!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:454
@@ -707,15 +707,15 @@ msgid ""
 "If the ray collided with a :ref:`RigidBody <class_RigidBody>`, we set "
 "``grabbed_object`` to the collider the ray collided with. We then set the "
 "mode on the :ref:`RigidBody <class_RigidBody>` we collided with to "
-"``MODE_STATIC`` so it does not move."
+"``MODE_STATIC`` so it doesn't move in our hands."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:538
 msgid ""
 "Finally, we set the grabbed :ref:`RigidBody <class_RigidBody>`'s collision "
 "layer and collision mask to ``0``. This will make the grabbed :ref:"
-"`RigidBody <class_RigidBody>` have no collision layer or mask, which will "
-"means it will not be able to collide with anything."
+"`RigidBody <class_RigidBody>` have no collision layer or mask, which means "
+"it will not be able to collide with anything as long as we are holding it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:543
@@ -725,14 +725,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:545
+#, fuzzy
 msgid ""
-"We first set the :ref:`RigidBody <class_RigidBody>` we holding mode to "
+"We first set the :ref:`RigidBody <class_RigidBody>` we are holding mode to "
 "``MODE_RIGID``."
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (llamado ``Mob``)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:547
 msgid ""
-"This is making a rather large assumption that the all rigid bodies will be "
+"This is making a rather large assumption that all the rigid bodies will be "
 "using ``MODE_RIGID``. While that is the case for this tutorial series, that "
 "may not be the case in other projects."
 msgstr ""
@@ -748,7 +749,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:553
 msgid ""
 "Then we apply an impulse to send it flying forward. We send it flying in the "
-"direction the camera is facing, at ``OBJECT_THROW_FORCE`` force."
+"direction the camera is facing, using the force we set in the "
+"``OBJECT_THROW_FORCE`` variable."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:555
@@ -759,11 +761,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:557
 msgid ""
-"This is, once again, making a rather large assumption that all rigid bodies "
-"will be only on collision layer ``1``, and all collision masks will be on "
-"layer ``1``. If you are using this script in other projects, you may need to "
-"store the collision layer/mask of the :ref:`RigidBody <class_RigidBody>` "
-"before you change them to ``0``."
+"This is, once again, making a rather large assumption that all the rigid "
+"bodies will be only on collision layer ``1``, and all collision masks will "
+"be on layer ``1``. If you are using this script in other projects, you may "
+"need to store the collision layer/mask of the :ref:`RigidBody "
+"<class_RigidBody>` in a variable before you change them to ``0``, so you "
+"would have the original collision layer/mask to set for them when you are "
+"reversing the process."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:560
@@ -805,8 +809,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:592
 msgid ""
-"Now you can grab and throw RigidBody nodes while in a ``UNARMED`` state! Go "
-"give it a try!"
+"Now you can grab and throw RigidBody nodes while you're in the ``UNARMED`` "
+"state! Go give it a try!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:595
@@ -846,7 +850,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:609
 msgid ""
-"``Vision_Area`` is a :ref:`Area <class_Area>` we'll use as the turret's "
+"``Vision_Area`` is an :ref:`Area <class_Area>` we'll use as the turret's "
 "ability to see. When something enters ``Vision_Area``, we'll assume the "
 "turret can see it."
 msgstr ""
@@ -1017,13 +1021,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:818
 msgid ""
-"Next add some exceptions to the :ref:`Raycast <class_Raycast>` so the turret "
-"cannot hurt itself."
+"Next we add some exceptions to the :ref:`Raycast <class_Raycast>` so the "
+"turret cannot hurt itself."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:820
 msgid ""
-"Then we make both flash meshes invisible to start, since we are not going to "
+"Then we make both flash meshes invisible at start, since we are not going to "
 "be firing during ``_ready``."
 msgstr ""
 
@@ -1082,7 +1086,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:845
 msgid ""
-"If there is not any ammo in the turret, we check to see if "
+"If there isn't any ammo in the turret, we check to see if "
 "``ammo_reload_timer`` is more than zero. If ``ammo_reload_timer`` is more "
 "than zero, we subtract ``delta`` from ``ammo_reload_timer``. If "
 "``ammo_reload_timer`` is equal to or less than zero, we set "
@@ -1152,7 +1156,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:876
 msgid ""
 "Then, regardless of which bullet method we used, we make both of the muzzle "
-"flash meshes visible. We set ``flash_timer`` and ``fire_timer`` to to "
+"flash meshes visible. We set ``flash_timer`` and ``fire_timer`` to "
 "``FLASH_TIME`` and ``FIRE_TIME`` respectively. We then check to see if the "
 "turret used the last bullet in its ammo. If the turret has used the last "
 "bullet, we set ``ammo_reload_timer`` to ``AMMO_RELOAD_TIME`` so the turret "
@@ -1175,14 +1179,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:887
 msgid ""
-"..note:: We're assuming the turret should only should fire at :ref:"
-"`KinematicBody <class_KinematicBody>` nodes, since that is what the player "
-"is using."
+"We're assuming the turret should only fire at :ref:`KinematicBody "
+"<class_KinematicBody>` nodes, since that is what the player is using."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:889
 msgid ""
-"If the body that just the vision :ref:`Area <class_Area>` is a :ref:"
+"If the body that just entered the vision :ref:`Area <class_Area>` is a :ref:"
 "`KinematicBody <class_KinematicBody>`, we set ``current_target`` to the "
 "body, and set ``is_active`` to ``true``."
 msgstr ""
@@ -1195,15 +1198,15 @@ msgstr ""
 msgid ""
 "First we check to see if the turret has a target. If the turret has a "
 "target, we then check to see if the body that has just left the turret's "
-"vision area is the turret's target."
+"vision :ref:`Area <class_Area>` is the turret's target."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:899
 msgid ""
-"If the body that just left the area is the turret's current target, we set "
-"``current_target`` to ``null``, set ``is_active`` to ``false``, and reset "
-"all of the variables related to firing the turret, since the turret no "
-"longer has a target to fire at."
+"If the body that just left the vision :ref:`Area <class_Area>` is the "
+"turret's current target, we set ``current_target`` to ``null``, set "
+"``is_active`` to ``false``, and reset all of the variables related to firing "
+"the turret, since the turret no longer has a target to fire at."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:904
@@ -1248,9 +1251,9 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:935
 msgid ""
 "Now select the other :ref:`StaticBody <class_StaticBody>` node (either in "
-"``Body`` or ``Head``) and assign ``TurretBodies.gd`` to it. Once the script "
-"is attached, assign the :ref:`NodePath <class_NodePath>` to the ``Turret`` "
-"node."
+"``Body`` or ``Head``) and assign ``TurretBodies.gd`` script to it. Once the "
+"script is attached, assign again the :ref:`NodePath <class_NodePath>` to the "
+"``Turret`` node."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:940
@@ -1276,13 +1279,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:956
 msgid ""
-"Now you the player can pick up :ref:`RigidBody <class_RigidBody>` nodes and "
-"throw grenades. We now also have turrets to fire at the player."
+"Now you can pick up :ref:`RigidBody <class_RigidBody>` nodes and throw "
+"grenades. We now also have turrets to fire at the player."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:958
 msgid ""
-"In :ref:`doc_fps_tutorial_part_six`, we're going to add a main menu and "
+"In :ref:`doc_fps_tutorial_part_six`, we're going to add a main menu and a "
 "pause menu, add a respawn system for the player, and change/move the sound "
 "system so we can use it from any script."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
-#, fuzzy
 msgid "Mesh"
-msgstr "Arrays"
+msgstr "Malha"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 #, fuzzy
@@ -28,23 +27,32 @@ msgid "Modifiers"
 msgstr "Identificadores"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
+#, fuzzy
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
+"Há uma opção de exportação: código:`Apply Modifiers` para controlar se os "
+"modificadores de mesh são aplicados à mesh exportada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
+#, fuzzy
 msgid "Shape Key"
-msgstr ""
+msgstr "Forma chave"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
+#, fuzzy
 msgid ""
 "Exporting mesh shape key is supported, however exporting each shape key is "
 "almost like exporting the mesh again, so don't be surprisied it takes a "
 "relatively long time."
 msgstr ""
+"Exportação de formas de mesh chave  é suportada, contudo exportando cada "
+"forma chave é quase como exportar a mesh novamente, então não fique surpreso "
+"se levar muito tempo."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
+#, fuzzy
 msgid ""
 "A lot of modifiers are not compatible with shape keys (e.g. subsurface "
 "modifier), so if you found you have incorrect shape keys exported, try to "
@@ -53,3 +61,10 @@ msgid ""
 "github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
 "develop the exporter to have a more precise check of modifiers."
 msgstr ""
+"Um monte de modificadores não são compatíveis com o shape keys (por exemplo, "
+"o subsurf modifier), por isso, se você descobriu que você tem a shape keys  "
+"incorreta exportada, tente desativar :código:`Aplicar Modificadores \" e "
+"fazer a exportação novamente. Além disso, vale a pena relatar os "
+"modificadores incompatíveis  para o `lista de problemas <https://github.com/"
+"godotengine/godot-blender-exporter/issues>`__, que ajuda a desenvolver o "
+"exportador  para ter uma maior precisão de checagem de modificadores."

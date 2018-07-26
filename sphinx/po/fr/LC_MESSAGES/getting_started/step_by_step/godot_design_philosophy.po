@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,7 +202,6 @@ msgstr ""
 "étroitement intégrés au moteur et à l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
-#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
@@ -210,10 +209,10 @@ msgid ""
 msgstr ""
 "GDscript vous permet d'écrire du code simple en utilisant une syntaxe "
 "ressemblant à celle de Python, tout en ayant la capacité de détecter les "
-"types et d'offrir une saisie assistée de même qualité que celle disponible "
-"avec les langages à typage statique. Il est aussi optimisé pour l'écriture "
-"de code orienté gameplay grâce à des types intégrés tels que Vector et "
-"Colors."
+"types et offre un auto-completion de qualité similaire aux auto-complétions "
+"disponibles avec des langages statiques. Il est également optimisé pour "
+"l'écriture de code orienté gameplay grâce à des types intégrés tels que "
+"Vector et Colors."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
 msgid ""
@@ -260,45 +259,41 @@ msgid "|image4|"
 msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
-#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
-"*Une machine à états proposée sous forme d'extension à l'éditeur par "
-"kubecz3k, vous permettant de gérer les états et les transitions visuellement*"
+"*Un plugin d'éditeur de machine à états dans Godot 2 par kubecz3k. Il vous "
+"permet de gérer les états et les transitions visuellement*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
-#, fuzzy
 msgid "Open source"
 msgstr "Libre"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
-#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
 "as well. For the most part, they’re developed from the ground up by "
 "contributors."
 msgstr ""
-"Godot propose un code source complètement libre sous **licence MIT.** Cela "
+"Godot propose un code source complètement libre sous **licence MIT**. Cela "
 "veut dire que toutes les technologies qui sont intégrées dans le moteur "
 "doivent être sous licence libre également. Pour la plupart, elles sont "
-"entièrement développées par les contributeurs."
+"élaborées à partir de la base des collaborateurs."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include NVIDIA PhysX, Google "
 "AdMob, or an FBX model importer. Any of these can come as third-party "
 "plugins instead."
 msgstr ""
-"N'importe qui peut ajouter des outils propriétaires pour les besoins de "
-"leurs projets - ils ne seront tout simplement pas livrés avec le moteur. Il "
-"peut s'agir de NViDia PhysX, Google Admob ou d'un importateur de fichiers "
-"FBX. Mais n'importe lequel d'entre eux peut venir sous forme de plugins "
-"tiers à la place."
+"N'importe qui peut ajouter des outils propriétaires pour le besoin de leurs "
+"projets - ils ne sont simplement pas fournis avec le moteur. Il peut s'agir "
+"de NViDia PhysX, Google Admob ou d'un importateur de fichiers FBX. Mais "
+"n'importe lequel d'entre eux peut venir sous forme de plugins tiers à la "
+"place."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -339,9 +334,10 @@ msgstr ""
 "d'utilisateurs."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
+#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
-"project has over 500 contributors at the time of writing. Benevolent "
+"project has over 600 contributors at the time of writing. Benevolent "
 "programmers work on features they may need themselves, so you’ll see "
 "improvements in all corners of the engine at the same time in every major "
 "release."
@@ -385,43 +381,39 @@ msgid "|image5|"
 msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
-#, fuzzy
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot’s UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
-"*RPG in a Box est un éditeur de JDRs en style voxel réalisé avec Godot 2. Il "
-"utilise les outils d'interface utilisateur de Godot pour son système de "
-"programmation par nœuds et pour le reste de l'interface.*"
+"*RPG in a Box est un éditeur RPG (Jeux de rôle) en style voxel réalisé avec "
+"Godot 2. Il utilise les outils d'interface utilisateur de Godot pour son "
+"système de programmation par nœuds et pour le reste de l'interface.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
-#, fuzzy
 msgid ""
 "Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
-"Mettez le mot-clé ``tool`` en début de n'importe quel fichier GDScript et il "
-"s'exécutera dans l'éditeur. Cela vous permet d'importer et d'exporter des "
-"plugins, de créer des plugins comme des éditeurs de niveau personnalisé ou "
-"de créer des scripts avec les mêmes nœuds et API que vous utilisez dans vos "
-"projets."
+"Mettez le mot-clé ``tool`` au début de n'importe quel fichier GDScript et il "
+"s'exécutera dans l'éditeur. Cela vous permet d'importer, d'exporter, de "
+"créer des plugins comme des éditeurs de niveau personnalisé ou bien de créer "
+"des scripts avec les mêmes nœuds et API que vous utilisez dans vos projets."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
 msgid "Separate 2D and 3D engines"
 msgstr "Moteurs 2D et 3D séparés"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
-#, fuzzy
 msgid ""
 "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "
 "can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over "
 "your 3D world."
 msgstr ""
-"Godot propose des moteurs de rendu 2D et 3D dédiés. Du fait que **l'unité de "
-"base pour les scène 2D est le pixel**, même si les moteurs sont séparés, "
+"Godot propose des moteurs de rendu 2D et 3D dédiés. Du fait, **l'unité de "
+"base pour les scène 2D est le pixel**. Même si les moteurs sont séparés, "
 "vous pouvez faire un rendu 2D en 3D, 3D en 2D, et superposer des sprites 2D "
 "et une interface sur votre monde 3D."

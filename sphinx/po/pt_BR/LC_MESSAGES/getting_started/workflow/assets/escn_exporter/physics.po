@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,9 +77,9 @@ msgid ""
 "Hull``, ``Capsule``, ``Sphere`` and ``Box`` are supported in both Blender "
 "and Godot"
 msgstr ""
-"Nem todas as formas de colisão são suportadas. Apenas `` Mesh``, `` Convex "
-"Hull``, `` Capsule``, `` Sphere`` e `` Box`` são suportados tanto no Blender "
-"quanto na Godot"
+"Nem todas as formas de colisão são suportadas. Apenas ``Mesh``, ``Convex "
+"Hull``, ``Capsule``, ``Sphere`` e ``Box`` são suportados tanto no Blender "
+"quanto no Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:35
 msgid ""
@@ -94,11 +94,15 @@ msgstr ""
 "vezes, isso é o que você quer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:41
+#, fuzzy
 msgid ""
 "To build compound physics shapes, parent together multiple objects with "
 "rigid body enabled. The physics properties are taken from the parent-most "
 "rigid body, and the rest are used as collision shapes."
 msgstr ""
+"Para criar compostos de  formas físicas, junte vários objetos com um corpo "
+"rígido habilitado. As propriedades física são tiradas do corpo rígido pai "
+"mais superior, e o resto são usados como formas de colisão."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:47
 msgid "Collision Geometry Only"

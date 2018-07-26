@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -916,15 +916,14 @@ msgstr ""
 "위한 모든 것들을 설정하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:729
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
 "start the other two timers. ``ScoreTimer`` will increment the score by 1."
 msgstr ""
-"이제 각 타이머 노드의 ``timeout()` 시그널을 연결하세요. ``StartTimer`` 는 나"
-"머지 두 타이머를 시작하게 만들 것입니다. ``ScoreTimer`` 는 점수가 1씩 증가할"
-"겁니다."
+"이제 각 타이머 노드 (``StartTimer``, ``ScoreTimer`` ,그리고 ``MobTimer``) 의 "
+"``timeout()`` 시그널을 연결하세요. ``StartTimer`` 는 나머지 두 타이머를 시작"
+"하게 만들 것입니다. ``ScoreTimer`` 는 점수가 1씩 증가하게 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:760
 msgid ""
@@ -948,10 +947,12 @@ msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
+"이제 씬 창에서 ``MobTimer`` 를 클릭하고 인스펙터 창으로 가서, 노드 화면으로 "
+"바꾼 후 ``timeout()`` 을 클릭하고 시그널을 연결합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
 msgid "Add the following code:"
-msgstr ""
+msgstr "다음의 코드를 추가하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:819
 msgid ""

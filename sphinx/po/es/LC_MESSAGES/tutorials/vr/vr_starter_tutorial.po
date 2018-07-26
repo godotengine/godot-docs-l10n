@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,9 +66,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:22
-#, fuzzy
 msgid "Throughout the course of this tutorial, we will cover:"
-msgstr "A lo largo del curso de esta serie de tutoriales, cubriremos cómo:"
+msgstr "A lo largo del curso de este tutorial, cubriremos:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:24
 msgid "How to tell Godot to run in VR."
@@ -84,40 +83,38 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
-#, fuzzy
 msgid ""
 "How to make a :ref:`RigidBody <class_RigidBody>` based pick up and drop "
 "system."
 msgstr ""
-"Añadir la habilidad de agarrar y lanzar nodos :ref:`RigidBody "
-"<class_RigidBody>`"
+"Cómo hacer un sistema :ref:`RigidBody <class_RigidBody>` basado en un "
+"sistema de recogida y entrega."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:28
 msgid "How to make various items that can be used in VR"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:30
-#, fuzzy
 msgid ""
 "While this tutorial can be completed by beginners, it is highly advised to "
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development and have some experience with making 3D games **before** going "
 "through this tutorial series."
 msgstr ""
-"Aunque este tutorial puede ser completado por principiantes, es altamente "
-"aconsejable completar :ref:`doc_your_first_game`, si eres nuevo en Godot y/o "
-"en el desarrollo de juegos **antes de** pasar por esta serie de tutoriales."
+"Aunque este tutorial puede ser completado por principiantes, es muy "
+"recomendable completar :ref:`doc_your_first_game`, si eres nuevo en Godot y/"
+"o en el desarrollo de juegos y tienes alguna experiencia en la creación de "
+"juegos en 3D **antes** de pasar por esta serie de tutoriales."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:35
-#, fuzzy
 msgid ""
 "This tutorial assumes you know have experience working with the Godot "
 "editor, have basic programming experience in GDScript, and have basic 3D "
 "game development experience."
 msgstr ""
-"Este tutorial asume que tienes experiencia trabajando con el editor de "
-"Godot, tienes experiencia básica de programación en GDScript, y tienes "
-"experiencia básica en el desarrollo de juegos."
+"Este tutorial asume que tienes experiencia trabajando con el editor Godot, "
+"tienes experiencia básica en programación en GDScript, y tienes experiencia "
+"básica en desarrollo de juegos 3D."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:38
 msgid ""
@@ -129,23 +126,20 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:41
-#, fuzzy
 msgid ""
 "You can find the start assets for this tutorial here: :download:"
 "`VR_Starter_Tutorial_Start.zip <files/VR_Starter_Tutorial_Start.zip>`"
 msgstr ""
 "Puedes encontrar los recursos de inicio para este tutorial aquí: :download:"
-"`Godot_FPS_Starter.zip <files/Godot_FPS_Starter.zip>`"
+"`VR_Starter_Tutorial_Start.zip <files/VR_Starter_Tutorial_Start.zip>`"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:43
-#, fuzzy
 msgid ""
 "The provided starter assets contain some 3D models, Sounds, and a few scenes "
 "already set up and configured for this tutorial."
 msgstr ""
-"Los recursos de inicio proporcionados contienen un modelo 3D animado, un "
-"montón de modelos 3D para hacer niveles y algunas escenas ya configuradas "
-"para este tutorial."
+"Los recursos de inicio proporcionados contienen algunos modelos 3D, sonidos "
+"y algunas escenas ya configuradas para este tutorial."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:45
 msgid ""
@@ -196,11 +190,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:60
-#, fuzzy
 msgid "You can find the finished project at the bottom of this page"
 msgstr ""
-"Puedes encontrar el proyecto terminado para cada parte en la parte inferior "
-"de la página de cada parte"
+"Puedes encontrar el proyecto terminado en la parte inferior de esta página"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:63
 msgid "Getting everything ready"
@@ -303,9 +295,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:102
-#, fuzzy
 msgid "Starting VR"
-msgstr "Configurando"
+msgstr "Iniciando con la VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:104
 msgid ""
@@ -324,9 +315,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:125
-#, fuzzy
 msgid "With that done, let's quickly go over what this script does."
-msgstr "Repasemos lo que hace este script:"
+msgstr "Hecho esto, repasemos rápidamente lo que hace este script."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:127
 msgid ""
@@ -368,9 +358,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:145
-#, fuzzy
 msgid "Coding the controllers"
-msgstr "Movimiento del jugador (player)"
+msgstr "Codificando los controladores"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:147
 msgid ""
@@ -1084,9 +1073,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:702
-#, fuzzy
 msgid "Adding destroyable targets"
-msgstr "Añadir vectores"
+msgstr "Añadir objetivos destruibles"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:704
 msgid ""
@@ -1110,10 +1098,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:756
-#, fuzzy
 msgid "Let's go over how this script works, starting with the class variables."
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Vamos a repasar cómo funciona este script, empezando por las clases de "
+"variables."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:758
 msgid "``destroyed`` : A variable to track if this target is destroyed or not."
@@ -1136,13 +1124,12 @@ msgid "``health`` : The amount of health the target has."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:762
-#, fuzzy
 msgid ""
 "``RIGID_BODY_TARGET`` : The target broken into several smaller :ref:"
 "`RigidBody <class_RigidBody>` nodes."
 msgstr ""
-"Añadir la habilidad de agarrar y lanzar nodos :ref:`RigidBody "
-"<class_RigidBody>`"
+"``RIGID_BODY_TARGET`` : El objetivo dividido en varios nodos :ref:`RigidBody "
+"<class_RigidBody>`."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:766
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:918
@@ -1182,11 +1169,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:786
-#, fuzzy
 msgid ""
 "If the target has zero or less health, then it has taken enough damage to "
 "break."
-msgstr "Añadir objetivos que se rompen cuando han recibido suficiente daño"
+msgstr ""
+"Si el objetivo tiene cero o menos vida, entonces ha recibido suficiente daño "
+"para destruirse."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:788
 msgid ""
@@ -1209,10 +1197,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:799
-#, fuzzy
 msgid ""
 "First, open up ``Game.gd`` and add the following additional class variables:"
-msgstr "Abre ``Player.gd`` y añade las siguientes variables de clase:"
+msgstr ""
+"Primero, abre ``Game.gd`` y añade las siguientes clases de variables "
+"adicionales:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:806
 msgid "``spheres_left`` : The amount of sphere targets left in the game world."
@@ -1244,9 +1233,8 @@ msgid "Now that we have destroyable targets, we need a way to destroy them!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:827
-#, fuzzy
 msgid "Adding a pistol"
-msgstr "Añadir un script"
+msgstr "Añadir una pistola"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:829
 msgid "Okay, let's add a simple pistol."
@@ -1257,9 +1245,8 @@ msgid "Open up ``Pistol.tscn``, which you will find in the ``Scenes`` folder."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:833
-#, fuzzy
 msgid "There is a few things to note here."
-msgstr "Hay algunas cosas a tener en cuenta:"
+msgstr "Hay algunas cosas a tener en cuenta aquí."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:835
 msgid ""
@@ -1405,9 +1392,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:965
-#, fuzzy
 msgid "Adding a shotgun"
-msgstr "Añadir un script"
+msgstr "Añadir una escopeta"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:967
 msgid ""
@@ -1475,9 +1461,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1051
-#, fuzzy
 msgid "Adding a bomb"
-msgstr "Añadir una Función"
+msgstr "Añadir una bomba"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1053
 msgid ""
@@ -1520,11 +1505,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1157
-#, fuzzy
 msgid ""
 "Let's go through what this script does, starting with the class variables:"
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Vamos a repasar lo que hace este script, empezando por las clases de "
+"variables:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1159
 msgid ""
@@ -1537,12 +1522,11 @@ msgid "``FUSE_TIME``: The length of time the fuse burns for."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1161
-#, fuzzy
 msgid ""
 "``fuse_timer``: A variable for tracking how long the fuse has been burning."
 msgstr ""
-"``current_state``: Un variable para contener el nombre del estado de "
-"animación en que estamos actualmente."
+"``fuse_timer``: Una variable para rastrear cuánto tiempo ha estado encendido "
+"el detonador."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1162
 msgid ""
@@ -1593,13 +1577,12 @@ msgid "Let's go through ``_ready``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1175
-#, fuzzy
 msgid ""
 "First, we get all of the nodes and assign them to the proper variables for "
 "later use."
 msgstr ""
-"Primero obtenemos todos los nodos que necesitaremos y los asignamos a las "
-"variables de clase apropiadas."
+"Primero, obtenemos todos los nodos y los asignamos a las variables "
+"apropiadas para su uso posterior."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1177
 msgid ""
@@ -1696,9 +1679,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1221
-#, fuzzy
 msgid "Adding a sword"
-msgstr "Añadir un script"
+msgstr "Añadir una espada"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1223
 msgid "Finally, let's add a sword so we can slice through things!"
@@ -1734,11 +1716,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1297
-#, fuzzy
 msgid ""
 "Let's go over what this script does, starting with the two class variables:"
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Repasemos lo que hace este script, comenzando con las dos clases de "
+"variables:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1299
 msgid "``SWORD_DAMAGE`` : The amount of damage a single sword slice does."
@@ -1811,9 +1793,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1334
-#, fuzzy
 msgid "Updating the target UI"
-msgstr "Comenzando el juego"
+msgstr "Actualización de la UI de destino"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1336
 msgid "Okay, let's update the UI as the sphere targets are destroyed."
@@ -1828,10 +1809,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1358
-#, fuzzy
 msgid "Let's go over what this script does quickly, as it is fairly simple."
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Vamos a repasar lo que este script hace rápidamente, ya que es bastante "
+"simple."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1360
 msgid ""
@@ -1867,10 +1848,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1410
-#, fuzzy
 msgid "Let's go over what this does quickly, as it is also fairly simple."
 msgstr ""
-"Repasemos lo que hace este script, empezando por las variables de clase:"
+"Vamos a repasar lo que esto hace rápidamente, ya que también es bastante "
+"simple."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1412
 msgid ""
@@ -1894,13 +1875,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1419
-#, fuzzy
 msgid ""
 "When the reset box is dropped, we reset the :ref:`Transform "
 "<class_Transform>` and timer."
 msgstr ""
-"Para añadir el componente final a la mezcla, Godot proporciona el tipo :ref:"
-"`Transform <class_Transform>`. Transform tiene dos miembros:"
+"Cuando se omite la casilla de reinicio, reiniciamos el :ref:`Transform "
+"<class_Transform>` y el timer."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1423
 msgid ""
@@ -1921,13 +1901,12 @@ msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1434
-#, fuzzy
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`VR_Starter_Tutorial_Complete.zip <files/VR_Starter_Tutorial_Complete.zip>`"
 msgstr ""
-"Puedes descargar este proyecto de ejemplo aquí: :download:`2D_movement_demo."
-"zip <files/2D_movement_demo.zip>`"
+"Puede descargar el proyecto terminado de esta sección aquí: :download:"
+"`VR_Starter_Tutorial_Complete.zip <files/VR_Starter_Tutorial_Complete.zip>`"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1436
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -950,15 +950,13 @@ msgstr ""
 "функцию ``new_game`` чтобы настроить всё для новой игры:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:729
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
 "start the other two timers. ``ScoreTimer`` will increment the score by 1."
 msgstr ""
-"Теперь соедините ``timeout()`` сигнал каждого из нодов Таймера. "
-"``StartTimer`` запустит другие два таймера. ``ScoreTimer`` будет увеличивать "
-"счет на 1."
+"Теперь соедините ``timeout()`` сигнал каждого из нодов Timer. ``StartTimer`` "
+"запустит другие два таймера. ``ScoreTimer`` будет увеличивать счет на 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:760
 msgid ""
@@ -997,7 +995,7 @@ msgid ""
 "``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
 "В тригонометрических функциях, GDScript использует * радианы*, а не градусы. "
-"Если вам удобнее работать со степенями, вам нужно использовать функции "
+"Если вам удобнее работать с градусами, вам нужно использовать функции "
 "``deg2rad()`` и ``rad2deg()`` для преобразования между ними."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:825

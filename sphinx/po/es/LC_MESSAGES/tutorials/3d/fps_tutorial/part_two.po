@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -556,7 +556,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:384
-#, fuzzy
 msgid ""
 "One of the huge disadvantages is performance. While having each bullet "
 "calculate their own paths and handle their own collision allows for a lot of "
@@ -565,12 +564,13 @@ msgid ""
 "problem for a few dozen bullets, it can become a huge problem when you "
 "potentially have several hundred bullets."
 msgstr ""
-"Una de las grandes desventajas del rendimiento. Si bien el hecho de que cada "
-"bala calcule sus propias trayectorias y maneje su propia colisión permite "
+"Una de las grandes desventajas es el rendimiento. Si bien el hecho de que "
+"cada bala calcule su propia trayectoria y maneje su propia colisión permite "
 "una gran flexibilidad, esto se produce a costa del rendimiento. Con este "
 "método estamos calculando el movimiento de cada bala en cada paso, y aunque "
 "esto puede no ser un problema para unas pocas docenas de balas, puede "
-"convertirse en un gran problema cuando hay varios cientos de balas activas."
+"convertirse en un gran problema cuando potencialmente tienes varios cientos "
+"de balas."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:388
 msgid ""
@@ -1562,7 +1562,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1092
 msgid "Add the following code:"
-msgstr ""
+msgstr "Añade el siguiente código:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1128
 msgid "Lets go over what's happening here:"

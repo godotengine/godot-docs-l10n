@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -766,17 +766,16 @@ msgid "Varyings"
 msgstr "Varyings"
 
 #: ../../docs/tutorials/shading/shading_language.rst:343
-#, fuzzy
 msgid ""
 "To send data from vertex to fragment shader, *varyings* are used. They are "
 "set for every primitive vertex in the *vertex processor*, and the value is "
 "interpolated (and perspective corrected) when reaching every pixel in the "
 "fragment processor."
 msgstr ""
-"Para enviar datos de un vertex a un fragment shader, son usados los "
-"*varyings*. Estos son asignados por cada vértice primitivo en el *procesador "
-"vertex* y el valor es interpolado (y con corrección de perspectiva) cuando "
-"llega a cada pixel en el procesador fragment."
+"Para enviar datos desde el vértice al fragmento de shader, se utilizan "
+"*variaciones*. Se establecen para cada vértice primitivo en el *procesador "
+"de vértices*, y el valor se interpola (y se corrige la perspectiva) al "
+"alcanzar cada píxel en el procesador de fragmentos."
 
 #: ../../docs/tutorials/shading/shading_language.rst:361
 msgid "Interpolation qualifiers"
@@ -2540,31 +2539,32 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:917
 msgid "Canvas Item"
-msgstr ""
+msgstr "Canvas Item"
 
 #: ../../docs/tutorials/shading/shading_language.rst:919
 msgid "Accepted render modes and built-ins for **shader_type canvas_item;**."
 msgstr ""
+"Modos de render aceptados para built-ins del **shader_type canvas_item;**."
 
 #: ../../docs/tutorials/shading/shading_language.rst:931
 msgid "Subtractive blend mode."
-msgstr ""
+msgstr "Modo de blending substractivo."
 
 #: ../../docs/tutorials/shading/shading_language.rst:935
 msgid "**blend_premul_alpha**"
-msgstr ""
+msgstr "**blend_premul_alpha**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:935
 msgid "Premultiplied alpha blend mode."
-msgstr ""
+msgstr "Modo de blending con alfa premultiplicado."
 
 #: ../../docs/tutorials/shading/shading_language.rst:939
 msgid "**light_only**"
-msgstr ""
+msgstr "**light_only**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:939
 msgid "Only draw for light pass (when multipass is used)."
-msgstr ""
+msgstr "Sólo dibuja el light pass (cuando se usa multipass)."
 
 #: ../../docs/tutorials/shading/shading_language.rst:950
 msgid "Image to World transform."
@@ -2572,11 +2572,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:952
 msgid "in mat4 **EXTRA_MATRIX**"
-msgstr ""
+msgstr "in mat4 **EXTRA_MATRIX**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:952
 msgid "Extra transform."
-msgstr ""
+msgstr "Transform extra."
 
 #: ../../docs/tutorials/shading/shading_language.rst:954
 msgid "World to view transform."
@@ -2584,11 +2584,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:956
 msgid "Global time, in seconds."
-msgstr ""
+msgstr "Tiempo global, en segundos."
 
 #: ../../docs/tutorials/shading/shading_language.rst:958
 msgid "Instance custom data."
-msgstr ""
+msgstr "Datos personalizados de la instancia."
 
 #: ../../docs/tutorials/shading/shading_language.rst:960
 #: ../../docs/tutorials/shading/shading_language.rst:1033

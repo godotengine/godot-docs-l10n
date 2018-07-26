@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,14 +66,12 @@ msgstr ""
 "incluyendo:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:27
-#, fuzzy
 msgid "Rendering 3D objects within a 2D game"
-msgstr "Renderizar objetos 3d dentro de un juego 2d"
+msgstr "Renderización de objetos 3D dentro de un juego 2D"
 
 #: ../../docs/tutorials/viewports/viewports.rst:28
-#, fuzzy
 msgid "Rendering 2D elements in a 3D game"
-msgstr "Renderizar elementos 2d en un juego 3d"
+msgstr "Renderizar elementos 2D en un juego 3D"
 
 #: ../../docs/tutorials/viewports/viewports.rst:29
 msgid "Rendering dynamic textures"
@@ -102,7 +100,6 @@ msgid "Input"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:40
-#, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` are also responsible for delivering "
 "properly adjusted and scaled input events to all their children nodes. "
@@ -115,9 +112,9 @@ msgstr ""
 "eventos de entrada correctamente ajustados y escalados a todos sus nodos "
 "hijos. Típicamente la entrada es recibida por el :ref:`Viewport "
 "<class_Viewport>` más cercano en el árbol, pero puede establecer :ref:"
-"`Viewports <class_Viewport>` para que no reciba entradas marcando "
-"'Deshabilitar Entrada' en 'on', esto permitirá que el siguiente :ref:"
-"`Viewport <class_Viewport>` más cercano en el árbol capture la entrada."
+"`Viewports <class_Viewport>` para que no reciba entradas al marcar 'Disable "
+"Input' en `on', esto permitirá que el siguiente :ref:`Viewport "
+"<class_Viewport>` más cercano en el árbol capture la entrada."
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
 msgid ""

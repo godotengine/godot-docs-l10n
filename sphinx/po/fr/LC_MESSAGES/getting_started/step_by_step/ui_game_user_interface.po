@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,7 +53,7 @@ msgstr "Utiliser l'héritage de scène"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:19
 msgid "Build a complex UI"
-msgstr "Construire une interface utilisateur complexe"
+msgstr "Construire une interface complexe"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:21
 msgid ""
@@ -169,12 +169,10 @@ msgstr ""
 "sous-scènes réutilisables. Nous le ferons dans un instant."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:69
-#, fuzzy
 msgid "For now, let's start with a few containers."
 msgstr "Pour l'instant, commençons avec quelques conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``. Then save the scene as ``GUI.tscn``. It will contain the entire "
@@ -185,7 +183,6 @@ msgstr ""
 "tscn``. Il contiendra toute l'interface graphique."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:75
-#, fuzzy
 msgid ""
 "With the ``MarginContainer`` selected, head to the inspector and scroll down "
 "to the custom constants section. Unfold it and click the field next to each "
@@ -196,12 +193,11 @@ msgstr ""
 "Avec le ``MarginContainer`` sélectionné, dirigez-vous vers l'inspecteur et "
 "faites défiler vers le bas jusqu'à la section des constantes personnalisées. "
 "Dépliez-le et cliquez sur le champ à côté de chacune des propriétés "
-"``Margin``. Réglez-les tous sur ``20`` pixels. Ensuite, ajoutez un noeud "
+"``Margin``. Réglez-les tous sur ``20`` pixels. Ensuite, ajoutez un nœud "
 "``HBoxContainer``. Celui-ci contiendra nos deux barres à gauche et les "
 "séparera des deux compteurs à droite."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:81
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. To do "
 "this, let's add a ``VBoxContainer``. Name it ``Bars``. Select the parent "
@@ -210,39 +206,35 @@ msgid ""
 "containers, we have the base for our GUI scene."
 msgstr ""
 "Nous voulons empiler les barres verticalement à l'intérieur du "
-"``HBoxContainer``. Pour ce faire, ajoutons un ``VBoxContainer``. Donnez-lui "
-"le nom de \"Bars\". Sélectionnez à nouveau le parent ``HBoxContainer`` et "
-"cette fois, ajoutez un autre ``HBoxContainer``. Celui-ci contiendra les "
+"``HBoxContainer``. Pour ce faire, ajoutons un ``VBoxContainer`` et donnez-"
+"lui le nom de \"Bars\". Sélectionnez à nouveau le parent ``HBoxContainer`` "
+"et cette fois, ajoutez un autre ``HBoxContainer``. Celui-ci contiendra les "
 "compteurs, alors appelez-le \"Counters\". Avec ces quatre conteneurs, nous "
 "avons la base de notre scène GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:89
-#, fuzzy
 msgid "You should have 4 containers that look like this"
 msgstr "Vous devriez avoir 4 conteneurs ressemblant à ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:93
-#, fuzzy
 msgid ""
 "We can work this way because we first broke down our UI design and took a "
 "few moments to think about the containers we'd use. When you follow a "
 "tutorial like this, it may seem weird. But once you're working on real "
 "games, you'll see it's an efficient workflow."
 msgstr ""
-"Nous pouvons travailler de cette façon parce que nous avons d'abord "
-"décomposé la conception de notre interface utilisateur et que nous avons "
-"pris quelques instants pour réfléchir aux conteneurs que nous utiliserions. "
-"Quand vous suivez un tutoriel comme celui-ci, cela peut sembler bizarre. "
-"Mais une fois que vous travaillez sur de vrais jeux, vous verrez qu'il "
-"s'agit d'une méthode de travail efficace."
+"Nous pouvons travailler de cette façon car nous avons d'abord décomposé la "
+"conception de notre interface utilisateur puis nous avons pris quelques "
+"instants pour réfléchir aux conteneurs allons utiliser. Quand vous suivez un "
+"tutoriel comme celui-ci, cela peut sembler bizarre, mais lorsque vous "
+"travaillerez sur de vrais jeux, vous verrez qu'il s'agit d'une méthode de "
+"travail efficace."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
-#, fuzzy
 msgid "Create the bars' base"
 msgstr "Créez la base des barres"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:101
-#, fuzzy
 msgid ""
 "Each bar is split into two sub-elements that align horizontally: the label "
 "with the health count on the left, and the gauge on the right. Once again, "
@@ -250,13 +242,12 @@ msgid ""
 "node and add a new ``HBoxContainer`` inside of it. Name it ``Bar``."
 msgstr ""
 "Chaque barre est divisée en deux sous-éléments qui s'alignent "
-"horizontalement : L'étiquette avec le compte de santé à gauche et la jauge à "
-"droite. Une fois de plus, le ``HBoxContainer`` est l'outil parfait pour le "
-"travail. Sélectionnez le noeud ``Bars`` et ajoutez un nouveau "
-"``HBoxContainer`` à l'intérieur. Donnez-lui le nom de \"Bar\"."
+"horizontalement : Le texte de la santé à gauche et la jauge à droite. Une "
+"fois de plus, le ``HBoxContainer`` est l'outil parfait pour le travail. "
+"Sélectionnez le nœud ``Bars`` et ajoutez un nouveau ``HBoxContainer`` à "
+"l'intérieur. Donnez-lui le nom de \"Bar\"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
-#, fuzzy
 msgid ""
 "The label itself requires at least three nodes: a ``NinePatchRect`` for the "
 "background, on top of which we'll add a texture on the left, either ``HP`` "
@@ -268,17 +259,17 @@ msgid ""
 "between the life count and the gauge. Select the ``Bar`` and add a "
 "``MarginContainer``. Name it ``Count``. Inside of it, add three nodes:"
 msgstr ""
-"L'étiquette elle-même nécessite au moins trois nœuds : Un ``NinePatchRect`` "
-"pour le fond, sur lequel nous ajouterons une texture à gauche, soit ``HP``, "
-"soit ``EP``, et un ``Label`` à droite pour la valeur. Nous pouvons emboîter "
-"les nœuds \"Control\" comme nous le voulons. Nous pourrions utiliser le "
-"``NinePatchRect`` comme parent pour les deux autres éléments, car il les "
-"englobe. En général, vous voudrez utiliser des conteneurs à la place, car "
-"leur rôle est d'aider à organiser les composants de l'interface utilisateur. "
-"Nous aurons besoin d'un ``MarginContainer`` plus tard de toute façon pour "
-"ajouter de l'espace entre la durée de vie et la jauge. Sélectionnez ``Bar`` "
-"et ajoutez un ``MarginContainer``. Donnez-lui le nom de \"Count\". A "
-"l'intérieur, ajoutez trois nœuds :"
+"Le label nécessite au moins trois nœuds : Un ``NinePatchRect`` pour le fond, "
+"sur lequel nous ajouterons une texture à gauche, soit ``HP`` ou``EP``, et un "
+"``Label`` à droite pour la valeur. Nous pouvons emboîter les nœuds \"Control"
+"\" comme nous le souhaitons. Nous pouvons utiliser le ``NinePatchRect`` "
+"comme parent pour les deux autres éléments car il les englobe. En général, "
+"il est préférable d'utiliser des conteneurs à la place, car leur rôle est "
+"d'aider à organiser les composants de l'interface utilisateur. Nous aurons "
+"besoin d'un ``MarginContainer`` plus tard de toute façon pour ajouter de "
+"l'espace entre la durée de vie et la jauge. Sélectionnez ``Bar``, ajoutez un "
+"``MarginContainer`` et donnez-lui le nom de \"Count\". A l'intérieur, "
+"ajoutez trois nœuds :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:118
 msgid "A ``NinePatchRect`` named ``Background``"
@@ -293,22 +284,19 @@ msgid "And a ``Label`` named ``Number``"
 msgstr "Et un ``Label`` nommé ``Number``"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:122
-#, fuzzy
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
-"Pour ajouter les noeuds en tant que frères, sélectionnez toujours le noeud "
+"Pour ajouter les nœuds en tant que frères, sélectionnez toujours le nœud "
 "``Count`` en premier."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
-#, fuzzy
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
 "Votre arbre de scène devrait ressembler à ceci. Nous sommes prêts à ajouter "
-"des textures."
+"des textures"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:129
-#, fuzzy
 msgid ""
 "Our scene is still empty. It's time to throw in some textures. To load the "
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
@@ -325,7 +313,6 @@ msgstr ""
 "votre interface."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:138
-#, fuzzy
 msgid ""
 "Select the ``Background`` in the Scene dock. In the Inspector, you should "
 "see a ``Texture`` property. In the FileSystem tab, click and drag "
@@ -341,8 +328,8 @@ msgstr ""
 "Il reste écrasé. Le conteneur MarginContainer parent forcera sa taille à 0 "
 "jusqu'à ce que nous forcions les éléments à l'intérieur du conteneur à avoir "
 "une taille minimale. Sélectionnez le nœud ``Background``. Dans l'inspecteur, "
-"faites défiler vers le bas jusqu'à la section Rect. Réglez \"Taille minimale"
-"\" sur (100, 40). Vous devriez voir le ``Background`` redimensionné avec ses "
+"faites défiler vers le bas jusqu'à la section Rect. Réglez ``Min Size`` à "
+"(100, 40). Vous devriez voir le ``Background`` redimensionné avec ses "
 "conteneurs parents."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:147
@@ -871,14 +858,13 @@ msgstr ""
 "ne voulons pas le copier manuellement dans toutes les variations."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:390
-#, fuzzy
 msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
 msgstr ""
 "Une icône de rechargement apparaîtra à côté des propriétés que vous "
 "remplacez. Cliquez dessus pour réinitialiser la valeur à la valeur par "
-"défaut de la scène mère."
+"défaut de la scène parente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 #, fuzzy

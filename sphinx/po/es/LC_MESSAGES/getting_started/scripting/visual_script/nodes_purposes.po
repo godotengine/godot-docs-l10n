@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -542,7 +542,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:274
 msgid "Scene Node"
-msgstr "Nodo de Escena"
+msgstr "Nodo Scene"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:276
 msgid ""
@@ -926,7 +926,6 @@ msgid "Operators"
 msgstr "Operadores"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
-#, fuzzy
 msgid ""
 "These are mostly generic operators such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
@@ -934,11 +933,12 @@ msgid ""
 "always recommended to set the right type for operators to catch errors "
 "faster and make the graph easier to read."
 msgstr ""
-"Estos son operadores genéricos como suma, multiplicación, comparación, etc. "
-"Por defecto suelen aceptar cualquier tipo de datos (y devolverán un error en "
-"giempo de ejecución si los tipos no coinciden con el operador). Es siempre "
-"recomendable asignar el tipo correcto de operadores para encontrar errores "
-"rápido y hacer que el grafo sea fácil de leer."
+"Se trata en su mayoría de operadores genéricos como sumas, multiplicaciones, "
+"comparaciones, etc. De forma predeterminada, aceptan cualquier tipo de datos "
+"(y se producirá un error en tiempo de ejecución si los tipos introducidos no "
+"coinciden con los del operador). Siempre se recomienda configurar el tipo "
+"correcto para que los operadores detecten los errores más rápidamente y "
+"faciliten la lectura del gráfico."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"

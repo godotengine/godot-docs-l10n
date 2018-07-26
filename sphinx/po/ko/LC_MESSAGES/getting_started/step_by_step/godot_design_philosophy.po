@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,7 +190,6 @@ msgstr ""
 "제작되었고, 엔진과 에디터에 완벽하게 통합됩니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
-#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
@@ -198,7 +197,7 @@ msgid ""
 msgstr ""
 "GDScript는 파이썬과 유사한 구문을 사용하여 쉬운 코드를 사용하지만, 타입을 인"
 "지하고 정적 언어의 자동 완성 품질을 제공합니다. 또한 Vectors와 Colors 같은 내"
-"장 함수를 가지고 있어 게임플레이에 최적화되어 있습니다."
+"장 함수를 가지고 있어 게임플레이 코드에 최적화되어 있습니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
 msgid ""
@@ -241,21 +240,18 @@ msgid "|image4|"
 msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
-#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
-"*고도 엔진 2에서 kubecz3k이 만드신 State Machine editor 플러그인입니다. 이걸"
-"로 당신은 시각적으로 상태와 변화를 다룰 수 있습니다*"
+"*고도 엔진 2에서 kubecz3k님이 만드신 State Machine editor 플러그인입니다. 이"
+"걸로 당신은 시각적으로 상태와 변화를 다룰 수 있습니다.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
-#, fuzzy
 msgid "Open source"
 msgstr "오픈 소스"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:110
-#, fuzzy
 msgid ""
 "Godot offers a fully open source codebase under the **MIT license**. This "
 "means all the technologies that ship with it have to be Free (as in freedom) "
@@ -263,21 +259,20 @@ msgid ""
 "contributors."
 msgstr ""
 "고도는 **MIT 라이선스** 하에 완전한 오픈 소스 코드베이스를 제공합니다. 이는 "
-"여기서 제공하는 모든 기술들은 (자유로서의) 무료임을 의미합니다. 대부분의 경"
-"우, 기술들은 참여자들에 의해 처음부터 코드화가 되어있습니다."
+"여기서 제공하는 모든 기술들은 (자유로서의) 무료임을 의미합니다. 대부분의 기술"
+"들은, 참여자들에 의해 기초부터 개발되었습니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include NVIDIA PhysX, Google "
 "AdMob, or an FBX model importer. Any of these can come as third-party "
 "plugins instead."
 msgstr ""
-"누구든지 그들의 프로젝트의 필요에 맞는 도구들을 연결할 수 있습니다 -  다만 그"
-"것들이 엔진과 함께 제공되지 않습니다. 이것은 NViDia PhysX나 구글 애드몹, 혹"
-"은 FBX 파일 importer일지도 모릅니다. 이들은 대신 서드 파티 플러그인으로서 넣"
-"을 수 있습니다."
+"누구든지 프로젝트에 필요한 도구들을 연결할 수 있습니다 — 다만 그것들이 엔진"
+"과 함께 제공되지 않습니다. 이것들은 아마 NViDia PhysX나 구글 애드몹, 혹은 "
+"FBX 파일 importer일 것입니다. 이들은 대신 서드 파티 플러그인으로서 넣을 수 있"
+"습니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -315,9 +310,10 @@ msgstr ""
 "자들에게 도움을 주는 것을 최우선으로 봅니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
+#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
-"project has over 500 contributors at the time of writing. Benevolent "
+"project has over 600 contributors at the time of writing. Benevolent "
 "programmers work on features they may need themselves, so you’ll see "
 "improvements in all corners of the engine at the same time in every major "
 "release."
@@ -341,7 +337,7 @@ msgstr ""
 "고도 에디터는 게임 엔진으로 돌아갑니다. 이것은 엔진 스스로의 UI 시스템을 사용"
 "하고, 프로젝트를 테스트하거나 에디터에서 게임 코드를 실행할 때 코드와 씬을 "
 "핫 리로드 할 수 있습니다. 이는 당신이 게임에 쓰는 코드와 **같은 코드와 씬을 "
-"사용해서** , **플러그인을 만들거나 에디터를 확장** 시킬수 있다는 것을 의미합"
+"사용해서** , **플러그인을 만들거나 에디터를 확장** 시킬 수 있다는 것을 의미합"
 "니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
@@ -358,17 +354,15 @@ msgid "|image5|"
 msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
-#, fuzzy
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot’s UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
-"*RPG in a Box는 복셀 RPG 에디터로 고도 2 에서 만들어졌습니다. 노드 기반 프로"
+"*RPG in a Box는 복셀 RPG 에디터로 Godot 2 에서 만들어졌습니다. 노드 기반 프로"
 "그래밍 시스템과 인터페이스의 일부를 위해 고도 UI 툴을 사용했습니다.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
-#, fuzzy
 msgid ""
 "Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
@@ -376,16 +370,15 @@ msgid ""
 "in your projects."
 msgstr ""
 "``tool`` 키워드를 GDscript 파일의 맨 위에 놓으면 에디터에서 파일이 실행될 것"
-"입니다. 이걸로 당신은 플러그인을 내보내거나 가져올 수 있고, 커스텀 레벨 에디"
-"터 같은 플러그인을 제작하거나, 프로젝트에 쓰이는 것과 똑같은 노드와 API를 가"
-"지고 스크립트를 만들 수 있습니다."
+"입니다. 이걸로 당신은 프로젝트에 쓰이는 것과 똑같은 노드와 API를 가지고 플러"
+"그인을 내보내거나 가져올 수 있고, 사용자 지정 레벨 에디터 같은 플러그인을 제"
+"작하거나, 스크립트를 만들 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:166
 msgid "Separate 2D and 3D engines"
 msgstr "2D 와 3D 엔진을 분리함"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
-#, fuzzy
 msgid ""
 "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "
@@ -393,5 +386,5 @@ msgid ""
 "your 3D world."
 msgstr ""
 "고도는 전용 2D 와 3D 렌더링 엔진을 제공합니다. 그 결과 **2D 씬의 기본 단위는 "
-"픽셀입니다.** 비록 엔진이 분리되더라도, 당신은 2D에서 3D를, 3D에서 2D를 렌더"
+"픽셀입니다.** 비록 엔진이 분리되더라도, 당신은 3D에서 2D를, 2D에서 3D를 렌더"
 "할 수 있고, 3D 월드에 2D 스프라이트와 인터페이스를 씌울 수 있습니다."

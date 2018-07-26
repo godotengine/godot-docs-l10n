@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,13 +24,16 @@ msgstr "Singletons"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
-msgstr ""
+msgstr "Osso de Repouso"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:9
+#, fuzzy
 msgid ""
 "Armature object in Blender is exported as a Skeleton node along with rest "
 "position (transform in Godot) of bones."
 msgstr ""
+"Objeto armature no Blender é exportado como um nó de esqueleto juntamente "
+"com a posição de repouso (transform no Godot) dos bones."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
 msgid ""
@@ -57,18 +60,25 @@ msgid "Non-Deform Bone"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
+#, fuzzy
 msgid ""
 "Note that the non-deform bone can be configured as not exported by enable "
 "the :code:`Exclude Control Bones`, the deform bone checkbox is shown in "
 "picture."
 msgstr ""
+"Note que o osso não deformado pode ser configurado como não exportado "
+"habilitando o: code: `Exclude Control Bones`, a caixa de seleção deform bone "
+"é mostrada na figura."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
 msgid "Bone Attachment"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
+#, fuzzy
 msgid ""
 "Bone can be parent of object in Blender, this relation is exported as a "
 "BoneAttachment node in the Godot scene."
 msgstr ""
+"O bone pode ser pai de objeto no Blender, esta relação é exportada como um "
+"nó BoneAttachment na cena Godot."

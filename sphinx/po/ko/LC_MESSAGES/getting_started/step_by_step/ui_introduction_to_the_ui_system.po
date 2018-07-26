@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -527,10 +527,17 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"한번 앵커 위치를 바꾸거나 컨트롤 노드를 컨테이너 안에 넣어보세요: 마진은 업데"
+"이트 될 것입니다. 당신은 거의 마진을 정석대로 편집하진 않을 것입니다. 항상 당"
+"신을 도와줄 컨테이너를 골라보세요; 고도는 모든 일반적인 경우를 해결하기 위해 "
+"노드를 가지고 왔습니다. 체력 막대와 화면 테두리 사이에 빈 공간이 필요한가요? "
+"MarginContainer를 사용하세요. 세로 메뉴를 만들고 싶나요? VBoxContainer를 사용"
+"하세요. 아래에서 더 자세히 설명하겠습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
+"사이즈 태그를 사용해서 UI 요소가 이용 가능한 영역을 채우는 방식을 바꾸기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:248
 msgid ""
@@ -542,10 +549,17 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"모든 컨트롤 노드는 Size Flags를 가지고 있습니다. 이들은 컨테이너가 어떻게 UI "
+"요소들이 크기가 조정될 지를 말합니다. 만약 \"Fill\" 플래그를 Horizontal이나 "
+"Vertical에 추가한다면, 노드의 경계 사각형은 가능한 모든 공간을 차지할 것이지"
+"만, 형제 노드에 의해 크기를 조절할 겁니다. 만약 HBoxContainer에 3개의 "
+"TextureRect 노드가 있고, \"Fill\" 플래그가 두 방향 모두에 있다면, 그들은 각자"
+"의 가능한 공간의 3분의 1을 차지하지만 그 외는 사용하지 않을 겁니다. 컨테이너"
+"는 노드를 지배하여 크기를 자동으로 조절합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:258
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr ""
+msgstr "HBoxContainer에 있는 3개의 UI 요소들, 수평으로 정렬됨"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:260
 msgid ""
@@ -553,21 +567,26 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"\"Expand\" 플래그는 UI 요소가 가능한 모든 공간을 차지하게 만들고, 형제 노드"
+"를 밀어냅니다. 경계 사각형은 부모의 모서리까지, 혹은 다른 UI 노드로 가로막힐 "
+"때까지 커집니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:266
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
-msgstr ""
+msgstr "위의 샘플 예제에서, 가운데 노드에 \"Expand\" 사이즈 플래그를 줌"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"당신이 사이즈 태그를 이해하려면 몇 번의 연습이 필요할 겁니다, 그 효과로 당신"
+"이 인터페이스를 설정하는 방식이 상당히 달라질 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:273
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "컨테이너로 컨트롤 노드를 자동으로 배열하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
 msgid ""
@@ -576,6 +595,10 @@ msgid ""
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor so you can see the effect instantly."
 msgstr ""
+"컨테이너는 자동으로 모든 자식 컨트롤 노드와 자식 컨테이너들을 열이나 행이나 "
+"그 밖의 형태로 배열합니다. 컨테이너를 사용해서 이것의 경계 사각형 내에서 인터"
+"페이스나 중심 노드가 패딩하도록 합니다. 모든 내장 컨테이너는 에디터 내에서 업"
+"데이트 되므로 컨테이너가 작동되는 것을 바로 확인하실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""
@@ -583,33 +606,37 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"컨테이너는 UI 요소들을 배열하는 방법을 제어하기 위한 일부 특별한 속성을 지닙"
+"니다. 컨테이너를 변화하기 위해, 인스펙터의  Custom Constants 섹션으로 갑시다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "다섯 가지 가장 유용한 컨테이너들"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:288
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"당신이 도구를 제작하는 것이라면, 모든 컨테이너가 필요할 수도 있겠지만, 대부분"
+"의 게임들은, 이정도만 있어도 충분합니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid "MarginContainer, to add margins around part of the UI"
-msgstr ""
+msgstr "MarginContainer, UI의 가장자리에 여백을 추가함"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
 msgid "CenterContainer, to center its children in its bounding box"
-msgstr ""
+msgstr "CenterContainer, 경계 사각형 안에 자식을 중앙에 둠"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
-msgstr ""
+msgstr "VboxContainer와 HboxContainer, UI 요소들을 행이나 열로 배열함"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
-msgstr ""
+msgstr "GridContainer, 컨트롤 노드를 바둑판 같은 무늬로 배열함"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -619,11 +646,15 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer는 경계 사각형의 안에 모든 자식들을 가운데로 놓습니다. 이것은 "
+"당신이 뷰포트의 중앙에 있을 타이틀 화면에 일반적으로 사용합니다. 모든 것을 중"
+"앙에 두기 때문에, 내부에 하나의 컨테이너가 중첩되어 있어야 합니다. 대신 텍스"
+"쳐나 버튼을 놓는다면, 그들은 쌓일 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:305
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
-msgstr ""
+msgstr "실행 중인 CenterContainer. 체력 막대가 부모 컨테이너의 중앙에 있다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
@@ -634,10 +665,16 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"MarginContainer는 자식 노드의 사방에 여백을 추가합니다. 모든 뷰포트를 둘러싸"
+"는 MarginContainer를 추가하고 창과 UI의 가장자리 사이에 간격을 두세요. 당신"
+"은 컨테이너의 top, left, right, 아니면 bottom 방향에 여백을 설정할 수 있습니"
+"다. 체크박스는 건들지 않아도 됩니다: 해당하는 값의 상자를 선택하고 아무 숫자"
+"나 치세요. 자동으로 작동합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"게임 사용자 인터페이스 주변에 MarginContainer가 40px의 여백을 추가합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:319
 msgid ""
@@ -648,10 +685,16 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"두 개의 박스컨테이너가 있습니다: VBoxContainer와 HBoxContainer이죠. "
+"BoxContainer 노드는 도움을 주는 클래스이므로 그대로 사용하지 못합니다, 하지"
+"만 수직이나 수평으로 된 박스컨테이너는 사용할 수 있습니다. 이들은 노드를 행이"
+"나 열로 배열합니다. 이들을 사용해서 상점의 아이템을 늘어놓거나, 행과 열을 다"
+"른 크기로 하여 복잡한 격자를 만들 수 있고, 이걸로 당신은 마음 속 내용을 만들"
+"어낼 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
 msgid "The HBoxContainer horizontally aligns UI elements"
-msgstr ""
+msgstr "HBoxContainer가 UI 요소들을 수평으로 배열합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:330
 msgid ""
@@ -662,6 +705,11 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer는 자동으로 자식들을 세로로 배열합니다. 자식들을 차례로 하나 씩 "
+"놓습니다. 당신이 separation 한도를 설정하면, 자식들 사이에 틈이 생기게 됩니"
+"다. HBoxContainer는 자식들을 가로로 배열합니다. 이것은 VBoxContainer와 유사하"
+"게, 스크립트에서 맨 앞이나 맨 뒤에 간격을 띄우는 컨트롤 노드를 추가하는, "
+"``add_spacer`` 메서드를 갖고 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:337
 msgid ""
@@ -674,10 +722,16 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"GridContainer는 UI 요소들을 격자 같은 무늬로 배열합니다. 당신은 오직 세로 열"
+"의 숫자만 제어할 수 있는데, 가로 행의 수는 자식의 수에 따라 스스로 설정됩니"
+"다. 당신이 9개의 자식을 3열로 배열한다면, 9÷3 = 3행을 가지게 됩니다. 자식이 3"
+"개 더 늘어나면 4행을 가지게 됩니다. 이는 즉, 당신이 더 많은 텍스쳐와 버튼을 "
+"추가해 행을 늘릴 수 있습니다. 박스 컨테이너처럼, 이것도 각기 행과 열 사이에 "
+"수직과 수평 분리를 설정하는 두 개의 속성이 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:348
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
-msgstr ""
+msgstr "2열로 된 GridContainer. 각 행은 자동으로 크기가 조절됩니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
 msgid ""
@@ -685,3 +739,6 @@ msgid ""
 "design more advanced interface, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
+"고도의 UI 시스템은 복잡하고, 그만큼 많은 것을 제공합니다. 더 좋은 인터페이스"
+"를 만드는 방법을 배우기 위해선, 문서의 :ref:`GUI section <toc-learn-features-"
+"gui>` 로 가십시오."

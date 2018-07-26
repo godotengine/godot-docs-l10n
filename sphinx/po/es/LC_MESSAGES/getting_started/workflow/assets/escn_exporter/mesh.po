@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,24 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
-#, fuzzy
 msgid "Mesh"
-msgstr "Modelos"
+msgstr "Malla"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
-#, fuzzy
 msgid "Modifiers"
-msgstr "Identificadores"
+msgstr "Modifiers"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
+"Existe una opción de exportación :code:`Apply Modifiers` para controlar si "
+"se aplican modificadores de malla a la malla exportada."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
 msgid "Shape Key"
-msgstr ""
+msgstr "Shape Key"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
 msgid ""
@@ -43,6 +43,9 @@ msgid ""
 "almost like exporting the mesh again, so don't be surprisied it takes a "
 "relatively long time."
 msgstr ""
+"Se puede exportar la forma clave de una malla, sin embargo, exportar cada "
+"forma clave es casi como exportar la malla nuevamente, así que no te "
+"sorprendas si toma un tiempo relativamente largo."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
 msgid ""
@@ -53,3 +56,10 @@ msgid ""
 "github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
 "develop the exporter to have a more precise check of modifiers."
 msgstr ""
+"Muchos modificadores no son compatibles con las formas clave (por ejemplo, "
+"el modificador subsurface), así que si encuentras que has exportado una "
+"forma clave incorrecta, intenta deshabilitar :code:`Apply Modifiers` y "
+"vuelve a exportar. Además, vale la pena reportar el modificador incompatible "
+"en `issue list <https://github.com/godotengine/godot-blender-exporter/"
+"issues>`__, lo que ayuda a desarrollar el exportador para tener un control "
+"más preciso de los modificadores."

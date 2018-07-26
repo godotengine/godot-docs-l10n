@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,33 +22,32 @@ msgid "Animation"
 msgstr "Animación"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
-#, fuzzy
 msgid "Supported Animation"
-msgstr "Animación del Sprite"
+msgstr "Animaciones soportadas"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
 msgid "transform animation of all types of object"
-msgstr ""
+msgstr "transformar la animación de todo tipo de objetos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
 msgid "transform animation of pose bone"
-msgstr ""
+msgstr "transformar la animación de la pose de los huesos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:10
-#, fuzzy
 msgid "Action Lib"
-msgstr "Action"
+msgstr "Librería de acciones"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid ""
 "Every action in object's nla tracks would be exported as a separate track "
 "and placed in AnimationPlayer."
 msgstr ""
+"Cada acción en las pistas NLA de los objetos se exportaría como una pista "
+"separada y se colocaría en el AnimationPlayer."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:15
-#, fuzzy
 msgid "Placing of AnimationPlayer"
-msgstr "AnimationPlayer"
+msgstr "Colocación de AnimationPlayer"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
 msgid ""
@@ -56,24 +55,33 @@ msgid ""
 "animation data is stored in an AnimationPlayer node, instead of in each "
 "animated node."
 msgstr ""
+"Godot y Blender tienen una estructura diferente para almacenar datos de "
+"animación. En Godot los datos de animación se almacenan en un nodo "
+"AnimationPlayer, en lugar de en cada nodo animado."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:20
 msgid ""
 "The exporter has an option :code:`Separate AnimationPlayer For Each Object` "
 "which controls how the exported AnimationPlayers are placed."
 msgstr ""
+"El exportador tiene una opción :code:`Separate AnimationPlayer For Each "
+"Object` que controla cómo se colocan los AnimationPlayers exportados."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:24
 msgid ""
 "If :code:`Separate AnimationPlayer For Each Object` is **disabled** children "
 "of any animated object shares one AnimationPlayer"
 msgstr ""
+"Si :code:`Separate AnimationPlayer For Each Object` es **desactivado** los "
+"hijos de cualquier objeto animado comparten un AnimationPlayer"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:27
 msgid ""
 "In the following case, animation data of Mesh is also exported to "
 "AnimationPlayer \"RigAnimation\""
 msgstr ""
+"En el siguiente caso, los datos de animación de Mesh también se exportan a "
+"AnimationPlayer \"RigAnimation\""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:34
 msgid ""
@@ -82,8 +90,11 @@ msgid ""
 "to play multiple animation concurrently, because one AnimationPlayer node "
 "can only play one track at a time."
 msgstr ""
+"Si :code:`Separate AnimationPlayer For Each Object` está **habilitado** cada "
+"objeto animado tiene su propio AnimationPlayer. Es útil cuando los artistas "
+"desean reproducir varias animaciones al mismo tiempo, ya que un nodo de "
+"AnimationPlayer sólo puede reproducir una pista a la vez."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
-#, fuzzy
 msgid "In the following case, Mesh and Rig have their own AnimationPlayer"
-msgstr "Añade el código siguiente a ``AnimationPlayer_Manager.gd``:"
+msgstr "En el siguiente caso, Mesh y Rig tienen su propio AnimationPlayer"

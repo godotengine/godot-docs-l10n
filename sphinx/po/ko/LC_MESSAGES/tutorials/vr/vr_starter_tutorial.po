@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,11 +83,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
-#, fuzzy
 msgid ""
 "How to make a :ref:`RigidBody <class_RigidBody>` based pick up and drop "
 "system."
-msgstr ":ref:`RigidBody2D <class_RigidBody2D>` ( ``Mob`` 으로 이름지음)"
+msgstr ""
+":ref:`RigidBody2D <class_RigidBody2D>` 기반으로 잡아서 놓는 시스템을 만드는 "
+"방법."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:28
 msgid "How to make various items that can be used in VR"
@@ -273,9 +274,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:102
-#, fuzzy
 msgid "Starting VR"
-msgstr "스크립팅"
+msgstr "VR 시작하기"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:104
 msgid ""
@@ -337,9 +337,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:145
-#, fuzzy
 msgid "Coding the controllers"
-msgstr "플레이어 움직이기"
+msgstr "컨트롤러를 코딩하기"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:147
 msgid ""
@@ -1171,10 +1170,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:799
-#, fuzzy
 msgid ""
 "First, open up ``Game.gd`` and add the following additional class variables:"
-msgstr "``Mob`` 에게 스크립트를 추가해주고 다음의 멤버 변수를 추가해주세요:"
+msgstr "먼저 ``Game.gd`` 를 열고 다음의 멤버 변수를 추가해주세요:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:806
 msgid "``spheres_left`` : The amount of sphere targets left in the game world."
@@ -1206,9 +1204,8 @@ msgid "Now that we have destroyable targets, we need a way to destroy them!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:827
-#, fuzzy
 msgid "Adding a pistol"
-msgstr "스크립트 추가"
+msgstr "권총을 추가하기"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:829
 msgid "Okay, let's add a simple pistol."
@@ -1219,9 +1216,8 @@ msgid "Open up ``Pistol.tscn``, which you will find in the ``Scenes`` folder."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:833
-#, fuzzy
 msgid "There is a few things to note here."
-msgstr "적어놓을 만한 사항들이 있습니다:"
+msgstr "적어 놓을 만한 사항들이 있습니다."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:835
 msgid ""
@@ -1366,9 +1362,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:965
-#, fuzzy
 msgid "Adding a shotgun"
-msgstr "스크립트 추가"
+msgstr "샷건 추가하기"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:967
 msgid ""
@@ -1436,9 +1431,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1051
-#, fuzzy
 msgid "Adding a bomb"
-msgstr "스크립트 추가"
+msgstr "폭탄 추가하기"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1053
 msgid ""
@@ -1649,9 +1643,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1221
-#, fuzzy
 msgid "Adding a sword"
-msgstr "스크립트 추가"
+msgstr "검 추가하기"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1223
 msgid "Finally, let's add a sword so we can slice through things!"
@@ -1762,9 +1755,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1334
-#, fuzzy
 msgid "Updating the target UI"
-msgstr "프로젝트 구성"
+msgstr "대상 UI를 업데이트하기"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1336
 msgid "Okay, let's update the UI as the sphere targets are destroyed."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,8 @@ msgid "pkg-config"
 msgstr "pkg-config"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
-msgid "Environment Variables"
+#, fuzzy
+msgid "Environment variables"
 msgstr "环境变量"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:18
@@ -62,7 +63,8 @@ msgstr ""
 "你所指定的文件夹必须包含 ``bin``、 ``include``、 ``lib`` 这几个子目录。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:23
-msgid "Enable Mono Module"
+#, fuzzy
+msgid "Enable the Mono module"
 msgstr "启用 Mono 模块"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:25
@@ -74,7 +76,8 @@ msgstr ""
 "给 Scons 构建系统来启用它。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:28
-msgid "Generate The Glue"
+#, fuzzy
+msgid "Generate the glue"
 msgstr "生成胶水代码"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:30
@@ -99,29 +102,31 @@ msgstr ""
 "``modules/mono/glue``。"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:42
+#, fuzzy
 msgid ""
-"This command will tell Godot to generate the file *modules/mono/glue/"
-"mono_glue.gen.cpp*. Once this file is generated, you can build Godot for all "
-"the desired targets without the need to repeat this process."
+"This command will tell Godot to generate the file ``modules/mono/glue/"
+"mono_glue.gen.cpp``. Once this file is generated, you can build Godot for "
+"all the desired targets without the need to repeat this process."
 msgstr ""
 "这个命令告诉 Godot 生成胶水代码到 *modules/mono/glue/mono_glue.gen.cpp* 文"
 "件。 执行此步骤之后，你后面要再次构建就不需要重复进行这个操作了。"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:44
+#: ../../docs/development/compiling/compiling_with_mono.rst:45
 msgid ""
-"As always, ``godot`` refers to the compiled Godot binary, so if it isn't in "
-"your PATH, you need to give the full path to the executable, e.g. if it is "
-"located in the ``bin`` subfolder, it becomes ``bin/godot``."
+"``<godot_binary>`` refers to the tools binary you compiled above with the "
+"Mono module enabled. Its exact name will differ based on your system and "
+"configuration, but should be of the form ``bin/godot.<platform>.tools.<bits>."
+"mono``, e.g. ``bin/godot.x11.tools.64.mono`` or ``bin/godot.windows.tools.64."
+"exe``. Be especially aware of the **.mono** suffix! If you compiled Godot "
+"without Mono support previously, you might have similarly named binaries "
+"without this suffix which can't be used to generate the Mono glue."
 msgstr ""
-"这里的 ``godot`` 指的是编译好的 Godot 二进制文件。 因此如果它不在你系统的 "
-"PATH 变量中的话，你需要替换成你的可执行文件的绝对路径。 例如，在 ``bin``子目"
-"录中， 它就是 ``bin/godot``。"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:47
+#: ../../docs/development/compiling/compiling_with_mono.rst:50
 msgid "Notes"
 msgstr "注意"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:48
+#: ../../docs/development/compiling/compiling_with_mono.rst:51
 #, fuzzy
 msgid ""
 "**Do not** build your final binaries with ``mono_glue=no``. This disables C# "
@@ -133,7 +138,7 @@ msgstr ""
 "本，它的构建结果是仅用于控制生成胶水代码的临时二进制文件。Godot 会在启动时打"
 "印一条消息，提醒你这件事。"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:49
+#: ../../docs/development/compiling/compiling_with_mono.rst:52
 #, fuzzy
 msgid ""
 "The glue sources must be regenerated every time the ClassDB bindings "
@@ -144,20 +149,37 @@ msgstr ""
 "胶水代码在每次 ClassDB 的API有变动时都要重新生成。 如果有API和生成的胶水代码"
 "不匹配， Godot 将在启动时在控制台输出错误信息。"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:52
+#: ../../docs/development/compiling/compiling_with_mono.rst:55
+msgid "Rebuild with Mono glue"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:57
+msgid ""
+"Once you have generated the Mono glue, you can build the final binary with "
+"``mono_glue=yes``. It's the default value for ``mono_glue`` so you can also "
+"omit it. You can build the Mono-enabled editor:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:64
+#, fuzzy
+msgid "And Mono-enabled export templates:"
+msgstr "构建导出模板"
+
+#: ../../docs/development/compiling/compiling_with_mono.rst:71
 msgid "Examples"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:55
+#: ../../docs/development/compiling/compiling_with_mono.rst:74
 #, fuzzy
 msgid "Example (Windows)"
 msgstr "示例 (x11)"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:71
-msgid "Example (x11)"
+#: ../../docs/development/compiling/compiling_with_mono.rst:90
+#, fuzzy
+msgid "Example (X11)"
 msgstr "示例 (x11)"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:86
+#: ../../docs/development/compiling/compiling_with_mono.rst:105
 msgid ""
 "If everything went well, apart from the normal output, SCons should have "
 "also built the *GodotSharpTools.dll* assembly and copied it together with "
@@ -166,57 +188,57 @@ msgstr ""
 "如果一切顺利的话， 除了通常的可执行文件之外 Scons 应该还在 ``bin`` 目录下生成"
 "了 **GodotSharpTools.dll* 文件。"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:89
+#: ../../docs/development/compiling/compiling_with_mono.rst:108
 #, fuzzy
 msgid "Command-line options"
 msgstr "命令行"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:91
+#: ../../docs/development/compiling/compiling_with_mono.rst:110
 msgid ""
 "The following is the list of command-line options available when building "
 "with the mono module:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:94
+#: ../../docs/development/compiling/compiling_with_mono.rst:113
 msgid ""
 "**module_mono_enabled**: Build Godot with the mono module enabled (yes|no)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:94
-#: ../../docs/development/compiling/compiling_with_mono.rst:100
-#: ../../docs/development/compiling/compiling_with_mono.rst:103
+#: ../../docs/development/compiling/compiling_with_mono.rst:113
+#: ../../docs/development/compiling/compiling_with_mono.rst:119
+#: ../../docs/development/compiling/compiling_with_mono.rst:122
 #, fuzzy
 msgid "default: no"
 msgstr "默认环境"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:97
+#: ../../docs/development/compiling/compiling_with_mono.rst:116
 msgid ""
 "**mono_glue**: Whether to include the glue source files in the build and "
 "define `MONO_GLUE_DISABLED` as a preprocessor macro (yes|no)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:97
+#: ../../docs/development/compiling/compiling_with_mono.rst:116
 #, fuzzy
 msgid "default: yes"
 msgstr "默认功能"
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:100
+#: ../../docs/development/compiling/compiling_with_mono.rst:119
 msgid ""
 "**xbuild_fallback**: Whether to fallback to xbuild if MSBuild is not "
 "available (yes|no)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:103
+#: ../../docs/development/compiling/compiling_with_mono.rst:122
 msgid "**mono_static**: Whether to link the mono runtime statically (yes|no)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:105
+#: ../../docs/development/compiling/compiling_with_mono.rst:124
 msgid ""
 "**mono_assemblies_output_dir**: Path to the directory where all the managed "
 "assemblies will be copied to. The '#' token indicates de top of the source "
 "directory, the directory in which SConstruct is located"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_with_mono.rst:106
+#: ../../docs/development/compiling/compiling_with_mono.rst:125
 msgid "default: #bin"
 msgstr ""

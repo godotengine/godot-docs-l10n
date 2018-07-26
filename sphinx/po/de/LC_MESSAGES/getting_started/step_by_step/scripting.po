@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,6 +158,10 @@ msgid ""
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
+"Visual Scripting ist ein großartiges Werkzeug für Menschen ohne "
+"Programmierkenntnisse, aber auch für erfahrene Prorammierer, die Teile ihres "
+"Codes für andere, beispielsweise Designer oder Künstler, verständlicher "
+"machen wollen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
@@ -166,8 +170,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
+#, fuzzy
 msgid ".NET / C#"
-msgstr ""
+msgstr ".NET / C#"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:57
 msgid ""
@@ -175,12 +180,19 @@ msgid ""
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
+"Da Microsofts C# eine beliebte Sprache bei Spielentwicklern ist, "
+"unterstützen wir sie nun offiziell. C# ist ein ausgewachsene "
+"Programmiersprache in der bereits große Mengen Code geschrieben wurden. Die "
+"Unterstützung wurde dank einer großzügigen Spende von Microsoft eingefügt."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
 msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
 msgstr ""
+"C# hat eine exzellente Gewichtung zwischen Leistung und "
+"Nutzerfreundlichkeit. Man sollte sich allerdings seines 'Garbage Collectors' "
+"bewusst sein."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
 msgid ""
@@ -188,6 +200,10 @@ msgid ""
 "familiar with it means less time can be spent learning Godot and more time "
 "can be spent programming with it."
 msgstr ""
+"Für Unternehmen ist üblicherweise C# die beste Wahl, da viele Programmierer "
+"bereits Kenntnisse der Sprache haben. So muss weniger Zeit darauf verwendet "
+"werden, Godot kennenzulernen und mehr Zeit kann schneller in die aktive "
+"Entwicklung fließen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:69
 msgid ""
@@ -197,10 +213,15 @@ msgid ""
 "programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
 "is the only officially supported .NET option."
 msgstr ""
+"Da Godot `Mono <https://mono-project.com>`_ als .NET runtime verwendet, "
+"können viele .NET Bibliotheken und Frameworks von Drittanbietern, sowie "
+"Common Language Infrastructure-kompatible Programmiersprachen, wie zum "
+"Beispiel F#, Boo oder ClojureCLR, in Scripts verwendet werden.\n"
+"C# ist aber die einzige offiziell unterstützte .NET-Option."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:75
 msgid "GDNative / C++"
-msgstr ""
+msgstr "GDNative / C++"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
 msgid ""

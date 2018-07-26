@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-18 14:59+0200\n"
+"POT-Creation-Date: 2018-07-26 10:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -955,15 +955,14 @@ msgstr ""
 "para un nuevo juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:729
-#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
 "start the other two timers. ``ScoreTimer`` will increment the score by 1."
 msgstr ""
-"Ahora conecte la señal ``timeout()`` de cada uno de los nodos Timer. "
-"``StartTimer`` comenzará los otros dos temporizadores. ``ScoreTimer`` "
-"incrementará el puntaje en 1."
+"Ahora conecta la señal ``timeout()`` de cada uno de los nodos Timer "
+"(``StartTimer``, ``ScoreTimer`` y ``MobTimer``). ``StartTimer`` iniciará los "
+"otros dos temporizadores. ``ScoreTimer`` incrementará la puntuación en 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:760
 msgid ""
@@ -988,10 +987,13 @@ msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
+"Ahora haz clic en ``MobTimer`` en la ventana de la escena, luego ve a la "
+"ventana del inspector, cambia a la vista de nodos, después haz clic en "
+"``timeout()`` y conecta la señal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
 msgid "Add the following code:"
-msgstr ""
+msgstr "Añade el siguiente código:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:819
 msgid ""
