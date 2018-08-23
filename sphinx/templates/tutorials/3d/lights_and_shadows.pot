@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:4
-msgid "Lights And Shadows"
+msgid "Lights and shadows"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:7
@@ -85,7 +85,7 @@ msgid "**Cull Mask**: Objects that are in the selected layers below will be affe
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:42
-msgid "Shadow Mapping"
+msgid "Shadow mapping"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:44
@@ -141,7 +141,7 @@ msgid "Every face whose front-side is hit by the light rays is lit while the oth
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:84
-msgid "Directional Shadow Mapping"
+msgid "Directional shadow mapping"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:86
@@ -225,7 +225,7 @@ msgid "These two parameters allow tweaking how this works visually in order to f
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:163
-msgid "Omni Shadow Mapping"
+msgid "Omni shadow mapping"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:165
@@ -240,87 +240,87 @@ msgstr ""
 msgid "If the objects being rendered are mostly irregular, Dual Paraboloid is usually enough. In any case, as these shadows are cached in a shadow atlas (more on that at the end), it may not make a difference in performance for most scenes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:180
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:179
 msgid "Spot light"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:182
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:181
 msgid "Spot lights are similar to omni lights, except they emit light only into a cone (or \"cutoff\"). They are useful to simulate flashlights, car lights, reflectors, spots, etc. This type of light is also attenuated towards the opposite direction it points to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:189
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:188
 msgid "Spot lights share the same **Range** and **Attenuation** as **OmniLight**, and add two extra parameters:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:191
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:190
 msgid "**Angle**: The aperture angle of the light"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:192
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:191
 msgid "**Angle Attenuation**: The cone attenuation, which helps soften the cone borders."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:196
-msgid "Spot Shadow Mapping"
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:194
+msgid "Spot shadow mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:198
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:196
 msgid "Spots don't need any parameters for shadow mapping. Keep in mind that, at more than 89 degrees of aperture, shadows stop functioning for spots, and you should consider using an Omni light instead."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:202
-msgid "Shadow Atlas"
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:200
+msgid "Shadow atlas"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:204
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:202
 msgid "Unlike Directional lights which have their own shadow texture, Omni and Spot lights are assigned to slots of a shadow atlas. This atlas can be configured in Project Settings -> Rendering -> Quality -> Shadow Atlas."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:209
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:207
 msgid "The resolution applies to the whole Shadow Atlas. This atlas is divided in four quadrants:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:213
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:211
 msgid "Each quadrant can be subdivided to allocate any number of shadow maps. The following is the default subdivision:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:217
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:215
 msgid "The allocation logic is simple. The biggest shadow map size (when no subdivision is used) represents a light the size of the screen (or bigger). Subdivisions (smaller maps) represent shadows for lights that are further away from view and proportionally smaller."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:222
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:220
 msgid "Every frame, the following logic is done for all lights:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:224
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:222
 msgid "Check if the light is on a slot of the right size. If not, re-render it and move it to a larger/smaller slot."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:225
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:223
 msgid "Check if any object affecting the shadow map has changed. If it did, re-render the light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:226
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:224
 msgid "If neither of the above has happened, nothing is done, and the shadow is left untouched."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:228
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid "If the slots in a quadrant are full, lights are pushed back to smaller slots depending on size and distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:230
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:228
 msgid "This allocation strategy works for most games, but you may to use a separate one in some cases (as example, a top-down game where all lights are around the same size and quadrands may have all the same subdivision)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:234
-msgid "Shadow Filter Quality"
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:232
+msgid "Shadow filter quality"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:236
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:234
 msgid "The filter quality of shadows can be tweaked. This can be found in Project Settings -> Rendering -> Quality -> Shadows. Godot supports no filter, PCF5 and PCF13."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:242
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:240
 msgid "It affects the blockyness of the shadow outline:"
 msgstr ""
 

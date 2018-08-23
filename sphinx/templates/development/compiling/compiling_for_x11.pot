@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,39 +136,43 @@ msgstr ""
 msgid "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would not build."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:104
+#: ../../docs/development/compiling/compiling_for_x11.rst:103
+msgid "If you are compiling Godot for production use, then you can make the final executable smaller and faster by adding the SCons option ``target=release_debug``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:108
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:106
+#: ../../docs/development/compiling/compiling_for_x11.rst:110
 msgid "To build X11 (Linux, \\*BSD) export templates, run the build system with the following parameters:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:109
+#: ../../docs/development/compiling/compiling_for_x11.rst:113
 msgid "(32 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:116
+#: ../../docs/development/compiling/compiling_for_x11.rst:120
 msgid "(64 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:123
+#: ../../docs/development/compiling/compiling_for_x11.rst:127
 msgid "Note that cross compiling for the opposite bits (64/32) as your host platform is not always straight-forward and might need a chroot environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:126
+#: ../../docs/development/compiling/compiling_for_x11.rst:130
 msgid "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:132
+#: ../../docs/development/compiling/compiling_for_x11.rst:136
 msgid "and named like this (even for \\*BSD which is seen as \"Linux X11\" by Godot):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:141
+#: ../../docs/development/compiling/compiling_for_x11.rst:145
 msgid "However, if you are writing your custom modules or custom C++ code, you might instead want to configure your binaries as custom export templates here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:147
+#: ../../docs/development/compiling/compiling_for_x11.rst:151
 msgid "You don't even need to copy them, you can just reference the resulting files in the bin/ directory of your Godot source folder, so the next time you build you automatically have the custom templates referenced."
 msgstr ""
 
