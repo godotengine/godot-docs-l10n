@@ -7,6 +7,7 @@
 # DafabHoid <github@dafabhoid.de>, 2018.
 # David <david.breier@outlook.de>, 2018.
 # FlamyAT <Game.Couler@gmail.com>, 2018.
+# Florian Findeiss <droddl@gmx.de>, 2018.
 # Gero <me@gero.io>, 2018.
 # Gordon <gkone@gmx.net>, 2018.
 # Headmade Games <janusdr@gmail.com>, 2018.
@@ -15,9 +16,11 @@
 # M. Feil <git@sgdw.de>, 2018.
 # Mark B <berezun.mark@gmail.com>, 2018.
 # Martin Ziegler <martin.zie@gmx.de>, 2018.
+# Mathias Schmalisch <mathias.schmalisch@gmail.com>, 2018.
 # Neicul <neicul@gmx.de>, 2018.
 # nimradium <nimra242001@gmail.com>, 2018.
 # Otto Hakstetter <otto@hakstetter.de>, 2018.
+# Patrick Schönberger <patrick.schoenberger@posteo.de>, 2018.
 # Philipp Wabnitz <philipp.wabnitz@s2011.tu-chemnitz.de>, 2018.
 # rama0x9 <5393a6cuwlun@opayq.com>, 2018.
 # R. K <rene.kling1992@gmail.com>, 2018.
@@ -32,8 +35,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-26 10:06+0200\n"
-"PO-Revision-Date: 2018-07-22 22:38+0000\n"
-"Last-Translator: Gero <me@gero.io>\n"
+"PO-Revision-Date: 2018-08-14 09:38+0000\n"
+"Last-Translator: Florian Findeiss <droddl@gmx.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -41,7 +44,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -136,9 +139,8 @@ msgid "Development"
 msgstr "Entwicklung"
 
 #: ../../docs/index.rst:98
-#, fuzzy
 msgid "Creating Content"
-msgstr "Benennungsrichtlinien"
+msgstr "Inhalte erstellen"
 
 #: ../../docs/index.rst:106 ../../docs/community/index.rst:2
 msgid "Community"
@@ -2566,6 +2568,8 @@ msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
 msgstr ""
+"Es kann auch von Programmieren verwendet werden, um Zustandsautomaten oder "
+"eigene grafische Werkzeuge zu entwerfen - zum Beispiel ein Dialog System."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
 #, fuzzy
@@ -2626,6 +2630,9 @@ msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
+"Zu guter Letzt eine unserer cleversten Neuerungen in Version 3.0: GDNative "
+"ermöglicht es, Skripte in C++ zu schreiben, ohne Godot zu rekompilieren oder "
+"neuzustarten."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
 msgid ""
@@ -2633,6 +2640,9 @@ msgid ""
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
+"Jede C++ Version kann benutzt werden, und dank unserer internen C API Brücke "
+"ist das Mischen verschiedener Compiler und Compiler-Versionen zum Generieren "
+"der Programmbibliotheken kein Problem."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:85
 msgid ""
@@ -2641,16 +2651,24 @@ msgid ""
 "Visual Script. However the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
+"Diese Sprache ist die beste Wahl, wenn die Leistung im Vordergrund steht, "
+"und muss nicht für die gesamte Entwicklung verwendet werden, da andere Teile "
+"in GDScript oder Visual Script realisiert werden können. Allerdings ist die "
+"API klar und einfach zu benutzen, denn sie ähnelt Godot's tatsächlicher C++ "
+"API stark."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
+"Weitere Programmiersprachen können mittels der GDNative Schnittstelle "
+"verfügbar gemacht werden, diese werden allerdings nicht offiziell von uns "
+"unterstützt."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:94
 msgid "Scripting a scene"
-msgstr ""
+msgstr "Eine Szene skripten"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid ""
@@ -2658,18 +2676,22 @@ msgid ""
 "button and a label, where pressing the button will update the label. This "
 "will demonstrate:"
 msgstr ""
+"Für den Rest dieser Einleitung werden wir eine GUI Szene, bestehend aus "
+"einem Text und einem Knopf, der bei Betätigung den Text aktualisiert, "
+"erstellen. Dies wird demonstrieren:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid "Writing a script and attaching it to a node."
-msgstr ""
+msgstr "Ein Skript schreiben und es einem Node hinzufügen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:101
 msgid "Hooking up UI elements via signals."
-msgstr ""
+msgstr "UI Elemente mit Signalen verknüpfen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:102
 msgid "Writing a script that can access other nodes in the scene."
 msgstr ""
+"Ein Skript schreiben welches Zugriff auf andere Nodes in der Szene hat."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:104
 msgid ""
@@ -2678,27 +2700,34 @@ msgid ""
 "short, so it will not take more than a few minutes to get an overview of the "
 "concepts."
 msgstr ""
+"Bitte lesen Sie die :ref:`doc_gdscript` Referenz bevor sie fortfahren. Die "
+"Sprache ist konzipiert um einfach zu sein, und die Referenz ist kurz, es "
+"wird also höchstens einige Minuten dauern einen Überblick über die Konzepte "
+"zu erlangen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:80
 #: ../../docs/tutorials/animation/introduction_2d.rst:113
 msgid "Scene setup"
-msgstr ""
+msgstr "Eine Szene aufsetzen"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:111
 msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
+"Benutze den \"Node hier anhängen\" Dialog, zugänglich über den Szenentab "
+"(oder mit der Tastaturkombination ``Strg+A``), um eine Hierarchie mit den "
+"folgenden Nodes zu erstellen:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:114
 msgid "Panel"
-msgstr ""
+msgstr "Panel"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:116
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
-msgstr ""
+msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "Button"
@@ -2706,39 +2735,49 @@ msgstr "Schaltfläche"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid "The scene tree should look like this:"
-msgstr ""
+msgstr "Der Szenenbaum sollte so aussehen:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:123
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
+"Verwende den 2D-Editor um den Button und das Label so zu positionieren, wie "
+"im folgenden Bild dargestellt. Der Text kann im Inspektortab eingefügt "
+"werden."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:128
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr ""
+msgstr "Anschließend speichere die Szene unter den namen ``sayhello.tscn``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:133
 msgid "Adding a script"
-msgstr ""
+msgstr "Ein Skript hinzufügen"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:135
 msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
 msgstr ""
+"Rechtsklicke auf das Panel Node und wähle \"Skript hinzufügen\" von dem "
+"Kontextmenü:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:140
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
+"Es erscheint ein Dialogfenster um Skripte zu erstellen. Dieser Dialog "
+"erlaubt die Auswahl der Skriptsprache, Klassenname und weitere relevante "
+"Optionen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:143
 msgid ""
 "In GDScript the file itself represents the class, so the class name field is "
 "not editable."
 msgstr ""
+"In GDScript bestimmt der Dateiname die Klasse, daher ist der Klassenname "
+"nicht editierbar."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid ""
@@ -2746,10 +2785,13 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
+"Wir fügen das Skript zu dem Node Panel hinzu, weshalb das Vererbungsfeld "
+"\"Erbt\" automatisch mit \"Panel\" gefüllt wurde. In diesem Fall ist dies "
+"erwünscht, da unser Skript eine funktionale Erweiterung von Panel ist."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid "Finally, enter a path name for the script and select Create:"
-msgstr ""
+msgstr "Wähle einen Dateinamen für das Skript und klicke auf \"Erstellen\":"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:154
 msgid ""
@@ -2757,6 +2799,9 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
+"Damit wird das Skript erstellt und zu dem Node Panel hinzugefügt. Dies ist "
+"ersichtlich an dem \"Skript öffnen\"-Symbol rechts von Panel im Szenenbaum "
+"und als Skripteigenschaft im Inspektortab:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:160
 msgid ""
@@ -2764,6 +2809,9 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor "
 "where a default template will be included:"
 msgstr ""
+"Um das Skript zu bearbeiten, wähle eine der erwähnten Schlatflächen, welche "
+"im obigen Bild hervorgehoben wurden. Dies wird den Skripteditor mit einer "
+"Standardvorlage anzeigen:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:165
 msgid ""
@@ -2771,10 +2819,14 @@ msgid ""
 "and all its children, enters the active scene. **Note:** ``_ready()`` is not "
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
+"Die Standardvorlage enthält recht wenig. Die ``_ready()``-Funktion wir "
+"aufgerufen, wen das Node und alle seine Unterobjekt in die aktive Szene "
+"eintreten. **Beachte:** ``_ready()`` ist kein Konstruktor, der Konstruktor "
+"ist ``_init()``."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:170
 msgid "The role of the script"
-msgstr ""
+msgstr "Die Rolle des Skriptes"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:172
 msgid ""
@@ -2783,10 +2835,15 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
+"Das Skript fügt Verhalten zu dem Node hinzu. Es wird dazu verwendet, um die "
+"Funktion des Nodes als auch Interaktion mit anderen Objekten, wie Ober-, "
+"Unter- oder Nebennodes, zu steuern. Der lokale Aufgabenbereich des Skripts "
+"ist das Node. Anders ausgedrückt, das Skript erbt die Funktionen welche das "
+"Node zur Verfügung stellt."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:180
 msgid "Handling a signal"
-msgstr ""
+msgstr "Signalbehandlung"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:182
 msgid ""
@@ -2795,6 +2852,11 @@ msgid ""
 "mostly in GUI nodes, although other nodes have them too, and you can even "
 "define custom signals in your own scripts."
 msgstr ""
+"Signale werden \"ausgesendet\", wenn eine bestimmte Arten von Aktion "
+"stattfindet, welche mit beliebigen Funktionen in jeglicher Skriptinstanz "
+"verbunden sein können. Signale werden hauptsächlich in Nodes für grafische "
+"Benutzeroberflächen verwendet, obgleich andere Nodes diese auch besitzen "
+"können und es sogar möglich ist eigene Signale in Skripten zu definieren."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:187
 msgid ""
@@ -2803,18 +2865,27 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
+"In diesem Schritt werden wir das \"pressed()\"-Signal mit einer eigenen "
+"Funktion verbinden. Erstellen der Verbindung ist der erste Schritt und "
+"definieren der neuen Funktion der zweite. Für den ersten Schritt stellt "
+"Godot zwei mögliche Wege zur Verfügung: durch ein grafisches Interface oder "
+"programmiertechnisch."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:192
 msgid ""
 "While we will use the code method for the remainder of this tutorial series, "
 "let's cover how the editor interface works for future reference."
 msgstr ""
+"Während wir die Programmiermethode für den Rest dieser Anleitung verwenden, "
+"lass uns das grafisch Interface für zukünftige Verweise abdecken."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:195
 msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
 msgstr ""
+"Wähle das Button Node im Szenenbaum und dann klicke auf das \"Node\"-Tab. "
+"Als nächstes, stelle sicher, dass \"Signale\" ausgewählt ist."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:200
 msgid ""
@@ -2822,6 +2893,9 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
+"Wenn dann \"pressed()\" unter \"BaseButton\" ausgewählt und auf die "
+"\"Verbinden...\"-Schaltfläche im unteren rechten Bereich geklickt wird, "
+"erscheint eine Dialog, mit dem Signalverbindungen erstellt werden können."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
 msgid ""
@@ -2829,6 +2903,10 @@ msgid ""
 "node which implements the method you want to trigger (represented here as a "
 "NodePath) and the name of the method to trigger."
 msgstr ""
+"Im unteren linken Bereich sind die Schlüsselstellen für das Erstellen einer "
+"Verbindung zu finden: ein Node, welches den Funktionsaufruf implementiert "
+"der ausgelöst wird (dargestellt als \"Pfad zur Node\") und der Name des "
+"Funktionsaufrufes."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:209
 msgid ""
@@ -2837,6 +2915,10 @@ msgid ""
 "select a node, the NodePath at the bottom will automatically update to point "
 "a relative path from the emitting node to the selected node."
 msgstr ""
+"Der obere linke Bereich zeigt eine Liste mit den Nodes in der Szene, mit der "
+"Signalquelle hervorgehoben in Rot. Wähle hier das Panel Node aus. Nach der "
+"Auswahl des Nodes wird der \"Pfad zur Node\" automatisch auf den relativen "
+"Pfad von der Signalquelle zum ausgewählten Node aktualisiert."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:214
 msgid ""
@@ -2845,6 +2927,11 @@ msgid ""
 "do have the \"Make Function\" check button checked, then the editor will "
 "generate the function for you before setting up the connection."
 msgstr ""
+"Als Standard enthält der Funktionsaufruf den Namen des Nodes von welchem das "
+"Signal ausgeht (in diesem Fall \"Button\"), was in "
+"\"_on_[SignalNode]_[SignalName]\" resultiert. Wenn \"Funktion erstellen\" "
+"ausgewählt ist, dann wird automatisch ein Funktion generiert bevor die "
+"Signalverbindung hergestellt wird."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
 msgid ""
@@ -2852,6 +2939,8 @@ msgid ""
 "this is a scripting tutorial, so for the sake of learning, let's dive in to "
 "the manual process!"
 msgstr ""
+"Und damit schließt der Leitfaden für das grafische Interface ab. Da dies "
+"eine Skriptanleitung ist, lass uns nun die Programmiermethode abdecken!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:223
 msgid ""
@@ -2860,12 +2949,19 @@ msgid ""
 "This function uses paths to fetch nodes anywhere in the scene, relative to "
 "the node that owns the script."
 msgstr ""
+"Um dies zu erreichen werden wir eine Funktion benutzen, welche "
+"wahrscheinlich eine der meist genutzten Funktionen bei Godot Programmierern "
+"ist: :ref:`Node.get_node() <class_Node_get_node>`. Diese Funktion benutzt "
+"Pfade um Nodes überall in der Szene, relative zu dem Node mit dem "
+"aufrufendem Skript zu finden."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:228
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
+"Einfachheitshalber lösche alles unterhalb von ``extends Panel``. Wir werden "
+"den Rest des Skriptes manuell ausfüllen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:231
 msgid ""
@@ -2873,29 +2969,38 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
+"Da Button und Label Unternodes unter Panel sind, an welches dieses Skript "
+"angefügt ist, ist es möglich Button zu finden indem folgendes unter die "
+"``_ready()``-Funktion hinzugefügt wird:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:248
 msgid "Next, write a function which will be called when the button is pressed:"
 msgstr ""
+"Als nächstes schreibe eine Funktion welche aufgerufen wird, wenn auf die "
+"Schaltfläche von \"Button\" geklickt wird:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:264
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_connect>`."
 msgstr ""
+"Abschließend verbinde das \"pressed\"-Signal in der ``_ready()``-Funktion "
+"mit dem Funktionsaufruf :ref:`Object.connect() <class_Object_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:280
 msgid "The final script should look like this:"
-msgstr ""
+msgstr "Des endgültige Skript sollte wie folgt aussehen:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:314
 msgid ""
 "Run the scene and press the button. You should get the following result:"
 msgstr ""
+"Starte die Szene und klick auf die Schaltfläche. Dies sollte zu folgenden "
+"Ergebnis führen:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:318
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr ""
+msgstr "Oh, immer noch hier? Glückwunsch zum Skripten der ersten Szene."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:322
 msgid ""
@@ -2904,10 +3009,18 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
+"Ein verbreitetes Missverständnis bezüglich dieser Anleitung ist die "
+"Funktionsweise der ``get_node(path)``-Funktion. Für ein gegebenes Node, "
+"``get_node(path)`` sucht die unmittelbaren Unternodes. In dem Programmcode "
+"oberhalb bedeutet das, dass Button unterhalb von Panel angehängt sein muss. "
+"Wäre Button stattdessen unterhalb von Label angesiedelt, dann müsste der "
+"Funktionsaufruf folgendermaßen abgeändert werden:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:340
 msgid "Also, remember that nodes are referenced by name, not by type."
 msgstr ""
+"Des Weiteren beachte, das Nodes über den Namen referenziert werden und nicht "
+"über den Typ."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:344
 msgid ""
@@ -2915,6 +3028,9 @@ msgid ""
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
+"Die rechtsseitige Ansicht im \"Signal verbinden\"-Dialogfenster ist für die "
+"Übergabe spezifischer Werte an den verbundenen Funktionsaufruf. Hier können "
+"Werte verschiedener Typen hinzugefügt oder entfernt werden."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:348
 msgid ""
@@ -2922,26 +3038,36 @@ msgid ""
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
+"Die Programmiermethode erlaubt die selbe Funktionalität mit dem vierten "
+"Parameter im Funktionsaufruf, welcher Standardmäßig leer ist. Mehr "
+"Information dazu kann unter der ``Object.connect``-Funktion nachgelesen "
+"werden."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "Scripting (Fortsetzung)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "Ablaufsteuerung"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"In Godot werden etliche Aktionen durch virtuelle oder Rückruffunktionen "
+"ausgelöst, daher ist es nicht nötig Funktionen zu schreiben, die die ganze "
+"Zeit aktive sind."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"Es ist jedoch immernoch geläufig, dass ein Script bei jedem Frame ausgeführt "
+"wird. Es gibt zwei Arten der Verarbeitung: Inaktive Verarbeitung und "
+"Physikverarbeitung."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -2949,30 +3075,42 @@ msgid ""
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
+"Inaktive Verarbeitung wird aktiviert, wenn die Methode :ref:'Node._process() "
+"<class_Node__process>' in einen Skript gefunden wird. Sie kann mit :ref:"
+"`Node.set_process() <class_Node_set_process>` an- und ausgeschaltet werden."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
 "This method will be called every time a frame is drawn, so it's fully "
 "dependent on how many frames per second (FPS) the application is running at:"
 msgstr ""
+"Diese Methode wird jedes mal aufgerufen wenn ein Frame gezeichnet wird. "
+"Deshalb ist sie komplett abhängig davon, mit wie vielen Frames pro Sekunde "
+"(FPS) die Anwendung läuft:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
 msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
 msgstr ""
+"Der delta Parameter enthält die vergangene Zeit in Sekunden als Fließkomma "
+"seit dem letzten Aufruf von ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"Dieser Parameter kann dazu verwendet werden um sicherzugehen, dass Dinge, "
+"unabhängig von den FPS des Spiels, immer die gleiche Zeit benötigen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
+"Zum Beispiel wird Bewegung oft mit dem Zeit Delta multipliziert um die "
+"Bewegungsgeschwindigkeit konstant und unabhängig von der Bildrate zu machen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
@@ -2983,6 +3121,12 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"Die Physikbearbeitung mit ``_physics_process()`` ist ähnlich, sollte aber "
+"für Vorgänge benutzt werden, die vor jedem Physikschritt, wie das Steuern "
+"eines Charakters, ablaufen sollen. Sie läuft immer vor einem Physikschritt "
+"ab und wird nach einem festgelegten Zeitintervall aufgerufen: 60 mal pro "
+"Sekunde ist vorgegeben. Man kann dieses Intervall in den "
+"Projekteinstellungen unter Physics -> Common -> Physics Fps ändern."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -14745,9 +14889,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
-#, fuzzy
 msgid "Mesh"
-msgstr "Arrays"
+msgstr "Mesh"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 #, fuzzy

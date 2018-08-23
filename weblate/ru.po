@@ -6,7 +6,9 @@
 # Alex Afterlife <main-site-maker@yandex.ru>, 2018.
 # Alexander Pushkar <alexanderpushkar86@gmail.com>, 2018.
 # Alex <snimalovo@gmail.com>, 2018.
+# Anatolich <rva.moscow@gmail.com>, 2018.
 # Andrii Doroshenko <xrayez@gmail.com>, 2018.
+# asapokl <kzoper@gmail.com>, 2018.
 # batonbl4 <batonbl4@yandex.ru>, 2018.
 # B10nicMachine <shumik1337@gmail.com>, 2018.
 # Chaosus89 <chaosus89@gmail.com>, 2018.
@@ -34,10 +36,14 @@
 # Siarhei Mashkarniou <irondrain@gmail.com>, 2018.
 # S.traiker.D <l1evilone@gmail.com>, 2018.
 # teriva <spirin.cos@yandex.ru>, 2018.
+# Азиз Ганиев <ajganiev@gmail.com>, 2018.
+# Александр <ol-vin@mail.ru>, 2018.
 # Аркадий Авас <savvot@gmail.com>, 2018.
+# Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
 # Семён Рассохин <forzcross@gmail.com>, 2018.
 # Егор Бураков <fend.q@mail.ru>, 2018.
 # Игорь Д <protorian.di@gmail.com>, 2018.
+# Игорь Патиевич <ipcorps@gmail.com>, 2018.
 # Лошаденко Максим Юриевич <vidos4all@gmail.com>, 2018.
 #
 msgid ""
@@ -45,8 +51,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-26 10:06+0200\n"
-"PO-Revision-Date: 2018-07-26 07:41+0000\n"
-"Last-Translator: GetLocalPlayer <GetLocalPlayer@gmail.com>\n"
+"PO-Revision-Date: 2018-08-18 01:42+0000\n"
+"Last-Translator: asapokl <kzoper@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -55,7 +61,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -147,9 +153,8 @@ msgid "Development"
 msgstr "Разработка"
 
 #: ../../docs/index.rst:98
-#, fuzzy
 msgid "Creating Content"
-msgstr "Создание узлов"
+msgstr "Создание контента"
 
 #: ../../docs/index.rst:106 ../../docs/community/index.rst:2
 msgid "Community"
@@ -226,8 +231,8 @@ msgstr ""
 "Добро пожаловать в официальную документацию Godot Engine - свободного и "
 "открытого 2D и 3D игрового движка создаваемого сообществом! Godot - это "
 "весьма развитый и дружелюбный к пользователю инструмент, который вы сможете "
-"использовать для создания игры любого жанра и платформы без каких-либо "
-"ограничений."
+"использовать для создания игры любого жанра, для любой платформы, без каких-"
+"либо ограничений."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -4287,11 +4292,14 @@ msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
+"Теперь кликните на ``MobTimer`` в окне сцены, затем откройте окно "
+"инспектора, перейдите на вкладку ``Узел`` и кликнете на ``timeout()`` и "
+"присоедините сигнал."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1092
 msgid "Add the following code:"
-msgstr ""
+msgstr "Добавьте следующий код:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:819
 msgid ""
@@ -4417,21 +4425,21 @@ msgstr "Надпись счёта"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:872
 msgid "``Layout``: \"Center Top\""
-msgstr "``Layout``: \"Center Top\""
+msgstr "``Макет``: \"Центр Верх\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:873
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:886
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:899
 msgid "``Margin``:"
-msgstr "``Margin``:"
+msgstr "``Поле``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:875
 msgid "Left: ``-25``"
-msgstr "Left: ``-25``"
+msgstr "Слева: ``-25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:876
 msgid "Top: ``0``"
-msgstr "Top: ``0``"
+msgstr "Вверх: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:877
 msgid "Right: ``25``"
@@ -4439,7 +4447,7 @@ msgstr "Right: ``25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:878
 msgid "Bottom: ``100``"
-msgstr "Bottom: ``100``"
+msgstr "Вниз: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:880
 msgid "Text: ``0``"
@@ -4451,27 +4459,27 @@ msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:885
 msgid "``Layout``: \"Center\""
-msgstr "``Layout``: \"Center\""
+msgstr "``Макет``: \"Центр\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:888
 msgid "Left: ``-200``"
-msgstr "Left: ``-200``"
+msgstr "Слева: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:889
 msgid "Top: ``-150``"
-msgstr "Top: ``-150``"
+msgstr "Сверху: ``-150``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:890
 msgid "Right: ``200``"
-msgstr "Right: ``200``"
+msgstr "Справа: ``200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:891
 msgid "Bottom: ``0``"
-msgstr "Bottom: ``0``"
+msgstr "Снизу: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:893
 msgid "Text: ``Dodge the Creeps!``"
-msgstr "Text: ``Dodge the Creeps!``"
+msgstr "Текст: ``Уворачивайся от крипов!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:896
 msgid "StartButton"
@@ -4479,23 +4487,23 @@ msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid "``Layout``: \"Center Bottom\""
-msgstr "``Layout``: \"Center Bottom\""
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:901
 msgid "Left: ``-100``"
-msgstr "Left: ``-100``"
+msgstr "Слева: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:902
 msgid "Top: ``-200``"
-msgstr "Top: ``-200``"
+msgstr "Сверху: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:903
 msgid "Right: ``100``"
-msgstr "Right: ``100``"
+msgstr "Справа: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:904
 msgid "Bottom: ``-100``"
-msgstr "Bottom: ``-100``"
+msgstr "Снизу: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:906
 msgid "Text: ``Start``"
@@ -5456,7 +5464,6 @@ msgstr ""
 "игра Godot`_ ниже."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
-#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
@@ -5785,7 +5792,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
-msgstr "TextureRect"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
 msgid ""
@@ -5860,7 +5867,7 @@ msgstr "TextureRect модулируется с помощью красного 
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureButton"
-msgstr "TextureButton"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -5901,7 +5908,7 @@ msgstr "TextureButton и её 5 слотов текстуры"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureProgress"
-msgstr "TextureProgress"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
 msgid ""
@@ -5934,6 +5941,14 @@ msgid ""
 "the default of ``1`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
+"Чтобы анимировать панель, вам нужно посмотреть раздел Range. Задайте "
+"свойства `` Min`` и `` Max`` для определения диапазона датчика. Например, "
+"чтобы представить жизнь персонажа, вы должны установить `` Min`` = `` 0, `` "
+"и `` Max`` для максимального количества здоровья персонажа. Измените "
+"свойство `` Value``, чтобы обновить панель. Если вы оставите значения `` "
+"Min`` и `` Max`` по умолчанию `` 1`` и `` 100, `` и установите для свойства "
+"`` Value`` `` 40``, 40% текстуры `` Progress``, и 60% из них останется "
+"скрытым."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:138
 msgid "TextureProgress bar, two thirds filled"
@@ -5958,8 +5973,9 @@ msgid "Picture of a Label"
 msgstr "Изображение Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
+#, fuzzy
 msgid "NinePatchRect"
-msgstr ""
+msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
 msgid ""
@@ -5968,10 +5984,14 @@ msgid ""
 "corners. It is useful to build panels, dialogue boxes and scalable "
 "backgrounds for your UI."
 msgstr ""
+"** NinePatchRect ** разделяет текстуры на 3 строки и 3 столбца. Центральная "
+"и боковая стороны масштабируются, но углы нет. Полезно создавать панели, "
+"диалоговые окна и масштабируемые фоны для вашего пользовательского "
+"интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr ""
+msgstr "NinePatchRect масштабируется с использованием свойства min\\ _size"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "There are two workflows to build responsive UIs"
@@ -6216,33 +6236,46 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"Контейнеры имеют несколько специальных свойств, чтобы контролировать "
+"упорядочивание элементов пользовательского интерфейса. Чтобы изменить их, "
+"перейдите в раздел «Пользовательские константы» в Инспекторе."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "5 наиболее полезных контейнеров"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:288
+#, fuzzy
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"Если вы создадите инструменты, вам могут понадобиться все контейнеры. Но для "
+"большинства игр достаточно нескольких:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid "MarginContainer, to add margins around part of the UI"
 msgstr ""
+"MarginContainer, для добавления полей вокруг частей пользовательского "
+"интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
+#, fuzzy
 msgid "CenterContainer, to center its children in its bounding box"
 msgstr ""
+"CenterContainer, сосредоточивает дочерние элементы в ограниченной коробке"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
 msgstr ""
+"VboxContainer and HboxContainer, чтобы упорядочить элементы "
+"пользовательского интерфейса в строках или столбцах"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
+#, fuzzy
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
-msgstr ""
+msgstr "GridContainer, упорядочить узлы управления в виде сетки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -6252,13 +6285,22 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer центрирует все свои дочерние элементы внутри прямоуголника "
+"границ. Его типично используют для титульных экранов, если необходимо что бы "
+"опции оставались ровно посередине окна отображения. Поскольку он центрует "
+"все что в нем находится, вам часто потребуется добавлять в него вложенный "
+"контейнер. Если же вы используете текстуры и кнопки, то они будут "
+"стыковаться один над другим."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:305
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
+"CenterContainer в действии. Полоса здоровья находится внутри его "
+"родительского контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
+#, fuzzy
 msgid ""
 "The MarginContainer adds a margin on any side of the child nodes. Add a "
 "MarginContainer that encompasses the entire viewport to add a separation "
@@ -6267,12 +6309,21 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"MarginContainer добавляет отступ на любой стороне дочерних узлов. Добавьте "
+"MarginContainer, который охватывает весь видовой экран, чтобы добавить "
+"разделение между краем окна и пользовательским интерфейсом. Вы можете "
+"установить отступ в верхней, левой, правой или нижней части контейнера. Не "
+"нужно отмечать этот флажок: щелкните соответствующее поле значения и введите "
+"любое число. Он активируется автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"MarginContainer добавляет 40-пиксельный отступу вокруг игрового "
+"пользовательского интерфейса(GUI)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:319
+#, fuzzy
 msgid ""
 "There are two BoxContainers: VBoxContainer and HBoxContainer. You cannot add "
 "the BoxContainer node itself, as it is a helper class, but you can use "
@@ -6281,10 +6332,17 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"Есть два BoxContainers: VBoxContainer и HBoxContainer. Вы не можете добавить "
+"сам узел - BoxContainer, так как он является вспомогательным классом, но вы "
+"можете использовать вертикальные и горизонтальные контейнеры. Они "
+"упорядочивают узлы в строках или столбцах. Используйте их для выравнивания "
+"предметов в магазине или для создания сложных сеток с строками и столбцами "
+"разных размеров, так как вы можете вложить их в ваше ядро."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
 msgid "The HBoxContainer horizontally aligns UI elements"
 msgstr ""
+"HBoxContainer горизонтально выравнивает элементы пользовательского интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:330
 msgid ""
@@ -6295,6 +6353,12 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer автоматически выравнивает свои дочерние элементы в колонку. "
+"Один за другим. Для задания разделителя меж ними, используется параметр "
+"разделителя. HBoxContainer выравнивает элементы UI в строку. Он похож на "
+"VBoxContainer, но с дополнительным методом ``add_spacer``, позволяющим "
+"добавлять узел контроля отступа для первого или последнего элементов, прямо "
+"из скрипта."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:337
 msgid ""
@@ -6331,11 +6395,13 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu"
-msgstr ""
+msgstr "Главное меню"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:10
 msgid "A game UI with a health bar, energy bar, bomb and money counters"
 msgstr ""
+"Игровой интерфейс пользователя с полосой здоровья, полосой энергии, "
+"счетчиками бомб и денег"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
 msgid ""
@@ -13577,10 +13643,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
+#, fuzzy
 msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
+"Чтобы использовать переменную в скрипте, просто перетащите ее на "
+"холст(canvas), чтобы создать геттер:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
@@ -18202,7 +18271,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr "GDNative"
+msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
 msgid "Clipboard synchronisation between engine and operating system"
@@ -57902,6 +57971,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:132
+#, fuzzy
 msgid ""
 "When you report a bug, you should keep in mind that the process is similar "
 "to an appointment with your doctor. You noticed *symptoms* that make you "
@@ -57910,6 +57980,12 @@ msgid ""
 "developers to then help make the diagnosis of the issue you met, so that the "
 "actual cause of the bug can be identified and addressed."
 msgstr ""
+"Когда вы сообщаете об ошибке, вы должны иметь в виду, что этот процесс похож "
+"на встречу с вашим врачом. Вы заметили *симптомы*, которые заставляют вас "
+"думать, что что-то может быть не так (сбой движка, некоторые функции не "
+"работают должным образом и т. Д.). Это роль команды по сбору ошибок и "
+"разработчиков, чтобы затем помочь в диагностике проблемы, с которой вы "
+"столкнулись, чтобы определить и устранить фактическую причину ошибки."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:139
 msgid ""

@@ -18,6 +18,7 @@
 # Hernan Campillo Mecklenburg <hcampillo.88@gmail.com>, 2018.
 # Javier López Úbeda <jlopezcur@gmail.com>, 2018.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2018.
+# Joaquin Bozzalla <joaco.mbb@gmail.com>, 2018.
 # Jorge Araya Navarro <jorge@esavara.cr>, 2018.
 # Jorge Marcos <jorgemarcos@protonmail.com>, 2018.
 # Jose Maria Martinez <josemar1992@hotmail.com>, 2018.
@@ -27,6 +28,7 @@
 # Kevin Soto Vallejo <siguemek@gmail.com>, 2018.
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
+# Nahum Rosillo Lopez <nahum.rosillolopez@gmail.com>, 2018.
 # Oscar Vila <codemoscar@gmail.com>, 2018.
 # pablo guevara <pabloguevara@gmail.com>, 2018.
 # R. Joshua Seville <rjoshua@protonmail.com>, 2018.
@@ -45,7 +47,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-26 10:06+0200\n"
-"PO-Revision-Date: 2018-07-25 00:47+0000\n"
+"PO-Revision-Date: 2018-08-13 20:09+0000\n"
 "Last-Translator: Javier Ocampos <xavier.ocampos@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
@@ -54,7 +56,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -149,9 +151,8 @@ msgid "Development"
 msgstr "Desarrollo"
 
 #: ../../docs/index.rst:98
-#, fuzzy
 msgid "Creating Content"
-msgstr "Creación de nodos"
+msgstr "Creación de contenido"
 
 #: ../../docs/index.rst:106 ../../docs/community/index.rst:2
 msgid "Community"
@@ -5587,7 +5588,6 @@ msgstr ""
 "enfocan en beneficios para la mayoría primero."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
-#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
 "project has over 600 contributors at the time of writing. Benevolent "
@@ -5595,11 +5595,12 @@ msgid ""
 "improvements in all corners of the engine at the same time in every major "
 "release."
 msgstr ""
-"Dicho esto, aún con un puñado de desarrolladores principales trabajando a "
-"tiempo completo, el proyecto tiene más de 500 contribuyentes en este "
-"momento. Programadores bondadosos que trabajan en características que "
-"podrían necesitar ellos mismos, así que verás mejoras en todos los rincones "
-"del motor al mismo tiempo en cada versión mayor."
+"Dicho esto, aunque un puñado de desarrolladores principales trabajan en él a "
+"tiempo completo, el proyecto tiene más de 600 colaboradores en el momento de "
+"escribir este artículo. Programadores voluntarios trabajan en "
+"características que ellos mismos pueden necesitar, por lo que se verán "
+"mejoras en todos los rincones del motor al mismo tiempo en cada versión "
+"principal."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:144
 msgid "The Godot editor is a Godot game"
@@ -10660,9 +10661,8 @@ msgid "Editor manual"
 msgstr "Manual del editor"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
-#, fuzzy
 msgid "From Unity to Godot Engine"
-msgstr "De Unity3D a Godot Engine"
+msgstr "De Unity a Godot Engine"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -11298,7 +11298,6 @@ msgstr ""
 "Visual Studio y otras características, como el tipado estático."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:210
-#, fuzzy
 msgid ""
 "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` "
 "as well as support for :ref:`Visual Script <toc-learn-scripting-"
@@ -11309,13 +11308,14 @@ msgid ""
 "really easy to learn: Between one evening for an experienced programmer and "
 "a week for a complete beginner."
 msgstr ""
-"Godot proporciona su propio lenguaje de scripting, ref:`GDScript "
+"Godot proporciona su propio lenguaje de scripting, :ref:`GDScript "
 "<doc_scripting>` así como soporte para :ref:`Visual Script <toc-learn-"
-"scripting-visual_script>` y ref:`C# <doc_c_sharp>`. GDScript toma prestada "
-"su sintaxis de Python, pero no está relacionada con ésta. Si te preguntas "
-"sobre el razonamiento de un lenguaje de scripting personalizado, por favor "
-"lee las páginas :ref:`GDScript <doc_gdscript>` y :ref:`FAQ <faq>`_. GDScript "
-"está fuertemente unido a la API de Godot, pero es fácil de aprender."
+"scripting-visual_script>` y :ref:`doc_c_sharp`. GDScript toma prestada su "
+"sintaxis de Python, pero no está relacionada con ésta. Si te preguntas sobre "
+"el razonamiento de un lenguaje de scripting personalizado, por favor lee las "
+"páginas :ref:`doc_gdscript` y :ref:`doc_faq`. GDScript está fuertemente "
+"unido a la API de Godot y es muy fácil de aprender: Entre una noche para un "
+"programador experimentado y una semana para un principiante."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:216
 msgid ""
@@ -11368,9 +11368,8 @@ msgstr ""
 "dividir una escena compleja en múltiples ramas más pequeñas."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
-#, fuzzy
 msgid "Connections: groups and signals"
-msgstr "Conexiones : grupos y señales"
+msgstr "Conexiones: grupos y señales"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid ""
@@ -14248,7 +14247,7 @@ msgstr "Se vuelve:"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:407
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "Mientras (\"While\")"
+msgstr "While"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:409
 msgid "while() loops are the same everywhere:"
@@ -16112,7 +16111,7 @@ msgstr "Cuando está listo, va por el puerto secuencia \"exit\"."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:351
 msgid "Return"
-msgstr "Devuelve (\"Return\")"
+msgstr "Return"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:353
 msgid ""
@@ -16226,7 +16225,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid "Call"
-msgstr "Llamada (\"Call\")"
+msgstr "Call"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:415
 msgid ""
@@ -16993,15 +16992,14 @@ msgid "Math"
 msgstr "Matemáticas"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:28
-#, fuzzy
 msgid ""
 "Math functions like ``abs``, ``acos``, ``asin``, ``atan`` and ``atan2`` are "
 "located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, ``Atan`` and "
 "``Atan2``, instead of in global scope. ``PI`` is ``Mathf.Pi``"
 msgstr ""
-"Las funciones matemáticas son ``abs``, ``acos``, ``asin``, ``atan`` y "
-"``atan2`` se encuentran en ``Mathf`` en lugar de en el ámbito global. ``PI`` "
-"es ``Mathf.PI``"
+"Las funciones matemáticas como ``abs``, ``acos``, ``asin``, ``atan`` y "
+"``atan2`` se encuentran bajo ``Mathf`` como ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` y ``Atan2``, en lugar de en el ámbito global. `PI`` es ``Mathf.Pi``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "Random"
@@ -23799,7 +23797,7 @@ msgstr "¡Ejecutémoslo de nuevo! ¡Esta vez, la rotación se muestra bien!"
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 msgid "Tools"
-msgstr "Tools"
+msgstr "Herramientas"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
 msgid ""
@@ -24059,7 +24057,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:139
 msgid "Local Coords"
-msgstr "Local Coords (Coordenadas Locales)"
+msgstr "Coordenadas locales"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
 msgid ""
@@ -26273,7 +26271,6 @@ msgstr ""
 "similares a la arcilla y algunos tipos de tela."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:141
-#, fuzzy
 msgid ""
 "**Toon:** Provides a hard cut for lighting, with smoothing affected by "
 "roughness. It is recommended you disable sky contribution from your "
@@ -26282,8 +26279,8 @@ msgid ""
 msgstr ""
 "**Toon:** Proporciona un acabado duro para la iluminación, con alisado "
 "afectado por la rugosidad. Se recomienda desactivar la influencia del cielo "
-"en la configuración de la luz ambiental del entorno para lograr un mejor "
-"efecto."
+"en la configuración de la luz ambiental del entorno o desactivar la luz "
+"ambiental en el material spatial para lograr un mejor efecto."
 
 #: ../../docs/tutorials/3d/spatial_material.rst:146
 msgid "Specular Mode"
@@ -27030,34 +27027,48 @@ msgid ""
 "**Color**: Areas occluded are multiplied by this color. It is black by "
 "default, but it can be changed to tint shadows."
 msgstr ""
+"**Color**: Las áreas ocluidas son multiplicadas por este color. Por defecto "
+"es negro, pero puede ser cambiado para tintar las sombras."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:50
 msgid ""
 "**Bias**: When this parameter is too small, self shadowing occurs. When too "
 "large, shadows separate from the casters. Tweak to what works best for you."
 msgstr ""
+"**Bias**: Cuando este parámetro es muy pequeño, ocurre el auto sombreado. "
+"Cuando es muy largo, las sombras se separan de sus emisores. Ajústalo a lo "
+"que mejor funcione para ti."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:51
 msgid ""
 "**Contact**: Performs a short screen-space raycast to reduce the gap "
 "generated by the bias."
 msgstr ""
+"**Contact**: Realiza un raycast corto en el espacio de la pantalla para "
+"reducir el hueco generado por la inclinación."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:52
 msgid ""
 "**Reverse Cull Faces**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
+"**Reverse Cull Faces**: Algunas escenas funcionan mejor cuando el mapeo de "
+"sombras se representa con el face-culling invertido."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:54
 msgid ""
 "Below is an image of how tweaking bias looks like. Default values work for "
 "most cases, but in general it depends on the size and complexity of geometry."
 msgstr ""
+"A continuación se muestra una imagen de cómo se ve el ajuste de inclinación. "
+"Los valores predeterminados funcionan para la mayoría de los casos, pero en "
+"general depende del tamaño y la complejidad de la geometría."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:59
 msgid "Finally, if gaps can't be solved, the **Contact** option can help:"
 msgstr ""
+"Finalmente, si las grietas no se pueden resolver, la opción **Contact** "
+"puede ayudar:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:63
 msgid ""
@@ -27065,10 +27076,13 @@ msgid ""
 "resolution, although that may lead to decreased performance on low-end "
 "hardware."
 msgstr ""
+"Cualquier tipo de problema de inclinaciñon siempre se puede corregir "
+"incrementando la resolución del mapa de sombra, aunque eso puede llevar a "
+"una disminución del rendimiento en el hardware de gama baja."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:67
 msgid "Directional light"
-msgstr "Directional light"
+msgstr "Luz direccional"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:69
 msgid ""
@@ -27077,6 +27091,10 @@ msgid ""
 "be used whenever possible (although it's not the cheapest shadow-map to "
 "compute, but more on that later)."
 msgstr ""
+"Este es el tipo de luz más común y representa una fuente de luz muy lejana "
+"(como el sol). También es la luz menos costosa de calcular y debería "
+"utilizarse siempre que sea posible (aunque no es el mapa de sombras menos "
+"costoso de calcular, pero se explicará más adelante)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:73
 msgid ""
@@ -27085,6 +27103,11 @@ msgid ""
 "which indicates the direction of the light rays. However, the position of "
 "the node does not affect the lighting at all and can be anywhere."
 msgstr ""
+"La luz direccional modela un número infinito de rayos de luz paralelos que "
+"cubren la escena completa. El nodo de luz direccional es representado por "
+"una gran flecha que indica la dirección de los rayos de luz. Sin embargo, la "
+"posición del nodo no afecta al comportamiento de luz y puede ser colocado en "
+"cualquier lugar de la escena."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:80
 msgid ""
@@ -27092,10 +27115,14 @@ msgid ""
 "stay dark. Most light types have specific parameters, but directional lights "
 "are pretty simple in nature so they don't."
 msgstr ""
+"Cada rostro, cuyo lado frontal es golpeado por los rayos de luz, se enciende "
+"mientras los otros permanecen oscuros. La mayoría de los tipos de luz tienen "
+"parámetros específicos, pero las luces direccionales son de naturaleza "
+"bastante simple, por lo que no lo son."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:84
 msgid "Directional Shadow Mapping"
-msgstr "Directional Shadow Mapping"
+msgstr "Mapeo de sombras direccional"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:86
 msgid ""
@@ -27104,6 +27131,10 @@ msgid ""
 "distance). There is, however, a problem with this approach because objects "
 "closer to the camera receive blocky shadows."
 msgstr ""
+"Para calcular mapas de sombra, la escena es renderizada (sólo profundidad) "
+"desde un punto de vista ortogonal que cubre toda la pantalla (o hasta la "
+"distancia máxima). Hay, sin embargo, un problema con este enfoque porque los "
+"objetos más cercanos a la cámara reciben sombras en bloque."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:92
 msgid ""
@@ -27112,6 +27143,10 @@ msgid ""
 "shadow map. This allows small areas close to the viewer to have the same "
 "shadow resolution as a huge, far-away area."
 msgstr ""
+"Para solucionarlo, se utiliza una técnica llamada \"Parallel Split Shadow "
+"Maps\" (o PSSM). Esto divide la view frustum en 2 o 4 áreas. Cada área tiene "
+"su propio mapa de sombras. Esto permite que áreas pequeñas cercanas al "
+"espectador tengan la misma resolución de sombra que un área enorme y lejana."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:97
 msgid "With this, shadows become more detailed:"
@@ -27119,7 +27154,7 @@ msgstr "Con esto, las sombras son más detalladas:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:101
 msgid "To control PSSM, a number of parameters are exposed:"
-msgstr ""
+msgstr "Para controlar PSSM, se exponen varios parámetros:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:105
 msgid ""
@@ -27129,6 +27164,12 @@ msgid ""
 "values generally work well, but tweaking the first split a bit is common to "
 "give more detail to close objects (like a character in a third person game)."
 msgstr ""
+"Cada distancia dividida se controla con respecto a la cámara (o sombra **Max "
+"Distance** si es mayor que cero), por lo que *0.0* es la posición del ojo y "
+"*1.0* es donde la sombra termina a una distancia. Las divisiones están en el "
+"medio. Los valores predeterminados generalmente funcionan bien, pero ajustar "
+"la primera división un poco es común para dar más detalles a los objetos "
+"cercanos (como un personaje en un juego en tercera persona)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:111
 msgid ""
@@ -27136,7 +27177,7 @@ msgid ""
 "needs. The closer the max distance, the higher quality they shadows will "
 "have."
 msgstr ""
-"Asegúrate de indicar una *Distancia Máxima* de sombra de acuerdo con las "
+"Asegúrate de indicar una *Max Distance* de sombra de acuerdo con las "
 "necesidades de la escena. Cuanto más cerca se encuentre la distancia máxima, "
 "mayor será la calidad de las sombras."
 
@@ -27146,6 +27187,9 @@ msgid ""
 "this, the **\"Blend Splits\"** option can be turned on which sacrifices "
 "detail in exchange for smoother transitions:"
 msgstr ""
+"A veces, la transición entre una división y la siguiente puede verse mal. "
+"Para solucionar esto, la opción **\"Blend Splits\"** sacrifica detalles a "
+"cambio de transiciones más suaves:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:120
 msgid ""
@@ -27153,6 +27197,10 @@ msgid ""
 "shadowing when objects are perpendicular to the light. The only downside is "
 "that it makes the shadow a bit thinner."
 msgstr ""
+"El parámetro **\"Normal Bias\"** se puede usar para corregir casos "
+"especiales de sombreado automático cuando los objetos son perpendiculares a "
+"la luz. El único inconveniente es que hace que la sombra sea un poco más "
+"delgada."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:126
 msgid ""
@@ -27160,10 +27208,14 @@ msgid ""
 "that are far away. If self shadowing occurs only on the splits far away, "
 "this value can fix them."
 msgstr ""
+"El parámetro **\"Bias Split Scale\"** puede controlar la inclinación "
+"adicional para las divisiones que están muy lejos. Si el sombreado "
+"automático ocurre solo en las divisiones lejanas, este valor puede "
+"corregirlas."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:129
 msgid "Finally, the **\"Depth Range\"** has two settings:"
-msgstr "Por último, el **\"Rango de Profundidad**\" tiene dos ajustes:"
+msgstr "Por último, el  **\"Depth Range\"** tiene dos ajustes:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:131
 msgid ""
@@ -27172,6 +27224,10 @@ msgid ""
 "This is the default and generally desired, but it reduces the effective "
 "shadow resolution."
 msgstr ""
+"**Stable**: Mantiene la sombra estable mientras la cámara se mueve, y los "
+"bloques que aparecen en el contorno cuando están cerca de los bordes "
+"sombreados permanecen en su lugar. Este es el valor predeterminado y "
+"generalmente deseado, pero reduce la resolución de sombra efectiva."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:132
 msgid ""
@@ -27180,6 +27236,11 @@ msgid ""
 "at the same time the shadow looks more detailed (so this effect may be "
 "subtle enough to be forgiven)."
 msgstr ""
+"**Optimized**: Intenta alcanzar la resolución máxima disponible en un "
+"momento dado. Esto puede provocar un efecto de \"sierra en movimiento\" en "
+"los bordes sombreados, pero al mismo tiempo la sombra se ve más detallada "
+"(por lo que este efecto puede ser lo suficientemente sutil como para ser "
+"perdonado)."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:134
 msgid "Just experiment which setting works better for your scene."
@@ -27190,12 +27251,16 @@ msgid ""
 "Shadowmap size for directional lights can be changed in Project Settings -> "
 "Rendering -> Quality:"
 msgstr ""
+"El tamaño del mapa de sombras para luces direccionales puede ser cambiado en "
+"Project Settings -> Rendering -> Quality:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:140
 msgid ""
 "Increasing it can solve bias problems but reduce performance. Shadow mapping "
 "is an art of tweaking."
 msgstr ""
+"Aumentarlo puede arreglar problemas de inclinaciñon pero reduce el "
+"rendimiento. El mapeo de sombras es un elemento que requiere muchos ajustes."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:143
 msgid "Omni light"
@@ -27206,6 +27271,8 @@ msgid ""
 "Omni light is a point source that emits light spherically in all directions "
 "up to a given radius."
 msgstr ""
+"Omni light es una fuente puntual que emite luz esférica en todas las "
+"direcciones hasta un radio dado."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:150
 msgid ""
@@ -27213,21 +27280,29 @@ msgid ""
 "lights don't have a radius. This is a problem because it means computing "
 "several omni lights would become demanding."
 msgstr ""
+"En la vida real, la atenuación de la luz es una función inversa, lo que "
+"significa que las luces omnidireccionales no tienen radio. Esto es un "
+"problema porque calcular un gran número de este tipo de luces se volvería "
+"costoso."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:153
 msgid ""
 "To solve this, a *Range* is introduced together with an attenuation function."
 msgstr ""
+"Para resolver esto, se introduce un *Rango* junto con una función de "
+"atenuación."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:157
 msgid ""
 "These two parameters allow tweaking how this works visually in order to find "
 "aesthetically pleasing results."
 msgstr ""
+"Estos dos parámetros permiten ajustar cómo funciona esto visualmente para "
+"encontrar resultados estéticamente agradables."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:163
 msgid "Omni Shadow Mapping"
-msgstr ""
+msgstr "Omni Shadow Mapping"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:165
 msgid ""
@@ -35628,11 +35703,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:545
-#, fuzzy
 msgid ""
 "We first set the :ref:`RigidBody <class_RigidBody>` we are holding mode to "
 "``MODE_RIGID``."
-msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (llamado ``Mob``)"
+msgstr ""
+"Primero establecemos el :ref:`RigidBody <class_RigidBody>` y mantenemos el "
+"modo en ``MODE_RIGID``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:547
 msgid ""
@@ -36675,7 +36751,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:335
-#, fuzzy
 msgid ""
 "When adding nodes to a singleton/autoload, you have to be careful not to "
 "lose reference to any of the child nodes. This is because nodes will not be "
@@ -36683,11 +36758,11 @@ msgid ""
 "problems if you are instancing/spawning lots of nodes and you are not "
 "freeing them."
 msgstr ""
-"Al añadir nodos a un singleton/autoload, debe tener cuidado de no perder la "
-"referencia a ninguno de los nodos hijos. Esto se debe a que los nodos no "
-"serán liberados/destruidos cuando cambies de escena, lo que significa que "
-"puedes encontrarte con problemas de memoria si estás instanciando/generando "
-"muchos nodos y no los estás liberando."
+"Al añadir nodos a un singleton/autoload, hay que tener cuidado de no perder "
+"la referencia a ninguno de los nodos hijos. Esto se debe a que los nodos no "
+"serán liberados/destruidos cuando se cambia de escena, lo que significa que "
+"se pueden producir problemas de memoria si se están instanciando/generando "
+"muchos nodos y no se están liberando."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:341
 msgid "Now we need to add ``set_debug_display`` to ``Globals.gd``:"
@@ -36893,9 +36968,8 @@ msgid "Instead of:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:502
-#, fuzzy
 msgid "You will leave only:"
-msgstr "Aprenderás:"
+msgstr "Sólo te vas a ir:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:510
 msgid ""
@@ -37336,7 +37410,6 @@ msgstr ""
 "el singleton ``Globals.gd`` y lo asigna a ``globals``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:879
-#, fuzzy
 msgid ""
 "``play_sound`` now expects an audio stream, named ``audio_stream``, to be "
 "passed in, instead of ``sound_name``. Instead of checking the sound name and "
@@ -37348,10 +37421,10 @@ msgstr ""
 "``play_sound`` espera ahora que se pase un stream de audio, llamado "
 "``audio_stream``, en lugar de ``sound_name``. En lugar de comprobar el "
 "nombre del sonido y configurar el stream para el reproductor de audio, "
-"comprobamos que se ha introducido un stream de audio. Si no se pasa un "
+"comprobamos que se ha introducido un stream de audio. Si no se ha pasado un "
 "stream de audio, se imprime un mensaje de error, se elimina el reproductor "
-"de audio de la lista del singleton ``Globals.gd`` llamado ``created_audio``, "
-"y luego se libera el reproductor de audio."
+"de audio de la lista en el singleton ``Globals.gd`` llamado "
+"``created_audio``, y luego se libera el reproductor de audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:883
 msgid ""
@@ -37514,7 +37587,6 @@ msgstr ""
 "el sonido."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:988
-#, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenades "
 "explodes you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
@@ -37525,11 +37597,11 @@ msgid ""
 msgstr ""
 "Por ejemplo, si quieres reproducir un sonido de explosión cuando las "
 "granadas explotan necesitarás añadir un nuevo sonido a ``audio_clips`` en "
-"``Globals.gd``, accede al singleton ``Globals.gd``, y entonces sólo "
-"necesitas añadir algo como ``globals.play_sound(\"explosion\", false, "
-"global_transform.origin)`` en la función ``_process`` de la granada, justo "
-"después de que la granada dañe todos los cuerpos dentro de su radio de "
-"explosión."
+"``Globals.gd``, ve al singleton ``Globals.gd``, y luego sólo necesitas "
+"añadir algo como ``globals.play_sound(\"explosion\", false, global_transform."
+"origin)`` en la funciónplay_sound(\"explosion\", false, global_transform."
+"origin)`` en la función ``_process`` de la granada, justo después de que la "
+"granada dañe todos los cuerpos dentro de su radio de explosión."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:998
 msgid "Now you have a fully working single player FPS!"
@@ -61078,9 +61150,8 @@ msgid "pkg-config"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:16
-#, fuzzy
 msgid "Environment variables"
-msgstr "Entorno"
+msgstr "Variables de entorno"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:18
 msgid ""
@@ -61107,9 +61178,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:28
-#, fuzzy
 msgid "Generate the glue"
-msgstr "Geometría generada"
+msgstr "Generar el pegamento"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:30
 msgid ""
@@ -61177,18 +61247,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:64
-#, fuzzy
 msgid "And Mono-enabled export templates:"
-msgstr "Plantillas de exportación"
+msgstr "Y plantillas de exportación con soporte para Mono:"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:74
 msgid "Example (Windows)"
-msgstr "Ejemplos (Windows)"
+msgstr "Ejemplo (Windows)"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:90
-#, fuzzy
 msgid "Example (X11)"
-msgstr "Ejemplo"
+msgstr "Ejemplo (X11)"
 
 #: ../../docs/development/compiling/compiling_with_mono.rst:105
 msgid ""
@@ -61342,9 +61410,8 @@ msgid "Optimizing a build for size"
 msgstr ""
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:9
-#, fuzzy
 msgid "Rationale"
-msgstr "relacional"
+msgstr "Fundamentos"
 
 #: ../../docs/development/compiling/optimizing_for_size.rst:11
 msgid ""
@@ -64398,14 +64465,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/content/3d/index.rst:2
-#, fuzzy
 msgid "Creating 3D Content"
-msgstr "Creación de un proyecto"
+msgstr "Creación de contenido 3D"
 
 #: ../../docs/content/3d/making_trees.rst:4
-#, fuzzy
 msgid "Making Trees"
-msgstr "Haciendo solicitudes HTTP"
+msgstr "Creando árboles"
 
 #: ../../docs/content/3d/making_trees.rst:6
 msgid ""
@@ -64420,9 +64485,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/content/3d/making_trees.rst:13
-#, fuzzy
 msgid "Start with a tree"
-msgstr "Comenzando el juego"
+msgstr "Empieza con un árbol"
 
 #: ../../docs/content/3d/making_trees.rst:15
 msgid "I took this tree from SketchFab:"
@@ -64437,9 +64501,8 @@ msgid "and opened it in Blender."
 msgstr ""
 
 #: ../../docs/content/3d/making_trees.rst:24
-#, fuzzy
 msgid "Paint with Vertex Colors"
-msgstr "Vertex Color (Color de vértice)"
+msgstr "Pintar con Vertex Colors"
 
 #: ../../docs/content/3d/making_trees.rst:26
 msgid ""
@@ -64460,9 +64523,8 @@ msgid "Write a custom shader for the leaves"
 msgstr ""
 
 #: ../../docs/content/3d/making_trees.rst:37
-#, fuzzy
 msgid "This is a simple example of a shader for leaves:"
-msgstr "He aquí un ejemplo simple de su funcionamiento:"
+msgstr "Este es un ejemplo simple de un shader para follajes:"
 
 #: ../../docs/content/3d/making_trees.rst:44
 msgid ""
@@ -64489,11 +64551,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/content/3d/making_trees.rst:70
-#, fuzzy
 msgid "Finally all that is left is the fragment shader:"
-msgstr ""
-"Finalmente, lo único que falta es completar las funciones vacías en scene_a."
-"gd y scene_b.gd:"
+msgstr "Finalmente todo lo que queda es es el shader de fragmentos:"
 
 #: ../../docs/content/3d/making_trees.rst:83
 msgid "And this is pretty much it."
@@ -64507,9 +64566,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/content/3d/making_trees.rst:88
-#, fuzzy
 msgid "Improving the Shader:"
-msgstr "Movimiento del jugador (player)"
+msgstr "Mejorando el Shader:"
 
 #: ../../docs/content/3d/making_trees.rst:90
 msgid ""

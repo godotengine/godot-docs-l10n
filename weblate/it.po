@@ -15,13 +15,16 @@
 # Myself <whatamidoing.wt@gmail.com>, 2018.
 # Nicolas Bonet <nicolasbonet2004@gmail.com>, 2018.
 # Red Pill <redpill902@gmail.com>, 2018.
+# Salvo Permiracolo <salvoperm@gmail.com>, 2018.
+# spesknight <m.sernesi@tiscali.it>, 2018.
+# Ste d f <sdfilippo84@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-26 10:06+0200\n"
-"PO-Revision-Date: 2018-07-12 06:39+0000\n"
+"PO-Revision-Date: 2018-08-17 17:41+0000\n"
 "Last-Translator: Mario Rossi <mr_do@hotmail.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
@@ -30,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -128,7 +131,7 @@ msgstr "Sviluppo"
 
 #: ../../docs/index.rst:98
 msgid "Creating Content"
-msgstr ""
+msgstr "Creare contenuti"
 
 #: ../../docs/index.rst:106 ../../docs/community/index.rst:2
 msgid "Community"
@@ -1475,26 +1478,33 @@ msgid ""
 "You’ll use the **2D workspace** for all types of games. On top of 2D games "
 "that is where you’ll build your interfaces. Press F1 to access it. |image15|"
 msgstr ""
+"Userete l'area di lavoro **2D** per tutti i tipi di giochi. Oltre ai giochi "
+"2D, è qui che potrete creare le vostre interfacce. Premere F1 per accedervi. "
+"|image15|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:109
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
+"Nell'area di lavoro **3D** è possibile lavorare con mesh, luci e livelli di "
+"progettazione per giochi 3D. Premere F2 per accedervi."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
 msgid "|image16|"
-msgstr ""
+msgstr "|image16|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:114
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
 msgstr ""
+"Notare il testo [prospettiva] sotto la barra degli strumenti, è un pulsante "
+"che apre un elenco di opzioni relative alla vista 3D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:116
 msgid "|image20|"
-msgstr ""
+msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 msgid ""
@@ -1502,20 +1512,25 @@ msgid ""
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
+"L'area di lavoro **Script** è un editor di codice completo con un debugger, "
+"un ricco auto-completamento e un codice di riferimento integrato. Premere F3 "
+"per accedervi e F4 per cercare nella documentazione."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:122
 msgid "|image17|"
-msgstr ""
+msgstr "|image17|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
+"Infine, la **AssetLib** è una libreria di componenti aggiuntivi, script e "
+"risorse gratuiti da utilizzare nei progetti."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
 msgid "Modify the interface"
-msgstr ""
+msgstr "Modificare l'interfaccia"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
 msgid ""
@@ -1523,39 +1538,48 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
+"L'interfaccia di Godot vive in una sola finestra. Non è possibile dividerlo "
+"in più schermate, anche se è possibile lavorare con un editor di codice "
+"esterno come Atom o Visual Studio, per esempio."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
 msgid "Move and resize docks"
-msgstr ""
+msgstr "Spostare e ridimensionare i pannelli"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
+"Fare clic e trascinare sul bordo di qualsiasi pannello per ridimensionarlo "
+"orizzontalmente o verticalmente."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid "|image18|"
-msgstr ""
+msgstr "|image18|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
+"Fare clic sull'icona a tre punti nella parte superiore di qualsiasi dock per "
+"modificarne la posizione."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid "|image19|"
-msgstr ""
+msgstr "|image19|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
 msgstr ""
+"Andare al menu ``Editor`` e ``Editor Settings`` per ottimizzare l'aspetto "
+"dell'editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr ""
+msgstr "Scene e nodi"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:11
 msgid ""
@@ -1564,6 +1588,10 @@ msgid ""
 "jacket. Now, instead of making games, you create new and delicious recipes "
 "for your guests."
 msgstr ""
+"Immagina per un attimo di non essere più uno sviluppatore di giochi. Invece, "
+"sei un cuoco! Cambia il tuo abito hipster con un cappello bianco ed un "
+"grembiule. Ora, invece di fare giochi, crei nuove e deliziose ricette per i "
+"tuoi ospiti."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
 msgid ""

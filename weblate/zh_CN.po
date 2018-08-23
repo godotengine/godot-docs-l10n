@@ -5,6 +5,7 @@
 # asd789l <690367819@qq.com>, 2018.
 # baiwu liu <bovy.liu@gmail.com>, 2018.
 # bladesero <872461916@qq.com>, 2018.
+# cloudapex <cloudapex@126.com>, 2018.
 # DKLost <514dklost@gmail.com>, 2018.
 # Geequlim <geequlim@gmail.com>, 2018.
 # Griant <goooosick@gmail.com>, 2018.
@@ -34,8 +35,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-26 10:06+0200\n"
-"PO-Revision-Date: 2018-07-25 02:35+0000\n"
-"Last-Translator: z <755287198@qq.com>\n"
+"PO-Revision-Date: 2018-08-22 03:35+0000\n"
+"Last-Translator: cloudapex <cloudapex@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -43,7 +44,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -100,10 +101,10 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"在`GitHub 仓库<https://github.com/godotengine/godot-docs/issues>`_ 提交问题或"
-"提交请求，帮助我们 `将文档 <https://hosted.weblate.org/engage/godot-engine/"
-">`_ 翻译到你的语言，或者在 ``#godotengine-doc`` 频道 `irc.freenode.net "
-"<http://webchat.freenode.net/?channels=#godotengine-doc>`_ 和我们交流!"
+"在 `GitHub 仓库<https://github.com/godotengine/godot-docs/issues>`_  提交问题"
+"或提交请求，帮助我们 `将文档 <https://hosted.weblate.org/engage/godot-engine/"
+">`_ 翻译到你的语言，或者在 ``#godotengine-doc`` 频道  `irc.freenode.net "
+"<http://webchat.freenode.net/?channels=#godotengine-doc>`_  和我们交流!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -127,9 +128,8 @@ msgid "Development"
 msgstr "开发"
 
 #: ../../docs/index.rst:98
-#, fuzzy
 msgid "Creating Content"
-msgstr "创建节点"
+msgstr "创建内容"
 
 #: ../../docs/index.rst:106 ../../docs/community/index.rst:2
 msgid "Community"
@@ -346,8 +346,8 @@ msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
-"另外，:ref:`sec-tutorials`部分则可以根据你的需要以任意顺序去查阅。它包含了很"
-"多功能特性的教程和文档。"
+"另外， :ref:`sec-tutorials` 部分则可以根据你的需要以任意顺序去查阅。它包含了"
+"很多功能特性的教程和文档。"
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -378,9 +378,9 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
-"最后，:ref:`sec-class-ref`部分是Godot API文档，你也可以在引擎的脚本编辑器中直"
-"接查看。这部分是由源代码中的一个文件自动生成，而不是人为撰写的。更多信息请查"
-"看:ref:`doc_updating_the_class_reference`。"
+"最后， :ref:`sec-class-ref` 部分是Godot API文档，你也可以在引擎的脚本编辑器中"
+"直接查看。这部分是由源代码中的一个文件自动生成，而不是人为撰写的。更多信息请"
+"查看 :ref:`doc_updating_the_class_reference`。"
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -1892,7 +1892,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr "按下“运行”（Play），看到球落到屏幕下方。"
+msgstr "按下“运行”（Play），看到球落到屏幕底部："
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple Instances"
@@ -2701,9 +2701,9 @@ msgid ""
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
-"当 :ref:`Node._process() <class_Node__process>` 方法在函数中被定义处理流程就"
-"会被激活.。可以通过 :ref:`Node.set_process() <class_Node_set_process>` 函数来"
-"进行开关."
+"当 :ref:`Node._process() <class_Node__process>` 方法在脚本中被定义时，逻辑"
+"(帧)处理流程就会被激活.。可以通过 :ref:`Node.set_process() "
+"<class_Node_set_process>` 方法来开启或关闭逻辑(帧)处理."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
@@ -3529,7 +3529,7 @@ msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (名为 ``Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:472
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ""
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:473
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"

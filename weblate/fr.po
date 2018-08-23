@@ -2,6 +2,8 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Adam AUTUORI <askeridos@hotmail.fr>, 2018.
+# Alexis Huvier <lavapower84@gmail.com>, 2018.
 # Antoine Carrier <ac.g392@gmail.com>, 2018.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
 # benjamin thilliez <benjamin.thilliez@gmx.com>, 2018.
@@ -9,6 +11,7 @@
 # Cindy Dallaire <c.dallaire93@gmail.com>, 2018.
 # didier-v <didierv@mac.com>, 2018.
 # Eric Chirnside <echirnside@gmail.com>, 2018.
+# EricRogerGarcia <ericgarcia@netc.fr>, 2018.
 # Ewan Lehnebach <ewan.lehnebach@gmail.com>, 2018.
 # Gilles Roudiere <gilles.roudiere@gmail.com>, 2018.
 # Hasenn <eliottarloveyrier@live.fr>, 2018.
@@ -18,6 +21,7 @@
 # Jules Teneul <julesteneul@gmail.com>, 2018.
 # Kanabenki <lucien.menassol@gmail.com>, 2018.
 # keltwookie <keltwookie@protonmail.com>, 2018.
+# Kevin Bouancheau <kevin.bouancheau@gmail.com>, 2018.
 # Luc Stepniewski <lior@gradstein.info>, 2018.
 # Ludovic Moge <ludovic.moge@gmail.com>, 2018.
 # Marc THIBAUDET <marcthibaudet@gmail.com>, 2018.
@@ -47,8 +51,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-26 10:06+0200\n"
-"PO-Revision-Date: 2018-07-21 14:37+0000\n"
-"Last-Translator: Perrier Mathis <mathis.perrier73@gmail.com>\n"
+"PO-Revision-Date: 2018-08-22 17:37+0000\n"
+"Last-Translator: Adam AUTUORI <askeridos@hotmail.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -56,7 +60,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -151,9 +155,8 @@ msgid "Development"
 msgstr "Développement"
 
 #: ../../docs/index.rst:98
-#, fuzzy
 msgid "Creating Content"
-msgstr "Création de nœuds"
+msgstr "Création de contenu"
 
 #: ../../docs/index.rst:106 ../../docs/community/index.rst:2
 msgid "Community"
@@ -777,9 +780,9 @@ msgid ""
 "Horrible interface for binding to C++, results in large amount of code, "
 "bugs, bottlenecks and general inefficiency (Lua, Python, Squirrel, JS, etc.)"
 msgstr ""
-"Interface horrible pour lier à C++, résultant en une grande quantité de "
-"code, bogues, goulots d'étranglement et inefficacité générale (Lua, Python, "
-"Squirrel, JS, etc.)"
+"L'horrible interface pour lier à C++, résultant en une grande quantité de "
+"code, bogues, goulots d'étranglement et d'inefficacité générale (Lua, "
+"Python, Squirrel, JS, etc.)"
 
 #: ../../docs/about/faq.rst:119
 msgid ""
@@ -1304,7 +1307,7 @@ msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
-"Dans le coin en haut à gauche vous trouverez un menu déroulant pour changer "
+"Dans le coin en haut à droite vous trouverez un menu déroulant pour changer "
 "la langue de l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
@@ -1419,8 +1422,8 @@ msgid ""
 "at the top of the interface. Click on 2d to switch to the 2d workspace."
 msgstr ""
 "Bienvenue dans Godot ! Une fois votre projet ouvert, vous devriez voir "
-"l'interface de l'éditeur avec la vue \"3D\" activé. Vous pouvez changer de "
-"fvue à l'aide des boutons en haut et au milieu de l'interface. Cliquez sur "
+"l'interface de l'éditeur avec la vue \"3D\" activé. Vous pouvez changer "
+"d'espace de travail à l'aide des boutons en haut de l'interface. Cliquez sur "
 "\"2D\" pour passer à la vue dédié à la 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
@@ -3636,7 +3639,7 @@ msgid ""
 "best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
 "CapsuleShape2D\".  Resize the shape to cover the sprite:"
 msgstr ""
-"Enfin, ajoutez un :ref:`CollisionShape2D <class_CollisionShape2D>`en tant "
+"Enfin, ajoutez un :ref:`CollisionShape2D <class_CollisionShape2D>` en tant "
 "qu'enfant de ``Player``. Ceci déterminera la \"hitbox\" du joueur, soit les "
 "limites de sa zone de collision. Pour ce personnage, un noeud "
 "``CapsuleShape2D`` donne le meilleur ajustement, donc à côté de \"Shape\" "
@@ -5672,7 +5675,6 @@ msgstr ""
 "d'utilisateurs."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
-#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
 "project has over 600 contributors at the time of writing. Benevolent "
@@ -5680,12 +5682,11 @@ msgid ""
 "improvements in all corners of the engine at the same time in every major "
 "release."
 msgstr ""
-"Cela dit, bien qu'une poignée de développeurs centrale y travaillent à plein "
-"temps, le projet compte plus de 500 collaborateurs au moment de la rédaction "
-"du présent document. Des programmeurs bénévoles travaillent sur des "
-"fonctions dont ils peuvent avoir besoin eux-mêmes, de sorte que vous verrez "
-"des améliorations dans tous les coins du moteur en même temps dans chaque "
-"version majeure."
+"Cela dit, bien qu'une poignée de développeurs y travaillent à plein temps, "
+"le projet compte plus de 600 collaborateurs au moment de la rédaction. Des "
+"programmeurs bénévoles travaillent sur des fonctions dont ils peuvent avoir "
+"besoin eux-mêmes, de sorte que vous verrez des améliorations partout dans le "
+"moteur à chaque mise à jour majeure."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:144
 msgid "The Godot editor is a Godot game"
@@ -7525,7 +7526,6 @@ msgstr ""
 "conteneurs parents."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:147
-#, fuzzy
 msgid ""
 "Next, select the ``Title`` and drag and drop ``label_HP.png`` into its "
 "``Texture`` slot. Select the ``Number`` node, click the field next to the "
@@ -7534,20 +7534,18 @@ msgid ""
 "``MarginContainer``."
 msgstr ""
 "Ensuite, sélectionnez le ``Title`` et glissez-déposez ``label_HP.png`` dans "
-"son emplacement ``Texture``. Sélectionnez le noeud ``Number```, cliquez sur "
-"le champ à côté de la propriété ``Text`` et tapez ``10``. De cette façon, "
-"nous pouvons voir les deux nœuds dans le viewport. Ils devraient s'empiler "
-"dans le coin supérieur gauche de leur parent ``MarginContainer``."
+"l'emplacement ``Texture``. Sélectionnez le nœud ``Number```, cliquez sur le "
+"champ à côté de la propriété ``Text`` et tapez ``10``. De cette façon, nous "
+"pouvons voir les deux nœuds dans le viewport. Ils devraient s'empiler dans "
+"le coin supérieur gauche de leur parent ``MarginContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:155
-#, fuzzy
 msgid "If you select both nodes, you should see something like this"
 msgstr ""
 "Si vous sélectionnez les deux nœuds, vous devriez voir quelque chose comme "
 "ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:157
-#, fuzzy
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
@@ -7563,7 +7561,6 @@ msgstr ""
 "dock Scène. Ils retrouveront leur taille et leur position antérieures."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:164
-#, fuzzy
 msgid ""
 "Parent containers control the size, the scale, the margins, and the anchors "
 "of their direct children. To modify the nodes, you must nest them inside a "
@@ -7575,20 +7572,18 @@ msgstr ""
 "ancres de leurs enfants directs. Pour modifier les nœuds, vous devez les "
 "imbriquer à l'intérieur d'un Control standard ou d'un autre élément de "
 "l'interface utilisateur. Nous utiliserons ``Background`` comme parent pour "
-"\"Title\" et \"Number\". Sélectionnez \"Title\" et \"Number\"`, puis faites-"
+"``Title`` et ``Number``. Sélectionnez ``Title`` et ``Number``, puis faites-"
 "les glisser-et déposez les sur ``Background``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:173
-#, fuzzy
 msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
 msgstr ""
 "En utilisant le noeud Background comme parent des deux textures, nous "
-"prenons le contrôle du Count MarginContainer."
+"prenons le contrôle du Count MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:176
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -7601,20 +7596,20 @@ msgid ""
 "Resize the node horizontally so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
-"Sélectionnez `Title`` et dans l'Inspecteur, changez sa propriété ``Stretch "
-"Mode`` pour ``Keep Centered```. Trouvez ensuite la catégorie ``Rect`` dans "
-"l'Inspecteur et changez la propriété ``Size`` en (50, 40) pour qu'il ne "
-"prenne que la moitié gauche de l'arrière-plan.  Ensuite, sélectionnez le "
-"noeud ``Number```. Dans la fenêtre d'affichage, cliquez sur le menu "
-"``Layout`` et cliquez sur ``Full Rect``. Le nœud sera redimensionné pour "
-"s'adapter au ``Background``. Rendez-vous chez l'inspecteur et changez sa "
-"propriété \" Align \" en \" Right \", et la propriété \" Align \" en \" "
-"Center \". Le texte doit s'accrocher au centre du bord droit de l'arrière-"
-"plan. Redimensionner le nœud horizontalement pour qu'il prenne la moitié "
-"droite de l'arrière-plan et qu'il y ait un peu de padding avec le bord droit."
+"Sélectionnez  le ``Title`` et dans l'inspecteur, changez sa propriété "
+"``Stretch Mode`` pour ``Keep Centered``. Trouvez ensuite la catégorie "
+"``Rect`` dans l'inspecteur et changez la propriété ``Size`` en (50, 40) pour "
+"qu'il ne prenne que la moitié gauche de l'arrière-plan.  Ensuite, "
+"sélectionnez le noeud ``Number``. Dans la barre d'outil de la fenêtre "
+"d'affichage, cliquez sur le menu ``Layout`` et cliquez sur ``Full Rect``. Le "
+"nœud sera redimensionné pour s'adapter au ``Background``. Rendez-vous dans "
+"l'inspecteur et changez sa propriété ``Align`` en ``Right`` et la propriété "
+"``VAlign`` en ``Center``. Le texte doit s'accrocher au centre du bord droit "
+"de l'arrière-plan. Redimensionner le nœud horizontalement pour qu'il prenne "
+"la moitié droite de l'arrière-plan et qu'il y ait un peu de place avec le "
+"bord droit."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:189
-#, fuzzy
 msgid ""
 "Here's how the nodes' bounding boxes should look in the viewport. Keep it "
 "rough, you don't need to place them too precisely for now."
@@ -7722,14 +7717,12 @@ msgstr ""
 "pour voir la jauge se remplir."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:240
-#, fuzzy
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
 msgstr ""
 "Avec seulement cinq noeuds ``Control``, notre première barre est prête à "
 "être utilisée."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:244
-#, fuzzy
 msgid ""
 "That's it, our life bar is ready. This last part was quick, wasn't it? "
 "That's thanks to our robust container setup."
@@ -7742,7 +7735,6 @@ msgid "Design the bomb and rupee counters"
 msgstr "Créer un compteur de bombe et de rubis"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
-#, fuzzy
 msgid ""
 "The bomb and rupee counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
@@ -7751,7 +7743,6 @@ msgstr ""
 "barre. Nous allons donc le dupliquer et l'utiliser comme modèle."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:253
-#, fuzzy
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press Ctrl D to duplicate it. "
 "Drag and drop the new node under the ``Counters`` ``HBoxContainer`` at the "
@@ -7782,12 +7773,10 @@ msgstr ""
 "renommez-le pour ``Icon``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:267
-#, fuzzy
 msgid "Here's how your node tree should look so far"
-msgstr "Voici à quoi devrait ressembler votre arbre nodal jusqu'à présent"
+msgstr "Voici à quoi devrait ressembler votre arbre de nœuds jusqu'à présent"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:269
-#, fuzzy
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -7796,24 +7785,22 @@ msgid ""
 "in the toolbar at the top of the viewport and select ``Full Rect``. Both "
 "nodes will update to fit the size of the ``Background``."
 msgstr ""
-"Avec le noeud ``Icon'' sélectionné, dans l'inspecteur, faites défiler vers "
+"Avec le noeud ``Icon`` sélectionné, dans l'inspecteur, faites défiler vers "
 "le haut pour voir l'emplacement ``Texture``. Dirigez-vous vers le dock "
 "FileSystem à gauche et sélectionnez ``bombs_icon.png``. Faites-le glisser et "
 "déposez-le sur l'emplacement ``Texture``. Dans l'onglet Scène, sélectionnez "
-"à la fois le nœud \" Icône \" et le nœud \" Nombre \". Cliquez sur le menu "
-"Layout dans la barre d'outils en haut de la fenêtre d'affichage et "
-"sélectionnez ``Full Rect``. Les deux nœuds seront mis à jour pour s'adapter "
-"à la taille de ``Background`."
+"à la fois le nœud ``Icon`` et le nœud ``Number``. Cliquez sur le menu Layout "
+"dans la barre d'outils en haut de la fenêtre d'affichage et sélectionnez "
+"``Full Rect``. Les deux nœuds seront mis à jour pour s'adapter à la taille "
+"de ``Background`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:279
-#, fuzzy
 msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr ""
 "Les noeuds s'ancrent à l'arrière-plan en entier, mais leur position est "
-"désactivée."
+"désactivée"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:281
-#, fuzzy
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -7823,17 +7810,15 @@ msgid ""
 msgstr ""
 "Changeons les propriétés d'alignement de ``Number`` pour le déplacer vers la "
 "gauche et le centre de ``Background``. Sélectionnez le nœud ``Number```, "
-"changez sa propriété ``Align`` à gauche et la propriété ``VAlign``` au "
-"centre. Puis redimensionner un peu son bord gauche pour ajouter un peu de "
-"padding entre le bord gauche de l'arrière-plan et le texte."
+"changez sa propriété ``Align`` pour \"left\" et la propriété ``VAlign``` "
+"pour \"center\". Puis redimensionner un peu son bord gauche pour ajouter un "
+"peu de place entre le bord gauche de l'arrière-plan et le texte."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:289
-#, fuzzy
 msgid "The Number node aligned to the left and centre"
-msgstr "Le nœud Number aligné à gauche et au centre."
+msgstr "Le nœud ``Number`` aligné à gauche et au centre"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:291
-#, fuzzy
 msgid ""
 "To overlap the Icon and the background, we need a few tweaks. First, our "
 "background is a bit too tall. It's because it's inside a margin container "
@@ -7845,16 +7830,15 @@ msgid ""
 msgstr ""
 "Pour superposer l'icône et l'arrière-plan, nous avons besoin de quelques "
 "ajustements. Tout d'abord, notre arrière-plan est un peu trop grand. C'est "
-"parce qu'il se trouve à l'intérieur d'un conteneur de marge qui est contrôlé "
-"par le nœud le plus haut de l'interface graphique. Sélectionnez le nœud de "
-"l'interface graphique en haut de l'arbre de scène et réduisez-le "
-"verticalement pour qu'il soit le plus fin possible. Vous verrez que la jauge "
-"vous empêche de la rendre trop petite. Un conteneur ne peut pas être plus "
-"petit que la taille minimale de ses enfants. Les marges du conteneur "
-"comptent également."
+"parce qu'il se trouve à l'intérieur d'un conteneur de marge(MarginContainer) "
+"qui est contrôlé par le nœud le plus haut de l'interface graphique(GUI). "
+"Sélectionnez le nœud de l'interface graphique(GUI) en haut de l'arbre de "
+"scène et réduisez-le verticalement pour qu'il soit le plus fin possible. "
+"Vous verrez que la jauge vous empêche de la rendre trop petite. Un conteneur "
+"ne peut pas être plus petit que la taille minimale de ses enfants. Les "
+"marges du conteneur comptent également."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:299
-#, fuzzy
 msgid ""
 "Select the Icon, click the Layout menu, and select ``Full Rect`` to re-"
 "center it. We need it to anchor to the ``Background``'s right edge. Open the "
@@ -7862,23 +7846,21 @@ msgid ""
 "centered vertically with the ``Background``."
 msgstr ""
 "Sélectionnez l'icône, cliquez sur le menu Layout et sélectionnez ``Full "
-"Rect`` pour recentrer. Nous avons besoin de l'ancrer sur le bord droit de "
+"Rect`` pour le recentrer. Nous avons besoin de l'ancrer sur le bord droit de "
 "\"Background\". Ouvrez à nouveau le menu Layout et sélectionnez ``Center "
 "Right``. Déplacez l'icône vers le haut de façon à ce qu'elle soit centrée "
 "verticalement avec l'arrière-plan."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:307
-#, fuzzy
 msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
 msgstr ""
 "L'icône de la bombe s'ancre sur le bord droit de l'arrière-plan. "
 "Redimensionner le conteneur Counter pour voir le nœud Icon coller sur le "
-"côté droit."
+"côté droit"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:310
-#, fuzzy
 msgid ""
 "Because we duplicated the ``Counter`` from the bar's ``Count``, the "
 "``Number`` node's font is off. Select the ``Number`` node again, head to the "
@@ -7886,15 +7868,14 @@ msgid ""
 "the ``Extra Spacing`` section, change the ``Bottom`` value to ``0`` to reset "
 "the font's baseline. Our counter now works as expected."
 msgstr ""
-"Parce que nous avons dupliqué le ``Counter`` du ``Count`` de la barre, la "
+"Parce que nous avons dupliqué le ``Counter`` de la barre ``Count``, la "
 "police du noeud ``Number`` est désactivée. Sélectionnez à nouveau le noeud "
-"``Number```, dirigez-vous vers la propriété ``Font`` et cliquez dessus pour "
+"``Number``, dirigez-vous vers la propriété ``Font`` et cliquez dessus pour "
 "accéder à la ressource ``DynamicFont``. Dans la section ``Extra Spacing``, "
 "changez la valeur ``Bottom`` à ``0`` pour réinitialiser la ligne de base de "
 "la police. Notre compteur fonctionne maintenant comme prévu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:317
-#, fuzzy
 msgid ""
 "While we are at it, let's make it so the ``Counters`` snap to the right edge "
 "of the viewport. To achieve this we will set the ``Bars`` container to "
@@ -7903,11 +7884,11 @@ msgid ""
 "check the ``Expand`` value. The ``Bars`` node should resize and push the "
 "counter to the rightmost of the screen."
 msgstr ""
-"Pendant que nous y sommes, faisons en sorte que les \"Counters\" "
-"s'enclenchent sur le bord droit de la fenêtre. Pour ce faire, nous allons "
-"régler le conteneur ``Bars`` pour qu'il se dilate et prenne tout l'espace "
-"horizontal. Sélectionnez le nœud \"Bars \" et faites défiler vers le bas "
-"jusqu'à la catégorie \" Size Flags \". Dans la catégorie ``Horizontal``, "
+"Pendant que nous y sommes, faisons en sorte que les ``Counters`` "
+"s'enclenchent sur le bord droit de la fenêtre du viewport. Pour ce faire, "
+"nous allons régler le conteneur ``Bars`` pour qu'il s'étende et prenne tout "
+"l'espace horizontal. Sélectionnez le nœud ``Bars`` et faites défiler vers le "
+"bas jusqu'à la catégorie ``Size Flags``. Dans la catégorie ``Horizontal``, "
 "cochez la valeur ``Expand``. Le nœud ``Bars`` devrait se redimensionner et "
 "pousser le compteur à l'extrême droite de l'écran."
 
@@ -7974,7 +7955,6 @@ msgstr ""
 "ou \" Fusionner à partir de la scène \"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:355
-#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -7986,24 +7966,22 @@ msgid ""
 msgstr ""
 "Ensuite, sélectionnez le nœud ``Counter`` et faites de même. Clic droit, "
 "``Save Branch as Scene``, et l'enregistrer en tant que ``Counter.tscn``. Une "
-"nouvelle icône de modification de scène apparaît à droite des nœuds dans "
+"nouvelle icône d'édition de scène apparaît à droite des nœuds dans "
 "l'arborescence des scènes. Cliquez sur celui à côté de ``Bar`` pour ouvrir "
 "la scène correspondante. Redimensionner le nœud ``Bar`` pour que sa boîte de "
 "délimitation s'adapte à son contenu. Comme nous avons nommé et placé les "
 "nœuds Control, nous sommes prêts à hériter de ce modèle et à créer la barre "
-"de vie. C'est la même chose pour \"Counter\"."
+"de vie. C'est la même chose pour ``Counter``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:365
 msgid "With no extra changes, our Bar is ready to use"
 msgstr "Sans aucun autre changement, votre barre est prête à être utilisé"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:368
-#, fuzzy
 msgid "Use Scene Inheritance to create the remaining elements"
-msgstr "Utiliser l'héritage de scène pour créer les éléments restants."
+msgstr "Utiliser l'héritage de scène pour créer les éléments restants"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
-#, fuzzy
 msgid ""
 "We need two bars that work the same way: they should feature a label on the "
 "left, with some value, and a horizontal gauge on the right. The only "
@@ -8019,17 +7997,15 @@ msgstr ""
 "les barres du jeu : des **scènes héritées**."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:378
-#, fuzzy
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
 msgstr ""
-"Les scènes héritées nous aident à garder la scène de l'interface graphique "
-"propre. En fin de compte, nous n'aurons que des conteneurs et un nœud pour "
-"chaque composant de l'interface utilisateur."
+"Les scènes héritées nous aident à garder la scène de l'interface "
+"graphique(GUI) propre. En fin de compte, nous n'aurons que des conteneurs et "
+"un nœud pour chaque composant de l'interface utilisateur(UI)."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:381
-#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -8044,10 +8020,11 @@ msgstr ""
 "la scène mère, toutes les scènes héritées sont mises à jour pour refléter "
 "les changements. Si vous changez une valeur dans la scène héritée, elle "
 "remplacera toujours la propriété du parent. C'est utile pour les interfaces "
-"utilisateur car elles nécessitent souvent des variations des mêmes éléments. "
-"En général, dans la conception de l'interface utilisateur, les boutons, les "
-"panneaux, etc. partagent un style de base et des interactions communes. Nous "
-"ne voulons pas le copier manuellement dans toutes les variations."
+"utilisateur(UI) car elles nécessitent souvent des variations des mêmes "
+"éléments. En général, dans la conception de l'interface utilisateur(UI), les "
+"boutons, les panneaux, etc. partagent un style de base et des interactions "
+"communes. Nous ne voulons pas le copier manuellement dans toutes les "
+"variations."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:390
 msgid ""
@@ -8059,7 +8036,6 @@ msgstr ""
 "défaut de la scène parente."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
-#, fuzzy
 msgid ""
 "Think of scene inheritance like the node tree, or the ``extends`` keyword in "
 "GDScript. An inherited scene does everything like its parent, but you can "
@@ -8068,16 +8044,14 @@ msgid ""
 msgstr ""
 "Pensez à l'héritage de scène comme l'arbre des nœuds, ou le mot clé "
 "``extends`` dans GDScript. Une scène héritée fait tout comme son parent, "
-"mais vous pouvez remplacer les propriétés, les ressources et ajouter des "
+"mais vous pouvez réécrire les propriétés, les ressources et ajouter des "
 "nœuds et des scripts supplémentaires pour étendre ses fonctionnalités."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:401
-#, fuzzy
 msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr "Hériter de la scène Bar pour construire la barre de vie"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:403
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
@@ -8085,10 +8059,10 @@ msgid ""
 "+S`` to save the new inherited scene and name it ``LifeBar``."
 msgstr ""
 "Allez dans ``Scene -> New Inherited Scene`` pour créer un nouveau type de "
-"barre.  Sélectionnez la scène Bar et ouvrez-la. Vous devriez voir un nouvel "
-"onglet[unsaved], c'est comme votre ``Bar``, mais avec tous les nœuds excepté "
-"la racine qui est en gris. Appuyez sur ``Meta+S`` pour sauvegarder la "
-"nouvelle scène héritée et nommez-la ``LifeBar``."
+"``Bar``.  Sélectionnez la scène Bar et ouvrez-la. Vous devriez voir un "
+"nouvel onglet[unsaved], c'est comme votre ``Bar``, mais avec tous les nœuds "
+"excepté la racine qui est en gris. Appuyez sur ``Meta+S`` pour sauvegarder "
+"la nouvelle scène héritée et nommez-la ``LifeBar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:411
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
@@ -8158,20 +8132,19 @@ msgstr ""
 "les textures sur la jauge."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:442
-#, fuzzy
 msgid ""
 "Head to the FileSystem dock on the left, select the ``Title`` node in the "
 "Scene tree and drag and drop the ``label_EP.png`` file onto the texture "
 "slot. Select the ``Number`` node and change the ``Text`` property to a "
 "different value like ``14``."
 msgstr ""
-"Dirigez-vous vers le dock FileSystem sur la gauche, sélectionnez le nœud "
-"``Title`` dans l'arbre de scène et glissez-déposez le fichier ``label_EP."
-"png`` sur l'emplacement de texture. Sélectionnez le noeud ``Number``` et "
-"changez la propriété ``Text`` à une valeur différente, comme ``14```."
+"Dirigez-vous vers le dock Système de fichiers sur la gauche, sélectionnez le "
+"nœud ``Title`` dans l'arbre de scène et glissez-déposez le fichier "
+"``label_EP.png`` sur l'emplacement de texture. Sélectionnez le noeud "
+"``Number`` et changez la propriété ``Text`` à une valeur différente, comme "
+"``14```."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
-#, fuzzy
 msgid ""
 "You'll notice the EP texture is smaller than the HP one. We should update "
 "the ``Number``'s font size to better fit it. A font is a resource. All the "
@@ -8189,14 +8162,12 @@ msgstr ""
 "la taille du texte a augmenté."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:456
-#, fuzzy
 msgid "If we change the font resource, all the nodes that use it are affected"
 msgstr ""
 "Si nous changeons la ressource de police, tous les nœuds qui l'utilisent "
-"seront affectés."
+"seront affectés"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:459
-#, fuzzy
 msgid ""
 "To change the font size on this node only, we must create a copy of the font "
 "resource. Select the ``Number`` node again and click on the wrench and "
@@ -8204,22 +8175,20 @@ msgid ""
 "select the ``Make Sub-Resources Unique`` option. Godot will find all the "
 "resources this node uses and create unique copies for us."
 msgstr ""
-"Pour modifier la taille de police sur ce nœud uniquement, nous devons créer "
+"Pour changer la taille de police sur ce nœud uniquement, nous devons créer "
 "une copie de la ressource de police. Sélectionnez à nouveau le nœud "
 "``Number`` et cliquez sur l'icône de la clé à molette et du tournevis en "
 "haut à droite de l'inspecteur. Dans le menu déroulant, sélectionnez l'option "
-"\" Make Sub-Resources Unique\". Godot trouvera toutes les ressources que ce "
-"nœud utilise et créera des copies uniques pour nous."
+"``Rendre les sous-ressources uniques``. Godot trouvera toutes les ressources "
+"que ce nœud utilise et créera des copies uniques pour nous."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:467
-#, fuzzy
 msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
 "Utilisez cette option pour créer des copies uniques des ressources pour un "
-"nœud."
+"nœud"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:471
-#, fuzzy
 msgid ""
 "When you duplicate a node from the Scene tree, with ``Meta+D``, it shares "
 "its resources with the original node. You need to use ``Make Sub-Resources "
@@ -8227,12 +8196,11 @@ msgid ""
 "node."
 msgstr ""
 "Lorsque vous dupliquez un nœud de l'arbre de scène, avec ``Meta+D``, il "
-"partage ses ressources avec le nœud d'origine. Vous devez utiliser ``Make "
-"Sub-Resources Unique`` avant de pouvoir modifier les ressources sans "
+"partage ses ressources avec le nœud d'origine. Vous devez utiliser ``Rendre "
+"les sous-ressources uniques`` avant de pouvoir ajuster les ressources sans "
 "affecter le nœud source."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
-#, fuzzy
 msgid ""
 "Scroll down to the ``Custom Font`` section and open ``Font``. Lower the "
 "``Size`` to a smaller value like ``20`` or ``22``. You may also need to "
@@ -10473,16 +10441,22 @@ msgstr ""
 "actives une fois entrée dans *l'arbre de scène*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
+#, fuzzy
 msgid ""
 "This concept deserves going into a little more detail. In fact, the scene "
 "system is not even a core component of Godot as it is possible to skip it "
 "and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
+"Ce concept nécessite de se pencher dessus dans le détail. En fait, le "
+"système de gestion de scènes ne fait même pas partie des composants de base "
+"de Godot car il est possible de ne pas s'en occuper et d'écrire un script "
+"(éventuellement du code C++) qui discute directement avec les serveurs, mais "
+"fabriquer un jeu de cette façon demandrait beaucoup de travail."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
-msgstr ""
+msgstr "Boucle événementielle"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:24
 msgid ""
@@ -10491,6 +10465,10 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"La façon dont Godot fonctionne en interne est la suivante : Au départ, la "
+"seule instance qui fonctionne est la classe  :ref:`OS <class_OS>`, ensuite, "
+"tous les pilotes, serveurs, langages de script, système de gestion de "
+"scènes ... sont chargés."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:29
 msgid ""
@@ -10499,6 +10477,11 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"Quand l'initialisation est terminée, une :ref:`MainLoop "
+"<class_MainLoop>`doit être fournie à :ref:`OS <class_OS>`  pour fonctionner. "
+"Jusqu'à ce point, tout ceci est du fonctionnement interne (vous pouvez "
+"consulter le fichier main/main.cpp dans le code source si jamais vous ètes "
+"intéressé de voir comment cela fonctionne en interne)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -10519,6 +10502,9 @@ msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
 msgstr ""
+"Le système de gestion de scènes et le \"game engine\" proprement dit tandis "
+"que la :ref:`OS <class_OS>` et les serveurs font partis de l'API de bas "
+"niveau."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
 msgid ""
@@ -10709,11 +10695,11 @@ msgstr ""
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
-msgstr ""
+msgstr "Quand une scène (ou une partie de celle-ci)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:141
 msgid "Changing current scene"
-msgstr ""
+msgstr "Changement de la scène courante"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
 msgid ""
@@ -10721,6 +10707,9 @@ msgid ""
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_change_scene>` function:"
 msgstr ""
+"Après qu'une scène soit chargée, il est souvent souhaitable de la remplacer "
+"par une autre. La façon la plus simple de le faire est d'utiliser la "
+"fonction :ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` :"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 msgid ""
@@ -10731,26 +10720,39 @@ msgid ""
 "be done manually using autoloads (see next chapter!) and :ref:"
 "`doc_background_loading`."
 msgstr ""
+"c'est un moyen rapide de passer d'une scène à une autre mais qui a "
+"l'inconvénient suivant : le jeu va devoir attendre jusqu'à ce que la "
+"nouvelle scène soit chargée et fonctionne. A un moment donné, dans votre "
+"jeu, vous souhaiterez peut-être créer des écrans de chargement avec des "
+"barres de progression ou d'autres façons d'indiquer des chargements en tâche "
+"de fond. Cela doit être fait manuellement en utilisant des \"autoloads"
+"\" (voir le chapitre suivant !) et :ref:`doc_background_loading` ."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr ""
+msgstr "Singletons (Auto-chargement)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
 msgid ""
 "Scene singletons are useful, catering to a common use case where you need to "
 "store persistent information between scenes."
 msgstr ""
+"Les Scènes singletons sont utiles, ce qui est un cas fréquent de leur "
+"utilisation, quand vous avez besoin d'enregistrer des informations qui "
+"doivent rester disponibles pour d'autres scènes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:12
 msgid "Albeit powerful, the scene system by itself has a few drawbacks:"
 msgstr ""
+"Bien que puissant, le système de gestion de scènes a quelques inconvénients :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:14
 msgid ""
 "There is no common place to store information (e.g. a player's items etc.) "
 "required by more than one scene."
 msgstr ""
+"Il n'y a pas d'endroit commun pour stocker des informations (comme par "
+"exemple les objets d'un joueur etc.) requises par plus d'une scène."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -10758,6 +10760,10 @@ msgid ""
 "children to store information common to these child scenes, it is no longer "
 "possible to run these scenes by themselves and expect them to work correctly."
 msgstr ""
+"Bien qu'il soit possible pour une scène qui charge et décharge d'autres "
+"scènes en tant qu'enfants d'enregistrer des informations communes à ces "
+"scènes enfants, il n'est plus possible alors d'utiliser ces scènes isolément "
+"en s'attendant à ce qu'elles fonctionnent correctement."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:20
 msgid ""
@@ -10765,34 +10771,49 @@ msgid ""
 "information can be loaded by scenes that require it, continuously saving and "
 "loading this data when changing scenes is cumbersome and may be slow."
 msgstr ""
+"Bien que des informations puissent être enregistrées sur le disque dans  "
+"\\`user://\\`  et qu'elles puissent être chargées par les scènes qui en ont "
+"besoin, sauvegarder et charger ces données lors des changements de scènes "
+"peut être lourd et éventuellement lent."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:24
 msgid "However there is still a need in Godot to create parts of a scene that:"
 msgstr ""
+"Cependant, il est encore nécessaire dans Godot de créer des parties de "
+"scènes qui :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:26
 msgid "Are always loaded, no matter which scene is opened from the editor"
 msgstr ""
+"Sont toujours chargées, quelle que soit la scène qui est ouverte dans "
+"l'éditeur"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:27
 msgid ""
 "Can store global variables, such as player information, items, money etc. "
 "and share information between scenes"
 msgstr ""
+"Puisse enregistrer des variables globales, telles que des informations sur "
+"les joueurs, leurs objets, leur argent etc et permettre le partage "
+"d'information entre les scènes"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Can handle switching scenes and transitions"
-msgstr ""
+msgstr "Peut se charger des changements de scènes et des transitions"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:30
 msgid ""
 "Acts like a singleton, since GDScript does not support global variables by "
 "design."
 msgstr ""
+"Agit comme un singleton, puisque GDScript ne supporte pas les variables "
+"globales du fait de sa conception."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Auto-loading nodes and scripts caters to this need."
 msgstr ""
+"Des nœuds et des scènes se chargeant automatiquement (Auto-loading nodes and "
+"scripts) répondent à ce besoin."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:35
 msgid "AutoLoad"
@@ -10803,6 +10824,8 @@ msgid ""
 "You can use AutoLoad to load a scene, or a script that inherits from Node (a "
 "node will be created and the script will be set to it)."
 msgstr ""
+"Vous pouvez utiliser Autoload pour charger une scène ou un script qui hérite "
+"de Node (un noeud sera créer et le script sera lié à lui)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:40
 msgid ""
@@ -10811,16 +10834,23 @@ msgid ""
 "which is used as the name of the node, and the node is always added to the "
 "root viewport before any other scenes are loaded."
 msgstr ""
+"Pour charger automatiquement une scène ou un script, sélectionnez Project > "
+"Project Settings à partir du menu et passez à l'onglet AutoLoad. Chaque "
+"entrée de la liste requiert un nom qui est utilisé comme le nom du nœud et "
+"le noeud est toujours ajouté à la racine du viewport avant qu'une autre "
+"scène ne soit chargée."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:47
 msgid ""
 "This means that any node can access a singleton named \"playervariables\" "
 "with:"
 msgstr ""
+"Cela veut dire que n'importe quel nœud peut accéder à un singleton appelé "
+"\"playervariables\"  avec :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid "Or even simpler using the name directly:"
-msgstr ""
+msgstr "ou même simplement en utilisant le nom directement :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid "Custom scene switcher"
@@ -10834,12 +10864,19 @@ msgid ""
 "`doc_scene_tree`), so this method is for more complex behavior when "
 "switching between scenes."
 msgstr ""
+"Ce court tutoriel vous expliquera comment faire un sélecteur de scènes avec "
+"l'auto-chargement. Pour une sélection simple de scène, la méthode :ref:"
+"`SceneTree.change_scene() class_SceneTree_change_scene>` suffit (décrite "
+"dans:ref:`doc_scene_tree`), donc cette méthode convient pour des "
+"comportements plus complexes lorsqu'il s'agit de jongler entre les scènes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:81
 msgid ""
 "First download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>`, then open it."
 msgstr ""
+"D'abord télécharger le template à partir d'ici :  :download:`autoload.zip "
+"<files/autoload.zip>`, ensuite, l\"ouvrir."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:84
 msgid ""
@@ -10871,10 +10908,16 @@ msgid ""
 "the AutoLoad tab and add a new entry with name \"global\" that points to "
 "this file:"
 msgstr ""
+"Le script devrait s'ouvrir dans l'éditeur de script. La prochaine étape est "
+"de l'ajouter dans la liste d'Auto-Chargement. Sélectionnez Project -> "
+"Propriétés du projet, cliquez sur l'onglet Auto-Chargement et ajoutez une "
+"nouvelle entrée avec, pour nom, \"global\", qui pointe vers ce fichier :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:109
 msgid "Now, whenever you run any of your scenes, the script is always loaded."
 msgstr ""
+"Maintenant, chaque fois que vous lancez n'importe laquelle de vos scènes, le "
+"script sera toujours chargé."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:111
 msgid ""
@@ -10888,12 +10931,16 @@ msgstr ""
 msgid ""
 "Note: Make sure that global.gd extends Node, otherwise it won't be loaded!"
 msgstr ""
+"Note : Assurez-vous que global.gd hérite de Node, sinon il ne sera pas "
+"chargé !"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:146
 msgid ""
 "Next up is the function for changing the scene. This function frees the "
 "current scene and replaces it with the requested one."
 msgstr ""
+"La prochaine étape est la fonction de changement de scène. Cette fonction "
+"libère la scène en cours et la remplace par celle demandée."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:216
 msgid ""
@@ -10922,12 +10969,16 @@ msgid ""
 "Now if you run the project, you can switch between both scenes by pressing "
 "the button!"
 msgstr ""
+"Maintenant, si vous lancez le projet, vous pouvez basculer entre les deux "
+"scènes en appuyant sur le bouton !"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:268
 msgid ""
 "To load scenes with a progress bar, check out the next tutorial, :ref:"
 "`doc_background_loading`"
 msgstr ""
+"Pour charger des scènes avec une barre de progression, consultez le tutoriel "
+"suivant, :ref:`doc_background_loading`"
 
 #: ../../docs/getting_started/editor/index.rst:2
 msgid "Editor manual"
@@ -11042,7 +11093,7 @@ msgstr "**VR :** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "Scene system"
-msgstr ""
+msgstr "Système de scène"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "Component/Scene (GameObject > Component)"
@@ -14999,7 +15050,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr "Bourrage"
+msgstr "Remplissage"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -34583,7 +34634,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:894
 msgid "Now let's look at ``body_exited_vision``."
-msgstr ""
+msgstr "Regardons maintenant ``body_exited_vision``."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:896
 msgid ""
@@ -61272,6 +61323,13 @@ msgid ""
 "developers to then help make the diagnosis of the issue you met, so that the "
 "actual cause of the bug can be identified and addressed."
 msgstr ""
+"Lorsque vous signalez un bug, vous devez garder à l'esprit que le processus "
+"est similaire à un rendez-vous avec votre médecin. Vous avez remarqué des "
+"*symptômes* qui vous font penser que quelque chose ne va pas (le moteur "
+"tombe en panne, certaines fonctionnalités ne fonctionnent pas comme prévu, "
+"etc. C'est le rôle de l'équipe de triage des bogues et des développeurs "
+"d'aider à faire le diagnostic du problème que vous avez rencontré, afin que "
+"la cause réelle du bogue puisse être identifiée et traitée."
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:139
 msgid ""
@@ -63560,19 +63618,20 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:245
 msgid "Some *italic* text."
-msgstr ""
+msgstr "Du texte *italique*."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "[code] [/code]"
-msgstr ""
+msgstr "[code] [/code]"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#, fuzzy
 msgid "Monospace"
-msgstr ""
+msgstr "Balisage pour code"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some [code]monospace[/code] text."
-msgstr ""
+msgstr "Du texte [code]monospace[/code]."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
 msgid "Some ``monospace`` text."
@@ -63616,6 +63675,10 @@ msgid ""
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
 "website <https://godotengine.org/qa/>`__ and on IRC (freenode, #godotengine)."
 msgstr ""
+"Vous pouvez toujours regarder l'implémentation des méthodes dans le code "
+"source de Godot sur GitHub. Ainsi, si vous avez des doutes, n'hésitez pas à "
+"poser des questions sur le site web `Q&A site <https://godotengine.org/qa/"
+">`__ et sur IRC (freenode, #godotengine)."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:280
 msgid "Localization"

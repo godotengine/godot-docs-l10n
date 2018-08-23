@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # <grenoscar@gmail.com>, 2018.
+# Daniel K <danielkimblad@hotmail.com>, 2018.
 # Tim Stahel <timstahel@gmail.com>, 2018.
 # Tobias Björkdahl <tobbe_chevy@hotmail.com>, 2018.
 #
@@ -11,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-26 10:06+0200\n"
-"PO-Revision-Date: 2018-06-12 18:44+0000\n"
-"Last-Translator: Tobias Björkdahl <tobbe_chevy@hotmail.com>\n"
+"PO-Revision-Date: 2018-08-06 19:42+0000\n"
+"Last-Translator: Daniel K <danielkimblad@hotmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/sv/>\n"
 "Language: sv\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.1.1\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -83,42 +84,49 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"Skicka in issues och pull requests till vår `GitHub repository <https://"
+"github.com/godotengine/godot-docs/issues>` _, hjälp oss `översätta "
+"dokumentationen <https://hosted.weblate.org/engage/godot-engine/>`_ till "
+"ditt språk, eller diskutera med oss på ``#documentation``-kanalen på "
+"`Discord <https://discord.gg/zH7NUgz>`_, eller på kanalen ``#godotengine-"
+"doc`` på `irc.freenode.net <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "Dokumentationen på sidan är indelad i följande delar:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "Allmänt"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "Komma igång"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "Guider"
 
 #: ../../docs/index.rst:89
 msgid "Development"
-msgstr ""
+msgstr "Utveckling"
 
 #: ../../docs/index.rst:98
 msgid "Creating Content"
-msgstr ""
+msgstr "Skapa innehåll"
 
 #: ../../docs/index.rst:106 ../../docs/community/index.rst:2
 msgid "Community"
-msgstr ""
+msgstr "Community"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "Om"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -181,6 +189,11 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
+"Välkommen till  den officiella dokumentationen för Godot Engine, den fria "
+"och öppna gemenskapsdrivna 2D- och 3D-spelmotorn! Bakom denna komplicerade "
+"beskrivning hittar du ett kraftfullt men ändå användarvänligt verktyg för "
+"att skapa alla typer av spel, för många platformar och utan  några "
+"begränsningar."
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -188,10 +201,13 @@ msgid ""
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
+"Den här sidan är ämnad att ge en översikt av spelmotorn och innehållet i den "
+"här manualen, så att du vet var du ska börja om du är nybörjare eller letar "
+"efter en specifik funktion."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
-msgstr ""
+msgstr "Om Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -199,6 +215,9 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
+"En spelmotor är ett komplext verktyg och det är därför svårt att presentera "
+"Godot med bara några få ord. Här är vår PR-presentation som du gärna får "
+"använda om du behöver en sammanfattning som beskriver Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -209,6 +228,13 @@ msgid ""
 "platforms, including the major desktop platforms (Linux, macOS, Windows) as "
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
+"Godot Engine är fullspäckad med funktioner, fungerar på många platformar "
+"båda för 2D och 3D i ett enhetligt gränssnitt. Den tillhandahåller en "
+"omfattande samling av vanliga verktyg så att användarna kan fokusera på att "
+"skapa spel utan att behöva återuppfinna hjulet. Spel kan exporteras med ett "
+"enda klick till en massa platformar, inklusive de vanliga (Linux, MacOS, "
+"Windows) såväl som till mobila plattformar (Android, iOS) och även "
+"webbaserade (HTML5) plattformar."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -219,6 +245,12 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
+"Godot är helt fritt och med öppen källkod under den väldigt liberala MIT-"
+"licensen. Helt utan krav eller royalties. Användarnas spel är deras egna, "
+"ända ner till sista raden av spelmotor-kod. Godot:s utveckling är helt "
+"fristående och gemenskapsdriven, vilket låter användarna hjälpa till att "
+"forma spelmotorn att passa deras förväntningar. Den stöttas av `Software "
+"Freedom Conservancy <https://sfconservancy.org>`_ not-for-profit."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -226,10 +258,12 @@ msgid ""
 "documentation further, especially the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial."
 msgstr ""
+"För en djupdykning i spelmotorn uppmuntrar vi dig att läsa resten av "
+"manualen, speciellt :ref:`Steg för steg <toc-learn-step_by_step>` guiden."
 
 #: ../../docs/about/introduction.rst:46
 msgid "About the documentation"
-msgstr ""
+msgstr "Om manualen"
 
 #: ../../docs/about/introduction.rst:48
 msgid ""
@@ -240,6 +274,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
+"Den här manualen skrivs kontinuerligt, rättas, ändras och uppdateras av "
+"medlemmar av Godot-spelmotorns gemenskap. Den ändras via textfiler i markup "
+"språket `reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ "
+"och komplieras sedan till en statisk hemsida/offline dokument med hjälp av "
+"det öppna källkodsprojektet `Sphinx <http://www.sphinx-doc.org>`_ och  "
+"`ReadTheDocs <https://readthedocs.org/>`_ verktygen."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -249,6 +289,11 @@ msgid ""
 "on `Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/>`_."
 msgstr ""
+"Du kan bidra till Godot:s manual genom att öppna issue tickets eller skicka "
+"in uppdateringar via pull requests på GitHub `source repository <https://"
+"github.com/godotengine/godot-docs>`_, eller översätta den till ditt språk på "
+"`Hosted Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs/"
+">`_."
 
 #: ../../docs/about/introduction.rst:61
 msgid ""
@@ -257,10 +302,14 @@ msgid ""
 "attribution to \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
 "\"."
 msgstr ""
+"Allt innehåll publiceras under den öppna Creative Commons Attribution 3.0 "
+"(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licensen, med "
+"tillägnan till  \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
+"\"."
 
 #: ../../docs/about/introduction.rst:66
 msgid "Organisation of the documentation"
-msgstr ""
+msgstr "Manualens organisation"
 
 #: ../../docs/about/introduction.rst:68
 msgid ""
@@ -268,6 +317,9 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
+"Denna manual är organiserad i fem delar med en imponerande obalanserad "
+"fördelning av innehåll – men sättet som den är indelad borde vara lätt att "
+"förstå:"
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -275,6 +327,9 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
+"Avdelningen :ref:`sec-general` innehåller den här introduktionen och även "
+"information om spelmotorn, dess historia, licensiering, skapare, etc. Den "
+"innehåller även :ref:`doc_faq`."
 
 #: ../../docs/about/introduction.rst:75
 msgid ""
@@ -283,12 +338,20 @@ msgid ""
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
+"Avdelningen :ref:`sec-learn` är kanske den viktigaste delen av den här "
+"manualen, eftersom den innewhåller all nödvändig informationom hur man "
+"använder spelmotorn för att göra spel. Den börjar med :ref:`Steg för steg "
+"<toc-learn-step_by_step>` guiden vilket är bästa stället att börja för alla "
+"nybörjare."
 
 #: ../../docs/about/introduction.rst:80
 msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
+"Avdelningen :ref:`sec-tutorials` , å andra sidan, kan besökas efter behov, "
+"utan någon speciell ordning. Den innehåller många funktions-specifika guider "
+"och tips."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -296,6 +359,9 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
+"Avdelningen :ref:`sec-devel` är avsedd för avancerade användare och de som "
+"bidrar till spelmotorns utveckling med information om hur man kompilerar "
+"spelmotorn samt utvecklar C++ moduler och plugins."
 
 #: ../../docs/about/introduction.rst:85
 msgid ""
@@ -305,6 +371,11 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
+"Avdelningen :ref:`sec-community` ger information om hur man bidrar till "
+"utvecklingen av spelmotorn och dess gemenskap. Bl.a. hur man rapporterar "
+"buggar, hjälper till med manualen etc. Den hänvisar även till olika "
+"gemenskaps-kanaler som IRC och Discord och innehåller en lista med "
+"rekommenderade tredjeparts-guider som inte är inkluderade i denna manual."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -314,6 +385,11 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
+"Slutligen så innehåller avdelningen :ref:`sec-class-ref` dokumentationen för "
+"Godot API, som också är tillgänglig från inuti spelmotorns skript editor. "
+"Den genereras automatiskt från en fil i det primära källkodsbiblioteket. "
+"Därför bör man inte ändra de genererade dokumentations-filerna.  Se vidare :"
+"ref:`doc_updating_the_class_reference` för mer information."
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -321,55 +397,66 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"Utöver denna manual så kanske du även vill ta del av olika `Demoprojekt "
+"<https://github.com/godotengine/godot-demo-projects>`_ som skapats."
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
+msgstr "Ha så roligt med läsningen och spelutvecklingen med spelmotorn Godot!"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "Vanliga frågor"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
 msgstr ""
+"Vad kan man göra med Godot? Hur mycket kostar den? Var finns licensvillkoren?"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
 "Godot is Free/Libre Open Source Software available under the `OSI-approved "
 "<https://opensource.org/licenses/MIT>`_ MIT license."
 msgstr ""
+"Godot är fritt / öppen källkod tillgänglig att använda under `OSI-godkända "
+"<https://opensource.org/licenses/MIT>`_ MIT licensen."
 
 #: ../../docs/about/faq.rst:11
 msgid ""
 "This means it is free as in \"free speech\" as well as in \"free beer\"."
-msgstr ""
+msgstr "Detta betyder att den är fri att använda för att tjäna pengar med."
 
 #: ../../docs/about/faq.rst:13
 msgid "In short:"
-msgstr ""
+msgstr "Kort sagt:"
 
 #: ../../docs/about/faq.rst:15
 msgid "There are no usage restrictions on Godot"
-msgstr ""
+msgstr "Det finns inga begränsningar i hur man kan använda Godot"
 
 #: ../../docs/about/faq.rst:16
 msgid ""
 "This means you can use it for any game or application, commercially or non-"
 "commercially, in any industry"
 msgstr ""
+"Detta betyder att du kan använda den för att skapa kommersiella eller icke-"
+"kommersiella spel och program för alla områden"
 
 #: ../../docs/about/faq.rst:17
 msgid "You can modify, (re)distribute and remix Godot to your heart's content"
 msgstr ""
+"Du kan använda, dela med dig av och ändra på Godot så mycket som du känner "
+"för"
 
 #: ../../docs/about/faq.rst:19
 msgid ""
 "For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
 "your lawyer of choice."
 msgstr ""
+"För mer information, läs `här <https://tldrlegal.com/license/mit-license>`_ "
+"eller tillfråga en jurist som du väljer."
 
 #: ../../docs/about/faq.rst:21
 msgid ""
@@ -6126,7 +6213,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
-msgstr ""
+msgstr "Ladda ner och utforska startprojektet"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:55
 msgid ""
@@ -6134,6 +6221,10 @@ msgid ""
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
+"Ladda ner projektet: :download:`ui_code_life_bar.zip <files/ui_code_life_bar."
+"zip>`. Det innehåller alla nödvändiga filer och skript som du behöver för "
+"att komma igång. Packa upp zip-arkivet så får du två mappar: `start` och "
+"`end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -6144,6 +6235,12 @@ msgid ""
 "basic combat mechanics already work. But as the character isn't connected to "
 "the life bar the ``GUI`` doesn't do anything."
 msgstr ""
+"Läs in projektet ``start`` i Godot. I rutan ``FileSystem`` dubbelklicka på "
+"LevelMockup.tscn för att öppna den. Det är en mockup för ett RPG-spel där "
+"två karaktärer står ansikte mot ansikte. Den rosa fienden attackerar och "
+"skadar den gröna fyrkanten med regelbundet intervall tills den dör. Testa "
+"gärna spelet, grunden finns redan där men eftersom karaktärerna inte "
+"kopplats till hälsomätarna så visar GUI:t ingen förändring."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:68
 msgid ""
@@ -6154,41 +6251,58 @@ msgid ""
 "prototype and test the gameplay, chances are it won't work well and you'll "
 "have to re-create it from scratch."
 msgstr ""
+"Detta är typiskt för hur man gör spel: man skapar grundfunktionerna för "
+"spelet först, hantera spelarens död och först därefter så skapar man "
+"gränssnittet. Man gör det eftersom gränssnittet lyssnar efter ändringar i "
+"spelet och därför inte kan fungera om inte grundläggande spelfunktionalitet "
+"är färdig. Om du skapar ditt gränssnitt innan du utvecklar och testar ditt "
+"spel så är risken stor att du måste göra om det från grunden när spelet till "
+"slut funkar som du vill."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
-msgstr ""
+msgstr "Scenen innehåller en bakgrunds-sprite, ett GUI och två karaktärer."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
 msgid "The scene tree, with the GUI scene set to display its children"
-msgstr ""
+msgstr "Scen-trädet med GUI-scenen som visar dess underliggande noder"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
 msgid ""
 "The GUI scene encapsulates all of the Game User Interface. It comes with a "
 "barebones script where we get the path to nodes that exist inside the scene:"
 msgstr ""
+"GUI-scenen samlar alla delar av gränssnittet. Den kommer med ett "
+"grundläggande skript där vi får sökvägen till noder som finns inuti scenen:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
+"``number_label`` visar hur mycket liv som finns som ett tal. Det är en "
+"``Label`` nod"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
 msgstr ""
+"``bar`` är den grafiska visningen av hur mycket liv som finns. Det är en "
+"``TextureProgress`` nod"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
 msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
 msgstr ""
+"``tween`` är en komponent-nod som kan animera och kontrollera alla värden "
+"eller metoder från andra noder"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
 msgid ""
 "The project uses a simple organisation that works for game jams and tiny "
 "games."
 msgstr ""
+"Projektet använder en enkel organisation som fungerar bra för game jams och "
+"småspel."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""

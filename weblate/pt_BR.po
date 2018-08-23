@@ -17,16 +17,20 @@
 # Dimenicius <vinicius.costa.92@gmail.com>, 2018.
 # Douglas Fiedler <dognew@gmail.com>, 2018.
 # Eduardo Abreu <eduo.abreu@gmail.com>, 2018.
+# Emerson Guerra <guerraemerson@gmail.com>, 2018.
+# Fathos Law <fathos23@gmail.com>, 2018.
 # Filipe Dias <filipediascontato@gmail.com>, 2018.
 # Flávio Henrique <flavio.pessini@outlook.com>, 2018.
 # George Marques <georgemjesus@gmail.com>, 2018.
 # Gilberto Lopes <gilbertolopes@ufrj.br>, 2018.
 # Guilherme Felipe C G Silva <guilhermefelipecgs@gmail.com>, 2018.
+# Iago Barbosa da Silva <ErnestoGilgamesh@gmail.com>, 2018.
 # Jessé Silva <starclock@gmail.com>, 2018.
 # João Victor Lima <victordevtb@outlook.com>, 2018.
 # Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018.
 # Julio Yagami <juliohenrique31501234@hotmail.com>, 2018.
 # ieleny filgueira <ielenyfilgueira@hotmail.com>, 2018.
+# Klaus Dellano <klaus.dd.sa@gmail.com>, 2018.
 # Leandro <xupisco@gmail.com>, 2018.
 # Lucas Prado <lucade238oficial@gmail.com>, 2018.
 # Lucas Vitor <lucasvitorifg@gmail.com>, 2018.
@@ -37,6 +41,9 @@
 # Marcus Correia <marknokalt@live.com>, 2018.
 # Mauricio Luan Carneiro deSouza <newmailmlcs@gmail.com>, 2018.
 # Michael Alexsander Silva Dias <michaelalexsander@protonmail.com>, 2018.
+# miketangogamer <miketangogamer@gmail.com>, 2018.
+# Mosca Morta <ewersonffranco@gmail.com>, 2018.
+# Paulo Sergio Nogueira da Silva <paulozero357@gmail.com>, 2018.
 # Pedro Silva <pedrosgregorio9@gmail.com>, 2018.
 # Renato Lacerda <renato.ac.lacerda@gmail.com>, 2018.
 # Renne Sampaio <rennesampaio97@gmail.com>, 2018.
@@ -45,6 +52,7 @@
 # ShallZ <vzinbr@gmail.com>, 2018.
 # suxuf@2odem.com <suxuf@2odem.com>, 2018.
 # Thiago R. Silvestrini <thiagorossi.s@gmail.com>, 2018.
+# Tiago A. Reul <tiago@reul.space>, 2018.
 # Vito Chiarella <vitochiarella@gmail.com>, 2018.
 #
 msgid ""
@@ -52,8 +60,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-07-26 10:06+0200\n"
-"PO-Revision-Date: 2018-07-26 07:41+0000\n"
-"Last-Translator: Leandro <xupisco@gmail.com>\n"
+"PO-Revision-Date: 2018-08-21 20:42+0000\n"
+"Last-Translator: Rodolfo R Gomes <rodolforg@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -61,7 +69,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -154,9 +162,8 @@ msgid "Development"
 msgstr "Desenvolvimento"
 
 #: ../../docs/index.rst:98
-#, fuzzy
 msgid "Creating Content"
-msgstr "Criando nós"
+msgstr "Criando conteúdo"
 
 #: ../../docs/index.rst:106 ../../docs/community/index.rst:2
 msgid "Community"
@@ -4309,13 +4316,12 @@ msgstr ""
 "``add_child()`` (adicionar filho)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:769
-#, fuzzy
 msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
 "Agora clique em ``MobTimer`` na janela de cenas e vá para a janela de "
-"inspeção, troque para a visão de nó e clique em ``timeout()`` e conecte o "
+"inspeção, troque para a guia de nó então clique em ``timeout()`` e conecte o "
 "sinal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:772
@@ -5453,14 +5459,13 @@ msgstr ""
 "totalmente integradas à engine e ao editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
-#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
 "O GDscript permite que você escreva um código simples usando uma sintaxe "
-"parecida com o Python, mas ele detecta tipos e oferece a qualidade de "
+"parecida com o Python, porém ele detecta tipos e oferece a característica de "
 "preenchimento automático de uma linguagem estática. Também é otimizado para "
 "código de jogo com tipos embutidos como Vetores e Cores."
 
@@ -5499,16 +5504,14 @@ msgstr ""
 "usando o código do jogo. Veja `O editor Godot é um jogo Godot`_ abaixo."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
-#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
-"*Um plugin de editor de Máquina de Estado em Godot 2 por kubecz3k. Ele "
+"*Um plugin de editor de Máquina de Estados em Godot 2 por kubecz3k. Ele "
 "permite gerenciar estados e transições visualmente*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
-#, fuzzy
 msgid "Open source"
 msgstr "Código aberto"
 
@@ -5525,7 +5528,6 @@ msgstr ""
 "zero pelos colaboradores."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include NVIDIA PhysX, Google "
@@ -5575,7 +5577,6 @@ msgstr ""
 "usuários em primeiro lugar."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
-#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
 "project has over 600 contributors at the time of writing. Benevolent "
@@ -5626,7 +5627,6 @@ msgstr ""
 "programação baseada em nós e para o resto da interface.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
-#, fuzzy
 msgid ""
 "Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
@@ -5643,7 +5643,6 @@ msgid "Separate 2D and 3D engines"
 msgstr "Engine 2D e 3D separados"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
-#, fuzzy
 msgid ""
 "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "
@@ -7995,7 +7994,7 @@ msgstr ""
 "Para alterar o tamanho da fonte apenas neste nó, devemos criar uma cópia do "
 "recurso de fonte. Selecione o nó ``Number`` novamente e clique no ícone de "
 "chave inglesa e chave de fenda no canto superior direito do inspetor. No "
-"menu suspenso, selecione a opção ``Make Sub-Resources Unique``. O Godot "
+"menu suspenso, selecione a opção ``Tornar Únicos os Sub-recursos``. O Godot "
 "encontrará todos os recursos que este nó usa e criará cópias exclusivas para "
 "nós."
 
@@ -8797,7 +8796,6 @@ msgstr ""
 "Um ícone de emissor aparece próximo ao nó que emite o sinal no painel Cena"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
-#, fuzzy
 msgid ""
 "At the bottom of the window you will find the path to the node you selected. "
 "We're interested in the second row called \"Method in Node\". This is the "
@@ -9179,7 +9177,6 @@ msgstr ""
 "Ao arredondar animated\\_health, acertamos dois coelhos com uma só cajadada"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
-#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -9189,9 +9186,9 @@ msgid ""
 "damage, it happens in an instant."
 msgstr ""
 "Toda vez que o jogador recebe um hit, o `` GUI`` chama `` "
-"_on_Player_health_changed``, que por sua vez chama `` update_health``. Isto "
+"_on_Player_health_changed``, que por sua vez chama `` update_health``. Isso "
 "atualiza a animação e o `` number_label`` e `` bar`` seguem em `` "
-"_process``. A barra de vida animada que mostra a saúde a baixando "
+"_process``. A barra de vida animada que mostra a saúde diminuindo "
 "gradualmente é um truque. Faz a GUI parecer viva. Se o `` Player`` receber 3 "
 "de dano, isso acontece em um instante."
 
@@ -9200,7 +9197,6 @@ msgid "Fade the bar when the Player dies"
 msgstr "Clareia a barra quando o jogador morre"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
-#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -9213,7 +9209,6 @@ msgstr ""
 "`` Tween`` enquanto ele gerencia múltiplas animações em paralelo para nós."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
-#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
@@ -9384,7 +9379,6 @@ msgstr ""
 "los automaticamente."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
-#, fuzzy
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
@@ -9402,7 +9396,6 @@ msgstr ""
 "configure uma nova cena como esta:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
-#, fuzzy
 msgid ""
 "The nodes \"background\" and \"logo\" are of :ref:`TextureRect "
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
@@ -9431,13 +9424,12 @@ msgid "Your final scene should look something like this."
 msgstr "Sua cena final deve ser algo como isto."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
-#, fuzzy
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
 "Vá em frente e execute o projeto. Se você estiver satisfeito com os "
-"resultados, continue no próximo tutorial."
+"resultados, continue para o próximo tutorial."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
@@ -9456,8 +9448,8 @@ msgid ""
 msgstr ""
 "Para começar, vamos usar a cena do tutorial anterior (: ref: "
 "`doc_splash_screen`). O objetivo é adicionar uma animação \"fade-in\" à "
-"imagem inicial. Aqui está uma cópia para o caso: download: `robisplash.zip "
-"<files / robisplash.zip>`."
+"imagem inicial. Aqui está uma cópia para o caso: :download:`robisplash.zip "
+"<files/robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
 msgid "Add an animation player"
@@ -9536,7 +9528,6 @@ msgid "The keyframe will be added in the animation player editor:"
 msgstr "O quadro-chave será adicionado ao editor do player de animação:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:62
-#, fuzzy
 msgid "Move the editor cursor to the end by clicking here:"
 msgstr "Mova o cursor do editor para o final, clicando aqui:"
 
@@ -9581,34 +9572,32 @@ msgid "Nodes and resources"
 msgstr "Nós e recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
-#, fuzzy
 msgid ""
 "So far, :ref:`Nodes <class_Node>` have been the most important datatype in "
 "Godot as most of the behaviors and features of the engine are implemented "
 "through them. There is another datatype that is equally important: :ref:"
 "`Resource <class_Resource>`."
 msgstr ""
-"Até agora, ref: `Nodes <class_Node>` tem sido o tipo de dados mais "
-"importante na Godot, já que a maioria dos comportamentos e recursos do "
-"mecanismo são implementados através deles. Existe outro tipo de dados que é "
-"igualmente importante: ref: `Resource <class_Resource>`."
+"Até agora, :ref:`Nós <class_Node>` têm sido o tipo de dados mais importante "
+"no Godot, já que a maioria dos comportamentos e funcionalidades do motor são "
+"implementados através deles. Existe outro tipo de dados que é igualmente "
+"importante: :ref:`Recurso <class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
 "Where *Nodes* focus on behaviors, such as drawing a sprite, drawing a 3D "
 "model, physics, GUI controls, etc,"
 msgstr ""
-"Onde * Nodes * foca em comportamentos, como desenhar um sprite, desenhar um "
-"modelo 3D, física, controles GUI, etc,"
+"Enquanto *Nós* focam em comportamentos, como desenhar um sprite, desenhar um "
+"modelo 3D, controles de física, controles de interface, etc,"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:18
 msgid ""
 "**Resources** are mere **data containers**. This means that they don't do "
 "any action nor process any information. Resources just contain data."
 msgstr ""
-"** Recursos ** são meros ** contêineres de dados **. Isso significa que eles "
-"não fazem nenhuma ação nem processam nenhuma informação. Recursos apenas "
-"contêm dados."
+"**Recursos** são meros **contêineres de dados**. Isso significa que eles não "
+"fazem nenhuma ação nem processam informação. Recursos apenas contêm dados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:22
 msgid ""
@@ -9617,10 +9606,10 @@ msgid ""
 "<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
 "<class_Font>`, :ref:`Translation <class_Translation>`, etc."
 msgstr ""
-"Exemplos de recursos são: ref: `Textura <class_Texture>`,: ref: `Script "
-"<class_Script>`,: ref: `Mesh <class_Mesh>`,: ref: `Animação "
-"<class_Animation>`,: ref: `AudioStream < class_AudioStream> `,: ref:` Fonte "
-"<class_Font> `,: ref:` Tradução <class_Translation> `, etc."
+"Exemplos de recursos são :ref:`Textura <class_Texture>`, :ref:`Roteiro "
+"<class_Script>`, :ref:`Malha <class_Mesh>`, :ref:`Animação "
+"<class_Animation>`, :ref:`Fluxo de áudio <class_AudioStream>`, :ref:`Fonte "
+"<class_Font>`, :ref:`Tradução <class_Translation>`, etc."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:32
 msgid ""
@@ -9640,14 +9629,13 @@ msgid ""
 "corresponds with the fact that resources are just data containers, so there "
 "is no need to have them duplicated."
 msgstr ""
-"Quando um recurso é carregado do disco, ** sempre é carregado uma vez **. "
-"Isso significa que, se houver uma cópia desse recurso já carregada na "
+"Quando um recurso é carregado do disco, **sempre é carregado só uma vez**. "
+"Isso significa que, se houver uma cópia desse recurso já carregado na "
 "memória, tentar carregar o recurso novamente retornará a mesma cópia várias "
 "vezes. Isso corresponde ao fato de que os recursos são apenas contêineres de "
 "dados, portanto, não é necessário duplicá-los."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:42
-#, fuzzy
 msgid ""
 "Typically, every object in Godot (Node, Resource, or anything else) can "
 "export properties. Properties can be of many types (like a string, integer, "
@@ -9655,11 +9643,11 @@ msgid ""
 "nodes and resources can contain resources as properties. To make it a little "
 "more visual:"
 msgstr ""
-"Normalmente, todos os objetos em Godot (Node, Resource ou qualquer outra "
-"coisa) podem exportar propriedades, as propriedades podem ser de vários "
-"tipos (como string, inteiros, Vector2, etc) e um desses tipos pode ser um "
-"recurso. Isso significa que os nós e recursos podem conter recursos como "
-"propriedades. Para torná-lo um pouco mais visual:"
+"Normalmente, todos os objetos em Godot (Nós, Recursos ou qualquer outra "
+"coisa) podem exportar propriedades. Elas podem ser de vários tipos (como "
+"texto, número inteiro, Vector2, etc) e um desses tipos pode ser um recurso. "
+"Isso significa que os nós e os recursos podem conter recursos como "
+"propriedades. Para tornar isso um pouco mais visual:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid "External vs built-in"
@@ -9670,19 +9658,18 @@ msgid ""
 "The resource properties can reference resources in two ways, *external* (on "
 "disk) or **built-in**."
 msgstr ""
-"As propriedades do recurso podem referenciar recursos de duas maneiras: * "
-"externo * (no disco) ou ** interno **."
+"As propriedades do recurso podem referenciar recursos de duas maneiras: "
+"*externo* (no disco) ou **embutido**."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:56
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
-"Para ser mais específico, aqui está um: ref: `Texture <class_Texture>` em um "
-"nó: ref: `Sprite <class_Sprite>`:"
+"Para ser mais específico, aqui está uma :ref:`Textura <class_Texture>` em um "
+"nó :ref:`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:61
-#, fuzzy
 msgid ""
 "Pressing the \">\" button on the right side of the preview allows us to view "
 "and edit the resources properties. One of the properties (path) shows where "
@@ -9690,7 +9677,7 @@ msgid ""
 msgstr ""
 "Pressionar o botão \">\" no lado direito da visualização permite visualizar "
 "e editar as propriedades dos recursos. Uma das propriedades (caminho) mostra "
-"de onde vem. Neste caso, vem de uma imagem png."
+"de onde ele vem. Neste caso, vem de uma imagem png."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:67
 msgid ""
@@ -9698,9 +9685,9 @@ msgid ""
 "resource. If the path property is erased (or it never had a path to begin "
 "with), it is considered a built-in resource."
 msgstr ""
-"Quando o recurso vem de um arquivo, ele é considerado um recurso * externo "
-"*. Se a propriedade path for apagada (ou nunca teve um caminho para "
-"começar), ela será considerada um recurso interno."
+"Quando o recurso vem de um arquivo, ele é considerado um recurso *externo*. "
+"Se a propriedade \"path\" (caminho) for apagada (ou nunca teve um caminho "
+"para começar), ele será considerada um recurso embutido."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:71
 msgid ""
@@ -9712,34 +9699,33 @@ msgid ""
 "loaded only once. That means, different Robi robot scenes instanced at the "
 "same time will still share the same image."
 msgstr ""
-"Por exemplo, se o caminho \\ `\" res: //robi.png \"\\` for apagado da "
+"Por exemplo, se o caminho \\`\"res://robi.png\"\\` for apagado da "
 "propriedade \"path\" no exemplo acima e, em seguida, a cena for salva, o "
-"recurso será salvo dentro do arquivo de cena .tscn , não mais referenciando "
-"o \"robi.png\" externo. No entanto, mesmo se salvo como interno, e mesmo que "
-"a cena possa ser instanciada várias vezes, o recurso sempre será carregado "
+"recurso será salvo dentro do arquivo de cena .tscn, não mais referenciando o "
+"\"robi.png\" externo. No entanto, mesmo se salvo como interno, e mesmo que a "
+"cena possa ser instanciada várias vezes, o recurso sempre será carregado "
 "apenas uma vez. Isso significa que diferentes cenas robóticas Robi "
 "instanciadas ao mesmo tempo ainda compartilharão a mesma imagem."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:80
 msgid "Loading resources from code"
-msgstr "Carregando recursos do código"
+msgstr "Carregando recursos a partir do código"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:82
 msgid ""
 "Loading resources from code is easy. There are two ways to do it. The first "
 "is to use load(), like this:"
 msgstr ""
-"Carregar recursos do código é fácil. Existem duas maneiras de fazer isso. O "
-"primeiro é usar o load(), assim:"
+"Carregar recursos a partir do código é fácil. Existem duas maneiras de fazer "
+"isso. O primeiro é usar o load(), assim:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:101
-#, fuzzy
 msgid ""
 "The second way is more optimal, but only works with a string constant "
 "parameter because it loads the resource at compile-time."
 msgstr ""
-"A segunda maneira é mais ideal, mas só funciona com um parâmetro de "
-"constante de string, porque ele carrega o recurso em tempo de compilação."
+"A segunda maneira é mais ideal, mas só funciona com um parâmetro de texto "
+"constante, porque ele carrega o recurso em tempo de compilação."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:116
 msgid "Loading scenes"
@@ -9751,8 +9737,8 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. This means that "
 "the scene is packed inside a resource."
 msgstr ""
-"Cenas também são recursos, mas há um problema. Cenas salvas no disco são "
-"recursos do tipo: ref: `PackedScene <class_PackedScene>`. Isso significa que "
+"Cenas também são recursos, mas há um detalhe. Cenas salvas no disco são "
+"recursos do tipo :ref:`PackedScene <class_PackedScene>`. Isso significa que "
 "a cena é compactada dentro de um recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:121
@@ -9760,7 +9746,7 @@ msgid ""
 "To obtain an instance of the scene, the method :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` must be used."
 msgstr ""
-"Para obter uma instância da cena, o método: ref: `PackedScene.instance () "
+"Para obter uma instância da cena, o método :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` deve ser usado."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:143
@@ -9782,12 +9768,12 @@ msgid ""
 "each time. It is important to remember that, as always, images, meshes, etc "
 "are all shared between the scene instances."
 msgstr ""
-"A abordagem tem várias vantagens. Como a função: ref: `PackedScene.instance "
-"() <class_PackedScene_instance>` é bastante rápida, adicionar conteúdo extra "
-"à cena pode ser feito de forma eficiente. Novos inimigos, marcadores, "
-"efeitos, etc podem ser adicionados ou removidos rapidamente, sem ter que "
-"carregá-los novamente a partir do disco de cada vez. É importante lembrar "
-"que, como sempre, imagens, malhas, etc são todos compartilhados entre as "
+"Essa abordagem tem várias vantagens. Como a função :ref:`PackedScene."
+"instance() <class_PackedScene_instance>` é bastante rápida, adicionar "
+"conteúdo extra à cena pode ser feito de forma eficiente. Novos inimigos, "
+"tiros, efeitos, etc podem ser adicionados ou removidos rapidamente, sem ter "
+"que carregá-los novamente a partir do disco toda vez. É importante lembrar "
+"que, como sempre, imagens, malhas, etc. são todos compartilhados entre as "
 "instâncias da cena."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:156
@@ -9801,11 +9787,11 @@ msgid ""
 "most cases, Resources are contained in Nodes, scripts or other resources, "
 "when a node is removed or freed, all the children resources are freed too."
 msgstr ""
-"O recurso é extendido de: ref: `Reference <class_Reference>`. Assim, quando "
-"um recurso não estiver mais em uso, ele será automaticamente liberado. Como, "
-"na maioria dos casos, os recursos estão contidos em nós, scripts ou outros "
-"recursos, quando um nó é removido ou liberado, todos os recursos filhos são "
-"liberados também."
+"Recurso é uma extensão da classe :ref:`Reference <class_Reference>`. Assim, "
+"quando um recurso não estiver mais em uso, ele será automaticamente "
+"liberado. Como, na maioria dos casos, os recursos estão contidos em nós, "
+"scripts ou outros recursos, quando um nó é removido ou liberado, todos os "
+"recursos filhos são liberados também."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
 msgid ""
@@ -9819,19 +9805,18 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
-msgstr "Sistema de arquivo"
+msgstr "Sistema de arquivos"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "File systems are yet another hot topic in engine development. The file "
 "system manages how the assets are stored and how they are accessed. A well "
 "designed file system also allows multiple developers to edit the same source "
 "files and assets while collaborating together."
 msgstr ""
-"Os sistemas de arquivos são outro tópico importante no desenvolvimento de "
-"mecanismos. O sistema de arquivos gerenciam como os ativos são armazenados e "
-"como são acessados. Um sistema de arquivos bem projetado também permite que "
+"Os sistemas de arquivos são outro tópico importante no desenvolvimento do "
+"motor. O sistema de arquivos gerencia como os ativos são armazenados e como "
+"são acessados. Um sistema de arquivos bem projetado também permite que "
 "vários desenvolvedores editem os mesmos arquivos e ativos de origem enquanto "
 "colaboram em conjunto."
 
@@ -9843,9 +9828,9 @@ msgid ""
 "metadata, etc. In the end the simple approach won and now Godot stores all "
 "assets as files in the file system."
 msgstr ""
-"As versões iniciais do mecanismo Godot (e iterações anteriores antes de se "
-"chamar Godot) usavam um banco de dados. Os ativos foram armazenados nele e "
-"receberam um ID. Outras abordagens também foram tentadas, como bancos de "
+"As versões iniciais do motor Godot (e iterações anteriores antes de se "
+"chamar Godot) usavam um banco de dados. Os ativos eram armazenados nele e "
+"recebiam um ID. Outras abordagens também foram tentadas, como bancos de "
 "dados locais, arquivos com metadados, etc. No final, a abordagem simples "
 "ganhou e agora Godot armazena todos os ativos como arquivos no sistema de "
 "arquivos."
@@ -9866,26 +9851,25 @@ msgid ""
 "font textures."
 msgstr ""
 "O sistema de arquivos armazena recursos no disco. Qualquer coisa, desde um "
-"script, até uma cena ou uma imagem PNG é um recurso para o mecanismo. Se um "
+"roteiro até uma cena ou uma imagem PNG, é um recurso para o motor. Se um "
 "recurso contiver propriedades que fazem referência a outros recursos no "
 "disco, os caminhos para esses recursos também serão incluídos. Se um recurso "
-"tiver sub-recursos internos, o recurso será salvo em um único arquivo junto "
-"com todos os sub-recursos incluídos. Por exemplo, um recurso de fonte "
-"geralmente é empacotado junto com as texturas de fonte."
+"tiver sub-recursos embutidos, ele será salvo em um único arquivo junto com "
+"todos os sub-recursos inclusos. Por exemplo, um recurso de fonte geralmente "
+"é empacotado junto com as texturas de fonte."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
-#, fuzzy
 msgid ""
 "In general the Godot file system avoids using metadata files. The reason for "
 "this is simple, existing asset managers and VCSs are simply much better than "
 "anything we can implement, so Godot tries the best to play along with SVN, "
 "Git, Mercurial, Perforce, etc."
 msgstr ""
-"Em geral, o sistema de arquivos Godot evita o uso de arquivos de metadados. "
-"A razão para isso é simples, os gerenciadores de ativos existentes e VCSs "
-"são simplesmente muito melhores do que qualquer coisa que possamos "
-"implementar, então Godot tenta o melhor para jogar junto com SVN, Git, "
-"Mercurial, Performance, etc."
+"Em geral, o sistema de arquivos Godot evita usar arquivos de metadados. A "
+"razão para isso é simples: os gerenciadores de ativos existentes e sistemas "
+"de controle de versão são simplesmente muito melhores do que qualquer coisa "
+"que possamos implementar, então Godot tenta o melhor para jogar junto com "
+"SVN, Git, Mercurial, Performance, etc."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:35
 msgid "Example of a file system contents:"
@@ -9901,7 +9885,7 @@ msgid ""
 "found at the root of the project. In fact its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
-"O arquivo project.godot é o arquivo de descrição do projeto, e é sempre "
+"O arquivo project.godot é o arquivo de descrição do projeto e é sempre "
 "encontrado na raiz do projeto. Na verdade, sua localização define onde está "
 "a raiz. Este é o primeiro arquivo que Godot procura ao abrir um projeto."
 
@@ -9912,7 +9896,7 @@ msgid ""
 "of a blank project."
 msgstr ""
 "Este arquivo contém a configuração do projeto em texto simples, usando o "
-"formato win.ini. Até mesmo um projeto vazio.godot pode funcionar como uma "
+"formato win.ini. Até mesmo um project.godot vazio pode funcionar como uma "
 "definição básica de um projeto em branco."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:57
@@ -9926,15 +9910,15 @@ msgid ""
 "``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
 "godot``."
 msgstr ""
-"Godot suporta apenas `` / `` como um delimitador de caminho. Isso é feito "
-"por razões de portabilidade. Todos os sistemas operacionais suportam isto, "
-"mesmo o Windows, então um caminho como `` c: \\ project \\ project.godot`` "
-"precisa ser digitado como `` c: / project / project.godot``."
+"Godot suporta apenas ``/`` como um delimitador de caminho. Isso é feito por "
+"razões de portabilidade. Todos os sistemas operacionais suportam isto, mesmo "
+"o Windows, então um caminho como ``c:\\project\\project.godot`` precisa ser "
+"digitado como ``c:/project/project.godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:65
 #: ../../docs/tutorials/io/data_paths.rst:16
 msgid "Resource path"
-msgstr "Caminho do recurso"
+msgstr "Caminho de recursos"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:67
 msgid ""
@@ -9942,17 +9926,17 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
-"Ao acessar recursos, o uso do layout do sistema de hospedagem de arquivos do "
-"sistema operacional, podem ser incômodo e não portátil. Para resolver este "
-"problema, o caminho especial `` res: // `` foi criado."
+"Ao acessar recursos, usar o layout do sistema de arquivos do sistema "
+"operacional da máquina pode ser incômodo e não portátil. Para resolver este "
+"problema, o caminho especial ``res://`` foi criado."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:71
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so in fact ``res://project.godot`` is always valid)."
 msgstr ""
-"O caminho `` res: // `` sempre apontará para a raiz do projeto (onde project."
-"godot está localizado, então na verdade `` res: // project.godot`` é sempre "
+"O caminho ``res://`` sempre apontará para a raiz do projeto (onde project."
+"godot está localizado, então, na prática, ``res://project.godot`` é sempre "
 "válido)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:75
@@ -9962,11 +9946,11 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
-"Este sistema de arquivos é somente leitura e gravação quando executa o "
-"projeto localmente a partir do editor. Quando exportado ou quando executado "
-"em dispositivos diferentes (como telefones ou consoles ou em execução no "
-"DVD), o sistema de arquivos se tornará somente leitura e a gravação não será "
-"mais permitida."
+"Este sistema de arquivos é para leitura e escrita somente quando se executa "
+"o projeto localmente a partir do editor. Quando exportado ou quando "
+"executado em dispositivos diferentes (como em telefones ou consoles ou "
+"executando a partir de DVD), o sistema de arquivos se tornará somente "
+"leitura e a gravação não será mais permitida."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "User path"
@@ -9978,14 +9962,13 @@ msgid ""
 "state or downloading content packs. To this end, the engine ensures that "
 "there is a special path ``user://`` that is always writable."
 msgstr ""
-"Normalmente, ainda é necessário gravar em disco para várias tarefas, como "
-"salvar o estado do jogo ou baixar pacotes de conteúdo. Para este fim, o "
-"mecanismo garante que existe um caminho especial `` user: // `` que é sempre "
-"gravável."
+"Normalmente, gravar em disco é necessário  para várias tarefas como salvar o "
+"estado do jogo ou baixar pacotes de conteúdo adicional. Para isso, o motor "
+"garante um caminho especial ``user://`` que é sempre gravável."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:88
 msgid "Host file system"
-msgstr "Sistema de arquivos do host"
+msgstr "Sistema de arquivos da máquina"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:90
 msgid ""
@@ -9994,11 +9977,11 @@ msgid ""
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot!"
 msgstr ""
-"Alternativamente, os caminhos do sistema de arquivos do host também podem "
-"ser usados, mas isso não é recomendado para um produto liberado, pois esses "
+"Alternativamente, os caminhos do sistema de arquivos da máquina também podem "
+"ser usados, mas isso não é recomendado para um produto lançado, já que esses "
 "caminhos não têm garantia de funcionar em todas as plataformas. No entanto, "
-"o uso de caminhos do sistema de arquivos do host pode ser útil ao escrever "
-"ferramentas de desenvolvimento na Godot!"
+"o uso de caminhos do sistema de arquivos da máquina hospedeira pode ser útil "
+"ao escrever ferramentas de desenvolvimento no Godot!"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:96
 msgid "Drawbacks"
@@ -10012,25 +9995,24 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
-"Existem algumas desvantagens nesse design simples do sistema de arquivos. A "
+"Existem algumas desvantagens nesse desenho simples do sistema de arquivos. A "
 "primeira questão é que a movimentação de ativos (renomeá-los ou movê-los de "
 "um caminho para outro dentro do projeto) quebrará as referências existentes "
 "a esses ativos. Essas referências terão que ser redefinidas para apontar "
 "para o novo local do ativo."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
-#, fuzzy
 msgid ""
 "To avoid this, do all your move, delete and rename operations from within "
 "Godot, on the FileSystem dock. Never move assets from outside Godot, or "
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
-"Para evitar isso, faça todas as suas movimentações, exclua e renomeie as "
-"operações de dentro da Godot, na estação FileSystem. Nunca mova ativos de "
-"fora da Godot, ou as dependências terão que ser consertadas manualmente "
-"(Godot detecta isso e ajuda você a consertá-las de qualquer maneira, mas por "
-"que seguir o caminho mais difícil?)."
+"Para evitar isso, faça todas as suas movimentações, exclusões e renomeações "
+"de dentro da Godot, no painel Arquivos. Nunca mova ativos de fora do Godot, "
+"ou as dependências terão que ser consertadas manualmente (Godot detecta isso "
+"e lhe ajuda a consertá-las de qualquer maneira, mas por que seguir o caminho "
+"mais difícil?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
 msgid ""
@@ -10043,11 +10025,11 @@ msgid ""
 msgstr ""
 "A segunda é que, no Windows e no MacOS, os nomes dos arquivos e dos caminhos "
 "não diferenciam maiúsculas de minúsculas. Se um desenvolvedor que trabalha "
-"em um sistema de arquivos host insensível a maiúsculas e minúsculas salva um "
-"ativo como \"myfile.PNG\", mas o referencia como \"myfile.png\", ele "
-"funcionará bem em sua plataforma, mas não em outras plataformas, como Linux, "
-"Android, etc. Isso também pode se aplicar a exportados binários, que usam um "
-"pacote compactado para armazenar todos os arquivos."
+"em uma máquina com sistema de arquivos insensível a maiúsculas e minúsculas "
+"salvar um ativo como \"meuarquivo.PNG\", mas o referencia como \"meuarquivo."
+"png\", ele funcionará bem em sua plataforma, mas não em outras plataformas, "
+"como Linux, Android, etc. Isso também pode se aplicar aos binários "
+"exportados, que usam um pacote compactado para armazenar todos os arquivos."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
 msgid ""
@@ -10084,7 +10066,6 @@ msgstr ""
 "árvore de cena *."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
-#, fuzzy
 msgid ""
 "This concept deserves going into a little more detail. In fact, the scene "
 "system is not even a core component of Godot as it is possible to skip it "
@@ -10101,7 +10082,6 @@ msgid "MainLoop"
 msgstr "Loop principal"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:24
-#, fuzzy
 msgid ""
 "The way Godot works internally is as follows. There is the :ref:`OS "
 "<class_OS>` class, which is the only instance that runs at the beginning. "
@@ -10140,7 +10120,6 @@ msgstr ""
 "próprio MainLoop raramente faz sentido."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
-#, fuzzy
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
@@ -10175,18 +10154,16 @@ msgstr ""
 "É importante saber que essa classe existe porque tem alguns usos importantes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)"
 msgstr ""
 "Ele contém a raiz: ref: `Viewport <class_Viewport>`, para a qual uma cena é "
-"adicionada como uma criança quando é aberta pela primeira vez, para se "
-"tornar parte da * Scene Tree * (mais sobre isso a seguir)"
+"adicionada como uma filha quando é aberta pela primeira vez, para se tornar "
+"parte da * Scene Tree * (mais sobre isso a seguir)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
-#, fuzzy
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
@@ -10195,7 +10172,6 @@ msgstr ""
 "de um grupo ou obter uma lista deles."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
-#, fuzzy
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
@@ -10226,7 +10202,6 @@ msgstr ""
 "nó, ele pode ser obtido de duas maneiras diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
-#, fuzzy
 msgid ""
 "This node contains the main viewport, anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
@@ -10261,7 +10236,6 @@ msgstr ""
 "torna parte da * árvore de cena *."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
-#, fuzzy
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
@@ -10286,7 +10260,6 @@ msgid "Tree order"
 msgstr "Ordem da árvore"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
@@ -10307,7 +10280,6 @@ msgid "A scene is loaded from disk or created by scripting."
 msgstr "Uma cena é carregada do disco ou criada pelo script."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
-#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
@@ -10358,7 +10330,6 @@ msgstr ""
 "change_scene () <class_SceneTree_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
-#, fuzzy
 msgid ""
 "This is a quick and useful way to switch scenes but has the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -10375,7 +10346,6 @@ msgstr ""
 "(veja o próximo capítulo!) E: ref: `doc_background_loading`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
-#, fuzzy
 msgid "Singletons (AutoLoad)"
 msgstr "Singletons (AutoLoad)"
 
@@ -10451,7 +10421,6 @@ msgstr ""
 "design."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-#, fuzzy
 msgid "Auto-loading nodes and scripts caters to this need."
 msgstr "Nós e scripts de carregamento automático atendem a essa necessidade."
 
@@ -10468,7 +10437,6 @@ msgstr ""
 "que herda do Nó (um nó será criado e o script será definido para ele)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:40
-#, fuzzy
 msgid ""
 "To autoload a scene or script, select Project > Project Settings from the "
 "menu and switch to the AutoLoad tab. Each entry in the list requires a name, "
@@ -10494,7 +10462,6 @@ msgid "Or even simpler using the name directly:"
 msgstr "Ou ainda mais simples usando o nome diretamente:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
-#, fuzzy
 msgid "Custom scene switcher"
 msgstr "Comutador de cena personalizado"
 
@@ -10565,8 +10532,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:109
 msgid "Now, whenever you run any of your scenes, the script is always loaded."
 msgstr ""
-"Agora, sempre que você executar qualquer uma de suas cenas, o script será "
-"sempre carregado."
+"Agora, todas as vezes que você executar qualquer uma das suas cenas, o "
+"script sempre será carregado."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:111
 msgid ""
@@ -10645,7 +10612,6 @@ msgid "Editor manual"
 msgstr "Manual do editor"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
-#, fuzzy
 msgid "From Unity to Godot Engine"
 msgstr "De Unity3D à Godot Engine"
 
@@ -10980,7 +10946,6 @@ msgstr ""
 "armazenadas em arquivos diferentes."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
-#, fuzzy
 msgid ""
 "For example, think of a platformer level. You would compose it with multiple "
 "elements:"
@@ -11121,7 +11086,6 @@ msgstr ""
 "organizar GameObjects colocando-os em GameObjects vazios."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:147
-#, fuzzy
 msgid ""
 "First, this system is closer to the well-known object-oriented paradigm: "
 "Godot provides a number of nodes which are not clearly \"Game Objects\", but "
@@ -11252,7 +11216,6 @@ msgstr ""
 "da sua cena de 'modelo', você precisa adicioná-los na cena 'modelo'."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:195
-#, fuzzy
 msgid "Glossary correspondence"
 msgstr "Correspondência do glossário"
 
@@ -11282,7 +11245,6 @@ msgstr ""
 "estática."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:210
-#, fuzzy
 msgid ""
 "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` "
 "as well as support for :ref:`Visual Script <toc-learn-scripting-"
@@ -11353,7 +11315,6 @@ msgstr ""
 "uma cena complicada em vários ramos menores."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
-#, fuzzy
 msgid "Connections: groups and signals"
 msgstr "Conexões: grupos e sinais"
 
@@ -11370,7 +11331,6 @@ msgstr ""
 "neste grupo! Isto é explicado em: ref: `this page <doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
-#, fuzzy
 msgid ""
 "But there's more! Certain nodes throw signals when certain actions happen. "
 "You can connect these signals to call a specific function when they happen. "
@@ -11564,7 +11524,6 @@ msgstr ""
 "simples."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
-#, fuzzy
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups. The version of Godot "
@@ -11588,7 +11547,6 @@ msgstr ""
 "suportadas pela sua configuração será mostrada."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
-#, fuzzy
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
@@ -11647,7 +11605,6 @@ msgstr ""
 "Editor -> Editor de Texto -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to better integrate the editor with godot. Godot will replace the "
@@ -11698,32 +11655,26 @@ msgid "The line number of the error"
 msgstr "O número da linha do erro"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
-#, fuzzy
 msgid "Some example Exec Flags for various editors include:"
 msgstr "Alguns exemplos de Exec Flags para vários editores incluem:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
-#, fuzzy
 msgid "Exec Flags"
 msgstr "Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-#, fuzzy
 msgid "geany/kate"
 msgstr "geany / kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-#, fuzzy
 msgid "{file} --line {line} --column {col}"
 msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-#, fuzzy
 msgid "atom/sublime text"
 msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-#, fuzzy
 msgid "{file}:{line}"
 msgstr "{file}:{line}"
 
@@ -13392,7 +13343,6 @@ msgstr ""
 "necessidade de chamar ``._init()`` explicitamente."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:949
-#, fuzzy
 msgid ""
 "Unlike the call of a regular function like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
@@ -13403,18 +13353,14 @@ msgstr ""
 "passado da seguinte forma:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
-#, fuzzy
 msgid "This is better explained through examples. Say we have this scenario:"
-msgstr ""
-"A melhor forma de explicar esses exemplos. São vendo o seguinte cenário:"
+msgstr "A melhor forma de explicar esses exemplos. É vendo o seguinte cenário:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:979
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
 msgstr "Não há restrições para usar Godot"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:981
-#, fuzzy
 msgid ""
 "if the inherited class (``State.gd``) defines a ``_init`` constructor that "
 "takes arguments (``e`` in this case) then the inheriting class (``Idle.gd``) "
@@ -13427,7 +13373,6 @@ msgstr ""
 "parâmetros  ``_init`` de ``State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:984
-#, fuzzy
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
@@ -13436,7 +13381,6 @@ msgstr ""
 "classe``State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:985
-#, fuzzy
 msgid ""
 "in the example above ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
@@ -13445,7 +13389,6 @@ msgstr ""
 "que foi passado dentro do``Idle.gd`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:987
-#, fuzzy
 msgid ""
 "if ``Idle.gd``'s ``_init`` constructor takes 0 arguments it still needs to "
 "pass some value to the ``State.gd`` base class even if it does nothing. "
@@ -13813,7 +13756,6 @@ msgstr ""
 "sinal é recebido, a execução irá recomeçar. Abaixo temos alguns exemplos:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1432
-#, fuzzy
 msgid ""
 "Coroutines themselves use the ``completed`` signal when they transition into "
 "an invalid state, for example:"
@@ -15149,7 +15091,6 @@ msgstr ""
 "o fluxo da lógica."
 
 #: ../../docs/getting_started/scripting/visual_script/what_is_visual_scripting.rst:11
-#, fuzzy
 msgid ""
 "The reason it does not make existing programming obsolete is, simply, that "
 "it does not scale as well. It takes considerably more time to create code "
@@ -15249,7 +15190,6 @@ msgid "Creating a Script"
 msgstr "Criando um Script"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
-#, fuzzy
 msgid ""
 "Creating scripts works the same as with other scripting languages: Select "
 "any node in the scene and push the \"New Script\" button at the top right "
@@ -15737,7 +15677,6 @@ msgstr ""
 "getter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
-#, fuzzy
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
 msgstr ""
 "Da mesma forma, segure * Control * (* Command * no Mac) para soltar um "
@@ -15775,7 +15714,6 @@ msgid "Finally, to emit the signal, simply drag it to the canvas:"
 msgstr "Finalmente, para emitir o sinal, basta arrastá-lo para a tela:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:186
-#, fuzzy
 msgid ""
 "Remember that emitting a signal is a sequenced operation, so it must come "
 "from a Sequence port."
@@ -15875,7 +15813,6 @@ msgstr ""
 "mais importantes para usar e bastante diversificados."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
-#, fuzzy
 msgid ""
 "There are many types of nodes of interest here, so a short attempt to "
 "describe them will follow:"
@@ -15977,7 +15914,6 @@ msgstr ""
 "da Árvore de cena para a tela para isso."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
-#, fuzzy
 msgid ""
 "This node is similar to the Singleton node because it references the "
 "SceneTree, which contains the active scene. SceneTree, however, only works "
@@ -16004,7 +15940,6 @@ msgid "Preload"
 msgstr "Pré-carregamento"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
-#, fuzzy
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
 "resource loaded and ready to use. Rather than instancing the node, it's "
@@ -16029,7 +15964,6 @@ msgstr ""
 "disco."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
-#, fuzzy
 msgid "Comment"
 msgstr "Comente"
 
@@ -16061,7 +15995,6 @@ msgid "Condition"
 msgstr "Condição"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
-#, fuzzy
 msgid ""
 "This is a simple node that checks a bool port. If true, it will go via the "
 "\"true\" sequence port. If false, the second. After going for either of "
@@ -16087,7 +16020,6 @@ msgstr ""
 "cada elemento que ele possui."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
-#, fuzzy
 msgid ""
 "The Iterator node goes through all elements and, for each of them, it goes "
 "via the \"each\" sequence port, making the element available in the \"elem\" "
@@ -16183,9 +16115,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:1003
 #: ../../docs/tutorials/shading/shading_language.rst:1042
 #: ../../docs/tutorials/shading/shading_language.rst:1102
-#, fuzzy
 msgid "Built-In"
-msgstr "Construído"
+msgstr "Embutido"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""
@@ -16204,7 +16135,6 @@ msgid "By Type"
 msgstr "Por tipo"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
-#, fuzzy
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
@@ -16267,7 +16197,6 @@ msgstr ""
 "sinal para a tela funciona melhor."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
-#, fuzzy
 msgid "Get/Set"
 msgstr "Get/Set"
 
@@ -16277,8 +16206,9 @@ msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
-"Nó Getter / Setter genérico. As propriedades de arrastamento do Inspector "
-"funcionam melhor, já que aparecem corretamente configuradas no drop."
+"Generic Getter/Setter Node (Adquirente genérico/Nó modificador). As "
+"propriedades de arrastamento do Inspector funcionam melhor, já que aparecem "
+"corretamente configuradas ao soltar."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid "Wait"
@@ -16751,9 +16681,8 @@ msgstr ""
 "quando falamos do Godot."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
-#, fuzzy
 msgid "Using Nuget Packages in Godot"
-msgstr "Usando Pacotes Nuget na Godot"
+msgstr "Usando Pacotes Nuget no Godot"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
 msgid ""
@@ -18339,16 +18268,21 @@ msgstr ""
 "com a posição de repouso (transform no Godot) dos bones."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
+#, fuzzy
 msgid ""
 "The three check boxes :code:`Inheirt Rotation`, :code:`Inheirt Scale`, :code:"
 "`Local Location` (colored in red) must be ticked when building armature in "
 "Blender, so that the exported bone transform would be consistant between "
 "Blender and Godot"
 msgstr ""
+"As três caixas :code:`Inheirt Rotation`, :code:`Inheirt Scale`, :code:`Local "
+"Location` (em vermelho) devem ser assinaladas ao construir uma armadura no "
+"Blender, de modo que o \"bone transform\" exportado seja constante no "
+"Blender e na Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:19
 msgid "Bone Weights"
-msgstr ""
+msgstr "Peso dos ossos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
 msgid ""
@@ -18360,7 +18294,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"
-msgstr ""
+msgstr "Osso não-deformável"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
 #, fuzzy
@@ -23101,15 +23035,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
+#, fuzzy
 msgid "2D Movement Overview"
-msgstr ""
+msgstr "Visão geral de movimento 2D"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:9
+#, fuzzy
 msgid ""
 "Every beginner has been there: \"How do I move my character?\" Depending on "
 "the style of game you're making, you may have special requirements, but in "
 "general the movement in most 2D games is based on a small number of designs."
 msgstr ""
+"Todo iniciante está lá: \"Como faço para mover meu personagem?\" Dependendo "
+"do estilo de jogo que você está fazendo, você pode ter requisitos especiais, "
+"mas em geral o movimento na maioria dos jogos 2D é baseado em um pequeno "
+"número de designs."
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
 msgid ""
@@ -36719,10 +36659,20 @@ msgid ""
 "allows for safely changing properties and synchronizing them with the "
 "physics engine."
 msgstr ""
+"Entretanto, se você quiser mesmo ter algum controle sobre o corpo, você deve "
+"tomar cuidado: alterar a ``posição``, ``velocidade linear`` e outras "
+"propriedades físicas de um corpo rígido podem resultar em um comportamento "
+"inesperado. Se precisar alterar quaisquer propriedades relacionadas à "
+"física, você deveria usar a chamada de retorno :ref:`_integrate_forces() "
+"<class_RigidBody2D__integrate_forces>` em vez de ``_physics_process()``. "
+"Nesta função, você tem acesso ao :ref:`Physics2DDirectBodyState "
+"<class_Physics2DDirectBodyState>` do corpo, que permite alterar com "
+"segurança as propriedade e sincronizá-las com o motor da física."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:216
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
 msgstr ""
+"Por exemplo, aqui está o código para uma nave no estilo de \"Asteroids\":"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:261
 msgid ""
@@ -36730,6 +36680,10 @@ msgid ""
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
 "to the body and letting the physics engine calculate the resulting movement."
 msgstr ""
+"Note que nós não estamos configurando as propriedades ``linear_velocity`` ou "
+"``angular_velocity`` diretamente, mas sim aplicando forças (``thrust`` "
+"(impulso) e ``torque``) ao corpo, e deixando o motor de física calcular o "
+"movimento resultante."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:265
 msgid ""
@@ -36739,10 +36693,15 @@ msgid ""
 "ref:`can_sleep <class_RigidBody2D_can_sleep>` property. Be aware that this "
 "can have a negative effect on performance."
 msgstr ""
+"Quando um corpo rígido adormece, a função ``_integrate_forces()`` não será "
+"chamada. Para sobrepor este comportamento, você precisará manter o corpo "
+"acordado, criando uma colisão, aplicando forças a ele ou desabilitando a "
+"propriedade :ref:`can_sleep <class_RigidBody2D_can_sleep>`. Fique ciente que "
+"isso pode ter um efeito negativo no desempenho."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:272
 msgid "Contact reporting"
-msgstr ""
+msgstr "Relato de contato"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:274
 msgid ""
@@ -36754,6 +36713,13 @@ msgid ""
 "get_contact_count() <class_Physics2DDirectBodyState_get_contact_count>` and "
 "related functions."
 msgstr ""
+"Por padrão, corpos rígidos não mantém um monitoramento dos contatos, porque "
+"isso pode exigir uma enorme quantidade de memória se muitos corpos estiverem "
+"na cena. Para ativar o relato de contato, defina a propriedade :ref:"
+"`contacts_reported <class_RigidBody2D_contacts_reported>` (contatos "
+"relatados) para um valor diferente de zero. Os contatos podem ser obtidos "
+"via :ref:`Physics2DDirectBodyState.get_contact_count() "
+"<class_Physics2DDirectBodyState_get_contact_count>` e funções relacionadas."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:281
 msgid ""
@@ -36761,10 +36727,15 @@ msgid ""
 "<class_RigidBody2D_contact_monitor>` property. See :ref:`RigidBody2D "
 "<class_RigidBody2D>` for the list of available signals."
 msgstr ""
+"Monitoramento de contato via sinais pode ser habilitado através da "
+"propriedade :ref:`contact_monitor <class_RigidBody2D_contact_monitor>`. "
+"Veja :ref:`RigidBody2D <class_RigidBody2D>` para a lista de sinais "
+"disponíveis."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:286
+#, fuzzy
 msgid "KinematicBody2D"
-msgstr ""
+msgstr "KinematicBody2D"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:288
 msgid ""
@@ -36773,6 +36744,10 @@ msgid ""
 "friction. Instead, they must be controlled by the user via code. The physics "
 "engine will not move a kinematic body."
 msgstr ""
+"Corpos :ref:`KinematicBody2D <class_KinematicBody2D>` detectam colisões com "
+"outros corpos, mas não são afetados por propriedades físicas como gravidade "
+"e atrito. Em vez disso, eles devem ser controlados pelo usuário via código. "
+"O motor de física não moverá um corpo cinemático."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:293
 msgid ""
@@ -36782,6 +36757,12 @@ msgid ""
 "if a collision is detected with another body. After the body has collided, "
 "any collision response must be coded manually."
 msgstr ""
+"Ao mover um corpo cinemático, você não deveria definir sua ``posição`` "
+"diretamente. Em vez disso, use os métodos ``move_and_collide()`` ou "
+"``move_and_slide()``. Eles movem o corpo ao longo de um certo vetor, que irá "
+"parar instantaneamente se uma colisão for detectada com outro corpo. Depois "
+"de o corpo colidir, quaisquer reações à colisão devem ser programadas "
+"manualmente."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:300
 msgid "Kinematic collision response"
@@ -37141,9 +37122,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:149
+#, fuzzy
 msgid ""
 "See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
 msgstr ""
+"Veja :ref:`doc_2d_movement` para exemplos de implementação de movimento 2D."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:151
 msgid "Attach a script to the KinematicBody2D and add the following code:"
