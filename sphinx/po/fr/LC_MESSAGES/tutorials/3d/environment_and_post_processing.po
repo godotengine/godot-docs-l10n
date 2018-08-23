@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:4
-msgid "Environment and Post-Processing"
-msgstr ""
+#, fuzzy
+msgid "Environment and post-processing"
+msgstr "Environnement"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:6
 msgid ""
@@ -40,8 +41,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:18
-msgid "Camera Node"
-msgstr ""
+#, fuzzy
+msgid "Camera node"
+msgstr "Caméras"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:20
 msgid ""
@@ -55,56 +57,58 @@ msgid ""
 "in general it's a better idea to use the option below."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:29
-msgid "WorldEnvironment Node"
-msgstr ""
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:28
+#, fuzzy
+msgid "WorldEnvironment node"
+msgstr "Environnement"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:31
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:30
 msgid ""
 "The WorldEnvironment node can be added to any scene, but only one can exist "
 "per active scene tree. Adding more than one will result in a warning."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:36
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:35
 msgid ""
 "Any Environment added has higher priority than the default Environment "
 "(explained below). This means it can be overridden on a per-scene basis, "
 "which makes it quite useful."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:42
-msgid "Default Environment"
-msgstr ""
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:40
+msgid "Default environment"
+msgstr "Environnement par défaut"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:44
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:42
 msgid ""
 "A default environment can be set, which acts as a fallback when no "
 "Environment was set to a Camera or WorldEnvironment. Just head to Project "
 "Settings -> Rendering -> Environment:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:50
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:48
 msgid ""
 "New projects created from the Project Manager come with a default "
 "environment (``default_env.tres``). If one needs to be created, save it to "
 "disk before referencing it here."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:55
-msgid "Environment Options"
-msgstr ""
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:53
+#, fuzzy
+msgid "Environment options"
+msgstr "Environnement"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:57
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:55
 msgid ""
 "Following is a detailed description of all environment options and how they "
 "are intended to be used."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:62
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
 msgstr "Arrière-plan"
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:64
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:61
 msgid ""
 "The Background section contains settings on how to fill the background "
 "(parts of the screen where objects where not drawn). In Godot 3.0, the "
@@ -112,46 +116,46 @@ msgid ""
 "can also change how objects are affected by ambient and reflected light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:71
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:68
 msgid "There are many ways to set the background:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:73
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:70
 msgid ""
 "**Clear Color** uses the default clear color defined by the project. The "
 "background will be a constant color."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:74
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:71
 msgid "**Custom Color** is like Clear Color but with a custom color value."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:75
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:72
 msgid ""
 "**Sky** lets you define a panorama sky (a 360 degree sphere texture) or a "
 "procedural sky (a simple sky featuring a gradient and an optional sun). "
 "Objects will reflect it and absorb ambient light from it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:76
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:73
 msgid ""
 "**Color+Sky** lets you define a sky (as above) but uses a constant color "
 "value for drawing the background. The sky will only be used for reflection "
 "and ambient light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:80
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:76
 msgid "Ambient Light"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:82
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:78
 msgid ""
 "Ambient (as defined here) is a type of light that affects every piece of "
 "geometry with the same intensity. It is global and independent of lights "
 "that might be added to the scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:86
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:82
 msgid ""
 "There are two types of ambient light: the *Ambient Color* (which is a "
 "constant color multiplied by the material albedo) and then one obtained from "
@@ -159,24 +163,24 @@ msgid ""
 "this to be enabled)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:94
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:89
 msgid ""
 "When a *Sky* is set as background, it's possible to blend between ambient "
 "color and sky using the **Sky Contribution** setting (this value is 1.0 by "
 "default for convenience so only sky affects objects)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:98
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:93
 msgid "Here is a comparison of how different ambient light affects a scene:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:102
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:97
 msgid ""
 "Finally there is a **Energy** setting, which is a multiplier, useful when "
 "working with HDR."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:104
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:99
 msgid ""
 "In general, ambient light should only be used for simple scenes, large "
 "exteriors, or for performance reasons (ambient light is cheap), as it does "
@@ -186,62 +190,62 @@ msgid ""
 "flat ambient color and a GIProbe:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:113
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:108
 msgid ""
 "Using one of the methods described above, objects get constant ambient "
 "lighting replaced by ambient light from the probes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:117
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:112
 msgid "Fog"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:119
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:114
 msgid ""
 "Fog, as in real life, makes distant objects fade away into an uniform color. "
 "The physical effect is actually pretty complex, but Godot provides a good "
 "approximation. There are two kinds of fog in Godot:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:123
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:118
 msgid ""
 "**Depth Fog:** This one is applied based on the distance from the camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:124
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:119
 msgid ""
 "**Height Fog:** This one is applied to any objects below (or above) a "
 "certain height, regardless of the distance from the camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:128
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:123
 msgid ""
 "Both of these fog types can have their curve tweaked, making their "
 "transition more or less sharp."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:130
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:125
 msgid "Two properties can be tweaked to make the fog effect more interesting:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:132
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:127
 msgid ""
 "The first is **Sun Amount**, which makes use of the Sun Color property of "
 "the fog. When looking towards a directional light (usually a sun), the color "
 "of the fog will be changed, simulating the sunlight passing through the fog."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:136
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:131
 msgid ""
 "The second is **Transmit Enabled** which simulates more realistic light "
 "transmittance. In practice, it makes light stand out more across the fog."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:142
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:137
 msgid "Tonemap"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:144
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:139
 msgid ""
 "Selects the tone-mapping curve that will be applied to the scene, from a "
 "short list of standard curves used in the film and game industry. Tone "
@@ -249,28 +253,28 @@ msgid ""
 "result is not that strong. Tone mapping options are:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:149
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:144
 msgid ""
 "**Mode:** Tone mapping mode, which can be Linear, Reindhart, Filmic, or Aces."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:150
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:145
 msgid ""
 "**Exposure:** Tone mapping exposure which simulates amount of light received "
 "over time."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:151
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:146
 msgid ""
 "**White:** Tone mapping white which simulates where in the scale is white "
 "located (by default 1.0)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:154
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:149
 msgid "Auto Exposure (HDR)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:156
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:151
 msgid ""
 "Even though, in most cases, lighting and texturing are heavily artist "
 "controlled, Godot supports a simple high dynamic range implementation with "
@@ -280,7 +284,7 @@ msgid ""
 "locations and their different amounts of light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:165
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:160
 msgid ""
 "The simplest way to use auto exposure is to make sure outdoor lights (or "
 "other strong lights) have energy beyond 1.0. This is done by tweaking their "
@@ -290,57 +294,57 @@ msgid ""
 "simulate indoor-oudoor conditions."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:171
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:166
 msgid ""
 "By combining Auto Exposure with *Glow* post processing (more on that below), "
 "pixels that go over the tonemap **White** will bleed to the glow buffer, "
 "creating the typical bloom effect in photography."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:177
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:172
 msgid ""
 "The user-controllable values in the Auto Exposure section come with sensible "
 "defaults, but you can still tweak then:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:182
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:177
 msgid ""
 "**Scale:** Value to scale the lighting. Brighter values produce brighter "
 "images, smaller ones produce darker ones."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:183
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:178
 msgid ""
 "**Min Luma:** Minimum luminance that auto exposure will aim to adjust for. "
 "Luminance is the average of the light in all the pixels of the screen."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:184
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:179
 msgid ""
 "**Max Luma:** Maximum luminance that auto exposure will aim to adjust for."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:185
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:180
 msgid ""
 "**Speed:** Speed at which luminance corrects itself. The higher the value, "
 "the faster correction happens."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:188
-msgid "Mid and Post-Processing Effects"
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:183
+msgid "Mid and post-processing effects"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:190
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:185
 msgid ""
 "A large amount of widely-used mid and post-processing effects are supported "
 "in Environment."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:194
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:189
 msgid "Screen-Space Reflections (SSR)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:196
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:191
 msgid ""
 "While Godot supports three sources of reflection data (Sky, ReflectionProbe, "
 "and GIProbe), they may not provide enough detail for all situations. "
@@ -349,59 +353,59 @@ msgid ""
 "floating on water, etc)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:203
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:198
 msgid ""
 "The other advantage (even if only enabled to a minimum), is that it works in "
 "real-time (while the other types of reflections are pre-computed). This is "
 "great to make characters, cars, etc. reflect when moving around."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:207
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:202
 msgid ""
 "A few user-controlled parameters are available to better tweak the technique:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:209
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:204
 msgid ""
 "**Max Steps** determines the length of the reflection. The bigger this "
 "number, the more costly it is to compute."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:210
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:205
 msgid ""
 "**Fade In** allows adjusting the fade-in curve, which is useful to make the "
 "contact area softer."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:211
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:206
 msgid ""
 "**Fade Out** allows adjusting the fade-out curve, so the step limit fades "
 "out softly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:212
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:207
 msgid ""
 "**Depth Tolerance** can be used for screen-space-ray hit tolerance to gaps. "
 "The bigger the value, the more gaps will be ignored."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:213
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:208
 msgid ""
 "**Roughness** will apply a screen-space blur to approximate roughness in "
 "objects with this material characteristic."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:215
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:210
 msgid ""
 "Keep in mind that screen-space-reflections only work for reflecting opaque "
 "geometry. Transparent objects can't be reflected."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:218
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:213
 msgid "Screen-Space Ambient Occlusion (SSAO)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:220
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:215
 msgid ""
 "As mentioned in the **Ambient** section, areas where light from light nodes "
 "does not reach (either because it's outside the radius or shadowed) are lit "
@@ -411,28 +415,28 @@ msgid ""
 "the smaller geometry level."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:227
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:222
 msgid ""
 "Constant ambient color and Sky are uniform and the same everywhere while GI "
 "and Reflection probes have more local detail but not enough to simulate "
 "situations where light is not able to fill inside hollow or concave features."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:231
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:226
 msgid ""
 "This can be simulated with Screen Space Ambient Occlusion. As you can see in "
 "the image below, the goal of it is to make sure concave areas are darker, "
 "simulating a narrower path for the light to enter:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:237
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:232
 msgid ""
 "It is a common mistake to enable this effect, turn on a light, and not be "
 "able to appreciate it. This is because SSAO only acts on *ambient* light, "
 "not direct light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:240
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:235
 msgid ""
 "This is why, in the image above, the effect is less noticeable under the "
 "direct light (at the left). If you want to force SSAO to work with direct "
@@ -440,47 +444,47 @@ msgid ""
 "correct, some artists like how it looks)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:244
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:239
 msgid ""
 "SSAO looks best when combined with a real source of indirect light, like "
 "GIProbe:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:248
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:243
 msgid "Tweaking SSAO is possible with several parameters:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:252
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:247
 msgid ""
 "**Radius/Intensity:** To control the radius or intensity of the occlusion, "
 "these two parameters are available. Radius is in world (Metric) units."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:253
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:248
 msgid ""
 "**Radius2/Intensity2:** A Secondary radius/intensity can be used. Combining "
 "a large and a small radius AO generally works well."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:254
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:249
 msgid ""
 "**Bias:** This can be tweaked to solve self occlusion, though the default "
 "generally works well enough."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:255
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:250
 msgid ""
 "**Light Affect:** SSAO only affects ambient light but increasing this slider "
 "can make it also affect direct light. Some artists prefer this effect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:256
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:251
 msgid ""
 "**Quality:** Depending on quality, SSAO will do more samplings over a sphere "
 "for every pixel. High quality only works well on modern GPUs."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:257
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:252
 msgid ""
 "**Blur:** Type of blur kernel used. The 1x1 kernel is a simple blur that "
 "preserves local detail better but is not as efficient (generally works "
@@ -489,65 +493,65 @@ msgid ""
 "detail as well."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:258
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:253
 msgid ""
 "**Edge Sharpness**: This can be used to preserve the sharpness of edges "
 "(avoids areas without AO on creases)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:261
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:256
 msgid "Depth of Field / Far Blur"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:263
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:258
 msgid ""
 "This effect simulates focal distance on high end cameras. It blurs objects "
 "behind a given range. It has an initial **Distance** with a **Transition** "
 "region (in world units):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:269
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:282
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:264
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:276
 msgid ""
 "The **Amount** parameter controls the amount of blur. For larger blurs, "
 "tweaking the **Quality** may be needed in order to avoid artifacts."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:274
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:268
 msgid "Depth of Field / Near Blur"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:276
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:270
 msgid ""
 "This effect simulates focal distance on high end cameras. It blurs objects "
 "close to the camera (acts in the opposite direction as far blur). It has an "
 "initial **Distance** with a **Transition** region (in world units):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:285
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:279
 msgid ""
 "It is common to use both blurs together to focus the viewer's attention on a "
 "given object:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:292
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:285
 msgid "Glow"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:294
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:287
 msgid ""
 "In photography and film, when light amount exceeds the maximum supported by "
 "the media (be it analog or digital), it generally bleeds outwards to darker "
 "regions of the image. This is simulated in Godot with the **Glow** effect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:300
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:293
 msgid ""
 "By default, even if the effect is enabled, it will be weak or invisible. One "
 "of two conditions need to happen for it to actually show:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:303
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:296
 msgid ""
 "The light in a pixel surpasses the **HDR Threshold** (where 0 is all light "
 "surpasses it, and 1.0 is light over the tonemapper **White** value). "
@@ -557,27 +561,27 @@ msgid ""
 "threshold."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:307
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:300
 msgid ""
 "The Bloom effect has a value set greater than 0. As it increases, it sends "
 "the whole screen to the glow processor at higher amounts."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:311
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:304
 msgid "Both will cause the light to start bleeding out of the brighter areas."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:313
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:306
 msgid "Once glow is visible, it can be controlled with a few extra parameters:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:315
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:308
 msgid ""
 "**Intensity** is an overall scale for the effect, it can be made stronger or "
 "weaker (0.0 removes it)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:316
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:309
 msgid ""
 "**Strength** is how strong the gaussian filter kernel is processed. Greater "
 "values make the filter saturate and expand outwards. In general changing "
@@ -585,78 +589,78 @@ msgid ""
 "**Levels**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:318
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:311
 msgid "The **Blend Mode** of the effect can also be changed:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:320
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:313
 msgid ""
 "**Additive** is the strongest one, as it just adds the glow effect over the "
 "image with no blending involved. In general, it's too strong to be used but "
 "can look good with low intensity Bloom (produces a dream-like effect)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:321
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:314
 msgid ""
 "**Screen** is the default one. It ensures glow never brights more than "
 "itself and works great as an all around."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:322
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:315
 msgid ""
 "**Softlight** is the weakest one, producing only a subtle color disturbance "
 "around the objects. This mode works best on dark scenes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:323
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:316
 msgid ""
 "**Replace** can be used to blur the whole screen or debug the effect. It "
 "just shows the glow effect without the image below."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:325
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:318
 msgid ""
 "To change the glow effect size and shape, Godot provides **Levels**. Smaller "
 "levels are strong glows that appear around objects while large levels are "
 "hazy glows covering the whole screen:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:331
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
 msgid ""
 "The real strength of this system, though, is to combine levels to create "
 "more interesting glow patterns:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:336
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:329
 msgid ""
 "Finally, as the highest layers are created by stretching small blurred "
 "images, it is possible that some blockiness may be visible. Enabling "
 "**Bicubic Upscaling** gets rids of it, at a minimal performance cost."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:343
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:336
 msgid "Adjustments"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:345
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:338
 msgid ""
 "At the end of processing, Godot offers the possibility to do some standard "
 "image adjustments."
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:350
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:343
 msgid ""
 "The first one is being able to change the typical Brightness, Contrast, and "
 "Saturation:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:355
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:348
 msgid ""
 "The second is by supplying a color correction gradient. A regular black to "
 "white gradient like the following one will produce no effect:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/environment_and_post_processing.rst:360
+#: ../../docs/tutorials/3d/environment_and_post_processing.rst:353
 msgid ""
 "But creating custom ones will allow to map each channel to a different color:"
 msgstr ""

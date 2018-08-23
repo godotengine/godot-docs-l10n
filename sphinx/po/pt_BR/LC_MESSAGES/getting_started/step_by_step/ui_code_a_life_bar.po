@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -522,7 +522,6 @@ msgstr ""
 "Um ícone de emissor aparece próximo ao nó que emite o sinal no painel Cena"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
-#, fuzzy
 msgid ""
 "At the bottom of the window you will find the path to the node you selected. "
 "We're interested in the second row called \"Method in Node\". This is the "
@@ -904,7 +903,6 @@ msgstr ""
 "Ao arredondar animated\\_health, acertamos dois coelhos com uma só cajadada"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
-#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -914,9 +912,9 @@ msgid ""
 "damage, it happens in an instant."
 msgstr ""
 "Toda vez que o jogador recebe um hit, o `` GUI`` chama `` "
-"_on_Player_health_changed``, que por sua vez chama `` update_health``. Isto "
+"_on_Player_health_changed``, que por sua vez chama `` update_health``. Isso "
 "atualiza a animação e o `` number_label`` e `` bar`` seguem em `` "
-"_process``. A barra de vida animada que mostra a saúde a baixando "
+"_process``. A barra de vida animada que mostra a saúde diminuindo "
 "gradualmente é um truque. Faz a GUI parecer viva. Se o `` Player`` receber 3 "
 "de dano, isso acontece em um instante."
 
@@ -925,7 +923,6 @@ msgid "Fade the bar when the Player dies"
 msgstr "Clareia a barra quando o jogador morre"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
-#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
@@ -938,7 +935,6 @@ msgstr ""
 "`` Tween`` enquanto ele gerencia múltiplas animações em paralelo para nós."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
-#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "

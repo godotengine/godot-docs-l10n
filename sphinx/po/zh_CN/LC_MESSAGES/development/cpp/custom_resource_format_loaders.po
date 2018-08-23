@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:4
-msgid "Custom Resource Format Loaders"
+#, fuzzy
+msgid "Custom resource format loaders"
 msgstr "自定义资源格式"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:7
@@ -44,73 +45,73 @@ msgstr ""
 "本文假设读者已经知道如何创建 C++ 模块并对 Godot 的数据类型有所了解。 如果你还"
 "不具备这些知识，你需要先阅读本教程的其他文档。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:19
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:40
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:211
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:210
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:244
-msgid "References:"
-msgstr "参阅资料:"
+msgid "References"
+msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:20
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
 msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:22
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:21
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L258>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:25
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:24
 msgid "What for?"
 msgstr "用于做什么？"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:27
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:26
 msgid "Adding new support for many file formats"
 msgstr "添加各种新的资源文件格式支持"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:28
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:27
 msgid "Audio formats"
 msgstr "音效格式"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:29
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:28
 msgid "Video formats"
 msgstr "视频格式"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:30
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:29
 msgid "Machine learning models"
 msgstr "机器学习模型"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:33
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:32
 msgid "What not?"
 msgstr "不能用于做什么？"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:35
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:34
 msgid "Raster images"
 msgstr "栅格图像"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:37
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:36
 msgid "ImageFormatLoader should be used to load images."
 msgstr "我们使用 ImageFormatLoader 来加载图片。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:42
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:41
 msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:46
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
 msgstr "创建一个 ResourceFormatLoader"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:48
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:47
 msgid ""
 "Each file format consist of a data container and a ``ResourceFormatLoader``."
 msgstr ""
 "每一种文件格式对应着一种数据的容器（Resource）和一个 "
 "``ResourceFormatLoader``。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:50
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:49
 msgid ""
 "ResourceFormatLoaders are usually simple classes which return all the "
 "necessary metadata for supporting new extensions in Godot. The class must "
@@ -119,7 +120,7 @@ msgstr ""
 "ResourceFormatLoaders 通常是一个个简单的类，它返回所有必要的元数据以支持 "
 "Godot 中的新扩展。 该类必须返回格式名称和扩展名。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:54
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:53
 msgid ""
 "In addition, ResourceFormatLoaders must convert file paths into resources "
 "with the ``load`` function. To load a resource, ``load`` must read and "
@@ -128,11 +129,12 @@ msgstr ""
 "此外，ResourceFormatLoaders 必须使用 ``load`` 函数将文件路径转换为资源"
 "( Resource )。 要加载资源，``load`` 必须能够读取和处理序列化的资源数据。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:111
-msgid "Creating Custom Data Types"
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:110
+#, fuzzy
+msgid "Creating custom data types"
 msgstr "创建自定义数据类型"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:113
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:112
 msgid ""
 "Godot may not have a proper substitute within its :ref:`doc_core_types` or "
 "managed resources. Godot needs a new registered data type to understand "
@@ -141,15 +143,15 @@ msgstr ""
 "在 Godot 的 :ref:`doc_core_types` 或现有的资源类型中可能没有适当的替代品。 这"
 "时你需要一种新的注册数据类型来支持更多的二进制格式，例如机器学习模型。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:117
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:116
 msgid "Here is an example of how to create a custom datatype"
 msgstr "这里有一个创建自定义数据类型的例子"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:174
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:173
 msgid "Considerations"
 msgstr "注意事项"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:176
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:175
 msgid ""
 "Some libraries may not define certain common routines such as i/o handling. "
 "Therefore, Godot call translations are required."
@@ -157,7 +159,7 @@ msgstr ""
 "某些库可能没有提供某些特定的例程，如 I/O 处理。 因此，需要使用 Godot 进行转"
 "译。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:179
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:178
 msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
 "``std::istream``."
@@ -180,7 +182,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:217
-msgid "Registering the New File Format"
+#, fuzzy
+msgid "Registering the new file format"
 msgstr "注册新的文件格式"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:219
@@ -191,7 +194,7 @@ msgstr ""
 "Godot 用 ``ResourceLoader`` 句柄注册 ``ResourcesFormatLoader``。 当调用 "
 "``load`` 时，会自动选择合适的句柄进行加载。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:245
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:246
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L280>`__"

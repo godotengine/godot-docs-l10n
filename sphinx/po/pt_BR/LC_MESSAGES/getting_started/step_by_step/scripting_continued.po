@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -330,3 +330,37 @@ msgstr ""
 "mantida carregada e pronta para uso, de forma que você possa gerar quantas "
 "instâncias desejar. É útil especialmente para, rapidamente, criar instâncias "
 "de vários inimigos, balas e outras entidades na cena ativa."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
+msgid "Register scripts as classes"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
+msgid ""
+"Godot has a \"Script Class\" feature to register individual scripts with the "
+"Editor. By default, you can only access unnamed scripts by loading the file "
+"directly."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
+msgid ""
+"You can name a script and register it as a type in the editor with the "
+"``class_name`` keyword followed by the class's name. You may add a comma and "
+"an optional path to an image to use as an icon. You will then find your new "
+"type in the Node or Resource creation dialog."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
+#, fuzzy
+msgid "In Godot 3.1:"
+msgstr "Oi, Godette v3.11"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
+msgid ""
+"Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
+"languages, can register scripts."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+msgid "Only GDScript creates global variables for each named script."
+msgstr ""

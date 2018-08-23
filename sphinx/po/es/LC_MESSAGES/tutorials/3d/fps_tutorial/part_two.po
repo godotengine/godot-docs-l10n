@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -226,7 +226,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:216
 msgid ""
-"Next we see if :ref:`AnimationPlayer <class_AnimationPlayer>` has the a "
+"Next we see if :ref:`AnimationPlayer <class_AnimationPlayer>` has the "
 "animation with the name ``animation_name`` using ``has_animation``. If it "
 "does not, we return ``false``."
 msgstr ""
@@ -387,7 +387,7 @@ msgstr ""
 msgid ""
 "Scrubbing the timeline means moving ourselves through the animation. So when "
 "we say \"scrub the timeline until you reach a point\", what we mean is move "
-"through the animation window until you reach the a point on the timeline."
+"through the animation window until you reach the point on the timeline."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:301
@@ -1589,7 +1589,7 @@ msgid ""
 "If the current weapon is not ``null``, then we have need to check to see if "
 "the weapon is enabled or not. If the weapon is enabled, we call it's "
 "``unequip_weapon`` function so it will start the unequip animation. If the "
-"weapon is not enabled, we set ``weapon_unequippped`` to ``true`` because the "
+"weapon is not enabled, we set ``weapon_unequipped`` to ``true`` because the "
 "weapon has successfully been unequipped."
 msgstr ""
 
@@ -1648,7 +1648,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1160
 msgid ""
-"We need to add ``fire_bullet``, which will be called when by the :ref:"
+"We need to add ``fire_bullet``, which will be called by the :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` at those points we set earlier in "
 "the :ref:`AnimationPlayer <class_AnimationPlayer>` function track:"
 msgstr ""
@@ -1720,15 +1720,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
 msgid ""
 "We need to boost the directional vector by ``BASE_BULLET_BOOST`` so the "
-"bullet's back a bit more of a punch and move the :ref:`RigidBody "
-"<class_RigidBody>` nodes in a visible way. You can just "
+"bullets pack a bit more of a punch and move the :ref:`RigidBody "
+"<class_RigidBody>` nodes in a visible way. You can just set "
 "``BASE_BULLET_BOOST`` to lower or higher values if you want less or more of "
 "a reaction when the bullets collide with the :ref:`RigidBody "
 "<class_RigidBody>`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1223
-msgid "Then we apply a impulse using ``apply_impulse``."
+msgid "Then we apply an impulse using ``apply_impulse``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1225
@@ -1747,8 +1747,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1231
 msgid ""
 "Finally, we need to calculate the force for the impulse. For this we use the "
-"bullet is facing and multiply it by the bullet's damage. This gives a nice "
-"result and for stronger bullets, we get a stronger result."
+"direction the bullet is facing and multiply it by the bullet's damage. This "
+"gives a nice result and for stronger bullets, we get a stronger result."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1236

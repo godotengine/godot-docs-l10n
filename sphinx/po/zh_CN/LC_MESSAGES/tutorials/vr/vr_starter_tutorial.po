@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:4
-msgid "VR Starter Tutorial"
+msgid "VR starter tutorial"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:7
-msgid "Tutorial introduction"
-msgstr ""
+msgid "Introduction"
+msgstr "简介"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:11
 msgid ""
@@ -871,30 +871,30 @@ msgid ""
 "``RAYCAST`` as the grab mode."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:594
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:593
 msgid "Let's look at ``button_released`` next."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:596
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:595
 msgid ""
 "If the button released is button ``15``, the trigger, then we potentially "
 "want to teleport."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:598
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:597
 msgid ""
 "First, we check to see if ``teleport_button_down`` is ``true``. If it is, "
 "that means the player is intending to teleport, while if it is ``false``, "
 "the player has simply released the trigger while holding a object."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:601
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:600
 msgid ""
 "We then check to see if this controller has a teleport position, and we "
 "check to make sure the teleport mesh is visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:603
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:602
 msgid ""
 "If both of those conditions are ``true``, we then calculate the offset the :"
 "ref:`ARVRCamera <class_ARVRCamera>` has from the :ref:`ARVROrigin "
@@ -903,7 +903,7 @@ msgid ""
 "scale tracking."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:606
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:605
 msgid ""
 "Because we want to teleport the player in their current position to the "
 "teleport position, and remember because of room scale tracking their current "
@@ -912,31 +912,31 @@ msgid ""
 "teleported to the teleport position."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:609
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:608
 msgid ""
 "We set the Y value of the camera_offset to zero because we do not want to "
 "account for offsets in the player's height."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:611
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:610
 msgid ""
 "Then we teleport the :ref:`ARVROrigin <class_ARVROrigin>` to the teleport "
 "position, applying the camera offset."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:613
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:612
 msgid ""
 "Regardless of whether we teleported or not, we reset all of the teleport "
 "related variables so the controller has to get new ones before teleporting "
 "again."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:617
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:616
 msgid ""
 "Finally, let's look at ``sleep_area_entered`` and ``sleep_area_exited``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:619
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:618
 msgid ""
 "When a body enters or exists the sleep area, we check to see if it has a "
 "variable called ``can_sleep``. If it does, we then set it to ``false`` and "
@@ -945,37 +945,37 @@ msgid ""
 "(and so we save some performance!)"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:624
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:623
 msgid ""
 "Okay, phew! That was a lot of code! Add the same script, ``VR_Controller."
 "gd`` to the other controller so both controllers have the same script."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:626
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:625
 msgid ""
 "Now go ahead and try the game again, and you should find you can teleport "
 "around by pressing the touch pad, and can grab and throw objects using the "
 "grab/grip buttons."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:629
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:628
 msgid ""
 "Now, you may want to try moving using the trackpads and/or joysticks, but "
 "**it may make you motion sick!**"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:631
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:630
 msgid ""
 "One of the main reasons this can make you feel motion sick is because your "
 "vision tells you that you are moving, while your body is not moving. This "
 "conflict of signals makes the body feel sick, so lets fix it!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:635
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:634
 msgid "Reducing motion sickness"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:637
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:636
 msgid ""
 "There are plenty of ways to reduce motion sickness in VR, and there is no "
 "one perfect way to reduce motion sickness. See: https://developer.oculus.com/"
@@ -983,13 +983,13 @@ msgid ""
 "implement locomotion, and how to reduce motion sickness."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:641
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:640
 msgid ""
 "To help reduce motion sickness while moving, we are going to add a vignette "
 "effect that will only be visible while the player moves."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:643
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:642
 msgid ""
 "Open up ``Movement_Vignette.tscn``, which you can find in the ``Scenes`` "
 "folder. Notice how it is just a :ref:`ColorRect <class_ColorRect>` node with "
@@ -998,41 +998,41 @@ msgid ""
 "Godot demo repository."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:646
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:645
 msgid ""
 "With ``Movement_Vignette`` selected, make a new script called "
 "``Movement_Vignette.gd``. Add the following code to ``Movement_Vignette.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:682
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:681
 msgid ""
 "Because this script is fairly simple, let's quickly go over what it does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:684
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:683
 msgid ""
 "In ``_ready``, we wait for four frames. We do this to ensure the VR "
 "interface is ready and going."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:686
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:685
 msgid ""
 "Next, we get the current VR interface, and resize the :ref:`ColorRect "
 "<class_ColorRect>` node's size and position so that it covers the entire "
 "view in VR."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:688
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:687
 msgid ""
 "Then we get the left and right controllers, assigning them to "
 "``controller_one`` and ``controller_two``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:690
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:689
 msgid "We then make the vignette invisible by default."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:692
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:691
 msgid ""
 "In ``_process`` we check to see if either of the controllers are moving the "
 "player by checking ``directional_movement``. If either controller is moving "
@@ -1040,192 +1040,192 @@ msgid ""
 "moving the player, we make the vignette invisible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:697
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:696
 msgid ""
 "With that done, go ahead and try moving around with the joystick and/or the "
 "trackpad. You should find it is much less motion sickness inducing than "
 "before!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:699
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:698
 msgid ""
 "Let's add some special :ref:`RigidBody <class_RigidBody>` nodes we can "
 "interact with next."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:702
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:701
 #, fuzzy
 msgid "Adding destroyable targets"
 msgstr "添加脚本"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:704
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:703
 msgid ""
 "First, let's start by making some targets we will destroy in various "
 "different ways with various different special :ref:`RigidBody "
 "<class_RigidBody>` nodes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:706
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:705
 msgid ""
 "Open up ``Sphere_Target.tscn``, which you can find in the ``Scenes`` folder. "
 "``Sphere.tscn`` is just a :ref:`StaticBody <class_StaticBody>` with a :ref:"
 "`CollisionShape <class_CollisionShape>`, a mesh, and a audio player."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:709
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:708
 msgid ""
 "Select the ``Sphere_Target`` root node, the :ref:`StaticBody "
 "<class_StaticBody>` node, and make a new script called ``Sphere_Target.gd``. "
 "Add the following to ``Sphere_Target.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:756
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:755
 msgid "Let's go over how this script works, starting with the class variables."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:758
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:757
 msgid "``destroyed`` : A variable to track if this target is destroyed or not."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:759
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:758
 msgid ""
 "``destroyed_timer`` : A variable to track how long the target has been "
 "destroyed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:760
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:759
 msgid ""
 "``DESTROY_WAIT_TIME`` : A constant to tell the sphere target how long to "
 "wait before destroying/deleting itself."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:761
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:760
 msgid "``health`` : The amount of health the target has."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:762
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:761
 msgid ""
 "``RIGID_BODY_TARGET`` : The target broken into several smaller :ref:"
 "`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:766
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:918
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:765
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:916
 msgid "Let's go over ``_ready``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:768
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:767
 msgid ""
 "All we are doing in ``_ready`` is setting ``_physics_process`` to ``false``. "
 "This is because we will only use ``_physics_process`` for destroying the "
 "target, so we do not want to call it until the target is broken."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:773
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:772
 msgid "Next, let's go over ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:775
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:774
 msgid ""
 "First we add time to ``destroyed_timer``. Then we check to see if enough "
 "time has passed and we can destroy the target. If enough time has passed, we "
 "free/destroy the target using ``queue_free``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:780
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:779
 msgid "Finally, let's go over ``damage``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:782
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:781
 msgid "First, we check to make sure the target has not already been destroyed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:784
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:783
 msgid ""
 "Then, we remove however much damage the target has taken from the target's "
 "health."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:786
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:785
 msgid ""
 "If the target has zero or less health, then it has taken enough damage to "
 "break."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:788
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:787
 msgid ""
 "First, we disable the collision shape and make the whole target mesh "
 "invisible. Next, we spawn/instance the :ref:`RigidBody <class_RigidBody>` "
 "version of the target, and instance it at this target's position."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:791
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:790
 msgid ""
 "Then we set ``destroyed`` to ``true`` and start processing "
 "``_physics_process``. Finally, we play a sound, and remove a sphere from "
 "``Game.gd`` by calling ``remove_sphere``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:797
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:795
 msgid ""
 "Now, you may have noticed we are calling a function in ``Game.gd`` we have "
 "not made yet, so let's fix that!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:799
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:797
 #, fuzzy
 msgid ""
 "First, open up ``Game.gd`` and add the following additional class variables:"
 msgstr "添加一条脚本到``Mob``然后添加以下成员变量:"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:806
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:804
 msgid "``spheres_left`` : The amount of sphere targets left in the game world."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:807
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:805
 msgid "``sphere_ui`` : A reference to the sphere UI. We will use this later!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:809
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:807
 msgid ""
 "Next, we need to add the ``remove_sphere`` function. Add the following to "
 "``Game.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:819
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:817
 msgid "What this function does is it removes one from ``spheres_left``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:821
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:819
 msgid ""
 "Then it checks to see if ``sphere_ui`` is not null, and if it is not, then "
 "it calls it's ``update_ui`` function, passing in the amount of sphere's "
 "left. We'll add the UI code later in this part."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:824
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:822
 msgid "Now that we have destroyable targets, we need a way to destroy them!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:827
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:825
 #, fuzzy
 msgid "Adding a pistol"
 msgstr "添加脚本"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:829
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:827
 msgid "Okay, let's add a simple pistol."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:831
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:829
 msgid "Open up ``Pistol.tscn``, which you will find in the ``Scenes`` folder."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:833
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:831
 #, fuzzy
 msgid "There is a few things to note here."
 msgstr "Godot没有任何使用限制"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:835
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:833
 msgid ""
 "The first thing to note is how everything is rotated. This is to make the "
 "pistol rotate correctly when the player grabs it. The other thing to notice "
@@ -1233,106 +1233,106 @@ msgid ""
 "you'd expect: act as a laser pointer and act as a muzzle flash respectively."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:838
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:836
 msgid ""
 "The other thing to notice is how there is a :ref:`Raycast <class_Raycast>` "
 "node at the end of the pistol. This is what we will be using to calculate "
 "where the bullets impact."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:840
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:838
 msgid ""
 "Now that we have looked at the scene, let's write the code. Select the "
 "``Pistol`` root node, the :ref:`RigidBody <class_RigidBody>` node, and make "
 "a new script called ``Pistol.gd``. Add the following code to ``Pistol.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:907
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:905
 msgid "Let's go over what this script does, starting with the class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:909
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:907
 msgid "``flash_mesh`` : The mesh used to make the muzzle flash."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:910
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:908
 msgid "``FLASH_TIME`` : The length of time the muzzle flash is visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:911
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:909
 msgid ""
 "``flash_timer``: A variable to track how long the muzzle flash has been "
 "visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:912
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:910
 msgid "``laser_sight_mesh``: A long rectangular mesh used for the laser sight."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:913
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:911
 msgid "``raycast``: The raycast node used for the pistol firing."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:914
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:912
 msgid "``BULLET_DAMAGE``: The amount of damage a single bullet does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:920
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:918
 msgid ""
 "All we are doing here is getting the nodes and assigning them to the proper "
 "variables. We also make sure the flash and laser sight meshes are invisible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:925
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:923
 msgid "Next, let's look at ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:927
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:925
 msgid ""
 "First, we check to see if the flash is visible. We do this by checking to "
 "see if ``flash_timer`` is more than zero. This is because ``flash_timer`` "
 "will be a inverted timer, a timer that counts down instead of counting up."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:930
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:928
 msgid ""
 "If ``flash_timer`` is more than zero, we remove ``delta`` from it and check "
 "to see if it is equal to zero or less. If it is, we make the flash mesh "
 "invisible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:933
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:931
 msgid ""
 "This makes it where the flash mesh becomes invisible after ``FLASH_TIME`` "
 "many seconds has gone by."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:937
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:935
 msgid ""
 "Now let's look at ``interact``, which is called when the trigger button on "
 "the VR controller is pressed and the pistol is being held."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:939
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:937
 msgid ""
 "First, we check to see if the flash timer is less than or equal to zero. "
 "This check makes it where we cannot fire when the flash is visible, limiting "
 "how many bullets the pistol can fire."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:942
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:940
 msgid ""
 "If we can fire, we reset ``flash_timer`` by setting it to ``FLASH_TIME``, "
 "and we make the flash mesh visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:944
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:942
 msgid ""
 "We then update the :ref:`Raycast <class_Raycast>` and check to see if it is "
 "colliding with anything."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:946
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:944
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we get "
 "the collider. We check to see if the collider has the ``damage`` function, "
@@ -1342,44 +1342,44 @@ msgid ""
 "the collider."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:950
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:948
 msgid ""
 "Finally, regardless of whether the pistol hit something or not, we play the "
 "pistol firing sound."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:954
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:952
 msgid ""
 "Finally, let's look at ``picked_up`` and ``dropped``, which are called when "
 "the pistol is picked up and dropped respectively."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:956
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:954
 msgid ""
 "All we are doing in these functions is making the laser pointer visible when "
 "the pistol is picked up, and making it invisible when the pistol is dropped."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:962
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:960
 msgid ""
 "With that done, go ahead and give the game a try! If you climb up the stairs "
 "and grab the pistols, you should be able to fire at the spheres and they "
 "will break!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:965
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:963
 #, fuzzy
 msgid "Adding a shotgun"
 msgstr "添加脚本"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:967
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:965
 msgid ""
 "Let's add a different type of shooting :ref:`RigidBody <class_RigidBody>`: A "
 "shotgun. This is fairly simple to do, and almost everything is the same as "
 "the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:969
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:967
 msgid ""
 "Open up ``Shotgun.tscn``, which you can find in ``Scenes``. Notice how "
 "everything is more or less the same, but instead of a single :ref:`Raycast "
@@ -1390,38 +1390,38 @@ msgid ""
 "the player has to aim without knowing for sure where the shotgun is pointing."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:974
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:972
 msgid ""
 "Alright, select the ``Shotgun`` root node, the :ref:`RigidBody "
 "<class_RigidBody>` and make a new script called ``Shotgun.gd``. Add the "
 "following to ``Shotgun.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1034
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1032
 msgid ""
 "You may have noticed this is almost exactly the same as the pistol, and "
 "indeed it is, so let's only go over what has changed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1036
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1034
 msgid ""
 "``raycasts``: The node that holds all of the five :ref:`Raycast "
 "<class_Raycast>` nodes used for the shotgun's firing."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1038
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1036
 msgid ""
 "In ``_ready``, we get the ``Raycasts`` node, instead of just a single :ref:"
 "`Raycast <class_Raycast>`."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1040
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1038
 msgid ""
 "The only other change, besides there being nothing in ``picked_up`` and "
 "``dropped`` is in ``interact``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1042
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1040
 msgid ""
 "Now we go through each :ref:`Raycast <class_Raycast>` in ``raycasts``. We "
 "then rotate it on the X and Z axis, making within a ``10`` to ``-10`` cone. "
@@ -1431,35 +1431,35 @@ msgid ""
 "<class_Raycast>` in ``raycasts``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1048
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1046
 msgid ""
 "Now you can find and fire the shotgun too! The shotgun is located around the "
 "back behind one of the walls (not in the building though!)"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1051
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1049
 #, fuzzy
 msgid "Adding a bomb"
 msgstr "添加脚本"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1053
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1051
 msgid ""
 "While both of those are well and good, let's add something we can throw "
 "next! Let's add a bomb!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1055
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1053
 msgid "Open up ``Bomb.tscn``, which you will find in the ``Scenes`` folder."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1057
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1055
 msgid ""
 "First, notice how there is a rather large :ref:`Area <class_Area>` node. "
 "This is the explosion radius for the bomb. Anything within this :ref:`Area "
 "<class_Area>` will be effected by the explosion when the bomb explodes."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1060
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1058
 msgid ""
 "The other thing to note is how there are two sets of :ref:`Particles "
 "<class_Particles>`: One for smoke coming out of the fuse, and another for "
@@ -1467,7 +1467,7 @@ msgid ""
 "<class_Particles>` nodes if you want!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1063
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1061
 msgid ""
 "The only thing to notice his how long the explosion :ref:`Particles "
 "<class_Particles>` node will last, their lifetime, which is 0.75 seconds. We "
@@ -1475,88 +1475,88 @@ msgid ""
 "explosion :ref:`Particles <class_Particles>`."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1066
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1064
 msgid ""
 "Alright, now let's write the code for the bomb. Select the ``Bomb`` :ref:"
 "`RigidBody <class_RigidBody>` node and make a new script called ``Bomb.gd``. "
 "Add the following code to ``Bomb.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1157
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1155
 msgid ""
 "Let's go through what this script does, starting with the class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1159
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1157
 msgid ""
 "``bomb_mesh``: The :ref:`MeshInstance <class_MeshInstance>` used for the "
 "bomb mesh."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1160
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1158
 msgid "``FUSE_TIME``: The length of time the fuse burns for."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1161
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1159
 msgid ""
 "``fuse_timer``: A variable for tracking how long the fuse has been burning."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1162
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1160
 msgid ""
 "``explosion_area``: The :ref:`Area <class_Area>` node used for detecting "
 "what nodes are inside the explosion."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1163
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1161
 msgid "``EXPLOSION_DAMAGE``: The amount of damage the explosion does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1164
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1162
 msgid ""
 "``EXPLOSION_TIME``: The length of time the explosion :ref:`Particles "
 "<class_Particles>` take (you can calculate this number by multiplying the "
 "particles ``lifetime`` by it's ``speed scale``)"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1165
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1163
 msgid ""
 "``explosion_timer``: A variable for tracking how long the explosion has "
 "lasted."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1166
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1164
 msgid "``explode``: A boolean for tracking whether the bomb has exploded."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1167
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1165
 msgid "``fuse_particles``: The fuse :ref:`Particles <class_Particles>` node."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1168
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1166
 msgid ""
 "``explosion_particles``: The explosion :ref:`Particles <class_Particles>` "
 "node."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1169
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1167
 msgid ""
 "``controller``: The controller that is currently holding the bomb, if there "
 "is one. This is set by the controller, so we do not need to check anything "
 "outside of checking if it is ``null``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1173
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1171
 msgid "Let's go through ``_ready``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1175
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1173
 msgid ""
 "First, we get all of the nodes and assign them to the proper variables for "
 "later use."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1177
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1175
 msgid ""
 "Then, we make sure ``_physics_process`` is not going to be called. We do "
 "this since we will be using ``_physics_process`` only for the fuse and for "
@@ -1564,24 +1564,24 @@ msgid ""
 "the fuse to start when the player interacts while holding a bomb."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1182
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1180
 msgid "Now let's look at ``_physics_process``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1184
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1182
 msgid ""
 "First we check to see if ``fuse_timer`` is less than ``FUSE_TIME``. If "
 "``fuse_timer`` is less than ``FUSE_TIME``, then the bomb must be burning "
 "down the fuse."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1186
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1184
 msgid ""
 "We then add time to ``fuser_timer``, and check to see if the bomb has waited "
 "long enough and has burned through the entire fuse."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1188
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1186
 msgid ""
 "If the bomb has waited long enough, then we need to explode the bomb. We do "
 "this first by stopping the smoke :ref:`Particles <class_Particles>` from "
@@ -1589,7 +1589,7 @@ msgid ""
 "We also hide the bomb mesh so it is no longer visible."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1191
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1189
 msgid ""
 "Next, we make the set the collision layer and mask to zero, and set the :ref:"
 "`RigidBody <class_RigidBody>` mode to static. This makes it where the now "
@@ -1597,7 +1597,7 @@ msgid ""
 "place."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1194
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1192
 msgid ""
 "Then we go through everything inside the explosion :ref:`Area <class_Area>`. "
 "We make sure the bodies inside the explosion :ref:`Area <class_Area>` are "
@@ -1607,19 +1607,19 @@ msgid ""
 "``apply_impulse`` method/function, and call that instead."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1198
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1196
 msgid ""
 "Then we set ``explode`` to true since the bomb has exploded, and we play a "
 "sound."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1201
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1199
 msgid ""
 "Next we check to see if the bomb has exploded, as we need to wait until the "
 "explosion :ref:`Particles <class_Particles>` are done."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1203
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1201
 msgid ""
 "If the bomb has exploded, we add time to ``explosion_timer``. We then check "
 "to see if the explosion :ref:`Particles <class_Particles>` are done. If they "
@@ -1630,18 +1630,18 @@ msgid ""
 "free/destroy the bomb using ``queue_free``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1209
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1207
 msgid "Finally, let's look at ``interact``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1211
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1209
 msgid ""
 "All we are doing here is making it where ``_physics_process`` will be "
 "called, which will start the fuse. We also make the fuse :ref:`Particles "
 "<class_Particles>` start emitting, so smoke comes out the top of the bomb."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1216
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1214
 msgid ""
 "With that done, the bombs are ready to go! You can find them in the orange "
 "building. Because of how we are calculating velocity, it is easiest to throw "
@@ -1650,20 +1650,20 @@ msgid ""
 "the because of how we are tracking velocity it does not always work."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1221
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1219
 #, fuzzy
 msgid "Adding a sword"
 msgstr "添加脚本"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1223
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1221
 msgid "Finally, let's add a sword so we can slice through things!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1225
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1223
 msgid "Open up ``Sword.tscn``, which you will find in ``Scenes``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1227
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1225
 msgid ""
 "There is not a whole lot to note here, but there is just one thing, and that "
 "is how the length of the blade of the sword is broken into several small :"
@@ -1672,7 +1672,7 @@ msgid ""
 "could figure out how to do this."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1230
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1228
 msgid ""
 "If you know how to find the point where a :ref:`Area <class_Area>` and a :"
 "ref:`CollisionObject <class_CollisionObject>` meet, please let me know and/"
@@ -1680,7 +1680,7 @@ msgid ""
 "ref:`Area <class_Area>` nodes works okay, but it is not ideal."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1233
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1231
 msgid ""
 "Other than that, there really is not much of note, so let's write the code. "
 "Select the ``Sword`` root node, the :ref:`RigidBody <class_RigidBody>` and "
@@ -1688,27 +1688,27 @@ msgid ""
 "gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1297
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1295
 msgid ""
 "Let's go over what this script does, starting with the two class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1299
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1297
 msgid "``SWORD_DAMAGE`` : The amount of damage a single sword slice does."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1300
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1298
 msgid ""
 "``controller`` : The controller that is holding the sword, if there is one. "
 "This is set by the controller, so we do not need to set it here in ``Sword."
 "gd``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1304
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1302
 msgid "Let's go over ``_ready`` next."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1306
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1304
 msgid ""
 "All we are doing here is connecting each of the :ref:`Area <class_Area>` "
 "nodes ``body_entered`` signal to the ``body_entered_sword`` function, "
@@ -1717,27 +1717,27 @@ msgid ""
 "collided."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1311
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1309
 msgid "Now let's go over ``body_entered_sword``."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1313
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1311
 msgid "First, we make sure the body the sword has collided with is not itself."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1315
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1313
 msgid ""
 "Then we figure out which part of the sword the body collided with, using the "
 "passed in number."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1317
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1315
 msgid ""
 "Next, we check to see if the body the sword collided with has the ``damage`` "
 "function, and if it does, we call it and play a sound."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1319
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1317
 msgid ""
 "If it does not have the damage function, we then check to see if it has the "
 "``apply_impulse`` function. If it does, we then calculation the direction "
@@ -1745,7 +1745,7 @@ msgid ""
 "if the sword is being held or not."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1322
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1320
 msgid ""
 "If the sword is not being held, we use the :ref:`RigidBody "
 "<class_RigidBody>`'s velocity as the force in ``apply_impulse``, while if "
@@ -1753,26 +1753,26 @@ msgid ""
 "the impulse."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1325
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1323
 msgid "Finally, we play a sound."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1331
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1329
 msgid ""
 "With that done, you can now slice through the targets! You can find the "
 "sword in the corner in between the shotgun and the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1334
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1332
 #, fuzzy
 msgid "Updating the target UI"
 msgstr "导入项目"
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1336
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1334
 msgid "Okay, let's update the UI as the sphere targets are destroyed."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1338
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1336
 msgid ""
 "Open up ``Game.tscn`` and then expand the ``GUI`` :ref:`MeshInstance "
 "<class_MeshInstance>`. From there, expand the ``GUI`` :ref:`Viewport "
@@ -1780,11 +1780,11 @@ msgid ""
 "script called ``Base_Control``, and add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1358
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1356
 msgid "Let's go over what this script does quickly, as it is fairly simple."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1360
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1358
 msgid ""
 "First, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
 "many spheres are left and assign it to the ``sphere_count_label`` class "
@@ -1792,7 +1792,7 @@ msgid ""
 "``sphere_ui`` to this script."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1363
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1361
 msgid ""
 "In ``update_ui`` we change the sphere :ref:`Label <class_Label>`'s text. If "
 "there is at least one sphere remaining, we change the text to show how many "
@@ -1800,79 +1800,79 @@ msgid ""
 "remaining, we change the text and congratulate the player."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1367
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1365
 msgid "Adding the final special RigidBody"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1369
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1367
 msgid ""
 "Finally, before we finish this tutorial, let's add a way to reset the game "
 "while in VR."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1371
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1369
 msgid ""
 "Open up ``Reset_Box.tscn``, which you will find in ``Scenes``. Select the "
 "``Reset_Box`` :ref:`RigidBody <class_RigidBody>` node and make a new script "
 "called ``Reset_Box.gd``. Add the following code to ``Reset_Box.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1410
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1408
 msgid "Let's go over what this does quickly, as it is also fairly simple."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1412
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1410
 msgid ""
 "First, we get the starting global :ref:`Transform <class_Transform>` in "
 "``_ready``, and assign it to ``start_transform``. We will use this to reset "
 "the position of the reset box ever so often."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1414
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1412
 msgid ""
 "In ``_physics_process`` we check to see if enough time has passed to reset. "
 "If it has, we reset the box's :ref:`Transform <class_Transform>` and then "
 "reset the timer."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1416
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1414
 msgid ""
 "If the player interacts while holding the reset box, we reset the scene by "
 "calling ``get_tree().change_scene`` and passing in the path to the current "
 "scene. This resets/restarts the scene completely."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1419
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1417
 msgid ""
 "When the reset box is dropped, we reset the :ref:`Transform "
 "<class_Transform>` and timer."
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1423
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1421
 msgid ""
 "With that done, when you grab and interact with the reset box, the entire "
 "scene will reset/restart and you can destroy all of the targets again!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1426
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1424
 msgid "Final notes"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1430
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1428
 msgid "Phew! That was a lot of work. Now you have a fairly simple VR project!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1432
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1430
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1434
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1432
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`VR_Starter_Tutorial_Complete.zip <files/VR_Starter_Tutorial_Complete.zip>`"
 msgstr ""
 
-#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1436
+#: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1434
 msgid ""
 "This hopefully will serve as a introduction into making fully featured VR "
 "games in Godot! The code written here can be expanded to make puzzle games, "

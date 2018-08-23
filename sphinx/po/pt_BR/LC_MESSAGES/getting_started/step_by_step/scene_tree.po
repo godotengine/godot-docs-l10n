@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,6 @@ msgstr ""
 "árvore de cena *."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
-#, fuzzy
 msgid ""
 "This concept deserves going into a little more detail. In fact, the scene "
 "system is not even a core component of Godot as it is possible to skip it "
@@ -62,7 +61,6 @@ msgid "MainLoop"
 msgstr "Loop principal"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:24
-#, fuzzy
 msgid ""
 "The way Godot works internally is as follows. There is the :ref:`OS "
 "<class_OS>` class, which is the only instance that runs at the beginning. "
@@ -101,7 +99,6 @@ msgstr ""
 "próprio MainLoop raramente faz sentido."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
-#, fuzzy
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
@@ -136,18 +133,16 @@ msgstr ""
 "É importante saber que essa classe existe porque tem alguns usos importantes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
-#, fuzzy
 msgid ""
 "It contains the root :ref:`Viewport <class_Viewport>`, to which a scene is "
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)"
 msgstr ""
 "Ele contém a raiz: ref: `Viewport <class_Viewport>`, para a qual uma cena é "
-"adicionada como uma criança quando é aberta pela primeira vez, para se "
-"tornar parte da * Scene Tree * (mais sobre isso a seguir)"
+"adicionada como uma filha quando é aberta pela primeira vez, para se tornar "
+"parte da * Scene Tree * (mais sobre isso a seguir)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
-#, fuzzy
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
@@ -156,7 +151,6 @@ msgstr ""
 "de um grupo ou obter uma lista deles."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
-#, fuzzy
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
@@ -187,7 +181,6 @@ msgstr ""
 "nó, ele pode ser obtido de duas maneiras diferentes:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
-#, fuzzy
 msgid ""
 "This node contains the main viewport, anything that is a child of a :ref:"
 "`Viewport <class_Viewport>` is drawn inside of it by default, so it makes "
@@ -222,7 +215,6 @@ msgstr ""
 "torna parte da * árvore de cena *."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
-#, fuzzy
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
@@ -247,7 +239,6 @@ msgid "Tree order"
 msgstr "Ordem da árvore"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
-#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
@@ -268,7 +259,6 @@ msgid "A scene is loaded from disk or created by scripting."
 msgstr "Uma cena é carregada do disco ou criada pelo script."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
-#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
@@ -319,7 +309,6 @@ msgstr ""
 "change_scene () <class_SceneTree_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
-#, fuzzy
 msgid ""
 "This is a quick and useful way to switch scenes but has the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "

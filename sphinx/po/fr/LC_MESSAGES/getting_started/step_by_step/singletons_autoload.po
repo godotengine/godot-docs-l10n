@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr ""
+msgstr "Singletons (Auto-chargement)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -27,191 +27,256 @@ msgstr "Introduction"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
 msgid ""
-"Scene singletons are useful, catering to a common use case where you need to "
-"store persistent information between scenes."
+"Godot's scene system, while powerful and flexible, has a drawback: there is "
+"no method for storing information (e.g. a player's score or inventory) that "
+"is needed by more than one scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:12
-msgid "Albeit powerful, the scene system by itself has a few drawbacks:"
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:14
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
-"There is no common place to store information (e.g. a player's items etc.) "
-"required by more than one scene."
+"It's possible to address this with some workarounds, but they come with "
+"their own limitations:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
+#, fuzzy
 msgid ""
-"While it is possible for a scene that loads and unloads other scenes as its "
-"children to store information common to these child scenes, it is no longer "
-"possible to run these scenes by themselves and expect them to work correctly."
+"You can use a \"master\" scene that loads and unloads other scenes as its "
+"children. However, this means you can no longer run those scenes "
+"individually and expect them to work correctly."
 msgstr ""
+"Bien qu'il soit possible pour une scène qui charge et décharge d'autres "
+"scènes en tant qu'enfants d'enregistrer des informations communes à ces "
+"scènes enfants, il n'est plus possible alors d'utiliser ces scènes isolément "
+"en s'attendant à ce qu'elles fonctionnent correctement."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:20
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:19
+#, fuzzy
 msgid ""
-"While information can be stored to disk in \\`user://\\` and this "
-"information can be loaded by scenes that require it, continuously saving and "
-"loading this data when changing scenes is cumbersome and may be slow."
+"Information can be stored to disk in ``user://`` and then loaded by scenes "
+"that require it, but frequently saving and loading data is cumbersome and "
+"may be slow."
 msgstr ""
+"Bien que des informations puissent être enregistrées sur le disque dans  "
+"\\`user://\\`  et qu'elles puissent être chargées par les scènes qui en ont "
+"besoin, sauvegarder et charger ces données lors des changements de scènes "
+"peut être lourd et éventuellement lent."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:24
-msgid "However there is still a need in Godot to create parts of a scene that:"
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
+#, fuzzy
+msgid ""
+"The `Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
+"is a useful tool for solving the common use case where you need to store "
+"persistent information between scenes."
 msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:26
-msgid "Are always loaded, no matter which scene is opened from the editor"
-msgstr ""
+"Les Scènes singletons sont utiles, ce qui est un cas fréquent de leur "
+"utilisation, quand vous avez besoin d'enregistrer des informations qui "
+"doivent rester disponibles pour d'autres scènes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:27
-msgid ""
-"Can store global variables, such as player information, items, money etc. "
-"and share information between scenes"
+msgid "Using this concept, you can create objects that:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
-msgid "Can handle switching scenes and transitions"
+#, fuzzy
+msgid "Are always loaded, no matter which scene is currently running"
 msgstr ""
+"Sont toujours chargées, quelle que soit la scène qui est ouverte dans "
+"l'éditeur"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:30
-msgid ""
-"Acts like a singleton, since GDScript does not support global variables by "
-"design."
+#, fuzzy
+msgid "Can store global variables, such as player information"
 msgstr ""
+"Puisse enregistrer des variables globales, telles que des informations sur "
+"les joueurs, leurs objets, leur argent etc et permettre le partage "
+"d'information entre les scènes"
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
+#, fuzzy
+msgid "Can handle switching scenes and between-scene transitions"
+msgstr "Peut se charger des changements de scènes et des transitions"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
-msgid "Auto-loading nodes and scripts caters to this need."
+#, fuzzy
+msgid ""
+"Act like a singleton, since GDScript does not support global variables by "
+"design"
 msgstr ""
+"Agit comme un singleton, puisque GDScript ne supporte pas les variables "
+"globales du fait de sa conception."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:35
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
+#, fuzzy
+msgid "Autoloading nodes and scripts caters to this need."
+msgstr ""
+"Des nœuds et des scènes se chargeant automatiquement (Auto-loading nodes and "
+"scripts) répondent à ce besoin."
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:37
 msgid "AutoLoad"
 msgstr "AutoLoad"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:37
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
+#, fuzzy
 msgid ""
-"You can use AutoLoad to load a scene, or a script that inherits from Node (a "
-"node will be created and the script will be set to it)."
+"You can use AutoLoad to load a scene or a script that inherits from :ref:"
+"`Node <class_Node>`. Note: when autoloading a script, a Node will be created "
+"and the script will be attached to it. This node will be added to the root "
+"viewport before any other scenes are loaded."
+msgstr ""
+"Vous pouvez utiliser Autoload pour charger une scène ou un script qui hérite "
+"de Node (un noeud sera créer et le script sera lié à lui)."
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:46
+msgid ""
+"To autoload a scene or script, select ``Project -> Project Settings`` from "
+"the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:40
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
 msgid ""
-"To autoload a scene or script, select Project > Project Settings from the "
-"menu and switch to the AutoLoad tab. Each entry in the list requires a name, "
-"which is used as the name of the node, and the node is always added to the "
-"root viewport before any other scenes are loaded."
+"Here you can add any number of scenes or scripts. Each entry in the list "
+"requires a name, which assigned as the node's ``name`` property."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:47
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:56
+#, fuzzy
 msgid ""
-"This means that any node can access a singleton named \"playervariables\" "
+"This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
+"Cela veut dire que n'importe quel nœud peut accéder à un singleton appelé "
+"\"playervariables\"  avec :"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:69
 msgid "Or even simpler using the name directly:"
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
-msgid "Custom scene switcher"
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:75
-msgid ""
-"This short tutorial will explain how to make a scene switcher using "
-"autoload. For simple scene switching, the :ref:`SceneTree.change_scene() "
-"<class_SceneTree_change_scene>` method suffices (described in :ref:"
-"`doc_scene_tree`), so this method is for more complex behavior when "
-"switching between scenes."
-msgstr ""
+msgstr "ou même simplement en utilisant le nom directement :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:81
 msgid ""
-"First download the template from here: :download:`autoload.zip <files/"
-"autoload.zip>`, then open it."
+"Note that autoload objects (scripts and/or scenes) are accessed just like "
+"any other node in the scene tree. In fact, if you look at the running scene "
+"tree, you'll see the autoloaded nodes appear:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:84
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:88
+msgid "Custom scene switcher"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:90
+#, fuzzy
 msgid ""
-"Two scenes are present, scene_a.tscn and scene_b.tscn on an otherwise empty "
-"project. Each are identical and contain a button connected to a callback for "
-"switching to the other scene. When the project runs, it starts in scene_a."
-"tscn. However, this currently does nothing and pressing the button does not "
-"work."
+"This tutorial will demonstrate building a scene switcher using autoload. For "
+"basic scene switching, you can use the :ref:`SceneTree.change_scene() "
+"<class_SceneTree_change_scene>` method (see :ref:`doc_scene_tree` for "
+"details). However, if you need more complex behavior when changing scenes, "
+"this method provides more functionality."
 msgstr ""
+"Ce court tutoriel vous expliquera comment faire un sélecteur de scènes avec "
+"l'auto-chargement. Pour une sélection simple de scène, la méthode :ref:"
+"`SceneTree.change_scene() class_SceneTree_change_scene>` suffit (décrite "
+"dans:ref:`doc_scene_tree`), donc cette méthode convient pour des "
+"comportements plus complexes lorsqu'il s'agit de jongler entre les scènes."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:91
-msgid "global.gd"
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:96
+#, fuzzy
 msgid ""
-"First of all, create a global.gd script. The easy way to create a resource "
-"from scratch is from the new resource button in the inspector tab:"
+"To begin, download the template from here: :download:`autoload.zip <files/"
+"autoload.zip>` and open it in Godot."
 msgstr ""
+"D'abord télécharger le template à partir d'ici :  :download:`autoload.zip "
+"<files/autoload.zip>`, ensuite, l\"ouvrir."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:98
-msgid "Save the script as `global.gd`:"
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:102
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:99
 msgid ""
-"The script should open in the script editor. The next step is to add it to "
-"AutoLoad list. Select Project > Project Settings from the menu, switch to "
-"the AutoLoad tab and add a new entry with name \"global\" that points to "
-"this file:"
+"The project contains two scenes: ``Scene1.tscn`` and ``Scene2.tscn``. Each "
+"scene contains a label displaying the scene name and a button with its "
+"``pressed()`` signal connected. When you run the project, it starts in "
+"``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:109
-msgid "Now, whenever you run any of your scenes, the script is always loaded."
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:105
+msgid "Global.gd"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:111
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:107
 msgid ""
-"Returning to our script, the current scene needs to be fetched in the "
-"`_ready()` function. Both the current scene and `global.gd` are children of "
-"root, but the autoloaded nodes are always first. This means that the last "
-"child of root is always the loaded scene."
+"Switch to the \"Script\" tab and create a new script called Global.gd. Make "
+"sure it inherits from ``Node``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:116
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
+#, fuzzy
 msgid ""
-"Note: Make sure that global.gd extends Node, otherwise it won't be loaded!"
+"The next step is to add this script to the autoLoad list. Open ``Project > "
+"Project Settings`` from the menu, switch to the \"AutoLoad\" tab and select "
+"the script by clicking the ``..`` button or typing its path: ``res://Global."
+"gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
+"Le script devrait s'ouvrir dans l'éditeur de script. La prochaine étape est "
+"de l'ajouter dans la liste d'Auto-Chargement. Sélectionnez Project -> "
+"Propriétés du projet, cliquez sur l'onglet Auto-Chargement et ajoutez une "
+"nouvelle entrée avec, pour nom, \"global\", qui pointe vers ce fichier :"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:146
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:119
+#, fuzzy
 msgid ""
-"Next up is the function for changing the scene. This function frees the "
-"current scene and replaces it with the requested one."
+"Now whenever we run any scene in the project, this script will always be "
+"loaded."
 msgstr ""
+"Maintenant, chaque fois que vous lancez n'importe laquelle de vos scènes, le "
+"script sera toujours chargé."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:216
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
 msgid ""
-"As mentioned in the comments above, we want to avoid the situation of having "
-"the current scene being deleted while being used (code from functions of it "
-"being run), so using :ref:`Object.call_deferred() "
-"<class_Object_call_deferred>` is desired at this point. The result is that "
-"execution of the commands in the second function will happen at a later time "
-"when no code from the current scene is running."
+"Returning to the script, it needs to fetch the current scene in the "
+"`_ready()` function. Both the current scene (the one with the button) and "
+"``global.gd`` are children of root, but autoloaded nodes are always first. "
+"This means that the last child of root is always the loaded scene."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:224
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:153
+#, fuzzy
 msgid ""
-"Finally, all that is left is to fill the empty functions in scene_a.gd and "
-"scene_b.gd:"
+"Now we need a function for changing the scene. This function needs to free "
+"the current scene and replace it with the requested one."
+msgstr ""
+"La prochaine étape est la fonction de changement de scène. Cette fonction "
+"libère la scène en cours et la remplace par celle demandée."
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:222
+msgid ""
+"As mentioned in the comments above, we need to avoid the situation of "
+"deleting the current scene while it is still being used (i.e. its code is "
+"still running), so using :ref:`Object.call_deferred() "
+"<class_Object_call_deferred>` is required at this point. The result is that "
+"the second function will run at a later time when any code from the current "
+"scene has completed."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:245
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:228
+msgid ""
+"Finally, we need to fill the empty callback functions in the two scenes:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:248
 msgid "and"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:265
-msgid ""
-"Now if you run the project, you can switch between both scenes by pressing "
-"the button!"
-msgstr ""
-
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:268
+#, fuzzy
 msgid ""
-"To load scenes with a progress bar, check out the next tutorial, :ref:"
+"Run the project and test that you can switch between scenes by pressing the "
+"button!"
+msgstr ""
+"Maintenant, si vous lancez le projet, vous pouvez basculer entre les deux "
+"scènes en appuyant sur le bouton !"
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:271
+msgid ""
+"Note: When scenes are small, the transition is instantaneous. However, if "
+"your scenes are more complex, they may take a noticeable amount of time to "
+"appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""

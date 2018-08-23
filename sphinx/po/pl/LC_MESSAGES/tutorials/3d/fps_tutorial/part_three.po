@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -567,7 +567,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:466
 msgid ""
-"Open up ``SimpleAudioPlayer.tscn``. It is simply a :ref:`Spatial "
+"Open up ``Simple_Audio_Player.tscn``. It is simply a :ref:`Spatial "
 "<class_Spatial>` with a :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` "
 "as it's child."
 msgstr ""
@@ -598,9 +598,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:479
 msgid ""
-"Create a new script and call it ``SimpleAudioPlayer.gd``. Attach it to the :"
-"ref:`Spatial <class_Spatial>` in ``SimpleAudioPlayer.tscn`` and insert the "
-"following code:"
+"Create a new script and call it ``Simple_Audio_Player.gd``. Attach it to "
+"the :ref:`Spatial <class_Spatial>` in ``Simple_Audio_Player.tscn`` and "
+"insert the following code:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:530
@@ -702,9 +702,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:576
+#, fuzzy
 msgid ""
 "With that done, let's open up ``Player.gd`` again. First we need to load the "
-"``SimpleAudioPlayer.tscn``. Place the following code in the class variables:"
+"``Simple_Audio_Player.tscn``. Place the following code in the class "
+"variables:"
 msgstr ""
 "Otwórzmy więc ponownie ``Player.gd``. Najpierw należy załadować "
 "``SimpleAudioPlayer.tscn``. Umieść następujący kod w zmiennych klasy:"
@@ -755,7 +757,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:614
 msgid ""
-"The third line adds our newly created ``SimpleAudioPlayer`` scene to be a "
+"The third line adds our newly created ``Simple_Audio_Player`` scene to be a "
 "child of the scene root. This works exactly the same as when we are spawning "
 "bullets."
 msgstr ""
@@ -763,7 +765,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_three.rst:617
 msgid ""
 "Finally, we call the ``play_sound`` function and pass in the arguments "
-"passed in to ``create_sound``. This will call ``SimpleAudioPlayer.gd``'s "
+"passed in to ``create_sound``. This will call ``Simple_Audio_Player.gd``'s "
 "``play_sound`` function with the passed in arguments."
 msgstr ""
 

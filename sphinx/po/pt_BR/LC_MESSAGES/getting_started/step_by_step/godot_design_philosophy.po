@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,14 +197,13 @@ msgstr ""
 "totalmente integradas à engine e ao editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:83
-#, fuzzy
 msgid ""
 "GDscript lets you write simple code using Python-like syntax, yet it detects "
 "types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
 "O GDscript permite que você escreva um código simples usando uma sintaxe "
-"parecida com o Python, mas ele detecta tipos e oferece a qualidade de "
+"parecida com o Python, porém ele detecta tipos e oferece a característica de "
 "preenchimento automático de uma linguagem estática. Também é otimizado para "
 "código de jogo com tipos embutidos como Vetores e Cores."
 
@@ -251,16 +250,14 @@ msgid "|image4|"
 msgstr "|image4|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
-#, fuzzy
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
-"*Um plugin de editor de Máquina de Estado em Godot 2 por kubecz3k. Ele "
+"*Um plugin de editor de Máquina de Estados em Godot 2 por kubecz3k. Ele "
 "permite gerenciar estados e transições visualmente*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
-#, fuzzy
 msgid "Open source"
 msgstr "Código aberto"
 
@@ -277,7 +274,6 @@ msgstr ""
 "zero pelos colaboradores."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include NVIDIA PhysX, Google "
@@ -327,7 +323,6 @@ msgstr ""
 "usuários em primeiro lugar."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
-#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
 "project has over 600 contributors at the time of writing. Benevolent "
@@ -382,7 +377,6 @@ msgstr ""
 "programação baseada em nós e para o resto da interface.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
-#, fuzzy
 msgid ""
 "Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
@@ -399,7 +393,6 @@ msgid "Separate 2D and 3D engines"
 msgstr "Engine 2D e 3D separados"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
-#, fuzzy
 msgid ""
 "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "

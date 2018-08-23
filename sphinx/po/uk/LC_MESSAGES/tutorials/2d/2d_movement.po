@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:4
-msgid "2D Movement Overview"
+msgid "2D movement overview"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:7
@@ -59,8 +59,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:29
-msgid "8-Way Movement"
-msgstr ""
+#, fuzzy
+msgid "8-way movement"
+msgstr "Пересування"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:31
 msgid ""
@@ -94,11 +95,11 @@ msgid ""
 "explanation of vector usage in Godot at :ref:`doc_vector_math`."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:120
-msgid "Rotation + Movement"
+#: ../../docs/tutorials/2d/2d_movement.rst:116
+msgid "Rotation + movement"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:122
+#: ../../docs/tutorials/2d/2d_movement.rst:118
 msgid ""
 "This type of movement is sometimes called \"Asteroids-style\" because it "
 "resembles how that classic arcade game worked. Pressing left/right rotates "
@@ -106,7 +107,7 @@ msgid ""
 "direction it's facing."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:200
+#: ../../docs/tutorials/2d/2d_movement.rst:196
 msgid ""
 "Here we've added two new variables to track our rotation direction and "
 "speed. Again, pressing both keys at once will cancel out and result in no "
@@ -114,7 +115,7 @@ msgid ""
 "property."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:204
+#: ../../docs/tutorials/2d/2d_movement.rst:200
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -122,11 +123,11 @@ msgid ""
 "need to apply trigonometric functions."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:210
-msgid "Rotation + Movement (mouse)"
+#: ../../docs/tutorials/2d/2d_movement.rst:206
+msgid "Rotation + movement (mouse)"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:212
+#: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid ""
 "This style of movement is a variation of the previous one. This time, the "
 "direction is set by the mouse position instead of the keyboard. The "
@@ -134,24 +135,24 @@ msgid ""
 "remain the same, however."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:272
+#: ../../docs/tutorials/2d/2d_movement.rst:268
 msgid ""
 "Here we're using the :ref:`Node2D <class_Node2D>` ``look_at()`` method to "
 "point the player towards a given position. Without this function, you could "
 "get the same effect by setting the angle like this:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:287
-msgid "Click-and-Move"
+#: ../../docs/tutorials/2d/2d_movement.rst:283
+msgid "Click-and-move"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:289
+#: ../../docs/tutorials/2d/2d_movement.rst:285
 msgid ""
 "This last example uses only the mouse to control the character. Clicking on "
 "the screen will cause the player to move to the target location."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:346
+#: ../../docs/tutorials/2d/2d_movement.rst:342
 msgid ""
 "Note the ``length()`` check we make prior to movement. Without this test, "
 "the body would \"jitter\" upon reaching the target position, as it moves "
@@ -159,30 +160,30 @@ msgid ""
 "repeat."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:351
+#: ../../docs/tutorials/2d/2d_movement.rst:347
 msgid ""
 "Uncommenting the ``rotation`` line will also turn the body to point in its "
 "direction of motion if you prefer."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:354
+#: ../../docs/tutorials/2d/2d_movement.rst:350
 msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:358
+#: ../../docs/tutorials/2d/2d_movement.rst:354
 msgid "Summary"
 msgstr "Резюме"
 
-#: ../../docs/tutorials/2d/2d_movement.rst:360
+#: ../../docs/tutorials/2d/2d_movement.rst:356
 msgid ""
 "You may find these code samples useful as starting points for your own "
 "projects. Feel free to use them and experiment with them to see what you can "
 "make."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_movement.rst:363
+#: ../../docs/tutorials/2d/2d_movement.rst:359
 msgid ""
 "You can download this sample project here: :download:`2D_movement_demo.zip "
 "<files/2D_movement_demo.zip>`"

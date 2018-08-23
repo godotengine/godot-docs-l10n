@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -508,7 +508,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:335
-#, fuzzy
 msgid ""
 "When adding nodes to a singleton/autoload, you have to be careful not to "
 "lose reference to any of the child nodes. This is because nodes will not be "
@@ -516,11 +515,11 @@ msgid ""
 "problems if you are instancing/spawning lots of nodes and you are not "
 "freeing them."
 msgstr ""
-"Al añadir nodos a un singleton/autoload, debe tener cuidado de no perder la "
-"referencia a ninguno de los nodos hijos. Esto se debe a que los nodos no "
-"serán liberados/destruidos cuando cambies de escena, lo que significa que "
-"puedes encontrarte con problemas de memoria si estás instanciando/generando "
-"muchos nodos y no los estás liberando."
+"Al añadir nodos a un singleton/autoload, hay que tener cuidado de no perder "
+"la referencia a ninguno de los nodos hijos. Esto se debe a que los nodos no "
+"serán liberados/destruidos cuando se cambia de escena, lo que significa que "
+"se pueden producir problemas de memoria si se están instanciando/generando "
+"muchos nodos y no se están liberando."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:341
 msgid "Now we need to add ``set_debug_display`` to ``Globals.gd``:"
@@ -734,9 +733,8 @@ msgid "Instead of:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:502
-#, fuzzy
 msgid "You will leave only:"
-msgstr "Aprenderás:"
+msgstr "Sólo te vas a ir:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:510
 msgid ""
@@ -1186,7 +1184,6 @@ msgstr ""
 "el singleton ``Globals.gd`` y lo asigna a ``globals``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:879
-#, fuzzy
 msgid ""
 "``play_sound`` now expects an audio stream, named ``audio_stream``, to be "
 "passed in, instead of ``sound_name``. Instead of checking the sound name and "
@@ -1198,10 +1195,10 @@ msgstr ""
 "``play_sound`` espera ahora que se pase un stream de audio, llamado "
 "``audio_stream``, en lugar de ``sound_name``. En lugar de comprobar el "
 "nombre del sonido y configurar el stream para el reproductor de audio, "
-"comprobamos que se ha introducido un stream de audio. Si no se pasa un "
+"comprobamos que se ha introducido un stream de audio. Si no se ha pasado un "
 "stream de audio, se imprime un mensaje de error, se elimina el reproductor "
-"de audio de la lista del singleton ``Globals.gd`` llamado ``created_audio``, "
-"y luego se libera el reproductor de audio."
+"de audio de la lista en el singleton ``Globals.gd`` llamado "
+"``created_audio``, y luego se libera el reproductor de audio."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:883
 msgid ""
@@ -1364,7 +1361,6 @@ msgstr ""
 "el sonido."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:988
-#, fuzzy
 msgid ""
 "For example, if you want to play an explosion sound when the grenades "
 "explodes you'd need to add a new sound to ``audio_clips`` in ``Globals.gd``, "
@@ -1375,11 +1371,11 @@ msgid ""
 msgstr ""
 "Por ejemplo, si quieres reproducir un sonido de explosión cuando las "
 "granadas explotan necesitarás añadir un nuevo sonido a ``audio_clips`` en "
-"``Globals.gd``, accede al singleton ``Globals.gd``, y entonces sólo "
-"necesitas añadir algo como ``globals.play_sound(\"explosion\", false, "
-"global_transform.origin)`` en la función ``_process`` de la granada, justo "
-"después de que la granada dañe todos los cuerpos dentro de su radio de "
-"explosión."
+"``Globals.gd``, ve al singleton ``Globals.gd``, y luego sólo necesitas "
+"añadir algo como ``globals.play_sound(\"explosion\", false, global_transform."
+"origin)`` en la funciónplay_sound(\"explosion\", false, global_transform."
+"origin)`` en la función ``_process`` de la granada, justo después de que la "
+"granada dañe todos los cuerpos dentro de su radio de explosión."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:994
 msgid "Final notes"

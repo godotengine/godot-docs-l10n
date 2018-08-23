@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,23 +19,29 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr ""
+msgstr "Scripting (Fortsetzung)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr ""
+msgstr "Ablaufsteuerung"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
+"In Godot werden etliche Aktionen durch virtuelle oder Rückruffunktionen "
+"ausgelöst, daher ist es nicht nötig Funktionen zu schreiben, die die ganze "
+"Zeit aktive sind."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
+"Es ist jedoch immernoch geläufig, dass ein Script bei jedem Frame ausgeführt "
+"wird. Es gibt zwei Arten der Verarbeitung: Inaktive Verarbeitung und "
+"Physikverarbeitung."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
 msgid ""
@@ -43,30 +49,42 @@ msgid ""
 "<class_Node__process>` is found in a script. It can be turned off and on "
 "with the :ref:`Node.set_process() <class_Node_set_process>` function."
 msgstr ""
+"Inaktive Verarbeitung wird aktiviert, wenn die Methode :ref:'Node._process() "
+"<class_Node__process>' in einen Skript gefunden wird. Sie kann mit :ref:"
+"`Node.set_process() <class_Node_set_process>` an- und ausgeschaltet werden."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
 "This method will be called every time a frame is drawn, so it's fully "
 "dependent on how many frames per second (FPS) the application is running at:"
 msgstr ""
+"Diese Methode wird jedes mal aufgerufen wenn ein Frame gezeichnet wird. "
+"Deshalb ist sie komplett abhängig davon, mit wie vielen Frames pro Sekunde "
+"(FPS) die Anwendung läuft:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
 msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
 msgstr ""
+"Der delta Parameter enthält die vergangene Zeit in Sekunden als Fließkomma "
+"seit dem letzten Aufruf von ``_process()``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:40
 msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
+"Dieser Parameter kann dazu verwendet werden um sicherzugehen, dass Dinge, "
+"unabhängig von den FPS des Spiels, immer die gleiche Zeit benötigen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
+"Zum Beispiel wird Bewegung oft mit dem Zeit Delta multipliziert um die "
+"Bewegungsgeschwindigkeit konstant und unabhängig von der Bildrate zu machen."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
@@ -77,6 +95,12 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
+"Die Physikbearbeitung mit ``_physics_process()`` ist ähnlich, sollte aber "
+"für Vorgänge benutzt werden, die vor jedem Physikschritt, wie das Steuern "
+"eines Charakters, ablaufen sollen. Sie läuft immer vor einem Physikschritt "
+"ab und wird nach einem festgelegten Zeitintervall aufgerufen: 60 mal pro "
+"Sekunde ist vorgegeben. Man kann dieses Intervall in den "
+"Projekteinstellungen unter Physics -> Common -> Physics Fps ändern."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -243,4 +267,38 @@ msgid ""
 "loaded and ready to use so that you can create as many instances as desired. "
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
+msgid "Register scripts as classes"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
+msgid ""
+"Godot has a \"Script Class\" feature to register individual scripts with the "
+"Editor. By default, you can only access unnamed scripts by loading the file "
+"directly."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
+msgid ""
+"You can name a script and register it as a type in the editor with the "
+"``class_name`` keyword followed by the class's name. You may add a comma and "
+"an optional path to an image to use as an icon. You will then find your new "
+"type in the Node or Resource creation dialog."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
+#, fuzzy
+msgid "In Godot 3.1:"
+msgstr "Hallo, Godette v3.11"
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
+msgid ""
+"Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
+"languages, can register scripts."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+msgid "Only GDScript creates global variables for each named script."
 msgstr ""

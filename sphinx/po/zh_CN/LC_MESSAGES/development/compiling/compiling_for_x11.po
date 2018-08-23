@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,26 +150,33 @@ msgid ""
 msgstr ""
 "在 OpenBSD 平台上必须使用 Clang，否则在构建字体相关的依赖时会遇到一些麻烦。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:104
+#: ../../docs/development/compiling/compiling_for_x11.rst:103
+msgid ""
+"If you are compiling Godot for production use, then you can make the final "
+"executable smaller and faster by adding the SCons option "
+"``target=release_debug``."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_x11.rst:108
 msgid "Building export templates"
 msgstr "构建导出模板"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:106
+#: ../../docs/development/compiling/compiling_for_x11.rst:110
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr ""
 "要构建 X11 （Linux，\\*BSD）平台的导出模板， 执行构建系统时需要带上这些参数："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:109
+#: ../../docs/development/compiling/compiling_for_x11.rst:113
 msgid "(32 bits)"
 msgstr "（ 32 位 ）"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:116
+#: ../../docs/development/compiling/compiling_for_x11.rst:120
 msgid "(64 bits)"
 msgstr "( 64 位 )"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:123
+#: ../../docs/development/compiling/compiling_for_x11.rst:127
 msgid ""
 "Note that cross compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
@@ -177,12 +184,12 @@ msgstr ""
 "请注意，跨CPU位数( 64/32)编译不总是这样直截了当，这可能还需要你通过 "
 "``chroot`` 切换编译环境。"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:126
+#: ../../docs/development/compiling/compiling_for_x11.rst:130
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr "要创建导出模板，需要你手动把编译出来的二进制文件拷贝到这里："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:132
+#: ../../docs/development/compiling/compiling_for_x11.rst:136
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
@@ -190,7 +197,7 @@ msgstr ""
 "并且还需要将文件命名成这样（在 Godot 中， \\*BSD 平台也被视为 \"Linux "
 "X11\"）："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:141
+#: ../../docs/development/compiling/compiling_for_x11.rst:145
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
@@ -199,7 +206,7 @@ msgstr ""
 "此外，如果你正在开发自定义模块或修改引擎的其他 C++ 代码，则可以在此处将你编译"
 "好的二进制文件配置为自定义导出模板："
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:147
+#: ../../docs/development/compiling/compiling_for_x11.rst:151
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the bin/ directory of your Godot source folder, so the next time you "

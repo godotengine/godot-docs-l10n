@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -345,7 +345,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:705
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:703
 msgid "Transform"
 msgstr "Преобразование"
 
@@ -522,43 +522,43 @@ msgstr ""
 msgid "And can be accessed like this:"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:682
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:680
 msgid "Rotation in 3D"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:684
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:682
 msgid ""
 "Rotation in 3D is more complex than in 2D (translation and scale are the "
 "same), because rotation is an implicit 2D operation. To rotate in 3D, an "
 "*axis*, must be picked. Rotation, then, happens around this axis."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:688
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:686
 msgid ""
 "The axis for the rotation must be a *normal vector*. As in, a vector that "
 "can point to any direction, but length must be one (1.0)."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:707
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 msgid ""
 "To add the final component to the mix, Godot provides the :ref:`Transform "
 "<class_Transform>` type. Transform has two members:"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:710
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:708
 msgid "*basis* (of type :ref:`Basis <class_Basis>`)"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:711
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:709
 msgid "*origin* (of type :ref:`Vector3 <class_Vector3>`)"
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:713
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:711
 msgid ""
 "Any 3D transform can be represented with Transform, and the separation of "
 "basis and origin makes it easier to work translation and rotation separately."
 msgstr ""
 
-#: ../../docs/tutorials/math/matrices_and_transforms.rst:717
+#: ../../docs/tutorials/math/matrices_and_transforms.rst:715
 msgid "An example:"
 msgstr ""

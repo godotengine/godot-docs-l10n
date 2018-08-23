@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,7 @@ msgstr ""
 msgid "Arc function"
 msgstr "Función arco"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:158
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
 msgid ""
 "An arc is defined by its support circle parameters. That is: the center "
 "position and the radius. The arc itself is then defined by the angle it "
@@ -187,7 +187,7 @@ msgstr ""
 "pasamos a nuestro dibujo. Podemos también agregar un valor de color para "
 "dibujar el arco en diferentes colores."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:163
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:162
 msgid ""
 "Basically, drawing a shape on screen requires it to be decomposed into a "
 "certain number of points linked from one to the following one. As you can "
@@ -210,7 +210,7 @@ msgstr ""
 "inglés). En nuestro ejemplo usaremos un número fijo de puntos, sin importar "
 "el radio."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:203
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:202
 msgid ""
 "Remember the number of points our shape has to be decomposed into? We fixed "
 "this number in the nb_points variable to a value of 32. Then, we initialize "
@@ -220,7 +220,7 @@ msgstr ""
 "Fijamos este número en la variable nb_points a un valor de 32, luego "
 "inicializamos un PoolVector2Array vacío, que es un arreglo de Vector2."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:207
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
 msgid ""
 "The next step consists of computing the actual positions of these 32 points "
 "that compose an arc. This is done in the first for-loop: we iterate over the "
@@ -234,7 +234,7 @@ msgstr ""
 "uno para incluir el último punto. Primero determinamos el ángulo de cada "
 "punto, entre el ángulo inicial y el ángulo final."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:212
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:211
 msgid ""
 "The reason why each angle is reduced by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
@@ -250,7 +250,7 @@ msgstr ""
 "queremos empezar a contar a las 12 en punto. Así que reducimos cada ángulo "
 "en 90° para empezar a contar desde las 12 en punto."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:218
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:217
 msgid ""
 "The actual position of a point located on a circle at angle 'angle' (in "
 "radians) is given by Vector2(cos(angle), sin(angle)). Since cos() and sin() "
@@ -271,7 +271,7 @@ msgstr ""
 "Vector2. Finalmente insertamos el punto en e PoolVector2Array que fue "
 "definido previamente."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:226
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:225
 msgid ""
 "Now, we need to actually draw our points. As you can imagine, we will not "
 "simply draw our 32 points: we need to draw everything that is between each "
@@ -291,7 +291,7 @@ msgstr ""
 "entre cada par de puntos nunca será lo suficientemente larga para verlos. Si "
 "esto sucede, simplemente aumentamos el número de puntos."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:235
 msgid "Draw the arc on screen"
 msgstr "Dibujar el arco en pantalla"
 
@@ -307,11 +307,11 @@ msgstr ""
 msgid "Result:"
 msgstr "Resultado:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:271
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:269
 msgid "Arc polygon function"
 msgstr "Función de polígono arco"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:272
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:271
 msgid ""
 "We can take this a step further and not only write a function that draws the "
 "plain portion of the disc defined by the arc, but also its shape. The method "
@@ -323,7 +323,7 @@ msgstr ""
 "El método es exactamente el mismo que el anterior, excepto que dibujamos un "
 "polígono en lugar de líneas:"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:311
 msgid "Dynamic custom drawing"
 msgstr "Dibujos personalizados dinámicos"
 
@@ -422,8 +422,9 @@ msgstr ""
 "hardware."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:432
+#, fuzzy
 msgid ""
-"In our case, we simply need to multiply our 'rotation_ang' variable by "
+"In our case, we simply need to multiply our 'rotation_angle' variable by "
 "'delta' in the _process() function. This way, our 2 angles will be increased "
 "by a much smaller value, which directly depends on the rendering speed."
 msgstr ""
@@ -438,7 +439,7 @@ msgstr "¡Ejecutémoslo de nuevo! ¡Esta vez, la rotación se muestra bien!"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
 msgid "Tools"
-msgstr "Tools"
+msgstr "Herramientas"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
 msgid ""

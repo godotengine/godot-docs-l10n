@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -316,3 +316,36 @@ msgstr ""
 "이 두 단계 프로세스의 이점은 포장된 씬이 로드된 상태로 유지되어 원하는 만큼"
 "의 인스턴스를 생성할 수 있다는 것입니다. 이 기능은 특히 활성화된 씬에서 여러 "
 "적, 글머리 기호 및 다른 도면 요소를 신속하게 인스턴스화하는 데 유용합니다."
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
+msgid "Register scripts as classes"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
+msgid ""
+"Godot has a \"Script Class\" feature to register individual scripts with the "
+"Editor. By default, you can only access unnamed scripts by loading the file "
+"directly."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
+msgid ""
+"You can name a script and register it as a type in the editor with the "
+"``class_name`` keyword followed by the class's name. You may add a comma and "
+"an optional path to an image to use as an icon. You will then find your new "
+"type in the Node or Resource creation dialog."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
+msgid "In Godot 3.1:"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
+msgid ""
+"Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
+"languages, can register scripts."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+msgid "Only GDScript creates global variables for each named script."
+msgstr ""

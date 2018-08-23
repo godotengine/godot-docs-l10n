@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,14 +44,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:20
 msgid ""
-"Just like with ReflectionProbe, GIProbes can be blended (in a bit more "
+"Just like with ReflectionProbe, GIProbe can be blended (in a bit more "
 "limited way), so it is possible to provide full real-time lighting for a "
 "stage without having to resort to lightmaps."
 msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:24
-msgid "The main downside of GIProbes are:"
-msgstr ""
+#, fuzzy
+msgid "The main downsides of GIProbe are:"
+msgstr "As principais razões são:"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:26
 msgid ""
@@ -80,8 +81,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:32
-msgid "Setting Up"
-msgstr ""
+msgid "Setting up"
+msgstr "Configurando"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:34
 msgid ""
@@ -103,8 +104,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:50
-msgid "Adding Lights"
-msgstr ""
+#, fuzzy
+msgid "Adding lights"
+msgstr "Adicionando um script"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:52
 msgid ""
@@ -148,79 +150,79 @@ msgid ""
 "reflections where needed:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:85
-msgid "Interior vs Exterior"
+#: ../../docs/tutorials/3d/gi_probes.rst:84
+msgid "Interior vs exterior"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:87
+#: ../../docs/tutorials/3d/gi_probes.rst:86
 msgid ""
 "GI Probes normally allow mixing with lighting from the sky. This can be "
 "disabled when turning on the *Interior* setting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:92
+#: ../../docs/tutorials/3d/gi_probes.rst:91
 msgid ""
 "The difference becomes clear in the image below, where light from the sky "
 "goes from spreading inside to being ignored."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:97
+#: ../../docs/tutorials/3d/gi_probes.rst:96
 msgid ""
 "As complex buildings may mix interiors with exteriors, combining GIProbes "
 "for both parts works well."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:102
+#: ../../docs/tutorials/3d/gi_probes.rst:100
 msgid "Tweaking"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:104
+#: ../../docs/tutorials/3d/gi_probes.rst:102
 msgid "GI Probes support a few parameters for tweaking:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:108
+#: ../../docs/tutorials/3d/gi_probes.rst:106
 msgid ""
 "**Subdiv** Subdivision used for the probe. The default (128) is generally "
 "good for small to medium size areas. Bigger subdivisions use more memory."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:109
+#: ../../docs/tutorials/3d/gi_probes.rst:107
 msgid "**Extents** Size of the probe. Can be tweaked from the gizmo."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:110
+#: ../../docs/tutorials/3d/gi_probes.rst:108
 msgid ""
 "**Dynamic Range** Maximum light energy the probe can absorb. Higher values "
 "allow brighter light, but with less color detail."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:111
+#: ../../docs/tutorials/3d/gi_probes.rst:109
 msgid ""
 "**Energy** Multiplier for all the probe. Can be used to make the indirect "
 "light brighter (although it's better to tweak this from the light itself)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:112
+#: ../../docs/tutorials/3d/gi_probes.rst:110
 msgid "**Propagation** How much light propagates through the probe internally."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:113
+#: ../../docs/tutorials/3d/gi_probes.rst:111
 msgid ""
 "**Bias** Value used to avoid self-occlusion when doing voxel cone tracing, "
 "should generally be above 1.0 (1==voxel size)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:114
+#: ../../docs/tutorials/3d/gi_probes.rst:112
 msgid ""
 "**Normal Bias** Alternative type of bias useful for some scenes. Experiment "
 "with this one if regular bias does not work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:118
+#: ../../docs/tutorials/3d/gi_probes.rst:115
 msgid "Quality"
 msgstr ""
 
-#: ../../docs/tutorials/3d/gi_probes.rst:120
+#: ../../docs/tutorials/3d/gi_probes.rst:117
 msgid ""
 "GIProbes are quite demanding. It is possible to use lower quality voxel cone "
 "tracing in exchange of more performance."

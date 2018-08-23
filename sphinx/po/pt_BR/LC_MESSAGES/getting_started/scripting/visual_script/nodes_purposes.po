@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -319,7 +319,6 @@ msgstr ""
 "getter:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
-#, fuzzy
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
 msgstr ""
 "Da mesma forma, segure * Control * (* Command * no Mac) para soltar um "
@@ -361,7 +360,6 @@ msgid "Finally, to emit the signal, simply drag it to the canvas:"
 msgstr "Finalmente, para emitir o sinal, basta arrastá-lo para a tela:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:186
-#, fuzzy
 msgid ""
 "Remember that emitting a signal is a sequenced operation, so it must come "
 "from a Sequence port."
@@ -469,7 +467,6 @@ msgstr ""
 "mais importantes para usar e bastante diversificados."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:236
-#, fuzzy
 msgid ""
 "There are many types of nodes of interest here, so a short attempt to "
 "describe them will follow:"
@@ -575,7 +572,6 @@ msgid "SceneTree"
 msgstr "Árvore de cena"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
-#, fuzzy
 msgid ""
 "This node is similar to the Singleton node because it references the "
 "SceneTree, which contains the active scene. SceneTree, however, only works "
@@ -602,7 +598,6 @@ msgid "Preload"
 msgstr "Pré-carregamento"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:301
-#, fuzzy
 msgid ""
 "This does the same function as preload() in GDScript. It maintains this "
 "resource loaded and ready to use. Rather than instancing the node, it's "
@@ -627,7 +622,6 @@ msgstr ""
 "disco."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:313
-#, fuzzy
 msgid "Comment"
 msgstr "Comente"
 
@@ -658,7 +652,6 @@ msgid "Condition"
 msgstr "Condição"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:333
-#, fuzzy
 msgid ""
 "This is a simple node that checks a bool port. If true, it will go via the "
 "\"true\" sequence port. If false, the second. After going for either of "
@@ -684,7 +677,6 @@ msgstr ""
 "cada elemento que ele possui."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:344
-#, fuzzy
 msgid ""
 "The Iterator node goes through all elements and, for each of them, it goes "
 "via the \"each\" sequence port, making the element available in the \"elem\" "
@@ -782,9 +774,8 @@ msgstr ""
 "são seqüenciados."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:398
-#, fuzzy
 msgid "Built-In"
-msgstr "Construído"
+msgstr "Embutido"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
 msgid ""
@@ -803,7 +794,6 @@ msgid "By Type"
 msgstr "Por tipo"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
-#, fuzzy
 msgid ""
 "Those are the methods available to basic types. For example, if you want a "
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
@@ -866,7 +856,6 @@ msgstr ""
 "sinal para a tela funciona melhor."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
-#, fuzzy
 msgid "Get/Set"
 msgstr "Get/Set"
 
@@ -876,8 +865,9 @@ msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
-"Nó Getter / Setter genérico. As propriedades de arrastamento do Inspector "
-"funcionam melhor, já que aparecem corretamente configuradas no drop."
+"Generic Getter/Setter Node (Adquirente genérico/Nó modificador). As "
+"propriedades de arrastamento do Inspector funcionam melhor, já que aparecem "
+"corretamente configuradas ao soltar."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid "Wait"

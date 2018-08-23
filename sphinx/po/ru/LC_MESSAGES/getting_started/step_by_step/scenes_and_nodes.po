@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,8 @@ msgid "It can be extended (to have more functions)."
 msgstr "Он может быть расширен (чтобы иметь больше функций)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-msgid "It can be added to other nodes as children."
+#, fuzzy
+msgid "It can be added to other nodes as a child."
 msgstr "Он может быть добавлен к другому узлу в качестве дочернего."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
@@ -153,7 +154,8 @@ msgstr ""
 "Кроме того, сцена:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
-msgid "always has only one root node."
+#, fuzzy
+msgid "always has one root node."
 msgstr "всегда есть только один корневой узел."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
@@ -226,10 +228,11 @@ msgstr ""
 "редактор Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
+#, fuzzy
 msgid ""
 "As mentioned before, making games in Godot feels like being in a kitchen, so "
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
-"begin with a \"Hello World!\" message that we'll put on the screen."
+"begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
 "Как упоминалось ранее, создание игр в Godot похоже на работу на кухне, "
 "поэтому давайте откроем холодильник и добавим свежие узлы в проект. Мы "
@@ -250,9 +253,10 @@ msgstr ""
 "которые могут быть созданы:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
+#, fuzzy
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
-"the quickest way:"
+"the fastest way:"
 msgstr ""
 "Здесь выберите узел «Label». Найти его через поиск, вероятно самый быстрый "
 "способ:"
@@ -280,9 +284,10 @@ msgstr ""
 "углу), а свойства узла отображаются в \"инспекторе\" (в нижнем правом углу)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
+#, fuzzy
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
-"change it to \"Hello, World!\":"
+"change it to \"Hello World\":"
 msgstr ""
 "Следующим шагом будет изменение свойства «Text». Изменим его на «Hello, "
 "World!»:"
@@ -326,8 +331,9 @@ msgstr ""
 "файлы ресурсов, которые находятся внутри игры."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
+#, fuzzy
 msgid ""
-"After saving the scene and pressing run scene again, the \"Hello, World!\" "
+"After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
 "После сохранения сцены и повторного ее запуска, демо \"Hello, World!\" "

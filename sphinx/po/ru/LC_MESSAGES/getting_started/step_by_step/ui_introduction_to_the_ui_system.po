@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -190,7 +190,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
-msgstr "TextureRect"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
 msgid ""
@@ -265,7 +265,7 @@ msgstr "TextureRect модулируется с помощью красного 
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureButton"
-msgstr "TextureButton"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -306,7 +306,7 @@ msgstr "TextureButton и её 5 слотов текстуры"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureProgress"
-msgstr "TextureProgress"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
 msgid ""
@@ -339,6 +339,14 @@ msgid ""
 "the default of ``1`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
+"Чтобы анимировать панель, вам нужно посмотреть раздел Range. Задайте "
+"свойства `` Min`` и `` Max`` для определения диапазона датчика. Например, "
+"чтобы представить жизнь персонажа, вы должны установить `` Min`` = `` 0, `` "
+"и `` Max`` для максимального количества здоровья персонажа. Измените "
+"свойство `` Value``, чтобы обновить панель. Если вы оставите значения `` "
+"Min`` и `` Max`` по умолчанию `` 1`` и `` 100, `` и установите для свойства "
+"`` Value`` `` 40``, 40% текстуры `` Progress``, и 60% из них останется "
+"скрытым."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:138
 msgid "TextureProgress bar, two thirds filled"
@@ -367,8 +375,9 @@ msgid "Picture of a Label"
 msgstr "Изображение Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
+#, fuzzy
 msgid "NinePatchRect"
-msgstr ""
+msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
 msgid ""
@@ -377,10 +386,14 @@ msgid ""
 "corners. It is useful to build panels, dialogue boxes and scalable "
 "backgrounds for your UI."
 msgstr ""
+"** NinePatchRect ** разделяет текстуры на 3 строки и 3 столбца. Центральная "
+"и боковая стороны масштабируются, но углы нет. Полезно создавать панели, "
+"диалоговые окна и масштабируемые фоны для вашего пользовательского "
+"интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr ""
+msgstr "NinePatchRect масштабируется с использованием свойства min\\ _size"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "There are two workflows to build responsive UIs"
@@ -625,33 +638,46 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"Контейнеры имеют несколько специальных свойств, чтобы контролировать "
+"упорядочивание элементов пользовательского интерфейса. Чтобы изменить их, "
+"перейдите в раздел «Пользовательские константы» в Инспекторе."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "5 наиболее полезных контейнеров"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:288
+#, fuzzy
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"Если вы создадите инструменты, вам могут понадобиться все контейнеры. Но для "
+"большинства игр достаточно нескольких:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid "MarginContainer, to add margins around part of the UI"
 msgstr ""
+"MarginContainer, для добавления полей вокруг частей пользовательского "
+"интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
+#, fuzzy
 msgid "CenterContainer, to center its children in its bounding box"
 msgstr ""
+"CenterContainer, сосредоточивает дочерние элементы в ограниченной коробке"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
 msgstr ""
+"VboxContainer and HboxContainer, чтобы упорядочить элементы "
+"пользовательского интерфейса в строках или столбцах"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
+#, fuzzy
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
-msgstr ""
+msgstr "GridContainer, упорядочить узлы управления в виде сетки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -661,13 +687,22 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer центрирует все свои дочерние элементы внутри прямоуголника "
+"границ. Его типично используют для титульных экранов, если необходимо что бы "
+"опции оставались ровно посередине окна отображения. Поскольку он центрует "
+"все что в нем находится, вам часто потребуется добавлять в него вложенный "
+"контейнер. Если же вы используете текстуры и кнопки, то они будут "
+"стыковаться один над другим."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:305
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
+"CenterContainer в действии. Полоса здоровья находится внутри его "
+"родительского контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
+#, fuzzy
 msgid ""
 "The MarginContainer adds a margin on any side of the child nodes. Add a "
 "MarginContainer that encompasses the entire viewport to add a separation "
@@ -676,12 +711,21 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"MarginContainer добавляет отступ на любой стороне дочерних узлов. Добавьте "
+"MarginContainer, который охватывает весь видовой экран, чтобы добавить "
+"разделение между краем окна и пользовательским интерфейсом. Вы можете "
+"установить отступ в верхней, левой, правой или нижней части контейнера. Не "
+"нужно отмечать этот флажок: щелкните соответствующее поле значения и введите "
+"любое число. Он активируется автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
 msgstr ""
+"MarginContainer добавляет 40-пиксельный отступу вокруг игрового "
+"пользовательского интерфейса(GUI)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:319
+#, fuzzy
 msgid ""
 "There are two BoxContainers: VBoxContainer and HBoxContainer. You cannot add "
 "the BoxContainer node itself, as it is a helper class, but you can use "
@@ -690,10 +734,17 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"Есть два BoxContainers: VBoxContainer и HBoxContainer. Вы не можете добавить "
+"сам узел - BoxContainer, так как он является вспомогательным классом, но вы "
+"можете использовать вертикальные и горизонтальные контейнеры. Они "
+"упорядочивают узлы в строках или столбцах. Используйте их для выравнивания "
+"предметов в магазине или для создания сложных сеток с строками и столбцами "
+"разных размеров, так как вы можете вложить их в ваше ядро."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
 msgid "The HBoxContainer horizontally aligns UI elements"
 msgstr ""
+"HBoxContainer горизонтально выравнивает элементы пользовательского интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:330
 msgid ""
@@ -704,6 +755,12 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer автоматически выравнивает свои дочерние элементы в колонку. "
+"Один за другим. Для задания разделителя меж ними, используется параметр "
+"разделителя. HBoxContainer выравнивает элементы UI в строку. Он похож на "
+"VBoxContainer, но с дополнительным методом ``add_spacer``, позволяющим "
+"добавлять узел контроля отступа для первого или последнего элементов, прямо "
+"из скрипта."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:337
 msgid ""

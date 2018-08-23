@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:4
-msgid "Feature Tags"
-msgstr ""
+#, fuzzy
+msgid "Feature tags"
+msgstr "Funktionen"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:7
 msgid "Introduction"
@@ -28,7 +29,7 @@ msgstr "Einführung"
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:9
 msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
-"is represented as a string, and it can refer to many of the following:"
+"is represented as a string, which can refer to many of the following:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
@@ -36,246 +37,310 @@ msgid "Platform name."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
-msgid "Platform bits (64/32)."
+msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
-msgid "Platform type (desktop/mobile)."
+msgid "Platform type (desktop, mobile, Web)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
-msgid "Supported texture compression in platform."
+msgid "Supported texture compression algorithms on the platform."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
-msgid "Whether a build is debug or release."
+msgid ""
+"Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
+msgid ""
+"Whether the project is running from the editor or a \"standalone\" binary."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:18
 msgid "Many more things."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:19
-msgid "Features can be queried in run-time to the singleton API by calling:"
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:20
+msgid "Features can be queried at run-time from the singleton API by calling:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:27
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:28
 msgid "Default features"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:29
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:30
 msgid ""
-"Here is a list of most feature tags in Godot. Keep in mind they are *case "
-"sensitive*:"
+"Here is a list of most feature tags in Godot. Keep in mind they are **case-"
+"sensitive**:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:32
-msgid "**Feature Tag**"
-msgstr ""
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:33
+#, fuzzy
+msgid "**Feature tag**"
+msgstr "Funktionen"
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:32
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Description**"
 msgstr "**Beschreibung**"
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:34
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "**Android**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:34
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:35
 msgid "Running on Android"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:36
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "**HTML5**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:36
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:37
 msgid "Running on HTML5"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:38
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid "**JavaScript**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:38
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:41
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "**OSX**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:41
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "Running on macOS"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:43
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "**iOS**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:43
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:44
 msgid "Running on iOS"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:45
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "**UWP**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:45
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:46
 msgid "Running on UWP"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:47
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "**Windows**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:47
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:48
 msgid "Running on Windows"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:49
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "**X11**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:49
-msgid "Running on X11"
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:50
+msgid "Running on X11 (Linux/BSD desktop)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:51
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:52
+msgid "**Server**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:52
+msgid "Running on the headless server platform"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "**debug**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:51
-msgid "Running on a debug build"
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:54
+msgid "Running on a debug build (including the editor)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:53
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:53
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "Running on a release build"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:55
-msgid "**32**"
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:58
+#, fuzzy
+msgid "**editor**"
+msgstr "**Operator**"
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:58
+msgid "Running on an editor build"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:55
-msgid "Running on a 32-bit build"
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:60
+msgid "**standalone**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:57
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:60
+msgid "Running on a non-editor build"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:57
-msgid "Running on a 64-bit build"
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:62
+msgid "Running on a 64-bit build (any architecture)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:59
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:64
+msgid "**32**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:64
+msgid "Running on a 32-bit build (any architecture)"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:66
+msgid "**x86_64**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:66
+msgid "Running on a 64-bit x86 build"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:68
+msgid "**x86**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:68
+msgid "Running on a 32-bit x86 build"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:70
+msgid "**arm64**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:70
+msgid "Running on a 64-bit ARM build"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:72
+msgid "**arm**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:72
+msgid "Running on a 32-bit ARM build"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:59
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "Host OS is a mobile platform"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:61
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "**pc**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:61
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:76
 msgid "Host OS is a PC platform (desktop/laptop)"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:63
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "**web**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:63
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:78
 msgid "Host OS is a Web browser"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:65
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "**etc**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:65
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:80
 msgid "Textures using ETC1 compression are supported"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:67
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "**etc2**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:67
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:82
 msgid "Textures using ETC2 compression are supported"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:69
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "**s3tc**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:69
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:84
 msgid "Textures using S3TC (DXT/BC) compression are supported"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:71
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "**pvrtc**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:71
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:86
 msgid "Textures using PVRTC compression are supported"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:75
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:90
 msgid "Custom features"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:77
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:92
 msgid ""
 "It is possible to add custom features to a build, use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:83
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:85
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:100
 msgid ""
 "Features can be used to override specific configuration values in the "
 "*Project Settings*. This allows to better customize any configuration when "
 "doing a build."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:88
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:103
 msgid ""
 "In the following example, a different icon is added for the demo build of "
 "the game (which was customized in a special export preset which, in turn, "
 "includes only demo levels)."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:93
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:98
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:113
 msgid "Default overrides"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:100
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:115
 msgid ""
 "There are already a lot of settings that come with overrides by default, "
 "they can be found in many sections of the project settings."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:106
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:121
 msgid "Customizing Build"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/feature_tags.rst:108
+#: ../../docs/getting_started/workflow/export/feature_tags.rst:123
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They also are used to specify which shared library "

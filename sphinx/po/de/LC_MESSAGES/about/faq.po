@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-26 10:06+0200\n"
+"POT-Creation-Date: 2018-08-23 11:04+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,62 +29,48 @@ msgstr ""
 "Lizenzbedingungen?"
 
 #: ../../docs/about/faq.rst:9
+#, fuzzy
 msgid ""
-"Godot is Free/Libre Open Source Software available under the `OSI-approved "
-"<https://opensource.org/licenses/MIT>`_ MIT license."
+"Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
+"Free_and_open-source_software>`_ available under the `OSI-approved <https://"
+"opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
+"\"free speech\" as well as in \"free beer.\""
 msgstr ""
 "Godot ist eine freie Open Source-Software und verfügbar unter der von der "
 "`OSI anerkannten <https://opensource.org/licenses/MIT>`_ MIT Lizenz."
 
 #: ../../docs/about/faq.rst:11
-msgid ""
-"This means it is free as in \"free speech\" as well as in \"free beer\"."
-msgstr ""
-"Das heißt es ist sowohl frei im Sinne von \"freiheitlich\" als auch frei "
-"(kostenlos) wie in \"Freibier\"."
-
-#: ../../docs/about/faq.rst:13
 msgid "In short:"
 msgstr "Zusammengefasst:"
 
-#: ../../docs/about/faq.rst:15
-msgid "There are no usage restrictions on Godot"
-msgstr "Es gibt keine Nutzungsbeschränkung für Godot"
-
-#: ../../docs/about/faq.rst:16
+#: ../../docs/about/faq.rst:13
 msgid ""
-"This means you can use it for any game or application, commercially or non-"
-"commercially, in any industry"
+"You are free to download and use Godot for any purpose, personal, non-"
+"profit, commercial, or otherwise;"
 msgstr ""
-"Das bedeutet, es darf in jedem Spiel und jeder Anwendung, egal ob komerziell "
-"oder nicht-kommerziell, und in jeglicher Industrie verwendet werden"
 
-#: ../../docs/about/faq.rst:17
-msgid "You can modify, (re)distribute and remix Godot to your heart's content"
+#: ../../docs/about/faq.rst:14
+#, fuzzy
+msgid ""
+"You are free to modify, distribute, redistribute, and remix Godot to your "
+"heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
 "Du darfst Godot nach Herzenslust verändern, (erneut) verteilen und vermischen"
 
-#: ../../docs/about/faq.rst:19
+#: ../../docs/about/faq.rst:16
+#, fuzzy
 msgid ""
-"For more, see `here <https://tldrlegal.com/license/mit-license>`_ or ask "
-"your lawyer of choice."
-msgstr ""
-"Für weitere Infos, siehe `hier <https://tldrlegal.com/license/mit-license>`_ "
-"oder befrage den Anwalt deiner Wahl."
-
-#: ../../docs/about/faq.rst:21
-msgid ""
-"All the contents of the documentation are under the permissive Creative "
-"Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
-"by/3.0/>`_) license, with attribution to \"Juan Linietsky, Ariel Manzur and "
-"the Godot Engine community\"."
+"All the contents of this accompanying documentation are published under the "
+"permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
+"creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
+"Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
 "Alle Inhalte dieser Dokumentation sind unter der freizügigen Creative "
 "Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
 "by/3.0/>`_) Lizenz, mit Zuschreibung an \"Juan Linietsky, Ariel Manzur und "
 "die Godot Engine Community\"."
 
-#: ../../docs/about/faq.rst:25
+#: ../../docs/about/faq.rst:20
 msgid ""
 "Logos and icons are generally under the same Creative Commons license. Note "
 "that some third-party libraries included with Godot's source code may have "
@@ -94,7 +80,7 @@ msgstr ""
 "Beachte jedoch, dass manche Drittanbieter-Libraries, die in Godots Quellcode "
 "enthalten sind, abweichende Lizenzen haben können."
 
-#: ../../docs/about/faq.rst:28
+#: ../../docs/about/faq.rst:24
 msgid ""
 "For full details, look at the `COPYRIGHT.txt <https://github.com/godotengine/"
 "godot/blob/master/COPYRIGHT.txt>`_ as well as the `LICENSE.txt <https://"
@@ -108,7 +94,7 @@ msgstr ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ im "
 "Godot repository."
 
-#: ../../docs/about/faq.rst:31
+#: ../../docs/about/faq.rst:28
 msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
@@ -116,67 +102,74 @@ msgstr ""
 "Siehe auch `die Lizenzseite auf der Godot Website <https://godotengine.org/"
 "license>`_."
 
-#: ../../docs/about/faq.rst:34
+#: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
 msgstr "Welche Plattformen werden von Godot unterstützt?"
 
-#: ../../docs/about/faq.rst:36
+#: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
 msgstr "**Vom Editor unterstützt:**"
 
-#: ../../docs/about/faq.rst:38
+#: ../../docs/about/faq.rst:35
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:45
+#: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "Mac OS X"
 msgstr "macOS"
 
-#: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:46
+#: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
 
-#: ../../docs/about/faq.rst:42
+#: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
 msgstr "**Für das Exportieren von Spielen:**"
 
-#: ../../docs/about/faq.rst:44
+#: ../../docs/about/faq.rst:41
 msgid "Windows (and UWP)"
 msgstr "Windows (und UWP)"
 
-#: ../../docs/about/faq.rst:47
+#: ../../docs/about/faq.rst:44
 msgid "Android"
 msgstr "Android"
 
-#: ../../docs/about/faq.rst:48
+#: ../../docs/about/faq.rst:45
 msgid "iOS"
 msgstr "iOS"
 
-#: ../../docs/about/faq.rst:49
+#: ../../docs/about/faq.rst:46
 msgid "Web"
 msgstr "Web"
 
-#: ../../docs/about/faq.rst:51
+#: ../../docs/about/faq.rst:48
+#, fuzzy
 msgid ""
-"Both 32 and 64 bit binaries are supported where it makes sense, with 64 "
+"Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
 "Sowohl 32- als auch 64-Bit Binaries werden – wo sinnvoll – unterstützt, mit "
 "64 Bit als Standard."
 
-#: ../../docs/about/faq.rst:53
+#: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
-"systems with Linux, like the Raspberry Pi. There is also some unofficial "
-"thirdparty work being done on building for some consoles. None of this is "
-"included in the default build scripts or export templates, however."
+"systems with Linux, like the Raspberry Pi."
+msgstr ""
+
+#: ../../docs/about/faq.rst:54
+#, fuzzy
+msgid ""
+"Additionally, there is some unofficial third-party work being done on "
+"building for some consoles. However, none of this is included in the default "
+"build scripts or export templates at this time."
 msgstr ""
 "Laut manchen Nutzern lässt sich Godot auch erfolgreich auf ARM-basierten "
 "Systemen mit Linux, wie dem Raspberry Pi kompilieren und verwenden. Auch "
 "gibt es Ports für Konsolen von Drittanbietern. Allerdings ist nichts davon "
 "standardmäßig in den Buildskripten oder Exportvorlagen enthalten."
 
-#: ../../docs/about/faq.rst:57
+#: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
@@ -184,61 +177,104 @@ msgstr ""
 "Mehr davon siehe die Abschnitte :ref:`exporting <toc-learn-workflow-export>` "
 "und :ref:`compiling Godot yourself <toc-devel-compiling>`."
 
-#: ../../docs/about/faq.rst:60
-msgid "Which languages are supported in Godot?"
+#: ../../docs/about/faq.rst:62
+#, fuzzy
+msgid "Which programming languages are supported in Godot?"
 msgstr "Welche Programmiersprachen werden in Godot unterstützt?"
 
-#: ../../docs/about/faq.rst:62
+#: ../../docs/about/faq.rst:64
+#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
-"C# and C++. See the subcategories for each language in the :ref:`scripting "
+"C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
 "Die offiziellen unterstützten Sprachen für Godot sind GDScript, Visual "
 "Scripting, C# und C++. Genaueres zu jeder Sprache in der jeweiligen "
 "Unterkategorie im :ref:`scripting <toc-learn-scripting>`-Abschnitt."
 
-#: ../../docs/about/faq.rst:65
-msgid ""
-"Note that C# and Visual Scripting support is comparatively young and "
-"GDScript still has some advantages as outlined below."
-msgstr ""
-"C# und Visual Scripting sind noch sehr neu in Godot, weswegen GDScript wie "
-"unten beschrieben noch einige Vorteile hat."
-
 #: ../../docs/about/faq.rst:68
 msgid ""
-"Support for new languages can be added by third parties using the GDNative / "
-"NativeScript / PluginScript facilities. (See question about plugins below.)"
+"If you are just starting out with either Godot or game development in "
+"general, GDScript is the recommended language to learn and use since it is "
+"native to Godot. While scripting languages tend to be less performant than "
+"lower-level languages in the long run, for prototyping, developing Minimum "
+"Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
+"provide a fast, friendly, and capable way of developing your games."
 msgstr ""
-"Unterstützung für neue Sprachen kann mithilfe von GDNative / NativeScript "
-"und PluginScript hinzugefügt werden."
 
-#: ../../docs/about/faq.rst:71
+#: ../../docs/about/faq.rst:75
 msgid ""
-"Work is currently underway, for example, on unofficial bindings for Godot to "
-"`Python <https://github.com/touilleMan/godot-python>`_ and `Nim <https://"
-"github.com/pragmagic/godot-nim>`_."
+"Note that C# support is still relatively new, and as such, you may encounter "
+"some issues along the way. Our friendly and hard-working development "
+"community is always ready to tackle new problems as they arise, but since "
+"this is an open-source project, we recommend that you first do some due "
+"diligence yourself. Searching through discussions on `open issues <https://"
+"github.com/godotengine/godot/issues>`_ is a great way to start your "
+"troubleshooting."
+msgstr ""
+
+#: ../../docs/about/faq.rst:82
+#, fuzzy
+msgid ""
+"As for new languages, support is possible via third parties using the "
+"GDNative / NativeScript / PluginScript facilities. (See question about "
+"plugins below.) Work is currently underway, for example, on unofficial "
+"bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
+"and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
 "Zum Beispiel wird gerade an unoffiziellen Bindings für Godot für `Python "
 "<https://github.com/touilleMan/godot-python>`_ und `Nim <https://github.com/"
 "pragmagic/godot-nim>`_gearbeitet."
 
-#: ../../docs/about/faq.rst:75
-msgid ""
-"GDScript? Why use a custom scripting language instead of my language of "
-"choice?"
-msgstr "GDScript? Warum benutzt Godot eine eigene Programmiersprache?"
+#: ../../docs/about/faq.rst:88
+msgid "What is GDScript and why should I use it?"
+msgstr ""
 
-#: ../../docs/about/faq.rst:77
+#: ../../docs/about/faq.rst:90
 msgid ""
-"The short answer is that we think the additional complexity both on your "
-"side (when first learning Godot and GDScript) as well as our side "
-"(maintenance) is worth the more integrated and seamless experience over "
-"attracting additional users with more familiar programming languages that "
-"result in a worse experience. We understand if you would rather use another "
-"language in Godot (see list of supported options above), but we strongly "
-"encourage you to try it and see the benefits for yourself."
+"GDScript is Godot's integrated scripting language. It was built from the "
+"ground up to maximize Godot's potential in the least amount of code, "
+"affording both novice and expert developers alike to capitalize on Godot's "
+"strengths as fast as possible. If you've ever written anything in a language "
+"like Python before then you'll feel right at home. For examples, history, "
+"and a complete overview of the power GDScript offers you, check out the "
+"`GDScript scripting guide <gdscript_basics>`_."
+msgstr ""
+
+#: ../../docs/about/faq.rst:97
+msgid ""
+"There are several reasons to use GDScript--especially when you are "
+"prototyping, in alpha/beta stages of your project, or are not creating the "
+"next AAA title--but the most salient reason is the overall **reduction of "
+"complexity.**"
+msgstr ""
+
+#: ../../docs/about/faq.rst:101
+msgid ""
+"The original intent of creating a tightly integrated, custom scripting "
+"language for Godot was two-fold: first, it reduces the amount of time "
+"necessary to get up and running with Godot, giving developers a rapid way of "
+"exposing themselves to the engine with a focus on productivity; second, it "
+"reduces the overall burden of maintenance, attenuates the dimensionality of "
+"issues, and allows the developers of the engine to focus on squashing bugs "
+"and improving features related to the engine core--rather than spending a "
+"lot of time trying to get a small set of incremental features working across "
+"a large set of languages."
+msgstr ""
+
+#: ../../docs/about/faq.rst:109
+#, fuzzy
+msgid ""
+"Since Godot is an open-source project, it was imperative from the start to "
+"prioritize a more integrated and seamless experience over attracting "
+"additional users by supporting more familiar programming languages--"
+"especially when supporting those more familiar languages would result in a "
+"worse experience. We understand if you would rather use another language in "
+"Godot (see list of supported options above). That being said, if you haven't "
+"given GDScript a try, try it for **three days**. Just like Godot, once you "
+"see how powerful it is and rapid your development becomes, we think GDScript "
+"will grow on you."
 msgstr ""
 "Die kurze Antwort ist: Wir denken, dass die zusätzliche Komplexität auf "
 "deiner (beim erlernen von Godot und GDScript) und unserer Seite (Wartung) "
@@ -250,47 +286,7 @@ msgstr ""
 "wärmstens ans Herz, es wenigstens mit GDScript zu versuchen und dir die "
 "Vorteile selbst anzusehen."
 
-#: ../../docs/about/faq.rst:85
-msgid ""
-"GDScript is designed to integrate from the ground to the way Godot works, "
-"more than any other language, and is simple and easy to learn. Takes at most "
-"a day or two to get comfortable and it's easy to see the benefits once you "
-"do. Please make the effort to learn GDScript, you will not regret it."
-msgstr ""
-"GDScript ist so konzipiert, dass es sich von Grund auf in die Funktionsweise "
-"von Godot integrieren lässt, mehr als jede andere Sprache, und ist einfach "
-"und leicht zu erlernen. Es dauert höchstens ein oder zwei Tage, um sich an "
-"sie zu gewöhnen, und es ist einfach, die Vorteile zu sehen, wenn man sie "
-"erst einmal gelernt hat. Bitte machen Sie sich die Mühe, GDScript zu "
-"erlernen, Sie werden es nicht bereuen."
-
-#: ../../docs/about/faq.rst:91
-msgid ""
-"Godot C++ API is also efficient and easy to use (the entire Godot editor is "
-"made with this API), and an excellent tool to optimize parts of a project, "
-"but trying to use it instead of GDScript for an entire game is, in most "
-"cases, a waste of time."
-msgstr ""
-"Die Godot C++ API ist außerdem effizient und einfach zu verwenden (der "
-"gesamte Godot Editor wurde mithilfe dieser API erstellt), und ist ein "
-"hervorragendes Werkzeug, um Teile eines Projektes zu optimieren.\n"
-"Sie allerdings anstatt von GDScript für ein ganzes Spiel zu verwenden, ist "
-"meistens nicht sehr zeiteffizient."
-
-#: ../../docs/about/faq.rst:96
-msgid ""
-"Yes, for more than a decade we tried in the past integrating several VMs "
-"(and even shipped games using them), such as Python, Squirrel and Lua (in "
-"fact we authored tolua++ in the past, one of the most popular C++ binders). "
-"None of them worked as well as GDScript does now."
-msgstr ""
-"Ja, mehr als ein Jahrzehnt lang haben wir versucht, mehrere Virtuelle "
-"Maschinen zu integrieren (und auch Spiele die diese nutzen veröffentlicht), "
-"wie zum Beispiel Python, Squirrel und Lua (in der Tat haben wir tolua++ "
-"verfasst, eines der populärsten C++-Bindings). Keiner funktionierte so gut "
-"wie GDScript es tut."
-
-#: ../../docs/about/faq.rst:101
+#: ../../docs/about/faq.rst:118
 msgid ""
 "More information about getting comfortable with GDScript or dynamically "
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
@@ -300,46 +296,46 @@ msgstr ""
 "umgehen zu können, können im Tutorial :ref: `doc_gdscript_more_efficiently` "
 "gefunden werden."
 
-#: ../../docs/about/faq.rst:105
-msgid "For the more technically versed, proceed to the next item."
-msgstr "Technisch Versiertere können das Folgende überspringen."
-
-#: ../../docs/about/faq.rst:108
-msgid "I don't believe you. What are the technical reasons for the item above?"
+#: ../../docs/about/faq.rst:122
+msgid "What were the motivations behind creating GDScript?"
 msgstr ""
-"Ich glaube euch nicht. Was sind die technischen Gründe für die genannten "
-"Gründe?"
 
-#: ../../docs/about/faq.rst:110
-msgid "The main reasons are:"
-msgstr "Die Hauptgründe sind:"
-
-#: ../../docs/about/faq.rst:112
+#: ../../docs/about/faq.rst:124
 msgid ""
-"No good thread support in most script VMs, and Godot uses threads (Lua, "
-"Python, Squirrel, JS, AS, etc.)."
+"The main reasons for creating a custom scripting language for Godot were:"
+msgstr ""
+
+#: ../../docs/about/faq.rst:126
+#, fuzzy
+msgid ""
+"Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
+"Squirrel, JS, AS, etc.)."
 msgstr ""
 "Keine gute Unterstützung für Threads in den meisten Script VMs (Lua, Python, "
 "Squirrel, JS, AS, etc.), Godot verwendet aber Threads."
 
-#: ../../docs/about/faq.rst:114
+#: ../../docs/about/faq.rst:128
+#, fuzzy
 msgid ""
-"No good class extending support in most script VMs, and adapting to the way "
+"Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
 "Keine gute Unterstützung für Klassenvererbung in den meisten Skript-VMs, und "
 "das Anpassen an Godots Funktionsweise ist sehr ineffizient (Lua, Python, JS)."
 
-#: ../../docs/about/faq.rst:116
+#: ../../docs/about/faq.rst:130
+#, fuzzy
 msgid ""
-"Horrible interface for binding to C++, results in large amount of code, "
-"bugs, bottlenecks and general inefficiency (Lua, Python, Squirrel, JS, etc.)"
+"Many existing languages have horrible interfaces for binding to C++, "
+"resulting in large amount of code, bugs, bottlenecks, and general "
+"inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
+"engine, not a great amount of integrations."
 msgstr ""
 "Grauenhafte Schnittstelle zur Sprachanbindung an C++, die zu großen Mengen "
 "an Code, Bugs, Auslastung und genereller Ineffizienz führt. (Lua, Python, "
 "Squirrel, JS, etc.)"
 
-#: ../../docs/about/faq.rst:119
+#: ../../docs/about/faq.rst:133
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
@@ -347,7 +343,7 @@ msgstr ""
 "Keine nativen Vektor-Typen (vector3, matrix4, usw.) → geringere Performance "
 "wenn eigene Objekttypen genutzt werden (Lua, Python, Squirrel, JS, AS, etc.)."
 
-#: ../../docs/about/faq.rst:122
+#: ../../docs/about/faq.rst:136
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
@@ -355,7 +351,7 @@ msgstr ""
 "Der Garbage Collector führt zu Verzögerungen oder unnötig viel "
 "Speicherbelegung (Lua, Python, JS, AS, etc.)."
 
-#: ../../docs/about/faq.rst:124
+#: ../../docs/about/faq.rst:138
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
@@ -365,115 +361,44 @@ msgstr ""
 "kann (das betrifft alle Sprachen). Das alles wird sehr gut von GDScript "
 "unterstützt."
 
-#: ../../docs/about/faq.rst:128
-msgid ""
-"GDScript was designed to solve the issues above, and performs well in all "
-"the above scenarios. Please learn GDScript and enjoy a smooth integration of "
-"scripting with the game engine (yes, it's a rare but enjoyable situation "
-"when things just work). It's worth it, give it a try!"
+#: ../../docs/about/faq.rst:142
+msgid "GDScript was designed to curtail the issues above and more."
 msgstr ""
-"GDScript wurde mit dem Ziel entwickelt, die obigen Probleme zu lösen, und "
-"funktioniert wunderbar in all den oben genannten Szenarien. Bitte lerne "
-"GDScript und erfreue dich der sehr gelungenen Integration von Skripten in "
-"die Spiele-Engine (Ja, es ist eine sehr seltene aber erfreuliche Situation, "
-"wenn einfach alles funktioniert). Es lohnt sich, versuche es einfach!"
-
-#: ../../docs/about/faq.rst:135
-msgid "I want to extend Godot. What are my options for creating plugins?"
-msgstr "Ich möchte Godot erweitern. Wie kann ich Plugins entwickeln?"
-
-#: ../../docs/about/faq.rst:137
-msgid ""
-"For creating Godot Editor plugins look at :ref:`EditorPlugins "
-"<doc_making_plugins>` and tool scripts."
-msgstr ""
-"Für Infos zum Erstellen von Godot Editor Plugins sieh dir :ref:"
-"`EditorPlugins <doc_making_plugins>` und Werkzeug-Skripte an."
-
-#: ../../docs/about/faq.rst:139
-msgid ""
-"Additional languages could be added via PluginScript or the more low-level "
-"NativeScript."
-msgstr ""
-"Zusätzliche Sprachen können per PluginScript oder das eher low-level "
-"NativeScript hinzugefügt werden."
-
-#: ../../docs/about/faq.rst:141
-msgid ""
-"If you want to add a certain native library, your best bet is GDNative and "
-"custom C++ modules."
-msgstr ""
-"Wenn du eine bestimmte native Bibliothek hinzufügen willst, ist es das "
-"beste, GDNative oder benutzerdefinierte C++ Module zu verwenden."
-
-#: ../../docs/about/faq.rst:143
-msgid "Also see the official blog posts on these topics:"
-msgstr "Siehe auch die offiziellen Blogposts zu diesen Themen (auf Englisch):"
 
 #: ../../docs/about/faq.rst:145
-msgid ""
-"`A look at the GDNative architecture <https://godotengine.org/article/look-"
-"gdnative-architecture>`_"
+msgid "What type of 3D model formats does Godot support?"
 msgstr ""
-"`Ein Blick auf die GDNative-Architektur <https://godotengine.org/article/"
-"look-gdnative-architecture>`_"
 
-#: ../../docs/about/faq.rst:146
-msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`GDNative ist hier! <https://godotengine.org/article/dlscript-here>`_"
-
-#: ../../docs/about/faq.rst:148
+#: ../../docs/about/faq.rst:147
 msgid ""
-"You can also take a look at the GDScript implementation, the Godot modules "
-"as well as the `unofficial Python support <https://github.com/touilleMan/"
-"godot-python>`_ for Godot."
+"Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
+"OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
-"Du kannst auch einen Blick auf die GDScript Implementierung werfen, die "
-"Godot-Module und die `inoffiziellen Python-Unterstützung <https://github.com/"
-"touilleMan/godot-python>`_ für Godot."
 
-#: ../../docs/about/faq.rst:152
-msgid "Why is FBX not supported for import?"
-msgstr "Warum wird der Import von FBX nicht unterstützt?"
+#: ../../docs/about/faq.rst:149
+msgid ""
+"If you are using Blender, take a look at our own `Better Collada Exporter "
+"<https://godotengine.org/download>`_."
+msgstr ""
 
-#: ../../docs/about/faq.rst:154
+#: ../../docs/about/faq.rst:151
+msgid "As of Godot 3.0, glTF is supported."
+msgstr ""
+
+#: ../../docs/about/faq.rst:153
 #, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
-"<https://opensource.org/licenses/MIT>`_ provided by Godot."
+"<https://opensource.org/licenses/MIT>`_ provided by Godot. That being said, "
+"FBX support could still be provided by third parties as a plugin. (See "
+"Plugins question above.)"
 msgstr ""
 "Das FBX SDK hat eine sehr `restriktive Lizenz <http://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, welche inkompatibel mit der `offenen Lizenz "
 "<http://opensource.org/licenses/MIT>`_ von Godot ist."
 
-#: ../../docs/about/faq.rst:158
-msgid ""
-"That said, Godot's Collada support is good, please use the `OpenCollada "
-"<https://github.com/KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ "
-"exporter for maximum compatibility if you are using Maya or 3DS Max. If you "
-"are using Blender, take a look at our own `Better Collada Exporter <https://"
-"godotengine.org/download>`_."
-msgstr ""
-"Das heißt, die Unterstützung von Godot für Collada ist wirklich gut, bitte "
-"verwenden Sie den `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/"
-"wiki/OpenCOLLADA-Tools>`_ Exporter für maximale Kompatibilität, falls Sie "
-"Maya oder 3DS Max nutzen. Verwenden Sie Blender, dann schaue Sie unseren "
-"eigenen `Better Collada Exporter <https://godotengine.org/download>`_ an."
-
-#: ../../docs/about/faq.rst:164
-msgid "Also, glTF support was added in Godot 3.0."
-msgstr "Godot 3.0 unterstützt jetzt außerdem auch das glTF Format."
-
-#: ../../docs/about/faq.rst:166
-msgid ""
-"FBX support could still be provided by third parties as a plugin. (See "
-"Plugins question above.)"
-msgstr ""
-"Die Unterstützung für das FBX Format könnte weiterhin von Dritten als Plugin "
-"angeboten werden. (Siehe Plugins Frage oben.)"
-
-#: ../../docs/about/faq.rst:169
+#: ../../docs/about/faq.rst:159
 msgid ""
 "Will [Insert closed SDK such as PhysX, GameWorks, etc.] be supported in "
 "Godot?"
@@ -481,29 +406,26 @@ msgstr ""
 "Wird [Geschlossenes SDK wie PhysX, GameWorks, etc. einfügen] in Godot "
 "unterstützt werden?"
 
-#: ../../docs/about/faq.rst:171
+#: ../../docs/about/faq.rst:161
 msgid ""
-"No, the aim of Godot is to create a complete open source engine licensed "
-"under MIT, so you have complete control over every single piece of it. Open "
-"versions of functionality or features from such SDKs may be eventually added "
-"though."
+"The aim of Godot is to create a free and open-source MIT-licensed engine "
+"that is modular and extendable. There are no plans for the core engine "
+"development community to support any third-party, closed-source/proprietary "
+"SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
-"Nein, das Ziel von Godot ist es, eine komplette Open-Source-Engine zu "
-"erstellen, die unter der MIT-Lizenz steht, so dass Sie die volle Kontrolle "
-"über jedes einzelne Teil davon haben. Offene Versionen von Funktionen oder "
-"Features aus solchen SDKs können jedoch eventuell hinzugefügt werden."
 
-#: ../../docs/about/faq.rst:176
+#: ../../docs/about/faq.rst:166
+#, fuzzy
 msgid ""
-"That said, because it is open source, and modular, nothing prevents you or "
-"anyone else interested into adding those libraries as a module and ship your "
-"game using them, as either open or closed source. Everything is allowed."
+"That said, because Godot is open-source and modular, nothing prevents you or "
+"anyone else interested in adding those libraries as a module and shipping "
+"your game with them--as either open- or closed-source."
 msgstr ""
 "Da Godot aber Open Source und modular ist, hindert Sie und andere nichts "
 "daran, diese Bibliotheken als Modul Ihrem Spiel hinzuzufügen, entweder als "
 "Open Source oder als Closed Source. Beides ist erlaubt."
 
-#: ../../docs/about/faq.rst:181
+#: ../../docs/about/faq.rst:170
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question above."
@@ -511,7 +433,15 @@ msgstr ""
 "Ob Unterstützung für die SDK Ihrer Wahl bereitgestellt werden kann, finden "
 "Sie in der Fragestellung über Plugins oben."
 
-#: ../../docs/about/faq.rst:184
+#: ../../docs/about/faq.rst:173
+msgid ""
+"If you know of a third-party SDK that is not supported by Godot but that "
+"offers free and open-source integration, consider starting the integration "
+"work yourself. Godot is not owned by one person; it belongs to the "
+"community, and it grows along with ambitious community contributors like you."
+msgstr ""
+
+#: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
@@ -519,7 +449,7 @@ msgstr ""
 "Wie sollten Assets für einen optimalen Umgang mit verschiedenen "
 "Bildschirmauflösungen und Seitenverhältnissen angelegt werden?"
 
-#: ../../docs/about/faq.rst:186
+#: ../../docs/about/faq.rst:181
 msgid ""
 "This question pops up often and it's probably thanks to the misunderstanding "
 "created by Apple when they originally doubled the resolution of their "
@@ -538,18 +468,20 @@ msgstr ""
 "Android- und spätere Apple-Geräte, die mit einer großen Bandbreite neuer "
 "Größen und DPIs eingeführt wurden."
 
-#: ../../docs/about/faq.rst:195
+#: ../../docs/about/faq.rst:189
+#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
-"base resolution for the game and only handle different screen aspects. This "
-"is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or YFov."
+"base resolution for the game and only handle different screen aspect ratios. "
+"This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
+"YFov."
 msgstr ""
 "Der einfachste Weg, dies zu erreichen, ist es stattdessen, eine einfache "
 "Basis-Auflösung für das Spiel zu verwenden und nur mit verschiedenen "
 "Bildschirm-Größen klarzukommen. Dies wird am meisten für 2D benötigt, denn "
 "in 3D ist es einfach eine Frage der Kamera (XFov und YFov)."
 
-#: ../../docs/about/faq.rst:200
+#: ../../docs/about/faq.rst:193
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -567,7 +499,7 @@ msgstr ""
 "desto größer die Texturen, desto mehr Speicher (RAM) wird das Gerät "
 "benötigen und desto länger wird es dauern, bis das Spiel geladen ist."
 
-#: ../../docs/about/faq.rst:208
+#: ../../docs/about/faq.rst:201
 msgid ""
 "Use the stretch options in Godot, 2D stretching with keeping aspect works "
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
@@ -577,7 +509,7 @@ msgstr ""
 "Strecken bei Einhalten der Seitenverhältnisse (siehe :ref:"
 "`doc_multiple_resolutions`)."
 
-#: ../../docs/about/faq.rst:212
+#: ../../docs/about/faq.rst:205
 msgid ""
 "Determine a minimum resolution and then decide if you want your game to "
 "stretch vertically or horizontally for different aspect ratios, or whether "
@@ -589,7 +521,7 @@ msgstr ""
 "Seitenverhältnissen), oder ob es ein Minimum geht, sodass dann stattdessen "
 "schwarze Balken an den Seiten erscheinen."
 
-#: ../../docs/about/faq.rst:217
+#: ../../docs/about/faq.rst:210
 msgid ""
 "For user interfaces, use the :ref:`anchoring <doc_size_and_anchors>` to "
 "determine where controls should stay and move. If UIs are more complex, "
@@ -600,11 +532,11 @@ msgstr ""
 "(fest) oder beweglich sein sollen. Wenn das UI komplex werden soll, hilft "
 "es, etwas über Container zu lernen."
 
-#: ../../docs/about/faq.rst:221
+#: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "Und das war's! Das Spiel sollte in mehreren Auflösungen funktionieren."
 
-#: ../../docs/about/faq.rst:223
+#: ../../docs/about/faq.rst:216
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -616,58 +548,91 @@ msgstr ""
 "der Export-Option verkleinert werden und für bestimmte Bildschirmgrößen im "
 "Google Play Store oder im Apple Store genutzt werden."
 
-#: ../../docs/about/faq.rst:229
-msgid "I have a great idea that will make Godot better. What do you think?"
-msgstr "Ich habe eine super Idee, die Godot besser machen wird. Was denkt ihr?"
+#: ../../docs/about/faq.rst:222
+msgid "How can I extend Godot?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:224
+#, fuzzy
+msgid ""
+"For extending Godot, like creating Godot Editor plugins or adding support "
+"for additional languages, take a look at :ref:`EditorPlugins "
+"<doc_making_plugins>` and tool scripts."
+msgstr ""
+"Für Infos zum Erstellen von Godot Editor Plugins sieh dir :ref:"
+"`EditorPlugins <doc_making_plugins>` und Werkzeug-Skripte an."
+
+#: ../../docs/about/faq.rst:228
+msgid "Also see the official blog posts on these topics:"
+msgstr "Siehe auch die offiziellen Blogposts zu diesen Themen (auf Englisch):"
+
+#: ../../docs/about/faq.rst:230
+msgid ""
+"`A look at the GDNative architecture <https://godotengine.org/article/look-"
+"gdnative-architecture>`_"
+msgstr ""
+"`Ein Blick auf die GDNative-Architektur <https://godotengine.org/article/"
+"look-gdnative-architecture>`_"
 
 #: ../../docs/about/faq.rst:231
+msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
+msgstr "`GDNative ist hier! <https://godotengine.org/article/dlscript-here>`_"
+
+#: ../../docs/about/faq.rst:233
+#, fuzzy
 msgid ""
-"Your idea will most certainly be ignored. Examples of stuff that is ignored "
-"by the developers:"
+"You can also take a look at the GDScript implementation, the Godot modules, "
+"as well as the `unofficial Python support <https://github.com/touilleMan/"
+"godot-python>`_ for Godot. This would be a good starting point to see how "
+"another third-party library integrates with Godot."
 msgstr ""
-"Deine Idee wird höchstwahrscheinlich ignoriert. Beispiele von Dingen, die "
-"die Entwickler ignorieren:"
+"Du kannst auch einen Blick auf die GDScript Implementierung werfen, die "
+"Godot-Module und die `inoffiziellen Python-Unterstützung <https://github.com/"
+"touilleMan/godot-python>`_ für Godot."
 
-#: ../../docs/about/faq.rst:234
-msgid "Let's do this because it will make Godot better"
-msgstr "Lasst uns dies ändern, weil es Godot einfach besser macht"
-
-#: ../../docs/about/faq.rst:235
-msgid "Let's do this in Godot because another game engine does it"
+#: ../../docs/about/faq.rst:239
+msgid "I would like to contribute! How can I get started?"
 msgstr ""
-"Godot soll das so machen, weil es eine andere Spieleengine auch so macht"
 
-#: ../../docs/about/faq.rst:236
-msgid "Let's remove this because I think it's not needed"
-msgstr "Lasst uns dies entfernen, weil ich glaube, dass es unnötig ist"
-
-#: ../../docs/about/faq.rst:237
-msgid "Let's remove clutter and bloat and make Godot look nicer"
-msgstr ""
-"Lasst uns überflüssiges Zeug und Ballast entfernen und Godot besser aussehen "
-"lassen"
-
-#: ../../docs/about/faq.rst:238
-msgid "Let's add an alternative workflow for people who prefer it"
-msgstr ""
-"Lasst uns einen alternativen Arbeitsablauf hinzufügen, für Leute, die diesen "
-"besser finden"
-
-#: ../../docs/about/faq.rst:240
+#: ../../docs/about/faq.rst:241
 msgid ""
-"Godot developers are always willing to talk to you and listen to your "
-"feedback very openly, to an extent rarely seen in open source projects, but "
-"they will care mostly about real issues you have while using Godot, not "
-"ideas solely based on personal belief. Developers are interested in (for "
-"example):"
+"Awesome! As an open-source project, Godot thrives off of the innovation and "
+"ambition of developers like you."
 msgstr ""
-"Die Godot-Entwickler sind immer bereit, mit dir zu reden und lauschen sehr "
-"offen deinem Feedback, in einem Umfang wie er selten in Open Source "
-"Projekten vorkommt, aber für sie stehen echte Probleme im Umgang mit Godot "
-"im Vordergrund, nicht rein auf persönlichem Glauben basierende Ideen. Die "
-"Entwickler interessiert (als Beispiel):"
 
-#: ../../docs/about/faq.rst:246
+#: ../../docs/about/faq.rst:244
+msgid ""
+"The first place to get started is in the `issues <https://github.com/"
+"godotengine/godot/issues>`_. Find an issue that resonates with you, then "
+"proceed to the `How to Contribute <https://github.com/godotengine/godot/blob/"
+"master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
+"fork, modify, and submit a Pull Request (PR) with your changes."
+msgstr ""
+
+#: ../../docs/about/faq.rst:249
+msgid "I have a great idea for Godot. How can I share it?"
+msgstr ""
+
+#: ../../docs/about/faq.rst:251
+msgid ""
+"It might be tempting to want to bring ideas to Godot, like ones that result "
+"in massive core changes, some sort of mimicry of what another game engine "
+"does, or alternative workflows that you'd like built into the editor. These "
+"are great and we are thankful to have such motivated people want to "
+"contribute, but Godot's focus is and always will be the core functionality "
+"as outlined in the `Roadmap <https://github.com/godotengine/godot-roadmap/"
+"blob/master/ROADMAP.md>`_, `squashing bugs and addressing issues <https://"
+"github.com/godotengine/godot/issues>`_, and conversations between Godot "
+"community members."
+msgstr ""
+
+#: ../../docs/about/faq.rst:260
+msgid ""
+"Most developers in the Godot community will be more interested to learn "
+"about things like:"
+msgstr ""
+
+#: ../../docs/about/faq.rst:263
 msgid ""
 "Your experience using the software and the problems you have (we care about "
 "this much more than ideas on how to improve it)."
@@ -676,7 +641,7 @@ msgstr ""
 "interessiert das um einiges mehr als die Ideen, wie man die Software "
 "verbessern kann)."
 
-#: ../../docs/about/faq.rst:248
+#: ../../docs/about/faq.rst:265
 msgid ""
 "The features you would like to see implemented because you need them for "
 "your project."
@@ -684,135 +649,70 @@ msgstr ""
 "Die Funktionen, die du gerne in der Engine implementiert sehen würdest, weil "
 "sie für ein Projekt benötigt werden."
 
-#: ../../docs/about/faq.rst:250
+#: ../../docs/about/faq.rst:267
+#, fuzzy
 msgid ""
-"The concepts that were difficult to understand in order to learn the "
-"software."
+"The concepts that were difficult to understand while learning the software."
 msgstr ""
 "Die Konzepte, die schwierig waren, zu verstehen, um die Software zu lernen."
 
-#: ../../docs/about/faq.rst:252
+#: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
 msgstr "Die Teile des Arbeitsablaufes, die du gerne optimiert haben würdest."
 
-#: ../../docs/about/faq.rst:253
+#: ../../docs/about/faq.rst:269
+#, fuzzy
 msgid ""
-"Parts where you missed clear tutorials or where the documentation wasn't up "
-"to par."
+"Parts where you missed clear tutorials or where the documentation wasn't "
+"clear."
 msgstr ""
 "Teile, wo Ihnen klare Anweisungen in Form von Tutorials fehlen oder wo die "
 "Dokumentation einfach noch nicht ausführlich genug war."
 
-#: ../../docs/about/faq.rst:255
+#: ../../docs/about/faq.rst:271
+#, fuzzy
 msgid ""
-"Once one of the above points is stated, we can work together on a solution "
-"and this is where your ideas and suggestions are most valuable and welcome, "
-"they need to be in context of a real issue."
-msgstr ""
-"Sobald einer der oberen Punkte gestellt wurde, können wir an einer Lösung "
-"des Problems arbeiten und das ist, wo deine Ideen und Vorschläge am "
-"wichtigsten und am willkommendsten sind, sie müssen nur im Kontext eines "
-"wirklichen Problems liegen."
-
-#: ../../docs/about/faq.rst:259
-msgid ""
-"As such, please don't feel that your ideas for Godot are unwelcome. Instead, "
-"try to reformulate them as a problem first, so developers and the community "
-"have a base ground to discuss first."
+"Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
+"reformulate them as a problem first, so developers and the community have a "
+"functional foundation to ground your ideas on."
 msgstr ""
 "Wie sonst, bitte habe nicht das Gefühl, dass die Ideen unwillkommen wären. "
 "Stattdessen ist es besser, das Problem neu zu formulieren, sodass die "
 "Entwickler einen festen Boden haben, auf dem sie diskutieren können."
 
-#: ../../docs/about/faq.rst:263
-msgid "Examples of how NOT to state problems generally and vaguely are:"
-msgstr ""
-"Beispiele dafür, wie man allgemeine und vage Probleme NICHT angeben sollte "
-"sind:"
-
-#: ../../docs/about/faq.rst:265
-msgid "Certain feature is ugly"
-msgstr "Eine bestimmtes Merkmal ist unschön"
-
-#: ../../docs/about/faq.rst:266
-msgid "Certain workflow is slow"
-msgstr "Ein bestimmter Arbeitsablauf ist langsam"
-
-#: ../../docs/about/faq.rst:267
-msgid "Certain feature needs optimization"
-msgstr "Jenes Feature benötigt Optimierung"
-
-#: ../../docs/about/faq.rst:268
-msgid "Certain aspect of the UI looks cluttered"
-msgstr "Dieser Aspekt des UI's sieht veraltet aus"
-
-#: ../../docs/about/faq.rst:270
-msgid ""
-"Associating something with an adjective will not get you much attention and "
-"developers will most likely not understand you. Instead, try to reformulate "
-"your problem as a story such as:"
-msgstr ""
-"Wenn man etwas mit einem Adjektiv assoziiert, wird es nicht viel Bedeutung "
-"erhalten und die Entwickler werden dich wahrscheinlich nicht verstehen. "
-"Versuche stattdessen das Problem neu zu formulieren, wie eine Geschichte, z. "
-"B.:"
-
-#: ../../docs/about/faq.rst:274
-msgid "I try to move objects around but always end up picking the wrong one"
-msgstr ""
-"Ich versuche jedesmal Objekte zu verschieben, aber wähle dann immer das "
-"falsche aus"
-
 #: ../../docs/about/faq.rst:275
 msgid ""
-"I tried to make a game like Battlefield but I'm not managing to understand "
-"how to get lighting to look the same."
+"A good way to approach sharing your ideas and problems with the community is "
+"as a set of user stories. Explain what you are trying to do, what behavior "
+"you expect to happen, and then what behavior actually happened. Framing "
+"problems and ideas this way will help the whole community stay focused on "
+"improving developer experiences as a whole."
 msgstr ""
-"Ich habe versucht, ein Spiel wie Battlefield zu erstellen, aber ich verstehe "
-"nicht, wie ich die optimalen Lichtverhältnisse herstellen kann."
 
-#: ../../docs/about/faq.rst:277
+#: ../../docs/about/faq.rst:281
+#, fuzzy
 msgid ""
-"I always forget which script I was editing, and it takes me too many steps "
-"to go back to it."
-msgstr ""
-"Ich vergesse immer, welches Skript ich bearbeitet habe und ich benötige zu "
-"viele Schritte, um wieder dahin zurückzukehren."
-
-#: ../../docs/about/faq.rst:280
-msgid ""
-"This will allow you to convey what you are thinking much better and set a "
-"common ground for discussion. Please try your best to state your problems as "
-"stories to the developers and the community, before discussing any idea. Be "
-"specific and concrete."
-msgstr ""
-"Das wird dir erlauben, einen stabilen Grund für Diskussionen zu setzen. "
-"Versuche, die Probleme als verständliche Geschichten zu den Entwicklern zu "
-"bringen, bevor jene Idee diskutiert wird. Schreibe möglichst konkret."
-
-#: ../../docs/about/faq.rst:285
-msgid ""
-"Bonus points for bringing screenshots, concrete numbers, test cases or "
+"Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
 "Bonuspunkte gibt es für Bildschirmfotos, konkrete Zahlen, Testfälle oder "
 "Beispielprojekte (falls zutreffend)."
 
-#: ../../docs/about/faq.rst:288
+#: ../../docs/about/faq.rst:285
 msgid "How can I support Godot development or contribute?"
 msgstr ""
 "Wie kann ich die Entwicklung der Godot Engine unterstützen oder einen "
 "Beitrag leisten?"
 
-#: ../../docs/about/faq.rst:290
+#: ../../docs/about/faq.rst:287
 msgid "See :ref:`doc_ways_to_contribute`."
 msgstr "Siehe :ref:`doc_ways_to_contribute`."
 
-#: ../../docs/about/faq.rst:293
+#: ../../docs/about/faq.rst:290
 msgid "Who is working on Godot? How can I contact you?"
 msgstr "Wer arbeitet an Godot? Wie kann ich euch kontaktieren?"
 
-#: ../../docs/about/faq.rst:295
+#: ../../docs/about/faq.rst:292
 msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
