@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,6 +73,15 @@ msgid ""
 "for games. Some of this can be configured and disabled (e.g. by disabling "
 "\"Nagle's algorithm\" for the TCP connection)."
 msgstr ""
+"TCP гарантирует, что пакеты всегда будут поступать надежно и в правильном "
+"порядке, но задержка обычно выше из-за исправления ошибок. Это также "
+"довольно сложный протокол, потому что он понимает, что такое \"соединение\", "
+"и оптимизируется для целей, которые часто не подходят для приложений, таких "
+"как многопользовательские игры. Пакеты буферизуются для отправки большими "
+"партиями, что снижает накладные расходы на пакеты для увеличения задержки. "
+"Это может быть полезно для таких вещей, как HTTP, но обычно не для игр. "
+"Некоторые из них можно настроить и отключить (например, отключив \"алгоритм "
+"Nagle\" для TCP-подключения)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
 msgid ""
@@ -131,6 +140,13 @@ msgid ""
 "currently only offers WebSocket support and lacks some of the higher level "
 "features as well as raw access to low-level protocols like TCP and UDP."
 msgstr ""
+"Большинство поддерживаемых платформ предлагают все или большинство из "
+"упомянутых высокоуровневых и низкоуровневых сетевых функций. Поскольку сеть "
+"всегда в значительной степени зависит от оборудования и операционной "
+"системы, некоторые функции могут изменяться или быть недоступны на некоторых "
+"целевых платформах. Платформа HTML5 в настоящее время предлагает только "
+"поддержку WebSocket и не имеет некоторых функций более высокого уровня, а "
+"также необработанный доступ к протоколам низкого уровня, таким как TCP и UDP."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 msgid ""
@@ -147,6 +163,10 @@ msgid ""
 "gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
+"Gaffer On Games имеет много полезных статей о нетворкинге в играх (`here "
+"<https://gafferongames.com/tags/networking>`__), включая всестороннее "
+"`introduction to networking models in games <https://gafferongames.com/post/"
+"what_every_programmer_needs_to_know_about_game_networking/>`__."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:41
 msgid ""
@@ -154,6 +174,8 @@ msgid ""
 "Godot's built-in networking, see here for an example: https://github.com/"
 "PerduGames/gdnet3"
 msgstr ""
+"Если вы хотите использовать низкоуровневую сетевую библиотеку вместо "
+"встроенной сети Godot, см. здесь пример: https://github.com/PerduGames/gdnet3"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:45
 msgid ""
@@ -163,6 +185,12 @@ msgid ""
 "application runs on and use your servers to send spam, attack others or "
 "steal your users data if they play your game."
 msgstr ""
+"Добавление сети в игру сопряжено с некоторой ответственностью. Это может "
+"сделать ваше приложение уязвимым, может привести к использованию читов или "
+"эксплойтов. Это может даже позволить злоумышленнику скомпрометировать "
+"машины, на которых работает ваше приложение, и использовать ваши серверы для "
+"рассылки спама, атаки других или кражи ваших пользовательских данных, если "
+"они играют в вашу игру."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:50
 msgid ""
@@ -170,10 +198,13 @@ msgid ""
 "with Godot. You can of course experiment, but when you release a networked "
 "application, always take care of any possible security concerns."
 msgstr ""
+"Это тот случай, когда сеть существует и не имеет ничего общего с Godot. "
+"Конечно, вы можете экспериментировать, но когда вы выпускаете сетевое "
+"приложение, всегда заботьтесь о любых возможных проблемах безопасности."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:55
 msgid "Mid level abstraction"
-msgstr ""
+msgstr "Среднеуровневая абстракция"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:57
 msgid ""
@@ -181,6 +212,8 @@ msgid ""
 "network, it can be helpful to understand how the base network API for "
 "synchronization works."
 msgstr ""
+"Прежде чем перейти к тому, как синхронизировать игру по сети, может быть "
+"полезно понять, как работает базовый сетевой API для синхронизации."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:59
 msgid ""
@@ -188,6 +221,10 @@ msgid ""
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
 "directly, but is designed so that several implementations can provide it:"
 msgstr ""
+"Godot использует среднеуровневый объект :ref:`NetworkedMultiplayerPeer "
+"<class_NetworkedMultiplayerPeer>`. Этот объект не предназначен для "
+"непосредственного создания, но разработан таким образом, чтобы его можно "
+"было обеспечить несколькими реализациями:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
 msgid ""
@@ -196,6 +233,11 @@ msgid ""
 "On top of that, it adds methods to set a peer, transfer mode, etc. It also "
 "includes signals that will let you know when peers connect or disconnect."
 msgstr ""
+"Этот объект простирается от :ref:`PacketPeer <class_PacketPeer>` таким "
+"образом, он наследует все полезные методы сериализации, отправки и получения "
+"данных. Кроме того, он добавляет методы для установки однорангового узла, "
+"режима передачи и т. д. Она также включает в себя сигналы, которые позволят "
+"вам знать, когда участник сети подключается или отключается."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:66
 msgid ""
@@ -205,6 +247,11 @@ msgid ""
 "could be used to implement mobile APIs (for adhoc WiFi, Bluetooth) or custom "
 "device/console-specific networking APIs."
 msgstr ""
+"Этот интерфейс класса может абстрагировать большинство типов сетевых слоев, "
+"топологий и библиотек. По умолчанию Godot предоставляет реализацию на основе "
+"ENet (:ref:`NetworkedMultiplayerEnet <class_NetworkedMultiplayerENet>`), но "
+"это может быть использовано для реализации мобильных API (для adhoc WiFi, "
+"Bluetooth) или кастомных сетевых API устройств/консоли."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:69
 msgid ""
@@ -212,37 +259,49 @@ msgid ""
 "provides even higher level networking facilities. Yet it is made available "
 "in case a game has specific needs for a lower level API."
 msgstr ""
+"В большинстве случаев использование этого объекта напрямую не рекомендуется, "
+"так как Godot предоставляет сетевые средства еще более высокого уровня. Тем "
+"не менее, он доступен в случае, если у игры есть конкретные потребности в "
+"API более низкого уровня."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:73
 msgid "Initializing the network"
-msgstr ""
+msgstr "Инициализация сети"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:75
 msgid ""
 "The object that controls networking in Godot is the same one that controls "
 "everything tree-related: :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
+"Объект, который управляет сетью в Godot-это тот же самый объект, который "
+"управляет всем, что связано с деревом: :ref:`SceneTree <class_SceneTree>`."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:77
 msgid ""
 "To initialize high level networking, the SceneTree must be provided a "
 "NetworkedMultiplayerPeer object."
 msgstr ""
+"Для инициализации сети высокого уровня SceneTree должен быть предоставлен "
+"объект NetworkedMultiplayerPeer."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:79
 msgid ""
 "To create that object it first has to be initialized as a server or client."
 msgstr ""
+"Чтобы создать этот объект, он сначала должен быть инициализирован как сервер "
+"или клиент."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:81
 msgid ""
 "Initializing as a server, listening on the given port, with a given maximum "
 "number of peers:"
 msgstr ""
+"Инициализация сервера, прослушивание, заданного порта, с неким максимальным "
+"количеством подключений:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:89
 msgid "Initializing as a client, connecting to a given IP and port:"
-msgstr ""
+msgstr "Инициализация клиента, подключение к указанному IP и порту:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:97
 msgid ""
@@ -251,14 +310,18 @@ msgid ""
 "`get_tree().get_network_peer()`. This can be done via SceneTree's metadata "
 "feature:"
 msgstr ""
+"Обратите внимание, что имеет смысл сохранить локально экземпляр подключений "
+"в SceneTree, чтобы иметь возможность получить к нему доступ позже, так как в "
+"настоящее время нет  функции `get_tree().get_network_peer()`. Это можно "
+"сделать с помощью функции метаданных SceneTree:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:104
 msgid "Checking whether the tree is initialized as a server or client:"
-msgstr ""
+msgstr "Проверка инициализации дерева (клиент или сервер):"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:110
 msgid "Terminating the networking feature:"
-msgstr ""
+msgstr "Закрытие сетевых функции :"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:116
 msgid ""
@@ -266,10 +329,13 @@ msgid ""
 "know you're going away instead of letting the connection close or timeout, "
 "depending on your game.)"
 msgstr ""
+"(Хотя, возможно, имеет смысл сначала отправить сообщение, чтобы другие "
+"участники знали, что вы уходите, вместо того, чтобы закрывать соединение, "
+"зависит от вашей игры.)"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:119
 msgid "Managing connections"
-msgstr ""
+msgstr "Управление соединениями"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
 msgid ""
@@ -279,18 +345,23 @@ msgid ""
 "`SceneTree <class_SceneTree>`). To manage who connects, Godot provides the "
 "following signals in SceneTree:"
 msgstr ""
+"Некоторые игры принимают подключения в любое время, другие только в лобби. "
+"Godot можно запросить больше не принимать соединения в любой момент (см. "
+"`set_refuse_new_network_connections(bool)` и связанные методы на :ref:"
+"`SceneTree <class_SceneTree>`). Для управления разрешениями на подключение, "
+"Godot предоставляет следующие сигналы в SceneTree:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:124
 msgid "Server and Clients:"
-msgstr ""
+msgstr "Сервер и клиенты:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:126
 msgid "`network_peer_connected(int id)`"
-msgstr ""
+msgstr "`network_peer_connected(int id)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:127
 msgid "`network_peer_disconnected(int id)`"
-msgstr ""
+msgstr "`network_peer_connected(int id)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:129
 msgid ""
@@ -304,22 +375,33 @@ msgid ""
 "they identify connected peers and thus players. You can also use IDs to send "
 "messages only to certain peers."
 msgstr ""
+"Вышеуказанные сигналы вызываются на каждом узле, подключенном к серверу (в "
+"том числе на сервере), когда новый узел подключается или отключается. "
+"Клиенты будут подключаться с уникальным id больше 1, в то время как ID 1 "
+"всегда у сервера. Все что ниже 1 должно рассматриваться как недействительные "
+"id. Идентификатор локальной системы можно получить с помощью  :ref:"
+"`SceneTree.get_network_unique_id() "
+"<class_SceneTree_get_network_unique_id>`.  Эти идентификаторы будут полезны "
+"в основном для управления лобби и, как правило, должны храниться, поскольку "
+"они идентифицируют подключенные узлы и, следовательно, игроков. Можно также "
+"использовать идентификаторы для отправки сообщений только определенным узлам."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:135
 msgid "Clients:"
-msgstr ""
+msgstr "Клиенты:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
+#, fuzzy
 msgid "`connected_to_server`"
-msgstr ""
+msgstr "`connected_to_server`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
 msgid "`connection_failed`"
-msgstr ""
+msgstr "`connection_failed`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
 msgid "`server_disconnected`"
-msgstr ""
+msgstr "`server_disconnected`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
 msgid ""
@@ -329,6 +411,11 @@ msgid ""
 "connected player information about other already connected players (e.g. "
 "their names, stats, etc)."
 msgstr ""
+"Опять же, все эти функции в основном полезны для управления лобби или для "
+"добавления/удаления игроков \"на лету\". Для этих задач сервер явно должен "
+"работать как сервер, и вы должны выполнять задачи вручную, например, "
+"отправлять недавно подключенному игроку информацию о других уже подключенных "
+"игроках (например, их имена, статистика и т. д.)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:145
 msgid ""
@@ -337,10 +424,15 @@ msgid ""
 "autoloaded node/singleton is a great fit for this, to always have access to, "
 "e.g. \"/root/lobby\"."
 msgstr ""
+"Лобби можно реализовать любым удобным для Вас способом, но наиболее "
+"распространенным способом является использование узла с одинаковым именем во "
+"всех одноранговых сценах. Как правило, автоматически загружаемый узел/"
+"синглтон отлично подходит для этого, чтобы всегда иметь доступ, например, \"/"
+"root/lobby\"."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:149
 msgid "RPC"
-msgstr ""
+msgstr "RPC"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:151
 msgid ""
@@ -348,58 +440,64 @@ msgid ""
 "procedure calls). This is implemented as a set of functions in :ref:`Node "
 "<class_Node>`:"
 msgstr ""
+"Для связи между узлами проще всего использовать RPC (удаленные вызовы "
+"процедур). Это реализовано в виде набора функций в: :ref:`Node <class_Node>`:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:154
 msgid "`rpc(\"function_name\", <optional_args>)`"
-msgstr ""
+msgstr "`rpc(\"function_name\", <оptional_args>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:155
 msgid "`rpc_id(<peer_id>,\"function_name\", <optional_args>)`"
-msgstr ""
+msgstr "`rpc_id(<peer_id>,\"function_name\", <optional_args>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:156
 msgid "`rpc_unreliable(\"function_name\", <optional_args>)`"
-msgstr ""
+msgstr "`rpc_unreliable(\"function_name\", <optional_args>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:157
 msgid "`rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)`"
-msgstr ""
+msgstr "`rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:159
 msgid "Synchronizing member variables is also possible:"
-msgstr ""
+msgstr "Синхронизация переменных также возможна:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:161
 msgid "`rset(\"variable\", value)`"
-msgstr ""
+msgstr "`rset(\"variable\", value)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:162
 msgid "`rset_id(<peer_id>, \"variable\", value)`"
-msgstr ""
+msgstr "`rset_id(<peer_id>, \"variable\", value)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:163
 msgid "`rset_unreliable(\"variable\", value)`"
-msgstr ""
+msgstr "`rset_unreliable(\"variable\", value)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:164
 msgid "`rset_unreliable_id(<peer_id>, \"variable\", value)`"
-msgstr ""
+msgstr "`rset_unreliable_id(<peer_id>, \"variable\", value)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:166
 msgid "Functions can be called in two fashions:"
-msgstr ""
+msgstr "Функции можно вызывать двумя способами:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:168
 msgid ""
 "Reliable: the function call will arrive no matter what, but may take longer "
 "because it will be re-transmitted in case of failure."
 msgstr ""
+"Надежный: вызов функции прибудет, несмотря ни на что, но может занять больше "
+"времени, потому что он будет повторно передан в случае сбоя."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:169
 msgid ""
 "Unreliable: if the function call does not arrive, it will not be re-"
 "transmitted, but if it arrives it will do it quickly."
 msgstr ""
+"Ненадежный: если вызов функции не поступает, он не будет повторно передан, "
+"но если он прибудет, он сделает это быстро."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:171
 msgid ""
@@ -409,28 +507,39 @@ msgid ""
 "would likely be outdated because the object moved further in the meantime, "
 "even if it was resent reliably)."
 msgstr ""
+"В большинстве случаев требуется надежность. Ненадежный в основном полезен "
+"при синхронизации позиций объектов (синхронизация должна происходить "
+"постоянно, и если пакет потерян, это не так уж плохо, потому что новый в "
+"конечном итоге прибудет, и он, вероятно, будет устаревшим, потому что объект "
+"перемещается всё дальше)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
 msgid ""
 "There is also the `get_rpc_sender_id` function in `SceneTree` which can be "
 "used to check which peer (or peer ID) sent a RPC call."
 msgstr ""
+"Существует также` get_rpc_sender_id 'функция в ' SceneTree`, которая может "
+"быть использован для проверки узла (получения ID) того, кто вызвал RPC."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:177
 msgid "Back to lobby"
-msgstr ""
+msgstr "Вернёмся к лобби"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:179
 msgid ""
 "Let's get back to the lobby. Imagine that each player that connects to the "
 "server will tell everyone about it."
 msgstr ""
+"Давайте вернёмся к теме лобби. Представьте, что каждый игрок, подключившийся "
+"к серверу, расскажет нам об этом."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:230
 msgid ""
 "You might have noticed already something different, which is the usage of "
 "the `remote` keyword on the `register_player` function:"
 msgstr ""
+"Возможно вы уже заметили что-то новое в коде, а именно ключевое слово "
+"`remote` у функции `register_player`:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:236
 msgid ""
@@ -440,40 +549,53 @@ msgid ""
 "easier (so a client can't call a function to delete a file on another "
 "client's system)."
 msgstr ""
+"Это ключевое слово имеет два применения. Первая это дать знать Godot, что "
+"эта функция может быть вызвана из RPC. Если ключевых слов не добавлено, "
+"тогда Godot будет блокировать любые попытки вызвать эту функцию, ради "
+"безопасности. Это делает работу системы безопасности чуть легче (таким "
+"образом клиент не может вызвать функцию, чтобы удалить файл другого клиента "
+"в системе)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:240
 msgid ""
 "The second use is to specify how the function will be called via RPC. There "
 "are four different keywords:"
 msgstr ""
+"Второй способ применения указывает как функция будет вызываться через RPC. "
+"Всего есть 4 разных ключевых слова:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:242
 msgid "`remote`"
-msgstr ""
+msgstr "`remote`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:243
 msgid "`sync`"
-msgstr ""
+msgstr "`sync`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:244
 msgid "`master`"
-msgstr ""
+msgstr "`master`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:245
 msgid "`slave`"
-msgstr ""
+msgstr "`slave`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:247
 msgid ""
 "The `remote` keyword means that the `rpc()` call will go via network and "
 "execute remotely."
 msgstr ""
+"Ключевое слово `remote` значит, что `rpc()` будет идти по сети и вызываться "
+"удалённо."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid ""
 "The `sync` keyword means that the `rpc()` call will go via network and "
 "execute remotely, but will also execute locally (do a normal function call)."
 msgstr ""
+"Ключевое слово `sync` значит, что `rpc()` будет идти по сети и выполняться "
+"удаленно, но также будет выполняться локально (выполнит обычный вызов "
+"функции)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:251
 msgid ""

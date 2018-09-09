@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,13 +19,16 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:4
 msgid "Design a title screen"
-msgstr ""
+msgstr "Дизайн начального экрана"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:6
+#, fuzzy
 msgid ""
 "In the next two tutorials, you will build two responsive UI (user interface) "
 "scenes step-by-step using the engine's UI system:"
 msgstr ""
+"В двух следующих примерах, вы создадите два адаптивных UI (пользовательских "
+"интерфейса) сцен шаг за шагом используя систему UI:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:9
 msgid "A main menu"
@@ -38,15 +41,20 @@ msgstr ""
 "счетчиками бомб и денег"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
+#, fuzzy
 msgid ""
 "You will learn how to design game UI efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
+"Вы научитесь разрабатывать игровой UI эффективно, а так же использовать Узлы "
+"управления Godot. Эта страница фокусируется на визуальной части: все что вы "
+"можете сделать с помощью редактора. Для того, чтобы научиться писать код для "
+"полоски здоровья, читайте :doc:`ui_code_a_life_bar`"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
-msgstr ""
+msgstr "Графический интерфейс, который вы будете создавать"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:22
 msgid ""
@@ -56,12 +64,19 @@ msgid ""
 "final result. You'll find all the sprites in the ``start/assets/main_menu``` "
 "folder."
 msgstr ""
+"Загрузите файлы проекта: :download:`ui_main_menu_design.zip <files/"
+"ui_main_menu_design.zip>` и распакуйте полученный архив. Импортируйте проект "
+"``start/` в Godot чтобы продолжить изучение этого руководства. Каталог ``end/"
+"`` содержит результат этого примера. Вы найдете все спрайты в каталоге "
+"``start/assets/main_menu``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:33
+#, fuzzy
 msgid "How to design your game UI"
-msgstr ""
+msgstr "Как разрабатывать ваш игровой UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:35
+#, fuzzy
 msgid ""
 "To design a good UI, you want to come up with a rough mockup first: a plain "
 "drawing version that focuses on the placement of your UI components, their "
@@ -71,23 +86,37 @@ msgid ""
 "sure the players can find their way around the interface using those "
 "placeholders."
 msgstr ""
+"Чтобы создать хороший UI, вы должны сначала набросать грубый макет: простой "
+"рисунок, фокусирующийся на размещение элементов вашего UI, их размере и "
+"взаимодействии с пользователем. Ручка и бумага - это все что вам нужно. На "
+"этом этапе не нужно использовать необычную и окончательную графику. Здесь "
+"нужны простые спрайты-заполнители и вы сможете успешно перейти к Godot. Вы "
+"должны убедиться, что пользователи смогут легко ориентироваться в вашем "
+"интерфейсе, использующем эти заполнители."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:45
 msgid "The UI's rough plan or mockup"
-msgstr ""
+msgstr "Примерный план или макет UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
+#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you had players playtest your UI. Otherwise:"
 msgstr ""
+"Заполнители не обязаны быть уродливыми, но вам следует стараться "
+"использовать простую графику для них. Избегайте специальных эффектов, "
+"анимаций и излишне детализированных иллюстраций до тех пор, пока ваш UI не "
+"используется игроками. В противном случае:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:51
+#, fuzzy
 msgid ""
 "The graphics might skew the players' perception of the experience and you'll "
 "miss out on valuable feedback"
 msgstr ""
+"Графика может исказить игровой опыт и вы потеряете ценную обратную связь"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:53
 msgid "If the User Experience doesn't work, you'll have to redo some sprites"

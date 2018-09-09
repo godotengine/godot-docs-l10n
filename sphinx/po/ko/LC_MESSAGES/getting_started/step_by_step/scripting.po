@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 msgid "Scripting"
-msgstr "스크립팅"
+msgstr "스크립팅 (Scripting)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:7
 msgid "Introduction"
@@ -249,7 +249,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:94
 msgid "Scripting a scene"
-msgstr "씬 스크립팅"
+msgstr "씬 스크립팅 하기"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid ""
@@ -257,21 +257,21 @@ msgid ""
 "button and a label, where pressing the button will update the label. This "
 "will demonstrate:"
 msgstr ""
-"본 튜토리얼의 나머지 부분에서는 버튼과 레이블로 구성된 GUI장면을 설정합니다. "
-"여기서 버튼을 누르면 라벨이 업데이트됩니다. 이를 통해 다음을 증명할 수 있습니"
-"다:"
+"본 튜토리얼의 나머지 부분에서는 버튼과 레이블로 구성된 GUI 장면을 설정합니"
+"다. 여기서 버튼을 누르면 라벨이 업데이트됩니다. 이를 통해 다음을 증명할 수 있"
+"습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid "Writing a script and attaching it to a node."
-msgstr "스크립트를 작성하여 노드에 연결합니다."
+msgstr "스크립트를 작성하여 노드에 연결함."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:101
 msgid "Hooking up UI elements via signals."
-msgstr "신호를 통해 UI요소들을 후크 하는 중입니다."
+msgstr "시그널을 통해 UI 요소들을 연결함."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:102
 msgid "Writing a script that can access other nodes in the scene."
-msgstr "씬의 다른 노드에 접근 할 수 있는 스크립트를 작성하는 중입니다."
+msgstr "씬의 다른 노드에 접근 할 수 있는 스크립트를 작성함."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:104
 msgid ""
@@ -286,7 +286,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:109
 msgid "Scene setup"
-msgstr "씬 설정"
+msgstr "씬 설정하기"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:111
 msgid ""
@@ -298,15 +298,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:114
 msgid "Panel"
-msgstr "패널"
+msgstr "패널 (Panel)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:116
 msgid "Label"
-msgstr "라벨"
+msgstr "라벨 (Label)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:117
 msgid "Button"
-msgstr "버튼"
+msgstr "버튼 (Button)"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid "The scene tree should look like this:"
@@ -326,7 +326,7 @@ msgstr "마지막으로, ``sayhello.tscn`` 와 같은 이름으로 씬을 저장
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:133
 msgid "Adding a script"
-msgstr "스크립트 추가"
+msgstr "스크립트 추가하기"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:135
 msgid ""
@@ -412,7 +412,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:180
 msgid "Handling a signal"
-msgstr "시그널 처리"
+msgstr "시그널 다루기"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:182
 msgid ""
@@ -421,10 +421,10 @@ msgid ""
 "mostly in GUI nodes, although other nodes have them too, and you can even "
 "define custom signals in your own scripts."
 msgstr ""
-"시그널은 특정한 종류의 작업이 발생할 때 \"방출\" 되며 스크립트 인스턴스의 모"
-"든 기능에 연결될 수 있습니다. 시그널은 대부분 GUI노드에서 사용되며, 다른 노드"
-"에도 시그널이 있고 사용자 스크립트에서 사용자 지정 시그널을 정의할 수도 있습"
-"니다."
+"시그널은 특정한 종류의 작업이 발생할 때 \"방출 (emit)\" 되며 스크립트 인스턴"
+"스의 모든 기능에 연결될 수 있습니다. 시그널은 대부분 GUI노드에서 사용되며, 다"
+"른 노드에도 시그널이 있고 사용자 스크립트에서 커스텀 시그널을 정의할 수도 있"
+"습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:187
 msgid ""
@@ -433,10 +433,10 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
-"이 단계에서 우리는 \"pressed\" 시그널을 사용자 지정 기능에 연결할 겁니다. 먼"
-"저 연결 형식을 지정한 후에 두 번째로 사용자 지정 기능을 정의합니다. 고도에서"
-"는 연결하기 위한 2가지 방법을 제공합니다: 에디터에서 제공하는 시각적 인터페이"
-"스나 코드를 통해 사용자 지정 기능에 연결할 수 있습니다."
+"이 단계에서 우리는 \"pressed\" 시그널을 커스텀 기능에 연결할 겁니다. 먼저 연"
+"결 형식을 지정한 후에 두 번째로 커스텀 기능을 정의합니다. 고도에서는 연결하"
+"기 위한 2가지 방법을 제공합니다: 에디터에서 제공하는 시각적 인터페이스나 코드"
+"를 통해 사용자 지정 기능에 연결할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:192
 msgid ""
@@ -462,7 +462,7 @@ msgid ""
 "creation dialogue."
 msgstr ""
 "\"BaseButton\" 밑에 있는 \"pressed()\"를 고르고 오른쪽 아래 \"연결하기...\" "
-"버튼을 누르신다면, 연결 생성 다이얼로그가 열릴겁니다."
+"버튼을 누르신다면, 연결 생성 다이얼로그가 열립니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
 msgid ""
@@ -470,7 +470,7 @@ msgid ""
 "node which implements the method you want to trigger (represented here as a "
 "NodePath) and the name of the method to trigger."
 msgstr ""
-"왼쪽 아래에 당신이 연결을 만드는데 필요한 핵심 사항이 있습니다:사용하길 원하"
+"왼쪽 아래에 당신이 연결을 만드는데 필요한 핵심 사항이 있습니다: 사용하길 원하"
 "는 메서드를 실행할 (NodePath로 정의된) 하나의 노드와 그 메서드의 이름입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:209
@@ -513,18 +513,18 @@ msgid ""
 "This function uses paths to fetch nodes anywhere in the scene, relative to "
 "the node that owns the script."
 msgstr ""
-"이것에 도달하기 위해서는, 우리는 아마도 가장 많이 Godot 프로그래머가 사용하"
-"는 기능을 소개할 겁니다: :ref:`Node.get_node() <class_Node_get_node>` 입니"
-"다. 이 기능은 스크립트를 소유한 노드라면 씬 내 어느 곳에서라도 경로를 사용해"
-"서 노드를 가져옵니다."
+"이것을 달성하기 위해서, 우리는 고도 프로그래머들이 가장 잘 사용하는 기능을 소"
+"개하겠습니다: :ref:`Node.get_node() <class_Node_get_node>` 입니다. 이 기능은 "
+"스크립트를 소유한 노드라면 씬 내 어느 위치라도 경로를 사용해서 노드를 가져옵"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:228
 msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
-"편의성을 위해, ``extend Panel`` 아래에 있는 모든 것을 지우세요. 당신이 나머지"
-"를 수동으로 채울 것입니다."
+"편의상, ``extend Panel`` 아래에 있는 모든 것을 지우세요. 당신이 나머지를 수동"
+"으로 채울 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:231
 msgid ""

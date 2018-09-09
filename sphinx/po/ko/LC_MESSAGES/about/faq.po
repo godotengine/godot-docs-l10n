@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:4
 msgid "Frequently asked questions"
-msgstr "자주 묻는 질문들"
+msgstr "자주 묻는 질문들 (FAQ)"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
@@ -28,7 +28,6 @@ msgstr ""
 "고도로 무엇을 할 수 있나요? 가격은 얼마인가요? 라이선스 조항은 어떻게 되나요?"
 
 #: ../../docs/about/faq.rst:9
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
@@ -36,7 +35,9 @@ msgid ""
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
 "고도는 `OSI가 인정한 <https://opensource.org/licenses/MIT>`_  MIT 라이선스로 "
-"사용할 수 있는 무료/자유 오픈 소스 소프트웨어입니다."
+"사용할 수 있는 `무료이자 오픈 소스 소프트웨어 <https://en.wikipedia.org/wiki/"
+"Free_and_open-source_software>`_ 입니다. 이것은 \"무료 맥주\" 만큼 뿐만 아니"
+"라 \"자유 연설\" 만큼의 자유를 의미합니다."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -47,16 +48,18 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"개인적으로, 비영리로, 사업으로, 혹은 그 외 어떤 목적이든 당신은 무료로 고도"
+"를 다운로드하실 수 있습니다;"
 
 #: ../../docs/about/faq.rst:14
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
-msgstr "고도를 여러분 마음대로 수정하고 (재)배포하고 조합할 수 있습니다"
+msgstr ""
+"고도를 마음대로 자유롭게 수정하고, 배포하고, 재배포하고 개조하실 수 있습니"
+"다, 그 이유가 비상업적이든지 상업적이든지 말이죠."
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
@@ -64,9 +67,8 @@ msgid ""
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
 "이 문서의 모든 내용은 크리에이티브 커먼스 저작자 표시 3.0 (`CC-BY 3.0 "
-"<https://creativecommons.org/licenses/by/3.0/>`_) 라이선스로 사용할 수 있고, "
-"저작자 표시는 \"Juan Linietsky, Ariel Manzur, Godot Engine 커뮤니티\"로 하면 "
-"됩니다."
+"<https://creativecommons.org/licenses/by/3.0/>`_) 라이선스 하에, \"Juan "
+"Linietsky, Ariel Manzur, Godot Engine 커뮤니티\" 에 속합니다."
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -141,29 +143,28 @@ msgid "Web"
 msgstr "웹"
 
 #: ../../docs/about/faq.rst:48
-#, fuzzy
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr "64비트가 기본이지만 해당되는 곳에는 32비트와 64비트 모두 지원합니다."
+msgstr "64비트가 기본이지만 32비트와 64비트 모두 지원합니다."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"일부 사용자들은 또한 라즈베리 파이 같은, 리눅스의 ARM 기반 시스템을 고도에 성"
+"공적으로 사용하는 것을 보고합니다."
 
 #: ../../docs/about/faq.rst:54
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"라즈베리 파이 등 ARM 기반 시스템에서 리눅스로 고도를 빌드해서 잘 사용한다는 "
-"사용자들도 있습니다. 일부 콘솔 지원은 비공식 서드파티 차원에서 진행 중이기도 "
-"합니다. 하지만 어느 것도 기본 빌드 스크립트나 내보내기 템플릿에는 포함되어 있"
-"지 않습니다."
+"추가적으로, 콘솔 용으로 만들기 위한 비공식적인 서드 파티 작업이 있습니다. 하"
+"지만, 아직 기본 구축 스크립트나 내보내기 템플릿에 이것이 포함된 것은 없습니"
+"다."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
@@ -174,20 +175,18 @@ msgstr ""
 "직접 컴파일하기 <toc-devel-compiling>` 를 다루는 섹션을 참고하세요."
 
 #: ../../docs/about/faq.rst:62
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
-msgstr "고도는 어떤 언어를 지원하나요?"
+msgstr "고도는 어떤 프로그래밍 언어를 지원하나요?"
 
 #: ../../docs/about/faq.rst:64
-#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"고도가 공식으로 지원하는 언어는 GDScript, Visual Scripting, C#, C++입니다. :"
-"ref:`스크립팅 <toc-learn-scripting>` 섹션에서 각 언어별 하위 카테고리를 참고"
-"하세요."
+"고도가 공식으로 지원하는 언어는 GDScript, Visual Scripting, C#, 그리고 C++입"
+"니다. :ref:`스크립팅 <toc-learn-scripting>` 섹션에서 각 언어 별 하위 카테고리"
+"를 참고하세요."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -198,6 +197,11 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"대개 고도 개발이나 게임 개발을 목적으로 엔진을 키게 된다면, GDScript가 고도"
+"에 기본적으로 있기 때문에 추천하는 언어입니다. 스크립트 언어는 길게 본다면 다"
+"른 로우 레벨 언어보다 퍼포먼스가 떨어지지만, 프로토 타입이나 소규모 제품을 제"
+"작하거나, 개발 시간에 중점을 둔다면, GDScript는 게임을 개발하는데 빠르고, 친"
+"절하고, 유능한 방법을 제공해 줄 것입니다."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -209,9 +213,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"C# 지원은 아직 비교적 최근에 시작했기 때문에, 오류를 발견하실 수도 있습니다. "
+"우리의 친절하고 부지런한 개발 커뮤니티에서 언제나 새 문제를 해결할 준비가 되"
+"어있지만, 이것은 오픈 소스 프로젝트이므로, 스스로 해결해 보시는 것을 추천합니"
+"다. 문제를 해결하기 위해`open issues <https://github.com/godotengine/godot/"
+"issues>`_ 에 토론을 찾아보시는 것도 좋은 출발점입니다."
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See question about "
@@ -219,13 +227,15 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"예를 들어 비공식 `Python <https://github.com/touilleMan/godot-python>`_ 과 "
-"`Nim <https://github.com/pragmagic/godot-nim>`_ 바인딩 개발이 현재 진행되고 "
-"있습니다."
+"새로운 언어에 관해서, GDNative / NativeScript / PluginScript 기능으로 다른 언"
+"어를 지원할 수 있습니다. (아래에 플러그인에 관한 질문을 참고하세요.)  예를 들"
+"어 고도에 `Python <https://github.com/touilleMan/godot-python>`_ 과 `Nim "
+"<https://github.com/pragmagic/godot-nim>`_ 의 비공식 바인딩 개발이 진행 중입"
+"니다."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "GDScript는 무엇이고 왜 이것을 써야하나요?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -237,6 +247,11 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the "
 "`GDScript scripting guide <gdscript_basics>`_."
 msgstr ""
+"GDScript는 고도의 통합된 스크립트 언어입니다. 이것은 초심자와 전문 개발자가 "
+"동등하게 고도의 강점을 가능한 빨리 활용할 수 있도록 짧은 코드로도 고도의 잠재"
+"력을 극대화할 수 있도록 바닥부터 지어졌습니다. 이전에 파이썬 비슷한 언어를 사"
+"용해 보신 적이 있다면 익숙하실 겁니다. GDScript가 제공하는 예제, 역사, 그리"
+"고 전체 개요는, `GDScript 스크립팅 가이드 <gdscript_basics>`_ 를 참고하세요."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -245,6 +260,9 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"GDScript를 사용하는 여러 이유가 있습니다--특히 프로젝트의 알파/베타 맵의 프로"
+"토타입을 만들 때나, AAA급의 게임을 만들려는 것이 아니라면 말이죠-- 그러나 전"
+"체적으로 가장 두드러진 이유는 **복잡성 감소** 입니다"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -258,9 +276,14 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"고도를 위한 커스텀 스크립트 언어를 만들게 된 원래 의도는 두 가지 입니다: 먼"
+"저, 고도를 키고 실행하는 많은 시간을 줄여서, 개발자는 생산성에 중점을 두고 엔"
+"진에 빠르게 접근할 수 있습니다; 두 번째로, 그것은 전반적인 유지 보수의 부담"
+"을 줄여주고 문제의 차원을 약화시키고 엔진 개발자가 엔진 핵심 버그를 없애고 기"
+"능을 발전하기에 집중할 수 있습니다--작지만 많은 기능을 뽑아내려고 많은 언어들"
+"에서 많은 시간을 사용하지 않게 됩니다."
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -272,12 +295,13 @@ msgid ""
 "see how powerful it is and rapid your development becomes, we think GDScript "
 "will grow on you."
 msgstr ""
-"친숙하다는 이유로 기성 언어를 사용해 복잡하고 어색한 사용 환경을 조성하기보"
-"다, 독자적인 언어를 만들면 발생하는 부담 (엔진 개발자들 입장에서는 언어의 유"
-"지 및 보수, 사용자 측에서는 새 언어 배우기) 을 감안하더라도 더 긴밀하고 매끄"
-"러운 경험을 제공하는 게 낫다고 생각하기 때문입니다. 고도에서 다른 언어를 사용"
-"하고 싶다면 할 수 있습니다. (위에서 지원 옵션을 참고하세요.) 하지만 일단 "
-"GDScript를 사용해보고 그 장점을 직접 경험해보시길 권합니다."
+"고도가 오픈 소스 프로젝트가 되면서 부터, 처음부터 더 통합적이고 추가 사용자 "
+"유치를 위한 완벽한 경험을 위해 더 친근한 프로그래밍 언어를 지원하는 것을 우선"
+"시 하게 되었습니다--특히 더 친근한 언어가 더 나쁜 결과를 내보낼 때 그랬습니"
+"다. 우리는 고도에서 다른 언어를 사용하는 지에 생각했습니다 (하단에 지원하는 "
+"옵션들을 참고하세요). 즉 GDScript를 사용해보지 않으셨다면, **3 일** 동안 한"
+"번 사용해보세요. 고도처럼, 그것이 당신의 개발이 신속해질 만큼 강력하다는 것"
+"을 본다면, 우리는 GDScript가 당신을 키운다고 생각합니다."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -290,41 +314,40 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "GDScript를 제작하게 된 동기가 무엇입니까?"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "고도를 위한 커스텀 스크립트 언어를 개발하게 된 주요 이유는 이러합니다:"
 
 #: ../../docs/about/faq.rst:126
-#, fuzzy
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
-"대부분 스크립트 가상 머신에서는 좋은 스레드를 지원하지 않습니다, 하지만 고도"
-"는 스레드를 지원합니다. (Lua, Python, Squirrel, JS, AS 등등)."
+"대부분 스크립트 가상 머신에서는 좋은 스레드 지원이 없습니다, 하지만 고도는 스"
+"레드를 지원합니다 (Lua, Python, Squirrel, JS, AS 등등.)."
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
-"대부분 스크립트 가상 머신은 클래스 확장 지원이 좋지 않은 데다 고도의 작동 방"
-"식에 맞춰 변형하자면 너무 비효율적입니다. (Lua, Python, JS)."
+"대부분 스크립트 가상 머신은 클래스 확장 지원이 좋지 않은 데다, 고도의 작동 방"
+"식에 맞춰 변형하자면 너무 비효율적입니다 (Lua, Python, JS)."
 
 #: ../../docs/about/faq.rst:130
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"C++ 바인딩을 위한 인터페이스가 끔찍해서 코드 양이 많아지고 버그, 병목, 그리"
-"고 종합적인 비효율을 낳습니다 (Lua, Python, Squirrel, JS 등)"
+"많은 존재하는 언어들은 C++ 바인딩을 위한 끔찍한 인터페이스를 가지고 있습니"
+"다, 코드 양이 많아지고 버그, 병목, 그리고 종합적인 비효율을 낳습니다 (Lua, "
+"Python, Squirrel, JS 등.) 우리는 많은 양의 통합이 아닌, 좋은 엔진에 중점을 두"
+"었습니다."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -352,30 +375,33 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
-msgstr ""
+msgstr "GDScript는 위와 같은 문제들을 줄이고자 설계되었습니다."
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "고도에서는 무슨 유형의 3D 모델을 지원하나요?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"고도는 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
+"OpenCOLLADA-Tools>`_ 내보내기를 통해 Collada를 지원합니다 (Maya, 3DSMax)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"Blender를 사용하신다면, 우리의 `Better Collada Exporter <https://godotengine."
+"org/download>`_ 를 보세요."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Godot 3.0부터는, glTF도 지원합니다."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -383,9 +409,10 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question above.)"
 msgstr ""
-"FBX SDK는 `제한적인 라이센스를 갖고 있기 때문에 <http://www.blender.org/bf/"
-"Autodesk_FBX_License.rtf>` , 고도의 `오픈 라이선스 <http://opensource.org/"
-"licenses/MIT>`_ 와 호환되지 않습니다."
+"FBX SDK는 `제한적인 라이센스 <http://www.blender.org/bf/Autodesk_FBX_License."
+"rtf>`_ 를 갖고 있기 때문에, 고도의 `오픈 라이선스 <http://opensource.org/"
+"licenses/MIT>`_ 와 호환되지 않습니다. 이는 즉, FBX 지원은 아직 플러그인을 통"
+"해서만 사용하실 수 있습니다. (위의 플러그인 질문을 참고하세요.)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -400,17 +427,20 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"고도의 목표는 모듈 방식이고 확장 가능한 무료이자 오픈 소스 MIT 라이선스 엔진"
+"을 만드는 것입니다. 핵심 엔진 개발 커뮤니티가 폐쇄 소스/독점 SDK를 지원하도"
+"록 하는 계획은 없습니다, 이것들을 통합하는 것은 고도의 정신에 반대하는 것입니"
+"다."
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"그러니까, 고도는 오픈 소스이고 모듈화 되어있으니까 여러분이나 다른 누군가가 "
-"그런 폐쇄형 라이브러리를 모듈로 추가해서, 그 소스를 공개하든 하지 않든 여러분"
-"이 출시하는 게임에 사용해도 무방합니다. 모든 것이 허가됩니다."
+"즉, 고도는 오픈 소스이고 모듈화 되어있으므로, 어느 누구라도 폐쇄형 라이브러리"
+"를 모듈로 추가해서 여러분의 게임에 사용해 출시해도 무방합니다--오픈 소스든지 "
+"폐쇄 소스든지 말이죠."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
@@ -427,6 +457,9 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"혹시 고도가 지원하진 않지만 무료이고 오픈 소스로 제공하는 다른 SDK를 아신다"
+"면 직접 통합 작업을 시작해보세요. 고도는 한 사람의 것이 아닙니다; 커뮤니티에 "
+"속해 있고, 당신과 같은 야심 찬 커뮤니티 공헌자들과 함께 자랍니다."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -452,15 +485,15 @@ msgstr ""
 "요."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"가장 적합한 방법은, 게임을 위한 하나의 기본 해상도를 사용하고 종횡비 만을 다"
-"르게하는 것입니다. 이것은 3D에서 본다면 X시야나 Y시야의 단순한 문제입니다."
+"가장 일반적이고 적합한 방법은, 게임을 위한 하나의 기본 해상도를 사용하고 가"
+"로 세로 비율 만을 다르게 하는 것입니다. 이것이 2D에 대부분 필요합니다만, 3D에"
+"서는 카메라 X시야나 Y시야의 단순한 문제입니다."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -524,17 +557,16 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "어떻게 고도를 확장할 수 있나요?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"고도 에디터 플러그인 제작에 관한 정보는 :ref:`에디터 플러그인 제작 "
-"<doc_making_plugins>` 과 tool 스크립트를 참고하세요."
+"고도 에디터 플러그인 제작이나 추가적인 언어 지원을 하고 싶으시다면, :ref:`에"
+"디터 플러그인 <doc_making_plugins>` 과 tool 스크립트를 참고하세요."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also see the official blog posts on these topics:"
@@ -553,25 +585,27 @@ msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
-#, fuzzy
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
-"또 GDScript의 구현, 고도 모듈들, 고도를 위한 `비공식적인 Python 지원 "
-"<https://github.com/touilleMan/godot-python>`_ 을 살펴볼 수도 있습니다."
+"또 GDScript의 구현, 고도 모듈들, 고도를 위한 `비공식 Python 지원 <https://"
+"github.com/touilleMan/godot-python>`_ 을 살펴볼 수도 있습니다. 이것은 고도가 "
+"어떻게 다른 라이브러리와 통합하는 지를 보여주는 좋은 출발점이 될 것입니다."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "저도 이 프로젝트에 기여하고 싶어요! 어떻게 시작해야 하나요?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"멋집니다! 오픈 소스 프로젝트인 만큼, 고도는 당신 같은 혁신적이고 야심 찬 개발"
+"자들에 의해 번창합니다."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -581,10 +615,15 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"처음으로 시작해야 할 부분은 `issues <https://github.com/godotengine/godot/"
+"issues>`_ 입니다. 당신이 공감할만한 이슈를 찾으신 다음, 변경 사항과 함께 "
+"Pull Request (PR) 를 포크 요청, 수정 및 제출하는 법을 배우기 위해 `기여하는 "
+"방법 <https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
+"md#contributing-pull-requests>`_ 가이드를 진행하세요."
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "고도에 대한 좋은 아이디어가 있습니다. 이걸 어떻게 드릴 수 있나요?"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -598,12 +637,22 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"고도로 아이디어를 가져오는 것이, 마치 거대한 핵심 변화를 가져오거나, 다른 종"
+"류의 게임 엔진을 흉내 내거나, 에디터에 내장하길 원하는 대체 워크플로우가 생기"
+"는 것 같아서, 매력적일 것이라고 생각합니다. 이것들은 위대하고 그래서 우리는 "
+"그러한 사람들이 기여하길 원하는 것에 감사하고 있습니다, 하지만 고도의 초점은 "
+"`로드맵<https://github.com/godotengine/godot-roadmap/blob/master/ROADMAP."
+"md>`_ 에 요약한 대로 핵심 기능과, `버그를 없애고 이슈를 다루는 것<https://"
+"github.com/godotengine/godot/issues>`_, 그리고 고도 커뮤니티 회원과의 대화입"
+"니다."
 
 #: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"고도 커뮤니티의 대부분 개발자들은 이런 것들을 배우는 데 더 흥미를 가질 겁니"
+"다:"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
@@ -620,7 +669,6 @@ msgid ""
 msgstr "프로젝트에 필요해서 구현하고자 하는 기능들."
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr "소프트웨어를 배우면서 이해하기 어려운 개념들."
@@ -630,21 +678,20 @@ msgid "The parts of your workflow you would like to see optimized."
 msgstr "워크플로우를 최적화시키고 싶은 부분들."
 
 #: ../../docs/about/faq.rst:269
-#, fuzzy
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
-msgstr "넘긴 튜토리얼이나 만족스럽지 않은 부분들."
+msgstr "깔끔한 튜로리얼이 없거나 깔끔하지 않은 문서 부분들."
 
 #: ../../docs/about/faq.rst:271
-#, fuzzy
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"그러니, 고도가 여러분의 생각을 달갑게 여기지 않는다고 느끼지 마세요. 다만, 개"
-"발자들과 커뮤니티가 토론하기 위해 생각들을 문제점 순으로 재구성해주세요."
+"그러니, 고도가 여러분의 생각을 달갑게 여기지 않는다고 생각하진 마세요. 다만, "
+"개발자들과 커뮤니티가 생각을 바탕으로 기술적 토대를 마련하기 위해, 먼저 문제"
+"점 순으로 재구성해주세요."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -654,15 +701,18 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"커뮤니티와 생각과 문제를 공유하는 좋은 방법은 이야기를 말하는 것입니다. 당신"
+"이 무엇을 하려 했고, 어떤 일을 예상했는데, 그 뒤 실제로는 어떤 일이 발생했는"
+"지를 설명하세요. 이 방법으로 문제와 생각을 세우는 것은 전체 커뮤니티가 개발"
+"자 경험을 향상시키는데 집중하도록 도울 것입니다."
 
 #: ../../docs/about/faq.rst:281
-#, fuzzy
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
-"스크린샷이나 특정 값, 실험의 사례, (가능하다면) 예제들을 사용할 수도 있습니"
-"다."
+"스크린샷이나, 특정 값, 실험 사례, (가능하다면) 예제 프로젝트를 가져오면 추가 "
+"점수가 될 것입니다."
 
 #: ../../docs/about/faq.rst:285
 msgid "How can I support Godot development or contribute?"

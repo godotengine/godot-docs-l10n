@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr "씬과 노드"
+msgstr "씬과 노드 (Scenes and nodes)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
 msgid "Introduction"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 msgid "Nodes"
-msgstr "노드"
+msgstr "노드 (Node)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -97,7 +97,6 @@ msgid "It can be extended (to have more functions)."
 msgstr "(더 많은 기능을 위해) 확장될 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-#, fuzzy
 msgid "It can be added to other nodes as a child."
 msgstr "다른 노드에 자식으로 추가될 수 있습니다."
 
@@ -131,7 +130,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr "씬"
+msgstr "씬 (Scene)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
@@ -149,9 +148,8 @@ msgstr ""
 "씬은 계층적으로 (트리 형식으로) 조직된 노드 그룹으로 구성됩니다. 또한 씬은:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
-#, fuzzy
 msgid "always has one root node."
-msgstr "항상 하나의 루트 노드만을 갖습니다."
+msgstr "항상 하나의 루트 노드를 가집니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
@@ -159,15 +157,15 @@ msgstr "디스크에 저장하고 다시 로드할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
-msgstr "*인스턴스화* 할 수 있습니다 (더 자세한 점은 나중에)."
+msgstr "*인스턴스* 할 수 있습니다 (더 자세한 점은 나중에)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:69
 msgid ""
 "Running a game means running a scene. A project can contain several scenes, "
 "but for the game to start, one of them must be selected as the main scene."
 msgstr ""
-"게임을 실행한다는 것은 씬을 실행한다는 것입니다. 한 프로젝트는 여러 씬들로 이"
-"루어지지만, 게임을 시작하면, 하나의 씬만 메인 씬으로 선택됩니다."
+"게임을 실행한다는 것은 씬을 실행한다는 것입니다. 한 프로젝트는 여러 씬 들로 "
+"이루어지지만, 게임을 시작하면, 하나의 씬만 메인 씬으로 선택됩니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:72
 msgid ""
@@ -222,15 +220,14 @@ msgstr ""
 "다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
-#, fuzzy
 msgid ""
 "As mentioned before, making games in Godot feels like being in a kitchen, so "
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
-"앞에서 언급했듯이, 고도로 게임을 만드는 거는 주방에서 요리하는 느낌입니다, 그"
-"러면 냉장고를 열고 프로젝트에 신선한 노드들을 추가해 봅시다. 우리는 실행을 누"
-"르면 \"Hello World!\"가 화면에 나오게 할 것입니다."
+"앞에서 말했듯이, 고도로 게임을 만드는 것은 주방에서 요리하는 느낌입니다, 그렇"
+"다면 한번 냉장고를 열고 프로젝트에 신선한 노드들을 추가해 봅시다. 실행을 누르"
+"면 \"Hello World!\"가 화면에 나오게 할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
@@ -244,12 +241,12 @@ msgid ""
 msgstr "그러면 당신이 만들 수 있는 긴 노드 목록이 나옵니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
-#, fuzzy
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
 msgstr ""
-"거기서, \"Label\" 노드를 먼저 선택하세요. 검색으로 더 빨리 찾을 수 있습니다:"
+"거기서, \"Label\" 노드를 먼저 선택하세요. 검색으로 더 빨리 찾을 수도 있습니"
+"다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:120
 msgid "And finally, create the Label! A lot happens when Create is pressed:"
@@ -276,13 +273,12 @@ msgstr ""
 "펙터에 나타납니다 (오른쪽 아래 상자)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
-#, fuzzy
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
-"다음 작업은 라벨 내의 \"Text\" 속성을 바꾸는 것입니다. \"Hello, World!\"라고 "
-"입력합시다:"
+"다음 작업은 라벨 내의 \"Text\" 속성을 바꾸는 것입니다. \"Hello, World!\" 라"
+"고 입력합니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -301,7 +297,7 @@ msgid ""
 "Scenes need to be saved to be run, so save the scene to something like hello."
 "tscn in Scene -> Save:"
 msgstr ""
-"씬은 실행하려면 저장을 해야합니다, 고로 씬 -> 씬 저장 에 가서 hello.tscn 같"
+"씬은 실행하려면 저장을 해야합니다, 따라서 씬 -> 씬 저장 에 가서 hello.tscn 같"
 "은 것으로 이름 지어 저장합시다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
@@ -314,15 +310,14 @@ msgid ""
 "platform or install location, it is the way to locate where resource files "
 "are from inside the game."
 msgstr ""
-"그리고 재미난 일이 발생합니다. 파일 다이얼로그가  특별한 파일 다이얼로그라"
-"서, 프로젝트 안에다가만 저장할 수 있습니다. 프로젝트 경로는 \"res://\"로 \"리"
-"소스 경로\"를 의미합니다. 이는 파일은 프로젝트 안에만 저장할 수 있다는 것입니"
+"그러면 재미난 일이 발생합니다. 파일 다이얼로그는  특별한 파일 다이얼로그라"
+"서, 프로젝트 안에만 저장할 수 있습니다. 프로젝트 경로는 \"res://\"로 \"리소"
+"스 경로\"를 의미합니다. 이는 파일은 프로젝트 안에만 저장할 수 있다는 것입니"
 "다. 나중에 Godot에서 파일을 관리할 때 \"res://\"가 리소스 경로 임을 기억하세"
 "요, 그리고 이것이 어떤 플랫폼이나 설치 경로와 관계없이 게임 내에서 리소스 파"
 "일을 찾을 수 있게 하는 방법입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
-#, fuzzy
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
@@ -335,7 +330,7 @@ msgstr "성공!"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
-msgstr "프로젝트 구성"
+msgstr "프로젝트 구성하기"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:170
 msgid ""
@@ -373,14 +368,14 @@ msgid ""
 "Run/Main Scene` property and click on it to select 'hello.tscn'."
 msgstr ""
 "설정을 열었다면, 메인 씬을 설정합시다. 'Application/Run/Main Scene' 속성으로 "
-"가서 'hello.tsce'을 선택합니다."
+"가서 'hello.tscn'을 선택합니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
 msgstr ""
-"이제 변경했으니, 보통의 실행 버튼을 누를 때 (단축키로 F5를 누를 때), 어떤 씬"
+"이제 변경했으니, 평범한 실행 버튼을 누를 때 (단축키로 F5를 누를 때), 어떤 씬"
 "을 편집하는 도중이더라도, 설정한 씬이 실행될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:191
@@ -391,7 +386,7 @@ msgid ""
 "saved to the project.godot file and remembered."
 msgstr ""
 "프로젝트 설정 다이얼로그는 많은 설정을 제공하고 이것들을 project.godot 파일"
-"에 저장하거나 기본 값으로 되돌릴 수 있습니다. 값을 변경하게 되면, 이른 왼쪽"
+"에 저장하거나 기본 값으로 되돌릴 수 있습니다. 값을 변경하게 되면, 이름 왼쪽"
 "에 체크 표시가 뜹니다. 이는 그 속성이 project.godot 파일에 저장되었다는 것입"
 "니다."
 
@@ -401,8 +396,8 @@ msgid ""
 "read them in at run-time using the :ref:`ProjectSettings "
 "<class_ProjectSettings>` singleton."
 msgstr ""
-"또한, :ref:`ProjectSettings <class_ProjectSettings>` 싱글톤을 사용해서 런타임"
-"에 쓰이는 사용자 구성 옵션을 추가할 수도 있습니다."
+"또한, :ref:`ProjectSettings <class_ProjectSettings>` 싱글톤 (singleton) 을 사"
+"용해서 런타임에 쓰이는 사용자 구성 옵션을 추가할 수도 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid "To be continued..."

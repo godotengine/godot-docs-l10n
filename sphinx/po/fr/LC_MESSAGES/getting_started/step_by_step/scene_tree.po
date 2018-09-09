@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,18 +88,27 @@ msgstr ""
 "intéressé de voir comment cela fonctionne en interne)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
+#, fuzzy
 msgid ""
 "The user program, or game, starts in the MainLoop. This class has a few "
 "methods, for initialization, idle (frame-synchronized callback), fixed "
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
+"Le programme utilisateur, ou le jeu, démarre dans la boucle événementielle. "
+"Cette classe a quelques méthodes, pour l'initialisation, l'inactivité "
+"(rappel synchronisé par trame), fixe (rappel synchronisé par la physique) et "
+"les entrées. Encore une fois, ceci est bas niveau et lorsque vous créez des "
+"jeux avec Godot, écrire votre propre boucle événementielle a rarement du "
+"sens."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
+"Le fonctionnement de Godot peut être décrit comme un moteur de jeu haut "
+"niveau par dessus un middleware bas-niveau."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""

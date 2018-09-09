@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -422,7 +422,7 @@ msgstr ""
 "метода ``String.format``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 msgid "**Type**"
 msgstr "**Тип**"
 
@@ -431,14 +431,14 @@ msgid "**Style**"
 msgstr "**Стиль**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:275
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Example**"
 msgstr "**Пример**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:262
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:275
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
 msgid "**Result**"
 msgstr "**Результат**"
 
@@ -454,9 +454,10 @@ msgid "key"
 msgstr "ключ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
+#, fuzzy
 msgid ""
-"\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
-"\"3.0\"})"
+"``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 msgstr ""
 "\"Привет, {имя} v{версия}!\".format({\"имя\":\"Godette\", \"версия\":"
 "\"3.0\"})"
@@ -467,6 +468,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Hi, Godette v3.0!"
 msgstr "Привет, Godette v3.0!"
 
@@ -476,7 +478,8 @@ msgid "index"
 msgstr "индекс"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
-msgid "\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
+#, fuzzy
+msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 msgstr "\"Привет, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
@@ -485,34 +488,49 @@ msgid "mix"
 msgstr "Сочетание"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
+#, fuzzy
 msgid ""
-"\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
+"``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
 "\"Привет, {0} v{версия}!\".format({\"0\":\"Godette\", \"версия\":\"3.0\"})"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
 msgid "Array"
 msgstr "Массив"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
+#, fuzzy
 msgid ""
-"\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
-"\"]])"
+"``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
 msgstr ""
 "\"Привет, {имя} v{версия}!\".format([[\"версия\":\"3.0\"], [\"имя\":\"Godette"
 "\"])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
-msgid "\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
+#, fuzzy
+msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 msgstr "\"Привет, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
-msgid "\"Hi, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
+#, fuzzy
+msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
 msgstr "\"Привет, {имя} v{0}!\".format([3.0, [\"имя\":\"Godette\"]])"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:257
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
+#, fuzzy
+msgid "no index"
+msgstr "индекс"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
+#, fuzzy
+msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
+msgstr "\"Привет, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
 "Placeholders can also be customized when using ``String.format``, here's "
 "some examples of that functionality."
@@ -520,37 +538,40 @@ msgstr ""
 "Заполнители также могут быть настроены при использовании ``String.format``. "
 "Вот несколько примеров этого функционала."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Infix (default)"
 msgstr "Infix (по умолчанию)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
-msgid "\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
+#, fuzzy
+msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 msgstr "\"Привет, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Hi, Godette v3.0"
 msgstr "Привет, Godette v3.0"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Postfix"
 msgstr "Постфикс"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
-msgid "\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
+#, fuzzy
+msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 msgstr "\"Привет, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
 msgstr "Префикс"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
-msgid "\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
+#, fuzzy
+msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 msgstr "\"Привет, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:271
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
 msgid ""
 "Combining both the ``String.format`` method and the ``%`` operator could be "
 "useful as ``String.format`` does not have a way to manipulate the "
@@ -560,13 +581,15 @@ msgstr ""
 "``String.format`` не предоставляет возможности управлять представлением "
 "чисел."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
+#, fuzzy
 msgid ""
-"\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % 3.114})"
+"``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
 msgstr ""
 "\"Привет, {0} v{версия}\".format({0:\"Godette\", \"версия\":\"%0.2f\" % "
 "3.114})"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:277
+#: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"
 msgstr "Привет, Godette v3.11"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,27 +108,38 @@ msgid ""
 "rate is not constant and is dependent on hardware and game optimization. Its "
 "execution is done after the physics step on single-threaded games."
 msgstr ""
+"Die Funktion ``_process()``, jedoch wird nicht synchronisiert mit der "
+"Physik. Die Bildrate ist nicht konstant und ist abhängig von Hardware-und "
+"Spiele-Optimierung. Die Ausführung erfolgt nach der Physik Schritt bei "
+"single-threaded-Spiele."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
 msgid ""
 "A simple way to test this is to create a scene with a single Label node, "
 "with the following script:"
 msgstr ""
+"Ein einfacher Weg, dies zu testen, wäre eine Szene mit einem einzigen Label-"
+"Node mit dem folgenden Skript zu erstellen:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:82
 msgid "Which will show a counter increasing each frame."
-msgstr ""
+msgstr "Welche ein Zähler anzeigen wird welche sich jeden Frame erhöht."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
 msgstr "Gruppen"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
+#, fuzzy
 msgid ""
 "Nodes can be added to groups, as many as desired per node, and is a useful "
 "feature for organizing large scenes. There are two ways to do this. The "
 "first is from the UI, from the Groups button under the Node panel:"
 msgstr ""
+"Nodes können beliebig vielen Gruppen pro Node hinzugefügt werden und sind "
+"eine nützliche Funktion für die Organisation großer Szenen. Dafür gibt es "
+"zwei Möglichkeiten. Die erste ist von der Benutzeroberfläche, von der "
+"Schaltfläche Gruppen unter dem Knotenfenster:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
 msgid ""

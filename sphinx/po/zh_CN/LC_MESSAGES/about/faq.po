@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgstr "常见问题"
 #: ../../docs/about/faq.rst:7
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr "我可以用Godot做什么？它要花多少钱？它有哪些许可条款？"
+msgstr "我可以用Godot做什么？用它需要花多少钱？它有哪些许可条款？"
 
 #: ../../docs/about/faq.rst:9
 #, fuzzy
@@ -45,14 +45,13 @@ msgstr "总之:"
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
-msgstr ""
+msgstr "您可以免费下载并使用Godot，用于任何，个人，非营利，商业或其他目的;"
 
 #: ../../docs/about/faq.rst:14
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
-msgstr "你可以自由修改, (重新) 分发和组织Godot的内容"
+msgstr "你可以自由修改, (重新) 分发和组织Godot的代码工程."
 
 #: ../../docs/about/faq.rst:16
 #, fuzzy
@@ -93,12 +92,11 @@ msgstr ""
 msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
-msgstr ""
-"还可以查阅 `Godot网站上的许可页面 <https://godotengine.org/license>`_ 。"
+msgstr "还可以查阅 `Godot网站上的许可页面 <https://godotengine.org/license>` ."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
-msgstr "Godot支持哪些平台？"
+msgstr "哪些平台被Godot支持？"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
@@ -148,6 +146,8 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"有一些用户还报告指出使用Linux等成功地在基于ARM的系统上构建和使用Godot，比如树"
+"莓派."
 
 #: ../../docs/about/faq.rst:54
 #, fuzzy
@@ -169,19 +169,17 @@ msgstr ""
 "Godot <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:62
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
-msgstr "Godot支持哪些语言?"
+msgstr "Godot支持哪些编程语言?"
 
 #: ../../docs/about/faq.rst:64
-#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
-"Godot官方支持的语言有GDScript、可视化脚本（Visual Scripting）、C#和C++。具体"
-"请参阅 :ref:`游戏脚本 <toc-learn-scripting>` 下对应各语言的子章节。"
+"Godot官方支持的语言有纯脚本(GDScript)、可视化脚本（Visual Scripting）、C#和C+"
+"+。具体请参阅 :ref:`游戏脚本 <toc-learn-scripting>` 下对应各语言的子章节。"
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -192,8 +190,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"如果你刚开始学习游戏开发，或者刚开始学习Godot，那么推荐你学习GDScript，因为"
+"Godot使用它作为本地语言。从长远来看，脚本语言虽然比低级语言性能差，但是为了尽"
+"快做出产品原型，开发出最小可行产品，以及赶上上市时间，GDScript可以提供快速，"
+"友好，并且强大的功能，用于开发游戏。"
 
 #: ../../docs/about/faq.rst:75
+#, fuzzy
 msgid ""
 "Note that C# support is still relatively new, and as such, you may encounter "
 "some issues along the way. Our friendly and hard-working development "
@@ -203,6 +206,10 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"对C#的支持仍然相当初级，所以，你可能会在使用过程中发现一些问题。友好而勤奋的"
+"开发社区随时准备追踪新的问题。但是，本着开源的精神，我们建议你首先自己解决你"
+"发现的问题。你也可以在`开放问题 <https://github.com/godotengine/godot/"
+"issues>`_ 中讨论你的问题。"
 
 #: ../../docs/about/faq.rst:82
 #, fuzzy
@@ -218,7 +225,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "GDScript是什么？为什么我要用它？"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -230,16 +237,24 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the "
 "`GDScript scripting guide <gdscript_basics>`_."
 msgstr ""
+"GDScript是Godot的集成脚本语言。你可以使用最少的代码，使用Godot中从细小到强大"
+"的所有功能，它既适用于初学者，也适用于专家，你可以快速熟悉它。如果你以前使用"
+"过Python之类的语言写过任何东西，你将会感到熟悉。如果你想要了解关于GDScript的"
+"示例，历史，完整介绍和功能，查看`GDScript脚本指南 <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
+#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"推荐你使用GDScript有多个原因-----包括在制作产品原型，或者你的项目处在测试阶段"
+"时，你需要它------但是最重要的原因是**较少复杂度**"
 
 #: ../../docs/about/faq.rst:101
+#, fuzzy
 msgid ""
 "The original intent of creating a tightly integrated, custom scripting "
 "language for Godot was two-fold: first, it reduces the amount of time "
@@ -251,6 +266,10 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"为Godot创造一个紧密集成，自定义的脚本语言的最初目的有两方面：首先，它能够减少"
+"学习Godot的时间，给了开发者快速熟悉游戏引擎的方式。第二，它减少了开发负担，较"
+"少出现问题的可能性，允许开发人员消除漏洞，专心提升与引擎相关的特性，而不是为"
+"了增加一个简单的新特性而编写大量代码。"
 
 #: ../../docs/about/faq.rst:109
 #, fuzzy
@@ -281,30 +300,28 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "为什么要Godot要自己造轮子(GDScript)呢？"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "为Godot创建自定义的脚本语言的原因是："
 
 #: ../../docs/about/faq.rst:126
-#, fuzzy
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
-"Godot使用线程，但大多数虚拟机都没有很好的线程支持（Lua、Python、Squirrel、"
-"JS、AS等）。"
+"Godot引擎使用线程，但大多数虚拟机都没有很好的线程支持（比如：Lua、Python、"
+"Squirrel、JS、AS等）。"
 
 #: ../../docs/about/faq.rst:128
-#, fuzzy
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
-"大多数虚拟机没有很好地支持类扩展，开发Godot时适应起来效率极低（Lua、Python、"
-"JS）。"
+"大多数虚拟机没有很好地支持类扩展，开发Godot时配合起来性能效率极低（Lua、"
+"Python、JS）。"
 
 #: ../../docs/about/faq.rst:130
 #, fuzzy
@@ -322,30 +339,30 @@ msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
-"没有内置矢量类型（vector3、matrix4等），而用自定义类型实现它们会大幅降低性能"
-"（Lua、Python、Squirrel、JS、AS等）。"
+"没有内置矢量类型（vector3、matrix4等），而用自定义类型实现这些类型会大幅降低"
+"性能（Lua、Python、Squirrel、JS、AS等）。"
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
-msgstr "垃圾回收器难于控制或浪费大量内存（Lua、Python、JS、AS等）。"
+msgstr "垃圾回收器不容易控制或浪费大量内存（Lua、Python、JS、AS等）。"
 
 #: ../../docs/about/faq.rst:138
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
-"难以与代码编辑器集成从而支持代码补全、动态编辑等等。但这方面GDScript支持得很"
-"好。"
+"难以与Godot代码编辑器集成从而支持代码补全、动态编辑等等。但这方面GDScript支持"
+"得很好。"
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
-msgstr ""
+msgstr "GDScript的出现就是为了解决以上问题。"
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Godot支持那些3D模型格式?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
@@ -504,10 +521,9 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "我要如何扩展Godot？"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
@@ -545,13 +561,14 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "我也想为Godot贡献，那么我可以从哪里开始呢？"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"令人惊叹的！作为一个开源项目，戈多的发展离不开像你这样的开发者的创新和野心。"
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -564,7 +581,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "如果我很好的想法对于Godot,那么我该如何分享它呢？"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -583,7 +600,7 @@ msgstr ""
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
-msgstr ""
+msgstr "Godot社区的大多数开发者会更感兴趣的是："
 
 #: ../../docs/about/faq.rst:263
 msgid ""
@@ -598,14 +615,13 @@ msgid ""
 msgstr "您希望实现的功能，因为您想要用到您的项目上。"
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "The concepts that were difficult to understand while learning the software."
-msgstr "学习引擎时遇到的难以理解的概念。"
+msgstr "学习引擎时遇到的哪些难以理解的概念。"
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
-msgstr "您希望优化的部分开发流程。"
+msgstr "您希望优化的部分或者开发流程。"
 
 #: ../../docs/about/faq.rst:269
 #, fuzzy
@@ -615,14 +631,13 @@ msgid ""
 msgstr "教程不全的部分或者文档不符标准的部分。"
 
 #: ../../docs/about/faq.rst:271
-#, fuzzy
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"因此，请不要觉得你对Godot的想法是不受欢迎的。相反，首先尝试将它们作为问题重新"
-"定义一下，开发人员和社区才能有基础去讨论。"
+"因此，请不要觉得你对Godot的想法是不受欢迎的。相反，首先尝试将它们作为问题提出"
+"来，这样开发人员和社区才能针对它们去讨论。"
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -632,6 +647,9 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"与社区分享你的想法和问题的一个好方法是用案例来说明。解释你想做什么，你期望发"
+"生什么行为，然后实际发生什么行为。体现问题和想法，这样将有助于整个社区专注于"
+"改善开发者的经验作为一个整体。"
 
 #: ../../docs/about/faq.rst:281
 #, fuzzy

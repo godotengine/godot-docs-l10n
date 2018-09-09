@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,21 +158,25 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:141
 msgid ""
 "With that done, the plugin should already be available in the plugin list at "
-"Project Settings. So activate it and try to add a new node to see the result:"
+"Project Settings, so activate it as explained in `Checking the results`_."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:146
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:144
+msgid "Then try it out by adding your new node:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:148
 msgid ""
 "When you add the node, you can see that it already have the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
 "When you click the button, you can see a text in the console:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:154
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:156
 msgid "A custom dock"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:156
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:158
 msgid ""
 "Maybe you need to extend the editor and add tools that are always available. "
 "An easy way to do it is to add a new dock with a plugin. Docks are just "
@@ -180,28 +184,28 @@ msgid ""
 "knowledge."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:160
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:162
 msgid ""
 "The way to start this plugin is similar to the custom node. So create a new "
 "``plugin.cfg`` file in the ``addons/my_custom_dock`` folder. And then with "
 "your favorite text editor add the following content to it::"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:172
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:174
 msgid ""
 "Then create the script ``custom_dock.gd`` in the same folder. Fill with the :"
 "ref:`template we've seen before <doc_making_plugins_template_code>` to get a "
 "good start."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:176
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:178
 msgid ""
 "Since we're trying to add a new custom dock, we need to create the contents "
 "of such dock. This is nothing more than a standard Godot scene. So you can "
 "create a new scene in the editor and start creating it."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:180
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:182
 msgid ""
 "For an editor dock, it is mandatory that the root of the scene is a :ref:"
 "`Control <class_Control>` or one of its child classes. For this tutorial, "
@@ -210,11 +214,11 @@ msgid ""
 "one. Don't forget to add a text to your button."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:188
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:190
 msgid "Save this scene as ``my_dock.tscn``."
 msgstr "Zapisz tą scenę jako ``my_dock.tscn``."
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:190
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:192
 msgid ""
 "Now you need to grab that scene you created and add it as a dock in the "
 "editor. For this you can rely on the function :ref:`add_control_to_dock() "
@@ -222,7 +226,7 @@ msgid ""
 "<class_EditorPlugin>` class."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:195
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:197
 msgid ""
 "The code is straightforward, you need to select a dock position to add it "
 "and have a control to add (which is the scene you just created). It is also "
@@ -230,17 +234,17 @@ msgid ""
 "deactivated. The code can be like this::"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:220
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:222
 msgid ""
 "While the dock position is chosen when adding it, the user is free to move "
 "it and save the layout with the dock in any position."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:224
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:226
 msgid "Checking the results"
 msgstr "Sprawdzanie rezultatu"
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:226
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:228
 msgid ""
 "Now it is the moment to check the results of your work. Open the *Project "
 "Settings* and click on the *Plugins* tab. Your plugin should be the only on "
@@ -248,7 +252,7 @@ msgid ""
 "right corner."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:233
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:235
 msgid ""
 "At the *Status* column, you can see that the plugin is inactive. So you need "
 "to click on the status to select *Active*. The dock should be immediately "
@@ -256,11 +260,11 @@ msgid ""
 "dock:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:241
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:243
 msgid "Going beyond"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:243
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:245
 msgid ""
 "Now that you learned how to make basic plugins, you can extend the editor in "
 "many nice ways. Many functions can be added to editor on the fly with "
@@ -268,7 +272,7 @@ msgid ""
 "delve into C++ modules."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:248
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:250
 msgid ""
 "You can make your own plugins to help you and also share them in Godot's "
 "Asset Library so many people can benefit of your work."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "스크립팅 (계속)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr "프로세싱"
+msgstr "프로세싱 (Processing)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
@@ -72,16 +72,16 @@ msgid ""
 "This parameter can be used to make sure things always take the same amount "
 "of time, regardless of the game's FPS."
 msgstr ""
-"이 매개 변수를 사용하면 게임의 FPS와 관계 없이, 항상 동일한 시간이 소요되도"
-"록 할 수 있습니다."
+"이 매개 변수를 사용하면 게임의 초당 프레임 수와 관계 없이, 항상 동일한 시간"
+"이 소요되도록 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:43
 msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
-"예를 들어 이동은 시간 델타를 곱해서 이동 속도와 일정하게 하고 프레임률과 따"
-"로 독립시킵니다."
+"예를 들어 이동은 시간 델타를 곱해서 이동 속도를 일정하게 하는 동시에 프레임률"
+"과 따로 독립시킵니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
@@ -94,9 +94,9 @@ msgid ""
 msgstr ""
 "``_physics_process()`` 를 이용한 물리 처리는 이와 유사하지만, 이것은 캐릭터"
 "를 조작하는 과정 같이, 각각의 물리 단계 이전에서 반드시 발생하는 과정에 사용"
-"되어야 한다. 이것은 항상 물리 단계 이전에 실행되며 고정된 시간 간격으로 호출"
-"됩니다: 기본은 초 당 60회 입니다. 프로젝트 설정의 Physics->Common->Physics "
-"Fps에서 시간 간격을 변경할 수 있습니다."
+"되어야 합니다. 이것은 항상 물리 단계 이전에 실행되며 고정된 시간 간격으로 호"
+"출됩니다: 기본은 초당 60회 입니다. 프로젝트 설정의 Physics -> Common -> "
+"Physics Fps에서 시간 간격을 변경할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -105,7 +105,7 @@ msgid ""
 "execution is done after the physics step on single-threaded games."
 msgstr ""
 "그러나 ``_proceed()`` 함수는 물리와 동기화되지 않습니다. 프레임률이 일정하지 "
-"않고 하드웨어와 게임 최적화에 의존하기 때문입니다. 그것은 단일 스레드 게임의 "
+"않고 하드웨어와 게임 최적화에 의존하기 때문입니다. 이것은 단일 스레드 게임의 "
 "물리 단계를 거친 후에 실행됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:55
@@ -113,7 +113,7 @@ msgid ""
 "A simple way to test this is to create a scene with a single Label node, "
 "with the following script:"
 msgstr ""
-"이것을 테스트하는 간단한 방법은 다음 스크립트를 사용하여, 단일 Label 노드로 "
+"이것을 테스트하는 간단한 방법은, 다음 스크립트를 사용하여 단일 Label 노드로 "
 "씬을 생성하는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:82
@@ -122,7 +122,7 @@ msgstr "위 스크립트는 프레임 당 증가하는 카운터를 보여 줍�
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
-msgstr "그룹"
+msgstr "그룹 (Groups)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
 msgid ""
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
 msgid "Notifications"
-msgstr "알림"
+msgstr "알림 (Notifications)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
 msgid ""
@@ -194,10 +194,10 @@ msgid ""
 "`Object._notification() <class_Object__notification>` function in your "
 "script:"
 msgstr ""
-"고도에는 알림 시스템이 있습니다. 일반적으로 스크립팅에는 필요하지 않습니다. "
-"스크립팅은 너무 낮은 수준이며 대부분의 경우 가상 함수가 제공됩니다. 그들이 존"
-"재한다는 것을 아는 것은 좋은 일입니다. 예를 들어 스크립트에 다음과 같은 함수"
-"를 추가할 수 있습니다:"
+"고도에는 알림 시스템이 있습니다. 보통은 스크립팅에 쓰이진 않습니다, 너무 로"
+"우 레벨이며 대부분의 경우 가상 함수를 제공하기 때문이죠. 그냥 존재한다는 것 "
+"만으로도 좋은 일입니다. 예를 들어 스크립트에 :ref:`Object._notification() "
+"<class_Object__notification>` 함수를 추가할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -206,8 +206,8 @@ msgid ""
 "GDScript provides simpler overrideable functions."
 msgstr ""
 ":ref:`Class Reference <toc-class-ref>` 의 각 클래스에 대한 문서는 수신 가능"
-"한 알림을 보여 줍니다. 그러나 대부분의 경우 GDScript는 보다 단순한 오버라이"
-"딩 할수 있는 함수들을 제공한다."
+"한 알림을 보여 줍니다. 그러나 대부분의 경우 GDScript가 보다 단순한 오버라이"
+"딩 할 수 있는 함수들을 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
@@ -228,7 +228,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:271
 msgid "Creating nodes"
-msgstr "노드 생성"
+msgstr "노드 생성하기"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:273
 msgid ""
@@ -236,7 +236,7 @@ msgid ""
 "class-based datatype. For example:"
 msgstr ""
 "코드를 사용하여 노드를 생성하려면 다른 클래스 기반 데이터 유형과 마찬가지로 "
-"``.new()`` 메서드를 호출하십시오. 예를들면:"
+"``.new()`` 메서드를 호출해야 합니다. 예를들면:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
 msgid ""
@@ -250,9 +250,9 @@ msgid ""
 "manually deleting nodes is much simpler than it appears. Free the base node "
 "and everything else in the subtree goes away with it."
 msgstr ""
-"노드가 해제되면 모든 하위 노드도 해제됩니다. 따라서 수동으로 노드를 삭제하는 "
+"노드가 삭제되면 모든 하위 노드도 삭제됩니다. 따라서 수동으로 노드를 삭제하는 "
 "것이 표시되는 것보다 훨씬 간단합니다. 기본 노드를 사용할 수 있도록 설정하면 "
-"하위 노드에 있는 다른 모든 항목이 제거됩니다."
+"하위 노드에 있는 다른 모든 항목이 삭제됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:317
 msgid ""
@@ -261,7 +261,7 @@ msgid ""
 "will crash the game. Running Godot with the debugger will often catch this "
 "case and warn you about it."
 msgstr ""
-"신호를 보내거나 함수를 호출하기 때문에 현재 \"차단된 \"노드를 삭제하려는 경우"
+"신호를 보내거나 함수를 호출하기 때문에 현재 \"차단된\" 노드를 삭제하려는 경우"
 "가 발생할 수 있습니다. 이것은 게임을 망칠 것입니다. 디버거로 고도를 실행하면 "
 "이 경우를 발견하고 경고를 표시하는 경우가 많습니다."
 
@@ -270,28 +270,28 @@ msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_queue_free>`. This erases the node safely during idle."
 msgstr ""
-"노드를 삭제하는 가장 안전한 방법은 다음을 사용하는 것입니다. 이렇게 하면 유"
-"휴 상태에서 노드가 안전하게 지워집니다."
+"노드를 삭제하는 가장 안전한 방법은 다음을 사용하는 것입니다. 이렇게 하면 대"
+"기 상태에서도 노드가 안전하게 지워집니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
-msgstr "인스턴스화 씬"
+msgstr "씬 인스턴스하기"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:342
 msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
-"코드에서 장면을 인스턴스화하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 "
-"하드 드라이브에서 씬을 불러오는 것입니다:"
+"코드에서 장면을 인스턴스하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 하"
+"드 드라이브에서 씬을 불러오는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
-"구문 분석 시 발생하는 것처럼 좀 더 편리하게 미리 정렬할 수 있습니다 (GDScript"
-"만):"
+"프리로드 (Preload) 하면 구문 분석 시간에 일어나므로 더 편리할 수 있습니다 "
+"(GDScript만):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
 msgid ""
@@ -315,11 +315,11 @@ msgid ""
 msgstr ""
 "이 두 단계 프로세스의 이점은 포장된 씬이 로드된 상태로 유지되어 원하는 만큼"
 "의 인스턴스를 생성할 수 있다는 것입니다. 이 기능은 특히 활성화된 씬에서 여러 "
-"적, 글머리 기호 및 다른 도면 요소를 신속하게 인스턴스화하는 데 유용합니다."
+"적, 글머리 기호 및 다른 도면 요소를 신속하게 인스턴스하는 데 유용합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "클래스로 스크립트를 등록하기"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
 msgid ""
@@ -327,6 +327,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"고도는 에디터에 각각의 스크립트를 등록하기 위한 \"스크립트 클래스\" 기능을 갖"
+"고 있습니다. 기본적으로, 당신은 파일을 직접 로드하여 이름이 없는 스크립트에 "
+"접근할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
 msgid ""
@@ -335,17 +338,23 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"스크립트에 이름을 짓고 클래스의 이름과 함께 ``class_name`` 키워드를 통해 에디"
+"터의 타입으로 등록할 수 있습니다. 쉼표나 이미지로 향하는 선택적인 경로를 추가"
+"해 아이콘으로도 사용할 수 있습니다. 그런 뒤 노드나 리소스 생성 다이얼로그에"
+"서 당신의 새 타입을 찾으실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
 msgid "In Godot 3.1:"
-msgstr ""
+msgstr "Godot 3.1에서는:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"오직 GDScript와 NativeScript만, 즉, C++와 다른 GDNative의 영향을 받는 언어"
+"만, 스크립트로 등록이 가능합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "오직 GDScript만 각 이름이 있는 스크립트에 글로벌 변수를 만듭니다."

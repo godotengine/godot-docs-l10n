@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -189,8 +189,9 @@ msgstr ""
 "интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
+#, fuzzy
 msgid "TextureRect"
-msgstr ""
+msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
 msgid ""
@@ -265,7 +266,7 @@ msgstr "TextureRect модулируется с помощью красного 
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureButton"
-msgstr ""
+msgstr "TextureButton"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -305,8 +306,9 @@ msgid "TextureButton and its 5 texture slots"
 msgstr "TextureButton и её 5 слотов текстуры"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
+#, fuzzy
 msgid "TextureProgress"
-msgstr ""
+msgstr "TextureProgress"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
 msgid ""
@@ -773,14 +775,28 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"GridContainer позволяет упорядочивать элементы пользовательского интерфейса "
+"в виде сетки. Вы можете контролировать только количество столбцов, он будет "
+"устанавливать количество строк сам по себе, на основе подсчета его дочерних "
+"элементов. Если у вас девять дочерних элементов и три столбца, у вас будет "
+"9÷3 = 3 строки. Добавьте еще три дочерних элемена, и у вас будет четыре "
+"ряда. Другими словами, он будет создавать новые строки по мере добавления "
+"текстур и кнопок. Как и box container'ы, он имеет два свойства для установки "
+"вертикального и горизонтального разделения между строками и столбцами "
+"соответственно."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:348
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
-msgstr ""
+msgstr "GridContainer с 2 колонками. Он вычисляет их размер автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
+#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interface, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
+"Система пользовательского интерфейса Godot сложна и включает гораздо больше, "
+"чем описано здесь. Для получения подробной информации о том, как "
+"разрабатывать более продвинутые пользовательские интерфейсы, обратитесь к "
+"разделу :ref:`GUI section <toc-learn-features-gui>` документации."
