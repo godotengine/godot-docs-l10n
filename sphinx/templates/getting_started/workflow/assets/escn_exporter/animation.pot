@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-23 11:04+0200\n"
+"POT-Creation-Date: 2018-09-09 12:15+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,51 +20,111 @@ msgstr ""
 msgid "Animation"
 msgstr ""
 
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
+msgid "Animation supported:"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
+msgid "transform animation of all types of objects"
+msgstr ""
+
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
-msgid "Supported Animation"
+msgid "transform animation of pose bones"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-msgid "transform animation of all types of object"
+msgid "shape key animation"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-msgid "transform animation of pose bone"
+msgid "light animation"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:10
-msgid "Action Lib"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
+msgid "camera animation"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
-msgid "Every action in object's nla tracks would be exported as a separate track and placed in AnimationPlayer."
+msgid "Multiple Actions For Single Object"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:15
-msgid "Placing of AnimationPlayer"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
+msgid "In most games, one objects would have serveral animations to switch between. This addon have a support for exporting multiple actions all at once into a single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
-msgid "Godot and Blender have different structure to store animation data. In Godot animation data is stored in an AnimationPlayer node, instead of in each animated node."
+msgid "This worksflow makes use of blender nla_tracks. Here is a brief guide of how to use this feature:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:20
-msgid "The exporter has an option :code:`Separate AnimationPlayer For Each Object` which controls how the exported AnimationPlayers are placed."
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
+msgid "**1. Switch workspace to 'Dope Sheet'**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:24
-msgid "If :code:`Separate AnimationPlayer For Each Object` is **disabled** children of any animated object shares one AnimationPlayer"
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
+msgid "**2. Stash the active action**"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:27
-msgid "In the following case, animation data of Mesh is also exported to AnimationPlayer \"RigAnimation\""
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
+msgid "the stashed action while not action would still be exported"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:34
-msgid "If :code:`Separate AnimationPlayer For Each Object` is **enabled** every animated object got its own AnimationPlayer. It is useful when artists want to play multiple animation concurrently, because one AnimationPlayer node can only play one track at a time."
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
+msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
+msgid "Switch workspace to 'NLA Editor'"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
+msgid "Make sure all stashed actions are muted"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
-msgid "In the following case, Mesh and Rig have their own AnimationPlayer"
+msgid "**4. Export the scene**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
+msgid "all the stashed action as well as the active action are exported to the an AnimationPlayer"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
+msgid "Constraints"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:49
+msgid "Sometimes complicated animation is built with object constraint, an usual example is inverse kinematics. The addon would automatically check if an object has some constraint, if it does, all the constraints are baked into every action the object has and then exported."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
+msgid "Animation Mode"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:57
+msgid "Godot and Blender have different structure to store animation data. In Godot animation data is stored in an AnimationPlayer node, instead of in each animated node. In order to fix this inconsistence and still make the animation play versatile, this addon has three aimation exporting modes."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:64
+msgid "**Mode 'Animation as Actions'**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:66
+msgid "Treat all the animation as object actions, so in the exported scene, every object would have its own AnimationPlayer and hold its actions."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
+msgid "**Mode 'Scene Animation'**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
+msgid "If you want your animation generate same result as playing at Blender's timeline, this is what you want. In this mode, all the animation in the scene are placed in just one AnimationPlayer in the scene root."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
+msgid "**Mode 'Animation as Action with Squash'**"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
+msgid "This mode has very similar behaviour of mode 'Animation as Action', but it can generate less AnimationPlayers, objects in parent-children relation would share their AnimationPlayer. It is useful when you have several rigs, and each Skeleton and Mesh has actions, then one rig would have just one AnimationPlayer."
 msgstr ""
 
