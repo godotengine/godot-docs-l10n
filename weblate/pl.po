@@ -2,11 +2,13 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# ᅚc <silenltypl@gmail.com>, 2018.
 # Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
 # Dariusz Król <rexioweb@gmail.com>, 2018.
 # Igor <igor.gielzak@gmail.com>, 2018.
 # KolegaLiterat <jawor34@gmail.com>, 2018.
+# Pytek1 <bpieniak1@gmail.com>, 2018.
 # Rafał Mikrut <synaptykq@gmail.com>, 2018.
 # RM <synaptykq@gmail.com>, 2018.
 # Saran <saran@op.pl>, 2018.
@@ -18,8 +20,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-08-23 11:04+0200\n"
-"PO-Revision-Date: 2018-07-20 13:40+0000\n"
-"Last-Translator: RM <synaptykq@gmail.com>\n"
+"PO-Revision-Date: 2018-09-05 23:22+0000\n"
+"Last-Translator: ᅚc <silenltypl@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -28,7 +30,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -120,9 +122,8 @@ msgid "Development"
 msgstr "Rozwój"
 
 #: ../../docs/index.rst:99
-#, fuzzy
 msgid "Creating Content"
-msgstr "Tworzenie węzłów"
+msgstr "Tworzenie zawartości"
 
 #: ../../docs/index.rst:107 ../../docs/community/index.rst:2
 msgid "Community"
@@ -433,15 +434,14 @@ msgstr ""
 "licencji?"
 
 #: ../../docs/about/faq.rst:9
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot jest darmowym otwartoźródłowym oprogramowanie dystrybuowanym na "
-"licencji `MIT <https://opensource.org/licenses/MIT>`_."
+"Godot jest darmowym oprogramowaniem Open-Source dystrybuowanym na licencji "
+"`MIT <https://opensource.org/licenses/MIT>`_."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -452,6 +452,8 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Możesz pobrać i używać Godota do jakichkolwiek celów, osobistych, non-"
+"profit, komercyjnych itd."
 
 #: ../../docs/about/faq.rst:14
 #, fuzzy
@@ -459,7 +461,8 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Możesz modyfikować, (re)dystrybuować robić z Godotem co Ci się tylko podoba"
+"Możesz modyfikować, rozprowadzać i modyfikować Godota według twoich uznań, w "
+"jakichkolwiek celach, zarówno komercyjnie jak i niekomercyjnie"
 
 #: ../../docs/about/faq.rst:16
 #, fuzzy
@@ -553,8 +556,8 @@ msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"Zarówno 32 i 64 bitowe programy są wspierane z domyślnym wsparciem dla 64 "
-"bitów."
+"Zarówno 32- i 64-bitowe pliki binarne są wspierane tam, gdzie ma to sens, "
+"jednak 64 jest domyślnym"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
@@ -607,6 +610,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Jeśli zaczynasz swoją przygode z Godot albo nawet tworzeniem gier, GDScript "
+"jest zalecanym językiem do nauki i użycia gdyż jest on podstawowy dla Godot. "
+"Podczas gdy języki skryptowe mają skłonność do bycia mniej wydajnymi niż "
+"języki niskiego poziomu na dłuższą mete, w prototypowaniu i rozwijaniu gry "
+"minimalnie gotowej do wydania i skupianiu się na jak najszybszym jej "
+"wydaniu, GDScript zapewni szybki, przyjazny i użyteczny sposób do tworzenia "
+"twojej gry."
 
 #: ../../docs/about/faq.rst:75
 msgid ""

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-08-23 11:04+0200\n"
-"PO-Revision-Date: 2018-07-27 09:44+0000\n"
+"PO-Revision-Date: 2018-08-24 18:44+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -415,15 +415,17 @@ msgid ""
 msgstr "Що я можу зробити з Godot? Скільки це коштує? Які ліцензійні умови?"
 
 #: ../../docs/about/faq.rst:9
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot - це відкрите та вільне програмне забезпечення, що розповсюджується "
-"під `OSI-затвердженою <https://opensource.org/licenses/MIT>`_ ліцензією MIT."
+"Godot — це `відкрите та вільне програмне забезпечення <https://en.wikipedia."
+"org/wiki/Free_and_open-source_software>`_, яке розповсюджується за умов "
+"дотримання `затвердженої OSI <https://opensource.org/licenses/MIT>`_ "
+"ліцензії MIT. Це означає, що Godot — вільне, як «вільне висловлювання», і "
+"вільне, як «вільне пиво»."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -434,28 +436,28 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Ви можете вільно отримати Godot і користуватися ним для будь-яких потреб, "
+"особистих, некомерційних, комерційних або інших;"
 
 #: ../../docs/about/faq.rst:14
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Ви можете модифікувати, поширювати і змішувати Godot так, як це задовольняє "
-"ваше серце"
+"Ви можете модифікувати, поширювати і поєднувати Godot із іншими компонентами "
+"так, як цього забажаєте, для будь-якої мети, некомерційної або комерційної."
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Весь вміст документації знаходиться під дозвільною ліцензією Creative "
-"Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
-"by/3.0/>`_) за авторством \"Juan Linietsky, Ariel Manzur та спільноти Godot "
-"Engine\"."
+"Весь вміст документації оприлюднено за умов дотримання дозвільної ліцензії "
+"Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/"
+"licenses/by/3.0/>`_) за авторством «Juan Linietsky, Ariel Manzur та "
+"спільноти Godot Engine»."
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -532,32 +534,30 @@ msgid "Web"
 msgstr "Веб"
 
 #: ../../docs/about/faq.rst:48
-#, fuzzy
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
-"Підтримується створення 32-х, та 64-х бітних виконуваних файлів, де це "
-"можливо, а 64-х - типові."
+"Передбачено підтримку створення 32-х та 64-х бітових виконуваних файлів, де "
+"це можливо, типовими є 64-х бітові."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Деякими користувачами повідомлялося про успішне збирання та використання "
+"Godot на заснованих на ARM системах із ядром Linux, зокрема на Raspberry Pi."
 
 #: ../../docs/about/faq.rst:54
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
-"Деякі користувачі повідомляють про успішну побудову та використання \"Godot"
-"\" на основі ARM-систем з Linux, таких як \"Raspberry Pi\". Також "
-"проводяться деякі неофіційні роботи третіх сторін над запуском збірок для "
-"деяких консолей, однак їх не включено в типові скрипти збірки або шаблони "
-"експорту."
+"Також проводяться деякі неофіційні роботи третіх сторін над запуском збірок "
+"для деяких консолей, однак їх не включено в типові скрипти збірки або "
+"шаблони експорту."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
@@ -569,9 +569,8 @@ msgstr ""
 "devel-compiling>`."
 
 #: ../../docs/about/faq.rst:62
-#, fuzzy
 msgid "Which programming languages are supported in Godot?"
-msgstr "Які мови підтримуються в Godot?"
+msgstr "Підтримку яких мов програмування передбачено у Godot?"
 
 #: ../../docs/about/faq.rst:64
 #, fuzzy
@@ -11421,7 +11420,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr "Доповнення"
+msgstr "Фаска"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -13233,7 +13232,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "End"
-msgstr ""
+msgstr "Кінець"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:163
 msgid "get_area()"
@@ -14106,7 +14105,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:153
 msgid "Skeleton"
-msgstr ""
+msgstr "Каркас"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -40191,7 +40190,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 #: ../../docs/tutorials/viewports/viewports.rst:38
 msgid "Input"
-msgstr "Ввід"
+msgstr "Вхідні дані"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:114
 msgid ""
@@ -44832,9 +44831,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:69
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:134
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:194
-#, fuzzy
 msgid "Variable"
-msgstr "Змінні"
+msgstr "Змінна"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:69
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:134
