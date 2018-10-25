@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,8 +196,16 @@ msgstr ""
 msgid "The formula for dot product takes two common forms:"
 msgstr ""
 
+#: ../../docs/tutorials/math/vector_math.rst:272
+msgid "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
+msgstr ""
+
 #: ../../docs/tutorials/math/vector_math.rst:276
 msgid "and"
+msgstr ""
+
+#: ../../docs/tutorials/math/vector_math.rst:278
+msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:282
@@ -234,6 +242,10 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:341
 msgid "Like the dot product, the **cross product** is an operation on two vectors. However, the result of the cross product is a vector with a direction that is perpendicular to both. Its magnitude depends on their relative angle. If two vectors are parallel, the result of their cross product will be null vector."
+msgstr ""
+
+#: ../../docs/tutorials/math/vector_math.rst:346
+msgid "\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b \\right \\|\\ |\\sin(a,b)|"
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:352

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,7 +229,7 @@ msgid "Unity's scene system consists of embedding all the required assets in a s
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:95
-msgid "Godot's scene system is different: it actually consists in a tree made of nodes. Each node serves a purpose: Sprite, Mesh, Light, etc. Basically, this is similar to Unity scene system. However, each node can have multiple children, which makes each a subscene of the main scene. This means you can compose a whole scene with different scenes stored in different files."
+msgid "Godot's scene system is different: it actually consists in a tree made of nodes. Each node serves a purpose: Sprite, Mesh, Light, etc. Basically, this is similar to the Unity scene system. However, each node can have multiple children, which makes each a subscene of the main scene. This means you can compose a whole scene with different scenes stored in different files."
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
@@ -301,7 +301,7 @@ msgid "First, this system is closer to the well-known object-oriented paradigm: 
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:148
-msgid "Second, it allows the extraction a subtree of scene to make it a scene of its own, which answers the second and third questions: even if a scene tree gets too deep, it can be split into smaller subtrees. This also allows a better solution for reusability, as you can include any subtree as a child of any node. Putting multiple nodes in an empty GameObject in Unity does not provide the same possibility, apart from a visual organization."
+msgid "Second, it allows the extraction a subtree of the scene to make it a scene of its own, which answers the second and third questions: even if a scene tree gets too deep, it can be split into smaller subtrees. This also allows a better solution for reusability, as you can include any subtree as a child of any node. Putting multiple nodes in an empty GameObject in Unity does not provide the same possibility, apart from a visual organization."
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:151
@@ -361,7 +361,7 @@ msgid "As you may know already, Unity supports C#. C# benefits from its integrat
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:210
-msgid "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` as well as support for :ref:`Visual Script <toc-learn-scripting-visual_script>` and :ref:`doc_c_sharp`. GDScript borrows its syntax from Python, but is not related to it. If you wonder about the reasoning for a custom scripting language, please read the :ref:`doc_gdscript` and :ref:`doc_faq` pages. GDScript is strongly attached to the Godot API and is really easy to learn: Between one evening for an experienced programmer and a week for a complete beginner."
+msgid "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` as well as support for :ref:`Visual Script <toc-learn-scripting-visual_script>` and :ref:`C# <doc_c_sharp>`. GDScript borrows its syntax from Python, but is not related to it. If you wonder about the reasoning for a custom scripting language, please read the :ref:`doc_gdscript` and :ref:`doc_faq` pages. GDScript is strongly attached to the Godot API and is really easy to learn: Between one evening for an experienced programmer and a week for a complete beginner."
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:216
@@ -377,7 +377,7 @@ msgid "either add a new node between your target node and its current parent, th
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:225
-msgid "or, your can split your target node into multiple children and attach one script to each of them."
+msgid "or, you can split your target node into multiple children and attach one script to each of them."
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:227
@@ -393,18 +393,42 @@ msgid "You can control nodes by accessing them using a script and calling functi
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
-msgid "But there's more! Certain nodes throw signals when certain actions happen. You can connect these signals to call a specific function when they happen. Note that you can define your own signals and send them whenever you want. This feature is documented `here <gdscript.html#signals>`_."
+msgid "But there's more! Certain nodes throw signals when certain actions happen. You can connect these signals to call a specific function when they happen. Note that you can define your own signals and send them whenever you want. This feature is documented `here <../scripting/gdscript/gdscript_basics.html#signals>`_."
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
-msgid "Using Godot in C++"
+msgid "Script Serialization"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
-msgid "For your information, Godot also allows you to develop your project directly in C++ by using its API, which is not possible with Unity at the moment. As an example, you can consider Godot Engine's editor as a \"game\" written in C++ using Godot API."
+msgid "Unity can handle script serialization in two ways:"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
+msgid "Implicit: All public fields in a class are automatically serialized if the type is a serializable type (``Dictionary`` is not serializable)."
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:248
+msgid "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` attribute."
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:250
+msgid "Godot also has a built-in script serialization system, but it works only explicitly. You can serialize any serializable type (:ref:`built-in and various engine types <doc_binary_serialization_api>`, including :ref:`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. This workflow is explained `here <../scripting/gdscript/gdscript_basics.html#exports>`_."
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:254
+msgid "Unity also has a data type called ``ScriptableObject`` used to serialize custom asset objects. Its equivalent in Godot is the base class for all resources: :ref:`class_Resource`. Creating a script that inherits :ref:`class_Resource` will allow you to create custom serializable objects. More information about resources can be found :ref:`here <doc_resources>`."
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:259
+msgid "Using Godot in C++"
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:261
+msgid "For your information, Godot also allows you to develop your project directly in C++ by using its API, which is not possible with Unity at the moment. As an example, you can consider Godot Engine's editor as a \"game\" written in C++ using Godot API."
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:263
 msgid "If you are interested in using Godot in C++, you may want to start reading the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."
 msgstr ""
 

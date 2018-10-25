@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,102 +25,206 @@ msgid "Nodes and resources"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
-msgid "So far, :ref:`Nodes <class_Node>` have been the most important datatype in Godot as most of the behaviors and features of the engine are implemented through them. There is another datatype that is equally important: :ref:`Resource <class_Resource>`."
+msgid "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in Godot as that's the one you use to code behavior and and most of the engine's features rely on them. There is another datatype that is just as important: :ref:`Resource <class_Resource>`."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
-msgid "Where *Nodes* focus on behaviors, such as drawing a sprite, drawing a 3D model, physics, GUI controls, etc,"
+msgid "*Nodes* give you functionality: they draw sprites, 3D models, simulate physics, arrange user interface, etc. **Resources** are **data containers**. They don't do anything on their own: instead nodes use the data contained in resources."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:18
-msgid "**Resources** are mere **data containers**. This means that they don't do any action nor process any information. Resources just contain data."
+#: ../../docs/getting_started/step_by_step/resources.rst:19
+msgid "Anything Godot saves or loads from disk is a resource. Be it a scene (a .tscn or an .scn file), an image, a script... Here are some ``Resource`` examples: :ref:`Texture <class_Texture>`, :ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation <class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:22
-msgid "Examples of resources are :ref:`Texture <class_Texture>`, :ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation <class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`, etc."
+#: ../../docs/getting_started/step_by_step/resources.rst:26
+msgid "When the engine loads a resource from disk, **it only loads it once**. If a copy of that resource is already in memory, trying to load the resource again will return the same copy every time. As resources only contain data there is no need to duplicate them."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:32
-msgid "When Godot saves or loads (from disk) a scene (.tscn or .scn), an image (png, jpg), a script (.gd) or pretty much anything, that file is considered a resource."
+#: ../../docs/getting_started/step_by_step/resources.rst:31
+msgid "Every object, be it a Node or a Resource, can export properties. There are many types of Properties like String, integer, Vector2, etc., and any of these types can become a resource. This means that both nodes and resources can contain resources as properties:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:36
-msgid "When a resource is loaded from disk, **it is always loaded once**. That means, if there is a copy of that resource already loaded in memory, trying to load the resource again will return the same copy again and again. This corresponds with the fact that resources are just data containers, so there is no need to have them duplicated."
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/resources.rst:42
-msgid "Typically, every object in Godot (Node, Resource, or anything else) can export properties. Properties can be of many types (like a string, integer, Vector2, etc) and one of those types can be a resource. This means that both nodes and resources can contain resources as properties. To make it a little more visual:"
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/resources.rst:51
+#: ../../docs/getting_started/step_by_step/resources.rst:39
 msgid "External vs built-in"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:53
-msgid "The resource properties can reference resources in two ways, *external* (on disk) or **built-in**."
+#: ../../docs/getting_started/step_by_step/resources.rst:41
+msgid "There are two ways to save resources. They can be:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:56
+#: ../../docs/getting_started/step_by_step/resources.rst:43
+msgid "**External** to a scene, saved on the disk as individual files."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:44
+msgid "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached to."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:`Sprite <class_Sprite>` node:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:61
-msgid "Pressing the \">\" button on the right side of the preview allows us to view and edit the resources properties. One of the properties (path) shows where it comes from. In this case, it comes from a png image."
+#: ../../docs/getting_started/step_by_step/resources.rst:51
+msgid "Clicking the resource preview allows us to view and edit the resources properties."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:67
-msgid "When the resource comes from a file, it is considered an *external* resource. If the path property is erased (or it never had a path to begin with), it is considered a built-in resource."
+#: ../../docs/getting_started/step_by_step/resources.rst:55
+msgid "The path property tells us where the resource comes from. In this case it comes from a PNG image called ``robi.png``. When the resource comes from a file like this, it is an external resource. If you erase the path or this path is empty, it becomes built-in resource."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:71
-msgid "For example, if the path \\`\"res://robi.png\"\\` is erased from the \"path\" property in the above example, and then the scene is saved, the resource will be saved inside the .tscn scene file, no longer referencing the external \"robi.png\". However, even if saved as built-in, and even though the scene can be instanced multiple times, the resource will always be loaded only once. That means, different Robi robot scenes instanced at the same time will still share the same image."
+#: ../../docs/getting_started/step_by_step/resources.rst:60
+msgid "The switch between built-in and external resources happens when you save the scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:80
+#: ../../docs/getting_started/step_by_step/resources.rst:66
+msgid "Even if you save a built-in resource, when you instance a scene multiple times, the engine will only load one copy of it."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:82
-msgid "Loading resources from code is easy. There are two ways to do it. The first is to use load(), like this:"
+#: ../../docs/getting_started/step_by_step/resources.rst:72
+msgid "There are two ways to load resources from code. First, you can use the ``load()`` function anytime:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:101
-msgid "The second way is more optimal, but only works with a string constant parameter because it loads the resource at compile-time."
+#: ../../docs/getting_started/step_by_step/resources.rst:90
+msgid "You can also ``preload`` resources. Unlike ``load``, this function will read the file from disk and load it at compile-time. As a result, you cannot call preload with a variable path: you need to use a constant string."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:116
+#: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:117
-msgid "Scenes are also resources, but there is a catch. Scenes saved to disk are resources of type :ref:`PackedScene <class_PackedScene>`. This means that the scene is packed inside a resource."
+#: ../../docs/getting_started/step_by_step/resources.rst:108
+msgid "Scenes are also resources, but there is a catch. Scenes saved to disk are resources of type :ref:`PackedScene <class_PackedScene>`. The scene is packed inside a resource."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:121
-msgid "To obtain an instance of the scene, the method :ref:`PackedScene.instance() <class_PackedScene_instance>` must be used."
+#: ../../docs/getting_started/step_by_step/resources.rst:112
+msgid "To get an instance of the scene, you have to use the :ref:`PackedScene.instance() <class_PackedScene_instance>` method."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:143
-msgid "This method creates the nodes in the scene's hierarchy, configures them (sets all the properties) and returns the root node of the scene, which can be added to any other node."
+#: ../../docs/getting_started/step_by_step/resources.rst:133
+msgid "This method creates the nodes in the scene's hierarchy, configures them, and returns the root node of the scene. You can then add it as a child of any other node."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:147
-msgid "The approach has several advantages. As the :ref:`PackedScene.instance() <class_PackedScene_instance>` function is pretty fast, adding extra content to the scene can be done efficiently. New enemies, bullets, effects, etc can be added or removed quickly, without having to load them again from disk each time. It is important to remember that, as always, images, meshes, etc are all shared between the scene instances."
+#: ../../docs/getting_started/step_by_step/resources.rst:137
+msgid "The approach has several advantages. As the :ref:`PackedScene.instance() <class_PackedScene_instance>` function is pretty fast, you can create new enemies, bullets, effects, etc. without having to load them again from disk each time. Remember that as always, images, meshes, etc. are all shared between the scene instances."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/resources.rst:156
+#: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
 msgstr ""
 
+#: ../../docs/getting_started/step_by_step/resources.rst:146
+msgid "When a ``Resource`` is no longer in use, it will automatically free itself. Since, in most cases, Resources are contained in Nodes, when you free a node, the engine frees all the resources it owns as well if no other node uses them."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:151
+msgid "Creating your own resources"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:153
+msgid "Like any Object in Godot, users can also script Resources. Resource scripts inherit the ability to freely translate between object properties and serialized text or binary data (/*.tres, /*.res). They also inherit the reference-counting memory management from the Reference type."
+msgstr ""
+
 #: ../../docs/getting_started/step_by_step/resources.rst:158
-msgid "Resource extends from :ref:`Reference <class_Reference>`. As such, when a resource is no longer in use, it will automatically free itself. Since, in most cases, Resources are contained in Nodes, scripts or other resources, when a node is removed or freed, all the children resources are freed too."
+msgid "This comes with many distinct advantages over alternative data structures such as JSON, CSV, or custom TXT files. Users can only import these assets as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`File <class_File>` to parse. What sets Resources apart is their inheritance of :ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:`Resource <class_Resource>` features:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
-msgid "Scripting"
+msgid "They can define constants, so constants from other data fields or objects are not needed."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
-msgid "Like any object in Godot, not just nodes, resources can be scripted, too. However, there isn't generally much of an advantage, as resources are just data containers."
+msgid "They can define methods, including setter/getter methods for properties. This allows for abstraction and encapsulation of the underlying data. If the Resource script's structure needs to change, the game using the Resource need not also change."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:169
+msgid "They can define signals, so Resources can trigger responses to changes in the data they manage."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:171
+msgid "They have defined properties, so users know 100% that their data will exist."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:173
+msgid "Resource auto-serialization and deserialization is a built-in Godot Engine feature. Users do not need to implement custom logic to import/export a resource file's data."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:175
+msgid "Resources can even serialize sub-Resources recursively, meaning users can design even more sophisticated data structures."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:177
+msgid "Users can save Resources as version-control-friendly text files (\\*.tres). Upon exporting a game, Godot serializes resource files as binary files (\\*.res) for increased speed and compression."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:179
+msgid "Godot Engine's Inspector renders and edits Resource files out-of-the-box. As such, users often do not need to implement custom logic to visualize or edit their data. To do so, double-click the resource file in the FileSystem dock or click the folder icon in the Inspector and open the file in the dialog."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:181
+msgid "They can extend **other** resource types besides just the base Resource."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:185
+msgid "Resources and Dictionaries are also different in that both are passed by reference, but only Resources are reference-counted. This means that if a Dictionary is passed between objects, and the first object is deleted, it will invalidate the second object's variable. This is not so for Resources which won't free their memory until *all* instances are gone."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:215
+msgid "Godot makes it easy to create custom Resources in the Inspector."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:217
+msgid "Create a plain Resource object in the Inspector. This can even be a type that derives Resource, so long as your script is extending that type."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:218
+msgid "Set the ``script`` property in the Inspector to be your script."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:220
+msgid "The Inspector will now display your Resource script's custom properties. If one edits those values and saves the resource, the Inspector serializes the custom properties too! To save a resource from the Inspector, click the Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:225
+msgid "If the script's language supports `script classes <https://godot.readthedocs.io/en/latest/getting_started/step_by_step/scripting_continued.html#register-scripts-as-classes>`__, then it streamlines the process. Defining a name for your script alone will add it to the Inspector's creation dialog. This will auto-add your script to the Resource object you create."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:230
+msgid "Let's see some examples."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:303
+msgid "Resource scripts are similar to Unity's ScriptableObjects. The Inspector provides built-in support for custom resources. If desired though, users can even design their own Control-based tool scripts and combine them with an :ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and editors for their data."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:309
+msgid "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with Resource scripts. DataTables are a String mapped to a custom struct, similar to a Dictionary mapping a String to a secondary custom Resource script."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:345
+msgid "Instead of just inlining the Dictionary values, one could also, alternatively..."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:347
+msgid "Import a table of values from a spreadsheet and generate these key-value pairs, or..."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:349
+msgid "Design a visualization within the editor and create a simple plugin that adds it to the Inspector when you open these types of Resources."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:352
+msgid "CurveTables are the same thing except mapped to an Array of float values or a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:357
+msgid "Beware that resource files (\\*.tres/\\*.res) will store the path of the script they use in the file. When loaded, they will fetch and load this script as an extension of their type. This means that trying to assign a subclass, i.e. an inner class of a script (such as using the ``class`` keyword in GDScript) won't work. Godot will not serialize the custom properties on the script subclass properly."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/resources.rst:363
+msgid "In the example below, Godot would load the ``Node`` script, see that it doesn't extend ``Resource``, and then determine that the script failed to load for the Resource object since the types are incompatible."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -639,150 +639,150 @@ msgid "Text: ``Start``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
-msgid "The default font for ``Control`` nodes is small and doesn't scale well. There is a font file included in the game assets called \"Xolonium-Regular.ttf\". To use this font, do the following for each of the three ``Control`` nodes:"
+msgid "To make the text of the ``MessageLabel`` fit the game's window click the small icon next to your text property. This will open up a new window where you can add a new line between the words. The default font for ``Control`` nodes is small and doesn't scale well. There is a font file included in the game assets called \"Xolonium-Regular.ttf\". To use this font, do the following for each of the three ``Control`` nodes:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:939
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:942
 msgid "Click on the \"DynamicFont\" you added, and under \"Font Data\", choose \"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the font's ``Size``. A setting of ``64`` works well."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
 msgid "Now add this script to ``HUD``:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:962
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:965
 msgid "The ``start_game`` signal tells the ``Main`` node that the button has been pressed."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:985
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:988
 msgid "This function is called when we want to display a message temporarily, such as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One Shot`` property to \"On\"."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1014
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
 msgid "This function is called when the player loses. It will show \"Game Over\" for 2 seconds, then return to the title screen and show the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1032
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1035
 msgid "This function is called in ``Main`` whenever the score changes."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1037
 msgid "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` signal of ``StartButton``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1064
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1067
 msgid "Connecting HUD to Main"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1066
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1069
 msgid "Now that we're done creating the ``HUD`` scene, save it and go back to ``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene, and place it at the bottom of the tree. The full tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1073
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
 msgid "Now we need to connect the ``HUD`` functionality to our ``Main`` script. This requires a few additions to the ``Main`` scene:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1079
 msgid "In the Node tab, connect the HUD's ``start_game`` signal to the ``new_game()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1079
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1082
 msgid "In ``new_game()``, update the score display and show the \"Get Ready\" message:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1094
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1097
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1106
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1109
 msgid "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in sync with the changing score:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1119
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1122
 msgid "Now you're ready to play! Click the \"Play the Project\" button. You will be asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1123
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1126
 msgid "Finishing up"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1125
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1128
 msgid "We have now completed all the functionality for our game. Below are some remaining steps to add a bit more \"juice\" to improve the game experience. Feel free to expand the gameplay with your own ideas."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1130
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid "Background"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1132
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid "The default gray background is not very appealing, so let's change its color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` node. Make it the first node under ``Main`` so that it will be drawn behind the other nodes. ``ColorRect`` only has one property: ``Color``. Choose a color you like and drag the size of the ``ColorRect`` so that it covers the screen."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1139
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1142
 msgid "You can also add a background image, if you have one, by using a ``Sprite`` node."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1146
 msgid "Sound effects"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1148
 msgid "Sound and music can be the single most effective way to add appeal to the game experience. In your game assets folder, you have two sound files: \"House In a Forest Loop.ogg\" for background music, and \"gameover.wav\" for when the player loses."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1150
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1153
 msgid "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On each one, click on the ``Stream`` property, select \"Load\", and choose the corresponding audio file."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1155
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1158
 msgid "To play the music, add ``$Music.play()`` in the ``new_game()`` function and ``$Music.stop()`` in the ``game_over()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1158
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid "Particles"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1166
 msgid "For one last bit of visual appeal, let's add a trail effect to the player's movement. Choose your ``Player`` scene and add a :ref:`Particles2D <class_Particles2D>` node named ``Trail``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1170
 msgid "There are a large number of properties to choose from when configuring particles. Feel free to experiment and create different effects. For the effect in this example, use the following settings:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
 msgid "You also need to create a ``Material`` by clicking on ``<null>`` and then \"New ParticlesMaterial\". The settings for that are below:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid "To make the gradient for the \"Color Ramp\" setting, we want a gradient taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to 0.0 (fully transparent)."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient\". You'll see a window like this:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1187
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1190
 msgid "The left and right boxes represent the start and end colors. Click on each and then click the large square on the right to choose the color. For the first color, set the ``A`` (alpha) value to around halfway. For the second, set it all the way to ``0``."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1195
 msgid "See :ref:`Particles2D <class_Particles2D>` for more details on using particle effects."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1196
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1199
 msgid "Project files"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1201
 msgid "You can find a completed version of this project here: https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr ""
 

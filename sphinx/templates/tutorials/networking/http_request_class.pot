@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,5 +82,9 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:61
 msgid "Until now we have limited ourselves to requesting data from a server. But what if you need to send data to the server? Here is a common way of doing it:"
+msgstr ""
+
+#: ../../docs/tutorials/networking/http_request_class.rst:72
+msgid "Keep in mind that you have to wait for a request to finish before sending another one. Making multiple request at once requires you to have one node per request. A common strategy is to create and delete HTTPRequest nodes at runtime as necessary."
 msgstr ""
 

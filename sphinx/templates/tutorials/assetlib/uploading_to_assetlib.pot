@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "**Version**:"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:44
-msgid "The version number of the asset. While you are free to choose and use any  versioning scheme that you like, you may want to look into something such as `SemVer <https://semver.org>`_ if you want your asset's versioning scheme to be clear and consistent. Note that there is also an internal version number, incremented every time the asset download URL is changed/updated."
+msgid "The version number of the asset. While you are free to choose and use any versioning scheme that you like, you may want to look into something such as `SemVer <https://semver.org>`_ if you want your asset's versioning scheme to be clear and consistent. Note that there is also an internal version number, incremented every time the asset download URL is changed or updated."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:53
@@ -85,7 +85,7 @@ msgid "**Repository host**:"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:51
-msgid "Assets uploaded to the AssetLib are not hosted on it directly, and instead point to repositories hosted on third-party Git providers, such as GitHub, GitLab or Bitbucket. This is where you choose which provider your asset uses, so the final download link can be computed."
+msgid "Assets uploaded to the AssetLib are not hosted on it directly. Instead, they point to repositories hosted on third-party Git providers such as GitHub, GitLab or Bitbucket. This is where you choose which provider your asset uses, so the site can compute the final download link."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:56
@@ -101,7 +101,7 @@ msgid "**Issues URL**:"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:59
-msgid "The URL to your asset's issue tracker. Again, this will differ from repository host to repository host, but will likely look similar to `https://github.cmo/<user>/<project>/issues`. You may leave this field empty if you use your provider's issue tracker, and it's part of the same repository."
+msgid "The URL to your asset's issue tracker. Again, this will differ from repository host to repository host, but will likely look similar to `https://github.com/<user>/<project>/issues`. You may leave this field empty if you use your provider's issue tracker, and it's part of the same repository."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:65
@@ -109,7 +109,7 @@ msgid "**Download Commit/Tag**:"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:64
-msgid "The commit or tag of the asset. For example, `b1d3172f89b86e52465a74f63a74ac84c491d3e1` or `v1.0`. From this, the actual download URL will be computed."
+msgid "The commit or tag of the asset. For example, `b1d3172f89b86e52465a74f63a74ac84c491d3e1` or `v1.0`. The site computes the actual download URL from this."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:69
@@ -117,7 +117,7 @@ msgid "**Icon URL**:"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:68
-msgid "The URL to your asset's icon (which will be used as a thumbnail in the AssetLib search results, and on the asset's page). Should be an image in either the PNG or JPG format."
+msgid "The URL to your asset's icon (which will be used as a thumbnail in the AssetLib search results and on the asset's page). Should be an image in either the PNG or JPG format."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:74
@@ -125,7 +125,7 @@ msgid "**License**:"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:72
-msgid "The license under which you are distributing the asset. The list includes a variety of free and open-source software liceses, such as GPL (v2 and v3), MIT, BSD and Boost Software License. You can visit `OpenSource.org <https://opensource.org>`_ for a detailed description of each of the listed licenses."
+msgid "The license under which you are distributing the asset. The list includes a variety of free and open-source software licenses, such as GPL (v2 and v3), MIT, BSD and Boost Software License. You can visit `OpenSource.org <https://opensource.org>`_ for a detailed description of each of the listed licenses."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:80

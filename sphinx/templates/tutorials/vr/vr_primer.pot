@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "When Godot starts each available interface will make itself known to the 
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:16
-msgid "You can use the function :ref:`get_interfaces <class_ARVRServer_get_interfaces>` to return a list of available interfaces but for this tutorial we're going to use the :ref:`native mobile VR interface <class_MobileVRInterface>` in our examples. This interface is a straightforward implementation that uses the 3DOF sensors on your phone for orientation and outputs a stereo scopic image to screen. It is also available in the Godot core and outputs to screen on desktop which makes it ideal for prototyping or a tutorial such as this one."
+msgid "You can use the function :ref:`get_interfaces <class_ARVRServer_get_interfaces>` to return a list of available interfaces but for this tutorial we're going to use the :ref:`native mobile VR interface <class_MobileVRInterface>` in our examples. This interface is a straightforward implementation that uses the 3DOF sensors on your phone for orientation and outputs a stereoscopic image to screen. It is also available in the Godot core and outputs to screen on desktop which makes it ideal for prototyping or a tutorial such as this one."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:18
@@ -45,11 +45,11 @@ msgid "To enable an interface you execute the following code:"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:35
-msgid "This code finds the interface we wish to use, initializes it and if that is successful binds the main viewport to the interface. This last step gives some control over the viewport to the interface which automatically enables things like stereo scopic rendering on the viewport."
+msgid "This code finds the interface we wish to use, initializes it and if that is successful binds the main viewport to the interface. This last step gives some control over the viewport to the interface which automatically enables things like stereoscopic rendering on the viewport."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:37
-msgid "For our mobile vr interface, and any interface where the main input is directly displayed on screen, the main viewport needs to be the viewport where arvr is set to true. But for interfaces that render on an externally attached device you can use a secondary viewport. In this later case a viewport that shows its output on screen will show an undistorted version of the left eye while showing the fully processed stereo scopic output on the device."
+msgid "For our mobile vr interface, and any interface where the main input is directly displayed on screen, the main viewport needs to be the viewport where arvr is set to true. But for interfaces that render on an externally attached device you can use a secondary viewport. In this later case a viewport that shows its output on screen will show an undistorted version of the left eye while showing the fully processed stereoscopic output on the device."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:39
@@ -93,7 +93,7 @@ msgid "To keep things simple, when you physically move around your room the ARVR
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:58
-msgid ":ref:`ARVRCamera <class_ARVRCamera>` is the second node that must always be a part of your scene and it must always be a child node of your origin node. It is a subclass of Godots normal camera however its position is automatically updated each frame based on the physical orientation and position of the HMD. Also due to the precision required for rendering to an HMD or rendering an AR overlay over a real world camera most of the standard camera properties are ignored. The only properties of the camera that are used are the near and far plane settings. The FOV, aspect ratio and projection mode are all ignored."
+msgid ":ref:`ARVRCamera <class_ARVRCamera>` is the second node that must always be a part of your scene and it must always be a child node of your origin node. It is a subclass of Godot's normal camera. However, its position is automatically updated each frame based on the physical orientation and position of the HMD. Also due to the precision required for rendering to an HMD or rendering an AR overlay over a real world camera most of the standard camera properties are ignored. The only properties of the camera that are used are the near and far plane settings. The FOV, aspect ratio and projection mode are all ignored."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:60
@@ -137,6 +137,6 @@ msgid "The high FOV and related lens distortion effect require many VR experienc
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:83
-msgid "All in all, the workload your GPU has in comparison with a normal 3D game is a fair amount higher. While things are in the pipeline to improve this such as MultiView and foviated rendering these aren't supported on all devices. This is why you see many VR games using a more art style and if you pay close attention to those VR games that go for realism, you'll probably notice they're a bit more conservative on the effects or use some good old optical trickery."
+msgid "All in all, the workload your GPU has in comparison with a normal 3D game is a fair amount higher. While things are in the pipeline to improve this such as MultiView and foveated rendering these aren't supported on all devices. This is why you see many VR games using a more art style and if you pay close attention to those VR games that go for realism, you'll probably notice they're a bit more conservative on the effects or use some good old optical trickery."
 msgstr ""
 

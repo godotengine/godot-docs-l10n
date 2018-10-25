@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,7 +150,7 @@ msgid "If the ``back`` button has been pressed, we change the currently visible 
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:166
-msgid "If one of the scene changing buttons are pressed, we fist call ``set_mouse_and_joypad_sensitivity`` so the singleton (``Globals.gd``) has the values from the :ref:`HSlider <class_HSlider>` nodes. Then we tell the singleton to change nodes using it's ``load_new_scene`` function, passing in the file path of the scene the player has selected."
+msgid "If one of the scene changing buttons are pressed, we fist call ``set_mouse_and_joypad_sensitivity`` so the singleton (``Globals.gd``) has the values from the :ref:`HSlider <class_HSlider>` nodes. Then we tell the singleton to change nodes using its ``load_new_scene`` function, passing in the file path of the scene the player has selected."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:170
@@ -162,7 +162,7 @@ msgid "In ``options_menu_button_pressed``, we check to see which button is press
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:178
-msgid "If the ``fullscreen`` button is pressed we toggle the :ref:`OS <class_OS>`'s full screen mode by setting it to the flipped version of it's current value."
+msgid "If the ``fullscreen`` button is pressed we toggle the :ref:`OS <class_OS>`'s full screen mode by setting it to the flipped version of its current value."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:180
@@ -178,7 +178,7 @@ msgid "First we get the ``Globals`` singleton and assign it to a local variable.
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:188
-msgid "We then set the ``mouse_sensitivity`` and ``joypad_sensitvity`` variables to the values in their respective :ref:`HSlider <class_HSlider>` node counterparts."
+msgid "We then set the ``mouse_sensitivity`` and ``joypad_sensitivity`` variables to the values in their respective :ref:`HSlider <class_HSlider>` node counterparts."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:191
@@ -407,7 +407,7 @@ msgid "If ``Globals.gd`` do not have a pop up open, we instance ``POPUP_SCENE`` 
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:434
-msgid "We then get the quit button and assign it's ``pressed`` signal to ``popup_quit``, which we will be adding shortly."
+msgid "We then get the quit button and assign its ``pressed`` signal to ``popup_quit``, which we will be adding shortly."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:436
@@ -572,7 +572,7 @@ msgid "If the player is holding an object when they died, we need to throw it. W
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:663
-msgid "The ``\\n`` combination from the expression ``You have died\\n`` is a command used to display the text following after it on a new line below. This is always usefull when you wand to nicely group displayed text in multiple lines so it looks better and is more readable by the players of your games."
+msgid "The ``\\n`` combination from the expression ``You have died\\n`` is a command used to display the text following after it on a new line below. This is always useful when you wand to nicely group displayed text in multiple lines so it looks better and is more readable by the players of your games."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:667
@@ -604,11 +604,11 @@ msgid "Next we make the ``Death_Screen`` invisible and make the rest of the UI, 
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:682
-msgid "We then go through each weapon and call it's ``reset_weapon`` function, which we will add soon."
+msgid "We then go through each weapon and call its ``reset_weapon`` function, which we will add soon."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:684
-msgid "Then we reset ``health`` to ``100``, ``grenade_amounts`` to it's default values, and change ``current_grenade`` to ``Grenade``. This effectively resets these variables to their default values."
+msgid "Then we reset ``health`` to ``100``, ``grenade_amounts`` to its default values, and change ``current_grenade`` to ``Grenade``. This effectively resets these variables to their default values."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:687
@@ -701,7 +701,7 @@ msgid "Now all we need is a way to set the respawn points. Open up ``Ruins_Level
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:797
-msgid "Now when a node with ``Respawn_Point_Setter.gd`` has it's ``_ready`` function called, all of the children nodes of the node with ``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level.tscn``, will be added to ``respawn_points`` in ``Globals.gd``."
+msgid "Now when a node with ``Respawn_Point_Setter.gd`` has its ``_ready`` function called, all of the children nodes of the node with ``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level.tscn``, will be added to ``respawn_points`` in ``Globals.gd``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:801
