@@ -2,12 +2,14 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Alvaro Antonio Baena Rubio <aabaenar@gmail.com>, 2018.
 # Api Api dev <apidev1@hotmail.com>, 2018.
 # jacobopus <chess.coach.ar@gmail.com>, 2018.
 # Javier Elias Barrón López <isc.jbarron@gmail.com>, 2018.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2018.
 # Jonatan David Orozco Cantillo <jonorozcoc@gmail.com>, 2018.
 # Jose Ernesto Sanchez Altamiran <josernesto.s@gmail.com>, 2018.
+# Kisetsu 0w0 <plasticdoll9@gmail.com>, 2018.
 # Lukas <crakernet0@gmail.com>, 2018.
 # Ricardo Illescas <riktothepast@gmail.com>, 2018.
 #
@@ -16,7 +18,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-09-09 12:15+0200\n"
-"PO-Revision-Date: 2018-09-08 19:26+0000\n"
+"PO-Revision-Date: 2018-10-21 00:43+0000\n"
 "Last-Translator: Api Api dev <apidev1@hotmail.com>\n"
 "Language-Team: Spanish (Mexico) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/es_MX/>\n"
@@ -25,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -3722,12 +3724,22 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
+"Primero, necesitamos verificar la entrada - ¿el jugador está presionando una "
+"tecla? Para este juego, tenemos 4 entradas de dirección para verificar. Las "
+"acciones de entrada se definen en la Configuración del proyecto en \"Mapa de "
+"entrada\". Puede definir eventos personalizados y asignar diferentes teclas, "
+"eventos de mouse u otras entradas a ellos. Para esta demostración, "
+"utilizaremos los eventos predeterminados que están asignados a las teclas de "
+"flecha en el teclado."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it is pressed or ``false`` if it isn't."
 msgstr ""
+"Puede detectar si se presiona una tecla usando ``Input."
+"is_action_pressed()``, que devuelve `` true`` si se presiona o ``false`` si "
+"no lo está."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:266
 msgid ""
@@ -3737,6 +3749,12 @@ msgid ""
 "we're adding a horizontal and a vertical movement, the player would move "
 "*faster* than if it just moved horizontally."
 msgstr ""
+"Comprobamos cada entrada y agregamos /sustraer de la ``velocidad`` para "
+"obtener una dirección total. Por ejemplo, si mantienes ``right`` y ``down`` "
+"al mismo tiempo, el vector resultante ``velocity`` será ``(1, 1) ``. En este "
+"caso, dado que estamos agregando un movimiento horizontal y uno vertical, el "
+"jugador se movería *más rápido* que si simplemente se moviera "
+"horizontalmente."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:272
 msgid ""
@@ -3744,6 +3762,9 @@ msgid ""
 "*length* to ``1``, and multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
+"Podemos evitar eso si *normalizamos* la velocidad, lo que significa que "
+"establecemos *longitud* en ``1``, y multiplicamos por la velocidad deseada. "
+"Esto significa que no hay más movimiento diagonal rápido."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:276
 msgid ""
@@ -3751,12 +3772,17 @@ msgid ""
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
 "know but won't be necessary for the rest of this tutorial."
 msgstr ""
+"Si nunca antes usó matemáticas vectoriales, o necesita un repaso, puede ver "
+"una explicación del uso del vector en Godot en :ref:`doc_vector_math`. Es "
+"bueno saberlo, pero no será necesario para el resto de este tutorial."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:280
 msgid ""
 "We also check whether the player is moving so we can start or stop the "
 "AnimatedSprite animation."
 msgstr ""
+"También verificamos si el jugador se mueve para que podamos comenzar o "
+"detener la animación AnimatedSprite."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:283
 msgid ""
@@ -3764,6 +3790,9 @@ msgid ""
 "``null`` if the node is not found. Since AnimatedSprite is a child of the "
 "current node, we can use ``$AnimatedSprite``."
 msgstr ""
+"``$`` devuelve el nodo en la ruta relativa desde este nodo, o devuelve "
+"``null`` si no se encuentra el nodo. Como AnimatedSprite es un elemento "
+"secundario del nodo actual, podemos usar ``$AnimatedSprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:286
 msgid ""
@@ -3771,6 +3800,9 @@ msgid ""
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
+"``$`` es una abreviatura de ``get_node()``. Entonces, en el código anterior, "
+"``$AnimatedSprite.play()`` es lo mismo que ``get_node(\"AnimatedSprite\")."
+"play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:289
 msgid ""
@@ -3778,10 +3810,14 @@ msgid ""
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
 "following to the bottom of the ``_process`` function:"
 msgstr ""
+"Ahora que tenemos una dirección de movimiento, podemos actualizar la "
+"posición de ``Player``'s y usar ``clamp()`` para evitar que salga de la "
+"pantalla añadiendo lo siguiente a la parte inferior de la función "
+"``_process`:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid "*Clamping* a value means restricting it to a given range."
-msgstr ""
+msgstr "*Sujeción* un valor significa restringirlo a un rango dado."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
 msgid ""
@@ -3790,6 +3826,11 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
+"Haga clic en \"Reproducir escena\" (``F6``) y confirme que se puede mover el "
+"jugador por la pantalla en todas las direcciones. La salida de la consola "
+"que se abre al reproducir la escena se puede cerrar haciendo clic en "
+"``Output`` (que debe resaltarse en azul) en la parte inferior izquierda del "
+"Panel inferior."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:315
 msgid ""
@@ -3798,10 +3839,15 @@ msgid ""
 "are case-sensitive and ``$NodeName`` or ``get_node(\"NodeName\")`` must "
 "match the name you see in the scene tree."
 msgstr ""
+"Si tienes un error en el \"Depurador\" el panel se refiere a una \"instancia "
+"nula\" esto puede significar que en nodo fue nombrado erróneamente. El "
+"nombre del nodo es sensible a las mayúsculas y las minúsculas y "
+"\"$NombreDelNodo\" o get_node(\"NombreDelNodo\") debe coincidir con el "
+"nombre que ve en el árbol de la escena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:320
 msgid "Choosing animations"
-msgstr ""
+msgstr "Eligiendo animaciones"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:322
 msgid ""
@@ -3812,6 +3858,13 @@ msgid ""
 "``flip_v`` for downward movement. Let's place this code at the end of our "
 "``_process()`` function:"
 msgstr ""
+"Ahora que el jugador puede moverse, nosotros necesitamos cambiar qué "
+"animación está reproduciendo la función AnimatedSprite en función de la "
+"dirección. Tenemos una animación \"derecha\", que debe voltearse "
+"horizontalmente con la propiedad ``flip_h`` para el movimiento hacia la "
+"izquierda, y una animación \"hacia arriba\", que debe voltearse "
+"verticalmente con ``flip_v`` para el movimiento hacia abajo. Coloquemos este "
+"código al final de nuestra función ``_process()``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:353
 msgid ""
@@ -3819,6 +3872,9 @@ msgid ""
 "programmers. Consider this code versus the shortened boolean assignment "
 "above:"
 msgstr ""
+"Las asignaciones booleanas en el código anterior son una abreviatura común "
+"para los programadores. Considere este código frente a la asignación "
+"booleana acortada anterior:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
 msgid ""
@@ -3826,10 +3882,14 @@ msgid ""
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()`` so the player will be hidden when the game starts:"
 msgstr ""
+"Corra la escena y verifique que las animaciones sean correctas en cada una "
+"de las direcciones. Cuando estés seguro de que el movimiento está "
+"funcionando correctamente, agrega esta línea a ``_ready()`` para que el "
+"jugador esté oculto cuando comience el juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:387
 msgid "Preparing for collisions"
-msgstr ""
+msgstr "Preparando para colisiones"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:389
 msgid ""
@@ -3837,10 +3897,15 @@ msgid ""
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
 "functionality to make it work."
 msgstr ""
+"Queremos que ``Player`` detecte cuándo es golpeado por un enemigo, ¡pero aún "
+"no hemos creado ningún enemigo! Eso está bien, porque vamos a utilizar la "
+"funcionalidad *señal* de Godot para que funcione."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:393
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
 msgstr ""
+"Agregue lo siguiente en la parte superior del script, después de ``extends "
+"Area2d``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:405
 msgid ""
@@ -3849,6 +3914,11 @@ msgid ""
 "detect the collision. Select the ``Player`` node and click the \"Node\" tab "
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
+"Esto define una señal personalizada llamada \"golpe\" que haremos que "
+"nuestro jugador emita (envíe), cuando choca con un enemigo. Usaremos "
+"``Area2D`` para detectar la colisión. Seleccione el nodo ``Player`` y haga "
+"clic en la pestaña \"Nodo\" junto a la pestaña Inspector para ver la lista "
+"de señales que el jugador puede emitir:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:412
 msgid ""
@@ -3860,6 +3930,13 @@ msgid ""
 "automatically create a function called ``_on_Player_body_entered`` in your "
 "player's script."
 msgstr ""
+"¡Note que nuestra señal personalizada de \"golpe\" también está ahí! Ya que "
+"nuestros enemigos serán nodos ``RigidBody2D``, queremos la señal "
+"``body_entered(Object body)``, esto se emitirá cuando un cuerpo entra en "
+"contacto con el jugador. Haga clic en \"Conectar ...\" y luego en \"Conectar"
+"\" nuevamente en la ventana \"Señal de conexión\". No necesitamos cambiar "
+"ninguna de estas configuraciones: Godot creará automáticamente una función "
+"llamada ``_on_Player_body_entered`` en el script de tu jugador."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:420
 msgid ""
@@ -3867,10 +3944,13 @@ msgid ""
 "you can also give the name of an existing function that you want to link the "
 "signal to."
 msgstr ""
+"Al conectar una señal, en lugar de hacer que Godot cree una función para "
+"usted, también puede dar el nombre de una función existente a la que desea "
+"vincular la señal."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:424
 msgid "Add this code to the function:"
-msgstr ""
+msgstr "Agregue este código a la función:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:447
 msgid ""
@@ -3878,16 +3958,21 @@ msgid ""
 "turning it off, we make sure we don't trigger the ``hit`` signal more than "
 "once."
 msgstr ""
+"Deshabilitar la forma de colisión del área significa que no detectará "
+"colisiones. Al apagarlo, nos aseguramos de que no activemos la señal ``hit`` "
+"más de una vez."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:452
 msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
 msgstr ""
+"La última pieza para nuestro jugador es agregar una función a la que podamos "
+"llamar para reiniciar el jugador al iniciar un nuevo juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:475
 msgid "Enemy scene"
-msgstr ""
+msgstr "Escena enemiga"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -3896,12 +3981,19 @@ msgid ""
 "the screen and move in a random direction in a straight line, then despawn "
 "when they go offscreen."
 msgstr ""
+"Ahora es el momento de hacer que los enemigos que nuestro jugador tendrá que "
+"esquivar. Su comportamiento no será muy complejo: la pandilla o muchedumbre "
+"(mobs) aparecerán aleatoriamente en los bordes de la pantalla y se moverán "
+"en una dirección aleatoria en línea recta, luego desaparecerán cuando salgan "
+"de la pantalla."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
 msgstr ""
+"Construiremos esto en una escena ``Mob``, que luego podemos *instanciar* "
+"para crear cualquier número de mobs independientes en el juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:486
 msgid "Node setup"
@@ -3910,34 +4002,39 @@ msgstr "Configuración del nodo"
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:488
 msgid "Click Scene -> New Scene and we'll create the Mob."
 msgstr ""
+"Haga clic en Escena -> Nueva escena y crearemos la pandilla o muchedumbre."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:490
 msgid "The Mob scene will use the following nodes:"
-msgstr ""
+msgstr "La escena de la pandilla utilizará los siguientes nodos:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:492
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (llamado ``Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:494
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ""
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:495
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr ""
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:496
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
+":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (llamado "
+"``Visibility``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:498
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
 msgstr ""
+"No olvide configurar los nodos hijos para que no puedan ser seleccionados, "
+"como hizo con la escena Player (Reproductor)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:501
 msgid ""
@@ -3946,6 +4043,11 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
+"En las propiedades :ref: `RigidBody2D <class_RigidBody2D>` configure "
+"``Gravity Scale`` a ``0``, para que, turba, gentío, muchedumbre no caiga "
+"hacia abajo. Además, en la sección `` PhysicsBody2D``, haz clic en la "
+"propiedad `` Mask`` y desmarca la primera casilla. Esto asegurará que las "
+"turbas no colisionen entre sí."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:508
 msgid ""
@@ -14927,14 +15029,12 @@ msgid "shape key animation"
 msgstr "Animación de Sprite"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "Animación de Sprite"
+msgstr "Animación de luz (iluminación)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "Animación de Sprite"
+msgstr "Animación de cámara"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-09-09 12:15+0200\n"
-"PO-Revision-Date: 2018-08-24 18:44+0000\n"
+"PO-Revision-Date: 2018-09-11 10:27+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -573,7 +573,6 @@ msgid "Which programming languages are supported in Godot?"
 msgstr "Підтримку яких мов програмування передбачено у Godot?"
 
 #: ../../docs/about/faq.rst:64
-#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
@@ -605,7 +604,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See question about "
@@ -613,9 +611,11 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Також ведуться роботи, наприклад, над неофіційними прив'язками Godot до "
-"`Python <https://github.com/touilleMan/godot-python>`_ і `Nim <https://"
-"github.com/pragmagic/godot-nim>`_."
+"Що стосується нових мов, можлива підтримка за допомогою стороннього коду з "
+"використанням можливостей GDNative / NativeScript / PluginScript. (Див. "
+"питання щодо додатків нижче.) Також ведуться роботи, наприклад, над "
+"неофіційними прив'язками Godot до `Python <https://github.com/touilleMan/"
+"godot-python>`_ і `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -695,13 +695,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:126
-#, fuzzy
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
-"У більшості віртуальних машин для скриптів немає хорошої підтримки потоку, а "
-"Godot використовує потоки (Lua, Python, Squirrel, JS, AS та ін.)."
+"У більшості віртуальних машин для скриптів немає хорошої підтримки потоків "
+"виконання, а Godot використовує потоки (Lua, Python, Squirrel, JS, AS та "
+"ін.)."
 
 #: ../../docs/about/faq.rst:128
 #, fuzzy
@@ -13241,7 +13241,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "end"
-msgstr ""
+msgstr "end"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "End"

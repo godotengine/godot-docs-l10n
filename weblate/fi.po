@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-09-09 12:15+0200\n"
-"PO-Revision-Date: 2018-09-02 10:15+0000\n"
+"PO-Revision-Date: 2018-10-04 17:26+0000\n"
 "Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
@@ -1945,7 +1945,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:4
 msgid "Instancing"
-msgstr ""
+msgstr "Ilmentymien luonti"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:9
 msgid ""
@@ -1955,12 +1955,19 @@ msgid ""
 "be separated into any number of scenes. This provides you with a powerful "
 "tool that helps you organize the different components of your game."
 msgstr ""
+"Yksittäisen skenen luonti ja solmujen lisääminen siihen voi toimia pienelle "
+"projektille, mutta kun projektin koko ja monimutkaisuus kasvaa, solmujen "
+"määrästä muuttuu pian hallitsemattomaksi. Tämän ratkaisemiseksi Godot sallii "
+"projektin jakamisen useisiin skeneihin. Se tarjoaa sinulle tehokkaan "
+"työkalun, joka auttaa järjestelemään pelisi eri komponentit."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
+"Kappaleessa :ref:`doc_scenes_and_nodes` opit, että skene on kokoelma solmuja "
+"puurakenteeseen järjestettynä, niin että yksi solmu toimii puun juurena."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
 msgid ""
@@ -1968,16 +1975,21 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
+"Voit luoda niin monta skenejä kuin haluat ja tallentaa ne levylle. Tähän "
+"tapaan tallennettuja skenejä kutsutaan \"Pakatuiksi skeneiksi\" ja niillä on "
+"``.tscn`` tiedostopääte."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
 "Once a scene has been saved, it can be instanced into another scene as if it "
 "were any other node."
 msgstr ""
+"Kun skene on tallennettu, siitä voidaan luoda ilmentymä toiseen skeneen "
+"ikään kuin se olisi mikä tahansa muu solmu."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:31
 msgid "In the above picture, Scene B was added to Scene A as an instance."
-msgstr ""
+msgstr "Yllä olevassa kuvassa skene B lisättiin ilmentymänä skeneen A."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
@@ -1988,12 +2000,16 @@ msgid ""
 "To learn how instancing works, let's start by downloading a sample project: :"
 "download:`instancing.zip <files/instancing.zip>`."
 msgstr ""
+"Oppiaksesi kuinka ilmentymien luonti toimii, aloitetaan lataamalla "
+"esimerkkiprojekti: :download:`instancing.zip <files/instancing.zip>`."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:39
 msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
+"Pura tämä projekti minne haluat. Avaa sitten Godot ja lisää projekti "
+"projektinhallintaan 'Tuo' (kuvassa 'Import') painikkeella:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -2001,6 +2017,9 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
+"Selaa purkamaasi kansioon ja avaa sieltä löytyvä \"project.godot\" tiedosto. "
+"Tämän tehtyäsi uusi projekti ilmestyy projektiluetteloon. Muokkaa projektia "
+"painamalla 'Muokkaa' painiketta."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -2009,10 +2028,14 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
+"Projekti sisältää kaksi skeneä: \"Ball.tscn\" ja \"Main.tscn\". Palloskene "
+"käyttää :ref:`RigidBody2D <class_RigidBody2D>` solmua tarjoamaan "
+"fysiikkamallinnusta ja pääskenessä on joukko esteitä, joihin pallo törmäilee "
+"(käyttäen :ref:`StaticBody2D <class_StaticBody2D>` solmua)."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr ""
+msgstr "Avaa ``Main`` skene ja valitse juurisolmu:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -2020,6 +2043,9 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
+"Haluamme lisätä ilmentymän ``Ball`` skenestä ``Main`` skenen alisolmuksi. "
+"Napsauta \"ketjun\" muotoista painiketta (sen vihjetekstissä lukee \"Luo "
+"skenetiedostosta ilmentymän solmuksi.\") ja valitse ``Ball.tscn`` tiedosto."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -2027,10 +2053,13 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
+"Pallo sijoitetaan ruutualueen vasempaan yläkulmaan (joka on ``(0, 0)`` "
+"kuvaruudun koordinaatteina). Napsauta ja vedä pallo jonnekin lähelle skenen "
+"ylä-keskiosaa:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr ""
+msgstr "Napsauta \"Pelaa\" ja katso, kun pallo putoaa ruudun alalaitaan:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"
@@ -2042,14 +2071,17 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
+"Voit lisätä skeneen niin monta ilmentymää kuin haluat, joko käyttämällä "
+"\"Ilmentymä\"-painiketta uudelleen tai napsauttamalla palloilmentymää ja "
+"painamalla \"Kahdenna\" (Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
-msgstr ""
+msgstr "Aja skene uudestaan ja katso pallojen putoavan."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:91
 msgid "Editing instances"
-msgstr ""
+msgstr "Ilmentymien muokkaus"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:93
 msgid ""
@@ -2058,6 +2090,10 @@ msgid ""
 "much more bouncy. Because the instanced balls are based on the saved scene, "
 "changes to that scene will affect all instances."
 msgstr ""
+"Avaa ``Ball`` skene ja vaihda ``Bounce`` ominaisuus Tarkastelijassa arvoon "
+"`1`. Paina \"Pelaa\" ja huomaa kuinka pallojen ilmentymät ovat nyt paljon "
+"kimpoavampia. Koska pallojen ilmentymät perustuvat tallennettuun skeneen, "
+"muutokset tuohon skeneen vaikuttavat kaikkiin ilmentymiin."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
@@ -2065,6 +2101,9 @@ msgid ""
 "``0.5`` and then in the ``Main`` scene, select one of the instanced balls. "
 "Set its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
+"Voit säätää myös yksittäisiä ilmentymiä. Aseta kimpoavuus takaisin arvoon "
+"``0.5`` ja valitse sen jälkeen yksi pallon ilmentymä ``Main`` skenessä. "
+"Aseta sen ``Bounce`` arvoon ``1`` ja paina \"Pelaa\"."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
@@ -2075,10 +2114,16 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
+"Huomaa, että muokatun ominaisuuden viereen ilmestyy harmaa \"palauta\" "
+"painike. Kun tämä painike on esillä, se tarkoittaa että olet muokannut "
+"ominaisuutta skeneilmentymässä ylikirjoittaaksesi sen tallennetussa skenessä "
+"olevan arvon. Vaikka ominaisuutta muutetaan alkuperäisessä skenessä, "
+"muokattu arvo jää voimaan. Palautuspainikkeen painaminen palauttaa "
+"ominaisuuden tallennetun skenen arvoon."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:112
 msgid "Conclusion"
-msgstr ""
+msgstr "Lopputulos"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:114
 msgid ""
@@ -2086,38 +2131,47 @@ msgid ""
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_scripting_continued`."
 msgstr ""
+"Ilmentymien luonti voi olla hyödyllistä, kun haluat luoda useita kopioita "
+"samasta objektista. On myös mahdollista luoda ilmentymiä koodissa "
+"käyttämällä GDScriptiä, katso :ref:`doc_scripting_continued`."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
-msgstr ""
+msgstr "Ilmentymien luonti (jatkuu)"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:7
 msgid "Recap"
-msgstr ""
+msgstr "Kertaus"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
+"Ilmentymillä on monia käteviä käyttötarkoituksia. Pikaisella vilkaisulla, "
+"ilmentymien avulla saat:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
-msgstr ""
+msgstr "Mahdollisuus jakaa skenet osiin ja tehdä niistä helpommin hallittavia."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid ""
 "A more flexible alternative to prefabs (and much more powerful given that "
 "instances can be nested)."
 msgstr ""
+"Joustavampi vaihtoehto prefabeille (ja paljon tehokkaampi, koska niitä voi "
+"laittaa sisäkkäin)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
+"Tapa järjestää ja sisältää monimutkaisia pelimalleja tai jopa "
+"käyttöliittymiä (Godotissa myös käyttöliittymäelementit ovat solmuja)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
 msgid "Design language"
-msgstr ""
+msgstr "Suunnittelukieli"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
 msgid ""
@@ -2126,6 +2180,10 @@ msgid ""
 "Godot from all the other engines out there. Godot was designed from the "
 "ground up around this concept."
 msgstr ""
+"Mutta suurin skeneilmentymien luonnista tuleva vahvuus on, että se toimii "
+"erinomaisena suunnittelukielenä. Tämä on pitkälti se, mikä erottaa Godotin "
+"kaikista muista olemassa olevista pelimoottoreista. Godot on suunniteltu "
+"alusta saakka tämän ajatuksen ympärille."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
 msgid ""
@@ -2135,10 +2193,15 @@ msgid ""
 "the visible elements in your game, the ones that can be named not just by a "
 "programmer, but by anyone."
 msgstr ""
+"Tehdessä pelejä Godotilla, suositeltu lähestymistapa on hylätä useimmat "
+"yleiset suunnittelumallit, kuten MVC ja Entity-Relationship, ja ajatella sen "
+"sijaan skenejäsi luonnollisempaan tapaan. Aloita kuvittelemalla pelisi "
+"näkyvät elementit, ne jotka kuka tahansa pystyy nimeämään, ei vain "
+"ohjelmoija."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
 msgid "For example, here's how a simple shooter game could be imagined:"
-msgstr ""
+msgstr "Esimerkiksi, yksinkertaisen ampumispelin voisi kuvitella näin:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
 msgid ""
@@ -2146,6 +2209,9 @@ msgid ""
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
+"Voit keksiä tämänkaltaisen kaavion melkein minkä tahansa kaltaiselle "
+"pelille. Kirjoita ylös ne pelin osat, jotka voit visualisoida, ja lisää "
+"sitten nuolet kuvastamaan komponenttien omistussuhteita toisistaan."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
 msgid ""
@@ -2154,6 +2220,9 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"Kun sinulla on tällainen kaavio, suositeltu menetelmä pelin tekemiseksi on "
+"luoda skene kutakin kaaviossa lueteltua elementtiä kohden. Käytät ilmentymiä "
+"(joko koodista tai suoraan editorista käsin) omistajuussuhteita varten."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
 msgid ""
@@ -2165,12 +2234,23 @@ msgid ""
 "design-based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"Iso osa pelien (tai ohjelmistojen ylipäänsä) ohjelmoimiseen kuluvasta ajasta "
+"menee arkkitehtuurin suunnitteluun ja pelikomponenttien sovittamiseen tuohon "
+"arkkitehtuuriin. Skeneihin pohjautuva suunnittelu korvaa tuon "
+"lähestymistavan ja tekee kehittämisestä paljon nopeampaa ja "
+"suoraviivaisempaa, antaen sinun keskittyä pelilogiikkaan itseensä. Koska "
+"useimmat pelikomponentit käyvät suoraan skeneen, skenejen ilmentymiin "
+"pohjautuvan suunnittelun käyttö tarkoittaa, että hyvin vähän muuta "
+"arkkitehtuurista koodia tarvitaan."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"Katsotaanpa jälleen yhtä, hieman monimutkaisempaa esimerkkiä avoimen "
+"maailman tyyppisestä pelistä, jossa on paljon assetteja ja muita sisäkkäisiä "
+"elementtejä:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
 msgid ""
@@ -2179,6 +2259,10 @@ msgid ""
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"Vilkaise huone-elementtiä. Sanokaamme, että aloitamme siitä. Voisimme tehdä "
+"muutaman eri huoneskenen erilaisilla huonekalujen (myöskin skenejä) "
+"järjestyksillä. Myöhemmin, voisimme tehdä taloskenen, yhdistäen huoneet sen "
+"sisätiloiksi."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
 msgid ""
@@ -2186,6 +2270,9 @@ msgid ""
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"Sen jälkeen voisimme tehdä linnoitusskenen, joka on luotu useista talojen "
+"ilmentymistä. Sitten voisimme alkaa työstää maailmankarttaa, lisäten "
+"linnoituksen siihen."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
 msgid ""
@@ -2193,6 +2280,9 @@ msgid ""
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"Myöhemmin, voisimme luoda skenejä, jotka edustavat vartijoita (ja muita ei-"
+"pelaajahahmoja) ja lisätä ne myös linnoitukseen. Sen seurauksena ne "
+"lisättäisiin epäsuorasti koko pelimaailmaan."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
 msgid ""
@@ -2203,10 +2293,14 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Godotin avulla on helppo iteroida peliäsi tähän tapaan, kaikki mitä sinun "
+"tarvitsee tehdä on luoda uusia skenejä ja niistä ilmentymiä. Lisäksi "
+"editorin käyttöliittymä on suunniteltu helppokäyttöiseksi yhtä lailla "
+"ohjelmoijille kuin ei-ohjelmoijillekin."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
 msgid "Information overload!"
-msgstr ""
+msgstr "Informaatioähky!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
 msgid ""
@@ -2214,6 +2308,9 @@ msgid ""
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"Sinua on pommitettu suurella määrällä korkean tason tietoa yhdellä kertaa. "
+"Oli miten oli, tämän oppaan tärkein osuus oli lisätä tietoisuutta siitä "
+"kuinka skenejä ja niiden ilmentymiä käytetään oikeissa projekteissa."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
 msgid ""
@@ -2221,6 +2318,9 @@ msgid ""
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
+"Kaikki tässä keskusteltu tulee olemaan sinulle kuin toinen luonto, kun alat "
+"tehdä pelejä ja ottaa nämä konseptit käyttöön. Tällä erää, älä murehdi siitä "
+"liikaa, vaan jatka seuraavaan oppaaseen!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/step_by_step/resources.rst:165
@@ -3154,7 +3254,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "Skriptien rekisteröinti luokiksi"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
 msgid ""
@@ -3162,6 +3262,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"Godotissa on \"skriptiluokka\"-ominaisuus yksittäisten skriptien "
+"rekisteröintiin editorissa. Lähtökohtaisesti pääset käsiksi nimeämättömiin "
+"skripteihin vain lataamalla tiedoston suoraan."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
 msgid ""
@@ -3170,31 +3273,37 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"Voit nimetä skriptin ja rekisteröidä sen tyypiksi editorissa ``class_name`` "
+"avainsanalla, jota seuraa luokan nimi. Voit lisätä pilkun ja valinnaisen "
+"polun ikonina käytettävään kuvaan. Löydät tämän jälkeen uuden tyyppisi "
+"Solmu- tai Resurssinluontidialogista."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
 msgid "In Godot 3.1:"
-msgstr ""
+msgstr "Godot 3.1 versiossa:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"Vain GDScript ja NativeScript, eli C++ ja muut GDNative-käyttöiset kielet, "
+"voivat rekisteröidä skriptejä."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "Vain GDScript luo globaaleja muuttujia kullekin nimetylle skriptille."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
-msgstr ""
+msgstr "Ensimmäinen pelisi"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:10
 msgid "Overview"
-msgstr ""
+msgstr "Yleiskatsaus"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:9
 msgid ""
@@ -3202,6 +3311,9 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
+"Tämä opas opastaa sinut ensimmäisen Godot-projektisi tekemisen läpi. Opit "
+"kuinka Godotin editori toimii, kuinka jäsentää projekti ja kuinka rakentaa "
+"2D-peli."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -3209,23 +3321,31 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
+"Tämä projekti on johdanto Godotin pelimoottoriin. Siinä oletetaan, että "
+"sinulla on jo jotain ohjelmointikokemusta. Jos ohjelmointi on sinulle "
+"kokonaan uutta, sinun tulisi aloittaa tästä: :ref:`doc_scripting`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
+"Pelin nimi on \"Dodge the Creeps!\". Pelihahmosi täytyy liikkua ja vältellä "
+"vihollisia niin kauan kuin mahdollista. Tässä on ennakkokuva lopputuloksesta:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
+"**Miksi 2D?** 3D-pelit ovat paljon monimutkaisempia kuin 2D-pelit. Sinun "
+"tulisi pysytellä 2D:ssä, kunnes sinulla on hyvä ymmärtämys "
+"pelikehitysprosessista."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
 msgid "Project setup"
-msgstr ""
+msgstr "Projektin järjestely"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -3233,6 +3353,9 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
+"Käynnistä Godot ja luo uusi projekti. Lataa sen jälkeen :download:"
+"`dodge_assets.zip <files/dodge_assets.zip>` - kuvat ja äänet, joita tulet "
+"käyttämään pelin tekemisessä. Pura nämä tiedostot projektisi kansioon."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -3240,6 +3363,9 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
+"Oletamme tämän oppaan ajan, että olet sinut editorin kanssa. Jos et ole "
+"lukenut :ref:`doc_scenes_and_nodes`, tee niin nyt, jotta saat selostuksen "
+"kuinka projekti pystytetään ja kuinka editoria käytetään."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -3247,6 +3373,9 @@ msgid ""
 "window. Click on Project -> Project Settings -> Display -> Window and set "
 "\"Width\" to 480 and \"Height\" to 720."
 msgstr ""
+"Tämä peli käyttää potrettitilaa, joten meidän täytyy säätää peli-ikkunan "
+"kokoa. Napsauta Projekti -> Projektin asetukset -> Display -> Window, ja "
+"aseta \"Width\" arvoon 480 ja \"Height\" arvoon 720."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
 msgid "Organizing the project"
@@ -3261,10 +3390,16 @@ msgid ""
 "and scripts in the root folder, referred to as ``res://``.  You can see your "
 "project folders in the FileSystem Dock in the upper left corner:"
 msgstr ""
+"Teemme tähän projektiin 3 itsenäistä skeneä: ``Player``, ``Mob``, ja "
+"``HUD``, jotka yhdistämme pelin ``Main`` skeneen. Suuremmassa projektissa "
+"voisi olla hyödyllistä tehdä kansioita eri skeneille ja niiden skripteille, "
+"mutta tätä suhteellisen pientä peliä varten voit tallentaa skenesi ja "
+"skriptisi juurikansioon, johon viitataan ``res://``. Näet projektisi kansiot "
+"Tiedostojärjestelmä-telakassa vasemmassa yläkulmassa:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
-msgstr ""
+msgstr "Player-skene"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -3272,6 +3407,9 @@ msgid ""
 "benefits of creating a separate Player scene is that we can test it "
 "separately, even before we've created other parts of the game."
 msgstr ""
+"Ensimmäinen skene, jonka teemme, määrittelee ``Player`` objektin. Yksi etu "
+"erillisen pelaajaskenen luomisesta on, että voimme testata sitä erillisesti, "
+"jo ennen kuin olemme luoneet pelin muut osat."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
 msgid "Node structure"
@@ -3282,6 +3420,8 @@ msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
+"Aloittaaksesi, napsauta \"Luo uusi solmu\" painiketta ja lisää :ref:`Area2D "
+"<class_Area2D>` solmu skeneen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -3290,6 +3430,10 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
+"``Area2D`` solmulla voimme tunnistaa objektit, jotka ovat pelaajan kanssa "
+"päällekäin tai törmäävät siihen. Muuta sen nimeksi ``Player`` napsauttamalla "
+"solmun nimeä. Tämä on skenen juurisolmu. Voimme lisätä lisää solmuja "
+"pelaajalle lisätäksemme toiminnallisuutta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
 msgid ""
@@ -3298,12 +3442,19 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
+"Ennen kuin lisäämme ``Player`` solmulle yhtään alisolmuja, haluamme pitää "
+"huolen ettemme vahingossa siirrä niitä tai muuta niiden kokoa napsauttamalla "
+"niitä. Valitse solmu ja napsauta lukon vasemmalla puolella olevaa kuvaketta; "
+"sen työkaluvihjeessä lukee \"Varmistaa, ettei objektin alisolmuja voi valita."
+"\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
+"Tallenna skene. Napsauta Skene -> Tallenna skene, tai paina ``Ctrl+S`` "
+"Windowsissa tai Linuxissa, tai ``Command+S`` Macissa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid ""
@@ -3311,6 +3462,9 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
+"Noudatamme tässä projektissa Godotin nimeämiskäytäntöjä. Luokat (solmut) "
+"käyttävät ``PascalCase`` tyyliä, muuttujat ja funktiot käyttävät "
+"``snake_case`` tyyliä, ja vakiot käyttävät ``ALL_CAPS`` tyyliä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
 msgid "Sprite animation"
@@ -3327,6 +3481,14 @@ msgid ""
 "click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
 "``<SpriteFrames>`` to open the \"SpriteFrames\" panel:"
 msgstr ""
+"Napsauta ``Player`` solmua ja lisää :ref:`AnimatedSprite "
+"<class_AnimatedSprite>` solmu sen alisolmuksi. ``AnimatedSprite`` hoitaa "
+"pelaajamme ulkoasun ja animaatiot. Huomaa, että solmun vieressä on "
+"varoitusmerkki. ``AnimatedSprite`` tarvitsee :ref:`SpriteFrames "
+"<class_SpriteFrames>` resurssin, joka on lista animaatioista, joita se voi "
+"toistaa. Luodaksesi sellaisen, etsi ``Frames`` ominaisuus Tarkastelijasta ja "
+"napsauta \"<null>\" -> \"New SpriteFrames\". Seuraavaksi, napsauta samasta "
+"paikasta ``<SpriteFrames>`` avataksesi \"SpriteFrames\" paneelin:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:102
 msgid ""
@@ -3336,6 +3498,11 @@ msgid ""
 "``playerGrey_up[1/2]`` and ``playerGrey_walk[1/2]``, into the \"Animation "
 "Frames\" side of the panel:"
 msgstr ""
+"Vasemmalla on lista animaatioista. Napsauta \"default\" nimistä ja anna "
+"sille uudeksi nimeksi \"right\". Napsauta sen jälkeen \"Lisää\" painiketta "
+"luodaksesi toisen animaation, jonka nimeksi tulee \"up\". Vedä kullekin "
+"animaatiolle kaksi kuvaa, nimeltään ``playerGrey_up[1/2]`` ja "
+"``playerGrey_walk[1/2]``, paneelin \"Animaatioruudut\" puolelle:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:109
 msgid ""
@@ -3344,6 +3511,10 @@ msgid ""
 "property to ``(0.5, 0.5)``. You can find it in the Inspector under the "
 "``Node2D`` heading."
 msgstr ""
+"Pelaajakuvat on hieman liian suuria peli-ikkunalle, joten meidän täytyy "
+"pienentää niitä. Napsauta ``AnimatedSprite`` solmua ja aseta ``Scale`` "
+"ominaisuus arvoon ``(0.5, 0.5)``. Löydät sen Tarkastelijasta ``Node2D`` "
+"otsikon alta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:116
 msgid ""
@@ -3353,20 +3524,27 @@ msgid ""
 "best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
 "CapsuleShape2D\".  Resize the shape to cover the sprite:"
 msgstr ""
+"Lisää lopuksi :ref:`CollisionShape2D <class_CollisionShape2D>` ``Player`` "
+"solmun alle. Tämä määrittelee pelaajan \"osumalaatikon\" tai törmäysalueen "
+"rajat. Tälle hahmolle sopii parhaiten ``CapsuleShape2D`` solmu, joten "
+"napsauta Tarkastelijassa \"Shape\" ominaisuuden vierestä \"<null>\"\" -> "
+"\"New CapsuleShape2D\". Venytä muoto kattamaan koko sprite:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
 msgid ""
 "Don't scale the shape's outline! Only use the size handles (circled in red) "
 "to adjust the shape!"
 msgstr ""
+"Älä skaalaa muodon ääriviivoja! Käytä vain koon muokkaukseen tarkoitettuja "
+"kahvoja (ympyröity punaisella) säätämään muotoa!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:127
 msgid "When you're finished, your ``Player`` scene should look like this:"
-msgstr ""
+msgstr "Kun olet valmis, ``Player`` skenesi pitäisi näyttää tältä:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:132
 msgid "Moving the player"
-msgstr ""
+msgstr "Pelaajan liikuttaminen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid ""
@@ -3374,28 +3552,38 @@ msgid ""
 "node, so we'll add a script. Click the ``Player`` node and click the \"Add "
 "Script\" button:"
 msgstr ""
+"Nyt meidän täytyy lisätä hiukan toiminnallisuutta, jota emme voi saada "
+"valmiilta solmulta, joten lisäämme skriptin. Napsauta ``Player`` solmua ja "
+"\"Lisää skripti\" painiketta:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:140
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
 msgstr ""
+"Skriptin asetukset -ikkunassa voit antaa oletusasetuksien olla sellaisenaan. "
+"Napsauta vain \"Luo\":"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:143
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
 msgstr ""
+"Jos olet luomassa C#-skriptiä tai muun kielistä skriptiä, valitse kieli "
+"`kieli` pudotusvalikosta ennen kuin huitaiset luontinappia."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:148
 msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
 msgstr ""
+"Jos törmäät nyt ensi kertaa GDScriptiin, ole hyvä ja lue :ref:"
+"`doc_scripting` ennen kuin jatkat."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:151
 msgid "Start by declaring the member variables this object will need:"
 msgstr ""
+"Aloita luomalla ne jäsenmuuttujat, jotka tämä objekti tulee tarvitsemaan:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:172
 msgid ""
@@ -3404,18 +3592,27 @@ msgid ""
 "to be able to adjust just like a node's built-in properties. Click on the "
 "``Player`` node and set the speed property to ``400``."
 msgstr ""
+"Käyttäen ``export`` avainsanaa ensimmäiselle muuttujalle ``speed`` antaa "
+"meidän asettaa sen arvon Tarkastelijassa. Se voi olla kätevää arvoille, "
+"joita haluat säätää kuin ne olisivat solmun sisäänrakennettuja "
+"ominaisuuksia. Napsauta ``Player`` solmua ja aseta nopeusominaisuudeksi "
+"``400``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
 msgid ""
 "If you're using C#, you need to restart godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
+"Jos käytät C#-kieltä, joudut tilapäisesti käynnistämään Godotin editorin "
+"uudelleen nähdäksesi viedyt muuttujat, kunnes editori on korjattu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:182
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
 msgstr ""
+"``_ready()`` funktiota kutsutaan, kun solmu lisätään skenepuuhun, mikä on "
+"hyvä hetki hakea peli-ikkunan koko:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:198
 msgid ""
@@ -3423,18 +3620,22 @@ msgid ""
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game which we expect will change often. Here we'll make it:"
 msgstr ""
+"Nyt voimme käyttää ``_process()`` funktiota määrittelemään mitä pelaaja "
+"tekee. ``_process()`` funktiota kutsutaan jokaisella ruudunpäivityksellä, "
+"joten käytämme sitä päivittämään pelimme niitä osasia joiden odotamme "
+"muuttuvan usein. Teemme siinä seuraavaa:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:202
 msgid "Check for input."
-msgstr ""
+msgstr "Tarkista syöte."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:203
 msgid "Move in the given direction."
-msgstr ""
+msgstr "Liiku annettuun suuntaan."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:204
 msgid "Play the appropriate animation."
-msgstr ""
+msgstr "Toista asiaankuuluva animaatio."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:206
 msgid ""
@@ -3445,12 +3646,21 @@ msgid ""
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
 msgstr ""
+"Ensin meidän täytyy tarkistaa syöte - painaako pelaaja jotain näppäintä? "
+"Tässä pelissä meillä on neljän suunnan syötteet tarkistettavana. "
+"Syötetoiminnot on määritelty Projektin asetuksissa kohdassa \"Input Map\". "
+"Voit määritellä omia tapahtumia ja asettaa niille eri näppäimiä, "
+"hiiritapahtumia ja muita syötteitä. Tässä esimerkissä käytämme "
+"oletustapahtumia, jotka on asetettu näppäimistön nuolinäppäimille."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it is pressed or ``false`` if it isn't."
 msgstr ""
+"Voit tunnistaa onko näppäintä painettu käyttämällä ``Input."
+"is_action_pressed()`` funktiota, joka palauttaa ``true``, jos sitä on "
+"painettu ja ``false`` jos ei ole."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:266
 msgid ""
@@ -3460,6 +3670,12 @@ msgid ""
 "we're adding a horizontal and a vertical movement, the player would move "
 "*faster* than if it just moved horizontally."
 msgstr ""
+"Tarkistamme kunkin syötteen ja kasvatamme/vähennämme ``velocity`` "
+"ominaisuutta saadaksemme lopullisen suunnan. Jos esimerkiksi painat "
+"``oikealle`` ja ``alas`` samanaikasesti, lopputuloksena oleva ``velocity`` "
+"vektori on ``(1, 1)``. Tässä tapauksessa, koska kasvatamme sekä vaaka- että "
+"pystyliikettä, pelihahmo liikkuisi *nopeammin* kuin jos se liikkuisi vain "
+"vaakasuuntaisesti."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:272
 msgid ""
@@ -3467,6 +3683,9 @@ msgid ""
 "*length* to ``1``, and multiply by the desired speed. This means no more "
 "fast diagonal movement."
 msgstr ""
+"Voimme estää sen, jos *normalisoimme* nopeusvektorin, mikä tarkoittaa että "
+"asetamme sen *pituudeksi* ``1`` ja kerromme sen halutulla nopeudella. Tämän "
+"seurauksena vinottainen liike ei ole enää nopeampaa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:276
 msgid ""
@@ -3474,12 +3693,17 @@ msgid ""
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
 "know but won't be necessary for the rest of this tutorial."
 msgstr ""
+"Jos et ole koskaan käyttänyt vektorimatematiikkaa, tai tarvitset kertausta, "
+"voit katsoa selityksen Godotin vektorien käytöstä: :ref:`doc_vector_math`. "
+"Se on hyvä osata, mutta ei ole välttämätön oppaan loppuosan kannalta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:280
 msgid ""
 "We also check whether the player is moving so we can start or stop the "
 "AnimatedSprite animation."
 msgstr ""
+"Tarkistamme myös liikkuuko pelaaja, jotta voimme aloittaa tai lopettaa "
+"AnimatedSprite animaation."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:283
 msgid ""
@@ -3487,6 +3711,9 @@ msgid ""
 "``null`` if the node is not found. Since AnimatedSprite is a child of the "
 "current node, we can use ``$AnimatedSprite``."
 msgstr ""
+"``$`` palauttaa solmun, joka löytyy suhteellisesta polusta tähän solmuun "
+"nähden, tai palauttaa ``null`` jos solmua ei löydy. Koska AnimatedSprite on "
+"nykyisen solmun alisolmu, voimme käyttää ``$AnimatedSprite`` syntaksia."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:286
 msgid ""
@@ -3494,6 +3721,9 @@ msgid ""
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
 "play()``."
 msgstr ""
+"``$`` on lyhenne ``get_node()`` syntaksille. Toisin sanoen, yllä olevassa "
+"koodissa ``$AnimatedSprite.play()`` on sama kuin ``get_node(\"AnimatedSprite"
+"\").play()``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:289
 msgid ""
@@ -3501,10 +3731,13 @@ msgid ""
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
 "following to the bottom of the ``_process`` function:"
 msgstr ""
+"Nyt kun meillä on liikkumisen suunta, voimme päivittää ``Player`` solmun "
+"sijainnin ja käyttää ``clamp()`` funktiota estämään sitä poistumasta "
+"ruudulta lisäämällä seuraavan ``_process`` funktion loppuun:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid "*Clamping* a value means restricting it to a given range."
-msgstr ""
+msgstr "*Clamp* arvolle tarkoittaa sen rajoittamista tietylle välille."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
 msgid ""
@@ -3513,6 +3746,10 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
+"Napsuta \"Pelaa skeneä\" (``F6``) ja varmista, että voit liikuttaa "
+"pelihahmoa ympäri ruutua kaikkiin suuntiin. Konsolitulosteen, joka aukeaa "
+"skeneä pelattaessa, voi sulkea napsauttamalla ``Tuloste`` (jonka pitäisi "
+"olla sinisellä korostettu) alapaneelin vasemmassa alakulmassa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:315
 msgid ""
@@ -3521,6 +3758,10 @@ msgid ""
 "are case-sensitive and ``$NodeName`` or ``get_node(\"NodeName\")`` must "
 "match the name you see in the scene tree."
 msgstr ""
+"Jos saat \"Debuggeri\" paneeliin virheen, jossa mainitaan \"null instance\", "
+"se johtuu todennäköisesti siitä, että kirjoitit nimen väärin. Solmujen nimet "
+"ovat kirjainkoosta riippuvaisia ja ``$SolmunNimi`` tai "
+"``get_node(\"SolmunNimi\")`` täytyy vastata skenepuussa näkyvää nimeä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:320
 msgid "Choosing animations"
@@ -3535,6 +3776,12 @@ msgid ""
 "``flip_v`` for downward movement. Let's place this code at the end of our "
 "``_process()`` function:"
 msgstr ""
+"Nyt kun pelaaja voi liikkua, meidän täytyy vaihtaa AnimatedSprite solmun "
+"toistama animaatio suuntaan perustuen. Meillä on \"oikealle\" animaatio, "
+"joka pitäisi vasenta animaatiota varten kääntää vaakasuunnassa toisinpäin "
+"käyttäen ``flip_h`` ominaisuutta, sekä \"ylös\" animaatio, joka pitäisi "
+"alaspäin animaatiota varten kääntää pystysuunnassa toisinpäin ``flip_v`` "
+"ominaisuudella. Lisätään tämä koodinpätkä ``_process()`` funktiomme loppuun:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:353
 msgid ""
@@ -3542,6 +3789,9 @@ msgid ""
 "programmers. Consider this code versus the shortened boolean assignment "
 "above:"
 msgstr ""
+"Boolean-sijoitukset ylläolevassa koodissa ovat yleisiä pikakirjoitustapoja "
+"ohjelmoijille. Tarkastele tätä koodia yllä oleviin lyhennettyihin boolean-"
+"sijoituksiin verrattuna:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
 msgid ""
@@ -3549,10 +3799,13 @@ msgid ""
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()`` so the player will be hidden when the game starts:"
 msgstr ""
+"Pelaa skene uudelleen ja tarkista, että animaatiot toimivat oikein kuhunkin "
+"suuntaan. Kun olet varma, että liikkuminen toimii oikein, lisää tämä rivi "
+"``_ready()`` funktioon, jotta pelihahmo on piilotettu pelin alkaessa:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:387
 msgid "Preparing for collisions"
-msgstr ""
+msgstr "Törmäyksiin valmistautuminen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:389
 msgid ""
@@ -3560,10 +3813,13 @@ msgid ""
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
 "functionality to make it work."
 msgstr ""
+"Haluamme, että ``Player`` havaitsee milloin vihollinen on törmännyt siihen, "
+"mutta emme ole tehneet vielä vihollisia! Se on OK, koska aiomme laittaa sen "
+"toimimaan Godotin *signal* toiminnallisuudella."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:393
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
-msgstr ""
+msgstr "Lisää seuraava skriptin alkuun, ``extends Area2d`` jälkeen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:405
 msgid ""
@@ -3572,6 +3828,11 @@ msgid ""
 "detect the collision. Select the ``Player`` node and click the \"Node\" tab "
 "next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
+"Tämä määrittelee mukautetun signaalin nimeltä \"hit\", jonka laitamme "
+"pelaajamme lähettämään, kun se törmää viholliseen. Käytämme ``Area2D`` "
+"solmua tunnistamaan törmäyksen. Valitse ``Player`` solmu ja napsauta \"Solmu"
+"\" välilehteä Tarkastelijan vieressä nähdäksesi listan signaaleista, joita "
+"pelaaja voi lähettää:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:412
 msgid ""
@@ -3583,6 +3844,13 @@ msgid ""
 "automatically create a function called ``_on_Player_body_entered`` in your "
 "player's script."
 msgstr ""
+"Huomaa, että oma \"hit\" signaalimme on myös siellä! Koska viholliset "
+"tulevat olemaan ``RigidBody2D`` solmuja, haluamme ``body_entered( Object "
+"body )`` signaalin; se lähetetään kappaleen osuessa pelaajaan. Napsauta "
+"\"Yhdistä...\" ja sen jälkeen \"Yhdistä\" uudelleen \"Yhdistetään signaalia"
+"\" ikkunassa. Meidän ei tarvitse muuttaa mitään näistä asetuksista – Godot "
+"luo automaattisesti funktion nimeltä ``_on_Player_body_entered`` pelaajasi "
+"skriptiin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:420
 msgid ""
@@ -3590,10 +3858,13 @@ msgid ""
 "you can also give the name of an existing function that you want to link the "
 "signal to."
 msgstr ""
+"Signaalia yhdistettäessä, sen sijaan että antaisit Godotin luoda sinulle "
+"funktion, voit myös nimetä olemassa olevan funktion, johon haluaisit "
+"signaalin kytkettävän."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:424
 msgid "Add this code to the function:"
-msgstr ""
+msgstr "Lisää tämä koodi funktioon:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:447
 msgid ""
@@ -3601,16 +3872,21 @@ msgid ""
 "turning it off, we make sure we don't trigger the ``hit`` signal more than "
 "once."
 msgstr ""
+"Alueen törmäysmuodon kytkeminen pois päältä tarkoittaa ettei se tunnista "
+"törmäyksiä. Sammuttamalla sen pidämme huolen, ettei ``hit`` signaalia saada "
+"useammin kuin kerran."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:452
 msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
 msgstr ""
+"Viimeinen palanen pelaajallemme on lisätä funktio, jota voimme kutsua "
+"alustamaan pelaajan pelin alkaessa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:475
 msgid "Enemy scene"
-msgstr ""
+msgstr "Vihollisen skene"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -3619,12 +3895,18 @@ msgid ""
 "the screen and move in a random direction in a straight line, then despawn "
 "when they go offscreen."
 msgstr ""
+"Nyt on aika luoda viholliset, joita pelaajamme täytyy väistellä. Niiden "
+"käyttäytyminen ei tule olemaan kovin monimutkaista: vihulaiset ilmestyvät "
+"satunnaisesti ruudun reunoille ja liikkuvat satunnaisiin suuntiin suoraa "
+"viivaa pitkin, kadoten sitten poistuttuaan ruudulta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
 msgstr ""
+"Rakennamme tämän ``Mob`` skeneen, josta voimme sitten luoda *ilmentymiä* "
+"luodaksemme minkä tahansa määrän itsenäisiä vihulaisia peliin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:486
 msgid "Node setup"
@@ -3632,35 +3914,39 @@ msgstr "Solmun järjestely"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:488
 msgid "Click Scene -> New Scene and we'll create the Mob."
-msgstr ""
+msgstr "Napsauta Skene -> Uusi skene, ja luomme Mob skenen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:490
 msgid "The Mob scene will use the following nodes:"
-msgstr ""
+msgstr "Mob skene käyttää seuraavia solmuja:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:492
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
-msgstr ""
+msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (nimeltä ``Mob``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:494
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
-msgstr ""
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:495
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
-msgstr ""
+msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:496
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr ""
+":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (nimeltään "
+"``Visibility``)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:498
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
 msgstr ""
+"Älä unohda asettaa alisolmuja niin, ettei niitä voi valita, kuten teit "
+"Player skenen kanssa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:501
 msgid ""
@@ -3669,6 +3955,11 @@ msgid ""
 "``PhysicsBody2D`` section, click the ``Mask`` property and uncheck the first "
 "box. This will ensure the mobs do not collide with each other."
 msgstr ""
+":ref:`RigidBody2D <class_RigidBody2D>` ominaisuuksissa, aseta ``Gravity "
+"Scale`` arvoon ``0``, jotta vihulainen ei putoa alaspäin. Lisäksi, "
+"``PhysicsBody2D`` osiossa, napsauta ``Mask`` ominaisuutta ja poista merkintä "
+"ensimmäisestä laatikosta. Tämä varmistaa, etteivät viholliset törmäile "
+"toisiinsa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:508
 msgid ""
@@ -3678,17 +3969,25 @@ msgid ""
 "\"Speed (FPS)\" setting as shown below. We'll select one of these animations "
 "randomly so that the mobs will have some variety."
 msgstr ""
+"Kokoa :ref:`AnimatedSprite <class_AnimatedSprite>` kuten teit pelaajahahmon "
+"kanssa. Tällä kertaa meillä on kolme animaatiota: ``fly``, ``swim`` ja "
+"``walk``. Aseta ``Playing`` ominaisuus Tarkastelijassa \"On\" asentoon ja "
+"säädä \"Speed (FPS)\" asetusta kuten esitetty alla. Valitsemme satunnaisesti "
+"yhden näistä animaatioista, jotta vihulaisissa on vähän vaihtelua."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:515
 msgid ""
 "``fly`` should be set to 3 FPS, with ``swim`` and ``walk`` set to 4 FPS."
 msgstr ""
+"``fly`` pitäisi asettaa arvoon 3 FPS, ja ``swim`` sekä ``walk`` arvoon 4 FPS."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:517
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
+"Kuten pelaajan kuvat, nämä vihollisten kuvatkin täytyy pienentää. Aseta "
+"``AnimatedSprite`` solmun ``Scale`` ominaisuus arvoon ``(0.75, 0.75)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:520
 msgid ""
@@ -3696,6 +3995,9 @@ msgid ""
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
 "property to ``90`` under ``Node2D``."
 msgstr ""
+"Kuten ``Player`` skenssä, lisää ``CapsuleShape2D`` törmäyksiä varten. Muodon "
+"kohdistamiseksi kuvaan sinun täytyy asettaa ``Rotation Degrees`` "
+"ominaisuudeksi ``90`` ``Node2D`` solmussa."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:525
 msgid "Enemy script"
@@ -3703,7 +4005,7 @@ msgstr "Vihollisen skripti"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:527
 msgid "Add a script to the ``Mob`` and add the following member variables:"
-msgstr ""
+msgstr "Lisää ``Mob`` solmulle skripti ja lisää seuraavat jäsenmuuttujat:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:551
 msgid ""
@@ -3713,12 +4015,19 @@ msgid ""
 "an array containing the names of the three animations, which we'll use to "
 "select a random one."
 msgstr ""
+"Valitsemme vihulaisen liikkumisen nopeudeksi satunnaisen arvon ``min_speed`` "
+"ja ``max_speed`` väliltä (olisi tylsää, jos ne kaikki liikkuisivat samalla "
+"nopeudella). Aseta arvot ``150`` ja ``250`` Tarkastelijassa. Meillä on myös "
+"kolmen animaation nimet sisältävä taulukko, jota käytämme valitsemaan yhden "
+"niistä satunnaisesti."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:557
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
 msgstr ""
+"Katsokaamme nyt skriptin jäljellä olevaa osaa. ``_ready()`` funktiossa "
+"valitsemme yhden kolmesta animaatiotyypistä:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:581
 msgid ""
@@ -3727,6 +4036,11 @@ msgid ""
 "``randomize()`` in our ``Main`` scene, so we won't need it here. ``randi() % "
 "n`` is the standard way to get a random integer between ``0`` and ``n-1``."
 msgstr ""
+"Sinun täytyy käyttää ``randomize()`` funktiota, jos haluat \"satunnaislukujen"
+"\" jaksosi olevan erilainen joka kerran, kun suoritat skeneä. Aiomme käyttää "
+"``randomize()`` funktiota ``Main`` skenessämme, joten emme tarvitse sitä "
+"tässä. ``randi() % n`` on tavallinen tapa tuottaa satunnainen kokonaisluku "
+"``0`` ja ``n-1`` väliltä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
@@ -3734,10 +4048,13 @@ msgid ""
 "screen. Connect the ``screen_exited()`` signal of the ``Visibility`` node "
 "and add this code:"
 msgstr ""
+"Viimeinen pätkä on sitä varten, että vihulaiset tuhoavat itsensä "
+"poistuessaan ruudulta. Yhdistä ``Visibility`` solmun ``screen_exited()`` "
+"signaali ja lisää tämä koodi:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:604
 msgid "This completes the `Mob` scene."
-msgstr ""
+msgstr "Tämä päättää `Mob` skenen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:607
 msgid "Main scene"
@@ -3749,67 +4066,82 @@ msgid ""
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
 "your saved ``Player.tscn``."
 msgstr ""
+"Nyt on aika saattaa kaikki yhteen. Luo uusi skene ja lisää siihen :ref:`Node "
+"<class_Node>` solmu nimeltä ``Main``. Napsauta \"Ilmentymä\" painiketta ja "
+"valitse tallentamasi ``Player.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:615
 msgid "See :ref:`doc_instancing` to learn more about instancing."
-msgstr ""
+msgstr "Katso :ref:`doc_instancing` oppiaksesi enemmän ilmentymistä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:617
 msgid ""
 "Now add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
+"Lisää nyt seuraavat solmut ``Main`` solmun alisolmuiksi ja nimeä ne "
+"kuvauksen mukaisesti (arvot ovat sekunteina):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:620
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
 msgstr ""
+":ref:`Timer <class_Timer>` (nimeltään ``MobTimer``) - ohjaamaan kuinka usein "
+"vihulaiset ilmestyvät"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:621
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
 msgstr ""
+":ref:`Timer <class_Timer>` (nimeltään ``ScoreTimer``) - kasvattamaan "
+"pistelaskuria joka sekunti"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:622
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
 msgstr ""
+":ref:`Timer <class_Timer>` (nimeltään ``StartTimer``) - antamaan viive ennen "
+"aloittamista"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:623
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
 msgstr ""
+":ref:`Position2D <class_Position2D>` (nimeltään ``StartPosition``) - "
+"merkkaamaan pelaajan aloituspaikkaa"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:625
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
-msgstr ""
+msgstr "Aseta kunkin ``Timer`` solmun ``Wait Time`` ominaisuus seuraavasti:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:628
 msgid "``MobTimer``: ``0.5``"
-msgstr ""
+msgstr "``MobTimer``: ``0.5``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:629
 msgid "``ScoreTimer``: ``1``"
-msgstr ""
+msgstr "``ScoreTimer``: ``1``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:630
 msgid "``StartTimer``: ``2``"
-msgstr ""
+msgstr "``StartTimer``: ``2``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:632
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
 msgstr ""
+"Lisäksi, aseta ``StartTimer`` solmun ``One Shot`` ominaisuus arvoon \"On\", "
+"ja aseta ``StartPosition`` solmun ``Position`` ominaisuudeksi ``(240, 450)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:636
 msgid "Spawning mobs"
-msgstr ""
+msgstr "Vihollisten lisääminen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:638
 msgid ""
@@ -3818,6 +4150,10 @@ msgid ""
 "<class_Path2D>` node named ``MobPath`` as a child of ``Main``. When you "
 "select ``Path2D``, you will see some new buttons at the top of the editor:"
 msgstr ""
+"Main solmu tuottaa uusia vihollisia ja haluamme niiden ilmestyvän "
+"satunnaiseen paikkaan ruudun reunalla. Lisää ``Main`` solmun alisolmuksi :"
+"ref:`Path2D <class_Path2D>` solmu nimeltä ``MobPath``. Kun valitset "
+"``Path2D`` solmun, näet joitakin uusia painikkeita editorin ylälaidassa:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:645
 msgid ""
@@ -3827,18 +4163,28 @@ msgid ""
 "\"Snapping options\" button to the left of the \"Lock\" button, appearing as "
 "a series of three vertical dots."
 msgstr ""
+"Valitse keskimmäinen (\"Lisää piste\") ja piirrä polku napsauttelemalla "
+"lisätäksesi pisteet kuvattuihin kulmiin. Jotta pisteet kiinnittyisivät "
+"ruudukkoon, varmista että \"Tartu ruudukkoon\" on valittuna. Tämä valinta "
+"löytyy \"Tarttumisen asetukset\" painikkeen alta \"Lukko\"-painikkeen "
+"vasemmalta puolelta, näyttäen kolmelta pystysuorassa rivissä olevalta "
+"pisteeltä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:653
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
 msgstr ""
+"Piirrä polku *myötäpäiväisessä* järjestyksessä, tai vihulaisesi lisääntyvät "
+"suunnaten *ulospäin* eikä *sisäänpäin*!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:656
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
 msgstr ""
+"Kuvan pisteen ``4`` lisäyksen jälkeen, napsauta \"Sulje käyrä\" painiketta "
+"ja käyrästäsi tulee täysi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:659
 msgid ""
@@ -3847,6 +4193,10 @@ msgid ""
 "will automatically rotate and follow the path as it moves, so we can use it "
 "to select a random position and direction along the path."
 msgstr ""
+"Nyt kun polku on määritetty, lisää :ref:`PathFollow2D <class_PathFollow2D>` "
+"solmu ``MobPath`` solmun alle ja nimeä se ``MobSpawnLocation``. Tämä solmu "
+"kiertyy ja seuraa polkua automaattisesti edetessään, joten voimme käyttää "
+"sitä valitsemaan satunnaisen sijainnin ja suunnan polulta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:665
 msgid "Main script"
@@ -3857,12 +4207,17 @@ msgid ""
 "Add a script to ``Main``. At the top of the script we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
+"Lisää skripti ``Main`` solmulle. Skriptin alussa käytämme ``export "
+"(PackedScene)`` koodia, jotta voimme valita mistä Mob skenestä haluamme "
+"luoda ilmentymän."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property under the Script Variables of the ``Main`` node."
 msgstr ""
+"Vedä ``Mob.tscn`` \"Tiedostojärjestelmä\" paneelista ja pudota se ``Mob`` "
+"ominaisuuteen ``Main`` solmun Skriptimuuttujien alle."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:709
 msgid ""
@@ -3872,6 +4227,12 @@ msgid ""
 "bottom of the \"Connecting Signal\" window. Add the following code, as well "
 "as a ``new_game`` function to set everything up for a new game:"
 msgstr ""
+"Seuraavaksi, napsauta Player solmua ja yhdistä ``hit`` signaali. Haluamme "
+"luoda uuden funktion nimeltä ``game_over``, joka käsittelee sen mitä täytyy "
+"tapahtua kun peli loppuu. Kirjoita \"game_over\" \"Yhdistetään signaalia\" "
+"ikkunan alalaidassa olevaan \"Method In Node\"-laatikkoon. Lisää seuraava "
+"koodi, samoin kuin ``new_game`` funktio asettamaan kaikki valmiiksi uutta "
+"peliä varten:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:751
 msgid ""
@@ -3879,6 +4240,9 @@ msgid ""
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
 "start the other two timers. ``ScoreTimer`` will increment the score by 1."
 msgstr ""
+"Yhdistä nyt kunkin Timer solmun (``StartTimer``, ``ScoreTimer`` ja "
+"``MobTimer``) ``timeout()`` signaali. ``StartTimer`` käynnistää kaksi muuta "
+"ajastinta. ``ScoreTimer`` kasvattaa pistelaskuria yhdellä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
 msgid ""
@@ -3887,22 +4251,31 @@ msgid ""
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
+"``_on_MobTimer_timeout()`` funktiossa luomme vihollisilmentymän, valitsemme "
+"satunnaisen aloituspaikan ``Path2D`` varrelta, ja panemme vihollisen "
+"liikkeelle. ``PathFollow2D`` solmu kiertyy automaattisesti seuratessaan "
+"polkua, joten hyödynnämme sitä valitsemaan sekä vihollisen suunnan että "
+"sijainnin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:788
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr ""
+"Huomaa, että uusi ilmentymä täytyy lisätä skeneen käyttämällä "
+"``add_child()`` funktiota."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:791
 msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
 msgstr ""
+"Napsauta nyt ``MobTimer`` solmua skeneikkunassa, suuntaa tarkasteluikkunaan, "
+"vaihda solmunäkymään ja napsauta sitten ``timeout()`` ja yhdistä signaali."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:794
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1092
 msgid "Add the following code:"
-msgstr ""
+msgstr "Lisää seuraava koodi:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:841
 msgid ""
@@ -3910,10 +4283,13 @@ msgid ""
 "you're more comfortable working with degrees, you'll need to use the "
 "``deg2rad()`` and ``rad2deg()`` functions to convert between the two."
 msgstr ""
+"GDScript käyttää kulmia tarvitsevissa funktioissa *radiaaneja*, ei asteita. "
+"Jos työskentelet mieluummin asteilla, sinun täytyy käyttää ``deg2rad()`` ja "
+"``rad2deg()`` funktioita tehdäksesi muunnos niiden välillä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:847
 msgid "HUD"
-msgstr ""
+msgstr "Heijastusnäyttö (HUD)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:849
 msgid ""
@@ -3923,6 +4299,12 @@ msgid ""
 "stands for \"heads-up display\", an informational display that appears as an "
 "overlay on top of the game view."
 msgstr ""
+"Pelimme tarvitsema viimeinen osa on käyttöliittymä: sillä esitetään "
+"sellaisia juttuja kuten pistemäärä, \"game over\"-viesti ja \"aloita alusta"
+"\"-painike. Luo uusi skene ja lisää :ref:`CanvasLayer <class_CanvasLayer>` "
+"solmu nimeltä ``HUD``. \"HUD\" tulee sanoista \"heads-up display\" (*suom*. "
+"heijastusnäyttö). Se on informaatiota sisältävä näyttö, joka piirretään "
+"osittaiseksi peitteeksi pelinäkymän päälle."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:855
 msgid ""
@@ -3930,22 +4312,26 @@ msgid ""
 "on a layer above the rest of the game, so that the information it displays "
 "isn't covered up by any game elements like the player or mobs."
 msgstr ""
+":ref:`CanvasLayer <class_CanvasLayer>` solmu antaa meidän piirtää "
+"käyttöliittymäelementtimme muun pelin yläpuolella olevalle kerrokselle, niin "
+"että sen esittämä tieto ei jää pelielementtien, kuten pelaaja ja vihollinen, "
+"alle."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:859
 msgid "The HUD displays the following information:"
-msgstr ""
+msgstr "Heijastusnäyttö näyttää seuraavat tiedot:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:861
 msgid "Score, changed by ``ScoreTimer``."
-msgstr ""
+msgstr "Pistemäärä, joka muuttuu ``ScoreTimer`` solmun toimesta."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:862
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
-msgstr ""
+msgstr "Viesti, kuten \"Game Over\" tai \"Get Ready!\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:863
 msgid "A \"Start\" button to begin the game."
-msgstr ""
+msgstr "\"Start\"-painike pelin aloittamiseksi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid ""
@@ -3953,26 +4339,30 @@ msgid ""
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
 "`Label <class_Label>` and :ref:`Button <class_Button>`."
 msgstr ""
+"Pohjasolmu käyttöliittymäelementeille on :ref:`Control <class_Control>`. "
+"Luodaksemme käyttöliittymämme käytämme kahdentyyppisiä :ref:`Control "
+"<class_Control>` solmuja: :ref:`Label <class_Label>` ja :ref:`Button "
+"<class_Button>`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:869
 msgid "Create the following as children of the ``HUD`` node:"
-msgstr ""
+msgstr "Luo seuraavat ``HUD`` solmun alle:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:871
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
-msgstr ""
+msgstr ":ref:`Label <class_Label>` nimeltä ``ScoreLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:872
 msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
-msgstr ""
+msgstr ":ref:`Label <class_Label>` nimeltä ``MessageLabel``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:873
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
-msgstr ""
+msgstr ":ref:`Button <class_Button>` nimeltä ``StartButton``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:874
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
-msgstr ""
+msgstr ":ref:`Timer <class_Timer>` nimeltä ``MessageTimer``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:876
 msgid ""
@@ -3983,108 +4373,118 @@ msgid ""
 "control node's edges to its anchor. See :ref:"
 "`doc_design_interfaces_with_the_control_nodes` for more details."
 msgstr ""
+"**Ankkurit ja marginaalit:** ``Control`` solmuilla täytyy olla sijainti ja "
+"koko, mutta niillä on myös ankkurit ja marginaalit. Ankkurit määrittävät "
+"alkupisteen – viitepisteen solmun reunoille. Marginaalit päivittyvät "
+"automaattisesti, kun liikutat Control-solmua tai muutat sen kokoa. Ne "
+"edustavat etäisyyttä Control-solmun reunoista sen ankkuriin. Katso :ref:"
+"`doc_design_interfaces_with_the_control_nodes` tarkempia tietoja varten."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:883
 msgid ""
 "Arrange the nodes as shown below. Click the \"Anchor\" button to set a "
 "Control node's anchor:"
 msgstr ""
+"Järjestä solmut alla esitetyllä tavalla. Napsauta \"Anchor\" painiketta "
+"asettaaksesi Control solmun ankkurin:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:888
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
 msgstr ""
+"Voit kiskoa solmuja asettaaksesi ne manuaalisesti, tai tarkempaa sijoittelua "
+"varten, voit käyttää seuraavia asetuksia:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid "ScoreLabel"
-msgstr ""
+msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
 msgid "``Layout``: \"Center Top\""
-msgstr ""
+msgstr "``Layout``: \"Center Top\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:895
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:908
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:921
 msgid "``Margin``:"
-msgstr ""
+msgstr "``Margin``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:897
 msgid "Left: ``-25``"
-msgstr ""
+msgstr "Left: ``-25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid "Top: ``0``"
-msgstr ""
+msgstr "Top: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:899
 msgid "Right: ``25``"
-msgstr ""
+msgstr "Right: ``25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 msgid "Bottom: ``100``"
-msgstr ""
+msgstr "Bottom: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:902
 msgid "Text: ``0``"
-msgstr ""
+msgstr "Text: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:905
 msgid "MessageLabel"
-msgstr ""
+msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid "``Layout``: \"Center\""
-msgstr ""
+msgstr "``Layout``: \"Center\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:910
 msgid "Left: ``-200``"
-msgstr ""
+msgstr "Left: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:911
 msgid "Top: ``-150``"
-msgstr ""
+msgstr "Top: ``-150``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:912
 msgid "Right: ``200``"
-msgstr ""
+msgstr "Right: ``200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:913
 msgid "Bottom: ``0``"
-msgstr ""
+msgstr "Bottom: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 msgid "Text: ``Dodge the Creeps!``"
-msgstr ""
+msgstr "Text: ``Dodge the Creeps!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:918
 msgid "StartButton"
-msgstr ""
+msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid "``Layout``: \"Center Bottom\""
-msgstr ""
+msgstr "``Layout``: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:923
 msgid "Left: ``-100``"
-msgstr ""
+msgstr "Left: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:924
 msgid "Top: ``-200``"
-msgstr ""
+msgstr "Top: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid "Right: ``100``"
-msgstr ""
+msgstr "Right: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "Bottom: ``-100``"
-msgstr ""
+msgstr "Bottom: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 msgid "Text: ``Start``"
-msgstr ""
+msgstr "Text: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 msgid ""
@@ -4093,10 +4493,14 @@ msgid ""
 "ttf\". To use this font, do the following for each of the three ``Control`` "
 "nodes:"
 msgstr ""
+"``Control`` solmujen oletuskirjasin on pieni, eikä skaalaudu hyvin. Pelin "
+"asseteissa on mukana kirjasintiedosto nimeltään \"Xolonium-Regular.ttf\". "
+"Käyttääksesi tätä kirjasintyyppiä, tee kullekin kolmelle ``Control`` "
+"solmulle seuraava:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:935
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
-msgstr ""
+msgstr "\"Custom Fonts\" alla, valitse \"New DynamicFont\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:939
 msgid ""
@@ -4104,16 +4508,22 @@ msgid ""
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
 "font's ``Size``. A setting of ``64`` works well."
 msgstr ""
+"Napsauta lisäämääsi \"DynamicFont\" kirjasinta, valitse \"Font Data\" alta "
+"\"Load\" ja valitse \"Xolonium-Regular.ttf\" tiedosto. Sinun täytyy myös "
+"asettaa kirjasimen koko ``Size`` ominaisuudesta. Asetus ``64`` toimii tässä "
+"hyvin."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "Now add this script to ``HUD``:"
-msgstr ""
+msgstr "Lisää nyt tämä skripti ``HUD`` solmulle:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:962
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr ""
+"``start_game`` signaali kertoo ``Main`` solmulle, että painiketta on "
+"painettu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:985
 msgid ""
@@ -4121,26 +4531,34 @@ msgid ""
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
 "and set the ``One Shot`` property to \"On\"."
 msgstr ""
+"Tätä funktiota kutsutaan, kun haluamme näyttää väliaikaisen viestin, kuten "
+"\"Get Ready\". Aseta ``MessageTimer`` solmussa ``Wait Time`` arvoksi ``2`` "
+"ja aseta ``One Shot`` ominaisuudeksi \"On\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1014
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and show the \"Start\" button."
 msgstr ""
+"Tätä funktiota kutsutaan kun pelaaja häviää. Se näyttää \"Game Over\" kahden "
+"sekunnin ajan, palaa sitten alkuruutuun ja näyttää \"Start\" painikkeen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1032
 msgid "This function is called in ``Main`` whenever the score changes."
 msgstr ""
+"Tätä funktiota kutsutaan ``Main`` solmussa aina kun pistemäärä muuttuu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``."
 msgstr ""
+"Yhdistä ``MessageTimer`` solmun ``timeout()`` signaali ja ``StartButton`` "
+"solmun ``pressed()`` signaali."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1064
 msgid "Connecting HUD to Main"
-msgstr ""
+msgstr "HUD- ja Main-skenejen liittäminen"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1066
 msgid ""
@@ -4149,44 +4567,59 @@ msgid ""
 "scene, and place it at the bottom of the tree. The full tree should look "
 "like this, so make sure you didn't miss anything:"
 msgstr ""
+"Nyt kun olemme saaneet ``HUD`` skenen valmiiksi, tallenna se ja mene "
+"takaisin ``Main`` skeneen. Luo ``HUD`` skenestä ilmentymä ``Main`` skeneen, "
+"samoin kuin teit ``Player`` skenen kanssa, ja sijoita se alimmaksi puussa. "
+"Koko puun pitäisi näyttää tältä, joten varmista ettei mitään jäänyt "
+"huomaamatta:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1073
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
 msgstr ""
+"Nyt meidän täytyy liittää ``HUD`` toiminnallisuus ``Main`` skriptiimme. Tämä "
+"edellyttää muutamia lisäyksiä ``Main`` skeneen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function."
 msgstr ""
+"Solmu-välilehdellä, yhdistä HUD-solmun ``start_game`` signaali "
+"``new_game()`` funktioon."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1079
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
 msgstr ""
+"``new_game()`` funktiossa, päivitä pistenäyttö ja näytä \"Get Ready\" viesti:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1094
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
+"``game_over()`` funktiossa meidän täytyy kutsua vastaavaa ``HUD`` funktiota:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1106
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
+"Lopuksi, lisää tämä ``_on_ScoreTimer_timeout()`` funktioon pitääksesi näytön "
+"synkassa muuttuvan pistemäärän kanssa:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1119
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
 msgstr ""
+"Nyt olet valmis pelaamaan! Napsauta \"Pelaa\" painiketta. Sinua pyydetään "
+"valitsemaan pääskene, joten valitse ``Main.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1123
 msgid "Finishing up"
-msgstr ""
+msgstr "Viimeistely"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1125
 msgid ""
@@ -4194,11 +4627,14 @@ msgid ""
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
 "Feel free to expand the gameplay with your own ideas."
 msgstr ""
+"Olemme saaneet valmiiksi kaiken toiminnallisuuden pelissämme. Alla on "
+"joitakin jäljellä olevia toimenpiteitä pelikokemuksen mehevöittämiseksi. "
+"Voit vapaasti laajentaa pelattavuutta omilla ideoillasi."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1130
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
-msgstr ""
+msgstr "Tausta"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1132
 msgid ""
@@ -4209,16 +4645,24 @@ msgid ""
 "color you like and drag the size of the ``ColorRect`` so that it covers the "
 "screen."
 msgstr ""
+"Oletuksena oleva harmaa tausta ei ole kovinkaan puoleensavetävä, joten "
+"vaihdetaan sen väriä. Yksi tapa tehdä se, on käyttää :ref:`ColorRect "
+"<class_ColorRect>` solmua. Tee siitä ensimmäinen solmu ``Main`` solmun alle, "
+"jotta se piirretään muiden solmujen alle. ``ColorRect`` solmulla on vain "
+"yksi ominaisuus: ``Color``. Valitse haluamasi väri ja suurenna ``ColorRect`` "
+"solmua niin, että se kattaa koko ruudun."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1139
 msgid ""
 "You can also add a background image, if you have one, by using a ``Sprite`` "
 "node."
 msgstr ""
+"Voit lisätä myös taustakuvan, jos käytössäsi on sellainen, käyttämällä "
+"``Sprite`` solmua."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
 msgid "Sound effects"
-msgstr ""
+msgstr "Ääniefektit"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
 msgid ""
@@ -4227,6 +4671,10 @@ msgid ""
 "\"House In a Forest Loop.ogg\" for background music, and \"gameover.wav\" "
 "for when the player loses."
 msgstr ""
+"Äänet ja musiikki voivat olla kaikkein tehokkain tapa lisätä pelikokemuksen "
+"miellekkyyttä. Pelisi asset-kansiossa on kaksi äänitiedostoa: \"House In a "
+"Forest Loop.ogg\" taustamusiikille ja \"gameover.wav\" sitä varten, kun "
+"pelaaja häviää."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1150
 msgid ""
@@ -4235,16 +4683,22 @@ msgid ""
 "each one, click on the ``Stream`` property, select \"Load\", and choose the "
 "corresponding audio file."
 msgstr ""
+"Lisää kaksi :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` solmua "
+"``Main`` solmun alle. Anna ensimmäiselle nimeksi ``Music`` ja toiselle "
+"``DeathSound``. Napsauta kummallekin ``Stream`` ominaisuutta, valitse \"Lataa"
+"\" ja valitse nimeä vastaava äänitiedosto."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1155
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
 msgstr ""
+"Soittaaksesi musiikkia, lisää ``$Music.play()`` ``new_game()`` funktioon ja "
+"``$Music.stop()`` ``game_over()`` funktioon."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1158
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
-msgstr ""
+msgstr "Lopuksi, lisää ``$DeathSound.play()`` ``game_over()`` funktioon."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
 #: ../../docs/tutorials/shading/shading_language.rst:1094
@@ -4257,6 +4711,9 @@ msgid ""
 "movement. Choose your ``Player`` scene and add a :ref:`Particles2D "
 "<class_Particles2D>` node named ``Trail``."
 msgstr ""
+"Visuaalisen houkuttelevuuden viimeistä silausta varten, lisätään pelaajan "
+"liikkeeseen vanaefekti. Valitse ``Player`` skenesi ja lisää :ref:"
+"`Particles2D <class_Particles2D>` solmu nimeltä ``Trail``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
 msgid ""
@@ -4264,12 +4721,18 @@ msgid ""
 "particles. Feel free to experiment and create different effects. For the "
 "effect in this example, use the following settings:"
 msgstr ""
+"Partikkeleita säätäessä valittavissa on suuri joukko ominaisuuksia. Kokeile "
+"vapaasti ja luo erilaisia efektejä. Tässä esimerkissä olevaa efektiä varten, "
+"käytä seuraavia asetuksia:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
 "You also need to create a ``Material`` by clicking on ``<null>`` and then "
 "\"New ParticlesMaterial\". The settings for that are below:"
 msgstr ""
+"Sinun tarvitsee luoda myös ``Material`` resurssi napsauttamalla ``<null>`` "
+"valintaa ja sitten \"New ParticlesMaterial\". Asetukset sitä varten ovat "
+"alla:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
 msgid ""
@@ -4277,12 +4740,17 @@ msgid ""
 "taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to "
 "0.0 (fully transparent)."
 msgstr ""
+"Gradientin tekemiseksi \"Color Ramp\" asetukselle, haluamme, että gradientti "
+"johtaa spriten alfan (läpinäkyvyyden) arvosta 0.5 (puoliksi läpinäkyvä) "
+"arvoon 0.0 (kokonaan läpinäkyvä)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
 msgid ""
 "Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient"
 "\". You'll see a window like this:"
 msgstr ""
+"Napsauta \"New GradientTexture\", jonka jälkeen \"Gradient\"-kohdan alla, "
+"napsauta \"New Gradient\". Näet tällaisen ikkunan:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1187
 msgid ""
@@ -4291,12 +4759,18 @@ msgid ""
 "first color, set the ``A`` (alpha) value to around halfway. For the second, "
 "set it all the way to ``0``."
 msgstr ""
+"Vasen ja oikea laatikko edustavat alku- ja loppuväriä. Napsauta kummankin "
+"kohdalla ja napsauta sitten suurta ruutua oikealla valitaksesi värin. Aseta "
+"ensimmäisen värin ``A`` (alfa) arvo suurinpiirtein puoliväliin. Toiselle, "
+"aseta se ``0`` arvoon asti."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
 msgid ""
 "See :ref:`Particles2D <class_Particles2D>` for more details on using "
 "particle effects."
 msgstr ""
+"Katso :ref:`Particles2D <class_Particles2D>` saadaksesi lisätietoja "
+"partikkeliefektien käytöstä."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1196
 msgid "Project files"
@@ -4307,11 +4781,13 @@ msgid ""
 "You can find a completed version of this project here: https://github.com/"
 "kidscancode/Godot3_dodge/releases"
 msgstr ""
+"Löydät valmiin version tästä projektista täältä: https://github.com/"
+"kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "Exporting"
-msgstr ""
+msgstr "Vienti"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:9
 msgid ""
@@ -4320,6 +4796,10 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
+"Nyt kun sinulla on toimiva peli, haluat todennäköisesti jakaa onnistumisesi "
+"muiden kanssa. Ei ole kuitenkaan käytännöllistä pyytää ystäviäsi lataamaan "
+"Godotia, vain jotta he voisivat avata projektisi. Voit sen sijaan *viedä* "
+"projektisi, muuntamalla sen \"paketiksi\", jonka kuka tahansa voi ajaa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -4328,16 +4808,21 @@ msgid ""
 "a variety of platforms. First, however, we need to make some changes to the "
 "way the game works."
 msgstr ""
+"Tapa, jolla viet pelisi, riippuu kohdealustasta. Tässä oppaassa opit, kuinka "
+"viedä \"Dodge the Creeps\" peli useille eri alustoille. Ensin meidän täytyy "
+"kuitenkin tehdä joitakin muutoksia pelin toimintatapaan."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"Jos et ole vielä tehnyt \"Dodge the Creeps\" peliä itse, ole hyvä ja lue :"
+"ref:`doc_your_first_game` ennen kuin jatkat tämän ohjeen parissa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
-msgstr ""
+msgstr "Projektin valmistelu"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -4347,6 +4832,11 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"\"Dodge the Creeps\" pelissä käytämme näppäimistöohjausta pelaajan hahmon "
+"liikkuttamiseksi. Tämä on sopivaa, jos peliäsi pelataan PC-alustalla, mutta "
+"puhelinta tai tablettia varten sinun täytyy tukea kosketusnäytön syötteitä. "
+"Koska hiiren napsautusta voidaan käsitellä samalla tavalla kuin kosketusta, "
+"muunnamme pelin napsauta-ja-liiku tyyliselle syötteelle."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
 msgid ""
@@ -4356,12 +4846,20 @@ msgid ""
 "computer without a touchscreen. Also, make sure to select \"portrait\" under "
 "*Orientation*."
 msgstr ""
+"Ensimmäinen toimenpide on avata \"Projektin asetukset\" ja etsiä *Handheld* "
+"osio. Laita *Emulate Touchscreen* päälle. Tämä antaa sinun käyttää hiiren "
+"näpäytyksiä kuin ne olisivat kosketuksia, joten voit testata peliäsi "
+"tietokoneella ilman kosketusnäyttöä. Varmista myös että \"portrait\" on "
+"valittuna *Orientation* kohdassa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
 "In the *Stretch* section, set *Mode* to \"2d\" and *Aspect* to \"keep\". "
 "This ensures that the game scales consistently on different sized screens."
 msgstr ""
+"*Stretch* osiossa, aseta *Mode* arvoksi \"2d\" ja *Aspect* arvoksi \"keep\". "
+"Tämä varmistaa, että peli skaalautuu johdonmukaisesti erikokoisille "
+"ruuduille."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 msgid ""
@@ -4369,18 +4867,22 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"Seuraavaksi meidän täytyy muokata ``Player.gd`` skriptiä muuttaaksemme "
+"syötemenetelmää. Poistamme näppäimistösyötteet ja laitamme pelaajan "
+"liikkumaan kohti \"kohdetta\", joka asetetaan kosketuksella (tai hiiren "
+"näpäytyksellä)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
-msgstr ""
+msgstr "Tässä koko skripti pelaajalle, muutokset kommenteihin merkittynä:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:91
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
 msgid "Export templates"
-msgstr ""
+msgstr "Vientimallit"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:124
 msgid ""
@@ -4389,18 +4891,26 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"Jotta voit viedä projekteja, sinun täytyy ladata *vientimallit* osoitteesta "
+"http://godotengine.org/download. Nämä mallit ovat kullekin alustalle "
+"esikäännettyjä optimoituja versioita pelimoottorista ilman editoria Voit "
+"myös ladata ne Godotissa napsauttamalla *Editori -> Hallinnoi vientimalleja*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"Voit napsauttaa \"Lataa\" avautuneessa ikkunassa saadaksesi vientimallin "
+"version, joka vastaa sinun Godotin versiota."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"Jos päivität Godotin, sinun täytyy ladata vientimallit, jotka vastaavat "
+"uutta versiota tai viedyt projektisi eivät välttämättä toimi kunnolla."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
 msgid "Export presets"
@@ -4411,12 +4921,16 @@ msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
 msgstr ""
+"Seuraavaksi voit säätää viennin asetukset napsauttamalla *Projekti -> Vie*:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:146
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"Luo uudet esiasetukset viennille napsauttamalla \"Lisää...\" ja valitsemalla "
+"alusta. Voit tehdä niin monia esiasetuksia kuin haluat erilaisilla "
+"asetuksilla."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
 msgid ""
@@ -4424,32 +4938,41 @@ msgid ""
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"Ikkunan alalaidassa on kaksi painiketta. \"Vie PCK/ZIP\" luo vain pakatun "
+"version projektisi datasta. Se ei sisällä suoritettavaa tiedostoa, joten "
+"projektia ei voi ajaa sellaisenaan."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"Toinen painike, \"Vie projekti\", luo valmiin suoritettavan version "
+"pelistäsi, kuten esimerkiksi `.apk` Androidille tai `.exe` Windowsille."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
 msgid ""
 "In the \"Resources\" and \"Features\" tabs you can customize how the game is "
 "exported for each platform. We can leave those settings alone for now."
 msgstr ""
+"\"Resurssit\" ja \"Ominaisuudet\" välilehdillä voit räätälöidä pelisi "
+"viennin kullekin alustalle. Voimme jättää nuo asetukset rauhaan toistaiseksi."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
 msgid "Exporting by platform"
-msgstr ""
+msgstr "Vienti alustottain"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:162
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
 msgstr ""
+"Tässä luvussa käymme prosessin läpi kullekin alustalle, sisältäen kaikki "
+"tarvitsemasi ylimääräiset ohjelmistot tai edellytykset."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
 msgid "PC (Linux/macOS/Windows)"
-msgstr ""
+msgstr "PC (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:168
 msgid ""
@@ -4458,10 +4981,15 @@ msgid ""
 "you want to make. Then click \"Export Project\" and choose a name and "
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
+"PC-alustoille vienti toimii samalla tavalla kaikille kolmelle tuetulle "
+"käyttöjärjestelmälle. Avaa vienti-ikkuna ja napsauta \"Lisää...\" luodaksesi "
+"ne esiasetukset, jotka haluat tehdä. Napsauta sitten \"Vie projekti\" ja "
+"valitse nimi ja kohdekansio. Valitse sijainti projektikansiosi "
+"*ulkopuolelta*."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:173
 msgid "Click \"Save\" and the engine will build the export files."
-msgstr ""
+msgstr "Napsauta \"Tallenna\" ja pelimoottori rakentaa vientitiedostot."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
 msgid ""
@@ -4470,6 +4998,10 @@ msgid ""
 "either case, the compressed file contains a MacOS `.app` that you can double-"
 "click and run."
 msgstr ""
+"Jos teet viennin MacOS:lle MacOS-tietokoneella, saat '.dmg' tiedoston, kun "
+"taas Linuxin tai Windowsin käyttö tuottaa '.zip' tiedoston. Kummassakin "
+"tapauksessa pakattu tiedosto sisältää MacOS:n '.app' tiedoston, jonka voit "
+"ajaa kaksoisnapsauttamalla."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:180
 msgid ""
@@ -4477,6 +5009,9 @@ msgid ""
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
+"Jos haluat, että viedyn suoritettavan tiedoston kuvake poikkeaa "
+"oletuskuvakkeesta Windowsilla, sinun täytyy vaihtaa se käsin. Katso: :ref:"
+"`doc_changing_application_icon_for_windows`."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:187
 msgid ""
@@ -4485,21 +5020,28 @@ msgid ""
 "art than science, and you may need to do some experimenting and searching "
 "for help in order to get everything working."
 msgstr ""
+"Mobiililaitteissa on laaja kirjo erilaisia ominaisuuksia. Useimmiten Godotin "
+"oletusasetukset kelpaavat, mutta mobiilikehitys on joskus enemmän taidetta "
+"kuin tiedettä ja voit joutua tekemään hieman kokeiluja ja etsiä apuja "
+"saadaksesi kaiken toimimaan."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:193
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
 msgstr ""
+"Ennen kuin voit viedä projektisi Androidille, sinun täytyy ladata seuraavat "
+"ohjelmistot:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:196
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr ""
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:197
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
+"Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:199
 msgid ""
@@ -4507,12 +5049,17 @@ msgid ""
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
+"Kun käynnistät Android Studion ensimmäisen kerran, napsauta *Configure -> "
+"SDK Manager* ja asenna \"Android SDK Platform Tools\". Tämä asentaa `adb` "
+"komentorivityökalun, jota Godot käyttää keskustellakseen laitteesi kanssa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
 msgid ""
 "Next, create a debug keystore with by running the following command on your "
 "system's command line:"
 msgstr ""
+"Seuraavaksi, luo \"debug keystore\" suorittamalla seuraava komento "
+"järjestelmäsi komentorivillä:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:210
 msgid ""
@@ -4521,24 +5068,33 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
+"Napsauta Godotissa *Editori -> Editorin asetukset* ja valitse *Export/"
+"Android* osio. Sinun täytyy asettaa tähän polut järjestelmäsi Android SDK -"
+"sovelluksiin ja juuri luomasi keystoren sijaintiin."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:216
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
 msgstr ""
+"Nyt olet valmis viemään. Napsauta *Projekti -> Vie* ja lisää Androidin "
+"esiasetukset (katso yllä)."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:219
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
+"Napsauta \"Vie projekti\" painiketta ja Godot koostaa APK:n, jonka voit "
+"ladata laitteellesi. Tehdäksesi tämän komentoriviltä, käytä seuraavaa:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:226
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
 msgstr ""
+"Voi olla, että laitteesi tarvitsee olla *kehitystilassa* (*developer mode*). "
+"Katso tarkemmat tiedot laitteesi dokumentaatiosta."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:229
 msgid ""
@@ -4546,18 +5102,25 @@ msgid ""
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
+"Jos järjestelmäsi tukee sitä, Godotin pelitestauspainikkeiden alueelle "
+"ilmestyy \"One-click Deploy\" painike, kun yhdistät yhteensopivan Android-"
+"laitteen:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
 msgstr ""
+"Tämän painikkeen napsauttaminen muodostaa APK:n ja kopioi sen laitteellesi "
+"yhdellä kertaa."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
 msgid ""
 "In order to build your game for iOS, you must have a computer running MacOS "
 "with Xcode installed."
 msgstr ""
+"Kääntääksesi pelisi iOS:lle, sinulla täytyy olla MacOS-tietokone, jossa on "
+"asennettuna Xcode."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -4566,20 +5129,27 @@ msgid ""
 "can find by logging in to your Apple developer account and looking in the "
 "\"Membership\" section."
 msgstr ""
+"Ennen vientiä, sinun *täytyy* asettaa joitakin asetuksia, jotta projektin "
+"vienti onnistuisi. Ensin, \"App Store Team Id\", jonka löydä kirjautumalla "
+"sisään omalle Apple-kehittäjätunnuksellesi ja katsomalla \"Membership\"-"
+"osiota."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:246
 msgid "You must also provide icons and splash screen images as shown below:"
 msgstr ""
+"Sinun täytyy myös asettaa ikonit ja käynnistyskuvat, kuten näytetty alla:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Click \"Export Project\" and select a destination folder."
-msgstr ""
+msgstr "Napsauta \"Vie projekti\" ja valitse kohdekansio."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
 msgstr ""
+"Kun olet vienyt projektisi onnistuneesti, löydät seuraavat kansiot ja "
+"tiedostot luotuina antamastasi sijainnista:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:257
 msgid ""
@@ -4587,22 +5157,27 @@ msgid ""
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
 "com/xcode/mac/current/#/devc8c2a6be1 for more information."
 msgstr ""
+"Voit nyt avata projektisi Xcodessa ja kääntää projektin iOS:lle. Xcoden "
+"kääntämiseen liittyvät toimenpiteet eivät kuulu tämän oppaan piiriin. Katso "
+"https://help.apple.com/xcode/mac/current/#/devc8c2a6be1 lisätietoja varten."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:263
 msgid "HTML5 (web)"
-msgstr ""
+msgstr "HTML5 (verkko)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:265
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
 msgstr ""
+"Napsauta \"Vie projekti\" HTML5-esiasetuksissa. Meidän ei tarvitse muuttaa "
+"mitään oletusasetuksista."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:268
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
-msgstr ""
+msgstr "Kun vienti on valmis, saat seuraavat tiedostot sisältävän kansion:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""
@@ -4611,6 +5186,10 @@ msgid ""
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""
+"Voit pelata peliä avaamalla `.html` tiedoston selaimessasi. Et kuitenkaan "
+"voi avata tiedostoa suoraan, vaan se täytyy saada verkkopalvelimelta. Jos "
+"sinulla ei ole sellaista asennettuna tietokoneellasi, voit hakea Googlella "
+"omalle käyttöjärjestelmällesi sopivia ehdotuksia."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:278
 msgid ""
@@ -4618,6 +5197,8 @@ msgid ""
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
+"Syötä selaimeesi URL siihen kohteeseen, jonne sijoitit html-tiedoston. Voit "
+"joutua odottamaan hetken pelin latautumista, ennen kuin näet aloitusruudun."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:283
 msgid ""
@@ -4625,6 +5206,9 @@ msgid ""
 "can disable it by setting \"Export With Debug\" off when you export the "
 "project."
 msgstr ""
+"Pelin alapuolella oleva konsoli-ikkuna kertoo sinulle, jos jokin meni "
+"vikaan. Voit kytkeä sen pois päältä asettamalla \"Vie debugaten\" off-"
+"asentoon, kun viet projektisi."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
 msgid ""
@@ -4634,6 +5218,11 @@ msgid ""
 "bugs you find at the `Godot Github repository <https://github.com/"
 "godotengine/godot/issues>`_."
 msgstr ""
+"Selainten WASM-tuki ei ole kovin laajalle levinnyttä. Firefox ja Chrome "
+"molemmat tukevat sitä, mutta voit silti törmätä joihinkin asioihin, jotka "
+"eivät toimi. Varmista, että olet päivittänyt selaimesi uusimpaan versioon ja "
+"raportoi kaikki löytämäsi bugit `Godot Github repositoryyn <https://github."
+"com/godotengine/godot/issues>`_."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:4
 msgid "Godot’s design philosophy"
@@ -6841,6 +7430,10 @@ msgid ""
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
+"Lataa Godot-projekti: :download:`ui_code_life_bar.zip <files/"
+"ui_code_life_bar.zip>`. Se sisältää kaikki aloittamiseen tarvitsemasi "
+"assetit ja skriptit. Pura .zip-arkisto saadaksesi kaksi hakemistoa: `start` "
+"ja `end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -13730,11 +14323,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "end"
-msgstr ""
+msgstr "end"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "End"
-msgstr "Loppu"
+msgstr "End"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:163
 msgid "get_area()"
@@ -14691,9 +15284,8 @@ msgid "Animation"
 msgstr "Animaatio"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "Animation supported:"
-msgstr "Animaatiot"
+msgstr "Tuetut animaatiot:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
@@ -14704,19 +15296,16 @@ msgid "transform animation of pose bones"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-#, fuzzy
 msgid "shape key animation"
-msgstr "Spriten animaatio"
+msgstr "muodon ruutuanimaatio"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "Spriten animaatio"
+msgstr "valon animaatio"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "Spriten animaatio"
+msgstr "kameran animaatio"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
@@ -14770,9 +15359,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
-#, fuzzy
 msgid "Constraints"
-msgstr "Vakiot"
+msgstr "Rajoitteet"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:49
 msgid ""
@@ -14783,9 +15371,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
-#, fuzzy
 msgid "Animation Mode"
-msgstr "Animaatio"
+msgstr "Animaatiotila"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:57
 msgid ""
@@ -49255,7 +49842,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr "Lisäosat"
+msgstr "Liitännäiset"
 
 #: ../../docs/tutorials/plugins/editor/index.rst:2
 msgid "Editor plugins"

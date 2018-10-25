@@ -4,6 +4,8 @@
 #
 # Hidetsugu Takahashi <manzyun@gmail.com>, 2018.
 # Kazuki Miyanishi <mozukichi.0807@gmail.com>, 2018.
+# Nathan Lovato <nathan.lovato.art@gmail.com>, 2018.
+# nyanode <akaruooyagi@yahoo.co.jp>, 2018.
 # yu tang <0011solo@gmail.com>, 2018.
 # zukkun <zukkun@gmail.com>, 2018.
 #
@@ -12,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-09-09 12:15+0200\n"
-"PO-Revision-Date: 2018-08-28 08:40+0000\n"
-"Last-Translator: Kazuki Miyanishi <mozukichi.0807@gmail.com>\n"
+"PO-Revision-Date: 2018-10-17 05:31+0000\n"
+"Last-Translator: Hidetsugu Takahashi <manzyun@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -21,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.2.1\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -33,7 +35,7 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
-"このドキュメントは安定版ではないブランチ（master）のものです。**安定版** をお"
+"このドキュメントは安定版ではない（master）ブランチのものです。**安定版** をお"
 "探しの場合は `こちら <http://docs.godotengine.org/en/stable>`_ をご覧くださ"
 "い。"
 
@@ -45,6 +47,9 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"フリーでオープンソースでコミュニティ駆動の2D/3Dゲームエンジン Godot Engine の"
+"公式ドキュメントへようこそ！このドキュメントが初めての方は、 このドキュメント"
+"の概要を知るために、:ref:`導入 <doc_about_intro>` を読むことをお勧めします。"
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -52,6 +57,8 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"下記の目次とサイドバーから、関心のあるトピックにすぐアクセスすることができま"
+"す。また、左上の検索機能を利用することも出来ます。"
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -61,6 +68,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engineは有志のコミュニティによって開発されたオープンソースプロジェクト"
+"です。このドキュメントチームはあなたのフィードバックを常に使い、チュートリア"
+"ルやクラスリファレンスの改善に役立てることができます。もし、何かを理解できな"
+"い、またはあなたが探しているものがドキュメントで見つからない場合は、我々に教"
+"えてください！"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -71,11 +83,18 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"`GitHub リポジトリ <https://github.com/godotengine/godot-docs/issues>`_にイ"
+"シューを投稿またはプルリクエストをするか、あなたが使用する言語に`ドキュメント"
+"を翻訳 <https://hosted.weblate.org/engage/godot-engine/>`_するのを手伝ってく"
+"ださい。もしくは、`Discord <https://discord.gg/zH7NUgz>`_の``#documentation``"
+"チャンネルか`irc.freenode.net <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_の``#godotengine-doc``チャンネルで私たちと議論し"
+"てください！"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "このサイトの主なドキュメントは次のセクションから構成されています。"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
@@ -95,7 +114,7 @@ msgstr "開発"
 
 #: ../../docs/index.rst:99
 msgid "Creating Content"
-msgstr ""
+msgstr "コンテンツの作成"
 
 #: ../../docs/index.rst:107 ../../docs/community/index.rst:2
 msgid "Community"
@@ -106,7 +125,7 @@ msgstr "コミュニティ"
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "概要"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -173,10 +192,10 @@ msgid ""
 "will find a powerful yet user-friendly tool that you can use to develop any "
 "kind of game, for any platform and with no usage restriction whatsoever."
 msgstr ""
-"コミュニティ開発の無料でオープンソースの2D・3Dゲームエンジン、Godot Engine の"
-"公式ドキュメントにようこそ！　Behind this mouthful, あなたはたくさんのプラッ"
-"トフォームで同じように動作する、パワフルでユーザーフレンドリーなゲームエンジ"
-"ンをお探しでしょう。"
+"コミュニティ開発の無料でオープンソースの2D/3Dゲームエンジン、Godot Engine の"
+"公式ドキュメントにようこそ！　この長い言葉の背後に、どんな使用制限も無い、い"
+"くつかのプラットフォームを対象とした様々なジャンルのゲームを作ることが出来る"
+"パワフルでユーザーフレンドリーなゲームエンジンを知ることになるでしょう。"
 
 #: ../../docs/about/introduction.rst:16
 msgid ""
@@ -184,6 +203,7 @@ msgid ""
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
+"このページでは、Godotエンジンの機能紹介とゲーム作りの始め方を提供します。"
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
@@ -214,7 +234,6 @@ msgstr ""
 "iOS）、Webベース（HTML5）環境に出力できます。"
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -224,10 +243,11 @@ msgid ""
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
 "Godot はMITライセンスの下、完全に自由でオープンソースです。ユーザーの製作した"
-"ゲームには文字列を追加しませんし、利用料を請求することもありません。Godot は"
-"自主的なコミュニティによって開発されており、ユーザーにはGodotエンジンをの開発"
-"を助けてくださることを期待します。Godotは非営利団体 `Software Freedom "
-"Conservancy <https://sfconservancy.org>`_ によってサポートされております。"
+"ゲームには利用に関して特に制限はありませんし、利用料を請求することもありませ"
+"ん。Godot は自主的なコミュニティによって開発されており、ユーザーにはGodotエン"
+"ジンをの開発を助けてくださることを期待します。Godotは非営利団体 `Software "
+"Freedom Conservancy <https://sfconservancy.org>`_ によってサポートされており"
+"ます。"
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -295,6 +315,8 @@ msgid ""
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
+"このドキュメントはとても偏った5つのセクションから構成されていますが、それは比"
+"較的直感的に分割されています。"
 
 #: ../../docs/about/introduction.rst:72
 msgid ""
@@ -302,6 +324,8 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
+":ref:`sec-general` セクションは、歴史、ライセンス、作者などのゲームエンジンの"
+"概要と同様の紹介をしています。また、:ref:`doc_faq` も含んでいます。"
 
 #: ../../docs/about/introduction.rst:75
 msgid ""
@@ -310,12 +334,19 @@ msgid ""
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
+":ref:`sec-learn` セクションは、このドキュメントの主な *存在意義* です。エンジ"
+"ンを使ってゲームを作るのに必要なすべての情報が入っているからです。それは、:"
+"ref:`ステップバイステップ <toc-learn-step_by_step>` チュートリアルから始ま"
+"り、このチュートリアルは、すべての新規ユーザーのための入り口です。"
 
 #: ../../docs/about/introduction.rst:80
 msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
+"一方、:ref:`sec-tutorials` セクションは、好きな順番で必要に応じて読むことがで"
+"きます。これには、多くの機能固有のチュートリアルとドキュメントが含まれていま"
+"す。"
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -323,6 +354,9 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
+":ref:`sec-devel` セクションは、エンジンのコンパイル、C++モジュールまたはエ"
+"ディタプラグインの開発に関する情報とともに、高度なユーザーとエンジン開発者の"
+"貢献者を対象としています。"
 
 #: ../../docs/about/introduction.rst:85
 msgid ""
@@ -332,6 +366,11 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
+":ref:`sec-community` は、エンジン開発に貢献し、そのコミュニティの活動に関連す"
+"る情報を提供します。 バグの報告方法、ドキュメントを手助けする方法などが含まれ"
+"ています。また、IRC や Discord などのさまざまなコミュニティチャネルを指し、こ"
+"のドキュメント外で推奨されるサードパーティのチュートリアルのリストも含まれて"
+"います。"
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -341,6 +380,10 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
+"最後に、 :ref:`sec-class-ref` はGodot APIについてのドキュメントです。これは"
+"ゲームエンジンのスクリプトエディタに直接利用できます。それはメインソースリポ"
+"ジトリのファイルから自動的に生成されるため、ドキュメントのファイルは編集でき"
+"ません。詳しくは :ref:`doc_updating_the_class_reference` を御覧ください。"
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -351,17 +394,19 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
+msgstr "楽しんでこのドキュメントを読んでGodot Engineでのゲーム開発を！"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "よくある質問"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
 msgstr ""
+"Godotで何ができますか？　利用料はかかりますか？　ライセンス条項はどの様になっ"
+"ていますか？"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
@@ -370,16 +415,21 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
+"Godotは`フリーソフトウェアでオープンソース <https://ja.wikipedia.org/wiki/"
+"FLOSS>`_で、OSI承認済みのMITライセンスの元で利用できます。これは「飲み放題」"
+"と同様に「言論の自由」のように自由であることを意味します。"
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
-msgstr ""
+msgstr "要するに："
 
 #: ../../docs/about/faq.rst:13
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"任意の目的、個人、非営利、営利、その他のためにGodotを自由にダウンロードして使"
+"うことができます。"
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -415,6 +465,11 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"詳細はGodotリポジトリの、 `COPYRIGHT.txt <https://github.com/godotengine/"
+"godot/blob/master/COPYRIGHT.txt>`_ または `LICENSE.txt <https://github.com/"
+"godotengine/godot/blob/master/LICENSE.txt>`_ と `LOGO_LICENSE.txt <https://"
+"github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ ファイルをご覧く"
+"ださい。"
 
 #: ../../docs/about/faq.rst:28
 msgid ""
@@ -1358,7 +1413,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:94
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"
-msgstr ""
+msgstr "エディタ"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:96
 msgid ""
@@ -1449,7 +1504,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
-msgstr ""
+msgstr "成功！"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:168
 msgid "Configuring the project"
@@ -8795,7 +8850,7 @@ msgstr ""
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:452
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:467
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:160
 msgid "if"
@@ -9698,7 +9753,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:48
 #: ../../docs/development/cpp/object_class.rst:94
 msgid "Constants"
-msgstr ""
+msgstr "定数"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:559
 msgid ""
@@ -9991,7 +10046,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:875
 msgid "Classes"
-msgstr ""
+msgstr "クラス"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:877
 msgid ""
@@ -10305,7 +10360,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr ""
+msgstr "信号"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1347
 msgid ""
@@ -12037,7 +12092,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr ""
+msgstr "セルフ"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -13038,7 +13093,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "End"
-msgstr ""
+msgstr "終り"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:163
 msgid "get_area()"
@@ -18270,7 +18325,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 msgid "Tools"
-msgstr ""
+msgstr "ツール"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
 msgid ""
@@ -20871,7 +20926,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:382
 msgid "Depth"
-msgstr "奥行き"
+msgstr "深度"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:384
 msgid ""
@@ -40606,7 +40661,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:128
 msgid "Capture"
-msgstr ""
+msgstr "キャプチャ"
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""
@@ -41671,7 +41726,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"
-msgstr ""
+msgstr "メンバー"
 
 #: ../../docs/tutorials/shading/shading_language.rst:126
 msgid ""
@@ -51782,7 +51837,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr ""
+msgstr "デバッグ"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -51812,7 +51867,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
 msgid "Deploy with Remote Debug"
-msgstr "リモートデバッグ付きでデプロイ（提供）する"
+msgstr "リモートデバッグでデプロイ"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid ""
@@ -51822,7 +51877,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Small Deploy with Network FS"
-msgstr ""
+msgstr "ネットワークファイルシステムでスモールデプロイ"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid ""
@@ -51834,7 +51889,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:33
 msgid "Visible Collision Shapes"
-msgstr ""
+msgstr "コリジョン形状の表示"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:35
 msgid ""
@@ -51844,7 +51899,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:38
 msgid "Visible Navigation"
-msgstr ""
+msgstr "ナビゲーションの表示"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:40
 msgid "Navigation meshes and polygons will be visible on the running game."
@@ -51852,7 +51907,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:43
 msgid "Sync Scene Changes"
-msgstr ""
+msgstr "シーンの変更を同期"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:45
 msgid ""
@@ -51863,7 +51918,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:49
 msgid "Sync Script Changes"
-msgstr ""
+msgstr "スクリプトの変更を同期"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:51
 msgid ""
@@ -56717,7 +56772,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:313
 msgid "Future"
-msgstr ""
+msgstr "未来"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:315
 msgid ""

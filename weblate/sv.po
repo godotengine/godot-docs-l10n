@@ -3,17 +3,19 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # <grenoscar@gmail.com>, 2018.
+# Christoffer Sundbom <christoffer_karlsson@live.se>, 2018.
 # Daniel K <danielkimblad@hotmail.com>, 2018.
 # Tim Stahel <timstahel@gmail.com>, 2018.
 # Tobias Björkdahl <tobbe_chevy@hotmail.com>, 2018.
+# William Nilsson <wille@kalmarit.se>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-09-09 12:15+0200\n"
-"PO-Revision-Date: 2018-08-06 19:42+0000\n"
-"Last-Translator: Daniel K <danielkimblad@hotmail.com>\n"
+"PO-Revision-Date: 2018-10-03 05:37+0000\n"
+"Last-Translator: Christoffer Sundbom <christoffer_karlsson@live.se>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/sv/>\n"
 "Language: sv\n"
@@ -21,11 +23,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.1.1\n"
+"X-Generator: Weblate 3.2-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "Godot Dokumentation - *master*-gren"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -420,15 +422,14 @@ msgstr ""
 "Vad kan man göra med Godot? Hur mycket kostar den? Var finns licensvillkoren?"
 
 #: ../../docs/about/faq.rst:9
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot är fritt / öppen källkod tillgänglig att använda under `OSI-godkända "
-"<https://opensource.org/licenses/MIT>`_ MIT licensen."
+"Godot är fritt / öppen källkod och tillgänglig att använda under `OSI-"
+"godkända <https://opensource.org/licenses/MIT>`_ MIT-licensen."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -439,18 +440,18 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Du är fri att ladda ner och använda Godot för alla ändamål. Personligt, "
+"ideellt, kommersiellt eller annat;"
 
 #: ../../docs/about/faq.rst:14
-#, fuzzy
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
 "Du kan använda, dela med dig av och ändra på Godot så mycket som du känner "
-"för"
+"för."
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
@@ -459,8 +460,7 @@ msgid ""
 msgstr ""
 "Allt innehåll publiceras under den öppna Creative Commons Attribution 3.0 "
 "(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licensen, med "
-"tillägnan till  \"Juan Linietsky, Ariel Manzur and the Godot Engine community"
-"\"."
+"tillskrivning till \"Juan Linietsky, Ariel Manzur och Godot-gemenskapen.\""
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -468,6 +468,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"Loggor och ikoner är vanligtvis under samma Creative Commons-licens. Notera "
+"att vissa tredjeparts-bibliotek inkluderade med Godots källkod kan ha andra "
+"licenser."
 
 #: ../../docs/about/faq.rst:24
 msgid ""
@@ -477,16 +480,22 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"För mer detaljer, kolla `COPYRIGHT.txt <https://github.com/godotengine/godot/"
+"blob/master/COPYRIGHT.txt>`_ och `LICENSE.txt <https://github.com/"
+"godotengine/godot/blob/master/LICENSE.txt>`_ och `LOGO_LICENSE.txt <https://"
+"github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ filerna i Godot "
+"repositoryn."
 
 #: ../../docs/about/faq.rst:28
 msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"Se även `licenssidan på Godots hemsida <https://godotengine.org/license>`_."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Vilka plattformer stöds av Godot?"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
@@ -494,66 +503,75 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:35
 msgid "Windows"
-msgstr ""
+msgstr "Fönster"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "Mac OS X"
-msgstr ""
+msgstr "Mac OS X"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**För export av dina spel:**"
 
 #: ../../docs/about/faq.rst:41
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (och UWP)"
 
 #: ../../docs/about/faq.rst:44
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:46
 msgid "Web"
-msgstr ""
+msgstr "Webb"
 
 #: ../../docs/about/faq.rst:48
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
 msgstr ""
+"Både 32- och 64-bitar binärer stöds där det är logiskt, där 64 är standard."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Vissa användare rapporterar även lyckade försök med att bygga och använda "
+"Godot på ARM-baserade system med Linux, som t.ex Raspberry Pi."
 
 #: ../../docs/about/faq.rst:54
+#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"Dessutom arbetas det inofficiellt från tredje-part på att bygga för vissa "
+"konsoler. Däremot har inga av dessa inkluderats i byggscript eller "
+"exportmallar ännu."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"För att se mer om detta, kolla sektionerna på :ref:`exportering <toc-learn-"
+"workflow-export>` och :ref:`kompillera Godot själv <toc-devel-compiling>`."
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
-msgstr ""
+msgstr "Vilka programmeringsspråk stöds av Godot?"
 
 #: ../../docs/about/faq.rst:64
 msgid ""
@@ -561,8 +579,12 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"De officiellt stödda språken för Godot är: GDScript, Visual Scripting, C# "
+"och C++. Se underkategorierna för varje språk i :ref:`scripting <toc-learn-"
+"scripting>` sektionen."
 
 #: ../../docs/about/faq.rst:68
+#, fuzzy
 msgid ""
 "If you are just starting out with either Godot or game development in "
 "general, GDScript is the recommended language to learn and use since it is "
@@ -571,6 +593,11 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Om du precis börjat med antingen Godot eller spelutveckling allmänt är "
+"GDScript det rekommenderade språket att lära sig och använda eftersom att "
+"det är gjort för Godot. Samtidigt som skriptspråk brukar ge sämre prestanda "
+"än språk på låg nivå långsiktigt, ger GDScript dig ett snabbt, vänligt och "
+"effektivt sätt att utveckla dina spel på."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -582,6 +609,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Notera att stödet för C# fortfarande är relativt nytt och därför kan du "
+"stöta på problem längs vägen. Vår vänliga och hårt arbetande utvecklar-"
+"gemenskap är alltid redo att tackla nya problem när de dyker upp; men "
+"eftersom att detta är ett projekt med öppen källkod rekommenderar vi dig att "
+"först försöka lösa det själv. Att söka igenom diskussioner på `öppna problem "
+"<https://github.com/godotengine/godot/issues>`_ är ett bra ställe att börja "
+"din felsökning på."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -591,10 +625,15 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"Vad gäller nya språk, det är möjligt med stöd av tredje part genom att "
+"använda GDNative / NativeScript / PluginScript facilities. (Se frågan om "
+"plugins nedan.) Det jobbas på det, till exempel en Godot to `Python <https://"
+"github.com/touilleMan/godot-python>`_ och `Nim <https://github.com/pragmagic/"
+"godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Vad är GDScript och varför bör jag använda det?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -606,6 +645,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the "
 "`GDScript scripting guide <gdscript_basics>`_."
 msgstr ""
+"GDScript är Godots integrerade skriptspråk. Det byggdes från grunden för att "
+"maximera Godots potential med minsta möjliga koden för att tillåta både "
+"nybörjare och experter att utnyttja Godots styrkor så snabbt som möjligt. Om "
+"du någonsin har skrivit kod i ett språk som liknar Python kommer du att "
+"känna dig som hemma. För att se exempel, historia och en komplett översikt "
+"över styrkan som GDScript erbjuder dig, kolla in `GDScript skripting-guide "
+"<gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -614,6 +660,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Det finns flera anledningar till värför du bör använda GDScript - speciellt "
+"när du skapar prototyper, är i tidigt stadium att ditt projekt, eller inte "
+"gör nästa AAA titel - men det mest framträdande anledningen är **minskningen "
+"av komplexitet.**"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -647,6 +697,8 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Mer information om hur du blir bekväm med GDScript eller andra dynamiska "
+"språk hittar du i guiden :ref:`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"

@@ -2,17 +2,25 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# AColdCube <761397398@qq.com>, 2018.
 # asd789l <690367819@qq.com>, 2018.
 # baiwu liu <bovy.liu@gmail.com>, 2018.
 # bladesero <872461916@qq.com>, 2018.
+# carlcc <carlmarxchen@foxmail.com>, 2018.
 # cloudapex <cloudapex@126.com>, 2018.
 # congcong <3546952960@qq.com>, 2018.
+# Dante Lucifer <firecloud888@gmail.com>, 2018.
 # DKLost <514dklost@gmail.com>, 2018.
 # Geequlim <geequlim@gmail.com>, 2018.
 # Griant <goooosick@gmail.com>, 2018.
+# Haowen Liu <liu.haowen.andy@gmail.com>, 2018.
 # Harlan Howell <lin_032@hotmail.com>, 2018.
+# Hezekiah Ho <hyq1986@gmail.com>, 2018.
 # Jingtian Pan <panjingtian@126.com>, 2018.
+# Joe Zhao <nikejaycn@gmail.com>, 2018.
+# kirk_king <kirk_kpt@163.com>, 2018.
 # MrNewWorld <xcc1997@gmail.com>, 2018.
+# neko mtclaw <mitsuclaws@gmail.com>, 2018.
 # Oberon Zheng <360119124@qq.com>, 2018.
 # plumsky <x-wolf@163.com>, 2018.
 # pokemonchw <admin@byayoi.org>, 2018.
@@ -25,10 +33,13 @@
 # tf <1353699675@qq.com>, 2018.
 # XQDD <1032453509@qq.com>, 2018.
 # yuetian <18829280955@163.com>, 2018.
+# yzt <834950797@qq.com>, 2018.
 # z <755287198@qq.com>, 2018.
 # Zae Chao <zae.vito@live.com>, 2018.
 # zaevi <526131722@qq.com>, 2018.
 # zwj36028 <23732399@qq.com>, 2018.
+# 刘庆文 <liuqingwen@163.com>, 2018.
+# 小菠萝粑粑 <2062152083@qq.com>, 2018.
 # 小白newer <2551376741@qq.com>, 2018.
 #
 msgid ""
@@ -36,8 +47,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-09-09 12:15+0200\n"
-"PO-Revision-Date: 2018-09-04 13:13+0000\n"
-"Last-Translator: congcong <3546952960@qq.com>\n"
+"PO-Revision-Date: 2018-10-25 13:18+0000\n"
+"Last-Translator: Hezekiah Ho <hyq1986@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -45,7 +56,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -411,7 +422,6 @@ msgid ""
 msgstr "我可以用Godot做什么？用它需要花多少钱？它有哪些许可条款？"
 
 #: ../../docs/about/faq.rst:9
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
@@ -438,16 +448,15 @@ msgid ""
 msgstr "你可以自由修改, (重新) 分发和组织Godot的代码工程."
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"文档的所有内容都由Creative Commons Attribution 3.0 (' CC-3.0 <https://"
-"creativecommons.org/licenses/by/3.0/> ' _) 许可证签署, 版权归 \"娟（Juan "
-"Linietsky）, Ariel Manzur 和Godot引擎社区\" 所有。"
+"文档的所有内容都由 Creative Commons Attribution 3.0 (`CC-3.0 <https://"
+"creativecommons.org/licenses/by/3.0/> `_) 许可证签署, 版权归 \"Juan "
+"Linietsky、Ariel Manzur 和 Godot 引擎社区\" 所有."
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -521,11 +530,10 @@ msgid "Web"
 msgstr "Web"
 
 #: ../../docs/about/faq.rst:48
-#, fuzzy
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr "同时支持32位和64位，默认为64位。"
+msgstr "同时支持32位和64位的二进制文件，默认为64位。"
 
 #: ../../docs/about/faq.rst:51
 msgid ""
@@ -536,7 +544,6 @@ msgstr ""
 "莓派."
 
 #: ../../docs/about/faq.rst:54
-#, fuzzy
 msgid ""
 "Additionally, there is some unofficial third-party work being done on "
 "building for some consoles. However, none of this is included in the default "
@@ -582,7 +589,6 @@ msgstr ""
 "友好，并且强大的功能，用于开发游戏。"
 
 #: ../../docs/about/faq.rst:75
-#, fuzzy
 msgid ""
 "Note that C# support is still relatively new, and as such, you may encounter "
 "some issues along the way. Our friendly and hard-working development "
@@ -598,7 +604,6 @@ msgstr ""
 "issues>`_ 中讨论你的问题。"
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See question about "
@@ -606,8 +611,10 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"目前已经开展一些工作了，比如Godot绑定 `Python <https://github.com/touilleMan/"
-"godot-python>`_ 和 `Nim <https://github.com/pragmagic/godot-nim>`_."
+"对于新编程语言的支持已经由第三方通过GDNative/Native Script/PluginScript实现"
+"（请参考下面关于插件的问题）。目前已经开展一些工作了，比如Godot绑定 `Python "
+"<https://github.com/touilleMan/godot-python>`_ 和 `Nim <https://github.com/"
+"pragmagic/godot-nim>`_。"
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -629,7 +636,6 @@ msgstr ""
 "示例，历史，完整介绍和功能，查看`GDScript脚本指南 <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -637,10 +643,9 @@ msgid ""
 "complexity.**"
 msgstr ""
 "推荐你使用GDScript有多个原因-----包括在制作产品原型，或者你的项目处在测试阶段"
-"时，你需要它------但是最重要的原因是**较少复杂度**"
+"时，或者你没有在制作下一个3A大作------但是最重要的原因是“较少复杂度。”"
 
 #: ../../docs/about/faq.rst:101
-#, fuzzy
 msgid ""
 "The original intent of creating a tightly integrated, custom scripting "
 "language for Godot was two-fold: first, it reduces the amount of time "
@@ -658,7 +663,6 @@ msgstr ""
 "了增加一个简单的新特性而编写大量代码。"
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -670,10 +674,11 @@ msgid ""
 "see how powerful it is and rapid your development becomes, we think GDScript "
 "will grow on you."
 msgstr ""
-"简单来讲，我们认为，这个额外的成本无论是对您来说（学习Godot和GDScript）还是对"
-"我们来说（维护）都是值得的，它能获得更好的整合和无缝的体验（而不是用更熟悉的"
-"语言吸引用户，但体验糟糕）我们理解您想在Godot中使用其他语言的意愿（参阅上面的"
-"支持列表），但我们强烈建议您尝试一下GDScript，看看它有啥好处。"
+"既然Godot是一个开源项目，我们认为提供一个整合和无缝的体验相比用支持一些熟悉语"
+"言来吸引用户更加重要--尤其是当那些语言将带来更糟糕的体验的时候。我们理解您想"
+"在Godot中使用其他语言的意愿（参阅上面的支持列表），但我们强烈建议您尝试一下"
+"GDScript。一旦您感受到它的强大和它带来的生产力的时候，我们相信您会最终选择"
+"GDScript。"
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -710,15 +715,15 @@ msgstr ""
 "Python、JS）。"
 
 #: ../../docs/about/faq.rst:130
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"因与C++绑定而产生的糟糕接口，会导致数量庞大的代码、BUG、瓶颈，以及普遍的效率"
-"低下（Lua、Python、Squirrel、JS等）。"
+"与C++绑定而产生的糟糕接口会导致数量庞大的代码、BUG、瓶颈，以及普遍的效率低下"
+"（Lua、Python、Squirrel、JS等）。我们希望专注于一个强大的引擎 而不是大量的整"
+"合。"
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -748,26 +753,29 @@ msgstr "GDScript的出现就是为了解决以上问题。"
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr "Godot支持那些3D模型格式?"
+msgstr "Godot支持哪些3D模型格式?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Godot 通过 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
+"OpenCOLLADA-Tools>`(Maya, 3DSMax等导出)以支持Collada。"
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"如果您使用的是Blender，请查看我们自己的 `Better Collada Exporter <https://"
+"godotengine.org/download>`_插件。"
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Godot从3.0版本开始支持gITF。"
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -776,7 +784,8 @@ msgid ""
 "Plugins question above.)"
 msgstr ""
 "FBX SDK的 `有限性许可 <http://www.blender.org/bf/Autodesk_FBX_License."
-"rtf>`_，与Godot的 `开放许可 <http://opensource.org/licenses/MIT>`_不兼容。"
+"rtf>`_，与Godot的 `开放许可 <http://opensource.org/licenses/MIT>`_不兼容。这"
+"代表着对于FBX的支持依旧可以通过第三方插件实现。"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -791,9 +800,11 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Godot的目的是创建一个免费以MIT许可开源的引擎，而且是模块化和可拓展的。核心引"
+"擎开发社区没有计划支持任何第三方闭源或专有SDK，因为这些SDK的集成会违背Godot的"
+"精神。"
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
@@ -815,6 +826,9 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"如果您知道Godot不支持但是想提供免费和开源集成的第三方SDK，请考虑自己开始集成"
+"工作。戈多不属于一个人; 它属于社区，它与像你一样雄心勃勃的社区贡献者一起成"
+"长。"
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -838,7 +852,6 @@ msgstr ""
 "DPI变得多种多样。"
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
@@ -849,7 +862,6 @@ msgstr ""
 "方面的问题。一般2D需要这么做，因为3D只需要处理相机的XFov或YFov。"
 
 #: ../../docs/about/faq.rst:193
-#, fuzzy
 msgid ""
 "Choose a single base resolution for your game. Even if there are devices "
 "that go up to 2K and devices that go down to 400p, regular hardware scaling "
@@ -858,7 +870,7 @@ msgid ""
 "mind the higher the resolution, the larger your assets, the more memory they "
 "will take and the longer the time it will take for loading."
 msgstr ""
-"为游戏选一个常规分辨率。即使有高达2K或低于400p的设备，它们硬件缩放也能以低耗"
+"为游戏选一个常规分辨率。即使有高达2K或低至400p的设备，它们硬件缩放也能以低耗"
 "甚至无消耗的性能来处理分辨率。通常选择1080p(1920x1080)或720p(1280x720)。注"
 "意，分辨率越高，资源越多，它们需要的内存就越多，加载所需时间也会越长。"
 
@@ -895,7 +907,6 @@ msgid "And that's it! Your game should work in multiple resolutions."
 msgstr "就是这样！你的游戏现在应该能适应多分辨率了。"
 
 #: ../../docs/about/faq.rst:216
-#, fuzzy
 msgid ""
 "If there is a desire to make your game also work on ancient devices with "
 "tiny screens (fewer than 300 pixels in width), you can use the export option "
@@ -935,7 +946,6 @@ msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
 msgstr "`GDNative 就在这! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
-#, fuzzy
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
@@ -943,7 +953,8 @@ msgid ""
 "another third-party library integrates with Godot."
 msgstr ""
 "您还可以查看GDScript的实现，Godot模组以及 `Godot的非官方Python支持<https://"
-"github.com/touilleMan/godot-python>`_ 。"
+"github.com/touilleMan/godot-python>`_ 。这个将是您了解如何将第三方库整合到"
+"Godot中的第一步。"
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
@@ -964,6 +975,11 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"首先需要找到的位置是：`问题issues <https://github.com/godotengine/godot/"
+"issues>`_。找到一个你理解和认同的问题 issue，然后进入“如何贡献How to "
+"Contribute<https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
+"md#contributing-pull-requests>`_指南，了解如何使用您的分叉进行修改，然后提交"
+"submit和推送Pull 修改后的问题Request（PR）即可。"
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
@@ -981,6 +997,12 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"想要把一些想法带给Godot会很诱人，比如导致大量核心变化的想法，某种模仿其他游戏"
+"引擎所做的事情，或者你想要在编辑器中构建另一种工作流程。 这些都是伟大的，我们"
+"感谢有这些想要贡献的积极的人，但Godot的焦点的方向是并始终是在‘Roadmap路线图"
+"<https://github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_中概述"
+"的核心功能。 `解决bug和解决问题<https://github.com/godotengine/godot/"
+"issues>`_，以及与Godot社区成员之间的对话。"
 
 #: ../../docs/about/faq.rst:260
 msgid ""
@@ -1010,11 +1032,10 @@ msgid "The parts of your workflow you would like to see optimized."
 msgstr "您希望优化的部分或者开发流程。"
 
 #: ../../docs/about/faq.rst:269
-#, fuzzy
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
-msgstr "教程不全的部分或者文档不符标准的部分。"
+msgstr "教程不全的部分或者文档不清晰的部分。"
 
 #: ../../docs/about/faq.rst:271
 msgid ""
@@ -1038,11 +1059,10 @@ msgstr ""
 "改善开发者的经验作为一个整体。"
 
 #: ../../docs/about/faq.rst:281
-#, fuzzy
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
-msgstr "可以附上截图、具体数值、测试用例或示例项目（如果有的话）。"
+msgstr "最好可以附上截图、具体数值、测试用例或示例项目（如果有的话）。"
 
 #: ../../docs/about/faq.rst:285
 msgid "How can I support Godot development or contribute?"
@@ -1103,7 +1123,7 @@ msgstr "|image0|"
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
-msgstr "你可以在左上角找到下拉菜单切换编辑器语言。"
+msgstr "你可以在右上角找到下拉菜单切换编辑器语言。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
@@ -1462,7 +1482,6 @@ msgid "It can be extended (to have more functions)."
 msgstr "能够被继承（以便拥有更多的功能）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-#, fuzzy
 msgid "It can be added to other nodes as a child."
 msgstr "能够被加到其他节点作为子节点（Children）。"
 
@@ -1509,7 +1528,6 @@ msgid ""
 msgstr "一个场景由一组被分层组织的节点组成（树形的方式）。此外，一个场景："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
-#, fuzzy
 msgid "always has one root node."
 msgstr "只能有一个根节点（Root Node）。"
 
@@ -1580,14 +1598,13 @@ msgid ""
 msgstr "一旦这个“New Project”被创建，下一步就是打开它。这将会打开Godot编辑器："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
-#, fuzzy
 msgid ""
 "As mentioned before, making games in Godot feels like being in a kitchen, so "
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
-"如前文所述，在Godot中制作游戏就像是在厨房里一样，所以我们来打开冰箱然后加入一"
-"些新鲜的节点到工程中。我们将开始试着输出一条“Hello World!”消息。"
+"正如前面提到的，在Godot做游戏感觉就像在厨房，所以让我们打开冰箱，为项目添加一"
+"些新的节点。我们将以“Hello World”消息开始，并将其显示在屏幕上。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
@@ -1602,7 +1619,6 @@ msgstr ""
 "这将会打开创建节点（Create Node）对话框，展示了一长串能够被创建的节点列表："
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
-#, fuzzy
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
@@ -1632,7 +1648,6 @@ msgstr ""
 "的属性（Property）出现在了检查工具（Inspector）中（右侧的一栏）。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
-#, fuzzy
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
@@ -1675,7 +1690,6 @@ msgstr ""
 "的路径，不论无论平台和安装位置，它都是游戏中的资源文件的定位方式。"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
-#, fuzzy
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
@@ -1811,7 +1825,6 @@ msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr "在上面的图片中，场景B作为实例被加入到A中。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
-#, fuzzy
 msgid "Instancing by example"
 msgstr "通过例子实例化"
 
@@ -1877,7 +1890,6 @@ msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
 msgstr "按下“运行”（Play），看到球落到屏幕底部："
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
-#, fuzzy
 msgid "Multiple instances"
 msgstr "多个实例"
 
@@ -1936,12 +1948,13 @@ msgid "Conclusion"
 msgstr "总结"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:114
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_scripting_continued`."
-msgstr "当你想创建同一对象的多个副本时，实例化会非常有用。"
+msgstr ""
+"当你想创建同一对象的多个副本时，实例化会非常有用。你也可以使用代码创建实例"
+"（请参阅 :ref: `doc_scripting_continued`）。"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
@@ -2699,7 +2712,6 @@ msgstr ""
 "（FPS）："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:37
-#, fuzzy
 msgid ""
 "The delta parameter contains the time elapsed in seconds, as a floating "
 "point, since the previous call to ``_process()``."
@@ -2940,7 +2952,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "将脚本注册为类"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
 msgid ""
@@ -2948,6 +2960,8 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"Godot有一个“脚本类”的功能，可以使用编辑器注册单个脚本。默认情况下，你只能通过"
+"直接加载文件访问未命名的脚本。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
 msgid ""
@@ -2956,20 +2970,25 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"你可以命名一个脚本，并在编辑器中将脚本注册为带有``class_name``关键字后跟随类"
+"名的指定类型。你还可以把一张图片添加一个逗号和图片的路径来当做图标来使用。然"
+"后，你可以在Node 和Resource 下找到新的类型来创建对话（对象object）。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
 msgid "In Godot 3.1:"
-msgstr ""
+msgstr "在Godot 3.1中："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"只有 GDScript 和 NativeScrip 可以注册脚本，也就是说，只有 C++ 和 其他 "
+"GDNative 支持的语言可以注册脚本。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "只有GDScript为每一个独立的脚本创建全局变量。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 #, fuzzy
@@ -3019,8 +3038,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
+#, fuzzy
 msgid "Project setup"
-msgstr ""
+msgstr "设置工程"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -3400,6 +3420,9 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
+"单击 \"播放场景\"（``F6``）并确认您可以在各个方向上围绕屏幕进行移动。 运行时"
+"打开的控制台输出可以通过单击底部面板左下角的``日志``（应该以蓝色突出显示）来"
+"关闭。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:315
 msgid ""
@@ -3437,6 +3460,7 @@ msgid ""
 "programmers. Consider this code versus the shortened boolean assignment "
 "above:"
 msgstr ""
+"上面代码中的布尔赋值是程序员的常用简写。 考虑此代码与上面缩短的布尔赋值："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
 msgid ""
@@ -3742,7 +3766,7 @@ msgstr "设置每个``Timer``节点的``Wait Time``属性，如下所示："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:628
 msgid "``MobTimer``: ``0.5``"
-msgstr ""
+msgstr "``MobTimer``: ``0.5``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:629
 msgid "``ScoreTimer``: ``1``"
@@ -8409,7 +8433,7 @@ msgstr ""
 #: ../../docs/tutorials/math/vector_math.rst:276
 #: ../../docs/development/cpp/core_types.rst:122
 msgid "and"
-msgstr ""
+msgstr "以及"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:268
 msgid ""
@@ -12084,7 +12108,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:151
 msgid "Padding"
-msgstr "填充"
+msgstr "内边距"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:153
 msgid ""
@@ -12301,7 +12325,7 @@ msgstr "\"嗨, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
-msgstr ""
+msgstr "前缀"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 #, fuzzy
@@ -12873,7 +12897,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "动作"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -13934,7 +13958,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "End"
-msgstr ""
+msgstr "终点"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:163
 msgid "get_area()"
@@ -14791,9 +14815,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:2
-#, fuzzy
 msgid "Mesh"
-msgstr "网格"
+msgstr "网络"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -14829,7 +14852,7 @@ msgstr ""
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
 #: ../../docs/development/file_formats/tscn.rst:153
 msgid "Skeleton"
-msgstr ""
+msgstr "骨架"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
@@ -24413,7 +24436,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:4
 msgid "Using gridmaps"
-msgstr ""
+msgstr "使用网格地图（Gridmaps）"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:9
 msgid ""
@@ -24423,33 +24446,39 @@ msgid ""
 "that can be placed on a grid, as if you were building a level with an "
 "unlimited amount of Lego blocks."
 msgstr ""
+":ref:`Gridmaps <class_GridMap>` 是一种用于创建3D游戏关卡的工具，方式类似于2D"
+"中使用 :ref:`TileMap <doc_using_tilemaps>` 。使用一个定义好的可以放在一个网格"
+"中的 3D mesh (a :ref:`class_MeshLibrary`) （译注，grid和mesh都译作网格，这里"
+"为了清晰，mesh直接使用英文，grid则译作网格）对象集合搭建关卡，就像你使用无限"
+"多数量的乐高积木搭建世界一样。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:15
 msgid ""
 "Collisions and navigation can also be added to the meshes, just like you "
 "would do with the tiles of a tilemap."
-msgstr ""
+msgstr "就像使用tilemap的tile一样，碰撞和导航也可以添加到网格中。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:19
-#, fuzzy
 msgid "Example project"
-msgstr "导出项目"
+msgstr "示例项目"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:21
 msgid ""
 "To learn how GridMaps work, start by downloading the sample project: :"
 "download:`gridmap_demo.zip <files/gridmap_demo.zip>`."
 msgstr ""
+"要学习GridMaps是怎么样工作的，请先下载示例项目： :download:`gridmap_demo.zip "
+"<files/gridmap_demo.zip>`。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:24
 msgid ""
 "Unzip this project and add it to the Project Manager using the \"Import\" "
 "button."
-msgstr ""
+msgstr "解压缩此项目并使用“导入”按钮将其添加到项目管理器。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:28
 msgid "Creating a MeshLibrary"
-msgstr ""
+msgstr "创建Mesh库"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:30
 msgid ""
@@ -24458,22 +24487,28 @@ msgid ""
 "\"MeshLibrary_Source.tscn\" scene to see an example of how to set up the "
 "mesh library."
 msgstr ""
+"首先，您需要一个 :ref:`class_MeshLibrary`，它是可以在gridmap中使用的Mesh的集"
+"合。 打开“MeshLibrary_Source.tscn”场景以查看如何设置网格库的示例。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:36
 msgid ""
 "As you can see, this scene has a :ref:`class_Spatial` node as its root, and "
 "a number of :ref:`class_MeshInstance` node children."
 msgstr ""
+"可以看到，这个场景有一个 :ref:`class_Spatial` 节点作为它的根，以及一些 :ref:"
+"`class_MeshInstance` 子节点。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:39
 msgid ""
 "If you don't need any physics in your scene, then you're done. However, in "
 "most cases you'll want to assign collision bodies to the meshes."
 msgstr ""
+"如果你的场景中不需要任何物理，那么到这里就完成了。 但是，在大多数情况下，你还"
+"需要给网格指定碰撞体。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:43
 msgid "Collisions"
-msgstr ""
+msgstr "碰撞"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:45
 msgid ""
@@ -24481,6 +24516,9 @@ msgid ""
 "`class_CollisionShape` to each mesh. Alternatively, you can use the \"Mesh\" "
 "menu to automatically create the collision body based on the mesh data."
 msgstr ""
+"你可以手动为每个Mesh指定 :ref:`class_StaticBody` 和 :ref:"
+"`class_CollisionShape`。或者，您可以使用“网格（Mesh）”菜单根据Mesh数据自动创"
+"建碰撞体。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:51
 msgid ""
@@ -24489,26 +24527,31 @@ msgid ""
 "mesh has a physics body and collision shape assigned, your mesh library is "
 "ready to be used."
 msgstr ""
+"请注意，“凸(Convex)”碰撞体对于简单Mesh效果更好。 对于更复杂的形状，请选择“创"
+"建Trimesh静态体”。 一旦每个网格都分配了物理主体和碰撞形状，就可以使用Mesh库"
+"了。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:60
 msgid "Exporting the MeshLibrary"
-msgstr ""
+msgstr "导出Mesh库"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:62
 msgid ""
 "To export the library, click on Scene -> Convert To.. -> MeshLibrary.., and "
 "save it as a resource."
 msgstr ""
+"要导出库，请单击“场景” - >“转换为...” - >“MeshLibrary(网格库)...”，并将其另存"
+"为资源。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:67
 msgid ""
 "You can find an already exported MeshLibrary in the project named "
 "\"MeshLibrary.tres\"."
-msgstr ""
+msgstr "可以在项目中找到已导出的名为“MeshLibrary.tres”的Mesh库。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:70
 msgid "Using GridMap"
-msgstr ""
+msgstr "使用网格图（GridMap）"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:72
 msgid ""
@@ -24516,6 +24559,8 @@ msgid ""
 "the resource file from the FileSystem dock and dropping it in the \"Theme\" "
 "property in the Inspector."
 msgstr ""
+"创建一个新场景并添加一个GridMap节点。 通过从“文件系统（FileSystem）”扩展坞拖"
+"动资源文件并将其放入Inspector中的“Theme（主题）”属性中来添加Mesh库。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:78
 msgid ""
@@ -24523,6 +24568,8 @@ msgid ""
 "leave it at the default value for the demo. Set the \"Center Y\" property to "
 "\"Off\"."
 msgstr ""
+"“单元格/大小(Cell/Size)”属性应设置为Mesh的大小。 在本示例中您可以使用默认"
+"值。 将“Center Y”属性设置为“Off”。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:81
 msgid ""
@@ -24530,12 +24577,14 @@ msgid ""
 "and placing it with Left-Click in the editor window. To remove a tile, use "
 "Shift+Right-click."
 msgstr ""
+"现在，您可以通过从调色板中选择一个图块并使用左键单击在编辑器窗口中放置来开始"
+"设计关卡。 要删除图块，请使用Shift + 右键单击。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:85
 msgid ""
 "Click on the \"GridMap\" menu to see options and shortcuts. For example, "
 "pressing \"S\" rotates a tile around the y-axis."
-msgstr ""
+msgstr "单击“GridMap”菜单可以查看选项和快捷键。 例如，按下“S”围绕y轴旋转图块。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:90
 msgid ""
@@ -24543,23 +24592,25 @@ msgid ""
 "selection box. You can duplicate or clear the selected area using the "
 "respective menu options."
 msgstr ""
+"按住<Shift>并使用鼠标左键拖动将绘制一个选择框。 您可以使用相应的菜单选项复制"
+"或清除所选区域。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:96
 msgid ""
 "In the menu, you can also change the axis you're drawing on as well as shift "
 "the drawing plane higher or lower on its axis."
 msgstr ""
+"在菜单中，您还可以更改正在绘制的轴，并将绘图平面在其轴上移动得更高或更低。"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:102
-#, fuzzy
 msgid "Using GridMap in code"
-msgstr "在 Godot 中使用 C++"
+msgstr "在代码中使用GridMap"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:104
 msgid ""
 "See :ref:`class_GridMap` for details on the node's methods and member "
 "variables."
-msgstr ""
+msgstr "有关节点方法和成员变量的详细信息，请参阅:ref:`class_GridMap`。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:4
 msgid "Using MultiMeshInstance"
@@ -42172,7 +42223,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:128
 msgid "Capture"
-msgstr "截图"
+msgstr "捕获"
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
 #, fuzzy
@@ -46313,7 +46364,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:134
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:194
 msgid "Variable"
-msgstr ""
+msgstr "变量"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:69
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:134
@@ -56707,22 +56758,22 @@ msgstr "这应该能够触发你下的断点！"
 
 #: ../../docs/development/cpp/core_types.rst:4
 msgid "Core types"
-msgstr ""
+msgstr "核心类型"
 
 #: ../../docs/development/cpp/core_types.rst:6
 msgid ""
 "Godot has a rich set of classes and templates that compose its core, and "
 "everything is built upon them."
-msgstr ""
+msgstr "Godot有丰富的用来撰写它的核心的类和模板集，所有的东西都基于它们构建。"
 
 #: ../../docs/development/cpp/core_types.rst:9
 msgid ""
 "This reference will try to list them in order for their better understanding."
-msgstr ""
+msgstr "这份参考将试着按顺序列出它们，使之更容易被理解。"
 
 #: ../../docs/development/cpp/core_types.rst:13
 msgid "Definitions"
-msgstr ""
+msgstr "定义"
 
 #: ../../docs/development/cpp/core_types.rst:15
 msgid ""
@@ -56786,7 +56837,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:40
 msgid "Memory model"
-msgstr ""
+msgstr "内存模型"
 
 #: ../../docs/development/cpp/core_types.rst:42
 msgid ""
@@ -56795,6 +56846,9 @@ msgid ""
 "more resources the OS will swap out the inactive ones. Other architectures "
 "(like mobile or consoles) are in general more limited."
 msgstr ""
+"PC有一个很棒的架构。计算机通常具有数十亿字节的RAM，数TB的存储空间，和千兆赫兹"
+"的处理器，当应用程序需要更多资源时，操作系统将交换出不活动的资源。其他架构"
+"（如移动设备或游戏主机）在这方面通常有很多限制。"
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
@@ -56803,6 +56857,9 @@ msgid ""
 "return it. This often works best and is flexible, but over time and with "
 "abuse, this can lead to segmentation."
 msgstr ""
+"最常见的内存模型是堆，应用程序会从中请求一块内存区域，底层操作系统会试着从某"
+"处找到一块这样的内存并返回它。这通常运作得很好不会出岔子，但随着时间的推移或"
+"者被滥用，也可能导致堆被切分得乱七八糟。"
 
 #: ../../docs/development/cpp/core_types.rst:52
 msgid ""
@@ -56812,6 +56869,9 @@ msgid ""
 "Modern operating systems use paged memory, which helps mitigate the problem "
 "of segmentation but doesn't solve it."
 msgstr ""
+"随着更多的常规分配，这样的切分会慢慢创建出许多过小的内存空洞，从而使内存被浪"
+"费掉。关于堆和切分的文献有很多，所以这个就不做展开讨论。现代操作系统使用了分"
+"页内存，这有助于缓解切分问题，但也不是说能完全解决问题。"
 
 #: ../../docs/development/cpp/core_types.rst:58
 msgid ""
@@ -56822,6 +56882,10 @@ msgid ""
 "other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
+"然而，许多的研究和测试显示出，在给出足够内存的情况下，如果实际最大分配尺寸，"
+"与堆的最大尺寸比较，所占比例低于一个阈值，或者说内存中还有一定比例未使用内存"
+"时，堆被切分这件事就不会随着时间的推移成为问题。换句话说，留出10-20％的内存空"
+"间，再执行小额内存分配，你也没事。"
 
 #: ../../docs/development/cpp/core_types.rst:65
 msgid ""
@@ -56833,10 +56897,14 @@ msgid ""
 "rearranged and compacted on demand. Depending on the need of the game, the "
 "programmer can configure the dynamic memory pool size."
 msgstr ""
+"Godot确保所有的可动态分配的对象都很小（最多不到几kb）。但是如果出现很大的分配"
+"（像图像、网格几何数据或大数组），会怎样呢？在这种情况下，Godot可以选择使用动"
+"态内存池。内存会被锁定以进行访问操作；如果内存不足，则内存池会根据需要进行重"
+"新排列和压缩。根据游戏的需要，程序员可以配置动态内存池的尺寸。"
 
 #: ../../docs/development/cpp/core_types.rst:74
 msgid "Allocating memory"
-msgstr ""
+msgstr "内存分配"
 
 #: ../../docs/development/cpp/core_types.rst:76
 msgid ""
@@ -56844,47 +56912,48 @@ msgid ""
 "debug. Because of this, the regular C and C++ library calls should not be "
 "used. Instead, a few other ones are provided."
 msgstr ""
+"Godot有许多工具可用于跟踪游戏中的内存使用情况，尤其是在调试期间。因此，不应使"
+"用常规的C和C++库调用。相反，Godot提供了一些其它的供你使用。"
 
 #: ../../docs/development/cpp/core_types.rst:80
 msgid "For C-style allocation, Godot provides a few macros:"
-msgstr ""
+msgstr "Godot提供了一些宏可以用来处理C风格的内存分配："
 
 #: ../../docs/development/cpp/core_types.rst:88
 msgid ""
 "These are equivalent to the usual malloc, realloc, free of the standard "
 "library."
-msgstr ""
+msgstr "这些对应于常用的标准库中的malloc，realloc，free。"
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr "这些宏可以用来处理 C++ 风格的内存分配："
+msgstr "这些宏可以用来处理C++风格的内存分配："
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr "他们对应 new、delete、new[] 和 delete[] 。"
+msgstr "他们对应了new，delete，new[]和delete[]。"
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""
 "memnew/memdelete also use a little C++ magic and notify Objects right after "
 "they are created, and right before they are deleted."
 msgstr ""
-"memnew / memdelete 也使用一点 C++ 的魔法，在创建完、删除成后立即通知对象池。"
+"memnew/memdelete也使用一点C++的小技巧，在创建或删除对象之后，会立即通知对象"
+"池。"
 
 #: ../../docs/development/cpp/core_types.rst:106
-#, fuzzy
 msgid ""
 "For dynamic memory, the DVector<> template is provided. Use it like this:"
-msgstr "至于动态内存分配， 使用  DVector<> 模板类， 像这样："
+msgstr "对于动态内存分配，可以使用DVector<>模板。就像这样："
 
 #: ../../docs/development/cpp/core_types.rst:113
-#, fuzzy
 msgid ""
 "DVector is a standard vector class, it can be accessed using the [] "
 "operator, but that's probably slow for large amount of accesses (as it has "
 "to lock internally). A few helpers exist for this:"
 msgstr ""
-"DVector 就是通常的 vector 类， 我们可以使用下标运算符取它的元素；大量频繁的读"
-"写可能是低效的（因为它内部使用了锁）。这里是使用示例："
+"DVector就像标准的vector类，它能通过运算符[]被访问；但是大量读写访问的情况下，"
+"那是低效的（因为它内部使用了锁）。这里有使用示例："
 
 #: ../../docs/development/cpp/core_types.rst:129
 msgid ""
@@ -56995,25 +57064,24 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:188
 msgid "StringName"
-msgstr ""
+msgstr "字符串名称"
 
 #: ../../docs/development/cpp/core_types.rst:190
-#, fuzzy
 msgid ""
 "StringNames are like a String, but they are unique. Creating a StringName "
 "from a string results in a unique internal pointer for all equal strings. "
 "StringNames are useful for using strings as identifier, as comparing them is "
 "basically comparing a pointer."
 msgstr ""
-"StringName 和 String 类似， 不同的是他们是唯一的。使用同一个字符串创建的 "
-"StringName 对象内部指向同一指针。 StringName 在使用字符处作为标识符时会很有"
-"用，因为比较他们的性能和比较两个指针接近。"
+"字符串名称和字符串类似，不同的是它们是唯一的。使用同一个字符串创建的字符串名"
+"称对象内部指向同一指针。 字符串名称在使用字符处作为标识符时会很有用，因为比较"
+"它们的性能和比较两个指针接近。"
 
 #: ../../docs/development/cpp/core_types.rst:195
 msgid ""
 "Creation of a StringName (especially a new one) is slow, but comparison is "
 "fast."
-msgstr "创建一个 StringName (尤其是新的字符串) 很慢， 但比较他们是非常快的。"
+msgstr "创建一个字符串名称(尤其是新的) 是慢的， 但比较它们是快的。"
 
 #: ../../docs/development/cpp/core_types.rst:201
 msgid ""
@@ -57026,10 +57094,9 @@ msgid "Math types"
 msgstr "数学类型"
 
 #: ../../docs/development/cpp/core_types.rst:206
-#, fuzzy
 msgid ""
 "There are several linear math types available in the core/math directory."
-msgstr "core/math 目录中有几种线性代数常用的类型，基本上就是这样。"
+msgstr "在core/math目录中，有几种线性代数常用的类型。"
 
 #: ../../docs/development/cpp/core_types.rst:212
 msgid ""
@@ -62083,7 +62150,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:44
 msgid "Forum"
-msgstr ""
+msgstr "论坛"
 
 #: ../../docs/community/channels.rst:46
 msgid "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
@@ -62097,53 +62164,65 @@ msgstr ""
 
 #: ../../docs/community/tutorials.rst:9
 msgid "Video tutorials"
-msgstr ""
+msgstr "视频教程"
 
 #: ../../docs/community/tutorials.rst:11
 msgid ""
 "`GDQuest <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
 "playlists>`_"
 msgstr ""
+"`GD问题 <https://www.youtube.com/channel/UCxboW7x0jZqFdvMdCFKTMsQ/"
+"playlists>`_"
 
 #: ../../docs/community/tutorials.rst:12
 msgid ""
 "`KidsCanCode <https://www.youtube.com/channel/UCNaPQ5uLX5iIEHUCLmfAgKg/"
 "playlists>`_"
 msgstr ""
+"`KidsCanCode小孩编程 <https://www.youtube.com/channel/"
+"UCNaPQ5uLX5iIEHUCLmfAgKg/playlists>`_"
 
 #: ../../docs/community/tutorials.rst:13
 msgid ""
 "`Game from Scratch: Godot 3 Tutorial Series <https://www.youtube.com/watch?"
 "v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 msgstr ""
+"`来自Scratch的游戏: Godot 3教程系列 <https://www.youtube.com/watch?"
+"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 
 #: ../../docs/community/tutorials.rst:14
 msgid ""
 "`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
 "m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
 msgstr ""
+"`心灵野兽 <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
+"m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
 
 #: ../../docs/community/tutorials.rst:15
 msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
-msgstr ""
+msgstr "`Stein代码<https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/resources.rst:6
 msgid ""
 "This is a list of third-party resources created by the community that may be "
 "of interest."
-msgstr ""
+msgstr "这是一个社区创建的你可能感兴趣的第三方资源列表。"
 
 #: ../../docs/community/resources.rst:11
 msgid ""
 "`awesome-godot: A curated list of resources by Calinou <https://github.com/"
 "Calinou/awesome-godot>`_"
 msgstr ""
+"`awesome-godot：由Calinou提供的精选资源列表<https://github.com/Calinou/"
+"awesome-godot>`_"
 
 #: ../../docs/community/resources.rst:12
 msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine：由Andre Schmitz撰写的精选资源目录<https://godot-engine."
+"zeef.com/andre.antonio.schmitz>`_"
 
 #~ msgid ""
 #~ "Click \"Play Scene\" (``F6``) and confirm you can move the player around "

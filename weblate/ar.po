@@ -5,16 +5,18 @@
 # Anas Khalil <anas.khalil@outlook.com>, 2018.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
 # Codes Otaku <ilyas.gamerz@gmail.com>, 2018.
+# Mohamed El-Baz <albaz2000eg@gmail.com>, 2018.
 # Omar Aglan <omar.aglan91@yahoo.com>, 2018.
 # Rached Noureddine <rached.noureddine@gmail.com>, 2018.
+# Takai Eddine Kennouche <takai.kenn@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-09-09 12:15+0200\n"
-"PO-Revision-Date: 2018-08-13 14:34+0000\n"
-"Last-Translator: Codes Otaku <ilyas.gamerz@gmail.com>\n"
+"PO-Revision-Date: 2018-10-22 21:22+0000\n"
+"Last-Translator: Mohamed El-Baz <albaz2000eg@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ar/>\n"
 "Language: ar\n"
@@ -23,11 +25,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
-msgstr ""
+msgstr "مراجع Godot - الفرع الرئيسي"
 
 #: ../../docs/index.rst:9
 msgid ""
@@ -35,6 +37,8 @@ msgid ""
 "documentation of the current **stable** branch? `Have a look here <http://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
+"هذا المرجع يخص الفرع الغير مستقر. هل تبحث عن مرجع الفرع المستقر الحاليّ؟ أنظر "
+"هنا <http://docs.godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -44,6 +48,9 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"مرحبا إلى المرجع الرّسمي لGodot Engine, محرّك الألعاب المجّاني و المفتوح "
+"المصدر! إذا كنت جديدا مع هذا المصدر, ننصح أن تقرأ :ref:`introduction page "
+"<doc_about_intro>` للحصول على فكرة عامّة عن ما في هذا المرجع."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -51,6 +58,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"قائمة المحتويات الموجودة تحت و في العمود الجانبي ينبغي أن تسمح لك بالدخول "
+"السهل لمرجع الموضوع اللذي يهمك. يمكنك كذلك إستعمال وظيفة البحث في الزاوية "
+"أعلى اليسار."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -60,6 +70,10 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godot Engine مشروع مفتوح المصدر طوّر من طرف مجموعة متطوّعين. فريق التوثيق يمكن "
+"أن يستفيد من ملاحظاتك و يساعد في تحسين الدلائل و المراجع التعليمية. إذا لم "
+"تفهم شيئا ما, أو لم تستطع العثور عن ما تبحث عنه في المراجع, ساعندنا على "
+"تحسينها من خلال تبليغنا!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -70,31 +84,37 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"قم بتقديم issue أو pull request على `GitHub repository <https://github.com/"
+"godotengine/godot-docs/issues>`_, ساعدنا على `ترجمة التوثيق <https://hosted."
+"weblate.org/engage/godot-engine/>`_ للغتك ، أو تناقش معنا ، إما على قناة "
+"``#documentation`` على `Discord <https://discord.gg/zH7NUgz>`_, أو قناة "
+"``#godotengine-doc`` على `irc.freenode.net <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "التوثيق الرئيسي لهذا الموقع منظم في الأقسام التالية :"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "عام"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "البدء"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "دروس تعليمية"
 
 #: ../../docs/index.rst:90
 msgid "Development"
-msgstr ""
+msgstr "التطوير"
 
 #: ../../docs/index.rst:99
 msgid "Creating Content"
-msgstr ""
+msgstr "إنشاء المحتوى"
 
 #: ../../docs/index.rst:107 ../../docs/community/index.rst:2
 msgid "Community"
@@ -184,7 +204,7 @@ msgid ""
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
 "تهدف هذه الصفحة إلى تقديم عرض واسع عن المحرك ومحتويات هذه الوثائق ، حتى تعرف "
-"من أين تبدأ إذا كنت مبتدئًا، أو أين تبحث عن معلومات حول ميزة محددة."
+"من أين تبدأ إذا كنت مبتدئًا ، أو أين تبحث عن معلومات حول ميزة محددة."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
@@ -196,9 +216,9 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
-"محرك الألعاب أداة معقدة، و لهذا السبب من الصعب شرح Godot Engine ببضع كلمات."
-"لكن إليكم التقديم العام و الرسمي، الذي هو متاح بدون قيد لإعادة الاستخدام، في "
-"حال أردتم تلخيصا سريعا عن محرك Godot Engine."
+"محرك الألعاب أداة معقدة،ومن ثم فمن الصعب تقديم Godot في  بضع كلمات. إليك على "
+"العموم عرض العلاقات العامة التقديمي الخاص بنا ، والذي يمكنك أن تعيد استخدامه "
+"بحرية إن كنت تحتاج إلى كتابة تقرير سريع عن محرك Godot ."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -217,7 +237,6 @@ msgstr ""
 "الأساسية (Android و iOS) والأنظمة الأساسية المستندة إلى تقنيات الويب (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -352,20 +371,22 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"بالإضافة لهذه الوثائق، ربما تود أيضا أن تلقي نظرة على النماذج المتنوعة من "
+"`Godot demo projects <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
+msgstr "استمتع بالقراءة وصنع الألعاب مع محرك Godot!"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "الأسئلة الشائعة"
 
 #: ../../docs/about/faq.rst:7
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
-msgstr ""
+msgstr "ما الذي يمكنني أن أفعله بـ Godot ؟ كم يكلف ؟ وما شروط الترخيص ؟"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
@@ -377,19 +398,23 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
-msgstr ""
+msgstr "باختصار :"
 
 #: ../../docs/about/faq.rst:13
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"لديك الحرية لتحميل واستخدام Godot لأي غرض ، شخصي ، غير ربحي ، تجاري ، أو غير "
+"ذلك;"
 
 #: ../../docs/about/faq.rst:14
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
+"لديك الحرية لتعديل ، توزيع ، إعادة توزيع ، إعادة تشكيل Godot كيفما شئت ، "
+"ولأي سبب ، سواء بشكل غير ربحي أو ربحي."
 
 #: ../../docs/about/faq.rst:16
 #, fuzzy
@@ -418,20 +443,26 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"لمزيد من التفاصيل ، طالع ملفات `COPYRIGHT.txt <https://github.com/"
+"godotengine/godot/blob/master/COPYRIGHT.txt>`_ وكذلك `LICENSE.txt <https://"
+"github.com/godotengine/godot/blob/master/LICENSE.txt>`_ و `LOGO_LICENSE.txt "
+"<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ في "
+"مستودع Godot."
 
 #: ../../docs/about/faq.rst:28
 msgid ""
 "Also see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"انظر أيضا `صفحة الترخيص على موقع Godot <https://godotengine.org/license>`_."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "أي المنصات مدعومة بواسطة Godot ؟"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**للمحرر:**"
 
 #: ../../docs/about/faq.rst:35
 msgid "Windows"
@@ -13971,7 +14002,7 @@ msgstr ""
 #: ../../docs/tutorials/animation/cutout_animation.rst:279
 #: ../../docs/development/file_formats/tscn.rst:365
 msgid "Animation"
-msgstr ""
+msgstr "صورة متحركة"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
 msgid "Animation supported:"

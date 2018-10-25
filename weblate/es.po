@@ -10,28 +10,37 @@
 # Cameron Toms <cameron.toms@gmail.com>, 2018.
 # Carlos Roberto Rojas C <carlosroberto.rojas@gmail.com>, 2018.
 # César León <ceesarleon2002@gmail.com>, 2018.
+# Cristian Martinez <organocm@gmail.com>, 2018.
 # David Arranz <davarrcal@hotmail.com>, 2018.
 # Dianiel García <jdangarr@gmail.com>, 2018.
 # Elena G <elena.guzbla@gmail.com>, 2018.
 # Elias Mascheroni <eliasmg-py@outlook.com>, 2018.
 # eon-s <emanuel.segretin@gmail.com>, 2018.
+# Ethan Huff <et.huff.the1st@gmail.com>, 2018.
+# Fidel Dalmasso <fidelmasso@gmail.com>, 2018.
 # Franco F <ezefran256@gmail.com>, 2018.
 # Hernan Campillo Mecklenburg <hcampillo.88@gmail.com>, 2018.
+# Hernan Prado <pradoh97@gmail.com>, 2018.
 # Javier López Úbeda <jlopezcur@gmail.com>, 2018.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2018.
 # Joaquin Bozzalla <joaco.mbb@gmail.com>, 2018.
+# Jonasfxh <Jonasfxh@gmail.com>, 2018.
 # Jorge Araya Navarro <jorge@esavara.cr>, 2018.
 # Jorge Marcos <jorgemarcos@protonmail.com>, 2018.
 # Jose Maria Martinez <josemar1992@hotmail.com>, 2018.
+# Juan Antonio Frutos Lopez <juanantonio.tecno@gmail.com>, 2018.
 # Juan Carlos <juanvelandia@protonmail.com>, 2018.
 # Juan Jesús Ligero <jjhaggar@gmail.com>, 2018.
+# Juanjo <jjramos@gmail.com>, 2018.
 # Julio Alvar Tamaño <alvarjt@gmail.com>, 2018.
+# Kevin S Mojica <keffspace@gmail.com>, 2018.
 # Kevin Soto Vallejo <siguemek@gmail.com>, 2018.
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
 # Max R.R. Collada <mrdguezc@gmail.com>, 2018.
 # Nahum Rosillo Lopez <nahum.rosillolopez@gmail.com>, 2018.
 # Oscar Vila <codemoscar@gmail.com>, 2018.
 # pablo guevara <pabloguevara@gmail.com>, 2018.
+# Pòsweg <joshu253@gmail.com>, 2018.
 # R. Joshua Seville <rjoshua@protonmail.com>, 2018.
 # Renato Pereson <peresonrenato@gmail.com>, 2018.
 # Ricardo Pérez <ricpelo@gmail.com>, 2018.
@@ -48,8 +57,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-09-09 12:15+0200\n"
-"PO-Revision-Date: 2018-09-07 18:26+0000\n"
-"Last-Translator: yaelatletl <yael.atletl@gmail.com>\n"
+"PO-Revision-Date: 2018-10-25 13:19+0000\n"
+"Last-Translator: Juan Antonio Frutos Lopez <juanantonio.tecno@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -57,7 +66,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -892,18 +901,21 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"El objetivo de Godot es crear un motor con licencia MIT libre y de código "
+"abierto que sea modular y ampliable. No hay planes para que la comunidad "
+"central de desarrollo de motores admita ningún SDK de código cerrado/"
+"propietario de terceros, ya que la integración con ellos iría en contra del "
+"espíritu de Godot."
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"Dicho esto, debido a que es de código abierto y modular, nada te detiene a "
-"ti, o a cualquier otro interesado, en añadir esas bibliotecas como un módulo "
-"y lanzar tu juego usándolo, ya sea de código abierto o no. Todo está "
-"permitido."
+"Dicho esto, como Godot es de código abierto y modular, nada te impide a ti "
+"ni a nadie interesado en añadir esas bibliotecas como módulo y distribuir tu "
+"juego con ellas, ya sea como código abierto o como código cerrado."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
@@ -920,6 +932,11 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Si conoces algún SDK de terceros que no es soportado por Godot, pero que "
+"ofrece integración gratuita y de código abierto, considera iniciar el "
+"trabajo de integración por ti mismo. Godot no es propiedad de una persona; "
+"pertenece a la comunidad y crece junto con los contribuyentes ambiciosos de "
+"la comunidad, justo como vos."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -949,17 +966,16 @@ msgstr ""
 "variedad de tamaños y DPIs."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"La forma más común y la más apropiada para lograr esto es, en su lugar, usar "
-"una única resolución base para el juego y solo manejar diferentes aspectos "
-"de pantalla. Esto es necesario principalmente para 2D, ya que en 3D es solo "
-"cuestión de cambiar el campo de visión de la Cámara."
+"La forma más común y correcta de conseguirlo es, en su lugar, utilizar una "
+"única resolución base para el juego y manejar únicamente diferentes "
+"relaciones de aspecto de pantalla. Esto es necesario sobre todo para 2D, ya "
+"que en 3D es sólo cuestión de usar la cámara XFov o YFov."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -1030,16 +1046,16 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "¿Cómo puedo extender Godot?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Para crear complementos para el Editor de Godot, mira :ref:`EditorPlugins "
+"Para extender Godot, como crear plugins de Godot Editor o añadir soporte "
+"para lenguajes adicionales, echa un vistazo a :ref:`EditorPlugins "
 "<doc_making_plugins>` y tool scripts."
 
 #: ../../docs/about/faq.rst:228
@@ -1060,26 +1076,28 @@ msgstr ""
 "`¡GDNative está aquí! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
-#, fuzzy
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
-"También le puedes echar un vistazo a la implementación de GDScript, los "
-"módulos de Godot así como al  `soporte no oficial de Python <https://github."
-"com/touilleMan/godot-python>`_ para Godot."
+"También puedes echar un vistazo a la implementación de GDScript, los módulos "
+"de Godot, así como el `soporte no oficial de Python <https://github.com/"
+"touilleMan/godot-python>`_ para Godot. Este sería un buen punto de partida "
+"para ver cómo otra librería de terceros se integra con Godot."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "¡Me gustaría contribuir! ¿Cómo puedo empezar?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"¡Fantástico! Como proyecto de código abierto, Godot prospera gracias a la "
+"innovación y ambición de desarrolladores como tú."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -1089,10 +1107,16 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"El primer lugar para comenzar es el de `discusión <https://github.com/"
+"godotengine/godot/issues>`_. Encuentra un problema que te suene familiar, "
+"entonces proceda a la guía de `Como contribuir <https://github.com/"
+"godotengine/godot/blob/master/CONTRIBUTING.md#contributing-pull-requests>`_ "
+"la guía te enseña como hacer un “fork”, modificar y enviar un “Pull Request "
+"(PR)” con tus cambios."
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "Tengo una gran idea para Godot ¿Cómo puedo compartirla?"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -1106,12 +1130,23 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"Puede ser tentador querer proponer ideas para Godot, como las que resultan "
+"en cambios masivos al nucleo, algo como imitar lo que otro motor de juego "
+"hace, o flujos de trabajo que te gustaria implementar en el editor. Estos "
+"son grandiosos y estamos agradecidos de tener gente motivada en querer "
+"contribuir, pero el enfoque de Godot siempre sera la funcionalidad del "
+"nucleo como mencionado en 'el mapa vial<https://github.com/godotengine/godot-"
+"roadmap/blob/master/ROADMAP.md>`_, `corrigiendo errores y resolviendo "
+"problemas <https://github.com/godotengine/godot/issues>`_, y conversaciones "
+"entre miembros de la comunidad Godot."
 
 #: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"La mayor parte de los desarrolladores de la comunidad de Godot estarán más "
+"interesados en aprender sobre cosas como esta:"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
@@ -1130,35 +1165,33 @@ msgstr ""
 "para tu proyecto."
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""
-"Los conceptos que fueron difíciles de entender para aprender el software."
+"Los conceptos que eran difíciles de entender mientras se aprendía el "
+"software."
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
 msgstr "Las partes de tu flujo de trabajo que te gustaría ver optimizadas."
 
 #: ../../docs/about/faq.rst:269
-#, fuzzy
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
-"Partes en donde no hay tutoriales claros o lugares donde la documentación no "
-"estaba a la altura."
+"Partes donde no hay tutoriales claros o donde la documentación no estaba "
+"clara."
 
 #: ../../docs/about/faq.rst:271
-#, fuzzy
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"No sientas que tus ideas para Godot no son bienvenidas. En su lugar, intenta "
-"reformularlas como un problema primero, así los desarrolladores y la "
-"comunidad tienen una base sobre cual discutir."
+"Por favor, no sientas que tus ideas sobre Godot no son bienvenidas. En su "
+"lugar, intenta reformularlas como un problema primero, así los "
+"desarrolladores y la comunidad tienen una base sobre cual discutir."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -1168,9 +1201,13 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"Una buena manera de compartir tus ideas y problemas con la comunidad es como "
+"un conjunto de acciones de usuario. Explica qué intentas hacer, qué esperas "
+"que suceda, y también qué es lo que está ocurriendo realmente. Dividir las "
+"ideas y problemas de esta forma ayuda a toda la comunidad a estar más "
+"enfocada en mejorar las experiencias de los desarrolladores en general."
 
 #: ../../docs/about/faq.rst:281
-#, fuzzy
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
@@ -1640,7 +1677,6 @@ msgid "It can be extended (to have more functions)."
 msgstr "Se puede extender (para tener más funciones)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-#, fuzzy
 msgid "It can be added to other nodes as a child."
 msgstr "Se puede agregar a otros nodos como hijos."
 
@@ -1694,9 +1730,8 @@ msgstr ""
 "forma de árbol). Además, una escena:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:65
-#, fuzzy
 msgid "always has one root node."
-msgstr "Siempre tiene un solo nodo raíz."
+msgstr "siempre tiene un solo nodo raíz."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
 msgid "can be saved to disk and loaded back."
@@ -1771,14 +1806,13 @@ msgstr ""
 "editor de Godot:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
-#, fuzzy
 msgid ""
 "As mentioned before, making games in Godot feels like being in a kitchen, so "
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
 "Como se mencionó anteriormente, hacer juegos en Godot es como estar en una "
-"cocina, así que vamos a abrir el frigorífico y agregar algunos nodos nuevos "
+"cocina, así que vamos a abrir el refigerador y agregar algunos nodos nuevos "
 "al proyecto. Comenzaremos con un mensaje \"¡Hola mundo!\" que pondremos en "
 "la pantalla."
 
@@ -1797,7 +1831,6 @@ msgstr ""
 "lista de nodos que se pueden crear:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:115
-#, fuzzy
 msgid ""
 "From there, select the \"Label\" node first. Searching for it is probably "
 "the fastest way:"
@@ -1832,13 +1865,12 @@ msgstr ""
 "Inspector (panel situado en la esquina inferior derecha)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
-#, fuzzy
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
 "El siguiente paso será cambiar la propiedad \"Text\" de la etiqueta. Vamos a "
-"cambiarlo por \"Hello, World!\":"
+"cambiarlo por \"¡Hola Mundo!\":"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -1880,13 +1912,12 @@ msgstr ""
 "recursos dentro del juego."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
-#, fuzzy
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
 "Después de guardar la escena y presionar *reproducir escena* de nuevo, la "
-"demo \"Hello, World!\" se  ejecutará finalmente:"
+"demo \"¡Hola Mundo!\" se  ejecutará finalmente:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
@@ -2036,7 +2067,6 @@ msgid "In the above picture, Scene B was added to Scene A as an instance."
 msgstr "En la imagen anterior, Scene B se añadió a Scene A como una instancia."
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
-#, fuzzy
 msgid "Instancing by example"
 msgstr "Instanciar con ejemplos"
 
@@ -2111,7 +2141,6 @@ msgstr ""
 "pantalla:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
-#, fuzzy
 msgid "Multiple instances"
 msgstr "Instancias múltiples"
 
@@ -2177,14 +2206,14 @@ msgid "Conclusion"
 msgstr "Conclusión"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:114
-#, fuzzy
 msgid ""
 "Instancing can be useful when you want to create many copies of the same "
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_scripting_continued`."
 msgstr ""
 "Instanciar puede ser útil cuando quieres crear muchas copias de un mismo "
-"objeto."
+"objeto. También es posible crear instancias desde el código usando GDScript, "
+"ver :ref:`doc_scripting_continued`."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:4
 msgid "Instancing (continued)"
@@ -3324,7 +3353,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "Registrar scripts como clases"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
 msgid ""
@@ -3332,6 +3361,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"Godot tiene una funcionalidad de \"Script Class\" para registrar codigos "
+"individuales con el Editor. Por defecto, solo puedes accesar codigos sin "
+"nombre cargando el archivo directamente."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
 msgid ""
@@ -3340,26 +3372,31 @@ msgid ""
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"Puedes nombrar un script y registrarlo como un tipo en el editor con la "
+"palabra clave ``class_name`` seguida por el nombre de la clase. Puedes "
+"agregar una coma y una dirección opcional a una imagen para usarla como "
+"ícono. De esta forma encontrarás un nuevo tipo en la ventana Node o Resource "
+"creation."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
-#, fuzzy
 msgid "In Godot 3.1:"
-msgstr "Hola, Godette v3.11"
+msgstr "En Godot 3.1:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"Únicamente GDScript o NativeScript, en otras palabras, C++ y otros lenguajes "
+"basandos en GDNative, pueden registrar scripts."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "Únicamente GDScript crea variables globales para cada script nombrado."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
-#, fuzzy
 msgid "Your first game"
-msgstr "Tu Primer Juego"
+msgstr "Tu primer juego"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:7
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
@@ -3443,9 +3480,8 @@ msgstr ""
 "> Display -> Window y colocar \"Width\" en 480 y \"Height\" en 720."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:43
-#, fuzzy
 msgid "Organizing the project"
-msgstr "Organización del Proyecto"
+msgstr "Organizando el proyecto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
 msgid ""
@@ -3465,9 +3501,8 @@ msgstr ""
 "carpetas en el Panel de Sistema de Archivos, en la parte superior izquierda:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
-#, fuzzy
 msgid "Player scene"
-msgstr "Escenas del jugador"
+msgstr "Escena del jugador"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:58
 msgid ""
@@ -3480,7 +3515,6 @@ msgstr ""
 "manera separada, aún antes de haber creado otras partes del juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:63
-#, fuzzy
 msgid "Node structure"
 msgstr "Estructura de nodos"
 
@@ -3535,9 +3569,8 @@ msgstr ""
 "``snake_case`` y las constantes ``ALL_CAPS``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
-#, fuzzy
 msgid "Sprite animation"
-msgstr "Animación del Sprite"
+msgstr "Animación del sprite"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
@@ -3613,9 +3646,8 @@ msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr "Cuando hayas terminado, tu escena ``Player`` debería verse así:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:132
-#, fuzzy
 msgid "Moving the player"
-msgstr "Movimiento del jugador (player)"
+msgstr "Movimiento del jugador"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid ""
@@ -3820,6 +3852,11 @@ msgid ""
 "scene can be closed by clicking ``Output`` (which should be highlighted in "
 "blue) in the lower left of the Bottom Panel."
 msgstr ""
+"Haz click en \"Play Scene\" (``F6``) y verá que puede mover el jugador a lo "
+"largo de la pantalla en todas las direcciones. La salida de la consola que "
+"se abre encima de la escena en ejecución puede ser cerrada haciendo click en "
+"``Output`` (que debería estar resaltado en azul) en la parte inferior "
+"izquierda del panel inferior."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:315
 msgid ""
@@ -3835,9 +3872,8 @@ msgstr ""
 "escena."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:320
-#, fuzzy
 msgid "Choosing animations"
-msgstr "Seleccionar Animaciones"
+msgstr "Seleccionar animaciones"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:322
 msgid ""
@@ -3861,6 +3897,9 @@ msgid ""
 "programmers. Consider this code versus the shortened boolean assignment "
 "above:"
 msgstr ""
+"Las asignaciones booleanas en el código de arriba son una abreviatura para "
+"los programadores. Considere este código versus la asignación booleana "
+"abreviada de arriba:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
 msgid ""
@@ -3874,9 +3913,8 @@ msgstr ""
 "comience el juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:387
-#, fuzzy
 msgid "Preparing for collisions"
-msgstr "Preparar las Colisiones"
+msgstr "Preparacion para las colisiones"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:389
 msgid ""
@@ -3958,9 +3996,8 @@ msgstr ""
 "reiniciarlo cuando comenzamos un juego nuevo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:475
-#, fuzzy
 msgid "Enemy scene"
-msgstr "Escena del Enemigo"
+msgstr "Escena del enemigo"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:477
 msgid ""
@@ -4075,9 +4112,8 @@ msgstr ""
 "ajustar la propiedad ``Rotation Degrees`` a ``90`` en la sección ``Node2D``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:525
-#, fuzzy
 msgid "Enemy script"
-msgstr "Script del Enemigo"
+msgstr "Script del enemigo"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:527
 msgid "Add a script to the ``Mob`` and add the following member variables:"
@@ -4135,7 +4171,6 @@ msgid "This completes the `Mob` scene."
 msgstr "Esto completa la escena `Mob`."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:607
-#, fuzzy
 msgid "Main scene"
 msgstr "Escena principal"
 
@@ -4221,9 +4256,8 @@ msgstr ""
 "ajusta la propiedad ``Position`` del nodo ``StartPosition`` en ``(250,450)``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:636
-#, fuzzy
 msgid "Spawning mobs"
-msgstr "Agregando Enemigos"
+msgstr "Agregando enemigos"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:638
 msgid ""
@@ -4282,9 +4316,8 @@ msgstr ""
 "y una dirección a lo largo del camino."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:665
-#, fuzzy
 msgid "Main script"
-msgstr "Script Main"
+msgstr "Script Principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
 msgid ""
@@ -4699,7 +4732,6 @@ msgstr ""
 "seleccionar una escena principal, selecciona ``Main.tscn``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1123
-#, fuzzy
 msgid "Finishing up"
 msgstr "Finalizando"
 
@@ -4742,7 +4774,6 @@ msgstr ""
 "nodo ``Sprite``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
-#, fuzzy
 msgid "Sound effects"
 msgstr "Efectos de sonido"
 
@@ -4855,9 +4886,8 @@ msgstr ""
 "de efectos de partículas."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1196
-#, fuzzy
 msgid "Project files"
-msgstr "Archivos de Proyecto"
+msgstr "Archivos del Proyecto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
 msgid ""
@@ -5002,9 +5032,8 @@ msgstr ""
 "nueva versión o tus proyectos exportados podrían no funcionar correctamente."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export presets"
-msgstr "Exportación de Preajustes"
+msgstr "Exportar Preajustes"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:142
 msgid ""
@@ -5052,9 +5081,8 @@ msgstr ""
 "ajustes como están."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
-#, fuzzy
 msgid "Exporting by platform"
-msgstr "Exportación por plataforma"
+msgstr "Exportando por plataforma"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:162
 msgid ""
@@ -5065,9 +5093,8 @@ msgstr ""
 "cualquier software o requisito adicional que necesites."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
-#, fuzzy
 msgid "PC (Linux/macOS/Windows)"
-msgstr "PC (Linux/MacOS/Windows)"
+msgstr "PC (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:168
 msgid ""
@@ -10432,26 +10459,29 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
+"El sistema de escena de Godot, potente y flexible, tiene una desventaja: no "
+"hay un método para almacenar información (por ejemplo, el puntaje del "
+"jugador o un inventario) que se necesite en más de una escena."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
 msgstr ""
+"Es posible acceder a esto con una serie de soluciones provisionales, pero "
+"éstas traen sus propias limitaciones:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
-#, fuzzy
 msgid ""
 "You can use a \"master\" scene that loads and unloads other scenes as its "
 "children. However, this means you can no longer run those scenes "
 "individually and expect them to work correctly."
 msgstr ""
-"Si bien es posible que una escena que carga y descarga otras escenas como "
-"sus hijas almacene información común a estas escenas hijas, ya no es posible "
-"ejecutar estas escenas por sí mismas y esperar que funcionen correctamente."
+"Puedes usar una escena \"master\" que cargue y descargue otras escenas como "
+"sus hijos. Sin embargo, eso significa que ya no puedas ejecutar esas escenas "
+"individualmente y esperar que funcionen correctamente."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:19
-#, fuzzy
 msgid ""
 "Information can be stored to disk in ``user://`` and then loaded by scenes "
 "that require it, but frequently saving and loading data is cumbersome and "
@@ -10463,35 +10493,32 @@ msgstr ""
 "engorroso y puede ser lento."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
 "persistent information between scenes."
 msgstr ""
-"Los singletons de escenas son útiles, ya que sirven para un caso de uso "
-"común en el que se necesita almacenar información persistente entre escenas."
+"El  `Singleton Pattern (instancia única) <https://en.wikipedia.org/wiki/"
+"Singleton_pattern>`es una herramienta útil para resolver el caso de uso "
+"común en el que necesita almacenar información persistente entre escenas."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:27
 msgid "Using this concept, you can create objects that:"
-msgstr ""
+msgstr "Usando este concepto, puede crear objetos que:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 #, fuzzy
 msgid "Are always loaded, no matter which scene is currently running"
-msgstr "Siempre se cargan, sin importar qué escena se abre desde el editor"
+msgstr ""
+"Siempre se cargan, no importa qué escena se está ejecutando actualmente"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:30
-#, fuzzy
 msgid "Can store global variables, such as player information"
-msgstr ""
-"Puede almacenar variables globales, como información del jugador, objetos, "
-"dinero, etc. y compartir información entre escenas"
+msgstr "Puedes almacenar variables globales, como información del jugador"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions"
-msgstr "Es capaz de cambiar escenas y transiciones"
+msgstr "Puedes manejar el cambio de escenas y transiciones entre-escenas"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 #, fuzzy
@@ -10512,27 +10539,31 @@ msgid "AutoLoad"
 msgstr "AutoLoad"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
-#, fuzzy
 msgid ""
 "You can use AutoLoad to load a scene or a script that inherits from :ref:"
 "`Node <class_Node>`. Note: when autoloading a script, a Node will be created "
 "and the script will be attached to it. This node will be added to the root "
 "viewport before any other scenes are loaded."
 msgstr ""
-"Se puede usar AutoLoad para cargar una escena, o un script que hereda desde "
-"un Nodo (se creará un nodo y el script se situará en éste)."
+"Puedes usar AutoLoad para cargar una escena o un script que hereda desde un "
+"Nodo (se creará un nodo y el script se situará en éste)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:46
 msgid ""
 "To autoload a scene or script, select ``Project -> Project Settings`` from "
 "the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
+"Para cargar automáticamente una escena o un script, seleccione ``Project -> "
+"Project Settings`` desde el menú y cambie a la pestaña \"AutoLoad\"."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which assigned as the node's ``name`` property."
 msgstr ""
+"Aquí puede agregar la cantidad de scenas o scripts que quiera. Cada entrada "
+"en esta lista requiere un nombre, que es asignado como la propiedad ``name`` "
+"del nodo."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:56
 #, fuzzy
@@ -10553,13 +10584,16 @@ msgid ""
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
+"Note que los objetos de cargado automático (scripts y/o escenas) son "
+"accedidos como a cualquier otro nodo en el árbol de escena. De hecho, si "
+"mira el árbol de escena en ejecución, verá que los nodos de cargado "
+"automático aparecen:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:88
 msgid "Custom scene switcher"
 msgstr "Conmutador de escenas personalizado"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:90
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -10567,20 +10601,20 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
-"Este breve tutorial explicará cómo hacer un conmutador de escenas usando "
-"autoload. Para un simple cambio de escena, el método :ref:`SceneTree."
-"change_scene() <class_SceneTree_change_scene>` es suficiente (descrito en :"
-"ref:`doc_scene_tree`), por lo que este método es para un comportamiento más "
-"complejo al cambiar entre escenas."
+"Este tutorial mostrará cómo construir un conmutador de escenas usando la "
+"carga automática. Para el cambio de escenas basico, puedes usar el metodo :"
+"ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` (mira :ref:"
+"`doc_scene_tree` para detalles), Sin embargo, sí tu necesitas un "
+"comportamiento mas complejo al cambiar de escena, este método proporciona "
+"más funcionalidad."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:96
-#, fuzzy
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
-"Primero descarga la plantilla desde acá: :download:`autoload.zip <files/"
-"autoload.zip>`, luego ábrela."
+"Para comenzar, descarga el templae desde aquí: :download:`autoload.zip "
+"<files/autoload.zip>`, y ábrelo en Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:99
 msgid ""
@@ -10589,6 +10623,10 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
+"El proyecto contiene dos escenas: ``Scene1.tscn`` y ``Scene2.tscn``. Cada "
+"escena contiene una etiqueta mostrando el nombre de la escena y un botón con "
+"su señal ``pressed()` conectada. Cuando ejecutes el proyecto, este comienza "
+"en ``Scene1.tscn``. Sin embargo, presionar el botón no hace nada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:105
 #, fuzzy
@@ -10600,31 +10638,31 @@ msgid ""
 "Switch to the \"Script\" tab and create a new script called Global.gd. Make "
 "sure it inherits from ``Node``:"
 msgstr ""
+"Cambie a la pestaña \"Script\" y cree un nuevo script llamado Global.gd. "
+"Asegúrese de que esté heredado de ``Node``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open ``Project > "
 "Project Settings`` from the menu, switch to the \"AutoLoad\" tab and select "
 "the script by clicking the ``..`` button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
-"El script debería abrirse en el editor de scripts. El siguiente paso es "
-"añadirlo a la lista AutoLoad. Selecciona Proyecto > Ajustes del proyecto en "
-"el menú, ve a la pestaña AutoLoad y añade una nueva entrada con el nombre "
-"\"global\" que apunte a este archivo:"
+"El siguiente paaso es añadir este script en la lista de autoLoad. Selecciona "
+"Proyecto > Ajustes del proyecto en el menú, ve a la pestaña AutoLoad y "
+"selecciona el script haciendo click en el  ``..`` botón o escribiendo su "
+"ruta: ``res://Global.gd``. Presiona \"Añadir\" para añadirlo en la lista "
+"autoLoad:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:119
-#, fuzzy
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
-"Ahora, cada vez que se ejecute cualquiera de las escenas, el script siempre "
-"estará cargado."
+"Ahora, cada vez que se ejecute cualquiera de las escenas en el proyecto, el "
+"script siempre estará cargado."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
@@ -10632,21 +10670,20 @@ msgid ""
 "This means that the last child of root is always the loaded scene."
 msgstr ""
 "Volviendo a nuestro script, la escena actual necesita ser recuperada en la "
-"función `_ready()`. Tanto la escena actual como `global.gd` son hijos de "
-"root, pero los nodos autocargados son siempre los primeros. Esto significa "
-"que el último hijo de root es siempre la escena cargada."
+"función `_ready()`. Tanto la escena actual (el que tiene el botón) como "
+"`global.gd` son hijos de root, pero los nodos autocargados son siempre los "
+"primeros. Esto significa que el último hijo de root es siempre la escena "
+"cargada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:153
-#, fuzzy
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
-"La siguiente es la función para cambiar la escena. Esta función libera la "
-"escena actual y la reemplaza por la solicitada."
+"Ahora necesitamos una función para cambiar la escena. Esta función necesita "
+"liberar la escena actual y reemplazarla con la solicitada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:222
-#, fuzzy
 msgid ""
 "As mentioned in the comments above, we need to avoid the situation of "
 "deleting the current scene while it is still being used (i.e. its code is "
@@ -10655,21 +10692,19 @@ msgid ""
 "the second function will run at a later time when any code from the current "
 "scene has completed."
 msgstr ""
-"Como se ha mencionado anteriormente, queremos evitar la situación de tener "
-"la escena actual eliminada mientras está siendo utilizada (código de las "
-"funciones de ejecución), por lo que se necesita usar :ref:`Object."
+"Como se ha mencionado anteriormente, necesitamos evitar la situación de "
+"eliminar la escena actual mientras se está utilizando(i.e. su código todavía "
+"se está ejecutando), por lo que es necesario usar :ref:`Object."
 "call_deferred() <class_Object_call_deferred>` en este punto. El resultado es "
-"que la ejecución de los comandos en la segunda función ocurrirá en un "
-"momento posterior cuando no se esté ejecutando ningún código de la escena "
-"actual."
+"que la segunda función se ejecutará en un momento posterior cuando se haya "
+"completado cualquier código de la escena actual."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:228
-#, fuzzy
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
 msgstr ""
-"Finalmente, lo único que falta es completar las funciones vacías en scene_a."
-"gd y scene_b.gd:"
+"Finalmente, necesitamos llenar el vació de las funciones llamadas en las dos "
+"escenas:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:248
 #: ../../docs/tutorials/math/vector_math.rst:276
@@ -10678,13 +10713,12 @@ msgid "and"
 msgstr "y"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:268
-#, fuzzy
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button!"
 msgstr ""
-"Ahora, si ejecutas el proyecto ¡puedes cambiar entre ambas escenas pulsando "
-"el botón!"
+"Ejecuta el proyecto y prueba que puedes cambiar entre escenas presionando el "
+"botón!"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:271
 msgid ""
@@ -10693,6 +10727,10 @@ msgid ""
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""
+"Nota: Cuando las escenas son pequeñas, la transición es instantánea. Sin "
+"embargo, sí tus escenas son más complejas, pueden tardar un tiempo "
+"considerable en aparecer. Para aprender cómo solucionar esto, mire el "
+"siguiente tutorial: :ref:`doc_background_loading`"
 
 #: ../../docs/getting_started/editor/index.rst:2
 msgid "Editor manual"
@@ -12584,13 +12622,12 @@ msgid "NodePath or StringName"
 msgstr "Ruta del nodo o nombre"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
-#, fuzzy
 msgid "``$NodePath``"
-msgstr "Ruta del nodo"
+msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:315
 msgid "Shorthand for ``get_node(\"NodePath\")``"
-msgstr ""
+msgstr "Abreviatura para ``get_node(\"NodePath\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:319
 msgid "Comments"
@@ -13396,6 +13433,10 @@ msgid ""
 "reference them using the file's path, using either a relative or an absolute "
 "path. For example, if you name a script file ``character.gd``"
 msgstr ""
+"Por defecto, todos los archivos script son clases sin nombre. En este caso, "
+"usted puede hacer referencia a ellos usando la dirección del archivo, o bien "
+"usando una dirección absoluta o relativa. Por ejemplo, si nombra un archivo "
+"script  ``character.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:892
 msgid ""
@@ -17359,7 +17400,7 @@ msgstr "end"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "End"
-msgstr "End"
+msgstr "Fin"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:163
 msgid "get_area()"
@@ -48362,7 +48403,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 #: ../../docs/tutorials/viewports/viewports.rst:38
 msgid "Input"
-msgstr ""
+msgstr "Entrada"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:114
 msgid ""
@@ -48981,7 +49022,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:128
 msgid "Capture"
-msgstr ""
+msgstr "Captura"
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""
@@ -53396,9 +53437,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:136
-#, fuzzy
 msgid "fragColor"
-msgstr "Color"
+msgstr "fragColor"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:138
 msgid "fragCoord"
