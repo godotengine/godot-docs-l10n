@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr "컨트롤 노드로 인터페이스를 설계하기"
+msgstr "컨트롤 (Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -103,7 +103,8 @@ msgid "Bounding rectangle"
 msgstr "경계 사각형"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-msgid "Focus and focus neighbour"
+#, fuzzy
+msgid "Focus and focus neighbor"
 msgstr "포커스와 포커스 이웃"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
@@ -180,10 +181,11 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
+#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
-"property to change its behaviour:"
+"property to change its behavior:"
 msgstr ""
 "**TextureRect** 은 UI 내에 텍스쳐나 이미지를 보여줍니다. 이것은 Sprite 노드"
 "와 비슷하지만 다중 크기 조절 모드를 제공합니다. Stretch Mode 속성을 설정하여 "
@@ -236,8 +238,9 @@ msgstr ""
 "다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
+#, fuzzy
 msgid ""
-"As with Sprite nodes, you can modulate the TextureRect's colour. Click the "
+"As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
 "Sprite 노드와 마찬가지로, 당신은 TextureRect의 색상을 바꿀 수 있습니다. "
@@ -358,15 +361,16 @@ msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
+#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
-"corners. It is useful to build panels, dialogue boxes and scalable "
-"backgrounds for your UI."
+"corners. It is useful to build panels, dialog boxes and scalable backgrounds "
+"for your UI."
 msgstr ""
 "**NinePatchRect** 텍스쳐를 3행과 3열로 분할합니다. 중앙과 모서리는 텍스쳐의 "
-"크기에 맞춰지지만, 코너 부분은 크기가 바뀌지 않습니다. 이것은 패널이나 대화 "
-"상자, UI에서 크기 조절이 가능한 배경을 만들 때 유용합니다."
+"크기에 맞추어지지만, 코너 부분은 크기가 바뀌지 않습니다. 이것은 패널이나 대"
+"화 상자, UI에서 크기 조절이 가능한 배경을 만들 때 유용합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -374,7 +378,7 @@ msgstr "min\\_size 속성으로 조절된 NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "There are two workflows to build responsive UIs"
-msgstr "반응형 UI를 만들기 위해 두 가지 워크플로우가 있습니다"
+msgstr "반응 형 UI를 만들기 위해 두 가지 워크플로우"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:169
 msgid ""

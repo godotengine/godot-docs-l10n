@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,11 @@ msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
 msgstr "Теперь, когда вы \"набили руку\", давайте поговорим о дизайне Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
+#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
-"they offer a range of features, the design of each engine is unique. This "
-"leads to different workflows and different ways to form your games’ "
+"they offer a range of features, but the design of each engine is unique. "
+"This leads to different workflows and different ways to form your games’ "
 "structures. This all stems from their respective design philosophies."
 msgstr ""
 "**Каждый игровой движок отличается и соответствует различным потребностям.** "
@@ -200,10 +201,10 @@ msgid ""
 "types and offers a static language's quality of auto-completion. It is also "
 "optimized for gameplay code with built-in types like Vectors and Colors."
 msgstr ""
-"GDscript позволяет писать простой код с использованием синтаксиса, похожего "
-"на Python, но к тому же он обнаруживает типы и предлагает качество "
-"автозаполнения статического языка. Он также оптимизирован для написания кода "
-"игрового процесса со встроенными типами, такими как Vectors и Colors."
+"GDscript позволяет писать простой код, используя Python-подобный синтаксис, "
+"он обнаруживает типы и предлагает качественное  автоматическое завершение "
+"статического языка. Он также оптимизирован для игрового кода со встроенными "
+"типами, такими как векторы и цвета."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:87
 msgid ""
@@ -258,7 +259,6 @@ msgstr ""
 "визуально управлять состояниями и переходами*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
-#, fuzzy
 msgid "Open source"
 msgstr "Открытый исходный код"
 
@@ -272,20 +272,19 @@ msgid ""
 msgstr ""
 "Godot предлагает полностью открытую кодовую базу под лицензией **MIT.** Это "
 "означает, что все технологии, которые поставляются с ней, должны быть "
-"бесплатными (как свобода). По большей части, они кодируются авторами с нуля."
+"бесплатными. По большей части, они кодируются авторами с нуля."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
-#, fuzzy
 msgid ""
 "Anyone can plug in proprietary tools for the needs of their projects — they "
 "just won’t ship with the engine. This may include NVIDIA PhysX, Google "
 "AdMob, or an FBX model importer. Any of these can come as third-party "
 "plugins instead."
 msgstr ""
-"Любой может подключить проприетарные инструменты для нужд своих проектов - "
-"они не будут поставляться с движком. Это может быть Nvidia PhysX, Google "
-"Admob или импортер файлов FBX. Любой из них может использоваться как "
-"сторонний плагин."
+"Любой может подключить собственные инструменты для нужд своих проектов - они "
+"не будут поставляться с движком. Это может быть Nvidia PhysX, Google Admob "
+"или импортер файлов FBX. Любой из них может использоваться как сторонний "
+"плагин."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -325,7 +324,6 @@ msgstr ""
 "пользователей."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:137
-#, fuzzy
 msgid ""
 "That said, although a handful of core developers work on it full-time, the "
 "project has over 600 contributors at the time of writing. Benevolent "
@@ -335,8 +333,8 @@ msgid ""
 msgstr ""
 "Несмотря на то, что горстка основных разработчиков работает полный рабочий "
 "день, в проекте более 500 участников. Доброжелательные программисты работают "
-"над функциями, которые им могут понадобиться сами, поэтому во всех основных "
-"версиях вы увидите улучшения во всех углах движка."
+"над функциями, которые им самим могут понадобиться, поэтому в каждой версии "
+"вы увидите улучшения во всех аспектах движка."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:144
 msgid "The Godot editor is a Godot game"
@@ -369,7 +367,6 @@ msgid "|image5|"
 msgstr "|image5|"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
-#, fuzzy
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot’s UI "
 "tools for its node-based programming system and for the rest of the "
@@ -380,7 +377,6 @@ msgstr ""
 "программирования на основе узлов и для остальной части интерфейса.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:160
-#, fuzzy
 msgid ""
 "Put the ``tool`` keyword at the top of any GDScript file and it will run in "
 "the editor. This lets you import and export plugins, create plugins like "
@@ -397,7 +393,6 @@ msgid "Separate 2D and 3D engines"
 msgstr "Отдельные 2D и 3D движки"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:168
-#, fuzzy
 msgid ""
 "Godot offers dedicated 2D and 3D rendering engines. As a result, **the base "
 "unit for 2D scenes is pixels.** Even though the engines are separate, you "
@@ -405,6 +400,6 @@ msgid ""
 "your 3D world."
 msgstr ""
 "Godot предлагает специализированные 2D и 3D движки. В итоге **базовая "
-"единица для 2D-сцен - это пиксели.** Несмотря на то, что двигатели являются "
-"отдельными, вы можете визуализировать 2D в 3D, 3D в 2D и накладывать 2D-"
-"спрайты и интерфейс поверх 3D-мира."
+"единица для 2D-сцен - это пиксели.** Несмотря на то, что движки являются "
+"отдельными, вы можете отрендерить 2D в 3D, 3D в 2D и накладывать 2D-спрайты "
+"и интерфейс поверх 3D-мира."

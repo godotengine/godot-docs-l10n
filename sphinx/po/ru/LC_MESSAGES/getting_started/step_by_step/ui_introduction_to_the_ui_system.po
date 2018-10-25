@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,6 +22,7 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Дизайн интерфейса с помощью узлов контроля"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
+#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -39,7 +40,7 @@ msgstr ""
 "Godot поставляется с набором надежных инструментов для дизайна и управления "
 "адаптивных пользовательских приложений. Для дизайна вашего UI, вы можете "
 "использовать узлы контроля. Это узлы с зелеными иконками в редакторе. Здесь "
-"их предостаточно, для того чтоб создать что угодно - от полос жизни, до "
+"их предостаточно, для того чтоб создать что угодно - от шкалы жизни, до "
 "полноценных приложений. Редактор Godot и его плагины используют данные узлы."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
@@ -103,16 +104,16 @@ msgid "All control nodes share the same main properties:"
 msgstr "У всех узлов контроля имеются одинаковые основные настройки:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
-#, fuzzy
 msgid "Anchor"
-msgstr "Якорь"
+msgstr "Привязка"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
 msgstr "Ограничительные рамки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-msgid "Focus and focus neighbour"
+#, fuzzy
+msgid "Focus and focus neighbor"
 msgstr "Фокус и фокус соседей"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
@@ -171,8 +172,8 @@ msgstr ""
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
-"TextureProgress: для полос жизни, полос загрузки, горизонтальных, "
-"вертикальных или радиальный"
+"TextureProgress: для шкал жизни, загрузки, горизонтальных, вертикальных или "
+"радиальный"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "NinePatchRect: for scalable panels"
@@ -189,15 +190,15 @@ msgstr ""
 "интерфейса"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
-#, fuzzy
 msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
+#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
-"property to change its behaviour:"
+"property to change its behavior:"
 msgstr ""
 "**TextureRect** отображает текстуру или изображение внутри пользовательского "
 "интерфейса. Он похож на узел Sprite, но он дает множество режимов "
@@ -253,8 +254,9 @@ msgstr ""
 "отсекается границами узла"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
+#, fuzzy
 msgid ""
-"As with Sprite nodes, you can modulate the TextureRect's colour. Click the "
+"As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
 "Как и в случае узлов спрайтов, можно модулировать цвет TextureRect. Щелкните "
@@ -306,7 +308,6 @@ msgid "TextureButton and its 5 texture slots"
 msgstr "TextureButton и её 5 слотов текстуры"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
-#, fuzzy
 msgid "TextureProgress"
 msgstr "TextureProgress"
 
@@ -327,11 +328,13 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
-"``Mode`` контролирует направление, в котором расширяется бар: горизонтально, "
-"вертикально или радиально. Если вы установите радиально, то ``Initial "
-"Angle`` и ``Fill Degrees`` позволят ограничить диапазон заполнения бара."
+"``Mode`` контролирует направление, в котором расширяется шкала прогресса: "
+"горизонтально, вертикально или радиально. Если вы установите радиально, то "
+"``Initial Angle`` и ``Fill Degrees`` позволят ограничить диапазон заполнения "
+"бара."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:128
+#, fuzzy
 msgid ""
 "To animate the bar, you'll want to look at the Range section. Set the "
 "``Min`` and ``Max`` properties to define the range of the gauge. For "
@@ -341,18 +344,18 @@ msgid ""
 "the default of ``1`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
-"Чтобы анимировать панель, вам нужно посмотреть раздел Range. Задайте "
-"свойства `` Min`` и `` Max`` для определения диапазона датчика. Например, "
-"чтобы представить жизнь персонажа, вы должны установить `` Min`` = `` 0, `` "
-"и `` Max`` для максимального количества здоровья персонажа. Измените "
-"свойство `` Value``, чтобы обновить панель. Если вы оставите значения `` "
-"Min`` и `` Max`` по умолчанию `` 1`` и `` 100, `` и установите для свойства "
-"`` Value`` `` 40``, 40% текстуры `` Progress``, и 60% из них останется "
-"скрытым."
+"Чтобы анимировать шкалу прогресса, вам нужно посмотреть раздел Range. "
+"Задайте свойства `` Min`` и `` Max`` для определения диапазона датчика. "
+"Например, чтобы представить жизнь персонажа, вы должны установить `` Min`` = "
+"`` 0, `` и `` Max`` для максимального количества здоровья персонажа. "
+"Измените свойство `` Value``, чтобы обновить шкалу прогресса. Если вы "
+"оставите значения `` Min`` и `` Max`` по умолчанию `` 1`` и `` 100, `` и "
+"установите для свойства `` Value`` `` 40``, 40% текстуры `` Progress``, и "
+"60% из них останется скрытым."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:138
 msgid "TextureProgress bar, two thirds filled"
-msgstr "TextureProgress бар, две трети заполнены"
+msgstr "TextureProgress шкала, две трети заполнены"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
@@ -377,16 +380,16 @@ msgid "Picture of a Label"
 msgstr "Изображение Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
-#, fuzzy
 msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
+#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
-"corners. It is useful to build panels, dialogue boxes and scalable "
-"backgrounds for your UI."
+"corners. It is useful to build panels, dialog boxes and scalable backgrounds "
+"for your UI."
 msgstr ""
 "** NinePatchRect ** разделяет текстуры на 3 строки и 3 столбца. Центральная "
 "и боковая стороны масштабируются, но углы нет. Полезно создавать панели, "
@@ -654,7 +657,7 @@ msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
-"Если вы создадите инструменты, вам могут понадобиться все контейнеры. Но для "
+"Если вы создаёте инструменты, вам могут понадобиться все контейнеры. Но для "
 "большинства игр достаточно нескольких:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
@@ -666,8 +669,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
 #, fuzzy
 msgid "CenterContainer, to center its children in its bounding box"
-msgstr ""
-"CenterContainer, сосредоточивает дочерние элементы в ограниченной коробке"
+msgstr "CenterContainer, центрирует своих детей в ограниченных рамках"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
 msgid ""
@@ -679,7 +681,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 #, fuzzy
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
-msgstr "GridContainer, упорядочить узлы управления в виде сетки"
+msgstr "GridContainer, упорядочивает узлы Controls в виде сетки"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -700,11 +702,10 @@ msgstr ""
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
 msgstr ""
-"CenterContainer в действии. Полоса здоровья находится внутри его "
+"CenterContainer в действии. Шкала здоровья находится внутри его "
 "родительского контейнера."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
-#, fuzzy
 msgid ""
 "The MarginContainer adds a margin on any side of the child nodes. Add a "
 "MarginContainer that encompasses the entire viewport to add a separation "
@@ -714,11 +715,11 @@ msgid ""
 "automatically."
 msgstr ""
 "MarginContainer добавляет отступ на любой стороне дочерних узлов. Добавьте "
-"MarginContainer, который охватывает весь видовой экран, чтобы добавить "
-"разделение между краем окна и пользовательским интерфейсом. Вы можете "
-"установить отступ в верхней, левой, правой или нижней части контейнера. Не "
-"нужно отмечать этот флажок: щелкните соответствующее поле значения и введите "
-"любое число. Он активируется автоматически."
+"MarginContainer, который охватывает весь видимый экран, чтобы добавить "
+"разделение между краем окна и UI. Вы можете установить отступ в верхней, "
+"левой, правой или нижней части контейнера. Не нужно отмечать этот флажок: "
+"щелкните соответствующее поле со значением и введите любое число. Он "
+"активируется автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
@@ -790,13 +791,12 @@ msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr "GridContainer с 2 колонками. Он вычисляет их размер автоматически."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
-#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interface, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
-"Система пользовательского интерфейса Godot сложна и включает гораздо больше, "
-"чем описано здесь. Для получения подробной информации о том, как "
-"разрабатывать более продвинутые пользовательские интерфейсы, обратитесь к "
-"разделу :ref:`GUI section <toc-learn-features-gui>` документации."
+"Система UI в Godot сложна и включает гораздо больше, чем описано здесь. Для "
+"получения подробной информации о том, как разрабатывать более продвинутые "
+"UI, обратитесь к разделу :ref:`GUI section <toc-learn-features-gui>` в "
+"документации."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,7 +307,7 @@ msgstr ""
 "La precarga puede ser más conveniente, ya que ocurre en tiempo de análisis "
 "(sólo GDScript):"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -321,7 +321,7 @@ msgstr ""
 "<class_PackedScene_instance>`. Esto devolverá el árbol de nodos que se "
 "pueden añadir a la escena activa:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:380
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
 msgid ""
 "The advantage of this two-step process is that a packed scene may be kept "
 "loaded and ready to use so that you can create as many instances as desired. "
@@ -333,36 +333,45 @@ msgstr ""
 "instancias como desees. Esto es especialmente útil para identificar "
 "rápidamente varios enemigos, balas y otras entidades en la escena activa."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:387
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "Registrar scripts como clases"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
+"Godot tiene una funcionalidad de \"Script Class\" para registrar codigos "
+"individuales con el Editor. Por defecto, solo puedes accesar codigos sin "
+"nombre cargando el archivo directamente."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:393
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"Puedes nombrar un script y registrarlo como un tipo en el editor con la "
+"palabra clave ``class_name`` seguida por el nombre de la clase. Puedes "
+"agregar una coma y una dirección opcional a una imagen para usarla como "
+"ícono. De esta forma encontrarás un nuevo tipo en la ventana Node o Resource "
+"creation."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:415
 msgid "In Godot 3.1:"
-msgstr "Hola, Godette v3.11"
+msgstr "En Godot 3.1:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"Únicamente GDScript o NativeScript, en otras palabras, C++ y otros lenguajes "
+"basandos en GDNative, pueden registrar scripts."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:418
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "Únicamente GDScript crea variables globales para cada script nombrado."

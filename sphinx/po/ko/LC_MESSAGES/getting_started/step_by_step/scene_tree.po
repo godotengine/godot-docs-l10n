@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
 msgid "SceneTree"
-msgstr ""
+msgstr "SceneTree"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:7
 msgid "Introduction"
@@ -31,6 +31,8 @@ msgid ""
 "This is where things start getting abstract, but don't panic. There's not "
 "much more depth than this."
 msgstr ""
+"여기서 내용이 추상적으로 되기 시작합니다, 하지만 당황하지 마세요. 여기보다 훨"
+"씬 더 깊게 보는 곳은 없습니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:12
 msgid ""
@@ -38,6 +40,8 @@ msgid ""
 "Scenes are simply a collection of nodes. They become active once they enter "
 "the *scene tree*."
 msgstr ""
+"이전 튜토리얼에서, 모든 것은 노드 개념을 중심으로 돌아갔습니다. 씬은 간단히 "
+"노드의 집합입니다. 그들이 *씬 트리 (scene tree)* 에 들어가면 활성화됩니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -46,10 +50,14 @@ msgid ""
 "and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
+"이 개념은 조금 더 자세히 설명할 가치가 있습니다. 사실, 씬 시스템은 고도의 핵"
+"심 구성 요소도 아니기에 넘어가서 바로 서버와 직접 대화하는 스크립트를 (혹은 C"
+"++ 코드를) 쓸 수 있습니다, 하지만 그런 방식으로 게임을 만드는 일은 많은 작업"
+"이 될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
-msgstr ""
+msgstr "MainLoop"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:24
 msgid ""
@@ -58,6 +66,9 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"고도가 내부적으로 작동되는 과정은 다음과 같습니다. :ref:`OS <class_OS>` 클래"
+"스는 처음에 실행되는 유일한 인스턴스 입니다. 그 이후에, 모든 드라이버, 서버, "
+"스크립트 언어, 씬 시스템 등을 불러옵니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:29
 msgid ""
@@ -66,6 +77,10 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"초기화를 마칠 때, :ref:`OS <class_OS>` 를 실행하기 위해 :ref:`MainLoop "
+"<class_MainLoop>` 가 공급되어야 합니다. 여기까지, 이 모든 것이 내부 작업입니"
+"다 (어떻게 내부 작업이 이루어지는지 관심이 있으시다면, 소스 코드의 main/main."
+"cpp 파일에서 이를 확인하실 수 있습니다)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -74,18 +89,26 @@ msgid ""
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
+"사용자 프로그램, 게임은 MainLoop에서 시작합니다. 이 클래스는 몇 가지 메소드"
+"를 갖고 있는데, 초기화, 휴식 (Idle) (프레임 동기화된 콜백), 고정된 (fixed) "
+"(물리 동기화된 콜백), 그리고 입력입니다. 이것은 로우 레벨이며, 고도에서 게임"
+"을 만들 때 당신만의 MainLoop를 만드는 일은 드뭅니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
+"고도가 어떻게 작동하는지 설명하는 방법으로 이것은 로우 레벨 미들웨어에 비해 "
+"높은 수준의 게임 엔진이란 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
 msgstr ""
+"씬 시스템은 게임 엔진입니다, 반면에 :ref:`OS <class_OS>` 와 서버는 로우 레벨 "
+"API입니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
 msgid ""
@@ -93,12 +116,16 @@ msgid ""
 "`SceneTree <class_SceneTree>`. This is automatically instanced and set when "
 "running a scene, no need to do any extra work."
 msgstr ""
+"어쨌든, 씬 시스템은 고유의 메인 루프 (main loop)인, :ref:`SceneTree "
+"<class_SceneTree>` 를 OS로 보냅니다. 이것은 자동으로 씬이 실행되는 동안 자동"
+"으로 인스턴스 되고 설정됩니다, 다른 추가 작업은 필요가 없습니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It's important to know that this class exists because it has a few important "
 "uses:"
 msgstr ""
+"이 클래스가 몇 가지 중요한 용도에 쓰이기 때문에 존재하는 것을 알아야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
 msgid ""
@@ -106,18 +133,24 @@ msgid ""
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)"
 msgstr ""
+"처음 열렸을 때 *씬 트리* 의 일부분이 되도록 씬이 자식으로 추가되는, 루트 :"
+"ref:`Viewport <class_Viewport>` 를 포함합니다, (자세한 설명은 다음에)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
 msgstr ""
+"그룹에 관한 정보를 포함하고 그룹의 모든 노드를 호출하거나 그룹의 목록을 가져"
+"옵니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
 msgstr ""
+"일시 정지 모드 설정이나 프로세스 종료하기와 같은, 일부 글로벌 상태 기능성을 "
+"포함합니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
@@ -125,16 +158,21 @@ msgid ""
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
 "get_tree() <class_Node_get_tree>`."
 msgstr ""
+"노드가 씬 트리의 일부분일 때, :ref:`SceneTree <class_SceneTree>` 싱글톤 "
+"(Singleton)은 간단히 :ref:`Node.get_tree() <class_Node_get_tree>` 를 호출해"
+"서 포함될 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
 msgid "Root viewport"
-msgstr ""
+msgstr "루트 뷰포트 (Root viewport)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:73
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
+"루트 :ref:`Viewport <class_Viewport>` 는 항상 씬의 맨 위에 있습니다. 노드에"
+"서, 두 가지 다른 방법으로 포함할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
 msgid ""
@@ -143,6 +181,9 @@ msgid ""
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen!"
 msgstr ""
+"이 노드는 메인 뷰포트를 갖고 있습니다, 어떤 것이든 :ref:`Viewport "
+"<class_Viewport>` 의 자식으로 기본적으로 안에 있습니다, 그래서 모든 노드의 "
+"맨 위에는 이 노드가 있고 그렇지 않다면 아무것도 볼 수 없을 것입니다!"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:93
 msgid ""
@@ -150,22 +191,29 @@ msgid ""
 "and such), this one is the only one that is never created by the user. It's "
 "created automatically inside SceneTree."
 msgstr ""
+"반면에 다른 뷰포트는 씬에서 만들 수 있지만 (분리 화면 효과와 같은 것을 위"
+"해), 사용자가 절대 만들 수 없는 유일한 것입니다. 씬 트리에서 자동으로 생성됩"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:98
 msgid "Scene tree"
-msgstr ""
+msgstr "씬 트리"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:100
 msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
 msgstr ""
+"노드가 뷰포트에 연결될 때, 직접적이든 아니든, 그것은 *씬 트리* 의 일부분이 됩"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
 msgstr ""
+"이전 튜토리얼에서 설명했듯이, 그것은 (_exit_tree()과 마찬가지로)  "
+"_enter_tree()와 _ready() 콜백을 가질 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
 msgid ""
@@ -174,10 +222,13 @@ msgid ""
 "notifications, play sound, groups, etc. When they are removed from the "
 "*scene tree*, they lose access."
 msgstr ""
+"노드가 *씬 트리* 에 들어오게 되면, 활성화됩니다. 그들은 프로세스, 입력, 2D와 "
+"3D 디스플레이, 알림, 소리 재생, 그룹 등 필요로 하는 모든 것을 액세스 합니다. "
+"그들이 *씬 트리* 에서 제거될 때, 액세스를 잃습니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:114
 msgid "Tree order"
-msgstr ""
+msgstr "트리 순서"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
 msgid ""
@@ -186,14 +237,17 @@ msgid ""
 "with a smaller rank in the tree order will get notified before the current "
 "node."
 msgstr ""
+"2D 그리기, 프로세싱, 혹은 알림과 같은 대부분의 노드 운영은 트리 순서에서 완료"
+"됩니다. 이는 트리 순서에서 부모와 더 낮은 등급의 형제 노드들이 현재 노드 이전"
+"에 알림을 받을 것을 의미합니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:124
 msgid "\"Becoming active\" by entering the *Scene Tree*"
-msgstr ""
+msgstr "*씬 트리* 에 들어가서 \"활성화하기\""
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:126
 msgid "A scene is loaded from disk or created by scripting."
-msgstr ""
+msgstr "씬은 디스크에서 불러오거나 스크립트에 의해 만들어집니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
 msgid ""
@@ -201,12 +255,16 @@ msgid ""
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
+"씬의 루트 노드 (단 하나의 루트, 기억하시나요?) 는 \"루트\" 뷰포트의 자식으"
+"로, 혹은 노드의 자식으로 (씬 트리에서) 추가됩니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:130
 msgid ""
 "Every node of the newly added scene, will receive the \"enter_tree\" "
 "notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
 msgstr ""
+"새롭게 추가되는 씬의 각 노드는, 위에서 아래 순으로 \"enter_tree\" 알림을 "
+"(GDScript에서  _enter_tree() 콜백을) 받습니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:133
 msgid ""
@@ -214,16 +272,20 @@ msgid ""
 "provided for convenience, when a node and all its children are inside the "
 "active scene."
 msgstr ""
+"추가 알림으로, 노드와 모든 자식이 활성화된 씬 안에 있을 때, \"ready\"가 "
+"(GDScript에서는 _ready() 콜백이) 편의로 제공됩니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:136
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
 msgstr ""
+"씬(이나 일부분)이 제거될 때, 그들은 아래에서 위 순으로 \"exit scene\" 알림을 "
+"(GDScript에서는 _exit_tree() 콜백을) 받습니다"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:141
 msgid "Changing current scene"
-msgstr ""
+msgstr "현재 씬 변경하기"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
 msgid ""
@@ -231,6 +293,9 @@ msgid ""
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_change_scene>` function:"
 msgstr ""
+"씬이 불러온 후, 그것을 다른 씬으로 바꾸고 싶을 수 있습니다. 간단한 방법으로 :"
+"ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` 함수를 사용하"
+"는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 msgid ""
@@ -241,3 +306,8 @@ msgid ""
 "be done manually using autoloads (see next chapter!) and :ref:"
 "`doc_background_loading`."
 msgstr ""
+"이것은 씬을 바꾸기에 빠르고 유용하지만 새로운 씬이 불러오고 실행될 때까지 멈"
+"춰있는 단점이 있습니다. 게임의 어느 시점에서, 진행 막대, 애니메이션 표시기, "
+"혹은 스레드 (배경) 로딩으로 적절한 로딩 화면을 만드는 것이 좋습니다. 이것은 "
+"수동으로 오토로드 (Autoload)를 사용하거나 (다음 챕터를 보십시오!)  :ref:"
+"`doc_background_loading` 으로 해결할 수 있습니다."

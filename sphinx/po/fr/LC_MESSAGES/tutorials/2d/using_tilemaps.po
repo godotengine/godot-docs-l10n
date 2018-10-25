@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using tilemaps"
-msgstr ""
+msgstr "Utiliser les palettes de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
@@ -31,16 +31,22 @@ msgid ""
 "start with bunch of reference tiles (or pieces) that can be put on a grid, "
 "as many times each as desired - think of it like a map editor:"
 msgstr ""
+"Les palettes de tuiles sont un moyen simple et rapide de créer des niveaux "
+"de jeu 2D. Fondamentalement, vous commencez avec une quantité de tuiles de "
+"référence (ou morceaux) qui peuvent être placés sur une grille, autant de "
+"fois que vous le souhaitez - pensez à cela comme un éditeur de cartes :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
 msgid ""
 "Collisions can also be added to the tiles, allowing for both 2D side "
 "scrolling and top down games."
 msgstr ""
+"Des collisions peuvent également être ajoutées aux tuiles, permettant à la "
+"fois des jeux 2D à défilement latéral et vertical."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:19
 msgid "Making a tileset"
-msgstr ""
+msgstr "Faire un jeu de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid ""
@@ -49,6 +55,11 @@ msgid ""
 "packers* that will generate these spritesheets out of your separate texture "
 "files. Having them as separate images also works."
 msgstr ""
+"Pour commencer, un jeux de tuiles doit être créé. Voici quelques tuiles pour "
+"ce faire. Eles sont toutes dans la même image pour des raisons "
+"d'optimisation. Il existe des *emballeurs de textures* qui vont générer ces "
+"feuilles de sprites à partir de vos fichiers de textures séparés. Les avoir "
+"en tant qu'images séparées fonctionne également."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid ""
@@ -57,6 +68,10 @@ msgid ""
 "will cause issues later. ``Mipmaps`` should already be disabled, if not, "
 "disable this too."
 msgstr ""
+"Créez un nouveau projet et déplacez l'image PNG ci-dessus dans le "
+"répertoire. Ensuite, allez dans les paramètres d'importation de l'image et "
+"désactivez ``Filter``, le garder activé causera des problèmes plus tard. "
+"``Mipmaps`` devrait déjà être désactivé, sinon désactivez-le aussi."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:33
 msgid ""
@@ -65,6 +80,10 @@ msgid ""
 "it and maintain it. Here is what it would look like to manually edit the "
 "resource:"
 msgstr ""
+"Nous allons créer une ressource :ref:`Jeu de tuiles <class_TileSet>`. Bien "
+"que cette ressource exporte des propriétés, il est assez difficile d’y "
+"insérer des données complexes et de les maintenir. Voici à quoi cela "
+"ressemblerait de modifier manuellement la ressource :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:40
 msgid ""
@@ -72,10 +91,14 @@ msgid ""
 "work. But the easiest way to edit and maintain a tileset is exporting it "
 "from a specially-crafted scene!"
 msgstr ""
+"Il y a suffisamment de propriétés pour s'en sortir. Avec quelques efforts, "
+"éditer de cette manière peut fonctionner. Cependant, le moyen le plus simple "
+"de modifier et de gérer un jeu de tuiles est de l'exporter à partir d'une "
+"scène spécialement conçue !"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid "TileSet scene"
-msgstr ""
+msgstr "Scène de jeu de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:47
 msgid ""
@@ -85,6 +108,13 @@ msgid ""
 "snap (``Use Snap`` icon or ``S`` key). Moving tiles with the mouse might "
 "still be a inaccurate so use your arrow keys as well."
 msgstr ""
+"Créez une nouvelle scène avec un nœud normal ou Node2D en tant que racine. "
+"Pour chaque tuile que vous souhaitez définir, ajoutez un nœud sprite en tant "
+"qu'enfant. Puisque les tuiles ici sont 50x50, vous devez activer la grille "
+"(``Affichage -> Afficher la grille``, ou la touche ``G``) ainsi que la "
+"capture (icône ``Utiliser Capture``, ou la touche ``S``). Déplacer les "
+"tuiles avec la souris peut toujours être inapproprié, ainsi utilisez tout "
+"autant les touches fléchées."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:53
 msgid ""
@@ -92,6 +122,9 @@ msgid ""
 "region property of the sprite to adjust which part of the texture is being "
 "used."
 msgstr ""
+"Si plusieurs tuiles sont présentes dans l'image source, veillez à utiliser "
+"la propriété region du sprite pour définir la partie de la texture à "
+"utiliser."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:57
 msgid ""
@@ -100,12 +133,18 @@ msgid ""
 "changed the region, etc), the tile will still be **identified correctly and "
 "updated**. This name should be unique."
 msgstr ""
+"Enfin, assurez-vous de nommer votre nœud sprite correctement. Cela garantira "
+"que, lors des éditions ultérieures sur le jeu de tuiles (par exemple, en cas "
+"de collision, de modification de la région, etc.), la vignette sera toujours "
+"identifiée **correctement et mise à jour**. Ce nom devrait être unique."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
 "Sounds like a lot of requirements, so here's a screenshot that shows where "
 "everything of relevance is:"
 msgstr ""
+"Cela semble être beaucoup d'exigences, alors voici une capture d'écran qui "
+"montre où se trouve tout ce qui est pertinent :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:67
 msgid ""
@@ -113,10 +152,13 @@ msgid ""
 "you have multiple tiles in a single source image). Again, *remember that "
 "their names must be unique*."
 msgstr ""
+"Continuez à ajouter toutes les tuiles en ajustant les décalages si "
+"nécessaire (si vous avez plusieurs tuiles dans une seule image source). "
+"Encore une fois, *rappelez-vous que leurs noms doivent être uniques*."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:74
 msgid "Collision"
-msgstr ""
+msgstr "Collision"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:76
 msgid ""
@@ -125,6 +167,10 @@ msgid ""
 "CollisionPolygon as a child of the StaticBody2D. The CollisionPolygon is "
 "recommended because it is easier to edit."
 msgstr ""
+"Pour ajouter une collision à une tuile, créez un enfant StaticBody2D pour "
+"chaque image-objet. Ceci est un nœud de collision statique. Créez ensuite un "
+"CollisionShape2D ou un CollisionPolygon en tant qu'enfant du StaticBody2D. "
+"CollisionPolygon est recommandé car il est plus facile à éditer."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:83
 msgid ""
@@ -135,28 +181,45 @@ msgid ""
 "move** the collision and/or collision polygon nodes. Leave them at offset "
 "0,0, with scale 1,1 and rotation 0 with respect to the parent sprite."
 msgstr ""
+"Enfin, éditez le polygone, cela donnera une collision à la tuile et "
+"corrigera l'icône d'avertissement à côté du nœud CollisionPolygon. "
+"**N'oubliez pas d'utiliser la capture !** L'utilisation de la capture "
+"assurera que les polygones de collision sont correctement alignés, "
+"permettant à un personnage de se déplacer de manière transparente d'une "
+"tuile à l'autre. De plus, **ne pas mettre à l'échelle ni déplacer** les "
+"nœuds de polygones de collision et/ou de collision. Laissez-les à l'offset "
+"0,0, avec l'échelle 1,1 et la rotation 0 par rapport à l'image-objet parente."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
 "Keep adding collisions to the tiles until we are done. Note that BG is just "
 "a background, so it should not have a collision."
 msgstr ""
+"Continuez à ajouter des collisions aux tuiles jusqu'à ce que nous ayons "
+"terminé. Notez que BG n'est qu'un arrière-plan, il ne devrait donc pas y "
+"avoir de collisions."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:97
 msgid ""
 "OK! We're done! Remember to save this scene for future edit. Name it "
 "\"tileset_edit.scn\" or something like that."
 msgstr ""
+"Voilà ! Nous avons fini ! Rappelez-vous de sauvegarder cette scène pour une "
+"édition ultérieure. Nommez-la \"jeudetuiles_edit.scn\" ou quelque chose "
+"comme ça."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:101
 msgid "Exporting a TileSet"
-msgstr ""
+msgstr "Exporter un jeu de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:103
 msgid ""
 "With the scene created and opened in the editor, the next step will be to "
 "create a tileset. Use Scene > Convert To > Tile Set from the Scene Menu:"
 msgstr ""
+"Avec la scène créée et ouverte dans l'éditeur, l'étape suivante consistera à "
+"créer un jeux de tuiles. Utilisez Scène > Convertir en > Jeux de tuiles, à "
+"partir du menu Scène :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:108
 msgid ""
@@ -165,22 +228,32 @@ msgid ""
 "file is overwritten, existing tiles are merged and updated (they are "
 "referenced by their unique name, so again, **name your tiles properly**)."
 msgstr ""
+"Choisissez ensuite un nom de fichier, comme \"mestuiles.tres\". Assurez-vous "
+"que l'option \"Fusionner avec l'existant\" est activée. Ainsi, chaque fois "
+"que le fichier de ressources du jeu de tuiles est écrasé, les tuiles "
+"existantes sont fusionnées et mises à jour (elles sont référencées par leur "
+"nom unique, donc encore une fois, **nommez vos tuiles correctement**)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:117
 msgid "Using the TileSet in a TileMap"
-msgstr ""
+msgstr "Utilisation du jeux de tuiles dans un plan de tuiles"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:119
 msgid ""
 "Create a new scene, using any node or node2d as root, and then create a :ref:"
 "`TileMap <class_TileMap>` as a child."
 msgstr ""
+"Créez une nouvelle scène en utilisant n'importe quel nœud ou node2d en tant "
+"que racine, puis créez un :ref:`Plan de tuiles <class_TileMap>` en tant "
+"qu'enfant."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:125
 msgid ""
 "Go to the TileSet property of this node and assign the one created in "
 "previous steps:"
 msgstr ""
+"Accédez à la propriété du jeux de tuiles de ce nœud et affectez-y celle "
+"créée aux étapes précédentes :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:130
 msgid ""
@@ -190,10 +263,16 @@ msgid ""
 "does not need to be changed, but can be used to fine tune performance in "
 "specific cases (if you know what you are doing)."
 msgstr ""
+"Définissez également la taille de la cellule sur '50', car il s'agit de la "
+"taille utilisée par les tuiles. La taille du quadrant est une valeur de "
+"réglage, ce qui signifie que le moteur dessinera et définira le plan de "
+"tuiles par blocs de 16x16 tuiles. Cette valeur est généralement correcte et "
+"ne nécessite pas de modification, mais peut être utilisée pour ajuster les "
+"performances dans des cas spécifiques (si vous savez ce que vous faites)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid "Painting your world"
-msgstr ""
+msgstr "Décorer votre monde"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:139
 msgid ""
@@ -201,6 +280,9 @@ msgid ""
 "on screen, allowing to paint on it with the selected tile on the left "
 "palette."
 msgstr ""
+"Lorsque tout est défini, assurez-vous que le nœud TileMap (Plan de tuiles) "
+"est sélectionné. Une grille rouge apparaîtra à l’écran, permettant d’y "
+"peindre avec la tuile sélectionnée dans la palette de gauche."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
@@ -208,12 +290,18 @@ msgid ""
 "common, given it's a huge node), it is recommended that you lock it, using "
 "the lock button:"
 msgstr ""
+"Pour éviter de déplacer et de sélectionner accidentellement le nœud tilemap, "
+"plan de tuiles (ce qui est courant dans la mesure où il s'agit d'un nœud "
+"énorme), il est recommandé de le verrouiller à l'aide du bouton de "
+"verrouillage :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:151
 msgid ""
 "If you accidentally place a tile somewhere you don't want it to be, you can "
 "delete it with ``RMB`` while in the tilemap editor."
 msgstr ""
+"Si vous placez accidentellement une tuile à un endroit que vous ne souhaitez "
+"pas, vous pouvez la supprimer avec ``RMB`` dans l'éditeur de plans de tuiles."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid ""
@@ -226,10 +314,20 @@ msgid ""
 "entire region of bricks. But for some kinds of tiles, flipping can be a "
 "convenient and space-saving feature."
 msgstr ""
+"Vous pouvez également retourner et faire pivoter les sprites dans l'éditeur "
+"de Plans de Tuiles (remarque: inverser les sprites dans le Jeux de Tuiles "
+"n'aura aucun effet). Les icônes en haut à droite de l'éditeur permettent "
+"d'inverser et de faire pivoter le sprite sélectionné. Vous pouvez également "
+"utiliser les touches A et S pour inverser le sprite horizontalement et "
+"verticalement. Avec un modèle de briques similaire à celui utilisé dans ce "
+"didacticiel, inverser les sprites créerait des discontinuités désagréables, "
+"à moins que vous ne retourniez une région entière de briques. Mais pour "
+"certains types de tuiles, le retournement peut être une fonctionnalité "
+"pratique et peu encombrante."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:164
 msgid "Offset and scaling artifacts"
-msgstr ""
+msgstr "Artefacts de décalage et de mise à l'échelle"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid ""
@@ -237,6 +335,10 @@ msgid ""
 "moving to a non pixel-aligned location) will most likely result in filtering "
 "artifacts like so:"
 msgstr ""
+"Lorsque vous utilisez une seule texture pour toutes les tuiles, la mise à "
+"l'échelle du jeu de tuiles (ou même le déplacement vers un emplacement non "
+"aligné sur les pixels), entraînera très probablement un filtrage des "
+"artefacts, comme suit :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:172
 msgid ""
@@ -244,6 +346,9 @@ msgid ""
 "So, to avoid this situation, there are a few workarounds. Try the one that "
 "looks better for you:"
 msgstr ""
+"Cela est inévitable, car c’est la façon dont fonctionne le filtre bilinéaire "
+"matériel. Donc, pour éviter cette situation, il existe quelques solutions de "
+"contournement. Essayez celle qui vous convient le mieux :"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:177
 msgid ""
@@ -251,22 +356,37 @@ msgid ""
 "textures if using separate images (see the :ref:`doc_import_images` asset "
 "pipeline tutorial)."
 msgstr ""
+"Désactivez le filtrage et les mipmaps soit pour la texture du jeux de "
+"tuiles, soit pour toutes les textures de tuiles si vous utilisez des images "
+"séparées (voir le didacticiel : ref:`doc_import_images` du pipeline de "
+"ressources)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:178
 msgid ""
 "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > "
 "2d > Use Pixel Snap`` to true, you can also search for ``Pixel Snap``)."
 msgstr ""
+"Mettez la capture de pixel sur Vrai (``Projet > Paramètres du projet > Rendu "
+"> Qualité > 2d > Utiliser Capture Pixel``, vous pouvez également rechercher "
+"``Capture Pixel``)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
+#, fuzzy
 msgid ""
 "Viewport Scaling can often help with shrinking the map (see the :ref:"
 "`doc_viewports` tutorial). Simply adding a camera, setting it to ``Current`` "
-"and playing around with it's ``Zoom`` may be a good starting point."
+"and playing around with its ``Zoom`` may be a good starting point."
 msgstr ""
+"La mise à l'échelle de la fenêtre d'affichage peut souvent aider à comprimer "
+"la carte (voir le tutoriel :ref:`doc_viewports`). Ajouter simplement une "
+"caméra, la régler sur ``Actuel`` et jouer avec son ``Zoom`` peut être un bon "
+"point de départ."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
 msgid ""
 "You can use a single, separate image for each tile. This will remove all "
 "artifacts but can be more cumbersome to implement and is less optimized."
 msgstr ""
+"Vous pouvez utiliser une seule image distincte pour chaque tuile. Cela "
+"supprimera tous les artefacts mais peut être plus lourd à mettre en œuvre et "
+"moins optimisé."

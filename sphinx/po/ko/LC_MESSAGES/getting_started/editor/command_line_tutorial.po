@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr ""
+msgstr "명령 행 (Command line) 튜토리얼"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -28,10 +28,14 @@ msgid ""
 "command line. Given the engine relies on little to no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"일부 개발자들은 명령 행을 광범위하게 사용하는 것을 좋아합니다. 고도는 그들에"
+"게 친절하게 설계되었고, 여기에 명령 행에서 완전히 작업하는 과정이 있습니다. "
+"엔진은 외부 라이브러리에 거의 의존하지 않아서, 초기화 시간이 매우 빠르고, 이 "
+"워크플로우에 적합하게 만듭니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
-msgstr "경로"
+msgstr "경로 (Path)"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid ""
@@ -40,10 +44,13 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
+"고도 바이너리를 PATH 환경 변수에 넣어서, ``godot`` 을 입력하면 어느 곳이든 쉽"
+"게 실행하도록 하는 것을 추천합니다. 리눅스에서 고도 바이너리를 ``/ usr / "
+"local / bin`` 에 배치하여, ``godot`` 라고 부르게 하십시오."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
 msgid "Setting the project path"
-msgstr ""
+msgstr "프로젝트 경로 설정하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:25
 msgid ""
@@ -51,40 +58,48 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
+"고도 바이너리의 위치와 현재 작업 디렉토리의 위치에 따라, 다음 명령 중 하나가 "
+"제대로 작동하려면 프로젝트의 경로를 설정해야 합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:29
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
+"프로젝트의``project.godot`` 파일에 대한 경로를 다음과 같이 첫 번째 인자로 주"
+"면 됩니다:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "혹은 ``--path`` 인자를 사용합니다:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"예를 들어, (아래에서 설명할) 게임을 내보내는 전체 명령은 다음과 같을 것입니"
+"다:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "Creating a project"
-msgstr ""
+msgstr "프로젝트 생성하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
+"명령 행에서 프로젝트를 생성하려면 셸을 원하는 위치로 이동하고 project.godot "
+"파일을 작성하십시오."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "The project can now be opened with Godot."
-msgstr ""
+msgstr "프로젝트는 이제 고도로 열릴 수 있습니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Running the editor"
-msgstr ""
+msgstr "에디터 실행하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid ""
@@ -92,16 +107,21 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
+"에디터는 ``-e`` 플래그를 실행해서 실행됩니다. 작업은 프로젝트 디렉토리 또는 "
+"하위 디렉토리에서 수행해야 합니다, 그렇지 않으면 명령이 무시되고 프로젝트 관"
+"리자가 나타납니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
+"씬을 만들고 저장한다면, 나중에 해당 장면을 인수로 사용하여 동일한 코드를 실행"
+"하여 편집할 수 있습니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Erasing a scene"
-msgstr ""
+msgstr "씬 지우기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid ""
@@ -109,26 +129,31 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
+"고도는 당신의 파일 시스템과 친하고 추가적인 메타데이터 파일을 만들기 않을 것"
+"입니다. ``rm`` 을 사용해 씬 파일을 지웁니다. 참조하는 씬이 없다면 오류가 발생"
+"할 것입니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Running the game"
-msgstr ""
+msgstr "게임 실행하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr ""
+"게임을 실행하려면, 간단히 프로젝트 디렉토리나 하위 디렉토리에서 고도를 실행하"
+"면 됩니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
-msgstr ""
+msgstr "특정 씬을 테스트 해야 하는 경우 씬을 명령 행으로 전달하십시오."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Debugging"
-msgstr ""
+msgstr "디버깅"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid ""
@@ -136,6 +161,9 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for both running the game or a simple scene."
 msgstr ""
+"명령 행에서 에러를 계산하는 것은 그냥 지나칠 수 있기 때문에 어려운 작업이 될 "
+"수 있습니다. 이를 위해 명령 행 디버거는 ``-d`` 를 추가하여 제공합니다. 게임이"
+"나 간단한 씬을 실행하는 데 모두 사용됩니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "Exporting"
@@ -147,6 +175,9 @@ msgid ""
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
+"명령 행에서 프로젝트를 내보내는 것도 지원됩니다. 특히 연속적인 통합 설정에 유"
+"용합니다. 이 때문에 고도의 헤드리스 버전은 (서버 빌드, 비디오 없음) 이상적입"
+"니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid ""
@@ -155,16 +186,22 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
+"``--export`` 스위치가 인식하는 플랫폼 이름은 에디터의 내보내기 마법사에 표시"
+"된 것과 동일합니다. 명령 행에서 지원하는 플랫폼 목록을 얻기 위해, 인지하지 않"
+"는 플랫폼으로 내보내기를 시도하고 그러면 구성이 지원되는 전체 플랫폼 목록이 "
+"나타날 것입니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
+"게임의 디버그 버전을 내보내기 위해, ``--export`` 대신 ``--export-debug`` 스위"
+"치를 사용하세요. 매개 변수와 사용법은 동일합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid "Running a script"
-msgstr ""
+msgstr "스크립트 실행하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid ""
@@ -172,21 +209,25 @@ msgid ""
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
+"명령 행에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 커"
+"스텀 가져 오기/내보내기를 위한, 큰 프로젝트에서 유용합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:155
 msgid "The script must inherit from SceneTree or MainLoop."
-msgstr ""
+msgstr "스크립트는 SceneTree나 MainLoop에서 상속해야 합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:157
 msgid "Here is a simple example of how it works:"
-msgstr ""
+msgstr "어떻게 작동하는 지의 예제입니다:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:168
 msgid "And how to run it:"
-msgstr ""
+msgstr "그리고 어떻게 실행하는 지의 예제입니다:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:175
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
+"project.godot이 경로에 존재하지 않으면, 현재 경로는 (``-path`` 가 지정되지 않"
+"는 한) 현재 작업 디렉토리로 가정합니다."

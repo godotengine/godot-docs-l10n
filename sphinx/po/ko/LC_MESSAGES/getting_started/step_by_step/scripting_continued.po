@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,9 +178,9 @@ msgid ""
 msgstr ""
 ":ref:`SceneTree<class_SceneTree>` 의 클래스는 씬 들과 노드 계층 및 노드 그룹"
 "과의 상호 작용과 같은 다양한 유용한 방법들을 제공합니다. 이를 통해 씬 들을 쉽"
-"게 전환하거나 다시 로드하여 게임을 종료하거나 일시 중지하거나 이를 해제할 수 "
-"있습니다. 그것은 심지어 흥미로운 신호를 동반합니다. 시간이 있으면 확인해 보십"
-"시오!"
+"게 전환하거나 다시 불러와서 게임을 종료하거나 일시 중지하거나 이를 해제할 수 "
+"있습니다. 그것은 심지어 흥미로운 시그널을 동반합니다. 시간이 있으면 확인해 보"
+"십시오!"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
 msgid "Notifications"
@@ -211,7 +211,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr "오버라이딩 가능한 함수들"
+msgstr "오버라이딩 (Overriding) 가능한 함수들"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""
@@ -236,7 +236,7 @@ msgid ""
 "class-based datatype. For example:"
 msgstr ""
 "코드를 사용하여 노드를 생성하려면 다른 클래스 기반 데이터 유형과 마찬가지로 "
-"``.new()`` 메서드를 호출해야 합니다. 예를들면:"
+"``.new()`` 메서드를 호출해야 합니다. 예를 들어:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:297
 msgid ""
@@ -282,8 +282,8 @@ msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
-"코드에서 장면을 인스턴스하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 하"
-"드 드라이브에서 씬을 불러오는 것입니다:"
+"코드에서 장면을 인스턴스 하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 "
+"하드 드라이브에서 씬을 불러오는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
 msgid ""
@@ -293,7 +293,7 @@ msgstr ""
 "프리로드 (Preload) 하면 구문 분석 시간에 일어나므로 더 편리할 수 있습니다 "
 "(GDScript만):"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -306,32 +306,32 @@ msgstr ""
 "면, :ref:`PackedScene.instance() <class_PackedScene_instance>` 기능을 호출해"
 "야 합니다. 그러면 활성 장면에 추가할 수 있는 노드 트리가 반환됩니다:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:380
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
 msgid ""
 "The advantage of this two-step process is that a packed scene may be kept "
 "loaded and ready to use so that you can create as many instances as desired. "
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
-"이 두 단계 프로세스의 이점은 포장된 씬이 로드된 상태로 유지되어 원하는 만큼"
+"이 두 단계 프로세스의 이점은 포장된 씬이 불러온 상태로 유지되어 원하는 만큼"
 "의 인스턴스를 생성할 수 있다는 것입니다. 이 기능은 특히 활성화된 씬에서 여러 "
-"적, 글머리 기호 및 다른 도면 요소를 신속하게 인스턴스하는 데 유용합니다."
+"적, 글머리 기호 및 다른 도면 요소를 신속하게 인스턴스 하는 데 유용합니다."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:387
 msgid "Register scripts as classes"
 msgstr "클래스로 스크립트를 등록하기"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
 "고도는 에디터에 각각의 스크립트를 등록하기 위한 \"스크립트 클래스\" 기능을 갖"
-"고 있습니다. 기본적으로, 당신은 파일을 직접 로드하여 이름이 없는 스크립트에 "
-"접근할 수 있습니다."
+"고 있습니다. 기본적으로, 당신은 파일을 직접 불러와서 이름이 없는 스크립트에 "
+"액세스 할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:393
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
@@ -340,14 +340,14 @@ msgid ""
 msgstr ""
 "스크립트에 이름을 짓고 클래스의 이름과 함께 ``class_name`` 키워드를 통해 에디"
 "터의 타입으로 등록할 수 있습니다. 쉼표나 이미지로 향하는 선택적인 경로를 추가"
-"해 아이콘으로도 사용할 수 있습니다. 그런 뒤 노드나 리소스 생성 다이얼로그에"
-"서 당신의 새 타입을 찾으실 수 있습니다."
+"해 아이콘으로도 사용할 수 있습니다. 그런 뒤 노드나 리소스 생성 대화 상자에서 "
+"당신의 새 타입을 찾으실 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:415
 msgid "In Godot 3.1:"
 msgstr "Godot 3.1에서는:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
@@ -355,6 +355,6 @@ msgstr ""
 "오직 GDScript와 NativeScript만, 즉, C++와 다른 GDNative의 영향을 받는 언어"
 "만, 스크립트로 등록이 가능합니다."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:418
 msgid "Only GDScript creates global variables for each named script."
 msgstr "오직 GDScript만 각 이름이 있는 스크립트에 글로벌 변수를 만듭니다."

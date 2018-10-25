@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,33 +22,40 @@ msgstr ""
 msgid "Godot-Blender-Exporter"
 msgstr "Godot 场景导入器"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:5
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
+msgid ""
+"This chapter relates to the blender plugin called \"Godot-Blender-Exporter"
+"\", which can be downloaded here: https://github.com/godotengine/godot-"
+"blender-exporter"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:8
 msgid "Details on exporting"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:19
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
 msgid "Disabling specific objects"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:20
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:25
 msgid ""
 "Sometimes you don't want some objects exported (eg high-res models used for "
 "baking). An object will not be exported if it is not rendered in the scene. "
 "This can be set in the outliner:"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:26
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:31
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:31
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:36
 #, fuzzy
-msgid "Build Pipeline Integration"
+msgid "Build pipeline integration"
 msgstr "构建配置："
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:32
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:38
 msgid ""
 "If you have hundreds of model files, you don't want your artists to waste "
 "time manually exporting their blend files. To combat this, the exporter "

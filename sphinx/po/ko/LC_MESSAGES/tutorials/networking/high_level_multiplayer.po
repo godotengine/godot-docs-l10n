@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -419,15 +419,16 @@ msgid "`remote`"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:243
-msgid "`sync`"
-msgstr ""
+#, fuzzy
+msgid "`remotesync`"
+msgstr "remote"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:244
 msgid "`master`"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:245
-msgid "`slave`"
+msgid "`puppet`"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:247
@@ -438,7 +439,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid ""
-"The `sync` keyword means that the `rpc()` call will go via network and "
+"The `remotesync` keyword means that the `rpc()` call will go via network and "
 "execute remotely, but will also execute locally (do a normal function call)."
 msgstr ""
 
@@ -576,7 +577,7 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:373
 msgid ""
 "Each time this piece of code is executed on each peer, the peer makes itself "
-"master on the node it controls, and all other nodes remain as slaves with "
+"master on the node it controls, and all other nodes remain as puppets with "
 "the server being their network master."
 msgstr ""
 
@@ -588,12 +589,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:382
-msgid "Master and slave keywords"
-msgstr ""
+#, fuzzy
+msgid "Master and puppet keywords"
+msgstr "Assert 키워드"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
 msgid ""
-"The real advantage of this model is when used with the `master`/`slave` "
+"The real advantage of this model is when used with the `master`/`puppet` "
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
 "Similarly to the `remote` keyword, functions can also be tagged with them:"
 msgstr ""
@@ -623,9 +625,9 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
 msgid ""
 "This instance, then, calls the `stun` function in the same instances of that "
-"same player (but in different peers), and only those which are set as slave, "
-"making the player look stunned in all the peers (as well as the current, "
-"master one)."
+"same player (but in different peers), and only those which are set as "
+"puppet, making the player look stunned in all the peers (as well as the "
+"current, master one)."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:420

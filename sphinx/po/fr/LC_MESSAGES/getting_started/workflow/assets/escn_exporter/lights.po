@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,25 +19,32 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:2
 msgid "Lights"
-msgstr ""
+msgstr "Lumières"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:4
 msgid ""
 "By default, lamps in Blender have shadows enabled. This can cause "
 "performance issues in Godot."
 msgstr ""
+"Par défaut, les lampes de Blender ont des ombres activées. Cela peut "
+"entraîner des problèmes de performance dans Godot."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:8
 msgid ""
 "Lamps are exported using their \"Blender Render\" settings. When Blender 2.8 "
 "is released, this will be removed and this part of the exporter will change."
 msgstr ""
+"Les lampes sont exportées en utilisant leurs paramètres \"Blender Render\". "
+"Lorsque Blender 2.8 sera publié, cela sera supprimé et cette partie de "
+"l'exportateur changera."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:11
 msgid ""
 "Sun, point and spot lamps are all exported from Blender along with many of "
 "their properties:"
 msgstr ""
+"Les lampes soleil, point et spot sont toutes exportées par Blender avec bon "
+"nombre de leurs propriétés :"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:16
 #, fuzzy
@@ -50,12 +57,19 @@ msgid ""
 "clamped by the attenuation distance. To most closely match between the "
 "viewport and Godot, enable the \"Sphere\" checkbox. (Highlighted green)"
 msgstr ""
+"Dans Blender, une lumière éclaire dans toutes les directions à l'infini. "
+"Dans Godot, c'est bloqué par la distance d'atténuation. Pour faire "
+"correspondre au mieux la fenêtre d'affichage et Godot, cochez la case "
+"\"Sphère\". (Surligné en vert)"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:21
 msgid ""
 "Light attenuation models differ between Godot and Blender. The exporter "
 "attempts to make them match, but it isn't always very good."
 msgstr ""
+"Les modèles d'atténuation de la lumière diffèrent entre Godot et Blender. "
+"L'exportateur tente de les faire correspondre, mais ce n'est pas toujours "
+"très bon."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:23
 msgid ""
@@ -63,8 +77,13 @@ msgid ""
 "The exporter attempts to make them similar, but it doesn't always look the "
 "same."
 msgstr ""
+"Les modèles d'atténuations angulaires du projecteur diffèrent également "
+"entre Godot et Blender. L'exportateur tente de les rendre similaires, mais "
+"cela ne se ressemble pas toujours."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/lights.rst:26
 msgid ""
 "There is no difference between buffer shadow and ray shadow in the export."
 msgstr ""
+"Il n'y a pas de différence entre l'ombre du tampon et l'ombre du rayon dans "
+"l'exportation."

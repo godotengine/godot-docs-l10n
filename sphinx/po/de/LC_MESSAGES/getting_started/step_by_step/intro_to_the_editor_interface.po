@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,9 +129,9 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
-"Du kannst bereits existierende Projekte auf eine ähnliche Art importieren, "
-"mithilfe des Import Buttons. Wähle das Verzeichnis welches das Projekt oder "
-"die ``project.godot`` Datei enthält um es zu importieren und zu editieren."
+"Du kannst bereits bestehende Projekte auf ähnliche Weise importieren. Suche "
+"dazu den Ordner, welcher das Projekt oder die Datei \"project.godot\" "
+"enthält."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 msgid "|image7|"
@@ -149,7 +149,7 @@ msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr "Ihr erster Eindruck von Godots Editor"
+msgstr "Ihr erster Blick auf Godots Editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -157,10 +157,10 @@ msgid ""
 "interface with the 3d viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2d to switch to the 2d workspace."
 msgstr ""
-"Willkommen in Godot! Wenn Ihr Projekt geöffnet ist, sollten Sie den Editor "
-"mit aktiviertem 3D-Arbeitsbereich sehen. Sie können die aktive Umgebung im "
-"oberen Bereich des Interfaces ändern. Klicken Sie auf 2D, um zum 2D-"
-"Arbeitsbereich zu wechseln."
+"Willkommen bei Godot! Wenn Sie ihr Projekt geöffnet haben, sollten Sie die "
+"Oberfläche des Editors mit aktivem 3D-Viewport sehen. Sie können den "
+"aktuellen Arbeitsbereich am oberen Rand der Oberfläche ändern. Klicken Sie "
+"auf 2d, um in den 2d-Arbeitsbereich zu wechseln."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 msgid "|image9|"
@@ -243,7 +243,8 @@ msgstr "Die Arbeitsbereiche"
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
-msgstr "Oben sehen Sie vier Schaltflächen: 2D, 3D, Script und AssetLib."
+msgstr ""
+"Oben befinden sich vier Arbeitsumgebungen: 2D, 3D, Script, und AssetLibrary."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
@@ -280,19 +281,24 @@ msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
 msgid ""
+"Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
+msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
-"Der **Script**-Arbeitsbereich ist ein vollständiger Code-Editor mit "
-"Debugger, umfassender Autovervollständigung und eingebauter Sprach-Referenz. "
-"Drücke F3, um darauf zuzugreifen und F4, um die Referenz zu durchsuchen."
+"Der **Script**-Arbeitsbereich ist ein kompletter Code-Editor mit einem "
+"Debugger, Autovervollständigung und eingebauter Code-Referenz. Drücken Sie "
+"F3, um darauf zuzugreifen, und F4, um die Referenz zu durchsuchen."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:122
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
 msgid "|image17|"
 msgstr "|image17|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
@@ -300,11 +306,11 @@ msgstr ""
 "Zum Schluss die **AssetLib**, sie ist eine Bibliothek mit kostenlosen Add-"
 "ons, Skripten und Assets, die Sie in Ihren Projekten verwenden können."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:128
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
 msgid "Modify the interface"
 msgstr "Oberfläche anpassen"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:132
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
@@ -314,11 +320,11 @@ msgstr ""
 "mehrere Bildschirme verteilen. Sie haben aber die Möglichkeit, einen "
 "externen Code–Editor, wie Atom oder Visual Studio zu benutzen."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:135
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
 msgid "Move and resize docks"
 msgstr "Docks verschieben und skalieren"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:139
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
@@ -326,22 +332,22 @@ msgstr ""
 "Klicken und ziehen Sie den Rand eines beliebigen Docks oder Panels, um die "
 "Größe horizontal oder vertikal zu ändern."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid "|image18|"
 msgstr "|image18|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
 "Klicken Sie auf das drei-gepunktete Symbol am oberen Rand eines beliebigen "
 "Docks, um seine Position zu ändern."
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
 msgid "|image19|"
 msgstr "|image19|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:149
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:4
 msgid "Importing translations"
-msgstr ""
+msgstr "Importation de traductions"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:7
 msgid "Games and internationalization"
-msgstr ""
+msgstr "Jeux et internationalisation"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:9
 msgid ""
@@ -31,6 +31,10 @@ msgid ""
 "profits™, nowadays games are released in several languages. To solve this, "
 "internationalized text must be supported in any modern game engine."
 msgstr ""
+"Le monde regorge de marchés et de cultures différents et, pour maximiser les "
+"profits™, les jeux sont aujourd'hui disponibles en plusieurs langues. Pour "
+"résoudre ce problème, le texte internationalisé doit être pris en charge "
+"dans tout moteur de jeu moderne."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:14
 msgid ""
@@ -39,6 +43,12 @@ msgid ""
 "use several orders of magnitude more text than applications, so they must "
 "support efficient methods for dealing with loads of multilingual text."
 msgstr ""
+"Dans les applications de bureau ou mobiles habituelles, les traductions de "
+"texte se trouvent généralement dans des fichiers de ressources (ou des "
+"fichiers .po pour les applications GNU). Les jeux, cependant, peuvent "
+"utiliser plusieurs ordres de grandeur de plus de texte que les applications, "
+"ils doivent donc supporter des méthodes efficaces pour traiter de grandes "
+"quantités de texte multilingue."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:20
 msgid ""
@@ -49,6 +59,14 @@ msgid ""
 "if a game is released first in English, later in other languages, but a "
 "complete nightmare if working with many languages at the same time."
 msgstr ""
+"Il existe deux approches pour créer des jeux et des applications "
+"multilingues. Les deux reposent sur un principe clé : un système de valeur. "
+"La première consiste à utiliser l'une des langues comme clé (généralement "
+"l'anglais), la seconde consiste à utiliser un identifiant spécifique. La "
+"première approche est probablement plus facile pour le développement si un "
+"jeu est publié en premier en anglais puis plus tard dans d'autres langues, "
+"là où la seconde est un véritable cauchemar de travailler avec plusieurs "
+"langues en même temps."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:28
 msgid ""
@@ -57,14 +75,21 @@ msgid ""
 "other languages. The unique ID can be a number, a string, or a string with a "
 "number (it's just a unique string anyway)."
 msgstr ""
+"En général, les jeux utilisent la deuxième approche et un identifiant unique "
+"est utilisé pour chaque chaîne. Cela vous permet de réviser le texte pendant "
+"qu'il est traduit dans d'autres langues. L'identifiant unique peut être un "
+"nombre, une chaîne ou une chaîne avec un numéro (il ne s'agit que d'une "
+"chaîne unique)."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:33
 msgid "Translators also usually prefer to work with spreadsheets."
 msgstr ""
+"Les traducteurs préfèrent aussi généralement travailler avec des feuilles de "
+"calcul."
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:36
 msgid "Translation format"
-msgstr ""
+msgstr "Format de traduction"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:38
 msgid ""
@@ -75,6 +100,12 @@ msgid ""
 "arrangement. The CSV files must be saved in UTF-8 encoding and be formatted "
 "as follows:"
 msgstr ""
+"Pour compléter le tableau et permettre un support efficace des traductions, "
+"Godot dispose d’un importateur spécial capable de lire les fichiers CSV. "
+"Tous les éditeurs de tableurs (que ce soit Libreoffice, Microsoft Office, "
+"Google Docs, etc.) peuvent exporter vers ce format. La seule exigence est "
+"que les fichiers aient un arrangement spécial. Les fichiers CSV doivent être "
+"enregistrés au format UTF-8 et être formatés comme suit :"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:46
 msgid "<lang1>"
@@ -96,7 +127,7 @@ msgstr "KEY1"
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:52
 msgid "string"
-msgstr ""
+msgstr "chaîne"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:50
 msgid "KEY2"
@@ -113,6 +144,11 @@ msgid ""
 "be unique and represent a string universally (they are usually in uppercase, "
 "to differentiate from other strings). Here's an example:"
 msgstr ""
+"Les balises \"lang\" doivent représenter un langage, qui doit être l'un des :"
+"ref:`locales valides<doc_locales>` supportées par le moteur. Les balises "
+"\"KEY\" doivent être uniques et représenter une chaîne universellement "
+"(elles sont généralement en majuscules pour se différencier des autres "
+"chaînes). Voici un exemple :"
 
 #: ../../docs/getting_started/workflow/assets/importing_translations.rst:61
 msgid "id"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1212,24 +1212,27 @@ msgid "Text: ``Start``"
 msgstr "Tekst: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
+#, fuzzy
 msgid ""
-"The default font for ``Control`` nodes is small and doesn't scale well. "
-"There is a font file included in the game assets called \"Xolonium-Regular."
-"ttf\". To use this font, do the following for each of the three ``Control`` "
-"nodes:"
+"To make the text of the ``MessageLabel`` fit the game's window click the "
+"small icon next to your text property. This will open up a new window where "
+"you can add a new line between the words. The default font for ``Control`` "
+"nodes is small and doesn't scale well. There is a font file included in the "
+"game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
+"following for each of the three ``Control`` nodes:"
 msgstr ""
 "Domyślna czcionka dla węzłów ``Control`` jest mała i nie skaluje się dobrze. "
 "W zasobach gry znajduje się plik czcionki o nazwie \"Xolonium-Regular.ttf\". "
 "Aby użyć tej czcionki, wykonaj następujące czynności dla każdego z trzech "
 "węzłów ``Control``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr ""
 "W zakładce \"Czcionki niestandardowe\" wybierz opcję \"Nowa czcionka "
 "dynamiczna\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:939
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:942
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -1240,18 +1243,18 @@ msgstr ""
 "Należy również ustawić ``Rozmiar`` czcionki. Ustawienie ``64`` powinno "
 "działać dobrze."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
 msgid "Now add this script to ``HUD``:"
 msgstr "Teraz dodaj ten skrypt do ``HUD``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:962
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:965
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr ""
 "Sygnał ``start_game`` informuje węzeł ``Main`` o naciśnięciu przycisku."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:985
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:988
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
@@ -1261,7 +1264,7 @@ msgstr ""
 "jak \"Przygotuj się\". W ``MessageTimer`` ustaw ``Czas oczekiwania`` na "
 "``2`` i ustaw właściwość ``Jednokrotny`` na \"Włączone\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1014
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and show the \"Start\" button."
@@ -1270,11 +1273,11 @@ msgstr ""
 "będzie wyświetlał się napis \"Game Over\" (Koniec Gry), następnie powróci do "
 "ekranu tytułowego i pojawi się przycisk \"Start\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1032
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1035
 msgid "This function is called in ``Main`` whenever the score changes."
 msgstr "Funkcja ta jest wywoływana w ``Main`` przy każdej zmianie wyniku."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1034
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1037
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``."
@@ -1282,11 +1285,11 @@ msgstr ""
 "Podłączyć ``Timeout()`` do sygnału ``MessageTimer`` i ``naciśnięty()`` do "
 "sygnału ``StartButton``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1064
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1067
 msgid "Connecting HUD to Main"
 msgstr "Podłączenie HUD do Main"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1066
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1069
 msgid ""
 "Now that we're done creating the ``HUD`` scene, save it and go back to "
 "``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` "
@@ -1298,7 +1301,7 @@ msgstr ""
 "umieść ją na dole drzewa. Pełne drzewo powinno wyglądać tak, więc upewnij "
 "się, że niczego nie przegapiłeś:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1073
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -1306,7 +1309,7 @@ msgstr ""
 "Teraz musimy podłączyć funkcję ``HUD`` do naszego skryptu ``Main``. Wymaga "
 "to paru poprawek do sceny ``Main``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1079
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function."
@@ -1314,7 +1317,7 @@ msgstr ""
 "W zakładce Węzeł należy podłączyć sygnał HUD'a ``start_game`` do funkcji "
 "``new_game()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1079
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1082
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -1322,11 +1325,11 @@ msgstr ""
 "W ``new_game()``, zaktualizuj wyświetlany wynik i pokaż komunikat "
 "\"Przygotuj się\":"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1094
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1097
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "W ``game_over()`` musimy wywołać odpowiednią funkcję w ``HUD``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1106
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1109
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -1334,7 +1337,7 @@ msgstr ""
 "Na koniec dodaj to do ``on_on_ScoreTimer_timeout()``, aby wyświetlacz był "
 "zsynchronizowany ze zmieniającym się wynikiem:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1119
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1122
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -1342,12 +1345,12 @@ msgstr ""
 "Teraz jesteś gotowy do gry! Kliknąć przycisk \"Uruchom projekt\". Zostaniesz "
 "poproszony o wybranie głównej sceny, więc wybierz ``Main.tscn``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1123
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1126
 #, fuzzy
 msgid "Finishing up"
 msgstr "Kończenie"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1125
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1128
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1358,11 +1361,11 @@ msgstr ""
 "celu poprawy wrażeń z gry. Zapraszamy do rozszerzenia rozgrywki o własne "
 "pomysły."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1130
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid "Background"
 msgstr "Tło"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1132
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1378,7 +1381,7 @@ msgstr ""
 "Wybierz kolor, który chcesz i przeciągnij ``ColorRect`` tak, aby zakrył "
 "ekran."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1139
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1142
 msgid ""
 "You can also add a background image, if you have one, by using a ``Sprite`` "
 "node."
@@ -1386,12 +1389,12 @@ msgstr ""
 "Obraz tła można również dodać, jeśli taki istnieje, za pomocą węzła "
 "``Sprite``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1143
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1146
 #, fuzzy
 msgid "Sound effects"
 msgstr "Efekty dźwiękowe"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1148
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1403,7 +1406,7 @@ msgstr ""
 "\"House In a Forest Loop.ogg\" na muzykę w tle i \"gameover.wav\" odtwarzaną "
 "w razie przegranej."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1150
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1153
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1415,7 +1418,7 @@ msgstr ""
 "każdym z nich kliknij na właściwość ``Stream``, wybierz opcję \"Wczytaj\" i "
 "wybierz odpowiedni plik audio."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1155
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1158
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1423,15 +1426,15 @@ msgstr ""
 "Aby odtwarzać muzykę, dodaj ``$Music.play()`` w funkcji ``new_game()`` i ``"
 "$Music.stop( )`` w funkcji ``game_over()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1158
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr "Na koniec dodaj ``$DeathSound.play()`` do funkcji ``game_over()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid "Particles"
 msgstr "Cząsteczki"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1163
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1166
 msgid ""
 "For one last bit of visual appeal, let's add a trail effect to the player's "
 "movement. Choose your ``Player`` scene and add a :ref:`Particles2D "
@@ -1440,7 +1443,7 @@ msgstr ""
 "Na koniec dodajmy efekt smugi do ruchu gracza. Wybierz swoją scenę i dodaj "
 "węzeł :ref:`Particles2D <class_Particles2D>` o nazwie ``Trail``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1170
 msgid ""
 "There are a large number of properties to choose from when configuring "
 "particles. Feel free to experiment and create different effects. For the "
@@ -1450,7 +1453,7 @@ msgstr ""
 "tworzenia różnych efektów. Aby uzyskać efekt jak w tym przykładzie, należy "
 "użyć następujących ustawień:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
 msgid ""
 "You also need to create a ``Material`` by clicking on ``<null>`` and then "
 "\"New ParticlesMaterial\". The settings for that are below:"
@@ -1458,14 +1461,14 @@ msgstr ""
 "Musisz również utworzyć ``Materiał`` klikając na ``<null>``, a następnie "
 "\"New ParticlesMaterial\". Poniżej znajdują się ustawienia w tym zakresie:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1178
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid ""
 "To make the gradient for the \"Color Ramp\" setting, we want a gradient "
 "taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to "
 "0.0 (fully transparent)."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1182
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid ""
 "Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient"
 "\". You'll see a window like this:"
@@ -1473,7 +1476,7 @@ msgstr ""
 "Kliknij \"New GradientTexture\", a następnie pod \"Gradient\", kliknij "
 "\"Nowy Gradient\". Zobaczysz takie okno:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1187
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1190
 msgid ""
 "The left and right boxes represent the start and end colors. Click on each "
 "and then click the large square on the right to choose the color. For the "
@@ -1485,7 +1488,7 @@ msgstr ""
 "wybrać kolor. Dla pierwszego koloru należy ustawić wartość ``A`` (alfa) na "
 "około połowę. Dla drugiego, ustaw go aż do ``0``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1192
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1195
 msgid ""
 "See :ref:`Particles2D <class_Particles2D>` for more details on using "
 "particle effects."
@@ -1493,12 +1496,12 @@ msgstr ""
 "Zobacz :ref:`Particles2D <class_Particles2D>` aby uzyskać więcej szczegółów "
 "na temat wykorzystania efektów cząsteczkowych."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1196
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1199
 #, fuzzy
 msgid "Project files"
 msgstr "Pliki projektu"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1201
 msgid ""
 "You can find a completed version of this project here: https://github.com/"
 "kidscancode/Godot3_dodge/releases"

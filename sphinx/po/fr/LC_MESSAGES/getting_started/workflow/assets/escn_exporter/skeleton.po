@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,31 +18,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:2
-#, fuzzy
 msgid "Skeleton"
-msgstr "Singletons"
+msgstr "Squelette"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
-msgstr ""
+msgstr "Os d'appui"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:9
 msgid ""
 "Armature object in Blender is exported as a Skeleton node along with rest "
 "position (transform in Godot) of bones."
 msgstr ""
+"L'objet armature dans Blender est exporté en tant que nœud squelette avec la "
+"position de repos (transformation dans Godot) des os."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
+#, fuzzy
 msgid ""
-"The three check boxes :code:`Inheirt Rotation`, :code:`Inheirt Scale`, :code:"
+"The three check boxes :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:"
 "`Local Location` (colored in red) must be ticked when building armature in "
-"Blender, so that the exported bone transform would be consistant between "
+"Blender, so that the exported bone transform would be consistent between "
 "Blender and Godot"
 msgstr ""
+"Les trois cases à cocher :code:`Hériter Rotation`, :code:`Hériter Échelle`, :"
+"code:`Emplacement local` (coloré en rouge) doivent être cochées lors de la "
+"construction de l'armature dans Blender pour que la transposition du corps "
+"exporté soit cohérente entre Blender et Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:19
 msgid "Bone Weights"
-msgstr ""
+msgstr "Poids des os"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
 msgid ""
@@ -51,10 +57,15 @@ msgid ""
 "making the mesh deformed. Therefore, the exporter would raise an error for "
 "any no bone weights vertex detected in a rigged mesh."
 msgstr ""
+"Blender a placé des sommets de maillage rigides qui n'ont pas de poids "
+"osseux à leur position d'origine, mais ces sommets devraient être placés à "
+"(0, 0, 0) dans Godot, ce qui déforme le maillage. Par conséquent, "
+"l'exportateur devrait provoquer une erreur pour tout sommet sans poids d'os "
+"détecté dans un maillage rigide."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"
-msgstr ""
+msgstr "Os non déformé"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
 msgid ""
@@ -62,13 +73,18 @@ msgid ""
 "the :code:`Exclude Control Bones`, the deform bone checkbox is shown in "
 "picture."
 msgstr ""
+"Notez que l'os non déformé peut être configuré pour ne pas être exporté en "
+"activant :code:`Exclure les os de contrôle`, la case à cocher de déformation "
+"de l'os est montrée dans l'image."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
 msgid "Bone Attachment"
-msgstr ""
+msgstr "Attachement osseux"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
 msgid ""
 "Bone can be parent of object in Blender, this relation is exported as a "
 "BoneAttachment node in the Godot scene."
 msgstr ""
+"Un os peut être parent d'un objet dans Blender, cette relation est exportée "
+"en tant que nœud BoneAttachment dans la scène Godot."

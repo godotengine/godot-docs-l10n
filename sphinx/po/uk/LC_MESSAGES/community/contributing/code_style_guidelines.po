@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,14 +57,18 @@ msgid ""
 "to the type name"
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:27
+#: ../../docs/community/contributing/code_style_guidelines.rst:26
+msgid "See further down regarding header includes"
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:28
 msgid ""
 "The rules used by clang-format are outlined in the `.clang-format <https://"
 "github.com/godotengine/godot/blob/master/.clang-format>`__ file of the Godot "
 "repository."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:31
+#: ../../docs/community/contributing/code_style_guidelines.rst:32
 msgid ""
 "As long as you ensure that your style matches the surrounding code and that "
 "you not introducing trailing whitespace or space-based indentation, you "
@@ -73,7 +77,7 @@ msgid ""
 "all your commits."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:36
+#: ../../docs/community/contributing/code_style_guidelines.rst:37
 msgid ""
 "Godot's code style should *not* be applied to thirdparty code, i.e. that is "
 "included in Godot's source tree but was not written specifically for our "
@@ -82,7 +86,7 @@ msgid ""
 "that would make syncing with upstream repositories harder."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:43
+#: ../../docs/community/contributing/code_style_guidelines.rst:44
 msgid ""
 "Thirdparty code is usually included in the ``thirdparty/`` folder and can "
 "thus easily be excluded from formatting scripts. For the rare cases where a "
@@ -91,11 +95,11 @@ msgid ""
 "clang-format to ignore a chunk of code."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:51
+#: ../../docs/community/contributing/code_style_guidelines.rst:52
 msgid "Using clang-format locally"
 msgstr "Використання clang-format локально"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:53
+#: ../../docs/community/contributing/code_style_guidelines.rst:54
 msgid ""
 "First of all, you will need to install clang-format. As of now, you need to "
 "use **clang-format 6.x** to be compatible with Godot's format. Later "
@@ -103,15 +107,15 @@ msgid ""
 "formatting changes to the current code base."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:59
+#: ../../docs/community/contributing/code_style_guidelines.rst:60
 msgid "Installation"
 msgstr "Встановлення"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:61
+#: ../../docs/community/contributing/code_style_guidelines.rst:62
 msgid "Here's how to install clang-format:"
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:63
+#: ../../docs/community/contributing/code_style_guidelines.rst:64
 msgid ""
 "Linux: It will usually be available out-of-the-box with the clang toolchain "
 "packaged by your distribution. If your distro version is not the required "
@@ -120,7 +124,7 @@ msgid ""
 "use the `upstream repos <http://apt.llvm.org/>`__."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:68
+#: ../../docs/community/contributing/code_style_guidelines.rst:69
 msgid ""
 "macOS and Windows: You can download precompiled binaries from the `LLVM "
 "website <http://releases.llvm.org/download.html>`__. You may need to add the "
@@ -128,28 +132,28 @@ msgid ""
 "to be able to call ``clang-format`` out of the box."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:73
+#: ../../docs/community/contributing/code_style_guidelines.rst:74
 msgid ""
 "You then have different possibilities to apply clang-format to your changes:"
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:76
+#: ../../docs/community/contributing/code_style_guidelines.rst:77
 msgid "Manual usage"
 msgstr "Використання вручну"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:78
+#: ../../docs/community/contributing/code_style_guidelines.rst:79
 msgid ""
 "You can apply clang-format manually one or more files with the following "
 "command:"
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:85
+#: ../../docs/community/contributing/code_style_guidelines.rst:86
 msgid ""
 "``-i`` means that the changes should be written directly to the file (by "
 "default clang-format would only output the fixed version to the terminal)."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:87
+#: ../../docs/community/contributing/code_style_guidelines.rst:88
 msgid ""
 "The path can point to several files, either one after the other or using "
 "wildcards like in a typical Unix shell. Be careful when globbing so that you "
@@ -157,24 +161,24 @@ msgid ""
 "Godot's tree. So better use ``core/*.{cpp,h}`` than ``core/*``."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:93
+#: ../../docs/community/contributing/code_style_guidelines.rst:94
 msgid "Pre-commit hook"
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:95
+#: ../../docs/community/contributing/code_style_guidelines.rst:96
 msgid ""
 "For ease of use, we provide a pre-commit hook for Git that will run clang-"
 "format automatically on all your commits to check them, and let you apply "
 "its changes in the final commit."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:99
+#: ../../docs/community/contributing/code_style_guidelines.rst:100
 msgid ""
 "This \"hook\" is a script which can be found in ``misc/hooks``, refer to "
 "that folder's README.md for installation instructions."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:102
+#: ../../docs/community/contributing/code_style_guidelines.rst:103
 msgid ""
 "If your clang-format is not in the ``PATH``, you may have to edit the ``pre-"
 "commit-clang-format`` to point to the correct binary for it to work. The "
@@ -182,21 +186,21 @@ msgid ""
 "Windows."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:108
+#: ../../docs/community/contributing/code_style_guidelines.rst:109
 msgid "IDE plugin"
 msgstr "Додаток до IDE"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:110
+#: ../../docs/community/contributing/code_style_guidelines.rst:111
 msgid ""
 "Most IDEs or code editors have beautifier plugins that can be configured to "
 "run clang-format automatically, for example each time you save a file."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:113
+#: ../../docs/community/contributing/code_style_guidelines.rst:114
 msgid "Here is a non-exhaustive list of beautifier plugins for some IDEs:"
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:115
+#: ../../docs/community/contributing/code_style_guidelines.rst:116
 msgid ""
 "Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
@@ -204,56 +208,110 @@ msgstr ""
 "Qt Creator: `додаток Beautifier <http://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:116
-msgid ""
-"Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
-"items?itemName=xaver.clang-format>`__"
-msgstr ""
-"Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
-"items?itemName=xaver.clang-format>`__"
-
 #: ../../docs/community/contributing/code_style_guidelines.rst:117
 msgid ""
+"Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
+"items?itemName=xaver.clang-format>`__"
+msgstr ""
+"Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
+"items?itemName=xaver.clang-format>`__"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:118
+msgid ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
 msgstr ""
 "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:118
+#: ../../docs/community/contributing/code_style_guidelines.rst:119
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 msgstr "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:120
+#: ../../docs/community/contributing/code_style_guidelines.rst:121
 msgid "(Pull requests welcome to extend this list with tested plugins.)"
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:123
-msgid "Java"
-msgstr "Java"
-
-#: ../../docs/community/contributing/code_style_guidelines.rst:125
-msgid ""
-"For Godot's Java code (mostly in ``platform/android``), there is currently "
-"no style guide, so for now try to stay consistent with the existing code."
+#: ../../docs/community/contributing/code_style_guidelines.rst:124
+msgid "Header includes"
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:128
+#: ../../docs/community/contributing/code_style_guidelines.rst:126
 msgid ""
-"Once a style is decided upon, it could also be enforced via clang-format."
+"When adding new C++ or Objective-C files or including new headers in "
+"existing ones, the following rules should be followed:"
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:129
+msgid ""
+"The first lines in the file should be Godot's copyright header and MIT "
+"license, copy-pasted from another file. Make sure to adjust the filename."
 msgstr ""
 
 #: ../../docs/community/contributing/code_style_guidelines.rst:131
+msgid ""
+"In a ``.h`` header, include guards should be used with the form "
+"``FILENAME_H``."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:134
+msgid ""
+"In a ``.cpp`` file (e.g. ``filename.cpp``), the first include should be the "
+"one where the class is declared (e.g. ``#include \"filename.h\"``), followed "
+"by an empty line for separation."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:137
+msgid ""
+"Then come headers from Godot's own code base, included in alphabetical order "
+"(enforced by ``clang-format``) with paths relative to the root folder. Those "
+"includes should be done with quotes, e.g. ``#include \"core/object.h\"``. "
+"The block of Godot header includes should then be followed by an empty line "
+"for separation."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:142
+msgid ""
+"Finally, thirdparty headers (either from ``thirdparty`` or from the system's "
+"include paths) come next and should be included with the < and > symbols, e."
+"g. ``#include <png.h>``. The block of thirdparty headers should also be "
+"followed by an empty line for separation."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:146
+msgid ""
+"Godot and thirdparty headers should be included in the file that requires "
+"them, i.e. in the `.h` header if used in the declarative code or in the `."
+"cpp` if used only in the imperative code."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:150
+msgid "Example:"
+msgstr "Приклад:"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:238
+msgid "Java"
+msgstr "Java"
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:240
+msgid ""
+"Godot's Java code (mostly in ``platform/android``) is also enforced via "
+"``clang-format``, so see the instructions above to set it up. Keep in mind "
+"that this style guide only applies to code written and maintained by Godot, "
+"not thirdparty code such as the ``java/src/com/google`` subfolder."
+msgstr ""
+
+#: ../../docs/community/contributing/code_style_guidelines.rst:246
 msgid "Python"
 msgstr "Python"
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:133
+#: ../../docs/community/contributing/code_style_guidelines.rst:248
 msgid ""
 "Godot's SCons buildsystem is written in Python, and various scripts included "
 "in the source tree are also using Python."
 msgstr ""
 
-#: ../../docs/community/contributing/code_style_guidelines.rst:136
+#: ../../docs/community/contributing/code_style_guidelines.rst:251
 msgid ""
 "For those, we follow the `PEP-8 style guide <https://www.python.org/dev/peps/"
 "pep-0008/>`__, this is however not as strongly enforced as for the C++ code. "

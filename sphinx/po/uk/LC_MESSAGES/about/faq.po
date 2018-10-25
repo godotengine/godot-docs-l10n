@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,8 +96,9 @@ msgstr ""
 "LOGO_LICENSE.md>`_ в репозиторії Godot."
 
 #: ../../docs/about/faq.rst:28
+#, fuzzy
 msgid ""
-"Also see `the license page on the Godot website <https://godotengine.org/"
+"Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
 "Також див. `сторінку ліцензії на веб-сайті Godot <https://godotengine.org/"
@@ -116,8 +117,9 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
-msgid "Mac OS X"
-msgstr "Mac OS X"
+#, fuzzy
+msgid "macOS"
+msgstr "**macOS**"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -183,7 +185,6 @@ msgid "Which programming languages are supported in Godot?"
 msgstr "Підтримку яких мов програмування передбачено у Godot?"
 
 #: ../../docs/about/faq.rst:64
-#, fuzzy
 msgid ""
 "The officially supported languages for Godot are GDScript, Visual Scripting, "
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
@@ -218,14 +219,16 @@ msgstr ""
 #, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
-"GDNative / NativeScript / PluginScript facilities. (See question about "
+"GDNative / NativeScript / PluginScript facilities. (See the question about "
 "plugins below.) Work is currently underway, for example, on unofficial "
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Також ведуться роботи, наприклад, над неофіційними прив'язками Godot до "
-"`Python <https://github.com/touilleMan/godot-python>`_ і `Nim <https://"
-"github.com/pragmagic/godot-nim>`_."
+"Що стосується нових мов, можлива підтримка за допомогою стороннього коду з "
+"використанням можливостей GDNative / NativeScript / PluginScript. (Див. "
+"питання щодо додатків нижче.) Також ведуться роботи, наприклад, над "
+"неофіційними прив'язками Godot до `Python <https://github.com/touilleMan/"
+"godot-python>`_ і `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -271,10 +274,10 @@ msgid ""
 "additional users by supporting more familiar programming languages--"
 "especially when supporting those more familiar languages would result in a "
 "worse experience. We understand if you would rather use another language in "
-"Godot (see list of supported options above). That being said, if you haven't "
-"given GDScript a try, try it for **three days**. Just like Godot, once you "
-"see how powerful it is and rapid your development becomes, we think GDScript "
-"will grow on you."
+"Godot (see the list of supported options above). That being said, if you "
+"haven't given GDScript a try, try it for **three days**. Just like Godot, "
+"once you see how powerful it is and rapid your development becomes, we think "
+"GDScript will grow on you."
 msgstr ""
 "Коротка відповідь полягає в тому, що ми вважаємо, що додаткова складність як "
 "з вашої сторони (коли ви вперше вивчаєте Godot та GDScript), так із нашої "
@@ -305,13 +308,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:126
-#, fuzzy
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
-"У більшості віртуальних машин для скриптів немає хорошої підтримки потоку, а "
-"Godot використовує потоки (Lua, Python, Squirrel, JS, AS та ін.)."
+"У більшості віртуальних машин для скриптів немає хорошої підтримки потоків "
+"виконання, а Godot використовує потоки (Lua, Python, Squirrel, JS, AS та "
+"ін.)."
 
 #: ../../docs/about/faq.rst:128
 #, fuzzy
@@ -563,7 +566,8 @@ msgstr ""
 "редактора <doc_making_plugins>` та інструментарій скриптів."
 
 #: ../../docs/about/faq.rst:228
-msgid "Also see the official blog posts on these topics:"
+#, fuzzy
+msgid "Also, see the official blog posts on these topics:"
 msgstr "Також див. дописи в офіційному блозі за цими темами:"
 
 #: ../../docs/about/faq.rst:230

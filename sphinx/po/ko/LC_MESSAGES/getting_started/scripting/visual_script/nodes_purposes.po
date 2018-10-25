@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
-msgid "Nodes and Terminology"
-msgstr ""
+#, fuzzy
+msgid "Nodes and terminology"
+msgstr "노드 및 용어"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:6
 msgid ""
@@ -32,10 +33,18 @@ msgid ""
 "referring to *Node* here, it will be implied that a *Visual Script Node* is "
 "referred to unless indicated otherwise."
 msgstr ""
+"계속 하기 전에 * Node * 용어를 주의 해 서 사용 해야 한다는 점에 유의 해야 합"
+"니다. * 시각적 스크립트 노드 * (또는 일반적으로 * 노드 *)를 참조 하는 경우이 "
+"텍스트는 그래프의 일부인 선으로 연결 하는 작은 상자를 참조 합니다. * 장면 노"
+"드 *를 참조할 때 씬을 구성 하는 요소 들이 참조 되는 것으로, 트리의 일부인 것"
+"을 암시 합니다. 그들의 이름은 비슷하지만 그들의 기능은 다르다. 여기에서 * "
+"Node *를 참조 하면 별도로 표시 하지 않는 한 * 시각적 스크립트 노드 *가 참조 "
+"됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
-msgid "Node Properties"
-msgstr ""
+#, fuzzy
+msgid "Node properties"
+msgstr "노드 속성"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:17
 msgid ""
@@ -43,6 +52,9 @@ msgid ""
 "properties. In Godot, though, we try to avoid bloating the nodes with "
 "editable controls for the sake of readability."
 msgstr ""
+"대부분의 시각적 스크립팅 구현과 마찬가지로 각 노드에는 편집 가능한 속성이 있"
+"습니다. 하지만 godot에서는 가독성을 높이기 위해 편집 가능한 컨트롤을 사용 하"
+"여 노드 팽창을 방지 하려고 합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:20
 msgid ""
@@ -50,20 +62,26 @@ msgid ""
 "via the *Inspector*. To edit them, select any node and edit its properties "
 "in the *Inspector*."
 msgstr ""
+"노드에는 여전히 필요한 정보가 텍스트로 표시 되지만 편집은 *Inspector*를 통해 "
+"수행 됩니다. 편집 하려면 노드를 선택 하고 *Inspector*에서 해당 속성을 편집 합"
+"니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
-msgid "Ports and Connections"
-msgstr ""
+#, fuzzy
+msgid "Ports and connections"
+msgstr "포트 및 연결"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:27
 msgid ""
 "Programming in Godot Visual Scripting is done via *Nodes* and *Port "
 "Connections* inside each function."
 msgstr ""
+"Godot 비주얼 스크립팅에서 프로그래밍은 각 함수 안에 *Nodes* 및 *Port "
+"Connections*을 통해 수행 됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:31
 msgid "Ports"
-msgstr ""
+msgstr "포트"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:33
 msgid ""
@@ -71,6 +89,9 @@ msgid ""
 "appear to the left and right of nodes and which can be used to make "
 "*Connections*: There are two types of *Ports*: *Sequence* and *Data*."
 msgstr ""
+"Godot 비주얼 스크립팅의 노드는 *Ports*를가지고 있습니다. 다음은 노드 왼쪽 및 "
+"오른쪽에 표시 되 고 *Connections*을 만드는 데 사용할 수 있는 끝점입니다: 두 "
+"가지 유형의 *Ports*: *Sequence* 및 *Data*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
 msgid ""
@@ -81,6 +102,12 @@ msgid ""
 "Thanks to this, you can follow the logic flow within a function by following "
 "the white lines. Not every *Node* has *Sequence Ports*. In fact, most do not."
 msgstr ""
+"*Sequence Ports*는 작업이 실행 되는 순서를 나타냅니다. 일반적으로 *Node*가 처"
+"리를 마치면 오른쪽에 있는 포트 중 하나에서 다음 노드로 이동 합니다. 연결 된 "
+"것이 없으면 함수가 종료 되거나 다른 출력 *Sequence Ports*가 시도 될 수 있습니"
+"다 (이 노드에 따라 다름). 이 덕분에 흰색 선을 따라 함수 내의 로직 흐름을 따"
+"를 수 있습니다. 모든 *Node*가 *Sequence Ports*를가지고 있지 않습니다. 사실, "
+"대부분은 하지 않습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:46
 msgid ""
@@ -90,6 +117,10 @@ msgid ""
 "considered an output, while, a port on the left side is an input. Connecting "
 "them allows information to flow to the next node."
 msgstr ""
+"*Data Ports* 포트에는 형식화 된 값이 포함 되어 있습니다. 유형은 부울, 정수, "
+"문자열, Vector3, 배열, 모든 객체 또는 장면 노드 등과 같은 일반 Godot 유형이 "
+"될 수 있습니다. 노드의 오른쪽에 있는 *Data Port*는 출력으로 간주 되지만 왼쪽"
+"의 포트는 입력입니다. 이를 연결 하면 정보가 다음 노드로 전달 됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:51
 msgid ""
@@ -97,16 +128,20 @@ msgid ""
 "Pay special attention to colors and icons, as each type has a different "
 "representation:"
 msgstr ""
+"모든 *Data Port* 유형은 호환 되며 연결을 허용할 수 있습니다. 각 유형에는 다"
+"른 표현이 있으므로 색상 및 아이콘에 특별 한 주의를 기울이세요:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:58
 msgid "Connections"
-msgstr ""
+msgstr "연결(Connections)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:60
 msgid ""
 "Connecting is a relatively simple process. Drag an *Output Port* towards an "
 "*Input Port*."
 msgstr ""
+"연결은 비교적 간단한 프로세스입니다. *Output Port*를 *Input Port* 쪽으로 드래"
+"그 합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:65
 msgid ""
@@ -114,6 +149,8 @@ msgid ""
 "happens by dragging the *Input* away, while for *Sequence Ports*, this "
 "happens by dragging the *Output* away."
 msgstr ""
+"연결 해제는 좀 더 연습이 필요합니다. *Data Ports*의 연결 해제는 *Input*을 드"
+"래그하여 발생하지만 *Sequence Ports*의 경우 *Output*을 드래그하여 발생합니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
 msgid ""
@@ -121,6 +158,9 @@ msgid ""
 "are 1:N (A single output port can connect to many inputs), while *Sequence "
 "Ports* are N:1 (Many sequence outputs can be connected to a single input)."
 msgstr ""
+"처음에는 이상하게 보일 수도 있지만 *Data Ports*가 1:N(단일 출력 포트는 많은 "
+"입력에 연결할 수 있기 때문에)이지만, *Sequence Ports*는 N:1입니다 (많은 시퀀"
+"스 출력이 단일 입력)."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:75
 msgid ""
@@ -128,14 +168,18 @@ msgid ""
 "also context sensitive, it will supply a list of most common operations. For "
 "sequences, it will be conditional nodes:"
 msgstr ""
+"빈 공간에 연결 (드래그 하여 연결 하고 빈 공간을 누르지 않은 경우) 또한 컨텍스"
+"트를 구분 하여 가장 일반적인 작업 목록을 제공 합니다. 시퀀스의 경우에는 조건"
+"부 노드가 됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:81
 msgid "While, for data, a contextual set/get/call menu will open:"
-msgstr ""
+msgstr "데이터의 경우 컨텍스트 설정/가져오기/호출 메뉴가 열립니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:87
-msgid "Adding Nodes"
-msgstr ""
+#, fuzzy
+msgid "Adding nodes"
+msgstr "노드 추가"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:89
 msgid ""
@@ -143,10 +187,14 @@ msgid ""
 "each type of node does, let's take a short look at how nodes are most "
 "commonly added and dealt with."
 msgstr ""
+"마침내! 우리는 재미있는 부분에 도달했습니다! 그러나 노드의 각 유형이 하는 일"
+"을 보다 자세히 설명하기 전에 노드가 가장 일반적으로 추가되고 처리되는 방법을 "
+"간단히 살펴 보겠습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
-msgid "Accessing Scene Nodes"
-msgstr ""
+#, fuzzy
+msgid "Accessing scene nodes"
+msgstr "Accessing Scene Nodes"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:96
 msgid ""
@@ -155,6 +203,10 @@ msgid ""
 "dropping into the canvas will ask you to *call a method* (sometimes referred "
 "to as *member function*) on this node."
 msgstr ""
+"가장 일반적인 작업 중 하나는 장면 트리 노드에 액세스하는 것입니다 (다시 * "
+"Visual Script Nodes *로 착각하지 마십시오). 장면 트리에서 드래그하여 캔버스"
+"에 놓으면 이 노드에서 \"call a method\" (*member function*라고도 함) 하라는 "
+"메시지가 표시됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:102
 msgid ""
@@ -164,16 +216,24 @@ msgid ""
 "position in local coordinates to the control. Another common use case is "
 "queueing a node for deletion, which is done with the *queue_free* method."
 msgstr ""
+"대부분의 경우 속성에 액세스하는 것이 좋지만 (아래에 자세히 설명되어 있음) 가"
+"끔씩 *calling methods*도 유용 할 수 있습니다. 메소드는 객체에 대해 특정 작업"
+"을 실행합니다. 위의 경우 마우스 포인터는 컨트롤에 대한 로컬 좌표의 위치로 뒤"
+"틀릴 수 있습니다. 또 다른 일반적인 사용 사례는 *queue_free* 메소드를 사용하"
+"여 노드를 삭제 대기열에 넣는 것입니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:109
 msgid ""
 "Care must be taken that this only works if the scene being edited contains "
 "your *Visual Script* in one of the nodes! Otherwise, a warning will be shown."
 msgstr ""
+"편집중인 장면에 노드 중 하나에 * Visual Script *가 포함되어있는 경우에만 작동"
+"해야합니다. 그렇지 않으면 경고가 표시됩니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
-msgid "Accessing Scene Node Properties"
-msgstr ""
+#, fuzzy
+msgid "Accessing scene node properties"
+msgstr "장면 노드 속성 액세스"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:115
 msgid ""
@@ -182,26 +242,33 @@ msgid ""
 "Name* of the property you want to edit (hint, *not* the value!) and drag it "
 "to the canvas:"
 msgstr ""
+"Visual Scripting에서 *Scene Nodes*를 편집하는 가장 일반적인 방법입니다. "
+"*Scene Tree*에서 *Scene Node*를 선택하고, Inspector로 이동하여 편집하려는 속"
+"성의 *Name*을 찾고 (힌트, 값이 *아님*) 캔버스로 드래그하십시오:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:120
 msgid ""
 "The result is that this value can be changed from your script by writing to "
 "a *Data Port*."
 msgstr ""
+"결과적으로이 값은 *Data Port*에 기록하여 스크립트에서 변경할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:122
 msgid ""
 "If instead reading this value is desired, drag the node again but hold the "
 "*Control* key (or Command on Mac). This will create a getter:"
 msgstr ""
+"이 값을 읽으려면, *Control* 키 (또는 Mac에서는 Command)를 누르고 노드를 다시 "
+"드래그 합니다. getter가 생성됩니다:\n"
+";"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
 msgid "In this case, the value can be read from a *Data Port*."
-msgstr ""
+msgstr "이 경우 *Data Port*에서 값을 읽을 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
 msgid "Variables"
-msgstr ""
+msgstr "변수 (Variable)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:133
 msgid ""
@@ -209,16 +276,21 @@ msgid ""
 "This value can be read from any of the functions of the script or from other "
 "scripts via the method described in the previous step."
 msgstr ""
+"변수는 값을 저장할 수있는 스크립트의 로컬 메모리 컨테이너입니다. 이 값은 스크"
+"립트의 모든 기능이나 이전 단계에서 설명한 방법을 통해 다른 스크립트에서 읽을 "
+"수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:135
 msgid ""
 "To add a Variable, push the \"+\" button on the *Variables* section of the "
 "Members panel. Double-click the new variable to rename it:"
 msgstr ""
+"변수를 추가하려면 멤버 패널의 *Variables* 섹션에있는 \"+\"버튼을 누릅니다. "
+"새 변수를 두번 클릭하여 이름을 바꿉니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:140
 msgid "Right-clicking the variable allows you to configure its properties:"
-msgstr ""
+msgstr "변수를 오늘쪽 마우스 클릭 하면 해당 속성을 구성할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
 msgid ""
@@ -228,20 +300,26 @@ msgid ""
 "also makes it available to other scripts via the method described in the "
 "previous step."
 msgstr ""
+"위에서 볼 수 있듯이 변수의 유형과 초기 값은 물론 일부 속성 힌트도 변경할 수 "
+"있습니다. \"내보내기(Export)\"옵션을 선택하면 노드를 선택할 때 Inspector에 변"
+"수가 표시됩니다. 또한 이전 단계에서 설명한 방법을 통해 다른 스크립트에서도 사"
+"용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
 msgid ""
 "To use the variable in the script, simply drag it to the canvas to create a "
 "getter:"
 msgstr ""
+"스크립트에서 변수를 사용하려면 캔버스로 드래그하여 간단히 getter를 만듭니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:158
 msgid "Likewise, hold *Control* (*Command* on Mac) to drop a setter:"
 msgstr ""
+"마찬가지로 Setter를 삭제하려면 *Control* (Mac *Command*)를 누르고 있습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:164
 msgid "Signals"
-msgstr "시그널"
+msgstr "시그널 (Signal)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:166
 msgid ""
@@ -249,11 +327,16 @@ msgid ""
 "this, do the same steps you did for variables in the previous step, except "
 "for *Signals*:"
 msgstr ""
+"스크립트에서 자신의 신호를 만들어 사용하는 것도 가능합니다. 이를 위해 * "
+"Signals *를 제외하고 이전 단계의 변수에 대해 수행 한 것과 동일한 단계를 수행"
+"하십시오:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
 msgid ""
 "A signal can also be edited via right-click menu to customize its arguments:"
 msgstr ""
+"오른쪽 클릭 메뉴를 통해 신호(signal)를 편집하여 인수를 사용자 정의 할 수도 있"
+"습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
 msgid ""
@@ -261,6 +344,8 @@ msgid ""
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
+"생성 한 신호(Signal)는 내장 노드 신호와 함께 Inspector에 나타납니다. 이렇게하"
+"면 다른 *Scene Node*의 다른 스크립트에서 연결할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
@@ -273,8 +358,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:190
-msgid "Adding More Nodes"
-msgstr ""
+#, fuzzy
+msgid "Adding more nodes"
+msgstr "노드 추가"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:192
 msgid ""
@@ -304,7 +390,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:211
 msgid "Constants"
-msgstr "상수"
+msgstr "상수 (Constant)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:213
 msgid ""
@@ -336,7 +422,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
-msgstr ""
+msgstr "데이터"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:230
 msgid ""
@@ -423,7 +509,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr ""
+msgstr "SceneTree"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
 msgid ""
@@ -564,7 +650,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:384
 msgid "While"
-msgstr "동안에"
+msgstr "While"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:386
 msgid ""
@@ -574,7 +660,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 msgid "Functions"
-msgstr ""
+msgstr "함수 (Function)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:393
 msgid ""
@@ -698,7 +784,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid "Operators"
-msgstr ""
+msgstr "연산자 (Operators)"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
 msgid ""

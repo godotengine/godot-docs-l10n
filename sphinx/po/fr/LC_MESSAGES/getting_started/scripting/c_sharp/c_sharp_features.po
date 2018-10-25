@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,8 @@ msgstr ""
 "de Godot, et de la façon dont elles sont utilisées ensemble."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:10
-msgid "Type Conversion and Casting"
+#, fuzzy
+msgid "Type conversion and casting"
 msgstr "Conversion de type et Casting"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
@@ -89,12 +90,16 @@ msgstr "**Utilisation de l'opérateur AS**"
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
 msgstr ""
+"Des méthodes génériques sont également fournies pour rendre ce type de "
+"conversion transparent."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
+"``GetNode <T> ()`` lance le nœud avant de le retourner. Il enverra une "
+"``InvalidCastException`` si le nœud ne peut pas être converti au type désiré."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:56
 #, fuzzy
@@ -129,7 +134,8 @@ msgstr ""
 "Matching <https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:82
-msgid "C# Signals"
+#, fuzzy
+msgid "C# signals"
 msgstr "Signaux C#"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:84

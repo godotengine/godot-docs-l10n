@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,204 +101,218 @@ msgid "Makes {text} underline."
 msgstr "Podkreśla {tekst}."
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
+msgid "**strikethrough**"
+msgstr ""
+
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
+#, fuzzy
+msgid "``[s]{text}[/s]``"
+msgstr "``[b]{tekst}[/b]``"
+
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
+#, fuzzy
+msgid "Makes {text} strikethrough."
+msgstr "Wyśrodkowuje {tekst}."
+
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "**code**"
 msgstr "**kod**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "``[code]{text}[/code]``"
 msgstr "``[code]{tekst}[/code]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:35
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
 msgid "Makes {text} monospace."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "**center**"
 msgstr "**wyśrodkuj**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "``[center]{text}[/center]``"
 msgstr "``[center]{tekst}[/center]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:37
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
 msgid "Makes {text} centered."
 msgstr "Wyśrodkowuje {tekst}."
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "**right**"
 msgstr "**prawo**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "``[right]{text}[/right]``"
 msgstr "``[right]{tekst}[/right]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:39
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
 msgid "Makes {text} right-aligned."
 msgstr "Wyrównuje {tekst} do prawej."
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "**fill**"
 msgstr "**wypełnij**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "``[fill]{text}[/fill]``"
 msgstr "``[fill]{tekst}[/fill]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:41
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
 msgid "Makes {text} fill width."
 msgstr "Tworzy dla {tekst}, wypełnienie na szerokość."
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "**indent**"
 msgstr "**akapit**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "``[indent]{text}[/indent]``"
 msgstr "``[indent]{tekst}[/indent]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:43
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
 msgid "Increase indent level of {text}."
 msgstr "Zwiększ poziom akapitu dla {text}."
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "**url**"
 msgstr "**url**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "``[url]{url}[/url]``"
 msgstr "``[url]{url}[/url]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:45
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
 msgid "Show {url} as such."
 msgstr "Pokaż adres {url}."
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "**url (ref)**"
 msgstr "**url (ref)**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "``[url=<url>]{text}[/url]``"
 msgstr "``[url=<url>]{tekst}[/url]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:47
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
 msgid "Makes {text} reference <url>."
 msgstr "Tworzy {tekst} odwołujący się do <url>."
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "**image**"
 msgstr "**obraz**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "``[img]{path}[/img]``"
 msgstr "``[img]{ścieżka}[/img]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:49
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
 msgid "Insert image at resource {path}."
 msgstr "Dołącz obraz jako zasób {ścieżka}."
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "**font**"
 msgstr "**czcionka**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "``[font=<path>]{text}[/font]``"
 msgstr "``[font=<ścieżka>]{tekst}[/font]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:51
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
 msgid "Use custom font at <path> for {text}."
 msgstr "Użyj własnej czcionki w <ścieżka> dla {tekst}."
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "**color**"
 msgstr "**kolor**"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "``[color=<code/name>]{text}[/color]``"
 msgstr "``[color=<kod/nazwa>]{tekst}[/color]``"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:53
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
 msgid "Change {text} color, use # format such as #ff00ff or name."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:57
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
 msgid "Built-in color names"
 msgstr "Wbudowane nazwy kolorów"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
 msgid "List of valid color names for the [color=<name>] tag:"
 msgstr "Lista nazw kolorów dla tagu [color=<nazwa>]:"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:61
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
 msgid "aqua"
 msgstr "aqua"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:62
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:64
 msgid "black"
 msgstr "black"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:63
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
 msgid "blue"
 msgstr "blue"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:64
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:66
 msgid "fuchsia"
 msgstr "fuchsia"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:65
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
 msgid "gray"
 msgstr "gray"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:66
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:68
 msgid "green"
 msgstr "green"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:67
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
 msgid "lime"
 msgstr "lime"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:68
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:70
 msgid "maroon"
 msgstr "maroon"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:69
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
 msgid "navy"
 msgstr "navy"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:70
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:72
 msgid "purple"
 msgstr "purple"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:71
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
 msgid "red"
 msgstr "red"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:72
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:74
 msgid "silver"
 msgstr "silver"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:73
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
 msgid "teal"
 msgstr "teal"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:74
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:76
 msgid "white"
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:75
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:77
 msgid "yellow"
 msgstr "yellow"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:78
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:80
 msgid "Hexadecimal color codes"
 msgstr "Heksadecymalne kody kolorów"
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:80
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:82
 msgid ""
 "For opaque RGB colors, any valid 6-digit hexadecimal code is supported, e.g. "
 "``[color=#ffffff]white[/color]``."
 msgstr ""
 
-#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:82
+#: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:84
 msgid ""
 "For transparent RGB colors, any 8-digit hexadecimal code can be used, e.g. "
 "``[color=#88ffffff]translucent white[/color]``. In this case, note that the "

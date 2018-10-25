@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
 msgid "Splash screen"
-msgstr ""
+msgstr "스플래시 화면"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
-msgstr ""
+msgstr "튜토리얼"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
+"이것은 어떻게 GUI 서브 시스템이 작동하는 지에 대한 기본 생각을 세우는 간단한 "
+"튜토리얼입니다. 목표는 간단한, 정적인 스플래시 화면을 만드는 것입니다."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
 msgid ""
@@ -37,20 +39,24 @@ msgid ""
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
+"다음은 우리가 사용할 파일과 에셋입니다. 추출된 파일을 직접 프로젝트 폴더에 놓"
+"으면 고도가 자동으로 가져올 것입니다."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
-msgstr ""
+msgstr ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:21
 msgid "Setting up"
-msgstr ""
+msgstr "설정하기"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:23
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
 msgstr ""
+"프로젝트 설정에서 화면 비율을 800X450으로 설정하세요, 그리고 새 씬을 다음과 "
+"같이 설정하세요:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
 msgid ""
@@ -58,6 +64,8 @@ msgid ""
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
+"\"background\"와 \"logo\" 노드는 :ref:`TextureRect <class_TextureRect>` 타입 "
+"입니다. 이미지를 보이기 위해, 해당하는 에셋을 텍스쳐 속성으로 끌어옵니다."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
 msgid ""
@@ -65,17 +73,21 @@ msgid ""
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
+"\"start\" 노드는 :ref:`TextureButton <class_TextureButton>` 입니다. 각기 다"
+"른 상태에 따라 여러 이미지를 가질 수 있지만, 이 예제에서는 normal과 pressed"
+"만 갖습니다:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
-msgstr ""
+msgstr "마지막으로 \"copyright\" 노드는 :ref:`Label <class_Label>` 입니다."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
 msgid "Your final scene should look something like this."
-msgstr ""
+msgstr "당신의 최종 씬은 이렇게 보여야 할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
+"프로젝트를 실행합시다. 결과물에 만족한다면, 다음 튜토리얼을 계속 진행합니다."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -330,21 +330,21 @@ msgstr ""
 "los diccionarios python, también soportan sintaxis e indexación estilo Lua, "
 "lo que lo hace útil para escribir estados iniciales y estructuras rápidas:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:317
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:318
 msgid "For & while"
 msgstr "For y While"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:319
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:320
 msgid "Iterating in some statically typed languages can be quite complex:"
 msgstr ""
 "La iteración en lenguajes estáticamente tipados puede ser bastante compleja:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:340
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:341
 msgid "This is usually greatly simplified in dynamically typed languages:"
 msgstr ""
 "Esto es usualmente muy simplificado en lenguajes dinámicamente tipificados:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:347
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:348
 msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
@@ -352,43 +352,43 @@ msgstr ""
 "Los tipos de datos de los containers (matrices y diccionarios) son "
 "iterables. Los diccionarios permiten iterar entre las claves:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:355
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:356
 msgid "Iterating with indices is also possible:"
 msgstr "Iterar con índices también es posible:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:362
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:363
 msgid "The range() function can take 3 arguments:"
 msgstr "La función range() puede tomar 3 argumentos:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:370
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:371
 msgid "Some examples:"
 msgstr "Algunos ejemplos:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:380
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:381
 msgid "Translate to:"
 msgstr "Traducir a:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:393
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:394
 msgid "And backwards looping is done through a negative counter:"
 msgstr "Y el loop invertido se realiza a través de un contador negativo:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:399
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:400
 msgid "Becomes:"
 msgstr "Se vuelve:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:407
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:408
 msgid "While"
 msgstr "While"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:409
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
 msgstr "Los bucles while() son los mismos en todas partes:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:420
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"
 msgstr "Itineradores personalizados"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:422
 msgid ""
 "You can create custom iterators in case the default ones don't quite meet "
 "your needs by overriding the Variant class's ``_iter_init``, ``_iter_next``, "
@@ -400,11 +400,11 @@ msgstr ""
 "``_iter_next``, e ``_iter_get`` de la clase Variant en su script. A "
 "continuación se muestra un ejemplo de implementación de un iterador avanzado:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:453
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
 msgstr "Y se puede utilizar como cualquier otro iterador:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:461
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:462
 msgid ""
 "Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
 "nested for-loops that use custom iterators will not work as expected."
@@ -413,11 +413,11 @@ msgstr ""
 "contrario, los bucles for que utilizan iteradores personalizados no "
 "funcionarán como se espera."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:465
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
 msgid "Duck typing"
 msgstr "Tipado dinámico (duck typing)"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:467
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:468
 msgid ""
 "One of the most difficult concepts to grasp when moving from a statically "
 "typed language to a dynamic one is duck typing. Duck typing makes overall "
@@ -429,7 +429,7 @@ msgstr ""
 "hace que el diseño general del código sea mucho más simple y sencillo de "
 "escribir, pero no es obvio cómo funciona."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:472
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:473
 msgid ""
 "As an example, imagine a situation where a big rock is falling down a "
 "tunnel, smashing everything on its way. The code for the rock, in a "
@@ -439,7 +439,7 @@ msgstr ""
 "aplastando todo en su camino. El código para la roca, en un lenguaje de "
 "tipado estático sería algo así como:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:483
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:484
 msgid ""
 "This way, everything that can be smashed by a rock would have to inherit "
 "Smashable. If a character, enemy, piece of furniture, small rock were all "
@@ -457,7 +457,7 @@ msgstr ""
 "embargo, no sería muy elegante añadir un método virtual ``smash()`` a Entity "
 "sólo si unos pocos de ellos pueden ser aplastados."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:491
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:492
 msgid ""
 "With dynamically typed languages, this is not a problem. Duck typing makes "
 "sure you only have to define a ``smash()`` function where required and "
@@ -468,7 +468,7 @@ msgstr ""
 "necesario y nada más. No hay necesidad de considerar la herencia, clases "
 "base, etc."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:500
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
 msgid ""
 "And that's it. If the object that hit the big rock has a smash() method, it "
 "will be called. No need for inheritance or polymorphism. Dynamically typed "
@@ -482,7 +482,7 @@ msgstr ""
 "métodos o miembros deseados, no que hereda ni el tipo de clase. La "
 "definición de Duck Typing debería hacer esto más claro:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:506
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:507
 msgid ""
 "*\"When I see a bird that walks like a duck and swims like a duck and quacks "
 "like a duck, I call that bird a duck\"*"
@@ -490,22 +490,22 @@ msgstr ""
 "*\"Cuando veo un ave que camina como un pato, nada como un pato y grazna "
 "como un pato, entonces llamo al ave pato\"*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:509
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:510
 msgid "In this case, it translates to:"
 msgstr "En este caso, se traduce como:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:511
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:512
 msgid ""
 "*\"If the object can be smashed, don't care what it is, just smash it.\"*"
 msgstr ""
 "*\"Si el objeto puede ser golpeado, no me importa lo que es, solo golpéalo."
 "\"*"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:513
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
 msgstr "Sí, en su lugar deberíamos llamarlo Hulk Typing."
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:515
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "
@@ -517,7 +517,7 @@ msgstr ""
 "un método cuando no existe (como Objective C), pero GDScript es más "
 "estricto, por lo que es deseable comprobar si la función existe:"
 
-#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:526
+#: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""
 "Then, simply define that method and anything the rock touches can be smashed."
 msgstr ""

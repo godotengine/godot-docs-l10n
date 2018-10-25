@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -203,192 +203,195 @@ msgstr "更改导入参数"
 msgid "Visibility Rect"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:134
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:135
 msgid ""
-"The ``W`` and ``H`` values control width and height of the visibility "
-"rectangle. The ``X`` and ``Y`` values control the position of the upper-left "
-"corner of the visibility rectangle relative to the particle emitter."
+"The visibility rectangle controls the visibility of the particles on screen. "
+"If this rectangle is outside of the viewport, the engine will not render the "
+"particles on screen."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:139
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:137
+msgid ""
+"The rectangle's ``W`` and ``H`` properties respectively control its Width "
+"and its Height. The ``X`` and ``Y`` properties control the position of the "
+"upper-left corner of the rectangle, relative to the particle emitter."
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:141
+msgid ""
+"You can generate a Visibility Rect can be generated automatically using the "
+"toolbar above the 2d view. To do so select the Particles2D node and Click "
+"``Particles > Generate Visibility Rect``. Godot will simulate the "
+"Particles2D node emitting particles for a few seconds and set the rectangle "
+"to fit the surface the particles take."
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:143
+msgid ""
+"You can control the emit duration with the ``Generation Time (sec)`` option. "
+"The maximum value is 25 seconds. If you need more time for your particles to "
+"move around, you can temporarily change the ``preprocess`` duration on the "
+"Particles2D node."
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:146
 msgid "Local Coords"
 msgstr "本地坐标"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:141
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:148
 msgid ""
 "By default this option is on, and it means that the space that particles are "
 "emitted to is relative to the node. If the node is moved, all particles are "
 "moved with it:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:147
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:154
 msgid ""
 "If disabled, particles will emit to global space, meaning that if the node "
 "is moved, already emitted particles are not affected:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:153
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid "Draw Order"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:155
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:162
 msgid ""
 "This controls the order in which individual particles are drawn. ``Index`` "
 "means particles are drawn according to their emission order (default). "
 "``Lifetime`` means they are drawn in order of remaining lifetime."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:160
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:167
 msgid "ParticlesMaterial settings"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:164
-msgid "Commented out as not implemented in 3.x for now."
-msgstr ""
-
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:169
-msgid ""
-"This is the base angle at which particles emit. Default is ``0`` (down):"
-msgstr ""
-
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:173
-msgid ""
-"Changing it will change the emissor direction, but gravity will still affect "
-"them:"
-msgstr ""
-
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:178
-msgid ""
-"This parameter is useful because, by rotating the node, gravity will also be "
-"rotated. Changing direction allows them to be separated."
-msgstr ""
-
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:182
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:186
 msgid "Spread"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:184
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:188
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
 "all directions (+/- 180)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:191
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:195
 msgid "Gravity"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:193
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "The gravity applied to every particle."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:198
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:202
 msgid "Initial Velocity"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:200
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:204
 msgid ""
 "Linear velocity is the speed at which particles will be emitted (in pixels/"
 "sec). Speed might later be modified by gravity or other accelerations (as "
 "described further below)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:207
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:211
 msgid "Angular Velocity"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:209
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:213
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:212
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:216
 msgid "Spin Velocity"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:214
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:218
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:220
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:224
 msgid "Orbit Velocity"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:222
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:226
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:227
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:231
 msgid "Linear Acceleration"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:229
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:233
 msgid "The linear acceleration applied to each particle."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:232
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:236
 msgid "Radial Acceleration"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:234
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:238
 msgid ""
 "If this acceleration is positive, particles are accelerated away from the "
 "center. If negative, they are absorbed towards it."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:240
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:244
 msgid "Tangential Acceleration"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:242
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:246
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
 msgstr "该加速度会使用到中心点的切向量，结合径向加速度可以做出很酷炫的效果。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:248
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:252
 msgid "Damping"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:250
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:254
 msgid ""
 "Damping applies friction to the particles, forcing them to stop. It is "
 "especially useful for sparks or explosions, which usually begin with a high "
 "linear velocity and then stop as they fade."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:257
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:261
 msgid "Angle"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:259
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:263
 msgid ""
 "Determines the initial angle of the particle (in degress). This parameter is "
 "mostly useful randomized."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:265
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:269
 msgid "Scale"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:267
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid "Determines the initial scale of the particles."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:272
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:276
 msgid "Color"
 msgstr "颜色"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:274
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:278
 msgid "Used to change the color of the particles being emitted."
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:277
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:281
 msgid "Hue variation"
 msgstr ""
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:279
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:283
 msgid ""
 "The Variation value sets the initial hue variation applied to each particle. "
 "The Variation Rand value controls the hue variation randomness ratio."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr ""
 "interface graphique de jeu prête à contrôler avec GDscript ou Visualscript :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
 msgid "The final result"
 msgstr "Le résultat final"
 
@@ -173,16 +173,29 @@ msgid "For now, let's start with a few containers."
 msgstr "Pour l'instant, commençons avec quelques conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
+#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
-"it ``GUI``. Then save the scene as ``GUI.tscn``. It will contain the entire "
-"GUI."
+"it ``GUI``."
 msgstr ""
 "Créez une nouvelle scène et ajoutez un ``MarginContainer``. Sélectionnez le "
 "nœud et nommez-le ``GUI``. Sauvegardez ensuite la scène sous le nom ``GUI."
 "tscn``. Il contiendra toute l'interface graphique."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:75
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
+msgid ""
+"We want our interface to anchor to the top of the screen. Select the ``GUI`` "
+"node and click the Layout button at the top of the viewport. Select the "
+"``Top Wide`` option. The ``GUI`` node will anchor to the top edge of its "
+"parent, the viewport by default. It will resize automatically on the "
+"vertical axis to make space for its child UI components."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
+msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
 "With the ``MarginContainer`` selected, head to the inspector and scroll down "
 "to the custom constants section. Unfold it and click the field next to each "
@@ -197,13 +210,14 @@ msgstr ""
 "``HBoxContainer``. Celui-ci contiendra nos deux barres à gauche et les "
 "séparera des deux compteurs à droite."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:81
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
+#, fuzzy
 msgid ""
-"We want to stack the bars vertically inside the ``HBoxContainer``. To do "
-"this, let's add a ``VBoxContainer``. Name it ``Bars``. Select the parent "
-"``HBoxContainer`` again and this time, add another ``HBoxContainer``. This "
-"one will hold the counters, so call it ``Counters``. With these four "
-"containers, we have the base for our GUI scene."
+"We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
+"``VBoxContainer`` as a child of ``GUI`` and name it ``Bars``. Select the "
+"parent ``HBoxContainer`` again and this time, add another ``HBoxContainer`` "
+"as a child of it. Call it ``Counters``. With these four containers, we have "
+"the base for our GUI scene."
 msgstr ""
 "Nous voulons empiler les barres verticalement à l'intérieur du "
 "``HBoxContainer``. Pour ce faire, ajoutons un ``VBoxContainer`` et donnez-"
@@ -212,11 +226,11 @@ msgstr ""
 "compteurs, alors appelez-le \"Counters\". Avec ces quatre conteneurs, nous "
 "avons la base de notre scène GUI."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:89
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
 msgstr "Vous devriez avoir 4 conteneurs ressemblant à ceci"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:93
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
 msgid ""
 "We can work this way because we first broke down our UI design and took a "
 "few moments to think about the containers we'd use. When you follow a "
@@ -230,11 +244,11 @@ msgstr ""
 "travaillerez sur de vrais jeux, vous verrez qu'il s'agit d'une méthode de "
 "travail efficace."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:99
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:105
 msgid "Create the bars' base"
 msgstr "Créez la base des barres"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:101
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
 msgid ""
 "Each bar is split into two sub-elements that align horizontally: the label "
 "with the health count on the left, and the gauge on the right. Once again, "
@@ -247,7 +261,7 @@ msgstr ""
 "Sélectionnez le nœud ``Bars`` et ajoutez un nouveau ``HBoxContainer`` à "
 "l'intérieur. Donnez-lui le nom de \"Bar\"."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:107
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:113
 msgid ""
 "The label itself requires at least three nodes: a ``NinePatchRect`` for the "
 "background, on top of which we'll add a texture on the left, either ``HP`` "
@@ -271,32 +285,32 @@ msgstr ""
 "``MarginContainer`` et donnez-lui le nom de \"Count\". A l'intérieur, "
 "ajoutez trois nœuds :"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:118
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:124
 msgid "A ``NinePatchRect`` named ``Background``"
 msgstr "Un ``NinePatchRect`` nommé ``Background``"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:119
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:125
 msgid "A ``TextureRect`` named ``Title``"
 msgstr "Un ``TextureRect`` nommé ``Title``"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:120
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
 msgid "And a ``Label`` named ``Number``"
 msgstr "Et un ``Label`` nommé ``Number``"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:122
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:128
 msgid "To add the nodes as siblings, always select the ``Count`` node first."
 msgstr ""
 "Pour ajouter les nœuds en tant que frères, sélectionnez toujours le nœud "
 "``Count`` en premier."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:126
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:132
 msgid ""
 "Your scene tree should look like this. We're ready to throw in some textures"
 msgstr ""
 "Votre arbre de scène devrait ressembler à ceci. Nous sommes prêts à ajouter "
 "des textures"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:129
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
 msgid ""
 "Our scene is still empty. It's time to throw in some textures. To load the "
 "textures, head to the FileSystem dock to the left of the viewport. Browse "
@@ -306,13 +320,13 @@ msgstr ""
 "charger les textures, dirigez-vous vers le dock FileSystem à gauche de la "
 "fenêtre. Naviguez jusqu'au dossier res://assets/GUI."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:135
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:141
 msgid "You should see a list of textures that we'll use to skin our interface."
 msgstr ""
 "Vous devriez vous la liste de texture que vous allez pouvoir utiliser pour "
 "votre interface."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:138
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:144
 msgid ""
 "Select the ``Background`` in the Scene dock. In the Inspector, you should "
 "see a ``Texture`` property. In the FileSystem tab, click and drag "
@@ -332,7 +346,7 @@ msgstr ""
 "(100, 40). Vous devriez voir le ``Background`` redimensionné avec ses "
 "conteneurs parents."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:147
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:153
 msgid ""
 "Next, select the ``Title`` and drag and drop ``label_HP.png`` into its "
 "``Texture`` slot. Select the ``Number`` node, click the field next to the "
@@ -346,13 +360,13 @@ msgstr ""
 "pouvons voir les deux nœuds dans le viewport. Ils devraient s'empiler dans "
 "le coin supérieur gauche de leur parent ``MarginContainer``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:155
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:161
 msgid "If you select both nodes, you should see something like this"
 msgstr ""
 "Si vous sélectionnez les deux nœuds, vous devriez voir quelque chose comme "
 "ceci"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:157
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:163
 msgid ""
 "As they have a container as their direct parent, we cannot move them freely: "
 "the ``Count`` node will always reset their anchors, their size and position. "
@@ -367,7 +381,7 @@ msgstr ""
 "textures et appuyez sur Ctrl+Haut ou Ctrl+Bas pour les réorganiser dans le "
 "dock Scène. Ils retrouveront leur taille et leur position antérieures."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:164
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:170
 msgid ""
 "Parent containers control the size, the scale, the margins, and the anchors "
 "of their direct children. To modify the nodes, you must nest them inside a "
@@ -382,7 +396,7 @@ msgstr ""
 "``Title`` et ``Number``. Sélectionnez ``Title`` et ``Number``, puis faites-"
 "les glisser-et déposez les sur ``Background``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:173
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:179
 msgid ""
 "By using the Background node as the two textures' parent, we take control "
 "away from the Count MarginContainer"
@@ -390,7 +404,7 @@ msgstr ""
 "En utilisant le noeud Background comme parent des deux textures, nous "
 "prenons le contrôle du Count MarginContainer"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:176
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -416,7 +430,7 @@ msgstr ""
 "la moitié droite de l'arrière-plan et qu'il y ait un peu de place avec le "
 "bord droit."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:189
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
 msgid ""
 "Here's how the nodes' bounding boxes should look in the viewport. Keep it "
 "rough, you don't need to place them too precisely for now."
@@ -425,11 +439,11 @@ msgstr ""
 "la fenêtre d'affichage. Gardez-les bruts, vous n'avez pas besoin de les "
 "placer trop précisément pour l'instant."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:193
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:199
 msgid "Replace the Label's font"
 msgstr "Remplacer la police du label"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:195
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:201
 msgid ""
 "The label's font is too small. We need to replace it. Select the ``Number`` "
 "node and in the Inspector, scroll down to the ``Control`` class, and find "
@@ -442,7 +456,7 @@ msgstr ""
 "à coté de la propriété ``Font`` et cliquer sur ``New Dynamic Font``. Cliquer "
 "sur le champ de nouveau et sélectionner Modifier."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:201
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:207
 msgid ""
 "You will enter the ``Dynamic Font`` resource. Unfold the ``Font`` category "
 "and click the field next to ``Font Data``. Click the ``Load`` button. In the "
@@ -459,7 +473,7 @@ msgstr ""
 "la catégorie des paramètres pour changer la taille de la police. Changer la "
 "propriété ``Size`` pour une valeur plus grande, comme ``24`` ou ``28``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:209
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:215
 msgid ""
 "We now need the text's baseline, the number's lower edge, to align with the "
 "HP texture on the left. To do so, still in the ``DynamicFont`` resource, you "
@@ -480,11 +494,11 @@ msgstr ""
 "Font`` de nouveau et ajuster la propriété ``Bottom`` jusqu'à ce que le texte "
 "s'aligne avec le nœud ``Title``. J'ai utilisé une valeur de ``2`` pixels."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:221
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
 msgid "With a Bottom value of 2 pixels, the Number aligns with the Title"
 msgstr "Avec une valeur pour Bas de 2 pixels, le Nombre s'aligne avec le Titre"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:223
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
 msgid ""
 "With this, we finished the hardest part of the GUI. Congratulations! Let's "
 "move on to the simpler nodes."
@@ -493,11 +507,11 @@ msgstr ""
 "utilisateur graphique. Félicitations ! Allons-y maintenant avec des nœuds "
 "plus simples."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:227
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:233
 msgid "Add the progress bar"
 msgstr "Ajouter une bar de progresssion"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:229
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:235
 msgid ""
 "We need one last element to complete our life bar: the gauge itself. Godot "
 "ships with a ``TextureProgress`` node that has everything we need."
@@ -506,7 +520,7 @@ msgstr ""
 "la jauge elle-même. Godot est fourni avec un nœud ``TextureProgress`` qui "
 "comprend tout ce dont nous avons besoin."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:232
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:238
 msgid ""
 "Select the Bar node and add a ``TextureProgress`` inside of it. Name it "
 "``Gauge``. In the inspector unfold the ``Textures`` section. Head to the "
@@ -523,13 +537,13 @@ msgstr ""
 "classe ``Range`` dans l'inspecteur, changez la propriété `Value`` à ``50`` "
 "pour voir la jauge se remplir."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:240
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:246
 msgid "With only five ``Control`` nodes, our first bar is ready to use."
 msgstr ""
 "Avec seulement cinq noeuds ``Control``, notre première barre est prête à "
 "être utilisée."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:244
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
 msgid ""
 "That's it, our life bar is ready. This last part was quick, wasn't it? "
 "That's thanks to our robust container setup."
@@ -537,11 +551,11 @@ msgstr ""
 "Nous y voilà, notre barre de vie est prête. Cette dernière partie fut "
 "rapide, n'est-ce pas ? C'est grâce à la robustesse de nos conteneurs."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:248
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:254
 msgid "Design the bomb and rupee counters"
 msgstr "Créer un compteur de bombe et de rubis"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:250
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:256
 msgid ""
 "The bomb and rupee counters are like the bar's ``Count`` node. So we'll "
 "duplicate it and use it as a template."
@@ -549,7 +563,7 @@ msgstr ""
 "Les compteurs de bombes et de rubis sont comme le nœud ``Count`` de la "
 "barre. Nous allons donc le dupliquer et l'utiliser comme modèle."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:253
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:259
 msgid ""
 "Under the ``Bar`` node, select ``Count`` and press Ctrl D to duplicate it. "
 "Drag and drop the new node under the ``Counters`` ``HBoxContainer`` at the "
@@ -562,7 +576,7 @@ msgstr ""
 "voir se redimensionner automatiquement. Ne vous inquiétez pas pour "
 "l'instant, nous allons corriger la taille bientôt."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:258
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -579,11 +593,11 @@ msgstr ""
 "l'icône. Dans l'arbre des scènes, sélectionner le nœud ``Title``, et "
 "renommez-le pour ``Icon``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:267
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
 msgstr "Voici à quoi devrait ressembler votre arbre de nœuds jusqu'à présent"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:269
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:275
 msgid ""
 "With the ``Icon`` node selected, in the inspector, scroll to the top to see "
 "the ``Texture`` slot. Head to the FileSystem dock on the left and select the "
@@ -601,13 +615,13 @@ msgstr ""
 "``Full Rect``. Les deux nœuds seront mis à jour pour s'adapter à la taille "
 "de ``Background`."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:279
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:285
 msgid "The nodes anchor to the entire Background, but their position is off"
 msgstr ""
 "Les noeuds s'ancrent à l'arrière-plan en entier, mais leur position est "
 "désactivée"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:281
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:287
 msgid ""
 "Let's change the ``Number``'s align properties to move it to the left and "
 "center of the ``Background``. Select the ``Number`` node, change its "
@@ -621,11 +635,11 @@ msgstr ""
 "pour \"center\". Puis redimensionner un peu son bord gauche pour ajouter un "
 "peu de place entre le bord gauche de l'arrière-plan et le texte."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:289
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:295
 msgid "The Number node aligned to the left and centre"
 msgstr "Le nœud ``Number`` aligné à gauche et au centre"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:291
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:297
 msgid ""
 "To overlap the Icon and the background, we need a few tweaks. First, our "
 "background is a bit too tall. It's because it's inside a margin container "
@@ -645,7 +659,7 @@ msgstr ""
 "ne peut pas être plus petit que la taille minimale de ses enfants. Les "
 "marges du conteneur comptent également."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:299
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:305
 msgid ""
 "Select the Icon, click the Layout menu, and select ``Full Rect`` to re-"
 "center it. We need it to anchor to the ``Background``'s right edge. Open the "
@@ -658,7 +672,7 @@ msgstr ""
 "Right``. Déplacez l'icône vers le haut de façon à ce qu'elle soit centrée "
 "verticalement avec l'arrière-plan."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:307
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:313
 msgid ""
 "The bomb icon anchors to the Background's right edge. Resize the Counter "
 "container to see the Icon node stick to its right side"
@@ -667,7 +681,7 @@ msgstr ""
 "Redimensionner le conteneur Counter pour voir le nœud Icon coller sur le "
 "côté droit"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:310
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:316
 msgid ""
 "Because we duplicated the ``Counter`` from the bar's ``Count``, the "
 "``Number`` node's font is off. Select the ``Number`` node again, head to the "
@@ -682,14 +696,15 @@ msgstr ""
 "changez la valeur ``Bottom`` à ``0`` pour réinitialiser la ligne de base de "
 "la police. Notre compteur fonctionne maintenant comme prévu."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:317
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
+#, fuzzy
 msgid ""
-"While we are at it, let's make it so the ``Counters`` snap to the right edge "
-"of the viewport. To achieve this we will set the ``Bars`` container to "
-"expand and take all the horizontal space. Select the ``Bars`` node and "
-"scroll down to the ``Size Flags`` category. In the ``Horizontal`` category, "
-"check the ``Expand`` value. The ``Bars`` node should resize and push the "
-"counter to the rightmost of the screen."
+"Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
+"so we need to set the ``Bars`` container take all the available horizontal "
+"space it can. Select the ``Bars`` node and scroll down to the ``Size Flags`` "
+"category. In the ``Horizontal`` category, check the ``Expand`` value. The "
+"``Bars`` node should resize and push the counter to the right side of the "
+"screen."
 msgstr ""
 "Pendant que nous y sommes, faisons en sorte que les ``Counters`` "
 "s'enclenchent sur le bord droit de la fenêtre du viewport. Pour ce faire, "
@@ -699,7 +714,7 @@ msgstr ""
 "cochez la valeur ``Expand``. Le nœud ``Bars`` devrait se redimensionner et "
 "pousser le compteur à l'extrême droite de l'écran."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:326
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
 msgid ""
 "An expanding container eats all the space it can from its parent, pushing "
 "everything else along the way"
@@ -707,13 +722,13 @@ msgstr ""
 "Un conteneur extensible prend tout l'espace qu'il peut de son parent, en "
 "poussant tout le reste du même coup"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:330
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:335
 msgid "Turn the bar and counter into reusable UI components"
 msgstr ""
 "Transformer la barre et le compteur en composants d'interface graphique "
 "réutilisables"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:332
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:337
 msgid ""
 "We have one bar and one counter widget. But we need two of each. We may need "
 "to change the bars' design or their functionality later on. It'd be great if "
@@ -727,7 +742,7 @@ msgstr ""
 "scènes enfants pour travailler sur des variations. Godot nous permet de "
 "faire cela avec les scènes héritées."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:338
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
 msgid ""
 "Let's save both the ``Counter`` and the ``Bar`` branches as separate scenes "
 "that we'll reduce to create the ``LifeBar``, the ``EnergyBar``, the "
@@ -743,7 +758,7 @@ msgstr ""
 "scène en tant que ``Bar.tscn``. Vous devriez voir la branche de nœud se "
 "transformer en un seul nœud ``Bar``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:347
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -761,7 +776,7 @@ msgstr ""
 "nœud du dock Scène et sélectionnez \" Enregistrer la branche comme scène \" "
 "ou \" Fusionner à partir de la scène \"."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:355
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -780,15 +795,15 @@ msgstr ""
 "nœuds Control, nous sommes prêts à hériter de ce modèle et à créer la barre "
 "de vie. C'est la même chose pour ``Counter``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:365
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
 msgstr "Sans aucun autre changement, votre barre est prête à être utilisé"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:368
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
 msgid "Use Scene Inheritance to create the remaining elements"
 msgstr "Utiliser l'héritage de scène pour créer les éléments restants"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
 msgid ""
 "We need two bars that work the same way: they should feature a label on the "
 "left, with some value, and a horizontal gauge on the right. The only "
@@ -803,7 +818,7 @@ msgstr ""
 "donne un outil puissant pour créer une base commune à réutiliser pour toutes "
 "les barres du jeu : des **scènes héritées**."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:378
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:383
 msgid ""
 "Inherited scenes help us keep the GUI scene clean. In the end, we will only "
 "have containers and one node for each UI component."
@@ -812,7 +827,7 @@ msgstr ""
 "graphique(GUI) propre. En fin de compte, nous n'aurons que des conteneurs et "
 "un nœud pour chaque composant de l'interface utilisateur(UI)."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:381
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -833,7 +848,7 @@ msgstr ""
 "communes. Nous ne voulons pas le copier manuellement dans toutes les "
 "variations."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:390
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
 "A reload icon will appear next to the properties you override. Click it to "
 "reset the value to the parent scene's default."
@@ -842,7 +857,7 @@ msgstr ""
 "remplacez. Cliquez dessus pour réinitialiser la valeur à la valeur par "
 "défaut de la scène parente."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:400
 msgid ""
 "Think of scene inheritance like the node tree, or the ``extends`` keyword in "
 "GDScript. An inherited scene does everything like its parent, but you can "
@@ -854,11 +869,11 @@ msgstr ""
 "mais vous pouvez réécrire les propriétés, les ressources et ajouter des "
 "nœuds et des scripts supplémentaires pour étendre ses fonctionnalités."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:401
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:406
 msgid "Inherit the Bar Scene to build the LifeBar"
 msgstr "Hériter de la scène Bar pour construire la barre de vie"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:403
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:408
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` to create a new type of ``Bar``. "
 "Select the Bar scene and open it. You should see a new [unsaved] tab, that's "
@@ -871,13 +886,13 @@ msgstr ""
 "excepté la racine qui est en gris. Appuyez sur ``Meta+S`` pour sauvegarder "
 "la nouvelle scène héritée et nommez-la ``LifeBar``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:411
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:416
 msgid "You can't rename grey nodes. This tells you they have a parent scene"
 msgstr ""
 "Vous ne pouvez pas renommer les nœuds grisés. Cela signifie qu'ils ont une "
 "scène parente"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:413
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:418
 msgid ""
 "First, rename the root or top level node to ``LifeBar``. We always want the "
 "root to describe exactly what this UI component is. The name differentiates "
@@ -894,7 +909,7 @@ msgstr ""
 "généraux, de sorte qu'il fonctionne avec toutes les scènes héritées. Comme "
 "nos nœuds ``TextureProgress`` et ``Number``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:422
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:427
 msgid ""
 "If you've ever done web design, it's the same spirit as working with CSS: "
 "you create a base class, and add variations with modifier classes. From a "
@@ -913,11 +928,11 @@ msgstr ""
 "Lorsque nous créons une scène héritée et changeons le nom du nœud de niveau "
 "supérieur, nous faisons la même chose."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:431
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
 msgid "Design the EnergyBar"
 msgstr "Créer la barre d'énergie"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:433
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:438
 msgid ""
 "We already setup the ``LifeBar``'s design with the main ``Bar`` scene. Now "
 "we need the ``EnergyBar``."
@@ -925,7 +940,7 @@ msgstr ""
 "Nous avons déjà mis en place le design de la ``LifeBar`` avec la scène "
 "principale ``Bar``. Nous avons maintenant besoin d'``EnergyBar``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:436
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:441
 msgid ""
 "Let's create a new inherited scene, and once again select the ``Bar.tscn`` "
 "scene and open it. Double-click on the ``Bar`` root node and rename it to "
@@ -938,7 +953,7 @@ msgstr ""
 "tscn``. Nous devons remplacer la texture HP par une texture EP, et changer "
 "les textures sur la jauge."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:442
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
 msgid ""
 "Head to the FileSystem dock on the left, select the ``Title`` node in the "
 "Scene tree and drag and drop the ``label_EP.png`` file onto the texture "
@@ -951,7 +966,7 @@ msgstr ""
 "``Number`` et changez la propriété ``Text`` à une valeur différente, comme "
 "``14```."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:447
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:452
 msgid ""
 "You'll notice the EP texture is smaller than the HP one. We should update "
 "the ``Number``'s font size to better fit it. A font is a resource. All the "
@@ -968,13 +983,13 @@ msgstr ""
 "comme ``40`` et revenir aux scènes ``LifeBar`` ou ``Bar``. Vous verrez que "
 "la taille du texte a augmenté."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:456
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:461
 msgid "If we change the font resource, all the nodes that use it are affected"
 msgstr ""
 "Si nous changeons la ressource de police, tous les nœuds qui l'utilisent "
 "seront affectés"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:459
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:464
 msgid ""
 "To change the font size on this node only, we must create a copy of the font "
 "resource. Select the ``Number`` node again and click on the wrench and "
@@ -989,13 +1004,13 @@ msgstr ""
 "``Rendre les sous-ressources uniques``. Godot trouvera toutes les ressources "
 "que ce nœud utilise et créera des copies uniques pour nous."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:467
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:472
 msgid "Use this option to create unique copies of the resources for one node"
 msgstr ""
 "Utilisez cette option pour créer des copies uniques des ressources pour un "
 "nœud"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:471
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
 msgid ""
 "When you duplicate a node from the Scene tree, with ``Meta+D``, it shares "
 "its resources with the original node. You need to use ``Make Sub-Resources "
@@ -1007,7 +1022,7 @@ msgstr ""
 "les sous-ressources uniques`` avant de pouvoir ajuster les ressources sans "
 "affecter le nœud source."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:476
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:481
 msgid ""
 "Scroll down to the ``Custom Font`` section and open ``Font``. Lower the "
 "``Size`` to a smaller value like ``20`` or ``22``. You may also need to "
@@ -1019,25 +1034,22 @@ msgstr ""
 "Vous devrez peut-être aussi ajuster la valeur de l'espacement \" Bottom \" "
 "pour aligner la ligne de base du texte avec l'étiquette EP à gauche."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:483
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:488
 msgid "The EP Count widget, with a smaller font than its HP counterpart"
-msgstr "Le widget EP Count, avec une police plus petite que son homologue HP."
+msgstr "Le widget EP Count, avec une police plus petite que son homologue HP"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:485
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:490
 msgid ""
 "Now, select the ``TextureProgress`` node. Drag the ``energy_bar_bg.png`` "
 "file onto the ``Under`` slot and do the same for ``energy_bar_fill.png`` and "
 "drop it onto the ``Progress`` texture slot."
 msgstr ""
 "Maintenant, sélectionnez le noeud ``TextureProgress``. Faites glisser le "
-"fichier ``energy_bar_bg.png`` sur l'emplacement ``Under`` et faites de même "
-"pour ``energy_bar_fill.png`` et déposez-le sur l'emplacement de texture "
+"fichier ``energy_bar_bg.png`` sur l'emplacement ``Under``, de même pour "
+"``energy_bar_fill.png`` : déposez-le sur l'emplacement de texture "
 "``Progress``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:489
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:494
 msgid ""
 "You can resize the node vertically so that its bounding rectangle fits the "
 "gauge. Do the same with the ``Count`` node until its size aligns with that "
@@ -1046,16 +1058,15 @@ msgid ""
 "That is also the size the ``Bar`` container will have. You may downscale "
 "this one as well."
 msgstr ""
-"Vous pouvez redimensionner le nœud verticalement de sorte que son rectangle "
-"de délimitation s'adapte à la jauge. Faites de même avec le nœud ``Count`` "
-"jusqu'à ce que sa taille s'aligne avec celle de la barre. Parce que la "
-"taille minimale de ``TextureProgress`` est définie en fonction de ses "
-"textures, vous ne pourrez pas réduire la taille du nœud ``Count`` en "
-"dessous. C'est aussi la taille que le conteneur \"Bar\" aura. Vous pouvez "
-"également réduire l'échelle de celui-ci."
+"Vous pouvez redimensionner le nœud verticalement pour que son rectangle de "
+"délimitation s'adapte à la jauge. Faites en de même avec le nœud ``Count`` "
+"jusqu'à ce que sa taille s'aligne avec celle de la barre. Comme la taille "
+"minimale de ``TextureProgress`` est définie en fonction de ses textures, "
+"vous ne pourrez pas réduire la taille du nœud ``Count`` en dessous de celle "
+"des textures utilisées. C'est aussi la taille du conteneur ``Bar``. Vous "
+"pouvez également diminuer sa taille."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:496
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:501
 msgid ""
 "Last but not least, the ``Background`` container has a minimum size that "
 "makes it a bit large. Select it and in the ``Rect`` section, change the "
@@ -1064,16 +1075,14 @@ msgid ""
 msgstr ""
 "Enfin, le conteneur \"Background\" a une taille minimale qui le rend un peu "
 "trop large. Sélectionnez-le et dans la section ``Rect``, changez la "
-"propriété ``Min Size`` jusqu'à ``80`` pixels. Il devrait se redimensionner "
-"automatiquement et les nœuds ``Title`` et ``Number`` devraient le faire  "
-"également."
+"propriété ``Min Size`` pour ``80`` pixels. Il devrait se redimensionner "
+"automatiquement et les nœuds ``Title`` et ``Number`` devraient suivre."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:504
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:509
 msgid "The Count looks better now it's a bit smaller"
-msgstr "Count paraît mieux maintenant qu'il est un peu plus petit."
+msgstr "Le noeud Count est plus sympa maintenant qu'il est un peu plus petit"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:508
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
 #, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
@@ -1082,19 +1091,18 @@ msgid ""
 "the LifeBar's Count nodes are one hundred pixels wide, so both gauges will "
 "align perfectly."
 msgstr ""
-"La taille du nœud Count affecte la position de TextureProgress. Comme nous "
-"allons aligner nos barres verticalement dans un moment, il vaut mieux "
-"utiliser la marge gauche du compteur pour redimensionner notre étiquette EP. "
-"De cette façon, les nœuds de compteur de la barre d'énergie et de barre de "
-"vie ont une centaine de pixels de large, de sorte que les deux jauges "
-"s'alignent parfaitement."
+"La taille du nœud ``Count`` affecte la position de ``TextureProgress``. "
+"Comme nous allons aligner nos barres verticalement, il vaut mieux utiliser "
+"la marge gauche du compteur pour redimensionner notre label EP. Ainsi, les "
+"nœuds du compteur de la barre d'énergie et de la barre de vie font une "
+"centaine de pixels de large donc les deux jauges s'alignent parfaitement."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:515
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
 #, fuzzy
 msgid "Prepare the bomb and rupee counters"
 msgstr "Préparer les compteurs de bombes et de rubis"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:517
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
 #, fuzzy
 msgid ""
 "Let us now take care of the counters. Go to ``Scene -> New Inherited Scene`` "
@@ -1107,12 +1115,12 @@ msgstr ""
 "racine en tant que ``BombCounter```. Sauvegardez la nouvelle scène sous le "
 "nom de ``BombCounter.tscn``. C'est tout pour cette scène."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:524
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:529
 #, fuzzy
 msgid "The bomb counter is the same as the original Counter scene"
 msgstr "Le compteur de bombes est le même que celui de la scène originale"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:526
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
 #, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
@@ -1139,19 +1147,19 @@ msgstr ""
 "Sauvegardez, et nous en avons fini avec tous les éléments de l'interface "
 "utilisateur."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:539
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
 #, fuzzy
 msgid "The rupee counter should look about like this"
 msgstr "Le compteur de rubis devrait ressembler à ceci"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:542
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 #, fuzzy
 msgid "Add the UI components to the final GUI"
 msgstr ""
 "Ajouter les composants de l'interface utilisateur à l'interface graphique "
 "finale."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
 #, fuzzy
 msgid ""
 "Time to add all the UI elements to the main GUI scene. Open the ``GUI.tscn`` "
@@ -1167,12 +1175,12 @@ msgstr ""
 "sur le conteneur ``Bars`` dans l'arbre de scène. Faites de même pour "
 "``EnergyBar``. Vous devriez les voir s'aligner verticalement."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:552
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:557
 #, fuzzy
 msgid "The LifeBar and the EnergyBar align automatically"
 msgstr "La barre de vie et la barre d'énergie sont automatiquement aligné"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:554
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
 #, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
@@ -1182,13 +1190,13 @@ msgstr ""
 "``RupeeCounter.tscn``sur le nœud ``Counters``. Ils se redimensionneront "
 "automatiquement."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
 #, fuzzy
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
 "Les nœuds se redimensionnent pour prendre tout l'espace vertical disponible"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:561
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
 #, fuzzy
 msgid ""
 "To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
@@ -1205,11 +1213,11 @@ msgstr ""
 "la propriété ``Vertical`` et cochez ``Shrink Center`` pour que le conteneur "
 "soit centré à l'intérieur de ``HBoxContainer``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:570
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
 msgid "Now both counters have a decent size"
 msgstr "Maintenant, les compteurs ont une bonne taille"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:574
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:579
 msgid ""
 "Change the ``Min Size`` property of the ``Counters`` container to control "
 "the height of the counters' background."
@@ -1217,7 +1225,7 @@ msgstr ""
 "Changer la propriété ``Min Size`` du conteneur ``Counters``  pour contrôler "
 "la hauteur du fond des compteurs."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:577
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
 #, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
@@ -1237,11 +1245,11 @@ msgstr ""
 "avoir une marge à gauche. Si vous sauvegardez et retournez à la scène de "
 "l'interface graphique, elle sera alignée verticalement avec ``LifeBar``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:588
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
 msgid "The 2 bars align perfectly"
 msgstr "Les 2 barres sont parfaitement aligné"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:592
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 #, fuzzy
 msgid ""
 "We could have setup the ``EnergyBar`` this way a few moments ago. But this "
@@ -1253,12 +1261,12 @@ msgstr ""
 "scène à tout moment, l'ajuster et voir les changements se répercuter tout le "
 "long du projet !"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 #, fuzzy
 msgid "Place the GUI onto the game's mockup"
 msgstr "Placez l'interface graphique sur la maquette du jeu"
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:599
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
 #, fuzzy
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
@@ -1267,12 +1275,12 @@ msgstr ""
 "Pour conclure le tutoriel, nous allons insérer l'interface graphique sur la "
 "scène de la maquette du jeu."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:607
 #, fuzzy
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
 msgstr "Dirigez-vous vers le dock FileSystem et ouvrez ``LevelMockup.tscn``."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:609
 #, fuzzy
 msgid ""
 "Drag-and-drop the ``GUI.tscn`` scene right below the ``bg`` node and above "
@@ -1290,7 +1298,7 @@ msgstr ""
 "graphique pour la rendre aussi petite que possible verticalement. Maintenant "
 "vous pouvez voir à quoi ressemble l'interface dans le contexte du jeu."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:611
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "final project `here <#>`__."
@@ -1298,7 +1306,7 @@ msgstr ""
 "Félicitation, vous avez atteint la fin de ce long tutoriel. Vous pouvez "
 "retrouver le projet final `ici <#>`__."
 
-#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:620
+#: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
 #, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "

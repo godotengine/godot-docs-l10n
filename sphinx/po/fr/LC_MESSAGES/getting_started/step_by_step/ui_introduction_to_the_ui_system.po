@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,7 +112,8 @@ msgid "Bounding rectangle"
 msgstr "Rectangle de délimitation"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-msgid "Focus and focus neighbour"
+#, fuzzy
+msgid "Focus and focus neighbor"
 msgstr "Focus et focus voisin"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
@@ -194,10 +195,11 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
+#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
-"property to change its behaviour:"
+"property to change its behavior:"
 msgstr ""
 "**TextureRect** affiche une texture ou une image à l'intérieur d'une "
 "interface utilisateur. Il ressemble au nœud Sprite mais il offre plusieurs "
@@ -255,8 +257,9 @@ msgstr ""
 "plus long est coupé aux limites du noeud"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
+#, fuzzy
 msgid ""
-"As with Sprite nodes, you can modulate the TextureRect's colour. Click the "
+"As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
 "Comme pour les noeuds Sprite, vous pouvez moduler la couleur du noeud "
@@ -386,11 +389,12 @@ msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
+#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
-"corners. It is useful to build panels, dialogue boxes and scalable "
-"backgrounds for your UI."
+"corners. It is useful to build panels, dialog boxes and scalable backgrounds "
+"for your UI."
 msgstr ""
 "**NinePatchRect** prend une texture divisée en 3 lignes et 3 colonnes. Le "
 "centre et les côtés du carreau se dupliquent lorsque vous mettez à l'échelle "

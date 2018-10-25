@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,32 +22,46 @@ msgstr ""
 msgid "Godot-Blender-Exporter"
 msgstr "Importeur de scènes Godot"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:5
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
+msgid ""
+"This chapter relates to the blender plugin called \"Godot-Blender-Exporter"
+"\", which can be downloaded here: https://github.com/godotengine/godot-"
+"blender-exporter"
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:8
 msgid "Details on exporting"
 msgstr "Détails sur l'exportation"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:19
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
 msgid "Disabling specific objects"
 msgstr "Désactiver des objets spécifiques"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:20
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:25
 msgid ""
 "Sometimes you don't want some objects exported (eg high-res models used for "
 "baking). An object will not be exported if it is not rendered in the scene. "
 "This can be set in the outliner:"
 msgstr ""
+"Parfois, vous ne voulez pas que certains objets soient exportés (par "
+"exemple, les modèles haute résolution utilisés pour la construction). Un "
+"objet ne sera pas exporté s'il n'est pas rendu dans la scène. Cela peut être "
+"réglé dans le hors-champ :"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:26
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:31
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
 msgstr ""
+"Les objets cachés dans la fenêtre seront exportés, mais seront cachés dans "
+"la scène Godot."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:31
-msgid "Build Pipeline Integration"
-msgstr ""
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:36
+#, fuzzy
+msgid "Build pipeline integration"
+msgstr "Construire l'intégration du pipeline"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:32
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:38
 msgid ""
 "If you have hundreds of model files, you don't want your artists to waste "
 "time manually exporting their blend files. To combat this, the exporter "
@@ -56,3 +70,10 @@ msgid ""
 "systems. An example Makefile and python script that exports all the blends "
 "in a directory is present in the Godot-Blender-exporter repository."
 msgstr ""
+"Si vous avez des centaines de fichiers modèles, vous ne voulez pas que vos "
+"artistes perdent du temps à exporter manuellement leurs fichiers mélangés. "
+"Pour éviter cela, l'exportateur fournit une fonction python ``io_scene_godot."
+"export(out_file_path)`` qui peut être appelée pour exporter un fichier. Cela "
+"permet une intégration facile avec d'autres systèmes de construction. Un "
+"exemple de script Makefile en python qui exporte tout mélangé dans un "
+"répertoire est présent dans le dépôt Godot-Blender-exporter."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,12 @@ msgid ""
 "command line. Given the engine relies on little to no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"Certains développeurs aiment utiliser complémentairement la ligne de "
+"commande. Godot est conçu pour leur être agréable, alors voici les étapes "
+"pour travailler entièrement à partir de la ligne de commande. Étant donné "
+"que le moteur ne nécessite que peu ou pas de bibliothèques externes, les "
+"temps d’initialisation sont assez rapides, ce qui le rend adapté à cette "
+"méthode de travail."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
@@ -40,10 +46,15 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
+"Il est recommandé que votre binaire Godot soit dans votre variable "
+"d'environnement PATH, de sorte qu'il puisse être exécuté facilement à partir "
+"de n'importe quel endroit en tapant ``godot``. Vous pouvez le faire sous "
+"Linux en plaçant le binaire Godot dans ``/usr/local/bin`` et en vous "
+"assurant qu'il s'appelle ``godot``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
 msgid "Setting the project path"
-msgstr ""
+msgstr "Définir le chemin du projet"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:25
 msgid ""
@@ -51,22 +62,29 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
+"Selon l'endroit où se trouve votre binaire Godot et votre répertoire de "
+"travail actuel, vous devrez peut-être définir le chemin d'accès à votre "
+"projet pour que les commandes suivantes fonctionnent correctement."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:29
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
+"Cela peut être fait en donnant le chemin du fichier ``project.godot`` de "
+"votre projet en tant que premier argument, comme ceci :"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "ou en utilisant l'argument ``--path`` :"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"Par exemple, la commande complète pour exporter votre jeu (comme expliqué ci-"
+"dessous) pourrait ressembler à ceci :"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "Creating a project"
@@ -95,12 +113,18 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
+"L'exécution de l'éditeur se fait en exécutant godot avec le paramètre ``-"
+"e``. Cela doit être fait depuis le répertoire du projet ou un sous-"
+"répertoire, sinon la commande est ignorée et le gestionnaire de projet "
+"apparaît."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
+"Si une scène a été créée et enregistrée, elle peut être modifiée "
+"ultérieurement en exécutant le même code avec la dite scène en argument."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Erasing a scene"
@@ -112,6 +136,10 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
+"Godot respecte votre système de fichiers et ne créera pas de fichiers de "
+"métadonnées supplémentaires. Utilisez ``rm`` pour effacer un fichier de "
+"scène. Assurez-vous que rien ne fait référence à cette scène, sinon cela "
+"provoquera une erreur à l’ouverture."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Running the game"
@@ -130,6 +158,8 @@ msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr ""
+"Lorsqu'une scène spécifique doit être testée, passez cette scène à la ligne "
+"de commande."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Debugging"
@@ -141,6 +171,10 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for both running the game or a simple scene."
 msgstr ""
+"Intercepter les erreurs dans la ligne de commande peut être une tâche "
+"difficile car elles ne font que défiler. Pour cela, un débogueur de ligne de "
+"commande est fourni en ajoutant ``-d``. Cela fonctionne à la fois pour "
+"exécuter le jeu ou une simple scène."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "Exporting"
@@ -152,6 +186,10 @@ msgid ""
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
+"L'exportation du projet à partir de la ligne de commande est également prise "
+"en charge. Ceci est particulièrement utile pour les configurations "
+"d'intégrations continues. La version simplifiée de Godot (construction de "
+"serveurs, pas de vidéo ni interface graphique...) est idéale pour cela."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:139
 msgid ""
@@ -160,16 +198,25 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
+"Les noms de plates-formes reconnus par le commutateur ``--export`` sont les "
+"mêmes que ceux affichés dans l'assistant d'exportation de l'éditeur. Pour "
+"obtenir une liste des plates-formes prises en charge à partir de la ligne de "
+"commande, essayez d'exporter vers une plate-forme non reconnue et la liste "
+"complète des plates-formes prises en charge par votre configuration sera "
+"affichée."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:145
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
+"Pour exporter une version de débogage du jeu, utilisez le commutateur ``--"
+"export-debug`` au lieu de ``--export``. Leurs paramètres et leur utilisation "
+"sont les mêmes."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid "Running a script"
-msgstr "Éxécuter un script"
+msgstr "Exécuter un script"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid ""
@@ -177,21 +224,28 @@ msgid ""
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
+"Il est possible d'exécuter un simple script .gd à partir de la ligne de "
+"commande. Cette fonctionnalité est particulièrement utile dans les grands "
+"projets, pour la conversion par lots de ressources, ou l’import/export "
+"personnalisé."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:155
 msgid "The script must inherit from SceneTree or MainLoop."
-msgstr ""
+msgstr "Le script doit hériter de SceneTree ou MainLoop."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:157
 msgid "Here is a simple example of how it works:"
-msgstr ""
+msgstr "Voici un simple exemple de son fonctionnement :"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:168
 msgid "And how to run it:"
-msgstr ""
+msgstr "Et comment l'exécuter :"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:175
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
+"Si aucun fichier project.godot n'existe dans le chemin, le chemin courant "
+"est supposé être le répertoire de travail courant (sauf si ``-path`` est "
+"spécifié)."

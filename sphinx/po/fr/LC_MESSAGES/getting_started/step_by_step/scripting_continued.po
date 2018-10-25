@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -312,7 +312,7 @@ msgstr ""
 "Le préchargement peut être plus pratique, car il se produit lors de "
 "l'analyse du code (GDScript uniquement) :"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:362
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -327,7 +327,7 @@ msgstr ""
 "retournera l'arborescence des nœuds qui peuvent être ajoutés à la scène "
 "active :"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:380
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
 msgid ""
 "The advantage of this two-step process is that a packed scene may be kept "
 "loaded and ready to use so that you can create as many instances as desired. "
@@ -339,40 +339,46 @@ msgstr ""
 "que vous le souhaitez. C'est particulièrement utile pour instancier "
 "rapidement plusieurs ennemis, balles et autres entités dans la scène active."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:386
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:387
 msgid "Register scripts as classes"
-msgstr ""
+msgstr "Enregistrer des scripts en tant que classes"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:388
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
 #, fuzzy
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"La fonctionnalité \"Script Class?\" permet d'enregistrer des scripts dans? "
-"l'éditeur. Par défaut, l'accès au scripts anonymes n'est possible qu'en "
-"chargeant le fichier directement."
+"Godot fournit une fonctionnalité \"Script Class?\" permettant d'enregistrer "
+"des scripts depuis l'éditeur. Par défaut, l'accès au scripts anonymes n'est "
+"possible qu'en chargeant le fichier directement."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:392
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:393
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
 "an optional path to an image to use as an icon. You will then find your new "
 "type in the Node or Resource creation dialog."
 msgstr ""
+"Vous pouvez nommer un script et l'enregistrer comme type dans l'éditeur avec "
+"le mot-clé ``class_name`` suivi par le nom de la classe. Vous pouvez ajouter "
+"une virgule et un éventuel chemin vers une image pour l'utiliser en tant "
+"qu’icône. Vous trouverez alors votre nouveau type dans la boîte de dialogue "
+"de création de nœuds ou de ressources."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:414
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:415
 msgid "In Godot 3.1:"
-msgstr "Salut, Godette v3.11"
+msgstr "Dans Godot v3.11 :"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:416
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
 msgstr ""
+"Seuls GDScript et NativeScript, c'est-à-dire C ++ et d'autres langages "
+"alimentés par GDNative, peuvent enregistrer des scripts."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:418
 msgid "Only GDScript creates global variables for each named script."
-msgstr ""
+msgstr "Seul GDScript crée des variables globales pour chaque script nommé."

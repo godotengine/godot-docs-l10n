@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -252,22 +252,47 @@ msgstr "Drawing Parameters (Parámetros de Dibujo)"
 msgid "Visibility Rect"
 msgstr "Visibility Rect (Rectángulo de Visibilidad)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:134
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:135
 msgid ""
-"The ``W`` and ``H`` values control width and height of the visibility "
-"rectangle. The ``X`` and ``Y`` values control the position of the upper-left "
-"corner of the visibility rectangle relative to the particle emitter."
+"The visibility rectangle controls the visibility of the particles on screen. "
+"If this rectangle is outside of the viewport, the engine will not render the "
+"particles on screen."
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:137
+#, fuzzy
+msgid ""
+"The rectangle's ``W`` and ``H`` properties respectively control its Width "
+"and its Height. The ``X`` and ``Y`` properties control the position of the "
+"upper-left corner of the rectangle, relative to the particle emitter."
 msgstr ""
 "Los valores ``W`` y ``H`` controlan el ancho y alto del rectángulo de "
 "visibilidad. Los valores ``X`` y ``Y`` controlan la posición de la esquina "
 "superior izquierda del rectángulo de visibilidad con respecto al emisor de "
 "partículas."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:139
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:141
+msgid ""
+"You can generate a Visibility Rect can be generated automatically using the "
+"toolbar above the 2d view. To do so select the Particles2D node and Click "
+"``Particles > Generate Visibility Rect``. Godot will simulate the "
+"Particles2D node emitting particles for a few seconds and set the rectangle "
+"to fit the surface the particles take."
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:143
+msgid ""
+"You can control the emit duration with the ``Generation Time (sec)`` option. "
+"The maximum value is 25 seconds. If you need more time for your particles to "
+"move around, you can temporarily change the ``preprocess`` duration on the "
+"Particles2D node."
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:146
 msgid "Local Coords"
 msgstr "Coordenadas locales"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:141
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:148
 msgid ""
 "By default this option is on, and it means that the space that particles are "
 "emitted to is relative to the node. If the node is moved, all particles are "
@@ -277,7 +302,7 @@ msgstr ""
 "emiten las partículas es relativo al nodo. Si se mueve el nodo, todas las "
 "partículas se mueven con él:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:147
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:154
 msgid ""
 "If disabled, particles will emit to global space, meaning that if the node "
 "is moved, already emitted particles are not affected:"
@@ -286,11 +311,11 @@ msgstr ""
 "significa que si el nodo se mueve, las partículas ya emitidas no se verán "
 "afectadas:"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:153
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid "Draw Order"
 msgstr "Draw Order (Orden de Dibujo)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:155
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:162
 msgid ""
 "This controls the order in which individual particles are drawn. ``Index`` "
 "means particles are drawn according to their emission order (default). "
@@ -301,42 +326,15 @@ msgstr ""
 "de emisión (por defecto). ``Lifetime`` significa que se dibujan en el orden "
 "de la vida restante."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:160
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:167
 msgid "ParticlesMaterial settings"
 msgstr "Ajustes de ParticlesMaterial"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:164
-msgid "Commented out as not implemented in 3.x for now."
-msgstr "Comentado como no implementado en 3.x por ahora."
-
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:169
-msgid ""
-"This is the base angle at which particles emit. Default is ``0`` (down):"
-msgstr ""
-"Este es el ángulo base en el que se emiten las partículas. Por defecto es "
-"``0`` (abajo):"
-
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:173
-msgid ""
-"Changing it will change the emissor direction, but gravity will still affect "
-"them:"
-msgstr ""
-"Cambiarlo cambiará la dirección de emisión, pero la gravedad aún las "
-"afectará:"
-
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:178
-msgid ""
-"This parameter is useful because, by rotating the node, gravity will also be "
-"rotated. Changing direction allows them to be separated."
-msgstr ""
-"Este parámetro es útil porque, al girar el nodo, también se girará la "
-"gravedad. El cambio de dirección permite separarlas."
-
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:182
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:186
 msgid "Spread"
 msgstr "Spread (Propagación)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:184
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:188
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
@@ -346,19 +344,19 @@ msgstr ""
 "cualquier dirección a la base ``Direction``. Un spread de ``180`` emitirá en "
 "todas las direcciones (+/- 180)."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:191
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:195
 msgid "Gravity"
 msgstr "Gravity (Gravedad)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:193
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "The gravity applied to every particle."
 msgstr "La gravedad aplicada a cada partícula."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:198
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:202
 msgid "Initial Velocity"
 msgstr "Initial Velocity (Velocidad Inicial)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:200
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:204
 msgid ""
 "Linear velocity is the speed at which particles will be emitted (in pixels/"
 "sec). Speed might later be modified by gravity or other accelerations (as "
@@ -368,20 +366,20 @@ msgstr ""
 "píxeles/segundo). La velocidad puede ser modificada posteriormente por la "
 "gravedad u otras aceleraciones (como se explica más adelante)."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:207
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:211
 msgid "Angular Velocity"
 msgstr "Angular Velocity (Velocidad Angular)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:209
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:213
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr ""
 "Angular velocity es la velocidad angular inicial aplicada a las partículas."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:212
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:216
 msgid "Spin Velocity"
 msgstr "Spin Velocity (Velocidad de Giro)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:214
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:218
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
@@ -389,29 +387,29 @@ msgstr ""
 "Spin velocity es la velocidad a la que las partículas giran alrededor de su "
 "centro (en grados/segundo)."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:220
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:224
 msgid "Orbit Velocity"
 msgstr "Orbit Velocity (Velocidad de la Órbita)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:222
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:226
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr ""
 "Orbit velocity se utiliza para hacer que las partículas giren alrededor de "
 "su centro."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:227
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:231
 msgid "Linear Acceleration"
 msgstr "Linear Acceleration (Aceleración Lineal)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:229
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:233
 msgid "The linear acceleration applied to each particle."
 msgstr "La aceleración lineal aplicada a cada partícula."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:232
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:236
 msgid "Radial Acceleration"
 msgstr "Radial Acceleration (Aceleración Radial)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:234
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:238
 msgid ""
 "If this acceleration is positive, particles are accelerated away from the "
 "center. If negative, they are absorbed towards it."
@@ -419,11 +417,11 @@ msgstr ""
 "Si esta aceleración es positiva, las partículas se aceleran lejos del "
 "centro. Si es negativo, se atraen hacia él."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:240
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:244
 msgid "Tangential Acceleration"
 msgstr "Tangential Acceleration (Aceleración Tangencial)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:242
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:246
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
@@ -431,11 +429,11 @@ msgstr ""
 "Esta aceleración utilizará el vector tangente hasta el centro. La "
 "combinación con la aceleración radial puede producir buenos efectos."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:248
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:252
 msgid "Damping"
 msgstr "Damping (Amortiguación)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:250
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:254
 msgid ""
 "Damping applies friction to the particles, forcing them to stop. It is "
 "especially useful for sparks or explosions, which usually begin with a high "
@@ -445,11 +443,11 @@ msgstr ""
 "especialmente útil para chispas o explosiones, que generalmente comienzan "
 "con una alta velocidad lineal y luego se detienen a medida que se desvanecen."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:257
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:261
 msgid "Angle"
 msgstr "Angle (Ángulo)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:259
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:263
 msgid ""
 "Determines the initial angle of the particle (in degress). This parameter is "
 "mostly useful randomized."
@@ -457,27 +455,27 @@ msgstr ""
 "Determina el ángulo inicial de la partícula (en grados). Este parámetro es "
 "mayormente útil aleatorizado."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:265
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:269
 msgid "Scale"
 msgstr "Escala"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:267
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid "Determines the initial scale of the particles."
 msgstr "Determina la escala inicial de las partículas."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:272
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:276
 msgid "Color"
 msgstr "Color"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:274
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:278
 msgid "Used to change the color of the particles being emitted."
 msgstr "Permite cambiar el color de las partículas emitidas."
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:277
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:281
 msgid "Hue variation"
 msgstr "Hue variation (Variación de tono)"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:279
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:283
 msgid ""
 "The Variation value sets the initial hue variation applied to each particle. "
 "The Variation Rand value controls the hue variation randomness ratio."

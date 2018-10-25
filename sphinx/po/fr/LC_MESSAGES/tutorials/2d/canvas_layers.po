@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
-msgstr ""
+msgstr "Couches du canevas"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:7
 msgid "Viewport and Canvas items"
-msgstr ""
+msgstr "Eléments de fenêtre et de canevas"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:9
 msgid ""
@@ -33,12 +33,20 @@ msgid ""
 "they will inherit their transform. This means that when moving the parent, "
 "the children will be moved too."
 msgstr ""
+"Les nœuds 2D ordinaires, tels que :ref:`Node2D <class_Node2D>` ou :ref:"
+"`Control <class_Control>` héritent tous deux de :ref:`CanvasItem "
+"<class_CanvasItem>`, qui est la base de tous les nœuds 2D. Les objets "
+"CanvasItems peuvent être organisés en arborescences et ils hériteront de "
+"leur transformation. Cela signifie que lors du déplacement du parent, les "
+"enfants seront également déplacés."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
 msgid ""
 "These nodes are placed as direct or indirect children to a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
 msgstr ""
+"Ces nœuds sont placés en tant qu'enfants directs ou indirects dans une :ref:"
+"`Fenêtre d'affichage <class_Viewport>`, et seront affichés par ce biais."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
 msgid ""
@@ -48,6 +56,11 @@ msgid ""
 "transform. Nodes such as :ref:`Camera2D <class_Camera2D>`, work by changing "
 "that transform."
 msgstr ""
+"La fenêtre d'affichage a la propriété :ref:`Viewport.canvas_transform "
+"<class_Viewport_canvas_transform>`, qui permet de transformer toute la "
+"hiérarchie CanvasItem par une transformation personnalisée :ref:`Transform2D "
+"<class_Transform2D>`. Des nœuds tels que :ref:`Camera2D <class_Camera2D>`, "
+"fonctionnent en modifiant cette transformation."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:25
 msgid ""
@@ -56,10 +69,15 @@ msgid ""
 "transform is a simple matrix that offsets the whole 2D drawing, so it's the "
 "most efficient way to do scrolling."
 msgstr ""
+"Changer la transformation du canevas est utile car c'est beaucoup plus "
+"efficace que de déplacer l'élément de canevas racine (et donc la scène "
+"entière). La transformation du canevas est une matrice simple qui équilibre "
+"le dessin 2D dans son ensemble. Il s'agit donc du moyen le plus efficace de "
+"faire du défilement."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid "Not enough..."
-msgstr ""
+msgstr "Pas assez..."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:33
 msgid ""
@@ -67,32 +85,43 @@ msgid ""
 "application may not want *everything* transformed by the canvas transform. "
 "Examples of this are:"
 msgstr ""
+"Mais ce n'est pas assez. Il y a souvent des situations où le jeu ou "
+"l'application peut ne pas vouloir *tout* transformé par la transformation du "
+"canevas. Par exemple :"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:37
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
 msgstr ""
+"**Arrière-plans de parallaxe**: Arrière-plans qui bougent plus lentement que "
+"le reste de la scène."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid ""
 "**HUD**: Heads-up display, or user interface. If the world moves, the life "
 "counter, score, etc. must stay static."
 msgstr ""
+"**HUD**: affichage tête haute ou interface utilisateur. Si le monde bouge, "
+"le compteur de vies, le score, etc. doivent rester statiques."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
 "**Transitions**: Effects used for transitions (fades, blends) may also want "
 "it to remain at a fixed location."
 msgstr ""
+"**Transitions**: les effets utilisés pour les transitions (fondus, mélanges) "
+"peuvent également vouloir rester à un emplacement déterminé."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:44
 msgid "How can these problems be solved in a single scene tree?"
 msgstr ""
+"Comment ces problèmes peuvent-ils être résolus dans une arborescence de "
+"scène unique ?"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:47
 msgid "CanvasLayers"
-msgstr ""
+msgstr "Couches de canevas"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:49
 msgid ""
@@ -104,6 +133,15 @@ msgid ""
 "transform and do not depend on the transform of other layers. This allows "
 "the UI to be fixed in-place while the world moves."
 msgstr ""
+"La réponse est :ref:`Calque de Canevas <class_CanvasLayer>`, qui est un nœud "
+"qui ajoute un calque de rendu 2D distinct pour tous ses enfants et ses "
+"petits-enfants. Les enfants de la fenêtre d'affichage dessineront par défaut "
+"au calque \"0\", tandis qu'un Calque de Canevas dessinera au calque "
+"numérique. Les calques avec un plus grand nombre seront dessinés au-dessus "
+"de ceux avec un plus petit nombre. Les Calques de Canevas ont également leur "
+"propre transformation et ne dépendent pas de la transformation des autres "
+"calques. Cela permet de fixer l'interface utilisateur sur place pendant que "
+"le monde bouge."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:58
 msgid ""
@@ -111,20 +149,27 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
+"Un exemple de ceci est la création d'un fond en parallaxe. Cela peut être "
+"fait avec un CanvasLayer au calque \"-1\". L'écran avec les points, le "
+"compteur de durée de vie et le bouton de pause peuvent également être créés "
+"au calque \"1\"."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:62
 msgid "Here's a diagram of how it looks:"
-msgstr ""
+msgstr "Voici un diagramme de sa représentation :"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:66
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
 "layer number, so they can be instantiated when needed."
 msgstr ""
+"Les CanvasLayers sont indépendants de l'ordre des arborescences, ils "
+"dépendent uniquement de leur numéro de couche, ainsi Ils peuvent être "
+"instanciés si nécessaire."
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:70
 msgid "Performance"
-msgstr ""
+msgstr "Performance"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:72
 msgid ""
@@ -134,3 +179,9 @@ msgid ""
 "have a property for controlling their drawing order (see :ref:`Node2D."
 "z_index <class_Node2D_z_index>`)."
 msgstr ""
+"Même s'il ne devrait y avoir aucune limitation de performances, il est "
+"déconseillé d'utiliser un nombre excessif de couches pour organiser l'ordre "
+"d'affichage des nœuds. Le moyen le plus optimal sera toujours de les "
+"organiser selon l'ordre de l'arborescence. Les nœuds 2D ont également une "
+"propriété pour contrôler l'ordre de leur réalisation (voir :ref:`Node2D."
+"z_index<class_Node2D_z_index>`)."

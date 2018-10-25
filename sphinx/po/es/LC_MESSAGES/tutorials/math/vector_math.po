@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -374,9 +374,18 @@ msgstr ""
 msgid "The formula for dot product takes two common forms:"
 msgstr "La fórmula para el producto de puntos toma dos formas comunes:"
 
+#: ../../docs/tutorials/math/vector_math.rst:272
+msgid ""
+"A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
+msgstr ""
+
 #: ../../docs/tutorials/math/vector_math.rst:276
 msgid "and"
 msgstr "y"
+
+#: ../../docs/tutorials/math/vector_math.rst:278
+msgid "A \\cdot B = A_{x}B_{x} + A_{y}B_{y}"
+msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:282
 msgid ""
@@ -457,6 +466,12 @@ msgstr ""
 "vectorial es un vector con una dirección que es perpendicular a ambos. Su "
 "magnitud depende de su ángulo relativo. Si dos vectores son paralelos, el "
 "resultado de su producto cruz será nulo."
+
+#: ../../docs/tutorials/math/vector_math.rst:346
+msgid ""
+"\\left \\|a \\times b  \\right \\| = \\left \\| a \\right \\|\\left \\| b "
+"\\right \\|\\ |\\sin(a,b)|"
+msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:352
 msgid "The cross product is calculated like this:"

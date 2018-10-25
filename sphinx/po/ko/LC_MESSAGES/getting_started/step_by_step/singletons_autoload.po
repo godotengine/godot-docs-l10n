@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr ""
+msgstr "싱글톤 (오토로드) (Singletons (AutoLoad))"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -31,12 +31,14 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
+"고도의 씬 시스템은, 강력하고 유연하지만, 단점이 있습니다: 하나 이상의 씬이 필"
+"요하기 때문에 정보를 저장할 방법이 없습니다 (예: 플래이어의 점수나 인벤토리)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
-msgstr ""
+msgstr "이러한 문제들을 해결할 방법은 있지만, 그것만의 한계점이 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -44,6 +46,9 @@ msgid ""
 "children. However, this means you can no longer run those scenes "
 "individually and expect them to work correctly."
 msgstr ""
+"다른 씬을 자식으로 불러오거나 그렇지 않을 \"마스터\" 씬을 사용할 수 있습니"
+"다. 하지만 그렇게 하면 바르게 작동하기 위해 더 이상 씬들을 개별적으로 실행할 "
+"수 없다는 것을 의미합니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:19
 msgid ""
@@ -51,86 +56,111 @@ msgid ""
 "that require it, but frequently saving and loading data is cumbersome and "
 "may be slow."
 msgstr ""
+"정보를 ``user://`` 에 저장하고 필요할 때 불러올 수 있습니다, 하지만 자주 데이"
+"터를 저장하고 불러오는 것은 성가시고 느려질 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
+#, fuzzy
 msgid ""
 "The `Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
-"persistent information between scenes."
+"persistent information between scenes. In our case it is possible re-use the "
+"same scene or class for multiple singletons, so long as they have different "
+"names."
 msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:27
-msgid "Using this concept, you can create objects that:"
-msgstr ""
+"`Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ 은 씬 "
+"간의 지속적인 정보를 저장하는 사례를 해결하는 일반적인 유용한 도구입니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
-msgid "Are always loaded, no matter which scene is currently running"
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:30
-msgid "Can store global variables, such as player information"
-msgstr ""
+msgid "Using this concept, you can create objects that:"
+msgstr "이 개념을 사용해서, 다음과 같은 객체를 만드실 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-msgid "Can handle switching scenes and between-scene transitions"
-msgstr ""
+msgid "Are always loaded, no matter which scene is currently running"
+msgstr "현재 실행 중인 씬과 상관없이, 항상 불러와집니다"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
+msgid "Can store global variables, such as player information"
+msgstr "플레이어 정보와 같은, 글로벌 변수를 저장할 수 있습니다"
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
+msgid "Can handle switching scenes and between-scene transitions"
+msgstr "씬을 바꾸는 것과 씬 전환 사이를 다룰 수 있습니다"
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
-msgstr ""
+msgstr "GDScript가 글로벌 변수를 지원하지 않기 때문에 싱글톤처럼 행동합니다"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts caters to this need."
-msgstr ""
-
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:37
-msgid "AutoLoad"
-msgstr "오토로드"
+msgstr "노드와 스크립트 오토로드는 이러한 필요를 충족시킵니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
+msgid "AutoLoad"
+msgstr "오토로드 (AutoLoad)"
+
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:41
 msgid ""
 "You can use AutoLoad to load a scene or a script that inherits from :ref:"
 "`Node <class_Node>`. Note: when autoloading a script, a Node will be created "
 "and the script will be attached to it. This node will be added to the root "
 "viewport before any other scenes are loaded."
 msgstr ""
+":ref:`Node <class_Node>` 에서 상속하는 씬이나 스크립트를 불러오기 위해 오토로"
+"드 (AutoLoad)를 사용할 수 있습니다. 주석: 스크립트를 오토로드 할 떄, 노드가 "
+"만들어지고 스크립트가 거기에 붙습니다. 이 노드는 다른 씬이 불러오기 전까지 루"
+"트 뷰포트에 추가될 것입니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:46
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
 msgid ""
 "To autoload a scene or script, select ``Project -> Project Settings`` from "
 "the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
+"씬이나 스크립트를 오토로드 하기 위해, 메뉴에서 ``프로젝트 -> 프로젝트 설정`` "
+"을 선택하고 \"오토로드\" 탭으로 갑니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:51
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
+#, fuzzy
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
-"requires a name, which assigned as the node's ``name`` property."
+"requires a name, which assigned as the node's ``name`` property. The order "
+"of the entries as they added to the global scene tree can be manipulated "
+"using the up/down arrow keys."
 msgstr ""
+"여기서 당신은 원하는 씬이나 스크립트를 추가하실 수 있습니다. 목록에서 각 기입"
+"란에는 노드의 ``name`` 속성으로 지정하는 이름이 필요합니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:56
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
+"위의 경우, 어느 노드든지 \"PlayerVariables\" 라는 싱글톤을 액세스 할 수 있습"
+"니다:"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:69
-msgid "Or even simpler using the name directly:"
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
+msgid ""
+"If the \"Enable\" column is checked (default true) then the singleton can "
+"simply be accessed directly:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:81
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
 "Note that autoload objects (scripts and/or scenes) are accessed just like "
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
+"씬 트리에서 다른 노드와 마찬가지로 오토로드 객체 (스크립트 혹은 씬)는 액세스"
+"됩니다. 사실, 실행하는 씬 트리를 보신다면, 오토로드 된 노드가 나타나는 것을 "
+"보실 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:88
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
-msgstr ""
+msgstr "커스텀 씬 전환기"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:90
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -138,60 +168,84 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
+"이 튜토리얼은 오토로드를 사용해 씬 전환기를 만드는 법을 설명할 것입니다. 기"
+"본 씬 전환을 위해,  :ref:`SceneTree.change_scene() "
+"<class_SceneTree_change_scene>` 메서드를 사용할 수 있습니다 (자세한 점은 :"
+"ref:`doc_scene_tree` 를 참고하세요). 하지만, 씬을 전환할 때 더 복잡한 행동을 "
+"원한다면, 이 메서드가 더 많은 기능성을 제공합니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:96
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
+"시작하기 위해, 여기서 템플릿을 다운로드 하시고 :download:`autoload.zip "
+"<files/autoload.zip>` 그리고 고도에서 여세요."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:99
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
 "The project contains two scenes: ``Scene1.tscn`` and ``Scene2.tscn``. Each "
 "scene contains a label displaying the scene name and a button with its "
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
+"프로젝트는 두 개의 씬을 갖고 있습니다:  ``Scene1.tscn`` 과 ``Scene2.tscn`` 입"
+"니다. 각 씬은 씬의 이름을 보여주는 라벨과 ``pressed()`` 시그널이 연결된 버튼"
+"이 있습니다. 프로젝트를 실행할 때, ``Scene1.tscn`` 에서 시작합니다. 하지만, "
+"버튼을 눌러도 아무렇지 않습니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:105
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid "Global.gd"
-msgstr ""
+msgstr "Global.gd"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:107
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
 msgid ""
 "Switch to the \"Script\" tab and create a new script called Global.gd. Make "
 "sure it inherits from ``Node``:"
 msgstr ""
+"\"Script\" 탭으로 전환하고 Global.gd 라는 새 스크립트를 만듭니다. ``Node`` 에"
+"서 상속하도록 하십시오:"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
 msgid ""
 "The next step is to add this script to the autoLoad list. Open ``Project > "
 "Project Settings`` from the menu, switch to the \"AutoLoad\" tab and select "
 "the script by clicking the ``..`` button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
+"다음은 이 스크립트를 오토로드 목록으로 추가하는 것입니다. 메뉴에서 ``프로젝"
+"트 > 프로젝트 설정`` 을 열고, \"오토로드\" 탭으로 가서 ``..`` 를 클릭하거나 "
+"경로 ``res://Global.gd`` 를 입력해서 스크립트를 선택합니다. \"추가\"를 눌러 "
+"오토로드 목록에 추가하십시오:"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:119
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
+"이제 언제든지 우리는 어떤 씬이 프로젝트에서 실행하든지, 이 스크립트가 항상 불"
+"러와질 것입니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:121
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "
 "``global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
+"스크립트로 돌아가서, `_ready()` 함수에서 현재 씬을 가져와야 합니다. (버튼이 "
+"있는) 현재 씬과 ``global.gd`` 는 둘 다 루트의 자식이지만, 오토로드 된 노드는 "
+"항상 첫 번째 입니다. 즉, 루트의 마지막 자식은 항상 불러온 씬이라는 것입니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:153
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
+"이제, 우리는 씬을 바꾸기 위한 함수가 필요합니다. 이 함수는 현재 씬을 해제하"
+"고 요청하는 것으로 바꾸어야 합니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:222
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
 msgid ""
 "As mentioned in the comments above, we need to avoid the situation of "
 "deleting the current scene while it is still being used (i.e. its code is "
@@ -200,26 +254,33 @@ msgid ""
 "the second function will run at a later time when any code from the current "
 "scene has completed."
 msgstr ""
+"위의 설명에서 언급했듯이, 우리는 현재 씬을 사용하는 도중 (즉 코드가 여전히 실"
+"행하는 도중) 삭제하는 상황을 피해야 합니다, 이 점에서 :ref:`Object."
+"call_deferred() <class_Object_call_deferred>` 를 사용해야 합니다. 결과는 현"
+"재 씬의 코드가 완료될 때 두 번째 함수가 나중에 실행하는 것입니다."
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:228
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
-msgstr ""
+msgstr "마지막으로, 두 씬에 비어있는 콜백 함수를 채워야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:248
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:253
 msgid "and"
-msgstr ""
+msgstr "그리고"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:268
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:273
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button!"
-msgstr ""
+msgstr "프로젝트를 실행하고 버튼을 눌러 씬이 전환되는 지를 확인하세요!"
 
-#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:271
+#: ../../docs/getting_started/step_by_step/singletons_autoload.rst:276
 msgid ""
 "Note: When scenes are small, the transition is instantaneous. However, if "
 "your scenes are more complex, they may take a noticeable amount of time to "
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""
+"주석: 씬이 작을 때, 전환은 동시에 일어납니다. 하지만 씬이 더 복잡하다면, 눈"
+"에 띄는 시간 차가 발생합니다. 어떻게 이를 다루는 지 배우기 위해, 다음 튜토리"
+"얼을 확인하세요: :ref:`doc_background_loading`"

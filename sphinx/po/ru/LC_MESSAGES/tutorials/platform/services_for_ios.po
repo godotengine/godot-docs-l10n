@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgstr ""
 msgid ""
 "The Store Kit API is accessible through the \"InAppStore\" singleton (will "
 "always be available from gdscript). It is initialized automatically. It has "
-"two methods for purchasing:"
+"three methods for purchasing:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/services_for_ios.rst:70
@@ -95,228 +95,248 @@ msgstr ""
 msgid "``Error request_product_info(Variant p_params);``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:73
+#: ../../docs/tutorials/platform/services_for_ios.rst:72
+msgid "``Error restore_purchases();``"
+msgstr ""
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:74
 msgid "and the pending_event interface"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:81
+#: ../../docs/tutorials/platform/services_for_ios.rst:82
 msgid "purchase"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:83
+#: ../../docs/tutorials/platform/services_for_ios.rst:84
 msgid "Purchases a product id through the Store Kit API."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:86
-#: ../../docs/tutorials/platform/services_for_ios.rst:126
-#: ../../docs/tutorials/platform/services_for_ios.rst:176
-#: ../../docs/tutorials/platform/services_for_ios.rst:220
-#: ../../docs/tutorials/platform/services_for_ios.rst:365
+#: ../../docs/tutorials/platform/services_for_ios.rst:87
+#: ../../docs/tutorials/platform/services_for_ios.rst:127
+#: ../../docs/tutorials/platform/services_for_ios.rst:196
+#: ../../docs/tutorials/platform/services_for_ios.rst:240
+#: ../../docs/tutorials/platform/services_for_ios.rst:385
 msgid "Parameters"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:88
+#: ../../docs/tutorials/platform/services_for_ios.rst:89
 msgid ""
 "Takes a Dictionary as a parameter, with one field, ``product_id``, a string "
 "with your product id. Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:96
-#: ../../docs/tutorials/platform/services_for_ios.rst:136
-#: ../../docs/tutorials/platform/services_for_ios.rst:190
-#: ../../docs/tutorials/platform/services_for_ios.rst:237
-#: ../../docs/tutorials/platform/services_for_ios.rst:266
-#: ../../docs/tutorials/platform/services_for_ios.rst:296
-#: ../../docs/tutorials/platform/services_for_ios.rst:328
-#: ../../docs/tutorials/platform/services_for_ios.rst:385
+#: ../../docs/tutorials/platform/services_for_ios.rst:97
+#: ../../docs/tutorials/platform/services_for_ios.rst:137
+#: ../../docs/tutorials/platform/services_for_ios.rst:161
+#: ../../docs/tutorials/platform/services_for_ios.rst:210
+#: ../../docs/tutorials/platform/services_for_ios.rst:257
+#: ../../docs/tutorials/platform/services_for_ios.rst:286
+#: ../../docs/tutorials/platform/services_for_ios.rst:316
+#: ../../docs/tutorials/platform/services_for_ios.rst:348
+#: ../../docs/tutorials/platform/services_for_ios.rst:405
 msgid "Response event"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:98
-#: ../../docs/tutorials/platform/services_for_ios.rst:138
-#: ../../docs/tutorials/platform/services_for_ios.rst:192
-#: ../../docs/tutorials/platform/services_for_ios.rst:239
-#: ../../docs/tutorials/platform/services_for_ios.rst:268
-#: ../../docs/tutorials/platform/services_for_ios.rst:298
-#: ../../docs/tutorials/platform/services_for_ios.rst:330
-#: ../../docs/tutorials/platform/services_for_ios.rst:387
+#: ../../docs/tutorials/platform/services_for_ios.rst:99
+#: ../../docs/tutorials/platform/services_for_ios.rst:139
+#: ../../docs/tutorials/platform/services_for_ios.rst:212
+#: ../../docs/tutorials/platform/services_for_ios.rst:259
+#: ../../docs/tutorials/platform/services_for_ios.rst:288
+#: ../../docs/tutorials/platform/services_for_ios.rst:318
+#: ../../docs/tutorials/platform/services_for_ios.rst:350
+#: ../../docs/tutorials/platform/services_for_ios.rst:407
 msgid "The response event will be a dictionary with the following fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:100
-#: ../../docs/tutorials/platform/services_for_ios.rst:194
-#: ../../docs/tutorials/platform/services_for_ios.rst:241
-#: ../../docs/tutorials/platform/services_for_ios.rst:270
-#: ../../docs/tutorials/platform/services_for_ios.rst:300
-#: ../../docs/tutorials/platform/services_for_ios.rst:332
+#: ../../docs/tutorials/platform/services_for_ios.rst:101
+#: ../../docs/tutorials/platform/services_for_ios.rst:214
+#: ../../docs/tutorials/platform/services_for_ios.rst:261
+#: ../../docs/tutorials/platform/services_for_ios.rst:290
+#: ../../docs/tutorials/platform/services_for_ios.rst:320
+#: ../../docs/tutorials/platform/services_for_ios.rst:352
 msgid "On error:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:110
-#: ../../docs/tutorials/platform/services_for_ios.rst:205
-#: ../../docs/tutorials/platform/services_for_ios.rst:251
-#: ../../docs/tutorials/platform/services_for_ios.rst:280
-#: ../../docs/tutorials/platform/services_for_ios.rst:310
-#: ../../docs/tutorials/platform/services_for_ios.rst:342
+#: ../../docs/tutorials/platform/services_for_ios.rst:111
+#: ../../docs/tutorials/platform/services_for_ios.rst:225
+#: ../../docs/tutorials/platform/services_for_ios.rst:271
+#: ../../docs/tutorials/platform/services_for_ios.rst:300
+#: ../../docs/tutorials/platform/services_for_ios.rst:330
+#: ../../docs/tutorials/platform/services_for_ios.rst:362
 msgid "On success:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:121
+#: ../../docs/tutorials/platform/services_for_ios.rst:122
 msgid "request_product_info"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:123
+#: ../../docs/tutorials/platform/services_for_ios.rst:124
 msgid "Requests the product info on a list of product IDs."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:128
+#: ../../docs/tutorials/platform/services_for_ios.rst:129
 msgid ""
 "Takes a Dictionary as a parameter, with one field, ``product_ids``, a string "
 "array with a list of product ids. Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:154
+#: ../../docs/tutorials/platform/services_for_ios.rst:155
+msgid "restore_purchases"
+msgstr ""
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:157
+msgid ""
+"Restores previously made purchases on user's account. This will create "
+"response events for each previously purchased product id."
+msgstr ""
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:163
+#, fuzzy
+msgid "The response events will be dictionaries with the following fields:"
+msgstr "Сцена Моба будет использовать следующие узлы:"
+
+#: ../../docs/tutorials/platform/services_for_ios.rst:174
 msgid "Game Center"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:156
+#: ../../docs/tutorials/platform/services_for_ios.rst:176
 msgid "Implemented in platform/iphone/game_center.mm"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:158
+#: ../../docs/tutorials/platform/services_for_ios.rst:178
 msgid ""
 "The Game Center API is available through the \"GameCenter\" singleton. It "
 "has 6 methods:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:161
+#: ../../docs/tutorials/platform/services_for_ios.rst:181
 msgid "``Error post_score(Variant p_score);``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:162
+#: ../../docs/tutorials/platform/services_for_ios.rst:182
 msgid "``Erroraward_achievement(Variant p_params);``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:163
+#: ../../docs/tutorials/platform/services_for_ios.rst:183
 msgid "``Error reset_achievements();``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:164
+#: ../../docs/tutorials/platform/services_for_ios.rst:184
 msgid "``Error request_achievements();``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:165
+#: ../../docs/tutorials/platform/services_for_ios.rst:185
 msgid "``Error request_achievement_descriptions();``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:166
+#: ../../docs/tutorials/platform/services_for_ios.rst:186
 msgid "``Error show_game_center(Variant p_params);``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:168
+#: ../../docs/tutorials/platform/services_for_ios.rst:188
 msgid "plus the standard pending event interface."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:171
+#: ../../docs/tutorials/platform/services_for_ios.rst:191
 msgid "post_score"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:173
+#: ../../docs/tutorials/platform/services_for_ios.rst:193
 msgid "Posts a score to a Game Center leaderboard."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:178
-#: ../../docs/tutorials/platform/services_for_ios.rst:367
+#: ../../docs/tutorials/platform/services_for_ios.rst:198
+#: ../../docs/tutorials/platform/services_for_ios.rst:387
 msgid "Takes a Dictionary as a parameter, with two fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:180
+#: ../../docs/tutorials/platform/services_for_ios.rst:200
 msgid "``score`` a float number"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:181
+#: ../../docs/tutorials/platform/services_for_ios.rst:201
 msgid "``category`` a string with the category name"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:183
-#: ../../docs/tutorials/platform/services_for_ios.rst:230
+#: ../../docs/tutorials/platform/services_for_ios.rst:203
+#: ../../docs/tutorials/platform/services_for_ios.rst:250
 msgid "Example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:215
+#: ../../docs/tutorials/platform/services_for_ios.rst:235
 msgid "award_achievement"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:217
+#: ../../docs/tutorials/platform/services_for_ios.rst:237
 msgid "Modifies the progress of a Game Center achievement."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:222
+#: ../../docs/tutorials/platform/services_for_ios.rst:242
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:224
+#: ../../docs/tutorials/platform/services_for_ios.rst:244
 msgid "``name`` (string) the achievement name"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:225
+#: ../../docs/tutorials/platform/services_for_ios.rst:245
 msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:227
+#: ../../docs/tutorials/platform/services_for_ios.rst:247
 msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:261
+#: ../../docs/tutorials/platform/services_for_ios.rst:281
 msgid "reset_achievements"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:263
+#: ../../docs/tutorials/platform/services_for_ios.rst:283
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:290
+#: ../../docs/tutorials/platform/services_for_ios.rst:310
 msgid "request_achievements"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:292
+#: ../../docs/tutorials/platform/services_for_ios.rst:312
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:322
+#: ../../docs/tutorials/platform/services_for_ios.rst:342
 msgid "request_achievement_descriptions"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:324
+#: ../../docs/tutorials/platform/services_for_ios.rst:344
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:359
+#: ../../docs/tutorials/platform/services_for_ios.rst:379
 msgid "show_game_center"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:361
+#: ../../docs/tutorials/platform/services_for_ios.rst:381
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:369
+#: ../../docs/tutorials/platform/services_for_ios.rst:389
 msgid ""
 "``view`` (string) (optional) the name of the view to present. Accepts "
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
 "to \"default\"."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:372
+#: ../../docs/tutorials/platform/services_for_ios.rst:392
 msgid ""
 "``leaderboard_name`` (string) (optional) the name of the leaderboard to "
 "present. Only used when \"view\" is \"leaderboards\" (or \"default\" is "
@@ -324,19 +344,19 @@ msgid ""
 "the aggregate leaderboard."
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:377
+#: ../../docs/tutorials/platform/services_for_ios.rst:397
 msgid "Examples:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:389
+#: ../../docs/tutorials/platform/services_for_ios.rst:409
 msgid "On close:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:399
+#: ../../docs/tutorials/platform/services_for_ios.rst:419
 msgid "Multi-platform games"
 msgstr ""
 
-#: ../../docs/tutorials/platform/services_for_ios.rst:401
+#: ../../docs/tutorials/platform/services_for_ios.rst:421
 msgid ""
 "When working on a multi-platform game, you won't always have the \"GameCenter"
 "\" singleton available (for example when running on PC or Android). Because "

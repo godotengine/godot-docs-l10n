@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:48
 msgid "Constants"
-msgstr "상수"
+msgstr "상수 (Constant)"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:50
 msgid ""
@@ -124,7 +124,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:125
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:188
 msgid "Variables"
-msgstr ""
+msgstr "변수 (Variable)"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:65
 msgid ""
@@ -205,9 +205,8 @@ msgid "For full screen quads. For smaller quads use UV."
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:75
-#, fuzzy
 msgid "gl_Position"
-msgstr "조건"
+msgstr "gl_Position"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:75
 msgid "VERTEX"
@@ -228,7 +227,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:148
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:202
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:77
 msgid "POINT_SIZE"
@@ -263,7 +262,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:81
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:81
 msgid "FRONT_FACING"
@@ -320,9 +319,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:111
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:176
-#, fuzzy
 msgid "Types"
-msgstr "타입"
+msgstr "타입 (Types)"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:113
 msgid ""
@@ -332,9 +330,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:117
-#, fuzzy
 msgid "mainImage"
-msgstr "메인 메뉴"
+msgstr "메인 이미지 (mainImage)"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:118
 msgid ""
@@ -351,17 +348,16 @@ msgid ""
 "In order to make writing fragment shaders straightforward and easy, "
 "Shadertoy handles passing a lot of helpful information from the main program "
 "into the fragment shader for you. A few of these have no equivalents in "
-"Godot becuase Godot has chosen not to make them available by default. This "
-"is okay becuase Godot gives you the ability to make your own uniforms. For "
+"Godot because Godot has chosen not to make them available by default. This "
+"is okay because Godot gives you the ability to make your own uniforms. For "
 "variables whose equivalents are listed as \"Provide with Uniform\", the user "
 "is responsible for creating that uniform themself. The description gives the "
 "reader a hint about what they can pass in as a substitute."
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:136
-#, fuzzy
 msgid "fragColor"
-msgstr "색깔"
+msgstr "fragColor"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:138
 msgid "fragCoord"

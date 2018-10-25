@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,8 +97,9 @@ msgstr ""
 "LOGO_LICENSE.md>`_  en el repositorio de Godot."
 
 #: ../../docs/about/faq.rst:28
+#, fuzzy
 msgid ""
-"Also see `the license page on the Godot website <https://godotengine.org/"
+"Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
 "Mira también `la página de la licencia en el sitio web de Godot <https://"
@@ -117,8 +118,8 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
-msgid "Mac OS X"
-msgstr "Mac OS X"
+msgid "macOS"
+msgstr ""
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -229,9 +230,10 @@ msgstr ""
 "problemas."
 
 #: ../../docs/about/faq.rst:82
+#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
-"GDNative / NativeScript / PluginScript facilities. (See question about "
+"GDNative / NativeScript / PluginScript facilities. (See the question about "
 "plugins below.) Work is currently underway, for example, on unofficial "
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
@@ -300,16 +302,17 @@ msgstr ""
 "lenguajes."
 
 #: ../../docs/about/faq.rst:109
+#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
 "additional users by supporting more familiar programming languages--"
 "especially when supporting those more familiar languages would result in a "
 "worse experience. We understand if you would rather use another language in "
-"Godot (see list of supported options above). That being said, if you haven't "
-"given GDScript a try, try it for **three days**. Just like Godot, once you "
-"see how powerful it is and rapid your development becomes, we think GDScript "
-"will grow on you."
+"Godot (see the list of supported options above). That being said, if you "
+"haven't given GDScript a try, try it for **three days**. Just like Godot, "
+"once you see how powerful it is and rapid your development becomes, we think "
+"GDScript will grow on you."
 msgstr ""
 "Dado que Godot es un proyecto de código abierto, era imperativo desde el "
 "principio priorizar una experiencia más integrada y sin fisuras por encima "
@@ -453,18 +456,21 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"El objetivo de Godot es crear un motor con licencia MIT libre y de código "
+"abierto que sea modular y ampliable. No hay planes para que la comunidad "
+"central de desarrollo de motores admita ningún SDK de código cerrado/"
+"propietario de terceros, ya que la integración con ellos iría en contra del "
+"espíritu de Godot."
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"Dicho esto, debido a que es de código abierto y modular, nada te detiene a "
-"ti, o a cualquier otro interesado, en añadir esas bibliotecas como un módulo "
-"y lanzar tu juego usándolo, ya sea de código abierto o no. Todo está "
-"permitido."
+"Dicho esto, como Godot es de código abierto y modular, nada te impide a ti "
+"ni a nadie interesado en añadir esas bibliotecas como módulo y distribuir tu "
+"juego con ellas, ya sea como código abierto o como código cerrado."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
@@ -481,6 +487,11 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"Si conoces algún SDK de terceros que no es soportado por Godot, pero que "
+"ofrece integración gratuita y de código abierto, considera iniciar el "
+"trabajo de integración por ti mismo. Godot no es propiedad de una persona; "
+"pertenece a la comunidad y crece junto con los contribuyentes ambiciosos de "
+"la comunidad, justo como vos."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -510,17 +521,16 @@ msgstr ""
 "variedad de tamaños y DPIs."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"La forma más común y la más apropiada para lograr esto es, en su lugar, usar "
-"una única resolución base para el juego y solo manejar diferentes aspectos "
-"de pantalla. Esto es necesario principalmente para 2D, ya que en 3D es solo "
-"cuestión de cambiar el campo de visión de la Cámara."
+"La forma más común y correcta de conseguirlo es, en su lugar, utilizar una "
+"única resolución base para el juego y manejar únicamente diferentes "
+"relaciones de aspecto de pantalla. Esto es necesario sobre todo para 2D, ya "
+"que en 3D es sólo cuestión de usar la cámara XFov o YFov."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -591,20 +601,21 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "¿Cómo puedo extender Godot?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Para crear complementos para el Editor de Godot, mira :ref:`EditorPlugins "
+"Para extender Godot, como crear plugins de Godot Editor o añadir soporte "
+"para lenguajes adicionales, echa un vistazo a :ref:`EditorPlugins "
 "<doc_making_plugins>` y tool scripts."
 
 #: ../../docs/about/faq.rst:228
-msgid "Also see the official blog posts on these topics:"
+#, fuzzy
+msgid "Also, see the official blog posts on these topics:"
 msgstr "Mira también las publicaciones del blog oficial sobre estos temas:"
 
 #: ../../docs/about/faq.rst:230
@@ -621,26 +632,28 @@ msgstr ""
 "`¡GDNative está aquí! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
-#, fuzzy
 msgid ""
 "You can also take a look at the GDScript implementation, the Godot modules, "
 "as well as the `unofficial Python support <https://github.com/touilleMan/"
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
-"También le puedes echar un vistazo a la implementación de GDScript, los "
-"módulos de Godot así como al  `soporte no oficial de Python <https://github."
-"com/touilleMan/godot-python>`_ para Godot."
+"También puedes echar un vistazo a la implementación de GDScript, los módulos "
+"de Godot, así como el `soporte no oficial de Python <https://github.com/"
+"touilleMan/godot-python>`_ para Godot. Este sería un buen punto de partida "
+"para ver cómo otra librería de terceros se integra con Godot."
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "¡Me gustaría contribuir! ¿Cómo puedo empezar?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"¡Fantástico! Como proyecto de código abierto, Godot prospera gracias a la "
+"innovación y ambición de desarrolladores como tú."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -650,10 +663,16 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
+"El primer lugar para comenzar es el de `discusión <https://github.com/"
+"godotengine/godot/issues>`_. Encuentra un problema que te suene familiar, "
+"entonces proceda a la guía de `Como contribuir <https://github.com/"
+"godotengine/godot/blob/master/CONTRIBUTING.md#contributing-pull-requests>`_ "
+"la guía te enseña como hacer un “fork”, modificar y enviar un “Pull Request "
+"(PR)” con tus cambios."
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "Tengo una gran idea para Godot ¿Cómo puedo compartirla?"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -667,12 +686,23 @@ msgid ""
 "github.com/godotengine/godot/issues>`_, and conversations between Godot "
 "community members."
 msgstr ""
+"Puede ser tentador querer proponer ideas para Godot, como las que resultan "
+"en cambios masivos al nucleo, algo como imitar lo que otro motor de juego "
+"hace, o flujos de trabajo que te gustaria implementar en el editor. Estos "
+"son grandiosos y estamos agradecidos de tener gente motivada en querer "
+"contribuir, pero el enfoque de Godot siempre sera la funcionalidad del "
+"nucleo como mencionado en 'el mapa vial<https://github.com/godotengine/godot-"
+"roadmap/blob/master/ROADMAP.md>`_, `corrigiendo errores y resolviendo "
+"problemas <https://github.com/godotengine/godot/issues>`_, y conversaciones "
+"entre miembros de la comunidad Godot."
 
 #: ../../docs/about/faq.rst:260
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
+"La mayor parte de los desarrolladores de la comunidad de Godot estarán más "
+"interesados en aprender sobre cosas como esta:"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
@@ -691,35 +721,33 @@ msgstr ""
 "para tu proyecto."
 
 #: ../../docs/about/faq.rst:267
-#, fuzzy
 msgid ""
 "The concepts that were difficult to understand while learning the software."
 msgstr ""
-"Los conceptos que fueron difíciles de entender para aprender el software."
+"Los conceptos que eran difíciles de entender mientras se aprendía el "
+"software."
 
 #: ../../docs/about/faq.rst:268
 msgid "The parts of your workflow you would like to see optimized."
 msgstr "Las partes de tu flujo de trabajo que te gustaría ver optimizadas."
 
 #: ../../docs/about/faq.rst:269
-#, fuzzy
 msgid ""
 "Parts where you missed clear tutorials or where the documentation wasn't "
 "clear."
 msgstr ""
-"Partes en donde no hay tutoriales claros o lugares donde la documentación no "
-"estaba a la altura."
+"Partes donde no hay tutoriales claros o donde la documentación no estaba "
+"clara."
 
 #: ../../docs/about/faq.rst:271
-#, fuzzy
 msgid ""
 "Please don't feel like your ideas for Godot are unwelcome. Instead, try to "
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"No sientas que tus ideas para Godot no son bienvenidas. En su lugar, intenta "
-"reformularlas como un problema primero, así los desarrolladores y la "
-"comunidad tienen una base sobre cual discutir."
+"Por favor, no sientas que tus ideas sobre Godot no son bienvenidas. En su "
+"lugar, intenta reformularlas como un problema primero, así los "
+"desarrolladores y la comunidad tienen una base sobre cual discutir."
 
 #: ../../docs/about/faq.rst:275
 msgid ""
@@ -729,9 +757,13 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"Una buena manera de compartir tus ideas y problemas con la comunidad es como "
+"un conjunto de acciones de usuario. Explica qué intentas hacer, qué esperas "
+"que suceda, y también qué es lo que está ocurriendo realmente. Dividir las "
+"ideas y problemas de esta forma ayuda a toda la comunidad a estar más "
+"enfocada en mejorar las experiencias de los desarrolladores en general."
 
 #: ../../docs/about/faq.rst:281
-#, fuzzy
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."

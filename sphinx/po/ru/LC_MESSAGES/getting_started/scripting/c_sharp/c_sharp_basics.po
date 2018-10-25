@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:16
 msgid ""
-"C# is a high-level programming language developed by Microsoft. In Godot it "
+"C# is a high-level programming language developed by Microsoft. In Godot, it "
 "is implemented with the Mono 5.x .NET framework including full support for "
 "C# 7.0. Mono is an open source implementation of Microsoft's .NET Framework "
 "based on the ECMA standards for C# and the Common Language Runtime. A good "
@@ -94,7 +94,7 @@ msgstr ""
 msgid ""
 "For instructions on installing older versions of Mono on Linux, see `this "
 "page <http://www.mono-project.com/docs/getting-started/install/linux/"
-"#accessing-older-releases>`_. Older versions of Mono for MacOS and Windows "
+"#accessing-older-releases>`_. Older versions of Mono for macOS and Windows "
 "can be found `here <https://download.mono-project.com/archive/>`_."
 msgstr ""
 
@@ -185,9 +185,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:81
 msgid ""
 "Example: If you created a script (e.g. ``Test.cs``) and delete it in Godot, "
-"compilation will fail because the now missing file is still expected to be "
-"there by the CS project. You can for now simply open up the ``.csproj`` and "
-"look for the ``ItemGroup``, there should be a line included like the "
+"the compilation will fail because now the missing file is still expected to "
+"be there by the CS project. You can for now simply open up the ``.csproj`` "
+"and look for the ``ItemGroup``, there should be a line included like the "
 "following:"
 msgstr ""
 
@@ -259,19 +259,23 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:147
-msgid "Writing editor plugins and tool scripts in C# is not yet supported"
+msgid "Writing editor plugins and tool scripts in C# are not yet supported"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:148
 msgid ""
-"Exporting a project may not yet work (`#15615 <https://github.com/"
-"godotengine/godot/issues/15615>`_)"
+"Exporting Mono projects is only supported for desktop platforms (Linux, "
+"Windows and macOS). HTML5, Android, iOS and UWP are not currently supported "
+"(`#18364 comment <https://github.com/godotengine/godot/"
+"issues/18364#issuecomment-406222102>`_)"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:149
 msgid ""
-"Signals with parameters are broken in 3.0.2-stable (`#17553 <https://github."
-"com/godotengine/godot/issues/17553>`_)"
+"Attached C# scripts should refer to a class that has a class name that "
+"matches the file name and is unique within the project assembly (`#7402 "
+"comment <https://github.com/godotengine/godot/"
+"issues/7402#issuecomment-269910926>`_)"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:152
@@ -281,16 +285,16 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:154
 msgid ""
 "According to some preliminary `benchmarks <https://github.com/cart/godot3-"
-"bunnymark>`_, performance of C# in Godot - while generally in the same order "
-"of magnitude - is roughly **~4x** that of GDScript in some naive cases. For "
-"full performance, C++ is still a little faster; the specifics are going to "
-"vary according to your use case. GDScript is likely fast enough for most "
-"general scripting workloads. C# is faster, but requires some expensive "
+"bunnymark>`_, the performance of C# in Godot - while generally in the same "
+"order of magnitude - is roughly **~4x** that of GDScript in some naive "
+"cases. For full performance, C++ is still a little faster; the specifics are "
+"going to vary according to your use case. GDScript is likely fast enough for "
+"most general scripting workloads. C# is faster, but requires some expensive "
 "marshalling when talking to Godot."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:159
-msgid "Using Nuget Packages in Godot"
+msgid "Using Nuget packages in Godot"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:161

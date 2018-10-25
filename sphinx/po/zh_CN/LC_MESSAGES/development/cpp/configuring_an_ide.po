@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,17 +196,39 @@ msgid ""
 "work."
 msgstr ""
 
+#: ../../docs/development/cpp/configuring_an_ide.rst:98
+#, fuzzy
+msgid "Code style configuration"
+msgstr "构建配置："
+
 #: ../../docs/development/cpp/configuring_an_ide.rst:100
-msgid "Kdevelop"
+msgid ""
+"Developers must follow the project's :ref:`code style "
+"<doc_code_style_guidelines>` and IDE should help them to do it. By default, "
+"Qt Creator does use spaces for indentation which is incorrect for Godot "
+"project. You can change this behavior by changing the \"Code Style\" in "
+"*Options* -> *C++*."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:102
+#: ../../docs/development/cpp/configuring_an_ide.rst:107
 msgid ""
-"`Kdevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
+"Click on *Edit* to change the current settings, then click on *Copy Built-in "
+"Code Style* button to set a new code style. Set a name for it (e.g. Godot) "
+"and change the Tab policy to be *Tabs Only*."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:116
+#, fuzzy
+msgid "KDevelop"
+msgstr "开发"
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:118
+msgid ""
+"`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
 "desktop platforms."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:104
+#: ../../docs/development/cpp/configuring_an_ide.rst:120
 msgid ""
 "You can find a video tutorial `here <https://www.youtube.com/watch?"
 "v=yNVoWQi9TJA>`_. Or you may follow this text version tutorial."
@@ -214,84 +236,93 @@ msgstr ""
 "你可以在 `这儿 <https://www.youtube.com/watch?v=yNVoWQi9TJA>`_ 找到视频教程。"
 "当然，你也可以只是跟着后面的教程做。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:107
-msgid "Start by opening Kdevelop and choosing \"open project\"."
+#: ../../docs/development/cpp/configuring_an_ide.rst:123
+#, fuzzy
+msgid "Start by opening KDevelop and choosing \"open project\"."
 msgstr "启动 Kdevelop 然后选择 “打开项目（open project）”。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:111
+#: ../../docs/development/cpp/configuring_an_ide.rst:127
 msgid "Choose the directory where you cloned Godot."
 msgstr "选择你克隆好的 Godot 源代码的目录。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:115
-msgid "For the build system, choose \"custom build system\"."
-msgstr "至于构建系统，我们选择 \"自定义构建系统（custom build system）\"。"
+#: ../../docs/development/cpp/configuring_an_ide.rst:129
+msgid ""
+"On the next screen, choose \"Custom Build System\" for the *Project manager*."
+msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:119
+#: ../../docs/development/cpp/configuring_an_ide.rst:133
 msgid "Now that the project has been imported, open the project configuration."
 msgstr "这样，我们的项目就成功导入到 Kdevelop 了， 现在打开项目配置。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:123
+#: ../../docs/development/cpp/configuring_an_ide.rst:137
 msgid "Add the following includes/imports:"
 msgstr "添加下面这些头文件（导入）目录："
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:137
+#: ../../docs/development/cpp/configuring_an_ide.rst:150
+msgid "Apply the changes."
+msgstr ""
+
+#: ../../docs/development/cpp/configuring_an_ide.rst:152
+#, fuzzy
 msgid ""
-"Apply the changes then switch to the \"Custom Buildsystem\" tab. Leave the "
-"build directory blank. Enable build tools and add ``scons`` as the "
-"executable and add ``platform=x11 target=debug`` (``platform=osx`` if you're "
-"on OS X)."
+"Switch to the \"Custom Build System\" tab. Add a build configuration and "
+"keep the build directory blank. Enable build tools and add ``scons`` as the "
+"executable then add ``platform=x11 target=debug`` (``platform=osx`` if "
+"you're on macOS) as the arguments."
 msgstr ""
 "应用修改，然后切换到 “自定义构建系统（Custom Buildsystem）” 切页。 构建目录我"
 "们可以留空。 启用构建工具（build tools）选项并且添加 ``scons`` 作为可执行的构"
 "建系统（executable ）。 添加 ``platform=x11 target=debug`` (如果你使用的是"
 "macOS ，请使用``platform=osx``) 作为参数（arguments）。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:144
+#: ../../docs/development/cpp/configuring_an_ide.rst:159
+#, fuzzy
 msgid ""
-"Next we need to tell KDevelop where to find the binary. From the \"run\" "
+"Next we need to tell KDevelop where to find the binary. From the \"Run\" "
 "menu, choose \"Configure Launches\"."
 msgstr ""
 "接下来要告诉 KDevelop 去哪里找构建好的可执行文件。 从 \"运行（Run）\"  菜单选"
 "择  “配置启动项（Configure Launches）”。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:149
+#: ../../docs/development/cpp/configuring_an_ide.rst:164
+#, fuzzy
 msgid ""
-"Click \"Add new\" if no launcher exists. Then add the path to your "
-"executable in the executable section. Your executable should be located in "
-"the ``bin/`` sub-directory and should be named something like ``godot.x11."
-"tools.64`` (the name could be different depending on your platform and "
-"depending on your build options)."
+"Click \"Add\" if no launcher exists. Then add the path to your executable in "
+"the executable section. Your executable should be located in the ``bin/`` "
+"sub-directory and should be named something like ``godot.x11.tools.64`` (the "
+"name could be different depending on your platform and depending on your "
+"build options)."
 msgstr ""
 "如果没有任何启动项，那么点击“新建 （Add new）” 。然后添在可执行文件这儿选择编"
 "译好的二进制文件。你编译好的可执行文件放在源代码的 ``bin/``  子目录下， 文件"
 "名是 ``godot.x11.tools.64`` (文件名会根据你的平台和构建配置有所不同)。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:157
+#: ../../docs/development/cpp/configuring_an_ide.rst:172
 msgid "That's it! Now you should be good to go :)"
 msgstr "好了，现在你可以启程了 :)"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:163
+#: ../../docs/development/cpp/configuring_an_ide.rst:178
 msgid "Xcode"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:166
+#: ../../docs/development/cpp/configuring_an_ide.rst:181
 #, fuzzy
 msgid "Project Setup"
 msgstr "工程准备"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:168
+#: ../../docs/development/cpp/configuring_an_ide.rst:183
 msgid "Create an Xcode external build project anywhere"
 msgstr "使用 Xcode 在任意位置创建一个外部构建项目(external build project )"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:172
+#: ../../docs/development/cpp/configuring_an_ide.rst:187
 msgid "Set the *Build tool* to the path to scons"
 msgstr "把 *构建工具(Build tool)* 设为 scons"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:174
+#: ../../docs/development/cpp/configuring_an_ide.rst:189
 msgid "Modify Build Target's Xcode Info Tab:"
 msgstr "修改构建目标的 Xcode 信息切页："
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:176
+#: ../../docs/development/cpp/configuring_an_ide.rst:191
 msgid ""
 "Set *Arguments* to something like: platform=osx tools=yes bits=64 "
 "target=debug"
@@ -299,7 +330,7 @@ msgstr ""
 "设置 *构建参数（Arguments）* 为类似这样： ``platform=osx tools=yes bits=64 "
 "target=debug``"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:177
+#: ../../docs/development/cpp/configuring_an_ide.rst:192
 msgid ""
 "Set *Directory* to the path to Godot's source folder. Keep it blank if "
 "project is already there."
@@ -307,28 +338,28 @@ msgstr ""
 "把*目录（Directory）* 设置为 Godot 源代码的目录，如果你的项目就在这个目录下可"
 "以留空。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:178
+#: ../../docs/development/cpp/configuring_an_ide.rst:193
 msgid "You may uncheck *Pass build settings in environment*"
 msgstr "你可以取消勾选  *Pass build settings in environment*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:182
+#: ../../docs/development/cpp/configuring_an_ide.rst:197
 msgid "Add a Command Line Target:"
 msgstr "添加命令行目标（Command Line Target）："
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:184
+#: ../../docs/development/cpp/configuring_an_ide.rst:199
 msgid ""
 "Go to Xcode File > New > Target... and add a new Xcode command line target"
 msgstr "前往 Xcode File > New > Target... 添加新的命令行目标"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:190
+#: ../../docs/development/cpp/configuring_an_ide.rst:205
 msgid "Name it something so you know not to compile with this target"
 msgstr "给它取一个比较合适的编译目标的名字"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:191
+#: ../../docs/development/cpp/configuring_an_ide.rst:206
 msgid "e.g. ``GodotXcodeIndex``"
 msgstr "例如： ``GodotXcodeIndex``"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:192
+#: ../../docs/development/cpp/configuring_an_ide.rst:207
 msgid ""
 "Goto the newly created target's *Build Settings* tab and search for *Header "
 "Search Paths*"
@@ -336,77 +367,77 @@ msgstr ""
 "前往新创建目标（target） 的 *Build Settings* 切页， 搜索 *Header Search "
 "Paths*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:193
+#: ../../docs/development/cpp/configuring_an_ide.rst:208
 msgid "Set *Header Search Paths* to an absolute path to Godot's source folder"
 msgstr "设置 *Header Search Paths*  为你的 Godot 源代码目录的绝对路径"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:194
+#: ../../docs/development/cpp/configuring_an_ide.rst:209
 msgid "Make it recursive by adding two \\*'s to the end of the path"
 msgstr "添加两个 \\* 表示递归查找源码目录下的文件"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:195
+#: ../../docs/development/cpp/configuring_an_ide.rst:210
 msgid "e.g. ``/Users/me/repos/godot-source/\\**``"
 msgstr "如 ``/Users/me/repos/godot-source/\\**``"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:197
+#: ../../docs/development/cpp/configuring_an_ide.rst:212
 msgid "Add Godot Source to the Project:"
 msgstr "把 Godot 源码添加到项目："
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:199
+#: ../../docs/development/cpp/configuring_an_ide.rst:214
 msgid "Drag and drop godot source into project file browser."
 msgstr "把 Godot 源码目录拖到 Xcode 窗口中。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:200
+#: ../../docs/development/cpp/configuring_an_ide.rst:215
 msgid "Uncheck *Create External Build System*"
 msgstr "取消勾选 *Create External Build System*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:204
+#: ../../docs/development/cpp/configuring_an_ide.rst:219
 msgid "Click Next"
 msgstr "点击 Next"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:205
+#: ../../docs/development/cpp/configuring_an_ide.rst:220
 msgid "Select *create groups*"
 msgstr "选择 *create groups*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:209
+#: ../../docs/development/cpp/configuring_an_ide.rst:224
 msgid "Check off only your command line target in the *Add to targets* section"
 msgstr "在 * Add to targets * 中只选择添加到我们建立的命令行目标"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:210
+#: ../../docs/development/cpp/configuring_an_ide.rst:225
 msgid "Click finish. Xcode will now index the files."
 msgstr "点击 Finish。 Xcode将会开始索引文件。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:211
+#: ../../docs/development/cpp/configuring_an_ide.rst:226
 msgid "Grab a cup of coffee... Maybe make something to eat, too"
 msgstr "喝一杯咖啡...或者先吃点其他的东西等待一下"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:212
+#: ../../docs/development/cpp/configuring_an_ide.rst:227
 msgid ""
 "You should have jump to definition, auto completion, and full syntax "
 "highlighting when it is done."
 msgstr "完成之后，你就可以使用代码跳转、自动补全、语法高亮等功能了。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:215
+#: ../../docs/development/cpp/configuring_an_ide.rst:230
 msgid "Scheme Setup"
 msgstr "设置 Scheme"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:217
+#: ../../docs/development/cpp/configuring_an_ide.rst:232
 msgid "Edit Build Scheme of External Build Target:"
 msgstr "编辑外部构建目标的构建方案："
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:219
+#: ../../docs/development/cpp/configuring_an_ide.rst:234
 msgid "Open scheme editor of external build target"
 msgstr "从外部构建目标中打开 scheme  编辑器"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:220
+#: ../../docs/development/cpp/configuring_an_ide.rst:235
 msgid "Expand the *Build* menu"
 msgstr "展开 *Build* 菜单"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:221
+#: ../../docs/development/cpp/configuring_an_ide.rst:236
 msgid "Goto *Post Actions*"
 msgstr "前往 *Post Actions*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:222
+#: ../../docs/development/cpp/configuring_an_ide.rst:237
 msgid ""
 "Add a new script run action, select your project in ``Provide build settings "
 "from`` as this allows you to use ``${PROJECT_DIR}`` variable."
@@ -414,11 +445,11 @@ msgstr ""
 "添加新的脚本动作， 在 ``Provide build settings from``  中选择你项目， 这样你"
 "就可以使用 ``${PROJECT_DIR}`` 变量了。"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:226
+#: ../../docs/development/cpp/configuring_an_ide.rst:241
 msgid "Write a script that gives the binary a name that Xcode will recognize"
 msgstr "编写一段脚本让Xcode能够认识我们构建的的二进制文件"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:227
+#: ../../docs/development/cpp/configuring_an_ide.rst:242
 msgid ""
 "e.g. ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/"
 "godot/bin/godot``"
@@ -426,32 +457,32 @@ msgstr ""
 "如 ``ln -f ${PROJECT_DIR}/godot/bin/godot.osx.tools.64 ${PROJECT_DIR}/godot/"
 "bin/godot``"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:228
+#: ../../docs/development/cpp/configuring_an_ide.rst:243
 msgid "Build the external build target"
 msgstr "构建外部构建目标"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:230
+#: ../../docs/development/cpp/configuring_an_ide.rst:245
 msgid "Edit Run Scheme of External Build Target:"
 msgstr "编辑你的构建外部构建目标的运行方案："
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:232
+#: ../../docs/development/cpp/configuring_an_ide.rst:247
 msgid "Open the scheme editor again"
 msgstr "再次打开 scheme  编辑器"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:233
+#: ../../docs/development/cpp/configuring_an_ide.rst:248
 msgid "Click Run"
 msgstr "点击运行"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:237
+#: ../../docs/development/cpp/configuring_an_ide.rst:252
 msgid ""
 "Set the *Executable* to the file you linked in your post build action script"
 msgstr "设置 *Executable* 为你编写的构建动作脚本"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:238
+#: ../../docs/development/cpp/configuring_an_ide.rst:253
 msgid "Check *Debug executable* if it isn't already"
 msgstr "勾选 *Debug executable*"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:239
+#: ../../docs/development/cpp/configuring_an_ide.rst:254
 msgid ""
 "You can go to *Arguments* tab and add an -e and a -path to a project to "
 "debug the editor not the project selection screen"
@@ -459,14 +490,14 @@ msgstr ""
 "你可以前往 *Arguments*  切页然后添加 ``-e`` 和 ``-path`` 到你的项目，来调试编"
 "辑器"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:242
+#: ../../docs/development/cpp/configuring_an_ide.rst:257
 msgid "Test it:"
 msgstr "测试："
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:244
+#: ../../docs/development/cpp/configuring_an_ide.rst:259
 msgid "Set a breakpoint in platform/osx/godot_main_osx.mm"
 msgstr "在 platform/osx/godot_main_osx.mm 文件中设置一个断点"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:245
+#: ../../docs/development/cpp/configuring_an_ide.rst:260
 msgid "It should break at the point!"
 msgstr "这应该能够触发你下的断点！"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,7 +211,7 @@ msgid ""
 "If one of the scene changing buttons are pressed, we fist call "
 "``set_mouse_and_joypad_sensitivity`` so the singleton (``Globals.gd``) has "
 "the values from the :ref:`HSlider <class_HSlider>` nodes. Then we tell the "
-"singleton to change nodes using it's ``load_new_scene`` function, passing in "
+"singleton to change nodes using its ``load_new_scene`` function, passing in "
 "the file path of the scene the player has selected."
 msgstr ""
 
@@ -227,7 +227,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:178
 msgid ""
 "If the ``fullscreen`` button is pressed we toggle the :ref:`OS <class_OS>`'s "
-"full screen mode by setting it to the flipped version of it's current value."
+"full screen mode by setting it to the flipped version of its current value."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:180
@@ -247,8 +247,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:188
 msgid ""
-"We then set the ``mouse_sensitivity`` and ``joypad_sensitvity`` variables to "
-"the values in their respective :ref:`HSlider <class_HSlider>` node "
+"We then set the ``mouse_sensitivity`` and ``joypad_sensitivity`` variables "
+"to the values in their respective :ref:`HSlider <class_HSlider>` node "
 "counterparts."
 msgstr ""
 
@@ -618,7 +618,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:434
 msgid ""
-"We then get the quit button and assign it's ``pressed`` signal to "
+"We then get the quit button and assign its ``pressed`` signal to "
 "``popup_quit``, which we will be adding shortly."
 msgstr ""
 
@@ -857,7 +857,7 @@ msgstr ""
 msgid ""
 "The ``\\n`` combination from the expression ``You have died\\n`` is a "
 "command used to display the text following after it on a new line below. "
-"This is always usefull when you wand to nicely group displayed text in "
+"This is always useful when you wand to nicely group displayed text in "
 "multiple lines so it looks better and is more readable by the players of "
 "your games."
 msgstr ""
@@ -908,13 +908,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:682
 msgid ""
-"We then go through each weapon and call it's ``reset_weapon`` function, "
-"which we will add soon."
+"We then go through each weapon and call its ``reset_weapon`` function, which "
+"we will add soon."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:684
 msgid ""
-"Then we reset ``health`` to ``100``, ``grenade_amounts`` to it's default "
+"Then we reset ``health`` to ``100``, ``grenade_amounts`` to its default "
 "values, and change ``current_grenade`` to ``Grenade``. This effectively "
 "resets these variables to their default values."
 msgstr ""
@@ -1043,10 +1043,10 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:797
 msgid ""
-"Now when a node with ``Respawn_Point_Setter.gd`` has it's ``_ready`` "
-"function called, all of the children nodes of the node with "
-"``Respawn_Point_Setter.gd``, ``Spawn_Points`` in the case of ``Ruins_Level."
-"tscn``, will be added to ``respawn_points`` in ``Globals.gd``."
+"Now when a node with ``Respawn_Point_Setter.gd`` has its ``_ready`` function "
+"called, all of the children nodes of the node with ``Respawn_Point_Setter."
+"gd``, ``Spawn_Points`` in the case of ``Ruins_Level.tscn``, will be added to "
+"``respawn_points`` in ``Globals.gd``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_six.rst:801

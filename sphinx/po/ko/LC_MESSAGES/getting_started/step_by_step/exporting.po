@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,10 +32,10 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
-"이제 당신은 작업한 게임을 갖고 있으니, 당신의 성공을 남과 나누고 싶을겁니다. "
-"하지만, 그렇다고 친구에게 고도를 다운받고 프로젝트를 열라고 요청하는 것은 실"
-"용적이지 못합니다. 대신, 당신은 당신의 프로젝트를 \"패키지\"로 전환해서 누구"
-"나 열수 있도록 *내보내기* 가 가능합니다."
+"이제 당신은 작업한 게임을 갖고 있으니, 당신의 성공을 남과 나누고 싶을 겁니"
+"다. 하지만, 그렇다고 친구에게 고도를 다운로드하고 프로젝트를 열라고 요청하는 "
+"것은 실용적이지 못합니다. 대신, 당신은 당신의 프로젝트를 \"패키지\"로 전환해"
+"서 누구나 열 수 있도록 *내보내기* 가 가능합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -124,9 +124,9 @@ msgid ""
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
 "프로젝트를 내보내려면, *내보내기 템플릿 (export templates)* 을 http://"
-"godotengine.org/download 에서 다운로드해야합니다. 이 템플릿은 엔진에 최적화"
-"된 버전으로 각 플렛폼에 따로 컴파일된 에디터가 필요없습니다. 당신은 또한 고도"
-"에서 *에디터 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
+"godotengine.org/download 에서 다운로드 해야 합니다. 이 템플릿은 엔진에 최적화"
+"된 버전으로 각 플렛폼에 따로 컴파일된 에디터가 필요 없습니다. 당신은 또한 고"
+"도에서 *에디터 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
@@ -141,11 +141,10 @@ msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
-"고도를 업그레이드 하셨다면, 새로운 버전에 맞는 템플릿을 다운받아야 하고 그렇"
-"지 않으면 프로젝트가 제대로 내보내기가 되질 않습니다."
+"고도를 업그레이드 하셨다면, 새로운 버전에 맞는 템플릿을 다운로드 해야 하고 그"
+"렇지 않으면 프로젝트가 제대로 내보내기가 작동하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export presets"
 msgstr "프리셋 내보내기"
 
@@ -190,7 +189,6 @@ msgstr ""
 "를 설정합니다. 지금은 이 설정으로 두어도 됩니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
-#, fuzzy
 msgid "Exporting by platform"
 msgstr "플랫폼 별 내보내기"
 
@@ -203,7 +201,6 @@ msgstr ""
 "으로 배울겁니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
-#, fuzzy
 msgid "PC (Linux/macOS/Windows)"
 msgstr "PC (리눅스/맥OS/윈도우)"
 
@@ -224,10 +221,11 @@ msgid "Click \"Save\" and the engine will build the export files."
 msgstr "\"저장\"을 누르면 엔진이 내보내기 파일을 만들겁니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
+#, fuzzy
 msgid ""
-"When exporting for MacOS, if you export on a MacOS computer, you'll end up "
+"When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
-"either case, the compressed file contains a MacOS `.app` that you can double-"
+"either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
 "맥OS로 내보낼 때는, 맥OS 컴퓨터에서 작업한다면, 그것은 `.dmg` 파일로 만들 것"
@@ -348,8 +346,9 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
+#, fuzzy
 msgid ""
-"In order to build your game for iOS, you must have a computer running MacOS "
+"In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
 msgstr ""
 "iOS에 게임이 돌아가게 하고 싶다면, 당신은 맥OS와 Xcode가 실행되는 컴퓨터를 갖"

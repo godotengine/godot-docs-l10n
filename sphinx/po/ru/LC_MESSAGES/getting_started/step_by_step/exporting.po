@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-09 12:15+0200\n"
+"POT-Creation-Date: 2018-10-25 15:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,9 +148,8 @@ msgstr ""
 "новой версии, иначе работа экспортированых проектов может быть нестабильна."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export presets"
-msgstr "Экспорт предустановок"
+msgstr "Экспорт предустановок(пресетов)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:142
 msgid ""
@@ -195,9 +194,8 @@ msgstr ""
 "для каждой платформы. Эти настройки пока оставим."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
-#, fuzzy
 msgid "Exporting by platform"
-msgstr "Экспорт по Платформам"
+msgstr "Экспортирование на платформу"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:162
 msgid ""
@@ -209,9 +207,8 @@ msgstr ""
 "понадобиться."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
-#, fuzzy
 msgid "PC (Linux/macOS/Windows)"
-msgstr "ПК (Linux/MacOS/Windows)"
+msgstr "PC (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:168
 msgid ""
@@ -231,10 +228,11 @@ msgid "Click \"Save\" and the engine will build the export files."
 msgstr "Нажмите \"Сохранить\" и движок соберет экспортируемый файл."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
+#, fuzzy
 msgid ""
-"When exporting for MacOS, if you export on a MacOS computer, you'll end up "
+"When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
-"either case, the compressed file contains a MacOS `.app` that you can double-"
+"either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
 "При экспорте на MacOS, если вы экспортируете на компьютере с MacOS, вы "
@@ -368,8 +366,9 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
+#, fuzzy
 msgid ""
-"In order to build your game for iOS, you must have a computer running MacOS "
+"In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
 msgstr ""
 "Чтобы создать игру для iOS, вы должны иметь компьютер с операционной "
