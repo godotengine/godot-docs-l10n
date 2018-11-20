@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,5 +54,9 @@ msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:76
 msgid "This is all! Thanks for your cooperation, citizen."
+msgstr ""
+
+#: ../../docs/tutorials/io/encrypting_save_games.rst:78
+msgid "This method cannot really prevent players from editing their savegames locally, because since the encryption key is stored inside the game, the player can still decrypt and edit the file themselves. The only way to prevent this from being possible is to store the save data on a remote server where players can only make authorized changes to their save data. If your game deals with real money, you need to be doing this anyway."
 msgstr ""
 
