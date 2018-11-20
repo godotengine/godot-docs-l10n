@@ -9,10 +9,12 @@
 # benjamin thilliez <benjamin.thilliez@gmx.com>, 2018.
 # Bresere <berserk172.cl215@gmail.com>, 2018.
 # Brice Lobet <tempo.data@gmail.com>, 2018.
+# Carl Schwan <schwancarl@protonmail.com>, 2018.
 # Cindy Dallaire <c.dallaire93@gmail.com>, 2018.
 # Darck Crystale <vraken@live.fr>, 2018.
 # David Partouche <david.partouche@gmail.com>, 2018.
 # didier-v <didierv@mac.com>, 2018.
+# Dupuis Alexis <dupuis.alexis@yahoo.fr>, 2018.
 # Eric Chirnside <echirnside@gmail.com>, 2018.
 # EricRogerGarcia <ericgarcia@netc.fr>, 2018.
 # Ewan Lehnebach <ewan.lehnebach@gmail.com>, 2018.
@@ -42,6 +44,7 @@
 # Pierre <ghueldre.pierre@laposte.net>, 2018.
 # rawida <rawida@tempinbox.com>, 2018.
 # Rémi Verschelde <rverschelde@gmail.com>, 2018.
+# rc183 <rc183@keemail.me>, 2018.
 # Sagi <tanguy1.husseini@gmail.com>, 2018.
 # salty64 <cedric.arrabie@univ-pau.fr>, 2018.
 # Smiley32 <jeannin.emile@laposte.net>, 2018.
@@ -59,8 +62,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-10-25 15:59+0200\n"
-"PO-Revision-Date: 2018-10-25 13:19+0000\n"
-"Last-Translator: Kanabenki <lucien.menassol@gmail.com>\n"
+"PO-Revision-Date: 2018-11-18 17:07+0000\n"
+"Last-Translator: Ewan Lehnebach <ewan.lehnebach@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -317,7 +320,7 @@ msgid ""
 "step_by_step>` tutorial."
 msgstr ""
 "Pour une vue plus détaillée du moteur, nous vous encourageons à lire cette "
-"documentation, le tutoriel :ref:`Pas à pas <toc-learn-step_by_step>`vous "
+"documentation, le tutoriel :ref:`Pas à pas <toc-learn-step_by_step>` vous "
 "aidera à démarrer en douceur."
 
 #: ../../docs/about/introduction.rst:46
@@ -366,7 +369,6 @@ msgstr ""
 "\"Juan Linietsky, Ariel Manzur et la communauté de Godot Engine\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Organisation de la documentation"
 
@@ -518,10 +520,10 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Tout le contenu de cette documentation est sous la licence Creative Commons "
-"Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/"
-">`_), avec attribution à \"Juan Linietsky, Ariel Manzur et la communauté "
-"Godot Engine\"."
+"Tout le contenu de la documentation est publié sous la licence Creative "
+"Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
+"by/3.0/>`_), avec attribution à \"Juan Linietsky, Ariel Manzur et la "
+"communauté Godot Engine\"."
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -548,12 +550,11 @@ msgstr ""
 "trouvent dans le dépôt de Godot."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Voyez aussi `la page de la licence sur le site de Godot <https://godotengine."
+"Voir aussi `la page de la licence sur le site de Godot <https://godotengine."
 "org/license>`_."
 
 #: ../../docs/about/faq.rst:31
@@ -570,7 +571,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -1071,9 +1072,8 @@ msgstr ""
 "<doc_making_plugins>` et les outils de scripting."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
-msgstr "Voir aussi les posts du blog officiel sur ces sujets :"
+msgstr "Voir aussi les articles du blog officiel sur ces sujets :"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -1545,6 +1545,8 @@ msgstr "|image20|"
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"Lisez :ref:`doc_introduction_to_3d` pour plus de détails à propos de "
+"**l'espace de travail 3D**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
 msgid ""
@@ -3447,32 +3449,48 @@ msgid "Signals"
 msgstr "Signaux"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
+#, fuzzy
 msgid ""
 "Signals are Godot's version of the *observer* pattern. They allow a node to "
 "send out a message that other nodes can listen for and respond to. For "
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Les signaux sont la version de Godot du schéma de l'observateur. Ils "
+"permettent à un nœud d'envoyer un message que les autres nœuds peuvent "
+"écouter et auquel ils peuvent répondre. Par exemple, au lieu de vérifier en "
+"continu si un bouton est appuyé, le bouton peut émettre un signal lorsqu'il "
+"est appuyé."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Vous pouvez en savoir plus sur le modèle d'observateur ici : http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
+#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that any interested objects can subscribe to and respond."
 msgstr ""
+"Les signaux sont un moyen de **découpler** vos objets de jeu, ce qui conduit "
+"à un code mieux organisé et plus facile à gérer. Au lieu de forcer les "
+"objets du jeu à s'attendre à ce que d'autres objets soient toujours "
+"présents, ils peuvent émettre des signaux auxquels tout objet intéressé peut "
+"s'abonner et répondre."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Vous trouverez ci-dessous quelques exemples d'utilisation des signaux dans "
+"vos propres projets."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 #, fuzzy
@@ -3480,6 +3498,7 @@ msgid "Timer example"
 msgstr "Quelques exemples :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
+#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
@@ -3487,6 +3506,12 @@ msgid ""
 "other image you like. Attach a script to the root node, but don't add any "
 "code to it yet."
 msgstr ""
+"Pour voir comment fonctionnent les signaux, essayons d'utiliser un noeud :"
+"ref:`Timer <class_Timer>`. Créez une nouvelle scène avec un nœud et deux "
+"enfants : un Timer et un :ref:`Sprite <class_Sprite>`. Vous pouvez utiliser "
+"l'icône Godot pour la texture du Sprite, ou toute autre image que vous "
+"souhaitez. Attachez un script au nœud racine, mais n'y ajoutez pas encore de "
+"code."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
 #, fuzzy
@@ -3494,11 +3519,15 @@ msgid "Your scene tree should look like this:"
 msgstr "L'arbre de scène devrait ressembler à ceci :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:35
+#, fuzzy
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"Dans les propriétés du nœud Timer, cochez la case \"On\" à côté de "
+"*Autostart*. Le timer démarrera automatiquement lorsque vous exécuterez la "
+"scène. Vous pouvez quitter le *Temps d'attente* à 1 seconde."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
 msgid ""
@@ -3507,12 +3536,20 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"À côté de l'onglet \"Inspecteur\" se trouve un onglet intitulé \"Nœud\". "
+"Cliquez sur cet onglet et vous verrez tous les signaux que le nœud "
+"sélectionné peut émettre. Dans le cas du nœud Timer, celui qui nous "
+"intéresse est \"timeout\". Ce signal est émis chaque fois que la minuterie "
+"atteint ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:46
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Cliquez sur le signal \"timeout()\" et cliquez sur \"Connecter...\". Vous "
+"verrez la fenêtre suivante dans laquelle vous pouvez définir comment vous "
+"voulez connecter le signal :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
 msgid ""
@@ -3521,12 +3558,18 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"Sur le côté gauche, vous verrez les nœuds de votre scène et pourrez "
+"sélectionner le nœud que vous souhaitez \"écouter\" pour le signal. Notez "
+"que le nœud Timer est rouge - ce n'est *pas* une erreur, mais une indication "
+"visuelle que c'est le nœud qui émet le signal. Sélectionnez le nœud racine."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:56
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"Le nœud cible *doit* être associé à un script ou vous recevrez un message "
+"d'erreur."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
@@ -3535,24 +3578,37 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"Au bas de la fenêtre se trouve un champ intitulé \"Méthode en Noeud\". Il "
+"s'agit du nom de la fonction que vous souhaitez utiliser dans le script du "
+"nœud cible. Par défaut, Godot créera cette fonction en utilisant la "
+"convention de dénomination ``_on_<nom_nœud>_<nom_signal>`` mais vous pouvez "
+"la modifier si vous le souhaitez."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:64
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"Cliquez sur \"Connecter\" et vous verrez que la fonction a été créée dans le "
+"script :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:84
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Nous pouvons maintenant remplacer le code de l’espace réservé par le code "
+"que nous souhaitons exécuter à la réception du signal. Faisons clignoter le "
+"Sprite :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Exécutez la scène et vous verrez le Sprite clignoter à chaque seconde. Vous "
+"pouvez modifier la propriété *Temps d'Attente* du temporisateur pour "
+"modifier cela."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
 #, fuzzy
@@ -3565,12 +3621,18 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Vous pouvez également établir la connexion du signal en code plutôt qu'avec "
+"l'éditeur. Cela est généralement nécessaire lorsque vous installez des nœuds "
+"via du code et vous ne pouvez donc pas utiliser l'éditeur pour établir la "
+"connexion."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Commencez par déconnecter le signal en sélectionnant la connexion dans "
+"l'onglet \"Nœud\" de la minuterie et en cliquant sur Déconnecter."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
@@ -3580,6 +3642,11 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Pour établir la connexion en code, nous pouvons utiliser la fonction "
+"``connecter``. Nous allons la mettre dans `_ready()` `afin que la connexion "
+"soit établie lors de l'exécution. La syntaxe de la fonction est "
+"``<nœud_source>.connecter(<nom_signal>, <nœud_cible>, <nom_fonction_ "
+"cible>)``. Voici le code pour la connexion de notre minuterie :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
 #, fuzzy
@@ -3589,16 +3656,20 @@ msgstr "Itérateurs personnalisés"
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
+"Vous pouvez également déclarer vos propres signaux personnalisés dans Godot :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Une fois déclarés, vos signaux personnalisés apparaîtront dans l'inspecteur "
+"et pourront être connectés de la même manière que les signaux intégrés d'un "
+"nœud."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
-msgstr ""
+msgstr "Pour émettre un signal par le code, utilisez la fonction ``emit`` :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
 #, fuzzy
@@ -3612,12 +3683,18 @@ msgid ""
 "clicked, we create an instance of the bullet at the player's location. See :"
 "ref:`doc_instancing` for details."
 msgstr ""
+"Comme autre exemple d’utilisation du signal, considérons un personnage qui "
+"peut pivoter et tirer vers la souris. Chaque fois que vous cliquez sur le "
+"bouton de la souris, nous créons une instance de la balle à l'emplacement du "
+"joueur. Voir :ref:`doc_instancing` pour plus de détails."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
+"Cependant, si les balles sont ajoutées en tant qu'enfants du joueur, elles "
+"resteront \"attachées\" au joueur lors de sa rotation :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
@@ -3628,10 +3705,16 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
+"Au lieu de cela, nous avons besoin que les balles soient indépendantes du "
+"mouvement du joueur - une fois tirées, elles doivent continuer à voyager en "
+"ligne droite et le joueur ne peut plus les affecter. Au lieu d'être ajouté à "
+"l'arbre de la scène en tant qu'enfant du joueur, il est plus logique "
+"d'ajouter la balle en tant qu'enfant de la scène de jeu \"principale\", qui "
+"peut être le parent du joueur ou même plus haut dans l'arbre."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 msgid "You could do this by adding the bullet directly:"
-msgstr ""
+msgstr "Vous pouvez le faire en ajoutant directement la balle :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
 msgid ""
@@ -3642,6 +3725,13 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
+"Cependant, cela conduira à un problème différent. Maintenant, si vous "
+"essayez de tester votre scène \"Player\" de manière indépendante, elle se "
+"bloquera lors du tir, car il n’y a pas de nœud parent auquel accéder. Cela "
+"rend beaucoup plus difficile le test indépendant du code de votre joueur et "
+"signifie également que si vous décidez de modifier la structure des nœuds de "
+"votre scène principale, le parent du joueur risque de ne plus être le nœud "
+"approprié pour recevoir les balles."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""
@@ -3650,22 +3740,31 @@ msgid ""
 "after that - whatever node is connected to the signal can \"receive\" the "
 "bullets and take the appropriate action to spawn them."
 msgstr ""
+"La solution consiste à utiliser un signal pour \"émettre\" les balles du "
+"joueur. Le joueur n'a alors pas besoin de \"savoir\" ce qu'il advient des "
+"balles après cela. Quel que soit le nœud connecté au signal, il peut "
+"\"recevoir\" les balles et prendre les mesures appropriées pour les générer."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:247
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr ""
+"Voici le code pour le joueur utilisant des signaux pour émettre la balle :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:290
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
+"Dans la scène principale, nous connectons ensuite le signal du joueur (celui-"
+"ci apparaîtra dans l'onglet \"Nœud\")."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:314
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
 msgstr ""
+"Maintenant, les balles conserveront leur propre mouvement indépendamment de "
+"la rotation du joueur :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:322
 msgid ""
@@ -3674,12 +3773,20 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"De nombreux types de nœuds intégrés de Godot fournissent des signaux que "
+"vous pouvez utiliser pour détecter des événements. Par exemple, un :ref:"
+"`Area2D <class_Area2D>` représentant une pièce de monnaie émet un signal "
+"``body_entered`` chaque fois que le corps physique du joueur entre en "
+"collision avec, ce qui vous permet de savoir quand le joueur la récupère."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:327
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"Dans la section suivante :ref:`doc_your_first_game`, vous construirez un jeu "
+"complet comprenant plusieurs utilisations de signaux pour connecter "
+"différents composants du jeu."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
@@ -7687,10 +7794,18 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"Nous voulons que notre interface s'ancre en haut de l'écran. Sélectionnez le "
+"nœud ``GUI`` et cliquez sur le bouton Mise en page en haut de la fenêtre. "
+"Sélectionnez l'option ``Top Wide``. Le nœud ``GUI`` s'ancre au bord "
+"supérieur de son parent, la fenêtre d'affichage par défaut. Il sera "
+"automatiquement redimensionné sur l'axe vertical pour faire de la place pour "
+"ses composants UI enfants."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
 msgstr ""
+"Enregistrez la scène sous le nom ``GUI.tscn``. Nous allons y mettre toute "
+"l'interface utilisateur graphique."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -10264,6 +10379,11 @@ msgid ""
 "They don't do anything on their own: instead nodes use the data contained in "
 "resources."
 msgstr ""
+"Les *nœuds* vous offrent des fonctionnalités: ils dessinent des sprites, des "
+"modèles 3D, simulent des propriétés physiques, organisent une interface "
+"utilisateur, etc. **Les ressources** sont **des conteneurs de données**. Ils "
+"ne font rien par eux-mêmes: les nœuds utilisent plutôt les données contenues "
+"dans les ressources."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 #, fuzzy
@@ -10324,12 +10444,16 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
 msgstr ""
+"**Externe** à une scène, enregistrés sur le disque en tant que fichiers "
+"individuels."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
 msgstr ""
+"**Intégrés**, enregistrés dans le fichier \\*.tscn ou le fichier \\*.scn "
+"auquel ils sont attachés."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
@@ -10354,6 +10478,11 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes built-in resource."
 msgstr ""
+"La propriété chemin nous indique d'où provient la ressource. Dans ce cas, "
+"elle provient d'une image PNG appelée ``robi.png``. Lorsque la ressource "
+"provient d'un fichier comme celui-ci, il s'agit d'une ressource externe. Si "
+"vous effacez le chemin ou que ce chemin est vide, il devient une ressource "
+"intégrée."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -10361,12 +10490,18 @@ msgid ""
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"Le basculement entre les ressources intégrées et externes se produit lorsque "
+"vous enregistrez la scène. Dans l'exemple ci-dessus, si vous effacez le "
+"chemin \\`\"res://robi.png\"\\`et que vous sauvegardez, Godot sauvegardera "
+"l'image dans le fichier de scène .tscn."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"Même si vous enregistrez une ressource intégrée, lorsque vous créez une "
+"scène plusieurs fois, le moteur n'en charge qu'une copie."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
@@ -10377,6 +10512,8 @@ msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"Il existe deux manières de charger des ressources depuis un code. Tout "
+"d’abord, vous pouvez utiliser la fonction ``load()`` à tout moment :"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""
@@ -10384,6 +10521,11 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"Vous pouvez également ``preload`` (précharger) des ressources. Contrairement "
+"à ``load`` (charger), cette fonction lira le fichier à partir du disque et "
+"le chargera au moment de la compilation. Par conséquent, vous ne pouvez pas "
+"appeler le préchargement avec un chemin variable: vous devez utiliser une "
+"chaîne constante."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
@@ -10469,6 +10611,11 @@ msgid ""
 "serialized text or binary data (/*.tres, /*.res). They also inherit the "
 "reference-counting memory management from the Reference type."
 msgstr ""
+"Comme tout objet de Godot, les utilisateurs peuvent également scripter les "
+"ressources. Les scripts de ressources héritent de la possibilité de traduire "
+"librement entre les propriétés d'objet et le texte sérialisé ou les données "
+"binaires (/*.tres, /*.res). Ils héritent également de la gestion de la "
+"mémoire de comptage de références du type Référence."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
@@ -10479,12 +10626,21 @@ msgid ""
 "ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
 "`Resource <class_Resource>` features:"
 msgstr ""
+"Cela présente de nombreux avantages distincts par rapport aux structures de "
+"données alternatives telles que les fichiers JSON, CSV ou TXT personnalisés. "
+"Les utilisateurs peuvent uniquement importer ces ressources en tant que :ref:"
+"`Dictionnaire <class_Dictionary>` (JSON) ou en tant que :ref:`Fichier "
+"<class_File>` à analyser. Ce qui distingue les ressources, c’est leur "
+"héritage de :ref:`Objet <class_Object>`, :ref:`Référence <class_Reference>`, "
+"et :ref:`Ressource <class_Resource>` :"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
 msgstr ""
+"Ils peuvent définir des constantes. Ainsi, les constantes d'autres champs de "
+"données ou d'objets ne sont pas nécessaires."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
 msgid ""
@@ -10493,17 +10649,25 @@ msgid ""
 "Resource script's structure needs to change, the game using the Resource "
 "need not also change."
 msgstr ""
+"Ils peuvent définir des méthodes, y compris des méthodes setter/getter pour "
+"les propriétés. Cela permet l’abstraction et l’encapsulation des données "
+"sous-jacentes. Si la structure du script de ressource doit être modifiée, le "
+"jeu utilisant la ressource ne nécessite pas de changement aussi."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
 msgstr ""
+"Ils peuvent définir des signaux afin que les ressources puissent déclencher "
+"des réactions aux modifications des données qu’elles gèrent."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
+"Ils ont des propriétés définies, de sorte que les utilisateurs savent à 100% "
+"que leurs données existeront."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
 msgid ""
@@ -10511,12 +10675,19 @@ msgid ""
 "feature. Users do not need to implement custom logic to import/export a "
 "resource file's data."
 msgstr ""
+"L’auto-sérialisation et la dé-sérialisation des ressources est une "
+"fonctionnalité intégrée du moteur Godot. Les utilisateurs n'ont pas besoin "
+"d'implémenter une logique personnalisée pour importer/exporter les données "
+"d'un fichier de ressources."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
 msgstr ""
+"Les ressources peuvent même sérialiser les sous-ressources de manière "
+"récursive, ce qui signifie que les utilisateurs peuvent concevoir des "
+"structures de données encore plus sophistiquées."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
 msgid ""
@@ -10524,6 +10695,10 @@ msgid ""
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
 "res) for increased speed and compression."
 msgstr ""
+"Les utilisateurs peuvent enregistrer des ressources sous forme de fichiers "
+"textes de contrôle de version conviviaux (\\*.tres). Lors de l'exportation "
+"d'un jeu, Godot sérialise les fichiers de ressources sous forme de fichiers "
+"binaires (\\*.res) pour une vitesse et une compression accrues."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
 msgid ""
@@ -10532,11 +10707,19 @@ msgid ""
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
+"L'inspecteur de Godot Engine rend et édite les fichiers de ressources "
+"immédiatement. En tant que tels, les utilisateurs n'ont souvent pas besoin "
+"de mettre en œuvre une logique personnalisée pour visualiser ou éditer leurs "
+"données. Pour ce faire, double-cliquez sur le fichier de ressources dans le "
+"dock Système de Fichiers ou cliquez sur l'icône de dossier dans l'inspecteur "
+"et ouvrez le fichier dans la boîte de dialogue."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr ""
+"Ils peuvent étendre **d'autres** types de ressources, outre la ressource de "
+"base."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
@@ -10546,10 +10729,17 @@ msgid ""
 "will invalidate the second object's variable. This is not so for Resources "
 "which won't free their memory until *all* instances are gone."
 msgstr ""
+"Les ressources et les dictionnaires sont également différents en ce que les "
+"deux sont passés par référence, mais seules les ressources sont comptées par "
+"références. Cela signifie que si un dictionnaire est passé entre des objets "
+"et que le premier objet est supprimé, la variable du second objet sera "
+"invalidée. Ce n'est pas le cas pour les ressources qui ne libéreront pas "
+"leur mémoire tant que *toutes* les instances n'auront pas disparu."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr ""
+"Godot facilite la création de ressources personnalisées dans l'inspecteur."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
 msgid ""
@@ -10560,6 +10750,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr ""
+"Définissez la propriété ``script`` dans l'inspecteur comme étant votre "
+"script."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
 msgid ""
@@ -10568,6 +10760,12 @@ msgid ""
 "custom properties too! To save a resource from the Inspector, click the "
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
+"L'inspecteur affiche désormais les propriétés personnalisées de votre script "
+"de ressources. Si on modifie ces valeurs et enregistre la ressource, "
+"l'inspecteur sérialise également les propriétés personnalisées ! Pour "
+"enregistrer une ressource de l'inspecteur, cliquez sur le menu Outils de "
+"l'inspecteur (en haut à droite), puis sélectionnez \"Enregistrer\" ou "
+"\"Enregistrer sous ...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
 msgid ""
@@ -10577,6 +10775,12 @@ msgid ""
 "your script alone will add it to the Inspector's creation dialog. This will "
 "auto-add your script to the Resource object you create."
 msgstr ""
+"Si le langage du script prend en charge `les classes de script <https://"
+"godot.readthedocs.io/fr/latest/getting_started/step_by_step/"
+"scripting_continued.html#register-scripts-as-classes>` __, cela simplifie le "
+"processus. Définir un nom pour votre script seul l'ajoutera à la boîte de "
+"dialogue de création de l'inspecteur. Cela ajoutera automatiquement votre "
+"script à l'objet Ressource que vous créez."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
 #, fuzzy
@@ -10591,6 +10795,12 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
+"Les scripts de ressources sont similaires à ScriptableObjects de Unity. "
+"L'Inspecteur fournit un support intégré pour les ressources personnalisées. "
+"Si nécessaire, les utilisateurs peuvent même concevoir leurs propres scripts "
+"d’outils basés sur Contrôle, et les combiner avec un :ref:`EditorPlugin "
+"<class_EditorPlugin>` pour créer des visualisations et des éditeurs "
+"personnalisés pour leurs données."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
 msgid ""
@@ -10598,24 +10808,34 @@ msgid ""
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
+"Les DataTables et CurveTables de Unreal Engine 4 sont également faciles à "
+"recréer à l'aide de scripts de Resources. Les DataTables sont une chaîne "
+"mappée à une structure personnalisée, similaire à un dictionnaire mappant "
+"une chaîne à un script de ressource personnalisé secondaire."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
+"Au lieu de simplement aligner les valeurs du dictionnaire, on pourrait "
+"aussi, alternativement ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr ""
+"Importer une table de valeurs à partir d'une feuille de calcul et générer "
+"ces paires clé-valeur, ou ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
 msgstr ""
+"Concevez une visualisation dans l'éditeur et créez un plug-in simple qui "
+"l'ajoutera à l'inspecteur lorsque vous ouvrirez ces types de ressources."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
 msgid ""
@@ -10632,6 +10852,13 @@ msgid ""
 "keyword in GDScript) won't work. Godot will not serialize the custom "
 "properties on the script subclass properly."
 msgstr ""
+"Attention, les fichiers de ressources (\\*.tres/\\*.res) vont stocker le "
+"chemin du script qu'ils utilisent dans le fichier. Une fois chargés, ils "
+"vont chercher et charger ce script comme une extension de leur type. Cela "
+"signifie que tenter d’affecter une sous-classe, c’est-à-dire une classe "
+"interne à un script (comme l’utilisation du mot clé ``class`` dans GDScript) "
+"ne fonctionnera pas. Godot ne sérialisera pas correctement les propriétés "
+"personnalisées sur la sous-classe de script."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:363
 msgid ""
@@ -10639,6 +10866,9 @@ msgid ""
 "doesn't extend ``Resource``, and then determine that the script failed to "
 "load for the Resource object since the types are incompatible."
 msgstr ""
+"Dans l'exemple ci-dessous, Godot chargerait le script ``Nœud``, verrait "
+"qu'il n'étend pas ``Ressource``, puis déterminerait que le script n'a pas pu "
+"être chargé pour l'objet Ressource car les types sont incompatibles."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
@@ -11357,6 +11587,8 @@ msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
+"Si la colonne \"Activer\" est cochée (vrai par défaut), vous pouvez "
+"simplement accéder directement au singleton :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -12278,7 +12510,7 @@ msgstr "Animation du sprite"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
 msgid "Unity can handle script serialization in two ways:"
-msgstr ""
+msgstr "Unity peut gérer la sérialisation de script de deux manières :"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
 msgid ""
@@ -13050,7 +13282,7 @@ msgstr "case"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Cast the value to a given type if possible."
-msgstr ""
+msgstr "Convertir la valeur vers un type donné, si possible."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "self"
@@ -13211,7 +13443,7 @@ msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "puppet"
-msgstr ""
+msgstr "puppet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 #, fuzzy
@@ -13225,7 +13457,7 @@ msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "puppetsync"
-msgstr ""
+msgstr "puppetsync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "PI"
@@ -13996,7 +14228,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:591
 msgid "Script classes declared with the ``class_name`` keyword."
-msgstr ""
+msgstr "Les classes de script déclarées avec le mot-clé ``class_name``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:594
 #: ../../docs/tutorials/shading/shading_language.rst:102
@@ -23641,7 +23873,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:15
 msgid "Limitations"
-msgstr "Limitations"
+msgstr "Limites"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:17
 #, fuzzy

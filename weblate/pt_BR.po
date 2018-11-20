@@ -69,8 +69,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-10-25 15:59+0200\n"
-"PO-Revision-Date: 2018-10-01 18:32+0000\n"
-"Last-Translator: Guilherme Rodrigues Ribeiro <keybpr@gmail.com>\n"
+"PO-Revision-Date: 2018-11-20 10:45+0000\n"
+"Last-Translator: Julio Yagami <juliohenrique31501234@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -78,7 +78,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -375,7 +375,6 @@ msgstr ""
 "atribuição a \"Juan Linietsky, Ariel Manzur e comunidade Godot Engine\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Organização da documentação"
 
@@ -553,12 +552,11 @@ msgstr ""
 "LOGO_LICENSE.md>`_ no repositório de Godot."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Veja também `a página Licença no site de Godot <https://godotengine.org/"
+"Além disso, veja `a página Licença no site de Godot <https://godotengine.org/"
 "license>`_."
 
 #: ../../docs/about/faq.rst:31
@@ -575,7 +573,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -687,7 +685,6 @@ msgstr ""
 "é uma ótima maneira de começar sua solução de problemas."
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -695,11 +692,12 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Para novas linguagens, suporte é possível através de terceiros utilizando os "
-"recursos GDNative / NativeScript / PluginScript. (Veja abaixo sobre como os "
-"plugins funcionam.) Existe trabalho em andamento, por exemplo,  sobre esta "
-"ligação não oficial entre Godot para `Python <https://github.com/touilleMan/"
-"godot-python>`_ e `Nim <https://github.com/pragmagic/godot-nim>`_."
+"Quanto a novas linguagens, é possível oferecer suporte através de terceiros "
+"utilizando os recursos GDNative / NativeScript / PluginScript. (Veja abaixo "
+"sobre como os plugins funcionam.) Existe trabalho em andamento, por exemplo, "
+"para vinculações não oficiais do Godot para `Python <https://github.com/"
+"touilleMan/godot-python>`_ e para `Nim <https://github.com/pragmagic/godot-"
+"nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -758,7 +756,6 @@ msgstr ""
 "funcionam em um grande conjunto de linguagens."
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -884,7 +881,6 @@ msgid "As of Godot 3.0, glTF is supported."
 msgstr "A partir de Godot 3.0, glTF é suportado."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -1059,18 +1055,16 @@ msgid "How can I extend Godot?"
 msgstr "Como posso estender Godot?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Para estendero Godot, criar plugins para o Editor ou adicionar o suporte a "
+"Para estender o Godot, criar plugins para o Editor ou adicionar o suporte a "
 "novas línguas, veja :ref:`EditorPlugins <doc_making_plugins>` e scripts "
 "*tool*."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
 msgstr ""
 "Veja também os posts oficiais no blog (em inglês) sobre os seguintes tópicos:"
@@ -1132,7 +1126,6 @@ msgstr ""
 "Eu tenho uma grande ideia para Godot. Como posso compartilhar essa ideia?"
 
 #: ../../docs/about/faq.rst:251
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1535,9 +1528,11 @@ msgid "|image20|"
 msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
+#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"Leia :ref:`doc_introduction_to_3d` para mais detalhes sobre **3D workspace**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
 msgid ""
@@ -3396,12 +3391,18 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Sinais são a versão do Godot do padrão *observador*. Eles permitem que um nó "
+"envie uma mensagem que outros nós podem captar e responder. Por exemplo, ao "
+"invés de continuamente verificar um botão para saber se ele está sendo "
+"pressionado, o botão pode emitir um sinal quando for pressionado."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Você pode ler mais sobre o padrão observador aqui:\n"
+"http://gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -3410,12 +3411,19 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that any interested objects can subscribe to and respond."
 msgstr ""
+"Sinais são um meio de *desacoplar* seus objetos de jogo, o que leva a um "
+"código mais organizado e gerenciável. Ao invés de forçar objetos de jogo a "
+"esperar que outros objetos estejam sempre presentes, eles podem emitir "
+"sinais para os quais qualquer objeto interessado pode inscrever-se e "
+"responder."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Abaixo, você pode ver alguns exemplos de como você pode usar sinais em seus "
+"próprios projetos."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 #, fuzzy
@@ -3430,6 +3438,11 @@ msgid ""
 "other image you like. Attach a script to the root node, but don't add any "
 "code to it yet."
 msgstr ""
+"Para ver como sinais funcionam, vamos tentar usar um nó :ref:`Timer "
+"<class_Timer>`. Crie uma nova cena com um Node e dois filhos: um Timer e um :"
+"ref:`Sprite <class_Sprite>`. Você pode usar o ícone do Godot para a textura "
+"do Sprite, ou qualquer outra imagem que você quiser. Anexe um script no nó "
+"raíz, mas não adicione nenhum código a ele ainda."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
 #, fuzzy
@@ -3437,39 +3450,55 @@ msgid "Your scene tree should look like this:"
 msgstr "A árvore da cena deveria se parecer assim:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:35
+#, fuzzy
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"Nas propriedades do nó Timer, marque a caixa \"On\" próximo a *Autostart*. "
+"Isso fará com que o Timer inicie automaticamente quando você executar a "
+"cena. Você pode deixar o *Wait Time* em 1 segundo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
+#, fuzzy
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
-msgstr ""
+msgstr "Próximo à aba \"Inspector\" é uma aba"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:46
+#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Clique no sinal \"timeout()\" e clique \"Conectar....\". Você verá a "
+"seguinte janela, onde pode definir como você quer conectar o sinal:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
+#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is red "
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"Do lado esquerdo, você verá os nós na sua cena e pode selecionar o nó que "
+"você quer \"listen\" para o sinal. Note que o nó Timer está vermelho - isso "
+"*não* é um erro, mas é uma indicação visual de que esse nó que está emitindo "
+"o sinal. Selecione o nó raiz."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:56
+#, fuzzy
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"O nó alvo *precisa* ter um script atrelado ou você vai receber uma mensagem "
+"de erro."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""

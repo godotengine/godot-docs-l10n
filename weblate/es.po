@@ -33,6 +33,7 @@
 # Juan Jesús Ligero <jjhaggar@gmail.com>, 2018.
 # Juanjo <jjramos@gmail.com>, 2018.
 # Julio Alvar Tamaño <alvarjt@gmail.com>, 2018.
+# Julio Rolandi <julio.rolandi@gmail.com>, 2018.
 # Kevin S Mojica <keffspace@gmail.com>, 2018.
 # Kevin Soto Vallejo <siguemek@gmail.com>, 2018.
 # korge Rodriguez <jorge.3dcomv@gmail.com>, 2018.
@@ -57,8 +58,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-10-25 15:59+0200\n"
-"PO-Revision-Date: 2018-10-25 13:19+0000\n"
-"Last-Translator: Juan Antonio Frutos Lopez <juanantonio.tecno@gmail.com>\n"
+"PO-Revision-Date: 2018-11-07 15:09+0000\n"
+"Last-Translator: Julio Rolandi <julio.rolandi@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -366,7 +367,6 @@ msgstr ""
 "Godot Engine\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Organización de la documentación"
 
@@ -547,7 +547,6 @@ msgstr ""
 "LOGO_LICENSE.md>`_  en el repositorio de Godot."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
@@ -569,7 +568,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -692,8 +691,8 @@ msgid ""
 msgstr ""
 "En cuanto a los nuevos lenguajes, el soporte es posible a través de terceros "
 "utilizando las funciones GDNative / NativeScript / PluginScript. (Véase la "
-"pregunta sobre los plugins más abajo.) Actualmente se está trabajando, por "
-"ejemplo, en enlaces no oficiales para Godot a `Python <https://github.com/"
+"pregunta sobre los plugins más abajo.) Se está trabajando, por ejemplo, en "
+"los conectores no oficiales de Godot a `Python <https://github.com/"
 "touilleMan/godot-python>`_ y `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
@@ -1066,7 +1065,6 @@ msgstr ""
 "<doc_making_plugins>` y tool scripts."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
 msgstr "Mira también las publicaciones del blog oficial sobre estos temas:"
 
@@ -1532,9 +1530,12 @@ msgid "|image20|"
 msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
+#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"Leer :ref:`doc_introduction_to_3d` para mas detalle acerca de **3D "
+"workspace**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
 msgid ""
@@ -3413,12 +3414,18 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Las señales son en Godot una version del \"patron del observador\". Estas "
+"permiten a un nodo enviar un mensaje, que otros nodos pueden escuchar y "
+"responder. Por ejemplo, en vez de chequear continuamente si un botón esta "
+"siendo presionado, el botón puede emitir una señal cuando esta presionado."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Puedes leer mas sobre el patron del observador aqui: http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -3427,17 +3434,23 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that any interested objects can subscribe to and respond."
 msgstr ""
+"Las señales son una forma de desacoplar los objetos de juego, que lleva a "
+"tener código mas organizado y mas fácil de gestionar. En vez de forzar a los "
+"objetos de juego a esperar que otros objetos siempre esten presentes, pueden "
+"emitir señales a las que cualquier objeto interesado puede suscribirse y "
+"responder."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Aqui debajo puedes ver algunos ejemplos de como usar señales en tus propios "
+"proyectos."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "Algunos ejemplos:"
+msgstr "Ejemplo de temporizador"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -3447,6 +3460,11 @@ msgid ""
 "other image you like. Attach a script to the root node, but don't add any "
 "code to it yet."
 msgstr ""
+"Para visualizar como funcionan las señales, intentemos usando un nodo :ref:"
+"`Timer <class_Timer>`. Crea una nueva Escena con un Nodo y dos Hijos: un "
+"Timer y un :ref:`Sprite <class_Sprite>`. Puedes usar el ícono de Godot para "
+"la textura del Sprite, o cualquier otra imagen que gustes. Adjunta un Script "
+"al Nodo Raiz, pero no le agregues codigo todavia."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
 #, fuzzy
@@ -3459,6 +3477,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"En las propiedades del nodo temporizador, selecciona la casilla ON en "
+"*Autostart*. Esto hace que el temporizador inicie automaticamente cuando se "
+"ejecuta la escena. Puedes dejar el *Wait Time* en 1 segundo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
 msgid ""
@@ -3467,12 +3488,18 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Junto a la solapa \"Inspector\" hay una solapa llamada \"Nodo\". Haz click "
+"en esta solapa y verás todas las señales que el nodo elegido puede emitir. "
+"En el caso del nodo temporizador, la que nos ocupa es \"timeout\". Esta "
+"señal es emitida cuando el temporizador llega a ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:46
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Haz click en la señal \"timeout()\" y clickea \"Connect...\". Verás la "
+"siguiente ventana, donde puedes definir como quieres conectar la señal:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
 msgid ""
@@ -3481,12 +3508,18 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"En el margen izquierdo, verás los nodos en la escena y puedes elegir el nodo "
+"que quieres que \"escuche\" la señal. Fijate que el nodo temporizador esta "
+"en rojo - esto *no* es un error, sino una indicacion visual de que el nodo "
+"esta emitiendo una señal. Selecciona el nodo raiz."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:56
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"El nodo target *debe* tener un script adjunto o recibirás un mensaje de "
+"error."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
@@ -3495,18 +3528,24 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"En la parte inferior de la ventana hay un campo llamado \"Método en nodo\". "
+"Este es el nombre de la función en el script del nodo destino que quieres "
+"usar. Por defecto, Godot va a crear esta función usando "
+"``_on_<node_name>_<signal_name>`` pero se puede cambiar si asi lo desea."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:64
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
-msgstr ""
+msgstr "Haz click en \"Conectar\" y verás que la función se creo en el script:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:84
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Ahora podemos reemplazar el código de relleno con cualquier código que "
+"querramos ejecutar cuando se reciba la señal. Hagamos que el sprite parpadee."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
@@ -4268,7 +4307,6 @@ msgstr ""
 "cualquier número independiente de enemigos en el juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:486
-#, fuzzy
 msgid "Node setup"
 msgstr "Configuración del Nodo"
 

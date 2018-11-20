@@ -8,6 +8,7 @@
 # Daniele Tolomelli <daniel.tolomelli@gmail.com>, 2018.
 # Dario D'Ambra <legione0@ymail.com>, 2018.
 # Davide Cristini <davcri91@gmail.com>, 2018.
+# Davide Wayan Mores <moresdavidewayan@gmail.com>, 2018.
 # Giacomo Bella <foliestere@gmail.com>, 2018.
 # Luana Pau <ezhael@gmail.com>, 2018.
 # Mario Rossi <mr_do@hotmail.it>, 2018.
@@ -25,8 +26,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-10-25 15:59+0200\n"
-"PO-Revision-Date: 2018-10-04 09:31+0000\n"
-"Last-Translator: Giacomo Bella <foliestere@gmail.com>\n"
+"PO-Revision-Date: 2018-11-18 17:07+0000\n"
+"Last-Translator: Davide Wayan Mores <moresdavidewayan@gmail.com>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -34,7 +35,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -535,7 +536,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -761,6 +762,8 @@ msgstr "Perché creare GDScript?"
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
 msgstr ""
+"Le ragioni principali per le quali abbiamo creato un nuovo linguaggio di "
+"programmazione per Godot sono:"
 
 #: ../../docs/about/faq.rst:126
 #, fuzzy
@@ -1511,6 +1514,8 @@ msgstr "|image20|"
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
+"Leggi :ref:`doc_introduction_to_3d` per più dettagli riguardo l'area di "
+"lavoro **3D**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
 msgid ""
@@ -2282,6 +2287,9 @@ msgid ""
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
+"È possibile creare un diagramma come questo per quasi tutti i tipi di gioco. "
+"Scrivi le parti del gioco che puoi visualizzare, poi aggiungi frecce per "
+"rappresentare la proprietà di un componente da un altro."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
 msgid ""
@@ -2290,6 +2298,10 @@ msgid ""
 "instancing (either by code or directly in the editor) for the ownership "
 "relationships."
 msgstr ""
+"Una volta che si dispone di un diagramma come questo il processo consigliato "
+"per la creazione di un gioco è quello di creare una scena per ogni elemento "
+"elencato nel diagramma. Si userà l'istanziazione (tramite codice o "
+"direttamente nell'editor) per i rapporti di proprietà."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
 msgid ""
@@ -2301,12 +2313,22 @@ msgid ""
 "design-based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
+"Molto tempo speso nella programmazione dei giochi (o del software in "
+"generale) è dedicato alla progettazione di un'architettura e all'adattamento "
+"dei componenti di gioco a tale architettura. La progettazione basata su "
+"scene sostituisce questo approccio e rende lo sviluppo molto più veloce e "
+"semplice, permettendoti di concentrarti sulla logica del gioco stesso. "
+"Poiché la maggior parte dei componenti di gioco sono mappati direttamente su "
+"una scena, l'utilizzo di un'istanziazione basata su una scena significa che "
+"serve poco codice aggiuntivo."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
+"Diamo un'occhiata a un altro esempio, un po' più complesso, di un gioco di "
+"tipo open-world con molte risorse ed elementi annidati:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
 msgid ""
@@ -8823,7 +8845,7 @@ msgstr ""
 #: ../../docs/getting_started/editor/unity_to_godot.rst:19
 #: ../../docs/community/contributing/documentation_guidelines.rst:102
 msgid "License"
-msgstr ""
+msgstr "Licenza"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:19
 msgid ""
@@ -9418,7 +9440,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
-msgstr ""
+msgstr "Percorso"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid ""
@@ -17185,7 +17207,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/index.rst:2
 msgid "Export"
-msgstr ""
+msgstr "Esporta"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:4
 msgid "Exporting projects"
@@ -19961,7 +19983,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 msgid "Tools"
-msgstr ""
+msgstr "Strumenti"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
 msgid ""
@@ -33174,7 +33196,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/index.rst:2
 msgid "Audio"
-msgstr ""
+msgstr "Audio"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:4
 #: ../../docs/tutorials/audio/audio_buses.rst:43
@@ -43711,7 +43733,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"
-msgstr ""
+msgstr "Membri"
 
 #: ../../docs/tutorials/shading/shading_language.rst:126
 msgid ""
@@ -54054,7 +54076,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/index.rst:2
 msgid "Debug"
-msgstr ""
+msgstr "Debug"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -54084,7 +54106,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:22
 msgid "Deploy with Remote Debug"
-msgstr ""
+msgstr "Distribuzione con il Debug Remoto"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:24
 msgid ""
@@ -54094,7 +54116,7 @@ msgstr ""
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:27
 msgid "Small Deploy with Network FS"
-msgstr ""
+msgstr "Piccola distribuzione con la rete FS"
 
 #: ../../docs/tutorials/debug/overview_of_debugging_tools.rst:29
 msgid ""
@@ -57347,7 +57369,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr ""
+msgstr "Set"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"

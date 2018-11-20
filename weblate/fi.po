@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# DarkerBit <mail.darkerbit@gmail.com>, 2018.
 # ekeimaja <ekeimaja@gmail.com>, 2018.
 # Joonas Muuttoranta <joonas.muuttoranta@live.fi>, 2018.
 # spiderfly <spiderfly@protonmail.com>, 2018.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-10-25 15:59+0200\n"
-"PO-Revision-Date: 2018-10-04 17:26+0000\n"
-"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
+"PO-Revision-Date: 2018-11-18 17:07+0000\n"
+"Last-Translator: DarkerBit <mail.darkerbit@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -314,7 +315,6 @@ msgstr ""
 "liitteellä \"Juan Linietsky, Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Dokumentaation rakenne"
 
@@ -491,7 +491,6 @@ msgstr ""
 "tiedostoja Godotin koodikannassa."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
@@ -510,8 +509,9 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
+#, fuzzy
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -636,7 +636,7 @@ msgstr ""
 "käyttäen GDNative / NativeScript / PluginScript palveluita. (Katso kysymys "
 "liitännäisistä alla.) Työn alla ovat esimerkiksi epäviralliset `Python "
 "<https://github.com/touilleMan/godot-python>`_ ja `Nim <https://github.com/"
-"pragmagic/godot-nim>`_ tuet Godotille."
+"pragmagic/godot-nim>`_ liitteet Godotille."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -696,7 +696,6 @@ msgstr ""
 "lisäominaisuuksia toimimaan suurelle joukolle ohjelmointikieliä."
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -1007,9 +1006,8 @@ msgstr ""
 "<doc_making_plugins>` ja työkaluskriptejä."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
-msgstr "Katso myös viralliset blogimerkinnät näistä aiheista:"
+msgstr "Katso myös viralliset blogikirjoitelmat liittyen näihin aiheisiin:"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -3313,12 +3311,18 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Signaalit ovat Godotin versio *tarkkalija*-mallista. Ne antavat solmujen "
+"lähettää viestejä muille solmuille, jotka voivat sitten odottaa sitä ja "
+"vastata sille. Esimerkiksi, jatkuvasti tarkistamisen onko painike painettu "
+"sijasta painike voi lähettää signaalin kun se on painettu."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Voit lukea lisää tarkkailijamallistä täällä: http://gameprogrammingpatterns."
+"com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""

@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Alexander <adcrashday@googlemail.com>, 2018.
 # Arthur S. Muszynski <artism90@gmail.com>, 2018.
 # chillhelm <wilhelm@neubert.online>, 2018.
 # DafabHoid <github@dafabhoid.de>, 2018.
@@ -36,14 +37,15 @@
 # Thomas Eigel <yurumi@gmx.de>, 2018.
 # Timo Schwarzer <account@timoschwarzer.com>, 2018.
 # Übersetzer124 <cloud1@mag-keinen-spam.de>, 2018.
+# ZSte <ZStephanie@t-online.de>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-10-25 15:59+0200\n"
-"PO-Revision-Date: 2018-10-24 09:29+0000\n"
-"Last-Translator: DafabHoid <github@dafabhoid.de>\n"
+"PO-Revision-Date: 2018-11-18 17:07+0000\n"
+"Last-Translator: Alexander <adcrashday@googlemail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -115,7 +117,7 @@ msgid ""
 "<https://discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Schicke einen Issue oder Pull Request an das`GitHub Repository <https://"
+"Schicke eine Frage oder einen Pull Request an das`GitHub Repository <https://"
 "github.com/godotengine/godot-docs/issues>`_, hilf uns  `die Dokumentation "
 "<https://hosted.weblate.org/engage/godot-engine/>`_ in deine Sprache zu "
 "übersetzen, oder diskutiere mit uns entweder im ``#documentation`` Kanal auf "
@@ -355,7 +357,6 @@ msgstr ""
 "veröffentlicht."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Aufbau der Dokumentation"
 
@@ -535,13 +536,12 @@ msgstr ""
 "Godot repository."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"Siehe auch `die Lizenzseite auf der Godot Website <https://godotengine.org/"
-"license>`_."
+"Siehe auch `Hinweise zur Lizenz auf der Godot Website <https://godotengine."
+"org/license>`_."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
@@ -557,7 +557,7 @@ msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -669,7 +669,6 @@ msgstr ""
 "issues>`_ zu suchen hilft häufig bei der Problemlösung."
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -677,11 +676,12 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Wie für neue Sprachen, Unterstützung ist möglich über Dritte mit der "
-"GDNative / NativeScript / PluginScript Einrichtungen. (Siehe auch Frage zu "
-"den plugins weiter unten.) Die Arbeit ist derzeit im Gange, zum Beispiel, "
-"beiinoffizielle bindings auf Godot `Python <https://github.com/touilleMan/"
-"godot-python>`_ und `Nim - <https://github.com/pragmagic/godot-nim>`_."
+"Für neue Sprachen ist die Unterstützung durch Dritte möglich, welche die "
+"Möglichkeiten von GDNative / NativeScript / PluginScript nutzen. (Siehe auch "
+"Frage zu den plugins weiter unten.) Die Arbeit ist derzeit im Gange, zum "
+"Beispiel, bei den inoffiziellen bindings für Godot `Python <https://github."
+"com/touilleMan/godot-python>`_ und `Nim - <https://github.com/pragmagic/"
+"godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -1054,9 +1054,9 @@ msgstr ""
 "`EditorPlugins <doc_making_plugins>` und die Tool-Skripte."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
-msgstr "Siehe auch die offiziellen Blogposts zu diesen Themen (auf Englisch):"
+msgstr ""
+"Siehe auch die offiziellen Blogeinträge zu diesen Themen (auf Englisch):"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -1865,13 +1865,12 @@ msgstr ""
 "Eigenschaften erscheinen in der Inspektor-Palette (rechts unten)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
-#, fuzzy
 msgid ""
 "The next step will be to change the \"Text\" Property of the label. Let's "
 "change it to \"Hello World\":"
 msgstr ""
-"Der nächste Schritt ist, die „Text“-Eigenschaft des Labels zu ändern. Ändern "
-"wir es in „Hello, World!“:"
+"Mit dem nächsten Schritt wird die „Text“-Eigenschaft des Labels geändert. "
+"Ändern wir es zu „Hello, World!“:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:136
 msgid ""
@@ -2547,7 +2546,7 @@ msgid ""
 msgstr ""
 "Seit Version 3.0 unterstüzt Godot :ref:`Visual "
 "Scripting<doc_what_is_visual_script>`.  Dies ist eine typische "
-"Implementierung einer \"blocks and connections\" Sprache, die aber an die "
+"Implementierung einer \"blocks and connections\" Sprache, die an die "
 "funktionsweise von Godot angepasst wurde."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
@@ -2557,9 +2556,9 @@ msgid ""
 "others, like game designers or artists."
 msgstr ""
 "Visual Scripting ist ein großartiges Werkzeug für Menschen ohne "
-"Programmierkenntnisse, aber auch für erfahrene Prorammierer, die Teile ihres "
-"Codes für andere, beispielsweise Designer oder Künstler, verständlicher "
-"machen wollen."
+"Programmierkenntnisse, aber auch erfahrene Programmierer können damit Teile "
+"des Programmcodes, anderen leichter zugänglich machen, zum Beispiel für "
+"Spiele-Designer und Künstler."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
@@ -2582,7 +2581,7 @@ msgid ""
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
 "Da Microsofts C# eine beliebte Sprache bei Spielentwicklern ist, "
-"unterstützen wir sie nun offiziell. C# ist ein ausgewachsene "
+"unterstützen wir sie nun offiziell. C# ist eine ausgereifte "
 "Programmiersprache in der bereits große Mengen Code geschrieben wurden. Die "
 "Unterstützung wurde dank einer großzügigen Spende von Microsoft eingefügt."
 
@@ -2591,8 +2590,8 @@ msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
 msgstr ""
-"C# hat eine exzellente Gewichtung zwischen Leistung und "
-"Nutzerfreundlichkeit. Man sollte sich allerdings seines 'Garbage Collectors' "
+"C# besitzt eine exzellente Ausgewogenheit zwischen Leistung und "
+"Nutzerfreundlichkeit, man muss sich allerdings seines 'Garbage Collectors' "
 "bewusst sein."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
@@ -2619,8 +2618,8 @@ msgid ""
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
 "Zu guter Letzt eine unserer cleversten Neuerungen in Version 3.0: GDNative "
-"ermöglicht es, Skripte in C++ zu schreiben, ohne Godot zu rekompilieren oder "
-"neuzustarten."
+"ermöglicht es, Skripte in C++ zu schreiben, ohne Godot neu kompilieren oder "
+"starten zu müssen."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
 msgid ""
@@ -2642,8 +2641,8 @@ msgstr ""
 "Diese Sprache ist die beste Wahl, wenn die Leistung im Vordergrund steht, "
 "und muss nicht für die gesamte Entwicklung verwendet werden, da andere Teile "
 "in GDScript oder Visual Script realisiert werden können. Allerdings ist die "
-"API klar und einfach zu benutzen, denn sie ähnelt Godot's tatsächlicher C++ "
-"API stark."
+"API klar und einfach zu benutzen, denn sie ähnelt stark Godot's "
+"tatsächlicher C++ API."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
@@ -2719,7 +2718,7 @@ msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:113
 msgid "Button"
-msgstr "Button"
+msgstr "Knopf"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
@@ -3406,12 +3405,19 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Signale sind Godot's-Version des Beobachtungsmusters. Dies erlaubt es der "
+"Node eine Nachricht zu senden, auf diese Nachricht können andere Nodes hören "
+"und diese beantworten. Als Beispiel, anstatt dass man die ganze Zeit prüft "
+"ob eine Taste gedrückt wurde, könnte diese auch einfach eine Nachricht "
+"schicken, wenn Sie gedrückt wurde."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Du kannst mehr zum Beobachter-Entwurfsmuster hier lesen: http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -3420,17 +3426,23 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that any interested objects can subscribe to and respond."
 msgstr ""
+"Signale sind eine Möglichkeit deine Spielobjekte von anderen Objekten *zu "
+"lösen*, diese führt zu aufgeräumten und besser organisierten Code. Anstatt "
+"dass du Spielobjekte dazu zwingst ständig jedes andere Objekt zu kennen, "
+"erstellst du Signale an die sich jedes interessierte Objekt anmelden und "
+"darauf antworten kann."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Nachfolgend sehen Sie einige Beispiele, wie Sie Signale in Ihren eigenen "
+"Projekten verwenden können."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "Einige Beispiele:"
+msgstr "Timer Beispiel"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -3440,6 +3452,11 @@ msgid ""
 "other image you like. Attach a script to the root node, but don't add any "
 "code to it yet."
 msgstr ""
+"Damit wir einmal sehen wie Signale funktionieren, benutzen wir eine :ref:"
+"`Timer <class_Timer>` Knoten. Erstellt eine neue Szene mit einem Knoten und "
+"zwei Kindern: einem \"Timer\" und einer :ref:`Sprite <class_Sprite>`. Du "
+"kannst das Godot-Icon für die Sprite-Texture benutzen oder ein anderes Bild, "
+"dass dir gefällt."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
 #, fuzzy
@@ -3494,6 +3511,8 @@ msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"Klicke auf \"Verbinden\" und du siehst, dass die Funktion im Skript erstellt "
+"wurde:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:84
 msgid ""
@@ -14691,7 +14710,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr "Selbst"
+msgstr "Eigenanteil"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -58465,7 +58484,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr "Setzen"
+msgstr "Setze"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"

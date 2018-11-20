@@ -4,6 +4,7 @@
 #
 #
 # Cliffs Dover <bottle@dancingbottle.com>, 2018.
+# ken l <macauhome@gmail.com>, 2018.
 # Kisaragi Hiu <mail@kisaragi-hiu.com>, 2018.
 # Matt <chchwy@gmail.com>, 2018.
 # Qing <icinriiq@gmail.com>, 2018.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-10-25 15:59+0200\n"
-"PO-Revision-Date: 2018-07-15 16:35+0000\n"
-"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"PO-Revision-Date: 2018-11-18 17:07+0000\n"
+"Last-Translator: ken l <macauhome@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.3-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -88,38 +89,38 @@ msgstr ""
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "網站的主要文檔分為以下幾個部分："
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "入門"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "教程"
 
 #: ../../docs/index.rst:90
 msgid "Development"
-msgstr ""
+msgstr "開發"
 
 #: ../../docs/index.rst:99
 msgid "Creating Content"
-msgstr ""
+msgstr "創建內容"
 
 #: ../../docs/index.rst:107 ../../docs/community/index.rst:2
 msgid "Community"
-msgstr ""
+msgstr "社區"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -194,14 +195,13 @@ msgstr ""
 "具，讓你能夠開發任何種類的遊戲、發佈到任何平臺，並且毫無使用上的限制。"
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page aims at giving a broad presentation of the engine and of the "
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
-"這個頁面將廣泛的介紹這個引擎與這份文件的內容，讓初學者能知道從哪開始、需要關"
-"於某個特定功能的資訊時知道要去哪裡找。"
+"本頁旨在提供本引擎、以及本文件內容之泛覽，讓初學者知道從何開始，也為查找某特"
+"定功能的資訊時提供指引。"
 
 #: ../../docs/about/introduction.rst:21
 #, fuzzy
@@ -420,7 +420,7 @@ msgstr "簡單來說:"
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
-msgstr ""
+msgstr "您可以出於任何目的，個人，非營利，商業或其他目的下載和使用Godot;"
 
 #: ../../docs/about/faq.rst:14
 #, fuzzy
@@ -485,8 +485,9 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
+#, fuzzy
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
@@ -526,6 +527,8 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"一些用戶還報告在使用Linux的基於ARM的系統上成功構建和使用Godot，如Raspberry "
+"Pi。"
 
 #: ../../docs/about/faq.rst:54
 #, fuzzy
@@ -570,8 +573,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"如果您剛剛開始使用Godot或遊戲開發，GDScript是學習和使用的推薦語言，因為它是"
+"Godot的原生語言。 雖然從長遠來看，腳本語言的性能往往低於低級語言，對於原型設"
+"計，開發最小可行產品（MVP）以及專注於上市時間（TTM），GDScript將提供快速，友"
+"好和 有能力開發遊戲的方式。"
 
 #: ../../docs/about/faq.rst:75
+#, fuzzy
 msgid ""
 "Note that C# support is still relatively new, and as such, you may encounter "
 "some issues along the way. Our friendly and hard-working development "
@@ -581,6 +589,10 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"請注意，C＃支持仍然相對較新，因此，您可能會遇到一些問題。 我們友好而勤奮的開"
+"發社區隨時準備解決新的問題，但由於這是一個開源項目，我們建議您先自己做一些盡"
+"責調查。 通過討論區在“open issues <https://github.com/godotengine/godot/"
+"issues>`進行搜索是開始排除問題的好辦法。"
 
 #: ../../docs/about/faq.rst:82
 #, fuzzy
@@ -597,7 +609,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "GDScript是什麼？為什麼我要用它？"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -609,6 +621,10 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the "
 "`GDScript scripting guide <gdscript_basics>`_."
 msgstr ""
+"GDScript是Godot的集成腳本語言。 它是從頭開始構建的，以最少的代碼最大化Godot的"
+"潛力，為新手和專家開發人員提供盡可能快的利用Godot的優勢。 如果你曾經用過像"
+"Python這樣的語言寫過任何東西，那麼你會有歸家的感覺。 例如，GDScript為您提供的"
+"功能的完整概述，請查看`GDScript腳本指南<gdscript_basics>`_。"
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -617,6 +633,8 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"使用GDScript有幾個原因 - 特別是在您進行原型設計時，在項目的alpha / beta階段，"
+"或者沒有創建下一個AAA標題 - 但最突出的原因是整體**複雜性降低。**"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -630,9 +648,13 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"為Godot創建一個緊密集成的自定義腳本語言的初衷是雙重的：首先，它減少了使用"
+"Godot啟動和運行所需的時間，使開發人員能夠快速將自己暴露給引擎而關注在生產力"
+"上; 第二，它減少了維護的總體負擔，減少了問題的維度，並允許引擎的開發人員專注"
+"壓縮錯誤並改進與引擎核心相關的功能 - 而不是花費大量時間來嘗試獲得一小部分適用"
+"於大量語言的增量功能。"
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -644,11 +666,12 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"簡短的答案是，即使為這個新語言付出額外的複雜性，像你需要學 Godot 和 "
-"GDScript，而我們要維護這個語言，但它最終帶來更深的整合度和無縫的體驗，我們認"
-"為值得。也好過於採用常見的語言來吸引額外使用者但是確有糟糕的體驗。我們能夠理"
-"解你想在 Godot 裡面採用其他語言 (看看上面的清單)，但是我們強烈建議你試試看 "
-"GDScript 並看看他的優點。"
+"由於Godot是一個開源項目，因此從一開始就必須優先考慮更集成和無縫的體驗，而不是"
+"通過支持更熟悉的編程語言來吸引更多用戶 - 特別是在支持那些更熟悉的語言會導致更"
+"糟糕的體驗時。 我們理解您是否願意在Godot中使用其他語言（請參閱上面支持的選項"
+"列表）。 話雖這麼說，但如果你還沒試過GDScript，用**三天**試試。 就像Godot一"
+"樣，一旦你看到它有多麼強大並且你的開發會變得越來越快，我們認為你會越來越熟知"
+"GDScript。"
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -656,27 +679,33 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"更多關於熟悉GDScript或動態類型語言，請參閱：ref："
+"`doc_gdscript_more_efficiently`教程。"
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "創造GDScript背後的動機是什麼？"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "為Godot創建自定義腳本語言的主要原因是："
 
 #: ../../docs/about/faq.rst:126
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
+"大多數腳本語言的VMS的線程支持很差，Godot使用線程（如 Lua、Python、SunrReor、"
+"JS、AS等）。"
 
 #: ../../docs/about/faq.rst:128
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"在大多數腳本虛擬機中，類擴展支持不佳，並且適應Godot工作方式的都非常低效（如 "
+"Lua，Python，JS）。"
 
 #: ../../docs/about/faq.rst:130
 msgid ""
@@ -685,44 +714,55 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
+"許多現存語言都因綁定到C ++而有可怕的接口，導致了大量代碼，錯誤，瓶頸和一般都"
+"效率低下（Lua，Python，Squirrel，JS等）我們希望專注於一個強大的引擎，而不是大"
+"量的整合。"
 
 #: ../../docs/about/faq.rst:133
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"沒有原生矢量類型（vector3，matrix4等），導致使用自定義類型（Lua，Python，"
+"Squirrel，JS，AS等）時性能大大降低。"
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
-msgstr ""
+msgstr "垃圾收集器導致停頓或不必要的大內存使用（Lua，Python，JS，AS等）。"
 
 #: ../../docs/about/faq.rst:138
 msgid ""
 "Difficulty to integrate with the code editor for providing code completion, "
 "live editing, etc. (all of them). This is well supported by GDScript."
 msgstr ""
+"難以與代碼編輯器集成以提供代碼自動完成，實時編輯等，所有這些。 都被GDScript很"
+"好地支持了。"
 
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
-msgstr ""
+msgstr "GDScript旨在減少上述問題。"
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Godot支持什麼類型的3D模型格式?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Godot通過`OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
+"OpenCOLLADA-Tools>`_ exporter（Maya，3DSMax）支持Collada。"
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"如果您使用的是Blender，請查看我們自己的`Better Collada Exporter <https://"
+"godotengine.org/download>`_。"
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
@@ -750,6 +790,9 @@ msgid ""
 "development community to support any third-party, closed-source/proprietary "
 "SDKs, as integrating with these would go against Godot's ethos."
 msgstr ""
+"Godot的目標是創建一個免費的，開源的MIT許可引擎，它是模塊化和可擴展的。 核心引"
+"擎開發社區沒有計劃支持任何第三方，閉源/專有SDK，因為與這些SDK集成將違背Godot"
+"的精神。"
 
 #: ../../docs/about/faq.rst:166
 msgid ""
@@ -757,12 +800,14 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
+"也就是說，因為Godot是開源和模塊化的，所以沒有什麼能阻止你或其他任何有興趣人將"
+"這些庫添加為模塊並將游戲與它們一起分送 - 無論是開源還是閉源。"
 
 #: ../../docs/about/faq.rst:170
 msgid ""
 "To see how support for your SDK of choice could still be provided, look at "
 "the Plugins question above."
-msgstr ""
+msgstr "要查看所選SDK的支持，請查看上面有關插件的問題。"
 
 #: ../../docs/about/faq.rst:173
 msgid ""
@@ -771,12 +816,15 @@ msgid ""
 "work yourself. Godot is not owned by one person; it belongs to the "
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
+"如果您知道Godot不支持但是有一些免費和開源的第三方SDK，請考慮自己開始集成工"
+"作。 Godot不屬於一個人; 它屬於社區，它與像你一樣雄心勃勃的社區貢獻者一起成"
+"長。"
 
 #: ../../docs/about/faq.rst:179
 msgid ""
 "How should assets be created to handle multiple resolutions and aspect "
 "ratios?"
-msgstr ""
+msgstr "如何創建資源來處理多種分辨率和寬高比？"
 
 #: ../../docs/about/faq.rst:181
 msgid ""
@@ -51855,13 +51903,13 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:65
 msgid "We can put this purchase logic on a product's buy button."
-msgstr ""
+msgstr "我們可以把這個購買邏輯放在產品的購買按鈕上。"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:80
 msgid ""
 "We can also implement other signals for the purchase flow and improve the "
 "user experience as you needed."
-msgstr ""
+msgstr "我們還可以為購買流程實現其他訊號，並根據需要改進用戶體驗。"
 
 #: ../../docs/tutorials/platform/android_in_app_purchases.rst:82
 msgid "``purchase_fail`` - When the purchase is failed due to any reason"
@@ -57382,7 +57430,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:274
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
-msgstr ""
+msgstr "資源可以用ResourceLoader API加載，如下所示："
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid ""
@@ -57390,6 +57438,8 @@ msgid ""
 "the resource loader will return that reference. This means that there can be "
 "only one resource loaded from a file referenced on disk at the same time."
 msgstr ""
+"如果先前已加載對該資源的引用並且該內容在內存中，則資源加載器將返回該引用。 這"
+"意味著同一個資源引用只會從磁碟加載相同檔案一次。"
 
 #: ../../docs/development/cpp/object_class.rst:285
 msgid "resourceinteractiveloader (TODO)"
