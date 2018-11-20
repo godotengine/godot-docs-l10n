@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,9 @@ msgid ""
 "Godot just so they can open your project. Instead, you can *export* your "
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
+"现在你已经有了一个可以运行的游戏，你可能想要和别人分享你的成果。然而，让你的"
+"朋友下载Godot而只是为了打开你的项目是不实际的。相反，您可以 *export* 你的项"
+"目，将其转换为任何人都可以运行的\"package\"。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -40,17 +43,20 @@ msgid ""
 "a variety of platforms. First, however, we need to make some changes to the "
 "way the game works."
 msgstr ""
+"导出游戏的方式取决于你的目标平台。本教程中，您将学习如何将\"Dodge the Creeps"
+"\"游戏导出到各种平台。然而，首先我们需要对游戏的工作方式做一些改变。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:19
 msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"如果你还没有自己完成\"Dodge the Creeps\"游戏，请阅读 :ref:"
+"`doc_your_first_game` 后再继续本教程。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
-#, fuzzy
 msgid "Preparing the project"
-msgstr "导入项目"
+msgstr "准备项目"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -60,6 +66,9 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"在\"Dodge the Creeps\"中我们使用键盘控制玩家角色的移动。如果你的游戏是在PC平"
+"台上玩的，这没问题，但在手机或平板上，你需要支持触屏输入。因为点击事件可以被"
+"视为触摸事件，我们将把游戏转换为click-and-move输入风格。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
 msgid ""
@@ -69,12 +78,18 @@ msgid ""
 "computer without a touchscreen. Also, make sure to select \"portrait\" under "
 "*Orientation*."
 msgstr ""
+"第一步是打开”Project Settings\"并找到 “Display\" -> \"Window\" -> *Handheld* "
+"部分。启用 *Emulate Touchscreen* 选项。这使得你可以将鼠标点击事件视为触摸事"
+"件，这样你就可以在没有触屏的电脑上测试游戏。另外，确保将 *Orientation* 下的 "
+"”portrait\" 选中。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
 "In the *Stretch* section, set *Mode* to \"2d\" and *Aspect* to \"keep\". "
 "This ensures that the game scales consistently on different sized screens."
 msgstr ""
+"在 *Stretch* 部分，设置 *Mode* 值为\"2d\"并设置 *Aspect* 值为 ”keep\" 。这确"
+"保游戏在不同大小的屏幕上保持一致的缩放。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 msgid ""
@@ -82,12 +97,14 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"接下来，我们需要修改 ``Player.gd`` 脚本来改变输入方式。我们将移除键盘输入并使"
+"玩家移动到触摸(或点击)事件设置的\"目标\"。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
-msgstr ""
+msgstr "这是玩家的完整脚本，注释指出了我们做了哪些改变："
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
 msgid "Export templates"
@@ -100,35 +117,41 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"为了导出，你需要从http://godotengine.org/download中下载 *export templates* 。"
+"这些模板是编辑器没有为每个平台预编译的引擎的优化版本。您还可以在Godot中通过点"
+"击 *Editor -> Manage Export Templates* 进行下载："
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"在出现的窗口中，你可以点击 \"Download\" 以获得与您的Godot版本匹配的模板版本。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"如果您升级了Godot，您必须下载匹配新版本的模板否则导出的项目可能无法正常工作。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
-#, fuzzy
 msgid "Export presets"
-msgstr "导出项目"
+msgstr "导出设置"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:142
 msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
-msgstr ""
+msgstr "接下来，您可以通过点击 *Project -> Export* 来配置导出设置："
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:146
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"通过点击 \"Add...\" 并选择一个平台来创建一个新的导出预设(preset)。您可以使用"
+"不同的设置创建多个预设。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
 msgid ""
@@ -136,29 +159,34 @@ msgid ""
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"窗口的底部有两个按钮。 \"Export PCK/ZIP\" 只创建项目数据的打包版本。这并不包"
+"括可执行文件，因此项目不能自行运行。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"第二个按钮， \"Export Project\" ，创建游戏的完整可执行版本，如Android平台的 "
+"`.apk`或者 Windows 平台的 `.exe` 。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
 msgid ""
 "In the \"Resources\" and \"Features\" tabs you can customize how the game is "
 "exported for each platform. We can leave those settings alone for now."
 msgstr ""
+"在 \"Resources\" 和 ”Features\" 选项卡中，您可以自定义如何为每个平台导出游"
+"戏。我们可以先不考虑这些设置。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:160
-#, fuzzy
 msgid "Exporting by platform"
-msgstr "导出"
+msgstr "按平台导出"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:162
 msgid ""
 "In this section, we'll walk through the process for each platform, including "
 "any additional software or requirements you'll need."
-msgstr ""
+msgstr "在本节中，我们将介绍每个平台的流程，包括您需要的任何其他软件或需求。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
 msgid "PC (Linux/macOS/Windows)"
@@ -171,10 +199,13 @@ msgid ""
 "you want to make. Then click \"Export Project\" and choose a name and "
 "destination folder. Choose a location *outside* of your project folder."
 msgstr ""
+"导出PC平台在三种支持的操作系统中的工作方式相同。 打开导出窗口，然后单击 "
+"\"Add..\" 以创建要制作的预设。 然后单击 \"Export Project\" 并选择名称和目标文"
+"件夹。 选择项目文件夹 *外* 的位置。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:173
 msgid "Click \"Save\" and the engine will build the export files."
-msgstr ""
+msgstr "单击“Save”，引擎将构建导出文件。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
 msgid ""
@@ -183,6 +214,9 @@ msgid ""
 "either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
+"当为macOS导出时，如果你在macOS计算机上导出，你会得到'.dmg'文件，当使用Linux或"
+"Windows时产生一个' .zip '。无论哪种情况，压缩文件都包含一个在macOS下可以双击"
+"并运行的'.app'。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:180
 msgid ""
@@ -190,6 +224,8 @@ msgid ""
 "than the default one, you need to change it manually. See: :ref:"
 "`doc_changing_application_icon_for_windows`."
 msgstr ""
+"在Windows上，如果您希望导出的可执行文件具有与默认图标不同的图标，则需要手动更"
+"改它。看::ref:`doc_changing_application_icon_for_windows`。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
 msgid "Android"
@@ -202,12 +238,15 @@ msgid ""
 "art than science, and you may need to do some experimenting and searching "
 "for help in order to get everything working."
 msgstr ""
+"移动设备具有各种各样的功能。在大多数情况下，Godot的默认设置是可以工作的，但是"
+"移动开发有时更多的是艺术而不是科学，你可能需要做一些试验和寻找帮助，以使一切"
+"工作正常。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:193
 msgid ""
 "Before you can export your project for Android, you must download the "
 "following software:"
-msgstr ""
+msgstr "在导出Android项目之前，您必须下载以下软件:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:196
 msgid "Android SDK: https://developer.android.com/studio/"
@@ -224,12 +263,14 @@ msgid ""
 "Manager* and install \"Android SDK Platform Tools\". This installs the `adb` "
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
+"第一次运行Android Studio时，点击*Configure -> SDK Manager*安装“Android SDK平"
+"台工具”。这将安装Godot用来与设备通信的“adb”命令行工具。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
 msgid ""
 "Next, create a debug keystore with by running the following command on your "
 "system's command line:"
-msgstr ""
+msgstr "接下来，通过在系统的命令行上运行以下命令，创建一个调试密钥库:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:210
 msgid ""
@@ -238,24 +279,28 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
+"在Godot中单击*Editor ->Editor Settings*并选择*Export/Android*部分。这里，您需"
+"要设置系统上Android SDK应用程序的路径和刚才创建的密钥存储库的位置。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:216
 msgid ""
 "Now you're ready to export. Click on *Project -> Export* and add a preset "
 "for Android (see above)."
-msgstr ""
+msgstr "现在可以导出了。点击*Project -> Export*并添加一个Android预设(见上文)。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:219
 msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
+"单击“Export Project”按钮，Godot将构建一个APK，您可以在设备上下载。要在命令行"
+"上执行此操作，请使用以下命令:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:226
 msgid ""
 "Your device may need to be in *developer mode*. Consult your device's "
 "documentation for details."
-msgstr ""
+msgstr "您的设备可能需要处于*developer模式*。有关详细信息，请参阅设备文档。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:229
 msgid ""
@@ -263,12 +308,14 @@ msgid ""
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
+"如果你的系统支持它，连接一个兼容的Android设备将导致“一键部署”按钮出现在Godot"
+"的playtest按钮区域:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
 msgid ""
 "Clicking this button builds the APK and copies it onto your device in one "
 "step."
-msgstr ""
+msgstr "单击此按钮将构建APK并将其复制到您的设备上。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
 msgid "iOS"
@@ -278,7 +325,7 @@ msgstr "iOS"
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
-msgstr ""
+msgstr "要为iOS构建游戏，你必须安装一台装有Xcode的macOS电脑。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -287,20 +334,22 @@ msgid ""
 "can find by logging in to your Apple developer account and looking in the "
 "\"Membership\" section."
 msgstr ""
+"在导出之前，您必须完成一些设置才能成功导出项目。首先是“App Store团队Id”，你可"
+"以登录到你的苹果开发者账户并在“会员”一栏中找到它。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:246
 msgid "You must also provide icons and splash screen images as shown below:"
-msgstr ""
+msgstr "你还必须提供图标和启动屏幕图像如下所示:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:250
 msgid "Click \"Export Project\" and select a destination folder."
-msgstr ""
+msgstr "单击“导出项目”并选择目标文件夹。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:252
 msgid ""
 "Once you have successfully exported the project, you'll find the following "
 "folders and files have been created in your selected location:"
-msgstr ""
+msgstr "一旦成功导出项目，您将发现以下文件夹和文件已创建在您选择的位置:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:257
 msgid ""
@@ -308,6 +357,8 @@ msgid ""
 "build procedure is beyond the scope of this tutorial. See https://help.apple."
 "com/xcode/mac/current/#/devc8c2a6be1 for more information."
 msgstr ""
+"现在可以在Xcode中打开项目并为iOS构建项目。Xcode构建过程超出了本教程的范围。有"
+"关更多信息，请参阅https://help.apple.com/xcode/mac/current/#/devc8c2a6be1。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:263
 msgid "HTML5 (web)"
@@ -317,13 +368,13 @@ msgstr ""
 msgid ""
 "Click \"Export Project\" on the HTML5 preset. We don't need to change any of "
 "the default settings."
-msgstr ""
+msgstr "点击HTML5预置中的“导出项目”。我们不需要更改任何默认设置。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:268
 msgid ""
 "When the export is complete, you'll have a folder containing the following "
 "files:"
-msgstr ""
+msgstr "导出完成后，您将拥有一个包含以下文件的文件夹:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
 msgid ""
@@ -332,6 +383,9 @@ msgid ""
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""
+"查看浏览器中的“.html”文件可以让你玩游戏。但是，不能直接打开文件，它将由Web服"
+"务器提供服务。如果您的计算机上没有一个设置，您可以使用谷歌为您的特定OS找到建"
+"议。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:278
 msgid ""
@@ -339,6 +393,8 @@ msgid ""
 "have to wait a few moments while the game loads before you see the start "
 "screen."
 msgstr ""
+"将浏览器指向放置html文件的URL。在游戏加载时，您可能需要等待几分钟才能看到开始"
+"屏幕。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:283
 msgid ""
@@ -346,6 +402,8 @@ msgid ""
 "can disable it by setting \"Export With Debug\" off when you export the "
 "project."
 msgstr ""
+"游戏下方的控制台窗口会告诉你是否出了什么问题。您可以在导出项目时关闭“Export "
+"With Debug”来禁用它。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:286
 msgid ""
@@ -355,3 +413,7 @@ msgid ""
 "bugs you find at the `Godot Github repository <https://github.com/"
 "godotengine/godot/issues>`_."
 msgstr ""
+"对WASM的浏览器支持并不广泛。Firefox和Chrome都支持这个功能，但你可能仍然会发现"
+"一些无法使用的功能。确保您已经将浏览器更新到最新版本，并报告您在' Godot "
+"Github储存库<https://github.com/godotengine/godot/issues> ' _上发现的任何"
+"bug。"

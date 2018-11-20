@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,6 @@ msgid ""
 msgstr "例如，运动常常乘以时间增量以使运动速度既恒定又独立于帧速率。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
-#, fuzzy
 msgid ""
 "Physics processing with ``_physics_process()`` is similar, but it should be "
 "used for processes that must happen before each physics step, such as "
@@ -88,10 +87,10 @@ msgid ""
 "change the interval from the Project Settings, under Physics -> Common -> "
 "Physics Fps."
 msgstr ""
-"使用``_physics_process()``进行物理处理是类似的，但它发生的进程必须是在应用于"
-"每个物理步骤之前，比如控制一个角色。它始终在物理步骤之前运行，并以固定的时间"
-"间隔调用：默认情况下每秒60次。您可以从项目设置中更改物理 - >常用 - >物理Fps下"
-"的时间间隔。"
+"使用``_physics_process()``进行物理处理是类似的，但它必须用于需要在每个物理迭"
+"代之前执行的操作，比如控制一个角色。它始终在物理迭代之前运行，并在固定的时间"
+"间隔内调用：默认情况下每秒60次。您可以从项目设置中更改这个间隔：设置- > 物理 "
+"- >常用 - >物理Fps。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:52
 msgid ""
@@ -265,11 +264,10 @@ msgid ""
 msgstr "用代码方法实例化一个场景分为两步。 第一个步骤是从你的硬盘中加载场景："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
-#, fuzzy
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
-msgstr "预加载它可以更方便, 因为它发生在语法解析的时候:"
+msgstr "预加载它会更方便，因为它发生在解析阶段(仅限GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
 msgid ""
@@ -285,16 +283,14 @@ msgstr ""
 "回能够被添加到该活动 场景中的节点树："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
-#, fuzzy
 msgid ""
 "The advantage of this two-step process is that a packed scene may be kept "
 "loaded and ready to use so that you can create as many instances as desired. "
 "This is especially useful to quickly instance several enemies, bullets, and "
 "other entities in the active scene."
 msgstr ""
-"两步处理的好处是打包好的场景可以保持被加载并且可以直接使用，因此你可以按照你"
-"的想法不断创造实例。这对在一个激活的场景里快速的添加例如一些敌人、子弹或其它"
-"实体时是很实用的。"
+"这个步骤的好处在于，打包后的场景会一直被加载着，所以您可以随时用它创建实例。"
+"这在需要快速创建一些敌人，子弹，或其他实例时尤其有用。"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:387
 msgid "Register scripts as classes"

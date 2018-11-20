@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 msgid "Exporting"
-msgstr "내보내기 (Exporting)"
+msgstr "내보내기(Exporting)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:7
 msgid "Overview"
@@ -33,9 +33,9 @@ msgid ""
 "project, converting it into a \"package\" that can be run by anyone."
 msgstr ""
 "이제 당신은 작업한 게임을 갖고 있으니, 당신의 성공을 남과 나누고 싶을 겁니"
-"다. 하지만, 그렇다고 친구에게 고도를 다운로드하고 프로젝트를 열라고 요청하는 "
-"것은 실용적이지 못합니다. 대신, 당신은 당신의 프로젝트를 \"패키지\"로 전환해"
-"서 누구나 열 수 있도록 *내보내기* 가 가능합니다."
+"다. 하지만, 그렇다고 친구에게 Godot를 다운로드하고 프로젝트를 열라고 요청하"
+"는 것은 실용적이지 못합니다. 대신, 당신은 당신의 프로젝트를 \"패키지\"로 전환"
+"해서 누구나 열 수 있도록 *내보내기* 가 가능합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:14
 msgid ""
@@ -123,26 +123,26 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
-"프로젝트를 내보내려면, *내보내기 템플릿 (export templates)* 을 http://"
+"프로젝트를 내보내려면, *내보내기 템플릿(export templates)* 을 http://"
 "godotengine.org/download 에서 다운로드 해야 합니다. 이 템플릿은 엔진에 최적화"
-"된 버전으로 각 플렛폼에 따로 컴파일된 에디터가 필요 없습니다. 당신은 또한 고"
-"도에서 *에디터 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
+"된 버전으로 각 플렛폼에 따로 컴파일된 에디터가 필요 없습니다. 당신은 또한 "
+"Godot에서 *에디터 -> 내보내기 템플릿 관리* 를 통해 다운로드 할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
-"나타나는 창에서, \"다운로드\" 를 눌러서 당신의 고도 버전과 맞는 템플릿을 다운"
-"로드 할 수 있습니다."
+"나타나는 창에서, \"다운로드\" 를 눌러서 당신의 Godot 버전과 맞는 템플릿을 다"
+"운로드 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
-"고도를 업그레이드 하셨다면, 새로운 버전에 맞는 템플릿을 다운로드 해야 하고 그"
-"렇지 않으면 프로젝트가 제대로 내보내기가 작동하지 않습니다."
+"Godot를 업그레이드 하셨다면, 새로운 버전에 맞는 템플릿을 다운로드 해야 하고 "
+"그렇지 않으면 프로젝트가 제대로 내보내기가 작동하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
 msgid "Export presets"
@@ -202,7 +202,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
 msgid "PC (Linux/macOS/Windows)"
-msgstr "PC (리눅스/맥OS/윈도우)"
+msgstr "PC (리눅스/macOS/윈도우)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:168
 msgid ""
@@ -221,16 +221,15 @@ msgid "Click \"Save\" and the engine will build the export files."
 msgstr "\"저장\"을 누르면 엔진이 내보내기 파일을 만들겁니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
 "either case, the compressed file contains a macOS `.app` that you can double-"
 "click and run."
 msgstr ""
-"맥OS로 내보낼 때는, 맥OS 컴퓨터에서 작업한다면, 그것은 `.dmg` 파일로 만들 것"
+"macOS 컴퓨터에서 작업한다면, macOS로 내보낼 때, 파일을 `.dmg` 파일로 만들 것"
 "이고, 반면에 리눅스나 윈도우는 `.zip` 으로 생성합니다. 어떤 경우든지, 압축된 "
-"파일은 맥OS 의 `.app` 을 갖고 있으므로 더블클릭해서 실행하면 됩니다."
+"파일은 macOS의 `.app` 을 갖고 있으므로 더블 클릭해서 실행할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:180
 msgid ""
@@ -253,7 +252,7 @@ msgid ""
 "art than science, and you may need to do some experimenting and searching "
 "for help in order to get everything working."
 msgstr ""
-"모바일 기기에는 다양한 기능이 있습니다. 대부분의 경우는, 고도의 기본 설정이 "
+"모바일 기기에는 다양한 기능이 있습니다. 대부분의 경우는, Godot의 기본 설정이 "
 "먹히지만, 모바일 개발은 때로는 과학보단 더 예술에 가깝습니다, 그리고 모든 것"
 "이 작동시키기 위해 도움을 청하고 몇 가지 실험을 하게 될지도 모릅니다."
 
@@ -280,7 +279,7 @@ msgid ""
 "command-line tool that Godot uses to communicate with your device."
 msgstr ""
 "안드로이드 스튜디오를 처음 실행하신다면, *Configure -> SDK Manager* 를 클릭하"
-"고 \"Android SDK Platform Tools\" 을 실행하세요. 이것은 고도가 장치와 통신하"
+"고 \"Android SDK Platform Tools\" 을 실행하세요. 이것은 Godot가 장치와 통신하"
 "도록 만드는 `adb` 명령 행 도구를 실행시킵니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
@@ -298,7 +297,7 @@ msgid ""
 "applications on your system and the location of the keystore you just "
 "created."
 msgstr ""
-"고도에서 *에디터 -> 에디터 설정* 으로 가서 *Export/Android*섹션을 선택합니"
+"Godot에서 *에디터 -> 에디터 설정* 으로 가서 *Export/Android*섹션을 선택합니"
 "다. 여기에서, 당신은 안드로이드 SDK 응용 프로그램의 위치와 당신이 방금 만든 "
 "키 저장소의 위치를 설정해줘야 합니다."
 
@@ -315,7 +314,7 @@ msgid ""
 "Click the \"Export Project\" button and Godot will build an APK you can "
 "download on your device. To do this on the command line, use the following:"
 msgstr ""
-"\"프로젝트 내보내기\" 버튼을 클릭하면 고도가 APK를 만들고 휴대용 기기에 다운"
+"\"프로젝트 내보내기\" 버튼을 클릭하면 Godot가 APK를 만들고 휴대용 기기에 다운"
 "로드 할 수 있게 됩니다. 명령 행에서 하려면, 이것을 사용하세요:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:226
@@ -332,7 +331,7 @@ msgid ""
 "cause a \"One-click Deploy\" button to appear in Godot's playtest button "
 "area:"
 msgstr ""
-"시스템이 지원한다면, 고도의 실행 버튼 영역에 \"원 클릭 배포\" 버튼이 표시되"
+"시스템이 지원한다면, Godot의 실행 버튼 영역에 \"원 클릭 배포\" 버튼이 표시되"
 "어 호환 가능한 안드로이드 기기와 연결합니다:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:234
@@ -346,13 +345,12 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
 msgstr ""
-"iOS에 게임이 돌아가게 하고 싶다면, 당신은 맥OS와 Xcode가 실행되는 컴퓨터를 갖"
-"고 있어야 합니다."
+"iOS에 게임이 돌아가게 하고 싶다면, 당신은 macOS와 Xcode가 실행되는 컴퓨터를 "
+"갖고 있어야 합니다."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""

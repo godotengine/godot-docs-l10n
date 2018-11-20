@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,9 @@ msgid ""
 "will learn how the Godot editor works, how to structure a project, and how "
 "to build a 2D game."
 msgstr ""
-"이 튜토리얼은 첫 고도 프로젝트를 만드는 과정을 안내합니다. 고도 에디터가 어떻"
-"게 작동하는지, 프로젝트를 구성하는 방법, 2D 게임을 만드는 방법을 배우게 됩니"
-"다."
+"이 튜토리얼은 첫 Godot 프로젝트를 만드는 과정을 안내합니다. Godot 에디터가 어"
+"떻게 작동하는지, 프로젝트를 구성하는 방법, 2D 게임을 만드는 방법을 배우게 됩"
+"니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:13
 msgid ""
@@ -41,7 +41,7 @@ msgid ""
 "have some programming experience already. If you're new to programming "
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
-"이 프로젝트는 고도 엔진에 대한 소개이고, 당신이 이미 약간의 프로그래밍 경험"
+"이 프로젝트는 Godot 엔진에 대한 소개이고, 당신이 이미 약간의 프로그래밍 경험"
 "이 있다고 가정합니다. 만약 당신이 초보 프로그래머라면, :ref:`doc_scripting` "
 "부터 시작해야합니다."
 
@@ -71,7 +71,7 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
-"고도를 시작하고 새 프로젝트를 만듭니다. 그런 다음, :download:`dodge_assets."
+"Godot를 시작하고 새 프로젝트를 만듭니다. 그런 다음, :download:`dodge_assets."
 "zip <files/dodge_assets.zip>` 당신이 게임에 쓸 이미지와 소리를 다운로드 합니"
 "다. 이 파일을 프로젝트 폴더에 풉니다."
 
@@ -111,9 +111,9 @@ msgstr ""
 "이 프로젝트에서 우리는  ``Player`` , ``Mob`` , ``HUD`` 의 세 개의 독립적인 씬"
 "을 만들 것인데 이 씬 들은 우리가 게임의 ``Main`` 씬으로 결합될 것이다. 더 큰 "
 "프로젝트에서는 다양한 씬과 스크립트를 저장할 폴더를 만드는 것이 유용할 수 있"
-"지만, 상대적으로 작은 이 게임에서는 \"res://\"라고 하는 루트 폴더에 장면과 스"
-"크립트를 저장할 수 있습니다. 프로젝트 폴더는 왼쪽 위에 있는 파일 시스템 독에"
-"서 볼 수 있습니다:"
+"지만, 상대적으로 작은 이 게임에서는 \"res://\"라고 하는 루트 폴더에 씬과 스크"
+"립트를 저장할 수 있습니다. 프로젝트 폴더는 왼쪽 위에 있는 파일 시스템 독에서 "
+"볼 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:56
 msgid "Player scene"
@@ -169,7 +169,7 @@ msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
-"장면을 저장합니다. 씬 -> 씬 저장을 클릭하거나 윈도우/리눅스에서는 ``Ctrl+S`` "
+"씬을 저장합니다. 씬 -> 씬 저장을 클릭하거나 윈도우/리눅스에서는 ``Ctrl+S`` "
 "를, 맥에서는 ``Command+S`` 를 누릅니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
@@ -178,7 +178,7 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
-"이 프로젝트에서는 고도 명명 규칙을 따르겠습니다. 클래스(노드)는 "
+"이 프로젝트에서는 Godot 명명 규칙을 따르겠습니다. 클래스(노드)는 "
 "``PascalCase`` 를 사용하고 변수와 함수는 ``snake_case`` 를 사용하며 상수는 "
 "``ALL_CAPS`` 를 사용합니다."
 
@@ -311,12 +311,13 @@ msgstr ""
 "편리합니다. ``Player`` 노드를 선택하고 speed 속성을 ``400`` 으로 설정하세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
+#, fuzzy
 msgid ""
-"If you're using C#, you need to restart godot editor temporarily to see "
+"If you're using C#, you need to restart Godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
-"C#을 사용하신다면, 에디터에 내보낸 값을 보기 위해 그것이 고정될 때 까지 고도 "
-"에디터를 일시적으로 재시작해야 합니다."
+"C#을 사용하신다면, 에디터에 내보낸 값을 보기 위해 그것이 고정될 때 까지 "
+"Godot 에디터를 일시적으로 재시작해야 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:182
 msgid ""
@@ -402,7 +403,7 @@ msgid ""
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
 "know but won't be necessary for the rest of this tutorial."
 msgstr ""
-"이제까지 벡터 수학을 안 써봤거나, 회복이 필요하다면, 고도에서 벡터 사용에 관"
+"이제까지 벡터 수학을 안 써봤거나, 회복이 필요하다면, Godot에서 벡터 사용에 관"
 "한 설명을 :ref:`doc_vector_math` 에서 보실 수 있습니다. 보면 좋지만 나머지 튜"
 "토리얼을 위해 꼭 필수적인 것은 아닙니다."
 
@@ -447,7 +448,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid "*Clamping* a value means restricting it to a given range."
 msgstr ""
-"*클램핑 (Clamping)* 값은 주어진 범위로 그것을 제한한다는 것을 의미합니다."
+"*클램핑(Clamping)* 값은 주어진 범위로 그것을 제한한다는 것을 의미합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:311
 msgid ""
@@ -521,8 +522,8 @@ msgid ""
 "functionality to make it work."
 msgstr ""
 "우리는 ``Player`` 가 적과 닿았다는 것을 감지하길 원합니다, 하지만 아직 적을 "
-"안 만들었습니다! 괜찮습니다, 왜냐하면 충돌이 작동하도록 우리는 고도의 *시그"
-"널 (signal)* 기능을 사용할 것이기 때문입니다."
+"안 만들었습니다! 괜찮습니다, 왜냐하면 충돌이 작동하도록 우리는 Godot의 *시그"
+"널(signal)* 기능을 사용할 것이기 때문입니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:393
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
@@ -554,8 +555,8 @@ msgstr ""
 "``RigidBody2D`` 노드가 될 것이기 때문에, 우리는 ``body_entered( Object "
 "body )`` 시그널이 필요하고, 이걸로 몸이 플레이어와 접촉할 때 방출하도록 할 것"
 "입니다. \"연결하기..\" 를 누르고 \"시그널 연결하기\" 창에서 \"연결\"을 누릅니"
-"다. 우리는 어떤 설정도 바꿀 필요가 없습니다 - 고도는 자동으로 플레이어 스크립"
-"트에 ``_on_Player_body_entered`` 라는 함수를 생성해줍니다."
+"다. 우리는 어떤 설정도 바꿀 필요가 없습니다 - Godot는 자동으로 플레이어 스크"
+"립트에 ``_on_Player_body_entered`` 라는 함수를 생성해줍니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:420
 msgid ""
@@ -563,7 +564,7 @@ msgid ""
 "you can also give the name of an existing function that you want to link the "
 "signal to."
 msgstr ""
-"시그널이 연결될 때, 고도가 함수를 만들어 주는 대신, 당신이 직접 연결하고 싶"
+"시그널이 연결될 때, Godot가 함수를 만들어 주는 대신, 당신이 직접 연결하고 싶"
 "은 시그널에 존재하는 함수의 이름을 줄 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:424
@@ -1059,10 +1060,10 @@ msgid ""
 "control node's edges to its anchor. See :ref:"
 "`doc_design_interfaces_with_the_control_nodes` for more details."
 msgstr ""
-"**앵커 (Anchors)와 마진 (Margins):** ``Control`` 노드는 위치와 크기를 가지고 "
-"있고, 앵커과 마진 또한 가지고 있습니다. 앵커는 중심은 정의합니다 - 노드의 모"
-"서리를 위한 참고 포인트. 마진은 컨트롤 노드를 움직이거나 크기를 조절할 때 자"
-"동으로 업데이트됩니다. 이것은 컨트롤 노드들의 모서리가 앵커로부터 얼마나 떨어"
+"**앵커(Anchors)와 마진(Margins):** ``Control`` 노드는 위치와 크기를 가지고 있"
+"고, 앵커과 마진 또한 가지고 있습니다. 앵커는 중심은 정의합니다 - 노드의 모서"
+"리를 위한 참고 포인트. 마진은 컨트롤 노드를 움직이거나 크기를 조절할 때 자동"
+"으로 업데이트됩니다. 이것은 컨트롤 노드들의 모서리가 앵커로부터 얼마나 떨어"
 "져 있는 지를 나타냅니다. 더 자세한 설명은 :ref:"
 "`doc_design_interfaces_with_the_control_nodes` 를 참고하세요."
 
@@ -1173,7 +1174,6 @@ msgid "Text: ``Start``"
 msgstr "Text: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
-#, fuzzy
 msgid ""
 "To make the text of the ``MessageLabel`` fit the game's window click the "
 "small icon next to your text property. This will open up a new window where "
@@ -1182,9 +1182,11 @@ msgid ""
 "game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
 "following for each of the three ``Control`` nodes:"
 msgstr ""
-"``Control`` 노드의 기본 글꼴은 작고 잘 확대되지 않습니다. 여기 게임 에셋에는 "
-"\"Xolonium-Regular.ttf\"라는 글꼴 파일이 있습니다, 사용하려면, 3개의 "
-"``Control`` 노드에 다음과 같이 해야합니다:"
+"``MessageLabel``\\ 의 텍스트가 게임 화면에 맞추기 위해 text 속성 옆에 작은 아"
+"이콘을 클릭합니다. 그러면 단어 사이에 새 줄을 추가할 수 있는 새로운 창이 나타"
+"납니다. ``Control`` 노드의 기본 폰트는 작고 잘 확장되지 않습니다. game assets"
+"에 포함된 \"Xolonium-Regular.ttf\"는 폰트 파일입니다. 이 폰트를 사용하기 위"
+"해 각 ``Control`` 노드마다 다음과 같이 하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
@@ -1315,7 +1317,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
 msgid "Background"
-msgstr "배경 (Background)"
+msgstr "배경(Background)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
 msgid ""
@@ -1341,7 +1343,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1146
 msgid "Sound effects"
-msgstr "사운드 이펙트 (Sound effects)"
+msgstr "사운드 이펙트(Sound effects)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1148
 msgid ""
@@ -1382,7 +1384,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid "Particles"
-msgstr "파티클 (Particles)"
+msgstr "파티클(Particles)"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1166
 msgid ""

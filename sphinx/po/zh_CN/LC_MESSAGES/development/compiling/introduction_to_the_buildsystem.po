@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,31 +174,21 @@ msgstr ""
 msgid "Example for using 4 cores:"
 msgstr "例如启动 4 核进行构建："
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:95
-msgid ""
-"Note that there are currently `issues <https://github.com/godotengine/godot/"
-"issues/5182>`__ with parallel builds for at least some users, so if you are "
-"running into errors, try building without the ``-j`` parameter."
-msgstr ""
-"提示，少数用户执行多核构建任务中会碰到 `这个问题 <https://github.com/"
-"godotengine/godot/issues/5182>`__ ， 如果你也刚好遇到这个麻烦，请试着去到 ``-"
-"j`` 命令进行构建。"
-
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:96
 msgid "Resulting binary"
 msgstr "输出的程序"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:100
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
 msgid ""
 "The resulting binaries will be placed in the bin/ subdirectory, generally "
 "with this naming convention:"
 msgstr "构建所得到的二进制文件将被放置在 bin/ 子目录中，通常使用这种命名约定："
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:107
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:105
 msgid "For the previous build attempt the result would look like this:"
 msgstr "对于上面所说的构建任务，将输出下面这样的二进制文件："
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:114
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:112
 msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
@@ -206,11 +196,11 @@ msgstr ""
 "文件名描述了这个二进制文件是 X11 平台的、它没有进行编译优化、它带有工具功能"
 "（整个 Godot 编辑器）、并且它是针对64位架构进行构建的结果。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:117
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:115
 msgid "A Windows binary with the same configuration will look like this."
 msgstr "同理，同样的构建配置在 Windows 上的构建文件是这样的。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:122
 msgid ""
 "Just copy that binary to wherever you like, as it contains the project "
 "manager, editor and all means to execute the game. However, it lacks the "
@@ -223,7 +213,7 @@ msgstr ""
 "游戏到其他平台的导出模板（可以从`godotengine.org <https://godotengine.org/"
 ">`__下载到，也可以自己构建它们）。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:128
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
@@ -231,11 +221,11 @@ msgstr ""
 "除此之外，可以在所有的构建目标中有几个标准选项可以进行设置，下面将对此进行说"
 "明。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:132
 msgid "Tools"
 msgstr "工具（tools）"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:136
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 msgid ""
 "Tools are enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling tools produces a binary that can run "
@@ -245,15 +235,15 @@ msgstr ""
 "用。 禁用工具选项后构建得到的二进制文件会更小，因为它不包括游戏编辑器和项目管"
 "理器功能。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
 msgstr "构建目标 (target)"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr "构建目标控制的是编译器的调试和优化选项， 它支持这些模式："
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
@@ -261,7 +251,7 @@ msgstr ""
 "**debug**: 带有C ++调试符号的构建，支持运行时检查（执行检查和错误报告）同时不"
 "进行编译任何优化。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:152
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
 msgid ""
 "**release_debug**: Build without C++ debugging symbols and optimization, but "
 "keep the runtime checks (performs checks and reports errors). Official "
@@ -270,7 +260,7 @@ msgstr ""
 "**release_debug**: 不带C ++调试符号和编译器优化，但保持运行时检查（执行检查和"
 "错误报告）。 官方发布的二进制文件就是使用这种配置进行构建的。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:155
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:153
 msgid ""
 "**release**: Build without symbols, with optimization and with little to no "
 "runtime checks. This target can't be used together with tools=yes, as the "
@@ -280,7 +270,7 @@ msgstr ""
 "不能与``tools = yes``一起使用，因为这些工具需要一些调试功能和运行时检查才能运"
 "行。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:164
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:162
 msgid ""
 "This flag appends the \".debug\" suffix (for debug), or \".tools\" (for "
 "debug with tools enabled). When optimization is enabled (release) it appends "
@@ -289,11 +279,11 @@ msgstr ""
 "根据些选项的配置会在二进制文件名中附加 “.debug” 后缀（用于调试）或 “."
 "tools”（用于启用工具的调试）。 当启用优化（发布版）时，它会附加“.opt”后缀。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
 msgid "Bits"
 msgstr "位 (bits)"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:171
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
@@ -301,15 +291,15 @@ msgstr ""
 "位选项控制的是构建结果的二进制文件指出的CPU或操作系统的版本。它是针对桌面平台"
 "的配置，在其他平台会被忽略掉。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
 msgid "**32**: Build binaries for 32 bits platform."
 msgstr "**32**: 构建支持32位系统的二进制文件。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:176
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 msgid "**64**: Build binaries for 64 bits platform."
 msgstr "**64**:  构建支持64位系统的二进制文件。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:177
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid ""
 "**default**: Build whatever the build system feels is best. On Linux this "
 "depends on the host platform (if not cross compiling), on Mac it defaults to "
@@ -319,35 +309,35 @@ msgstr ""
 "你所使用的系统（如果不是交叉编译的话），在Mac上它默认为64位，在Windows上它默"
 "认为32位。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:185
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:183
 msgid ""
 "This flag appends \".32\" or \".64\" suffixes to resulting binaries when "
 "relevant."
 msgstr "这项配置会在构建结果的二进制文件名中添加  \".32\" 或  \".64\" 后缀。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:187
 #, fuzzy
 msgid "Other build options"
 msgstr "调试选项"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:195
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:197
 msgid "Export templates"
 msgstr "导出模板"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -358,7 +348,7 @@ msgstr ""
 "到。 此外，由于种种原因你可能想要自己构建你的导出模板（可能你想要构建未发布的"
 "新版本、你要使用模块（modules）、你不信任我们编译的包是否安全）。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:206
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:204
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most are just optimized binaries or packages for each platform:"
@@ -366,7 +356,7 @@ msgstr ""
 "如果你下载过官方的导出模板压缩包，解压后你会发现里面大多是各个平台通过编译优"
 "化二进制文件或者对应平台的软件包："
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:229
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:227
 msgid ""
 "To create those yourself, just follow the instructions detailed for each "
 "platform in this same tutorial section. Each platform explains how to create "
@@ -375,7 +365,7 @@ msgstr ""
 "如要自己创建这些文件，只需按照该教程的各个平台的详细说明进行操作即可。 每个平"
 "台的教程都有介绍如何创建导出模板。"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:233
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:231
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross compilation, since you can cross-compile "

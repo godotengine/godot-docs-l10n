@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,38 +138,31 @@ msgstr ""
 msgid "Example for using 4 cores:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:95
-msgid ""
-"Note that there are currently `issues <https://github.com/godotengine/godot/"
-"issues/5182>`__ with parallel builds for at least some users, so if you are "
-"running into errors, try building without the ``-j`` parameter."
-msgstr ""
-
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:96
 msgid "Resulting binary"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:100
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
 msgid ""
 "The resulting binaries will be placed in the bin/ subdirectory, generally "
 "with this naming convention:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:107
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:105
 msgid "For the previous build attempt the result would look like this:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:114
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:112
 msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:117
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:115
 msgid "A Windows binary with the same configuration will look like this."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:122
 msgid ""
 "Just copy that binary to wherever you like, as it contains the project "
 "manager, editor and all means to execute the game. However, it lacks the "
@@ -178,111 +171,111 @@ msgid ""
 "godotengine.org/>`__, or you can build them yourself)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:128
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:132
 msgid "Tools"
 msgstr "Ferramentas"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:136
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:134
 msgid ""
 "Tools are enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling tools produces a binary that can run "
 "projects but that does not include the editor or the project manager."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
 msgid "Target"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:152
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
 msgid ""
 "**release_debug**: Build without C++ debugging symbols and optimization, but "
 "keep the runtime checks (performs checks and reports errors). Official "
 "binaries use this configuration."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:155
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:153
 msgid ""
 "**release**: Build without symbols, with optimization and with little to no "
 "runtime checks. This target can't be used together with tools=yes, as the "
 "tools require some debug functionality and run-time checks to run."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:164
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:162
 msgid ""
 "This flag appends the \".debug\" suffix (for debug), or \".tools\" (for "
 "debug with tools enabled). When optimization is enabled (release) it appends "
 "the \".opt\" suffix."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
 msgid "Bits"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:171
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
 msgid "**32**: Build binaries for 32 bits platform."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:176
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 msgid "**64**: Build binaries for 64 bits platform."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:177
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid ""
 "**default**: Build whatever the build system feels is best. On Linux this "
 "depends on the host platform (if not cross compiling), on Mac it defaults to "
 "64 bits and on Windows it defaults to 32 bits."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:185
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:183
 msgid ""
 "This flag appends \".32\" or \".64\" suffixes to resulting binaries when "
 "relevant."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:187
 msgid "Other build options"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:195
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:197
 msgid "Export templates"
 msgstr "Exportar modelos"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:201
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -290,20 +283,20 @@ msgid ""
 "modules, or simply don't trust your own shadow)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:206
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:204
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most are just optimized binaries or packages for each platform:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:229
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:227
 msgid ""
 "To create those yourself, just follow the instructions detailed for each "
 "platform in this same tutorial section. Each platform explains how to create "
 "its own template."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:233
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:231
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross compilation, since you can cross-compile "

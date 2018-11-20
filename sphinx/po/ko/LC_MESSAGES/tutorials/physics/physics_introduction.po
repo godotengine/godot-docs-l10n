@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,6 +28,9 @@ msgid ""
 "When a collision is detected, you typically want something to happen. This "
 "is known as **collision response**."
 msgstr ""
+"게임 개발 중 당신은 종종 게임의 두 물체가 교차하거나 접촉할 때를 알아야 합니"
+"다. 이를 **충돌 감지**라고 합니다. 충돌이 감지되면, 당신은 일반적으로 무언가"
+"가 발생하기를 원합니다. 이를 **충돌 응답**이라고 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:11
 msgid ""
@@ -36,22 +39,26 @@ msgid ""
 "project can be confusing. You can avoid problems and simplify development if "
 "you understand how each works and what their pros and cons are."
 msgstr ""
+"Godot는 충돌 감지와 반응을 모두 제공하기 위해 2D와 3D로 구성된 다수의 충돌 객"
+"체를 제공합니다. 프로젝트에 이 중 어떠한 것을 사용할지 결정하려는 것은 혼란스"
+"러울 수 있습니다. 하지만 각각의 작동 방식과 장단점을 이해한다면 이러한 문제"
+"를 피하고 개발을 간소화할 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
 msgid "In this guide you will learn:"
-msgstr ""
+msgstr "이 가이드에서는 다음 사항에 대해 알아봅니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:18
 msgid "Godot's four collision object types"
-msgstr ""
+msgstr "Godot의 4가지 충돌 객체 유형"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:19
 msgid "How each collision object works"
-msgstr ""
+msgstr "각 충돌 객체의 작동 방식"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:20
 msgid "When and why to choose one type over another"
-msgstr ""
+msgstr "한 유형을 다른 유형보다 선택해야 하는 시기 및 이유"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:22
 msgid ""
@@ -59,16 +66,20 @@ msgid ""
 "collision shape has a direct equivalent in 3D and in most cases they work in "
 "much the same way."
 msgstr ""
+"이 문서의 예제에서는 2D 객체를 사용합니다. 모든 2D 객체와 충돌 모양은 3D에서 "
+"직접적으로 동등하며 대부분의 경우 거의 동일한 방식으로 작동합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:27
 msgid "Collision Objects"
-msgstr ""
+msgstr "충돌 객체"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:29
 msgid ""
 "Godot offers four kinds of physics bodies, extending :ref:`CollisionObject2D "
 "<class_CollisionObject2D>`:"
 msgstr ""
+"Godot는 4가지 종류의 물리적 body를 제공합니다. :ref:`CollisionObject2D "
+"<class_CollisionObject2D>`에서 확장되는:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:35
 msgid ":ref:`Area2D <class_Area2D>`"
@@ -81,12 +92,18 @@ msgid ""
 "``Area2D`` can also be used to override physics properties such as gravity "
 "or damping in a defined area."
 msgstr ""
+"``Area2D`` 노드는 **탐지** 와 **영향력** 을 제공합니다. 그들은 객체가 언제 겹"
+"치는지를 탐지할 수 있고, body가 들어가거나 나올 때 시그널을 보낼 수 있습니"
+"다. ``Area2D``는 또한 정의된 영역에서 중력이나 제동과 같은 물리적 특성을 치환"
+"하는데 사용될 수도 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:37
 msgid ""
 "The other three bodies extend from :ref:`PhysicsBody2D "
 "<class_PhysicsBody2D>`:"
 msgstr ""
+"나머지 3개의 body는 :ref:`PhysicsBody2D <class_PhysicsBody2D>`에서 확장됩니"
+"다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:43
 msgid ":ref:`StaticBody2D <class_StaticBody2D>`"
@@ -99,6 +116,9 @@ msgid ""
 "collision. They are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
+"정적인 body는 물리엔진에 의해 움직이지 않는 물체입니다. 그것은 충돌 감지에는 "
+"관여하지만, 충돌에 대응하여 움직이지는 않습니다. 이것들은 환경의 일부이거나 "
+"동적 동작이 필요하지 않은 객체에 가장 많이 사용됩니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:48
 msgid ":ref:`RigidBody2D <class_RigidBody2D>`"
@@ -111,6 +131,10 @@ msgid ""
 "impulses, etc.) and the physics engine calculates the resulting movement. :"
 "ref:`Read more about using rigid bodies. <doc_rigid_body>`"
 msgstr ""
+"이것은 시뮬레이션된 2D 물리를 구현하는 노드입니다. ``RigidBody2D``을 직접적으"
+"로 제어하지는 않지만, 그대신 중력이나 충격 등에 힘을 가하며 물리 엔진은 그것"
+"의 결과적인 움직임을 계산합니다. :ref:`rigid bodies 사용에 대해 더 알아보기. "
+"<doc_rigid_body>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:52
 msgid ":ref:`KinematicBody2D <class_KinematicBody2D>`"
@@ -121,6 +145,8 @@ msgid ""
 "A body that provides collision detection, but no physics. All movement and "
 "collision response must be implemented in code."
 msgstr ""
+"충돌 감지 기능을 제공하지만 물리는 제공하지 않는 body입니다. 모든 이동 및 충"
+"돌 반응은 코드로 구현되어야 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
 msgid "Collision Shapes"
@@ -132,12 +158,17 @@ msgid ""
 "as children. These shapes are used to define the object's collision bounds "
 "and to detect contact with other objects."
 msgstr ""
+"물리 body는 원하는 수만큼의 :ref:`Shape2D <class_Shape2D>`객체를 자식으로 수"
+"용할 수 있습니다. 이러한 모양은 객체의 충돌 한계를 정의하고 다른 객체와의 접"
+"촉을 감지하는 데 사용됩니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:61
 msgid ""
 "In order to detect collisions, at least one ``Shape2D`` must be assigned to "
 "the object."
 msgstr ""
+"충돌을 감지하기 위해, 최소한 하나 이상의 ``Shape2D`` 가 객체어 할당되어야 합"
+"니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:64
 msgid ""
@@ -146,6 +177,10 @@ msgid ""
 "<class_CollisionPolygon2D>` as a child of the object. These nodes allow you "
 "to draw the shape directly in the editor workspace."
 msgstr ""
+"모양을 지정하는 가장 일반적인 방법은 객체의 하위 항목으로 :ref:"
+"`CollisionShape2D <class_CollisionShape2D>` 또는 :ref:`CollisionPolygon2D "
+"<class_CollisionPolygon2D>` 를 추가하는 것입니다. 이러한 노드들은 에디터의 작"
+"업 공간에서 직접 모양을 그릴 수 있도록 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:68
 msgid ""
@@ -155,10 +190,14 @@ msgid ""
 "``Node2D`` scale handles. Scaling a shape can result in unexpected collision "
 "behavior."
 msgstr ""
+"에디터에서 충돌 모양을 변경하지 않도록 주의하십시오. 인스펙터의 \"Scale\" 속"
+"성은  ``(1, 1)`` 로 유지되어야 합니다. 충돌 모양을 변경할 때는 항상 "
+"``Node2D`` 가 **아닌** 크기 핸들을 사용해야 합니다. 도형의 크기를 조절하는것"
+"은 예기치 않은 충돌 동작을 발생시킬 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:77
 msgid "Physics process callback"
-msgstr ""
+msgstr "물리 프로세스 콜백 함수"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:79
 msgid ""
@@ -167,6 +206,10 @@ msgid ""
 "a body's state variables such as ``position`` or ``linear velocity`` may not "
 "be accurate for the current frame."
 msgstr ""
+"물리 엔진은 성능을 향상시키기 위해 여러 개의 스레드를 생성할 수 있으므로, 물"
+"리적 작업을 처리하는 데 최대 프레임까지 사용할 수 있습니다. 이로 인해, ``위치"
+"`` 또는 ``선형 속도`` 와 같은 body의 상태 변수의 값이 현재 프레임에 정확하지 "
+"않을 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:84
 msgid ""
@@ -175,10 +218,14 @@ msgid ""
 "<class_Node__physics_process>` callback, which is called before each physics "
 "step at a constant frame rate (60 times per second by default)."
 msgstr ""
+"이러한 부정확성을 피하기 위해, body의 속성에 접근해야 하는 모든 코드는 각 물"
+"리 단계 전에 일정한 프레임률(초당 60회 가 디폴트)로 호출되는 :ref:`Node."
+"_physics_process() <class_Node__physics_process>` 콜백 함수로 실행되어야 합니"
+"다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:90
 msgid "Collision Layers and Masks"
-msgstr ""
+msgstr "충돌 레이어와 마스크"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:92
 msgid ""
@@ -188,10 +235,14 @@ msgid ""
 "and **masks**. Each ``CollisionObject2D`` has 20 different physics layers it "
 "can interact with."
 msgstr ""
+"가장 강력하지만 자주 오해되는 충돌 기능 중 하나는 충돌 레이어 시스템입니다. "
+"이 시스템을 사용하면 다양한 객체 간에 복잡한 상호 작용을 구축할 수 있습니다. "
+"주요 개념은 **레이어** 와 **마스크** 입니다. 각 ``CollisionObject2D`` 에는 서"
+"로 상호작용할 수 있는 20여개의 서로 다른 물리 레이어가 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:98
 msgid "Let's look at each of the properties in turn:"
-msgstr ""
+msgstr "각 속성을 차례대로 살펴보겠습니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:102
 msgid "collision_layer"
@@ -202,6 +253,8 @@ msgid ""
 "This describes the layers that the object appears **in**. By default, all "
 "bodies are on layer ``1``."
 msgstr ""
+"이것은 객체가 **나타나는** 레이어를 형성합니다. 기본적으로 모든 body는 계층 "
+"``1``에 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:107
 msgid "collision_mask"
@@ -213,12 +266,17 @@ msgid ""
 "object isn't in one of the mask layers, the body will ignore it. By default, "
 "all bodies scan layer ``1``."
 msgstr ""
+"이것은 body가 충돌을 위해 **스캔**하는 레이어를 형성합니다. 객체가 마스크 레"
+"이어 중 하나에 있지 않으면, body는 이를 무시합니다. 기본적으로 모든 body는 레"
+"이어 ``1``을 스캔합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:109
 msgid ""
 "These properties can be configured via code, or by editing them in the "
 "Inspector."
 msgstr ""
+"이러한 속성은 코드를 통해 구성하거나 인스펙터에서 편집하여 구성할 수 있습니"
+"다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:111
 msgid ""
@@ -226,10 +284,13 @@ msgid ""
 "may find it useful to assign names to the layers you're using. Names can be "
 "assigned in Project Settings -> Layer Names."
 msgstr ""
+"각 레이어를 사용하는 대상을 추적하는 것은 어려울 수 있으므로, 사용중인 레이어"
+"에 이름을 할당하는 것이 유옹할 수 있습니다. 이름은 프로젝트 설정 -> 레이어 이"
+"름 에서 할당할 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:117
 msgid "**Example:**"
-msgstr ""
+msgstr "**예시:**"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:119
 msgid ""
@@ -238,6 +299,9 @@ msgid ""
 "collisions with both Enemy and Coin, but Enemy and Coin should ignore each "
 "other."
 msgstr ""
+"당신의 게임에는 4가지의 노드 유형이 있습니다: 벽, 플레이어, 적, 코인. 플레이"
+"어와 적 모두 벽과 충돌해야 합니다. 플레이어 노드는 적과 코인과의 충돌을 모두 "
+"감지해야 하지만, 적과 코인은 서로 무시해야 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:124
 msgid ""
@@ -247,6 +311,10 @@ msgid ""
 "should interact with. For example, the Player's settings would look like "
 "this:"
 msgstr ""
+"레이어 1-4를 \"walls\", \"player\", \"enemies\", 그리고 \"coins\" 으로 이름"
+"을 지정하는 걸로 시작하고, \"Layer\" 특성을 사용하여 각 노드 유형을 해당 레이"
+"어에 배치합니다. 그런 다음 각 노드가 상호작용할 계층을 선택하여 각 노드의 "
+"\"Mask\" 속성을 설정합니다. 예를 들어, 플레이어의 설정은 다음과 같습니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:133
 msgid "Area2D"
@@ -259,28 +327,33 @@ msgid ""
 "be used to override physics properties such as gravity or damping in a "
 "defined area."
 msgstr ""
+"Area 노드는 **탐지** 및 **영향**을 제공합니다. 그들은 물체가 중복되는 때를 감"
+"지하고 body가 들어가거나 나올 때 시그널을 보낼 수 있습니다.  Area는 정의된 영"
+"역에서 중력 또는 제동과 같은 물리적 특성을 치환하는 데 사용될 수도 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:140
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
-msgstr ""
+msgstr ":ref:`Area2D <class_Area2D>` 에는 3가지 주요 용도가 있습니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:142
 msgid "Overriding physics parameters such as gravity in a given region."
-msgstr ""
+msgstr "특정 지역에서 중력과 같은 물리적 매개변수를 재정의합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:144
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
 "currently in a region."
 msgstr ""
+"다른 body가 특정 지역에 들어오거나 나가는 때를 탐지하거나 현재 지역에 있는 "
+"body가 무엇인지를 탐지합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:146
 msgid "Checking other areas for overlap."
-msgstr ""
+msgstr "다른 영역들이 겹치는지 확인합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:148
 msgid "By default, areas also receive mouse and touchscreen input."
-msgstr ""
+msgstr "기본적으로, 영역은 마우스 및 터치스크린 입력도 받습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:151
 msgid "StaticBody2D"
@@ -294,28 +367,35 @@ msgid ""
 "**as if** it were moving, using its ``constant_linear_velocity`` and "
 "``constant_angular_velocity`` properties."
 msgstr ""
+"정적인 body는 물리 엔진에 의해 움직이지 않는 물체입니다. 그것은 충돌 감지에"
+"는 참여하지만 충돌에 대응하여 움직이지 않습니다. 그러나, "
+"``constant_linear_velocity``와 ``constant_angular_velocity``의 특성을 이용하"
+"여 **마치** 움직이는 것처럼 충돌하는 body에 움직임이나 회전을 전달할 수 있습"
+"니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:158
 msgid ""
 "``StaticBody2D`` nodes are most often used for objects that are part of the "
 "environment or that do not need to have any dynamic behavior."
 msgstr ""
+"``StaticBody2D``노드는 환경에 속하거나 동적 동작을 수행할 필요가 없는 객체에 "
+"가장 많이 사용됩니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:161
 msgid "Example uses for ``StaticBody2D``:"
-msgstr ""
+msgstr "``StaticBody2D``이용 예시:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:163
 msgid "Platforms (including moving platforms)"
-msgstr ""
+msgstr "플랫폼(이동 플랫폼 포함)"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:164
 msgid "Conveyor belts"
-msgstr ""
+msgstr "컨베이어 벨트"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:165
 msgid "Walls and other obstacles"
-msgstr ""
+msgstr "벽 및 기타 장애물"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:168
 msgid "RigidBody2D"
@@ -329,12 +409,18 @@ msgid ""
 "collisions with other bodies, and collision responses such as bouncing, "
 "rotating, etc."
 msgstr ""
+"이것은 시뮬레이션된 2D 물리를 구현하는 노드입니다. 당신은:ref:`RigidBody2D "
+"<class_RigidBody2D>`를 직접 제어하지는 않습니다. 대신 힘을 가하게 되면 물리 "
+"엔진은 다른 물체와의 충돌을 포함한 결과 움직임과 충돌, 회전 등의 충돌 반응을 "
+"계산합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:176
 msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
+"인스펙터에서 설정할수 있는 \"Mass\", \"Friction\", 또는 \"Bounce\" 와 같은 특"
+"성을 통해 rigid body의 동작을 수정할 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:179
 msgid ""
@@ -342,6 +428,9 @@ msgid ""
 "`Project Settings -> Physics`, or by entering an :ref:`Area2D "
 "<class_Area2D>` that is overriding the global physics properties."
 msgstr ""
+"body의 행동은 또한 `Project Settings -> Physics` 에서 설정한 세계 속성의 영향"
+"을 받거나 전역 물리 특성을 재정의하는 :ref:`Area2D <class_Area2D>`를 입력한 "
+"것에 영향을 받습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:183
 msgid ""
@@ -350,40 +439,50 @@ msgid ""
 "by the physics engine. The body will wake up when forces are applied, either "
 "by a collision or via code."
 msgstr ""
+"rigid body가 쉬는 상태이고 한동안 움직이지 않으면, 잠들게 됩니다. 잠든 body"
+"는 정적인body처럼 작용하며, 그 힘은 물리 엔진에 의해 계산되지 않습니다. 충돌 "
+"또는 코드를 통해 힘이 가해지면 body가 깨어나게 됩니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:189
 msgid "Rigid body modes"
-msgstr ""
+msgstr "Rigid body 모드"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:191
 msgid "A rigid body can be set to one of four modes:"
-msgstr ""
+msgstr "rigid body는 다음 네 가지 모드 중 하나로 설정할 수 있습니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:193
 msgid ""
 "**Rigid** - The body behaves as a physical object. It collides with other "
 "bodies and responds to forces applied to it. This is the default mode."
 msgstr ""
+"**Rigid** - 이 body는 물리적 물체처럼 작동합니다. 그것은 다른 body들과 충돌하"
+"고 그것에 적용되는 힘에 반응합니다. 기본 모드입니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:194
 msgid ""
 "**Static** - The body behaves like a :ref:`StaticBody2D "
 "<class_StaticBody2D>` and does not move."
 msgstr ""
+"**Static** - 이 body는 :ref:`StaticBody2D <class_StaticBody2D>` 처럼 동작하"
+"며 움직이지 않습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:195
 msgid "**Character** - Similar to \"Rigid\" mode, but the body can not rotate."
 msgstr ""
+"**Character** - \"Rigid\" 모드와 유사하지만 body를 회전할 수는 없습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:196
 msgid ""
 "**Kinematic** - The body behaves like a :ref:`KinematicBody2D "
 "<class_KinematicBody2D>` and must be moved by code."
 msgstr ""
+"**Kinematic** - 이 body는 :ref:`KinematicBody2D <class_KinematicBody2D>` 처"
+"럼 작동하며 코드를 통해 움직여야 한다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:199
 msgid "Using RigidBody2D"
-msgstr ""
+msgstr "RigidBody2D 사용하기"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:201
 msgid ""
@@ -393,6 +492,10 @@ msgid ""
 "create RigidBody2Ds and adjust their properties. Stacking, falling, and "
 "bouncing would automatically be calculated by the physics engine."
 msgstr ""
+"rigid body를 사용하는 것의 이점 중 하나는 코드를 쓰지 않고도 많은 행동을 \"자"
+"유롭게\" 할 수 있다는 것입니다. 예를 들어, 떨어지는 블록으로 \"앵그리 버드\"-"
+"스타일의 게임을 만드는 경우, RiddleBody2D를 만들고 해당 속성을 조정하기만 하"
+"면 됩니다. 쌓기, 낙하 및 튕김은 물리 엔진에 의해 자동으로 계산됩니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:207
 msgid ""
@@ -406,10 +509,18 @@ msgid ""
 "allows for safely changing properties and synchronizing them with the "
 "physics engine."
 msgstr ""
+"하지만, 만약 여러분이 body를 어느 정도 통제하고 싶다면, 조심히 다루어야 합니"
+"다 - ``위치``, ``선형_속도`` 또는 rigid body의 다른 물리적 특성들을 바꾸면 예"
+"상치 못한 행동을 초래할 수 있습니다. 물리학 관련 속성을 변경해야 하는 경우 "
+"``_physics_process()``대신 :ref:`_integrate_forces() "
+"<class_RigidBody2D__integrate_forces>` 콜백을 사용해야 합니다. 이 콜백에서는 "
+"안전하게 속성을 변경하고 물리 엔진과 동기화할 수 있는 :ref:"
+"`Physics2DDirectBodyState <class_Physics2DDirectBodyState>`에 접근 할 수 있습"
+"니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:216
 msgid "For example, here is the code for an \"Asteroids\" style spaceship:"
-msgstr ""
+msgstr "예를 들어, 다음은 \"소행성\" 스타일 우주선의 코드입니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:261
 msgid ""
@@ -417,6 +528,9 @@ msgid ""
 "properties directly, but rather applying forces (``thrust`` and ``torque``) "
 "to the body and letting the physics engine calculate the resulting movement."
 msgstr ""
+"``linear_velocity`` 또는 ``angular_velocity`` 를 직접 설정하는 것이 아니라 "
+"힘 (``추력`` 과 ``토크``) 을 body에 적용하고 그 결과적인 움직임을 물리엔진이 "
+"계산하도록 한다는 점에 유의해야 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:265
 msgid ""
@@ -426,10 +540,14 @@ msgid ""
 "ref:`can_sleep <class_RigidBody2D_can_sleep>` property. Be aware that this "
 "can have a negative effect on performance."
 msgstr ""
+"rigid body가 잠에 들 때 ``_integrate_forces()`` 함수는 호출되지 않을 것입니"
+"다. 이 동작을 오버라이드하려면 충돌을 만들거나, 충돌을 적용하거나, 힘을 가하"
+"거나, :ref:`can_sleep <class_RigidBody2D_can_sleep>` 속성을 비활성화하여 body"
+"를 깨어있게 해야 합니다. 이 경우 성능에 부정적인 영향을 미칠 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:272
 msgid "Contact reporting"
-msgstr ""
+msgstr "접촉 알림"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:274
 msgid ""
@@ -441,6 +559,12 @@ msgid ""
 "get_contact_count() <class_Physics2DDirectBodyState_get_contact_count>` and "
 "related functions."
 msgstr ""
+"기본적으로 rigid body는 접촉면을 추적하지 않는데, 많은 body가 장면에 있을 경"
+"우 엄청난 양의 메모리가 필요할 수 있기 때문입니다. 접촉 알림를 사용하려면 :"
+"ref:`contacts_reported <class_RigidBody2D_contacts_reported>` 속성을 0이 아"
+"닌 값으로 설정하십시오. 그런 다음 접촉은 :ref:`Physics2DDirectBodyState."
+"get_contact_count() <class_Physics2DDirectBodyState_get_contact_count>` 및 관"
+"련 기능을 통해 얻을 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:281
 msgid ""
@@ -448,6 +572,9 @@ msgid ""
 "<class_RigidBody2D_contact_monitor>` property. See :ref:`RigidBody2D "
 "<class_RigidBody2D>` for the list of available signals."
 msgstr ""
+"신호를 통한 접점 모니터링은 :ref:`contact_monitor "
+"<class_RigidBody2D_contact_monitor>` 속성을 통해 활성화할 수 있습니다. 사용 "
+"가능한 신호 목록은 :ref:`RigidBody2D <class_RigidBody2D>`를 참조하십시오."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:286
 msgid "KinematicBody2D"
@@ -460,6 +587,10 @@ msgid ""
 "friction. Instead, they must be controlled by the user via code. The physics "
 "engine will not move a kinematic body."
 msgstr ""
+":ref:`KinematicBody2D <class_KinematicBody2D>` body는 다른 물체와의 충돌을 감"
+"지하지만 중력이나 마찰과 같은 물리적 성질의 영향을 받지 않습니다. 대신 코드"
+"를 통해 사용자가 제어해야 합니다. 물리 엔진은 kinematic body를 움직이지 않습"
+"니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:293
 msgid ""
@@ -469,10 +600,14 @@ msgid ""
 "if a collision is detected with another body. After the body has collided, "
 "any collision response must be coded manually."
 msgstr ""
+"kinematic body를 옮길 때는 ``위치``를 직접 정해서는 안 됩니다. 대신 "
+"``move_and_collide()`` 또는 ``move_and_slide()`` 방법을 사용합니다. 이러한 방"
+"법은 주어진 벡터를 따라 body를 움직이며, 다른 body와의 충돌이 감지되면 즉시 "
+"정지합니다. body가 충돌한 후에는 모든 충돌 응답을 수동으로 코딩해야 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:300
 msgid "Kinematic collision response"
-msgstr ""
+msgstr "Kinematic 충돌 반응"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:302
 msgid ""
@@ -481,6 +616,9 @@ msgid ""
 "collision response depends on which method you used to move the "
 "KinematicBody2D."
 msgstr ""
+"충돌 후 body가 튀어 오르거나, 벽을 따라 미끄러지거나, 부딪힌 개체의 속성을 변"
+"경하기를 원할 수 있습니다. 충돌 응답을 처리하는 방법은 KineticBody2D를 이동하"
+"는 데 사용한 방법에 따라 달라집니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:307
 msgid ":ref:`move_and_collide <class_KinematicBody2D_move_and_collide>`"
@@ -493,16 +631,19 @@ msgid ""
 "information about the collision and the colliding body. You can use this "
 "information to determine the response."
 msgstr ""
+"이 기능은 ``move_and_collide()``를 사용할 때 충돌 및 충돌 물체에 대한 정보가 "
+"포함된 :ref:`KinematicCollision2D <class_KinematicCollision2D>` 개체를 반환합"
+"니다. 이 정보를 사용하여 응답을 확인할 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:314
 msgid ""
 "For example, if you want to find the point in space where the collision "
 "occurred:"
-msgstr ""
+msgstr "예를 들어, 충돌이 발생한 공간의 지점을 찾으려면 다음과 같이 하십시오:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:345
 msgid "Or to bounce off of the colliding object:"
-msgstr ""
+msgstr "충돌 개체가 튀어나오도록 하기 위해선 다음과 같이 하십시오:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:374
 msgid ":ref:`move_and_slide <class_KinematicBody2D_move_and_slide>`"

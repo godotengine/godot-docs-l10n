@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -427,7 +427,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr ""
+msgstr "场景树"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
 msgid ""
@@ -600,7 +600,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid "By Type"
-msgstr ""
+msgstr "按类型"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:408
 msgid ""
@@ -608,6 +608,8 @@ msgid ""
 "dot-product, you can search for \"dot\" instead of the Vector3 category. In "
 "most cases just search the list of nodes, it should be faster."
 msgstr ""
+"这些是基本类型可用的方法。例如，如果你想要一个点积，你可以搜索“点”而不是"
+"Vector3类型。在大多数情况下，只需搜索节点列表，就应该更快。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:413
 msgid "Call"
@@ -618,10 +620,12 @@ msgid ""
 "This is the generic calling node. It is rarely used directly but by dragging "
 "to empty space on an already configured node."
 msgstr ""
+"这是通用调用节点。它很少直接使用，而是通过拖动到已配置的节点上的空白空间来使"
+"用。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:419
 msgid "Constructors"
-msgstr ""
+msgstr "构造函数"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:421
 msgid ""
@@ -629,26 +633,29 @@ msgid ""
 "example, If you need to create a Vector3 out of 3 floats, a constructor must "
 "be used."
 msgstr ""
+"这些是创建Godot基本数据类型所需的所有函数。例如，如果需要从3个浮点数中创建一"
+"个Vector3，则必须使用构造函数。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:427
 msgid "Destructor"
-msgstr ""
+msgstr "析构函数"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:429
 msgid ""
 "This is the opposite to Constructor, it allows to separate any basic type "
 "(ie, Vector3) into its sub-elements."
-msgstr ""
+msgstr "这与构造函数相反，它允许将任何基本类型(即Vector3)分离到子元素中。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:435
 msgid "Emit Signal"
-msgstr ""
+msgstr "发射信号"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:437
 msgid ""
 "Emits signals from any object. In general it's not that useful, as dragging "
 "a signal to the canvas works better."
 msgstr ""
+"从任何物体发出信号。一般来说，这并不是很有用，因为拖动信号到画布的效果更好。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:441
 msgid "Get/Set"
@@ -659,18 +666,23 @@ msgid ""
 "Generic Getter/Setter node. Dragging properties from the Inspector works "
 "better, as they appear properly configured on drop."
 msgstr ""
+"通用的Getter / Setter节点。从检查器中拖拽属性效果更好，因为在拖放时它们就被正"
+"确配置。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:447
 msgid "Wait"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:449
+#, fuzzy
 msgid ""
 "The Wait nodes will suspend execution of the function until something "
 "happens (many frames can pass until resuming, in fact). Default nodes allow "
 "you to wait for a frame to pass, a fixed frame or a given amount of time "
 "until execution is resumed."
 msgstr ""
+"等待节点将暂停执行函数直到发生某些事情（实际上，许多帧可以通过，直到恢复）。"
+"默认节点允许您等待帧通过、固定帧或给定的时间量，直到执行恢复为止。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:454
 msgid "Yield"
@@ -680,15 +692,15 @@ msgstr ""
 msgid ""
 "This node completely suspends the execution of the script, and it will make "
 "the function return a value that can be used to resume execution."
-msgstr ""
+msgstr "这个节点完全暂停脚本的执行，它将使函数返回一个值，该值可用于恢复执行。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:460
 msgid "Yield Signal"
-msgstr ""
+msgstr "Yield 信号"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:462
 msgid "Same as Yield, but will wait until a given signal is emitted."
-msgstr ""
+msgstr "与Yield相同，但要等到一个给定的信号发出。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:466
 msgid "Index"
@@ -698,7 +710,7 @@ msgstr ""
 msgid ""
 "Generic indexing operator, not often used but it's good that it exists just "
 "in case."
-msgstr ""
+msgstr "泛型索引操作符，不常用，但它的存在是好的，以防万一。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:472
 msgid "Operators"
@@ -712,10 +724,13 @@ msgid ""
 "always recommended to set the right type for operators to catch errors "
 "faster and make the graph easier to read."
 msgstr ""
+"这些操作符主要是通用的操作符，如加法、乘法、比较等。默认情况下，这些操作符主"
+"要接受任何数据类型（如果输入的类型与操作符不匹配，则会在运行时出错）。建议始"
+"终为操作符设置正确的类型，以更快地捕捉错误并使图形更易于阅读。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"
-msgstr ""
+msgstr "表达式节点"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:485
 msgid ""

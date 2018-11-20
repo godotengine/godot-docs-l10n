@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr "명령 행 (Command line) 튜토리얼"
+msgstr "명령 행(Command line) 튜토리얼"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -28,14 +28,14 @@ msgid ""
 "command line. Given the engine relies on little to no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
-"일부 개발자들은 명령 행을 광범위하게 사용하는 것을 좋아합니다. 고도는 그들에"
+"일부 개발자들은 명령 행을 광범위하게 사용하는 것을 좋아합니다. Godot는 그들에"
 "게 친절하게 설계되었고, 여기에 명령 행에서 완전히 작업하는 과정이 있습니다. "
 "엔진은 외부 라이브러리에 거의 의존하지 않아서, 초기화 시간이 매우 빠르고, 이 "
 "워크플로우에 적합하게 만듭니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
-msgstr "경로 (Path)"
+msgstr "경로"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid ""
@@ -44,8 +44,8 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
-"고도 바이너리를 PATH 환경 변수에 넣어서, ``godot`` 을 입력하면 어느 곳이든 쉽"
-"게 실행하도록 하는 것을 추천합니다. 리눅스에서 고도 바이너리를 ``/ usr / "
+"Godot 바이너리를 PATH 환경 변수에 넣어서, ``godot`` 을 입력하면 어느 곳이든 "
+"쉽게 실행하도록 하는 것을 추천합니다. 리눅스에서 Godot 바이너리를 ``/ usr / "
 "local / bin`` 에 배치하여, ``godot`` 라고 부르게 하십시오."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
@@ -58,8 +58,8 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
-"고도 바이너리의 위치와 현재 작업 디렉토리의 위치에 따라, 다음 명령 중 하나가 "
-"제대로 작동하려면 프로젝트의 경로를 설정해야 합니다."
+"Godot 바이너리의 위치와 현재 작업 디렉토리의 위치에 따라, 다음 명령 중 하나"
+"가 제대로 작동하려면 프로젝트의 경로를 설정해야 합니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:29
 msgid ""
@@ -95,15 +95,16 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "The project can now be opened with Godot."
-msgstr "프로젝트는 이제 고도로 열릴 수 있습니다."
+msgstr "프로젝트는 이제 Godot로 열릴 수 있습니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Running the editor"
 msgstr "에디터 실행하기"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
+#, fuzzy
 msgid ""
-"Running the editor is done by executing godot with the ``-e`` flag. This "
+"Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
@@ -116,8 +117,8 @@ msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
-"씬을 만들고 저장한다면, 나중에 해당 장면을 인수로 사용하여 동일한 코드를 실행"
-"하여 편집할 수 있습니다."
+"씬을 만들고 저장한다면, 나중에 해당 씬을 인수로 사용하여 동일한 코드를 실행하"
+"여 편집할 수 있습니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Erasing a scene"
@@ -129,7 +130,7 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
-"고도는 당신의 파일 시스템과 친하고 추가적인 메타데이터 파일을 만들기 않을 것"
+"Godot는 당신의 파일 시스템과 친하고 추가적인 메타데이터 파일을 만들기 않을 것"
 "입니다. ``rm`` 을 사용해 씬 파일을 지웁니다. 참조하는 씬이 없다면 오류가 발생"
 "할 것입니다."
 
@@ -142,8 +143,8 @@ msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr ""
-"게임을 실행하려면, 간단히 프로젝트 디렉토리나 하위 디렉토리에서 고도를 실행하"
-"면 됩니다."
+"게임을 실행하려면, 간단히 프로젝트 디렉토리나 하위 디렉토리에서 Godot를 실행"
+"하면 됩니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid ""
@@ -167,7 +168,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:128
 msgid "Exporting"
-msgstr "내보내기 (Exporting)"
+msgstr "내보내기(Exporting)"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid ""
@@ -176,7 +177,7 @@ msgid ""
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
 "명령 행에서 프로젝트를 내보내는 것도 지원됩니다. 특히 연속적인 통합 설정에 유"
-"용합니다. 이 때문에 고도의 헤드리스 버전은 (서버 빌드, 비디오 없음) 이상적입"
+"용합니다. 이 때문에 Godot의 헤드리스 버전은 (서버 빌드, 비디오 없음) 이상적입"
 "니다."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:139

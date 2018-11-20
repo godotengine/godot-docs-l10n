@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,8 +321,9 @@ msgstr ""
 "``400``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
+#, fuzzy
 msgid ""
-"If you're using C#, you need to restart godot editor temporarily to see "
+"If you're using C#, you need to restart Godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
 "Если вы используете С#, вам необходимо перезапускать редактор godot, чтобы "
@@ -1126,25 +1127,25 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid "ScoreLabel"
-msgstr "Надпись счёта"
+msgstr "ScoreLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
 msgid "``Layout``: \"Center Top\""
-msgstr "``Макет``: \"Центр Верх\""
+msgstr "``Макет``: \"Center Top\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:895
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:908
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:921
 msgid "``Margin``:"
-msgstr "``Поле``:"
+msgstr "``Margin``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:897
 msgid "Left: ``-25``"
-msgstr "Слева: ``-25``"
+msgstr "Left: ``-25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid "Top: ``0``"
-msgstr "Вверх: ``0``"
+msgstr "Top: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:899
 msgid "Right: ``25``"
@@ -1152,7 +1153,7 @@ msgstr "Right: ``25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 msgid "Bottom: ``100``"
-msgstr "Вниз: ``100``"
+msgstr "Bottom: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:902
 msgid "Text: ``0``"
@@ -1164,27 +1165,27 @@ msgstr "MessageLabel"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid "``Layout``: \"Center\""
-msgstr "``Макет``: \"Центр\""
+msgstr "``Макет``: \"Center\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:910
 msgid "Left: ``-200``"
-msgstr "Слева: ``-200``"
+msgstr "Left: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:911
 msgid "Top: ``-150``"
-msgstr "Сверху: ``-150``"
+msgstr "Top: ``-150``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:912
 msgid "Right: ``200``"
-msgstr "Справа: ``200``"
+msgstr "Right: ``200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:913
 msgid "Bottom: ``0``"
-msgstr "Снизу: ``0``"
+msgstr "Bottom: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 msgid "Text: ``Dodge the Creeps!``"
-msgstr "Текст: ``Уворачивайся от крипов!``"
+msgstr "Text: ``Уворачивайся от крипов!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:918
 msgid "StartButton"
@@ -1197,26 +1198,25 @@ msgstr "``Макет``: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:923
 msgid "Left: ``-100``"
-msgstr "Слева: ``-100``"
+msgstr "Left: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:924
 msgid "Top: ``-200``"
-msgstr "Сверху: ``-200``"
+msgstr "Top: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid "Right: ``100``"
-msgstr "Справа: ``100``"
+msgstr "Right: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "Bottom: ``-100``"
-msgstr "Снизу: ``-100``"
+msgstr "Bottom: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 msgid "Text: ``Start``"
-msgstr "Текст: ``Start``"
+msgstr "Text: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
-#, fuzzy
 msgid ""
 "To make the text of the ``MessageLabel`` fit the game's window click the "
 "small icon next to your text property. This will open up a new window where "
@@ -1225,10 +1225,13 @@ msgid ""
 "game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
 "following for each of the three ``Control`` nodes:"
 msgstr ""
-"Шрифт по умолчанию для узлов ``Control`` небольшие и плохо масштабируется. "
-"Есть файл шрифта, включенного в ресурсы игры под названием \"Xolonium-"
-"Regular.ttf\". Чтобы использовать этот шрифт, выполните следующие действия "
-"для каждой из трех узлов ``Control``:"
+"Для того, чтобы текст ``MessageLabel`` соответствовал окну игры, нажмите на "
+"маленькую иконку рядом с вашим свойством text. Откроется новое окно, в "
+"котором можно добавить новую строку между словами. Шрифт по умолчанию для "
+"узлов ``Control`` мал и не плохо масштабируется. Есть файл шрифта, "
+"включенный в игровые ресурсы под названием \"Xolonium-Regular.ttf\". Чтобы "
+"использовать этот шрифт, выполните следующие действия для каждого из трех "
+"узлов ``Control``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:938
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""

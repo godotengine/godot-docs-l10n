@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
 msgid "SceneTree"
-msgstr ""
+msgstr "场景树"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:7
 msgid "Introduction"
@@ -30,7 +30,7 @@ msgstr "简介"
 msgid ""
 "This is where things start getting abstract, but don't panic. There's not "
 "much more depth than this."
-msgstr ""
+msgstr "这就是事情开始变得抽象的地方, 但不要慌张。没有比这更深入的了。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:12
 msgid ""
@@ -38,6 +38,8 @@ msgid ""
 "Scenes are simply a collection of nodes. They become active once they enter "
 "the *scene tree*."
 msgstr ""
+"在前面的教程中, 一切都围绕节点的概念展开。场景只是节点的集合。一旦进入 *场景"
+"树* , 它们就会变得活跃起来。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -46,10 +48,13 @@ msgid ""
 "and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
+"这个概念值得更详细一些。事实上, 场景系统甚至不是 godot 的核心组件, 因为可以跳"
+"过它, 编写一个直接与服务器对话的脚本 (或 c++ 代码), 但以这种方式制作游戏将是"
+"一项大量的工作。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
-msgstr ""
+msgstr "主循环"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:24
 msgid ""
@@ -58,6 +63,8 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"godot 内部的工作方式如下所示。有:ref:`OS <class_OS>`类, 它是在开始时运行的唯"
+"一实例。之后, 加载所有驱动程序、服务器、脚本语言、场景系统等。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:29
 msgid ""
@@ -66,6 +73,9 @@ msgid ""
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"初始化完成后, 需要向:ref:`OS <class_OS>`提供一个:ref:`MainLoop "
+"<class_MainLoop>`来运行。到目前为止, 所有这些都是内部工作 (您可以检查main/"
+"main.cpp文件在源代码中, 如果你曾经有兴趣看到它是如何在内部工作)。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
 msgid ""
@@ -74,12 +84,16 @@ msgid ""
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
+"用户程序或游戏从主循环开始。此类有几个方法, 用于初始化、空闲 (框架同步回调)、"
+"固定 (物理同步回调) 和输入。同样, 这是低级别的, 在Godot中制作游戏时, 编写自己"
+"的主循环意义不大。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
+"解释Godot如何工作的方法之一是, 它是一个高级的游戏引擎, 超过了一个低级中间件。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr "싱글톤 (오토로드) (Singletons (AutoLoad))"
+msgstr "싱글톤(오토로드)(Singletons(AutoLoad))"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -31,8 +31,9 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
-"고도의 씬 시스템은, 강력하고 유연하지만, 단점이 있습니다: 하나 이상의 씬이 필"
-"요하기 때문에 정보를 저장할 방법이 없습니다 (예: 플래이어의 점수나 인벤토리)."
+"Godot의 씬 시스템은, 강력하고 유연하지만, 단점이 있습니다: 하나 이상의 씬이 "
+"필요하기 때문에 정보를 저장할 방법이 없습니다 (예: 플래이어의 점수나 인벤토"
+"리)."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
@@ -60,7 +61,6 @@ msgstr ""
 "터를 저장하고 불러오는 것은 성가시고 느려질 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -68,8 +68,10 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
-"`Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ 은 씬 "
-"간의 지속적인 정보를 저장하는 사례를 해결하는 일반적인 유용한 도구입니다."
+"`Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_\\ 은 "
+"씬들 사이에서 지속적인 정보를 저장하는 일반적인 사례를 해결하는 유용한 도구입"
+"니다. 우리의 경우에는 서로 다른 이름을 가진 여러가지 싱글톤을 같은 씬이나 클"
+"래스에 재사용할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
@@ -81,7 +83,7 @@ msgstr "현재 실행 중인 씬과 상관없이, 항상 불러와집니다"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
-msgstr "플레이어 정보와 같은, 글로벌 변수를 저장할 수 있습니다"
+msgstr "플레이어 정보와 같은, 전역 변수를 저장할 수 있습니다"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
 msgid "Can handle switching scenes and between-scene transitions"
@@ -91,7 +93,7 @@ msgstr "씬을 바꾸는 것과 씬 전환 사이를 다룰 수 있습니다"
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
-msgstr "GDScript가 글로벌 변수를 지원하지 않기 때문에 싱글톤처럼 행동합니다"
+msgstr "GDScript가 전역 변수를 지원하지 않기 때문에 싱글톤처럼 행동합니다"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts caters to this need."
@@ -99,7 +101,7 @@ msgstr "노드와 스크립트 오토로드는 이러한 필요를 충족시킵�
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
-msgstr "오토로드 (AutoLoad)"
+msgstr "오토로드(AutoLoad)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:41
 msgid ""
@@ -109,8 +111,8 @@ msgid ""
 "viewport before any other scenes are loaded."
 msgstr ""
 ":ref:`Node <class_Node>` 에서 상속하는 씬이나 스크립트를 불러오기 위해 오토로"
-"드 (AutoLoad)를 사용할 수 있습니다. 주석: 스크립트를 오토로드 할 떄, 노드가 "
-"만들어지고 스크립트가 거기에 붙습니다. 이 노드는 다른 씬이 불러오기 전까지 루"
+"드(AutoLoad)를 사용할 수 있습니다. 주석: 스크립트를 오토로드 할 떄, 노드가 만"
+"들어지고 스크립트가 거기에 붙습니다. 이 노드는 다른 씬이 불러오기 전까지 루"
 "트 뷰포트에 추가될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
@@ -122,15 +124,15 @@ msgstr ""
 "을 선택하고 \"오토로드\" 탭으로 갑니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
-#, fuzzy
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which assigned as the node's ``name`` property. The order "
 "of the entries as they added to the global scene tree can be manipulated "
 "using the up/down arrow keys."
 msgstr ""
-"여기서 당신은 원하는 씬이나 스크립트를 추가하실 수 있습니다. 목록에서 각 기입"
-"란에는 노드의 ``name`` 속성으로 지정하는 이름이 필요합니다."
+"여기서 원하는 씬이나 스크립트를 추가하실 수 있습니다. 목록에서 각 항목에는 노"
+"드의 ``name`` 속성으로 지정하는 이름이 필요합니다. 글로벌 씬 트리에 추가된 항"
+"목의 순서는 위/아래 방향키를 사용해 조작할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
@@ -145,6 +147,8 @@ msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
+"\"Enable\" 항목이 체크 되어 있다면 (기본값은 true) 싱글톤은 쉽게 직접 액세스 "
+"될 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -180,7 +184,7 @@ msgid ""
 "autoload.zip>` and open it in Godot."
 msgstr ""
 "시작하기 위해, 여기서 템플릿을 다운로드 하시고 :download:`autoload.zip "
-"<files/autoload.zip>` 그리고 고도에서 여세요."
+"<files/autoload.zip>` 그리고 Godot에서 여세요."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""

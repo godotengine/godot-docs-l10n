@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,9 @@ msgstr ""
 "须是无状态的。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:14
+#, fuzzy
 msgid ""
-"This guide assumes the reader knows how to create C++ modules and godot data "
+"This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
 msgstr ""
 "本文假设读者已经知道如何创建 C++ 模块并对 Godot 的数据类型有所了解。 如果你还"
@@ -47,8 +48,8 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:210
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:244
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:213
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:247
 msgid "References"
 msgstr ""
 
@@ -147,46 +148,47 @@ msgstr ""
 msgid "Here is an example of how to create a custom datatype"
 msgstr "这里有一个创建自定义数据类型的例子"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:173
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:174
 msgid "Considerations"
 msgstr "注意事项"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:175
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:176
+#, fuzzy
 msgid ""
-"Some libraries may not define certain common routines such as i/o handling. "
+"Some libraries may not define certain common routines such as IO handling. "
 "Therefore, Godot call translations are required."
 msgstr ""
 "某些库可能没有提供某些特定的例程，如 I/O 处理。 因此，需要使用 Godot 进行转"
 "译。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:178
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:179
 msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
 "``std::istream``."
 msgstr "这里有一段将 ``FileAccess`` 调用翻译成 ``std::istream`` 的例子。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:212
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:215
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:213
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:216
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:214
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:217
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:217
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:220
 #, fuzzy
 msgid "Registering the new file format"
 msgstr "注册新的文件格式"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:219
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:222
 msgid ""
 "Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
 "The handler selects the proper loader automatically when ``load`` is called."
@@ -194,12 +196,12 @@ msgstr ""
 "Godot 用 ``ResourceLoader`` 句柄注册 ``ResourcesFormatLoader``。 当调用 "
 "``load`` 时，会自动选择合适的句柄进行加载。"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:246
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:249
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L280>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:249
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:252
 msgid "Loading it on GDScript"
 msgstr "在 GDScript 中加载"

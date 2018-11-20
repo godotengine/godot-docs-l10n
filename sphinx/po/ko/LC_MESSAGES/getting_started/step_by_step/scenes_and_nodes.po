@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:4
 msgid "Scenes and nodes"
-msgstr "씬과 노드 (Scenes and nodes)"
+msgstr "씬과 노드(Scenes and nodes)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
 msgid "Introduction"
@@ -53,9 +53,9 @@ msgid ""
 "like being in a kitchen. In this kitchen, *nodes* are like a refrigerator "
 "full of fresh ingredients with which to cook."
 msgstr ""
-"고도에서 게임을 만드는 것도 꽤나 요리하는 느낌입니다. 주방에서 요리를 하듯이 "
-"엔진을 사용합니다. 주방으로 본다면, *노드*\\ 는 요리를 하기 위한 신선한 재료"
-"들이 가득 찬 냉장고로 볼 수 있습니다."
+"Godot에서 게임을 만드는 것도 꽤나 요리하는 느낌입니다. 주방에서 요리를 하듯"
+"이 엔진을 사용합니다. 주방으로 본다면, *노드*\\ 는 요리를 하기 위한 신선한 재"
+"료들이 가득 찬 냉장고로 볼 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:25
 msgid ""
@@ -67,7 +67,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:29
 msgid "Nodes"
-msgstr "노드 (Node)"
+msgstr "노드(Node)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -114,7 +114,7 @@ msgid ""
 "for organizing projects. Since different nodes have different functions, "
 "combining them allows for the creation of more complex functions."
 msgstr ""
-"고도에서, 이런 방식으로 노드들을 배열하는 것은 프로젝트를 조직화하기에 강력"
+"Godot에서, 이런 방식으로 노드들을 배열하는 것은 프로젝트를 조직화하기에 강력"
 "한 도구를 만듭니다. 각각의 노드들이 다른 기능을 가지고 있기에, 그들을 묶는 것"
 "으로 훨씬 복잡한 기능을 만들 수 있습니다."
 
@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:55
 msgid "Scenes"
-msgstr "씬 (Scene)"
+msgstr "씬(Scenes)"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:59
 msgid ""
@@ -192,12 +192,13 @@ msgstr ""
 "사용하는 법을 설명하겠습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
+#, fuzzy
 msgid ""
-"If you run the godot executable outside of a project, the Project Manager "
+"If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"고도 실행 파일을 실행하면, 프로젝트 매니저가 뜹니다. 이걸로 개발자들은 프로젝"
-"트들을 관리할 수 있습니다."
+"Godot 실행 파일을 실행하면, 프로젝트 매니저가 뜹니다. 이걸로 개발자들은 프로"
+"젝트들을 관리할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
@@ -216,8 +217,8 @@ msgid ""
 "Once you've created the \"New Project\", then open it. This will open the "
 "Godot editor:"
 msgstr ""
-"\"새 프로젝트\"를 만들면, 프로젝트를 엽니다. 그러면 고도 에디터가 켜질 것입니"
-"다:"
+"\"새 프로젝트\"를 만들면, 프로젝트를 엽니다. 그러면 Godot 에디터가 켜질 것입"
+"니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:101
 msgid ""
@@ -225,9 +226,9 @@ msgid ""
 "let's open the refrigerator and add some fresh nodes to the project. We'll "
 "begin with a \"Hello World\" message that we'll put on the screen."
 msgstr ""
-"앞에서 말했듯이, 고도로 게임을 만드는 것은 주방에서 요리하는 느낌입니다, 그렇"
-"다면 한번 냉장고를 열고 프로젝트에 신선한 노드들을 추가해 봅시다. 실행을 누르"
-"면 \"Hello World!\"가 화면에 나오게 할 것입니다."
+"앞에서 말했듯이, Godot로 게임을 만드는 것은 주방에서 요리하는 느낌입니다, 그"
+"렇다면 한번 냉장고를 열고 프로젝트에 신선한 노드들을 추가해 봅시다. 실행을 누"
+"르면 \"Hello World!\"가 화면에 나오게 할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:106
 msgid ""
@@ -270,7 +271,7 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
-"노트는 씬 트리 에디터에 나타납니다 (오른쪽 위 상자), 그리고 라벨 속성은 인스"
+"노드는 씬 트리 에디터에 나타납니다 (오른쪽 위 상자), 그리고 라벨 속성은 인스"
 "펙터에 나타납니다 (오른쪽 아래 상자)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
@@ -294,8 +295,9 @@ msgid "Aaaand... Oops."
 msgstr "그리고오... 이런."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
+#, fuzzy
 msgid ""
-"Scenes need to be saved to be run, so save the scene to something like hello."
+"Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
 "씬은 실행하려면 저장을 해야 합니다, 따라서 씬 -> 씬 저장 으로 가서 hello."
@@ -313,7 +315,7 @@ msgid ""
 msgstr ""
 "그러면 재미난 일이 발생합니다. 파일 대화 상자는 특별하기 때문에, 프로젝트 안"
 "에만 저장할 수 있습니다. 프로젝트 경로는 \"res://\"로 \"리소스 경로\"를 의미"
-"합니다. 즉, 파일은 프로젝트 안에만 저장할 수 있다는 것입니다. 나중에 고도에"
+"합니다. 즉, 파일은 프로젝트 안에만 저장할 수 있다는 것입니다. 나중에 Godot에"
 "서 파일을 관리할 때 \"res://\"가 리소스 경로 임을 기억하세요, 그리고 이것으"
 "로 어떤 플랫폼이나 설치 경로와 관계없이 게임 내에서 리소스 파일을 찾을 수 있"
 "습니다."
@@ -354,19 +356,20 @@ msgid ""
 "of frontend to editing a project.godot file."
 msgstr ""
 "이 설정들은 모두 project.godot 파일 내에 들어갑니다, 이것은 win.ini 형식으로 "
-"된 텍스트 문서입니다 (편집을 쉽게 하기 위한 겁니다).당신이 프로젝트를 실행하"
+"된 텍스트 문서입니다 (편집을 쉽게 하기 위한 겁니다). 당신이 프로젝트를 실행하"
 "는 방법을 바꿀 수 있는 많은 설정들이 이 파일 안에 있습니다. 프로젝트를 간단"
-"히 하기 위해, 고도는 project.godot 파일을 편집하기 위한 프로젝트 설정 대화 상"
-"자를 제공합니다."
+"히 하기 위해, Godot는 project.godot 파일을 편집하기 위한 프로젝트 설정 대화 "
+"상자를 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:181
 msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr "대화 상자에 들어가기 위해, 프로젝트 -> 프로젝트 설정으로 가세요."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
+#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
-"Run/Main Scene` property and click on it to select 'hello.tscn'."
+"Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
 "설정을 열었다면, 메인 씬을 설정합시다. 'Application/Run/Main Scene' 속성으로 "
 "가서 'hello.tscn'을 선택합니다."

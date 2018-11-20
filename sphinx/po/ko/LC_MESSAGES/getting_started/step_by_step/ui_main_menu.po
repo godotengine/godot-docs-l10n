@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,8 +43,8 @@ msgid ""
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
-"어떻게 게임 UI를 효율적으로 설계하는지, 그리고 어떻게 고도의 컨트롤 노드를 사"
-"용하는지 배울 겁니다. 이 페이지에서는 시각적인 부분에 중점을 두겠습니다: 모"
+"어떻게 게임 UI를 효율적으로 설계하는지, 그리고 어떻게 Godot의 컨트롤 노드를 "
+"사용하는지 배울 겁니다. 이 페이지에서는 시각적인 부분에 중점을 두겠습니다: 모"
 "든 것은 에디터에서 할 수 있습니다. 어떻게 체력 막대를 코딩하는지 배우려면, :"
 "doc:`ui_code_a_life_bar` 를 읽어주세요"
 
@@ -83,7 +83,7 @@ msgstr ""
 "UI 구성 요소들의 위치 및 크기, 사용자 상호작용에 초점을 둔 평범한 그림으로 말"
 "입니다. 펜과 종이로 할 수 있습니다. 이 부분에서는 화려한 최종 그래픽을 사용하"
 "지 않는 것이 좋습니다. 그러므로, 당신은 간단한 자리 표시 스프라이트만 가지고 "
-"고도로 뛰어드는 겁니다. 이것을 사용하여 플레이어가 인터페이스 주변에서 자신"
+"Godot로 뛰어드는 겁니다. 이것을 사용하여 플레이어가 인터페이스 주변에서 자신"
 "의 길을 찾을 수 있도록 확인하려고 합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:45
@@ -91,10 +91,11 @@ msgid "The UI's rough plan or mockup"
 msgstr "UI의 대략적인 계획이나 모형"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
+#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
-"illustration before you had players playtest your UI. Otherwise:"
+"illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
 "자리 표시자가 꼭 지저분한 것은 아니지만, 그래도 그래픽을 간단하고 깨끗하게 유"
 "지해야 합니다. 당신이 UI를 실행 및 테스트 하기 전까진 특수 효과나, 애니메이"
@@ -130,7 +131,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:64
 msgid "There are two ways to design your UI in Godot. You can:"
-msgstr "고도에는 UI를 디자인하는 두 가지 방법이 있습니다. 먼저 당신은:"
+msgstr "Godot에는 UI를 디자인하는 두 가지 방법이 있습니다. 먼저 당신은:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:66
 msgid ""
@@ -165,8 +166,8 @@ msgid ""
 "The files you'll find in Godot. The graphics look cleaner than on the rough "
 "design, but they're still placeholders"
 msgstr ""
-"고도에서 찾을 수 있는 파일들. 대략적인 디자인보다 더 깨끗해 보이지만, 그들은 "
-"여전히 플레이스 홀더입니다"
+"Godot에서 찾을 수 있는 파일들. 대략적인 디자인보다 더 깨끗해 보이지만, 그들"
+"은 여전히 플레이스 홀더입니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:82
 msgid "Design the main menu"
@@ -543,7 +544,7 @@ msgstr ""
 "일을 마무리하기 위해, 메뉴 옵션 사이에 간격을 추가합시다. ``Size Flags`` 밑"
 "에 있는 ``Custom Constants`` 카테고리를 확장하고, ``Separation`` 변수 옆에 있"
 "는 영역을 클릭합니다. 그것을 30으로 설정합니다. 엔터 키를 누르면, "
-"``Separation`` 속성이 작동하게 되고 고도는 메뉴 옵션 사이에 30 픽셀을 추가합"
+"``Separation`` 속성이 작동하게 되고 Godot는 메뉴 옵션 사이에 30 픽셀을 추가합"
 "니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:267
@@ -574,8 +575,8 @@ msgid ""
 "UI elements."
 msgstr ""
 "반응 형 사용자 인터페이스는 UI가 모든 화면 유형에 크기를 맞게 조정하도록 만드"
-"는 모든 것입니다.TV 화면과 컴퓨터는 다른 크기와 비율을 갖습니다. 고도에서, 우"
-"리는 컨테이너를 사용하여 UI 요소들의 크기와 위치를 제어했습니다."
+"는 모든 것입니다.TV 화면과 컴퓨터는 다른 크기와 비율을 갖습니다. Godot에서, "
+"우리는 컨테이너를 사용하여 UI 요소들의 크기와 위치를 제어했습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
 msgid ""
@@ -599,7 +600,7 @@ msgstr ""
 "당신은 비록 컨테이너가 스프라이트를 움직이게 하지만, 크기를 조절하지 않는 것"
 "을 봤을 것입니다. 이것은 정상입니다. 우리는 UI 시스템이 다른 화면 비율을 처리"
 "하기를 원하지만, 또한 게임 전체가 다른 화면 해상도에 적응해야 합니다. 이를 위"
-"해, 고도는 창 전체를 위 아래로 크기를 조절합니다."
+"해, Godot는 창 전체를 위 아래로 크기를 조절합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:296
 msgid ""

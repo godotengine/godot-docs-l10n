@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "简介"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
-msgstr ""
+msgstr "Godot的动画系统非常强大和灵活。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:11
 msgid ""
@@ -36,35 +36,42 @@ msgid ""
 "splash image. Here's a copy just in case: :download:`robisplash.zip <files/"
 "robisplash.zip>`."
 msgstr ""
+"首先，让我们使用前面教程中的场景(:ref:`doc_splash_screen`)。目标是添加一个"
+"`fade-in 淡入`动画到飞溅图像。这里有一个副本以防万一：:download:`robisplash."
+"zip <files/robisplash.zip>`。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
 msgid "Add an animation player"
-msgstr ""
+msgstr "添加一个动画播放器"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:18
 msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
+"首先，将一个：:ref:`AnimationPlayer <class_AnimationPlayer>`节点作为"
+"`background`(根节点)的子节点添加到场景中："
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
-msgstr ""
+msgstr "当选择这种类型的节点时，动画编辑器面板会出现："
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
-msgstr ""
+msgstr "动画编辑器面板保持可见，直到手动隐藏。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
-msgstr ""
+msgstr "创建动画"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
 msgid ""
 "It's time to create a new animation! Press the new animation button and name "
 "the animation \"intro\" when the dialog appears."
 msgstr ""
+"是时候创建一个新的动画了!当对话框出现时，按下新的动画按钮并将动画命名为"
+"`intro`。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:38
 msgid ""
@@ -72,14 +79,17 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot any property of an object can be animated:"
 msgstr ""
+"现在我们有一个动画，属性编辑器进入`animation editing 动画编辑`模式。在这种模"
+"式下，属性编辑器的每个属性旁边都会出现一个键图标。在Godot中，对象的任何属性都"
+"可以被动画："
 
 #: ../../docs/getting_started/step_by_step/animations.rst:46
 msgid "Editing the animation"
-msgstr ""
+msgstr "编辑动画"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "The logo will appear from the top of the screen."
-msgstr ""
+msgstr "标志将出现在屏幕的顶部。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:50
 msgid ""
@@ -87,38 +97,42 @@ msgid ""
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property:"
 msgstr ""
+"打开动画编辑器面板，选择`logo`节点，将`Rect / Position`属性设置为"
+"`(118，-400)`，按下属性旁边的按键："
 
 #: ../../docs/getting_started/step_by_step/animations.rst:56
 msgid "When the dialog appears, confirm that you are creating a new track."
-msgstr ""
+msgstr "当对话框出现时，确认您正在创建一个新轨道。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "The keyframe will be added in the animation player editor:"
-msgstr ""
+msgstr "关键帧将添加到动画播放器编辑器："
 
 #: ../../docs/getting_started/step_by_step/animations.rst:62
 msgid "Move the editor cursor to the end by clicking here:"
-msgstr ""
+msgstr "点击这里，将编辑器光标移到末尾："
 
 #: ../../docs/getting_started/step_by_step/animations.rst:66
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes, the animation happens."
 msgstr ""
+"将logo的位置改为·(118,0)·，并再次添加一个关键帧。有了两个关键帧，动画就发生"
+"了。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:71
 msgid ""
 "Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
 "panel will make the logo descend."
-msgstr ""
+msgstr "按下“从开始播放播放选定动画。（SHIFT-D）“动画面板将使标志下降。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:76
 msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
-msgstr ""
+msgstr "点击“Autoplay on Load 自动加载”按钮，设置动画在场景开始时自动启动。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:81
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
-msgstr ""
+msgstr "最后，当运行场景时，动画应该是这样的："

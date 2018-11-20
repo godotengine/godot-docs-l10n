@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,15 +23,19 @@ msgstr "资源"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
-msgstr ""
+msgstr "节点和资源"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
+#, fuzzy
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
-"Godot as that's the one you use to code behavior and and most of the "
-"engine's features rely on them. There is another datatype that is just as "
-"important: :ref:`Resource <class_Resource>`."
+"Godot as that's the one you use to code behavior and most of the engine's "
+"features rely on them. There is another datatype that is just as important: :"
+"ref:`Resource <class_Resource>`."
 msgstr ""
+"在本教程之前, 我们重点介绍了Godot中的 :ref:`节点 <class_Node>` 类： 因为它是"
+"您用来编写行为代码的类, 并且引擎的大多数功能都依赖于它们。还有另一种数据类型"
+"同样重要： :ref:`资源 <class_Resource>`。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
@@ -40,6 +44,8 @@ msgid ""
 "They don't do anything on their own: instead nodes use the data contained in "
 "resources."
 msgstr ""
+"*节点*给你提供了功能：它们绘制精灵，3D模型，模拟物理，安排用户界面等。*资源*"
+"是*数据容器*。它们不会自己作任何事情，而节点会使用资源包含的数据。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 msgid ""
@@ -50,6 +56,11 @@ msgid ""
 "<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
 "<class_Translation>`."
 msgstr ""
+"Godot从磁盘保存或加载的任何内容都是一种资源。无论它是场景 (.tscn 或 .scn 文"
+"件)、图像、脚本..。下面是一些``资源``示例： :ref:`Texture <class_Texture>`, :"
+"ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
+"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
+"<class_Font>`, :ref:`Translation <class_Translation>`。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 msgid ""
@@ -58,6 +69,8 @@ msgid ""
 "again will return the same copy every time. As resources only contain data "
 "there is no need to duplicate them."
 msgstr ""
+"当引擎从磁盘加载资源时, **它只加载一次**。如果该资源的副本已在内存中, 则尝试"
+"再次加载该资源将每次返回相同的副本。由于资源只包含数据, 因此无需复制它们。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
 msgid ""
@@ -66,36 +79,41 @@ msgid ""
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
+"每个对象 (无论是节点还是资源) 都可以导出属性。有许多类型的属性, 如 string、整"
+"数、vector2等, 这些类型中的任何一种都可以成为资源。这意味着节点和资源都可以包"
+"含作为属性的资源："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
 msgid "External vs built-in"
-msgstr ""
+msgstr "外部与内置"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
 msgid "There are two ways to save resources. They can be:"
-msgstr ""
+msgstr "有两种方法可以保存资源。它们可以是："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr ""
+msgstr "场景的**外部**, 作为单个文件保存在磁盘上。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
-msgstr ""
+msgstr "**内置**, 保存在他们所附加的\\*.tscn或\\*.scn文件中。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
+"更具体地说, 这里有一个:ref:`精灵 <class_Sprite>`节点中的:ref:`纹理 "
+"<class_Texture>`："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid ""
 "Clicking the resource preview allows us to view and edit the resources "
 "properties."
-msgstr ""
+msgstr "单击资源预览可以查看和编辑资源属性。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
 msgid ""
@@ -104,6 +122,9 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes built-in resource."
 msgstr ""
+"Path属性告诉我们资源来自何处。在这里，它来自一个叫``robi.png``的PNG图像。当资"
+"源来自这样的文件时，它属于外部资源。如果您去掉这个路径或此路径为空，则它将成"
+"为内置资源。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -111,22 +132,26 @@ msgid ""
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"内置和外部资源之间的切换发生在保存场景时。在上面的示例中，如果去掉路径\\`"
+"\"res://robi.png\"\\`并且保存，Godot将把图片保存在.tscn场景文件中。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"即使你把某个资源保存成内置资源，当你用这个场景创建多个实例时，引擎只会将资源"
+"加载一次。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
-msgstr ""
+msgstr "从代码中加载资源"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:72
 msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
-msgstr ""
+msgstr "你可以用两种方式在代码中加载资源。首先，您可以随时使用``load()``函数："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""
@@ -134,10 +159,13 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"您也可以预加载资源。与``load``不同，``preload``会从硬盘中读取文件，并在编译的"
+"时候加载它。因此调用``preload``时你不能用变量当做文件路径，你只能用固定的字符"
+"串。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
-msgstr ""
+msgstr "加载场景"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:108
 msgid ""
@@ -145,12 +173,16 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
 "packed inside a resource."
 msgstr ""
+"场景也是资源, 但也有一个陷阱。保存到磁盘的场景是:ref:`打包场景 "
+"<class_PackedScene>`类型的资源。场景被打包在资源内部。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_instance>` method."
 msgstr ""
+"要获取场景的实例，您必须使用:ref:`PackedScene.instance() "
+"<class_PackedScene_instance>`方法。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 msgid ""
@@ -158,6 +190,8 @@ msgid ""
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
+"此方法在场景层次结构中创建节点, 对其进行配置, 并返回场景的根节点。然后, 您可"
+"以将其添加为任何其他节点的子节点。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
 msgid ""
@@ -167,10 +201,14 @@ msgid ""
 "each time. Remember that as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
+"这种方法有几个优点。由于:ref:`PackedScene.instance() "
+"<class_PackedScene_instance>`函数速度相当快, 您可以创建新的敌人、子弹、效果"
+"等, 而无需每次都从磁盘再次加载它们。请记住, 像往常一样, 图像、网格等都是在场"
+"景实例之间共享的。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
-msgstr ""
+msgstr "释放资源"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
 msgid ""
@@ -179,11 +217,13 @@ msgid ""
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
+"当``资源``不再使用时, 它将自动释放自己。因为, 在大多数情况下, 资源包含在节点"
+"中, 当您释放节点时, 如果没有其他节点使用它所拥有的所有资源, 引擎也会释放它"
+"们。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
-#, fuzzy
 msgid "Creating your own resources"
-msgstr "创建节点"
+msgstr "创建自己的资源"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
 msgid ""
@@ -192,6 +232,9 @@ msgid ""
 "serialized text or binary data (/*.tres, /*.res). They also inherit the "
 "reference-counting memory management from the Reference type."
 msgstr ""
+"与 godot 中的任何对象一样, 用户也可以编写参考资料脚本。资源脚本继承了在对象属"
+"性和序列化文本或二进制数据(/*.tres, /*.res)之间自由转换的能力。它们还继承引用"
+"类型的引用计数内存管理。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
@@ -202,12 +245,16 @@ msgid ""
 "ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
 "`Resource <class_Resource>` features:"
 msgstr ""
+"与其他数据结构 (如 json、csv 或自定义 txt 文件) 相比, 这具有许多明显的优势。"
+"用户只能将这些资源导入为:ref:`字典 <class_Dictionary>` (JSON)或要分析的:ref:`"
+"文件 <class_File>`。将资源区分开来的是它们对:ref:`对象 <class_Object>`、:ref:"
+"`引用 <class_Reference>`和:ref:`资源 <class_Resource>`功能的继承："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
-msgstr ""
+msgstr "它们可以定义常量, 因此不需要其他数据字段或对象中的常量。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
 msgid ""
@@ -216,17 +263,19 @@ msgid ""
 "Resource script's structure needs to change, the game using the Resource "
 "need not also change."
 msgstr ""
+"它们可以定义方法, 包括属性的 setter\\ getter 方法。这允许对基础数据进行抽象和"
+"封装。如果资源脚本结构需要更改, 则使用 \"资源\" 的游戏也不需要更改。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
-msgstr ""
+msgstr "它们可以定义信号, 因此资源可以触发对其管理的数据更改的响应。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
-msgstr ""
+msgstr "他们定义了属性，所以用户100%知道他们的数据将存在。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
 msgid ""
@@ -234,12 +283,14 @@ msgid ""
 "feature. Users do not need to implement custom logic to import/export a "
 "resource file's data."
 msgstr ""
+"资源自动序列化和反序列化是一个内置的 godot 引擎功能。用户不需要实现自定义逻辑"
+"来导入/导出资源文件数据。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
-msgstr ""
+msgstr "资源甚至可以递归序列化子资源, 这意味着用户可以设计更复杂的数据结构。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
 msgid ""
@@ -247,6 +298,8 @@ msgid ""
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
 "res) for increased speed and compression."
 msgstr ""
+"用户可以将资源另存为版本控制友好的文本文件(\\*.tres)。导出游戏后, godot 将资"
+"源文件序列化为二进制文件(\\*.res), 以提高速度和压缩。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
 msgid ""
@@ -255,11 +308,14 @@ msgid ""
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
+"godot 引擎检查器用开箱即用的方式呈现和编辑资源文件。因此, 用户通常不需要实现"
+"自定义逻辑来可视化或编辑其数据。为此, 请双击文件系统停靠中的资源文件, 或单击"
+"检查器中的文件夹图标, 然后在对话框中打开该文件。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
-msgstr ""
+msgstr "除了基本资源之外, 它们还可以扩展**其他**资源类型。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
@@ -269,20 +325,25 @@ msgid ""
 "will invalidate the second object's variable. This is not so for Resources "
 "which won't free their memory until *all* instances are gone."
 msgstr ""
+"资源和字典也是不同的, 因为两者都是通过引用传递的, 但只有资源是引用计数。这意"
+"味着, 如果在对象之间传递字典, 并且删除第一个对象, 它将使第二个对象变量无效。"
+"对于资源来说, 情况并非如此, 因为在所有实例消失之前, 资源不会释放他们的内存。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."
-msgstr ""
+msgstr "godot 使在检查器中创建自定义资源变得很容易。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
+"在检查器中创建一个普通的资源对象。这甚至可以是派生资源的类型, 只要您的脚本扩"
+"展该类型。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
-msgstr ""
+msgstr "将检查器中的脚本属性设置为``script``。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
 msgid ""
@@ -291,6 +352,9 @@ msgid ""
 "custom properties too! To save a resource from the Inspector, click the "
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
+"检查器现在将显示您的资源脚本自定义属性。如果编辑了这些值并保存了资源, 检查器"
+"也会序列化自定义属性若要从检查器中保存资源, 请单击 \"检查器工具\" 菜单 (右上"
+"角), 然后选择 \"保存\" 或 \"另存为...\"。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
 msgid ""
@@ -300,10 +364,12 @@ msgid ""
 "your script alone will add it to the Inspector's creation dialog. This will "
 "auto-add your script to the Resource object you create."
 msgstr ""
+"如果脚本语言支持脚本类, 则简化了过程。仅定义脚本的名称会将其添加到检查器创建"
+"对话框中。这将自动将脚本添加到您创建的资源对象中。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
 msgid "Let's see some examples."
-msgstr ""
+msgstr "让我们看看一些例子。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
 msgid ""
@@ -313,6 +379,9 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
+"资源脚本类似于Unity的脚本对象。检查器提供对自定义资源的内置支持。如果需要, 用"
+"户甚至可以设计自己的基于控件的工具脚本, 并将它们与:ref:`EditorPlugin "
+"<class_EditorPlugin>`结合起来, 为其数据创建自定义可视化和编辑器。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
 msgid ""
@@ -320,30 +389,36 @@ msgid ""
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
+"虚幻4引擎的数据表和 CurveTables 也很容易使用资源脚本重新创建。数据表是映射到"
+"自定义结构的字符串, 类似于将字符串映射到辅助自定义资源脚本的字典。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
-msgstr ""
+msgstr "而不是只是内联字典值, 你也可以, 或者..。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
-msgstr ""
+msgstr "从电子表格导入值的表, 并生成这些键值对, 或..。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
 msgstr ""
+"在编辑器中设计可视化, 并创建一个简单的插件, 当您打开这些类型的资源时, 将其添"
+"加到检查器中。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
 msgid ""
 "CurveTables are the same thing except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
+"CurveTables 是相同的事情, 除了映射到浮点值的数组或:ref:`Curve "
+"<class_Curve>`/:ref:`Curve2D <class_Curve2D>`资源对象。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""
@@ -354,6 +429,10 @@ msgid ""
 "keyword in GDScript) won't work. Godot will not serialize the custom "
 "properties on the script subclass properly."
 msgstr ""
+"请注意, 资源文件(\\*.tres/\\*.res)将存储在文件中的脚本的路径。加载时, 它们将"
+"提取并加载此脚本作为其类型的扩展。这意味着尝试分配一个子类, 即脚本的内部类 "
+"(例如在 gdscript 中使用``类``关键字) 是不起作用的。godot 不会正确序列化脚本子"
+"类上的自定义属性。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:363
 msgid ""
@@ -361,3 +440,5 @@ msgid ""
 "doesn't extend ``Resource``, and then determine that the script failed to "
 "load for the Resource object since the types are incompatible."
 msgstr ""
+"在下面的示例中, godot 将加载``节点``脚本, 查看它不会扩展``资源``, 然后确定该"
+"脚本未能为资源对象加载, 因为这些类型不兼容。"

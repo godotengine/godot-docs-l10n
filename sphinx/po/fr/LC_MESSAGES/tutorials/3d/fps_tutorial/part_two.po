@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,80 +40,75 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:17
 msgid ""
 "You are assumed to have finished :ref:`doc_fps_tutorial_part_one` before "
-"moving on to this part of the tutorial."
+"moving on to this part of the tutorial. The finished project from :ref:"
+"`doc_fps_tutorial_part_one` will be the starting project for part 2"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:19
-msgid ""
-"The finished project from :ref:`doc_fps_tutorial_part_one` will be the "
-"starting project for part 2"
-msgstr ""
-
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:21
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:20
 msgid "Let's get started!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:24
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:23
 msgid "Making a system to handle animations"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:26
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:25
 msgid ""
 "First we need a way to handle changing animations. Open up ``Player.tscn`` "
 "and select the :ref:`AnimationPlayer <class_AnimationPlayer>` Node "
 "(``Player`` -> ``Rotation_Helper`` -> ``Model`` -> ``Animation_Player``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:29
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:28
 msgid ""
 "Create a new script called ``AnimationPlayer_Manager.gd`` and attach that to "
 "the :ref:`AnimationPlayer <class_AnimationPlayer>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:31
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:30
 msgid "Add the following code to ``AnimationPlayer_Manager.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:153
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:152
 msgid "Lets go over what this script is doing:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:157
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:156
 msgid "Lets start with this script's class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:159
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:158
 msgid ""
 "``states``: A dictionary for holding our animation states. (Further "
 "explanation below)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:160
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:159
 msgid ""
 "``animation_speeds``: A dictionary for holding all of the speeds we want to "
 "play our animations at."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:161
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:160
 msgid ""
 "``current_state``: A variable for holding the name of the animation state we "
 "are currently in."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:162
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:161
 msgid ""
 "``callback_function``: A variable for holding the callback function. "
 "(Further explanation below)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:164
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:163
 msgid ""
 "If you are familiar with state machines, then you may have noticed that "
 "``states`` is structured like a basic state machine. Here is roughly how "
 "``states`` is set up:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:167
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:166
 msgid ""
 "``states`` is a dictionary with the key being the name of the current state, "
 "and the value being an array holding all of the animations (states) we can "
@@ -122,7 +117,7 @@ msgid ""
 "``Rifle_equip``, and ``Idle_unarmed``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:172
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:171
 msgid ""
 "If we try to transition to a state that is not included in the possible "
 "transitions states for the state we are in, then we get a warning message "
@@ -131,49 +126,49 @@ msgid ""
 "``animation_ended``"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:176
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:175
 msgid ""
 "For the sake of keeping this tutorial simple we are not using a 'proper' "
 "state machine. If you are interested to know more about state machines, see "
 "the following articles:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:180
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:179
 msgid ""
 "(Python example) https://dev.to/karn/building-a-simple-state-machine-in-"
 "python"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:181
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:180
 msgid ""
 "(C# example) https://www.codeproject.com/Articles/489136/"
 "UnderstandingplusandplusImplementingplusStateplusP"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:182
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:181
 msgid "(Wiki article) https://en.wikipedia.org/wiki/Finite-state_machine"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:184
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:183
 msgid ""
 "``animation_speeds`` is how fast each animation will play. Some of the "
 "animations are a little slow and in an effort to make everything look "
 "smooth, we need to play them at faster speeds."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:187
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:186
 msgid ""
 "Notice that all of the firing animations are faster than their normal speed. "
 "Remember this for later!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:189
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:188
 msgid ""
 "``current_state`` will hold the name of the animation state we are currently "
 "in."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:191
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:190
 msgid ""
 "Finally, ``callback_function`` will be a :ref:`FuncRef <class_FuncRef>` "
 "passed in by the player for spawning bullets at the proper frame of "
@@ -182,28 +177,28 @@ msgid ""
 "script, which is how we will use it later."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:197
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:196
 msgid "Now lets look at ``_ready``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:199
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:198
 msgid ""
 "First we are setting our animation to ``Idle_unarmed`` using the "
 "``set_animation`` function, so we for sure start in that animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:202
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:201
 msgid ""
 "Next we connect the ``animation_finished`` signal to this script and assign "
 "it to call ``animation_ended``. This means whenever an animation is "
 "finished, ``animation_ended`` will be called."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:207
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:206
 msgid "Lets look at ``set_animation`` next."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:209
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:208
 msgid ""
 "``set_animation`` changes the animation to the animation named "
 "``animation_name`` *if* we can transition to it. In other words, if the "
@@ -211,21 +206,21 @@ msgid ""
 "in ``states``, then we will change to that animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:213
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:212
 msgid ""
 "To start we check if the passed in animation name is the same name as the "
 "animation currently playing. If they are the same, then we write a warning "
 "to the console and return ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:216
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:215
 msgid ""
 "Next we see if :ref:`AnimationPlayer <class_AnimationPlayer>` has the "
 "animation with the name ``animation_name`` using ``has_animation``. If it "
 "does not, we return ``false``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:219
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:218
 msgid ""
 "Then we check if ``current_state`` is set or not. If ``current_state`` is "
 "*not* currently set, we set ``current_state`` to the passed in animation "
@@ -234,17 +229,17 @@ msgid ""
 "``animation_speeds`` and then we return ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:223
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:222
 msgid "Blend time is how long to blend/mix the two animations together."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:225
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:224
 msgid ""
 "By putting in a value of ``-1``, the new animation instantly plays, "
 "overriding whatever animation is already playing."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:227
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:226
 msgid ""
 "If you put in a value of ``1``, for one second the new animation will play "
 "with increasing strength, blending the two animations together for one "
@@ -253,19 +248,19 @@ msgid ""
 "a walking animation to a running animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:231
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:230
 msgid ""
 "We set the blend time to ``-1`` because we want to instantly change "
 "animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:233
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:232
 msgid ""
 "If we have a state in ``current_state``, then we get all of the possible "
 "states we can transition to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:235
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:234
 msgid ""
 "If the animation name is in the list of possible transitions, we set "
 "``current_state`` to the passed in animation (``animation_name``), tell :ref:"
@@ -273,25 +268,25 @@ msgid ""
 "time of ``-1`` at the speed set in ``animation_speeds`` and return ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:241
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:240
 msgid "Now lets look at ``animation_ended``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:243
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:242
 msgid ""
 "``animation_ended`` is the function that will be called by :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` when it's done playing an "
 "animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:246
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:245
 msgid ""
 "For certain animation states, we may need to transition into another state "
 "when its finished. To handle this, we check for every possible animation "
 "state. If we need to, we will transition into another state."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:249
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:248
 msgid ""
 "If you are using your own animated models, make sure that none of the "
 "animations are set to loop. Looping animations do not send the "
@@ -299,14 +294,14 @@ msgid ""
 "are about to loop again."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:253
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:252
 msgid ""
 "the transitions in ``animation_ended`` ideally would be part of the data in "
 "``states``, but in an effort to make the tutorial easier to understand, "
 "we'll hard code each state transition in ``animation_ended``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:259
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:258
 msgid ""
 "Finally we have ``animation_callback``. This function will be called by a "
 "function track in our animations. If we have a :ref:`FuncRef "
@@ -315,39 +310,39 @@ msgid ""
 "``callback_function``, we print out a warning to the console."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:263
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:262
 msgid ""
 "Try running ``Testing_Area.tscn`` to make sure there are no runtime issues. "
 "If the game runs but nothing seems to have changed, then everything is "
 "working correctly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:267
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:266
 msgid "Getting the animations ready"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:269
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:268
 msgid ""
 "Now that we have a working animation manager, we need to call it from our "
 "player script. Before that though, we need to set some animation callback "
 "tracks in our firing animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:272
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:271
 msgid ""
 "Open up ``Player.tscn`` if you don't have it open and navigate to the :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` node (``Player`` -> "
 "``Rotation_Helper`` -> ``Model`` -> ``Animation_Player``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:275
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:274
 msgid ""
 "We need to attach a function track to three of our animations: The firing "
 "animation for the pistol, rifle, and knife. Let's start with the pistol. "
 "Click the animation drop down list and select \"Pistol_fire\"."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:278
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:277
 msgid ""
 "Now scroll down to the bottom of the list of animation tracks. The final "
 "item in the list should read ``Armature/Skeleton:Left_UpperPointer``. Now at "
@@ -355,7 +350,7 @@ msgid ""
 "window, right next to the loop button and the up arrow."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:284
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:283
 msgid ""
 "This will bring up a window with three choices. We're wanting to add a "
 "function callback track, so click the option that reads \"Add Call Func Track"
@@ -363,7 +358,7 @@ msgid ""
 "ref:`AnimationPlayer <class_AnimationPlayer>` node, select it, and press OK."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:290
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:289
 msgid ""
 "Now at the bottom of list of animation tracks you will have a green track "
 "that reads \"AnimationPlayer\". Now we need to add the point where we want "
@@ -371,39 +366,39 @@ msgid ""
 "where the muzzle starts to flash."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:294
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:293
 msgid ""
 "The timeline is the window where all of the points in our animation are "
 "stored. Each of the little points represents a point of animation data."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:297
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:296
 msgid ""
 "Scrubbing the timeline means moving ourselves through the animation. So when "
 "we say \"scrub the timeline until you reach a point\", what we mean is move "
 "through the animation window until you reach the point on the timeline."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:301
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:300
 msgid ""
 "Also, the muzzle of a gun is the end point where the bullet comes out. The "
 "muzzle flash is the flash of light that escapes the muzzle when a bullet is "
 "fired. The muzzle is also sometimes referred to as the barrel of the gun."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:305
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:304
 msgid ""
 "For finer control when scrubbing the timeline, press ``control`` and scroll "
 "forward with the mouse wheel to zoom in. Scrolling backwards will zoom out."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:308
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:307
 msgid ""
 "You can also change how the timeline scrubbing snaps by changing the value "
 "in ``Step (s)`` to a lower/higher value."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:310
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:309
 msgid ""
 "Once you get to a point you like, press the little green plus symbol on the "
 "far right side of the ``AnimationPlayer`` track. This will place a little "
@@ -411,14 +406,14 @@ msgid ""
 "``AnimationPlayer`` track."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:316
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:315
 msgid ""
 "Now we have one more step before we are done with the pistol. Select the "
 "\"enable editing of individual keys\" button on the far right corner of the "
 "animation window. It looks like a pencil with a little point beside it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:321
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:320
 msgid ""
 "Once you've clicked that, a new window will open on the right side. Now "
 "click the green point on the ``AnimationPlayer`` track. This will bring up "
@@ -426,31 +421,31 @@ msgid ""
 "name field, enter ``animation_callback`` and press ``enter``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:325
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:324
 msgid ""
 "Now when we are playing this animation the callback function will be "
 "triggered at that specific point of the animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:327
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:326
 msgid ""
 "Be sure to press the \"enable editing of individual keys\" button again to "
 "turn off the ability to edit individual keys so you cannot change one of the "
 "transform tracks by accident!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:332
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:331
 msgid "Let's repeat the process for the rifle and knife firing animations!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:334
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:333
 msgid ""
 "Because the process is exactly the same as the pistol, the process is going "
 "to explained in a little less depth. Follow the steps from above if you get "
 "lost! It is exactly the same, just on a different animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:337
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:336
 msgid ""
 "Go to the \"Rifle_fire\" animation from the animation drop down. Add the "
 "function callback track once you reach the bottom of the animation track "
@@ -459,7 +454,7 @@ msgid ""
 "symbol to add a function callback point at that position on the track."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:341
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:340
 msgid ""
 "Next, click the \"enable editing of individual keys\" button. Select the "
 "newly created function callback point, put \"animation_callback\" into the "
@@ -468,7 +463,7 @@ msgid ""
 "of the transform tracks by accident."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:346
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:345
 msgid ""
 "Now we need to apply the callback function track to the knife animation. "
 "Select the \"Knife_fire\" animation and scroll to the bottom of the "
@@ -477,7 +472,7 @@ msgid ""
 "third of the animation to place the animation callback function point at."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:350
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:349
 msgid ""
 "We will not actually be firing the knife, and the animation is a stabbing "
 "animation rather than a firing one. For this tutorial we are reusing the gun "
@@ -485,7 +480,7 @@ msgid ""
 "is consistent with the other animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:354
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:353
 msgid ""
 "From there click the little green plus to add a function callback point at "
 "the current position. Then click the \"enable editing of individual keys\" "
@@ -496,29 +491,29 @@ msgid ""
 "key editing, so we cannot change one of the transform tracks by accident."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:360
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:359
 msgid "Be sure to save your work!"
 msgstr "Assurez-vous de sauvegarder votre travail !"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:362
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:361
 msgid ""
 "With that done, we are almost ready to start adding the ability to fire to "
 "our player script! We need to setup one last scene: The scene for our bullet "
 "object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:366
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:365
 msgid "Creating the bullet scene"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:368
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:367
 msgid ""
 "There are several ways to handle a gun's bullets in video games. In this "
 "tutorial series, we will be exploring two of the more common ways: Objects, "
 "and raycasts."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:373
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:372
 msgid ""
 "One of the two ways is using a bullet object. This will be an object that "
 "travels through the world and handles its own collision code. In this method "
@@ -526,7 +521,7 @@ msgid ""
 "it travels forward."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:377
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:376
 msgid ""
 "There are several advantages to this method. The first being we do not have "
 "to store the bullets in our player. We can simply create the bullet and then "
@@ -534,7 +529,7 @@ msgid ""
 "the proper signal(s) to the object it collides with, and destroying itself."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:380
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:379
 msgid ""
 "Another advantage is we can have more complex bullet movement. If we want to "
 "make the bullet fall ever so slightly as time goes on, we can make the "
@@ -544,7 +539,7 @@ msgid ""
 "nothing in real life moves instantly from one point to another."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:384
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:383
 msgid ""
 "One of the huge disadvantages is performance. While having each bullet "
 "calculate their own paths and handle their own collision allows for a lot of "
@@ -554,7 +549,7 @@ msgid ""
 "potentially have several hundred bullets."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:388
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:387
 msgid ""
 "Despite the performance hit, many first person shooters include some form of "
 "object bullets. Rocket launchers are a prime example because in many first "
@@ -563,7 +558,7 @@ msgid ""
 "because they generally bounce around the world before exploding."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:392
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:391
 msgid ""
 "While I cannot say for sure this is the case, these games *probably* use "
 "bullet objects in some form or another: (These are entirely from my "
@@ -571,36 +566,36 @@ msgid ""
 "of the following games)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:395
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:394
 msgid ""
 "Halo (Rocket launchers, fragment grenades, sniper rifles, brute shot, and "
 "more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:396
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:395
 msgid ""
 "Destiny (Rocket launchers, grenades, fusion rifles, sniper rifles, super "
 "moves, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:397
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:396
 msgid ""
 "Call of Duty (Rocket launchers, grenades, ballistic knives, crossbows, and "
 "more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:398
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:397
 msgid "Battlefield (Rocket launchers, grenades, claymores, mortars, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:400
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:399
 msgid ""
 "Another disadvantage with bullet objects is networking. Bullet objects have "
 "to sync the positions (at least) with all the clients that are connected to "
 "the server."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:403
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:402
 msgid ""
 "While we are not implementing any form of networking (as that would be in "
 "its own entire tutorial series), it is a consideration to keep in mind when "
@@ -608,19 +603,19 @@ msgid ""
 "form of networking in the future."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:408
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:407
 msgid ""
 "The other way of handling bullet collisions we will be looking at, is "
 "raycasting."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:410
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:409
 msgid ""
 "This method is extremely common in guns that have fast moving bullets that "
 "rarely change trajectory over time."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:412
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:411
 msgid ""
 "Instead of creating a bullet object and sending it through space, we instead "
 "send a ray starting from the barrel/muzzle of the gun forwards. We set the "
@@ -628,7 +623,7 @@ msgid ""
 "length we can adjust how far the bullet 'travels' through space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:415
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:414
 msgid ""
 "While I cannot say for sure this is the case, these games *probably* use "
 "raycasts in some form or another: (These are entirely from my observations. "
@@ -636,36 +631,36 @@ msgid ""
 "following games)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:418
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:417
 msgid ""
 "Halo (Assault rifles, DMRs, battle rifles, covenant carbine, spartan laser, "
 "and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:419
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:418
 msgid ""
 "Destiny (Auto rifles, pulse rifles, scout rifles, hand cannons, machine "
 "guns, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:420
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:419
 msgid ""
 "Call of Duty (Assault rifles, light machine guns, sub machine guns, pistols, "
 "and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:421
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:420
 msgid "Battlefield (Assault rifles, SMGs, carbines, pistols, and more)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:423
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:422
 msgid ""
 "One huge advantage for this method is that it's light on performance. "
 "Sending a couple hundred rays through space is *way* easier for the computer "
 "to calculate than sending a couple hundred bullet objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:427
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:426
 msgid ""
 "Another advantage is we can instantly know if we've hit something or not "
 "exactly when we call for it. For networking this is important because we do "
@@ -673,7 +668,7 @@ msgid ""
 "send whether or not the raycast hit."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:430
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:429
 msgid ""
 "Raycasting does have some disadvantages though. One major disadvantage is we "
 "cannot easily cast a ray in anything but a linear line. This means we can "
@@ -683,7 +678,7 @@ msgid ""
 "heavier on performance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:434
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:433
 msgid ""
 "Another disadvantage is we cannot see the bullet. With bullet objects we can "
 "actually see the bullet travel through space if we attach a mesh to it, but "
@@ -694,13 +689,13 @@ msgid ""
 "theoretically the bullets move so fast our eyes could not see it anyway."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:441
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:440
 msgid ""
 "Lets get the bullet object setup. This is what our pistol will create when "
 "the \"Pistol_fire\" animation callback function is called."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:444
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:443
 msgid ""
 "Open up ``Bullet_Scene.tscn``. The scene contains :ref:`Spatial "
 "<class_Spatial>` node called bullet, with a :ref:`MeshInstance "
@@ -708,20 +703,20 @@ msgid ""
 "`CollisionShape <class_CollisionShape>` children to it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:448
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:447
 msgid ""
 "Create a new script called ``Bullet_script.gd`` and attach it to the "
 "``Bullet`` :ref:`Spatial <class_Spatial>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:450
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:449
 msgid ""
 "We are going to move the entire bullet object at the root (``Bullet``). We "
 "will be using the :ref:`Area <class_Area>` to check whether or not we've "
 "collided with something"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:452
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:451
 msgid ""
 "Why are we using a :ref:`Area <class_Area>` and not a :ref:`RigidBody "
 "<class_RigidBody>`? The main reason we're not using a :ref:`RigidBody "
@@ -731,61 +726,61 @@ msgid ""
 "<class_RigidBody>` nodes, including other bullets, will be effected."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:456
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:455
 msgid ""
 "Another reason is simply because it is easier to detect collisions with a :"
 "ref:`Area <class_Area>`!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:458
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:457
 msgid "Here's the script that will control our bullet:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:494
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:493
 msgid "Lets go through the script:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:498
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:497
 msgid "First we define a few class variables:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:500
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:499
 msgid "``BULLET_SPEED``: The speed the bullet travels at."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:501
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:500
 msgid ""
 "``BULLET_DAMAGE``: The damage the bullet will cause to whatever it collides "
 "with."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:502
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:501
 msgid "``KILL_TIMER``: How long the bullet can last without hitting anything."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:503
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:502
 msgid "``timer``: A float for tracking how long the bullet has been alive."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:504
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:503
 msgid ""
 "``hit_something``: A boolean for tracking whether or not we've hit something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:506
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:505
 msgid ""
 "With the exception of ``timer`` and ``hit_something``, all of these "
 "variables change how the bullet interacts with the world."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:509
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:508
 msgid ""
 "The reason we are using a kill timer is so we do not have a case where we "
 "get a bullet travelling forever. By using a kill timer, we can assure that "
 "no bullets will travel forever and consume resources."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:513
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:512
 msgid ""
 "As in :ref:`doc_fps_tutorial_part_one`, we have a couple all uppercase class "
 "variables. The reason behind this is the same as the reason given in :ref:"
@@ -795,37 +790,37 @@ msgid ""
 "variables and not constants."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:520
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:519
 msgid ""
 "In ``_ready`` we set the area's ``body_entered`` signal to ourself so that "
 "it calls the ``collided`` function when a body enters the area."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:525
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:524
 msgid ""
 "``_physics_process`` gets the bullet's local ``Z`` axis. If you look in at "
 "the scene in local mode, you will find that the bullet faces the positive "
 "local ``Z`` axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:528
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:527
 msgid ""
 "Next we translate the entire bullet by that forward direction, multiplying "
 "in our speed and delta time."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:530
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:529
 msgid ""
 "After that we add delta time to our timer and check if the timer has as long "
 "or longer than our ``KILL_TIME`` constant. If it has, we use ``queue_free`` "
 "to free the bullet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:535
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:534
 msgid "In ``collided`` we check if we've hit something yet or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:537
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:536
 msgid ""
 "Remember that ``collided`` is only called when a body has entered the :ref:"
 "`Area <class_Area>` node. If the bullet has not already collided with "
@@ -835,14 +830,14 @@ msgid ""
 "bullet's rotation and position."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:542
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:541
 msgid ""
 "in ``collided``, the passed in body can be a :ref:`StaticBody "
 "<class_StaticBody>`, :ref:`RigidBody <class_RigidBody>`, or :ref:"
 "`KinematicBody <class_KinematicBody>`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:545
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:544
 msgid ""
 "We set the Bullet's ``hit_something`` variable to ``true`` because "
 "regardless of whether or not the body that the bullet collided with has the "
@@ -850,17 +845,17 @@ msgid ""
 "sure the bullet does not hit anything else."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:548
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:547
 msgid "Then we free the bullet using ``queue_free``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:550
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:549
 msgid ""
 "You may be wondering why we even have a ``hit_something`` variable if we "
 "free the bullet using ``queue_free`` as soon as it hits something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:553
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:552
 msgid ""
 "The reason we need to track whether we've hit something or not is because "
 "``queue_free`` does not immediately free the node, so the bullet could "
@@ -869,19 +864,19 @@ msgid ""
 "hit one object."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:561
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:560
 msgid ""
 "Before we start programming the player again, let's take a quick look at "
 "``Player.tscn``. Open up ``Player.tscn`` again."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:564
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:563
 msgid ""
 "Expand ``Rotation_Helper`` and notice how it has two nodes: "
 "``Gun_Fire_Points`` and ``Gun_Aim_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:567
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:566
 msgid ""
 "``Gun_aim_point`` is the point that the bullets will be aiming at. Notice "
 "how it is lined up with the center of the screen and pulled a distance "
@@ -889,26 +884,26 @@ msgid ""
 "bullets will for sure collide with as it goes along."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:572
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:571
 msgid ""
 "There is a invisible mesh instance for debugging purposes. The mesh is a "
 "small sphere that visually shows where the bullets will be aiming at."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:575
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:574
 msgid ""
 "Open up ``Gun_Fire_Points`` and you'll find three more :ref:`Spatial "
 "<class_Spatial>` nodes, one for each weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:578
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:577
 msgid ""
 "Open up ``Rifle_Point`` and you'll find a :ref:`Raycast <class_Raycast>` "
 "node. This is where we will be sending the raycasts for our rifle's bullets. "
 "The length of the raycast will dictate how far our bullets will travel."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:582
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:581
 msgid ""
 "We are using a :ref:`Raycast <class_Raycast>` node to handle the rifle's "
 "bullet because we want to fire lots of bullets quickly. If we use bullet "
@@ -916,7 +911,7 @@ msgid ""
 "machines."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:586
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:585
 msgid ""
 "If you are wondering where the positions of the points came from, they are "
 "the rough positions of the ends of each weapon. You can see this by going to "
@@ -925,7 +920,7 @@ msgid ""
 "the end of each weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:592
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:591
 msgid ""
 "Open up ``Knife_Point`` and you'll find a :ref:`Area <class_Area>` node. We "
 "are using a :ref:`Area <class_Area>` for the knife because we only care for "
@@ -934,20 +929,20 @@ msgid ""
 "object that looks like a knife."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:597
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:596
 msgid ""
 "Finally, we have ``Pistol_Point``. This is the point where we will be "
 "creating/instancing our bullet objects. We do not need any additional nodes "
 "here, as the bullet handles all of its own collision detection."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:601
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:600
 msgid ""
 "Now that we've seen how we will handle our other weapons, and where we will "
 "spawn the bullets, let's start working on making them work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:604
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:603
 msgid ""
 "You can also look at the HUD nodes if you want. There is nothing fancy there "
 "and other than using a single :ref:`Label <class_Label>`, we will not be "
@@ -956,66 +951,66 @@ msgid ""
 "nodes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:610
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:609
 msgid "Creating the first weapon"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:612
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:611
 msgid "Lets write the code for each of our weapons, starting with the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:614
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:613
 msgid ""
 "Select ``Pistol_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Pistol_Point``) and create a new script called "
 "``Weapon_Pistol.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:616
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:615
 msgid "Add the following code to ``Weapon_Pistol.gd``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:667
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:666
 msgid "Let's go over how the script works."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:671
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:670
 msgid "First we define some class variables we'll need in the script:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:673
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:672
 msgid "``DAMAGE``: The amount of damage a single bullet does."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:674
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:673
 msgid "``IDLE_ANIM_NAME``: The name of the pistol's idle animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:675
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:674
 msgid "``FIRE_ANIM_NAME``: The name of the pistol's fire animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:676
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:675
 msgid ""
 "``is_weapon_enabled``: A variable for checking whether this weapon is in use/"
 "enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:677
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:676
 msgid "``bullet_scene``: The bullet scene we worked on earlier."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:678
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:677
 msgid "``player_node``: A variable to hold ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:680
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:679
 msgid ""
 "The reason we define most of these variables is so we can use them in "
 "``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:682
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:681
 msgid ""
 "All of the weapons we'll make will have all of these variables (minus "
 "``bullet_scene``) so we have a consistent interface to interact with in "
@@ -1025,7 +1020,7 @@ msgid ""
 "to change much of the code in ``Player.gd`` and it will just work."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:687
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:686
 msgid ""
 "We could write all of the code in ``Player.gd``, but then ``Player.gd`` will "
 "get increasingly harder to manage as we add weapons. By using a modular "
@@ -1033,23 +1028,23 @@ msgid ""
 "while also making it easier to add/remove/modify weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:692
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:691
 msgid "In ``_ready`` we simply pass over it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:694
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:693
 msgid ""
 "There is one thing of note though, an assumption that we'll fill in ``Player."
 "gd`` at some point."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:696
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:695
 msgid ""
 "We are going to assume that ``Player.gd`` will pass themselves in before "
 "calling any of the functions in ``Weapon_Pistol.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:698
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:697
 msgid ""
 "While this can lead to situations where the player does not pass themselves "
 "in (because we forget), we would have to have a long string of "
@@ -1059,28 +1054,28 @@ msgid ""
 "to each weapon in ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:704
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:703
 msgid "Next let's look at ``fire_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:706
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:705
 msgid "The first thing we do is instance the bullet scene we made earlier."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:708
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:707
 msgid ""
 "By instancing the scene, we are creating a new node holding all of the "
 "node(s) in the scene we instanced, effectively cloning that scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:710
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:709
 msgid ""
 "Then we add a ``clone`` to the first child node of the root of the scene we "
 "are currently in. By doing this we're making it a child of the root node of "
 "the currently loaded scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:712
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:711
 msgid ""
 "In other words, we are adding a ``clone`` as a child of the first node "
 "(whatever is at the top of the scene tree) in the currently loaded/opened "
@@ -1089,21 +1084,21 @@ msgid ""
 "scene."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:715
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:714
 msgid ""
 "As mentioned later below in the section on adding sounds, this method makes "
 "a assumption. This will be explained later in the section on adding sounds "
 "in :ref:`doc_fps_tutorial_part_three`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:718
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:717
 msgid ""
 "Next we set the global transform of the clone to the ``Pistol_Aim_Point``'s "
 "global transform. The reason we do this is so the bullet is spawned at the "
 "end of the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:720
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:719
 msgid ""
 "You can see that ``Pistol_Aim_Point`` is positioned right at the end of the "
 "pistol by clicking the :ref:`AnimationPlayer <class_AnimationPlayer>` and "
@@ -1111,23 +1106,23 @@ msgid ""
 "at the end of the pistol when it fires."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:723
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:722
 msgid ""
 "Next we scale it up by a factor of ``4`` because the bullet scene is a "
 "little too small by default."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:725
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:724
 msgid ""
 "Then we set the bullet's damage (``BULLET_DAMAGE``) to the amount of damage "
 "a single pistol bullet does (``DAMAGE``)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:729
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:728
 msgid "Now let's look at ``equip_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:731
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:730
 msgid ""
 "The first thing we do is check to see if the animation manager is in the "
 "pistol's idle animation. If we are in the pistol's idle animation, we set "
@@ -1135,20 +1130,20 @@ msgid ""
 "successfully been equipped."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:735
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:734
 msgid ""
 "Because we know our pistol's ``equip`` animation automatically transitions "
 "to the pistol's idle animation, if we are in the pistol's idle animation the "
 "pistol must have finished playing the equip animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:738
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:737
 msgid ""
 "We know these animations will transition because we wrote the code to make "
 "them transition in ``Animation_Manager.gd``"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:740
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:739
 msgid ""
 "Next we check to see if the player is in the ``Idle_unarmed`` animation "
 "state. Because all unequipping animations go to this state, and because any "
@@ -1156,24 +1151,24 @@ msgid ""
 "``Pistol_equip`` if the player is in the ``Idle_unarmed`` state."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:743
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:742
 msgid ""
 "Since we know ``Pistol_equip`` will transition to ``Pistol_idle``, we do not "
 "need to do any more additional processing for equipping weapons, but since "
 "we were not able to equip the pistol yet, we return ``false``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:748
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:747
 msgid "Finally, let's look at ``unequip_weapon``:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:750
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:749
 msgid ""
 "``unequip_weapon`` is similar to ``equip_weapon``, but instead we're "
 "checking things in reverse."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:752
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:751
 msgid ""
 "First we check to see if the player is in the idle animation state. Then we "
 "check to make sure the player is not in the ``Pistol_unequip`` animation. If "
@@ -1181,7 +1176,7 @@ msgid ""
 "``pistol_unequip`` animation."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:755
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:754
 msgid ""
 "You may be wondering why we are checking to see if the player is in the "
 "pistol's idle animation, and then making sure the player is not unequipping "
@@ -1191,7 +1186,7 @@ msgid ""
 "unequip animation plays."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:759
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:758
 msgid ""
 "Next we check to see if the player is in ``Idle_unarmed``, which is the "
 "animation state we will transition into from ``Pistol_unequip``. If the "
@@ -1200,42 +1195,42 @@ msgid ""
 "because we have successfully unequipped the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:762
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:761
 msgid ""
 "If the player is not in ``Idle_unarmed``, we return ``false`` because we "
 "have not yet successfully unequipped the pistol."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:765
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:764
 msgid "Creating the other two weapons"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:767
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:766
 msgid ""
 "Now that we have all of the code we'll need for the pistol, let's add the "
 "code for the rifle and knife next."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:769
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:768
 msgid ""
 "Select ``Rifle_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Rifle_Point``) and create a new script called "
 "``Weapon_Rifle.gd``, then add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:822
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:821
 msgid ""
 "Most of this is exactly the same as ``Weapon_Pistol.gd``, so we're only "
 "going to look at what's changed: ``fire_weapon``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:824
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:823
 msgid ""
 "The first thing we do is get the :ref:`Raycast <class_Raycast>` node, which "
 "is a child of ``Rifle_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:826
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:825
 msgid ""
 "Next we force the :ref:`Raycast <class_Raycast>` to update using "
 "``force_raycast_update``. This will force the :ref:`Raycast <class_Raycast>` "
@@ -1243,13 +1238,13 @@ msgid ""
 "collision check with the 3D physics world."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:829
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:828
 msgid ""
 "Then we check to see if the :ref:`Raycast <class_Raycast>` collided with "
 "something."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:831
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:830
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` has collided with something, we first "
 "get the collision body it collided with. This can be a :ref:`StaticBody "
@@ -1257,14 +1252,14 @@ msgid ""
 "`KinematicBody <class_KinematicBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:834
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:833
 msgid ""
 "Next we want to make sure the body we've collided with is not the player, "
 "since we (probably) do not want to give the player the ability to shoot "
 "themselves in the foot."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:836
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:835
 msgid ""
 "If the body is not the player, we then check to see if they have a function/"
 "method called ``bullet_hit``. If they do, we call it and pass in the amount "
@@ -1273,41 +1268,41 @@ msgid ""
 "came."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:841
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:840
 msgid "Now all we need to do is write the code for the knife."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:843
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:842
 msgid ""
 "Select ``Knife_Point`` (``Player`` -> ``Rotation_Helper`` -> "
 "``Gun_Fire_Points`` -> ``Knife_Point``) and create a new script called "
 "``Weapon_Knife.gd``, then add the following:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:894
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:893
 msgid ""
 "As with ``Weapon_Rifle.gd``, the only differences are in ``fire_weapon``, so "
 "let's look at that:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:896
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:895
 msgid ""
 "The first thing we do is get the :ref:`Area <class_Area>` child node of "
 "``Knife_Point``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:898
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:897
 msgid ""
 "Next we want to get all of the collision bodies inside the :ref:`Area "
 "<class_Area>` using ``get_overlapping_bodies``. This will return a list of "
 "every body that touches the :ref:`Area <class_Area>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:901
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:900
 msgid "We next want to go through each of those bodies."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:903
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:902
 msgid ""
 "First we check to make sure the body is not the player, because we do not "
 "want to let the player be able to stab themselves. If the body is the "
@@ -1315,7 +1310,7 @@ msgid ""
 "``bodies``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:906
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:905
 msgid ""
 "If we have not jumped to the next body, we then check to see if the body has "
 "the ``bullet_hit`` function/method. If it does, we call it, passing in the "
@@ -1323,7 +1318,7 @@ msgid ""
 "transform of the :ref:`Area <class_Area>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:909
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:908
 msgid ""
 "While we could attempt to calculate a rough location for where the knife hit "
 "exactly, we are not going to because using the :ref:`Area <class_Area>`'s "
@@ -1331,84 +1326,84 @@ msgid ""
 "position for each body is not worth the effort."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:914
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:913
 msgid "Making the weapons work"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:916
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:915
 msgid "Lets start making the weapons work in ``Player.gd``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:918
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:917
 msgid ""
 "First lets start by adding some class variables we'll need for the weapons:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:936
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:935
 msgid "Lets go over what these new variables will do:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:938
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:937
 msgid ""
 "``animation_manager``: This will hold the :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` node and its script, which we wrote previously."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:939
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:938
 msgid ""
 "``current_weapon_name``: The name of the weapon we are currently using. It "
 "has four possible values: ``UNARMED``, ``KNIFE``, ``PISTOL``, and ``RIFLE``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:940
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:939
 msgid "``weapons``: A dictionary that will hold all of the weapon nodes."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:941
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:940
 msgid ""
 "``WEAPON_NUMBER_TO_NAME``: A dictionary allowing us to convert from a "
 "weapon's number to its name. We'll use this for changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:942
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:941
 msgid ""
 "``WEAPON_NAME_TO_NUMBER``: A dictionary allowing us to convert from a "
 "weapon's name to its number. We'll use this for changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:943
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:942
 msgid ""
 "``changing_weapon``: A boolean to track whether or not we are changing guns/"
 "weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:944
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:943
 msgid "``changing_weapon_name``: The name of the weapon we want to change to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:945
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:944
 msgid ""
 "``health``: How much health our player has. In this part of the tutorial we "
 "will not be using it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:946
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:945
 msgid ""
 "``UI_status_label``: A label to show how much health we have, and how much "
 "ammo we have both in our gun and in reserves."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:950
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:949
 msgid ""
 "Next we need to add a few things in ``_ready``. Here's the new ``_ready`` "
 "function:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:982
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:981
 msgid "Let's go over what's changed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:984
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:983
 msgid ""
 "First we get the :ref:`AnimationPlayer <class_AnimationPlayer>` node and "
 "assign it to the ``animation_manager`` variable. Then we set the callback "
@@ -1417,24 +1412,24 @@ msgid ""
 "function, but we'll get there soon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:988
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:987
 msgid ""
 "Next we get all of the weapon nodes and assign them to ``weapons``. This "
 "will allow us to access the weapon nodes only with their name (``KNIFE``, "
 "``PISTOL``, or ``RIFLE``)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:991
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:990
 msgid ""
 "We then get ``Gun_Aim_Point``'s global position so we can rotate the "
 "player's weapons to aim at it."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:993
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:992
 msgid "Then we go through each weapon in ``weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:995
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:994
 msgid ""
 "We first get the weapon node. If the weapon node is not ``null``, we then "
 "set its ``player_node`` variable to this script (``Player.gd``). Then we "
@@ -1442,56 +1437,56 @@ msgid ""
 "then rotate it by ``180`` degrees on the ``Y`` axis."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:998
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:997
 msgid ""
 "We rotate all of those weapon points by ``180`` degrees on their ``Y`` axis "
 "because our camera is pointing backwards. If we did not rotate all of these "
 "weapon points by ``180`` degrees, all of the weapons would fire backwards."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1001
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1000
 msgid ""
 "Then we set ``current_weapon_name`` and ``changing_weapon_name`` to "
 "``UNARMED``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1003
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1002
 msgid "Finally, we get the UI :ref:`Label <class_Label>` from our HUD."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1007
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1006
 msgid ""
 "Lets add a new function call to ``_physics_process`` so we can change "
 "weapons. Here's the new code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1017
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1016
 msgid "Now we will call ``process_changing_weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1021
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1020
 msgid ""
 "Now lets add all of the player input code for the weapons in "
 "``process_input``. Add the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1061
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1060
 msgid "Lets go over the additions, starting with how we're changing weapons."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1063
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1062
 msgid ""
 "First we get the current weapon's number and assign it to "
 "``weapon_change_number``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1065
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1064
 msgid ""
 "Then we check to see if any of the number keys (keys 1-4) are pressed. If "
 "they are, we set ``weapon_change_number`` to the value mapped at that key."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1068
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1067
 msgid ""
 "The reason key 1 is mapped to ``0`` is because the first element in a list "
 "is mapped to zero, not one. Most list/array accessors in most programming "
@@ -1499,14 +1494,14 @@ msgid ""
 "Zero-based_numbering for more information."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1071
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1070
 msgid ""
 "Next we check to see if ``shift_weapon_positive`` or "
 "``shift_weapon_negative`` is pressed. If one of them are, we add/subtract "
 "``1`` from ``weapon_change_number``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1074
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1073
 msgid ""
 "Because the player may have shifted ``weapon_change_number`` outside of the "
 "number of weapons the player has, we clamp it so it cannot exceed the "
@@ -1514,7 +1509,7 @@ msgid ""
 "``weapon_change_number`` is ``0`` or more."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1077
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1076
 msgid ""
 "Then we check to make sure the player is not already changing weapons. If "
 "the player is not, we then check to see if the weapon the player wants to "
@@ -1524,49 +1519,49 @@ msgid ""
 "set ``changing_weapon`` to true."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1081
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1080
 msgid ""
 "For firing the weapon we first check to see if the ``fire`` action is "
 "pressed. Then we check to make sure the player is not changing weapons. Next "
 "we get the weapon node for the current weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1085
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1084
 msgid ""
 "If the current weapon node does not equal null, and the player is in its "
 "``IDLE_ANIM_NAME`` state, we set the player's animation to the current "
 "weapon's ``FIRE_ANIM_NAME``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1090
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1089
 msgid "Lets add ``process_changing_weapons`` next."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1092
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1091
 msgid "Add the following code:"
 msgstr "Ajoutez le code suivant :"
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1128
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1127
 msgid "Lets go over what's happening here:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1130
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1129
 msgid ""
 "The first thing we do is make sure we've received input to change weapons. "
 "We do this by making sure ``changing_weapons`` is ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1132
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1131
 msgid ""
 "Next we define a variable (``weapon_unequipped``) so we can check whether "
 "the current weapon has been successfully unequipped or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1134
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1133
 msgid "Then we get the current weapon from ``weapons``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1136
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1135
 msgid ""
 "If the current weapon is not ``null``, then we need to check to see if the "
 "weapon is enabled or not. If the weapon is enabled, we call its "
@@ -1575,7 +1570,7 @@ msgid ""
 "weapon has successfully been unequipped."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1139
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1138
 msgid ""
 "If the current weapon is ``null``, then we can simply set "
 "``weapon_unequipped`` to ``true``. The reason we do this check is because "
@@ -1584,19 +1579,19 @@ msgid ""
 "player wants to change to."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1142
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1141
 msgid ""
 "If the player has successfully unequipped the current weapon "
 "(``weapon_unequipped == true``), we need to equip the new weapon."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1144
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1143
 msgid ""
 "First we define a new variable (``weapon_equipped``) for tracking whether "
 "the player has successfully equipped the new weapon or not."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1146
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1145
 msgid ""
 "Then we get the weapon the player wants to change to. If the weapon the "
 "player wants to change to is not ``null``, we then check to see whether it's "
@@ -1605,14 +1600,14 @@ msgid ""
 "``weapon_equipped`` to ``true``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1149
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1148
 msgid ""
 "If the weapon the player wants to change to is ``null``, we simply set "
 "``weapon_equipped`` to ``true`` because we do not have any node/script for "
 "``UNARMED``, nor do we have any animations."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1152
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1151
 msgid ""
 "Finally, we check to see if the player has successfully equipped the new "
 "weapon. If the player has, we set ``changing_weapon`` to ``false`` because "
@@ -1622,30 +1617,30 @@ msgid ""
 "string."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1158
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1157
 msgid ""
 "Now, we need to add one more function to the player, and then the player is "
 "ready to start firing the weapons!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1160
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1159
 msgid ""
 "We need to add ``fire_bullet``, which will be called by the :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` at those points we set earlier in "
 "the :ref:`AnimationPlayer <class_AnimationPlayer>` function track:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1172
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1171
 msgid "Lets go over what this function is doing:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1174
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1173
 msgid ""
 "First we check to see if the player is changing weapons or not. If the "
 "player is changing weapons, we do not want shoot so we ``return``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1176
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1175
 msgid ""
 "Calling ``return`` stops the rest of the function from being called. In this "
 "case, we are not returning a variable because we are only interested in not "
@@ -1653,45 +1648,45 @@ msgid ""
 "variable either when we call this function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1180
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1179
 msgid ""
 "Then we tell the current weapon the player is using to fire by calling its "
 "``fire_weapon`` function."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1182
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1181
 msgid ""
 "Remember how we mentioned the speed of the animations for firing was faster "
 "than the other animations? By changing the firing animation speeds, you can "
 "change how fast the weapon fires bullets!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1188
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1187
 msgid ""
 "Before we are ready to test our new weapons, we still have a little bit of "
 "work to do."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1191
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1190
 msgid "Creating some test subjects"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1193
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1192
 msgid ""
 "Create a new script by going to the scripting window, clicking \"file\", and "
 "selecting new. Name this script ``RigidBody_hit_test`` and make sure it "
 "extends :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1196
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1195
 msgid "Now we need to add this code:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1213
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1212
 msgid "Lets go over how ``bullet_hit`` works:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1216
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1215
 msgid ""
 "First we get the bullet's forward directional vector. This is so we can tell "
 "from which direction the bullet will hit the :ref:`RigidBody "
@@ -1699,7 +1694,7 @@ msgid ""
 "<class_RigidBody>` in the same direction as the bullet."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1219
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1218
 msgid ""
 "We need to boost the directional vector by ``BASE_BULLET_BOOST`` so the "
 "bullets pack a bit more of a punch and move the :ref:`RigidBody "
@@ -1709,11 +1704,11 @@ msgid ""
 "<class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1223
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1222
 msgid "Then we apply an impulse using ``apply_impulse``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1225
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1224
 msgid ""
 "First, we need to calculate the position for the impulse. Because "
 "``apply_impulse`` takes a vector relative to the :ref:`RigidBody "
@@ -1726,65 +1721,65 @@ msgid ""
 "<class_RigidBody>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1231
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1230
 msgid ""
 "Finally, we need to calculate the force for the impulse. For this we use the "
 "direction the bullet is facing and multiply it by the bullet's damage. This "
 "gives a nice result and for stronger bullets, we get a stronger result."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1236
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1235
 msgid ""
 "Now we need to attach this script to all of the :ref:`RigidBody "
 "<class_RigidBody>` nodes we want to effect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1238
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1237
 msgid ""
 "Open up ``Testing_Area.tscn`` and select all of the cubes parented to the "
 "``Cubes`` node."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1240
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1239
 msgid ""
 "If you select the top cube, and then hold down ``shift`` and select the last "
 "cube, Godot will select all of the cubes in between!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1243
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1242
 msgid ""
 "Once you have all of the cubes selected, scroll down in the inspector until "
 "you get to the \"scripts\" section. Click the drop down and select \"Load\". "
 "Open your newly created ``RigidBody_hit_test.gd`` script."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1247
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1246
 msgid "Final notes"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1251
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1250
 msgid ""
 "That was a lot of code! But now with all that done you can go and give your "
 "weapons a test!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1253
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1252
 msgid ""
 "You should now be able to fire as many bullets as you want on the cubes and "
 "they will move in response to the bullets colliding into them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1256
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1255
 msgid ""
 "In :ref:`doc_fps_tutorial_part_three`, we will add ammo to the weapons, as "
 "well as some sounds!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1258
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1257
 msgid "If you ever get lost, be sure to read over the code again!"
 msgstr ""
 
-#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1260
+#: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1259
 msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_2.zip <files/Godot_FPS_Part_2.zip>`"

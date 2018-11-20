@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,38 +253,48 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
 msgid ""
-"The view options are controlled by the \"[ view ]\" menu. Pay attention to "
-"this little menu inside the window because it is often overlooked!"
+"The view options are controlled by the \"View\" menu in the viewport's "
+"toolbar."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:173
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:171
+msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:175
+msgid ""
+"To hide a specific type of gizmos, you can toggle them off in the \"View\" "
+"menu."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:180
 msgid "Default environment"
 msgstr "Environnement par défaut"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:175
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:179
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:186
 msgid ""
 "Given how physically based rendering works, it is advised to always try to "
 "work with a default environment in order to provide indirect and reflected "
 "light to your objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:184
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:191
 msgid "Cameras"
 msgstr "Caméras"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:186
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid ""
 "No matter how many objects are placed in 3D space, nothing will be displayed "
 "unless a :ref:`Camera <class_Camera>` is also added to the scene. Cameras "
 "can either work in orthogonal or perspective projections:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:193
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:200
 msgid ""
 "Cameras are associated with and only display to a parent or grandparent "
 "viewport. Since the root of the scene tree is a viewport, cameras will "
@@ -293,37 +303,37 @@ msgid ""
 "display."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:201
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:208
 msgid ""
 "When dealing with multiple cameras, the following rules are followed for "
 "each viewport:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:204
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:211
 msgid ""
 "If no cameras are present in the scene tree, the first one that enters it "
 "will become the active camera. Further cameras entering the scene will be "
 "ignored (unless they are set as *current*)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:207
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:214
 msgid ""
 "If a camera has the \"*current*\" property set, it will be used regardless "
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:210
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:217
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:214
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:221
 msgid "Lights"
 msgstr "Lumières"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:216
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:223
 msgid ""
 "There is no limitation on the number of lights nor of types of lights in "
 "Godot. As many as desired can be added (as long as performance allows)."

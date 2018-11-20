@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,12 +32,19 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Signale sind Godot's-Version des Beobachtungsmusters. Dies erlaubt es der "
+"Node eine Nachricht zu senden, auf diese Nachricht können andere Nodes hören "
+"und diese beantworten. Als Beispiel, anstatt dass man die ganze Zeit prüft "
+"ob eine Taste gedrückt wurde, könnte diese auch einfach eine Nachricht "
+"schicken, wenn Sie gedrückt wurde."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Du kannst mehr zum Beobachter-Entwurfsmuster hier lesen: http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -46,17 +53,23 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that any interested objects can subscribe to and respond."
 msgstr ""
+"Signale sind eine Möglichkeit deine Spielobjekte von anderen Objekten *zu "
+"lösen*, diese führt zu aufgeräumten und besser organisierten Code. Anstatt "
+"dass du Spielobjekte dazu zwingst ständig jedes andere Objekt zu kennen, "
+"erstellst du Signale an die sich jedes interessierte Objekt anmelden und "
+"darauf antworten kann."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Nachfolgend sehen Sie einige Beispiele, wie Sie Signale in Ihren eigenen "
+"Projekten verwenden können."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "Einige Beispiele:"
+msgstr "Timer Beispiel"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -66,6 +79,11 @@ msgid ""
 "other image you like. Attach a script to the root node, but don't add any "
 "code to it yet."
 msgstr ""
+"Damit wir einmal sehen wie Signale funktionieren, benutzen wir eine :ref:"
+"`Timer <class_Timer>` Knoten. Erstellt eine neue Szene mit einem Knoten und "
+"zwei Kindern: einem \"Timer\" und einer :ref:`Sprite <class_Sprite>`. Du "
+"kannst das Godot-Icon für die Sprite-Texture benutzen oder ein anderes Bild, "
+"dass dir gefällt."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
 #, fuzzy
@@ -120,6 +138,8 @@ msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"Klicke auf \"Verbinden\" und du siehst, dass die Funktion im Skript erstellt "
+"wurde:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:84
 msgid ""

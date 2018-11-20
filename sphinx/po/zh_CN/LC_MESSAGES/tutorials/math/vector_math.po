@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
-msgstr ""
+msgstr "向量数学"
 
 #: ../../docs/tutorials/math/vector_math.rst:7
 msgid "Introduction"
@@ -255,7 +255,7 @@ msgstr ""
 msgid ""
 "For example, imagine we have a moving ball that we want to bounce off a wall "
 "or other object:"
-msgstr ""
+msgstr "例如，假设我们有一个移动的球，我们想从墙上或其他物体上弹回来:"
 
 #: ../../docs/tutorials/math/vector_math.rst:233
 msgid ""
@@ -266,10 +266,14 @@ msgid ""
 "handle this. Here is a GDScript example of the diagram above using a :ref:"
 "`KinematicBody2D <class_KinematicBody2D>`:"
 msgstr ""
+"曲面法线的值为' '(0，-1)' '因为这是一个水平曲面。当球碰撞时，我们取它的剩余运"
+"动(当它撞到表面时剩余的量)，用法线反射它。在Godot中，:ref: ' Vector2 "
+"<class_Vector2> '类有一个' bounce() ' '方法来处理这个问题。上图有一个使用a:"
+"ref:“KinematicBody2D <class_KinematicBody2D>”的GDScript示例，:"
 
 #: ../../docs/tutorials/math/vector_math.rst:263
 msgid "Dot product"
-msgstr ""
+msgstr "点积"
 
 #: ../../docs/tutorials/math/vector_math.rst:265
 msgid ""
@@ -281,12 +285,13 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:270
 msgid "The formula for dot product takes two common forms:"
-msgstr ""
+msgstr "点积公式有两种常见形式:"
 
 #: ../../docs/tutorials/math/vector_math.rst:272
 msgid ""
 "A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 msgstr ""
+"A \\cdot B = \\left \\| A \\right \\|\\left \\| B \\right \\|\\cos \\Theta"
 
 #: ../../docs/tutorials/math/vector_math.rst:276
 msgid "and"
@@ -301,6 +306,7 @@ msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
+"然而，在大多数情况下，使用内置方法是最容易的。注意，两个向量的顺序并不重要："
 
 #: ../../docs/tutorials/math/vector_math.rst:296
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -309,22 +309,33 @@ msgid "View menu"
 msgstr "视图菜单"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
+#, fuzzy
 msgid ""
-"The view options are controlled by the \"[ view ]\" menu. Pay attention to "
-"this little menu inside the window because it is often overlooked!"
+"The view options are controlled by the \"View\" menu in the viewport's "
+"toolbar."
 msgstr ""
 "视图选项由“[view]”菜单控制。 注意窗口内的这个小菜单，因为它经常被忽略！"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:173
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:171
+msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:175
+msgid ""
+"To hide a specific type of gizmos, you can toggle them off in the \"View\" "
+"menu."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:180
 msgid "Default environment"
 msgstr "默认环境"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:175
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid ""
 "When created from the Project Manager, the 3D environment has a default sky."
 msgstr "从项目管理器中创建时，3D环境具有默认的天空。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:179
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:186
 msgid ""
 "Given how physically based rendering works, it is advised to always try to "
 "work with a default environment in order to provide indirect and reflected "
@@ -332,11 +343,11 @@ msgid ""
 msgstr ""
 "鉴于基于物理的渲染工作流，建议始终使用默认环境，以便为对象提供间接和反射光。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:184
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:191
 msgid "Cameras"
 msgstr "相机"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:186
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid ""
 "No matter how many objects are placed in 3D space, nothing will be displayed "
 "unless a :ref:`Camera <class_Camera>` is also added to the scene. Cameras "
@@ -345,7 +356,7 @@ msgstr ""
 "无论在3D空间中放置多少物体，除非在场景中添加了：ref：`相机 <class_Camera>`，"
 "否则不会显示任何内容。 相机可以在正交或透视投影中工作："
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:193
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:200
 #, fuzzy
 msgid ""
 "Cameras are associated with and only display to a parent or grandparent "
@@ -358,13 +369,13 @@ msgstr ""
 "情况下摄像机将显示在其上，但如果需要子视口（作为渲染目标或画中画），则需要其"
 "自己的子摄像机来显示。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:201
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:208
 msgid ""
 "When dealing with multiple cameras, the following rules are followed for "
 "each viewport:"
 msgstr "处理多台摄像机时，每个视口都遵循以下规则："
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:204
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:211
 msgid ""
 "If no cameras are present in the scene tree, the first one that enters it "
 "will become the active camera. Further cameras entering the scene will be "
@@ -373,7 +384,7 @@ msgstr ""
 "如果场景树中没有摄像机，则第一个摄像机将成为活动摄像机。 进入场景的其他摄像机"
 "将被忽略（除非它们被设置为*当前*）。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:207
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:214
 msgid ""
 "If a camera has the \"*current*\" property set, it will be used regardless "
 "of any other camera in the scene. If the property is set, it will become "
@@ -382,17 +393,17 @@ msgstr ""
 "如果相机具有“*当前*”属性设置，则无论场景中是否有其他相机，都会使用它。 如果该"
 "属性已设置，它将变为活动状态，取代之前的摄像头。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:210
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:217
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "
 "will take its place."
 msgstr "如果活动摄像机离开场景树，则按树形顺序排列的第一台摄像机将取代它。"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:214
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:221
 msgid "Lights"
 msgstr "灯光"
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:216
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:223
 msgid ""
 "There is no limitation on the number of lights nor of types of lights in "
 "Godot. As many as desired can be added (as long as performance allows)."

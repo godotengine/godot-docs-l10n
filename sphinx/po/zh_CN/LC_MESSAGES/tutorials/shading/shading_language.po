@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,14 +82,16 @@ msgid ""
 "Different shader types support different render modes. They are optional "
 "but, if specified, must be after the *shader_type*. Example syntax is:"
 msgstr ""
+"不同的着色器类型支持不同的渲染模式。它们是可选的，但如果指定，则必须在"
+"*shader_type*之后。下面是示例语法:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:45
 msgid "Data types"
-msgstr ""
+msgstr "数据类型"
 
 #: ../../docs/tutorials/shading/shading_language.rst:47
 msgid "Most GLSL ES 3.0 datatypes are supported:"
-msgstr ""
+msgstr "支持大多数GLSL ES 3.0数据类型："
 
 #: ../../docs/tutorials/shading/shading_language.rst:50
 #: ../../docs/tutorials/shading/shading_language.rst:431
@@ -115,11 +117,11 @@ msgstr "描述"
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "**void**"
-msgstr ""
+msgstr "**void**"
 
 #: ../../docs/tutorials/shading/shading_language.rst:52
 msgid "Void datatype, useful only for functions that return nothing."
-msgstr ""
+msgstr "Void数据类型，只对不返回任何内容的函数有用。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "**bool**"
@@ -127,7 +129,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:54
 msgid "Boolean datatype, can only contain \"true\" or \"false\""
-msgstr ""
+msgstr "布尔数据类型，只能包含“true”或“false”"
 
 #: ../../docs/tutorials/shading/shading_language.rst:56
 msgid "**bvec2**"
@@ -318,12 +320,15 @@ msgid "Casting"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:104
+#, fuzzy
 msgid ""
 "Just like GLSL ES 3.0, implicit casting between scalars and vectors of the "
 "same size but different type is not allowed. Casting of types of different "
 "size is also not allowed. Conversion must be done explicitly via "
 "constructors."
 msgstr ""
+"就像GLSL ES 3.0一样，标量与相同大小但不同类型的向量之间的隐式类型转换是不允许"
+"的。也不允许转换不同大小的类型。转换必须通过构造函数显式地完成。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:107
 msgid "Example:"
@@ -333,7 +338,7 @@ msgstr ""
 msgid ""
 "Default integer constants are signed, so casting is always needed to convert "
 "to unsigned:"
-msgstr ""
+msgstr "默认整数常量是有符号的，所以转换为无符号总是需要强制类型转换:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:124
 msgid "Members"
@@ -405,6 +410,9 @@ msgid ""
 "shader (where full precision is needed most of the time), but often needed "
 "in the fragment one."
 msgstr ""
+"对某些操作使用较低的精度可以加快所涉及的数学计算(当然，代价是较低的精度)。这"
+"在顶点着色器中很少需要(大多数情况下需要完全精确)，但是在片段着色器中经常需"
+"要。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:195
 msgid ""
@@ -415,20 +423,25 @@ msgid ""
 "trouble make simple shaders without specifying precision unless you *really* "
 "need to."
 msgstr ""
+"请记住，一些体系结构(主要是移动端)从中获益良多，但也受到限制(精度之间的转换是"
+"有代价的)。请阅读目标体系结构的相关文档以了解更多信息。事实上，移动驱动程序是"
+"有bug的，所以为了避免麻烦，你可以制作简单的着色器而不需要指定精度，除非你真的"
+"需要。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:200
 msgid "Operators:"
-msgstr ""
+msgstr "操作符："
 
 #: ../../docs/tutorials/shading/shading_language.rst:202
 msgid ""
 "Godot shading language supports the same set of operators as GLSL ES 3.0. "
 "Below is the list of them in precedence order:"
 msgstr ""
+"Godot 着色器语言支持与GLSL ES 3.0相同的操作符集。下面是它们的优先级列表:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Precedence"
-msgstr ""
+msgstr "优先级"
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Class"
@@ -436,11 +449,11 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Operator"
-msgstr ""
+msgstr "操作符"
 
 #: ../../docs/tutorials/shading/shading_language.rst:207
 msgid "1 (highest)"
-msgstr ""
+msgstr "1 (最高)"
 
 #: ../../docs/tutorials/shading/shading_language.rst:207
 msgid "parenthetical grouping"
@@ -588,7 +601,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:235
 msgid "Godot Shading language supports the most common types of flow control:"
-msgstr ""
+msgstr "Godot 着色器语言支持最常见的控制流类型："
 
 #: ../../docs/tutorials/shading/shading_language.rst:257
 msgid ""
@@ -596,6 +609,8 @@ msgid ""
 "your application (including editor). Godot can't protect you from this, so "
 "be careful to not make this mistake!"
 msgstr ""
+"请记住，在现代GPU中，无限循环可以存在，并且可以冻结应用程序（包括编辑器）。"
+"Godot不能保护你，所以小心不要犯这个错误！"
 
 #: ../../docs/tutorials/shading/shading_language.rst:261
 msgid "Discarding"
@@ -615,35 +630,35 @@ msgstr ""
 msgid ""
 "It's possible to define any function in a Godot shader. They take the "
 "following syntax:"
-msgstr ""
+msgstr "可以在Godot着色器中定义任何函数。它们的语法如下:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:283
 msgid "Functions can be used from any other function that is below it."
-msgstr ""
+msgstr "函数可以被它下面的任何其他函数中调用。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:285
 msgid "Function argument can have special qualifiers:"
-msgstr ""
+msgstr "函数的参数可以有特殊修饰符:"
 
 #: ../../docs/tutorials/shading/shading_language.rst:287
 msgid "**in**: Means the argument is only for reading (default)."
-msgstr ""
+msgstr "**in**: 表示参数仅用于读取(默认)。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:288
 msgid "**out**: Means the argument is only for writing."
-msgstr ""
+msgstr "**out**: 表示该参数只用于写入。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:289
 msgid "**inout**: Means the argument is fully passed via reference."
-msgstr ""
+msgstr "**inout**: 表示该参数以引用传递。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:291
 msgid "Example below:"
-msgstr ""
+msgstr "例子："
 
 #: ../../docs/tutorials/shading/shading_language.rst:300
 msgid "Processor Functions"
-msgstr ""
+msgstr "处理器函数"
 
 #: ../../docs/tutorials/shading/shading_language.rst:302
 msgid ""
@@ -652,26 +667,32 @@ msgid ""
 "\"vertex\", \"fragment\" and \"light\". For \"particles\", only \"vertex\" "
 "can be overridden."
 msgstr ""
+"根据着色器类型的不同，处理器函数可以被选择性地重写。对"
+"于“spatial”和“canvas_item”，可以重写“vertex”、“fragment”和“light”。对"
+"于“particles”，只能重写“vertex”。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:307
 msgid "Vertex Processor"
-msgstr ""
+msgstr "顶点处理器"
 
 #: ../../docs/tutorials/shading/shading_language.rst:309
+#, fuzzy
 msgid ""
 "The \"vertex\" processing function is called for every vertex, 2D or 3D. For "
 "particles, it's called for every particle."
-msgstr ""
+msgstr "vertex 函数处理2D与3D的每一个顶点。对于粒子，它处理每一个粒子。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:312
 msgid ""
 "Depending on shader type, a different set of built-in inputs and outputs are "
 "provided. In general, vertex functions are not that commonly used."
 msgstr ""
+"根据着色器类型的不同，会提供一组不同的内置输入和输出。一般来说，顶点函数并不"
+"常用。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:324
 msgid "Fragment Processor"
-msgstr ""
+msgstr "片段处理器"
 
 #: ../../docs/tutorials/shading/shading_language.rst:326
 msgid ""
@@ -2838,7 +2859,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:1145
 msgid "Random seed used as base for random."
-msgstr ""
+msgstr "随机种子被用作随机的基础。"
 
 #: ../../docs/tutorials/shading/shading_language.rst:1148
 msgid ""

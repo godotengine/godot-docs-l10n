@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr "컨트롤 (Control) 노드로 인터페이스를 설계하기"
+msgstr "컨트롤(Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -35,15 +35,15 @@ msgstr ""
 "컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 모든 크기와 모양을 갖습니다. "
 "게임을 출시하려면, 당신은 다양한 화면 비율과 해상도를 지원해야 합니다. 모든 "
 "플랫폼에 적용되는 반응 형 인터페이스를 만드는 것은 어려울 수 있습니다. 감사하"
-"게도, 고도의 든든한 도구들로 반응 형 인터페이스를 제작하고 관리할 수 있습니"
+"게도, Godot의 든든한 도구들로 반응 형 인터페이스를 제작하고 관리할 수 있습니"
 "다. UI를 설계하기 위해선, 당신은 Control 노드 들을 사용할 겁니다. 이들은 에디"
 "터 내 초록 아이콘을 갖고 있는 노드입니다. 이들은 많기 때문에 체력 막대부터 복"
-"잡한 애플리케이션까지 만들 수 있습니다. 고도의 모든 에디터와 플러그인은 이 노"
-"드 들을 사용합니다."
+"잡한 애플리케이션까지 만들 수 있습니다. Godot의 모든 에디터와 플러그인은 이 "
+"노드 들을 사용합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr "고도 에디터는 엔진의 UI 프레임 워크로 제작되었습니다"
+msgstr "Godot 에디터는 엔진의 UI 프레임 워크로 제작되었습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "This guide will get you started with UI design. You will learn:"
@@ -96,24 +96,23 @@ msgstr "모든 컨트롤 노드는 동일한 메인 속성을 공유합니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Anchor"
-msgstr "앵커"
+msgstr "앵커(Anchor)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
-msgstr "경계 사각형"
+msgstr "경계 사각형(Bounding rectangle)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-#, fuzzy
 msgid "Focus and focus neighbor"
-msgstr "포커스와 포커스 이웃"
+msgstr "포커스(Focus)와 포커스 이웃(Focus neighbor)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
-msgstr "사이즈 플래그"
+msgstr "사이즈 플래그(Size flags)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "Margin"
-msgstr "마진"
+msgstr "마진(Margin)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:44
 msgid "The optional UI theme"
@@ -136,7 +135,7 @@ msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
-"고도는 수십 개의 컨트롤 노드를 갖고 있습니다. 이들이 당신이 에디터 플러그인"
+"Godot는 수십 개의 컨트롤 노드를 갖고 있습니다. 이들이 당신이 에디터 플러그인"
 "과 애플리케이션을 만드는 것을 도와줍니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:56
@@ -149,28 +148,29 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid "Label: for displaying text"
-msgstr "Label: 문자를 보여주기 위해 사용"
+msgstr "Label: 문자를 보여주기 위해 사용합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:60
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
-msgstr "TextureRect: 보통은 배경으로 사용되고, 그 외 모든 정적 이미지에 사용"
+msgstr ""
+"TextureRect: 보통은 배경으로 사용되고, 그 외 모든 정적 이미지에 사용합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:62
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
 msgstr ""
 "TextureProgress: 체력 막대, 로딩 막대, 가로 형태, 세로 형태, 혹은 방사 형태"
-"에 사용"
+"에 사용합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "NinePatchRect: for scalable panels"
-msgstr "NinePatchRect: 확장 가능한 패널에 사용"
+msgstr "NinePatchRect: 확장 가능한 패널에 사용합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:65
 msgid "TextureButton: to create buttons"
-msgstr "TextureButton: 버튼을 만들기 위해 사용"
+msgstr "TextureButton: 버튼을 만들기 위해 사용합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:69
 msgid "The 5 most common Control nodes for UI design"
@@ -181,7 +181,6 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
-#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
@@ -238,7 +237,6 @@ msgstr ""
 "다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
@@ -336,7 +334,7 @@ msgstr "3분의 2가 채워진 TextureProgress 막대"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
-msgstr "라벨 (Label)"
+msgstr "라벨(Label)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
 msgid ""
@@ -361,16 +359,15 @@ msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
-#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"**NinePatchRect** 텍스쳐를 3행과 3열로 분할합니다. 중앙과 모서리는 텍스쳐의 "
-"크기에 맞추어지지만, 코너 부분은 크기가 바뀌지 않습니다. 이것은 패널이나 대"
-"화 상자, UI에서 크기 조절이 가능한 배경을 만들 때 유용합니다."
+"**NinePatchRect** 텍스쳐를 3행과 3열로 분할합니다. 중앙과 가장자리는 텍스쳐"
+"의 크기에 맞추어지지만, 모서리 부분은 크기가 바뀌지 않습니다. 이것은 패널이"
+"나 대화 상자, UI에서 크기 조절이 가능한 배경을 만들 때 유용합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -384,7 +381,7 @@ msgstr "반응 형 UI를 만들기 위해 두 가지 워크플로우"
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
 msgstr ""
-"고도에서 크기 조절이 가능하고 유연한 인터페이스를 만들기 위한 두 가지 워크플"
+"Godot에서 크기 조절이 가능하고 유연한 인터페이스를 만들기 위한 두 가지 워크플"
 "로우가 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:171
@@ -533,10 +530,10 @@ msgid ""
 msgstr ""
 "한번 앵커 위치를 바꾸거나 컨트롤 노드를 컨테이너 안에 넣어보세요: 마진은 업데"
 "이트 될 것입니다. 당신은 거의 마진을 정석대로 편집하진 않을 것입니다. 항상 당"
-"신을 도와줄 컨테이너를 골라보세요; 고도는 모든 일반적인 경우를 해결하기 위해 "
-"노드를 가지고 왔습니다. 체력 막대와 화면 테두리 사이에 빈 공간이 필요한가요? "
-"MarginContainer를 사용하세요. 세로 메뉴를 만들고 싶나요? VBoxContainer를 사용"
-"하세요. 아래에서 더 자세히 설명하겠습니다."
+"신을 도와줄 컨테이너를 골라보세요; Godot는 모든 일반적인 경우를 해결하기 위"
+"해 노드를 가지고 왔습니다. 체력 막대와 화면 테두리 사이에 빈 공간이 필요한가"
+"요? MarginContainer를 사용하세요. 세로 메뉴를 만들고 싶나요? VBoxContainer를 "
+"사용하세요. 아래에서 더 자세히 설명하겠습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
 msgid "Use size tags to change how UI elements fill the available space"
@@ -743,6 +740,6 @@ msgid ""
 "design more advanced interface, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
-"고도의 UI 시스템은 복잡하고, 그만큼 많은 것을 제공합니다. 더 좋은 인터페이스"
+"Godot의 UI 시스템은 복잡하고, 그만큼 많은 것을 제공합니다. 더 좋은 인터페이스"
 "를 만드는 방법을 배우기 위해선, 문서의 :ref:`GUI section <toc-learn-features-"
 "gui>` 로 가십시오."

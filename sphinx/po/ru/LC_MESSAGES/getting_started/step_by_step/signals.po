@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,12 +32,18 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
+"Сигналы в Godot являются реализацией программного шаблона *наблюдатель*. Они "
+"позволяют узлу отправлять сообщения, которые другие узлы могут прослушивать "
+"и на которые могут отвечать. Например, вместо того, чтобы постоянно "
+"проверять, не нажата ли кнопка, можно просто выдать сигнал при нажатии."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
+"Вы можете прочитать больше о шаблоне Наблюдатель здесь: http://"
+"gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
 msgid ""
@@ -46,17 +52,23 @@ msgid ""
 "expect other objects to always be present, they can instead emit signals "
 "that any interested objects can subscribe to and respond."
 msgstr ""
+"Сигналы - это способ *уменьшить зацепление* игровых объектов, приводящий код "
+"к более упорядоченному и управляемому виду. Вместо того чтобы принуждать "
+"игровые объекты постоянно зависеть от существования других объектов, "
+"возможно выдавать сигналы, на которые  заинтересованные объекты могут "
+"реагировать."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:21
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
 msgstr ""
+"Ниже вы можете увидеть некоторые примеры того, как вы можете использовать "
+"сигналы в ваших собственных проектах."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "GDNative пример на C++"
+msgstr "Пример таймера"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -66,9 +78,14 @@ msgid ""
 "other image you like. Attach a script to the root node, but don't add any "
 "code to it yet."
 msgstr ""
+"Чтобы увидеть, как работают сигналы, давайте попробуем использовать узел :"
+"ref:`Timer <class_Timer> . Создайте новую сцену с узлом и двумя дочерними "
+"узлами: таймер и :ref:`спрайт <class_Sprite>`. Вы можете использовать иконку "
+"Godot для текстуры спрайта или любое другое изображение, которое вам "
+"нравится. Присоедините скрипт к корневому узлу, но пока не добавляйте в него "
+"никакого кода."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
-#, fuzzy
 msgid "Your scene tree should look like this:"
 msgstr "Дерево сцены должно выглядеть так:"
 
@@ -78,6 +95,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"В свойствах узла Timer установите флажок \"On\" рядом с полем *Autostart*. "
+"Это приведет к автоматическому запуску таймера при запуске сцены. Вы можете "
+"оставить *Wait Time* в 1 секунду."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
 msgid ""
@@ -86,12 +106,18 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Рядом с вкладкой \"Инспектор\" находится вкладка \"Узел\". Нажмите на эту "
+"вкладку, и вы увидите все сигналы, которые выбранный узел может излучать. В "
+"случае с узлом Timer, с которым мы связаны, это \"timeout\". Этот сигнал "
+"генерируется каждый раз, когда таймер достигает ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:46
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Нажмите на сигнал  \"timeout()\" и после на кнопку \"Присоединить...\". Вы "
+"увидите окно, где вы можете определить, как вы хотите подключить сигнал:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
 msgid ""
@@ -100,12 +126,18 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"На левой стороне, вы увидите узлы в вашей сцене и можете выбрать узел, "
+"который вы хотите использовать для \"прослушки\" сигнала. Обратите внимание, "
+"что узел Timer является красным - это *не* ошибка, а визуальный признак "
+"того, что это узел, который излучает сигнал. Выберите корневой узел."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:56
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"На выбранный узел *должен* быть прикреплен скрипт, иначе вы получите "
+"сообщение об ошибке."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
@@ -114,28 +146,38 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"В нижней части окна находится поле с надписью \"Method In Node\". Это имя "
+"функции в скрипте данного узла, который требуется использовать. По умолчанию "
+"Godot создаст эту функцию, используя соглашение об именовании "
+"``_on_<node_name>_<signal_name>``, но вы можете изменить его, если хотите."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:64
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
 msgstr ""
+"Нажмите кнопку \"Присоединить\", и вы увидите, что функция была создана в "
+"скрипте:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:84
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Теперь мы можем заменить изначальный код на любой код, который мы хотим "
+"запустить при получении сигнала. Давайте заставим спрайт мигать:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Запустите сцену, и вы увидите что спрайт мигает и пропадает каждую секунду. "
+"Можно изменить свойство таймера *Wait Time*, чтобы изменить частоту мигания."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
 msgid "Connecting signals in code"
-msgstr ""
+msgstr "Подключение сигналов в коде"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -143,12 +185,17 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Вы также можете присоединить сигнал в коде, а не в редакторе. Это обычно "
+"необходимо при создании экземпляров узлов с помощью кода и поэтому "
+"невозможно использовать редактор для подключения."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Во-первых, отключите сигнал, выбрав подключенный сигнал таймера на вкладке "
+"\"Узел\" и нажав Отсоединить."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
@@ -158,30 +205,36 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Чтобы присоединить сигнал в коде, мы можем использовать функцию ``connect``. "
+"Мы поставим его в ``_ready()`` так, что соединение будет сделано сразу при "
+"запуске сцены. Синтаксис функции ``<source_node>.connect(<signal_name>, "
+"<target_node>, <target_function_name>)``. Вот код для подключения нашего "
+"таймера:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
-#, fuzzy
 msgid "Custom signals"
-msgstr "C# Сигналы"
+msgstr "Пользовательские сигналы"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
+"Вы также можете объявить свои собственные пользовательские сигналы в Godot:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"После объявления ваши пользовательские сигналы будут появляться в инспекторе "
+"и могут быть соединены так же, как и встроенные сигналы узла."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
-msgstr ""
+msgstr "Чтобы выпустить сигнал через код, используйте функцию ``emit``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
-#, fuzzy
 msgid "Shooting example"
-msgstr "Пример создания экземпляра"
+msgstr "Пример стрельбы"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:205
 msgid ""
@@ -190,12 +243,19 @@ msgid ""
 "clicked, we create an instance of the bullet at the player's location. See :"
 "ref:`doc_instancing` for details."
 msgstr ""
+"В качестве еще одного примера использования сигналов, давайте рассмотрим "
+"персонажа игрока, который может вращаться и стрелять по направлению к мыши. "
+"Каждый раз при нажатии кнопки мыши мы создаем экземпляр пули в "
+"местоположении игрока. См. :ref:`doc_instancing` для получения "
+"дополнительной информации."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
+"Однако, если пули добавятся как дети игрока, то они останутся \"привязанными"
+"\" к тому как игрок вращается (нагляднее ниже):"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
@@ -206,10 +266,16 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
+"Вместо этого, нам нужно чтобы пули были независимыми от движения игрока "
+"после выстрела, они должны продолжать движение по прямой линии, и игрок "
+"больше не должен влиять на них. Вместо того, чтобы быть добавлены к дереву "
+"сцены в качестве ребенка игрока, имеет больше смысла добавить пулю в "
+"качестве дочернего элемента \"основной\" игровой сцены, которая может быть "
+"родителем игрока или даже дальше выше по дереву сцен."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 msgid "You could do this by adding the bullet directly:"
-msgstr ""
+msgstr "Это можно сделать, добавив пулю непосредственно к главной сцене:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
 msgid ""
@@ -220,6 +286,12 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
+"Однако это приведет к другой проблеме. Теперь, если вы запустите и "
+"протестируете саму сцену \"Player\", она аварийно завершится при выстреле, "
+"так как не существует родительского узла. Это намного усложняет возможность "
+"независимой проверки кода Игрока, а также означает, что если вы решите "
+"изменить структуру узла основной сцены, родитель сцены \"Player\" может "
+"больше не быть узлом, обрабатывающим попадание пуль."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""
@@ -228,22 +300,30 @@ msgid ""
 "after that - whatever node is connected to the signal can \"receive\" the "
 "bullets and take the appropriate action to spawn them."
 msgstr ""
+"Решение заключается в использовании сигнала, сообщающего об \"испускании\" "
+"пули от игрока. Игроку не нужно \"знать\", что происходит с пулями. Узел "
+"подключенный сигналом может \"получить\" пули и предпринять соответствующие "
+"действия для их порождения."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:247
 msgid "Here is the code for the player using signals to emit the bullet:"
-msgstr ""
+msgstr "Вот код для игрока с использованием сигналов для испускания пуль:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:290
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
+"В главной сцене, мы подключим сигнал игрока (он появится на вкладке \"Узел"
+"\")."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:314
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
 msgstr ""
+"Теперь пули будут продолжать свое собственное движение независимо от "
+"вращения игрока:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:320
 msgid "Conclusion"
@@ -256,9 +336,17 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"Многие встроенные типы узлов в Godot предоставляют сигналы, которые можно "
+"использовать для обнаружения событий. Например, монетка, созданная в виде "
+"объекта :ref:`Area2D <class_Area2D>`, излучает сигнал ``body_entered`` в "
+"момент касания физическим телом игрока формы столкновения монетки, позволяя "
+"понять, когда игрок её собрал."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:327
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"В следующем разделе :ref:`doc_your_first_game`, вы будете делать готовую "
+"игру, с использованием некоторых видов сигналов для подключения различных "
+"игровых компонентов."

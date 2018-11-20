@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 #: ../../docs/development/cpp/creating_android_modules.rst:12
 msgid ""
 "This area is complex, usually a mobile game that monetizes needs special "
-"connections to a server for thingst like:"
+"connections to a server for things like:"
 msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:15
@@ -202,7 +202,7 @@ msgstr ""
 #: ../../docs/development/cpp/creating_android_modules.rst:183
 msgid ""
 "Some SDKs need custom values in AndroidManifest.xml. Permissions can be "
-"edited from the godot exporter so there is no need to add those, but maybe "
+"edited from the Godot exporter so there is no need to add those, but maybe "
 "other functionalities are needed."
 msgstr ""
 
@@ -229,27 +229,43 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:220
-msgid "SDK library"
+msgid "Assets"
 msgstr ""
 
 #: ../../docs/development/cpp/creating_android_modules.rst:222
+msgid ""
+"Similarly, you can add any type of raw asset files to your app's asset "
+"directory like this:"
+msgstr ""
+
+#: ../../docs/development/cpp/creating_android_modules.rst:231
+msgid ""
+"Assets don't have resource ids, but can be read with their file name as "
+"streams of bytes with the help of the Android AssetManager class."
+msgstr ""
+
+#: ../../docs/development/cpp/creating_android_modules.rst:235
+msgid "SDK library"
+msgstr ""
+
+#: ../../docs/development/cpp/creating_android_modules.rst:237
 msgid ""
 "So, finally it's time to add the SDK library. The library can come in two "
 "flavors, a JAR file or an Android project for ant. JAR is the easiest to "
 "integrate, put it in the module directory and add it:"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:242
+#: ../../docs/development/cpp/creating_android_modules.rst:257
 msgid "SDK project"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:244
+#: ../../docs/development/cpp/creating_android_modules.rst:259
 msgid ""
 "When this is an Android project, things usually get more complex. Copy the "
 "project folder inside the module directory and configure it:"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:251
+#: ../../docs/development/cpp/creating_android_modules.rst:266
 msgid ""
 "As of this writing, Godot uses minsdk 18 and target sdk 27. If this ever "
 "changes, it should be reflected in the manifest template: `AndroidManifest."
@@ -257,90 +273,90 @@ msgid ""
 "android/AndroidManifest.xml.template>`__"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:255
+#: ../../docs/development/cpp/creating_android_modules.rst:270
 msgid "Then, add the module folder to the project:"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:271
+#: ../../docs/development/cpp/creating_android_modules.rst:286
 msgid "Building"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:273
+#: ../../docs/development/cpp/creating_android_modules.rst:288
 msgid ""
 "As you probably modify the contents of the module, and modify your .java "
 "inside the module, you need the module to be built with the rest of Godot, "
 "so compile android normally."
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:281
+#: ../../docs/development/cpp/creating_android_modules.rst:296
 msgid ""
 "This will cause your module to be included, the .jar will be copied to the "
 "java folder, the .java will be copied to the sources folder, etc. Each time "
 "you modify the .java, scons must be called."
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:285
+#: ../../docs/development/cpp/creating_android_modules.rst:300
 msgid ""
 "Afterwards, continue the steps for compiling android  :ref:"
 "`doc_compiling_for_android`."
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:288
+#: ../../docs/development/cpp/creating_android_modules.rst:303
 msgid "Using the module"
 msgstr "使用模块"
 
-#: ../../docs/development/cpp/creating_android_modules.rst:290
+#: ../../docs/development/cpp/creating_android_modules.rst:305
 msgid ""
 "To use the module from GDScript, first enable the singleton by adding the "
 "following line to project.godot:"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:299
+#: ../../docs/development/cpp/creating_android_modules.rst:314
 msgid ""
 "More than one singleton module can be enabled by separating with commas:"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:307
+#: ../../docs/development/cpp/creating_android_modules.rst:322
 msgid "Then request the singleton Java object from Globals like this:"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:320
+#: ../../docs/development/cpp/creating_android_modules.rst:335
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:323
+#: ../../docs/development/cpp/creating_android_modules.rst:338
 msgid "Godot crashes upon load"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:325
+#: ../../docs/development/cpp/creating_android_modules.rst:340
 msgid "Check ``adb logcat`` for possible problems, then:"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:327
+#: ../../docs/development/cpp/creating_android_modules.rst:342
 msgid "Make sure libgodot_android.so is in the ``libs/armeabi`` folder"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:328
+#: ../../docs/development/cpp/creating_android_modules.rst:343
 msgid ""
 "Check that the methods used in the Java singleton only use simple Java "
 "datatypes, more complex ones are not supported."
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:332
+#: ../../docs/development/cpp/creating_android_modules.rst:347
 msgid "Future"
 msgstr "未来"
 
-#: ../../docs/development/cpp/creating_android_modules.rst:334
+#: ../../docs/development/cpp/creating_android_modules.rst:349
 msgid ""
 "Godot has an experimental Java API Wrapper that allows to use the entire "
 "Java API from GDScript."
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:337
+#: ../../docs/development/cpp/creating_android_modules.rst:352
 msgid "It's simple to use and it's used like this:"
 msgstr ""
 
-#: ../../docs/development/cpp/creating_android_modules.rst:343
+#: ../../docs/development/cpp/creating_android_modules.rst:358
 msgid ""
 "This is most likely not functional yet, if you want to test it and help us "
 "make it work, contact us through the `developer mailing list <https://groups."

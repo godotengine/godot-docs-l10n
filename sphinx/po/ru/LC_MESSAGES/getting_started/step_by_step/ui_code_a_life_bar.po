@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,53 +19,60 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
-msgstr ""
+msgstr "Контролирование игровым интерфейсом с помощью кода"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 msgid "Intro"
-msgstr ""
+msgstr "Введение"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
 msgid ""
 "In this tutorial you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
+"В этом уроке вы присоедините шкалу жизни к персонажу и сделаете анимацию "
+"потери здоровья."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
 "Here's what you'll create: the bar and the counter animate when the "
 "character takes a hit. They fade when it dies."
 msgstr ""
+"Вот что вы создадите: анимацию шкалы и счетчика, когда персонаж получает "
+"урон. Они исчезают, когда он умирает."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:18
 msgid "You will learn:"
-msgstr ""
+msgstr "Вы узнаете:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:20
 msgid "How to **connect** a character to a GUI with signals"
-msgstr ""
+msgstr "Как **подключить** персонажа к интерфейсу с помощью сигналов"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr ""
+msgstr "Как ** управлять** интерфейсом с помощью GDscript"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
 msgstr ""
+"Как **анимировать** шкалу здоровья с помощью узла :ref:`Tween <class_Tween>`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:25
 msgid ""
 "If you want to learn how to set up the interface instead, check out the step-"
 "by-step UI tutorials:"
 msgstr ""
+"Если вместо этого вы хотите узнать, как собственно настроить интерфейс, "
+"ознакомьтесь с уроками по UI:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:28
 msgid "Create a main menu screen"
-msgstr ""
+msgstr "Создание главного меню"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:29
 msgid "Create a game user interface"
-msgstr ""
+msgstr "Создание интерфейса игры"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:32
 msgid ""
@@ -77,6 +84,13 @@ msgid ""
 "manageable, and allows different team members to work on different parts of "
 "the game."
 msgstr ""
+"Когда вы программируете игру, в первую очередь вы должны сделать: основные "
+"механики, ввод игрока, условия победы и поражения. UI делается немного "
+"позднее. Вам необходимо держать все элементы, которые составляют ваш проект, "
+"отдельно, если это возможно. Каждый элемент должен иметь свою сцену, со "
+"своими собственными скриптами. Это предотвращает ошибки, обеспечивает "
+"управляемость проектом и позволяет разным участникам команды работать с "
+"разными частями игры."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:40
 msgid ""
@@ -85,10 +99,14 @@ msgid ""
 "constant time intervals. We want the life bar to update when the Player "
 "takes damage."
 msgstr ""
+"После того, как основа игры и UI готовы, вам нужно будет соединить их как-"
+"то. В нашем примере у нас есть враг, который атакует игрока с постоянными "
+"временными интервалами. Мы хотим, чтобы шкала жизни обновлялась когда игрок "
+"получает повреждения."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:45
 msgid "To do this, we will use **signals**."
-msgstr ""
+msgstr "Для этого мы будем использовать **сигналы**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
 msgid ""
@@ -101,10 +119,18 @@ msgid ""
 "information on check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
+"Сигналы — это своя версия шаблона Observer в Godot. Они позволяют нам "
+"отправить некоторый сигнал. Другие узлы могут подключаться к объекту, "
+"который **излучает** сигнал и получать информацию об этом. Это мощный "
+"инструмент мы используем много для UI и системы достижений. Вы не обязаны "
+"использовать их повсюду. Соединение двух узлов добавляет некоторую связь "
+"между ними. Когда есть много связей, ими становятся трудно управлять. Для "
+"получения дополнительной информации посмотрите `signals video tutorial "
+"<https://youtu.be/l0BkQxF7X3E>`_ on GDquest."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
-msgstr ""
+msgstr "Скачайте и изучите стартовый проект"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:55
 msgid ""
@@ -112,6 +138,10 @@ msgid ""
 "ui_code_life_bar.zip>`. It contains all the assets and scripts you need to "
 "get started. Extract the .zip archive to get two folders: `start` and `end`."
 msgstr ""
+"Скачать проект Godot : :download:`ui_code_life_bar.zip <files/"
+"ui_code_life_bar.zip>`. Он содержит все ресурсы и скрипты, необходимые для "
+"начала работы. Извлеките ZIP-архив, чтобы получить две папки: `start` и "
+"`end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
 msgid ""
@@ -122,6 +152,12 @@ msgid ""
 "basic combat mechanics already work. But as the character isn't connected to "
 "the life bar the ``GUI`` doesn't do anything."
 msgstr ""
+"Загрузите проект ``start`` в Godot. В ``Файловой системе`` дважды щелкните "
+"на LevelMockup.tscn, чтобы открыть её. Это макет RPG игры, где 2 персонажа "
+"сталкиваются друг с другом. Розовый враг атакует и наносит урон зелёному "
+"квадрату через регулярные промежутки времени, вплоть до его смерти. Вы "
+"можете опробовать игру: основная боевая механика уже работает. Но так как "
+"персонаж не подключен к шкале жизни ``GUI`` никак не изменяется."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:68
 msgid ""
@@ -132,41 +168,58 @@ msgid ""
 "prototype and test the gameplay, chances are it won't work well and you'll "
 "have to re-create it from scratch."
 msgstr ""
+"Это типично для программирования игры: сначала вы реализуете основной "
+"геймплей, обрабатываете смерть игрока, и только после вы добавите интерфейс. "
+"Это потому, что UI \"слушает\", что происходит в игре. Поэтому он не может "
+"работать, если другие системы еще не готовы. Если вы разработали интерфейс "
+"перед созданием прототипа и последующего тестирования игры, скорее всего, он "
+"не будет работать хорошо, и вам придется заново создавать его с нуля."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:71
 msgid "The scene contains a background sprite, a GUI, and two characters."
 msgstr ""
+"Сцена содержит спрайт с фоном игры, графический интерфейс и два персонажа."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:75
+#, fuzzy
 msgid "The scene tree, with the GUI scene set to display its children"
-msgstr ""
+msgstr "Дерево сцены, с GUI которая отображает своих детей"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
 msgid ""
 "The GUI scene encapsulates all of the Game User Interface. It comes with a "
 "barebones script where we get the path to nodes that exist inside the scene:"
 msgstr ""
+"Сцена GUI инкапсулирует весь интерфейс игры. Он идет с каркасом скрипта, где "
+"мы получаем путь к узлам, которые существуют внутри сцены:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
 msgid ""
 "``number_label`` displays a life count as a number. It's a ``Label`` node"
 msgstr ""
+"``number_label`` отображает количество здоровья в числовом виде. Этот узел "
+"-  ``Label``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:107
 msgid "``bar`` is the life bar itself. It's a ``TextureProgress`` node"
-msgstr ""
+msgstr "``bar`` - это сама шкала здоровья. Этот узле - ``TextureProgress``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:108
+#, fuzzy
 msgid ""
 "``tween`` is a component-style node that can animate and control any value "
 "or method from any other node"
 msgstr ""
+"``tween`` это компонент узла, который может анимировать и управлять любым "
+"значением или методом из любого другого узла"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:113
 msgid ""
 "The project uses a simple organisation that works for game jams and tiny "
 "games."
 msgstr ""
+"Проект использует простую организацию, которая подходит для средних и малых "
+"размеров игр."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:115
 msgid ""
@@ -177,6 +230,11 @@ msgid ""
 "In the `scripts/` folder you will find the enemy, the player, and the GUI "
 "controller scripts."
 msgstr ""
+"В корне проекта, в папке `res://` вы найдете `LevelMockup`. Это основная "
+"игровая сцена с которой мы будем работать. Все компоненты, составляющие "
+"игру, находятся в папке `scenes/`. Папка `assets/` содержит игровые спрайты "
+"и шрифт для счетчика HP. В папке ' scripts/' вы найдете скрипты для врага, "
+"игрока и GUI-контроллера."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:117
 msgid ""
@@ -184,14 +242,18 @@ msgid ""
 "the scene in the editor. You'll see the LifeBar and EnergyBar are sub-scenes "
 "themselves."
 msgstr ""
+"Щелкните на значок редактирования сцены справа от узла в дереве сцены, чтобы "
+"открыть сцену в редакторе. Вы увидите, LifeBar и EnergyBar которые также "
+"являются сценами."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:121
 msgid "The scene tree, with the Player scene set to display its children"
-msgstr ""
+msgstr "Дерево сцены с Player и его детьми"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:124
 msgid "Set up the Lifebar with the Player's max\\_health"
 msgstr ""
+"Установка параметра Player max\\_health (Максимальное здоровье) для LifeBar'a"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:126
 msgid ""
@@ -201,6 +263,11 @@ msgid ""
 "player's health to the GUI every time they take damage. The GUI will then "
 "update the ``Lifebar`` and ``Number`` nodes with this value."
 msgstr ""
+"Мы должны передать в GUI текущее здоровье игрока, чтобы обновить текстуру "
+"LifeBar'a, и для отображения оставшегося здоровья в счетчике HP, который "
+"находиться в левом верхнем углу экрана. Для этого мы отправляем здоровье "
+"игрока в GUI каждый раз, когда они получают урон. GUI будет обновлять узлы "
+"``Lifebar`` и ``Number`` с учетом этого значения."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:132
 msgid ""
@@ -209,6 +276,10 @@ msgid ""
 "step is thus to tell the ``GUI`` what the green character's ``max_health`` "
 "is."
 msgstr ""
+"Мы могли бы закончить здесь с отображением числа, но нам нужно "
+"инициализировать шкалу ``max_value`` для того, чтобы обновлять с правильными "
+"пропорциями. Первым делом говорим передаем ``GUI`` параметр зеленого "
+"персонажа (Игрока) ``max_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:139
 msgid ""
@@ -217,6 +288,10 @@ msgid ""
 "to change its `max_value` property. You send a percentage from the `Player` "
 "to the `GUI` instead:  `health / max_health * 100`."
 msgstr ""
+"Шкала `TextureProgress` имеет значение `max_value` в `100` по-умолчанию. "
+"Если вам не нужно отображать здоровье персонажа с числом, вам не нужно "
+"менять его свойство `max_value`. Вместо этого Вы отправляете процент от "
+"`Player` в `GUI`: `health / max_health * 100`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
 msgid ""
@@ -225,6 +300,10 @@ msgid ""
 "``Player``'s ``max_health`` in a new variable and use it to set the "
 "``bar``'s ``max_value``:"
 msgstr ""
+"Нажмите на значок скрипта справа от ``GUI`` в панели сцен, чтобы открыть его "
+"скрипт. В функции ``_ready`` мы собираемся хранить параметр ``max_health`` "
+"узла ``Player`` в новой переменной и использовать его для установки значения "
+"``max_value`` узла ``bar``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
 msgid ""
@@ -233,6 +312,11 @@ msgid ""
 "from there. It gives us access to the node. The second part of the "
 "statement, ``.max_health``, accesses the ``max_health`` on the Player node."
 msgstr ""
+"Давайте рассмотрим его. ``$\"../Characters/Player\"`` является сокращением, "
+"которое поднимается на один узел вверх в дереве сцен, и извлекает "
+"``Characters/Player`` оттуда. Это дает нам доступ к узлу. Вторая часть "
+"заявления, ``.max_health``, обращается к параметру ``max_health`` узла "
+"Player."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
 msgid ""
@@ -240,6 +324,9 @@ msgid ""
 "the two lines into one, but we'll need to use ``player_max_health`` again "
 "later in the tutorial."
 msgstr ""
+"Вторая строка присваивает это значение к ``bar.max_value``. Вы могли бы "
+"объединить две строки в одну, но мы должны будем использовать "
+"``player_max_health`` снова позже в этом уроке."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
 msgid ""
@@ -247,6 +334,9 @@ msgid ""
 "game, so we could work with this. Why do we still use ``max_health``? There "
 "are two reasons:"
 msgstr ""
+"``Player.gd`` устанавливает``health`` значение ``max_health`` в начале игры, "
+"поэтому мы могли бы работать с ним. Почему мы по-прежнему используем "
+"``max_health``? Есть две причины:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
 msgid ""
@@ -254,6 +344,9 @@ msgid ""
 "``max_health``: a future version of the game may load a level where the "
 "player already lost some health."
 msgstr ""
+"Вы не можете быть уверены, что ``health`` всегда будет равен ``max_health``: "
+"будущая версия игры может загрузить уровень, где игрок уже потерял некоторое "
+"количество здоровья."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
 msgid ""
@@ -265,16 +358,25 @@ msgid ""
 "to set everything up and prepare the game session. Learn more about _ready: :"
 "doc:`scripting_continued`"
 msgstr ""
+"Когда вы открываете сцену в игре, Godot создает узлы один за одним, следуя "
+"заказу в вашей панели сцен, сверху вниз. `GUI` и `Player` не являются частью "
+"той же ветви узла. Чтобы убедиться, что они оба существуют, когда мы "
+"получаем доступ к ним, мы должны использовать функцию `_ready`. Godot "
+"вызывает `_ready` сразу после того, как он загрузил все узлы, до начала "
+"игры. Это идеальная функция, чтобы установить все и подготовить сессию игры. "
+"Узнайте больше о _ready: :doc:`scripting_continued`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:188
 msgid "Update health with a signal when the player takes a hit"
-msgstr ""
+msgstr "Обновление здоровья с помощью сигнала при получении урона"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:190
 msgid ""
 "Our GUI is ready to receive the ``health`` value updates from the "
 "``Player``. To achieve this we're going to use **signals**."
 msgstr ""
+"Наш GUI готов к получению обновляемых значений ``health`` из ``Player``. Для "
+"этого мы собираемся использовать **сигналы**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:195
 msgid ""
@@ -283,6 +385,11 @@ msgid ""
 "can also create your own using the `signal` keyword. On the `Player` node, "
 "you'll find two signals we created for you: `died` and `health_changed`."
 msgstr ""
+"Есть много полезных встроенных сигналов, таких как `enter_tree` и "
+"`exit_tree`, они вызываются, когда узлы соответственно создаются и "
+"уничтожаются. Вы также можете создать свой собственный сигнал с помощью "
+"ключевого слова `signal`. На узле `Player` вы найдете два сигнала, которые "
+"мы создали для вас: `died` и `health_changed`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
 msgid ""
@@ -295,6 +402,13 @@ msgid ""
 "a second and you'll likely break the game because of the order in which the "
 "code runs."
 msgstr ""
+"Почему мы напрямую не получаем узел ``Player`` в функции ``_process`` и "
+"получаем на значение health? Из за этого доступ к узлам создает тесную связь "
+"между ними. Это может работать, но по мере того как ваша игра растет больше, "
+"у вас станет очень много сигналов. Если вы получаете узлы таким образом, все "
+"становится запутанным. Не только это: вы должны постоянно узнавать изменения "
+"в функции ``_process``. Эта проверка происходит 60 раз в секунду, и вы, "
+"вероятно, испортите игру из-за порядка, в котором выполняется код."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:206
 msgid ""
@@ -305,8 +419,15 @@ msgid ""
 "information. And you will update the state of your connected node *right "
 "after* the change happened."
 msgstr ""
+"На данном фрейме вы можете увидеть свойство другого узла *до* того, как он "
+"был обновлен: вы получаете значение из последнего кадра. Это приводит к "
+"неясным ошибок, которые трудно исправить. С другой стороны, сигнал "
+"генерируется сразу после того, как произошло изменение. Это **гарантирует** "
+"вы получаете свежие данные. И вы обновите состояние подключенного узла "
+"*сразу после* изменений."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:215
+#, fuzzy
 msgid ""
 "The Observer pattern, that signals derive from, still adds a bit of coupling "
 "between node branches. But it's generally lighter and more secure than "
@@ -317,6 +438,16 @@ msgid ""
 "gameprogrammingpatterns.com/observer.html>`_. The `full book <http://"
 "gameprogrammingpatterns.com/contents.html>`_ is available online for free."
 msgstr ""
+"Шаблон Observer, эти сигналы являются его наследниками, по-прежнему "
+"добавляет немного связей между ветвями узла. Но это, как правило, легче и "
+"безопаснее, чем доступ к узлам напрямую для связи между двумя отдельными "
+"классами. Для родительского узла может быть нормальным получать значения от "
+"его дочерних узлов. Но вы хотите, чтобы пользу сигналов, если вы работаете с "
+"двумя отдельными ветвями. Прочитайте шаблоны программирования игр для "
+"получения дополнительной информации о `Observer шаблоне <http://"
+"gameprogrammingpatterns.com/observer.html>`_. `Полная версия <http://"
+"gameprogrammingpatterns.com/contents.html>`_ доступна для скачивания "
+"бесплатно."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
 msgid ""
@@ -325,24 +456,31 @@ msgid ""
 "and click on the Node tab. This is the place to connect nodes to listen the "
 "one you selected."
 msgstr ""
+"С учетом этого давайте подключим ``GUI`` к ``Player``. Щелкните на узле "
+"``Player`` в панели сцен, чтобы выбрать его. Направляйтесь а инспектор и "
+"нажмите на вкладку Узел. Здесь подключаются узлы для прослушивания."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
 msgid "The first section lists custom signals defined in ``Player.gd``:"
 msgstr ""
+"В первом разделе перечислены пользовательские сигналы, определенные в "
+"``Player.gd``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
 msgid ""
 "``died`` is emitted when the character died. We will use it in a moment to "
 "hide the UI."
 msgstr ""
+"``died`` излучает сигнал, когда персонаж умер. Мы будем использовать его для "
+"скрытия интерфейса."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:228
 msgid "``health_changed`` is emitted when the character got hit."
-msgstr ""
+msgstr "``health_changed`` излучает, когда персонаж получил урон."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:232
 msgid "We're connecting to the health\\_changed signal"
-msgstr ""
+msgstr "Мы соединимся с сигналом health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
 msgid ""
@@ -354,26 +492,40 @@ msgid ""
 "too many arguments using this window as they're less convenient than doing "
 "it from the code."
 msgstr ""
+"Выберите ``health_changed`` и кликните на кнопку \"Соединить\" в правом "
+"нижнем углу, чтобы открыть окно Соединения Сигнала. На левой стороне вы "
+"можете выбрать узел, который будет слушать этот сигнал. Выберите узел "
+"``GUI``. Правая сторона экрана позволит вам добавить дополнительные значения "
+"к сигналу. Мы уже позаботились об этом в ``Player.gd``. В целом, я "
+"рекомендую не добавлять слишком много аргументов, используя это окно, так "
+"как делать это в нем менее удобно, чем в коде."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
 msgid "The Connect Signal window with the GUI node selected"
-msgstr ""
+msgstr "Окно подключения сигнала с выбранным узлом GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
 msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
 msgstr ""
+"При необходимости можно подключить узлы из кода. Однако подключение из "
+"редактора имеет два преимущества:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:250
+#, fuzzy
 msgid "Godot can write new callback functions for you in the connected script"
 msgstr ""
+"Godot может написать новые функции обратного вызова для вас в подключенном "
+"скрипте"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:251
 msgid ""
 "An emitter icon appears next to the node that emits the signal in the Scene "
 "dock"
 msgstr ""
+"Рядом с узлом, который излучает сигнал в панели сцен, появился значок "
+"эмиттера"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
 msgid ""

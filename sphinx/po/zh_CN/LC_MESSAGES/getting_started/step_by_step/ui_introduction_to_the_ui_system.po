@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:4
 msgid "Design interfaces with the Control nodes"
-msgstr ""
+msgstr "使用控制节点设计接口"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
 msgid ""
@@ -32,37 +32,44 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
+"电脑显示器、手机和电视屏幕有各种形状和大小。要发布一款游戏，你需要支持不同的"
+"屏幕比例和分辨率。构建适应所有平台的响应式接口可能很困难。值得庆幸的是，Godot"
+"提供了强大的的工具来设计和管理响应性用户界面。要设计UI，您将使用控制节点。这"
+"些是编辑器中带有绿色图标的节点。它们有几十个，可以创建从生命条到复杂应用程序"
+"的任何东西。Godot的整个编辑器和插件都使用这些节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
-msgstr ""
+msgstr "Godot的编辑器是用引擎的UI框架制作的"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:19
 msgid "This guide will get you started with UI design. You will learn:"
-msgstr ""
+msgstr "本指南将让您从UI设计开始。你将学习:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:21
 msgid "The five most useful control nodes to build your games’ interface"
-msgstr ""
+msgstr "五个最有用的控制节点来构建你的游戏界面"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:22
 msgid "How to work with the anchor of UI elements"
-msgstr ""
+msgstr "如何使用UI元素的锚点"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:23
 msgid ""
 "How to efficiently place and arrange your user interface using containers"
-msgstr ""
+msgstr "如何使用容器有效地放置和安排用户界面"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:25
 msgid "The five most common containers"
-msgstr ""
+msgstr "5个最常见的容器"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:27
 msgid ""
 "To learn how to control the interface and connect it to other scripts, read :"
 "ref:`Build your first game UI in Godot <doc_ui_game_user_interface>`."
 msgstr ""
+"要了解如何控制接口并将其连接到其他脚本，请阅读:ref:“在Godot "
+"<doc_ui_game_user_interface>中构建您的第一个游戏UI”。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
 msgid ""
@@ -72,87 +79,93 @@ msgid ""
 "with others like the AnimationPlayer, Tween or the StreamPlayer. Control "
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
+"在设计接口时只使用控制节点。它们具有独特的特性，使它们能够相互协作。其他节点"
+"如Node2D、Sprite等将无法工作。您仍然可以使用一些与其他节点一起工作的节点，比"
+"如AnimationPlayer、Tween或StreamPlayer。控件节点是类似于Node2D的画布，所以您"
+"可以对它们应用着色器。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
 msgid "All control nodes share the same main properties:"
-msgstr ""
+msgstr "所有控件节点具有相同的主要属性:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:39
 msgid "Anchor"
-msgstr ""
+msgstr "锚"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:40
 msgid "Bounding rectangle"
-msgstr ""
+msgstr "边界矩形"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
 msgid "Focus and focus neighbor"
-msgstr ""
+msgstr "焦点和焦点邻居"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
-msgstr ""
+msgstr "尺寸标志"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:43
 msgid "Margin"
-msgstr ""
+msgstr "边距"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:44
 msgid "The optional UI theme"
-msgstr ""
+msgstr "可选的UI主题"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:46
 msgid ""
 "Once you understand the basics of the Control node, it will take you less "
 "time to learn all the nodes that derive from it."
 msgstr ""
+"一旦您了解了控制节点的基础知识，学习所有从中派生的节点所需的时间就会减少。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:51
 msgid "The 5 most common UI elements"
-msgstr ""
+msgstr "5个最常见的UI元素"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:53
 msgid ""
 "Godot ships with dozens of Control nodes. A lot of them are here to help you "
 "build editor plugins and applications."
 msgstr ""
+"Godot配备了数十个控制节点。这里有很多插件可以帮助您构建编辑器插件和应用程序。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:56
 msgid ""
 "For most games, you'll only need five types of UI elements, and a few "
 "Containers. These five Control nodes are:"
-msgstr ""
+msgstr "对于大多数游戏，您只需要五种类型的UI元素和一些容器。这五个控制节点是:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:59
 msgid "Label: for displaying text"
-msgstr ""
+msgstr "标签：用于显示文本"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:60
 msgid ""
 "TextureRect: used mostly for backgrounds, or everything that should be a "
 "static image"
-msgstr ""
+msgstr "纹理竖立:主要用于背景，或所有应该是静态图像的东西"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:62
 msgid ""
 "TextureProgress: for lifebars, loading bars, horizontal, vertical or radial"
-msgstr ""
+msgstr "纹理进展:适用于生命条、进度条、水平杆、垂直杆或径向杆"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:64
 msgid "NinePatchRect: for scalable panels"
-msgstr ""
+msgstr "NinePatchRect：可缩放面板"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:65
 msgid "TextureButton: to create buttons"
-msgstr ""
+msgstr "纹理按钮：用于创建按钮"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:69
 msgid "The 5 most common Control nodes for UI design"
-msgstr ""
+msgstr "UI设计中最常见的5个控制节点"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:72
 msgid "TextureRect"
-msgstr ""
+msgstr "纹理结构"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
 msgid ""
@@ -160,6 +173,8 @@ msgid ""
 "the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
+"**纹理矩形**在UI中显示纹理或图像。它看起来类似于精灵节点，但它提供了多种缩放"
+"模式。设置拉伸模式属性来改变其行为:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -167,20 +182,23 @@ msgid ""
 "rectangle, only if ``expand`` property is ``true``; otherwise, it behaves "
 "like ``Keep`` mode. Default mode for backwards compatibility."
 msgstr ""
+"`Scale On Expand (compat)`缩放纹理以适应节点的边框，仅当`Expand`属性为`true`;"
+"否则，它的行为就像`Keep`mode。向后兼容的默认模式。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:79
 msgid "``Scale`` scales the texture to fit the node’s bounding rectangle"
-msgstr ""
+msgstr "`Scale`缩放纹理以适合节点的边框"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:80
 msgid "``Tile`` makes the texture repeat, but it won't scale"
-msgstr ""
+msgstr "`Tile`使纹理重复，但它不会缩放"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:81
 msgid ""
 "``Keep`` and ``Keep Centered`` force the texture to remain at its original "
 "size, in the top left corner or the center of the frame respectively"
 msgstr ""
+"`Keep`和`Keep Centered`迫使纹理保持其原始大小，分别在左上角或框架的中心"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:84
 msgid ""
@@ -188,6 +206,8 @@ msgid ""
 "to remain its original aspect ratio, in the top left corner or the center of "
 "the frame respectively"
 msgstr ""
+"`Keep Aspect`和`Keep Aspect center`缩放纹理，但迫使它保持其原来的长宽比，分别"
+"在左上角或框架的中心"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:85
 msgid ""
@@ -195,20 +215,24 @@ msgid ""
 "shorter side fits the bounding rectangle and the other one clips to the "
 "node’s limits"
 msgstr ""
+"`Keep Aspect Covered`的工作方式就像`Keep Aspect Centered`一样，但较短的边符合"
+"矩形的边框，而另一边则与节点的限制相结合"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
+"与精灵节点一样，你可以调节纹理的颜色。单击`Modulate（调制）`属性并使用颜色选"
+"择器。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:92
 msgid "TextureRect modulated with a red color"
-msgstr ""
+msgstr "用红色调制的纹理"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:95
 msgid "TextureButton"
-msgstr ""
+msgstr "纹理按钮"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:97
 msgid ""
@@ -218,6 +242,10 @@ msgid ""
 "the keyboard's input. The sixth image slot, the Click Mask, lets you define "
 "the clickable area using a 2-bit, pure black and white image."
 msgstr ""
+"**纹理按钮**类似于纹理矩形，只不过它有5个纹理槽：每个纹理槽对应一个按钮的状"
+"态。大多数时候，你会使用普通的、按下的和悬停的纹理。如果你的界面监听键盘的输"
+"入，集中注意力是很有用的。第六个图像插槽，单击Mask，允许您使用一个2位的纯黑白"
+"图像定义可单击区域。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:104
 msgid ""
@@ -229,14 +257,19 @@ msgid ""
 "``modulate`` property, to change its color, and ``Resize`` and ``Stretch`` "
 "modes to change its scale behavior."
 msgstr ""
+"在基本按钮部分中，您会发现一些复选框，它们会改变按钮的行为。当`Toggle Mode`开"
+"启时，按钮会在活动状态和正常状态之间切换。`Disabled`会让它默认被禁用，在这种"
+"情况下，它会使用`Disabled`纹理。纹理按钮与纹理框架共享一些属性:它有"
+"`modulate（调制）`属性来改变其颜色，`Resize（调整）`和`Stretch（伸展）`模式来"
+"改变其缩放行为。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:114
 msgid "TextureButton and its 5 texture slots"
-msgstr ""
+msgstr "纹理按钮和它的5个纹理槽"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:117
 msgid "TextureProgress"
-msgstr ""
+msgstr "纹理的进展"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:119
 msgid ""
@@ -244,6 +277,8 @@ msgid ""
 "Under and Over textures sandwich the Progress one, which displays the bar's "
 "value."
 msgstr ""
+"**TextureProgress**层多达3个精灵来创建进度条。下面和上面的贴图夹住了进度条，"
+"显示了条的值。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:123
 msgid ""
@@ -252,6 +287,8 @@ msgid ""
 "``Initial Angle`` and ``Fill Degrees`` properties let you limit the range of "
 "the gauge."
 msgstr ""
+"`Mode`属性控制条增长的方向：水平、垂直或径向。如果你把它设置为径向，`Initial "
+"Angle（初始角度）`和`Fill Degrees（填充度）`属性让你限制量规的范围。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:128
 msgid ""
@@ -263,10 +300,14 @@ msgid ""
 "the default of ``1`` and ``100,`` and set the ``Value`` property to ``40``, "
 "40% of the ``Progress`` texture will show up, and 60% of it will stay hidden."
 msgstr ""
+"要使栏动画化，您需要查看Range部分。设置`Min`和`Max`属性来定义量规的范围。例"
+"如，为了表示一个角色的生命，你需要将`Min`设置为`0`，`Max`设置为角色的最大生"
+"命。更改“值”属性以更新栏。如果将`Min`和`Max`的值设置为`1`和`100`的默认值，并"
+"将`Value`属性设置为`40`，`Progress`纹理的40%会显示，60%会隐藏。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:138
 msgid "TextureProgress bar, two thirds filled"
-msgstr ""
+msgstr "文本进度条，三分之二填充"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:141
 msgid "Label"
@@ -280,14 +321,17 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign respectively."
 msgstr ""
+"**标签**打印文本到屏幕。您将在Label部分和Inspector中找到它的所有属性。在"
+"`text`属性中写入文本，如果希望它遵守文本框的大小，请选中Autowrap。如果"
+"Autowrap关闭，则无法缩放节点。您可以使用align和Valign分别水平和垂直对齐文本。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
 msgid "Picture of a Label"
-msgstr ""
+msgstr "标签图片"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:155
 msgid "NinePatchRect"
-msgstr ""
+msgstr "可缩放面板"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
 msgid ""
@@ -296,31 +340,36 @@ msgid ""
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
+"**NinePatchRect**在3行和3列中进行纹理分割。当你缩放纹理时，它的中心和侧面是平"
+"铺的，但是它不会缩放角落。为UI构建面板、对话框和可伸缩的背景非常有用。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
-msgstr ""
+msgstr "NinePatchRect使用min_size属性缩放"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "There are two workflows to build responsive UIs"
-msgstr ""
+msgstr "有两个工作流可以构建响应性UI"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:169
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
-msgstr ""
+msgstr "在Godot中，有两个工作流可以构建可伸缩和灵活的接口:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:171
 msgid ""
 "You have many container nodes at your disposal that scale and place UI "
 "elements for you. They take control over their children."
 msgstr ""
+"您有许多容器节点可供使用，这些节点可伸缩并为您放置UI元素。他们控制他们的孩"
+"子。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
+"另一方面，你有布局菜单。它帮助您锚定、放置和调整UI元素在其父级中的大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
 msgid ""
@@ -332,16 +381,20 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
+"这两种方法并不总是兼容的。因为容器控制其子节点，所以不能在其上使用布局菜单。"
+"每个容器都有特定的效果，所以您可能需要嵌套其中几个来获得工作接口。用布局的方"
+"法，你从下到上工作，在孩子身上。由于没有在场景中插入额外的容器，所以层次结构"
+"会更加清晰，但是很难在行、列、网格等中排列项。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:176
 msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
-msgstr ""
+msgstr "当你为你的游戏和工具创建ui时，你会发现什么是最适合每种情况的。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:180
 msgid "Place UI elements precisely with anchors"
-msgstr ""
+msgstr "用锚精确地放置UI元素"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:182
 msgid ""
@@ -350,14 +403,16 @@ msgid ""
 "Top, Right and Bottom edges of the node. Change any of the 4 anchors to "
 "change the reference point of the margins."
 msgstr ""
+"控制节点有位置和大小，但它们也有锚和边距。锚定义节点的左、上、右和下边缘的原"
+"点或参考点。更改4个锚中的任何一个，以更改边距的参考点。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:189
 msgid "The anchor property"
-msgstr ""
+msgstr "锚属性"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:192
 msgid "How to change the anchor"
-msgstr ""
+msgstr "如何更换锚"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:194
 msgid ""
@@ -368,14 +423,18 @@ msgid ""
 "inspector’s 4 properties. The layout menu will only show up when you select "
 "a control node."
 msgstr ""
+"与任何属性一样，您可以在检查器中编辑4个锚点，但这不是最方便的方法。当您选择控"
+"件节点时，布局菜单会出现在工具栏的视口上方。它为您提供了一个图标列表，通过单"
+"击就可以设置所有4个锚点，而不是使用检查器的4个属性。布局菜单只会在选择控件节"
+"点时显示。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:203
 msgid "The layout menu in the viewport"
-msgstr ""
+msgstr "视图中的布局菜单"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "Anchors are relative to the parent container"
-msgstr ""
+msgstr "锚相对于父容器"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:208
 msgid ""
@@ -387,16 +446,22 @@ msgid ""
 "position in pixels, while anchors are relative to the parent container's "
 "size."
 msgstr ""
+"每个锚都是0到1之间的值。对于左侧和顶部锚点，值为0意味着在没有任何边界的情况"
+"下，节点的边缘将与其父节点的左侧和顶部边缘对齐。对于右边缘和底部边缘，值为1意"
+"味着它们将与父容器的右边缘和底部边缘对齐。另一方面，边距表示到锚点位置的距离"
+"(以像素为单位)，而锚点则相对于父容器的大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:218
 msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
+"边缘与锚固位置有关，锚固位置相对于锚定。在实践中，您通常会让容器为您更新利润"
+"率"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:223
 msgid "Margins change with the anchor"
-msgstr ""
+msgstr "边距随锚而变化"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:225
 msgid ""
@@ -407,10 +472,14 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
+"当您移动或调整控件节点的大小时，页边距将自动更新。它们表示从控制节点的边缘到"
+"其锚点的距离，锚点相对于父控制节点或容器。这就是为什么控制节点应该总是在容器"
+"中，我们稍后会看到。如果不存在父元素，则边界将相对于检查器中在Rect部分中设置"
+"的节点自己的边框。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:235
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
-msgstr ""
+msgstr "将CenterContainer中的边距设置为“Full Rect”锚"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:237
 msgid ""
@@ -421,10 +490,14 @@ msgid ""
 "border of the screen? Use the MarginContainer. Want to build a vertical "
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
+"尝试更改锚或将控制节点嵌套在容器中：边界将会更新。您很少需要手动编辑页边距。"
+"总是试着先找一个容器来帮助你；Godot提供了解决所有常见问题的节点。需要在生命条"
+"和屏幕边界之间添加空间?使用MarginContainer。想建立一个垂直菜单?使用"
+"VBoxContainer。下面将详细介绍这些内容。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
 msgid "Use size tags to change how UI elements fill the available space"
-msgstr ""
+msgstr "使用大小标签来更改UI元素如何填充可用空间"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:248
 msgid ""
@@ -436,10 +509,15 @@ msgid ""
 "up to a third of the available space, but no more. The container will take "
 "over the node and resize it automatically."
 msgstr ""
+"每个控件节点都有大小标志。它们告诉容器UI元素应该如何伸缩。如果将“填充”标志添"
+"加到水平或垂直属性中，节点的边界框将占用它能占用的所有空间，但它将尊重其兄弟"
+"节点并保留其大小。如果HBoxContainer中有3个textur节点，且两个轴上都有“填充”标"
+"志，那么它们将占用三分之一的可用空间，但仅此而已。容器将接管节点并自动调整其"
+"大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:258
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr ""
+msgstr "HBoxContainer中的3个UI元素，它们是水平对齐的"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:260
 msgid ""
@@ -447,21 +525,25 @@ msgid ""
 "against its siblings. Its bounding rectangle will grow against the edges of "
 "its parent, or until it's blocked by another UI node."
 msgstr ""
+"“Expand（展开）”标志允许UI元素获得它所能获得的所有空间，并对其兄弟元素进行推"
+"送。它的边框会随着父节点的边缘增长，或者直到被另一个UI节点阻塞为止。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:266
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
-msgstr ""
+msgstr "与上面的示例相同，但是中心节点有“Expand（展开）”大小标志"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
+"您需要一些实践来理解大小标签，因为它们的效果会根据您如何设置接口而发生很大的"
+"变化。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:273
 msgid "Arrange control nodes automatically with containers"
-msgstr ""
+msgstr "使用容器自动排列控制节点"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
 msgid ""
@@ -470,6 +552,8 @@ msgid ""
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor so you can see the effect instantly."
 msgstr ""
+"容器自动排列所有子控件节点，包括行、列等中的其他容器。使用它们在接口周围或中"
+"心节点的边框中添加填充。所有内置容器在编辑器中更新，以便您可以立即看到效果。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""
@@ -477,33 +561,36 @@ msgid ""
 "elements. To change them, navigate down to the Custom Constants section in "
 "the Inspector."
 msgstr ""
+"容器有一些特殊的属性来控制它们如何配置UI元素。要更改它们，请向下导航到检查器"
+"中的自定义常量部分。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:286
 msgid "The 5 most useful containers"
-msgstr ""
+msgstr "5个最有用的容器"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:288
 msgid ""
 "If you build tools, you might need all of the containers. But for most "
 "games, a handful will be enough:"
 msgstr ""
+"如果您构建工具，您可能需要所有的容器。但对于大多数游戏来说，少量就足够了:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:291
 msgid "MarginContainer, to add margins around part of the UI"
-msgstr ""
+msgstr "边缘容器，以在部分UI周围添加边缘"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:292
 msgid "CenterContainer, to center its children in its bounding box"
-msgstr ""
+msgstr "center容器，将其子元素置于其边框中"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:293
 msgid ""
 "VboxContainer and HboxContainer, to arrange UI elements in rows or columns"
-msgstr ""
+msgstr "VboxContainer和HboxContainer，将UI元素排列在行或列中"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
-msgstr ""
+msgstr "GridContainer以网格形式排列控件节点"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -513,11 +600,14 @@ msgid ""
 "want a single container nested inside it. If you use textures and buttons "
 "instead, they'll stack up."
 msgstr ""
+"CenterContainer把所有子元素集中在它的边框内。如果你想让选项保持在视孔的中心位"
+"置，这是一个通常用于标题屏幕的选项。由于它集中于所有内容，您通常需要在其中嵌"
+"套单个容器。如果你使用纹理和按钮，它们会堆积起来。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:305
 msgid ""
 "CenterContainer in action. The life bar centers inside its parent container."
-msgstr ""
+msgstr "中心容器的作用。生命条位于它的父容器内部。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:308
 msgid ""
@@ -528,10 +618,13 @@ msgid ""
 "click the corresponding value box and type any number. It will activate "
 "automatically."
 msgstr ""
+"边缘型容器在子节点的任何一侧都添加了一个边距。添加一个包含整个viewport的边线"
+"容器，以在窗口边缘和UI之间添加分隔符。您可以在容器的顶部、左侧、右侧或底部设"
+"置一个边距。不需要勾选复选框:单击相应的值框并输入任何数字。它会自动激活。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:317
 msgid "The MarginContainer adds a 40px margin around the Game User Interface"
-msgstr ""
+msgstr "MarginContainer在游戏用户界面周围增加40px空白"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:319
 msgid ""
@@ -542,10 +635,14 @@ msgid ""
 "rows and columns of different sizes, as you can nest them to your heart's "
 "content."
 msgstr ""
+"有两个boxcontainer：VBoxContainer和HBoxContainer。您不能添加BoxContainer节点"
+"本身，因为它是一个辅助类，但是您可以使用垂直和水平的box容器。它们以行或列的形"
+"式排列节点。用它们来排列商店里的商品，或者用不同大小的行和列构建复杂的网格，"
+"因为你可以将它们嵌套在你的核心内容中。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:328
 msgid "The HBoxContainer horizontally aligns UI elements"
-msgstr ""
+msgstr "HBoxContainer水平对齐UI元素"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:330
 msgid ""
@@ -556,6 +653,10 @@ msgid ""
 "add a spacer control node before its first child or after its last child, "
 "from a script."
 msgstr ""
+"VBoxContainer自动将它的子元素排列到一个列中。它把它们一个接一个地放在一起。如"
+"果使用分离参数，它将在其子元素之间留下间隙。HBoxContainer将UI元素排列成一行。"
+"它类似于VBoxContainer，带有一个额外的`add_spacer`方法，可以从脚本中在第一个子"
+"节点之前或最后一个子节点之后添加间隔控制节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:337
 msgid ""
@@ -568,10 +669,14 @@ msgid ""
 "set the vertical and horizontal separation between the rows and columns "
 "respectively."
 msgstr ""
+"GridContainer允许您将UI元素按网格模式排列。您只能控制它所拥有的列的数量，并且"
+"它将根据其子元素的计数自行设置行数。如果你有9个孩子和三列,你将有9÷3 = 3行。再"
+"加3个子行，就有4行了。换句话说，当您添加更多的纹理和按钮时，它将创建新的行。"
+"与box容器一样，它有两个属性分别设置行和列之间的垂直和水平分隔。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:348
 msgid "A GridContainer with 2 columns. It sizes each column automatically."
-msgstr ""
+msgstr "一个有两列的GridContainer（网格容器）。它会自动调整每个列的大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
 msgid ""
@@ -579,3 +684,5 @@ msgid ""
 "design more advanced interface, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
+"Godot的UI系统很复杂，还有很多东西可以提供。要了解如何设计更高级的界面，请访"
+"问:ref:`GUI section <toc-learn-features-gui>`文档。"

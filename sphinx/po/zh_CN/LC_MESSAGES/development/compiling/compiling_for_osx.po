@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:4
-#, fuzzy
 msgid "Compiling for macOS"
-msgstr "开始编译"
+msgstr "为macOS平台编译"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:9
 msgid "Requirements"
-msgstr ""
+msgstr "需求"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:11
 msgid ""
@@ -43,7 +42,7 @@ msgstr "Scons 构建系统"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:16
 msgid "Xcode (or the more lightweight Command Line Tools for Xcode)"
-msgstr ""
+msgstr "或者更轻量的Command Line Tools for Xcode"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:19
 msgid "Compiling"
@@ -69,10 +68,13 @@ msgid ""
 "located in ``misc/dist/osx_tools.app``. Typically, for a \".64\" optimised "
 "binary built with `scons p=osx target=release_debug`:"
 msgstr ""
+"如果想创建和官方编译的.app一样的程序，你可以通过位于``misc/dist/osx_tools."
+"app``的模版来做。像这样一个为“.64”优化的二进制程序的构建（scons p=osx "
+"target=release_debug），通常这么做："
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:44
 msgid "Compiling for 32 and 64-bit"
-msgstr ""
+msgstr "同时为32位和64位编译"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:46
 msgid ""
@@ -81,10 +83,13 @@ msgid ""
 "\".fat\" executable which contains both 32 and 64-bit code, you can do so by "
 "specifying the bits in the scons command like so:"
 msgstr ""
+"10.6之后的所有macOS版本都是64位独占的，因此对于大多数用户来说，可执行文件默认"
+"为“.64”的。如果要编译同时包含32位和64位代码的“.fat”可执行文件，可以通过在"
+"scons命令中指定位设定来实现，如下所示："
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:56
 msgid "Cross-compiling"
-msgstr ""
+msgstr "交叉编译"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:58
 msgid ""

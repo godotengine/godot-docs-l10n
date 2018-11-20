@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:4
+msgid "CSG"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:6
+msgid ""
+"CSG stands for \"Constructive Solid Geometry\", and is a tool to combine "
+"basic shapes or custom meshes to create more complex shapes. In 3D modelling "
+"software, CSG is mostly known as \"Boolean Operators\"."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:8
+msgid ""
+"The aim of CSG in Godot is for it to be used in level prototyping. This "
+"technique allows users to create simple versions of most common shapes by "
+"combining primitives. Interior environments can be created by using inverted "
+"primitives."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:13
+#, fuzzy
+msgid "Introduction to CSG nodes"
+msgstr "Introdução ao editor do Godot"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:15
+msgid ""
+"Like other features of Godot, CSG is supported in form of nodes, these are "
+"the CSG nodes:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:17
+#, fuzzy
+msgid ":ref:`CSGBox <class_CSGBox>`"
+msgstr ":ref:`Color <class_Color>`"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:18
+msgid ":ref:`CSGCylinder <class_CSGCylinder>` (Also support cone)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:19
+#, fuzzy
+msgid ":ref:`CSGSphere <class_CSGSphere>`"
+msgstr ":ref:`String <class_String>`"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:20
+#, fuzzy
+msgid ":ref:`CSGTorus <class_CSGTorus>`"
+msgstr ":ref:`Color <class_Color>`"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:21
+#, fuzzy
+msgid ":ref:`CSGPolygon <class_CSGPolygon>`"
+msgstr ":ref:`Color <class_Color>`"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:22
+#, fuzzy
+msgid ":ref:`CSGMesh <class_CSGMesh>`"
+msgstr ":ref:`String <class_String>`"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:23
+#, fuzzy
+msgid ":ref:`CSGCombiner <class_CSGcombiner>'"
+msgstr ":ref:`Color <class_Color>`"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:30
+#, fuzzy
+msgid "CSG tools features"
+msgstr "Recursos decisivos"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:32
+msgid "Every CSG node supports 3 kinds of boolean operations:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:34
+msgid ""
+"Union: Geometry of both primitives is merged, intersecting geometry is "
+"removed."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:35
+msgid "Intersection: Only intersecting geometry remains, the rest is removed."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:36
+msgid ""
+"Subtraction: The second shape is subtracted from the first, leaving a dent "
+"with its shape."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:43
+msgid "CSGPolygon"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:45
+msgid ""
+"The :ref:`CSGPolygon <class_CSGPolygon>` node extrude along a Polygon drawn "
+"in 2D (in X,Y coordinates) in the following ways:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:47
+msgid "Depth: Extruded back a given amount."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:48
+msgid "Spin: Extruded while spinning around it's origin."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:49
+msgid ""
+"Path: Extruded along a Path node. This operation is commonly called lofting."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:55
+msgid ""
+"``Path`` mode needs a ``Path`` :ref:`Path <class_Path>` node to operate. In "
+"``Path``, draw the path and the polygon in ``CSGPolygon`` will extrude along "
+"the path."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:59
+#, fuzzy
+msgid "Custom meshes"
+msgstr "Iteradores personalizados"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:61
+msgid ""
+"Any mesh can be used for :ref:`CSGMesh <class_CSGMesh>`, the mesh can be "
+"modelled in other software and imported into Godot. Multiple materials is "
+"supported. There are some restrictions for geometry:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:63
+#, fuzzy
+msgid "It must be closed"
+msgstr "Repetição deve ser habilitada"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:64
+msgid "It must not self-intersect"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:65
+msgid "It must not contain internal faces"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:66
+msgid "Every edge must connect to only two other faces"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:71
+msgid "CSGCombiner"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:72
+msgid ""
+"The :ref:`CSGCombiner <class_CSGCombiner>` node is an empty shape used for "
+"organization. It will only combine children nodes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:75
+#, fuzzy
+msgid "Process order"
+msgstr "Processo"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:77
+msgid ""
+"Every CSG node will first process its children nodes and their operations: "
+"union, intersection or subtraction, in tree order and apply them to itself "
+"one after the other."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:79
+msgid ""
+"A note on performance : Make sure CSG geometry remains relatively simple, as "
+"complex meshes can take a while to process. If adding objects together (such "
+"as table and room objects), please create them as separate CSG trees. "
+"Forcing too many objects in a single tree will eventually start affecting "
+"performance. Only use binary operations where you actually need them."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:82
+msgid "Prototyping a level"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:84
+msgid "We will prototype a room to practice the use of CSG tools."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:86
+msgid ""
+"Working in ``Orthogonal`` view give a better view when combining the CSG "
+"shapes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:88
+msgid ""
+"Our level will contain these objects: 1. A room 2. A bed 3. A lamp 4. A desk "
+"5. A bookshelf"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:95
+msgid "Create a scene with a Spatial node as root node."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:97
+msgid ""
+"The default lighting of the environment cannot provide clear shading in some "
+"angle, display in ``overdraw`` mode or add a direction light to help you see "
+"clearly."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:101
+msgid ""
+"Then, create a CSGBox and name it room, select invert face and change the "
+"dimensions of your room."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:107
+msgid "Next, create a CSGCombiner and name it ``desk``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:109
+msgid "A desk has one surface and 4 legs."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:111
+msgid ""
+"Create 1 ``CSGBox`` children node in ``union`` mode for the surface and "
+"adjust the dimensions."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:113
+msgid ""
+"Create 4 ``CSGBox`` children nodes in ``union`` mode for the legs and adjust "
+"the dimensions."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:115
+msgid "Adjust the position to form a desk."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:119
+msgid ""
+"CSG nodes inside a ``CSGCombiner`` will only process their operation within "
+"the combiner, therefore, ``CSGCombiners`` are used to organize the CSG nodes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:121
+msgid "Create a ``CSGCombiner`` and name it ``bed``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:123
+msgid "Our bed consists of 3 parts: the bed, the mattress, and a pillow."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:125
+msgid ""
+"Create a ``CSGBox`` and adjust its dimension for the bed. Create another "
+"``CSGBox`` and adjust its dimension for the mattress."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:129
+msgid ""
+"We will create another ``CSGCombiner`` and name it ``pillow`` as the child "
+"of  ``bed``. The scene tree should look like this:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:133
+msgid ""
+"We will combine 3 ``CSGshpere`` in ``union`` mode to form a pillow. Scale "
+"the y-axis of the spheres and enable ``smooth faces``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:137
+msgid ""
+"Select the `pillow` node and switch the mode to ``subtraction``, the "
+"combined spheres will cut a hole on the mattress."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:141
+msgid ""
+"Try to re-parent the ``pillow`` node to the root ``Spatial`` node, the hole "
+"will disappear."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:143
+msgid ""
+"this is to illustrate the effect of CSG process order. Since the root node "
+"is not a CSG node, the ``CSGCombiner`` nodes are the end of the operations, "
+"this shows the use of ``CSGCombiner`` to organize the CSG scene."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:145
+msgid "Undo the re-parent after observing the effect."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:147
+#, fuzzy
+msgid "The bed you built should look like this:"
+msgstr "A árvore da cena deveria se parecer assim:"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:152
+msgid "Create a ``CSGCombiner`` and name it ``lamp``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:154
+msgid "A lamp consists of 3 parts: the stand, the pole, and the lampshade."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:156
+msgid ""
+"Create a ``CSGCylinder`` enable option ``cone`` and make it the stand. "
+"Create another ``CSGCylinder`` and adjust the dimensions to use it as a pole."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:160
+msgid ""
+"We will use ``CSGPolygon`` for the lampshade. Use ``Spin`` mode for the "
+"``CSGPolygon`` and draw a trapezium in front view, this shape will extrude "
+"around the origin and form the lampshade."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:168
+msgid "Adjust the position of the 3 parts to make it a ``lamp``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:172
+msgid "Create a ``CSGCombiner`` and name it ``bookshelf``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:174
+msgid ""
+"We will use 3 ``CSGBox`` for the bookshelf. Create a ``CSGBox`` and adjust "
+"its dimension, this will be the size of the bookshelf."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:178
+msgid ""
+"Duplicate the ``CSGBox`` and shorten the dimension of each axis and change "
+"the mode to ``Subtraction``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:184
+msgid ""
+"You almost build a shelf. Create one more ``CSGBox`` for dividing the shelf "
+"into two levels."
+msgstr ""
+
+#: ../../docs/tutorials/3d/csg_tools.rst:188
+#, fuzzy
+msgid ""
+"Position your furniture in your room as you like and your scene should look "
+"this:"
+msgstr ""
+"Quando tiver finalizado, sua cena ``Jogador`` deveria se parecer assim:"
+
+#: ../../docs/tutorials/3d/csg_tools.rst:192
+msgid ""
+"You prototyped successfully a room level with the csg tools in Godot. CSG "
+"tools can be used in designing all kind of level such as a maze or a city, "
+"explore the limitation of it when designing your game."
+msgstr ""

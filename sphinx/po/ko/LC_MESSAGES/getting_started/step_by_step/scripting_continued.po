@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:4
 msgid "Scripting (continued)"
-msgstr "스크립팅 (계속)"
+msgstr "스크립팅(계속)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:7
 msgid "Processing"
-msgstr "프로세싱 (Processing)"
+msgstr "프로세싱(Processing)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:9
 msgid ""
 "Several actions in Godot are triggered by callbacks or virtual functions, so "
 "there is no need to write code that runs all the time."
 msgstr ""
-"고도의 여러 작업은 콜백 또는 가상 함수에 의해 트리거 되므로, 항상 실행되는 코"
-"드를 작성할 필요는 없습니다."
+"Godot의 여러 작업은 콜백 또는 가상 함수에 의해 트리거 되므로, 항상 실행되는 "
+"코드를 작성할 필요는 없습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:12
 msgid ""
@@ -122,7 +122,7 @@ msgstr "위 스크립트는 프레임 당 증가하는 카운터를 보여 줍�
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:85
 msgid "Groups"
-msgstr "그룹 (Groups)"
+msgstr "그룹(Groups)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:87
 msgid ""
@@ -130,9 +130,9 @@ msgid ""
 "feature for organizing large scenes. There are two ways to do this. The "
 "first is from the UI, from the Groups button under the Node panel:"
 msgstr ""
-"노드는 노드당 원하는 수만큼 그룹에 추가할 수 있으며, 큰 장면을 구성하는 데 유"
-"용합니다. 두가지 방법이 있습니다. 첫 번째 방법은 노드 패널 아래에 있는 그룹 "
-"버튼의 UI에서 시작합니다:"
+"노드는 노드당 원하는 수만큼 그룹에 추가할 수 있으며, 큰 씬을 구성하는 데 유용"
+"합니다. 두가지 방법이 있습니다. 첫 번째 방법은 노드 패널 아래에 있는 그룹 버"
+"튼의 UI에서 시작합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
 msgid ""
@@ -184,7 +184,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:151
 msgid "Notifications"
-msgstr "알림 (Notifications)"
+msgstr "알림(Notifications)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
 msgid ""
@@ -194,10 +194,10 @@ msgid ""
 "`Object._notification() <class_Object__notification>` function in your "
 "script:"
 msgstr ""
-"고도에는 알림 시스템이 있습니다. 보통은 스크립팅에 쓰이진 않습니다, 너무 로"
-"우 레벨이며 대부분의 경우 가상 함수를 제공하기 때문이죠. 그냥 존재한다는 것 "
-"만으로도 좋은 일입니다. 예를 들어 스크립트에 :ref:`Object._notification() "
-"<class_Object__notification>` 함수를 추가할 수 있습니다:"
+"Godot에는 알림(notification) 시스템이 있습니다. 보통은 스크립팅에 쓰이진 않습"
+"니다, 너무 로우 레벨이며 대부분의 경우 가상 함수를 제공하기 때문이죠. 그냥 존"
+"재한다는 것 만으로도 좋은 일입니다. 예를 들어 스크립트에 :ref:`Object."
+"_notification() <class_Object__notification>` 함수를 추가할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -211,7 +211,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr "오버라이딩 (Overriding) 가능한 함수들"
+msgstr "오버라이딩(Overriding) 가능한 함수들"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""
@@ -262,8 +262,8 @@ msgid ""
 "case and warn you about it."
 msgstr ""
 "신호를 보내거나 함수를 호출하기 때문에 현재 \"차단된\" 노드를 삭제하려는 경우"
-"가 발생할 수 있습니다. 이것은 게임을 망칠 것입니다. 디버거로 고도를 실행하면 "
-"이 경우를 발견하고 경고를 표시하는 경우가 많습니다."
+"가 발생할 수 있습니다. 이것은 게임을 망칠 것입니다. 디버거로 Godot를 실행하"
+"면 이 경우를 발견하고 경고를 표시하는 경우가 많습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
 msgid ""
@@ -282,15 +282,15 @@ msgid ""
 "Instancing a scene from code is done in two steps. The first one is to load "
 "the scene from your hard drive:"
 msgstr ""
-"코드에서 장면을 인스턴스 하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 "
-"하드 드라이브에서 씬을 불러오는 것입니다:"
+"코드에서 씬을 인스턴스 하는 작업은 두 단계로 이루어집니다. 첫 번째 방법은 하"
+"드 드라이브에서 씬을 불러오는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:355
 msgid ""
 "Preloading it can be more convenient, as it happens at parse time (GDScript "
 "only):"
 msgstr ""
-"프리로드 (Preload) 하면 구문 분석 시간에 일어나므로 더 편리할 수 있습니다 "
+"프리로드(Preload) 하면 구문 분석 시간에 일어나므로 더 편리할 수 있습니다 "
 "(GDScript만):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
@@ -304,7 +304,7 @@ msgstr ""
 "그러나 ``씬`` 은 아직 하나의 노드가 아닙니다. 이것은 :ref:`PackedScene "
 "<class_PackedScene>` 라는 특수 리소스에 들어 있습니다. 실제 노드를 생성하려"
 "면, :ref:`PackedScene.instance() <class_PackedScene_instance>` 기능을 호출해"
-"야 합니다. 그러면 활성 장면에 추가할 수 있는 노드 트리가 반환됩니다:"
+"야 합니다. 그러면 활성 씬에 추가할 수 있는 노드 트리가 반환됩니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
 msgid ""
@@ -327,9 +327,9 @@ msgid ""
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"고도는 에디터에 각각의 스크립트를 등록하기 위한 \"스크립트 클래스\" 기능을 갖"
-"고 있습니다. 기본적으로, 당신은 파일을 직접 불러와서 이름이 없는 스크립트에 "
-"액세스 할 수 있습니다."
+"Godot는 에디터에 각각의 스크립트를 등록하기 위한 \"스크립트 클래스\" 기능을 "
+"갖고 있습니다. 기본적으로, 당신은 파일을 직접 불러와서 이름이 없는 스크립트"
+"에 액세스 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:393
 msgid ""
@@ -357,4 +357,4 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:418
 msgid "Only GDScript creates global variables for each named script."
-msgstr "오직 GDScript만 각 이름이 있는 스크립트에 글로벌 변수를 만듭니다."
+msgstr "오직 GDScript만 각 이름이 있는 스크립트에 전역 변수를 만듭니다."

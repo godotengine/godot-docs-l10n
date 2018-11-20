@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,7 +62,7 @@ msgid ""
 msgstr ""
 "프로젝트 파일을 다운로드하세요:  :download:`ui_gui_design.zip <files/"
 "ui_gui_design.zip>` 그리고 압축을 푸세요. 이 튜토리얼을 따라오시려면 `start/"
-"` 프로젝트를 고도로 가져오세요. `end/` 폴더는 최종 결과물을 가지고 있습니다."
+"` 프로젝트를 Godot로 가져오세요. `end/` 폴더는 최종 결과물을 가지고 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:25
 msgid ""
@@ -137,8 +137,8 @@ msgid ""
 "jump into Godot and create our GUI."
 msgstr ""
 "아직 각 UI 구성 요소 안에 추가 컨테이너가 필요하지만, 이걸로 우리에게 주요 "
-"GUI 씬의 구조를 제공합니다. 계획은 여기 두고, 고도로 들어가서 우리의 GUI를 만"
-"듭시다."
+"GUI 씬의 구조를 제공합니다. 계획은 여기 두고, Godot로 들어가서 우리의 GUI를 "
+"만듭시다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:60
 msgid "Create the base GUI"
@@ -165,13 +165,12 @@ msgid "For now, let's start with a few containers."
 msgstr "일단 지금은, 몇 개의 컨테이너로 시작합시다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
 "새 씬을 만들고 ``MarginContainer`` 를 추가하세요. 노드의 이름을 ``GUI`` 로 지"
-"으세요. 그러고 ``GUI.tscn`` 로 씬을 저장하세요. 그것은 전체 GUI를 포함합니다."
+"으세요."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
 msgid ""
@@ -181,10 +180,16 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"우리는 화면 맨 위에 우리의 인터페이스가 고정되기를 원합니다. \"GUI\" 노드를 "
+"선택하고 뷰포트 상단에 있는 레이아웃 버튼을 클릭합니다. ``Top Wide\" 옵션을 "
+"선택합니다. \"GUI\" 노드는 기본적으로 뷰포트의 상위 가장자리에 고정됩니다. 하"
+"위 UI 구성 요소를 위한 공간을 확보하기 위해 수직 축에서 자동으로 크기가 조정"
+"됩니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
 msgstr ""
+"'GUI.tscn으로 씬을 저장합니다. 우리는 그 씬 안에 전체적인 GUI를 놓습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -200,7 +205,6 @@ msgstr ""
 "다. 이것은 왼쪽에 두 개의 막대와 오른쪽에 두 개의 카운터를 분리할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``GUI`` and name it ``Bars``. Select the "
@@ -208,11 +212,11 @@ msgid ""
 "as a child of it. Call it ``Counters``. With these four containers, we have "
 "the base for our GUI scene."
 msgstr ""
-"``HBoxContainer`` 안에 막대를 세로로 쌓을 겁니다. 그러기 위해, "
-"``VBoxContainer`` 를 추가합니다. ``Bars`` 라고 이름 짓습니다. 부모 "
-"``HBoxContainer`` 를 다시 선택하고 이번엔 다른 ``HBoxContainer`` 를 추가합니"
-"다. 이번 것은 카운터를 잡아 줄 것이기 때문에 ``Counters`` 라고 이름 짓겠습니"
-"다. 이 네 개의 컨테이너로 우리는 GUI 씬의 기초를 만들었습니다."
+"``HBoxContainer`` 안에 막대를 세로로 쌓을 겁니다. ``GUI``의 자식으로 "
+"``VBoxContainer`` 를 추가하고 ``Bars`` 라고 이름 짓습니다. 부모 "
+"``HBoxContainer`` 를 다시 선택하고, 이번엔 다른 ``HBoxContainer`` 를 자식으"
+"로 추가합니다. ``Counters`` 라고 이름 지어줍니다. 이 네 개의 컨테이너로 우리"
+"는 GUI 씬의 기초를 만들었습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
@@ -535,10 +539,11 @@ msgstr ""
 "가가로 하죠."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
+#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
-"same: we need background, a ``NinePatchFrame``, the title, and the number "
+"same: we need a background (a ``NinePatchRect``), the title, and the number "
 "nodes. The ``Title`` node is a ``TextureRect``, so it's what we need to "
 "display the icon. In the scene tree, select the ``Title`` node, and rename "
 "it to ``Icon``."
@@ -641,7 +646,6 @@ msgstr ""
 "다. 카운터는 이제 생각한 대로 작동합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so we need to set the ``Bars`` container take all the available horizontal "
@@ -650,11 +654,11 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
-"그동안, ``Counters`` 가 뷰포트의 오른쪽 모서리에 스냅하도록 만듭시다. 그러기 "
-"위해 ``Bars`` 컨테이너가 수평 공간을 차지하도록 설정할 겁니다. ``Bars`` 노드"
-"를 선택하고 ``Size Flags`` 카테고리로 갑니다. ``Horizontal`` 카테고리에서, "
-"``Expand`` 값을 체크합니다. ``Bars`` 노드는 크기가 조절되고 카운터를 화면 가"
-"장 오른쪽으로 밀어냅니다."
+"``Counters`` 가 뷰포트의 오른쪽 모서리에 고정되도록 만듭니다. 그러기 위해 "
+"``Bars`` 컨테이너가 전체 수평 공간을 차지하도록 설정해야 합니다. ``Bars`` 노"
+"드를 선택하고 ``Size Flags`` 카테고리로 갑니다. ``Horizontal`` 카테고리에서, "
+"``Expand`` 값을 체크합니다. ``Bars`` 노드는 크기가 조절되면서 카운터를 화면 "
+"가장 오른쪽으로 밀어냅니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
 msgid ""
@@ -677,7 +681,7 @@ msgstr ""
 "우리는 하나의 막대와 카운터 도구를 갖고 있습니다. 하지만 각자 두 가지가 필요"
 "합니다. 나중에 막대의 디자인이나 기능성을 바꿔야 될지도 모릅니다. 그럴 때 UI "
 "요소들의 템플릿을 저장하는 하나의 씬과, 유사한 작업에 쓸 자식 씬들을 가진다"
-"면 멋질 것입니다. 고도는 상속된 씬으로 이를 제공합니다."
+"면 멋질 것입니다. Godot는 상속된 씬으로 이를 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:343
 msgid ""
@@ -745,9 +749,9 @@ msgid ""
 msgstr ""
 "우리는 같은 방법으로 작동하는 두 막대가 필요합니다: 왼쪽에 라벨이 있고, 값을 "
 "지니고 있습니다, 그리고 오른쪽에 수평 게이지가 있습니다. 차이라면 하나는 HP "
-"라벨이고 초록색이라는 것, 그리고 다른 것은 EP 이고 노란색인 것입니다. 고도는 "
-"게임 내에 모든 막대에 다시 사용할 수 있는 기본 기반을 만드는 강력한 도구를 제"
-"공합니다: **상속된 씬** 입니다."
+"라벨이고 초록색이라는 것, 그리고 다른 것은 EP 이고 노란색인 것입니다. Godot"
+"는 게임 내에 모든 막대에 다시 사용할 수 있는 기본 기반을 만드는 강력한 도구"
+"를 제공합니다: **상속된 씬** 입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:383
 msgid ""
@@ -912,8 +916,8 @@ msgstr ""
 "이 노드의 폰트 크기 만을 바꾸고 싶다면, 폰트 리소스의 복사본을 만들어야 합니"
 "다. ``Number`` 노드를 다시 선택하고 인스펙터 우측 상단에 있는 렌치와 드라이"
 "버 아이콘을 클릭하세요. 하단 메뉴에서, ``하위 리소스를 유일하게 만들기`` 설정"
-"을 선택합니다. 고도는 이 노드의 모든 리소스를 발견해서 유일한 복사본을 만들어"
-"냅니다."
+"을 선택합니다. Godot는 이 노드의 모든 리소스를 발견해서 유일한 복사본을 만들"
+"어냅니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:472
 msgid "Use this option to create unique copies of the resources for one node"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,22 +18,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:4
-#, fuzzy
 msgid "Static typing in GDScript"
-msgstr "GDScript에서 사용법"
+msgstr "GDScript에서 정적 타이핑(Static typing)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:6
-#, fuzzy
 msgid "In this guide, you will learn:"
-msgstr "배울 것입니다:"
+msgstr "이 가이드에서 다음 내용을 배울 것입니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
 msgid "**How to use types in GDScript**"
-msgstr ""
+msgstr "**GDScript에서 자료형(Type)을 사용하는 방법**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr ""
+msgstr "이 **정적 타입(Type)은 버그를 피하는데 도움을 줍니다**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
@@ -41,20 +39,25 @@ msgid ""
 "can use it only in some sensitive GDScript files, use it everywhere, or "
 "write code like you always did!"
 msgstr ""
+"새로운 언어 기능을 사용하는 위치와 방법은 당신에게 달렸습니다: 일부 민감한 "
+"GDScript 파일에서만 이것을 사용할 수 있고, 어디에든 사용할 수 있고, 항상 그래"
+"왔듯이 코드를 작성할 수 있습니다!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
 msgstr ""
+"정적 타입은 변수, 상수, 함수, 매개 변수, 그리고 반환 타입에 사용될 수 있습니"
+"다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr ""
+msgstr "타입된 GDScript는 Godot 3.1부터 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
 msgid "A brief look at static typing"
-msgstr ""
+msgstr "정적 타이핑에 대한 간단한 설명"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
 msgid ""
@@ -62,6 +65,9 @@ msgid ""
 "gives you and your teammates more information as you’re working, as the "
 "arguments’ types show up when you call a method."
 msgstr ""
+"타입된 GDScript로, 코드를 작성할 수록 훨씬 더 많은 오류를 Godot가 감지할 수 "
+"있습니다! 즉, 메서드를 호출할 때, 인수의 타입이 나타나기 때문에 작업하는 동"
+"안 당신과 당신의 동료에게 더 많은 정보를 제공합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
 msgid ""
@@ -70,6 +76,10 @@ msgid ""
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
+"인벤토리 시스템을 프로그래밍 한다고 상상해보세요. 당신은 ``Item`` 노드를 코딩"
+"하고, ``Inventory``\\ 를 코딩합니다. 아이템은 인벤토리에 넣기 위해, 당신의 코"
+"드로 작업하는 사람들은 항상 ``Item``\\ 을 ``Inventory.add``\\ 으로 전달해야 "
+"합니다. 타입으로는, 다음을 시행할 수 있습니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:48
 msgid ""
@@ -163,9 +173,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:119
-#, fuzzy
 msgid "Custom variable types"
-msgstr "커스텀 데이터 타입 생성하기"
+msgstr "커스텀 변수 타입"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:121
 msgid ""
@@ -188,14 +197,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:147
-#, fuzzy
 msgid "Variable casting"
-msgstr "변수 (Variable)"
+msgstr "변수 캐스팅(casting)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:149
 msgid ""
-"Type casting is a key concept in typed languages. We call the conversion of "
-"a value from from one type of another casting."
+"Type casting is a key concept in typed languages. Casting is the conversion "
+"of a value from one type to another."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:152
@@ -231,9 +239,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:182
-#, fuzzy
 msgid "Safe lines"
-msgstr "공백 줄"
+msgstr "안전 라인"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:184
 msgid ""
@@ -249,8 +256,8 @@ msgid ""
 "dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
 "typing <https://stackoverflow.com/a/4205163/8125343>`__, so even if your "
 "timer is of type ``Timer``, it is also a ``Node`` and an ``Object``, two "
-"classes it extends. With dynamic GDScript, you also also don’t care about "
-"the node’s type as long as it has the methods you need to call."
+"classes it extends. With dynamic GDScript, you also don’t care about the "
+"node’s type as long as it has the methods you need to call."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:198
@@ -339,9 +346,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:309
-#, fuzzy
 msgid "Warning system"
-msgstr "파일 시스템 (File system)"
+msgstr "경고 시스템(Warning system)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:311
 msgid ""
@@ -357,9 +363,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:321
-#, fuzzy
 msgid "warning system project settings"
-msgstr "프로젝트 준비하기"
+msgstr "경고 시스템 프로젝트 설정"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:323
 msgid ""
@@ -368,9 +373,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:329
-#, fuzzy
 msgid "warning system example"
-msgstr "예제를 통해 인스턴스하기"
+msgstr "경고 시스템 예제"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:331
 msgid ""
@@ -382,9 +386,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:340
-#, fuzzy
 msgid "warning system ignore example"
-msgstr "예제를 통해 인스턴스하기"
+msgstr "경고 시스템 무시 예제"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:342
 msgid ""

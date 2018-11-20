@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:4
+msgid "Binding to external libraries"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:7
+msgid "Modules"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:9
+msgid ""
+"The Summator example in :ref:`doc_custom_modules_in_c++` is great for small, "
+"custom modules, but what if you want to use a larger, external library? "
+"Let's look at an example using Festival, a speech synthesis (text-to-speech) "
+"library written in C++."
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:14
+msgid ""
+"To bind to an external library, set up a module directory similar to the "
+"Summator example:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:20
+msgid "Next, you will create a header file with a simple TTS class:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:44
+msgid "And then you'll add the cpp file."
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:68
+msgid ""
+"Just as before, the new class needs to be registered somehow, so two more "
+"files need to be created:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:76
+msgid "With the following contents:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:104
+msgid ""
+"Next, you need to create a ``SCsub`` file so the build system compiles this "
+"module:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:115
+msgid ""
+"You'll need to install the external library on your machine to get the .a "
+"library files.  See the library's official documentation for specific "
+"instructions on how to do this for your operation system.  We've included "
+"the installation commands for Linux below, for reference."
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:126
+msgid ""
+"**Important:** The voices that Festival uses (and any other potential "
+"external/3rd-party resource) all have varying licenses and terms of use; "
+"some (if not most) of them may be be problematic with Godot, even if the "
+"Festival Library itself is MIT License compatible. Please be sure to check "
+"the licenses and terms of use."
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:131
+msgid ""
+"The external library will also need to be installed inside your module to "
+"make the source files accessible to the compiler, while also keeping the "
+"module code self-contained.  The festival and speech_tools libraries can be "
+"installed from the modules/tts/ directory via git using the following "
+"commands:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:141
+msgid ""
+"If you don't want the external repository source files committed to your "
+"repository, you can link to them instead by adding them as submodules (from "
+"within the modules/tts/ directory), as seen below:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:150
+msgid ""
+"**Important:** Please note that Git submodules are not used in the Godot "
+"repository.  If you are developing a module to be merged into the main Godot "
+"repository, you should not use submodules.  If your module doesn't get "
+"merged in, you can always try to implement the external library as a "
+"GDNative C++ plugin."
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:155
+msgid ""
+"To add include directories for the compiler to look at you can append it to "
+"the environment's paths:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:166
+msgid ""
+"If you want to add custom compiler flags when building your module, you need "
+"to clone `env` first, so it won't add those flags to whole Godot build "
+"(which can cause errors). Example `SCsub` with custom flags:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:179
+#, fuzzy
+msgid "The final module should look like this:"
+msgstr "El script final debería verse así:"
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:197
+msgid "Using the module"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:199
+msgid "You can now use your newly created module from any script:"
+msgstr ""
+
+#: ../../docs/development/cpp/binding_to_external_libraries.rst:208
+msgid "And the output will be ``is_spoken: True`` if the text is spoken."
+msgstr ""

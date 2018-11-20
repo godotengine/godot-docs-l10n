@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-25 15:59+0200\n"
+"POT-Creation-Date: 2018-11-20 12:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,14 +36,14 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:14
 msgid ""
-"This guide assumes the reader knows how to create C++ modules and godot data "
+"This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
 msgstr ""
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:210
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:244
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:213
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:247
 msgid "References"
 msgstr ""
 
@@ -139,54 +139,54 @@ msgstr ""
 msgid "Here is an example of how to create a custom datatype"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:173
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:174
 msgid "Considerations"
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:175
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:176
 msgid ""
-"Some libraries may not define certain common routines such as i/o handling. "
+"Some libraries may not define certain common routines such as IO handling. "
 "Therefore, Godot call translations are required."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:178
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:179
 msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
 "``std::istream``."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:212
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:215
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"
 msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:213
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:216
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`__"
 msgstr ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`__"
-
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:214
-msgid ""
-"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
-"os/file_access.h>`__"
-msgstr ""
-"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
-"os/file_access.h>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:217
+msgid ""
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`__"
+msgstr ""
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`__"
+
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:220
 #, fuzzy
 msgid "Registering the new file format"
 msgstr "Différences de l'API par rapport à GDScript"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:219
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:222
 msgid ""
 "Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
 "The handler selects the proper loader automatically when ``load`` is called."
 msgstr ""
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:246
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:249
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L280>`__"
@@ -194,6 +194,6 @@ msgstr ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L280>`__"
 
-#: ../../docs/development/cpp/custom_resource_format_loaders.rst:249
+#: ../../docs/development/cpp/custom_resource_format_loaders.rst:252
 msgid "Loading it on GDScript"
 msgstr ""
