@@ -47,6 +47,7 @@
 # Yan <uvokinuvokines@gmail.com>, 2018.
 # Азиз Ганиев <ajganiev@gmail.com>, 2018.
 # Александр <ol-vin@mail.ru>, 2018.
+# Анатолий Горбунов <afgorbunov@gmail.com>, 2018.
 # Аркадий Авас <savvot@gmail.com>, 2018.
 # Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
 # Семён Рассохин <forzcross@gmail.com>, 2018.
@@ -62,8 +63,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-11-20 12:09+0100\n"
-"PO-Revision-Date: 2018-11-18 17:08+0000\n"
-"Last-Translator: Dmitry <metaldr@yandex.ru>\n"
+"PO-Revision-Date: 2018-12-03 18:32+0000\n"
+"Last-Translator: Александр <ol-vin@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -72,7 +73,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -1778,12 +1779,11 @@ msgstr ""
 "нас в использование редактора."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-#, fuzzy
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"Если вы запустите исполняемый файл godot вне проекта, появится Менеджер "
+"Если вы запустите исполняемый файл Godot без проекта, появится Менеджер "
 "Проектов. Это помогает разработчикам управлять их проектами."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
@@ -1883,13 +1883,12 @@ msgid "Aaaand... Oops."
 msgstr "Ииии... Ой."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
-#, fuzzy
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
 "Сцены должны быть сохранены перед запуском, поэтому сохраните сцену, "
-"например, как hello.tscn через меню Сцена -> Сохранить:"
+"например, как Hello.tscn через меню Сцена -> Сохранить:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -1959,13 +1958,13 @@ msgstr ""
 "проекта. Попробуйте прямо сейчас."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
-#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
 "Как только откроется окно, давайте выберем главную сцену. Найдите свойство "
-"`Application/Run/Main Scene` и нажмите на него, чтобы выбрать 'hello.tscn'."
+"`Application/Run/Main Scene` (`Приложение/Запуск/Главная Сцена`) и нажмите "
+"на него, чтобы выбрать 'Hello.tscn'."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
@@ -4007,12 +4006,11 @@ msgstr ""
 "``400``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
-#, fuzzy
 msgid ""
 "If you're using C#, you need to restart Godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
-"Если вы используете С#, вам необходимо перезапускать редактор godot, чтобы "
+"Если вы используете С#, вам необходимо перезапускать редактор Godot, чтобы "
 "увидеть в нем экспортированные переменные, пока это не будет исправлено."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:182
@@ -5411,7 +5409,6 @@ msgid "Click \"Save\" and the engine will build the export files."
 msgstr "Нажмите \"Сохранить\" и движок соберет экспортируемый файл."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
@@ -5419,7 +5416,7 @@ msgid ""
 "click and run."
 msgstr ""
 "При экспорте на MacOS, если вы экспортируете на компьютере с MacOS, вы "
-"получите `.dmg` файл, а если используете Linux или Windows то результатом "
+"получите файл `.dmg`, а если используете Linux или Windows то результатом "
 "будет `.zip`. В любом случае, сжатый файл содержит в себе `.app`, который вы "
 "можете запустить двойным нажатием."
 
@@ -5541,7 +5538,6 @@ msgstr ""
 "устройство в один шаг."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
@@ -9230,6 +9226,14 @@ msgid ""
 "creates the method inside the ``GUI`` node. The script editor opens with the "
 "cursor inside a new ``_on_Player_health_changed`` function."
 msgstr ""
+"В нижней части окна вы найдете путь к выбранному узлу. Мы заинтересованы во "
+"втором поле под названием \"Method in Node\". Это метод на узле ``GUI``, "
+"который вызывается при излучении сигнала. Этот метод получает значения, "
+"отправленные с сигналом и позволяет обработать их. Если вы посмотрите "
+"правее, там есть переключатель \"сделать функцию\", который включен по "
+"умолчанию. Нажмите на кнопку подключения в нижней части окна. Godot создает "
+"метод внутри узла ``GUI``. Откроется редактор скриптов с курсором внутри "
+"новой функции ``_on_Player_health_changed``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:265
 msgid ""
@@ -9238,10 +9242,14 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
+"При подключении узлов из редактора Godot создает имя метода по шаблону: "
+"``_on_EmitterName_signal_name``. Если вы уже написали этот метод, опция "
+"\"Сделать функцию\" будет сохранять его. Вы можете заменить имя на другое."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
+#, fuzzy
 msgid "Godot writes the callback method for you and takes you to it"
-msgstr ""
+msgstr "Godot напишет метод обратного вызова для вас и доставит вас к нему"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
 msgid ""
@@ -9249,6 +9257,9 @@ msgid ""
 "When the player emits the ``health_changed`` signal it will send its current "
 "``health`` alongside it. Your code should look like:"
 msgstr ""
+"В скобках после имени функции добавьте аргумент ``player_health``. Когда "
+"игрок излучает сигнал ``health_changed``, он посылает его текущее ``health`` "
+"вместе с ним. Код должен выглядеть так:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
 msgid ""
@@ -9257,44 +9268,60 @@ msgid ""
 "follows the official `C# naming conventions. <https://docs.microsoft.com/en-"
 "us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
+"Обработчик не преобразует PascalCase в snake_case, для примеров C# мы будем "
+"использовать PascalCase для имен методов и camelCase для параметров метода, "
+"которые следуют за официальными `C# naming conventions. <https://docs."
+"microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-"
+"conventions>`_"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
 msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
+"В Player.gd, когда Player посылает сигнал health\\_changed, он также "
+"посылает значение своего здоровья"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
+#, fuzzy
 msgid ""
 "Inside ``_on_Player_health_changed`` let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
+"Внутри `` _on_Player_health_changed`` давайте вызовим вторую функцию под "
+"названием `` update_health`` и передадим его в переменную `` player_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:307
 msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
+"Мы можем напрямую изменить значение здоровья на `LifeBar` и `Number`. Есть "
+"две причины использовать этот метод:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
 "The name makes it clear for our future selves and teammates that when the "
 "player took damage, we update the health count on the GUI"
 msgstr ""
+"Название дает понять, для нашего будущего себя и напарников, что когда игрок "
+"получил урон, мы обновляем счетчик здоровья на GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
 msgid "We will reuse this method a bit later"
-msgstr ""
+msgstr "Мы будем использовать этот метод чуть позже"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
 msgid ""
 "Create a new ``update_health`` method below ``_on_Player_health_changed``. "
 "It takes a new\\_value as its only argument:"
 msgstr ""
+"Создать новый метод ``update_health`` ниже ``_on_Player_health_changed``. В "
+"качестве единственного аргумента требуется new\\_value:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:327
 msgid "This method needs to:"
-msgstr ""
+msgstr "Этот метод должен:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:329
 msgid ""
@@ -9311,6 +9338,9 @@ msgid ""
 "``Number``'s ``text`` property requires a string so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
+"``str`` – это встроенная функция, которая преобразует значение в текст. "
+"Свойство ``text``узла ``Number`` требует строку, поэтому мы не можем "
+"назначить его в ``new_value`` напрямую"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
 msgid ""
@@ -9319,16 +9349,20 @@ msgid ""
 "of the game. Press F5 to test the game: the life bar updates with every "
 "attack!"
 msgstr ""
+"Также вызов ``update_health`` в конце функции ``_ready`` инициализировать "
+"``text`` узла ``Number``с правильным значением в начале игры. Нажмите "
+"клавишу F5, чтобы протестировать игру: жизни обновляются при каждой атаке!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
 msgstr ""
+"Оба узла Number и TextureProgress обновляются когда игрок принимает удар"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:365
 msgid "Animate the loss of life with the Tween node"
-msgstr ""
+msgstr "Анимировать смерть с помощью узла Tween"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
 msgid ""
@@ -46594,7 +46628,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Class"
-msgstr ""
+msgstr "Класс"
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Operator"

@@ -10,6 +10,7 @@
 # Hyun Cho (C.H) <uncaose@gmail.com>, 2018.
 # Jesse Y. Cho <jesse.cho@protonmail.ch>, 2018.
 # LeeJiWon <minie0324@naver.com>, 2018.
+# leesang0612 <onessidotti@gmail.com>, 2018.
 # lptprjh <lptprjh@gmail.com>, 2018.
 # MJ Kim <mjnkim@protonmail.com>, 2018.
 # pgyage3263 <pgyage3263@naver.com>, 2018.
@@ -26,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-11-20 12:09+0100\n"
-"PO-Revision-Date: 2018-11-20 10:45+0000\n"
-"Last-Translator: bulldak <jun98518@naver.com>\n"
+"PO-Revision-Date: 2018-12-04 00:30+0000\n"
+"Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ko/>\n"
 "Language: ko\n"
@@ -35,7 +36,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -1655,13 +1656,12 @@ msgstr ""
 "사용하는 법을 설명하겠습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-#, fuzzy
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"Godot 실행 파일을 실행하면, 프로젝트 매니저가 뜹니다. 이걸로 개발자들은 프로"
-"젝트들을 관리할 수 있습니다."
+"프로젝트 외부에서 Godot 실행 파일을 실행하면, 프로젝트 매니저가 뜹니다. 이걸"
+"로 개발자들은 프로젝트들을 관리할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
@@ -1760,13 +1760,12 @@ msgid "Aaaand... Oops."
 msgstr "그리고오... 이런."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
-#, fuzzy
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
-"씬은 실행하려면 저장을 해야 합니다, 따라서 씬 -> 씬 저장 으로 가서 hello."
-"tscn 같은 이름을 지어 저장합니다:"
+"씬은 실행하려면 저장을 해야 합니다, 따라서 씬 -> 씬 저장에서 hello.tscn 같은 "
+"이름의 씬을 저장합니다:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -1831,13 +1830,12 @@ msgid "To access that dialog, select Project -> Project Settings. Try it now."
 msgstr "대화 상자에 들어가기 위해, 프로젝트 -> 프로젝트 설정으로 가세요."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
-#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
-"설정을 열었다면, 메인 씬을 설정합시다. 'Application/Run/Main Scene' 속성으로 "
-"가서 'hello.tscn'을 선택합니다."
+"창을 열었다면, 메인 씬을 선택합니다. 'Application/Run/Main Scene' 속성으로 가"
+"서 'hello.tscn'을 선택합니다."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
@@ -2088,13 +2086,12 @@ msgid "The ability to subdivide scenes and make them easier to manage."
 msgstr "관리하기 편하게 하기 위해 씬들을 여러 하위 객체로 나눌 수 있는 것."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
-#, fuzzy
 msgid ""
 "A more flexible alternative to prefabs you might know from Unity (and much "
 "more powerful given that instances can be nested)."
 msgstr ""
-"유니티의 프리팹보다 더 유연하게 쓰일 수 있음 (인스턴스는 중첩될 수 있기에 더 "
-"강력하기도 합니다)."
+"유니티의 프리펩보다 더 유연한 대안 (그리고 인스턴스가 중첩될 수 있기에 훨씬 "
+"더 강력함)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
@@ -2625,7 +2622,7 @@ msgid ""
 msgstr ""
 "안에는 많은 내용이 있지 않습니다. ``_ready()`` 함수는 노드와 모든 자식들이 활"
 "성화된 씬으로 들어갈 때 호출됩니다. **참고:** ``_ready()`` 는 생성자가 아닙니"
-"다. 생성자는 ``_init()`` 대신합니다."
+"다. 대신에 생성자는 ``_init()`` 입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
@@ -3785,13 +3782,12 @@ msgstr ""
 "편리합니다. ``Player`` 노드를 선택하고 speed 속성을 ``400`` 으로 설정하세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
-#, fuzzy
 msgid ""
 "If you're using C#, you need to restart Godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
-"C#을 사용하신다면, 에디터에 내보낸 값을 보기 위해 그것이 고정될 때 까지 "
-"Godot 에디터를 일시적으로 재시작해야 합니다."
+"C#을 사용하신다면, 에디터에 내보낸 값을 보기 위해 값이 고정될 때까지 Godot 에"
+"디터를 일시적으로 다시 시작해야 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:182
 msgid ""
@@ -6510,15 +6506,14 @@ msgid "The UI's rough plan or mockup"
 msgstr "UI의 대략적인 계획이나 모형"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
-#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
-"자리 표시자가 꼭 지저분한 것은 아니지만, 그래도 그래픽을 간단하고 깨끗하게 유"
-"지해야 합니다. 당신이 UI를 실행 및 테스트 하기 전까진 특수 효과나, 애니메이"
-"션, 그리고 구체적인 삽화는 피하세요. 그렇지 않으면:"
+"자리 표시자가 꼭 지저분할 필요는 없지만, 그래픽을 간단하고 깨끗하게 유지해야 "
+"합니다. 당신이 UI를 실행 및 테스트 하기 전까진 특수 효과나, 애니메이션, 그리"
+"고 구체적인 삽화는 피하세요. 그렇지 않으면:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:51
 msgid ""
@@ -7558,7 +7553,6 @@ msgstr ""
 "가가로 하죠."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
-#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -7568,10 +7562,10 @@ msgid ""
 "it to ``Icon``."
 msgstr ""
 "``Count2`` 노드의 이름을 ``Counter``로 변경합니다. 바와는 다르게 숫자는 왼"
-"쪽, 아이콘은 오른쪽에 오도록 작업할 겁니다. 구성은 동일합니다: "
-"``NinePatchFrame``, 배경, 타이틀, 그리고 숫자 노드가 들어갑니다. ``Title`` "
-"은 ``TextureRect`` 노드이므로, 아이콘을 표시하는 노드입니다. 씬트리에서 "
-"``Title`` 노드를 선택하고 이름을 ``Icon`` 으로 변경합니다."
+"쪽, 아이콘은 오른쪽에 오도록 작업할 겁니다. 구성은 동일합니다: 배경 "
+"(``NinePatchRect``), 타이틀, 그리고 숫자 노드가 들어갑니다. ``Title`` 노드는 "
+"``TextureRect`` 노드이므로, 아이콘을 표시합니다. 씬 트리에서 ``Title`` 노드"
+"를 선택하고 이름을 ``Icon`` 으로 변경합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
@@ -9452,7 +9446,6 @@ msgid "Nodes and resources"
 msgstr "노드와 리소스"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
-#, fuzzy
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
@@ -9460,8 +9453,9 @@ msgid ""
 "ref:`Resource <class_Resource>`."
 msgstr ""
 "지금까지, :ref:`Nodes <class_Node>` 클래스는  Godot에서 가장 중요한 데이터 형"
-"식으로 엔진의 대부분의 기능이 이들에 의지된 것에 중점을 두었습니다. 이와 똑같"
-"이 중요한 데이터 형식이 있습니다: :ref:`Resource <class_Resource>`\\ 입니다."
+"식으로 엔진 내 대부분의 기능과 작동이 이것으로 이루어 졌다는 것에 초점을 두었"
+"습니다. 이와 똑같이 중요한 데이터 형식이 있습니다: :ref:`Resource "
+"<class_Resource>` 입니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
@@ -12414,6 +12408,9 @@ msgid ""
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats)"
 msgstr ""
+"이 연산자들은 C++의 연산자들처럼 행동합니다. 정수로 분할 시에 소수점 부분은 "
+"반환되지 않고 잘려나가며, % 연산자는 정수형(float의 경우는 \"fmod\") 끼리의 "
+"연산에서만 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
@@ -14792,6 +14789,9 @@ msgid ""
 "see the difference between a dynamic and a static typed completion options "
 "for a class called ``PlayerController``."
 msgstr ""
+"정적 타입 또한 더 나은 코드 완성 옵션을 제공합니다. 아래에서"
+"``PlayerController``라는 클래스에 대한 동적 및 정적 타입 완료 옵션의 차이점"
+"을 볼 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
 msgid ""
@@ -14805,6 +14805,9 @@ msgid ""
 "you’re passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
+"이는 동적 코드 때문입니다. Godot는 함수에 전달하는 노드나 값 타입을 알 수 없"
+"습니다. 그러나 유형을 명시적으로 작성해주면, 노드에서 모든 공용 메서드 및 변"
+"수를 가져옵니다:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
 msgid ""
@@ -15856,10 +15859,9 @@ msgid ""
 "something happens and can be looked up in the reference. Virtual functions "
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
-"Godot에있는 대부분의 노드 타입과 다른 객체 타입은 가상 함수를 갖습니다. 이들"
-"은 무언가가 발생할 때 (코드를 실행하여) 호출되는 함수이고 참조에서 찾아볼 수 "
-"있습니다. 멤버 패널에서 \"재정의(Override)\"아이콘을 누르면 가상 함수가 나열"
-"됩니다:"
+"Godot에 있는 대부분의 타입의 노드와 다른 타입의 객체는 가상 함수를 포함합니"
+"다. 이들은 무언가가 발생했을 때 (코드를 실행하여) 호출될 함수로 참조에서 볼 "
+"수 있습니다. 멤버 패널에서 \"재정의\" 아이콘을 누르면 가상 함수가 나열됩니다:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -36943,8 +36945,8 @@ msgid ""
 "Godot offers four kinds of physics bodies, extending :ref:`CollisionObject2D "
 "<class_CollisionObject2D>`:"
 msgstr ""
-"Godot는 4가지 종류의 물리적 body를 제공합니다. :ref:`CollisionObject2D "
-"<class_CollisionObject2D>`에서 확장되는:"
+"Godot는 :ref:`CollisionObject2D <class_CollisionObject2D>`에서 확장되는 4가"
+"지 종류의 물리적 body를 제공합니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:35
 msgid ":ref:`Area2D <class_Area2D>`"
@@ -37146,7 +37148,7 @@ msgid ""
 "assigned in Project Settings -> Layer Names."
 msgstr ""
 "각 레이어를 사용하는 대상을 추적하는 것은 어려울 수 있으므로, 사용중인 레이어"
-"에 이름을 할당하는 것이 유옹할 수 있습니다. 이름은 프로젝트 설정 -> 레이어 이"
+"에 이름을 할당하는 것이 유용할 수 있습니다. 이름은 프로젝트 설정 -> 레이어 이"
 "름 에서 할당할 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:117
@@ -37270,7 +37272,7 @@ msgid ""
 "collisions with other bodies, and collision responses such as bouncing, "
 "rotating, etc."
 msgstr ""
-"이것은 시뮬레이션된 2D 물리를 구현하는 노드입니다. 당신은:ref:`RigidBody2D "
+"이것은 시뮬레이션 된 2D 물리를 구현하는 노드입니다. 당신은:ref:`RigidBody2D "
 "<class_RigidBody2D>`를 직접 제어하지는 않습니다. 대신 힘을 가하게 되면 물리 "
 "엔진은 다른 물체와의 충돌을 포함한 결과 움직임과 충돌, 회전 등의 충돌 반응을 "
 "계산합니다."
@@ -37280,8 +37282,8 @@ msgid ""
 "You can modify a rigid body's behavior via  properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
 msgstr ""
-"인스펙터에서 설정할수 있는 \"Mass\", \"Friction\", 또는 \"Bounce\" 와 같은 특"
-"성을 통해 rigid body의 동작을 수정할 수 있습니다."
+"인스펙터에서 설정할 수 있는 \"Mass\", \"Friction\", 또는 \"Bounce\" 와 같은 "
+"특성을 통해 rigid body의 동작을 수정할 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:179
 msgid ""
@@ -37404,7 +37406,7 @@ msgstr ""
 "rigid body가 잠에 들 때 ``_integrate_forces()`` 함수는 호출되지 않을 것입니"
 "다. 이 동작을 오버라이드하려면 충돌을 만들거나, 충돌을 적용하거나, 힘을 가하"
 "거나, :ref:`can_sleep <class_RigidBody2D_can_sleep>` 속성을 비활성화하여 body"
-"를 깨어있게 해야 합니다. 이 경우 성능에 부정적인 영향을 미칠 수 있습니다."
+"를 깨어 있게 해야 합니다. 이 경우 성능에 부정적인 영향을 미칠 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:272
 msgid "Contact reporting"
@@ -37518,24 +37520,35 @@ msgid ""
 "``move_and_slide()`` provides a convenient way to implement sliding movement "
 "without writing much code."
 msgstr ""
+"슬라이딩은 일반적인 충돌 반응입니다. 플레이어가 하향식 게임에서 벽을 따라 움"
+"직이거나 플랫폼 안에서 오르내리는 경사를 상상해 보십시오. "
+"``move_and_collide()``를 사용한 후 직접 코드화할 수 있지만 "
+"``move_and_slide()``는 많은 코드를 작성하지 않고 슬라이딩 이동을 실행할 수 있"
+"는 편리한 방법입니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:382
 msgid ""
 "``move_and_slide()`` automatically includes the timestep in its calculation, "
 "so you should **not** multiply the velocity vector by ``delta``."
 msgstr ""
+"``move_and_slide()`` 는 자동으로 타임스탬프를 계산에 포함하므로, 속도 벡터에 "
+"``delta`` 를 곱하면 **안** 됩니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:386
 msgid ""
 "For example, use the following code to make a character that can walk along "
 "the ground (including slopes) and jump when standing on the ground:"
 msgstr ""
+"예를 들어, 다음 코드를 사용하여 지면(경사 포함)을 따라 걸을 수 있고 지면에 있"
+"을 때 점프할 수 있는 캐릭터를 만들 수 있습니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:451
 msgid ""
 "See :ref:`doc_kinematic_character_2d` for more details on using "
 "``move_and_slide()``, including a demo project with detailed code."
 msgstr ""
+"자세한 코드가 포함된 데모 프로젝트를 포함하여 ``move_and_slide()`` 사용에 대"
+"한 자세한 내용은 :ref:`doc_kinematic_character_2d`를 참조하십시오."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:4
 msgid "Rigid Body"
@@ -37543,7 +37556,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:7
 msgid "What is a rigid body?"
-msgstr ""
+msgstr "rigid body란?"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:9
 msgid ""
@@ -37553,10 +37566,14 @@ msgid ""
 "objects assigned. Note that setting the position of these shapes will affect "
 "the body's center of mass."
 msgstr ""
+"rigid body는 물리적인 물체의 행동을 시뮬레이션하기 위해 물리 엔진에 의해 직"
+"접 제어되는 body이다. body의 모양을 정의하려면 하나 이상의 :ref:`Shape "
+"<class_Shape>`개체가 할당되어 있어야 합니다. 이러한 모양의 위치를 설정하면 "
+"body의 무게 중심에 영향을 미칩니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:13
 msgid "How to control rigid body"
-msgstr ""
+msgstr "rigid body 제어 방법"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
 msgid ""
@@ -37565,12 +37582,16 @@ msgid ""
 "via code. See :ref:`RigidBody <class_RigidBody>` for the full list of "
 "properties and their effects."
 msgstr ""
+"rigid body의 동작은 마찰, 질량, 바운스 등의 특성을 설정하여 변경할 수 있습니"
+"다. 이러한 속성은 인스펙터 또는 코드를 통해 설정할 수 있습니다. 속성과 그 효"
+"과의 전체 목록은 :ref:`RigidBody <class_RigidBody>`를 참조하십시오."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:17
 msgid ""
 "There are several ways to control a rigid body's movement, depending on your "
 "desired application."
 msgstr ""
+"원하는 용도에 따라 rigid body의 움직임을 제어하는 몇 가지 방법이 있습니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:19
 msgid ""
@@ -37584,6 +37605,14 @@ msgid ""
 "to use ``look_at()`` every frame, which breaks the physics simulation. "
 "Below, we'll demonstrate how to implement this correctly."
 msgstr ""
+"예를 들어, 초기 위치를 설정하기 위해 rigid body를 한 번만 배치해야 된다면 "
+"``set_global_transform()``또는 ``look_at()``와 같은 :ref:`Spatial "
+"<class_Spatial>`노드가 제공하는 방법을 사용할 수 있습니다. 그러나 이 함수들"
+"이 모든 프레임을 호출하지 못하거나 물리 엔진이 body 상태를 정확하게 시뮬레이"
+"션할 수 없을 것입니다. 예를 들어, 다른 물체를 가리키도록 회전할 rigid body를 "
+"고려하는것이 있습니다. 이런 행동을 시행할 때 흔히 저지르는 실수는 "
+"``look_at()``을 모든 틀에서 사용하는 것인데 이것은 물리학적 시뮬레이션을 깨뜨"
+"리게 됩니다. 아래에서는, 이를 올바르게 구현하는 방법을 시연합니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:22
 msgid ""
@@ -37593,10 +37622,15 @@ msgid ""
 "In this function, you can add *forces*, apply *impulses*, or set the "
 "*velocity* in order to achieve any movement you desire."
 msgstr ""
+"``set_global_transform()``이나 ``look_at()``의 방법을 사용할 수 없다는 사실"
+"이 당신이 rigid body을 완전히 통제할 수 없다는 것을 의미하지는 않습니다. 대"
+"신 ``_integrate_forces()``의 콜백을 사용하여 제어할 수 있습니다. 이 기능에서 "
+"원하는 이동을 달성하기 위해 *forces*를 추가하거나 *impulses*를 적용하거나 "
+"*velocity*를 설정할 수 있습니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:25
 msgid "Look at function"
-msgstr ""
+msgstr "기능 보기"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:27
 msgid ""
@@ -37604,6 +37638,9 @@ msgid ""
 "used each frame to follow a target. Here is a custom ``look_at()`` function "
 "that will work reliably with rigid bodies:"
 msgstr ""
+"위에서 설명한 것처럼, 공간 노드의 ``look_at()``를 사용하여 각 프레임을 표적"
+"을 따라갈 수는 없다. 다음은 rigid body에서 안정적으로 작동하는 커스텀 "
+"``look_at()`` 함수이다:"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:69
 msgid ""
@@ -37612,6 +37649,9 @@ msgid ""
 "desired angle and then adds the velocity needed to rotate by that amount in "
 "one frame's time."
 msgstr ""
+"이 함수는 body를 회전시키기 위해 rigid body의 ``set_angular_velocity()`` 매서"
+"드를 사용합니다. 먼저 현재와 원하는 각도의 차이를 계산한 다음 한 프레임의 시"
+"간에 해당 양만큼 회전하는 데 필요한 속도를 추가합니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:71
 msgid ""
@@ -37619,10 +37659,13 @@ msgid ""
 "this mode the body's rotation is locked. In this case, you would have to "
 "rotate the attached mesh node instead using the standard Spatial methods."
 msgstr ""
+"이 모드에서는 body의 회전이 잠겨 있기 때문에 *character mode*의 rigid bodies"
+"에서는 이 스크립트를 사용할 수 없습니다. 이 경우 표준 공간 메서드를 사용하여 "
+"연결된 메시 노드를 회전해야 합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:4
 msgid "Using KinematicBody2D"
-msgstr ""
+msgstr "KinematicBody2D 사용하기"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:9
 msgid ""
@@ -37633,16 +37676,23 @@ msgid ""
 "tutorial, we'll look at the :ref:`KinematicBody2D <class_KinematicBody2D>` "
 "node and show some examples of how it can be used."
 msgstr ""
+"Godot은 충돌 감지와 반응성을 모두 제공하기 위해 많은 충돌 물체를 제공합니다. "
+"프로젝트에 사용할 항목을 결정하는 것은 혼란스러울 수 있습니다. 각각의 작동 방"
+"식 및 장단점이 무엇인지 이해한다면 문제를 피하고 개발을 간소화할 수 있습니"
+"다. 이 튜토리얼에서는:ref:`KinematicBody2D <class_KinematicBody2D> 노드를 살"
+"펴보고 사용 방법에 대한 몇 가지 예를 보여 드리겠습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:16
 msgid ""
 "This document assumes you're familiar with Godot's various physics bodies. "
 "Please read :ref:`doc_physics_introduction` first."
 msgstr ""
+"이 문서는 당신이 Godot의 다양한 물리학 body들에 대해 잘 알고 있다고 가정합니"
+"다. 먼저 :ref:`doc_physics_introduction`를 읽어주세요."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:20
 msgid "What is a kinematic body?"
-msgstr ""
+msgstr "kinematic body란 무엇인가?"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:22
 msgid ""
@@ -37652,6 +37702,11 @@ msgid ""
 "means that you have to write some code to create their behavior, it also "
 "means you have more precise control over how they move and react."
 msgstr ""
+"``KinematicBody2D``는 코드로 통제될 body를 구현하기 위한 것입니다. 이들은 이"
+"동할 때 다른 body와의 충돌을 감지하지만, 중력이나 마찰과 같은 물리 엔진 특성"
+"에 의해 영향을 받지 않습니다. 이것은 당신이 그것들의 행동을 만들어내기 위해 "
+"몇 개의 코드를 써야 한다는 것을 의미하지만, 또한 그것들이 어떻게 움직이고 반"
+"응하는지 더 정확히 제어할 수 있다는 것을 의미합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:28
 msgid ""
@@ -37659,10 +37714,12 @@ msgid ""
 "must calculate the movement in code. The physics engine will not move a "
 "`KinematicBody2D`."
 msgstr ""
+"`KinematicBody2D`는 중력과 다른 힘에 의해 영향을 받을 수 있지만 코드로 움직임"
+"을 계산해야 합니다. 물리 엔진은 `KinematicBody2D`를 움직이지 않습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:33
 msgid "Movement and Collision"
-msgstr ""
+msgstr "이동 및 충돌"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:35
 msgid ""
@@ -37673,18 +37730,27 @@ msgid ""
 "After a KinematicBody2D has collided, any *collision response* must be coded "
 "manually."
 msgstr ""
+"``KinematicBody2D``를 옮길 때 ``position``속성을 직접 설정해서는 안 됩니다. "
+"대신 ``move_and_collide()`` 또는 ``move_and_slide()`` 매서드를 사용해야 합니"
+"다. 이러한 방법은 주어진 벡터를 따라 body를 움직이며 충돌이 감지될 경우 즉시 "
+"중지됩니다. KineticBody2D가 충돌한 후에는 *충돌 반응*을 수동으로 코딩해야 합"
+"니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:41
 msgid ""
 "Kinematic body movement should only be done in the ``_physics_process()`` "
 "callback."
 msgstr ""
+"Kinematic body의 움직임은 ``_physics_process()`` 콜백 함수 로만 이루어져야 합"
+"니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:43
 msgid ""
 "The two movement methods serve different purposes, and later in this "
 "tutorial you'll see examples of how they work."
 msgstr ""
+"두 이동 메서드는 서로 다른 용도로 사용되며, 이 튜토리얼의 뒷부분에는 작동 방"
+"법에 대한 예가 나와 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:47
 msgid "``move_and_collide``"
@@ -37699,6 +37765,11 @@ msgid ""
 "If this happens, the method will return a :ref:`KinematicCollision2D "
 "<class_KinematicCollision2D>` object."
 msgstr ""
+"이 메서드는 하나의 매개 변수를 가집니다: body의 상대적인 움직임을 나타내는 :"
+"ref:`Vector2 <class_Vector2>`. 일반적으로 이것은 속도 벡터에 프레임 타임스탬"
+"프(``delta``)를 곱한 것입니다. 엔진이 이 벡터를 따라 어느 곳에서든 충돌을 감"
+"지하면 body는 즉시 작동을 멈춥니다. 이 경우 메서드는 :ref:"
+"`KinematicCollision2D <class_KinematicCollision2D>` 개체를 반환합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:55
 msgid ""
@@ -37706,6 +37777,8 @@ msgid ""
 "and the colliding object. Using this data you can calculate your collision "
 "response."
 msgstr ""
+"``KinematicCollision2D`` 는 충돌과 충돌하는 물체에 대한 데이터를 담고 있는 물"
+"체입니다. 이 데이터를 사용하여 충돌 반응을 계산할 수 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:60
 msgid "``move_and_slide``"
@@ -37718,6 +37791,9 @@ msgid ""
 "other. This is especially useful in platformers or top-down games, for "
 "example."
 msgstr ""
+"``move_and_slide()`` 방법은 하나의 body가 다른 하나의 body를 따라 미끄러지도"
+"록 하려는 일반적인 경우에서 충돌 반응을 단순화하기 위한 것입니다. 이것은 예"
+"를 들어 플랫포머나 하향식 게임에서 특히 유용합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:66
 msgid ""
@@ -37725,12 +37801,17 @@ msgid ""
 "``delta``. Do *not* multiply your velocity vector by ``delta`` before "
 "passing it to ``move_and_slide()``."
 msgstr ""
+"``move_and_slide()``는 ``delta``를 사용하여 프레임 기반 이동을 자동으로 계산"
+"합니다. 속도 벡터를 ``move_and_slide()``에 전달하기 전에 ``delta`` 로 곱하지 "
+"마십시오."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:70
 msgid ""
 "In addition to the velocity vector, ``move_and_slide()`` takes a number of "
 "other parameters allowing you to customize the slide behavior:"
 msgstr ""
+"속도 벡터 외에도 ``move_and_slide()``에는 여러 가지 다른 매개 변수가 포함되"
+"어 있어 슬라이드 동작을 지정할 수 있습니다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:73
 msgid "``floor_normal`` - *default value:* ``Vector2( 0, 0 )``"
@@ -37744,6 +37825,10 @@ msgid ""
 "surface the body is in contact with. The default value means that all "
 "surfaces are considered walls."
 msgstr ""
+"이 매개 변수를 사용하면 엔진이 바닥으로 간주해야 하는 표면을 정의할 수 있습니"
+"다. 이를 설정하면 ``is_on_floor()``, `is_on_wall()``, ``is_on_ceiling()`` 매"
+"서드를 사용하여 신체와 접촉하는 표면의 유형을 탐지할 수 있습니다. 기본값으론 "
+"모든 표면이 벽으로 간주됩니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:80
 msgid "``slope_stop_min_velocity`` - *default value:* ``5``"
@@ -37754,6 +37839,8 @@ msgid ""
 "This is the minimum velocity when standing on a slope. This prevents a body "
 "from sliding down a slope when standing still."
 msgstr ""
+"이것은 경사면에 서 있을 때의 최소 속도입니다. 이렇게 하면 정지 상태에서 body"
+"가 비탈 아래로 미끄러지는 것을 방지할 수 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:85
 msgid "``max_bounces`` - *default value:* ``4``"
@@ -37764,18 +37851,22 @@ msgid ""
 "This is the maximum number of collisions before the body stops moving. "
 "Setting this too low may prevent movement entirely."
 msgstr ""
+"이것은 body가 움직임을 멈추기 전의 최대 충돌 횟수입니다. 이 값을 너무 낮게 설"
+"정하면 이동이 완전히 차단될 수 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:90
 msgid ""
 "``floor_max_angle`` - *default value:* ``0.785398`` (in radians, equivalent "
 "to ``45`` degrees)"
 msgstr ""
+"``floor_max_angle`` - *default value:* ``0.785398`` (라디안으론, ``45`` 도와 "
+"같다)"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:92
 msgid ""
 "This is the maximum angle before a surface is no longer considered a \"floor"
 "\"."
-msgstr ""
+msgstr "이것은 지표면이 더 이상 \"바닥\"으로 간주되지 않는 최대 각도입니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:95
 msgid "``move_and_slide_with_snap``"
@@ -37790,10 +37881,15 @@ msgid ""
 "by setting ``snap`` to ``Vector2(0, 0)`` or by using ``move_and_slide()`` "
 "instead."
 msgstr ""
+"이 방법은 ``snap`` 매개 변수를 추가하여 ``move_and_slide()``에 몇 가지 기능"
+"을 더합니다. 이 벡터가 지면과 접촉하는 한 body는 표면에 부착된 상태를 유지합"
+"니다. 이는 점프할 때 스냅을 비활성화해야 함을 의미합니다. ``snap``을"
+"``Vector2(0, 0)`` 로 설정하거나 ``move_and_slide()`` 를 대신 사용하여 이 작업"
+"을 수행할 수 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:104
 msgid "Which movement method to use?"
-msgstr ""
+msgstr "사용해야할 이동 매서드는 무엇입니까?"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:106
 msgid ""
@@ -37804,6 +37900,12 @@ msgid ""
 "case, and ``move_and_collide()`` is more general. For example, the following "
 "two code snippets result in the same collision response:"
 msgstr ""
+"새로운 Godot 사용자들의 일반적인 질문은 다음과 같습니다: \"어떤 이동 기능을 "
+"사용할지 어떻게 결정합니까?\" 종종 ``move_and_slide()``가 \"간단\"하기 때문"
+"에 사용하라고 하지만, 반드시 그런 것은 아닙니다. 생각해 볼 수 있는 한 가지 방"
+"법은``move_and_slide()``가 특별한 경우이고, ``move_and_collide()``가 더 일반"
+"적이라는 것입니다. 예를 들어, 다음 두 코드 조각은 동일한 충돌 응답을 생성합니"
+"다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:137
 msgid ""
@@ -37812,27 +37914,33 @@ msgid ""
 "we'll see in the examples below, there are cases where ``move_and_slide()`` "
 "doesn't provide the response you want."
 msgstr ""
+"당신이 ``move_and_slide()``로 하는 것은 또한 ``move_and_collide()``로 할 수 "
+"있지만 좀 더 많은 코드가 필요할 수도 있습니다. 그러나 아래 예에서 볼 수 있듯"
+"이 ``move_and_slide()``가 당신이 원하는 대답을 제공하지 않는 경우도 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:142
 #: ../../docs/development/compiling/compiling_with_mono.rst:84
 msgid "Examples"
-msgstr ""
+msgstr "예시"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:144
 msgid ""
 "To see these examples in action, download the sample project: :download:"
 "`using_kinematic2d.zip <files/using_kinematic2d.zip>`."
 msgstr ""
+"예제가 실행되는것을 보기 위해선, 샘플 프로젝트를 다운로드하십시오: :download:"
+"`using_kinematic2d.zip <files/using_kinematic2d.zip>`."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:148
 msgid "Movement and walls"
-msgstr ""
+msgstr "이동 및 벽"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:150
 msgid ""
 "If you've downloaded the sample project, this example is in the "
 "\"BasicMovement.tscn\" scene."
 msgstr ""
+"샘플 프로젝트를 다운로드했다면, 이 예는 \"BasicMovement.tscn\" 의 장면입니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:152
 msgid ""
@@ -37842,15 +37950,20 @@ msgid ""
 "``Sprite``). In the ``CollisionShape2D``'s *Shape* property, select \"New "
 "RectangleShape2D\" and size the rectangle to fit over the sprite image."
 msgstr ""
+"이 예시에서 ``KinematicBody2D``를 두 자식과 함께 추가합니다: ``Sprite``와 "
+"``CollisionShape2D``. Godot \"icon.png\"를 Sprite의 텍스쳐 속성으로 사용합니"
+"다 (파일 시스템 독에서 ``Sprite``의 *Texture* 속성으로 끌어다 놓으십시오). "
+"``CollisionShape2D``의 *Shape* 속성에서 \"New RectangleShape2D\"를 선택하고 "
+"스프라이트 이미지에 맞게 사각형 크기를 조정합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:158
 msgid ""
 "See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
-msgstr ""
+msgstr "2D 이동 계획을 구현하는 예는 :ref:`doc_2d_movement`을 참조하시오."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:160
 msgid "Attach a script to the KinematicBody2D and add the following code:"
-msgstr ""
+msgstr "KineticBody2D에 스크립트를 연결하고 다음 코드를 추가합니다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:227
 msgid ""
@@ -37860,6 +37973,11 @@ msgid ""
 "a rectangular collision shape. For visibility, you can use a sprite, a "
 "Polygon2D, or turn on \"Visible Collision Shapes\" from the \"Debug\" menu."
 msgstr ""
+"이 장면을 보면 ``move_and_collide()``가 예상대로 작동하면서 body가 속도 벡터"
+"를 따라 움직이는 것을 볼 수 있습니다. 이제 장애물을 추가하면 어떻게 되는지 봅"
+"시다. 직사각형 충돌 모양으로 :ref:`StaticBody2D <class_StaticBody2D>`를 추가"
+"합니다. 가시성을 위해 \"Debug\" 메뉴에서 스프라이트, Polygon2D를 사용하거나 "
+"\"Visible Collision Shapes\"를 켤 수 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:233
 msgid ""
@@ -37868,6 +37986,10 @@ msgid ""
 "the obstacle at an angle and you'll find that the obstacle acts like glue - "
 "it feels like the body gets stuck."
 msgstr ""
+"장면을 다시 실행하고 장애물 안으로 들어가 보십시오. 당신은 "
+"``KinematicBody2D``가 장애물을 통과할 수 없다는 것을 알게 될 것입니다. 하지"
+"만, 한 각도로 장애물 안으로 들어가 보세요. 그러면 장애물이 접착제처럼 작용한"
+"다는 것을 알 수 있을 것입니다 - 마치 body가 달라붙는 것 같은 느낌이 듭니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:237
 msgid ""
@@ -37875,12 +37997,17 @@ msgid ""
 "``move_and_collide()`` stops the body's movement when a collision occurs. We "
 "need to code whatever response we want from the collision."
 msgstr ""
+"이 문제는 *충돌 대응*이 없기 때문에 발생합니다. ``move_and_collide()``는 충돌"
+"이 일어날 때 몸의 움직임을 멈춥니다. 우리는 충돌 로부터 우리가 원하는 어떤 대"
+"응도 코드화 할 필요가 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:241
 msgid ""
 "Try changing the function to ``move_and_slide(velocity)`` and running again. "
 "Note that we removed ``delta`` from the velocity calculation."
 msgstr ""
+"함수를 ``move_and_slide(velocity)``로 변경하고 다시 실행해 보십시오. 속도 계"
+"산에서 ``delta``를 제거했습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:244
 msgid ""
@@ -37888,6 +38015,9 @@ msgid ""
 "body along the collision object. This is useful for a great many game types, "
 "and may be all you need to get the behavior you want."
 msgstr ""
+"``move_and_slide()`` 는 충돌 물체를 따라 몸을 미끄러뜨리는 기본 충돌 반응을 "
+"제공합니다. 이것은 많은 게임 유형에 유용하며, 여러분이 원하는 행동을 하기 위"
+"해 필요한 모든 것일 수 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:249
 msgid "Bouncing/reflecting"
@@ -37899,12 +38029,17 @@ msgid ""
 "(\"BounceandCollide.tscn\" in the sample project), we have a character "
 "shooting bullets and we want the bullets to bounce off the walls."
 msgstr ""
+"슬라이딩 충돌 반응을 원하지 않을 경우 어떻게 해야 할까요? 이 예시(샘플 프로젝"
+"트의 \"BounceandCollide.tscn\") 에서, 우리는 총알을 쏘는 캐릭터가 있고 총알"
+"이 벽에서 튀어 나오길 바랍니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:255
 msgid ""
 "This example uses three scenes. The main scene contains the Player and "
 "Walls. The Bullet and Wall are separate scenes so that they can be instanced."
 msgstr ""
+"이 예시에서는 세 장면을 사용합니다. 메인 장면에는 플레이어와 벽이 포함됩니"
+"다. 총알과 벽은 각각 다른 장면이기 때문에 예시로 들 수 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:258
 msgid ""
@@ -37912,10 +38047,12 @@ msgid ""
 "Aiming uses the mouse pointer. Here is the code for the Player, using "
 "``move_and_slide()``:"
 msgstr ""
+"플레이어는 앞뒤로 `w`와 `s` 키를 통해 제어됩니다. 조준은 마우스 포인터를 사용"
+"합니다. 다음은 ``move_and_slide()``를 사용한 플레이어 코드입니다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:345
 msgid "And the code for the Bullet:"
-msgstr ""
+msgstr "그리고 총알에 대한 코드입니다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:407
 msgid ""
@@ -37923,12 +38060,17 @@ msgid ""
 "``move_and_collide()`` if a collision occurs, a ``KinematicCollision2D`` "
 "object is returned (otherwise, the return is ``Nil``)."
 msgstr ""
+"이러한 동작은 ``_physics_process()``로 일어납니다. ``move_and_collide()``를 "
+"사용한 후 충돌이 발생할 경우, ``KinematicCollision2D`` 개체가 반환됩니다 (그 "
+"외의 경우에는, ``Nil``이 반환됩니다)."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:411
 msgid ""
 "If there is a returned collision, we use the ``normal`` of the collision to "
 "reflect the bullet's ``velocity`` with the ``Vector2.bounce()`` method."
 msgstr ""
+"만약 다시 충돌이 일어난다면, 우리는 충돌의 ``normal``을 총알의 ``velocity``"
+"를  ``Vector2.bounce()`` 메서드로 반영하는 데 사용합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:414
 msgid ""
@@ -37936,6 +38078,9 @@ msgid ""
 "it. In the example project, we've added a flashing color effect to the Wall "
 "to demonstrate this."
 msgstr ""
+"충돌물체(``collider``)가 ``hit`` 메서드를 갖고 있다면, 우리도 그것을 호출한"
+"다. 예제 프로젝트에서는, 이를 시연하기 위해 벽에 깜박이는 색 효과를 추가했습"
+"니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:421
 msgid "Platformer movement"
@@ -37948,6 +38093,10 @@ msgid ""
 "running. If you've downloaded the sample project, you can find this in "
 "\"Platformer.tscn\"."
 msgstr ""
+"인기 있는 예를 하나 더 들어 보겠습니다: 2D 플랫포머입니다. "
+"``move_and_slide()``는 기능성 캐릭터 제어기를 신속하게 작동하는 데 이상적입니"
+"다. 샘플 프로젝트를 다운로드한 경우, \"Platformer.tscn\"에서 찾을 수 있습니"
+"다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:427
 msgid ""
@@ -37955,10 +38104,13 @@ msgid ""
 "objects. They can be any shape and size. In the sample project, we're using :"
 "ref:`Polygon2D <class_Polygon2D>` to create the platform shapes."
 msgstr ""
+"이 예에서는, ``StaticBody2D``로 구성된 레벨이 있다고 가정합니다. 그들은 어떤 "
+"모양이나 크기가 될 수 있습니다. 샘플 프로젝트에서는, 플랫폼 모양을 만들기 위"
+"해 :ref:`Polygon2D <class_Polygon2D>`를 사용하고 있습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:431
 msgid "Here's the code for the player body:"
-msgstr ""
+msgstr "플레이어 body의 코드는 다음과 같습니다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:517
 msgid ""
@@ -37968,6 +38120,10 @@ msgid ""
 "down slopes. Try removing ``velocity =`` and see what happens if you don't "
 "do this."
 msgstr ""
+"이 기능은 ``move_and_slide()``를 사용할 때 슬라이드 충돌이 발생한 후에도 남"
+"아 있는 움직임을 나타내는 벡터를 반환합니다. 그 값을 캐릭터의 ``velocity``로 "
+"되돌리면 경사면을 부드럽게 오르내릴 수 있습니다. ``velocity =``를 없애보고 만"
+"약 그렇게 하지 않으면 어떻게 되는지 확인해 보십시오."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:522
 msgid ""
@@ -37975,6 +38131,9 @@ msgid ""
 "vector pointing straight upward. This means that if the character collides "
 "with an object that has this normal, it will be considered a floor."
 msgstr ""
+"또한 우리는 ``Vector2(0, -1)``를 바닥의 정상으로 추가했습니다. 이것은 바로 위"
+"쪽을 가리키는 벡터입니다. 즉, 캐릭터가 이와 같은 정상 상태의 개체와 충돌하면 "
+"바닥으로 간주됩니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:526
 msgid ""
@@ -37984,12 +38143,17 @@ msgid ""
 "45 degrees of the given floor vector (this can be adjusted by setting "
 "``floor_max_angle``)."
 msgstr ""
+"바닥을 정상적으로 사용하면 ``is_on_floor()``을 사용함으로써 점프 작업을 할 "
+"수 있습니다. 이 함수는 충돌 본체의 정상이 주어진 바닥 벡터에서 45도 이내인 "
+"``move_and_slide()`` 충돌 후에만 ``true`` 를 반환합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:531
 msgid ""
 "This also allows you to implement other features like wall jumps using "
 "``is_on_wall()``, for example."
 msgstr ""
+"이를 통해 예를 들어 ``is_on_wall()`` 과 같이 벽 점프와 같은 다른 기능을 구현"
+"할 수 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:4
 msgid "Ray-casting"
@@ -38002,6 +38166,10 @@ msgid ""
 "AI, etc. to take place. This tutorial will explain how to do this in 2D and "
 "3D."
 msgstr ""
+"게임 개발에서 가장 일반적인 작업 중 하나는 광선(또는 사용자 지정 모양의 물체)"
+"를 투사하고 그것이 부딪히는 것을 확인하는 것입니다. 이를 통해 복잡한 행동, "
+"AI 등이 발생할 수 있습니다. 이 튜토리얼에서는 2D 및 3D로 이 작업을 수행하는 "
+"방법에 대해 설명합니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:14
 msgid ""
@@ -38011,16 +38179,23 @@ msgid ""
 "`RayCast2D <class_RayCast2D>` will work, as they will return every frame "
 "what the result of a raycast is."
 msgstr ""
+"씬이 단지 프론트엔드일 동안, Godot는 모든 낮은 레벨의 게임 정보를 서버에 저장"
+"합니다. 따라서 일반적으로 레이 캐스팅은 하위 작업입니다. 단순 레이캐스트의 경"
+"우, :ref:`RayCast <class_RayCast>` 및 :ref:`RayCast2D <class_RayCast2D>`와 같"
+"은 노드는 모든 프레임의 레이캐스트의 결과가 어떤 것인지 반환함으로써 작동 할 "
+"것입니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:21
 msgid ""
 "Many times, though, ray-casting needs to be a more interactive process so a "
 "way to do this by code must exist."
 msgstr ""
+"그러나, 많은 경우, 광선 투사는 보다 상호작용적인 과정이 필요하므로 코드로 이"
+"를 수행하는 방법이 있어야만 합니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
-msgstr ""
+msgstr "공간"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
@@ -38030,6 +38205,10 @@ msgid ""
 "<class_CanvasItem_get_world_2d>`. For 3D, it's :ref:`Spatial.get_world()."
 "space <class_Spatial_get_world>`."
 msgstr ""
+"물리 세계에서, Godot는 모든 낮은 수준의 충돌과 물리학 정보를 한 *공간*에 저장"
+"합니다. 현재 2D 공간(2D 물리용)은 :ref:`CanvasItem.get_world_2d().space "
+"<class_CanvasItem_get_world_2d>`에 액세스하여 얻을 수 있습니다. 3D의 경우 :"
+"ref:`Spatial.get_world().space <class_Spatial_get_world>`입니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
 msgid ""
@@ -38037,10 +38216,13 @@ msgid ""
 "`PhysicsServer <class_PhysicsServer>` and :ref:`Physics2DServer "
 "<class_Physics2DServer>` respectively for 3D and 2D."
 msgstr ""
+"결과적인 공간 :ref:`RID <class_RID>`는 3D 및 2D에 대해 각각 :ref:"
+"`PhysicsServer <class_PhysicsServer>` 및 :ref:`Physics2DServer "
+"<class_Physics2DServer>` 에서 사용할 수 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:38
 msgid "Accessing space"
-msgstr ""
+msgstr "공간에 접근하기"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:40
 msgid ""
@@ -38051,6 +38233,11 @@ msgid ""
 "from outside this function may result in an error due to space being "
 "*locked*."
 msgstr ""
+"Godot은 기본적으로 게임 로직과 동일한 스레드에서 실행되지만, 보다 효율적으로 "
+"작동하기 위해 별도의 스레드에서 실행되도록 설정할 수 있습니다. 이러한 이유"
+"로, 공간에 액세스하는 시간은 :ref:`Node._physics_process() "
+"<class_Node__physics_process>` 콜백 함수 동안은 안전합니다. 이 함수 외부에서 "
+"액세스할 경우 공간이 *잠겨* 있기 때문에 오류가 발생할 수 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:47
 msgid ""
@@ -38058,22 +38245,25 @@ msgid ""
 "<class_Physics2DDirectSpaceState>` and :ref:`PhysicsDirectSpaceState "
 "<class_PhysicsDirectSpaceState>` must be used."
 msgstr ""
+"물리 공간에 대한 쿼리를 수행하려면 :ref:`Physics2DDirectSpaceState "
+"<class_Physics2DDirectSpaceState>` 및 :ref:`PhysicsDirectSpaceState "
+"<class_PhysicsDirectSpaceState>` 를 사용해야 합니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:52
 msgid "Use the following code in 2D:"
-msgstr ""
+msgstr "2D에서는 다음 코드를 사용합니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:69
 msgid "Or more directly:"
-msgstr ""
+msgstr "더욱더 직접적인 코드:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:84
 msgid "And in 3D:"
-msgstr ""
+msgstr "3D에서는 다음 코드를 사용합니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:100
 msgid "Raycast query"
-msgstr ""
+msgstr "광선 투사 쿼리"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:102
 msgid ""
@@ -38081,26 +38271,31 @@ msgid ""
 "`Physics2DDirectSpaceState.intersect_ray() "
 "<class_Physics2DDirectSpaceState_intersect_ray>` may be used. For example:"
 msgstr ""
+"2D 광선 투사 쿼리를 수행하려면 :ref:`Physics2DDirectSpaceState."
+"intersect_ray() <class_Physics2DDirectSpaceState_intersect_ray>` 방법을 사용"
+"할 수 있습니다. 예를 들면 다음과 같습니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:123
 msgid ""
 "The result is a dictionary. If the ray didn't hit anything, the dictionary "
 "will be empty. If it did hit something it will contain collision information:"
 msgstr ""
+"결과는 딕셔너리입니다. 만약 광선이 아무 것도 건드리지 않으면, 딕셔너리는 텅 "
+"비게 될 것입니다. 만약 충돌했을 경우 충돌 정보가 포함됩니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:137
 msgid ""
 "The ``result`` dictionary when a collision occurs contains the following "
 "data:"
-msgstr ""
+msgstr "충돌이 발생할 경우 ``결과`` 딕셔너리에는 다음 데이터가 포함됩니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:152
 msgid "The data is similar in 3D space, using Vector3 coordinates."
-msgstr ""
+msgstr "데이터는 Vector3 좌표를 사용하는 3D 공간에서와 유사합니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:155
 msgid "Collision exceptions"
-msgstr ""
+msgstr "충돌 예외"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:157
 msgid ""
@@ -38109,6 +38304,9 @@ msgid ""
 "has a collider, so the ray will only detect its parent's collider, as shown "
 "in the following image:"
 msgstr ""
+"광선 투사의 일반적인 용도는 캐릭터가 주변 세계에 대한 데이터를 수집할 수 있도"
+"록 하는 것입니다. 이것의 한 가지 문제점은 다음 이미지와 같이 같은 캐릭터가 충"
+"돌체를 가지고 있어서, 광선은 부모의 충돌체만 감지한다는 것입니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:164
 msgid ""
@@ -38116,14 +38314,17 @@ msgid ""
 "optional third parameter which is an array of exceptions. This is an example "
 "of how to use it from a KinematicBody2D or any other collision object node:"
 msgstr ""
+"자체 교차를 방지하기 위해, ``intersect_ray()`` 함수는 예외 배열인 선택적 세 "
+"번째 파라미터를 취할 수 있습니다. 이것은 KinematicBody2D 또는 다른 충돌 개체 "
+"노드에서 사용하는 방법의 예입니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:189
 msgid "The exceptions array can contain objects or RIDs."
-msgstr ""
+msgstr "예외 배열에는 개체 또는 RID가 포함될 수 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr ""
+msgstr "충돌 마스크"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -38132,6 +38333,9 @@ msgid ""
 "exceptions. In this case, it is much more efficient to use the collision "
 "layer/mask system."
 msgstr ""
+"예외 방법은 부모 body를 제외하고도 잘 작동하지만, 많은 and/or 동적 예외 목록"
+"이 필요한 경우 매우 불편하게 됩니다. 이 경우 충돌 계층/마스크 시스템을 사용하"
+"는 것이 훨씬 효율적입니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:198
 msgid ""
@@ -38139,10 +38343,13 @@ msgid ""
 "For example, to use same mask as the parent body, use the ``collision_mask`` "
 "member variable:"
 msgstr ""
+"``intersect_ray()`` 의 네 번째 선택적인 인수는 충돌 마스크이다. 예를 들어 부"
+"모body와 동일한 마스크를 사용하려면 ``collision_mask`` 멤버 변수를 사용해야 "
+"합니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:226
 msgid "3D ray casting from screen"
-msgstr ""
+msgstr "화면에서의 3D ray casting(광선 투사)"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:228
 msgid ""
@@ -38152,6 +38359,9 @@ msgid ""
 "know when it was clicked, but in case there is any desire to do it manually, "
 "here's how."
 msgstr ""
+"화면에서 3D 물리학 공간으로 광선을 투사하는 것은 물체를 선택하는 데 유용합니"
+"다. :ref:`CollisionObject <class_CollisionObject>` 에는 \"input_event\" 신호"
+"가 있어 클릭 시 이를 알 수 있지만, 수동으로 수행할 수 있는 방법이 있습니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:234
 msgid ""
@@ -38161,16 +38371,22 @@ msgid ""
 "because ``origin`` changes in orthogonal mode, while ``normal`` changes in "
 "perspective mode:"
 msgstr ""
+"화면에서 광선을 캐스팅하려면 :ref:`Camera <class_Camera>` 노드가 필요합니다. "
+"``카메라``는 두 가지 투영 모드일 수 있습니다: 원근법과 직교. 이로 인해 광선 "
+"원점과 방향을 모두 얻어야 합니다. 이는 직교 모드의 ``원래`` 변화, 원근법 모드"
+"에서의 ``정상`` 변화 때문입니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:242
 msgid "To obtain it using a camera, the following code can be used:"
-msgstr ""
+msgstr "카메라를 사용하여 얻기 위해선, 다음 코드를 사용할 수 있습니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:270
 msgid ""
 "Remember that during ``_input()``, the space may be locked, so in practice "
 "this query should be run in ``_physics_process()``."
 msgstr ""
+"``_input()`` 동안 공간이 잠겨 있을 수 있으므로 실제로 이 쿼리는 "
+"``_physics_process()``에서 실행해야 한다는 점을 기억하십시오."
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:4
 msgid "Ragdoll system"
@@ -39377,28 +39593,36 @@ msgid ""
 "Before reading this tutorial, it is advised to read the previous one about :"
 "ref:`doc_vector_math` as this one is a direct continuation."
 msgstr ""
+"본 튜토리얼을 읽기 전에 \"ref:doc_vector_math\"에 대한 이전 튜토리얼을 읽어 "
+"보는 것이 좋습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:12
 msgid ""
 "This tutorial will be about *transformations* and will cover a little about "
 "matrices (but not in-depth)."
 msgstr ""
+"본 튜토리얼에서는 *변환*에 대해 다루며 행렬에 대해 설명합니다(심층적이지는 않"
+"음)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:15
 msgid ""
 "Transformations are most of the time applied as translation, rotation and "
 "scale so they will be considered as priority here."
 msgstr ""
+"변환은 변환, 회전 및 척도로 사용되는 대부분의 시간이기 때문에 여기서는 변환"
+"이 우선으로 간주됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:19
 msgid "Oriented coordinate system (OCS)"
-msgstr ""
+msgstr "OCS(주요 좌표계)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
 "Imagine we have a spaceship somewhere in space. In Godot this is easy, just "
 "move the ship somewhere and rotate it:"
 msgstr ""
+"우주 어딘가에 우주선이 있다고 상상해 보세요. Godot에서 이것은 쉽습니다. 배를 "
+"어딘가로 옮겨서 돌리십시오:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
@@ -39406,6 +39630,8 @@ msgid ""
 "remember, we are grown ups here and don't use angles (plus, angles are not "
 "even that useful when working in 3D)."
 msgstr ""
+"2D에서는 단순한 위치 및 회전각으로 보입니다. 하지만 기억하세요, 우리는 여기"
+"서 더 나아갔고, 각도는 사용하지 않습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:30
 msgid ""
@@ -39413,22 +39639,29 @@ msgid ""
 "it for 2D in a drawing such as Paint.net, Gimp, Photoshop, etc. or in 3D "
 "through a 3D DCC tool such as Blender, Max, Maya, etc."
 msgstr ""
+"우리는 언젠가 누군가가 이 우주선을 *설계*했다는 것을 깨달아야 합니다.  Paint."
+"net, Gimp, Photoshop 등과 같은 도면에서 2D로 제작하거나 Blender, Max, Maya 등"
+"과 같은 3D DCC 도구를 통해 3D로 제작해야 합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:35
 msgid ""
 "When it was designed, it was not rotated. It was designed in its own "
 "*coordinate system*."
 msgstr ""
+"이것은 설계 시 회전하지 않았습니다. 그것은 자체적인 *좌표계 시스템*으로 설계"
+"되었습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "This means that the tip of the ship has a coordinate, the fin has another, "
 "etc. Be it in pixels (2D) or vertices (3D)."
 msgstr ""
+"이것은 우주선의 끝이 좌표를 가지고 있고 판부분은 다른 것을 가지고 있다는 것"
+"을 의미합니다. 픽셀(2D) 또는 정점(3D)으로 지정합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid "So, let's recall again that the ship was somewhere in space:"
-msgstr ""
+msgstr "그러면, 우주 어딘가에 우주선이 있었다는 것을 회상해봅시다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:47
 msgid ""
@@ -39437,6 +39670,9 @@ msgid ""
 "was *transformed* from their original position to the new one. This allows "
 "the ship to be displayed where it is."
 msgstr ""
+"그건 어떻게 그곳에 도착했나요? 무엇을 움직여서 디자인된 위치에서 현재 위치로 "
+"회전시킨건가요? 답은... **변환**입니다. 우주선은 원래 위치에서 새 위치로 *변"
+"환되었습니다. 이렇게 하면 우주선이 있는 곳에 표시될 수 있습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:52
 msgid ""
@@ -39444,6 +39680,8 @@ msgid ""
 "this puzzle, we will superimpose the ship's original design position at "
 "their current position:"
 msgstr ""
+"그러나 변환은 이 과정을 설명하기에는 너무 일반적인 용어이다. 이 퍼즐을 해결하"
+"기 위해 우주선의 원래 설계 위치를 현재 위치에 겹치게 됩니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:58
 msgid ""
@@ -39452,49 +39690,62 @@ msgid ""
 "a unit vector pointing towards X positive, a unit vector pointing towards Y "
 "positive and a translation."
 msgstr ""
+"\"설계된 우주\"도 바뀌었습니다. 이러한 변화를 가장 잘 표현할 수 있는 방법은 "
+"무엇일까요? 이를 위해 (2D 단위) 3개의 벡터를 사용하겠습니다. X 양수를 가리키"
+"는 단위 벡터, Y 양수를 가리키는 단위 벡터 및 변환을 사용합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:65
 msgid ""
 "Let's call the 3 vectors \"X\", \"Y\" and \"Origin\", and let's also "
 "superimpose them over the ship so it makes more sense:"
 msgstr ""
+"이 세 벡터를 \"X\", \"Y\" 및 \"Origin\"이라고 부르고, 이 세 벡터를 우주선 위"
+"에 겹쳐보자:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:70
 msgid ""
 "Ok, this is nicer, but it still does not make sense. What do X,Y and Origin "
 "have to do with how the ship got there?"
 msgstr ""
+"좋아요, 이게 더 좋긴 한데, 그래도 말이 안 돼요. X,Y,Origin이 우주선이 어떻게 "
+"그곳에 도착했는지와 무슨 관계가 있는걸까요?"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "Well, let's take the point from top tip of the ship as reference:"
-msgstr ""
+msgstr "자, 우주선으로부터 참고할 수 있는 요점부터 말씀드리겠습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:77
 msgid ""
 "And let's apply the following operation to it (and to all the points in the "
 "ship too, but we'll track the top tip as our reference point):"
 msgstr ""
+"다음 작업을 여기에 적용해 보겠습니다(그리고 우주선의 모든 지점에도 적용하되, "
+"맨위의 꼭지 부분을 기준점으로 추적해 보겠습니다):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:89
 msgid "Doing this to the selected point will move it back to the center:"
-msgstr ""
+msgstr "이렇게 하면 선택한 지점으로 다시 이동합니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:93
 msgid ""
 "This was expected, but then let's do something more interesting. Use the dot "
 "product of X and the point, and add it to the dot product of Y and the point:"
 msgstr ""
+"이것은 예상된 것이지만, 좀 더 흥미로운 것을 해봅시다. X와 점의 외적에 Y와 점"
+"의 외적을 더해보는 것을 사용합시다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:106
 msgid ""
 "Then what we have is.. wait a minute, it's the ship in its design position!"
-msgstr ""
+msgstr "그럼 우리가 얻는 건.. 잠깐만, 우주선이 설계된 위치에 있습니다!"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:111
 msgid ""
 "How did this black magic happen? The ship was lost in space, and now it's "
 "back home!"
 msgstr ""
+"어떻게 이런 일이 일어난거죠? 우주선을 우주에서 잃어버렸는데 지금은 돌아왔어"
+"요!"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:114
 msgid ""
@@ -39504,6 +39755,11 @@ msgid ""
 "a direction or plane was one of the uses for the dot product. This was "
 "enough to obtain back the design coordinates for every point in the ship."
 msgstr ""
+"이상하게 보일지 모르지만, 그것은 많은 논리를 가지고 있습니다. \"ref:"
+"doc_vector_math\"에서 보았던 바와 같이 X축까지의 거리와 Y축까지의 거리가 계산"
+"되었다는 것을 기억하세요. 방향 또는 평면에서 거리를 계산하는 것은 외적을 사용"
+"하는 방법 중 하나입니다. 이것은 우주선 안의 모든 지점에 대한 설계 좌표를 다"
+"시 얻기에 충분했습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:121
 msgid ""
@@ -39511,6 +39767,8 @@ msgid ""
 "*Oriented Coordinate System*. X an Y are the **Basis**, and *Origin* is the "
 "offset."
 msgstr ""
+"지금까지 X, Y, 원점과 함께 작업한 것은 *지향적 좌표계*입니다. X, Y는 "
+"**Basis**이고 *원점*은 오프셋입니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:128
 msgid ""
@@ -39519,6 +39777,9 @@ msgid ""
 "is why it's called *Origin*, But in practice, it's just an offset to the new "
 "position."
 msgstr ""
+"우리는 원점이 무엇인지 압니다. 그것은 설계 좌표계의 0,0(원래)이 새로운 위치"
+"로 변환된 후에 종료되는 곳입니다. 이것이 바로 *원점*이라고 불리는 이유지만 실"
+"제로는 새로운 위치로의 상쇄에 불과합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:133
 msgid ""
@@ -39528,12 +39789,18 @@ msgid ""
 "original X and Y axes of your design are *right here*, pointing towards "
 "*these directions*.\""
 msgstr ""
+"기저는 더 흥미롭다. 기저는 새로운 변환된 위치에서 OCS의 X와 Y의 방향입니다. "
+"그것은 2D나 3D로 무엇이 바뀌었는지 말해줍니다. 원점(오프셋)과 베이스(방향)는 "
+"\"너의 설계된 원래 X와 Y 축은 바로 *여기에 있어* *이러한 방향*을 가리킵니다."
+"\""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:139
 msgid ""
 "So, let's change the representation of the basis. Instead of 2 vectors, "
 "let's use a *matrix*."
 msgstr ""
+"그러면, 기저의 표현을 바꿔보겠습니다. 2개의 벡터 대신에 *matrix*를 사용합니"
+"다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:144
 msgid ""
@@ -39541,10 +39808,12 @@ msgid ""
 "is that.. what is this matrix thing? Well, we'll assume you've never heard "
 "of a matrix."
 msgstr ""
+"벡터는 위쪽에 수평으로 있습니다. 다음 문제는.. 이 매트릭스란 무엇인가? 음, 우"
+"리는 당신이 매트릭스에 대해 들어본 적이 없다고 가정하겠습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:149
 msgid "Transforms in Godot"
-msgstr ""
+msgstr "Godot 에서의 변환"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:151
 msgid ""
@@ -39553,6 +39822,9 @@ msgid ""
 "be a lot simpler to understand after completing this tutorial. We'll just "
 "explain how to use transforms."
 msgstr ""
+"본 튜토리얼에서는 행렬 수학(및 그 연산)을 실제로 사용하기만 하고 자세히 설명"
+"하지는 않습니다. 이 튜토리얼을 완수한 후 이해하기 훨씬 더 간단할 수 있습니"
+"다. 변환 사용법에 대해 설명하겠습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:159
 msgid ""
@@ -39561,32 +39833,37 @@ msgid ""
 "and \"Origin\" is element 2. It's not divided in basis/origin for "
 "convenience, due to its simplicity."
 msgstr ""
+"ref=class_Transform2D는 3x2 행렬입니다. 이것은 3Vector2 원소들이 있고 2D에 사"
+"용됩니다. \"X\" 축은 원소 0, \"Y\" 축은 원소 1이고 \"원점\"은 요소 2입니다. "
+"단순성 때문에 편의상 기저/원점으로 구분되지 않습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:179
 msgid ""
 "Most operations will be explained with this datatype (Transform2D), but the "
 "same logic applies to 3D."
 msgstr ""
+"대부분의 연산들은 이 데이터 타입(Transform2D)으로 설명되지만 3D에도 동일한 논"
+"리가 적용됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:183
 msgid "Identity"
-msgstr ""
+msgstr "항등성"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "An important transform is the \"identity\" matrix. This means:"
-msgstr ""
+msgstr "중요한 변환은 항등행렬이다. 이것의 의미는:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid "'X' Points right: Vector2(1,0)"
-msgstr ""
+msgstr "X점 오른쪽: 벡터2(1.0)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:188
 msgid "'Y' Points up (or down in pixels): Vector2(0,1)"
-msgstr ""
+msgstr "'Y' 점 위(또는 픽셀 단위 아래): Vector2(0,1)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:189
 msgid "'Origin' is the origin Vector2(0,0)"
-msgstr ""
+msgstr "'원점'은 원점 벡터2(0,0)입니다"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:193
 msgid ""
@@ -39594,28 +39871,32 @@ msgid ""
 "the transform to its parent coordinate system. It's an *OCS* that hasn't "
 "been translated, rotated or scaled."
 msgstr ""
+"*항등* 행렬은 상위 좌표계에 대한 변환을 조정하는 행렬일 뿐입니다. *OCS*는 변"
+"환, 회전 또는 스케일링되지 않았습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid "Operations"
-msgstr ""
+msgstr "연산"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid "Rotating Transform2D is done by using the \"rotated\" function:"
-msgstr ""
+msgstr "Rotated(회전) 기능을 사용하여 Transform2D를 회전합니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241
 msgid "Translation"
-msgstr ""
+msgstr "변환"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:243
 msgid ""
 "There are two ways to translate a Transform2D, the first one is moving the "
 "origin:"
 msgstr ""
+"Transform2D를 변환하는 두 가지 방법이 있습니다. 첫 번째 방법은 원점을 이동하"
+"는 것입니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:263
 msgid "This will always work in global coordinates."
-msgstr ""
+msgstr "이 기능은 항상 전반적인 좌표에 적용됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:265
 msgid ""
@@ -39623,27 +39904,30 @@ msgid ""
 "(towards where the *basis* is oriented), there is the :ref:`Transform2D."
 "translated() <class_Transform2D_translated>` method:"
 msgstr ""
+"대신 행렬의 *로컬* 좌표에 변환을 원하는 경우(*기저가 있는 위치), :ref:"
+"\"Transform2D.translated() <class_Transform2D_translated>`방법이 있다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:287
 msgid ""
 "You could also transform the global coordinates to local coordinates "
 "manually:"
-msgstr ""
+msgstr "전역 좌표를 수동으로 로컬 좌표로 변환할 수도 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:298
 msgid ""
 "But even better, there are helper functions for this as you can read in the "
 "next sections."
 msgstr ""
+"더군다나, 다음 섹션에서 읽을 수 있는 것처럼 이것에 대한 도우미 기능도 있다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:301
 msgid "Local to global coordinates and vice versa"
-msgstr ""
+msgstr "로컬에서 글로벌 좌표로 또는 그 반대로"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:303
 msgid ""
 "There are helper methods for converting between local and global coordinates."
-msgstr ""
+msgstr "로컬 좌표와 전역 좌표 사이를 변환하는 도우미 방법이 있습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:305
 msgid ""
@@ -39652,6 +39936,10 @@ msgid ""
 "to_local() <class_Spatial_to_local>` and :ref:`Spatial.to_global() "
 "<class_Spatial_to_global>` for 3D."
 msgstr ""
+"2D를 위한 것에는 :ref:`Node2D.to_local() <class_Node2D_to_local>` and :ref:"
+"`Node2D.to_global() <class_Node2D_to_global>` , 뿐만아니라 3D를 위한 :ref:"
+"`Spatial.to_local() <class_Spatial_to_local>` and :ref:`Spatial.to_global() "
+"<class_Spatial_to_global>` 방법들이 있다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:311
 msgid ""
@@ -39659,6 +39947,8 @@ msgid ""
 "vector (X vector by x component of the scale, Y vector by y component of the "
 "scale). It will leave the origin alone:"
 msgstr ""
+"행렬도 스케일링할 수 있습니다. 스케일링은 기저에 벡터를 곱할 것입니다(스케일"
+"링의 X 성분별 X 벡터, 스케일의 y 성분별 Y 벡터). 원점은 그대로 둡니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:330
 msgid ""
@@ -39666,6 +39956,9 @@ msgid ""
 "starts relative to the previous one. For those who have been living on this "
 "planet long enough, a good reference of how transform works is this:"
 msgstr ""
+"이런 종류의 행렬에서의 연산들은 축적되어 있습니다. 이것은 모든 사람들이 이전 "
+"것과 비교하여 시작한다는 것을 의미합니다. 이 지구에서 충분히 오래 살아온 사람"
+"들에게, 변환이 어떻게 작용하는지에 대한 좋은 참조는 다음과 같습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:337
 msgid ""
@@ -39673,6 +39966,9 @@ msgid ""
 "inside (and you are likely learning this many years *after* discovering "
 "Santa is not real)."
 msgstr ""
+"행렬은 거북이와 비슷하게 사용됩니다. 거북이는 안에 행렬을 가지고 있을 가능성"
+"이 높습니다. (그리고 여러분은 산타는 진짜가 아니라는 것을 알게 된 후 수년 동"
+"안 이 사실을 배우게 될 것입니다)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:344
 msgid ""
@@ -39680,50 +39976,58 @@ msgid ""
 "position (either 2D or 3D) from \"designer\" coordinate system to the OCS, "
 "the \"xform\" method is used."
 msgstr ""
+"변환은 좌표계 사이를 전환하는 행위입니다. 위치(2D 또는 3D)를 \"설계자\" 좌표"
+"계에서 OCS로 변환하려면 \"xform\" 방법을 사용합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:357
 msgid "And only for basis (no translation):"
-msgstr ""
+msgstr "그리고 오직 기저를 위한(변환 없음):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:369
 msgid "Inverse transform"
-msgstr ""
+msgstr "역변환"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:371
 msgid ""
 "To do the opposite operation (what we did up there with the rocket), the "
 "\"xform_inv\" method is used:"
 msgstr ""
+"반대되는 연산을 하기 위해 (우리가 위에서 로켓 가지고 했던 것) \"xform_inv\" "
+"방법이 사용됩니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid "Only for Basis:"
-msgstr ""
+msgstr "기저에만 해당:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:395
 msgid "Orthonormal matrices"
-msgstr ""
+msgstr "직교 행렬"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "However, if the matrix has been scaled (vectors are not unit length), or the "
 "basis vectors are not orthogonal (90°), the inverse transform will not work."
 msgstr ""
+"그러나 만약 행렬의 벡터가 단위 길이가 아니거나 기본 벡터가 직교(90°)가 아닌 "
+"경우 역변환이 작동하지 않습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:401
 msgid ""
 "In other words, inverse transform is only valid in *orthonormal* matrices. "
 "For this, these cases an affine inverse must be computed."
 msgstr ""
+"즉, 역변환은 *직교* 행렬에서만 유효합니다.  이러한 경우, 아핀 역을 계산해야"
+"만 한다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:404
 msgid ""
 "The transform, or inverse transform of an identity matrix will return the "
 "position unchanged:"
-msgstr ""
+msgstr "항등 행렬의 변환 또는 역 변환은 위치를 변경하지 않고 반환합니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:419
 msgid "Affine inverse"
-msgstr ""
+msgstr "아핀 역"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:421
 msgid ""
@@ -39732,25 +40036,27 @@ msgid ""
 "orthogonal. The affine inverse is calculated with the affine_inverse() "
 "method:"
 msgstr ""
+"아핀 역은 행렬에 축척이 있거나 축 벡터가 직교하지 않더라도 다른 행렬의 역 연"
+"산을 수행하는 행렬입니다. 아핀 역은 the affine_inverse() 방법으로 계산됩니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid "If the matrix is orthonormal, then:"
-msgstr ""
+msgstr "만약 행렬이 직교한다면:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid "Matrix multiplication"
-msgstr ""
+msgstr "행렬 곱"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:461
 msgid ""
 "Matrices can be multiplied. Multiplication of two matrices \"chains"
 "\" (concatenates) their transforms."
-msgstr ""
+msgstr "행렬은 곱해질 수 있습니다. 두 행렬의 곱은 그들의 변환을 연결합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:464
 msgid ""
 "However, as per convention, multiplication takes place in reverse order."
-msgstr ""
+msgstr "그러나 관례에 따라 곱은 역순으로 진행됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:467
 #: ../../docs/tutorials/io/background_loading.rst:268
@@ -39759,79 +40065,86 @@ msgstr ""
 #: ../../docs/tutorials/platform/services_for_ios.rst:250
 #: ../../docs/community/contributing/code_style_guidelines.rst:150
 msgid "Example:"
-msgstr ""
+msgstr "예:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:478
 msgid "To make it a little clearer, this:"
-msgstr ""
+msgstr "조금 더 깔끔하게 만들면, 이것이다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:491
 msgid "Is the same as:"
-msgstr ""
+msgstr "이것은 다음과 같다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:504
 msgid "However, this is not the same:"
-msgstr ""
+msgstr "그러나 이것은 같지 않다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:517
 msgid "Because in matrix math, A * B is not the same as B * A."
-msgstr ""
+msgstr "왜냐하면 행렬 연산에서, A*B는 B*A와 같지 않다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:520
 msgid "Multiplication by inverse"
-msgstr ""
+msgstr "역 곱하기"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:522
 msgid "Multiplying a matrix by its inverse, results in identity:"
-msgstr ""
+msgstr "행렬에 그것의 역을 곱하는 것의 결과는 그것의 항등행렬이다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid "Multiplication by identity"
-msgstr ""
+msgstr "항등행렬 곱하기"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:538
 msgid "Multiplying a matrix by identity, will result in the unchanged matrix:"
-msgstr ""
+msgstr "항등행렬을 행렬에 곱하면 결과는 원래 행렬에서 변화가 없을 것이다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:552
 msgid "Matrix tips"
-msgstr ""
+msgstr "행렬 팁"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:554
 msgid ""
 "When using a transform hierarchy, remember that matrix multiplication is "
 "reversed! To obtain the global transform for a hierarchy, do:"
 msgstr ""
+"변환 층을 사용할 때 행렬 곱셈이 반전된다는 점을 기억하세요! 층에 대한 전역 변"
+"환을 얻으려면 다음을 수행합니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:566
 msgid "For 3 levels:"
-msgstr ""
+msgstr "3단계:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:577
 msgid ""
 "To make a matrix relative to the parent, use the affine inverse (or regular "
 "inverse for orthonormal matrices)."
 msgstr ""
+"상위에 상대적인 행렬을 만들려면 항렬 역(또는 직교 행렬의 경우 정규 역)을 사용"
+"합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:591
 msgid "Revert it just like the example above:"
-msgstr ""
+msgstr "위의 예와 같이 되돌리시오:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:604
 msgid ""
 "OK, hopefully this should be enough! Let's complete the tutorial by moving "
 "to 3D matrices."
 msgstr ""
+"좋아요, 이 정도면 됐어요! 튜토리얼을 완료하고 3D 행렬로 이동하겠습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:608
 msgid "Matrices & transforms in 3D"
-msgstr ""
+msgstr "3D에서의 행렬과 변환"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:610
 msgid ""
 "As mentioned before, for 3D, we deal with 3 :ref:`Vector3 <class_Vector3>` "
 "vectors for the rotation matrix, and an extra one for the origin."
 msgstr ""
+"앞서 언급한 바와 같이 3D의 경우 :ref:`Vector3 <class_Vector3>`  회전 행렬용 "
+"벡터 3개와 원점용 벡터 1개를 추가로 취급합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:616
 msgid ""
@@ -39839,22 +40152,25 @@ msgid ""
 "It can be used to represent a 3D rotation and scale. Sub vectors can be "
 "accessed as:"
 msgstr ""
+"고도는 3x3 매트릭스의 특별한 유형을 가지고 있습니다. 이름 :ref:`Basis "
+"<class_basis>`. 이것은 3D 회전 및 스케일을 나타내는 데 사용할 수 있습니다. 다"
+"음과 같이 하위 벡터에 액세스할 수 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:635
 msgid "Or, alternatively as:"
-msgstr ""
+msgstr "또는 대신에:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:652
 msgid "The Identity Basis has the following values:"
-msgstr ""
+msgstr "항등 기저는 다음과 같은 값을 가집니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:656
 msgid "And can be accessed like this:"
-msgstr ""
+msgstr "다음과 같이 접근할 수 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:680
 msgid "Rotation in 3D"
-msgstr ""
+msgstr "3D에서의 회전"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:682
 msgid ""
@@ -39862,36 +40178,45 @@ msgid ""
 "same), because rotation is an implicit 2D operation. To rotate in 3D, an "
 "*axis*, must be picked. Rotation, then, happens around this axis."
 msgstr ""
+"3D에서의 회전은 암시적인 2D 연산이므로 3D 회전은 2D보다 더 복잡합니다(변환 "
+"및 배율은 동일). 3D로 회전하려면 *축*을 선택해야 합니다. 그런 다음 이 축을 중"
+"심으로 회전합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:686
 msgid ""
 "The axis for the rotation must be a *normal vector*. As in, a vector that "
 "can point to any direction, but length must be one (1.0)."
 msgstr ""
+"회전 축은 *법선 벡터*이어야 합니다. 임의의 방향을 가리킬 수 있지만 길이는 하"
+"나(1.0)여야 합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 msgid ""
 "To add the final component to the mix, Godot provides the :ref:`Transform "
 "<class_Transform>` type. Transform has two members:"
 msgstr ""
+"믹스에 최종 구성요소를 추가하기 위해 고도는 :ref:\"Transform "
+"<class_Transform> 유형을 제공합니다. Transform에는 두 개의 멤버가 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:708
 msgid "*basis* (of type :ref:`Basis <class_Basis>`)"
-msgstr ""
+msgstr "*기저* (of type :ref:`Basis <class_Basis>`)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:709
 msgid "*origin* (of type :ref:`Vector3 <class_Vector3>`)"
-msgstr ""
+msgstr "*원점*(of type :ref:`Vector3 <class_Vector3>`)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:711
 msgid ""
 "Any 3D transform can be represented with Transform, and the separation of "
 "basis and origin makes it easier to work translation and rotation separately."
 msgstr ""
+"모든 3D 변환은 Transform(변환)으로 나타낼 수 있으며, 기준 및 원점을 분리하면 "
+"변환 및 회전을 개별적으로 더 쉽게 수행할 수 있습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:715
 msgid "An example:"
-msgstr ""
+msgstr "예:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:4
 msgid "Introduction to the 2D animation features"
@@ -47296,7 +47621,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Class"
-msgstr ""
+msgstr "클래스"
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Operator"

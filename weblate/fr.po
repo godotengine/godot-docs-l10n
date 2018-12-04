@@ -6,6 +6,7 @@
 # Alexis Huvier <lavapower84@gmail.com>, 2018.
 # Antoine Carrier <ac.g392@gmail.com>, 2018.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
+# Benjamin Dambrine <Scozor@hotmail.com>, 2018.
 # benjamin thilliez <benjamin.thilliez@gmx.com>, 2018.
 # Bresere <berserk172.cl215@gmail.com>, 2018.
 # Brice Lobet <tempo.data@gmail.com>, 2018.
@@ -43,6 +44,7 @@
 # Philippe Gervaise <blah@malvese.org>, 2018.
 # Pierre <ghueldre.pierre@laposte.net>, 2018.
 # rawida <rawida@tempinbox.com>, 2018.
+# Rémi Bintein <reminus5@hotmail.fr>, 2018.
 # Rémi Verschelde <rverschelde@gmail.com>, 2018.
 # rc183 <rc183@keemail.me>, 2018.
 # Sagi <tanguy1.husseini@gmail.com>, 2018.
@@ -62,8 +64,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-11-20 12:09+0100\n"
-"PO-Revision-Date: 2018-11-18 17:07+0000\n"
-"Last-Translator: Ewan Lehnebach <ewan.lehnebach@gmail.com>\n"
+"PO-Revision-Date: 2018-12-03 06:42+0000\n"
+"Last-Translator: Rémi Bintein <reminus5@hotmail.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -71,7 +73,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.3\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -96,9 +98,10 @@ msgid ""
 "offer."
 msgstr ""
 "Bienvenue dans la documentation officielle de Godot Engine, le moteur de jeu "
-"2D et 3D à code source ouvert et gratuit ! Si vous êtes nouv·elle·eau, nous "
-"vous recommandons de lire la :ref:`page d'introduction <doc_about_intro>` "
-"pour avoir un aperçu de ce que cette documentation a à offrir."
+"2D et 3D à code source ouvert et gratuit ! Si c'est votre première visite, "
+"nous vous recommandons de lire la :ref:`page d'introduction "
+"<doc_about_intro>` pour avoir un aperçu de ce que cette documentation a à "
+"offrir."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -259,8 +262,8 @@ msgid ""
 "contents of this documentation, so that you know where to start if you are a "
 "beginner or where to look if you need info on a specific feature."
 msgstr ""
-"Le but de cette page, est de présenter globalement le moteur et le contenu "
-"de cette documentation, pour que vous sachiez où commencer ou bien, pour "
+"Le but de cette page est de présenter globalement le moteur et le contenu de "
+"cette documentation, pour que vous sachiez où commencer, ou bien pour "
 "trouver des détails sur une fonctionnalité précise."
 
 #: ../../docs/about/introduction.rst:21
@@ -352,10 +355,10 @@ msgid ""
 "docs/>`_."
 msgstr ""
 "Vous pouvez contribuer à la documentation de Godot en ouvrant des tickets ou "
-"en envoyant des patchs via des requêtes pull sur son dépôt GitHub `source "
-"repository <https://github.com/godotengine/godot-docs>`_, ou en la "
-"traduisant dans votre langue sur `Hosted Weblate <https://hosted.weblate.org/"
-"projects/godot-engine/godot-docs/>`_."
+"en envoyant des patchs via des requêtes pull sur son dépôt GitHub `source de "
+"dépôt <https://github.com/godotengine/godot-docs>`_, ou en la traduisant "
+"dans votre langue sur `Hosted Weblate <https://hosted.weblate.org/projects/"
+"godot-engine/godot-docs/>`_."
 
 #: ../../docs/about/introduction.rst:61
 msgid ""
@@ -715,12 +718,12 @@ msgid ""
 "`GDScript scripting guide <gdscript_basics>`_."
 msgstr ""
 "GDScript est le langage de scripting intégré à Godot. Il a été conçu à "
-"partir de zéro pour être expressif, permettant aux développeu·se·r·s novices "
-"et expert·e·s de s'appuyer sur les atouts de Godot aussi vite que possible. "
-"Si vous avez déjà utilisé le langage Python auparavant, vous ne serez pas "
-"dépaysé·e. Des exemples, l'historique et un aperçu complet de la puissance "
-"offerte par GDScript sont disponibles dans le `manuel GDScript "
-"<gdscript_basics>`_."
+"partir de zéro pour être expressif, permettant aux développeuses et "
+"développeurs de tous niveaux d'expertise de s'appuyer sur les atouts de "
+"Godot aussi vite que possible. Si vous avez déjà utilisé Python ou un "
+"langage similaire auparavant, vous devriez vous y retrouver rapidement. Des "
+"exemples, l'historique et un aperçu complet de la puissance offerte par "
+"GDScript sont disponibles dans le `manuel GDScript <gdscript_basics>`_."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -751,13 +754,12 @@ msgstr ""
 "part, réduire le temps nécessaire pour la prise en main de Godot, avec une "
 "attention particulière accordée à la productivité, d'autre part faciliter la "
 "maintenance, réduire le nombre de classes d'erreurs, et permettre aux "
-"développeu·se·r·s du moteur de jeu de se concentrer sur la résolution de "
-"bugs et l'amélioration de fonctionnalités, au lieu de devoir passer beaucoup "
-"de temps à porter un nombre restreint de fonctionnalités sur de nombreux "
-"langages de programmation."
+"développeuses et développeurs du moteur de jeu de se concentrer sur la "
+"résolution de bugs et l'amélioration de fonctionnalités, au lieu de devoir "
+"passer beaucoup de temps à porter un nombre restreint de fonctionnalités sur "
+"de nombreux langages de programmation."
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -769,9 +771,9 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Godot étant un projet Open Source, il était impératif de prioriser dès le "
-"départ une expérience de développement plus intégrée et unie plutôt que "
-"d'attirer plus d'utilisat·eur·rice·s en ajoutant le support de langages de "
+"Godot étant un logiciel libre, il était impératif de prioriser dès le départ "
+"une expérience de développement plus intégrée et unie plutôt que d'attirer "
+"plus d'utilisatrices et d'utilisateurs en ajoutant le support de langages de "
 "programmation plus familiers -- tout particulièrement quand le support de "
 "ces langages aurait résulté en une expérience plus désagréable du moteur. "
 "Nous comprendrions si vous préfériez utiliser un autre langage dans Godot "
@@ -1109,8 +1111,8 @@ msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
-"Super ! Étant un projet open source, Godot progresse grâce aux améliorations "
-"et innovations apportées par des développeu·se·r·s comme vous."
+"Super ! En tant que logiciel libre, Godot progresse grâce aux améliorations "
+"et innovations apportées par des développeuses et développeurs comme vous."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -1160,8 +1162,8 @@ msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
-"La plupart des développeu·se·r·s de la communauté Godot seront plus "
-"intéressé·e·s par des suggestions comme :"
+"La plupart des développeuses et développeurs de la communauté préféreront "
+"entendre parler de :"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
@@ -1805,12 +1807,11 @@ msgstr ""
 "\"Hello World\". Ceci nous initie à l'utilisation de l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-#, fuzzy
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"Si vous lancer l'exécutable godot en dehors d'un projet, le Project Manager "
+"Si vous lancer l'exécutable Godot en dehors d'un projet, le Project Manager "
 "apparaît. Cela aide les développeurs à gérer leurs projets."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
@@ -1917,7 +1918,6 @@ msgid "Aaaand... Oops."
 msgstr "Eeeeet... Oups."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
-#, fuzzy
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
@@ -1996,7 +1996,6 @@ msgstr ""
 "projet. Essayez ceci maintenant."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
-#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
@@ -2277,13 +2276,13 @@ msgstr ""
 "gérer."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
-#, fuzzy
 msgid ""
 "A more flexible alternative to prefabs you might know from Unity (and much "
 "more powerful given that instances can be nested)."
 msgstr ""
-"Une alternative plus flexible aux prefabs (et beaucoup plus puissante étant "
-"donné que les instances peuvent être imbriquées)."
+"Une alternative plus flexible aux prefabs que vous connaissez d'Unity (et "
+"beaucoup plus puissante étant donné que les instances peuvent être "
+"imbriquées)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
@@ -4050,7 +4049,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:132
 msgid "Moving the player"
-msgstr "Déplacer læ joueu·se·r"
+msgstr "Déplacer le joueur"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid ""
@@ -14185,10 +14184,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:563
+#, fuzzy
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
 msgstr ""
+"Les types sont spécifiés dans la variable par un \":\" après le nom de la "
+"variable, suivi par le type."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:571
 msgid ""
@@ -14204,8 +14206,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:580
 #: ../../docs/tutorials/shading/shading_language.rst:27
+#, fuzzy
 msgid "Valid types are:"
-msgstr ""
+msgstr "Les types valides sont:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:582
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
@@ -14292,7 +14295,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:650
 msgid "Assigning a value of an incompatible type will raise an error."
-msgstr ""
+msgstr "Assigner une valeur à un type incompatible va générer une erreur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:653
 msgid "Enums"
@@ -14344,11 +14347,15 @@ msgstr ""
 "défaut est ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:696
+#, fuzzy
 msgid ""
 "Functions can also have type specification for the arguments and for the "
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
+"Les fonctions peuvent également avoir une spécification de type pour les "
+"arguments et pour les valeurs de retour. Les types peuvent être ajoutés aux "
+"arguments de la même manière que pour les variables::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:702
 msgid ""
@@ -14389,7 +14396,7 @@ msgid ""
 "another function or be returned from other functions. This is for "
 "performance reasons."
 msgstr ""
-"Contrairement à Python, les fonctions ne sont *pas* des objets de première "
+"Contrairement au Python, les fonctions ne sont *pas* des objets de première "
 "classe dans GDScript. Cela signifie qu'elles ne peuvent pas être stockées "
 "dans des variables, passées en argument à une autre fonction ou être "
 "renvoyées par d'autres fonctions. Ceci pour des raisons de performance."
@@ -14512,7 +14519,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:852
 msgid "Basic syntax:"
-msgstr "Syntaxe de base :"
+msgstr "Syntaxe de base:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:865
 msgid "**Crash-course for people who are familiar to switch statements**:"
@@ -14520,12 +14527,14 @@ msgstr ""
 "**Cours rapide pour ceux qui sont familiers avec les instructions switch** :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
+#, fuzzy
 msgid "Replace ``switch`` with ``match``"
-msgstr "Remplacez ``switch`` avec ``match``"
+msgstr "Remplace ``switch`` avec ``match``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
+#, fuzzy
 msgid "Remove ``case``"
-msgstr "Enlevez ``case``"
+msgstr "Enlever ``case``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
 msgid ""
@@ -14536,8 +14545,9 @@ msgstr ""
 "pouvez utiliser ``continue`` pour poursuivre l’exécution de ``match``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
+#, fuzzy
 msgid "Change ``default`` to a single underscore."
-msgstr "Remplacez ``default`` par un simple underscore (_)."
+msgstr "Remplacer ``default`` par un simple underscore (_)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:873
 msgid "**Control flow**:"
@@ -29998,7 +30008,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:70
 msgid "Reflections"
-msgstr ""
+msgstr "Réflexions"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:72
 msgid ""
@@ -30035,7 +30045,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:100
 msgid "Tweaking"
-msgstr ""
+msgstr "Ajustement"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:102
 msgid "GI Probes support a few parameters for tweaking:"
@@ -30081,7 +30091,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:115
 msgid "Quality"
-msgstr ""
+msgstr "Qualité"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:117
 msgid ""
@@ -50830,7 +50840,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Class"
-msgstr ""
+msgstr "Classe :"
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Operator"
@@ -67184,14 +67194,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/content/3d/index.rst:2
-#, fuzzy
 msgid "Creating 3D content"
-msgstr "Création de nœuds"
+msgstr "Création de contenu 3D"
 
 #: ../../docs/content/3d/making_trees.rst:4
-#, fuzzy
 msgid "Making trees"
-msgstr "Chargement de scènes"
+msgstr "Créer des arbres"
 
 #: ../../docs/content/3d/making_trees.rst:6
 msgid ""
@@ -67206,12 +67214,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/content/3d/making_trees.rst:13
+#, fuzzy
 msgid "Start with a tree"
-msgstr ""
+msgstr "Commencer avec un arbre"
 
 #: ../../docs/content/3d/making_trees.rst:15
 msgid "I took this tree from SketchFab:"
-msgstr ""
+msgstr "J'ai utilisé cet arbre qui provient de SketchFab :"
 
 #: ../../docs/content/3d/making_trees.rst:19
 msgid "https://sketchfab.com/models/ea5e6ed7f9d6445ba69589d503e8cebf"
@@ -67219,7 +67228,7 @@ msgstr ""
 
 #: ../../docs/content/3d/making_trees.rst:21
 msgid "and opened it in Blender."
-msgstr ""
+msgstr "Et ouvrez le dans Blender."
 
 #: ../../docs/content/3d/making_trees.rst:24
 #, fuzzy

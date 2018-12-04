@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-11-20 12:09+0100\n"
-"PO-Revision-Date: 2018-11-18 17:07+0000\n"
-"Last-Translator: DarkerBit <mail.darkerbit@gmail.com>\n"
+"PO-Revision-Date: 2018-11-26 14:08+0000\n"
+"Last-Translator: Tapani Niemi <tapani.niemi@kapsi.fi>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -494,7 +494,7 @@ msgstr ""
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
-msgstr "Katso myös `Godotin lisenssi-sivu<https://godotengine.org/license>`_."
+msgstr "Katso myös `Godotin lisenssi-sivu <https://godotengine.org/license>`_."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
@@ -509,7 +509,6 @@ msgid "Windows"
 msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
-#, fuzzy
 msgid "macOS"
 msgstr "macOS"
 
@@ -3316,17 +3315,17 @@ msgid ""
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"Signaalit ovat Godotin versio *tarkkalija*-mallista. Ne antavat solmujen "
-"lähettää viestejä muille solmuille, jotka voivat sitten odottaa sitä ja "
-"vastata sille. Esimerkiksi, jatkuvasti tarkistamisen onko painike painettu "
-"sijasta painike voi lähettää signaalin kun se on painettu."
+"Signaalit ovat Godotin versio *tarkkailija*-mallista. Ne antavat solmun "
+"lähettää viestejä, joita muut solmut voivat kuunnella ja joihin ne voivat "
+"vastata. Esimerkiksi sen sijaan, että tarkistaisi jatkuvasti onko painiketta "
+"painettu, painike voi lähettää signaalin kun sitä on painettu."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"Voit lukea lisää tarkkailijamallistä täällä: http://gameprogrammingpatterns."
+"Voit lukea lisää tarkkailijamallista täällä: http://gameprogrammingpatterns."
 "com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
@@ -32831,7 +32830,7 @@ msgid ""
 "Let's look at ``body_entered_vision`` next, and thankfully it is rather "
 "short."
 msgstr ""
-"Vilkaistaan ``body_entered_vision`` tekstiä seuraavaksi, onneksemme se on "
+"Vilkaistaan seuraavaksi ``body_entered_vision`` tekstiä, onneksemme se on "
 "melko lyhyt."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:883

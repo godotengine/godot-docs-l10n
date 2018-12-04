@@ -21,6 +21,7 @@
 # Franco F <ezefran256@gmail.com>, 2018.
 # Hernan Campillo Mecklenburg <hcampillo.88@gmail.com>, 2018.
 # Hernan Prado <pradoh97@gmail.com>, 2018.
+# Hisonic <nosoyhackercodigo@gmail.com>, 2018.
 # Javier López Úbeda <jlopezcur@gmail.com>, 2018.
 # Javier Ocampos <xavier.ocampos@gmail.com>, 2018.
 # Joaquin Bozzalla <joaco.mbb@gmail.com>, 2018.
@@ -58,8 +59,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-11-20 12:09+0100\n"
-"PO-Revision-Date: 2018-11-07 15:09+0000\n"
-"Last-Translator: Julio Rolandi <julio.rolandi@gmail.com>\n"
+"PO-Revision-Date: 2018-12-04 22:23+0000\n"
+"Last-Translator: Elena G <elena.guzbla@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -67,7 +68,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -116,11 +117,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
-"Godot Engine es un proyecto de código abierto desarrollado por una comunidad "
-"de voluntarios. El equipo de documentación siempre puede utilizar tus "
-"comentarios y ayudar a mejorar los tutoriales y la referencia de la clase. "
-"Si no entiendes algo, o no encuentras lo que buscas en la documentación, "
-"¡ayúdanos a mejorarla haciéndonoslo saber!"
+"El motor Godot es un proyecto de código abierto desarrollado por una "
+"comunidad de voluntarios. El equipo de documentación siempre puede utilizar "
+"tus comentarios y ayudar a mejorar los tutoriales y la referencia de la "
+"clase. Si no entiendes algo, o no encuentras lo que buscas en la "
+"documentación, ¡ayúdanos a mejorarla haciéndonoslo saber!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -263,7 +264,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
-msgstr "Acerca de Godot Engine"
+msgstr "Acerca del Motor Godot"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -286,7 +287,7 @@ msgid ""
 "well as mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
 "Godot Engine es un motor de videojuegos multiplataforma, con múltiples "
-"características, para crear juegos 2d y 3d desde una interfaz unificada. "
+"características, para crear juegos 2D y 3D desde una interfaz unificada. "
 "Provee un conjunto exhaustivo de herramientas comunes, para que los usuarios "
 "puedan enfocarse en crear juegos sin tener que reinventar la rueda. Los "
 "juegos se pueden exportar en un sólo clic a numerosas plataformas, "
@@ -3550,18 +3551,20 @@ msgid ""
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
 "Ahora podemos reemplazar el código de relleno con cualquier código que "
-"querramos ejecutar cuando se reciba la señal. Hagamos que el sprite parpadee."
+"querramos ejecutar cuando se reciba la señal. Hagamos que el Sprite parpadee."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Ejecuta la escena y verás parpadear al Sprite a cada segundo. Puedes cambiar "
+"la propiedad *Wait Time* para cambiar el resultado de este."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
 #, fuzzy
 msgid "Connecting signals in code"
-msgstr "Conectar una Señal(Signal) a una Función"
+msgstr "Conectar una Señal (Signal) a una Función"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -3569,12 +3572,17 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"También puedes puedes hacer la conexión de señal (signal connection), en "
+"código en vez de usar el editor. Esto, por lo general, es necesario cuando "
+"estás creando nodos así que no puedes usar el editor para hacer la conexión."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Primero, desconecta la señal seleccionando la conexión en la pestaña \"Node"
+"\" del temporizador (Timer), y haz click en desconectar (disconnect)."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
@@ -3593,16 +3601,22 @@ msgstr "Itineradores personalizados"
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
+"También puedes declarar tu propia señal (signal), personalizada dentro de "
+"Godot:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
+#, fuzzy
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Una vez declarada, tu señal (signal), personalizada aparecerá en el "
+"Inspector y podrá ser conectada de la misma forma que las señales "
+"incorporadas en un nodo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
-msgstr ""
+msgstr "Para emitir una señal por código, usa la función ``emit``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
 #, fuzzy
@@ -3634,8 +3648,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
+#, fuzzy
 msgid "You could do this by adding the bullet directly:"
-msgstr ""
+msgstr "Tu podrías hacer esto directamente agregando la bala:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
 msgid ""
@@ -3656,9 +3671,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:247
-#, fuzzy
 msgid "Here is the code for the player using signals to emit the bullet:"
-msgstr "Este es el código para el jugador:"
+msgstr "Este es el código para el jugador usando señales para emitir la bala:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:290
 msgid ""
@@ -71825,8 +71839,9 @@ msgid "Some [code]monospace[/code] text."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:247
+#, fuzzy
 msgid "Some ``monospace`` text."
-msgstr ""
+msgstr "Algo de texto ``monospace``"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "[codeblock] [/codeblock]"
@@ -71871,6 +71886,10 @@ msgid ""
 "code on GitHub. Also, if you have doubts, feel free to ask on the `Q&A "
 "website <https://godotengine.org/qa/>`__ and on IRC (freenode, #godotengine)."
 msgstr ""
+"Aún puedes echar un vistazo a la implementación de los métodos en el código "
+"fuente de Godot en Github . También, si tienes alguna duda, siéntete libre "
+"de preguntar en el `apartado web Preguntas y Respuestas <https://godotengine."
+"org/qa/>`__ y en el IRC (freenode, #godotengine)."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:280
 msgid "Localization"
@@ -71920,6 +71939,7 @@ msgstr "Preguntas y respuestas"
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
 msgstr ""
+"`Preguntas y Respuestas de Godot Oficial <https://godotengine.org/qa/>`_"
 
 #: ../../docs/community/channels.rst:18
 msgid "IRC on Freenode"
