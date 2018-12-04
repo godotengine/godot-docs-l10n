@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,9 @@ msgid "Intro"
 msgstr "Introducción"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
+#, fuzzy
 msgid ""
-"In this tutorial you will connect a character to a life bar and animate the "
+"In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
 "En este tutorial conectarás un personaje a una barra de vida y animarás la "
@@ -110,14 +111,15 @@ msgid "To do this, we will use **signals**."
 msgstr "Para hacer esto, usaremos **señales**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
+#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
 "signal and receive the information. It's a powerful tool we use a lot for "
 "User Interface and achievement systems. You don't want to use them "
-"everywhere though. Connecting two nodes adds some coupling between them. "
+"everywhere, though. Connecting two nodes adds some coupling between them. "
 "When there's a lot of connections, they become hard to manage. For more "
-"information on check out the `signals video tutorial <https://youtu.be/"
+"information, check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
 "Las señales son la versión de Godot del patrón Observador. Nos permiten "
@@ -145,13 +147,14 @@ msgstr ""
 "and `end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
+#, fuzzy
 msgid ""
-"Load the ``start`` project in Godot. In the ``FileSystem`` dock double click "
-"on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 characters "
-"face each other. The pink enemy attacks and damages the green square at "
-"regular time intervals, until its death. Feel free to try out the game: the "
-"basic combat mechanics already work. But as the character isn't connected to "
-"the life bar the ``GUI`` doesn't do anything."
+"Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
+"click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
+"characters face each other. The pink enemy attacks and damages the green "
+"square at regular time intervals, until its death. Feel free to try out the "
+"game: the basic combat mechanics already work. But as the character isn't "
+"connected to the life bar, the ``GUI`` doesn't do anything."
 msgstr ""
 "Carga el proyecto ``start`` en Godot. En el panel ``Sistema de Archivos`` "
 "haz doble clic en LevelMockup.tscn para abrirlo. Es una maqueta de un juego "
@@ -188,9 +191,11 @@ msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "El árbol de escena, con la escena GUI puesto para mostrar sus hijos"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
+#, fuzzy
 msgid ""
-"The GUI scene encapsulates all of the Game User Interface. It comes with a "
-"barebones script where we get the path to nodes that exist inside the scene:"
+"The GUI scene encapsulates all of the game's Graphical User Interface. It "
+"comes with a barebones script where we get the path to nodes that exist "
+"inside the scene:"
 msgstr ""
 "La escena GUI encapsula toda la Interfaz de Usuario del Juego. Viene con un "
 "script básico donde obtenemos la ruta a los nodos que existen dentro de la "
@@ -453,11 +458,12 @@ msgstr ""
 "contents.html>`_ está disponible en línea de forma gratuita."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
+#, fuzzy
 msgid ""
-"With this in mind let's connect the ``GUI`` to the ``Player``. Click on the "
+"With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
-"and click on the Node tab. This is the place to connect nodes to listen the "
-"one you selected."
+"and click on the Node tab. This is the place to connect nodes to listen to "
+"the one you selected."
 msgstr ""
 "Con esto en mente, vamos a conectar el ``GUI`` con el ``Player``. Haz clic "
 "en el nodo ``Player`` del panel de escenas para seleccionarlo. Dirígete al "
@@ -569,10 +575,11 @@ msgstr ""
 "Godot escribe el método de devolución de llamada para ti y te lleva a él"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
+#, fuzzy
 msgid ""
 "Inside the parens after the function name, add a ``player_health`` argument. "
-"When the player emits the ``health_changed`` signal it will send its current "
-"``health`` alongside it. Your code should look like:"
+"When the player emits the ``health_changed`` signal, it will send its "
+"current ``health`` alongside it. Your code should look like:"
 msgstr ""
 "Dentro de los paréntesis después del nombre de la función, agregue un "
 "argumento ``player_health``. Cuando el jugador emite la señal "
@@ -580,11 +587,12 @@ msgstr ""
 "debería verse así:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
+#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
-"be using PascalCase for method names & camelCase for method parameters which "
-"follows the official `C# naming conventions. <https://docs.microsoft.com/en-"
-"us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
+"be using PascalCase for method names & camelCase for method parameters, "
+"which follows the official `C# naming conventions. <https://docs.microsoft."
+"com/en-us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
 "El motor no convierte PascalCase a snake_case, para ejemplos de C# usaremos "
 "PascalCase para nombres de métodos y camelCase para parámetros de métodos "
@@ -601,8 +609,9 @@ msgstr ""
 "envía su valor de salud"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
+#, fuzzy
 msgid ""
-"Inside ``_on_Player_health_changed`` let's call a second function called "
+"Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
 "Dentro de ``_on_Player_health_changed`` llamaremos a una segunda función "
@@ -653,9 +662,10 @@ msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr "establece el ``value`` de ``TextureProgress`` en ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
+#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
-"``Number``'s ``text`` property requires a string so we can't assign it to "
+"``Number``'s ``text`` property requires a string, so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
 "``str`` es una función incorporada que convierte cualquier valor en texto. "
@@ -687,11 +697,12 @@ msgid "Animate the loss of life with the Tween node"
 msgstr "Animar la pérdida de vida con el nodo Tween"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
+#, fuzzy
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
 "properties. ``Tween`` animates anything you'd like from a start to an end "
-"state over a certain duration. For example it can animate the health on the "
+"state over a certain duration. For example, it can animate the health on the "
 "``TextureProgress`` from its current level to the ``Player``'s new "
 "``health`` when the character takes damage."
 msgstr ""
@@ -898,7 +909,8 @@ msgstr ""
 "atractiva."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
-msgid "The animation is smooth but the number is broken"
+#, fuzzy
+msgid "The animation is smooth, but the number is broken"
 msgstr "La animación es suave pero el número está roto"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
@@ -916,7 +928,8 @@ msgid "Try the game again to see a nice blocky animation."
 msgstr "Intenta jugar de nuevo para ver una bonita animación de bloques."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
-msgid "By rounding out animated\\_health we hit two birds with one stone"
+#, fuzzy
+msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "Gracias a redondear animated\\_health matamos dos pájaros de un tiro"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
@@ -1020,10 +1033,11 @@ msgstr ""
 "shader y modificarlo usando un color mediante `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
-"interface. If we lower the alpha channel our interface fades out."
+"interface. If we lower the alpha channel, our interface fades out."
 msgstr ""
 "``modulate`` recibe un valor de ``Color`` con 4 canales: rojo, verde, azul y "
 "alfa. Si obscurecemos cualquiera de los tres primeros canales la interfaz se "
@@ -1064,8 +1078,9 @@ msgstr ""
 "``Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#, fuzzy
 msgid ""
-"This time we change the ``modulate`` property and have it animate from "
+"This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"

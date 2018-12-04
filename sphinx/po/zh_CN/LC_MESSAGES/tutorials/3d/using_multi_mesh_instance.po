@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:4
 msgid "Using MultiMeshInstance"
-msgstr ""
+msgstr "使用多网格实例"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:7
 msgid "Introduction"
@@ -36,6 +36,11 @@ msgid ""
 "favourable to rapid iterations. :ref:`MultiMeshInstance "
 "<class_MultiMeshInstance>` is one of the possible solutions to this problem."
 msgstr ""
+"在正常情况下，您将使用：ref：`MeshInstance <class_MeshInstance>`节点显示类似"
+"于主角的人体模型的3D网格，但在某些情况下，您希望创建同一网格的多个实例 一个场"
+"景。 您*可以*多次复制同一节点并手动调整转换。 这可能是一个繁琐的过程，结果看"
+"起来很机械。 而且，该方法不利于快速迭代。 ：ref：`MultiMeshInstance "
+"<class_MultiMeshInstance>`是这个问题的可能解决方案之一。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:18
 msgid ""
@@ -44,38 +49,42 @@ msgid ""
 "tree mesh populate a landscape mesh with trees of random scales and "
 "orientations."
 msgstr ""
+"MultiMeshInstance，顾名思义，在特定网格的表面上创建MeshInstance的多个副本。 "
+"一个例子是树形网格用随机比例和方向的树填充景观网格。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:23
 msgid "Setting up the nodes"
-msgstr ""
+msgstr "设置节点"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:25
 msgid ""
 "The basic setup requires three nodes: the MultiMeshInstance node and two "
 "MeshInstance nodes."
-msgstr ""
+msgstr "基本设置需要三个节点：MultiMeshInstance节点和两个MeshInstance节点。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:28
 msgid ""
 "One node is used as the target, the mesh that you want to place multiple "
 "meshes on. In the tree example, this would be the landscape."
-msgstr ""
+msgstr "一个节点用作目标，即要放置多个网格的网格。 在树的例子中，这将是景观。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:31
 msgid ""
 "Another node is used as the source, the mesh that you want to have "
 "duplicated. In the tree case, this would be the tree."
-msgstr ""
+msgstr "另一个节点用作源，即要复制的网格。 在树的情况下，这将是树。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:34
 msgid ""
 "In our example, we would use a :ref:`Node <class_Node>` as the root node of "
 "the scene. Your scene tree would look like this:"
 msgstr ""
+"在我们的示例中，我们将使用：ref：`Node <class_Node>`作为场景的根节点。 您的场"
+"景树看起来像这样："
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:39
 msgid "For simplification purposes, this tutorial uses built-in primitives."
-msgstr ""
+msgstr "出于简化目的，本教程使用内置基元。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:41
 msgid ""
@@ -84,41 +93,43 @@ msgid ""
 "``View``. Click it and select *Populate surface* in the dropdown menu. A new "
 "window titled *Populate MultiMesh* will pop up."
 msgstr ""
+"现在你准备好了一切。 选择MultiMeshInstance节点并查看工具栏，您应该在``View``"
+"旁边看到一个名为``MultiMesh``的额外按钮。 单击它并在下拉菜单中选择*填充曲面"
+"*。 将弹出一个名为* Populate MultiMesh *的新窗口。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:51
-#, fuzzy
 msgid "MultiMesh settings"
-msgstr "拉伸设置"
+msgstr "MultiMesh设置"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:53
 msgid "Below are descriptions of the options."
-msgstr ""
+msgstr "以下是选项说明。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:56
 msgid "Target Surface"
-msgstr ""
+msgstr "目标表面"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:57
 msgid ""
 "The mesh you would be using as the target surface for placing copies of you "
 "source mesh on."
-msgstr ""
+msgstr "您将用作目标曲面的网格，用于放置源网格的副本。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:61
 msgid "Source Mesh"
-msgstr ""
+msgstr "源网格"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:62
 msgid "The mesh you want duplicated on the target surface."
-msgstr ""
+msgstr "要在目标曲面上复制的网格。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:65
 msgid "Mesh Up Axis"
-msgstr ""
+msgstr "网格向上轴"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:66
 msgid "The axis used as the up axis of the source mesh."
-msgstr ""
+msgstr "轴用作源网格的上轴。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:69
 msgid "Random Rotation"
@@ -126,7 +137,7 @@ msgstr "随机旋转"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:70
 msgid "Randomizing the rotation around the mesh up axis of the source mesh."
-msgstr ""
+msgstr "随机围绕源网格的网格向上轴旋转。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:73
 msgid "Random Tilt"
@@ -134,7 +145,7 @@ msgstr "随机砖块"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:74
 msgid "Randomizing the overall rotation of the source mesh."
-msgstr ""
+msgstr "随机化源网格的整体旋转。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:77
 msgid "Random Scale"
@@ -142,24 +153,24 @@ msgstr "随机缩放"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:78
 msgid "Randomizing the scale of the source mesh."
-msgstr ""
+msgstr "随机化源网格的比例。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:81
 msgid "Scale"
-msgstr ""
+msgstr "规模"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:82
 msgid ""
 "The scale of the source mesh that will be placed over the target surface."
-msgstr ""
+msgstr "将放置在目标曲面上的源网格的比例。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:85
 msgid "Amount"
-msgstr ""
+msgstr "量"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:86
 msgid "The amount of mesh instances placed over the target surface."
-msgstr ""
+msgstr "放置在目标曲面上的网格实例数量。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:88
 msgid ""
@@ -169,11 +180,14 @@ msgid ""
 "source mesh will be placed over the target mesh. If you are satisfied with "
 "the result, you can delete the mesh instance used as the source mesh."
 msgstr ""
+"选择目标曲面。 在树情况下，这应该是横向节点。 源网格应该是树节点。 根据您的喜"
+"好调整其他参数。 按``Populate``，源网格的多个副本将放在目标网格上。 如果对结"
+"果满意，可以删除用作源网格的网格实例。"
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:94
 msgid "The end result should look like this:"
-msgstr ""
+msgstr "最终结果应如下所示："
 
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:98
 msgid "To change the result, repeat the same step with different parameters."
-msgstr ""
+msgstr "要更改结果，请使用不同的参数重复相同的步骤。"

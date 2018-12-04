@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,19 +30,21 @@ msgstr "노드와 리소스"
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
-"features rely on them. There is another datatype that is just as important: :"
+"features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
 "지금까지, :ref:`Nodes <class_Node>` 클래스는  Godot에서 가장 중요한 데이터 형"
-"식으로 엔진의 대부분의 기능이 이들에 의지된 것에 중점을 두었습니다. 이와 똑같"
-"이 중요한 데이터 형식이 있습니다: :ref:`Resource <class_Resource>`\\ 입니다."
+"식으로 엔진 내 대부분의 기능과 작동이 이것으로 이루어 졌다는 것에 초점을 두었"
+"습니다. 이와 똑같이 중요한 데이터 형식이 있습니다: :ref:`Resource "
+"<class_Resource>` 입니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
+#, fuzzy
 msgid ""
 "*Nodes* give you functionality: they draw sprites, 3D models, simulate "
-"physics, arrange user interface, etc. **Resources** are **data containers**. "
-"They don't do anything on their own: instead nodes use the data contained in "
-"resources."
+"physics, arrange user interfaces, etc. **Resources** are **data "
+"containers**. They don't do anything on their own: instead, nodes use the "
+"data contained in resources."
 msgstr ""
 "*노드*는 다음과 같은 기능을 제공합니다: 스프라이트를 그려주고 3D 모델링을 해"
 "주며 물리 시뮬레이션을 해주고, 유저 인터페이스 정리 등을 해줍니다.\n"
@@ -65,10 +67,11 @@ msgstr ""
 "ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
+#, fuzzy
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
 "copy of that resource is already in memory, trying to load the resource "
-"again will return the same copy every time. As resources only contain data "
+"again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
 "리소스가 디스크에서 불러올 때, **항상 한번만 불러옵니다**. 즉, 메모리에서 이"
@@ -77,9 +80,10 @@ msgstr ""
 "없습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
+#, fuzzy
 msgid ""
 "Every object, be it a Node or a Resource, can export properties. There are "
-"many types of Properties like String, integer, Vector2, etc., and any of "
+"many types of Properties, like String, integer, Vector2, etc., and any of "
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
@@ -115,17 +119,19 @@ msgstr ""
 "<class_Texture>` 가 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
+#, fuzzy
 msgid ""
-"Clicking the resource preview allows us to view and edit the resources "
+"Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr "리소스 미리보기를 클릭해서 리소스를 보고 속성을 편집합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
+#, fuzzy
 msgid ""
-"The path property tells us where the resource comes from. In this case it "
+"The path property tells us where the resource comes from. In this case, it "
 "comes from a PNG image called ``robi.png``. When the resource comes from a "
 "file like this, it is an external resource. If you erase the path or this "
-"path is empty, it becomes built-in resource."
+"path is empty, it becomes a built-in resource."
 msgstr ""
 "경로 속성은 리소스가 어디에서 오는지를 알려줍니다. 이 경우에 리소스는  "
 "``robi.png``\\ 라 부르는 PNG 이미지에서 왔습니다. 리소스가 이와 같은 파일에"
@@ -204,11 +210,12 @@ msgstr ""
 "로 반환합니다. 그런 뒤 이것을 다른 노드의 자식으로 추가할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
+#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` function is pretty fast, you can create new "
 "enemies, bullets, effects, etc. without having to load them again from disk "
-"each time. Remember that as always, images, meshes, etc. are all shared "
+"each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
 "이 접근은 여러 장점이 있습니다. :ref:`PackedScene.instance() "
@@ -250,8 +257,9 @@ msgstr ""
 "계산 메모리 관리를 상속합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
+#, fuzzy
 msgid ""
-"This comes with many distinct advantages over alternative data structures "
+"This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
 "as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`File "
 "<class_File>` to parse. What sets Resources apart is their inheritance of :"
@@ -447,8 +455,9 @@ msgstr ""
 "추가하는 간단한 플러그인을 제작합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
+#, fuzzy
 msgid ""
-"CurveTables are the same thing except mapped to an Array of float values or "
+"CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
 "CurveTables은 예외로 실수 값의 배열이나 :ref:`Curve <class_Curve>`/:ref:"

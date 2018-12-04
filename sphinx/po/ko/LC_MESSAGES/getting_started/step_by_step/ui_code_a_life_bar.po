@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,9 @@ msgid "Intro"
 msgstr "소개"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
+#, fuzzy
 msgid ""
-"In this tutorial you will connect a character to a life bar and animate the "
+"In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
 "이 튜토리얼에서는 우리는 캐릭터를 체력 막대와 연결하고 체력이 줄어드는 것을 "
@@ -109,14 +110,15 @@ msgid "To do this, we will use **signals**."
 msgstr "그러기 위해서, 우리는 **시그널(signals)** 을 사용할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
+#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
 "signal and receive the information. It's a powerful tool we use a lot for "
 "User Interface and achievement systems. You don't want to use them "
-"everywhere though. Connecting two nodes adds some coupling between them. "
+"everywhere, though. Connecting two nodes adds some coupling between them. "
 "When there's a lot of connections, they become hard to manage. For more "
-"information on check out the `signals video tutorial <https://youtu.be/"
+"information, check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
 "시그널은 옵저버 패턴의 Godot 버전입니다. 그들로 메시지를 전달할 수 있습니다. "
@@ -142,13 +144,14 @@ msgstr ""
 "zip 파일을 풀고 두 개의 폴더가 나옵니다: `start` 와 `end` 입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
+#, fuzzy
 msgid ""
-"Load the ``start`` project in Godot. In the ``FileSystem`` dock double click "
-"on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 characters "
-"face each other. The pink enemy attacks and damages the green square at "
-"regular time intervals, until its death. Feel free to try out the game: the "
-"basic combat mechanics already work. But as the character isn't connected to "
-"the life bar the ``GUI`` doesn't do anything."
+"Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
+"click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
+"characters face each other. The pink enemy attacks and damages the green "
+"square at regular time intervals, until its death. Feel free to try out the "
+"game: the basic combat mechanics already work. But as the character isn't "
+"connected to the life bar, the ``GUI`` doesn't do anything."
 msgstr ""
 "Godot에서 ``start`` 프로젝트를 불러옵니다. ``파일 시스템`` 독에서 "
 "LevelMockup.tscn을 더블 클릭해서 엽니다. 이것은 두 캐릭터가 마주 보고 있는 "
@@ -182,9 +185,11 @@ msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "GUI 씬이 자식으로 보이게 놓은 씬 트리"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
+#, fuzzy
 msgid ""
-"The GUI scene encapsulates all of the Game User Interface. It comes with a "
-"barebones script where we get the path to nodes that exist inside the scene:"
+"The GUI scene encapsulates all of the game's Graphical User Interface. It "
+"comes with a barebones script where we get the path to nodes that exist "
+"inside the scene:"
 msgstr ""
 "GUI 씬은 모든 게임 사용자 인터페이스를 캡슐화 합니다. 씬 안에 존재하는 노드"
 "의 경로를 얻는 스크립트와 함께 제공됩니다:"
@@ -428,11 +433,12 @@ msgstr ""
 "용할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
+#, fuzzy
 msgid ""
-"With this in mind let's connect the ``GUI`` to the ``Player``. Click on the "
+"With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
-"and click on the Node tab. This is the place to connect nodes to listen the "
-"one you selected."
+"and click on the Node tab. This is the place to connect nodes to listen to "
+"the one you selected."
 msgstr ""
 "이것을 염두해 두고 ``GUI`` 를 ``Player`` 에 연결합시다. 씬 독에서 ``Player`` "
 "노드를 클릭하여 선택합니다. 인스펙터에서 노드(Node) 탭을 클릭합니다. 여기가 "
@@ -532,21 +538,23 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot는 콜백 메서드를 적어 사용자에게 전달합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
+#, fuzzy
 msgid ""
 "Inside the parens after the function name, add a ``player_health`` argument. "
-"When the player emits the ``health_changed`` signal it will send its current "
-"``health`` alongside it. Your code should look like:"
+"When the player emits the ``health_changed`` signal, it will send its "
+"current ``health`` alongside it. Your code should look like:"
 msgstr ""
 "함수 이름 다음의 괄호 안에, ``player_health`` 인수를 추가하세요. 플레이어가 "
 "``health_changed`` 시그널을 방출할 때 그것을 ``health`` 와 함께 보낼 것입니"
 "다. 코드는 다음과 같아야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
+#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
-"be using PascalCase for method names & camelCase for method parameters which "
-"follows the official `C# naming conventions. <https://docs.microsoft.com/en-"
-"us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
+"be using PascalCase for method names & camelCase for method parameters, "
+"which follows the official `C# naming conventions. <https://docs.microsoft."
+"com/en-us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
 "엔진은 파스칼 표기법(PascalCase)을 스네이크 표기법(snake_case)으로 변환하지 "
 "않기 때문에, C# 예제처럼 우리는 공식  `C# 명명 규칙 <https://docs.microsoft."
@@ -563,8 +571,9 @@ msgstr ""
 "다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
+#, fuzzy
 msgid ""
-"Inside ``_on_Player_health_changed`` let's call a second function called "
+"Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
 "``_on_Player_health_changed`` 안에서 ``update_health`` 라는 두 번째 함수를 호"
@@ -613,9 +622,10 @@ msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr "``TextureProgress`` 의 ``value`` 를 ``new_value`` 로 설정하는 것"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
+#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
-"``Number``'s ``text`` property requires a string so we can't assign it to "
+"``Number``'s ``text`` property requires a string, so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
 "``str`` 는 내장 함수로 어느 값을 문자로 변환합니다. ``Number`` 의 ``text`` 속"
@@ -644,11 +654,12 @@ msgid "Animate the loss of life with the Tween node"
 msgstr "Tween 노드로 체력이 감소하는 것을 애니메이트하기"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
+#, fuzzy
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
 "properties. ``Tween`` animates anything you'd like from a start to an end "
-"state over a certain duration. For example it can animate the health on the "
+"state over a certain duration. For example, it can animate the health on the "
 "``TextureProgress`` from its current level to the ``Player``'s new "
 "``health`` when the character takes damage."
 msgstr ""
@@ -846,7 +857,8 @@ msgstr ""
 "해서, 체력 막대가 더 멋진 방식으로 움직이면 좋을 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
-msgid "The animation is smooth but the number is broken"
+#, fuzzy
+msgid "The animation is smooth, but the number is broken"
 msgstr "애니메이션은 부드럽지만 숫자는 그렇지 않습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
@@ -865,7 +877,8 @@ msgid "Try the game again to see a nice blocky animation."
 msgstr "게임을 다시 실행하면 멋진 블록 애니메이션을 볼 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
-msgid "By rounding out animated\\_health we hit two birds with one stone"
+#, fuzzy
+msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "animated\\_health를 반올림 해서 일석이조의 효과를 냈습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
@@ -965,10 +978,11 @@ msgstr ""
 "`modulate` 에서 색상을 사용하여 수정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
-"interface. If we lower the alpha channel our interface fades out."
+"interface. If we lower the alpha channel, our interface fades out."
 msgstr ""
 "``modulate`` 는 4 개의 채널로 ``Color`` 값을 갖습니다: 빨강, 초록, 파랑, 그리"
 "고 알파입니다. 처음 세 개의 채널들 중 하나를 어둡게 하면 그것은 인터페이스에"
@@ -1006,8 +1020,9 @@ msgstr ""
 "다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#, fuzzy
 msgid ""
-"This time we change the ``modulate`` property and have it animate from "
+"This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"

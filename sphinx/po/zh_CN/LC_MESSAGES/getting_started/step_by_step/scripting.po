@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,16 +35,18 @@ msgstr ""
 "Godot官方支持四种（是的，四种！）语言，并且能够动态添加额外的语言！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
+#, fuzzy
 msgid ""
-"This is great, mostly due the large amount of flexibility provided, but it "
-"also makes our work supporting languages more difficult."
+"This is great, mostly due to the large amount of flexibility provided, but "
+"it also makes our work supporting languages more difficult."
 msgstr ""
 "这很好，主要在于提供了大量的灵活性，但也使得我们对语言的支持工作变得更加困"
 "难。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
+#, fuzzy
 msgid ""
-"The \"Main\" languages in Godot, though, are GDScript and VisualScript. The "
+"The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
 "makes the experience smoother; both have slick editor integration, while C# "
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
@@ -290,7 +292,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
-msgstr "最后，保存场景，用例如 ``sayhello.tscn``这样的名字。"
+msgstr "最后，保存场景，用例如 ``sayhello.tscn`` 这样的名字。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:129
 msgid "Adding a script"
@@ -310,9 +312,10 @@ msgstr ""
 "脚本创建对话框会弹出。这个对话框允许你设置脚本语言、类名和其它相关选项。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
+#, fuzzy
 msgid ""
-"In GDScript the file itself represents the class, so the class name field is "
-"not editable."
+"In GDScript, the file itself represents the class, so the class name field "
+"is not editable."
 msgstr "在GDScript里，文件本身代表了类，所以类名一栏无法编辑。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
@@ -338,9 +341,10 @@ msgstr ""
 "本”图标或Inspector窗口中的Script属性来查看这个脚本："
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
+#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
-"highlighted in the above image. This will bring you to the script editor "
+"highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
 "要编辑脚本，选择上述按钮之一，这两个按钮都在上图中突出显示。这会把你带到脚本"
@@ -431,11 +435,12 @@ msgstr ""
 "及要触发的方法的名字。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
+#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
 "select a node, the NodePath at the bottom will automatically update to point "
-"a relative path from the emitting node to the selected node."
+"to a relative path from the emitting node to the selected node."
 msgstr ""
 "左上部分显示了你的场景节点列表，其中触发节点的名称以红色突出显示。在这里选"
 "择“Panel”节点。当你选择一个节点时，底部的NodePath将自动更新为触发节点到所选节"
@@ -453,9 +458,10 @@ msgstr ""
 "之前生成这个函数。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
+#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
-"this is a scripting tutorial, so for the sake of learning, let's dive in to "
+"this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
 "这就结束了关于如何使用可视界面的指南。然而这是一个脚本教程，所以为了学习，让"
@@ -477,7 +483,7 @@ msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
-"为了方便起见，删除 ``extends Panel``下的所有内容。你要手动填写脚本的其余部"
+"为了方便起见，删除 ``extends Panel`` 下的所有内容。你要手动填写脚本的其余部"
 "分。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:227
@@ -544,5 +550,5 @@ msgid ""
 "empty by default. Feel free to read up on the ``Object.connect`` method for "
 "more information."
 msgstr ""
-"代码方法下可以用默认为空的第四个 ``Array``参数来启用额外参数。参阅 ``Object."
-"connect``方法以获取更多信息。"
+"代码方法下可以用默认为空的第四个 ``Array`` 参数来启用额外参数。参阅 ``Object."
+"connect`` 方法以获取更多信息。"

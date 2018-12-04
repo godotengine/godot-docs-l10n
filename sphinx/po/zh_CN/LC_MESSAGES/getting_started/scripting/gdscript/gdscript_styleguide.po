@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:4
-#, fuzzy
 msgid "GDScript style guide"
 msgstr "GDScript 风格指南"
 
@@ -33,21 +32,24 @@ msgid ""
 "projects, discussions, and tutorials. Hopefully, this will also encourage "
 "development of auto-formatting tools."
 msgstr ""
+"该样式指南列出了编写优雅GDScript的约定。目标是鼓励编写干净、可读的代码，并促"
+"进项目、讨论和教程之间的一致性。希望这也会鼓励开发自动格式化工具。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:14
 msgid ""
 "Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
 "<https://www.python.org/dev/peps/pep-0008/>`__ programming styleguide."
 msgstr ""
+"由于GDScript与Python非常接近，因此本指南的灵感来自Python的`PEP 8 <https://"
+"www.python.org/dev/peps/pep-0008/>`__ 编程风格。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:18
 msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
-msgstr ""
+msgstr "Godot的内置脚本编辑器默认使用了很多这些约定。 让它帮助你。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
-#, fuzzy
 msgid "Code structure"
 msgstr "节点结构"
 
@@ -72,18 +74,16 @@ msgstr "每个缩进级别必须大于包含它的代码块。"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:83
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:107
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:127
-#, fuzzy
 msgid "**Good**:"
-msgstr "**良好的**"
+msgstr "**良好的**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:40
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:61
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:93
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:114
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:137
-#, fuzzy
 msgid "**Bad**:"
-msgstr "**糟糕的**"
+msgstr "**糟糕的**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:50
 msgid ""
@@ -104,9 +104,8 @@ msgid "Use one blank line inside functions to separate logical sections."
 msgstr "在函数内部使用一个空行来分隔逻辑部分。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:77
-#, fuzzy
 msgid "One statement per line"
-msgstr "每行一条语句"
+msgstr "一条语句一行"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:79
 msgid ""
@@ -116,7 +115,6 @@ msgstr ""
 "不要在一行上合并多个语句 。不要用单行条件语句 (除了三元运算符)， C 程序员 !"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:102
-#, fuzzy
 msgid "Avoid unnecessary parentheses"
 msgstr "避免不必要的圆括号"
 
@@ -141,10 +139,9 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
 msgid "**NEVER**:"
-msgstr ""
+msgstr "**决不要**："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
-#, fuzzy
 msgid "Naming conventions"
 msgstr "命名约定"
 
@@ -157,32 +154,32 @@ msgstr ""
 "是丑陋的。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:163
-#, fuzzy
 msgid "Classes and nodes"
-msgstr "场景与节点"
+msgstr "类与节点"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:165
 msgid "Use PascalCase: ``extends KinematicBody``"
-msgstr ""
+msgstr "使用PascalCase：``extends KinematicBody``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:167
 msgid "Also when loading a class into a constant or variable:"
-msgstr ""
+msgstr "将类加载到常量或变量时："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:174
-#, fuzzy
 msgid "Functions and variables"
-msgstr "环境变量"
+msgstr "函数与变量"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:176
 msgid "Use snake\\_case: ``get_node()``"
-msgstr ""
+msgstr "使用 snake\\_case: ``get_node()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:178
 msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
 msgstr ""
+"在虚拟方法（用户必须覆盖的函数）中，私有函数和私有变量之前加上一个下划线 "
+"(\\_) ： ``func _ready()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
 msgid "Signals"
@@ -190,7 +187,7 @@ msgstr "信号"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:185
 msgid "Use past tense:"
-msgstr ""
+msgstr "使用过去时态:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
 msgid "Constants"
@@ -201,3 +198,5 @@ msgid ""
 "Use CONSTANT\\_CASE, all caps, with an underscore (\\_) to separate words: "
 "``const MAX_SPEED = 200``"
 msgstr ""
+"使用CONSTANT\\_CASE，全部大写，用下划线 (\\_) 分隔单词 ``const MAX_SPEED = "
+"200``"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,9 +57,9 @@ msgid ""
 "reasoning, the 3D engine uses the :ref:`Spatial <class_Spatial>` node for "
 "everything 3D."
 msgstr ""
-"：ref：`Node2D <class_Node2D>`是2D的基本节点。 ：ref：`Control "
-"<class_Control>`是所有GUI的基础节点。 按照这个推理，3D引擎中的所有3D物体使"
-"用：ref：`Spatial <class_Spatial>`节点。"
+":ref:`Node2D <class_Node2D>` 是2D的基本节点。 :ref:`Control <class_Control>` "
+"是所有GUI的基本节点。 按照这个推理，3D引擎中的所有3D物体使用 :ref:`Spatial "
+"<class_Spatial>` 节点。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
 msgid ""
@@ -70,8 +70,8 @@ msgid ""
 "rotation (x,y and z angles) and scale."
 msgstr ""
 "空间节点有一个局部变换，它与父节点相关（只要父节点也是**或者继承** Spatial类"
-"型）。 这个变换可以作为4x3：ref：`Transform <class_Transform>`或3个：ref："
-"`Vector3 <class_Vector3>`成员来表示位置，欧拉旋转（x，y和z角度）和比例。"
+"型）。 这个变换可以作为4x3 :ref:`Transform <class_Transform>` 或3个 :ref:"
+"`Vector3 <class_Vector3>` 成员来表示位置，欧拉旋转（x，y和z角度）和比例。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
@@ -100,8 +100,8 @@ msgid ""
 "allows to import entire scenes (just as they look in the DCC), including "
 "animation, skeletal rigs, blend shapes, etc."
 msgstr ""
-"有两条管线可以导入3D模型到Godot中。 第一个也是最常见的一个，是通过：ref："
-"`doc_importing_3d_scenes`导入器，它允许导入整个场景（就像它们在DCC中看起来一"
+"有两条管线可以导入3D模型到Godot中。 第一个也是最常见的一个，是通过 :ref:"
+"`doc_importing_3d_scenes` 导入器，它允许导入整个场景（就像它们在DCC中看起来一"
 "样），包括动画，骨架绑定，混合形状等。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:55
@@ -111,16 +111,15 @@ msgid ""
 "which can be then put inside a :ref:`MeshInstance <class_MeshInstance>` node "
 "for display."
 msgstr ""
-"第二条管线是：通过ref：`doc_importing_3d_meshes`导入器。 第二种方法允许导入简"
-"单的.OBJ文件作为网格资源，然后将其放入：ref：`MeshInstance "
-"<class_MeshInstance>节点中显示。"
+"第二条管线是：通过 :ref:`doc_importing_3d_meshes` 导入器。 第二种方法允许导入"
+"简单的.OBJ文件作为网格资源，然后将其放入 :ref:`MeshInstance "
+"<class_MeshInstance>` 节点中显示。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:61
 msgid "Generated geometry"
 msgstr "生成的几何体"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
-#, fuzzy
 msgid ""
 "It is possible to create custom geometry by using the :ref:`Mesh "
 "<class_Mesh>` resource directly. Simply create your arrays and use the :ref:"
@@ -129,10 +128,10 @@ msgid ""
 "more straightforward API and helpers for indexing, generating normals, "
 "tangents, etc."
 msgstr ""
-"通过直接使用：ref：`Mesh <class_Mesh>`资源可以创建自定义几何，只需创建数组并"
-"使用：ref：`Mesh.add_surface（）<class_Mesh_add_surface>`函数即可。 辅助类也"
-"可用，：ref：`SurfaceTool <class_SurfaceTool>`，它提供了一个更直接的API和帮助"
-"器，用于索引，生成法线，切线等。"
+"通过直接使用 :ref:`Mesh <class_Mesh>` 资源可以创建自定义几何，只需创建数组并"
+"使用 :ref:`Mesh.add_surface() <class_Mesh_add_surface>` 函数即可。 辅助类也可"
+"用 :ref:`SurfaceTool <class_SurfaceTool>` ，它提供了一个更直接的API和帮助器，"
+"用于索引，生成法线，切线等。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:70
 msgid ""
@@ -154,9 +153,9 @@ msgid ""
 "<class_ImmediateGeometry>` which provides an OpenGL 1.x style immediate-mode "
 "API to create points, lines, triangles, etc."
 msgstr ""
-"相反，如果需要生成会经常更新的简单几何体，Godot会提供一个特殊节点：ref："
-"`ImmediateGeometry <class_ImmediateGeometry>`，它会提供OpenGL 1.x风格的即时模"
-"式API来创建点，线 ，三角形等。"
+"相反，如果需要生成会经常更新的简单几何体，Godot会提供一个特殊节点 :ref:"
+"`ImmediateGeometry <class_ImmediateGeometry>` ，它会提供OpenGL 1.x风格的即时"
+"模式API来创建点，线 ，三角形等。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:84
 msgid "2D in 3D"
@@ -172,9 +171,9 @@ msgid ""
 "lighting/shadow effects, etc."
 msgstr ""
 "虽然Godot包装了强大的2D引擎，但许多类型的游戏会使用在3D环境中的2D效果。 通过"
-"使用不旋转的固定相机（正交或透视），可以使用诸如ref：`Sprite3D "
-"<class_Sprite3D>`和ref：`AnimatedSprite3D <class_AnimatedSprite3D>`等节点来创"
-"建混合了具有3D背景，更逼真的视差，灯光/阴影效果等的2D游戏。"
+"使用不旋转的固定相机（正交或透视），可以使用诸如 :ref:`Sprite3D "
+"<class_Sprite3D>` 和 :ref:`AnimatedSprite3D <class_AnimatedSprite3D>` 等节点"
+"来创建混合了具有3D背景，更逼真的视差，灯光/阴影效果等的2D游戏。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:94
 msgid ""
@@ -228,7 +227,6 @@ msgid "Coordinate system"
 msgstr "坐标系统"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
-#, fuzzy
 msgid ""
 "Godot uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__ "
 "system for everything. 3D Physics and other areas are tuned for this, so "
@@ -236,8 +234,8 @@ msgid ""
 "what you are doing)."
 msgstr ""
 "Godot使用`metric <http://en.wikipedia.org/wiki/Metric_system>`__系统来处理所"
-"有事情。 三D物理和其他领域都在为此而调整，所以试图使用不同的缩放比例通常是一"
-"个坏主意（除非你知道你在做什么）。"
+"有事情。 3D物理和其他领域都在为此而调整，所以试图使用不同的缩放比例通常是一个"
+"坏主意（除非你知道你在做什么）。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:131
 msgid ""
@@ -309,22 +307,20 @@ msgid "View menu"
 msgstr "视图菜单"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:167
-#, fuzzy
 msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
-msgstr ""
-"视图选项由“[view]”菜单控制。 注意窗口内的这个小菜单，因为它经常被忽略！"
+msgstr "视图选项由视口工具栏中的“视图”菜单控制。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:171
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
-msgstr ""
+msgstr "您可以通过以下菜单在编辑器的3D视图中隐藏小玩意："
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:175
 msgid ""
 "To hide a specific type of gizmos, you can toggle them off in the \"View\" "
 "menu."
-msgstr ""
+msgstr "要隐藏特定类型的小玩意，您可以在“视图”菜单中将其关闭。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:180
 msgid "Default environment"
@@ -357,7 +353,6 @@ msgstr ""
 "否则不会显示任何内容。 相机可以在正交或透视投影中工作："
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:200
-#, fuzzy
 msgid ""
 "Cameras are associated with and only display to a parent or grandparent "
 "viewport. Since the root of the scene tree is a viewport, cameras will "
@@ -365,9 +360,9 @@ msgid ""
 "picture-in-picture) are desired, they need their own children cameras to "
 "display."
 msgstr ""
-"摄像机关联并仅显示给父视口或祖父视口。 由于场景树的根节点是一个视口，因此默认"
-"情况下摄像机将显示在其上，但如果需要子视口（作为渲染目标或画中画），则需要其"
-"自己的子摄像机来显示。"
+"摄像机与父视图或祖父母视口相关联，仅显示。 由于场景树的根是一个视口，默认情况"
+"下会在其上显示摄像机，但如果需要子视口（渲染目标或画中画），则需要自己的子摄"
+"像头才能显示。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:208
 msgid ""

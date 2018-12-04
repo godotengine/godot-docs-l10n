@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,27 +19,29 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:4
 msgid "Exporting for Android"
-msgstr ""
+msgstr "为Android导出"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:6
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for it. "
 "The following steps detail what is needed to setup the SDK and the engine."
 msgstr ""
+"Android的导出比编译Godot的要求更少。 以下步骤详细说明了设置SDK和引擎所需的内"
+"容。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:10
 msgid "Download the Android SDK"
-msgstr ""
+msgstr "下载Android SDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:12
 msgid ""
 "Download and install the Android SDK from https://developer.android.com/"
 "studio/"
-msgstr ""
+msgstr "从 https://developer.android.com/studio/ 下载并安装Android SDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
 msgid "Install OpenJDK or Oracle JDK"
-msgstr ""
+msgstr "安装OpenJDK或Oracle JDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
 msgid ""
@@ -48,10 +50,14 @@ msgid ""
 "index.html>`__. Versions below JDK 8 may not work, some users have reported "
 "issues with the jarsigner (used to sign the APKs) in JDK 7."
 msgstr ""
+"下载并安装 `OpenJDK  <https://github.com/ojdkbuild/ojdkbuild>`__ 或 ` Oracle "
+"JDK  <http://www.oracle.com/technetwork/java/javase/downloads/index."
+"html>`__ 。 JDK 8以下的版本可能无法正常工作，有些用户在JDK 7中报告了"
+"jarsigner（用于签署APK）的问题。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:21
 msgid "Create a debug.keystore"
-msgstr ""
+msgstr "创建一个debug.keystore"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:23
 msgid ""
@@ -60,16 +66,19 @@ msgid ""
 "or eclipse probably generated one for you (on Linux and macOS, you can find "
 "it in the ``~/.android`` directory)."
 msgstr ""
+"Android需要调试密钥库文件才能安装到设备并分发非发布APK。 如果您以前使用过SDK"
+"并且已经构建了项目，那么ant或eclipse可能会为您生成一个（在Linux和macOS上，您"
+"可以在 ``〜/ .android`` 目录中找到它）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:28
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose:"
-msgstr ""
+msgstr "如果找不到或需要生成一个，JDK的keytool命令可用于此目的："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:36
 msgid "Make sure you have adb"
-msgstr ""
+msgstr "确保你有adb"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:38
 msgid ""
@@ -78,51 +87,55 @@ msgid ""
 "one (any) of the Android API levels for it to be installed in the SDK "
 "directory."
 msgstr ""
+"Android Debug Bridge（adb）是用于与Android设备通信的命令行工具。 它随SDK一起"
+"安装，但您可能需要安装一个（任何）Android API级别才能将其安装在SDK目录中。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:43
 msgid "Setting it up in Godot"
-msgstr ""
+msgstr "在Godot中设置它"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid ""
 "Enter the Editor Settings screen. This screens contains the editor settings "
 "for the user account in the computer (It's independent from the project)."
 msgstr ""
+"进入编辑器设置屏幕。 此屏幕包含计算机中用户帐户的编辑器设置（它独立于项目）。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
 msgid "Scroll down to the section where the Android settings are located:"
-msgstr ""
+msgstr "向下滚动到Android设置所在的部分："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:55
 msgid "In that screen, the path to 3 files needs to be set:"
-msgstr ""
+msgstr "在该屏幕中，需要设置3个文件的路径："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:57
 msgid "The *adb* executable (adb.exe on Windows)"
-msgstr ""
+msgstr "* adb * 可执行文件（Windows上的adb.exe）"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:58
 msgid "The *jarsigner* executable (from JDK 6 or 8)"
-msgstr ""
+msgstr "* jarsigner * 可执行文件（来自JDK 6或8）"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:59
 msgid "The debug *keystore*"
-msgstr ""
+msgstr "debug 的 * keystore *"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:61
 msgid "Once that is configured, everything is ready to export to Android!"
-msgstr ""
+msgstr "配置完成后，一切都准备好导出到Android了！"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
-#, fuzzy
 msgid "Exporting for Google Play Store"
-msgstr "导出"
+msgstr "为Google Play商店导出"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file, such file can be generated like this:"
 msgstr ""
+"将APK上传到Google的Play商店需要您使用非调试密钥库文件进行签名，这样的文件可以"
+"像这样生成："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""
@@ -131,31 +144,36 @@ msgid ""
 "more about `APK signing <https://developer.android.com/studio/publish/app-"
 "signing>`__."
 msgstr ""
+"此密钥用于验证您的开发人员身份，记住其密码并将其保存在安全的地方！ 使用Google"
+"的Android开发人员指南了解有关“APK签名 <https://developer.android.com/studio/"
+"publish/app-signing>`__ 的更多信息。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
 msgid "Now fill the following forms in you Android Export Presets:"
-msgstr ""
+msgstr "现在在Android导出预设中填写以下表格："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
 msgid "Release: Enter the path to the keystore file you just generated."
-msgstr ""
+msgstr "发布：输入刚刚生成的密钥库文件的路径。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
 msgid "Release User: Replace with what your key alias."
-msgstr ""
+msgstr "发布用户：替换为您的密钥别名。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid "Release Password: Key password."
-msgstr ""
+msgstr "发布密码：密钥密码。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
 "Now your export_presets.cfg file contains sensitive info, if using a Version "
 "Control System it is a good idea to remove it from public repositories."
 msgstr ""
+"现在您的export_presets.cfg文件包含敏感信息，如果使用版本控制系统，最好将其从"
+"公共存储库中删除。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
 "Don't forget to disable the Export with debug button while choosing the "
 "APK's name."
-msgstr ""
+msgstr "选择APK的名称时，不要忘记禁用“使用调试导出”按钮。"

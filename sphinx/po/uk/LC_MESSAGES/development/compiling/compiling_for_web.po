@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,11 +45,17 @@ msgstr ""
 msgid "`SCons <https://www.scons.org>`__ build system"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:20
+#: ../../docs/development/compiling/compiling_for_web.rst:19
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_web.rst:23
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:22
+#: ../../docs/development/compiling/compiling_for_web.rst:25
 msgid ""
 "Before starting, confirm that the Emscripten configuration file exists and "
 "specifies all settings correctly. This file is available as ``~/."
@@ -59,7 +65,7 @@ msgid ""
 "when starting Emscripten's ``emcc`` program if the file doesn't exist."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:29
+#: ../../docs/development/compiling/compiling_for_web.rst:32
 msgid ""
 "Open a terminal and navigate to the root directory of the engine source "
 "code. Then instruct SCons to build the JavaScript platform. Specify "
@@ -67,14 +73,14 @@ msgid ""
 "for a debug build::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:36
+#: ../../docs/development/compiling/compiling_for_web.rst:39
 msgid ""
 "By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
 "built into the engine. Since ``eval()`` calls can be a security concern, the "
 "``javascript_eval`` option can be used to build without the singleton::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:43
+#: ../../docs/development/compiling/compiling_for_web.rst:46
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
@@ -82,21 +88,21 @@ msgid ""
 "zip`` for debug."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:48
+#: ../../docs/development/compiling/compiling_for_web.rst:51
 msgid ""
 "Finally, rename the zip archive to ``webassembly_release.zip`` for the "
 "release template::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:53
+#: ../../docs/development/compiling/compiling_for_web.rst:56
 msgid "And ``webassembly_debug.zip`` for the debug template::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:58
+#: ../../docs/development/compiling/compiling_for_web.rst:61
 msgid "Building per asm.js translation or LLVM backend"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:60
+#: ../../docs/development/compiling/compiling_for_web.rst:63
 msgid ""
 "WebAssembly can be compiled in two ways: The default is to first compile to "
 "asm.js, a highly optimizable subset of JavaScript, using Emscripten's "
@@ -105,7 +111,7 @@ msgid ""
 "processes, we simply run SCons."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:66
+#: ../../docs/development/compiling/compiling_for_web.rst:69
 msgid ""
 "The other method uses LLVM's WebAssembly backend. This backend is not yet "
 "available in release versions of LLVM, only in development builds built with "
@@ -115,7 +121,7 @@ msgid ""
 "processes as well, so we just invoke SCons."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_web.rst:73
+#: ../../docs/development/compiling/compiling_for_web.rst:76
 msgid ""
 "In order to choose one of the two methods, the ``LLVM_ROOT`` variable in the "
 "Emscripten configuration file is used. If it points to a directory "

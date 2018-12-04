@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "材质"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:5
 msgid "Using existing Godot materials"
-msgstr ""
+msgstr "使用现有的Godot材料"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:6
 msgid ""
@@ -33,6 +33,9 @@ msgid ""
 "means that you cannot see your model with the material applied inside "
 "Blender."
 msgstr ""
+"出口商可以处理材料的一种方法是尝试将Blender材料与现有的Godot材料相匹配。 这样"
+"做的好处是能够使用Godot材料系统的所有功能，但这意味着您无法使用Blender中应用"
+"的材料看到您的模型。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:11
 msgid ""
@@ -43,16 +46,20 @@ msgid ""
 "is not a ``SpatialMaterial`` or ``ShaderMaterial`` or if it cannot be found, "
 "then the exporter will fall back to exporting the material from Blender."
 msgstr ""
+"为此，导出器会尝试查找名称与Blender中的材质名称相匹配的Godot材质。 因此，如果"
+"您在Blender中使用材料名称 ``PurpleDots`` 导出对象，则导出器将搜索文件 "
+"``PurpleDots.tres`` 并将其分配给该对象。 如果此文件不是 ``SpatialMaterial`` "
+"或 ``ShaderMaterial`` ，或者如果找不到，则导出器将退回到从Blender导出材料。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:19
 msgid ""
 "Where the exporter searches for the ``.tres`` file is determined by the "
 "\"Material Search Paths\" option:"
-msgstr ""
+msgstr "导出器搜索 ``.tres`` 文件的位置由“材料搜索路径”选项确定："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:33
 msgid "This can take the value of:"
-msgstr ""
+msgstr "这可以取以下值："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:25
 msgid ""
@@ -61,6 +68,9 @@ msgid ""
 "will throw an error. This is useful for most projects where naming conflicts "
 "are unlikely."
 msgstr ""
+"项目目录 - 尝试查找 ``project.Godot`` 并递归搜索子目录。 如果找不到 "
+"``project.Godot`` ，则会抛出错误。 这对于不太可能存在命名冲突的大多数项目非常"
+"有用。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:29
 msgid ""
@@ -68,15 +78,16 @@ msgid ""
 "location. This is useful for projects where you may have duplicate material "
 "names and need more control over what material gets assigned."
 msgstr ""
+"导出目录 - 在导出位置的子目录中查找材料。 这对于您可能具有重复材料名称并需要"
+"更多控制所分配材料的项目非常有用。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:32
 msgid "None - Do not search for materials. Export them from the Blender file."
-msgstr ""
+msgstr "无 - 不搜索材料。 从Blender文件中导出它们。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:36
-#, fuzzy
 msgid "Export of Blender materials"
-msgstr "导出模板"
+msgstr "导出Blender材质"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:38
 msgid ""
@@ -84,12 +95,14 @@ msgid ""
 "Blender. Currently only the diffuse color and a few flags (eg unshaded) are "
 "exported."
 msgstr ""
+"处理材料的另一种方式是让导出器从Blender中导出它们。 目前仅导出漫反射颜色和一"
+"些标志（例如，无阴影）。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:43
 msgid ""
 "Export of Blender materials is currently very primitive. However, it is the "
 "focus of a current GSOC project"
-msgstr ""
+msgstr "Blender材料的导出目前非常原始。 但是，它是当前GSOC项目的重点"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/material.rst:47
 msgid ""
@@ -97,3 +110,5 @@ msgid ""
 "When Blender 2.8 is released, this will be removed and this part of the "
 "exporter will change."
 msgstr ""
+"材料当前使用“Blender Render”设置导出。 当Blender 2.8发布时，这将被删除，导出"
+"器的这一部分将会改变。"

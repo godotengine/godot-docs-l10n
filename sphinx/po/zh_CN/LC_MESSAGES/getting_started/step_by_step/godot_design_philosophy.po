@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,8 +53,8 @@ msgid ""
 "Please watch `Discover Godot 3, the Free game engine <https://youtu."
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
-"如果您想要了解这个引擎的特性，请看“Discover Godot 3，免费游戏引擎<https://"
-"youtu.be/4v3qge-3CqQ>”。"
+"如果您想要了解这个引擎的特性，请看 `Discover Godot 3，免费游戏引擎 <https://"
+"youtu.be/4v3qge-3CqQ>`_。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:23
 msgid "Object-oriented design and composition"
@@ -87,9 +87,10 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "最重要的是，你可以从任何场景 **inherit** 。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
+#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
-"of a level… anything you’d like. It works like a class in pure code except "
+"of a level… anything you’d like. It works like a class in pure code, except "
 "you’re free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
@@ -98,8 +99,9 @@ msgstr ""
 "或者混合和匹配这两者来自由的设计它。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
+#, fuzzy
 msgid ""
-"It’s different from prefabs you find in several 3D engines as you can then "
+"It’s different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
 "your Character. Modify the Character in the editor and the Magician will "
 "update as well. It helps you build your projects so that their structure "
@@ -139,7 +141,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:64
 msgid "All-inclusive package"
-msgstr ""
+msgstr "详尽的计划"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:66
 msgid ""
@@ -258,9 +260,10 @@ msgstr ""
 "件来替代。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
+#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
-"the engine** to your heart’s content. You can also debug games easily as "
+"the engine** to your heart’s content. You can also debug games easily, as "
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
@@ -317,8 +320,9 @@ msgstr ""
 "和场景，或者**创建插件和扩展编辑器**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
+#, fuzzy
 msgid ""
-"This leads to a reliable and flexible UI system as it powers the editor "
+"This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
 "这导致了一个可靠和灵活的UI系统，因为它为编辑器本身提供了动力。使用“tool”关键"

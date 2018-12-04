@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,9 +171,10 @@ msgstr ""
 "`.apk`或者 Windows 平台的 `.exe` 。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
+#, fuzzy
 msgid ""
-"In the \"Resources\" and \"Features\" tabs you can customize how the game is "
-"exported for each platform. We can leave those settings alone for now."
+"In the \"Resources\" and \"Features\" tabs, you can customize how the game "
+"is exported for each platform. We can leave those settings alone for now."
 msgstr ""
 "在 \"Resources\" 和 ”Features\" 选项卡中，您可以自定义如何为每个平台导出游"
 "戏。我们可以先不考虑这些设置。"
@@ -190,7 +191,7 @@ msgstr "在本节中，我们将介绍每个平台的流程，包括您需要的
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:166
 msgid "PC (Linux/macOS/Windows)"
-msgstr ""
+msgstr "桌面端 (Linux/macOS/Windows)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:168
 msgid ""
@@ -250,12 +251,13 @@ msgstr "在导出Android项目之前，您必须下载以下软件:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:196
 msgid "Android SDK: https://developer.android.com/studio/"
-msgstr ""
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:197
 msgid ""
 "Java JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 msgstr ""
+"Java的JDK: http://www.oracle.com/technetwork/java/javase/downloads/index.html"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:199
 msgid ""
@@ -267,8 +269,9 @@ msgstr ""
 "台工具”。这将安装Godot用来与设备通信的“adb”命令行工具。"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
+#, fuzzy
 msgid ""
-"Next, create a debug keystore with by running the following command on your "
+"Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr "接下来，通过在系统的命令行上运行以下命令，创建一个调试密钥库:"
 
@@ -362,7 +365,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:263
 msgid "HTML5 (web)"
-msgstr ""
+msgstr "HTML5 (网页)"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:265
 msgid ""
@@ -377,9 +380,10 @@ msgid ""
 msgstr "导出完成后，您将拥有一个包含以下文件的文件夹:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
+#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
-"you can't open the file directly, it neds to be served by a web server. If "
+"you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""
@@ -414,6 +418,6 @@ msgid ""
 "godotengine/godot/issues>`_."
 msgstr ""
 "对WASM的浏览器支持并不广泛。Firefox和Chrome都支持这个功能，但你可能仍然会发现"
-"一些无法使用的功能。确保您已经将浏览器更新到最新版本，并报告您在' Godot "
-"Github储存库<https://github.com/godotengine/godot/issues> ' _上发现的任何"
+"一些无法使用的功能。确保您已经将浏览器更新到最新版本，并报告您在 `Godot "
+"Github储存库 <https://github.com/godotengine/godot/issues>`_ 上发现的任何"
 "bug。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -186,9 +186,10 @@ msgstr ""
 "проекта, на подобию `.apk`на Android или `.exe`на Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
+#, fuzzy
 msgid ""
-"In the \"Resources\" and \"Features\" tabs you can customize how the game is "
-"exported for each platform. We can leave those settings alone for now."
+"In the \"Resources\" and \"Features\" tabs, you can customize how the game "
+"is exported for each platform. We can leave those settings alone for now."
 msgstr ""
 "На вкладках \"Ресурсы\" и \"Особенности\" вы можете настроить экспорт игры "
 "для каждой платформы. Эти настройки пока оставим."
@@ -228,7 +229,6 @@ msgid "Click \"Save\" and the engine will build the export files."
 msgstr "Нажмите \"Сохранить\" и движок соберет экспортируемый файл."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
@@ -236,7 +236,7 @@ msgid ""
 "click and run."
 msgstr ""
 "При экспорте на MacOS, если вы экспортируете на компьютере с MacOS, вы "
-"получите `.dmg` файл, а если используете Linux или Windows то результатом "
+"получите файл `.dmg`, а если используете Linux или Windows то результатом "
 "будет `.zip`. В любом случае, сжатый файл содержит в себе `.app`, который вы "
 "можете запустить двойным нажатием."
 
@@ -298,8 +298,9 @@ msgstr ""
 "взаимодействия с вашим устройством."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
+#, fuzzy
 msgid ""
-"Next, create a debug keystore with by running the following command on your "
+"Next, create a debug keystore by running the following command on your "
 "system's command line:"
 msgstr ""
 "Далее создайте хранилище ключей для отладки, выполнив следующую команду в "
@@ -366,7 +367,6 @@ msgid "iOS"
 msgstr "iOS"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
@@ -434,9 +434,10 @@ msgstr ""
 "файлы:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
+#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
-"you can't open the file directly, it neds to be served by a web server. If "
+"you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
-msgstr ""
+msgstr "2D中自定义绘图"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:7
 msgid "Why?"
-msgstr ""
+msgstr "为什么？"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:9
 msgid ""
@@ -34,16 +34,20 @@ msgid ""
 "node (be it :ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>` "
 "based) draw custom commands. It is *really* easy to do it too."
 msgstr ""
+"Godot有绘制精灵、多边形、粒子和各种东西的节点。 在大多数情况下，这已足够但并"
+"不总是 。在因为不存在绘制特定 *东西* 的节点，而恐惧、焦虑和愤怒之前...有必要"
+"知道引擎有轻松绘制任何2D节点（不管它是继承自 :ref:`Control <class_Control>` "
+"或 :ref:`Node2D <class_Node2D>` ）的自定义命令。 绘制 *真的* 很容易。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:17
 msgid "But..."
-msgstr ""
+msgstr "但是..."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:19
 msgid ""
 "Custom drawing manually in a node is *really* useful. Here are some examples "
 "why:"
-msgstr ""
+msgstr "在节点中手动自定义绘图 *真的* 非常有用。 以下是一些例子："
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:22
 msgid ""
@@ -51,12 +55,16 @@ msgid ""
 "that draws a circle, an image with trails, a special kind of animated "
 "polygon, etc)."
 msgstr ""
+"绘制未由节点处理的形状或逻辑（例如：制作一个可以绘制圆的节点，带有轨迹的图"
+"像，特殊类型的动画多边形等）。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:25
 msgid ""
 "Visualizations that are not that compatible with nodes: (example: a tetris "
 "board). The tetris example uses a custom draw function to draw the blocks."
 msgstr ""
+"与节点不兼容的可视化:(例如：俄罗斯方块板）。 俄罗斯方块示例使用自定义绘制功能"
+"来绘制块。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
 msgid ""
@@ -65,16 +73,20 @@ msgid ""
 "drawing, but a thousand of draw calls are cheap. Check the \"Shower of "
 "Bullets\" demo as example."
 msgstr ""
+"管理大量简单对象的绘图逻辑（数十万）。 尽管一千个绘制调用计算负担不大，但使用"
+"一千个节点可能不如绘图效率高。 可在“子弹阵雨”演示中验证。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:32
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but it's "
 "easy to run into the need to make a new, custom one."
 msgstr ""
+"制作自定义UI控件。 尽管有很多可用的控件，但很容易遇到需要制作新自定义控件的情"
+"况。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:36
 msgid "OK, how?"
-msgstr ""
+msgstr "好吧，怎么办？"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:38
 msgid ""
@@ -82,22 +94,26 @@ msgid ""
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
 "the _draw() function."
 msgstr ""
+"将脚本添加到任何：ref：`CanvasItem <class_CanvasItem>`派生节点，如：ref："
+"`Control <class_Control>`或：ref：`Node2D <class_Node2D>`。 然后覆盖_draw（）"
+"函数。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:58
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
 msgstr ""
+"Draw命令在：ref：`CanvasItem <class_CanvasItem>`类引用中描述。 有很多。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
 msgid "Updating"
-msgstr ""
+msgstr "升级"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:64
 msgid ""
 "The _draw() function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
-msgstr ""
+msgstr "_draw() 函数只调用一次，然后缓存并记住绘制命令，因此不需要进一步调用。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:67
 msgid ""
@@ -105,22 +121,26 @@ msgid ""
 "call :ref:`CanvasItem.update() <class_CanvasItem_update>` in that same node "
 "and a new _draw() call will happen."
 msgstr ""
+"如果由于状态或其他更改而需要重新绘制，只需在同一节点中调用：ref：`CanvasItem."
+"update（）<class_CanvasItem_update>`并且将发生新的_draw（）调用。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:71
 msgid ""
 "Here is a little more complex example. A texture variable that will be "
 "redrawn if modified:"
-msgstr ""
+msgstr "这是一个更复杂的例子。 如果改变，将重绘的纹理变量："
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:115
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "update() from the _process() callback, like this:"
 msgstr ""
+"在某些情况下，可能需要绘制每一帧。 为此，只需从_process（）回调调用"
+"update（），如下所示："
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:147
 msgid "An example: drawing circular arcs"
-msgstr ""
+msgstr "一个例子：绘制圆弧"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:149
 msgid ""
@@ -130,10 +150,13 @@ msgid ""
 "about drawing a portion of a circle? You will have to code a function to "
 "perform this and draw it yourself."
 msgstr ""
+"我们现在将使用Godot Engine的自定义绘图功能来绘制Godot不提供功能的内容。 作为"
+"一个例子，Godot提供了draw_circle（）函数，它绘制了一个完整的圆。 但是，画一个"
+"圆的一部分怎么样？ 您必须编写一个函数来执行此操作并自己绘制它。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
 msgid "Arc function"
-msgstr ""
+msgstr "弧函数"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
 msgid ""
@@ -143,6 +166,9 @@ msgid ""
 "we have to provide to our drawing. We'll also provide the color value, so we "
 "can draw the arc in different colors if we wish."
 msgstr ""
+"弧由其支撑圆参数定义。 即：中心位置和半径。 然后通过它开始的角度和停止的角度"
+"来定义弧本身。 这些是我们必须为绘图提供的4个参数。 我们还将提供颜色值，因此我"
+"们可以根据需要绘制不同颜色的圆弧。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:162
 msgid ""
@@ -157,6 +183,12 @@ msgid ""
 "(LoD)*. In our example, we will simply use a fixed number of points, no "
 "matter the radius."
 msgstr ""
+"基本上，在屏幕上绘制形状需要将其分解为从一个到下一个链接的特定数量的点。 你可"
+"以想象，你的形状越多，它就越平滑，但在加工成本方面也越重。 一般来说，如果您的"
+"形状很大（或者在3D中，靠近相机），则需要绘制更多的点，而不会看起来像是有角度"
+"的。 相反，如果您的形状很小（或3D，远离相机），您可以减少其点数以节省处理成"
+"本。 这称为*细节级别（LoD）*。 在我们的例子中，无论半径如何，我们都只使用固定"
+"数量的点。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:202
 msgid ""
@@ -164,6 +196,8 @@ msgid ""
 "this number in the nb_points variable to a value of 32. Then, we initialize "
 "an empty PoolVector2Array, which is simply an array of Vector2."
 msgstr ""
+"还记得我们的形状必须分解成的点数吗？ 我们将nb_points变量中的这个数字修改为32."
+"然后，我们初始化一个空的PoolVector2Array，它只是一个Vector2数组。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
 msgid ""
@@ -173,6 +207,9 @@ msgid ""
 "include the last point. We first determine the angle of each point, between "
 "the starting and ending angles."
 msgstr ""
+"下一步包括计算构成弧的这32个点的实际位置。 这是在第一个for循环中完成的：我们"
+"迭代我们想要计算位置的点数，加上一个包括最后一个点。 我们首先确定起点和终点之"
+"间每个点的角度。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:211
 msgid ""
@@ -183,6 +220,10 @@ msgid ""
 "counting at 12 o'clock. So we reduce each angle by 90° in order to start "
 "counting from 12 o'clock."
 msgstr ""
+"每个角度减小90°的原因是我们将使用三角学计算每个角度的2D位置（你知道，余弦和正"
+"弦的东西......）。 但是，简单来说，cos（）和sin（）使用弧度，而不是度数。 虽"
+"然我们想在12点钟开始计数，但0°（0弧度）的角度从3点钟开始。 因此我们将每个角度"
+"减小90°，以便从12点开始计数。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:217
 msgid ""
@@ -195,6 +236,11 @@ msgid ""
 "performed by adding it to our Vector2 value. Finally, we insert the point in "
 "the PoolVector2Array which was previously defined."
 msgstr ""
+"以角度'角度'（以弧度表示）位于圆上的点的实际位置由Vector2（cos（角度），"
+"sin（角度））给出。 由于cos（）和sin（）返回介于-1和1之间的值，因此位置位于半"
+"径为1的圆上。要将此位置放在我们的半径为“半径”的支撑圆上，我们只需要乘以 “半"
+"径”的位置。 最后，我们需要将我们的支持圈定位在“中心”位置，这是通过将其添加到"
+"我们的Vector2值来执行的。 最后，我们在之前定义的PoolVector2Array中插入点。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:225
 msgid ""
@@ -207,24 +253,29 @@ msgid ""
 "line between a pair of points will never be long enough to see them. If this "
 "happens, we simply would need to increase the number of points."
 msgstr ""
+"现在，我们需要实际绘制我们的观点。 你可以想象，我们不会简单地画出我们的32点："
+"我们需要绘制每一点之间的所有内容。 我们可以使用前面的方法自己计算每个点，然后"
+"逐个绘制。 但这太复杂和低效（除非明确需要）。 因此，我们只需在每对点之间绘制"
+"线条。 除非我们的支撑圆的半径很大，否则一对点之间每条线的长度永远不会长到足以"
+"看到它们。 如果发生这种情况，我们只需要增加点数。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:235
 msgid "Draw the arc on screen"
-msgstr ""
+msgstr "在屏幕上绘制弧形"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:237
 msgid ""
 "We now have a function that draws stuff on the screen: It is time to call in "
 "the _draw() function."
-msgstr ""
+msgstr "我们现在有一个在屏幕上绘制内容的函数：是时候调用_draw（）函数了。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
 msgid "Result:"
-msgstr ""
+msgstr "结果："
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:269
 msgid "Arc polygon function"
-msgstr ""
+msgstr "弧多边形功能"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:271
 msgid ""
@@ -233,10 +284,12 @@ msgid ""
 "is exactly the same as previously, except that we draw a polygon instead of "
 "lines:"
 msgstr ""
+"我们可以更进一步，不仅可以编写一个函数来绘制由弧定义的光盘的平面部分，还可以"
+"绘制其形状。 该方法与以前完全相同，只是我们绘制多边形而不是线条："
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:311
 msgid "Dynamic custom drawing"
-msgstr ""
+msgstr "动态自定义绘图"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:313
 msgid ""
@@ -246,6 +299,10 @@ msgid ""
 "our example, we will simply increment them by 50. This increment value has "
 "to remain constant or else the rotation speed will change accordingly."
 msgstr ""
+"好吧，我们现在能够在屏幕上绘制自定义内容。 然而，它是静态的：让我们围绕中心转"
+"动这个形状。 这样做的解决方案就是随着时间的推移改变angle_from和angle_to值。 "
+"对于我们的示例，我们将简单地将它们递增50.此增量值必须保持不变，否则旋转速度将"
+"相应地改变。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:319
 msgid ""
@@ -253,10 +310,12 @@ msgid ""
 "top of our script. Also note that you can store them in other nodes and "
 "access them using get_node()."
 msgstr ""
+"首先，我们必须在我们的脚本顶部使angle_from和angle_to变量全局化。 另请注意，您"
+"可以将它们存储在其他节点中并使用get_node（）访问它们。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:341
 msgid "We make these values change in the _process(delta) function."
-msgstr ""
+msgstr "我们在_process（delta）函数中更改这些值。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:343
 msgid ""
@@ -269,6 +328,11 @@ msgid ""
 "behavior. Since Godot doesn't provide a wrap() function, we'll create it "
 "here, as it is relatively simple."
 msgstr ""
+"我们还在这里增加angle_from和angle_to值。 但是，我们不能忘记将结果值包装（）在"
+"0到360°之间！ 也就是说，如果角度是361°，那么它实际上是1°。 如果你不包装这些"
+"值，脚本将正常工作，但角度值将随着时间的推移变得越来越大，直到它们达到Godot可"
+"以管理的最大整数值（2 ^ 31-1）。 当发生这种情况时，戈多可能会崩溃或产生意外行"
+"为。 由于Godot不提供wrap（）函数，我们将在这里创建它，因为它相对简单。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:352
 msgid ""
@@ -276,17 +340,19 @@ msgid ""
 "automatically calls _draw(). This way, you can control when you want to "
 "refresh the frame."
 msgstr ""
+"最后，我们不要忘记调用update（）函数，它自动调用_draw（）。 这样，您可以控制"
+"何时刷新帧。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:397
 msgid ""
 "Also, don't forget to modify the _draw() function to make use of these "
 "variables:"
-msgstr ""
+msgstr "另外，不要忘记修改_draw（）函数以使用这些变量："
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:421
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
-msgstr ""
+msgstr "我们跑吧！ 它工作正常，但弧线快速旋转！ 怎么了？"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
 msgid ""
@@ -298,6 +364,10 @@ msgid ""
 "So, using 'delta' to control your drawing ensures that your program runs at "
 "the same speed on everybody's hardware."
 msgstr ""
+"原因是你的GPU实际上正在尽可能快地显示帧。 我们需要以此速度“标准化”绘图。 为了"
+"实现，我们必须使用_process（）函数的'delta'参数。 'delta'包含最后两个渲染帧之"
+"间经过的时间。 它通常很小（约0.0003秒，但这取决于您的硬件）。 因此，使"
+"用“delta”来控制绘图可确保程序在每个人的硬件上以相同的速度运行。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:432
 msgid ""
@@ -305,23 +375,29 @@ msgid ""
 "'delta' in the _process() function. This way, our 2 angles will be increased "
 "by a much smaller value, which directly depends on the rendering speed."
 msgstr ""
+"在我们的例子中，我们只需要在_process（）函数中将'rotation_angle'变量乘"
+"以'delta'。 这样，我们的2个角度将增加一个更小的值，这直接取决于渲染速度。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:466
 msgid "Let's run again! This time, the rotation displays fine!"
-msgstr ""
+msgstr "让我们再跑一次！ 这次，旋转显示正常！"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
 msgid "Tools"
-msgstr "工具（tools）"
+msgstr "工具"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
+"在编辑器中运行它们时，可能还需要绘制自己的节点，以用作某些功能或行为的预览或"
+"可视化。"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:475
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."
 msgstr ""
+"请记住在脚本顶部使用“tool”关键字（如果您忘记了这一点，请查看：ref："
+"`doc_gdscript`参考）。"

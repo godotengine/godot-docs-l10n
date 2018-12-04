@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,33 +35,39 @@ msgstr ""
 msgid "Xcode with the iOS SDK and the command line tools."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:16
+#: ../../docs/development/compiling/compiling_for_ios.rst:15
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_ios.rst:19
 msgid "Compiling"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:18
+#: ../../docs/development/compiling/compiling_for_ios.rst:21
 msgid "Open a Terminal, go to the root dir of the engine source code and type:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:24
+#: ../../docs/development/compiling/compiling_for_ios.rst:27
 msgid "for a debug build, or:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:30
+#: ../../docs/development/compiling/compiling_for_ios.rst:33
 msgid ""
 "for a release build (check ``platform/iphone/detect.py`` for the compiler "
 "flags used for each configuration)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:33
+#: ../../docs/development/compiling/compiling_for_ios.rst:36
 msgid "Alternatively, you can run"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:39
+#: ../../docs/development/compiling/compiling_for_ios.rst:42
 msgid "for a Simulator executable."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:41
+#: ../../docs/development/compiling/compiling_for_ios.rst:44
 msgid ""
 "Additionally since some time Apple requires 64 bit version of application "
 "binary when you are uploading to iStore. The best way to provide these is to "
@@ -72,17 +78,17 @@ msgid ""
 "following commands:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:53
+#: ../../docs/development/compiling/compiling_for_ios.rst:56
 msgid "Run"
 msgstr "Запустить"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:55
+#: ../../docs/development/compiling/compiling_for_ios.rst:58
 msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:58
+#: ../../docs/development/compiling/compiling_for_ios.rst:61
 msgid ""
 "Replace or add your executable to the Xcode project, and change the "
 "\"executable name\" property on Info.plist accordingly if you use an "

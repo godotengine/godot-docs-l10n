@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,12 +321,11 @@ msgstr ""
 "``400``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
-#, fuzzy
 msgid ""
 "If you're using C#, you need to restart Godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
-"Если вы используете С#, вам необходимо перезапускать редактор godot, чтобы "
+"Если вы используете С#, вам необходимо перезапускать редактор Godot, чтобы "
 "увидеть в нем экспортированные переменные, пока это не будет исправлено."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:182
@@ -338,10 +337,11 @@ msgstr ""
 "является хорошим моментом для определения размера игрового окна:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:198
+#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
-"of our game which we expect will change often. Here we'll make it:"
+"of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 "Сейчас мы можем использовать функцию ``_process()`` для определения того, "
 "что игрок будет делать. ``_process()`` вызывается каждый кадр, поэтому мы "
@@ -522,10 +522,11 @@ msgstr ""
 "присваиванием выше:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
+#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
-"line to ``_ready()`` so the player will be hidden when the game starts:"
+"line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
 "Снова запустите сцену и убедитесь, что анимация правильная для каждого из "
 "направлений. Когда вы будете уверены, что движение работает правильно, "
@@ -804,8 +805,9 @@ msgstr ""
 "Посмотрите :ref:`doc_instancing`, чтобы узнать больше об инстанцировании."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:617
+#, fuzzy
 msgid ""
-"Now add the following nodes as children of ``Main``, and name them as shown "
+"Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
 "Теперь добавьте следующие узлы в виде дочерних элементов ``Main`` и назовите "
@@ -935,8 +937,9 @@ msgid "Main script"
 msgstr "Главный скрипт"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
+#, fuzzy
 msgid ""
-"Add a script to ``Main``. At the top of the script we use ``export "
+"Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "Добавьте скрипт к узлу ``Main``. В верхней части скрипта мы используем "
@@ -975,8 +978,9 @@ msgstr ""
 "запустит другие два таймера. ``ScoreTimer`` будет увеличивать счет на 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
+#, fuzzy
 msgid ""
-"In ``_on_MobTimer_timeout()`` we will create a mob instance, pick a random "
+"In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."

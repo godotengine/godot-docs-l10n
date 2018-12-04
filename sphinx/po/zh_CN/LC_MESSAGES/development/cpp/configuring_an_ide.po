@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,7 @@ msgid ""
 "We assume that you already `cloned <https://github.com/godotengine/godot>`_ "
 "and :ref:`compiled <toc-devel-compiling>` Godot."
 msgstr ""
-"假设你已经能够`克隆<https://github.com/godotengine/godot>`_ 并 :ref:`编译 "
+"假设你已经能够 `克隆 <https://github.com/godotengine/godot>`_ 并 :ref:`编译 "
 "<toc-devel-compiling>` Godot 了。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:9
@@ -35,40 +35,43 @@ msgid ""
 "on the command line, but if you want to work with an IDE (Integrated "
 "Development Environment), here are setup instructions for some popular ones:"
 msgstr ""
+"你可以使用任何文本编辑器和在命令行上调用``scons``轻松开发Godot，但是如果你想"
+"使用IDE（集成开发环境），这里有一些流行的设置说明："
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:13
 msgid ""
 ":ref:`Qt Creator <doc_configuring_an_ide_qtcreator>` (all desktop platforms)"
-msgstr ""
+msgstr "：ref：`Qt Creator <doc_configuring_an_ide_qtcreator>`（所有桌面平台）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:14
 msgid ""
 ":ref:`Kdevelop <doc_configuring_an_ide_kdevelop>` (all desktop platforms)"
-msgstr ""
+msgstr "：ref：`Kdevelop <doc_configuring_an_ide_kdevelop>`（所有桌面平台）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:15
 msgid ":ref:`Xcode <doc_configuring_an_ide_xcode>` (macOS)"
-msgstr ""
+msgstr "：ref：`Xcode <doc_configuring_an_ide_xcode>`（macOS）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:16
 msgid ":ref:`Visual Studio <doc_compiling_for_windows_install_vs>` (Windows)"
 msgstr ""
+"：ref：`Visual Studio <doc_compiling_for_windows_install_vs>`（Windows）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:17
 msgid ""
 ":ref:`Visual Studio Code<doc_configuring_an_ide_vscode>` (all desktop "
 "platforms)"
 msgstr ""
+"：ref：`Visual Studio Code <doc_configuring_an_ide_vscode>`（所有桌面平台）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:19
 msgid ""
 "It is possible to use other IDEs, but their setup is not documented yet."
-msgstr ""
+msgstr "可以使用其他IDE，但尚未记录其设置。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:24
-#, fuzzy
 msgid "Qt Creator"
-msgstr "遍历（Iterator）"
+msgstr "Qt Creator"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:27
 msgid "Importing the project"
@@ -135,6 +138,9 @@ msgid ""
 "environment variable, so you may have to use the full path to the SCons "
 "binary."
 msgstr ""
+"在* Command *字段中输入``scons``。 如果它失败并且“无法启动进程”scons“'，则可"
+"能意味着``scons``不在您的``PATH``环境变量中，因此您可能必须使用SCons二进制文"
+"件的完整路径。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:65
 msgid ""
@@ -153,13 +159,12 @@ msgid "Open the *Run* tab."
 msgstr "打开 *运行（Run）* 切页。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:72
-#, fuzzy
 msgid ""
 "Point the *Executable* to your compiled Godot binary (e.g: ``%{buildDir}/bin/"
 "godot.x11.opt.tools.64``)"
 msgstr ""
-"把 *可执行文件（Executable）* 设置为你编译出来的 Godot 二进制文件（例如：``"
-"%{buildDir}\\bin\\godot.windows.tools.64.exe`` ）"
+"将* Executable *指向编译的Godot二进制文件（例如：``％{buildDir} / bin / "
+"godot.x11.opt.tools.64``）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:73
 msgid ""
@@ -179,7 +184,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:79
 msgid "Updating Sources after pulling latest commits"
-msgstr ""
+msgstr "在提取最新提交后更新源"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:81
 msgid ""
@@ -191,6 +196,10 @@ msgid ""
 "coding in it. A simple way to check these things, is to right click at your "
 "root folder in the \"Projects View\" and click on \"Edit files...\""
 msgstr ""
+"作为开发人员，您通常希望经常从上游git存储库或特定的fork等提取最新的提交。但是"
+"这会带来一点问题：随着开发的继续，添加或删除源文件（和文件夹）。 这些更改也需"
+"要反映在Qt Creator的项目文件中，因此您可以继续在其中进行编码。 检查这些内容的"
+"一种简单方法是右键单击“项目视图”中的根文件夹，然后单击“编辑文件...”"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:91
 msgid ""
@@ -201,11 +210,13 @@ msgid ""
 "Filter\" button. A simple click on \"Ok\" and you're ready to continue your "
 "work."
 msgstr ""
+"现在应该出现一个新的对话框，其功能类似于“导入项目”部分的第三步中的对话框。 现"
+"在，您可以检查是否要添加/删除特定文件和/或文件夹。 您可以通过单击鼠标或单"
+"击“应用过滤器”按钮进行选择。 只需单击“确定”，即可继续工作。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:99
-#, fuzzy
 msgid "Code style configuration"
-msgstr "构建配置："
+msgstr "代码样式配置"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:101
 msgid ""
@@ -215,6 +226,10 @@ msgid ""
 "project. You can change this behavior by changing the \"Code Style\" in "
 "*Options* -> *C++*."
 msgstr ""
+"开发人员必须遵循以下项目：ref：`code style <doc_code_style_guidelines>`，IDE"
+"应该帮助他们做到这一点。 默认情况下，Qt Creator确实使用空格进行缩进，这对于"
+"Godot项目是不正确的。 您可以通过更改* Options *  - > * C ++ *中的“Code "
+"Style”来更改此行为。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:108
 msgid ""
@@ -222,17 +237,19 @@ msgid ""
 "Code Style* button to set a new code style. Set a name for it (e.g. Godot) "
 "and change the Tab policy to be *Tabs Only*."
 msgstr ""
+"单击*编辑*以更改当前设置，然后单击*复制内置代码样式*按钮以设置新的代码样式。 "
+"为它设置一个名称（例如Godot）并将Tab策略更改为* Tabs Only *。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:117
-#, fuzzy
 msgid "KDevelop"
-msgstr "开发"
+msgstr "KDevelop"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:119
 msgid ""
 "`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
 "desktop platforms."
 msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_是一个适用于所有桌面平台的免费开源IDE。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:121
 msgid ""
@@ -243,9 +260,8 @@ msgstr ""
 "当然，你也可以只是跟着后面的教程做。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:124
-#, fuzzy
 msgid "Start by opening KDevelop and choosing \"open project\"."
-msgstr "启动 Kdevelop 然后选择 “打开项目（open project）”。"
+msgstr "首先打开KDevelop并选择“开放项目”。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:128
 msgid "Choose the directory where you cloned Godot."
@@ -254,7 +270,7 @@ msgstr "选择你克隆好的 Godot 源代码的目录。"
 #: ../../docs/development/cpp/configuring_an_ide.rst:130
 msgid ""
 "On the next screen, choose \"Custom Build System\" for the *Project manager*."
-msgstr ""
+msgstr "在下一个屏幕上，为*项目经理*选择“自定义构建系统”。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:134
 msgid "Now that the project has been imported, open the project configuration."
@@ -266,32 +282,28 @@ msgstr "添加下面这些头文件（导入）目录："
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:151
 msgid "Apply the changes."
-msgstr ""
+msgstr "应用更改。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:153
-#, fuzzy
 msgid ""
 "Switch to the \"Custom Build System\" tab. Add a build configuration and "
 "keep the build directory blank. Enable build tools and add ``scons`` as the "
 "executable then add ``platform=x11 target=debug`` (``platform=osx`` if "
 "you're on macOS) as the arguments."
 msgstr ""
-"应用修改，然后切换到 “自定义构建系统（Custom Buildsystem）” 切页。 构建目录我"
-"们可以留空。 启用构建工具（build tools）选项并且添加 ``scons`` 作为可执行的构"
-"建系统（executable ）。 添加 ``platform=x11 target=debug`` (如果你使用的是"
-"macOS ，请使用``platform=osx``) 作为参数（arguments）。"
+"切换到“自定义构建系统”选项卡。 添加构建配置并将构建目录保留为空。 启用构建工"
+"具并添加``scons``作为可执行文件，然后添加``platform = x11 target = "
+"debug``（如果你在macOS上，``platform = osx``）作为参数。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:160
-#, fuzzy
 msgid ""
 "Next we need to tell KDevelop where to find the binary. From the \"Run\" "
 "menu, choose \"Configure Launches\"."
 msgstr ""
-"接下来要告诉 KDevelop 去哪里找构建好的可执行文件。 从 \"运行（Run）\"  菜单选"
-"择  “配置启动项（Configure Launches）”。"
+"接下来我们需要告诉KDevelop在哪里找到二进制文件。 从“运行”菜单中，选择“配置启"
+"动”。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:165
-#, fuzzy
 msgid ""
 "Click \"Add\" if no launcher exists. Then add the path to your executable in "
 "the executable section. Your executable should be located in the ``bin/`` "
@@ -299,9 +311,9 @@ msgid ""
 "name could be different depending on your platform and depending on your "
 "build options)."
 msgstr ""
-"如果没有任何启动项，那么点击“新建 （Add new）” 。然后添在可执行文件这儿选择编"
-"译好的二进制文件。你编译好的可执行文件放在源代码的 ``bin/``  子目录下， 文件"
-"名是 ``godot.x11.tools.64`` (文件名会根据你的平台和构建配置有所不同)。"
+"如果没有启动器，请单击“添加”。 然后在可执行部分中添加可执行文件的路径。 你的"
+"可执行文件应该位于``bin /``子目录中，应该命名为``godot.x11.tools.64``（根据你"
+"的平台和你的构建选项，名称可能会有所不同）。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:173
 msgid "That's it! Now you should be good to go :)"
@@ -309,12 +321,11 @@ msgstr "好了，现在你可以启程了 :)"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:179
 msgid "Xcode"
-msgstr ""
+msgstr "Xcode"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:182
-#, fuzzy
 msgid "Project Setup"
-msgstr "工程准备"
+msgstr "项目设置"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:184
 msgid "Create an Xcode external build project anywhere"
@@ -390,9 +401,8 @@ msgid "Add Godot Source to the Project:"
 msgstr "把 Godot 源码添加到项目："
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:215
-#, fuzzy
 msgid "Drag and drop Godot source into project file browser."
-msgstr "把 Godot 源码目录拖到 Xcode 窗口中。"
+msgstr "将Godot源拖放到项目文件浏览器中。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:216
 msgid "Uncheck *Create External Build System*"
@@ -510,45 +520,50 @@ msgid "It should break at the point!"
 msgstr "这应该能够触发你下的断点！"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:267
-#, fuzzy
 msgid "Visual Studio Code"
-msgstr "Visual Studio 或 VS Code"
+msgstr "Visual Studio Code"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:269
 msgid ""
 "Ensure that C/C++ extension is installed. You can find instructions in `docs "
 "<https://code.visualstudio.com/docs/languages/cpp>`_."
 msgstr ""
+"确保已安装C / C ++扩展。 您可以在`docs <https://code.visualstudio.com/docs/"
+"languages/cpp>`_中找到相关说明。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:271
 msgid "Now open cloned godot folder in VS Code (File > Open Folder...)"
-msgstr ""
+msgstr "现在在VS Code中打开克隆的godot文件夹（文件>打开文件夹...）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:273
 msgid ""
 "In order to build the project, we need configurations files: *launch.json* "
 "and *tasks.json*. To create them:"
 msgstr ""
+"为了构建项目，我们需要配置文件：* launch.json *和* tasks.json *。 要创建它"
+"们："
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:276
 msgid "Open Debug view (Ctrl + Shift + D) and select cogwheel with orange dot:"
-msgstr ""
+msgstr "打开Debug视图（Ctrl + Shift + D）并选择带橙色点的齿轮："
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:280
 msgid ""
 "Select *C++ (GDB/LLDB)* (it might be slightly differently called on macOS or "
 "Windows)"
-msgstr ""
+msgstr "选择* C ++（GDB / LLDB）*（在macOS或Windows上可能略有不同）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:282
 msgid "Update *launch.json* to match:"
-msgstr ""
+msgstr "更新* launch.json *以匹配："
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:286
 msgid ""
 "(Note that *godot.x11.tools.64* in \"program\" value might be differently "
 "called on macOS or Windows)"
 msgstr ""
+"（注意，“program”值中的* godot.x11.tools.64 *可能在macOS或Windows上被不同地调"
+"用）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:288
 msgid ""
@@ -556,18 +571,20 @@ msgid ""
 "with *Configure Task* button. Tap it and select *Create tasks.json file from "
 "template*, then select *Others*"
 msgstr ""
+"通过启动调试过程（F5）创建* tasks.json *。 VS Code将显示带有* Configure Task "
+"*按钮的对话框。 点击它并从模板*中选择*创建tasks.json文件，然后选择*其他*"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:290
 msgid "Update *tasks.json* to match:"
-msgstr ""
+msgstr "更新* tasks.json *以匹配："
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:294
 msgid "(Note that *platform=x11* will be different for macOX and Windows)"
-msgstr ""
+msgstr "（注意* platform = x11 *对于macOX和Windows会有所不同）"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:296
 msgid "You can now start Debug process again to test that everything works."
-msgstr ""
+msgstr "您现在可以再次启动调试过程以测试一切正常。"
 
 #: ../../docs/development/cpp/configuring_an_ide.rst:298
 msgid ""
@@ -575,3 +592,5 @@ msgid ""
 "that some dependencies are missing. Check :ref:`Compiling for X11 (Linux, "
 "\\*BSD) <doc_compiling_for_x11>`"
 msgstr ""
+"如果构建阶段失败，请检查控制台是否有提示。 在Linux上，很可能缺少某些依赖项。 "
+"检查：ref：`编译X11（Linux，\\ * BSD）<doc_compiling_for_x11>`"

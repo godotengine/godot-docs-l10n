@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,8 @@ msgid "It can be extended (to have more functions)."
 msgstr "Il peut être étendu (pour avoir plus de fonctions)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-msgid "It can be added to other nodes as a child."
+#, fuzzy
+msgid "It can be added to another node as a child."
 msgstr "Il peut être ajouté à d'autres nœuds en tant qu'enfant."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
@@ -203,12 +204,11 @@ msgstr ""
 "\"Hello World\". Ceci nous initie à l'utilisation de l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-#, fuzzy
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"Si vous lancer l'exécutable godot en dehors d'un projet, le Project Manager "
+"Si vous lancer l'exécutable Godot en dehors d'un projet, le Project Manager "
 "apparaît. Cela aide les développeurs à gérer leurs projets."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
@@ -313,7 +313,6 @@ msgid "Aaaand... Oops."
 msgstr "Eeeeet... Oups."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
-#, fuzzy
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
@@ -392,7 +391,6 @@ msgstr ""
 "projet. Essayez ceci maintenant."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
-#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,16 +37,18 @@ msgstr ""
 "скриптовые языки!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
+#, fuzzy
 msgid ""
-"This is great, mostly due the large amount of flexibility provided, but it "
-"also makes our work supporting languages more difficult."
+"This is great, mostly due to the large amount of flexibility provided, but "
+"it also makes our work supporting languages more difficult."
 msgstr ""
 "Это здорово, из-за большей гибкости, но также это затрудняет нашу работу по "
 "поддержке различных языков."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
+#, fuzzy
 msgid ""
-"The \"Main\" languages in Godot, though, are GDScript and VisualScript. The "
+"The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
 "makes the experience smoother; both have slick editor integration, while C# "
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
@@ -354,9 +356,10 @@ msgstr ""
 "можете указать язык сценария, имя класса и другие параметры."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
+#, fuzzy
 msgid ""
-"In GDScript the file itself represents the class, so the class name field is "
-"not editable."
+"In GDScript, the file itself represents the class, so the class name field "
+"is not editable."
 msgstr ""
 "В GDScript сам файл представляет собой класс, поэтому поле имени класса не "
 "редактируется."
@@ -387,9 +390,10 @@ msgstr ""
 "свойстве сценария в \"Инспекторе\":"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
+#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
-"highlighted in the above image. This will bring you to the script editor "
+"highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
 "Чтобы отредактировать сценарий, нажмите одну из кнопок, которые отмечены в "
@@ -490,11 +494,12 @@ msgstr ""
 "здесь как NodePath), и имя метода для запуска."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
+#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
 "select a node, the NodePath at the bottom will automatically update to point "
-"a relative path from the emitting node to the selected node."
+"to a relative path from the emitting node to the selected node."
 msgstr ""
 "В левом верхнем разделе отображается список узлов вашей сцены, где имя "
 "излучающего узла выделено красным цветом. Выберите узел \"Panel\". Когда вы "
@@ -514,9 +519,10 @@ msgstr ""
 "генерировать эту функцию перед настройкой соединения."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
+#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
-"this is a scripting tutorial, so for the sake of learning, let's dive in to "
+"this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
 "На этом завершим наше обучение по использованию визуального интерфейса. Всё "

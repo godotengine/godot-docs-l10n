@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:14
 msgid "Python 2.7+ or Python 3.5+"
-msgstr ""
+msgstr "Python 2.7+或Python 3.5+"
 
 #: ../../docs/development/compiling/compiling_for_osx.rst:15
 msgid "SCons build system"
@@ -44,16 +44,22 @@ msgstr "Scons 构建系统"
 msgid "Xcode (or the more lightweight Command Line Tools for Xcode)"
 msgstr "或者更轻量的Command Line Tools for Xcode"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:19
+#: ../../docs/development/compiling/compiling_for_osx.rst:18
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_osx.rst:22
 msgid "Compiling"
 msgstr "开始编译"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:21
+#: ../../docs/development/compiling/compiling_for_osx.rst:24
 msgid ""
 "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr "启动终端，然后进入引擎源代码的根目录。键入下面的指令："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:27
+#: ../../docs/development/compiling/compiling_for_osx.rst:30
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the \"bin"
 "\" subdirectory. This executable file contains the whole engine and runs "
@@ -62,7 +68,7 @@ msgstr ""
 "如果一切顺利，编译结果将存放在 ``bin`` 目录下。 这个可执行文件包含了整个引"
 "擎，无需任何依赖项。 执行它将会启动项目管理器。"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:32
+#: ../../docs/development/compiling/compiling_for_osx.rst:35
 msgid ""
 "To create an .app like in the official builds, you need to use the template "
 "located in ``misc/dist/osx_tools.app``. Typically, for a \".64\" optimised "
@@ -72,11 +78,11 @@ msgstr ""
 "app``的模版来做。像这样一个为“.64”优化的二进制程序的构建（scons p=osx "
 "target=release_debug），通常这么做："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:44
+#: ../../docs/development/compiling/compiling_for_osx.rst:47
 msgid "Compiling for 32 and 64-bit"
 msgstr "同时为32位和64位编译"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:46
+#: ../../docs/development/compiling/compiling_for_osx.rst:49
 msgid ""
 "All macOS versions after 10.6 are 64-bit exclusive, so the executable will "
 "be a \".64\" file by default for most users. If you would like to compile a "
@@ -87,51 +93,62 @@ msgstr ""
 "为“.64”的。如果要编译同时包含32位和64位代码的“.fat”可执行文件，可以通过在"
 "scons命令中指定位设定来实现，如下所示："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:56
+#: ../../docs/development/compiling/compiling_for_osx.rst:59
 msgid "Cross-compiling"
 msgstr "交叉编译"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:58
+#: ../../docs/development/compiling/compiling_for_osx.rst:61
 msgid ""
 "It is possible to compile for macOS in a Linux environment (and maybe also "
 "in Windows with Cygwin). For that you will need `OSXCross <https://github."
 "com/tpoechtrager/osxcross>`__ to be able to use macOS as target. First, "
 "follow the instructions to install it:"
 msgstr ""
+"可以在Linux环境中编译macOS（也可能在带有Cygwin的Windows中）。 为此，您需要"
+"`OSXCross <https://github.com/tpoechtrager/osxcross>`__才能使用macOS作为目"
+"标。 首先，按照说明安装它："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:63
+#: ../../docs/development/compiling/compiling_for_osx.rst:66
 msgid ""
 "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>` "
 "somewhere on your machine (or download a zip file and extract it somewhere), "
 "e.g.:"
 msgstr ""
+"在您机器的某个地方克隆 `OSXCross存储库 <https://github.com/tpoechtrager/"
+"osxcross>`（或下载一个zip文件并将其解压缩到某处），例如："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:71
+#: ../../docs/development/compiling/compiling_for_osx.rst:74
 msgid ""
 "Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
 "osxcross#packaging-the-sdk"
 msgstr ""
+"按照说明打包SDK：https：//github.com/tpoechtrager/osxcross#packaging-the-sdk"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:73
+#: ../../docs/development/compiling/compiling_for_osx.rst:76
 msgid ""
 "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
 "osxcross#installation"
 msgstr ""
+"按照说明安装OSXCross：https：//github.com/tpoechtrager/osxcross#installation"
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:76
+#: ../../docs/development/compiling/compiling_for_osx.rst:79
 msgid ""
 "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
 "OSXCross installation (the same place where you cloned the repository/"
 "extracted the zip), e.g.:"
 msgstr ""
+"之后，您需要将``OSXCROSS_ROOT``定义为OSXCross安装的路径（您克隆存储库/提取zip"
+"的位置），例如："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:84
+#: ../../docs/development/compiling/compiling_for_osx.rst:87
 msgid "Now you can compile with SCons like you normally would:"
-msgstr ""
+msgstr "现在您可以像通常那样使用SCons进行编译："
 
-#: ../../docs/development/compiling/compiling_for_osx.rst:90
+#: ../../docs/development/compiling/compiling_for_osx.rst:93
 msgid ""
 "If you have an OSXCross SDK version different from the one expected by the "
 "SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "
 "argument:"
 msgstr ""
+"如果您的OSXCross SDK版本与SCons构建系统所期望的版本不同，您可以使用"
+"``osxcross_sdk``参数指定自定义版本："

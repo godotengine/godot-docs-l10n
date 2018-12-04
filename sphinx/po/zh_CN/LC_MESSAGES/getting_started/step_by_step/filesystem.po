@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,12 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
+#, fuzzy
 msgid ""
 "File systems are yet another hot topic in engine development. The file "
 "system manages how the assets are stored and how they are accessed. A well-"
 "designed file system also allows multiple developers to edit the same source "
-"files and assets while collaborating together."
+"files and assets while collaborating."
 msgstr ""
 "文件系统也是游戏引擎开发的热门话题之一。文件系统掌管着资源(assets)的存取。一"
 "个好的文件系统能让团队中的成员们共同编辑相同的源文件和资源。"
@@ -68,10 +69,11 @@ msgstr ""
 "源(sub-resources)，那么所有的子资源都会和它一起打包在一个文件当中。"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
+#, fuzzy
 msgid ""
 "In general, the Godot file system avoids using metadata files. The reason "
 "for this is simple, existing asset managers and VCSs are simply much better "
-"than anything we can implement, so Godot tries the best to play along with "
+"than anything we can implement, so Godot tries its best to play along with "
 "SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
 "总的来讲，Godot的文件系统并未使用元数据文件，理由很简单，现在的各种资产管理系"
@@ -83,7 +85,6 @@ msgid "Example of a file system contents:"
 msgstr "举个例子，一个文件系统内有："
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:46
-#, fuzzy
 msgid "project.godot"
 msgstr "project.godot"
 

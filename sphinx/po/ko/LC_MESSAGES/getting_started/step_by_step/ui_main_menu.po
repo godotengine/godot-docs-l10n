@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,9 @@ msgid "A game UI with a health bar, energy bar, bomb and money counters"
 msgstr "체력 막대, 에너지 막대, 폭탄과 돈의 수를 표시하는 게임 UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
+#, fuzzy
 msgid ""
-"You will learn how to design game UI efficiently, and how to use Godot's "
+"You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
@@ -91,15 +92,14 @@ msgid "The UI's rough plan or mockup"
 msgstr "UI의 대략적인 계획이나 모형"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
-#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
-"자리 표시자가 꼭 지저분한 것은 아니지만, 그래도 그래픽을 간단하고 깨끗하게 유"
-"지해야 합니다. 당신이 UI를 실행 및 테스트 하기 전까진 특수 효과나, 애니메이"
-"션, 그리고 구체적인 삽화는 피하세요. 그렇지 않으면:"
+"자리 표시자가 꼭 지저분할 필요는 없지만, 그래픽을 간단하고 깨끗하게 유지해야 "
+"합니다. 당신이 UI를 실행 및 테스트 하기 전까진 특수 효과나, 애니메이션, 그리"
+"고 구체적인 삽화는 피하세요. 그렇지 않으면:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:51
 msgid ""
@@ -460,13 +460,15 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "로고와 다른 UI 요소들 사이에 공간이 없습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
+#, fuzzy
 msgid ""
 "To center the characters on the right, we'll use a ``CenterContainer``.  Add "
 "a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the "
 "Inspector, scroll down to the ``Size Flags`` category and click on the field "
-"to the right of the ``Vertical`` property, and check ``Expand``. Do the same "
-"for the ``Horizontal`` property. Finally drag and drop the Characters into "
-"the ``CenterContainer``. The Characters element will center automatically."
+"to the right of the ``Vertical`` property, and check ``Expand`` in addition "
+"to ``Fill``. Do the same for the ``Horizontal`` property. Finally drag and "
+"drop the Characters into the ``CenterContainer``. The Characters element "
+"will center automatically."
 msgstr ""
 "오른쪽에 캐릭터가 중앙에 오게 하려면, 우리는 ``CenterContainer`` 를 사용할 겁"
 "니다. ``CenterContainer`` 노드를 ``HBoxContainer`` 의 자식으로 추가하세요. "
@@ -506,13 +508,15 @@ msgstr ""
 "UI 레이아웃을 유지하기 위해 다른 두 노드 사이에 새 컨테이너를 배치합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
+#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
 "``MenuOptions`` node. In the Inspector, scroll down to the ``Size Flags`` "
 "category. Click on the field to the right of the ``Vertical`` property, and "
-"check ``Expand``. The container expands to take all the available vertical "
-"space. But it respects its neighbors, the ``Logo`` and ``Version`` elements."
+"check ``Expand`` in addition to ``Fill``. The container expands to take all "
+"the available vertical space. But it respects its neighbors, the ``Logo`` "
+"and ``Version`` elements."
 msgstr ""
 "이제 우리는 메뉴 옵션들을 그룹화하여, 그들의 컨테이너를 가능한 많은 수직 공간"
 "을 차지하도록 확장시킬 수 있습니다. ``MenuOptions`` 노드를 선택합니다. 인스펙"
@@ -568,9 +572,10 @@ msgstr ""
 "가 있는 게임 사용자 인터페이스를 만들 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
+#, fuzzy
 msgid ""
-"Responsive User Interface is all about making sure our UIs scale well on all "
-"screen types. TV screens and computer displays have different sizes and "
+"A responsive User Interface is all about making sure our UIs scale well on "
+"all screen types. TV screens and computer displays have different sizes and "
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""

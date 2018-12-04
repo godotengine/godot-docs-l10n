@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,27 +19,28 @@ msgstr ""
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:4
 msgid "Thread safe APIs"
-msgstr ""
+msgstr "线程安全的API"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:7
 msgid "Threads"
-msgstr ""
+msgstr "线程"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:9
 msgid ""
 "Using threads is a common way to balance processing scatter it across CPUs "
 "and cores. Godot supports multi threading, but not in the whole engine."
 msgstr ""
+"使用线程是一种平衡进程的常用方法, 它可将工作分散到各个CPU和核心中。 Godot支持"
+"多线程，但不是在整个引擎中。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:12
-#, fuzzy
 msgid ""
 "Below is a list of the areas in Godot and how they can be used with threads."
-msgstr "以下是 Godot 中大多数功能标签的列表。 请记住它们*区分大小写*："
+msgstr "下面是Godot中的区域列表以及它们如何与线程一起使用的介绍。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:15
 msgid "Global scope"
-msgstr ""
+msgstr "全局范围"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:17
 msgid ""
@@ -48,6 +49,9 @@ msgid ""
 "servers, ensure threaded or thread safe operation is enabled in the project "
 "settings!)."
 msgstr ""
+":ref:`Global Scope<class_@GlobalScope>` 的实例都是线程安全的。 支持从线程访问"
+"服务器（对于VisualServer和Physics服务器，确保在项目设置中启用了线程安全操"
+"作！）。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:19
 msgid ""
@@ -55,10 +59,12 @@ msgid ""
 "in servers and controls them from threads. Of course, it requires a bit more "
 "code, as this is used directly and not within the scene tree."
 msgstr ""
+"这使得它成为了, 在服务器中创建数十万个实例并从线程控制这些实例的代码, 的理想"
+"选择。 当然，还需要更多的代码, 因为这是直接使用的而不是嵌入场景树中使用 。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:22
 msgid "Scene tree"
-msgstr ""
+msgstr "场景树"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:24
 msgid ""
@@ -66,6 +72,8 @@ msgid ""
 "use mutexes when sending data between threads. If you want to call functions "
 "from a thread, the *call_deferred* function may be used:"
 msgstr ""
+"与活动场景树交互 **不是** 线程安全的。 确保在线程之间发送数据时使用互斥锁。 "
+"如果要从线程调用函数，可以使用 *call_deferred* 函数："
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:33
 msgid ""
@@ -73,11 +81,12 @@ msgid ""
 "active tree is fine. This way, parts of a scene can be built or instantiated "
 "in a thread, then added in the main thread:"
 msgstr ""
+"但是，在活动树外创建场景块（树排列中的节点）很好。 这样，可以在线程中构建或实"
+"例化场景的一部分，然后在主线程中添加："
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:43
-#, fuzzy
 msgid "GDScript arrays, dictionaries"
-msgstr "GDScript 格式化字符串"
+msgstr "GDScript数组，字典"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:45
 msgid ""
@@ -85,6 +94,8 @@ msgid ""
 "anything that changes the container size (resizing, adding or removing "
 "elements) requires locking a mutex."
 msgstr ""
+"在GDScript中，可以从多个线程读取和写入元素，但是任何改变容器大小（调整大小，"
+"添加或删除元素）的东西都需要锁定互斥。"
 
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:48
 msgid "Resources"
@@ -97,3 +108,5 @@ msgid ""
 "Scenes, textures, meshes, etc. Can be loaded and manipulated on threads, "
 "then added to the active scene in the main thread."
 msgstr ""
+"不支持从多个线程修改唯一资源，但完全支持在线程上加载它们或处理引用。 场景，纹"
+"理，网格等可以在线程上加载和操作，然后添加到主线程中的活动场景中。"

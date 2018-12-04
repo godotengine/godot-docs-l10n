@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,9 @@ msgid "Intro"
 msgstr "Введение"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
+#, fuzzy
 msgid ""
-"In this tutorial you will connect a character to a life bar and animate the "
+"In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
 "В этом уроке вы присоедините шкалу жизни к персонажу и сделаете анимацию "
@@ -109,14 +110,15 @@ msgid "To do this, we will use **signals**."
 msgstr "Для этого мы будем использовать **сигналы**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
+#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
 "signal and receive the information. It's a powerful tool we use a lot for "
 "User Interface and achievement systems. You don't want to use them "
-"everywhere though. Connecting two nodes adds some coupling between them. "
+"everywhere, though. Connecting two nodes adds some coupling between them. "
 "When there's a lot of connections, they become hard to manage. For more "
-"information on check out the `signals video tutorial <https://youtu.be/"
+"information, check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
 "Сигналы — это своя версия шаблона Observer в Godot. Они позволяют нам "
@@ -144,13 +146,14 @@ msgstr ""
 "`end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
+#, fuzzy
 msgid ""
-"Load the ``start`` project in Godot. In the ``FileSystem`` dock double click "
-"on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 characters "
-"face each other. The pink enemy attacks and damages the green square at "
-"regular time intervals, until its death. Feel free to try out the game: the "
-"basic combat mechanics already work. But as the character isn't connected to "
-"the life bar the ``GUI`` doesn't do anything."
+"Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
+"click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
+"characters face each other. The pink enemy attacks and damages the green "
+"square at regular time intervals, until its death. Feel free to try out the "
+"game: the basic combat mechanics already work. But as the character isn't "
+"connected to the life bar, the ``GUI`` doesn't do anything."
 msgstr ""
 "Загрузите проект ``start`` в Godot. В ``Файловой системе`` дважды щелкните "
 "на LevelMockup.tscn, чтобы открыть её. Это макет RPG игры, где 2 персонажа "
@@ -186,9 +189,11 @@ msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "Дерево сцены, с GUI которая отображает своих детей"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
+#, fuzzy
 msgid ""
-"The GUI scene encapsulates all of the Game User Interface. It comes with a "
-"barebones script where we get the path to nodes that exist inside the scene:"
+"The GUI scene encapsulates all of the game's Graphical User Interface. It "
+"comes with a barebones script where we get the path to nodes that exist "
+"inside the scene:"
 msgstr ""
 "Сцена GUI инкапсулирует весь интерфейс игры. Он идет с каркасом скрипта, где "
 "мы получаем путь к узлам, которые существуют внутри сцены:"
@@ -450,11 +455,12 @@ msgstr ""
 "бесплатно."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
+#, fuzzy
 msgid ""
-"With this in mind let's connect the ``GUI`` to the ``Player``. Click on the "
+"With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
-"and click on the Node tab. This is the place to connect nodes to listen the "
-"one you selected."
+"and click on the Node tab. This is the place to connect nodes to listen to "
+"the one you selected."
 msgstr ""
 "С учетом этого давайте подключим ``GUI`` к ``Player``. Щелкните на узле "
 "``Player`` в панели сцен, чтобы выбрать его. Направляйтесь а инспектор и "
@@ -538,6 +544,14 @@ msgid ""
 "creates the method inside the ``GUI`` node. The script editor opens with the "
 "cursor inside a new ``_on_Player_health_changed`` function."
 msgstr ""
+"В нижней части окна вы найдете путь к выбранному узлу. Мы заинтересованы во "
+"втором поле под названием \"Method in Node\". Это метод на узле ``GUI``, "
+"который вызывается при излучении сигнала. Этот метод получает значения, "
+"отправленные с сигналом и позволяет обработать их. Если вы посмотрите "
+"правее, там есть переключатель \"сделать функцию\", который включен по "
+"умолчанию. Нажмите на кнопку подключения в нижней части окна. Godot создает "
+"метод внутри узла ``GUI``. Откроется редактор скриптов с курсором внутри "
+"новой функции ``_on_Player_health_changed``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:265
 msgid ""
@@ -546,63 +560,88 @@ msgid ""
 "method already, the \"Make Function\" option will keep it. You may replace "
 "the name with anything you'd like."
 msgstr ""
+"При подключении узлов из редактора Godot создает имя метода по шаблону: "
+"``_on_EmitterName_signal_name``. Если вы уже написали этот метод, опция "
+"\"Сделать функцию\" будет сохранять его. Вы можете заменить имя на другое."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:272
+#, fuzzy
 msgid "Godot writes the callback method for you and takes you to it"
-msgstr ""
+msgstr "Godot напишет метод обратного вызова для вас и доставит вас к нему"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
+#, fuzzy
 msgid ""
 "Inside the parens after the function name, add a ``player_health`` argument. "
-"When the player emits the ``health_changed`` signal it will send its current "
-"``health`` alongside it. Your code should look like:"
+"When the player emits the ``health_changed`` signal, it will send its "
+"current ``health`` alongside it. Your code should look like:"
 msgstr ""
+"В скобках после имени функции добавьте аргумент ``player_health``. Когда "
+"игрок излучает сигнал ``health_changed``, он посылает его текущее ``health`` "
+"вместе с ним. Код должен выглядеть так:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
+#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
-"be using PascalCase for method names & camelCase for method parameters which "
-"follows the official `C# naming conventions. <https://docs.microsoft.com/en-"
-"us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
+"be using PascalCase for method names & camelCase for method parameters, "
+"which follows the official `C# naming conventions. <https://docs.microsoft."
+"com/en-us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
+"Обработчик не преобразует PascalCase в snake_case, для примеров C# мы будем "
+"использовать PascalCase для имен методов и camelCase для параметров метода, "
+"которые следуют за официальными `C# naming conventions. <https://docs."
+"microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-"
+"conventions>`_"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
 msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
 msgstr ""
+"В Player.gd, когда Player посылает сигнал health\\_changed, он также "
+"посылает значение своего здоровья"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
+#, fuzzy
 msgid ""
-"Inside ``_on_Player_health_changed`` let's call a second function called "
+"Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
+"Внутри `` _on_Player_health_changed`` давайте вызовим вторую функцию под "
+"названием `` update_health`` и передадим его в переменную `` player_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:307
 msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
+"Мы можем напрямую изменить значение здоровья на `LifeBar` и `Number`. Есть "
+"две причины использовать этот метод:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
 msgid ""
 "The name makes it clear for our future selves and teammates that when the "
 "player took damage, we update the health count on the GUI"
 msgstr ""
+"Название дает понять, для нашего будущего себя и напарников, что когда игрок "
+"получил урон, мы обновляем счетчик здоровья на GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
 msgid "We will reuse this method a bit later"
-msgstr ""
+msgstr "Мы будем использовать этот метод чуть позже"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
 msgid ""
 "Create a new ``update_health`` method below ``_on_Player_health_changed``. "
 "It takes a new\\_value as its only argument:"
 msgstr ""
+"Создать новый метод ``update_health`` ниже ``_on_Player_health_changed``. В "
+"качестве единственного аргумента требуется new\\_value:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:327
 msgid "This method needs to:"
-msgstr ""
+msgstr "Этот метод должен:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:329
 msgid ""
@@ -614,11 +653,15 @@ msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
+#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
-"``Number``'s ``text`` property requires a string so we can't assign it to "
+"``Number``'s ``text`` property requires a string, so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
+"``str`` – это встроенная функция, которая преобразует значение в текст. "
+"Свойство ``text``узла ``Number`` требует строку, поэтому мы не можем "
+"назначить его в ``new_value`` напрямую"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
 msgid ""
@@ -627,23 +670,27 @@ msgid ""
 "of the game. Press F5 to test the game: the life bar updates with every "
 "attack!"
 msgstr ""
+"Также вызов ``update_health`` в конце функции ``_ready`` инициализировать "
+"``text`` узла ``Number``с правильным значением в начале игры. Нажмите "
+"клавишу F5, чтобы протестировать игру: жизни обновляются при каждой атаке!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
 msgstr ""
+"Оба узла Number и TextureProgress обновляются когда игрок принимает удар"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:365
 msgid "Animate the loss of life with the Tween node"
-msgstr ""
+msgstr "Анимировать смерть с помощью узла Tween"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
 "properties. ``Tween`` animates anything you'd like from a start to an end "
-"state over a certain duration. For example it can animate the health on the "
+"state over a certain duration. For example, it can animate the health on the "
 "``TextureProgress`` from its current level to the ``Player``'s new "
 "``health`` when the character takes damage."
 msgstr ""
@@ -792,7 +839,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
-msgid "The animation is smooth but the number is broken"
+msgid "The animation is smooth, but the number is broken"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
@@ -807,7 +854,7 @@ msgid "Try the game again to see a nice blocky animation."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
-msgid "By rounding out animated\\_health we hit two birds with one stone"
+msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
@@ -885,7 +932,7 @@ msgstr ""
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
-"interface. If we lower the alpha channel our interface fades out."
+"interface. If we lower the alpha channel, our interface fades out."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
@@ -912,7 +959,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
 msgid ""
-"This time we change the ``modulate`` property and have it animate from "
+"This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"

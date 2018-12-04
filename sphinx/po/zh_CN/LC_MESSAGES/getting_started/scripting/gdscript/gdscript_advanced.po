@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:4
 msgid "GDScript: An introduction to dynamic languages"
-msgstr ""
+msgstr "GDScript：动态语言导论"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 msgid "About"
@@ -31,66 +31,68 @@ msgid ""
 "efficiently. It focuses on common cases specific to the language, but also "
 "covers a lot of information on dynamically typed languages."
 msgstr ""
+"本教程旨在快速介绍如何更有效地使用GDScript。它只关注该语言的常见情况，但是也"
+"涉及许多关于动态类型语言的信息。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:13
 msgid ""
 "It's meant to be especially useful for programmers with little or no "
 "previous experience with dynamically typed languages."
-msgstr ""
+msgstr "对于以前很少或没有使用动态类型语言经验的程序员来说，它特别有用。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:17
 msgid "Dynamic nature"
-msgstr ""
+msgstr "动态性"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
 msgid "Pros & cons of dynamic typing"
-msgstr ""
+msgstr "动态类型的优缺点"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:22
 msgid ""
 "GDScript is a Dynamically Typed language. As such, its main advantages are "
 "that:"
-msgstr ""
+msgstr "GDScript是一种动态类型语言。因此，它的主要优点是："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:25
 msgid "The language is simple and easy to learn."
-msgstr ""
+msgstr "这种语言简单易学。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:26
 msgid "Most code can be written and changed quickly and without hassle."
-msgstr ""
+msgstr "大多数代码都可以快速地编写和更改，而且没有任何麻烦。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:27
 msgid "Less code written means less errors & mistakes to fix."
-msgstr ""
+msgstr "更少的代码编写意味着更少的错误和失误。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:28
 msgid "Easier to read the code (less clutter)."
-msgstr ""
+msgstr "更容易阅读代码(减少混乱)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:29
 msgid "No compilation is required to test."
-msgstr ""
+msgstr "测试不需要编译。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:30
 msgid "Runtime is tiny."
-msgstr ""
+msgstr "Runtime很小。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:31
 msgid "Duck-typing and polymorphism by nature."
-msgstr ""
+msgstr "本质上是鸭子类型和多态性。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:33
 msgid "While the main disadvantages are:"
-msgstr ""
+msgstr "主要缺点是："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:35
 msgid "Less performance than statically typed languages."
-msgstr ""
+msgstr "比静态类型语言的性能要低。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:36
 msgid "More difficult to refactor (symbols can't be traced)"
-msgstr ""
+msgstr "重构更困难(符号无法跟踪)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:37
 msgid ""
@@ -98,12 +100,14 @@ msgid ""
 "typed languages only appear while running the code (because expression "
 "parsing is more strict)."
 msgstr ""
+"在静态类型语言中，一些通常在编译时检测到的错误只会在运行代码时出现(因为表达式"
+"解析更严格)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:40
 msgid ""
 "Less flexibility for code-completion (some variable types are only known at "
 "run-time)."
-msgstr ""
+msgstr "代码完成的灵活性较低（一些变量类型只在运行时知道）。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:43
 msgid ""
@@ -115,10 +119,13 @@ msgid ""
 "entire game in GDScript and add small bits of C++ in the areas that need a "
 "performance boost."
 msgstr ""
+"这意味着Godot+GDScript是一个旨在快速高效创造游戏的组合。对于那些计算密集且不"
+"能从引擎内置工具(如矢量类型、物理引擎、数学库等)中获益的游戏，也可以使用c++。"
+"这仍然允许在GDScript中创建整个游戏，并在需要性能提升的地方添加少量c++。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:52
 msgid "Variables & assignment"
-msgstr ""
+msgstr "变量与赋值"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:54
 msgid ""
@@ -126,30 +133,32 @@ msgid ""
 "means that their type is not fixed, and is only modified through assignment. "
 "Example:"
 msgstr ""
+"动态类型语言中的所有变量都是“变体”的。这意味着它们的类型不是固定的，而是通过"
+"赋值修改的。例子："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:58
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:80
 msgid "Static:"
-msgstr ""
+msgstr "静态的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:66
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:94
 msgid "Dynamic:"
-msgstr ""
+msgstr "动态的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
-msgstr ""
+msgstr "作为函数参数："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:77
 msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
-msgstr ""
+msgstr "函数也是动态的，这意味着它们可以用不同的参数调用，例如:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
 msgid "Pointers & referencing:"
-msgstr ""
+msgstr "指针和引用："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:109
 msgid ""
@@ -158,6 +167,8 @@ msgid ""
 "The latter allows the object to be modified by other functions by passing a "
 "reference to the original one."
 msgstr ""
+"在静态语言（如C或C++）（以及在一定程度上，Java和C#）中，变量和指针/引用与变量"
+"之间存在区别。后者通过传递对原始函数的引用，允许其他函数修改对象。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:114
 msgid ""
@@ -166,18 +177,21 @@ msgid ""
 "automatically, which means they are erased when no longer used. Dynamically "
 "typed languages tend to use this memory model too. Some Examples:"
 msgstr ""
+"在C# 或Java中，不是内置类型（int，float，有时的String）的任何东西都是指针或引"
+"用。引用也是自动收集的垃圾，这意味着它们在不再使用时被擦除。动态类型的语言也"
+"倾向于使用这种内存模型。一些例子："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:120
 msgid "C++:"
-msgstr ""
+msgstr "C++:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:136
 msgid "Java:"
-msgstr ""
+msgstr "Java:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:154
 msgid "GDScript:"
-msgstr ""
+msgstr "GDScript:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:166
 msgid ""
@@ -188,10 +202,14 @@ msgid ""
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
+"在GDScript中，只有基本类型（int、float、string和vector类型）通过值传递给函数"
+"（值被复制）。其他所有（实例、数组、字典等）作为引用传递。继承 :ref:"
+"`class_Reference` （如果没有指定任何内容，则默认）的类在不使用时将被释放，对"
+"手动继承 :ref:`class_Object`的类也允许手动管理内存。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:174
 msgid "Arrays"
-msgstr ""
+msgstr "数组"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:176
 msgid ""
@@ -199,24 +217,26 @@ msgid ""
 "datatypes inside and are always dynamic (can be resized at any time). "
 "Compare for example arrays in statically typed languages:"
 msgstr ""
+"动态类型语言中的数组可以包含许多不同的混合数据类型，并且始终是动态的（可以随"
+"时调整大小）。 比较静态类型语言中的示例数组："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:203
 msgid "And in GDScript:"
-msgstr ""
+msgstr "在GDScript中："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:212
 msgid ""
 "In dynamically typed languages, arrays can also double as other datatypes, "
 "such as lists:"
-msgstr ""
+msgstr "在动态类型语言中，数组也可以作为其他数据类型的两倍存在，例如列表："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:222
 msgid "Or unordered sets:"
-msgstr ""
+msgstr "或无序集合："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:231
 msgid "Dictionaries"
-msgstr ""
+msgstr "字典"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:233
 msgid ""
@@ -226,6 +246,9 @@ msgid ""
 "This datatype is generally not present in such languages (or only on limited "
 "form)."
 msgstr ""
+"字典是动态类型化语言中的一个强大工具。来自静态类型化语言(如C++或C#)的大多数程"
+"序员忽略了它们的存在，使它们的工作变得不必要地更加困难。这种数据类型通常不存"
+"在于此类语言中(或仅以有限的形式)。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:239
 msgid ""
@@ -235,22 +258,27 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
+"字典可以将任何值映射到任何其他值，完全不考虑用作键或值的数据类型。与流行的观"
+"点相反，它们是有效的，因为它们可以通过哈希表实现。事实上，它们非常高效，一些"
+"语言甚至可以像实现字典一样实现数组。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:245
 msgid "Example of Dictionary:"
-msgstr ""
+msgstr "字典的例子:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:252
 msgid ""
 "Dictionaries are also dynamic, keys can be added or removed at any point at "
 "little cost:"
-msgstr ""
+msgstr "字典也是动态的，键可以在任何一点添加或删除，花费很少:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:261
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
 "with dictionaries. Here's a simple battleship game example:"
 msgstr ""
+"在大多数情况下，使用字典可以更容易地实现二维数组。这里有一个简单的战舰游戏的"
+"例子:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:294
 msgid ""
@@ -259,60 +287,62 @@ msgid ""
 "style syntax and indexing, which makes it useful for writing initial states "
 "and quick structs:"
 msgstr ""
+"字典还可以用作数据标记或快速结构。虽然GDScript字典类似于python字典，但它也支"
+"持Lua风格的语法和索引，这使得它对于编写初始状态和快速结构非常有用:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:318
 msgid "For & while"
-msgstr ""
+msgstr "For & while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:320
 msgid "Iterating in some statically typed languages can be quite complex:"
-msgstr ""
+msgstr "在一些静态类型的语言中迭代可能非常复杂:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:341
 msgid "This is usually greatly simplified in dynamically typed languages:"
-msgstr ""
+msgstr "这通常在动态类型语言中得到极大简化:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:348
 msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
 "allow iterating the keys:"
-msgstr ""
+msgstr "容器数据类型(数组和字典)是可迭代的。字典允许迭代键:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:356
 msgid "Iterating with indices is also possible:"
-msgstr ""
+msgstr "迭代索引也是可能的:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:363
 msgid "The range() function can take 3 arguments:"
-msgstr ""
+msgstr "range()函数可以有3个参数:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:371
 msgid "Some examples:"
-msgstr ""
+msgstr "一些例子:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:381
 msgid "Translate to:"
-msgstr ""
+msgstr "转变成："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:394
 msgid "And backwards looping is done through a negative counter:"
-msgstr ""
+msgstr "反向循环是通过一个负计数器完成的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:400
 msgid "Becomes:"
-msgstr ""
+msgstr "变成："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:408
 msgid "While"
-msgstr "条件循环（While）"
+msgstr "While"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:410
 msgid "while() loops are the same everywhere:"
-msgstr ""
+msgstr "while()循环在任何地方都是相同的:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:421
 msgid "Custom iterators"
-msgstr ""
+msgstr "自定义迭代器"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:422
 msgid ""
@@ -321,20 +351,25 @@ msgid ""
 "and ``_iter_get`` functions in your script. An example implementation of a "
 "forward iterator follows:"
 msgstr ""
+"如果默认的迭代器不能完全满足您的需求，您可以通过在脚本中覆盖Variant类"
+"的“_iter_init”、“_iter_next”和“_iter_get”函数来创建自定义迭代器。前向迭代器的"
+"一个示例实现如下:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:454
 msgid "And it can be used like any other iterator:"
-msgstr ""
+msgstr "它可以像任何其他迭代器一样使用："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:462
 msgid ""
 "Make sure to reset the state of the iterator in ``_iter_init``, otherwise "
 "nested for-loops that use custom iterators will not work as expected."
 msgstr ""
+"确保在 ``_iter_init``中重置迭代器的状态，否则使用自定义迭代器的嵌套for循环将"
+"无法正常工作。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:466
 msgid "Duck typing"
-msgstr ""
+msgstr "鸭子类型"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:468
 msgid ""
@@ -343,6 +378,8 @@ msgid ""
 "code design much simpler and straightforward to write, but it's not obvious "
 "how it works."
 msgstr ""
+"当从静态类型语言迁移到动态类型语言时，最难掌握的概念之一是鸭子类型。鸭子类型"
+"使整个代码设计更加简单和直接，但是它的工作方式并不明显。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:473
 msgid ""
@@ -350,6 +387,8 @@ msgid ""
 "tunnel, smashing everything on its way. The code for the rock, in a "
 "statically typed language would be something like:"
 msgstr ""
+"举个例子，想象一个大石头从隧道里掉下来，在路上砸碎了一切。在静态类型语言中石"
+"头的代码有点像："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:484
 msgid ""
@@ -361,6 +400,10 @@ msgid ""
 "very elegant to add a virtual method ``smash()`` to Entity only if a few of "
 "them can be smashed."
 msgstr ""
+"这样，任何能被岩石砸碎的东西都必须继承Smashable。如果一个人物、敌人、家具、小"
+"石块都易碎，他们需要从Smashable类继承，可能需要多次继承。如果不希望进行多重继"
+"承，那么它们必须继承像Entity这样的公共类。然而，如果只是其中几个能被粉碎的"
+"话，仅仅在Entity中添加一个虚拟方法 ``smash()`` 并不十分优雅。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:492
 msgid ""
@@ -368,6 +411,8 @@ msgid ""
 "sure you only have to define a ``smash()`` function where required and "
 "that's it. No need to consider inheritance, base classes, etc."
 msgstr ""
+"使用动态类型的语言，这将不是问题。鸭子类型确保您只需在需要的地方定义一个 "
+"``smash()`` 函数，就行了。无需考虑继承、基类等。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:501
 msgid ""
@@ -377,25 +422,30 @@ msgid ""
 "not what it inherits or the class type. The definition of Duck Typing should "
 "make this clearer:"
 msgstr ""
+"就是这样。如果击中大岩石的对象有一个 smash() 方法，它将被调用。不需要考虑继承"
+"或多态性。动态类型化语言只关心具有所需方法或成员的实例，而不关心它继承什么类"
+"型。鸭子类型的定义应该使这一点更清楚："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:507
 msgid ""
 "*\"When I see a bird that walks like a duck and swims like a duck and quacks "
 "like a duck, I call that bird a duck\"*"
 msgstr ""
+"*\"当我看到一只鸟像鸭子一样走路，像鸭子一样游泳，像鸭子一样呱呱叫时，我就叫它"
+"鸭子\"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:510
 msgid "In this case, it translates to:"
-msgstr ""
+msgstr "在这种情况下，它可转变成："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:512
 msgid ""
 "*\"If the object can be smashed, don't care what it is, just smash it.\"*"
-msgstr ""
+msgstr "*\"如果物体可以被砸碎，不要在意它是什么，只管砸碎它。\"*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:514
 msgid "Yes, we should call it Hulk typing instead."
-msgstr ""
+msgstr "是的，称它为“绿巨人”类型适合更合适。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:516
 msgid ""
@@ -404,8 +454,10 @@ msgid ""
 "exist (like Objective C), but GDScript is more strict, so checking if the "
 "function exists is desirable:"
 msgstr ""
+"有可能被击中的对象没有smash()函数。一些动态类型语言在方法调用不存在时简单地忽"
+"略它（如Objective C），但是GDScript更严格，因此需要检查函数是否存在："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:527
 msgid ""
 "Then, simply define that method and anything the rock touches can be smashed."
-msgstr ""
+msgstr "然后，简单地定义这个方法，岩石触碰的任何东西都可以被粉碎了。"

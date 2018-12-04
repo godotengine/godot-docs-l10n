@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:4
-#, fuzzy
 msgid "Custom resource format loaders"
-msgstr "自定义资源格式"
+msgstr "自定义资源格式加载器"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:7
 msgid "Introduction"
@@ -38,20 +37,19 @@ msgstr ""
 "须是无状态的。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:14
-#, fuzzy
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
 msgstr ""
-"本文假设读者已经知道如何创建 C++ 模块并对 Godot 的数据类型有所了解。 如果你还"
-"不具备这些知识，你需要先阅读本教程的其他文档。"
+"本指南假设读者知道如何创建C ++模块和Godot数据类型。 如果没有，请参考本指南："
+"ref：`doc_custom_modules_in_c ++`。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:213
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:247
 msgid "References"
-msgstr ""
+msgstr "参考"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:20
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
@@ -62,6 +60,8 @@ msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L258>`__"
 msgstr ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp#L258>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:24
 msgid "What for?"
@@ -100,6 +100,8 @@ msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`__"
 msgstr ""
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:45
 msgid "Creating a ResourceFormatLoader"
@@ -131,7 +133,6 @@ msgstr ""
 "( Resource )。 要加载资源，``load`` 必须能够读取和处理序列化的资源数据。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:110
-#, fuzzy
 msgid "Creating custom data types"
 msgstr "创建自定义数据类型"
 
@@ -153,13 +154,10 @@ msgid "Considerations"
 msgstr "注意事项"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:176
-#, fuzzy
 msgid ""
 "Some libraries may not define certain common routines such as IO handling. "
 "Therefore, Godot call translations are required."
-msgstr ""
-"某些库可能没有提供某些特定的例程，如 I/O 处理。 因此，需要使用 Godot 进行转"
-"译。"
+msgstr "某些库可能无法定义某些常见例程，例如IO处理。 因此，需要戈多呼叫翻译。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:179
 msgid ""
@@ -169,22 +167,25 @@ msgstr "这里有一段将 ``FileAccess`` 调用翻译成 ``std::istream`` 的�
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:215
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"
-msgstr ""
+msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:216
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`__"
 msgstr ""
+"`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:217
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`__"
 msgstr ""
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:220
-#, fuzzy
 msgid "Registering the new file format"
 msgstr "注册新的文件格式"
 
@@ -201,6 +202,8 @@ msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp#L280>`__"
 msgstr ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp#L280>`__"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:252
 msgid "Loading it on GDScript"

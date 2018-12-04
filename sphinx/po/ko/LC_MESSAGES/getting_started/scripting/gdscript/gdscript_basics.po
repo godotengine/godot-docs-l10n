@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -617,6 +617,9 @@ msgid ""
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats)"
 msgstr ""
+"이 연산자들은 C++의 연산자들처럼 행동합니다. 정수로 분할 시에 소수점 부분은 "
+"반환되지 않고 잘려나가며, % 연산자는 정수형(float의 경우는 \"fmod\") 끼리의 "
+"연산에서만 사용할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
 msgid "``+``"
@@ -1067,10 +1070,11 @@ msgstr ""
 "위해, Python처럼 인덱스가 음수일 수도 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:489
+#, fuzzy
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
-"fragmentation. If this is a concern special types of arrays are available. "
+"fragmentation. If this is a concern, special types of arrays are available. "
 "These only accept a single data type. They avoid memory fragmentation and "
 "also use less memory but are atomic and tend to run slower than generic "
 "arrays. They are therefore only recommended to use for large data sets:"
@@ -1536,8 +1540,9 @@ msgid "Remove ``case``"
 msgstr "``case`` 를 제거하십시오"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
+#, fuzzy
 msgid ""
-"Remove any ``break``'s. If you don't want to ``break`` by default you can "
+"Remove any ``break``s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
 "모든 ``break`` 를 제거하십시오. 기본적으로 ``break`` 가 되지 않도록 하고 싶다"
@@ -1627,9 +1632,10 @@ msgstr ""
 "첩 할 수 있습니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:935
+#, fuzzy
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
-"pattern, otherwise the pattern don't match."
+"pattern, otherwise the pattern doesn't match."
 msgstr ""
 "배열의 길이가 먼저 테스트 되고, 그것이 패턴과 같은 크기이어야 합니다, 그렇지 "
 "않으면 패턴이 일치하지 않습니다."
@@ -1658,9 +1664,10 @@ msgstr ""
 "배열 패턴과 같은 방식으로 작동합니다. 모든 키는 일정한 패턴이어야 합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:954
+#, fuzzy
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
-"the pattern, otherwise the pattern don't match."
+"the pattern, otherwise the pattern doesn't match."
 msgstr ""
 "딕셔너리의 크기가 먼저 테스트 되고, 그것이 패턴과 같은 크기이어야 합니다, 그"
 "렇지 않으면 패턴이 일치하지 않습니다."
@@ -1922,11 +1929,12 @@ msgstr ""
 "인수의 형태로 가져야 합니다 (하단을 참고하세요)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
+#, fuzzy
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
-"them visible and editable in the editor. This way artists and game designers "
-"can modify values that later influence how the program runs. For this, a "
-"special export syntax is provided."
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
 msgstr ""
 "멤버 변수 내보내기의 기본적인 이점은 에디터에서 보이고 편집할 수 있는 것입니"
 "다. 이 방법으로 아티스트와 게임 디자이너가 프로그램이 실행 방법에 영향을 주"
@@ -1985,8 +1993,9 @@ msgid "Exporting arrays"
 msgstr "배열 내보내기"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1333
+#, fuzzy
 msgid ""
-"Exporting arrays works but with an important caveat: While regular arrays "
+"Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
 "between all instances. This means that editing them in one instance will "
 "cause them to change in all other instances. Exported arrays can have "
@@ -2048,8 +2057,9 @@ msgstr ""
 "로 변수를 내보낼 때 특히 유용합니다."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1411
+#, fuzzy
 msgid ""
-"As said *local* access will *not* trigger the setter and getter. Here is an "
+"As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
 "말한 대로 *로컬* 액세스는 setter와 getter를 트리거 하지 않을 것입니다. 여기"
@@ -2060,9 +2070,10 @@ msgid "Tool mode"
 msgstr "툴 모드"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1428
+#, fuzzy
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
-"properties can be changed. In some cases it is desired that they do run "
+"properties can be changed. In some cases, it is desired that they do run "
 "inside the editor (as long as they don't execute game code or manually avoid "
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
@@ -2151,13 +2162,14 @@ msgid "Coroutines with yield"
 msgstr "yield를 가진 코루틴(Coroutine)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1520
+#, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
 "immediately return from the current function, with the current frozen state "
 "of the same function as the return value. Calling ``resume`` on this "
 "resulting object will continue execution and return whatever the function "
-"returns. Once resumed the state object becomes invalid. Here is an example:"
+"returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
 "GDScript ``yield`` 내장 함수를 통해 `coroutines <https://en.wikipedia.org/"
 "wiki/Coroutine>`_ 을 지원합니다. ``yield()`` 를 호출하면 반환 값과 같은 함수"
@@ -2180,9 +2192,10 @@ msgid "Coroutines & signals"
 msgstr "코루틴 & 시그널"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1577
+#, fuzzy
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
-"``yield`` can accept two parameters, an object and a signal. When the signal "
+"``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
 "``yield`` 를 사용하는 진정한 힘은 시그널과 결합될 때 나타납니다. ``yield`` "

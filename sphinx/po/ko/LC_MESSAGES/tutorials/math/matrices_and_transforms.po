@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,28 +30,36 @@ msgid ""
 "Before reading this tutorial, it is advised to read the previous one about :"
 "ref:`doc_vector_math` as this one is a direct continuation."
 msgstr ""
+"본 튜토리얼을 읽기 전에 \"ref:doc_vector_math\"에 대한 이전 튜토리얼을 읽어 "
+"보는 것이 좋습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:12
 msgid ""
 "This tutorial will be about *transformations* and will cover a little about "
 "matrices (but not in-depth)."
 msgstr ""
+"본 튜토리얼에서는 *변환*에 대해 다루며 행렬에 대해 설명합니다(심층적이지는 않"
+"음)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:15
 msgid ""
 "Transformations are most of the time applied as translation, rotation and "
 "scale so they will be considered as priority here."
 msgstr ""
+"변환은 변환, 회전 및 척도로 사용되는 대부분의 시간이기 때문에 여기서는 변환"
+"이 우선으로 간주됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:19
 msgid "Oriented coordinate system (OCS)"
-msgstr ""
+msgstr "OCS(주요 좌표계)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
 "Imagine we have a spaceship somewhere in space. In Godot this is easy, just "
 "move the ship somewhere and rotate it:"
 msgstr ""
+"우주 어딘가에 우주선이 있다고 상상해 보세요. Godot에서 이것은 쉽습니다. 배를 "
+"어딘가로 옮겨서 돌리십시오:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:26
 msgid ""
@@ -59,6 +67,8 @@ msgid ""
 "remember, we are grown ups here and don't use angles (plus, angles are not "
 "even that useful when working in 3D)."
 msgstr ""
+"2D에서는 단순한 위치 및 회전각으로 보입니다. 하지만 기억하세요, 우리는 여기"
+"서 더 나아갔고, 각도는 사용하지 않습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:30
 msgid ""
@@ -66,22 +76,29 @@ msgid ""
 "it for 2D in a drawing such as Paint.net, Gimp, Photoshop, etc. or in 3D "
 "through a 3D DCC tool such as Blender, Max, Maya, etc."
 msgstr ""
+"우리는 언젠가 누군가가 이 우주선을 *설계*했다는 것을 깨달아야 합니다.  Paint."
+"net, Gimp, Photoshop 등과 같은 도면에서 2D로 제작하거나 Blender, Max, Maya 등"
+"과 같은 3D DCC 도구를 통해 3D로 제작해야 합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:35
 msgid ""
 "When it was designed, it was not rotated. It was designed in its own "
 "*coordinate system*."
 msgstr ""
+"이것은 설계 시 회전하지 않았습니다. 그것은 자체적인 *좌표계 시스템*으로 설계"
+"되었습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:40
 msgid ""
 "This means that the tip of the ship has a coordinate, the fin has another, "
 "etc. Be it in pixels (2D) or vertices (3D)."
 msgstr ""
+"이것은 우주선의 끝이 좌표를 가지고 있고 판부분은 다른 것을 가지고 있다는 것"
+"을 의미합니다. 픽셀(2D) 또는 정점(3D)으로 지정합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid "So, let's recall again that the ship was somewhere in space:"
-msgstr ""
+msgstr "그러면, 우주 어딘가에 우주선이 있었다는 것을 회상해봅시다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:47
 msgid ""
@@ -90,6 +107,9 @@ msgid ""
 "was *transformed* from their original position to the new one. This allows "
 "the ship to be displayed where it is."
 msgstr ""
+"그건 어떻게 그곳에 도착했나요? 무엇을 움직여서 디자인된 위치에서 현재 위치로 "
+"회전시킨건가요? 답은... **변환**입니다. 우주선은 원래 위치에서 새 위치로 *변"
+"환되었습니다. 이렇게 하면 우주선이 있는 곳에 표시될 수 있습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:52
 msgid ""
@@ -97,6 +117,8 @@ msgid ""
 "this puzzle, we will superimpose the ship's original design position at "
 "their current position:"
 msgstr ""
+"그러나 변환은 이 과정을 설명하기에는 너무 일반적인 용어이다. 이 퍼즐을 해결하"
+"기 위해 우주선의 원래 설계 위치를 현재 위치에 겹치게 됩니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:58
 msgid ""
@@ -105,49 +127,62 @@ msgid ""
 "a unit vector pointing towards X positive, a unit vector pointing towards Y "
 "positive and a translation."
 msgstr ""
+"\"설계된 우주\"도 바뀌었습니다. 이러한 변화를 가장 잘 표현할 수 있는 방법은 "
+"무엇일까요? 이를 위해 (2D 단위) 3개의 벡터를 사용하겠습니다. X 양수를 가리키"
+"는 단위 벡터, Y 양수를 가리키는 단위 벡터 및 변환을 사용합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:65
 msgid ""
 "Let's call the 3 vectors \"X\", \"Y\" and \"Origin\", and let's also "
 "superimpose them over the ship so it makes more sense:"
 msgstr ""
+"이 세 벡터를 \"X\", \"Y\" 및 \"Origin\"이라고 부르고, 이 세 벡터를 우주선 위"
+"에 겹쳐보자:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:70
 msgid ""
 "Ok, this is nicer, but it still does not make sense. What do X,Y and Origin "
 "have to do with how the ship got there?"
 msgstr ""
+"좋아요, 이게 더 좋긴 한데, 그래도 말이 안 돼요. X,Y,Origin이 우주선이 어떻게 "
+"그곳에 도착했는지와 무슨 관계가 있는걸까요?"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:73
 msgid "Well, let's take the point from top tip of the ship as reference:"
-msgstr ""
+msgstr "자, 우주선으로부터 참고할 수 있는 요점부터 말씀드리겠습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:77
 msgid ""
 "And let's apply the following operation to it (and to all the points in the "
 "ship too, but we'll track the top tip as our reference point):"
 msgstr ""
+"다음 작업을 여기에 적용해 보겠습니다(그리고 우주선의 모든 지점에도 적용하되, "
+"맨위의 꼭지 부분을 기준점으로 추적해 보겠습니다):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:89
 msgid "Doing this to the selected point will move it back to the center:"
-msgstr ""
+msgstr "이렇게 하면 선택한 지점으로 다시 이동합니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:93
 msgid ""
 "This was expected, but then let's do something more interesting. Use the dot "
 "product of X and the point, and add it to the dot product of Y and the point:"
 msgstr ""
+"이것은 예상된 것이지만, 좀 더 흥미로운 것을 해봅시다. X와 점의 외적에 Y와 점"
+"의 외적을 더해보는 것을 사용합시다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:106
 msgid ""
 "Then what we have is.. wait a minute, it's the ship in its design position!"
-msgstr ""
+msgstr "그럼 우리가 얻는 건.. 잠깐만, 우주선이 설계된 위치에 있습니다!"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:111
 msgid ""
 "How did this black magic happen? The ship was lost in space, and now it's "
 "back home!"
 msgstr ""
+"어떻게 이런 일이 일어난거죠? 우주선을 우주에서 잃어버렸는데 지금은 돌아왔어"
+"요!"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:114
 msgid ""
@@ -157,6 +192,11 @@ msgid ""
 "a direction or plane was one of the uses for the dot product. This was "
 "enough to obtain back the design coordinates for every point in the ship."
 msgstr ""
+"이상하게 보일지 모르지만, 그것은 많은 논리를 가지고 있습니다. \"ref:"
+"doc_vector_math\"에서 보았던 바와 같이 X축까지의 거리와 Y축까지의 거리가 계산"
+"되었다는 것을 기억하세요. 방향 또는 평면에서 거리를 계산하는 것은 외적을 사용"
+"하는 방법 중 하나입니다. 이것은 우주선 안의 모든 지점에 대한 설계 좌표를 다"
+"시 얻기에 충분했습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:121
 msgid ""
@@ -164,6 +204,8 @@ msgid ""
 "*Oriented Coordinate System*. X an Y are the **Basis**, and *Origin* is the "
 "offset."
 msgstr ""
+"지금까지 X, Y, 원점과 함께 작업한 것은 *지향적 좌표계*입니다. X, Y는 "
+"**Basis**이고 *원점*은 오프셋입니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:126
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:614
@@ -177,6 +219,9 @@ msgid ""
 "is why it's called *Origin*, But in practice, it's just an offset to the new "
 "position."
 msgstr ""
+"우리는 원점이 무엇인지 압니다. 그것은 설계 좌표계의 0,0(원래)이 새로운 위치"
+"로 변환된 후에 종료되는 곳입니다. 이것이 바로 *원점*이라고 불리는 이유지만 실"
+"제로는 새로운 위치로의 상쇄에 불과합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:133
 msgid ""
@@ -186,12 +231,18 @@ msgid ""
 "original X and Y axes of your design are *right here*, pointing towards "
 "*these directions*.\""
 msgstr ""
+"기저는 더 흥미롭다. 기저는 새로운 변환된 위치에서 OCS의 X와 Y의 방향입니다. "
+"그것은 2D나 3D로 무엇이 바뀌었는지 말해줍니다. 원점(오프셋)과 베이스(방향)는 "
+"\"너의 설계된 원래 X와 Y 축은 바로 *여기에 있어* *이러한 방향*을 가리킵니다."
+"\""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:139
 msgid ""
 "So, let's change the representation of the basis. Instead of 2 vectors, "
 "let's use a *matrix*."
 msgstr ""
+"그러면, 기저의 표현을 바꿔보겠습니다. 2개의 벡터 대신에 *matrix*를 사용합니"
+"다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:144
 msgid ""
@@ -199,10 +250,12 @@ msgid ""
 "is that.. what is this matrix thing? Well, we'll assume you've never heard "
 "of a matrix."
 msgstr ""
+"벡터는 위쪽에 수평으로 있습니다. 다음 문제는.. 이 매트릭스란 무엇인가? 음, 우"
+"리는 당신이 매트릭스에 대해 들어본 적이 없다고 가정하겠습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:149
 msgid "Transforms in Godot"
-msgstr ""
+msgstr "Godot 에서의 변환"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:151
 msgid ""
@@ -211,6 +264,9 @@ msgid ""
 "be a lot simpler to understand after completing this tutorial. We'll just "
 "explain how to use transforms."
 msgstr ""
+"본 튜토리얼에서는 행렬 수학(및 그 연산)을 실제로 사용하기만 하고 자세히 설명"
+"하지는 않습니다. 이 튜토리얼을 완수한 후 이해하기 훨씬 더 간단할 수 있습니"
+"다. 변환 사용법에 대해 설명하겠습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:157
 msgid "Transform2D"
@@ -223,32 +279,37 @@ msgid ""
 "and \"Origin\" is element 2. It's not divided in basis/origin for "
 "convenience, due to its simplicity."
 msgstr ""
+"ref=class_Transform2D는 3x2 행렬입니다. 이것은 3Vector2 원소들이 있고 2D에 사"
+"용됩니다. \"X\" 축은 원소 0, \"Y\" 축은 원소 1이고 \"원점\"은 요소 2입니다. "
+"단순성 때문에 편의상 기저/원점으로 구분되지 않습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:179
 msgid ""
 "Most operations will be explained with this datatype (Transform2D), but the "
 "same logic applies to 3D."
 msgstr ""
+"대부분의 연산들은 이 데이터 타입(Transform2D)으로 설명되지만 3D에도 동일한 논"
+"리가 적용됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:183
 msgid "Identity"
-msgstr ""
+msgstr "항등성"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "An important transform is the \"identity\" matrix. This means:"
-msgstr ""
+msgstr "중요한 변환은 항등행렬이다. 이것의 의미는:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid "'X' Points right: Vector2(1,0)"
-msgstr ""
+msgstr "X점 오른쪽: 벡터2(1.0)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:188
 msgid "'Y' Points up (or down in pixels): Vector2(0,1)"
-msgstr ""
+msgstr "'Y' 점 위(또는 픽셀 단위 아래): Vector2(0,1)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:189
 msgid "'Origin' is the origin Vector2(0,0)"
-msgstr ""
+msgstr "'원점'은 원점 벡터2(0,0)입니다"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:193
 msgid ""
@@ -256,10 +317,12 @@ msgid ""
 "the transform to its parent coordinate system. It's an *OCS* that hasn't "
 "been translated, rotated or scaled."
 msgstr ""
+"*항등* 행렬은 상위 좌표계에 대한 변환을 조정하는 행렬일 뿐입니다. *OCS*는 변"
+"환, 회전 또는 스케일링되지 않았습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:220
 msgid "Operations"
-msgstr ""
+msgstr "연산"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:223
 msgid "Rotation"
@@ -267,21 +330,23 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid "Rotating Transform2D is done by using the \"rotated\" function:"
-msgstr ""
+msgstr "Rotated(회전) 기능을 사용하여 Transform2D를 회전합니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241
 msgid "Translation"
-msgstr ""
+msgstr "변환"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:243
 msgid ""
 "There are two ways to translate a Transform2D, the first one is moving the "
 "origin:"
 msgstr ""
+"Transform2D를 변환하는 두 가지 방법이 있습니다. 첫 번째 방법은 원점을 이동하"
+"는 것입니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:263
 msgid "This will always work in global coordinates."
-msgstr ""
+msgstr "이 기능은 항상 전반적인 좌표에 적용됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:265
 msgid ""
@@ -289,27 +354,30 @@ msgid ""
 "(towards where the *basis* is oriented), there is the :ref:`Transform2D."
 "translated() <class_Transform2D_translated>` method:"
 msgstr ""
+"대신 행렬의 *로컬* 좌표에 변환을 원하는 경우(*기저가 있는 위치), :ref:"
+"\"Transform2D.translated() <class_Transform2D_translated>`방법이 있다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:287
 msgid ""
 "You could also transform the global coordinates to local coordinates "
 "manually:"
-msgstr ""
+msgstr "전역 좌표를 수동으로 로컬 좌표로 변환할 수도 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:298
 msgid ""
 "But even better, there are helper functions for this as you can read in the "
 "next sections."
 msgstr ""
+"더군다나, 다음 섹션에서 읽을 수 있는 것처럼 이것에 대한 도우미 기능도 있다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:301
 msgid "Local to global coordinates and vice versa"
-msgstr ""
+msgstr "로컬에서 글로벌 좌표로 또는 그 반대로"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:303
 msgid ""
 "There are helper methods for converting between local and global coordinates."
-msgstr ""
+msgstr "로컬 좌표와 전역 좌표 사이를 변환하는 도우미 방법이 있습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:305
 msgid ""
@@ -318,6 +386,10 @@ msgid ""
 "to_local() <class_Spatial_to_local>` and :ref:`Spatial.to_global() "
 "<class_Spatial_to_global>` for 3D."
 msgstr ""
+"2D를 위한 것에는 :ref:`Node2D.to_local() <class_Node2D_to_local>` and :ref:"
+"`Node2D.to_global() <class_Node2D_to_global>` , 뿐만아니라 3D를 위한 :ref:"
+"`Spatial.to_local() <class_Spatial_to_local>` and :ref:`Spatial.to_global() "
+"<class_Spatial_to_global>` 방법들이 있다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:309
 msgid "Scale"
@@ -329,6 +401,8 @@ msgid ""
 "vector (X vector by x component of the scale, Y vector by y component of the "
 "scale). It will leave the origin alone:"
 msgstr ""
+"행렬도 스케일링할 수 있습니다. 스케일링은 기저에 벡터를 곱할 것입니다(스케일"
+"링의 X 성분별 X 벡터, 스케일의 y 성분별 Y 벡터). 원점은 그대로 둡니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:330
 msgid ""
@@ -336,6 +410,9 @@ msgid ""
 "starts relative to the previous one. For those who have been living on this "
 "planet long enough, a good reference of how transform works is this:"
 msgstr ""
+"이런 종류의 행렬에서의 연산들은 축적되어 있습니다. 이것은 모든 사람들이 이전 "
+"것과 비교하여 시작한다는 것을 의미합니다. 이 지구에서 충분히 오래 살아온 사람"
+"들에게, 변환이 어떻게 작용하는지에 대한 좋은 참조는 다음과 같습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:337
 msgid ""
@@ -343,6 +420,9 @@ msgid ""
 "inside (and you are likely learning this many years *after* discovering "
 "Santa is not real)."
 msgstr ""
+"행렬은 거북이와 비슷하게 사용됩니다. 거북이는 안에 행렬을 가지고 있을 가능성"
+"이 높습니다. (그리고 여러분은 산타는 진짜가 아니라는 것을 알게 된 후 수년 동"
+"안 이 사실을 배우게 될 것입니다)."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:703
@@ -355,50 +435,58 @@ msgid ""
 "position (either 2D or 3D) from \"designer\" coordinate system to the OCS, "
 "the \"xform\" method is used."
 msgstr ""
+"변환은 좌표계 사이를 전환하는 행위입니다. 위치(2D 또는 3D)를 \"설계자\" 좌표"
+"계에서 OCS로 변환하려면 \"xform\" 방법을 사용합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:357
 msgid "And only for basis (no translation):"
-msgstr ""
+msgstr "그리고 오직 기저를 위한(변환 없음):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:369
 msgid "Inverse transform"
-msgstr ""
+msgstr "역변환"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:371
 msgid ""
 "To do the opposite operation (what we did up there with the rocket), the "
 "\"xform_inv\" method is used:"
 msgstr ""
+"반대되는 연산을 하기 위해 (우리가 위에서 로켓 가지고 했던 것) \"xform_inv\" "
+"방법이 사용됩니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid "Only for Basis:"
-msgstr ""
+msgstr "기저에만 해당:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:395
 msgid "Orthonormal matrices"
-msgstr ""
+msgstr "직교 행렬"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "However, if the matrix has been scaled (vectors are not unit length), or the "
 "basis vectors are not orthogonal (90°), the inverse transform will not work."
 msgstr ""
+"그러나 만약 행렬의 벡터가 단위 길이가 아니거나 기본 벡터가 직교(90°)가 아닌 "
+"경우 역변환이 작동하지 않습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:401
 msgid ""
 "In other words, inverse transform is only valid in *orthonormal* matrices. "
 "For this, these cases an affine inverse must be computed."
 msgstr ""
+"즉, 역변환은 *직교* 행렬에서만 유효합니다.  이러한 경우, 아핀 역을 계산해야"
+"만 한다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:404
 msgid ""
 "The transform, or inverse transform of an identity matrix will return the "
 "position unchanged:"
-msgstr ""
+msgstr "항등 행렬의 변환 또는 역 변환은 위치를 변경하지 않고 반환합니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:419
 msgid "Affine inverse"
-msgstr ""
+msgstr "아핀 역"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:421
 msgid ""
@@ -407,101 +495,110 @@ msgid ""
 "orthogonal. The affine inverse is calculated with the affine_inverse() "
 "method:"
 msgstr ""
+"아핀 역은 행렬에 축척이 있거나 축 벡터가 직교하지 않더라도 다른 행렬의 역 연"
+"산을 수행하는 행렬입니다. 아핀 역은 the affine_inverse() 방법으로 계산됩니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid "If the matrix is orthonormal, then:"
-msgstr ""
+msgstr "만약 행렬이 직교한다면:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid "Matrix multiplication"
-msgstr ""
+msgstr "행렬 곱"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:461
 msgid ""
 "Matrices can be multiplied. Multiplication of two matrices \"chains"
 "\" (concatenates) their transforms."
-msgstr ""
+msgstr "행렬은 곱해질 수 있습니다. 두 행렬의 곱은 그들의 변환을 연결합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:464
 msgid ""
 "However, as per convention, multiplication takes place in reverse order."
-msgstr ""
+msgstr "그러나 관례에 따라 곱은 역순으로 진행됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:467
 msgid "Example:"
-msgstr ""
+msgstr "예:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:478
 msgid "To make it a little clearer, this:"
-msgstr ""
+msgstr "조금 더 깔끔하게 만들면, 이것이다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:491
 msgid "Is the same as:"
-msgstr ""
+msgstr "이것은 다음과 같다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:504
 msgid "However, this is not the same:"
-msgstr ""
+msgstr "그러나 이것은 같지 않다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:517
 msgid "Because in matrix math, A * B is not the same as B * A."
-msgstr ""
+msgstr "왜냐하면 행렬 연산에서, A*B는 B*A와 같지 않다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:520
 msgid "Multiplication by inverse"
-msgstr ""
+msgstr "역 곱하기"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:522
 msgid "Multiplying a matrix by its inverse, results in identity:"
-msgstr ""
+msgstr "행렬에 그것의 역을 곱하는 것의 결과는 그것의 항등행렬이다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid "Multiplication by identity"
-msgstr ""
+msgstr "항등행렬 곱하기"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:538
 msgid "Multiplying a matrix by identity, will result in the unchanged matrix:"
-msgstr ""
+msgstr "항등행렬을 행렬에 곱하면 결과는 원래 행렬에서 변화가 없을 것이다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:552
 msgid "Matrix tips"
-msgstr ""
+msgstr "행렬 팁"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:554
 msgid ""
 "When using a transform hierarchy, remember that matrix multiplication is "
 "reversed! To obtain the global transform for a hierarchy, do:"
 msgstr ""
+"변환 층을 사용할 때 행렬 곱셈이 반전된다는 점을 기억하세요! 층에 대한 전역 변"
+"환을 얻으려면 다음을 수행합니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:566
 msgid "For 3 levels:"
-msgstr ""
+msgstr "3단계:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:577
 msgid ""
 "To make a matrix relative to the parent, use the affine inverse (or regular "
 "inverse for orthonormal matrices)."
 msgstr ""
+"상위에 상대적인 행렬을 만들려면 항렬 역(또는 직교 행렬의 경우 정규 역)을 사용"
+"합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:591
 msgid "Revert it just like the example above:"
-msgstr ""
+msgstr "위의 예와 같이 되돌리시오:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:604
 msgid ""
 "OK, hopefully this should be enough! Let's complete the tutorial by moving "
 "to 3D matrices."
 msgstr ""
+"좋아요, 이 정도면 됐어요! 튜토리얼을 완료하고 3D 행렬로 이동하겠습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:608
 msgid "Matrices & transforms in 3D"
-msgstr ""
+msgstr "3D에서의 행렬과 변환"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:610
 msgid ""
 "As mentioned before, for 3D, we deal with 3 :ref:`Vector3 <class_Vector3>` "
 "vectors for the rotation matrix, and an extra one for the origin."
 msgstr ""
+"앞서 언급한 바와 같이 3D의 경우 :ref:`Vector3 <class_Vector3>`  회전 행렬용 "
+"벡터 3개와 원점용 벡터 1개를 추가로 취급합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:616
 msgid ""
@@ -509,22 +606,25 @@ msgid ""
 "It can be used to represent a 3D rotation and scale. Sub vectors can be "
 "accessed as:"
 msgstr ""
+"고도는 3x3 매트릭스의 특별한 유형을 가지고 있습니다. 이름 :ref:`Basis "
+"<class_basis>`. 이것은 3D 회전 및 스케일을 나타내는 데 사용할 수 있습니다. 다"
+"음과 같이 하위 벡터에 액세스할 수 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:635
 msgid "Or, alternatively as:"
-msgstr ""
+msgstr "또는 대신에:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:652
 msgid "The Identity Basis has the following values:"
-msgstr ""
+msgstr "항등 기저는 다음과 같은 값을 가집니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:656
 msgid "And can be accessed like this:"
-msgstr ""
+msgstr "다음과 같이 접근할 수 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:680
 msgid "Rotation in 3D"
-msgstr ""
+msgstr "3D에서의 회전"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:682
 msgid ""
@@ -532,33 +632,42 @@ msgid ""
 "same), because rotation is an implicit 2D operation. To rotate in 3D, an "
 "*axis*, must be picked. Rotation, then, happens around this axis."
 msgstr ""
+"3D에서의 회전은 암시적인 2D 연산이므로 3D 회전은 2D보다 더 복잡합니다(변환 "
+"및 배율은 동일). 3D로 회전하려면 *축*을 선택해야 합니다. 그런 다음 이 축을 중"
+"심으로 회전합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:686
 msgid ""
 "The axis for the rotation must be a *normal vector*. As in, a vector that "
 "can point to any direction, but length must be one (1.0)."
 msgstr ""
+"회전 축은 *법선 벡터*이어야 합니다. 임의의 방향을 가리킬 수 있지만 길이는 하"
+"나(1.0)여야 합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 msgid ""
 "To add the final component to the mix, Godot provides the :ref:`Transform "
 "<class_Transform>` type. Transform has two members:"
 msgstr ""
+"믹스에 최종 구성요소를 추가하기 위해 고도는 :ref:\"Transform "
+"<class_Transform> 유형을 제공합니다. Transform에는 두 개의 멤버가 있습니다:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:708
 msgid "*basis* (of type :ref:`Basis <class_Basis>`)"
-msgstr ""
+msgstr "*기저* (of type :ref:`Basis <class_Basis>`)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:709
 msgid "*origin* (of type :ref:`Vector3 <class_Vector3>`)"
-msgstr ""
+msgstr "*원점*(of type :ref:`Vector3 <class_Vector3>`)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:711
 msgid ""
 "Any 3D transform can be represented with Transform, and the separation of "
 "basis and origin makes it easier to work translation and rotation separately."
 msgstr ""
+"모든 3D 변환은 Transform(변환)으로 나타낼 수 있으며, 기준 및 원점을 분리하면 "
+"변환 및 회전을 개별적으로 더 쉽게 수행할 수 있습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:715
 msgid "An example:"
-msgstr ""
+msgstr "예:"

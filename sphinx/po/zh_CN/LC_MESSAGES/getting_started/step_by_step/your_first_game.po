@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,27 +41,27 @@ msgid ""
 "entirely, you should start here: :ref:`doc_scripting`."
 msgstr ""
 "这个工程是Godot引擎的一个介绍。是以你已经有了一些编程经验为前提的。如果你对编"
-"程完全是菜鸟，你应当从这一条开始: :ref:`doc_scripting`."
+"程完全是菜鸟，你应当从这一条开始： :ref:`doc_scripting` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:18
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible. Here is a preview of the final result:"
 msgstr ""
-"这个游戏叫做“Dodge the Creeps!”。\n"
-"你的角色必须尽力的通过移动来避开敌人。下面是最终效果的预览："
+"这个游戏叫做“Dodge the Creeps!”。你的角色必须尽力的通过移动来避开敌人。下面是"
+"最终效果的预览："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:24
 msgid ""
 "**Why 2D?** 3D games are much more complex than 2D ones. You should stick to "
 "2D until you have a good understanding of the game development process."
 msgstr ""
-"**为什么是2D** 3D游戏比2D游戏复杂很多。你应当从2D游戏入手直到你能很好的理解游"
-"戏开发工序。"
+"**为什么是2D游戏** 3D游戏比2D游戏复杂很多。你应当从2D游戏入手直到你能很好的理"
+"解游戏开发工序。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 msgid "Project setup"
-msgstr "设置工程"
+msgstr "项目设置"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -69,9 +69,9 @@ msgid ""
 "`dodge_assets.zip <files/dodge_assets.zip>` - the images and sounds you'll "
 "be using to make the game. Unzip these files to your project folder."
 msgstr ""
-"运行Godot新建一个工程。\n"
-"然后下载: download:`dodge_assets.zip <files/dodge_assets.zip>` -你会在游戏中"
-"用到的图片和声音。解压这个文件到你的工程文件夹。"
+"运行Godot新建一个工程。然后下载 :download:`dodge_assets.zip <files/"
+"dodge_assets.zip>` - 你会在游戏中用到的图片和声音。解压这个文件到你的工程文件"
+"夹。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:34
 msgid ""
@@ -79,8 +79,8 @@ msgid ""
 "haven't read :ref:`doc_scenes_and_nodes`, do so now for an explanation of "
 "setting up a project and using the editor."
 msgstr ""
-"对于本教程，我们假设您熟悉编辑器。如果您还没有阅读: "
-"ref:“doc_scenes_and_nodes”，那么赶紧看看，以了解如何设置项目并使用编辑器。"
+"对于本教程，我们假设您熟悉编辑器。如果您还没有阅读 :ref:"
+"`doc_scenes_and_nodes`，那么赶紧看看，以了解如何设置项目并使用编辑器。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
 msgid ""
@@ -132,8 +132,8 @@ msgid ""
 "To begin, click the \"Add/Create a New Node\" button and add an :ref:`Area2D "
 "<class_Area2D>` node to the scene."
 msgstr ""
-"首先，单击“添加/创建一个新节点”按钮，并向场景添加一个:ref: ' Area2D "
-"<class_Area2D> '节点。"
+"首先，单击“添加/创建一个新节点”按钮，并向场景添加一个 :ref:`Area2D "
+"<class_Area2D>` 节点。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:70
 msgid ""
@@ -142,9 +142,9 @@ msgid ""
 "scene's root node. We can add additional nodes to the player to add "
 "functionality."
 msgstr ""
-"使用``Area2D``类我们可以检测物体是否跑到玩家之中或者与玩家发生交叠。点击节点"
-"将其重命名为``Player``，它是场景的根节点，我们可以对该玩家节点添加额外的节点"
-"来添加其功能。"
+"使用 ``Area2D`` 类我们可以检测物体是否跑到玩家之中或者与玩家发生交叠。点击节"
+"点将其重命名为 ``Player`` ，它是场景的根节点，我们可以对该玩家节点添加额外的"
+"节点来添加其功能。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
 msgid ""
@@ -153,17 +153,17 @@ msgid ""
 "and click the icon to the right of the lock; its tooltip says \"Makes sure "
 "the object's children are not selectable.\""
 msgstr ""
-"在我们向``Player``节点添加子节点之前，我们可能希望确保不会因为点击他们而不小"
-"心移动或缩放他们，那就选中该节点然后点击锁头右侧的图标，它的工具提示描述为“确"
-"保物体的子节点不会被选中。”"
+"在我们向 ``Player`` 节点添加子节点之前，我们可能希望确保不会因为点击他们而不"
+"小心移动或缩放他们，那就选中该节点然后点击锁头右侧的图标，它的工具提示描述"
+"为“确保物体的子节点不会被选中。”"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:81
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
 msgstr ""
-"保存场景，点击场景→保存，或者在Windows/Linux平台上按下``Ctrl+S``或是Mac上按下"
-"``Command+S``。"
+"保存场景，点击场景→保存，或者在Windows/Linux平台上按下 ``Ctrl+S`` 或是Mac上按"
+"下 ``Command+S``。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid ""
@@ -171,9 +171,9 @@ msgid ""
 "(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
 "constants use ``ALL_CAPS``."
 msgstr ""
-"对于该项目，我们会遵循Godot的命名规范，类（节点）使用``PascalCase``（大写分"
-"隔）命名，变量和函数使用``snake_case``（下划线分隔）命名，常量使用"
-"``ALL_CAPS``（全大写）命名。"
+"对于该项目，我们会遵循Godot的命名规范，类（节点）使用 ``PascalCase`` （大写分"
+"隔）命名，变量和函数使用 ``snake_case`` （下划线分隔）命名，常量使用 "
+"``ALL_CAPS`` （全大写）命名。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:88
 msgid "Sprite animation"
@@ -217,9 +217,9 @@ msgid ""
 "property to ``(0.5, 0.5)``. You can find it in the Inspector under the "
 "``Node2D`` heading."
 msgstr ""
-"玩家的图像可能对于游戏窗口来说太大了，因此我们需要将其缩小。点击"
-"``AnimatedSprite``节点并设置其``Scale``属性为``(0.5,0.5)``。你会在查看器的"
-"``Node2D``标题下找到。"
+"游戏角色图像对于游戏窗口来说有点太大，所以我们需要缩小它们。 单击 "
+"``AnimatedSprite`` 节点并将 ``Scale`` 属性设置为 ``（0.5,0.5）`` 。 您可以在 "
+"``Node2D`` 标题下的属性面板中找到它。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:116
 msgid ""
@@ -294,13 +294,12 @@ msgstr ""
 "点击``Player``节点并将speed属性设置为``400``。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
-#, fuzzy
 msgid ""
 "If you're using C#, you need to restart Godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
-"如果你在使用C#，你需要临时重新启动Godot编辑器并在编辑器中查看被导出的变量直至"
-"它被修正。"
+"如果你正在使用C#，则需要临时重启Godot编辑器，以便在编辑器中查看导出的变量，直"
+"到修复为止。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:182
 msgid ""
@@ -311,10 +310,11 @@ msgstr ""
 "小的好时候："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:198
+#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
-"of our game which we expect will change often. Here we'll make it:"
+"of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 "现在我们可以使用``_process()``函数来定义玩家将会做什么。``_process()``在每一"
 "帧都会被调用，因此我们需要使用它来更新我们游戏中期望被经常改变的元素，这里我"
@@ -472,10 +472,11 @@ msgstr ""
 "上面代码中的布尔赋值是程序员的常用简写。 考虑此代码与上面缩短的布尔赋值："
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
+#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
-"line to ``_ready()`` so the player will be hidden when the game starts:"
+"line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
 "再次运行场景并检查各方向的动画是否正确，当你确定移动正常工作的话，将下面一行"
 "代码加到``_ready()``中以便玩家在游戏开始时被隐藏："
@@ -602,9 +603,7 @@ msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
-msgstr ""
-":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
-"``Visibility``)\n"
+msgstr "\n"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:498
 msgid ""
@@ -729,8 +728,9 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "查阅 :ref:`doc_instancing`  来学习更多关于实例的知识。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:617
+#, fuzzy
 msgid ""
-"Now add the following nodes as children of ``Main``, and name them as shown "
+"Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
 "现在, 将以下节点添加为 \"Main\" 的子级, 并按显示的名称命名它们 (值以秒为单"
@@ -740,13 +740,14 @@ msgstr ""
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
-msgstr ":ref:`Timer <class_Timer>` (命名为 \"MobTimer\")-控制暴徒产生的频率。"
+msgstr ""
+":ref:`Timer <class_Timer>` (命名为 \"MobTimer\") - 可用来控制怪物产生的频率"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:621
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
-msgstr ":ref:`Timer <class_Timer>`（命名为``ScoreTimer``） - 每秒增加分数。"
+msgstr ":ref:`Timer <class_Timer>`（命名为``ScoreTimer``） - 每秒钟增加分数"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:622
 msgid ""
@@ -843,8 +844,9 @@ msgid "Main script"
 msgstr "主脚本"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
+#, fuzzy
 msgid ""
-"Add a script to ``Main``. At the top of the script we use ``export "
+"Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "在“Main”中添加一个脚本。在脚本的顶部，我们使用' export (PackedScene) ' '来允"
@@ -880,8 +882,9 @@ msgstr ""
 "时器’’）。“启动定时器”将启动其他两个定时器。‘记分计时器’将分数增加1。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
+#, fuzzy
 msgid ""
-"In ``_on_MobTimer_timeout()`` we will create a mob instance, pick a random "
+"In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
@@ -1016,93 +1019,93 @@ msgstr "您可以手动拖动节点来放置它们，或者为了更精确的放
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid "ScoreLabel"
-msgstr "ScoreLabel"
+msgstr "记分牌"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:894
 msgid "``Layout``: \"Center Top\""
-msgstr ""
+msgstr "``布局``: \"中心 顶端\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:895
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:908
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:921
 msgid "``Margin``:"
-msgstr ""
+msgstr "``边界``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:897
 msgid "Left: ``-25``"
-msgstr ""
+msgstr "左侧: ``-25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:898
 msgid "Top: ``0``"
-msgstr ""
+msgstr "顶部: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:899
 msgid "Right: ``25``"
-msgstr ""
+msgstr "右侧: ``25``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:900
 msgid "Bottom: ``100``"
-msgstr ""
+msgstr "底部: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:902
 msgid "Text: ``0``"
-msgstr ""
+msgstr "文本: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:905
 msgid "MessageLabel"
-msgstr ""
+msgstr "消息标签"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid "``Layout``: \"Center\""
-msgstr ""
+msgstr "``布局``: \"中心\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:910
 msgid "Left: ``-200``"
-msgstr ""
+msgstr "左侧: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:911
 msgid "Top: ``-150``"
-msgstr ""
+msgstr "顶部: ``-150``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:912
 msgid "Right: ``200``"
-msgstr ""
+msgstr "右侧: ``200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:913
 msgid "Bottom: ``0``"
-msgstr ""
+msgstr "底部: ``0``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 msgid "Text: ``Dodge the Creeps!``"
-msgstr ""
+msgstr "文本: ``Dodge the Creeps!``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:918
 msgid "StartButton"
-msgstr ""
+msgstr "启动按钮"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid "``Layout``: \"Center Bottom\""
-msgstr ""
+msgstr "``布局``: \"中心 底部\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:923
 msgid "Left: ``-100``"
-msgstr ""
+msgstr "左侧: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:924
 msgid "Top: ``-200``"
-msgstr ""
+msgstr "顶部: ``-200``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid "Right: ``100``"
-msgstr ""
+msgstr "右侧: ``100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "Bottom: ``-100``"
-msgstr ""
+msgstr "底部: ``-100``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 msgid "Text: ``Start``"
-msgstr ""
+msgstr "文本: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 msgid ""

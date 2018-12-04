@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -348,10 +348,11 @@ msgstr ""
 "ermitteln:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:198
+#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
-"of our game which we expect will change often. Here we'll make it:"
+"of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 "Nun können wir mit der Funktion ``_process()`` definieren, was der Spieler "
 "tun soll. ``_process()`` wird mit jedem Frame aufgerufen, also werden wir es "
@@ -536,10 +537,11 @@ msgstr ""
 "Zuweisung oben:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
+#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
-"line to ``_ready()`` so the player will be hidden when the game starts:"
+"line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
 "Spiele die Szene noch einmal ab und überprüfe, ob die Animationen in jede "
 "der Richtungen korrekt sind. Wenn Du sicher bist, dass die Bewegung korrekt "
@@ -827,8 +829,9 @@ msgstr ""
 "Siehe :ref:`doc_instancing`, um mehr über das Instanzieren zu erfahren."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:617
+#, fuzzy
 msgid ""
-"Now add the following nodes as children of ``Main``, and name them as shown "
+"Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
 "Füge nun die folgenden Nodes als Kinder von ``Main`` hinzu und benenne sie "
@@ -959,8 +962,9 @@ msgid "Main script"
 msgstr "Main Skript"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
+#, fuzzy
 msgid ""
-"Add a script to ``Main``. At the top of the script we use ``export "
+"Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "Füge ein Skript zu ``Main`` hinzu. Am Anfang des Skripts verwenden wir "
@@ -1001,8 +1005,9 @@ msgstr ""
 "die anderen beiden Timer. ``ScoreTimer`` erhöht die Punktzahl um 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
+#, fuzzy
 msgid ""
-"In ``_on_MobTimer_timeout()`` we will create a mob instance, pick a random "
+"In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."

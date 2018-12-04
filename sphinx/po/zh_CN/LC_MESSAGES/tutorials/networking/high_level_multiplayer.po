@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:4
 msgid "High level multiplayer"
-msgstr ""
+msgstr "高级多人游戏"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:7
 msgid "High level vs low level API"
-msgstr ""
+msgstr "高级API vs 低级API"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:9
 msgid ""
@@ -32,6 +32,9 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
+"下面解释了Godot中高、低网络的区别以及一些基本原理。如果您想要头先跳进去，并将"
+"网络添加到您的第一个节点，请跳到下面的 `初始化网络`_  。但是请确保稍后阅读其"
+"余部分!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
 msgid ""
@@ -44,10 +47,15 @@ msgid ""
 "Godot's high-level networking API, which sacrifices some of the fine-grained "
 "control of low-level networking for greater ease of use."
 msgstr ""
+"Godot始终支持通过UDP、TCP和一些更高级别的协议(如SSL和HTTP)进行标准的低级网络"
+"连接。这些协议非常灵活，几乎可以用于任何事情。然而，使用它们来手动同步游戏状"
+"态可能需要大量的工作。有时这种工作是无法避免的，或者是值得的，例如在后台使用"
+"自定义服务器实现时。但在大多数情况下，考虑Godot的高级网络API是值得的，它牺牲"
+"了对低级网络的一些细粒度控制，以获得更大的易用性。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
 msgid "This is due to the inherent limitations of the low-level protocols:"
-msgstr ""
+msgstr "这是由于低级协议的固有限制:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:16
 msgid ""
@@ -60,6 +68,11 @@ msgid ""
 "for games. Some of this can be configured and disabled (e.g. by disabling "
 "\"Nagle's algorithm\" for the TCP connection)."
 msgstr ""
+"TCP确保包总是可靠地、有序地到达，但是由于错误纠正，延迟通常更高。它也是一个相"
+"当复杂的协议，因为它理解什么是“连接”，并针对通常不适合多人游戏等应用程序的目"
+"标进行优化。包被缓冲成更大的批发送，每包开销更少，延迟更高。这对于HTTP之类的"
+"东西可能很有用，但对于游戏通常不太有用。其中一些可以配置和禁用(例如禁用TCP连"
+"接的 \"Nagle's algorithm\" )。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
 msgid ""
@@ -70,6 +83,10 @@ msgid ""
 "hundred bytes), so transmitting larger packets means splitting them, "
 "reorganizing them and retrying if a part fails."
 msgstr ""
+"UDP是一个简单的协议，它只发送数据包(没有“连接”的概念)。没有错误纠正使其非常快"
+"(低延迟)，但是包可能在过程中丢失或以错误的顺序接收。此外，UDP的MTU(最大数据包"
+"大小)通常很低(只有几百字节)，因此传输更大的数据包意味着对它们进行分割、重新组"
+"织它们，并在部分失败时重试。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
 msgid ""
@@ -81,6 +98,10 @@ msgid ""
 "this most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
+"一般来说，TCP可以被认为是可靠的、有序的和缓慢的;UDP作为不可靠，无序和快速。由"
+"于性能上的巨大差异，在避免不需要的部分(拥塞/流量控制特性、Nagle算法等)的同"
+"时，重新构建游戏所需的TCP部分(可选的可靠性和包顺序)通常是有意义的。正因为如"
+"此，大多数游戏引擎都带有这样的实现，Godot也不例外。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
@@ -89,6 +110,9 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
+"综上所述，您可以使用低级网络API来实现最大限度的控制，并在裸网络协议之上实现所"
+"有功能，或者使用基于 :ref:`SceneTree <class_SceneTree>` 的高级API，后者以通常"
+"优化的方式在后台完成大部分繁重的工作。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:28
 msgid ""
@@ -99,12 +123,17 @@ msgid ""
 "currently only offers WebSocket support and lacks some of the higher level "
 "features as well as raw access to low-level protocols like TCP and UDP."
 msgstr ""
+"Godot支持的大多数平台都提供所有或大部分上述的高、低网络功能。但是，由于网络在"
+"很大程度上依赖于硬件和操作系统，一些特性可能会改变，或者在某些目标平台上不可"
+"用。最值得注意的是，HTML5平台目前只提供WebSocket支持，缺乏一些高级功能，以及"
+"对TCP和UDP等低级协议的原始访问。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:34
 msgid ""
 "More about TCP/IP, UDP, and networking: https://gafferongames.com/post/"
 "udp_vs_tcp/"
 msgstr ""
+"关于TCP/IP、UDP和网络的更多信息 : https://gafferongames.com/post/udp_vs_tcp/"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:37
 msgid ""
@@ -114,6 +143,10 @@ msgid ""
 "gafferongames.com/post/"
 "what_every_programmer_needs_to_know_about_game_networking/>`__."
 msgstr ""
+"Gaffer On Games上有很多关于游戏中联网的有用文章 (`here <https://"
+"gafferongames.com/tags/networking>`__), 包括综合型的 `introduction to "
+"networking models in games <https://gafferongames.com/post/"
+"what_every_programmer_needs_to_know_about_game_networking/>`__。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:41
 msgid ""
@@ -121,6 +154,8 @@ msgid ""
 "Godot's built-in networking, see here for an example: https://github.com/"
 "PerduGames/gdnet3"
 msgstr ""
+"如果您想使用您选择的底层网络库来代替Godot的内置网络，请参阅这里的示例 : "
+"https://github.com/PerduGames/gdnet3"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:45
 msgid ""
@@ -130,6 +165,10 @@ msgid ""
 "application runs on and use your servers to send spam, attack others or "
 "steal your users data if they play your game."
 msgstr ""
+"在你的游戏中加入社交网络需要承担一定的责任。如果做错了，它会使您的应用程序很"
+"容易受到攻击，并可能导致欺骗或利用。它甚至可能允许攻击者破坏您的应用程序运行"
+"在的机器，并使用您的服务器发送垃圾邮件，攻击其他人或窃取您的用户数据，如果他"
+"们玩您的游戏。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:50
 msgid ""
@@ -137,10 +176,12 @@ msgid ""
 "with Godot. You can of course experiment, but when you release a networked "
 "application, always take care of any possible security concerns."
 msgstr ""
+"当涉及到网络而与Godot无关时，情况总是如此。当然，您可以进行试验，但是在发布网"
+"络应用程序时，请始终注意任何可能的安全问题。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:55
 msgid "Mid level abstraction"
-msgstr ""
+msgstr "中间层的抽象"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:57
 msgid ""
@@ -148,6 +189,8 @@ msgid ""
 "network, it can be helpful to understand how the base network API for "
 "synchronization works."
 msgstr ""
+"在讨论我们希望如何跨网络同步游戏之前，了解用于同步的基本网络API是如何工作的可"
+"能会有所帮助。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:59
 msgid ""
@@ -155,6 +198,9 @@ msgid ""
 "<class_NetworkedMultiplayerPeer>`. This object is not meant to be created "
 "directly, but is designed so that several implementations can provide it:"
 msgstr ""
+"Godot使用了一个中层对象 :ref:`NetworkedMultiplayerPeer "
+"<class_NetworkedMultiplayerPeer>`。这个对象并不是直接创建的，而是设计成几个实"
+"现可以提供它:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:64
 msgid ""
@@ -163,6 +209,9 @@ msgid ""
 "On top of that, it adds methods to set a peer, transfer mode, etc. It also "
 "includes signals that will let you know when peers connect or disconnect."
 msgstr ""
+"这个对象扩展自 :ref:`PacketPeer <class_PacketPeer>`，因此它继承了所有用于序列"
+"化、发送和接收数据的方法。除此之外，它还添加了设置节点、传输模式等的方法。它"
+"同时还包括当节点连接或断开时将通知您的信号。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:66
 msgid ""
@@ -172,6 +221,10 @@ msgid ""
 "could be used to implement mobile APIs (for adhoc WiFi, Bluetooth) or custom "
 "device/console-specific networking APIs."
 msgstr ""
+"这个类接口可以表示大多数类型的网络层、拓扑结构和库。默认情况下，Godot提供基于"
+"ENet的实现 (:ref:`NetworkedMultiplayerEnet "
+"<class_NetworkedMultiplayerENet>`),  但是这也可以用于实现手机的API（针对专用"
+"WiFi、蓝牙）或自定义设备/特定的控制台的网络API。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:69
 msgid ""
@@ -179,37 +232,42 @@ msgid ""
 "provides even higher level networking facilities. Yet it is made available "
 "in case a game has specific needs for a lower level API."
 msgstr ""
+"大多数常见情况下，不鼓励直接使用这个对象，因为Godot提供了更高级别的网络使用。"
+"只有当游戏对较低级别的API有特殊需求的情况下，才使用它。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:73
 msgid "Initializing the network"
-msgstr ""
+msgstr "初始化网络"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:75
 msgid ""
 "The object that controls networking in Godot is the same one that controls "
 "everything tree-related: :ref:`SceneTree <class_SceneTree>`."
 msgstr ""
+"在Godot中, 控制联网的对象与控制所有与树相关的东西的对象是相同的: :ref:"
+"`SceneTree <class_SceneTree>`。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:77
 msgid ""
 "To initialize high level networking, the SceneTree must be provided a "
 "NetworkedMultiplayerPeer object."
 msgstr ""
+"为了初始化高级别网络，必须为SceneTree提供一个NetworkedMultiplayerPeer对象。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:79
 msgid ""
 "To create that object it first has to be initialized as a server or client."
-msgstr ""
+msgstr "要创建该对象，必须首先将其初始化为服务器或客户端。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:81
 msgid ""
 "Initializing as a server, listening on the given port, with a given maximum "
 "number of peers:"
-msgstr ""
+msgstr "作为服务器初始化，监听给定的端口，指定最大节点的数量："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:89
 msgid "Initializing as a client, connecting to a given IP and port:"
-msgstr ""
+msgstr "作为客户端初始化，连接到给定的IP和端口："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:97
 msgid ""
@@ -218,14 +276,17 @@ msgid ""
 "`get_tree().get_network_peer()`. This can be done via SceneTree's metadata "
 "feature:"
 msgstr ""
+"注意，有必要在SceneTree上存储本地网络的节点实例, 以便以后能够访问它，因为当前"
+"没有这个`get_tree().get_network_peer()` 函数。这可以通过使用SceneTree的元数据"
+"特征来完成："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:104
 msgid "Checking whether the tree is initialized as a server or client:"
-msgstr ""
+msgstr "检查树是否被初始化为服务器或客户端："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:110
 msgid "Terminating the networking feature:"
-msgstr ""
+msgstr "停止联网功能："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:116
 msgid ""
@@ -233,10 +294,12 @@ msgid ""
 "know you're going away instead of letting the connection close or timeout, "
 "depending on your game.)"
 msgstr ""
+"（更加合理的做法是, 首先发送消息让其他节点知道您正在离开，而不是直接让连接关"
+"闭或让连接超时，但这也取决于您的游戏设计。）"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:119
 msgid "Managing connections"
-msgstr ""
+msgstr "管理连接"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:121
 msgid ""
@@ -246,18 +309,22 @@ msgid ""
 "`SceneTree <class_SceneTree>`). To manage who connects, Godot provides the "
 "following signals in SceneTree:"
 msgstr ""
+"有些游戏在任何时候都可以接受连接，也有游戏只在大厅阶段接受连接。可以请求Godot"
+"在任何时间点不再接受连接（参见 `set_refuse_new_network_connections(bool)`  "
+"和  :ref:`SceneTree <class_SceneTree>` 的相关方法）。为了管理连接的节点，"
+"Godot在SceneTree中提供了以下信号："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:124
 msgid "Server and Clients:"
-msgstr ""
+msgstr "服务器和客户端："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:126
 msgid "`network_peer_connected(int id)`"
-msgstr ""
+msgstr "`network_peer_connected(int id)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:127
 msgid "`network_peer_disconnected(int id)`"
-msgstr ""
+msgstr "`network_peer_disconnected(int id)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:129
 msgid ""
@@ -271,22 +338,28 @@ msgid ""
 "they identify connected peers and thus players. You can also use IDs to send "
 "messages only to certain peers."
 msgstr ""
+"当新的节点加入或断开时，上述信号会在每个连接到服务器的节点（包括在服务器上的"
+"节点）中被调用。客户端将用一个大于1的唯一ID连接服务器，而服务器的网络节点ID始"
+"终是1。凡低于1的ID被当作无效处理。可以通过 :ref:`SceneTree."
+"get_network_unique_id() <class_SceneTree_get_network_unique_id>` 查看本地系统"
+"的ID。这些ID主要用在大厅管理中，并且通常被存储, 因为它们可以辨别连接的节点即"
+"玩家。你还可以使用ID号向特定的节点发送消息。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:135
 msgid "Clients:"
-msgstr ""
+msgstr "客户端："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:137
 msgid "`connected_to_server`"
-msgstr ""
+msgstr "`connected_to_server`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:138
 msgid "`connection_failed`"
-msgstr ""
+msgstr "`connection_failed`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:139
 msgid "`server_disconnected`"
-msgstr ""
+msgstr "`server_disconnected`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
 msgid ""
@@ -296,6 +369,9 @@ msgid ""
 "connected player information about other already connected players (e.g. "
 "their names, stats, etc)."
 msgstr ""
+"再说一遍，所有这些函数主要用于大厅管理或动态添加/删除玩家。对于这些任务，服务"
+"器显然必须作为服务器工作，并且您必须手动执行任务，例如向一个新连接的玩家发送"
+"其他已经连接玩家的信息（例如，他们的姓名、统计数据等）。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:145
 msgid ""
@@ -304,10 +380,13 @@ msgid ""
 "autoloaded node/singleton is a great fit for this, to always have access to, "
 "e.g. \"/root/lobby\"."
 msgstr ""
+"您可以用任何你想要的方式实现大厅，但是最常见的方式是用一个在所有玩家的场景中"
+"具有相同名字的节点。通常，一个自动加载的节点/单例非常适合于此，这样就可以在任"
+"何时候访问它，例如“/root/lobby”。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:149
 msgid "RPC"
-msgstr ""
+msgstr "RPC"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:151
 msgid ""
@@ -315,58 +394,64 @@ msgid ""
 "procedure calls). This is implemented as a set of functions in :ref:`Node "
 "<class_Node>`:"
 msgstr ""
+"为了在节点之间进行通信，最简单的方法是使用RPC（远程过程调用）。它是靠一组  :"
+"ref:`Node <class_Node>` 的函数实现的:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:154
 msgid "`rpc(\"function_name\", <optional_args>)`"
-msgstr ""
+msgstr "`rpc(\"函数名\", <可选参数>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:155
 msgid "`rpc_id(<peer_id>,\"function_name\", <optional_args>)`"
-msgstr ""
+msgstr "`rpc_id(<节点ID>,\"函数名\", <可选参数>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:156
 msgid "`rpc_unreliable(\"function_name\", <optional_args>)`"
-msgstr ""
+msgstr "`rpc_unreliable(\"函数名\", <可选参数>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:157
 msgid "`rpc_unreliable_id(<peer_id>, \"function_name\", <optional_args>)`"
-msgstr ""
+msgstr "`rpc_unreliable_id(<节点ID>, \"函数名\", <可选参数>)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:159
 msgid "Synchronizing member variables is also possible:"
-msgstr ""
+msgstr "同步成员变量也是可能的："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:161
 msgid "`rset(\"variable\", value)`"
-msgstr ""
+msgstr "`rset(\"变量\", 值)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:162
 msgid "`rset_id(<peer_id>, \"variable\", value)`"
-msgstr ""
+msgstr "`rset_id(<节点ID>, \"变量\", 值)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:163
 msgid "`rset_unreliable(\"variable\", value)`"
-msgstr ""
+msgstr "`rset_unreliable(\"变量\", 值)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:164
 msgid "`rset_unreliable_id(<peer_id>, \"variable\", value)`"
-msgstr ""
+msgstr "`rset_unreliable_id(<节点ID>, \"变量\", 值)`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:166
 msgid "Functions can be called in two fashions:"
-msgstr ""
+msgstr "可以用两种方式来调用函数："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:168
 msgid ""
 "Reliable: the function call will arrive no matter what, but may take longer "
 "because it will be re-transmitted in case of failure."
 msgstr ""
+"可靠的：函数调用无论如何都会到达，但是可能需要更长的时间，因为在发生故障时它"
+"将被重新发送。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:169
 msgid ""
 "Unreliable: if the function call does not arrive, it will not be re-"
 "transmitted, but if it arrives it will do it quickly."
 msgstr ""
+"不可靠的：如果函数调用没有到达，它将不会被重新发送，但如果它到达，它将很快完"
+"成。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:171
 msgid ""
@@ -376,28 +461,36 @@ msgid ""
 "would likely be outdated because the object moved further in the meantime, "
 "even if it was resent reliably)."
 msgstr ""
+"在大多数情况下，需要可靠的调用。当同步对象位置时，不可靠的调用才很有用（因为"
+"同步必须持续发生，如果包丢失，这并不那么糟糕，因为新的包最终会到达；同时包很"
+"可能会过时，因为对象在此期间进一步移动了，即使它被可靠地怨恨）。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
 msgid ""
 "There is also the `get_rpc_sender_id` function in `SceneTree` which can be "
 "used to check which peer (or peer ID) sent a RPC call."
 msgstr ""
+"`SceneTree` 中还有 `get_rpc_sender_id` 函数，这可以用来检查是哪个节点（或节点"
+"ID）发送了RPC调用。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:177
 msgid "Back to lobby"
-msgstr ""
+msgstr "回到大厅"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:179
 msgid ""
 "Let's get back to the lobby. Imagine that each player that connects to the "
 "server will tell everyone about it."
 msgstr ""
+"让我们回到大厅。想象一下，连接到服务器的每个玩家都会将他的到来告诉其他每一个"
+"人。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:230
 msgid ""
 "You might have noticed already something different, which is the usage of "
 "the `remote` keyword on the `register_player` function:"
 msgstr ""
+"您可能已经注意到一些不同，即 `register_player` 函数中使用 `remote` 关键字："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:236
 msgid ""
@@ -407,40 +500,45 @@ msgid ""
 "easier (so a client can't call a function to delete a file on another "
 "client's system)."
 msgstr ""
+"这个关键字有两个主要用途。第一个是让Godot知道这个函数可以从RPC调用。如果没有"
+"添加关键字，出于安全考虑, Godot将阻止任何调用该函数的尝试。这使得安全工作变得"
+"更加容易（因此一个客户端不能通过调用函数来删除其他客户端电脑上的文件）。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:240
 msgid ""
 "The second use is to specify how the function will be called via RPC. There "
 "are four different keywords:"
-msgstr ""
+msgstr "第二个用途是指定如何通过RPC调用该函数。这里又有四个不同的关键字："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:242
 msgid "`remote`"
-msgstr ""
+msgstr "`remote`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:243
 msgid "`remotesync`"
-msgstr ""
+msgstr "`remotesync`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:244
 msgid "`master`"
-msgstr ""
+msgstr "`master`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:245
 msgid "`puppet`"
-msgstr ""
+msgstr "`puppet`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:247
 msgid ""
 "The `remote` keyword means that the `rpc()` call will go via network and "
 "execute remotely."
-msgstr ""
+msgstr "`remote` 关键字意味着 `rpc()` 调用将通过网络发送并远程执行。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:249
 msgid ""
 "The `remotesync` keyword means that the `rpc()` call will go via network and "
 "execute remotely, but will also execute locally (do a normal function call)."
 msgstr ""
+"`remotesync` 关键字意味着 `rpc()` 调用将通过网络发送并远程执行，但也将在本地"
+"执行（执行一次普通函数调用）。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:251
 msgid ""
@@ -448,6 +546,9 @@ msgid ""
 "`get_rpc_sender_id` function on `SceneTree` to check which peer actually "
 "made the RPC call to `register_player`."
 msgstr ""
+"其他函数将被进一步解释。注意，还可以使用 `SceneTree` 上的 "
+"`get_rpc_sender_id` 函数来检查哪个节点实际对 `register_player` 进行了RPC调"
+"用。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:254
 msgid ""
@@ -457,10 +558,14 @@ msgid ""
 "time to time, or before game start). For the sake of simplicity and because "
 "each game will share different information, this is not shown here."
 msgstr ""
+"基于上面的介绍，也多多少少地解释了大厅管理。一旦你开始开发游戏，你很可能会想"
+"增加一些额外的安全措施来确保客户不会做任何有趣的事情（仅仅验证他们随时发送的"
+"信息，或者在游戏开始之前）。为了简单起见，并且因为每个游戏将分享不同的信息，"
+"所以就不写这方面了。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:259
 msgid "Starting the game"
-msgstr ""
+msgstr "开始游戏"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:261
 msgid ""
@@ -468,10 +573,12 @@ msgid ""
 "start the game. This is nothing special in itself, but we'll explain a few "
 "nice tricks that can be done at this point to make your life much easier."
 msgstr ""
+"一旦有足够的玩家聚集在大厅时，服务器应该开始游戏。这本身没有什么特别的，但是"
+"我们将解释一些很好的技巧，这些技巧可以在这点上让你的生活更容易。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:265
 msgid "Player scenes"
-msgstr ""
+msgstr "玩家场景"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:267
 msgid ""
@@ -480,6 +587,9 @@ msgid ""
 "scene for each player connected to it**. For a 4 player game, each peer "
 "needs to instance 4 player nodes."
 msgstr ""
+"在大多数游戏中，每个玩家都可能有自己的场景。请记住，这是一个多人游戏，所以在"
+"每个客户端中，您需要为连接到它的每个玩家实例化 **一个场景** 。对于一个4人游"
+"戏，每个客户端需要4个玩家节点实例。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:270
 msgid ""
@@ -487,6 +597,8 @@ msgid ""
 "must also be relatively easy for a player to tell which nodes represent each "
 "player ID."
 msgstr ""
+"那么，如何命名这些节点呢？在Godot中, 节点需要具有唯一的名称。对于玩家来说，识"
+"别哪个节点代表哪个玩家ID必须相对容易。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:273
 msgid ""
@@ -494,6 +606,8 @@ msgid ""
 "scenes as their network ID*. This way, they will be the same in every peer "
 "and RPC will work great! Here is an example:"
 msgstr ""
+"解决方案是简单地将 *实例化后的玩家场景的根节点命名为它的网络ID* 。这样，它们"
+"在每一个客户端中都是一样的，RPC调用也会很容易！下面是一个例子："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
 msgid ""
@@ -502,10 +616,13 @@ msgid ""
 "SceneTree is locked while the scene is being created (e.g. when ``_ready()`` "
 "is being called)."
 msgstr ""
+"根据您何时执行 pre_configure_game() ，您可能需要将任何调用更改为 "
+"``add_child()`` ，以便通过 ``call_deferred()`` 推迟，因为SceneTree在场景创建"
+"时被锁定（例如，当 ``_ready()`` 被调用时）。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:305
 msgid "Synchronizing game start"
-msgstr ""
+msgstr "同步游戏开始"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
 msgid ""
@@ -514,16 +631,19 @@ msgid ""
 "actually start when everyone is ready, pausing the game until all players "
 "are ready can be useful:"
 msgstr ""
+"由于延迟、不同的硬件或其他原因，设置玩家在每个客户端上花费的时间可能不同。为"
+"了确保游戏会在每个人都准备好的时候真正开始，有必要暂停游戏直到所有的玩家都准"
+"备好："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:316
 msgid ""
 "When the server gets the OK from all the peers, it can tell them to start, "
 "as for example:"
-msgstr ""
+msgstr "当服务器从所有客户端获得OK时，它才告诉他们开始游戏，例如："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:337
 msgid "Synchronizing the game"
-msgstr ""
+msgstr "同步游戏"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
 msgid ""
@@ -532,16 +652,18 @@ msgid ""
 "remote member variable set implementation, Godot adds the concept network "
 "masters."
 msgstr ""
+"在多数游戏中，多人联网的目标是确保游戏在所有正在玩游戏的客户端上同步运行。除"
+"了提供RPC和远程成员变量集之外，Godot还添加了网络主人的概念。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:343
 msgid "Network master"
-msgstr ""
+msgstr "网络主人"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:345
 msgid ""
 "The network master of a node is the peer that has the ultimate authority "
 "over it."
-msgstr ""
+msgstr "一个节点的网络主人是对该节点具有终极权限的客户端。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
 msgid ""
@@ -549,6 +671,8 @@ msgid ""
 "node, which if not changed is always going to be the server (ID 1). Thus the "
 "server has authority over all nodes by default."
 msgstr ""
+"当未显式设置时，网络主人从父节点继承，这个父节点如果未更改，则始终是服务器"
+"（ID 1）。因此，默认情况下，服务器拥有所有节点的权限。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
 msgid ""
@@ -557,6 +681,9 @@ msgid ""
 "(recursive is true by default and means the network master is recursively "
 "set on all child nodes of the node as well)."
 msgstr ""
+"可以使用函数 :ref:`Node.set_network_master(id, recursive) "
+"<class_Node_set_network_master>` 来设置网络主人（默认情况下recursive为true，"
+"这意味着在节点的所有子节点上也递归地设置了网络主人）。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
 msgid ""
@@ -565,6 +692,9 @@ msgid ""
 "is_network_master() <class_Node_is_network_master>`. This will return true "
 "when executed on the server and false on all client peers."
 msgstr ""
+"通过调用 :ref:`Node.is_network_master() <class_Node_is_network_master>` 来检"
+"查客户端上的特定节点实例是否是该节点用于所有连接的客户端的网络主人。这在服务"
+"器上执行时将返回true，在所有客户端上将返回false。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:354
 msgid ""
@@ -572,6 +702,8 @@ msgid ""
 "noticed that the local peer is set to have network master authority for "
 "their own player instead of the server:"
 msgstr ""
+"如果您已经注意了前面的示例，则可能注意到本地客户端拥有针对它自己的游戏角色的"
+"网络主人权限，而不是服务器："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:373
 msgid ""
@@ -579,6 +711,8 @@ msgid ""
 "master on the node it controls, and all other nodes remain as puppets with "
 "the server being their network master."
 msgstr ""
+"每当在客户端上执行这段代码时，客户端就使得它控制的节点上成为主人，同时其他所"
+"有节点仍然保持为傀儡(服务器是它们的网络主人)。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:375
 msgid ""
@@ -586,10 +720,12 @@ msgid ""
 "<https://github.com/godotengine/godot-demo-projects/tree/master/networking/"
 "multiplayer_bomber>`_:"
 msgstr ""
+"为了阐明这点，可以看看这个 `轰炸机演示 <https://github.com/godotengine/godot-"
+"demo-projects/tree/master/networking/multiplayer_bomber>`_:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:382
 msgid "Master and puppet keywords"
-msgstr ""
+msgstr "主人和傀儡关键词"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
 msgid ""
@@ -597,14 +733,17 @@ msgid ""
 "keywords in GDScript (or their equivalent in C# and Visual Script). "
 "Similarly to the `remote` keyword, functions can also be tagged with them:"
 msgstr ""
+"该模型的真正优点是当使用GDScript中的 `master`/`puppet` 关键字（或者它们在C#和"
+"Visual Script中的等价关键词）时。与 `remote` 关键字相似，可以将它们放在函数名"
+"前面标记："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:389
 msgid "Example bomb code:"
-msgstr ""
+msgstr "炸弹代码的例子："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:397
 msgid "Example player code:"
-msgstr ""
+msgstr "玩家代码的例子："
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:411
 msgid ""
@@ -612,6 +751,8 @@ msgid ""
 "is master). The bomb knows the bodies in the area, so it checks them and "
 "checks that they contain an `exploded` function."
 msgstr ""
+"在上面的例子中，炸弹在某个地方爆炸（可能由主人来确定）。炸弹知道该地区的物"
+"体，因此它检查物体并检查它们是否具有 `exploded` 函数。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:414
 msgid ""
@@ -619,6 +760,9 @@ msgid ""
 "in the player has a `master` keyword. This means that only the player who is "
 "master for that instance will actually get the function."
 msgstr ""
+"如果它们有，炸弹就会调用它们的 `exploded` 函数。然而，玩家中的 `master` 函数"
+"上有一个 `master` 关键字。这意味着，只有当玩家是该实例的主人时, 才能实际上获"
+"得该函数。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
 msgid ""
@@ -627,6 +771,9 @@ msgid ""
 "puppet, making the player look stunned in all the peers (as well as the "
 "current, master one)."
 msgstr ""
+"然后，这个实例调用在同一个游戏角色（但是在不同的客户端中）的同一实例中的 "
+"`stun` 函数，并且只调用那些设置为傀儡的函数，使得该游戏角色在所有客户端（以及"
+"当前的主人）中看起来被击晕。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:420
 msgid ""
@@ -635,3 +782,6 @@ msgid ""
 "sense for an area-of-effect case like the bomb but in other cases, like "
 "single target damage."
 msgstr ""
+"请注意，您也可以使用 rpc_id(<id>, \"exploded\", bomb_owner) 将 stun() 消息仅"
+"发送到特定的游戏角色。这对于像炸弹这样的范围攻击来说可能没有多大意义，但在其"
+"他情况下有意义，比如单目标伤害时。"

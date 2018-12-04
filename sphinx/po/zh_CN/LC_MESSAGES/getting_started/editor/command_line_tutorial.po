@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,15 +37,14 @@ msgid "Path"
 msgstr "路径"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid ""
 "It is recommended that your Godot binary is in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
-"建议您的 Godot 二进制文件位于PATH环境变量中，因此可以通过输入“godot”从任意位"
-"置轻松执行它。 您可以在Linux上通过将Godot二进制文件放入``/ usr / local / "
+"建议您的 Godot 二进制文件位于PATH环境变量中，因此可以通过输入``godot``从任意"
+"位置轻松执行它。 您可以在Linux上通过将Godot二进制文件放入``/ usr / local / "
 "bin``中并确保它被命名为``godot``来实现。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
@@ -84,7 +83,6 @@ msgid "Creating a project"
 msgstr "创建一个项目"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
-#, fuzzy
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
@@ -94,21 +92,20 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "The project can now be opened with Godot."
-msgstr ""
+msgstr "现在可以使用Godot打开该项目。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Running the editor"
 msgstr "运行编辑器"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
-#, fuzzy
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"运行编辑器是通过用``-e``标志执行 godot 来完成的。 这必须在项目目录或子目录内"
-"完成，否则该命令将被忽略并显示项目管理器。"
+"运行编辑器是通过用``-e``标志执行Godot来完成的。 这必须在项目目录或子目录内完"
+"成，否则该命令将被忽略并显示项目管理器。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid ""
@@ -123,7 +120,6 @@ msgid "Erasing a scene"
 msgstr "擦除一个场景"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:87
-#, fuzzy
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
@@ -175,7 +171,6 @@ msgstr ""
 "务器版本，无视频）对此非常理想。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:139
-#, fuzzy
 msgid ""
 "The platform names recognized by the ``--export`` switch are the same as "
 "displayed in the export wizard of the editor. To get a list of supported "
@@ -191,15 +186,14 @@ msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
-"要导出游戏的调试版本，请使用“--export-debug”开关而不是“--export”。 他们的参数"
-"和用法是相同的。"
+"要导出游戏的调试版本，请使用``--export-debug``开关而不是``--export``。 他们的"
+"参数和用法是相同的。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:149
 msgid "Running a script"
 msgstr "运行脚本"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:151
-#, fuzzy
 msgid ""
 "It is possible to run a simple .gd script from the command line. This "
 "feature is especially useful in large projects, for batch conversion of "
@@ -218,12 +212,12 @@ msgstr "下面是一个简单的示例，说明它是如何工作的："
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:168
 msgid "And how to run it:"
-msgstr "以及如何运行它:"
+msgstr "以及如何运行它："
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:175
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
-"如果路径中不存在 project.godot ，则假定当前路径是当前工作目录（除非指定了“-"
-"path”参数）。"
+"如果路径中不存在 project.godot ，则假定当前路径是当前工作目录（除非指定了``-"
+"path``参数）。"

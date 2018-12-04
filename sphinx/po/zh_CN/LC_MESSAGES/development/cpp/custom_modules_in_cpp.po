@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,14 +145,13 @@ msgstr ""
 "中："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:171
-#, fuzzy
 msgid ""
 "This allows for powerful possibilities using Python to construct the file "
 "list using loops and logic statements. Look at some of the other modules "
 "that ship with Godot by default for examples."
 msgstr ""
-"这允许我们使用 Python 在构建时使用循环和逻辑语句，大大增加了构建的灵活度。 通"
-"常情况下，你可以参照 Godot 附带的其他模块。"
+"这允许使用Python使用循环和逻辑语句构造文件列表的强大可能性。 默认情况下，请查"
+"看Godot附带的其他一些模块。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:175
 msgid ""
@@ -205,9 +204,8 @@ msgid "Using the module"
 msgstr "使用模块"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:231
-#, fuzzy
 msgid "You can now use your newly created module from any script:"
-msgstr "使用你我们创建的模块非常简单， 在任何脚本中我们可以这一个直接使用它："
+msgstr "您现在可以在任何脚本中使用新创建的模块："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:242
 msgid "And the output will be ``60``."
@@ -220,6 +218,9 @@ msgid ""
 "`doc_binding_to_external_libraries` for details about binding to external "
 "libraries."
 msgstr ""
+"之前的Summator示例非常适合小型自定义模块，但如果您想使用更大的外部库，该怎么"
+"办？ 有关绑定到外部库的详细信息，请参阅：ref："
+"`doc_binding_to_external_libraries`。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:250
 msgid "Improving the build system for development"
@@ -279,16 +280,15 @@ msgstr ""
 "游戏。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:308
-#, fuzzy
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the Godot binary "
 "(for release). To do that we can define a custom flag to be passed to SCons "
 "using the `ARGUMENT` command:"
 msgstr ""
-"最重要的是，我们希望能够选择将我们的模块编译是动态库（用于开发）还是作为 "
-"Godot 可执行文件的一部分（用于发布）。 要做到这一点，我们可以使用 `ARGUMENT` "
-"命令定义一个自定义构建配置来传递给 SCons ："
+"最重要的是，能够选择是将我们的模块编译为共享库（用于开发）还是作为Godot二进制"
+"文件（用于发布）的一部分进行编译将是很好的。 为此，我们可以使用`ARGUMENT`命令"
+"定义要传递给SCons的自定义标志："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:338
 msgid ""
@@ -411,7 +411,7 @@ msgstr "总结"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:414
 msgid "Remember to:"
-msgstr ""
+msgstr "记得："
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:416
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
@@ -427,11 +427,10 @@ msgstr ""
 "等。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:420
-#, fuzzy
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
 "(hopefully positive) surprises."
-msgstr "但这不是全部，取决于你要做什么，你会感受到一些惊喜。"
+msgstr "但这不是全部，取决于你做什么，你会受到一些（希望是积极的）惊喜。"
 
 #: ../../docs/development/cpp/custom_modules_in_cpp.rst:423
 msgid ""

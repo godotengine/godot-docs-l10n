@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +34,12 @@ msgid ""
 "offers many tools to make this process more straightforward, so this "
 "tutorial is more like a collection of tips and tricks."
 msgstr ""
+"如果全世界只讲一种语言，那将是很好的（这将是世界上唯一的一种语言）。不幸的"
+"是，对于我们的开发人员来说，情况并非如此。虽然独立或利基游戏通常不需要本地"
+"化，但瞄准更大市场的游戏通常需要本地化。Godot提供了许多工具来使这个过程更加简"
+"单，因此本教程更像一个技巧和技巧的集合。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:17
-#, fuzzy
 msgid ""
 "Localization is usually done by specific studios hired for the job and, "
 "despite the huge amount of software and file formats available for this, the "
@@ -46,54 +49,49 @@ msgid ""
 "be seen more like a follow-up to that one."
 msgstr ""
 "本地化通常是通过雇佣特定的工作室来完成的, 尽管有大量的软件和文件格式可供使"
-"用, 但在今天进行本地化的最常用的本地化方法仍然是电子表格。创建电子表格和导入"
-"它们的过程已经包括在:ref:`doc_importing_translations` 教程中, 所以现在这份可"
-"以被看作是后续补充。"
+"用, 但迄今为止进行本地化最常见的方式仍然是使用电子表格。创建电子表格并导入电"
+"子表格的过程已经在 :ref:`doc_importing_translations` 教程中介绍了，所以这个教"
+"程更像是对那个教程的后续。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:25
-#, fuzzy
 msgid ""
 "We will be using the official demo as an example; you can `download it from "
 "the Asset Library <https://godotengine.org/asset-library/asset/134>`_."
 msgstr ""
-"我们将使用官方演示作为一个例子, 你可以在 AssetLib下载它: https://godotengine."
-"org/asset-library/asset/134 或在 demo_projects/gui/translation 位置找到它"
+"我们将使用官方演示作为一个例子, 你可以在 `Asset Library <https://godotengine."
+"org/asset-library/asset/134>`_ 下载它们。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:29
 msgid "Configuring the imported translation"
 msgstr "配置导入的译文"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:31
-#, fuzzy
 msgid ""
 "Translations can get updated and re-imported when they change, but they "
 "still have to be added to the project. This is done in **Project → Project "
 "Settings → Localization**:"
 msgstr ""
-"翻译可以在更改时得到更新和重新导入, 但仍必须添加到项目中。通过\"场景\" > \"项"
-"目设置\" > \"本地化\"选项卡来完成添加:"
+"翻译可以在更改时得到更新和重新导入, 但仍必须添加到项目中。可通过 **Project → "
+"Project Settings → Localization** 来完成:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:37
-#, fuzzy
 msgid "The above dialog is used to add or remove translations project-wide."
-msgstr "此对话框允许在该项目范围内添加或删除翻译。"
+msgstr "上述对话框用于添加或删除项目范围内的翻译。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:40
 msgid "Localizing resources"
 msgstr "资源文件的本地化处理"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:42
-#, fuzzy
 msgid ""
 "It is also possible to instruct Godot to use alternate versions of assets "
 "(resources) depending on the current language. The **Remaps** tab can be "
 "used for this:"
 msgstr ""
-"指示Godot根据当前语言打开不同版本的资产 (资源)也是可能的。\"重映射"
-"（Remaps）\" 选项卡为此而存在:"
+"根据当前语言，还可以指示Godot使用资产（资源）的替代版本。 **映射** 选项卡可用"
+"于此："
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:48
-#, fuzzy
 msgid ""
 "Select the resource to be remapped, then add some alternatives for each "
 "locale."
@@ -104,7 +102,6 @@ msgid "Converting keys to text"
 msgstr "将键转换为文本"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:54
-#, fuzzy
 msgid ""
 "Some controls such as :ref:`Button <class_Button>` and :ref:`Label "
 "<class_Label>` will automatically fetch a translation if their text matches "
@@ -112,26 +109,23 @@ msgid ""
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
 "then the text will be automatically translated."
 msgstr ""
-"某些控件, 如:ref:`Button <class_Button>`, :ref:`Label <class_Label>` 等, 每当"
-"设置“键”而不是文本时, 都会自动获取其翻译。例如, 如果将 "
-"\"MAIN_SCREEN_GREETING1\"分配给一个Label控件, 并且翻译中存在该键的不同语言映"
-"射, 则会发生自动转换。"
+"一些控件如：ref：`Button <class_Button>`和：ref：`Label <class_Label>`如果文"
+"本与翻译键匹配，将自动获取翻译。 例如，如果标签的文本"
+"是“MAIN_SCREEN_GREETING1”并且该键存在于当前翻译中，则文本将自动翻译。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
-#, fuzzy
 msgid ""
 "In code, the :ref:`Object.tr() <class_Object_tr>` function can be used. This "
 "will just look up the text in the translations and convert it if found:"
 msgstr ""
-"若使用代码方式, 可以使用:ref:`Object.tr() <class_Object_tr>` 函数。这将在译文"
-"中查找该文本, 如果找到便会翻译它:"
+"在代码中，可以使用：ref：`Object.tr（）<class_Object_tr>`函数。 这将只查找翻"
+"译中的文本并在找到时进行转换："
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:69
 msgid "Making controls resizable"
 msgstr "使控件可调整大小"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:71
-#, fuzzy
 msgid ""
 "The same text in different languages can vary greatly in length. For this, "
 "make sure to read the tutorial on :ref:`doc_size_and_anchors`, as "
@@ -139,44 +133,42 @@ msgid ""
 "<class_Container>` can be useful, as well as the text wrapping options "
 "available in :ref:`Label <class_Label>`."
 msgstr ""
-"不同语言的同一文本的长度可能会有很大的差异。为此, 请务必阅读教程:ref:"
-"`doc_size_and_anchors`（尺寸和锚定点）, 因为具有动态调整的控制大小可能会有所"
-"帮助。:ref:`Container <class_Container>`类, 以及:ref:`Label <class_Label>` 类"
-"中的多个用于文本覆盖隐藏（text wrapping）的选项，都很有用。"
+"不同语言的相同文本的长度差异很大。 为此，请务必阅读以下教程：ref："
+"`doc_size_and_anchors`，因为动态调整控件大小可能有所帮助。 ：ref：`Container "
+"<class_Container>`可能很有用，以及文件包装选项：ref：`Label <class_Label>`。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:78
 msgid "TranslationServer"
 msgstr "TranslationServer类"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:80
-#, fuzzy
 msgid ""
 "Godot has a server handling low-level translation management called the :ref:"
 "`TranslationServer <class_TranslationServer>`. Translations can be added or "
 "removed during run-time; the current language can also be changed at run-"
 "time."
 msgstr ""
-"Godot有一个名为:ref:`TranslationServer <class_TranslationServer>` 的服务类, "
-"用于处理的低级别的翻译管理。可以在运行时添加或删除翻译, 并且更改当前语言。"
+"Godot有一个处理低级翻译管理的服务器，名为：ref：`TranslationServer "
+"<class_TranslationServer>`。 可以在运行时添加或删除翻译; 当前语言也可以在运行"
+"时更改。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:86
 msgid "Command line"
 msgstr "命令行"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:88
-#, fuzzy
 msgid ""
 "Language can be tested when running Godot from the command line. For "
 "example, to test a game in French, the following argument can be supplied:"
 msgstr ""
-"从命令行运行Godot时, 可以测试语言。例如, 要用法语测试游戏, 可以提供以下参数:"
+"从命令行运行Godot时可以测试语言。 例如，要使用法语测试游戏，可以提供以下参"
+"数："
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:97
 msgid "Translating the project name"
 msgstr "翻译项目名称"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:99
-#, fuzzy
 msgid ""
 "The project name becomes the app name when exporting to different operating "
 "systems and platforms. To specify the project name in more than one "
@@ -184,12 +176,13 @@ msgid ""
 "Settings** and append the locale identifier to it. For instance, for "
 "Spanish, this would be ``application/name_es``:"
 msgstr ""
-"当导出到不同的操作系统和平台时, 项目名称将成为应用程序名称。若要在多种语言中"
-"指定项目名称, 请在 \"项目设置（Project Settings）\" 对话框中创建新的 "
-"application/name 属性, 并将区域设置标识符追加到name之后。例如:"
+"导出到不同的操作系统和平台时，项目名称将成为应用程序名称。 要以多种语言指定项"
+"目名称，请在**项目设置**中创建一个新设置``application / name``，并将语言环境"
+"标识符附加到其中。 例如，对于西班牙语，这将是``application / name_es``："
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:107
 msgid ""
 "If you are unsure about the language code to use, refer to the :ref:`list of "
 "locale codes <doc_locales>`."
 msgstr ""
+"如果您不确定要使用的语言代码，请参阅：ref：`locale codes <doc_locales>列表。"

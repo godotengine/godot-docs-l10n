@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,12 @@ msgid "Design interfaces with the Control nodes"
 msgstr "使用控制节点设计接口"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
+#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
 "resolutions. It can be hard to build responsive interfaces that adapt to all "
-"platforms. Thankfully, Godot comes with robust tools to design and manage "
+"platforms. Thankfully, Godot comes with robust tools to design and manage a "
 "responsive User Interface. To design your UI, you'll use the Control nodes. "
 "These are the nodes with green icons in the editor. There are dozens of "
 "them, to create anything from life bars to complex applications. Godot's "
@@ -72,11 +73,12 @@ msgstr ""
 "<doc_ui_game_user_interface>中构建您的第一个游戏UI”。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
+#, fuzzy
 msgid ""
 "Only use Control nodes when you design your interfaces. They have unique "
-"properties that allow them to work with one another. Other nodes like "
+"properties that allow them to work with one another. Other nodes, like "
 "Node2D, Sprite, etc. will not work. You can still use some nodes that work "
-"with others like the AnimationPlayer, Tween or the StreamPlayer. Control "
+"with others, like the AnimationPlayer, Tween or the StreamPlayer. Control "
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
 "在设计接口时只使用控制节点。它们具有独特的特性，使它们能够相互协作。其他节点"
@@ -168,9 +170,10 @@ msgid "TextureRect"
 msgstr "纹理结构"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
+#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
-"the Sprite node but it offers multiple scaling modes. Set the Stretch Mode "
+"the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
 "**纹理矩形**在UI中显示纹理或图像。它看起来类似于精灵节点，但它提供了多种缩放"
@@ -314,12 +317,13 @@ msgid "Label"
 msgstr "标签"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
+#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
 "and check Autowrap if you want it to respect the textbox's size. If Autowrap "
 "is off, you won't be able to scale the node. You can align the text "
-"horizontally and vertically with Align and Valign respectively."
+"horizontally and vertically with Align and Valign, respectively."
 msgstr ""
 "**标签**打印文本到屏幕。您将在Label部分和Inspector中找到它的所有属性。在"
 "`text`属性中写入文本，如果希望它遵守文本框的大小，请选中Autowrap。如果"
@@ -372,10 +376,11 @@ msgstr ""
 "另一方面，你有布局菜单。它帮助您锚定、放置和调整UI元素在其父级中的大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
+#, fuzzy
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
-"specific effect so you may need to nest several of them to get a working "
+"specific effect, so you may need to nest several of them to get a working "
 "interface. With the layout approach you work from the bottom up, on the "
 "children. As you don't insert extra containers in the scene it can make for "
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
@@ -546,11 +551,12 @@ msgid "Arrange control nodes automatically with containers"
 msgstr "使用容器自动排列控制节点"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
+#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
 "interface or center nodes in their bounding rectangles. All built-in "
-"containers update in the editor so you can see the effect instantly."
+"containers update in the editor, so you can see the effect instantly."
 msgstr ""
 "容器自动排列所有子控件节点，包括行、列等中的其他容器。使用它们在接口周围或中"
 "心节点的边框中添加填充。所有内置容器在编辑器中更新，以便您可以立即看到效果。"
@@ -679,9 +685,10 @@ msgid "A GridContainer with 2 columns. It sizes each column automatically."
 msgstr "一个有两列的GridContainer（网格容器）。它会自动调整每个列的大小。"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
+#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
-"design more advanced interface, head to the :ref:`GUI section <toc-learn-"
+"design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
 "Godot的UI系统很复杂，还有很多东西可以提供。要了解如何设计更高级的界面，请访"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,8 +33,9 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot是免费/自由开源软件, 在 `MIT许可证 <https://opensource.org/licenses/"
-"MIT>`_ 下发布。"
+"Godot是 `免费和开源的软件 <https://en.wikipedia.org/wiki/Free_and_open-"
+"source_software>`_ 可在 `OSI-approved <https://opensource.org/licenses/"
+"MIT>`_ MIT许可下使用。这意味着它是免费的，就像“言论自由”或者“免费啤酒”。"
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -59,9 +60,9 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"文档的所有内容都由 Creative Commons Attribution 3.0 (`CC-3.0 <https://"
-"creativecommons.org/licenses/by/3.0/> `_) 许可证签署, 版权归 \"Juan "
-"Linietsky、Ariel Manzur 和 Godot 引擎社区\" 所有."
+"本附带文档的所有内容均在许可的知识共享署名3.0 ( `CC-BY 3.0 <https://"
+"creativecommons.org/licenses/by/3.0/>`_ ) 许可下发布，署名为“Juan Linietsky、"
+"Ariel Manzur和Godot引擎社区”。"
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -82,20 +83,19 @@ msgid ""
 msgstr ""
 "有关完整的详细信息, 请查看 `COPYRIGHT.txt <https://github.com/godotengine/"
 "godot/blob/master/COPYRIGHT.txt>`_ 以及 `LICENSE.txt <https://github.com/"
-"godotengine/godot/blob/master/LICENSE.txt> `_ 和 `LOGO_LICENSE https://"
-"github/godotengine/godot/blob/master/LOGO_LICENSE.md >`_ 在Godot仓库中的文"
-"件。"
+"godotengine/godot/blob/master/LICENSE.txt>`_ 和 `LOGO_LICENSE https://github/"
+"godotengine/godot/blob/master/LOGO_LICENSE.md>`_ 在Godot仓库中的文件。"
 
 #: ../../docs/about/faq.rst:28
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
-"还可以通过<https://godotengine.org/license>查阅Godot网站上的许可页面 ` ."
+"还可以查阅 `Godot网站上的许可页面 <https://godotengine.org/license>`_ ."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
-msgstr "哪些平台被Godot支持？"
+msgstr "Godot支持哪些平台？"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
@@ -111,7 +111,7 @@ msgstr "macOS系统"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
 msgid "X11 (Linux, \\*BSD)"
-msgstr "X11 (Linux, \\*BSD)"
+msgstr "X11（Linux,，\\*BSD）"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
@@ -204,7 +204,7 @@ msgid ""
 msgstr ""
 "对C#的支持仍然相当初级，所以，你可能会在使用过程中发现一些问题。友好而勤奋的"
 "开发社区随时准备追踪新的问题。但是，本着开源的精神，我们建议你首先自己解决你"
-"发现的问题。你也可以在`开放问题 <https://github.com/godotengine/godot/"
+"发现的问题。你也可以在 `开放问题 <https://github.com/godotengine/godot/"
 "issues>`_ 中讨论你的问题。"
 
 #: ../../docs/about/faq.rst:82
@@ -215,9 +215,9 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"新编程语言的支持可以由第三方提供的GDNative/Native Script/PluginScript实现（请"
-"参考下面关于插件的问题）。有些项目正在进行，比如非官方的python支持 `Python "
-"<https://github.com/touilleMan/godot-python>`_ 和 Nim支持 `Nim <https://"
+"对于新编程语言的支持已经由第三方通过GDNative/Native Script/PluginScript实现"
+"（请参考下面关于插件的问题）。目前已经在开展一些工作了，比如非官方绑定Godot"
+"和 `Python <https://github.com/touilleMan/godot-python>`_ 以及 `Nim <https://"
 "github.com/pragmagic/godot-nim>`_。"
 
 #: ../../docs/about/faq.rst:88
@@ -237,7 +237,7 @@ msgstr ""
 "GDScript是Godot的集成脚本语言。你可以使用最少的代码，使用Godot中从细小到强大"
 "的所有功能，它既适用于初学者，也适用于专家，你可以快速熟悉它。如果你以前使用"
 "过Python之类的语言写过任何东西，你将会感到熟悉。如果你想要了解关于GDScript的"
-"示例，历史，完整介绍和功能，查看`GDScript脚本指南 <gdscript_basics>`_."
+"示例，历史，完整介绍和功能，查看 `GDScript脚本指南 <gdscript_basics>`_ 。"
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -246,8 +246,8 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
-"推荐你使用GDScript有多个原因-----包括在制作产品原型，或者你的项目处在测试阶段"
-"时，或者你没有在制作下一个3A大作------但是最重要的原因是“较少复杂度。”"
+"推荐你使用GDScript有多个原因——包括在制作产品原型，或者你的项目处在测试阶段"
+"时，或者你没有在制作下一个3A大作——但是最重要的原因是 **较少复杂度**。"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -326,7 +326,7 @@ msgid ""
 "engine, not a great amount of integrations."
 msgstr ""
 "与C++绑定而产生的糟糕接口会导致数量庞大的代码、BUG、瓶颈，以及普遍的效率低下"
-"（Lua、Python、Squirrel、JS等）。我们希望专注于一个强大的引擎 而不是大量的整"
+"（Lua、Python、Squirrel、JS等）。我们希望专注于一个强大的引擎而不是大量的整"
 "合。"
 
 #: ../../docs/about/faq.rst:133
@@ -365,7 +365,7 @@ msgid ""
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
 "Godot 通过 `OpenCollada <https://github.com/KhronosGroup/OpenCOLLADA/wiki/"
-"OpenCOLLADA-Tools>`(Maya, 3DSMax等导出)以支持Collada。"
+"OpenCOLLADA-Tools>`_ 导出插件（Maya, 3DSMax）以支持Collada。"
 
 #: ../../docs/about/faq.rst:149
 msgid ""
@@ -373,7 +373,7 @@ msgid ""
 "<https://godotengine.org/download>`_."
 msgstr ""
 "如果您使用的是Blender，请查看我们自己的 `Better Collada Exporter <https://"
-"godotengine.org/download>`_插件。"
+"godotengine.org/download>`_ 插件。"
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
@@ -387,9 +387,9 @@ msgid ""
 "FBX support could still be provided by third parties as a plugin. (See "
 "Plugins question above.)"
 msgstr ""
-"FBX SDK的 `有限性许可 <http://www.blender.org/bf/Autodesk_FBX_License."
-"rtf>`_，与Godot的 `开放许可 <http://opensource.org/licenses/MIT>`_不兼容。这"
-"代表着对于FBX的支持依旧可以通过第三方插件实现。"
+"FBX SDK具有 `限制性许可 <https://www.blender.org/bf/Autodesk_FBX_License."
+"rtf>`_，与Godot提供的 `开放许可 <https://opensource.org/licenses/MIT>`_ 不兼"
+"容。尽管如此，FBX支持仍然可以由第三方作为插件提供。(参见上面插件的问题。)"
 
 #: ../../docs/about/faq.rst:159
 msgid ""
@@ -431,7 +431,7 @@ msgid ""
 "community, and it grows along with ambitious community contributors like you."
 msgstr ""
 "如果您知道Godot不支持但是想提供免费和开源集成的第三方SDK，请考虑自己开始集成"
-"工作。戈多不属于一个人; 它属于社区，它与像你一样雄心勃勃的社区贡献者一起成"
+"工作。Godot不属于一个人; 它属于社区，它与像你一样雄心勃勃的社区贡献者一起成"
 "长。"
 
 #: ../../docs/about/faq.rst:179
@@ -484,8 +484,8 @@ msgid ""
 "best. Check the :ref:`doc_multiple_resolutions` tutorial on how to achieve "
 "this."
 msgstr ""
-"使用Godot中的拉伸(Stretch)选项，2D的保持拉伸效果最好。参阅教程：ref："
-"`doc_multiple_resolutions`来学习如何实现它。"
+"使用Godot中的拉伸(Stretch)选项，2D的保持拉伸效果最好。参阅教程 :ref:"
+"`doc_multiple_resolutions` 来学习如何实现它。"
 
 #: ../../docs/about/faq.rst:205
 msgid ""
@@ -503,8 +503,8 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
-"对于用户界面，使用 :ref:`Anchor <doc_size_and_anchors>` 来确定控件应停留或移"
-"动的位置。如果UI比较复杂，则考虑使用一下容器。"
+"对于用户界面，使用 :ref:`anchoring <doc_size_and_anchors>` 来确定控件应停留或"
+"移动的位置。如果UI比较复杂，则考虑使用一下容器。"
 
 #: ../../docs/about/faq.rst:214
 msgid "And that's it! Your game should work in multiple resolutions."
@@ -535,19 +535,19 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
-msgstr "另外，可在官方博客帖子查看这些话题:"
+msgstr "另外，可在官方博客帖子查看这些话题："
 
 #: ../../docs/about/faq.rst:230
 msgid ""
 "`A look at the GDNative architecture <https://godotengine.org/article/look-"
 "gdnative-architecture>`_"
 msgstr ""
-"`看看GDNative架构<https://godotengine.org/article/look-gdnative-"
+"`GDNative结构概览 <https://godotengine.org/article/look-gdnative-"
 "architecture>`_"
 
 #: ../../docs/about/faq.rst:231
 msgid "`GDNative is here! <https://godotengine.org/article/dlscript-here>`_"
-msgstr "`GDNative 就在这! <https://godotengine.org/article/dlscript-here>`_"
+msgstr "`GDNative来了! <https://godotengine.org/article/dlscript-here>`_"
 
 #: ../../docs/about/faq.rst:233
 msgid ""
@@ -556,7 +556,7 @@ msgid ""
 "godot-python>`_ for Godot. This would be a good starting point to see how "
 "another third-party library integrates with Godot."
 msgstr ""
-"您还可以查看GDScript的实现，Godot模组以及 `Godot的非官方Python支持<https://"
+"您还可以查看GDScript的实现，Godot模组以及 `Godot的非官方Python支持 <https://"
 "github.com/touilleMan/godot-python>`_ 。这个将是您了解如何将第三方库整合到"
 "Godot中的第一步。"
 
@@ -569,7 +569,7 @@ msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
-"令人惊叹的！作为一个开源项目，戈多的发展离不开像你这样的开发者的创新和野心。"
+"太棒了!作为一个开源项目，Godot的发展得益于像您这样的开发者的创新和雄心。"
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -579,15 +579,14 @@ msgid ""
 "master/CONTRIBUTING.md#contributing-pull-requests>`_ guide to learn how to "
 "fork, modify, and submit a Pull Request (PR) with your changes."
 msgstr ""
-"首先需要找到的位置是：`问题issues <https://github.com/godotengine/godot/"
-"issues>`_。找到一个你理解和认同的问题 issue，然后进入“如何贡献How to "
-"Contribute<https://github.com/godotengine/godot/blob/master/CONTRIBUTING."
-"md#contributing-pull-requests>`_指南，了解如何使用您的分叉进行修改，然后提交"
-"submit和推送Pull 修改后的问题Request（PR）即可。"
+"首先要从 `问题 <https://github.com/godotengine/godot/issues>`_ 开始。找到一个"
+"与您产生共鸣的问题，然后继续阅读 `如何贡献 <https://github.com/godotengine/"
+"godot/blob/master/CONTRIBUTING.md#contributing-pull-requests>`_ 指南，学习如"
+"何使用更改派生、修改和提交Pull Request (PR)。"
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr "如果我很好的想法对于Godot,那么我该如何分享它呢？"
+msgstr "我有一个关于Godot的好主意。我如何分享它?"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -603,9 +602,9 @@ msgid ""
 msgstr ""
 "想要把一些想法带给Godot会很诱人，比如导致大量核心变化的想法，某种模仿其他游戏"
 "引擎所做的事情，或者你想要在编辑器中构建另一种工作流程。 这些都是伟大的，我们"
-"感谢有这些想要贡献的积极的人，但Godot的焦点的方向是并始终是在‘Roadmap路线图"
+"感谢有这些想要贡献的积极的人，但Godot的焦点的方向是并始终是在‘Roadmap路线图 "
 "<https://github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_中概述"
-"的核心功能。 `解决bug和解决问题<https://github.com/godotengine/godot/"
+"的核心功能。 `解决bug和解决问题 <https://github.com/godotengine/godot/"
 "issues>`_，以及与Godot社区成员之间的对话。"
 
 #: ../../docs/about/faq.rst:260
@@ -674,7 +673,7 @@ msgstr "我要怎样支持或参与Godot的发展呢？"
 
 #: ../../docs/about/faq.rst:287
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr "参阅 :ref:`doc_ways_to_contribute`."
+msgstr "参阅 :ref:`doc_ways_to_contribute`。"
 
 #: ../../docs/about/faq.rst:290
 msgid "Who is working on Godot? How can I contact you?"

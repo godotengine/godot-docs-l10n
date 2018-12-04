@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,38 +30,47 @@ msgid ""
 "SCons (you can get it from macports, you should be able to run ``scons`` in "
 "a terminal when installed)"
 msgstr ""
+"SCons（你可以从macports获得它，你应该能够在安装时在终端中运行``scons``）"
 
 #: ../../docs/development/compiling/compiling_for_ios.rst:13
 msgid "Xcode with the iOS SDK and the command line tools."
+msgstr "Xcode与iOS SDK和命令行工具。"
+
+#: ../../docs/development/compiling/compiling_for_ios.rst:15
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:16
+#: ../../docs/development/compiling/compiling_for_ios.rst:19
 msgid "Compiling"
 msgstr "开始编译"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:18
+#: ../../docs/development/compiling/compiling_for_ios.rst:21
 msgid "Open a Terminal, go to the root dir of the engine source code and type:"
-msgstr ""
+msgstr "打开终端，转到引擎源代码的根目录并键入："
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:24
+#: ../../docs/development/compiling/compiling_for_ios.rst:27
 msgid "for a debug build, or:"
-msgstr ""
+msgstr "用于调试版本，或："
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:30
+#: ../../docs/development/compiling/compiling_for_ios.rst:33
 msgid ""
 "for a release build (check ``platform/iphone/detect.py`` for the compiler "
 "flags used for each configuration)."
 msgstr ""
+"对于发布版本（检查``platform / iphone / detect.py``以获取用于每个配置的编译器"
+"标志）。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:33
+#: ../../docs/development/compiling/compiling_for_ios.rst:36
 msgid "Alternatively, you can run"
-msgstr ""
+msgstr "或者，您可以运行"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:39
+#: ../../docs/development/compiling/compiling_for_ios.rst:42
 msgid "for a Simulator executable."
-msgstr ""
+msgstr "用于模拟器可执行文件。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:41
+#: ../../docs/development/compiling/compiling_for_ios.rst:44
 msgid ""
 "Additionally since some time Apple requires 64 bit version of application "
 "binary when you are uploading to iStore. The best way to provide these is to "
@@ -71,20 +80,27 @@ msgid ""
 "bundle them into one fat binary, all those steps can be performed with "
 "following commands:"
 msgstr ""
+"此外，由于Apple在上传到iStore时需要64位版本的应用程序二进制文件。 提供这些的"
+"最好方法是创建一个包含32位和64位二进制文件的包，这样每个设备都可以运行游戏。 "
+"它可以分三步完成，首先编译32位版本，然后编译64位版本，然后使用``lipo``将它们"
+"捆绑成一个胖二进制文件，所有这些步骤都可以使用以下命令执行："
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:53
+#: ../../docs/development/compiling/compiling_for_ios.rst:56
 msgid "Run"
 msgstr "运行"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:55
+#: ../../docs/development/compiling/compiling_for_ios.rst:58
 msgid ""
 "To run on a device or simulator, follow these instructions: :ref:"
 "`doc_exporting_for_ios`."
 msgstr ""
+"要在设备或模拟器上运行，请按照以下说明操作:: ref：`doc_exporting_for_ios`。"
 
-#: ../../docs/development/compiling/compiling_for_ios.rst:58
+#: ../../docs/development/compiling/compiling_for_ios.rst:61
 msgid ""
 "Replace or add your executable to the Xcode project, and change the "
 "\"executable name\" property on Info.plist accordingly if you use an "
 "alternative build."
 msgstr ""
+"将您的可执行文件替换或添加到Xcode项目，如果您使用替代版本，则相应地更改Info."
+"plist上的“可执行文件名称”属性。"

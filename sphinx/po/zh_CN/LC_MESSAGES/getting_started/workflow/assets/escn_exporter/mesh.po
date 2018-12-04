@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,17 +23,19 @@ msgstr "网络"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:5
 msgid "Modifiers"
-msgstr ""
+msgstr "修饰符"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:6
 msgid ""
 "There is an exporting option :code:`Apply Modifiers` to control whether mesh "
 "modifiers are applied to the exported mesh."
 msgstr ""
+"有一个导出选项 :code:`Apply Modifiers` 来控制是否将网格修改器应用于导出的网"
+"格。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:11
 msgid "Shape Key"
-msgstr ""
+msgstr "形状键"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:12
 msgid ""
@@ -41,6 +43,8 @@ msgid ""
 "almost like exporting the mesh again, so don't be surprised it takes a "
 "relatively long time."
 msgstr ""
+"支持导出网格形状键，但是导出每个形状键几乎就像再次导出网格一样，所以不要惊讶"
+"它需要相对长的时间。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/mesh.rst:17
 msgid ""
@@ -51,3 +55,7 @@ msgid ""
 "github.com/godotengine/godot-blender-exporter/issues>`__, which helps to "
 "develop the exporter to have a more precise check of modifiers."
 msgstr ""
+"很多修饰符与形状键不兼容（例如，次表面修饰符），因此如果您发现导出的形状键不"
+"正确，请尝试禁用 :code:`Apply Modifiers` 并再次导出。 此外，值得将不兼容的修"
+"饰符报告给`问题列表 <https://github.com/godotengine/godot-blender-exporter/"
+"issues>`__，这有助于开发导出器以更精确地检查改性剂。"

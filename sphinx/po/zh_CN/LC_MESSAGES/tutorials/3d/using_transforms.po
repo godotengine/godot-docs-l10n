@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:4
-#, fuzzy
 msgid "Using 3D transforms"
-msgstr "在Godot中使用3D变换"
+msgstr "使用3D变换"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:7
 msgid "Introduction"
@@ -69,9 +68,8 @@ msgstr ""
 "游戏时处理变换的最佳做法。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
-#, fuzzy
 msgid "Problems of Euler angles"
-msgstr "欧拉角的问题"
+msgstr "欧拉角问题"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:30
 msgid ""
@@ -80,7 +78,6 @@ msgid ""
 msgstr "虽然看起来很直观，每个轴都有一个旋转，但事实是它并不实用。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
-#, fuzzy
 msgid "Axis order"
 msgstr "轴顺序"
 
@@ -93,8 +90,8 @@ msgid ""
 "angle by angle, in an *arbitrary order*."
 msgstr ""
 "这样做的主要原因是没有一种独特的方法可以从角度构建方向。 没有一个标准的数学函"
-"数可以将所有角度放在一起并产生实际的3D旋转。 从角度产生方向的唯一方法是以*任"
-"意顺序*按角度旋转物体角度。"
+"数可以将所有角度放在一起并产生实际的3D旋转。 从角度产生方向的唯一方法是以 *任"
+"意顺序* 按角度旋转物体角度。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:39
 msgid ""
@@ -202,13 +199,12 @@ msgid ""
 "org/wiki/Gimbal_lock>`_ for a detailed explanation of this problem."
 msgstr ""
 "万向节锁正在发挥作用（第一个和最后一个旋转的轴对齐，因此失去了一定的自由"
-"度）。 请参阅`维基百科关于Gimbal Lock的页面<https://en.wikipedia.org/wiki/"
+"度）。 请参阅 `维基百科关于Gimbal Lock的页面 <https://en.wikipedia.org/wiki/"
 "Gimbal_lock>`_以了解这个问题的详细解释。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
-#, fuzzy
 msgid "Say no to Euler angles"
-msgstr "对欧拉角度说不"
+msgstr "对欧拉角说不"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:82
 msgid ""
@@ -228,7 +224,6 @@ msgid "Instead, there is a better way to solve your rotation problems."
 msgstr "相反，有一个更好的方法来解决你的旋转问题。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
-#, fuzzy
 msgid "Introducing transforms"
 msgstr "变换的介绍"
 
@@ -314,7 +309,6 @@ msgstr ""
 "有关向量和变换在数学方面的更多信息，请阅读：ref：`doc_vector_math`教程。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
-#, fuzzy
 msgid "Manipulating transforms"
 msgstr "操作变换"
 
@@ -345,7 +339,6 @@ msgid ""
 msgstr "要相对于对象空间旋转（节点自己的变换），请使用以下内容："
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
-#, fuzzy
 msgid "Precision errors"
 msgstr "精度误差"
 
@@ -393,7 +386,6 @@ msgstr ""
 "放节点，则在最后重新应用它："
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
-#, fuzzy
 msgid "Obtaining information"
 msgstr "获取信息"
 
@@ -435,7 +427,6 @@ msgid "All common behaviors and logic can be done with just vectors."
 msgstr "所有常见的行为和逻辑都可以用向量来完成。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:306
-#, fuzzy
 msgid "Setting information"
 msgstr "设置信息"
 
@@ -471,9 +462,8 @@ msgstr ""
 "向。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:358
-#, fuzzy
 msgid "Interpolating with quaternions"
-msgstr "插值与四元数"
+msgstr "四元数插值"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:360
 msgid ""

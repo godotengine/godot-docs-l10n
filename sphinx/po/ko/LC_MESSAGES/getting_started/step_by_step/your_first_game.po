@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -311,13 +311,12 @@ msgstr ""
 "편리합니다. ``Player`` 노드를 선택하고 speed 속성을 ``400`` 으로 설정하세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:177
-#, fuzzy
 msgid ""
 "If you're using C#, you need to restart Godot editor temporarily to see "
 "exported variables in the editor until it's fixed."
 msgstr ""
-"C#을 사용하신다면, 에디터에 내보낸 값을 보기 위해 그것이 고정될 때 까지 "
-"Godot 에디터를 일시적으로 재시작해야 합니다."
+"C#을 사용하신다면, 에디터에 내보낸 값을 보기 위해 값이 고정될 때까지 Godot 에"
+"디터를 일시적으로 다시 시작해야 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:182
 msgid ""
@@ -328,10 +327,11 @@ msgstr ""
 "기를 알아보기 좋은 순간입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:198
+#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
-"of our game which we expect will change often. Here we'll make it:"
+"of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 "이제 우리는 ``_process()`` 함수를 사용해서 플레이어가 무엇을 할 지 정의할 수 "
 "있습니다. ``_process()`` 는 매 프레임마다 호출되므로, 게임에서 자주 업데이트 "
@@ -502,10 +502,11 @@ msgstr ""
 "할당을 이 코드와 비교해서 생각해보세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
+#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
-"line to ``_ready()`` so the player will be hidden when the game starts:"
+"line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
 "씬을 다시 실행하고 애니메이션이 각 방향에 맞게 되는지 확인하세요. 잘 작동된다"
 "고 확신된다면, 플레이어가 게임이 시작할 때 안 보이도록 이 문장을 "
@@ -774,8 +775,9 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "인스턴스에 대해 더 알고 싶다면 :ref:`doc_instancing` 로 가세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:617
+#, fuzzy
 msgid ""
-"Now add the following nodes as children of ``Main``, and name them as shown "
+"Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
 "``Main`` 의 자식으로 다음의 노드들을 추가하고, 보이는 대로 이름을 지으세요 "
@@ -900,8 +902,9 @@ msgid "Main script"
 msgstr "메인 스크립트"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
+#, fuzzy
 msgid ""
-"Add a script to ``Main``. At the top of the script we use ``export "
+"Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "``Main`` 에 스크립트를 추가합니다. 스크립트의 위에 ``export (PackedScene)`` "
@@ -940,8 +943,9 @@ msgstr ""
 "하게 만들 것입니다. ``ScoreTimer`` 는 점수가 1씩 증가하게 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
+#, fuzzy
 msgid ""
-"In ``_on_MobTimer_timeout()`` we will create a mob instance, pick a random "
+"In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."

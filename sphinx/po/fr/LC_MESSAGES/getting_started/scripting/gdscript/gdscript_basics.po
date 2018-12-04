@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1112,7 +1112,7 @@ msgstr ""
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
-"fragmentation. If this is a concern special types of arrays are available. "
+"fragmentation. If this is a concern, special types of arrays are available. "
 "These only accept a single data type. They avoid memory fragmentation and "
 "also use less memory but are atomic and tend to run slower than generic "
 "arrays. They are therefore only recommended to use for large data sets:"
@@ -1231,10 +1231,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:563
+#, fuzzy
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
 msgstr ""
+"Les types sont spécifiés dans la variable par un \":\" après le nom de la "
+"variable, suivi par le type."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:571
 msgid ""
@@ -1249,8 +1252,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:580
+#, fuzzy
 msgid "Valid types are:"
-msgstr ""
+msgstr "Les types valides sont:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:582
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
@@ -1332,7 +1336,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:650
 msgid "Assigning a value of an incompatible type will raise an error."
-msgstr ""
+msgstr "Assigner une valeur à un type incompatible va générer une erreur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:653
 msgid "Enums"
@@ -1382,11 +1386,15 @@ msgstr ""
 "défaut est ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:696
+#, fuzzy
 msgid ""
 "Functions can also have type specification for the arguments and for the "
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
+"Les fonctions peuvent également avoir une spécification de type pour les "
+"arguments et pour les valeurs de retour. Les types peuvent être ajoutés aux "
+"arguments de la même manière que pour les variables::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:702
 msgid ""
@@ -1427,7 +1435,7 @@ msgid ""
 "another function or be returned from other functions. This is for "
 "performance reasons."
 msgstr ""
-"Contrairement à Python, les fonctions ne sont *pas* des objets de première "
+"Contrairement au Python, les fonctions ne sont *pas* des objets de première "
 "classe dans GDScript. Cela signifie qu'elles ne peuvent pas être stockées "
 "dans des variables, passées en argument à une autre fonction ou être "
 "renvoyées par d'autres fonctions. Ceci pour des raisons de performance."
@@ -1550,7 +1558,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:852
 msgid "Basic syntax:"
-msgstr "Syntaxe de base :"
+msgstr "Syntaxe de base:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:865
 msgid "**Crash-course for people who are familiar to switch statements**:"
@@ -1558,24 +1566,28 @@ msgstr ""
 "**Cours rapide pour ceux qui sont familiers avec les instructions switch** :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:867
+#, fuzzy
 msgid "Replace ``switch`` with ``match``"
-msgstr "Remplacez ``switch`` avec ``match``"
+msgstr "Remplace ``switch`` avec ``match``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
+#, fuzzy
 msgid "Remove ``case``"
-msgstr "Enlevez ``case``"
+msgstr "Enlever ``case``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
+#, fuzzy
 msgid ""
-"Remove any ``break``'s. If you don't want to ``break`` by default you can "
+"Remove any ``break``s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
 "Enlevez tous les ``break``. Si vous ne voulez pas ``break`` par défaut, vous "
 "pouvez utiliser ``continue`` pour poursuivre l’exécution de ``match``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
+#, fuzzy
 msgid "Change ``default`` to a single underscore."
-msgstr "Remplacez ``default`` par un simple underscore (_)."
+msgstr "Remplacer ``default`` par un simple underscore (_)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:873
 msgid "**Control flow**:"
@@ -1664,9 +1676,10 @@ msgstr ""
 "une expression en soi, de sorte que vous pouvez les imbriquer."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:935
+#, fuzzy
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
-"pattern, otherwise the pattern don't match."
+"pattern, otherwise the pattern doesn't match."
 msgstr ""
 "La longueur du tableau est d'abord testée, elle doit être de la même taille "
 "que l'expression, sinon cette dernière ne correspond pas."
@@ -1696,9 +1709,10 @@ msgstr ""
 "une expression constante."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:954
+#, fuzzy
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
-"the pattern, otherwise the pattern don't match."
+"the pattern, otherwise the pattern doesn't match."
 msgstr ""
 "La taille du dictionnaire est d'abord testée, elle doit être de la même "
 "taille que l'expression, sinon l'expression ne correspond pas."
@@ -1979,11 +1993,12 @@ msgstr ""
 "d'exportation (voir ci-dessous)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
+#, fuzzy
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
-"them visible and editable in the editor. This way artists and game designers "
-"can modify values that later influence how the program runs. For this, a "
-"special export syntax is provided."
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
 msgstr ""
 "L'un des avantages fondamentaux de l'exportation des variables membres est "
 "de les rendre visibles et modifiables dans l'éditeur. De cette façon, les "
@@ -2049,8 +2064,9 @@ msgid "Exporting arrays"
 msgstr "Exportation de tableaux"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1333
+#, fuzzy
 msgid ""
-"Exporting arrays works but with an important caveat: While regular arrays "
+"Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
 "between all instances. This means that editing them in one instance will "
 "cause them to change in all other instances. Exported arrays can have "
@@ -2117,8 +2133,9 @@ msgstr ""
 "valider les entrées."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1411
+#, fuzzy
 msgid ""
-"As said *local* access will *not* trigger the setter and getter. Here is an "
+"As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
 "L'accès dit *local* ne déclenchera *pas* le setter et le getter. En voici "
@@ -2129,9 +2146,10 @@ msgid "Tool mode"
 msgstr "Mode outil"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1428
+#, fuzzy
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
-"properties can be changed. In some cases it is desired that they do run "
+"properties can be changed. In some cases, it is desired that they do run "
 "inside the editor (as long as they don't execute game code or manually avoid "
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
@@ -2235,13 +2253,14 @@ msgid "Coroutines with yield"
 msgstr "Coroutines et signaux"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1520
+#, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
 "immediately return from the current function, with the current frozen state "
 "of the same function as the return value. Calling ``resume`` on this "
 "resulting object will continue execution and return whatever the function "
-"returns. Once resumed the state object becomes invalid. Here is an example:"
+"returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
 "GDScript offre un support pour les `coroutines <https://fr.wikipedia.org/"
 "wiki/Coroutine>`_ via la fonction intégrée ``yield``. L'appel de ``yield()`` "
@@ -2268,9 +2287,10 @@ msgid "Coroutines & signals"
 msgstr "Coroutines et signaux"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1577
+#, fuzzy
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
-"``yield`` can accept two parameters, an object and a signal. When the signal "
+"``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
 "La force réelle de l'utilisation du ``yield`` est lorsqu'il est combiné avec "

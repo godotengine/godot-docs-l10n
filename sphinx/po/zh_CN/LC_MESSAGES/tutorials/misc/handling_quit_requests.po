@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:4
 msgid "Handling quit requests"
-msgstr ""
+msgstr "处理退出请求"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:7
 msgid "Quitting"
-msgstr ""
+msgstr "退出"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:9
 msgid ""
@@ -32,29 +32,37 @@ msgid ""
 "On Android, the back button is used to quit when on the main screen (and to "
 "go back otherwise)."
 msgstr ""
+"大多数平台都可以选择请求退出应用程序。 在桌面系统中，通常使用窗口标题栏上"
+"的“x”图标来完成。 在Android上，当在主屏幕上时，后退按钮用于退出（否则返回）。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:15
 msgid "Handling the notification"
-msgstr ""
+msgstr "处理通知"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:17
 msgid ""
 "The :ref:`MainLoop <class_MainLoop>` has a special notification that is sent "
 "to all nodes when quit is requested: MainLoop.NOTIFICATION_WM_QUIT."
 msgstr ""
+":ref:`MainLoop <class_MainLoop>` 有一个特殊通知，在请求退出时将发送到所有节"
+"点 : MainLoop.NOTIFICATION_WM_QUIT。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:21
 msgid "Handling it is done as follows (on any node):"
-msgstr ""
+msgstr "在任何节点上，可以像下面这样处理这个通知："
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:38
 msgid ""
 "When developing mobile apps, quitting is not desired unless the user is on "
 "the main screen, so the behavior can be changed."
 msgstr ""
+"在开发移动应用程序时，除非用户在主屏幕上，否则不需要退出，因此处理方式有变"
+"化。"
 
 #: ../../docs/tutorials/misc/handling_quit_requests.rst:41
 msgid ""
 "It is important to note that by default, Godot apps have the built-in "
 "behavior to quit when quit is requested, this can be changed:"
 msgstr ""
+"值得注意的是，默认情况下，在请求退出时，Godot应用程序具有退出的内置行为，可以"
+"更改为："

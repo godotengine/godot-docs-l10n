@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
-#, fuzzy
 msgid "Importing 3D scenes"
 msgstr "导入3D场景"
 
@@ -27,7 +26,6 @@ msgid "Godot Scene Importer"
 msgstr "Godot 场景导入器"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
-#, fuzzy
 msgid ""
 "When dealing with 3D assets, Godot has a flexible and configurable importer."
 msgstr "在处理 3D 资产时, Godot 有一个非常灵活且可配置的导入器。"
@@ -94,7 +92,6 @@ msgid "Exporting DAE files from Maya and 3DS Max"
 msgstr "从 maya 和 3DS Max 中输出 DAE 文件"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:35
-#, fuzzy
 msgid ""
 "Autodesk added built-in collada support to Maya and 3DS Max, but it's broken "
 "by default and should not be used. The best way to export this format is by "
@@ -122,13 +119,12 @@ msgid ""
 "Godot provides a `Python Plugin <https://github.com/godotengine/collada-"
 "exporter>`__ that will do a much better job of exporting the scenes."
 msgstr ""
-"Godot 提供了一个`Python插件<https://github.com/godotengine/collada-"
+"Godot 提供了一个 `Python插件 <https://github.com/godotengine/collada-"
 "exporter>`__，可以更好地导出场景。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:53
-#, fuzzy
 msgid "Exporting ESCN files from Blender"
-msgstr "从 Blender 导出 DAE 文件"
+msgstr "从Blender导出ESCN文件"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:55
 msgid ""
@@ -137,12 +133,17 @@ msgid ""
 "another name of .tscn file(Godot scene file), it keeps as much information "
 "as possible from a Blender scene."
 msgstr ""
+"最强大的一个，名为 `godot-blender-exporter  <https://github.com/godotengine/"
+"godot-blender-exporter>`__。 它使用.escn文件，它是.tscn文件（Godot场景文件）"
+"的另一个名称，它从Blender场景中保留尽可能多的信息。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:60
 msgid ""
 "ESCN exporter has a detailed `document <escn_exporter/index.html>`__ "
 "describing its functionality and usage."
 msgstr ""
+"ESCN导出器有一个详细的 `document  <escn_exporter / index.html>`__ ，描述了它"
+"的功能和用法。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:64
 msgid "Import workflows"
@@ -191,7 +192,6 @@ msgid ""
 msgstr "由于不同的开发人员有不同的需求, 这个导入过程是高度可定制的。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
-#, fuzzy
 msgid "Import options"
 msgstr "导入选项"
 
@@ -201,7 +201,7 @@ msgstr "导入器有几种选项，这将在下面讨论："
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:87
 msgid "Nodes"
-msgstr "节点（Nodes）"
+msgstr "节点"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:90
 msgid "Root Type"
@@ -235,9 +235,8 @@ msgstr ""
 "有趣的事情等非常有用。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
-#, fuzzy
 msgid "Create a script that like this:"
-msgstr "创建脚本基本如下所示:"
+msgstr "创建如下的脚本:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:117
 msgid ""
@@ -532,7 +531,6 @@ msgid "Clips"
 msgstr "片段"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:251
-#, fuzzy
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "
 "clips. Specify from which frame to which frame each clip must be taken (and, "
@@ -542,12 +540,10 @@ msgstr ""
 "指定上面的FPS选项）。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:255
-#, fuzzy
 msgid "Scene inheritance"
 msgstr "场景继承"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:257
-#, fuzzy
 msgid ""
 "In many cases, it may be desired to do modifications to the imported scene. "
 "By default, this is not possible because if the source asset changes "
@@ -559,7 +555,6 @@ msgstr ""
 "重新导入整个场景。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:260
-#, fuzzy
 msgid ""
 "It is possible, however, to do local modifications by using *Scene "
 "Inheritance*. Try to open the imported scene and the following dialog will "
@@ -587,7 +582,6 @@ msgid "Other than that, everything is allowed!"
 msgstr "除了这些, 一切都是允许的!"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:273
-#, fuzzy
 msgid "Import hints"
 msgstr "导入提示"
 
@@ -625,7 +619,6 @@ msgid "Remove nodes (-noimp)"
 msgstr "删除节点 (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:288
-#, fuzzy
 msgid ""
 "Node names that have this suffix will be removed at import time, no matter "
 "what their type is. They will not appear in the imported scene."
@@ -706,9 +699,8 @@ msgstr ""
 "选项/主题/ 3D视图/空物体中为它们设置不同的颜色。"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:322
-#, fuzzy
 msgid "Create navigation (-navmesh)"
-msgstr "创建navigatopm（-navmesh）"
+msgstr "创建导航（-navmesh）"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:324
 msgid ""

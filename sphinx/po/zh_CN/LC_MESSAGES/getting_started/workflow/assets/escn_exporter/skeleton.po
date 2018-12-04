@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,13 +23,14 @@ msgstr "骨架"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:7
 msgid "Rest Bone"
-msgstr ""
+msgstr "尾椎骨骼"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:9
 msgid ""
 "Armature object in Blender is exported as a Skeleton node along with rest "
 "position (transform in Godot) of bones."
 msgstr ""
+"Blender中的骨架对象与骨骼的静止位置（Godot变换）一起导出为Skeleton节点。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
 msgid ""
@@ -38,10 +39,13 @@ msgid ""
 "Blender, so that the exported bone transform would be consistent between "
 "Blender and Godot"
 msgstr ""
+"三个复选框 :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:`Local "
+"Location` （红色）必须在Blender中构建骨架时勾选，以便导出的骨骼变换一致 在"
+"Blender和Godot之间"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:19
 msgid "Bone Weights"
-msgstr ""
+msgstr "骨骼权重"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
 msgid ""
@@ -50,10 +54,13 @@ msgid ""
 "making the mesh deformed. Therefore, the exporter would raise an error for "
 "any no bone weights vertex detected in a rigged mesh."
 msgstr ""
+"Blender放置了在其原始位置没有骨骼权重的装配网格顶点，但是这些顶点将放置在"
+"Godot中的（0,0,0）处，这使得网格变形。 因此，导出器会在绑定网格中检测到任何无"
+"骨骼权重顶点时引发错误。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"
-msgstr ""
+msgstr "非变形骨骼"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
 msgid ""
@@ -61,13 +68,17 @@ msgid ""
 "the :code:`Exclude Control Bones`, the deform bone checkbox is shown in "
 "picture."
 msgstr ""
+"请注意，可以通过启用 :code:`Exclude Control Bones` 将非变形骨骼配置为不导出，"
+"变形骨骼复选框显示在图片中。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:35
 msgid "Bone Attachment"
-msgstr ""
+msgstr "骨附件"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
 msgid ""
 "Bone can be parent of object in Blender, this relation is exported as a "
 "BoneAttachment node in the Godot scene."
 msgstr ""
+"Bone可以是Blender中对象的父对象，此关系将作为Godot场景中的BoneAttachment节点"
+"导出。"

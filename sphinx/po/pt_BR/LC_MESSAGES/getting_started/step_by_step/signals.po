@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,9 +67,8 @@ msgstr ""
 "próprios projetos."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "Alguns exemplos:"
+msgstr "Alguns exemplos"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -86,12 +85,10 @@ msgstr ""
 "raíz, mas não adicione nenhum código a ele ainda."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
-#, fuzzy
 msgid "Your scene tree should look like this:"
-msgstr "A árvore da cena deveria se parecer assim:"
+msgstr "Sua árvore da cena deveria se parecer assim:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:35
-#, fuzzy
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
@@ -102,25 +99,26 @@ msgstr ""
 "cena. Você pode deixar o *Wait Time* em 1 segundo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
-#, fuzzy
 msgid ""
 "Next to the \"Inspector\" tab is a tab labeled \"Node\". Click on this tab "
 "and you'll see all of the signals that the selected node can emit. In the "
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
-msgstr "Próximo à aba \"Inspector\" é uma aba"
+msgstr ""
+"Próximo à aba \"Inspector\" há uma aba chamada \"Nó\". Clique nessa aba e "
+"você verá todos os sinais que o nó selecionado pode emitir. No caso do nó "
+"Timer, o que nos importa é o \"timeout\". Este sinal é emitido sempre que o "
+"Timer chegar à ``0``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:46
-#, fuzzy
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
-"Clique no sinal \"timeout()\" e clique \"Conectar....\". Você verá a "
+"Clique no sinal \"timeout()\" e clique em \"Conectar...\". Você vai ver a "
 "seguinte janela, onde pode definir como você quer conectar o sinal:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
-#, fuzzy
 msgid ""
 "On the left side, you'll see the nodes in your scene and can select the node "
 "that you want to \"listen\" for the signal. Note that the Timer node is red "
@@ -128,64 +126,79 @@ msgid ""
 "is emitting the signal. Select the root node."
 msgstr ""
 "Do lado esquerdo, você verá os nós na sua cena e pode selecionar o nó que "
-"você quer \"listen\" para o sinal. Note que o nó Timer está vermelho - isso "
-"*não* é um erro, mas é uma indicação visual de que esse nó que está emitindo "
-"o sinal. Selecione o nó raiz."
+"você quer que \"escute\" para o sinal. Note que o nó Timer está vermelho - "
+"isso *não* é um erro, mas é uma indicação visual de que é esse o nó o qual "
+"está emitindo o sinal. Selecione o nó raiz."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:56
-#, fuzzy
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
-"O nó alvo *precisa* ter um script atrelado ou você vai receber uma mensagem "
+"O nó alvo *precisa* ter um script anexado ou você vai receber uma mensagem "
 "de erro."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
+#, fuzzy
 msgid ""
 "On the bottom of the window is a field labeled \"Method In Node\". This is "
 "the name of the function in the target node's script that you want to use. "
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"Em baixo da janela há um campo rotulado \"Method In Node\". Esse é o nome da "
+"função no nó script do nó alvo que você quer usar. Por padrão, Godot vai "
+"criar essa função usando a convenção de nomenclatura "
+"``_on_<nome_do_nó>_<nome_do_sinal>`` mas você pode mudá-lo se desejar."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:64
 msgid ""
 "Click \"Connect\" and you'll see that the function has been created in the "
 "script:"
-msgstr ""
+msgstr "Clique em \"Conectar\" e você verá que a função foi criada no script:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:84
 msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Agora podemos substituir o código placeholder com qualquer código que deseja "
+"executar quando o sinal for recebido. Vamos fazer o Sprite piscar:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Execute a cena e você verá o Sprite ligando e desligando a cada segundo. "
+"Você pode mudar a propriedade *Wait Time* do temporizador para alterar isso."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
 #, fuzzy
 msgid "Connecting signals in code"
-msgstr "Conectando um sinal a uma função"
+msgstr "Conectando sinais por código"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
+#, fuzzy
 msgid ""
 "You can also make the signal connection in code rather than with the editor. "
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Você pode também pode fazer a conexão do sinal tanto em código quanto no "
+"editor. Isso é geralmente necessário quando você está instanciando nós via "
+"código e não pode usar o editor para fazer a conexão."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Primeiro, desconecte o sinal selecionando a conexão na aba \"Nó\" do timer e "
+"clicando em desconectar."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
+#, fuzzy
 msgid ""
 "To make the connection in code, we can use the ``connect`` function. We'll "
 "put it in ``_ready()`` so that the connection will be made on run. The "
@@ -193,6 +206,10 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Para fazer a conexão por código, nós podemos usar a função ``connect``. Nós "
+"iremos colocá-la em ``_ready()`` então a conexão será feita ao rodar. A "
+"sintaxe da função é ``<nó_fonte>.connect(<nome_do_sinal>, <nó_alvo>, "
+"<nome_da_função_alvo>)``."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
 #, fuzzy
@@ -201,17 +218,19 @@ msgstr "Iteradores personalizados"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
-msgstr ""
+msgstr "Você também pode declarar seus próprios sinais na Godot:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Quando declarado, seus sinais personalizados aparecerão no Inspetor e podem "
+"ser conectados da mesma forma que os sinais pré-incorporados em um node."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
-msgstr ""
+msgstr "Para emitir um sinal por código, use a função ``emit``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
 #, fuzzy
@@ -225,14 +244,21 @@ msgid ""
 "clicked, we create an instance of the bullet at the player's location. See :"
 "ref:`doc_instancing` for details."
 msgstr ""
+"Um outro exemplo de uso de sinal, vamos considerar um personagem que pode "
+"girar e atirar na direção do mouse. Toda vez que o botão do mouse é clicado, "
+"nós criamos uma instância da bala na posição do player. Veja:ref:"
+"`doc_instancing` para mais detalhes."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
+"Entretanto, se as balas forem anexadas ao jogador, então elas continuarão "
+"\"anexadas\" ao jogador enquanto ele gira:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
+#, fuzzy
 msgid ""
 "Instead, we need the bullets to be independent of the player's movement - "
 "once fired, they should continue traveling in a straight line and the player "
@@ -241,12 +267,19 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
+"Ao contrário disso, nós precisamos que as balas sejam independentes do "
+"movimento do jogador - uma vez disparadas, elas devem continuar se "
+"movimentando em linha reta e o jogador não pode mais afetá-las. Invés de "
+"serem adicionadas a árvore da cena como anexo do jogador, faz mais sentido "
+"adicionar as balas como anexado da cena \"principal\" do jogo, que na qual o "
+"jogador pode ser anexo da mesma ou em uma hierarquia mais alta."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 msgid "You could do this by adding the bullet directly:"
-msgstr ""
+msgstr "Você pode fazer isso adicionando a bala diretamente:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
+#, fuzzy
 msgid ""
 "However, this will lead to a different problem. Now if you try and test your "
 "\"Player\" scene independently, it will crash on shooting, because there is "
@@ -255,6 +288,12 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
+"Entretanto, com isso virá um outro problema. Agora se você testar de forma "
+"isolada a cena \"Jogador\", haverá um crash ao atirar, pois não há um nó pai "
+"para acessar. Isso faz ficar muito mais difícil testar o seu código do "
+"player de forma isolada e isso também significa que se você quiser mudar a "
+"estrutura da sua cena principal, o pai do jogador não será mais um nó capaz "
+"de receber as balas."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""
@@ -263,22 +302,30 @@ msgid ""
 "after that - whatever node is connected to the signal can \"receive\" the "
 "bullets and take the appropriate action to spawn them."
 msgstr ""
+"A solução para isso é usar um sinal para \"emitir\" as balas do jogador. Com "
+"isso não há mais necessidade do jogador \"saber\" o que acontece com as "
+"balas depois de disparadas - qualquer nó que estiver conectado ao sinal pode "
+"\"receber\" as balas e tomar a ação apropriada para gerar elas."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:247
 msgid "Here is the code for the player using signals to emit the bullet:"
-msgstr ""
+msgstr "Aqui está o código para o jogador usar sinais para emitir a bala:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:290
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
+"Na cena principal, conectamos então o sinal do jogador (aparecerá na guia "
+"\"Nó\")."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:314
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
 msgstr ""
+"Agora as balas terão seu movimento conservado independente da rotação do "
+"jogador:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:320
 msgid "Conclusion"
@@ -291,9 +338,18 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"Na Godot, muitos dos nós embutidos proporcionam sinais que você pode usar "
+"para detectar eventos. Por exemplo, um :ref:`Area2D "
+"<class_Area2D>`representando uma moeda emite um sinal ``body_entered`` "
+"sempre quando o corpo físico do jogador entra na forma de colisão, "
+"permitindo você saber quando o jogador coletou ela."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:327
+#, fuzzy
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"Na próxima seção, :ref:`doc_your_first_game`, você construirá um jogo "
+"completo, incluindo vários usos de sinais para conectar diferentes "
+"componentes do jogo."

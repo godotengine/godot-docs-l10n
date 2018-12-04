@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
-#, fuzzy
 msgid "Godot-Blender-Exporter"
-msgstr "Godot 场景导入器"
+msgstr "Godot-Blender-导出器"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
 msgid ""
@@ -28,14 +27,16 @@ msgid ""
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
+"本章涉及名为“Godot-Blender-Exporter”的blender插件，可在此处下载：https：//"
+"github.com/godotengine/godot-blender-exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:8
 msgid "Details on exporting"
-msgstr ""
+msgstr "导出细节"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
 msgid "Disabling specific objects"
-msgstr ""
+msgstr "禁用特定对象"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:25
 msgid ""
@@ -43,17 +44,18 @@ msgid ""
 "baking). An object will not be exported if it is not rendered in the scene. "
 "This can be set in the outliner:"
 msgstr ""
+"有时您不希望导出某些对象（例如用于烘焙的高分辨率模型）。 如果未在场景中渲染对"
+"象，则不会导出该对象。 这可以在大纲中设置："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:31
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
-msgstr ""
+msgstr "隐藏在视口中的对象将被导出，但将隐藏在Godot场景中。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:36
-#, fuzzy
 msgid "Build pipeline integration"
-msgstr "构建配置："
+msgstr "构建管线集成"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:38
 msgid ""
@@ -64,3 +66,8 @@ msgid ""
 "systems. An example Makefile and python script that exports all the blends "
 "in a directory is present in the Godot-Blender-exporter repository."
 msgstr ""
+"如果您有数百个模型文件，则不希望您的艺术家浪费时间手动导出其混合文件。 为了解"
+"决这个问题，导出器提供了一个python函数 ``io_scene_godot."
+"export（out_file_path）`` ，可以调用它来导出文件。 这样可以轻松地与其他构建系"
+"统集成。 导出目录中所有混合的Makefile和python脚本示例存在于Godot-Blender-"
+"exporter存储库中。"

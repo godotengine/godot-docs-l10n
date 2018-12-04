@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:4
-#, fuzzy
 msgid "Custom post-processing"
-msgstr "环境变量"
+msgstr "自定义后期处理"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:7
 msgid "Introduction"
@@ -32,6 +31,8 @@ msgid ""
 "DOF, and SSAO. Sometimes you want to write your own custom effect. Here's "
 "how you can do so."
 msgstr ""
+"Godot提供了许多开箱即用的后处理效果，包括Bloom，DOF和SSAO。 有时您想编写自己"
+"的自定义效果。 这是你如何做到的。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:12
 msgid ""
@@ -40,6 +41,9 @@ msgid ""
 "<class_Viewport>`, then render the ``Viewport`` inside a :ref:"
 "`ViewportTexture <class_ViewportTexture>` and show it on the screen."
 msgstr ""
+"后处理效果是在Godot渲染后应用于帧的着色器。 首先想要将场景渲染为：ref："
+"`Viewport <class_Viewport>`，然后在：ref：`ViewportTexture "
+"<class_ViewportTexture>`中渲染``Viewport``并在屏幕上显示它。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:16
 msgid ""
@@ -48,6 +52,9 @@ msgid ""
 "familiar with this, you should read the :ref:`Screen Reading Shaders "
 "Tutorial <doc_screen-reading_shaders>` first."
 msgstr ""
+"实现自定义后处理着色器的最简单方法是使用Godot的内置功能从屏幕纹理中读取。 如"
+"果你不熟悉这个，你应该先阅读：ref：`屏幕阅读着色器教程<doc_screen-"
+"reading_shaders>`。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:22
 msgid ""
@@ -55,11 +62,12 @@ msgid ""
 "at the same time. Your post-processing shader will not have access to "
 "normals or other render passes. You only have access to the rendered frame."
 msgstr ""
+"在撰写本文时，Godot不支持同时渲染到多个缓冲区。 您的后期处理着色器将无法访问"
+"法线或其他渲染过程。 您只能访问渲染帧。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:27
-#, fuzzy
 msgid "Single pass post-processing"
-msgstr "环境变量"
+msgstr "单通后处理"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:29
 msgid ""
@@ -68,6 +76,9 @@ msgid ""
 "<class_ViewportContainer>` to display your ``Viewport`` on the entire screen "
 "or inside another :ref:`Control <class_Control>` node."
 msgstr ""
+"你需要一个``Viewport``来渲染场景，一个场景在屏幕上渲染你的``Viewport``。 您可"
+"以使用：ref：`ViewportContainer <class_ViewportContainer>`在整个屏幕上或另一"
+"个屏幕内显示您的``Viewport``：ref：`Control <class_Control>`节点。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:36
 msgid ""
@@ -75,6 +86,8 @@ msgid ""
 "render, including the framerate, and you can use the ``ViewportContainer`` "
 "to render 3D objects in a 2D scene."
 msgstr ""
+"使用``Viewport``渲染可以控制场景的渲染方式，包括帧速率，您可以使用"
+"``ViewportContainer``在2D场景中渲染3D对象。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:40
 msgid ""
@@ -82,6 +95,8 @@ msgid ""
 "``ViewportContainer`` and finally a ``Viewport``. Your Node tab should look "
 "like this:"
 msgstr ""
+"对于这个演示，我们将使用：ref：`Node2D <class_Node2D>`和"
+"``ViewportContainer``，最后是``Viewport``。 您的“节点”选项卡应如下所示："
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:45
 msgid ""
@@ -97,6 +112,9 @@ msgid ""
 "``ViewportContainer``, and assign a new shader resource to it. You can "
 "access your rendered ``Viewport`` with the built-in ``TEXTURE`` uniform."
 msgstr ""
+"在``ViewportContainer``中添加一个新的a：ref：`ShaderMaterial "
+"<class_ShaderMaterial>`，并为其分配一个新的着色器资源。 您可以使用内置的"
+"``TEXTURE``制服来访问渲染的``Viewport``。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:55
 msgid ""
@@ -104,10 +122,12 @@ msgid ""
 "need to create your own uniform in the shader and pass the ``Viewport`` "
 "texture in manually, like so:"
 msgstr ""
+"您可以选择不使用``ViewportContainer``，但如果这样做，您将需要在着色器中创建自"
+"己的制服并手动传递``Viewport``纹理，如下所示："
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:64
 msgid "And you can pass the texture into the shader from GDScript like so:"
-msgstr ""
+msgstr "你可以将纹理从GDScript传递到着色器中，如下所示："
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:72
 msgid ""
@@ -115,6 +135,8 @@ msgid ""
 "detection filter, a `Sobel filter <https://en.wikipedia.org/wiki/"
 "Sobel_operator>`_."
 msgstr ""
+"将以下代码复制到着色器。 上面的代码是单通道边缘检测滤波器， `Sobel滤波器 "
+"<https://en.wikipedia.org/wiki/Sobel_operator>`_。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:94
 msgid ""
@@ -125,11 +147,14 @@ msgid ""
 "You can use different kernels to create edge detection filters, outlines, "
 "and all sorts of effects."
 msgstr ""
+"Sobel滤波器读取当前像素周围9x9网格中的像素，并使用权重将它们加在一起。 令人感"
+"兴趣的是它为每个像素分配权重; 围绕中心的八个中的每一个都是+1，对于中心像素"
+"是-8。 权重的选择称为“核心”。 您可以使用不同的内核来创建边缘检测过滤器，轮廓"
+"和各种效果。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:102
-#, fuzzy
 msgid "Multi-pass post-processing"
-msgstr "环境变量"
+msgstr "多通后处理"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:104
 msgid ""
@@ -138,6 +163,9 @@ msgid ""
 "a multipass material, each pass takes the result from the previous pass as "
 "an input and processes it."
 msgstr ""
+"像模糊这样的后处理效果是资源密集型的。 但是如果你在多次通过中将它们分解，你可"
+"以让它们运行得更快。 在多通道材质中，每次传递都将前一次传递的结果作为输入并对"
+"其进行处理。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:108
 msgid ""
@@ -148,10 +176,14 @@ msgid ""
 "``Viewport`` into another and then rendering the last ``Viewport`` into the "
 "root ``Viewport``."
 msgstr ""
+"要制作多遍后处理着色器，请堆叠“Viewport”节点。 在上面的例子中，你通过"
+"``ViewportContainer``节点将一个``Viewport``对象的内容渲染到根``Viewport``"
+"中。 你可以通过将一个``Viewport``的内容渲染到另一个，然后将最后一个"
+"``Viewport``渲染到根``Viewport``中来为多遍着色器做同样的事情。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:113
 msgid "Your scene hierarchy will look something like this:"
-msgstr ""
+msgstr "您的场景层次结构将如下所示："
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:117
 msgid ""
@@ -159,6 +191,8 @@ msgid ""
 "passes matters for your shaders, make sure that you assign the shader you "
 "want to apply first to the lowest ``ViewportContainer`` in the tree."
 msgstr ""
+"Godot将首先渲染底部的``Viewport``节点。 因此，如果遍历的顺序对着色器很重要，"
+"请确保将要首先应用的着色器指定给树中最低的``ViewportContainer``。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:123
 msgid ""
@@ -166,12 +200,14 @@ msgid ""
 "this. You just need to use two Viewports and to render them one after the "
 "other."
 msgstr ""
+"您也可以单独渲染视口，而不必像这样嵌套它们。 您只需要使用两个视口并一个接一个"
+"地渲染它们。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:126
 msgid ""
 "Besides the node structure, the steps are the same as with the single-pass "
 "post-processing shader."
-msgstr ""
+msgstr "除节点结构外，步骤与单遍后处理着色器相同。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:128
 msgid ""
@@ -180,16 +216,19 @@ msgid ""
 "`ViewportContainers <class_ViewportContainer>`. The order in which you apply "
 "the shaders does not matter:"
 msgstr ""
+"例如，您可以通过将以下代码段附加到以下每个代码来编写全屏高斯模糊效果：ref："
+"`ViewportContainers <class_ViewportContainer>`。 应用着色器的顺序无关紧要："
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:168
 msgid ""
 "Using the above code you should end up with a full screen blur effect like "
 "below."
-msgstr ""
+msgstr "使用上面的代码，您应该得到如下所示的全屏模糊效果。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:172
-#, fuzzy
 msgid ""
 "For more information on how ``Viewport`` nodes work see the :ref:`Viewports "
 "Tutorial <doc_viewports>`."
-msgstr "有关事件（event）本身的详细信息, 请查看 :ref:`doc_inputevent` 教程。"
+msgstr ""
+"有关``Viewport``节点如何工作的更多信息，请参阅：ref：`Viewports Tutorial "
+"<doc_viewports>`。"

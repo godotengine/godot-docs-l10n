@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:4
 msgid "Using tilemaps"
-msgstr ""
+msgstr "使用瓦片地图"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 msgid "Introduction"
@@ -31,16 +31,18 @@ msgid ""
 "start with bunch of reference tiles (or pieces) that can be put on a grid, "
 "as many times each as desired - think of it like a map editor:"
 msgstr ""
+"瓦片地图是一种简单快捷的制作2D游戏关卡的方法。 基本上，你只需从一堆可多次使用"
+"且放在网格上的瓦片（或碎片）开始就行了， - 想象它就像一个地图编辑器："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
 msgid ""
 "Collisions can also be added to the tiles, allowing for both 2D side "
 "scrolling and top down games."
-msgstr ""
+msgstr "碰撞也可以添加到瓦片中，从而允许2D滚动和跳跃游戏。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:19
 msgid "Making a tileset"
-msgstr ""
+msgstr "制作瓦片集"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:21
 msgid ""
@@ -49,6 +51,9 @@ msgid ""
 "packers* that will generate these spritesheets out of your separate texture "
 "files. Having them as separate images also works."
 msgstr ""
+"首先，需要制作一个瓦片集。 为创建它需要一些瓦片。 出于优化原因，它们都在相同"
+"的图像中。 有一个所谓的 *纹理包装器* 将从你单独的纹理文件中生成这些精灵表。 "
+"当然也可以使用多张单独的图像瓦片。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
 msgid ""
@@ -57,6 +62,9 @@ msgid ""
 "will cause issues later. ``Mipmaps`` should already be disabled, if not, "
 "disable this too."
 msgstr ""
+"创建一个新项目并将上面的PNG图像移动到目录中。 接下来进入图像的导入设置并关"
+"闭“过滤器”，保持打开将导致问题。  ``Mipmaps`` 应该已经被禁用，如果没有，也禁"
+"用它。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:33
 msgid ""
@@ -65,6 +73,8 @@ msgid ""
 "it and maintain it. Here is what it would look like to manually edit the "
 "resource:"
 msgstr ""
+"我们将创建一个 :ref:`TileSet <class_TileSet>`  资源。 虽然此资源导出属性，但"
+"很难将复杂数据导入其中并进行维护。 以下是手动编辑资源的样子："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:40
 msgid ""
@@ -72,10 +82,12 @@ msgid ""
 "work. But the easiest way to edit and maintain a tileset is exporting it "
 "from a specially-crafted scene!"
 msgstr ""
+"有足够的属性可以获得。 通过一些努力，以这种方式编辑可以工作。 但编辑和维护"
+"tileset的最简单方法是从特制场景中导出它！"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid "TileSet scene"
-msgstr ""
+msgstr "TileSet场景"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:47
 msgid ""
@@ -85,6 +97,10 @@ msgid ""
 "snap (``Use Snap`` icon or ``S`` key). Moving tiles with the mouse might "
 "still be a inaccurate so use your arrow keys as well."
 msgstr ""
+"使用常规节点或Node2D以root身份创建新场景。 对于要定义的每个tile，请将sprite节"
+"点添加为子级。 由于这里的瓷砖是50x50，你应该打开网格（ ``View  - > Show "
+"Grid`` 或 ``G`` 键）并启用snap（ ``使用Snap`` 图标或 ``S`` 键）。 使用鼠标移"
+"动切片可能仍然不准确，因此也请使用箭头键。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:53
 msgid ""
@@ -92,6 +108,8 @@ msgid ""
 "region property of the sprite to adjust which part of the texture is being "
 "used."
 msgstr ""
+"如果源图像中存在多个瓦片，请确保使用精灵的region属性来调整正在使用纹理的哪个"
+"部分。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:57
 msgid ""
@@ -100,12 +118,15 @@ msgid ""
 "changed the region, etc), the tile will still be **identified correctly and "
 "updated**. This name should be unique."
 msgstr ""
+"最后，确保正确命名您的精灵节点。 这将确保在对tileset的后续编辑中（例如，如果"
+"添加了冲突，更改了区域等），仍将 *正确识别并更新* 瓦片集。 这个名字应该是唯一"
+"的。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
 msgid ""
 "Sounds like a lot of requirements, so here's a screenshot that shows where "
 "everything of relevance is:"
-msgstr ""
+msgstr "听起来很多要求，所以这里有一个屏幕截图，显示相关的所有内容："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:67
 msgid ""
@@ -113,10 +134,12 @@ msgid ""
 "you have multiple tiles in a single source image). Again, *remember that "
 "their names must be unique*."
 msgstr ""
+"继续添加所有切片，根据需要调整偏移量（即，如果单个源图像中有多个切片）。 再"
+"次， *记住他们的名字必须是唯一的* 。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:74
 msgid "Collision"
-msgstr ""
+msgstr "碰撞"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:76
 msgid ""
@@ -125,6 +148,9 @@ msgid ""
 "CollisionPolygon as a child of the StaticBody2D. The CollisionPolygon is "
 "recommended because it is easier to edit."
 msgstr ""
+"要向tile添加碰撞，请为每个sprite创建一个StaticBody2D子级。 这是一个静态碰撞节"
+"点。 然后创建一个CollisionShape2D或CollisionPolygon作为StaticBody2D的子项。 "
+"建议使用CollisionPolygon，因为它更容易编辑。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:83
 msgid ""
@@ -135,28 +161,38 @@ msgid ""
 "move** the collision and/or collision polygon nodes. Leave them at offset "
 "0,0, with scale 1,1 and rotation 0 with respect to the parent sprite."
 msgstr ""
+"最后，编辑多边形，这将使图块发生碰撞并修复CollisionPolygon节点旁边的警告图"
+"标。  **记得使用snap！** 使用snap会确保碰撞多边形正确对齐，允许角色从一个拼贴"
+"到另一个拼贴无缝地行走。 另外 *不要缩放或移动* 碰撞和/或碰撞多边形节点。 将它"
+"们保留在偏移0,0处，标度1,1和相对于父精灵的旋转0。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
 msgid ""
 "Keep adding collisions to the tiles until we are done. Note that BG is just "
 "a background, so it should not have a collision."
 msgstr ""
+"继续向瓷砖添加碰撞，直到完成为止。 请注意，BG只是一个背景，所以它不应该有碰"
+"撞。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:97
 msgid ""
 "OK! We're done! Remember to save this scene for future edit. Name it "
 "\"tileset_edit.scn\" or something like that."
 msgstr ""
+"好！ 我们完成了！ 请记住保存此场景以供将来编辑。 将其命名为“tileset_edit."
+"scn”或类似名称。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:101
 msgid "Exporting a TileSet"
-msgstr ""
+msgstr "导出TileSet"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:103
 msgid ""
 "With the scene created and opened in the editor, the next step will be to "
 "create a tileset. Use Scene > Convert To > Tile Set from the Scene Menu:"
 msgstr ""
+"在编辑器中创建并打开场景后，下一步将是创建一个tileset。 从场景菜单中使用场景>"
+"转换为>平铺设置："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:108
 msgid ""
@@ -165,22 +201,27 @@ msgid ""
 "file is overwritten, existing tiles are merged and updated (they are "
 "referenced by their unique name, so again, **name your tiles properly**)."
 msgstr ""
+"然后选择一个文件名，例如“mytiles.tres”。 确保切换“与现有合并”选项。 这样，每"
+"次覆盖tileset资源文件时，现有的tile都会被合并和更新（它们由它们的唯一名称引"
+"用，所以再次**正确命名你的tile **）。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:117
 msgid "Using the TileSet in a TileMap"
-msgstr ""
+msgstr "在TileMap中使用TileSet"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:119
 msgid ""
 "Create a new scene, using any node or node2d as root, and then create a :ref:"
 "`TileMap <class_TileMap>` as a child."
 msgstr ""
+"使用任何节点或node2d作为root创建一个新场景，然后创建一个：ref：`TileMap "
+"<class_TileMap>`作为子节点。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:125
 msgid ""
 "Go to the TileSet property of this node and assign the one created in "
 "previous steps:"
-msgstr ""
+msgstr "转到此节点的TileSet属性并分配在先前步骤中创建的属性："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:130
 msgid ""
@@ -190,10 +231,13 @@ msgid ""
 "does not need to be changed, but can be used to fine tune performance in "
 "specific cases (if you know what you are doing)."
 msgstr ""
+"同时将单元格大小设置为“50”，因为这是图块使用的大小。 象限大小是一个调整值，这"
+"意味着引擎将以16x16块的块来绘制和剔除tilemap。 此值通常很好，不需要更改，但可"
+"以用于在特定情况下微调性能（如果您知道自己在做什么）。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:137
 msgid "Painting your world"
-msgstr ""
+msgstr "画你的世界"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:139
 msgid ""
@@ -201,6 +245,8 @@ msgid ""
 "on screen, allowing to paint on it with the selected tile on the left "
 "palette."
 msgstr ""
+"使用all set，确保选中TileMap节点。 屏幕上将出现一个红色网格，允许使用左侧调色"
+"板上的选定图块在其上绘画。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
@@ -208,12 +254,16 @@ msgid ""
 "common, given it's a huge node), it is recommended that you lock it, using "
 "the lock button:"
 msgstr ""
+"为了避免意外移动和选择tilemap节点（这是常见的，因为它是一个巨大的节点），建议"
+"您使用锁定按钮将其锁定："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:151
 msgid ""
 "If you accidentally place a tile somewhere you don't want it to be, you can "
 "delete it with ``RMB`` while in the tilemap editor."
 msgstr ""
+"如果你不小心将瓷砖放在某个你不想要的地方，你可以在瓷砖地图编辑器中用``RMB``删"
+"除它。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
 msgid ""
@@ -226,10 +276,15 @@ msgid ""
 "entire region of bricks. But for some kinds of tiles, flipping can be a "
 "convenient and space-saving feature."
 msgstr ""
+"您还可以在TileMap编辑器中翻转和旋转精灵（注意：在TileSet中翻转精灵不起作"
+"用）。 编辑器右上角的图标允许翻转和旋转当前选定的精灵 - 您还可以使用A和S键水"
+"平和垂直翻转精灵。 使用像本教程所使用的砖图案，翻转精灵会产生令人不快的不连续"
+"性，除非你翻转整个砖块区域。 但对于某些类型的瓷砖，翻转可以是一种方便且节省空"
+"间的功能。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:164
 msgid "Offset and scaling artifacts"
-msgstr ""
+msgstr "偏移和缩放工件"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:166
 msgid ""
@@ -237,6 +292,8 @@ msgid ""
 "moving to a non pixel-aligned location) will most likely result in filtering "
 "artifacts like so:"
 msgstr ""
+"对所有切片使用单个纹理时，缩放切片集（甚至移动到非像素对齐的位置）很可能会导"
+"致过滤伪像，如下所示："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:172
 msgid ""
@@ -244,6 +301,8 @@ msgid ""
 "So, to avoid this situation, there are a few workarounds. Try the one that "
 "looks better for you:"
 msgstr ""
+"这是不可避免的，因为它是硬件双线性滤波器的工作方式。 因此，为了避免这种情况，"
+"有一些解决方法。 试试看起来更适合你的那个："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:177
 msgid ""
@@ -251,12 +310,16 @@ msgid ""
 "textures if using separate images (see the :ref:`doc_import_images` asset "
 "pipeline tutorial)."
 msgstr ""
+"如果使用单独的图像，则禁用tileset纹理或所有tile纹理的过滤和mipmap（请参阅："
+"ref：`doc_import_images`资产管道教程）。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:178
 msgid ""
 "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > "
 "2d > Use Pixel Snap`` to true, you can also search for ``Pixel Snap``)."
 msgstr ""
+"启用像素捕捉（将“项目>项目设置>渲染>质量> 2d>使用像素捕捉”设置为true，您还可"
+"以搜索“Pixel Snap”）。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
 msgid ""
@@ -264,9 +327,13 @@ msgid ""
 "`doc_viewports` tutorial). Simply adding a camera, setting it to ``Current`` "
 "and playing around with its ``Zoom`` may be a good starting point."
 msgstr ""
+"Viewport Scaling通常可以帮助缩小地图（参见：ref：`doc_viewports`教程）。 只需"
+"添加一个摄像头，将其设置为“当前”并使用其“缩放”进行游戏可能是一个很好的起点。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
 msgid ""
 "You can use a single, separate image for each tile. This will remove all "
 "artifacts but can be more cumbersome to implement and is less optimized."
 msgstr ""
+"您可以为每个图块使用单个单独的图像。 这将删除所有工件，但实现起来可能更加麻"
+"烦，并且不太优化。"

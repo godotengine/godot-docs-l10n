@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,10 +27,12 @@ msgid ""
 "once you have the environment properly configured it will be easy to compile "
 "Godot for iOS anytime you want."
 msgstr ""
+"这个过程有点复杂，需要很多步骤，但是一旦你正确配置了环境，就可以随时随地编译"
+"Godot for iOS。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:13
 msgid "Disclaimer"
-msgstr ""
+msgstr "放弃"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:15
 msgid ""
@@ -45,6 +47,13 @@ msgid ""
 "any code, which means it should be OK to use the procedure described here "
 "and cross-compiling the binary."
 msgstr ""
+"虽然可以在Linux环境中为iOS编译，但Apple对使用的工具（特别是硬件方面）非常严"
+"格，几乎只允许他们的产品用于开发。 所以这不是官方**。 然而，2010年苹果公司的 "
+"`声明 <http://www.apple.com/pr/library/2010/09/09Statement-by-Apple-on-App-"
+"Store-Review-Guidelines.html>`__表示放宽了一些 `App Store评论指南 <https://"
+"developer.apple.com/app-store/review/guidelines/>`__以允许使用任何工具，只要"
+"生成的二进制文件不下载任何代码 ，这意味着可以使用此处描述的过程并交叉编译二进"
+"制文件。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:27
 msgid "Requirements"
@@ -55,6 +64,7 @@ msgid ""
 "`XCode with the iOS SDK <https://developer.apple.com/xcode/download>`__ (a "
 "dmg image)"
 msgstr ""
+"`带iOS SDK的XCode <https://developer.apple.com/xcode/download>`__（dmg图片）"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:31
 msgid ""
@@ -62,24 +72,29 @@ msgid ""
 "installed and in the ``PATH``. It has to be version >= 3.5 to target "
 "``arm64`` architecture."
 msgstr ""
+"`clang> = 3.5 <http://clang.llvm.org>`__用于安装的开发机器和``PATH``。 它必须"
+"是版本> = 3.5才能瞄准``arm64``架构。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:34
 msgid ""
 "`Fuse <https://github.com/libfuse/libfuse>`__ for mounting and umounting the "
 "dmg image."
-msgstr ""
+msgstr "`Fuse <https://github.com/libfuse/libfuse>`__用于安装和卸载dmg映像。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:36
 msgid ""
 "`darling-dmg <https://github.com/darlinghq/darling-dmg>`__, which needs to "
 "be built from source. The procedure for that is explained below."
 msgstr ""
+"`darling-dmg <https://github.com/darlinghq/darling-dmg>`__，需要从源码构建。 "
+"其程序解释如下。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:40
 msgid ""
 "For building darling-dmg, you'll need the development packages of the "
 "following libraries: fuse, icu, openssl, zlib, bzip2."
 msgstr ""
+"要构建darling-dmg，您需要以下库的开发包：fuse，icu，openssl，zlib，bzip2。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:43
 msgid ""
@@ -87,50 +102,52 @@ msgid ""
 "needed build tools. The procedure for building is quite peculiar and is "
 "described below."
 msgstr ""
+"`cctools-port <https://github.com/tpoechtrager/cctools-port>`__用于所需的构建"
+"工具。 建造程序非常奇特，如下所述。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:47
 msgid "This also has some extra dependencies: automake, autogen, libtool."
-msgstr ""
+msgstr "这也有一些额外的依赖：automake，autogen，libtool。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:50
 msgid "Configuring the environment"
-msgstr ""
+msgstr "配置环境"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:53
 msgid "darling-dmg"
-msgstr ""
+msgstr "亲爱的-DMG"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:55
 msgid "Clone the repository on your machine:"
-msgstr ""
+msgstr "克隆计算机上的存储库："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:61
 msgid "Build it:"
-msgstr ""
+msgstr "建立它："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:73
 msgid "Preparing the SDK"
-msgstr ""
+msgstr "准备SDK"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:75
 msgid "Mount the XCode image:"
-msgstr ""
+msgstr "挂载XCode图像："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:84
 msgid "Extract the iOS SDK:"
-msgstr ""
+msgstr "解压缩iOS SDK："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:93
 msgid "Pack the SDK:"
-msgstr ""
+msgstr "打包SDK："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:101
 msgid "Toolchain"
-msgstr ""
+msgstr "工具链"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:103
 msgid "Build cctools:"
-msgstr ""
+msgstr "构建cctools："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:111
 msgid ""
@@ -139,12 +156,16 @@ msgid ""
 "toolchain binaries, so you must copy to such subdirectory, akin to the "
 "following commands:"
 msgstr ""
+"将工具复制到更好的位置。 请注意，用于构建的SCons脚本将在您为工具链二进制文件"
+"提供的目录中的“usr / bin”下查看，因此您必须复制到此类子目录，类似于以下命令："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:121
 msgid ""
 "Now you should have the iOS toolchain binaries in ``/home/user/iostoolchain/"
 "usr/bin``."
 msgstr ""
+"现在你应该在``/ home / user / iostoolchain / usr / bin``中拥有iOS工具链二进制"
+"文件。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:125
 msgid "Compiling Godot for iPhone"
@@ -157,22 +178,26 @@ msgid ""
 "stay anywhere you want since you have to provide their paths to the SCons "
 "build command."
 msgstr ""
+"完成上述步骤后，您应该在您的环境中保留两件事：构建的工具链和iPhoneOS SDK目"
+"录。 这些可以留在你想要的任何地方，因为你必须提供他们的路径到SCons构建命令。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:132
 msgid ""
 "For the iPhone platform to be detected, you need the ``OSXCROSS_IOS`` "
 "environment variable defined to anything."
-msgstr ""
+msgstr "要检测iPhone平台，您需要为任何事物定义``OSXCROSS_IOS``环境变量。"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:139
 msgid ""
 "Now you can compile for iPhone using SCons like the standard Godot way, with "
 "some additional arguments to provide the correct paths:"
 msgstr ""
+"现在你可以使用像标准戈多方式的SCons编译iPhone，并提供一些额外的参数来提供正确"
+"的路径："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:148
 msgid "Producing fat binaries"
-msgstr ""
+msgstr "制作胖二进制文件"
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:150
 msgid ""
@@ -181,8 +206,12 @@ msgid ""
 "executable. The following example assumes you are in the root Godot source "
 "directory:"
 msgstr ""
+"Apple需要一个胖二进制文件，两个架构（``armv7``和``arm64``）在一个文件中。 为"
+"此，请使用``arm-apple-darwin11-lipo``可执行文件。 以下示例假定您位于根Godot源"
+"目录中："
 
 #: ../../docs/development/compiling/cross-compiling_for_ios_on_linux.rst:159
 msgid ""
 "Then you will have an iOS fat binary in ``bin/godot.iphone.opt.debug.fat``."
 msgstr ""
+"然后你将在``bin / godot.iphone.opt.debug.fat``中拥有一个iOS胖二进制文件。"

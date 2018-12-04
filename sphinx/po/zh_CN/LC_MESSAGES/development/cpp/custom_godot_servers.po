@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
-#, fuzzy
 msgid "Custom Godot servers"
-msgstr "创新新模块"
+msgstr "自定义戈多服务器"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 msgid "Introduction"
@@ -34,34 +33,39 @@ msgid ""
 "engine and other modules. In addition, the server claims ownership for its "
 "RID allocations."
 msgstr ""
+"Godot将多线程实现为服务器。 服务器是守护进程，用于管理数据，进程和推送结果。 "
+"服务器实现中介模式，该模式解释引擎和其他模块的资源ID和过程数据。 此外，服务器"
+"声明其RID分配的所有权。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:15
-#, fuzzy
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to :ref:`doc_custom_modules_in_c++`."
 msgstr ""
-"本文假设读者已经知道如何创建 C++ 模块并对 Godot 的数据类型有所了解。 如果你还"
-"不具备这些知识，你需要先阅读本教程的其他文档。"
+"本指南假设读者知道如何创建C ++模块和Godot数据类型。 如果没有，请参考：ref："
+"`doc_custom_modules_in_c ++`。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:19
 #: ../../docs/development/cpp/custom_godot_servers.rst:316
 msgid "References"
-msgstr ""
+msgstr "参考"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:21
 msgid ""
 "`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-"
 "does-godot-use-servers-and-rids>`__"
 msgstr ""
+"`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-"
+"does-godot-use-servers-and-rids>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:22
 msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 msgstr ""
+"`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:23
 msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
-msgstr ""
+msgstr "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:26
 msgid "What for?"
@@ -69,45 +73,42 @@ msgstr "用于做什么？"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:28
 msgid "Adding artificial intelligence."
-msgstr ""
+msgstr "添加人工智能。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:29
 msgid "Adding custom asynchronous threads."
-msgstr ""
+msgstr "添加自定义异步线程。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:30
-#, fuzzy
 msgid "Adding support for a new input device."
-msgstr "添加各种新的资源文件格式支持"
+msgstr "添加对新输入设备的支持。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:31
-#, fuzzy
 msgid "Adding writing threads."
-msgstr "添加脚本"
+msgstr "添加写线程。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:32
 msgid "Adding a custom VoIP protocol."
-msgstr ""
+msgstr "添加自定义VoIP协议。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:33
 msgid "And more..."
-msgstr ""
+msgstr "和更多..."
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:36
-#, fuzzy
 msgid "Creating a Godot server"
-msgstr "创新新模块"
+msgstr "创建Godot服务器"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:38
 msgid ""
 "At minimum, a server must have a static instance, a sleep timer, a thread "
 "loop, an initialization state and a cleanup procedure."
 msgstr ""
+"服务器必须至少具有静态实例，睡眠定时器，线程循环，初始化状态和清理过程。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:274
-#, fuzzy
 msgid "Custom managed resource data"
-msgstr "自定义资源格式"
+msgstr "自定义托管资源数据"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:276
 msgid ""
@@ -116,20 +117,23 @@ msgid ""
 "called. During debug mode only, RID_Owner maintains a list of RIDs. In "
 "practice, RIDs are similar to writing object-oriented C code."
 msgstr ""
+"Godot服务器实现了中介模式。 所有数据类型都继承``RID_Data``。 ```RID_Owner "
+"<MyRID_Data>``在调用``make_rid``时拥有对象。 仅在调试模式期间，RID_Owner维护"
+"RID列表。 实际上，RID类似于编写面向对象的C代码。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:318
 msgid ":ref:`RID<class_rid>`"
-msgstr ""
+msgstr ":ref:`RID<class_rid>`"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:319
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:322
-#, fuzzy
 msgid "Registering the class in GDScript"
-msgstr "注册新的文件格式"
+msgstr "在GDScript中注册课程"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:324
 msgid ""
@@ -137,6 +141,8 @@ msgid ""
 "static instance and ``init()`` creates the managed thread; "
 "``unregister_types.cpp`` cleans up the server."
 msgstr ""
+"服务器分配在``register_types.cpp``中。 构造函数设置静态实例，``init（）``创建"
+"托管线程; ``unregister_types.cpp``清理服务器。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:328
 msgid ""
@@ -145,43 +151,48 @@ msgid ""
 "Therefore, a dummy class must be created to reference the proper Godot "
 "server."
 msgstr ""
+"由于Godot服务器类创建了一个实例并将其绑定到静态单例，因此绑定该类可能不会引用"
+"正确的实例。 因此，必须创建一个虚拟类来引用正确的Godot服务器。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:332
 msgid ""
 "In ``register_server_types()``, ``Engine::get_singleton()->add_singleton`` "
 "is used to register the dummy class in GDScript."
 msgstr ""
+"在``register_server_types（）``中，``Engine :: get_singleton（） - > "
+"add_singleton``用于在GDScript中注册虚拟类。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:376
 msgid ""
 "`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
 "blob/master/servers/register_server_types.cpp>`__"
 msgstr ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:379
 msgid "Bind methods"
-msgstr ""
+msgstr "绑定方法"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:381
 msgid ""
 "The dummy class binds singleton methods to GDScript. In most cases, the "
 "dummy class methods wraps around."
-msgstr ""
+msgstr "虚拟类将单例方法绑定到GDScript。 在大多数情况下，虚拟类方法包含在内。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:389
-#, fuzzy
 msgid "Binding Signals"
-msgstr "处理信号"
+msgstr "绑定信号"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:391
 msgid ""
 "It is possible to emit signals to GDScript by calling the GDScript dummy "
 "object."
-msgstr ""
+msgstr "可以通过调用GDScript虚拟对象向GDScript发出信号。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:466
 msgid "MessageQueue"
-msgstr ""
+msgstr "MessageQueue"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:468
 msgid ""
@@ -192,6 +203,10 @@ msgid ""
 "flushed whenever either ``SceneTree::idle`` or ``SceneTree::iteration`` is "
 "executed."
 msgstr ""
+"为了将命令发送到SceneTree，MessageQueue是一个线程安全缓冲区，用于对其他线程进"
+"行队列设置和调用方法。 要排队命令，获取目标对象RID并使用``push_call``，"
+"``push_set``或``push_notification``来执行所需的行为。 只要执行``SceneTree :: "
+"idle``或``SceneTree :: iteration``，队列就会被刷新。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:475
 msgid "References:"
@@ -202,16 +217,16 @@ msgid ""
 "`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
 "core/message_queue.cpp>`__"
 msgstr ""
+"`core/message_queue.cpp <https://github.com/godotengine/godot/blob/master/"
+"core/message_queue.cpp>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:480
-#, fuzzy
 msgid "Summing it up"
 msgstr "总结"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:482
-#, fuzzy
 msgid "Here is the GDScript sample code:"
-msgstr "检查这个具体的GDScript示例："
+msgstr "这是GDScript示例代码："
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:506
 msgid "Notes"
@@ -222,7 +237,9 @@ msgid ""
 "The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
 "%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
+"实际的 `希尔伯特酒店 <https://en.wikipedia.org/wiki/Hilbert"
+"%27s_paradox_of_the_Grand_Hotel>`__是不可能的。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:509
 msgid "Connecting signal example code is pretty hacky."
-msgstr ""
+msgstr "连接信号示例代码非常hacky。"

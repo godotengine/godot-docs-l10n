@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,36 +22,32 @@ msgid "Animation"
 msgstr "动画"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "Animation supported:"
-msgstr "动画"
+msgstr "支持的动画:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:4
 msgid "transform animation of all types of objects"
-msgstr ""
+msgstr "所有类型对象的变换动画"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:5
 msgid "transform animation of pose bones"
-msgstr ""
+msgstr "姿势骨骼的变换动画"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:6
-#, fuzzy
 msgid "shape key animation"
-msgstr "精灵动画"
+msgstr "形状的关键动画"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:7
-#, fuzzy
 msgid "light animation"
-msgstr "精灵动画"
+msgstr "轻动画"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:8
-#, fuzzy
 msgid "camera animation"
-msgstr "精灵动画"
+msgstr "摄像机动画"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:11
 msgid "Multiple Actions For Single Object"
-msgstr ""
+msgstr "单个对象的多个动作"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
 msgid ""
@@ -66,46 +62,45 @@ msgstr ""
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide of how "
 "to use this feature:"
-msgstr ""
+msgstr "此工作流程使用blender nla_tracks。 以下是如何使用此功能的简要指南："
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Switch workspace to 'Dope Sheet'**"
-msgstr ""
+msgstr "**1. 将工作区切换为“摄影表”**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:23
 msgid "**2. Stash the active action**"
-msgstr ""
+msgstr "**2. 存放主动行动**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
 msgid "the stashed action while not action would still be exported"
-msgstr ""
+msgstr "仍未导出行动中的藏匿行动"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
 msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
-msgstr ""
+msgstr "**3. 检查“NLA编辑器”中的隐藏操作[可选] **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
 msgid "Switch workspace to 'NLA Editor'"
-msgstr ""
+msgstr "将工作区切换为“NLA编辑器”"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
 msgid "Make sure all stashed actions are muted"
-msgstr ""
+msgstr "确保所有隐藏的操作都被静音"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
 msgid "**4. Export the scene**"
-msgstr ""
+msgstr "**4. 导出场景**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
 msgid ""
 "all the stashed action as well as the active action are exported to the an "
 "AnimationPlayer"
-msgstr ""
+msgstr "所有存储的操作以及活动操作都将导出到AnimationPlayer"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
-#, fuzzy
 msgid "Constraints"
-msgstr "常量"
+msgstr "约束"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:49
 msgid ""
@@ -114,11 +109,12 @@ msgid ""
 "object has some constraint, if it does, all the constraints are baked into "
 "every action the object has and then exported."
 msgstr ""
+"有时使用对象约束构建复杂动画，通常的例子是反向运动学。 插件会自动检查对象是否"
+"有某些约束，如果有，则所有约束都被烘焙到对象具有的每个操作中，然后导出。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
-#, fuzzy
 msgid "Animation Mode"
-msgstr "动画"
+msgstr "动画模式"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:57
 msgid ""
@@ -132,19 +128,20 @@ msgstr ""
 "动画发挥多才多艺，这个插件有三种动画导出模式。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:64
-#, fuzzy
 msgid "**Mode 'Animation as Actions'**"
-msgstr "动画选项"
+msgstr "**'动作动画'模式**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:66
 msgid ""
 "Treat all the animation as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
+"将所有动画视为对象动作，因此在导出的场景中，每个对象都有自己的AnimationPlayer"
+"并保持其动作。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:70
 msgid "**Mode 'Scene Animation'**"
-msgstr ""
+msgstr "**模式 '场景动画' **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
 msgid ""
@@ -152,10 +149,12 @@ msgid ""
 "timeline, this is what you want. In this mode, all the animation in the "
 "scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
+"如果您希望动画生成与在Blender的时间轴上播放相同的结果，这就是您想要的。 在此"
+"模式下，场景中的所有动画都只放置在场景根中的一个AnimationPlayer中。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:76
 msgid "**Mode 'Animation as Action with Squash'**"
-msgstr ""
+msgstr "**模式 '动画与压缩行为' **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
 msgid ""
@@ -165,3 +164,6 @@ msgid ""
 "and each Skeleton and Mesh has actions, then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
+"此模式与“动画为动作”模式的行为非常相似，但它可以生成较少的AnimationPlayers，"
+"父子关系中的对象将共享其AnimationPlayer。 当你有几个装备，每个Skeleton和Mesh"
+"都有动作时，它很有用，那么一个装备只有一个AnimationPlayer。"

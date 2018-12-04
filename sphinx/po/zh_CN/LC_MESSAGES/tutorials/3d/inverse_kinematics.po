@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:4
 msgid "Inverse kinematics"
-msgstr ""
+msgstr "反向运动学"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:6
 msgid "This tutorial is a follow-up of :ref:`doc_working_with_3d_skeletons`."
-msgstr ""
+msgstr "本教程是后续：ref：`doc_working_with_3d_skeletons`。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:8
 msgid ""
@@ -32,6 +32,9 @@ msgid ""
 "solve this problem in reverse? Inverse kinematics (IK) tells us *how* to "
 "rotate our bones in order to reach a desired position."
 msgstr ""
+"以前，我们能够控制骨骼的旋转，以便操纵我们的手臂（正向运动学）。 但是，如果我"
+"们想要反过来解决这个问题呢？ 反向运动学（IK）告诉我们*如何*旋转我们的骨骼以达"
+"到所需的位置。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:13
 msgid ""
@@ -39,10 +42,12 @@ msgid ""
 "target position of an object we want to reach for, our brains need to figure "
 "out how much to move each joint in our arm to get to that target."
 msgstr ""
+"IK的一个简单例子就是人类的手臂：当我们直观地知道我们想要达到的物体的目标位置"
+"时，我们的大脑需要弄清楚在我们的手臂中移动每个关节到达目标的程度。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:18
 msgid "Initial problem"
-msgstr ""
+msgstr "最初的问题"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:20
 msgid ""
@@ -54,6 +59,10 @@ msgid ""
 "under-constrained problem which means that there is more than one solution "
 "to an IK problem."
 msgstr ""
+"在Godot术语中，我们要在这里解决的任务是将2个角度定位在我们的上臂和下肢的关节"
+"上，使得低位骨骼的尖端尽可能接近目标点（由目标Vector3设置） 尽可能只使用旋"
+"转。 此任务是计算密集型的，并且永远不会通过解析方程求解来解决，因为它是一个欠"
+"约束问题，这意味着IK问题有多个解决方案。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:30
 msgid ""
@@ -61,6 +70,8 @@ msgid ""
 "of Skeleton. If this is not the case for your setup you can always reparent "
 "it in your script, as you will save on calculations if you do so."
 msgstr ""
+"为了便于在本章中进行计算，我们认为目标是Skeleton的孩子。 如果您的设置不是这种"
+"情况，您可以随时在脚本中重新显示它，因为如果您这样做，您将节省计算。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:35
 msgid ""
@@ -69,6 +80,9 @@ msgid ""
 "angles are 2D angles living in a plane which is defined by bone base, bone "
 "tip, and target."
 msgstr ""
+"在图片中，您可以看到角度α和β。 在这种情况下，我们不使用极点和约束，因此我们需"
+"要添加自己的极点和约束。 在图片上，角度是生活在由骨基部，骨尖和目标定义的平面"
+"中的2D角。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:40
 msgid ""
@@ -77,10 +91,13 @@ msgid ""
 "positive direction. If ``t`` is the Transform which we get from the "
 "get_bone_global_pose() function, the bone vector is"
 msgstr ""
+"使用骨骼矢量和目标矢量的叉积容易地计算旋转轴。 在这种情况下，旋转将始终在正方"
+"向。 如果``t``是我们从get_bone_global_pose（）函数得到的Transform，那么骨骼向"
+"量是"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:49
 msgid "So we have all the information we need to execute our algorithm."
-msgstr ""
+msgstr "因此，我们拥有执行算法所需的所有信息。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:51
 msgid ""
@@ -90,14 +107,17 @@ msgid ""
 "easy enough, but there are still Godot problems we need to resolve to "
 "achieve our goal."
 msgstr ""
+"在游戏开发中，通常通过迭代地闭合到期望位置来解决该问题，向角度添加/减去小数字"
+"直到所实现的距离变化小于某个小的误差值。 听起来很容易，但我们需要解决的戈多问"
+"题才能实现我们的目标。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:57
 msgid "**How to find coordinates of the tip of the bone?**"
-msgstr ""
+msgstr "**如何找到骨尖的坐标？**"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:58
 msgid "**How to find the vector from the bone base to the target?**"
-msgstr ""
+msgstr "**如何找到从骨基部到目标的载体？**"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:60
 msgid ""
@@ -108,6 +128,10 @@ msgid ""
 "could use pre-calculated constants, or you could add an extra bone at the "
 "tip of the IK bone and calculate using that."
 msgstr ""
+"为了我们的目标（在目标区域内移动骨骼的尖端），我们需要知道IK骨骼的尖端在哪"
+"里。 由于我们不使用叶骨作为IK骨骼，因此我们知道骨骼基座的坐标是父骨骼的尖"
+"端。 所有这些计算都完全取决于骨架的结构。 您可以使用预先计算的常量，或者可以"
+"在IK骨骼的顶端添加额外的骨骼并使用它进行计算。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:68
 msgid "Implementation"
@@ -115,7 +139,7 @@ msgstr "实现"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:70
 msgid "We will use an exported variable for the bone length to make it easy."
-msgstr ""
+msgstr "我们将使用导出的变量作为骨骼长度来简化。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:78
 msgid ""
@@ -124,24 +148,27 @@ msgid ""
 "up to its parent, apply rotation again, then move to the parent of the "
 "current bone again, etc. So we need to limit our chain somewhat."
 msgstr ""
+"现在，我们需要将IK骨骼的变换应用到链的基础，因此我们将旋转应用于IK骨骼，然后"
+"从IK骨骼移动到其父骨骼，再次应用旋转，然后移动到父骨骼 当前的骨头等等。所以我"
+"们需要稍微限制我们的链条。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:87
 msgid "For the ``_ready()`` function:"
-msgstr ""
+msgstr "对于``_ready（）``函数："
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:96
 msgid "Now we can write our chain-passing function:"
-msgstr ""
+msgstr "现在我们可以编写链传递函数："
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:110
 msgid "And for the ``_process()`` function:"
-msgstr ""
+msgstr "对于``_process（）``函数："
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:117
 msgid ""
 "Executing this script will pass through the bone chain, printing bone "
 "transforms."
-msgstr ""
+msgstr "执行此脚本将通过骨链，打印骨骼变换。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:147
 msgid ""
@@ -150,6 +177,9 @@ msgid ""
 "the target node within our top level scene. But for us to work with target "
 "easily its Transform should be on the same level as the Skeleton."
 msgstr ""
+"现在我们需要实际使用目标。 目标应该放在可以访问的地方。 由于“arm”是导入的场"
+"景，我们最好将目标节点放在顶级场景中。 但是为了让我们轻松地使用目标，它的变换"
+"应该与Skeleton处于同一水平。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:152
 msgid ""
@@ -157,9 +187,13 @@ msgid ""
 "node and at runtime we will reparent it, copying the global transform which "
 "will achieve the desired effect."
 msgstr ""
+"为了解决这个问题，我们在场景根节点下创建一个“目标”节点，在运行时我们将重新显"
+"示它，复制全局变换，这将实现所需的效果。"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:156
 msgid ""
 "Create a new Spatial node under the root node and rename it to \"target\". "
 "Then modify the ``_ready()`` function to look like this:"
 msgstr ""
+"在根节点下创建一个新的Spatial节点，并将其重命名为“target”。 然后修改"
+"``_ready（）``函数看起来像这样："

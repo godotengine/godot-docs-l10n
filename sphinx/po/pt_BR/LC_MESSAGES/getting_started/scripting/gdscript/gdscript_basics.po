@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1092,10 +1092,11 @@ msgstr ""
 "podem ser negativos como em Python, para contar do final."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:489
+#, fuzzy
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
-"fragmentation. If this is a concern special types of arrays are available. "
+"fragmentation. If this is a concern, special types of arrays are available. "
 "These only accept a single data type. They avoid memory fragmentation and "
 "also use less memory but are atomic and tend to run slower than generic "
 "arrays. They are therefore only recommended to use for large data sets:"
@@ -1534,8 +1535,9 @@ msgid "Remove ``case``"
 msgstr "Remova ``case``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
+#, fuzzy
 msgid ""
-"Remove any ``break``'s. If you don't want to ``break`` by default you can "
+"Remove any ``break``s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
 "Remova todos os ``break``s. Se você não quer que interrompa (``break``) por "
@@ -1627,9 +1629,10 @@ msgstr ""
 "que você possa aninhá-los."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:935
+#, fuzzy
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
-"pattern, otherwise the pattern don't match."
+"pattern, otherwise the pattern doesn't match."
 msgstr ""
 "O comprimento do array é testado primeiro; ele tem que ter o mesmo tamanho "
 "do padrão, senão o padrão não coincide."
@@ -1659,9 +1662,10 @@ msgstr ""
 "padrão constante."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:954
+#, fuzzy
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
-"the pattern, otherwise the pattern don't match."
+"the pattern, otherwise the pattern doesn't match."
 msgstr ""
 "O tamanho do dicionário é testado primeiro; ele tem que ser o mesmo tamanho "
 "do padrão, senão o padrão não coincide."
@@ -1938,11 +1942,12 @@ msgstr ""
 "(veja abaixo)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
+#, fuzzy
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
-"them visible and editable in the editor. This way artists and game designers "
-"can modify values that later influence how the program runs. For this, a "
-"special export syntax is provided."
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
 msgstr ""
 "Um dos benefícios fundamentais de exportar variáveis membros é tê-las "
 "visíveis e editáveis no editor. Dessa forma, artistas e projetistas de jogos "
@@ -2004,8 +2009,9 @@ msgid "Exporting arrays"
 msgstr "Exportando arrays"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1333
+#, fuzzy
 msgid ""
-"Exporting arrays works but with an important caveat: While regular arrays "
+"Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
 "between all instances. This means that editing them in one instance will "
 "cause them to change in all other instances. Exported arrays can have "
@@ -2069,8 +2075,9 @@ msgstr ""
 "scripts de ferramentas ou plugin, para validação do input."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1411
+#, fuzzy
 msgid ""
-"As said *local* access will *not* trigger the setter and getter. Here is an "
+"As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
 "Como dito acesso *local* *não* irá iniciar o setter e getter. Aqui temos uma "
@@ -2081,9 +2088,10 @@ msgid "Tool mode"
 msgstr "Modo de Ferramenta"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1428
+#, fuzzy
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
-"properties can be changed. In some cases it is desired that they do run "
+"properties can be changed. In some cases, it is desired that they do run "
 "inside the editor (as long as they don't execute game code or manually avoid "
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
@@ -2180,13 +2188,14 @@ msgid "Coroutines with yield"
 msgstr "Corrotinas com yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1520
+#, fuzzy
 msgid ""
 "GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
 "Coroutine>`_ via the ``yield`` built-in function. Calling ``yield()`` will "
 "immediately return from the current function, with the current frozen state "
 "of the same function as the return value. Calling ``resume`` on this "
 "resulting object will continue execution and return whatever the function "
-"returns. Once resumed the state object becomes invalid. Here is an example:"
+"returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
 "A GDScript oferece suporte para `corrotinas <https://pt.wikipedia.org/wiki/"
 "Corotina>`_ através do comando embutido ``yield``. Chamar ``yield()`` irá "
@@ -2212,9 +2221,10 @@ msgid "Coroutines & signals"
 msgstr "Corrotinas e sinais"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1577
+#, fuzzy
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
-"``yield`` can accept two parameters, an object and a signal. When the signal "
+"``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
 "O verdadeiro poder de utilizar ``yield`` é quando combinado com sinais. "

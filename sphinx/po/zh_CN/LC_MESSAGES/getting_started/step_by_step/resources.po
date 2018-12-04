@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,19 +30,20 @@ msgstr "节点和资源"
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
-"features rely on them. There is another datatype that is just as important: :"
+"features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
-"在本教程之前, 我们重点介绍了Godot中的 :ref:`节点 <class_Node>` 类： 因为它是"
+"在本教程之前, 我们重点介绍了Godot中的 :ref:`Node <class_Node>` 类： 因为它是"
 "您用来编写行为代码的类, 并且引擎的大多数功能都依赖于它们。还有另一种数据类型"
-"同样重要： :ref:`资源 <class_Resource>`。"
+"同样重要:ref:`Resource <class_Resource>`。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
+#, fuzzy
 msgid ""
 "*Nodes* give you functionality: they draw sprites, 3D models, simulate "
-"physics, arrange user interface, etc. **Resources** are **data containers**. "
-"They don't do anything on their own: instead nodes use the data contained in "
-"resources."
+"physics, arrange user interfaces, etc. **Resources** are **data "
+"containers**. They don't do anything on their own: instead, nodes use the "
+"data contained in resources."
 msgstr ""
 "*节点*给你提供了功能：它们绘制精灵，3D模型，模拟物理，安排用户界面等。*资源*"
 "是*数据容器*。它们不会自己作任何事情，而节点会使用资源包含的数据。"
@@ -63,19 +64,21 @@ msgstr ""
 "<class_Font>`, :ref:`Translation <class_Translation>`。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
+#, fuzzy
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
 "copy of that resource is already in memory, trying to load the resource "
-"again will return the same copy every time. As resources only contain data "
+"again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
 "当引擎从磁盘加载资源时, **它只加载一次**。如果该资源的副本已在内存中, 则尝试"
 "再次加载该资源将每次返回相同的副本。由于资源只包含数据, 因此无需复制它们。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
+#, fuzzy
 msgid ""
 "Every object, be it a Node or a Resource, can export properties. There are "
-"many types of Properties like String, integer, Vector2, etc., and any of "
+"many types of Properties, like String, integer, Vector2, etc., and any of "
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
@@ -93,7 +96,7 @@ msgstr "有两种方法可以保存资源。它们可以是："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr "场景的**外部**, 作为单个文件保存在磁盘上。"
+msgstr "场景的 **外部** , 作为单个文件保存在磁盘上。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
@@ -110,17 +113,19 @@ msgstr ""
 "<class_Texture>`："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
+#, fuzzy
 msgid ""
-"Clicking the resource preview allows us to view and edit the resources "
+"Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr "单击资源预览可以查看和编辑资源属性。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
+#, fuzzy
 msgid ""
-"The path property tells us where the resource comes from. In this case it "
+"The path property tells us where the resource comes from. In this case, it "
 "comes from a PNG image called ``robi.png``. When the resource comes from a "
 "file like this, it is an external resource. If you erase the path or this "
-"path is empty, it becomes built-in resource."
+"path is empty, it becomes a built-in resource."
 msgstr ""
 "Path属性告诉我们资源来自何处。在这里，它来自一个叫``robi.png``的PNG图像。当资"
 "源来自这样的文件时，它属于外部资源。如果您去掉这个路径或此路径为空，则它将成"
@@ -194,11 +199,12 @@ msgstr ""
 "以将其添加为任何其他节点的子节点。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
+#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` function is pretty fast, you can create new "
 "enemies, bullets, effects, etc. without having to load them again from disk "
-"each time. Remember that as always, images, meshes, etc. are all shared "
+"each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
 "这种方法有几个优点。由于:ref:`PackedScene.instance() "
@@ -237,8 +243,9 @@ msgstr ""
 "类型的引用计数内存管理。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
+#, fuzzy
 msgid ""
-"This comes with many distinct advantages over alternative data structures "
+"This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
 "as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`File "
 "<class_File>` to parse. What sets Resources apart is their inheritance of :"
@@ -263,8 +270,8 @@ msgid ""
 "Resource script's structure needs to change, the game using the Resource "
 "need not also change."
 msgstr ""
-"它们可以定义方法, 包括属性的 setter\\ getter 方法。这允许对基础数据进行抽象和"
-"封装。如果资源脚本结构需要更改, 则使用 \"资源\" 的游戏也不需要更改。"
+"它们可以定义方法, 包括属性的 setter getter 方法。这允许对基础数据进行抽象和封"
+"装。如果资源脚本结构需要更改, 则使用 \"资源\" 的游戏也不需要更改。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
 msgid ""
@@ -413,8 +420,9 @@ msgstr ""
 "加到检查器中。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
+#, fuzzy
 msgid ""
-"CurveTables are the same thing except mapped to an Array of float values or "
+"CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
 "CurveTables 是相同的事情, 除了映射到浮点值的数组或:ref:`Curve "

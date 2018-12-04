@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr ""
+msgstr "导出通用Windows平台"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -27,6 +27,8 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
+"没有额外的要求导出 ``.appx`` 包，可以安装为Windows应用程序或提交到Windows应用"
+"商店。 导出UWP软件包也可以在任何平台上运行，而不仅仅是Windows。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
@@ -34,66 +36,72 @@ msgid ""
 "trusted signature. Currently, Godot does not support signing of packages, so "
 "you need to use external tools to do so."
 msgstr ""
+"但是，如果要安装并运行应用程序，则需要使用可信签名对其进行签名。 目前，Godot"
+"不支持签名包，因此您需要使用外部工具来执行此操作。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:14
 msgid ""
 "Also, make sure the Publisher Name you set when exporting the package "
 "matches the name used on the certificate."
-msgstr ""
+msgstr "此外，请确保导出包时设置的发布者名称与证书上使用的名称相匹配。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:18
 msgid "Limitations on Xbox One"
-msgstr ""
+msgstr "Xbox One的限制"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
 msgid ""
 "As described in `UWP documentation <https://docs.microsoft.com/en-us/windows/"
 "uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
+"如`UWP文档 <https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-"
+"resource-allocation>`__ 中所述："
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
-msgstr ""
+msgstr "提交为“App”"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:23
 msgid "available memory is 1GB"
-msgstr ""
+msgstr "可用内存为1GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:24
 msgid "share of 2-4 CPU cores"
-msgstr ""
+msgstr "分享2-4个CPU核"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr ""
+msgstr "共享GPU功率（45％）"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
+"提交为“游戏”（通过`Xbox Live Creators Program <https://www.xbox.com/en-US/"
+"developers/creators-program>`__）"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
-msgstr ""
+msgstr "可用内存为5GB"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:29
 msgid "4 exclusive CPU cores and 2 shared CPU cores"
-msgstr ""
+msgstr "4个独有的CPU内核和2个共享CPU内核"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr ""
+msgstr "独家访问GPU功率（100％）"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
 "Exceeding these memory limitations will cause allocation failures and the "
 "application will crash."
-msgstr ""
+msgstr "超出这些内存限制将导致分配失败，应用程序将崩溃。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:35
 msgid "Creating a signing certificate"
-msgstr ""
+msgstr "创建签名证书"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:37
 msgid ""
@@ -102,6 +110,9 @@ msgid ""
 "Developer Prompts, since it comes with these tools and they can be located "
 "in the path."
 msgstr ""
+"这需要Windows SDK附带的 ``MakeCert.exe`` 和 ``Pvk2Pfx.exe`` 工具。 如果您使用"
+"Visual Studio，则可以打开其中一个Developer Prompts，因为它附带了这些工具，并"
+"且它们可以位于路径中。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:41
 msgid ""
@@ -109,28 +120,32 @@ msgid ""
 "<https://msdn.microsoft.com/en-us/library/windows/desktop/jj835832(v=vs.85)."
 "aspx>`__."
 msgstr ""
+"您可以从 `Microsoft的文档 <https://msdn.microsoft.com/en-us/library/windows/"
+"desktop/jj835832(v=vs.85).aspx>`__ 获得更详细的说明。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:44
 msgid "First, run ``MakeCert`` to create a private key::"
-msgstr ""
+msgstr "首先，运行 ``MakeCert`` 来创建私钥::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:48
 msgid ""
 "Where ``publisherName`` matches the Publisher Name of your package and "
 "``expirationDate`` is in the ``mm/dd/yyyy`` format."
 msgstr ""
+"其中 ``publisherName`` 匹配包的发布者名称， ``expirationDate` `是 ``mm / "
+"dd / yyyy`` 格式。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:51
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
-msgstr ""
+msgstr "接下来，使用 ``Pvk2Pfx.exe`` 创建个人信息交换（.pfx）文件::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
 "If you don't specify a password with ``/po`` argument, the PFX will have the "
 "same password as the private key."
-msgstr ""
+msgstr "如果未使用 ``/ po`` 参数指定密码，则PFX将具有与私钥相同的密码。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:58
 msgid ""
@@ -138,33 +153,39 @@ msgid ""
 "your app. Open the Command Prompt as Administrator and run the following "
 "command::"
 msgstr ""
+"您还需要信任此证书才能安装您的应用。 以管理员身份打开命令提示符并运行以下命"
+"令::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Signing the package"
-msgstr ""
+msgstr "签署包裹"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
-msgstr ""
+msgstr "最后，使用Windows SDK或Visual Studio中的 ``SignTool.exe``  ::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"
-msgstr ""
+msgstr "安装包"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:73
 msgid ""
 "As of the Windows 10 Anniversary Update, you are able to install packages "
 "simply by double clicking the ``.appx`` file from Windows Explorer."
 msgstr ""
+"从Windows 10周年更新开始，只需双击Windows资源管理器中的 ``.appx`` 文件即可安"
+"装软件包。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:76
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
-msgstr ""
+msgstr "也可以使用 ``Add-AppxPackage``  PowerShell cmdlet进行安装。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
 msgid ""
 "If you want to update your already installed app, you must update the "
 "version number on the new package or first uninstall the previous package."
 msgstr ""
+"如果要更新已安装的应用程序，则必须更新新软件包上的版本号或首先卸载以前的软件"
+"包。"

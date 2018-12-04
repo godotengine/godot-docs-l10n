@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:4
-#, fuzzy
 msgid "Audio streams"
-msgstr "音效格式"
+msgstr "音效流"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:7
 msgid "Introduction"
@@ -31,16 +30,20 @@ msgid ""
 "As you might have read already in the :ref:`Audio Buses Tutorial<doc_audio-"
 "buses>` , sound is sent to each bus via an AudioStreamPlayer."
 msgstr ""
+"您可能已经阅读过 ：ref：`Audio Buses Tutorial <doc_audio-bus>` ，声音通过"
+"AudioStreamPlayer发送到每个总线。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:12
 msgid ""
 "There are many types of AudioStreamPlayers which will be explained in "
 "detail. Each of it loads an AudioStream and plays it back."
 msgstr ""
+"有许多类型的AudioStreamPlayers将详细解释。 每个都加载一个AudioStream并播放"
+"它。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:16
 msgid "AudioStream"
-msgstr ""
+msgstr "音频流"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:18
 msgid ""
@@ -48,12 +51,15 @@ msgid ""
 "many places, but most commonly from the filesystem. Audio files such as .wav "
 "or .ogg can be loaded as AudioStreams and placed inside an AudioStreamPlayer."
 msgstr ""
+"音频流是发出声音的抽象对象。 它可以来自许多地方，但最常见的是来自文件系统。 "
+"诸如.wav或.ogg之类的音频文件可以作为AudioStream加载并放在AudioStreamPlayer"
+"中。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:22
 msgid ""
 "When using these kind of files, you should choose which one is best for your "
 "specific use case:"
-msgstr ""
+msgstr "使用这些类型的文件时，您应该选择哪一个最适合您的特定用例："
 
 #: ../../docs/tutorials/audio/audio_streams.rst:24
 msgid ""
@@ -62,6 +68,9 @@ msgid ""
 "impact to performance. This format is usually best for short sound effects, "
 "as the importer will trim them and convert them to IMA-ADPCM."
 msgstr ""
+"* .wav * 类型的音频文件相当大，但使用少量的CPU来播放。 其中数百个可以同时播"
+"放，对性能影响不大。 这种格式通常最适合短音效，因为导入器会修剪它们并将它们转"
+"换为IMA-ADPCM。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:25
 msgid ""
@@ -70,12 +79,16 @@ msgid ""
 "(especially on mobile!). This format is usually best for music or long sound "
 "effect sequences. It also works well for voice at relatively low bitrates."
 msgstr ""
+"* .ogg * 类型的音频文件要小得多，但要回放使用相当多的CPU功率，因此只能播放少"
+"量（特别是在移动设备上！）。 这种格式通常最适合音乐或长音效序列。 它也适用于"
+"比特率相对较低的语音。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:27
 msgid ""
 "Keep in mind both .wav and .ogg generally don't contain looping information, "
 "so this information must be set on the import options of each:"
 msgstr ""
+"请记住.wav和.ogg通常不包含循环信息，因此必须在每个的导入选项上设置此信息："
 
 #: ../../docs/tutorials/audio/audio_streams.rst:31
 msgid ""
@@ -84,20 +97,25 @@ msgid ""
 "back randomly (great for some sound effects), and more will keep appearing "
 "in the future."
 msgstr ""
+"还有其他类型的AudioStream，例如AudioStreamRandomPitch，它可以接收现有的"
+"AudioStream，并在每次随机播放时调整音高（对于某些音效非常有用），并且将来还会"
+"出现更多音频。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:35
 msgid "AudioStreamPlayer"
-msgstr ""
+msgstr "AudioStreamPlayer"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:37
 msgid ""
 "This is the standard stream player, it can play to any given bus. In 5.1 "
 "sound, it can send to stereo mix or front speakers."
 msgstr ""
+"这是标准的流播放器，它可以播放任何给定的总线。 在5.1声音中，它可以发送到立体"
+"声混音或前置扬声器。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:40
 msgid "AudioStreamPlayer2D"
-msgstr ""
+msgstr "AudioStreamPlayer2D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:42
 msgid ""
@@ -105,6 +123,8 @@ msgid ""
 "environment. When close to the left of the screen, the panning will go left. "
 "When close to the right side, it will go right."
 msgstr ""
+"这是AudioStreamPlayer的变体，但在2D位置环境中发出声音。 当靠近屏幕左侧时，平"
+"移将向左移动。 当靠近右侧时，它会向右移动."
 
 #: ../../docs/tutorials/audio/audio_streams.rst:44
 msgid ""
@@ -114,10 +134,13 @@ msgid ""
 "make the emitter will automatically send to them when entering the Area2D "
 "shapes."
 msgstr ""
+"虽然可以将这些效果发送到特定的音频总线，但最好的策略之一是使用Area2D将声音转"
+"移到特定的总线。 这允许创建具有不同混响或声音质量的总线，并使得发射器在进入"
+"Area2D形状时自动发送给它们。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:50
 msgid "AudioStreamPlayer3D"
-msgstr ""
+msgstr "AudioStreamPlayer3D"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:52
 msgid ""
@@ -126,21 +149,23 @@ msgid ""
 "it can position sound in Stereo, 5.1 or 7.1 depending on the chosen audio "
 "setup."
 msgstr ""
+"这是AudioStreamPlayer的变体，但在3D位置环境中发出声音。 根据播放器相对于屏幕"
+"的位置，它可以根据所选的音频设置将声音定位在立体声，5.1或7.1中。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:55
 msgid ""
 "Similar to AudioStreamPlayer2D, an Area can divert the sound to an audio bus."
-msgstr ""
+msgstr "与AudioStreamPlayer2D类似，Area可以将声音转移到音频总线。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:59
 msgid ""
 "Unlike for 2D, the 3D version of AudioStreamPlayer has a few more advanced "
 "options:"
-msgstr ""
+msgstr "与2D不同，AudioStreamPlayer的3D版本有一些更高级的选项："
 
 #: ../../docs/tutorials/audio/audio_streams.rst:62
 msgid "Reverb buses"
-msgstr ""
+msgstr "混响总线"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:64
 msgid ""
@@ -149,6 +174,9 @@ msgid ""
 "configurations for different types of rooms. This is done by enabling this "
 "type of reverb in the *Reverb Bus* section of *Area* properties:"
 msgstr ""
+"Godot允许进入特定 *Area* 的3D音频流将干湿音频发送到单独的总线。 当您为不同类"
+"型的房间设置多个混响配置时，这非常有用。 这是通过在 *Area* 属性的 *Reverb "
+"Bus* 部分中启用此类混响来完成的："
 
 #: ../../docs/tutorials/audio/audio_streams.rst:69
 msgid ""
@@ -156,6 +184,8 @@ msgid ""
 "the reverb info from each area. Of course, an actual Reverb effect must be "
 "created in that bus for anything to happen:"
 msgstr ""
+"同时，创建一个特殊的总线布局，每个区域从每个区域接收混响信息。 当然，必须在该"
+"总线中创建实际的混响效果才能发生任何事情："
 
 #: ../../docs/tutorials/audio/audio_streams.rst:73
 msgid ""
@@ -165,10 +195,13 @@ msgid ""
 "the room even though the source is far away. Playing around with this "
 "parameter can simulate that effect."
 msgstr ""
+"Area Reverb Bus部分还有一个名为“Uniformity”的特定参数。 有些类型的房间比其他"
+"类型的房间反弹声音更多（例如，典型的仓库），因此即使光源很远，也可以在房间内"
+"几乎均匀地听到混响。 使用此参数可以模拟该效果。"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:77
 msgid "Doppler"
-msgstr ""
+msgstr "多普勒"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:79
 msgid ""
@@ -177,6 +210,9 @@ msgid ""
 "changes in velocities of *AudioStreamPlayer3D* or *Camera*. Both have this "
 "property, which must be enabled manually:"
 msgstr ""
+"当发射器和收听者之间的相对速度改变时，这被认为是音调移位的增加或减少。 Godot"
+"可以跟踪 * AudioStreamPlayer3D* 或 *Camera* 的速度变化。 两者都有此属性，必须"
+"手动启用："
 
 #: ../../docs/tutorials/audio/audio_streams.rst:84
 msgid ""
@@ -184,3 +220,5 @@ msgid ""
 "(whether on regular *process* or *physics_process* step) and the tracking "
 "will happen automatically!"
 msgstr ""
+"只需根据对象的移动方式（无论是常规 *process* 还是 *physics_process* 步骤）进"
+"行设置即可启用它，并且跟踪将自动进行！"

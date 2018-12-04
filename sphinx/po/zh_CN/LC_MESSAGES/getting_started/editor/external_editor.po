@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Using an external text editor"
 msgstr "使用外部的文本编辑器"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
-#, fuzzy
 msgid ""
 "While Godot has an inbuilt text editor, some developers have a tendency to "
 "want to use a text editor they are familiar with. Godot provides this option "
@@ -30,7 +29,8 @@ msgid ""
 "External``"
 msgstr ""
 "虽然 Godot 拥有内置的文本编辑器，但一些开发人员倾向于使用他们熟悉的文本编辑"
-"器。 Godot 通过“编辑器 - >编辑器设置 - >文本编辑器 - >外部”下的选项提供此选项"
+"器。 Godot 通过``编辑器 - >编辑器设置 - >文本编辑器 - >外部``下的选项提供此选"
+"项"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
 msgid ""
@@ -38,8 +38,8 @@ msgid ""
 "allow you to better integrate the editor with godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
-"有两个字段：可执行路径和命令行标志。 这些标志允许您更好地将编辑器集成到 Godot"
-"上。 Godot 将在标志参数中替换以下内容："
+"有两个字段：可执行路径和命令行标志。这些标志允许您更好地将编辑器集成到Godot"
+"上。 Godot将在标志参数中替换以下内容："
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
@@ -51,7 +51,7 @@ msgstr "被替换为"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{project}"
-msgstr ""
+msgstr "{project}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
@@ -59,7 +59,7 @@ msgstr "项目目录的绝对路径"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{file}"
-msgstr ""
+msgstr "{file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
@@ -67,7 +67,7 @@ msgstr "文件的绝对路径"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{col}"
-msgstr ""
+msgstr "{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
@@ -75,7 +75,7 @@ msgstr "错误的列号"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "{line}"
-msgstr ""
+msgstr "{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
@@ -95,16 +95,16 @@ msgstr "Exec 标志"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "geany/kate"
-msgstr ""
+msgstr "geany/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "{file} --line {line} --column {col}"
-msgstr ""
+msgstr "{file} --行 {line} --列 {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "atom/sublime text"
-msgstr ""
+msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "{file}:{line}"
-msgstr ""
+msgstr "{file}:{line}"

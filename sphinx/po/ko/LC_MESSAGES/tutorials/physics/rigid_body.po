@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:7
 msgid "What is a rigid body?"
-msgstr ""
+msgstr "rigid body란?"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:9
 msgid ""
@@ -33,10 +33,14 @@ msgid ""
 "objects assigned. Note that setting the position of these shapes will affect "
 "the body's center of mass."
 msgstr ""
+"rigid body는 물리적인 물체의 행동을 시뮬레이션하기 위해 물리 엔진에 의해 직"
+"접 제어되는 body이다. body의 모양을 정의하려면 하나 이상의 :ref:`Shape "
+"<class_Shape>`개체가 할당되어 있어야 합니다. 이러한 모양의 위치를 설정하면 "
+"body의 무게 중심에 영향을 미칩니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:13
 msgid "How to control rigid body"
-msgstr ""
+msgstr "rigid body 제어 방법"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
 msgid ""
@@ -45,12 +49,16 @@ msgid ""
 "via code. See :ref:`RigidBody <class_RigidBody>` for the full list of "
 "properties and their effects."
 msgstr ""
+"rigid body의 동작은 마찰, 질량, 바운스 등의 특성을 설정하여 변경할 수 있습니"
+"다. 이러한 속성은 인스펙터 또는 코드를 통해 설정할 수 있습니다. 속성과 그 효"
+"과의 전체 목록은 :ref:`RigidBody <class_RigidBody>`를 참조하십시오."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:17
 msgid ""
 "There are several ways to control a rigid body's movement, depending on your "
 "desired application."
 msgstr ""
+"원하는 용도에 따라 rigid body의 움직임을 제어하는 몇 가지 방법이 있습니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:19
 msgid ""
@@ -64,6 +72,14 @@ msgid ""
 "to use ``look_at()`` every frame, which breaks the physics simulation. "
 "Below, we'll demonstrate how to implement this correctly."
 msgstr ""
+"예를 들어, 초기 위치를 설정하기 위해 rigid body를 한 번만 배치해야 된다면 "
+"``set_global_transform()``또는 ``look_at()``와 같은 :ref:`Spatial "
+"<class_Spatial>`노드가 제공하는 방법을 사용할 수 있습니다. 그러나 이 함수들"
+"이 모든 프레임을 호출하지 못하거나 물리 엔진이 body 상태를 정확하게 시뮬레이"
+"션할 수 없을 것입니다. 예를 들어, 다른 물체를 가리키도록 회전할 rigid body를 "
+"고려하는것이 있습니다. 이런 행동을 시행할 때 흔히 저지르는 실수는 "
+"``look_at()``을 모든 틀에서 사용하는 것인데 이것은 물리학적 시뮬레이션을 깨뜨"
+"리게 됩니다. 아래에서는, 이를 올바르게 구현하는 방법을 시연합니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:22
 msgid ""
@@ -73,10 +89,15 @@ msgid ""
 "In this function, you can add *forces*, apply *impulses*, or set the "
 "*velocity* in order to achieve any movement you desire."
 msgstr ""
+"``set_global_transform()``이나 ``look_at()``의 방법을 사용할 수 없다는 사실"
+"이 당신이 rigid body을 완전히 통제할 수 없다는 것을 의미하지는 않습니다. 대"
+"신 ``_integrate_forces()``의 콜백을 사용하여 제어할 수 있습니다. 이 기능에서 "
+"원하는 이동을 달성하기 위해 *forces*를 추가하거나 *impulses*를 적용하거나 "
+"*velocity*를 설정할 수 있습니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:25
 msgid "Look at function"
-msgstr ""
+msgstr "기능 보기"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:27
 msgid ""
@@ -84,6 +105,9 @@ msgid ""
 "used each frame to follow a target. Here is a custom ``look_at()`` function "
 "that will work reliably with rigid bodies:"
 msgstr ""
+"위에서 설명한 것처럼, 공간 노드의 ``look_at()``를 사용하여 각 프레임을 표적"
+"을 따라갈 수는 없다. 다음은 rigid body에서 안정적으로 작동하는 커스텀 "
+"``look_at()`` 함수이다:"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:69
 msgid ""
@@ -92,6 +116,9 @@ msgid ""
 "desired angle and then adds the velocity needed to rotate by that amount in "
 "one frame's time."
 msgstr ""
+"이 함수는 body를 회전시키기 위해 rigid body의 ``set_angular_velocity()`` 매서"
+"드를 사용합니다. 먼저 현재와 원하는 각도의 차이를 계산한 다음 한 프레임의 시"
+"간에 해당 양만큼 회전하는 데 필요한 속도를 추가합니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:71
 msgid ""
@@ -99,3 +126,6 @@ msgid ""
 "this mode the body's rotation is locked. In this case, you would have to "
 "rotate the attached mesh node instead using the standard Spatial methods."
 msgstr ""
+"이 모드에서는 body의 회전이 잠겨 있기 때문에 *character mode*의 rigid bodies"
+"에서는 이 스크립트를 사용할 수 없습니다. 이 경우 표준 공간 메서드를 사용하여 "
+"연결된 메시 노드를 회전해야 합니다."

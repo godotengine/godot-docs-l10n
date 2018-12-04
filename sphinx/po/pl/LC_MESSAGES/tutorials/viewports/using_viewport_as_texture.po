@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,9 +120,9 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:55
 msgid ""
-"We are assuming you are familiar with the basics of shading for this "
-"tutorial. Even if you aren't, all the code will still be provided so you "
-"should have no problem following along."
+"Basic familiarity with shading is recommended for this tutorial. However, "
+"even if you are new to shaders, all the code will be provided so you should "
+"have no problem following along."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:66
@@ -172,9 +172,9 @@ msgid ""
 "Notice the ugly seam that forms where the texture wraps around? This is "
 "because we are picking a color based on UV coordinates and UV coordinates do "
 "not wrap around the texture. This is a classic problem in 2D map projection. "
-"Gamedevs often have a 2-dimensional map they want to project onto a sphere "
-"but when it wraps around it has large seams. There is an elegant work around "
-"for this problem that we will illustrate in the next section."
+"Game developers often have a 2-dimensional map they want to project onto a "
+"sphere but when it wraps around it has large seams. There is an elegant work "
+"around for this problem that we will illustrate in the next section."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:101
@@ -229,50 +229,48 @@ msgstr ""
 msgid ""
 "Now that we can calculate the 3D position of the surface of the sphere we "
 "can use 3D noise to make the planet. We will be using this noise function "
-"directly from a `Shadertoy <https://www.shadertoy.com/view/4dffRH>`_:"
+"directly from a `Shadertoy <https://www.shadertoy.com/view/Xsl3Dl>`_:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:198
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:175
 msgid ""
-"All credit goes to the initial author Inigo Quilez. It is published with the "
+"All credit goes to the author, Inigo Quilez. It is published with the "
 "``MIT`` licence."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:200
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:177
 #, fuzzy
 msgid ""
-"Now to use ``noised``, add the following to the    ``fragment`` function:"
+"Now to use ``noise``, add the following to the    ``fragment`` function:"
 msgstr ""
 "Aby odtworzyć dźwięk strzelającego karabinu, dodaj poniższy kod na końcu "
 "``fire_weapon``:"
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:209
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:186
 msgid "In order to highlight the texture, we set the material to unshaded."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:211
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:188
 msgid ""
 "You can see now that the noise indeed wraps seamlessly around the sphere. "
 "Although this looks nothing like the planet you were promised. So lets move "
 "onto something more colorful."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:215
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:192
 #, fuzzy
 msgid "Coloring the planet"
 msgstr "Konfigurowanie projektu"
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:217
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:194
 msgid ""
-"Now to make the planet colors. There are many ways to do this, if you look "
-"on `Shadertoy <https://www.shadertoy.com>`_ you will find all kinds of ways "
-"of mapping colors to procedural planet terrain. For now we will stick with a "
-"simple gradient between water and land."
+"Now to make the planet colors. While, there are many ways to do this, for "
+"now we will stick with a gradient between water and land."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:221
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:197
 msgid ""
-"To make a gradient in glsl we use the ``mix`` function. ``mix`` takes two "
+"To make a gradient in GLSL we use the ``mix`` function. ``mix`` takes two "
 "values to interpolate between and a third parameter to choose how much to "
 "interpolate between them, in essence it *mixes* the two values together. In "
 "other APIs this function is often called ``lerp``. Although, ``lerp`` is "
@@ -280,7 +278,7 @@ msgid ""
 "values whether it be floats or vector types."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:231
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:207
 msgid ""
 "The first color is blue for the ocean. The second color is a kind of reddish "
 "color (because all alien planets need red terrain). And finally they are "
@@ -289,7 +287,7 @@ msgid ""
 "Now you can see that the colors change between blue and red."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:238
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:214
 msgid ""
 "That is a little more blurry than we want. Planets typically have a "
 "relatively clear separation between land and sea. In order to do that we "
@@ -297,7 +295,7 @@ msgid ""
 "whole line becomes:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:246
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:222
 msgid ""
 "What ``smoothstep`` does is return ``0`` if the third parameter is below the "
 "first and return 1 if the third parameter is larger than the second and "
@@ -307,7 +305,7 @@ msgid ""
 "``0``."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:253
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:229
 msgid ""
 "One more thing to make this a little more planet-y. The land shouldn't be so "
 "blobby lets make the edges a little rougher. A trick that is often used in "
@@ -318,21 +316,21 @@ msgid ""
 "with four lines of shader code instead of just one. ``n`` becomes:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:267
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:243
 #, fuzzy
 msgid "And now the planet looks like:"
 msgstr "I tak to wygląda w przypadku 3D:"
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:271
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:247
 msgid "And with shading turned back on it looks like:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:276
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:252
 #, fuzzy
 msgid "Making an ocean"
 msgstr "Tworzenie zmian"
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:278
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:254
 msgid ""
 "One final thing to make this look more like a planet. The ocean and the land "
 "reflect light differently. So we want the ocean to shine a little more than "
@@ -340,13 +338,13 @@ msgid ""
 "channel of our output ``COLOR`` and using it as a Roughness map."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:286
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:262
 msgid ""
 "This line returns ``0.3`` for water and ``1.0`` for land. This means that "
 "the land is going to be quite rough while the water will be quite smooth."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:289
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:265
 msgid ""
 "And then in the material under the \"Metallic\" section make sure "
 "``Metallic`` is set to ``0`` and ``Specular`` is set to ``1``. The reason "
@@ -354,7 +352,7 @@ msgid ""
 "values are not physically accurate, but they are good enough for this demo."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:293
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:269
 msgid ""
 "Next under the \"Roughness\" section set ``Roughness`` to ``1`` and set the "
 "roughness texture to a :ref:`Viewport Texture <class_ViewportTexture>` "
@@ -363,7 +361,7 @@ msgid ""
 "``alpha`` channel of our output ``COLOR`` as the ``Roughness`` value."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:300
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:276
 msgid ""
 "You'll notice that very little changes except that the planet is no longer "
 "reflecting the sky. This is happening because by default when something is "
@@ -377,7 +375,7 @@ msgid ""
 "object on top of another we want to enable ``blend_premul_alpha``:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:313
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:289
 msgid ""
 "This pre-multiplies the colors by the ``alpha`` value and then blends them "
 "correctly together. Typically when blending one transparent color on top of "
@@ -386,7 +384,7 @@ msgid ""
 "``blend_premul_alpha`` fixes that."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:317
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:293
 msgid ""
 "Now the planet should look like it is reflecting light on the ocean but not "
 "the land. If you haven't done so already, add an :ref:`OmniLight "
@@ -394,8 +392,8 @@ msgid ""
 "of the reflections on the ocean."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:323
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:299
 msgid ""
-"And there you have it. A simple procedural planet generated using a :ref:"
-"`Viewport <class_Viewport>`."
+"And there you have it. A procedural planet generated using a :ref:`Viewport "
+"<class_Viewport>`."
 msgstr ""

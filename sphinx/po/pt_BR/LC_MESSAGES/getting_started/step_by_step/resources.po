@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgstr "Nós e recursos"
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
-"features rely on them. There is another datatype that is just as important: :"
+"features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
 "Até agora, :ref:`Nós <class_Node>` têm sido o tipo de dados mais importante "
@@ -39,12 +39,17 @@ msgstr ""
 "importante: :ref:`Recurso <class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
+#, fuzzy
 msgid ""
 "*Nodes* give you functionality: they draw sprites, 3D models, simulate "
-"physics, arrange user interface, etc. **Resources** are **data containers**. "
-"They don't do anything on their own: instead nodes use the data contained in "
-"resources."
+"physics, arrange user interfaces, etc. **Resources** are **data "
+"containers**. They don't do anything on their own: instead, nodes use the "
+"data contained in resources."
 msgstr ""
+"*Nodes* dão sua funcionalidade: eles desenham sprites, modelos 3D, simulam "
+"física, organizam a interface do usuário, etc. **Recursos** são **containers "
+"de dados**. Eles não fazem qualquer coisa na sua conta: ao invés de nós "
+"usarem os dados contidos em recursos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 #, fuzzy
@@ -66,7 +71,7 @@ msgstr ""
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
 "copy of that resource is already in memory, trying to load the resource "
-"again will return the same copy every time. As resources only contain data "
+"again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
 "Quando um recurso é carregado do disco, **sempre é carregado só uma vez**. "
@@ -79,7 +84,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Every object, be it a Node or a Resource, can export properties. There are "
-"many types of Properties like String, integer, Vector2, etc., and any of "
+"many types of Properties, like String, integer, Vector2, etc., and any of "
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
@@ -101,14 +106,18 @@ msgstr ""
 "pode:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
+#, fuzzy
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr ""
+msgstr "**External** para uma cena, salva no disco como arquivos individuais."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
+#, fuzzy
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
 msgstr ""
+"**Built-in**, salva dentro da \\*.tscn ou o \\*.scn arquivo eles estão "
+"anexados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
@@ -121,32 +130,44 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 #, fuzzy
 msgid ""
-"Clicking the resource preview allows us to view and edit the resources "
+"Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr ""
 "Clique com o botão direito na variável para permitir que você configure suas "
 "propiedades:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
+#, fuzzy
 msgid ""
-"The path property tells us where the resource comes from. In this case it "
+"The path property tells us where the resource comes from. In this case, it "
 "comes from a PNG image called ``robi.png``. When the resource comes from a "
 "file like this, it is an external resource. If you erase the path or this "
-"path is empty, it becomes built-in resource."
+"path is empty, it becomes a built-in resource."
 msgstr ""
+"A propriedade da caminho nos diz de onde o recurso vem. Nesse caso ele vem "
+"de uma imagem PNG chamada ``robi.png``. Quando o recurso vem de um arquivo "
+"como esse, ele é um recurso externo. Se você apagar o caminho ou esse "
+"caminho estiver vazio, ele se transforma em um recurso embutido."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
+#, fuzzy
 msgid ""
 "The switch between built-in and external resources happens when you save the "
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"A mudança entre recursos embutidos e externos acontece quando você a cena. "
+"No exemplo acima, se você apaga o caminho \\`\"res://robi.png\"\\` e salva, "
+"Godot vai salvar a imagem dentro do arquivo de cena .tscn."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
+#, fuzzy
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"Mesmo se você salvar um recurso interno, quando você instancia uma cena "
+"várias vezes, o mecanismo carregará apenas uma cópia dela."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
@@ -157,13 +178,20 @@ msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"Existem duas maneiras de carregar recursos por código. Primeiro, você pode "
+"usar a função ``load()`` a qualquer momento:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
+#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"Você pode também ``precarregar`` recursos. Diferente de ``load``, essa "
+"função vai ler o arquivo do disco e carregá-lo ao compilar. Como resultado, "
+"você não pode chamar preload com um caminho variável: você preciso usar uma "
+"string constante."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
@@ -206,7 +234,7 @@ msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` function is pretty fast, you can create new "
 "enemies, bullets, effects, etc. without having to load them again from disk "
-"each time. Remember that as always, images, meshes, etc. are all shared "
+"each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
 "Essa abordagem tem várias vantagens. Como a função :ref:`PackedScene."
@@ -241,16 +269,22 @@ msgid "Creating your own resources"
 msgstr "Liberando recursos"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
+#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
 "serialized text or binary data (/*.tres, /*.res). They also inherit the "
 "reference-counting memory management from the Reference type."
 msgstr ""
+"Como qualquer Objeto em Godot, os usuários também podem criar scripts em "
+"Recursos. Scripts de recursos herdam a capacidade de traduzir livremente "
+"entre propriedades de objetos e texto serializado ou dados binários (/*."
+"tres, /*.res). Eles também herdam o gerenciamento de memória de contagem de "
+"referência do tipo de referência."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
-"This comes with many distinct advantages over alternative data structures "
+"This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
 "as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`File "
 "<class_File>` to parse. What sets Resources apart is their inheritance of :"
@@ -259,64 +293,100 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
+#, fuzzy
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
 msgstr ""
+"Eles podem definir constantes, portanto, constantes de outros campos ou "
+"objetos de dados não são necessárias."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
+#, fuzzy
 msgid ""
 "They can define methods, including setter/getter methods for properties. "
 "This allows for abstraction and encapsulation of the underlying data. If the "
 "Resource script's structure needs to change, the game using the Resource "
 "need not also change."
 msgstr ""
+"Eles podem definir métodos, incluindo métodos setter / getter para "
+"propriedades. Isso permite abstração e encapsulamento dos dados subjacentes. "
+"Se a estrutura do script Resource precisar ser alterada, o jogo usando o "
+"recurso também não precisará ser alterado."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
+#, fuzzy
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
 msgstr ""
+"Eles podem definir sinais, para que os Recursos possam acionar respostas a "
+"alterações nos dados que eles gerenciam."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
+#, fuzzy
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
+"Eles definiram propriedades, portanto, os usuários sabem 100% que seus dados "
+"existirão."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
+#, fuzzy
 msgid ""
 "Resource auto-serialization and deserialization is a built-in Godot Engine "
 "feature. Users do not need to implement custom logic to import/export a "
 "resource file's data."
 msgstr ""
+"A serialização automática e desserialização do recurso é um recurso interno "
+"do Godot Engine. Os usuários não precisam implementar a lógica personalizada "
+"para importar / exportar os dados de um arquivo de recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
+#, fuzzy
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
 msgstr ""
+"Os recursos podem até serializar os sub-recursos recursivamente, o que "
+"significa que os usuários podem criar estruturas de dados ainda mais "
+"sofisticadas."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
+#, fuzzy
 msgid ""
 "Users can save Resources as version-control-friendly text files (\\*.tres). "
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
 "res) for increased speed and compression."
 msgstr ""
+"Os usuários podem salvar recursos como arquivos de texto amigáveis ao "
+"controle de versões (\\ *. Tres). Ao exportar um jogo, Godot serializa os "
+"arquivos de recursos como arquivos binários (\\ *. Res) para maior "
+"velocidade e compactação."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
+#, fuzzy
 msgid ""
 "Godot Engine's Inspector renders and edits Resource files out-of-the-box. As "
 "such, users often do not need to implement custom logic to visualize or edit "
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
+"O Inspetor do Godot Engine processa e edita arquivos de recursos prontos "
+"para uso. Dessa forma, os usuários geralmente não precisam implementar "
+"lógica personalizada para visualizar ou editar seus dados. Para fazer isso, "
+"clique duas vezes no arquivo de recursos na estação FileSystem ou clique no "
+"ícone da pasta no Inspetor e abra o arquivo na caixa de diálogo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
+#, fuzzy
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr ""
+"Eles podem estender ** outros ** tipos de recursos além do recurso base."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
+#, fuzzy
 msgid ""
 "Resources and Dictionaries are also different in that both are passed by "
 "reference, but only Resources are reference-counted. This means that if a "
@@ -324,30 +394,48 @@ msgid ""
 "will invalidate the second object's variable. This is not so for Resources "
 "which won't free their memory until *all* instances are gone."
 msgstr ""
+"Recursos e dicionários também são diferentes, pois ambos são passados por "
+"referência, mas apenas Recursos são contados por referência. Isso significa "
+"que, se um dicionário for passado entre objetos e o primeiro objeto for "
+"excluído, ele invalidará a variável do segundo objeto. Isso não é assim para "
+"os Recursos, que não irão liberar sua memória até que todas as instâncias "
+"tenham desaparecido."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
+#, fuzzy
 msgid "Godot makes it easy to create custom Resources in the Inspector."
-msgstr ""
+msgstr "Godot facilita a criação de recursos personalizados no Inspetor."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
+#, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
+"Crie um objeto de recurso simples no Inspetor. Isso pode até ser um tipo que "
+"deriva Resource, desde que seu script esteja estendendo esse tipo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
+#, fuzzy
 msgid "Set the ``script`` property in the Inspector to be your script."
-msgstr ""
+msgstr "Defina a propriedade `` script`` no Inspector como seu script."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
+#, fuzzy
 msgid ""
 "The Inspector will now display your Resource script's custom properties. If "
 "one edits those values and saves the resource, the Inspector serializes the "
 "custom properties too! To save a resource from the Inspector, click the "
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
+"O inspetor agora exibirá as propriedades personalizadas do script de "
+"recursos. Se você editar esses valores e salvar o recurso, o inspetor "
+"serializará as propriedades personalizadas também! Para salvar um recurso do "
+"Inspetor, clique no menu de ferramentas do Inspetor (canto superior direito) "
+"e selecione \"Salvar\" ou \"Salvar como ...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
+#, fuzzy
 msgid ""
 "If the script's language supports `script classes <https://godot.readthedocs."
 "io/en/latest/getting_started/step_by_step/scripting_continued.html#register-"
@@ -355,6 +443,12 @@ msgid ""
 "your script alone will add it to the Inspector's creation dialog. This will "
 "auto-add your script to the Resource object you create."
 msgstr ""
+"Se o idioma do script oferecer suporte a `script classes <https://godot."
+"readthedocs.io/en/latest/getting_started/step_by_step/scripting_continued."
+"html#register-scripts-as-classes>` __, ele simplificará o processo. Definir "
+"um nome apenas para o seu script irá adicioná-lo ao diálogo de criação do "
+"Inspetor. Isso adicionará automaticamente seu script ao objeto Resource "
+"criado por você."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
 #, fuzzy
@@ -362,6 +456,7 @@ msgid "Let's see some examples."
 msgstr "Alguns exemplos:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
+#, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -369,37 +464,60 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
+"Scripts de recursos são semelhantes aos ScriptableObjects da Unity. O "
+"Inspector fornece suporte interno para recursos personalizados. Se desejado, "
+"os usuários podem até criar seus próprios scripts de ferramentas baseados em "
+"Control e combiná-los com um: ref: `EditorPlugin <class_EditorPlugin>` para "
+"criar visualizações e editores personalizados para seus dados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
+#, fuzzy
 msgid ""
 "Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
+"O DataTables e o CurveTables do Unreal Engine 4 também são fáceis de recriar "
+"com scripts de recursos. DataTables são uma String mapeada para uma "
+"estrutura personalizada, semelhante a um dicionário que mapeia uma String "
+"para um script de recurso personalizado secundário."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
+#, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
+"Em vez de apenas inlining os valores do dicionário, um poderia também, "
+"alternativamente ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
+#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr ""
+"Importe uma tabela de valores de uma planilha e gere esses pares de valores-"
+"chave ou ..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
+#, fuzzy
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
 msgstr ""
+"Projete uma visualização no editor e crie um plug-in simples que a adicione "
+"ao Inspector ao abrir esses tipos de recursos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
+#, fuzzy
 msgid ""
-"CurveTables are the same thing except mapped to an Array of float values or "
+"CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
+"CurveTables são a mesma coisa, exceto mapeado para uma matriz de valores "
+"float ou um objeto de recurso: ref: `Curve <class_Curve>` /: ref: `Curve2D "
+"<class_Curve2D>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""

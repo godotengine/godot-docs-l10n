@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,9 @@ msgid "Intro"
 msgstr "简介"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
+#, fuzzy
 msgid ""
-"In this tutorial you will connect a character to a life bar and animate the "
+"In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr "在本教程中，你将连接一个字符到生命条，并播放健康损失。"
 
@@ -100,14 +101,15 @@ msgid "To do this, we will use **signals**."
 msgstr "为此，我们将使用**信号**。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
+#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
 "signal and receive the information. It's a powerful tool we use a lot for "
 "User Interface and achievement systems. You don't want to use them "
-"everywhere though. Connecting two nodes adds some coupling between them. "
+"everywhere, though. Connecting two nodes adds some coupling between them. "
 "When there's a lot of connections, they become hard to manage. For more "
-"information on check out the `signals video tutorial <https://youtu.be/"
+"information, check out the `signals video tutorial <https://youtu.be/"
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
 "信号是Godot观察者模式的版本。他们允许我们发出一些信息。其他节点可以连接到"
@@ -131,13 +133,14 @@ msgstr ""
 "*start*和*end*。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
+#, fuzzy
 msgid ""
-"Load the ``start`` project in Godot. In the ``FileSystem`` dock double click "
-"on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 characters "
-"face each other. The pink enemy attacks and damages the green square at "
-"regular time intervals, until its death. Feel free to try out the game: the "
-"basic combat mechanics already work. But as the character isn't connected to "
-"the life bar the ``GUI`` doesn't do anything."
+"Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
+"click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
+"characters face each other. The pink enemy attacks and damages the green "
+"square at regular time intervals, until its death. Feel free to try out the "
+"game: the basic combat mechanics already work. But as the character isn't "
+"connected to the life bar, the ``GUI`` doesn't do anything."
 msgstr ""
 "加载Godot中的`start`项目。在`FileSystem`dock中双击LevelMockup.tscn打开它。这"
 "是一个RPG游戏的模型，两个角色面对面。粉色的敌人定期攻击并破坏绿色的正方形，直"
@@ -167,9 +170,11 @@ msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "场景树，用GUI场景设置来显示它的子对象"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
+#, fuzzy
 msgid ""
-"The GUI scene encapsulates all of the Game User Interface. It comes with a "
-"barebones script where we get the path to nodes that exist inside the scene:"
+"The GUI scene encapsulates all of the game's Graphical User Interface. It "
+"comes with a barebones script where we get the path to nodes that exist "
+"inside the scene:"
 msgstr ""
 "GUI场景封装了所有的游戏用户界面。它附带了一个基本的脚本，我们可以在其中获得到"
 "场景中存在的节点的路径："
@@ -397,11 +402,12 @@ msgstr ""
 "在网上免费获得。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
+#, fuzzy
 msgid ""
-"With this in mind let's connect the ``GUI`` to the ``Player``. Click on the "
+"With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
-"and click on the Node tab. This is the place to connect nodes to listen the "
-"one you selected."
+"and click on the Node tab. This is the place to connect nodes to listen to "
+"the one you selected."
 msgstr ""
 "考虑到这一点，让我们将`GUI`连接到`Playe`。点击场景dock中的`Player`节点来选择"
 "它。转到检查器，单击Node选项卡。这是连接节点侦听所选节点的地方。"
@@ -492,24 +498,26 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot为你编写回调方法并将你带到它"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
+#, fuzzy
 msgid ""
 "Inside the parens after the function name, add a ``player_health`` argument. "
-"When the player emits the ``health_changed`` signal it will send its current "
-"``health`` alongside it. Your code should look like:"
+"When the player emits the ``health_changed`` signal, it will send its "
+"current ``health`` alongside it. Your code should look like:"
 msgstr ""
 "在函数名后面的参数中，添加一个`player_health`参数。当玩家发出`health_changed`"
 "信号时，它会将当前的`health`发送到旁边。您的代码应该如下所示："
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
+#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
-"be using PascalCase for method names & camelCase for method parameters which "
-"follows the official `C# naming conventions. <https://docs.microsoft.com/en-"
-"us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
+"be using PascalCase for method names & camelCase for method parameters, "
+"which follows the official `C# naming conventions. <https://docs.microsoft."
+"com/en-us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
-"引擎不会将PascalCase转换成snake_case，对于c#示例，我们将使用PascalCase来表示"
-"方法名，而camelCase用于方法参数，这些参数遵循官方的c#命名约定。<https://docs."
-"microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-"
+"引擎不会将PascalCase转换成snake_case，对于C#示例，我们将使用PascalCase来表示"
+"方法名，而camelCase用于方法参数，这些参数遵循 `官方的C#命名约定。 <https://"
+"docs.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-"
 "conventions>`_"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
@@ -519,8 +527,9 @@ msgid ""
 msgstr "在Player.gd。当玩家发出health\\_changed信号时，它也会发送其health值"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
+#, fuzzy
 msgid ""
-"Inside ``_on_Player_health_changed`` let's call a second function called "
+"Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
 "在`_on_Player_health_changed`中，我们调用第二个函数`update_health`，并将"
@@ -567,9 +576,10 @@ msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr "将`TextureProgress`的`value`设置为`new_value`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
+#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
-"``Number``'s ``text`` property requires a string so we can't assign it to "
+"``Number``'s ``text`` property requires a string, so we can't assign it to "
 "``new_value`` directly"
 msgstr "`str`是一个内置函数，可以将任何值转换为文本"
 
@@ -594,11 +604,12 @@ msgid "Animate the loss of life with the Tween node"
 msgstr "用渐变节点动画生命的损失"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
+#, fuzzy
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
 "properties. ``Tween`` animates anything you'd like from a start to an end "
-"state over a certain duration. For example it can animate the health on the "
+"state over a certain duration. For example, it can animate the health on the "
 "``TextureProgress`` from its current level to the ``Player``'s new "
 "``health`` when the character takes damage."
 msgstr ""
@@ -785,7 +796,8 @@ msgstr ""
 "乱。考虑到游戏的风格，生命条以一种更加起伏不定的方式进行动画是很好的。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
-msgid "The animation is smooth but the number is broken"
+#, fuzzy
+msgid "The animation is smooth, but the number is broken"
 msgstr "动画很流畅，但是数字被打破了"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
@@ -803,7 +815,8 @@ msgid "Try the game again to see a nice blocky animation."
 msgstr "再次尝试游戏，看看一个不错的方块动画。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
-msgid "By rounding out animated\\_health we hit two birds with one stone"
+#, fuzzy
+msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "通过完成animated\\_health，我们达到了一石二鸟的效果"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
@@ -896,10 +909,11 @@ msgstr ""
 "见性，给它分配一个着色器，然后用一个带有`modulate`的颜色来修改它。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
-"interface. If we lower the alpha channel our interface fades out."
+"interface. If we lower the alpha channel, our interface fades out."
 msgstr ""
 "`modulate`具有`Color`值，有4个通道：红色、绿色、蓝色和alpha。如果我们使前三个"
 "通道中的任何一个都变暗，它就会使界面变暗。如果我们降低alpha通道，我们的界面就"
@@ -934,8 +948,9 @@ msgid ""
 msgstr "然后我们必须再次调用`Tween`节点的`interpolate_property`方法："
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#, fuzzy
 msgid ""
-"This time we change the ``modulate`` property and have it animate from "
+"This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"

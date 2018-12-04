@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,6 +179,7 @@ msgstr ""
 "toda a GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
+#, fuzzy
 msgid ""
 "We want our interface to anchor to the top of the screen. Select the ``GUI`` "
 "node and click the Layout button at the top of the viewport. Select the "
@@ -186,10 +187,16 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"Queremos que nossa interface ancore no topo da tela. Selecione o nó `` GUI`` "
+"e clique no botão Layout na parte superior da viewport. Selecione a opção "
+"\"Top Wide\". O nó `` GUI`` irá ancorar na borda superior de seu pai, a "
+"viewport por padrão. Ele será redimensionado automaticamente no eixo "
+"vertical para criar espaço para seus componentes de UI filho."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
 msgstr ""
+"Salve a cena como ``GUI.tscn``. Nós vamos colocar a GUI inteira dentro dela."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""

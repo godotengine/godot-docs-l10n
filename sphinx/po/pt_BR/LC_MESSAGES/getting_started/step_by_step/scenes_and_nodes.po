@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,8 @@ msgid "It can be extended (to have more functions)."
 msgstr "Pode ser estendido (ter mais funções)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-msgid "It can be added to other nodes as a child."
+#, fuzzy
+msgid "It can be added to another node as a child."
 msgstr "Pode ser adicionado a outros nós como filho."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
@@ -196,13 +197,12 @@ msgstr ""
 "mundo\". Isso nos apresentará o uso do editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-#, fuzzy
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"Se você rodar o executável do Godot fora de um projeto, o Gerenciador de "
-"Projetos aparecerá. Isso ajuda os desenvolvedores a gerenciar seus projetos."
+"Rodar o executável do Godot fora de um projeto, abrirá o Gerenciador de "
+"Projetos. Isso ajuda os desenvolvedores a gerenciar seus projetos."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
 msgid ""
@@ -303,13 +303,12 @@ msgid "Aaaand... Oops."
 msgstr "Eeee… Opa."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
-#, fuzzy
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
 "As cenas precisam ser salvam para serem executadas, então salve-a com um "
-"nome tipo ola.tscn em Cena -> Salvar:"
+"nome tipo Ola.tscn em Cena -> Salvar:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -331,13 +330,12 @@ msgstr ""
 "estão dentro do jogo."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:158
-#, fuzzy
 msgid ""
 "After saving the scene and pressing run scene again, the \"Hello World\" "
 "demo should finally execute:"
 msgstr ""
 "Depois de salvar a cena e pressionar para rodar a cena de novo, a "
-"demonstração \"Olá, mundo!\" deveria finalmente executar:"
+"demonstração \"Olá, mundo!\" deve finalmente executar:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:163
 msgid "Success!"
@@ -381,7 +379,6 @@ msgstr ""
 "Experimente isso agora."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
-#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."

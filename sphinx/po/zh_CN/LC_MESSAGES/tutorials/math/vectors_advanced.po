@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:4
 msgid "Advanced vector math"
-msgstr ""
+msgstr "高等向量数学"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:7
 msgid "Planes"
-msgstr ""
+msgstr "平面"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:9
 msgid ""
@@ -33,6 +33,9 @@ msgid ""
 "(under the plane), and (contrary to popular belief) you can also use their "
 "math in 2D:"
 msgstr ""
+"点乘对于单位向量还有一个有趣的性质。想象垂直于这个向量(通过原点)经过一个平"
+"面。平面将整个空间划分为正(在平面上)和负(在平面下)，(与普遍的看法相反)你也可"
+"以在2D中使用它们的数学:"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:17
 msgid ""
@@ -43,6 +46,10 @@ msgid ""
 "**normal** *is* a **unit vector**, but it's called *normal* because of its "
 "usage. (Just like we call (0,0) the Origin!)."
 msgstr ""
+"垂直于表面的单位向量（因此，它们描述了表面的方向）称为 **单位法向量** 。不"
+"过，它们通常只是缩写为 *法线* 。法线出现在平面、3D几何中（以确定每个面或顶点"
+"的侧边），等等。一个 **法线** 就是一个 **单位向量**，但是由于它的使用，它被称"
+"为*法线*。（就像我们说坐标（0，0）就是原点一样！）."
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:24
 msgid ""
@@ -53,10 +60,13 @@ msgid ""
 "is an infinite surface (imagine an infinite, flat sheet of paper that you "
 "can orient and is pinned to the origin) instead of a line."
 msgstr ""
+"它就像看起来那样简单。平面经过原点，它的表面垂直于单位向量（或 *法线* ）。指"
+"向向量的一边是正半空间，而另一边是负半空间。在3维空间中，这完全相同，除了平面"
+"是一个无限的表面（想象一张无限伸展的平坦纸张，它固定在原点）而不是直线。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:33
 msgid "Distance to plane"
-msgstr ""
+msgstr "到平面的距离"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:35
 msgid ""
@@ -65,20 +75,23 @@ msgid ""
 "time we do dot product between vector and position), returns the **distance "
 "from the point to the plane**:"
 msgstr ""
+"现在，我们很清楚了平面是什么，让我们再回到点乘上。 **单位向量** 和任何 **空间"
+"点** 之间的点乘(是的，这次我们在向量和位置之间进行点乘)，将返回 **从点到平面"
+"的距离** ："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:49
 msgid ""
 "But not just the absolute distance, if the point is in the negative half "
 "space the distance will be negative, too:"
-msgstr ""
+msgstr "但不仅仅是绝对距离，如果点在负半空间中，距离也是负的："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:54
 msgid "This allows us to tell which side of the plane a point is."
-msgstr ""
+msgstr "这使我们能够知道点在平面的哪一侧。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:57
 msgid "Away from the origin"
-msgstr ""
+msgstr "远离原点"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:59
 msgid ""
@@ -86,6 +99,8 @@ msgid ""
 "everywhere in space, not only passing through the origin. You want real "
 "*plane* action and you want it *now*."
 msgstr ""
+"我知道你在想什么！到目前为止，这还不错，但 *真正的* 平面在空间中无处不在，而"
+"不仅仅是通过原点的平面。你想要真正的 *平面* ，你 *现在* 就想行动起来。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:63
 msgid ""
@@ -93,6 +108,8 @@ msgid ""
 "*polarity*. This means that it is possible to have perfectly overlapping "
 "planes, but their negative and positive half-spaces are swapped."
 msgstr ""
+"记住，平面不仅把空间分成两半，而且它们还有 *极性* 。这意味着有可能有完全重叠"
+"的平面，但是它们的负半空间和正半空间是相反的。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:67
 msgid ""
@@ -100,12 +117,16 @@ msgid ""
 "**distance from the origin** scalar *D*. Thus, our plane is represented by N "
 "and D. For example:"
 msgstr ""
+"记住这一点，让我们将整个平面描述为 **法线** *N* 和 **距原点的距离** 标量 "
+"*D* 。因此，我们的平面将由N和D表示，例如："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:73
 msgid ""
 "For 3D math, Godot provides a :ref:`Plane <class_Plane>` built-in type that "
 "handles this."
 msgstr ""
+"对于3维的情况，Godot提供了一个 :ref:`Plane <class_Plane>` 内置类型来处理这个"
+"问题。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:76
 msgid ""
@@ -115,6 +136,9 @@ msgid ""
 "plane, travelling in N direction. As an example, imagine you want to reach a "
 "point in the plane, you will just do:"
 msgstr ""
+"基本上，N和D可以表示空间中的任何平面，无论是对于2D还是3D（取决于变量N的维"
+"数），数学上对于两者都是一样的。和以前差不多，但D是原点沿N方向移动到平面的距"
+"离。例如，想象一下你想在到达平面上的一个点，你会这样做："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:91
 msgid ""
@@ -123,14 +147,17 @@ msgid ""
 "seems. If we want to tell, again, the distance from the point to the plane, "
 "we do the same but adjusting for distance:"
 msgstr ""
+"这将拉伸（调整大小）法线向量并使其接触平面。这个数学可能看起来很疑惑，但实际"
+"上比看起来简单得多。如果我们想再说一遍，从点到平面的距离，我们也会这样做，但"
+"是要调整距离："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:105
 msgid "The same thing, using a built-in function:"
-msgstr ""
+msgstr "使用内置函数做同样的事情："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:116
 msgid "This will, again, return either a positive or negative distance."
-msgstr ""
+msgstr "这将再次返回一个正或负的距离。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:118
 msgid ""
@@ -138,16 +165,18 @@ msgid ""
 "This will result in a plane in the same position, but with inverted negative "
 "and positive half spaces:"
 msgstr ""
+"翻转平面的极性可以通过同时对N和D取负来完成。这将导致平面处于相同的位置，但是"
+"具有反转的负半空间和正半空间："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:133
 msgid ""
 "Of course, Godot also implements this operator in :ref:`Plane "
 "<class_Plane>`, so doing:"
-msgstr ""
+msgstr "当然，Godot也在 :ref:`Plane <class_Plane>` 中实现这个操作，像这样："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:145
 msgid "Will work as expected."
-msgstr ""
+msgstr "这将按预期工作。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:147
 msgid ""
@@ -155,10 +184,12 @@ msgid ""
 "the distance to it. So, why is it useful to calculate the distance from a "
 "point to a plane? It's extremely useful! Let's see some simple examples.."
 msgstr ""
+"所以，记住，平面就是这样，它的主要用途就是计算到它的距离。那么，为什么计算一"
+"个点到一个平面的距离是有用的呢？非常有用！让我们来看一些简单例子。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:153
 msgid "Constructing a plane in 2D"
-msgstr ""
+msgstr "在二维空间中构造平面"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:155
 msgid ""
@@ -166,6 +197,8 @@ msgid ""
 "Constructing them in 2D is easy, this can be done from either a normal (unit "
 "vector) and a point, or from two points in space."
 msgstr ""
+"平面显然不是从哪儿冒出来的，所以必须构造。在2D中构造它们很简单，这可以从法线"
+"（单位向量）和点，或者用2维空间中的两个点来完成。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:159
 msgid ""
@@ -173,6 +206,8 @@ msgid ""
 "is already computed, so just calculate D from the dot product of the normal "
 "and the point."
 msgstr ""
+"针对法线和点的情况，大部分工作已经完成，因为当法线已经计算出来时，只需从法线"
+"和点的点乘得到D。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:174
 msgid ""
@@ -182,22 +217,26 @@ msgid ""
 "must be obtained first, and then it needs to be rotated 90° degrees to "
 "either side:"
 msgstr ""
+"对于空间中的两个点，实际上会有两个平面同时经过它们，它们共享相同的空间，但是"
+"法线方向相反。为了从这两个点计算面的法线，必须首先获得方向矢量，然后将向任何"
+"一边旋转90°："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:201
 msgid ""
 "The rest is the same as the previous example, either point_a or point_b will "
 "work since they are in the same plane:"
 msgstr ""
+"其余的与前面的示例相同，point_a或point_b都可以工作，因为它们在相同的平面中："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:219
 msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
-msgstr ""
+msgstr "在3D中做同样的操作稍微复杂一些，下面将进一步解释。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:223
 msgid "Some examples of planes"
-msgstr ""
+msgstr "平面的一些例子"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:225
 msgid ""
@@ -206,6 +245,9 @@ msgid ""
 "example, a rectangle, a trapezoid, a triangle, or just any polygon where no "
 "faces bend inwards."
 msgstr ""
+"这里有一个简单的例子，说明平面的用途。假设您有一个 `凸 <https://www."
+"mathsisfun.com/definitions/convex.html>`__ 多边形。例如，矩形、梯形、三角形或"
+"任何没有向内弯曲的多边形。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:230
 msgid ""
@@ -213,6 +255,8 @@ msgid ""
 "segment. Once we have the list of planes, we can do neat things, for example "
 "checking if a point is inside the polygon."
 msgstr ""
+"对多边形的每个部分，我们计算出经过该部分的平面。一旦我们有了平面的列表，我们"
+"就可以做些分类的事情，例如检查一个点是否在多边形内部。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:234
 msgid ""
@@ -220,11 +264,13 @@ msgid ""
 "point is positive, then the point is outside the polygon. If we can't, then "
 "the point is inside."
 msgstr ""
+"我们遍历所有平面，如果我们能找到使得点到平面的距离为正的平面，那么点在多边形"
+"之外。如果我们不能，那么这一点就在多边形内部。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:240
 #: ../../docs/tutorials/math/vectors_advanced.rst:279
 msgid "Code should be something like this:"
-msgstr ""
+msgstr "代码应该是这样的："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:265
 msgid ""
@@ -233,6 +279,8 @@ msgid ""
 "This is called the Separating Axis Theorem (or SAT) and most physics engines "
 "use this to detect collision."
 msgstr ""
+"很酷，是吧？但这可以变得更好！稍加努力，类似的逻辑将让我们知道两个凸多边形是"
+"否重叠。这叫做分离轴定理（或SAT），大多数物理引擎都用这个来检测碰撞。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:270
 msgid ""
@@ -242,6 +290,9 @@ msgid ""
 "it. This check is performed with the planes of A against the points of B, "
 "and then with the planes of B against the points of A:"
 msgstr ""
+"对于一个点，仅仅检查一个平面是否返回正距离就足以判断该点是否在外面。对于一个"
+"多边形，我们必须找到一个平面，使得另一个多边形上的所有点到它的距离为正。这种"
+"可以用A平面对B点进行检查，然后用B平面对A点进行检查："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:370
 msgid ""
@@ -250,10 +301,13 @@ msgid ""
 "usually just handled by splitting the concave polygon into smaller convex "
 "polygons, or using a technique such as BSP (which is not used much nowadays)."
 msgstr ""
+"正如你所看到的，平面是非常有用的，然而这只是冰山一角。你可能想知道非凸多边形"
+"会发生什么。这通常只是通过将凹多边形分割成较小的凸多边形来处理，或者使用诸如"
+"BSP（现在使用得不多）之类的技术。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:377
 msgid "Collision detection in 3D"
-msgstr ""
+msgstr "三维碰撞检测"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:379
 msgid ""
@@ -263,6 +317,9 @@ msgid ""
 "pretty well) but it's used by almost all physics engines and collision "
 "detection libraries :)"
 msgstr ""
+"这是另一个奖励，是对耐心并跟上这个漫长的教程的奖励。这是另一条锦囊妙计。这可"
+"能不能直接拿来使用（Godot已经可以进行了相当棒的碰撞检测了），但是几乎所有的物"
+"理引擎和碰撞检测库都使用它的原理：）"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:385
 msgid ""
@@ -270,6 +327,8 @@ msgid ""
 "useful for collision detection? You could detect if a point was inside any "
 "convex shape, or if two 2D convex shapes were overlapping."
 msgstr ""
+"还记得把2D中的凸形转换成2D平面阵列对碰撞检测有用吗？您可以检测一个点是否在任"
+"何凸形状内，或者两个2D凸形状是否重叠。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:389
 msgid ""
@@ -277,6 +336,8 @@ msgid ""
 "won't be able to find a separating plane. If a separating plane is found, "
 "then the shapes are definitely not colliding."
 msgstr ""
+"嗯，这在3D中也适用，如果两个3D多面体形状碰撞，你将无法找到分离平面。如果发现"
+"一个分离平面，那么形状肯定不会发生碰撞。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:393
 msgid ""
@@ -285,6 +346,8 @@ msgid ""
 "side. This plane is always one of the face-planes of either polygon A or "
 "polygon B."
 msgstr ""
+"要得到分离平面意味着多边形A的所有顶点都在平面的一侧，而多边形B的所有顶点都在"
+"另一侧。该平面始终是多边形A或多边形B的面向平面之一。"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:398
 msgid ""
@@ -292,6 +355,8 @@ msgid ""
 "that, in some cases a separating plane can't be found. This is an example of "
 "such situation:"
 msgstr ""
+"然而在3D中，这种方法存在一个问题，因为在某些情况下可能找不到分离平面。下面就"
+"是这种情况的一个例子："
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:404
 msgid ""
@@ -299,7 +364,9 @@ msgid ""
 "are the cross product between the edges of polygon A and the edges of "
 "polygon B"
 msgstr ""
+"为了避免这种情况，一些额外的平面需要作为分隔器被测试，这些平面是多边形A的边和"
+"多边形B的边的叉乘"
 
 #: ../../docs/tutorials/math/vectors_advanced.rst:410
 msgid "So the final algorithm is something like:"
-msgstr ""
+msgstr "所以最后的算法是这样的："

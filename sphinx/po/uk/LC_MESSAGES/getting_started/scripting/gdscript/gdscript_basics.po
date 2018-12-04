@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -977,7 +977,7 @@ msgstr ""
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
-"fragmentation. If this is a concern special types of arrays are available. "
+"fragmentation. If this is a concern, special types of arrays are available. "
 "These only accept a single data type. They avoid memory fragmentation and "
 "also use less memory but are atomic and tend to run slower than generic "
 "arrays. They are therefore only recommended to use for large data sets:"
@@ -1347,7 +1347,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
 msgid ""
-"Remove any ``break``'s. If you don't want to ``break`` by default you can "
+"Remove any ``break``s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
 
@@ -1426,7 +1426,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:935
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
-"pattern, otherwise the pattern don't match."
+"pattern, otherwise the pattern doesn't match."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:937
@@ -1452,7 +1452,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:954
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
-"the pattern, otherwise the pattern don't match."
+"the pattern, otherwise the pattern doesn't match."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:956
@@ -1663,9 +1663,9 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1212
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
-"them visible and editable in the editor. This way artists and game designers "
-"can modify values that later influence how the program runs. For this, a "
-"special export syntax is provided."
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1298
@@ -1710,7 +1710,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1333
 msgid ""
-"Exporting arrays works but with an important caveat: While regular arrays "
+"Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
 "between all instances. This means that editing them in one instance will "
 "cause them to change in all other instances. Exported arrays can have "
@@ -1756,7 +1756,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1411
 msgid ""
-"As said *local* access will *not* trigger the setter and getter. Here is an "
+"As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
 
@@ -1767,7 +1767,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1428
 msgid ""
 "Scripts, by default, don't run inside the editor and only the exported "
-"properties can be changed. In some cases it is desired that they do run "
+"properties can be changed. In some cases, it is desired that they do run "
 "inside the editor (as long as they don't execute game code or manually avoid "
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
@@ -1842,7 +1842,7 @@ msgid ""
 "immediately return from the current function, with the current frozen state "
 "of the same function as the return value. Calling ``resume`` on this "
 "resulting object will continue execution and return whatever the function "
-"returns. Once resumed the state object becomes invalid. Here is an example:"
+"returns. Once resumed, the state object becomes invalid. Here is an example:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1542
@@ -1862,7 +1862,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1577
 msgid ""
 "The real strength of using ``yield`` is when combined with signals. "
-"``yield`` can accept two parameters, an object and a signal. When the signal "
+"``yield`` can accept two arguments, an object and a signal. When the signal "
 "is received, execution will recommence. Here are some examples:"
 msgstr ""
 

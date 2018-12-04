@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -309,22 +309,20 @@ msgid ""
 msgstr "如果这个整数以0开头，那么整数值字符串将前置填充0，而不是空格："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:174
-#, fuzzy
 msgid ""
 "Precision can be specified for real numbers by adding a ``.`` (*dot*) with "
 "an integer following it. With no integer after ``.``, a precision of 0 is "
 "used, rounding to integral value. The integer to use for padding must appear "
 "before the dot."
 msgstr ""
-"可以通过添加``.``（*点*）和一个整数来指定实数的精度。``.``后没整数时，精度为"
+"可以通过添加 ``.`` (*点*)和一个整数来指定实数的精度。``.``后没整数时，精度为"
 "0，舍入为整数值。要用于填充的整数则必须出现在点之前。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:186
-#, fuzzy
 msgid ""
 "The ``-`` character will cause padding to the right rather than the left, "
 "useful for right text alignment:"
-msgstr "``-``字符向右填充，而不是向左，对于右对其的文本很有用："
+msgstr "``-`` 字符将导致向右而不是向左填充，对右文本对齐很有用："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:197
 msgid "Dynamic padding"
@@ -337,32 +335,36 @@ msgid ""
 "in the format specifier. The values for padding and precision are then "
 "passed when formatting:"
 msgstr ""
+"通过使用 ``*`` （ *星号* ）字符，可以在不修改格式字符串的情况下设置填充或精"
+"度。 它用于代替格式说明符中的整数。 然后在格式化时传递填充和精度的值："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:212
 msgid ""
 "It is still possible to pad with zeroes in integer placeholders by adding "
 "``0`` before ``*``:"
-msgstr ""
+msgstr "通过在 ``*`` 之前添加 ``0`` ，仍然可以在整数占位符中填充零："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:222
 msgid "Escape sequence"
-msgstr ""
+msgstr "逃脱序列"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:224
 msgid ""
 "To insert a literal ``%`` character into a format string, it must be escaped "
 "to avoid reading it as a placeholder. This is done by doubling the character:"
 msgstr ""
+"要在文本字符串中插入文字 ``%`` 字符，必须对其进行转义以避免将其作为占位符读"
+"取。 这是通过加倍符号来完成的："
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:235
 msgid "Format method examples"
-msgstr ""
+msgstr "格式化方法示例"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:237
 msgid ""
 "The following are some examples of how to use the various invocations of the "
 "``String.format``  method."
-msgstr ""
+msgstr "以下是如何使用 ``String.format`` 方法的各种调用的一些示例。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:242
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:264
@@ -397,13 +399,12 @@ msgid "key"
 msgstr "键"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
-#, fuzzy
 msgid ""
 "``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})``"
 msgstr ""
-"\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
-"\"3.0\"})"
+"``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -421,9 +422,8 @@ msgid "index"
 msgstr "索引"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
-#, fuzzy
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
-msgstr "\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
+msgstr "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
@@ -431,11 +431,10 @@ msgid "mix"
 msgstr "混合"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
-#, fuzzy
 msgid ""
 "``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
-"\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
+"``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -445,33 +444,28 @@ msgid "Array"
 msgstr "数组"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
-#, fuzzy
 msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
-"\"Hi, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":\"Godette"
-"\"]])"
+"``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
-#, fuzzy
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
-msgstr "\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
+msgstr "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
-#, fuzzy
 msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
-msgstr "\"嗨, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
+msgstr "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "no index"
-msgstr "索引"
+msgstr "没有索引"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
-msgstr "\"嗨, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
@@ -482,12 +476,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 msgid "Infix (default)"
-msgstr ""
+msgstr "中缀（默认）"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
-#, fuzzy
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
-msgstr "\"嗨, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
@@ -497,21 +490,19 @@ msgstr "嗨, Godette v3.0"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
 msgid "Postfix"
-msgstr ""
+msgstr "后缀"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
-#, fuzzy
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
-msgstr "\"嗨, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
 msgstr "前缀"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
-#, fuzzy
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
-msgstr "\"嗨, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
 msgid ""
@@ -519,15 +510,17 @@ msgid ""
 "useful as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
+"结合 ``String.format`` 方法和 ``％`` 运算符可能很有用，因为 ``String."
+"format`` 没有办法操纵数字的表示。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
-#, fuzzy
 msgid ""
 "``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
 "3.114})``"
 msgstr ""
-"\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
+"``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"
-msgstr ""
+msgstr "嗨, Godette v3.11"

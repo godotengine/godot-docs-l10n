@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,16 +36,18 @@ msgstr ""
 "를 추가하는 기능도 있습니다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
+#, fuzzy
 msgid ""
-"This is great, mostly due the large amount of flexibility provided, but it "
-"also makes our work supporting languages more difficult."
+"This is great, mostly due to the large amount of flexibility provided, but "
+"it also makes our work supporting languages more difficult."
 msgstr ""
 "이것은 대단합니다, 기존의 경우에는 유연성을 제공해 주었지만, 다른 언어를 지원"
 "하기 어렵게 만들기도 했습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
+#, fuzzy
 msgid ""
-"The \"Main\" languages in Godot, though, are GDScript and VisualScript. The "
+"The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
 "makes the experience smoother; both have slick editor integration, while C# "
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
@@ -337,9 +339,10 @@ msgstr ""
 "명 및 기타 관련 옵션을 설정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
+#, fuzzy
 msgid ""
-"In GDScript the file itself represents the class, so the class name field is "
-"not editable."
+"In GDScript, the file itself represents the class, so the class name field "
+"is not editable."
 msgstr ""
 "GDScript에서 파일 자체는 클래스를 나타내므로 클래스명 부분은 편집할 수 없습니"
 "다."
@@ -369,9 +372,10 @@ msgstr ""
 "서도 볼 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
+#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
-"highlighted in the above image. This will bring you to the script editor "
+"highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
 "스크립트를 편집하려면 위 이미지에 강조 표시된 두 버튼 중 하나를 선택합니다. "
@@ -385,7 +389,7 @@ msgid ""
 msgstr ""
 "안에는 많은 내용이 있지 않습니다. ``_ready()`` 함수는 노드와 모든 자식들이 활"
 "성화된 씬으로 들어갈 때 호출됩니다. **참고:** ``_ready()`` 는 생성자가 아닙니"
-"다. 생성자는 ``_init()`` 대신합니다."
+"다. 대신에 생성자는 ``_init()`` 입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
@@ -466,11 +470,12 @@ msgstr ""
 "는 메서드를 실행할 (NodePath로 정의된) 하나의 노드와 그 메서드의 이름입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
+#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
 "select a node, the NodePath at the bottom will automatically update to point "
-"a relative path from the emitting node to the selected node."
+"to a relative path from the emitting node to the selected node."
 msgstr ""
 "왼쪽 위 구역은 씬에 있는 노드들을 보여주며 방출하는 노드 이름은 빨갛게 표시됩"
 "니다. \"Panel\" 노드를 선택해봅시다. 노드를 선택하면, 밑에 NodePath가 자동으"
@@ -490,9 +495,10 @@ msgstr ""
 "에 함수를 생성할 겁니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
+#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
-"this is a scripting tutorial, so for the sake of learning, let's dive in to "
+"this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
 "그리고 이것으로 시각 인터페이스를 사용하는 법에 관한 강좌를 마칩니다. 하지"

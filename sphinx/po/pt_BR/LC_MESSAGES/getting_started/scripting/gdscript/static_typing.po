@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,6 +199,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:152
+#, fuzzy
 msgid ""
 "Imagine an Enemy in your game, that ``extends Area2D``. You want it to "
 "collide with the Player, a ``KinematicBody2D`` with a script called "
@@ -207,6 +208,9 @@ msgid ""
 "a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
 "``_on_body_entered`` callback."
 msgstr ""
+"Imagine um Inimigo no seu jogo, que ``extends Area2D``. Você quer que ele "
+"colida com o Jogador, um ``KinematicBody2D`` com um script chamado "
+"``PlayerController`` atrelado a ele."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:159
 msgid ""
@@ -217,12 +221,17 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:172
+#, fuzzy
 msgid ""
 "As we’re dealing with a custom type, if the ``body`` doesn’t extend "
 "``PlayerController``, the ``player``\\ variable will be set to ``null``. We "
 "can use this to check if the body is the player or not. We will also get "
 "full autocompletion on the player variable thanks to that cast."
 msgstr ""
+"Como nós estamos lidando com um tipo personalizado, se o ``body`` não "
+"extende ``PlayerController``, a variável do ``player``\\ vai ser definida "
+"como ``null``. Nós podemos usar isso para checar se o body é o player or "
+"não. Nós vamos também"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:179
 msgid ""
@@ -244,6 +253,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:190
+#, fuzzy
 msgid ""
 "This happens when you get a child node. Let’s take a timer for example: with "
 "dynamic code, you can get the node with ``$Timer``. GDScript supports `duck-"
@@ -252,6 +262,10 @@ msgid ""
 "classes it extends. With dynamic GDScript, you also don’t care about the "
 "node’s type as long as it has the methods you need to call."
 msgstr ""
+"Isso acontece quando você pega um nó filho. Vamos tomar um Timer como "
+"exemplo: com código dinâmico, você pode pegar o nó com ``$Timer``. GDScript "
+"suporta `duck-typing <https://stackoverflow.com/a/4205163/8125343>`__, então "
+"sempre"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:198
 msgid ""

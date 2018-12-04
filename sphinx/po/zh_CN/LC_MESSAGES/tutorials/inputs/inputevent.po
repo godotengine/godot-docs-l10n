@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/inputevent.rst:4
 msgid "InputEvent"
-msgstr ""
+msgstr "输入事件"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:7
 msgid "What is it?"
-msgstr ""
+msgstr "它是什么？"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:9
 msgid ""
@@ -33,10 +33,14 @@ msgid ""
 "types of input events. Input events travel through the engine and can be "
 "received in multiple locations, depending on the purpose."
 msgstr ""
+"管理输入通常很复杂，无论是操作系统还是平台。为了简化这一点，提供了一个特殊的"
+"内置类型 :ref:`InputEvent <class_InputEvent>`。此数据类型可以被配置成包含多种"
+"类型的输入事件。输入事件通过引擎传递，可以在多个位置接收，具体位置取决于目"
+"的。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:15
 msgid "Here is a quick example, closing your game if the escape key is hit:"
-msgstr ""
+msgstr "这里有一个很快的例子，如果Esc键被击中时关闭你的游戏："
 
 #: ../../docs/tutorials/inputs/inputevent.rst:34
 msgid ""
@@ -48,16 +52,23 @@ msgid ""
 "settings without updating your code, and even build a key mapping feature on "
 "top of it to allow your game to change the key mapping at runtime!"
 msgstr ""
+"但是，使用提供的 :ref:`InputMap <class_InputMap>` 特性更简洁、更灵活，它允许"
+"您定义输入操作并为它们分配不同的键。这样，你可以为同一个动作定义多个键(例如键"
+"盘escape键和手柄上的开始按钮)。然后你可以更容易地在项目设置中更改这个映射，而"
+"无需更新你的代码，甚至可以在它之上构建一个键映射特性，以允许你的游戏在运行时"
+"更改键映射!"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:40
 msgid ""
 "You can setup your InputMap under **Project > Project Settings > Input Map** "
 "and then use those actions like this:"
 msgstr ""
+"您可以在 **Project > Project Settings > Input Map** 下设置InputMap，然后像这"
+"样使用这些操作:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:60
 msgid "How does it work?"
-msgstr ""
+msgstr "它是如何工作的?"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:62
 msgid ""
@@ -68,6 +79,10 @@ msgid ""
 "the default MainLoop implementation, events are fed to it. Godot provides a "
 "function to get the current SceneTree object : **get_tree()**."
 msgstr ""
+"每个输入事件都起源于用户/玩家(尽管可以生成一个InputEvent并将其反馈给引擎，这"
+"对于手势非常有用)。每个平台的操作对象都将从设备读取事件，然后将它们发送到"
+"MainLoop。如同  :ref:`SceneTree <class_SceneTree>` 是默认的主循环实现，事件被"
+"提供给它。Godot提供了一个获取当前SceneTree对象的函数:**get_tree()**。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:70
 msgid ""
@@ -76,6 +91,9 @@ msgid ""
 "(the first node of the scene tree). Viewport does quite a lot of stuff with "
 "the received input, in order:"
 msgstr ""
+"但是SceneTree不知道如何处理这个事件，所以它将把它交给viewports，从\"root\" :"
+"ref:`Viewport <class_Viewport>` (场景树的第一个节点)开始。Viewport对接收到的"
+"输入做了很多事情，顺序如下:"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:77
 msgid ""
@@ -90,6 +108,13 @@ msgid ""
 "<class_Node__unhandled_input>` is generally a better fit, because it allows "
 "the GUI to intercept the events."
 msgstr ""
+"首先，标准：ref：`Node._input（）<class_Node__input>`函数将在任何覆盖它的节点"
+"中调用（并且没有禁用输入处理：ref：`Node.set_process_input（）"
+"<class_Node_set_process_input>`）。 如果任何函数使用该事件，它可以调用：ref："
+"`SceneTree.set_input_as_handled（）<class_SceneTree_set_input_as_handled>`，"
+"该事件将不再传播。 这可确保您可以在GUI之前过滤所有感兴趣的事件。 对于游戏输"
+"入，：ref：`Node._unhandled_input（）<class_Node__unhandled_input>`通常更合"
+"适，因为它允许GUI拦截事件。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:82
 msgid ""
@@ -105,6 +130,14 @@ msgid ""
 "ref:`Control._gui_input() <class_Control__gui_input>` callback, and whether "
 "these events are propagated further."
 msgstr ""
+"其次，它会尝试将输入提供给GUI，并查看是否有任何控件可以接收它。 如果是这样，"
+"将通过虚函数调用：ref：`Control <class_Control>`：ref：`Control."
+"_gui_input（）<class_Control__gui_input>`并发出信号“input_event”（此函数可通"
+"过以下方式重新实现： 脚本继承自它）。 如果控件想“消耗”该事件，它将调用：ref："
+"`Control.accept_event（）<class_Control_accept_event>`并且该事件将不再传播。 "
+"使用：ref：`Control.mouse_filter <class_Control_mouse_filter>`属性来控制是"
+"否：ref：`Control <class_Control>`通过以下方式通知鼠标事件：ref：`Control."
+"_gui_input（）<class_Control__gui_input>`回调，以及是否这些 事件进一步传播。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:92
 msgid ""
@@ -116,6 +149,12 @@ msgid ""
 "event will not spread any more. The unhandled input callback is ideal for "
 "full-screen gameplay events, so they are not received when a GUI is active."
 msgstr ""
+"如果到目前为止没有人消耗该事件，则在被覆盖时将调用未处理的输入回调（并且未使"
+"用以下命令禁用：ref：`Node.set_process_unhandled_input（）"
+"<class_Node_set_process_unhandled_input>`）。 如果任何函数使用该事件，它可以"
+"调用：ref：`SceneTree.set_input_as_handled（）"
+"<class_SceneTree_set_input_as_handled>`，该事件将不再传播。 未处理的输入回调"
+"是全屏游戏事件的理想选择，因此当GUI处于活动状态时不会收到它们。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:97
 msgid ""
@@ -127,12 +166,17 @@ msgid ""
 "default, but areas do not. This can be configured through :ref:`Area "
 "<class_Area>` properties)."
 msgstr ""
+"如果到目前为止没有人想要这个事件，并且a：ref：`Camera <class_Camera>`被分配给"
+"视口，将投射到物理世界的光线（从点击的光线方向）。 如果此光线击中一个对象，它"
+"将调用相关物理对象中的：ref：`CollisionObject._input_event（）"
+"<class_CollisionObject__input_event>`函数（默认情况下，主体接收此回调，但区域"
+"不会。这可以通过以下方式配置：ref ：`Area <class_Area>`属性）。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:103
 msgid ""
 "Finally, if the event was unhandled, it will be passed to the next Viewport "
 "in the tree, otherwise it will be ignored."
-msgstr ""
+msgstr "最后，如果事件未处理，它将被传递到树中的下一个视口，否则将被忽略。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:106
 msgid ""
@@ -140,6 +184,8 @@ msgid ""
 "do so in a reverse depth-first order: Starting with the node at the bottom "
 "of the scene tree, and ending at the root node:"
 msgstr ""
+"将事件发送到场景中的所有侦听节点时，视口将以反向深度优先顺序执行：从场景树底"
+"部的节点开始，到根节点结束："
 
 #: ../../docs/tutorials/inputs/inputevent.rst:112
 msgid ""
@@ -147,6 +193,8 @@ msgid ""
 "specific Controls, only direct ancestors of the targeted Control node "
 "receive the event."
 msgstr ""
+"GUI事件也沿着场景树向上移动，但是，由于这些事件以特定控件为目标，因此只有目标"
+"控制节点的直接祖先才会接收事件。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:115
 msgid ""
@@ -154,10 +202,12 @@ msgid ""
 "nodes to handle and consume particular events, while their ancestors, and "
 "ultimately the scene root, can provide more generalized behaviour if needed."
 msgstr ""
+"根据Godot基于节点的设计，这使得专门的子节点能够处理和消费特定事件，而他们的祖"
+"先，以及最终的场景根，可以在需要时提供更广泛的行为。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:121
 msgid "Anatomy of an InputEvent"
-msgstr ""
+msgstr "InputEvent的剖析"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:123
 msgid ""
@@ -165,20 +215,22 @@ msgid ""
 "not represent anything and only contains some basic information, such as "
 "event ID (which is increased for each event), device index, etc."
 msgstr ""
+"：ref：`InputEvent <class_InputEvent>`只是一个基本的内置类型，它不代表任何东"
+"西，只包含一些基本信息，如事件ID（每个事件增加），设备索引等。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:127
 msgid ""
 "There are several specialised types of InputEvent, described in the table "
 "below:"
-msgstr ""
+msgstr "有几种特殊类型的InputEvent，如下表所示："
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Event"
-msgstr ""
+msgstr "事件"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Type Index"
-msgstr ""
+msgstr "类型索引"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:130
 msgid "Description"
@@ -186,121 +238,121 @@ msgstr "描述"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
 msgid ":ref:`InputEvent <class_InputEvent>`"
-msgstr ""
+msgstr ":ref:`InputEvent <class_InputEvent>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
 msgid "NONE"
-msgstr ""
+msgstr "NONE"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:132
 msgid "Empty Input Event."
-msgstr ""
+msgstr "空输入事件。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid ":ref:`InputEventKey <class_InputEventKey>`"
-msgstr ""
+msgstr ":ref:`InputEventKey <class_InputEventKey>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid "KEY"
-msgstr ""
+msgstr "KEY"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:134
 msgid "Contains a scancode and unicode value, as well as modifiers."
-msgstr ""
+msgstr "包含扫描码和unicode值，以及修饰符。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:137
 msgid ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
-msgstr ""
+msgstr ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:137
 msgid "MOUSE_BUTTON"
-msgstr ""
+msgstr "MOUSE_BUTTON"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:137
 msgid "Contains click information, such as button, modifiers, etc."
-msgstr ""
+msgstr "包含点击信息，例如按钮，修改器等。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid "MOUSE_MOTION"
-msgstr ""
+msgstr "MOUSE_MOTION"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:140
 msgid ""
 "Contains motion information, such as relative, absolute positions and speed."
-msgstr ""
+msgstr "包含运动信息，例如相对位置，绝对位置和速度。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid "JOYSTICK_MOTION"
-msgstr ""
+msgstr "JOYSTICK_MOTION"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:143
 msgid "Contains Joystick/Joypad analog axis information."
-msgstr ""
+msgstr "包含操纵杆/ Joypad模拟轴信息。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:146
 msgid ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:146
 msgid "JOYSTICK_BUTTON"
-msgstr ""
+msgstr "JOYSTICK_BUTTON"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:146
 msgid "Contains Joystick/Joypad button information."
-msgstr ""
+msgstr "包含操纵杆/ Joypad按钮信息。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:149
 msgid ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
-msgstr ""
+msgstr ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:149
 msgid "SCREEN_TOUCH"
-msgstr ""
+msgstr "SCREEN_TOUCH"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:149
 msgid ""
 "Contains multi-touch press/release information. (only available on mobile "
 "devices)"
-msgstr ""
+msgstr "包含多点触控按下/释放信息。 （仅适用于移动设备）"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:153
 msgid ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
-msgstr ""
+msgstr ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:153
 msgid "SCREEN_DRAG"
-msgstr ""
+msgstr "SCREEN_DRAG"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:153
 msgid ""
 "Contains multi-touch drag information. (only available on mobile devices)"
-msgstr ""
+msgstr "包含多点触控拖动信息。 （仅适用于移动设备）"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:156
 msgid ":ref:`InputEventAction <class_InputEventAction>`"
-msgstr ""
+msgstr ":ref:`InputEventAction <class_InputEventAction>`"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:156
 msgid "SCREEN_ACTION"
-msgstr ""
+msgstr "SCREEN_ACTION"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:156
 msgid ""
 "Contains a generic action. These events are often generated by the "
 "programmer as feedback. (more on this below)"
-msgstr ""
+msgstr "包含一般动作。 这些事件通常由程序员作为反馈生成。 （以下更多内容）"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:162
 msgid "Actions"
-msgstr ""
+msgstr "Actions"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:164
 msgid ""
@@ -308,21 +360,25 @@ msgid ""
 "useful because they abstract the input device when programming the game "
 "logic. This allows for:"
 msgstr ""
+"InputEvent可能代表也可能不代表预定义的动作。 动作很有用，因为它们在编写游戏逻"
+"辑时抽象输入设备。 这允许："
 
 #: ../../docs/tutorials/inputs/inputevent.rst:168
 msgid ""
 "The same code to work on different devices with different inputs (e.g., "
 "keyboard on PC, Joypad on console)."
 msgstr ""
+"相同的代码可以在具有不同输入的不同设备上工作（例如，PC上的键盘，控制台上的"
+"Joypad）。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:170
 msgid "Input to be reconfigured at run-time."
-msgstr ""
+msgstr "输入要在运行时重新配置。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:172
 msgid ""
 "Actions can be created from the Project Settings menu in the Actions tab."
-msgstr ""
+msgstr "可以从“操作”选项卡的“项目设置”菜单中创建操作。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:175
 msgid ""
@@ -330,6 +386,9 @@ msgid ""
 "<class_InputEvent_is_action>`, :ref:`InputEvent.is_pressed() "
 "<class_InputEvent_is_pressed>` and :ref:`InputEvent <class_InputEvent>`."
 msgstr ""
+"任何事件都有以下方法：ref：`InputEvent.is_action（）"
+"<class_InputEvent_is_action>`，：ref：`InputEvent.is_pressed（）"
+"<class_InputEvent_is_pressed>`和：ref：`InputEvent <class_InputEvent>`。"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:178
 msgid ""
@@ -338,10 +397,13 @@ msgid ""
 "singleton has a method for this: :ref:`Input.parse_input_event() "
 "<class_input_parse_input_event>`. You would normally use it like this:"
 msgstr ""
+"或者，可能希望向游戏提供来自游戏代码的动作（这是检测手势的一个很好的例子）。 "
+"Input单例有一个方法:: ref：`Input.parse_input_event（）"
+"<class_input_parse_input_event>`。 你通常会这样使用它："
 
 #: ../../docs/tutorials/inputs/inputevent.rst:202
 msgid "InputMap"
-msgstr ""
+msgstr "InputMap"
 
 #: ../../docs/tutorials/inputs/inputevent.rst:204
 msgid ""
@@ -352,3 +414,7 @@ msgid ""
 "the project settings (project.godot). So any dynamic system of this type "
 "needs to store settings in the way the programmer best sees fit."
 msgstr ""
+"通常需要定制和重新映射来自代码的输入。 如果整个工作流依赖于操作，则：ref："
+"`InputMap <class_InputMap>`singleton非常适合在运行时重新分配或创建不同的操"
+"作。 此单例不会保存（必须手动修改），其状态从项目设置（project.godot）运行。 "
+"因此，这种类型的动态系统需要以程序员最适合的方式存储设置。"
