@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "A game UI with a health bar, energy bar, bomb and money counters"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-msgid "You will learn how to design game UI efficiently, and how to use Godot's Control nodes. This page focuses on the visual part: everything you do from the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
+msgid "You will learn how to design game UIs efficiently, and how to use Godot's Control nodes. This page focuses on the visual part: everything you do from the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
@@ -258,7 +258,7 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-msgid "To center the characters on the right, we'll use a ``CenterContainer``.  Add a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the Inspector, scroll down to the ``Size Flags`` category and click on the field to the right of the ``Vertical`` property, and check ``Expand``. Do the same for the ``Horizontal`` property. Finally drag and drop the Characters into the ``CenterContainer``. The Characters element will center automatically."
+msgid "To center the characters on the right, we'll use a ``CenterContainer``.  Add a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the Inspector, scroll down to the ``Size Flags`` category and click on the field to the right of the ``Vertical`` property, and check ``Expand`` in addition to ``Fill``. Do the same for the ``Horizontal`` property. Finally drag and drop the Characters into the ``CenterContainer``. The Characters element will center automatically."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
@@ -274,7 +274,7 @@ msgid "Place the new container between the other two nodes to retain the UI's la
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
-msgid "Now we grouped the menu options together, we can tell their container to expand to take as much vertical space as possible. Select the ``MenuOptions`` node. In the Inspector, scroll down to the ``Size Flags`` category. Click on the field to the right of the ``Vertical`` property, and check ``Expand``. The container expands to take all the available vertical space. But it respects its neighbors, the ``Logo`` and ``Version`` elements."
+msgid "Now we grouped the menu options together, we can tell their container to expand to take as much vertical space as possible. Select the ``MenuOptions`` node. In the Inspector, scroll down to the ``Size Flags`` category. Click on the field to the right of the ``Vertical`` property, and check ``Expand`` in addition to ``Fill``. The container expands to take all the available vertical space. But it respects its neighbors, the ``Logo`` and ``Version`` elements."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:252
@@ -302,7 +302,7 @@ msgid "Congratulations for getting there! You can download the `final menu <#>`_
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
-msgid "Responsive User Interface is all about making sure our UIs scale well on all screen types. TV screens and computer displays have different sizes and ratios. In Godot, we use containers to control the position and the size of UI elements."
+msgid "A responsive User Interface is all about making sure our UIs scale well on all screen types. TV screens and computer displays have different sizes and ratios. In Godot, we use containers to control the position and the size of UI elements."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284

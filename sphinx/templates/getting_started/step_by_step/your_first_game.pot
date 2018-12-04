@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-20 12:09+0100\n"
+"POT-Creation-Date: 2018-12-04 23:31+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,7 +161,7 @@ msgid "The ``_ready()`` function is called when a node enters the scene tree, wh
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:198
-msgid "Now we can use the ``_process()`` function to define what the player will do. ``_process()`` is called every frame, so we'll use it to update elements of our game which we expect will change often. Here we'll make it:"
+msgid "Now we can use the ``_process()`` function to define what the player will do. ``_process()`` is called every frame, so we'll use it to update elements of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:202
@@ -237,7 +237,7 @@ msgid "The boolean assignments in the code above are a common shorthand for prog
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:372
-msgid "Play the scene again and check that the animations are correct in each of the directions. When you're sure the movement is working correctly, add this line to ``_ready()`` so the player will be hidden when the game starts:"
+msgid "Play the scene again and check that the animations are correct in each of the directions. When you're sure the movement is working correctly, add this line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:387
@@ -381,7 +381,7 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:617
-msgid "Now add the following nodes as children of ``Main``, and name them as shown (values are in seconds):"
+msgid "Now, add the following nodes as children of ``Main``, and name them as shown (values are in seconds):"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:620
@@ -449,7 +449,7 @@ msgid "Main script"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
-msgid "Add a script to ``Main``. At the top of the script we use ``export (PackedScene)`` to allow us to choose the Mob scene we want to instance."
+msgid "Add a script to ``Main``. At the top of the script, we use ``export (PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
@@ -465,7 +465,7 @@ msgid "Now connect the ``timeout()`` signal of each of the Timer nodes (``StartT
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
-msgid "In ``_on_MobTimer_timeout()`` we will create a mob instance, pick a random starting location along the ``Path2D``, and set the mob in motion. The ``PathFollow2D`` node will automatically rotate as it follows the path, so we will use that to select the mob's direction as well as its position."
+msgid "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random starting location along the ``Path2D``, and set the mob in motion. The ``PathFollow2D`` node will automatically rotate as it follows the path, so we will use that to select the mob's direction as well as its position."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:788
