@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -207,17 +207,18 @@ msgstr "以下是可用效果的简短描述："
 
 #: ../../docs/tutorials/audio/audio_buses.rst:80
 msgid "Amplify"
-msgstr "放大"
+msgstr "Amplify"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:82
 msgid ""
 "It's the most basic effect. It changes the sound volume. Amplifying too much "
 "can make the sound clip, so be wary of that."
-msgstr "这是最基本的效果。 它会改变音量。 放大太多可以使声音剪辑，所以要小心。"
+msgstr ""
+"这是最基本的效果。 它会改变音量。 放大太多可以使声音被修剪，所以要小心。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:85
 msgid "BandLimit and BandPass"
-msgstr "BandLimit和BandPass"
+msgstr "BandLimit and BandPass"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:87
 msgid ""
@@ -229,7 +230,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:90
 msgid "Chorus"
-msgstr "合唱"
+msgstr "Chorus"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:92
 msgid ""
@@ -241,7 +242,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:95
 msgid "Compressor"
-msgstr "压缩机"
+msgstr "Compressor"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:97
 msgid ""
@@ -293,7 +294,7 @@ msgstr "有很多关于压缩器的参考书目，Godot的实现是相当标准�
 
 #: ../../docs/tutorials/audio/audio_buses.rst:110
 msgid "Delay"
-msgstr "延迟"
+msgstr "Delay"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:112
 msgid ""
@@ -306,7 +307,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:115
 msgid "Distortion"
-msgstr "失真"
+msgstr "Distortion"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:117
 msgid ""
@@ -350,7 +351,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:133
 msgid "Limiter"
-msgstr "限制器"
+msgstr "Limiter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:135
 msgid ""
@@ -376,7 +377,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:145
 msgid "NotchFilter"
-msgstr "陷波滤波器"
+msgstr "NotchFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:147
 msgid ""
@@ -386,7 +387,7 @@ msgstr "与BandPassFilter相反，它在给定的 *Cutoff* 处从频谱中移除
 
 #: ../../docs/tutorials/audio/audio_buses.rst:150
 msgid "Panner"
-msgstr "声像"
+msgstr "Panner"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:152
 msgid "This is a simple helper to pan sound left or right."
@@ -394,7 +395,7 @@ msgstr "这是一个向左或向右平移声音的简单帮手。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:155
 msgid "Phaser"
-msgstr "移相器"
+msgstr "Phaser"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:157
 msgid ""
@@ -421,7 +422,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:166
 msgid "Reverb"
-msgstr "混响"
+msgstr "Reverb"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:168
 msgid ""
@@ -432,8 +433,8 @@ msgid ""
 "to all sounds."
 msgstr ""
 "混响模拟不同大小的房间。 它具有可调节的参数，可以调整以获得特定房间的声音。 "
-"混响通常从以下输出：ref：`Areas <class_Area>`（参见：ref：`doc_audio-streams`"
-"教程，寻找“Reverb bus”部分），或者对所有声音应用腔室感觉。"
+"混响通常从以下输出 ：ref：`Areas <class_Area>` （参见 ：ref：`doc_audio-"
+"streams` 教程，寻找“Reverb bus”部分），或者对所有声音应用腔室感觉。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:172
 msgid "StereoEnhance"

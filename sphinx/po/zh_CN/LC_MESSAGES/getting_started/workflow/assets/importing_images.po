@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,8 @@ msgid "Importing images"
 msgstr "导入图像"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
-msgid "Why importing them?"
+#, fuzzy
+msgid "Why import them?"
 msgstr "为什么要导入它们？"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
@@ -220,21 +221,23 @@ msgid "HDR Mode"
 msgstr "HDR 模式"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:72
+#, fuzzy
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
-"mostly useful as high dynamic range equirectancular panorama skys (the "
-"internet has plenty of if you look for them), which replace Cubemaps in "
-"Godot 2.x. Modern PCs support the BC6H VRAM format, but there are still "
-"plenty that do not."
+"mostly useful as high dynamic range equirectangular panorama skies (the "
+"internet has plenty if you search for them), which replace Cubemaps in Godot "
+"2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
+"that do not."
 msgstr ""
 "Godot支持高动态范围图像纹理（如 .HDR或 .EXR）。 这些图像作为高动态范围 EPR 投"
 "影全景天空是非常有用的（如果你试着去找，互联网上有很多），它取代了Godot 2.x"
 "的 Cubemaps 。 现代个人电脑支持 BC6H VRAM 格式，但仍有很多电脑不支持。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
+#, fuzzy
 msgid ""
-"If you want Godot to ensure full compatibility in for kind of textures, "
-"enable the \"Force RGBE\" option."
+"If you want Godot to ensure full compatibility in terms of the kind of "
+"textures, enable the \"Force RGBE\" option."
 msgstr "如果您希望 Godot 确保完全兼容各种纹理，请启用“强制 RGBE ”选项。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
@@ -242,12 +245,13 @@ msgid "Normal Map"
 msgstr "法线贴图"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
+#, fuzzy
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
 "required. Given regular texture compression algorithms produce artifacts "
 "that don't look that nice in normal maps, the RGTC compression format is the "
 "best fit for this data. Forcing this option to \"Enabled\" will make Godot "
-"import the image as RGTC compressed. By default, it's set to \"Detect\" "
+"import the image as RGTC compressed. By default, it's set to \"Detect\", "
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
@@ -288,8 +292,9 @@ msgid "Filter"
 msgstr "过滤器"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:100
+#, fuzzy
 msgid ""
-"When pixels become larger than the screen pixels, this options enable linear "
+"When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
@@ -327,8 +332,9 @@ msgstr ""
 "在制作手机游戏和应用程序时，希望完全兼容并使用 mipmap，请牢记以上内容。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
+#, fuzzy
 msgid ""
-"When doing 3D, mipmap should be turned on as this also improves performance "
+"When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
 "在 3D 模式下，应该打开 mipmap，因为这也会提高性能（更小尺寸的纹理用于更远的对"
@@ -339,9 +345,10 @@ msgid "Anisotropic"
 msgstr "各向异性"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:118
+#, fuzzy
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
-"them have more detail by reducing blurryness."
+"them have more detail by reducing blurriness."
 msgstr ""
 "当纹理几乎与视图平行时（如地板），该选项通过减少模糊程度使它们具有更多细节。"
 
@@ -374,10 +381,11 @@ msgid "Fix Alpha Border"
 msgstr "修复 Alpha 边框"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:134
+#, fuzzy
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
-"exporting images from Photoshop and the likes."
+"exporting images from Photoshop and the like."
 msgstr ""
 "这将周围相同颜色的像素从透明转换为非透明。 它有助于减轻从 Photoshop 等导出图"
 "像时的轮廓效果。"
@@ -403,14 +411,16 @@ msgstr ""
 "请记住，在画布物体上使用预乘 ALPHA 混合模式需要创建一个材质。"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:148
-msgid "HDR as SRGB"
+#, fuzzy
+msgid "HDR as sRGB"
 msgstr "HDR 转为 SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#, fuzzy
 msgid ""
-"Some few HDR files are broken and contain SRGB color data. It is advised to "
-"not use them but, in the worst case, toggling this option on will make them "
-"look right."
+"A few HDR files are broken and contain sRGB color data. It is advised not to "
+"use them, but, in the worst-case scenario, toggling this option on will make "
+"them look right."
 msgstr ""
 "一些 HDR 文件可能被破坏并包含 SRGB 颜色数据。 一般不建议使用它们，但在最坏的"
 "情况下，切换此选项将使它们看起来正确。"
@@ -420,8 +430,9 @@ msgid "Invert Color"
 msgstr "反转颜色"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
+#, fuzzy
 msgid ""
-"Reverses the image's color. This is useful for example to convert a height "
+"Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""

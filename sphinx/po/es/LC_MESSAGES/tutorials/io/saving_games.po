@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,7 @@ msgid ""
 "data out of the file as well."
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:162
+#: ../../docs/tutorials/io/saving_games.rst:166
 msgid ""
 "Game saved! Loading is fairly simple as well. For that we'll read each line, "
 "use parse_json() to read it back to a dict, and then iterate over the dict "
@@ -110,18 +110,18 @@ msgid ""
 "the filename and parent values to achieve that. Here is our load function:"
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:242
+#: ../../docs/tutorials/io/saving_games.rst:254
 msgid ""
 "And now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
 "depending on what it needs to save."
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:247
+#: ../../docs/tutorials/io/saving_games.rst:259
 msgid "Some notes"
 msgstr ""
 
-#: ../../docs/tutorials/io/saving_games.rst:249
+#: ../../docs/tutorials/io/saving_games.rst:261
 msgid ""
 "We may have glossed over a step, but setting the game state to one fit to "
 "start loading data can be complicated. This step will need to be heavily "
@@ -132,7 +132,7 @@ msgstr ""
 "complicado. Este paso tendrá que ser cuidadosamente personalizado en base a "
 "las necesidades de un proyecto individual."
 
-#: ../../docs/tutorials/io/saving_games.rst:253
+#: ../../docs/tutorials/io/saving_games.rst:265
 msgid ""
 "This implementation assumes no Persist objects are children of other Persist "
 "objects. Doing so would create invalid paths. If this is one of the needs of "

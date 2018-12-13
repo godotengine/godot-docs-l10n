@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,15 +77,15 @@ msgstr "**桌面端：** Windows，macOS，Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
-msgstr "**移动端：**Android，iOS，Windows Phone，Tizen"
+msgstr "**移动端：** Android，iOS，Windows Phone，Tizen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Web:** WebAssembly or asm.js"
-msgstr "**网页：**WebAssembly 或 asm.js"
+msgstr "**网页：** WebAssembly 或 asm.js"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
-msgstr "游戏主机: PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
+msgstr "**游戏主机: ** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid ""
@@ -101,19 +101,19 @@ msgstr "**电视端:** Android TV, Samsung SMART TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr "**桌面端：**Windows，macOS，X11"
+msgstr "**桌面端：** Windows，macOS，X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Mobile:** Android, iOS"
-msgstr "**移动端：**Android，iOS"
+msgstr "**移动端：** Android，iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Web:** WebAssembly"
-msgstr "**网页：**WebAssembly"
+msgstr "**网页：** WebAssembly"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid "**Console:** See :ref:`doc_consoles`"
-msgstr "**控制台:** 见 :ref:`doc_consoles`"
+msgstr "**游戏主机:** 见 :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
 msgid "**VR:** Oculus Rift, SteamVR"
@@ -202,7 +202,6 @@ msgid ""
 msgstr "请注意，Godot编辑器允许您任意将各个面板停靠在场景编辑器的一侧。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:57
-#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
@@ -312,7 +311,6 @@ msgstr ""
 "本将它们链接在一起。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:95
-#, fuzzy
 msgid ""
 "Godot's scene system is different: it actually consists of a tree made of "
 "nodes. Each node serves a purpose: Sprite, Mesh, Light, etc. Basically, this "
@@ -341,7 +339,7 @@ msgstr "金币"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:104
 msgid "The player"
-msgstr "玩家"
+msgstr "游戏角色"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:105
 msgid "The enemies"
@@ -356,10 +354,11 @@ msgid ""
 "the level: For example, you'd add a BoxCollider2D to all the elements of the "
 "scene so that they can collide. This principle is different in Godot."
 msgstr ""
-"在Unity中，你可以将所有 GameObjects 放入场景中：玩家，敌人的多个实例，组成关"
-"卡各个地方的砖块，还有放在关卡中的金币的多个实例。然后，你可以将各种组件添加"
-"到每个元素以将它们链接起来并添加关卡中的逻辑：例如，你应该会为场景的所有元素"
-"各添加一个BoxCollider2D，以便它们可以发生碰撞。这个原则在 Godot中是不同的。"
+"在Unity中，你可以将所有 GameObjects 放入场景中：游戏角色，敌人的多个实例，组"
+"成关卡各个地方的砖块，还有放在关卡中的金币的多个实例。然后，你可以将各种组件"
+"添加到每个元素以将它们链接起来并添加关卡中的逻辑：例如，你应该会为场景的所有"
+"元素各添加一个BoxCollider2D，以便它们可以发生碰撞。这个原则在 Godot中是不同"
+"的。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:113
 msgid ""
@@ -435,10 +434,10 @@ msgid ""
 "collision types nodes, depending on the usage (see the :ref:`Physics "
 "introduction <doc_physics_introduction>`)."
 msgstr ""
-"正如你所看到的，每个场景由一棵树所组成。节点的属性也是如此：你不必像Unity一样"
-"*添加*一个碰撞组件到一个节点以使得它可以碰撞。相反，您要将此节点设置为一个具"
-"有碰撞属性的新特定节点的* 子节点 *。Godot具有各种碰撞类型节点，具体取决于使用"
-"情况（请参阅： ref：`Physics introduction <doc_physics_introduction>` 。"
+"正如你所看到的，每个场景由一棵树所组成。节点的属性也是如此：你不必像Unity一"
+"样 *添加* 一个碰撞组件到一个节点以使得它可以碰撞。相反，您要将此节点设置为一"
+"个具有碰撞属性的新特定节点的 *子节点* 。Godot具有各种碰撞类型节点，具体取决于"
+"使用情况（请参阅 :ref:`Physics introduction <doc_physics_introduction>`）。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
 msgid ""
@@ -459,7 +458,6 @@ msgstr ""
 "对象”的节点，但它们为子节点提供了自己本身的功能：这就是继承。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:148
-#, fuzzy
 msgid ""
 "Second, it allows the extraction of a subtree of the scene to make it a "
 "scene of its own, which answers the second and third questions: even if a "
@@ -529,7 +527,6 @@ msgstr ""
 "的预制体的每个实例都有其自己的存在，但它们都具有与预制体所定义的相同的属性。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:177
-#, fuzzy
 msgid ""
 "Godot does not provide prefabs as such, but this functionality is here, "
 "again, filled thanks to its scene system: As we saw, the scene system is "
@@ -688,8 +685,8 @@ msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
 msgstr ""
-"隐式: 如果类型是可序列化类型 (``Dictionary 字典``不是可序列化的), 则类中的所"
-"有公共字段都将自动序列化。"
+"隐式: 如果类型是可序列化类型 ( ``字典`` 是不可序列化的), 则类中的所有公共字段"
+"都将自动序列化。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid ""
@@ -708,8 +705,8 @@ msgid ""
 msgstr ""
 "Godot还具有内置脚本序列化系统,，但它仅显式工作。您可以使用导出关键字序列化任"
 "何可序列化类型 ( :ref:`built-in and various engine types "
-"<doc_binary_serialization_api>`  ，包括类 _ array 和类 _ dicary)。此工作流在`"
-"这里 <../scripting/gdscript/gdscript_basics.html#exports>`_进行了说明。"
+"<doc_binary_serialization_api>` ，包括类 _ array 和类 _ dicary)。此工作流在 `"
+"这里 <../scripting/gdscript/gdscript_basics.html#exports>`_ 进行了说明。"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:254
 msgid ""

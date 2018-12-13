@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgstr "要向第一个人物角色添加三个武器，每个武器使用不同
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:18
 msgid "A knife (using an :ref:`Area <class_Area>`)"
-msgstr "一把刀（使用：ref：`Area <class_Area>`）"
+msgstr "一把刀（使用 ：ref：`Area <class_Area>` ）"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:19
 msgid "A pistol (Bullet scenes)"
@@ -59,7 +59,7 @@ msgstr "手枪（子弹场景）"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:20
 msgid "A rifle (using a :ref:`Raycast <class_Raycast>`)"
-msgstr "步枪（使用：ref：`Raycast <class_Raycast>`）"
+msgstr "步枪（使用 ：ref：`Raycast <class_Raycast>` ）"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:21
 msgid "To add two different types of grenades to the first person character:"
@@ -76,7 +76,7 @@ msgstr "粘手榴弹"
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:24
 msgid ""
 "To add the ability to grab and throw :ref:`RigidBody <class_RigidBody>` nodes"
-msgstr "添加抓取和抛出的能力：ref：`RigidBody <class_RigidBody>`节点"
+msgstr "添加抓取和抛出的能力 ：ref：`RigidBody <class_RigidBody>` 节点"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:25
 msgid "To add joypad input for the player"
@@ -100,7 +100,7 @@ msgstr "添加自动炮塔"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:30
 msgid "That can fire using bullet objects or a :ref:`Raycast <class_Raycast>`"
-msgstr "这可以使用bullet对象或：ref：`Raycast <class_Raycast>`来触发"
+msgstr "这可以使用bullet对象或 ：ref：`Raycast <class_Raycast>` 来触发"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:31
 msgid "To add targets that break when they've taken enough damage"
@@ -132,8 +132,8 @@ msgid ""
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development **before** going through this tutorial series."
 msgstr ""
-"虽然这个教程可以由初学者完成，但强烈建议完成：ref：`doc_your_first_game`，如"
-"果你是新手Godot和/或游戏开发**之前**通过本教程系列。"
+"虽然这个教程可以由初学者完成，但强烈建议完成 ：ref：`doc_your_first_game` ，"
+"如果你是新手Godot和/或游戏开发 **之前** 通过本教程系列。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:43
 msgid ""
@@ -353,7 +353,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:131
 msgid "See :ref:`using transforms <doc_using_transforms>` for more information"
-msgstr "有关更多信息，请参阅：ref：`使用转换<doc_using_transforms>`"
+msgstr "有关更多信息，请参阅 ：ref：`使用转换<doc_using_transforms>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:135
 msgid "Attach a new script to the ``Player`` node and call it ``Player.gd``."
@@ -421,7 +421,7 @@ msgstr "``GRAVITY``：强大的重力让我们失望。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:263
 msgid "``vel``: Our :ref:`KinematicBody <class_KinematicBody>`'s velocity."
-msgstr "``vel``：我们的：ref：`KinematicBody <class_KinematicBody>`的速度。"
+msgstr "``vel``：我们的 ：ref：`KinematicBody <class_KinematicBody>` 的速度。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:264
 msgid ""
@@ -453,20 +453,20 @@ msgid ""
 "``MAX_SLOPE_ANGLE``: The steepest angle our :ref:`KinematicBody "
 "<class_KinematicBody>` will consider as a 'floor'."
 msgstr ""
-"``MAX_SLOPE_ANGLE``：我们最陡的角度：ref：`KinematicBody "
-"<class_KinematicBody>`将被视为'floor'。"
+"``MAX_SLOPE_ANGLE``：我们最陡的角度 ：ref：`KinematicBody "
+"<class_KinematicBody>` 将被视为'floor'。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:269
 msgid "``camera``: The :ref:`Camera <class_Camera>` node."
-msgstr "``camera``：：ref：`Camera <class_Camera>`节点。"
+msgstr "``camera``： ：ref：`Camera <class_Camera>`节点。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:270
 msgid ""
 "``rotation_helper``: A :ref:`Spatial <class_Spatial>` node holding "
 "everything we want to rotate on the X axis (up and down)."
 msgstr ""
-"``rotation_helper``：A：ref：`Spatial <class_Spatial>`节点，包含我们想要在X轴"
-"上旋转的所有内容（向上和向下）。"
+"``rotation_helper``：一个 ：ref：`Spatial <class_Spatial>` 节点，包含我们想要"
+"在X轴上旋转的所有内容（向上和向下）。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:271
 msgid ""
@@ -549,8 +549,8 @@ msgid ""
 "will only be using ``MOUSE_MODE_CAPTURED`` and ``MOUSE_MODE_VISIBLE`` in "
 "this tutorial series."
 msgstr ""
-"请参阅：ref：`输入文档<class_Input>`用于各种鼠标模式。 我们将只在本教程系列中"
-"使用``MOUSE_MODE_CAPTURED``和``MOUSE_MODE_VISIBLE``。"
+"请参阅 ：ref：`输入文档<class_Input>` 用于各种鼠标模式。 我们将只在本教程系列"
+"中使用 ``MOUSE_MODE_CAPTURED`` 和 ``MOUSE_MODE_VISIBLE`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:302
 msgid "Next let's take a look at ``_physics_process``:"
@@ -579,8 +579,8 @@ msgid ""
 "ref:`KinematicBody <class_KinematicBody>` so it can move through the game "
 "world."
 msgstr ""
-"``process_movement``是我们将所有必要的数据发送到：ref：`KinematicBody "
-"<class_KinematicBody>`所以它可以在游戏世界中移动。"
+"``process_movement`` 是我们将所有必要的数据发送到 ：ref：`KinematicBody "
+"<class_KinematicBody>` 所以它可以在游戏世界中移动。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:314
 msgid "Let's look at ``process_input`` next:"
@@ -645,8 +645,8 @@ msgid ""
 "<class_Spatial>` based node, a gizmo pops up. Each of the arrows points "
 "using world space directions by default."
 msgstr ""
-"当你打开Godot编辑器并选择一个：ref：`Spatial <class_Spatial>`基于节点时，会弹"
-"出一个Gizmo。 默认情况下，每个箭头都使用世界空间方向指向。"
+"当你打开Godot编辑器并选择一个 ：ref：`Spatial <class_Spatial>` 基于节点时，会"
+"弹出一个Gizmo。 默认情况下，每个箭头都使用世界空间方向指向。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:339
 msgid ""
@@ -660,8 +660,8 @@ msgid ""
 "directional vectors. We can define a few :ref:`Vector3 <class_Vector3>` "
 "variables and input the values pointing in each direction."
 msgstr ""
-"请注意我们如何不需要进行任何计算来获得世界空间方向向量。 我们可以定义一些："
-"ref：`Vector3 <class_Vector3>`变量并输入指向每个方向的值。"
+"请注意我们如何不需要进行任何计算来获得世界空间方向向量。 我们可以定义一些 ："
+"ref：`Vector3 <class_Vector3>` 变量并输入指向每个方向的值。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:355
 msgid "Here is what world space looks like in 2D:"
@@ -725,9 +725,9 @@ msgid ""
 "its :ref:`Transform <class_Transform>`, so then we can get the :ref:`Basis "
 "<class_Basis>` from the :ref:`Transform <class_Transform>`."
 msgstr ""
-"要获得：ref：`Spatial <class_Spatial>`节点的局部空间，我们需要得到它：ref："
-"`Transform <class_Transform>`，这样我们就可以从：ref得到：ref：`Basis "
-"<class_Basis>` ：`Transform <class_Transform>`。"
+"要获得 ：ref：`Spatial <class_Spatial>` 节点的局部空间，我们需要得到它 ："
+"ref：`Transform <class_Transform>` ，这样我们就可以从 :ref:`Transform "
+"<class_Transform>` 得到 ：ref：`Basis <class_Basis>` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:384
 msgid ""
@@ -735,15 +735,16 @@ msgid ""
 "Each of those vectors point towards each of the local space vectors coming "
 "from that object."
 msgstr ""
-"每个：ref：`Basis <class_Basis>`有三个向量：``X``，``Y``和``Z``。 这些向量中"
-"的每一个指向来自该对象的每个局部空间向量。"
+"每个 ：ref：`Basis <class_Basis>` 有三个向量： ``X`` ， ``Y`` 和 ``Z``。 这些"
+"向量中的每一个指向来自该对象的每个局部空间向量。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:387
 msgid ""
 "To use the :ref:`Spatial <class_Spatial>` node's local directional vectors, "
 "we use this code:"
 msgstr ""
-"要使用：ref：`Spatial <class_Spatial>`节点的本地方向向量，我们使用以下代码："
+"要使用 ：ref：`Spatial <class_Spatial>` 节点的本地方向向量，我们使用以下代"
+"码："
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:400
 msgid "Here is what local space looks like in 2D:"
@@ -991,8 +992,8 @@ msgid ""
 "`InputEventMouseMotion <class_InputEventMouseMotion>` event. We also want to "
 "check if the cursor is captured, as we do not want to rotate if it is not."
 msgstr ""
-"首先，我们确保我们正在处理的事件是：ref：`InputEventMouseMotion "
-"<class_InputEventMouseMotion>`event。 我们还想检查光标是否被捕获，因为如果不"
+"首先，我们确保我们正在处理的事件是 ：ref：`InputEventMouseMotion "
+"<class_InputEventMouseMotion>` event。 我们还想检查光标是否被捕获，因为如果不"
 "是，我们不想旋转。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:497
@@ -1000,8 +1001,8 @@ msgid ""
 "See :ref:`Mouse and input coordinates <doc_mouse_and_input_coordinates>` for "
 "a list of possible input events."
 msgstr ""
-"请参阅：ref：`鼠标和输入坐标<doc_mouse_and_input_coordinates>`以获取可能的输"
-"入事件列表。"
+"请参阅 ：ref：`鼠标和输入坐标<doc_mouse_and_input_coordinates>` 以获取可能的"
+"输入事件列表。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:500
 msgid ""
@@ -1018,8 +1019,8 @@ msgid ""
 "relative mouse motion's ``Y`` value, provided by :ref:`InputEventMouseMotion "
 "<class_InputEventMouseMotion>`."
 msgstr ""
-"首先，我们使用相对鼠标运动的``Y``值旋转``X``轴上的``rotation_helper``节点，提"
-"供者：ref：`InputEventMouseMotion <class_InputEventMouseMotion>`。"
+"首先，我们使用相对鼠标运动的 ``Y`` 值旋转 ``X`` 轴上的``rotation_helper`` 节"
+"点，提供者 ：ref：`InputEventMouseMotion <class_InputEventMouseMotion>`。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:506
 msgid ""
@@ -1035,8 +1036,8 @@ msgid ""
 "where mouse movement going up and down is ``1`` and ``-1`` respectively. "
 "Right and Left movement is ``1`` and ``-1`` respectively."
 msgstr ""
-"Godot将相对鼠标运动转换为：ref：`Vector2 <class_Vector2>`其中鼠标上下移动分别"
-"为“1”和“-1”。 左右移动分别是“1”和“-1”。"
+"Godot将相对鼠标运动转换为 ：ref：`Vector2 <class_Vector2>` 其中鼠标上下移动分"
+"别为“1”和“-1”。 左右移动分别是“1”和“-1”。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:512
 msgid ""
@@ -1061,7 +1062,7 @@ msgid ""
 "see :ref:`using transforms <doc_using_transforms>` for more information on "
 "rotating transforms."
 msgstr ""
-"请参阅：ref：`使用变换<doc_using_transforms>`获取有关旋转变换的更多信息。"
+"请参阅 ：ref：`使用变换<doc_using_transforms>` 获取有关旋转变换的更多信息。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:523
 msgid ""
@@ -1229,7 +1230,7 @@ msgid ""
 "In :ref:`doc_fps_tutorial_part_two` we will add some guns to our player "
 "character."
 msgstr ""
-"在：ref：`doc_fps_tutorial_part_two`我们将为我们的玩家角色添加一些枪支。"
+"在 ：ref：`doc_fps_tutorial_part_two` 我们将为我们的玩家角色添加一些枪支。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_one.rst:636
 msgid ""

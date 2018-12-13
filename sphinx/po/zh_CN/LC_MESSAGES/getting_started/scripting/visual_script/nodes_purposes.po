@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,13 +83,15 @@ msgstr ""
 "制作 *连接* ：有两种类型的 *端口* ： *顺序* 和 *数据* 。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
+#, fuzzy
 msgid ""
 "*Sequence Ports* indicate the order in which operations are executed. "
 "Typically when a *Node* is done processing, it will go to the next node from "
-"one of the ports at the right. If nothing is connected the function may end, "
-"or another output *Sequence Port* might be tried (this depends on the node). "
-"Thanks to this, you can follow the logic flow within a function by following "
-"the white lines. Not every *Node* has *Sequence Ports*. In fact, most do not."
+"one of the ports at the right. If nothing is connected, the function may "
+"end, or another output *Sequence Port* might be tried (this depends on the "
+"node). Thanks to this, you can follow the logic flow within a function by "
+"following the white lines. Not every *Node* has *Sequence Ports*. In fact, "
+"most do not."
 msgstr ""
 "*顺序端口* 表示执行操作的顺序。 通常当 *节点* 完成处理时，它将从右边的一个端"
 "口进入下一个节点。 如果没有连接，则该函数可能结束，或者可能尝试另一个输出 *顺"
@@ -137,10 +139,11 @@ msgstr ""
 "序端口*，则通过拖离 *输出* 来实现。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
+#, fuzzy
 msgid ""
-"This may seem strange at the beginning, but it happens because *Data Ports* "
-"are 1:N (A single output port can connect to many inputs), while *Sequence "
-"Ports* are N:1 (Many sequence outputs can be connected to a single input)."
+"This may seem strange at first, but it happens because *Data Ports* are 1:N "
+"(A single output port can connect to many inputs), while *Sequence Ports* "
+"are N:1 (Many sequence outputs can be connected to a single input)."
 msgstr ""
 "这在开始时可能看起来很奇怪，但它发生是因为 *数据端口* 是1:N（单个输出端口可以"
 "连接到许多输入），而 *顺序端口* 是 N:1（许多顺序输出可以连接到单个输入）。"
@@ -195,16 +198,16 @@ msgid ""
 msgstr ""
 "虽然在大多数情况下需要访问属性（下面有更多内容），但有时 *调用方法* 也很有"
 "用。 方法对对象执行特定操作。 在上述情况下，鼠标指针可以扭曲到控件的本地坐标"
-"中的位置。 另一个常见用例是将节点排队以进行删除，这是使用 * queue_free * 方法"
-"完成的。"
+"中的位置。 另一个常见用例是将节点排队以进行删除，这是使用 *queue_free* 方法完"
+"成的。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:109
 msgid ""
 "Care must be taken that this only works if the scene being edited contains "
 "your *Visual Script* in one of the nodes! Otherwise, a warning will be shown."
 msgstr ""
-"必须注意，这只适用于正在编辑的场景在其中一个节点中包含 * Visual Script * 的情"
-"况！ 否则，将显示警告。"
+"必须注意，这只适用于正在编辑的场景在其中一个节点中包含 *可视化脚本* 的情况！ "
+"否则，将显示警告。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
 msgid "Accessing scene node properties"
@@ -217,9 +220,9 @@ msgid ""
 "Name* of the property you want to edit (hint, *not* the value!) and drag it "
 "to the canvas:"
 msgstr ""
-"这是在Visual Scripting中编辑 * Scene Nodes * 的最常用方法。 从 *场景树* 中选"
-"择 *场景节点* ，转到检查器，找到要编辑的属性的名称（提示， *不* 是值！）并将"
-"其拖到画布上："
+"这是在可视化脚本中编辑 *场景节点* 的最常用方法。 从 *场景树* 中选择 *场景节点"
+"* ，转到检查器，找到要编辑的属性的名称（提示， *不* 是值！）并将其拖到画布"
+"上："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:120
 msgid ""
@@ -232,8 +235,8 @@ msgid ""
 "If instead reading this value is desired, drag the node again but hold the "
 "*Control* key (or Command on Mac). This will create a getter:"
 msgstr ""
-"如果需要读取此值，请再次拖动节点，但按住 * Control * 键（或Mac上的"
-"Command）。 这将创建一个getter："
+"如果需要读取此值，请再次拖动节点，但按住 *Control* 键（或Mac上的Command）。 "
+"这将创建一个getter："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:127
 msgid "In this case, the value can be read from a *Data Port*."
@@ -264,12 +267,13 @@ msgid "Right-clicking the variable allows you to configure its properties:"
 msgstr "右键单击该变量可以配置其属性："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
+#, fuzzy
 msgid ""
 "As it can be seen above, the type and initial value of the variable can be "
-"changed, as well as some property hints. Ticking the \"Export\" options "
-"makes the variable visible in the Inspector when selecting the node. This "
-"also makes it available to other scripts via the method described in the "
-"previous step."
+"changed, as well as some property hints. Ticking the \"Export\" option makes "
+"the variable visible in the Inspector when selecting the node. This also "
+"makes it available to other scripts via the method described in the previous "
+"step."
 msgstr ""
 "如上所示，可以更改变量的类型和初始值，以及一些属性提示。 选择“导出”选项会在选"
 "择节点时使检查器中的变量可见。 这也可以通过上一步中描述的方法将其提供给其他脚"
@@ -299,13 +303,16 @@ msgstr ""
 "一步中的变量相同的步骤："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
+#, fuzzy
 msgid ""
-"A signal can also be edited via right-click menu to customize its arguments:"
+"A signal can also be edited via the right-click menu to customize its "
+"arguments:"
 msgstr "也可以通过右键单击菜单编辑信号以自定义其参数："
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
+#, fuzzy
 msgid ""
-"The signal you have created will appear in the Inspector along with the "
+"The signal you have created will appear in the Inspector, along with the "
 "built-in node signals. This allows you to connect it from another script "
 "from another *Scene Node*:"
 msgstr ""
@@ -373,9 +380,10 @@ msgstr ""
 "它们是整数或浮点数。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
+#, fuzzy
 msgid ""
-"The first one is \"Constant\" which allows you to select any value of any "
-"type as constant, from an integer (42) to a String (\"Hello!\"). In general "
+"The first one is \"Constant\", which allows you to select any value of any "
+"type as constant, from an integer (42) to a String (\"Hello!\"). In general, "
 "this node is not used that often because of default input values in *Data "
 "Ports*, but it's good to know it exists."
 msgstr ""
@@ -393,9 +401,10 @@ msgstr ""
 "找到一些有用的常量来引用键名，操纵杆或鼠标按钮等。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
+#, fuzzy
 msgid ""
-"The third one is MathConstant, which provides typical mathematical constants "
-"such as PI, E, etc."
+"The third one is MathConstant, which provides typical mathematical "
+"constants, such as PI, E, etc."
 msgstr "第三个是MathConstant，它提供典型的数学常数，如PI，E等。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
@@ -437,10 +446,11 @@ msgid "Engine Singleton"
 msgstr "引擎单例"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
+#, fuzzy
 msgid ""
 "Engine singletons are global interfaces (meaning they can be accessed "
-"without a reference, unlike Scene Nodes, they are always available). They "
-"have several purposes, but in general they are useful for low level access "
+"without a reference; unlike Scene Nodes, they are always available). They "
+"have several purposes, but in general, they are useful for low-level access "
 "or OS-related access."
 msgstr ""
 "引擎单例是全局接口（意味着它们可以在没有引用的情况下访问，与场景节点不同，它"
@@ -506,19 +516,21 @@ msgid "SceneTree"
 msgstr "场景树"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
+#, fuzzy
 msgid ""
 "This node is similar to the Singleton node because it references the "
 "SceneTree, which contains the active scene. SceneTree, however, only works "
 "when the node is sitting in the scene and active, otherwise accessing it "
-"will return as an error."
+"will return an error."
 msgstr ""
 "此节点类似于Singleton节点，因为它引用包含活动场景的SceneTree。 但是，"
 "SceneTree仅在节点位于场景中并且处于活动状态时才起作用，否则访问它将作为错误返"
 "回。"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
+#, fuzzy
 msgid ""
-"SceneTree allows for many low level things, like setting stretch options, "
+"SceneTree allows for many low-level things, like setting stretch options, "
 "calling groups, make timers, or even load another scene. It's a good class "
 "to get familiar with."
 msgstr ""
@@ -680,7 +692,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
 msgid "Functions"
-msgstr "Functions"
+msgstr "函数"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:393
 msgid ""
@@ -695,8 +707,9 @@ msgid "Built-In"
 msgstr "内置"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
+#, fuzzy
 msgid ""
-"There is a list of built in helpers. The list is almost identical to the one "
+"There is a list of built-in helpers. The list is almost identical to the one "
 "from GDScript (@TODO, link to gdscript methods?). Most of them are "
 "mathematical functions, but others can be useful helpers. Make sure to take "
 "a look at the list at some point."
@@ -823,12 +836,13 @@ msgid "Operators"
 msgstr "运算符"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
+#, fuzzy
 msgid ""
-"These are mostly generic operators such as addition, multiplication, "
+"These are mostly generic operators, such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
-"error in run-time if the types fed do not match for the operator). It is "
-"always recommended to set the right type for operators to catch errors "
-"faster and make the graph easier to read."
+"throw an error at run-time if the types fed do not match those expected by "
+"the operator). It is always recommended to set the right type for operators "
+"to catch errors faster and make the graph easier to read."
 msgstr ""
 "这些操作符主要是通用的操作符，如加法、乘法、比较等。默认情况下，这些操作符主"
 "要接受任何数据类型（如果输入的类型与操作符不匹配，则会在运行时出错）。建议始"

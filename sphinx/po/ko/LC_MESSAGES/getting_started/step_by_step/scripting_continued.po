@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,9 +135,10 @@ msgstr ""
 "튼의 UI에서 시작합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
+#, fuzzy
 msgid ""
-"And the second way is from code. One example would be to tag scenes which "
-"are enemies:"
+"And the second way is from code. One example would be to tag nodes which are "
+"enemies:"
 msgstr ""
 "두 번째 방법은 코드로 시작합니다. 예를 들어 적으로 쓰는 씬에 태그를 지정할 "
 "수 있습니다:"
@@ -317,11 +318,11 @@ msgstr ""
 "의 인스턴스를 생성할 수 있다는 것입니다. 이 기능은 특히 활성화된 씬에서 여러 "
 "적, 글머리 기호 및 다른 도면 요소를 신속하게 인스턴스 하는 데 유용합니다."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:387
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
 msgid "Register scripts as classes"
 msgstr "클래스로 스크립트를 등록하기"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:391
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
@@ -331,7 +332,7 @@ msgstr ""
 "갖고 있습니다. 기본적으로, 당신은 파일을 직접 불러와서 이름이 없는 스크립트"
 "에 액세스 할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:393
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:395
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
@@ -343,11 +344,11 @@ msgstr ""
 "해 아이콘으로도 사용할 수 있습니다. 그런 뒤 노드나 리소스 생성 대화 상자에서 "
 "당신의 새 타입을 찾으실 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:415
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid "In Godot 3.1:"
 msgstr "Godot 3.1에서는:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:419
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
@@ -355,6 +356,6 @@ msgstr ""
 "오직 GDScript와 NativeScript만, 즉, C++와 다른 GDNative의 영향을 받는 언어"
 "만, 스크립트로 등록이 가능합니다."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:418
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:420
 msgid "Only GDScript creates global variables for each named script."
 msgstr "오직 GDScript만 각 이름이 있는 스크립트에 전역 변수를 만듭니다."

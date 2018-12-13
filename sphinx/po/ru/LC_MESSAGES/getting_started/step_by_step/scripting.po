@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,16 +37,14 @@ msgstr ""
 "скриптовые языки!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
-"Это здорово, из-за большей гибкости, но также это затрудняет нашу работу по "
-"поддержке различных языков."
+"Это здорово, в основном из-за большой гибкости, но это также затрудняет нашу "
+"работу по поддержке языков."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -54,12 +52,11 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
-"Однако \"основными\" языками в Godot остаются GDScript и Visual Script. "
-"Основной причиной такого выбора является их уровень интеграции с Godot, так "
-"как это делает процесс более плавным; они оба имеют полную интеграцию с "
-"редактором, в то время как для С# и С++ необходимо использовать отдельную "
-"IDE. Если вы большой поклонник статически типизированных языков, то "
-"используйте C# и С++."
+"\"Основные\" языки в Godot - это GDScript и VisualScript. Основной причиной "
+"такого выбора является их уровень интеграции с Godot. Это делает процесс "
+"овладения Godot более плавным; они оба имеют полную интеграцию с редактором, "
+"в то время как для С# и С++ необходимо использовать отдельную IDE. Если вы "
+"большой поклонник статически типизированных языков, то используйте C# и С++."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -356,12 +353,11 @@ msgstr ""
 "можете указать язык сценария, имя класса и другие параметры."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"В GDScript сам файл представляет собой класс, поэтому поле имени класса не "
+"В GDScript файл представляет собой класс, поэтому поле имени класса не "
 "редактируется."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
@@ -390,15 +386,14 @@ msgstr ""
 "свойстве сценария в \"Инспекторе\":"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
 "Чтобы отредактировать сценарий, нажмите одну из кнопок, которые отмечены в "
-"приведенном выше изображении. Это приведет вас к редактору сценариев, в "
-"котором будет отображен шаблон сценария по умолчанию:"
+"приведенном выше изображении. Появится редактор скриптов в котором будет "
+"отображен шаблон сценария по умолчанию:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -494,17 +489,16 @@ msgstr ""
 "здесь как NodePath), и имя метода для запуска."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
-"В левом верхнем разделе отображается список узлов вашей сцены, где имя "
-"излучающего узла выделено красным цветом. Выберите узел \"Panel\". Когда вы "
-"выбираете узел, NodePath внизу будет автоматически обновляться, указывая "
-"относительный путь от излучающего к выбранному узлу."
+"В левом верхнем разделе отображается список узлов вашей сцены, где имя узла "
+"вызывающего событие выделено красным цветом. Выберите узел \"Panel\". Когда "
+"вы выбираете узел, путь внизу будет автоматически обновляться, указывая "
+"относительный путь от узла вызывающего событие к выбранному узлу."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:210
 msgid ""
@@ -519,15 +513,14 @@ msgstr ""
 "генерировать эту функцию перед настройкой соединения."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
-"На этом завершим наше обучение по использованию визуального интерфейса. Всё "
-"же, это урок по сценариям, поэтому, ради изучения, давайте погрузимся в "
-"ручной процесс!"
+"На этом завершим наше обучение по использованию визуального интерфейса. Все-"
+"таки это урок по написанию скриптов. Поэтому, ради лучшего понимания, "
+"давайте писать код самостоятельно!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
 msgid ""

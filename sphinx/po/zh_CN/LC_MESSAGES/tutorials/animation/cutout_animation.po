@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:4
 msgid "Cutout animation"
-msgstr "抠图动画"
+msgstr "剪纸动画"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:7
 msgid "What is it?"
@@ -32,8 +32,8 @@ msgid ""
 "are animated and photographed, frame by frame using a stop motion technique "
 "(more info `here <https://en.wikipedia.org/wiki/Cutout_animation>`__)."
 msgstr ""
-"切口是一种在2D中制作动画的技术，其中纸张（或类似材料）被切割成特殊形状并且一"
-"个放在另一个上面。 这些论文使用停止运动技术逐帧动画和拍照（更多信息 `这里 "
+"剪纸是一种在2D中制作动画的技术，其中纸张（或类似的材质）被切割成特殊形状并且"
+"叠放在一起。使用停止运动技术，这些纸张变成逐帧动画（更多信息见 `这里 "
 "<https://en.wikipedia.org/wiki/Cutout_animation>`__）。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:15
@@ -44,10 +44,10 @@ msgid ""
 "wiki/South_Park>`__ or `Jake and the Never Land Pirates <https://en."
 "wikipedia.org/wiki/Jake_and_the_Never_Land_Pirates>`__ ."
 msgstr ""
-"随着数字时代的到来，这种技术变得可以使用计算机，这导致使用数字剪切的动画电视"
-"节目数量增加。 值得注意的例子是“South Park <https://en.wikipedia.org/wiki/"
-"South_Park>`__或`Jake和Never Land Pirates <https://en.wikipedia.org/wiki/"
-"Jake_and_the_Never_Land_Pirates>`__。"
+"随着数字时代的到来，可以使用计算机实现这种技术，这导致使用数字剪纸动画电视节"
+"目的数量增加。 值得注意的例子有 `South Park <https://en.wikipedia.org/wiki/"
+"South_Park>`__ 或 `Jake和Never Land Pirates <https://en.wikipedia.org/wiki/"
+"Jake_and_the_Never_Land_Pirates>`__ 。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:23
 msgid ""
@@ -55,13 +55,13 @@ msgid ""
 "`Paper Mario <https://en.wikipedia.org/wiki/Super_Paper_Mario>`__ or `Rayman "
 "Origins <https://en.wikipedia.org/wiki/Rayman_Origins>`__ ."
 msgstr ""
-"在视频游戏中，这种技术也变得流行。 例如：Paper Mario <https://en.wikipedia."
-"org/wiki/Super_Paper_Mario>`__或`Rayman Origins <https://en.wikipedia.org/"
-"wiki/Rayman_Origins>`__。"
+"在视频游戏中，这种技术也变得流行。 例如 `Paper Mario <https://en.wikipedia."
+"org/wiki/Super_Paper_Mario>`__ 或 `Rayman Origins <https://en.wikipedia.org/"
+"wiki/Rayman_Origins>`__ 。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:29
 msgid "Cutout in Godot"
-msgstr "在戈多的抠图"
+msgstr "Godot中的剪纸"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:31
 msgid ""
@@ -70,7 +70,7 @@ msgid ""
 "other tools meant for this, Godot has the following advantages:"
 msgstr ""
 "Godot提供了一些工具来处理这些资产，但它的整体设计使其成为工作流程的理想选"
-"择。 原因在于，与其他工具不同，戈多具有以下优势："
+"择。 原因在于，与其他工具不同，Godot具有以下优势："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:35
 msgid ""
@@ -88,7 +88,7 @@ msgid ""
 "mixed, useful for complex objects, such as shape of hands and foot, changing "
 "facial expression, etc."
 msgstr ""
-"**与传统**混合：AnimatedSprite允许混合传统动画，对复杂对象有用，例如手脚形"
+"**与传统混合**： AnimatedSprite允许混合传统动画，对复杂对象有用，例如手脚形"
 "状，改变面部表情等。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:42
@@ -96,8 +96,8 @@ msgid ""
 "**Custom Shaped Elements**: Can be created with :ref:`Polygon2D "
 "<class_Polygon2D>` allowing the mixing of UV animation, deformations, etc."
 msgstr ""
-"**自定义形状元素**：可以使用：ref：`Polygon2D <class_Polygon2D>`创建，允许混"
-"合UV动画，变形等。"
+"**自定义形状元素**： 可以使用 ：ref：`Polygon2D <class_Polygon2D>` 创建，允许"
+"混合UV动画，变形等。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:45
 msgid ""
@@ -135,18 +135,18 @@ msgid ""
 "v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__ character, created by "
 "Andreas Esau."
 msgstr ""
-"在本教程中，我们将使用由Andreas Esau创建的`GBot <https://www.youtube.com/"
-"watch?v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__字符作为演示内容。"
+"在本教程中，我们将使用由Andreas Esau创建的 `GBot <https://www.youtube.com/"
+"watch?v=S13FrWuBMx4&list=UUckpus81gNin1aV8WSffRKw>`__ 角色作为演示。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:63
 msgid ""
 "Get your assets: :download:`gbot_resources.zip <files/gbot_resources.zip>`."
 msgstr ""
-"获得您的资产::下载：`gbot_resources.zip <files / gbot_resources.zip>`。"
+"获得您的资产: :download:`gbot_resources.zip <files/gbot_resources.zip>`。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:66
 msgid "Setting up the rig"
-msgstr "设置装备"
+msgstr "设置装配"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:68
 msgid "Create an empty Node2D as root of the scene, we will work under it:"
@@ -158,16 +158,16 @@ msgid ""
 "Generally, both in 2D and 3D, the hip is the root of the skeleton. This "
 "makes it easier to animate:"
 msgstr ""
-"好的，我们将创建的模型的第一个节点将是时髦的。 通常，无论是2D还是3D，臀部都是"
-"骨骼的根。 这使动画更容易："
+"好的，我们将创建的模型的第一个节点是臀部。 通常，无论是2D还是3D，臀部都是骨架"
+"的根节点。 这使动画变得更容易："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:78
 msgid ""
 "Next will be the torso. The torso needs to be a child of the hip, so create "
 "a child sprite and load the torso, later accommodate it properly:"
 msgstr ""
-"接下来将是躯干。 躯干需要是臀部的孩子，所以创建一个儿童精灵并加载躯干，然后适"
-"当地适应它："
+"接下来将是躯干。 躯干需要是臀部的子节点，所以创建一个子节点精灵并加载躯干，然"
+"后适当地调整它："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:83
 msgid ""
@@ -176,7 +176,7 @@ msgid ""
 "dragging with the left mouse button. To exit rotate mode hit ``ESC``."
 msgstr ""
 "这看起来不错。 让我们通过旋转躯干来看看我们的层次结构是否作为骨架。 我们可以"
-"按“E`”进入旋转模式，然后用鼠标左键拖动。 要退出旋转模式，请按“ESC”。"
+"按 ``E`` 进入旋转模式，然后用鼠标左键拖动。 要退出旋转模式，请按 ``ESC``。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:89
 msgid ""
@@ -188,7 +188,7 @@ msgstr "哎哟，看起来不太好看！ 旋转枢轴是错误的，这意味�
 msgid ""
 "This small little cross in the middle of the :ref:`Sprite <class_Sprite>` is "
 "the rotation pivot:"
-msgstr "这个小小的十字架在中间：red：`Sprite <class Sprite>`是旋转轴："
+msgstr "这个在 :ref:`Sprite <class_Sprite>` 中间的小十字架是旋转轴："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:99
 msgid "Adjusting the pivot"
@@ -197,7 +197,7 @@ msgstr "调整枢轴"
 #: ../../docs/tutorials/animation/cutout_animation.rst:101
 msgid ""
 "The pivot can be adjusted by changing the *offset* property in the Sprite:"
-msgstr "可以通过更改Sprite中的* offset *属性来调整pivot："
+msgstr "可以通过更改Sprite中的 *offset* 属性来调整pivot："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:106
 msgid ""
@@ -206,7 +206,7 @@ msgid ""
 "the selected Sprite. Alternately, there is a tool in the tool bar that has a "
 "similar function."
 msgstr ""
-"但是，有一种方法可以在视觉上做得更多*。 将鼠标悬停在所需的枢轴点上时，只需"
+"但是，有一种方法可以在 *视觉上* 做得更多。 将鼠标悬停在所需的枢轴点上时，只需"
 "按“v”键即可为所选的Sprite移动枢轴。 或者，工具栏中有一个具有类似功能的工具。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:113
@@ -254,7 +254,7 @@ msgid ""
 "somewhere else in the hierarchy, by applying the transform to the remote "
 "nodes."
 msgstr ""
-"Godot提供了一个特殊节点，：ref：`RemoteTransform2D "
+"Godot提供了一个特殊节点， :ref:`RemoteTransform2D "
 "<class_RemoteTransform2D>`。 通过将转换应用于远程节点，此节点将转换位于层次结"
 "构中其他位置的节点。"
 
@@ -298,14 +298,14 @@ msgstr ""
 msgid ""
 "For simple objects and rigs this is fine, however the following problems are "
 "common:"
-msgstr "对于简单的物体和钻井平台，这很好，但是以下问题很常见："
+msgstr "对于简单的物体和装配，这已足够，但仍有以下常见问题："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:169
 msgid ""
 "Selecting sprites can become difficult for complex rigs, and the scene tree "
 "ends being used due to the difficulty of clicking over the proper sprite."
 msgstr ""
-"对于复杂的装备，选择精灵可能变得困难，并且由于难以点击正确的精灵而使用场景"
+"对于复杂的装配，选择精灵可能变得困难，并且由于难以点击正确的精灵而使用场景"
 "树。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:172
@@ -318,7 +318,7 @@ msgstr "为了解决这些问题，戈多支持一种简单的骷髅方法。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:177
 msgid "Skeletons"
-msgstr "骷髅"
+msgstr "骨架"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:179
 msgid ""
@@ -326,8 +326,8 @@ msgid ""
 "helper to create \"bones\" between nodes. This is enough for most cases, but "
 "the way it works is not completely obvious."
 msgstr ""
-"Godot实际上并不支持* true * Skeletons，但它确实有一个帮助器来创建节点之间"
-"的“骨骼”。 对于大多数情况来说这已经足够了，但它的工作方式并不完全明显。"
+"Godot实际上并不支持 *真的* 骨架，但它确实有一个帮助器来创建节点之间的“骨"
+"骼”。 对于大多数情况来说这已经足够了，但它的工作方式并不完全明显。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:185
 msgid ""
@@ -338,7 +338,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:190
 msgid "Then, click on the Skeleton menu and select ``Make Bones``."
-msgstr "然后，单击Skeleton菜单并选择``Make Bones``。"
+msgstr "然后，单击Skeleton菜单并选择 ``Make Bones`` 。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:194
 msgid ""
@@ -355,11 +355,11 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:202
 msgid "Why does the hand lack a bone?"
-msgstr "为什么手缺骨？"
+msgstr "为什么手掌缺少骨骼？"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:203
 msgid "Why does the arm connect to the body?"
-msgstr "为什么手臂连接到身体？"
+msgstr "为什么胳膊要连接到身体？"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:205
 msgid ""
@@ -371,7 +371,7 @@ msgid ""
 msgstr ""
 "起初这可能看起来很奇怪，但稍后会有意义。 在传统的骨架系统中，骨骼具有位置，方"
 "向和长度。 在Godot中，骨骼主要是帮助者，因此它们将当前节点与父节点连接起来。 "
-"因此，**将节点切换为骨骼只会将其连接到父**。"
+"因此， **将节点切换为骨骼只会将其连接到父** 。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:211
 msgid ""
@@ -386,8 +386,8 @@ msgid ""
 "ref:`Position2D <class_Position2D>` is preferred because it's visible in the "
 "editor. The endpoint node will ensure that the last bone has orientation."
 msgstr ""
-"第一步是创建端点节点。 任何类型的节点都可以，但是：ref：`Position2D "
-"<class_Position2D>`是首选，因为它在编辑器中可见。 端点节点将确保最后一个骨骼"
+"第一步是创建端点节点。 任何类型的节点都可以，但是 ：ref：`Position2D "
+"<class_Position2D>` 是首选，因为它在编辑器中可见。 端点节点将确保最后一个骨骼"
 "具有方向。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:221
@@ -414,7 +414,7 @@ msgid ""
 "click ``clear bones``."
 msgstr ""
 "您可能会注意到连接臀部和躯干时，会产生额外的骨骼。 要解决这个问题，请选择root"
-"和hip节点，打开Skeleton菜单，单击``clear bones``。"
+"和hip节点，打开Skeleton菜单，单击 ``clear bones``。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:238
 msgid "After fixing that your final skeleton should look something like this:"
@@ -451,7 +451,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:254
 msgid "What if we could move the foot and let the rest of the leg self-adjust?"
-msgstr "如果我们可以移动脚并让腿的其余部分自我调整怎么办？"
+msgstr "如果我们想要移动脚并让腿的其余部分自我调整怎么办？"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:256
 msgid "This type of posing is called IK (Inverse Kinematic)."
@@ -472,7 +472,7 @@ msgstr "然后为IK启用此链。 转到编辑>制作IK链。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:268
 msgid "As a result, the base of the chain will turn *Yellow*."
-msgstr "结果，链的基部将变为*黄色*。"
+msgstr "结果，链的基部将变为 *黄色*。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:272
 msgid ""
@@ -494,7 +494,7 @@ msgid ""
 "refresh it by checking again the :ref:`doc_animations`."
 msgstr ""
 "以下部分将为您的装备创建动画的提示集合。 如果不确定戈多的动画系统是如何工作"
-"的，请再次检查：ref：`doc_animations`来刷新它。"
+"的，请再次检查 ：ref：`doc_animations` 来刷新它。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:286
 msgid "2D animation"
@@ -534,7 +534,7 @@ msgstr "只需执行以下步骤："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:306
 msgid "Make sure the rig is in \"rest\" (not doing any specific pose)."
-msgstr "确保钻机处于“休息”状态（不做任何特定姿势）。"
+msgstr "确保装配处于“休息”状态（不做任何特定姿势）。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:308
 msgid "Create a new animation, rename it to \"rest\"."
@@ -571,7 +571,7 @@ msgstr ""
 msgid ""
 "As a result, when inserting keys, only the \"rot\" button needs to be "
 "pressed most of the time:"
-msgstr "因此，在插入键时，大多数时间只需要按下“腐烂”按钮："
+msgstr "因此，在插入键时，大多数时间只需要按下“rot”按钮："
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:331
 msgid ""
@@ -595,7 +595,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:343
 msgid "Moving sprites above and behind others."
-msgstr "移动精灵在他人之上和之后。"
+msgstr "移动精灵在其他物体之上和之后。"
 
 #: ../../docs/tutorials/animation/cutout_animation.rst:345
 msgid ""

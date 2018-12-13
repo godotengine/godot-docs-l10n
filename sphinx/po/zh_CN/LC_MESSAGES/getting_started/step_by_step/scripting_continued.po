@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,9 +125,10 @@ msgstr ""
 "一点。第一个通过UI实现，在Node面板下的Groups按钮："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
+#, fuzzy
 msgid ""
-"And the second way is from code. One example would be to tag scenes which "
-"are enemies:"
+"And the second way is from code. One example would be to tag nodes which are "
+"enemies:"
 msgstr "第二种方法是通过代码实现。下面的例子是在场景中标记出敌人："
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
@@ -293,11 +294,11 @@ msgstr ""
 "这个步骤的好处在于，打包后的场景会一直被加载着，所以您可以随时用它创建实例。"
 "这在需要快速创建一些敌人，子弹，或其他实例时尤其有用。"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:387
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
 msgid "Register scripts as classes"
 msgstr "将脚本注册为类"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:391
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
@@ -306,7 +307,7 @@ msgstr ""
 "Godot有一个“脚本类”的功能，可以使用编辑器注册单个脚本。默认情况下，你只能通过"
 "直接加载文件访问未命名的脚本。"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:393
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:395
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
@@ -317,11 +318,11 @@ msgstr ""
 "名的指定类型。你还可以把一张图片添加一个逗号和图片的路径来当做图标来使用。然"
 "后，你可以在Node 和Resource 下找到新的类型来创建对话（对象object）。"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:415
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid "In Godot 3.1:"
 msgstr "在Godot 3.1中："
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:419
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
@@ -329,6 +330,6 @@ msgstr ""
 "只有 GDScript 和 NativeScrip 可以注册脚本，也就是说，只有 C++ 和 其他 "
 "GDNative 支持的语言可以注册脚本。"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:418
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:420
 msgid "Only GDScript creates global variables for each named script."
 msgstr "只有GDScript为每一个独立的脚本创建全局变量。"

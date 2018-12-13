@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -647,10 +647,13 @@ msgstr "Этот метод должен:"
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
+"задайте свойству ``text`` узла ``Number`` значение ``new_value``,  "
+"приведенное к строковому типу"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:331
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr ""
+"задайте свойству ``value`` узла ``TextureProgress`` значение ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
 #, fuzzy
@@ -694,6 +697,12 @@ msgid ""
 "``TextureProgress`` from its current level to the ``Player``'s new "
 "``health`` when the character takes damage."
 msgstr ""
+"Интерфейс нашей игры уже вполне рабочий, однако не помешает добавить немного "
+"анимаций.  В этом нам поможет узел ``Tween`` — незаменимый инструмент для "
+"создания анимаций.  ``Tween`` может плавно менять значение любого свойства, "
+"которого вы только пожелаете. Например, когда игрок``Player`` получает "
+"урон,  полоска здоровья ``TextureProgress`` уменьшается до текущего уровня "
+"здоровья ``health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
 msgid ""
@@ -701,48 +710,58 @@ msgid ""
 "``tween`` variable. Let's now use it. We have to make some changes to "
 "``update_health``."
 msgstr ""
+"Сцена ``GUI`` уже содержит дочерний узел ``Tween``, хрянящийся в переменной "
+"``tween``. Давайте используем их. Но сначала мы должны произвести некоторые "
+"изменения в ``update_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:378
 msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
 msgstr ""
+"Мы будем использовать метод  узла ``Tween``, который "
+"называется``interpolate_property`` и принимает семь аргументов:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
 msgid "A reference to the node who owns the property to animate"
-msgstr ""
+msgstr "Ссылка на узел, свойство которого мы будем анимировать"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
 msgid "The property's identifier as a string"
-msgstr ""
+msgstr "Идентификатор свойства в виде строки"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
 msgid "The starting value"
-msgstr ""
+msgstr "Начальное значение"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
 msgid "The end value"
-msgstr ""
+msgstr "Конечное значение"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
 msgid "The animation's duration in seconds"
-msgstr ""
+msgstr "Продолжительность анимации в секундах"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
 msgid "The type of the transition"
-msgstr ""
+msgstr "Тип перехода"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
+#, fuzzy
 msgid "The easing to use in combination with the equation."
-msgstr ""
+msgstr "Легкость использования в сочетании с уравнением."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
+#, fuzzy
 msgid ""
 "The last two arguments combined correspond to an `easing equation <#>`__. "
 "This controls how the value evolves from the start to the end point."
 msgstr ""
+"Два последних аргумента в совокупности соответствуют `уравнению плавности "
+"<#>`__. Этот параметр определяет, как изменяется значение от начала до конца."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
+#, fuzzy
 msgid ""
 "Click the script icon next to the ``GUI`` node to open it again. The "
 "``Number`` node needs text to update itself, and the ``Bar`` needs a float "
@@ -750,6 +769,11 @@ msgid ""
 "not to animate text directly. We're going to use it to animate a new ``GUI`` "
 "variable named ``animated_health``."
 msgstr ""
+"Нажмите на иконку скрипта рядом с узлом ``GUI``, чтобы открыть его снова. "
+"Узлу ``Number`` нужен текст для обновления, а узлу ``Bar`` - дробное или "
+"целое число. Мы можем использовать ``interpolate_property`` для анимирования "
+"числа, но не для текста напрямую. Мы собираемся использовать его для "
+"анимирования новой переменной ``GUI`` под названием ``animated_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:399
 msgid ""
@@ -759,10 +783,14 @@ msgid ""
 "``animated_health`` value. Call the ``Tween`` node's "
 "``interpolate_property`` method:"
 msgstr ""
+"В верхней части скрипта определите новую переменную, назовите ее "
+"``animated_health`` и установите ее значение на 0. Вернитесь к методу "
+"``aupdate_health`` и очистите ее содержимое. Давайте анимируем "
+"``animated_health``. Вызываем метод узла ``Tween`` ``interpolate_property``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:421
 msgid "Let's break down the call:"
-msgstr ""
+msgstr "Давайте разберем этот вызов поподробнее:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:427
 msgid ""
@@ -770,14 +798,22 @@ msgid ""
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
 "That's why we write it as ``\"animated_health\"``."
 msgstr ""
+"Мы нацелены на ``animated_health`` на ``self``, то есть на узел ``GUI``. "
+"Второе свойство interpolate\\_property узла ``Tween`` принимается в виде "
+"строки. Вот почему мы пишем это как ``\"animated_health\"``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:435
+#, fuzzy
 msgid ""
 "The starting point is the current value the bar's at. We still have to code "
 "this part, but it's going to be ``animated_health``. The end point of the "
 "animation is the ``Player``'s ``health`` after the ``health_changed``: "
 "that's ``new_value``. And ``0.6`` is the animation's duration in seconds."
 msgstr ""
+"Отправной точкой является текущее значение шкалы. Мы все еще должны "
+"закодировать эту часть, но это будет ``animated_health``. Конечной точкой "
+"анимации является ``health`` игрока после ``health_changed``: это "
+"``new_value``. А ``0.6`` - это длительность анимации в секундах."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
 msgid ""
@@ -786,6 +822,10 @@ msgid ""
 "do anything with a linear transition, but we must provide this last argument "
 "or we'll get an error."
 msgstr ""
+"Последние два аргумента - это константы из класса ``Tween``. "
+"``TRANS_LINEAR`` означает, что анимация должна быть линейной. ``EASE_IN`` "
+"ничего не делает с линейным переходом, но мы должны предоставить последний "
+"аргумент, иначе мы получим ошибку."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
 msgid ""
@@ -793,8 +833,12 @@ msgid ""
 "``tween.start()``. We only have to do this once if the node is not active. "
 "Add this code after the last line:"
 msgstr ""
+"Анимация не будет воспроизводиться, пока мы не запустим узел ``Tween`` с "
+"помощью функции `tween.start()``. Это нужно сделать только один раз, если "
+"узел не активен. Добавьте этот код после последней строки:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
+#, fuzzy
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -803,20 +847,29 @@ msgid ""
 "`tween` node is perfect for code-controlled animations. For hand-made "
 "animations, check out `AnimationPlayer`."
 msgstr ""
+"Хотя мы могли бы анимировать свойство `health` на `Player'e`, но не будем. "
+"Персонажи должны терять жизнь мгновенно, когда они попадают под удар. Это "
+"значительно облегчает управление их состоянием, например, знать, когда "
+"человек умер. Вы всегда должны хранить анимацию в отдельном контейнере или "
+"узле данных. Узел `tween` идеально подходит для анимации с кодовым "
+"управлением. Анимацию ручной работы можно посмотреть в разделе "
+"\"Анимационный проигрыватель\"."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
 msgid "Assign the animated\\_health to the LifeBar"
-msgstr ""
+msgstr "Присоединение animated\\_health к шкале здоровья"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
 msgstr ""
+"Теперь переменная ``animated_health`` анимирована, но мы больше не обновляем "
+"``Bar`` и ``Number`` узлы. Давай исправим это."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
 msgid "So far, the update\\_health method looks like this:"
-msgstr ""
+msgstr "Пока метод update\\_health выглядит следующим образом:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
 msgid ""
@@ -824,23 +877,33 @@ msgid ""
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
 "``TextureProgress`` nodes like before, inside of ``_process``:"
 msgstr ""
+"В данном конкретном случае, поскольку ``number_label`` принимает текст, нам "
+"нужно использовать метод ``_process`` для его анимирования. Теперь обновим "
+"узлы ``Number`` и ``TextureProgress`` как и до этого, внутри метода "
+"``_process``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
 msgstr ""
+"Переменные `number_label` и `bar` хранят ссылки на узлы `Number` и "
+"`TextureProgress`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
+#, fuzzy
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
 "nice for the life bar to animate in a choppier fashion."
 msgstr ""
+"Запустите игру, чтобы увидеть плавную анимацию шкалы. Но текст отображает "
+"дробное число и выглядит не очень. А учитывая стиль игры, было бы неплохо, "
+"если бы шкала здоровья анимировалась вертолётной манере."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
 msgid "The animation is smooth, but the number is broken"
-msgstr ""
+msgstr "Анимация гладкая, но число отображается криво"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
 msgid ""
@@ -848,16 +911,22 @@ msgid ""
 "variable named ``round_value`` to store the rounded ``animated_health``. "
 "Then assign it to ``number_label.text`` and ``bar.value``:"
 msgstr ""
+"Мы можем решить обе проблемы, округлив ``animated_health``. Используйте "
+"локальную переменную под названием ``round_value`` для хранения округленной "
+"``animated_health``. Затем присваиваются значения ``number_label.text`` и "
+"``bar.value``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
+#, fuzzy
 msgid "Try the game again to see a nice blocky animation."
-msgstr ""
+msgstr "Запустите игру еще раз, чтобы увидеть хорошую блочную анимацию."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
-msgstr ""
+msgstr "Округляя animated\\_health, мы убиваем двух зайцев одним выстрелом"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
+#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -866,6 +935,12 @@ msgid ""
 "gradually is a trick. It makes the GUI feel alive. If the ``Player`` takes 3 "
 "damage, it happens in an instant."
 msgstr ""
+"Каждый раз, когда игрок получает удар, ``GUI`` "
+"вызывает``_on_Player_health_changed``, который в свою очередь вызывает "
+"``update_health``. Это обновляет анимацию и ``number_label`` и ``bar`` "
+"направляются в ``_process``. Анимированная шкала здоровья, показывающий "
+"постепенное снижение здоровья. Это делает GUI более оживленным. Если "
+"``Player`` получит 3 удара, это произойдет в одно мгновение."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
 msgid "Fade the bar when the Player dies"

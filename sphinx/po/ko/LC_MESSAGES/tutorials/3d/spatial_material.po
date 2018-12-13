@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -227,7 +227,7 @@ msgid "Choosing this option means vertex color is used as albedo color."
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:133
-msgid "Is SRGB"
+msgid "Is sRGB"
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:135
@@ -492,7 +492,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:274
 msgid ""
 "Besides the parameters, what defines materials themselves are the colors, "
-"textures, and channels. Godot supports a extensive list of them. They are "
+"textures, and channels. Godot supports an extensive list of them. They are "
 "described in detail below:"
 msgstr ""
 
@@ -505,8 +505,8 @@ msgid ""
 "*Albedo* is the base color for the material, on which all the other settings "
 "operate. When set to *Unshaded*, this is the only color that is visible. In "
 "previous versions of Godot, this channel was named *Diffuse*. The change of "
-"name mainly happened because, in PBR rendering, this color affects many more "
-"calculations than just the diffuse lighting path."
+"name mainly happened because, in PBR (Physically Based Rendering), this "
+"color affects many more calculations than just the diffuse lighting path."
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:287
@@ -589,8 +589,8 @@ msgstr ""
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
 "Godot emulates this with the *Rim* parameter. Unlike other rim lighting "
-"implementations which just use the emission channel, this one actually takes "
-"light into account (no light means no rim). This makes the effect "
+"implementations, which just use the emission channel, this one actually "
+"takes light into account (no light means no rim). This makes the effect "
 "considerably more believable."
 msgstr ""
 
@@ -705,7 +705,7 @@ msgstr ""
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
-"offset which is useful when using repeating textures."
+"offset, which is useful when using repeating textures."
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:436

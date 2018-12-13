@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,22 +26,24 @@ msgid "Intro"
 msgstr "简介"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
+#, fuzzy
 msgid ""
 "A simple (but flexible enough for most uses) particle system is provided. "
-"Particle systems are used to simulate complex physical effects such as "
-"sparks, fire, magic particles, smoke, mist, magic, etc."
+"Particle systems are used to simulate complex physical effects, such as "
+"sparks, fire, magic particles, smoke, mist, etc."
 msgstr ""
 "Godot提供了一种简单（但对于大多数用途而言足够灵活）的粒子系统。 粒子系统用于"
 "模拟复杂的物理效应，如火花，火焰，魔法粒子，烟雾，雾气，魔法等。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
+#, fuzzy
 msgid ""
 "The idea is that a \"particle\" is emitted at a fixed interval and with a "
 "fixed lifetime. During its lifetime, every particle will have the same base "
-"behavior. What makes every particle different and provides a more organic "
-"look is the \"randomness\" associated to each parameter. In essence, "
-"creating a particle system means setting base physics parameters and then "
-"adding randomness to them."
+"behavior. What makes each particle different from the rest and provides a "
+"more organic look is the \"randomness\" associated with each parameter. In "
+"essence, creating a particle system means setting base physics parameters "
+"and then adding randomness to them."
 msgstr ""
 "这个想法是以固定的间隔发射具有固定的寿命的“粒子”。 在其生命周期中，每个粒子都"
 "具有相同的基本行为。 每个参数相关的“随机性”是让每个粒子变得不同并呈现出具有组"
@@ -68,10 +70,11 @@ msgid "ParticlesMaterial"
 msgstr "ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:32
+#, fuzzy
 msgid ""
-"To add a process material to your particles node, go to Process Material in "
-"your inspector panel. Click on the box next to material, and from the "
-"dropdown menu select New Particles Material."
+"To add a process material to your particles node, go to ``Process Material`` "
+"in your inspector panel. Click on the box next to ``Material``, and from the "
+"dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
 "要将过程材质添加到粒子节点，请转到“属性面板”面板中的“处理材质”。 单击材质旁边"
 "的框，然后从下拉菜单中选择New Particles Material。"
@@ -241,9 +244,10 @@ msgstr ""
 "左上角相对于粒子发射器的位置。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
+#, fuzzy
 msgid ""
-"You can generate a Visibility Rect can be generated automatically using the "
-"toolbar above the 2d view. To do so select the Particles2D node and Click "
+"You can have Godot generate a Visibility Rect automatically using the "
+"toolbar above the 2d view. To do so, select the Particles2D node and Click "
 "``Particles > Generate Visibility Rect``. Godot will simulate the "
 "Particles2D node emitting particles for a few seconds and set the rectangle "
 "to fit the surface the particles take."
@@ -301,11 +305,15 @@ msgstr ""
 msgid "ParticlesMaterial settings"
 msgstr "ParticlesMaterial设置"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:186
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:169
+msgid "Particles2D > Process Material > Material > drop-down menu > Edit:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:188
 msgid "Spread"
 msgstr "传播"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:188
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:190
 msgid ""
 "This parameter is the angle in degrees which will be randomly added in "
 "either direction to the base ``Direction``. A spread of ``180`` will emit in "
@@ -314,19 +322,19 @@ msgstr ""
 "此参数是以度为单位的角度，它将在任一方向上随机添加到基础 ``Direction`` 。 "
 "``180`` 的传播将向所有方向发射（+/- 180）。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:195
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Gravity"
 msgstr "重力"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:197
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:199
 msgid "The gravity applied to every particle."
 msgstr "重力应用于每个粒子。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:202
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:204
 msgid "Initial Velocity"
 msgstr "初始速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:204
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:206
 msgid ""
 "Linear velocity is the speed at which particles will be emitted (in pixels/"
 "sec). Speed might later be modified by gravity or other accelerations (as "
@@ -335,65 +343,65 @@ msgstr ""
 "线速度是粒子发射的速度（以像素/秒为单位）。 以后可以通过重力或其他加速度来修"
 "改速度（下面将进一步描述）。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:211
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:213
 msgid "Angular Velocity"
 msgstr "角速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:213
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:215
 msgid "Angular velocity is the initial angular velocity applied to particles."
 msgstr "角速度是应用于粒子的初始角速度。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:216
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:218
 msgid "Spin Velocity"
 msgstr "旋转速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:218
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:220
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
 msgstr "旋转速度是粒子围绕其中心转动的速度（以度/秒为单位）。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:224
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:226
 msgid "Orbit Velocity"
 msgstr "轨道速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:226
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:228
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr "轨道速度用于使粒子绕它们的中心转动。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:231
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:233
 msgid "Linear Acceleration"
 msgstr "线性加速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:233
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:235
 msgid "The linear acceleration applied to each particle."
 msgstr "应用于每个粒子的线性加速度。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:236
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:238
 msgid "Radial Acceleration"
 msgstr "径向加速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:238
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:240
 msgid ""
 "If this acceleration is positive, particles are accelerated away from the "
 "center. If negative, they are absorbed towards it."
 msgstr "如果此加速度为正，则粒子会从发射中心加速。 如果是负的，他们会被吸收。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:244
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:246
 msgid "Tangential Acceleration"
 msgstr "切向加速度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:246
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:248
 msgid ""
 "This acceleration will use the tangent vector to the center. Combining with "
 "radial acceleration can do nice effects."
 msgstr "该加速度会使用到中心点的切向量，结合径向加速度可以做出很酷炫的效果。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:252
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:254
 msgid "Damping"
 msgstr "衰减"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:254
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:256
 msgid ""
 "Damping applies friction to the particles, forcing them to stop. It is "
 "especially useful for sparks or explosions, which usually begin with a high "
@@ -402,40 +410,42 @@ msgstr ""
 "阻尼对颗粒施加摩擦力，迫使它们停止。 它特别适用于火花或爆炸，火花或爆炸通常以"
 "高线速度开始，然后在褪色时停止。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:261
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:263
 msgid "Angle"
 msgstr "角度"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:263
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:265
 msgid ""
 "Determines the initial angle of the particle (in degress). This parameter is "
 "mostly useful randomized."
 msgstr "确定粒子的初始角度（以度为单位）。 该参数主要用于随机化。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:269
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid "Scale"
 msgstr "规模"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:271
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:273
 msgid "Determines the initial scale of the particles."
 msgstr "确定粒子的初始大小。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:276
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:278
 msgid "Color"
 msgstr "颜色"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:278
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:280
 msgid "Used to change the color of the particles being emitted."
 msgstr "用于改变发射中的粒子颜色。"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:281
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:283
 msgid "Hue variation"
 msgstr "色调变化"
 
-#: ../../docs/tutorials/2d/particle_systems_2d.rst:283
+#: ../../docs/tutorials/2d/particle_systems_2d.rst:285
+#, fuzzy
 msgid ""
-"The Variation value sets the initial hue variation applied to each particle. "
-"The Variation Rand value controls the hue variation randomness ratio."
+"The ``Variation`` value sets the initial hue variation applied to each "
+"particle. The ``Variation Random`` value controls the hue variation "
+"randomness ratio."
 msgstr ""
 "Variation值设置应用于每个粒子的初始色调变化。 Variation Rand值控制色调变化随"
 "机性比率。"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,21 +177,33 @@ msgstr ""
 "Linux ou ``Command+S`` no Mac."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
+msgid "For this project, we will be following the Godot naming conventions."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:85
+#, fuzzy
 msgid ""
-"For this project, we will be following the Godot naming conventions. Classes "
-"(nodes) use ``PascalCase``, variables and functions use ``snake_case``, and "
-"constants use ``ALL_CAPS``."
+"**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
+"snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
 "Para este projeto, nós adotaremos a convenção de nomes do Godot. Classes "
 "(nós) usam o estilo ``PascalCase`` (IniciaisMaiúsculas), variáveis e funções "
 "usam ``snake_case`` (minúsculas_separadas_por_sublinha), e constantes usam "
 "``ALL_CAPS`` (TODAS_MAIÚSCULAS)."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:88
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:89
+msgid ""
+"**C#**: Classes, export variables and methods use PascalCase, private fields "
+"use _camelCase, local variables and parameters use camelCase (See :ref:"
+"`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
+"when connecting signals."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
 msgstr "Animação por Sprites"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:90
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:98
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -212,7 +224,7 @@ msgstr ""
 "SpriteFrames\". Em seguida, no mesmo local, clique em ``<SpriteFrames>`` "
 "para abrir o painel \"SpriteFrames\":"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:102
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"right\". Then click the \"Add\" button to create a second animation "
@@ -226,7 +238,7 @@ msgstr ""
 "chamadas ``playerGrey_up[1/2]`` e ``playerGrey_walk[1/2]`` para o lado "
 "\"Quadros da Animação\" do painel:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:109
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:117
 msgid ""
 "The player images are a bit too large for the game window, so we need to "
 "scale them down. Click on the ``AnimatedSprite`` node and set the ``Scale`` "
@@ -238,7 +250,7 @@ msgstr ""
 "configure a propriedade ``Scale`` para ``(0.5, 0.5)``. Você pode encontrá-la "
 "no Inspetor na seção ``Node2D``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:116
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:124
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
@@ -253,7 +265,7 @@ msgstr ""
 "encaixa. Então, ao lado de \"Shape\" (forma) no Inspetor, clique em  \"<null>"
 "\" -> \"Novo CapsuleShape2D\". Redimensione a forma para cobrir o sprite:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:124
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:132
 msgid ""
 "Don't scale the shape's outline! Only use the size handles (circled in red) "
 "to adjust the shape!"
@@ -261,16 +273,16 @@ msgstr ""
 "Não mude a escala do contorno da forma! Somente use os manípulos de tamanho "
 "(circulados em vermelho) para ajustar a forma!"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:127
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:135
 msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr ""
 "Quando tiver finalizado, sua cena ``Jogador`` deveria se parecer assim:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:132
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:140
 msgid "Moving the player"
 msgstr "Movendo o Jogador"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:134
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:142
 msgid ""
 "Now we need to add some functionality that we can't get from a built-in "
 "node, so we'll add a script. Click the ``Player`` node and click the \"Add "
@@ -280,7 +292,7 @@ msgstr ""
 "nó embutido, então adicionaremos um roteiro. Clique no nó ``Jogador`` e "
 "depois clique no botão \"Adicionar Script\":"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:140
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:148
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
@@ -288,7 +300,7 @@ msgstr ""
 "Na janela de configurações de roteiro, você pode deixar as configurações "
 "padrões do jeito que estão. Apenas clique em \"Criar\":"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:143
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:151
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
@@ -296,7 +308,7 @@ msgstr ""
 "Se você estiver criando um roteiro em C# ou em outras linguagens, selecione "
 "a linguagem em  no menu suspenso `Idioma` antes de clicar em Criar."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:148
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:156
 msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
@@ -304,11 +316,11 @@ msgstr ""
 "Se esta é sua primeira vez se deparando com a GDScript, por favor leia :ref:"
 "`doc_scripting` antes de continuar."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:151
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:159
 msgid "Start by declaring the member variables this object will need:"
 msgstr "Comece declarando as variáveis membro que este objeto irá precisar:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:172
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:180
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
@@ -321,17 +333,15 @@ msgstr ""
 "se faz com as propriedades internas de um nó. Clique no nó ``Jogador`` e "
 "defina a propriedade velocidade para ``400``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:177
-#, fuzzy
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:185
 msgid ""
-"If you're using C#, you need to restart Godot editor temporarily to see "
-"exported variables in the editor until it's fixed."
+"If you're using C#, you need to (re)build the project assemblies whenever "
+"you want to see new export variables or signals. This build can be manually "
+"triggered by clicking the word \"Mono\" at the bottom of the editor window "
+"to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
-"Se você estiver usando C#, você precisa reiniciar o editor da Godot "
-"temporariamente para ver as variáveis exportadas no editor, até que isso "
-"seja corrigido."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:182
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
@@ -339,7 +349,7 @@ msgstr ""
 "A função ``_ready()`` é chamada quando um nó entra na árvore de cena, que é "
 "uma boa hora para descobrir o tamanho da janela do jogo:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:198
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:209
 #, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
@@ -351,19 +361,19 @@ msgstr ""
 "atualizar os elementos de nosso jogo que esperamos que mudem frequentemente. "
 "Aqui, faremos isto:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:202
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid "Check for input."
 msgstr "Verificação de entradas."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:203
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:214
 msgid "Move in the given direction."
 msgstr "Movimentação em uma certa direção."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:204
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Play the appropriate animation."
 msgstr "Reprodução da animação apropriada."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:217
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
@@ -379,7 +389,7 @@ msgstr ""
 "eventos de mouse ou outras entradas para eles. Para esta demonstração, vamos "
 "usar os eventos padrões que são atribuídos para as teclas de seta no teclado."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:213
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:224
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it is pressed or ``false`` if it isn't."
@@ -388,7 +398,7 @@ msgstr ""
 "is_action_pressed()``, que retorna ``true`` (verdadeiro) se é pressionada ou "
 "``false`` (falso) em caso contrário."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:266
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:286
 msgid ""
 "We check each input and add/subtract from the ``velocity`` to obtain a total "
 "direction. For example, if you hold ``right`` and ``down`` at the same time, "
@@ -403,7 +413,7 @@ msgstr ""
 "horizontal, o jogador iria se mover *mais rápido* do que se apenas se "
 "movesse horizontalmente."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:272
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:292
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed. This means no more "
@@ -414,7 +424,7 @@ msgstr ""
 "velocidade desejada. Isso resolve o problema de movimentação mais rápida nas "
 "diagonais."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:276
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:296
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
@@ -425,7 +435,7 @@ msgstr ""
 "`doc_vector_math`. É bom conhecê-la, mas não será necessário para o resto "
 "deste tutorial."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:280
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:300
 msgid ""
 "We also check whether the player is moving so we can start or stop the "
 "AnimatedSprite animation."
@@ -433,7 +443,7 @@ msgstr ""
 "Nós também verificamos se o jogador está se movendo, para que possamos "
 "iniciar ou parar a animação do AnimatedSprite."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:283
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:303
 msgid ""
 "``$`` returns the node at the relative path from this node, or returns "
 "``null`` if the node is not found. Since AnimatedSprite is a child of the "
@@ -443,7 +453,7 @@ msgstr ""
 "``null`` (nulo) se o nó não for encontrado. Já que AnimatedSprite é um filho "
 "do nó atual, podemos usar ``$AnimatedSprite``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:286
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:306
 msgid ""
 "``$`` is shorthand for ``get_node()``. So in the code above, ``"
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
@@ -453,7 +463,7 @@ msgstr ""
 "$AnimatedSprite.play()`` é o mesmo que ``get_node(\"AnimatedSprite\")."
 "play()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:289
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
 "Now that we have a movement direction, we can update ``Player``'s position "
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
@@ -463,11 +473,11 @@ msgstr ""
 "``Jogador`` e usar ``clamp()`` (limitar) para impedir que ele saia da tela. "
 "Fazemos isso adicionando o seguinte código ao final da função ``_process``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:309
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:329
 msgid "*Clamping* a value means restricting it to a given range."
 msgstr "*Limitar* um valor significa restringi-lo a uma determinado intervalo."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:311
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:331
 msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions. The console output that opens upon playing the "
@@ -479,7 +489,7 @@ msgstr ""
 "pode ser fechada ao clicar em ``Saída`` (que deve estar destacada em azul) "
 "no canto inferior esquerdo do Painel Inferior."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:315
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:335
 msgid ""
 "If you get an error in the \"Debugger\" panel that refers to a \"null "
 "instance\", this likely means you spelled the node name wrong. Node names "
@@ -492,11 +502,11 @@ msgstr ""
 "$NomeDoNo`` ou ``get_node(\"NomeDoNo\")`` tem que coincidir com o nome que "
 "você vê na árvore da cena."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:320
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:340
 msgid "Choosing animations"
 msgstr "Selecionado as Animações"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:322
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:342
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on direction. We have a \"right\" animation, "
@@ -513,7 +523,7 @@ msgstr ""
 "baixo. Vamos colocar este código no fim da nossa função ``_process()`` "
 "(substitua \"right\" por \"direita\" e \"up\" por \"cima\"):"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:353
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:376
 msgid ""
 "The boolean assignments in the code above are a common shorthand for "
 "programmers. Consider this code versus the shortened boolean assignment "
@@ -523,7 +533,7 @@ msgstr ""
 "programadores.Considere esse código contra a atribuição booleana encurtada "
 "acima:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:372
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:395
 #, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
@@ -535,11 +545,11 @@ msgstr ""
 "corretamente, adicione esta linha à ``_ready()`` para que o jogador fique "
 "oculto no início do jogo:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:387
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:410
 msgid "Preparing for collisions"
 msgstr "Preparando para colisões"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:389
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:412
 msgid ""
 "We want ``Player`` to detect when it's hit by an enemy, but we haven't made "
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
@@ -549,13 +559,13 @@ msgstr ""
 "nós não fizemos nenhum inimigo ainda! Não tem problema, porque nós iremos "
 "utilizar a funcionalidade de *sinal* do Godot para fazer com que funcione."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:393
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:416
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
 msgstr ""
 "Adicione o trecho a seguir no início do roteiro, depois de ``extends "
 "Area2d``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:405
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:430
 msgid ""
 "This defines a custom signal called \"hit\" that we will have our player "
 "emit (send out) when it collides with an enemy. We will use ``Area2D`` to "
@@ -568,7 +578,7 @@ msgstr ""
 "clique na aba \"Nó\" ao lado da aba \"Inspetor\" para ver a lista de sinais "
 "que o jogador pode emitir:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:412
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:437
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered( Object "
@@ -586,7 +596,7 @@ msgstr ""
 "destas configurações – o Godot criará automaticamente uma função chamada "
 "``_on_Jogador_body_entered`` no roteiro do jogador."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:420
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:445
 msgid ""
 "When connecting a signal, instead of having Godot create a function for you, "
 "you can also give the name of an existing function that you want to link the "
@@ -596,11 +606,11 @@ msgstr ""
 "você, você também pode fornecer o nome de uma função existente à qual deseja "
 "vincular o sinal."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:424
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:449
 msgid "Add this code to the function:"
 msgstr "Adicione este código à função:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:447
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:468
 msgid ""
 "Disabling the area's collision shape means it won't detect collisions. By "
 "turning it off, we make sure we don't trigger the ``hit`` signal more than "
@@ -610,7 +620,7 @@ msgstr ""
 "colisões. Ao desativá-la, temos certeza de que não iremos disparar o sinal "
 "``hit`` mais de uma vez."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:452
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:472
 msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
@@ -618,11 +628,11 @@ msgstr ""
 "A última peça para nosso jogador é adicionar uma função que possamos chamar "
 "para reiniciar o jogador quando começarmos um novo jogo."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:475
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:493
 msgid "Enemy scene"
 msgstr "Cena do inimigo"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:477
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:495
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
@@ -634,7 +644,7 @@ msgstr ""
 "nos cantos da tela e irão se mover em uma direção também aleatória, só que "
 "em linha reta, para, então desaparecerem quando saírem da tela."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:482
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:500
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
@@ -642,31 +652,31 @@ msgstr ""
 "Nós iremos construir isso em uma cena ``Turba``, que poderemos então "
 "*instanciar* para criar uma quantidade de inimigos independentes no jogo."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:486
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:504
 msgid "Node setup"
 msgstr "Configuração de nós"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:488
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:506
 msgid "Click Scene -> New Scene and we'll create the Mob."
 msgstr "Clique Cena -> Nova cena e criaremos a Turba."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:490
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:508
 msgid "The Mob scene will use the following nodes:"
 msgstr "A cena Turba utilizará os seguintes nós:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:492
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:510
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
 msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (chamado ``Turba``)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:494
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:512
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:495
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:513
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:496
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:514
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
@@ -674,7 +684,7 @@ msgstr ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (chamado "
 "``Visibilidade``)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:498
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:516
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
@@ -682,7 +692,7 @@ msgstr ""
 "Não se esqueça de configurar os filhos para que não possam ser selecionados, "
 "assim como você fez na cena Jogador."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:501
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:519
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
 "Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
@@ -696,7 +706,7 @@ msgstr ""
 "primeira caixa. Isso vai garantir que o inimigos não colidam uns com os "
 "outros."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:508
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:526
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
 "player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
@@ -711,14 +721,14 @@ msgstr ""
 "\"Velocidade (FPS)\" como mostrado abaixo. Vamos selecionar uma dessas "
 "animações aleatoriamente para que a turba tenha alguma variedade."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:515
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:533
 msgid ""
 "``fly`` should be set to 3 FPS, with ``swim`` and ``walk`` set to 4 FPS."
 msgstr ""
 "``voar`` deve ser ajustado para 3 FPS (quadros por segundo), e ``nadar`` e "
 "``andar`` ajustados para 4 FPS."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:517
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:535
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
@@ -727,7 +737,7 @@ msgstr ""
 "Defina a propriedade ``Scale`` (escala) do ``AnimatedSprite`` para ``(0.75, "
 "0.75)``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:520
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:538
 msgid ""
 "As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
@@ -737,17 +747,17 @@ msgstr ""
 "Para alinhar a forma com a imagem, você precisará definir a propriedade "
 "``Rotation Degrees`` (graus de rotação) como ``90`` na seção ``Node2D``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:525
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:543
 msgid "Enemy script"
 msgstr "Script do inimigo"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:527
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr ""
 "Adicione um roteiro ao nó ``Turba`` e adicione as seguintes variáveis "
 "membros:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:551
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:571
 msgid ""
 "We'll pick a random value between ``min_speed`` and ``max_speed`` for how "
 "fast each mob will move (it would be boring if they were all moving at the "
@@ -762,7 +772,7 @@ msgstr ""
 "uma lista contendo o nome das três animações, que utilizaremos para "
 "selecionar uma aleatoriamente."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:557
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:577
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
@@ -770,7 +780,7 @@ msgstr ""
 "Agora, vamos ver o resto do roteiro. Em ``_ready () ``, escolhemos "
 "aleatoriamente um dos três tipos de animação:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:581
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:596
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
 "to be different every time you run the scene. We're going to use "
@@ -783,7 +793,7 @@ msgstr ""
 "dessa função aqui. ``randi () %  n`` é a maneira padrão de obter um inteiro "
 "aleatório entre ``0`` e ``n-1``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:587
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:602
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the ``Visibility`` node "
@@ -793,15 +803,15 @@ msgstr ""
 "``screen_exited()`` (saiu da tela) do nó ``Visibilidade`` e adicione este "
 "código:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:604
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:619
 msgid "This completes the `Mob` scene."
 msgstr "Isto completa a cena `Turba`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:607
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:622
 msgid "Main scene"
 msgstr "Cena principal"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:609
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:624
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
@@ -811,11 +821,11 @@ msgstr ""
 "<class_Node>` chamado ``Principal``. Clique no botão \"Instanciar\" e "
 "selecione seu ``Jogador.tscn`` já salvo."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:615
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:630
 msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "Veja :ref:`doc_instancing` para aprender mais sobre instanciação."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:617
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:632
 #, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
@@ -824,7 +834,7 @@ msgstr ""
 "Agora adicione os seguintes nós como filhos de ``Principal``, e os nomeie "
 "como mostrado (os valores estão em segundos):"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:620
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:635
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
@@ -832,7 +842,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (nomeado ``MobTimer``) - para controlar a "
 "frequência com que a turba é gerada"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:621
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:636
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
@@ -840,7 +850,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (nomeado ``ScoreTimer``) - para incrementar a "
 "pontuação a cada segundo"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:622
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:637
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
@@ -848,7 +858,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (nomeado ``StartTimer``) - para dar um atraso "
 "antes de começar"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:623
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:638
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
@@ -856,26 +866,26 @@ msgstr ""
 ":ref:`Position2D <class_Position2D>` (nomeado ``StartPosition``) - para "
 "indicar a posição inicial do jogador"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:625
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:640
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr ""
 "Defina a propriedade ``Wait Time`` (tempo de espera) para cada um dos nós "
 "``Timer`` da seguinte forma:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:628
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:643
 msgid "``MobTimer``: ``0.5``"
 msgstr "``MobTimer``: ``0.5``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:629
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:644
 msgid "``ScoreTimer``: ``1``"
 msgstr "``ScoreTimer``: ``1``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:630
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:645
 msgid "``StartTimer``: ``2``"
 msgstr "``StartTimer``: ``2``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:632
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:647
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
@@ -884,12 +894,12 @@ msgstr ""
 "``StartTimer`` para \"Ativo\" e ``Position`` do nó ``StartPosition`` para "
 "``(240, 450)``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:636
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:651
 #, fuzzy
 msgid "Spawning mobs"
 msgstr "Gerando a Turba"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:638
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:653
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -902,7 +912,7 @@ msgstr ""
 "``Principal``. Quando você selecionar ``Path2D``, aparecerão alguns botões "
 "novos na parte superior do editor:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:645
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:660
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -916,7 +926,7 @@ msgstr ""
 "Essa opção pode ser encontrada pelo botão \"Opções da Encaixe\" à esquerda "
 "do botão \"Trava\", indicada por uma série de 3 pontos verticais."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:653
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:668
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
@@ -924,7 +934,7 @@ msgstr ""
 "Desenhe o caminho em sentido *horário*, ou sua turba vai surgir apontando "
 "para *fora* em vez de para *dentro*!"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:656
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:671
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
@@ -932,7 +942,7 @@ msgstr ""
 "Depois de colocar o ponto ``4`` na imagem, clique no botão \"Fechar Curva\", "
 "e sua curva estará completa."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:659
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:674
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -945,12 +955,12 @@ msgstr ""
 "caminho conforme ele se move, para que possamos usá-lo para selecionar uma "
 "posição e uma direção aleatória ao longo do caminho."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:665
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
 #, fuzzy
 msgid "Main script"
 msgstr "Script principal"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:667
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
 #, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
@@ -960,7 +970,7 @@ msgstr ""
 "``export (PackedScene)`` para nos permitir escolher a cena Turba que "
 "queremos instanciar."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:706
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:722
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property under the Script Variables of the ``Main`` node."
@@ -969,7 +979,7 @@ msgstr ""
 "``Mob`` (Turba) na seção Script Variables (\"Variáveis do Roteiro\") do nó "
 "``Principal``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:709
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:725
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -984,7 +994,7 @@ msgstr ""
 "assim como uma função \"new_game\" (novo jogo) para definir tudo para um "
 "novo jogo:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:751
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:762
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
 "(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
@@ -995,7 +1005,7 @@ msgstr ""
 "irá iniciar os outros dois temporizadores. ``ScoreTimer`` irá incrementar a "
 "pontuação de 1 em 1."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:782
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:789
 #, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
@@ -1009,14 +1019,14 @@ msgstr ""
 "que ele segue o caminho, então usaremos isso para escolher a direção do "
 "inimigo, bem como sua posição."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:788
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:795
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr ""
 "Note que uma nova instância deve ser adicionada à cena usando "
 "``add_child()`` (adicionar filho)."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:791
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:798
 msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
@@ -1025,11 +1035,11 @@ msgstr ""
 "inspeção, troque para a guia de nó então clique em ``timeout()`` e conecte o "
 "sinal."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:794
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:801
 msgid "Add the following code:"
 msgstr "Adicione o código abaixo:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:841
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:848
 msgid ""
 "In functions requiring angles, GDScript uses *radians*, not degrees. If "
 "you're more comfortable working with degrees, you'll need to use the "
@@ -1040,11 +1050,11 @@ msgstr ""
 "funções ``deg2rad()`` (graus para radianos) e ``rad2deg()`` (radianos para "
 "graus) para fazer as conversões."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:847
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:854
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:849
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:856
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -1059,7 +1069,7 @@ msgstr ""
 "\", um mostrador informativo que aparece como uma camada de sobreposição à "
 "visão do jogo."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:855
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:862
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -1070,23 +1080,23 @@ msgstr ""
 "informações que ela mostrar não fiquem cobertas por quaisquer elementos do "
 "jogo, como o jogador ou os inimigos."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:859
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:866
 msgid "The HUD displays the following information:"
 msgstr "O HUD exibirá as seguintes informações:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:861
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:868
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "Pontuação, alterado por ``ScoreTimer``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:862
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:869
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "Uma mensagem, como \"Game Over\" ou \"Prepare-se!\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:863
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:870
 msgid "A \"Start\" button to begin the game."
 msgstr "Um botão \"Iniciar\" para começar o jogo."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:865
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:872
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -1096,27 +1106,27 @@ msgstr ""
 "Para criar nossa interface, usaremos dois tipos de nós :ref:`Control "
 "<class_Control>`: :ref:`Label <class_Label>` e :ref:`Button <class_Button>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:869
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:876
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "Crie os seguintes itens como filhos do nó ``HUD``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:871
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:878
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr ":ref:`Label <class_Label>` nomeado ``ScoreLabel``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:872
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:879
 msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
 msgstr ":ref:`Label <class_Label>` nomeado ``MessageLabel``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:873
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr ":ref:`Button <class_Button>` nomeado ``StartButton``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:874
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` nomeado ``MessageTimer``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:876
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -1132,7 +1142,7 @@ msgstr ""
 "das bordas do nó Control até sua âncora. Veja :ref:"
 "`doc_design_interfaces_with_the_control_nodes` para mais detalhes."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
 msgid ""
 "Arrange the nodes as shown below. Click the \"Anchor\" button to set a "
 "Control node's anchor:"
@@ -1140,7 +1150,7 @@ msgstr ""
 "Organize os nós conforme mostrado abaixo. Clique no botão \"Âncora\" para "
 "definir a âncora para um nó Control:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:888
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:895
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
@@ -1148,97 +1158,97 @@ msgstr ""
 "Você pode arrastar os nós para colocá-los manualmente ou, para um "
 "posicionamento mais preciso, usar as seguintes configurações:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:899
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:894
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:901
 msgid "``Layout``: \"Center Top\""
 msgstr "``Layout``: \"Center Top\" (Centro Superior)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:895
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:908
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:921
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:902
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:928
 msgid "``Margin``:"
 msgstr "``Margin``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:897
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:904
 msgid "Left: ``-25``"
 msgstr "Left: ``-25``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:898
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:905
 msgid "Top: ``0``"
 msgstr "Top: ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:899
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:906
 msgid "Right: ``25``"
 msgstr "Right: ``25``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:900
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
 msgid "Bottom: ``100``"
 msgstr "Bottom: ``100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:902
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:909
 msgid "Text: ``0``"
 msgstr "Text: ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:905
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:912
 msgid "MessageLabel"
 msgstr "MessageLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:914
 msgid "``Layout``: \"Center\""
 msgstr "``Layout``: \"Center\" (Centro)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:910
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
 msgid "Left: ``-200``"
 msgstr "Left: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:911
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:918
 msgid "Top: ``-150``"
 msgstr "Top: ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:912
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:919
 msgid "Right: ``200``"
 msgstr "Right: ``100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:913
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:920
 msgid "Bottom: ``0``"
 msgstr "Bottom: ``100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:922
 msgid "Text: ``Dodge the Creeps!``"
 msgstr "Texto: ``Desvie dos Bichos!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:918
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:925
 msgid "StartButton"
 msgstr "StartButton"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:920
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:927
 msgid "``Layout``: \"Center Bottom\""
 msgstr "``Layout``: \"Center Bottom\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:923
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:930
 msgid "Left: ``-100``"
 msgstr "Left: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:924
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
 msgid "Top: ``-200``"
 msgstr "Top: ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:925
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:932
 msgid "Right: ``100``"
 msgstr "Right: ``100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:926
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "Bottom: ``-100``"
 msgstr "Bottom: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:928
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
 msgid "Text: ``Start``"
 msgstr "Texto: ``Iniciar``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:930
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
 #, fuzzy
 msgid ""
 "To make the text of the ``MessageLabel`` fit the game's window click the "
@@ -1253,13 +1263,13 @@ msgstr ""
 "\". Para usar esta fonte, faça o seguinte para cada um dos três nós "
 "``Control``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:938
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
 msgstr ""
 "Na propriedade \"Custom Fonts\" (Fontes Personalizadas), escolha \"Novo "
 "DynamicFont\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:942
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:949
 msgid ""
 "Click on the \"DynamicFont\" you added, and under \"Font Data\", choose "
 "\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
@@ -1270,17 +1280,17 @@ msgstr ""
 "Você tem também que definir o tamanho (``Size``) da fonte. Uma configuração "
 "de ``64`` funciona bem."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:948
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:955
 msgid "Now add this script to ``HUD``:"
 msgstr "Agora, adicione este script ao ``HUD``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:965
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:974
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr "O sinal ``start_game`` diz ao nó ``Main`` que o botão foi pressionado."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:988
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:996
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
@@ -1291,7 +1301,7 @@ msgstr ""
 "Espera) para ``2`` e configure a propriedade ``One Shot`` (Apenas uma Vez) "
 "como \"Ativo\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1017
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
 "for 2 seconds, then return to the title screen and show the \"Start\" button."
@@ -1299,11 +1309,12 @@ msgstr ""
 "Esta função é chamada quando o jogador perde. Ela mostrará \"Game Over\" por "
 "2 segundos, depois retornará à tela de título e mostrará o botão \"Iniciar\"."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1035
-msgid "This function is called in ``Main`` whenever the score changes."
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
+#, fuzzy
+msgid "This function is called by ``Main`` whenever the score changes."
 msgstr "Esta função é chamada em ``Main``sempre que a pontuação for alterada."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1037
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1045
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``."
@@ -1311,11 +1322,11 @@ msgstr ""
 "Conecte o sinal ``timeout()`` (\"tempo esgotado\") de ``MessageTimer`` e o "
 "sinal ``pressed()`` (\"pressionado\") de ``StartButton``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1067
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1072
 msgid "Connecting HUD to Main"
 msgstr "Conectando HUD a Principal"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1069
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1074
 msgid ""
 "Now that we're done creating the ``HUD`` scene, save it and go back to "
 "``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` "
@@ -1327,7 +1338,7 @@ msgstr ""
 "``Jogador``, e coloque-a no final da árvore. A árvore completa deveria se "
 "parecer assim, então confira que não falta alguma coisa:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1076
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1081
 msgid ""
 "Now we need to connect the ``HUD`` functionality to our ``Main`` script. "
 "This requires a few additions to the ``Main`` scene:"
@@ -1335,14 +1346,14 @@ msgstr ""
 "Agora precisamos conectar a funcionalidade de ``HUD`` ao roteiro de "
 "``Principal``. Isso exige algumas adições à cena ``Principal``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1079
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1084
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function."
 msgstr ""
 "Na aba Nó, conecte o sinal ``start_game`` de HUD à função ``new_game()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1082
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1087
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -1350,12 +1361,12 @@ msgstr ""
 "Em ``new_game()``, atualize o mostrador de pontuação e mostre a mensagem "
 "\"Prepare-se\":"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1097
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1102
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 "Em ``game_over()``, precisamos chamar a correspondente função de ``HUD``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1109
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1113
 msgid ""
 "Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
 "sync with the changing score:"
@@ -1363,7 +1374,7 @@ msgstr ""
 "Finalmente, adicione isto a ``_on_ScoreTimer_timeout()`` para manter o "
 "mostrador em sincronia com as mudanças de pontuação:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1122
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1125
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``Main.tscn``."
@@ -1371,11 +1382,11 @@ msgstr ""
 "Agora está tudo pronto para jogar! Clique no botão \"Rodar o Projeto\". Será "
 "solicitada a seleção de uma cena principal, então escolha ``Principal.tscn``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1126
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1129
 msgid "Finishing up"
 msgstr "Finalizando"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1128
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1131
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience. "
@@ -1386,11 +1397,11 @@ msgstr ""
 "experiência do jogo. Sinta-se livre para expandir a jogabilidade com suas "
 "próprias ideias."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1133
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1136
 msgid "Background"
 msgstr "Plano de fundo"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1135
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1138
 msgid ""
 "The default gray background is not very appealing, so let's change its "
 "color. One way to do this is to use a :ref:`ColorRect <class_ColorRect>` "
@@ -1407,7 +1418,7 @@ msgstr ""
 "cor que goste e, com o mouse, altere as dimensões do ``ColorRect`` para que "
 "cubra a tela."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1142
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
 msgid ""
 "You can also add a background image, if you have one, by using a ``Sprite`` "
 "node."
@@ -1415,11 +1426,11 @@ msgstr ""
 "Você também pode adicionar uma imagem de plano de fundo, se tiver uma, "
 "usando um nó ``Sprite``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1146
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
 msgid "Sound effects"
 msgstr "Efeitos sonoros"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1148
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1151
 msgid ""
 "Sound and music can be the single most effective way to add appeal to the "
 "game experience. In your game assets folder, you have two sound files: "
@@ -1431,7 +1442,7 @@ msgstr ""
 "de áudio: \"House In a Forest Loop.ogg\" para música de fundo e \"gameover."
 "wav\" para quando o jogador perde."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1153
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1156
 msgid ""
 "Add two :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` nodes as children "
 "of ``Main``. Name one of them ``Music`` and the other ``DeathSound``. On "
@@ -1443,7 +1454,7 @@ msgstr ""
 "``SomDeMorte``. Em cada um, clique na propriedade ``Stream`` (\"fluxo\"), "
 "selecione \"Carregar\", e escolha o arquivo sonoro correspondente."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1158
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
 msgid ""
 "To play the music, add ``$Music.play()`` in the ``new_game()`` function and "
 "``$Music.stop()`` in the ``game_over()`` function."
@@ -1451,15 +1462,15 @@ msgstr ""
 "Para reproduzir a música, adicione ``$Musica.play()``na função "
 "``new_game()`` e ``$Musica.stop()`` na função ``game_over()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1161
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
 msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr "Por fim, adicione ``$SomDeMorte.play()`` na função ``game_over()``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1164
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
 msgid "Particles"
 msgstr "Partículas"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1166
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
 "For one last bit of visual appeal, let's add a trail effect to the player's "
 "movement. Choose your ``Player`` scene and add a :ref:`Particles2D "
@@ -1469,7 +1480,7 @@ msgstr ""
 "ao movimento do jogador. Escolha a sua cena  ``Jogador`` e adicione um nó :"
 "ref:`Particles2D <class_Particles2D>` chamado ``Rastro``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1170
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
 "There are a large number of properties to choose from when configuring "
 "particles. Feel free to experiment and create different effects. For the "
@@ -1479,7 +1490,7 @@ msgstr ""
 "de partículas. Sinta-se à vontade para experimentar e criar diferentes "
 "efeitos. Para o efeito neste exemplo, use as seguintes configurações:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1179
 msgid ""
 "You also need to create a ``Material`` by clicking on ``<null>`` and then "
 "\"New ParticlesMaterial\". The settings for that are below:"
@@ -1487,7 +1498,7 @@ msgstr ""
 "Você também precisa criar um ``Material` clicando no ``<null>`` e então em "
 "\"Novo ParticlesMaterial\". As configurações para isso estão a seguir:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1184
 msgid ""
 "To make the gradient for the \"Color Ramp\" setting, we want a gradient "
 "taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to "
@@ -1497,7 +1508,7 @@ msgstr ""
 "nós queremos uma graduação do parâmetro alfa (transparência) do *sprite* de "
 "0,5 (semitransparente) até 0,0 (completamente transparente)."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
 msgid ""
 "Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient"
 "\". You'll see a window like this:"
@@ -1505,7 +1516,7 @@ msgstr ""
 "Clique em \"Novo GradientTexture\"; depois, em \"Gradient\", clique em "
 "\"Novo Gradient\". Você verá uma janela como esta:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1190
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1193
 msgid ""
 "The left and right boxes represent the start and end colors. Click on each "
 "and then click the large square on the right to choose the color. For the "
@@ -1517,7 +1528,7 @@ msgstr ""
 "a cor. Para a primeira cor, defina o valor ``A`` (alfa) para mais ou menos a "
 "metade. Já para a segunda, configure para ``0``."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1195
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
 msgid ""
 "See :ref:`Particles2D <class_Particles2D>` for more details on using "
 "particle effects."
@@ -1525,14 +1536,26 @@ msgstr ""
 "Veja :ref:`Particles2D <class_Particles2D>` para maiores detalhes sobre uso "
 "dos efeitos das partículas."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1199
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1202
 msgid "Project files"
 msgstr "Arquivos do projeto"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1201
-msgid ""
-"You can find a completed version of this project here: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
+#, fuzzy
+msgid "You can find a completed version of this project at these locations:"
 msgstr ""
 "Você pode encontrar uma versão finalizada deste projeto aqui: https://github."
 "com/kidscancode/Godot3_dodge/releases"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
+#, fuzzy
+msgid "https://github.com/kidscancode/Godot3_dodge/releases"
+msgstr ""
+"Você pode encontrar uma versão finalizada deste projeto aqui: https://github."
+"com/kidscancode/Godot3_dodge/releases"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#, fuzzy
+msgid "https://github.com/godotengine/godot-demo-projects"
+msgstr ""
+"Dê um Fork `Repositório do  Godot<https://github.com/godotengine/godot>`_"

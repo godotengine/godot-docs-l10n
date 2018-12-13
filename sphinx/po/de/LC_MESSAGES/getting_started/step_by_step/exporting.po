@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,10 +46,12 @@ msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"Wenn du \"Dodge the Creeps\" noch nicht selbst erstellt hast, lies bitte :"
+"ref:`doc_your_first_game`, bevor du mit diesem Tutorial weitermachst."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
-msgstr ""
+msgstr "Vorbereitung des Projekts"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -59,6 +61,12 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"In \"Dodge the Creeps\" verwendeten wir Tastatursteuerungen, um den "
+"Charakter des Spielers zu bewegen. Dies ist in Ordnung, wenn Ihr Spiel auf "
+"einer PC-Plattform gespielt wird, aber auf einem Telefon oder Tablett müssen "
+"Sie die Touchscreen-Eingabe unterstützen. Da ein Klickereignis wie ein Touch-"
+"Ereignis behandelt werden kann, konvertieren wir das Spiel in einen Click-"
+"and-Move-Eingabestil."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
 msgid ""
@@ -68,12 +76,21 @@ msgid ""
 "computer without a touchscreen. Also, make sure to select \"portrait\" under "
 "*Orientation*."
 msgstr ""
+"Der erste Schritt besteht darin, \"Projekteinstellungen\" zu öffnen und den "
+"Abschnitt *Handheld* zu finden. Aktivieren Sie die Option *Emulate "
+"Touchscreen*. Auf diese Weise können Sie Mausklick-Ereignisse genauso "
+"behandeln wie Touch-Ereignisse, so dass Sie das Spiel auf einem Computer "
+"ohne Touchscreen testen können. Achten Sie auch darauf, dass Sie unter "
+"*Orientierung* \"Portrait\" auswählen."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
 "In the *Stretch* section, set *Mode* to \"2d\" and *Aspect* to \"keep\". "
 "This ensures that the game scales consistently on different sized screens."
 msgstr ""
+"Stellen Sie im Abschnitt *Stretch* *Mode* auf \"2d\" und *Aspect* auf \"keep"
+"\". Dadurch wird sichergestellt, dass das Spiel auf unterschiedlich großen "
+"Bildschirmen konsistent skaliert wird."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 msgid ""
@@ -81,16 +98,22 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"Als nächstes müssen wir das Skript ``Player.gd`` ändern, um die "
+"Eingabemethode zu ändern. Wir entfernen die wichtigsten Eingaben und bringen "
+"den Spieler dazu, sich auf ein \"Ziel\" zuzubewegen, das durch das Berühren "
+"(oder Klicken) des Ereignisses festgelegt wird."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
 msgstr ""
+"Hier ist das vollständige Skript für den Spieler, mit Kommentaren, die "
+"aufzeigen, was wir geändert haben:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
 msgid "Export templates"
-msgstr ""
+msgstr "Vorlagen exportieren"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:124
 msgid ""
@@ -99,18 +122,28 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"Um zu exportieren, müssen Sie die *Exportvorlagen* von der Website http://"
+"godotengine.org/download. herunterladen. Diese Vorlagen sind optimierte "
+"Versionen der Engine, ohne dass der Editor für jede Plattform vorkompiliert "
+"wird. Sie können sie auch in Godot herunterladen, indem Sie auf *Editor -> "
+"Manage Export Templates* klicken:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"In dem erscheinenden Fenster können Sie auf \"Download\" klicken, um die "
+"Vorlagenversion zu erhalten, die Ihrer Version von Godot entspricht."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"Wenn Sie Godot aktualisieren, müssen Sie Vorlagen herunterladen, die der "
+"neuen Version entsprechen, da sonst Ihre exportierten Projekte "
+"möglicherweise nicht ordnungsgemäß funktionieren."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
 #, fuzzy
@@ -122,12 +155,17 @@ msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
 msgstr ""
+"Anschließend können Sie die Exporteinstellungen konfigurieren, indem Sie auf "
+"*Projekt -> Exportieren* klicken:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:146
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"Erstellen Sie eine neue Exportvorgabe, indem Sie auf \"Hinzufügen...\" "
+"klicken und eine Plattform auswählen. Sie können beliebig viele "
+"Voreinstellungen mit verschiedenen Einstellungen vornehmen."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
 msgid ""
@@ -135,12 +173,18 @@ msgid ""
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"Am unteren Rand des Fensters befinden sich zwei Schaltflächen. \"Export PCK/"
+"ZIP\" erstellt nur eine gepackte Version der Daten Ihres Projekts. Dies "
+"beinhaltet keine ausführbare Datei, so dass das Projekt nicht allein "
+"ausgeführt werden kann."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"Die zweite Schaltfläche, \"Projekt Exportieren\", erstellt eine ausführbare "
+"Datei deines Spieles, z.B. eine ‘.apk‘ für Android oder ‘.exe‘ für Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
 msgid ""

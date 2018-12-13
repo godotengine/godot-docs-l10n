@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,9 +66,10 @@ msgid "Math"
 msgstr "数学"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:28
+#, fuzzy
 msgid ""
-"Math functions like ``abs``, ``acos``, ``asin``, ``atan`` and ``atan2`` are "
-"located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, ``Atan`` and "
+"Math functions, like ``abs``, ``acos``, ``asin``, ``atan`` and ``atan2``, "
+"are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, ``Atan`` and "
 "``Atan2``, instead of in global scope. ``PI`` is ``Mathf.Pi``"
 msgstr ""
 "像 ``abs``，``acos``，``asin``，``atan`` 和 ``atan2`` 这样的数学函数位于"
@@ -80,8 +81,9 @@ msgid "Random"
 msgstr "随机"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:35
+#, fuzzy
 msgid ""
-"Random functions like ``rand_range`` and ``rand_seed`` are located under "
+"Random functions, like ``rand_range`` and ``rand_seed``, are located under "
 "``Random``, so use ``Random.RandRange`` instead of ``rand_range``."
 msgstr ""
 "如“rand_range”和“rand_seed”等随机函数位于“Random”下，所以使用“Random."
@@ -111,7 +113,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:54
 msgid "See also: :ref:`c_sharp_signals`"
-msgstr "另见 :: ref：`c_sharp_signals`"
+msgstr "另见: : ref：`c_sharp_signals`"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:57
 msgid "Singletons"
@@ -138,14 +140,16 @@ msgstr ""
 "``StringExtensions`` 类作为扩展方法提供。 例："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:77
-msgid "There are a few differences though:"
+#, fuzzy
+msgid "There are a few differences, though:"
 msgstr "但是有一些不同之处："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:79
+#, fuzzy
 msgid ""
 "``erase``: Strings are immutable in C#, so we cannot modify the string "
-"passed to the extension method. For this reason ``Erase`` was added as an "
-"extension method of ``StringBuilder`` instead of string. Alternatively you "
+"passed to the extension method. For this reason, ``Erase`` was added as an "
+"extension method of ``StringBuilder`` instead of string. Alternatively, you "
 "can use ``string.Remove``."
 msgstr ""
 "``erase`` ：字符串在C＃中是不可变的，所以我们不能修改传递给扩展方法的字符"
@@ -153,18 +157,20 @@ msgstr ""
 "串。 或者你可以使用 ``string.Remove`` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:83
+#, fuzzy
 msgid ""
-"``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided "
-"which is an overload of ``IsSubsequenceOf`` allowing to explicitly specify "
-"case sensitivity:"
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
+"which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
+"specify case sensitivity:"
 msgstr ""
 "``IsSubsequenceOf``  / ``IsSubsequenceOfi`` ：提供了另一种方法，它是 "
 "``IsSubsequenceOf`` 的重载，允许明确指定区分大小写："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:94
+#, fuzzy
 msgid ""
 "``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
-"``Match`` and ``Matchn``, which allows to explicitly specify case "
+"``Match`` and ``Matchn``, which allows you to explicitly specify case "
 "sensitivity:"
 msgstr ""
 "``Match``  / ``Matchn``  / ``ExprMatch`` ：除了 ``Match`` 和 ``Matchn`` 之外"
@@ -175,22 +181,20 @@ msgid "Basis"
 msgstr "基"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:107
+#, fuzzy
 msgid ""
-"Structs cannot have parameterless constructors in C#, therefore ``new "
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Basis()`` initializes all primitive members to their default value. Use "
-"``Basis.Identity`` for the equivalent to ``Basis()`` in GDScript and C++."
+"``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
 "结构在C＃中不能有无参数构造函数，因此 ``new Basis（）`` 将所有原始成员初始化"
 "为其默认值。 使用 ``Basis.Identity`` 相当于GDScript和C ++中的 ``Basis（）"
 "`` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:111
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:126
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:158
-msgid ""
-"The following methods were converted to properties with their respective "
-"names changed:"
+#, fuzzy
+msgid "The following method was converted to a property with a different name:"
 msgstr "以下方法已转换为属性，其各自的名称已更改："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:114
@@ -228,15 +232,22 @@ msgid "Transform2D"
 msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:122
+#, fuzzy
 msgid ""
-"Structs cannot have parameterless constructors in C#, therefore ``new "
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Transform2D()`` initializes all primitive members to their default value. "
-"Please use ``Transform2D.Identity`` for the equivalent to ``Transform2D()`` "
+"Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
 "in GDScript and C++."
 msgstr ""
 "结构在C＃中不能有无参数构造函数，因此 ``new Transform2D（）`` 将所有原始成员"
 "初始化为其默认值。 请使用 ``Transform2D.Identity`` 代替GDScript和C ++中的 "
 "``Transform2D（）`` 。"
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:126
+msgid ""
+"The following methods were converted to properties with their respective "
+"names changed:"
+msgstr "以下方法已转换为属性，其各自的名称已更改："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:131
 msgid "get_origin()"
@@ -258,6 +269,13 @@ msgstr "旋转"
 msgid "Plane"
 msgstr "平面"
 
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
+#, fuzzy
+msgid ""
+"The following method was converted to a property with a *slightly* different "
+"name:"
+msgstr "以下方法已转换为属性，其各自的名称已更改："
+
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:144
 msgid "center()"
 msgstr "center()"
@@ -271,9 +289,10 @@ msgid "Rect2"
 msgstr "Rect2"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:150
+#, fuzzy
 msgid ""
-"The following fields were converted to properties with their respective "
-"names changed:"
+"The following field was converted to a property with a *slightly* different "
+"name:"
 msgstr "以下字段已转换为属性，其各自的名称已更改："
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
@@ -297,10 +316,11 @@ msgid "Quat"
 msgstr "Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:169
+#, fuzzy
 msgid ""
-"Structs cannot have parameterless constructors in C#, therefore ``new "
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Quat()`` initializes all primitive members to their default value. Please "
-"use ``Quat.Identity`` for the equivalent to ``Quat()`` in GDScript and C++."
+"use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
 msgstr ""
 "结构在C＃中不能有无参数构造函数，因此 ``new Quat（）`` 将所有原始成员初始化为"
 "其默认值。 请使用 ``Quat.Identity`` 相当于GDScript和C ++中的 ``Quat（）`` 。"
@@ -380,8 +400,9 @@ msgid "Vector3[]"
 msgstr "Vector3[]"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:192
+#, fuzzy
 msgid ""
-"In some exceptional cases a raw array (``type[]``) may be required instead "
+"In some exceptional cases, a raw array (``type[]``) may be required instead "
 "of a ``List``."
 msgstr ""
 "在某些特殊情况下，可能需要一个原始数组（ ``type []`` ）而不是 ``List`` 。"
@@ -405,7 +426,8 @@ msgid "Variant"
 msgstr "变种"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:204
-msgid "``System.Object`` (``object``) is used in place of ``Variant``."
+#, fuzzy
+msgid "``System.Object`` (``object``) is used instead of ``Variant``."
 msgstr "``System.Object`` （ ``object`` ）用来代替 ``Variant`` 。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:207
@@ -428,9 +450,10 @@ msgid "Other differences"
 msgstr "其他差异"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
+#, fuzzy
 msgid ""
-"``preload``, ``assert`` and ``yield`` as they work in GDScript are currently "
-"not available in C#."
+"``preload``, ``assert`` and ``yield``, as they work in GDScript, are "
+"currently not available in C#."
 msgstr ""
 "因为它们在GDScript中工作的 ``preload`` ， ``assert`` 和 ``yield`` 目前在C＃中"
 "不可用。"
@@ -481,5 +504,6 @@ msgid "load"
 msgstr "load"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:230
-msgid "GD.load which is the same as ResourceLoader.load"
+#, fuzzy
+msgid "GD.load, which is the same as ResourceLoader.load"
 msgstr "GD.load与ResourceLoader.load相同"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,20 +26,22 @@ msgid "Importing assets in Godot 3.0+"
 msgstr "在 Godot 3.0+ 中导入资产"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
+#, fuzzy
 msgid ""
 "Previously, importing assets in Godot 2.x required manual maintenance of a "
 "separate directory with source assets. Without doing this, it was impossible "
-"to specify how to convert and change import flags for textures, audios, "
+"to specify how to convert and change import flags for textures, audio files, "
 "scenes, etc."
 msgstr ""
 "以前，在Godot 2.x中导入资产需要手动维护一个包含源资产的单独目录。 如果不这样"
 "做，就无法指定如何转换和更改纹理，音频，场景等的导入标志。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
+#, fuzzy
 msgid ""
 "In Godot 3.0, we use a more modern approach to importing: Simply drop your "
-"assets (image files, scenes, audios, fonts, etc) directly in the project "
-"folder (copy them manually with your OS file explorer). Godot will "
+"assets (image files, scenes, audio files, fonts, etc) directly in the "
+"project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
@@ -65,16 +67,18 @@ msgstr ""
 "型中）很容易。 只需在文件系统面板中选择相关资源即可："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
+#, fuzzy
 msgid ""
-"Then, after adjusting the parameters, press \"Reimport\". The parameters "
-"used will be only for this asset and will be used on future reimports."
+"Then, after adjusting the parameters, press \"Reimport\". These parameters "
+"will only be used for this asset and on future reimports."
 msgstr ""
 "并且，在调整参数后，按下“重新导入”。 所使用的参数将仅用于此资产，并将用于未来"
 "的重新导入。"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
+#, fuzzy
 msgid ""
-"Changing import parameters of several assets at the same time is also "
+"Changing the import parameters of several assets at the same time is also "
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
@@ -112,11 +116,12 @@ msgid ""
 msgstr "此外，额外的资产将预设在隐藏的res：//.import文件夹中："
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
+#, fuzzy
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
-"this folder to the version control system is optional. It can save time on "
-"reimporting time when checking out in another computer, but it takes "
+"this folder to the version control system is optional. It can shorten "
+"reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
 "如果此文件夹中的任何文件被删除（或整个文件夹），则资产将自动重新导入。 因此，"

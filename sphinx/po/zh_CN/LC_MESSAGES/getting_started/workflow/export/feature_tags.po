@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -298,8 +298,9 @@ msgid "Custom features"
 msgstr "自定义功能"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:92
+#, fuzzy
 msgid ""
-"It is possible to add custom features to a build, use the relevant field in "
+"It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
 "可以向构建添加自定义功能，使用用于生成它的 * export preset * 中的相关字段："
@@ -309,18 +310,20 @@ msgid "Overriding project settings"
 msgstr "重载项目设置"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
+#, fuzzy
 msgid ""
 "Features can be used to override specific configuration values in the "
-"*Project Settings*. This allows to better customize any configuration when "
-"doing a build."
+"*Project Settings*. This allows you to better customize any configuration "
+"when doing a build."
 msgstr ""
 "功能可用于重载* Project Settings *中的特定配置值。 这样可以在构建时更好地定制"
 "任意配置。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
+#, fuzzy
 msgid ""
 "In the following example, a different icon is added for the demo build of "
-"the game (which was customized in a special export preset which, in turn, "
+"the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
 "在下面的示例中，为游戏的演示版本添加了一个不同的图标（在特定的导出预设中进行"
@@ -335,8 +338,9 @@ msgid "Default overrides"
 msgstr "默认重载"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:115
+#, fuzzy
 msgid ""
-"There are already a lot of settings that come with overrides by default, "
+"There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
 msgstr ""
 "默认情况下，已有很多设置与其重载一起出现，它们可以在项目设置的许多地方中找"
@@ -347,9 +351,10 @@ msgid "Customizing Build"
 msgstr "自定义生成"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:123
+#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
-"custom **ExportPlugin**. They also are used to specify which shared library "
+"custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
 "通过编写自定义的** ExportPlugin **，功能标签也可用于定制构建过程。 它们也被用"

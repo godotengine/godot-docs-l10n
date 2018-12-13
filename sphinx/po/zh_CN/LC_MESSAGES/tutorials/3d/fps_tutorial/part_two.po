@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,8 +63,8 @@ msgid ""
 "and select the :ref:`AnimationPlayer <class_AnimationPlayer>` Node "
 "(``Player`` -> ``Rotation_Helper`` -> ``Model`` -> ``Animation_Player``)."
 msgstr ""
-"首先，我们需要一种方法来处理不断变化的动画。 打开``Player.tscn``并选择：ref："
-"`AnimationPlayer <class_AnimationPlayer>`Node（``Player``  - "
+"首先，我们需要一种方法来处理不断变化的动画。 打开``Player.tscn``并选择 ："
+"ref：`AnimationPlayer <class_AnimationPlayer>`Node（``Player``  - "
 ">``Rotation_Helper``  - >``Model``  - >``Animation_Player``）。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:28
@@ -72,7 +72,7 @@ msgid ""
 "Create a new script called ``AnimationPlayer_Manager.gd`` and attach that to "
 "the :ref:`AnimationPlayer <class_AnimationPlayer>`."
 msgstr ""
-"创建一个名为``AnimationPlayer_Manager.gd``的新脚本，并将其附加到：ref："
+"创建一个名为``AnimationPlayer_Manager.gd``的新脚本，并将其附加到 ：ref："
 "`AnimationPlayer <class_AnimationPlayer>`。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:30
@@ -890,7 +890,6 @@ msgstr ""
 "<class_Area>`来检查我们是否与某些东西相撞"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:451
-#, fuzzy
 msgid ""
 "Why are we using an :ref:`Area <class_Area>` and not a :ref:`RigidBody "
 "<class_RigidBody>`? The main reason we're not using a :ref:`RigidBody "
@@ -906,7 +905,6 @@ msgstr ""
 "个：ref：`RigidBody <class_RigidBody>`节点，包括其他子弹，将受到影响。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:455
-#, fuzzy
 msgid ""
 "Another reason is simply because it is easier to detect collisions with an :"
 "ref:`Area <class_Area>`!"

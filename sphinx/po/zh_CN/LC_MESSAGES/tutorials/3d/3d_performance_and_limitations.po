@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,11 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:9
+#, fuzzy
 msgid ""
-"Godot follows a balanced performance philosophy. In performance world, there "
-"are always trade-offs which consist in trading speed for usability and "
-"flexibility. Some practical examples of this are:"
+"Godot follows a balanced performance philosophy. In the performance world, "
+"there are always trade-offs, which consist of trading speed for usability "
+"and flexibility. Some practical examples of this are:"
 msgstr ""
 "戈多遵循平衡的表现理念。 在绩效世界中，总是需要权衡交易的可用性和灵活性。 一"
 "些实际的例子是："
@@ -56,11 +57,12 @@ msgstr ""
 "类以降低成本，但同时排序会产生成本。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:22
+#, fuzzy
 msgid ""
 "In 3D physics a similar situation happens. The best algorithms to handle "
 "large amounts of physics objects (such as SAP) are slow at insertion/removal "
 "of objects and ray-casting. Algorithms that allow faster insertion and "
-"removal, as well as ray-casting will not be able to handle as many active "
+"removal, as well as ray-casting, will not be able to handle as many active "
 "objects."
 msgstr ""
 "在3D物理学中，会发生类似的情况。 处理大量物理对象（例如SAP）的最佳算法在插入/"
@@ -68,10 +70,11 @@ msgstr ""
 "能多的活动对象。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:28
+#, fuzzy
 msgid ""
 "And there are many more examples of this! Game engines strive to be general "
 "purpose in nature, so balanced algorithms are always favored over algorithms "
-"that might be the fast in some situations and slow in others.. or algorithms "
+"that might be fast in some situations and slow in others.. or algorithms "
 "that are fast but make usability more difficult."
 msgstr ""
 "还有更多的例子！ 游戏引擎本质上是通用的，因此平衡算法总是比在某些情况下可能快"
@@ -116,8 +119,8 @@ msgid ""
 "much as possible. Godot's priorities will be like this:"
 msgstr ""
 "Godot渲染器与那里的渲染器略有不同。 它旨在尽可能减少GPU状态的变化。 ：ref："
-"`class_SpatialMaterial`在重用需要类似着色器的材质方面做得很好但是，如果使用自"
-"定义着色器，请确保尽可能多地重用它们。 戈多的优先事项如下："
+"`class_SpatialMaterial` 在重用需要类似着色器的材质方面做得很好但是，如果使用"
+"自定义着色器，请确保尽可能多地重用它们。 戈多的优先事项如下："
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:57
 msgid ""
@@ -130,25 +133,28 @@ msgstr ""
 "物体（数百或数千），请尝试重复使用这些材料，或者在最坏的情况下使用地图集。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:61
+#, fuzzy
 msgid ""
 "**Reusing Shaders**: If materials can't be reused, at least try to re-use "
-"shaders (or SpatialMaterials with different parameters but same "
+"shaders (or SpatialMaterials with different parameters but the same "
 "configuration)."
 msgstr ""
 "**重用着色器**：如果材料无法重复使用，至少尝试重新使用着色器（或具有不同参数"
 "但配置相同的SpatialMaterials）。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:65
+#, fuzzy
 msgid ""
 "If a scene has, for example, 20.000 objects with 20.000 different materials "
 "each, rendering will be slow. If the same scene has 20.000 objects, but only "
-"uses 100 materials, rendering will be blazing fast."
+"uses 100 materials, rendering will be blazingly fast."
 msgstr ""
 "例如，如果一个场景有20.000个对象，每个对象有20.000个不同的材质，那么渲染将会"
 "很慢。如果同一场景有20.000个对象，但只使用100个素材，渲染将非常迅速。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:71
-msgid "Pixels cost vs vertex cost"
+#, fuzzy
+msgid "Pixel cost vs vertex cost"
 msgstr "像素成本vs顶点成本"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:73
@@ -216,10 +222,11 @@ msgstr ""
 "入硬件以提高性能（但这也增加了功耗）。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:106
+#, fuzzy
 msgid ""
 "On mobile, pulling more power is not an option, so a technique called \"Tile "
 "Based Rendering\" is used (almost every mobile hardware uses a variant of "
-"it), which divide the screen into a grid. Each cell keeps the list of "
+"it), which divides the screen into a grid. Each cell keeps the list of "
 "triangles drawn to it and sorts them by depth to minimize *overdraw*. This "
 "technique improves performance and reduces power consumption, but takes a "
 "toll on vertex performance. As a result, fewer vertices and triangles can be "
@@ -278,10 +285,11 @@ msgid "Texture compression"
 msgstr "纹理压缩"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:136
+#, fuzzy
 msgid ""
 "Godot offers to compress textures of 3D models when imported (VRAM "
 "compression). Video RAM compression is not as efficient in size as PNG or "
-"JPG when stored, but increase performance enormously when drawing."
+"JPG when stored, but increases performance enormously when drawing."
 msgstr ""
 "Godot提供在导入时压缩3D模型的纹理（VRAM压缩）。 视频RAM压缩在存储时的大小不如"
 "PNG或JPG，但在绘制时极大地提高了性能。"
@@ -341,8 +349,8 @@ msgid ""
 "objects in different ranges works as LOD."
 msgstr ""
 "如前所述，在某些情况下，使用具有较少顶点的对象可以提高性能。 Godot有一个简单"
-"的系统来改变细节层次：ref：`GeometryInstance <class_GeometryInstance>`基于对"
-"象的可见范围可以定义。 在不同范围内具有多个GeometryInstance对象可用作LOD。"
+"的系统来改变细节层次 ：ref：`GeometryInstance <class_GeometryInstance>` 基于"
+"对象的可见范围可以定义。 在不同范围内具有多个GeometryInstance对象可用作LOD。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:172
 msgid "Use instancing (MultiMesh)"
@@ -355,8 +363,8 @@ msgid ""
 "drawing of dozens of thousands of objects at very little performance cost, "
 "making it ideal for flocks, grass, particles, etc."
 msgstr ""
-"如果必须在同一个地方或附近绘制几个相同的对象，请尝试使用：ref：`MultiMesh "
-"<class_MultiMesh>`。 MultiMesh允许以极低的性能成本绘制数十万个物体，使其成为"
+"如果必须在同一个地方或附近绘制几个相同的对象，请尝试使用 ：ref：`MultiMesh "
+"<class_MultiMesh>` 。 MultiMesh允许以极低的性能成本绘制数十万个物体，使其成为"
 "鸡群，草，颗粒等的理想选择。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:181
@@ -371,8 +379,8 @@ msgid ""
 "adding indirect light bounces."
 msgstr ""
 "小灯通常不是性能问题。 阴影多一点。 一般来说，如果几个灯需要影响一个场景，理"
-"想的是烘烤它（：ref：`doc_baked_lightmaps`）。 烘焙还可以通过添加间接光反弹来"
-"改善场景质量。"
+"想的是烘烤它（ ：ref：`doc_baked_lightmaps` ）。 烘焙还可以通过添加间接光反弹"
+"来改善场景质量。"
 
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:188
 msgid ""

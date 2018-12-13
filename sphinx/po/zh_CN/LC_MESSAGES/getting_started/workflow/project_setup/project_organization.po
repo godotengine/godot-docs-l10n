@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,12 +26,13 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:9
+#, fuzzy
 msgid ""
 "This tutorial aims to propose a simple workflow on how to organize projects. "
 "Since Godot allows the programmer to use the file-system as they please, "
 "figuring out a way to organize projects when starting to use the engine can "
-"be a little challenging. Because of this, the tutorial describes simple "
-"workflow which should work as a starting point regardless of whether it is "
+"be a little challenging. Because of this, the tutorial describes a simple "
+"workflow, which should work as a starting point, regardless of whether it is "
 "used."
 msgstr ""
 "本教程旨在提出一个关于如何组织项目的简单工作流程。 既然Godot允许程序员随心所"
@@ -55,9 +56,10 @@ msgid ""
 msgstr "Godot 本身是基于场景的，并使用了文件系统，没有元数据或资产数据库。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:25
+#, fuzzy
 msgid ""
-"Unlike other engines, a lot of resources are contained within the scene "
-"itself, so the amount of files in the filesystem is considerably lower."
+"Unlike other engines, many resources are contained within the scene itself, "
+"so the amount of files in the filesystem is considerably lower."
 msgstr ""
 "不像其他的引擎，场景本身包含了大量资源，因此文件系统中的文件数量要少得多。"
 
@@ -69,10 +71,11 @@ msgstr ""
 "考虑到这一点，最常见的方法是将资产按照场景分组，当项目变大时，更易于维护。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:32
+#, fuzzy
 msgid ""
-"As an example, one can usually place into a single folder their basic assets "
-"such as sprite images, 3D model meshes, materials, and music, etc. They can "
-"then use a separate folder to store built levels that use them."
+"As an example, one can usually place into a single folder their basic "
+"assets, such as sprite images, 3D model meshes, materials, and music, etc. "
+"They can then use a separate folder to store built levels that use them."
 msgstr ""
 "例如，基本的精灵图像，3D 模型场景或网格，材质等通常可以组织到一起，使用单独的"
 "文件夹来存储它们，从而将它们用于构建关卡。"

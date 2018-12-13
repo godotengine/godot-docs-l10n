@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,8 @@ msgid "Importing images"
 msgstr "Importar imágenes"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
-msgid "Why importing them?"
+#, fuzzy
+msgid "Why import them?"
 msgstr "¿Por qué importarlas?"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
@@ -236,12 +237,13 @@ msgid "HDR Mode"
 msgstr "Modo HDR"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:72
+#, fuzzy
 msgid ""
 "Godot supports high dynamic range textures (as .HDR or .EXR). These are "
-"mostly useful as high dynamic range equirectancular panorama skys (the "
-"internet has plenty of if you look for them), which replace Cubemaps in "
-"Godot 2.x. Modern PCs support the BC6H VRAM format, but there are still "
-"plenty that do not."
+"mostly useful as high dynamic range equirectangular panorama skies (the "
+"internet has plenty if you search for them), which replace Cubemaps in Godot "
+"2.x. Modern PCs support the BC6H VRAM format, but there are still plenty "
+"that do not."
 msgstr ""
 "Godot admite texturas de alto rango dinámico (como .HDR o .EXR). Estos son "
 "principalmente útiles como cielos panoramicos equirectanculares de alto "
@@ -250,9 +252,10 @@ msgstr ""
 "aún hay muchos que no lo hacen."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
+#, fuzzy
 msgid ""
-"If you want Godot to ensure full compatibility in for kind of textures, "
-"enable the \"Force RGBE\" option."
+"If you want Godot to ensure full compatibility in terms of the kind of "
+"textures, enable the \"Force RGBE\" option."
 msgstr ""
 "Si quieres que Godot garantice la compatibilidad completa para todo tipo de "
 "texturas, activa la opción \"Forzar RGBE\"."
@@ -262,12 +265,13 @@ msgid "Normal Map"
 msgstr "Mapa de Normales"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
+#, fuzzy
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
 "required. Given regular texture compression algorithms produce artifacts "
 "that don't look that nice in normal maps, the RGTC compression format is the "
 "best fit for this data. Forcing this option to \"Enabled\" will make Godot "
-"import the image as RGTC compressed. By default, it's set to \"Detect\" "
+"import the image as RGTC compressed. By default, it's set to \"Detect\", "
 "which means that if the texture is ever used as a normal map, it will be "
 "changed to \"Enabled\" and reimported automatically."
 msgstr ""
@@ -317,8 +321,9 @@ msgid "Filter"
 msgstr "Filtro"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:100
+#, fuzzy
 msgid ""
-"When pixels become larger than the screen pixels, this options enable linear "
+"When pixels become larger than the screen pixels, this option enables linear "
 "interpolation for them. The result is a smoother (less blocky) texture. This "
 "setting can be commonly used in 2D and 3D, but it's usually disabled when "
 "making pixel perfect games."
@@ -362,8 +367,9 @@ msgstr ""
 "quiere la compatibilidad total y necesita utilizar mipmaps."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
+#, fuzzy
 msgid ""
-"When doing 3D, mipmap should be turned on as this also improves performance "
+"When doing 3D, mipmap should be turned on, as this also improves performance "
 "(smaller versions of the texture are used for objects further away)."
 msgstr ""
 "Al hacer 3D, debe activarse mipmaps ya que también mejora el rendimiento "
@@ -375,9 +381,10 @@ msgid "Anisotropic"
 msgstr "Anisótropo"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:118
+#, fuzzy
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
-"them have more detail by reducing blurryness."
+"them have more detail by reducing blurriness."
 msgstr ""
 "Cuando las texturas son casi paralelas a la vista (como los suelos), esta "
 "opción les permite tener más detalles al reducir la borrosidad."
@@ -414,10 +421,11 @@ msgid "Fix Alpha Border"
 msgstr "Fix Alpha Border"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:134
+#, fuzzy
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
 "transparency to non transparency. It helps mitigate the outline effect when "
-"exporting images from Photoshop and the likes."
+"exporting images from Photoshop and the like."
 msgstr ""
 "Esto coloca píxeles del mismo color circundante pasando de transparente a no "
 "transparente. Ayuda a mitigar el efecto de contorno al exportar imágenes "
@@ -448,14 +456,16 @@ msgstr ""
 "modo de mezcla PREMULT ALPHA en los elementos del lienzo que lo necesiten."
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:148
-msgid "HDR as SRGB"
+#, fuzzy
+msgid "HDR as sRGB"
 msgstr "HDR como SRGB"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
+#, fuzzy
 msgid ""
-"Some few HDR files are broken and contain SRGB color data. It is advised to "
-"not use them but, in the worst case, toggling this option on will make them "
-"look right."
+"A few HDR files are broken and contain sRGB color data. It is advised not to "
+"use them, but, in the worst-case scenario, toggling this option on will make "
+"them look right."
 msgstr ""
 "Algunos archivos HDR están rotos y contienen datos de color SRGB. Se "
 "aconseja no utilizarlos, pero, en el peor de los casos, alternar esta opción "
@@ -468,7 +478,7 @@ msgstr "Vertex Color (Color de vértice)"
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
 msgid ""
-"Reverses the image's color. This is useful for example to convert a height "
+"Reverses the image's color. This is useful, for example, to convert a height "
 "map generated by external programs to depth map to use with :ref:"
 "`doc_spatial_material`."
 msgstr ""

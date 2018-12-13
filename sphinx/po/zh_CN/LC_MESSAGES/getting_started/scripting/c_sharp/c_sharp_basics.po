@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,14 +44,15 @@ msgid ""
 "ref:`Scripting section <doc_scripting>` of the step-by-step tutorial."
 msgstr ""
 "这个页面简要介绍了C＃，它是什么以及如何在Godot中使用它。 之后，您可能需要查"
-"看：ref：`如何使用特定功能 <doc_c_sharp_features>`，阅读：ref：`C＃和"
-"GDScript API之间的差异 <doc_c_sharp_differences>` 和（重新）访问：ref： `逐步"
-"教程的脚本部分 <doc_scripting>`。"
+"看 ：ref：`如何使用特定功能 <doc_c_sharp_features>`，阅读 ：ref：`C＃和"
+"GDScript API之间的差异 <doc_c_sharp_differences>` 和（重新）访问 ：ref： `逐"
+"步教程的脚本部分 <doc_scripting>`。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:16
+#, fuzzy
 msgid ""
 "C# is a high-level programming language developed by Microsoft. In Godot, it "
-"is implemented with the Mono 5.x .NET framework including full support for "
+"is implemented with the Mono 5.x .NET framework, including full support for "
 "C# 7.0. Mono is an open source implementation of Microsoft's .NET Framework "
 "based on the ECMA standards for C# and the Common Language Runtime. A good "
 "starting point for checking its capabilities is the `Compatibility <http://"
@@ -103,8 +104,9 @@ msgstr ""
 "用于Godot 3.0.3+。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:35
+#, fuzzy
 msgid ""
-"You also need MSBuild (at least version 15.0) which should come with the "
+"You also need MSBuild (at least version 15.0), which should come with the "
 "Mono installation."
 msgstr "您还需要MSBuild（至少版本15.0），它应该随Mono安装一起提供。"
 
@@ -133,8 +135,8 @@ msgid ""
 "include Mono support in your build outlined on the :ref:"
 "`doc_compiling_with_mono` page."
 msgstr ""
-"如果您从源代码构建Godot，请确保按照以下步骤在您的构建中包含Mono支持：ref："
-"`doc_compiling_with_mono`页面。"
+"如果您从源代码构建Godot，请确保按照以下步骤在您的构建中包含Mono支持 ：ref："
+"`doc_compiling_with_mono` 页面。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:44
 msgid ""
@@ -195,22 +197,24 @@ msgid ""
 "from GDScript."
 msgstr ""
 "请注意，虽然某些细节发生了变化，但在使用C＃进行脚本编写时，大多数情况都是一样"
-"的。 如果您是Godot的新手，您可能需要仔细阅读以下教程：ref：`doc_scripting`。 "
-"虽然文档中的某些地方仍缺少C＃示例，但大多数内容都可以从GDScript轻松转移。"
+"的。 如果您是Godot的新手，您可能需要仔细阅读以下教程 ：ref："
+"`doc_scripting`。 虽然文档中的某些地方仍缺少C＃示例，但大多数内容都可以从"
+"GDScript轻松转移。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:71
 msgid "Project setup and workflow"
 msgstr "项目设置和工作流程"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:73
+#, fuzzy
 msgid ""
 "When you create the first C# script, Godot initializes the C# project files "
 "for your Godot project. This includes generating a C# solution (``.sln``) "
-"and project (``.csproj``) as well as some utility files and folders (``."
-"mono``, sometimes ``Properties``). All of these but ``.mono`` are important "
-"and should be kept in your version control system. ``.mono`` can be safely "
-"added to the ignore list of your VCS. When troubleshooting, it sometimes can "
-"help to delete the ``.mono`` folder and let it regenerate."
+"and a project (``.csproj``) file, as well as some utility files and folders "
+"(``.mono``, sometimes ``Properties``). All of these but ``.mono`` are "
+"important and should be kept in your version control system. ``.mono`` can "
+"be safely added to the ignore list of your VCS. When troubleshooting, it can "
+"sometimes help to delete the ``.mono`` folder and let it regenerate."
 msgstr ""
 "当您创建第一个C＃脚本时，Godot会为您的Godot项目初始化C＃项目文件。 这包括生成"
 "C＃解决方案（``.sln``）和项目（``.csproj``）以及一些实用程序文件和文件夹（``."
@@ -219,9 +223,10 @@ msgstr ""
 "障排除时，有时可以帮助删除``.mono``文件夹并让它重新生成。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:78
+#, fuzzy
 msgid ""
-"Note that currently there are some issues where the Godot and the C# project "
-"don't stay in sync; if you delete, rename or move things like scripts or "
+"Note that currently, there are some issues where Godot and the C# project "
+"don't stay in sync; if you delete, rename or move things, like scripts or "
 "nodes, they may no longer match up. In this case, it can help to edit the "
 "solution files manually."
 msgstr ""
@@ -229,12 +234,13 @@ msgstr ""
 "节点等内容，它们可能不再匹配。 在这种情况下，可以帮助手动编辑解决方案文件。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:81
+#, fuzzy
 msgid ""
 "Example: If you created a script (e.g. ``Test.cs``) and delete it in Godot, "
 "the compilation will fail because now the missing file is still expected to "
-"be there by the CS project. You can for now simply open up the ``.csproj`` "
-"and look for the ``ItemGroup``, there should be a line included like the "
-"following:"
+"be there by the CS project. For now, you can simply open up the ``.csproj`` "
+"file and look for the ``ItemGroup``, there should be a line included like "
+"the following:"
 msgstr ""
 "示例：如果您创建了一个脚本（例如``Test.cs``）并在Godot中将其删除，则编译将失"
 "败，因为现在仍然希望CS项目存在丢失的文件。 你现在可以简单地打开``.csproj``并"
@@ -265,9 +271,9 @@ msgid ""
 "those, see the class reference pages for :ref:`@GDScript <class_@gdscript>` "
 "and :ref:`@GlobalScope <class_@globalscope>`."
 msgstr ""
-"正如您所看到的，GDScript中通常位于全局范围内的东西，如Godot的``print``函数，"
-"可以在``GD``命名空间中找到。 有关这些的列表，请参阅类参考页面：ref："
-"`@GDScript <class_ @ gdscript>`和：ref：`@GlobalScope <class_ @ "
+"正如您所看到的，GDScript中通常位于全局范围内的东西，如Godot的 ``print`` 函"
+"数，可以在 ``GD`` 命名空间中找到。 有关这些的列表，请参阅类参考页面 ：ref："
+"`@GDScript <class_ @ gdscript>` 和 ：ref：`@GlobalScope <class_ @ "
 "globalscope>`。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:128
@@ -296,7 +302,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:138
 msgid "For more, see the :ref:`doc_c_sharp_differences` page."
-msgstr "有关更多信息，请参阅：ref：`doc_c_sharp_differences`页面。"
+msgstr "有关更多信息，请参阅 ：ref：`doc_c_sharp_differences` 页面。"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:141
 msgid "Current gotchas and known issues"
@@ -375,11 +381,12 @@ msgid "Using Nuget packages in Godot"
 msgstr "在Godot中使用Nuget包"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_basics.rst:161
+#, fuzzy
 msgid ""
 "`Nuget <https://www.nuget.org/>`_ Packages can be installed and used with "
 "Godot, as with any project. Many IDEs (such as vs code) can add packages "
 "directly. They can also be added manually by adding the package reference in "
-"the .csproj file located in the project root:"
+"the ``.csproj`` file located in the project root:"
 msgstr ""
 "`Nuget <https://www.nuget.org/>`_可以像Godot一样安装和使用Godot，就像任何项目"
 "一样。 许多IDE（例如vs代码）可以直接添加包。 也可以通过在项目根目录中的."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,10 +26,11 @@ msgid "Importing assets in Godot 3.0+"
 msgstr "Importando ativos em Godot 3.0+"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:9
+#, fuzzy
 msgid ""
 "Previously, importing assets in Godot 2.x required manual maintenance of a "
 "separate directory with source assets. Without doing this, it was impossible "
-"to specify how to convert and change import flags for textures, audios, "
+"to specify how to convert and change import flags for textures, audio files, "
 "scenes, etc."
 msgstr ""
 "Anteriormente, a importação de ativos no Godot 2.x exigia a manutenção "
@@ -38,10 +39,11 @@ msgstr ""
 "texturas, áudios, cenas etc."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:14
+#, fuzzy
 msgid ""
 "In Godot 3.0, we use a more modern approach to importing: Simply drop your "
-"assets (image files, scenes, audios, fonts, etc) directly in the project "
-"folder (copy them manually with your OS file explorer). Godot will "
+"assets (image files, scenes, audio files, fonts, etc) directly in the "
+"project folder (copy them manually with your OS file explorer). Godot will "
 "automatically import these files internally and keep the imported resources "
 "hidden in a res://.import folder."
 msgstr ""
@@ -74,17 +76,19 @@ msgstr ""
 "do sistema de arquivos:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:31
+#, fuzzy
 msgid ""
-"Then, after adjusting the parameters, press \"Reimport\". The parameters "
-"used will be only for this asset and will be used on future reimports."
+"Then, after adjusting the parameters, press \"Reimport\". These parameters "
+"will only be used for this asset and on future reimports."
 msgstr ""
 "Depois de ajustar os parâmetros, pressione \"Reimport\". Os parâmetros "
 "utilizados serão apenas para este ativo e serão usados em futuras "
 "reimportações."
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:34
+#, fuzzy
 msgid ""
-"Changing import parameters of several assets at the same time is also "
+"Changing the import parameters of several assets at the same time is also "
 "possible. Simply select all of them together in the resources dock and the "
 "exposed parameters will apply to all of them when reimporting."
 msgstr ""
@@ -128,11 +132,12 @@ msgstr ""
 "oculta:"
 
 #: ../../docs/getting_started/workflow/assets/import_process.rst:57
+#, fuzzy
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
-"this folder to the version control system is optional. It can save time on "
-"reimporting time when checking out in another computer, but it takes "
+"this folder to the version control system is optional. It can shorten "
+"reimporting time when checking out on another computer, but it takes "
 "considerably more space and transfer time. Pick your poison!"
 msgstr ""
 "Se qualquer um dos arquivos presentes nessa pasta for apagado (ou a pasta "

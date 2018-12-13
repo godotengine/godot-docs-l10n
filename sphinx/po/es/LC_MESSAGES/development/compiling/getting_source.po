@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/getting_source.rst:4
 msgid "Getting the source"
-msgstr ""
+msgstr "Consiguiendo el código fuente"
 
 #: ../../docs/development/compiling/getting_source.rst:7
 msgid "Downloading the Godot source code"
-msgstr ""
+msgstr "Descargando el código fuente de Godot"
 
 #: ../../docs/development/compiling/getting_source.rst:9
 msgid ""
@@ -31,6 +31,9 @@ msgid ""
 "<doc_introduction_to_the_buildsystem>` and compiling Godot, you need to "
 "actually download the Godot source code."
 msgstr ""
+"Antes de :ref:`adentrarnos en el sistema de construcción SCons "
+"<doc_introduction_to_the_buildsystem>` y compilar Godot, necesitas descargar "
+"el código fuente."
 
 #: ../../docs/development/compiling/getting_source.rst:12
 msgid ""
@@ -38,18 +41,26 @@ msgid ""
 "godot>`__ and while you can manually download it via the website, in general "
 "you want to do it via the ``git`` version control system."
 msgstr ""
+"El código fuente está disponible en `GitHub <https://github.com/godotengine/"
+"godot>`__ y aunque puedes descargarlo de manera manual desde la página web, "
+"en general deberías hacerlo a través del sistema de control de versiones "
+"``git``."
 
 #: ../../docs/development/compiling/getting_source.rst:16
 msgid ""
 "If you don't know much about ``git`` yet, there are a great number of "
 "`tutorials <https://git-scm.com/book>`__ available on various websites."
 msgstr ""
+"Si todavía no sabes mucho sobre ``git``, hay un gran número de `tutoriales "
+"<https://git-scm.com/book>`__ disponibles en diversos sitios web."
 
 #: ../../docs/development/compiling/getting_source.rst:19
 msgid ""
 "In general, you need to install ``git`` and/or one of the various GUI "
 "clients."
 msgstr ""
+"En general, necesitas instalar ``git`` y/o uno de los diversos interfaces "
+"visuales."
 
 #: ../../docs/development/compiling/getting_source.rst:21
 msgid ""
@@ -64,6 +75,8 @@ msgid ""
 "If you are using the ``git`` command line client, this is done by entering "
 "the following in a terminal:"
 msgstr ""
+"Si estás usando el cliente de línea de comandos de ``git``, esto se realiza "
+"escribiendo lo siguiente en el terminal:"
 
 #: ../../docs/development/compiling/getting_source.rst:31
 msgid ""
@@ -72,14 +85,22 @@ msgid ""
 "want. You can then download and extract the source from the download link on "
 "the page."
 msgstr ""
+"Para conseguir cualquiera de los lanzamientos oficiales de Godot, visita la "
+"`página de lanzamientos <https://github.com/godotengine/godot/releases>`__ y "
+"haz click en el enlace de la versión que versión que necesites. Podrás "
+"descargar y extraer el código fuente de esa misma página de descargas."
 
 #: ../../docs/development/compiling/getting_source.rst:35
 msgid ""
 "There are also generally branches besides ``master`` for each major version."
 msgstr ""
+"Generalmente hay más bifurcaciones de código además de la rama ``master`` "
+"para cada versión mayor."
 
 #: ../../docs/development/compiling/getting_source.rst:37
 msgid ""
 "After downloading the Godot source code, you can :ref:`continue to compiling "
 "Godot <doc_introduction_to_the_buildsystem>`."
 msgstr ""
+"Después de descargar el código fuente puedes :ref:`continuar hacia la "
+"sección de compilado de Godot <doc_introduction_to_the_buildsystem>`."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,9 +139,10 @@ msgstr ""
 "dentro do painel Nó:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
+#, fuzzy
 msgid ""
-"And the second way is from code. One example would be to tag scenes which "
-"are enemies:"
+"And the second way is from code. One example would be to tag nodes which are "
+"enemies:"
 msgstr ""
 "E a segunda forma é a partir de código. Um exemplo seria etiquetar cenas que "
 "são inimigos:"
@@ -331,11 +332,11 @@ msgstr ""
 "instâncias desejar. É útil especialmente para, rapidamente, criar instâncias "
 "de vários inimigos, balas e outras entidades na cena ativa."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:387
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
 msgid "Register scripts as classes"
 msgstr "Registre scripts como classes"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:389
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:391
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
@@ -345,7 +346,7 @@ msgstr ""
 "com o editor. Por padrão, você só pode acessar scripts sem nome ao carregar "
 "o arquivo diretamente."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:393
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:395
 msgid ""
 "You can name a script and register it as a type in the editor with the "
 "``class_name`` keyword followed by the class's name. You may add a comma and "
@@ -358,11 +359,11 @@ msgstr ""
 "ícone. Então, você encontrará seu novo tipo na janela de criação de Nodes e "
 "recursos."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:415
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
 msgid "In Godot 3.1:"
 msgstr "Em Godot 3.1:"
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:417
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:419
 msgid ""
 "Only GDScript and NativeScript, i.e., C++ and other GDNative-powered "
 "languages, can register scripts."
@@ -370,6 +371,6 @@ msgstr ""
 "Apenas GDScript e NativeScript (ex: C++) e outras linguagens baseadas em "
 "GDNative, podem registrar scripts."
 
-#: ../../docs/getting_started/step_by_step/scripting_continued.rst:418
+#: ../../docs/getting_started/step_by_step/scripting_continued.rst:420
 msgid "Only GDScript creates global variables for each named script."
 msgstr "Apenas GDScript pode criar variáveis globais para cada script nomeado."

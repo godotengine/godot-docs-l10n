@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,9 +22,10 @@ msgid "Features"
 msgstr "Funkcje"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:6
+#, fuzzy
 msgid ""
-"This page provides an overview over the commonly used features of both C# "
-"and Godot and how they are used together."
+"This page provides an overview of the commonly used features of both C# and "
+"Godot and how they are used together."
 msgstr ""
 "Ta strona zawiera przegląd powszechnie używanych funkcji C# i Godot oraz "
 "sposób ich wspólnego używania."
@@ -35,8 +36,9 @@ msgid "Type conversion and casting"
 msgstr "Konwersja i Rzutowanie"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:12
+#, fuzzy
 msgid ""
-"C# is a statically typed language. Therefore you can't do the following:"
+"C# is a statically typed language. Therefore, you can't do the following:"
 msgstr ""
 "C# jest językiem statycznie typowanym. W związku z tym nie można wykonać "
 "następujących czynności:"
@@ -58,8 +60,9 @@ msgid "**Casting and Type Checking**"
 msgstr "**Rzutowanie i sprawdzanie typu**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:26
+#, fuzzy
 msgid ""
-"Throws ``InvalidCastException`` if the returned node cannot be casted to "
+"Throws ``InvalidCastException`` if the returned node cannot be cast to "
 "Sprite. You would use it instead of the ``as`` operator if you are pretty "
 "sure it won't fail."
 msgstr ""
@@ -73,8 +76,8 @@ msgstr "**Używanie AS jako operator**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:36
 msgid ""
-"The ``as`` operator returns null if the node cannot be casted to Sprite, and "
-"for this reason it cannot be used with value types."
+"The ``as`` operator returns null if the node cannot be cast to Sprite, and "
+"for that reason, it cannot be used with value types."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:45
@@ -104,10 +107,11 @@ msgid "**Type checking using the IS operator**"
 msgstr "**Sprawdzanie **"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:66
+#, fuzzy
 msgid ""
-"To check if the node can be casted to Sprite, you can use the ``is`` "
-"operator. The ``is`` operator returns false if the node cannot be casted to "
-"Sprite, otherwise it returns true."
+"To check if the node can be cast to Sprite, you can use the ``is`` operator. "
+"The ``is`` operator returns false if the node cannot be cast to Sprite, "
+"otherwise it returns true."
 msgstr ""
 "Aby sprawdzić, czy węzeł może być rzutowany na Sprite, można użyć operatora "
 "``is``. Operator ``is`` zwraca false jeśli węzeł nie może być rzutowany na "
@@ -167,12 +171,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:148
+#, fuzzy
 msgid ""
 "Signals support parameters and bound values of all the `built-in types "
 "<https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/"
 "built-in-types-table>`_ and Classes derived from :ref:`Godot.Object "
-"<class_Object>`. Consequently any ``Node`` or ``Reference`` will be "
-"compatible automatically but custom data objects will need to extend from "
+"<class_Object>`. Consequently, any ``Node`` or ``Reference`` will be "
+"compatible automatically, but custom data objects will need to extend from "
 "`Godot.Object` or one of its subclasses."
 msgstr ""
 "Sygnały obsługują parametry i wartości graniczne wszystkich wbudowanych "

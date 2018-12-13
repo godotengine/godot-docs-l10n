@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -401,8 +401,9 @@ msgid "Let's go over what's happening here:"
 msgstr "让我们回顾一下这里发生的事情："
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:292
+#, fuzzy
 msgid ""
-"First we check if the event is a ``InputEventMouseButton`` event and that "
+"First we check if the event is an ``InputEventMouseButton`` event and that "
 "the mouse mode is ``MOUSE_MODE_CAPTURED``. Then we check to see if the "
 "button index is either a ``BUTTON_WHEEL_UP`` or ``BUTTON_WHEEL_DOWN`` index."
 msgstr ""
@@ -428,19 +429,21 @@ msgid ""
 msgstr "接下来我们将鼠标滚动值限制为确保它在可选武器范围内。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:300
+#, fuzzy
 msgid ""
 "We then check to see if the player is changing weapons or reloading. If the "
-"player is doing neither, we round ``mouse_scroll_value`` and cast it to a "
+"player is doing neither, we round ``mouse_scroll_value`` and cast it to an "
 "``int``."
 msgstr ""
 "然后我们检查玩家是在换武器还是重装。 如果玩家两者都没做，我们将"
 "``mouse_scroll_value``舍入并将其转换为``int``。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:302
+#, fuzzy
 msgid ""
-"We are casting ``mouse_scroll_value`` to a ``int`` so we can use it as a key "
-"in our dictionary. If we left it as a float, we would get an error when we "
-"try to run the project."
+"We are casting ``mouse_scroll_value`` to an ``int`` so we can use it as a "
+"key in our dictionary. If we left it as a float, we would get an error when "
+"we try to run the project."
 msgstr ""
 "我们将``mouse_scroll_value``转换为``int``，这样我们就可以将它用作字典中的"
 "键。 如果我们将它保留为浮点数，当我们尝试运行项目时会出现错误。"
@@ -546,8 +549,9 @@ msgstr ""
 "健康拾取具有接近其大小的触发碰撞形状。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:344
+#, fuzzy
 msgid ""
-"The last thing to note is how we have a :ref:`AnimationPlayer "
+"The last thing to note is how we have an :ref:`AnimationPlayer "
 "<class_AnimationPlayer>` node so the health kit spins around slowly and bobs "
 "up and down."
 msgstr ""
@@ -1076,10 +1080,11 @@ msgstr ""
 "标场景。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:705
+#, fuzzy
 msgid ""
-"Notice how we're using a exported variable (a :ref:`PackedScene "
+"Notice how we're using an exported variable (a :ref:`PackedScene "
 "<class_PackedScene>`) to get the broken target scene instead of using "
-"``preload``. By using an exported variable, we can chose the scene from the "
+"``preload``. By using an exported variable, we can choose the scene from the "
 "editor, and if we need to use a different scene, it's as easy as selecting a "
 "different scene in the editor, we don't need to go to the code to change the "
 "scene we're using."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,8 +70,8 @@ msgstr "Math"
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:28
 #, fuzzy
 msgid ""
-"Math functions like ``abs``, ``acos``, ``asin``, ``atan`` and ``atan2`` are "
-"located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, ``Atan`` and "
+"Math functions, like ``abs``, ``acos``, ``asin``, ``atan`` and ``atan2``, "
+"are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, ``Atan`` and "
 "``Atan2``, instead of in global scope. ``PI`` is ``Mathf.Pi``"
 msgstr ""
 "Funkcje matematyczne, takie jak ``abs``, ``acos``, ``asin``, ``atan`` i "
@@ -83,8 +83,9 @@ msgid "Random"
 msgstr "Random"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:35
+#, fuzzy
 msgid ""
-"Random functions like ``rand_range`` and ``rand_seed`` are located under "
+"Random functions, like ``rand_range`` and ``rand_seed``, are located under "
 "``Random``, so use ``Random.RandRange`` instead of ``rand_range``."
 msgstr ""
 "Funkcje losowe, takie jak ``rand_range`` i ``rand_seed`` znajdują się w "
@@ -138,28 +139,29 @@ msgstr ""
 "przykład:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:77
-msgid "There are a few differences though:"
+#, fuzzy
+msgid "There are a few differences, though:"
 msgstr "Jest tam parę różnic:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:79
 msgid ""
 "``erase``: Strings are immutable in C#, so we cannot modify the string "
-"passed to the extension method. For this reason ``Erase`` was added as an "
-"extension method of ``StringBuilder`` instead of string. Alternatively you "
+"passed to the extension method. For this reason, ``Erase`` was added as an "
+"extension method of ``StringBuilder`` instead of string. Alternatively, you "
 "can use ``string.Remove``."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:83
 msgid ""
-"``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided "
-"which is an overload of ``IsSubsequenceOf`` allowing to explicitly specify "
-"case sensitivity:"
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
+"which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
+"specify case sensitivity:"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:94
 msgid ""
 "``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
-"``Match`` and ``Matchn``, which allows to explicitly specify case "
+"``Match`` and ``Matchn``, which allows you to explicitly specify case "
 "sensitivity:"
 msgstr ""
 
@@ -168,19 +170,20 @@ msgid "Basis"
 msgstr "Basis"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:107
+#, fuzzy
 msgid ""
-"Structs cannot have parameterless constructors in C#, therefore ``new "
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Basis()`` initializes all primitive members to their default value. Use "
-"``Basis.Identity`` for the equivalent to ``Basis()`` in GDScript and C++."
+"``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
 msgstr ""
+"Struktury nie mogą mieć w C# konstruktorów bez parametrów, dlatego ``new "
+"Quat()`` inicjuje wszystkie prymitywne typy, ich wartością domyślną. Proszę "
+"użyć ``Quat.Identity`` jako odpowiednik ``Quat()`` w GDScript i C++."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:111
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:126
-#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:158
-msgid ""
-"The following methods were converted to properties with their respective "
-"names changed:"
+#, fuzzy
+msgid "The following method was converted to a property with a different name:"
 msgstr ""
 "Poniższe metody zostały przekonwertowane na właściwości, a ich nazwy uległy "
 "zmianie:"
@@ -220,16 +223,25 @@ msgid "Transform2D"
 msgstr "Transform2D"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:122
+#, fuzzy
 msgid ""
-"Structs cannot have parameterless constructors in C#, therefore ``new "
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Transform2D()`` initializes all primitive members to their default value. "
-"Please use ``Transform2D.Identity`` for the equivalent to ``Transform2D()`` "
+"Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
 "in GDScript and C++."
 msgstr ""
 "Struktury nie mogą mieć w C# konstruktorów bez parametrów, dlatego ``new "
 "Transform2D()`` inicjuje wszystkie prymitywne typy, ich wartością domyślną. "
 "Proszę użyć ``Transform2D.Identity`` jako odpowiednik ``Transform2D()`` w "
 "GDScript i C++."
+
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:126
+msgid ""
+"The following methods were converted to properties with their respective "
+"names changed:"
+msgstr ""
+"Poniższe metody zostały przekonwertowane na właściwości, a ich nazwy uległy "
+"zmianie:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:131
 msgid "get_origin()"
@@ -251,6 +263,15 @@ msgstr "Rotation"
 msgid "Plane"
 msgstr "Płaszczyzna"
 
+#: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
+#, fuzzy
+msgid ""
+"The following method was converted to a property with a *slightly* different "
+"name:"
+msgstr ""
+"Poniższe metody zostały przekonwertowane na właściwości, a ich nazwy uległy "
+"zmianie:"
+
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:144
 msgid "center()"
 msgstr "center()"
@@ -264,9 +285,10 @@ msgid "Rect2"
 msgstr "Rect2"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:150
+#, fuzzy
 msgid ""
-"The following fields were converted to properties with their respective "
-"names changed:"
+"The following field was converted to a property with a *slightly* different "
+"name:"
 msgstr ""
 "Poniższe pola zostały przekonwertowane na właściwości, a ich nazwy uległy "
 "zmianie:"
@@ -292,10 +314,11 @@ msgid "Quat"
 msgstr "Quat"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:169
+#, fuzzy
 msgid ""
-"Structs cannot have parameterless constructors in C#, therefore ``new "
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Quat()`` initializes all primitive members to their default value. Please "
-"use ``Quat.Identity`` for the equivalent to ``Quat()`` in GDScript and C++."
+"use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
 msgstr ""
 "Struktury nie mogą mieć w C# konstruktorów bez parametrów, dlatego ``new "
 "Quat()`` inicjuje wszystkie prymitywne typy, ich wartością domyślną. Proszę "
@@ -375,7 +398,7 @@ msgstr "Vector3[]"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:192
 msgid ""
-"In some exceptional cases a raw array (``type[]``) may be required instead "
+"In some exceptional cases, a raw array (``type[]``) may be required instead "
 "of a ``List``."
 msgstr ""
 
@@ -398,7 +421,7 @@ msgid "Variant"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:204
-msgid "``System.Object`` (``object``) is used in place of ``Variant``."
+msgid "``System.Object`` (``object``) is used instead of ``Variant``."
 msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:207
@@ -418,9 +441,10 @@ msgid "Other differences"
 msgstr "Inne różnice"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:217
+#, fuzzy
 msgid ""
-"``preload``, ``assert`` and ``yield`` as they work in GDScript are currently "
-"not available in C#."
+"``preload``, ``assert`` and ``yield``, as they work in GDScript, are "
+"currently not available in C#."
 msgstr ""
 "``preload``, ``assert`` i ``yield`` działają w GDScript ale nie są obecnie "
 "dostępne w języku C#."
@@ -471,5 +495,6 @@ msgid "load"
 msgstr "load"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:230
-msgid "GD.load which is the same as ResourceLoader.load"
+#, fuzzy
+msgid "GD.load, which is the same as ResourceLoader.load"
 msgstr "GD.load, który jest taki sam jak ResourceLoader.load"

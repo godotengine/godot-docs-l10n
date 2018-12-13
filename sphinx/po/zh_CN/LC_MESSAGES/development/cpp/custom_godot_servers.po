@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:4
 msgid "Custom Godot servers"
-msgstr "自定义戈多服务器"
+msgstr "自定义Godot服务器"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:7
 msgid "Introduction"
@@ -42,8 +42,8 @@ msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to :ref:`doc_custom_modules_in_c++`."
 msgstr ""
-"本指南假设读者知道如何创建C ++模块和Godot数据类型。 如果没有，请参考：ref："
-"`doc_custom_modules_in_c ++`。"
+"本指南假设读者知道如何创建C ++模块和Godot数据类型。 如果没有，请参考 :ref:"
+"`doc_custom_modules_in_c++`。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:19
 #: ../../docs/development/cpp/custom_godot_servers.rst:316
@@ -204,9 +204,9 @@ msgid ""
 "executed."
 msgstr ""
 "为了将命令发送到SceneTree，MessageQueue是一个线程安全缓冲区，用于对其他线程进"
-"行队列设置和调用方法。 要排队命令，获取目标对象RID并使用``push_call``，"
-"``push_set``或``push_notification``来执行所需的行为。 只要执行``SceneTree :: "
-"idle``或``SceneTree :: iteration``，队列就会被刷新。"
+"行队列设置和调用方法。 要排队命令，获取目标对象RID并使用 ``push_call``, "
+"``push_set``, 或 ``push_notification`` 来执行所需的行为。 只要执行 "
+"``SceneTree :: idle`` 或 ``SceneTree :: iteration`` ，队列就会被刷新。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:475
 msgid "References:"
@@ -237,9 +237,9 @@ msgid ""
 "The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
 "%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
 msgstr ""
-"实际的 `希尔伯特酒店 <https://en.wikipedia.org/wiki/Hilbert"
-"%27s_paradox_of_the_Grand_Hotel>`__是不可能的。"
+"实际的 `Hilbert Hotel <https://en.wikipedia.org/wiki/Hilbert"
+"%27s_paradox_of_the_Grand_Hotel>`__ 是不可能的。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:509
 msgid "Connecting signal example code is pretty hacky."
-msgstr "连接信号示例代码非常hacky。"
+msgstr "连接信号的示例代码是很旁门左道的。"

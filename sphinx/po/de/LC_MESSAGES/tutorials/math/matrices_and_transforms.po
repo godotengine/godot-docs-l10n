@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -376,19 +376,24 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:395
 msgid "Orthonormal matrices"
-msgstr ""
+msgstr "Orthonormal Matrix"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "However, if the matrix has been scaled (vectors are not unit length), or the "
 "basis vectors are not orthogonal (90°), the inverse transform will not work."
 msgstr ""
+"Falls die Matrix skaliert wurde (Vektoren haben nicht die Einheitslänge) "
+"oder die Basisvektoren sind nicht orthogonal zueinander (90°), so "
+"funktioniert die inverse Transformation nicht."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:401
 msgid ""
 "In other words, inverse transform is only valid in *orthonormal* matrices. "
 "For this, these cases an affine inverse must be computed."
 msgstr ""
+"Anders gesagt, die inverse Transformation gilt nur mit *orthonormalen* "
+"Matrizen. In diesem Fall muss eine Inverse affin ermittelt werden."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:404
 msgid ""
@@ -398,7 +403,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:419
 msgid "Affine inverse"
-msgstr ""
+msgstr "Affine Inverse"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:421
 msgid ""
@@ -407,14 +412,18 @@ msgid ""
 "orthogonal. The affine inverse is calculated with the affine_inverse() "
 "method:"
 msgstr ""
+"Eine inverse einer affinen Abbildung ist eine Matrix welche die inverse "
+"Operation einer gegebenen Matrix bestimmt, unabhängig davon ob die Matrix "
+"skaliert oder die Vektoren der Achsen orthogonal sind. Die affine Inverse "
+"wird bestimmt mit der affine_inverse() Methode:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid "If the matrix is orthonormal, then:"
-msgstr ""
+msgstr "Falls die Matrix orthonormal ist, dann:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid "Matrix multiplication"
-msgstr ""
+msgstr "Matrizenmultiplikation"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:461
 msgid ""

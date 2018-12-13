@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Intro"
 msgstr "简介"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
-#, fuzzy
 msgid ""
 "In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
@@ -54,7 +53,7 @@ msgstr "如何用GDscript**控制**一个GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
-msgstr "如何用:ref:`Tween <class_Tween>`节点**动画**生命栏"
+msgstr "如何用 :ref:`Tween <class_Tween>` 节点 **动画** 生命栏"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:25
 msgid ""
@@ -101,7 +100,6 @@ msgid "To do this, we will use **signals**."
 msgstr "为此，我们将使用**信号**。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
@@ -133,7 +131,6 @@ msgstr ""
 "*start*和*end*。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
-#, fuzzy
 msgid ""
 "Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
 "click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
@@ -170,7 +167,6 @@ msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "场景树，用GUI场景设置来显示它的子对象"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
-#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the game's Graphical User Interface. It "
 "comes with a barebones script where we get the path to nodes that exist "
@@ -402,7 +398,6 @@ msgstr ""
 "在网上免费获得。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
-#, fuzzy
 msgid ""
 "With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
@@ -498,7 +493,6 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot为你编写回调方法并将你带到它"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
-#, fuzzy
 msgid ""
 "Inside the parens after the function name, add a ``player_health`` argument. "
 "When the player emits the ``health_changed`` signal, it will send its "
@@ -508,7 +502,6 @@ msgstr ""
 "信号时，它会将当前的`health`发送到旁边。您的代码应该如下所示："
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
-#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
 "be using PascalCase for method names & camelCase for method parameters, "
@@ -527,7 +520,6 @@ msgid ""
 msgstr "在Player.gd。当玩家发出health\\_changed信号时，它也会发送其health值"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
-#, fuzzy
 msgid ""
 "Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
@@ -576,12 +568,13 @@ msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr "将`TextureProgress`的`value`设置为`new_value`"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
-#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
 "``Number``'s ``text`` property requires a string, so we can't assign it to "
 "``new_value`` directly"
-msgstr "`str`是一个内置函数，可以将任何值转换为文本"
+msgstr ""
+"``str`` 是一个内置函数，可以将任何值转换为文本。 ``Number`` 的 ``text`` 属性"
+"需要一个字符串，所以我们不能直接将它分配给 ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
 msgid ""
@@ -590,8 +583,8 @@ msgid ""
 "of the game. Press F5 to test the game: the life bar updates with every "
 "attack!"
 msgstr ""
-"还可以在`_ready`函数末尾调用`update_health`函数，以在游戏开始时用正确的值初始"
-"化`Number`节点的`text`。按F5测试游戏：生命栏更新与每次攻击!"
+"还可以在 ``_ready`` 函数末尾调用 ``update_health`` 函数，以在游戏开始时用正确"
+"的值初始化 ``Number`` 节点的 ``text`` 。按F5测试游戏：生命栏更新与每次攻击!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
 msgid ""
@@ -604,7 +597,6 @@ msgid "Animate the loss of life with the Tween node"
 msgstr "用渐变节点动画生命的损失"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
-#, fuzzy
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
@@ -796,7 +788,6 @@ msgstr ""
 "乱。考虑到游戏的风格，生命条以一种更加起伏不定的方式进行动画是很好的。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
-#, fuzzy
 msgid "The animation is smooth, but the number is broken"
 msgstr "动画很流畅，但是数字被打破了"
 
@@ -815,7 +806,6 @@ msgid "Try the game again to see a nice blocky animation."
 msgstr "再次尝试游戏，看看一个不错的方块动画。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
-#, fuzzy
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "通过完成animated\\_health，我们达到了一石二鸟的效果"
 
@@ -909,7 +899,6 @@ msgstr ""
 "见性，给它分配一个着色器，然后用一个带有`modulate`的颜色来修改它。"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
-#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -948,7 +937,6 @@ msgid ""
 msgstr "然后我们必须再次调用`Tween`节点的`interpolate_property`方法："
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "

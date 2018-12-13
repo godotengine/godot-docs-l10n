@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Nodes and resources"
 msgstr "节点和资源"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
-#, fuzzy
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
@@ -35,10 +34,9 @@ msgid ""
 msgstr ""
 "在本教程之前, 我们重点介绍了Godot中的 :ref:`Node <class_Node>` 类： 因为它是"
 "您用来编写行为代码的类, 并且引擎的大多数功能都依赖于它们。还有另一种数据类型"
-"同样重要:ref:`Resource <class_Resource>`。"
+"同样重要 :ref:`Resource <class_Resource>`。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
-#, fuzzy
 msgid ""
 "*Nodes* give you functionality: they draw sprites, 3D models, simulate "
 "physics, arrange user interfaces, etc. **Resources** are **data "
@@ -58,13 +56,12 @@ msgid ""
 "<class_Translation>`."
 msgstr ""
 "Godot从磁盘保存或加载的任何内容都是一种资源。无论它是场景 (.tscn 或 .scn 文"
-"件)、图像、脚本..。下面是一些``资源``示例： :ref:`Texture <class_Texture>`, :"
-"ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
-"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
-"<class_Font>`, :ref:`Translation <class_Translation>`。"
+"件)、图像、脚本..。下面是一些 ``资源`` 示例： :ref:`Texture "
+"<class_Texture>`, :ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :"
+"ref:`Animation <class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :"
+"ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
-#, fuzzy
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
 "copy of that resource is already in memory, trying to load the resource "
@@ -75,7 +72,6 @@ msgstr ""
 "再次加载该资源将每次返回相同的副本。由于资源只包含数据, 因此无需复制它们。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
-#, fuzzy
 msgid ""
 "Every object, be it a Node or a Resource, can export properties. There are "
 "many types of Properties, like String, integer, Vector2, etc., and any of "
@@ -109,18 +105,16 @@ msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
-"更具体地说, 这里有一个:ref:`精灵 <class_Sprite>`节点中的:ref:`纹理 "
+"更具体地说, 这里有一个 :ref:`精灵 <class_Sprite>` 节点中的 :ref:`纹理 "
 "<class_Texture>`："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
-#, fuzzy
 msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr "单击资源预览可以查看和编辑资源属性。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
-#, fuzzy
 msgid ""
 "The path property tells us where the resource comes from. In this case, it "
 "comes from a PNG image called ``robi.png``. When the resource comes from a "
@@ -178,16 +172,16 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
 "packed inside a resource."
 msgstr ""
-"场景也是资源, 但也有一个陷阱。保存到磁盘的场景是:ref:`打包场景 "
-"<class_PackedScene>`类型的资源。场景被打包在资源内部。"
+"场景也是资源, 但也有一个陷阱。保存到磁盘的场景是 :ref:`打包场景 "
+"<class_PackedScene>` 类型的资源。场景被打包在资源内部。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_instance>` method."
 msgstr ""
-"要获取场景的实例，您必须使用:ref:`PackedScene.instance() "
-"<class_PackedScene_instance>`方法。"
+"要获取场景的实例，您必须使用 :ref:`PackedScene.instance() "
+"<class_PackedScene_instance>` 方法。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 msgid ""
@@ -199,7 +193,6 @@ msgstr ""
 "以将其添加为任何其他节点的子节点。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` function is pretty fast, you can create new "
@@ -207,8 +200,8 @@ msgid ""
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
-"这种方法有几个优点。由于:ref:`PackedScene.instance() "
-"<class_PackedScene_instance>`函数速度相当快, 您可以创建新的敌人、子弹、效果"
+"这种方法有几个优点。由于 :ref:`PackedScene.instance() "
+"<class_PackedScene_instance>` 函数速度相当快, 您可以创建新的敌人、子弹、效果"
 "等, 而无需每次都从磁盘再次加载它们。请记住, 像往常一样, 图像、网格等都是在场"
 "景实例之间共享的。"
 
@@ -243,7 +236,6 @@ msgstr ""
 "类型的引用计数内存管理。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
-#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
@@ -253,9 +245,10 @@ msgid ""
 "`Resource <class_Resource>` features:"
 msgstr ""
 "与其他数据结构 (如 json、csv 或自定义 txt 文件) 相比, 这具有许多明显的优势。"
-"用户只能将这些资源导入为:ref:`字典 <class_Dictionary>` (JSON)或要分析的:ref:`"
-"文件 <class_File>`。将资源区分开来的是它们对:ref:`对象 <class_Object>`、:ref:"
-"`引用 <class_Reference>`和:ref:`资源 <class_Resource>`功能的继承："
+"用户只能将这些资源导入为 :ref:`字典 <class_Dictionary>`  (JSON)或要分析的 :"
+"ref:`文件 <class_File>` 。将资源区分开来的是它们对 :ref:`对象 "
+"<class_Object>` 、 :ref:`引用 <class_Reference>` 和 :ref:`资源 "
+"<class_Resource>` 功能的继承："
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid ""
@@ -364,12 +357,13 @@ msgstr ""
 "角), 然后选择 \"保存\" 或 \"另存为...\"。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
+#, fuzzy
 msgid ""
-"If the script's language supports `script classes <https://godot.readthedocs."
-"io/en/latest/getting_started/step_by_step/scripting_continued.html#register-"
-"scripts-as-classes>`__, then it streamlines the process. Defining a name for "
-"your script alone will add it to the Inspector's creation dialog. This will "
-"auto-add your script to the Resource object you create."
+"If the script's language supports :ref:`script classes "
+"<doc_scripting_continued_class_name>`, then it streamlines the process. "
+"Defining a name for your script alone will add it to the Inspector's "
+"creation dialog. This will auto-add your script to the Resource object you "
+"create."
 msgstr ""
 "如果脚本语言支持脚本类, 则简化了过程。仅定义脚本的名称会将其添加到检查器创建"
 "对话框中。这将自动将脚本添加到您创建的资源对象中。"
@@ -387,7 +381,7 @@ msgid ""
 "editors for their data."
 msgstr ""
 "资源脚本类似于Unity的脚本对象。检查器提供对自定义资源的内置支持。如果需要, 用"
-"户甚至可以设计自己的基于控件的工具脚本, 并将它们与:ref:`EditorPlugin "
+"户甚至可以设计自己的基于控件的工具脚本, 并将它们与 :ref:`EditorPlugin "
 "<class_EditorPlugin>`结合起来, 为其数据创建自定义可视化和编辑器。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
@@ -420,13 +414,12 @@ msgstr ""
 "加到检查器中。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
-#, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
-"CurveTables 是相同的事情, 除了映射到浮点值的数组或:ref:`Curve "
-"<class_Curve>`/:ref:`Curve2D <class_Curve2D>`资源对象。"
+"CurveTables 是相同的事情, 除了映射到浮点值的数组或 :ref:`Curve "
+"<class_Curve>`/ :ref:`Curve2D <class_Curve2D>` 资源对象。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""

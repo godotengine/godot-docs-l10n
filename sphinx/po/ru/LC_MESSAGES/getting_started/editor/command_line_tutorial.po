@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 msgid ""
 "Some developers like using the command line extensively. Godot is designed "
 "to be friendly to them, so here are the steps for working entirely from the "
-"command line. Given the engine relies on little to no external libraries, "
+"command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
 
@@ -35,7 +35,7 @@ msgstr "Путь"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
 msgid ""
-"It is recommended that your Godot binary is in your PATH environment "
+"It is recommended that your Godot binary be in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
@@ -134,21 +134,21 @@ msgstr ""
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
-"It works for both running the game or a simple scene."
+"It works for running either the game or a simple scene."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:128
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "Exporting"
 msgstr "Экспорт"
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:130
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:132
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:139
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid ""
 "The platform names recognized by the ``--export`` switch are the same as "
 "displayed in the export wizard of the editor. To get a list of supported "
@@ -156,36 +156,36 @@ msgid ""
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:145
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:149
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid "Running a script"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:151
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 msgid ""
 "It is possible to run a simple .gd script from the command line. This "
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:155
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:157
 msgid "The script must inherit from SceneTree or MainLoop."
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:157
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:159
 msgid "Here is a simple example of how it works:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:168
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:170
 msgid "And how to run it:"
 msgstr ""
 
-#: ../../docs/getting_started/editor/command_line_tutorial.rst:175
+#: ../../docs/getting_started/editor/command_line_tutorial.rst:177
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."

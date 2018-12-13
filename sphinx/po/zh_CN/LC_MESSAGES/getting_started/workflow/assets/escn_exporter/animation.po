@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,17 +50,19 @@ msgid "Multiple Actions For Single Object"
 msgstr "单个对象的多个动作"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
+#, fuzzy
 msgid ""
-"In most games, one objects would have several animations to switch between. "
-"This addon have a support for exporting multiple actions all at once into a "
+"In most games, one object would have several animations to switch between. "
+"This add-on has support for exporting multiple actions all at once into a "
 "single AnimationPlayer and makes it easy to switch actions."
 msgstr ""
 "在大多数游戏中，一个对象会有几个动画来切换。这个插件支持将多个动作同时导出到"
 "单个动画播放器中，使切换动作变得很容易。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
+#, fuzzy
 msgid ""
-"This workflow makes use of blender nla_tracks. Here is a brief guide of how "
+"This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
 msgstr "此工作流程使用blender nla_tracks。 以下是如何使用此功能的简要指南："
 
@@ -73,7 +75,8 @@ msgid "**2. Stash the active action**"
 msgstr "**2. 存放主动行动**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
-msgid "the stashed action while not action would still be exported"
+#, fuzzy
+msgid "The stashed action, while not active, will still be exported."
 msgstr "仍未导出行动中的藏匿行动"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
@@ -81,11 +84,13 @@ msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
 msgstr "**3. 检查“NLA编辑器”中的隐藏操作[可选] **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
-msgid "Switch workspace to 'NLA Editor'"
+#, fuzzy
+msgid "Switch workspace to 'NLA Editor'."
 msgstr "将工作区切换为“NLA编辑器”"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
-msgid "Make sure all stashed actions are muted"
+#, fuzzy
+msgid "Make sure all stashed actions are muted."
 msgstr "确保所有隐藏的操作都被静音"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
@@ -93,9 +98,10 @@ msgid "**4. Export the scene**"
 msgstr "**4. 导出场景**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
+#, fuzzy
 msgid ""
-"all the stashed action as well as the active action are exported to the an "
-"AnimationPlayer"
+"All the stashed actions, as well as the active action, are exported to an "
+"AnimationPlayer."
 msgstr "所有存储的操作以及活动操作都将导出到AnimationPlayer"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
@@ -103,10 +109,11 @@ msgid "Constraints"
 msgstr "约束"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:49
+#, fuzzy
 msgid ""
-"Sometimes complicated animation is built with object constraint, an usual "
-"example is inverse kinematics. The addon would automatically check if an "
-"object has some constraint, if it does, all the constraints are baked into "
+"Sometimes complicated animation is built with object constraint; a usual "
+"example is inverse kinematics. The add-on would automatically check if an "
+"object has some constraint; if it does, all the constraints are baked into "
 "every action the object has and then exported."
 msgstr ""
 "有时使用对象约束构建复杂动画，通常的例子是反向运动学。 插件会自动检查对象是否"
@@ -117,11 +124,12 @@ msgid "Animation Mode"
 msgstr "动画模式"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:57
+#, fuzzy
 msgid ""
 "Godot and Blender have different structure to store animation data. In Godot "
 "animation data is stored in an AnimationPlayer node, instead of in each "
 "animated node. In order to fix this inconsistence and still make the "
-"animation play versatile, this addon has three animation exporting modes."
+"animation play versatile, this add-on has three animation exporting modes."
 msgstr ""
 "Godot和Blender有不同的结构来存储动画数据。在Godot中，动画数据存储在一个"
 "AnimationPlayer节点中，而不是存储在每个动画节点里。为了修复这种不一致性，并使"
@@ -132,8 +140,9 @@ msgid "**Mode 'Animation as Actions'**"
 msgstr "**'动作动画'模式**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:66
+#, fuzzy
 msgid ""
-"Treat all the animation as object actions, so in the exported scene, every "
+"Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
 msgstr ""
 "将所有动画视为对象动作，因此在导出的场景中，每个对象都有自己的AnimationPlayer"
@@ -144,10 +153,11 @@ msgid "**Mode 'Scene Animation'**"
 msgstr "**模式 '场景动画' **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
+#, fuzzy
 msgid ""
-"If you want your animation generate same result as playing at Blender's "
-"timeline, this is what you want. In this mode, all the animation in the "
-"scene are placed in just one AnimationPlayer in the scene root."
+"If you want your animation to generate the same result as playing at "
+"Blender's timeline, this is what you want. In this mode, all the animations "
+"in the scene are placed in just one AnimationPlayer in the scene root."
 msgstr ""
 "如果您希望动画生成与在Blender的时间轴上播放相同的结果，这就是您想要的。 在此"
 "模式下，场景中的所有动画都只放置在场景根中的一个AnimationPlayer中。"
@@ -157,11 +167,12 @@ msgid "**Mode 'Animation as Action with Squash'**"
 msgstr "**模式 '动画与压缩行为' **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
+#, fuzzy
 msgid ""
 "This mode has very similar behaviour of mode 'Animation as Action', but it "
-"can generate less AnimationPlayers, objects in parent-children relation "
+"can generate fewer AnimationPlayers; objects in parent-children relationship "
 "would share their AnimationPlayer. It is useful when you have several rigs, "
-"and each Skeleton and Mesh has actions, then one rig would have just one "
+"and each Skeleton and Mesh has actions; then one rig would have just one "
 "AnimationPlayer."
 msgstr ""
 "此模式与“动画为动作”模式的行为非常相似，但它可以生成较少的AnimationPlayers，"

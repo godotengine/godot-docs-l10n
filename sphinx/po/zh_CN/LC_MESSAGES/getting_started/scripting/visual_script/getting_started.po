@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr ""
 msgid ""
 "In Godot, a Visual Script fits smoothly together with regular scripts in the "
 "Editor tab"
-msgstr "在Godot中，在Editor选项卡中，Visual Script与常规脚本配合得很好"
+msgstr "在Godot中，在Editor选项卡中，可视化脚本与常规脚本配合得很好"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:15
 msgid ""
@@ -45,9 +45,9 @@ msgid ""
 "rest of Godot panels and docks act like a palette from where you can drag "
 "and drop all sorts of information to the script canvas:"
 msgstr ""
-"事实上，Visual Scripting与Godot的集成非常好，以至于很难相信它只是在3.0版本中"
-"添加的。这是因为，在编辑时，Godot面板和dock的其余部分就像一个调色板，您可以从"
-"中将各种信息拖放到脚本画布："
+"事实上，可视化脚本非常好地集成到了Godot中，以至于很难相信它只是在3.0版本中添"
+"加的。这是因为，在编辑时，Godot面板和窗口的其余部分就像一个调色板，您可以从中"
+"将各种信息拖放到脚本画布中："
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
 msgid "Creating a Script"
@@ -71,8 +71,9 @@ msgstr ""
 "于VisualScript！）."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
+#, fuzzy
 msgid ""
-"Finally, the Script Editor will open, allowing to start the editing of the "
+"Finally, the Script Editor will open, allowing you to start editing the "
 "visual script:"
 msgstr "最后，脚本编辑器将打开，允许开始编辑可视脚本："
 
@@ -186,11 +187,13 @@ msgid "Creating a Function Manually"
 msgstr "手动创建函数"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:109
+#, fuzzy
 msgid ""
-"The last way to create functions is to do it manually. In general this is "
+"The last way to create functions is to do it manually. In general, this is "
 "not as common unless you really need it. Custom functions work when another "
-"(or the same) script calls them manually. The main use case for this is to "
-"separate a function into more, or reusing your visual code."
+"(or the same) script calls them manually. The main use cases for this are "
+"breaking a larger function up into several manageable chunks and reusing "
+"your visual code."
 msgstr ""
 "创建函数的最后一种方法是手动完成。一般来说，除非你真的需要，否则这是不常见"
 "的。当另一个（或同一个）脚本手动调用它们时，自定义函数会起作用。这样做的主要"

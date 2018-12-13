@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:16
 msgid "Identify persistent objects"
-msgstr "识别持久对象"
+msgstr "识别持久化对象"
 
 #: ../../docs/tutorials/io/saving_games.rst:18
 msgid ""
@@ -48,8 +48,8 @@ msgid ""
 "we will use groups to mark and handle objects to be saved but other methods "
 "are certainly possible."
 msgstr ""
-"首先，我们应该确定在游戏会话中要保留什么对象，以及我们要从这些对象中保存什么"
-"信息。对于本教程，我们将使用组来标记和处理要保存的对象，当然也有其他可行的方"
+"首先，我们应该确定在游戏会话中要保存什么对象，以及我们要从这些对象中保存什么"
+"信息。本教程中，我们将使用组来标记和处理要保存的对象，当然也有其他可行的方"
 "法。"
 
 #: ../../docs/tutorials/io/saving_games.rst:23
@@ -58,8 +58,9 @@ msgid ""
 "in the :ref:`doc_scripting_continued` tutorial, we can do this through the "
 "GUI or through script. Let's add the relevant nodes using the GUI:"
 msgstr ""
-"首先我们将添加对象，它将保存到“持久”组。 在 :ref:`doc_scripting_continued` 教"
-"程中，我们可以通过GUI或脚本完成此操作。 让我们使用GUI添加相关节点："
+"首先我们将添加对象，它将保存到“Persist”组。 在 :ref:"
+"`doc_scripting_continued` 教程中，我们学会了通过GUI或脚本完成此操作。 那就让"
+"我们使用GUI来添加相关节点吧："
 
 #: ../../docs/tutorials/io/saving_games.rst:29
 msgid ""
@@ -67,7 +68,7 @@ msgid ""
 "save them and then tell them all to save with this script:"
 msgstr ""
 "完成此操作后， 在我们需要保存游戏时，我们可以获取所有对象以保存它们，然后告诉"
-"所有对象通过此脚本保存："
+"所有对象通过此脚本保存数据："
 
 #: ../../docs/tutorials/io/saving_games.rst:49
 msgid "Serializing"
@@ -83,19 +84,19 @@ msgid ""
 "Our node needs to contain a save function that returns this data. The save "
 "function will look like this:"
 msgstr ""
-"下一步是序列化数据。 这使得读取和存储到磁盘更加容易。 在这种情况下，我们假设"
-"Persist组的每个成员都是一个实例节点，因此有一个路径。 GDScript有这样的辅助函"
-"数，例如 :ref:`to_json() <class_@GDScript_to_json>` 和 :ref:`parse_json() "
-"<class_@GDScript_parse_json>`，所以我们将使用字典。 我们的节点需要包含一个返"
-"回此数据的保存函数。 保存函数如下所示："
+"下一步是序列化数据。 这使得从硬盘读取数据和存储数据到硬盘变得更加容易。 在这"
+"种情况下，我们假设Persist组的每个成员都是一个实例节点，因此有一个路径。 因为"
+"GDScript有相关的辅助函数，如 :ref:`to_json() <class_@GDScript_to_json>` 和 :"
+"ref:`parse_json() <class_@GDScript_parse_json>`，所以我们使用字典来表示数"
+"据。 我们的节点需要包含一个返回此类型数据的保存函数。 保存函数如下所示："
 
 #: ../../docs/tutorials/io/saving_games.rst:114
 msgid ""
 "This gives us a dictionary with the style ``{ \"variable_name\":"
 "that_variables_value }`` which will be useful when loading."
 msgstr ""
-"这给了我们一个字典，其样式为 ``{ \"variable_name\":that_variables_value }"
-"`` ，这在加载时很有用。"
+"我们得到一个样式为 ``{ \"variable_name\":that_variables_value }`` 的字典，它"
+"在加载游戏数据时很有用。"
 
 #: ../../docs/tutorials/io/saving_games.rst:119
 msgid "Saving and reading data"
@@ -110,12 +111,13 @@ msgid ""
 "ensures that each line is its own object so we have an easy way to pull the "
 "data out of the file as well."
 msgstr ""
-"正如在 :ref:`doc_filesystem` 教程中所述，我们需要打开一个文件并写入它，然后再"
-"从中读取。 现在我们有办法调用我们的组并获取它们的相关数据，让我们使用 "
-"to_json() 将它转换为一个容易存储的字符串并将它们存储在一个文件中。 这样做可以"
-"确保每一行都是自包含的对象，因此我们也可以轻松地将数据从文件中提取出来。"
+"正如在 :ref:`doc_filesystem` 教程中所述，我们需要打开一个文件并向其中写入数"
+"据，然后可以从中读取数据。 既然我们有办法调用我们的组并获取它们的相关数据，那"
+"么就让我们使用 to_json() 将数据转换成一个容易存储的字符串并将它存储在文件中"
+"吧。 这样做可以确保每一行都是自包含的对象，因此我们也可以轻松地将数据从文件中"
+"提取出来。"
 
-#: ../../docs/tutorials/io/saving_games.rst:162
+#: ../../docs/tutorials/io/saving_games.rst:166
 msgid ""
 "Game saved! Loading is fairly simple as well. For that we'll read each line, "
 "use parse_json() to read it back to a dict, and then iterate over the dict "
@@ -123,10 +125,10 @@ msgid ""
 "the filename and parent values to achieve that. Here is our load function:"
 msgstr ""
 "游戏保存好了！ 加载也很简单。 为此，我们将读取每一行，使用parse_json() 将其读"
-"回到一个字典中，然后遍历字典以读取我们的值。 但是我们需要首先创建对象，然后我"
-"们可以使用文件名和父值来实现它。 这是我们的加载函数："
+"回到一个字典中，然后遍历字典以读取保存的值。 首先我们需要创建对象，这可以通过"
+"使用文件名和父值来实现。 这就是我们的加载函数："
 
-#: ../../docs/tutorials/io/saving_games.rst:242
+#: ../../docs/tutorials/io/saving_games.rst:254
 msgid ""
 "And now we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
@@ -135,11 +137,11 @@ msgstr ""
 "现在我们可以保存和加载几乎任何位于场景树中的任意数量的对象了！ 每个对象可以根"
 "据需要保存的内容存储不同的数据。"
 
-#: ../../docs/tutorials/io/saving_games.rst:247
+#: ../../docs/tutorials/io/saving_games.rst:259
 msgid "Some notes"
 msgstr "一些注释"
 
-#: ../../docs/tutorials/io/saving_games.rst:249
+#: ../../docs/tutorials/io/saving_games.rst:261
 msgid ""
 "We may have glossed over a step, but setting the game state to one fit to "
 "start loading data can be complicated. This step will need to be heavily "
@@ -148,7 +150,7 @@ msgstr ""
 "我们可能已经忽略了一个步骤，但将游戏状态设置到适合以加载数据可能很复杂。 需要"
 "根据单个项目的需求对此步骤进行大量定制。"
 
-#: ../../docs/tutorials/io/saving_games.rst:253
+#: ../../docs/tutorials/io/saving_games.rst:265
 msgid ""
 "This implementation assumes no Persist objects are children of other Persist "
 "objects. Doing so would create invalid paths. If this is one of the needs of "

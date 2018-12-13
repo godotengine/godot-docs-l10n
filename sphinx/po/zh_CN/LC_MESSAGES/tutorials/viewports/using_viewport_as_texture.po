@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,7 +134,6 @@ msgstr ""
 "`ColorRect <class_ColorRect>`。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:55
-#, fuzzy
 msgid ""
 "Basic familiarity with shading is recommended for this tutorial. However, "
 "even if you are new to shaders, all the code will be provided so you should "
@@ -195,7 +194,6 @@ msgid ""
 msgstr "现在，您的球体应使用我们渲染到视口的颜色进行着色"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:94
-#, fuzzy
 msgid ""
 "Notice the ugly seam that forms where the texture wraps around? This is "
 "because we are picking a color based on UV coordinates and UV coordinates do "
@@ -273,7 +271,6 @@ msgid "And if we use ``unit`` as an output ``COLOR`` value we get."
 msgstr "如果我们使用``unit``作为输出``COLOR``值，我们得到。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:147
-#, fuzzy
 msgid ""
 "Now that we can calculate the 3D position of the surface of the sphere we "
 "can use 3D noise to make the planet. We will be using this noise function "
@@ -283,17 +280,15 @@ msgstr ""
 "`Shadertoy <https://www.shadertoy.com/view/4dffRH>`_使用此噪音功能："
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:175
-#, fuzzy
 msgid ""
 "All credit goes to the author, Inigo Quilez. It is published with the "
 "``MIT`` licence."
-msgstr "归功于最初的作者Inigo Quilez。 它与``MIT``许可证一起发布。"
+msgstr "归功于最初的作者Inigo Quilez。 它与 ``MIT`` 许可证一起发布。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:177
-#, fuzzy
 msgid ""
 "Now to use ``noise``, add the following to the    ``fragment`` function:"
-msgstr "现在使用``noised``，将以下内容添加到``fragment``函数中："
+msgstr "现在使用 ``noised`` ，将以下内容添加到 ``fragment`` 函数中："
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:186
 msgid "In order to highlight the texture, we set the material to unshaded."
@@ -313,17 +308,14 @@ msgid "Coloring the planet"
 msgstr "着色这个星球"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:194
-#, fuzzy
 msgid ""
 "Now to make the planet colors. While, there are many ways to do this, for "
 "now we will stick with a gradient between water and land."
 msgstr ""
-"现在要让行星变色。 有很多方法可以做到这一点，如果你看看`Shadertoy <https://"
-"www.shadertoy.com>`_你将找到各种方法将颜色映射到程序行星地形。 现在我们将坚持"
-"水与陆之间的简单梯度。"
+"现在要让行星变色。 虽然，有很多方法可以做到这一点，现在我们将坚持水和土地之间"
+"的梯度。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:197
-#, fuzzy
 msgid ""
 "To make a gradient in GLSL we use the ``mix`` function. ``mix`` takes two "
 "values to interpolate between and a third parameter to choose how much to "
@@ -332,10 +324,10 @@ msgid ""
 "typically reserved for mixing two floats together, ``mix`` can take any "
 "values whether it be floats or vector types."
 msgstr ""
-"要在glsl中创建渐变，我们使用``mix``函数。 ``mix``需要两个值来插值和第三个参数"
-"来选择在它们之间插入多少，实质上它*将两个值混合在一起。 在其他API中，此函数通"
-"常称为“lerp”。 虽然``lerp``通常用于将两个浮点数混合在一起，但``mix``可以取任"
-"何值，无论它是浮点数还是矢量类型。"
+"要在glsl中创建渐变，我们使用 ``mix`` 函数。  ``mix`` 需要两个值来插值和第三个"
+"参数来选择在它们之间插入多少，实质上它*将两个值混合在一起。 在其他API中，此函"
+"数通常称为 ``lerp`` 。 虽然 ``lerp`` 通常用于将两个浮点数混合在一起，但 "
+"``mix`` 可以取任何值，无论它是浮点数还是矢量类型。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:207
 msgid ""
@@ -489,7 +481,6 @@ msgstr ""
 "反射对海洋的影响。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:299
-#, fuzzy
 msgid ""
 "And there you have it. A procedural planet generated using a :ref:`Viewport "
 "<class_Viewport>`."

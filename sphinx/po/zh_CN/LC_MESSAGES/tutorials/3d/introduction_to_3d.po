@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,14 +37,15 @@ msgstr ""
 "3D运动学角色教程是值得的，这些教程大部分与2D游戏相同。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:14
+#, fuzzy
 msgid ""
 "In 3D, math is a little more complex than in 2D, so also checking the :ref:"
-"`doc_vector_math` in the wiki (which were especially created for game "
-"developers, not mathematicians or engineers) will help pave the way into "
-"efficiently developing 3D games."
+"`doc_vector_math` entry in the wiki (which was especially created for game "
+"developers, not mathematicians or engineers) will help pave the way for you "
+"to develop 3D games efficiently."
 msgstr ""
-"在3D中，数学比2D更复杂一些，所以看看wiki：ref：`doc_vector_math`（特别是为游"
-"戏开发者，而不是数学家或工程师创建的）将有助于为有效开发3D游戏铺平道路。"
+"在3D中，数学比2D更复杂一些，所以看看wiki ：ref：`doc_vector_math` （特别是为"
+"游戏开发者，而不是数学家或工程师创建的）将有助于为有效开发3D游戏铺平道路。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:20
 msgid "Spatial node"
@@ -62,14 +63,15 @@ msgstr ""
 "<class_Spatial>` 节点。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:29
+#, fuzzy
 msgid ""
 "Spatial nodes have a local transform, which is relative to the parent node "
-"(as long as the parent node is also **or inherits** of type Spatial). This "
-"transform can be accessed as a 4x3 :ref:`Transform <class_Transform>`, or as "
-"3 :ref:`Vector3 <class_Vector3>` members representing location, Euler "
-"rotation (x,y and z angles) and scale."
+"(as long as the parent node is also of **or inherits** from the type "
+"Spatial). This transform can be accessed as a 4x3 :ref:`Transform "
+"<class_Transform>`, or as 3 :ref:`Vector3 <class_Vector3>` members "
+"representing location, Euler rotation (x,y and z angles) and scale."
 msgstr ""
-"空间节点有一个局部变换，它与父节点相关（只要父节点也是**或者继承** Spatial类"
+"空间节点有一个局部变换，它与父节点相关（只要父节点也是 **或者继承** Spatial类"
 "型）。 这个变换可以作为4x3 :ref:`Transform <class_Transform>` 或3个 :ref:"
 "`Vector3 <class_Vector3>` 成员来表示位置，欧拉旋转（x，y和z角度）和比例。"
 
@@ -78,10 +80,11 @@ msgid "3D content"
 msgstr "3D内容"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
+#, fuzzy
 msgid ""
 "Unlike 2D, where loading image content and drawing is straightforward, 3D is "
 "a little more difficult. The content needs to be created with special 3D "
-"tool (usually referred to as DCCs) and exported to an exchange file format "
+"tools (usually referred to as DCCs) and exported to an exchange file format "
 "in order to be imported in Godot (3D formats are not as standardized as "
 "images)."
 msgstr ""
@@ -94,10 +97,11 @@ msgid "DCC-created models"
 msgstr "DCC 创建的模型"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:50
+#, fuzzy
 msgid ""
 "There are two pipelines to import 3D models in Godot. The first and most "
 "common one is through the :ref:`doc_importing_3d_scenes` importer, which "
-"allows to import entire scenes (just as they look in the DCC), including "
+"allows you to import entire scenes (just as they look in the DCC), including "
 "animation, skeletal rigs, blend shapes, etc."
 msgstr ""
 "有两条管线可以导入3D模型到Godot中。 第一个也是最常见的一个，是通过 :ref:"
@@ -147,11 +151,12 @@ msgid "Immediate geometry"
 msgstr "立即几何体"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:77
+#, fuzzy
 msgid ""
 "If, instead, there is a requirement to generate simple geometry that will be "
 "updated often, Godot provides a special node, :ref:`ImmediateGeometry "
-"<class_ImmediateGeometry>` which provides an OpenGL 1.x style immediate-mode "
-"API to create points, lines, triangles, etc."
+"<class_ImmediateGeometry>`, which provides an OpenGL 1.x style immediate-"
+"mode API to create points, lines, triangles, etc."
 msgstr ""
 "相反，如果需要生成会经常更新的简单几何体，Godot会提供一个特殊节点 :ref:"
 "`ImmediateGeometry <class_ImmediateGeometry>` ，它会提供OpenGL 1.x风格的即时"
@@ -196,13 +201,13 @@ msgid ""
 "several types of built-in post-processing effects. Environments can also be "
 "overridden in the Camera."
 msgstr ""
-"除了编辑场景之外，编辑环境通常也很常见。 Godot提供了一个：ref："
-"`WorldEnvironment <class_WorldEnvironment>`节点，该节点允许更改背景颜色，模式"
-"（例如放置天空盒）以及应用多种内置后处理效果。 相机中也可以覆盖环境。"
+"除了编辑场景之外，编辑环境通常也很常见。 Godot提供了一个 ：ref："
+"`WorldEnvironment <class_WorldEnvironment>` 节点，该节点允许更改背景颜色，模"
+"式（例如放置天空盒）以及应用多种内置后处理效果。 相机中也可以覆盖环境。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:108
 msgid "3D viewport"
-msgstr "3D 视口"
+msgstr "3D 视区"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:110
 msgid ""
@@ -213,11 +218,12 @@ msgstr ""
 "将自动启用。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:116
+#, fuzzy
 msgid ""
 "Default 3D scene navigation controls are similar to Blender (aiming to have "
 "some sort of consistency in the free software pipeline..), but options are "
 "included to customize mouse buttons and behavior to be similar to other "
-"tools in Editor Settings:"
+"tools in the Editor Settings:"
 msgstr ""
 "默认的3D场景导航控件类似于Blender（旨在在自由软件管线中具有某种一致性），但含"
 "有用于自定义鼠标按钮和行为的选项，它也与编辑器设置中的其他工具类似："
@@ -238,12 +244,13 @@ msgstr ""
 "坏主意（除非你知道你在做什么）。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:131
+#, fuzzy
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
 "works in most cases, in rare situations it may introduce floating point "
-"precision issues (and thus, glitches or artifacts) in delicate areas such as "
-"rendering or physics. So, make sure your artists always work in the right "
+"precision issues (and thus, glitches or artifacts) in delicate areas, such "
+"as rendering or physics, so make sure your artists always work in the right "
 "scale!"
 msgstr ""
 "在使用3D资源时，最好以正确的比例工作（将你的DCC设置为度量标准）。 Godot允许缩"
@@ -293,8 +300,9 @@ msgid "Some useful keybindings:"
 msgstr "一些有用的键盘绑定："
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:160
+#, fuzzy
 msgid ""
-"To snap motion or rotation, press the \"s\" key while moving, scaling or "
+"To snap placement or rotation, press the \"s\" key while moving, scaling or "
 "rotating."
 msgstr "要快速移动或旋转，请在移动，缩放或旋转时按下“s”键。"
 
@@ -344,17 +352,19 @@ msgid "Cameras"
 msgstr "相机"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
+#, fuzzy
 msgid ""
-"No matter how many objects are placed in 3D space, nothing will be displayed "
-"unless a :ref:`Camera <class_Camera>` is also added to the scene. Cameras "
-"can either work in orthogonal or perspective projections:"
+"No matter how many objects are placed in the 3D space, nothing will be "
+"displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
+"Cameras can work in either orthogonal or perspective projections:"
 msgstr ""
-"无论在3D空间中放置多少物体，除非在场景中添加了：ref：`相机 <class_Camera>`，"
-"否则不会显示任何内容。 相机可以在正交或透视投影中工作："
+"无论在3D空间中放置多少物体，除非在场景中添加了 ：ref：`相机 "
+"<class_Camera>` ，否则不会显示任何内容。 相机可以在正交或透视投影中工作："
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:200
+#, fuzzy
 msgid ""
-"Cameras are associated with and only display to a parent or grandparent "
+"Cameras are associated with (and only display to) a parent or grandparent "
 "viewport. Since the root of the scene tree is a viewport, cameras will "
 "display on it by default, but if sub-viewports (either as render target or "
 "picture-in-picture) are desired, they need their own children cameras to "
@@ -365,8 +375,9 @@ msgstr ""
 "像头才能显示。"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:208
+#, fuzzy
 msgid ""
-"When dealing with multiple cameras, the following rules are followed for "
+"When dealing with multiple cameras, the following rules are enforced for "
 "each viewport:"
 msgstr "处理多台摄像机时，每个视口都遵循以下规则："
 
@@ -399,7 +410,8 @@ msgid "Lights"
 msgstr "灯光"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:223
+#, fuzzy
 msgid ""
-"There is no limitation on the number of lights nor of types of lights in "
+"There is no limitation on the number of lights, nor of types of lights, in "
 "Godot. As many as desired can be added (as long as performance allows)."
 msgstr "Godot的灯光数量和灯光类型没有限制。 想加多少都可以（只要性能允许）。"

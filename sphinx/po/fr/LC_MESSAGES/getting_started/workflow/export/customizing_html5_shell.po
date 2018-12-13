@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,9 @@ msgstr ""
 "dans les options d'exportation ``Html/Custom Html Shell``."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:11
+#, fuzzy
 msgid ""
-"The default HTML page is available in the Godot Engine repository at `/mist/"
+"The default HTML page is available in the Godot Engine repository at `/misc/"
 "dist/html/default.html <https://github.com/godotengine/godot/blob/master/"
 "misc/dist/html/default.html>`_. Some simple use-cases where customizing the "
 "default page is useful include:"
@@ -87,8 +88,8 @@ msgstr "Substitution de caractères génériques"
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:25
 #, fuzzy
 msgid ""
-"When exporting the game, several placeholders in the HTML page are "
-"substituted by values depending on the export:"
+"When exporting the game, several placeholders in the HTML page are replaced "
+"with values depending on the export:"
 msgstr ""
 "Lors de l'exportation du jeu, plusieurs chaînes caractères substituables de "
 "la page HTML sont remplacées par des valeurs dépendantes de l'exportation :"
@@ -160,9 +161,10 @@ msgstr ""
 "exemple une console de sortie ou d'autres outils de débogage."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:50
+#, fuzzy
 msgid ""
-"``$GODOT_HEAD_INCLUDE`` is substituted with the string specified by the "
-"export option ``Html/Head Include``."
+"``$GODOT_HEAD_INCLUDE`` is replaced with the string specified by the export "
+"option ``Html/Head Include``."
 msgstr ""
 "``$GODOT_HEAD_INCLUDE`` est substitué par la chaîne de caractères spécifiée "
 "par l'option d'exportation ``Html/Head Include``."
@@ -279,10 +281,11 @@ msgstr ""
 "**avant** de démarrer l'instance."
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:112
+#, fuzzy
 msgid ""
 "If ``file`` is a string, the file will be loaded from that URL. If ``file`` "
-"is an ``ArrayBuffer`` or a view on one, the buffer will used as content of "
-"the file."
+"is an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
+"of the file."
 msgstr ""
 "Si ``file`` est une chaîne de caractères, le fichier sera chargé a partir de "
 "cette URL. Si ``file`` est un ``ArrayBuffer`` ou une vue sur l'un, le buffer "

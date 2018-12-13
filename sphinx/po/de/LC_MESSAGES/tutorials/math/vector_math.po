@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -375,7 +375,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:387
 msgid "Calculating normals"
-msgstr ""
+msgstr "Normalen ermitteln"
 
 #: ../../docs/tutorials/math/vector_math.rst:389
 msgid ""
@@ -384,10 +384,16 @@ msgid ""
 "subtraction to find two edges ``AB`` and ``AC``. Using the cross product, "
 "``AB x AC`` produces a vector perpendicular to both: the surface normal."
 msgstr ""
+"Ein typischer Anwendungsfall des Kreuzproduktes ist es die "
+"Oberflächennormalen einer Ebenen (Plane) oder eine Oberfläche im 3D-Raum zu "
+"ermitteln. Ist das Dreieck ``ABC`` gegeben, können wir durch "
+"Vektorsubtraktion die zwei Kanten ``AB`` und ``AC`` bestimmen. Wenden wir "
+"darauf die Kreuzproduktoperation an ``AB x AC`` so ergibt sich der "
+"senkrechte Vektor zu beiden: die Oberflächennormale."
 
 #: ../../docs/tutorials/math/vector_math.rst:394
 msgid "Here is a function to calculate a triangle's normal:"
-msgstr ""
+msgstr "Hier ist eine Funktion zur Bestimmung der Dreiecksnormalen:"
 
 #: ../../docs/tutorials/math/vector_math.rst:418
 #, fuzzy

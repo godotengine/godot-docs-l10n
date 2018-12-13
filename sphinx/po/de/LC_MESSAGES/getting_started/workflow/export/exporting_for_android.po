@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid ""
 "studio/"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid "Install OpenJDK or Oracle JDK"
 msgstr ""
 
@@ -45,7 +45,7 @@ msgstr ""
 msgid ""
 "Download and install  `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ "
 "or `Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/"
-"index.html>`__. Versions below JDK 8 may not work, some users have reported "
+"index.html>`__. Versions below JDK 8 may not work; some users have reported "
 "issues with the jarsigner (used to sign the APKs) in JDK 7."
 msgstr ""
 
@@ -85,8 +85,8 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
 msgid ""
-"Enter the Editor Settings screen. This screens contains the editor settings "
-"for the user account in the computer (It's independent from the project)."
+"Enter the Editor Settings screen. This screen contains the editor settings "
+"for the user account in the computer (it's independent from the project)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:51
@@ -121,7 +121,7 @@ msgstr "Exportieren für verschiedene Plattformen"
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
-"debug keystore file, such file can be generated like this:"
+"debug keystore file; such file can be generated like this:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
@@ -150,12 +150,12 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
-"Now your export_presets.cfg file contains sensitive info, if using a Version "
-"Control System it is a good idea to remove it from public repositories."
+"Now your export_presets.cfg file contains sensitive info; if using a Version "
+"Control System, it is a good idea to remove it from public repositories."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
 msgid ""
-"Don't forget to disable the Export with debug button while choosing the "
+"Don't forget to disable the ``Export With Debug`` button while choosing the "
 "APK's name."
 msgstr ""

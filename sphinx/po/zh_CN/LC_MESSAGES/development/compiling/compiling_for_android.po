@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,9 @@ msgid "Note"
 msgstr "注意"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:11
+#, fuzzy
 msgid ""
-"For most cases, using the built-in deployer and export templates is good "
+"In most cases, using the built-in deployer and export templates is good "
 "enough. Compiling the Android APK manually is mostly useful for custom "
 "builds or custom packages for the deployer."
 msgstr ""
@@ -35,10 +36,11 @@ msgstr ""
 "部署者的自定义构建或自定义程序包非常有用。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:15
+#, fuzzy
 msgid ""
-"Also, you still need to do all the steps mentioned in the :ref:"
-"`doc_exporting_for_android` tutorial before attempting your custom export "
-"template."
+"Also, you still need to follow the steps mentioned in the :ref:"
+"`doc_exporting_for_android` tutorial before attempting to build a custom "
+"export template."
 msgstr ""
 "此外，在尝试自定义导出模板之前，您仍需要执行：ref："
 "`doc_exporting_for_android`教程中提到的所有步骤。"
@@ -52,230 +54,239 @@ msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "要在Windows，Linux或macOS下进行编译，需要以下内容："
 
 #: ../../docs/development/compiling/compiling_for_android.rst:24
-msgid "Python 2.7+ or Python 3.5+"
-msgstr "Python 2.7+或Python 3.5+"
+#, fuzzy
+msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/downloads/>`_"
+msgstr "`Python 2.7+或Python 3.5+ <https://www.python.org/downloads/>`__。"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:25
-msgid "SCons build system"
-msgstr "Scons 构建系统"
+#, fuzzy
+msgid "`SCons <https://scons.org/pages/download.html>`_ build system"
+msgstr "`SCons <https://www.scons.org>`__构建系统"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:26
-msgid "[Windows only] PyWin32 (optional, for parallel compilation)"
-msgstr "[仅限Windows] PyWin32（可选，用于并行编译）"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:27
+#, fuzzy
 msgid ""
-"Android SDK version 23.0.3 [Note: Please install all tools and extras of the "
-"SDK Manager]"
-msgstr "Android SDK版本23.0.3 [注意：请安装SDK Manager的所有工具和附加功能]"
+"`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
+"(command-line tools are sufficient)"
+msgstr "Android SDK: https://developer.android.com/studio/"
 
 #: ../../docs/development/compiling/compiling_for_android.rst:28
-msgid "Android build tools version 19.1"
-msgstr "Android构建工具版本19.1"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:29
-msgid "Android NDK r13 or later"
-msgstr "Android NDK r13或更高版本"
+msgid ""
+"Required SDK components will be automatically installed by Gradle (except "
+"the NDK)"
+msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_android.rst:30
+#, fuzzy
+msgid ""
+"`Android NDK <https://developer.android.com/ndk/downloads/>`_ r17 or later"
+msgstr "Android SDK: https://developer.android.com/studio/"
+
+#: ../../docs/development/compiling/compiling_for_android.rst:31
 msgid "Gradle (will be downloaded and installed automatically if missing)"
 msgstr "Gradle（如果遗失，将自动下载并安装）"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:31
-msgid ""
-"JDK 6 or later (either OpenJDK or Oracle JDK) - JDK 9 & 10 do not work with "
-"current Gradle."
-msgstr ""
-"JDK 6或更高版本（OpenJDK或Oracle JDK） - JDK 9和10不适用于当前的Gradle。"
+#: ../../docs/development/compiling/compiling_for_android.rst:32
+#, fuzzy
+msgid "JDK 8 (either OpenJDK or Oracle JDK)"
+msgstr "安装OpenJDK或Oracle JDK"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:33
+#: ../../docs/development/compiling/compiling_for_android.rst:34
+msgid "JDK 9 or later are not currently supported"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_android.rst:35
+msgid ""
+"You can download a build from `ojdkbuild <https://github.com/ojdkbuild/"
+"ojdkbuild>`_"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_android.rst:37
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
+"有关Godot的SCons用法的一般概述，请参阅 ：ref："
+"`doc_introduction_to_the_buildsystem`。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:37
+#: ../../docs/development/compiling/compiling_for_android.rst:41
 msgid "Setting up the buildsystem"
 msgstr "设置构建系统"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:39
-msgid "Set the environment variable ANDROID_HOME to point to the Android SDK."
-msgstr "将环境变量ANDROID_HOME设置为指向Android SDK。"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:42
+#: ../../docs/development/compiling/compiling_for_android.rst:43
 msgid ""
-"Set the environment variable ANDROID_NDK_ROOT to point to the Android NDK."
+"Set the environment variable ``ANDROID_HOME`` to point to the Android SDK. "
+"If you downloaded the Android command-line tools, this would be the folder "
+"where you extracted the contents of the ZIP archive. Later on, ``gradlew`` "
+"will install necessary SDK components in this folder. However, you need to "
+"accept the SDK component licenses before they can be downloaded by Gradle. "
+"This can be done by running the following command from the root of the SDK "
+"directory, then answering all the prompts with ``y``:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_for_android.rst:57
+#, fuzzy
+msgid ""
+"Set the environment variable ``ANDROID_NDK_ROOT`` to point to the Android "
+"NDK."
 msgstr "将环境变量ANDROID_NDK_ROOT设置为指向Android NDK。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:45
+#: ../../docs/development/compiling/compiling_for_android.rst:60
+#, fuzzy
 msgid ""
-"To set those environment variables on Windows, press Windows+R, type "
+"To set those environment variables on Windows, press **Windows + R**, type "
 "\"control system\", then click on **Advanced system settings** in the left "
 "pane, then click on **Environment variables** on the window that appears."
 msgstr ""
 "要在Windows上设置这些环境变量，请按Windows + R，键入“control system”，然后单"
 "击左窗格中的**高级系统设置**，然后在出现的窗口中单击**环境变量**。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:50
+#: ../../docs/development/compiling/compiling_for_android.rst:65
+#, fuzzy
 msgid ""
-"To set those environment variables on Unix (e.g. Linux, macOS), use ``export "
+"To set those environment variables on Linux or macOS, use ``export "
 "ANDROID_HOME=/path/to/android-sdk`` and ``export ANDROID_NDK_ROOT=/path/to/"
-"android-ndk``. Where /path/to/android-sdk and /path/to/android-ndk is the "
-"path where Android SDK and Android NDK are placed on your PC."
+"android-ndk`` where ``/path/to/android-sdk`` and ``/path/to/android-ndk`` "
+"point to the root of the SDK and NDK directories."
 msgstr ""
 "要在Unix上设置这些环境变量（例如Linux，macOS），请使用``export ANDROID_HOME "
 "= / path / to / android-sdk``和``export ANDROID_NDK_ROOT = / path / to / "
 "android-ndk``。 / path / to / android-sdk和/ path / to / android-ndk是"
 "Android SDK和Android NDK放置在PC上的路径。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:57
+#: ../../docs/development/compiling/compiling_for_android.rst:72
 msgid "Building the export templates"
 msgstr "构建导出模板"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:59
+#: ../../docs/development/compiling/compiling_for_android.rst:74
+#, fuzzy
 msgid ""
 "Godot needs two export templates for Android: the optimized \"release\" "
-"template (`android_release.apk`) and the debug version (`android_debug."
-"apk`). Compiling the standard export templates is done by calling scons with "
-"the following arguments:"
+"template (``android_release.apk``) and the debug template (``android_debug."
+"apk``). As Google will require all APKs to include ARMv8 (64-bit) libraries "
+"starting from August 2019, the commands below will build an APK containing "
+"both ARMv7 and ARMv8 libraries."
 msgstr ""
 "Godot需要两个Android导出模板：优化的“发布”模板（`android_release.apk`）和调试"
 "版本（`android_debug.apk`）。 编译标准导出模板是通过使用以下参数调用scons来完"
 "成的："
 
-#: ../../docs/development/compiling/compiling_for_android.rst:64
-msgid "Release template (used when exporting with \"Debugging Enabled\" OFF)"
+#: ../../docs/development/compiling/compiling_for_android.rst:80
+#, fuzzy
+msgid ""
+"Compiling the standard export templates is done by calling SCons with the "
+"following arguments:"
+msgstr "Windows导出模板是通过将Godot编译为release来创建的，具有以下标志："
+
+#: ../../docs/development/compiling/compiling_for_android.rst:83
+#, fuzzy
+msgid ""
+"Release template (used when exporting with **Debugging Enabled** unchecked)"
 msgstr "发布模板（导出时使用“Debugging Enabled”OFF）"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:72
-msgid ""
-"(on Linux or macOS, execute the `gradlew` script with `./gradlew build`)"
-msgstr "（在Linux或macOS上，使用`./gradlew build`执行`gradlew`脚本）"
+#: ../../docs/development/compiling/compiling_for_android.rst:96
+msgid "The resulting APK will be located at ``bin/android_release.apk``."
+msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:74
-#: ../../docs/development/compiling/compiling_for_android.rst:88
-msgid "The resulting APK is in:"
-msgstr "生成的APK位于："
-
-#: ../../docs/development/compiling/compiling_for_android.rst:80
-msgid "Debug template (used when exporting with \"Debugging Enabled\" ON)"
+#: ../../docs/development/compiling/compiling_for_android.rst:98
+#, fuzzy
+msgid "Debug template (used when exporting with **Debugging Enabled** checked)"
 msgstr "调试模板（导出时使用“Debugging Enabled”ON）"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:95
-msgid "Faster compilation"
-msgstr "编译速度更快"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:97
-msgid ""
-"If you are on Unix or installed PyWin32 on Windows and have multiple CPU "
-"cores available, you can speed up the compilation by adding the ``-jX`` "
-"argument to the SCons command, where ``X`` is the number of cores that you "
-"want to allocate to the compilation, e.g. ``scons -j4``."
+#: ../../docs/development/compiling/compiling_for_android.rst:111
+msgid "The resulting APK will be located at ``bin/android_debug.apk``."
 msgstr ""
-"如果你在Unix上或在Windows上安装了PyWin32并且有多个CPU内核可用，你可以通过在"
-"SCons命令中添加``-jX``参数来加速编译，其中``X``是那个核的数量。 你想分配给编"
-"译，例如 ``scons -j4``。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:104
+#: ../../docs/development/compiling/compiling_for_android.rst:114
 msgid "Adding support for x86 devices"
 msgstr "添加对x86设备的支持"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:106
+#: ../../docs/development/compiling/compiling_for_android.rst:116
+#, fuzzy
 msgid ""
-"If you also want to include support for x86 devices, run the scons command a "
-"second time with the ``android_arch=x86`` argument before building the APK "
-"with Gradle. For example for the release template:"
+"If you also want to include support for x86 devices, run the SCons command a "
+"third time with the ``android_arch=x86`` argument before building the APK "
+"with Gradle. For example, for the release template:"
 msgstr ""
 "如果您还想包含对x86设备的支持，请在使用Gradle构建APK之前再次使用"
 "``android_arch = x86``参数运行scons命令。 例如，对于发布模板："
 
-#: ../../docs/development/compiling/compiling_for_android.rst:118
+#: ../../docs/development/compiling/compiling_for_android.rst:132
 msgid ""
-"This will create a fat binary that works in both platforms, but will add "
-"about 6 megabytes to the APK."
+"This will create a fat binary that works on all platforms. The final APK "
+"size of exported projects will depend on the platforms you choose to support "
+"when exporting; in other words, unused platforms will be removed from the "
+"APK."
 msgstr ""
-"这将创建一个可在两个平台上运行的胖二进制文件，但会为APK增加大约6兆字节。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:122
-#: ../../docs/development/compiling/compiling_for_android.rst:169
-msgid "Troubleshooting"
-msgstr "故障排除"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:124
-msgid ""
-"It might be necessary to clean the build cache between two APK compilations, "
-"as some users have reported issues when building the two export templates "
-"one after the other."
-msgstr ""
-"可能有必要清除两个APK编辑之间的构建缓存，因为一些用户在逐个构建两个导出模板时"
-"报告了问题。"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:129
+#: ../../docs/development/compiling/compiling_for_android.rst:138
 msgid "Using the export templates"
 msgstr "使用导出模板"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:131
+#: ../../docs/development/compiling/compiling_for_android.rst:140
+#, fuzzy
 msgid ""
-"As export templates for Android, Godot needs release and debug APKs that "
-"were compiled against the same version/commit as the editor. If you are "
-"using official binaries for the editor, make sure to install the matching "
-"export templates, or to build your own from the same version."
+"Godot needs release and debug APKs that were compiled against the same "
+"version/commit as the editor. If you are using official binaries for the "
+"editor, make sure to install the matching export templates, or build your "
+"own from the same version."
 msgstr ""
 "作为Android的导出模板，Godot需要发布和调试根据与编辑器相同的版本/提交编译的"
 "APK。 如果您使用官方二进制文件作为编辑器，请确保安装匹配的导出模板，或者从同"
 "一版本构建自己的模板。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:136
+#: ../../docs/development/compiling/compiling_for_android.rst:145
 msgid ""
 "When exporting your game, Godot opens the APK, changes a few things inside "
 "and adds your files."
 msgstr "导出游戏时，Godot会打开APK，更改内部的一些内容并添加您的文件。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:140
+#: ../../docs/development/compiling/compiling_for_android.rst:149
 msgid "Installing the templates"
 msgstr "安装模板"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:142
+#: ../../docs/development/compiling/compiling_for_android.rst:151
+#, fuzzy
 msgid ""
-"The newly-compiled templates (android_debug.apk and android_release.apk) "
-"must be copied to Godot's templates folder with their respective names. The "
-"templates folder can be located in:"
+"The newly-compiled templates (``android_debug.apk`` and ``android_release."
+"apk``) must be copied to Godot's templates folder with their respective "
+"names. The templates folder can be located in:"
 msgstr ""
 "必须将新编译的模板（android_debug.apk和android_release.apk）复制到Godot的模板"
 "文件夹及其各自的名称。 templates文件夹可以位于："
 
-#: ../../docs/development/compiling/compiling_for_android.rst:146
-msgid ""
-"Windows: ``C:\\Users\\[username]\\AppData\\Roaming\\Godot\\templates"
-"\\[version]\\``"
+#: ../../docs/development/compiling/compiling_for_android.rst:155
+#, fuzzy
+msgid "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
 msgstr ""
 "Windows: ``C:\\Users\\[username]\\AppData\\Roaming\\Godot\\templates"
 "\\[version]\\``"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:147
-msgid "Linux: ``/home/[username]/.local/share/godot/templates/[version]/``"
+#: ../../docs/development/compiling/compiling_for_android.rst:156
+#, fuzzy
+msgid "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
 msgstr "Linux: ``/home/[username]/.local/share/godot/templates/[version]/``"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:148
-msgid ""
-"macOS: ``/Users/[username]/Library/Application Support/Godot/templates/"
-"[version]/``"
+#: ../../docs/development/compiling/compiling_for_android.rst:157
+#, fuzzy
+msgid "macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 msgstr ""
 "macOS: ``/Users/[username]/Library/Application Support/Godot/templates/"
 "[version]/``"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:150
+#: ../../docs/development/compiling/compiling_for_android.rst:159
+#, fuzzy
 msgid ""
-"``[version]`` is of the form ``major.minor[.patch].status`` using values "
+"``<version>`` is of the form ``major.minor[.patch].status`` using values "
 "from ``version.py`` in your Godot source repository (e.g. ``3.0.5.stable`` "
-"or `3.1.dev``). You also need to write this same version string to a "
+"or ``3.1.dev``). You also need to write this same version string to a "
 "``version.txt`` file located next to your export templates."
 msgstr ""
 "``[version]``的格式为``major.minor [.patch] .status``，使用Godot源代码库中"
 "``version.py``的值（例如``3.0.5.stable`` 或``3.1.dev``）。 您还需要将相同的版"
 "本字符串写入导出模板旁边的``version.txt``文件。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:157
+#: ../../docs/development/compiling/compiling_for_android.rst:166
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your APKs as custom export templates here:"
@@ -283,7 +294,7 @@ msgstr ""
 "但是，如果您正在编写自定义模块或自定义C ++代码，则可能需要将APK配置为自定义导"
 "出模板："
 
-#: ../../docs/development/compiling/compiling_for_android.rst:163
+#: ../../docs/development/compiling/compiling_for_android.rst:172
 msgid ""
 "You don't even need to copy them, you can just reference the resulting file "
 "in the ``bin\\`` directory of your Godot source folder, so that the next "
@@ -292,49 +303,55 @@ msgstr ""
 "你甚至不需要复制它们，你可以在Godot源文件夹的``bin \\``目录中引用生成的文件，"
 "这样下次构建时你将自动引用自定义模板。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:172
+#: ../../docs/development/compiling/compiling_for_android.rst:178
+msgid "Troubleshooting"
+msgstr "故障排除"
+
+#: ../../docs/development/compiling/compiling_for_android.rst:181
 msgid "Application not installed"
 msgstr "应用程序未安装"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:174
+#: ../../docs/development/compiling/compiling_for_android.rst:183
+#, fuzzy
 msgid ""
-"Android might complain the application is not correctly installed. If so, "
-"check the following:"
+"Android might complain the application is not correctly installed. If so:"
 msgstr "Android可能会抱怨应用程序未正确安装。 如果是，请检查以下内容："
 
-#: ../../docs/development/compiling/compiling_for_android.rst:177
+#: ../../docs/development/compiling/compiling_for_android.rst:186
 msgid "Check that the debug keystore is properly generated."
 msgstr "检查是否正确生成了调试密钥库。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:178
-msgid "Check that jarsigner is from JDK 6, 7 or 8."
+#: ../../docs/development/compiling/compiling_for_android.rst:187
+#, fuzzy
+msgid "Check that the jarsigner executable is from JDK 8."
 msgstr "检查jarsigner是否来自JDK 6,7或8。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:180
-msgid "If it still fails, open a command line and run logcat:"
+#: ../../docs/development/compiling/compiling_for_android.rst:189
+#, fuzzy
+msgid ""
+"If it still fails, open a command line and run `logcat <https://developer."
+"android.com/studio/command-line/logcat>`_:"
 msgstr "如果仍然失败，请打开命令行并运行logcat："
 
-#: ../../docs/development/compiling/compiling_for_android.rst:186
+#: ../../docs/development/compiling/compiling_for_android.rst:195
+#, fuzzy
 msgid ""
-"And check the output while the application is installed. Reason for failure "
-"should be presented there."
+"Then check the output while the application is installed; the error message "
+"should be presented there. Seek assistance if you can't figure it out."
 msgstr "并在安装应用程序时检查输出。 应该在那里提出失败的原因。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:189
-msgid "Seek assistance if you can't figure it out."
-msgstr "如果你想不通，请寻求帮助。"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:192
+#: ../../docs/development/compiling/compiling_for_android.rst:200
 msgid "Application exits immediately"
 msgstr "申请立即退出"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:194
+#: ../../docs/development/compiling/compiling_for_android.rst:202
+#, fuzzy
 msgid ""
-"If the application runs but exits immediately, there might be one of the "
-"following reasons:"
+"If the application runs but exits immediately, this might be due to one of "
+"the following reasons:"
 msgstr "如果应用程序运行但立即退出，则可能是以下原因之一："
 
-#: ../../docs/development/compiling/compiling_for_android.rst:197
+#: ../../docs/development/compiling/compiling_for_android.rst:205
 msgid ""
 "Make sure to use export templates that match your editor version; if you use "
 "a new Godot version, you *have* to update the templates too."
@@ -342,85 +359,19 @@ msgstr ""
 "确保使用与编辑器版本匹配的导出模板; 如果您使用新的Godot版本，您* *也可以*更新"
 "模板。"
 
-#: ../../docs/development/compiling/compiling_for_android.rst:199
-msgid "libgodot_android.so is not in ``lib/armeabi-v7a`` or ``lib/armeabi``"
-msgstr "libgodot_android.so不在``lib / armeabi-v7a``或``lib / armeabi``中"
+#: ../../docs/development/compiling/compiling_for_android.rst:207
+msgid ""
+"``libgodot_android.so`` is not in ``libs/<android_arch>/`` where "
+"``<android_arch>`` is the device's architecture."
+msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:200
-msgid "Device does not support armv7 (try compiling yourself for armv6)"
-msgstr "设备不支持armv7（尝试为armv6编译自己）"
+#: ../../docs/development/compiling/compiling_for_android.rst:209
+msgid ""
+"The device's architecture does not match the exported one(s). Make sure your "
+"templates were built for that device's architecture, and that the export "
+"settings included support for that architecture."
+msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:201
-msgid "Device is Intel, and apk is compiled for ARM."
-msgstr "设备是Intel，apk是为ARM编译的。"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:203
+#: ../../docs/development/compiling/compiling_for_android.rst:213
 msgid "In any case, ``adb logcat`` should also show the cause of the error."
 msgstr "无论如何，``adb logcat``也应该显示错误的原因。"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:206
-msgid "Compilation fails"
-msgstr "编译失败"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:208
-msgid ""
-"On Linux systems with Kernel version 4.3 or newer, compilation may fail with "
-"the error \"pthread_create failed: Resource temporarily unavailable.\""
-msgstr ""
-"在内核版本为4.3或更高版本的Linux系统上，编译可能会失败，并显示错"
-"误“pthread_create failed：资源暂时不可用。”"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:211
-msgid ""
-"This is because of a change in the way Linux limits thread creation. But you "
-"can change those limits through the command line. Please read this section "
-"thoroughly before beginning."
-msgstr ""
-"这是因为Linux限制线程创建的方式发生了变化。 但您可以通过命令行更改这些限制。 "
-"请在开始之前仔细阅读本节内容。"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:215
-msgid ""
-"First open a terminal, then begin compilation as usual (it may be a good "
-"idea to run a --clean first). While compiling enter the following in your "
-"terminal:"
-msgstr ""
-"首先打开一个终端，然后像往常一样开始编译（首先运行--clean可能是个好主意）。 "
-"编译时在终端中输入以下内容："
-
-#: ../../docs/development/compiling/compiling_for_android.rst:223
-msgid ""
-"The output should list a scons process, with its PID as the first number in "
-"the output. For example the PID 1077 in the output shown below:"
-msgstr ""
-"输出应列出scons进程，其PID为输出中的第一个数字。 例如，输出中的PID 1077如下所"
-"示："
-
-#: ../../docs/development/compiling/compiling_for_android.rst:231
-msgid ""
-"Now you can use another command to increase the number of processes that "
-"scons is allowed to spawn. You can check its current limits with:"
-msgstr ""
-"现在，您可以使用另一个命令来增加允许生成scons的进程数。 您可以通过以下方式检"
-"查其当前限制:"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:238
-msgid "You can increase those limits with the command:"
-msgstr "您可以使用以下命令增加这些限制："
-
-#: ../../docs/development/compiling/compiling_for_android.rst:244
-msgid ""
-"Obviously you should substitute the scons PID output by top and a limits "
-"that you think suitable. These are in the form --nproc=soft:hard where soft "
-"must be lesser than or equal to hard. See the man page for more information."
-msgstr ""
-"显然你应该用顶部的scons PID输出和你认为合适的限制来代替。 它们的形式为--"
-"nproc = soft：hard，其中soft必须小于或等于hard。 有关更多信息，请参见手册页。"
-
-#: ../../docs/development/compiling/compiling_for_android.rst:249
-msgid ""
-"If all went well, and you entered the prlimit command while scons was "
-"running, then your compilation should continue without the error."
-msgstr ""
-"如果一切顺利，并且您在scons运行时输入了prlimit命令，那么您的编译应该继续而不"
-"会出现错误。"

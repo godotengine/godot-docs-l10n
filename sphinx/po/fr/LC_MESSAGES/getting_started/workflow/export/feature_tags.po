@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,7 +329,7 @@ msgstr "Fonctionnalités personnalisées"
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:92
 #, fuzzy
 msgid ""
-"It is possible to add custom features to a build, use the relevant field in "
+"It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
 "Il est possible d'ajouter des fonctionnalités personnalisées à un build, il "
@@ -341,19 +341,21 @@ msgid "Overriding project settings"
 msgstr "Écraser les paramètres du projet"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
+#, fuzzy
 msgid ""
 "Features can be used to override specific configuration values in the "
-"*Project Settings*. This allows to better customize any configuration when "
-"doing a build."
+"*Project Settings*. This allows you to better customize any configuration "
+"when doing a build."
 msgstr ""
 "Les fonctionnalités peuvent être utilisées pour remplacer des valeurs de "
 "configuration spécifiques des *réglages du projet*. Cela permet de mieux "
 "personnaliser n'importe quelle configuration lors d'une compilation."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
+#, fuzzy
 msgid ""
 "In the following example, a different icon is added for the demo build of "
-"the game (which was customized in a special export preset which, in turn, "
+"the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
 "Dans l'exemple suivant, une icône différente est ajoutée pour la "
@@ -371,8 +373,9 @@ msgid "Default overrides"
 msgstr "Écrasements par défaut"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:115
+#, fuzzy
 msgid ""
-"There are already a lot of settings that come with overrides by default, "
+"There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
 msgstr ""
 "Il y a déjà beaucoup de paramètres qui sont fournis avec des remplacements "
@@ -384,9 +387,10 @@ msgid "Customizing Build"
 msgstr "Personnalisation de la compilation"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:123
+#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
-"custom **ExportPlugin**. They also are used to specify which shared library "
+"custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
 "Les tags de fonctionnalité peuvent aussi être utilisés pour personnaliser un "

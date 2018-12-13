@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,10 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
+#, fuzzy
 msgid ""
 "Tilemaps are a simple and quick way to make 2D game levels. Basically, you "
-"start with bunch of reference tiles (or pieces) that can be put on a grid, "
+"start with a bunch of reference tiles (or pieces) that can be put on a grid, "
 "as many times each as desired - think of it like a map editor:"
 msgstr ""
 "瓦片地图是一种简单快捷的制作2D游戏关卡的方法。 基本上，你只需从一堆可多次使用"
@@ -56,10 +57,11 @@ msgstr ""
 "当然也可以使用多张单独的图像瓦片。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
+#, fuzzy
 msgid ""
-"Create a new project and move the above PNG image into the directory. Next "
+"Create a new project and move the above PNG image into the directory. Next, "
 "go into the image's import settings and turn off ``Filter``, keeping it on "
-"will cause issues later. ``Mipmaps`` should already be disabled, if not, "
+"will cause issues later. ``Mipmaps`` should already be disabled; if not, "
 "disable this too."
 msgstr ""
 "创建一个新项目并将上面的PNG图像移动到目录中。 接下来进入图像的导入设置并关"
@@ -77,9 +79,10 @@ msgstr ""
 "很难将复杂数据导入其中并进行维护。 以下是手动编辑资源的样子："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:40
+#, fuzzy
 msgid ""
-"There's enough properties to get by. With some effort, editing this way can "
-"work. But the easiest way to edit and maintain a tileset is exporting it "
+"There are enough properties to get by. With some effort, editing this way "
+"can work. But the easiest way to edit and maintain a tileset is exporting it "
 "from a specially-crafted scene!"
 msgstr ""
 "有足够的属性可以获得。 通过一些努力，以这种方式编辑可以工作。 但编辑和维护"
@@ -90,12 +93,13 @@ msgid "TileSet scene"
 msgstr "TileSet场景"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:47
+#, fuzzy
 msgid ""
 "Create a new scene with a regular Node or Node2D as root. For each tile you "
 "want to define, add a sprite node as a child. Since tiles here are 50x50, "
 "you should turn on the grid (``View -> Show Grid`` or ``G`` key) and enable "
 "snap (``Use Snap`` icon or ``S`` key). Moving tiles with the mouse might "
-"still be a inaccurate so use your arrow keys as well."
+"still be a bit inaccurate, so use your arrow keys as well."
 msgstr ""
 "使用常规节点或Node2D以root身份创建新场景。 对于要定义的每个tile，请将sprite节"
 "点添加为子级。 由于这里的瓷砖是50x50，你应该打开网格（ ``View  - > Show "
@@ -112,20 +116,22 @@ msgstr ""
 "部分。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:57
+#, fuzzy
 msgid ""
 "Finally, make sure to name your sprite node correctly. This will ensure "
-"that, in subsequent edits to the tileset (for example, if added collision, "
-"changed the region, etc), the tile will still be **identified correctly and "
-"updated**. This name should be unique."
+"that, in subsequent edits to the tileset (for example, if you've added "
+"collision, changed the region, etc), the tile will still be **identified "
+"correctly and updated**. This name should be unique."
 msgstr ""
 "最后，确保正确命名您的精灵节点。 这将确保在对tileset的后续编辑中（例如，如果"
 "添加了冲突，更改了区域等），仍将 *正确识别并更新* 瓦片集。 这个名字应该是唯一"
 "的。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
+#, fuzzy
 msgid ""
-"Sounds like a lot of requirements, so here's a screenshot that shows where "
-"everything of relevance is:"
+"Sounds like quite a few requirements, so here's a screenshot that shows "
+"where everything of relevance is:"
 msgstr "听起来很多要求，所以这里有一个屏幕截图，显示相关的所有内容："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:67
@@ -153,8 +159,9 @@ msgstr ""
 "建议使用CollisionPolygon，因为它更容易编辑。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:83
+#, fuzzy
 msgid ""
-"Finally, edit the polygon, this will give the tile a collision and fix the "
+"Finally, edit the polygon; this will give the tile a collision and fix the "
 "warning icon next to the CollisionPolygon node. **Remember to use snap!** "
 "Using snap will make sure collision polygons are aligned properly, allowing "
 "a character to walk seamlessly from tile to tile. Also **do not scale or "
@@ -240,10 +247,11 @@ msgid "Painting your world"
 msgstr "画你的世界"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:139
+#, fuzzy
 msgid ""
 "With all set, make sure the TileMap node is selected. A red grid will appear "
-"on screen, allowing to paint on it with the selected tile on the left "
-"palette."
+"on the screen, allowing you to paint on it with the selected tile on the "
+"left palette."
 msgstr ""
 "使用all set，确保选中TileMap节点。 屏幕上将出现一个红色网格，允许使用左侧调色"
 "板上的选定图块在其上绘画。"
@@ -258,9 +266,10 @@ msgstr ""
 "您使用锁定按钮将其锁定："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:151
+#, fuzzy
 msgid ""
 "If you accidentally place a tile somewhere you don't want it to be, you can "
-"delete it with ``RMB`` while in the tilemap editor."
+"delete it with ``RMB`` (the right mouse button) while in the tilemap editor."
 msgstr ""
 "如果你不小心将瓷砖放在某个你不想要的地方，你可以在瓷砖地图编辑器中用``RMB``删"
 "除它。"
@@ -296,10 +305,11 @@ msgstr ""
 "致过滤伪像，如下所示："
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:172
+#, fuzzy
 msgid ""
-"This is unavoidable, as it is the way the hardware bilinear filter works. "
-"So, to avoid this situation, there are a few workarounds. Try the one that "
-"looks better for you:"
+"This is unavoidable, as it is the way the hardware bilinear filter works. To "
+"avoid this situation, there are a few workarounds. Try the one that looks "
+"better for you:"
 msgstr ""
 "这是不可避免的，因为它是硬件双线性滤波器的工作方式。 因此，为了避免这种情况，"
 "有一些解决方法。 试试看起来更适合你的那个："
@@ -314,9 +324,10 @@ msgstr ""
 "ref：`doc_import_images`资产管道教程）。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:178
+#, fuzzy
 msgid ""
 "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > "
-"2d > Use Pixel Snap`` to true, you can also search for ``Pixel Snap``)."
+"2d > Use Pixel Snap`` to true; you can also search for ``Pixel Snap``)."
 msgstr ""
 "启用像素捕捉（将“项目>项目设置>渲染>质量> 2d>使用像素捕捉”设置为true，您还可"
 "以搜索“Pixel Snap”）。"
@@ -331,9 +342,10 @@ msgstr ""
 "添加一个摄像头，将其设置为“当前”并使用其“缩放”进行游戏可能是一个很好的起点。"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
+#, fuzzy
 msgid ""
 "You can use a single, separate image for each tile. This will remove all "
-"artifacts but can be more cumbersome to implement and is less optimized."
+"artifacts, but can be more cumbersome to implement and is less optimized."
 msgstr ""
 "您可以为每个图块使用单个单独的图像。 这将删除所有工件，但实现起来可能更加麻"
 "烦，并且不太优化。"

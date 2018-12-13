@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,6 @@ msgstr ""
 "Godot官方支持四种（是的，四种！）语言，并且能够动态添加额外的语言！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
@@ -44,7 +43,6 @@ msgstr ""
 "难。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -77,7 +75,7 @@ msgstr "简单，优雅，设计上为Lua、Python、Squirrel等语言用户所�
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr "加载和编译速度飞快（blazingly fast）。"
+msgstr "加载和编译速度飞快。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
@@ -312,7 +310,6 @@ msgstr ""
 "脚本创建对话框会弹出。这个对话框允许你设置脚本语言、类名和其它相关选项。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
@@ -341,7 +338,6 @@ msgstr ""
 "本”图标或Inspector窗口中的Script属性来查看这个脚本："
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
@@ -435,7 +431,6 @@ msgstr ""
 "及要触发的方法的名字。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
@@ -458,7 +453,6 @@ msgstr ""
 "之前生成这个函数。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -504,8 +498,8 @@ msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_connect>`."
 msgstr ""
-"最后，在 ``_ready()``中通过 :ref:`Object.connect() <class_Object_connect>`来"
-"连接到按钮的“pressed”信号。"
+"最后，在 ``_ready()`` 中通过 :ref:`Object.connect() <class_Object_connect>` "
+"来连接到按钮的“pressed”信号。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"

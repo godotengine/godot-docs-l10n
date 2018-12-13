@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,15 +39,16 @@ msgid ""
 "studio/"
 msgstr "从 https://developer.android.com/studio/ 下载并安装Android SDK"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:17
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:16
 msgid "Install OpenJDK or Oracle JDK"
 msgstr "安装OpenJDK或Oracle JDK"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:18
+#, fuzzy
 msgid ""
 "Download and install  `OpenJDK <https://github.com/ojdkbuild/ojdkbuild>`__ "
 "or `Oracle JDK <http://www.oracle.com/technetwork/java/javase/downloads/"
-"index.html>`__. Versions below JDK 8 may not work, some users have reported "
+"index.html>`__. Versions below JDK 8 may not work; some users have reported "
 "issues with the jarsigner (used to sign the APKs) in JDK 7."
 msgstr ""
 "下载并安装 `OpenJDK  <https://github.com/ojdkbuild/ojdkbuild>`__ 或 ` Oracle "
@@ -95,9 +96,10 @@ msgid "Setting it up in Godot"
 msgstr "在Godot中设置它"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:45
+#, fuzzy
 msgid ""
-"Enter the Editor Settings screen. This screens contains the editor settings "
-"for the user account in the computer (It's independent from the project)."
+"Enter the Editor Settings screen. This screen contains the editor settings "
+"for the user account in the computer (it's independent from the project)."
 msgstr ""
 "进入编辑器设置屏幕。 此屏幕包含计算机中用户帐户的编辑器设置（它独立于项目）。"
 
@@ -130,9 +132,10 @@ msgid "Exporting for Google Play Store"
 msgstr "为Google Play商店导出"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
+#, fuzzy
 msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
-"debug keystore file, such file can be generated like this:"
+"debug keystore file; such file can be generated like this:"
 msgstr ""
 "将APK上传到Google的Play商店需要您使用非调试密钥库文件进行签名，这样的文件可以"
 "像这样生成："
@@ -165,15 +168,17 @@ msgid "Release Password: Key password."
 msgstr "发布密码：密钥密码。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
+#, fuzzy
 msgid ""
-"Now your export_presets.cfg file contains sensitive info, if using a Version "
-"Control System it is a good idea to remove it from public repositories."
+"Now your export_presets.cfg file contains sensitive info; if using a Version "
+"Control System, it is a good idea to remove it from public repositories."
 msgstr ""
 "现在您的export_presets.cfg文件包含敏感信息，如果使用版本控制系统，最好将其从"
 "公共存储库中删除。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+#, fuzzy
 msgid ""
-"Don't forget to disable the Export with debug button while choosing the "
+"Don't forget to disable the ``Export With Debug`` button while choosing the "
 "APK's name."
 msgstr "选择APK的名称时，不要忘记禁用“使用调试导出”按钮。"

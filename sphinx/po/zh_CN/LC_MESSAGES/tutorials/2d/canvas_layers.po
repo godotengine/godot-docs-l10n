@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,19 +39,21 @@ msgstr ""
 "点也会被移动。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
+#, fuzzy
 msgid ""
-"These nodes are placed as direct or indirect children to a :ref:`Viewport "
+"These nodes are placed as direct or indirect children of a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
 msgstr ""
 "这些节点直接或间接地作为 :ref:`Viewport <class_Viewport>` 的子节点，并通过视"
 "区显示。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:19
+#, fuzzy
 msgid ""
 "Viewport has the property :ref:`Viewport.canvas_transform "
 "<class_Viewport_canvas_transform>`, which allows to transform all the "
 "CanvasItem hierarchy by a custom :ref:`Transform2D <class_Transform2D>` "
-"transform. Nodes such as :ref:`Camera2D <class_Camera2D>`, work by changing "
+"transform. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
 "视区具有以下属性 :ref:`Viewport.canvas_transform "

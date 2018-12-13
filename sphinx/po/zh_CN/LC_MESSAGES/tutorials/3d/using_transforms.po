@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,10 +122,11 @@ msgid ""
 msgstr "你可能想知道这是如何影响你的。 我们来看一个实际的例子："
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
+#, fuzzy
 msgid ""
-"Imagine you are working on a first-person controller (FPS game). Moving the "
-"mouse left and right controls your view angle parallel to the ground, while "
-"moving it up and down moves the player's view up and down."
+"Imagine you are working on a first-person controller (e.g. an FPS game). "
+"Moving the mouse left and right controls your view angle parallel to the "
+"ground, while moving it up and down moves the player's view up and down."
 msgstr ""
 "想象一下，你正在研究第一人称控制器（FPS游戏）。 向左和向右移动鼠标可以控制与"
 "地面平行的视角，同时上下移动可以调整玩家上下的视野。"
@@ -214,8 +215,8 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
-"所有这些的结论是，你不应该在游戏中使用Godot的``rotation``属性：ref："
-"`class_Spatial`节点。 它主要用在编辑器中，为了与2D引擎一致，并且用于简单的旋"
+"所有这些的结论是，你不应该在游戏中使用Godot的 ``rotation`` 属性 ：ref："
+"`class_Spatial` 节点。 它主要用在编辑器中，为了与2D引擎一致，并且用于简单的旋"
 "转（通常只有一个轴，或者在有限的情况下使用两个）。 你可能会受到诱惑, 但不要使"
 "用它。"
 
@@ -233,8 +234,8 @@ msgid ""
 "`class_Spatial` node contains a ``transform`` property which is relative to "
 "the parent's transform, if the parent is a Spatial-derived type."
 msgstr ""
-"Godot对方向使用：ref：`class_Transform`数据类型。 每一个：ref："
-"`class_Spatial`节点都包含一个``transform``属性，如果该父类是一个空间派生类"
+"Godot对方向使用 ：ref：`class_Transform` 数据类型。 每一个 ：ref："
+"`class_Spatial` 节点都包含一个 ``transform`` 属性，如果该父类是一个空间派生类"
 "型，则该属性相对依赖于父类变换。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:91
@@ -244,6 +245,7 @@ msgid ""
 msgstr "也可以通过``global_transform``属性访问世界坐标变换。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:93
+#, fuzzy
 msgid ""
 "A transform has a :ref:`class_Basis` (transform.basis sub-property), which "
 "consists of three :ref:`class_Vector3` vectors. These are accessed via the "
@@ -251,22 +253,23 @@ msgid ""
 "basis.x``, ``transform.basis.y``, and ``transform.basis.z``. Each vector "
 "points in the direction its axis has been rotated, so they effectively "
 "describe the node's total rotation. The scale (as long as it's uniform) can "
-"be also be inferred from the length of the axes. A *basis* can also be "
+"also be inferred from the length of the axes. A *basis* can also be "
 "interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
 msgstr ""
-"一个变换有一个：ref：`class_Basis`（transform.basis子属性），它由三个：ref："
-"`class_Vector3`向量组成。 这些向量可以通过``transform.basis``属性访问，并可以"
-"通过``transform.basis.x``，``transform.basis.y``和``transform.basis.z``直接访"
-"问。 每个向量指向它的轴被旋转的方向，因此它们可以有效地描述节点的总旋转。 比"
-"例（只要它是一致的）也可以从轴的长度推断出来。 一个*basis*也可以被解释为一个"
-"3x3矩阵并被用作``transform.basis [x] [y]``。"
+"一个变换有一个 ：ref：`class_Basis` （transform.basis子属性），它由三个 ："
+"ref：`class_Vector3` 向量组成。 这些向量可以通过 ``transform.basis`` 属性访"
+"问，并可以通过 ``transform.basis.x`` ， ``transform.basis.y`` 和 ``transform."
+"basis.z`` 直接访问。 每个向量指向它的轴被旋转的方向，因此它们可以有效地描述节"
+"点的总旋转。 比例（只要它是一致的）也可以从轴的长度推断出来。 一个 *basis* 也"
+"可以被解释为一个3x3矩阵并被用作 ``transform.basis [x] [y]``。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
 msgstr "默认的basis（未修改）类似于："
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
-msgid "This is also an analog to a 3x3 identity matrix."
+#, fuzzy
+msgid "This is also an analog of a 3x3 identity matrix."
 msgstr "这也是一个3x3单位矩阵的类似物。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:125
@@ -293,9 +296,10 @@ msgid ""
 msgstr "一种查看一个变换的方法是在“本地空间”模式下查看该对象的3D Gizmo。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:136
+#, fuzzy
 msgid ""
 "The gizmo's arrows show the ``X``, ``Y``, and ``Z`` axes (in red, green, and "
-"blue respectively) of the basis, while gizmo's center is at the object's "
+"blue respectively) of the basis, while the gizmo's center is at the object's "
 "origin."
 msgstr ""
 "Gizmo的箭头显示基准的“X”，“Y”和“Z”轴（分别为红色，绿色和蓝色），而Gizmo的中心"
@@ -306,7 +310,7 @@ msgid ""
 "For more information on the mathematics of vectors and transforms, please "
 "read the :ref:`doc_vector_math` tutorials."
 msgstr ""
-"有关向量和变换在数学方面的更多信息，请阅读：ref：`doc_vector_math`教程。"
+"有关向量和变换在数学方面的更多信息，请阅读 ：ref：`doc_vector_math`教程。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
 msgid "Manipulating transforms"
@@ -333,8 +337,9 @@ msgid "This rotates the node relative to the parent node."
 msgstr "这会相对于父节点来旋转节点。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
+#, fuzzy
 msgid ""
-"To rotate relative to object space (the node's own transform) use the "
+"To rotate relative to object space (the node's own transform), use the "
 "following:"
 msgstr "要相对于对象空间旋转（节点自己的变换），请使用以下内容："
 
@@ -377,9 +382,10 @@ msgstr ""
 "缩放都将丢失。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:216
+#, fuzzy
 msgid ""
-"It is recommended you don't scale nodes that are going to be manipulated. "
-"Scale their children nodes instead (such as MeshInstance). If you absolutely "
+"It is recommended you not scale nodes that are going to be manipulated; "
+"scale their children nodes instead (such as MeshInstance). If you absolutely "
 "must scale the node, then re-apply it at the end:"
 msgstr ""
 "建议您不要缩放要操纵的节点，而是缩放其子节点（如MeshInstance）。 如果您必须缩"
@@ -411,8 +417,8 @@ msgid ""
 "Is the enemy looking at the player? Use the dot product for this (see the :"
 "ref:`doc_vector_math` tutorial for an explanation of the dot product):"
 msgstr ""
-"敌人在看着玩家吗？ 为此判断你可以使用点积（请参阅：ref：`doc_vector_math`教程"
-"以获取对点积的解释）："
+"敌人在看着玩家吗？ 为此判断你可以使用点积（请参阅 ：ref：`doc_vector_math` 教"
+"程以获取对点积的解释）："
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
@@ -441,9 +447,10 @@ msgstr ""
 "像机。 那些肯定是用角度来完成的，因为你希望变换以特定的顺序进行。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:310
+#, fuzzy
 msgid ""
 "For such cases, keep the angles and rotations *outside* the transform and "
-"set them every frame. Don't try retrieve them and re-use them because the "
+"set them every frame. Don't try to retrieve and re-use them because the "
 "transform is not meant to be used this way."
 msgstr ""
 "对于这种情况，请保持变换*外*的角度和旋转，并将其设置为每帧。 不要尝试恢复并重"
@@ -483,21 +490,23 @@ msgid "Converting a rotation to quaternion is straightforward."
 msgstr "将旋转转换为四元数很简单。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:385
+#, fuzzy
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
-"(it can also do transform accumulation, transform points, etc. though this "
+"(it can also do transform accumulation, transform points, etc., though this "
 "is used less often). If you interpolate or apply operations to quaternions "
 "many times, keep in mind they need to be eventually normalized or they also "
 "may suffer from numerical precision errors."
 msgstr ""
-"ref：`class_Quat`类型的引用有更多关于数据类型的信息（它也可以做变换累加，变换"
-"点等等，虽然这个用法较少）。 如果多次对四元数进行插值或应用运算，请记住它们需"
-"要最终归一化，否则它们可能会产生数值精度错误。"
+":ref:`class_Quat` 类型的引用有更多关于数据类型的信息（它也可以做变换累加，变"
+"换点等等，虽然这个用法较少）。 如果多次对四元数进行插值或应用运算，请记住它们"
+"需要最终归一化，否则它们可能会产生数值精度错误。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:387
+#, fuzzy
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
-"result will be always correct and smooth."
+"result will always be correct and smooth."
 msgstr "四元数在做相机/路径/等东西时很有用。 插值的结果总会是正确且平滑的。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:390
