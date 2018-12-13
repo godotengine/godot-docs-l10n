@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,7 @@ msgid "Let's go over what's happening here:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:292
-msgid "First we check if the event is a ``InputEventMouseButton`` event and that the mouse mode is ``MOUSE_MODE_CAPTURED``. Then we check to see if the button index is either a ``BUTTON_WHEEL_UP`` or ``BUTTON_WHEEL_DOWN`` index."
+msgid "First we check if the event is an ``InputEventMouseButton`` event and that the mouse mode is ``MOUSE_MODE_CAPTURED``. Then we check to see if the button index is either a ``BUTTON_WHEEL_UP`` or ``BUTTON_WHEEL_DOWN`` index."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:295
@@ -265,11 +265,11 @@ msgid "Next we clamp mouse scroll value to assure it is inside the range of sele
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:300
-msgid "We then check to see if the player is changing weapons or reloading. If the player is doing neither, we round ``mouse_scroll_value`` and cast it to a ``int``."
+msgid "We then check to see if the player is changing weapons or reloading. If the player is doing neither, we round ``mouse_scroll_value`` and cast it to an ``int``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:302
-msgid "We are casting ``mouse_scroll_value`` to a ``int`` so we can use it as a key in our dictionary. If we left it as a float, we would get an error when we try to run the project."
+msgid "We are casting ``mouse_scroll_value`` to an ``int`` so we can use it as a key in our dictionary. If we left it as a float, we would get an error when we try to run the project."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:305
@@ -317,7 +317,7 @@ msgid "Next expand ``Health_Pickup_Trigger``. This is an :ref:`Area <class_Area>
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:344
-msgid "The last thing to note is how we have a :ref:`AnimationPlayer <class_AnimationPlayer>` node so the health kit spins around slowly and bobs up and down."
+msgid "The last thing to note is how we have an :ref:`AnimationPlayer <class_AnimationPlayer>` node so the health kit spins around slowly and bobs up and down."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:346
@@ -593,7 +593,7 @@ msgid "``destroyed_target``: A :ref:`PackedScene <class_PackedScene>` to hold th
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:705
-msgid "Notice how we're using a exported variable (a :ref:`PackedScene <class_PackedScene>`) to get the broken target scene instead of using ``preload``. By using an exported variable, we can chose the scene from the editor, and if we need to use a different scene, it's as easy as selecting a different scene in the editor, we don't need to go to the code to change the scene we're using."
+msgid "Notice how we're using an exported variable (a :ref:`PackedScene <class_PackedScene>`) to get the broken target scene instead of using ``preload``. By using an exported variable, we can choose the scene from the editor, and if we need to use a different scene, it's as easy as selecting a different scene in the editor, we don't need to go to the code to change the scene we're using."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:711

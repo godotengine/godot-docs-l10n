@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Importing images"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:7
-msgid "Why importing them?"
+msgid "Why import them?"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:9
@@ -187,11 +187,11 @@ msgid "HDR Mode"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:72
-msgid "Godot supports high dynamic range textures (as .HDR or .EXR). These are mostly useful as high dynamic range equirectancular panorama skys (the internet has plenty of if you look for them), which replace Cubemaps in Godot 2.x. Modern PCs support the BC6H VRAM format, but there are still plenty that do not."
+msgid "Godot supports high dynamic range textures (as .HDR or .EXR). These are mostly useful as high dynamic range equirectangular panorama skies (the internet has plenty if you search for them), which replace Cubemaps in Godot 2.x. Modern PCs support the BC6H VRAM format, but there are still plenty that do not."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:75
-msgid "If you want Godot to ensure full compatibility in for kind of textures, enable the \"Force RGBE\" option."
+msgid "If you want Godot to ensure full compatibility in terms of the kind of textures, enable the \"Force RGBE\" option."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:78
@@ -199,7 +199,7 @@ msgid "Normal Map"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:80
-msgid "When using a texture as normal map, only the red and green channels are required. Given regular texture compression algorithms produce artifacts that don't look that nice in normal maps, the RGTC compression format is the best fit for this data. Forcing this option to \"Enabled\" will make Godot import the image as RGTC compressed. By default, it's set to \"Detect\" which means that if the texture is ever used as a normal map, it will be changed to \"Enabled\" and reimported automatically."
+msgid "When using a texture as normal map, only the red and green channels are required. Given regular texture compression algorithms produce artifacts that don't look that nice in normal maps, the RGTC compression format is the best fit for this data. Forcing this option to \"Enabled\" will make Godot import the image as RGTC compressed. By default, it's set to \"Detect\", which means that if the texture is ever used as a normal map, it will be changed to \"Enabled\" and reimported automatically."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:86
@@ -227,7 +227,7 @@ msgid "Filter"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:100
-msgid "When pixels become larger than the screen pixels, this options enable linear interpolation for them. The result is a smoother (less blocky) texture. This setting can be commonly used in 2D and 3D, but it's usually disabled when making pixel perfect games."
+msgid "When pixels become larger than the screen pixels, this option enables linear interpolation for them. The result is a smoother (less blocky) texture. This setting can be commonly used in 2D and 3D, but it's usually disabled when making pixel perfect games."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:103
@@ -251,7 +251,7 @@ msgid "Keep in mind the above when making phone games and applications, want to 
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:113
-msgid "When doing 3D, mipmap should be turned on as this also improves performance (smaller versions of the texture are used for objects further away)."
+msgid "When doing 3D, mipmap should be turned on, as this also improves performance (smaller versions of the texture are used for objects further away)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:116
@@ -259,7 +259,7 @@ msgid "Anisotropic"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:118
-msgid "When textures are near parallel to the view (like floors), this option makes them have more detail by reducing blurryness."
+msgid "When textures are near parallel to the view (like floors), this option makes them have more detail by reducing blurriness."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:121
@@ -283,7 +283,7 @@ msgid "Fix Alpha Border"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:134
-msgid "This puts pixels of the same surrounding color in transition from transparency to non transparency. It helps mitigate the outline effect when exporting images from Photoshop and the likes."
+msgid "This puts pixels of the same surrounding color in transition from transparency to non transparency. It helps mitigate the outline effect when exporting images from Photoshop and the like."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:139
@@ -299,11 +299,11 @@ msgid "An alternative to fix darkened borders is to use premultiplied alpha. By 
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:148
-msgid "HDR as SRGB"
+msgid "HDR as sRGB"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:150
-msgid "Some few HDR files are broken and contain SRGB color data. It is advised to not use them but, in the worst case, toggling this option on will make them look right."
+msgid "A few HDR files are broken and contain sRGB color data. It is advised not to use them, but, in the worst-case scenario, toggling this option on will make them look right."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:153
@@ -311,7 +311,7 @@ msgid "Invert Color"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:155
-msgid "Reverses the image's color. This is useful for example to convert a height map generated by external programs to depth map to use with :ref:`doc_spatial_material`."
+msgid "Reverses the image's color. This is useful, for example, to convert a height map generated by external programs to depth map to use with :ref:`doc_spatial_material`."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_images.rst:158

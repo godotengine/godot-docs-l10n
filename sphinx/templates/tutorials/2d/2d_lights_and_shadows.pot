@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:9
-msgid "This tutorial explains how the 2D lighting works in the `lights and shadows <https://github.com/godotengine/godot-demo-projects/tree/master/2d/lights_and_shadows>`_ demo project. It begins with a brief description of the resources used final demo and then describes how to make a scene like the demo step by step."
+msgid "This tutorial explains how the 2D lighting works in the `lights and shadows <https://github.com/godotengine/godot-demo-projects/tree/master/2d/lights_and_shadows>`_ demo project. It begins with a brief description of the resources used in the final demo and then describes how to make a scene like the demo step by step."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
@@ -105,7 +105,7 @@ msgid ":ref:`Lights <class_Light2D>` cover the entire extent of their respective
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:75
-msgid ":ref:`Lights <class_Light2D>` have four ``modes``: ``add``, ``sub``, ``mix``, and ``mask``."
+msgid ":ref:`Lights <class_Light2D>` have four ``Modes``: ``Add``, ``Sub``, ``Mix``, and ``Mask``."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:77
@@ -161,11 +161,11 @@ msgid "Next create three :ref:`Light2D's <class_Light2D>` and set their textures
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:124
-msgid "Next add a child :ref:`Sprite <class_Sprite>` to each of the :ref:`Light <class_Light2D>` nodes, and set the :ref:`Sprite's <class_Sprite>` texture to the `blob image <https://raw.githubusercontent.com/godotengine/godot-demo-projects/master/2d/lights_and_shadows/spot.png>`_. Each of these should stay centered on the :ref:`Light <class_Light2D>` node. The blob is the image of the light itself while the :ref:`Light <class_Light2D>` shows the effect that the light has on the scene. The :ref:`LightOccluder2D's <class_LightOccluder2D>` will treat the position of the light as the center of the :ref:`Light <class_Light2D>` node which is why we want the blob to be centered on its parent :ref:`Light <class_Light2D>`."
+msgid "Next add a child :ref:`Sprite <class_Sprite>` to each of the :ref:`Light <class_Light2D>` nodes, and set the :ref:`Sprite's <class_Sprite>` texture to the `blob image <https://raw.githubusercontent.com/godotengine/godot-demo-projects/master/2d/lights_and_shadows/spot.png>`_. Each of these should stay centered on the :ref:`Light <class_Light2D>` node. The blob is the image of the light itself while the :ref:`Light <class_Light2D>` shows the effect that the light has on the scene. The :ref:`LightOccluder2D's <class_LightOccluder2D>` will treat the position of the light as the center of the :ref:`Light <class_Light2D>` node, which is why we want the blob to be centered on its parent :ref:`Light <class_Light2D>`."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:133
-msgid "At the time of writing, 3.0 is the stable release version. The 3.1 development branch contains many changes to the animation system, so the animations in the demo will not be covered here. See :ref:Introduction to 2D Animation. <doc_introduction_2d> for more information."
+msgid "At the time of writing, 3.0 is the stable release version. The 3.1 development branch contains many changes to the animation system, so the animations in the demo will not be covered here. See :ref:`doc_introduction_2d_animation` for more information."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:137
@@ -189,7 +189,7 @@ msgid "Each shadow caster is made of a :ref:`Sprite <class_Sprite>`, with a :ref
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:160
-msgid ":ref:`LightOccluder2Ds <class_LightOccluder2D>` tell the game what shape the occluder has. They hold an :ref:`OccluderPolygon2D <class_OccluderPolygon2D>` which is a container for a polygon and some other information. For this demo, since our wall is a square, we set ``Polygon`` to a square. The other default settings are fine."
+msgid ":ref:`LightOccluder2Ds <class_LightOccluder2D>` tell the game what shape the occluder has. They hold an :ref:`OccluderPolygon2D <class_OccluderPolygon2D>`, which is a container for a polygon and some other information. For this demo, since our wall is a square, we set ``Polygon`` to a square. The other default settings are fine."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:165
@@ -201,7 +201,7 @@ msgid "``Cull Mode`` lets you select which direction gets culled. The default is
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:173
-msgid "To illustrate the difference, here is an image of a :ref:`LightOccluder2D <class_LightOccluder2D>` with ``Closed`` set to ``off`` in the corresponding :ref:`OccluderPolygon2D <class_OccluderPolygon2D>` so that the lines of the polygon can be seen:"
+msgid "To illustrate the difference, here is an image of a :ref:`LightOccluder2D <class_LightOccluder2D>` with ``Closed`` set to ``off`` in the corresponding :ref:`OccluderPolygon2D <class_OccluderPolygon2D>`, so that the lines of the polygon can be seen:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:179
@@ -221,7 +221,7 @@ msgid "When you have added the :ref:`LightOccluder2Ds <class_LightOccluder2D>` t
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:197
-msgid "To give the shadows that nice soft edge look we set the variables ``filter``, ``filter smooth``, and ``gradient length``. Godot supports `Percentage Closer Filtering <https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch11.html>`_ (PCF) which takes multiple samples of the shadow map around a pixel and blurs them to create a smooth shadow effect. The higher the number of samples the smoother the shadow will look but the slower it will run. That is why Godot provides 3-13 samples by default and allows you to choose. The demo uses PCF7."
+msgid "To give the shadows that nice, soft edge look we set the variables ``filter``, ``filter smooth``, and ``gradient length``. Godot supports `Percentage Closer Filtering <https://developer.nvidia.com/gpugems/GPUGems/gpugems_ch11.html>`_ (PCF), which takes multiple samples of the shadow map around a pixel and blurs them to create a smooth shadow effect. The higher the number of samples the smoother the shadow will look, but the slower it will run. That is why Godot provides 3-13 samples by default and allows you to choose. The demo uses PCF7."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:206
@@ -233,7 +233,7 @@ msgid "``filter`` is set to ``PCF13``. Notice how the shadow becomes wider, this
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:214
-msgid "In order to make use of filtering you need to set the ``filter smooth`` variable. This dictates how far apart the samples are. If you want the soft area to extend quite far you can increase the size of ``filter smooth``. However with low samples and a large filter smooth you can see lines forming between the samples."
+msgid "In order to make use of filtering you need to set the ``filter smooth`` variable. This dictates how far apart the samples are. If you want the soft area to extend quite far, you can increase the size of ``filter smooth``. However, with few samples and a large filter smooth, you can see lines forming between the samples."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:221
@@ -249,7 +249,7 @@ msgid "``filter smooth`` is set to ``0``."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:230
-msgid "Lastly there is the variable ``gradient length``. For some smooth shadows it is preferable to not have the shadow start immediately on the object as this produces a hard edge. The gradient length variable creates a smooth gradient to begin the shadow to reduce the effect of the hard edge."
+msgid "Lastly, there is the variable ``gradient length``. For some smooth shadows it is preferable not to have the shadow start immediately on the object, as this produces a hard edge. The gradient length variable creates a smooth gradient to begin the shadow to reduce the effect of the hard edge."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:236
@@ -261,6 +261,6 @@ msgid "``gradient length`` is set to ``10``."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:242
-msgid "You will need to play around with settings a bit to find ones that suit your project. There is no right solution for everyone, which is why Godot provides so much flexibility. Just keep in mind that the higher ``filter`` set the more expensive the shadows will be."
+msgid "You will need to play around with the options a bit to find settings that suit your project. There is no right solution for everyone, which is why Godot provides so much flexibility. Just keep in mind that the higher ``filter`` set the more expensive the shadows will be."
 msgstr ""
 

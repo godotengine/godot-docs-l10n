@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-04 23:31+0100\n"
+"POT-Creation-Date: 2018-12-13 12:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:9
-msgid "Tilemaps are a simple and quick way to make 2D game levels. Basically, you start with bunch of reference tiles (or pieces) that can be put on a grid, as many times each as desired - think of it like a map editor:"
+msgid "Tilemaps are a simple and quick way to make 2D game levels. Basically, you start with a bunch of reference tiles (or pieces) that can be put on a grid, as many times each as desired - think of it like a map editor:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:15
@@ -41,7 +41,7 @@ msgid "To begin, a tileset needs to be made. Here are some tiles for it. They ar
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
-msgid "Create a new project and move the above PNG image into the directory. Next go into the image's import settings and turn off ``Filter``, keeping it on will cause issues later. ``Mipmaps`` should already be disabled, if not, disable this too."
+msgid "Create a new project and move the above PNG image into the directory. Next, go into the image's import settings and turn off ``Filter``, keeping it on will cause issues later. ``Mipmaps`` should already be disabled; if not, disable this too."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:33
@@ -49,7 +49,7 @@ msgid "We will be creating a :ref:`TileSet <class_TileSet>` resource. While this
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:40
-msgid "There's enough properties to get by. With some effort, editing this way can work. But the easiest way to edit and maintain a tileset is exporting it from a specially-crafted scene!"
+msgid "There are enough properties to get by. With some effort, editing this way can work. But the easiest way to edit and maintain a tileset is exporting it from a specially-crafted scene!"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
@@ -57,7 +57,7 @@ msgid "TileSet scene"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:47
-msgid "Create a new scene with a regular Node or Node2D as root. For each tile you want to define, add a sprite node as a child. Since tiles here are 50x50, you should turn on the grid (``View -> Show Grid`` or ``G`` key) and enable snap (``Use Snap`` icon or ``S`` key). Moving tiles with the mouse might still be a inaccurate so use your arrow keys as well."
+msgid "Create a new scene with a regular Node or Node2D as root. For each tile you want to define, add a sprite node as a child. Since tiles here are 50x50, you should turn on the grid (``View -> Show Grid`` or ``G`` key) and enable snap (``Use Snap`` icon or ``S`` key). Moving tiles with the mouse might still be a bit inaccurate, so use your arrow keys as well."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:53
@@ -65,11 +65,11 @@ msgid "If more than one tile is present in the source image, make sure to use th
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:57
-msgid "Finally, make sure to name your sprite node correctly. This will ensure that, in subsequent edits to the tileset (for example, if added collision, changed the region, etc), the tile will still be **identified correctly and updated**. This name should be unique."
+msgid "Finally, make sure to name your sprite node correctly. This will ensure that, in subsequent edits to the tileset (for example, if you've added collision, changed the region, etc), the tile will still be **identified correctly and updated**. This name should be unique."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:62
-msgid "Sounds like a lot of requirements, so here's a screenshot that shows where everything of relevance is:"
+msgid "Sounds like quite a few requirements, so here's a screenshot that shows where everything of relevance is:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:67
@@ -85,7 +85,7 @@ msgid "To add collision to a tile, create a StaticBody2D child for each sprite. 
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:83
-msgid "Finally, edit the polygon, this will give the tile a collision and fix the warning icon next to the CollisionPolygon node. **Remember to use snap!** Using snap will make sure collision polygons are aligned properly, allowing a character to walk seamlessly from tile to tile. Also **do not scale or move** the collision and/or collision polygon nodes. Leave them at offset 0,0, with scale 1,1 and rotation 0 with respect to the parent sprite."
+msgid "Finally, edit the polygon; this will give the tile a collision and fix the warning icon next to the CollisionPolygon node. **Remember to use snap!** Using snap will make sure collision polygons are aligned properly, allowing a character to walk seamlessly from tile to tile. Also **do not scale or move** the collision and/or collision polygon nodes. Leave them at offset 0,0, with scale 1,1 and rotation 0 with respect to the parent sprite."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:92
@@ -129,7 +129,7 @@ msgid "Painting your world"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:139
-msgid "With all set, make sure the TileMap node is selected. A red grid will appear on screen, allowing to paint on it with the selected tile on the left palette."
+msgid "With all set, make sure the TileMap node is selected. A red grid will appear on the screen, allowing you to paint on it with the selected tile on the left palette."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
@@ -137,7 +137,7 @@ msgid "To avoid accidentally moving and selecting the tilemap node (something co
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:151
-msgid "If you accidentally place a tile somewhere you don't want it to be, you can delete it with ``RMB`` while in the tilemap editor."
+msgid "If you accidentally place a tile somewhere you don't want it to be, you can delete it with ``RMB`` (the right mouse button) while in the tilemap editor."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:154
@@ -153,7 +153,7 @@ msgid "When using a single texture for all the tiles, scaling the tileset (or ev
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:172
-msgid "This is unavoidable, as it is the way the hardware bilinear filter works. So, to avoid this situation, there are a few workarounds. Try the one that looks better for you:"
+msgid "This is unavoidable, as it is the way the hardware bilinear filter works. To avoid this situation, there are a few workarounds. Try the one that looks better for you:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:177
@@ -161,7 +161,7 @@ msgid "Disable filtering and mipmaps for either the tileset texture or all tile 
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:178
-msgid "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > 2d > Use Pixel Snap`` to true, you can also search for ``Pixel Snap``)."
+msgid "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > 2d > Use Pixel Snap`` to true; you can also search for ``Pixel Snap``)."
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
@@ -169,6 +169,6 @@ msgid "Viewport Scaling can often help with shrinking the map (see the :ref:`doc
 msgstr ""
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:182
-msgid "You can use a single, separate image for each tile. This will remove all artifacts but can be more cumbersome to implement and is less optimized."
+msgid "You can use a single, separate image for each tile. This will remove all artifacts, but can be more cumbersome to implement and is less optimized."
 msgstr ""
 
