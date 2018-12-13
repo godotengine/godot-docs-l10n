@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Daniel <lorddaniel09@gmail.com>, 2018.
+# RaikaRakka <shaiyatta@gmail.com>, 2018.
 # Yaron Shahrabani <sh.yaron@gmail.com>, 2018.
 #
 msgid ""
@@ -10,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-04 23:31+0100\n"
-"PO-Revision-Date: 2018-04-20 14:38+0000\n"
+"PO-Revision-Date: 2018-12-13 10:15+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/he/>\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
-"X-Generator: Weblate 3.0-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -34,6 +35,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/index.rst:13
+#, fuzzy
 msgid ""
 "Welcome to the official documentation of Godot Engine, the free and open "
 "source community-driven 2D and 3D game engine! If you are new to this "
@@ -41,6 +43,9 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"ברוך הבא לתיעוד הרשמי של מנוע גודוט, מנוע המשחקים הדו ותלת מימדי החינמי "
+"ובקוד פתוח שמונע ע\"י הקהילה. אם התיעוד חדש עבורך, אנחנו ממליצים שתקרא את :"
+"ref:` דף ההיכרות <doc_about_intro>` כדי להבין מה התיעוד הנ\"ל יכול להציע."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -48,6 +53,8 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"תוכן העניינים למטה ובצד יכול לאפשר לך לגשת בקלות לתיעוד בנושא שבו הנך "
+"מעוניין. אתה גם יכול להשתמש בחיפוש בפינה השמאלית העליונה."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -57,6 +64,10 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"מנוע גודוט הוא פרוייקט בקוד פתוח שמפותח ע\"י קהילה של מתנדבים. צוות התיעוד "
+"תמיד יכול להעזר במשוב שלך כדי לשפר את המדריכים ואת ההפניות למחלקות. אם אינך "
+"מבין משהו, או שאינך יכול למצוא משהו שאתה מחפש במסמכים, תן לנו לדעת ועזור לנו "
+"לשפר את התיעוד!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -67,31 +78,37 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
+"ניתן להגיש pull request או לפתוח תקלה ב`מאגר ב־GitHub <https://github.com/"
+"godotengine/godot-docs/issues>`_, ניתן לסייע לנו `לתרגם את התיעוד <https://"
+"hosted.weblate.org/engage/godot-engine/>`_ לשפה שלך או לפנות אלינו דרך הערוץ "
+"``‎#documentation`` ב־ `Discord <https://discord.gg/zH7NUgz>`_, או בערוץ "
+"``‎#godotengine-doc`` תחת `irc.freenode.net <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "התיעוד העיקרי בשביל האתר מסודר לפי הסעיפים הבאים:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "כללי"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "מתחילים"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "מדריכים"
 
 #: ../../docs/index.rst:90
 msgid "Development"
-msgstr ""
+msgstr "פיתוח"
 
 #: ../../docs/index.rst:99
 msgid "Creating Content"
-msgstr ""
+msgstr "יצירת תוכן"
 
 #: ../../docs/index.rst:107 ../../docs/community/index.rst:2
 msgid "Community"
@@ -217,7 +234,6 @@ msgstr ""
 "macOS, Windows), למובייל (Android, iOS) וגם לפלטפורמות מבוססות דפדפן (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -226,11 +242,11 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"גודוט הוא לגמרי בחינם ובעל קוד פתוח תחת רישיון מאוד מרשה MIT. ללא תנאים, ללא "
-"תמלוגים, כלום. המשחקים של המשתמשים הם שלהם, עד השורה האחרונה של הקוד המנוע. "
-"פיתוח של גודוט הוא עצמאי לחלוטין ומונע על ידי הקהילה, במטרה לתמוך במתשתמשים "
-"לעצב את המנוע שלהם לפי הציפיות שלהם. גודוט נתמך על ידי 'Software Freedom "
-"Conservancy <https://sfconservancy.org>' לא בשביל רווח."
+"גודוט הוא לגמרי בחינם ובעל קוד פתוח תחת רישיון MIT שמאוד מרשה. ללא תנאים, "
+"ללא תמלוגים, כלום. המשחקים של המשתמשים הם שלהם, עד השורה האחרונה של קוד "
+"המנוע. הפיתוח של גודוט הוא עצמאי לחלוטין ומונע על ידי הקהילה, במטרה לתמוך "
+"במתשתמשים לעצב את המנוע שלהם לפי הציפיות שלהם. גודוט נתמך על ידי 'Software "
+"Freedom Conservancy <https://sfconservancy.org>' לא בשביל רווח."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -285,9 +301,8 @@ msgstr ""
 "Linietsky, Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
-msgstr "תוכן העניינים"
+msgstr "סדר התיעוד"
 
 #: ../../docs/about/introduction.rst:68
 msgid ""
@@ -318,6 +333,8 @@ msgid ""
 "The :ref:`sec-tutorials` section, on the other hand, can be read as needed, "
 "in any order. It contains many feature-specific tutorials and documentations."
 msgstr ""
+"את הסעיף :ref:`sec-tutorials`, מצד שני, ניתן לקרוא במקרה הצורך בכל סדר שהוא. "
+"הסעיף מכיל הרבה מדריכים ותיעוד למאפיינים מסוימים."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -325,6 +342,8 @@ msgid ""
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
+"הסעיף :ref:`sec-devel` מיועד למשתמשים מתקדמים ולתורמים לפיתוח המנוע, עם מידע "
+"על הידור המנוע, פיתוח מודולי C++‎ או תוספים לעורך."
 
 #: ../../docs/about/introduction.rst:85
 msgid ""

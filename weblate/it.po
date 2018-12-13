@@ -17,6 +17,7 @@
 # Nicolas Bonet <nicolasbonet2004@gmail.com>, 2018.
 # Red Pill <redpill902@gmail.com>, 2018.
 # Salvo Permiracolo <salvoperm@gmail.com>, 2018.
+# Samuele Zolfanelli <samdazel@gmail.com>, 2018.
 # spesknight <m.sernesi@tiscali.it>, 2018.
 # Ste d f <sdfilippo84@gmail.com>, 2018.
 # xxssmaoxx <simon.dottor@gmail.com>, 2018.
@@ -26,8 +27,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-04 23:31+0100\n"
-"PO-Revision-Date: 2018-11-18 17:07+0000\n"
-"Last-Translator: Davide Wayan Mores <moresdavidewayan@gmail.com>\n"
+"PO-Revision-Date: 2018-12-08 21:55+0000\n"
+"Last-Translator: Mario Rossi <mr_do@hotmail.it>\n"
 "Language-Team: Italian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/it/>\n"
 "Language: it\n"
@@ -35,7 +36,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.3-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -101,13 +102,13 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Invia un problema o una richiesta sul `repository di GitHub <https://github."
-"com/godotengine/godot-docs/issues>`_, aiutaci a `tradurre la documentazione "
-"<https://hosted.weblate.org/engage/godot-engine/>`_ nella tua lingua, o "
-"rimani in contatto con noi sia sul canale della ``#documentazione`` su "
-"`Discord <https://discord.gg/zH7NUgz>`_, o sul canale ``#godotengine-doc`` "
-"su `irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
-"doc>`_!"
+"Invia un issue o una richiesta di pull sul `repository di GitHub <https://"
+"github.com/godotengine/godot-docs/issues>`_, aiutaci a `tradurre la "
+"documentazione <https://hosted.weblate.org/engage/godot-engine/>`_ nella tua "
+"lingua, o rimani in contatto con noi sia sul canale della "
+"``#documentazione`` su `Discord <https://discord.gg/zH7NUgz>`_, o sul canale "
+"``#godotengine-doc`` su `irc.freenode.net <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -393,7 +394,6 @@ msgstr ""
 "l'editor."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -402,7 +402,7 @@ msgid ""
 "tutorials outside of this documentation."
 msgstr ""
 "La sezione :ref:`sec-community` contiene informazioni su come contribuire "
-"allo sviluppo del motore grafico e sulla vita della community, per esempio: "
+"allo sviluppo del motore di gioco e sulla vita della community, per esempio: "
 "come segnalare bug, aiutare con la documentazione, eccetera. Contiene "
 "inoltre riferimenti ai vari canali di comunicazione tra cui IRC e Discord e "
 "una lista di tutorial raccomandati, creati da terze parti, esterni a questa "
@@ -723,7 +723,6 @@ msgstr ""
 "lavorando su un grande insieme di linguaggi."
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -735,14 +734,14 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
-"Siccome Godot é un progetto Open Source, era imperativo sin dall'inizio dare "
+"Essendo Godot un progetto Open Source, era imperativo sin dall'inizio dare "
 "prioritá ad una esperienza il piú possibile integrata e fluida piuttosto che "
-"cercare di attirare piú utenti supportando linguaggi di programmazione piú "
+"cercare di attirare piú utenti supportando i linguaggi di programmazione piú "
 "famosi, specialmente quando il supporto a tali linguaggi risulterebbe in "
 "un'esperienza peggiore. Capiamo se volete utilizzare un altro linguaggio in "
 "Godot (vedere la lista delle opzioni supportate sopra). Detto questo, se non "
 "avete ancora provato GDScript, provatelo per **tre giorni**. Esattamente "
-"come per Godot, una volta che avete constatato quanto potente é, e quanto "
+"come per Godot, una volta che avrete constatato quanto potente é, e quanto "
 "velocizza lo sviluppo, pensiamo che GDScript vi piacerá sempre di piú."
 
 #: ../../docs/about/faq.rst:118
@@ -756,7 +755,6 @@ msgstr ""
 "`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:122
-#, fuzzy
 msgid "What were the motivations behind creating GDScript?"
 msgstr "Perché creare GDScript?"
 
@@ -768,7 +766,6 @@ msgstr ""
 "programmazione per Godot sono:"
 
 #: ../../docs/about/faq.rst:126
-#, fuzzy
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
@@ -829,12 +826,10 @@ msgstr ""
 "ancora."
 
 #: ../../docs/about/faq.rst:145
-#, fuzzy
 msgid "What type of 3D model formats does Godot support?"
 msgstr "Che tipi di formati per i modelli 3D supporta Godot?"
 
 #: ../../docs/about/faq.rst:147
-#, fuzzy
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
@@ -843,21 +838,18 @@ msgstr ""
 "KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 
 #: ../../docs/about/faq.rst:149
-#, fuzzy
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
-"Se, invece, usi Blender, dai un'occhiata al nostro `Better Collada Exporter "
+"Se stai usando Blender, dai un'occhiata al nostro `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:151
-#, fuzzy
 msgid "As of Godot 3.0, glTF is supported."
-msgstr "A partire da Godot 3.0 é supportato glTF."
+msgstr "A partire da Godot 3.0 é supportato il formato glTF."
 
 #: ../../docs/about/faq.rst:153
-#, fuzzy
 msgid ""
 "FBX SDK has a `restrictive license <https://www.blender.org/bf/"
 "Autodesk_FBX_License.rtf>`_, that is incompatible with the `open license "
@@ -878,7 +870,6 @@ msgstr ""
 "Godot?"
 
 #: ../../docs/about/faq.rst:161
-#, fuzzy
 msgid ""
 "The aim of Godot is to create a free and open-source MIT-licensed engine "
 "that is modular and extendable. There are no plans for the core engine "
@@ -897,10 +888,10 @@ msgid ""
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"Detto questo, siccome Godot é open source e modulare, niente preclude a te, "
-"o a chiunque altro sia interessato, di aggiungere queste librerie come "
-"moduli e rilasciare il tuo gioco usandole, sia come progetto open source che "
-"closed source."
+"Detto questo, essendo Godot open source e modulare, niente preclude a te, o "
+"a chiunque altro sia interessato, di aggiungere queste librerie come moduli "
+"e rilasciare il tuo gioco usandole, sia come progetto open source che closed "
+"source."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
@@ -911,7 +902,6 @@ msgstr ""
 "la domanda sui Plugins poco sopra."
 
 #: ../../docs/about/faq.rst:173
-#, fuzzy
 msgid ""
 "If you know of a third-party SDK that is not supported by Godot but that "
 "offers free and open-source integration, consider starting the integration "
@@ -922,7 +912,7 @@ msgstr ""
 "ma che offre un'integrazione open source, puoi considerare di iniziare a "
 "lavorare sull'integrazione. Godot non é un progetto di proprietá di una "
 "persona, appartiene alla comunitá e cresce attraverso il lavoro di ambiziosi "
-"cotributori come te."
+"contributori come te."
 
 #: ../../docs/about/faq.rst:179
 msgid ""
@@ -1044,9 +1034,8 @@ msgstr ""
 "`EditorPlugins <doc_making_plugins>` e ai tool script."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
-msgstr "Vedere anche il post ufficiale sul blog su questo argomento:"
+msgstr "Vedere anche i post ufficiali sul blog su questi argomenti:"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -1104,7 +1093,6 @@ msgid "I have a great idea for Godot. How can I share it?"
 msgstr "Ho una grande idea per Godot. Come posso condividerla?"
 
 #: ../../docs/about/faq.rst:251
-#, fuzzy
 msgid ""
 "It might be tempting to want to bring ideas to Godot, like ones that result "
 "in massive core changes, some sort of mimicry of what another game engine "
@@ -1119,8 +1107,8 @@ msgstr ""
 "Potrebbe essere una grande tentazione portare nuove idee in Godot, per "
 "esempio alcune che potrebbero risultare in grossi cambiamenti nelle "
 "funzionalitá di base del motore, replicare funzionalitá di altri motori, o "
-"aggiungere workflow alternativi che vorresti avere nell'editor. Questa é una "
-"cosa e siamo grati di avere persone motivate che abbiano voglia di "
+"aggiungere workflow alternativi che vorresti avere nell'editor. Questo é "
+"fantastico e siamo grati di avere persone motivate che abbiano voglia di "
 "contribuire, ma l'attenzione maggiore del team di sviluppo di Godot é e sará "
 "sempre rivolta alle funzionalitá di base come delineato nella `Roadmap "
 "<https://github.com/godotengine/godot-roadmap/blob/master/ROADMAP.md>`_, "
@@ -1128,13 +1116,12 @@ msgstr ""
 "issues>`_, e la conversazione con tra i membri della comunitá di Godot."
 
 #: ../../docs/about/faq.rst:260
-#, fuzzy
 msgid ""
 "Most developers in the Godot community will be more interested to learn "
 "about things like:"
 msgstr ""
-"La maggior parte degli sviluppatori nella comunitá di Godot hanno un forte "
-"interesse nell'apprendere cose tipo:"
+"La maggior parte degli sviluppatori nella comunitá di Godot saranno più "
+"interessati ad apprendere cose tipo:"
 
 #: ../../docs/about/faq.rst:263
 msgid ""
@@ -1182,7 +1169,6 @@ msgstr ""
 "la community abbiano delle fondamenta su cui basare le tue idee."
 
 #: ../../docs/about/faq.rst:275
-#, fuzzy
 msgid ""
 "A good way to approach sharing your ideas and problems with the community is "
 "as a set of user stories. Explain what you are trying to do, what behavior "
@@ -1191,11 +1177,11 @@ msgid ""
 "improving developer experiences as a whole."
 msgstr ""
 "Un buon modo per iniziare a codividere le tue idee e problemi con la "
-"comunitá é attraverso un insieme di casi d'uso. Spiega cosa stai cercando di "
-"fare, quale comportamento ti aspetti e quale comportamento ha effettivamente "
-"riscontrato. Inquadrare problemi e idee in questo modo aiuta l'intera "
-"comunitá a concentrarsi sul migliorare l'esperienza degli sviluppatori in "
-"modo organico."
+"comunitá é attraverso un insieme di situazioni di utilizzo. Spiega cosa stai "
+"cercando di fare, quale comportamento ti aspetti e quale comportamento ha "
+"effettivamente riscontrato. Inquadrare problemi e idee in questo modo aiuta "
+"l'intera comunitá a concentrarsi sul migliorare l'esperienza degli "
+"sviluppatori in modo organico."
 
 #: ../../docs/about/faq.rst:281
 msgid ""
@@ -1607,17 +1593,16 @@ msgstr ""
 "tuoi ospiti."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:16
-#, fuzzy
 msgid ""
 "So, how does a chef create a recipe? Recipes are divided into two sections: "
 "the first is the ingredients and the second is the instructions to prepare "
 "it. This way, anyone can follow the recipe and savor your magnificent "
 "creation."
 msgstr ""
-"Insomma, come fa un cuoco a creare una ricetta? Le ricette sono divise in "
-"due sezioni: la prima sezione contiene gli ingredienti, la seconda le "
-"istruzioni per la preparazione. In questo modo chiunque puó seguire la "
-"ricetta e assaporare la tua magnifica creazione."
+"Allora, come fa uno chef a creare una ricetta? Le ricette sono divise in due "
+"sezioni: la prima sono gli ingredienti e la seconda le istruzioni per la "
+"loro preparazione. In questo modo, chiunque può seguire la ricetta e "
+"assaporare la tua magnifica creazione."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:21
 msgid ""
@@ -1645,7 +1630,6 @@ msgid "Nodes"
 msgstr "Nodi"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
-#, fuzzy
 msgid ""
 "But let's start with the basics. Nodes are fundamental building blocks for "
 "creating a game. As mentioned above, a node can perform a variety of "
@@ -1681,7 +1665,6 @@ msgid "It can be added to another node as a child."
 msgstr "Puó essere aggiunto ad altri nodi come figlio."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
-#, fuzzy
 msgid ""
 "The last one is important. Nodes can have other nodes as children. When "
 "arranged in this way, the nodes become a **tree**."
@@ -1690,7 +1673,6 @@ msgstr ""
 "Quando sono organizzati in questo modo, i nodi diventano un **albero**."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:46
-#, fuzzy
 msgid ""
 "In Godot, the ability to arrange nodes in this way creates a powerful tool "
 "for organizing projects. Since different nodes have different functions, "
@@ -1736,9 +1718,8 @@ msgid "always has one root node."
 msgstr "ha sempre un nodo radice (root)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:66
-#, fuzzy
 msgid "can be saved to disk and loaded back."
-msgstr "Puó essere salvata su disco e ri-caricata."
+msgstr "puó essere salvata su disco e ri-caricata."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:67
 msgid "can be *instanced* (more on that later)."
@@ -1779,12 +1760,11 @@ msgstr ""
 "ci introdurrá all'uso dell'editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-#, fuzzy
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"Se avvii Godot al di fuori di un progetto, il Gestore di Progetti appare. "
+"Se avvii Godot al di fuori di un progetto apparirà il Gestore di Progetti. "
 "Questa finestra aiuta gli sviluppatori a gestire i propri progetti."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
@@ -1888,13 +1868,12 @@ msgid "Aaaand... Oops."
 msgstr "Eee... Oops."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
-#, fuzzy
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
 "Le scene devono essere salvate per essere eseguite, quindi salva la scena "
-"con un nome come hello.tscn in Scena -> Salva Scena:"
+"con un nome come Hello.tscn in Scena -> Salva Scena:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -1966,17 +1945,14 @@ msgstr ""
 "Progetto. Provalo ora."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
-#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
-"Una volta che la finestra si apre, selezioneremo una scena principale. Trova "
-"la proprietá `Application/Run/Main Scene` e clicca per selezionare 'hello."
-"tscn'."
+"Una volta che la finestra si apre, seleziona la scena principale. Trova la "
+"proprietá `Application/Run/Main Scene` e clicca per selezionare 'Hello.tscn'."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
-#, fuzzy
 msgid ""
 "Now, with this change, when you press the regular Play button (or F5), this "
 "scene will run, no matter which scene is actively being edited."
@@ -2005,8 +1981,8 @@ msgid ""
 "<class_ProjectSettings>` singleton."
 msgstr ""
 "Inoltre é anche possibile aggiungere opzioni personalizzate che possono "
-"essere poi lette durante l'esecuzione attraverso il :ref:`ProjectSettings "
-"<class_ProjectSettings>` singleton."
+"essere poi lette durante l'esecuzione attraverso il signleton :ref:"
+"`ProjectSettings <class_ProjectSettings>`."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:200
 msgid "To be continued..."
@@ -2239,13 +2215,12 @@ msgid "The ability to subdivide scenes and make them easier to manage."
 msgstr "L'abilitá di suddividere le scene e renderle piú facili da gestire."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
-#, fuzzy
 msgid ""
 "A more flexible alternative to prefabs you might know from Unity (and much "
 "more powerful given that instances can be nested)."
 msgstr ""
-"Una alternativa piú flessibile ai prefabs (e molto piú potente visto che le "
-"istanze possono essere annidate)."
+"Un'alternativa piú flessibile ai prefabs di Unity (e molto piú potente visto "
+"che le istanze possono essere annidate)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
@@ -2312,7 +2287,6 @@ msgstr ""
 "direttamente nell'editor) per i rapporti di proprietà."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
-#, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -2328,7 +2302,7 @@ msgstr ""
 "scene sostituisce questo approccio e rende lo sviluppo molto più veloce e "
 "semplice, permettendoti di concentrarti sulla logica del gioco stesso. "
 "Poiché la maggior parte dei componenti di gioco sono mappati direttamente su "
-"una scena, l'utilizzo di un'istanziazione basata su una scena significa che "
+"una scena, l'utilizzo di un'istanziazione basata sulle scene significa che "
 "serve poco codice aggiuntivo."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
@@ -2340,28 +2314,42 @@ msgstr ""
 "tipo open-world con molte risorse ed elementi annidati:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
+#, fuzzy
 msgid ""
 "Take a look at the room element. Let's say we started there. We could make a "
 "couple of different room scenes, with different arrangements of furniture "
 "(also scenes) in them. Later, we could make a house scene, connecting rooms "
 "to make up its interior."
 msgstr ""
+"Dai un'occhiata all'elemento stanza. Inizieremo da lì. Potremmo creare un "
+"paio di scene di stanze con diverse predisposizioni di arredamento (o di "
+"altre scene). Più tardi, potremmo creare una stanza per una casa, collegando "
+"altre stanze che formino i suoi interni."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
+#, fuzzy
 msgid ""
 "Then, we could make a citadel scene, which is made out of many instanced "
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
+"Poi, potremmo creare una stanza \"cittadella\", che è formata da diverse "
+"istanze di case. Ancora, potremmo iniziare a lavorare alla conformazione del "
+"mondo di gioco, aggiungendoci la cittadella."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
+#, fuzzy
 msgid ""
 "Later, we could create scenes that represent guards (and other NPCs) and add "
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
+"Poi, potremmo creare scene che rappresentino guardie (e altri NPC) a "
+"aggiungere anche loro alla cittadella. Come risultato, saranno "
+"indirettamente aggiunte anche al complessivo mondo di gioco."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
+#, fuzzy
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instance more scenes. Furthermore, the editor UI is "
@@ -2370,45 +2358,70 @@ msgid ""
 "designers, game designers, and animators, all working with the editor "
 "interface."
 msgstr ""
+"Grazie a Godot, è semplice iterare sul tuo gioco in questo modo, tutto ciò "
+"che devi fare è creare e instanziare più scene. Inoltre, l'interfaccia "
+"grafica dell'editor è studiata per essere di facile utilizzo per "
+"programmatori e non programmatori, allo stesso modo. Un tipico processo "
+"produttivo può coinvolgere artisti 2D o 3D, level designer, game designer, "
+"animatori, tutti che lavorano con l'interfaccia dell'editor."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
 msgid "Information overload!"
-msgstr ""
+msgstr "Sovraccarico di informazioni!"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
+#, fuzzy
 msgid ""
 "This has been a lot of high level information dropped on you all at once. "
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
+"Tutto ciò è stato un grande quantitativo di informazioni di alto livello "
+"dato tutto insieme. La parte importante di questo tutorial, però, è creare "
+"consapevolezza delle modalità con cui le scene e l'istanziazione sono usati "
+"in progetti reali."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
+#, fuzzy
 msgid ""
 "Everything discussed here will become second nature to you once you start "
 "making games and putting these concepts into practice. For now, don't worry "
 "about it too much, and go on to the next tutorial!"
 msgstr ""
+"Tutto quello che è stato discusso qui diventerà istintivo una volta che "
+"avrai iniziato a creare giochi e a mettere in pratica questi concetti. Per "
+"adesso non preoccupartene più di tanto, e prosegui con il prossimo tutorial!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:4
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
+#, fuzzy
 msgid "Scripting"
-msgstr ""
+msgstr "Scripting"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
+#, fuzzy
 msgid ""
 "Before Godot 3.0, the only choice for scripting a game was to use :ref:"
 "`doc_gdscript`. Nowadays, Godot has four (yes, four!) official languages and "
 "the ability to add extra scripting languages dynamically!"
 msgstr ""
+"Prima di Godot 3.0, l'unico modo per scriptare un gioco era usare :ref:"
+"`doc_gdscript`. Al giorno d'oggi, Godot ha quattro (esatto, quattro!) "
+"linguaggi di programmazione ufficiali e la possibilità di aggiungerne di "
+"aggiuntivi dinamicamente!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
+#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
+"Questo è fantastico, soprattutto a causa della grande flessibilità fornita, "
+"ma rende anche il nostro lavoro per supportare i linguaggi più complicato."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
+#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -2416,6 +2429,12 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
+"I linguaggi \"principali\" in Godot, in ogni caso, sono GDScript e "
+"VisualScript. Il motivo principale per sceglierli è il loro livello di "
+"integrazione con Godot, in quanto ciò rende l'esperienza più fluida; "
+"entrambi hanno una brillante integrazione nell'editor, mentre C# e C++ hanno "
+"bisogno di un IDE esterno. Se sei un sostenitore dei linguaggi staticamente "
+"tipati, C# e C++ sono i linguaggi per te."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -2428,7 +2447,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:180
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:223
 msgid "GDScript"
-msgstr ""
+msgstr "GDScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:24
 msgid ""
@@ -2436,40 +2455,56 @@ msgid ""
 "Using it has some positive points compared to other languages due to its "
 "high integration with Godot:"
 msgstr ""
+":ref:`doc_gdscript` è, come menzionato sopra, il linguaggio principale di "
+"Godot. Utilizzarlo ha alcuni vantaggi rispetto ad altri linguaggi a causa "
+"della sua forte integrazione con Godot:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
 "It's simple, elegant, and designed to be familiar for users of other "
 "languages such as Lua, Python, Squirrel, etc."
 msgstr ""
+"È semplice, elegante, e studiato per essere familiare agli utilizzatori di "
+"altri linguaggi come Lua, Python, Squirrel, ecc."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:29
 msgid "Loads and compiles blazingly fast."
-msgstr ""
+msgstr "Viene caricato e compilato alla velocità della luce."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:30
 msgid ""
 "The editor integration is a pleasure to work with, with code completion for "
 "nodes, signals, and many other items pertaining to the scene being edited."
 msgstr ""
+"È un piacere lavorare con la sua integrazione nell'editor, con completazione "
+"del codice per i nodi, segnali, e molti altri elementi appartenenti alla "
+"scena che sta venendo editata."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:31
 msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
 msgstr ""
+"Ha i tipi per i vettori integrati (come i Vector, Transform, ecc), in modo "
+"da rendere efficiente l'uso intensivo dell'algebra lineare."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
 "Supports multiple threads as efficiently as statically typed languages - one "
 "of the limitations that made us avoid VMs such as Lua, Squirrel, etc."
 msgstr ""
+"Supporta thread multipli efficientemente quanto i linguaggi staticamente "
+"tipati - una delle limitazioni che ci ha fatto evitare l'uso di VM come Lua, "
+"Squirrel, ecc."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:33
 msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
+"Non utilizza un gargabe collector, quindi baratta una piccola parte di "
+"automazione (la maggior parte degli oggetti sono a riferimenti contati in "
+"ogni caso), per il determinismo."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -2477,17 +2512,22 @@ msgid ""
 "GDNative) if more performance is required, all without recompiling the "
 "engine."
 msgstr ""
+"La sua natura dinamica rende semplice ottimizzare sezioni di codice in C++ "
+"(attraverso GDNative) se sono richieste performance più elevate, il tutto "
+"senza ricompilare il motore di gioco."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
 msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
+"Se sei incerto e hai esperienza nella programmazione, specialmente con i "
+"linguaggi dinamici, GDScript è la scelta giusta!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 #: ../../docs/getting_started/scripting/visual_script/index.rst:2
 msgid "VisualScript"
-msgstr ""
+msgstr "VisualScript"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:42
 msgid ""
@@ -2495,6 +2535,9 @@ msgid ""
 "Scripting<doc_what_is_visual_script>`. This is a typical implementation of a "
 "\"blocks and connections\" language, but adapted to how Godot works."
 msgstr ""
+"A partire dalla versione 3.0, Godot offre il :ref:`Visual "
+"Scripting<doc_what_is_visual_script>`. È una tipica implementazione di un "
+"linguaggio a \"blocchi e connessioni\", ma adattato a come funziona Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:46
 msgid ""
@@ -2502,16 +2545,21 @@ msgid ""
 "experienced developers who want to make parts of the code more accessible to "
 "others, like game designers or artists."
 msgstr ""
+"Lo scripting visuale è un grande strumento per chi non è un programmatore, o "
+"anche per programmatori con esperienza che vogliono rendere alcune parti di "
+"codice più accessibilli agli altri, come a game designer o a artisti."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:50
 msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
 msgstr ""
+"Può anche essere usato dai programmatori per creare macchine di stato o "
+"diagrammi di nodi personalizzati - un sistema per i dialoghi, ad esempio."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
 msgid ".NET / C#"
-msgstr ""
+msgstr ".NET / C#"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:57
 msgid ""
@@ -2519,12 +2567,19 @@ msgid ""
 "official support for it. C# is a mature language with tons of code written "
 "for it, and support was added thanks to a generous donation from Microsoft."
 msgstr ""
+"Dato che il C# di Microsoft è una preferenza per molti sviluppatori di "
+"videogiochi, abbiamo aggiunto il suo supporto ufficiale. Il C# è un "
+"linguaggio maturo con un'enorme quantità di codice già scritto, e il suo "
+"supporto è stato aggiunto grazie a una generosa donazione da Microsoft."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:62
 msgid ""
 "It has an excellent tradeoff between performance and ease of use, although "
 "one must be aware of its garbage collector."
 msgstr ""
+"Fornisce un eccellente bilanciamento tra performance e semplicità "
+"d'utilizzo, sebbene sia necessario essere consapevoli della presenza di un "
+"garbage collector."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:65
 msgid ""
@@ -2534,41 +2589,61 @@ msgid ""
 "programming language, such as F#, Boo or ClojureCLR. In practice however, C# "
 "is the only officially supported .NET option."
 msgstr ""
+"Dato che Godot utilizza il runtime `Mono <https://mono-project.com>`_ .NET, "
+"teoricamente ogni libreria o framework .NET di terze parti può essere usata "
+"per scriptare in Godot, così come ogni altro linguaggio conforme "
+"infrastruttura del linguaggio comune, come F#, Boo o ClojureCLR. In pratica, "
+"però, il C# è l'unica opzione .NET supportata ufficialmente."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:71
 msgid "GDNative / C++"
-msgstr ""
+msgstr "GDNative / C++"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:73
 msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
+"Infine, una delle nostre aggiunte più brillanti per la versione 3.0: "
+"GDNative permette di scriptare in C++ senza il bisogno di ricompilare (o "
+"anche solo di riavviare) Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
+#, fuzzy
 msgid ""
 "Any C++ version can be used, and mixing compiler brands and versions for the "
 "generated shared libraries works perfectly, thanks to our use of an internal "
 "C API Bridge."
 msgstr ""
+"Ogni versione di C++ può essere usata, e mescolare diversi compilatori e "
+"versioni di questi per le librerie generate funziona perfettamente, grazie "
+"all'utilizzo interno di un API bridge in C."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:81
+#, fuzzy
 msgid ""
 "This language is the best choice for performance and does not need to be "
 "used throughout an entire game, as other parts can be written in GDScript or "
 "Visual Script. However the API is clear and easy to use as it resembles, "
 "mostly, Godot's actual C++ API."
 msgstr ""
+"Questo linguaggio è il migliore in quanto a performance e non deve essere "
+"per forza utilizzato in tutti il gioco, dato che le altre parti possono "
+"essere scritte in GDScript o Visual Script. In ogni caso l'API è chiara e "
+"semplice da usare in quanto somiglia, per lo più, all'effettiva API C++ di "
+"Godot."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:86
 msgid ""
 "More languages can be made available through the GDNative interface, but "
 "keep in mind we don't have official support for them."
 msgstr ""
+"Altri linguaggi possono essere resi disponibili attraverso l'interfaccia di "
+"GDNative, ma tieni a mente che non avranno supporto ufficiale."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:90
 msgid "Scripting a scene"
-msgstr ""
+msgstr "Scriptare una scena"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:92
 msgid ""
@@ -2576,18 +2651,21 @@ msgid ""
 "button and a label, where pressing the button will update the label. This "
 "will demonstrate:"
 msgstr ""
+"Per il resto di questo tutorial configureremo una scena di GUI che consiste "
+"in un bottone e una etichetta di testo, in cui premere il bottone aggiornerà "
+"il testo dell'etichetta. Questo dimostrerà:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid "Writing a script and attaching it to a node."
-msgstr ""
+msgstr "Scrivere uno script e assegnarlo a un nodo."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:97
 msgid "Hooking up UI elements via signals."
-msgstr ""
+msgstr "Collegare elementi di UI attraverso i segnali."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:98
 msgid "Writing a script that can access other nodes in the scene."
-msgstr ""
+msgstr "Scrivere uno script che può accedere ad altri nodi nella scena."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:100
 msgid ""
@@ -2596,12 +2674,16 @@ msgid ""
 "short, so it will not take more than a few minutes to get an overview of the "
 "concepts."
 msgstr ""
+"Prima di continuare, accertati di aver letto la parte su :ref:"
+"`doc_gdscript`del manuale. È un linguaggio studiato per essere semplice e la "
+"sua spiegazione è breve, non ci vorrà più di qualche minuto per avere una "
+"panoramica dei suoi concetti."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:105
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:80
 #: ../../docs/tutorials/animation/introduction_2d.rst:113
 msgid "Scene setup"
-msgstr ""
+msgstr "Impostazione della scena"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:107
 msgid ""

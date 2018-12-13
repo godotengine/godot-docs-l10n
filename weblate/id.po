@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
 # Damar Inderajati <damarind@gmail.com>, 2018.
 # Fajar Ru <kzofajar@gmail.com>, 2018.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
@@ -12,8 +13,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-04 23:31+0100\n"
-"PO-Revision-Date: 2018-06-30 03:38+0000\n"
-"Last-Translator: Khairul Hidayat <khairulcyber4rt@gmail.com>\n"
+"PO-Revision-Date: 2018-12-13 10:15+0000\n"
+"Last-Translator: Bagus Aji Santoso <lobothijau@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.1-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -118,7 +119,7 @@ msgstr "Pengembangan"
 
 #: ../../docs/index.rst:99
 msgid "Creating Content"
-msgstr ""
+msgstr "Membuat Kontent"
 
 #: ../../docs/index.rst:107 ../../docs/community/index.rst:2
 msgid "Community"
@@ -321,9 +322,8 @@ msgstr ""
 "\"Juan Linietsky, Ariel Manzur dan komunitas Godot Engine\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
-msgstr "Organisasi dari dokumentasi"
+msgstr "Susunan Dokumentasi"
 
 #: ../../docs/about/introduction.rst:68
 msgid ""
@@ -377,7 +377,6 @@ msgstr ""
 "berbasis C++."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -386,7 +385,7 @@ msgid ""
 "tutorials outside of this documentation."
 msgstr ""
 "Bagian :ref:`sec-community` memberikan informasi yang berkaitan dengan "
-"kontribusi ke pengembangan engine dan mengenai komunitas, contohnya: "
+"kontribusi untuk pengembangan engine dan mengenai komunitas, contohnya: "
 "Bagaimana melaporkan bug, membantu dalam dokumentasi, dan lainnya. Bagian "
 "ini juga terdapat berbagai kanal komunitas seperti IRC dan Discord dan "
 "terdapat banyak daftar rekomendasi tutorial dari pihak ketiga yang ada "
@@ -440,34 +439,43 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
+"Godot adalah `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
+"Free_and_open-source_software>`_ yang tersedia di bawah lisensi `OSI-"
+"approved <https://opensource.org/licenses/MIT>`_ MIT. Free di sini artinya "
+"Godot tersedia secara gratis baik itu dalam \"free speech\" maupun \"free "
+"beer.\""
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
-msgstr ""
+msgstr "Singkatnya:"
 
 #: ../../docs/about/faq.rst:13
 msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Anda bebas mengunduh dan menggunakan Godot untuk tujuan apapun, pribadi, non-"
+"komersil, komersil, maupun kegiatan lain;"
 
 #: ../../docs/about/faq.rst:14
 msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
+"Anda bebas memodifikasi, mendistribusikan, mendistribusikan ulang, "
+"mengombinasikan Godot untuk konten yang dibuat untuk alasan apapun baik itu "
+"komersil maupun non-komersil."
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Semua konten dibawah lisensi permisif Creative Commons Attribution 3.0 (`CC-"
-"BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_), dengan atribusi ke "
-"\"Juan Linietsky, Ariel Manzur dan komunitas Godot Engine\"."
+"Semua konten dibawah lisensi Creative Commons Attribution 3.0 (`CC-BY 3.0 "
+"<https://creativecommons.org/licenses/by/3.0/>`_) yang permisif, dengan "
+"atribusi ke \"Juan Linietsky, Ariel Manzur dan komunitas Godot Engine.\""
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -475,6 +483,9 @@ msgid ""
 "that some third-party libraries included with Godot's source code may have "
 "different licenses."
 msgstr ""
+"Gambar logo dan ikon secara umum berada di bawah lisensi Creative Commons "
+"yang sama. Harap catat bahwa beberapa pustaka pihak ketiga yang terdapat di "
+"dalam kode sumber Godot mungkin memiliki lisensi yang berbeda."
 
 #: ../../docs/about/faq.rst:24
 msgid ""
@@ -484,66 +495,79 @@ msgid ""
 "txt <https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ "
 "files in the Godot repository."
 msgstr ""
+"Untuk informasi lebih detail, sialhkan lihat `COPYRIGHT.txt <https://github."
+"com/godotengine/godot/blob/master/COPYRIGHT.txt>`_ lalu  `LICENSE.txt "
+"<https://github.com/godotengine/godot/blob/master/LICENSE.txt>`_ dan "
+"`LOGO_LICENSE.txt <https://github.com/godotengine/godot/blob/master/"
+"LOGO_LICENSE.md>`_ di repositori Godot."
 
 #: ../../docs/about/faq.rst:28
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
 msgstr ""
+"Selain itu, lihat pula `halaman lisensi di situs Godot <https://godotengine."
+"org/license>`_."
 
 #: ../../docs/about/faq.rst:31
 msgid "Which platforms are supported by Godot?"
-msgstr ""
+msgstr "Platform apa yang didukung oleh Godot?"
 
 #: ../../docs/about/faq.rst:33
 msgid "**For the editor:**"
-msgstr ""
+msgstr "**Untuk editor.**"
 
 #: ../../docs/about/faq.rst:35
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:36 ../../docs/about/faq.rst:42
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:37 ../../docs/about/faq.rst:43
+#, fuzzy
 msgid "X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:39
 msgid "**For exporting your games:**"
-msgstr ""
+msgstr "**Untuk mengekspor game:**"
 
 #: ../../docs/about/faq.rst:41
 msgid "Windows (and UWP)"
-msgstr ""
+msgstr "Windows (dan UWP)"
 
 #: ../../docs/about/faq.rst:44
 #: ../../docs/getting_started/step_by_step/exporting.rst:185
+#, fuzzy
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:45
 #: ../../docs/getting_started/step_by_step/exporting.rst:237
+#, fuzzy
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:46
+#, fuzzy
 msgid "Web"
-msgstr ""
+msgstr "Web"
 
 #: ../../docs/about/faq.rst:48
 msgid ""
 "Both 32- and 64-bit binaries are supported where it makes sense, with 64 "
 "being the default."
-msgstr ""
+msgstr "File binary 32- maupun 64-bit didukung dengan 64 menjadi versi bawaan."
 
 #: ../../docs/about/faq.rst:51
 msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"Beberapa pengguna juga melaporkan berhasil menggunakan Godot untuk sistem "
+"Linux ARM, seperti Raspberry Pi dengan sukses."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -551,16 +575,23 @@ msgid ""
 "building for some consoles. However, none of this is included in the default "
 "build scripts or export templates at this time."
 msgstr ""
+"Sebagai tambahan, ada beberapa dukungan pihak ketiga yang bisa dipakai "
+"membangun game untuk beberapa konsol. Meski begitu, belum ada yang "
+"dimasukkan secara resmi sebagai build script bawaan atau template ekspor "
+"untuk saat ini."
 
 #: ../../docs/about/faq.rst:58
 msgid ""
 "For more on this, see the sections on :ref:`exporting <toc-learn-workflow-"
 "export>` and :ref:`compiling Godot yourself <toc-devel-compiling>`."
 msgstr ""
+"Untuk informasi lebih detail untuk hal ini, silahkan lihat bagian :ref:"
+"`exporting <toc-learn-workflow-export>` dan :ref:`compiling Godot yourself "
+"<toc-devel-compiling`."
 
 #: ../../docs/about/faq.rst:62
 msgid "Which programming languages are supported in Godot?"
-msgstr ""
+msgstr "Bahasa pemrograman apa yang didukung oleh Godot?"
 
 #: ../../docs/about/faq.rst:64
 msgid ""
@@ -568,6 +599,9 @@ msgid ""
 "C#, and C++. See the subcategories for each language in the :ref:`scripting "
 "<toc-learn-scripting>` section."
 msgstr ""
+"Bahasa pemrograman yang didukung secara resmi untuk Godot adalah GDScript, "
+"Visual Scripting, C#, dan C++. Lihat subkategori untuk masing-masing bahasa "
+"di bagian :ref:`scripting <toc-learn-scripting>`."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -578,6 +612,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Jika baru mulai belajar baik itu Godot atau game development secara umum, "
+"GDScript adalah bahasa yang direkomendasikan untuk dipelajari dan digunakan "
+"karena murni untuk Godot.  Meskipun scripting language memiliki performa "
+"yang lebih rendah di bandingkan bahasa tingkat rendah (C/C++), namun untuk "
+"prototyping, mengembangkan Minimum Viable Products (MVP), dan fokus mengejar "
+"Time-To-Market(TTM), GDScript akan memberikan jalur yang lebih cepat, "
+"bersahabat, dan cakap untuk mengembangkan game."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -589,6 +630,14 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Catat bahwa dukungan untuk C# masih sangat baru, dan oleh karena itu, Anda "
+"mungkin akan menemukan beberapa masalah. Komunitas pengembang kami yang "
+"bersahabat dan pekerja keras, selalu siap untuk menyelesaikan permasalahan "
+"baru yang muncul, namun karena ini adalah project open-source, kami "
+"merekomendasikan Anda untuk mencoba mencari solusinya sendiri terlebih "
+"dahulu. Pencarian di forum diskusi pada bagian open issues <https://github."
+"com/godotengine/godot/issues>`_  di Github bisa menjadi cara terbaik untuk "
+"memulai troubleshooting."
 
 #: ../../docs/about/faq.rst:82
 msgid ""

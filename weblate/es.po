@@ -12,6 +12,7 @@
 # César León <ceesarleon2002@gmail.com>, 2018.
 # Cristian Martinez <organocm@gmail.com>, 2018.
 # David Arranz <davarrcal@hotmail.com>, 2018.
+# Dharkael <izhe@hotmail.es>, 2018.
 # Dianiel García <jdangarr@gmail.com>, 2018.
 # Elena G <elena.guzbla@gmail.com>, 2018.
 # Elias Mascheroni <eliasmg-py@outlook.com>, 2018.
@@ -59,8 +60,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-04 23:31+0100\n"
-"PO-Revision-Date: 2018-12-04 22:23+0000\n"
-"Last-Translator: Elena G <elena.guzbla@gmail.com>\n"
+"PO-Revision-Date: 2018-12-13 10:15+0000\n"
+"Last-Translator: Ethan Huff <et.huff.the1st@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -124,7 +125,6 @@ msgstr ""
 "documentación, ¡ayúdanos a mejorarla haciéndonoslo saber!"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -503,7 +503,7 @@ msgid ""
 "profit, commercial, or otherwise;"
 msgstr ""
 "Eres libre de descargar y usar Godot para cualquier propósito: personal, sin "
-"fines de lucro, comercial o cualquier otro;"
+"fines de lucro, comercial u otros;"
 
 #: ../../docs/about/faq.rst:14
 msgid ""
@@ -684,7 +684,6 @@ msgstr ""
 "problemas."
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -1105,7 +1104,7 @@ msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
-"¡Fantástico! Como proyecto de código abierto, Godot prospera gracias a la "
+"¡Fantástico! Como proyecto de código abierto, Godot prospera a partir de la "
 "innovación y ambición de desarrolladores como tú."
 
 #: ../../docs/about/faq.rst:244
@@ -1125,7 +1124,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr "Tengo una gran idea para Godot ¿Cómo puedo compartirla?"
+msgstr "Tengo una idea genial para Godot. ¿Cómo puedo compartirla?"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -1533,12 +1532,10 @@ msgid "|image20|"
 msgstr "|image20|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
-#, fuzzy
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
-"Leer :ref:`doc_introduction_to_3d` para mas detalle acerca de **3D "
-"workspace**."
+"Lee :ref: `doc_introduction_to_3d` para mas detalles de **3D workspace**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
 msgid ""
@@ -1695,9 +1692,8 @@ msgid "It can be extended (to have more functions)."
 msgstr "Se puede extender (para tener más funciones)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-#, fuzzy
 msgid "It can be added to another node as a child."
-msgstr "Se puede agregar a otros nodos como hijos."
+msgstr "Se puede añadir a otro nodo como un hijo."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
@@ -1906,13 +1902,12 @@ msgid "Aaaand... Oops."
 msgstr "y..... Ups!."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:145
-#, fuzzy
 msgid ""
 "Scenes need to be saved to be run, so save the scene to something like Hello."
 "tscn in Scene -> Save:"
 msgstr ""
-"Las escenas deben guardarse para ejecutarse, por lo que guarda la escena "
-"como hello.tscn en Escena -> Guardar escena:"
+"Las escenas se deben guardar antes de ser ejecutadas, así que guarda la "
+"escena con un nombre parecido a Hello.tscn en Scene -> Save:"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:150
 msgid ""
@@ -3603,6 +3598,11 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Para realizar la conexión en código, podemos usar la función ``connect``. La "
+"establecemos en ``_ready()`` para que la conexión se cree en ejecución. La "
+"sintaxis de la función es ``<source_node>.connect(<signal_name>, "
+"<target_node>, <target_function_name>)``. Aquí está el código para la "
+"conexión de nuestro Timer:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
 #, fuzzy
@@ -3641,12 +3641,18 @@ msgid ""
 "clicked, we create an instance of the bullet at the player's location. See :"
 "ref:`doc_instancing` for details."
 msgstr ""
+"Como otro ejemplo de uso de señales, consideremos un personaje que pueda "
+"rotar y disparar en dirección al ratón. Cada vez que el botón del ratón sea "
+"presionado, creamos una instancia de la bala en la localización del jugador. "
+"Vea :ref:`doc_instancing` para más detalles."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
+"Sin embargo, si las balas son añadidas como hijas del jugador, entonces "
+"permanecerán \"ligadas\" al jugador a medida que gira:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
@@ -3657,6 +3663,12 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
+"En su lugar, necesitamos que las balas sean independientes del movimiento "
+"del jugador - una vez disparadas, deberían continuar viajando en línea recta "
+"y el jugador ya no puede afectarlas. En vez de ser añadidas al árbol de "
+"escenas como un hijo del jugador, tiene más sentido añadir la bala como un "
+"hijo de la escena de juego \"principal\", la cual puede ser el padre del "
+"jugador o incluso más arriba en el árbol."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 #, fuzzy
@@ -3672,6 +3684,13 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
+"Sin embargo, esto conducirá a un problema diferente. Ahora, si intenta "
+"probar su escena \"Player\" de forma independiente, se bloqueará al "
+"disparar, porque no hay ningún nodo padre al que pueda acceder. Esto hace "
+"que sea mucho más difícil probar el código del jugador de forma "
+"independiente y también significa que si decides cambiar la estructura del "
+"nodo de la escena principal, es posible que el padre del jugador ya no sea "
+"el nodo apropiado para recibir las balas."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""
@@ -3680,6 +3699,10 @@ msgid ""
 "after that - whatever node is connected to the signal can \"receive\" the "
 "bullets and take the appropriate action to spawn them."
 msgstr ""
+"La solución a esto es usar una señal para \"emitir\" las balas desde el "
+"jugador. El jugador entonces no tiene necesidad de \"saber\" qué pasa con "
+"las balas después de eso - cualquier nodo que esté conectado a la señal "
+"puede \"recibir\" las balas y tomar la acción apropiada para generarlas."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:247
 msgid "Here is the code for the player using signals to emit the bullet:"
@@ -3690,12 +3713,16 @@ msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
+"En la escena princial, contectaremos la señal del jugador(aparecerá en la "
+"pestaña \"Nodo\")."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:314
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
 msgstr ""
+"Ahora las balas mantendrán su propio movimiento independiente de la rotación "
+"del jugador:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:322
 msgid ""
@@ -3704,12 +3731,20 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"Muchos de los tipos de nodos incorporados en Godot proporcionan señales que "
+"puedes utilizar para detectar eventos. Por ejemplo, un :ref:`Area2D "
+"<class_Area2D>`, el cual representa una moneda, emite una señal del tipo  "
+"``body_entered`` cada vez que el cuerpo físico del jugador entra a su forma "
+"de colisión, permitiéndote saber cuando el jugador la ha recolectado."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:327
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"En la siguiente sección, :ref:`doc_your_first_game`, construirás un juego "
+"completo que incluirá varios usos de señales para conectar diferentes "
+"componentes del juego."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
@@ -7649,6 +7684,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
 msgstr ""
+"Guarda la escena como ``GUI.tscn``. Pondremos toda la interfaz gráfica (GUI) "
+"en ella."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -10074,6 +10111,10 @@ msgid ""
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
+"Los *Nodes* te dan funcionalidad: Dibujan sprites, modelos 3D, simulan "
+"físicas, organizan interfaces gráficas, etc. Los **Resources** son **data "
+"containers**. Ellos no hacen nada por su cuenta: en su lugar, los nodos usan "
+"los datos contenidos en los **Resources**."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 #, fuzzy
@@ -10130,12 +10171,15 @@ msgstr "Hay dos formas de obtener certificados:"
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
 msgstr ""
+"**External** a una escena, guardada en el disco como archivos individuales."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
 msgstr ""
+"**Built-in**, guardado dentro del archivo \\*.tscn o \\*.scn  al que están "
+"adjuntos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
@@ -10159,6 +10203,10 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
+"La propiedad \"path\" nos dice de donde proviene el recurso. En este caso, "
+"proviene de una imagen PNG llamada ``robi.png``. Cuando el recurso proviene "
+"de un archivo como este, es un recurso externo. Si borra la ruta o esta ruta "
+"está vacía, se convierte en un recurso incorporado."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -10166,12 +10214,17 @@ msgid ""
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"El cambio entre recursos incorporados y externos se produce al guardar la "
+"escena. En el ejemplo anterior, si borra la ruta \\`\"res://robi.png\"\\` y "
+"guardas, Godot guardará la imagen dentro del archivo de escena .tscn."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"Incluso si guardas un recurso incorporado, cuando hagas múltiples instancias "
+"de una escena, el motor sólo cargará una copia del recurso."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
@@ -10189,6 +10242,10 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"También puedes ``preload`` recursos. A diferencia de ```load``, esta función "
+"leerá el archivo desde el disco y lo cargará en tiempo de compilación. Como "
+"resultado, no se puede llamar a ``preload`` con una ruta variable: es "
+"necesario utilizar una cadena constante."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
@@ -51864,7 +51921,7 @@ msgstr "Precedencia"
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Class"
-msgstr "Tipo"
+msgstr "Clase"
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Operator"
@@ -63610,11 +63667,11 @@ msgstr ""
 
 #: ../../docs/development/compiling/getting_source.rst:4
 msgid "Getting the source"
-msgstr ""
+msgstr "Consiguiendo el código fuente"
 
 #: ../../docs/development/compiling/getting_source.rst:7
 msgid "Downloading the Godot source code"
-msgstr ""
+msgstr "Descargando el código fuente de Godot"
 
 #: ../../docs/development/compiling/getting_source.rst:9
 msgid ""
@@ -63622,6 +63679,9 @@ msgid ""
 "<doc_introduction_to_the_buildsystem>` and compiling Godot, you need to "
 "actually download the Godot source code."
 msgstr ""
+"Antes de :ref:`adentrarnos en el sistema de construcción SCons "
+"<doc_introduction_to_the_buildsystem>` y compilar Godot, necesitas descargar "
+"el código fuente."
 
 #: ../../docs/development/compiling/getting_source.rst:12
 msgid ""
@@ -63629,18 +63689,26 @@ msgid ""
 "godot>`__ and while you can manually download it via the website, in general "
 "you want to do it via the ``git`` version control system."
 msgstr ""
+"El código fuente está disponible en `GitHub <https://github.com/godotengine/"
+"godot>`__ y aunque puedes descargarlo de manera manual desde la página web, "
+"en general deberías hacerlo a través del sistema de control de versiones "
+"``git``."
 
 #: ../../docs/development/compiling/getting_source.rst:16
 msgid ""
 "If you don't know much about ``git`` yet, there are a great number of "
 "`tutorials <https://git-scm.com/book>`__ available on various websites."
 msgstr ""
+"Si todavía no sabes mucho sobre ``git``, hay un gran número de `tutoriales "
+"<https://git-scm.com/book>`__ disponibles en diversos sitios web."
 
 #: ../../docs/development/compiling/getting_source.rst:19
 msgid ""
 "In general, you need to install ``git`` and/or one of the various GUI "
 "clients."
 msgstr ""
+"En general, necesitas instalar ``git`` y/o uno de los diversos interfaces "
+"visuales."
 
 #: ../../docs/development/compiling/getting_source.rst:21
 msgid ""
@@ -63655,6 +63723,8 @@ msgid ""
 "If you are using the ``git`` command line client, this is done by entering "
 "the following in a terminal:"
 msgstr ""
+"Si estás usando el cliente de línea de comandos de ``git``, esto se realiza "
+"escribiendo lo siguiente en el terminal:"
 
 #: ../../docs/development/compiling/getting_source.rst:31
 msgid ""
@@ -63663,17 +63733,25 @@ msgid ""
 "want. You can then download and extract the source from the download link on "
 "the page."
 msgstr ""
+"Para conseguir cualquiera de los lanzamientos oficiales de Godot, visita la "
+"`página de lanzamientos <https://github.com/godotengine/godot/releases>`__ y "
+"haz click en el enlace de la versión que versión que necesites. Podrás "
+"descargar y extraer el código fuente de esa misma página de descargas."
 
 #: ../../docs/development/compiling/getting_source.rst:35
 msgid ""
 "There are also generally branches besides ``master`` for each major version."
 msgstr ""
+"Generalmente hay más bifurcaciones de código además de la rama ``master`` "
+"para cada versión mayor."
 
 #: ../../docs/development/compiling/getting_source.rst:37
 msgid ""
 "After downloading the Godot source code, you can :ref:`continue to compiling "
 "Godot <doc_introduction_to_the_buildsystem>`."
 msgstr ""
+"Después de descargar el código fuente puedes :ref:`continuar hacia la "
+"sección de compilado de Godot <doc_introduction_to_the_buildsystem>`."
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:4
 msgid "Introduction to the buildsystem"

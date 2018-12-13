@@ -15,6 +15,7 @@
 # B10nicMachine <shumik1337@gmail.com>, 2018.
 # Chaosus89 <chaosus89@gmail.com>, 2018.
 # Constantin Moskvitin <cmoskvitin@gmail.com>, 2018.
+# Danil Alexeev <danil@alexeev.xyz>, 2018.
 # Danil Semenov <semenoff.da2018@yandex.ru>, 2018.
 # Denis <miraakdovahkiin45@gmail.com>, 2018.
 # Denis K <dekasoftware@mail.ru>, 2018.
@@ -31,6 +32,7 @@
 # Kenta Akiyama <kentaakiyamagd@gmail.com>, 2018.
 # LAT_Rio <AlSenya@yandex.ru>, 2018.
 # luckyuk <im-kerber@mail.ru>, 2018.
+# Mintormo <adenos@mail.ru>, 2018.
 # Neo6666666 <Neo6666666@gmail.com>, 2018.
 # Nick <nikita.porutchyk@gmail.com>, 2018.
 # Nikita Nigmatullin <nnigmat@gmail.com>, 2018.
@@ -57,14 +59,16 @@
 # Игорь Д <protorian.di@gmail.com>, 2018.
 # Игорь Патиевич <ipcorps@gmail.com>, 2018.
 # Лошаденко Максим Юриевич <vidos4all@gmail.com>, 2018.
+# Михаил <gagaran480@gmail.com>, 2018.
+# Озвучивает R2 <magabumbum@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-04 23:31+0100\n"
-"PO-Revision-Date: 2018-12-03 18:32+0000\n"
-"Last-Translator: Александр <ol-vin@mail.ru>\n"
+"PO-Revision-Date: 2018-12-13 10:15+0000\n"
+"Last-Translator: Озвучивает R2 <magabumbum@gmail.com>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -128,7 +132,6 @@ msgstr ""
 "ее лучше, рассказав об этом!"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -137,7 +140,7 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Опубликуйте вопрос или получите запрос на `GitHub репозитории <https://"
+"Опубликуйте вопрос или получите запрос на `GitHub репозиторий <https://"
 "github.com/godotengine/godot-docs/issues>`_, помогите нам `перевести "
 "документацию <https://hosted.weblate.org/engage/godot-engine/>`_ на ваш "
 "язык, или обсудите с нами на канале  ``#documentation`` в `Discord <https://"
@@ -368,7 +371,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:66
 msgid "Organization of the documentation"
-msgstr "Организация документации"
+msgstr "Структура документации"
 
 #: ../../docs/about/introduction.rst:68
 msgid ""
@@ -422,7 +425,6 @@ msgstr ""
 "компилировать движок, разрабатывать модули на C++ или плагины для редактора."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -1684,9 +1686,8 @@ msgid "It can be extended (to have more functions)."
 msgstr "Он может быть расширен (чтобы иметь больше функций)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-#, fuzzy
 msgid "It can be added to another node as a child."
-msgstr "Он может быть добавлен к другому ноду в качестве дочернего."
+msgstr "Он может быть добавлен к другому узлу (ноду) в качестве дочернего."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
@@ -1862,7 +1863,7 @@ msgid ""
 "the label properties appear in the Inspector (box in the bottom right "
 "corner)."
 msgstr ""
-"Узел(\"Label\") появляется в редакторе узлов сцены (поле в правом верхнем "
+"Узел \"Label\" появляется в редакторе узлов сцены (поле в правом верхнем "
 "углу), а свойства узла отображаются в \"инспекторе\" (в нижнем правом углу)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:131
@@ -2233,13 +2234,12 @@ msgid "The ability to subdivide scenes and make them easier to manage."
 msgstr "Возможность разделить сцены и сделать управление ими проще."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
-#, fuzzy
 msgid ""
 "A more flexible alternative to prefabs you might know from Unity (and much "
 "more powerful given that instances can be nested)."
 msgstr ""
-"Более гибкая альтернатива префабам (и гораздо более мощная, учитывая, что "
-"экземпляры могут быть вложенными)."
+"Более гибкая альтернатива сборкам, которые вы, возможно, знаете из Unity (и "
+"гораздо более мощные, учитывая, что экземпляры могут быть вложенными)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
@@ -2307,7 +2307,6 @@ msgstr ""
 "принадлежности одних компонентов к другим."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
-#, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -2317,13 +2316,14 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
-"Много времени тратится на программирование игр (или программного обеспечения "
-"в целом) на проектирование архитектуры и подгонку игровых компонентов к этой "
-"архитектуре. Проектирование на основе сцен заменяет этот подход и делает "
-"разработку намного быстрее и проще, позволяя вам сосредоточиться на самой "
-"логике игры. Поскольку большинство игровых компонентов сопоставляются "
-"непосредственно со сценой, использование дизайна на основе создания "
-"экземпляра сцены означает, что требуется немного архитектурного кода."
+"В программировании игр (и в разработке вообще) много времени тратится на "
+"проектирование архитектуры самой игры и взаимосвязей между ее компонентами в "
+"рамках созданной архитектуры. Проектирование на основе сцен заменяет этот "
+"подход и делает разработку намного быстрее и более простой, позволяя вам "
+"сосредоточиться на самой логике игры. Поскольку большинство игровых "
+"компонентов отображаются непосредственно в сцене, то использование дизайна "
+"основанного на создании экземпляра сцены означает, что требуется немного "
+"другой подход для ее построения."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
@@ -2423,16 +2423,14 @@ msgstr ""
 "скриптовые языки!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
-"Это здорово, из-за большей гибкости, но также это затрудняет нашу работу по "
-"поддержке различных языков."
+"Это здорово, в основном из-за большой гибкости, но это также затрудняет нашу "
+"работу по поддержке языков."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -2440,12 +2438,11 @@ msgid ""
 "and C++ need to be edited in a separate IDE. If you are a big fan of "
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
-"Однако \"основными\" языками в Godot остаются GDScript и Visual Script. "
-"Основной причиной такого выбора является их уровень интеграции с Godot, так "
-"как это делает процесс более плавным; они оба имеют полную интеграцию с "
-"редактором, в то время как для С# и С++ необходимо использовать отдельную "
-"IDE. Если вы большой поклонник статически типизированных языков, то "
-"используйте C# и С++."
+"\"Основные\" языки в Godot - это GDScript и VisualScript. Основной причиной "
+"такого выбора является их уровень интеграции с Godot. Это делает процесс "
+"овладения Godot более плавным; они оба имеют полную интеграцию с редактором, "
+"в то время как для С# и С++ необходимо использовать отдельную IDE. Если вы "
+"большой поклонник статически типизированных языков, то используйте C# и С++."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 #: ../../docs/getting_started/scripting/gdscript/index.rst:2
@@ -2755,12 +2752,11 @@ msgstr ""
 "можете указать язык сценария, имя класса и другие параметры."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"В GDScript сам файл представляет собой класс, поэтому поле имени класса не "
+"В GDScript файл представляет собой класс, поэтому поле имени класса не "
 "редактируется."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
@@ -2789,15 +2785,14 @@ msgstr ""
 "свойстве сценария в \"Инспекторе\":"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
 "Чтобы отредактировать сценарий, нажмите одну из кнопок, которые отмечены в "
-"приведенном выше изображении. Это приведет вас к редактору сценариев, в "
-"котором будет отображен шаблон сценария по умолчанию:"
+"приведенном выше изображении. Появится редактор скриптов в котором будет "
+"отображен шаблон сценария по умолчанию:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -2893,17 +2888,16 @@ msgstr ""
 "здесь как NodePath), и имя метода для запуска."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
-"В левом верхнем разделе отображается список узлов вашей сцены, где имя "
-"излучающего узла выделено красным цветом. Выберите узел \"Panel\". Когда вы "
-"выбираете узел, NodePath внизу будет автоматически обновляться, указывая "
-"относительный путь от излучающего к выбранному узлу."
+"В левом верхнем разделе отображается список узлов вашей сцены, где имя узла "
+"вызывающего событие выделено красным цветом. Выберите узел \"Panel\". Когда "
+"вы выбираете узел, путь внизу будет автоматически обновляться, указывая "
+"относительный путь от узла вызывающего событие к выбранному узлу."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:210
 msgid ""
@@ -2918,15 +2912,14 @@ msgstr ""
 "генерировать эту функцию перед настройкой соединения."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
-"На этом завершим наше обучение по использованию визуального интерфейса. Всё "
-"же, это урок по сценариям, поэтому, ради изучения, давайте погрузимся в "
-"ручной процесс!"
+"На этом завершим наше обучение по использованию визуального интерфейса. Все-"
+"таки это урок по написанию скриптов. Поэтому, ради лучшего понимания, "
+"давайте писать код самостоятельно!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
 msgid ""
@@ -4033,16 +4026,15 @@ msgstr ""
 "является хорошим моментом для определения размера игрового окна:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:198
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
-"Сейчас мы можем использовать функцию ``_process()`` для определения того, "
+"Теперь мы можем использовать функцию ``_process()`` для определения того, "
 "что игрок будет делать. ``_process()`` вызывается каждый кадр, поэтому мы "
-"будем использовать ее для обновления игровых элементов, которые будут часто "
-"меняться, как мы этого ожидаем. Здесь мы сделаем следующее:"
+"будем использовать ее для обновления состояния объектов нашей игры. Сделаем "
+"следующее:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:202
 msgid "Check for input."
@@ -4633,14 +4625,13 @@ msgid "Main script"
 msgstr "Главный скрипт"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:667
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
-"Добавьте скрипт к узлу ``Main``. В верхней части скрипта мы используем "
-"``export (PackedScene)``, чтобы мы могли выбрать сцену Mob, которую хотим "
-"инстанцировать."
+"Добавьте скрипт к узлу ``Main``. В начале скрипта мы пишем ``export "
+"(PackedScene)`` чтобы мы могли выбрать сцену Mob, экземпляр которой мы хотим "
+"сделать."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:706
 msgid ""
@@ -4674,18 +4665,17 @@ msgstr ""
 "запустит другие два таймера. ``ScoreTimer`` будет увеличивать счет на 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:782
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"В функции ``_on_MobTimer_timeout()`` мы создадим экземпляр моба, выберем "
-"случайное начальное местоположение вдоль ``Path2D`` и настроим моба в "
-"движении. Узел ``PathFollow2D`` будет автоматически вращаться следуя по "
-"пути, поэтому мы будем использовать это, чтобы выбрать направление моба, а "
-"также его позицию."
+"В функции ``_on_MobTimer_timeout()`` мы создадим экземпляр противника, "
+"выберем случайное начальное местоположение вдоль ``Path2D`` и заставим его "
+"двигаться. Узел ``PathFollow2D`` будет автоматически поворачивать его в "
+"нужном направлении, поэтому мы воспользуемся этим свойством, чтобы выбрать "
+"направление противника и его позицию."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:788
 msgid ""
@@ -4893,9 +4883,8 @@ msgid "StartButton"
 msgstr "StartButton"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:920
-#, fuzzy
 msgid "``Layout``: \"Center Bottom\""
-msgstr "``Макет``: \"Center Bottom\""
+msgstr "``Layout``: \"Center Bottom\""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:923
 msgid "Left: ``-100``"
@@ -5423,7 +5412,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:173
 msgid "Click \"Save\" and the engine will build the export files."
-msgstr "Нажмите \"Сохранить\" и движок соберет экспортируемый файл."
+msgstr "Кликните \"Сохранить\" и движок построит экспортируемые файлы."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
 msgid ""
@@ -5491,7 +5480,6 @@ msgstr ""
 "взаимодействия с вашим устройством."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
-#, fuzzy
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
@@ -9365,10 +9353,13 @@ msgstr "Этот метод должен:"
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
+"задайте свойству ``text`` узла ``Number`` значение ``new_value``,  "
+"приведенное к строковому типу"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:331
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr ""
+"задайте свойству ``value`` узла ``TextureProgress`` значение ``new_value``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
 #, fuzzy
@@ -9412,6 +9403,12 @@ msgid ""
 "``TextureProgress`` from its current level to the ``Player``'s new "
 "``health`` when the character takes damage."
 msgstr ""
+"Интерфейс нашей игры уже вполне рабочий, однако не помешает добавить немного "
+"анимаций.  В этом нам поможет узел ``Tween`` — незаменимый инструмент для "
+"создания анимаций.  ``Tween`` может плавно менять значение любого свойства, "
+"которого вы только пожелаете. Например, когда игрок``Player`` получает "
+"урон,  полоска здоровья ``TextureProgress`` уменьшается до текущего уровня "
+"здоровья ``health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
 msgid ""
@@ -9419,48 +9416,58 @@ msgid ""
 "``tween`` variable. Let's now use it. We have to make some changes to "
 "``update_health``."
 msgstr ""
+"Сцена ``GUI`` уже содержит дочерний узел ``Tween``, хрянящийся в переменной "
+"``tween``. Давайте используем их. Но сначала мы должны произвести некоторые "
+"изменения в ``update_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:378
 msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
 msgstr ""
+"Мы будем использовать метод  узла ``Tween``, который "
+"называется``interpolate_property`` и принимает семь аргументов:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
 msgid "A reference to the node who owns the property to animate"
-msgstr ""
+msgstr "Ссылка на узел, свойство которого мы будем анимировать"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
 msgid "The property's identifier as a string"
-msgstr ""
+msgstr "Идентификатор свойства в виде строки"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
 msgid "The starting value"
-msgstr ""
+msgstr "Начальное значение"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
 msgid "The end value"
-msgstr ""
+msgstr "Конечное значение"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
 msgid "The animation's duration in seconds"
-msgstr ""
+msgstr "Продолжительность анимации в секундах"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
 msgid "The type of the transition"
-msgstr ""
+msgstr "Тип перехода"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
+#, fuzzy
 msgid "The easing to use in combination with the equation."
-msgstr ""
+msgstr "Легкость использования в сочетании с уравнением."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
+#, fuzzy
 msgid ""
 "The last two arguments combined correspond to an `easing equation <#>`__. "
 "This controls how the value evolves from the start to the end point."
 msgstr ""
+"Два последних аргумента в совокупности соответствуют `уравнению плавности "
+"<#>`__. Этот параметр определяет, как изменяется значение от начала до конца."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
+#, fuzzy
 msgid ""
 "Click the script icon next to the ``GUI`` node to open it again. The "
 "``Number`` node needs text to update itself, and the ``Bar`` needs a float "
@@ -9468,6 +9475,11 @@ msgid ""
 "not to animate text directly. We're going to use it to animate a new ``GUI`` "
 "variable named ``animated_health``."
 msgstr ""
+"Нажмите на иконку скрипта рядом с узлом ``GUI``, чтобы открыть его снова. "
+"Узлу ``Number`` нужен текст для обновления, а узлу ``Bar`` - дробное или "
+"целое число. Мы можем использовать ``interpolate_property`` для анимирования "
+"числа, но не для текста напрямую. Мы собираемся использовать его для "
+"анимирования новой переменной ``GUI`` под названием ``animated_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:399
 msgid ""
@@ -9477,10 +9489,14 @@ msgid ""
 "``animated_health`` value. Call the ``Tween`` node's "
 "``interpolate_property`` method:"
 msgstr ""
+"В верхней части скрипта определите новую переменную, назовите ее "
+"``animated_health`` и установите ее значение на 0. Вернитесь к методу "
+"``aupdate_health`` и очистите ее содержимое. Давайте анимируем "
+"``animated_health``. Вызываем метод узла ``Tween`` ``interpolate_property``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:421
 msgid "Let's break down the call:"
-msgstr ""
+msgstr "Давайте разберем этот вызов поподробнее:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:427
 msgid ""
@@ -9488,14 +9504,22 @@ msgid ""
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
 "That's why we write it as ``\"animated_health\"``."
 msgstr ""
+"Мы нацелены на ``animated_health`` на ``self``, то есть на узел ``GUI``. "
+"Второе свойство interpolate\\_property узла ``Tween`` принимается в виде "
+"строки. Вот почему мы пишем это как ``\"animated_health\"``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:435
+#, fuzzy
 msgid ""
 "The starting point is the current value the bar's at. We still have to code "
 "this part, but it's going to be ``animated_health``. The end point of the "
 "animation is the ``Player``'s ``health`` after the ``health_changed``: "
 "that's ``new_value``. And ``0.6`` is the animation's duration in seconds."
 msgstr ""
+"Отправной точкой является текущее значение шкалы. Мы все еще должны "
+"закодировать эту часть, но это будет ``animated_health``. Конечной точкой "
+"анимации является ``health`` игрока после ``health_changed``: это "
+"``new_value``. А ``0.6`` - это длительность анимации в секундах."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
 msgid ""
@@ -9504,6 +9528,10 @@ msgid ""
 "do anything with a linear transition, but we must provide this last argument "
 "or we'll get an error."
 msgstr ""
+"Последние два аргумента - это константы из класса ``Tween``. "
+"``TRANS_LINEAR`` означает, что анимация должна быть линейной. ``EASE_IN`` "
+"ничего не делает с линейным переходом, но мы должны предоставить последний "
+"аргумент, иначе мы получим ошибку."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
 msgid ""
@@ -9511,8 +9539,12 @@ msgid ""
 "``tween.start()``. We only have to do this once if the node is not active. "
 "Add this code after the last line:"
 msgstr ""
+"Анимация не будет воспроизводиться, пока мы не запустим узел ``Tween`` с "
+"помощью функции `tween.start()``. Это нужно сделать только один раз, если "
+"узел не активен. Добавьте этот код после последней строки:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
+#, fuzzy
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -9521,20 +9553,29 @@ msgid ""
 "`tween` node is perfect for code-controlled animations. For hand-made "
 "animations, check out `AnimationPlayer`."
 msgstr ""
+"Хотя мы могли бы анимировать свойство `health` на `Player'e`, но не будем. "
+"Персонажи должны терять жизнь мгновенно, когда они попадают под удар. Это "
+"значительно облегчает управление их состоянием, например, знать, когда "
+"человек умер. Вы всегда должны хранить анимацию в отдельном контейнере или "
+"узле данных. Узел `tween` идеально подходит для анимации с кодовым "
+"управлением. Анимацию ручной работы можно посмотреть в разделе "
+"\"Анимационный проигрыватель\"."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
 msgid "Assign the animated\\_health to the LifeBar"
-msgstr ""
+msgstr "Присоединение animated\\_health к шкале здоровья"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
 msgstr ""
+"Теперь переменная ``animated_health`` анимирована, но мы больше не обновляем "
+"``Bar`` и ``Number`` узлы. Давай исправим это."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
 msgid "So far, the update\\_health method looks like this:"
-msgstr ""
+msgstr "Пока метод update\\_health выглядит следующим образом:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
 msgid ""
@@ -9542,23 +9583,33 @@ msgid ""
 "the ``_process`` method to animate it. Let's now update the ``Number`` and "
 "``TextureProgress`` nodes like before, inside of ``_process``:"
 msgstr ""
+"В данном конкретном случае, поскольку ``number_label`` принимает текст, нам "
+"нужно использовать метод ``_process`` для его анимирования. Теперь обновим "
+"узлы ``Number`` и ``TextureProgress`` как и до этого, внутри метода "
+"``_process``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:523
 msgid ""
 "`number_label` and `bar` are variables that store references to the `Number` "
 "and `TextureProgress` nodes."
 msgstr ""
+"Переменные `number_label` и `bar` хранят ссылки на узлы `Number` и "
+"`TextureProgress`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
+#, fuzzy
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
 "nice for the life bar to animate in a choppier fashion."
 msgstr ""
+"Запустите игру, чтобы увидеть плавную анимацию шкалы. Но текст отображает "
+"дробное число и выглядит не очень. А учитывая стиль игры, было бы неплохо, "
+"если бы шкала здоровья анимировалась вертолётной манере."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
 msgid "The animation is smooth, but the number is broken"
-msgstr ""
+msgstr "Анимация гладкая, но число отображается криво"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
 msgid ""
@@ -9566,16 +9617,22 @@ msgid ""
 "variable named ``round_value`` to store the rounded ``animated_health``. "
 "Then assign it to ``number_label.text`` and ``bar.value``:"
 msgstr ""
+"Мы можем решить обе проблемы, округлив ``animated_health``. Используйте "
+"локальную переменную под названием ``round_value`` для хранения округленной "
+"``animated_health``. Затем присваиваются значения ``number_label.text`` и "
+"``bar.value``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
+#, fuzzy
 msgid "Try the game again to see a nice blocky animation."
-msgstr ""
+msgstr "Запустите игру еще раз, чтобы увидеть хорошую блочную анимацию."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
-msgstr ""
+msgstr "Округляя animated\\_health, мы убиваем двух зайцев одним выстрелом"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:563
+#, fuzzy
 msgid ""
 "Every time the player takes a hit, the ``GUI`` calls "
 "``_on_Player_health_changed``, which in turn calls ``update_health``. This "
@@ -9584,6 +9641,12 @@ msgid ""
 "gradually is a trick. It makes the GUI feel alive. If the ``Player`` takes 3 "
 "damage, it happens in an instant."
 msgstr ""
+"Каждый раз, когда игрок получает удар, ``GUI`` "
+"вызывает``_on_Player_health_changed``, который в свою очередь вызывает "
+"``update_health``. Это обновляет анимацию и ``number_label`` и ``bar`` "
+"направляются в ``_process``. Анимированная шкала здоровья, показывающий "
+"постепенное снижение здоровья. Это делает GUI более оживленным. Если "
+"``Player`` получит 3 удара, это произойдет в одно мгновение."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
 msgid "Fade the bar when the Player dies"
@@ -12238,7 +12301,7 @@ msgstr "Константа Пи."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
 msgid "TAU"
-msgstr ""
+msgstr "TAU"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:240
 msgid "TAU constant."
@@ -12246,7 +12309,7 @@ msgstr "Константа Тау."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 msgid "INF"
-msgstr ""
+msgstr "INF"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:242
 msgid "Infinity constant. Used for comparisons."
@@ -12254,7 +12317,7 @@ msgstr "Бесконечность. Используется для сравне
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:244
 msgid "NAN"
-msgstr ""
+msgstr "NAN"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:244
 msgid "NAN (not a number) constant. Used for comparisons."
@@ -12280,7 +12343,7 @@ msgstr "**Описание**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:255
 msgid "``x[index]``"
-msgstr ""
+msgstr "``x[index]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:255
 msgid "Subscription, Highest Priority"
@@ -12288,7 +12351,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:257
 msgid "``x.attribute``"
-msgstr ""
+msgstr "``x.attribute``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:257
 msgid "Attribute Reference"
@@ -12296,7 +12359,7 @@ msgstr "Ссылка на атрибут"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:259
 msgid "``is``"
-msgstr ""
+msgstr "``is``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:259
 msgid "Instance Type Checker"
@@ -12304,7 +12367,7 @@ msgstr "Проверка типа экземпляра"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:261
 msgid "``~``"
-msgstr ""
+msgstr "``~``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:261
 msgid "Bitwise NOT"
@@ -12312,7 +12375,7 @@ msgstr "Побитовое НЕ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:263
 msgid "``-x``"
-msgstr ""
+msgstr "``-x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:263
 msgid "Negative / Unary Negation"
@@ -12320,7 +12383,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:265
 msgid "``*`` ``/`` ``%``"
-msgstr ""
+msgstr "``*`` ``/`` ``%``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:265
 msgid "Multiplication / Division / Remainder"
@@ -12355,7 +12418,7 @@ msgstr "Прибавление / Вычитание"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:277
 msgid "``<<`` ``>>``"
-msgstr ""
+msgstr "``<<`` ``>>``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:277
 msgid "Bit Shifting"
@@ -12363,7 +12426,7 @@ msgstr "Битовый Сдвиг"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:279
 msgid "``&``"
-msgstr ""
+msgstr "``&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:279
 msgid "Bitwise AND"
@@ -12371,7 +12434,7 @@ msgstr "Побитовое И"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
 msgid "``^``"
-msgstr ""
+msgstr "``^``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:281
 msgid "Bitwise XOR"
@@ -12379,7 +12442,7 @@ msgstr "Побитовое Исключающее ИЛИ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "``|``"
-msgstr ""
+msgstr "``|``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:283
 msgid "Bitwise OR"
@@ -12387,7 +12450,7 @@ msgstr "Побитовое ИЛИ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
-msgstr ""
+msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:285
 msgid "Comparisons"
@@ -12395,7 +12458,7 @@ msgstr "Сравнения"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "``in``"
-msgstr ""
+msgstr "``in``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:287
 msgid "Content Test"
@@ -12403,7 +12466,7 @@ msgstr "Тестирование контента"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "``!`` ``not``"
-msgstr ""
+msgstr "``!`` ``not``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:289
 msgid "Boolean NOT"
@@ -12411,7 +12474,7 @@ msgstr "Логическое НЕТ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "``and`` ``&&``"
-msgstr ""
+msgstr "``and`` ``&&``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:291
 msgid "Boolean AND"
@@ -12419,7 +12482,7 @@ msgstr "Логическое И"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "``or`` ``||``"
-msgstr ""
+msgstr "``or`` ``||``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:293
 msgid "Boolean OR"
@@ -12427,7 +12490,7 @@ msgstr "Логическое ИЛИ"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "``if x else``"
-msgstr ""
+msgstr "``if x else``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:295
 msgid "Ternary if/else"
@@ -12435,7 +12498,7 @@ msgstr "Тернарный оператор Если/Иначе (if/else)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
-msgstr ""
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:297
 msgid "Assignment, Lowest Priority"
@@ -12457,7 +12520,7 @@ msgstr "**Тип**"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:306
 msgid "``45``"
-msgstr ""
+msgstr "``45``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:306
 msgid "Base 10 integer"
@@ -12465,7 +12528,7 @@ msgstr "Целое число в десятичной системе счисл�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:308
 msgid "``0x8F51``"
-msgstr ""
+msgstr "``0x8F51``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:308
 msgid "Base 16 (hex) integer"
@@ -12473,7 +12536,7 @@ msgstr "Целое число в шестнадцатеричной систем
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:310
 msgid "``3.14``, ``58.1e-10``"
-msgstr ""
+msgstr "``3.14``, ``58.1e-10``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:310
 msgid "Floating point number (real)"
@@ -12481,7 +12544,7 @@ msgstr "Число с плавающей точкой (вещественное 
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
 msgid "``\"Hello\"``, ``\"Hi\"``"
-msgstr ""
+msgstr "``\"Привет\"``, ``\"Дарова!\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:312
 msgid "Strings"
@@ -12489,7 +12552,7 @@ msgstr "Строки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:314
 msgid "``\"\"\"Hello\"\"\"``"
-msgstr ""
+msgstr "``\"\"\"Приииивет\"\"\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:314
 msgid "Multiline string"
@@ -12497,7 +12560,7 @@ msgstr "Многострочная строка"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:316
 msgid "``@\"Node/Label\"``"
-msgstr ""
+msgstr "``@\"Node/Label\"``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:316
 msgid "NodePath or StringName"
@@ -12555,11 +12618,12 @@ msgstr "Базовые встроенные типы"
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:354
 msgid "A variable in GDScript can be assigned to several built-in types."
 msgstr ""
+"Переменная в GDScript может быть определена несколькими встроенными типами."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:357
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:25
 msgid "null"
-msgstr ""
+msgstr "null"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:359
 msgid ""
@@ -12573,7 +12637,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:104
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:27
 msgid "bool"
-msgstr ""
+msgstr "bool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:365
 msgid "The Boolean data type can only contain ``true`` or ``false``."
@@ -12581,7 +12645,7 @@ msgstr "Булевый тип данных может содержать тол�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:368
 msgid "int"
-msgstr ""
+msgstr "int"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:370
 msgid ""
@@ -12600,7 +12664,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:225
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:31
 msgid "float"
-msgstr ""
+msgstr "float"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:376
 msgid "Used to contain a floating point value (real numbers)."
@@ -12608,7 +12672,7 @@ msgstr "Используется для хранения чисел с плав�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:379
 msgid ":ref:`String <class_String>`"
-msgstr ""
+msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:381
 msgid ""
@@ -12629,7 +12693,7 @@ msgstr "Векторные встроенные типы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:390
 msgid ":ref:`Vector2 <class_Vector2>`"
-msgstr ""
+msgstr ":ref:`Vector2 <class_Vector2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:392
 msgid ""
@@ -12641,7 +12705,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:396
 msgid ":ref:`Rect2 <class_Rect2>`"
-msgstr ""
+msgstr ":ref:`Rect2 <class_Rect2>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:398
 msgid ""
@@ -12654,7 +12718,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:402
 msgid ":ref:`Vector3 <class_Vector3>`"
-msgstr ""
+msgstr ":ref:`Vector3 <class_Vector3>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:404
 msgid ""
@@ -14250,9 +14314,9 @@ msgid ""
 "Always use one space around operators and after commas. Avoid extra spaces "
 "in dictionary references and function calls, or to create \"columns.\""
 msgstr ""
-"Всегда ставьте пробел до и после операторов, а также после запятой. "
-"Избегайте лишних пробелов при обращении к словарям и вызовах функций, или "
-"для того, чтобы выровнять \"в столбик\""
+"Всегда ставьте один пробел до и после операторов, а также после запятых. "
+"Избегайте лишних пробелов в словаре ссылок и вызовах функций, или при "
+"выравнивании \"в столбик\"."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
 msgid "**NEVER**:"
@@ -65967,12 +66031,16 @@ msgid ""
 "Note that some of these channels are run and moderated by members of the "
 "Godot community or third parties."
 msgstr ""
+"Обратите внимание, что некоторые из этих каналов управляются и модератором "
+"членов сообщества Годо или третьих лиц"
 
 #: ../../docs/community/channels.rst:10
 msgid ""
 "A brief overview over these channels is also available on the `website "
 "<https://godotengine.org/community>`_."
 msgstr ""
+"Краткий обзор по этим каналам также доступен на веб-сайте\n"
+"<https://godotengine.org/community>`_."
 
 #: ../../docs/community/channels.rst:13
 msgid "Q & A"
@@ -66021,7 +66089,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:28
 msgid "Other chats"
-msgstr ""
+msgstr "Другие чаты"
 
 #: ../../docs/community/channels.rst:30
 msgid ""
@@ -66034,7 +66102,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:34
 msgid "Social networks"
-msgstr ""
+msgstr "Социальные сети"
 
 #: ../../docs/community/channels.rst:36
 msgid "`GitHub <https://github.com/godotengine/>`_"
@@ -66062,7 +66130,7 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:44
 msgid "Forum"
-msgstr ""
+msgstr "Форум"
 
 #: ../../docs/community/channels.rst:46
 msgid "`Forum (godotdevelopers.org) <https://godotdevelopers.org/forum>`_"
@@ -66073,10 +66141,12 @@ msgid ""
 "This is a list of third-party tutorials created by the community that may be "
 "of interest."
 msgstr ""
+"Это список сторонних учебников, созданных сообществом, которые могут "
+"представлять интерес."
 
 #: ../../docs/community/tutorials.rst:9
 msgid "Video tutorials"
-msgstr ""
+msgstr "Видео-уроки"
 
 #: ../../docs/community/tutorials.rst:11
 msgid ""
@@ -66111,6 +66181,8 @@ msgid ""
 "This is a list of third-party resources created by the community that may be "
 "of interest."
 msgstr ""
+"Это список сторонних ресурсов, созданных сообществом, которые могут "
+"представлять интерес"
 
 #: ../../docs/community/resources.rst:11
 msgid ""

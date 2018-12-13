@@ -4,6 +4,7 @@
 #
 # Alexander <adcrashday@googlemail.com>, 2018.
 # Arthur S. Muszynski <artism90@gmail.com>, 2018.
+# Carsten Nikiel <carsten@nikiel.de>, 2018.
 # chillhelm <wilhelm@neubert.online>, 2018.
 # DafabHoid <github@dafabhoid.de>, 2018.
 # David <david.breier@outlook.de>, 2018.
@@ -32,9 +33,11 @@
 # RamonP.FreedomUnited <freedomunited@yandex.com>, 2018.
 # R. K <rene.kling1992@gmail.com>, 2018.
 # Robin Bauknecht <robin.bauknecht@gmail.com>, 2018.
+# Simon Wenner <simon@wenner.ch>, 2018.
 # Skayo <jonasg.cool@gmail.com>, 2018.
 # So Wieso <sowieso@dukun.de>, 2018.
 # ssantos <ssantos@web.de>, 2018.
+# themangomago <markus.schneider84@gmail.com>, 2018.
 # Thomas Eigel <yurumi@gmx.de>, 2018.
 # Timo Schwarzer <account@timoschwarzer.com>, 2018.
 # Übersetzer124 <cloud1@mag-keinen-spam.de>, 2018.
@@ -45,8 +48,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-04 23:31+0100\n"
-"PO-Revision-Date: 2018-12-04 22:23+0000\n"
-"Last-Translator: ssantos <ssantos@web.de>\n"
+"PO-Revision-Date: 2018-12-13 10:15+0000\n"
+"Last-Translator: ZSte <ZStephanie@t-online.de>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -3521,6 +3524,8 @@ msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
 msgstr ""
+"Der Zielknoten *muss* mit einem Skript verbunden sein oder es wird eine "
+"Fehlermeldung angezeigt."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
@@ -3552,7 +3557,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
 msgid "Connecting signals in code"
-msgstr ""
+msgstr "Signale im Code verbinden"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -3577,9 +3582,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
-#, fuzzy
 msgid "Custom signals"
-msgstr "Benutzerdefinierte Iteratoren"
+msgstr "Benutzerdefinierte Signale"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
@@ -5128,12 +5132,19 @@ msgid ""
 "particles. Feel free to experiment and create different effects. For the "
 "effect in this example, use the following settings:"
 msgstr ""
+"Bei der Konfiguration von Partikeln stehen eine Vielzahl von Eigenschaften "
+"zur Auswahl. Sie können gerne experimentieren und verschiedene Effekte "
+"erstellen. Für den Effekt in diesem Beispiel verwenden Sie die folgenden "
+"Einstellungen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1176
 msgid ""
 "You also need to create a ``Material`` by clicking on ``<null>`` and then "
 "\"New ParticlesMaterial\". The settings for that are below:"
 msgstr ""
+"Du musst auch ein ```Material`` erstellen, indem du auf ``<null>`` und dann "
+"auf \"New ParticlesMaterial\" klickst. Die Einstellungen dafür sind unten "
+"aufgeführt:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid ""
@@ -5141,12 +5152,17 @@ msgid ""
 "taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to "
 "0.0 (fully transparent)."
 msgstr ""
+"Um den Farbverlauf für die Einstellung \"Color Ramp\" festzulegen, möchten "
+"wir, dass ein Farbverlauf das Alpha (Transparenz) des Sprites von 0,5 "
+"(halbtransparent) bis 0,0 (vollständig transparent) nimmt."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid ""
 "Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient"
 "\". You'll see a window like this:"
 msgstr ""
+"Klicken Sie auf \"New GradientTexture\", dann unter \"Gradient\" auf \"New "
+"Gradient\". Du wirst ein Fenster wie dieses sehen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1190
 msgid ""
@@ -5198,10 +5214,12 @@ msgid ""
 "If you haven't made \"Dodge the Creeps\" yourself yet, please read :ref:"
 "`doc_your_first_game` before continuing with this tutorial."
 msgstr ""
+"Wenn du \"Dodge the Creeps\" noch nicht selbst erstellt hast, lies bitte :"
+"ref:`doc_your_first_game`, bevor du mit diesem Tutorial weitermachst."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:23
 msgid "Preparing the project"
-msgstr ""
+msgstr "Vorbereitung des Projekts"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:25
 msgid ""
@@ -5211,6 +5229,12 @@ msgid ""
 "event can be treated the same as a touch event, we'll convert the game to a "
 "click-and-move input style."
 msgstr ""
+"In \"Dodge the Creeps\" verwendeten wir Tastatursteuerungen, um den "
+"Charakter des Spielers zu bewegen. Dies ist in Ordnung, wenn Ihr Spiel auf "
+"einer PC-Plattform gespielt wird, aber auf einem Telefon oder Tablett müssen "
+"Sie die Touchscreen-Eingabe unterstützen. Da ein Klickereignis wie ein Touch-"
+"Ereignis behandelt werden kann, konvertieren wir das Spiel in einen Click-"
+"and-Move-Eingabestil."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:31
 msgid ""
@@ -5220,12 +5244,21 @@ msgid ""
 "computer without a touchscreen. Also, make sure to select \"portrait\" under "
 "*Orientation*."
 msgstr ""
+"Der erste Schritt besteht darin, \"Projekteinstellungen\" zu öffnen und den "
+"Abschnitt *Handheld* zu finden. Aktivieren Sie die Option *Emulate "
+"Touchscreen*. Auf diese Weise können Sie Mausklick-Ereignisse genauso "
+"behandeln wie Touch-Ereignisse, so dass Sie das Spiel auf einem Computer "
+"ohne Touchscreen testen können. Achten Sie auch darauf, dass Sie unter "
+"*Orientierung* \"Portrait\" auswählen."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:36
 msgid ""
 "In the *Stretch* section, set *Mode* to \"2d\" and *Aspect* to \"keep\". "
 "This ensures that the game scales consistently on different sized screens."
 msgstr ""
+"Stellen Sie im Abschnitt *Stretch* *Mode* auf \"2d\" und *Aspect* auf \"keep"
+"\". Dadurch wird sichergestellt, dass das Spiel auf unterschiedlich großen "
+"Bildschirmen konsistent skaliert wird."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:41
 msgid ""
@@ -5233,19 +5266,25 @@ msgid ""
 "We'll remove the key inputs and make the player move towards a \"target\" "
 "that's set by the touch (or click) event."
 msgstr ""
+"Als nächstes müssen wir das Skript ``Player.gd`` ändern, um die "
+"Eingabemethode zu ändern. Wir entfernen die wichtigsten Eingaben und bringen "
+"den Spieler dazu, sich auf ein \"Ziel\" zuzubewegen, das durch das Berühren "
+"(oder Klicken) des Ereignisses festgelegt wird."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:45
 msgid ""
 "Here is the full script for the player, with comments noting what we've "
 "changed:"
 msgstr ""
+"Hier ist das vollständige Skript für den Spieler, mit Kommentaren, die "
+"aufzeigen, was wir geändert haben:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:122
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:92
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
 #: ../../docs/development/compiling/compiling_with_mono.rst:126
 msgid "Export templates"
-msgstr ""
+msgstr "Vorlagen exportieren"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:124
 msgid ""
@@ -5254,18 +5293,28 @@ msgid ""
 "the engine without the editor pre-compiled for each platform . You can also "
 "download them in Godot by clicking on *Editor -> Manage Export Templates*:"
 msgstr ""
+"Um zu exportieren, müssen Sie die *Exportvorlagen* von der Website http://"
+"godotengine.org/download. herunterladen. Diese Vorlagen sind optimierte "
+"Versionen der Engine, ohne dass der Editor für jede Plattform vorkompiliert "
+"wird. Sie können sie auch in Godot herunterladen, indem Sie auf *Editor -> "
+"Manage Export Templates* klicken:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:131
 msgid ""
 "In the window that appears, you can click \"Download\" to get the template "
 "version that matches your version of Godot."
 msgstr ""
+"In dem erscheinenden Fenster können Sie auf \"Download\" klicken, um die "
+"Vorlagenversion zu erhalten, die Ihrer Version von Godot entspricht."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:136
 msgid ""
 "If you upgrade Godot, you must download templates that match the new version "
 "or your exported projects may not work correctly."
 msgstr ""
+"Wenn Sie Godot aktualisieren, müssen Sie Vorlagen herunterladen, die der "
+"neuen Version entsprechen, da sonst Ihre exportierten Projekte "
+"möglicherweise nicht ordnungsgemäß funktionieren."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:140
 #, fuzzy
@@ -5277,12 +5326,17 @@ msgid ""
 "Next, you can configure the export settings by clicking on *Project -> "
 "Export*:"
 msgstr ""
+"Anschließend können Sie die Exporteinstellungen konfigurieren, indem Sie auf "
+"*Projekt -> Exportieren* klicken:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:146
 msgid ""
 "Create a new export preset by clicking \"Add...\" and selecting a platform. "
 "You can make as many presets as you like with different settings."
 msgstr ""
+"Erstellen Sie eine neue Exportvorgabe, indem Sie auf \"Hinzufügen...\" "
+"klicken und eine Plattform auswählen. Sie können beliebig viele "
+"Voreinstellungen mit verschiedenen Einstellungen vornehmen."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:149
 msgid ""
@@ -5290,12 +5344,18 @@ msgid ""
 "a packed version of your project's data. This doesn't include an executable "
 "so the project can't be run on its own."
 msgstr ""
+"Am unteren Rand des Fensters befinden sich zwei Schaltflächen. \"Export PCK/"
+"ZIP\" erstellt nur eine gepackte Version der Daten Ihres Projekts. Dies "
+"beinhaltet keine ausführbare Datei, so dass das Projekt nicht allein "
+"ausgeführt werden kann."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:153
 msgid ""
 "The second button, \"Export Project\", creates a complete executable version "
 "of your game, such as an `.apk` for Android or an `.exe` for Windows."
 msgstr ""
+"Die zweite Schaltfläche, \"Projekt Exportieren\", erstellt eine ausführbare "
+"Datei deines Spieles, z.B. eine ‘.apk‘ für Android oder ‘.exe‘ für Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
 msgid ""
@@ -5662,12 +5722,20 @@ msgid ""
 "extend the editor’s functionality using game code. See `The Godot editor is "
 "a Godot game`_ below."
 msgstr ""
+"Beachten Sie, dass der 3D-Arbeitsbereich nicht so viele Werkzeuge enthält "
+"wie der 2D-Arbeitsbereich. Sie benötigen externe Programme oder Add-ons, um "
+"Terrains zu bearbeiten, komplexe Charaktere zu animieren und so weiter. "
+"Godot bietet eine komplette API, um die Funktionalität des Editors mit Hilfe "
+"von Spiel-Code zu erweitern. Siehe `Der Godot editor ist ein Godot Spiel`_ "
+"unten."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:104
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
+"*Ein State Machine Editor Plugin in Godot 2 von kubecz3k. Mit ihm können Sie "
+"Zustände und Übergänge visuell verwalten.*"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:108
 #, fuzzy
@@ -5689,6 +5757,10 @@ msgid ""
 "AdMob, or an FBX model importer. Any of these can come as third-party "
 "plugins instead."
 msgstr ""
+"Jeder kann proprietäre Tools für die Bedürfnisse seiner Projekte einsetzen - "
+"sie werden einfach nicht mit der Engine ausgeliefert. Dies kann NVIDIA "
+"PhysX, Google AdMob oder ein FBX-Modell-Importeur sein. Jedes dieser Plugins "
+"kann stattdessen als Drittanbieter-Plugin geliefert werden."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
 msgid ""
@@ -5697,16 +5769,23 @@ msgid ""
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
+"Auf der anderen Seite bedeutet eine offene Codebasis, dass Sie von der "
+"Engine ** lernen und sie nach Herzenslust erweitern können. Sie können auch "
+"Spiele leicht debuggen, da Godot Fehler mit einem Stack Trace ausgibt, auch "
+"wenn sie von der Engine selbst stammen."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
 msgid ""
 "This **does not affect the work you do with Godot** in any way: there’s no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
+"Dies hat keinen Einfluss auf die Arbeit, die man mit Godot** macht: Es gibt "
+"keine Bedingungen, die an die Engine geknüpft sind, oder etwas, was man "
+"damit macht."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
 msgid "Community-driven"
-msgstr ""
+msgstr "Community-gesteuert"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:132
 msgid ""
@@ -6253,6 +6332,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:295
 msgid "GridContainer, to arrange Controls nodes in a grid-like pattern"
 msgstr ""
+"GridContainer, um Control-Knoten in einem gitterartigen Muster anzuordnen"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:297
 msgid ""
@@ -8188,10 +8268,15 @@ msgid ""
 "``animated_health`` value. Call the ``Tween`` node's "
 "``interpolate_property`` method:"
 msgstr ""
+"Definieren Sie oben im Skript eine neue Variable, benennen Sie sie "
+"``animated_health``, und setzen Sie ihren Wert auf 0. Navigieren Sie zurück "
+"zur Methode ``update_health`` und löschen Sie ihren Inhalt. Lassen Sie uns "
+"den Wert von ``animated_health`` animieren. Rufen Sie die Methode "
+"``interpolate_property`` des ``Tween`` Knotens auf:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:421
 msgid "Let's break down the call:"
-msgstr ""
+msgstr "Lassen Sie uns den Aufruf aufschlüsseln:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:427
 msgid ""
@@ -12519,9 +12604,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1632
-#, fuzzy
 msgid "Assert keyword"
-msgstr "Onready Schlüsselwort"
+msgstr "Assert Schlüsselwort"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1634
 msgid ""
@@ -12552,7 +12636,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:20
 msgid "Pros & cons of dynamic typing"
-msgstr ""
+msgstr "Vor- und Nachteile von dynamischer Typisierung"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:22
 msgid ""
@@ -12647,13 +12731,15 @@ msgstr "Dynamisch:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:75
 msgid "As function arguments:"
-msgstr ""
+msgstr "Als Funktions Argumente:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:77
 msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
 msgstr ""
+"Funktionen sind ebenfalls von dynamisch, dass bedeutet sie können mit "
+"unterschiedlichen Argumenten aufgerufen werden, zum Beispiel:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:107
 msgid "Pointers & referencing:"
@@ -13513,7 +13599,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:351
 msgid "warnings as errors"
-msgstr ""
+msgstr "Warnungen als Fehler"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:354
 msgid "Cases where you can’t specify types"
@@ -13527,7 +13613,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:359
 msgid "You can’t use Enums as types:"
-msgstr ""
+msgstr "Man kann Enums nicht als Typen verwenden:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:366
 msgid ""
@@ -13549,7 +13635,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:402
 #: ../../docs/tutorials/2d/2d_movement.rst:354
 msgid "Summary"
-msgstr ""
+msgstr "Zusammenfassung"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:404
 msgid ""
@@ -22074,7 +22160,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:39
 msgid "3D content"
-msgstr ""
+msgstr "3D Inhalt"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:41
 msgid ""
@@ -22107,7 +22193,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:61
 msgid "Generated geometry"
-msgstr ""
+msgstr "Generierte Geometrie"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:63
 msgid ""
@@ -22139,8 +22225,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:84
+#, fuzzy
 msgid "2D in 3D"
-msgstr ""
+msgstr "2D in 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:86
 msgid ""
@@ -22162,7 +22249,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:99
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:10
 msgid "Environment"
-msgstr ""
+msgstr "Umgebung"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:101
 msgid ""
@@ -22193,7 +22280,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:124
 msgid "Coordinate system"
-msgstr ""
+msgstr "Koordinatensystem"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:126
 msgid ""
@@ -22223,15 +22310,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:143
 msgid "**X** is sides"
-msgstr ""
+msgstr "**X** ist seitlich"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:144
 msgid "**Y** is up/down"
-msgstr ""
+msgstr "**Y** ist hoch/runter"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:145
 msgid "**Z** is front/back"
-msgstr ""
+msgstr "**Z** ist vorne/hinten"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:148
 msgid "Space and manipulation gizmos"
@@ -22247,7 +22334,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:158
 msgid "Some useful keybindings:"
-msgstr ""
+msgstr "Einige nützliche Tastenkürzel:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:160
 msgid ""
@@ -22258,6 +22345,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:162
 msgid "To center the view on the selected object, press the \"f\" key."
 msgstr ""
+"Zum Zentrieren der Ansicht auf das selektierte Objekt, die \"f\" Taste "
+"drücken."
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:165
 msgid "View menu"
@@ -22282,7 +22371,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:180
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:40
 msgid "Default environment"
-msgstr ""
+msgstr "Standard Umgebung"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:182
 msgid ""
@@ -22298,7 +22387,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:191
 msgid "Cameras"
-msgstr ""
+msgstr "Kameras"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:193
 msgid ""
@@ -22321,6 +22410,8 @@ msgid ""
 "When dealing with multiple cameras, the following rules are followed for "
 "each viewport:"
 msgstr ""
+"Wenn man mit mehreren Kameras umgeht, werden folgende Regeln für jede "
+"Ansicht angewendet:"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:211
 msgid ""
@@ -31639,13 +31730,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:19
 msgid "Adding grenades"
-msgstr ""
+msgstr "Hinzufügen von Granaten"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:21
 msgid ""
 "First, let's give the player some grenades to play with. Open up ``Grenade."
 "tscn``."
 msgstr ""
+"Zuerst geben wir dem Spieler ein paar Granaten zum Spielen. Öffnen Sie "
+"``Granate.tscn```."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:23
 msgid ""
@@ -31660,6 +31753,8 @@ msgid ""
 "The second thing to note is ``Blast_Area``. This is a :ref:`Area "
 "<class_Area>` node that will represent the blast radius of the grenade."
 msgstr ""
+"Das zweite, was zu beachten ist, ist ``Blast_Area``. Dies ist ein :ref:`Area "
+"<class_Area>` Knoten, der den Sprengradius der Granate repräsentiert."
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:28
 msgid ""
@@ -31685,7 +31780,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:90
 msgid "Let's go over what's happening, starting with the class variables:"
-msgstr ""
+msgstr "Gehen wir das Geschehene durch, beginnend mit den Klassenvariablen:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:92
 msgid ""
@@ -36601,7 +36696,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:387
 msgid "Calculating normals"
-msgstr ""
+msgstr "Normalen ermitteln"
 
 #: ../../docs/tutorials/math/vector_math.rst:389
 msgid ""
@@ -36610,10 +36705,16 @@ msgid ""
 "subtraction to find two edges ``AB`` and ``AC``. Using the cross product, "
 "``AB x AC`` produces a vector perpendicular to both: the surface normal."
 msgstr ""
+"Ein typischer Anwendungsfall des Kreuzproduktes ist es die "
+"Oberflächennormalen einer Ebenen (Plane) oder eine Oberfläche im 3D-Raum zu "
+"ermitteln. Ist das Dreieck ``ABC`` gegeben, können wir durch "
+"Vektorsubtraktion die zwei Kanten ``AB`` und ``AC`` bestimmen. Wenden wir "
+"darauf die Kreuzproduktoperation an ``AB x AC`` so ergibt sich der "
+"senkrechte Vektor zu beiden: die Oberflächennormale."
 
 #: ../../docs/tutorials/math/vector_math.rst:394
 msgid "Here is a function to calculate a triangle's normal:"
-msgstr ""
+msgstr "Hier ist eine Funktion zur Bestimmung der Dreiecksnormalen:"
 
 #: ../../docs/tutorials/math/vector_math.rst:418
 #, fuzzy
@@ -37268,19 +37369,24 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:395
 msgid "Orthonormal matrices"
-msgstr ""
+msgstr "Orthonormal Matrix"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:397
 msgid ""
 "However, if the matrix has been scaled (vectors are not unit length), or the "
 "basis vectors are not orthogonal (90°), the inverse transform will not work."
 msgstr ""
+"Falls die Matrix skaliert wurde (Vektoren haben nicht die Einheitslänge) "
+"oder die Basisvektoren sind nicht orthogonal zueinander (90°), so "
+"funktioniert die inverse Transformation nicht."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:401
 msgid ""
 "In other words, inverse transform is only valid in *orthonormal* matrices. "
 "For this, these cases an affine inverse must be computed."
 msgstr ""
+"Anders gesagt, die inverse Transformation gilt nur mit *orthonormalen* "
+"Matrizen. In diesem Fall muss eine Inverse affin ermittelt werden."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:404
 msgid ""
@@ -37290,7 +37396,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:419
 msgid "Affine inverse"
-msgstr ""
+msgstr "Affine Inverse"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:421
 msgid ""
@@ -37299,14 +37405,18 @@ msgid ""
 "orthogonal. The affine inverse is calculated with the affine_inverse() "
 "method:"
 msgstr ""
+"Eine inverse einer affinen Abbildung ist eine Matrix welche die inverse "
+"Operation einer gegebenen Matrix bestimmt, unabhängig davon ob die Matrix "
+"skaliert oder die Vektoren der Achsen orthogonal sind. Die affine Inverse "
+"wird bestimmt mit der affine_inverse() Methode:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid "If the matrix is orthonormal, then:"
-msgstr ""
+msgstr "Falls die Matrix orthonormal ist, dann:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid "Matrix multiplication"
-msgstr ""
+msgstr "Matrizenmultiplikation"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:461
 msgid ""
@@ -52361,6 +52471,10 @@ msgid ""
 "one on the list. If it is not showing, click on the **Update** button in the "
 "top-right corner."
 msgstr ""
+"Nun können wir das Resultat unserer Arbeit prüfen. Öffne die "
+"**Projekteinstellungen** und klicke auf den **Plugins** tab. Das Plugin "
+"sollte nun das einzige in der Liste sein. Falls es nicht angezeigt wird, "
+"klicke auf den **Update** Button in der oberen rechten Ecke."
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:234
 msgid ""
@@ -64437,25 +64551,31 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:4
 msgid "Channels"
-msgstr ""
+msgstr "Kanäle"
 
 #: ../../docs/community/channels.rst:6
 msgid ""
 "So, where is the Godot community and where can you ask questions and get "
 "help?"
 msgstr ""
+"Also, wo ist die Godot Gemeinschaft und wo kann man Fragen stellen und Hilfe "
+"finden?"
 
 #: ../../docs/community/channels.rst:8
 msgid ""
 "Note that some of these channels are run and moderated by members of the "
 "Godot community or third parties."
 msgstr ""
+"Einige der Kanäle werden betrieben und moderiert von Mitgliedern der Godot "
+"Gemeinschaft oder von Dritten"
 
 #: ../../docs/community/channels.rst:10
 msgid ""
 "A brief overview over these channels is also available on the `website "
 "<https://godotengine.org/community>`_."
 msgstr ""
+"Eine kurze Übersicht über diese Kanäle ist hier erhältlich `website <https://"
+"godotengine.org/community>`_."
 
 #: ../../docs/community/channels.rst:13
 msgid "Q & A"
@@ -64463,40 +64583,52 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:15
 msgid "`Official Godot Questions & Answers <https://godotengine.org/qa/>`_"
-msgstr ""
+msgstr "`Offizielle Godot Fragen & Antworten <https://godotengine.org/qa/>`_"
 
 #: ../../docs/community/channels.rst:18
 msgid "IRC on Freenode"
-msgstr ""
+msgstr "IRC auf Freenode"
 
 #: ../../docs/community/channels.rst:20
 msgid ""
 "`General: #godotengine <http://webchat.freenode.net/?channels=#godotengine>`_"
 msgstr ""
+"`Allgemein: #godotengine <http://webchat.freenode.net/?"
+"channels=#godotengine>`_"
 
 #: ../../docs/community/channels.rst:21
 msgid ""
 "`Engine development: #godotengine-devel <http://webchat.freenode.net/?"
 "channels=#godotengine-devel>`_"
 msgstr ""
+"`Engine Entwicklung: #godotengine-devel <http://webchat.freenode.net/?"
+"channels=#godotengine-devel>`_"
 
 #: ../../docs/community/channels.rst:22
 msgid ""
 "`Documentation: #godotengine-doc <http://webchat.freenode.net/?"
 "channels=#godotengine-doc>`_"
 msgstr ""
+"`Dokumentation: #godotengine-doc <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_"
 
 #: ../../docs/community/channels.rst:23
+#, fuzzy
 msgid ""
 "`GDNative: #godotengine-gdnative <http://webchat.freenode.net/?"
 "channels=#godotengine-gdnative>`_"
 msgstr ""
+"`GDNative: #godotengine-gdnative <http://webchat.freenode.net/?"
+"channels=#godotengine-gdnative>`_"
 
 #: ../../docs/community/channels.rst:24
+#, fuzzy
 msgid ""
 "`Webseite/PR: #godotengine-atelier <http://webchat.freenode.net/?"
 "channels=#godotengine-atelier>`_"
 msgstr ""
+"`Webseite/PR: #godotengine-atelier <http://webchat.freenode.net/?"
+"channels=#godotengine-atelier>`_"
 
 #: ../../docs/community/channels.rst:25
 msgid "`IRC logs <https://godot.eska.me/irc-logs/>`_"
@@ -64504,12 +64636,13 @@ msgstr ""
 
 #: ../../docs/community/channels.rst:28
 msgid "Other chats"
-msgstr ""
+msgstr "Andere Chats"
 
 #: ../../docs/community/channels.rst:30
 msgid ""
 "`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 msgstr ""
+"`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 
 #: ../../docs/community/channels.rst:31
 #, fuzzy
@@ -64518,7 +64651,7 @@ msgstr "`Discord <https://discordapp.com/invite/zH7NUgz>`_"
 
 #: ../../docs/community/channels.rst:34
 msgid "Social networks"
-msgstr ""
+msgstr "Soziale Netzwerke"
 
 #: ../../docs/community/channels.rst:36
 #, fuzzy
@@ -64630,6 +64763,8 @@ msgid ""
 "`Zeef Godot Engine: A curated directory of resources by Andre Schmitz "
 "<https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 msgstr ""
+"`Zeef Godot Engine: Ein von Andre Schmitz gepflegtes Verzeichnis von "
+"Resourcen <https://godot-engine.zeef.com/andre.antonio.schmitz>`_"
 
 #, fuzzy
 #~ msgid ""

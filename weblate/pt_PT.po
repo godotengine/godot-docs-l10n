@@ -6,6 +6,7 @@
 # BannerGames <davidandrade339@gmail.com>, 2018.
 # João <joao@nogordio.com>, 2018.
 # João Lopes <linux-man@hotmail.com>, 2018.
+# Miguel Mendes <miguelgamendes@gmail.com>, 2018.
 # Nuno Lopes <n.triguinho@gmail.com>, 2018.
 # ssantos <ssantos@web.de>, 2018.
 #
@@ -14,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-04 23:31+0100\n"
-"PO-Revision-Date: 2018-12-03 19:26+0000\n"
+"PO-Revision-Date: 2018-12-13 10:15+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_PT/>\n"
@@ -80,7 +81,6 @@ msgstr ""
 "procura na documentação, ajude-nos a melhorar, contactando-nos!"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -89,11 +89,11 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Envie seu problema ou \"pull request\" no `repositório GitHub <https://"
+"Envie o seu problema ou \"pull request\" para o `repositório GitHub <https://"
 "github.com/godotengine/godot-docs/issues>`_, ajude-nos a `traduzir a "
-"documentação <https://hosted.weblate.org/engage/godot-engine/>`_ para seu "
-"idioma, ou discuta conosco tanto no canal ``#documentation`` do `Discord "
-"<https://discord.gg/zH7NUgz>`_, quanto no canal ``#godotengine-doc`` no `irc."
+"documentação <https://hosted.weblate.org/engage/godot-engine/>`_ para o seu "
+"idioma, ou discuta connosco tanto no canal ``#documentation`` do `Discord "
+"<https://discord.gg/zH7NUgz>`_, como no canal ``#godotengine-doc`` em `irc."
 "freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
@@ -383,7 +383,6 @@ msgstr ""
 "desenvolvimento de módulos em C++, ou plugins para o editor."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -391,11 +390,11 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-"A :ref:`sec-community` fornece informações relacionadas à contribuição do "
-"motor de desenvolvimento e à vida da comunidade, por exemplo, como reportar "
-"bugs, ajudar com a documentação, etc. Ela também mostra vários canais da "
-"comunidade, como IRC e Discord, e contém uma lista de recomendações de "
-"tutoriais feitas por terceiros, fora desta documentação."
+"A secção :ref:`sec-community` fornece informações relacionadas à "
+"contribuição do desenvolvimento do motor de jogo e à vida da sua comunidade, "
+"por exemplo, como reportar bugs, ajudar com a documentação, etc. Também "
+"mostra vários canais da comunidade, como IRC e Discord, e contém uma lista "
+"de recomendações de tutoriais feitas por terceiros, fora desta documentação."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -1638,9 +1637,8 @@ msgid "It can be extended (to have more functions)."
 msgstr "Pode ser estendido (ter mais funções)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-#, fuzzy
 msgid "It can be added to another node as a child."
-msgstr "Pode ser adicionado a outros nós como filho."
+msgstr "Pode ser adicionado a outro nó como filho."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
@@ -2259,7 +2257,6 @@ msgstr ""
 "(seja por código ou diretamente pelo editor) para as relações de posse."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
-#, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -2269,14 +2266,14 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
-"Muito do tempo gasto em programação de jogos (ou de softwares em geral) é "
-"projetando uma arquitetura e fazendo os componentes do jogo se encaixar "
-"nela. Projeto baseado em cenas substitui essa abordagem e torna o "
-"desenvolvimento muito mais rápido e mais direto, lhe permitindo se "
-"concentrar na lógica do jogo em si. Pelo fato de a maioria dos componentes "
-"do jogo serem mapeados diretamente a uma cena, usar projeto baseado em "
-"instâncias de cena significa que se faz necessário pouco código extra para "
-"arquitetura."
+"Muito do tempo gasto em programação de jogos (ou de software em geral) é a "
+"projectar uma arquitectura e fazendo com que os componentes do jogo se "
+"encaixem nela. Projectos baseados em cenas substituem essa abordagem e "
+"tornam o desenvolvimento muito mais rápido e mais directo, permitindo que se "
+"concentre na lógica do jogo em si. Pelo facto de que a maioria dos "
+"componentes do jogo são mapeados directamente para uma cena, projectar com "
+"base em instanciação de cenas significa que é necessário pouco código extra "
+"para arquitectura."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
@@ -2376,13 +2373,12 @@ msgstr ""
 "a habilidade de adicionar linguagens de roteirização extras dinamicamente!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
-"Isso é ótimo, principalmente por causa da enorme flexibilidade oferecida, "
-"mas também dificulta nosso trabalho de dar suporte a linguagens."
+"Isto é óptimo, principalmente por causa da enorme flexibilidade oferecida, "
+"mas também torna o suporte a linguagens mais difícil."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
 #, fuzzy
@@ -3666,6 +3662,9 @@ msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"Na próxima seção, :ref:`doc_your_first_game`, você construirá um jogo "
+"completo incluindo vários usos de sinais para conectar diferentes "
+"componentes do jogo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
@@ -3719,7 +3718,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:28
 #: ../../docs/getting_started/workflow/project_setup/index.rst:2
 msgid "Project setup"
-msgstr ""
+msgstr "Configuração do projeto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:30
 msgid ""
@@ -7618,6 +7617,7 @@ msgstr ""
 "toda a GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
+#, fuzzy
 msgid ""
 "We want our interface to anchor to the top of the screen. Select the ``GUI`` "
 "node and click the Layout button at the top of the viewport. Select the "
@@ -7625,10 +7625,15 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"Queremos que a nossa interface ancore ao topo do ecrã. Selecione o nó "
+"``GUI`` e clique no botão Layout no topo da janela de visualização. "
+"Selecione a opção ``Top Wide``. O nó ``GUI``` irá ancorar na borda superior "
+"de seu pai, a viewport por padrão. Ele irá redimensionar automaticamente no "
+"eixo vertical para criar espaço para seus componentes UI criança."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
-msgstr ""
+msgstr "Gravar a cena como ``GUI.tscn``. Vamos por toda a GUI nela."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:82
 msgid ""
@@ -10014,6 +10019,10 @@ msgid ""
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
+"Os *nós* dão-lhe funcionalidade: desenham sprites, modelos 3D, simulam "
+"física, organizam interfaces de utilizador, etc. Os **recursos** são "
+"**contentores de dados**. Eles não fazem nada por conta própria: em vez "
+"disso, os nós usam os dados contidos nos recursos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 #, fuzzy
@@ -10071,13 +10080,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr ""
+msgstr "**Externa*** a uma cena, grava no disco como ficheiros individuais."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
 msgstr ""
+"**Integrados**, gravados dentro do ficheiro \\*.tscn ou do ficheiro \\*.scn "
+"a que estão ligados."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
@@ -10103,6 +10114,10 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
+"A propriedade path diz-nos de onde o recurso vem. Neste caso, ele vem de uma "
+"imagem PNG chamada ``robi.png``. Quando o recurso vem de um ficheiro como "
+"este, é um recurso externo. Se você apagar o caminho ou este caminho estiver "
+"vazio, ele se tornará um recurso integrado."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -10110,12 +10125,17 @@ msgid ""
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"A alternância entre recursos internos e externos acontece quando você salva "
+"a cena. No exemplo acima, se você apagar o caminho \\`\"res://robi.png\"\\` "
+"e gravar, Godot gravará a imagem dentro do ficheiro de cena .tscn."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"Mesmo que você grave um recurso embutido, quando você faz uma cena várias "
+"vezes, o mecanismo irá carregar apenas uma cópia dele."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
@@ -10126,6 +10146,8 @@ msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"Há duas maneiras de carregar recursos do código. Primeiro você pode usar a "
+"função ``load()`` a qualquer momento:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""

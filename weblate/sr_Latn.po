@@ -5,14 +5,15 @@
 # BLu <blmasfon@gmail.com>, 2018.
 # Milos Ponjavusic <brane@branegames.com>, 2018.
 # Petar Ples <against.time.petar@gmail.com>, 2018.
+# Vojislav Bajakic <ch3d4.ns@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-04 23:31+0100\n"
-"PO-Revision-Date: 2018-09-21 20:35+0000\n"
-"Last-Translator: BLu <blmasfon@gmail.com>\n"
+"PO-Revision-Date: 2018-12-13 10:15+0000\n"
+"Last-Translator: Vojislav Bajakic <ch3d4.ns@gmail.com>\n"
 "Language-Team: Serbian (latin) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/sr_Latn/>\n"
 "Language: sr_Latn\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.2-dev\n"
+"X-Generator: Weblate 3.4-dev\n"
 
 #: ../../docs/index.rst:7
 msgid "Godot Docs – *master* branch"
@@ -45,6 +46,11 @@ msgid ""
 "<doc_about_intro>` to get an overview of what this documentation has to "
 "offer."
 msgstr ""
+"Dobrodošli na oficijalnu dokumentaciju Godo Endžina, endžina za izradu "
+"igara, koji je besplatan otvorenog koda i vođen od stane zajednice. Ako prvi "
+"put pristupate dokumentaciji, preporucujemo vam da procitate više o tome na :"
+"ref:`introduction page <doc_about_intro>`, kako bi ste imali uvid u to šta "
+"vam ova dokumentacija pruža."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -52,6 +58,9 @@ msgid ""
 "the documentation for your topic of interest. You can also use the search "
 "function in the top left corner."
 msgstr ""
+"Index ili tabelu sadržaja, koju možete pogledati ispod ili u sajdbaru, vam "
+"omogućava da lako pretražite dokumentaciju po temama koje vas interesuju. "
+"Takođe možete koristiti funkciju pretraži u gornjem levom ćošku."
 
 #: ../../docs/index.rst:22
 msgid ""
@@ -61,6 +70,11 @@ msgid ""
 "something, or cannot find what you are looking for in the docs, help us make "
 "the documentation better by letting us know!"
 msgstr ""
+"Godo Endžin je projekat otvorenog koda razvijen od strane zajednice "
+"volontera. Timu koji se bavi dokumentacijom su uvek dobrodošli vaši "
+"komentari i pomoć da se unaprede tutorijali i reference klasa. Ako nešto ne "
+"razumete ili ne možete pronaći u dokumentaciji, pomozite nam da učinimo "
+"dokumentaciju boljom, tako što ćete nas kontaktirati!"
 
 #: ../../docs/index.rst:29
 msgid ""
@@ -75,38 +89,38 @@ msgstr ""
 #: ../../docs/index.rst:43
 msgid ""
 "The main documentation for the site is organized into the following sections:"
-msgstr ""
+msgstr "Glavna dokumentacija za sajt je podeljena na sledeća poglavlja:"
 
 #: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
 msgid "General"
-msgstr ""
+msgstr "Opšti deo"
 
 #: ../../docs/index.rst:53
 msgid "Getting started"
-msgstr ""
+msgstr "Uvod / Početak"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr ""
+msgstr "Tutorijali"
 
 #: ../../docs/index.rst:90
 msgid "Development"
-msgstr ""
+msgstr "Razvoj"
 
 #: ../../docs/index.rst:99
 msgid "Creating Content"
-msgstr ""
+msgstr "Kreiranje Sadržaja"
 
 #: ../../docs/index.rst:107 ../../docs/community/index.rst:2
 msgid "Community"
-msgstr ""
+msgstr "Zajednica"
 
 #: ../../docs/about/index.rst:2
 #: ../../docs/getting_started/scripting/gdscript/gdscript_advanced.rst:7
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
 #: ../../docs/development/cpp/variant_class.rst:7
 msgid "About"
-msgstr ""
+msgstr "O nama / O Godou"
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:7
@@ -223,7 +237,6 @@ msgstr ""
 "(Android, iOS) te platforme bazirane na web-u (HTML5)."
 
 #: ../../docs/about/introduction.rst:34
-#, fuzzy
 msgid ""
 "Godot is completely free and open source under the permissive MIT license. "
 "No strings attached, no royalties, nothing. Users' games are theirs, down to "
@@ -232,13 +245,13 @@ msgid ""
 "expectations. It is supported by the `Software Freedom Conservancy <https://"
 "sfconservancy.org>`_ not-for-profit."
 msgstr ""
-"Godot je otvorenog koda i u potpunosti besplatan, pod veoma popustljivom MIT "
-"licencom. Bez ikakvih obaveza, dodatnih plaćanja, bilo čega. Igre koje "
-"korisnici naprave su njihove, sve do posljednje linije koda. Godot-ov razvoj "
-"je u potpunosti nezavisan i nošen zajednicom, dajući moć korisnicima da "
-"pomognu razvoj pokretača igre kako bi on ispunio njihova očekivanja. Podržan "
-"je od strane 'Software Freedom Conservancy' <https://sfconservancy.org> i "
-"neprofitan."
+"Godo je otvorenog koda i u potpunosti besplatan, objavljen pod veoma "
+"popustljivom MIT licencom. Bez ikakvih obaveza, dodatnih plaćanja, bilo "
+"čega. Igre koje korisnici naprave su njihove, sve do posljednje linije koda. "
+"Godoov razvoj je u potpunosti nezavisan i nošen zajednicom, dajući moć "
+"korisnicima da pomognu razvoj pokretača igre kako bi on ispunio njihova "
+"očekivanja. Podržan je od strane 'Software Freedom Conservancy' <https://"
+"sfconservancy.org> i neprofitan."
 
 #: ../../docs/about/introduction.rst:41
 msgid ""
@@ -255,7 +268,6 @@ msgid "About the documentation"
 msgstr "O dokumentaciji"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -265,7 +277,7 @@ msgid ""
 "readthedocs.org/>`_ tools."
 msgstr ""
 "Dokumentacija je neprekidno pisana, ispravljana, dorađivana i unapređivana "
-"od strane članova Godot Engine zajednice. Mjenjana je pomoću text fajlova u "
+"od strane članova Godo Endžin zajednice. Menjana je pomoću text fajlova u "
 "`reStructuredText <http://www.sphinx-doc.org/en/stable/rest.html>`_ markup "
 "jeziku i onda kompajlirana u statički web dokument koristeći alat otvorenog "
 "koda `Sphinx <http://www.sphinx-doc.org>`_ i `ReadTheDocs <https://"
@@ -296,7 +308,6 @@ msgstr ""
 "\"Juan Linietsky, Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/about/introduction.rst:66
-#, fuzzy
 msgid "Organization of the documentation"
 msgstr "Organizacija dokumentacije"
 
@@ -341,18 +352,16 @@ msgstr ""
 "pojedinačne funkcije."
 
 #: ../../docs/about/introduction.rst:82
-#, fuzzy
 msgid ""
 "The :ref:`sec-devel` section is intended for advanced users and contributors "
 "to the engine development, with information on compiling the engine, "
 "developing C++ modules or editor plugins."
 msgstr ""
-":ref:`sec-devel` sekcija je osmišljena za napredne korisnike i one koje "
-"doprinose razvoju pokretača igre, sa informacijama o kompajliranju pokretača "
-"igre, razvijanju C++ modula i dodataka za pregledač."
+":ref:`sec-devel` poglavlje je namenjeno za napredne korisnike i one koje "
+"doprinose razvoju endžina za igre, sa informacijama o kompajliranju samog "
+"endžina, razvoju C++ modula i/ili dodataka editor."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -360,11 +369,11 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-":ref:`sec-community` sadrži informacije vezane za doprinos razvoju pokretača "
-"igre i života zajednice, tj. kako prijaviti greške, pomoći sa dokumentacijom "
-"itd. Takođe daje smjernice za razne kanale zajednice kao što su IRC i "
-"Discord i sadrži listu preporučenih uputstava napravljenih od strane "
-"vanjskih saradnika izvan ove dokumentacije."
+":ref:`sec-community` poglavlje sadrži informacije vezane za doprinos razvoja "
+"endžina za igre i života zajednice, tj. kako prijaviti greške, pomoći sa "
+"dokumentacijom itd. Takođe daje uputstva za razne kanale  koje zajednica "
+"koristi, IRC i Discord,te sadrži listu preporučenih tutorijala napravljenih "
+"od strane spoljnih saradnika."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -381,14 +390,13 @@ msgstr ""
 "`doc_updating_the_class_reference` za detalje."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "In addition to this documentation you may also want to take a look at the "
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
-"Uz ovu dokumentaciju takođe možete pogledati raznorazne `Godot demo projects "
-"<https://github.com/godotengine/godot-demo-projects>`_."
+"Uz ovu dokumentaciju takođe možete pogledati različite Godo demo projekte "
+"`Godot demo projects <https://github.com/godotengine/godot-demo-projects>`_."
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
@@ -405,15 +413,17 @@ msgid ""
 msgstr "Šta mogu raditi sa Godot-om? Koliko košta? Koji su uslovi licence?"
 
 #: ../../docs/about/faq.rst:9
-#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot je besplatan/Libre softver otvorenog koda dostupan pod `OSI-approved "
-"<https://opensource.org/licenses/MIT>`_ MIT licencom."
+"Godot je besplatan/Libre softver otvorenog koda `Free and Open-Source "
+"Software <https://en.wikipedia.org/wiki/Free_and_open-source_software>`_ "
+"dostupan pod `OSI-approved <https://opensource.org/licenses/MIT>`_ MIT "
+"licencom.\n"
+"To znači da je istovremeno i besplatan i otvorenog koda."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -424,6 +434,8 @@ msgid ""
 "You are free to download and use Godot for any purpose, personal, non-"
 "profit, commercial, or otherwise;"
 msgstr ""
+"Dozvoljeno je da preuzmete i koristite Godo slobodno i za bilo koju svrhu, "
+"bilo to za privatnu upotrebu, neprofitnu ili komercijalnu;"
 
 #: ../../docs/about/faq.rst:14
 #, fuzzy
