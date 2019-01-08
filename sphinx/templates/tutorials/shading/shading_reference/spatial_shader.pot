@@ -1,0 +1,845 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:4
+msgid "Spatial shaders"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:6
+msgid "Spatial shaders are used for shading 3D objects. They are the most complex type of shader Godot offers. Spatial shaders are highly configurable with different render modes and different rendering options (e.g. Subsurface Scattering, Transmission, Ambient Occlusion, Rim lighting etc). Users can optionally write vertex, fragment, and light processor functions to affect how objects are drawn."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:12
+msgid "Render modes"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:15
+msgid "Render mode"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:15
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:112
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
+msgid "Description"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:17
+msgid "**blend_mix**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:17
+msgid "Mix blend mode (alpha is transparency), default."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:19
+msgid "**blend_add**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:19
+msgid "Additive blend mode."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:21
+msgid "**blend_sub**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:21
+msgid "Subtractive blend mode."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:23
+msgid "**blend_mul**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:23
+msgid "Multiplicative blend mode."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:25
+msgid "**depth_draw_opaque**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:25
+msgid "Only draw depth for opaque geometry (not transparent)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:27
+msgid "**depth_draw_always**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:27
+msgid "Always draw depth (opaque and transparent)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:29
+msgid "**depth_draw_never**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:29
+msgid "Never draw depth."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:31
+msgid "**depth_draw_alpha_prepass**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:31
+msgid "Do opaque depth pre-pass for transparent geometry."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:33
+msgid "**depth_test_disable**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:33
+msgid "Disable depth testing."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:35
+msgid "**cull_front**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:35
+msgid "Cull front-faces."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:37
+msgid "**cull_back**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:37
+msgid "Cull back-faces (default)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:39
+msgid "**cull_disabled**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:39
+msgid "Culling disabled (double sided)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
+msgid "**unshaded**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:41
+msgid "Result is just albedo. No lighting/shading happens in material."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:43
+msgid "**diffuse_lambert**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:43
+msgid "Lambert shading for diffuse (default)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:45
+msgid "**diffuse_lambert_wrap**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:45
+msgid "Lambert wrapping (roughness dependent) for diffuse."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:47
+msgid "**diffuse_oren_nayar**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:47
+msgid "Oren Nayar for diffuse."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:49
+msgid "**diffuse_burley**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:49
+msgid "Burley (Disney PBS) for diffuse."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:51
+msgid "**diffuse_toon**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:51
+msgid "Toon shading for diffuse."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:53
+msgid "**specular_schlick_ggx**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:53
+msgid "Schlick-GGX for specular (default)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:55
+msgid "**specular_blinn**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:55
+msgid "Blinn for specular (compatibility)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:57
+msgid "**specular_phong**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:57
+msgid "Phong for specular (compatibility)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:59
+msgid "**specular_toon**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:59
+msgid "Toon for specular."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:61
+msgid "**specular_disabled**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:61
+msgid "Disable specular."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
+msgid "**skip_vertex_transform**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:63
+msgid "VERTEX/NORMAL/etc. need to be transformed manually in vertex function."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:65
+msgid "**world_vertex_coords**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:65
+msgid "VERTEX/NORMAL/etc. are modified in world coordinates instead of local."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
+msgid "**vertex_lighting**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:67
+msgid "Use vertex-based lighting."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:71
+msgid "Vertex built-ins"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:73
+msgid "Values marked as \"in\" are read-only. Values marked as \"out\" are for optional writing and will not necessarily contain sensible values. Values marked as \"inout\" provide a sensible default value, and can optionally be written to. Samplers are not subjects of writing and they are not marked."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:78
+msgid "Vertex data (``VERTEX``, ``NORMAL``, ``TANGENT``, ``BITANGENT``) are presented in local model space. If not written to, these values will not be modified and be passed through as they came."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:82
+msgid "They can optionally be presented in world space by using the *world_vertex_coords* render mode."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:84
+msgid "User can disable the built-in modelview transform (projection will still happen later) and do it manually with the following code:"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:99
+msgid "Other built-ins such as UV, UV2 and COLOR are also passed through to the fragment function if not modified."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:101
+msgid "For instancing, the INSTANCE_CUSTOM variable contains the instance custom data. When using particles, this information is usually:"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:104
+msgid "**x**: Rotation angle in radians."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:105
+msgid "**y**: Phase during lifetime (0 to 1)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:106
+msgid "**z**: Animation frame."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:108
+msgid "This allows you to easily adjust the shader to a particle system using default particles material. When writing a custom particles shader, this value can be used as desired."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:112
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
+msgid "Built-in"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:114
+msgid "out mat4 **WORLD_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:114
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:165
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:261
+msgid "Model space to world space transform."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:116
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:167
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:263
+msgid "in mat4 **INV_CAMERA_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:116
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:167
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:263
+msgid "World space to view space transform."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:118
+msgid "out mat4 **PROJECTION_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:118
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:169
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:265
+msgid "View space to clip space transform."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:120
+msgid "in mat4 **CAMERA_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:120
+msgid "View space to world space transform."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:122
+msgid "out mat4 **MODELVIEW_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:122
+msgid "Model space to view space transform (use if possible)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:124
+msgid "out mat4 **INV_PROJECTION_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:124
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:171
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:267
+msgid "Clip space to view space transform."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:126
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:173
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:269
+msgid "in float **TIME**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:126
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:173
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:269
+msgid "Elapsed total time in seconds."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:271
+msgid "in vec2 **VIEWPORT_SIZE**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:128
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:271
+msgid "Size of viewport (in pixels)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:130
+msgid "out vec3 **VERTEX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:130
+msgid "Vertex in local coordinates."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:132
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
+msgid "out vec3 **NORMAL**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:132
+msgid "Normal in local coordinates."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:134
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
+msgid "out vec3 **TANGENT**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:134
+msgid "Tangent in local coordinates."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:136
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
+msgid "out vec3 **BINORMAL**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:136
+msgid "Binormal in local coordinates."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:138
+msgid "out vec2 **UV**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:138
+msgid "UV main channel."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:140
+msgid "out vec2 **UV2**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:140
+msgid "UV secondary channel."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:142
+msgid "out vec4 **COLOR**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:142
+msgid "Color from vertices."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:144
+msgid "out float **POINT_SIZE**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:144
+msgid "Point size for point rendering."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:146
+msgid "in int **INSTANCE_ID**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:146
+msgid "Instance ID for instancing."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:148
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:148
+msgid "Instance custom data (for particles, mostly)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:150
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
+msgid "out float **ROUGHNESS**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:150
+msgid "Roughness for vertex lighting."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:154
+msgid "Fragment built-ins"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:156
+msgid "The default use of a Godot fragment processor function is to set up the material properties of your object and to let the built-in renderer handle the final shading. However, you are not required to use all these properties, and if you don't write to them, Godot will optimize away the corresponding functionality."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
+msgid "in vec4 **FRAGCOORD**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
+msgid "Fragment coordinate, pixel adjusted. In screen space."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:165
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:261
+msgid "in mat4 **WORLD_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:169
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:265
+msgid "in mat4 **PROJECTION_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:171
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:267
+msgid "in mat4 **INV_PROJECTION_MATRIX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
+msgid "in vec3 **VERTEX**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
+msgid "Vertex that comes from vertex function (default, in view space)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
+msgid "in bool **FRONT_FACING**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
+msgid "True if current face is front face."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
+msgid "Normal that comes from vertex function (default, in view space)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
+msgid "Tangent that comes from vertex function."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
+msgid "Binormal that comes from vertex function."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
+msgid "out vec3 **NORMALMAP**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
+msgid "Set normal here if reading normal from a texture instead of NORMAL."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
+msgid "out float **NORMALMAP_DEPTH**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
+msgid "Depth from variable above. Defaults to 1.0."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
+msgid "in vec2 **UV**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
+msgid "UV that comes from vertex function."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
+msgid "in vec2 **UV2**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
+msgid "UV2 that comes from vertex function."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+msgid "in vec4 **COLOR**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+msgid "COLOR that comes from vertex function."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
+msgid "out vec3 **ALBEDO**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
+msgid "Albedo (default white)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
+msgid "out float **ALPHA**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
+msgid "Alpha (0..1), if written to the material will go to transparent pipeline."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
+msgid "out float **METALLIC**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
+msgid "Metallic (0..1)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
+msgid "out float **SPECULAR**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
+msgid "Specular. Defaults to 0.5, best to not modify unless you want to change IOR."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
+msgid "Roughness (0..1)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
+msgid "out float **RIM**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
+msgid "Rim (0..1). If used, Godot calculates rim lighting."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
+msgid "out float **RIM_TINT**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
+msgid "Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim lighting."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
+msgid "out float **CLEARCOAT**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
+msgid "Small added specular blob. If used, Godot calculates Clearcoat."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
+msgid "out float **CLEARCOAT_GLOSS**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
+msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
+msgid "out float **ANISOTROPY**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
+msgid "For distorting the specular blob according to tangent space."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
+msgid "out vec2 **ANISOTROPY_FLOW**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
+msgid "Distortion direction, use with flowmaps."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
+msgid "out float **SSS_STRENGTH**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
+msgid "Strength of Subsurface Scattering. If used, Subsurface Scattering will be applied to object."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
+msgid "out vec3 **TRANSMISSION**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
+msgid "Transmission mask (default 0,0,0). Allows light to pass through object. Only applied if used."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
+msgid "out float **AO**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
+msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
+msgid "out float **AO_LIGHT_AFFECT**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
+msgid "How much AO affects lights (0..1. default 0)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
+msgid "out vec3 **EMISSION**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
+msgid "Emission color (can go over 1,1,1 for HDR)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
+msgid "sampler2D **SCREEN_TEXTURE**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
+msgid "Built-in Texture for reading from the screen. Mipmaps contain increasingly blurred copies."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
+msgid "sampler2D **DEPTH_TEXTURE**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
+msgid "Built-in Texture for reading depth from the screen. Must convert to linear using INV_PROJECTION."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
+msgid "out float **DEPTH**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
+msgid "Custom depth value (0..1)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
+msgid "in vec2 **SCREEN_UV**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
+msgid "Screen UV coordinate for current pixel."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
+msgid "in vec2 **POINT_COORD**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
+msgid "Point Coordinate for drawing points with POINT_SIZE."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
+msgid "out float **ALPHA_SCISSOR**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
+msgid "If written to, values below a certain amount of alpha are discarded."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
+msgid "Light built-ins"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
+msgid "Writing light processor functions is completely optional. You can skip the light function by setting render_mode to ``unshaded``. If no light function is written, Godot will use the material properties written to in the fragment function to calculate the lighting for you (subject to the render_mode)."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
+msgid "To write a light function, assign something to DIFFUSE_LIGHT or SPECULAR_LIGHT. Assigning nothing means no light is processed."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:253
+msgid "The light function is called for every light in every pixel. It is called within a loop for each light type."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
+msgid "Fragment coordinate, pixel adjusted."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:273
+msgid "in vec3 **NORMAL**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:273
+msgid "Normal vector, in view space."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:275
+msgid "in vec3 **VIEW**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:275
+msgid "View vector, in view space."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:277
+msgid "in vec3 **LIGHT**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:277
+msgid "Light Vector, in view space."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:279
+msgid "in vec3 **LIGHT_COLOR**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:279
+msgid "Color of light multiplied by energy."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:281
+msgid "in vec3 **ATTENUATION**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:281
+msgid "Attenuation based on distance or shadow."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:283
+msgid "in vec3 **ALBEDO**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:283
+msgid "Base albedo."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:285
+msgid "in vec3 **TRANSMISSION**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:285
+msgid "Transmission mask."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:287
+msgid "in float **ROUGHNESS**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:287
+msgid "Roughness."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:289
+msgid "out vec3 **DIFFUSE_LIGHT**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:289
+msgid "Diffuse light result."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:291
+msgid "out vec3 **SPECULAR_LIGHT**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:291
+msgid "Specular light result."
+msgstr ""
+

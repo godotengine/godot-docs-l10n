@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,11 +65,11 @@ msgid "Vector operations"
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:60
-msgid "You can use either method (x and y coordinates or angle and magnitude) to refer to a vector, but for convenience programmers typically use the coordinate notation. For example, in Godot the origin is the top-left corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to the right and 300 pixels down, use the following code:"
+msgid "You can use either method (x and y coordinates or angle and magnitude) to refer to a vector, but for convenience, programmers typically use the coordinate notation. For example, in Godot, the origin is the top-left corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to the right and 300 pixels down, use the following code:"
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:76
-msgid "Godot supports both :ref:`Vector2 <class_Vector2>` and :ref:`Vector3 <class_Vector3>` for 2D and 3D usage respectively. The same mathematical rules discussed in this article apply for both types."
+msgid "Godot supports both :ref:`Vector2 <class_Vector2>` and :ref:`Vector3 <class_Vector3>` for 2D and 3D usage, respectively. The same mathematical rules discussed in this article apply to both types."
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:80
@@ -241,7 +241,7 @@ msgid "Cross product"
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:341
-msgid "Like the dot product, the **cross product** is an operation on two vectors. However, the result of the cross product is a vector with a direction that is perpendicular to both. Its magnitude depends on their relative angle. If two vectors are parallel, the result of their cross product will be null vector."
+msgid "Like the dot product, the **cross product** is an operation on two vectors. However, the result of the cross product is a vector with a direction that is perpendicular to both. Its magnitude depends on their relative angle. If two vectors are parallel, the result of their cross product will be a null vector."
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:346
@@ -277,7 +277,7 @@ msgid "Pointing to a target"
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:420
-msgid "In the dot product section above, we saw how it could be used to find the angle between two vectors. However, in 3D this is not enough information. We also need to know what axis to rotate around. We can find that by calculating the cross product of the current facing direction and the target direction. The resulting perpendicular vector is the axis of rotation."
+msgid "In the dot product section above, we saw how it could be used to find the angle between two vectors. However, in 3D, this is not enough information. We also need to know what axis to rotate around. We can find that by calculating the cross product of the current facing direction and the target direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:428

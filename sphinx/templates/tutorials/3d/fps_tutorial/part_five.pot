@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgid "Part 5"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:7
-msgid "Part Overview"
+msgid "Part overview"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:9
-msgid "In this part we're going to add grenades to the player, give the player the ability to grab and throw objects, and add turrets!"
+msgid "In this part, we're going to add grenades to the player, give the player the ability to grab and throw objects, and add turrets!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:13
@@ -41,11 +41,11 @@ msgid "Adding grenades"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:21
-msgid "First, let's give the player some grenades to play with. Open up ``Grenade.tscn``."
+msgid "Firstly, let's give the player some grenades to play with. Open up ``Grenade.tscn``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:23
-msgid "There's a few things to note here, the first and foremost being that the grenades are going to use :ref:`RigidBody <class_RigidBody>` nodes. We're going to use :ref:`RigidBody <class_RigidBody>` nodes for our grenades so they bounce around the world in a (somewhat) realistic manner."
+msgid "There are a few things to note here, the first and foremost being that the grenades are going to use :ref:`RigidBody <class_RigidBody>` nodes. We're going to use :ref:`RigidBody <class_RigidBody>` nodes for our grenades so they bounce around the world in a (somewhat) realistic manner."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:26
@@ -53,7 +53,7 @@ msgid "The second thing to note is ``Blast_Area``. This is an :ref:`Area <class_
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:28
-msgid "Finally, the last thing to note is ``Explosion``. This is the :ref:`Particles <class_Particles>` node that will emit an explosion effect when the grenade explodes. One thing to note here is that we have ``One shot`` enabled. This is so we emit all of the particles at once. The particles are also emitted using world coordinates instead of local coordinates, so we have ``Local Coords`` unchecked as well."
+msgid "Finally, the last thing to note is ``Explosion``. This is the :ref:`Particles <class_Particles>` node that will emit an explosion effect when the grenade explodes. One thing to note here is that we have ``One shot`` enabled. This is so we emit all the particles at once. The particles are also emitted using world coordinates instead of local coordinates, so we have ``Local Coords`` unchecked as well."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:32
@@ -101,7 +101,7 @@ msgid "``blast_area``: The blast :ref:`Area <class_Area>` used to damage things 
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:100
-msgid "``explosion_particles``: The :ref:`Particles <class_Particles>` that play when the grenade explodes."
+msgid "``explosion_particles``: The :ref:`Particles <class_Particles>` that come out when the grenade explodes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:102
@@ -113,7 +113,7 @@ msgid "Now let's turn our attention to ``_ready``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:110
-msgid "First we get all of the nodes we'll need and assign them to the proper class variables."
+msgid "First we get all the nodes we'll need and assign them to the proper class variables."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:112
@@ -125,7 +125,7 @@ msgid "The reason we need to get the blast :ref:`Area <class_Area>` is so we can
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:118
-msgid "After we get all of the nodes and assign them to their class variables, we then make sure the explosion particles are not emitting, and that they are set to emit in one shot. This is to be extra sure the particles will behave the way we expect them to."
+msgid "After we get all the nodes and assign them to their class variables, we then make sure the explosion particles are not emitting, and that they are set to emit in one shot. This is to be extra sure the particles will behave the way we expect them to."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:123
@@ -133,7 +133,7 @@ msgid "Now let's look at ``_process``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:125
-msgid "First we check to see if the ``grenade_timer`` is less than ``GRENADE_TIMER``. If it is, we add ``delta`` and return. This is so the grenade has to wait ``GRENADE_TIME`` seconds, before exploding, allowing the :ref:`RigidBody <class_RigidBody>` to move around."
+msgid "Firstly, we check to see if the ``grenade_timer`` is less than ``GRENADE_TIME``. If it is, we add ``delta`` and return. This is so the grenade has to wait ``GRENADE_TIME`` seconds before exploding, allowing the :ref:`RigidBody <class_RigidBody>` to move around."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:128
@@ -149,15 +149,15 @@ msgid "We then set the :ref:`RigidBody <class_RigidBody>`'s mode to ``MODE_STATI
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:137
-msgid "Then we get all of the bodies in ``blast_area``, check to see if they have the ``bullet_hit`` method/function, and if they do we call it and pass in ``GRENADE_DAMAGE`` and the transform from the body looking at the grenade. This makes it where the bodies exploded by the grenade will explode outwards from the grenade's position."
+msgid "Then we get all the bodies in ``blast_area``, check to see if they have the ``bullet_hit`` method/function, and if they do, we call it and pass in ``GRENADE_DAMAGE`` and the transform from the body looking at the grenade. This makes it where the bodies exploded by the grenade will explode outwards from the grenade's position."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:140
-msgid "We then check to see if ``explosion_wait_timer`` is less than ``EXPLOSION_WAIT_TIME``. If it is, we add ``delta`` to ``explosion_wait_time``."
+msgid "We then check to see if ``explosion_wait_timer`` is less than ``EXPLOSION_WAIT_TIME``. If it is, we add ``delta`` to ``explosion_wait_timer``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:142
-msgid "Next we check to see if ``explosion_wait_timer`` is more than or equal to ``EXPLOSION_WAIT_TIME``. Because we added ``delta``, this will only be called once. If ``explosion_wait_timer`` is more or equal to ``EXPLOSION_WAIT_TIME``, the grenade has waited long enough to let the :ref:`Particles <class_Particles>` play and we can free/destroy the grenade as we no longer need it."
+msgid "Next, we check to see if ``explosion_wait_timer`` is greater than or equal to ``EXPLOSION_WAIT_TIME``. Because we added ``delta``, this will only be called once. If ``explosion_wait_timer`` is greater or equal to ``EXPLOSION_WAIT_TIME``, the grenade has waited long enough to let the :ref:`Particles <class_Particles>` play and we can free/destroy the grenade, as we no longer need it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:148
@@ -177,7 +177,7 @@ msgid "The code above is almost identical to the code for ``Grenade.gd``, so let
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:246
-msgid "First, we have a few more class variables:"
+msgid "Firstly, we have a few more class variables:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:248
@@ -185,7 +185,7 @@ msgid "``attached``: A variable for tracking whether or not the sticky grenade h
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:249
-msgid "``attach_point``: A variable to hold a :ref:`Spatial <class_Spatial>` that will be at the position the sticky grenade collided at."
+msgid "``attach_point``: A variable to hold a :ref:`Spatial <class_Spatial>` that will be at the position where the sticky grenade collided."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:250
@@ -193,7 +193,7 @@ msgid "``player_body``: The player's :ref:`KinematicBody <class_KinematicBody>`.
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:252
-msgid "These additions are so the sticky grenade can stick to any :ref:`PhysicsBody <class_PhysicsBody>` it happens to hit. We also now need the player's :ref:`KinematicBody <class_KinematicBody>` so the sticky grenade does not stick to the player when the player throws it."
+msgid "They have been added to enable the sticky grenade to stick to any :ref:`PhysicsBody <class_PhysicsBody>` it might hit. We also now need the player's :ref:`KinematicBody <class_KinematicBody>` so the sticky grenade does not stick to the player when the player throws it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:257
@@ -205,7 +205,7 @@ msgid "Next let's take a look at ``collided_with_body``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:264
-msgid "First we make sure the sticky grenade is not colliding with itself. Because the sticky :ref:`Area <class_Area>` does not know it's attached to the grenade's :ref:`RigidBody <class_RigidBody>`, we need to make sure it's not going to stick to itself by checking to make sure the body it has collided with is not itself. If we have collided with ourself, we ignore it by returning."
+msgid "Firstly, we make sure the sticky grenade is not colliding with itself. Because the sticky :ref:`Area <class_Area>` does not know it's attached to the grenade's :ref:`RigidBody <class_RigidBody>`, we need to make sure it's not going to stick to itself by checking to make sure the body it has collided with is not itself. If we have collided with ourself, we ignore it by returning."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:269
@@ -213,7 +213,7 @@ msgid "We then check to see if we have something assigned to ``player_body``, an
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:272
-msgid "Next we check if the sticky grenade has attached to something already or not."
+msgid "Next, we check if the sticky grenade has attached to something already or not."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:274
@@ -257,11 +257,11 @@ msgid "Now we need to add some code to ``Player.gd`` so we can use the grenades.
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:303
-msgid "First, open up ``Player.tscn`` and expand the node tree until you get to ``Rotation_Helper``. Notice how in ``Rotation_Helper`` we have a node called ``Grenade_Toss_Pos``. This is where we will be spawning the grenades."
+msgid "Firstly, open up ``Player.tscn`` and expand the node tree until you get to ``Rotation_Helper``. Notice how in ``Rotation_Helper`` we have a node called ``Grenade_Toss_Pos``. This is where we will be spawning the grenades."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:306
-msgid "Also notice how it's slightly rotated on the ``X`` axis, so it's not pointing straight, but rather slightly up. By changing the rotation of ``Grenade_Toss_Pos``, you can change the angle the grenades are tossed at."
+msgid "Also notice how it's slightly rotated on the ``X`` axis, so it's not pointing straight, but rather slightly up. By changing the rotation of ``Grenade_Toss_Pos``, you can change the angle at which the grenades are tossed."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:309
@@ -285,7 +285,7 @@ msgid "``sticky_grenade_scene``: The sticky grenade scene we worked on earlier."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:323
-msgid "``GRENADE_THROW_FORCE``: The force at which the player will throw the grenades at."
+msgid "``GRENADE_THROW_FORCE``: The force at which the player will throw the grenades."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:325
@@ -305,7 +305,7 @@ msgid "Let's go over what's happening here."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:364
-msgid "First, we check to see if the ``change_grenade`` action has just been pressed. If it has, we then check to see which grenade the player is currently using. Based on the name of the grenade the player is currently using, we change ``current_grenade`` to the opposite grenade name."
+msgid "Firstly, we check to see if the ``change_grenade`` action has just been pressed. If it has, we then check to see which grenade the player is currently using. Based on the name of the grenade the player is currently using, we change ``current_grenade`` to the opposite grenade name."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:367
@@ -329,7 +329,7 @@ msgid "We still need a way to show the player how many grenades are left, and we
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:383
-msgid "First, let's change some of the code in ``Player.gd`` to show how many grenades are left. Change ``process_UI`` to the following:"
+msgid "Firstly, let's change some of the code in ``Player.gd`` to show how many grenades are left. Change ``process_UI`` to the following:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:399
@@ -369,11 +369,11 @@ msgid "You may have noticed we are using a new constant we have not defined yet,
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:442
-msgid "``GRENADE_AMOUNTS``: The amount of grenades each pick up contains."
+msgid "``GRENADE_AMOUNTS``: The amount of grenades each pickup contains."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:444
-msgid "Notice how the second element in ``GRENADE_AMOUNTS`` is ``0``. This is so the small ammo pick up does not give the player any additional grenades."
+msgid "Notice how the second element in ``GRENADE_AMOUNTS`` is ``0``. This is so the small ammo pickup does not give the player any additional grenades."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:449
@@ -385,7 +385,7 @@ msgid "Adding the ability to grab and throw RigidBody nodes to the player"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:455
-msgid "Next let's give the player the ability to pick up and throw :ref:`RigidBody <class_RigidBody>` nodes."
+msgid "Next, let's give the player the ability to pick up and throw :ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:457
@@ -397,11 +397,11 @@ msgid "``grabbed_object``: A variable to hold the grabbed :ref:`RigidBody <class
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:467
-msgid "``OBJECT_THROW_FORCE``: The force the player throws the grabbed object at."
+msgid "``OBJECT_THROW_FORCE``: The force with which the player throws the grabbed object."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:468
-msgid "``OBJECT_GRAB_DISTANCE``: The distance away from the camera the player holds the grabbed object at."
+msgid "``OBJECT_GRAB_DISTANCE``: The distance away from the camera at which the player holds the grabbed object."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:469
@@ -417,7 +417,7 @@ msgid "Let's go over what's happening."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:511
-msgid "First we check to see if the action pressed is the ``fire`` action, and that the player is using the ``UNARMED`` 'weapon'. This is because we only want the player to be able to pick up and throw objects when the player is not using any weapons. This is a design choice, but I feel it gives ``UNARMED`` a use."
+msgid "Firstly, we check to see if the action pressed is the ``fire`` action, and that the player is using the ``UNARMED`` 'weapon'. This is because we only want the player to be able to pick up and throw objects when the player is not using any weapons. This is a design choice, but I feel it gives ``UNARMED`` a use."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:515
@@ -461,7 +461,7 @@ msgid "If ``grabbed_object`` is not ``null``, then we need to throw the :ref:`Ri
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:544
-msgid "We first set the :ref:`RigidBody <class_RigidBody>` we are holding mode to ``MODE_RIGID``."
+msgid "We first set the mode of the :ref:`RigidBody <class_RigidBody>` we are holding to ``MODE_RIGID``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:546
@@ -469,7 +469,7 @@ msgid "This is making a rather large assumption that all the rigid bodies will b
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:549
-msgid "If you have :ref:`RigidBody <class_RigidBody>`'s with different modes, you may need to store the mode of the :ref:`RigidBody <class_RigidBody>` you have picked up into a class variable so you can change it back to the mode it was in before you picked it up."
+msgid "If you have rigid bodies with different modes, you may need to store the mode of the :ref:`RigidBody <class_RigidBody>` you have picked up into a class variable so you can change it back to the mode it was in before you picked it up."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:552
@@ -525,11 +525,11 @@ msgid "Open up ``Turret.tscn``. Expand ``Turret`` if it's not already expanded."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:600
-msgid "Notice how the turret is broken up into several parts. We have a ``Base``, ``Head``, ``Vision_Area``, and a ``Smoke`` :ref:`Particles <class_Particles>`."
+msgid "Notice how the turret is broken up into several parts: ``Base``, ``Head``, ``Vision_Area``, and a ``Smoke`` :ref:`Particles <class_Particles>` node."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:602
-msgid "Open up ``Base`` and you'll find it's a :ref:`StaticBody <class_StaticBody>` and a mesh. Open up ``Head`` and you'll find there's several meshes, a :ref:`StaticBody <class_StaticBody>` and a :ref:`Raycast <class_Raycast>` node."
+msgid "Open up ``Base`` and you'll find it's a :ref:`StaticBody <class_StaticBody>` and a mesh. Open up ``Head`` and you'll find there are several meshes, a :ref:`StaticBody <class_StaticBody>` and a :ref:`Raycast <class_Raycast>` node."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:605
@@ -553,7 +553,7 @@ msgid "This is quite a bit of code, so let's break it down function by function.
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:782
-msgid "``use_raycast``: A exported boolean so we can change whether the turret uses objects or raycasting for bullets."
+msgid "``use_raycast``: An exported boolean so we can change whether the turret uses objects or raycasting for bullets."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:783
@@ -649,7 +649,7 @@ msgid "``bullet_scene``: The bullet scene the turret fires (same scene as the pl
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:807
-msgid "Phew, that's quite a few class variables!"
+msgid "Whew, that's quite a few class variables!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:811
@@ -657,15 +657,15 @@ msgid "Let's go through ``_ready`` next."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:813
-msgid "First we get the vision area and connect the ``body_entered`` and ``body_exited`` signals to ``body_entered_vision`` and ``body_exited_vision`` respectively."
+msgid "Firstly, we get the vision area and connect the ``body_entered`` and ``body_exited`` signals to ``body_entered_vision`` and ``body_exited_vision``, respectively."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:815
-msgid "We then get all of the nodes and assign them to their respective variables."
+msgid "We then get all the nodes and assign them to their respective variables."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:817
-msgid "Next we add some exceptions to the :ref:`Raycast <class_Raycast>` so the turret cannot hurt itself."
+msgid "Next, we add some exceptions to the :ref:`Raycast <class_Raycast>` so the turret cannot hurt itself."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:819
@@ -673,7 +673,7 @@ msgid "Then we make both flash meshes invisible at start, since we are not going
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:821
-msgid "We then get the smoke particles node and assign it to the ``smoke_particles`` node. We also set ``emitting`` to ``false`` to assure the particles are not emitting until the turret is broken."
+msgid "We then get the smoke particles node and assign it to the ``smoke_particles`` variable. We also set ``emitting`` to ``false`` to ensure the particles are not emitting until the turret is broken."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:824
@@ -685,31 +685,31 @@ msgid "Now let's go through ``_physics_process``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:830
-msgid "First we check to see if the turret is active. If the turret is active we want to process the firing code."
+msgid "Firstly, we check whether the turret is active. If the turret is active, we want to process the firing code."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:832
-msgid "Next we check to see if ``flash_timer`` is more than zero, meaning the flash meshes are visible, we want to remove delta from ``flash_timer``. If ``flash_timer`` gets to zero or less after we've subtracted ``delta``, we want to hide both of the flash meshes."
+msgid "Next, if ``flash_timer`` is greater than zero, meaning the flash meshes are visible, we want to remove delta from ``flash_timer``. If ``flash_timer`` gets to zero or less after we've subtracted ``delta``, we want to hide both of the flash meshes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:836
-msgid "Next we check to see if the turret has a target or not. If the turret has a target, we make the turret head look at it, adding ``PLAYER_HEIGHT`` so it is not aiming at the player's feet."
+msgid "Next, we check whether the turret has a target. If the turret has a target, we make the turret head look at it, adding ``PLAYER_HEIGHT`` so it is not aiming at the player's feet."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:839
-msgid "We then check to see if the turret's health is more than zero. If it is, we then check to see if there is ammo in the turret."
+msgid "We then check whether the turret's health is greater than zero. If it is, we then check whether there is ammo in the turret."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:841
-msgid "If there is ammo in the turret, we then check to see if ``fire_timer`` is more than zero. If ``fire_timer`` is more than zero, the turret cannot fire and we need to remove ``delta`` from ``fire_timer``. If ``fire_timer`` is equal to or less than zero, the turret can fire a bullet, so we call the ``fire_bullet`` function."
+msgid "If there is, we then check whether ``fire_timer`` is greater than zero. If it is, the turret cannot fire and we need to remove ``delta`` from ``fire_timer``. If ``fire_timer`` is less than or equal to zero, the turret can fire a bullet, so we call the ``fire_bullet`` function."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:844
-msgid "If there isn't any ammo in the turret, we check to see if ``ammo_reload_timer`` is more than zero. If ``ammo_reload_timer`` is more than zero, we subtract ``delta`` from ``ammo_reload_timer``. If ``ammo_reload_timer`` is equal to or less than zero, we set ``ammo_in_turret`` to ``AMMO_IN_FULL_TURRET`` because the turret has waited long enough to refill its ammo."
+msgid "If there isn't any ammo in the turret, we check whether ``ammo_reload_timer`` is greater than zero. If it is, we subtract ``delta`` from ``ammo_reload_timer``. If ``ammo_reload_timer`` is less than or equal to zero, we set ``ammo_in_turret`` to ``AMMO_IN_FULL_TURRET`` because the turret has waited long enough to refill its ammo."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:848
-msgid "Next we check to see if the turret's health is less than or equal to ``0``, outside of whether it is active or not. If the turret's health is zero or less, we then check to see if ``destroyed_timer`` is more than zero. If destroyed timer is more than zero, we subtract ``delta`` from ``destroyed_timer``."
+msgid "Next, we check whether the turret's health is less than or equal to ``0`` outside of whether it is active or not. If the turret's health is zero or less, we then check whether ``destroyed_timer`` is greater than zero. If it is, we subtract ``delta`` from ``destroyed_timer``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:851
@@ -721,15 +721,15 @@ msgid "Next let's go through ``fire_bullet``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:858
-msgid "First we check to see whether the turret is using a raycast or not."
+msgid "Firstly, we check whether the turret is using a raycast."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:860
-msgid "The code for the using a raycast is almost entirely the same as the code in the rifle from :ref:`doc_fps_tutorial_part_two`, so I'm only going to go over it briefly."
+msgid "The code for using a raycast is almost entirely the same as the code in the rifle from :ref:`doc_fps_tutorial_part_two`, so I'm only going to go over it briefly."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:863
-msgid "We first make the raycast look at the target, assuring the raycast will hit the target if nothing is in the way. We then force the raycast to update so we get a frame perfect collision check. We then check if the raycast collided with anything. If the raycast has collided with something, we then check to see if the collided body has the ``bullet_hit`` function. If it does, we call it and pass in the damage a single raycast bullet does along with the raycast's transform. We then remove ``1`` from ``ammo_in_turret``."
+msgid "We first make the raycast look at the target, ensuring the raycast will hit the target if nothing is in the way. We then force the raycast to update so we get a frame perfect collision check. We then check whether the raycast has collided with anything. If it has, we then check whether the collided body has the ``bullet_hit`` method. If it does, we call it and pass in the damage a single raycast bullet does along with the raycast's transform. We then subtract ``1`` from ``ammo_in_turret``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:868
@@ -737,11 +737,11 @@ msgid "If the turret is not using a raycast, we spawn a bullet object instead. T
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:871
-msgid "We first make a bullet clone and assign it to ``clone``. We then add that as a child of the root node. We set the bullet's global transform to the barrel end, scale it up since it's too small, and set it's damage and speed using the turret's constant class variables. We then remove ``1`` from ``ammo_in_turret``."
+msgid "We first make a bullet clone and assign it to ``clone``. We then add that as a child of the root node. We set the bullet's global transform to the barrel end, scale it up since it's too small, and set its damage and speed using the turret's constant class variables. We then subtract ``1`` from ``ammo_in_turret``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:875
-msgid "Then, regardless of which bullet method we used, we make both of the muzzle flash meshes visible. We set ``flash_timer`` and ``fire_timer`` to ``FLASH_TIME`` and ``FIRE_TIME`` respectively. We then check to see if the turret used the last bullet in its ammo. If the turret has used the last bullet, we set ``ammo_reload_timer`` to ``AMMO_RELOAD_TIME`` so the turret reloads."
+msgid "Then, regardless of which bullet method we used, we make both of the muzzle flash meshes visible. We set ``flash_timer`` and ``fire_timer`` to ``FLASH_TIME`` and ``FIRE_TIME``, respectively. We then check whether the turret has used the last bullet in its ammo. If it has, we set ``ammo_reload_timer`` to ``AMMO_RELOAD_TIME`` so the turret reloads."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:881
@@ -749,11 +749,11 @@ msgid "Let's look at ``body_entered_vision`` next, and thankfully it is rather s
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:883
-msgid "We first check to see if the turret currently has a target by checking to see if ``current_target`` is equal to ``null``. If the turret does not have a target, we then check to see if the body that just entered the vision :ref:`Area <class_Area>` is a :ref:`KinematicBody <class_KinematicBody>`"
+msgid "We first check whether the turret currently has a target by checking if ``current_target`` is equal to ``null``. If the turret does not have a target, we then check whether the body that has just entered the vision :ref:`Area <class_Area>` is a :ref:`KinematicBody <class_KinematicBody>`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:886
-msgid "We're assuming the turret should only fire at :ref:`KinematicBody <class_KinematicBody>` nodes, since that is what the player is using."
+msgid "We're assuming the turret should only fire at :ref:`KinematicBody <class_KinematicBody>` nodes since that is what the player is using."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:888
@@ -765,11 +765,11 @@ msgid "Now let's look at ``body_exited_vision``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:895
-msgid "First we check to see if the turret has a target. If the turret has a target, we then check to see if the body that has just left the turret's vision :ref:`Area <class_Area>` is the turret's target."
+msgid "Firstly, we check whether the turret has a target. If it does, we then check whether the body that has just left the turret's vision :ref:`Area <class_Area>` is the turret's target."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:898
-msgid "If the body that just left the vision :ref:`Area <class_Area>` is the turret's current target, we set ``current_target`` to ``null``, set ``is_active`` to ``false``, and reset all of the variables related to firing the turret, since the turret no longer has a target to fire at."
+msgid "If the body that has just left the vision :ref:`Area <class_Area>` is the turret's current target, we set ``current_target`` to ``null``, set ``is_active`` to ``false``, and reset all the variables related to firing the turret since the turret no longer has a target to fire at."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:903
@@ -777,15 +777,15 @@ msgid "Finally, let's look at ``bullet_hit``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:905
-msgid "We first remove however much damage the bullet causes from the turret's health."
+msgid "We first subtract however much damage the bullet causes from the turret's health."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:907
-msgid "Then we check to see if the turret has been destroyed (health being zero or less). If the turret is destroyed, we start the smoke particles emitting and set ``destroyed_timer`` to ``DESTROYED_TIME`` so the turret has to wait before being repaired."
+msgid "Then, we check whether the turret has been destroyed (health being zero or less). If the turret is destroyed, we start emitting the smoke particles and set ``destroyed_timer`` to ``DESTROYED_TIME`` so the turret has to wait before being repaired."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:912
-msgid "Phew, with all of that done and coded we only have one last thing to do before the turret is ready for use. Open up ``Turret.tscn`` if it's not already open and select one of the :ref:`StaticBody <class_StaticBody>` nodes from either ``Base`` or ``Head``. Create a new script called ``TurretBodies.gd`` and attach it to whichever :ref:`StaticBody <class_StaticBody>` you have selected."
+msgid "Whew, with all of that done and coded, we only have one last thing to do before the turret is ready for use. Open up ``Turret.tscn`` if it's not already open and select one of the :ref:`StaticBody <class_StaticBody>` nodes from either ``Base`` or ``Head``. Create a new script called ``TurretBodies.gd`` and attach it to whichever :ref:`StaticBody <class_StaticBody>` you have selected."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:916
@@ -793,7 +793,7 @@ msgid "Add the following code to ``TurretBodies.gd``:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:931
-msgid "All this code does is call ``bullet_hit`` on whatever node ``path_to_turret_root`` leads to. Go back to the editor and assign the :ref:`NodePath <class_NodePath>` to the ``Turret`` node."
+msgid "All this code does is call ``bullet_hit`` on whatever node to which ``path_to_turret_root`` leads. Go back to the editor and assign the :ref:`NodePath <class_NodePath>` to the ``Turret`` node."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:934
@@ -801,7 +801,7 @@ msgid "Now select the other :ref:`StaticBody <class_StaticBody>` node (either in
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:939
-msgid "The last thing we need to do is add a way for the player to be hurt. Since all of the bullets use the ``bullet_hit`` function, we need to add that function to the player."
+msgid "The last thing we need to do is add a way for the player to be hurt. Since all the bullets use the ``bullet_hit`` function, we need to add that function to the player."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_five.rst:941

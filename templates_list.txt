@@ -75,10 +75,10 @@ tutorials/2d/index.pot
 tutorials/2d/canvas_layers.pot
 tutorials/2d/2d_transforms.pot
 tutorials/2d/using_tilemaps.pot
-tutorials/2d/custom_drawing_in_2d.pot
 tutorials/2d/particle_systems_2d.pot
 tutorials/2d/2d_movement.pot
 tutorials/2d/2d_lights_and_shadows.pot
+tutorials/2d/custom_drawing_in_2d.pot
 tutorials/3d/index.pot
 tutorials/3d/introduction_to_3d.pot
 tutorials/3d/using_transforms.pot
@@ -142,7 +142,12 @@ tutorials/viewports/multiple_resolutions.pot
 tutorials/viewports/using_viewport_as_texture.pot
 tutorials/viewports/custom_postprocessing.pot
 tutorials/shading/index.pot
-tutorials/shading/shading_language.pot
+tutorials/shading/shading_reference/index.pot
+tutorials/shading/shading_reference/shaders.pot
+tutorials/shading/shading_reference/shading_language.pot
+tutorials/shading/shading_reference/spatial_shader.pot
+tutorials/shading/shading_reference/canvas_item_shader.pot
+tutorials/shading/shading_reference/particle_shader.pot
 tutorials/shading/shader_materials.pot
 tutorials/shading/intro_to_shaders_water_workshop.pot
 tutorials/shading/screen-reading_shaders.pot
@@ -194,7 +199,6 @@ development/compiling/cross-compiling_for_ios_on_linux.pot
 development/compiling/compiling_for_uwp.pot
 development/compiling/compiling_for_web.pot
 development/compiling/compiling_with_mono.pot
-development/compiling/packaging_godot.pot
 development/compiling/optimizing_for_size.pot
 development/cpp/index.pot
 development/cpp/introduction_to_godot_development.pot
