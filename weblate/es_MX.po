@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Spanish (Mexico)
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Adrian FHS <adrianfhs014@gmail.com>, 2018.
@@ -15,6 +15,7 @@
 # Kisetsu 0w0 <plasticdoll9@gmail.com>, 2018.
 # Lukas <crakernet0@gmail.com>, 2018.
 # Miguel Alejandro Aguayo L <maalmike@gmail.com>, 2018.
+# Reimer Chamale <rchamale10@gmail.com>, 2019.
 # Ricardo Illescas <riktothepast@gmail.com>, 2018.
 #
 msgid ""
@@ -22,8 +23,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-04 22:23+0000\n"
-"Last-Translator: Gato Wormius <gatowormius@gmail.com>\n"
+"PO-Revision-Date: 2019-01-08 08:59+0000\n"
+"Last-Translator: Reimer Chamale <rchamale10@gmail.com>\n"
 "Language-Team: Spanish (Mexico) <https://hosted.weblate.org/projects/godot-"
 "engine/godot-docs/es_MX/>\n"
 "Language: es_MX\n"
@@ -38,14 +39,13 @@ msgid "Godot Docs – *master* branch"
 msgstr "Documentacion de Godot - rama *principal*"
 
 #: ../../docs/index.rst:9
-#, fuzzy
 msgid ""
 "This is the documentation for the unstable (master) branch. Looking for the "
 "documentation of the current **stable** branch? `Have a look here <https://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Esta es la documentación para la rama inestable (principal).  ¿Está buscando "
-"la documentación de la rama ** estable ** actual? Mira aquí <http://docs."
+"Esta es la documentación para la rama inestable (principal). ¿Está buscando "
+"la documentación de la rama **estable** actual? Mira aquí <http://docs."
 "godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
@@ -88,7 +88,6 @@ msgstr ""
 "¡Ayúdanos a crear una mejor documentación haciéndonos saber!"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -97,13 +96,12 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Enviar un problema o solicitud de extracción en el repositorio `GitHub "
+"¡Envía un problema o solicitud de integración al `repositorio de GitHub "
 "<https://github.com/godotengine/godot-docs/issues>`_, ayúdanos a `traducir "
-"la documentación <https://hosted.weblate.org/engage/godot-engine/>`_ en su "
-"idioma, o discutir con nosotros sobre cualquiera de los "
-"``#documentation``canales en `Discord <https://discord.gg/zH7NUgz>`_, o el "
-"``#godotengine-doc`` en el canal `irc.freenode.net <http://webchat.freenode."
-"net/?channels=#godotengine-doc>`_!"
+"la documentación <https://hosted.weblate.org/engage/godot-engine/>`_ a tu "
+"idioma, o discutir con nosotros en el canal ``#documentation`` en `Discord "
+"<https://discord.gg/zH7NUgz>`_, o en el canal ``#godotengine-doc`` en `irc."
+"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -1400,13 +1398,12 @@ msgstr ""
 "el **workspaces**, y el **playtest buttons**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
-#, fuzzy
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"En el lado izquierdo tienes el **FileSystem dock**, donde gestionará los "
-"archivos y activos de su proyecto."
+"En el lado izquierdo tienes el **FileSystem dock**, (Base de archivos) donde "
+"gestionará los archivos y activos de su proyecto."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:152
@@ -1414,13 +1411,13 @@ msgid "|image11|"
 msgstr "|imagen11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
-"En el lado derecho encontrarás el **Scene dock** que enumera el contenido de "
-"la escena activa y el **Inspector** en la esquina inferior derecha."
+"En el lado derecho encontrarás el **Scene dock** (Muelle de escena) que "
+"enumera el contenido de la escena activa y el **Inspector** en la esquina "
+"inferior derecha."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:160
@@ -1428,14 +1425,14 @@ msgid "|image12|"
 msgstr "|imagen12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"En el centro, tienes la **Toolbar** en la parte superior, donde encontrarás "
-"herramientas para mover, escalar o bloquear los objetos de tu escena."
+"En el centro, tienes la **Toolbar** (Barra de herramientas) en la parte "
+"superior, donde encontrarás herramientas para mover, escalar o bloquear los "
+"objetos de tu escena."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:167
@@ -3890,16 +3887,16 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr ""
+"Para este proyecto, seguiremos las convenciones de nomenclatura de Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Para este proyecto, seguiremos las convenciones de nombres de Godot. Las "
-"clases (nodos) usan ``PascalCase``, las variables y funciones usan "
-"``snake_case``, y las constantes usan ``ALL_CAPS``."
+"**GDScript**: Las clases (nodos) usan PascalCase, las variables y funciones "
+"usan snake_case, y las constantes usan ALL_CAPS (See :ref:"
+"`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
 msgid ""
@@ -3908,6 +3905,10 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: las clases, las variables de exportación y los métodos usan "
+"PascalCase, los campos privados usan _camelCase, las variables locales y los "
+"parámetros usan camelCase (Ver: ref:`doc_c_sharp_styleguide`). Tenga cuidado "
+"de escribir los nombres de los métodos de manera precisa al conectar señales."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -4053,6 +4054,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Si está utilizando C#, necesita (re) construir los ensamblajes del proyecto "
+"cuando quiera ver nuevas variables o señales de exportación. Esta "
+"construcción se puede activar manualmente haciendo clic en la palabra \"Mono"
+"\" en la parte inferior de la ventana del editor para revelar el Panel Mono, "
+"y luego haciendo clic en el botón \"Crear proyecto\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -4542,6 +4548,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:630
 msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr ""
+"Consulte: ref:`doc_instancing` para obtener más información sobre la "
+"creación de instancias."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:632
 msgid ""

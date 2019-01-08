@@ -1,9 +1,10 @@
 # Godot Engine Documentation in Indonesian
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
 # Damar Inderajati <damarind@gmail.com>, 2018.
+# Evan Hyacinth <muhammad.ivan669@gmail.com>, 2018.
 # Fajar Ru <kzofajar@gmail.com>, 2018.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # Reza Hidayat Bayu Prabowo <rh.bayu.prabowo@gmail.com>, 2018.
@@ -13,8 +14,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-13 10:15+0000\n"
-"Last-Translator: Bagus Aji Santoso <lobothijau@gmail.com>\n"
+"PO-Revision-Date: 2018-12-31 12:11+0000\n"
+"Last-Translator: Evan Hyacinth <muhammad.ivan669@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -29,15 +30,14 @@ msgid "Godot Docs – *master* branch"
 msgstr "Dokumentasi Godot – branch *master*"
 
 #: ../../docs/index.rst:9
-#, fuzzy
 msgid ""
 "This is the documentation for the unstable (master) branch. Looking for the "
 "documentation of the current **stable** branch? `Have a look here <https://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Ini adalah dokumentasi untuk branch (master) unstable. Sedang mencari "
-"dokumentasi dari branch **stable** yang sekarang? `Lihat disini <http://docs."
-"godotengine.org/en/stable>`_."
+"Ini adalah dokumentasi untuk branch (master) unstable. Mencari dokumentasi "
+"dari branch **stable** yang sekarang? `Lihat disini <http://docs.godotengine."
+"org/en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -80,7 +80,6 @@ msgstr ""
 "dokumentasi yang lebih baik dengan memberi tahu kami!"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -649,10 +648,15 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
+"Untuk bahasa pemrograman lain, dukungan bisa diadakan via pihak ketiga "
+"dengan fasilitas GDNative / NativeScript / PluginScript. (Lihat pertanyaan "
+"tentang plugin dibawah.) hal ini sedang dalam pengerjaan, contohnya, pada "
+"unofficial binding untuk Godot ke  `Python <https://github.com/touilleMan/"
+"godot-python>`_ dan `Nim <https://github.com/pragmagic/godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Apa itu GDScript dan kenapa saya ingin menggunakanya?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -664,6 +668,13 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the "
 "`GDScript scripting guide <gdscript_basics>`_."
 msgstr ""
+"GDScript adalah bahasa scripting terintegritas milik Godot. bahasa ini "
+"dibangun dari awal untuk memaksimalkan potensi yang dimiliki Godot dengan "
+"pengkodean yang minimal, memungkinkan developer pemula dan ahli untuk "
+"mempergunakan kemapuan Godot secepat mungkin. jika anda pernah menulis "
+"apapun dalam bahasa seperti Python anda akan mudah terbiasa dengan GDScript. "
+"cek disini `GDScript scripting guide <gdscript_basics>`_ untuk contoh, "
+"sejarah, dan  gambaran tentang apa yang disediakan oleh GDScript,."
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -672,6 +683,10 @@ msgid ""
 "next AAA title--but the most salient reason is the overall **reduction of "
 "complexity.**"
 msgstr ""
+"Ada beberapa alasan untuk menggunakan GDScript--Terutama bila anda sedang "
+"membuat prototype, saat proyek anda berada pada fase alpha/beta, atau jika "
+"anda sedang tidak membuat game AAA yang selanjutnya--tetapi alasan yang "
+"paling penting adalah **pengurangan dalam kompleksitas.**"
 
 #: ../../docs/about/faq.rst:101
 msgid ""
@@ -685,6 +700,15 @@ msgid ""
 "lot of time trying to get a small set of incremental features working across "
 "a large set of languages."
 msgstr ""
+"Maksud yang sesungguhnya dalam pembuatan bahasa scripting yang "
+"terintegritasi ketat untuk Godot ada dua: pertama, mengurangi waktu yang "
+"diperlukan untuk memulai menggunakan Godot, memberikan para developer cara "
+"cepat untuk menjelajahi enjin ini dengan produktivitas sebagai fokus; kedua, "
+"mengurangi total beban dalam perawatan, memperkecil masalah yang timbul, dan "
+"mengijinkan developer enjin untuk mengatasi bug dan memperbarui fitur-fitur "
+"yang berhubungan dengan fungsi utama enjin--dari pada harus menghabiskan "
+"banyak waktu untuk membuat fitur-fitur kecil dapat berkerja dalam berbagai "
+"macam bahasa."
 
 #: ../../docs/about/faq.rst:109
 msgid ""
@@ -698,6 +722,16 @@ msgid ""
 "once you see how powerful it is and rapid your development becomes, we think "
 "GDScript will grow on you."
 msgstr ""
+"Dikarenakan Godot adalah proyek sumber terbuka, sangatlah penting sedari "
+"awal untuk mengutamakan pengalaman yang lebih terintegritas dan mulus dari "
+"pada menarik minat pengguna tambahan dengan mendukung bahasa lain yang lebih "
+"familiar--terutama ketika mendukung bahas yang lebih familiar itu dapat "
+"menyebabkan pengalaman yang lebih buruk. Kami paham akan keinginan anda "
+"untuk menggunakan bahasa lain di dalam Godot (lihat daftar pilihan bahasa "
+"yang didukung di atas). maka dari itu, jika anda belum mencoba GDScript, "
+"cobalah untuk**tiga hari**. seperti halnya Godot, begitu anda merasakan "
+"kemampuan nya dan meningkatnya kecepat development anda, kami yakin anda "
+"akan suka dengan GDScript."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -705,27 +739,35 @@ msgid ""
 "typed languages can be found in the :ref:`doc_gdscript_more_efficiently` "
 "tutorial."
 msgstr ""
+"Informasi lebih untuk membiasakan diri dengan GDScript atau bahasa dinamis "
+"yang lain bisa didapat di tutorial :ref:`doc_gdscript_more_efficiently`."
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Apa motivasi awal dalam pembuatan GDScript?"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
 msgstr ""
+"Alasan utama untuk membuat bahasa scripting sendiri untuk Godot adalah:"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
 "Poor thread support in most script VMs, and Godot uses threads (Lua, Python, "
 "Squirrel, JS, AS, etc.)."
 msgstr ""
+"Lemahnya dukungan thread di sebagian besar script VM, dan Godot menggunakan "
+"thread (Lua, Python, Squirrel, JS, AS, dsb.)."
 
 #: ../../docs/about/faq.rst:128
 msgid ""
 "Poor class-extending support in most script VMs, and adapting to the way "
 "Godot works is highly inefficient (Lua, Python, JS)."
 msgstr ""
+"Lemahnya dukungan class-extending dalam sebagian besar script VM, dan "
+"penyesuaian dengan cara kerja Godot sangatlah tidak effisien (Lua, Python, "
+"JS)."
 
 #: ../../docs/about/faq.rst:130
 msgid ""
@@ -734,18 +776,27 @@ msgid ""
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
+"Banyak bahasa yg ada mempunyai antarmuka yang buruk untuk binding ke C++, "
+"menghasilkan kode yang terlalu banyak, bugs, hambatan, dan ketidakefisienan "
+"umum yang lain (Lua, Python, Squirrel, JS, etc.) Kami ingin fokus ke enjin "
+"yang hebat, bukan banyaknya integrasi."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
 "No native vector types (vector3, matrix4, etc.), resulting in highly reduced "
 "performance when using custom types (Lua, Python, Squirrel, JS, AS, etc.)."
 msgstr ""
+"Tidak ada tipe-tipe vector bawaan (vector3, matrix4, dsb.), menyebabkan "
+"penurunan performa yang besar ketika menggunakan tipe-tipe kustom (Lua, "
+"Python, Squirrel, JS, AS, dsb.)."
 
 #: ../../docs/about/faq.rst:136
 msgid ""
 "Garbage collector results in stalls or unnecessarily large memory usage "
 "(Lua, Python, JS, AS, etc.)."
 msgstr ""
+"Koleksi sampah menyebabkan kemacetan atau penggunaan memori yang banyak "
+"secara sia-sia (Lua, Python, JS, AS, etc.)."
 
 #: ../../docs/about/faq.rst:138
 msgid ""
@@ -2642,7 +2693,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/gdnative/gdnative-cpp-example.rst:679
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
-msgstr ""
+msgstr "Sinyal-sinyal"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
 msgid ""
@@ -13226,7 +13277,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:281
 msgid "Self"
-msgstr ""
+msgstr "Sendiri"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:283
 msgid ""
@@ -14240,7 +14291,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:155
 msgid "End"
-msgstr ""
+msgstr "Akhir"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:163
 msgid "get_area()"
@@ -42190,7 +42241,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:128
 msgid "Capture"
-msgstr ""
+msgstr "Tangkap"
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""
@@ -43508,7 +43559,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Class"
-msgstr ""
+msgstr "Kelas"
 
 #: ../../docs/tutorials/shading/shading_language.rst:205
 msgid "Operator"
@@ -58295,7 +58346,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/core_types.rst:144
 msgid "Set"
-msgstr ""
+msgstr "Terapkan"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"

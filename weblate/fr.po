@@ -1,8 +1,9 @@
 # Godot Engine Documentation in French
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Adam AUTUORI <askeridos@hotmail.fr>, 2018.
+# Alexandre Fiale <afiale@agaetis.fr>, 2019.
 # Alexis Huvier <lavapower84@gmail.com>, 2018.
 # Antoine Carrier <ac.g392@gmail.com>, 2018.
 # Aymen B'm <boxaymen7@gmail.com>, 2018.
@@ -11,7 +12,8 @@
 # Bresere <berserk172.cl215@gmail.com>, 2018.
 # Brice Lobet <tempo.data@gmail.com>, 2018.
 # Carl Schwan <schwancarl@protonmail.com>, 2018.
-# Cindy Dallaire <c.dallaire93@gmail.com>, 2018.
+# Caye Pierre <pierrecaye@laposte.net>, 2018-2019.
+# Cindy Dallaire <c.dallaire93@gmail.com>, 2018-2019.
 # Darck Crystale <vraken@live.fr>, 2018.
 # David Partouche <david.partouche@gmail.com>, 2018.
 # didier-v <didierv@mac.com>, 2018.
@@ -65,8 +67,8 @@ msgstr ""
 "Project-Id-Version: French (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-10 19:37+0000\n"
-"Last-Translator: Guillaume Roy <minone.roy@free.fr>\n"
+"PO-Revision-Date: 2019-01-08 08:58+0000\n"
+"Last-Translator: Alexandre Fiale <afiale@agaetis.fr>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fr/>\n"
 "Language: fr\n"
@@ -81,7 +83,6 @@ msgid "Godot Docs – *master* branch"
 msgstr "Documentation de Godot – Branche *master*"
 
 #: ../../docs/index.rst:9
-#, fuzzy
 msgid ""
 "This is the documentation for the unstable (master) branch. Looking for the "
 "documentation of the current **stable** branch? `Have a look here <https://"
@@ -132,7 +133,6 @@ msgstr ""
 "en nous le faisant savoir !"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -432,7 +432,6 @@ msgstr ""
 "l’éditeur."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -693,7 +692,6 @@ msgstr ""
 "les `problèmes connus <https://github.com/godotengine/godot/issues>`."
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -701,8 +699,8 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Comme pour les nouveaux langages, le support est possible grâce à des "
-"applications tierces utilisant les fonctions GDNative / NativeScript / "
+"Pour les nouveaux langages, le support est possible via des applications "
+"tierces utilisant les fonctionnalités GDNative / NativeScript / "
 "PluginScript. (Voir la question concernant les plugins ci-dessous.) Des "
 "travaux sont actuellement en cours, par exemple, pour mettre en place le "
 "support non-officiel de `Python <https://github.com/touilleMan/godot-"
@@ -1401,9 +1399,8 @@ msgid "|image7|"
 msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
-#, fuzzy
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr "Lorsqu'un chemin de dossier est valide, une coche verte est affichée."
+msgstr "Lorsque le chemin du dossier est valide, une coche verte est affichée."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:120
@@ -1415,16 +1412,15 @@ msgid "Your first look at Godot’s editor"
 msgstr "Premiers pas avec l'éditeur de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
 "Bienvenue dans Godot ! Une fois votre projet ouvert, vous devriez voir "
-"l'interface de l'éditeur avec la vue \"3D\" activé. Vous pouvez changer "
+"l'interface de l'éditeur avec la vue \"3D\" active. Vous pouvez changer "
 "d'espace de travail à l'aide des boutons en haut de l'interface. Cliquez sur "
-"\"2D\" pour passer à la vue dédié à la 2D."
+"\"2D\" pour passer à la vue dédiée à la 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
@@ -1451,12 +1447,11 @@ msgstr ""
 "**fenêtres d'affichage**, et les **boutons de test**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
-#, fuzzy
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"Sur la gauche vous voyez le dock **Système de fichiers**, où vous gèrerez "
+"Sur la gauche vous voyez le dock **Système de fichiers**, où vous gérerez "
 "les fichiers et ressources de vos projets."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
@@ -1465,7 +1460,6 @@ msgid "|image11|"
 msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
@@ -1479,7 +1473,6 @@ msgid "|image12|"
 msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
@@ -1487,7 +1480,7 @@ msgid ""
 msgstr ""
 "Au centre en haut, vous avez la **Barre d'outils**, où vous trouverez des "
 "outils pour déplacer, mettre à l'échelle ou verrouiller les objets de votre "
-"scène. Elle est différente pour chaque espaces de travail."
+"scène. Elle est différente pour chaque espace de travail."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:167
@@ -1716,9 +1709,8 @@ msgid "It can be extended (to have more functions)."
 msgstr "Il peut être étendu (pour avoir plus de fonctions)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-#, fuzzy
 msgid "It can be added to another node as a child."
-msgstr "Il peut être ajouté à d'autres nœuds en tant qu'enfant."
+msgstr "Il peut être ajouté à un autre nœud en tant qu'enfant."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
@@ -2362,7 +2354,6 @@ msgstr ""
 "dans l'éditeur) pour les relations de possession."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
-#, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -2485,7 +2476,6 @@ msgstr ""
 "supplémentaires !"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
@@ -2820,13 +2810,12 @@ msgstr ""
 "d'autres options."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"Dans GDScript, le fichier lui-même représente la classe, de sorte que le "
-"champ du nom de la classe n'est pas modifiable."
+"Dans GDScript, le fichier lui-même représente la classe, ce qui rend le nom "
+"de la classe non modifiable."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -2855,7 +2844,6 @@ msgstr ""
 "dans la propriété script dans l'Inspecteur :"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
@@ -2960,18 +2948,17 @@ msgstr ""
 "déclencher."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
-"La section en haut à gauche affiche une liste des noeuds de votre scène avec "
-"le nom du noeud émetteur mis en évidence en rouge. Sélectionnez ici le noeud "
-"\"Panel\". Quand vous sélectionnez un noeud, le NodePath en bas se mettra à "
-"jour automatiquement pour pointer vers un chemin relatif du noeud émetteur "
-"au noeud sélectionné."
+"La section en haut à gauche affiche une liste des nœuds de votre scène avec "
+"le nom du nœud émetteur surligné en rouge. Sélectionnez ici le nœud \"Panel"
+"\". Quand vous sélectionnez un nœud, le NodePath en bas se mettra à jour "
+"automatiquement pour pointer vers un chemin relatif du nœud émetteur au nœud "
+"sélectionné."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:210
 msgid ""
@@ -2987,7 +2974,6 @@ msgstr ""
 "mettre en place la connexion."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -3220,13 +3206,12 @@ msgstr ""
 "bouton Groupes sous le panneau Nœud :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
-#, fuzzy
 msgid ""
 "And the second way is from code. One example would be to tag nodes which are "
 "enemies:"
 msgstr ""
-"Et la deuxième manière est par le code. Un exemple serait de marquer les "
-"scènes qui sont des ennemis :"
+"Et la deuxième façon est par le code. Un exemple serait de marquer les nœuds "
+"qui sont des ennemis :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
 msgid ""
@@ -3423,14 +3408,13 @@ msgid "Register scripts as classes"
 msgstr "Enregistrer des scripts en tant que classes"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:391
-#, fuzzy
 msgid ""
 "Godot has a \"Script Class\" feature to register individual scripts with the "
 "Editor. By default, you can only access unnamed scripts by loading the file "
 "directly."
 msgstr ""
-"Godot fournit une fonctionnalité \"Script Class?\" permettant d'enregistrer "
-"des scripts depuis l'éditeur. Par défaut, l'accès au scripts anonymes n'est "
+"Godot fournit une fonctionnalité \"Script Class\" permettant d'enregistrer "
+"des scripts depuis l'éditeur. Par défaut, l'accès aux scripts anonymes n'est "
 "possible qu'en chargeant le fichier directement."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:395
@@ -3472,18 +3456,16 @@ msgid "Signals"
 msgstr "Signaux"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the *observer* pattern. They allow a node to "
 "send out a message that other nodes can listen for and respond to. For "
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"Les signaux sont la version de Godot du schéma de l'observateur. Ils "
-"permettent à un nœud d'envoyer un message que les autres nœuds peuvent "
-"écouter et auquel ils peuvent répondre. Par exemple, au lieu de vérifier en "
-"continu si un bouton est appuyé, le bouton peut émettre un signal lorsqu'il "
-"est appuyé."
+"Les signaux sont la version de Godot du modèle d'observateur. Ils permettent "
+"à un nœud d'envoyer un message que les autres nœuds peuvent écouter et "
+"auquel ils peuvent répondre. Par exemple, au lieu de vérifier en continu si "
+"un bouton est appuyé, le bouton peut émettre un signal lorsqu'il est appuyé."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
@@ -3494,16 +3476,15 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that any interested objects can subscribe to and respond."
 msgstr ""
-"Les signaux sont un moyen de **découpler** vos objets de jeu, ce qui conduit "
-"à un code mieux organisé et plus facile à gérer. Au lieu de forcer les "
-"objets du jeu à s'attendre à ce que d'autres objets soient toujours "
+"Les signaux sont un moyen de rendre vos objets de jeu indépendants, ce qui "
+"conduit à un code mieux organisé et plus facile à gérer. Au lieu de forcer "
+"les objets du jeu à s'attendre à ce que d'autres objets soient toujours "
 "présents, ils peuvent émettre des signaux auxquels tout objet intéressé peut "
 "s'abonner et répondre."
 
@@ -3516,12 +3497,10 @@ msgstr ""
 "vos propres projets."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "Quelques exemples :"
+msgstr "Exemple de minuterie"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
@@ -3537,20 +3516,18 @@ msgstr ""
 "code."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
-#, fuzzy
 msgid "Your scene tree should look like this:"
-msgstr "L'arbre de scène devrait ressembler à ceci :"
+msgstr "L'arbre de la scène devrait ressembler à ceci :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:35
-#, fuzzy
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
 "Dans les propriétés du nœud Timer, cochez la case \"On\" à côté de "
-"*Autostart*. Le timer démarrera automatiquement lorsque vous exécuterez la "
-"scène. Vous pouvez quitter le *Temps d'attente* à 1 seconde."
+"*Autostart*. Le Timer démarrera automatiquement lorsque vous exécuterez la "
+"scène. Vous pouvez laisser le *Wait Time* (temps d'attente) à 1 seconde."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
 msgid ""
@@ -3634,9 +3611,8 @@ msgstr ""
 "modifier cela."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
-#, fuzzy
 msgid "Connecting signals in code"
-msgstr "Connexion d'un signal à une fonction"
+msgstr "Connecter des signaux dans le code"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -3672,9 +3648,8 @@ msgstr ""
 "cible>)``. Voici le code pour la connexion de notre minuterie :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
-#, fuzzy
 msgid "Custom signals"
-msgstr "Itérateurs personnalisés"
+msgstr "Signaux personnalisés"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
@@ -3695,9 +3670,8 @@ msgid "To emit a signal via code, use the ``emit`` function:"
 msgstr "Pour émettre un signal par le code, utilisez la fonction ``emit`` :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
-#, fuzzy
 msgid "Shooting example"
-msgstr "Dans l'exemple suivant :"
+msgstr "Exemple de tir :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:205
 msgid ""
@@ -3979,17 +3953,16 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "Pour ce projet, nous suivrons les conventions de nommage de Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Pour ce projet, nous suivrons les conventions de nommage Godot. Les classes "
-"(nœuds) utilisent ``PascalCase``, les variables et les fonctions utilisent "
-"``snake_case``, et les constantes utilisent ``ALL_CAPS``."
+"**GDScript** : Les classes (nœuds) utilisent ``PascalCase``, les variables "
+"et les fonctions utilisent ``snake_case``, et les constantes utilisent "
+"``ALL_CAPS`` (Voir :ref:`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
 msgid ""
@@ -3998,6 +3971,11 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Les classes, les variables d'exportation et les méthodes utilisent "
+"PascalCase, les attributs privés utilisent _camelCase, les variables locales "
+"et les paramètres utilisent camelCase (Voir :ref:`doc_c_sharp_styleguide`). "
+"Attention à taper les noms des méthodes précisément lorsque vous connectez "
+"des signaux."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -4142,6 +4120,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Si vous utilisez C#, vous devez (re)compiler les assemblages du projet "
+"chaque fois que vous voulez voir de nouvelles variables d'exportation ou des "
+"nouveaux signaux. Cette compilation peut être déclenchée manuellement en "
+"cliquant sur le mot \"Mono\" au bas de la fenêtre de l'éditeur pour afficher "
+"le panneau Mono, puis en cliquant sur le bouton \"Compiler Projet\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -4152,7 +4135,6 @@ msgstr ""
 "scène, ce qui est un bon moment pour trouver la taille de la fenêtre de jeu :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:209
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -4161,7 +4143,7 @@ msgstr ""
 "Maintenant nous pouvons utiliser la fonction ``_process()`` pour définir ce "
 "que le joueur va faire. ``_process()`` est appelée à chaque image, nous "
 "l'utiliserons donc pour mettre à jour les éléments de notre jeu qui vont "
-"changer souvent. Voici comment nous allons procéder :"
+"changer souvent. Ici nous allons lui faire :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid "Check for input."
@@ -4338,7 +4320,6 @@ msgstr ""
 "booléenne raccourcie ci-dessus :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:395
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
@@ -4627,7 +4608,6 @@ msgstr ""
 "l'instanciation."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:632
-#, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -4759,13 +4739,12 @@ msgid "Main script"
 msgstr "Script principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:682
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "Ajoutez un script à ``Main``. Au début du script nous utilisons ``export "
-"(PackedScene)`` pour nous permettre de choisir la scène de monstre que nous "
+"(PackedScene)`` pour nous permettre de choisir la scène du monstre que nous "
 "voulons instancier."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:722
@@ -4803,7 +4782,6 @@ msgstr ""
 "les deux autres timers. ``ScoreTimer`` incrémentera le score de 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:789
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -5049,7 +5027,6 @@ msgid "Text: ``Start``"
 msgstr "Text : ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
-#, fuzzy
 msgid ""
 "To make the text of the ``MessageLabel`` fit the game's window click the "
 "small icon next to your text property. This will open up a new window where "
@@ -5058,10 +5035,13 @@ msgid ""
 "game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
 "following for each of the three ``Control`` nodes:"
 msgstr ""
-"La police par défaut pour les nœuds ``Control`` est petite et ne s'aggrandit "
-"pas bien. Il y a un fichier de police inclus dans les ressources du jeu "
-"appelé \"Xolonium-Regular.ttf\". Pour utiliser cette police, procédez comme "
-"suit pour chacun des trois nœuds ``Control`` :"
+"Afin que le texte du ``MessageLabel`` s'adapte à la fenêtre du jeu, cliquez "
+"sur l'cône placée à côté de votre propriété de texte. Cela ouvrira une "
+"nouvelle fenêtre où vous pourrez ajouter une nouvelle ligne entre les mots. "
+"La police par défaut pour les nœuds ``Control`` est petite et ne s'agrandit "
+"pas correctement. Il y a un fichier de police inclus dans les ressources du "
+"jeu appelé \"Xolonium-Regular.ttf\". Pour utiliser cette police, procédez "
+"comme suit pour chacun des trois nœuds ``Control`` :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
@@ -5109,7 +5089,6 @@ msgstr ""
 "bouton \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
-#, fuzzy
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr ""
 "Cette fonction est appelée dans ``Main`` chaque fois que le score change."
@@ -5346,25 +5325,16 @@ msgid "Project files"
 msgstr "Fichiers du projet"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "You can find a completed version of this project at these locations:"
-msgstr ""
-"Vous pouvez trouver une version complète de ce projet ici : https://github."
-"com/kidscancode/Godot3_dodge/releases"
+msgstr "Vous pouvez trouver une version complète de ce projet ici :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
-"Vous pouvez trouver une version complète de ce projet ici : https://github."
-"com/kidscancode/Godot3_dodge/releases"
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
-#, fuzzy
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
-"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
-"core/io/image_loader.h>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
@@ -5543,7 +5513,6 @@ msgstr ""
 "de votre jeu, comme un `.apk` pour Android ou un `.exe` pour Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
@@ -5590,7 +5559,6 @@ msgstr ""
 "d'exportation."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
@@ -5657,7 +5625,6 @@ msgstr ""
 "communiquer avec votre appareil."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
-#, fuzzy
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
@@ -5721,7 +5688,6 @@ msgstr ""
 "en une seule étape."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
@@ -5793,7 +5759,6 @@ msgstr ""
 "ceci :"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
@@ -5852,7 +5817,6 @@ msgstr ""
 "conception de Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
@@ -5922,7 +5886,6 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "En plus de cela, vous pouvez **hériter** de n'importe quelle scène."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code, except "
@@ -5936,7 +5899,6 @@ msgstr ""
 "en mélangeant et en faisant correspondre les deux."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
-#, fuzzy
 msgid ""
 "It’s different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -6103,7 +6065,6 @@ msgstr ""
 "place."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
-#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart’s content. You can also debug games easily, as "
@@ -6174,13 +6135,12 @@ msgstr ""
 "l'éditeur.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
-#, fuzzy
 msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
 "Cela conduit à un système d'interface utilisateur fiable et flexible car "
-"l'éditeur lui-même est propulsé avec. Avec le mot-clé ``tool``, vous pouvez "
+"l'éditeur lui-même est construit avec. Avec le mot-clé ``tool``, vous pouvez "
 "exécuter n'importe quel code de jeu dans l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
@@ -6226,7 +6186,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Conception d'interfaces avec les nœuds Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -6290,7 +6249,6 @@ msgstr ""
 "Godot <doc_ui_game_user_interface_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
-#, fuzzy
 msgid ""
 "Only use Control nodes when you design your interfaces. They have unique "
 "properties that allow them to work with one another. Other nodes, like "
@@ -6299,7 +6257,7 @@ msgid ""
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
 "Utilisez uniquement les nœuds Control lorsque vous concevez vos interfaces. "
-"Ils ont des propriétés uniques qui leur permettent d'intéragir les uns avec "
+"Ils ont des propriétés uniques qui leur permettent d’interagir les uns avec "
 "les autres. D'autres nœuds comme Node2D, Sprite, etc. ne fonctionneront pas. "
 "Vous pouvez toujours utiliser certains nœuds qui fonctionnent avec d'autres "
 "comme AnimationPlayer, Tween ou StreamPlayer. Les nœuds Control sont des "
@@ -6318,7 +6276,6 @@ msgid "Bounding rectangle"
 msgstr "Rectangle de délimitation"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-#, fuzzy
 msgid "Focus and focus neighbor"
 msgstr "Focus et focus voisin"
 
@@ -6401,7 +6358,6 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
-#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
@@ -6463,12 +6419,11 @@ msgstr ""
 "plus long est coupé aux limites du noeud"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
-"Comme pour les noeuds Sprite, vous pouvez moduler la couleur du noeud "
+"Comme pour les nœuds Sprite, vous pouvez moduler la couleur du nœud "
 "TextureRect. Cliquez sur la propriété ``Modulate`` et utilisez le sélecteur "
 "de couleur."
 
@@ -6568,7 +6523,6 @@ msgid "TextureProgress bar, two thirds filled"
 msgstr "Barre TextureProgress, remplie aux deux tiers"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
-#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -6592,18 +6546,17 @@ msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
-#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"**NinePatchRect** prend une texture divisée en 3 lignes et 3 colonnes. Le "
-"centre et les côtés du carreau se dupliquent lorsque vous mettez à l'échelle "
-"la texture, mais jamais les coins. Il est utile pour créer des panneaux, des "
-"boîtes de dialogue et des arrière-plans flexible pour votre interface "
-"utilisateur."
+"**NinePatchRect** prend une texture divisée en 3 lignes et 3 colonnes. La "
+"tuile du centre et celles des côtés se dupliquent lorsque vous mettez à "
+"l'échelle la texture, celles des coins ne sont jamais dupliquées. Il est "
+"utile pour créer des panneaux, des boîtes de dialogue et des arrière-plans "
+"flexible pour votre interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -6640,7 +6593,6 @@ msgstr ""
 "placer et redimensionner un élément d'interface utilisateur dans son parent."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
-#, fuzzy
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
@@ -6653,9 +6605,9 @@ msgstr ""
 "Les deux approches ne sont pas toujours compatibles. Puisqu'un conteneur "
 "contrôle ses enfants, vous ne pouvez pas utiliser le menu de mise en page "
 "sur eux. Chaque conteneur ayant un effet spécifique, vous aurez peut-être "
-"d'en emboîter plusieurs pour obtenir une interface fonctionnelle. Avec "
-"l'approche de mise en page, vous travaillez sur l'enfant à partir du bas "
-"vers le haut. Étant donné que vous n'insérez pas de conteneurs "
+"besoin d'en emboîter plusieurs pour obtenir une interface fonctionnelle. "
+"Avec l'approche de mise en page, vous travaillez sur l'enfant à partir du "
+"bas vers le haut. Étant donné que vous n'insérez pas de conteneurs "
 "supplémentaires dans la scène, vous obtiendrez des hiérarchies plus nettes, "
 "mais il sera plus difficile de disposer les éléments en rangée, en colonne, "
 "grille, etc."
@@ -6857,19 +6809,17 @@ msgid "Arrange control nodes automatically with containers"
 msgstr "Arrangez automatiquement les nœuds de contrôle avec les conteneurs"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
-#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor, so you can see the effect instantly."
 msgstr ""
-"Les conteneurs rangent automatiquement tous les nœuds Control enfants, y "
+"Les conteneurs rangent automatiquement tous les nœuds de contrôle enfants, y "
 "compris les autres conteneurs en rangées, colonnes et plus encore. Utilisez-"
-"les pour ajouter du rembourrage autour de votre interface ou des nœuds "
-"centraux dans leurs rectangles de délimitation. Tous les conteneurs intégrés "
-"sont mis à jour dans l'éditeur pour que vous puissiez voir l'effet "
-"instantanément."
+"les pour ajouter de l'espace autour de votre interface ou des nœuds centraux "
+"dans leurs rectangles de délimitation. Tous les conteneurs intégrés sont mis "
+"à jour dans l'éditeur pour que vous puissiez voir l'effet instantanément."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""
@@ -7030,13 +6980,12 @@ msgstr ""
 "automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
-#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
-"Le système d'interface utilisatuer de Godot est complexe et a beaucoup plus "
+"Le système d'interface utilisateur de Godot est complexe et a beaucoup plus "
 "à offrir. Pour apprendre à concevoir une interface plus avancée, rendez-vous "
 "dans la section :ref:`GUI section <toc-learn-features-gui>` de la "
 "documentation."
@@ -7065,14 +7014,15 @@ msgstr ""
 "d'énergie, une bombe et des compteurs d'argent"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
 "Vous allez apprendre comment concevoir une interface utilisateur (UI) "
-"efficace, et comment utilisé"
+"efficace et comment utiliser les nœuds de contrôle de Godot. Cette page se "
+"focalise sur la partie visuelle : tout ce qui est fait depuis l'éditeur. "
+"Pour apprendre à coder une barre de vie, lisez :doc:`ui_code_a_life_bar`"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
@@ -7121,13 +7071,12 @@ msgid "The UI's rough plan or mockup"
 msgstr "Le plan basique de l'interface utilisateur ou la maquette"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
-#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
-"Les placeholder ne sont pas obligatoirement moche, mais vous devez garder "
+"Les placeholders ne sont pas obligatoirement moche, mais vous devez garder "
 "les graphiques simples et concis. Évitez tout effet spécial, animation, et "
 "illustration détaillée avant que les joueurs ne testent votre interface "
 "utilisateur. Sinon :"
@@ -7516,7 +7465,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "Il n'y a pas d'espace entre le logo et les autres élements de l'UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid ""
 "To center the characters on the right, we'll use a ``CenterContainer``.  Add "
 "a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the "
@@ -7529,11 +7477,10 @@ msgstr ""
 "Pour centrer les caractères à droite, nous utiliserons un "
 "``CenterContainer``.  Ajoutez un noeud ``CenterContainer`` comme enfant du "
 "``HBoxContainer``. Ensuite, dans l'inspecteur, faites défiler vers le bas "
-"jusqu'à la catégorie \" Taille des drapeaux \" et cliquez sur le champ à "
-"droite de la propriété \" Vertical \", et cochez \" Développer \". Faites de "
-"même pour la propriété \"Horizontal\". Enfin, glissez et déposez les "
-"Characters dans le ``CenterContainer``. Les éléments Characters se centre "
-"automatiquement."
+"jusqu'à la catégorie \" Size Flags \" et cliquez sur le champ à droite de la "
+"propriété \" Vertical \", et cochez \" Développer \". Faites de même pour la "
+"propriété \"Horizontal\". Enfin, glissez et déposez les Characters dans le "
+"``CenterContainer``. Les éléments Characters se centre automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
 msgid ""
@@ -7569,7 +7516,6 @@ msgstr ""
 "disposition de l'interface utilisateur"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -7638,14 +7584,13 @@ msgstr ""
 "d'objets."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
-#, fuzzy
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
 "ratios. In Godot, we use containers to control the position and the size of "
 "UI elements."
 msgstr ""
-"Une interface utilisateur dite \"Responsive\" fait en sorte qu'elle s'adapte "
+"Une interface utilisateur dite \"Responsive\" fait en sorte de s'adapter "
 "correctement à tous les types d'écrans. Une télévision et un moniteur "
 "d'ordinateur possède des ratios et des tailles différentes. Dans Godot, nous "
 "utilisons des conteneurs pour contrôler la position et la taille des "
@@ -7851,14 +7796,12 @@ msgid "For now, let's start with a few containers."
 msgstr "Pour l'instant, commençons avec quelques conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
 "Créez une nouvelle scène et ajoutez un ``MarginContainer``. Sélectionnez le "
-"nœud et nommez-le ``GUI``. Sauvegardez ensuite la scène sous le nom ``GUI."
-"tscn``. Il contiendra toute l'interface graphique."
+"nœud et nommez-le ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
 msgid ""
@@ -7906,11 +7849,12 @@ msgid ""
 "the base for our GUI scene."
 msgstr ""
 "Nous voulons empiler les barres verticalement à l'intérieur du "
-"``HBoxContainer``. Pour ce faire, ajoutons un ``VBoxContainer`` et donnez-"
-"lui le nom de \"Bars\". Sélectionnez à nouveau le parent ``HBoxContainer`` "
-"et cette fois, ajoutez un autre ``HBoxContainer``. Celui-ci contiendra les "
-"compteurs, alors appelez-le \"Counters\". Avec ces quatre conteneurs, nous "
-"avons la base de notre scène GUI."
+"``HBoxContainer``. Pour ce faire, ajoutez un ``VBoxContainer``comme enfant "
+"du ``HBoxContainer`` et donnez-lui le nom de \"Bars\". Sélectionnez à "
+"nouveau le parent ``HBoxContainer`` et cette fois, ajoutez comme enfant un "
+"autre ``HBoxContainer``. Celui-ci contiendra les compteurs, alors appelez-le "
+"\"Counters\". Avec ces quatre conteneurs, nous avons la base de notre scène "
+"GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
@@ -8263,7 +8207,6 @@ msgstr ""
 "l'instant, nous allons corriger la taille bientôt."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
-#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -8384,7 +8327,6 @@ msgstr ""
 "la police. Notre compteur fonctionne maintenant comme prévu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so we need to set the ``Bars`` container take all the available horizontal "
@@ -8393,9 +8335,9 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
-"Pendant que nous y sommes, faisons en sorte que les ``Counters`` "
-"s'enclenchent sur le bord droit de la fenêtre du viewport. Pour ce faire, "
-"nous allons régler le conteneur ``Bars`` pour qu'il s'étende et prenne tout "
+"Pendant que nous y sommes, faisons en sorte que les ``Counters`` soient "
+"positionnés sur le bord droit de la fenêtre du viewport. Pour ce faire, nous "
+"allons régler le conteneur ``Bars`` pour qu'il s'étende et prenne tout "
 "l'espace horizontal. Sélectionnez le nœud ``Bars`` et faites défiler vers le "
 "bas jusqu'à la catégorie ``Size Flags``. Dans la catégorie ``Horizontal``, "
 "cochez la valeur ``Expand``. Le nœud ``Bars`` devrait se redimensionner et "
@@ -8770,7 +8712,6 @@ msgid "The Count looks better now it's a bit smaller"
 msgstr "Le noeud Count est plus sympa maintenant qu'il est un peu plus petit"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
-#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -8779,36 +8720,33 @@ msgid ""
 "align perfectly."
 msgstr ""
 "La taille du nœud ``Count`` affecte la position de ``TextureProgress``. "
-"Comme nous allons aligner nos barres verticalement, il vaut mieux utiliser "
-"la marge gauche du compteur pour redimensionner notre label EP. Ainsi, les "
-"nœuds du compteur de la barre d'énergie et de la barre de vie font une "
-"centaine de pixels de large donc les deux jauges s'alignent parfaitement."
+"Comme nous alignerons nos barres verticalement, il vaut mieux utiliser la "
+"marge gauche du compteur pour redimensionner notre label EP. De cette "
+"manière, les nœuds \"Count\" de \"EnergyBar's Count\" et \"LifeBar's Count\" "
+"ont une largeur de 100 pixels, de sorte que les deux jauges s'alignent "
+"parfaitement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and rupee counters"
 msgstr "Préparer les compteurs de bombes et de rubis"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
-#, fuzzy
 msgid ""
 "Let us now take care of the counters. Go to ``Scene -> New Inherited Scene`` "
 "and select the ``Counter.tscn`` as a base. Rename the root node as "
 "``BombCounter`` too. Save the new scene as ``BombCounter.tscn``. That's all "
 "for this scene."
 msgstr ""
-"Occupons-nous maintenant des compteurs. Allez dans ``Scene -> New Inherited "
-"Scene`` et sélectionnez ``Counter.tscn`` comme base. Renommez le noeud "
+"Occupons-nous maintenant des compteurs. Allez dans ``Scène -> Nouvelle scène "
+"héritée`` et sélectionnez ``Counter.tscn`` comme base. Renommez le nœud "
 "racine en tant que ``BombCounter```. Sauvegardez la nouvelle scène sous le "
 "nom de ``BombCounter.tscn``. C'est tout pour cette scène."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:529
-#, fuzzy
 msgid "The bomb counter is the same as the original Counter scene"
 msgstr "Le compteur de bombes est le même que celui de la scène originale"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``RupeeCounter`` and save the scene as "
@@ -8821,8 +8759,8 @@ msgid ""
 "keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"Allez à nouveau dans ``Scene -> New Inherited Scene`` et sélectionnez "
-"``Counter.tscn`` une fois de plus. Renommez le noeud racine ``RupeeCounter`` "
+"Allez à nouveau dans ``Scène -> Nouvelle scène héritée`` et sélectionnez "
+"``Counter.tscn`` une fois de plus. Renommez le nœud racine ``RupeeCounter`` "
 "et enregistrez la scène sous ``RupeeCounter.tscn``. Pour celui-ci, nous "
 "avons principalement besoin de remplacer l'icône de la bombe par l'icône du "
 "rubis. Dans l'onglet Système de fichiers, faites glisser le fichier "
@@ -8830,24 +8768,21 @@ msgstr ""
 "ci s'ancre déjà sur le bord droit du nœud \"Background\" afin que nous "
 "puissions changer sa position et qu'il se repositionne avec le conteneur "
 "\"RupeeCounter\". Déplacez un peu l'icône du rubis vers la droite et vers le "
-"bas. Utilisez les touches fléchées du clavier pour rectifier sa position. "
+"bas. Utilisez les touches flèches du clavier pour rectifier sa position. "
 "Sauvegardez, et nous en avons fini avec tous les éléments de l'interface "
 "utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The rupee counter should look about like this"
 msgstr "Le compteur de rubis devrait ressembler à ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
-#, fuzzy
 msgid "Add the UI components to the final GUI"
 msgstr ""
 "Ajouter les composants de l'interface utilisateur à l'interface graphique "
-"finale."
+"finale"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
-#, fuzzy
 msgid ""
 "Time to add all the UI elements to the main GUI scene. Open the ``GUI.tscn`` "
 "scene again, and delete the ``Bar`` and ``Counter`` nodes. In the FileSystem "
@@ -8858,17 +8793,15 @@ msgstr ""
 "Il est temps d'ajouter tous les éléments de l'interface utilisateur à la "
 "scène principale de l'interface graphique. Ouvrez à nouveau la scène ``GUI."
 "tscn`` et supprimez les nœuds ``Bar`` et ``Counter``. Dans le dock "
-"FileSystem, trouvez le ``LifeBar.tscn`` et faites-le glisser et déposez-le "
-"sur le conteneur ``Bars`` dans l'arbre de scène. Faites de même pour "
+"FileSystem, trouvez ``LifeBar.tscn`` et faites-la glisser et déposez-la sur "
+"le conteneur ``Bars`` dans l'arbre de scène. Faites de même pour "
 "``EnergyBar``. Vous devriez les voir s'aligner verticalement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:557
-#, fuzzy
 msgid "The LifeBar and the EnergyBar align automatically"
-msgstr "La barre de vie et la barre d'énergie sont automatiquement aligné"
+msgstr "La barre de vie et la barre d'énergie sont automatiquement alignées"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
 "onto the ``Counters`` node. They'll resize automatically."
@@ -8878,13 +8811,11 @@ msgstr ""
 "automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
-#, fuzzy
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
 "Les nœuds se redimensionnent pour prendre tout l'espace vertical disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -8894,10 +8825,10 @@ msgid ""
 "``HBoxContainer``."
 msgstr ""
 "Pour que ``RupeeCounter`` et ``BombCounter`` utilisent la taille que nous "
-"avons définie dans ``Counter.tscn``, nous devons changer ``Size Flags`` sur "
-"le conteneur ``Counters``. Sélectionnez le  nœud ``Counters`` et dépliez la "
-"section ``Size Flags`` dans l'Inspecteur. Décochez la balise ``Fill`` pour "
-"la propriété ``Vertical`` et cochez ``Shrink Center`` pour que le conteneur "
+"avons définie dans ``Counter.tscn``, nous devons changer ``Size Flags`` du "
+"conteneur ``Counters``. Sélectionnez le  nœud ``Counters`` et déroulez la "
+"section ``Size Flags`` dans l'Inspecteur. Décochez la case ``Fill`` pour la "
+"propriété ``Vertical`` et cochez ``Shrink Center`` pour que le conteneur "
 "soit centré à l'intérieur de ``HBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
@@ -8913,7 +8844,6 @@ msgstr ""
 "la hauteur du fond des compteurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -8927,7 +8857,7 @@ msgstr ""
 "barres doivent être alignées verticalement. Cliquez sur l'icône à côté du "
 "nœud ``EnergyBar`` pour ouvrir sa scène. Sélectionnez le nœud ``Count`` et "
 "faites défiler vers le bas jusqu'à la section ``Custom Constant``. Mettre "
-"``20`` à  ``Margin Left``. Dans la section ``Rect``, réglez ``Min Size`` à "
+"``Margin Left`` à ``20``. Dans la section ``Rect``, réglez ``Min Size`` à "
 "100, la même valeur que sur la barre de vie. ``Count`` devrait maintenant "
 "avoir une marge à gauche. Si vous sauvegardez et retournez à la scène de "
 "l'interface graphique, elle sera alignée verticalement avec ``LifeBar``."
@@ -8937,24 +8867,21 @@ msgid "The 2 bars align perfectly"
 msgstr "Les 2 barres sont parfaitement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
-#, fuzzy
 msgid ""
 "We could have setup the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
-"Nous aurions pu installer ``EnergyBar`` de cette façon il y a quelques "
-"instants. Mais cela vous montre que vous pouvez retourner à n'importe quelle "
-"scène à tout moment, l'ajuster et voir les changements se répercuter tout le "
-"long du projet !"
+"Nous aurions pu installer ``EnergyBar`` de cette façon plus tôt. Mais cela "
+"vous montre que vous pouvez retourner à n'importe quelle scène à tout "
+"moment, l'ajuster et voir les changements se répercuter tout le long du "
+"projet !"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
-#, fuzzy
 msgid "Place the GUI onto the game's mockup"
 msgstr "Placez l'interface graphique sur la maquette du jeu"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
-#, fuzzy
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
 "scene."
@@ -8963,12 +8890,10 @@ msgstr ""
 "scène de la maquette du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:607
-#, fuzzy
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
 msgstr "Dirigez-vous vers le dock FileSystem et ouvrez ``LevelMockup.tscn``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:609
-#, fuzzy
 msgid ""
 "Drag-and-drop the ``GUI.tscn`` scene right below the ``bg`` node and above "
 "the ``Characters``. The GUI will scale to fit the entire viewport. Head to "
@@ -8994,7 +8919,6 @@ msgstr ""
 "retrouver le projet final `ici <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
-#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "
@@ -9026,13 +8950,12 @@ msgid "Intro"
 msgstr "Introduction"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
-#, fuzzy
 msgid ""
 "In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
 "Dans ce tutoriel, vous allez connecter un personnage à une barre de vie et "
-"animer la perte de santé."
+"animer la perte de vie."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
@@ -9115,7 +9038,6 @@ msgid "To do this, we will use **signals**."
 msgstr "Pour ce faire, nous utiliserons des **signaux**."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
@@ -9152,7 +9074,6 @@ msgstr ""
 "deux dossiers : `start` et `end`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
-#, fuzzy
 msgid ""
 "Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
 "click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
@@ -9198,7 +9119,6 @@ msgstr ""
 "enfants"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
-#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the game's Graphical User Interface. It "
 "comes with a barebones script where we get the path to nodes that exist "
@@ -9206,7 +9126,7 @@ msgid ""
 msgstr ""
 "La scène de l'interface graphique contient tous les éléments de l'interface "
 "graphique. Elle est attaché à un script permettant de récupérer les "
-"informations des différents éléments de la scène:"
+"informations des différents éléments de la scène :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
 msgid ""
@@ -9315,7 +9235,6 @@ msgstr ""
 "`Player` à l'interface `GUI` : `health / max_health * 100` ."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:143
-#, fuzzy
 msgid ""
 "Click the script icon to the right of the ``GUI`` in the Scene dock to open "
 "its script. In the ``_ready`` function, we're going to store the "
@@ -9327,7 +9246,7 @@ msgstr ""
 "nous allons récupérer la vie maximale ``max_health`` du joueur ``Player`` et "
 "la stocker dans une nouvelle variable ``player_max_health``. Cette variable "
 "est ensuite utilisée pour initialiser la valeur maximale ``max_value`` de la "
-"barre de vie ``bar``:"
+"barre de vie ``bar`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:164
 #, fuzzy
@@ -9347,7 +9266,6 @@ msgstr ""
 "On accèdent donc bien à la valeur maximale de vie du joueur."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:170
-#, fuzzy
 msgid ""
 "The second line assigns this value to ``bar.max_value``. You could combine "
 "the two lines into one, but we'll need to use ``player_max_health`` again "
@@ -9359,18 +9277,16 @@ msgstr ""
 "variable``player_max_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:174
-#, fuzzy
 msgid ""
 "``Player.gd`` sets the ``health`` to ``max_health`` at the start of the "
 "game, so we could work with this. Why do we still use ``max_health``? There "
 "are two reasons:"
 msgstr ""
-"Le script associée au nœud joueur``Player.gd`` initialise la valeur de vie à "
-"la valeur de vie maximale au début du jeu. Alors pourquoi utiliser la "
-"variable ``max_health``?  Il y a deux raisons:"
+"Le script associée au nœud joueur``Player.gd`` initialise la valeur de vie "
+"``health`` à la valeur de vie maximale ``max_health`` au début du jeu. Alors "
+"pourquoi utiliser la variable ``max_health``?  Il y a deux raisons :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:178
-#, fuzzy
 msgid ""
 "We don't have the guarantee that ``health`` will always equal "
 "``max_health``: a future version of the game may load a level where the "
@@ -9381,7 +9297,6 @@ msgstr ""
 "niveau où le joueur a déjà perdu de la vie."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:184
-#, fuzzy
 msgid ""
 "When you open a scene in the game, Godot creates nodes one by one, following "
 "the order in your Scene dock, from top to bottom. `GUI` and `Player` are not "
@@ -9427,7 +9342,6 @@ msgstr ""
 "signaux que nous avons créés pour vous : `died` et `health_changed`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:197
-#, fuzzy
 msgid ""
 "Why don't we directly get the ``Player`` node in the ``_process`` function "
 "and look at the health value? Accessing nodes this way creates tight "
@@ -9488,27 +9402,24 @@ msgstr ""
 "gratuitement."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
-#, fuzzy
 msgid ""
 "With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
 "and click on the Node tab. This is the place to connect nodes to listen to "
 "the one you selected."
 msgstr ""
-"Dans cette optique, connectons le ``GUI`` à ``Player``. Cliquez sur le nœud "
-"``Player`` dans le dock de scène pour le sélectionner. Dirigez-vous vers "
-"l'inspecteur et cliquez sur l'onglet Nœud. C'est l'endroit où connecter les "
-"nœuds, pour écouter celui que vous avez sélectionné."
+"Dans cette optique, connectons le nœud ``GUI`` à ``Player``. Cliquez sur le "
+"nœud ``Player`` dans le dock de scène pour le sélectionner. Dirigez-vous "
+"vers l'inspecteur et cliquez sur l'onglet Nœud. C'est l'endroit où connecter "
+"les nœuds, pour écouter celui que vous avez sélectionné."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
-#, fuzzy
 msgid "The first section lists custom signals defined in ``Player.gd``:"
 msgstr ""
-"La première section énumère les signaux personnalisés définis dans ``player."
-"GD`` :"
+"La première section énumère les signaux personnalisés définis dans ``Player."
+"gd`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:226
-#, fuzzy
 msgid ""
 "``died`` is emitted when the character died. We will use it in a moment to "
 "hide the UI."
@@ -9525,7 +9436,6 @@ msgid "We're connecting to the health\\_changed signal"
 msgstr "On se connecte au signal health\\_changed"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:234
-#, fuzzy
 msgid ""
 "Select ``health_changed`` and click on the Connect button in the bottom "
 "right corner to open the Connect Signal window. On the left side you can "
@@ -9538,10 +9448,10 @@ msgstr ""
 "Sélectionnez ``health_changed`` et cliquez sur le bouton Connecter dans le "
 "coin inférieur droit pour ouvrir la fenêtre Connecter un signal. Sur le côté "
 "gauche, vous pouvez choisir le nœud qui écoutera ce signal. Sélectionnez le "
-"nœud ``GUI``. Le côté droit de l'écran vous permet d'empaqueter des valeurs "
+"nœud ``GUI``. Le côté droit de l'écran vous permet d'ajouter des valeurs "
 "optionnelles avec le signal. Nous nous en sommes déjà occupés dans ``player."
 "GD``. En général, je recommande de ne pas ajouter trop d'arguments en "
-"utilisant cette fenêtre car ils sont moins pratiques que de le faire à "
+"utilisant cette fenêtre car ils sont moins pratiques que ceux ajouter à "
 "partir du code."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:244
@@ -9549,7 +9459,6 @@ msgid "The Connect Signal window with the GUI node selected"
 msgstr "La fenêtre Connecter un signal avec le nœud GUI sélectionné"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:248
-#, fuzzy
 msgid ""
 "You can optionally connect nodes from the code. However doing it from the "
 "editor has two advantages:"
@@ -9572,7 +9481,6 @@ msgstr ""
 "de scène"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:253
-#, fuzzy
 msgid ""
 "At the bottom of the window you will find the path to the node you selected. "
 "We're interested in the second row called \"Method in Node\". This is the "
@@ -9610,7 +9518,6 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot écrit la méthode de rappel pour vous et vous y emmène"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
-#, fuzzy
 msgid ""
 "Inside the parens after the function name, add a ``player_health`` argument. "
 "When the player emits the ``health_changed`` signal, it will send its "
@@ -9622,7 +9529,6 @@ msgstr ""
 "Votre code devrait ressembler à :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
-#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
 "be using PascalCase for method names & camelCase for method parameters, "
@@ -9636,7 +9542,6 @@ msgstr ""
 "capitalization-conventions>`_"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
-#, fuzzy
 msgid ""
 "In Player.gd, when the Player emits the health\\_changed signal, it also "
 "sends its health value"
@@ -9645,7 +9550,6 @@ msgstr ""
 "il envoies aussi la valeur health"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
-#, fuzzy
 msgid ""
 "Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
@@ -9654,72 +9558,62 @@ msgstr ""
 "``update_health`` avec la variable ``player_health`` comme argument."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:307
-#, fuzzy
 msgid ""
 "We could directly update the health value on `LifeBar` and `Number`. There "
 "are two reasons to use this method instead:"
 msgstr ""
 "On pourrait directement mettre à jour la valeur de vie dans `LifeBar` et "
-"`Number`. Il y a deux raisons pour utilisé cette fonction :"
+"`Number`. Il y a deux raisons pour utiliser cette fonction à la place :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:309
-#, fuzzy
 msgid ""
 "The name makes it clear for our future selves and teammates that when the "
 "player took damage, we update the health count on the GUI"
 msgstr ""
-"Le nom est plus représentatif pour nous et nos camarades que lorsque le "
+"Le nom est explicite pour nous et nos camarades sur le fait que lorsque le "
 "joueur prends un coup, nous mettons à jour le compteur de vie dans "
-"l'interface."
+"l'interface"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:310
-#, fuzzy
 msgid "We will reuse this method a bit later"
 msgstr "On réutilisera cette fonction plus tard"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:312
-#, fuzzy
 msgid ""
 "Create a new ``update_health`` method below ``_on_Player_health_changed``. "
 "It takes a new\\_value as its only argument:"
 msgstr ""
 "Créer une nouvelle fonction  ``update_health`` après "
 "``_on_Player_health_changed``. Elle prends ``new\\_value`` comme seul "
-"argument."
+"argument :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:327
-#, fuzzy
 msgid "This method needs to:"
 msgstr "Cette fonction a besoin de :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:329
-#, fuzzy
 msgid ""
 "set the ``Number`` node's ``text`` to ``new_value`` converted to a string"
 msgstr ""
 "d'assigner ``new_value`` à la propriété ``text`` du nœud ``Number``. Il ne "
-"faut pas oublier de convertir cette valeur en chaîne de caractères."
+"faut pas oublier de convertir cette valeur en chaîne de caractères"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:331
-#, fuzzy
 msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr ""
-"d'assigner ``new_value`` à la propriété ``value`` du nœud "
-"``TextureProgress``."
+"d'assigner ``new_value`` à la propriété ``value`` du nœud ``TextureProgress``"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
-#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
 "``Number``'s ``text`` property requires a string, so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
-"``str`` est une fonction qui converti une valeur en texte. La propriété "
-"``text`` de ``Number`` n 'accepte que les chaîne de caractères, on ne peut "
-"pas assigner ``new_value`` directement"
+"``str`` est une fonction intégrée qui convertit une valeur en texte. La "
+"propriété ``text`` de ``Number`` n 'accepte que les chaînes de caractères, "
+"on ne peut pas assigner ``new_value`` directement"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
-#, fuzzy
 msgid ""
 "Also call ``update_health`` at the end of the ``_ready`` function to "
 "initialize the ``Number`` node's ``text`` with the right value at the start "
@@ -9728,23 +9622,22 @@ msgid ""
 msgstr ""
 "Il faut appeler notre nouvelle fonction ``update_health`` à la  fin de la "
 "fonction ``_ready`` pour initialiser la propriété ``text`` dans le nœud "
-"``Number`` avec la bonne valeur.\n"
-"Lancez le jeu avec F5: la barre de vie se mets à jour à chaque coup!"
+"``Number`` avec la bonne valeur au démarrage du jeu.\n"
+"Lancez le jeu avec F5 :  la barre de vie se met à jour à chaque attaque !"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:361
-#, fuzzy
 msgid ""
 "Both the Number node and the TextureProgress update when the Player takes a "
 "hit"
-msgstr "A chaque coup, le nombre et la barre de vie se mettes à jour"
+msgstr ""
+"À chaque attaque, le nœud Number et le nœud TextureProgress (la barre de "
+"vie) se mettent à jour"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:365
-#, fuzzy
 msgid "Animate the loss of life with the Tween node"
 msgstr "Animer la perte de vie avec un nœud Tween"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
-#, fuzzy
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
@@ -9760,62 +9653,52 @@ msgstr ""
 "``TextureProgress`` entre deux états, avant et après le coup."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
-#, fuzzy
 msgid ""
 "The ``GUI`` scene already contains a ``Tween`` child node stored in the "
 "``tween`` variable. Let's now use it. We have to make some changes to "
 "``update_health``."
 msgstr ""
 "La scène ``GUI`` contient déjà un nœud enfant ``Tween`` qui est assigné à la "
-"variable ``tween`` dans notre script. On peut maintenant l'utiliser, et "
-"faire quelques modifications dans notre fonction ``update_health``."
+"variable ``tween`` dans notre script. On peut maintenant l'utiliser, nous "
+"avons à faire quelques modifications dans notre fonction ``update_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:378
-#, fuzzy
 msgid ""
 "We will use the ``Tween`` node's ``interpolate_property`` method. It takes "
 "seven arguments:"
 msgstr ""
 "Nous utiliserons la méthode ``interpolate_property`` du nœud ``Tween``. Elle "
-"prends sept paramètres :"
+"prend sept paramètres :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:381
-#, fuzzy
 msgid "A reference to the node who owns the property to animate"
-msgstr "Le nœud dont la propriété est à animer"
+msgstr "Une référence au nœud dont la propriété est à animer"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:382
-#, fuzzy
 msgid "The property's identifier as a string"
 msgstr "Le nom de la propriété en chaîne de caractère"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:383
-#, fuzzy
 msgid "The starting value"
 msgstr "La valeur initiale"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:384
-#, fuzzy
 msgid "The end value"
 msgstr "La valeur finale"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:385
-#, fuzzy
 msgid "The animation's duration in seconds"
 msgstr "La durée de l'animation en seconde"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:386
-#, fuzzy
 msgid "The type of the transition"
 msgstr "Le type de transition"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:387
-#, fuzzy
 msgid "The easing to use in combination with the equation."
-msgstr "Le \"easing\" à utiliser."
+msgstr "Le \"easing\" à utiliser en combinaison avec l'équation."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
-#, fuzzy
 msgid ""
 "The last two arguments combined correspond to an `easing equation <#>`__. "
 "This controls how the value evolves from the start to the end point."
@@ -9825,7 +9708,6 @@ msgstr ""
 "valeur initiale et finale."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
-#, fuzzy
 msgid ""
 "Click the script icon next to the ``GUI`` node to open it again. The "
 "``Number`` node needs text to update itself, and the ``Bar`` needs a float "
@@ -9835,13 +9717,12 @@ msgid ""
 msgstr ""
 "Cliquez sur l'icône de script à côté du nœud ``GUI`` pour l'ouvrir à "
 "nouveau. Le nœud ``Number`` a besoin de texte pour se mettre à jour, et "
-"``Bar`` a besoin d'une flottante ou d'un entier. On peut utiliser "
+"``Bar`` a besoin d'un flottant ou d'un entier. On peut utiliser "
 "``interpolate_property`` pour animer un nombre, mais pas pour animer du "
 "texte directement. Nous allons l'utiliser pour animer une nouvelle variable "
 "``GUI`` nommée ``animated_health``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:399
-#, fuzzy
 msgid ""
 "At the top of the script, define a new variable, name it "
 "``animated_health``, and set its value to 0. Navigate back to the "
@@ -9855,12 +9736,10 @@ msgstr ""
 "\". Appelez la fonction``interpolate_property`` du nœud ``Tween`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:421
-#, fuzzy
 msgid "Let's break down the call:"
 msgstr "Décomposons l'appel :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:427
-#, fuzzy
 msgid ""
 "We target ``animated_health`` on ``self``, that is to say the ``GUI`` node. "
 "``Tween``'s interpolate\\_property takes the property's name as a string. "
@@ -9873,7 +9752,6 @@ msgstr ""
 "\"animated_health\"``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:435
-#, fuzzy
 msgid ""
 "The starting point is the current value the bar's at. We still have to code "
 "this part, but it's going to be ``animated_health``. The end point of the "
@@ -9887,7 +9765,6 @@ msgstr ""
 "Et ``0.6`` est la durée de l'animation en seconde."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:445
-#, fuzzy
 msgid ""
 "The last two arguments are constants from the ``Tween`` class. "
 "``TRANS_LINEAR`` means the animation should be linear. ``EASE_IN`` doesn't "
@@ -9900,18 +9777,16 @@ msgstr ""
 "sinon on aura une erreur."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:450
-#, fuzzy
 msgid ""
 "The animation will not play until we activated the ``Tween`` node with "
 "``tween.start()``. We only have to do this once if the node is not active. "
 "Add this code after the last line:"
 msgstr ""
 "Cette animation étant défini, elle ne sera joué que lorsque le nœud "
-"``Tween``sera activé avec ``tween.start()``. On peut lancé l'animation une "
-"fois si le nœud n'est pas actif, en ajoutant ce code à la dernière ligne :"
+"``Tween``sera activé avec ``tween.start()``. Il suffit de lancer l'animation "
+"une fois si le nœud n'est pas actif. Ajoutons ce code à la dernière ligne :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:469
-#, fuzzy
 msgid ""
 "Although we could animate the `health` property on the `Player`, we "
 "shouldn't. Characters should lose life instantly when they get hit. It makes "
@@ -9920,32 +9795,30 @@ msgid ""
 "`tween` node is perfect for code-controlled animations. For hand-made "
 "animations, check out `AnimationPlayer`."
 msgstr ""
-"Même si on aurait pu animer la propriété `health` de `Player`, ce n'est pas "
-"intéressant dans notre cas. Les personnages devrait perdre leur vie "
-"instantanément quand ils sont touchés. Sinon on pourrait être encore en vie "
-"durant l'animation de la propriété. On voudra toujours stocker les "
-"animations dans des nœuds différents. Le nœud `Tween` est parfait pour "
-"animer à l'aide d'un script, mais pour lancer autrement l'animation, il "
-"faudrait utiliser le nœud `AnimationPlayer`."
+"Même si nous aurions pu animer la propriété `health` de `Player`, ce n'est "
+"pas pertinent dans notre cas. Les personnages doivent perdre leur vie "
+"instantanément quand ils sont touchés. Cela rend la gestion des états des "
+"personnages plus simple, comme savoir si un personnage est mort. Nous "
+"voudrons toujours stocker les animations dans des conteneurs de données ou "
+"des nœuds séparés. Le nœud `Tween` est parfait pour animer à l'aide d'un "
+"script. Pour créer des animations en passant par l'éditeur, il faut utiliser "
+"le nœud `AnimationPlayer`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:472
-#, fuzzy
 msgid "Assign the animated\\_health to the LifeBar"
-msgstr "Relier animated\\_health et la barre de vie"
+msgstr "Assigner animated\\_health à la barre de vie"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:474
-#, fuzzy
 msgid ""
 "Now the ``animated_health`` variable animates but we don't update the actual "
 "``Bar`` and ``Number`` nodes anymore. Let's fix this."
 msgstr ""
-"Notre variable ``animated_health`` est maintenant animée mais elle n'est pas "
-"relier aux nœuds ``Bar``et ``Number``."
+"Notre variable ``animated_health`` est maintenant animée mais nous ne "
+"mettons plus à jour les nœuds ``Bar``et ``Number``. Arrangeons cela."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:477
-#, fuzzy
 msgid "So far, the update\\_health method looks like this:"
-msgstr "Jusqu'à maintenant, la fonction update\\_health ressemble à cela:"
+msgstr "Jusqu'à maintenant, la fonction update\\_health ressemble à cela :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:501
 msgid ""
@@ -9967,40 +9840,38 @@ msgstr ""
 "les noeuds `Number` et `TextureProgress`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:525
-#, fuzzy
 msgid ""
 "Play the game to see the bar animate smoothly. But the text displays decimal "
 "number and looks like a mess. And considering the style of the game, it'd be "
 "nice for the life bar to animate in a choppier fashion."
 msgstr ""
-"Jouer au jeu pour observer la barre animée. Mais le texte affiche un nombre "
-"décimal et fait n'importe quoi. En considérant le style du jeu, ça serait "
-"bien pour la barre de vie de s'animer d'une façon plus saccadé."
+"Lancez le jeu, vous observez que la barre s'anime sans accroc. Par contre le "
+"texte affiche un nombre décimal et fait n'importe quoi. De plus, en "
+"considérant le style du jeu, il serait bien que la barre de vie de s'anime "
+"d'une façon plus saccadée."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
-#, fuzzy
 msgid "The animation is smooth, but the number is broken"
 msgstr "L'animation est fluide mais le nombre est cassé"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
-#, fuzzy
 msgid ""
 "We can fix both problems by rounding out ``animated_health``. Use a local "
 "variable named ``round_value`` to store the rounded ``animated_health``. "
 "Then assign it to ``number_label.text`` and ``bar.value``:"
 msgstr ""
-"On peut résoudre les deux problemes en arondissant la variable "
+"On peut résoudre les deux problèmes en arrondissant la variable "
 "``animated_health``. Utiliser une varible locale ``round_value`` pour "
-"stocker l'arrondi. Puis assigner la à ``number_label.text`` et ``bar.value``:"
+"stocker l'arrondi. Puis assigner la à ``number_label.text`` et ``bar."
+"value`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:555
-#, fuzzy
 msgid "Try the game again to see a nice blocky animation."
 msgstr ""
-"Essayez le jeu une nouvelle fois pour voir une belle animation groupée."
+"Essayez le jeu une nouvelle fois pour voir une belle animation blocs par "
+"blocs."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
-#, fuzzy
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "En arrondissant animated\\_health, on a fait d'une pierre deux coups"
 
@@ -10023,9 +9894,8 @@ msgstr ""
 "illusion. Si le joueur prends 3 dégâts, c'est immédiat."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
-#, fuzzy
 msgid "Fade the bar when the Player dies"
-msgstr "Fais un fondu de la barre quand le joueur meurt"
+msgstr "Réaliser un fondu de la barre quand le joueur meurt"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
 #, fuzzy
@@ -10831,6 +10701,8 @@ msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
+"Créez un objet Ressource dans l'Inspecteur. Cela peut même être un type qui "
+"dérive de Ressource, du moment que votre script hérite de ce type."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
@@ -10928,6 +10800,9 @@ msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
+"Les CurveTables sont la même chose, sauf qu'elles sont mappées à un tableau "
+"de valeurs flottantes ou à un objet ressource :ref:`Curve <class_Curve>`/:"
+"ref:`Curve2D <class_Curve2D>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""
@@ -11490,7 +11365,10 @@ msgstr ""
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
-msgstr "Quand une scène (ou une partie de celle-ci)"
+msgstr ""
+"Quand une scène (ou une partie de celle-ci) est enlevée, ils reçoivent la "
+"notification \"exit scene\" (fonction de rappel _exit_tree() dans GDScript), "
+"du nœud le plus bas vers celui le plus haut"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:141
 msgid "Changing current scene"
@@ -11512,6 +11390,10 @@ msgid ""
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_change_scene_to>`:"
 msgstr ""
+"Au lieu d'utiliser des chemins de fichiers, vous pouvez aussi utiliser la "
+"ressource déjà prête :ref:`PackedScene <class_PackedScene>` en utilisant la "
+"fonction équivalente :ref:`SceneTree.change_scene_to(PackedScene scene) "
+"<class_SceneTree_change_scene_to>` :"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 #, fuzzy
@@ -12613,12 +12495,17 @@ msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
 msgstr ""
+"Implicite : Tous les champs publics de la classe sont automatiquement "
+"sérialisés si le type est sérialisable (``Dictionary`` n'est pas "
+"sérialisable)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
 msgstr ""
+"Explicite: Les champs non-publics peuvent être sérialisés en utilisant "
+"l'attribut ``[SerializeField]``."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
 msgid ""
@@ -12629,6 +12516,12 @@ msgid ""
 "This workflow is explained `here <../scripting/gdscript/gdscript_basics."
 "html#exports>`_."
 msgstr ""
+"Godot a également un système intégré de sérialisation de scripts, mais il ne "
+"fonctionne qu'explicitement. Vous pouvez sérialiser n'importe quel type "
+"sérialisable (:ref:`types intégrés au moteur "
+"<doc_binary_serialization_api>`, y compris :ref:`class_Array` et :ref:"
+"`class_Dictionary`) en utilisant le mot-clé ``export``. Ce fonctionnement "
+"est expliqué `ici <../scripting/gdscript/gdscript_basics.html#exports>`_."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:254
 msgid ""
@@ -12999,7 +12892,7 @@ msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "jetbrains rider"
-msgstr ""
+msgstr "jetbrains rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
@@ -13676,6 +13569,9 @@ msgid ""
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats)"
 msgstr ""
+"Ces opérateurs ont le même comportement qu'en C++. La division d'entiers est "
+"tronquée plutôt que de retourner un nombre fractionnaire, et l'opérateur % "
+"n'est disponible que pour les ints (\"fmod\" pour les floats)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
@@ -14282,6 +14178,10 @@ msgid ""
 "specified, the variable will be forced to have always that same type, and "
 "trying to assign an incompatible value will raise an error."
 msgstr ""
+"Les variables peuvent optionnellement avoir une spécification de type. "
+"Lorsqu'un type est spécifié, la variable sera obligée d'avoir toujours le "
+"même type, et essayer d'assigner une valeur incompatible entraînera une "
+"erreur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:563
 #, fuzzy
@@ -14297,12 +14197,16 @@ msgid ""
 "If the variable is initialized within the declaration, the type can be "
 "inferred, so it's possible to omit the type name::"
 msgstr ""
+"Si la variable est initialisée dans la déclaration, le type peut être "
+"déduit, il est donc possible de ne pas mettre le nom du type :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:577
 msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
 msgstr ""
+"L'inférence de type n'est possible que si la valeur affectée a un type "
+"défini, sinon une erreur sera générée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:580
 #: ../../docs/tutorials/shading/shading_language.rst:27
@@ -14312,17 +14216,19 @@ msgstr "Les types valides sont:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:582
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
-msgstr ""
+msgstr "Types intégrés (Array, Vector2, int, String, etc.)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:583
 msgid "Engine classes (Node, Resource, Reference, etc.)"
-msgstr ""
+msgstr "Classes du moteur (Node, Resource, Reference, etc.)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:584
 msgid ""
 "Constant names if they contain a script resource (``MyScript`` if you "
 "declared ``const MyScript = preload(\"res://my_script.gd\")``)."
 msgstr ""
+"Les noms des constantes s'ils contiennent un script ressource (``MyScript`` "
+"si vous avez déclaré ``const MyScript = preload(\"res://my_script.gd\")``)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
 msgid ""
@@ -14330,6 +14236,9 @@ msgid ""
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
 "InnerClass`` in the same scope)"
 msgstr ""
+"Les autres classes dans le même script, en respectant la portée "
+"(``InnerClass.NestedClass`` si vous avez déclaré ``class NestedClass`` à "
+"l'intérieur de ``class InnerClass`` dans la même portée)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:586
 msgid "Script classes declared with the ``class_name`` keyword."
@@ -14338,7 +14247,7 @@ msgstr "Les classes de script déclarées avec le mot-clé ``class_name``."
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:589
 #: ../../docs/tutorials/shading/shading_language.rst:102
 msgid "Casting"
-msgstr ""
+msgstr "Conversion de type"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:591
 msgid ""
@@ -14346,30 +14255,42 @@ msgid ""
 "needed to coerce a value to be of a certain type, in particular for object "
 "types, you can use the casting operator ``as``."
 msgstr ""
+"Les valeurs affectées à des variables typées doivent avoir un type "
+"compatible. S'il est nécessaire de contraindre une valeur à être d'un "
+"certain type, surtout pour les types d'objet, vous pouvez utiliser "
+"l'opérateur de conversion `` as``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:595
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
 msgstr ""
+"La conversion de types d'objets résulte en le même objet si la valeur est du "
+"même type ou d'un type enfant du type de conversion."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:603
 msgid ""
 "If the value is not a subtype, the casting operation will result in a "
 "``null`` value."
 msgstr ""
+"Si la valeur n'est pas un type enfant, l'opération de conversion se "
+"résultera en une valeur ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:610
 msgid ""
 "For built-in types, they will be forcibly converted if possible, otherwise "
 "the engine will raise an error."
 msgstr ""
+"Pour les types intégrés, ils seront convertis de force si possible, sinon le "
+"moteur générera une erreur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:619
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with tree::"
 msgstr ""
+"La conversion de type est également utile pour avoir de meilleures variables "
+"de types sûrs en interagissant avec des arbres ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:629
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
@@ -14392,6 +14313,9 @@ msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
 msgstr ""
+"Même si le type des constantes est implicitement spécifié par la valeur "
+"assignée, il est également possible d'ajouter une spécification explicite du "
+"type::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:651
 msgid "Assigning a value of an incompatible type will raise an error."
@@ -14461,12 +14385,16 @@ msgstr ""
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr ""
+"Si l'argument d'une fonction a une valeur par défaut, il est possible "
+"d'inférer le type::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:708
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
 msgstr ""
+"Le type de retour de la fonction peut être spécifié après la liste "
+"d'arguments en utilisant le jeton de flèche (``->``)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:714
 msgid ""
@@ -14475,6 +14403,11 @@ msgid ""
 "functions can return early with the ``return`` keyword, but they can't "
 "return any value."
 msgstr ""
+"Les fonctions qui ont un type de retour **doivent** retourné une valeur "
+"appropriée. Paramétrer le type d'une fonction à ``void`` signifie qu'elle ne "
+"retournera rien. Les fonctions voids peuvent retourner à l'avance en "
+"utilisant le mot-clé ``return``, mais elles ne peuvent pas retourner de "
+"valeurs."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:723
 msgid ""
@@ -14623,7 +14556,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:853
 msgid "Basic syntax:"
-msgstr "Syntaxe de base:"
+msgstr "Syntaxe de base :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:866
 #, fuzzy
@@ -16163,11 +16096,11 @@ msgstr "Vous apprendrez :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
 msgid "**How to use types in GDScript**"
-msgstr ""
+msgstr "**Comment utiliser les types en GDScript**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr ""
+msgstr "Les **types statiques peuvent aider à éviter les bugs**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
@@ -16175,6 +16108,10 @@ msgid ""
 "can use it only in some sensitive GDScript files, use it everywhere, or "
 "write code like you always did!"
 msgstr ""
+"Vous êtes libre de choisir où et comment utiliser cette nouvelle "
+"fonctionnalité linguistique: vous ne pouvez l'utiliser que dans certains "
+"fichiers sensibles GDScript, l'utiliser partout ou écrire du code comme vous "
+"l'avez toujours fait !"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
 msgid ""
@@ -16184,11 +16121,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr ""
+msgstr "Le GDScript typé est disponible depuis Godot 3.1."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
 msgid "A brief look at static typing"
-msgstr ""
+msgstr "Un bref aperçu de la saisie statique"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
 msgid ""
@@ -16196,6 +16133,10 @@ msgid ""
 "gives you and your teammates more information as you’re working, as the "
 "arguments’ types show up when you call a method."
 msgstr ""
+"Avec le GDScript typé, Godot peut détecter encore plus d’erreurs lors de "
+"l’écriture du code! Cela vous donne, à vous et à vos coéquipiers, plus "
+"d’informations pendant que vous travaillez, les types d’arguments "
+"apparaissant lorsque vous appelez une méthode."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
 msgid ""
@@ -16204,6 +16145,11 @@ msgid ""
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
+"Imaginons que vous programmez un système d’inventaire. Vous codez un noeud "
+"`` Item``, puis un `` Inventaire``. Pour ajouter des éléments à "
+"l'inventaire, les personnes qui travaillent avec votre code doivent toujours "
+"passer un `` Item`` à la méthode `` Inventaire.add``. Avec les types, vous "
+"pouvez imposer ceci :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:48
 msgid ""
@@ -16213,6 +16159,12 @@ msgid ""
 "issues at runtime, but lets you decide whether or not you want to leave the "
 "code as it is. More on that in a moment."
 msgstr ""
+"Un autre avantage significatif du GDScript typé est le nouveau ** système "
+"d’avertissement **. Depuis la version 3.1, Godot vous avertit lors de la "
+"rédaction de votre code: le moteur identifie des sections de votre code "
+"susceptibles de générer des problèmes lors de l'exécution, mais vous permet "
+"de décider si vous souhaitez ou non laisser le code tel quel. Vous en saurez "
+"plus dans un instant."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
 msgid ""
@@ -16233,6 +16185,10 @@ msgid ""
 "you’re passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
+"Cela est dû au code dynamique. Godot ne peut pas savoir quel type de nœud ou "
+"de valeur vous transmettez à la fonction. Cependant, si vous écrivez le type "
+"explicitement, vous obtiendrez toutes les méthodes et variables publiques à "
+"partir du nœud :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
 msgid ""
@@ -16253,7 +16209,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:84
 msgid "How to use static typing"
-msgstr ""
+msgstr "Comment utiliser le typage statique"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:86
 msgid ""
@@ -16269,7 +16225,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:104
 msgid "Currently you can use three types of… types:"
-msgstr ""
+msgstr "Actuellement, vous pouvez utiliser trois types de… types :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:106
 msgid ":ref:`Built-in<gdscript_basics.html#built-in-types>`"
@@ -16402,6 +16358,8 @@ msgstr ""
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr ""
+"Vous pouvez désactiver les lignes sécurisées ou modifier leur couleur dans "
+"les paramètres de l'éditeur."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:211
 msgid "Define the return type of a function with the arrow ->"
@@ -16425,7 +16383,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:245
 msgid "Typed or dynamic: stick to one style"
-msgstr ""
+msgstr "Typé ou dynamique: s'en tenir à un style"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:247
 msgid ""
@@ -16434,6 +16392,11 @@ msgid ""
 "for your peers. It’s easier for everyone to work together if you follow the "
 "same guidelines, and faster to read and understand other people’s code."
 msgstr ""
+"Le GDScript typé et le GDScript dynamique peuvent coexister dans le même "
+"projet. Mais il est préférable de s'en tenir à l'un ou l'autre pour assurer "
+"la cohérence de votre base de code et pour vos pairs. Il est plus facile "
+"pour tout le monde de travailler ensemble si vous suivez les mêmes "
+"instructions, et plus rapidement pour lire et comprendre le code des autres."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:253
 msgid ""
@@ -16441,10 +16404,13 @@ msgid ""
 "discussed above. Here’s an example of the same, empty script, in a dynamic "
 "style:"
 msgstr ""
+"Le code typé prend un peu plus de temps à écrire, mais vous bénéficiez des "
+"avantages décrits plus haut. Voici un exemple du même script vide, dans un "
+"style dynamique :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:265
 msgid "And with static typing:"
-msgstr ""
+msgstr "Et avec le typage statique :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:275
 msgid ""
@@ -16482,12 +16448,17 @@ msgid ""
 "mistakes that are hard to spot during development, and that may lead to "
 "runtime errors."
 msgstr ""
+"Le système d’avertissement complète le GDScript typé. Il est là pour vous "
+"aider à éviter les erreurs difficiles à repérer pendant le développement, "
+"qui peuvent mener à des erreurs d’exécution."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
 msgid ""
 "You can configure warnings in the Project Settings under a new section "
 "called ``GDScript``:"
 msgstr ""
+"Vous pouvez configurer les avertissements dans les paramètres du projet dans "
+"une nouvelle section intitulée `` GDScript`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
 #, fuzzy
@@ -16499,6 +16470,9 @@ msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor’s status bar. The example below has 3 warnings:"
 msgstr ""
+"Vous pouvez trouver une liste des avertissements pour le fichier GDScript "
+"actif dans la barre d'état de l'éditeur de script. L'exemple ci-dessous "
+"comporte 3 avertissements :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
 #, fuzzy
@@ -16534,7 +16508,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
 msgid "Cases where you can’t specify types"
-msgstr ""
+msgstr "Cas où vous ne pouvez pas spécifier de types"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:354
 msgid ""
@@ -16551,6 +16525,8 @@ msgid ""
 "You can’t specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr ""
+"Vous ne pouvez pas spécifier le type de membres individuels dans un tableau. "
+"Cela vous donnera une erreur :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:371
 msgid ""
@@ -16558,6 +16534,9 @@ msgid ""
 "the ``for`` keyword loops over already has a different type. So you "
 "**cannot** write:"
 msgstr ""
+"Vous ne pouvez pas forcer l'affectation de types dans une boucle `` for``, "
+"car chaque élément sur lequel le mot-clé `` for`` est déjà associé a un type "
+"différent. Donc, vous ** ne pouvez pas ** écrire :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid "Two scripts can’t depend on each other in a cyclic fashion:"
@@ -16576,6 +16555,11 @@ msgid ""
 "scalable systems. In the future, static types will also bring you a nice "
 "performance boost thanks to upcoming compiler optimizations."
 msgstr ""
+"Le GDScript typé est un outil puissant. Disponible depuis la version 3.1 de "
+"Godot, il aide à écrire du code plus structuré, à éviter les erreurs "
+"courantes et à créer des systèmes évolutifs. À l'avenir, les types statiques "
+"apporteront également de belles performances grâce aux optimisations à venir "
+"du compilateur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:4
 msgid "GDScript format strings"
@@ -20195,6 +20179,9 @@ msgid ""
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
+"Ce chapitre concerne le plugin Blender appelé \"Godot-Blender-Exporter\", "
+"qui peut être téléchargé ici: https://github.com/godotengine/godot-blender-"
+"exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:8
 msgid "Details on exporting"
@@ -20757,7 +20744,7 @@ msgstr "**2. Cacher l'action active**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
 msgid "The stashed action, while not active, will still be exported."
-msgstr ""
+msgstr "L'action masquée, bien que non active, sera toujours exportée."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
 msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
@@ -22780,7 +22767,7 @@ msgstr "Crée un corps rigide à partir de ce maillage."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:333
 msgid "Animation loop (-loop, -cycle)"
-msgstr ""
+msgstr "Boucle d'animation (-loop, -cycle)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:335
 msgid ""
@@ -23145,79 +23132,88 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:4
 msgid "Exporting packs, patches, and mods"
-msgstr ""
+msgstr "Exporter des packs, des patchs, et des mods"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:7
-#, fuzzy
 msgid "Use cases"
-msgstr "Utiliser le temps passé :"
+msgstr "Cas d'utilisations"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:9
 msgid ""
 "Oftentimes one would like to add functionality to one's game after it has "
 "been deployed."
 msgstr ""
+"Souvent, on aimerait ajouter des fonctionnalités à son jeu une fois qu'il a "
+"été déployé."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:12
 msgid "Examples of this include..."
-msgstr ""
+msgstr "En voici quelques exemples..."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:14
 msgid ""
 "Downloadable Content: the ability to add features and content to one's game."
 msgstr ""
+"Contenu téléchargeable : la possibilité d'ajouter des fonctionnalités et du "
+"contenu à son jeu."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:15
 msgid "Patches: the ability to fix a bug that is present in a shipped product."
 msgstr ""
+"Patchs : la possibilité de corriger un bug présent dans un produit livré."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:16
 msgid "Mods: grant other people the ability to create content for one's game."
 msgstr ""
+"Mods : permettre à d'autres personnes de créer du contenu pour son jeu."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:18
 msgid ""
 "These tools help developers to extend their development beyond the initial "
 "release."
 msgstr ""
+"Ces outils aident les développeurs à étendre le développement de leur jeu au-"
+"delà de la sortie initiale."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:22
 msgid "Overview of PCK files"
-msgstr ""
+msgstr "Vue d'ensemble des fichiers PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:24
 msgid ""
 "Godot enables this via a feature called **resource packs** (PCK files, with "
 "extension ``.pck``)."
 msgstr ""
+"Godot permet de faire cela via une fonctionnalité appelée **packs de "
+"ressources** (fichiers PCK, avec l'extension ``.pck``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:27
 msgid "**Advantages:**"
-msgstr ""
+msgstr "**Avantages :**"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:29
 msgid "incremental updates/patches"
-msgstr ""
+msgstr "mises à jour et correctifs incrémentiels"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:30
 msgid "offer DLCs"
-msgstr ""
+msgstr "proposer des DLCs"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:31
 msgid "offer mod support"
-msgstr ""
+msgstr "offrir la prise en charge de mods"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:32
 msgid "no source code disclosure needed for mods"
-msgstr ""
+msgstr "aucune divulgation du code source nécessaire pour les mods"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:33
 msgid "more modular project structure"
-msgstr ""
+msgstr "une structure de projet plus modulaire"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
 msgid "users don’t have to replace the entire game"
-msgstr ""
+msgstr "les utilisateurs n'ont pas à remplacer tout le jeu"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:36
 msgid ""
@@ -23225,57 +23221,59 @@ msgid ""
 "to players. Then, when one wants to add functionality or content later on, "
 "they just deliver the updates via PCK files to the users."
 msgstr ""
+"La première chose à faire pour pouvoir les utiliser est d'exporter et de "
+"livrer le projet aux joueurs. Ensuite, lorsque l'on souhaite rajouter des "
+"fonctionnalités ou du contenu plus tard, on se contentera de livrer les "
+"mises à jours aux utilisateurs via les fichiers PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:40
 msgid "PCK files usually contain, but are not limited to:"
 msgstr ""
+"Les fichiers PCK contiennent généralement, mais ne sont pas limités à :"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
-msgstr "Script de filtrage"
+msgstr "des scripts"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
-#, fuzzy
 msgid "scenes"
-msgstr "Les scènes"
+msgstr "des scènes"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:44
 msgid "shaders"
-msgstr ""
+msgstr "des shaders"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:45
 msgid "models"
-msgstr ""
+msgstr "des modèles"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:46
-#, fuzzy
 msgid "textures"
-msgstr "Texture"
+msgstr "des textures"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:47
-#, fuzzy
 msgid "sound effects"
-msgstr "Effets sonores"
+msgstr "des effets sonores"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:48
 msgid "music"
-msgstr ""
+msgstr "de la musique"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:49
 msgid "any other asset suitable for import into the game"
-msgstr ""
+msgstr "tout autre ressource susceptible d'être importée dans le jeu"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:51
 msgid ""
 "The PCK files can even be an entirely different Godot project, which the "
 "original game loads in at runtime."
 msgstr ""
+"Les fichiers PCK peuvent même être un projet Godot entièrement différent, "
+"que le jeu original chargera à l'exécution."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:55
-#, fuzzy
 msgid "Generating PCK files"
-msgstr "Distribuer les fichiers"
+msgstr "Générer des fichiers PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:57
 msgid ""
@@ -23283,6 +23281,9 @@ msgid ""
 "and go to Project/Export and click on “Export PCK/Zip”. Also make sure to "
 "have an export template selected while doing so."
 msgstr ""
+"Pour regrouper toutes les ressources d'un projet dans un fichier PCK, ouvrez "
+"le projet, allez dans Projet/Exportation et cliquez sur \"Exporter PCK/Zip"
+"\". Assurez-vous également d'avoir sélectionné un modèle d'exportation."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:63
 msgid ""
@@ -23291,6 +23292,10 @@ msgid ""
 "or ZIP file extension, then the export process will build that type of file "
 "for the chosen platform."
 msgstr ""
+"Une autre méthode serait :ref:`d'exporter depuis la ligne de commande "
+"<doc_command_line_tutorial_exporting>`. Si le fichier de sortie se termine "
+"par une extension PCK ou ZIP, alors le processus d'exportation compilera ce "
+"type de fichier pour la plate-forme choisie."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:69
 msgid ""
@@ -23299,6 +23304,10 @@ msgid ""
 "certain structure for the PCK's resources and/or a certain interface for its "
 "scripts, then either..."
 msgstr ""
+"Si l'on souhaite supporter les mods pour son jeu, il faut que ses "
+"utilisateurs créent des fichiers exportés similairement. En supposant que le "
+"jeu original s'attend à une certaine structure pour les ressources PCK et/ou "
+"une certaine interface pour ses scripts, alors ou bien..."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:74
 msgid ""
@@ -23308,6 +23317,12 @@ msgid ""
 "mod content for the game (so that it will work). Users would then use "
 "Godot's built in exporting tools to create a PCK file, as detailed above."
 msgstr ""
+"Le développeur doit publier la documentation de ces structures/ interfaces "
+"attendues, demander aux moddeurs d'installer Godot Engine, et ces moddeurs "
+"devront se conformer à l'API définie dans la documentation lorsqu'ils "
+"construiront du contenu moddé pour le jeu (pour qu'il fonctionne). Ils "
+"utiliseront alors les outils d'exportations intégrés à Godot pour créer un "
+"fichier PCK, comme décrit plus haut."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:80
 msgid ""
@@ -23323,7 +23338,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:90
 msgid "Opening PCK files at runtime"
-msgstr ""
+msgstr "Ouvrir des fichiers PCK à l'exécution"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
 msgid ""
@@ -24311,9 +24326,8 @@ msgid "Once that is configured, everything is ready to export to Android!"
 msgstr "Une fois cela configuré, tout est prêt à être exporté vers Android !"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:64
-#, fuzzy
 msgid "Exporting for Google Play Store"
-msgstr "Exporter pour le Web"
+msgstr "Exporter pour le Google Play Store"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:66
 msgid ""
@@ -26802,9 +26816,8 @@ msgstr ""
 "référence :ref:`doc_gdscript` si vous avez oublié ce que cela fait)."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:4
-#, fuzzy
 msgid "Particle systems (2D)"
-msgstr "Particles2D"
+msgstr "Systèmes de particules (2D)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
 #, fuzzy
@@ -70849,20 +70862,23 @@ msgid ""
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
+#, fuzzy
 msgid "Effect"
-msgstr ""
+msgstr "Effet"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
+#, fuzzy
 msgid "Result"
-msgstr ""
+msgstr "Résultat"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "[Class]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
+#, fuzzy
 msgid "Link a class"
-msgstr ""
+msgstr "Lier une classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "Move the [Sprite]."
@@ -70877,8 +70893,9 @@ msgid "[method methodname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
+#, fuzzy
 msgid "Link to a method in this class"
-msgstr ""
+msgstr "Lien vers une méthode dans cette classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Call [method hide]."
@@ -70894,8 +70911,9 @@ msgid "[method Class.methodname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
+#, fuzzy
 msgid "Link to another class's method"
-msgstr ""
+msgstr "Lien vers une autre méthode de la classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Call [method Spatial.hide]."
@@ -70906,8 +70924,9 @@ msgid "[member membername]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#, fuzzy
 msgid "Link to a member in this class"
-msgstr ""
+msgstr "Lien vers un membre dans la classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid "Get [member scale]."
@@ -70923,8 +70942,9 @@ msgid "[member Class.membername]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#, fuzzy
 msgid "Link to another class's member"
-msgstr ""
+msgstr "Lien vers un autre membre de la classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Get [member Node2D.scale]."
@@ -70935,8 +70955,9 @@ msgid "[signal signalname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#, fuzzy
 msgid "Link to a signal in this class"
-msgstr ""
+msgstr "Lien vers un signal dans cette classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Emit [signal renamed]."
@@ -70952,8 +70973,9 @@ msgid "[signal Class.signalname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#, fuzzy
 msgid "Link to another class's signal"
-msgstr ""
+msgstr "Lien vers un autre signal de la classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Emit [signal Node.renamed]."
@@ -71014,7 +71036,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Multiline preformatted block"
-msgstr ""
+msgstr "Bloc multiligne préformaté"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "*See below.*"
@@ -71025,20 +71047,26 @@ msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use spaces for indentation (the parser will delete tabs). Example:"
 msgstr ""
+"Utiliser``[codeblock]`` pour des blocs de code préformatés. À l'intérieur de "
+"``[codeblock]``, utiliser toujours des espaces pour l'indentation "
+"(l'analyseur supprimera les tabulations). Par exemple :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "Will display as:"
-msgstr ""
+msgstr "S'affichera comme cela :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:272
 msgid "I don't know what this method does!"
-msgstr ""
+msgstr "Je ne sais pas ce que cette méthode fait !"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:274
 msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
+"Aucun problème. Laissez-le derrière et lister les méthodes que vous avez "
+"passé quand vous faites un *pull request* de vos changements. Un autre "
+"contributeur s'en occupera."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:276
 msgid ""

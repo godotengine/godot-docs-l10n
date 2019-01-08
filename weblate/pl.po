@@ -1,11 +1,11 @@
 # Godot Engine Documentation in Polish
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # ᅚc <silenltypl@gmail.com>, 2018.
 # Adam Jakubczak <adam.per.jakubczak@gmail.com>, 2018.
 # Andrzej <impar.andrzej@gmail.com>, 2018.
-# Dariusz Król <rexioweb@gmail.com>, 2018.
+# Dariusz Król <rexioweb@gmail.com>, 2018-2019.
 # Dariusz Siek <dariuszynski@gmail.com>, 2018.
 # Igor <igor.gielzak@gmail.com>, 2018.
 # Jacek Witkowski <jacek_witkowski@wp.pl>, 2018.
@@ -14,12 +14,14 @@
 # Paweł Litwinowicz <spam@litwinowicz.eu>, 2018.
 # Piotr Bojczewski <piotr200310@outlook.com>, 2018.
 # piotrekpajak <araneo@protonmail.com>, 2018.
+# Przemysław Pierzga <przemyslawpierzga@gmail.com>, 2019.
 # Pytek1 <bpieniak1@gmail.com>, 2018.
 # Rafał Mikrut <synaptykq@gmail.com>, 2018.
 # RM <synaptykq@gmail.com>, 2018.
 # Saran <saran@op.pl>, 2018.
-# Sebastian Pasich <sebastian.pasich@gmail.com>, 2018.
+# Sebastian Pasich <sebastian.pasich@gmail.com>, 2018-2019.
 # silicius <silicius42@gmail.com>, 2018.
+# Szymon Nowakowski <smnbdg13@gmail.com>, 2019.
 # Tomek <kobewi4e@gmail.com>, 2018.
 #
 msgid ""
@@ -27,8 +29,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-11 05:25+0000\n"
-"Last-Translator: Dariusz Siek <dariuszynski@gmail.com>\n"
+"PO-Revision-Date: 2019-01-08 08:58+0000\n"
+"Last-Translator: Przemysław Pierzga <przemyslawpierzga@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/pl/>\n"
 "Language: pl\n"
@@ -239,10 +241,10 @@ msgid ""
 "Godot in a few words. Here's however our PR presentation, which you are free "
 "to reuse if you need a quick writeup about Godot Engine."
 msgstr ""
-"Z racji tego, że silnik do tworzenia gier to bardzo skomplikowane narzędzie, "
-"trudno jest nam opisać silnik Godot w zaledwie kilku słowach. Jednak jeśli "
-"potrzebujesz szybkiego wprowadzenia do naszego silnika, nie krępuj się użyć "
-"naszego, przedstawionego poniżej, PR-owego opisu."
+"Silnik gry jest skomplikowanym narzędziem, dlatego trudno jest przedstawić "
+"Godota w kilku słowach. Oto jednak nasza prezentacja PR, którą możesz "
+"wykorzystać ponownie, jeśli potrzebujesz szybkiego zapisu na temat Godot "
+"Engine."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -301,13 +303,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Dokumentacja silnika jest bez przerwy pisana, poprawiana, edytowana oraz "
-"odświeżana (jeżeli zachodzi taka potrzeba) przez członków społeczności. Jest "
-"ona edytowana za pomocą plików tekstowych `reStructuredText <http://www."
-"sphinx-doc.org/en/stable/rest.html>`_ języka znaczników a nastepnie "
-"kompilowana do statycznej strony internetowej/dokumentacji offline przy "
-"użyciu `Sphinx <http://www.sphinx-doc.org>`_ oraz narzędziu`ReadTheDocs "
-"<https://readthedocs.org/>`_."
+"Dokumentacja ta jest cały czas uzupełniana, poprawiana, edytowana i "
+"przerabiana przez członków społeczności silnika Godot. Edytowana jest "
+"poprzez pliki tekstowe w języku `reStructuredText <http://www.sphinx-doc.org/"
+"en/stable/rest.html>`_ i kompilowana do statycznej strony internetowej/"
+"dokumentu offline dzięki narzędziom `Sphinx <http://www.sphinx-doc.org>`_ "
+"oraz `ReadTheDocs <https://readthedocs.org/>`_ ."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -391,7 +392,6 @@ msgstr ""
 "silnika, tworznenia modułów C++ lub wtyczek edytora."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -399,11 +399,10 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-"Sekcja :ref:`sec-community` dostarcza informacji o możliwości rozwoju "
-"silnika oraz pokazuje jak zgłaszać błędy, pomagać przy tworzeniu "
-"dokumentacji, itp. Wskazuje również na różne kanały komunikacji, takie jak "
-"IRC i Discord oraz zawiera listę polecanych samouczków, znajdujących się "
-"poza tą dokumentacją."
+"W sekcji :ref:`sec-community` zawarte są informacje o możliwości wspierania "
+"rozwoju silnika. Pokazuje m.in. jak zgłaszać błędy i pomagać tworzyć "
+"dokumentację. Podaje również parę dróg komunikacji, takich jak IRC i Discord "
+"oraz zawiera listę polecanych poradników spoza tej dokumentacji."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -430,9 +429,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr ""
-"Czerp przyjemność z nauki, a następnie tworzenia gier przy pomocy silnika "
-"Godot!"
+msgstr "Miłej zabawy podczas czytania i tworzenia gier w silniku Godot!"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -443,18 +440,20 @@ msgstr "Często zadawane pytania"
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
 msgstr ""
-"Co mogę stworzyć przy pomocy Godota? Ile on kosztuje? Jakie są zasady "
+"Co mogę zrobić z Godotem? Ile będzie mnie to kosztować? Jakie są warunki "
 "licencji?"
 
 #: ../../docs/about/faq.rst:9
+#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot jest darmowym oprogramowaniem Open-Source dystrybuowanym na licencji "
-"`MIT <https://opensource.org/licenses/MIT>`_."
+"Godot jest `wolnym i otwartym oprogramowaniem <https://pl.wikipedia.org/wiki/"
+"Wolne_i_otwarte_oprogramowanie>`_ dostępnym na licencji `MIT <https://"
+"opensource.org/licenses/MIT>`_, zatwierdzonej przez OSI."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -473,8 +472,8 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Możesz modyfikować, rozprowadzać i modyfikować Godota według twoich uznań, w "
-"jakichkolwiek celach, zarówno komercyjnie jak i niekomercyjnie"
+"Możesz rozprowadzać i modyfikować Godota według twoich uznań, w "
+"jakichkolwiek celach, zarówno komercyjnych jak i niekomercyjnych."
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -483,10 +482,9 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Cała zawartość dokumentacji znajduje się na licencji Creative Commons "
-"Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/"
-">`_), z dopisikiem \"Juan Linietsky, Ariel Manzur and the Godot Engine "
-"community\"."
+"Cała zawartość dokumentacji jest na licencji Creative Commons Attribution "
+"3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_), z "
+"dopisikiem \"Juan Linietsky, Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -513,7 +511,6 @@ msgstr ""
 "LOGO_LICENSE.md>`_ znajdujących się w repozytorium Godota."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
@@ -575,8 +572,8 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
-"Istnieją udane kompilacje Godot  na systemach opartych o architekturę ARM na "
-"Linuxie, przykładowo Raspberry Pi."
+"Istnieją udane kompilacje Godot na systemach opartych o architekturę ARM na "
+"Linuksie, przykładowo Raspberry Pi."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -656,10 +653,10 @@ msgid ""
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
 "Jeśli chodzi o nowe języki, wsparcie dla nich jest możliwe poprzez "
-"oprogramowanie third-party używając GDNative'a / NativeScript'a / "
-"PluginScript'a. Obecnie użytkownicy pracują nad bindigami do `Python "
-"<https://github.com/touilleMan/godot-python>`_ i `Nim <https://github.com/"
-"pragmagic/godot-nim>`_."
+"oprogramowanie third-party używając GDNative'a / NativeScripta / "
+"PluginScripta. Obecnie użytkownicy pracują nad bindigami do `Python <https://"
+"github.com/touilleMan/godot-python>`_ i `Nim <https://github.com/pragmagic/"
+"godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -734,11 +731,11 @@ msgstr ""
 "Ponieważ Godot jest projektem o otwartym kodzie źródłowym, od samego "
 "początku konieczne było nadanie priorytetu bardziej zintegrowanemu i "
 "bezproblemowemu doświadczeniu, jeśli chodzi o przyciąganie dodatkowych "
-"użytkowników dzięki obsłudze bardziej znanych języków programowania - "
+"użytkowników dzięki obsłudze bardziej znanych języków programowania – "
 "zwłaszcza, gdy obsługa tych bardziej znanych języków może spowodować gorsze "
-"wrażenia. Rozumiemy, czy wolisz używać innego języka w Godot (zobacz listę "
+"wrażenia. Rozumiemy, jeśli wolisz używać innego języka w Godot (zobacz listę "
 "obsługiwanych opcji powyżej). Biorąc to pod uwagę, jeśli nie wypróbowałeś "
-"GDScript, spróbuj przez ** trzy dni **. Podobnie jak Godot, gdy tylko "
+"GDScript, spróbuj przez **trzy dni**. Podobnie jak Godot, gdy tylko "
 "zobaczysz, jak potężny jest on i twój rozwój staje się szybki, myślimy, że "
 "GDScript będzie się rozwijać."
 
@@ -883,16 +880,15 @@ msgstr ""
 "tego z rdzeniem Godot'a byłoby przeciwne etyce Godot'a."
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"Ponieważ jest to oprogramowanie open source i modułowy, nic nie stoi na "
-"przeszkodzie, abyś ty lub ktokolwiek inny zainteresowany dodaniem tych "
-"bibliotek jako modułu i stworzeniem gry przy użyciu ich, jako oprogramowania "
-"otwarto lub zamknięto źródłowego. Wszystko jest dozwolone."
+"Ponieważ Godot jest open-source i modularny, nic nie stoi na przeszkodzie, "
+"abyś ty lub ktokolwiek inny zainteresowany dodał te biblioteki jako moduł i "
+"stworzył grę z ich pomocą – jako oprogramowanie z otwartym lub zamkniętym "
+"źródłem."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
@@ -936,17 +932,15 @@ msgstr ""
 "rozmiarów i interfejsów DPI."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"Najpowszechniejszym i najodpowiedniejszym sposobem na osiągnięcie tego celu "
-"jest użycie jednej podstawowej rozdzielczości w grze i obsługiwanie tylko "
-"różnych aspektów ekranu. Jest to najbardziej potrzebne w przypadku kamer 2D, "
-"ponieważ w 3D jest to tylko kwestia Kamer XFov lub YFov."
+"Najlepiej użyć jednej podstawowej rozdzielczości w grze, a obsługiwać różne "
+"proporcje ekranów. Dotyczy to głównie widoku 2D, ponieważ w 3D wystarczy "
+"dostosować XFov lub YFov kamery."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -1015,22 +1009,21 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "Jak mogę rozszerzyć Godota?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"By stworzyć wtyczki do edytora Godot, spójrz na :ref:`tworzenie wtyczek "
-"<doc_making_plugins>` i skryptów narzędziowych."
+"Jeśli chcesz rozszerzyć Godota, np. stworzyć wtyczki do edytora lub dodać "
+"wsparcie dla innych języków, przeczytaj o :ref:`tworzeniu wtyczek "
+"<doc_making_plugins>` i skryptach narzędziowych."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
-msgstr "Zapoznaj się również z oficjalnymi wpisami na blogu na ten temat:"
+msgstr "Zapoznaj się również z wpisami na ten temat na oficjalnym blogu:"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -1059,13 +1052,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "Chciałbym przyczynić się do rozwoju Godota! Jak mogę zacząć?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"Świetnie! Jako projekt open-source, Godot czerpie z innowacyjności i ambicji "
+"deweloperów takich jak ty."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -1137,8 +1132,8 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"Proszę nie czuć, że twoje pomysły na Godota są niepożądane. Zamiast tego "
-"spróbuj najpierw przeformułować problem tak, aby programiści i społeczność "
+"Nie odnieś wrażenia, że twoje pomysły na Godota są niechciane. Zamiast tego "
+"spróbuj najpierw je opisać jako problemy, tak, aby programiści i społeczność "
 "mieli podstawy do dyskusji."
 
 #: ../../docs/about/faq.rst:275
@@ -1149,15 +1144,19 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"Jeżeli chcesz dzielić się pomysłami i problemami ze społecznością, zapoznaj "
+"nas ze swoją sytuacją. Wyjaśnij, co chcesz osiągnąć, co według ciebie "
+"powinno się wydarzyć, a co wydarzyło się w rzeczywistości. Opisywanie "
+"problemów w ten sposób pomoże społeczności skupić się na wprowadzaniu "
+"usprawnień dla ogółu."
 
 #: ../../docs/about/faq.rst:281
-#, fuzzy
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
 "Dodatkowe punkty za zrobienie zrzutów ekranu, przedstawienie konkretnych "
-"liczb lub przykładowych projektów (jeśli dotyczy)."
+"liczb, sposobów testowania lub przykładowych projektów (o ile to możliwe)."
 
 #: ../../docs/about/faq.rst:285
 msgid "How can I support Godot development or contribute?"
@@ -1328,15 +1327,14 @@ msgid "Your first look at Godot’s editor"
 msgstr "Twoje pierwsze spojrzenie na edytor Godota"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
-"Witamy w Godot! Przy otwartym projekcie powinien być widoczny interfejs "
-"edytora z aktywnym widokiem 3D. Można zmienić aktualny obszar roboczy na "
-"górze interfejsu. Kliknąć przycisk 2D, aby przejść do widoku 2D."
+"Witamy w Godocie! W oknie projektu powinien być widoczny interfejs edytora z "
+"aktywnym widokiem 3D. Można zmienić aktualny obszar roboczy na górze "
+"interfejsu. Wybierz 2D, by przejść do widoku 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
@@ -24280,23 +24278,30 @@ msgid ""
 "thinking is along the lines of *\"Oh, it's just like rotating in 2D, except "
 "now rotations happen in X, Y and Z\"*."
 msgstr ""
+"Gdy pierwszy raz tworzymy grę 3D, praca z rotacjami może się okazać "
+"skomplikowana. Osoby pracujące wcześniej w 2D mogą pomyśleć, że jest to *„to "
+"samo co w 2D, z tym że obracamy wokół osi X, Y i Z”*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:12
 msgid ""
 "At first this seems easy and for simple games, this way of thinking may even "
 "be enough. Unfortunately, it's often incorrect."
 msgstr ""
+"Z początku może się to wydawać proste i oczywiste. Dla prostych gier taki "
+"sposób myślenia czasem wystarczy. Niestety, często jest on nieprawidłowy."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:14
 msgid ""
 "Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
-msgstr ""
+msgstr "Kąty obracające w trzech wymiarach zwykle nazywa się „kątami Eulera”."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:18
 msgid ""
 "Euler angles were introduced by mathematician Leonhard Euler in the early "
 "1700s."
 msgstr ""
+"Kąty Eulera zostały wprowadzone przez matematyka Leonarda Eulera na początku "
+"osiemnastego wieku."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:22
 msgid ""
@@ -24308,18 +24313,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
-#, fuzzy
 msgid "Problems of Euler angles"
-msgstr "Problem z kątami Eulera"
+msgstr "Problemy z kątami Eulera"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:30
 msgid ""
 "While it may seem intuitive that each axis has a rotation, the truth is that "
 "it's just not practical."
 msgstr ""
+"Obracanie wokół poszczególnych osi może i wydaje się intuicyjne, ale jest "
+"niepraktyczne."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
-#, fuzzy
 msgid "Axis order"
 msgstr "Kolejność osi"
 
@@ -24331,6 +24336,10 @@ msgid ""
 "only way an orientation can be produced from angles is to rotate the object "
 "angle by angle, in an *arbitrary order*."
 msgstr ""
+"Głównym problemem jest brak jednej, konsekwentnej metody wyznaczającej "
+"orientację na podstawie kątów. Nie ma w matematyce zwyczajnej funkcji, która "
+"dla trzech kątów stworzy nam obrót w 3D. Jedyne, co możemy zrobić, to "
+"wykonać kolejne obroty, jeden po drugim, w *pewnej kolejności*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:39
 msgid ""
@@ -24341,6 +24350,12 @@ msgid ""
 "are several ways to construct an orientation from 3 different angles, "
 "depending on *the order of the rotations*."
 msgstr ""
+"Możemy najpierw obrócić wokół osi *X*, potem *Y*, a następnie *Z*. Możemy "
+"też wybrać najpierw oś *Y*, potem *Z* i na końcu *X*. Tak czy inaczej obrót "
+"się wykona, ale w zależności od przyjętej kolejności *rezultat niekoniecznie "
+"będzie ten sam*. To oznacza, że mamy kilka sposobów na wyznaczenie "
+"orientacji na podstawie trzech kątów, różniących się *kolejnością "
+"poszczególnych rotacji*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
 msgid ""
@@ -24360,6 +24375,9 @@ msgid ""
 "Moving the mouse left and right controls your view angle parallel to the "
 "ground, while moving it up and down moves the player's view up and down."
 msgstr ""
+"Wyobraź sobie, że pracujesz nad kamerą pierwszoosobową (np. w FPS-ie). "
+"Poruszanie myszką w lewo i prawo powinno obracać widok równolegle do ziemi. "
+"Ruch myszką w górę i w dół oznacza natomiast patrzenie się w górę i w dół."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:51
 msgid ""
@@ -24367,12 +24385,16 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
+"Żeby osiągnąć zamierzony efekt, trzeba najpierw obrócić wokół osi *Y* (w "
+"Godocie oś *Y* jest skierowana ku górze), a następnie wokół osi *X*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
+"Jeżeli zrobimy to w odwrotnej kolejności, tj. najpierw oś *X*, a następnie "
+"*Y*, uzyskamy coś nieoczekiwanego:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -24380,6 +24402,9 @@ msgid ""
 "axis rotations to be applied may differ. Therefore, applying rotations in X, "
 "Y, and Z is not enough: you also need a *rotation order*."
 msgstr ""
+"W zależności od rodzaju gry lub zamierzonego efektu, pożądana kolejność "
+"obrotów może być różna. W związku z tym, nie można zwyczajnie obracać po X, "
+"Y i Z. *Kolejność obrotów* trzeba doprecyzować."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 msgid "Interpolation"
@@ -24392,10 +24417,14 @@ msgid ""
 "rotations). One logical way to approach this is to interpolate the angles "
 "from one position to the next. One would expect it to look like this:"
 msgstr ""
+"Kolejnym problemem z kątami Eulera jest interpolacja. Załóżmy, że chcemy "
+"płynnie przejść między dwoma położeniami kamery, czy przeciwników (włącznie "
+"z rotacjami). Najprostszy sposób to interpolowanie każdego kąta z "
+"pierwotnego do docelowego. Rezultat ma wyglądać tak:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:68
 msgid "But this does not always have the expected effect when using angles:"
-msgstr ""
+msgstr "Ale gdy używamy kątów, efekt może być inny:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:72
 msgid "The camera actually rotated the opposite direction!"
@@ -24412,6 +24441,9 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
+"Przekształcenie z obrotu do orientacji nie jest liniowe. Interpolacja może "
+"pójść dłuższą drogą (np. zmiana kąta z ``270`` do ``0`` stopni przebiega "
+"inaczej niż z ``270`` do ``360``, mimo iż kąty są równoważne)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -24421,7 +24453,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
-#, fuzzy
 msgid "Say no to Euler angles"
 msgstr "Powiedz nie dla kątów Eulera"
 
@@ -24433,10 +24464,14 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
+"Dlatego zaleca się **nie używać** własności ``rotation`` z węzłów :ref:"
+"`class_Spatial`. Istnieje, by była widoczna w edytorze, a także dla "
+"zachowania spójności z częścią 2D silnika. Nadaje się jedynie do prostych "
+"obrotów (głównie wokół jednej osi, czasami dwóch)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:84
 msgid "Instead, there is a better way to solve your rotation problems."
-msgstr "Zamiast tego lepiej jest rozwiązać problemy z rotacją."
+msgstr "Istnieje lepszy sposób na obracanie."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
 #, fuzzy
@@ -47850,7 +47885,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_language.rst:352
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:57
 msgid "Varyings"
-msgstr ""
+msgstr "Varying"
 
 #: ../../docs/tutorials/shading/shading_language.rst:354
 msgid ""
@@ -50142,9 +50177,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/intro_to_shaders_water_workshop.rst:35
-#, fuzzy
 msgid "Download the source code"
-msgstr "Pobieranie kodu źródłowego Godota"
+msgstr "Kod źródłowy"
 
 #: ../../docs/tutorials/shading/intro_to_shaders_water_workshop.rst:37
 msgid ""
@@ -50322,9 +50356,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:4
-#, fuzzy
 msgid "Migrating to Godot shading language"
-msgstr "Komunikacja z innymi językami skryptowymi"
+msgstr "Przejście na język shaderów w Godocie"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:9
 msgid ""
@@ -50332,16 +50365,22 @@ msgid ""
 "GLSL and gives practical advice on how to migrate shaders from other "
 "sources, such as Shadertoy and The Book of Shaders, into Godot shaders."
 msgstr ""
+"Dokument wyjaśnia różnice między językiem shaderów Godota a GLSL i daje "
+"wskazówki, jak przenieść shadery z innych miejsc, np. Shadertoy i The Book "
+"of Shaders."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:13
+#, fuzzy
 msgid ""
 "For detailed information on Godot's shading language please refer to the :"
 "ref:`Shading Language <doc_shading_language>` reference."
 msgstr ""
+":ref:`Shading Language <doc_shading_language>` zawiera szczegółowe "
+"informacje o języku shaderów Godota."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:17
 msgid "GLSL"
-msgstr ""
+msgstr "GLSL"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:19
 msgid ""
@@ -50349,10 +50388,12 @@ msgid ""
 "quality-of-life features. Accordingly, most features available in GLSL are "
 "available in Godot's shading language."
 msgstr ""
+"Język shaderów Godota bazuje na GLSL, dodając do niego parę udogodnień. W "
+"związku z tym w Godocie jest dostępna większość funkcjonalności GLSL."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:23
 msgid "Shader Programs"
-msgstr ""
+msgstr "Programy"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:25
 msgid ""
@@ -50361,6 +50402,10 @@ msgid ""
 "shader that contains a ``vertex`` and/or a ``fragment`` function. If you "
 "only choose to write one, Godot will supply the other."
 msgstr ""
+"W GLSL każdy shader to osobny program. Jeden dla vertex shader, inny dla "
+"fragment shader. W Godocie pisze się jeden shader zawierający funkcje "
+"``vertex`` i/lub ``fragment``. Jeśli napiszesz tylko jedną, Godot wygeneruje "
+"drugą."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:29
 msgid ""
@@ -50368,13 +50413,16 @@ msgid ""
 "fragment and vertex shaders in one file. In GLSL the vertex and fragment "
 "programs cannot share variables except when varyings are used."
 msgstr ""
+"Godot pozwala używać zmiennych ``uniform`` oraz własnych funkcji zarówno we "
+"fragment jak i vertex shaderze, jako że są w jednym pliku. W GLSL vertex i "
+"fragment shadery nie mogą współdzielić zmiennych, poza ``varying``."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:34
-#, fuzzy
 msgid "Vertex attributes"
-msgstr "``x.atrybut``"
+msgstr "Własności wierzchołków"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:36
+#, fuzzy
 msgid ""
 "In GLSL you can pass in per-vertex information using attributes. In GLSL you "
 "have the flexibility to pass in as much or as little as you want. In Godot "
@@ -50382,12 +50430,14 @@ msgid ""
 "``COLOR``, ``UV``, ``UV2``, ``NORMAL``. For a complete list see the :ref:"
 "`Shading language reference <doc_shading_language>`."
 msgstr ""
+"W GLSL można przesłać dowolną ilość informacji na każdy wierzchołek. W "
+"Godocie istnieją narzucone własności, jak np. ``VERTEX`` (pozycja), "
+"``COLOR``, ``UV``, ``UV2``, ``NORMAL``."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:42
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:98
-#, fuzzy
 msgid "gl_Position"
-msgstr "Warunek"
+msgstr "gl_Position"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:44
 msgid ""
@@ -50397,6 +50447,10 @@ msgid ""
 "``position`` and you handle the conversion from model space to clip space "
 "manually."
 msgstr ""
+"``gl_Position`` otrzymuje ostateczną pozycję wierzchołka w vertex shader. "
+"Określa go użytkownik w clip space. Zazwyczaj w GLSL przesyła się pozycję "
+"wierzchołka w model space pod nazwą ``position``, a przekształcenie na clip "
+"space należy wykonać samodzielnie."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:49
 msgid ""
@@ -50409,6 +50463,14 @@ msgid ""
 "``PROJECTION_MATRIX`` to ``mat4(1.0)`` in order to nullify the final "
 "transform from view space to clip space."
 msgstr ""
+"W Godocie ``VERTEX`` określa pozycję wierzchołka w model space na początku "
+"funkcji ``vertex``. Godot sam dokonuje przekształcenia w clip space po "
+"wykonaniu funkcji ``vertex`` zdefiniowanej przez użytkownika. Jeżeli pominąć "
+"przekształcenie z model space na view space, możesz ustawić ``render_mode`` "
+"na ``skip_vertex_transform``. Jeżeli chcesz pominąć wszelkie "
+"przekształcenia, ustaw ``render_mode`` na ``skip_vertex_transform`` i ustaw "
+"``PROJECTION_MATRIX`` na ``mat4(1.0)``, by zniwelować efekt przekształcenia "
+"z view space na clip space."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:59
 msgid ""
@@ -50418,12 +50480,15 @@ msgid ""
 "is defined with ``out`` in the vertex shader and ``in`` inside the fragment "
 "shader."
 msgstr ""
+"Varying to rodzaj zmiennej, którą można przesłać z vertex shader do fragment "
+"shader. W GLSL (od 3.0 w górę) varying określa się słowami kluczowymi ``in`` "
+"oraz ``out``. Zmienna wychodząca z fragment shader będzie zdefiniowana jako "
+"``out`` w vertex shader i jako ``in`` we fragment shader."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:64
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:205
-#, fuzzy
 msgid "Main"
-msgstr "Pętla Główna"
+msgstr "Main"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:66
 msgid ""
@@ -50432,6 +50497,10 @@ msgid ""
 "shader, rename ``main`` to ``vertex`` and if you are copying a fragment "
 "shader, rename ``main`` to ``fragment``."
 msgstr ""
+"W GLSL każdy program przypomina niezależny program wyglądający jak kod C. "
+"Rozpoczyna się bowiem od funkcji ``main``. Jeśli kopiujesz vertex shader, "
+"zmień nazwę ``main`` na ``vertex``, a jeżeli fragment shader – na "
+"``fragment``."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:73
 msgid ""
@@ -50439,10 +50508,13 @@ msgid ""
 "by using a uniform initialized to the value, but you will not benefit from "
 "the increased speed from using a constant."
 msgstr ""
+"Obecnie Godot nie wspiera stałych. Możesz udawać stałe inicjalizując zmienną "
+"``uniform``, ale nie daje to korzyści w postaci szybkości takich, jak dają "
+"stałe."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:77
 msgid "Macros"
-msgstr ""
+msgstr "Makra"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:79
 msgid ""
@@ -50454,6 +50526,11 @@ msgid ""
 "etc.) there is no equivalent because they run during the pre-processing "
 "stage of compilation."
 msgstr ""
+"Upodobniając się do C, GLSL pozwala na stosowanie makr. ``#define`` często "
+"używa się do tworzenia stałych lub małych funkcji. W języku shaderów Godota "
+"nie istnieje ich odpowiednik. Jeżeli to była funkcja, zamień to w funkcję. "
+"Jeżeli zdefiniowano stałą, uczyń ją ``uniform``. Innych makr (``#if``, "
+"``#ifdef`` itp.) nie da się zastąpić, gdyż są wykonywane przed kompilacją."
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:88
 msgid ""
@@ -50464,7 +50541,6 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:92
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:157
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:217
-#, fuzzy
 msgid "Variable"
 msgstr "Zmienne"
 
@@ -50507,9 +50583,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:173
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:175
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:221
-#, fuzzy
 msgid "vec4"
-msgstr "**vec4**"
+msgstr "vec4"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:96
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:161
@@ -50551,9 +50626,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:161
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:223
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:227
-#, fuzzy
 msgid "vec2"
-msgstr "**vec2**"
+msgstr "vec2"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:102
 msgid "POINT_COORD"
@@ -50578,9 +50652,8 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:110
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:183
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:231
-#, fuzzy
 msgid "Coordinates"
-msgstr "Koordynat X"
+msgstr "Współrzędne"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:112
 msgid ""
@@ -50600,9 +50673,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:124
-#, fuzzy
 msgid "Shadertoy"
-msgstr "Typy Shaderów"
+msgstr "Shadertoy"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:126
 msgid ""
@@ -50620,9 +50692,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:134
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:199
-#, fuzzy
 msgid "Types"
-msgstr "Typ"
+msgstr "Typy"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:136
 msgid ""
@@ -50632,9 +50703,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:140
-#, fuzzy
 msgid "mainImage"
-msgstr "Importowanie obrazów"
+msgstr "mainImage"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:141
 msgid ""
@@ -50659,24 +50729,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:159
-#, fuzzy
 msgid "fragColor"
-msgstr "Kolor"
+msgstr "fragColor"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:161
 msgid "fragCoord"
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:163
-#, fuzzy
 msgid "iResolution"
-msgstr "Bazowa rozdzielczość"
+msgstr "iResolution"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:163
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:177
-#, fuzzy
 msgid "vec3"
-msgstr "**vec3**"
+msgstr "vec3"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:163
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:223
@@ -50728,9 +50795,8 @@ msgid "Frame number."
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:171
-#, fuzzy
 msgid "iChannelTime[4]"
-msgstr "Kanały"
+msgstr "iChannelTime[4]"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:171
 msgid "Time since that particular texture started."
@@ -50754,9 +50820,8 @@ msgid "Current date, expressed in seconds."
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:177
-#, fuzzy
 msgid "iChannelResolution[4]"
-msgstr "Bazowa rozdzielczość"
+msgstr "iChannelResolution[4]"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:177
 msgid "1.0 / TEXTURE_PIXEL_SIZE"
@@ -50767,14 +50832,12 @@ msgid "Resolution of particular texture."
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:179
-#, fuzzy
 msgid "iChanneli"
-msgstr "Kanały"
+msgstr "iChanneli"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:179
-#, fuzzy
 msgid "Sampler2D"
-msgstr "**sampler2D**"
+msgstr "Sampler2D"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:179
 msgid "TEXTURE"
@@ -50831,9 +50894,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:223
-#, fuzzy
 msgid "u_resolution"
-msgstr "Bazowa rozdzielczość"
+msgstr "u_resolution"
 
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:225
 msgid "u_time"
@@ -50903,13 +50965,12 @@ msgid "The plane mesh"
 msgstr ""
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:30
-#, fuzzy
 msgid ""
 "First, add a :ref:`Spatial<class_Spatial>` node to the scene to act as the "
 "root. Next, add a :ref:`MeshInstance<class_MeshInstance>` as a child."
 msgstr ""
-"Jak widać, ta scena ma węzeł :ref:`class_Spatial` jako swój korzeń oraz "
-"wiele dzieci węzłów :ref:`class_MeshInstance`."
+"Użyj węzła :ref:`class_Spatial` jako korzenia sceny. Do niego dodaj :ref:"
+"`class_MeshInstance`."
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:35
 msgid ""
@@ -51279,9 +51340,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:4
-#, fuzzy
 msgid "Advanced post-processing"
-msgstr "Środowisko i post-processing"
+msgstr "Zaawansowany post-processing"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:9
 msgid ""
@@ -51303,9 +51363,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:21
-#, fuzzy
 msgid "Full screen quad"
-msgstr "Pełny ekran i przechwytywanie myszy"
+msgstr "Pełnoekranowy quad"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:23
 msgid ""
@@ -51395,9 +51454,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:81
-#, fuzzy
 msgid "Depth texture"
-msgstr "Importowanie tekstur"
+msgstr "Depth texture"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:83
 msgid ""
@@ -51457,9 +51515,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:151
-#, fuzzy
 msgid "An optimization"
-msgstr "Animacje"
+msgstr "Optymalizacja"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:153
 msgid ""
@@ -51911,9 +51968,8 @@ msgid "`remote`"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:243
-#, fuzzy
 msgid "`remotesync`"
-msgstr "remote"
+msgstr "`remotesync`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:244
 msgid "`master`"
@@ -52081,9 +52137,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:382
-#, fuzzy
 msgid "Master and puppet keywords"
-msgstr "Słowo kluczowe assert"
+msgstr "Słowa kluczowe master i puppet"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:386
 msgid ""
@@ -52930,9 +52985,8 @@ msgid "VR"
 msgstr "VR"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:4
-#, fuzzy
 msgid "AR/VR primer"
-msgstr "Serwer AR/VR"
+msgstr "Wstęp do AR/VR"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:6
 msgid ""
@@ -52953,7 +53007,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:12
-#, fuzzy
 msgid "AR/VR server"
 msgstr "Serwer AR/VR"
 
@@ -53010,7 +53063,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:42
-#, fuzzy
 msgid "New AR/VR nodes"
 msgstr "Nowe węzły AR/VR"
 
@@ -53180,9 +53232,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:4
-#, fuzzy
 msgid "VR starter tutorial"
-msgstr "Poradniki wideo"
+msgstr "Podstawy VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:11
 msgid ""
@@ -53225,9 +53276,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:22
-#, fuzzy
 msgid "Throughout the course of this tutorial, we will cover:"
-msgstr "Podczas tego kursu dowiesz się jak:"
+msgstr "W tym poradniku omówimy:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:24
 msgid "How to tell Godot to run in VR."
@@ -53243,36 +53293,35 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
-#, fuzzy
 msgid ""
 "How to make a :ref:`RigidBody <class_RigidBody>` based pick up and drop "
 "system."
-msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (o nazwie ``Mob``)"
+msgstr ""
+"Jak wykonać podnoszenie i upuszczanie :ref:`RigidBody2D <class_RigidBody2D>`."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:28
 msgid "How to make various items that can be used in VR"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:30
-#, fuzzy
 msgid ""
 "While this tutorial can be completed by beginners, it is highly advised to "
 "complete :ref:`doc_your_first_game`, if you are new to Godot and/or game "
 "development and have some experience with making 3D games **before** going "
 "through this tutorial series."
 msgstr ""
-"Chociaż ten samouczek może być ukończony przez początkujących, zaleca się, "
-"aby ukończyć przed nim :ref:`doc_your_first_game."
+"Ten poradnik jest dla początkujących. Zalecamy jednak przejrzeć :ref:"
+"`doc_your_first_game`, jeśli Godot to dla ciebie nowość. Przyda się także "
+"doświadczenie w tworzeniu gier 3D."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:35
-#, fuzzy
 msgid ""
 "This tutorial assumes you know have experience working with the Godot "
 "editor, have basic programming experience in GDScript, and have basic 3D "
 "game development experience."
 msgstr ""
-"Ten samouczek zakłada, że masz doświadczenie w pracy z edytorem Godota, masz "
-"podstawowe doświadczenie z GDScript oraz w tworzeniu gier."
+"Ten poradnik zakłada, że potrafisz korzystać z edytora w Godocie i znasz "
+"podstawy GDScript oraz tworzenia gier 3D."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:38
 msgid ""
@@ -62455,7 +62504,7 @@ msgstr "Dla alokacji w stylu C++, stworzone zostały następujące makra:"
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
-msgstr "które są odpowiednikiem dla new, delete, new[] i delete[]"
+msgstr "które są odpowiednikiem dla new, delete, new[] i delete[]."
 
 #: ../../docs/development/cpp/core_types.rst:103
 msgid ""

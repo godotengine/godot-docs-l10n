@@ -1,19 +1,22 @@
 # Godot Engine Documentation in Spanish
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alan Arrecis <alan.arrecis@gmail.com>, 2018.
 # Alejo <patto.revuelto@gmail.com>, 2018.
 # Andrus Diaz German <andrusdiazaleman@gmail.com>, 2018.
 # AnyMan <romopua@gmail.com>, 2018.
-# Avocado <avocadosan42@gmail.com>, 2018.
+# Agustin Ostorero <panconmayonesa56@gmail.com>, 2018.
+# Avocado <avocadosan42@gmail.com>, 2018-2019.
 # Cameron Toms <cameron.toms@gmail.com>, 2018.
 # Carlos Roberto Rojas C <carlosroberto.rojas@gmail.com>, 2018.
 # César León <ceesarleon2002@gmail.com>, 2018.
 # Cristian Martinez <organocm@gmail.com>, 2018.
 # David Arranz <davarrcal@hotmail.com>, 2018.
+# David Cases <dcases@gmail.com>, 2018.
 # Dharkael <izhe@hotmail.es>, 2018.
 # Dianiel García <jdangarr@gmail.com>, 2018.
+# edward badd <ebaddouh@gmail.com>, 2018.
 # Elena G <elena.guzbla@gmail.com>, 2018.
 # Elias Mascheroni <eliasmg-py@outlook.com>, 2018.
 # eon-s <emanuel.segretin@gmail.com>, 2018.
@@ -45,6 +48,7 @@
 # pablo guevara <pabloguevara@gmail.com>, 2018.
 # Pòsweg <joshu253@gmail.com>, 2018.
 # R. Joshua Seville <rjoshua@protonmail.com>, 2018.
+# Ramiro Garay <ramiro.sgaray@gmail.com>, 2019.
 # Renato Pereson <peresonrenato@gmail.com>, 2018.
 # Ricardo Pérez <ricpelo@gmail.com>, 2018.
 # Roberto Sosa Cano <roberto.cano@gmail.com>, 2018.
@@ -60,8 +64,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-13 10:15+0000\n"
-"Last-Translator: Ethan Huff <et.huff.the1st@gmail.com>\n"
+"PO-Revision-Date: 2019-01-08 08:59+0000\n"
+"Last-Translator: Ramiro Garay <ramiro.sgaray@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/es/>\n"
 "Language: es\n"
@@ -76,7 +80,6 @@ msgid "Godot Docs – *master* branch"
 msgstr "Documentación de Godot – rama *master*"
 
 #: ../../docs/index.rst:9
-#, fuzzy
 msgid ""
 "This is the documentation for the unstable (master) branch. Looking for the "
 "documentation of the current **stable** branch? `Have a look here <https://"
@@ -427,7 +430,6 @@ msgstr ""
 "motor, desarrollar módulos C++ o plugins para el editor."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -757,7 +759,6 @@ msgstr ""
 "lenguajes."
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -1385,7 +1386,6 @@ msgid "|image7|"
 msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
-#, fuzzy
 msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "Cuando la ruta a la carpeta es correcta, se verá la marca verde."
 
@@ -1399,7 +1399,6 @@ msgid "Your first look at Godot’s editor"
 msgstr "Una primera mirada al editor de Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
@@ -1434,7 +1433,6 @@ msgstr ""
 "prueba**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
-#, fuzzy
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
@@ -1448,7 +1446,6 @@ msgid "|image11|"
 msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
@@ -1463,7 +1460,6 @@ msgid "|image12|"
 msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
@@ -1471,7 +1467,7 @@ msgid ""
 msgstr ""
 "En el centro, arriba, está la **Barra de herramientas**, donde se encuentran "
 "las herramientas para mover, escalar o bloquear objetos de la escena. Esta "
-"barra cambia en los distintos espacios de trabajo."
+"barra cambia en función de los distintos espacios de trabajo."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:167
@@ -1798,12 +1794,11 @@ msgstr ""
 "\"Hola mundo\". Esto nos introducirá a usar el editor."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:83
-#, fuzzy
 msgid ""
 "If you run the Godot executable outside of a project, the Project Manager "
 "appears. This helps developers manage their projects."
 msgstr ""
-"Si ejecutas Godot fuera de un proyecto, aparece el Administrador de "
+"Si ejecuta Godot fuera de un proyecto, aparece el Administrador de "
 "proyectos. Esto ayuda a los desarrolladores a administrar sus proyectos."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:88
@@ -1986,14 +1981,13 @@ msgstr ""
 "Pruébalo ahora."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:183
-#, fuzzy
 msgid ""
 "Once the window opens, let's select a main scene. Locate the `Application/"
 "Run/Main Scene` property and click on it to select 'Hello.tscn'."
 msgstr ""
 "Una vez que se abra la ventana, seleccionaremos una escena principal. "
-"Localiza la propiedad `Application/Run/Main Scene` y haz clic en ella para "
-"seleccionar `hello.tscn'."
+"Localizamos la propiedad `Applicación/Ejecutar/Escena Principal` y haremos "
+"clic en ella para seleccionar `hello.tscn'."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:188
 msgid ""
@@ -2259,13 +2253,12 @@ msgid "The ability to subdivide scenes and make them easier to manage."
 msgstr "La habilidad de dividir escenas y hacerlas más fácil de manejar."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
-#, fuzzy
 msgid ""
 "A more flexible alternative to prefabs you might know from Unity (and much "
 "more powerful given that instances can be nested)."
 msgstr ""
-"Una alternativa a prefabs (y mucho más poderosa ya que las instancias pueden "
-"estar anidadas)."
+"Una alternativa a prefabs, mas flexible, que talvez conozca de Unity  (y "
+"mucho más poderosa ya que las instancias pueden estar anidadas)."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
 msgid ""
@@ -2333,7 +2326,6 @@ msgstr ""
 "relaciones de propiedad."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
-#, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -2343,13 +2335,13 @@ msgid ""
 "design based on scene instantiation means little other architectural code is "
 "needed."
 msgstr ""
-"Gran parte del tiempo dedicado a programar juego (o software en general) se "
-"destina en diseñar una arquitectura y ajustar componentes del juego a esa "
+"Gran parte del tiempo dedicado a programar juegos (o software en general) se "
+"destina a diseñar una arquitectura y ajustar componentes del juego a esa "
 "arquitectura. Diseñar en base a escenas reemplaza ese enfoque y hace el "
-"desarrollo mucho más rápido y directo, permitiendo concentrarse en la lógica "
-"misma del juego. Como la mayoría de los componentes se relacionan "
+"desarrollo mucho más rápido y directo, permitiéndote concentrarte en la "
+"lógica misma del juego. Como la mayoría de los componentes se relacionan "
 "directamente con una escena, usar un diseño basado en instanciación de "
-"escenas, significa que es necesario muy poco código arquitectural."
+"escenas implica muy poco código arquitectural adicional."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
 msgid ""
@@ -2450,7 +2442,6 @@ msgstr ""
 "adicionales de forma dinámica!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
@@ -2460,7 +2451,6 @@ msgstr ""
 "sea más difícil."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -2783,12 +2773,11 @@ msgstr ""
 "opciones relevantes."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"En GDScript el propio archivo representa la clase, por lo que el campo del "
+"En GDScript, el propio archivo representa la clase, por lo que el campo del "
 "nombre de la clase no se puede editar."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
@@ -2818,14 +2807,13 @@ msgstr ""
 "así como en la propiedad del script en el Inspector:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
 "Para editar el script, pulsa cualquiera de estos botones, ambos resaltados "
-"en la imagen de arriba. Esto te llevará al editor de scripts donde se "
+"en la imagen de arriba. Esto te llevará al editor de scripts, donde se "
 "incluirá una plantilla predeterminada:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
@@ -2924,7 +2912,6 @@ msgstr ""
 "a activar."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
@@ -2934,7 +2921,7 @@ msgstr ""
 "La parte superior izquierda muestra una lista de los nodos de la escena con "
 "el nombre del nodo emisor resaltado en rojo. Selecciona aquí el nodo \"Panel"
 "\". Cuando seleccionas un nodo, el NodePath en la parte inferior se "
-"actualizará automáticamente para apuntar una ruta relativa desde el nodo "
+"actualizará automáticamente para apuntar a una ruta relativa desde el nodo "
 "emisor al nodo seleccionado."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:210
@@ -2951,14 +2938,13 @@ msgstr ""
 "de configurar la conexión."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
 "Y así concluye la guía sobre cómo usar la interfaz visual. Sin embargo, este "
-"es un tutorial de scripting, así que por el bien del aprendizaje ¡vamos a "
+"es un tutorial de scripting, así que por el bien del aprendizaje, ¡vamos a "
 "sumergirnos en el proceso manual!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
@@ -3182,12 +3168,11 @@ msgstr ""
 "Nodos:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
-#, fuzzy
 msgid ""
 "And the second way is from code. One example would be to tag nodes which are "
 "enemies:"
 msgstr ""
-"Y la segunda forma es por código. Un ejemplo sería etiquetar escenas que "
+"Y la segunda forma es por código. Un ejemplo sería etiquetar nodos que "
 "representan a los enemigos ('enemies'):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
@@ -3487,9 +3472,8 @@ msgstr ""
 "al Nodo Raiz, pero no le agregues codigo todavia."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
-#, fuzzy
 msgid "Your scene tree should look like this:"
-msgstr "El árbol de la escena debería verse así:"
+msgstr "Tu árbol de la escena debería verse así:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:35
 msgid ""
@@ -3565,7 +3549,7 @@ msgid ""
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
 "Ahora podemos reemplazar el código de relleno con cualquier código que "
-"querramos ejecutar cuando se reciba la señal. Hagamos que el Sprite parpadee."
+"queramos ejecutar cuando se reciba la señal. Hagamos que el Sprite parpadee:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
@@ -3576,9 +3560,8 @@ msgstr ""
 "la propiedad *Wait Time* para cambiar el resultado de este."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
-#, fuzzy
 msgid "Connecting signals in code"
-msgstr "Conectar una Señal (Signal) a una Función"
+msgstr "Conectar señales en código"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -3613,34 +3596,31 @@ msgstr ""
 "conexión de nuestro Timer:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
-#, fuzzy
 msgid "Custom signals"
-msgstr "Itineradores personalizados"
+msgstr "Señales personalizadas"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
-"También puedes declarar tu propia señal (signal), personalizada dentro de "
+"También puedes declarar tus propia señales (signal) personalizadas dentro de "
 "Godot:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
-#, fuzzy
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
-"Una vez declarada, tu señal (signal), personalizada aparecerá en el "
-"Inspector y podrá ser conectada de la misma forma que las señales "
-"incorporadas en un nodo."
+"Una vez declaradas, tus señales (signal) personalizadas aparecerán en el "
+"Inspector y podrán ser conectadas de la misma forma que las señales "
+"integradas del nodo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
 msgstr "Para emitir una señal por código, usa la función ``emit``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
-#, fuzzy
 msgid "Shooting example"
-msgstr "En el siguiente ejemplo:"
+msgstr "Ejemplo de disparos"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:205
 msgid ""
@@ -3679,7 +3659,6 @@ msgstr ""
 "jugador o incluso más arriba en el árbol."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
-#, fuzzy
 msgid "You could do this by adding the bullet directly:"
 msgstr "Tu podrías hacer esto directamente agregando la bala:"
 
@@ -3921,16 +3900,16 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr ""
+"Para este proyecto, seguiremos las convenciones de nomenclatura de Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Para este proyecto, usaremos las siguientes convenciones de nombres de "
-"Godot. Clases (nodos) usa ``PascalCase``, variables y funciones, utiliza "
-"``snake_case`` y las constantes ``ALL_CAPS``."
+"**GDScript**: Clases (nodos) usan PascalCase, variables y funciones utilizan "
+"snake_case, y las constantes TODO_MAYUSCULAS (Lee :ref:"
+"`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
 msgid ""
@@ -3939,6 +3918,11 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Las clases, las variables de exportación y los métodos usan "
+"PascalCase, los campos privados usan _camelCase, y las variables y "
+"parámetros locales usan camelCase (Ver :ref:`doc_c_sharp_styleguide`). Ten "
+"cuidado de escribir los nombres de los métodos de manera precisa al conectar "
+"señales."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -4079,6 +4063,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Si estás usando C#, necesitas (re)construir los archivos assembly del "
+"proyecto cada vez que quieras tener visibles las variables exportadas o las "
+"señales. Esta construcción puede ser lanzada manualmente pulsando en la "
+"palabra \"Mono\" en la parte inferior de la ventana de edición para revelar "
+"el Panel Mono, y luego haciendo clic en el botón \"Construir Proyecto\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -4089,20 +4078,19 @@ msgstr ""
 "un buen momento para averiguar el tamaño de la ventana de juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:209
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 "Ahora podemos utilizar la función ``_process()`` para definir lo que el "
-"jugador hará. En cada frame, se llama a ``_process()``, así que lo usaremos "
-"para actualizar elementos del juego, los que esperamos que cambien a menudo. "
-"Así es como lo haremos:"
+"jugador hará. En cada frame se llama a ``_process()``, así que la usaremos "
+"para actualizar elementos del juego que esperamos que cambien a menudo. Aquí "
+"la haremos:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid "Check for input."
-msgstr "Comprobando entradas."
+msgstr "Comprobar entradas."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:214
 msgid "Move in the given direction."
@@ -4275,16 +4263,15 @@ msgstr ""
 "abreviada de arriba:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:395
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
-"Reproduce la escena de nuevo y revisa que la animación es correcta para cada "
-"dirección. Cuando estés seguro de que el movimiento funciona correctamente, "
-"agrega esta línea a ``_ready()`` así el jugador estará oculto cuando "
-"comience el juego:"
+"Reproduce la escena de nuevo y revisa que las animaciones sean correctas "
+"para cada una de las direcciones. Cuando estés seguro de que el movimiento "
+"funciona correctamente, agrega esta línea a ``_ready()`` para que el jugador "
+"esté oculto cuando comience el juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:410
 msgid "Preparing for collisions"
@@ -4562,13 +4549,12 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "Mira :ref:`doc_instancing` para aprender más sobre instanciación."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:632
-#, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
-"Ahora agreguemos los siguientes nodos hijo a ``Main``, y nómbralos como se "
-"muestra (los valores son en segundos):"
+"Ahora agrega los siguientes nodos como hijos de ``Main``, y nómbralos como "
+"se muestra (los valores son en segundos):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:635
 msgid ""
@@ -4694,7 +4680,6 @@ msgid "Main script"
 msgstr "Script Principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:682
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -4737,16 +4722,16 @@ msgstr ""
 "otros dos temporizadores. ``ScoreTimer`` incrementará la puntuación en 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:789
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"En ``_on_MobTimer_timeout()`` crearemos la instancia del enemigo, toma una "
-"ubicación al azar de ``Path2D``, y crea el enemigo. El nodo ``PathFollow2D`` "
-"rotará automáticamente mientras recorre el camino, usaremos eso para "
+"En ``_on_MobTimer_timeout()``, crearemos una instancia del enemigo, "
+"tomaremos una ubicación aleatoria a lo largo del ``Path2D``, y luego "
+"pondermos al enemigo en movimiento. El nodo ``PathFollow2D`` rotará "
+"automáticamente mientras recorre el camino, así que usaremos eso para "
 "seleccionar la dirección y la posición del enemigo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:795
@@ -4978,7 +4963,6 @@ msgid "Text: ``Start``"
 msgstr "Text: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
-#, fuzzy
 msgid ""
 "To make the text of the ``MessageLabel`` fit the game's window click the "
 "small icon next to your text property. This will open up a new window where "
@@ -4987,7 +4971,10 @@ msgid ""
 "game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
 "following for each of the three ``Control`` nodes:"
 msgstr ""
-"La fuente por defecto de nodos ``Control`` es pequeña y no escala bien. "
+"Para hacer que el texto de ``MessageLabel`` entre en la ventana del juego, "
+"pulsa en el ícono pequeño al costado la propiedad de texto. Esto abrirá una "
+"nueva ventana donde puedes agregar una línea nueva entre las palabras. La "
+"fuente por defecto de los nodos ``Control`` es pequeña y no escala bien. "
 "Entre los recursos del juego hay una fuente incluida, llamada \"Xolonium-"
 "Regular.ttf\". Para usar esta fuente, haz lo siguiente en los tres nodos "
 "``Control``:"
@@ -5038,9 +5025,8 @@ msgstr ""
 "botón \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
-#, fuzzy
 msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "Esta función se llamará en ``Main`` cuando el puntaje cambie."
+msgstr "Esta función será llamada por ``Main`` cada vez que el puntaje cambie."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1045
 msgid ""
@@ -5270,24 +5256,18 @@ msgid "Project files"
 msgstr "Archivos del Proyecto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "You can find a completed version of this project at these locations:"
 msgstr ""
-"Encontrarás la versión completa de este proyecto aquí: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+"Encontrarás una versión completada de este proyecto en las siguientes "
+"direcciones:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
-"Encontrarás la versión completa de este proyecto aquí: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
-#, fuzzy
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
-"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
@@ -5465,12 +5445,11 @@ msgstr ""
 "completa de tu juego, como un `.apk` para Android o un `.exe` para Windows."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:156
-#, fuzzy
 msgid ""
 "In the \"Resources\" and \"Features\" tabs, you can customize how the game "
 "is exported for each platform. We can leave those settings alone for now."
 msgstr ""
-"En las pestañas \"Recursos\" y \"Características\" puedes personalizar cómo "
+"En las pestañas \"Recursos\" y \"Características\", puedes personalizar cómo "
 "se exporta el juego para cada plataforma. Por ahora podemos dejar esos "
 "ajustes como están."
 
@@ -5508,7 +5487,6 @@ msgid "Click \"Save\" and the engine will build the export files."
 msgstr "Haz clic en \"Guardar\" y el motor creará los archivos de exportación."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:175
-#, fuzzy
 msgid ""
 "When exporting for macOS, if you export on a macOS computer, you'll end up "
 "with a `.dmg` file, while using Linux or Windows produces a `.zip`. In "
@@ -5572,7 +5550,6 @@ msgstr ""
 "dispositivo."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:203
-#, fuzzy
 msgid ""
 "Next, create a debug keystore by running the following command on your "
 "system's command line:"
@@ -5636,13 +5613,12 @@ msgstr ""
 "un solo paso."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:239
-#, fuzzy
 msgid ""
 "In order to build your game for iOS, you must have a computer running macOS "
 "with Xcode installed."
 msgstr ""
-"Para exportar tu juego a iOS, debes tener una computadora con MacOS y Xcode "
-"instalado."
+"Para construir tu juego para iOS, debes tener una computadora con macOS y "
+"Xcode instalado."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:242
 msgid ""
@@ -5706,16 +5682,15 @@ msgstr ""
 "siguientes archivos:"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:273
-#, fuzzy
 msgid ""
 "Viewing the `.html` file in your browser lets you play the game. However, "
 "you can't open the file directly, it needs to be served by a web server. If "
 "you don't have one set up on your computer, you can use Google to find "
 "suggestions for your specific OS."
 msgstr ""
-"Al ver el archivo `.html` en tu navegador puedes jugar. Sin embargo, no se "
-"puede abrir el archivo directamente, es necesario que sea entregado por un "
-"servidor web. Si no tienes uno configurado en tu computadora, puedes usar "
+"Ver el archivo `.html` en tu navegador te permite jugarlo. Sin embargo, no "
+"se puede abrir el archivo directamente, es necesario que sea entregado por "
+"un servidor web. Si no tienes uno configurado en tu computadora, puedes usar "
 "Google para encontrar sugerencias para tu SO específico."
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:278
@@ -5761,7 +5736,6 @@ msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
 msgstr "Ahora que te has ensuciado las manos, hablemos del diseño de Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
@@ -5769,10 +5743,10 @@ msgid ""
 "structures. This all stems from their respective design philosophies."
 msgstr ""
 "**Cada motor de videojuegos es diferente y se ajusta a diferentes "
-"necesidades.** No sólo ofrecen un amplio rango de características, el diseño "
-"de cada motor es único. Esto lleva a diferentes flujos de trabajo y "
-"diferentes modos de construir la estructura de los juegos. Todo esto surge "
-"de las respectivas filosofías de diseño."
+"necesidades.** No sólo ofrecen un amplio rango de características, si no que "
+"el diseño de cada motor es único. Esto lleva a diferentes flujos de trabajo "
+"y diferentes modos de construir la estructura de tus juegos. Todo esto surge "
+"de sus respectivas filosofías de diseño."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:13
 msgid ""
@@ -5832,7 +5806,6 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "Además, puede **heredar** desde cualquier escena."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code, except "
@@ -5840,12 +5813,11 @@ msgid ""
 "and matching the two."
 msgstr ""
 "Una escena de Godot puede ser un Arma, un Personaje, un Item, una Puerta, un "
-"Nivel, parte de un nivel, cualquier cosa que quieras. Esto trabaja como una "
+"Nivel, parte de un nivel… cualquier cosa que quieras. Esto funciona como una "
 "clase en código puro, excepto que eres libre de diseñarla usando el editor, "
-"utilizando sólo código o una mezcla de las dos."
+"usando sólo código, o una mezcla de las dos."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
-#, fuzzy
 msgid ""
 "It’s different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -5854,10 +5826,10 @@ msgid ""
 "matches the game’s design."
 msgstr ""
 "Esto es diferente de los prefabs que se encuentran en distintos motores 3D, "
-"ya que se pueden heredar y extender las escenas. Se podría crear un Mago que "
+"ya que se pueden heredar y extender las escenas. Puedes crear un Mago que "
 "extienda tu Personaje. Modifica el Personaje en el editor y el Mago se "
-"actualizará. Esto ayuda a construir proyectos así las estructuras se ajustan "
-"al diseño del juego."
+"actualizará. Esto ayuda a construir tus proyectos de forma tal que su "
+"estructura se ajustan al diseño del juego."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:51
 msgid ""
@@ -6006,17 +5978,16 @@ msgstr ""
 "estos puede incluirse como plugins de terceros."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
-#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart’s content. You can also debug games easily, as "
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
-"Por otra parte, tener un código base abierto significa que puedes **aprender "
-"y extender el motor** si lo deseas. Puedes también depurar juegos fácilmente "
-"ya que Godot imprimirá errores con un volcado de pila, aún si vienen del "
-"propio motor."
+"Por otra parte, tener una base de código abierta significa que puedes "
+"**aprender y extender el motor** todo lo que quieras. Puedes también depurar "
+"juegos fácilmente, ya que Godot imprimirá errores con un volcado de pila, "
+"aún si vienen del propio motor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
 msgid ""
@@ -6076,14 +6047,13 @@ msgstr ""
 "juegos, o **construir plugins y extender el editor.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
-#, fuzzy
 msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
-"Esto lleva a un sistema confiable y flexible para UI ya que lo usa el editor "
-"mismo. Con la palabra clave ``tool``, puedes ejecutar código de juego en el "
-"editor."
+"Esto lleva a un sistema confiable y flexible para UI, ya que lo usa el "
+"editor mismo. Con la palabra clave ``tool``, puedes ejecutar cualquier "
+"código de juego en el editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:156
 msgid ""
@@ -6128,7 +6098,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Diseño de interfaces con nodos Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -6139,16 +6108,16 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
-"Las pantallas de computadoras, los teléfonos móviles y las pantallas de "
-"televisión vienen en todas las formas y tamaños. Para distribuir un juego, "
-"tendrás que admitir diferentes proporciones y resoluciones de pantalla. "
-"Puede ser difícil crear interfaces sensibles que se adapten a todas las "
-"plataformas. Afortunadamente, Godot viene con herramientas robustas para "
-"diseñar y administrar una interfaz de usuario sensible. Para diseñar su "
-"interfaz de usuario, utilizarás los nodos de Control. Estos son los nodos "
-"con iconos verdes en el editor. Hay docenas de ellos, para crear cualquier "
-"cosa, desde barras de vida hasta aplicaciones complejas. Todo el editor y "
-"los plugins de Godot usan estos nodos."
+"Pantallas de computadoras, teléfonos móviles y pantallas de televisión "
+"vienen en todas las formas y tamaños. Para distribuir un juego, tendrás que "
+"admitir diferentes proporciones y resoluciones de pantalla. Puede ser "
+"difícil crear interfaces sensibles que se adapten a todas las plataformas. "
+"Afortunadamente, Godot viene con herramientas robustas para diseñar y "
+"administrar una interfaz de usuario sensible. Para diseñar tu interfaz de "
+"usuario, utilizarás los nodos de Control. Estos son los nodos con íconos "
+"verdes en el editor. Hay docenas de ellos, para crear cualquier cosa, desde "
+"barras de vida hasta aplicaciones complejas. Todo el editor y los plugins de "
+"Godot usan estos nodos."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
@@ -6189,7 +6158,6 @@ msgstr ""
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
-#, fuzzy
 msgid ""
 "Only use Control nodes when you design your interfaces. They have unique "
 "properties that allow them to work with one another. Other nodes, like "
@@ -6198,10 +6166,10 @@ msgid ""
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
 "Utiliza únicamente nodos de Control cuando diseñes tus interfaces. Tienen "
-"propiedades únicas que les permiten trabajar unos con otros. Otros nodos "
+"propiedades únicas que les permiten trabajar unos con otros. Otros nodos, "
 "como Node2D, Sprite, etc. no funcionarán. Todavía puedes usar algunos nodos "
-"que funcionan con otros como el AnimationPlayer, Tween o StreamPlayer. Los "
-"nodos de control son CanvasItems como Node2D, por lo que puede aplicarles "
+"que funcionan con otros, como AnimationPlayer, Tween o StreamPlayer. Los "
+"nodos de control son CanvasItems como Node2D, por lo que puedes aplicarle "
 "shaders."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37
@@ -10267,6 +10235,8 @@ msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"Hay dos maneras de cargar recursos desde el código. La primera es usando la "
+"función ``load()`` en cualquier momento:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""

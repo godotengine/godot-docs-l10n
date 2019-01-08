@@ -1,5 +1,5 @@
 # Godot Engine Documentation in Portuguese (Portugal)
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alexandre Badalo <alexandre.badalo@sapo.pt>, 2018.
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-13 10:15+0000\n"
+"PO-Revision-Date: 2018-12-31 12:11+0000\n"
 "Last-Translator: ssantos <ssantos@web.de>\n"
 "Language-Team: Portuguese (Portugal) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_PT/>\n"
@@ -3840,6 +3840,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr ""
+"Para este projeto estaremos seguindo as convenções de nomenclatura de Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
 #, fuzzy
@@ -3859,6 +3860,10 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Classes, variáveis de exportação e métodos usam PascalCase, campos "
+"privados usam _camelCase, variáveis locais e parâmetros usam camelCase "
+"(Veja :ref:`doc_c_c_sharp_styleguide`).  Tenha cuidado digitando os nomes "
+"dos métodos com precisão ao conectar sinais."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -4001,6 +4006,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Se estiver usando C#, precisa (re)construir as montagens do projeto sempre "
+"que você quiser ver novas variáveis ou sinais de exportação. Esta compilação "
+"pode ser acionada manualmente clicando na palavra \"Mono\" na parte inferior "
+"da janela do editor para revelar o Painel Mono e, em seguida, clicando no "
+"botão \"Construir Projeto\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -10186,6 +10196,10 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"Você também pode \"pré-carregar\" recursos. Ao contrário de ``load``, esta "
+"função lerá o ficheiro do disco e carregá-la-á no compile-time. Como "
+"resultado, não pode chamar a pré-carga com um caminho variável: você deve "
+"usar uma string constante."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
@@ -10269,6 +10283,11 @@ msgid ""
 "serialized text or binary data (/*.tres, /*.res). They also inherit the "
 "reference-counting memory management from the Reference type."
 msgstr ""
+"Como qualquer objeto no Godot, os usuários também podem scriptar Resources. "
+"Os scripts de Resources herdam a capacidade de traduzir livremente entre "
+"propriedades de objetos e texto serializado ou dados binários (/*.tres, /*."
+"res). Eles também herdam o gerenciamento de contagem de referência da "
+"memória do tipo Reference."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
 msgid ""
@@ -10279,12 +10298,21 @@ msgid ""
 "ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
 "`Resource <class_Resource>` features:"
 msgstr ""
+"Isso vem com muitas vantagens distintas sobre estruturas de dados "
+"alternativas, como ficheiros personalizados JSON, CSV ou TXT. Os usuários só "
+"podem importar esses ativos como um :ref:`Dictionary <class_Dictionary>` "
+"(JSON) ou como um :ref:`File <class_File>` para analisar. O que diferencia "
+"os Resources é a sua herança de características :ref:`Object "
+"<class_Object>`, :ref:`Reference <class_Reference>`, e :ref:`Resource "
+"<class_Resource>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
 msgstr ""
+"Elas podem definir constantes, para que as constantes de outros campos de "
+"dados ou objetos não sejam necessárias."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
 msgid ""
@@ -10293,17 +10321,25 @@ msgid ""
 "Resource script's structure needs to change, the game using the Resource "
 "need not also change."
 msgstr ""
+"Eles podem definir métodos, incluindo métodos setter/getter para "
+"propriedades. Isso permite a abstração e encapsulamento dos dados "
+"subjacentes. Se a estrutura do roteiro de scriptes de Resources precisa "
+"mudar, o jogo usando o Resource também não precisa de mudar."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
 msgstr ""
+"Eles podem definir sinais, para que os Resources possam desencadear "
+"respostas a mudanças nos dados que gerem."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
+"Eles têm propriedades definidas, para que os usuários saibam 100% que seus "
+"dados existirão."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
 msgid ""
@@ -10311,12 +10347,17 @@ msgid ""
 "feature. Users do not need to implement custom logic to import/export a "
 "resource file's data."
 msgstr ""
+"A serialização e deserialização automática de Resources é um recurso interno "
+"do Godot Engine. Os usuários não precisam implementar lógica personalizada "
+"para importar/exportar dados de um ficheiro de recursos."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
 msgstr ""
+"Os Resources até podem serializar sub-Resources recursivamente, significando "
+"que os usuários podem projetar estruturas de dados ainda mais sofisticadas."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
 msgid ""
@@ -10324,6 +10365,10 @@ msgid ""
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
 "res) for increased speed and compression."
 msgstr ""
+"Os usuários podem gravar Resources como arquivos de texto amigáveis ao "
+"controle de versão (\\*.tres). Ao exportar um jogo, Godot serializa arquivos "
+"de recursos como arquivos binários (\\*.res) para maior velocidade e "
+"compressão."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
 msgid ""
@@ -10332,11 +10377,17 @@ msgid ""
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
+"O Inspetor do Godot Engine processa e edita ficheiros de Resource como "
+"standard. Assim os usuários muitas vezes não precisam de implementar lógica "
+"personalizada para visualizar ou editar seus dados. Para isso, clique duas "
+"vezes no ficheiro de recurso no dock do FileSystem ou clique no ícone da "
+"pasta no Inspetor e abra o ficheiro na caixa de diálogo."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr ""
+"Eles podem estender **outros**** tipos de recursos além do Resource básico."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""

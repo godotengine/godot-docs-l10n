@@ -1,16 +1,17 @@
 # Godot Engine Documentation in Ukrainian
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Yuri Chornoivan <yurchor@ukr.net>, 2018.
-# Максим Якимчук <xpinovo@gmail.com>, 2018.
+# Александр <ol-vin@mail.ru>, 2018.
+# Максим Якимчук <xpinovo@gmail.com>, 2018-2019.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-04 22:23+0000\n"
+"PO-Revision-Date: 2019-01-08 08:59+0000\n"
 "Last-Translator: Максим Якимчук <xpinovo@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -27,15 +28,14 @@ msgid "Godot Docs – *master* branch"
 msgstr "Документація Godot – гілка *основної*"
 
 #: ../../docs/index.rst:9
-#, fuzzy
 msgid ""
 "This is the documentation for the unstable (master) branch. Looking for the "
 "documentation of the current **stable** branch? `Have a look here <https://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
 "Це документація для нестабільної (основної) гілки. Шукаєте документацію "
-"поточної **стабільної** гілки? `Подивіться тут <http://docs.godotengine.org/"
-"en/stable>`_."
+"поточної **стабільної** гілки? `Гляньте тут <http://docs.godotengine.org/en/"
+"stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -106,7 +106,7 @@ msgstr "Перші кроки"
 
 #: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
-msgstr "Підручники"
+msgstr "Навчальні посібники"
 
 #: ../../docs/index.rst:90
 msgid "Development"
@@ -370,7 +370,6 @@ msgstr ""
 "+ або плаґінів редактора."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -378,11 +377,11 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-":ref:`sec-community` надає інформацію, що стосується сприяння розвитку рушія "
-"та життя його спільноти, наприклад, як повідомити про помилки, допомогти в "
-"документації, тощо. Вона також вказує на різні канали спільноти, такі як IRC "
-"та Discord, і містить список рекомендованих сторонніх навчальних посібників "
-"за межами цієї документації."
+"Розділ :ref:`sec-community` надає інформацію, що стосується сприяння "
+"розвитку рушія та життя його спільноти, наприклад, як повідомити про "
+"помилки, допомогти з документацією, тощо. Він також вказує на різні канали "
+"спільноти, такі як IRC та Discord, і містить список рекомендованих сторонніх "
+"навчальних посібників за межами цієї документації."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -611,7 +610,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -627,7 +625,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Що таке GDScript і чому я повинен, це використовувати?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -695,12 +693,12 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Що мотивувало за створення GDScript?"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "Основними причинами створення власної скриптової мови для Godot були:"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
@@ -722,16 +720,16 @@ msgstr ""
 "JS)."
 
 #: ../../docs/about/faq.rst:130
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"Жахливий інтерфейс для зв'язування з C++ призводить до великої кількості "
-"коду, помилок, вузьких місць та загальної неефективності (Lua, Python, "
-"Squirrel, JS та ін.)"
+"Багато існуючих мов мають жахливі інтерфейси для прив'язки до C++, що "
+"призводить до великої кількості коду, помилок, вузьких місць і загальної "
+"неефективності (Lua, Python, Squirrel, JS і т.д.). Ми хотіли зосередитися на "
+"великому рушії, а не на великій кількості інтеграцій."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -762,26 +760,32 @@ msgstr ""
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
 msgstr ""
+"GDScript був розроблений, щоб скоротити вищезазначені проблеми та багато "
+"іншого."
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Який тип форматів 3D-моделей підтримує Godot?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Godot підтримує Collada через експортера `OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, 3DSMax)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"Якщо ви використовуєте Blender, погляньте на наш власний `Better Collada "
+"Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Починаючи з Godot 3.0, glTF підтримується."
 
 #: ../../docs/about/faq.rst:153
 #, fuzzy
@@ -948,17 +952,16 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "Як я можу розширити Godot?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Як створювати плаґініи до редактора Godot, перегляньте на :ref:`Плаґіни "
-"редактора <doc_making_plugins>` та інструментарій скриптів."
+"Як створювати плаґіни (додатки) до редактора Godot, перегляньте на :ref:"
+"`Плаґіни редактора <doc_making_plugins>` та інструментарій скриптів."
 
 #: ../../docs/about/faq.rst:228
 #, fuzzy
@@ -991,7 +994,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "Я хотів би зробити свій внесок! З чого почати?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
@@ -1010,7 +1013,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "У мене є чудова ідея для Godot. Як я можу поділитися нею?"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -1107,6 +1110,8 @@ msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"Дивіться відповідну сторінку на `веб-сайті Godot <https://godotengine.org/"
+"contact>`_."
 
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
@@ -1239,7 +1244,7 @@ msgstr "|image8|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "Ваш перший погляд на редактор Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -18331,7 +18336,7 @@ msgstr "Потоки"
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:70
 #: ../../docs/tutorials/plugins/gdnative/index.rst:2
 msgid "GDNative"
-msgstr "GD Native"
+msgstr "GDNative"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_web.rst:71
 msgid "Clipboard synchronisation between engine and operating system"
@@ -19086,7 +19091,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/index.rst:2
 msgid "2D"
-msgstr "2D"
+msgstr "Двовимірна графіка (2D)"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:4
 msgid "Canvas layers"
@@ -20898,11 +20903,11 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/index.rst:2
 msgid "3D"
-msgstr "Просторова графіка"
+msgstr "Тривимірна графіка (3D)"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:4
 msgid "Introduction to 3D"
-msgstr ""
+msgstr "Введення в 3D"
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:6
 msgid ""
@@ -49180,7 +49185,7 @@ msgstr "ЩЕ НЕ НАПИСАНО"
 
 #: ../../docs/tutorials/vr/index.rst:2
 msgid "VR"
-msgstr "Зм."
+msgstr "Віртуальна реальність (VR)"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:4
 msgid "AR/VR primer"
@@ -51240,16 +51245,15 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr "Плаґіни"
+msgstr "Плаґіни (додатки)"
 
 #: ../../docs/tutorials/plugins/editor/index.rst:2
 msgid "Editor plugins"
 msgstr "Додатки редактора"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:4
-#, fuzzy
 msgid "Making plugins"
-msgstr "Додатки редактора"
+msgstr "Створення додатків"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
 #, fuzzy
@@ -53636,13 +53640,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/consoles.rst:4
-#, fuzzy
 msgid "Console support in Godot"
-msgstr "Які мови підтримуються в Godot?"
+msgstr "Підтримка консолі у Godot"
 
 #: ../../docs/tutorials/platform/consoles.rst:7
 msgid "Official support"
-msgstr ""
+msgstr "Офіційна підтримка"
 
 #: ../../docs/tutorials/platform/consoles.rst:9
 msgid ""
@@ -63733,6 +63736,7 @@ msgid ""
 "So, where is the Godot community and where can you ask questions and get "
 "help?"
 msgstr ""
+"Отже, де є спільнота Godot і де ви можете задати питання і отримати допомогу?"
 
 #: ../../docs/community/channels.rst:8
 msgid ""
@@ -63857,10 +63861,12 @@ msgid ""
 "This is a list of third-party tutorials created by the community that may be "
 "of interest."
 msgstr ""
+"Це список навчальних посібників від третіх сторін, створених спільнотою, які "
+"можуть вас зацікавити."
 
 #: ../../docs/community/tutorials.rst:9
 msgid "Video tutorials"
-msgstr "Відеопідручники"
+msgstr "Відеоуроки"
 
 #: ../../docs/community/tutorials.rst:11
 msgid ""
@@ -63883,6 +63889,8 @@ msgid ""
 "`Game from Scratch: Godot 3 Tutorial Series <https://www.youtube.com/watch?"
 "v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 msgstr ""
+"`Game from Scratch: Godot 3 Tutorial Series <https://www.youtube.com/watch?"
+"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 
 #: ../../docs/community/tutorials.rst:14
 msgid ""

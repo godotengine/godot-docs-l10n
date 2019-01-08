@@ -1,5 +1,5 @@
 # Godot Engine Documentation in German
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Alexander <adcrashday@googlemail.com>, 2018.
@@ -15,15 +15,18 @@
 # Headmade Games <janusdr@gmail.com>, 2018.
 # heroldini <heroldini@gmail.com>, 2018.
 # Julian Retzlaff <julian.retzlaff@googlemail.com>, 2018.
+# Karl <karl.bittner@outlook.com>, 2019.
 # kdankert <k.dankert@wtnet.de>, 2018.
 # Leif Bernsdorf <leif.bernsdorf@gmail.com>, 2018.
 # Lennard <lefl65@gmail.com>, 2018.
 # Linus Fessler <linusfessler@gmail.com>, 2018.
 # M. Feil <git@sgdw.de>, 2018.
+# Manuel Schade <sprivat@protonmail.com>, 2019.
 # Mark B <berezun.mark@gmail.com>, 2018.
 # Martin Ziegler <martin.zie@gmx.de>, 2018.
 # Mathias Schmalisch <mathias.schmalisch@gmail.com>, 2018.
 # Neicul <neicul@gmx.de>, 2018.
+# Nijco <heijnk@posteo.de>, 2018.
 # nimradium <nimra242001@gmail.com>, 2018.
 # Otto Hakstetter <otto@hakstetter.de>, 2018.
 # Patrick Schönberger <patrick.schoenberger@posteo.de>, 2018.
@@ -48,8 +51,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-13 10:15+0000\n"
-"Last-Translator: ZSte <ZStephanie@t-online.de>\n"
+"PO-Revision-Date: 2019-01-08 08:58+0000\n"
+"Last-Translator: Manuel Schade <sprivat@protonmail.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -64,15 +67,14 @@ msgid "Godot Docs – *master* branch"
 msgstr "Godot Dokumentation – *master* branch"
 
 #: ../../docs/index.rst:9
-#, fuzzy
 msgid ""
 "This is the documentation for the unstable (master) branch. Looking for the "
 "documentation of the current **stable** branch? `Have a look here <https://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Das ist die Dokumentation für den instabilen (Master) Branch. Suchst du "
-"stattdessen die Dokumentation für den aktuellen **stabilen** Branch? Diesen "
-"findest du unter <http://docs.godotengine.org/en/stable>`_."
+"Dies ist die Dokumentation für den instabilen (Master) Branch. Wenn du "
+"stattdessen den **stabilen** Branch suchst, `guck doch mal hier <http://docs."
+"godotengine.org/en/stable>`_."
 
 #: ../../docs/index.rst:13
 msgid ""
@@ -114,7 +116,6 @@ msgstr ""
 "Bescheid gibst!"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -123,13 +124,13 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Schicke eine Frage oder einen Pull Request an das`GitHub Repository <https://"
-"github.com/godotengine/godot-docs/issues>`_, hilf uns  `die Dokumentation "
-"<https://hosted.weblate.org/engage/godot-engine/>`_ in deine Sprache zu "
-"übersetzen, oder diskutiere mit uns entweder im ``#documentation`` Kanal auf "
-"`Discord <https://discord.gg/zH7NUgz>`_, oder dem ``#godotengine-doc`` Kanal "
-"auf `irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
-"doc>`_!"
+"Reiche ein Issue oder einen Pull Request im `GitHub Repository <https://"
+"github.com/godotengine/godot-docs/issues>`_ ein, hilf uns  `die "
+"Dokumentation <https://hosted.weblate.org/engage/godot-engine/>`_ in deine "
+"Sprache zu übersetzen, oder diskutiere mit uns entweder im "
+"``#documentation`` Kanal auf `Discord <https://discord.gg/zH7NUgz>`_, oder "
+"dem ``#godotengine-doc`` Kanal auf `irc.freenode.net <http://webchat."
+"freenode.net/?channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -420,7 +421,6 @@ msgstr ""
 "der Engine und zur Entwicklung von C++-Modulen oder Editor Plugins."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to the engine development and the life of its community, e.g. how to report "
@@ -429,11 +429,10 @@ msgid ""
 "tutorials outside of this documentation."
 msgstr ""
 "In :ref:`sec-community` findet man Informationen dazu, wie man zur "
-"Entwicklung der Engine und dem Leben ihrer Community beiträgt, z.B. wie man "
-"Bugs meldet, wie man bei der Dokumentation hilft, etc. Dort sind auch "
-"Verweise auf verschiedene Community-Kanäle wie IRC und Discord aufgeführt "
-"sowie eine Liste empfohlener Tutorials von Dritten außerhalb dieser "
-"Dokumentation."
+"Entwicklung der Engine und ihrer Community beiträgt, z.B. wie man Bugs "
+"meldet, wie man bei der Dokumentation hilft, usw. Dort sind auch Verweise "
+"auf verschiedene Community-Kanäle wie IRC und Discord aufgeführt sowie eine "
+"Liste empfohlener Tutorials von Dritten außerhalb dieser Dokumentation."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -750,7 +749,6 @@ msgstr ""
 "zu machen."
 
 #: ../../docs/about/faq.rst:109
-#, fuzzy
 msgid ""
 "Since Godot is an open-source project, it was imperative from the start to "
 "prioritize a more integrated and seamless experience over attracting "
@@ -768,10 +766,10 @@ msgstr ""
 "Programmiersprachen zu stellen - insbesondere wenn die Unterstützung dieser "
 "vertrauten Sprachen zu einer schlechteren Erfahrung führen würde. Wir "
 "verstehen, wenn du lieber eine andere Sprache in Godot verwenden möchtest "
-"(Liste der unterstützten Optionen oben). Wenn du GDScript noch nicht "
-"ausprobiert hast, versuche es für **drei Tage**. Genau wie Godot, sobald du "
-"siehst, wie mächtig es ist und wie schnell deine Entwicklung wird, denken "
-"wir, dass GDScript mit dir wachsen wird."
+"(Liste der unterstützten Optionen oben). Aber wenn du GDScript noch nicht "
+"ausprobiert hast, versuche es für **drei Tage**. Genau wie Godot: Sobald du "
+"siehst, wie mächtig es ist und wie schnell du damit entwickeln kannst, "
+"denken wir, dass du GDScript schätzen wirst."
 
 #: ../../docs/about/faq.rst:118
 msgid ""
@@ -1379,11 +1377,9 @@ msgid "|image7|"
 msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
-#, fuzzy
 msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr ""
-"Wenn der Dateipfad zum Ordner korrekt ist, werden Sie einen grünen Haken "
-"sehen."
+"Wenn der Dateipfad zum Ordner korrekt ist, erscheint ein grünes Häckchen."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:120
@@ -1395,16 +1391,15 @@ msgid "Your first look at Godot’s editor"
 msgstr "Ihr erster Blick auf Godots Editor"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
-"Willkommen bei Godot! Wenn Sie ihr Projekt geöffnet haben, sollten Sie die "
-"Oberfläche des Editors mit aktivem 3D-Viewport sehen. Sie können den "
+"Willkommen bei Godot! Sobald Sie ihr Projekt geöffnet haben, sollten Sie die "
+"Oberfläche des Editors mit aktiver 3D-Arbeitsbereich sehen. Sie können den "
 "aktuellen Arbeitsbereich am oberen Rand der Oberfläche ändern. Klicken Sie "
-"auf 2d, um in den 2d-Arbeitsbereich zu wechseln."
+"auf 2D, um in den 2D-Arbeitsbereich zu wechseln."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
@@ -1445,7 +1440,6 @@ msgid "|image11|"
 msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
@@ -1459,13 +1453,12 @@ msgid "|image12|"
 msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"Oben im Arbeitsbereich íst die **Toolbar** untergebracht. Dort finden Sie "
+"Oben im Arbeitsbereich ist die **Toolbar** untergebracht. Dort finden Sie "
 "Werkzeuge zum Bewegen, Skalieren oder Sperren der Objekte Ihrer aktuellen "
 "Szene. Sie ändert sich, wenn Sie zu einem anderen Arbeitsbereich wechseln."
 
@@ -1691,9 +1684,8 @@ msgid "It can be extended (to have more functions)."
 msgstr "Er kann erweitert werden (um Funktionen hinzuzufügen)."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:39
-#, fuzzy
 msgid "It can be added to another node as a child."
-msgstr "Er kann anderen Nodes als Unterobjekt hinzugefügt werden."
+msgstr "Es kann anderen Nodes als Unterobjekt hinzugefügt werden."
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:43
 msgid ""
@@ -3504,6 +3496,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"In den Eigenschaften des Timers, setze ein Häkchen in der \"An\" Box neben "
+"*Autostart*. Dies wird den Timer automatisch starten, wenn du die Szene "
+"startest. Die *Wait Time* solltest du bei 1 Sekunde lassen."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
 msgid ""
@@ -3512,12 +3507,18 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Neben dem \"Inspektor\" Tab ist der \"Node\" Tab, wenn du auf diesen klickst "
+"siehst du alle Signale die der ausgewählte Node aktivieren kann. Im Fall der "
+"Timer Node interessiert uns gerade das \"timeout\" Signal, dies wird "
+"aktiviert sobald der Timer ``0`` erreicht."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:46
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Klick auf das \"timeout()\" Signal und danach auf \"Verbinden...\". Auf dem "
+"folgenden Fenster kannst du definieren wie das Signal verbunden werden soll:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
 msgid ""
@@ -3526,6 +3527,11 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"Auf der linken Seite sehen Sie die Knoten in Ihrer Szene und können den "
+"Knoten auswählen, den Sie auf das Signal \"hören\" möchten. Beachten Sie, "
+"dass der Timer-Knoten rot ist - dies ist *kein Fehler*, sondern ist eine "
+"visuelle Anzeige, dass es der Knoten ist, der das Signal aussendet. Wählen "
+"Sie den Wurzelknoten aus."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:56
 msgid ""
@@ -3542,6 +3548,11 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"Am unteren Rand des Fensters befindet sich ein Feld mit der Bezeichnung "
+"\"Methode im Knoten\". Dies ist der Name der Funktion im Skript des "
+"Zielknotens, die Sie verwenden möchten. Standardmäßig erstellt Godot diese "
+"Funktion mit der Namenskonvention ``_on_<node_name>_<signal_name>``, aber "
+"Sie können sie ändern, wenn Sie möchten."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:64
 msgid ""
@@ -3556,12 +3567,18 @@ msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Jetzt können wir den Platzhalter Code mit beliebigem Code ersetzen, den wir "
+"beim Empfangen des Signals ausführen möchten. Lasst uns die Sprite zum "
+"Blinzeln bringen:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Führen Sie die Szene aus und Sie werden sehen, wie das Sprite jede Sekunde "
+"blinkt. Sie können die Eigenschaft *Wartezeit* des Timers ändern, um dies zu "
+"verändern."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
 msgid "Connecting signals in code"
@@ -3573,12 +3590,18 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Sie können die Signalverbindung auch im Code und nicht mit dem Editor "
+"herstellen. Dies ist normalerweise notwendig, wenn Sie Knoten über Code "
+"instanziieren und daher nicht den Editor verwenden können, um die Verbindung "
+"herzustellen."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Trennen Sie zunächst das Signal, indem Sie die Verbindung auf der "
+"Registerkarte \"Knoten\" des Timers auswählen und auf Trennen klicken."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
@@ -3596,16 +3619,21 @@ msgstr "Benutzerdefinierte Signale"
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
+"Sie können auch Ihre eigenen benutzerdefinierten Signale in Godot erzeugen:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Nach der Deklaration erscheinen Ihre benutzerdefinierten Signale im "
+"Inspektor und können wie die eingebauten Signale eines Knotens verbunden "
+"werden."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
 msgstr ""
+"Um ein Signal per Code auszusenden, verwenden Sie die Funktion ``emit``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
 #, fuzzy
@@ -3619,12 +3647,18 @@ msgid ""
 "clicked, we create an instance of the bullet at the player's location. See :"
 "ref:`doc_instancing` for details."
 msgstr ""
+"Als ein weiteres Beispiel für die Signalverwendung betrachten wir einen "
+"Spielercharakter, der sich drehen und auf die Maus schießen kann. Jedes Mal, "
+"wenn die Maustaste gedrückt wird, erstellen wir eine Instanz der Kugel am "
+"Standort des Spielers. Siehe :ref:`doc_instancing` für Details."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
+"Wenn die Kugeln jedoch als Kinder des Spielers hinzugefügt werden, bleiben "
+"sie an den Spieler \"gebunden\", während er sich dreht:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
@@ -3635,10 +3669,16 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
+"Stattdessen müssen die Kugeln unabhängig von der Bewegung des Spielers sein "
+"- einmal abgefeuert, sollten sie sich weiterhin in einer geraden Linie "
+"bewegen und der Spieler kann sie nicht mehr beeinflussen. Anstatt als Kind "
+"des Spielers in den Szenenbaum aufgenommen zu werden, ist es sinnvoller, die "
+"Kugel als Kind der \"Haupt\"-Spielszene hinzuzufügen, die entweder der "
+"Elternteil des Spielers oder sogar weiter oben im Baum sein kann."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 msgid "You could do this by adding the bullet directly:"
-msgstr ""
+msgstr "Sie können dies tun, indem Sie die Kugel direkt hinzufügen:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
 msgid ""
@@ -3649,6 +3689,13 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
+"Dies führt jedoch zu einem anderen Problem. Wenn Sie nun versuchen, Ihre "
+"\"Spieler\"-Szene unabhängig voneinander zu testen, stürzt sie beim Schießen "
+"ab, da kein übergeordneter Knoten zum Zugriff vorhanden ist. Dies macht es "
+"viel schwieriger, Ihren Spieler-Code unabhängig zu testen und bedeutet auch, "
+"dass, wenn Sie sich entscheiden, die Knotenstruktur Ihrer Hauptszene zu "
+"ändern, das übergeordnete Element des Spielers möglicherweise nicht mehr der "
+"geeignete Knoten ist, um die Kugeln zu erhalten."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""
@@ -65226,8 +65273,8 @@ msgid ""
 "Note that some of these channels are run and moderated by members of the "
 "Godot community or third parties."
 msgstr ""
-"Einige der Kanäle werden betrieben und moderiert von Mitgliedern der Godot "
-"Gemeinschaft oder von Dritten"
+"Hinweis: Einige der Kanäle werden betrieben und moderiert von Mitgliedern "
+"der Godot Gemeinschaft oder von Dritten."
 
 #: ../../docs/community/channels.rst:10
 msgid ""

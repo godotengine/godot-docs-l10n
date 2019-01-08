@@ -1,10 +1,11 @@
 # Godot Engine Documentation in Russian
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Aleksey Terentyev <terentjew.alexey@ya.ru>, 2018.
 # Alex Afterlife <main-site-maker@yandex.ru>, 2018.
 # Alexander Pushkar <alexanderpushkar86@gmail.com>, 2018.
+# Alexandr Eremeev <ae125529@gmail.com>, 2019.
 # Alex <snimalovo@gmail.com>, 2018.
 # Anatolich <rva.moscow@gmail.com>, 2018.
 # Andrii Doroshenko <xrayez@gmail.com>, 2018.
@@ -46,13 +47,14 @@
 # Siarhei Mashkarniou <irondrain@gmail.com>, 2018.
 # S.traiker.D <l1evilone@gmail.com>, 2018.
 # teriva <spirin.cos@yandex.ru>, 2018.
+# wotanweb <pooding55@gmail.com>, 2018.
 # Yan <uvokinuvokines@gmail.com>, 2018.
 # Азиз Ганиев <ajganiev@gmail.com>, 2018.
-# Александр <ol-vin@mail.ru>, 2018.
+# Александр <ol-vin@mail.ru>, 2018-2019.
 # Анатолий Горбунов <afgorbunov@gmail.com>, 2018.
 # Аркадий Авас <savvot@gmail.com>, 2018.
+# Аслан Снупов <aslan170505@gmail.com>, 2018.
 # Влад Афонин (Midnightcoder) <afonin.com123@gmail.com>, 2018.
-# Семён Рассохин <forzcross@gmail.com>, 2018.
 # Дмитрий Ефимов <daefimov@gmail.com>, 2018.
 # Егор Бураков <fend.q@mail.ru>, 2018.
 # Егор Рябуха (REgorion) <ryrgor@gmail.com>, 2018.
@@ -61,14 +63,15 @@
 # Лошаденко Максим Юриевич <vidos4all@gmail.com>, 2018.
 # Михаил <gagaran480@gmail.com>, 2018.
 # Озвучивает R2 <magabumbum@gmail.com>, 2018.
+# Семён Рассохин <forzcross@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2018-12-13 12:14+0100\n"
-"PO-Revision-Date: 2018-12-13 10:15+0000\n"
-"Last-Translator: Озвучивает R2 <magabumbum@gmail.com>\n"
+"PO-Revision-Date: 2019-01-02 19:06+0000\n"
+"Last-Translator: Александр <ol-vin@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
 "Language: ru\n"
@@ -84,14 +87,13 @@ msgid "Godot Docs – *master* branch"
 msgstr "Документация Godot - ветка *master*"
 
 #: ../../docs/index.rst:9
-#, fuzzy
 msgid ""
 "This is the documentation for the unstable (master) branch. Looking for the "
 "documentation of the current **stable** branch? `Have a look here <https://"
 "docs.godotengine.org/en/stable>`_."
 msgstr ""
-"Это документация для нестабильной ветки (master). Ищете документацию для "
-"текущей **стабильной** ветки? 'Смотрите здесь <http://docs.godotengine.org/"
+"Это документация для нестабильной (master) ветви. Ищете документацию по "
+"текущей **стабильной** ветви? `Взгляните сюда <https://docs.godotengine.org/"
 "en/stable>`_."
 
 #: ../../docs/index.rst:13
@@ -104,9 +106,8 @@ msgid ""
 msgstr ""
 "Добро пожаловать на официальную документацию Godot Engine - бесплатного и "
 "открытого 2D и 3D движка, поддерживаемого сообществом! Если вы здесь "
-"впервые, мы рекомендуем вам прочесть :ref:`introduction page "
-"<doc_about_intro>`, что бы иметь представление о том, что данная "
-"документация из себя представляет."
+"впервые, мы рекомендуем вам прочесть :ref:`Введение <doc_about_intro>`, что "
+"бы иметь представление о том, что данная документация из себя представляет."
 
 #: ../../docs/index.rst:18
 msgid ""
@@ -271,7 +272,7 @@ msgstr ""
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
-msgstr "О Godot"
+msgstr "О Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
 msgid ""
@@ -401,7 +402,7 @@ msgid ""
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
-"Секция :ref:`sec-learn`является главной причиной для существования данной "
+"Секция :ref:`sec-learn` является главной причиной для существования данной "
 "документации, поскольку она содержит всю необходимую информацию об "
 "использовании движка для создания игр. Она начинается с :ref:`пошагового "
 "обучения <toc-learn-step_by_step>`, которое должно быть входной точкой для "
@@ -544,7 +545,7 @@ msgid ""
 msgstr ""
 "Для полной информации, смотрите `COPYRIGHT.txt <https://github.com/"
 "godotengine/godot/blob/master/COPYRIGHT.txt>`_ а также `LICENSE.txt <https://"
-"github.com/godotengine/godot/blob/master/LICENSE.txt>` и `LOGO_LICENSE.txt "
+"github.com/godotengine/godot/blob/master/LICENSE.txt>`_ и `LOGO_LICENSE.txt "
 "<https://github.com/godotengine/godot/blob/master/LOGO_LICENSE.md>`_ в "
 "репозитории Godot."
 
@@ -643,8 +644,8 @@ msgid ""
 "<toc-learn-scripting>` section."
 msgstr ""
 "Официально поддерживаемые языки для Godot это GDScript, Visual Scripting, C# "
-"и C++. Смотрите подкатегории для каждого языка в секции :ref:`Написание "
-"сценариев (скриптов) <toc-learn-scripting>`."
+"и C++. Смотрите подкатегории для каждого языка в секции :ref:`Скриптинг <toc-"
+"learn-scripting>`."
 
 #: ../../docs/about/faq.rst:68
 msgid ""
@@ -1380,9 +1381,8 @@ msgid "|image7|"
 msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
-#, fuzzy
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr "Если путь к папке верен, вы увидите зеленую галочку."
+msgstr "Когда путь к папке будет указан верно, вы увидите зеленую галочку."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:120
@@ -1394,7 +1394,6 @@ msgid "Your first look at Godot’s editor"
 msgstr "Ваш первый взгляд на редактор Godot"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
@@ -1402,8 +1401,8 @@ msgid ""
 msgstr ""
 "Добро пожаловать в Godot! Открыв свой проект, вы увидите интерфейс редактора "
 "с активным окном 3D просмотра. Вы можете изменить текущее рабочее "
-"пространство в верхней части интерфейса. Нажмите на 2D, чтобы перейти в 2D "
-"рабочее пространство."
+"пространство в верхней части интерфейса. Нажмите на 2D, чтобы перейти в "
+"рабочее пространство 2D."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
@@ -1429,13 +1428,12 @@ msgstr ""
 "области** и **кнопки воспроизведения**."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
-#, fuzzy
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"На левой стороне у вас есть **док файловой системы**, где вы будете "
-"управлять файлами и ассетами вашего проекта."
+"Слева у вас есть **файловая система**, где вы будете управлять файлами и "
+"ассетами вашего проекта."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:152
@@ -1443,13 +1441,12 @@ msgid "|image11|"
 msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
-"На правой стороне вы найдете **док сцены**, в котором перечислено содержимое "
-"активной сцены, и **инспектор** в правом нижнем углу."
+"Справа вы найдете **панель сцен**, в которой перечислено содержимое активной "
+"сцены, и **инспектор** в правом нижнем углу."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:160
@@ -1457,7 +1454,6 @@ msgid "|image12|"
 msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
@@ -1465,7 +1461,7 @@ msgid ""
 msgstr ""
 "В центре сверху у вас есть **панель инструментов**, где вы найдете "
 "инструменты для перемещения, масштабирования или блокировки ваших объектов "
-"сцены. Она меняется, когда вы переключаетесь между различными рабочими "
+"сцены. Она изменяется, когда вы переключаетесь между различными рабочими "
 "областями."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
@@ -2416,7 +2412,7 @@ msgstr ""
 #: ../../docs/getting_started/scripting/index.rst:2
 #: ../../docs/tutorials/networking/http_request_class.rst:22
 msgid "Scripting"
-msgstr "Написание сценариев (скриптов)"
+msgstr "Скриптинг"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:9
 msgid ""
@@ -2772,9 +2768,9 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
-"Узел, к которому мы прикрепляем сценарий, представляет собой панель, поэтому "
-"в поле \"Наследование\" будет автоматически вписано \"Panel\". Это то, что "
-"нам нужно, поскольку цель сценария заключается в расширении функциональности "
+"Узел, к которому мы прикрепляем скрипт, представляет собой панель, поэтому в "
+"поле \"Наследование\" будет автоматически вписано \"Panel\". Это то, что нам "
+"нужно, поскольку цель сценария заключается в расширении функциональности "
 "нашего узла панели."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
@@ -2787,9 +2783,9 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
-"После этого сценарий будет создан и добавлен к узлу. Вы можете понять это по "
-"значку \"Открыть сценарий\" рядом с узлом на вкладке \"Сцена\", а также в "
-"свойстве сценария в \"Инспекторе\":"
+"После этого скрипт будет создан и добавлен к узлу. Вы можете понять это по "
+"значку \"Открыть скрипт\" рядом с узлом на вкладке \"Сцена\", а также в "
+"свойстве Script в \"Инспекторе\":"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
 msgid ""
@@ -2797,9 +2793,9 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
-"Чтобы отредактировать сценарий, нажмите одну из кнопок, которые отмечены в "
+"Чтобы отредактировать скрипт, нажмите одну из кнопок, которые отмечены в "
 "приведенном выше изображении. Появится редактор скриптов в котором будет "
-"отображен шаблон сценария по умолчанию:"
+"отображен шаблон скрипта по умолчанию:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -2822,10 +2818,10 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
-"Сценарий добавляет узлу поведение. Он используется для управления "
+"Скрипт добавляет узлу поведение. Он используется для управления "
 "функционированием узла, а также его взаимодействия с другими узлами: "
-"дочерними, родительскими, родственными и т.д. Локальная область сценария - "
-"это узел. Другими словами, сценарий наследует функции, предоставляемые этим "
+"дочерними, родительскими, родственными и т.д. Локальная область скрипта - "
+"это узел. Другими словами, скрипт наследует функции, предоставляемые этим "
 "узлом."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:176
@@ -2938,7 +2934,7 @@ msgstr ""
 "Для этого мы познакомимся с функцией, которая, вероятно, наиболее часто "
 "используется программистами Godot: :ref:`Node.get_node() "
 "<class_Node_get_node>`. Эта функция использует пути для извлечения узлов из "
-"любого места сцены, относительно узла, которому принадлежит сценарий."
+"любого места сцены, относительно узла, которому принадлежит скрипт."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:224
 msgid ""
@@ -2954,8 +2950,8 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
-"Поскольку Button и Label являются братьями по отношению к Panel, к которой "
-"прикреплен сценарий, вы можете выбрать Button, набрав следующее под функцией "
+"Поскольку Button и Label являются детьми по отношению к Panel, к которой "
+"прикреплен скрипт, вы можете выбрать Button, написав следующее в функции "
 "``_ready()``:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:244
@@ -2972,7 +2968,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"
-msgstr "В итоге сценарий должен выглядеть так:"
+msgstr "В итоге скрипт должен выглядеть так:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid ""
@@ -3042,7 +3038,7 @@ msgid ""
 "However, it is still common to need a script to be processed on every frame. "
 "There are two types of processing: idle processing and physics processing."
 msgstr ""
-"Однако, бывает необходимо, чтобы сценарий обрабатывался в каждом кадре. "
+"Однако, бывает необходимо, чтобы скрипт обрабатывался в каждом кадре. "
 "Существует два типа обработки: обработка простоя и обработка физики."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
@@ -3143,12 +3139,11 @@ msgstr ""
 "кнопки \"Группы\" под панелью \"Узел\":"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
-#, fuzzy
 msgid ""
 "And the second way is from code. One example would be to tag nodes which are "
 "enemies:"
 msgstr ""
-"И второй способ - из кода. Одним из примеров было бы помечать сцены, которые "
+"И второй способ - из кода. Одним из примеров это пометка сцен, которые "
 "являются врагами:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
@@ -3876,25 +3871,28 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "Для этого проекта мы будем следовать правилам именования Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Для этого проекта мы будем следовать соглашениям об именах Godot. Классы "
-"(узлы) используют ``PascalCase``, переменные и функции используют "
-"``snake_case``, а константы используют ``ALL_CAPS``."
+"**GDScript**: Классы (узлы) используют PascalCase, переменные и функции - "
+"snake_case, константы - ALL_CAPS (см. :ref:`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
+#, fuzzy
 msgid ""
 "**C#**: Classes, export variables and methods use PascalCase, private fields "
 "use _camelCase, local variables and parameters use camelCase (See :ref:"
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Классы, экспортируемые переменные и методы используют PascalCase, "
+"приватные поля - _camelCase, локальные переменные и параметры - CamelCase "
+"(см. :ref:`doc_c_sharp_styleguide`).  Будьте осторожны, набирайте имена "
+"методов точно при подключении сигналов."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -4036,6 +4034,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Если вы используете C#, вам нужно (пере)собирать сборки проекта всякий раз, "
+"когда вы хотите увидеть новые экспортируемые переменные или сигналы. Эта "
+"сборка может быть запущена вручную путем нажатия на слово \"Mono\" в нижней "
+"части окна редактора, чтобы открыть Mono Panel, а затем на кнопку \"Build "
+"Project\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -4959,7 +4962,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:955
 msgid "Now add this script to ``HUD``:"
-msgstr "Теперь добавьте этот сценарий '' HUD'':"
+msgstr "Теперь добавьте этот скрипт в ``HUD``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:974
 msgid ""
@@ -5232,7 +5235,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
@@ -8755,7 +8758,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
-msgstr "Контролирование игровым интерфейсом с помощью кода"
+msgstr "Управление игровым интерфейсом из кода"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:7
@@ -8763,13 +8766,12 @@ msgid "Intro"
 msgstr "Введение"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
-#, fuzzy
 msgid ""
 "In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
-"В этом уроке вы присоедините шкалу жизни к персонажу и сделаете анимацию "
-"потери здоровья."
+"В этом уроке вы присоедините персонажа к шкале жизни и анимируете потерю "
+"здоровья."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
@@ -8789,7 +8791,7 @@ msgstr "Как **подключить** персонажа к интерфейс
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr "Как ** управлять** интерфейсом с помощью GDscript"
+msgstr "Как **управлять** интерфейсом с помощью GDscript"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
@@ -9681,15 +9683,21 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
 msgid "Fade the bar when the Player dies"
-msgstr ""
+msgstr "Исчезновение шкал, когда игрок умирает"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
+#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
 "well when the character died. We will reuse the same ``Tween`` node as it "
 "manages multiple animations in parallel for us."
 msgstr ""
+"Когда зеленый персонаж умирает, то проигрывается анимация смерти и он "
+"пропадает. На данный момент, мы не должны больше показывать интерфейс. "
+"Давайте когда персонаж погибает будет скрывать шкалы. Мы будем повторно "
+"использовать один и тот же узел ``Tween`, поскольку он управляет несколькими "
+"анимациями параллельно для нас."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 msgid ""
@@ -9698,16 +9706,23 @@ msgid ""
 "the ``Player`` node in the Scene dock and click on the Node tab next to the "
 "Inspector."
 msgstr ""
+"Во-первых, ``GUI`` необходимо подключиться к сигналу ``died`` у``Player``, "
+"чтобы узнать, когда тот умер. Нажмите :kbd:`F1` для возврата в 2D-среду. "
+"Выберите вкладку ``Player`` в панели Сцен и щелкните на вкладку Узел рядом с "
+"Инспектором."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr ""
+"Найдите сигнал ``died``, выберите его и нажмите кнопку Connect (Подключить)."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
+#, fuzzy
 msgid "The signal should already have the Enemy connected to it"
-msgstr ""
+msgstr "Сигнал должен быть уже подключен к Врагу."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
+#, fuzzy
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -9715,10 +9730,17 @@ msgid ""
 "the bottom of the window. This will take you to the ``GUI.gd`` file in the "
 "Script Workspace."
 msgstr ""
+"В окне Connecting Signal (Подключение сигнала) снова подключитесь к узлу "
+"``GUI``. Путь к узлу должен быть ``../../GUI``, а метод в узле должен "
+"показывать ``_on_Player_died``. Оставьте опцию Сделать Функцию включенной и "
+"нажмите Подключить в нижней части окна. После этого вы перейдете в ``GUI."
+"gd`` во вкладке Script."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
 msgid "You should get these values in the Connecting Signal window"
 msgstr ""
+"Вы должны получить эти значения в окне Connecting Signal (Подключение "
+"сигнала)"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
 msgid ""
@@ -9726,12 +9748,19 @@ msgid ""
 "information, we emit a new signal. Use them wisely: the more connections you "
 "add, the harder they are to track."
 msgstr ""
+"Теперь вы должны увидеть закономерность: каждый раз, когда графическому "
+"интерфейсу нужна новая информация, мы посылаем новый сигнал. Используйте их "
+"разумно: чем больше связей вы добавляете, тем сложнее их отслеживать."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
+#, fuzzy
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
+"Чтобы анимировать исчезновение на елементе UI, мы должны использовать его "
+"свойство ``modulate``. ``modulate`` - это ``Color``, который умножает цвета "
+"наших текстур."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
 msgid ""
@@ -9739,15 +9768,24 @@ msgid ""
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
+"`modulate` наследуется из класса `CanvasItem`, от него наследуются все 2D и "
+"UI узлы. Он позволяет переключать видимость узла, назначать ему шейдер и "
+"изменять его цвет с помощью `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
 "interface. If we lower the alpha channel, our interface fades out."
 msgstr ""
+"``modulate`` принимает значение ``Color`` с 4 каналами: красный, зеленый, "
+"синий и альфа-канал. Если мы сделаем темнее любой из первых трех каналов, то "
+"интерфейс будет темнее. Если мы снизим альфа-канал, наш интерфейс станет "
+"прозрачным."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
+#, fuzzy
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -9755,6 +9793,11 @@ msgid ""
 "``_on_Player_died`` method and name them ``start_color`` and ``end_color``. "
 "Use the ``Color()`` constructor to build two ``Color`` values."
 msgstr ""
+"Давайте анимировать переход от белого цвета с альфа-каналом ``1``, то есть "
+"при полной непрозрачности, к чисто белому со значением альфа ``0``, то есть "
+"полностью прозрачному. Добавим две переменные вверху метода "
+"``_on_on_Player_died`` и назовем их ``start_color`` и ``end_color``. "
+"Используйте конструктор ``Color()`` для построения двух ``Color`` значений."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
 msgid ""
@@ -9762,28 +9805,37 @@ msgid ""
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
+"``Color(1.0, 1.0, 1.0, 1.0)`` соответствует белому цвету. Четвертый "
+"аргумент, соответственно ``1.0`` и ``0.0`` в ``start_color`` и "
+"``end_color``, - это альфа-канал."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
-msgstr ""
+msgstr "Затем снова вызываем метод ``interpolate_property`` узла ``Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
+"На этот раз мы меняем свойство ``modulate`` и анимируем его из "
+"``start_color`` на `end_color``. Продолжительность составляет одну секунду, "
+"с линейным переходом. Здесь опять же, поскольку переход линейный, плавность "
+"не имеет значения. Вот полный метод ``_on_on_Player_died``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr ""
+"И все. Теперь вы можете запустить игру, чтобы увидеть конечный результат!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
 msgid "The final result. Congratulations for getting there!"
-msgstr ""
+msgstr "Конечный результат. Поздравляю, что добрались сюда!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
 msgid ""
@@ -9793,20 +9845,28 @@ msgid ""
 "signal to forward the information from the `Player` to the `GUI` and let the "
 "`GUI` process it."
 msgstr ""
+"Используя те же методы, вы можете изменить цвет бара, когда игрока "
+"отравляют, сделать бар красным, когда его здоровье падает, потрясти "
+"пользовательский интерфейс, когда он получает критический удар... принцип "
+"тот же самый: подать сигнал для передачи данных из `Player'a` в `GUI` и дать "
+"`GUI` обработать их."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:4
 msgid "Splash screen"
-msgstr ""
+msgstr "Заставка"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:7
 msgid "Tutorial"
-msgstr ""
+msgstr "Учебное пособие"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:9
+#, fuzzy
 msgid ""
 "This is a simple tutorial to establish the basic idea of how the GUI "
 "subsystem works. The goal is to create a simple, static splash screen."
 msgstr ""
+"Это простое руководство по созданию базовой идеи работы подсистемы GUI. Цель "
+"заключается в создании простой статической заставки."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:15
 msgid ""
@@ -9814,10 +9874,13 @@ msgid ""
 "can be placed directly in your project folder and Godot will import them "
 "automatically."
 msgstr ""
+"Ниже приведен файл с файлами, которые будут использоваться. Извлеченные "
+"файлы можно поместить непосредственно в папку проекта, и Godot импортирует "
+"их автоматически."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:18
 msgid ":download:`robisplash_assets.zip <files/robisplash_assets.zip>`."
-msgstr ""
+msgstr ":Скачать:`robisplash_assets.zip <files/robisplash_assets.zip>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:21
 #: ../../docs/tutorials/3d/reflection_probes.rst:21
@@ -9825,13 +9888,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:40
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:16
 msgid "Setting up"
-msgstr ""
+msgstr "Настройка"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:23
 msgid ""
 "Set the display resolution to 800x450 in Project Settings, and set up a new "
 "scene like this:"
 msgstr ""
+"Установите разрешение экрана 800x450 в Настройках проекта и создайте новую "
+"сцену, как та что показана ниже:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:27
 msgid ""
@@ -9839,6 +9904,9 @@ msgid ""
 "<class_TextureRect>` type. To display an image, drag the corresponding asset "
 "to the texture property."
 msgstr ""
+"Узлы \"background\" и \"logo\" имеют тип :ref:`TextureRect "
+"<class_TextureRect>`. Чтобы отобразить изображение, перетащите "
+"соответствующий ресурс в свойство Texture."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:32
 msgid ""
@@ -9846,20 +9914,26 @@ msgid ""
 "several images for different states, but only the normal and pressed will be "
 "supplied in this example:"
 msgstr ""
+"Узел \"start\" представляет собой :ref:`TextureButton "
+"<class_TextureButton>`. Он имеет несколько изображений для разных состояний, "
+"но только обычные и нажатые будут поставляться в этом примере:"
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:38
 msgid "Finally, the node \"copyright\" is a :ref:`Label <class_Label>`."
 msgstr ""
+"Наконец, узел \"copyright\" представляет собой :ref:`Label <class_Label>`."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:40
 msgid "Your final scene should look something like this."
-msgstr ""
+msgstr "В итоге ваша сцена должна выглядеть примерно так."
 
 #: ../../docs/getting_started/step_by_step/splash_screen.rst:44
 msgid ""
 "Go ahead and run the project.  If you're satisfied with the results, "
 "continue to the next tutorial."
 msgstr ""
+"Давайте! Запустите проект!  Если вы удовлетворены результатом, перейдите к "
+"следующему уроку."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:4
 msgid "Animations"
@@ -9867,7 +9941,7 @@ msgstr "Анимации"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:9
 msgid "Godot's animation system is extremely powerful and flexible."
-msgstr ""
+msgstr "Анимационная система Godot чрезвычайно мощная и гибкая."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:11
 msgid ""
@@ -9876,35 +9950,46 @@ msgid ""
 "splash image. Here's a copy just in case: :download:`robisplash.zip <files/"
 "robisplash.zip>`."
 msgstr ""
+"Для начала воспользуемся сценой из предыдущего урока (:ref:"
+"`doc_splash_screen`). Цель заключается в добавлении \"появляющейся\" "
+"анимации к заставке. Вот копия на всякий случай: :скачать:`robisplash.zip "
+"<files/robisplash.zip>`."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:16
+#, fuzzy
 msgid "Add an animation player"
-msgstr ""
+msgstr "Добавление Animation Player"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:18
 msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
+"Прежде всего, добавьте :ref:`AnimationPlayer <class_AnimationPlayer>`в сцену "
+"как дочерний узел \"background\" (корневой узел):"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
-msgstr ""
+msgstr "При выборе узла данного типа появляется панель редактора анимаций:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
 msgstr ""
+"Панель редактора анимаций остается видимой до тех пор, пока не будет скрыта "
+"вручную."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:31
 msgid "Creating the animation"
-msgstr ""
+msgstr "Создание анимации"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:33
 msgid ""
 "It's time to create a new animation! Press the new animation button and name "
 "the animation \"intro\" when the dialog appears."
 msgstr ""
+"Пришло время создать новую анимацию! Нажмите на кнопку создания новой "
+"анимации и, когда появится диалоговое окно, назовите анимацию \"intro\"."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:38
 msgid ""
@@ -9912,14 +9997,18 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot, any property of an object can be animated:"
 msgstr ""
+"Теперь, когда у нас есть анимация, редактор свойств переходит в режим "
+"\"редактирования анимации\". В этом режиме рядом с каждым свойством "
+"редактора свойств отображается значок ключа. В Godot, любое свойство объекта "
+"может быть анимировано:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:46
 msgid "Editing the animation"
-msgstr ""
+msgstr "Редактирование анимации"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:48
 msgid "The logo will appear from the top of the screen."
-msgstr ""
+msgstr "Мы хотим чтобы logo появился вверху экрана."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:50
 msgid ""
@@ -9927,41 +10016,53 @@ msgid ""
 "\"Rect / Position\" property to ``(118, -400)`` and press the key button "
 "next to the property:"
 msgstr ""
+"Открыв панель редактора анимации, выберите узел \"logo\" и установите "
+"свойство \"Rect / Position\" на ``(118, -400)`` и нажмите на ключ, "
+"расположенный рядом со свойством:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:56
 msgid "When the dialog appears, confirm that you are creating a new track."
 msgstr ""
+"Когда появится диалоговое окно, подтвердите, что вы создаете новую дорожку."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
+#, fuzzy
 msgid "The keyframe will be added in the animation player editor:"
-msgstr ""
+msgstr "Ключевой кадр будет добавлен в редактор плеера анимации:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:62
 msgid "Move the editor cursor to the end by clicking here:"
-msgstr ""
+msgstr "Переместите курсор редактора в конец, щелкнув здесь:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:66
 msgid ""
 "Change the logo position to ``(118, 0)`` and add a keyframe again. With two "
 "keyframes, the animation happens."
 msgstr ""
+"Измените положение логотипа на ``(118, 0)`` и добавьте ключевой кадр еще "
+"раз. С двумя ключевыми кадрами происходит анимация."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:71
 msgid ""
 "Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
 "panel will make the logo descend."
 msgstr ""
+"Нажатие на кнопку \"Воспроизвести выбранную анимацию с самого начала. (Shift-"
+"D)\" на панели анимации, сделает так чтобы logo стало опускаться."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:76
 msgid ""
 "Click the \"Autoplay on Load\" button to set the animation to start "
 "automatically when the scene starts."
 msgstr ""
+"Нажмите на кнопку \"Автовоспроизведение при Загрузке\", чтобы анимация "
+"запускалась автоматически при запуске сцены."
 
 #: ../../docs/getting_started/step_by_step/animations.rst:81
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
 msgstr ""
+"И, наконец, при запуске сцены анимация должна выглядеть следующим образом:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:4
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:48
@@ -9973,15 +10074,20 @@ msgstr "Ресурсы"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:7
 msgid "Nodes and resources"
-msgstr ""
+msgstr "Узлы и Ресурсы"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
+#, fuzzy
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
 "features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
+"До этого урока мы были сосредоточены на классе :ref:`Node <class_Node>` в "
+"Godot, так как именно его вы используете для написания поведения и "
+"большинство функций движка полагаются на него. Есть еще один тип данных, "
+"который так же важен: :ref:`Resource <class_Resource>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
@@ -9990,6 +10096,10 @@ msgid ""
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
+"*Узлы* дают вам функциональность: они рисуют спрайты, 3D модели, моделируют "
+"физику, организовывают UI и т.д. **Ресурсы** являются **контейнерами "
+"данных**. Они ничего не делают сами по себе: вместо этого узлы используют "
+"данные, содержащиеся в ресурсах."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 msgid ""
@@ -10000,6 +10110,12 @@ msgid ""
 "<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
 "<class_Translation>`."
 msgstr ""
+"Все, что Godot сохраняет на диск или загружает с него, является ресурсом. "
+"Будь то сцена (.tscn или .scn файл), изображение, скрипт... Вот несколько "
+"примеров  :ref:`Texture <class_Texture>`, :ref:`Script <class_Script>`, :ref:"
+"`Mesh <class_Mesh>`, :ref:`Animation <class_Animation>`, :ref:`AudioStream "
+"<class_AudioStream>`, :ref:`Font <class_Font>`, :ref:`Translation "
+"<class_Translation>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 msgid ""
@@ -10008,6 +10124,10 @@ msgid ""
 "again will return the same copy every time. As resources only contain data, "
 "there is no need to duplicate them."
 msgstr ""
+"Когда движок загружает ресурс с диска, **это загружается только один раз**. "
+"Если копия этого ресурса уже находится в памяти, при попытке загрузить "
+"ресурс снова будет каждый раз возвращаться одна и та же копия. Поскольку "
+"ресурсы содержат только данные, нет необходимости их дублировать."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
 msgid ""
@@ -10016,39 +10136,46 @@ msgid ""
 "these types can become a resource. This means that both nodes and resources "
 "can contain resources as properties:"
 msgstr ""
+"Каждый объект, будь то Узел или Ресурс, может экспортировать свойства. "
+"Существует множество типов свойств, таких как String, integer, Vector2 и т."
+"д., и любой из этих типов может стать ресурсом. Это означает, что и узлы, и "
+"ресурсы могут содержать ресурсы словно они свойства:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
 msgid "External vs built-in"
-msgstr ""
+msgstr "Внешние против Встроенных(Build-it)"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
-#, fuzzy
 msgid "There are two ways to save resources. They can be:"
-msgstr ""
-"Существует два способа проектирования пользовательского интерфейса в Godot. "
-"Вы можете:"
+msgstr "Существует два способа сохранения ресурсов. Они могут быть:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
-msgstr ""
+msgstr "**Внешний** сохраненный в виде отдельных файлов."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:44
 msgid ""
 "**Built-in**, saved inside the \\*.tscn or the \\*.scn file they're attached "
 "to."
 msgstr ""
+"**Встроенный** сохраненный в файле \\*.tscn или в файле \\*.scn, к которому "
+"они прикреплены."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:46
 msgid ""
 "To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
 "`Sprite <class_Sprite>` node:"
 msgstr ""
+"Если быть более точным, вот свойство :ref:`Texture <class_Texture>` в узле :"
+"ref:`Sprite <class_Sprite>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr ""
+"Нажатие на ссылку предварительного просмотра ресурса позволяет нам "
+"просматривать и редактировать свойства ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
 msgid ""
@@ -10057,6 +10184,10 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
+"Свойство Path говорит нам, откуда берется ресурс. В данном случае речь идет "
+"об PNG изображении, получившем название ``robi.png``. Когда ресурс поступает "
+"из такого файла, он является внешним ресурсом. Если вы удалите этот путь или "
+"этот путь пуст, он станет встроенным ресурсом."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -10064,22 +10195,30 @@ msgid ""
 "scene. In the example above, if you erase the path \\`\"res://robi.png\"\\` "
 "and save, Godot will save the image inside the .tscn scene file."
 msgstr ""
+"Переключение между встроенными и внешними ресурсами происходит при "
+"сохранении сцены. В приведенном выше примере, если вы удалите путь \\`"
+"\"res://robi.png\"\\` и сохраните, Godot сохранит изображение в файле сцены "
+"в формате .tscn."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:66
 msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
+"Даже если вы сохраните встроенный ресурс, при многократном копировании "
+"сцены, движок загрузит только одну ее копию."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
 msgid "Loading resources from code"
-msgstr ""
+msgstr "Загрузка ресурсов из кода"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:72
 msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
 msgstr ""
+"Существует два способа загрузки ресурсов из кода. Во-первых, можно "
+"воспользоваться функцией ``load()``:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""
@@ -10087,10 +10226,14 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
+"Вы также можете ``preload``(предварительно загрузить) ресурсы. В отличие от  "
+"``load``, эта функция будет читать файл с диска и загружать его во время "
+"компиляции. В результате, вы не можете вызвать ``preload`` с путем к ресурсу "
+"в переменной: вам нужно использовать постоянную строку."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
-msgstr ""
+msgstr "Загрузка сцен"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:108
 msgid ""
@@ -10098,19 +10241,28 @@ msgid ""
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
 "packed inside a resource."
 msgstr ""
+"Сцены также являются ресурсами, но есть подвох. Сцены, записанные на диск, "
+"представляют собой ресурсы типа :ref:`PackedScene <class_PackedScene>`. "
+"Сцена упакованая внутри ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_instance>` method."
 msgstr ""
+"Для получения экземпляра сцены необходимо использовать метод :ref:"
+"`PackedScene.instance() <class_PackedScene_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
+#, fuzzy
 msgid ""
 "This method creates the nodes in the scene's hierarchy, configures them, and "
 "returns the root node of the scene. You can then add it as a child of any "
 "other node."
 msgstr ""
+"Этот метод создает узлы в иерархии сцены, настраивает их и возвращает "
+"корневой узел сцены. Затем вы можете добавить его как дочернее устройство "
+"любого другого узла."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
 msgid ""
@@ -10120,10 +10272,15 @@ msgid ""
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
 msgstr ""
+"Такой подход имеет ряд преимуществ. Поскольку функция :ref:`PackedScene."
+"instance() <class_PackedScene_instance>` работает довольно быстро, вы можете "
+"создавать новых врагов, пули, эффекты и т.д. без необходимости каждый раз "
+"загружать их с диска. Помните, что, как всегда, все изображения, сетки и т."
+"д. делятся между экземплярами сцены."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
-msgstr ""
+msgstr "Очистка(освобождение) ресурсов"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:146
 msgid ""
@@ -10132,21 +10289,31 @@ msgid ""
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
+"Когда ``Resource`` перестает использоваться, он автоматически очищается. "
+"Поскольку, в большинстве случаев, Ресурсы содержатся в узлах, когда вы "
+"освобождаете узел, механизм освобождает все ресурсы, которыми он владеет, а "
+"также если ни один другой узел не использует их."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
-#, fuzzy
 msgid "Creating your own resources"
-msgstr "Создание узлов"
+msgstr "Создание собственных ресурсов"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:153
+#, fuzzy
 msgid ""
 "Like any Object in Godot, users can also script Resources. Resource scripts "
 "inherit the ability to freely translate between object properties and "
 "serialized text or binary data (/*.tres, /*.res). They also inherit the "
 "reference-counting memory management from the Reference type."
 msgstr ""
+"Как и любой объект в Godot, пользователи также могут создавать скрипты "
+"Ресурсов. Скрипты ресурса наследуют возможность свободного перевода между "
+"свойствами объекта и сериализованным текстом или двоичными данными (/*."
+"tres, /*.res). Они также унаследовали управление памятью отсчета ссылок от "
+"типа Reference."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
+#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
@@ -10155,12 +10322,21 @@ msgid ""
 "ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
 "`Resource <class_Resource>` features:"
 msgstr ""
+"Это дает много явных преимуществ по сравнению с альтернативными структурами "
+"данных, такими как JSON, CSV или пользовательские TXT-файлы. Пользователи "
+"могут импортировать эти ресурсы только в виде :ref:`Dictionary "
+"<class_Dictionary>` (JSON) или как :ref:`File <class_File>` для парсинга. "
+"Отличительной особенностью Ресурсов является наследование характеристик :ref:"
+"`Object <class_Object>`, :ref:`Reference <class_Reference>`, и :ref:"
+"`Resource <class_Resource>`:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid ""
 "They can define constants, so constants from other data fields or objects "
 "are not needed."
 msgstr ""
+"Они могут определять константы, поэтому константы из других полей данных или "
+"объектов не нужны."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:167
 msgid ""
@@ -10169,17 +10345,24 @@ msgid ""
 "Resource script's structure needs to change, the game using the Resource "
 "need not also change."
 msgstr ""
+"Они могут определять методы, включая методы setter/getter для свойств. Это "
+"позволяет абстрагироваться и инкапсулировать исходные данные. Если структура "
+"скрипта ресурса должна измениться, то игра, использующая ресурс, не должна."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:169
 msgid ""
 "They can define signals, so Resources can trigger responses to changes in "
 "the data they manage."
 msgstr ""
+"Они могут определять сигналы, чтобы Ресурсы могли инициировать реакцию на "
+"изменения в данных, которыми они управляют."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:171
 msgid ""
 "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
+"Они имеют определенные свойства, поэтому пользователи знают на 100%, что их "
+"данные будут существовать."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:173
 msgid ""
@@ -10187,12 +10370,18 @@ msgid ""
 "feature. Users do not need to implement custom logic to import/export a "
 "resource file's data."
 msgstr ""
+"Ресурсы автоматически сериализуются и десериализуются — это встроенная "
+"функция движка Godot. Поэтому пользователям не требуется самостоятельно "
+"реализовывать логику импорта/экспорта файлов ресурсов."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:175
 msgid ""
 "Resources can even serialize sub-Resources recursively, meaning users can "
 "design even more sophisticated data structures."
 msgstr ""
+"Кроме того, ресурсы могут рекурсивно сериализовывать вложенные ресурсы. Это "
+"значит, что пользователи могут проектировать ещё более сложные структуры "
+"данных."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:177
 msgid ""
@@ -10200,6 +10389,10 @@ msgid ""
 "Upon exporting a game, Godot serializes resource files as binary files (\\*."
 "res) for increased speed and compression."
 msgstr ""
+"Пользователи могут сохранять ресурсы как текстовые файлы (\\*.tres) для "
+"лучшей совместимости с системами контроля версий. При экспорте игры Godot "
+"сериализует ресурсы в бинарные файлы (\\*.res) для увеличения быстродействия "
+"и экономии места."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:179
 msgid ""
@@ -10208,11 +10401,18 @@ msgid ""
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
+"Инспектор Godot Engine осуществляет рендеринг и редактирование файлов "
+"ресурсов \"из коробки\". Таким образом, пользователям часто не требуется "
+"придумывать собственную логику для визуализации или редактирования своих "
+"данных. Для этого дважды щелкните по файл ресурса в файловой системе или на "
+"значок папки в Инспекторе и выберите файл в диалоговом окне."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
 msgstr ""
+"Они могут расширять **другие** виды ресурсов, помимо простого базового "
+"ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
@@ -10222,20 +10422,28 @@ msgid ""
 "will invalidate the second object's variable. This is not so for Resources "
 "which won't free their memory until *all* instances are gone."
 msgstr ""
+"Ресурсы и Словари также отличаются тем, что они передаются по ссылке, но "
+"учитываются только Ресурсы. Это означает, что если Словарь передается между "
+"объектами, а первый объект удаляется, то переменная второго объекта будет "
+"признана недействительной. Это не так для Ресурсов, которые не освободят "
+"свою память, пока не исчезнут *все* экземпляры."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."
-msgstr ""
+msgstr "Godot облегчает создание пользовательских ресурсов в Инспекторе."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
+#, fuzzy
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
+"Создайте простой объект Ресурс в Инспекторе. Это может быть даже тип, "
+"производный от Ресурса, пока ваш скрипт расширяет этот тип."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
-msgstr ""
+msgstr "Установите в свойстве ``script`` в Инспекторе Ваш собственный скрипт."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
 msgid ""
@@ -10244,8 +10452,14 @@ msgid ""
 "custom properties too! To save a resource from the Inspector, click the "
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
+"Инспектор теперь отобразит пользовательские свойства вашего скрипта "
+"ресурсов. Если отредактировать эти значения и сохранить ресурс, Инспектор "
+"также выполнит сериализацию пользовательских свойств! Для сохранения ресурса "
+"Инспектора щелкните на меню инструментов Инспектора (вверху справа) и "
+"выберите \"Сохранить\" или \"Сохранить как...\"."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
+#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -10253,12 +10467,17 @@ msgid ""
 "creation dialog. This will auto-add your script to the Resource object you "
 "create."
 msgstr ""
+"Если язык скрипта поддерживает :ref:`script classes "
+"<doc_scripting_continued_class_name>`, то это упрощает процесс. Определение "
+"имени для вашего скрипта добавит его в диалог создания инспектора. Это "
+"автоматически добавит ваш скрипт в объект Ресурс, который вы создадите."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
 msgid "Let's see some examples."
-msgstr ""
+msgstr "Давайте рассмотрим некоторые примеры."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
+#, fuzzy
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
 "provides built-in support for custom resources. If desired though, users can "
@@ -10266,6 +10485,11 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
+"Скрипты Ресурсов похожи на Unity's ScriptableObjects. Инспектор обеспечивает "
+"встроенную поддержку пользовательских ресурсов. При желании пользователи "
+"могут даже создавать собственные скрипты инструментов на основе Control и "
+"комбинировать их с :ref:`EditorPlugin <class_EditorPlugin>` для создания "
+"собственных визуализаций и редакторов для своих данных."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
 msgid ""
@@ -10273,30 +10497,46 @@ msgid ""
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
+"Таблицы данных и таблицы кривых Unreal Engine 4 также легко воссоздаются с "
+"помощью скриптов Ресурсов. Таблицы данных - это строка, сопоставленная с "
+"пользовательской структурой, подобно Словарю, сопоставляющему строку со "
+"вторичным пользовательским сценарием ресурса."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:345
+#, fuzzy
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
 msgstr ""
+"Вместо того, чтобы просто подчеркивать значения Словаря, можно также, в "
+"качестве альтернативы..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
+#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
 msgstr ""
+"Импортируйте таблицу значений из электронной таблицы и создайте эти пары "
+"ключ-значение, или...."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
 msgid ""
 "Design a visualization within the editor and create a simple plugin that "
 "adds it to the Inspector when you open these types of Resources."
 msgstr ""
+"Разработайте визуализацию в редакторе и создайте простой плагин, который "
+"добавит его в Инспектор, когда вы откроете такие типы ресурсов."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
+#, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
+"То же самое можно сказать и о таблицах CurveTables, за исключением "
+"отображения в Массив плавающих значений или ресурса объекта :ref:`Curve "
+"<class_Curve>`/:ref:`Curve2D <class_Curve2D>."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""
@@ -10307,6 +10547,12 @@ msgid ""
 "keyword in GDScript) won't work. Godot will not serialize the custom "
 "properties on the script subclass properly."
 msgstr ""
+"Помните, что ресурсные файлы (\\*.tres/\\*.res) будут содержать путь к "
+"скрипту, который они используют. При загрузке они будут получать и загружать "
+"этот скрипт в качестве расширения своего типа. Это означает, что попытка "
+"присвоить подкласс, т.е. внутренний класс скрипта (например, с помощью "
+"ключевого слова ``class`` в GDScript'') не сработает. Godot не будет должным "
+"образом сериализовать пользовательские свойства в подклассе сценариев."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:363
 msgid ""
@@ -10314,10 +10560,13 @@ msgid ""
 "doesn't extend ``Resource``, and then determine that the script failed to "
 "load for the Resource object since the types are incompatible."
 msgstr ""
+"В примере ниже, Godot загрузил скрипт ``Node``, увидел, что он не расширяет "
+"``Resource``, а затем определил, что скрипт не загрузился для объекта "
+"Resource, поскольку типы несовместимы."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
-msgstr ""
+msgstr "Файловая система"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
 msgid ""
@@ -10326,6 +10575,11 @@ msgid ""
 "designed file system also allows multiple developers to edit the same source "
 "files and assets while collaborating."
 msgstr ""
+"Файловые системы - еще одна горячая тема в разработке движков. Файловая "
+"система управляет тем, как хранятся эти ресурсы и как к ним можно получить "
+"доступ. Хорошо продуманная файловая система также позволяет нескольким "
+"разработчикам редактировать одни и те же исходные файлы и ресурсы в процессе "
+"совместной работы."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:14
 msgid ""
@@ -10335,11 +10589,17 @@ msgid ""
 "metadata, etc. In the end, the simple approach won and now Godot stores all "
 "assets as files in the file system."
 msgstr ""
+"Первоначальные версии движка Godot (и предыдущие итерации до того, как он "
+"получил название Godot) использовали базу данных. Ассеты хранились в неё и "
+"им присваивался идентификатор. Были опробованы и другие подходы, такие как "
+"локальные базы данных, файлы с метаданными и т.д. В конце концов, выиграл "
+"простой подход, и теперь Godot хранит все активы в виде файлов в файловой "
+"системе."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:21
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:68
 msgid "Implementation"
-msgstr ""
+msgstr "Реализация"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:23
 msgid ""
@@ -10351,6 +10611,12 @@ msgid ""
 "resources. For example, a font resource is often bundled together with the "
 "font textures."
 msgstr ""
+"Файловая система хранит ресурсы на диске. Все, что угодно, от скриптов до "
+"сцен или изображений PNG, являются ресурсом для движка. Если ресурс содержит "
+"свойства, которые ссылаются на другие ресурсы на диске, пути к ним также "
+"включаются. Если ресурс имеет встроенные суб-ресурсы, то он сохраняется в "
+"одном файле вместе со всеми включенными в комплект суб-ресурсами. Например, "
+"ресурс шрифтов часто поставляется в комплекте с текстурами шрифтов."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
 msgid ""
@@ -10359,14 +10625,18 @@ msgid ""
 "than anything we can implement, so Godot tries its best to play along with "
 "SVN, Git, Mercurial, Perforce, etc."
 msgstr ""
+"В общем, файловая система Godot избегает использования метаданных файлов. "
+"Причина проста, существующие управляющие активами и VCS намного лучше, чем "
+"все, что мы можем реализовать, поэтому Godot старается работать вместе с "
+"SVN, Git, Mercurial, Perforce и т.д."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:35
 msgid "Example of a file system contents:"
-msgstr ""
+msgstr "Пример содержимого файловой системы:"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:46
 msgid "project.godot"
-msgstr ""
+msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:48
 msgid ""
@@ -10374,17 +10644,24 @@ msgid ""
 "found at the root of the project. In fact, its location defines where the "
 "root is. This is the first file that Godot looks for when opening a project."
 msgstr ""
+"Файл project.godot - это файл описания проекта, который всегда находится в "
+"корне самого проекта. Фактически, его местоположение определяет то, где "
+"находится корень. Это первый файл, который Godot ищет при открытии проекта."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:52
+#, fuzzy
 msgid ""
 "This file contains the project configuration in plain text, using the win."
 "ini format. Even an empty project.godot can function as a basic definition "
 "of a blank project."
 msgstr ""
+"Этот файл содержит конфигурацию проекта в виде простого текста в формате win."
+"ini. Даже пустой project.godot может функционировать как базовое определение "
+"пустого проекта."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:57
 msgid "Path delimiter"
-msgstr ""
+msgstr "Разделитель путей"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:59
 msgid ""
@@ -10393,11 +10670,15 @@ msgid ""
 "``c:\\project\\project.godot`` needs to be typed as ``c:/project/project."
 "godot``."
 msgstr ""
+"Godot поддерживает только ``/'`` в качестве разделителя путей. Это делается "
+"по причинам переносимости. Все операционные системы поддерживают это, даже "
+"Windows, поэтому путь ``c:\\project\\project.godot`` должен быть напечатан "
+"как ``c:/project/project.godot``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:65
 #: ../../docs/tutorials/io/data_paths.rst:16
 msgid "Resource path"
-msgstr ""
+msgstr "Путь ресурса"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:67
 msgid ""
@@ -10405,12 +10686,17 @@ msgid ""
 "cumbersome and non-portable. To solve this problem, the special path ``res://"
 "`` was created."
 msgstr ""
+"При доступе к ресурсам, использование компоновки файловой системы хоста "
+"может быть громоздким и не переносимым. Для решения этой проблемы был создан "
+"специальный путь ``res://``."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:71
 msgid ""
 "The path ``res://`` will always point at the project root (where project."
 "godot is located, so in fact ``res://project.godot`` is always valid)."
 msgstr ""
+"Путь ``res://`` всегда будет указывать на корень проекта (где расположен "
+"project.godot, поэтому путь  ``res://project.godot`` всегда верен)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:75
 msgid ""
@@ -10419,10 +10705,14 @@ msgid ""
 "phones or consoles, or running from DVD), the file system will become read-"
 "only and writing will no longer be permitted."
 msgstr ""
+"Эта файловая система читает-записывает только при локальном запуске проекта "
+"из редактора. При экспорте или при работе на различных устройствах (таких "
+"как телефоны или консоли, или с DVD) файловая система станет доступна только "
+"для чтения и запись больше не будет разрешена."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:81
 msgid "User path"
-msgstr ""
+msgstr "Путь пользователя"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:83
 msgid ""
@@ -10430,10 +10720,14 @@ msgid ""
 "state or downloading content packs. To this end, the engine ensures that "
 "there is a special path ``user://`` that is always writable."
 msgstr ""
+"Запись на диск для различных задач, таких как сохранение игрового состояния "
+"или загрузка пакетов контента, часто все еще необходима. Для этого движок "
+"обеспечивает специальный путь ``user://``, который всегда доступен для "
+"записи."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:88
 msgid "Host file system"
-msgstr ""
+msgstr "Родительская файловая система"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:90
 msgid ""
@@ -10442,10 +10736,15 @@ msgid ""
 "on all platforms. However, using host file system paths can be useful when "
 "writing development tools in Godot!"
 msgstr ""
+"В качестве альтернативы можно также использовать пути родительской файловой "
+"системы, но это не рекомендуется для выпускаемого продукта, поскольку не "
+"гарантировано, что эти пути будут работать на всех платформах. Однако, "
+"использование путей родительской файловой системы может быть полезно при "
+"написании инструментов разработки на Godot!"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:96
 msgid "Drawbacks"
-msgstr ""
+msgstr "Недостатки"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:98
 msgid ""
@@ -10455,6 +10754,11 @@ msgid ""
 "These references will have to be re-defined to point at the new asset "
 "location."
 msgstr ""
+"В этом простом дизайне файловой системы есть некоторые недостатки. Первая "
+"проблема заключается в том, что перемещение ассетов (переименование или "
+"перемещение их с одного пути на другой внутри проекта) нарушит существующие "
+"ссылки на эти ассеты. Эти ссылки должны быть переопределены, чтобы указать "
+"на новое местоположение ассеты."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:103
 msgid ""
@@ -10463,6 +10767,11 @@ msgid ""
 "dependencies will have to be fixed manually (Godot detects this and helps "
 "you fix them anyway, but why go the hard route?)."
 msgstr ""
+"Чтобы избежать этого, выполните все свои действия по перемещению, удалению и "
+"переименованию из Godot, в панели файловой системы. Никогда не перемещайте "
+"активы вне Godot, иначе зависимости придется исправлять вручную (Godot все "
+"равно обнаружит это и поможет вам исправить их, но зачем идти трудным "
+"путем?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
 msgid ""
@@ -10473,6 +10782,13 @@ msgid ""
 "Linux, Android, etc. This may also apply to exported binaries, which use a "
 "compressed package to store all files."
 msgstr ""
+"Во-вторых, имена файлов и путей в Windows и MacOS не зависят от регистра. "
+"Если разработчик, работающий в хостовой файловой системе, не зависящей от "
+"регистра, сохраняет актив как \"myfile.PNG\", но затем ссылается на него как "
+"\"myfile.png\", он прекрасно работает на своей платформе, но не на других "
+"платформах, таких как Linux, Android и т.д. Это может также применяться к "
+"экспортируемым двоичным файлам, которые используют сжатый пакет для хранения "
+"всех файлов."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
 msgid ""
@@ -10480,18 +10796,23 @@ msgid ""
 "files when working with Godot! One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
+"Рекомендуется, чтобы ваша команда четко определила правила именования файлов "
+"при работе с Godot! Одним из простых способов защиты от ошибок является "
+"разрешение использовать имена файлов и путей только нижнего регистра."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:4
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:41
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:288
 msgid "SceneTree"
-msgstr ""
+msgstr "Дерево сцены"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:9
 msgid ""
 "This is where things start getting abstract, but don't panic. There's not "
 "much more depth than this."
 msgstr ""
+"Вот здесь и начинается абстракция, но не паникуй. Это не так страшно как "
+"кажется."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:12
 msgid ""
@@ -10499,6 +10820,9 @@ msgid ""
 "Scenes are simply a collection of nodes. They become active once they enter "
 "the *scene tree*."
 msgstr ""
+"В предыдущих уроках все вращалось вокруг концепции узлов. Сцены - это просто "
+"набор узлов. Они(узлы) становятся активными, как только заходят в *дерево "
+"сцены*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:16
 msgid ""
@@ -10507,10 +10831,14 @@ msgid ""
 "and write a script (or C++ code) that talks directly to the servers, but "
 "making a game that way would be a lot of work."
 msgstr ""
+"Давайте более подробно рассмотрим эту концепцию. Фактически, система сцен "
+"даже не является центральным компонентом Godot, поскольку ее можно "
+"пропустить и написать скрипт (или C++ код), который напрямую связан с "
+"серверами, но сделать игру таким образом было бы достаточно сложно."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:22
 msgid "MainLoop"
-msgstr ""
+msgstr "MainLoop"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:24
 msgid ""
@@ -10519,34 +10847,55 @@ msgid ""
 "Afterwards, all drivers, servers, scripting languages, scene system, etc are "
 "loaded."
 msgstr ""
+"То, как Godot работает внутри, выглядит следующим образом. Существует класс :"
+"ref:`OS <class_OS>`, который является единственным экземпляром, запускаемым "
+"в самом начале. После этого загружаются все драйверы, серверы, скриптовые "
+"языки, система сцен и т.д."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:29
+#, fuzzy
 msgid ""
 "When initialization is complete, :ref:`OS <class_OS>` needs to be supplied "
 "a :ref:`MainLoop <class_MainLoop>` to run. Up to this point, all this is "
 "internals working (you can check main/main.cpp file in the source code if "
 "you are ever interested to see how this works internally)."
 msgstr ""
+"После завершения инициализации, для :ref:`OS <class_OS>` должен быть "
+"предоставлен :ref:`MainLoop <class_MainLoop>` для запуска. До этого момента "
+"все это работало внутри (вы можете проверить файл main/main.cpp в исходном "
+"коде, если вам когда-нибудь будет интересно посмотреть, как это работает "
+"внутри)."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:35
+#, fuzzy
 msgid ""
 "The user program, or game, starts in the MainLoop. This class has a few "
 "methods, for initialization, idle (frame-synchronized callback), fixed "
 "(physics-synchronized callback), and input. Again, this is low level and "
 "when making games in Godot, writing your own MainLoop seldom makes sense."
 msgstr ""
+"Игра или программа пользователя , запускается в MainLoop. Данный класс имеет "
+"несколько методов инициализации, простой (**idle**) (покадрово-"
+"синхронизированный обратный вызов), фиксированный (**fixed**) (физико-"
+"синхронизированный обратный вызов) и ввод (**input**). Опять же, это низкий "
+"уровень, и при создании игр в Godot, написание собственного MainLoop редко "
+"имеет смысл."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:43
 msgid ""
 "One of the ways to explain how Godot works is that it's a high level game "
 "engine over a low level middleware."
 msgstr ""
+"Один из способов объяснить, как работает Godot, звучит так: это "
+"высокоуровневый игровой движок над низкоуровневым промежуточным ПО."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:46
 msgid ""
 "The scene system is the game engine, while the :ref:`OS <class_OS>` and "
 "servers are the low level API."
 msgstr ""
+"Система сцены является игровым движком, в то время как :ref:`OS <class_OS>` "
+"и сервера являются API низкого уровня."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:49
 msgid ""
@@ -10554,13 +10903,17 @@ msgid ""
 "`SceneTree <class_SceneTree>`. This is automatically instanced and set when "
 "running a scene, no need to do any extra work."
 msgstr ""
+"В любом случае, система сцен обеспечивает собственный основной цикл к ОС, :"
+"ref:`SceneTree <class_SceneTree>`. Это автоматически инстанцируется и "
+"настраивается при запуске сцены, нет необходимости тратить время на "
+"дополнительную работу."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:54
 msgid ""
 "It's important to know that this class exists because it has a few important "
 "uses:"
 msgstr ""
-"Важно знать, что этот класс существует, поскольку он имеет несколько важных "
+"Важно знать, о существовании этого класса, так как он имеет несколько важных "
 "применений:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:57
@@ -10569,18 +10922,25 @@ msgid ""
 "added as a child when it's first opened to become part of the *Scene Tree* "
 "(more on that next)"
 msgstr ""
+"Он содержит корневой :ref:`Viewport <class_Viewport>`, к которому сцена "
+"добавляется как дочерняя, когда она впервые открывается то становится частью "
+"*древа сцен* (подробнее об этом ниже)"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:60
 msgid ""
 "It contains information about the groups and has the means to call all nodes "
 "in a group or get a list of them."
 msgstr ""
+"Он содержит информацию о группах и позволяет вызывать все узлы в группе или "
+"получать список этих узлов."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:62
 msgid ""
 "It contains some global state functionality, such as setting pause mode or "
 "quitting the process."
 msgstr ""
+"Он содержит некоторые глобальные функции состояния, такие как режим паузы "
+"или выход."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
 msgid ""
@@ -10588,16 +10948,21 @@ msgid ""
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
 "get_tree() <class_Node_get_tree>`."
 msgstr ""
+"Когда узел является частью дерева сцен, :ref:`SceneTree <class_SceneTree>` "
+"синглтон (В следующем уроке будет рассмотрен подробнее.) можно получить, "
+"просто вызвав :ref:`Node.get_tree() <class_Node_get_tree>`."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
 msgid "Root viewport"
-msgstr ""
+msgstr "Корневое окно"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:73
 msgid ""
 "The root :ref:`Viewport <class_Viewport>` is always at the top of the scene. "
 "From a node, it can be obtained in two different ways:"
 msgstr ""
+"Корневой :ref:`Viewport <class_Viewport>` всегда находится в верхней части "
+"сцены. Из узла его можно получить двумя разными способами:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:88
 msgid ""
@@ -10606,6 +10971,10 @@ msgid ""
 "sense that the top of all nodes is always a node of this type otherwise "
 "nothing would be seen!"
 msgstr ""
+"Этот узел содержит основное окно просмотра, все, что является дочерним для :"
+"ref:`Viewport <class_Viewport>`, рисуется внутри него по умолчанию, поэтому "
+"наверху всех узлов древа сцен должен быть узел такого типа, иначе ничего не "
+"будет видно!"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:93
 msgid ""
@@ -10613,6 +10982,9 @@ msgid ""
 "and such), this one is the only one that is never created by the user. It's "
 "created automatically inside SceneTree."
 msgstr ""
+"В то время как в сцене могут быть созданы другие видовые окна (для эффекта "
+"раздельного экрана и т.д.), это единственное окно, которое никогда не "
+"создается пользователем. Он создается автоматически внутри SceneTree."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:98
 #: ../../docs/tutorials/threads/thread_safe_apis.rst:22
@@ -10624,12 +10996,16 @@ msgid ""
 "When a node is connected, directly or indirectly, to the root viewport, it "
 "becomes part of the *scene tree*."
 msgstr ""
+"Когда узел прямо или косвенно связан с корневым окном, он становится частью "
+"*дерева сцены*."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:103
 msgid ""
 "This means that as explained in previous tutorials, it will get the "
 "_enter_tree() and _ready() callbacks (as well as _exit_tree())."
 msgstr ""
+"Это означает, что, как объяснялось в предыдущих уроках, он получит обратные "
+"вызовы _enter_tree() и _ready(), (а также _exit_tree())."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:108
 msgid ""
@@ -10638,39 +11014,54 @@ msgid ""
 "notifications, play sound, groups, etc. When they are removed from the "
 "*scene tree*, they lose access."
 msgstr ""
+"Когда узлы входят в *Древо Сцен*, они становятся активными. Они получают "
+"доступ ко всему, что им нужно для обработки, ввода, отображения 2D и 3D, "
+"уведомлений, воспроизведения звука, групп и т.д. Когда они удаляются из "
+"*древа сцен*, они теряют доступ."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:114
 msgid "Tree order"
-msgstr "Последовательность в дереве"
+msgstr "Последовательность в древе"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:116
+#, fuzzy
 msgid ""
 "Most node operations in Godot, such as drawing 2D, processing, or getting "
 "notifications are done in tree order. This means that parents and siblings "
 "with a smaller rank in the tree order will get notified before the current "
 "node."
 msgstr ""
+"Большинство операций с узлами в Godot, таких как рисование в 2D, обработка "
+"или получение уведомлений, выполняются в древовидном порядке. Это означает, "
+"что родители и дети в порядке Древа Сцен с меньшим местом, получат "
+"уведомление раньше текущего узла."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:124
 msgid "\"Becoming active\" by entering the *Scene Tree*"
-msgstr ""
+msgstr "\"Становится активным\", войдя в *Древо Сцен*"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:126
 msgid "A scene is loaded from disk or created by scripting."
-msgstr "Сцена загружается с диска или создается программно."
+msgstr "Сцена загружается с диска или создается с помощью скрипта."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:127
+#, fuzzy
 msgid ""
 "The root node of that scene (only one root, remember?) is added as either a "
 "child of the \"root\" Viewport (from SceneTree), or to any child or "
 "grandchild of it."
 msgstr ""
+"Корневой узел этой сцены (только один корень, помните?) добавляется либо как "
+"дочерний в \"корневое\" окно (из Древа Сцен), либо как дочерний в ней "
+"ребенок или внук."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:130
 msgid ""
 "Every node of the newly added scene, will receive the \"enter_tree\" "
 "notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
 msgstr ""
+"Каждый узел новой добавленной сцены получит уведомление \"enter_tree"
+"\" (обратный вызов _enter_tree() в GDScript) в порядке сверху вниз."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:133
 msgid ""
@@ -10678,12 +11069,17 @@ msgid ""
 "provided for convenience, when a node and all its children are inside the "
 "active scene."
 msgstr ""
+"Дополнительное уведомление, \"ready\" (обратный вызов _ready() в GDScript ), "
+"предоставляется для удобства, когда узел и все его дети находятся внутри "
+"активной сцены."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:136
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
 msgstr ""
+"Когда сцена (или ее часть) удалена, они получают уведомление \"exit scene"
+"\" (обратный вызов _exit_tree() в GDScript) в порядке снизу вверх"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:141
 msgid "Changing current scene"
@@ -10695,13 +11091,21 @@ msgid ""
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_change_scene>` function:"
 msgstr ""
+"После загрузки сцены часто бывает что нужно сменить её на другую. Самый "
+"простой способ заключается в использовании функции :ref:`SceneTree."
+"change_scene() <class_SceneTree_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
+#, fuzzy
 msgid ""
 "Rather than using file paths, one can also use ready-made :ref:`PackedScene "
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_change_scene_to>`:"
 msgstr ""
+"Вместо использования путей к файлам можно использовать готовые ресурсы :ref:"
+"`PackedScene <class_PackedScene>`, используя аналогичную функцию :ref:"
+"`SceneTree.change_scene_to(PackedScene scene) "
+"<class_SceneTree_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 msgid ""
@@ -10712,10 +11116,16 @@ msgid ""
 "be done manually using autoloads (see next chapter!) and :ref:"
 "`doc_background_loading`."
 msgstr ""
+"Это быстрые и полезные способы переключения между сценами, но у них есть "
+"недостаток, заключающийся в том, что игра будет \"виснуть\" до тех пор, пока "
+"новая сцена не будет загружена и запущена. В какой-то момент может "
+"потребоваться создать экраны загрузки с анимированым индикатором, или "
+"загрузку фона. Это должно быть сделано вручную с помощью автозагрузки (см. "
+"следующую главу!) и :ref:`doc_background_load`."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr ""
+msgstr "Синглтоны (Автозагрузка)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
 msgid ""
@@ -10723,12 +11133,17 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
+"Система сцен Godot, будучи мощной и гибкой, имеет недостаток: отсутствует "
+"способ хранения информации (например, счет игрока или инвентарь), которая "
+"необходима для нескольких сцен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
 msgstr ""
+"Можно решить эту проблему с помощью некоторых обходных путей, но у них есть "
+"свои ограничения:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -10736,6 +11151,9 @@ msgid ""
 "children. However, this means you can no longer run those scenes "
 "individually and expect them to work correctly."
 msgstr ""
+"Вы можете использовать \"мастер-сцену\", которая загружает и выгружает "
+"другие сцены в качестве своих детей. Однако это означает, что вы больше не "
+"можете запускать эти сцены по отдельности и ожидать от них корректной работы."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:19
 msgid ""
@@ -10743,6 +11161,9 @@ msgid ""
 "that require it, but frequently saving and loading data is cumbersome and "
 "may be slow."
 msgstr ""
+"Информация может храниться на диске в ``user://``, а затем загружаться "
+"сценами, которые требуют этого, но увы сохранение и загрузка данных часто "
+"является громоздкой и может быть медленной."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
 msgid ""
@@ -10752,32 +11173,41 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
+"`Шаблон Одиночка (Синглтон) <https://ru.wikipedia.org/wiki/"
+"Одиночка_(шаблон_проектирования)>`_ - это инструмент для решения проблемы, "
+"когда необходимо хранить постоянную информацию между сценами. В нашем случае "
+"можно повторно использовать одну и ту же сцену или класс для нескольких "
+"синглотнов, при условии, что они имеют разные названия."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
-msgstr ""
+msgstr "Используя эту концепцию, вы можете создавать такие объекты:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
 msgid "Are always loaded, no matter which scene is currently running"
 msgstr ""
+"Всегда загружены, независимо от того, какая сцена в данный момент запущена"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
-msgstr ""
+msgstr "Может хранить глобальные переменные, такие как информация об игроке"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
 msgid "Can handle switching scenes and between-scene transitions"
 msgstr ""
+"Возможность переключения между сценами и переходами от одной сцены к другой"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
+"Действуйте как **одиночка**, так как GDScript не поддерживает глобальные "
+"переменные по дизайну"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts caters to this need."
-msgstr ""
+msgstr "Автозагрузка удовлетворяет наши потребности."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -10790,12 +11220,18 @@ msgid ""
 "and the script will be attached to it. This node will be added to the root "
 "viewport before any other scenes are loaded."
 msgstr ""
+"Вы можете использовать Автозагрузку для загрузки сцены или скрипта, "
+"унаследованного от :ref:`Node <class_Node>`. Примечание: при автозагрузке "
+"скрипта будет создан узел и к нему будет прикреплен скрипт. Этот узел будет "
+"добавлен в корневое окно(Viewport) перед загрузкой любых других сцен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
 msgid ""
 "To autoload a scene or script, select ``Project -> Project Settings`` from "
 "the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
+"Чтобы автоматически загрузить сцену или скрипт, выберите в меню ``Проект -> "
+"Настройки проекта`` и перейдите на вкладку \"Автозагрузка\"."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
 msgid ""
@@ -10804,18 +11240,26 @@ msgid ""
 "order of the entries as they are added to the global scene tree can be "
 "manipulated using the up/down arrow keys."
 msgstr ""
+"Здесь вы можете добавить любое количество сцен или скриптов. Каждая запись в "
+"списке требует имя, которое присваивается свойству узла ``name``. Порядок "
+"расположения записей в дереве глобальной сцены может быть изменен с помощью "
+"клавиш со стрелками вверх/вниз."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
+"Это означает, что любой узел может получить доступ к синглтону с именем "
+"\"PlayerVariables\":"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
+"Если колонка \"Включить\" отмечена галочкой (по умолчанию true), то Синглтон "
+"можно просто получить напрямую:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -10823,6 +11267,10 @@ msgid ""
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
+"Обратите внимание, что доступ к объектам автозагрузки (скриптам и/или "
+"сценам) осуществляется так же, как и к любому другому узлу дерева сцен. На "
+"самом деле, если вы посмотрите на дерево выполняющихся сцен, вы увидите, что "
+"появились узлы автозагрузки:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
@@ -10836,12 +11284,19 @@ msgid ""
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
+"В данном руководстве будет продемонстрировано создание переключателя сцен с "
+"помощью автозагрузки. В основном для переключения сцены можно использовать "
+"метод :ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` "
+"(подробнее см. :ref:`doc_scene_tree`). Однако, если вам нужно более сложное "
+"поведение при смене сцен, этот метод обеспечивает большую функциональность."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
+"Для начала скачайте шаблон здесь: :download:`autoload.zip <files/autoload."
+"zip>` и откройте его в Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -10850,6 +11305,10 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
+"Проект содержит две сцены: ``Scene1.tscn`` and ``Scene2.tscn``. Каждая сцена "
+"содержит Label, отображающий название сцены и кнопку с подключенным сигналом "
+"``pressed()``. Когда вы запускаете проект, он начинается в ``Scene1.tscn``. "
+"Однако, нажатие кнопки ничего не даст."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid "Global.gd"
@@ -10860,6 +11319,8 @@ msgid ""
 "Switch to the \"Script\" tab and create a new script called Global.gd. Make "
 "sure it inherits from ``Node``:"
 msgstr ""
+"Перейдите на вкладку \"Script\" и создайте новый скрипт под названием Global."
+"gd. Убедитесь, что он унаследован от ``Node``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
 msgid ""
@@ -10868,12 +11329,18 @@ msgid ""
 "the script by clicking the ``..`` button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
+"Следующим шагом будет добавление этого скрипта в список автозагрузки. "
+"Откройте ``Проект > Настройки проекта``, перейдите на вкладку \"Автозагрузка"
+"\" и выберите скрипт, нажав на кнопку ``..`` или напечатав его путь: ``res://"
+"Global.gd``. Нажмите \"Добавить\", чтобы добавить его в список автозагрузки:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
+"Теперь всякий раз, когда мы запускаем какую-либо сцену в проекте, этот "
+"скрипт всегда будет загружен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
 msgid ""
@@ -10882,12 +11349,19 @@ msgid ""
 "``global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
+"Возвращаясь к скрипту, он должен получить текущую сцену в функции "
+"`_ready()`. Как текущая сцена (сцена с кнопкой), так и сцена ``global.gd`` "
+"являются детьми корня, но узлы автозагрузки всегда загружаются первыми. Это "
+"означает, что последним дочерним ребенком корня всегда будет загруженная "
+"сцена."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
+"Теперь нам нужна функция для смены сцены. Эта функция должна освободить "
+"(очистить) текущую сцену и заменить ее на нужную нам."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
 msgid ""
@@ -10898,6 +11372,11 @@ msgid ""
 "the second function will run at a later time when any code from the current "
 "scene has completed."
 msgstr ""
+"Как упоминалось в комментариях выше, нам нужно избегать ситуации удаления "
+"текущей сцены во время ее использования (т.е. ее код все еще работает), "
+"поэтому на данном этапе необходимо использовать :ref:`Object.call_deferred() "
+"<class_Object_Call_deferred>`. В результате вторая функция будет запущена "
+"позже, когда код с текущей сцены завершится."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
 msgid ""
@@ -10925,15 +11404,18 @@ msgid ""
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""
+"Примечание: Если сцены маленькие, переход происходит мгновенно. Однако, если "
+"ваши сцены более сложные, на их появление может уйти заметное количество "
+"времени. Чтобы узнать, как с этим справиться, см. следующее руководство: :"
+"ref:`doc_background_load`"
 
 #: ../../docs/getting_started/editor/index.rst:2
 msgid "Editor manual"
 msgstr "Руководство редактора"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:8
-#, fuzzy
 msgid "From Unity to Godot Engine"
-msgstr "О Godot"
+msgstr "Из Unity в Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:10
 msgid ""
@@ -10941,10 +11423,13 @@ msgid ""
 "Unity user, and aims to help you migrate your existing Unity experience into "
 "the world of Godot."
 msgstr ""
+"Данное руководство содержит обзор движка Godot Engine с точки зрения "
+"пользователя Unity и направлено на то, чтобы помочь вам перенести ваш "
+"существующий опыт Unity в мир Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:14
 msgid "Differences"
-msgstr ""
+msgstr "Различия"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:17
 msgid "Unity"
@@ -10963,90 +11448,101 @@ msgstr "Лицензия"
 msgid ""
 "Proprietary, closed, free license with revenue caps and usage restrictions"
 msgstr ""
+"Собственная, закрытая, бесплатная лицензия с лимитом доходов и ограничениями "
+"на использование"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:19
 msgid "MIT license, free and fully open source without any restriction"
 msgstr ""
+"Лицензия MIT, свободная и с полным открытым исходным кодом без каких-либо "
+"ограничений"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "OS (editor)"
-msgstr ""
+msgstr "ОС (редактор)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Windows, macOS, Linux (unofficial and unsupported)"
-msgstr ""
+msgstr "Windows, MacOS, Linux (неофициальные и неподдерживаемые)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:21
 msgid "Windows, macOS, X11 (Linux, \\*BSD)"
-msgstr ""
+msgstr "Windows, macOS, X11 (Linux, \\*BSD)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "OS (export)"
-msgstr ""
+msgstr "ОС (экспорт)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr ""
+msgstr "**ПК:** Windows, MacOS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
-msgstr ""
+msgstr "**Мобильный:** Android, iOS, Windows Phone, Tizen"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Web:** WebAssembly or asm.js"
-msgstr ""
+msgstr "**Веб:** WebAssembly или asm.js"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid "**Consoles:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
-msgstr ""
+msgstr "*Консоли:** PS4, PS Vita, Xbox One, Xbox 360, Wii U, Nintendo 3DS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
+#, fuzzy
 msgid ""
 "**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
 "HoloLens"
 msgstr ""
+"**VR:** Oculus Rift, SteamVR, Google Cardboard, Playstation VR, Gear VR, "
+"HoloLens"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:28
 msgid "**TV:** Android TV, Samsung SMART TV, tvOS"
-msgstr ""
+msgstr "**ТВ:** Android TV, Samsung SMART TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr ""
+msgstr "**ПК:** Windows, MacOS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Mobile:** Android, iOS"
-msgstr ""
+msgstr "**Мобильный:** Android, iOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:25
 msgid "**Web:** WebAssembly"
-msgstr ""
+msgstr "**Веб:** WebAssembly"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:26
 msgid "**Console:** See :ref:`doc_consoles`"
-msgstr ""
+msgstr "*Консоли* См. :ref:`doc_consoles`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:27
+#, fuzzy
 msgid "**VR:** Oculus Rift, SteamVR"
-msgstr ""
+msgstr "**VR:** Oculus Rift, SteamVR"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid "Scene system"
-msgstr "Сценическая система"
+msgstr "Система сцен"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
+#, fuzzy
 msgid "Component/Scene (GameObject > Component)"
-msgstr ""
+msgstr "Компонент/Сцена (GameObject > Component)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:31
 msgid "Prefabs"
-msgstr ""
+msgstr "Префабы"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:30
 msgid ""
 ":ref:`Scene tree and nodes <doc_scenes_and_nodes>`, allowing scenes to be "
 "nested and/or inherit other scenes"
 msgstr ""
+":ref:`Древо сцен и узлы <doc_scenes_and_nodes>`, позволяющие сценам быть "
+"вложенными и/или наследовать другие сцены"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:33
 msgid "Third-party tools"
@@ -11058,15 +11554,17 @@ msgstr "Visual Studio или VS Code"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:33
 msgid ":ref:`External editors are possible <doc_external_editor>`"
-msgstr ""
+msgstr ":ref:`Можно использовать внешние редакторы <doc_external_editor>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:34
 msgid ":ref:`Android SDK for Android export <doc_exporting_for_android>`"
 msgstr ""
+":ref:`Android SDK для экспорта под Android <doc_exporting_for_android>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:36
+#, fuzzy
 msgid "Killer features"
-msgstr ""
+msgstr "Важные особенности"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:36
 msgid "Huge community"
@@ -11074,19 +11572,20 @@ msgstr "Огромное сообщество"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
 msgid "Large assets store"
-msgstr ""
+msgstr "Большой магазин ассетов"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:36
 msgid "Scene System"
-msgstr ""
+msgstr "Система Сцен"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:37
+#, fuzzy
 msgid ":ref:`Animation Pipeline <doc_animations>`"
-msgstr ""
+msgstr ":ref:`Анимационный Пайплайн <doc_animations>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:38
 msgid ":ref:`Easy to write Shaders <doc_shading_language>`"
-msgstr ""
+msgstr ":ref:`Легко написать Шейдеры <doc_shading_language>`"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:39
 msgid "Debug on Device"
@@ -11102,12 +11601,17 @@ msgid ""
 "games. The pictures below display both editors with colored blocks to "
 "indicate common functionalities."
 msgstr ""
+"Godot Engine предоставляет многофункциональный редактор, который позволяет "
+"вам создавать игры. На рисунках ниже показаны оба редактора с цветными "
+"блоками для обозначения общих функций."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:55
 msgid ""
 "Note that Godot editor allows you to dock each panel at the side of the "
 "scene editor you wish."
 msgstr ""
+"Обратите внимание, что редактор Godot позволяет вам закрепить любую панель к "
+"нужной стороне редактора."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:57
 msgid ""
@@ -11117,6 +11621,12 @@ msgid ""
 "format, and no metadata. All this contributes to Godot being much friendlier "
 "to VCS systems, such as Git, Subversion, or Mercurial."
 msgstr ""
+"Хотя оба редактора могут показаться похожими на первый взгляд, но существует "
+"много различий. Оба варианта позволяют организовать проект с использованием "
+"файловой системы, но подход Godot проще: один конфигурационный файл, "
+"минималистский текстовый формат и отсутствие метаданных. Все это "
+"способствует тому, что Godot гораздо дружелюбнее относится к системам VCS, "
+"таким как Git, Subversion или Mercurial."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:62
 msgid ""
@@ -11125,6 +11635,10 @@ msgid ""
 "descriptive. In other words, it's easier to understand what a specific scene "
 "does at a glance."
 msgstr ""
+"Панель \"Сцена\" Godot аналогична панели \"Иерархия\" в Unity, но, поскольку "
+"каждый узел имеет свою специфическую функцию, подход, используемый Godot , "
+"более наглядно описывает его. Другими словами, легче понять, что делает та "
+"или иная сцена с первого взгляда."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:66
 msgid ""
@@ -11135,6 +11649,13 @@ msgid ""
 "visually, so changing colors, textures, enumerations, or even links to "
 "resources in real-time is possible without involving code."
 msgstr ""
+"Инспектор в Godot более минималистский и спроектирован так, чтобы показывать "
+"только свойства. Благодаря этому объекты могут экспортировать пользователю "
+"гораздо большее количество полезных параметров без необходимости скрывать "
+"функциональность в языковых API. К тому же, Godot позволяет визуально "
+"анимировать любое из этих свойств, поэтому изменение цвета, текстур, "
+"перечислений и даже ссылок на ресурсы в режиме реального времени возможно "
+"без использования кода."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:71
 msgid ""
@@ -11143,20 +11664,31 @@ msgid ""
 "separate window, as they don't execute inside the editor (but the tree and "
 "objects can still be explored in the debugger window)."
 msgstr ""
+"Наконец, панель инструментов в верхней части экрана похожа лишь тем, что "
+"позволяет управлять запуском проекта, но проекты в Godot запускаются в "
+"отдельном окне, они не выполняются внутри редактора (но дерево и объекты все "
+"еще могут быть исследованы в окне отладчика)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:75
+#, fuzzy
 msgid ""
 "This approach has the disadvantage that the running game can't be explored "
 "from different angles (though this may be supported in the future and "
 "displaying collision gizmos in the running game is already possible), but in "
 "exchange has several advantages:"
 msgstr ""
+"Недостатком такого подхода является то, что запущенную игру нельзя "
+"исследовать с разных ракурсов (хотя это может быть поддержано в будущем, а "
+"уже возможно отображение столкновений предметов в запущенной игре), но в "
+"обмен это имеет ряд преимуществ:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:79
 msgid ""
 "Running the project and closing it is fast (Unity has to save, run the "
 "project, close the project, and then reload the previous state)."
 msgstr ""
+"Запуск и закрытие проекта происходит быстро (Unity же сохраняет, запускает "
+"проект, закрывает его, а затем перезагружает предыдущее состояние проекта)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:80
 msgid ""
@@ -11165,10 +11697,15 @@ msgid ""
 "the game is closed. This allows fantastic workflows, like creating levels "
 "while you play them."
 msgstr ""
+"Редактирование в реальном времени гораздо более полезно, поскольку "
+"изменения, внесенные в редактор, вступают в силу немедленно в самой игре и "
+"не сбрасываются (и не требуют синхронизации), после закрытия. Это позволяет "
+"создавать невероятные вещи, такие как создание уровней во время игры."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:81
 msgid "The editor is more stable because the game runs in a separate process."
 msgstr ""
+"Редактор более стабилен, потому что игра запущена в отдельном процессе."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:83
 msgid ""
@@ -11176,22 +11713,30 @@ msgid ""
 "make it simple to deploy to a device (connected phone, tablet, or browser "
 "via HTML5), and debug/live edit on it after the game was exported."
 msgstr ""
+"Наконец, верхняя панель инструментов содержит меню для удаленной отладки. "
+"Эти опции упрощают развертывание на устройстве (подключенном телефоне, "
+"планшете или браузере через HTML5), а также отладку/редактирование в "
+"реальном времени после экспорта игры."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:88
 msgid "The scene system"
-msgstr ""
+msgstr "Система сцен"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:90
 msgid ""
 "This is the most important difference between Unity and Godot and, actually, "
 "the favourite feature of most Godot users."
 msgstr ""
+"Это самое важное различие между Unity и Godot и, на пожалуй самая любимая "
+"особенность для большинства пользователей Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:92
 msgid ""
 "Unity's scene system consists of embedding all the required assets in a "
 "scene and linking them together by setting components and scripts to them."
 msgstr ""
+"Система сцен Unity состоит из встраивания всех необходимых ресурсов в сцену "
+"и связывания их вместе путем установки компонентов и скриптов."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:95
 msgid ""
@@ -11201,28 +11746,36 @@ msgid ""
 "children, which makes each a subscene of the main scene. This means you can "
 "compose a whole scene with different scenes stored in different files."
 msgstr ""
+"Система сцен Godot отличается тем, что на самом деле состоит из древа сцен, "
+"состоящего из узлов. Каждый узел имеет свое назначение: Спрайт, Сетка, Свет "
+"и т.д. По сути, это похоже на сценическую систему Unity. Однако каждый узел "
+"может иметь несколько дочерних узлов, что делает каждый из них наследником "
+"главной сцены. Это означает, что вы можете составить целую сцену с разными "
+"сценами, сохраненными в разных файлах."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
 msgid ""
 "For example, think of a platformer level. You would compose it with multiple "
 "elements:"
 msgstr ""
+"Например, подумайте об уровне в каком-нибудь платформере. Вы бы составили "
+"его такими элементами:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:102
 msgid "Bricks"
-msgstr ""
+msgstr "Кирпичи"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:103
 msgid "Coins"
-msgstr ""
+msgstr "Монеты"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:104
 msgid "The player"
-msgstr ""
+msgstr "Игрок"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:105
 msgid "The enemies"
-msgstr ""
+msgstr "Враги"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:108
 msgid ""
@@ -11233,16 +11786,24 @@ msgid ""
 "the level: For example, you'd add a BoxCollider2D to all the elements of the "
 "scene so that they can collide. This principle is different in Godot."
 msgstr ""
+"В Unity вы бы поставили на сцену все GameObjects (Игровые Объекты): игрока, "
+"несколько экземпляров врагов, кирпичи повсюду, чтобы сформировать основу "
+"уровня, а затем несколько экземпляров монет по всему уровню. Затем вы "
+"добавляете различные компоненты к каждому элементу, чтобы связать их и "
+"логику на уровне: Например, вы бы добавили BoxCollider2D ко всем элементам "
+"сцены, для столкновений. Этот принцип отличается в Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:113
 msgid ""
 "In Godot, you would split your whole scene into 3 separate, smaller scenes, "
 "which you would then instance in the main scene."
 msgstr ""
+"В Godot вы бы разделили всю сцену на 3 отдельные, небольшие сцены, которые "
+"затем были бы приведены в качестве экземпляра в основной сцене."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:115
 msgid "**First, a scene for the Player alone.**"
-msgstr ""
+msgstr "**Сначала сцена для Игрока.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:117
 msgid ""
@@ -11250,10 +11811,14 @@ msgid ""
 "one node in particular: an AnimatedSprite node, which contains the sprite "
 "textures to form various animations (for example, walking animation)"
 msgstr ""
+"Рассматривайте игрока как многоразовый элемент на других уровнях. Он "
+"состоит, в частности, из одного узла: узла AnimatedSprite, который содержит "
+"текстуры спрайта для формирования различных анимаций (например, анимация "
+"ходьбы)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:120
 msgid "**Second, a scene for the Enemy.**"
-msgstr ""
+msgstr "*Вторая сцена для Врага.*"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:122
 msgid ""
@@ -11261,10 +11826,14 @@ msgid ""
 "the same as the Player node - the only differences are the script (that "
 "manages AI, mostly) and sprite textures used by the AnimatedSprite."
 msgstr ""
+"Опять же, враг является многоразовым элементом на других уровнях. Это почти "
+"то же самое, что и с узлом Player - единственное отличие заключается в "
+"скрипте (который, в основном, управляет ИИ) и текстурах, используемых "
+"AnimatedSprite."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:126
 msgid "**Lastly, the Level scene.**"
-msgstr ""
+msgstr "**Последняя это сцена самого уровня.**"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:128
 msgid ""
@@ -11275,6 +11844,12 @@ msgid ""
 "the Level scene tree. Of course, you can set different properties for each "
 "Enemy node (to change its color, for example)."
 msgstr ""
+"Она состоит из кирпичей (для платформ), монет (которые должен ловить игрок) "
+"и определенного количества экземпляров сцены врага. Это будут разные, "
+"отдельные враги, чье поведение и внешний вид будут такими же, как определено "
+"на сцене врага. Каждый экземпляр затем рассматривается как узел в дереве "
+"сцены уровня. Конечно, вы можете установить различные свойства для каждого "
+"узла с Врагом (например, изменить его цвет)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:134
 msgid ""
@@ -11285,6 +11860,11 @@ msgid ""
 "\"Spatial\" (root type of all 3D-related nodes) or \"Control\" (root type of "
 "all GUI-related nodes)."
 msgstr ""
+"Наконец, основная сцена будет состоять из одного корневого узла с 2 "
+"дочерними: экземпляр узла Игрок и узла Уровень. Корневым узлом может быть "
+"что угодно, обычно \"корневой\" тип, например, \"самый глобальный тип узла\" "
+"или \"Node2D\" (корневой тип всех 2D-узлов), \"Spatial\" (корневой тип всех "
+"3D-узлов) или \"Control\" (корневой тип всех GUI-узлов)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:140
 msgid ""
@@ -11295,6 +11875,12 @@ msgid ""
 "collision types nodes, depending on the usage (see the :ref:`Physics "
 "introduction <doc_physics_introduction>`)."
 msgstr ""
+"Как видите, каждая сцена организована в виде дерева. То же самое можно "
+"сказать и о свойствах самих узлов: вы не добавляете к узлу *коллизию*, чтобы "
+"дать ему возможность сталкиваться, как это делает Unity. Вместо этого, вы "
+"делаете этот узел *ребенком* нового узла, который имеет свойство "
+"столкновения. Godot имеет различные типы узлов столкновений, в зависимости "
+"от использования (см. :ref:`Введение в физику <doc_physics_introduction>`)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
 msgid ""
@@ -11302,6 +11888,9 @@ msgid ""
 "potentially increase the depth of the scene tree? Besides, Unity allows "
 "organizing GameObjects by putting them in empty GameObjects."
 msgstr ""
+"Вопрос: Каковы преимущества этой системы? Разве эта система не увеличит "
+"сложность древа сцены? Кроме того, Unity позволяет организовывать "
+"GameObjects, помещая их в пустые GameObjects."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:147
 msgid ""
@@ -11309,6 +11898,10 @@ msgid ""
 "Godot provides a number of nodes which are not clearly \"Game Objects\", but "
 "they provide their children with their own capabilities: this is inheritance."
 msgstr ""
+"Во-первых, эта система ближе к известной объектно-ориентированной парадигме: "
+"Godot предоставляет ряд узлов, которые не являются однозначно \"игровыми "
+"объектами\", но они предоставляют своим детям собственные возможности: это "
+"наследование."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:148
 msgid ""
@@ -11319,17 +11912,26 @@ msgid ""
 "a child of any node. Putting multiple nodes in an empty GameObject in Unity "
 "does not provide the same possibility, apart from a visual organization."
 msgstr ""
+"Во-вторых, выделение поддерева сцены позволяет сделать из него собственную "
+"сцену, что отвечает на второй и третий вопросы: даже если древо сцены "
+"становится слишком глубоким, его можно разделить на более мелкие. Это также "
+"позволяет найти лучшее решение для многократного использования, поскольку вы "
+"можете включить любое поддерево в качестве дочернего узла любого другого "
+"узла. Размещение нескольких узлов в пустом GameObject в Unity не дает "
+"одинаковых возможностей, за исключением визуальной организации."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:151
 msgid ""
 "These are the most important concepts you need to remember: \"node\", "
 "\"parent node\", and \"child node\"."
 msgstr ""
+"Это наиболее важные понятия, которые вы должны запомнить: \"узел\", "
+"\"родительский узел\" и \"дочерний узел\"."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:155
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:4
 msgid "Project organization"
-msgstr ""
+msgstr "Организация проекта"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:159
 msgid ""
@@ -11337,6 +11939,9 @@ msgid ""
 "architecture. Any solution will work for Unity and Godot, so this point has "
 "a lesser importance."
 msgstr ""
+"Ранее мы уже отмечали, что не существует идеального решения для создания "
+"структуры проекта. Любое решение будет работать на Unity и Godot, поэтому "
+"этот момент не имеет большого значения."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:162
 msgid ""
@@ -11345,6 +11950,10 @@ msgid ""
 "various folders, one per type of asset: Audio, Graphics, Models, Materials, "
 "Scripts, Scenes, etc."
 msgstr ""
+"Однако мы часто наблюдаем общую архитектуру для проектов Unity, состоящая из "
+"одной папки Assets в корневом каталоге, которая содержит различные папки, по "
+"одной на каждый тип ресурса: аудио, графика, модели, материалы, скрипты, "
+"сцены и т. д."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:165
 msgid ""
@@ -11353,10 +11962,15 @@ msgid ""
 "the project, we recommend organizing your project a bit differently. This "
 "wiki provides a page for this: :ref:`doc_project_organization`."
 msgstr ""
+"Как было сказано ранее, система сцен Godot позволяет разбивать сцены на "
+"сцены поменьше. Поскольку каждая сцена и под-сцена в действительности "
+"представляют собой один файл сцены в проекте, мы рекомендуем организовать "
+"ваш проект немного по-другому. Вот страница вики: :ref:"
+"`doc_project_organization`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:171
 msgid "Where are my prefabs?"
-msgstr ""
+msgstr "Где мои префабы?"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:173
 msgid ""
@@ -11365,6 +11979,10 @@ msgid ""
 "scene has an existence of its own, but all of them have the same properties "
 "as defined by the prefab."
 msgstr ""
+"Концепция префабов, предложенная Unity, является \"шаблонным\" элементом "
+"сцены. Он многоразовый, и каждый экземпляр префаба, который существует в "
+"сцене, имеет свои особенности, но все они имеют те же самые свойства, что "
+"определены префабом."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:177
 msgid ""
@@ -11376,6 +11994,14 @@ msgid ""
 "separate scene will be applied to its instances. However, any change you "
 "make to the instance will not have any impact on the 'template' scene."
 msgstr ""
+"Godot не предоставляет префабов как таковых, но их функциональность может "
+"быть заменена благодаря системе сцен: Как мы видели, система сцен "
+"организована как дерево. Godot позволяет сохранить поддерево сцены в "
+"качестве собственной сцены и сохранить его в отдельный файл. Эта новая сцена "
+"может повторяться столько раз, сколько вы захотите. Любые изменения, "
+"внесенные в эту новую, отдельную сцену, будут применены к ее экземплярам. "
+"Однако любые изменения, которые вы внесете в экземпляр, не будут иметь "
+"никакого влияния на шаблон этой сцены."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:185
 msgid ""
@@ -11388,30 +12014,44 @@ msgid ""
 "'template' scene. If you want to add new children to all the instances of "
 "your 'template' scene, then you need to add them in the 'template' scene."
 msgstr ""
+"Если быть точным, вы можете изменить параметры экземпляра в Инспекторе. "
+"Однако узлы, составляющие этот экземпляр, заблокированы, хотя вы можете "
+"разблокировать их, если вам нужно, щелкнув правой кнопкой мыши на экземпляре "
+"в дереве сцены и выбрав \"Editable children\" в меню. Вам не нужно делать "
+"этого, чтобы добавлять новые дочерние узлы в этот узел, но это возможно. "
+"Помните, что эти новые дети будут принадлежать экземпляру, а не \"шаблонной"
+"\" сцене. Если вы хотите добавить новых детей во все экземпляры вашей сцены "
+"'шаблона', то вам нужно добавить их в сцену 'шаблона'."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:195
+#, fuzzy
 msgid "Glossary correspondence"
-msgstr ""
+msgstr "Перепись глоссария"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
+#, fuzzy
 msgid ""
 "GameObject -> Node Add a component -> Inheriting Prefab -> Externalized "
 "branch"
 msgstr ""
+"GameObject -> Node Добавить компонент -> Наследование Prefab'ов -> Внешняя "
+"ветвь"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
-msgstr ""
+msgstr "Скриптинг: GDScript, C# и Visual Script"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:206
 msgid "Design"
-msgstr ""
+msgstr "Разработка"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:208
 msgid ""
 "As you may know already, Unity supports C#. C# benefits from its integration "
 "with Visual Studio and other features, such as static typing."
 msgstr ""
+"Как вы уже знаете, Unity поддерживает C#. C# выгодный из-за интеграции с "
+"Visual Studio и других возможностей, таких как статическая типизация."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:210
 msgid ""
@@ -11424,6 +12064,14 @@ msgid ""
 "really easy to learn: Between one evening for an experienced programmer and "
 "a week for a complete beginner."
 msgstr ""
+"Godot предоставляет собственный скриптовый язык, :ref:`GDScript "
+"<doc_scripting>`, а также поддержку :ref:`Visual Script <toc-learn-"
+"scripting- Visual_script>` и :ref:`C# <doc_c_sharp>`. GDScript берет свой "
+"синтаксис из Python, но не связан с ним. Если вы задаетесь вопросом о "
+"причинах создания своего скриптового языка, прочитайте, пожалуйста, "
+"страницы :ref:`doc_gdscript` и :ref:`doc_faq`. GDScript тесно связан с API "
+"Godot и его очень легко освоить: Один вечер для опытного программиста и "
+"неделя для новичка."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:216
 msgid ""
@@ -11432,6 +12080,10 @@ msgid ""
 "script so that it reacts to the player's controls, and another that controls "
 "its specific game logic."
 msgstr ""
+"Unity позволяет вам прикреплять к GameObject столько скриптов, сколько вы "
+"хотите. Каждый скрипт добавляет что-то в GameObject: Например, вы можете "
+"прикрепить скрипт так, чтобы он реагировал на действия игрока, а другой "
+"скрипт управлял его игровой логикой."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:220
 msgid ""
@@ -11440,18 +12092,27 @@ msgid ""
 "need to attach more scripts to one node, then you may consider two "
 "solutions, depending on your scene and on what you want to achieve:"
 msgstr ""
+"В Godot, вы можете прикрепить только один скрипт на каждый узел. Вы можете "
+"использовать либо внешний файл GDScript, либо встроить скрипт "
+"непосредственно в узел. Если вам нужно прикрепить несколько скриптов к "
+"одному узлу, то вы можете рассмотреть два решения, в зависимости от вашей "
+"сцены и от того, чего вы хотите достичь:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:224
 msgid ""
 "either add a new node between your target node and its current parent, then "
 "add a script to this new node."
 msgstr ""
+"либо добавить новый узел между вашим выбранным узлом и его текущим "
+"родителем, а затем добавить скрипт к этому новому узлу."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:225
 msgid ""
 "or, you can split your target node into multiple children and attach one "
 "script to each of them."
 msgstr ""
+"или, вы можете разделить ваш узел на несколько дочерних узлов и прикрепить "
+"по одному скрипту на каждый из них."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:227
 msgid ""
@@ -11459,10 +12120,12 @@ msgid ""
 "it is important to have a real reflection and consider splitting a "
 "complicated scene into multiple, smaller branches."
 msgstr ""
+"Как видите, древо сцены легко захламить. Вот почему важно обдумать "
+"возможность разделения сложной сцены на несколько, более мелких ветвей."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:231
 msgid "Connections: groups and signals"
-msgstr ""
+msgstr "Связи: группы и сигналы"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
 msgid ""
@@ -11471,6 +12134,11 @@ msgid ""
 "them in a group and call a function on all nodes contained in this group! "
 "This is explained in :ref:`this page <doc_scripting_continued>`."
 msgstr ""
+"Вы можете управлять узлами, обращаясь к ним с помощью скрипта и вызывая в "
+"них функции (встроенные или определяемые пользователем). Но есть еще кое-"
+"что: Вы также можете поместить их в группу и вызвать функцию на всех узлах, "
+"входящих в эту группу! Это объясняется на :ref:`этой странице "
+"<doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
 msgid ""
@@ -11480,27 +12148,36 @@ msgid ""
 "This feature is documented `here <../scripting/gdscript/gdscript_basics."
 "html#signals>`_."
 msgstr ""
+"Но есть еще кое-что! Некоторые узлы посылают сигналы при выполнении "
+"определенных действий. Вы можете подключить эти сигналы для вызова "
+"определенной функции при их появлении. Обратите внимание, что вы можете "
+"определить свои собственные сигналы и использовать их, когда захотите. Эта "
+"особенность описана в этом `документе <.../scripting/gdscript/"
+"gdscript_basics.html#signals>`_."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
-#, fuzzy
 msgid "Script Serialization"
-msgstr "Анимация Спрайтов"
+msgstr "Сериализация Скрипта"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
 msgid "Unity can handle script serialization in two ways:"
-msgstr ""
+msgstr "Unity может работать с сериализацией скриптов двумя способами:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
 msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
 msgstr ""
+"Неявно: Все публичные поля в классе автоматически сериализуются, если тип "
+"является сериализуемым (``Dictionary``не сериализуемый)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
 msgstr ""
+"Явно: Непубличные поля могут быть сериализованы с помощью атрибута "
+"``[SerializeField]``."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
 msgid ""
@@ -11511,6 +12188,12 @@ msgid ""
 "This workflow is explained `here <../scripting/gdscript/gdscript_basics."
 "html#exports>`_."
 msgstr ""
+"Godot также имеет встроенную систему сериализации скриптов, но она работает "
+"только явно. можно Вы можете сериализовать любой сериализуемый тип используя "
+"(:ref:`встроенный и различные типы движка <doc_binary_serialization_api>`, в "
+"том числе :ref:`class_Array` и :ref:`class_Dictionary`) ключевое слово "
+"``export``. Этот процесс объясняется `здесь <.../scripting/gdscript/"
+"gdscript_basics.html#exports>`_."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:254
 msgid ""
@@ -11520,10 +12203,16 @@ msgid ""
 "`class_Resource` will allow you to create custom serializable objects. More "
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
+"Unity также имеет тип данных под названием ``ScriptableObject``, "
+"используемый для сериализации пользовательских ресурсных объектов. Его "
+"эквивалент в Godot является базовым классом для всех ресурсов: :ref:"
+"`class_Resource`. Создание скрипта, который наследует :ref:`class_Resource`, "
+"позволит вам создавать собственные сериализуемые объекты. Более подробную "
+"информацию о ресурсах можно найти :ref:`здесь <doc_resources>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:259
 msgid "Using Godot in C++"
-msgstr ""
+msgstr "Использование C++ в Godot"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:261
 msgid ""
@@ -11532,16 +12221,23 @@ msgid ""
 "an example, you can consider Godot Engine's editor as a \"game\" written in C"
 "++ using Godot API."
 msgstr ""
+"К вашему сведению, Godot также позволяет вам разрабатывать ваш проект "
+"непосредственно на языке C++, используя API, что в данный момент невозможно "
+"в Unity. В качестве примера можно рассматривать редактор Godot Engine как "
+"\"игру\", написанную на языке C++ с использованием API Godot."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:263
 msgid ""
 "If you are interested in using Godot in C++, you may want to start reading "
 "the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."
 msgstr ""
+"Если вы заинтересованы в использовании языка C++ в Godot, вы можете "
+"прочитать страницу :ref:`Разработка на С++ <doc_introduction_to_godot_ "
+"Development>`."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:4
 msgid "Command line tutorial"
-msgstr ""
+msgstr "Руководство по командной строке"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
 msgid ""
@@ -11550,6 +12246,11 @@ msgid ""
 "command line. Given the engine relies on almost no external libraries, "
 "initialization times are pretty fast, making it suitable for this workflow."
 msgstr ""
+"Некоторым разработчикам нравится широко использовать командную строку. Godot "
+"разработан для того, чтобы быть дружелюбным к ним, поэтому здесь приведены "
+"шаги для работы полностью из командной строки. Поскольку механизм "
+"практически не опирается на внешние библиотеки, время инициализации довольно "
+"быстрое, что делает его подходящим для данного рабочего процесса."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
@@ -11562,10 +12263,14 @@ msgid ""
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
+"Рекомендуется, чтобы ваш бинарный файл Godot находился в переменной "
+"окружения PATH, чтобы его можно было легко выполнить из любого места, набрав "
+"``godot``. Вы можете сделать это на Linux, поместив бинарный файл Godot в ``/"
+"usr/local/bin`` и убедившись, что он называется ``godot``."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
 msgid "Setting the project path"
-msgstr ""
+msgstr "Настройка пути проекта"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:25
 msgid ""
@@ -11573,40 +12278,49 @@ msgid ""
 "working directory is, you may need to set the path to your project for any "
 "of the following commands to work correctly."
 msgstr ""
+"В зависимости от того, где расположен ваш бинарный файл Godot и какая у вас "
+"рабочая директория, для корректной работы одной из следующих команд может "
+"понадобиться указать путь к вашему проекту."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:29
 msgid ""
 "This can be done by giving the path to the ``project.godot`` file of your "
 "project as either the first argument, like this:"
 msgstr ""
+"Это можно сделать, указав путь к файлу вашего проекта ``project.godot`` в "
+"качестве первого аргумента, как показано ниже:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid "Or by using the ``--path`` argument:"
-msgstr ""
+msgstr "Или с помощью аргумента ``--path``:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
 msgstr ""
+"Например, полная команда для экспорта вашей игры (описано ниже) может "
+"выглядеть следующим образом:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "Creating a project"
-msgstr ""
+msgstr "Создание проекта"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:52
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a project.godot file."
 msgstr ""
+"Создание проекта из командной строки можно выполнить, переместив командную "
+"оболочку (shell) в нужное место и создав файл project.godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:63
 msgid "The project can now be opened with Godot."
-msgstr ""
+msgstr "Теперь проект можно открыть с помощью Godot."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:67
 msgid "Running the editor"
-msgstr ""
+msgstr "Запуск редактора"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
 msgid ""
@@ -11614,16 +12328,21 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
+"Запуск редактора осуществляется путем выполнения команды Godot с флагом ``-"
+"e``. Это должно быть сделано изнутри каталога проекта или подкаталога, в "
+"противном случае команда игнорируется и появляется менеджер проекта."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid ""
 "If a scene has been created and saved, it can be edited later by running the "
 "same code with that scene as argument."
 msgstr ""
+"Если сцена была создана и сохранена, ее можно отредактировать позже, "
+"запустив тот же код с этой сценой в качестве аргумента."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Erasing a scene"
-msgstr ""
+msgstr "Удаление сцены"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid ""
@@ -11631,26 +12350,34 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
+"Godot может работать с вашей файловой системой и не будет создавать "
+"дополнительные файлы метаданных. Используйте ``rm``  для удаления файла "
+"сцены. Убедитесь, что при открытии не будет никаких ссылок на эту сцену, "
+"иначе произойдет ошибка."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Running the game"
-msgstr ""
+msgstr "Запуск игры"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:98
 msgid ""
 "To run the game, simply execute Godot within the project directory or "
 "subdirectory."
 msgstr ""
+"Чтобы запустить игру, просто запустите Godot в каталоге проекта или "
+"подкаталоге."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:105
 msgid ""
 "When a specific scene needs to be tested, pass that scene to the command "
 "line."
 msgstr ""
+"Если необходимо протестировать определенную сцену, передайте ее в командную "
+"строку."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:113
 msgid "Debugging"
-msgstr ""
+msgstr "Отладка"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:115
 msgid ""
@@ -11658,31 +12385,46 @@ msgid ""
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
+"Отлов ошибок в командной строке может быть непростой задачей, потому что они "
+"просто пролетают мимо. Для этого в отладчике командной строки добавьте ``-"
+"d``. Он работает либо для запуска игры, либо для простой сцены."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:132
+#, fuzzy
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
+"Также поддерживается экспорт проекта из командной строки. Это особенно "
+"полезно при непрерывной интеграции. Для этого идеально подойдет версия Godot "
+"без головы (сборка сервера, без видео)."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:141
+#, fuzzy
 msgid ""
 "The platform names recognized by the ``--export`` switch are the same as "
 "displayed in the export wizard of the editor. To get a list of supported "
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
+"Имена платформ, распознаваемые переключателем ``--export`` совпадают с "
+"именами платформ, отображаемыми в мастере экспорта редактора. Чтобы получить "
+"список поддерживаемых платформ из командной строки, попробуйте "
+"экспортировать их на непризнанную платформу, и будет показан полный список "
+"платформ, поддерживаемых вашей конфигурацией."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
+"Для экспорта отладочной версии игры используйте переключатель ``--export-"
+"debug`` вместо ``--export``. Их параметры и использование одинаковы."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid "Running a script"
-msgstr ""
+msgstr "Запуск скрипта"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:153
 msgid ""
@@ -11690,28 +12432,33 @@ msgid ""
 "feature is especially useful in large projects, for batch conversion of "
 "assets or custom import/export."
 msgstr ""
+"Есть возможность запуска простого .gd скрипта из командной строки. Эта "
+"функция особенно полезна в крупных проектах, для груповой конвертации "
+"ассетов или пользовательского импорта/экспорта."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:157
 msgid "The script must inherit from SceneTree or MainLoop."
-msgstr ""
+msgstr "Скрипт должен наследоваться от SceneTree или MainLoop."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:159
 msgid "Here is a simple example of how it works:"
-msgstr ""
+msgstr "Вот простой пример того, как это работает:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:170
 msgid "And how to run it:"
-msgstr ""
+msgstr "И как запустить его:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:177
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
+"Если файл project.godot не существует в пути, то текущий путь считается "
+"текущим рабочим каталогом (если не указано ``-path`)."
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Использование внешнего текстового редактора"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
 msgid ""
@@ -11720,6 +12467,10 @@ msgid ""
 "via the options under ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Хотя у Godot есть встроенный текстовый редактор, некоторые разработчики "
+"предпочитают использовать знакомый им текстовый редактор. Godot "
+"предоставляет эту опцию через меню ``Редактор -> Настройки редактора -> Text "
+"Editor -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
 msgid ""
@@ -11727,78 +12478,81 @@ msgid ""
 "allow you to better integrate the editor with godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
+"Есть два поля: путь к исполняемому файлу и флаги командной строки. Флаги "
+"позволяют лучше интегрировать редактор с godot. Godot заменяет следующие "
+"параметры внутри флагов:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Поле в Исполняемых Флагах"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
-msgstr ""
+msgstr "Заменяется на"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{project}"
-msgstr ""
+msgstr "{project}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "Абсолютный путь к каталогу проекта"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{file}"
-msgstr ""
+msgstr "{file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "Абсолютный путь к файлу"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{col}"
-msgstr ""
+msgstr "{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
-msgstr ""
+msgstr "Номер столбца ошибки"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "{line}"
-msgstr ""
+msgstr "{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
-msgstr ""
+msgstr "Номер строки ошибки"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "Некоторые примеры Исполняемых Флагов для различных редакторов:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
-msgstr ""
+msgstr "Исполняемые Флаги"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "geany/kate"
-msgstr ""
+msgstr "geany/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "{file} --line {line} --column {col}"
-msgstr ""
+msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "atom/sublime text"
-msgstr ""
+msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "{file}:{line}"
-msgstr ""
+msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "jetbrains rider"
-msgstr ""
+msgstr "jetbrains rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "--line {line} {file}"
-msgstr ""
+msgstr "--line {line} {file}"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:9
 msgid ""
@@ -11828,6 +12582,11 @@ msgid ""
 "of code. After some experiments with `Python <https://www.python.org>`__, it "
 "also proved difficult to embed."
 msgstr ""
+"В ранние годы в движке использовался скриптовый язык `Lua <http://www.lua."
+"org>`__. Lua работает быстро, но привязка к объектно-ориентированной системе "
+"(с помощью откатов) была сложной и медленной и занимало огромное количество "
+"кода. После некоторых экспериментов с `Python <https://www.python.org>`__, "
+"это оказалось также трудно внедрить."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:25
 msgid ""
@@ -11837,7 +12596,7 @@ msgid ""
 "optimally make use of Godot's particular architecture:"
 msgstr ""
 "Последним сторонним скриптовым языком, использованным для создания игр был "
-"`Squirrel <http://squirrel-lang.org>`, от которого также пришлось "
+"`Squirrel <http://squirrel-lang.org>`__, от которого также пришлось "
 "отказаться. В этот момент стало очевидно, что для особой архитектуры Godot "
 "самым оптимальным вариантом будет использование своего собственного "
 "скриптового языка:"
@@ -11873,12 +12632,17 @@ msgid ""
 "Godot already has a memory management model for resources, most script "
 "languages provide their own, which results in duplicate effort and bugs."
 msgstr ""
+"Godot уже имеет модель управления памятью для ресурсов, а большинство "
+"скриптовых языков предоставляют свою собственную модель, что приводит к "
+"двойной работе и множеству багов."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:40
 msgid ""
 "Binding code is always messy and results in several failure points, "
 "unexpected bugs and generally low maintainability."
 msgstr ""
+"Код привязки всегда неряшливый и приводит к некоторым ошибкам, неожиданным "
+"багам и, как правило, низкой поддержке."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:43
 msgid ""
@@ -11901,6 +12665,8 @@ msgid ""
 "Some people can learn better by taking a look at the syntax, so here's a "
 "simple example of how GDScript looks."
 msgstr ""
+"Некоторые люди могут научиться лучше, взглянув на синтаксис, поэтому вот "
+"простой пример того, как выглядит GDScript."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:129
 msgid ""
@@ -11908,6 +12674,10 @@ msgid ""
 "+, or C# but never used a dynamically typed one before, it is advised you "
 "read this tutorial: :ref:`doc_gdscript_more_efficiently`."
 msgstr ""
+"Если у вас уже был опыт работы со статически типизированными языками, такими "
+"как C, C++ или C#, но вы никогда раньше не использовали динамически "
+"типизированный язык, рекомендуется прочитать это руководство: :ref:"
+"`doc_gdscript_efficient`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:134
 msgid "Language"
@@ -12037,11 +12807,11 @@ msgstr "Смотрите `if/else/elif`_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:164
 msgid "elif"
-msgstr ""
+msgstr "elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:166
 msgid "else"
-msgstr ""
+msgstr "else"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:168
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:819
@@ -12063,7 +12833,7 @@ msgstr "Зарезервировано для будущей реализаци�
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:808
 msgid "while"
-msgstr ""
+msgstr "while"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:172
 msgid "See while_."
@@ -12072,7 +12842,7 @@ msgstr "Смотрите while_."
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:848
 msgid "match"
-msgstr ""
+msgstr "match"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:174
 msgid "See match_."
@@ -12080,7 +12850,7 @@ msgstr "Смотрите match_."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 msgid "switch"
-msgstr ""
+msgstr "switch"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:176
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
@@ -12089,11 +12859,11 @@ msgstr "Зарезервировано для будущей реализаци�
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:178
 msgid "case"
-msgstr ""
+msgstr "case"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "break"
-msgstr ""
+msgstr "break"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:180
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
@@ -12101,7 +12871,7 @@ msgstr "Выход из выполнения текущего ``for`` или ``w
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid "continue"
-msgstr ""
+msgstr "continue"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:182
 msgid ""
@@ -12130,7 +12900,7 @@ msgstr "Возвращает значение из функции."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "class"
-msgstr ""
+msgstr "class"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:188
 msgid "Defines a class."
@@ -12138,7 +12908,7 @@ msgstr "Объявляет класс."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "extends"
-msgstr ""
+msgstr "extends"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:190
 msgid "Defines what class to extend with the current class."
@@ -12157,17 +12927,17 @@ msgid ""
 msgstr "Проверяет что значение расширяет указанный класс."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
-#, fuzzy
 msgid "as"
-msgstr "pass"
+msgstr "as"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
+#, fuzzy
 msgid "Cast the value to a given type if possible."
-msgstr ""
+msgstr "Приводит значение к данному типу, если это возможно."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "self"
-msgstr ""
+msgstr "self"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "Refers to current class instance."
@@ -12175,7 +12945,7 @@ msgstr "Ссылается на текущий экземпляр класса."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "tool"
-msgstr ""
+msgstr "tool"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:198
 msgid "Executes the script in the editor."
@@ -12183,7 +12953,7 @@ msgstr "Выполняет скрипт в редакторе."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "signal"
-msgstr ""
+msgstr "signal"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:200
 msgid "Defines a signal."
@@ -12191,7 +12961,7 @@ msgstr "Объявляет сигнал."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 msgid "func"
-msgstr ""
+msgstr "func"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:202
 msgid "Defines a function."
@@ -12199,7 +12969,7 @@ msgstr "Объявляет функцию."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid "static"
-msgstr ""
+msgstr "static"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:204
 msgid "Defines a static function. Static member variables are not allowed."
@@ -12207,7 +12977,7 @@ msgstr "Объявление статической функции. Статич
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid "const"
-msgstr ""
+msgstr "const"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:206
 msgid "Defines a constant."
@@ -12231,7 +13001,7 @@ msgstr "Объявляет переменную."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid "onready"
-msgstr ""
+msgstr "onready"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:212
 msgid ""
@@ -12243,7 +13013,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid "export"
-msgstr ""
+msgstr "export"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:214
 msgid ""
@@ -12255,7 +13025,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "setget"
-msgstr ""
+msgstr "setget"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:216
 msgid "Defines setter and getter functions for a variable."
@@ -12263,7 +13033,7 @@ msgstr "Определяет функции setter и getter для переме
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "breakpoint"
-msgstr ""
+msgstr "breakpoint"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:218
 msgid "Editor helper for debugger breakpoints."
@@ -12271,7 +13041,7 @@ msgstr "Помощник редактора для контрольных точ
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "preload"
-msgstr ""
+msgstr "preload"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "Preloads a class or variable. See `Classes as resources`_."
@@ -12280,7 +13050,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid "yield"
-msgstr ""
+msgstr "yield"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:222
 msgid "Coroutine support. See `Coroutines with yield`_."
@@ -12288,7 +13058,7 @@ msgstr "Поддержка сопрограмм. См. `Сопрограммы �
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
 msgid "assert"
-msgstr ""
+msgstr "assert"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:224
 msgid ""
@@ -12300,7 +13070,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 msgid "remote"
-msgstr ""
+msgstr "remote"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:226
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
@@ -12317,29 +13087,27 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:228
 msgid "master"
-msgstr ""
+msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "puppet"
-msgstr ""
+msgstr "puppet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
-#, fuzzy
 msgid "remotesync"
-msgstr "`remote`"
+msgstr "remotesync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
-#, fuzzy
 msgid "mastersync"
-msgstr "`master`"
+msgstr "mastersync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "puppetsync"
-msgstr ""
+msgstr "puppetsync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "PI"
-msgstr ""
+msgstr "PI"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "PI constant."
@@ -12393,7 +13161,7 @@ msgstr "``x[index]``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:255
 msgid "Subscription, Highest Priority"
-msgstr ""
+msgstr "Подпись, Высокий Приоритет"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:257
 msgid "``x.attribute``"
@@ -12425,7 +13193,7 @@ msgstr "``-x``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:263
 msgid "Negative / Unary Negation"
-msgstr ""
+msgstr "Отрицательный / Унарный Отрицательный"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:265
 msgid "``*`` ``/`` ``%``"
@@ -12441,6 +13209,9 @@ msgid ""
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats)"
 msgstr ""
+"Эти операторы ведут себя так же, как и в C++. Целочисленное деление "
+"усекается, а не возвращает дробное число, и оператор % доступен только для "
+"значений типа int(\"fmod\" для типа float)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
@@ -12448,9 +13219,8 @@ msgid "``+``"
 msgstr "``+``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
-#, fuzzy
 msgid "Addition / Concatenation of Arrays"
-msgstr "Прибавление / Вычитание"
+msgstr "Прибавление / Конкатенация массивов"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:275
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:143
@@ -12458,9 +13228,8 @@ msgid "``-``"
 msgstr "``-``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:275
-#, fuzzy
 msgid "Subtraction"
-msgstr "Прибавление / Вычитание"
+msgstr "Вычитание"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:277
 msgid "``<<`` ``>>``"
@@ -12619,7 +13388,7 @@ msgstr "Путь ресурса"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:318
 msgid "Shorthand for ``get_node(\"NodePath\")``"
-msgstr ""
+msgstr "Сокращение для ``get_node(\"NodePath\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:322
 msgid "Comments"
@@ -12656,6 +13425,13 @@ msgid ""
 "``PoolByteArray`` though, those are passed as values too, so consider this "
 "when deciding which to use!)"
 msgstr ""
+"Встроенные типы распределены по стекам. Они передаются как значения. Это "
+"означает, что копия создается на каждом присваивании или при передаче их в "
+"качестве аргументов функциям. Единственным исключением являются  ``Array`` и "
+"``Dictionaries``, которые передаются по ссылке и являются общими. (Не "
+"``PoolArray`` типа ``PoolByteArray``, но они тоже передаются как значения, "
+"поэтому учитывайте это при решении, что именно нужно использовать для Вашего "
+"проекта!)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:352
 msgid "Basic built-in types"
@@ -12771,38 +13547,45 @@ msgid ""
 "3D vector type containing ``x``, ``y`` and ``z`` fields. This can also be "
 "accessed as an array."
 msgstr ""
+"3D векторный тип, содержащий поля ``x``, ``y`` и ``z``. Может быть получен "
+"как массив."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:408
 msgid ":ref:`Transform2D <class_Transform2D>`"
-msgstr ""
+msgstr ":ref:`Transform2D <class_Transform2D>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:410
 msgid "3x2 matrix used for 2D transforms."
-msgstr ""
+msgstr "Матрица 3x2, используемая для двумерных преобразований."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:413
 msgid ":ref:`Plane <class_Plane>`"
-msgstr ""
+msgstr ":ref:`Plane <class_Plane>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:415
+#, fuzzy
 msgid ""
 "3D Plane type in normalized form that contains a ``normal`` vector field and "
 "a ``d`` scalar distance."
 msgstr ""
+"Тип трехмерной плоскости в нормализованной форме, которая содержит "
+"``normal`` векторное поле и ``d`` скалярное расстояние."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:419
 msgid ":ref:`Quat <class_Quat>`"
-msgstr ""
+msgstr ":ref:`Quat <class_Quat>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:421
 msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
 "for interpolating rotations."
 msgstr ""
+"Quaternion - это тип данных, используемый для представления трехмерного "
+"вращения. Полезно для интерполяции вращений."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:425
 msgid ":ref:`AABB <class_AABB>`"
-msgstr ""
+msgstr ":ref:`AABB <class_AABB>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:427
 msgid ""
@@ -12810,73 +13593,88 @@ msgid ""
 "``position`` and ``size``. Alternatively contains an ``end`` field which is "
 "``position+size``."
 msgstr ""
+"Выровненный по оси ограничительная рамка (или трехмерная коробка) содержит 2 "
+"поля типа Vector: ``position`` и ``size``. Альтернативно содержит поле "
+"``end``, которое является ``position+size``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:432
 msgid ":ref:`Basis <class_Basis>`"
-msgstr ""
+msgstr ":ref:`Basis <class_Basis>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:434
 msgid ""
 "3x3 matrix used for 3D rotation and scale. It contains 3 vector fields "
 "(``x``, ``y`` and ``z``) and can also be accessed as an array of 3D vectors."
 msgstr ""
+"Матрица 3x3, используемая для трехмерного вращения и масштабирования. Он "
+"содержит 3 векторных поля (``x``, ``y`` и ``z``), а также доступен в виде "
+"массива трехмерных векторов."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:439
 msgid ":ref:`Transform <class_Transform>`"
-msgstr ""
+msgstr ":ref:`Transform <class_Transform>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:441
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
 msgstr ""
+"3D-преобразование содержит поле Basis ``basis`` и поле Vector3 ``origin``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:445
 msgid "Engine built-in types"
-msgstr ""
+msgstr "Встроенные типы движка"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:448
 msgid ":ref:`Color <class_Color>`"
-msgstr ""
+msgstr ":ref:`Color <class_Color>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:450
 msgid ""
 "Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
 msgstr ""
+"Color - тип данных цвета, содержит поля  ``r``, ``g``, ``b``, и ``a``. Он "
+"также доступен как ``h``, ``s``, и ``v`` для оттенка(hue)/"
+"насыщенности(saturation)/значения(value)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:454
 msgid ":ref:`NodePath <class_NodePath>`"
-msgstr ""
+msgstr ":ref:`NodePath <class_NodePath>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:456
 msgid ""
 "Compiled path to a node used mainly in the scene system. It can be easily "
 "assigned to, and from, a String."
 msgstr ""
+"Составной путь к узлу, используемый в основном в системе сцен. Он может быть "
+"легко переведен на строку и из нее."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:460
 msgid ":ref:`RID <class_RID>`"
-msgstr ""
+msgstr ":ref:`RID <class_RID>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:462
+#, fuzzy
 msgid "Resource ID (RID). Servers use generic RIDs to reference opaque data."
 msgstr ""
+"Resource ID (RID). Серверы используют общие RID для создания ссылок на "
+"непрозрачные данные."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:465
 msgid ":ref:`Object <class_Object>`"
-msgstr ""
+msgstr ":ref:`Object <class_Object>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:467
 msgid "Base class for anything that is not a built-in type."
-msgstr ""
+msgstr "Базовый класс для всего, что не является встроенным типом."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:470
 msgid "Container built-in types"
-msgstr ""
+msgstr "Встроенные типы контейнеров"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:473
 msgid ":ref:`Array <class_Array>`"
-msgstr ""
+msgstr ":ref:`Array <class_Array>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:475
 msgid ""
@@ -12885,6 +13683,10 @@ msgid ""
 "indexed starting from index ``0``. Starting with Godot 2.1, indices may be "
 "negative like in Python, to count from the end."
 msgstr ""
+"Общая последовательность любых типов объектов, включая другие массивы или "
+"словари (см. ниже). Массив может изменяться динамически. Массивы "
+"индексируются, начиная с индекса ``0``. Начиная с Godot 2.1, индексы могут "
+"быть отрицательными, как и в Python, считая с конца."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:489
 msgid ""
@@ -12895,50 +13697,68 @@ msgid ""
 "also use less memory but are atomic and tend to run slower than generic "
 "arrays. They are therefore only recommended to use for large data sets:"
 msgstr ""
+"Массивы в GDScript выделяются в памяти линейно для повышения скорости "
+"работы. Однако большие массивы (более десятков тысяч элементов) могут "
+"привести к фрагментации памяти. Если это проблема, то доступны специальные "
+"типы массивов. Они принимают только один тип данных. Они избегают "
+"фрагментации памяти и также потребляют меньше памяти, но являются атомными "
+"и, как правило, работают медленнее, чем обычные массивы. Поэтому их "
+"рекомендуется использовать только для больших наборов данных:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:496
 msgid ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
 "0 to 255)."
 msgstr ""
+":ref:`PoolByteArray <class_PoolByteArray>`: Массив байтов (целые числа от 0 "
+"до 255)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:497
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
-msgstr ""
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: Массив целых чисел."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:498
 msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
 msgstr ""
+":ref:`PoolRealArray <class_PoolRealArray>`: Массив чисел с плавающей точкой."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:499
 msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
-msgstr ""
+msgstr ":ref:`PoolStringArray <class_PoolStringArray>`: Массив строк."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:500
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
 "<class_Vector2>` objects."
 msgstr ""
+":ref:`PoolVector2Array <class_PoolVector2Array>`: Массив объектов типа :ref:"
+"`Vector2 <class_Vector2>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:501
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
 "<class_Vector3>` objects."
 msgstr ""
+":ref:`PoolVector3Array <class_PoolVector3Array>`: Массив объектов типа :ref:"
+"`Vector3 <class_Vector3>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:502
 msgid ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
 "<class_Color>` objects."
 msgstr ""
+":ref:`PoolColorArray <class_PoolColorArray>`: Массив объектов типа :ref:"
+"`Color <class_Color>`."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:505
 msgid ":ref:`Dictionary <class_Dictionary>`"
-msgstr ""
+msgstr ":ref:`Dictionary <class_Dictionary>`"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:507
 msgid "Associative container which contains values referenced by unique keys."
 msgstr ""
+"Ассоциативный контейнер, содержащий значения, на которые ссылаются "
+"уникальные ключи."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:520
 msgid ""
@@ -12947,17 +13767,24 @@ msgid ""
 "write). Note however that like any GDScript identifier, keys written in this "
 "form cannot start with a digit."
 msgstr ""
+"Также поддерживается синтаксис таблиц в стиле Lua. Lua-стиль использует "
+"``=`` вместо ``:`` и не использует кавычки для разметки ключей строк (что "
+"делает написание немного быстрее). Обратите внимание, что, как и любой "
+"другой идентификатор GDScript, ключи, написанные в этом виде, не могут "
+"начинаться с цифры."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:534
 msgid ""
 "To add a key to an existing dictionary, access it like an existing key and "
 "assign to it::"
 msgstr ""
+"Чтобы добавить ключ к существующему словарю, воспользуйтесь им как "
+"существующим и назначьте ему::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:543
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
-msgstr ""
+msgstr "Данные"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:546
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:131
@@ -12965,7 +13792,7 @@ msgstr ""
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:148
 #: ../../docs/tutorials/shading/migrating_to_godot_shader_language.rst:211
 msgid "Variables"
-msgstr ""
+msgstr "Переменные"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:548
 msgid ""
@@ -12973,6 +13800,9 @@ msgid ""
 "with the ``var`` keyword and may, optionally, be assigned a value upon "
 "initialization."
 msgstr ""
+"Переменные могут существовать как члены класса или быть локальными для "
+"функций. Они создаются с помощью ключевого слова ``var`` и при желании, есть "
+"возможность присвоить значение при инициализации."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:559
 msgid ""
@@ -12980,24 +13810,33 @@ msgid ""
 "specified, the variable will be forced to have always that same type, and "
 "trying to assign an incompatible value will raise an error."
 msgstr ""
+"Опционально: Переменные могут иметь спецификацию типа. Когда тип указан, "
+"переменная всегда должна иметь один и тот же тип, а попытка присвоить "
+"несовместимое значение вызовет ошибку."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:563
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
 msgstr ""
+"Типы указываются при объявлении переменной символом ``:`` (двоеточие) после "
+"имени переменной, за которым следует тип."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:571
 msgid ""
 "If the variable is initialized within the declaration, the type can be "
 "inferred, so it's possible to omit the type name::"
 msgstr ""
+"Если переменная инициализирована в объявлении, то можно предугадать типе "
+"сразу, поэтому можно не писать имя типа::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:577
 msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
 msgstr ""
+"Предсказание типа возможно только в том случае, если заданное значение имеет "
+"определенный тип, в противном случае возникает ошибка."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:580
 #: ../../docs/tutorials/shading/shading_language.rst:27
@@ -13006,17 +13845,19 @@ msgstr "Поддерживаемые типы:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:582
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
-msgstr ""
+msgstr "Встроенные типы (Array, Vector2, int, String и т.д.)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:583
 msgid "Engine classes (Node, Resource, Reference, etc.)"
-msgstr ""
+msgstr "Классы движка (Node, Resource, Reference, etc.)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:584
 msgid ""
 "Constant names if they contain a script resource (``MyScript`` if you "
 "declared ``const MyScript = preload(\"res://my_script.gd\")``)."
 msgstr ""
+"Константы, если они содержат скрипт ресурса (``MyScript`` если вы объявили "
+"``const MyScript = preload(\"res://my_script.gd\")``)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
 msgid ""
@@ -13024,15 +13865,18 @@ msgid ""
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
 "InnerClass`` in the same scope)"
 msgstr ""
+"Другие классы в том же скрипте, учитывающие область видимости (``InnerClass."
+"NestedClass`` если вы объявили ``сlass NestedClass`` внутри ``сlass "
+"InnerClass`` в той же области видимости)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:586
 msgid "Script classes declared with the ``class_name`` keyword."
-msgstr ""
+msgstr "Классы объявленные в скрипте с ключевым словом ``class_name``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:589
 #: ../../docs/tutorials/shading/shading_language.rst:102
 msgid "Casting"
-msgstr "Приведение"
+msgstr "Приведение переменных"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:591
 msgid ""
@@ -13040,30 +13884,43 @@ msgid ""
 "needed to coerce a value to be of a certain type, in particular for object "
 "types, you can use the casting operator ``as``."
 msgstr ""
+"Значения, присваиваемые типизированным переменным, должны иметь совместимый "
+"тип. Если необходимо заставить значение быть определенного типа, в "
+"частности, для типов объектов, можно использовать оператор приведения ``as``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:595
+#, fuzzy
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
 msgstr ""
+"Приведение типов объектов приводит к одному и тому же объекту, если значение "
+"имеет один и тот же тип или подтип приведенного типа."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:603
 msgid ""
 "If the value is not a subtype, the casting operation will result in a "
 "``null`` value."
 msgstr ""
+"Если значение не является подтипом, операция приведения приведет к получению "
+"значения ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:610
 msgid ""
 "For built-in types, they will be forcibly converted if possible, otherwise "
 "the engine will raise an error."
 msgstr ""
+"Для встроенных типов они будут принудительно преобразованы, если это "
+"возможно, в противном случае движок выдаст ошибку."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:619
+#, fuzzy
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with tree::"
 msgstr ""
+"Приведение также полезно для получения более надежных типов переменных при "
+"взаимодействии с деревом::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:629
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
@@ -13078,16 +13935,20 @@ msgid ""
 "Constants are similar to variables, but must be constants or constant "
 "expressions and must be assigned on initialization."
 msgstr ""
+"Константы аналогичны переменным, но должны быть постоянными или постоянными "
+"выражениями и присваиваются при инициализации."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:645
 msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
 msgstr ""
+"Хотя тип констант берется из присвоенного значения, можно также явно описать "
+"тип::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:651
 msgid "Assigning a value of an incompatible type will raise an error."
-msgstr ""
+msgstr "Присвоение значения несовместимого типа приведет к ошибке."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:654
 msgid "Enums"
@@ -13106,6 +13967,8 @@ msgid ""
 "If you pass a name to the enum, it would also put all the values inside a "
 "constant dictionary of that name."
 msgstr ""
+"Если вы передадите имя перечислению, оно поместит все значения в постоянный "
+"словарь (constant dictionary) с этим именем."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:680
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:391
@@ -13121,11 +13984,18 @@ msgid ""
 "but is not always required (and should *not* be sent as the function's first "
 "argument, unlike Python)."
 msgstr ""
+"Функции всегда принадлежат `классу <Classes_>`_. Приоритет области видимости "
+"для переменных: локальный → член класса → глобальный. Переменная ``self`` "
+"всегда доступна и предоставляется в опционально для доступа к элементам "
+"класса, но не всегда требуется (и в отличие от Python, она *не* должна "
+"передаваться в качестве первого аргумента функции)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:695
 msgid ""
 "A function can ``return`` at any point. The default return value is ``null``."
 msgstr ""
+"Функция может ``return`` (возвращать) значения. Если вы ничего не "
+"возвращаете, то она является ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:697
 msgid ""
@@ -13133,17 +14003,23 @@ msgid ""
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
+"Функции могут также иметь спецификацию типов для аргументов и возвращаемого "
+"значения. Типы аргументам можно добавлять аналогично переменным::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:703
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr ""
+"Если аргумент функции имеет значение по умолчанию, то можно спрогнозировать "
+"тип::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:708
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
 msgstr ""
+"Тип возврата функции может быть указан после списка аргументов с помощью "
+"символа стрелки (``->``)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:714
 msgid ""
@@ -13152,6 +14028,10 @@ msgid ""
 "functions can return early with the ``return`` keyword, but they can't "
 "return any value."
 msgstr ""
+"Функции, имеющие тип возврата **должны** возвращать правильное значение. Тип "
+"``void`` означает, что функция ничего не возвращает. Пустые функции могут "
+"возвращаться раньше с ключевым словом ``return``, но они не могут возвращать "
+"значения."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:723
 msgid ""
@@ -13161,10 +14041,16 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
+"Не пустые (Non-void) функции должны **всегда** возвращать значение, поэтому "
+"если в вашем коде есть ветвистые выражения (такие как конструкция ``if``/"
+"``else``), все возможные пути должны иметь ответвление. Например, если "
+"``return`` внутри блока ``if``, но не после него, то редактор выдаст ошибку, "
+"потому что если условие не будет выполнено, то функция не будет иметь "
+"действительного значения для возврата."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:731
 msgid "Referencing Functions"
-msgstr ""
+msgstr "Ссылочные функции"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
 msgid ""
@@ -13173,6 +14059,10 @@ msgid ""
 "another function or be returned from other functions. This is for "
 "performance reasons."
 msgstr ""
+"В отличие от Python, функции *не* являются объектами первого класса в "
+"GDScript. Это означает, что они не могут храниться в переменных, "
+"передаваться в качестве аргумента другой функции или возвращаться из других "
+"функций. Это все ради производительности."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:737
 msgid ""
@@ -13180,14 +14070,23 @@ msgid ""
 "or pass it to another function as an argument) one must use the ``call`` or "
 "``funcref`` helpers::"
 msgstr ""
+"Для обращения к функции по имени во время выполнения (например, для хранения "
+"ее в переменной или передачи другой функции в качестве аргумента) необходимо "
+"использовать помощники ``call`` или ``funcref``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:750
+#, fuzzy
 msgid ""
 "Remember that default functions, like  ``_init``, and most notifications, "
 "such as ``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, "
 "etc. are called in all base classes automatically. So there is only a need "
 "to call the function explicitly when overloading them in some way."
 msgstr ""
+"Помните, что функции по умолчанию, такие как  ``_init``, и большинство "
+"уведомлений (notifications), таких как ``_enter_tree``, ``_exit_tree``, "
+"``_process``, ``_physics_process`` и др. вызываются во всех базовых классах "
+"автоматически. Таким образом, существует необходимость только явного вызова "
+"функции при некоторой их перегрузке."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:758
 msgid "Static functions"
@@ -13199,10 +14098,13 @@ msgid ""
 "access to the instance member variables or ``self``. This is mainly useful "
 "to make libraries of helper functions:"
 msgstr ""
+"Функция может быть объявлена как статическая. Когда функция статична, она не "
+"имеет доступа к переменным, входящим в состав экземпляра, или к ``self``. "
+"Это в основном полезно для создания библиотек вспомогательных функций:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:771
 msgid "Statements and control flow"
-msgstr ""
+msgstr "Операторы и контроль потока"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:773
 msgid ""
@@ -13210,10 +14112,13 @@ msgid ""
 "structures, etc (see below). ``;`` as a statement separator is entirely "
 "optional."
 msgstr ""
+"Операторы являются стандартными и могут присваивать, вызовы функций, "
+"структуры управления потоком и т.д. (см. ниже). Разделитель ``;``  является "
+"абсолютно необязательным."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:778
 msgid "if/else/elif"
-msgstr ""
+msgstr "if/else/elif"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:780
 msgid ""
@@ -13222,22 +14127,32 @@ msgid ""
 "nature of the tab-based indentation, ``elif`` can be used instead of "
 "``else``/``if`` to maintain a level of indentation."
 msgstr ""
+"Простые условия создаются с помощью такого синтаксиса ``if``/``else``/"
+"``else``/``elif``. Скобки вокруг условий допускаются, но не требуются. "
+"Учитывая характер отступа на основе табуляции, можно использовать ``elif`` "
+"вместо ``else``/``if`` для сохранения уровня отступа."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:794
 msgid "Short statements can be written on the same line as the condition::"
 msgstr ""
+"Небольшое выражение может быть написано на той же строке, что и условие::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:801
 msgid ""
 "Sometimes you might want to assign a different initial value based on a "
 "boolean expression. In this case, ternary-if expressions come in handy::"
 msgstr ""
+"Иногда на основе логического выражения может потребоваться присвоить другое "
+"начальное значение. В этом случае могут пригодиться выражения тернарного if::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:810
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
 "using ``break`` or continued using ``continue``:"
 msgstr ""
+"Простые циклы создаются с помощью `` while``. Циклы могут быть разорваны с "
+"помощью команды ``break`` или продолжены (пропускается данная итерация) с "
+"помощью ``continue``:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:821
 msgid ""
@@ -13246,6 +14161,10 @@ msgid ""
 "loop variable. When iterating over a dictionary, the *index* is stored in "
 "the loop variable."
 msgstr ""
+"Чтобы итерировать заданный диапазон, например, массив или таблицу, "
+"используется цикл *for*. При итерации над массивом элемент текущего массива "
+"хранится в переменной цикла. При итерации по словарю в переменной цикла "
+"хранится *индекс*."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:850
 msgid ""
@@ -13253,36 +14172,41 @@ msgid ""
 "equivalent of the ``switch`` statement found in many other languages, but "
 "offers some additional features."
 msgstr ""
+"Оператор ``match`` используется для ветвления. Это эквивалентно оператору "
+"``switch``, встречающемуся на многих других языках, но ``match`` предлагает "
+"некоторые дополнительные возможности."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:853
 msgid "Basic syntax:"
-msgstr ""
+msgstr "Основной синтаксис:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:866
 msgid "**Crash-course for people who are familiar with switch statements**:"
-msgstr ""
+msgstr "**Ускоренный курс для людей, знакомых с правилами switch**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
 msgid "Replace ``switch`` with ``match``"
-msgstr ""
+msgstr "Замените ``switch`` на ``match``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:869
 msgid "Remove ``case``"
-msgstr ""
+msgstr "Уберите ``case``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
 msgid ""
 "Remove any ``break``s. If you don't want to ``break`` by default, you can "
 "use ``continue`` for a fallthrough."
 msgstr ""
+"Удалите все ``break``. Если вы не хотите чтобы ``break`` был по умолчанию, "
+"вы можете использовать ``continue`` для продолжения проверки."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:871
 msgid "Change ``default`` to a single underscore."
-msgstr ""
+msgstr "Смените ``default`` на единичное подчеркивание."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:874
 msgid "**Control flow**:"
-msgstr ""
+msgstr "**Управление потоком**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:876
 msgid ""
@@ -13292,122 +14216,154 @@ msgid ""
 "use ``continue`` to stop execution in the current block and check the ones "
 "below it."
 msgstr ""
+"Шаблоны проверяются сверху вниз. Если шаблон совпадает с значением, то будет "
+"выполнен соответствующий блок. После этого исполнение продолжится ниже "
+"оператора ``match`` (то есть другие варианты пропускаются). Если вы хотите "
+"продолжить проверку, вы можете использовать ``continue`` для остановки "
+"исполнения в текущем блоке и проверки тех, что ниже него."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:880
 msgid "There are 6 pattern types:"
-msgstr ""
+msgstr "Существует 6 типов шаблонов:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:892
 msgid "constant pattern"
-msgstr ""
+msgstr "постоянный (константный) шаблон"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:883
 msgid "constant primitives, like numbers and strings ::"
-msgstr ""
+msgstr "постоянные (константные) примитивы, такие как числа и строки ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:904
 msgid "variable pattern"
-msgstr ""
+msgstr "переменный шаблон"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:895
+#, fuzzy
 msgid "matches the contents of a variable/enum ::"
-msgstr ""
+msgstr "подбор содержимого переменной/перечисления(enum) ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:918
 msgid "wildcard pattern"
-msgstr ""
+msgstr "шаблон подстановки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:907
+#, fuzzy
 msgid "This pattern matches everything. It's written as a single underscore."
 msgstr ""
+"Этот шаблон всегда что-то найдет. Это пишется как единичное подчёркивание."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:909
 msgid ""
 "It can be used as the equivalent of the ``default`` in a ``switch`` "
 "statement in other languages. ::"
 msgstr ""
+"Он может быть использован как эквивалент выражения ``default`` в выражении "
+"``switch`` на других языках. ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:931
 msgid "binding pattern"
-msgstr ""
+msgstr "шаблон привязки"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:921
+#, fuzzy
 msgid ""
 "A binding pattern introduces a new variable. Like the wildcard pattern, it "
 "matches everything - and also gives that value a name. It's especially "
 "useful in array and dictionary patterns. ::"
 msgstr ""
+"Шаблон привязки вводит новую переменную. Как и шаблон подстановки, он "
+"соответствует всему, а также присваивает этому значению имя. Это особенно "
+"полезно в шаблонах массивов и словарей. ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:950
 msgid "array pattern"
-msgstr ""
+msgstr "шаблон массива"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:934
+#, fuzzy
 msgid ""
 "matches an array. Every single element of the array pattern is a pattern "
 "itself, so you can nest them."
 msgstr ""
+"ищет совпадение с массивом. Каждый отдельный элемент шаблона массива "
+"представляет собой сам шаблон, так что вы можете разместить их."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:936
 msgid ""
 "The length of the array is tested first, it has to be the same size as the "
 "pattern, otherwise the pattern doesn't match."
 msgstr ""
+"Сначала проверяется длина массива, она должна быть того же размера, что и "
+"шаблон, в противном случае шаблон не совпадет."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:938
+#, fuzzy
 msgid ""
 "**Open-ended array**: An array can be bigger than the pattern by making the "
 "last subpattern ``..``"
 msgstr ""
+"**Открытый массив**: Массив может быть больше, чем массив, создавая "
+"последнюю подшаблонку ``..``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:940
 msgid "Every subpattern has to be comma separated. ::"
-msgstr ""
+msgstr "Каждый подшаблон должен быть разделен запятыми. ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:975
+#, fuzzy
 msgid "dictionary pattern"
-msgstr ""
+msgstr "шаблон словаря"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:953
 msgid ""
 "Works in the same way as the array pattern. Every key has to be a constant "
 "pattern."
 msgstr ""
+"Работает так же, как и шаблон массива. Каждый ключ должен быть постоянным "
+"шаблоном (constant pattern)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:955
 msgid ""
 "The size of the dictionary is tested first, it has to be the same size as "
 "the pattern, otherwise the pattern doesn't match."
 msgstr ""
+"Сначала проверяется размер словаря, он должен быть того же размера, что и "
+"шаблон, в противном случае шаблон не совпадет."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:957
 msgid ""
 "**Open-ended dictionary**: A dictionary can be bigger than the pattern by "
 "making the last subpattern ``..``"
 msgstr ""
+"**Открытый словарь**: Словарь может быть больше шаблона, если сделать "
+"последний подшаблоном - ``..``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:959
 msgid "Every subpattern has to be comma separated."
-msgstr ""
+msgstr "Каждый подшаблон должен быть разделен запятыми."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:961
 msgid ""
 "If you don't specify a value, then only the existence of the key is checked."
-msgstr ""
+msgstr "Если вы не указываете значение, то проверяется только наличие ключа."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:963
 msgid "A value pattern is separated from the key pattern with a ``:`` ::"
-msgstr ""
+msgstr "Шаблон значения отделяется от шаблона ключа символом ``:`` ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:986
+#, fuzzy
 msgid "Multipatterns:"
-msgstr ""
+msgstr "Множественный шаблон:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:978
 msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them. ::"
 msgstr ""
+"Также можно указать несколько разных шаблонов, разделенных запятой. Эти "
+"шаблоны не должны иметь никаких привязок в них. ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:989
 msgid "Classes"
@@ -13419,6 +14375,9 @@ msgid ""
 "reference them using the file's path, using either a relative or an absolute "
 "path. For example, if you name a script file ``character.gd``"
 msgstr ""
+"По умолчанию, все файлы скриптов это классы без имен. В этом случае вы "
+"можете ссылаться на них только по пути файла, с помощью относительного или "
+"абсолютного пути. Например, если вы назовете файл скрипта ``character.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1006
 msgid ""
@@ -13427,12 +14386,18 @@ msgid ""
 "optional comma followed by a path to an image, to use it as an icon. Your "
 "class will then appear with its new icon in the editor:"
 msgstr ""
+"Вместо этого, вы можете дать вашему классу имя, чтобы зарегистрировать его "
+"как новый тип в редакторе Godot. Для этого используйте ключевое слово "
+"'class_name'. Также Вы можете, добавить запятую с указанием пути к "
+"изображению, чтобы использовать ее в качестве иконки. Ваш класс появится с "
+"этим значком в редакторе:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1021
 msgid "Here's a class file example:"
-msgstr ""
+msgstr "Вот пример файла класса:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1040
+#, fuzzy
 msgid ""
 "Godot's class syntax is compact: it can only contain member variables or "
 "functions. You can use static functions, but not static member variables. In "
@@ -13441,6 +14406,12 @@ msgid ""
 "of thread safety, since scripts can be initialized in separate threads "
 "without the user knowing."
 msgstr ""
+"Синтаксис класса в Godot компактен: он может содержать только внутренние "
+"переменные или функции. Вы можете использовать статические функции, но не "
+"статические внутренние переменные. Таким же образом, движок инициализирует "
+"переменные каждый раз, когда вы создаете экземпляр, и это включает массивы и "
+"словари. Это ради безопасности потока, так как скрипты могут быть "
+"инициализированы в отдельных потоках без ведома пользователя."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1048
 msgid "Inheritance"
@@ -13484,6 +14455,8 @@ msgid ""
 "To call a function in a *base class* (i.e. one ``extend``-ed in your current "
 "class), prepend ``.`` to the function name:"
 msgstr ""
+"Для вызова функции в *базовом классе* (т.е. функции ``extend`` (расширения) "
+"в текущем классе), добавьте ``.`` к имени функции:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1093
 msgid ""
@@ -13491,6 +14464,10 @@ msgid ""
 "functions with the same name in their base classes. So if you still want to "
 "call them, you can use ``.`` like the ``super`` keyword in other languages:"
 msgstr ""
+"Это особенно полезно, так как функции при расширении классов заменяют "
+"одноименные функции в своих базовых классах. Так что если вы все еще хотите "
+"обратится к ним, вы можете использовать ``.`` как ключевое слово ``super`` в "
+"других языках:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1103
 msgid "Class Constructor"
@@ -13534,40 +14511,57 @@ msgid ""
 "gd``) *has* to define ``_init`` as well and pass appropriate parameters to "
 "``_init`` from ``State.gd``"
 msgstr ""
+"если унаследованный класс (``State.gd``) определяет конструктор ``_init``, "
+"который принимает аргументы (в данном случае ``e``), то наследованный класс  "
+"(``Idle.gd``) также должен определить ``_init`` и передать соответствующие "
+"параметры в этот ``_init`` из ``State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1144
 msgid ""
 "``Idle.gd`` can have a different number of arguments than the base class "
 "``State.gd``"
 msgstr ""
+"Количество аргументов в ``Idle.gd`` может отличаться от количества "
+"аргументов в базовом классе ``State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1145
 msgid ""
 "in the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
 msgstr ""
+"в приведенном выше примере, ``e``, переданный конструктору ``State.gd`` "
+"является тем же ``e`` переданным в ``Idle.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1147
+#, fuzzy
 msgid ""
 "if ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
 "pass some value to the ``State.gd`` base class even if it does nothing. "
 "Which brings us to the fact that you can pass literals in the base "
 "constructor as well, not just variables. Eg.:"
 msgstr ""
+"если конструктор ``_init`` в ``Idle.gd`` принимает ноль аргументов, то ему "
+"все равно нужно передать некоторое значение в базовый класс ``State.gd``, "
+"даже если он ничего не делает. Что подводит нас к тому, что литералы можно "
+"передавать не только переменным, но и в базовом конструкторе. Например.:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1159
 msgid "Inner classes"
-msgstr ""
+msgstr "Внутренние классы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1161
 msgid ""
 "A class file can contain inner classes. Inner classes are defined using the "
 "``class`` keyword. They are instanced using the ``ClassName.new()`` function."
 msgstr ""
+"Файл класса может хранить внутренние классы. Внутренние классы определяются "
+"с помощью ключевого слова ``class``. Создать экземпляр можно с помощью "
+"функции ``ClassName.new()``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1181
+#, fuzzy
 msgid "Classes as resources"
-msgstr ""
+msgstr "Классы как ресурсы"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1183
 msgid ""
@@ -13577,10 +14571,15 @@ msgid ""
 "of a loaded class resource is done by calling the ``new`` function on the "
 "class object::"
 msgstr ""
+"Классы, хранящиеся в файлах, рассматриваются как :ref:`ресурсы "
+"<class_GDScript>`. Они должны быть загружены с диска для доступа к ним в "
+"других классах. Это делается с помощью функций ``load`` или ``preload``  "
+"(см. ниже). Создание экземпляра загруженного ресурса класса осуществляется "
+"вызовом функции ``new`` на объекте класса::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1199
 msgid "Exports"
-msgstr ""
+msgstr "Экспорт"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1201
 msgid ""
@@ -13589,12 +14588,21 @@ msgid ""
 "to. They will also be available for editing in the property editor. "
 "Exporting is done by using the ``export`` keyword::"
 msgstr ""
+"Члены класса (переменные и тд) могут быть экспортированы. Это означает, что "
+"их значение сохраняется вместе с ресурсом (например, :ref:`сцена "
+"<class_PackedScene>`), к которому они прикреплены. Они также будут доступны "
+"для редактирования свойств в редакторе (инспекторе). Экспорт осуществляется "
+"с помощью ключевого слова ``export``::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1210
+#, fuzzy
 msgid ""
 "An exported variable must be initialized to a constant expression or have an "
 "export hint in the form of an argument to the export keyword (see below)."
 msgstr ""
+"Экспортируемая переменная должна быть инициализирована в постоянное "
+"выражение (Константу) или иметь подсказку на экспорт в виде аргумента к "
+"ключевому слову экспорта (см. ниже)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1213
 msgid ""
@@ -13603,16 +14611,24 @@ msgid ""
 "designers can modify values that later influence how the program runs. For "
 "this, a special export syntax is provided."
 msgstr ""
+"Одним из фундаментальных преимуществ экспорта переменных (членов класса) "
+"является то, что они видны и редактируются в редакторе. Таким образом, "
+"художники и гейм-дизайнеры могут изменять значения, которые впоследствии "
+"будут влиять на работу программы. Для этого предусмотрен специальный "
+"синтаксис экспорта."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1299
 msgid ""
 "It must be noted that even if the script is not being run while at the "
 "editor, the exported properties are still editable (see below for \"tool\")."
 msgstr ""
+"Следует отметить, что даже если во время работы в редакторе скрипт не "
+"выполняется, экспортируемые свойства все равно можно редактировать (см. ниже "
+"слово \"tool\")."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1304
 msgid "Exporting bit flags"
-msgstr ""
+msgstr "Экспорт битовых флагов"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1306
 msgid ""
@@ -13620,6 +14636,9 @@ msgid ""
 "values in one property. By using the export hint ``int, FLAGS``, they can be "
 "set from the editor:"
 msgstr ""
+"Целые числа, используемые в качестве битовых флагов, могут хранить несколько "
+"``true``/``false`` (булевых) значений в одном свойстве. Используя подсказку "
+"экспорта ``int, FLAGS``, их можно настроить в редакторе:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1315
 msgid ""
@@ -19176,9 +20195,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:106
-#, fuzzy
 msgid "Create a script like this:"
-msgstr "В итоге сценарий должен выглядеть так:"
+msgstr "Создайте скрипт похожий на:"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:117
 msgid ""
@@ -52657,9 +53675,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:100
-#, fuzzy
 msgid "Starting VR"
-msgstr "Написание сценариев (скриптов)"
+msgstr "Запуск VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:102
 msgid ""
@@ -62625,9 +63642,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:179
-#, fuzzy
 msgid "The final module should look like this:"
-msgstr "В итоге сценарий должен выглядеть так:"
+msgstr "В итоге скрипт должен выглядеть так:"
 
 #: ../../docs/development/cpp/binding_to_external_libraries.rst:208
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
@@ -66692,8 +67708,8 @@ msgid ""
 "Note that some of these channels are run and moderated by members of the "
 "Godot community or third parties."
 msgstr ""
-"Обратите внимание, что некоторые из этих каналов управляются и модератором "
-"членов сообщества Годо или третьих лиц"
+"Обратите внимание, что некоторые из этих каналов управляются и модерируются "
+"членами сообщества Godot или третьими лицами."
 
 #: ../../docs/community/channels.rst:10
 msgid ""
@@ -66826,16 +67842,20 @@ msgid ""
 "`Game from Scratch: Godot 3 Tutorial Series <https://www.youtube.com/watch?"
 "v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 msgstr ""
+"`Game from Scratch: Godot 3 Tutorial Series <https://www.youtube.com/watch?"
+"v=iDEcP8Mc-7s&list=PLS9MbmO_ssyDk79j9ewONxV88fD5e_o5d>`_"
 
 #: ../../docs/community/tutorials.rst:14
 msgid ""
 "`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
 "m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
 msgstr ""
+"`HeartBeast <https://www.youtube.com/watch?v=wETY5_9kFtA&list=PL9FzW-"
+"m48fn2jlBu_0DRh7PvAt-GULEmd>`_"
 
 #: ../../docs/community/tutorials.rst:15
 msgid "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
-msgstr ""
+msgstr "`Steincodes <https://www.youtube.com/c/steincodes/playlists>`_"
 
 #: ../../docs/community/resources.rst:6
 msgid ""
@@ -66843,13 +67863,15 @@ msgid ""
 "of interest."
 msgstr ""
 "Это список сторонних ресурсов, созданных сообществом, которые могут "
-"представлять интерес"
+"представлять интерес."
 
 #: ../../docs/community/resources.rst:11
 msgid ""
 "`awesome-godot: A curated list of resources by Calinou <https://github.com/"
 "Calinou/awesome-godot>`_"
 msgstr ""
+"`awesome-godot: Курируемый список ресурсов от Calinou <https://github.com/"
+"Calinou/awesome-godot>`_"
 
 #: ../../docs/community/resources.rst:12
 msgid ""
