@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,9 @@ msgstr "尾椎骨骼"
 msgid ""
 "Armature object in Blender is exported as a Skeleton node along with rest "
 "position (transform in Godot) of bones."
-msgstr ""
-"Blender中的骨架对象与骨骼的静止位置（Godot变换）一起导出为Skeleton节点。"
+msgstr "Blender中的骨架对象与骨骼的静止位置(Godot变换)一起导出为Skeleton节点。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
-#, fuzzy
 msgid ""
 "The three check boxes :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:"
 "`Local Location` (colored in red) must be ticked when building armature in "
@@ -41,7 +39,7 @@ msgid ""
 "and Godot"
 msgstr ""
 "三个复选框 :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:`Local "
-"Location` （红色）必须在Blender中构建骨架时勾选，以便导出的骨骼变换一致 在"
+"Location` (红色)必须在Blender中构建骨架时勾选，以便导出的骨骼变换一致 在"
 "Blender和Godot之间"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:19
@@ -49,7 +47,6 @@ msgid "Bone Weights"
 msgstr "骨骼权重"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
-#, fuzzy
 msgid ""
 "Blender put rigged mesh vertices which has no bone weights at its original "
 "position, but these vertices would be placed at (0, 0, 0) in Godot, making "
@@ -57,15 +54,14 @@ msgid ""
 "vertex with no bone weights detected in a rigged mesh."
 msgstr ""
 "Blender放置了在其原始位置没有骨骼权重的装配网格顶点，但是这些顶点将放置在"
-"Godot中的（0,0,0）处，这使得网格变形。 因此，导出器会在绑定网格中检测到任何无"
-"骨骼权重顶点时引发错误。"
+"Godot中的 (0, 0, 0) 处，这使得网格变形。 因此，导出器会在绑定网格中检测到任何"
+"无骨骼权重顶点时引发错误。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"
 msgstr "非变形骨骼"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
-#, fuzzy
 msgid ""
 "Note that the non-deform bone can be configured as not exported by enabling "
 "the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
@@ -79,7 +75,6 @@ msgid "Bone Attachment"
 msgstr "骨附件"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
-#, fuzzy
 msgid ""
 "A bone can be the parent of an object in Blender; this relation is exported "
 "as a BoneAttachment node in the Godot scene."

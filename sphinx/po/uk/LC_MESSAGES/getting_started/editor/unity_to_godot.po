@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -478,9 +478,15 @@ msgid "Glossary correspondence"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
-msgid ""
-"GameObject -> Node Add a component -> Inheriting Prefab -> Externalized "
-"branch"
+msgid "GameObject -> Node"
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:198
+msgid "Add a component -> Inheriting"
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:199
+msgid "Prefab -> Externalized branch"
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
@@ -553,7 +559,8 @@ msgid ""
 "You can control nodes by accessing them using a script and calling functions "
 "(built-in or user-defined) on them. But there's more: You can also place "
 "them in a group and call a function on all nodes contained in this group! "
-"This is explained in :ref:`this page <doc_scripting_continued>`."
+"This is explained in the :ref:`scripting documentation "
+"<doc_scripting_continued>`."
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
@@ -561,13 +568,12 @@ msgid ""
 "But there's more! Certain nodes throw signals when certain actions happen. "
 "You can connect these signals to call a specific function when they happen. "
 "Note that you can define your own signals and send them whenever you want. "
-"This feature is documented `here <../scripting/gdscript/gdscript_basics."
-"html#signals>`_."
+"See the :ref:`signals documentation <doc_gdscript_signals>` for details."
 msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
 #, fuzzy
-msgid "Script Serialization"
+msgid "Script serialization"
 msgstr "Дублювати анімацію"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
@@ -591,12 +597,11 @@ msgid ""
 "Godot also has a built-in script serialization system, but it works only "
 "explicitly. You can serialize any serializable type (:ref:`built-in and "
 "various engine types <doc_binary_serialization_api>`, including :ref:"
-"`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. "
-"This workflow is explained `here <../scripting/gdscript/gdscript_basics."
-"html#exports>`_."
+"`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. See "
+"the :ref:`exports documentation <doc_gdscript_exports>` for details."
 msgstr ""
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:254
+#: ../../docs/getting_started/editor/unity_to_godot.rst:255
 msgid ""
 "Unity also has a data type called ``ScriptableObject`` used to serialize "
 "custom asset objects. Its equivalent in Godot is the base class for all "
@@ -605,11 +610,11 @@ msgid ""
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:259
+#: ../../docs/getting_started/editor/unity_to_godot.rst:260
 msgid "Using Godot in C++"
 msgstr ""
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:261
+#: ../../docs/getting_started/editor/unity_to_godot.rst:262
 msgid ""
 "For your information, Godot also allows you to develop your project directly "
 "in C++ by using its API, which is not possible with Unity at the moment. As "
@@ -617,7 +622,7 @@ msgid ""
 "++ using Godot API."
 msgstr ""
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:263
+#: ../../docs/getting_started/editor/unity_to_godot.rst:264
 msgid ""
 "If you are interested in using Godot in C++, you may want to start reading "
 "the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,9 +43,9 @@ msgid ""
 "Reinventing the wheel for those is not fun, as it makes code more difficult "
 "to read."
 msgstr ""
-"Godot使用标准的C98数据类型，例如``uint8_t``，``uint32_t``，``int64_t``等，现"
-"在每个编译器都支持这些数据类型。 为那些重新发明轮子并不好玩，因为它使代码更难"
-"以阅读。"
+"Godot使用标准的C98数据类型，例如 ``uint8_t`` ，``uint32_t``， ``int64_t`` "
+"等，现在每个编译器都支持这些数据类型。 为那些重新发明轮子并不好玩，因为它使代"
+"码更难以阅读。"
 
 #: ../../docs/development/cpp/core_types.rst:20
 msgid ""
@@ -56,14 +56,14 @@ msgid ""
 "code more readable too."
 msgstr ""
 "通常，除非使用大型结构或数组，否则不要小心使用给定任务的最有效数据类型。 除非"
-"必要，否则``int``用于大多数代码。 这样做是因为现在每个设备至少具有32位总线并"
-"且可以在一个周期中执行这样的操作。 它使代码更具可读性。"
+"必要，否则 ``int`` 用于大多数代码。 这样做是因为现在每个设备至少具有32位总线"
+"并且可以在一个周期中执行这样的操作。 它使代码更具可读性。"
 
 #: ../../docs/development/cpp/core_types.rst:26
 msgid ""
 "For files or memory sizes, ``size_t`` is used, which is warranted to be 64 "
 "bits."
-msgstr "对于文件或内存大小，使用``size_t``，保证为64位。"
+msgstr "对于文件或内存大小，使用 ``size_t`` ，保证为64位。"
 
 #: ../../docs/development/cpp/core_types.rst:29
 msgid ""
@@ -107,8 +107,8 @@ msgid ""
 "(like mobile or consoles) are in general more limited."
 msgstr ""
 "PC有一个很棒的架构。计算机通常具有数十亿字节的RAM，数TB的存储空间，和千兆赫兹"
-"的处理器，当应用程序需要更多资源时，操作系统将交换出不活动的资源。其他架构"
-"（如移动设备或游戏主机）在这方面通常有很多限制。"
+"的处理器，当应用程序需要更多资源时，操作系统将交换出不活动的资源。其他架构(如"
+"移动设备或游戏主机)在这方面通常有很多限制。"
 
 #: ../../docs/development/cpp/core_types.rst:47
 msgid ""
@@ -142,10 +142,10 @@ msgid ""
 "other words, leave 10-20% of your memory free and perform all small "
 "allocations and you are fine."
 msgstr ""
-"然而，许多的研究和测试显示出，在给出足够内存的情况下，如果实际最大分配尺寸，"
-"与堆的最大尺寸比较，所占比例低于一个阈值，或者说内存中还有一定比例未使用内存"
+"然而，许多的研究和测试显示出，在给出足够内存的情况下，如果实际最大分配大小，"
+"与堆的最大大小比较，所占比例低于一个阈值，或者说内存中还有一定比例未使用内存"
 "时，堆被切分这件事就不会随着时间的推移成为问题。换句话说，留出10-20％的内存空"
-"间，再执行小额内存分配，你也没事。"
+"间，再执行小额内存分配，您也没事。"
 
 #: ../../docs/development/cpp/core_types.rst:65
 msgid ""
@@ -157,10 +157,10 @@ msgid ""
 "rearranged and compacted on demand. Depending on the need of the game, the "
 "programmer can configure the dynamic memory pool size."
 msgstr ""
-"Godot确保所有的可动态分配的对象都很小（最多不到几kb）。但是如果出现很大的分配"
-"（像图像、网格几何数据或大数组），会怎样呢？在这种情况下，Godot可以选择使用动"
-"态内存池。内存会被锁定以进行访问操作；如果内存不足，则内存池会根据需要进行重"
-"新排列和压缩。根据游戏的需要，程序员可以配置动态内存池的尺寸。"
+"Godot确保所有的可动态分配的对象都很小(最多不到几kb)。但是如果出现很大的分配"
+"(像图像、网格几何数据或大数组)，会怎样呢？在这种情况下，Godot可以选择使用动态"
+"内存池。内存会被锁定以进行访问操作；如果内存不足，则内存池会根据需要进行重新"
+"排列和压缩。根据游戏的需要，程序员可以配置动态内存池的大小。"
 
 #: ../../docs/development/cpp/core_types.rst:74
 msgid "Allocating memory"
@@ -173,11 +173,11 @@ msgid ""
 "used. Instead, a few other ones are provided."
 msgstr ""
 "Godot有许多工具可用于跟踪游戏中的内存使用情况，尤其是在调试期间。因此，不应使"
-"用常规的C和C++库调用。相反，Godot提供了一些其它的供你使用。"
+"用常规的C和C++库调用。相反，Godot提供了一些其它的供您使用。"
 
 #: ../../docs/development/cpp/core_types.rst:80
 msgid "For C-style allocation, Godot provides a few macros:"
-msgstr "Godot提供了一些宏可以用来处理C风格的内存分配："
+msgstr "Godot提供了一些宏可以用来处理C风格的内存分配:"
 
 #: ../../docs/development/cpp/core_types.rst:88
 msgid ""
@@ -187,7 +187,7 @@ msgstr "这些等同于通常的malloc，realloc，不含标准C库。"
 
 #: ../../docs/development/cpp/core_types.rst:91
 msgid "For C++-style allocation, special macros are provided:"
-msgstr "这些宏可以用来处理C++风格的内存分配："
+msgstr "这些宏可以用来处理C++风格的内存分配:"
 
 #: ../../docs/development/cpp/core_types.rst:101
 msgid "which are equivalent to new, delete, new[] and delete[]."
@@ -207,14 +207,14 @@ msgid ""
 "standard vector class, and is very similar to vector in the C++ standard "
 "library. To create a PoolVector buffer, use this:"
 msgstr ""
-"对于动态内存，提供了PoolVector <>模板。 PoolVector是一个标准的矢量类，与C +"
-"+标准库中的vector非常相似。 要创建PoolVector缓冲区，请使用以下命令："
+"对于动态内存，提供了PoolVector <>模板。 PoolVector是一个标准的向量类，与C++标"
+"准库中的vector非常相似。 要创建PoolVector缓冲区，请使用以下命令:"
 
 #: ../../docs/development/cpp/core_types.rst:114
 msgid ""
 "PoolVector can be accessed using the [] operator and a few helpers exist for "
 "this:"
-msgstr "可以使用[]运算符访问PoolVector，并且存在一些帮助："
+msgstr "可以使用[]运算符访问PoolVector，并且存在一些帮助:"
 
 #: ../../docs/development/cpp/core_types.rst:126
 msgid ""
@@ -224,8 +224,8 @@ msgid ""
 "amount of accesses."
 msgstr ""
 "这些操作允许从PoolVectors快速读/写并保持锁定直到它们超出范围。 但是，"
-"PoolVectors应该用于小型动态内存操作，因为read（）和write（）对于大量访问来说"
-"太慢了。"
+"PoolVectors应该用于小型动态内存操作，因为read()和write()对于大量访问来说太慢"
+"了。"
 
 #: ../../docs/development/cpp/core_types.rst:134
 msgid ""
@@ -249,7 +249,7 @@ msgstr "容器"
 
 #: ../../docs/development/cpp/core_types.rst:140
 msgid "Godot provides also a set of common containers:"
-msgstr "Godot 还提供了一系列通用的容器："
+msgstr "Godot 还提供了一系列通用的容器:"
 
 #: ../../docs/development/cpp/core_types.rst:142
 msgid "Vector"
@@ -274,12 +274,12 @@ msgid ""
 "symbols and code. List, Set and Map can be iterated using pointers, like "
 "this:"
 msgstr ""
-"它们很简单，旨在尽可能小，因为C ++中的模板经常被内联，并且在调试符号和代码中"
-"使二进制大小更加丰富。 可以使用指针迭代List，Set和Map，如下所示："
+"它们很简单，旨在尽可能小，因为C++中的模板经常被内联，并且在调试符号和代码中使"
+"二进制大小更加丰富。 可以使用指针迭代List，Set和Map，如下所示:"
 
 #: ../../docs/development/cpp/core_types.rst:158
 msgid "The Vector<> class also has a few nice features:"
-msgstr "使用Vector<> 类有这些好处："
+msgstr "使用Vector<> 类有这些好处:"
 
 #: ../../docs/development/cpp/core_types.rst:160
 msgid ""
@@ -333,7 +333,7 @@ msgid ""
 "visualization."
 msgstr ""
 "Godot 还提供了一个字符串类 String。 这个类有丰富的功能，支持 Unicode 字符"
-"集。 还提供了一些通用的辅助功能（utf8 解析等）。"
+"集。 还提供了一些通用的辅助功能(utf8 解析等)。"
 
 #: ../../docs/development/cpp/core_types.rst:184
 msgid ""

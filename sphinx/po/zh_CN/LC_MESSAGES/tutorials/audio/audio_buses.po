@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,8 +37,8 @@ msgid ""
 msgstr ""
 "从Godot 3.0开始，音频引擎已经从头开始重写。 现在的目标是为声音设计专业人士提"
 "供一个更友好的界面。 为实现这一目标，音频引擎包含一个虚拟机架，可以在其中创建"
-"无限制的音频总线，并且可以在每个虚拟机架上添加无限量的效果处理器（或者更多，"
-"例如，只要您的CPU保持稳定！）"
+"无限制的音频总线，并且可以在每个虚拟机架上添加无限量的效果处理器(或者更多，例"
+"如，只要您的CPU保持稳定！)"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:16
 msgid ""
@@ -48,13 +48,14 @@ msgstr ""
 "Godot中的实现非常高效，完全是从头开始编写的，不依赖于任何现有的音频库。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:19
+#, fuzzy
 msgid ""
 "Even the effect processors were written exclusively for Godot (save for the "
-"pitch shifting library), with games in mind. This allows a efficient "
+"pitch shifting library), with games in mind. This allows an efficient "
 "tradeoff between performance and sound quality."
 msgstr ""
-"即使是效果处理器也是专为Godot编写的（除了音高变换库），考虑到游戏。 这允许在"
-"性能和声音质量之间进行有效的权衡。"
+"即使是效果处理器也是专为Godot编写的(除了音高变换库)，考虑到游戏。 这允许在性"
+"能和声音质量之间进行有效的权衡。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:24
 msgid "Decibel scale"
@@ -71,7 +72,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:30
 msgid "For those unfamiliar with it, it can be explained with a few facts:"
-msgstr "对于那些不熟悉它的人，可以用一些事实来解释："
+msgstr "对于那些不熟悉它的人，可以用一些事实来解释:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:32
 msgid ""
@@ -79,8 +80,8 @@ msgid ""
 "power by using 10 times the base 10 logarithm of the ratio (10×log\\ :sub:"
 "`10`\\ (P/P\\ :sub:`0`\\ ))."
 msgstr ""
-"分贝（dB）标度是相对标度。 它表示声功率的比例，使用10倍于基数10的对数比 "
-"(10×log\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ )) 。"
+"分贝(dB)标度是相对标度。 它表示声功率的比例，使用10倍于基数10的对数比 (10×log"
+"\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ )) 。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:33
 msgid ""
@@ -92,24 +93,25 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:34
 msgid ""
 "Since the scale is logarithmic, true zero (no audio) can't be represented."
-msgstr "由于比例是对数的，因此无法表示真零（无音频）。"
+msgstr "由于比例是对数的，因此无法表示真零(无音频)。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:35
+#, fuzzy
 msgid ""
 "0dB is considered the maximum audible volume without *clipping*. This limit "
-"is not the human limit but a limit from the sound hardware. Your sound "
+"is not the human limit, but a limit from the sound hardware. Your sound "
 "output simply can't output any sound louder than 0dB without distorting it "
 "(clipping it)."
 msgstr ""
 "0dB被认为是没有 *裁剪* 的最大可听音量。 此限制不是人为限制，而是声音硬件的限"
-"制。 您的声音输出根本无法输出任何大于0dB的声音而不会扭曲它（削减它）。"
+"制。 您的声音输出根本无法输出任何大于0dB的声音而不会扭曲它(削减它)。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:36
 msgid ""
 "Because of the above, your sound mix should work in a way where the sound "
 "output of the *Master Bus* (more on that later), should never be above 0dB."
 msgstr ""
-"由于上述原因，您的声音混音应该以 *Master Bus* 的声音输出（稍后更多）的方式工"
+"由于上述原因，您的声音混音应该以 *Master Bus* 的声音输出(稍后更多)的方式工"
 "作，不应超过0dB。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:37
@@ -138,8 +140,9 @@ msgstr ""
 "这可能需要一点时间习惯，但它最终会更友好，并允许您与音频专业人士更好地沟通。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:45
-msgid "Audio buses can be found in the bottom panel of Godot Editor:"
-msgstr "音频总线可以在Godot Editor的底部面板中找到："
+#, fuzzy
+msgid "Audio buses can be found in the bottom panel of the Godot Editor:"
+msgstr "音频总线可以在Godot Editor的底部面板中找到:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:49
 msgid ""
@@ -148,9 +151,9 @@ msgid ""
 "*re-routed*. A VU meter (the bars that go up and down when sound is played) "
 "can measure the loudness of the sound in Decibel scale."
 msgstr ""
-"*音频总线* 总线（通常也称为 *音频通道* ）是一种音频通道的设备。 音频数据通过"
-"它，可以 *修改* 和 *重新路由* 。 VU表（播放声音时上下的条）可以以分贝刻度测量"
-"声音的响度。"
+"*音频总线* 总线(通常也称为 *音频通道* )是一种音频通道的设备。 音频数据通过"
+"它，可以 *修改* 和 *重新路由* 。 VU表(播放声音时上下的条)可以以分贝刻度测量声"
+"音的响度。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:51
 msgid ""
@@ -162,12 +165,13 @@ msgid ""
 "to left without exception as this avoids creating infinite routing loops!"
 msgstr ""
 "最左边的总线是 *Master Bus* 。 此总线将混音输出到您的扬声器，因此，如上面的项"
-"目（分贝音阶）中所述，请确保您的混音在此总线中很少或永远不会超过0dB。 其余的"
-"音频总线用于 *路由* 。 这意味着，在修改声音后，他们必须将它发送到左边的另一辆"
-"公共汽车。 路由总是从右到左无一例外，因为这可以避免创建无限的路由循环！"
+"目(分贝音阶)中所述，请确保您的混音在此总线中很少或永远不会超过0dB。 其余的音"
+"频总线用于 *路由* 。 这意味着，在修改声音后，他们必须将它发送到左边的另一辆公"
+"共汽车。 路由总是从右到左无一例外，因为这可以避免创建无限的路由循环！"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:57
-msgid "In the above image, *Bus 2* is routing its output to *Master* bus."
+#, fuzzy
+msgid "In the above image, *Bus 2* is routing its output to the *Master* bus."
 msgstr "在上图中，* Bus 2* 将其输出路由到 *Master* 总线。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:60
@@ -180,10 +184,11 @@ msgid ""
 "AudioStream and select a target bus for playback:"
 msgstr ""
 "要测试回放到总线，请创建AudioStreamPlayer节点，加载AudioStream并选择要回放的"
-"目标总线："
+"目标总线:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:66
-msgid "Finally toggle the \"playing\" property to on and sound will flow."
+#, fuzzy
+msgid "Finally, toggle the \"playing\" property to on and sound will flow."
 msgstr "最后将“播放”属性切换为开启，声音将流动。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:68
@@ -203,7 +208,7 @@ msgstr "音频总线可以包含各种效果。 这些效果以某种方式修�
 
 #: ../../docs/tutorials/audio/audio_buses.rst:77
 msgid "Following is a short description of available effects:"
-msgstr "以下是可用效果的简短描述："
+msgstr "以下是可用效果的简短描述:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:80
 msgid "Amplify"
@@ -252,17 +257,19 @@ msgid ""
 "the least possible (when sound goes over 0dB)."
 msgstr ""
 "动态范围压缩器的目的是当幅度超过分贝的某个阈值时降低声音的水平。 压缩器的主要"
-"用途之一是增加动态范围，同时尽可能地削减（当声音超过0dB时）。"
+"用途之一是增加动态范围，同时尽可能地削减(当声音超过0dB时)。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:100
-msgid "Compressor has may uses in the mix, for example:"
-msgstr "Compressor可能会在混合中使用，例如："
+#, fuzzy
+msgid "The compressor has many uses in the mix, for example:"
+msgstr "Compressor可能会在混合中使用，例如:"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:102
+#, fuzzy
 msgid ""
 "It can be used in the Master bus to compress the whole output (Although a "
-"Limiter is probably better)"
-msgstr "它可以在主总线中用于压缩整个输出（尽管限制器可能更好）"
+"Limiter would probably be better)"
+msgstr "它可以在主总线中用于压缩整个输出(尽管限制器可能更好)"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:103
 msgid ""
@@ -270,8 +277,9 @@ msgid ""
 msgstr "它可以在语音通道中使用，以确保它们尽可能地发声。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:104
+#, fuzzy
 msgid ""
-"It can be *Sidechained*. This means, it can reduce the sound level using "
+"It can be *Sidechained*. This means it can reduce the sound level using "
 "another audio bus for threshold detection. This technique is very common in "
 "video game mixing to download the level of Music/SFX while voices are being "
 "heard."
@@ -287,8 +295,9 @@ msgstr ""
 "它可以通过使用更广泛的攻击来强调瞬态，这意味着它可以使声音效果听起来更有力。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:107
+#, fuzzy
 msgid ""
-"There is a lot of bibliography written about compressors, and Godot "
+"There is a lot of bibliography written about compressors, and the Godot "
 "implementation is rather standard."
 msgstr "有很多关于压缩器的参考书目，Godot的实现是相当标准的。"
 
@@ -323,8 +332,9 @@ msgid "EQ6, EQ10, EQ21"
 msgstr "EQ6, EQ10, EQ21"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:123
+#, fuzzy
 msgid ""
-"Godot provides three model of equalizers with different band counts. "
+"Godot provides three models of equalizers with different band counts. "
 "Equalizers are useful on the Master Bus to completely master a mix and give "
 "it character. They are also useful when a game is run on a mobile device, to "
 "adjust the mix to that kind of speakers (it can be added but disabled when "
@@ -332,22 +342,23 @@ msgid ""
 msgstr ""
 "Godot提供三种具有不同频带数的均衡器模型。 均衡器在主总线上非常有用，可以完全"
 "掌握混音并赋予其特性。 当在移动设备上运行游戏时，它们也很有用，可以调整混合到"
-"那种扬声器（可以添加但是在插入耳机时禁用）。"
+"那种扬声器(可以添加但是在插入耳机时禁用)。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:127
 msgid "HighPassFilter, HighShelfFilter"
 msgstr "HighPassFilter, HighShelfFilter"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:129
+#, fuzzy
 msgid ""
 "These are filters that cut frequencies below a specific *Cutoff*. A common "
 "use of high pass filters is to add it to effects (or voice) that were "
-"recorded too close too a mic and need to sound more realistic. It is "
-"commonly used for some types of environment like space."
+"recorded too close to a mic and need to sound more realistic. It is commonly "
+"used for some types of environment, like space."
 msgstr ""
 "这些滤波器可将频率降至特定 *截止值* 以下。 高通滤波器的一个常见用途是将其添加"
-"到效果（或声音）中，这些效果（或声音）记录得太近麦克风并且需要听起来更逼真。 "
-"它通常用于某些类型的环境，如空间。"
+"到效果(或声音)中，这些效果(或声音)记录得太近麦克风并且需要听起来更逼真。 它通"
+"常用于某些类型的环境，如空间。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:133
 msgid "Limiter"
@@ -360,7 +371,7 @@ msgid ""
 "Bus* is always recommended to reduce the effects of clipping."
 msgstr ""
 "限制器类似于压缩器，但它的灵活性较差，旨在禁止声音超过给定的dB阈值。 始终建议"
-"在*主总线*中添加一个以减少削波的影响。"
+"在 *主总线* 中添加一个以减少削波的影响。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:139
 msgid "LowPassFilter, LowShelfFilter"
@@ -405,7 +416,7 @@ msgid ""
 "like sounds."
 msgstr ""
 "解释这种效应是由两个信号相互脱离并相互抵消而形成的，这可能没什么意义。 只需注"
-"意你可以用它制作Darth Vader声音，或类似喷射的声音。"
+"意您可以用它制作Darth Vader声音，或类似喷射的声音。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:161
 msgid "PitchShift"
@@ -433,8 +444,8 @@ msgid ""
 "to all sounds."
 msgstr ""
 "混响模拟不同大小的房间。 它具有可调节的参数，可以调整以获得特定房间的声音。 "
-"混响通常从以下输出 ：ref：`Areas <class_Area>` （参见 ：ref：`doc_audio-"
-"streams` 教程，寻找“Reverb bus”部分），或者对所有声音应用腔室感觉。"
+"混响通常从以下输出 :ref:`Areas <class_Area>` (参见 :ref:`doc_audio-streams` "
+"教程，寻找“Reverb bus”部分)，或者对所有声音应用腔室感觉。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:172
 msgid "StereoEnhance"
@@ -451,13 +462,14 @@ msgid "Automatic bus disabling"
 msgstr "自动总线禁用"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:179
+#, fuzzy
 msgid ""
-"There is no need to disable buses manually when not in use, Godot detects "
-"that the bus has been silent for a few seconds and disable it (including all "
-"effects)."
+"There is no need to disable buses manually when not in use; Godot detects "
+"that the bus has been silent for a few seconds and disables it (including "
+"all effects)."
 msgstr ""
-"没有必要在不使用时手动禁用总线，Godot检测到总线已经静音几秒钟并禁用它（包括所"
-"有效果）。"
+"没有必要在不使用时手动禁用总线，Godot检测到总线已经静音几秒钟并禁用它(包括所"
+"有效果)。"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:183
 msgid "Disabled buses have a blue VU meter."
@@ -484,12 +496,13 @@ msgid "Default bus layout"
 msgstr "默认总线布局"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:194
+#, fuzzy
 msgid ""
 "The default bus layout is automatically saved to the ``res://"
-"default_bus_layout.tres`` file. Other bus layouts can be saved/retrieved "
-"from files in case of having to change snapshots, but in most cases this is "
+"default_bus_layout.tres`` file. Other bus layouts can be saved to/retrieved "
+"from files in case of having to change snapshots, but in most cases, this is "
 "not necessary."
 msgstr ""
-"默认总线布局自动保存到 ` `res：// default_bus_layout.tres`` 文件中。 在必须更"
-"改快照的情况下，可以从文件中保存/检索其他总线布局，但在大多数情况下，这不是必"
-"需的。"
+"默认总线布局自动保存到 ``res:// default_bus_layout.tres`` 文件中。 在必须更改"
+"快照的情况下，可以从文件中保存/检索其他总线布局，但在大多数情况下，这不是必需"
+"的。"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgid ""
 "the ability to add extra scripting languages dynamically!"
 msgstr ""
 "在Godot3.0之前，编写游戏脚本的唯一选择是使用 :ref:`doc_gdscript`。而现在，"
-"Godot官方支持四种（是的，四种！）语言，并且能够动态添加额外的语言！"
+"Godot官方支持四种(是的，四种！)语言，并且能够动态添加额外的语言！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
 msgid ""
@@ -52,7 +52,7 @@ msgid ""
 msgstr ""
 "不过，Godot中的“主要”语言是GDScript和VisualScript。选择它们的主要原因是它们与"
 "Godot的整合程度，它们使体验更佳顺畅；两者都有非常好的编辑器集成，而C#和C++需"
-"要在外部IDE中进行编辑。如果你是静态语言的忠实粉丝，也可以使用C#和C++。"
+"要在外部IDE中进行编辑。如果您是静态语言的忠实粉丝，也可以使用C#和C++。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -65,7 +65,7 @@ msgid ""
 "high integration with Godot:"
 msgstr ""
 ":ref:`doc_gdscript` 是上面提到的用于Godot的主要语言。和其他语言相比，它与"
-"Godot高度整合，有许多优点："
+"Godot高度整合，有许多优点:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:28
 msgid ""
@@ -87,8 +87,7 @@ msgstr "编辑器集成非常令人愉快，有节点、信号、其它场景相
 msgid ""
 "Has vector types built-in (such as Vectors, transforms, etc.), making it "
 "efficient for heavy use of linear algebra."
-msgstr ""
-"有内建矢量类型（比如Vector、Transform等），大量使用线性代数时非常有效。"
+msgstr "有内建向量类型(比如Vector、Transform等)，大量使用线性代数时非常有效。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:32
 msgid ""
@@ -103,7 +102,7 @@ msgid ""
 "Uses no garbage collector, so it trades a small bit of automation (most "
 "objects are reference counted anyway), by determinism."
 msgstr ""
-"不使用垃圾回收器，所以它确定性地自动处理之这部分（大多数对象都是引用计数）。"
+"不使用垃圾回收器，所以它确定性地自动处理之这部分(大多数对象都是引用计数)。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:34
 msgid ""
@@ -111,15 +110,15 @@ msgid ""
 "GDNative) if more performance is required, all without recompiling the "
 "engine."
 msgstr ""
-"它的动态特性使其需要提高性能时，可以很容易地优化C++代码段（通过GDNative），而"
-"这些不需要重新编译引擎。"
+"它的动态特性使其需要提高性能时，可以很容易地优化C++代码段(通过GDNative)，而这"
+"些不需要重新编译引擎。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:36
 msgid ""
 "If you're undecided and have experience with programming, especially "
 "dynamically typed languages, go for GDScript!"
 msgstr ""
-"如果你还没决定好，并且对编程有经验，特别是动态类型语言，那就选择GDScript吧！"
+"如果您还没决定好，并且对编程有经验，特别是动态类型语言，那就选择GDScript吧！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:40
 msgid "VisualScript"
@@ -147,7 +146,7 @@ msgstr ""
 msgid ""
 "It can also be used by programmers to build state machines or custom visual "
 "node workflows - for example, a dialogue system."
-msgstr "程序员也可以用它创建状态机或自定义可视节点工作流，例如对话系统。"
+msgstr "程序员也可以用它创建状态机或自定义可视节点工作流程，例如对话系统。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:55
 msgid ".NET / C#"
@@ -189,8 +188,8 @@ msgid ""
 "Finally, one of our brightest additions for the 3.0 release: GDNative allows "
 "scripting in C++ without needing to recompile (or even restart) Godot."
 msgstr ""
-"最后是3.0版本的一个亮点：GDNative允许在C++中编写脚本，无需重新编译（甚至都不"
-"用重启）Godot。"
+"最后是3.0版本的一个亮点:GDNative允许在C++中编写脚本，无需重新编译(甚至都不用"
+"重启)Godot。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:77
 msgid ""
@@ -228,7 +227,7 @@ msgid ""
 "will demonstrate:"
 msgstr ""
 "在教程剩下的部分里，我们将建立一个GUI场景，包含一个按钮和一个标签，当按下按钮"
-"时标签会更新。这将会演示："
+"时标签会更新。这将会演示:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:96
 msgid "Writing a script and attaching it to a node."
@@ -261,8 +260,8 @@ msgid ""
 "Use the \"Add Child Node\" dialogue accessed from the Scene tab (or by "
 "pressing ``Ctrl+A``) to create a hierarchy with the following nodes:"
 msgstr ""
-"使用场景（Scene）选项卡来访问“添加子节点”（Add Child Node）对话框（或者按下 "
-"``Ctrl+A``），创建以下节点结构："
+"使用场景(Scene)选项卡来访问“添加子节点”(Add Child Node)对话框(或者按下 ``Ctrl"
+"+A``)，创建以下节点结构:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:110
 msgid "Panel"
@@ -278,15 +277,15 @@ msgstr "按钮"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:115
 msgid "The scene tree should look like this:"
-msgstr "场景树看起来应该是这个样子："
+msgstr "场景树看起来应该是这个样子:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:119
 msgid ""
 "Use the 2D editor to position and resize the Button and Label so that they "
 "look like the image below. You can set the text from the Inspector tab."
 msgstr ""
-"使用2D编辑器定位并调整按钮和标签的大小，使其看起来像下面的样子。你可以在属性"
-"编辑器（Inspector）选项卡中设置文字。"
+"使用2D编辑器定位并调整按钮和标签的大小，使其看起来像下面的样子。您可以在属性"
+"面板(Inspector)选项卡中设置文字。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:124
 msgid "Finally, save the scene with a name such as ``sayhello.tscn``."
@@ -300,14 +299,14 @@ msgstr "添加脚本"
 msgid ""
 "Right click on the Panel node, then select \"Attach Script\" from the "
 "context menu:"
-msgstr "右击Panel节点， 在弹出菜单中选择“附加脚本（Attach Script）”："
+msgstr "右击Panel节点， 在弹出菜单中选择“附加脚本(Attach Script)”:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:136
 msgid ""
 "The script creation dialog will pop up. This dialog allows you to set the "
 "script's language, class name, and other relevant options."
 msgstr ""
-"脚本创建对话框会弹出。这个对话框允许你设置脚本语言、类名和其它相关选项。"
+"脚本创建对话框会弹出。这个对话框允许您设置脚本语言、类名和其它相关选项。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
 msgid ""
@@ -321,12 +320,12 @@ msgid ""
 "will automatically be filled in with \"Panel\". This is what we want, as the "
 "script's goal is to extend the functionality of our panel node."
 msgstr ""
-"我们要附加脚本的节点是个Panel（面板），所以继承一栏会被自动填入“Panel”。这是"
-"我们想要的，因为脚本的目的就是扩展这个面板节点的功能。"
+"我们要附加脚本的节点是个Panel(面板)，所以继承一栏会被自动填入“Panel”。这是我"
+"们想要的，因为脚本的目的就是扩展这个面板节点的功能。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:146
 msgid "Finally, enter a path name for the script and select Create:"
-msgstr "最后，输入脚本的路径名然后选择新建（Create）："
+msgstr "最后，输入脚本的路径名然后选择新建(Create):"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:150
 msgid ""
@@ -334,8 +333,8 @@ msgid ""
 "an \"Open script\" icon next to the node in the Scene tab, as well as in the "
 "script property under Inspector:"
 msgstr ""
-"脚本会被创建并将添加至Panel节点上。你可以通过场景选项卡中节点旁边的“打开脚"
-"本”图标或Inspector窗口中的Script属性来查看这个脚本："
+"脚本会被创建并将添加至Panel节点上。您可以通过场景选项卡中节点旁边的“打开脚"
+"本”图标或属性面板中的Script属性来查看这个脚本:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
 msgid ""
@@ -343,8 +342,8 @@ msgid ""
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
-"要编辑脚本，选择上述按钮之一，这两个按钮都在上图中突出显示。这会把你带到脚本"
-"编辑器处，其中包含了默认模版："
+"要编辑脚本，选择上述按钮之一，这两个按钮都在上图中突出显示。这会把您带到脚本"
+"编辑器处，其中包含了默认模版:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -353,7 +352,7 @@ msgid ""
 "the constructor; the constructor is instead ``_init()``."
 msgstr ""
 "这里没有多少内容。 ``_ready()`` 函数在节点及其所有子节点进入活动场景时调用。 "
-"**注意：** ``_ready()`` 并不是构造器；构造器是 ``_init()``。"
+"**注意:** ``_ready()`` 并不是构造器；构造器是 ``_init()``。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:166
 msgid "The role of the script"
@@ -366,9 +365,9 @@ msgid ""
 "siblings, and so on. The local scope of the script is the node. In other "
 "words, the script inherits the functions provided by that node."
 msgstr ""
-"脚本为节点添加行为。它用于控制节点的功能以及它如何与其他节点交互：子节点、父"
-"节点、同级节点等。脚本的作用域是（它附着的）节点。换句话说，该脚本继承了该节"
-"点提供的功能。"
+"脚本为节点添加行为。它用于控制节点的功能以及它如何与其他节点交互:子节点、父节"
+"点、同级节点等。脚本的作用域是(它附着的)节点。换句话说，该脚本继承了该节点提"
+"供的功能。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:176
 msgid "Handling a signal"
@@ -382,7 +381,7 @@ msgid ""
 "define custom signals in your own scripts."
 msgstr ""
 "当某种特定行为发生时，信号会被“触发”，并且它们可以连接到任意脚本实例的任意函"
-"数。信号主要用于GUI节点，不过其他节点也有信号，你甚至可以在自己的脚本里定义自"
+"数。信号主要用于GUI节点，不过其他节点也有信号，您甚至可以在自己的脚本里定义自"
 "定义信号。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:183
@@ -392,9 +391,9 @@ msgid ""
 "the second part. For the first part, Godot provides two ways to create "
 "connections: through a visual interface the editor provides or through code."
 msgstr ""
-"在这一步中，我们将“pressed（按下）”信号连接到一个自定义函数上。形成连接是第一"
-"部分，定义自定义函数是第二部分。对于第一部分，Godot提供了两种创建连接的方式："
-"通过编辑器的可视化界面或通过代码。"
+"在这一步中，我们将“pressed(按下)”信号连接到一个自定义函数上。形成连接是第一部"
+"分，定义自定义函数是第二部分。对于第一部分，Godot提供了两种创建连接的方式:通"
+"过编辑器的可视化界面或通过代码。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:188
 msgid ""
@@ -409,7 +408,7 @@ msgid ""
 "Select the Button node in the scene tree and then select the \"Node\" tab. "
 "Next, make sure that you have \"Signals\" selected."
 msgstr ""
-"在场景树中选择Button节点，然后选择“Node”选项卡。接下来，确保你选中"
+"在场景树中选择Button节点，然后选择“Node”选项卡。接下来，确保您选中"
 "了“Signals”选项。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:196
@@ -418,8 +417,8 @@ msgid ""
 "\"Connect...\" button in the bottom right, you'll open up the connection "
 "creation dialogue."
 msgstr ""
-"选择“BaseButton”下的“pressed()”然后点击右下方的“Connect...（连接）”，会打开连"
-"接创建对话框。"
+"选择“BaseButton”下的“pressed()”然后点击右下方的“Connect...(连接)”，会打开连接"
+"创建对话框。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:201
 msgid ""
@@ -427,8 +426,8 @@ msgid ""
 "node which implements the method you want to trigger (represented here as a "
 "NodePath) and the name of the method to trigger."
 msgstr ""
-"左下方是创建连接所需的关键：实现你想要触发方法的节点（在此用NodePath表示）以"
-"及要触发的方法的名字。"
+"左下方是创建连接所需的关键:实现您想要触发方法的节点(在此用NodePath表示)以及要"
+"触发的方法的名字。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
 msgid ""
@@ -437,8 +436,8 @@ msgid ""
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
-"左上部分显示了你的场景节点列表，其中触发节点的名称以红色突出显示。在这里选"
-"择“Panel”节点。当你选择一个节点时，底部的NodePath将自动更新为触发节点到所选节"
+"左上部分显示了您的场景节点列表，其中触发节点的名称以红色突出显示。在这里选"
+"择“Panel”节点。当您选择一个节点时，底部的NodePath将自动更新为触发节点到所选节"
 "点的相对路径。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:210
@@ -448,9 +447,9 @@ msgid ""
 "do have the \"Make Function\" check button checked, then the editor will "
 "generate the function for you before setting up the connection."
 msgstr ""
-"默认情况下，方法名称将包含触发节点的名称（这里为“Button”），从而生成“_on_[触"
-"发节点]_[信号名]”这样的名字。如果你选中了“生成函数”复选框，编辑器会在建立连接"
-"之前生成这个函数。"
+"默认情况下，方法名称将包含触发节点的名称(这里为“Button”)，从而生成“_on_[触发"
+"节点]_[信号名]”这样的名字。如果您选中了“生成函数”复选框，编辑器会在建立连接之"
+"前生成这个函数。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
 msgid ""
@@ -462,13 +461,14 @@ msgstr ""
 "我们使用代码方法！"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
+#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
-"used by Godot programmers: :ref:`Node.get_node() <class_Node_get_node>`. "
-"This function uses paths to fetch nodes anywhere in the scene, relative to "
-"the node that owns the script."
+"used by Godot programmers: :ref:`Node.get_node() "
+"<class_Node_method_get_node>`. This function uses paths to fetch nodes "
+"anywhere in the scene, relative to the node that owns the script."
 msgstr ""
-"为了达成目的，我们先介绍一个可能是被Godot程序员使用最多的函数： :ref:`Node."
+"为了达成目的，我们先介绍一个可能是被Godot程序员使用最多的函数: :ref:`Node."
 "get_node() <class_Node_get_node>`。该函数使用路径来获取场景中相对于该脚本的节"
 "点的任何位置的节点。"
 
@@ -477,7 +477,7 @@ msgid ""
 "For the sake of convenience, delete everything underneath ``extends Panel``. "
 "You will fill out the rest of the script manually."
 msgstr ""
-"为了方便起见，删除 ``extends Panel`` 下的所有内容。你要手动填写脚本的其余部"
+"为了方便起见，删除 ``extends Panel`` 下的所有内容。您要手动填写脚本的其余部"
 "分。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:227
@@ -486,33 +486,34 @@ msgid ""
 "is attached, you can fetch the Button by typing the following underneath the "
 "``_ready()`` function:"
 msgstr ""
-"由于Button和Label是有脚本附加的Panel下的兄弟节点，因此可以通过在 ``_ready()``"
-"函数下输入以下内容来获取Button引用："
+"由于Button和Label是有脚本附加的Panel下的兄弟节点，因此可以通过在 "
+"``_ready()`` 函数下输入以下内容来获取Button引用:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:244
 msgid "Next, write a function which will be called when the button is pressed:"
-msgstr "接下来，写一个函数，按钮按下时它会被触发："
+msgstr "接下来，写一个函数，按钮按下时它会被触发:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
+#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
-"ref:`Object.connect() <class_Object_connect>`."
+"ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "最后，在 ``_ready()`` 中通过 :ref:`Object.connect() <class_Object_connect>` "
 "来连接到按钮的“pressed”信号。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"
-msgstr "脚本最终看起来是这个样子："
+msgstr "脚本最终看起来是这个样子:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:308
 msgid ""
 "Run the scene and press the button. You should get the following result:"
-msgstr "运行场景并按下按钮，你应该看到这个结果："
+msgstr "运行场景并按下按钮，您应该看到这个结果:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:312
 msgid "Why, hello there! Congratulations on scripting your first scene."
-msgstr "你好啊！恭喜你完成了你的第一个场景脚本。"
+msgstr "您好啊！恭喜您完成了您的第一个场景脚本。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:316
 msgid ""
@@ -521,9 +522,9 @@ msgid ""
 "In the above code, this means that Button must be a child of Panel. If "
 "Button were instead a child of Label, the code to obtain it would be:"
 msgstr ""
-"本教程的一个常见的误解是 ``get_node(path)``的工作原理。对于给定节点， "
-"``get_node(path)``搜索它的直接子节点。在上面代码中，Button必须是Panel的子项。"
-"如果Button是Label的子项，则获得它的代码是："
+"本教程的一个常见的误解是 ``get_node(path)`` 的工作原理。对于给定节点， "
+"``get_node(path)`` 搜索它的直接子节点。在上面代码中，Button必须是Panel的子"
+"项。如果Button是Label的子项，则获得它的代码是:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:334
 msgid "Also, remember that nodes are referenced by name, not by type."
@@ -535,7 +536,7 @@ msgid ""
 "to the connected function's parameters. You can add and remove values of "
 "different types."
 msgstr ""
-"连接对话框的右侧面板用于将特定值绑定到连接函数的参数。你可以添加和删除不同类"
+"连接对话框的右侧面板用于将特定值绑定到连接函数的参数。您可以添加和删除不同类"
 "型的值。"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:342

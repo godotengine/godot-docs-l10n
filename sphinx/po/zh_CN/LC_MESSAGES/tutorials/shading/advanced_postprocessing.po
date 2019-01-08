@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:4
-#, fuzzy
 msgid "Advanced post-processing"
-msgstr "环境和后处理"
+msgstr "高级后处理"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:7
 msgid "Introduction"
@@ -34,6 +33,9 @@ msgid ""
 "generally and, in particular, with the methods outlined in the :ref:`custom "
 "post-processing tutorial <doc_custom_postprocessing>`."
 msgstr ""
+"本教程描述了一种在Godot中进行后处理的高级方法。值得注意的是，它将解释如何编写"
+"使用深度缓冲区的后处理着色器。您应该已经熟悉后处理，特别是使用 :ref:`custom "
+"post-processing tutorial <doc_custom_postprocessing>` 中介绍的方法。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:14
 msgid ""
@@ -44,11 +46,14 @@ msgid ""
 "because the depth buffer is only available in spatial shaders and Viewports "
 "do not maintain depth information."
 msgstr ""
+"在之前的后期处理教程中，我们将场景渲染为 :ref:`Viewport <class_Viewport>` 然"
+"后在一个 :ref:`ViewportContainer <class_ViewportContainer>` 中将视区呈现给主"
+"场景。此方法的一个限制是我们无法访问深度缓冲区，因为深度缓冲区仅在空间着色器"
+"中可用，而视区不保持深度信息。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:21
-#, fuzzy
 msgid "Full screen quad"
-msgstr "全屏和鼠标捕获"
+msgstr "全屏四核"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:23
 msgid ""
@@ -56,14 +61,16 @@ msgid ""
 "covered how to use a Viewport to make custom post-processing effects. There "
 "are two main drawbacks of using a Viewport:"
 msgstr ""
+"在 :ref:`自定义后处理教程<doc_custom_postprocessing>` 中，我们介绍了如何使用"
+"Viewport进行自定义后处理效果。使用Viewport有两个主要缺点:"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:27
 msgid "The depth buffer cannot be accessed"
-msgstr ""
+msgstr "无法访问深度缓冲区"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:28
 msgid "The effect of the post-processing shader is not visible in the editor"
-msgstr ""
+msgstr "在编辑器中看不到后处理着色器的效果"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:30
 msgid ""
@@ -74,6 +81,10 @@ msgid ""
 "screen at all times so that the post-processing effect will be applied at "
 "all times, including in the editor."
 msgstr ""
+"要解决使用深度缓冲区的限制，请使用 :ref:`MeshInstance <class_MeshInstance>` "
+"并使用 :ref:`QuadMesh <class_QuadMesh>` 原语。这允许我们使用空间着色器并访问"
+"场景的深度纹理。接下来，使用顶点着色器使四边形始终覆盖屏幕，以便始终应用后处"
+"理效果，包括在编辑器中。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:36
 msgid ""
@@ -86,6 +97,11 @@ msgid ""
 "the difference coordinate spaces and treat the vertices as if they were "
 "already in clip space."
 msgstr ""
+"首先，创建一个新的MeshInstance并将其网格设置为QuadMesh。这会创建一个以 ``(0, "
+"0, 0)`` 为中心的四边形，其宽度和高度为 ``1``。将宽度和高度设置为 ``2``。现"
+"在，四边形在原点的世界空间中占据一个位置，但是，我们希望它与相机一起移动，以"
+"便它始终覆盖整个屏幕。为此，我们将绕过通过差异坐标空间转换顶点位置的坐标变"
+"换，并将顶点视为已经在剪辑空间中。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:44
 msgid ""
@@ -96,6 +112,9 @@ msgid ""
 "view space to clip space behind the scenes, so we need to nullify the "
 "effects of Godot's transformations."
 msgstr ""
+"顶点着色器需要在剪辑空间中输出坐标，这些坐标的范围从屏幕左下角的 ``-1`` 到屏"
+"幕顶部和右侧的 ``1``。这就是QuadMesh需要高度和宽度为 ``2`` 的原因。Godot处理"
+"从模型到视图空间的变换到幕后的剪辑空间，因此我们需要消除Godot变换的效果。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:50
 msgid ""
@@ -107,6 +126,11 @@ msgid ""
 "wikipedia.org/wiki/Identity_matrix>`_. In Godot this is done by passing a "
 "`1` to a ``mat4``."
 msgstr ""
+"首先，将 ``render_mode`` 设置为 ``skip_vertex_transform`` ，它将从模型空间转"
+"换为视图空间。即使设置了 ``skip_vertex_transform`` ，Godot也会使用 "
+"``PROJECTION_MATRIX`` 处理从视图空间到场景后剪辑空间的转换。通过将投影矩阵设"
+"置为“identity matrix <https://en.wikipedia.org/wiki/Identity_matrix>`_ 来对其"
+"进行Nullify。在Godot中，这是通过将`1`传递给 ``mat4`` 来完成的。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:65
 msgid ""
@@ -119,16 +143,21 @@ msgid ""
 "the quad when we turn away from the center of the scene. In order to keep "
 "the quad from being culled there are a few options:"
 msgstr ""
+"即使使用此顶点着色器，四边形也会不断消失。这是由于在CPU上完成的截头剔除。 "
+"Frustum剔除使用相机矩阵和网格物体的AABB来确定在将网格传递到GPU之前网格是否可"
+"见*。 CPU不知道我们对顶点做了什么，所以它假设指定的坐标是指世界位置，而不是剪"
+"辑空间位置，这导致当我们转离场景中心时Godot剔除四边形。为了防止四边形被剔除，"
+"有几个选择:"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:73
 msgid ""
 "Add the QuadMesh as a child to the camera, so the camera is always pointed "
 "at it"
-msgstr ""
+msgstr "将QuadMesh作为子节点添加到相机，因此相机始终指向它"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:74
 msgid "Make the AABB as large as possible so it can always be seen"
-msgstr ""
+msgstr "使AABB尽可能大，以便始终可以看到"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:76
 msgid ""
@@ -136,17 +165,20 @@ msgid ""
 "first option guarantees that it will still be visible even if the camera "
 "moves outside the AABB. You can also use both options."
 msgstr ""
+"第二个选项确保四元组在编辑器中可见。虽然第一个选项保证即使相机移出AABB也仍然"
+"可见。您也可以使用这两个选项。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:81
-#, fuzzy
 msgid "Depth texture"
-msgstr "默认的2D纹理。"
+msgstr "深度纹理"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:83
 msgid ""
 "To read from the depth texture, perform a texture lookup using ``texture()`` "
 "and the uniform variable ``DEPTH_TEXTURE``."
 msgstr ""
+"要从深度纹理中读取，请使用 ``texture()`` 和统一变量 ``DEPTH_TEXTURE`` 执行纹"
+"理查找。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:90
 msgid ""
@@ -154,6 +186,8 @@ msgid ""
 "possible when reading from the current viewport. The depth texture cannot be "
 "accessed from another viewport you have rendered to."
 msgstr ""
+"与访问屏幕纹理类似，只有在从当前视区读取时才能访问深度纹理。无法从已渲染的另"
+"一个视区访问深度纹理。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:94
 msgid ""
@@ -168,6 +202,12 @@ msgid ""
 "it we multiply it by the inverse of the projection matrix which in Godot is "
 "accessible with the variable ``INV_PROJECTION_MATRIX``"
 msgstr ""
+"``DEPTH_TEXTURE`` 返回的值介于 ``0`` 和 ``1`` 之间，并且是非线性的。当直接"
+"从“DEPTH_TEXTURE”显示深度时，除非它非常接近，否则一切都会看起来几乎是白色的。"
+"这是因为深度缓冲区使用比进一步更多的位来存储更靠近相机的对象，因此深度缓冲区"
+"中的大部分细节都靠近相机。为了使深度值与世界或模型坐标对齐，我们需要将值线性"
+"化。当我们将投影矩阵应用于顶点位置时，z值是非线性的，所以为了线性化它我们将它"
+"乘以投影矩阵的倒数，在Godot中可以用变量 ``INV_PROJECTION_MATRIX`` 访问它"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:104
 msgid ""
@@ -176,6 +216,9 @@ msgid ""
 "space coordinates. Reconstruct the NDC using ``SCREEN_UV`` for the ``x`` and "
 "``y`` axis, and the depth value for ``z``."
 msgstr ""
+"首先获取屏幕空间坐标并将其转换为标准化设备坐标(NDC)。 NDC从“-1”运行到“1”，类"
+"似于剪辑空间坐标。使用 ``SCREEN_UV`` 为``x``和``y``轴重建NDC，并使用 ``z`` 的"
+"深度值。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:116
 msgid ""
@@ -183,6 +226,8 @@ msgid ""
 "``INV_PROJECTION_MATRIX``. Recall that view space gives positions relative "
 "to the camera so the ``z`` value will give us the distance to the point."
 msgstr ""
+"通过将NDC乘以 ``INV_PROJECTION_MATRIX`` 来将NDC转换为查看空间。回想一下，视图"
+"空间给出了相对于相机的位置，因此 ``z`` 值将为我们提供到该点的距离。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:129
 msgid ""
@@ -190,6 +235,8 @@ msgid ""
 "have a negative ``z`` value. In order to get a usable depth value we have to "
 "negate ``view.z``."
 msgstr ""
+"因为相机面向负 ``z`` 方向，所以位置将具有负 ``z`` 值。为了获得可用的深度值，"
+"我们必须否定 ``view.z`` 。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:132
 msgid ""
@@ -198,11 +245,12 @@ msgid ""
 "position from view space into world space so it needs to be passed to the "
 "fragment shader with a varying."
 msgstr ""
+"可以使用以下代码从深度缓冲区构造世界位置。请注意，需要使用 ``CAMERA_MATRIX`` "
+"将位置从视图空间转换为世界空间，因此需要将其传递给具有变化的片段着色器。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:151
-#, fuzzy
 msgid "An optimization"
-msgstr "动画"
+msgstr "优化"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:153
 msgid ""
@@ -212,6 +260,9 @@ msgid ""
 "benefit is quite small and only beneficial when running especially complex "
 "fragment shaders."
 msgstr ""
+"您可以使用单个大三角形而不是使用全屏四边形。解释的原因在 `这里 <https://"
+"michaldrobot.com/2014/04/01/gcn-execution-patterns-in-full-screen-"
+"passes>`_ 。但是，这种好处非常小，只有在运行特别复杂的片段着色器时才有用。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:158
 msgid ""
@@ -219,11 +270,12 @@ msgid ""
 "An ArrayMesh is a tool that allows you to easily construct a Mesh from "
 "Arrays for vertices, normals, colors, etc."
 msgstr ""
+"将MeshInstance中的Mesh设置为 :ref:`ArrayMesh <class_ArrayMesh>`。 ArrayMesh是"
+"一个工具，允许您从顶点，法线，颜色等方便地从数组构造网格。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:162
-#, fuzzy
 msgid "Now, attach a script to the MeshInstance and use the following code:"
-msgstr "将脚本附加到KinematicBody2D并添加以下代码："
+msgstr "现在，将脚本附加到MeshInstance并使用以下代码："
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:184
 msgid ""
@@ -233,12 +285,15 @@ msgid ""
 "screen with a single triangle, use a triangle that is ``4`` units wide and "
 "``4`` units tall, double its height and width."
 msgstr ""
+"三角形在标准化设备坐标中指定。回想一下，NDC在 ``x`` 和``y``方向都从``-1``到 "
+"``1`` 运行。这使得屏幕 ``2`` 单位宽， ``2`` 单位高。为了用一个三角形覆盖整个"
+"屏幕，使用一个 ``4`` 单位宽和 ``4`` 单位高的三角形，高度和宽度加倍。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:190
 msgid ""
 "Assign the same vertex shader from above and everything should look exactly "
 "the same."
-msgstr ""
+msgstr "从上面分配相同的顶点着色器，所有内容应该看起来完全相同。"
 
 #: ../../docs/tutorials/shading/advanced_postprocessing.rst:192
 msgid ""
@@ -248,3 +303,6 @@ msgid ""
 "triangle Mesh in a modelling program and use that in the MeshInstance "
 "instead."
 msgstr ""
+"使用ArrayMesh而不是使用QuadMesh的一个缺点是ArrayMesh在编辑器中不可见，因为在"
+"运行场景之前不会构造三角形。为了解决这个问题，在建模程序中构建一个三角形"
+"Mesh，然后在MeshInstance中使用它。"

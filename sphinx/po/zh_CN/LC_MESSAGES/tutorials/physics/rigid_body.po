@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:4
-msgid "Rigid Body"
+#, fuzzy
+msgid "RigidBody"
 msgstr "刚体"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:7
@@ -38,18 +39,20 @@ msgstr ""
 "物体的重心。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:13
-msgid "How to control rigid body"
+#, fuzzy
+msgid "How to control a rigid body"
 msgstr "如何控制刚体"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
+#, fuzzy
 msgid ""
-"A rigid body's behavior can be altered by setting its properties such as "
+"A rigid body's behavior can be altered by setting its properties, such as "
 "friction, mass, bounce, etc. These properties can be set in the Inspector or "
 "via code. See :ref:`RigidBody <class_RigidBody>` for the full list of "
 "properties and their effects."
 msgstr ""
-"刚体的行为可以通过设置其特性（如摩擦、质量、弹跳等）而改变。这些特性可以在检"
-"查器中或通过代码设置。有关属性及其效果的完整列表，请参见 :ref:`RigidBody "
+"刚体的行为可以通过设置其特性(如摩擦、质量、弹跳等)而改变。这些特性可以在属性"
+"面板中或通过代码设置。有关属性及其效果的完整列表，请参见 :ref:`RigidBody "
 "<class_RigidBody>` 。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:17
@@ -59,18 +62,19 @@ msgid ""
 msgstr "有几种方法可以控制刚体的运动，这取决于您的应用程序。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:19
+#, fuzzy
 msgid ""
 "If you only need to place a rigid body once, for example to set its initial "
 "location, you can use the methods provided by the :ref:`Spatial "
 "<class_Spatial>` node, such as ``set_global_transform()`` or ``look_at()``. "
-"However, these functions can not be called every frame or the physics engine "
+"However, these methods cannot be called every frame or the physics engine "
 "will not be able to correctly simulate the body's state. As an example, "
 "consider a rigid body that you want to rotate so that it points towards "
 "another object. A common mistake when implementing this kind of behavior is "
 "to use ``look_at()`` every frame, which breaks the physics simulation. "
 "Below, we'll demonstrate how to implement this correctly."
 msgstr ""
-"如果你只想要放置一个刚体，例如设置它的初始位置，你可以使用 :ref:`Spatial "
+"如果您只想要放置一个刚体，例如设置它的初始位置，您可以使用 :ref:`Spatial "
 "<class_Spatial>` 节点提供的方法，比如 ``set_global_transform()`` 或 "
 "``look_at()``。 但是，这些函数不能在每帧调用，否则物理引擎将无法正确模拟物体"
 "的状态。 例如，考虑要旋转的刚体，使其指向另一个对象。 实现这种行为时常见的错"
@@ -78,45 +82,50 @@ msgstr ""
 "这一点。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:22
+#, fuzzy
 msgid ""
 "The fact that you can't use ``set_global_transform()`` or ``look_at()`` "
 "methods doesn't mean that you can't have full control of a rigid body. "
 "Instead, you can control it by using the ``_integrate_forces()`` callback. "
-"In this function, you can add *forces*, apply *impulses*, or set the "
+"In this method, you can add *forces*, apply *impulses*, or set the "
 "*velocity* in order to achieve any movement you desire."
 msgstr ""
-"你不能使用 ``set_global_transform()`` 或 ``look_at()`` 方法并不意味着你不能完"
-"全控制刚体。 相反，你可以使用 ``_integrate_forces()`` 回调来控制它。 在此函数"
+"您不能使用 ``set_global_transform()`` 或 ``look_at()`` 方法并不意味着您不能完"
+"全控制刚体。 相反，您可以使用 ``_integrate_forces()`` 回调来控制它。 在此函数"
 "中，您可以添加 *力* ，应用 *脉冲* 或设置 *速度* 以实现您想要的任何移动。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:25
-msgid "Look at function"
-msgstr "看函数"
+#, fuzzy
+msgid "The \"look at\" method"
+msgstr "``import`` 方法"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:27
+#, fuzzy
 msgid ""
-"As described above, using the Spatial node's ``look_at()`` function can't be "
-"used each frame to follow a target. Here is a custom ``look_at()`` function "
+"As described above, using the Spatial node's ``look_at()`` method can't be "
+"used each frame to follow a target. Here is a custom ``look_at()`` method "
 "that will work reliably with rigid bodies:"
 msgstr ""
-"如上所述，为跟随目标，不能将Spatial节点的 ``look_at（）`` 函数用在每一帧中。 "
-"这是一个自定义的 ``look_at（）`` 函数，它可以与刚体一起可靠地工作："
+"如上所述，为跟随目标，不能将Spatial节点的 ``look_at()`` 函数用在每一帧中。 这"
+"是一个自定义的 ``look_at()`` 函数，它可以与刚体一起可靠地工作:"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:69
+#, fuzzy
 msgid ""
-"This function uses the rigid body's ``set_angular_velocity()`` method to "
+"This method uses the rigid body's ``set_angular_velocity()`` method to "
 "rotate the body. It first calculates the difference between the current and "
 "desired angle and then adds the velocity needed to rotate by that amount in "
 "one frame's time."
 msgstr ""
-"这个函数使用刚体的 ``set_angular_velocity（）`` 方法来旋转体。 它首先计算当前"
-"角度和所需角度之间的差值，然后在一帧的时间内添加旋转所需的速度。"
+"这个函数使用刚体的 ``set_angular_velocity()`` 方法来旋转体。 它首先计算当前角"
+"度和所需角度之间的差值，然后在一帧的时间内添加旋转所需的速度。"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:71
+#, fuzzy
 msgid ""
-"This script will not work with rigid bodies in *character mode* because in "
-"this mode the body's rotation is locked. In this case, you would have to "
-"rotate the attached mesh node instead using the standard Spatial methods."
+"This script will not work with rigid bodies in *character mode* because "
+"then, the body's rotation is locked. In that case, you would have to rotate "
+"the attached mesh node instead using the standard Spatial methods."
 msgstr ""
 "此脚本不适用于 *角色模式* 中的刚体，因为在此模式下，物体的旋转被锁定了。 在这"
 "种情况下，您必须使用标准Spatial方法旋转附加的网格节点。"

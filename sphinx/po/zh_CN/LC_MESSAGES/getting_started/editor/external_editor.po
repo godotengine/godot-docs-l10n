@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,17 +29,18 @@ msgid ""
 "External``"
 msgstr ""
 "虽然 Godot 拥有内置的文本编辑器，但一些开发人员倾向于使用他们熟悉的文本编辑"
-"器。 Godot 通过``编辑器 - >编辑器设置 - >文本编辑器 - >外部``下的选项提供此选"
+"器。 Godot 通过 ``编辑器 ->编辑器设置 ->文本编辑器 ->外部`` 下的选项提供此选"
 "项"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
+#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
-"allow you to better integrate the editor with godot. Godot will replace the "
+"allow you to better integrate the editor with Godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
-"有两个字段：可执行路径和命令行标志。这些标志允许您更好地将编辑器集成到Godot"
-"上。 Godot将在标志参数中替换以下内容："
+"有两个字段:可执行路径和命令行标志。这些标志允许您更好地将编辑器集成到Godot"
+"上。 Godot将在标志参数中替换以下内容:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
@@ -83,7 +84,7 @@ msgstr "错误的行号"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
-msgstr "各种编辑器的一些示例Exec标志："
+msgstr "各种编辑器的一些示例Exec标志:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"
@@ -111,9 +112,8 @@ msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "jetbrains rider"
-msgstr ""
+msgstr "jetbrains车手"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-#, fuzzy
 msgid "--line {line} {file}"
-msgstr "{file} --行 {line} --列 {col}"
+msgstr "--行 {line} {file}"

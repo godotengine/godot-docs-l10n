@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,8 +30,8 @@ msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
 "is represented as a string, which can refer to many of the following:"
 msgstr ""
-"Godot 有一个特殊的系统来标记功能的可用性。 每个*特性*表示为一个字符串，它可以"
-"引用以下许多内容："
+"Godot 有一个特殊的系统来标记功能的可用性。 每个 *特性* 表示为一个字符串，它可"
+"以引用以下许多内容:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:12
 msgid "Platform name."
@@ -39,7 +39,7 @@ msgstr "平台名称。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:13
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
-msgstr "平台架构（64位或32位，x86或ARM）。"
+msgstr "平台架构(64位或32位，x86或ARM)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
 msgid "Platform type (desktop, mobile, Web)."
@@ -52,7 +52,7 @@ msgstr "支持平台的纹理压缩。"
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
-msgstr "构建是 ``debug`` 还是 ``release`` （ ``debug`` 包括编辑器）。"
+msgstr "构建是 ``debug`` 还是 ``release`` ( ``debug`` 包括编辑器)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
@@ -65,7 +65,7 @@ msgstr "更多的东西。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:20
 msgid "Features can be queried at run-time from the singleton API by calling:"
-msgstr "通过调用以下功能可以在运行时查询单例API："
+msgstr "通过调用以下功能可以在运行时查询单例API:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:28
 msgid "Default features"
@@ -75,7 +75,7 @@ msgstr "默认功能"
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
-msgstr "以下是 Godot 中大多数功能标签的列表。 请记住它们*区分大小写*："
+msgstr "以下是 Godot 中大多数功能标签的列表。 请记住它们 *区分大小写* :"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:33
 msgid "**Feature tag**"
@@ -107,7 +107,7 @@ msgstr "**JavaScript**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:39
 msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
-msgstr ":ref:`JavaScript singleton <doc_javascript_eval>`可用"
+msgstr ":ref:`JavaScript singleton <doc_javascript_eval>` 可用"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:42
 msgid "**OSX**"
@@ -147,7 +147,7 @@ msgstr "**X11**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:50
 msgid "Running on X11 (Linux/BSD desktop)"
-msgstr "在X11上运行（Linux / BSD桌面）"
+msgstr "在X11上运行(Linux / BSD桌面)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "**Server**"
@@ -163,7 +163,7 @@ msgstr "**调试**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
 msgid "Running on a debug build (including the editor)"
-msgstr "在调试版本（包括编辑器）上运行"
+msgstr "在调试版本(包括编辑器)上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
@@ -195,7 +195,7 @@ msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "Running on a 64-bit build (any architecture)"
-msgstr "在64位版本（任何架构）上运行"
+msgstr "在64位版本(任何架构)上运行"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
@@ -298,36 +298,33 @@ msgid "Custom features"
 msgstr "自定义功能"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:92
-#, fuzzy
 msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
-"可以向构建添加自定义功能，使用用于生成它的 * export preset * 中的相关字段："
+"可以向构建添加自定义功能，使用用于生成它的 *export preset * 中的相关字段:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"
 msgstr "重载项目设置"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:100
-#, fuzzy
 msgid ""
 "Features can be used to override specific configuration values in the "
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
-"功能可用于重载* Project Settings *中的特定配置值。 这样可以在构建时更好地定制"
+"功能可用于重载 *Project Settings* 中的特定配置值。 这样可以在构建时更好地定制"
 "任意配置。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:103
-#, fuzzy
 msgid ""
 "In the following example, a different icon is added for the demo build of "
 "the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
-"在下面的示例中，为游戏的演示版本添加了一个不同的图标（在特定的导出预设中进行"
-"了自定义，而该预设仅包含演示关卡）。"
+"在下面的示例中，为游戏的演示版本添加了一个不同的图标(在特定的导出预设中进行了"
+"自定义，而该预设仅包含演示关卡)。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:108
 msgid "After overriding, a new field is added for this specific configuration:"
@@ -338,7 +335,6 @@ msgid "Default overrides"
 msgstr "默认重载"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:115
-#, fuzzy
 msgid ""
 "There are already a lot of settings that come with overrides by default; "
 "they can be found in many sections of the project settings."
@@ -347,15 +343,15 @@ msgstr ""
 "到。"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:121
-msgid "Customizing Build"
+#, fuzzy
+msgid "Customizing the build"
 msgstr "自定义生成"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:123
-#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDNative**."
 msgstr ""
-"通过编写自定义的** ExportPlugin **，功能标签也可用于定制构建过程。 它们也被用"
-"来指定在** GDNative **中加载和导出哪个共享库。"
+"通过编写自定义的 **ExportPlugin**，功能标签也可用于定制构建过程。 它们也被用"
+"来指定在 **GDNative** 中加载和导出哪个共享库。"

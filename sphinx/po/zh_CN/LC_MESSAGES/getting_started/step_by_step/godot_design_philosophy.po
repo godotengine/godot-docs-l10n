@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Godot的设计理念"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:6
 msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
-msgstr "既然你已经把手弄湿了，让我们谈谈Godot的设计。"
+msgstr "既然您已经把手弄湿了，让我们谈谈Godot的设计。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
 msgid ""
@@ -33,8 +33,8 @@ msgid ""
 "structures. This all stems from their respective design philosophies."
 msgstr ""
 "**每个游戏引擎都是不同的，并且适合不同的需求。** 它们不仅提供了一系列的特性，"
-"而且每个引擎的设计都是独一无二的。这就导致了不同的工作流和形成游戏结果的不同"
-"方式。这都源于引擎各自的设计理念。"
+"而且每个引擎的设计都是独一无二的。这就导致了不同的工作流程和形成游戏结果的不"
+"同方式。这都源于引擎各自的设计理念。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:13
 msgid ""
@@ -54,7 +54,7 @@ msgid ""
 "be/4v3qge-3CqQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
 "如果您想要了解这个引擎的特性，请看 `Discover Godot 3，免费游戏引擎 <https://"
-"youtu.be/4v3qge-3CqQ>`_。"
+"youtu.be/4v3qge-3CqQ>`_ 。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:23
 msgid "Object-oriented design and composition"
@@ -67,7 +67,7 @@ msgid ""
 "patterns to offer an intuitive way to structure your game."
 msgstr ""
 "Godot以其灵活的场景系统和节点层次结构来支持面向对象的设计。它尝试远离严格的编"
-"程模式，提供一种直观的方式来构造你的游戏。"
+"程模式，提供一种直观的方式来构造您的游戏。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:29
 msgid ""
@@ -77,14 +77,14 @@ msgid ""
 "Change the BlinkingLight's color, save, and all the BrokenLanterns in the "
 "city will update instantly."
 msgstr ""
-"首先，Godot允许你 **组合或者聚合** 场景。这就像嵌套的预制件(prefabs)：你可以"
-"创建一个BlinkingLight场景以及一个使用BlinkingLight场景的BrokenLantern场景。然"
+"首先，Godot允许您 **组合或者聚合** 场景。这就像嵌套的预制件(prefabs):您可以创"
+"建一个BlinkingLight场景以及一个使用BlinkingLight场景的BrokenLantern场景。然"
 "后，创建一个满是BrokenLanterns的城市场景。改变BlinkingLight的颜色，保存，城市"
 "中的所有的BrokenLanterns会立即更新。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:36
 msgid "On top of that, you can **inherit** from any scene."
-msgstr "最重要的是，你可以从任何场景 **inherit** 。"
+msgstr "最重要的是，您可以从任何场景 **继承** 。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
 msgid ""
@@ -93,9 +93,9 @@ msgid ""
 "you’re free to design it by using the editor, using only the code, or mixing "
 "and matching the two."
 msgstr ""
-"Godot场景可以是武器，角色，物品，门，关卡，关卡的一部分。。。任何你想要的东"
-"西。它的工作方式就像纯代码中的类一样，只不过您可以通过使用编辑器，只用代码，"
-"或者混合和匹配这两者来自由的设计它。"
+"Godot场景可以是武器，角色，物品，门，关卡，关卡的一部分...任何您想要的东西。"
+"它的工作方式就像纯代码中的类一样，只不过您可以通过使用编辑器，只用代码，或者"
+"混合和匹配这两者来自由的设计它。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
 msgid ""
@@ -105,9 +105,9 @@ msgid ""
 "update as well. It helps you build your projects so that their structure "
 "matches the game’s design."
 msgstr ""
-"它不同于你在几个3D引擎中发现的预制件，因为你可以继承和扩展这些场景。你可以创"
-"建一个继承于你的角色的魔法师。在编辑器中修改角色，魔术师也会更新。它帮助你构"
-"建你的项目，使他们的结构与游戏的设计相匹配。"
+"它不同于您在几个3D引擎中发现的预制件，因为您可以继承和扩展这些场景。您可以创"
+"建一个继承于您的角色的魔法师。在编辑器中修改角色，魔术师也会更新。它帮助您构"
+"建您的项目，使他们的结构与游戏的设计相匹配。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
 msgid "|image0|"
@@ -163,8 +163,8 @@ msgid ""
 "import plugin for it. Or you can create one, like the `Tiled Map Importer "
 "<https://github.com/vnen/godot-tiled-importer>`__."
 msgstr ""
-"我们的目标是提供一个完整的软件包来创建游戏以及持续的用户体验。你仍然可以和外"
-"部程序一起工作，只要有一个导入插件做支持。或者你可以自己创建一个，比如 "
+"我们的目标是提供一个完整的软件包来创建游戏以及持续的用户体验。您仍然可以和外"
+"部程序一起工作，只要有一个导入插件做支持。或者您可以自己创建一个，比如 "
 "`Tiled Map Importer <https://github.com/vnen/godot-tiled-importer>`__ 。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:78
@@ -193,7 +193,7 @@ msgid ""
 "languages like C, C++, Rust, or Python (using the Cython compiler) without "
 "recompiling the engine."
 msgstr ""
-"注意，使用GDNative，您可以使用C、c++、Rust或Python(使用Cython编译器)这样的编"
+"注意，使用GDNative，您可以使用C、C++、Rust或Python(使用Cython编译器)这样的编"
 "译语言编写高性能代码，而无需重新编译引擎。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
@@ -243,8 +243,8 @@ msgid ""
 "as well. For the most part, they’re developed from the ground up by "
 "contributors."
 msgstr ""
-"Godot在**MIT许可**下提供了一个完全开源的代码库。这意味着所有的技术都必须是自"
-"由的。在很大程度上，它们是由贡献者从头开始开发的。"
+"Godot在 **MIT许可** 下提供了一个完全开源的代码库。这意味着所有的技术都必须是"
+"自由的。在很大程度上，它们是由贡献者从头开始开发的。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:115
 msgid ""
@@ -264,7 +264,7 @@ msgid ""
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
-"另一方面，一个开放的代码库意味着你可以学习和扩展引擎到你的核心内容。您还可以"
+"另一方面，一个开放的代码库意味着您可以学习和扩展引擎到您的核心内容。您还可以"
 "很容易地调试游戏，因为Godot会使用堆栈跟踪打印错误，即使这些错误来自引擎本身。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
@@ -272,8 +272,8 @@ msgid ""
 "This **does not affect the work you do with Godot** in any way: there’s no "
 "strings attached to the engine or anything you make with it."
 msgstr ""
-"这个**不会以任何方式影响你对Godot**所做的工作:没有任何附加到引擎或你用它做的"
-"任何事情。"
+"这个 **不会以任何方式影响您对Godot** 所做的工作:没有任何附加到引擎或您用它做"
+"的任何事情。"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:130
 msgid "Community-driven"
@@ -313,8 +313,8 @@ msgid ""
 "scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
 "Godot编辑器运行在游戏引擎上。它使用引擎自己的UI系统，可以在测试项目或在编辑器"
-"中运行游戏代码时热加载代码和场景。这意味着你可以为你的游戏使用**相同的代码**"
-"和场景，或者**创建插件和扩展编辑器**"
+"中运行游戏代码时热加载代码和场景。这意味着您可以为您的游戏使用 **相同的代码"
+"** 和场景，或者**创建插件和扩展编辑器**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
 msgid ""
@@ -360,4 +360,4 @@ msgid ""
 "your 3D world."
 msgstr ""
 "Godot提供专门的2D和3D渲染引擎。因此，** 2D场景的基本单位是像素。**即使引擎是"
-"分开的，你可以渲染2D为3D, 3D为2D，并覆盖2D精灵和界面在你的3D世界。"
+"分开的，您可以渲染2D为3D, 3D为2D，并覆盖2D精灵和界面在您的3D世界。"

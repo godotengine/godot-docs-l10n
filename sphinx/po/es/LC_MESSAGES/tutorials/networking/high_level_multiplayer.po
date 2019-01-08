@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -374,16 +374,17 @@ msgid "`network_peer_disconnected(int id)`"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:129
+#, fuzzy
 msgid ""
 "The above signals are called on every peer connected to the server "
 "(including on the server) when a new peer connects or disconnects. Clients "
 "will connect with a unique ID greater than 1, while network peer ID 1 is "
 "always the server. Anything below 1 should be handled as invalid. You can "
 "retrieve the ID for the local system via :ref:`SceneTree."
-"get_network_unique_id() <class_SceneTree_get_network_unique_id>`. These IDs "
-"will be useful mostly for lobby management and should generally be stored as "
-"they identify connected peers and thus players. You can also use IDs to send "
-"messages only to certain peers."
+"get_network_unique_id() <class_SceneTree_method_get_network_unique_id>`. "
+"These IDs will be useful mostly for lobby management and should generally be "
+"stored as they identify connected peers and thus players. You can also use "
+"IDs to send messages only to certain peers."
 msgstr ""
 "Las señales anteriores se invocan en cada peer conectado al servidor "
 "(incluso en el servidor) cuando un nuevo peer se conecta o desconecta. Los "
@@ -760,9 +761,10 @@ msgstr ""
 "servidor tiene autoridad sobre todos los nodos por defecto."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
+#, fuzzy
 msgid ""
 "The network master can be set with the function :ref:`Node."
-"set_network_master(id, recursive) <class_Node_set_network_master>` "
+"set_network_master(id, recursive) <class_Node_method_set_network_master>` "
 "(recursive is true by default and means the network master is recursively "
 "set on all child nodes of the node as well)."
 msgstr ""
@@ -773,11 +775,12 @@ msgstr ""
 "nodo también)."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:352
+#, fuzzy
 msgid ""
 "Checking that a specific node instance on a peer is the network master for "
 "this node for all connected peers is done by calling :ref:`Node."
-"is_network_master() <class_Node_is_network_master>`. This will return true "
-"when executed on the server and false on all client peers."
+"is_network_master() <class_Node_method_is_network_master>`. This will return "
+"true when executed on the server and false on all client peers."
 msgstr ""
 "Comprobar que una instancia de nodo específica en un peer es la red maestra "
 "para este nodo, para todos los peers conectados se hace llamando a :ref:"

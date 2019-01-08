@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,47 +18,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
-msgid "Godot-Blender-Exporter"
+#, fuzzy
+msgid "Blender ESCN exporter"
 msgstr "Godot-Blender-导出器"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
+#, fuzzy
 msgid ""
-"This chapter relates to the blender plugin called \"Godot-Blender-Exporter"
+"This chapter relates to the Blender plugin called \"Godot Blender Exporter"
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
-"本章涉及名为“Godot-Blender-Exporter”的blender插件，可在此处下载：https：//"
+"本章涉及名为“Godot-Blender-Exporter”的blender插件，可在此处下载:https://"
 "github.com/godotengine/godot-blender-exporter"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:8
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
+msgid ""
+"This plugin can be used to export Blender scenes in a Godot-specific scene "
+"format called ESCN, which is similar to TSCN (text format) but will be "
+"imported as binary SCN for performance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
 msgstr "导出细节"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:27
 msgid "Disabling specific objects"
 msgstr "禁用特定对象"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:25
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
+#, fuzzy
 msgid ""
-"Sometimes you don't want some objects exported (eg high-res models used for "
-"baking). An object will not be exported if it is not rendered in the scene. "
-"This can be set in the outliner:"
+"Sometimes you don't want some objects exported (e.g. high-res models used "
+"for baking). An object will not be exported if it is not rendered in the "
+"scene. This can be set in the outliner:"
 msgstr ""
-"有时您不希望导出某些对象（例如用于烘焙的高分辨率模型）。 如果未在场景中渲染对"
-"象，则不会导出该对象。 这可以在大纲中设置："
+"有时您不希望导出某些对象(例如用于烘焙的高分辨率模型)。 如果未在场景中渲染对"
+"象，则不会导出该对象。 这可以在大纲中设置:"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:31
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:35
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
-msgstr "隐藏在视口中的对象将被导出，但将隐藏在Godot场景中。"
+msgstr "隐藏在视区中的对象将被导出，但将隐藏在Godot场景中。"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:36
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
 msgid "Build pipeline integration"
 msgstr "构建管线集成"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:38
-#, fuzzy
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:42
 msgid ""
 "If you have hundreds of model files, you don't want your artists to waste "
 "time manually exporting their blend files. To combat this, the exporter "
@@ -69,6 +78,6 @@ msgid ""
 msgstr ""
 "如果您有数百个模型文件，则不希望您的艺术家浪费时间手动导出其混合文件。 为了解"
 "决这个问题，导出器提供了一个python函数 ``io_scene_godot."
-"export（out_file_path）`` ，可以调用它来导出文件。 这样可以轻松地与其他构建系"
-"统集成。 导出目录中所有混合的Makefile和python脚本示例存在于Godot-Blender-"
+"export(out_file_path)`` ，可以调用它来导出文件。 这样可以轻松地与其他构建系统"
+"集成。 导出目录中所有混合的Makefile和python脚本示例存在于Godot-Blender-"
 "exporter存储库中。"

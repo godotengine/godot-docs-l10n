@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,8 +22,9 @@ msgid "Physics introduction"
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:6
+#, fuzzy
 msgid ""
-"In game development you often need to know when two objects in the game "
+"In game development, you often need to know when two objects in the game "
 "intersect or come into contact. This is known as **collision detection**. "
 "When a collision is detected, you typically want something to happen. This "
 "is known as **collision response**."
@@ -45,8 +46,8 @@ msgstr ""
 "를 피하고 개발을 간소화할 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
-msgid "In this guide you will learn:"
-msgstr "이 가이드에서는 다음 사항에 대해 알아봅니다:"
+msgid "In this guide, you will learn:"
+msgstr "이 가이드에서 다음 내용을 배울 것입니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:18
 msgid "Godot's four collision object types"
@@ -70,7 +71,8 @@ msgstr ""
 "직접적으로 동등하며 대부분의 경우 거의 동일한 방식으로 작동합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:27
-msgid "Collision Objects"
+#, fuzzy
+msgid "Collision objects"
 msgstr "충돌 객체"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:29
@@ -86,11 +88,12 @@ msgid ":ref:`Area2D <class_Area2D>`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:32
+#, fuzzy
 msgid ""
 "``Area2D`` nodes provide **detection** and **influence**. They can detect "
 "when objects overlap and can emit signals when bodies enter or exit. An "
-"``Area2D`` can also be used to override physics properties such as gravity "
-"or damping in a defined area."
+"``Area2D`` can also be used to override physics properties, such as gravity "
+"or damping, in a defined area."
 msgstr ""
 "``Area2D`` 노드는 **탐지** 와 **영향력** 을 제공합니다. 그들은 객체가 언제 겹"
 "치는지를 탐지할 수 있고, body가 들어가거나 나올 때 시그널을 보낼 수 있습니"
@@ -98,9 +101,9 @@ msgstr ""
 "하는데 사용될 수도 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:37
+#, fuzzy
 msgid ""
-"The other three bodies extend from :ref:`PhysicsBody2D "
-"<class_PhysicsBody2D>`:"
+"The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
 msgstr ""
 "나머지 3개의 body는 :ref:`PhysicsBody2D <class_PhysicsBody2D>`에서 확장됩니"
 "다:"
@@ -149,8 +152,9 @@ msgstr ""
 "돌 반응은 코드로 구현되어야 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
-msgid "Collision Shapes"
-msgstr ""
+#, fuzzy
+msgid "Collision shapes"
+msgstr "충돌 마스크"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:57
 msgid ""
@@ -183,10 +187,11 @@ msgstr ""
 "업 공간에서 직접 모양을 그릴 수 있도록 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:68
+#, fuzzy
 msgid ""
 "Be careful to never scale your collision shapes in the editor. The \"Scale\" "
-"property in the Inspector should remain ``(1, 1)``. When changing sizing the "
-"collision shape, you should always use the size handles, **not** the "
+"property in the Inspector should remain ``(1, 1)``. When changing the size "
+"of the collision shape, you should always use the size handles, **not** the "
 "``Node2D`` scale handles. Scaling a shape can result in unexpected collision "
 "behavior."
 msgstr ""
@@ -212,11 +217,12 @@ msgstr ""
 "않을 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:84
+#, fuzzy
 msgid ""
 "In order to avoid this inaccuracy, any code that needs to access a body's "
 "properties should be run in the :ref:`Node._physics_process() "
-"<class_Node__physics_process>` callback, which is called before each physics "
-"step at a constant frame rate (60 times per second by default)."
+"<class_Node_method__physics_process>` callback, which is called before each "
+"physics step at a constant frame rate (60 times per second by default)."
 msgstr ""
 "이러한 부정확성을 피하기 위해, body의 속성에 접근해야 하는 모든 코드는 각 물"
 "리 단계 전에 일정한 프레임률(초당 60회 가 디폴트)로 호출되는 :ref:`Node."
@@ -224,13 +230,15 @@ msgstr ""
 "다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:90
-msgid "Collision Layers and Masks"
+#, fuzzy
+msgid "Collision layers and masks"
 msgstr "충돌 레이어와 마스크"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:92
+#, fuzzy
 msgid ""
-"One of the most powerful but frequently misunderstood collision features is "
-"the collision layer system. This system allows you to build up complex "
+"One of the most powerful, but frequently misunderstood, collision features "
+"is the collision layer system. This system allows you to build up complex "
 "interactions between a variety of objects. The key concepts are **layers** "
 "and **masks**. Each ``CollisionObject2D`` has 20 different physics layers it "
 "can interact with."
@@ -321,10 +329,11 @@ msgid "Area2D"
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:135
+#, fuzzy
 msgid ""
 "Area nodes provide **detection** and **influence**. They can detect when "
 "objects overlap and emit signals when bodies enter or exit. Areas can also "
-"be used to override physics properties such as gravity or damping in a "
+"be used to override physics properties, such as gravity or damping, in a "
 "defined area."
 msgstr ""
 "Area 노드는 **탐지** 및 **영향**을 제공합니다. 그들은 물체가 중복되는 때를 감"
@@ -336,7 +345,8 @@ msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
 msgstr ":ref:`Area2D <class_Area2D>` 에는 3가지 주요 용도가 있습니다:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:142
-msgid "Overriding physics parameters such as gravity in a given region."
+#, fuzzy
+msgid "Overriding physics parameters (such as gravity) in a given region."
 msgstr "특정 지역에서 중력과 같은 물리적 매개변수를 재정의합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:144
@@ -402,11 +412,12 @@ msgid "RigidBody2D"
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:170
+#, fuzzy
 msgid ""
 "This is the node that implements simulated 2D physics. You do not control a :"
-"ref:`RigidBody2D <class_RigidBody2D>` directly. Instead you apply forces to "
+"ref:`RigidBody2D <class_RigidBody2D>` directly. Instead, you apply forces to "
 "it and the physics engine calculates the resulting movement, including "
-"collisions with other bodies, and collision responses such as bouncing, "
+"collisions with other bodies, and collision responses, such as bouncing, "
 "rotating, etc."
 msgstr ""
 "이것은 시뮬레이션 된 2D 물리를 구현하는 노드입니다. 당신은:ref:`RigidBody2D "
@@ -433,8 +444,9 @@ msgstr ""
 "것에 영향을 받습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:183
+#, fuzzy
 msgid ""
-"When a rigid body is at rest and hasn't moved for a time, it goes to sleep. "
+"When a rigid body is at rest and hasn't moved for a while, it goes to sleep. "
 "A sleeping body acts like a static body, and its forces are not calculated "
 "by the physics engine. The body will wake up when forces are applied, either "
 "by a collision or via code."
@@ -468,7 +480,8 @@ msgstr ""
 "며 움직이지 않습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:195
-msgid "**Character** - Similar to \"Rigid\" mode, but the body can not rotate."
+#, fuzzy
+msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
 "**Character** - \"Rigid\" 모드와 유사하지만 body를 회전할 수는 없습니다."
 
@@ -498,15 +511,16 @@ msgstr ""
 "면 됩니다. 쌓기, 낙하 및 튕김은 물리 엔진에 의해 자동으로 계산됩니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:207
+#, fuzzy
 msgid ""
 "However, if you do wish to have some control over the body, you should take "
 "care - altering the ``position``, ``linear_velocity``, or other physics "
 "properties of a rigid body can result in unexpected behavior. If you need to "
 "alter any of the physics-related properties, you should use the :ref:"
-"`_integrate_forces() <class_RigidBody2D__integrate_forces>` callback instead "
-"of ``_physics_process()``. In this callback, you have access to the body's :"
-"ref:`Physics2DDirectBodyState <class_Physics2DDirectBodyState>`, which "
-"allows for safely changing properties and synchronizing them with the "
+"`_integrate_forces() <class_RigidBody2D_method__integrate_forces>` callback "
+"instead of ``_physics_process()``. In this callback, you have access to the "
+"body's :ref:`Physics2DDirectBodyState <class_Physics2DDirectBodyState>`, "
+"which allows for safely changing properties and synchronizing them with the "
 "physics engine."
 msgstr ""
 "하지만, 만약 여러분이 body를 어느 정도 통제하고 싶다면, 조심히 다루어야 합니"
@@ -533,12 +547,13 @@ msgstr ""
 "계산하도록 한다는 점에 유의해야 합니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:265
+#, fuzzy
 msgid ""
-"When a rigid body goes to sleep the ``_integrate_forces()`` function will "
-"not be called. To override this behavior you will need to keep the body "
+"When a rigid body goes to sleep, the ``_integrate_forces()`` function will "
+"not be called. To override this behavior, you will need to keep the body "
 "awake by creating a collision, applying a force to it, or by disabling the :"
-"ref:`can_sleep <class_RigidBody2D_can_sleep>` property. Be aware that this "
-"can have a negative effect on performance."
+"ref:`can_sleep <class_RigidBody2D_property_can_sleep>` property. Be aware "
+"that this can have a negative effect on performance."
 msgstr ""
 "rigid body가 잠에 들 때 ``_integrate_forces()`` 함수는 호출되지 않을 것입니"
 "다. 이 동작을 오버라이드하려면 충돌을 만들거나, 충돌을 적용하거나, 힘을 가하"
@@ -550,14 +565,16 @@ msgid "Contact reporting"
 msgstr "접촉 알림"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:274
+#, fuzzy
 msgid ""
 "By default, rigid bodies do not keep track of contacts, because this can "
 "require a huge amount of memory if many bodies are in the scene. To enable "
 "contact reporting, set the :ref:`contacts_reported "
-"<class_RigidBody2D_contacts_reported>` property to a non-zero value. The "
-"contacts can then be obtained via :ref:`Physics2DDirectBodyState."
-"get_contact_count() <class_Physics2DDirectBodyState_get_contact_count>` and "
-"related functions."
+"<class_RigidBody2D_property_contacts_reported>` property to a non-zero "
+"value. The contacts can then be obtained via :ref:`Physics2DDirectBodyState."
+"get_contact_count() "
+"<class_Physics2DDirectBodyState_method_get_contact_count>` and related "
+"functions."
 msgstr ""
 "기본적으로 rigid body는 접촉면을 추적하지 않는데, 많은 body가 장면에 있을 경"
 "우 엄청난 양의 메모리가 필요할 수 있기 때문입니다. 접촉 알림를 사용하려면 :"
@@ -567,10 +584,11 @@ msgstr ""
 "련 기능을 통해 얻을 수 있습니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:281
+#, fuzzy
 msgid ""
 "Contact monitoring via signals can be enabled via the :ref:`contact_monitor "
-"<class_RigidBody2D_contact_monitor>` property. See :ref:`RigidBody2D "
-"<class_RigidBody2D>` for the list of available signals."
+"<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
+"`RigidBody2D <class_RigidBody2D>` for the list of available signals."
 msgstr ""
 "신호를 통한 접점 모니터링은 :ref:`contact_monitor "
 "<class_RigidBody2D_contact_monitor>` 속성을 통해 활성화할 수 있습니다. 사용 "
@@ -621,7 +639,7 @@ msgstr ""
 "는 데 사용한 방법에 따라 달라집니다."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:307
-msgid ":ref:`move_and_collide <class_KinematicBody2D_move_and_collide>`"
+msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:309
@@ -646,7 +664,7 @@ msgid "Or to bounce off of the colliding object:"
 msgstr "충돌 개체가 튀어나오도록 하기 위해선 다음과 같이 하십시오:"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:374
-msgid ":ref:`move_and_slide <class_KinematicBody2D_move_and_slide>`"
+msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:376

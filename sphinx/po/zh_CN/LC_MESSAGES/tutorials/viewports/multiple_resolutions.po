@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "多分辨率"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:7
 msgid "Base size"
-msgstr "基本尺寸"
+msgstr "基本大小"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:9
 msgid ""
@@ -39,9 +39,9 @@ msgid ""
 "in the editor. This setting corresponds directly to the size of the blue "
 "rectangle in the 2D editor."
 msgstr ""
-"然而，它的作用并不完全明显; 引擎将*不*尝试将显示器切换到此分辨率。 相反，将此"
-"设置视为“设计大小”，即您在编辑器中使用的区域的大小。 此设置直接对应于2D编辑器"
-"中蓝色矩形的大小。"
+"然而，它的作用并不完全明显; 引擎将 *不* 尝试将显示器切换到此分辨率。 相反，将"
+"此设置视为“设计大小”，即您在编辑器中使用的区域的大小。 此设置直接对应于2D编辑"
+"器中蓝色矩形的大小。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:20
 msgid ""
@@ -49,12 +49,12 @@ msgid ""
 "are different from this base size. Godot offers many ways to control how the "
 "viewport will be resized and stretched to different screen sizes."
 msgstr ""
-"通常需要支持具有与该基本尺寸不同的屏幕和窗口尺寸的设备。 Godot提供了许多方法"
-"来控制视口的大小调整和拉伸到不同的屏幕尺寸。"
+"通常需要支持具有与该基本大小不同的屏幕和窗口大小的设备。 Godot提供了许多方法"
+"来控制视区的大小调整和拉伸到不同的屏幕大小。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:26
 msgid "Resizing"
-msgstr "调整尺寸"
+msgstr "调整大小"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:28
 msgid ""
@@ -67,8 +67,8 @@ msgid ""
 "by calling ``get_tree().get_root()`` or ``get_node(\"/root\")``)."
 msgstr ""
 "市面上有着各种各样的设备, 拥有各种类型的屏幕, 依次有着不同的像素密度和分辨"
-"率。处理所有的类型工作量巨大, 所以Godot试图让开发者的生活变得更简单。:ref:"
-"`Viewport <class_Viewport>` 节点提供了几个处理尺寸调整的函数, 而场景树的根节"
+"率。处理所有的类型工作量巨大, 所以Godot试图让开发者的生活变得更简单。 :ref:"
+"`Viewport <class_Viewport>` 节点提供了几个处理大小调整的函数, 而场景树的根节"
 "点始终是一个Viewport (场景将作为它的子节点被实例化, 并且始终可以通过调用"
 "``get_tree().get_root()`` 或``get_node(\"/root\")`` 来访问它。"
 
@@ -95,13 +95,13 @@ msgstr "拉伸设置位于项目设置中, 它只是一系列提供多种选项�
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:51
 msgid "Stretch Mode"
-msgstr "拉伸模式 （Stretch mode）"
+msgstr "拉伸模式 (Stretch mode)"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:53
 msgid ""
 "The \"Stretch Mode\" setting defines how the base size is stretched to fit "
 "the resolution of the window or screen."
-msgstr "“拉伸模式”设置定义如何拉伸基本尺寸以适合窗口或屏幕的分辨率。"
+msgstr "“拉伸模式”设置定义如何拉伸基本大小以适合窗口或屏幕的分辨率。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:58
 msgid ""
@@ -110,9 +110,9 @@ msgid ""
 "size, covers the entire viewport, and a diagonal :ref:`Line2D "
 "<class_Line2D>` is added on top of it:"
 msgstr ""
-"下面的动画使用仅16×9像素的“基本尺寸”来演示不同拉伸模式的效果。 单个精灵，大小"
-"也是16×9像素，覆盖整个视口，并在其上添加一个对角线：ref：`Line2D "
-"<class_Line2D>`："
+"下面的动画使用仅16×9像素的“基本大小”来演示不同拉伸模式的效果。 单个精灵，大小"
+"也是16×9像素，覆盖整个视区，并在其上添加一个对角线 :ref:`Line2D "
+"<class_Line2D>` :"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:68
 msgid ""
@@ -120,8 +120,8 @@ msgid ""
 "the scene corresponds to one pixel on the screen. In this mode, the "
 "\"Stretch Aspect\" setting has no effect."
 msgstr ""
-"拉伸模式= **禁用**（默认值）：不进行拉伸。 场景中的一个单元对应于屏幕上的一个"
-"像素。 在此模式下，“拉伸纵横比”设置无效。"
+"拉伸模式= **禁用**(默认值):不进行拉伸。 场景中的一个单元对应于屏幕上的一个像"
+"素。 在此模式下，“拉伸纵横比”设置无效。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:72
 msgid ""
@@ -141,10 +141,10 @@ msgid ""
 "between sprite pixels and screen pixels, which may result in scaling "
 "artifacts."
 msgstr ""
-"拉伸模式= ** 2D **：在此模式下，项目设置中显示/宽度和显示/高度中指定的大小将"
-"被拉伸以覆盖整个屏幕（考虑“拉伸方面”设置）。 这意味着所有内容都将直接以目标分"
-"辨率呈现。 3D将基本上不受影响，而在2D中，精灵像素和屏幕像素之间不再存在1：1的"
-"对应关系，这可能导致缩放伪像。"
+"拉伸模式= ** 2D**: 在此模式下，项目设置中显示/宽度和显示/高度中指定的大小将被"
+"拉伸以覆盖整个屏幕(考虑“拉伸方面”设置)。 这意味着所有内容都将直接以目标分辨率"
+"呈现。 3D将基本上不受影响，而在2D中，精灵像素和屏幕像素之间不再存在1:1的对应"
+"关系，这可能导致缩放伪像。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:85
 msgid ""
@@ -163,9 +163,9 @@ msgid ""
 "rendered to this viewport first. Finally, this viewport is scaled to fit the "
 "screen (taking the \"Stretch Aspect\" setting into account)."
 msgstr ""
-"拉伸模式= **Viewport**： 视区缩放意味着根 ：ref：`Viewport <class_Viewport>` "
-"的大小精确设置为项目设置的“显示”部分中指定的基本大小。 首先将场景渲染到此视"
-"区。 最后，缩放此视区以适合屏幕（考虑“拉伸方面”设置）。"
+"拉伸模式= **Viewport**: 视区缩放意味着根 :ref:`Viewport <class_Viewport>` 的"
+"大小精确设置为项目设置的“显示”部分中指定的基本大小。 首先将场景渲染到此视"
+"区。 最后，缩放此视区以适合屏幕(考虑“拉伸方面”设置)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:99
 msgid ""
@@ -176,7 +176,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:105
 msgid "Stretch Aspect"
-msgstr "拉伸比例（Stretch aspect）"
+msgstr "拉伸比例(Stretch aspect)"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:107
 msgid ""
@@ -204,8 +204,8 @@ msgid ""
 "fill the screen, even if it's wider or narrower. This may result in "
 "nonuniform stretching: things looking wider or taller than designed."
 msgstr ""
-"拉伸纵横比= **忽略**：拉伸屏幕时忽略纵横比。 这意味着原始分辨率将被拉伸以准确"
-"填充屏幕，即使它更宽或更窄。 这可能导致拉伸不均匀：看起来比设计更宽或更高的东"
+"拉伸纵横比= **忽略**:拉伸屏幕时忽略纵横比。 这意味着原始分辨率将被拉伸以准确"
+"填充屏幕，即使它更宽或更窄。 这可能导致拉伸不均匀:看起来比设计更宽或更高的东"
 "西。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:123
@@ -215,9 +215,9 @@ msgid ""
 "screen resolution, and black bars will be added to the top/bottom of the "
 "screen (\"letterboxing\") or the sides (\"pillarboxing\")."
 msgstr ""
-"拉伸纵横比= **保持**：拉伸屏幕时保持纵横比。 这意味着无论屏幕分辨率如何，视口"
-"都会保留其原始大小，并且黑色条将添加到屏幕的顶部/底部（“letterboxing”）或侧面"
-"（“pillarboxing”）。"
+"拉伸纵横比= **保持**:拉伸屏幕时保持纵横比。 这意味着无论屏幕分辨率如何，视区"
+"都会保留其原始大小，并且黑色条将添加到屏幕的顶部/底部(“letterboxing”)或侧面"
+"(“pillarboxing”)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:129
 msgid ""
@@ -236,17 +236,17 @@ msgid ""
 "content will be visible to the bottom). You can also think of this as "
 "\"Expand Vertically\"."
 msgstr ""
-"拉伸纵横比= **保持宽度**：拉伸屏幕时保持纵横比。 如果屏幕宽于基本尺寸，则在左"
-"侧和右侧添加黑条（柱框）。 但是如果屏幕高于基本分辨率，则视口将在垂直方向上生"
-"长（并且底部可以看到更多内容）。 您也可以将其视为“垂直展开”。"
+"拉伸纵横比= **保持宽度**:拉伸屏幕时保持纵横比。 如果屏幕宽于基本大小，则在左"
+"侧和右侧添加黑条(柱框)。 但是如果屏幕高于基本分辨率，则视区将在垂直方向上生长"
+"(并且底部可以看到更多内容)。 您也可以将其视为“垂直展开”。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:142
 msgid ""
 "This is usually the best option for creating GUIs or HUDs that scale, so "
 "some controls can be anchored to the bottom (:ref:`doc_size_and_anchors`)."
 msgstr ""
-"这通常是创建可扩展的GUI或HUD的最佳选择，因此一些控件可以锚定到底部（：ref："
-"`doc_size_and_anchors`）。"
+"这通常是创建可扩展的GUI或HUD的最佳选择，因此一些控件可以锚定到底部( :ref:"
+"`doc_size_and_anchors`)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:148
 msgid ""
@@ -257,15 +257,15 @@ msgid ""
 "content will be visible to the right). You can also think of this as "
 "\"Expand Horizontally\"."
 msgstr ""
-"拉伸纵横比= **保持高度**：拉伸屏幕时保持纵横比。 如果屏幕高于基本尺寸，则在顶"
-"部和底部添加黑条（letterboxing）。 但是，如果屏幕比基本分辨率宽，则视口将在水"
-"平方向上生长（并且右侧可以看到更多内容）。 您也可以将其视为“水平扩展”。"
+"拉伸纵横比= **保持高度**:拉伸屏幕时保持纵横比。 如果屏幕高于基本大小，则在顶"
+"部和底部添加黑条(letterboxing)。 但是，如果屏幕比基本分辨率宽，则视区将在水平"
+"方向上生长(并且右侧可以看到更多内容)。 您也可以将其视为“水平扩展”。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:155
 msgid ""
 "This is usually the best option for 2D games that scroll horizontally (like "
 "runners or platformers)."
-msgstr "这通常是水平滚动的2D游戏的最佳选择（如跑步者或平台游戏者）。"
+msgstr "这通常是水平滚动的2D游戏的最佳选择(如跑步者或平台游戏者)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:160
 msgid ""
@@ -275,9 +275,9 @@ msgid ""
 "the screen is wider than the base size) or in the vertical direction (if the "
 "screen is taller than the original size)."
 msgstr ""
-"拉伸纵横比= **展开**：拉伸屏幕时保持纵横比，但既不保持基本宽度也不保持高度。 "
-"根据屏幕宽高比，视口将在水平方向上较大（如果屏幕宽于基本尺寸）或在垂直方向上"
-"（如果屏幕高于原始大小）。"
+"拉伸纵横比= **展开**:拉伸屏幕时保持纵横比，但既不保持基本宽度也不保持高度。 "
+"根据屏幕宽高比，视区将在水平方向上较大(如果屏幕宽于基本大小)或在垂直方向上(如"
+"果屏幕高于原始大小)。"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:170
 msgid "Stretch Shrink"
@@ -309,7 +309,7 @@ msgid ""
 "but can be used to increase performance in 3D games by rendering them at a "
 "lower resolution."
 msgstr ""
-"如果将“拉伸模式”设置为“禁用”以外的其他值，则根视口的大小将按“缩小”因子缩小，"
+"如果将“拉伸模式”设置为“禁用”以外的其他值，则根视区的大小将按“缩小”因子缩小，"
 "并且输出中的像素按比例放大。 这对2D游戏很少有用，但可以通过以较低分辨率渲染来"
 "提高3D游戏的性能。"
 
@@ -318,11 +318,12 @@ msgid "From scripts"
 msgstr "来自脚本"
 
 #: ../../docs/tutorials/viewports/multiple_resolutions.rst:189
+#, fuzzy
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
-"set_screen_stretch()`` function (see :ref:`SceneTree."
-"set_screen_stretch<class_SceneTree_set_screen_stretch>`)."
+"set_screen_stretch()`` function (see :ref:`SceneTree.set_screen_stretch() "
+"<class_SceneTree_method_set_screen_stretch>`)."
 msgstr ""
-"要在运行时从脚本配置拉伸，请使用``get_tree（）。set_screen_stretch（）``函数"
-"（请参阅：ref：`SceneTree.set_screen_stretch "
-"<class_SceneTree_set_screen_stretch>`）。"
+"要在运行时从脚本配置拉伸，请使用 ``get_tree()。set_screen_stretch()`` 函数(请"
+"参阅 :ref:`SceneTree.set_screen_stretch "
+"<class_SceneTree_set_screen_stretch>`)。"

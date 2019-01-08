@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgid ""
 "specifying the type of data:"
 msgstr ""
 "数据包被设计成4个字节的填充。 所有值都是小端编码。 所有数据包都有一个4字节的"
-"头，表示成一个指定数据类型的整数："
+"头，表示成一个指定数据类型的整数:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:23
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:92
@@ -436,7 +436,7 @@ msgstr "max"
 msgid ""
 "Following this is the actual packet contents, which varies for each type of "
 "packet:"
-msgstr "以下是实际的数据包内容，每种类型的数据包都有所不同："
+msgstr "以下是实际的数据包内容，每种类型的数据包都有所不同:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:86
 msgid "0: null"
@@ -654,7 +654,7 @@ msgstr "4: :ref:`String<class_string>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:121
 msgid "String Length (in Bytes)"
-msgstr "字符串长度 （字节）"
+msgstr "字符串长度 (字节)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:123
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:321
@@ -912,7 +912,7 @@ msgstr "字符串长度或新格式 (val&0x80000000!=0 和 NameCount=val&0x7FFFF
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:316
 msgid "For old format:"
-msgstr "对于旧格式："
+msgstr "对于旧格式:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:324
 msgid "Padded to 4 bytes."
@@ -920,7 +920,7 @@ msgstr "填充到4个字节。"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:327
 msgid "For new format:"
-msgstr "对于新格式："
+msgstr "对于新格式:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:332
 msgid "Sub-Name Count"
@@ -993,7 +993,7 @@ msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:385
 msgid "Array Length (Bytes)"
-msgstr "数组长度（字节）"
+msgstr "数组长度(字节)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:387
 msgid "8..8+length"
@@ -1017,7 +1017,7 @@ msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:398
 msgid "Array Length (Integers)"
-msgstr "数组长度（整数）"
+msgstr "数组长度(整数)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:400
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:411
@@ -1034,7 +1034,7 @@ msgstr "22: :ref:`PoolRealArray<class_poolrealarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:409
 msgid "Array Length (Floats)"
-msgstr "数组长度（浮点数）"
+msgstr "数组长度(浮点数)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:411
 msgid "32 Bits IEE 754 Float"
@@ -1046,11 +1046,11 @@ msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:420
 msgid "Array Length (Strings)"
-msgstr "数组长度（字符串）"
+msgstr "数组长度(字符串)"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:423
 msgid "For each String:"
-msgstr "对于每个字符串："
+msgstr "对于每个字符串:"
 
 #: ../../docs/tutorials/misc/binary_serialization_api.rst:433
 msgid "Every string is padded to 4 bytes."

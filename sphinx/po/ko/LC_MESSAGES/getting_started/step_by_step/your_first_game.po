@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -174,17 +174,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "이 프로젝트에서, 우리는 Godot의 명명 규칙을 따를 것입니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"이 프로젝트에서는 Godot 명명 규칙을 따르겠습니다. 클래스(노드)는 "
-"``PascalCase`` 를 사용하고 변수와 함수는 ``snake_case`` 를 사용하며 상수는 "
-"``ALL_CAPS`` 를 사용합니다."
+"**GDScript**: 클래스(노드)는 ``PascalCase`` 를 사용하고', 변수와 함수는 "
+"``snake_case`` 를 사용하며, 상수는 ``ALL_CAPS`` 를 사용합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
 msgid ""
@@ -193,6 +191,10 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**:  클래스, export 변수 그리고 메쏘드는 PascalCase를 사용합니다. "
+"private 필드는  _camelCase를 사용합니다.  지역변수(local variables)와  파라미"
+"터는 camelCase를 사용합니다 (참고 :ref:`doc_c_sharp_styleguide`). 시그널을 연"
+"결할 때는 메쏘드 이름을 정확하게 입력하도록 주의하세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -329,6 +331,10 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"당신이 C#을 사용한다면, 새로운 외부변수(export variables)나 시그널을 보기 위"
+"해서 프로젝트 구성물(assemblies)를 (재)컴파일(build)할 필요가 있습니다. 이 컴"
+"파일은 편집기 의 밑에 \"Mono\" 단어를 클릭하여 Mono 패널이 나타나게 한 후 "
+"\"프로젝트 생성(Build)\" 버튼을 눌러서 수동으로 진행됩니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -339,15 +345,15 @@ msgstr ""
 "기를 알아보기 좋은 순간입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:209
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 "이제 우리는 ``_process()`` 함수를 사용해서 플레이어가 무엇을 할 지 정의할 수 "
-"있습니다. ``_process()`` 는 매 프레임마다 호출되므로, 게임에서 자주 업데이트 "
-"되는 것으로 생각되는 요소들에 쓸 것입니다. 이것이 우리가 만들 것들입니다:"
+"있습니다. ``_process()`` 는 매 프레임마다 호출되므로, 게임에서 자주 변하는 요"
+"소들을 업데이트하기 위해서 사용할 수 있습니다. 다음은 우리가 만들고자 하는 것"
+"입니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid "Check for input."
@@ -514,14 +520,13 @@ msgstr ""
 "할당을 이 코드와 비교해서 생각해보세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:395
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
-"씬을 다시 실행하고 애니메이션이 각 방향에 맞게 되는지 확인하세요. 잘 작동된다"
-"고 확신된다면, 플레이어가 게임이 시작할 때 안 보이도록 이 문장을 "
+"씬을 다시 실행하고 애니메이션이 각 방향으로 잘 움직이는지 확인하세요. 잘 작동"
+"된다고 확신된다면, 플레이어가 게임이 시작할 때 안 보이도록 이 문장을 "
 "``_ready()`` 에 추가하세요:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:410
@@ -787,13 +792,12 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "인스턴스에 대해 더 알고 싶다면 :ref:`doc_instancing` 로 가세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:632
-#, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
-"``Main`` 의 자식으로 다음의 노드들을 추가하고, 보이는 대로 이름을 지으세요 "
-"(값은 초 단위 입니다):"
+"``Main`` 의 자식으로 다음의 노드들을 추가하고, 여기에서 설명하는 대로 이름을 "
+"지으세요 (값은 초 단위 입니다):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:635
 msgid ""
@@ -914,13 +918,12 @@ msgid "Main script"
 msgstr "메인 스크립트"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:682
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "``Main`` 에 스크립트를 추가합니다. 스크립트의 위에 ``export (PackedScene)`` "
-"를 사용해서 우리가 인스턴스하길 원하는 적 씬을 고르도록 만듭니다."
+"를 사용해서 우리가 인스턴스하길 원하는 적 씬을 고를 수 있도록 만듭니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:722
 msgid ""
@@ -955,7 +958,6 @@ msgstr ""
 "하게 만들 것입니다. ``ScoreTimer`` 는 점수가 1씩 증가하게 합니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:789
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -963,9 +965,9 @@ msgid ""
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
 "``_on_MobTimer_timeout()`` 에서 우리는 몹 인스턴스를 만들고, ``Path2D`` 에 따"
-"라 무작위 시작점이 결정되고, 움직이는 적을 설정할 것입니다. ``PathFollow2D`` "
-"노드는 자동으로 경로를 따라 돌고, 그래서 이걸로 적들의 위치와 방향을 선택합니"
-"다."
+"라 무작위 시작점을 결정하고, 적이 움직이도록 설정할 것입니다. "
+"``PathFollow2D`` 노드는 자동으로 경로를 따라 돌고, 그래서 이걸로 적들의 위치"
+"와 방향을 선택하기 위해서 사용할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:795
 msgid ""
@@ -1247,9 +1249,8 @@ msgstr ""
 "보여주고, 타이틀 화면으로 돌아와서 \"Start\" 버튼을 보여줍니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
-#, fuzzy
 msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "이 함수는 점수가 변경될 때마다 ``Main`` 에서 호출됩니다."
+msgstr "이 함수는 점수가 변경될 때마다 ``Main`` 에 의해서 호출됩니다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1045
 msgid ""
@@ -1473,19 +1474,13 @@ msgid "Project files"
 msgstr "프로젝트 파일"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "You can find a completed version of this project at these locations:"
-msgstr ""
-"당신은 여기서 이 프로젝트의 완성 버전은 확인하실 수 있습니다: https://github."
-"com/kidscancode/Godot3_dodge/releases"
+msgstr "당신은 여기서 이 프로젝트의 완성 버전을 확인하실 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
-"당신은 여기서 이 프로젝트의 완성 버전은 확인하실 수 있습니다: https://github."
-"com/kidscancode/Godot3_dodge/releases"
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"

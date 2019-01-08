@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,17 +26,15 @@ msgid "Intro"
 msgstr "简介"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
-#, fuzzy
 msgid ""
 "A simple (but flexible enough for most uses) particle system is provided. "
 "Particle systems are used to simulate complex physical effects, such as "
 "sparks, fire, magic particles, smoke, mist, etc."
 msgstr ""
-"Godot提供了一种简单（但对于大多数用途而言足够灵活）的粒子系统。 粒子系统用于"
-"模拟复杂的物理效应，如火花，火焰，魔法粒子，烟雾，雾气，魔法等。"
+"Godot提供了一种简单(但对于大多数用途而言足够灵活)的粒子系统。 粒子系统用于模"
+"拟复杂的物理效应，如火花，火焰，魔法粒子，烟雾，雾气，魔法等。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
-#, fuzzy
 msgid ""
 "The idea is that a \"particle\" is emitted at a fixed interval and with a "
 "fixed lifetime. During its lifetime, every particle will have the same base "
@@ -70,7 +68,6 @@ msgid "ParticlesMaterial"
 msgstr "ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:32
-#, fuzzy
 msgid ""
 "To add a process material to your particles node, go to ``Process Material`` "
 "in your inspector panel. Click on the box next to ``Material``, and from the "
@@ -93,8 +90,8 @@ msgid ""
 "extended to animated textures via spritesheet). The texture is set via the "
 "relevant texture property:"
 msgstr ""
-"粒子系统使用单个纹理（将来可能会通过spritesheet扩展到动画纹理）。 纹理通过相"
-"关的纹理属性设置："
+"粒子系统使用单个纹理(将来可能会通过spritesheet扩展到动画纹理)。 纹理通过相关"
+"的纹理属性设置:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:53
 msgid "Time parameters"
@@ -109,7 +106,7 @@ msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
 "a new particle is created to replace it."
 msgstr ""
-"每个粒子存活的时间（以秒为单位）。 生命周期结束时，会创建一个新粒子来替换它。"
+"每个粒子存活的时间(以秒为单位)。 生命周期结束时，会创建一个新粒子来替换它。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:61
 msgid "Lifetime: 0.5"
@@ -169,21 +166,21 @@ msgid ""
 "forces particles to be emitted all together. Ranges are:"
 msgstr ""
 "如果有10个寿命为 ``1`` 的粒子，则意味着粒子将每0.1秒发射一次。 爆炸性参数改变"
-"了这一点，并迫使粒子一起发射。 范围是："
+"了这一点，并迫使粒子一起发射。 范围是:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:98
 msgid "0: Emit particles at regular intervals (default value)."
-msgstr "0：定期发射粒子（默认值）。"
+msgstr "0:定期发射粒子(默认值)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:99
 msgid "1: Emit all particles simultaneously."
-msgstr "1：同时发射所有粒子。"
+msgstr "1:同时发射所有粒子。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:101
 msgid ""
 "Values in the middle are also allowed. This feature is useful for creating "
 "explosions or sudden bursts of particles:"
-msgstr "中间的值也是允许的。 此功能对于创建爆炸或突然爆发的粒子非常有用："
+msgstr "中间的值也是允许的。 此功能对于创建爆炸或突然爆发的粒子非常有用:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:107
 msgid "Randomness"
@@ -231,7 +228,7 @@ msgid ""
 "If this rectangle is outside of the viewport, the engine will not render the "
 "particles on screen."
 msgstr ""
-"可见性矩形控制粒子在屏幕上的可见性。 如果此矩形位于视口之外，则引擎将不会在屏"
+"可见性矩形控制粒子在屏幕上的可见性。 如果此矩形位于视区之外，则引擎将不会在屏"
 "幕上渲染粒子。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:137
@@ -240,11 +237,10 @@ msgid ""
 "and its Height. The ``X`` and ``Y`` properties control the position of the "
 "upper-left corner of the rectangle, relative to the particle emitter."
 msgstr ""
-"矩形的 ``W`` 和 ``H`` 属性分别控制其宽度和高度。  ``X`` 和 ``Y`` 属性控制矩形"
+"矩形的 ``W`` 和 ``H`` 属性分别控制其宽度和高度。 ``X`` 和 ``Y`` 属性控制矩形"
 "左上角相对于粒子发射器的位置。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
-#, fuzzy
 msgid ""
 "You can have Godot generate a Visibility Rect automatically using the "
 "toolbar above the 2d view. To do so, select the Particles2D node and Click "
@@ -278,7 +274,7 @@ msgid ""
 "moved with it:"
 msgstr ""
 "默认情况下，此选项处于启用状态，这意味着粒子发射的空间是相对于节点。 如果移动"
-"节点，则随之移动所有粒子："
+"节点，则随之移动所有粒子:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:154
 msgid ""
@@ -286,7 +282,7 @@ msgid ""
 "is moved, already emitted particles are not affected:"
 msgstr ""
 "如果禁用，粒子将发射到全局空间，这意味着如果移动节点，则已发射的粒子不会受到"
-"影响："
+"影响:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:160
 msgid "Draw Order"
@@ -298,8 +294,8 @@ msgid ""
 "means particles are drawn according to their emission order (default). "
 "``Lifetime`` means they are drawn in order of remaining lifetime."
 msgstr ""
-"这可以控制绘制单个粒子的顺序。  ``Index`` 表示粒子根据它们的发射顺序被绘制"
-"（默认）。  ``Lifetime`` 表示它们按照剩余寿命的顺序被绘制。"
+"这可以控制绘制单个粒子的顺序。 ``Index`` 表示粒子根据它们的发射顺序被绘制(默"
+"认)。 ``Lifetime`` 表示它们按照剩余寿命的顺序被绘制。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:167
 msgid "ParticlesMaterial settings"
@@ -307,7 +303,7 @@ msgstr "ParticlesMaterial设置"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:169
 msgid "Particles2D > Process Material > Material > drop-down menu > Edit:"
-msgstr ""
+msgstr "Particles2D>处理材质>材质>下拉菜单>编辑:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:188
 msgid "Spread"
@@ -320,7 +316,7 @@ msgid ""
 "all directions (+/- 180)."
 msgstr ""
 "此参数是以度为单位的角度，它将在任一方向上随机添加到基础 ``Direction`` 。 "
-"``180`` 的传播将向所有方向发射（+/- 180）。"
+"``180`` 的传播将向所有方向发射(+/- 180)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Gravity"
@@ -340,8 +336,8 @@ msgid ""
 "sec). Speed might later be modified by gravity or other accelerations (as "
 "described further below)."
 msgstr ""
-"线速度是粒子发射的速度（以像素/秒为单位）。 以后可以通过重力或其他加速度来修"
-"改速度（下面将进一步描述）。"
+"线速度是粒子发射的速度(以像素/秒为单位)。 以后可以通过重力或其他加速度来修改"
+"速度(下面将进一步描述)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:213
 msgid "Angular Velocity"
@@ -359,7 +355,7 @@ msgstr "旋转速度"
 msgid ""
 "Spin velocity is the speed at which particles turn around their center (in "
 "degrees/sec)."
-msgstr "旋转速度是粒子围绕其中心转动的速度（以度/秒为单位）。"
+msgstr "旋转速度是粒子围绕其中心转动的速度(以度/秒为单位)。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:226
 msgid "Orbit Velocity"
@@ -418,7 +414,7 @@ msgstr "角度"
 msgid ""
 "Determines the initial angle of the particle (in degress). This parameter is "
 "mostly useful randomized."
-msgstr "确定粒子的初始角度（以度为单位）。 该参数主要用于随机化。"
+msgstr "确定粒子的初始角度(以度为单位)。 该参数主要用于随机化。"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid "Scale"
@@ -441,7 +437,6 @@ msgid "Hue variation"
 msgstr "色调变化"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:285
-#, fuzzy
 msgid ""
 "The ``Variation`` value sets the initial hue variation applied to each "
 "particle. The ``Variation Random`` value controls the hue variation "

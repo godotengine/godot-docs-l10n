@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "컨트롤(Control) 노드로 인터페이스를 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -35,12 +34,12 @@ msgid ""
 msgstr ""
 "컴퓨터 디스플레이, 모바일 폰, 그리고 TV 화면은 모든 크기와 모양을 갖습니다. "
 "게임을 출시하려면, 당신은 다양한 화면 비율과 해상도를 지원해야 합니다. 모든 "
-"플랫폼에 적용되는 반응 형 인터페이스를 만드는 것은 어려울 수 있습니다. 감사하"
-"게도, Godot의 든든한 도구들로 반응 형 인터페이스를 제작하고 관리할 수 있습니"
-"다. UI를 설계하기 위해선, 당신은 Control 노드 들을 사용할 겁니다. 이들은 에디"
+"플랫폼에 적용되는 반응형 인터페이스를 만드는 것은 어려울 수 있습니다. 감사하"
+"게도, Godot의 든든한 도구들로 반응형 인터페이스를 제작하고 관리할 수 있습니"
+"다. UI를 설계하기 위해선, 당신은 Control 노드들을 사용할 겁니다. 이들은 에디"
 "터 내 초록 아이콘을 갖고 있는 노드입니다. 이들은 많기 때문에 체력 막대부터 복"
 "잡한 애플리케이션까지 만들 수 있습니다. Godot의 모든 에디터와 플러그인은 이 "
-"노드 들을 사용합니다."
+"노드들을 사용합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
@@ -78,7 +77,6 @@ msgstr ""
 "your first game UI in Godot <doc_ui_game_user_interface>` 를 읽어주세요."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
-#, fuzzy
 msgid ""
 "Only use Control nodes when you design your interfaces. They have unique "
 "properties that allow them to work with one another. Other nodes, like "
@@ -86,7 +84,7 @@ msgid ""
 "with others, like the AnimationPlayer, Tween or the StreamPlayer. Control "
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
-"인터페이스를 설계할 때 오직 컨트롤 노드만 사용합니다. 그들은 서로 작동하게 하"
+"인터페이스를 설계할 때 오직 컨트롤 노드만 사용하세요. 그들은 서로 상호작용하"
 "는 독특한 속성을 지닙니다. Node2D, Sprite 등 과 같은 다른 노드들은 할 수 없습"
 "니다. 당신은 AnimationPlayer나 Tween, StreamPlayer같은 다른 노드들과 작동하"
 "는 일부 노드들을 사용할 수 있습니다. 컨트롤 노드는 Node2D와 같은 CanvasItems"
@@ -183,15 +181,14 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
-#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
 "**TextureRect** 은 UI 내에 텍스쳐나 이미지를 보여줍니다. 이것은 Sprite 노드"
-"와 비슷하지만 다중 크기 조절 모드를 제공합니다. Stretch Mode 속성을 설정하여 "
-"이미지의 변화를 바꿀 수 있습니다:"
+"와 비슷하지만 다중 크기 조절 모드를 제공합니다. Sprite 노드의 동작을 변경하려"
+"면 Stretch Mode 속성을 설정하세요:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -340,7 +337,6 @@ msgid "Label"
 msgstr "라벨(Label)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
-#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -348,11 +344,11 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
-"**Label** 은 문자를 화면에 보여줍니다. 당신은 이것의 모든 속성을 인스펙터의 "
+"**Label** 은 문자를 화면에 출력합니다. 당신은 이것의 모든 속성을 인스펙터의 "
 "Label 섹션에서 찾으실 수 있습니다. ``Text`` 속성에서 문자를 쓰고, 텍스트 상자"
-"의 크기를 조절하기 원한다면 Autowrap을 체크하세요. Autowrap이 체크가 풀려있으"
-"면, 노드의 크기를 조절할 수 없습니다. 당신은 Align과 Valign을 사용해서 문자"
-"를 가로와 세로로 배열할 수 있습니다."
+"의 크기에 맞추어 자동줄바꿈을 하여 글자가 표시되기를 원한다면 Autowrap을 체크"
+"하세요. Autowrap이 체크가 풀려있으면, 노드의 크기를 조절할 수 없습니다. 당신"
+"은 Align과 Valign을 사용해서 문자를 가로와 세로로 정렬할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
 msgid "Picture of a Label"
@@ -379,14 +375,14 @@ msgstr "min\\_size 속성으로 조절된 NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:167
 msgid "There are two workflows to build responsive UIs"
-msgstr "반응 형 UI를 만들기 위해 두 가지 워크플로우"
+msgstr "반응형 UI를 만들기 위한 두 가지 워크플로우가 있습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:169
 msgid ""
 "There are two workflows to build scalable and flexible interfaces in Godot:"
 msgstr ""
-"Godot에서 크기 조절이 가능하고 유연한 인터페이스를 만들기 위한 두 가지 워크플"
-"로우가 있습니다:"
+"Godot에서 확장성 있고 유연한 인터페이스를 만들기 위한 두 가지 워크플로우가 있"
+"습니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:171
 msgid ""
@@ -394,18 +390,17 @@ msgid ""
 "elements for you. They take control over their children."
 msgstr ""
 "원하는 만큼의 UI 요소들을 확장하고 배치할 수 있는 많은 컨테이너 노드들이 있습"
-"니다. 그들의 자식을 제어합니다."
+"니다. 컨테이너는 그들의 자식인 UI 요소들을 제어합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:172
 msgid ""
 "On the other side, you have the layout menu. It helps you to anchor, place "
 "and resize a UI element within its parent."
 msgstr ""
-"반대로, 당신은 레이아웃 메뉴가 있습니다. 이것은 UI 요소들을 부모 내에 앵커 "
-"및 배치하고 크기 조절하도록 돕습니다."
+"반대로, 당신은 레이아웃 메뉴가 있습니다. 이것은 UI 요소들을 부모 내에서 부모"
+"위치를 기준로 위치를 고정하거나 배치하고 크기 조절하도록 돕습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
-#, fuzzy
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
@@ -415,24 +410,25 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
-"두 가지 방법이 항상 호환되는 것은 아닙니다. 컨테이너는 자식을 제어하기 때문"
-"에, 레이아웃 메뉴를 그것들에게 사용할 수 없습니다. 각 컨테이너는 특정한 효과"
-"를 갖고 있으므로 당신은 작업 인터페이스를 얻기 위해 그들을 중첩할지도 모릅니"
-"다. 레이아웃 접근으로는 자식들을 아래에서 위로 작업합니다. 씬에 추가적이 컨테"
-"이너를 사용하지 않으므로 더 깨끗한 계층 구조를 만들 수 있지만, 항목을 행이나 "
-"열, 격자 등으로 배열하기는 더 어렵습니다."
+"두 가지 방법(컨테이너와 레이아웃)이 항상 호환되는 것은 아닙니다. 컨테이너는 "
+"자식을 제어하기 때문에, 레이아웃 메뉴를 그것들에게 사용할 수 없습니다. 각 컨"
+"테이너는 특정한 효과를 갖고 있으므로 당신은 제대로 동작하는 인터페이스를 얻"
+"기 위해 그들을 중첩해서 사용할지도 모릅니다. 레이아웃 접근으로는 자식들을 계"
+"층상 아래에서 위로 작업합니다. 씬에 추가적인 컨테이너를 사용하지 않으므로 더 "
+"깨끗한 계층 구조를 만들 수 있지만, 항목을 행이나 열, 격자 등으로 배열하기는 "
+"더 어렵습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:176
 msgid ""
 "As you create UIs for your games and tools, you'll develop a sense for what "
 "fits best in each situation."
 msgstr ""
-"게임과 도구를 위해 UI를 만들 때, 당신은 각 상황에 가장 잘 맞는 것을 보는 감각"
-"을 기르게 될 것입니다."
+"게임과 도구를 위해 UI를 만들 때, 당신은 각 상황에서 무엇이 가장 적당한지에 대"
+"한 감각을 기르게 될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:180
 msgid "Place UI elements precisely with anchors"
-msgstr "앵커로 UI 요소를 정밀하게 배치하기"
+msgstr "앵커를 사용하여 UI 요소를 정밀하게 배치하세요"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:182
 msgid ""
@@ -474,7 +470,7 @@ msgstr "뷰포트 내의 레이아웃 메뉴"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:206
 msgid "Anchors are relative to the parent container"
-msgstr "앵커는 부모 컨테이너와 관련이 있습니다"
+msgstr "앵커는 부모 컨테이너를 기준로 합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:208
 msgid ""
@@ -498,12 +494,12 @@ msgid ""
 "Margins are relative to the anchor position, which is relative to the "
 "anchors. In practice, you'll often let the container update margins for you"
 msgstr ""
-"마진은 앵커 위치에 상대적이고, 앵커 위치는 앵커와 상대적입니다. 실습에서, 당"
-"신은 종종 컨테이너가 마진을 업데이트하도록 할 것입니다"
+"마진은 앵커 위치에 상대적이고, 앵커 위치는 앵커와 상대적입니다. 실제의 경우, "
+"당신은 종종 컨테이너가 마진을 업데이트하도록 할 것입니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:223
 msgid "Margins change with the anchor"
-msgstr "앵커로 마진을 변화"
+msgstr "마진은 앵커가 변하면 같이 변합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:225
 msgid ""
@@ -514,11 +510,11 @@ msgid ""
 "there's no parent, the margins will be relative to the node's own bounding "
 "Rectangle, set in the Rect section, in the inspector."
 msgstr ""
-"컨트롤 노드를 움직이고 크기를 조정할 때 마진은 자동으로 업데이트 됩니다. 그들"
-"은 컨트롤 노드의 모서리에서 앵커까지의 거리를 나타내고, 이는 부모 컨트롤 노드"
-"나 컨테이너에 상대적입니다. 이것이 우리가 곧 알게 될, 컨트롤 노드가 항상 컨테"
-"이너에 있는 이유입니다. 부모가 없다면, 마진은 인스펙터 내에 Rect 섹션에 설정"
-"된, 자신의 경계 사각형에 상대적으로 될 것입니다."
+"컨트롤 노드를 움직이고 크기를 조정할 때 마진은 자동으로 업데이트 됩니다. 마진"
+"은 컨트롤 노드의 모서리에서 앵커까지의 거리를 나타내고, 앵커는 부모 컨트롤 노"
+"드나 컨테이너의 위치에 대해 상대적입니다. 이것이 우리가 곧 알게 될, 컨트롤 노"
+"드가 항상 컨테이너에 있는 이유입니다. 부모가 없다면, 마진은 인스펙터 내에 "
+"Rect 섹션에 설정된, 자신의 경계 사각형에 상대적으로 될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:235
 msgid "Margins on a CenterContainer set to the \"Full Rect\" anchor"
@@ -534,16 +530,17 @@ msgid ""
 "menu? Use the VBoxContainer. More on these below."
 msgstr ""
 "한번 앵커 위치를 바꾸거나 컨트롤 노드를 컨테이너 안에 넣어보세요: 마진은 업데"
-"이트 될 것입니다. 당신은 거의 마진을 정석대로 편집하진 않을 것입니다. 항상 당"
+"이트 될 것입니다. 당신은 거의 마진을 수동으로 편집하진 않을 것입니다. 항상 당"
 "신을 도와줄 컨테이너를 골라보세요; Godot는 모든 일반적인 경우를 해결하기 위"
-"해 노드를 가지고 왔습니다. 체력 막대와 화면 테두리 사이에 빈 공간이 필요한가"
-"요? MarginContainer를 사용하세요. 세로 메뉴를 만들고 싶나요? VBoxContainer를 "
-"사용하세요. 아래에서 더 자세히 설명하겠습니다."
+"한 노드를 제공합니다. 체력 막대와 화면 테두리 사이에 빈 공간이 필요한가요? "
+"MarginContainer를 사용하세요. 세로 메뉴를 만들고 싶나요? VBoxContainer를 사용"
+"하세요. 아래에서 더 자세히 설명하겠습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:246
 msgid "Use size tags to change how UI elements fill the available space"
 msgstr ""
-"사이즈 태그를 사용해서 UI 요소가 이용 가능한 영역을 채우는 방식을 바꾸기"
+"UI 요소가 이용 가능한 영역을 채우는 방식을 바꾸기 위해서 사이즈 태그를 사용하"
+"세요"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:248
 msgid ""
@@ -557,15 +554,15 @@ msgid ""
 msgstr ""
 "모든 컨트롤 노드는 Size Flags를 가지고 있습니다. 이들은 컨테이너가 어떻게 UI "
 "요소들이 크기가 조정될 지를 말합니다. 만약 \"Fill\" 플래그를 Horizontal이나 "
-"Vertical에 추가한다면, 노드의 경계 사각형은 가능한 모든 공간을 차지할 것이지"
-"만, 형제 노드에 의해 크기를 조절할 겁니다. 만약 HBoxContainer에 3개의 "
-"TextureRect 노드가 있고, \"Fill\" 플래그가 두 방향 모두에 있다면, 그들은 각자"
-"의 가능한 공간의 3분의 1을 차지하지만 그 외는 사용하지 않을 겁니다. 컨테이너"
-"는 노드를 지배하여 크기를 자동으로 조절합니다."
+"Vertical 속성에 추가한다면, 노드의 경계 사각형은 가능한 모든 공간을 차지할 것"
+"이지만, 형제 노드를 가리지 않는 한에서 크기를 조절할 겁니다. 만약 "
+"HBoxContainer에 3개의 TextureRect 노드가 있고, \"Fill\" 플래그가 두 방향 모두"
+"에 있다면, 그들은 각자의 가능한 공간의 3분의 1을 차지하고 그 외는 사용하지 않"
+"을 겁니다. 컨테이너는 노드를 제어하여 크기를 자동으로 조절합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:258
 msgid "3 UI elements in an HBoxContainer, they align horizontally"
-msgstr "HBoxContainer에 있는 3개의 UI 요소들, 수평으로 정렬됨"
+msgstr "HBoxContainer에 있는 3개의 UI 요소들, 이들은 수평으로 정렬됩니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:260
 msgid ""
@@ -580,22 +577,23 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:266
 msgid ""
 "The same example as above, but the center node has the \"Expand\" size flag"
-msgstr "위의 샘플 예제에서, 가운데 노드에 \"Expand\" 사이즈 플래그를 줌"
+msgstr ""
+"위와 같은 샘플 예제에서, 가운데 노드는 \"Expand\" 사이즈 플래그가 설정되어 있"
+"습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:269
 msgid ""
 "You'll need some practice to understand the size tags, as their effect can "
 "change quite a bit depending on how you set up your interface."
 msgstr ""
-"당신이 사이즈 태그를 이해하려면 몇 번의 연습이 필요할 겁니다, 그 효과로 당신"
-"이 인터페이스를 설정하는 방식이 상당히 달라질 수 있습니다."
+"당신이 사이즈 태그를 이해하려면 몇 번의 연습이 필요할 겁니다, 왜냐하면 당신"
+"이 인터페이스를 만드는 방식에 따라서 결과가 많이 달라지기 때문입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:273
 msgid "Arrange control nodes automatically with containers"
-msgstr "컨테이너로 컨트롤 노드를 자동으로 배열하기"
+msgstr "컨테이너에 컨트롤 노드를 자동으로 배열하기"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
-#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
@@ -604,8 +602,8 @@ msgid ""
 msgstr ""
 "컨테이너는 자동으로 모든 자식 컨트롤 노드와 자식 컨테이너들을 열이나 행이나 "
 "그 밖의 형태로 배열합니다. 컨테이너를 사용해서 이것의 경계 사각형 내에서 인터"
-"페이스나 중심 노드가 패딩하도록 합니다. 모든 내장 컨테이너는 에디터 내에서 업"
-"데이트 되므로 컨테이너가 작동되는 것을 바로 확인하실 수 있습니다."
+"페이스나 중심 노드 주위에 패딩을 추가합니다. 모든 내장 컨테이너는 에디터 내에"
+"서 업데이트 되므로 컨테이너가 작동되는 것을 바로 확인하실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""

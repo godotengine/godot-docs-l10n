@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgid ""
 "the **Project Manager, docks, workspaces** and everything you need to know "
 "to get started with the engine."
 msgstr ""
-"这篇教程将带你过一遍Godot的界面。我们来看一下 **项目管理器、 各面板、 工作区"
+"这篇教程将带您过一遍Godot的界面。我们来看一下 **项目管理器、 各面板、 工作区"
 "** 以及开始使用引擎所需的一切。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
@@ -39,7 +39,7 @@ msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
-"当你启动Godot，看到的第一个窗口就是项目管理器。它可以让你创建、移除、导入或运"
+"当您启动Godot，看到的第一个窗口就是项目管理器。它可以让您创建、移除、导入或运"
 "行游戏项目。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
@@ -50,7 +50,7 @@ msgstr "|image0|"
 msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
-msgstr "你可以在右上角找到下拉菜单切换编辑器语言。"
+msgstr "您可以在右上角找到下拉菜单切换编辑器语言。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 msgid "|image1|"
@@ -60,7 +60,7 @@ msgstr "|image1|"
 msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos to help you get started faster."
-msgstr "在 **模板** 选项卡里你可以下载开源的项目模板和示例来帮助你更快入门。"
+msgstr "在 **模板** 选项卡里您可以下载开源的项目模板和示例来帮助您更快入门。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 msgid "|image2|"
@@ -99,15 +99,15 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
-"当你看到右侧出现绿色对号，表明引擎检测到了这个空目录，点击 `创建` ，Godot会为"
-"你创建项目并打开编辑器。"
+"当您看到右侧出现绿色对号，表明引擎检测到了这个空目录，点击 `创建` ，Godot会为"
+"您创建项目并打开编辑器。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
-"下次打开Godot时，就可以看到列表里有你的新项目了。双击它可以打开编辑器。"
+"下次打开Godot时，就可以看到列表里有您的新项目了。双击它可以打开编辑器。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 msgid "|image5|"
@@ -119,7 +119,7 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
-"你可以用类似方式导入现有项目。点击导入按钮，找到含有 ``project.godot`` 文件的"
+"您可以用类似方式导入现有项目。点击导入按钮，找到含有 ``project.godot`` 文件的"
 "项目目录就可以导入并编辑它了。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
@@ -127,9 +127,8 @@ msgid "|image7|"
 msgstr "|image7|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
-#, fuzzy
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr "如果目录路径正确你会看到绿色的对号。"
+msgstr "如果目录路径正确您会看到绿色的对号。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 msgid "|image8|"
@@ -140,13 +139,12 @@ msgid "Your first look at Godot’s editor"
 msgstr "初识Godot编辑器"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
-#, fuzzy
 msgid ""
 "Welcome to Godot! With your project open, you should see the editor’s "
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
-"欢迎来到Godot！随着你的项目打开，你应该能看到编辑器界面正处于3D视图状态。你可"
+"欢迎来到Godot！随着您的项目打开，您应该能看到编辑器界面正处于3D视图状态。您可"
 "以在界面顶部切换当前工作区。点击2D切换到2D工作区。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
@@ -155,7 +153,7 @@ msgstr "|image9|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 msgid "Now you should see this interface, with empty docks on the right side."
-msgstr "现在你应该能看到这个界面，在右侧有着空面板。"
+msgstr "现在您应该能看到这个界面，在右侧有着空面板。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 msgid "|image10|"
@@ -166,27 +164,25 @@ msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
-"在顶部，从左到右，你可以看到 **主菜单** 、**工作区** 以及 **各调试按钮** 。"
+"在顶部，从左到右，您可以看到 **主菜单** 、**工作区** 以及 **各调试按钮** 。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
-#, fuzzy
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
-"在左侧你可以看到 **文件系统面板** ，在这里你可以管理你的项目文件和资源。"
+"在左侧您可以看到 **文件系统面板** ，在这里您可以管理您的项目文件和资源。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 msgid "|image11|"
 msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
-#, fuzzy
 msgid ""
 "On the right side, you’ll find the **Scene dock**, which lists the active "
 "scene’s content and the **Inspector** in the bottom right corner."
 msgstr ""
-"在右侧你可以找到 **场景面板**，列出了场景的内容。还可以找到 **属性面板**，在"
+"在右侧您可以找到 **场景面板**，列出了场景的内容。还可以找到 **属性面板**，在"
 "右下方。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
@@ -194,13 +190,12 @@ msgid "|image12|"
 msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
-#, fuzzy
 msgid ""
 "In the center, you have the **Toolbar** at the top, where you’ll find tools "
 "to move, scale or lock your scene’s objects. It changes as you jump to "
 "different workspaces."
 msgstr ""
-"中间上方有 **工具栏**，你可以用它移动、缩放或锁定你的场景物件。它会随着工作区"
+"中间上方有 **工具栏**，您可以用它移动、缩放或锁定您的场景物件。它会随着工作区"
 "的不同而切换。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
@@ -227,14 +222,14 @@ msgstr "工作区"
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:102
 msgid ""
 "You can see four workspace buttons at the top: 2D, 3D, Script and AssetLib."
-msgstr "你可以看到顶部有四个工作区按钮：2D、3D、脚本和资源库。"
+msgstr "您可以看到顶部有四个工作区按钮:2D、3D、脚本和资源馆。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
 "You’ll use the **2D workspace** for all types of games. On top of 2D games "
 "that is where you’ll build your interfaces. Press F1 to access it. |image15|"
 msgstr ""
-"你可以为所有类型的游戏使用 **2D工作区** 。非2D游戏你可以用它创建界面。按下F1"
+"您可以为所有类型的游戏使用 **2D工作区** 。非2D游戏您可以用它创建界面。按下F1"
 "切换。\n"
 "|image15|"
 
@@ -242,7 +237,7 @@ msgstr ""
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
-msgstr "在 **3D工作区** 里，你可以使用网格、光照并设计3D游戏关卡。按下F2切换。"
+msgstr "在 **3D工作区** 里，您可以使用网格、光照并设计3D游戏关卡。按下F2切换。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
 msgid "|image16|"
@@ -280,7 +275,7 @@ msgstr "|image17|"
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
-msgstr "最后， **资源库** 有免费的插件、脚本、资源可以用到你的项目中。"
+msgstr "最后， **资源馆** 有免费的插件、脚本、资源可以用到您的项目中。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
 msgid "Modify the interface"
@@ -292,18 +287,18 @@ msgid ""
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
-"Godot界面存在于单一窗口中。你不能把它分离到多个屏幕中，不过你可以使用外置的代"
+"Godot界面存在于单一窗口中。您不能把它分离到多个屏幕中，不过您可以使用外置的代"
 "码编辑器如Atom或Visual Studio。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
 msgid "Move and resize docks"
-msgstr "移动、修改面板尺寸"
+msgstr "移动、修改面板大小"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:139
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
-msgstr "点击并拖动面板边缘可以修改水平或垂直尺寸。"
+msgstr "点击并拖动面板边缘可以修改水平或垂直大小。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
 msgid "|image18|"

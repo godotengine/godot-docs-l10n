@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:4
 msgid "Compiling for Universal Windows Platform"
-msgstr "为UWP平台（Universal Windows Platform）编译"
+msgstr "为UWP平台(Universal Windows Platform)编译"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:9
 msgid "Requirements"
@@ -27,7 +27,7 @@ msgstr "需求"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:11
 msgid "SCons (see :ref:`doc_compiling_for_windows` for more details)."
-msgstr "SCons（有关详细信息，请参阅：ref：`doc_compiling_for_windows`）。"
+msgstr "SCons(有关详细信息，请参阅 :ref:`doc_compiling_for_windows`)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:12
 msgid ""
@@ -35,27 +35,27 @@ msgid ""
 "`doc_compiling_for_windows` about the caveats of installing it and the "
 "various prompts."
 msgstr ""
-"Visual Studio 2015 Update 2.它可能适用于早期版本。 请参阅：ref："
+"Visual Studio 2015 Update 2.它可能适用于早期版本。 请参阅 :ref:"
 "`doc_compiling_for_windows`，了解安装它的注意事项和各种提示。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:15
 msgid "Windows 10 SDK (can be selected in Visual Studio installation)."
-msgstr "Windows 10 SDK（可在Visual Studio安装中选择）。"
+msgstr "Windows 10 SDK(可在Visual Studio安装中选择)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:16
 msgid ""
 "`ANGLE source <https://github.com/Microsoft/angle>`__. Use the ``ms_master`` "
 "(default) branch. Keep it in a path without spaces to avoid problems."
 msgstr ""
-"`ANGLE source <https://github.com/Microsoft/angle>`__。 使用``ms_master``（默"
-"认）分支。 将其保存在没有空格的路径中以避免出现问题。"
+"`ANGLE source <https://github.com/Microsoft/angle>`__。 使用 ``ms_master`` "
+"(默认)分支。 将其保存在没有空格的路径中以避免出现问题。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:20
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
-"有关Godot的SCons用法的一般概述，请参阅 ：ref："
+"有关Godot的SCons用法的一般概述，请参阅 :ref:"
 "`doc_introduction_to_the_buildsystem`。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:24
@@ -68,7 +68,7 @@ msgid ""
 "you want to build. Check :ref:`doc_compiling_for_windows` to see how these "
 "prompts work."
 msgstr ""
-"您需要为要构建的目标体系结构打开正确的Visual Studio提示符。 检查：ref："
+"您需要为要构建的目标体系结构打开正确的Visual Studio提示符。 检查 :ref:"
 "`doc_compiling_for_windows`以查看这些提示是如何工作的。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:30
@@ -77,8 +77,8 @@ msgid ""
 "and ARM (32-bits). For the latter, you can run ``vcvarsall.bat`` with "
 "``x86_arm`` or ``amd64_arm`` as argument to set the environment."
 msgstr ""
-"UWP有三种目标体系结构：x86（32位），x64（64位）和ARM（32位）。 对于后者，您可"
-"以使用``x86_arm``或``amd64_arm``作为参数运行``vcvarsall.bat``来设置环境。"
+"UWP有三种目标体系结构:x86(32位)，x64(64位)和ARM(32位)。 对于后者，您可以使用 "
+"``x86_arm`` 或``amd64_arm``作为参数运行``vcvarsall.bat``来设置环境。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:34
 msgid ""
@@ -86,8 +86,8 @@ msgid ""
 "source code. The build process will also build ANGLE to produce the required "
 "DLLs for the selected architecture."
 msgstr ""
-"将``ANGLE_SRC_PATH``设置为您下载ANGLE源代码的目录。 构建过程还将构建ANGLE以生"
-"成所选体系结构所需的DLL。"
+"将 ``ANGLE_SRC_PATH`` 设置为您下载ANGLE源代码的目录。 构建过程还将构建ANGLE以"
+"生成所选体系结构所需的DLL。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:38
 msgid ""
@@ -104,8 +104,8 @@ msgid ""
 "You need all three architectures with ``debug`` and ``release`` templates to "
 "be able to export."
 msgstr ""
-"要使用编辑器导出，您需要正确构建包模板。 您需要使用``debug``和``release``模板"
-"的所有三种架构才能导出。"
+"要使用编辑器导出，您需要正确构建包模板。 您需要使用 ``debug`` 和``release``模"
+"板的所有三种架构才能导出。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:49
 msgid ""
@@ -125,8 +125,8 @@ msgid ""
 "like ``godot.uwp.opt.debug.32.x86.exe`` (with variations for each target/"
 "arch)."
 msgstr ""
-"最后你的``bin``文件夹将有``.exe``二进制文件，其名称类似于``godot.uwp.opt."
-"debug.32.x86.exe``（每个目标/拱的变体）。"
+"最后您的 ``bin`` 文件夹将有 ``.exe`` 二进制文件，其名称类似于 ``godot.uwp."
+"opt.debug.32.x86.exe`` (每个目标/拱的变体)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:61
 msgid ""
@@ -137,17 +137,17 @@ msgid ""
 "putting them along with the executable."
 msgstr ""
 "将其中一个复制到Godot源文件夹中的``misc / dist / uwp_template``，并将二进制文"
-"件重命名为``godot.uwp.exe``。 从ANGLE源代码，在``winrt / 10 / src / Release_"
-"％arch％``（``％arch％``可以是``Win32``，``x64``或``ARM``）下， 获取``libEGL."
-"dll``和``libGLESv2.dll``，将它们与可执行文件放在一起。"
+"件重命名为 ``godot.uwp.exe`` 。 从ANGLE源代码，在``winrt / 10 / src / "
+"Release_％arch％``(``％arch％``可以是``Win32``， ``x64`` 或``ARM``)下， 获取 "
+"``libEGL.dll`` 和``libGLESv2.dll``，将它们与可执行文件放在一起。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:67
 msgid ""
 "Add the files in the ``uwp_template`` folder to a ZIP. Rename the resulting "
 "Zip according to the target/architecture of the template::"
 msgstr ""
-"将``uwp_template``文件夹中的文件添加到ZIP中。 根据模板的目标/体系结构重命名生"
-"成的Zip ::"
+"将 ``uwp_template`` 文件夹中的文件添加到ZIP中。 根据模板的目标/体系结构重命名"
+"生成的Zip ::"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:77
 msgid ""
@@ -182,8 +182,8 @@ msgid ""
 "``install.bat`` script file. This will install the Visual Studio project "
 "templates for ANGLE apps."
 msgstr ""
-"在ANGLE源文件夹中，打开``templates``并双击``install.bat``脚本文件。 这将为"
-"ANGLE应用程序安装Visual Studio项目模板。"
+"在ANGLE源文件夹中，打开 ``templates`` 并双击 ``install.bat`` 脚本文件。 这将"
+"为ANGLE应用程序安装Visual Studio项目模板。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:95
 msgid ""
@@ -202,8 +202,8 @@ msgid ""
 "Universal)\" project template, which can be found under the ``Visual C++/"
 "Windows/Universal`` category."
 msgstr ""
-"使用“App for OpenGL ES（Windows Universal）”项目模板创建一个新的Windows应用程"
-"序项目，该模板位于“Visual C ++ / Windows / Universal”类别下。"
+"使用“App for OpenGL ES(Windows Universal)”项目模板创建一个新的Windows应用程序"
+"项目，该模板位于“Visual C++ / Windows / Universal”类别下。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:104
 msgid ""
@@ -215,8 +215,8 @@ msgid ""
 msgstr ""
 "这是一个已经设置了ANGLE依赖项的基础项目。 但是，默认情况下，它会选择通常性能"
 "较差的DLL的调试版本。 因此，在“二进制”过滤器中，单击其中的每个DLL并在“属性”窗"
-"口中，将相对路径从“Debug_Win32”更改为“Release_Win32”（或设备"
-"的“Release_ARM``”）。"
+"口中，将相对路径从“Debug_Win32”更改为“Release_Win32”(或设备"
+"的“Release_ARM``”)。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:110
 msgid ""
@@ -224,7 +224,7 @@ msgid ""
 "the Godot executable for UWP you have. In the \"Properties\" window, set "
 "\"Content\" to ``True`` so it's included in the project."
 msgstr ""
-"在相同的“二进制”过滤器中，选择“添加>现有项”并指向您拥有的UWP的戈多可执行文"
+"在相同的“二进制”过滤器中，选择“添加>现有项”并指向您拥有的UWP的Godot可执行文"
 "件。 在“属性”窗口中，将“内容”设置为“真”，以便它包含在项目中。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:114
@@ -236,11 +236,11 @@ msgid ""
 "the ``EntryPoint`` attribute to ``GodotUWP.App``. This will ensure that the "
 "Godot executable is correctly called when the app starts."
 msgstr ""
-"右键单击``Package.appxmanifest``文件并选择“Open With ...> XML（Text）"
-"Editor”。 在``Package / Applications / Application``元素中，将``$ "
-"targetnametoken $ .exe``中的``Executable``属性替换为``godot.uwp.exe``（或者调"
-"用你的Godot可执行文件）。 同时将``EntryPoint``属性更改为``GodotUWP.App``。 这"
-"将确保在应用程序启动时正确调用Godot可执行文件。"
+"右键单击 ``Package.appxmanifest`` 文件并选择“Open With ...> "
+"XML(Text)Editor”。 在``Package / Applications / Application``元素中，将``$ "
+"targetnametoken $ .exe``中的``Executable``属性替换为``godot.uwp.exe``(或者调"
+"用您的Godot可执行文件)。 同时将 ``EntryPoint`` 属性更改为 ``GodotUWP."
+"App`` 。 这将确保在应用程序启动时正确调用Godot可执行文件。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:121
 msgid ""
@@ -250,10 +250,10 @@ msgid ""
 "> Existing Item\" command and set their \"Content\" property to ``True`` so "
 "they're copied to the app."
 msgstr ""
-"在Visual Studio项目文件夹中创建一个名为``game``的文件夹（* not * a filter），"
-"您可以在其中放置``data.pck``文件或Godot项目文件。 之后，请确保使用“添加>现有"
-"项目”命令将其全部包含在内，并将其“内容”属性设置为“True”，以便将它们复制到应用"
-"程序中。"
+"在Visual Studio项目文件夹中创建一个名为 ``game`` 的文件夹(* not * a filter)，"
+"您可以在其中放置 ``data.pck`` 文件或Godot项目文件。 之后，请确保使用“添加>现"
+"有项目”命令将其全部包含在内，并将其“内容”属性设置为“True”，以便将它们复制到应"
+"用程序中。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:127
 msgid ""
@@ -265,7 +265,7 @@ msgid ""
 msgstr ""
 "为了简化工作流程，您可以打开“解决方案属性”，然后在“配置”部分中取消选中应用程"
 "序的“构建”选项。 您仍然必须至少构建一次以生成一些所需的文件，您可以通过右键单"
-"击“解决方案资源管理器”中的项目（*不是解决方案）并选择“构建”来实现。"
+"击“解决方案资源管理器”中的项目(*不是解决方案)并选择“构建”来实现。"
 
 #: ../../docs/development/compiling/compiling_for_uwp.rst:133
 msgid ""
@@ -274,4 +274,4 @@ msgid ""
 "launch faster."
 msgstr ""
 "现在您可以运行该项目，您的应用程序应该打开。 您也可以使用“Debug”菜单中"
-"的“Start Without Debugging”（Ctrl + F5）来使其更快启动。"
+"的“Start Without Debugging”(Ctrl + F5)来使其更快启动。"

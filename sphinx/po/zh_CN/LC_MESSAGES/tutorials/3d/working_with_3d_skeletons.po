@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,52 +27,58 @@ msgid ""
 "`class_Skeleton` node and class were designed mainly to support importing "
 "skeletal animations as a set of transformation matrices."
 msgstr ""
-"戈多3D骨架支持目前相当简陋。  ：ref：`class_Skeleton` 节点和类的设计主要是为"
-"了支持将骨架动画导入为一组转换矩阵。"
+"Godot3D骨架支持目前相当简陋。 :ref:`class_Skeleton` 节点和类的设计主要是为了"
+"支持将骨架动画导入为一组转换矩阵。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:11
 msgid "Skeleton node"
 msgstr "骨架节点"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:13
+#, fuzzy
 msgid ""
 "The Skeleton node can be directly added anywhere you want on a scene. "
-"Usually the target mesh is a child of Skeleton, as it easier to manipulate "
-"this way, since Transforms within a skeleton are relative to where the "
-"Skeleton is. But you can specify a Skeleton node in every MeshInstance."
+"Usually the target mesh is a child of Skeleton, as it is easier to "
+"manipulate this way, since Transforms within a skeleton are relative to "
+"where the Skeleton is. But you can specify a Skeleton node in every "
+"MeshInstance."
 msgstr ""
 "Skeleton节点可以直接添加到场景中的任何位置。 通常目标网格是Skeleton的子节点，"
 "因为它更容易以这种方式操作，因为骨架内的变换是相对于Skeleton的位置。 但是您可"
 "以在每个MeshInstance中指定一个Skeleton节点。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:18
+#, fuzzy
 msgid ""
 "Naturally, Skeleton is intended to deform meshes and consists of structures "
 "called \"bones\". Each \"bone\" is represented as a Transform, which is "
 "applied to a group of vertices within a mesh. You can directly control a "
 "group of vertices from Godot. For that please reference the :ref:"
-"`class_MeshDataTool` class and its method :ref:`set_vertex_bones "
-"<class_MeshDataTool_set_vertex_bones>`."
+"`class_MeshDataTool` class and its method :ref:`set_vertex_bones() "
+"<class_MeshDataTool_method_set_vertex_bones>`."
 msgstr ""
 "当然，Skeleton旨在使网格变形，并由称为“骨骼”的结构组成。 每个“骨骼”都表示为一"
-"个变换，它应用于网格中的一组顶点。 您可以直接控制戈多的一组顶点。 为此请参考 "
-"：ref：`class_MeshDataTool` 类及其方法 ：ref：`set_vertex_bones "
+"个变换，它应用于网格中的一组顶点。 您可以直接控制Godot的一组顶点。 为此请参"
+"考 :ref:`class_MeshDataTool` 类及其方法 :ref:`set_vertex_bones "
 "<class_MeshDataTool_set_vertex_bones>`。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:24
+#, fuzzy
 msgid ""
-"The \"bones\" are organized hierarchically. Every bone, except for root "
-"bone(s) have a parent. Every bone also has an associated name you can use to "
+"The \"bones\" are organized hierarchically. Every bone, except for the root "
+"bone(s), has a parent. Every bone also has an associated name you can use to "
 "refer to it (e.g. \"root\" or \"hand.L\", etc.). All bones are numbered, and "
-"these numbers are bone IDs. Bone parents are referred by their numbered IDs."
+"these numbers are bone IDs. Bone parents are referred to by their numbered "
+"IDs."
 msgstr ""
 "“骨头”按层次组织。 除了根骨之外，每个骨骼都有一个父骨骼。 每个骨骼也有一个可"
-"用于引用它的关联名称（例如“root”或“hand.L”等）。 所有骨骼都有编号，这些数字是"
-"骨骼ID。 骨父母由他们的编号ID引用。"
+"用于引用它的关联名称(例如“root”或“hand.L”等)。 所有骨骼都有编号，这些数字是骨"
+"骼ID。 骨父母由他们的编号ID引用。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:30
-msgid "For the rest of the article we consider the following scene:"
-msgstr "对于本文的其余部分，我们考虑以下场景："
+#, fuzzy
+msgid "For the rest of the article, we will consider the following scene:"
+msgstr "对于本文的其余部分，我们考虑以下场景:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:38
 msgid ""
@@ -84,7 +90,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:42
 msgid "Skeleton class"
-msgstr "骷髅类"
+msgstr "骨骼类"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:44
 msgid ""
@@ -99,15 +105,16 @@ msgstr ""
 msgid ""
 "**To find the number of bones in a skeleton we use the get_bone_count() "
 "function:**"
-msgstr "**要查找骨架中的骨骼数量，我们使用get_bone_count（）函数：**"
+msgstr "**要查找骨架中的骨骼数量，我们使用get_bone_count()函数:**"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:61
 msgid "**To find the ID of a bone, use the find_bone() function:**"
-msgstr "**要查找骨骼的ID，请使用find_bone（）函数：**"
+msgstr "**要查找骨骼的ID，请使用find_bone()函数:**"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:73
+#, fuzzy
 msgid ""
-"Now, we want to do something interesting with the ID, not just printing it. "
+"Now, we want to do something interesting with the ID, not just print it. "
 "Also, we might need additional information, finding bone parents to complete "
 "chains, etc. This is done with the get/set_bone\\_\\* functions."
 msgstr ""
@@ -117,18 +124,20 @@ msgstr ""
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:77
 msgid ""
 "**To find the parent of a bone we use the get_bone_parent(id) function:**"
-msgstr "**要查找骨骼的父级，我们使用get_bone_parent（id）函数：**"
+msgstr "**要查找骨骼的父级，我们使用get_bone_parent(id)函数:**"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:91
+#, fuzzy
 msgid ""
-"The bone transforms are the things of our interest here. There are 3 kind of "
-"transforms: local, global, custom."
-msgstr "骨转换是我们感兴趣的事情。 有三种转换：本地，全球，自定义。"
+"The bone transforms are what interests us here. There are 3 kinds of "
+"transform: local, global, custom."
+msgstr "骨转换是我们感兴趣的事情。 有三种转换:本地，全球，自定义。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:94
+#, fuzzy
 msgid ""
-"**To find the local Transform of a bone we use get_bone_pose(id) function:**"
-msgstr "**要查找骨骼的局部变换，我们使用get_bone_pose（id）函数：**"
+"**To find the local Transform of a bone, we use get_bone_pose(id) function:**"
+msgstr "**要查找骨骼的局部变换，我们使用get_bone_pose(id)函数:**"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:110
 msgid ""
@@ -140,9 +149,9 @@ msgid ""
 "Transforms of other objects there. So let's rotate our \"upperarm\" bone:"
 msgstr ""
 "所以我们得到一个3x4矩阵，第一列填充1s。 我们可以用这个矩阵做什么？ 它是一个变"
-"换，所以我们可以做任何我们可以用变换做的事情（基本上是平移，旋转和缩放）。 我"
-"们还可以将变换乘以更复杂的变换。 请记住，戈多的“骨头”只是在一组顶点上进行变"
-"换。 我们还可以复制其他对象的变换。 那么让我们旋转我们的“upperarm”骨骼："
+"换，所以我们可以做任何我们可以用变换做的事情(基本上是平移，旋转和缩放)。 我们"
+"还可以将变换乘以更复杂的变换。 请记住，Godot的“骨头”只是在一组顶点上进行变"
+"换。 我们还可以复制其他对象的变换。 那么让我们旋转我们的“upperarm”骨骼:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:138
 msgid ""
@@ -152,25 +161,26 @@ msgstr ""
 "现在我们可以旋转单个骨骼。 规模和翻译也是如此。 自己尝试这些并检查结果。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:141
+#, fuzzy
 msgid ""
 "What we used here was the local pose. By default all bones are not modified. "
 "But this Transform tells us nothing about the relationship between bones. "
 "This information is needed for quite a number of tasks. How can we get it? "
-"Here the global transform comes into play:"
+"This is where the global transform comes into play:"
 msgstr ""
 "我们在这里使用的是当地的姿势。 默认情况下，不会修改所有骨骼。 但是这个变换没"
 "有告诉我们骨头之间的关系。 许多任务都需要此信息。 我们怎么能得到它？ 全球转型"
-"发挥作用："
+"发挥作用:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:146
 msgid ""
 "**To find the bone global Transform we use get_bone_global_pose(id) function:"
 "**"
-msgstr "**要查找骨骼全局变换，我们使用get_bone_global_pose（id）函数：**"
+msgstr "**要查找骨骼全局变换，我们使用get_bone_global_pose(id)函数:**"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:149
 msgid "Let's find the global Transform for the lowerarm bone:"
-msgstr "让我们找到低胸骨的全局变换："
+msgstr "让我们找到低胸骨的全局变换:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:165
 msgid ""
@@ -179,16 +189,18 @@ msgid ""
 "always at 0 if not modified. Let's print the origin for our lowerarm bone:"
 msgstr ""
 "如您所见，此变换未归零。 虽然被称为全球，但实际上它与Skeleton的起源有关。 对"
-"于根骨骼，如果未修改，则原点始终为0。 让我们打印我们的低骨骼的起源："
+"于根骨骼，如果未修改，则原点始终为0。 让我们打印我们的低骨骼的起源:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:183
+#, fuzzy
 msgid ""
 "You will see a number. What does this number mean? It is a rotation point of "
-"the Transform. So it is base part of the bone. In Blender you can go to Pose "
-"mode and try there to rotate bones. They will rotate around their origin."
+"the Transform. So it is base part of the bone. In Blender, you can go to "
+"Pose mode and try to rotate bones there. They will rotate around their "
+"origin."
 msgstr ""
-"你会看到一个数字。 这个数字是什么意思？ 它是变换的旋转点。 所以它是骨骼的基础"
-"部分。 在Blender中你可以进入Pose模式并尝试旋转骨骼。 它们将围绕它们的原点旋"
+"您会看到一个数字。 这个数字是什么意思？ 它是变换的旋转点。 所以它是骨骼的基础"
+"部分。 在Blender中您可以进入Pose模式并尝试旋转骨骼。 它们将围绕它们的原点旋"
 "转。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:188
@@ -213,7 +225,7 @@ msgid ""
 "to the chain or just calculating the length of the leaf bone in Blender and "
 "storing the value in your script."
 msgstr ""
-"请注意，叶骨尖无处可寻。 叶骨是没有孩子的骨头，因此您没有关于其尖端的任何信"
+"请注意，叶骨尖无处可寻。 叶骨是没有子节点的骨头，因此您没有关于其尖端的任何信"
 "息。 但这不是一个停滞不前的问题。 您可以通过向链中添加额外的骨骼或仅在Blender"
 "中计算叶骨的长度并将值存储在脚本中来解决此问题。"
 
@@ -222,16 +234,18 @@ msgid "Using 3D \"bones\" for mesh control"
 msgstr "使用3D“骨骼”进行网格控制"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:204
+#, fuzzy
 msgid ""
-"Now as you know the basics we can apply these to make full FK-control of our "
-"arm (FK is forward-kinematics)."
+"Now, as you know the basics, we can apply these to make full FK-control of "
+"our arm (FK is forward-kinematics)."
 msgstr ""
-"现在您已经了解了我们可以应用这些基础知识来对我们的手臂进行全面的FK控制（FK是"
-"前向运动学）。"
+"现在您已经了解了我们可以应用这些基础知识来对我们的手臂进行全面的FK控制(FK是前"
+"向运动学)。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:207
-msgid "To fully control our arm we need the following parameters:"
-msgstr "要完全控制我们的手臂，我们需要以下参数："
+#, fuzzy
+msgid "To fully control our arm, we need the following parameters:"
+msgstr "要完全控制我们的手臂，我们需要以下参数:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:209
 msgid "Upperarm angle x, y, z"
@@ -247,7 +261,7 @@ msgstr "所有这些参数都可以设置，递增和递减。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:214
 msgid "Create the following node tree:"
-msgstr "创建以下节点树："
+msgstr "创建以下节点树:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:223
 msgid ""
@@ -259,19 +273,20 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:226
 msgid "Now we need to create a new script under main:"
-msgstr "现在我们需要在main下创建一个新脚本："
+msgstr "现在我们需要在main下创建一个新脚本:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:228
 msgid "First we define the setup parameters:"
-msgstr "首先我们定义设置参数："
+msgstr "首先我们定义设置参数:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:235
-msgid "Now we need to setup a way to change them. Let us use keys for that."
+#, fuzzy
+msgid "Now we need to set up a way to change them. Let us use keys for that."
 msgstr "现在我们需要设置一种方法来改变它们。 让我们使用密钥。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:237
 msgid "Please create 7 actions under project settings -> Input Map:"
-msgstr "请在项目设置下创建7个操作 - >输入地图："
+msgstr "请在项目设置下创建7个操作 ->输入地图:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:239
 msgid "**selext_x** - bind to X key"
@@ -302,30 +317,33 @@ msgid "**decrement** - bind to key numpad -"
 msgstr "**decrement** - 绑定到数字键盘键 -"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:247
+#, fuzzy
 msgid ""
-"So now we want to adjust the above parameters. Therefore we create code "
+"So now we want to adjust the above parameters. Therefore, we create code "
 "which does that:"
-msgstr "所以现在我们要调整上面的参数。 因此我们创建代码来执行以下操作："
+msgstr "所以现在我们要调整上面的参数。 因此我们创建代码来执行以下操作:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:275
 msgid "The full code for arm control is this:"
-msgstr "手臂控制的完整代码是这样的："
+msgstr "手臂控制的完整代码是这样的:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:327
+#, fuzzy
 msgid ""
-"Pressing keys 1/2 selects upperarm/lowerarm, select the axis by pressing x, "
-"y, z, rotate using numpad \"+\"/\"-\""
+"Pressing keys 1/2 selects upperarm/lowerarm; select the axis by pressing x, "
+"y, z, rotate using numpad \"+\"/\"-\"."
 msgstr "按键1/2选择上臂/下臂，按x，y，z选择轴，使用小键盘“+”/“ - ”旋转"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:330
+#, fuzzy
 msgid ""
 "This way you fully control your arm in FK mode using 2 bones. You can add "
 "additional bones and/or improve the \"feel\" of the interface by using "
 "coefficients for the change. I recommend you play with this example a lot "
-"before going to next part."
+"before moving on to the next part."
 msgstr ""
 "这样您就可以使用2个骨骼在FK模式下完全控制手臂。 您可以通过使用系数进行更改来"
-"添加其他骨骼和/或改善界面的“感觉”。 我建议你在进入下一部分之前先玩这个例子。"
+"添加其他骨骼和/或改善界面的“感觉”。 我建议您在进入下一部分之前先玩这个示例。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:335
 msgid "You can clone the demo code for this chapter using"
@@ -333,19 +351,20 @@ msgstr "您可以使用克隆本章的演示代码"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:342
 msgid "Or you can browse it using the web-interface:"
-msgstr "或者您可以使用Web界面浏览它："
+msgstr "或者您可以使用Web界面浏览它:"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:344
 msgid "https://github.com/slapin/godot-skel3d"
 msgstr "https://github.com/slapin/godot-skel3d"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:347
-msgid "Using 3D \"bones\" to implement Inverse Kinematics"
+#, fuzzy
+msgid "Using 3D \"bones\" to implement inverse kinematics"
 msgstr "使用3D“骨骼”实现反向运动学"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:349
 msgid "See :ref:`doc_inverse_kinematics`."
-msgstr "请参阅 ：ref：`doc_inverse_kinematics`。"
+msgstr "请参阅 :ref:`doc_inverse_kinematics`。"
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:352
 msgid "Using 3D \"bones\" to implement ragdoll-like physics"

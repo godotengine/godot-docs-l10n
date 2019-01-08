@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,11 @@ msgstr "Vous apprendrez :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
 msgid "**How to use types in GDScript**"
-msgstr ""
+msgstr "**Comment utiliser les types en GDScript**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr ""
+msgstr "Les **types statiques peuvent aider à éviter les bugs**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
@@ -41,6 +41,10 @@ msgid ""
 "can use it only in some sensitive GDScript files, use it everywhere, or "
 "write code like you always did!"
 msgstr ""
+"Vous êtes libre de choisir où et comment utiliser cette nouvelle "
+"fonctionnalité linguistique: vous ne pouvez l'utiliser que dans certains "
+"fichiers sensibles GDScript, l'utiliser partout ou écrire du code comme vous "
+"l'avez toujours fait !"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
 msgid ""
@@ -50,11 +54,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr ""
+msgstr "Le GDScript typé est disponible depuis Godot 3.1."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
 msgid "A brief look at static typing"
-msgstr ""
+msgstr "Un bref aperçu de la saisie statique"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
 msgid ""
@@ -62,6 +66,10 @@ msgid ""
 "gives you and your teammates more information as you’re working, as the "
 "arguments’ types show up when you call a method."
 msgstr ""
+"Avec le GDScript typé, Godot peut détecter encore plus d’erreurs lors de "
+"l’écriture du code! Cela vous donne, à vous et à vos coéquipiers, plus "
+"d’informations pendant que vous travaillez, les types d’arguments "
+"apparaissant lorsque vous appelez une méthode."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
 msgid ""
@@ -70,6 +78,11 @@ msgid ""
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
+"Imaginons que vous programmez un système d’inventaire. Vous codez un noeud "
+"`` Item``, puis un `` Inventaire``. Pour ajouter des éléments à "
+"l'inventaire, les personnes qui travaillent avec votre code doivent toujours "
+"passer un `` Item`` à la méthode `` Inventaire.add``. Avec les types, vous "
+"pouvez imposer ceci :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:48
 msgid ""
@@ -79,6 +92,12 @@ msgid ""
 "issues at runtime, but lets you decide whether or not you want to leave the "
 "code as it is. More on that in a moment."
 msgstr ""
+"Un autre avantage significatif du GDScript typé est le nouveau ** système "
+"d’avertissement **. Depuis la version 3.1, Godot vous avertit lors de la "
+"rédaction de votre code: le moteur identifie des sections de votre code "
+"susceptibles de générer des problèmes lors de l'exécution, mais vous permet "
+"de décider si vous souhaitez ou non laisser le code tel quel. Vous en saurez "
+"plus dans un instant."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
 msgid ""
@@ -99,6 +118,10 @@ msgid ""
 "you’re passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
+"Cela est dû au code dynamique. Godot ne peut pas savoir quel type de nœud ou "
+"de valeur vous transmettez à la fonction. Cependant, si vous écrivez le type "
+"explicitement, vous obtiendrez toutes les méthodes et variables publiques à "
+"partir du nœud :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
 msgid ""
@@ -119,7 +142,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:84
 msgid "How to use static typing"
-msgstr ""
+msgstr "Comment utiliser le typage statique"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:86
 msgid ""
@@ -135,10 +158,10 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:104
 msgid "Currently you can use three types of… types:"
-msgstr ""
+msgstr "Actuellement, vous pouvez utiliser trois types de… types :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:106
-msgid ":ref:`Built-in<gdscript_basics.html#built-in-types>`"
+msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
@@ -268,6 +291,8 @@ msgstr ""
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr ""
+"Vous pouvez désactiver les lignes sécurisées ou modifier leur couleur dans "
+"les paramètres de l'éditeur."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:211
 msgid "Define the return type of a function with the arrow ->"
@@ -291,7 +316,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:245
 msgid "Typed or dynamic: stick to one style"
-msgstr ""
+msgstr "Typé ou dynamique: s'en tenir à un style"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:247
 msgid ""
@@ -300,6 +325,11 @@ msgid ""
 "for your peers. It’s easier for everyone to work together if you follow the "
 "same guidelines, and faster to read and understand other people’s code."
 msgstr ""
+"Le GDScript typé et le GDScript dynamique peuvent coexister dans le même "
+"projet. Mais il est préférable de s'en tenir à l'un ou l'autre pour assurer "
+"la cohérence de votre base de code et pour vos pairs. Il est plus facile "
+"pour tout le monde de travailler ensemble si vous suivez les mêmes "
+"instructions, et plus rapidement pour lire et comprendre le code des autres."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:253
 msgid ""
@@ -307,10 +337,13 @@ msgid ""
 "discussed above. Here’s an example of the same, empty script, in a dynamic "
 "style:"
 msgstr ""
+"Le code typé prend un peu plus de temps à écrire, mais vous bénéficiez des "
+"avantages décrits plus haut. Voici un exemple du même script vide, dans un "
+"style dynamique :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:265
 msgid "And with static typing:"
-msgstr ""
+msgstr "Et avec le typage statique :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:275
 msgid ""
@@ -348,12 +381,17 @@ msgid ""
 "mistakes that are hard to spot during development, and that may lead to "
 "runtime errors."
 msgstr ""
+"Le système d’avertissement complète le GDScript typé. Il est là pour vous "
+"aider à éviter les erreurs difficiles à repérer pendant le développement, "
+"qui peuvent mener à des erreurs d’exécution."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
 msgid ""
 "You can configure warnings in the Project Settings under a new section "
 "called ``GDScript``:"
 msgstr ""
+"Vous pouvez configurer les avertissements dans les paramètres du projet dans "
+"une nouvelle section intitulée `` GDScript`` :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
 #, fuzzy
@@ -365,6 +403,9 @@ msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor’s status bar. The example below has 3 warnings:"
 msgstr ""
+"Vous pouvez trouver une liste des avertissements pour le fichier GDScript "
+"actif dans la barre d'état de l'éditeur de script. L'exemple ci-dessous "
+"comporte 3 avertissements :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
 #, fuzzy
@@ -400,7 +441,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
 msgid "Cases where you can’t specify types"
-msgstr ""
+msgstr "Cas où vous ne pouvez pas spécifier de types"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:354
 msgid ""
@@ -417,6 +458,8 @@ msgid ""
 "You can’t specify the type of individual members in an array. This will give "
 "you an error:"
 msgstr ""
+"Vous ne pouvez pas spécifier le type de membres individuels dans un tableau. "
+"Cela vous donnera une erreur :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:371
 msgid ""
@@ -424,6 +467,9 @@ msgid ""
 "the ``for`` keyword loops over already has a different type. So you "
 "**cannot** write:"
 msgstr ""
+"Vous ne pouvez pas forcer l'affectation de types dans une boucle `` for``, "
+"car chaque élément sur lequel le mot-clé `` for`` est déjà associé a un type "
+"différent. Donc, vous ** ne pouvez pas ** écrire :"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:381
 msgid "Two scripts can’t depend on each other in a cyclic fashion:"
@@ -440,3 +486,8 @@ msgid ""
 "scalable systems. In the future, static types will also bring you a nice "
 "performance boost thanks to upcoming compiler optimizations."
 msgstr ""
+"Le GDScript typé est un outil puissant. Disponible depuis la version 3.1 de "
+"Godot, il aide à écrire du code plus structuré, à éviter les erreurs "
+"courantes et à créer des systèmes évolutifs. À l'avenir, les types statiques "
+"apporteront également de belles performances grâce aux optimisations à venir "
+"du compilateur."

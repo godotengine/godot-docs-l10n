@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,8 +31,8 @@ msgid ""
 "UNIX-style path separators (``/``). These work on all platforms including "
 "Windows."
 msgstr ""
-"为了支持尽可能多的平台，Godot只接受UNIX风格的路径分隔符（``/``）。在包括"
-"Windows在内的所有平台上，这种路径分隔符均可以正常工作。"
+"为了支持尽可能多的平台，Godot只接受UNIX风格的路径分隔符(``/``)。在包括Windows"
+"在内的所有平台上，这种路径分隔符均可以正常工作。"
 
 #: ../../docs/tutorials/io/data_paths.rst:13
 msgid "A path like ``C:\\Projects`` will become ``C:/Projects``."
@@ -62,7 +62,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:27
 msgid "User path (persistent data)"
-msgstr "用户路径（持久化数据）"
+msgstr "用户路径(持久化数据)"
 
 #: ../../docs/tutorials/io/data_paths.rst:29
 msgid ""
@@ -90,8 +90,8 @@ msgid ""
 "the Project Settings, but it can be overridden on a per-platform basis "
 "using :ref:`feature tags <doc_feature_tags>`."
 msgstr ""
-"在某些设备（例如，移动设备和游戏机）上，对项目来说此路径是唯一的。 在桌面操作"
-"系统上，引擎在macOS和Linux上使用典型的 ``~/.local/share/godot/app_userdata/"
-"Name`` 路径，在Windows上使用 ``%APPDATA%/Name`` 路径来表示用户路径。  "
+"在某些设备(例如，移动设备和游戏机)上，对项目来说此路径是唯一的。 在桌面操作系"
+"统上，引擎在macOS和Linux上使用典型的 ``~/.local/share/godot/app_userdata/"
+"Name`` 路径，在Windows上使用 ``%APPDATA%/Name`` 路径来表示用户路径。 "
 "``Name`` 取自项目设置中定义的应用程序名称，但它可被 :ref:`feature tags "
 "<doc_feature_tags>` 命令覆写 。"

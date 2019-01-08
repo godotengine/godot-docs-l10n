@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -181,17 +181,16 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "Pour ce projet, nous suivrons les conventions de nommage de Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Pour ce projet, nous suivrons les conventions de nommage Godot. Les classes "
-"(nœuds) utilisent ``PascalCase``, les variables et les fonctions utilisent "
-"``snake_case``, et les constantes utilisent ``ALL_CAPS``."
+"**GDScript** : Les classes (nœuds) utilisent ``PascalCase``, les variables "
+"et les fonctions utilisent ``snake_case``, et les constantes utilisent "
+"``ALL_CAPS`` (Voir :ref:`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
 msgid ""
@@ -200,6 +199,11 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Les classes, les variables d'exportation et les méthodes utilisent "
+"PascalCase, les attributs privés utilisent _camelCase, les variables locales "
+"et les paramètres utilisent camelCase (Voir :ref:`doc_c_sharp_styleguide`). "
+"Attention à taper les noms des méthodes précisément lorsque vous connectez "
+"des signaux."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -344,6 +348,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Si vous utilisez C#, vous devez (re)compiler les assemblages du projet "
+"chaque fois que vous voulez voir de nouvelles variables d'exportation ou des "
+"nouveaux signaux. Cette compilation peut être déclenchée manuellement en "
+"cliquant sur le mot \"Mono\" au bas de la fenêtre de l'éditeur pour afficher "
+"le panneau Mono, puis en cliquant sur le bouton \"Compiler Projet\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -354,7 +363,6 @@ msgstr ""
 "scène, ce qui est un bon moment pour trouver la taille de la fenêtre de jeu :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:209
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
@@ -363,7 +371,7 @@ msgstr ""
 "Maintenant nous pouvons utiliser la fonction ``_process()`` pour définir ce "
 "que le joueur va faire. ``_process()`` est appelée à chaque image, nous "
 "l'utiliserons donc pour mettre à jour les éléments de notre jeu qui vont "
-"changer souvent. Voici comment nous allons procéder :"
+"changer souvent. Ici nous allons lui faire :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid "Check for input."
@@ -540,7 +548,6 @@ msgstr ""
 "booléenne raccourcie ci-dessus :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:395
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
@@ -829,7 +836,6 @@ msgstr ""
 "l'instanciation."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:632
-#, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -961,13 +967,12 @@ msgid "Main script"
 msgstr "Script principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:682
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
 msgstr ""
 "Ajoutez un script à ``Main``. Au début du script nous utilisons ``export "
-"(PackedScene)`` pour nous permettre de choisir la scène de monstre que nous "
+"(PackedScene)`` pour nous permettre de choisir la scène du monstre que nous "
 "voulons instancier."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:722
@@ -1005,7 +1010,6 @@ msgstr ""
 "les deux autres timers. ``ScoreTimer`` incrémentera le score de 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:789
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -1250,7 +1254,6 @@ msgid "Text: ``Start``"
 msgstr "Text : ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
-#, fuzzy
 msgid ""
 "To make the text of the ``MessageLabel`` fit the game's window click the "
 "small icon next to your text property. This will open up a new window where "
@@ -1259,10 +1262,13 @@ msgid ""
 "game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
 "following for each of the three ``Control`` nodes:"
 msgstr ""
-"La police par défaut pour les nœuds ``Control`` est petite et ne s'aggrandit "
-"pas bien. Il y a un fichier de police inclus dans les ressources du jeu "
-"appelé \"Xolonium-Regular.ttf\". Pour utiliser cette police, procédez comme "
-"suit pour chacun des trois nœuds ``Control`` :"
+"Afin que le texte du ``MessageLabel`` s'adapte à la fenêtre du jeu, cliquez "
+"sur l'cône placée à côté de votre propriété de texte. Cela ouvrira une "
+"nouvelle fenêtre où vous pourrez ajouter une nouvelle ligne entre les mots. "
+"La police par défaut pour les nœuds ``Control`` est petite et ne s'agrandit "
+"pas correctement. Il y a un fichier de police inclus dans les ressources du "
+"jeu appelé \"Xolonium-Regular.ttf\". Pour utiliser cette police, procédez "
+"comme suit pour chacun des trois nœuds ``Control`` :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:945
 msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
@@ -1310,7 +1316,6 @@ msgstr ""
 "bouton \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
-#, fuzzy
 msgid "This function is called by ``Main`` whenever the score changes."
 msgstr ""
 "Cette fonction est appelée dans ``Main`` chaque fois que le score change."
@@ -1545,22 +1550,13 @@ msgid "Project files"
 msgstr "Fichiers du projet"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "You can find a completed version of this project at these locations:"
-msgstr ""
-"Vous pouvez trouver une version complète de ce projet ici : https://github."
-"com/kidscancode/Godot3_dodge/releases"
+msgstr "Vous pouvez trouver une version complète de ce projet ici :"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
-"Vous pouvez trouver une version complète de ce projet ici : https://github."
-"com/kidscancode/Godot3_dodge/releases"
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
-#, fuzzy
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
-"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
-"core/io/image_loader.h>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,17 +22,19 @@ msgid "Part 4"
 msgstr "第4部分"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:7
-msgid "Part Overview"
+#, fuzzy
+msgid "Part overview"
 msgstr "零件概述"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:9
+#, fuzzy
 msgid ""
-"In this part we will be adding health pick ups, ammo pick ups, targets the "
+"In this part, we will be adding health pickups, ammo pickups, targets the "
 "player can destroy, support for joypads, and add the ability to change "
 "weapons with the scroll wheel."
 msgstr ""
-"在这部分中，我们将添加健康拾取，弹药拾取，玩家可以摧毁的目标，支持游戏手柄，"
-"并添加使用滚轮更改武器的能力。"
+"在这部分中，我们将添加健康拾取，弹药拾取，游戏角色可以摧毁的目标，支持游戏手"
+"柄，并添加使用滚轮更改武器的能力。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:13
 msgid ""
@@ -40,8 +42,8 @@ msgid ""
 "moving on to this part of the tutorial. The finished project from :ref:"
 "`doc_fps_tutorial_part_three` will be the starting project for part 4"
 msgstr ""
-"在继续本教程的这一部分之前，假设您已完成：ref："
-"`doc_fps_tutorial_part_three`。 完成的项目来自：ref："
+"在继续本教程的这一部分之前，假设您已完成 :ref:"
+"`doc_fps_tutorial_part_three`。 完成的项目来自 :ref:"
 "`doc_fps_tutorial_part_three`将成为第4部分的起始项目"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:16
@@ -53,18 +55,20 @@ msgid "Adding joypad input"
 msgstr "添加游戏手柄输入"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:21
+#, fuzzy
 msgid ""
-"In Godot any game controller is referred to as a joypad. This includes: "
+"In Godot, any game controller is referred to as a joypad. This includes: "
 "Console controllers, Joysticks (like for flight simulators), Wheels (like "
 "for driving simulators), VR Controllers, and more!"
 msgstr ""
-"在Godot中，任何游戏控制器都被称为游戏手柄。 这包括：控制台控制器，操纵杆（如"
-"飞行模拟器），车轮（如用于驾驶模拟器），VR控制器等等！"
+"在Godot中，任何游戏控制器都被称为游戏手柄。 这包括:控制台控制器，操纵杆(如飞"
+"行模拟器)，车轮(如用于驾驶模拟器)，VR控制器等等！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:24
+#, fuzzy
 msgid ""
-"First we need to change a few things in our project's input map. Open up the "
-"project settings and select the ``Input Map`` tab."
+"Firstly, we need to change a few things in our project's input map. Open up "
+"the project settings and select the ``Input Map`` tab."
 msgstr ""
 "首先，我们需要在项目的输入映射中更改一些内容。 打开项目设置并选择“输入映射”选"
 "项卡。"
@@ -84,39 +88,39 @@ msgid ""
 "following:"
 msgstr ""
 "随意使用您想要的任何按钮布局。 确保所选设备设置为“0”。 在完成的项目中，我们将"
-"使用以下内容："
+"使用以下内容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:32
 msgid "movement_sprint: ``Device 0, Button 4 (L, L1)``"
-msgstr "movement_sprint：``设备0，按钮4（L，L1）``"
+msgstr "movement_sprint:``设备0，按钮4(L，L1)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:33
 msgid "fire: ``Device 0, Button 0 (PS Cross, XBox A, Nintendo B)``"
-msgstr "fire：``设备0，按钮0（PS Cross，XBox A，Nintendo B）``"
+msgstr "fire:``设备0，按钮0(PS Cross，XBox A，Nintendo B)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:34
 msgid "reload: ``Device 0, Button 0 (PS Square, XBox X, Nintendo Y)``"
-msgstr "重新加载：``设备0，按钮0（PS Square，XBox X，Nintendo Y）``"
+msgstr "重新加载:``设备0，按钮0(PS Square，XBox X，Nintendo Y)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:35
 msgid "flashlight: ``Device 0, Button 12 (D-Pad Up)``"
-msgstr "手电筒：``设备0，按钮12（D-Pad Up）``"
+msgstr "手电筒:``设备0，按钮12(D-Pad Up)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:36
 msgid "shift_weapon_positive: ``Device 0, Button 15 (D-Pad Right)``"
-msgstr "shift_weapon_positive：``设备0，按钮15（D-Pad右）``"
+msgstr "shift_weapon_positive:``设备0，按钮15(D-Pad右)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:37
 msgid "shift_weapon_negative: ``Device 0, Button 14 (D-Pad Left)``"
-msgstr "shift_weapon_negative：``设备0，按钮14（D-Pad Left）``"
+msgstr "shift_weapon_negative:``设备0，按钮14(D-Pad Left)``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:38
 msgid "fire_grenade: ``Device 0, Button 1 (PS Circle, XBox B, Nintendo A).``"
-msgstr "fire_grenade：``设备0，按钮1（PS圈，XBox B，任天堂A）.``"
+msgstr "fire_grenade:``设备0，按钮1(PS圈，XBox B，任天堂A).``"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:40
 msgid "These are already set up for you if you downloaded the starter assets"
-msgstr "如果您下载了启动资产，则已为您设置了这些内容"
+msgstr "如果您下载了启动资源，则已为您设置了这些内容"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:42
 msgid "Once you are happy with the input, close the project settings and save."
@@ -124,35 +128,37 @@ msgstr "对输入感到满意后，关闭项目设置并保存。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:46
 msgid "Now let's open up ``Player.gd`` and add joypad input."
-msgstr "现在让我们打开``Player.gd``并添加joypad输入。"
+msgstr "现在让我们打开 ``Player.gd`` 并添加joypad输入。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:48
 msgid ""
 "First, we need to define a few new class variables. Add the following class "
 "variables to ``Player.gd``:"
-msgstr "首先，我们需要定义一些新的类变量。 将以下类变量添加到``Player.gd``："
+msgstr "首先，我们需要定义一些新的类变量。 将以下类变量添加到``Player.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:56
-msgid "Let's go over what each of these do:"
-msgstr "让我们回顾一下这些做法："
+#, fuzzy
+msgid "Let's go over what each of these does:"
+msgstr "让我们回顾一下这些做法:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:58
 msgid ""
 "``JOYPAD_SENSITIVITY``: This is how fast the joypad's joysticks will move "
 "the camera."
-msgstr "``JOYPAD SENSITIVITY``：这是游戏手柄操纵杆移动相机的速度。"
+msgstr "``JOYPAD SENSITIVITY``:这是游戏手柄操纵杆移动相机的速度。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:59
 msgid ""
 "``JOYPAD_DEADZONE``: The dead zone for the joypad. You may need to adjust "
 "depending on your joypad."
 msgstr ""
-"``JOYPAD DEADZONE``：游戏手柄的死区。 您可能需要根据您的游戏手柄进行调整。"
+"``JOYPAD DEADZONE``:游戏手柄的死区。 您可能需要根据您的游戏手柄进行调整。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:61
+#, fuzzy
 msgid ""
 "Many joypads jitter around a certain point. To counter this, we ignore any "
-"movement in a with a radius of JOYPAD_DEADZONE. If we did not ignore said "
+"movement within a radius of JOYPAD_DEADZONE. If we did not ignore said "
 "movement, the camera would jitter."
 msgstr ""
 "许多游戏手柄在某一点上抖动。 为了解决这个问题，我们忽略半径为JOYPAD_DEADZONE"
@@ -163,7 +169,7 @@ msgid ""
 "Also, we are defining ``JOYPAD_SENSITIVITY`` as a variable instead of a "
 "constant because we'll later be changing it."
 msgstr ""
-"此外，我们将``JOYPAD_SENSITIVITY``定义为变量而不是常量，因为我们稍后会更改"
+"此外，我们将 ``JOYPAD_SENSITIVITY`` 定义为变量而不是常量，因为我们稍后会更改"
 "它。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:66
@@ -171,19 +177,21 @@ msgid "Now we are ready to start handling joypad input!"
 msgstr "现在我们准备开始处理游戏手柄输入了！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:70
+#, fuzzy
 msgid ""
-"In ``process_input`` add the following code, just before "
+"In ``process_input``, add the following code just before "
 "``input_movement_vector = input_movement_vector.normalized()``:"
 msgstr ""
-"在``process_input``中添加以下代码，就在``input_movement_vector = "
-"input_movement_vector.normalized（）``之前："
+"在 ``process_input`` 中添加以下代码，就在``input_movement_vector = "
+"input_movement_vector.normalized()``之前:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:113
 msgid "Let's go over what we're doing."
 msgstr "让我们回顾一下我们正在做的事情。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:115
-msgid "First we check to see if there is a connected joypad."
+#, fuzzy
+msgid "Firstly, we check to see if there is a connected joypad."
 msgstr "首先，我们检查是否有连接的游戏手柄。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:117
@@ -202,20 +210,21 @@ msgid ""
 "joystick axes may need changing. If they do, please open a GitHub issue on "
 "the Godot documentation repository! Thanks!"
 msgstr ""
-"本教程假设您使用的是XBox 360或Playstation有线控制器。 此外，我（目前）没有访"
-"问Mac计算机，因此操纵杆轴可能需要更改。 如果有，请在Godot文档存储库中打开"
-"GitHub问题！ 谢谢！"
+"本教程假设您使用的是XBox 360或Playstation有线控制器。 此外，我(目前)没有访问"
+"Mac计算机，因此操纵杆轴可能需要更改。 如果有，请在Godot文档存储库中打开GitHub"
+"问题！ 谢谢！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:125
+#, fuzzy
 msgid ""
-"Next we check to see if the joypad vector length is within the "
+"Next, we check to see if the joypad vector length is within the "
 "``JOYPAD_DEADZONE`` radius. If it is, we set ``joypad_vec`` to an empty "
 "Vector2. If it is not, we use a scaled Radial Dead zone for precise dead "
-"zone calculating."
+"zone calculation."
 msgstr ""
-"接下来我们检查一下joypad向量长度是否在``JOYPAD_DEADZONE``范围内。 如果是，我"
-"们将``joypad_vec``设置为空Vector2。 如果不是，我们使用缩放的径向死区来进行精"
-"确的死区计算。"
+"接下来我们检查一下joypad向量长度是否在 ``JOYPAD_DEADZONE`` 范围内。 如果是，"
+"我们将 ``joypad_vec`` 设置为空Vector2。 如果不是，我们使用缩放的径向死区来进"
+"行精确的死区计算。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:128
 msgid ""
@@ -223,7 +232,7 @@ msgid ""
 "controller dead zones here: http://www.third-helix.com/2013/04/12/doing-"
 "thumbstick-dead-zones-right.html"
 msgstr ""
-"你可以在这里找到一篇很棒的文章解释如何处理游戏手柄/控制器死区：http：//www."
+"您可以在这里找到一篇很棒的文章解释如何处理游戏手柄/控制器死区:http://www."
 "third-helix.com/2013/04/12/doing-thumbstick-dead-zones-right.html"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:131
@@ -233,71 +242,76 @@ msgid ""
 "giving it a look!"
 msgstr ""
 "我们正在使用该文章中提供的缩放径向死区代码的翻译版本。 这篇文章很精彩，我强烈"
-"建议你看看！"
+"建议您看看！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:134
 msgid "Finally, we add ``joypad_vec`` to ``input_movement_vector``."
-msgstr "最后，我们将``joypad_vec``添加到``input_movement_vector``。"
+msgstr "最后，我们将 ``joypad_vec`` 添加到 ``input_movement_vector`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:136
+#, fuzzy
 msgid ""
 "Remember how we normalize ``input_movement_vector``? This is why! If we did "
-"not normalize ``input_movement_vector``, the player could move faster if the "
-"player pushes in the same direction with both the keyboard and the joypad!"
+"not normalize ``input_movement_vector``, the player could move faster if "
+"they pushed in the same direction with both the keyboard and the joypad!"
 msgstr ""
-"还记得我们如何规范化``input_movement_vector``？ 这就是为什么！ 如果我们没有规"
-"范化``input_movement_vector``，如果玩家用键盘和游戏手柄向同一个方向推进，玩家"
-"可以移动得更快！"
+"还记得我们如何规范化 ``input_movement_vector`` ？ 这就是为什么！ 如果我们没有"
+"规范化 ``input_movement_vector`` ，如果游戏角色用键盘和游戏手柄向同一个方向推"
+"进，游戏角色可以移动得更快！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:141
 msgid ""
 "Make a new function called ``process_view_input`` and add the following:"
-msgstr "创建一个名为``process_view_input``的新函数并添加以下内容："
+msgstr "创建一个名为 ``process_view_input`` 的新函数并添加以下内容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:216
 msgid "Let's go over what's happening:"
-msgstr "让我们回顾一下发生的事情："
+msgstr "让我们回顾一下发生的事情:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:218
+#, fuzzy
 msgid ""
-"First we check the mouse mode. If the mouse mode is not "
+"Firstly, we check the mouse mode. If the mouse mode is not "
 "``MOUSE_MODE_CAPTURED``, we want to return, which will skip the code below."
 msgstr ""
 "首先我们检查鼠标模式。 如果鼠标模式不是“MOUSE_MODE_CAPTURED”，我们想要返回，"
 "这将跳过下面的代码。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:220
+#, fuzzy
 msgid ""
-"Next we define a new :ref:`Vector2 <class_Vector2>` called ``joypad_vec``. "
+"Next, we define a new :ref:`Vector2 <class_Vector2>` called ``joypad_vec``. "
 "This will hold the right joystick position. Based on the OS, we set its "
 "values so it is mapped to the proper axes for the right joystick."
 msgstr ""
-"接下来我们定义一个新的：ref：`Vector2 <class_Vector2>````joypad_vec``。 这将"
-"保持正确的操纵杆位置。 基于操作系统，我们设置其值，使其映射到右侧操纵杆的正确"
-"轴。"
+"接下来我们定义一个新的 :ref:`Vector2 <class_Vector2>` ` ``joypad_vec`` 。 这"
+"将保持正确的操纵杆位置。 基于操作系统，我们设置其值，使其映射到右侧操纵杆的正"
+"确轴。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:223
+#, fuzzy
 msgid ""
-"As stated above, I do not (currently) has access to a Mac computer, so the "
+"As stated above, I do not (currently) have access to a Mac computer, so the "
 "joystick axes may need changing. If they do, please open a GitHub issue on "
 "the Godot documentation repository! Thanks!"
 msgstr ""
-"如上所述，我（目前）没有访问Mac计算机，因此操纵杆轴可能需要更改。 如果有，请"
-"在Godot文档存储库中打开GitHub问题！ 谢谢！"
+"如上所述，我(目前)没有访问Mac计算机，因此操纵杆轴可能需要更改。 如果有，请在"
+"Godot文档存储库中打开GitHub问题！ 谢谢！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:226
 msgid ""
 "We then account for the joypad's dead zone, exactly like in "
 "``process_input``."
-msgstr "然后我们考虑了joypad的死区，就像在``process_input``中一样。"
+msgstr "然后我们考虑了joypad的死区，就像在 ``process_input`` 中一样。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:228
+#, fuzzy
 msgid ""
-"Then we rotate ``rotation_helper`` and the player's :ref:`KinematicBody "
+"Then, we rotate ``rotation_helper`` and the player's :ref:`KinematicBody "
 "<class_KinematicBody>` using ``joypad_vec``."
 msgstr ""
-"然后我们使用``joypad_vec``旋转``rotation_helper``和玩家的：ref："
-"`KinematicBody <class_KinematicBody>`。"
+"然后我们使用 ``joypad_vec`` 旋转 ``rotation_helper`` 和游戏角色的 :ref:"
+"`KinematicBody <class_KinematicBody>` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:230
 msgid ""
@@ -305,40 +319,41 @@ msgid ""
 "is exactly the same as the code in ``_input``. All we've done is change the "
 "values to use ``joypad_vec`` and ``JOYPAD_SENSITIVITY``."
 msgstr ""
-"注意处理旋转播放器和``rotation_helper``的代码与``_input``中的代码完全相同。 "
-"我们所做的就是更改值以使用``joypad_vec``和``JOYPAD_SENSITIVITY``。"
+"注意处理旋转游戏角色和 ``rotation_helper`` 的代码与 ``_input`` 中的代码完全相"
+"同。 我们所做的就是更改值以使用 ``joypad_vec`` 和 ``JOYPAD_SENSITIVITY`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:233
+#, fuzzy
 msgid ""
-"Due to few mouse related bugs on Windows, we cannot put mouse rotation in "
+"Due to a few mouse-related bugs on Windows, we cannot put mouse rotation in "
 "``process_view`` as well. Once these bugs are fixed, this will likely be "
 "updated to place the mouse rotation here in ``process_view_input`` as well."
 msgstr ""
-"由于Windows上几乎没有鼠标相关的错误，我们也不能将鼠标旋转放在``process_view``"
-"中。 一旦修复了这些错误，这可能会更新，以便将鼠标旋转放在"
-"``process_view_input``中。"
+"由于Windows上几乎没有鼠标相关的错误，我们也不能将鼠标旋转放在 "
+"``process_view`` 中。 一旦修复了这些错误，这可能会更新，以便将鼠标旋转放在 "
+"``process_view_input`` 中。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:236
 msgid ""
 "Finally, we clamp the camera's rotation so the player cannot look upside "
 "down."
-msgstr "最后，我们夹住相机的旋转，这样玩家就不会颠倒过来。"
+msgstr "最后，我们夹住相机的旋转，这样游戏角色就不会颠倒过来。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:240
 msgid ""
 "The last thing we need to do is add ``process_view_input`` to "
 "``_physics_process``."
 msgstr ""
-"我们需要做的最后一件事是将``process_view_input``添加到``_physics_process``"
-"中。"
+"我们需要做的最后一件事是将 ``process_view_input`` 添加到 "
+"``_physics_process`` 中。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:242
 msgid ""
 "Once ``process_view_input`` is added to ``_physics_process``, you should be "
 "able to play using a joypad!"
 msgstr ""
-"一旦``process_view_input``被添加到``_physics_process``，你应该能够使用游戏手"
-"柄玩！"
+"一旦 ``process_view_input`` 被添加到 ``_physics_process`` ，您应该能够使用游"
+"戏手柄玩！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:244
 msgid ""
@@ -356,124 +371,130 @@ msgid ""
 "triggers, and check if it's over a certain value, say ``0.8`` for example. "
 "If it is, you add the same code as when the ``fire`` action was pressed."
 msgstr ""
-"如果你想使用触发器进行触发，你需要在``process_input``中改变触发的工作方式。 "
-"您需要获取触发器的轴值，并检查它是否超过某个值，例如“0.8”。 如果是，则添加与"
-"按下``fire``动作时相同的代码。"
+"如果您想使用触发器进行触发，您需要在 ``process_input`` 中改变触发的工作方"
+"式。 您需要获取触发器的轴值，并检查它是否超过某个值，例如“0.8”。 如果是，则添"
+"加与按下 ``fire`` 动作时相同的代码。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:250
 msgid "Adding mouse scroll wheel input"
 msgstr "添加鼠标滚轮输入"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:252
+#, fuzzy
 msgid ""
-"Let's add one more input related feature before we start working on the pick "
-"ups and the target. Let's add the ability to change weapons using the scroll "
-"wheel on the mouse."
+"Let's add one more input related feature before we start working on the "
+"pickups and the target. Let's add the ability to change weapons using the "
+"scroll wheel on the mouse."
 msgstr ""
 "在我们开始处理拾取器和目标之前，让我们再添加一个与输入相关的功能。 让我们添加"
 "使用鼠标滚轮更改武器的功能。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:254
 msgid "Open up ``Player.gd`` and add the following class variables:"
-msgstr "打开``Player.gd``并添加以下类变量："
+msgstr "打开 ``Player.gd`` 并添加以下类变量:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:261
 msgid "Let's go over what each of these new variables will be doing:"
-msgstr "让我们回顾一下这些新变量将要做的事情："
+msgstr "让我们回顾一下这些新变量将要做的事情:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:263
 msgid "``mouse_scroll_value``: The value of the mouse scroll wheel."
-msgstr "``mouse_scroll_value``：鼠标滚轮的值。"
+msgstr "``mouse_scroll_value``:鼠标滚轮的值。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:264
 msgid ""
 "``MOUSE_SENSITIVITY_SCROLL_WHEEL``: How much a single scroll action "
 "increases mouse_scroll_value"
 msgstr ""
-"``MOUSE_SENSITIVITY_SCROLL_WHEEL``：单个滚动操作增加了多少mouse_scroll_value"
+"``MOUSE_SENSITIVITY_SCROLL_WHEEL``:单个滚动操作增加了多少mouse_scroll_value"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:268
 msgid "Now let's add the following to ``_input``:"
-msgstr "现在让我们将以下内容添加到``_input``中："
+msgstr "现在让我们将以下内容添加到 ``_input`` 中:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:290
 msgid "Let's go over what's happening here:"
-msgstr "让我们回顾一下这里发生的事情："
+msgstr "让我们回顾一下这里发生的事情:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:292
 #, fuzzy
 msgid ""
-"First we check if the event is an ``InputEventMouseButton`` event and that "
-"the mouse mode is ``MOUSE_MODE_CAPTURED``. Then we check to see if the "
+"Firstly, we check if the event is an ``InputEventMouseButton`` event and "
+"that the mouse mode is ``MOUSE_MODE_CAPTURED``. Then, we check to see if the "
 "button index is either a ``BUTTON_WHEEL_UP`` or ``BUTTON_WHEEL_DOWN`` index."
 msgstr ""
-"首先，我们检查事件是否是一个``InputEventMouseButton``事件，并且鼠标模式是"
-"``MOUSE_MODE_CAPTURED``。 然后我们检查按钮索引是否是``BUTTON_WHEEL_UP``或"
-"``BUTTON_WHEEL_DOWN``索引。"
+"首先，我们检查事件是否是一个 ``InputEventMouseButton`` 事件，并且鼠标模式是 "
+"``MOUSE_MODE_CAPTURED`` 。 然后我们检查按钮索引是否是 ``BUTTON_WHEEL_UP`` 或 "
+"``BUTTON_WHEEL_DOWN`` 索引。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:295
+#, fuzzy
 msgid ""
 "If the event's index is indeed a button wheel index, we then check to see if "
 "it is a ``BUTTON_WHEEL_UP`` or ``BUTTON_WHEEL_DOWN`` index. Based on whether "
-"it is up or down we add or remove ``MOUSE_SENSITIVITY_SCROLL_WHEEL`` to/from "
-"``mouse_scroll_value``."
+"it is up or down, we add or subtract ``MOUSE_SENSITIVITY_SCROLL_WHEEL`` to/"
+"from ``mouse_scroll_value``."
 msgstr ""
-"如果事件的索引确实是一个按钮轮索引，那么我们检查它是否是一个"
-"``BUTTON_WHEEL_UP``或``BUTTON_WHEEL_DOWN``索引。 根据它是向上还是向下，我们在"
-"``mouse_scroll_value``中添加或删除``MOUSE_SENSITIVITY_SCROLL_WHEEL``。"
+"如果事件的索引确实是一个按钮轮索引，那么我们检查它是否是一个 "
+"``BUTTON_WHEEL_UP`` 或 ``BUTTON_WHEEL_DOWN`` 索引。 根据它是向上还是向下，我"
+"们在 ``mouse_scroll_value`` 中添加或删除 "
+"``MOUSE_SENSITIVITY_SCROLL_WHEEL`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:298
+#, fuzzy
 msgid ""
-"Next we clamp mouse scroll value to assure it is inside the range of "
+"Next, we clamp mouse scroll value to ensure it is inside the range of "
 "selectable weapons."
 msgstr "接下来我们将鼠标滚动值限制为确保它在可选武器范围内。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:300
-#, fuzzy
 msgid ""
 "We then check to see if the player is changing weapons or reloading. If the "
 "player is doing neither, we round ``mouse_scroll_value`` and cast it to an "
 "``int``."
 msgstr ""
-"然后我们检查玩家是在换武器还是重装。 如果玩家两者都没做，我们将"
-"``mouse_scroll_value``舍入并将其转换为``int``。"
+"然后我们检查游戏角色是在换武器还是重装。 如果游戏角色两者都没做，我们将 "
+"``mouse_scroll_value`` 舍入并将其转换为 ``int`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:302
 #, fuzzy
 msgid ""
 "We are casting ``mouse_scroll_value`` to an ``int`` so we can use it as a "
 "key in our dictionary. If we left it as a float, we would get an error when "
-"we try to run the project."
+"we tried to run the project."
 msgstr ""
-"我们将``mouse_scroll_value``转换为``int``，这样我们就可以将它用作字典中的"
+"我们将 ``mouse_scroll_value`` 转换为 ``int``，这样我们就可以将它用作字典中的"
 "键。 如果我们将它保留为浮点数，当我们尝试运行项目时会出现错误。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:305
+#, fuzzy
 msgid ""
-"Next we check to see if the weapon name at ``round_mouse_scroll_value`` is "
-"not equal to the current weapon name using ``weapon_number_to_name``. If the "
+"Next, we check to see if the weapon name at ``round_mouse_scroll_value`` is "
+"not equal to the current weapon name using ``WEAPON_NUMBER_TO_NAME``. If the "
 "weapon is different than the player's current weapon, we assign "
 "``changing_weapon_name``, set ``changing_weapon`` to ``true`` so the player "
 "will change weapons in ``process_changing_weapon``, and set "
 "``mouse_scroll_value`` to ``round_mouse_scroll_value``."
 msgstr ""
-"接下来，我们使用``weapon_number_to_name``检查``round_mouse_scroll_value``中的"
-"武器名称是否不等于当前武器名称。 如果武器与玩家的当前武器不同，我们分配"
-"``changing_weapon_name``，将``changing_weapon``设置为``true``，这样玩家将在"
-"``process_changing_weapon``中更改武器，并设置``mouse_scroll_value` `到"
-"``round_mouse_scroll_value``。"
+"接下来，我们使用 ``weapon_number_to_name`` 检查 ``round_mouse_scroll_value`` "
+"中的武器名称是否不等于当前武器名称。 如果武器与游戏角色的当前武器不同，我们分"
+"配 ``changing_weapon_name`` ，将 ``changing_weapon`` 设置为 ``true`` ，这样游"
+"戏角色将在 ``process_changing_weapon`` 中更改武器，并设置"
+"``mouse_scroll_value` `到 ``round_mouse_scroll_value`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:309
+#, fuzzy
 msgid ""
 "The reason we are setting ``mouse_scroll_value`` to the rounded scroll value "
 "is because we do not want the player to keep their mouse scroll wheel just "
 "in between values, giving them the ability to switch almost extremely fast. "
 "By assigning ``mouse_scroll_value`` to ``round_mouse_scroll_value``, we "
-"assure that each weapon takes exactly the same amount of scrolling to change."
+"ensure that each weapon takes exactly the same amount of scrolling to change."
 msgstr ""
-"我们将``mouse_scroll_value``设置为舍入滚动值的原因是因为我们不希望玩家将鼠标"
-"滚轮保持在两个值之间，从而使它们能够快速切换。 通过将``mouse_scroll_value``分"
-"配给``round_mouse_scroll_value``，我们可以确保每个武器的滚动量完全相同。"
+"我们将 ``mouse_scroll_value`` 设置为舍入滚动值的原因是因为我们不希望游戏角色"
+"将鼠标滚轮保持在两个值之间，从而使它们能够快速切换。 通过将 "
+"``mouse_scroll_value`` 分配给 ``round_mouse_scroll_value`` ，我们可以确保每个"
+"武器的滚动量完全相同。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:315
 msgid ""
@@ -481,13 +502,14 @@ msgid ""
 "changing weapons, add the following right after the line ``changing_weapon = "
 "true``:"
 msgstr ""
-"我们需要改变的另一件事是``process_input``。 在更改武器的代码中，"
-"在“changing_weapon = true”行之后添加以下内容："
+"我们需要改变的另一件事是 ``process_input`` 。 在更改武器的代码中，"
+"在“changing_weapon = true”行之后添加以下内容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:321
+#, fuzzy
 msgid ""
 "Now the scroll value will be changed with the keyboard input. If we did not "
-"change this, the scroll value will be out of sync. If the scroll wheel is "
+"change this, the scroll value would be out of sync. If the scroll wheel were "
 "out of sync, scrolling forwards or backwards would not transition to the "
 "next/last weapon, but rather the next/last weapon the scroll wheel changed "
 "to."
@@ -498,21 +520,22 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:326
 msgid "Now you can change weapons using the scroll wheel! Go give it a whirl!"
-msgstr "现在你可以使用滚轮更换武器了！ 去试试吧！"
+msgstr "现在您可以使用滚轮更换武器了！ 去试试吧！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:329
-msgid "Adding the health pick ups"
+#, fuzzy
+msgid "Adding the health pickups"
 msgstr "添加健康提取"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:331
 msgid ""
 "Now that the player has health and ammo, we ideally need a way to replenish "
 "those resources."
-msgstr "既然玩家拥有健康和弹药，我们理想情况下需要一种补充这些资源的方法。"
+msgstr "既然游戏角色拥有健康和弹药，我们理想情况下需要一种补充这些资源的方法。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:333
 msgid "Open up ``Health_Pickup.tscn``."
-msgstr "打开``Health_Pickup.tscn``。"
+msgstr "打开 ``Health_Pickup.tscn`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:335
 msgid ""
@@ -520,42 +543,43 @@ msgid ""
 "Spatial nodes, one called ``Health_Kit`` and another called "
 "``Health_Kit_Small``."
 msgstr ""
-"如果尚未展开，请展开``Holder``。 注意我们如何有两个Spatial节点，一个叫做"
-"``Health_Kit``，另一个称为``Health_Kit_Small``。"
+"如果尚未展开，请展开 ``Holder`` 。 注意我们如何有两个Spatial节点，一个叫做 "
+"``Health_Kit`` ，另一个称为 ``Health_Kit_Small`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:337
+#, fuzzy
 msgid ""
-"This is because we're actually going to be making two sizes of health pick "
-"ups, one small and one large/normal. ``Health_Kit`` and ``Health_Kit_Small`` "
-"only have a single :ref:`MeshInstance <class_MeshInstance>` as their "
-"children."
+"This is because we're actually going to be making two sizes of health "
+"pickups, one small and one large/normal. ``Health_Kit`` and "
+"``Health_Kit_Small`` only have a single :ref:`MeshInstance "
+"<class_MeshInstance>` as their children."
 msgstr ""
-"这是因为我们实际上将制作两种尺寸的健康拾取器，一种小型和一种大型/正常型。 "
-"``Health_Kit``和``Health_Kit_Small``只有一个：ref：`MeshInstance "
-"<class_MeshInstance>`作为他们的孩子。"
+"这是因为我们实际上将制作两种大小的健康拾取器，一种小型和一种大型/正常型。 "
+"``Health_Kit``和``Health_Kit_Small``只有一个 :ref:`MeshInstance "
+"<class_MeshInstance>` 作为他们的子节点。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:340
+#, fuzzy
 msgid ""
 "Next expand ``Health_Pickup_Trigger``. This is an :ref:`Area <class_Area>` "
 "node we're going to use to check if the player has walked close enough to "
-"pick up the health kit. If you expand it you'll find two collision shapes, "
+"pick up the health kit. If you expand it, you'll find two collision shapes, "
 "one for each size. We will be using a different collision shape size based "
-"on the size of the health pick up, so the smaller health pick up has a "
-"trigger collision shape closer to its size."
+"on the size of the health pickup, so the smaller health pickup has a trigger "
+"collision shape closer to its size."
 msgstr ""
-"接下来展开``Health_Pickup_Trigger``。 这是一个：ref：`Area <class_Area>`节点"
-"我们将用来检查玩家是否走得足够接近健康套件。 如果你展开它，你会发现两个碰撞形"
-"状，每个尺寸一个。 我们将根据健康拾取的大小使用不同的碰撞形状大小，因此较小的"
-"健康拾取具有接近其大小的触发碰撞形状。"
+"接下来展开 ``Health_Pickup_Trigger`` 。 这是一个 :ref:`Area <class_Area>` 节"
+"点我们将用来检查游戏角色是否走得足够接近健康套件。 如果您展开它，您会发现两个"
+"碰撞形状，每个大小一个。 我们将根据健康拾取的大小使用不同的碰撞形状大小，因此"
+"较小的健康拾取具有接近其大小的触发碰撞形状。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:344
 #, fuzzy
 msgid ""
 "The last thing to note is how we have an :ref:`AnimationPlayer "
-"<class_AnimationPlayer>` node so the health kit spins around slowly and bobs "
-"up and down."
+"<class_AnimationPlayer>` node so the health kit bobs and spins around slowly."
 msgstr ""
-"最后要注意的是我们如何拥有：ref：`AnimationPlayer <class_AnimationPlayer>`节"
+"最后要注意的是我们如何拥有 :ref:`AnimationPlayer <class_AnimationPlayer>` 节"
 "点，因此健康工具包缓慢旋转并上下摆动。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:346
@@ -563,65 +587,71 @@ msgid ""
 "Select ``Health_Pickup`` and add a new script called ``Health_Pickup.gd``. "
 "Add the following:"
 msgstr ""
-"选择``Health_Pickup``并添加一个名为``Health_Pickup.gd``的新脚本。 添加以下内"
-"容："
+"选择 ``Health_Pickup`` 并添加一个名为 ``Health_Pickup.gd`` 的新脚本。 添加以"
+"下内容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:405
 msgid ""
 "Let's go over what this script is doing, starting with its class variables:"
-msgstr "让我们回顾一下这个脚本正在做什么，从它的类变量开始："
+msgstr "让我们回顾一下这个脚本正在做什么，从它的类变量开始:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:407
+#, fuzzy
 msgid ""
-"``kit_size``: The size of the health pick up. Notice how we're using a "
+"``kit_size``: The size of the health pickup. Notice how we're using a "
 "``setget`` function to tell if it's changed."
 msgstr ""
-"``kit_size``：健康的大小。 请注意我们如何使用``setget``函数来判断它是否已更"
+"``kit_size``:健康的大小。 请注意我们如何使用 ``setget`` 函数来判断它是否已更"
 "改。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:408
+#, fuzzy
 msgid ""
-"``HEALTH_AMMOUNTS``: The amount of health each pick up in each size contains."
-msgstr "``HEALTH_AMMOUNTS``：每种尺寸的健康量包含。"
+"``HEALTH_AMMOUNTS``: The amount of health each pickup in each size contains."
+msgstr "``HEALTH_AMMOUNTS``:每种大小的健康量包含。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:409
+#, fuzzy
 msgid ""
 "``RESPAWN_TIME``: The amount of time, in seconds, it takes for the health "
-"pick up to respawn"
-msgstr "``RESPAWN_TIME``：健康选择重生所需的时间（以秒为单位）"
+"pickup to respawn"
+msgstr "``RESPAWN_TIME``:健康选择重生所需的时间(以秒为单位)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:410
+#, fuzzy
 msgid ""
-"``respawn_timer``: A variable used to track how long the health pick up has "
+"``respawn_timer``: A variable used to track how long the health pickup has "
 "been waiting to respawn."
-msgstr "``respawn_timer``：一个变量，用于跟踪健康提取等待重生的时间。"
+msgstr "``respawn_timer``:一个变量，用于跟踪健康提取等待重生的时间。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:411
 msgid ""
 "``is_ready``: A variable to track whether the ``_ready`` function has been "
 "called or not."
-msgstr "``is_ready``：一个变量，用于跟踪是否已调用``_ready``函数。"
+msgstr "``is_ready``:一个变量，用于跟踪是否已调用 ``_ready`` 函数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:413
+#, fuzzy
 msgid ""
 "We're using ``is_ready`` because ``setget`` functions are called before "
-"``_ready``, we need to ignore the first kit_size_change call, because we "
+"``_ready``; we need to ignore the first kit_size_change call, because we "
 "cannot access child nodes until ``_ready`` is called. If we did not ignore "
 "the first ``setget`` call, we would get several errors in the debugger."
 msgstr ""
-"我们使用``is_ready``是因为在``_ready``之前调用``setget``函数，我们需要忽略第"
-"一个kit_size_change调用，因为在调用``_ready``之前我们无法访问子节点。 如果我"
-"们没有忽略第一个``setget``调用，我们会在调试器中得到几个错误。"
+"我们使用 ``is_ready`` 是因为在 ``_ready`` 之前调用 ``setget`` 函数，我们需要"
+"忽略第一个kit_size_change调用，因为在调用 ``_ready`` 之前我们无法访问子节"
+"点。 如果我们没有忽略第一个 ``setget`` 调用，我们会在调试器中得到几个错误。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:417
+#, fuzzy
 msgid ""
 "Also, notice how we are using an exported variable. This is so we can change "
-"the size of the health pick ups in the editor. This makes it where we do not "
+"the size of the health pickups in the editor. This makes it so we do not "
 "have to make two scenes for the two sizes, since we can easily change sizes "
 "in the editor using the exported variable."
 msgstr ""
 "另外，请注意我们如何使用导出的变量。 这样我们就可以在编辑器中更改健康拾取的大"
-"小。 这使得我们不必为两种尺寸制作两个场景，因为我们可以使用导出的变量轻松地在"
+"小。 这使得我们不必为两种大小制作两个场景，因为我们可以使用导出的变量轻松地在"
 "编辑器中更改大小。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:420
@@ -629,39 +659,43 @@ msgid ""
 "See :ref:`doc_GDScript` and scroll down to the Exports section for a list of "
 "export hints you can use."
 msgstr ""
-"请参阅：ref：`doc_GDScript`并向下滚动到Exports部分，以获取可以使用的导出提示"
-"列表。"
+"请参阅 :ref:`doc_GDScript`并向下滚动到Exports部分，以获取可以使用的导出提示列"
+"表。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:424
 msgid "Let's look at ``_ready``:"
-msgstr "让我们来看看``_ready``："
+msgstr "让我们来看看``_ready``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:426
+#, fuzzy
 msgid ""
-"First we connect the ``body_entered`` signal from the "
+"Firstly, we connect the ``body_entered`` signal from the "
 "``Health_Pickup_Trigger`` to the ``trigger_body_entered`` function. This "
-"makes it where any body that enters the :ref:`Area <class_Area>` triggers "
-"the ``trigger_body_entered`` function."
+"makes it so any body that enters the :ref:`Area <class_Area>` triggers the "
+"``trigger_body_entered`` function."
 msgstr ""
-"首先，我们将``body_entered``信号从``Health_Pickup_Trigger``连接到"
-"``trigger_body_entered``函数。 这使得任何进入：ref：`Area <class_Area>`的主体"
-"触发``trigger_body_entered``函数。"
+"首先，我们将 ``body_entered`` 信号从 ``Health_Pickup_Trigger`` 连接到 "
+"``trigger_body_entered`` 函数。 这使得任何进入 :ref:`Area <class_Area>` 的主"
+"体触发 ``trigger_body_entered`` 函数。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:429
+#, fuzzy
 msgid ""
-"Next we set ``is_ready`` to ``true`` so we can use the ``setget`` function."
+"Next, we set ``is_ready`` to ``true`` so we can use the ``setget`` function."
 msgstr ""
-"接下来我们将``is_ready``设置为``true``，这样我们就可以使用``setget``函数了。"
+"接下来我们将 ``is_ready`` 设置为 ``true`` ，这样我们就可以使用 ``setget`` 函"
+"数了。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:431
+#, fuzzy
 msgid ""
-"Then we hide all of the possible kits and their collision shapes using "
+"Then we hide all the possible kits and their collision shapes using "
 "``kit_size_change_values``. The first argument is the size of the kit, while "
 "the second argument is whether to enable or disable the collision shape and "
 "mesh at that size."
 msgstr ""
-"然后我们使用``kit_size_change_values``隐藏所有可能的套件及其碰撞形状。 第一个"
-"参数是套件的大小，而第二个参数是是否启用或禁用该大小的碰撞形状和网格。"
+"然后我们使用 ``kit_size_change_values`` 隐藏所有可能的套件及其碰撞形状。 第一"
+"个参数是套件的大小，而第二个参数是是否启用或禁用该大小的碰撞形状和网格。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:434
 msgid ""
@@ -669,16 +703,16 @@ msgid ""
 "``kit_size_change_values`` and passing in ``kit_size`` and ``true``, so the "
 "size at ``kit_size`` is enabled."
 msgstr ""
-"然后我们只选择我们选择的工具包大小，调用``kit_size_change_values``并传入"
-"``kit_size``和``true``，这样就可以启用``kit_size``的大小。"
+"然后我们只选择我们选择的工具包大小，调用 ``kit_size_change_values`` 并传入 "
+"``kit_size`` 和 ``true`` ，这样就可以启用 ``kit_size`` 的大小。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:438
 msgid "Next let's look at ``kit_size_change``."
-msgstr "接下来让我们看一下``kit_size_change``。"
+msgstr "接下来让我们看一下 ``kit_size_change`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:440
 msgid "The first thing we do is check to see if ``is_ready`` is ``true``."
-msgstr "我们要做的第一件事就是检查``is_ready``是否为``true``。"
+msgstr "我们要做的第一件事就是检查 ``is_ready`` 是否为 ``true`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:442
 msgid ""
@@ -686,8 +720,8 @@ msgid ""
 "``kit_size`` disabled using ``kit_size_change_values``, passing in "
 "``kit_size`` and ``false``."
 msgstr ""
-"如果``is_ready``是``true``，那么我们使用``kit_size_change_values``制作已经分"
-"配给``kit_size``的任何工具包，传入``kit_size``和``false``。"
+"如果 ``is_ready`` 是 ``true`` ，那么我们使用 ``kit_size_change_values`` 制作"
+"已经分配给 ``kit_size`` 的任何工具包，传入 ``kit_size`` 和 ``false`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:444
 msgid ""
@@ -697,26 +731,28 @@ msgid ""
 "``kit_size`` to the passed in value, this will make whatever kit size was "
 "passed in visible."
 msgstr ""
-"然后我们将``kit_size``分配给传入的新值``value``。 然后我们再次调用"
-"``kit_size_change_values``传递``kit_size``，但这次使用第二个参数作为"
-"``true``，所以我们启用它。 因为我们将``kit_size``更改为传入的值，这将使得任何"
-"工具包大小都可见。"
+"然后我们将 ``kit_size`` 分配给传入的新值 ``value`` 。 然后我们再次调用 "
+"``kit_size_change_values`` 传递 ``kit_size`` ，但这次使用第二个参数作为 "
+"``true`` ，所以我们启用它。 因为我们将 ``kit_size`` 更改为传入的值，这将使得"
+"任何工具包大小都可见。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:447
 msgid ""
 "If ``is_ready`` is not ``true``, we simply assign ``kit_size`` to the passed "
 "in ``value``."
 msgstr ""
-"如果``is_ready``不是``true``，我们只需将``kit_size``分配给传入的``value``。"
+"如果 ``is_ready`` 不是 ``true`` ，我们只需将 ``kit_size`` 分配给传入的 "
+"``value`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:451
 msgid "Now let's look at ``kit_size_change_values``."
-msgstr "现在让我们来看看``kit_size_change_values``。"
+msgstr "现在让我们来看看 ``kit_size_change_values`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:453
+#, fuzzy
 msgid ""
 "The first thing we do is check to see which size was passed in. Based on "
-"which size we're wanting to enable/disable, we want to get different nodes."
+"which size we want to enable/disable, we want to get different nodes."
 msgstr ""
 "我们要做的第一件事是检查传入的大小。根据我们想要启用/禁用的大小，我们希望得到"
 "不同的节点。"
@@ -726,8 +762,8 @@ msgid ""
 "We get the collision shape for the node corresponding to ``size`` and "
 "disable it based on the ``enabled`` passed in argument/variable."
 msgstr ""
-"我们得到对应于``size``的节点的碰撞形状，并根据参数/变量中传递的``enabled``禁"
-"用它。"
+"我们得到对应于 ``size`` 的节点的碰撞形状，并根据参数/变量中传递的 "
+"``enabled`` 禁用它。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:457
 msgid ""
@@ -737,41 +773,44 @@ msgid ""
 "need to flip it. By flipping it, we can enable the collision shape and make "
 "the mesh visible when ``true`` is passed in."
 msgstr ""
-"为什么我们使用``！enable``而不是``enable``？ 当我们说要启用节点时，我们可以传"
-"入``true``，但是因为：ref：`CollisionShape <class_CollisionShape>`使用禁用而"
-"不是启用，我们需要翻转它。 通过翻转它，我们可以启用碰撞形状，并在传入“true”时"
-"使网格可见。"
+"为什么我们使用 ``！enable`` 而不是 ``enable`` ？ 当我们说要启用节点时，我们可"
+"以传入 ``true`` ，但是因为 :ref:`CollisionShape <class_CollisionShape>` 使用"
+"禁用而不是启用，我们需要翻转它。 通过翻转它，我们可以启用碰撞形状，并在传"
+"入“true”时使网格可见。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:461
 msgid ""
 "We then get the correct :ref:`Spatial <class_Spatial>` node holding the mesh "
 "and set its visibility to ``enable``."
 msgstr ""
-"然后我们得到正确的：ref：`Spatial <class_Spatial>`节点保存网格并将其可见性设"
-"置为``enable``。"
+"然后我们得到正确的 :ref:`Spatial <class_Spatial>` 节点保存网格并将其可见性设"
+"置为 ``enable`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:463
+#, fuzzy
 msgid ""
-"This function may be a little confusing, try to think of it like this: We're "
+"This function may be a little confusing; try to think of it like this: We're "
 "enabling/disabling the proper nodes for ``size`` using ``enabled``. This is "
 "so we cannot pick up health for a size that is not visible, and so only the "
 "mesh for the proper size will be visible."
 msgstr ""
-"这个函数可能有点混乱，试着这样想：我们使用``enabled``启用/禁用``size``的正确"
-"节点。 这样我们就无法获得不可见的大小的健康状况，因此只能看到适当大小的网格。"
+"这个函数可能有点混乱，试着这样想:我们使用 ``enabled`` 启用/禁用 ``size`` 的正"
+"确节点。 这样我们就无法获得不可见的大小的健康状况，因此只能看到适当大小的网"
+"格。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:468
 msgid "Finally, let's look at ``trigger_body_entered``."
-msgstr "最后，让我们看一下``trigger_body_entered``。"
+msgstr "最后，让我们看一下 ``trigger_body_entered`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:470
+#, fuzzy
 msgid ""
-"The first thing we do is see whether or not the body that just entered has a "
-"method/function called ``add_health``. If it does, we then call "
+"The first thing we do is check whether or not the body that has just entered "
+"has a method/function called ``add_health``. If it does, we then call "
 "``add_health`` and pass in the health provided by the current kit size."
 msgstr ""
-"我们要做的第一件事就是看看刚进入的主体是否有一个名为``add_health``的方法/函"
-"数。 如果是，我们再调用``add_health``并传递当前套件大小提供的健康状况。"
+"我们要做的第一件事就是看看刚进入的主体是否有一个名为 ``add_health`` 的方法/函"
+"数。 如果是，我们再调用 ``add_health`` 并传递当前套件大小提供的健康状况。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:473
 msgid ""
@@ -780,175 +819,191 @@ msgid ""
 "``kit_size_change_values``, passing in ``kit_size`` and ``false`` so the kit "
 "at ``kit_size`` is invisible until it has waited long enough to respawn."
 msgstr ""
-"然后我们将``respawn_timer``设置为``RESPAWN_TIME``，这样玩家必须等待玩家再次恢"
-"复健康状态。 最后，调用``kit_size_change_values``，传入``kit_size``和"
-"``false``，这样``kit_size``的工具包是不可见的，直到它等待足够长的时间重新生"
-"成。"
+"然后我们将 ``respawn_timer`` 设置为 ``RESPAWN_TIME`` ，这样游戏角色必须等待游"
+"戏角色再次恢复健康状态。 最后，调用 ``kit_size_change_values`` ，传入 "
+"``kit_size`` 和 ``false`` ，这样 ``kit_size`` 的工具包是不可见的，直到它等待"
+"足够长的时间重新生成。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:478
+#, fuzzy
 msgid ""
-"The last thing we need to do before the player can use this health pick up "
-"is add a few things to ``Player.gd``."
+"The last thing we need to do before the player can use this health pickup is "
+"add a few things to ``Player.gd``."
 msgstr ""
-"在玩家使用此健康状态之前我们需要做的最后一件事是向“Player.gd”添加一些内容。"
+"在游戏角色使用此健康状态之前我们需要做的最后一件事是向“Player.gd”添加一些内"
+"容。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:480
 msgid "Open up ``Player.gd`` and add the following class variable:"
-msgstr "打开``Player.gd``并添加以下类变量："
+msgstr "打开 ``Player.gd`` 并添加以下类变量:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:486
 msgid "``MAX_HEALTH``: The maximum amount of health a player can have."
-msgstr "``MAX_HEALTH``：玩家可以拥有的最大健康状态。"
+msgstr "``MAX_HEALTH``:游戏角色可以拥有的最大健康状态。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:488
 msgid ""
 "Now we need to add the ``add_health`` function to the player. Add the "
 "following to ``Player.gd``:"
 msgstr ""
-"现在我们需要将“add_health”函数添加到播放器中。 将以下内容添加到``Player."
-"gd``："
+"现在我们需要将“add_health”函数添加到游戏角色中。 将以下内容添加到``Player."
+"gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:496
 msgid "Let's quickly go over what this does."
 msgstr "让我们快点回顾一下这个问题。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:498
+#, fuzzy
 msgid ""
 "We first add ``additional_health`` to the player's current health. We then "
-"clamp the health so that it cannot exceed a value higher than "
+"clamp the health so that it cannot take on a value higher than "
 "``MAX_HEALTH``, nor a value lower than ``0``."
 msgstr ""
-"我们首先将“additional_health”添加到玩家当前的健康状态。 然后我们将健康状态钳"
-"制到不超过“MAX_HEALTH”的值，也不能低于“0”的值。"
+"我们首先将“additional_health”添加到游戏角色当前的健康状态。 然后我们将健康状"
+"态钳制到不超过“MAX_HEALTH”的值，也不能低于“0”的值。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:503
+#, fuzzy
 msgid ""
 "With that done, the player can now collect health! Go place a few "
 "``Health_Pickup`` scenes around and give it a try. You can change the size "
-"of the health pick up in the editor when a ``Health_Pickup`` instanced scene "
+"of the health pickup in the editor when a ``Health_Pickup`` instanced scene "
 "is selected, from a convenient drop down."
 msgstr ""
-"完成后，玩家现在可以收集健康！ 去看几个``Health_Pickup``场景并尝试一下。 从方"
-"便的下拉菜单中选择``Health_Pickup``实例化场景后，您可以在编辑器中更改运行状况"
-"拾取的大小。"
+"完成后，游戏角色现在可以收集健康！ 去看几个 ``Health_Pickup`` 场景并尝试一"
+"下。 从方便的下拉菜单中选择 ``Health_Pickup`` 实例化场景后，您可以在编辑器中"
+"更改运行状况拾取的大小。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:507
-msgid "Adding the ammo pick ups"
+#, fuzzy
+msgid "Adding the ammo pickups"
 msgstr "添加弹药拾音器"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:509
+#, fuzzy
 msgid ""
 "While adding health is good and all, we can't reap the rewards from adding "
-"it since nothing can (currently) damage us. Let's add some ammo pick ups "
-"next!"
+"it since nothing can (currently) damage us. Let's add some ammo pickups next!"
 msgstr ""
-"虽然添加健康是好的，但我们无法从添加中获得回报，因为没有任何东西可以（当前）"
-"损害我们。 让我们接下来添加一些弹药拾音器！"
+"虽然添加健康是好的，但我们无法从添加中获得回报，因为没有任何东西可以(当前)损"
+"害我们。 让我们接下来添加一些弹药拾音器！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:512
+#, fuzzy
 msgid ""
 "Open up ``Ammo_Pickup.tscn``. Notice how it's structured exactly the same as "
 "``Health_Pickup.tscn``, but with the meshes and trigger collision shapes "
-"changed slightly to adjust for the difference in mesh sizes."
+"changed slightly to account for the difference in mesh sizes."
 msgstr ""
-"打开``Ammo_Pickup.tscn``。 注意它的结构与``Health_Pickup.tscn``完全相同，但是"
-"网格和触发器的碰撞形状稍有变化，以适应网格尺寸的差异。"
+"打开 ``Ammo_Pickup.tscn`` 。 注意它的结构与 ``Health_Pickup.tscn`` 完全相同，"
+"但是网格和触发器的碰撞形状稍有变化，以适应网格大小的差异。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:515
 msgid ""
 "Select ``Ammo_Pickup`` and add a new script called ``Ammo_Pickup.gd``. Add "
 "the following:"
 msgstr ""
-"选择``Ammo_Pickup``并添加一个名为``Ammo_Pickup.gd``的新脚本。 添加以下内容："
+"选择 ``Ammo_Pickup`` 并添加一个名为 ``Ammo_Pickup.gd`` 的新脚本。 添加以下内"
+"容:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:576
+#, fuzzy
 msgid ""
 "You may have noticed this code looks almost exactly the same as the health "
-"pick up. That's because it largely is the same! Only a few things have been "
+"pickup. That's because it largely is the same! Only a few things have been "
 "changed, and that's what we're going to go over."
 msgstr ""
 "您可能已经注意到此代码看起来与健康提取几乎完全相同。 那是因为它基本上是一样"
 "的！ 只有少数事情发生了变化，这就是我们要做的事情。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:579
+#, fuzzy
 msgid ""
-"First, notice how there is ``AMMO_AMOUNTS`` instead of ``HEALTH_AMMOUNTS``. "
-"``AMMO_AMOUNTS`` will be how many ammo clips/magazines the pick up add to "
-"the current weapon. (Unlike ``HEALTH_AMMOUNTS`` which was how many health "
-"points, we instead add an entire clip for the current weapon, instead of the "
-"raw ammo amount)"
+"Firstly, notice the change to ``AMMO_AMOUNTS`` from ``HEALTH_AMMOUNTS``. "
+"``AMMO_AMOUNTS`` will be how many ammo clips/magazines the pickup adds to "
+"the current weapon. (Unlike in the case of ``HEALTH_AMMOUNTS``, which has "
+"stood for how many health points would be awarded, we add an entire clip to "
+"the current weapon instead of the raw ammo amount)"
 msgstr ""
 "首先，请注意如何“AMMO_AMOUNTS”而不是“HEALTH_AMMOUNTS”。 ``AMMO_AMOUNTS``将是"
-"当前武器中拾取的弹药片/杂志的数量。 （与``HEALTH_AMMOUNTS``不同，这是多少生命"
-"值，我们改为为当前武器添加整个剪辑，而不是原始弹药数量）"
+"当前武器中拾取的弹药片/杂志的数量。 (与 ``HEALTH_AMMOUNTS`` 不同，这是多少生"
+"命值，我们改为为当前武器添加整个剪辑，而不是原始弹药数量)"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:582
+#, fuzzy
 msgid ""
 "The only other thing to notice is in ``trigger_body_entered``. We're "
-"checking and calling a function called ``add_ammo`` instead of "
-"``add_health``."
+"checking for the existence of and calling a function called ``add_ammo`` "
+"instead of ``add_health``."
 msgstr ""
-"唯一需要注意的是``trigger_body_entered``。 我们正在检查并调用一个名为"
-"``add_ammo``的函数而不是``add_health``。"
+"唯一需要注意的是 ``trigger_body_entered`` 。 我们正在检查并调用一个名为 "
+"``add_ammo`` 的函数而不是 ``add_health`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:584
+#, fuzzy
 msgid ""
-"Other than those two small changes, everything else is exactly the same as "
-"the health pick up!"
+"Other than those two small changes, everything else is the same as the "
+"health pickup!"
 msgstr "除了这两个小变化之外，其他一切都与健康状况完全相同！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:588
+#, fuzzy
 msgid ""
-"All we need to do for making the ammo pick ups work is to add a new function "
-"to the player. Open ``Player.gd`` and add the following function:"
+"All we need to do to make the ammo pickups work is add a new function to the "
+"player. Open ``Player.gd`` and add the following function:"
 msgstr ""
-"我们需要做的就是让弹药拾音器工作就是为播放器增加一个新功能。 打开``Player."
-"gd``并添加以下功能："
+"我们需要做的就是让弹药拾音器工作就是为游戏角色增加一个新功能。 打开 ``Player."
+"gd`` 并添加以下功能:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:597
 msgid "Let's go over what this function does."
 msgstr "让我们回顾一下这个功能的作用。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:599
+#, fuzzy
 msgid ""
-"The first thing we check is to see whether the player is using ``UNARMED`` "
-"or not. Because ``UNARMED`` does not have a node/script, we want to make "
-"sure the player is not using ``UNARMED`` before trying to get the node/"
-"script attached to ``current_weapon_name``."
+"The first thing we check is whether the player is ``UNARMED``. Because "
+"``UNARMED`` does not have a node/script, we want to make sure the player is "
+"not ``UNARMED`` before trying to get the node/script attached to "
+"``current_weapon_name``."
 msgstr ""
-"我们检查的第一件事是看看玩家是否正在使用``UNARMED``。 因为``UNARMED``没有节"
-"点/脚本，所以我们要确保玩家在尝试将节点/脚本附加到``current_weapon_name``之前"
-"没有使用``UNARMED``。"
+"我们检查的第一件事是看看游戏角色是否正在使用 ``UNARMED`` 。 因为 ``UNARMED`` "
+"没有节点/脚本，所以我们要确保游戏角色在尝试将节点/脚本附加到 "
+"``current_weapon_name`` 之前没有使用 ``UNARMED`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:602
+#, fuzzy
 msgid ""
-"Next we check to see if the current weapon can be refilled. If the current "
+"Next, we check to see if the current weapon can be refilled. If the current "
 "weapon can, we add a full clip/magazine worth of ammo to the weapon by "
-"multiplying the current weapon's ``AMMO_IN_MAG`` variable times however much "
-"ammo clips we're adding (``additional_ammo``)."
+"multiplying the current weapon's ``AMMO_IN_MAG`` value by however many ammo "
+"clips we're adding (``additional_ammo``)."
 msgstr ""
 "接下来我们检查当前的武器是否可以重新填充。 如果当前的武器可以，我们通过将当前"
-"武器的“AMMO_IN_MAG”变量乘以我们正在添加的大量弹药片段（``additional_ammo``）"
-"来为武器添加一个完整的弹片/杂志。"
+"武器的“AMMO_IN_MAG”变量乘以我们正在添加的大量弹药片段(``additional_ammo``)来"
+"为武器添加一个完整的弹片/杂志。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:607
+#, fuzzy
 msgid ""
 "With that done, you should now be able to get additional ammo! Go place some "
-"ammo pick ups in one/both/all of the scenes and give it a try!"
+"ammo pickups in one/both/all of the scenes and give it a try!"
 msgstr ""
 "完成后，您现在应该能够获得额外的弹药！ 在一个/两个/所有场景中进行一些弹药拾取"
 "并尝试一下！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:609
+#, fuzzy
 msgid ""
 "Notice how we're not limiting the amount of ammo you can carry. To limit the "
-"amount of ammo each weapon can carry, you need to add a additional variable "
+"amount of ammo each weapon can carry, you need to add an additional variable "
 "to each weapon's script, and then clamp the weapon's ``spare_ammo`` variable "
 "after adding ammo in ``add_ammo``."
 msgstr ""
-"请注意我们如何限制你可携带的弹药数量。 为了限制每个武器可以携带的弹药数量，你"
+"请注意我们如何限制您可携带的弹药数量。 为了限制每个武器可以携带的弹药数量，您"
 "需要为每个武器的脚本添加一个额外的变量，然后在“add_ammo”中添加弹药后夹住武器"
-"的``spare_ammo``变量。"
+"的 ``spare_ammo`` 变量。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:613
 msgid "Adding breakable targets"
@@ -961,27 +1016,29 @@ msgstr "在我们结束这一部分之前，让我们添加一些目标。"
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:617
 msgid ""
 "Open up ``Target.tscn`` and take a look at the scenes in the scene tree."
-msgstr "打开``Target.tscn``并查看场景树中的场景。"
+msgstr "打开 ``Target.tscn`` 并查看场景树中的场景。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:619
+#, fuzzy
 msgid ""
-"First, notice how we're not using a :ref:`RigidBody <class_RigidBody>` node, "
-"but rather a :ref:`StaticBody <class_StaticBody>` node instead. The reason "
-"behind this is our non-broken targets will not be moving anywhere, using a :"
-"ref:`RigidBody <class_RigidBody>` would be more hassle then its worth, since "
-"all it has to do is stay still."
+"Firstly, notice how we're not using a :ref:`RigidBody <class_RigidBody>` "
+"node, but a :ref:`StaticBody <class_StaticBody>` one. The reason behind this "
+"is our non-broken targets will not be moving anywhere; using a :ref:"
+"`RigidBody <class_RigidBody>` would be more hassle than it's worth since all "
+"it has to do is stay still."
 msgstr ""
-"首先，请注意我们如何不使用：ref：`RigidBody <class_RigidBody>`节点，而是使"
-"用：ref：`StaticBody <class_StaticBody>`节点。 这背后的原因是我们的非破坏目标"
-"不会移动到任何地方，使用：ref：`RigidBody <class_RigidBody>`比它的价值更麻"
+"首先，请注意我们如何不使用 :ref:`RigidBody <class_RigidBody>` 节点，而是使"
+"用 :ref:`StaticBody <class_StaticBody>` 节点。 这背后的原因是我们的非破坏目标"
+"不会移动到任何地方，使用 :ref:`RigidBody <class_RigidBody>` 比它的价值更麻"
 "烦，因为所有它必须做的就是保持静止。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:623
+#, fuzzy
 msgid ""
 "We also save a tiny bit of performance using a :ref:`StaticBody "
-"<class_StaticBody>` over a :ref:`RigidBody <class_RigidBody>`"
+"<class_StaticBody>` over a :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
-"我们还使用：ref：`StaticBody <class_StaticBody>`来节省一点点性能：ref："
+"我们还使用 :ref:`StaticBody <class_StaticBody>` 来节省一点点性能 :ref:"
 "`RigidBody <class_RigidBody>`"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:625
@@ -990,31 +1047,34 @@ msgid ""
 "This node is going to hold a spawned/instanced scene called ``Broken_Target."
 "tscn``. Open up ``Broken_Target.tscn``."
 msgstr ""
-"另外需要注意的是我们有一个名为``Broken_Target_Holder``的节点。 该节点将保存一"
-"个名为``Broken_Target.tscn``的衍生/实例化场景。 打开``Broken_Target.tscn``。"
+"另外需要注意的是我们有一个名为 ``Broken_Target_Holder`` 的节点。 该节点将保存"
+"一个名为 ``Broken_Target.tscn`` 的衍生/实例化场景。 打开 ``Broken_Target."
+"tscn`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:628
+#, fuzzy
 msgid ""
 "Notice how the target is broken up into five pieces, each a :ref:`RigidBody "
 "<class_RigidBody>` node. We're going to spawn/instance this scene when the "
-"target takes too much damage and needs to be destroyed. Then we're going to "
+"target takes too much damage and needs to be destroyed. Then, we're going to "
 "hide the non-broken target, so it looks like the target shattered rather "
 "than a shattered target was spawned/instanced."
 msgstr ""
-"注意目标如何分解为五个部分，每个部分a：ref：`RigidBody <class_RigidBody>`节"
+"注意目标如何分解为五个部分，每个部分a :ref:`RigidBody <class_RigidBody>` 节"
 "点。 当目标受到太多伤害并需要被摧毁时，我们将生成/实例化这个场景。 然后我们将"
 "隐藏未破坏的目标，因此它看起来像目标破碎而不是产生/实例化的破碎目标。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:632
+#, fuzzy
 msgid ""
-"While you still have ``Broken_Target.tscn`` open and then attach "
+"While you still have ``Broken_Target.tscn`` open, attach "
 "``RigidBody_hit_test.gd`` to all of the :ref:`RigidBody <class_RigidBody>` "
-"nodes. This will make it where the player can shoot at the broken pieces and "
+"nodes. This will make it so the player can shoot at the broken pieces and "
 "they will react to the bullets."
 msgstr ""
-"当你仍然打开``Broken_Target.tscn``然后将``RigidBody_hit_test.gd``附加到所有"
-"的：ref：`RigidBody <class_RigidBody>`节点。 这将使玩家能够在破碎的棋子上射击"
-"并且他们将对子弹作出反应。"
+"当您仍然打开 ``Broken_Target.tscn`` 然后将 ``RigidBody_hit_test.gd`` 附加到所"
+"有的 :ref:`RigidBody <class_RigidBody>` 节点。 这将使游戏角色能够在破碎的棋子"
+"上射击并且他们将对子弹作出反应。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:635
 msgid ""
@@ -1022,33 +1082,33 @@ msgid ""
 "`StaticBody <class_StaticBody>` node and create a new script called ``Target."
 "gd``."
 msgstr ""
-"好吧，现在切换回``Target.tscn``，选择``Target``：ref：`StaticBody "
-"<class_StaticBody>`节点并创建一个名为``Target.gd``的新脚本。"
+"好吧，现在切换回 ``Target.tscn`` ，选择``Target`` :ref:`StaticBody "
+"<class_StaticBody>` 节点并创建一个名为 ``Target.gd`` 的新脚本。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:637
 msgid "Add the following code to ``Target.gd``:"
-msgstr "将以下代码添加到``Target.gd``："
+msgstr "将以下代码添加到``Target.gd``:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:695
 msgid "Let's go over what this script does, starting with the class variables:"
-msgstr "让我们回顾一下这个脚本的作用，从类变量开始："
+msgstr "让我们回顾一下这个脚本的作用，从类变量开始:"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:697
 msgid ""
 "``TARGET_HEALTH``: The amount of damage needed to break a fully healed "
 "target."
-msgstr "``TARGET_HEALTH``：打破完全治疗目标所需的伤害量。"
+msgstr "``TARGET_HEALTH``:打破完全治疗目标所需的伤害量。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:698
 msgid "``current_health``: The amount of health this target currently has."
-msgstr "``current_health``：此目标目前的健康状况。"
+msgstr "``current_health``:此目标目前的健康状况。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:699
 msgid ""
 "``broken_target_holder``: A variable to hold the ``Broken_Target_Holder`` "
 "node so we can use it easily."
 msgstr ""
-"``broken_target_holder``：一个变量，用于保存``Broken_Target_Holder``节点，以"
+"``broken_target_holder``:一个变量，用于保存 ``Broken_Target_Holder`` 节点，以"
 "便我们可以轻松使用它。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:700
@@ -1056,27 +1116,27 @@ msgid ""
 "``target_collision_shape``: A variable to hold the :ref:`CollisionShape "
 "<class_CollisionShape>` for the non-broken target."
 msgstr ""
-"``target_collision_shape``：一个变量，用于保存：ref：`CollisionShape "
-"<class_CollisionShape>`用于未破坏的目标。"
+"``target_collision_shape``:一个变量，用于保存 :ref:`CollisionShape "
+"<class_CollisionShape>` 用于未破坏的目标。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:701
 msgid ""
 "``TARGET_RESPAWN_TIME``: The length of time, in seconds, it takes for a "
 "target to respawn."
-msgstr "``TARGET_RESPAWN_TIME``：目标重生的时间长度（以秒为单位）。"
+msgstr "``TARGET_RESPAWN_TIME``:目标重生的时间长度(以秒为单位)。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:702
 msgid ""
 "``target_respawn_timer``: A variable to track how long a target has been "
 "broken."
-msgstr "``target_respawn_timer``：一个跟踪目标被破坏时间的变量。"
+msgstr "``target_respawn_timer``:一个跟踪目标被破坏时间的变量。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:703
 msgid ""
 "``destroyed_target``: A :ref:`PackedScene <class_PackedScene>` to hold the "
 "broken target scene."
 msgstr ""
-"``destroyed_target``：A：ref：`PackedScene <class_PackedScene>`来保存破碎的目"
+"``destroyed_target``:A :ref:`PackedScene <class_PackedScene>` 来保存破碎的目"
 "标场景。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:705
@@ -1086,11 +1146,11 @@ msgid ""
 "<class_PackedScene>`) to get the broken target scene instead of using "
 "``preload``. By using an exported variable, we can choose the scene from the "
 "editor, and if we need to use a different scene, it's as easy as selecting a "
-"different scene in the editor, we don't need to go to the code to change the "
+"different scene in the editor; we don't need to go to the code to change the "
 "scene we're using."
 msgstr ""
-"注意我们如何使用导出的变量（a：ref：`PackedScene <class_PackedScene>`）来获取"
-"破坏的目标场景而不是使用``preload``。 通过使用导出的变量，我们可以从编辑器中"
+"注意我们如何使用导出的变量(a :ref:`PackedScene <class_PackedScene>`)来获取破"
+"坏的目标场景而不是使用 ``preload`` 。 通过使用导出的变量，我们可以从编辑器中"
 "选择场景，如果我们需要使用不同的场景，就像在编辑器中选择不同的场景一样简单，"
 "我们不需要转到代码来更改 我们正在使用的场景。"
 
@@ -1099,16 +1159,17 @@ msgid "Let's look at ``_ready``."
 msgstr "让我们看看`_ready``。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:713
+#, fuzzy
 msgid ""
 "The first thing we do is get the broken target holder and assign it to "
 "``broken_target_holder``. Notice how we're using ``get_parent().get_node()`` "
-"here, instead of ``$``. If you want to use ``$``, then you'd need to change "
-"``get_parent().get_node()`` to ``$\"../Broken_Target_Holder\"``."
+"here, instead of ``$``. If you wanted to use ``$``, then you'd need to "
+"change ``get_parent().get_node()`` to ``$\"../Broken_Target_Holder\"``."
 msgstr ""
-"我们要做的第一件事是获取破碎的目标持有者并将其分配给"
-"``broken_target_holder``。 注意我们如何在这里使用``get_parent（）。"
-"get_node（）``，而不是``$``。 如果你想使用``$``，那么你需要将"
-"``get_parent（）。get_node（）``改为``$“../ Broken_Target_Holder”``。"
+"我们要做的第一件事是获取破碎的目标持有者并将其分配给 "
+"``broken_target_holder`` 。 注意我们如何在这里使用 ``get_parent()."
+"get_node()`` ，而不是 ``$`` 。 如果您想使用 ``$`` ，那么您需要将 "
+"``get_parent().get_node()`` 改为``$“../ Broken_Target_Holder”``。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:716
 msgid ""
@@ -1116,51 +1177,56 @@ msgid ""
 "NodeName\"`` to get the parent nodes using ``$``, which is why "
 "``get_parent().get_node()`` is used instead."
 msgstr ""
-"在写这篇文章时，我没有意识到你可以使用``$“../ NodeName”``来使用``$``来获取父"
-"节点，这就是为什么``get_parent（）。get_node（ ）``用来代替。"
+"在写这篇文章时，我没有意识到您可以使用``$“../ NodeName”``来使用``$``来获取父"
+"节点，这就是为什么``get_parent()。get_node( )``用来代替。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:719
+#, fuzzy
 msgid ""
-"Next we get the collision shape and assign it to ``target_collision_shape``. "
-"The reason we need the collision shape is because even when the mesh is "
-"invisible, the collision shape will still exist in the physics world. This "
-"makes it where the player can interact with a non-broken target even though "
-"it's invisible, which is not what we want. To get around this, we will "
-"disable/enable the collision shape as we make the mesh visible/invisible."
+"Next, we get the collision shape and assign it to "
+"``target_collision_shape``. The reason we need the collision shape is "
+"because even when the mesh is invisible, the collision shape will still "
+"exist in the physics world. This makes it so the player could interact with "
+"a non-broken target even though it's invisible, which is not what we want. "
+"To get around this, we will disable/enable the collision shape as we make "
+"the mesh visible/invisible."
 msgstr ""
-"接下来我们得到碰撞形状并将其分配给``target_collision_shape``。 我们需要碰撞形"
-"状的原因是因为即使网格不可见，碰撞形状仍然存在于物理世界中。 这使得玩家可以与"
-"未破坏的目标交互，即使它是不可见的，这不是我们想要的。 为了解决这个问题，我们"
-"将禁用/启用碰撞形状，因为我们使网格可见/不可见。"
+"接下来我们得到碰撞形状并将其分配给 ``target_collision_shape`` 。 我们需要碰撞"
+"形状的原因是因为即使网格不可见，碰撞形状仍然存在于物理世界中。 这使得游戏角色"
+"可以与未破坏的目标交互，即使它是不可见的，这不是我们想要的。 为了解决这个问"
+"题，我们将禁用/启用碰撞形状，因为我们使网格可见/不可见。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:725
 msgid "Next let's look at ``_physics_process``."
-msgstr "接下来让我们看一下``_physics_process``。"
+msgstr "接下来让我们看一下 ``_physics_process`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:727
+#, fuzzy
 msgid ""
 "We're only going to be using ``_physics_process`` for respawning, and so the "
-"first thing we do is check to see if ``target_respawn_timer`` is more than "
-"``0``."
+"first thing we do is check to see if ``target_respawn_timer`` is greater "
+"than ``0``."
 msgstr ""
-"我们只会使用``_physics_process``进行重生，所以我们要做的第一件事是检查"
-"``target_respawn_timer``是否超过``0``。"
+"我们只会使用 ``_physics_process`` 进行重生，所以我们要做的第一件事是检查 "
+"``target_respawn_timer`` 是否超过 ``0`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:729
-msgid "If it is, we then remove ``delta`` from it."
-msgstr "如果是，我们从中删除``delta``。"
+#, fuzzy
+msgid "If it is, we then subtract ``delta`` from it."
+msgstr "如果是，我们从中删除 ``delta`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:731
+#, fuzzy
 msgid ""
 "Then we check to see if ``target_respawn_timer`` is ``0`` or less. The "
 "reason behind this is since we just removed ``delta`` from "
-"``target_respawn_timer``, if it's ``0`` or less then the target just got "
+"``target_respawn_timer``, if it's ``0`` or less, then the target just got "
 "here, effectively allowing us to do whatever we need to do when the timer is "
 "finished."
 msgstr ""
-"然后我们检查``target_respawn_timer``是否为“0”或更少。 这背后的原因是因为我们"
-"刚从``target_respawn_timer``中删除了``delta``，如果它是'0``或更少，那么目标刚"
-"到这里，有效地允许我们做任何我们需要做的事情当计时器 完了。"
+"然后我们检查 ``target_respawn_timer`` 是否为“0”或更少。 这背后的原因是因为我"
+"们刚从 ``target_respawn_timer`` 中删除了 ``delta`` ，如果它是'0``或更少，那么"
+"目标刚到这里，有效地允许我们做任何我们需要做的事情当计时器 完了。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:734
 msgid "In this case, we want to respawn the target."
@@ -1172,15 +1238,17 @@ msgid ""
 "do this by iterating over all of the children in ``broken_target_holder`` "
 "and free them using ``queue_free``."
 msgstr ""
-"我们要做的第一件事是移除破碎的目标持有者中的所有儿童。 我们通过遍历"
-"``broken_target_holder``中的所有子节点并使用``queue_free``释放它们来完成此操"
-"作。"
+"我们要做的第一件事是移除破碎的目标持有者中的所有儿童。 我们通过遍历 "
+"``broken_target_holder`` 中的所有子节点并使用 ``queue_free`` 释放它们来完成此"
+"操作。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:738
+#, fuzzy
 msgid ""
-"Next we enable the collision shape by setting its ``disabled`` boolean to "
+"Next, we enable the collision shape by setting its ``disabled`` boolean to "
 "``false``."
-msgstr "接下来，我们通过将``disabled``布尔值设置为``false``来启用碰撞形状。"
+msgstr ""
+"接下来，我们通过将 ``disabled`` 布尔值设置为 ``false`` 来启用碰撞形状。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:740
 msgid "Then we make the target, and all of its children nodes, visible again."
@@ -1191,16 +1259,17 @@ msgid ""
 "Finally, we reset the target's health (``current_health``) to "
 "``TARGET_HEALTH``."
 msgstr ""
-"最后，我们将目标的健康状况（``current_health``）重置为``TARGET_HEALTH``。"
+"最后，我们将目标的健康状况(``current_health``)重置为``TARGET_HEALTH``。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:746
 msgid "Finally, let's look at ``bullet_hit``."
-msgstr "最后，让我们看一下``bullet_hit``。"
+msgstr "最后，让我们看一下 ``bullet_hit`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:748
+#, fuzzy
 msgid ""
-"The first thing we do is remove however much damage the bullet does from the "
-"target's health."
+"The first thing we do is subtract however much damage the bullet does from "
+"the target's health."
 msgstr "我们要做的第一件事就是去除子弹对目标健康造成的伤害。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:750
@@ -1216,19 +1285,21 @@ msgid ""
 "We first instance a new destroyed target scene, and assign it to a new "
 "variable, a ``clone``."
 msgstr ""
-"我们首先实例化一个新的被破坏的目标场景，并将其分配给一个新变量，即``clone``。"
+"我们首先实例化一个新的被破坏的目标场景，并将其分配给一个新变量，即 "
+"``clone`` 。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:754
 msgid "Next we add the ``clone`` as a child of the broken target holder."
-msgstr "接下来，我们将``clone``添加为已损坏目标持有者的子项。"
+msgstr "接下来，我们将 ``clone`` 添加为已损坏目标持有者的子项。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:756
+#, fuzzy
 msgid ""
-"For bonus effect, we want to make all of the target pieces explode outwards. "
-"To do this, we iterate over all of the children in ``clone``."
+"For bonus effect, we want to make all the target pieces explode outwards. To "
+"do this, we iterate over all the children in ``clone``."
 msgstr ""
-"对于奖励效果，我们希望使所有目标碎片向外爆炸。 为此，我们遍历``clone``中的所"
-"有子节点。"
+"对于奖励效果，我们希望使所有目标碎片向外爆炸。 为此，我们遍历 ``clone`` 中的"
+"所有子节点。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:758
 msgid ""
@@ -1239,28 +1310,31 @@ msgid ""
 "we push the child from the calculated center, in the direction away from the "
 "center, using the damage of the bullet as the force."
 msgstr ""
-"对于每个孩子，我们首先检查它是否是：ref：`RigidBody <class_RigidBody>`节点。 "
-"如果是，我们然后计算目标相对于子节点的中心位置。 然后我们计算出子节点相对于中"
-"心的方向。 使用这些计算出的变量，我们将子弹从计算中心推向远离中心的方向，使用"
-"子弹的损伤作为力。"
+"对于每个子节点，我们首先检查它是否是 :ref:`RigidBody <class_RigidBody>` 节"
+"点。 如果是，我们然后计算目标相对于子节点的中心位置。 然后我们计算出子节点相"
+"对于中心的方向。 使用这些计算出的变量，我们将子弹从计算中心推向远离中心的方"
+"向，使用子弹的损伤作为力。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:762
+#, fuzzy
 msgid ""
 "We multiply the damage by ``12`` so it has a more dramatic effect. You can "
-"change this to a higher or lower value depending on how explosive you want "
+"change this to a higher or lower value depending on how explosively you want "
 "your targets to shatter."
 msgstr ""
 "我们将伤害乘以“12”以使其具有更显着的效果。 您可以将此值更改为更高或更低的值，"
 "具体取决于您希望目标破碎的爆炸程度。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:765
+#, fuzzy
 msgid ""
-"Next we set the target's respawn timer. We set the timer to "
+"Next, we set the target's respawn timer. We set the timer to "
 "``TARGET_RESPAWN_TIME``, so it takes ``TARGET_RESPAWN_TIME`` in seconds "
 "until it is respawned."
 msgstr ""
-"接下来我们设置目标的重生计时器。 我们将计时器设置为``TARGET_RESPAWN_TIME``，"
-"因此它在几秒钟内需要``TARGET_RESPAWN_TIME``，直到重生为止。"
+"接下来我们设置目标的重生计时器。 我们将计时器设置为 "
+"``TARGET_RESPAWN_TIME`` ，因此它在几秒钟内需要 ``TARGET_RESPAWN_TIME`` ，直到"
+"重生为止。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:767
 msgid ""
@@ -1274,8 +1348,8 @@ msgid ""
 "in the editor! Otherwise the targets will not be destroyed and you will get "
 "an error!"
 msgstr ""
-"确保在编辑器中为``Target.tscn``设置导出的``destroyed_target``值！ 否则目标将"
-"不会被销毁，您将收到错误！"
+"确保在编辑器中为 ``Target.tscn`` 设置导出的 ``destroyed_target`` 值！ 否则目"
+"标将不会被销毁，您将收到错误！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:774
 msgid ""
@@ -1284,8 +1358,8 @@ msgid ""
 "they've taken enough damage. After a little while, they'll respawn into a "
 "whole target again."
 msgstr ""
-"完成后，在一个/两个/所有级别中放置一些``Target.tscn``实例。 你会发现他们在受"
-"到足够的伤害后会爆炸成五件。 过了一会儿，他们会再次重生成一个整体目标。"
+"完成后，在一个/两个/所有级别中放置一些 ``Target.tscn`` 实例。 您会发现他们在"
+"受到足够的伤害后会爆炸成五件。 过了一会儿，他们会再次重生成一个整体目标。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:778
 msgid "Final notes"
@@ -1296,7 +1370,7 @@ msgid ""
 "Now you can use a joypad, change weapons with the mouse's scroll wheel, "
 "replenish your health and ammo, and break targets with your weapons."
 msgstr ""
-"现在你可以使用游戏手柄，用鼠标的滚轮更换武器，补充你的健康和弹药，并用你的武"
+"现在您可以使用游戏手柄，用鼠标的滚轮更换武器，补充您的健康和弹药，并用您的武"
 "器打破目标。"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:784
@@ -1305,8 +1379,8 @@ msgid ""
 "grenades to our player, give our player the ability to grab and throw "
 "objects, and add turrets!"
 msgstr ""
-"在下一部分中，：ref：`doc_fps_tutorial_part_five`，我们将为我们的玩家添加手榴"
-"弹，让我们的玩家能够抓住并投掷物体，并添加炮塔！"
+"在下一部分中， :ref:`doc_fps_tutorial_part_five`，我们将为我们的游戏角色添加"
+"手榴弹，让我们的游戏角色能够抓住并投掷物体，并添加炮塔！"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:787
 msgid "If you ever get lost, be sure to read over the code again!"
@@ -1317,5 +1391,5 @@ msgid ""
 "You can download the finished project for this part here: :download:"
 "`Godot_FPS_Part_4.zip <files/Godot_FPS_Part_4.zip>`"
 msgstr ""
-"你可以在这里下载这个部分的完成项目:: download：`Godot_FPS_Part_4.zip "
-"<files / Godot_FPS_Part_4.zip>`"
+"您可以在这里下载这个部分的完成项目: :download:`Godot_FPS_Part_4.zip <files / "
+"Godot_FPS_Part_4.zip>`"

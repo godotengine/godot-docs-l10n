@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,16 @@ msgid "Introduction"
 msgstr "Introduction"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:9
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the *observer* pattern. They allow a node to "
 "send out a message that other nodes can listen for and respond to. For "
 "example, rather than continuously checking a button to see if it's being "
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
-"Les signaux sont la version de Godot du schéma de l'observateur. Ils "
-"permettent à un nœud d'envoyer un message que les autres nœuds peuvent "
-"écouter et auquel ils peuvent répondre. Par exemple, au lieu de vérifier en "
-"continu si un bouton est appuyé, le bouton peut émettre un signal lorsqu'il "
-"est appuyé."
+"Les signaux sont la version de Godot du modèle d'observateur. Ils permettent "
+"à un nœud d'envoyer un message que les autres nœuds peuvent écouter et "
+"auquel ils peuvent répondre. Par exemple, au lieu de vérifier en continu si "
+"un bouton est appuyé, le bouton peut émettre un signal lorsqu'il est appuyé."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
 msgid ""
@@ -48,16 +46,15 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
-#, fuzzy
 msgid ""
 "Signals are a way to *decouple* your game objects, which leads to better "
 "organized and more manageable code. Instead of forcing game objects to "
 "expect other objects to always be present, they can instead emit signals "
 "that any interested objects can subscribe to and respond."
 msgstr ""
-"Les signaux sont un moyen de **découpler** vos objets de jeu, ce qui conduit "
-"à un code mieux organisé et plus facile à gérer. Au lieu de forcer les "
-"objets du jeu à s'attendre à ce que d'autres objets soient toujours "
+"Les signaux sont un moyen de rendre vos objets de jeu indépendants, ce qui "
+"conduit à un code mieux organisé et plus facile à gérer. Au lieu de forcer "
+"les objets du jeu à s'attendre à ce que d'autres objets soient toujours "
 "présents, ils peuvent émettre des signaux auxquels tout objet intéressé peut "
 "s'abonner et répondre."
 
@@ -70,12 +67,10 @@ msgstr ""
 "vos propres projets."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
-#, fuzzy
 msgid "Timer example"
-msgstr "Quelques exemples :"
+msgstr "Exemple de minuterie"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
-#, fuzzy
 msgid ""
 "To see how signals work, let's try using a :ref:`Timer <class_Timer>` node. "
 "Create a new scene with a Node and two children: a Timer and a :ref:`Sprite "
@@ -91,20 +86,18 @@ msgstr ""
 "code."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
-#, fuzzy
 msgid "Your scene tree should look like this:"
-msgstr "L'arbre de scène devrait ressembler à ceci :"
+msgstr "L'arbre de la scène devrait ressembler à ceci :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:35
-#, fuzzy
 msgid ""
 "In the Timer node's properties, check the \"On\" box next to *Autostart*. "
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
 "Dans les propriétés du nœud Timer, cochez la case \"On\" à côté de "
-"*Autostart*. Le timer démarrera automatiquement lorsque vous exécuterez la "
-"scène. Vous pouvez quitter le *Temps d'attente* à 1 seconde."
+"*Autostart*. Le Timer démarrera automatiquement lorsque vous exécuterez la "
+"scène. Vous pouvez laisser le *Wait Time* (temps d'attente) à 1 seconde."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
 msgid ""
@@ -188,9 +181,8 @@ msgstr ""
 "modifier cela."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
-#, fuzzy
 msgid "Connecting signals in code"
-msgstr "Connexion d'un signal à une fonction"
+msgstr "Connecter des signaux dans le code"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -226,9 +218,8 @@ msgstr ""
 "cible>)``. Voici le code pour la connexion de notre minuterie :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
-#, fuzzy
 msgid "Custom signals"
-msgstr "Itérateurs personnalisés"
+msgstr "Signaux personnalisés"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
@@ -249,9 +240,8 @@ msgid "To emit a signal via code, use the ``emit`` function:"
 msgstr "Pour émettre un signal par le code, utilisez la fonction ``emit`` :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
-#, fuzzy
 msgid "Shooting example"
-msgstr "Dans l'exemple suivant :"
+msgstr "Exemple de tir :"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:205
 msgid ""

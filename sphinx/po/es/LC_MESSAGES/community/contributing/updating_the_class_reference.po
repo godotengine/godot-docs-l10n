@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -424,7 +424,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
-msgid "See :ref:`hide <class_spatial_hide>`."
+#, fuzzy
+msgid "See :ref:`hide <class_spatial_method_hide>`."
 msgstr "See :ref:`hide <class_spatial_hide>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
@@ -453,7 +454,8 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
-msgid "Get :ref:`scale <class_node2d_scale>`."
+#, fuzzy
+msgid "Get :ref:`scale <class_node2d_property_scale>`."
 msgstr "Get :ref:`scale <class_node2d_scale>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
@@ -482,8 +484,9 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
-msgid "Emit :ref:`renamed <class_node_renamed>`."
-msgstr ""
+#, fuzzy
+msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
+msgstr "Get :ref:`scale <class_node2d_scale>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "[signal Class.signalname]"
@@ -559,9 +562,11 @@ msgid "*See below.*"
 msgstr "*Ver a continuación.*"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
+#, fuzzy
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
-"always use spaces for indentation (the parser will delete tabs). Example:"
+"always use **four spaces** for indentation (the parser will delete tabs). "
+"Example:"
 msgstr ""
 "Usa ``[bloque de código]`` para pre-formatear bloques de código. Dentro de "
 "``[bloque de código]``, usa espacios para hacer sangría (el analizador "
@@ -600,9 +605,20 @@ msgstr "Traducciones"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:282
 msgid ""
-"Before we translate the documentation, we need to complete and proof-read it "
-"in English. We'll work on localization when we get past 90% completion."
+"The documentation can be translated in any language on `Hosted Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
-"Antes de traducir la documentación, necesitamos completarla y revisarla en "
-"inglés. Trabajaremos en la localización cuando hayamos superado el 90% del "
-"proceso."
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:285
+msgid ""
+"Translated strings are synced manually by documentation maintainers in the "
+"`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
+"repository."
+msgstr ""
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:289
+msgid ""
+"Languages with a good level of completion have their own localized instances "
+"of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "
+"think that a new language is complete enough to get its own instance."
+msgstr ""

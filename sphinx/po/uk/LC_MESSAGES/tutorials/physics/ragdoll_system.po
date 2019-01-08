@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,7 @@ msgstr "Вступ"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:9
 msgid ""
-"Since version 3.1, Godot supports ragdoll physics. Ragdolls rely on physic "
+"Since version 3.1, Godot supports ragdoll physics. Ragdolls rely on physics "
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
@@ -89,9 +89,9 @@ msgstr "Як розпочати гру"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:36
 msgid ""
-"Each ``PhysicalBone`` the engine needs to simulate has a performance cost so "
-"you want to remove every bone that is too small to make a difference in the "
-"simulation, as well as all utility bones."
+"Each ``PhysicalBone`` the engine needs to simulate has a performance cost, "
+"so you want to remove every bone that is too small to make a difference in "
+"the simulation, as well as all utility bones."
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:38
@@ -116,8 +116,8 @@ msgstr "Видимі контури зіткнень"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:45
 msgid ""
-"The next task is adjust the collision shape and the size of physical bones "
-"to match the part of body that each bone should simulate."
+"The next task is adjusting the collision shape and the size of physical "
+"bones to match the part of the body that each bone should simulate."
 msgstr ""
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:50
@@ -127,7 +127,7 @@ msgstr "Коригування"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:52
 msgid ""
-"Once you adjusted the collision shapes your ragdoll is almost ready. You "
+"Once you adjusted the collision shapes, your ragdoll is almost ready. You "
 "just want to adjust the pin joints to get a better simulation. "
 "``PhysicalBone`` nodes have an unconstrained pin joint assigned to them by "
 "default. To change the pin joint, select the ``PhysicalBone`` and change the "

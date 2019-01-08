@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:4
 msgid "Introduction to the 2D animation features"
-msgstr "二维动画特征介绍"
+msgstr "2D动画特征介绍"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:7
 msgid "Overview"
@@ -33,7 +33,7 @@ msgstr ":ref:`class_AnimationPlayer` 节点允许您创建从简单到复杂的�
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:12
 msgid "In this guide you learn to:"
-msgstr "在本指南中，你将学会："
+msgstr "在本指南中，您将学会:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:14
 msgid "Work with the Animation Panel"
@@ -49,7 +49,7 @@ msgstr "创建一个简单的动画"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:17
 msgid "Call functions with the powerful Call Function Tracks"
-msgstr "使用功能强大的呼叫功能轨道调用功能"
+msgstr "使用功能强大的Call Function Tracks调用函数"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:19
 msgid ""
@@ -60,7 +60,7 @@ msgid ""
 "call any function."
 msgstr ""
 "在Godot中，您可以为Inspector中找到的任何内容制作动画。 动画是属性随时间的变"
-"化。 这意味着您可以为自然界中的任何视觉效果设置动画：精灵，UI元素，粒子，可见"
+"化。 这意味着您可以为自然界中的任何视觉效果设置动画:精灵，UI元素，粒子，可见"
 "性和纹理颜色。 但不仅如此。 您还可以控制与游戏相关的值并调用任何函数。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:26
@@ -99,7 +99,7 @@ msgstr "动画面板位置"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:48
 msgid "It consists of five parts:"
-msgstr "它由五部分组成："
+msgstr "它由五部分组成:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:53
 msgid "The animation panel"
@@ -107,11 +107,11 @@ msgstr "动画面板"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:55
 msgid "Animation controls (i.e. add, load, save, and delete animations)"
-msgstr "动画控件（即添加、加载、保存和删除动画）"
+msgstr "动画控件(即添加、加载、保存和删除动画)"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:56
 msgid "The tracks listing"
-msgstr "跟踪清单"
+msgstr "轨道列表"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:57
 msgid "The timeline with keyframes"
@@ -119,13 +119,13 @@ msgstr "带有关键帧的时间轴"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:58
 msgid "The keyframe editor (when enabled)"
-msgstr "关键帧编辑器（启用时）"
+msgstr "关键帧编辑器(启用时)"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:59
 msgid ""
 "The timeline and track controls, where you can zoom the timeline and edit "
 "tracks for example."
-msgstr "时间轴和跟踪控件，例如，您可以在其中缩放时间轴和编辑轨道。"
+msgstr "时间轴和轨道控件，例如，您可以在其中缩放时间轴和编辑轨道。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:62
 msgid ""
@@ -133,7 +133,7 @@ msgid ""
 "details."
 msgstr ""
 "有关详细信息，请参阅下面的 `animation panel reference <#animation-panel-"
-"reference>`__  。"
+"reference>`__ 。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:66
 msgid "Computer animation relies on keyframes"
@@ -182,7 +182,7 @@ msgstr ""
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:100
 msgid "Example of Normal animation tracks"
-msgstr "普通动画轨道的例子"
+msgstr "普通动画轨道的示例"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:104
 msgid ""
@@ -251,12 +251,12 @@ msgstr "添加一个新的动画"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:144
 msgid "Adding a track"
-msgstr "添加轨迹"
+msgstr "添加轨道"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:146
 msgid ""
 "To add a new track for our sprite, select it and take a look in the toolbar:"
-msgstr "要为我们的精灵添加一个新的轨道，选择它并在工具栏中查看："
+msgstr "要为我们的精灵添加一个新的轨道，选择它并在工具栏中查看:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:152
 msgid "Convenience buttons"
@@ -286,7 +286,7 @@ msgstr ""
 msgid ""
 "This creates a new track and our first keyframe at the beginning of the "
 "timeline:"
-msgstr "这会在时间轴的开头创建一个新轨道和第一个关键帧："
+msgstr "这会在时间轴的开头创建一个新轨道和第一个关键帧:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:170
 msgid "The sprite track"
@@ -303,22 +303,23 @@ msgid ""
 "In our example, the path is ``AnimationPlayer/Sprite`` and the property is "
 "``position``."
 msgstr ""
-"在我们的例子中，路径是``AnimationPlayer / Sprite``，属性是``position``。"
+"在我们的示例中，路径是``AnimationPlayer / Sprite``，属性是 ``position`` 。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:178
 msgid ""
 "The path always starts at the AnimationPlayer node's parent (so paths always "
 "have to include the AnimationPlayer node itself)."
 msgstr ""
-"路径始终从AnimationPlayer节点的父节点开始（因此路径始终必须包含"
-"AnimationPlayer节点本身）。"
+"路径始终从AnimationPlayer节点的父节点开始(因此路径始终必须包含AnimationPlayer"
+"节点本身)。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:183
 msgid ""
 "Don't worry if you change the names of nodes in the Scene Tree, that you "
 "already have tracks for. Godot automatically updates the paths in the tracks."
 msgstr ""
-"如果更改“场景树”中已有曲目的节点名称，请不要担心。 戈多自动更新轨道中的路径。"
+"如果更改“场景树”中已有轨道的节点名称，请不要担心。 Godot自动更新轨道中的路"
+"径。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:188
 msgid "The second keyframe"
@@ -360,11 +361,11 @@ msgstr "运行动画"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:211
 msgid "Click on the \"Play from beginning\" (|Play from beginning|) button."
-msgstr "单击“从头开始播放”（|从开头播放|）按钮。"
+msgstr "单击“从头开始播放”(|从开头播放|)按钮。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:213
 msgid "Yay! Our animation runs:"
-msgstr "好极了！ 我们的动画运行："
+msgstr "好极了！ 我们的动画运行:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:218
 msgid "The animation"
@@ -381,9 +382,9 @@ msgid ""
 "calculates the frames between two keyframes. In a loop, the first keyframe "
 "is also the last keyframe, if no keyframe is specified at the end."
 msgstr ""
-"如您所见，默认情况下启用“循环”按钮，我们的动画循环。 戈多在这里有一个额外的功"
-"能。 如前所述，戈多总是计算两个关键帧之间的帧。 在循环中，如果最后没有指定关"
-"键帧，则第一个关键帧也是最后一个关键帧。"
+"如您所见，默认情况下启用“循环”按钮，我们的动画循环。 Godot在这里有一个额外的"
+"功能。 如前所述，Godot总是计算两个关键帧之间的帧。 在循环中，如果最后没有指定"
+"关键帧，则第一个关键帧也是最后一个关键帧。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:232
 msgid "Animation loop"
@@ -414,19 +415,19 @@ msgstr ""
 msgid ""
 "The update rate of a track tells Godot when to update the property values. "
 "This can be:"
-msgstr "轨道的更新速率告诉Godot何时更新属性值。 这可以是："
+msgstr "轨道的更新速率告诉Godot何时更新属性值。 这可以是:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:252
 msgid "Continuous: Update the property on each frame"
-msgstr "连续：更新每个帧的属性"
+msgstr "连续:更新每个帧的属性"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:253
 msgid "Discrete: Only update the property on keyframes"
-msgstr "离散：仅更新关键帧上的属性"
+msgstr "离散:仅更新关键帧上的属性"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:254
 msgid "Trigger: Only update the property on keyframes or triggers"
-msgstr "触发器：仅更新关键帧或触发器上的属性"
+msgstr "触发器:仅更新关键帧或触发器上的属性"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:259
 msgid "Track rate"
@@ -442,23 +443,23 @@ msgstr "在普通动画中，您通常使用“连续”。 其他类型用于�
 msgid ""
 "The interpolation tells Godot how to calculate the frame values between the "
 "keyframes. These interpolation modes are supported:"
-msgstr "插值告诉Godot如何计算关键帧之间的帧值。 支持这些插值模式："
+msgstr "插值告诉Godot如何计算关键帧之间的帧值。 支持这些插值模式:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:267
 msgid "Nearest: Set the nearest keyframe value"
-msgstr "最近：设置最近的关键帧值"
+msgstr "最近:设置最近的关键帧值"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:268
 msgid ""
 "Linear: Set the value based on a linear function calculation between the two "
 "keyframes"
-msgstr "线性：根据两个关键帧之间的线性函数计算设置值"
+msgstr "线性:根据两个关键帧之间的线性函数计算设置值"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:270
 msgid ""
 "Cubic: Set the value based on a cubic function calculation between the two "
 "keyframes"
-msgstr "Cubic：根据两个关键帧之间的三次函数计算设置值"
+msgstr "Cubic:根据两个关键帧之间的三次函数计算设置值"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:276
 msgid "Track interpolation"
@@ -477,7 +478,7 @@ msgstr ""
 msgid ""
 "Godot supports two loop modes, which affect the animation if it's set to "
 "loop:"
-msgstr "Godot支持两种循环模式，如果将其设置为循环，则会影响动画："
+msgstr "Godot支持两种循环模式，如果将其设置为循环，则会影响动画:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:289
 msgid "Loop modes"
@@ -489,7 +490,7 @@ msgid ""
 "the last keyframe for this track. When the first keyframe is reached again, "
 "the animation will reset to its values."
 msgstr ""
-"钳位循环插值：选择此选项后，动画将在此曲目的最后一个关键帧之后停止。 再次到达"
+"钳位循环插值:选择此选项后，动画将在此轨道的最后一个关键帧之后停止。 再次到达"
 "第一个关键帧时，动画将重置为其值。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:294
@@ -498,8 +499,8 @@ msgid ""
 "animation after the last keyframe to reach the values of the first keyframe "
 "again."
 msgstr ""
-"包裹循环插值：当选择此项时，Godot会在最后一个关键帧之后计算动画，以再次达到第"
-"一个关键帧的值。"
+"包循环插值:当选择此项时，Godot会在最后一个关键帧之后计算动画，以再次达到第一"
+"个关键帧的值。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:299
 #: ../../docs/tutorials/animation/introduction_2d.rst:312
@@ -531,7 +532,7 @@ msgid ""
 "For advanced use and to edit keyframe in detail, enable the keyframe editor "
 "(|Keyframe editor|)."
 msgstr ""
-"要获得高级用法并详细编辑关键帧，请启用关键帧编辑器（| Keyframe editor |）。"
+"要获得高级用法并详细编辑关键帧，请启用关键帧编辑器(| Keyframe editor |)。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:320
 msgid ""
@@ -539,7 +540,7 @@ msgid ""
 "select a keyframe, you can directly edit its values in this editor:"
 msgstr ""
 "这会在轨道设置的右侧添加一个编辑器窗格。 选择关键帧时，可以在此编辑器中直接编"
-"辑其值："
+"辑其值:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:326
 msgid "Keyframe editor editing a key"
@@ -547,7 +548,7 @@ msgstr "关键帧编辑器编辑一个键"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:328
 msgid "Additionally, you can also edit the transition value for this keyframe:"
-msgstr "此外，您还可以编辑此关键帧的转换值："
+msgstr "此外，您还可以编辑此关键帧的转换值:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:333
 msgid "Keyframe editor editing a transition"
@@ -563,11 +564,11 @@ msgstr "这告诉Godot，如何在到达此关键帧时更改属性值。"
 msgid ""
 "You usually tweak your animations this way, when the movement doesn't \"look "
 "right\"."
-msgstr "当这个动作“看起来不正确”时，你通常会以这种方式调整你的动画。"
+msgstr "当这个动作“看起来不正确”时，您通常会以这种方式调整您的动画。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:342
 msgid "Advanced: Call Func tracks"
-msgstr "高级：调用Func轨道"
+msgstr "高级:调用Func轨道"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:344
 msgid ""
@@ -576,15 +577,15 @@ msgid ""
 "index` you know that each node type is a class and has a bunch of callable "
 "functions."
 msgstr ""
-"戈多的动画引擎并不止于此。 如果你已经熟悉Godot的脚本语言：ref：`doc_gdscript`"
-"和：doc：`/ classes / index`你知道每个节点类型都是一个类，并且有一堆可调用的"
-"函数。"
+"Godot的动画引擎并不止于此。 如果您已经熟悉Godot的脚本语言 :ref:`doc_gdscript`"
+"和:doc:`/ classes / index`您知道每个节点类型都是一个类，并且有一堆可调用的函"
+"数。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:350
 msgid ""
 "For example, the :ref:`class_AudioStreamPlayer` node type has a function to "
 "play an audio stream."
-msgstr "例如，：ref：`class_AudioStreamPlayer`节点类型具有播放音频流的功能。"
+msgstr "例如， :ref:`class_AudioStreamPlayer`节点类型具有播放音频流的功能。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:353
 msgid ""
@@ -601,15 +602,15 @@ msgstr ""
 #: ../../docs/tutorials/animation/introduction_2d.rst:359
 msgid ""
 "To let Godot play a sample when it reaches a keyframe, follow this list:"
-msgstr "要让Godot在到达关键帧时播放样本，请按以下列表："
+msgstr "要让Godot在到达关键帧时播放样本，请按以下列表:"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:361
 msgid ""
 "Add a :ref:`class_AudioStreamPlayer` to the Scene Tree and setup a stream "
 "using an audio file you put in your project."
 msgstr ""
-"在场景树中添加：ref：`class_AudioStreamPlayer`，并使用放在项目中的音频文件设"
-"置流。"
+"在场景树中添加 :ref:`class_AudioStreamPlayer`，并使用放在项目中的音频文件设置"
+"流。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:367
 msgid "Add AudioStreamPlayer"
@@ -618,23 +619,23 @@ msgstr "添加AudioStreamPlayer"
 #: ../../docs/tutorials/animation/introduction_2d.rst:369
 msgid ""
 "Click on \"Add track\" (|Add track|) on the animation panel's track controls."
-msgstr "单击动画面板轨道控件上的“添加轨道”（|添加轨道|）。"
+msgstr "单击动画面板轨道控件上的“添加轨道”(|添加轨道|)。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:372
 msgid "Select \"Add Call Func Track\" from the list of possible track types."
-msgstr "从可能的轨道类型列表中选择“添加呼叫功能轨道”。"
+msgstr "从可能的轨道类型列表中选择“添加调用函数轨道”。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:377
 msgid "Add Call Func Track"
-msgstr "添加呼叫功能跟踪"
+msgstr "添加调用函数轨道"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:379
 msgid ""
 "Select the :ref:`class_AudioStreamPlayer` node in the selection window. "
 "Godot adds the track with the reference to the node."
 msgstr ""
-"在选择窗口中选择：ref：`class_AudioStreamPlayer`节点。 Godot添加了跟踪节点的"
-"引用。"
+"在选择窗口中选择 :ref:`class_AudioStreamPlayer`节点。 Godot添加了轨道节点的引"
+"用。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:385
 msgid "Select AudioStreamPlayer"
@@ -644,7 +645,7 @@ msgstr "选择AudioStreamPlayer"
 msgid ""
 "Select the timeline position, where Godot should play the sample by clicking "
 "on the timeline header."
-msgstr "选择时间轴位置，戈多应该通过单击时间轴标题来播放样本。"
+msgstr "选择时间轴位置，Godot应该通过单击时间轴标题来播放样本。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:390
 msgid "Enable the Keyframe Editor by clicking on |Keyframe editor|."
@@ -654,7 +655,7 @@ msgstr "单击|关键帧编辑器|启用关键帧编辑器。"
 msgid ""
 "Click on \"Add keyframe\" near the settings of our func track (|Add "
 "keyframe|) and select the keyframe."
-msgstr "单击我们的func轨道设置附近的“添加关键帧”（|添加关键帧|）并选择关键帧。"
+msgstr "单击我们的func轨道设置附近的“添加关键帧”(|添加关键帧|)并选择关键帧。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:398
 msgid "Add a keyframe to the call func track"
@@ -666,15 +667,15 @@ msgstr "输入“play”作为函数名称。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:405
 msgid "Keyframe settings of a call func track"
-msgstr "呼叫功能轨道的关键帧设置"
+msgstr "调用函数轨道的关键帧设置"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:407
 msgid ""
 "When Godot reaches the keyframe, Godot calls the :ref:"
 "`class_AnimationPlayer` node's \"play\" function and the stream plays."
 msgstr ""
-"当Godot到达关键帧时，Godot调用：ref：`class_AnimationPlayer`节点的“play”函数"
-"并播放流。"
+"当Godot到达关键帧时，Godot调用 :ref:`class_AnimationPlayer`节点的“play”函数并"
+"播放流。"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:412
 msgid "References"
@@ -690,7 +691,7 @@ msgstr "动画面板参考"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:422
 msgid "The animation panel has the following parts (from left to right):"
-msgstr "动画面板包含以下部分（从左到右）："
+msgstr "动画面板包含以下部分(从左到右):"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:425
 #: ../../docs/tutorials/animation/introduction_2d.rst:430
@@ -794,11 +795,11 @@ msgstr "切换循环动画"
 #: ../../docs/tutorials/animation/introduction_2d.rst:479
 #: ../../docs/tutorials/animation/introduction_2d.rst:484
 msgid "Track control"
-msgstr "跟踪控制"
+msgstr "轨道控制"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:486
 msgid "Add track"
-msgstr "添加曲目"
+msgstr "添加轨道"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:487
 msgid "Move track up"
@@ -810,7 +811,7 @@ msgstr "向下移动轨道"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:489
 msgid "Delete track"
-msgstr "删除曲目"
+msgstr "删除轨道"
 
 #: ../../docs/tutorials/animation/introduction_2d.rst:490
 msgid "Extended track tools"

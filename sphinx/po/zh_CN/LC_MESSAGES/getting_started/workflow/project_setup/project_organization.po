@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr "简介"
 #, fuzzy
 msgid ""
 "This tutorial aims to propose a simple workflow on how to organize projects. "
-"Since Godot allows the programmer to use the file-system as they please, "
+"Since Godot allows the programmer to use the filesystem as they please, "
 "figuring out a way to organize projects when starting to use the engine can "
 "be a little challenging. Because of this, the tutorial describes a simple "
 "workflow, which should work as a starting point, regardless of whether it is "
@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "本教程旨在提出一个关于如何组织项目的简单工作流程。 既然Godot允许程序员随心所"
 "欲地使用文件系统，在开始使用引擎时想办法组织项目可能会有点困难。 因此，将描述"
-"一个简单的工作流程，你来决定使用与否，但应该将其作为一个起点。"
+"一个简单的工作流程，您来决定使用与否，但应该将其作为一个起点。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
 msgid ""
@@ -53,10 +53,9 @@ msgstr "组织"
 msgid ""
 "Godot is scene-based in nature, and uses the filesystem as-is, without "
 "metadata or an asset database."
-msgstr "Godot 本身是基于场景的，并使用了文件系统，没有元数据或资产数据库。"
+msgstr "Godot 本身是基于场景的，并使用了文件系统，没有元数据或资源数据库。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:25
-#, fuzzy
 msgid ""
 "Unlike other engines, many resources are contained within the scene itself, "
 "so the amount of files in the filesystem is considerably lower."
@@ -68,10 +67,9 @@ msgid ""
 "Considering that, the most common approach is to group assets as close to "
 "scenes as possible; when a project grows, it makes it more maintainable."
 msgstr ""
-"考虑到这一点，最常见的方法是将资产按照场景分组，当项目变大时，更易于维护。"
+"考虑到这一点，最常见的方法是将资源按照场景分组，当项目变大时，更易于维护。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:32
-#, fuzzy
 msgid ""
 "As an example, one can usually place into a single folder their basic "
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
@@ -97,7 +95,7 @@ msgstr ""
 msgid ""
 "Because of this, assets are now transparently imported from within the "
 "project folder."
-msgstr "因此，资产现在可以透明地从项目文件夹中导入。"
+msgstr "因此，资源现在可以透明地从项目文件夹中导入。"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:62
 msgid ""

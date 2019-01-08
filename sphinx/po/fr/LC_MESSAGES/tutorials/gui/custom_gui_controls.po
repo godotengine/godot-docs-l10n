@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,8 +54,8 @@ msgstr ""
 msgid ""
 "Unlike 2D nodes, \"size\" is important with controls, as it helps to "
 "organize them in proper layouts. For this, the :ref:`Control.rect_size "
-"<class_Control_rect_size>` member variable is provided. Checking it during "
-"_draw() is vital to ensure everything is kept in-bounds."
+"<class_Control_property_rect_size>` property is provided. Checking it during "
+"``_draw()`` is vital to ensure everything is kept in-bounds."
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:33
@@ -67,11 +67,11 @@ msgid ""
 "Some controls (such as buttons or text editors) might provide input focus "
 "for keyboard or joypad input. Examples of this are entering text or pressing "
 "a button. This is controlled with the :ref:`Control.focus_mode "
-"<class_Control_focus_mode>` member variable. When drawing, and if the "
+"<class_Control_property_focus_mode>` property. When drawing, and if the "
 "control supports input focus, it is always desired to show some sort of "
-"indicator (highlight, box, etc) to indicate that this is the currently "
+"indicator (highlight, box, etc.) to indicate that this is the currently "
 "focused control. To check for this status, the :ref:`Control.has_focus() "
-"<class_Control_has_focus>` method exists. Example"
+"<class_Control_method_has_focus>` method exists. Example"
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:69
@@ -91,7 +91,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:79
 msgid ""
 "To provide this callback, just override :ref:`Control.get_minimum_size() "
-"<class_Control_get_minimum_size>`, for example:"
+"<class_Control_method_get_minimum_size>`, for example:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:96
@@ -131,13 +131,14 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:127
 msgid ""
 "Control provides keyboard/joypad focus via :ref:`Control.focus_mode "
-"<class_Control_focus_mode>`."
+"<class_Control_property_focus_mode>`."
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:130
 msgid ""
-"This function is :ref:`Control._gui_input() <class_Control__gui_input>`. "
-"Simply override it in your control. No processing needs to be set."
+"This function is :ref:`Control._gui_input() "
+"<class_Control_method__gui_input>`. Simply override it in your control. No "
+"processing needs to be set."
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:167

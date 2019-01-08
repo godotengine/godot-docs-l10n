@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "定制 GUI 的Control节点"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:7
 msgid "So many controls..."
-msgstr "已经有好多control节点了。。。"
+msgstr "已经有好多control节点了..."
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:9
 msgid ""
@@ -34,8 +34,8 @@ msgid ""
 "scrollbars, at least it will be good to know how to create these controls "
 "easily from script."
 msgstr ""
-"然而, 这永远不会够。创建自定义的控件让其如你所想般工作, 几乎让每个 GUI 程序员"
-"着迷。Godot提供了大量的控件, 但他们也许不能精确的按照你所想要的方式工作。在联"
+"然而, 这永远不会够。创建自定义的控件让其如您所想般工作, 几乎让每个 GUI 程序员"
+"着迷。Godot提供了大量的控件, 但他们也许不能精确的按照您所想要的方式工作。在联"
 "系开发人员请求合并一个“支持对角线滚动条”的pull-request之前, 至少最好知道如何"
 "用脚本轻松地创建这样的控件。"
 
@@ -49,22 +49,23 @@ msgid ""
 "tutorial. The same applies. Some functions are worth mentioning due to their "
 "usefulness when drawing, so they will be detailed next:"
 msgstr ""
-"谈到绘制, 推荐看看这篇:ref:`doc_custom_drawing_in_2d` 的教程。同样的原理适用"
+"谈到绘制, 推荐看看这篇 :ref:`doc_custom_drawing_in_2d` 的教程。同样的原理适用"
 "与控件绘制。这里有些函数值得一提, 因为它们在绘制时有用, 所以接下来将进行详细"
 "说明:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:24
 msgid "Checking control size"
-msgstr "检查控件的尺寸"
+msgstr "检查控件的大小"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:26
+#, fuzzy
 msgid ""
 "Unlike 2D nodes, \"size\" is important with controls, as it helps to "
 "organize them in proper layouts. For this, the :ref:`Control.rect_size "
-"<class_Control_rect_size>` member variable is provided. Checking it during "
-"_draw() is vital to ensure everything is kept in-bounds."
+"<class_Control_property_rect_size>` property is provided. Checking it during "
+"``_draw()`` is vital to ensure everything is kept in-bounds."
 msgstr ""
-"与2D节点不同，”尺寸“对控件而言很重要，因为它有助于在合适的布局中组织控件。为"
+"与2D节点不同，”大小“对控件而言很重要，因为它有助于在合适的布局中组织控件。为"
 "此，我们提供了 :ref:`Control.rect_size <class_Control_rect_size>` 成员变量。"
 "为确保所有内容保持在边界内，在 _draw () 中检查这个变量至关重要。"
 
@@ -73,26 +74,27 @@ msgid "Checking focus"
 msgstr "检查输入焦点"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:35
+#, fuzzy
 msgid ""
 "Some controls (such as buttons or text editors) might provide input focus "
 "for keyboard or joypad input. Examples of this are entering text or pressing "
 "a button. This is controlled with the :ref:`Control.focus_mode "
-"<class_Control_focus_mode>` member variable. When drawing, and if the "
+"<class_Control_property_focus_mode>` property. When drawing, and if the "
 "control supports input focus, it is always desired to show some sort of "
-"indicator (highlight, box, etc) to indicate that this is the currently "
+"indicator (highlight, box, etc.) to indicate that this is the currently "
 "focused control. To check for this status, the :ref:`Control.has_focus() "
-"<class_Control_has_focus>` method exists. Example"
+"<class_Control_method_has_focus>` method exists. Example"
 msgstr ""
 "有些控件 (如按钮或文本编辑器) 可能为键盘或手柄输入提供输入焦点。比如正在输入"
 "文本或按下按钮的时候。这由 :ref:`Control.focus_mode "
 "<class_Control_focus_mode>` 成员变量控制。当绘制控件时, 如果该控件支持输入焦"
 "点, 则它总是需要显示某种指示符 (高亮、方框等), 以指示这是当前焦点所在的控件。"
 "要检查此状态, 我们提供了 :ref:`Control.has_focus() "
-"<class_Control_has_focus>` 方法。请看例子"
+"<class_Control_has_focus>` 方法。请看示例"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:69
 msgid "Sizing"
-msgstr "调整尺寸"
+msgstr "调整大小"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:71
 msgid ""
@@ -103,18 +105,19 @@ msgid ""
 "`VBoxContainer <class_VBoxContainer>`, the minimum size will make sure your "
 "custom control is not squished by the other controls in the container."
 msgstr ""
-"如前所述, 尺寸对控件很重要。当控件被设置到网格、容器里面或进行锚定时, 尺寸让"
-"它们可以正确布局。大多数时候控件提供 * 最小尺寸 * 以帮助正确地放置它们。例"
+"如前所述, 大小对控件很重要。当控件被设置到网格、容器里面或进行锚定时, 大小让"
+"它们可以正确布局。大多数时候控件提供 * 最小大小 * 以帮助正确地放置它们。例"
 "如, 如果许多控件使用 :ref:`VBoxContainer <class_VBoxContainer>` 垂直放置在彼"
-"此的顶部, 则最小尺寸将确保您的自定义控件不会被容器中的其他控件压扁。"
+"此的顶部, 则最小大小将确保您的自定义控件不会被容器中的其他控件压扁。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:79
+#, fuzzy
 msgid ""
 "To provide this callback, just override :ref:`Control.get_minimum_size() "
-"<class_Control_get_minimum_size>`, for example:"
+"<class_Control_method_get_minimum_size>`, for example:"
 msgstr ""
 "要提供此回调，只需覆写 :ref:`Control.get_minimum_size() "
-"<class_Control_get_minimum_size>`， 例如："
+"<class_Control_get_minimum_size>`， 例如:"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:96
 msgid "Or alternatively, set it via function:"
@@ -128,7 +131,7 @@ msgstr "输入"
 msgid ""
 "Controls provide a few helpers to make managing input events much easier "
 "than regular nodes."
-msgstr "控件（Control）节点提供了一些帮助, 使管理输入事件比常规节点容易得多。"
+msgstr "控件(Control)节点提供了一些帮助, 使管理输入事件比常规节点容易得多。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:118
 msgid "Input events"
@@ -153,17 +156,20 @@ msgid ""
 msgstr "鼠标按键在此控件上被按下 (控件始终捕获输入, 直到按钮被释放)"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:127
+#, fuzzy
 msgid ""
 "Control provides keyboard/joypad focus via :ref:`Control.focus_mode "
-"<class_Control_focus_mode>`."
+"<class_Control_property_focus_mode>`."
 msgstr ""
 "控件通过以下方式提供键盘/手柄焦点 :ref:`Control.focus_mode "
 "<class_Control_focus_mode>`。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:130
+#, fuzzy
 msgid ""
-"This function is :ref:`Control._gui_input() <class_Control__gui_input>`. "
-"Simply override it in your control. No processing needs to be set."
+"This function is :ref:`Control._gui_input() "
+"<class_Control_method__gui_input>`. Simply override it in your control. No "
+"processing needs to be set."
 msgstr ""
 "这个特殊的函数就是 :ref:`Control._gui_input() <class_Control__gui_input>`。只"
 "需在您的控件中覆写它。不需要设置任何处理。"
@@ -172,7 +178,7 @@ msgstr ""
 msgid ""
 "For more information about events themselves, check the :ref:"
 "`doc_inputevent` tutorial."
-msgstr "有关事件（event）本身的详细信息, 请查看 :ref:`doc_inputevent` 教程。"
+msgstr "有关事件(event)本身的详细信息, 请查看 :ref:`doc_inputevent` 教程。"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:171
 msgid "Notifications"
@@ -183,5 +189,5 @@ msgid ""
 "Controls also have many useful notifications for which no callback exists, "
 "but can be checked with the _notification callback:"
 msgstr ""
-"控件还具有许多不存在对应回调函数的有用通知（notification）, 但可以使用 "
+"控件还具有许多不存在对应回调函数的有用通知(notification), 但可以使用 "
 "_notification 回调进行检查:"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:4
-msgid "Rigid Body"
-msgstr ""
+#, fuzzy
+msgid "RigidBody"
+msgstr "RigidBody2D 사용하기"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:7
 msgid "What is a rigid body?"
@@ -39,12 +40,14 @@ msgstr ""
 "body의 무게 중심에 영향을 미칩니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:13
-msgid "How to control rigid body"
+#, fuzzy
+msgid "How to control a rigid body"
 msgstr "rigid body 제어 방법"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
+#, fuzzy
 msgid ""
-"A rigid body's behavior can be altered by setting its properties such as "
+"A rigid body's behavior can be altered by setting its properties, such as "
 "friction, mass, bounce, etc. These properties can be set in the Inspector or "
 "via code. See :ref:`RigidBody <class_RigidBody>` for the full list of "
 "properties and their effects."
@@ -61,11 +64,12 @@ msgstr ""
 "원하는 용도에 따라 rigid body의 움직임을 제어하는 몇 가지 방법이 있습니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:19
+#, fuzzy
 msgid ""
 "If you only need to place a rigid body once, for example to set its initial "
 "location, you can use the methods provided by the :ref:`Spatial "
 "<class_Spatial>` node, such as ``set_global_transform()`` or ``look_at()``. "
-"However, these functions can not be called every frame or the physics engine "
+"However, these methods cannot be called every frame or the physics engine "
 "will not be able to correctly simulate the body's state. As an example, "
 "consider a rigid body that you want to rotate so that it points towards "
 "another object. A common mistake when implementing this kind of behavior is "
@@ -82,11 +86,12 @@ msgstr ""
 "리게 됩니다. 아래에서는, 이를 올바르게 구현하는 방법을 시연합니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:22
+#, fuzzy
 msgid ""
 "The fact that you can't use ``set_global_transform()`` or ``look_at()`` "
 "methods doesn't mean that you can't have full control of a rigid body. "
 "Instead, you can control it by using the ``_integrate_forces()`` callback. "
-"In this function, you can add *forces*, apply *impulses*, or set the "
+"In this method, you can add *forces*, apply *impulses*, or set the "
 "*velocity* in order to achieve any movement you desire."
 msgstr ""
 "``set_global_transform()``이나 ``look_at()``의 방법을 사용할 수 없다는 사실"
@@ -96,13 +101,14 @@ msgstr ""
 "*velocity*를 설정할 수 있습니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:25
-msgid "Look at function"
-msgstr "기능 보기"
+msgid "The \"look at\" method"
+msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:27
+#, fuzzy
 msgid ""
-"As described above, using the Spatial node's ``look_at()`` function can't be "
-"used each frame to follow a target. Here is a custom ``look_at()`` function "
+"As described above, using the Spatial node's ``look_at()`` method can't be "
+"used each frame to follow a target. Here is a custom ``look_at()`` method "
 "that will work reliably with rigid bodies:"
 msgstr ""
 "위에서 설명한 것처럼, 공간 노드의 ``look_at()``를 사용하여 각 프레임을 표적"
@@ -110,8 +116,9 @@ msgstr ""
 "``look_at()`` 함수이다:"
 
 #: ../../docs/tutorials/physics/rigid_body.rst:69
+#, fuzzy
 msgid ""
-"This function uses the rigid body's ``set_angular_velocity()`` method to "
+"This method uses the rigid body's ``set_angular_velocity()`` method to "
 "rotate the body. It first calculates the difference between the current and "
 "desired angle and then adds the velocity needed to rotate by that amount in "
 "one frame's time."
@@ -121,10 +128,11 @@ msgstr ""
 "간에 해당 양만큼 회전하는 데 필요한 속도를 추가합니다."
 
 #: ../../docs/tutorials/physics/rigid_body.rst:71
+#, fuzzy
 msgid ""
-"This script will not work with rigid bodies in *character mode* because in "
-"this mode the body's rotation is locked. In this case, you would have to "
-"rotate the attached mesh node instead using the standard Spatial methods."
+"This script will not work with rigid bodies in *character mode* because "
+"then, the body's rotation is locked. In that case, you would have to rotate "
+"the attached mesh node instead using the standard Spatial methods."
 msgstr ""
 "이 모드에서는 body의 회전이 잠겨 있기 때문에 *character mode*의 rigid bodies"
 "에서는 이 스크립트를 사용할 수 없습니다. 이 경우 표준 공간 메서드를 사용하여 "

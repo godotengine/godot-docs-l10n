@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -214,7 +214,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:82
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -230,7 +229,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "Що таке GDScript і чому я повинен, це використовувати?"
 
 #: ../../docs/about/faq.rst:90
 msgid ""
@@ -298,12 +297,12 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:122
 msgid "What were the motivations behind creating GDScript?"
-msgstr ""
+msgstr "Що мотивувало за створення GDScript?"
 
 #: ../../docs/about/faq.rst:124
 msgid ""
 "The main reasons for creating a custom scripting language for Godot were:"
-msgstr ""
+msgstr "Основними причинами створення власної скриптової мови для Godot були:"
 
 #: ../../docs/about/faq.rst:126
 msgid ""
@@ -325,16 +324,16 @@ msgstr ""
 "JS)."
 
 #: ../../docs/about/faq.rst:130
-#, fuzzy
 msgid ""
 "Many existing languages have horrible interfaces for binding to C++, "
 "resulting in large amount of code, bugs, bottlenecks, and general "
 "inefficiency (Lua, Python, Squirrel, JS, etc.) We wanted to focus on a great "
 "engine, not a great amount of integrations."
 msgstr ""
-"Жахливий інтерфейс для зв'язування з C++ призводить до великої кількості "
-"коду, помилок, вузьких місць та загальної неефективності (Lua, Python, "
-"Squirrel, JS та ін.)"
+"Багато існуючих мов мають жахливі інтерфейси для прив'язки до C++, що "
+"призводить до великої кількості коду, помилок, вузьких місць і загальної "
+"неефективності (Lua, Python, Squirrel, JS і т.д.). Ми хотіли зосередитися на "
+"великому рушії, а не на великій кількості інтеграцій."
 
 #: ../../docs/about/faq.rst:133
 msgid ""
@@ -365,26 +364,32 @@ msgstr ""
 #: ../../docs/about/faq.rst:142
 msgid "GDScript was designed to curtail the issues above and more."
 msgstr ""
+"GDScript був розроблений, щоб скоротити вищезазначені проблеми та багато "
+"іншого."
 
 #: ../../docs/about/faq.rst:145
 msgid "What type of 3D model formats does Godot support?"
-msgstr ""
+msgstr "Який тип форматів 3D-моделей підтримує Godot?"
 
 #: ../../docs/about/faq.rst:147
 msgid ""
 "Godot supports Collada via the `OpenCollada <https://github.com/KhronosGroup/"
 "OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ exporter (Maya, 3DSMax)."
 msgstr ""
+"Godot підтримує Collada через експортера `OpenCollada <https://github.com/"
+"KhronosGroup/OpenCOLLADA/wiki/OpenCOLLADA-Tools>`_ (Maya, 3DSMax)."
 
 #: ../../docs/about/faq.rst:149
 msgid ""
 "If you are using Blender, take a look at our own `Better Collada Exporter "
 "<https://godotengine.org/download>`_."
 msgstr ""
+"Якщо ви використовуєте Blender, погляньте на наш власний `Better Collada "
+"Exporter <https://godotengine.org/download>`_."
 
 #: ../../docs/about/faq.rst:151
 msgid "As of Godot 3.0, glTF is supported."
-msgstr ""
+msgstr "Починаючи з Godot 3.0, glTF підтримується."
 
 #: ../../docs/about/faq.rst:153
 #, fuzzy
@@ -400,9 +405,9 @@ msgstr ""
 "`відкритою ліцензією <https://opensource.org/licenses/MIT>`_ наданою Godot."
 
 #: ../../docs/about/faq.rst:159
+#, fuzzy
 msgid ""
-"Will [Insert closed SDK such as PhysX, GameWorks, etc.] be supported in "
-"Godot?"
+"Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
 "Чи будуть [Пропрієтарні закриті SDK, такі як PhysX, GameWorks тощо] "
 "підтримуватися в Godot?"
@@ -551,17 +556,16 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "Як я можу розширити Godot?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"Як створювати плаґініи до редактора Godot, перегляньте на :ref:`Плаґіни "
-"редактора <doc_making_plugins>` та інструментарій скриптів."
+"Як створювати плаґіни (додатки) до редактора Godot, перегляньте на :ref:"
+"`Плаґіни редактора <doc_making_plugins>` та інструментарій скриптів."
 
 #: ../../docs/about/faq.rst:228
 #, fuzzy
@@ -594,7 +598,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "Я хотів би зробити свій внесок! З чого почати?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
@@ -613,7 +617,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:249
 msgid "I have a great idea for Godot. How can I share it?"
-msgstr ""
+msgstr "У мене є чудова ідея для Godot. Як я можу поділитися нею?"
 
 #: ../../docs/about/faq.rst:251
 msgid ""
@@ -710,3 +714,5 @@ msgid ""
 "See the corresponding page on the `Godot website <https://godotengine.org/"
 "contact>`_."
 msgstr ""
+"Дивіться відповідну сторінку на `веб-сайті Godot <https://godotengine.org/"
+"contact>`_."

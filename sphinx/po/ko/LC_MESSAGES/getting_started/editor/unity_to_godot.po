@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -597,10 +597,16 @@ msgid "Glossary correspondence"
 msgstr "어휘 일치"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
-msgid ""
-"GameObject -> Node Add a component -> Inheriting Prefab -> Externalized "
-"branch"
-msgstr "GameObject -> 노드 구성 요소 추가  -> 상속 프리펩 -> 표면화 된 분기"
+msgid "GameObject -> Node"
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:198
+msgid "Add a component -> Inheriting"
+msgstr ""
+
+#: ../../docs/getting_started/editor/unity_to_godot.rst:199
+msgid "Prefab -> Externalized branch"
+msgstr ""
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
@@ -690,11 +696,13 @@ msgid "Connections: groups and signals"
 msgstr "연결: 그룹과 시그널"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
+#, fuzzy
 msgid ""
 "You can control nodes by accessing them using a script and calling functions "
 "(built-in or user-defined) on them. But there's more: You can also place "
 "them in a group and call a function on all nodes contained in this group! "
-"This is explained in :ref:`this page <doc_scripting_continued>`."
+"This is explained in the :ref:`scripting documentation "
+"<doc_scripting_continued>`."
 msgstr ""
 "스크립트를 사용하여 노드에 접속하고 노드에서 (내장 또는 커스텀) 함수를 호출하"
 "여 노드를 제어할 수 있습니다. 하지만 더 있습니다: 노드를 그룹에 배치하고 이 "
@@ -702,12 +710,12 @@ msgstr ""
 "에서 <doc_scripting_continued>` 설명합니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
+#, fuzzy
 msgid ""
 "But there's more! Certain nodes throw signals when certain actions happen. "
 "You can connect these signals to call a specific function when they happen. "
 "Note that you can define your own signals and send them whenever you want. "
-"This feature is documented `here <../scripting/gdscript/gdscript_basics."
-"html#signals>`_."
+"See the :ref:`signals documentation <doc_gdscript_signals>` for details."
 msgstr ""
 "하지만 더 있습니다! 특정 노드는 특정 동작이 발생할 때 시그널을 보냅니다. 이러"
 "한 신호를 연결하여 특정 기능을 호출할 수 있습니다. 자신만의 시그널을 정의하"
@@ -715,7 +723,8 @@ msgstr ""
 "html#signals>`_ 설명합니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
-msgid "Script Serialization"
+#, fuzzy
+msgid "Script serialization"
 msgstr "스크립트 직렬화"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
@@ -739,13 +748,13 @@ msgstr ""
 "화 되도록 할 수 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
+#, fuzzy
 msgid ""
 "Godot also has a built-in script serialization system, but it works only "
 "explicitly. You can serialize any serializable type (:ref:`built-in and "
 "various engine types <doc_binary_serialization_api>`, including :ref:"
-"`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. "
-"This workflow is explained `here <../scripting/gdscript/gdscript_basics."
-"html#exports>`_."
+"`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. See "
+"the :ref:`exports documentation <doc_gdscript_exports>` for details."
 msgstr ""
 "Godot 또한 내장 스크립트 직렬화 시스템을 갖추고 있지만, 오직 명시적으로만 작"
 "동합니다. 어떤 직렬화 가능한 타입이라도 (:ref:`built-in and various engine "
@@ -754,7 +763,7 @@ msgstr ""
 "습니다. 워크플로우는 `여기서 <../scripting/gdscript/gdscript_basics."
 "html#exports>`_ 설명합니다."
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:254
+#: ../../docs/getting_started/editor/unity_to_godot.rst:255
 msgid ""
 "Unity also has a data type called ``ScriptableObject`` used to serialize "
 "custom asset objects. Its equivalent in Godot is the base class for all "
@@ -769,11 +778,11 @@ msgstr ""
 "객체를 만들 수 있게 됩니다. 리소스에 관한 더 많은 정보는 :ref:`여기서 "
 "<doc_resources>` 볼 수 있습니다."
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:259
+#: ../../docs/getting_started/editor/unity_to_godot.rst:260
 msgid "Using Godot in C++"
 msgstr "C++로 Godot 사용하기"
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:261
+#: ../../docs/getting_started/editor/unity_to_godot.rst:262
 msgid ""
 "For your information, Godot also allows you to develop your project directly "
 "in C++ by using its API, which is not possible with Unity at the moment. As "
@@ -784,7 +793,7 @@ msgstr ""
 "게 해줍니다, 이는 현재 유니티에서는 불가능합니다. 예를 들어 Godot 엔진의 에디"
 "터를 Godot API를 사용한 C ++로 작성된 \"게임\"으로 간주할 수 있습니다."
 
-#: ../../docs/getting_started/editor/unity_to_godot.rst:263
+#: ../../docs/getting_started/editor/unity_to_godot.rst:264
 msgid ""
 "If you are interested in using Godot in C++, you may want to start reading "
 "the :ref:`Developing in C++ <doc_introduction_to_godot_development>` page."

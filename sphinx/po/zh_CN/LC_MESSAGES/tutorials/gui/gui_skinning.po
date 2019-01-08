@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,9 +44,9 @@ msgid ""
 "also common in some games that include editors to create content, or "
 "interfaces for network connectivity."
 msgstr ""
-"然而, 许多类型的游戏往往需要复杂的用户界面, 如大型多人在线（MMO）网游, 传统的"
-"角色扮演（RPG）, 模拟类, 战略类游戏等。这些界面在那些含有用原来创建内容的编辑"
-"器，或含有用于网络连接的界面的游戏来说也很常见。"
+"然而, 许多类型的游戏往往需要复杂的用户界面, 如大型多人在线(MMO)网游, 传统的角"
+"色扮演(RPG), 模拟类, 战略类游戏等。这些界面在那些含有用原来创建内容的编辑器，"
+"或含有用于网络连接的界面的游戏来说也很常见。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:20
 msgid ""
@@ -107,8 +107,7 @@ msgstr "一个主题中的每种选项可以是:"
 msgid ""
 "**An integer constant**: A single numerical constant. Generally used to "
 "define spacing between components or alignment."
-msgstr ""
-"**整数常量**： 一个数值常量。通用用于定义组件之间的间距和对齐相关设置。"
+msgstr "**整数常量**: 一个数值常量。通用用于定义组件之间的间距和对齐相关设置。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:53
 msgid ""
@@ -166,10 +165,11 @@ msgstr ""
 "签。因此, 这个标签 (和所有他所有的子孙节点标签) 将使用这种颜色。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:91
+#, fuzzy
 msgid ""
 "It is possible to override those options without using the theme directly "
 "and only for a specific control by using the override API in :ref:`Control."
-"add_color_override() <class_Control_add_color_override>`:"
+"add_color_override() <class_Control_method_add_color_override>`:"
 msgstr ""
 "不通过使用主题而直接针对指定的控件覆写那些选项也是可能的，通过这个API来覆写即"
 "可 :ref:`Control.add_color_override() <class_Control_add_color_override>`:"
@@ -181,7 +181,7 @@ msgid ""
 "reference."
 msgstr ""
 "在Godot的内置帮助 (在 \"脚本\" 选项卡中), 您可以查看哪些主题选项是可覆写的, "
-"或者查看:ref:`Control <class_Control>`类的参考资料。"
+"或者查看 :ref:`Control <class_Control>` 类的参考资料。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:110
 msgid "Customizing a control"
@@ -194,7 +194,7 @@ msgid ""
 "properties. If checked, overriding will take place:"
 msgstr ""
 "如果只需要外观定制少数几个控件, 通常没有必要创建一个新主题。控件提供其主题选"
-"项作为特殊类型的属性（在检查面板上）。一旦勾选, 覆写就会生效:"
+"项作为特殊类型的属性(在检查面板上)。一旦勾选, 覆写就会生效:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:118
 msgid ""
@@ -226,14 +226,14 @@ msgstr "这将创建一个空主题, 之后可以将其加载并分配给控件�
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:135
 msgid "Example: theming a button"
-msgstr "示例：指定一个按钮的主题"
+msgstr "示例:指定一个按钮的主题"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:137
 msgid ""
 "Take some assets (:download:`skin_assets.zip <files/skin_assets.zip>`), go "
 "to the \"theme\" menu and select \"Add Class Item\":"
 msgstr ""
-"首先获取这份资产 (:download:`skin_assets.zip <files/skin_assets.zip>`), 转到 "
+"首先获取这份资源 (:download:`skin_assets.zip <files/skin_assets.zip>`), 转到 "
 "\"Theme\" 菜单并选择 \"Add Class Items\":"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:142
@@ -246,7 +246,7 @@ msgstr "然后将出现一个菜单, 提示要创建的控件类型。选择 \"B
 msgid ""
 "Immediately, all button theme options will appear in the property editor, "
 "where they can be edited:"
-msgstr "所有按钮主题选项都将立刻显示在属性编辑器中, 可以在其中进行编辑:"
+msgstr "所有按钮主题选项都将立刻显示在属性面板中, 可以在其中进行编辑:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:152
 msgid ""
@@ -257,7 +257,7 @@ msgid ""
 msgstr ""
 "选择名为\"Normal\"的stylebox 并创建一个新的 \"StyleBoxTexture\", 然后编辑它。"
 "纹理 stylebox 基本上包本身含纹理和“纹理拉伸保留边距”，拉伸时，边距范围内不受"
-"拉伸影响。这被称为 \"3x3\" 拉伸（译注：九宫格拉伸）:"
+"拉伸影响。这被称为 \"3x3\" 拉伸(译注:九宫格拉伸):"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:159
 msgid ""
@@ -266,7 +266,7 @@ msgid ""
 "supplied font as the button font and change the font color to black. Soon, "
 "your button will look different and retro:"
 msgstr ""
-"重复上述步骤并添加其他资产。示例文件中没有提供“Hover”或“Disabled”的图像, 因此"
+"重复上述步骤并添加其他资源。示例文件中没有提供“Hover”或“Disabled”的图像, 因此"
 "使用与“Normal”状态相同的 stylebox。将提供的字体设置为按钮字体, 并将字体颜色更"
 "改为黑色。很快地, 您的按钮将看起来不同了，并且变得复古:"
 

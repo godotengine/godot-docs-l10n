@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,36 +19,43 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:2
 #, fuzzy
-msgid "Godot-Blender-Exporter"
+msgid "Blender ESCN exporter"
 msgstr "Godot-Blender-Exporter"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:4
 msgid ""
-"This chapter relates to the blender plugin called \"Godot-Blender-Exporter"
+"This chapter relates to the Blender plugin called \"Godot Blender Exporter"
 "\", which can be downloaded here: https://github.com/godotengine/godot-"
 "blender-exporter"
 msgstr ""
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:8
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:7
+msgid ""
+"This plugin can be used to export Blender scenes in a Godot-specific scene "
+"format called ESCN, which is similar to TSCN (text format) but will be "
+"imported as binary SCN for performance."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:12
 msgid "Details on exporting"
 msgstr "Detalhes sobre exportação"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:23
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:27
 msgid "Disabling specific objects"
 msgstr "Desativando objetos específicos"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:25
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:29
 #, fuzzy
 msgid ""
-"Sometimes you don't want some objects exported (eg high-res models used for "
-"baking). An object will not be exported if it is not rendered in the scene. "
-"This can be set in the outliner:"
+"Sometimes you don't want some objects exported (e.g. high-res models used "
+"for baking). An object will not be exported if it is not rendered in the "
+"scene. This can be set in the outliner:"
 msgstr ""
 "Às vezes você não quer alguns objetos exportados (por exemplo, modelos de "
 "alta resolução usados para assar). Um objeto não será exportado se não for "
 "renderizado na cena. Isso pode ser definido no delineador:"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:31
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:35
 msgid ""
 "Objects hidden in the viewport will be exported, but will be hidden in the "
 "Godot scene."
@@ -56,12 +63,12 @@ msgstr ""
 "Objetos ocultos na viewport serão exportados, mas estarão ocultos na cena "
 "Godot."
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:36
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:40
 #, fuzzy
 msgid "Build pipeline integration"
 msgstr "Construir Integração de Pipeline"
 
-#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:38
+#: ../../docs/getting_started/workflow/assets/escn_exporter/index.rst:42
 #, fuzzy
 msgid ""
 "If you have hundreds of model files, you don't want your artists to waste "

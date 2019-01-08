@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,10 +53,11 @@ msgid "What is a kinematic body?"
 msgstr "kinematic body란 무엇인가?"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:22
+#, fuzzy
 msgid ""
 "``KinematicBody2D`` is for implementing bodies that are to be controlled via "
 "code. They detect collisions with other bodies when moving, but are not "
-"affected by engine physics properties like gravity or friction. While this "
+"affected by engine physics properties, like gravity or friction. While this "
 "means that you have to write some code to create their behavior, it also "
 "means you have more precise control over how they move and react."
 msgstr ""
@@ -76,7 +77,8 @@ msgstr ""
 "을 계산해야 합니다. 물리 엔진은 `KinematicBody2D`를 움직이지 않습니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:33
-msgid "Movement and Collision"
+#, fuzzy
+msgid "Movement and collision"
 msgstr "이동 및 충돌"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:35
@@ -103,9 +105,10 @@ msgstr ""
 "니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:43
+#, fuzzy
 msgid ""
 "The two movement methods serve different purposes, and later in this "
-"tutorial you'll see examples of how they work."
+"tutorial, you'll see examples of how they work."
 msgstr ""
 "두 이동 메서드는 서로 다른 용도로 사용되며, 이 튜토리얼의 뒷부분에는 작동 방"
 "법에 대한 예가 나와 있습니다."
@@ -130,9 +133,10 @@ msgstr ""
 "`KinematicCollision2D <class_KinematicCollision2D>` 개체를 반환합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:55
+#, fuzzy
 msgid ""
 "``KinematicCollision2D`` is an object containing data about the collision "
-"and the colliding object. Using this data you can calculate your collision "
+"and the colliding object. Using this data, you can calculate your collision "
 "response."
 msgstr ""
 "``KinematicCollision2D`` 는 충돌과 충돌하는 물체에 대한 데이터를 담고 있는 물"
@@ -250,9 +254,10 @@ msgid "Which movement method to use?"
 msgstr "사용해야할 이동 매서드는 무엇입니까?"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:106
+#, fuzzy
 msgid ""
 "A common question from new Godot users is: \"How do you decide which "
-"movement function to use?\" Often the response is to use "
+"movement function to use?\" Often, the response is to use "
 "``move_and_slide()`` because it's \"simpler\", but this is not necessarily "
 "the case. One way to think of it is that ``move_and_slide()`` is a special "
 "case, and ``move_and_collide()`` is more general. For example, the following "
@@ -293,15 +298,17 @@ msgid "Movement and walls"
 msgstr "이동 및 벽"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:150
+#, fuzzy
 msgid ""
-"If you've downloaded the sample project, this example is in the "
-"\"BasicMovement.tscn\" scene."
+"If you've downloaded the sample project, this example is in \"BasicMovement."
+"tscn\"."
 msgstr ""
 "샘플 프로젝트를 다운로드했다면, 이 예는 \"BasicMovement.tscn\" 의 장면입니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:152
+#, fuzzy
 msgid ""
-"For this example, Add a ``KinematicBody2D`` with two children: a ``Sprite`` "
+"For this example, add a ``KinematicBody2D`` with two children: a ``Sprite`` "
 "and a ``CollisionShape2D``. Use the Godot \"icon.png\" as the Sprite's "
 "texture (drag it from the Filesystem dock to the *Texture* property of the "
 "``Sprite``). In the ``CollisionShape2D``'s *Shape* property, select \"New "
@@ -412,9 +419,10 @@ msgid "And the code for the Bullet:"
 msgstr "그리고 총알에 대한 코드입니다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:407
+#, fuzzy
 msgid ""
 "The action happens in ``_physics_process()``. After using "
-"``move_and_collide()`` if a collision occurs, a ``KinematicCollision2D`` "
+"``move_and_collide()``, if a collision occurs, a ``KinematicCollision2D`` "
 "object is returned (otherwise, the return is ``Nil``)."
 msgstr ""
 "이러한 동작은 ``_physics_process()``로 일어납니다. ``move_and_collide()``를 "
@@ -470,8 +478,9 @@ msgid "Here's the code for the player body:"
 msgstr "플레이어 body의 코드는 다음과 같습니다:"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:517
+#, fuzzy
 msgid ""
-"When using ``move_and_slide()`` the function returns a vector representing "
+"When using ``move_and_slide()``, the function returns a vector representing "
 "the movement that remained after the slide collision occurred. Setting that "
 "value back to the character's ``velocity`` allows us to smoothly move up and "
 "down slopes. Try removing ``velocity =`` and see what happens if you don't "
@@ -505,8 +514,9 @@ msgstr ""
 "``move_and_slide()`` 충돌 후에만 ``true`` 를 반환합니다."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:531
+#, fuzzy
 msgid ""
-"This also allows you to implement other features like wall jumps using "
+"This also allows you to implement other features (like wall jumps) using "
 "``is_on_wall()``, for example."
 msgstr ""
 "이를 통해 예를 들어 ``is_on_wall()`` 과 같이 벽 점프와 같은 다른 기능을 구현"

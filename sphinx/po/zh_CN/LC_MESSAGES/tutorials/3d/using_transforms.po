@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,9 +63,9 @@ msgid ""
 "explain why, as well as outlining best practices for dealing with transforms "
 "when programming 3D games."
 msgstr ""
-"这种代表三维旋转的方式在当时是开创性的，但在游戏开发中使用时有一些缺点（这可"
-"以从一个戴着滑稽帽子的家伙那里得到）。 本文的主旨是解释其原因，并概述在编写3D"
-"游戏时处理变换的最佳做法。"
+"这种代表三维旋转的方式在当时是开创性的，但在游戏开发中使用时有一些缺点(这可以"
+"从一个戴着滑稽帽子的家伙那里得到)。 本文的主旨是解释其原因，并概述在编写3D游"
+"戏时处理变换的最佳做法。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
 msgid "Problems of Euler angles"
@@ -103,9 +103,9 @@ msgid ""
 "depending on *the order of the rotations*."
 msgstr ""
 "这可以通过先旋转* X *，然后* Y *然后旋转* Z *来完成。 或者，您可以先以* Y *旋"
-"转，然后以* Z *旋转，最后以* X *旋转。 怎样都行，但根据顺序，对象的最终方向*"
-"不一定是相同的*。 事实上，这意味着有多种方法可以从3个不同的角度构建方向，具体"
-"取决于*旋转的顺序*。"
+"转，然后以* Z *旋转，最后以* X *旋转。 怎样都行，但根据顺序，对象的最终方向 *"
+"不一定是相同的* 。 事实上，这意味着有多种方法可以从3个不同的角度构建方向，具"
+"体取决于 *旋转的顺序* 。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
 msgid ""
@@ -113,23 +113,22 @@ msgid ""
 "(from Wikipedia). As you can see, the orientation of each axis depends on "
 "the rotation of the previous one:"
 msgstr ""
-"以下（来自维基百科）是万向节旋转轴（X，Y，Z顺序）的可视化。 如您所见，每个轴"
-"的方向取决于前一个轴的旋转方向："
+"以下(来自维基百科)是万向节旋转轴(X，Y，Z顺序)的可视化。 如您所见，每个轴的方"
+"向取决于前一个轴的旋转方向:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:47
 msgid ""
 "You may be wondering how this affects you. Let's look at a practical example:"
-msgstr "你可能想知道这是如何影响你的。 我们来看一个实际的例子："
+msgstr "您可能想知道这是如何影响您的。 我们来看一个实际的示例:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:49
-#, fuzzy
 msgid ""
 "Imagine you are working on a first-person controller (e.g. an FPS game). "
 "Moving the mouse left and right controls your view angle parallel to the "
 "ground, while moving it up and down moves the player's view up and down."
 msgstr ""
-"想象一下，你正在研究第一人称控制器（FPS游戏）。 向左和向右移动鼠标可以控制与"
-"地面平行的视角，同时上下移动可以调整玩家上下的视野。"
+"想象一下，您正在研究第一人称控制器(FPS游戏)。 向左和向右移动鼠标可以控制与地"
+"面平行的视角，同时上下移动可以调整游戏角色上下的视野。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:51
 msgid ""
@@ -137,15 +136,15 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
-"在这种情况下，为了达到所需的效果，必须首先在* Y *轴上应用旋转（在这种情况下"
-"为“上”，因为Godot使用“Y-Up”方向），然后在* X *轴上旋转。"
+"在这种情况下，为了达到所需的效果，必须首先在* Y *轴上应用旋转(在这种情况下"
+"为“上”，因为Godot使用“Y-Up”方向)，然后在* X *轴上旋转。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
-"如果我们首先在* X *轴上应用旋转，然后再在* Y *中应用旋转，则效果会不理想："
+"如果我们首先在* X *轴上应用旋转，然后再在* Y *中应用旋转，则效果会不理想:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -154,7 +153,7 @@ msgid ""
 "Y, and Z is not enough: you also need a *rotation order*."
 msgstr ""
 "根据所需的游戏类型或效果，您想要应用轴旋转的顺序可能会有所不同。 因此，在X，Y"
-"和Z中应用旋转是不够的：您还需要*旋转顺序*。"
+"和Z中应用旋转是不够的:您还需要 *旋转顺序* 。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 msgid "Interpolation"
@@ -167,13 +166,13 @@ msgid ""
 "rotations). One logical way to approach this is to interpolate the angles "
 "from one position to the next. One would expect it to look like this:"
 msgstr ""
-"使用欧拉角的另一个问题是插值。 设想你想在两个不同的相机或敌人位置（包括旋转）"
-"之间转换。 解决这个问题的一个合乎逻辑的方法是从一个位置插入到下一个位置。 人"
-"们会期望它看起来像这样："
+"使用欧拉角的另一个问题是插值。 设想您想在两个不同的相机或敌人位置(包括旋转)之"
+"间转换。 解决这个问题的一个合乎逻辑的方法是从一个位置插入到下一个位置。 人们"
+"会期望它看起来像这样:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:68
 msgid "But this does not always have the expected effect when using angles:"
-msgstr "但是，在使用角度时，这并不总是有预期的效果："
+msgstr "但是，在使用角度时，这并不总是有预期的效果:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:72
 msgid "The camera actually rotated the opposite direction!"
@@ -181,7 +180,7 @@ msgstr "相机实际上旋转了相反的方向！"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:74
 msgid "There are a few reasons this may happen:"
-msgstr "这可能有几个原因："
+msgstr "这可能有几个原因:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:76
 msgid ""
@@ -190,8 +189,8 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
-"旋转不会线性映射到方向，因此插入它们并不总是会形成最短路径（即从“270”到“0”的"
-"度数与从“270”开始到“360”的度数不同，即使角度是相同的）。"
+"旋转不会线性映射到方向，因此插入它们并不总是会形成最短路径(即从“270”到“0”的度"
+"数与从“270”开始到“360”的度数不同，即使角度是相同的)。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -199,9 +198,9 @@ msgid ""
 "freedom is lost). See `Wikipedia's page on Gimbal Lock <https://en.wikipedia."
 "org/wiki/Gimbal_lock>`_ for a detailed explanation of this problem."
 msgstr ""
-"万向节锁正在发挥作用（第一个和最后一个旋转的轴对齐，因此失去了一定的自由"
-"度）。 请参阅 `维基百科关于Gimbal Lock的页面 <https://en.wikipedia.org/wiki/"
-"Gimbal_lock>`_以了解这个问题的详细解释。"
+"万向节锁正在发挥作用(第一个和最后一个旋转的轴对齐，因此失去了一定的自由度)。 "
+"请参阅 `维基百科关于Gimbal Lock的页面 <https://en.wikipedia.org/wiki/"
+"Gimbal_lock>`_ 以了解这个问题的详细解释。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
 msgid "Say no to Euler angles"
@@ -215,14 +214,14 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
-"所有这些的结论是，你不应该在游戏中使用Godot的 ``rotation`` 属性 ：ref："
+"所有这些的结论是，您不应该在游戏中使用Godot的 ``rotation`` 属性 :ref:"
 "`class_Spatial` 节点。 它主要用在编辑器中，为了与2D引擎一致，并且用于简单的旋"
-"转（通常只有一个轴，或者在有限的情况下使用两个）。 你可能会受到诱惑, 但不要使"
-"用它。"
+"转(通常只有一个轴，或者在有限的情况下使用两个)。 您可能会受到诱惑, 但不要使用"
+"它。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:84
 msgid "Instead, there is a better way to solve your rotation problems."
-msgstr "相反，有一个更好的方法来解决你的旋转问题。"
+msgstr "相反，有一个更好的方法来解决您的旋转问题。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
 msgid "Introducing transforms"
@@ -234,7 +233,7 @@ msgid ""
 "`class_Spatial` node contains a ``transform`` property which is relative to "
 "the parent's transform, if the parent is a Spatial-derived type."
 msgstr ""
-"Godot对方向使用 ：ref：`class_Transform` 数据类型。 每一个 ：ref："
+"Godot对方向使用 :ref:`class_Transform` 数据类型。 每一个 :ref:"
 "`class_Spatial` 节点都包含一个 ``transform`` 属性，如果该父类是一个空间派生类"
 "型，则该属性相对依赖于父类变换。"
 
@@ -242,10 +241,9 @@ msgstr ""
 msgid ""
 "It is also possible to access the world coordinate transform via the "
 "``global_transform`` property."
-msgstr "也可以通过``global_transform``属性访问世界坐标变换。"
+msgstr "也可以通过 ``global_transform`` 属性访问世界坐标变换。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:93
-#, fuzzy
 msgid ""
 "A transform has a :ref:`class_Basis` (transform.basis sub-property), which "
 "consists of three :ref:`class_Vector3` vectors. These are accessed via the "
@@ -256,19 +254,18 @@ msgid ""
 "also be inferred from the length of the axes. A *basis* can also be "
 "interpreted as a 3x3 matrix and used as ``transform.basis[x][y]``."
 msgstr ""
-"一个变换有一个 ：ref：`class_Basis` （transform.basis子属性），它由三个 ："
-"ref：`class_Vector3` 向量组成。 这些向量可以通过 ``transform.basis`` 属性访"
-"问，并可以通过 ``transform.basis.x`` ， ``transform.basis.y`` 和 ``transform."
-"basis.z`` 直接访问。 每个向量指向它的轴被旋转的方向，因此它们可以有效地描述节"
-"点的总旋转。 比例（只要它是一致的）也可以从轴的长度推断出来。 一个 *basis* 也"
-"可以被解释为一个3x3矩阵并被用作 ``transform.basis [x] [y]``。"
+"一个变换有一个 :ref:`class_Basis` (transform.basis子属性)，它由三个 :ref:"
+"`class_Vector3` 向量组成。 这些向量可以通过 ``transform.basis`` 属性访问，并"
+"可以通过 ``transform.basis.x`` ， ``transform.basis.y`` 和 ``transform.basis."
+"z`` 直接访问。 每个向量指向它的轴被旋转的方向，因此它们可以有效地描述节点的总"
+"旋转。 比例(只要它是一致的)也可以从轴的长度推断出来。 一个 *basis* 也可以被解"
+"释为一个3x3矩阵并被用作 ``transform.basis [x] [y]``。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:95
 msgid "A default basis (unmodified) is akin to:"
-msgstr "默认的basis（未修改）类似于："
+msgstr "默认的basis(未修改)类似于:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:123
-#, fuzzy
 msgid "This is also an analog of a 3x3 identity matrix."
 msgstr "这也是一个3x3单位矩阵的类似物。"
 
@@ -285,8 +282,8 @@ msgid ""
 "transform is. Combining the *basis* with the *origin*, a *transform* "
 "efficiently represents a unique translation, rotation, and scale in space."
 msgstr ""
-"与*基*一起，变换也有*原点*。 这是一个* 3维向量 *，用于指定该变换距离实际原"
-"点“（0，0，0）”多远。 *基*与*原点*相结合，一个 *变换*有效地表示了一个空间中特"
+"与 *基* 一起，变换也有 *原点* 。 这是一个* 3维向量 *，用于指定该变换距离实际"
+"原点“(0，0，0)”多远。 *基*与*原点*相结合，一个 *变换*有效地表示了一个空间中特"
 "定的平移，旋转和缩放。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:132
@@ -296,21 +293,20 @@ msgid ""
 msgstr "一种查看一个变换的方法是在“本地空间”模式下查看该对象的3D Gizmo。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:136
-#, fuzzy
 msgid ""
 "The gizmo's arrows show the ``X``, ``Y``, and ``Z`` axes (in red, green, and "
 "blue respectively) of the basis, while the gizmo's center is at the object's "
 "origin."
 msgstr ""
-"Gizmo的箭头显示基准的“X”，“Y”和“Z”轴（分别为红色，绿色和蓝色），而Gizmo的中心"
-"位于对象的原点。"
+"Gizmo的箭头显示基准的“X”，“Y”和“Z”轴(分别为红色，绿色和蓝色)，而Gizmo的中心位"
+"于对象的原点。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:140
 msgid ""
 "For more information on the mathematics of vectors and transforms, please "
 "read the :ref:`doc_vector_math` tutorials."
 msgstr ""
-"有关向量和变换在数学方面的更多信息，请阅读 ：ref：`doc_vector_math`教程。"
+"有关向量和变换在数学方面的更多信息，请阅读 :ref:`doc_vector_math`教程。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:143
 msgid "Manipulating transforms"
@@ -326,22 +322,21 @@ msgstr "当然，变换并不像角度那样有那么简单的操作，并且有
 msgid ""
 "It is possible to rotate a transform, either by multiplying its basis by "
 "another (this is called accumulation), or by using the rotation methods."
-msgstr "可以通过将其的基乘以另一个（这称为堆积）或使用旋转方法来旋转变换。"
+msgstr "可以通过将其的基乘以另一个(这称为堆积)或使用旋转方法来旋转变换。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:164
 msgid "A method in Spatial simplifies this:"
-msgstr "Spatial中的一种方法简化了这一点："
+msgstr "Spatial中的一种方法简化了这一点:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:181
 msgid "This rotates the node relative to the parent node."
 msgstr "这会相对于父节点来旋转节点。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:183
-#, fuzzy
 msgid ""
 "To rotate relative to object space (the node's own transform), use the "
 "following:"
-msgstr "要相对于对象空间旋转（节点自己的变换），请使用以下内容："
+msgstr "要相对于对象空间旋转(节点自己的变换)，请使用以下内容:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:197
 msgid "Precision errors"
@@ -371,7 +366,7 @@ msgid ""
 "modify it every frame):"
 msgstr ""
 "有两种不同的方法来处理这个问题。 首先是在一段时间后对变换进行正交归一化处理"
-"（如果每帧修改一次，则可能每帧一次）："
+"(如果每帧修改一次，则可能每帧一次):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:214
 msgid ""
@@ -382,14 +377,13 @@ msgstr ""
 "缩放都将丢失。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:216
-#, fuzzy
 msgid ""
 "It is recommended you not scale nodes that are going to be manipulated; "
 "scale their children nodes instead (such as MeshInstance). If you absolutely "
 "must scale the node, then re-apply it at the end:"
 msgstr ""
-"建议您不要缩放要操纵的节点，而是缩放其子节点（如MeshInstance）。 如果您必须缩"
-"放节点，则在最后重新应用它："
+"建议您不要缩放要操纵的节点，而是缩放其子节点(如MeshInstance)。 如果您必须缩放"
+"节点，则在最后重新应用它:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:230
 msgid "Obtaining information"
@@ -401,32 +395,32 @@ msgid ""
 "transform?\"**. The answer again is: you don't. You must do your best to "
 "stop thinking in angles."
 msgstr ""
-"你可能在这一点上想：**“好吧，但是我怎么从变换中获得角度？”**。 答案又一次是："
-"你没有必要。 你必须尽最大努力停止在角度方向的思考。"
+"您可能在这一点上想:** “好吧，但是我怎么从变换中获得角度？”**。 答案又一次是:"
+"您没有必要。 您必须尽最大努力停止在角度方向的思考。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:234
 msgid ""
 "Imagine you need to shoot a bullet in the direction your player is facing. "
 "Just use the forward axis (commonly ``Z`` or ``-Z``)."
 msgstr ""
-"想象一下，你需要朝你的玩家面对的方向射击子弹。 只需使用前进轴（通常为``Z``或"
-"``-Z``）。"
+"想象一下，您需要朝您的游戏角色面对的方向射击子弹。 只需使用前进轴(通常为 "
+"``Z`` 或 ``-Z`` )。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:247
 msgid ""
 "Is the enemy looking at the player? Use the dot product for this (see the :"
 "ref:`doc_vector_math` tutorial for an explanation of the dot product):"
 msgstr ""
-"敌人在看着玩家吗？ 为此判断你可以使用点积（请参阅 ：ref：`doc_vector_math` 教"
-"程以获取对点积的解释）："
+"敌人在看着游戏角色吗？ 为此判断您可以使用点积(请参阅 :ref:`doc_vector_math` "
+"教程以获取对点积的解释):"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:266
 msgid "Strafe left:"
-msgstr "向左平移："
+msgstr "向左平移:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:283
 msgid "Jump:"
-msgstr "跳跃："
+msgstr "跳跃:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:303
 msgid "All common behaviors and logic can be done with just vectors."
@@ -444,21 +438,20 @@ msgid ""
 "in a specific order."
 msgstr ""
 "当然，有些情况下您想要将一些信息赋予到变换上。 想象一下第一人称控制器或轨道摄"
-"像机。 那些肯定是用角度来完成的，因为你希望变换以特定的顺序进行。"
+"像机。 那些肯定是用角度来完成的，因为您希望变换以特定的顺序进行。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:310
-#, fuzzy
 msgid ""
 "For such cases, keep the angles and rotations *outside* the transform and "
 "set them every frame. Don't try to retrieve and re-use them because the "
 "transform is not meant to be used this way."
 msgstr ""
-"对于这种情况，请保持变换*外*的角度和旋转，并将其设置为每帧。 不要尝试恢复并重"
-"新使用它们，因为变换没有以这种方式使用的意思。"
+"对于这种情况，请保持变换 *外* 的角度和旋转，并将其设置为每帧。 不要尝试恢复并"
+"重新使用它们，因为变换没有以这种方式使用的意思。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:312
 msgid "Example of looking around, FPS style:"
-msgstr "环顾四周，FPS风格的例子："
+msgstr "环顾四周，FPS风格的示例:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:355
 msgid ""
@@ -483,14 +476,13 @@ msgid ""
 msgstr ""
 "用四元数能有效地完成两个变换之间的插值。 有关四元数如何工作的更多信息可以在互"
 "联网上的其他地方找到。 在实际应用中，了解它们的主要用途是做最近的路径插值就足"
-"够了。 同样，如果你有两次旋转，四元数将平滑地使用最近的轴在它们之间进行插值。"
+"够了。 同样，如果您有两次旋转，四元数将平滑地使用最近的轴在它们之间进行插值。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:362
 msgid "Converting a rotation to quaternion is straightforward."
 msgstr "将旋转转换为四元数很简单。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:385
-#, fuzzy
 msgid ""
 "The :ref:`class_Quat` type reference has more information on the datatype "
 "(it can also do transform accumulation, transform points, etc., though this "
@@ -498,12 +490,11 @@ msgid ""
 "many times, keep in mind they need to be eventually normalized or they also "
 "may suffer from numerical precision errors."
 msgstr ""
-":ref:`class_Quat` 类型的引用有更多关于数据类型的信息（它也可以做变换累加，变"
-"换点等等，虽然这个用法较少）。 如果多次对四元数进行插值或应用运算，请记住它们"
-"需要最终归一化，否则它们可能会产生数值精度错误。"
+":ref:`class_Quat` 类型的引用有更多关于数据类型的信息(它也可以做变换累加，变换"
+"点等等，虽然这个用法较少)。 如果多次对四元数进行插值或应用运算，请记住它们需"
+"要最终归一化，否则它们可能会产生数值精度错误。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:387
-#, fuzzy
 msgid ""
 "Quaternions are useful when doing camera/path/etc. interpolations, as the "
 "result will always be correct and smooth."
@@ -511,7 +502,7 @@ msgstr "四元数在做相机/路径/等东西时很有用。 插值的结果总
 
 #: ../../docs/tutorials/3d/using_transforms.rst:390
 msgid "Transforms are your friend"
-msgstr "变换是你的朋友"
+msgstr "变换是您的朋友"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:392
 msgid ""
@@ -519,8 +510,8 @@ msgid ""
 "time. However, once you get used to them, you will appreciate their "
 "simplicity and power."
 msgstr ""
-"对于大多数初学者来说，习惯于使用变换可能需要一些时间。 但是，一旦你习惯了它"
-"们，你会欣赏他们的简单而有力。"
+"对于大多数初学者来说，习惯于使用变换可能需要一些时间。 但是，一旦您习惯了它"
+"们，您会欣赏他们的简单而有力。"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:394
 msgid ""
@@ -528,5 +519,5 @@ msgid ""
 "communities <https://godotengine.org/community>`_ and, once you become "
 "confident enough, please help others!"
 msgstr ""
-"不要犹豫，在Godot的任何“在线社区”网站上寻求帮助，一旦你变得足够自信，请帮助其"
+"不要犹豫，在Godot的任何“在线社区”网站上寻求帮助，一旦您变得足够自信，请帮助其"
 "他人！"

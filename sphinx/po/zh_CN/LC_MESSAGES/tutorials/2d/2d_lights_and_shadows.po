@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:9
-#, fuzzy
 msgid ""
 "This tutorial explains how the 2D lighting works in the `lights and shadows "
 "<https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
@@ -35,8 +34,8 @@ msgid ""
 "like the demo step by step."
 msgstr ""
 "本教程以 `灯与影 <https://github.com/godotengine/godot-demo-projects/tree/"
-"master/2d/lights_and_shadows>`_  演示项目解释了2D灯光的工作原理。 本节首先简"
-"要介绍了最终演示所使用的资源，然后介绍了如何逐步实现类似演示的场景。"
+"master/2d/lights_and_shadows>`_ 演示项目解释了2D灯光的工作原理。 本节首先简要"
+"介绍了最终演示所使用的资源，然后介绍了如何逐步实现类似演示的场景。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:16
 msgid ""
@@ -47,9 +46,9 @@ msgid ""
 "\"Templates\" and search for \"2D Lights and Shadows Demo\"."
 msgstr ""
 "本教程的所有资源都可以在github上的 `官方演示存储库 <https://github.com/"
-"godotengine/godot-demo-projects>`_  中找到。 我建议你在开始之前下载它。 或"
-"者，也可以在项目管理器中下载。 启动Godot并在顶部栏中选择 \"Templates\" 并搜"
-"索 \"2D Lights and Shadows Demo\"。"
+"godotengine/godot-demo-projects>`_ 中找到。 我建议您在开始之前下载它。 或者，"
+"也可以在项目管理器中下载。 启动Godot并在顶部栏中选择 \"Templates\" 并搜索 "
+"\"2D Lights and Shadows Demo\"。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
 msgid "Setup"
@@ -61,8 +60,8 @@ msgid ""
 "casters, and one for the background. I've included links to them all here if "
 "you want to download them separately from the demo."
 msgstr ""
-"对于这个演示，我们使用四种纹理：两种用于灯光，一种用于阴影脚轮，一种用于背"
-"景。 如果你想从演示中单独下载它们，我在这里列出了所有链接。"
+"对于这个演示，我们使用四种纹理:两种用于灯光，一种用于阴影脚轮，一种用于背"
+"景。 如果您想从演示中单独下载它们，我在这里列出了所有链接。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:28
 msgid ""
@@ -72,8 +71,8 @@ msgid ""
 "for the demo."
 msgstr ""
 "第一个是演示中使用的背景图像 (`bg.png <https://raw.githubusercontent.com/"
-"godotengine/godot-demo-projects/master/2d/lights_and_shadows/bg.png>`_) 。 您"
-"不一定需要背景，但我们还是在演示中用了一个。"
+"godotengine/godot-demo-projects/master/2d/lights_and_shadows/bg.png>`_ ) 。 "
+"您不一定需要背景，但我们还是在演示中用了一个。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:31
 msgid ""
@@ -84,7 +83,7 @@ msgid ""
 msgstr ""
 "第二个是用作影子的纯黑色图片 (`caster.png <https://raw.githubusercontent.com/"
 "godotengine/godot-demo-projects/master/2d/lights_and_shadows/caster."
-"png>`_) 。 对跳跃游戏，它可能是墙或任何其他投射阴影的物体。"
+"png>`_ ) 。 对跳跃游戏，它可能是墙或任何其他投射阴影的物体。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:35
 msgid ""
@@ -96,7 +95,7 @@ msgid ""
 "game."
 msgstr ""
 "接下来是灯本身 (`light.png <https://raw.githubusercontent.com/godotengine/"
-"godot-demo-projects/master/2d/lights_and_shadows/light.png>`_) 。 如果单击该"
+"godot-demo-projects/master/2d/lights_and_shadows/light.png>`_ ) 。 如果单击该"
 "链接，您会注意到它有多大。 用于灯光的图像应覆盖您希望灯光覆盖的区域。 此图像"
 "为1024x1024像素，因此您应该使用它来覆盖游戏中的1024x1024像素。"
 
@@ -109,9 +108,9 @@ msgid ""
 "rest of the scene."
 msgstr ""
 "最后，我们有聚光灯图像 (`spot.png <https://raw.githubusercontent.com/"
-"godotengine/godot-demo-projects/master/2d/lights_and_shadows/spot.png>`_) 。 "
-"该演示使用灯泡来显示灯光的位置，使用较大的灯光图片来显示灯光对场景其余部分的"
-"影响。"
+"godotengine/godot-demo-projects/master/2d/lights_and_shadows/spot."
+"png>`_ ) 。 该演示使用灯泡来显示灯光的位置，使用较大的灯光图片来显示灯光对场"
+"景其余部分的影响。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 msgid "Nodes"
@@ -119,7 +118,7 @@ msgstr "节点"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:52
 msgid "The demo uses four different nodes:"
-msgstr "该演示使用了四个不同类型的节点："
+msgstr "该演示使用了四个不同类型的节点:"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:49
 msgid ":ref:`CanvasModulate <class_CanvasModulate>`"
@@ -183,7 +182,6 @@ msgstr ""
 "纹理颜色添加到场景中。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:75
-#, fuzzy
 msgid ""
 ":ref:`Lights <class_Light2D>` have four ``Modes``: ``Add``, ``Sub``, "
 "``Mix``, and ``Mask``."
@@ -225,8 +223,8 @@ msgid ""
 "light source. A child :ref:`Sprite <class_Sprite>` is not necessary to make "
 "a :ref:`Light <class_Light2D>` work."
 msgstr ""
-"对于演示，灯光有两个组件， :ref:`Light <class_Light2D>` 本身（这是灯光的效"
-"果），和 :ref:`Sprite <class_Sprite>` 灯泡(一个显示光源位置的图片。 子节点 :"
+"对于演示，灯光有两个组件， :ref:`Light <class_Light2D>` 本身(这是灯光的效"
+"果)，和 :ref:`Sprite <class_Sprite>` 灯泡(一个显示光源位置的图片。 子节点 :"
 "ref:`Sprite <class_Sprite>` 不是让 :ref:`Light <class_Light2D>` 工作的必要条"
 "件。"
 
@@ -248,7 +246,7 @@ msgid ""
 "<class_Light2D>` and under the Shadows section check ``Enabled``."
 msgstr ""
 "默认情况下，阴影处于关闭状态。 要打开它们，请单击 :ref:`Light "
-"<class_Light2D>`  并在Shadows部分下面选中 ``Enabled`` 。"
+"<class_Light2D>` 并在Shadows部分下面选中 ``Enabled`` 。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:102
 msgid ""
@@ -259,7 +257,7 @@ msgid ""
 "demo the :ref:`Sprite <class_Sprite>` is just a black square."
 msgstr ""
 "在演示中我们使用带有纹理的 :ref:`Sprite <class_Sprite>` 来制作“影子投射器”，"
-"但实际上你只需要几个 :ref:`LightOccluder2Ds <class_LightOccluder2D>` 。 本身"
+"但实际上您只需要几个 :ref:`LightOccluder2Ds <class_LightOccluder2D>` 。 本身"
 "的 :ref:`LightOccluder2D <class_LightOccluder2D>` 看起来像一个黑点，在这个演"
 "示中 :ref:`Sprite <class_Sprite>` 只是一个黑色方块。"
 
@@ -304,7 +302,6 @@ msgstr ""
 "添加到下面的任何颜色中。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:124
-#, fuzzy
 msgid ""
 "Next add a child :ref:`Sprite <class_Sprite>` to each of the :ref:`Light "
 "<class_Light2D>` nodes, and set the :ref:`Sprite's <class_Sprite>` texture "
@@ -317,17 +314,16 @@ msgid ""
 "of the :ref:`Light <class_Light2D>` node, which is why we want the blob to "
 "be centered on its parent :ref:`Light <class_Light2D>`."
 msgstr ""
-"接下来为每个  :ref:`Light <class_Light2D>` 节点添加一个 :ref:`Sprite "
+"接下来为每个 :ref:`Light <class_Light2D>` 节点添加一个 :ref:`Sprite "
 "<class_Sprite>` 子节点，并将 :ref:`Sprite's <class_Sprite>` 纹理设置为 `blob "
 "image <https://raw.githubusercontent.com/godotengine/godot-demo-projects/"
 "master/2d/lights_and_shadows/spot.png>`_ 。 其中每个都应该集中在 :ref:`Light "
 "<class_Light2D>` 节点。blob是灯本身的图像，而 :ref:`Light <class_Light2D>` 显"
-"示灯光对场景的影响。  :ref:`LightOccluder2D's <class_LightOccluder2D>` 会将光"
+"示灯光对场景的影响。 :ref:`LightOccluder2D's <class_LightOccluder2D>` 会将光"
 "的位置视为 :ref:`Light <class_Light2D>` 节点的中心，这就是为什么我们希望blob"
 "位于父节点 :ref:`Light <class_Light2D>` 的中心的原因。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:133
-#, fuzzy
 msgid ""
 "At the time of writing, 3.0 is the stable release version. The 3.1 "
 "development branch contains many changes to the animation system, so the "
@@ -347,7 +343,7 @@ msgid ""
 "specific color."
 msgstr ""
 "现在场景看起来太亮了。 这是因为三个灯都在为场景添加颜色。 这就是演示场景使"
-"用 :ref:`CanvasModulate <class_CanvasModulate>` 的原因。  :ref:"
+"用 :ref:`CanvasModulate <class_CanvasModulate>` 的原因。 :ref:"
 "`CanvasModulate <class_CanvasModulate>` 将整个视区乘以特定颜色。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:141
@@ -392,10 +388,9 @@ msgstr ""
 "com/godotengine/godot-demo-projects/master/2d/lights_and_shadows/caster."
 "png>`_ 。 子节点 :ref:`LightOccluder2D <class_LightOccluder2D>` 是所有魔法发"
 "生的地方。 在游戏中 :ref:`Sprite <class_Sprite>` 可能不仅仅是一个黑盒子; 它可"
-"以是任何可以投射阴影的物体的图片：一面墙，一个宝箱或其他任何东西。"
+"以是任何可以投射阴影的物体的图片:一面墙，一个宝箱或其他任何东西。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:160
-#, fuzzy
 msgid ""
 ":ref:`LightOccluder2Ds <class_LightOccluder2D>` tell the game what shape the "
 "occluder has. They hold an :ref:`OccluderPolygon2D "
@@ -426,13 +421,12 @@ msgid ""
 "winding order is used to determine which side of the line is inside the "
 "polygon. Only outward facing lines cast shadows."
 msgstr ""
-"``Cull Mode`` 让你选择剔除的方向。 默认值为“已禁用”，这意味着无论灯光在哪一"
+"``Cull Mode`` 让您选择剔除的方向。 默认值为“已禁用”，这意味着无论灯光在哪一"
 "侧，遮挡物都会投射阴影。 另外两个设置 ``Clockwise`` 和 ``Counter-Clockwise`` "
 "指的是多边形顶点的弯曲顺序。 弯曲顺序用于确定光线的哪一侧在多边形内。 只有朝"
 "外的光线才投下阴影。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:173
-#, fuzzy
 msgid ""
 "To illustrate the difference, here is an image of a :ref:`LightOccluder2D "
 "<class_LightOccluder2D>` with ``Closed`` set to ``off`` in the "
@@ -441,7 +435,7 @@ msgid ""
 msgstr ""
 "为了说明差异，这里是一个 :ref:`OccluderPolygon2D <class_OccluderPolygon2D>` "
 "上的 ``Closed`` 设置为 ``off`` 的图片 :ref:`LightOccluder2D "
-"<class_LightOccluder2D>`  ，使得可以看到多边形的轮廓："
+"<class_LightOccluder2D>` ，使得可以看到多边形的轮廓:"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:179
 msgid "``Cull Mode`` is set to ``Disabled``. All three lines cast shadows."
@@ -470,11 +464,10 @@ msgid ""
 "turns on shadows with hard edges like in the image below."
 msgstr ""
 "当您添加 :ref:`LightOccluder2Ds <class_LightOccluder2D>` 时，阴影仍不会出"
-"现。 你需要回到 :ref:`Light2Ds <class_Light2D>` 并在Shadow部分下设置 "
+"现。 您需要回到 :ref:`Light2Ds <class_Light2D>` 并在Shadow部分下设置 "
 "``Enable`` 为 ``on`` 。 这将打开带有硬边的阴影，如下图所示。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:197
-#, fuzzy
 msgid ""
 "To give the shadows that nice, soft edge look we set the variables "
 "``filter``, ``filter smooth``, and ``gradient length``. Godot supports "
@@ -511,7 +504,6 @@ msgstr ""
 "于变量 ``filter smooth`` 的。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:214
-#, fuzzy
 msgid ""
 "In order to make use of filtering you need to set the ``filter smooth`` "
 "variable. This dictates how far apart the samples are. If you want the soft "
@@ -519,12 +511,13 @@ msgid ""
 "However, with few samples and a large filter smooth, you can see lines "
 "forming between the samples."
 msgstr ""
-"为了使用过滤，你需要设置 ``filter smooth`` 变量。 这决定了样品之间的距离。 如"
-"果你想让柔软区域延伸很远，你可以增加 ``filter smooth`` 的大小。 然而，在低样"
+"为了使用过滤，您需要设置 ``filter smooth`` 变量。 这决定了样品之间的距离。 如"
+"果您想让柔软区域延伸很远，您可以增加 ``filter smooth`` 的大小。 然而，在低样"
 "品和大过滤平滑的，您会看到样本之间形成的线条。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:221
-msgid "``filter smooth` is set to ``30``."
+#, fuzzy
+msgid "``filter smooth`` is set to ``30``."
 msgstr "``filter smooth`` 设置为 ``30`` 。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:223
@@ -533,14 +526,13 @@ msgid ""
 "values for filter smooth. Play around with it and see what you like."
 msgstr ""
 "演示中的不同 :ref:`Light <class_Light2D>` 节点使用不同的值来过滤平滑。 调试"
-"它，看看你喜欢什么样的。"
+"它，看看您喜欢什么样的。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:228
 msgid "``filter smooth`` is set to ``0``."
 msgstr "``filter smooth`` 设置为 ``0`` 。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:230
-#, fuzzy
 msgid ""
 "Lastly, there is the variable ``gradient length``. For some smooth shadows "
 "it is preferable not to have the shadow start immediately on the object, as "
@@ -560,7 +552,6 @@ msgid "``gradient length`` is set to ``10``."
 msgstr "``gradient length`` 设置为 ``10`` 。"
 
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:242
-#, fuzzy
 msgid ""
 "You will need to play around with the options a bit to find settings that "
 "suit your project. There is no right solution for everyone, which is why "

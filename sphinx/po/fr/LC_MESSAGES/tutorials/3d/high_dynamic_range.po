@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,9 +35,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:14
 msgid ""
-"So where does all this HDR stuff thing come from? The idea is that instead "
-"of dealing with colors that go from black to white (0 to 1), we use colors "
-"whiter than white (for example, 0 to 8 times white)."
+"So at what point does all this HDR business come into play? The idea is that "
+"instead of dealing with colors that go from black to white (0 to 1), we use "
+"colors whiter than white (for example, 0 to 8 times white)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:18
@@ -49,10 +49,10 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:22
 msgid ""
-"After this the luminance of the scene is computed by averaging the luminance "
-"of every pixel of it, and this value is used to bring the scene back to "
-"normal ranges. This last operation is called tone-mapping. Finally, we are "
-"at a similar place from where we started:"
+"After this, the luminance of the scene is computed by averaging the "
+"luminance of every pixel of it, and this value is used to bring the scene "
+"back to normal ranges. This last operation is called tone-mapping. Finally, "
+"we are at a similar place from where we started:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:30
@@ -84,7 +84,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:49
 msgid ""
-"The color space where images created in computer monitors exist is called "
+"The color space where images created on computer monitors exist is called "
 "\"sRGB\". All visual content that people have on their computers or download "
 "from the internet (such as pictures, movies, etc.) is in this colorspace."
 msgstr ""
@@ -93,7 +93,7 @@ msgstr ""
 msgid ""
 "The mathematics of HDR require that we multiply the scene by different "
 "values to adjust the luminance and exposure to different light ranges, and "
-"this curve gets in the way as we need colors in linear space for this."
+"this curve gets in the way, as we need colors in linear space for this."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:62
@@ -107,21 +107,21 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:69
-msgid "SRGB -> linear conversion on image import"
+msgid "sRGB -> linear conversion on image import"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:71
 msgid ""
 "This is the most compatible way of using linear-space assets, and it will "
-"work everywhere including all mobile devices. The main issue with this is "
+"work everywhere, including all mobile devices. The main issue with this is "
 "loss of quality, as sRGB exists to avoid this same problem. Using 8 bits per "
 "channel to represent linear colors is inefficient from the point of view of "
-"the human eye. These textures might be later compressed too which makes the "
+"the human eye. These textures might later be compressed too, which makes the "
 "problem worse."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:78
-msgid "In any case though, this is the easy solution that works everywhere."
+msgid "In any case, though, this is the easy solution that works everywhere."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:81
@@ -190,13 +190,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:121
 msgid ""
-"**Reinhardt:** Classical tonemapper (modified so it will not desaturate as "
+"**Reinhardt:** Classical tonemapper (modified, so it will not desaturate as "
 "much)"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:123
 msgid ""
-"**ReinhardtAutoWhite:** Same as above but uses the max scene luminance to "
+"**ReinhardtAutoWhite:** Same as above, but uses the max scene luminance to "
 "adjust the white value."
 msgstr ""
 
@@ -225,7 +225,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:141
 msgid ""
-"Determine above which value (from 0 to 1 after the scene is tonemapped), "
+"Determines above which value (from 0 to 1 after the scene is tonemapped) "
 "light will start bleeding."
 msgstr ""
 
@@ -234,7 +234,7 @@ msgid "Glow scale"
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:147
-msgid "Determine how much light will bleed."
+msgid "Determines how much light will bleed."
 msgstr ""
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:150
@@ -264,5 +264,5 @@ msgstr ""
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:164
 msgid ""
 "Auto-exposure will change slowly and will take a while to adjust (like in "
-"real cameras). Bigger values means faster adjustment."
+"real cameras). Bigger values mean faster adjustment."
 msgstr ""

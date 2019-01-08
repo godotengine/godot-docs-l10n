@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr "单例模式（自动加载）"
+msgstr "单例模式(自动加载)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -31,14 +31,14 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
-"Godot的场景系统虽然功能强大且灵活, 但有一个缺点：没有一种方法可以存储多个场景"
-"所需的信息 (例如玩家的分数或库存)。"
+"Godot的场景系统虽然功能强大且灵活, 但有一个缺点:没有一种方法可以存储多个场景"
+"所需的信息 (例如游戏角色的分数或库存)。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
-msgstr "可以通过一些变通办法来解决这个问题, 但它们有自己的局限性："
+msgstr "可以通过一些变通办法来解决这个问题, 但它们有自己的局限性:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -66,14 +66,14 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
-"`Singleton Pattern（单例模式） <https://en.wikipedia.org/wiki/"
+"`Singleton Pattern(单例模式) <https://en.wikipedia.org/wiki/"
 "Singleton_pattern>`_ 是一个有用的工具, 用于解决需要在场景之间存储持久信息的常"
-"见用例。在我们的例子中, 可以将同一个场景或类重新用于多个单例, 只要它们有不同"
+"见用例。在我们的示例中, 可以将同一个场景或类重新用于多个单例, 只要它们有不同"
 "的名称。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
-msgstr "使用此概念, 您可以创建以下对象："
+msgstr "使用此概念, 您可以创建以下对象:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
 msgid "Are always loaded, no matter which scene is currently running"
@@ -81,7 +81,7 @@ msgstr "始终加载, 无论当前正在运行的场景是哪个"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
-msgstr "可以存储全局变量, 如玩家信息"
+msgstr "可以存储全局变量, 如游戏角色信息"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
 msgid "Can handle switching scenes and between-scene transitions"
@@ -109,7 +109,7 @@ msgid ""
 "viewport before any other scenes are loaded."
 msgstr ""
 "可以使用“自动加载”加载从节点继承的场景或脚本。注意: 自动加载脚本时, 将创建一"
-"个节点, 并将脚本附加到该脚本。在加载任何其他场景之前, 此节点将添加到根视口。"
+"个节点, 并将脚本附加到该脚本。在加载任何其他场景之前, 此节点将添加到根视区。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
 msgid ""
@@ -134,13 +134,13 @@ msgstr ""
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
-msgstr "这意味着任何节点都可以使用以下方式访问名为“PlayerVariables”的单例："
+msgstr "这意味着任何节点都可以使用以下方式访问名为“PlayerVariables”的单例:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
-msgstr "如果选中了“Enable”列 (默认为 true), 则只需直接访问单例："
+msgstr "如果选中了“Enable”列 (默认为 true), 则只需直接访问单例:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -149,31 +149,32 @@ msgid ""
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
 "请注意, 自动加载对象 (脚本和场景) 的访问方式与场景树中的任何其他节点相同。事"
-"实上, 如果你查看正在运行的场景树, 你将看到自动加载的节点出现："
+"实上, 如果您查看正在运行的场景树, 您将看到自动加载的节点出现:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
 msgstr "自定义场景切换器"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
+#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
-"<class_SceneTree_change_scene>` method (see :ref:`doc_scene_tree` for "
+"<class_SceneTree_method_change_scene>` method (see :ref:`doc_scene_tree` for "
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
 "本教程将演示如何使用自动加载构建场景切换器。对于基本场景切换, 您可以使用 :"
-"ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` 方法（有关详细"
-"信息, 请参阅 :ref:`doc_scene_tree` ）。但是, 如果在更改场景时需要更复杂的行"
-"为, 此方法将提供更多功能。"
+"ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` 方法(有关详细信"
+"息, 请参阅 :ref:`doc_scene_tree` )。但是, 如果在更改场景时需要更复杂的行为, "
+"此方法将提供更多功能。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
-"首先, 从这里下载模板： :download:`autoload.zip <files/autoload.zip>` 然后在"
+"首先, 从这里下载模板: :download:`autoload.zip <files/autoload.zip>` 然后在"
 "Godot中打开它。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
@@ -183,7 +184,7 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
-"该项目包含两个场景： ``Scene1.tscn`` 和 ``Scene2.tscn``。每个场景都包含一个显"
+"该项目包含两个场景: ``Scene1.tscn`` 和 ``Scene2.tscn``。每个场景都包含一个显"
 "示场景名称的标签和一个连接了 ``pressed()`` 信号的按钮。当您运行该项目时, 它将"
 "从 ``Scene1.tscn``开始。但是, 按下按钮不会执行任何操作。"
 
@@ -197,7 +198,7 @@ msgid ""
 "sure it inherits from ``Node``:"
 msgstr ""
 "切换到 \"Script\" 选项卡, 并创建一个名为“Global.gd”的新脚本。确保它从 "
-"``Node`` 继承："
+"``Node`` 继承:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
 msgid ""
@@ -207,8 +208,8 @@ msgid ""
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
 "下一步是将此脚本添加到自动加载列表中。从菜单中打开 ``项目 > 项目设置`` , 切换"
-"到“自动加载”选项卡, 然后单击 ``..``按钮或键入其路径： ``res://Global.gd``。"
-"按“添加”将其添加到自动加载列表："
+"到“自动加载”选项卡, 然后单击 ``..``按钮或键入其路径: ``res://Global.gd``。"
+"按“添加”将其添加到自动加载列表:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
@@ -236,13 +237,14 @@ msgstr ""
 "的场景。"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
+#, fuzzy
 msgid ""
 "As mentioned in the comments above, we need to avoid the situation of "
 "deleting the current scene while it is still being used (i.e. its code is "
 "still running), so using :ref:`Object.call_deferred() "
-"<class_Object_call_deferred>` is required at this point. The result is that "
-"the second function will run at a later time when any code from the current "
-"scene has completed."
+"<class_Object_method_call_deferred>` is required at this point. The result "
+"is that the second function will run at a later time when any code from the "
+"current scene has completed."
 msgstr ""
 "如上面的注释中所述, 我们需要避免在当前场景仍在使用时将其删除的情况 (即其代码"
 "仍在运行), 因此此时需要使用 :ref:`Object.call_deferred() "
@@ -252,7 +254,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
 msgid ""
 "Finally, we need to fill the empty callback functions in the two scenes:"
-msgstr "最后, 我们需要在两个场景中填充空回调函数："
+msgstr "最后, 我们需要在两个场景中填充空回调函数:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:253
 msgid "and"
@@ -271,6 +273,6 @@ msgid ""
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""
-"注意：当场景较小时, 转换是即时的。但是, 如果您的场景比较复杂, 则可能需要相当"
-"长的时间才能显示。若要了解如何处理此问题, 请参阅下一个教程： :ref:"
+"注意:当场景较小时, 转换是即时的。但是, 如果您的场景比较复杂, 则可能需要相当长"
+"的时间才能显示。若要了解如何处理此问题, 请参阅下一个教程: :ref:"
 "`doc_background_loading`"

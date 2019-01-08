@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,6 @@ msgstr ""
 "conception de Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
@@ -98,7 +97,6 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "En plus de cela, vous pouvez **hériter** de n'importe quelle scène."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code, except "
@@ -112,7 +110,6 @@ msgstr ""
 "en mélangeant et en faisant correspondre les deux."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
-#, fuzzy
 msgid ""
 "It’s different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -299,7 +296,6 @@ msgstr ""
 "place."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
-#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart’s content. You can also debug games easily, as "
@@ -370,13 +366,12 @@ msgstr ""
 "l'éditeur.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
-#, fuzzy
 msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
 "Cela conduit à un système d'interface utilisateur fiable et flexible car "
-"l'éditeur lui-même est propulsé avec. Avec le mot-clé ``tool``, vous pouvez "
+"l'éditeur lui-même est construit avec. Avec le mot-clé ``tool``, vous pouvez "
 "exécuter n'importe quel code de jeu dans l'éditeur."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154

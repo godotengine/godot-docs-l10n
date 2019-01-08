@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,44 +19,42 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:4
 msgid "Exporting packs, patches, and mods"
-msgstr ""
+msgstr "导出包，修补程序和mod"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:7
-#, fuzzy
 msgid "Use cases"
-msgstr "使用过去时态:"
+msgstr "用例"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:9
 msgid ""
 "Oftentimes one would like to add functionality to one's game after it has "
 "been deployed."
-msgstr ""
+msgstr "通常，人们希望在部署游戏后为其添加功能。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:12
 msgid "Examples of this include..."
-msgstr ""
+msgstr "这方面的示例包括......"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:14
 msgid ""
 "Downloadable Content: the ability to add features and content to one's game."
-msgstr ""
+msgstr "可下载内容:为一个游戏添加功能和内容的功能。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:15
 msgid "Patches: the ability to fix a bug that is present in a shipped product."
-msgstr ""
+msgstr "修补程序:修复已发布产品中存在的错误的功能。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:16
 msgid "Mods: grant other people the ability to create content for one's game."
-msgstr ""
+msgstr "Mods:授予其他人为一个人的游戏创建内容的能力。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:18
 msgid ""
 "These tools help developers to extend their development beyond the initial "
 "release."
-msgstr ""
+msgstr "这些工具可帮助开发人员将其开发扩展到初始版本之外。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:22
-#, fuzzy
 msgid "Overview of PCK files"
 msgstr "调试工具概述"
 
@@ -65,36 +63,35 @@ msgid ""
 "Godot enables this via a feature called **resource packs** (PCK files, with "
 "extension ``.pck``)."
 msgstr ""
+"Godot通过名为 **资源包** (PCK文件，扩展名为`.pck``)的功能实现了这一点。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:27
-#, fuzzy
 msgid "**Advantages:**"
-msgstr "**分类：**"
+msgstr "**优势:**"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:29
 msgid "incremental updates/patches"
-msgstr ""
+msgstr "增量更新/补丁"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:30
 msgid "offer DLCs"
-msgstr ""
+msgstr "提供DLC"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:31
-#, fuzzy
 msgid "offer mod support"
-msgstr "官方支持"
+msgstr "提供mod支持"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:32
 msgid "no source code disclosure needed for mods"
-msgstr ""
+msgstr "mods不需要公开源代码"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:33
 msgid "more modular project structure"
-msgstr ""
+msgstr "更模块化的项目结构"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
 msgid "users don’t have to replace the entire game"
-msgstr ""
+msgstr "用户无需替换整个游戏"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:36
 msgid ""
@@ -102,59 +99,54 @@ msgid ""
 "to players. Then, when one wants to add functionality or content later on, "
 "they just deliver the updates via PCK files to the users."
 msgstr ""
+"使用它们的第一部分涉及将项目导出并交付给游戏角色。然后，当想要稍后添加功能或"
+"内容时，他们只是通过PCK文件将更新传递给用户。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:40
 msgid "PCK files usually contain, but are not limited to:"
-msgstr ""
+msgstr "PCK文件通常包含但不限于:"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
-msgstr "来自脚本"
+msgstr "脚本"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
-#, fuzzy
 msgid "scenes"
 msgstr "场景"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:44
-#, fuzzy
 msgid "shaders"
-msgstr "无阴影"
+msgstr "着色器"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:45
-#, fuzzy
 msgid "models"
-msgstr "循环模式"
+msgstr "模型"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:46
-#, fuzzy
 msgid "textures"
 msgstr "纹理"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:47
-#, fuzzy
 msgid "sound effects"
-msgstr "声音效果"
+msgstr "声效"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:48
 msgid "music"
-msgstr ""
+msgstr "音乐"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:49
 msgid "any other asset suitable for import into the game"
-msgstr ""
+msgstr "适合进口到游戏中的任何其他资源"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:51
 msgid ""
 "The PCK files can even be an entirely different Godot project, which the "
 "original game loads in at runtime."
-msgstr ""
+msgstr "PCK文件甚至可以是一个完全不同的Godot项目，原始游戏在运行时加载。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:55
-#, fuzzy
 msgid "Generating PCK files"
-msgstr "提供文件"
+msgstr "生成PCK文件"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:57
 msgid ""
@@ -162,6 +154,8 @@ msgid ""
 "and go to Project/Export and click on “Export PCK/Zip”. Also make sure to "
 "have an export template selected while doing so."
 msgstr ""
+"为了将项目的所有资源打包到PCK文件中，打开项目并转到Project / Export并单"
+"击“Export PCK / Zip”。还要确保在执行此操作时选择了导出模板。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:63
 msgid ""
@@ -170,6 +164,8 @@ msgid ""
 "or ZIP file extension, then the export process will build that type of file "
 "for the chosen platform."
 msgstr ""
+"另一种方法是 :ref:`从命令行导出<doc_command_line_tutorial_exporting>`。如果输"
+"出文件以PCK或ZIP文件扩展名结尾，则导出过程将为所选平台构建该类型的文件。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:69
 msgid ""
@@ -178,6 +174,8 @@ msgid ""
 "certain structure for the PCK's resources and/or a certain interface for its "
 "scripts, then either..."
 msgstr ""
+"如果有人希望为他们的游戏支持mod，他们将需要他们的用户创建类似的导出文件。假设"
+"原始游戏需要PCK资源的某种结构和/或其脚本的某个界面，那么要么......"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:74
 msgid ""
@@ -187,22 +185,31 @@ msgid ""
 "mod content for the game (so that it will work). Users would then use "
 "Godot's built in exporting tools to create a PCK file, as detailed above."
 msgstr ""
+"开发人员必须公开这些预期结构/接口的文档，期望modders安装Godot Engine，然后还"
+"期望这些modder在为游戏构建mod内容时符合文档定义的API(以便它可以工作)。然后，"
+"用户将使用Godot的内置导出工具来创建PCK文件，如上所述。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:80
+#, fuzzy
 msgid ""
 "The developer uses Godot to build a GUI tool for adding their exact API "
 "content to a project. This Godot tool must either run on a tools-enabled "
 "build of the engine or have access to one (distributed alongside or perhaps "
 "in the original game's files). The tool can then use the Godot executable to "
-"export a PCK file from the command line with :ref:`OS.execute "
-"<class_OS_execute>`. It makes the most sense for the game to not use a tool-"
-"build though (for security) and for the modding tools to *do* use a tool-"
-"enabled engine build."
+"export a PCK file from the command line with :ref:`OS.execute() "
+"<class_OS_method_execute>`. It makes the most sense for the game to not use "
+"a tool-build though (for security) and for the modding tools to *do* use a "
+"tool-enabled engine build."
 msgstr ""
+"开发人员使用Godot构建GUI工具，将其确切的API内容添加到项目中。这个Godot工具必"
+"须在启用工具的引擎构建上运行，或者可以访问一个(分布在原始游戏的文件旁边或者可"
+"能在原始游戏的文件中)。然后，该工具可以使用Godot可执行文件从命令行导出PCK文"
+"件 :ref:`OS.execute <class_OS_execute>`。虽然(为了安全性)而不使用工具构建，并"
+"且使用支持工具的引擎构建的模型工具，最有意义的是游戏。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:90
 msgid "Opening PCK files at runtime"
-msgstr ""
+msgstr "在运行时打开PCK文件"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
 msgid ""
@@ -212,6 +219,9 @@ msgid ""
 "file in the directory of the games executable. The PCK file contains a "
 "“mod_scene.tscn” test scene in its root."
 msgstr ""
+"要导入PCK文件，可以使用单行程序。请记住，如果导入失败，则不会出现错误或异常。"
+"相反，可能必须在顶部创建一些验证代码作为层。以下示例期望游戏可执行文件目录中"
+"的“mod.pck”文件。 PCK文件的根目录中包含“mod_scene.tscn”测试场景。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:117
 msgid ""
@@ -222,6 +232,10 @@ msgid ""
 "for one's own game. A PCK file of this kind can fix the content of a "
 "previously loaded PCK."
 msgstr ""
+"如果导入的文件具有与项目中已有的文件路径/名称相同的文件路径/名称，则导入的文"
+"件将替换它。在创建DLC或mod时需要注意这一点(使用工具将mods隔离到特定mods子文件"
+"夹时很容易解决)。但是，它也是一种为自己的游戏创建补丁的方法。这种PCK文件可以"
+"修复先前加载的PCK的内容。"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:124
 msgid "Summary"
@@ -235,3 +249,6 @@ msgid ""
 "that purpose. Godot should make that process smooth regardless of which "
 "route a developer pursues."
 msgstr ""
+"本教程应说明如何轻松地向游戏添加mod，补丁或DLC。最重要的是确定计划如何为他们"
+"的游戏分发未来内容并开发为此目的定制的工作流程。无论开发人员追求哪条路线，"
+"Godot都应该使这个过程顺利进行。"

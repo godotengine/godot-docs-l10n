@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,13 +49,13 @@ msgid ""
 "First of all, add an :ref:`AnimationPlayer <class_AnimationPlayer>` node to "
 "the scene as a child of \"background\" (the root node):"
 msgstr ""
-"首先，将一个：:ref:`AnimationPlayer <class_AnimationPlayer>` 节点作为 "
-"`background` (根节点)的子节点添加到场景中："
+"首先，将一个: :ref:`AnimationPlayer <class_AnimationPlayer>` 节点作为 "
+"`background` (根节点)的子节点添加到场景中:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:23
 msgid ""
 "When a node of this type is selected, the animation editor panel will appear:"
-msgstr "当选择这种类型的节点时，动画编辑器面板会出现："
+msgstr "当选择这种类型的节点时，动画编辑器面板会出现:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:28
 msgid "The animation editor panel stays visible until manually hidden."
@@ -79,9 +79,8 @@ msgid ""
 "\" mode. In this mode, a key icon appears next to every property of the "
 "property editor. In Godot, any property of an object can be animated:"
 msgstr ""
-"现在我们有一个动画，属性编辑器进入`animation editing 动画编辑`模式。在这种模"
-"式下，属性编辑器的每个属性旁边都会出现一个键图标。在Godot中，对象的任何属性都"
-"可以被动画："
+"现在我们有一个动画，属性面板进入`动画编辑` 模式。在这种模式下，属性面板的每个"
+"属性旁边都会出现一个键图标。在Godot中，对象的任何属性都可以被动画化:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:46
 msgid "Editing the animation"
@@ -98,7 +97,7 @@ msgid ""
 "next to the property:"
 msgstr ""
 "打开动画编辑器面板，选择`logo`节点，将`Rect / Position`属性设置为"
-"`(118，-400)`，按下属性旁边的按键："
+"`(118，-400)`，按下属性旁边的按键:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:56
 msgid "When the dialog appears, confirm that you are creating a new track."
@@ -106,11 +105,11 @@ msgstr "当对话框出现时，确认您正在创建一个新轨道。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:58
 msgid "The keyframe will be added in the animation player editor:"
-msgstr "关键帧将添加到动画播放器编辑器："
+msgstr "关键帧将添加到动画播放器编辑器:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:62
 msgid "Move the editor cursor to the end by clicking here:"
-msgstr "点击这里，将编辑器光标移到末尾："
+msgstr "点击这里，将编辑器光标移到末尾:"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:66
 msgid ""
@@ -124,7 +123,7 @@ msgstr ""
 msgid ""
 "Pressing \"Play selected animation from start. (Shift-D)\" on the animation "
 "panel will make the logo descend."
-msgstr "按下“从开始播放播放选定动画。（SHIFT-D）“动画面板将使标志下降。"
+msgstr "按下“从开始播放播放选定动画。(SHIFT-D)“动画面板将使标志下降。"
 
 #: ../../docs/getting_started/step_by_step/animations.rst:76
 msgid ""
@@ -135,4 +134,4 @@ msgstr "点击“Autoplay on Load 自动加载”按钮，设置动画在场景�
 #: ../../docs/getting_started/step_by_step/animations.rst:81
 msgid ""
 "And finally, when running the scene, the animation should look like this:"
-msgstr "最后，当运行场景时，动画应该是这样的："
+msgstr "最后，当运行场景时，动画应该是这样的:"

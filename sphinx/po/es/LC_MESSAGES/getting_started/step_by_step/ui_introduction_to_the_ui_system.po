@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Diseño de interfaces con nodos Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -33,16 +32,16 @@ msgid ""
 "them, to create anything from life bars to complex applications. Godot's "
 "entire editor and plugins use these nodes."
 msgstr ""
-"Las pantallas de computadoras, los teléfonos móviles y las pantallas de "
-"televisión vienen en todas las formas y tamaños. Para distribuir un juego, "
-"tendrás que admitir diferentes proporciones y resoluciones de pantalla. "
-"Puede ser difícil crear interfaces sensibles que se adapten a todas las "
-"plataformas. Afortunadamente, Godot viene con herramientas robustas para "
-"diseñar y administrar una interfaz de usuario sensible. Para diseñar su "
-"interfaz de usuario, utilizarás los nodos de Control. Estos son los nodos "
-"con iconos verdes en el editor. Hay docenas de ellos, para crear cualquier "
-"cosa, desde barras de vida hasta aplicaciones complejas. Todo el editor y "
-"los plugins de Godot usan estos nodos."
+"Pantallas de computadoras, teléfonos móviles y pantallas de televisión "
+"vienen en todas las formas y tamaños. Para distribuir un juego, tendrás que "
+"admitir diferentes proporciones y resoluciones de pantalla. Puede ser "
+"difícil crear interfaces sensibles que se adapten a todas las plataformas. "
+"Afortunadamente, Godot viene con herramientas robustas para diseñar y "
+"administrar una interfaz de usuario sensible. Para diseñar tu interfaz de "
+"usuario, utilizarás los nodos de Control. Estos son los nodos con íconos "
+"verdes en el editor. Hay docenas de ellos, para crear cualquier cosa, desde "
+"barras de vida hasta aplicaciones complejas. Todo el editor y los plugins de "
+"Godot usan estos nodos."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:17
 msgid "Godot's editor is made with the engine's UI framework"
@@ -83,7 +82,6 @@ msgstr ""
 "<doc_ui_game_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
-#, fuzzy
 msgid ""
 "Only use Control nodes when you design your interfaces. They have unique "
 "properties that allow them to work with one another. Other nodes, like "
@@ -92,10 +90,10 @@ msgid ""
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
 "Utiliza únicamente nodos de Control cuando diseñes tus interfaces. Tienen "
-"propiedades únicas que les permiten trabajar unos con otros. Otros nodos "
+"propiedades únicas que les permiten trabajar unos con otros. Otros nodos, "
 "como Node2D, Sprite, etc. no funcionarán. Todavía puedes usar algunos nodos "
-"que funcionan con otros como el AnimationPlayer, Tween o StreamPlayer. Los "
-"nodos de control son CanvasItems como Node2D, por lo que puede aplicarles "
+"que funcionan con otros, como AnimationPlayer, Tween o StreamPlayer. Los "
+"nodos de control son CanvasItems como Node2D, por lo que puedes aplicarle "
 "shaders."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:37

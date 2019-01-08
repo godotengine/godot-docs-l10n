@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,13 @@ msgid "Part 4"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:7
-msgid "Part Overview"
-msgstr ""
+#, fuzzy
+msgid "Part overview"
+msgstr "Übersicht"
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:9
 msgid ""
-"In this part we will be adding health pick ups, ammo pick ups, targets the "
+"In this part, we will be adding health pickups, ammo pickups, targets the "
 "player can destroy, support for joypads, and add the ability to change "
 "weapons with the scroll wheel."
 msgstr ""
@@ -49,15 +50,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:21
 msgid ""
-"In Godot any game controller is referred to as a joypad. This includes: "
+"In Godot, any game controller is referred to as a joypad. This includes: "
 "Console controllers, Joysticks (like for flight simulators), Wheels (like "
 "for driving simulators), VR Controllers, and more!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:24
 msgid ""
-"First we need to change a few things in our project's input map. Open up the "
-"project settings and select the ``Input Map`` tab."
+"Firstly, we need to change a few things in our project's input map. Open up "
+"the project settings and select the ``Input Map`` tab."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:26
@@ -120,7 +121,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:56
-msgid "Let's go over what each of these do:"
+msgid "Let's go over what each of these does:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:58
@@ -138,7 +139,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:61
 msgid ""
 "Many joypads jitter around a certain point. To counter this, we ignore any "
-"movement in a with a radius of JOYPAD_DEADZONE. If we did not ignore said "
+"movement within a radius of JOYPAD_DEADZONE. If we did not ignore said "
 "movement, the camera would jitter."
 msgstr ""
 
@@ -154,7 +155,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:70
 msgid ""
-"In ``process_input`` add the following code, just before "
+"In ``process_input``, add the following code just before "
 "``input_movement_vector = input_movement_vector.normalized()``:"
 msgstr ""
 
@@ -163,7 +164,7 @@ msgid "Let's go over what we're doing."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:115
-msgid "First we check to see if there is a connected joypad."
+msgid "Firstly, we check to see if there is a connected joypad."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:117
@@ -183,10 +184,10 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:125
 msgid ""
-"Next we check to see if the joypad vector length is within the "
+"Next, we check to see if the joypad vector length is within the "
 "``JOYPAD_DEADZONE`` radius. If it is, we set ``joypad_vec`` to an empty "
 "Vector2. If it is not, we use a scaled Radial Dead zone for precise dead "
-"zone calculating."
+"zone calculation."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:128
@@ -210,8 +211,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:136
 msgid ""
 "Remember how we normalize ``input_movement_vector``? This is why! If we did "
-"not normalize ``input_movement_vector``, the player could move faster if the "
-"player pushes in the same direction with both the keyboard and the joypad!"
+"not normalize ``input_movement_vector``, the player could move faster if "
+"they pushed in the same direction with both the keyboard and the joypad!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:141
@@ -225,20 +226,20 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:218
 msgid ""
-"First we check the mouse mode. If the mouse mode is not "
+"Firstly, we check the mouse mode. If the mouse mode is not "
 "``MOUSE_MODE_CAPTURED``, we want to return, which will skip the code below."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:220
 msgid ""
-"Next we define a new :ref:`Vector2 <class_Vector2>` called ``joypad_vec``. "
+"Next, we define a new :ref:`Vector2 <class_Vector2>` called ``joypad_vec``. "
 "This will hold the right joystick position. Based on the OS, we set its "
 "values so it is mapped to the proper axes for the right joystick."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:223
 msgid ""
-"As stated above, I do not (currently) has access to a Mac computer, so the "
+"As stated above, I do not (currently) have access to a Mac computer, so the "
 "joystick axes may need changing. If they do, please open a GitHub issue on "
 "the Godot documentation repository! Thanks!"
 msgstr ""
@@ -251,7 +252,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:228
 msgid ""
-"Then we rotate ``rotation_helper`` and the player's :ref:`KinematicBody "
+"Then, we rotate ``rotation_helper`` and the player's :ref:`KinematicBody "
 "<class_KinematicBody>` using ``joypad_vec``."
 msgstr ""
 
@@ -264,7 +265,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:233
 msgid ""
-"Due to few mouse related bugs on Windows, we cannot put mouse rotation in "
+"Due to a few mouse-related bugs on Windows, we cannot put mouse rotation in "
 "``process_view`` as well. Once these bugs are fixed, this will likely be "
 "updated to place the mouse rotation here in ``process_view_input`` as well."
 msgstr ""
@@ -308,9 +309,9 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:252
 msgid ""
-"Let's add one more input related feature before we start working on the pick "
-"ups and the target. Let's add the ability to change weapons using the scroll "
-"wheel on the mouse."
+"Let's add one more input related feature before we start working on the "
+"pickups and the target. Let's add the ability to change weapons using the "
+"scroll wheel on the mouse."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:254
@@ -341,8 +342,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:292
 msgid ""
-"First we check if the event is an ``InputEventMouseButton`` event and that "
-"the mouse mode is ``MOUSE_MODE_CAPTURED``. Then we check to see if the "
+"Firstly, we check if the event is an ``InputEventMouseButton`` event and "
+"that the mouse mode is ``MOUSE_MODE_CAPTURED``. Then, we check to see if the "
 "button index is either a ``BUTTON_WHEEL_UP`` or ``BUTTON_WHEEL_DOWN`` index."
 msgstr ""
 
@@ -350,13 +351,13 @@ msgstr ""
 msgid ""
 "If the event's index is indeed a button wheel index, we then check to see if "
 "it is a ``BUTTON_WHEEL_UP`` or ``BUTTON_WHEEL_DOWN`` index. Based on whether "
-"it is up or down we add or remove ``MOUSE_SENSITIVITY_SCROLL_WHEEL`` to/from "
-"``mouse_scroll_value``."
+"it is up or down, we add or subtract ``MOUSE_SENSITIVITY_SCROLL_WHEEL`` to/"
+"from ``mouse_scroll_value``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:298
 msgid ""
-"Next we clamp mouse scroll value to assure it is inside the range of "
+"Next, we clamp mouse scroll value to ensure it is inside the range of "
 "selectable weapons."
 msgstr ""
 
@@ -371,13 +372,13 @@ msgstr ""
 msgid ""
 "We are casting ``mouse_scroll_value`` to an ``int`` so we can use it as a "
 "key in our dictionary. If we left it as a float, we would get an error when "
-"we try to run the project."
+"we tried to run the project."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:305
 msgid ""
-"Next we check to see if the weapon name at ``round_mouse_scroll_value`` is "
-"not equal to the current weapon name using ``weapon_number_to_name``. If the "
+"Next, we check to see if the weapon name at ``round_mouse_scroll_value`` is "
+"not equal to the current weapon name using ``WEAPON_NUMBER_TO_NAME``. If the "
 "weapon is different than the player's current weapon, we assign "
 "``changing_weapon_name``, set ``changing_weapon`` to ``true`` so the player "
 "will change weapons in ``process_changing_weapon``, and set "
@@ -390,7 +391,7 @@ msgid ""
 "is because we do not want the player to keep their mouse scroll wheel just "
 "in between values, giving them the ability to switch almost extremely fast. "
 "By assigning ``mouse_scroll_value`` to ``round_mouse_scroll_value``, we "
-"assure that each weapon takes exactly the same amount of scrolling to change."
+"ensure that each weapon takes exactly the same amount of scrolling to change."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:315
@@ -403,7 +404,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:321
 msgid ""
 "Now the scroll value will be changed with the keyboard input. If we did not "
-"change this, the scroll value will be out of sync. If the scroll wheel is "
+"change this, the scroll value would be out of sync. If the scroll wheel were "
 "out of sync, scrolling forwards or backwards would not transition to the "
 "next/last weapon, but rather the next/last weapon the scroll wheel changed "
 "to."
@@ -414,7 +415,7 @@ msgid "Now you can change weapons using the scroll wheel! Go give it a whirl!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:329
-msgid "Adding the health pick ups"
+msgid "Adding the health pickups"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:331
@@ -436,27 +437,26 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:337
 msgid ""
-"This is because we're actually going to be making two sizes of health pick "
-"ups, one small and one large/normal. ``Health_Kit`` and ``Health_Kit_Small`` "
-"only have a single :ref:`MeshInstance <class_MeshInstance>` as their "
-"children."
+"This is because we're actually going to be making two sizes of health "
+"pickups, one small and one large/normal. ``Health_Kit`` and "
+"``Health_Kit_Small`` only have a single :ref:`MeshInstance "
+"<class_MeshInstance>` as their children."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:340
 msgid ""
 "Next expand ``Health_Pickup_Trigger``. This is an :ref:`Area <class_Area>` "
 "node we're going to use to check if the player has walked close enough to "
-"pick up the health kit. If you expand it you'll find two collision shapes, "
+"pick up the health kit. If you expand it, you'll find two collision shapes, "
 "one for each size. We will be using a different collision shape size based "
-"on the size of the health pick up, so the smaller health pick up has a "
-"trigger collision shape closer to its size."
+"on the size of the health pickup, so the smaller health pickup has a trigger "
+"collision shape closer to its size."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:344
 msgid ""
 "The last thing to note is how we have an :ref:`AnimationPlayer "
-"<class_AnimationPlayer>` node so the health kit spins around slowly and bobs "
-"up and down."
+"<class_AnimationPlayer>` node so the health kit bobs and spins around slowly."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:346
@@ -472,24 +472,24 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:407
 msgid ""
-"``kit_size``: The size of the health pick up. Notice how we're using a "
+"``kit_size``: The size of the health pickup. Notice how we're using a "
 "``setget`` function to tell if it's changed."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:408
 msgid ""
-"``HEALTH_AMMOUNTS``: The amount of health each pick up in each size contains."
+"``HEALTH_AMMOUNTS``: The amount of health each pickup in each size contains."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:409
 msgid ""
 "``RESPAWN_TIME``: The amount of time, in seconds, it takes for the health "
-"pick up to respawn"
+"pickup to respawn"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:410
 msgid ""
-"``respawn_timer``: A variable used to track how long the health pick up has "
+"``respawn_timer``: A variable used to track how long the health pickup has "
 "been waiting to respawn."
 msgstr ""
 
@@ -502,7 +502,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:413
 msgid ""
 "We're using ``is_ready`` because ``setget`` functions are called before "
-"``_ready``, we need to ignore the first kit_size_change call, because we "
+"``_ready``; we need to ignore the first kit_size_change call, because we "
 "cannot access child nodes until ``_ready`` is called. If we did not ignore "
 "the first ``setget`` call, we would get several errors in the debugger."
 msgstr ""
@@ -510,7 +510,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:417
 msgid ""
 "Also, notice how we are using an exported variable. This is so we can change "
-"the size of the health pick ups in the editor. This makes it where we do not "
+"the size of the health pickups in the editor. This makes it so we do not "
 "have to make two scenes for the two sizes, since we can easily change sizes "
 "in the editor using the exported variable."
 msgstr ""
@@ -527,20 +527,20 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:426
 msgid ""
-"First we connect the ``body_entered`` signal from the "
+"Firstly, we connect the ``body_entered`` signal from the "
 "``Health_Pickup_Trigger`` to the ``trigger_body_entered`` function. This "
-"makes it where any body that enters the :ref:`Area <class_Area>` triggers "
-"the ``trigger_body_entered`` function."
+"makes it so any body that enters the :ref:`Area <class_Area>` triggers the "
+"``trigger_body_entered`` function."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:429
 msgid ""
-"Next we set ``is_ready`` to ``true`` so we can use the ``setget`` function."
+"Next, we set ``is_ready`` to ``true`` so we can use the ``setget`` function."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:431
 msgid ""
-"Then we hide all of the possible kits and their collision shapes using "
+"Then we hide all the possible kits and their collision shapes using "
 "``kit_size_change_values``. The first argument is the size of the kit, while "
 "the second argument is whether to enable or disable the collision shape and "
 "mesh at that size."
@@ -590,7 +590,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:453
 msgid ""
 "The first thing we do is check to see which size was passed in. Based on "
-"which size we're wanting to enable/disable, we want to get different nodes."
+"which size we want to enable/disable, we want to get different nodes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:455
@@ -616,7 +616,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:463
 msgid ""
-"This function may be a little confusing, try to think of it like this: We're "
+"This function may be a little confusing; try to think of it like this: We're "
 "enabling/disabling the proper nodes for ``size`` using ``enabled``. This is "
 "so we cannot pick up health for a size that is not visible, and so only the "
 "mesh for the proper size will be visible."
@@ -628,8 +628,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:470
 msgid ""
-"The first thing we do is see whether or not the body that just entered has a "
-"method/function called ``add_health``. If it does, we then call "
+"The first thing we do is check whether or not the body that has just entered "
+"has a method/function called ``add_health``. If it does, we then call "
 "``add_health`` and pass in the health provided by the current kit size."
 msgstr ""
 
@@ -643,8 +643,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:478
 msgid ""
-"The last thing we need to do before the player can use this health pick up "
-"is add a few things to ``Player.gd``."
+"The last thing we need to do before the player can use this health pickup is "
+"add a few things to ``Player.gd``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:480
@@ -668,7 +668,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:498
 msgid ""
 "We first add ``additional_health`` to the player's current health. We then "
-"clamp the health so that it cannot exceed a value higher than "
+"clamp the health so that it cannot take on a value higher than "
 "``MAX_HEALTH``, nor a value lower than ``0``."
 msgstr ""
 
@@ -676,26 +676,25 @@ msgstr ""
 msgid ""
 "With that done, the player can now collect health! Go place a few "
 "``Health_Pickup`` scenes around and give it a try. You can change the size "
-"of the health pick up in the editor when a ``Health_Pickup`` instanced scene "
+"of the health pickup in the editor when a ``Health_Pickup`` instanced scene "
 "is selected, from a convenient drop down."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:507
-msgid "Adding the ammo pick ups"
+msgid "Adding the ammo pickups"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:509
 msgid ""
 "While adding health is good and all, we can't reap the rewards from adding "
-"it since nothing can (currently) damage us. Let's add some ammo pick ups "
-"next!"
+"it since nothing can (currently) damage us. Let's add some ammo pickups next!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:512
 msgid ""
 "Open up ``Ammo_Pickup.tscn``. Notice how it's structured exactly the same as "
 "``Health_Pickup.tscn``, but with the meshes and trigger collision shapes "
-"changed slightly to adjust for the difference in mesh sizes."
+"changed slightly to account for the difference in mesh sizes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:515
@@ -707,36 +706,36 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:576
 msgid ""
 "You may have noticed this code looks almost exactly the same as the health "
-"pick up. That's because it largely is the same! Only a few things have been "
+"pickup. That's because it largely is the same! Only a few things have been "
 "changed, and that's what we're going to go over."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:579
 msgid ""
-"First, notice how there is ``AMMO_AMOUNTS`` instead of ``HEALTH_AMMOUNTS``. "
-"``AMMO_AMOUNTS`` will be how many ammo clips/magazines the pick up add to "
-"the current weapon. (Unlike ``HEALTH_AMMOUNTS`` which was how many health "
-"points, we instead add an entire clip for the current weapon, instead of the "
-"raw ammo amount)"
+"Firstly, notice the change to ``AMMO_AMOUNTS`` from ``HEALTH_AMMOUNTS``. "
+"``AMMO_AMOUNTS`` will be how many ammo clips/magazines the pickup adds to "
+"the current weapon. (Unlike in the case of ``HEALTH_AMMOUNTS``, which has "
+"stood for how many health points would be awarded, we add an entire clip to "
+"the current weapon instead of the raw ammo amount)"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:582
 msgid ""
 "The only other thing to notice is in ``trigger_body_entered``. We're "
-"checking and calling a function called ``add_ammo`` instead of "
-"``add_health``."
+"checking for the existence of and calling a function called ``add_ammo`` "
+"instead of ``add_health``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:584
 msgid ""
-"Other than those two small changes, everything else is exactly the same as "
-"the health pick up!"
+"Other than those two small changes, everything else is the same as the "
+"health pickup!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:588
 msgid ""
-"All we need to do for making the ammo pick ups work is to add a new function "
-"to the player. Open ``Player.gd`` and add the following function:"
+"All we need to do to make the ammo pickups work is add a new function to the "
+"player. Open ``Player.gd`` and add the following function:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:597
@@ -745,30 +744,30 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:599
 msgid ""
-"The first thing we check is to see whether the player is using ``UNARMED`` "
-"or not. Because ``UNARMED`` does not have a node/script, we want to make "
-"sure the player is not using ``UNARMED`` before trying to get the node/"
-"script attached to ``current_weapon_name``."
+"The first thing we check is whether the player is ``UNARMED``. Because "
+"``UNARMED`` does not have a node/script, we want to make sure the player is "
+"not ``UNARMED`` before trying to get the node/script attached to "
+"``current_weapon_name``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:602
 msgid ""
-"Next we check to see if the current weapon can be refilled. If the current "
+"Next, we check to see if the current weapon can be refilled. If the current "
 "weapon can, we add a full clip/magazine worth of ammo to the weapon by "
-"multiplying the current weapon's ``AMMO_IN_MAG`` variable times however much "
-"ammo clips we're adding (``additional_ammo``)."
+"multiplying the current weapon's ``AMMO_IN_MAG`` value by however many ammo "
+"clips we're adding (``additional_ammo``)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:607
 msgid ""
 "With that done, you should now be able to get additional ammo! Go place some "
-"ammo pick ups in one/both/all of the scenes and give it a try!"
+"ammo pickups in one/both/all of the scenes and give it a try!"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:609
 msgid ""
 "Notice how we're not limiting the amount of ammo you can carry. To limit the "
-"amount of ammo each weapon can carry, you need to add a additional variable "
+"amount of ammo each weapon can carry, you need to add an additional variable "
 "to each weapon's script, and then clamp the weapon's ``spare_ammo`` variable "
 "after adding ammo in ``add_ammo``."
 msgstr ""
@@ -788,17 +787,17 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:619
 msgid ""
-"First, notice how we're not using a :ref:`RigidBody <class_RigidBody>` node, "
-"but rather a :ref:`StaticBody <class_StaticBody>` node instead. The reason "
-"behind this is our non-broken targets will not be moving anywhere, using a :"
-"ref:`RigidBody <class_RigidBody>` would be more hassle then its worth, since "
-"all it has to do is stay still."
+"Firstly, notice how we're not using a :ref:`RigidBody <class_RigidBody>` "
+"node, but a :ref:`StaticBody <class_StaticBody>` one. The reason behind this "
+"is our non-broken targets will not be moving anywhere; using a :ref:"
+"`RigidBody <class_RigidBody>` would be more hassle than it's worth since all "
+"it has to do is stay still."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:623
 msgid ""
 "We also save a tiny bit of performance using a :ref:`StaticBody "
-"<class_StaticBody>` over a :ref:`RigidBody <class_RigidBody>`"
+"<class_StaticBody>` over a :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:625
@@ -812,16 +811,16 @@ msgstr ""
 msgid ""
 "Notice how the target is broken up into five pieces, each a :ref:`RigidBody "
 "<class_RigidBody>` node. We're going to spawn/instance this scene when the "
-"target takes too much damage and needs to be destroyed. Then we're going to "
+"target takes too much damage and needs to be destroyed. Then, we're going to "
 "hide the non-broken target, so it looks like the target shattered rather "
 "than a shattered target was spawned/instanced."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:632
 msgid ""
-"While you still have ``Broken_Target.tscn`` open and then attach "
+"While you still have ``Broken_Target.tscn`` open, attach "
 "``RigidBody_hit_test.gd`` to all of the :ref:`RigidBody <class_RigidBody>` "
-"nodes. This will make it where the player can shoot at the broken pieces and "
+"nodes. This will make it so the player can shoot at the broken pieces and "
 "they will react to the bullets."
 msgstr ""
 
@@ -886,7 +885,7 @@ msgid ""
 "<class_PackedScene>`) to get the broken target scene instead of using "
 "``preload``. By using an exported variable, we can choose the scene from the "
 "editor, and if we need to use a different scene, it's as easy as selecting a "
-"different scene in the editor, we don't need to go to the code to change the "
+"different scene in the editor; we don't need to go to the code to change the "
 "scene we're using."
 msgstr ""
 
@@ -898,8 +897,8 @@ msgstr ""
 msgid ""
 "The first thing we do is get the broken target holder and assign it to "
 "``broken_target_holder``. Notice how we're using ``get_parent().get_node()`` "
-"here, instead of ``$``. If you want to use ``$``, then you'd need to change "
-"``get_parent().get_node()`` to ``$\"../Broken_Target_Holder\"``."
+"here, instead of ``$``. If you wanted to use ``$``, then you'd need to "
+"change ``get_parent().get_node()`` to ``$\"../Broken_Target_Holder\"``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:716
@@ -911,12 +910,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:719
 msgid ""
-"Next we get the collision shape and assign it to ``target_collision_shape``. "
-"The reason we need the collision shape is because even when the mesh is "
-"invisible, the collision shape will still exist in the physics world. This "
-"makes it where the player can interact with a non-broken target even though "
-"it's invisible, which is not what we want. To get around this, we will "
-"disable/enable the collision shape as we make the mesh visible/invisible."
+"Next, we get the collision shape and assign it to "
+"``target_collision_shape``. The reason we need the collision shape is "
+"because even when the mesh is invisible, the collision shape will still "
+"exist in the physics world. This makes it so the player could interact with "
+"a non-broken target even though it's invisible, which is not what we want. "
+"To get around this, we will disable/enable the collision shape as we make "
+"the mesh visible/invisible."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:725
@@ -926,19 +926,19 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:727
 msgid ""
 "We're only going to be using ``_physics_process`` for respawning, and so the "
-"first thing we do is check to see if ``target_respawn_timer`` is more than "
-"``0``."
+"first thing we do is check to see if ``target_respawn_timer`` is greater "
+"than ``0``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:729
-msgid "If it is, we then remove ``delta`` from it."
+msgid "If it is, we then subtract ``delta`` from it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:731
 msgid ""
 "Then we check to see if ``target_respawn_timer`` is ``0`` or less. The "
 "reason behind this is since we just removed ``delta`` from "
-"``target_respawn_timer``, if it's ``0`` or less then the target just got "
+"``target_respawn_timer``, if it's ``0`` or less, then the target just got "
 "here, effectively allowing us to do whatever we need to do when the timer is "
 "finished."
 msgstr ""
@@ -956,7 +956,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:738
 msgid ""
-"Next we enable the collision shape by setting its ``disabled`` boolean to "
+"Next, we enable the collision shape by setting its ``disabled`` boolean to "
 "``false``."
 msgstr ""
 
@@ -976,8 +976,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:748
 msgid ""
-"The first thing we do is remove however much damage the bullet does from the "
-"target's health."
+"The first thing we do is subtract however much damage the bullet does from "
+"the target's health."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:750
@@ -998,8 +998,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:756
 msgid ""
-"For bonus effect, we want to make all of the target pieces explode outwards. "
-"To do this, we iterate over all of the children in ``clone``."
+"For bonus effect, we want to make all the target pieces explode outwards. To "
+"do this, we iterate over all the children in ``clone``."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:758
@@ -1015,13 +1015,13 @@ msgstr ""
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:762
 msgid ""
 "We multiply the damage by ``12`` so it has a more dramatic effect. You can "
-"change this to a higher or lower value depending on how explosive you want "
+"change this to a higher or lower value depending on how explosively you want "
 "your targets to shatter."
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/part_four.rst:765
 msgid ""
-"Next we set the target's respawn timer. We set the timer to "
+"Next, we set the target's respawn timer. We set the timer to "
 "``TARGET_RESPAWN_TIME``, so it takes ``TARGET_RESPAWN_TIME`` in seconds "
 "until it is respawned."
 msgstr ""

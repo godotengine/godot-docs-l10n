@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:4
-msgid "Kinematic Character (2D)"
+#, fuzzy
+msgid "Kinematic character (2D)"
 msgstr "运动学角色(2D)"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:7
@@ -26,76 +27,82 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:9
+#, fuzzy
 msgid ""
 "Yes, the name sounds strange. \"Kinematic Character\". What is that? The "
-"reason is that when physics engines came out, they were called \"Dynamics\" "
-"engines (because they dealt mainly with collision responses). Many attempts "
-"were made to create a character controller using the dynamics engines but it "
-"wasn't as easy as it seems. Godot has one of the best implementations of "
-"dynamic character controller you can find (as it can be seen in the 2d/"
-"platformer demo), but using it requires a considerable level of skill and "
-"understanding of physics engines (or a lot of patience with trial and error)."
+"reason for the name is that, when physics engines came out, they were called "
+"\"Dynamics\" engines (because they dealt mainly with collision responses). "
+"Many attempts were made to create a character controller using the dynamics "
+"engines, but it wasn't as easy as it seemed. Godot has one of the best "
+"implementations of dynamic character controller you can find (as it can be "
+"seen in the 2d/platformer demo), but using it requires a considerable level "
+"of skill and understanding of physics engines (or a lot of patience with "
+"trial and error)."
 msgstr ""
 "是的，名字听起来很奇怪。 “运动学角色”。 那是什么？ 原因是当物理引擎问世时，它"
-"们被称为“动力”引擎（因为它们主要处理碰撞响应）。 人们做了许多尝试，想使用动力"
-"引擎创建一个角色控制器，但它并不像看起来那么容易。 Godot拥有你能找到的最好的"
-"动态角色控制器（可以在 2d/platformer 这个演示中查看），但使用它需要相当高水平"
-"的技能和对物理引擎的理解（或者对试验和试错有足够的耐心）。"
+"们被称为“动力”引擎(因为它们主要处理碰撞响应)。 人们做了许多尝试，想使用动力引"
+"擎创建一个角色控制器，但它并不像看起来那么容易。 Godot拥有您能找到的最好的动"
+"态角色控制器(可以在 2d/platformer 这个演示中查看)，但使用它需要相当高水平的技"
+"能和对物理引擎的理解(或者对试验和试错有足够的耐心)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:19
+#, fuzzy
 msgid ""
-"Some physics engines such as Havok seem to swear by dynamic character "
-"controllers as the best alternative, while others (PhysX) would rather "
-"promote the Kinematic one."
+"Some physics engines, such as Havok seem to swear by dynamic character "
+"controllers as the best option, while others (PhysX) would rather promote "
+"the kinematic one."
 msgstr ""
 "像Havok这样的物理引擎似乎认为动态角色控制器是最好的选择，而其他物理引擎"
-"（PhysX）则更愿意推广Kinematic。"
+"(PhysX)则更愿意推广Kinematic。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:23
 msgid "So, what is the difference?:"
-msgstr "那么区别是什么呢？："
+msgstr "那么区别是什么呢？:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:25
+#, fuzzy
 msgid ""
-"A **dynamic character controller** uses a rigid body with infinite inertial "
-"tensor. Basically, it's a rigid body that can't rotate. Physics engines "
-"always let objects collide, then solve their collisions all together. This "
-"makes dynamic character controllers able to interact with other physics "
-"objects seamlessly (as seen in the platformer demo), however these "
-"interactions are not always predictable. Collisions also can take more than "
-"one frame to be solved, so a few collisions may seem to displace a tiny bit. "
-"Those problems can be fixed, but require a certain amount of skill."
+"A **dynamic character controller** uses a rigid body with an infinite "
+"inertia tensor. Basically, it's a rigid body that can't rotate. Physics "
+"engines always let objects collide, then solve their collisions all "
+"together. This makes dynamic character controllers able to interact with "
+"other physics objects seamlessly (as seen in the platformer demo), however "
+"these interactions are not always predictable. Collisions can also take more "
+"than one frame to be solved, so a few collisions may seem to displace a tiny "
+"bit. Those problems can be fixed, but require a certain amount of skill."
 msgstr ""
 "**动态角色控制器** 使用具有无限惯性张量的刚体。 基本上，它是一个不能旋转的刚"
 "体。 物理引擎总是让物体碰撞，然后一起解决它们的碰撞。 这使得动态角色控制器能"
-"够无缝地与其他物理对象交互（如平台演示程序中所示），但这些交互并不总是可预测"
+"够无缝地与其他物理对象交互(如平台演示程序中所示)，但这些交互并不总是可预测"
 "的。 碰撞也可能需要多个帧来解决，因此一些碰撞似乎可以取代一点点。 这些问题可"
 "以修复，但需要一定的技能。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:34
+#, fuzzy
 msgid ""
 "A **kinematic character controller** is assumed to always begin in a non-"
 "colliding state, and will always move to a non colliding state. If it starts "
-"in a colliding state, it will try to free itself (like rigid bodies do) but "
+"in a colliding state, it will try to free itself (like rigid bodies do), but "
 "this is the exception, not the rule. This makes their control and motion a "
 "lot more predictable and easier to program. However, as a downside, they "
 "can't directly interact with other physics objects (unless done by hand in "
 "code)."
 msgstr ""
-"假设**运动特征控制器**总是以非碰撞状态开始，并且将始终移动到非碰撞状态。 如果"
-"它以碰撞状态开始，它会尝试释放自己（就像僵尸一样），但这是例外，而不是规则。 "
-"这使得他们的控制和动作更加可预测并且更容易编程。 但是，作为缺点，它们不能直接"
-"与其他物理对象交互（除非在代码中手动完成）。"
+"**运动角色控制器** 被假设成以非碰撞状态开始，并且将始终移动到非碰撞状态。 如"
+"果它以碰撞状态开始，它会尝试释放自己(就像刚体一样)，但这是例外，而不是规则。 "
+"这使得他们的控制和动作更容易被预测并且更容易编程。 但是缺点是，它们不能直接与"
+"其他物理对象交互(除非在代码中手动完成)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:42
+#, fuzzy
 msgid ""
 "This short tutorial will focus on the kinematic character controller. "
-"Basically, the oldschool way of handling collisions (which is not "
+"Basically, the old-school way of handling collisions (which is not "
 "necessarily simpler under the hood, but well hidden and presented as a nice "
 "and simple API)."
 msgstr ""
-"这个简短的教程将重点介绍运动角色控制器。 基本上，oldschool处理碰撞的方式（在"
-"引擎盖下不一定简单，但隐藏得很好，并作为一个漂亮和简单的API呈现）。"
+"这个简短的教程将重点介绍运动角色控制器。 基本上，oldschool处理碰撞的方式(在引"
+"擎盖下不一定简单，但隐藏得很好，并作为一个漂亮和简单的API呈现)。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:48
 msgid "Physics process"
@@ -125,36 +132,39 @@ msgid ""
 "download:`kbscene.zip <files/kbscene.zip>`. We'll be creating a new scene "
 "for the character. Use the robot sprite and create a scene like this:"
 msgstr ""
-"要测试一下，这里是场景（来自tilemap教程）: :download:`kbscene.zip <files/"
+"要测试一下，这里是场景(来自tilemap教程): :download:`kbscene.zip <files/"
 "kbscene.zip>`。 我们将为角色创造一个新场景。 使用机器人精灵并创建一个这样的场"
-"景："
+"景:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:88
+#, fuzzy
 msgid ""
-"You'll notice that there's a warning icon next to our CollisionShape2D node, "
+"You'll notice that there's a warning icon next to our CollisionShape2D node; "
 "that's because we haven't defined a shape for it. Create a new CircleShape2D "
 "in the shape property of CollisionShape2D. Click on <CircleShape2D> to go to "
 "the options for it, and set the radius to 30:"
 msgstr ""
 "您会注意到我们的CollisionShape2D节点旁边有一个警告图标，这是因为我们没有为它"
 "定义形状。 在CollisionShape2D的shape属性中创建一个新的CircleShape2D。 单击"
-"<CircleShape2D>转到它的选项，并将半径设置为30："
+"<CircleShape2D>转到它的选项，并将半径设置为30:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:95
+#, fuzzy
 msgid ""
 "**Note: As mentioned before in the physics tutorial, the physics engine "
 "can't handle scale on most types of shapes (only collision polygons, planes "
 "and segments work), so always change the parameters (such as radius) of the "
 "shape instead of scaling it. The same is also true for the kinematic/rigid/"
-"static bodies themselves, as their scale affect the shape scale.**"
+"static bodies themselves, as their scale affects the shape scale.**"
 msgstr ""
-"**注意：如前面在物理教程中所提到的，物理引擎无法处理大多数类型的形状（只有碰"
-"撞多边形，平面和线段工作），所以总是改变形状的参数（如半径） 缩放它。 运动/刚"
-"性/静态物体本身也是如此，因为它们的尺度会影响形状比例。**"
+"**注意:如前面在物理教程中所提到的，物理引擎无法处理大多数类型的形状(只有碰撞"
+"多边形，平面和线段工作)，所以总是改变形状的参数(如半径) 缩放它。 运动/刚性/静"
+"态物体本身也是如此，因为它们的尺度会影响形状比例。**"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:102
+#, fuzzy
 msgid ""
-"Now create a script for the character, the one used as an example above "
+"Now, create a script for the character, the one used as an example above "
 "should work as a base."
 msgstr "现在为角色创建一个脚本，上面用作示例的脚本应该作为基础。"
 
@@ -167,28 +177,30 @@ msgstr ""
 "行。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:111
-msgid "Moving the Kinematic character"
+#, fuzzy
+msgid "Moving the kinematic character"
 msgstr "移动运动学角色(2D)"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:113
+#, fuzzy
 msgid ""
 "Go back to the character scene, and open the script, the magic begins now! "
 "Kinematic body will do nothing by default, but it has a useful function "
 "called :ref:`KinematicBody2D.move_and_collide() "
-"<class_KinematicBody2D_move_and_collide>`. This function takes a :ref:"
+"<class_KinematicBody2D_method_move_and_collide>`. This function takes a :ref:"
 "`Vector2 <class_Vector2>` as an argument, and tries to apply that motion to "
 "the kinematic body. If a collision happens, it stops right at the moment of "
 "the collision."
 msgstr ""
-"回到角色场景，打开脚本，魔法就开始吧！ 默认情况下，运动体不会做任何事情，但它"
-"有一个有用的函数叫做：ref：`KinematicBody2D.move_and_collide（）"
-"<class_KinematicBody2D_move_and_collide>`。 此函数将：ref：`Vector2 "
-"<class_Vector2>`作为参数，并尝试将该运动应用于运动体。 如果发生碰撞，它会在碰"
-"撞时停止。"
+"回到角色场景，打开脚本，魔法就要开始！ 默认情况下，运动体不会做任何事情，但它"
+"有一个有用的函数叫做 :ref:`KinematicBody2D."
+"move_and_collide()<class_KinematicBody2D_move_and_collide>`。 此函数将 :ref:"
+"`Vector2 <class_Vector2>` 作为参数，并尝试将该运动应用于运动体。 如果发生碰"
+"撞，它会在碰撞时停止。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:121
 msgid "So, let's move our sprite downwards until it hits the floor:"
-msgstr "所以，让我们向下移动我们的精灵，直到它发现："
+msgstr "所以，让我们向下移动我们的精灵，直到它撞上地板:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:146
 msgid ""
@@ -197,23 +209,25 @@ msgid ""
 msgstr "结果是角色会移动，但在击中地板时会停止。 很酷，对吧？"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:149
+#, fuzzy
 msgid ""
 "The next step will be adding gravity to the mix, this way it behaves a "
-"little more like an actual game character:"
-msgstr "下一步将增加重力，这样它的行为更像一个真正的游戏角色："
+"little more like a regular game character:"
+msgstr "下一步将增加重力，这样它的行为更像一个真正的游戏角色:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:185
+#, fuzzy
 msgid ""
 "Now the character falls smoothly. Let's make it walk to the sides, left and "
 "right when touching the directional keys. Remember that the values being "
-"used (for speed at least) is pixels/second."
+"used (for speed at least) are pixels/second."
 msgstr ""
 "现在角色顺利落下。 当触摸方向键时，让它向左侧和右侧行走。 请记住，所使用的值"
-"（至少速度）是像素/秒。"
+"(至少速度)是像素/秒。"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:189
 msgid "This adds simple walking support by pressing left and right:"
-msgstr "通过向左和向右按下可以增加简单的步行支持："
+msgstr "通过向左和向右按下可以增加简单的步行支持:"
 
 #: ../../docs/tutorials/physics/kinematic_character_2d.rst:254
 msgid "And give it a try."

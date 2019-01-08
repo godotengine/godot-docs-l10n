@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,6 @@ msgstr ""
 "点也会被移动。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:16
-#, fuzzy
 msgid ""
 "These nodes are placed as direct or indirect children of a :ref:`Viewport "
 "<class_Viewport>`, and will be displayed through it."
@@ -51,8 +50,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Viewport has the property :ref:`Viewport.canvas_transform "
-"<class_Viewport_canvas_transform>`, which allows to transform all the "
-"CanvasItem hierarchy by a custom :ref:`Transform2D <class_Transform2D>` "
+"<class_Viewport_property_canvas_transform>`, which allows to transform all "
+"the CanvasItem hierarchy by a custom :ref:`Transform2D <class_Transform2D>` "
 "transform. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
@@ -68,8 +67,8 @@ msgid ""
 "transform is a simple matrix that offsets the whole 2D drawing, so it's the "
 "most efficient way to do scrolling."
 msgstr ""
-"改变画布变换很有用，因为它比移动根画布项（以及整个场景）更有效。 画布变换是一"
-"个简单的矩阵，可以移动整个2D绘图，因此它可高效地实现背景滚动。"
+"改变画布变换很有用，因为它比移动根画布项(以及整个场景)更有效。 画布变换是一个"
+"简单的矩阵，可以移动整个2D绘图，因此它可高效地实现背景滚动。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:31
 msgid "Not enough..."
@@ -82,28 +81,27 @@ msgid ""
 "Examples of this are:"
 msgstr ""
 "但这还不够。 通常情况下，游戏或应用程序可能不希望通过改变画布变换来改变 *所有"
-"东西* 。 关于此的例子："
+"东西* 。 关于此的示例:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:37
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
 "stage."
-msgstr "**视差背景** ：比舞台其他部分移动得慢的背景。"
+msgstr "**视差背景** :比舞台其他部分移动得慢的背景。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:39
 msgid ""
 "**HUD**: Heads-up display, or user interface. If the world moves, the life "
 "counter, score, etc. must stay static."
 msgstr ""
-"**HUD** ：页面头部的显示或用户界面。 如果世界在移动，生命条、分数等必须保持静"
+"**HUD** :页面头部的显示或用户界面。 如果世界在移动，生命条、分数等必须保持静"
 "止。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:41
 msgid ""
 "**Transitions**: Effects used for transitions (fades, blends) may also want "
 "it to remain at a fixed location."
-msgstr ""
-"**转换** ：用于转换的效果（淡入淡出，混合）也可能希望它保留在固定位置。"
+msgstr "**转换** :用于转换的效果(淡入淡出，混合)也可能希望它保留在固定位置。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:44
 msgid "How can these problems be solved in a single scene tree?"
@@ -134,12 +132,12 @@ msgid ""
 "a CanvasLayer at layer \"-1\". The screen with the points, life counter and "
 "pause button can also be created at layer \"1\"."
 msgstr ""
-"一个例子是创建视差背景。 这可以通过层为“-1”的画布层完成。 带有点，寿命计数器"
+"一个示例是创建视差背景。 这可以通过层为“-1”的画布层完成。 带有点，寿命计数器"
 "和暂停按钮的屏幕也可以创建在层“1”的画布层中。"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:62
 msgid "Here's a diagram of how it looks:"
-msgstr "下面是它的外观图："
+msgstr "下面是它的外观图:"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:66
 msgid ""
@@ -153,13 +151,14 @@ msgid "Performance"
 msgstr "性能"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:72
+#, fuzzy
 msgid ""
 "Even though there shouldn't be any performance limitation, it is not advised "
 "to use excessive amount of layers to arrange drawing order of nodes. The "
 "most optimal way will always be arranging them by tree order. 2d nodes also "
 "have a property for controlling their drawing order (see :ref:`Node2D."
-"z_index <class_Node2D_z_index>`)."
+"z_index <class_Node2D_property_z_index>`)."
 msgstr ""
 "即使不存在任何性能限制，也不建议使用过多的层来排列节点的绘制顺序。 最佳方式始"
-"终是按树顺序排列它们。 2d节点还具有控制其绘制顺序的属性（参见 :ref:`Node2D."
-"z_index <class_Node2D_z_index>` ）。"
+"终是按树顺序排列它们。 2d节点还具有控制其绘制顺序的属性(参见 :ref:`Node2D."
+"z_index <class_Node2D_z_index>` )。"

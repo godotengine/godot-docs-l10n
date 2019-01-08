@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,8 +29,8 @@ msgid ""
 "feature would work best with the engine."
 msgstr ""
 "与Godot中的所有内容一样，我们优先考虑好的体验而不是复制或集成可能不适合当前工"
-"作流的第三方解决方案。这导致我们编写了自己的版本，说明我们相信该特性将如何与"
-"引擎最佳配合。"
+"作流程的第三方解决方案。这导致我们编写了自己的版本，说明我们相信该特性将如何"
+"与引擎最佳配合。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:10
 msgid ""
@@ -47,10 +47,11 @@ msgid ""
 msgstr ""
 "事实上，可视化脚本非常好地集成到了Godot中，以至于很难相信它只是在3.0版本中添"
 "加的。这是因为，在编辑时，Godot面板和窗口的其余部分就像一个调色板，您可以从中"
-"将各种信息拖放到脚本画布中："
+"将各种信息拖放到脚本画布中:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:23
-msgid "Creating a Script"
+#, fuzzy
+msgid "Creating a script"
 msgstr "创建脚本"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:25
@@ -59,26 +60,26 @@ msgid ""
 "any node in the scene and push the \"New Script\" button at the top right "
 "corner of the Scene Tree dock:"
 msgstr ""
-"创建脚本的工作原理与其他脚本语言相同：选择场景中的任何节点，然后按场景树坞右"
-"上角的“New Script”按钮："
+"创建脚本的工作原理与其他脚本语言相同:选择场景中的任何节点，然后按场景树面板右"
+"上角的“New Script”按钮:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:31
 msgid ""
 "Once it opens, the script type \"Visual Script\" must be selected from the "
 "drop down list. The script extension must be \".vs\" (for Visual Script!)."
 msgstr ""
-"打开后，必须从下拉列表中选择脚本类型“Visual Script”。脚本扩展必须是“.vs”（对"
-"于VisualScript！）."
+"打开后，必须从下拉列表中选择脚本类型“Visual Script”。脚本扩展必须是“.vs”(对于"
+"VisualScript！)."
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:37
-#, fuzzy
 msgid ""
 "Finally, the Script Editor will open, allowing you to start editing the "
 "visual script:"
-msgstr "最后，脚本编辑器将打开，允许开始编辑可视脚本："
+msgstr "最后，脚本编辑器将打开，允许开始编辑可视脚本:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:43
-msgid "Adding a Function"
+#, fuzzy
+msgid "Adding a function"
 msgstr "添加函数"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:45
@@ -105,10 +106,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:53
 msgid "There are three main ways to add functions in a script:"
-msgstr "在脚本中添加函数的主要方法有三种："
+msgstr "在脚本中添加函数的主要方法有三种:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:56
-msgid "Overriding a Virtual Function"
+#, fuzzy
+msgid "Overriding a virtual function"
 msgstr "重写虚函数"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:58
@@ -119,8 +121,8 @@ msgid ""
 "are listed when pressing the \"Override\" icon in the member panel:"
 msgstr ""
 "Godot中大多数类型的节点和其他类型的对象都包含虚拟函数。这些函数在发生某些事情"
-"时将被调用（运行代码），并且可以在引用中查找。当按下成员面板中的“覆盖”图标"
-"时，将列出虚拟功能："
+"时将被调用(运行代码)，并且可以在引用中查找。当按下成员面板中的“覆盖”图标时，"
+"将列出虚拟功能:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:65
 msgid ""
@@ -129,11 +131,11 @@ msgid ""
 "will be overridden:"
 msgstr ""
 "在下面的示例中，当节点被加载并添加到运行场景时，将执行一个函数。为此，将重写 "
-"_ready() 虚拟方法："
+"_ready() 虚拟方法:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:71
 msgid "Finally, a canvas appears for this function, showing the override:"
-msgstr "最后，一个画布出现在这个函数上，显示了覆盖："
+msgstr "最后，一个画布出现在这个函数上，显示了覆盖:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:76
 msgid ""
@@ -141,10 +143,11 @@ msgid ""
 "node where such value is supposed to be provided:"
 msgstr ""
 "由于一些函数期望您返回一个值，因此它们还将添加一个返回节点，其中应该提供这样"
-"的值："
+"的值:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:83
-msgid "Connecting a Signal to a Function"
+#, fuzzy
+msgid "Connecting a signal to a function"
 msgstr "将信号连接到函数上"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:85
@@ -153,7 +156,7 @@ msgid ""
 "all sorts of things. A typical example would be a button that emits a "
 "\"pressed\" signal when actually pressed."
 msgstr ""
-"树中的节点在发生某些事情时发出信号。Godot用各种各样的信号。一个典型的例子就是"
+"树中的节点在发生某些事情时发出信号。Godot用各种各样的信号。一个典型的示例就是"
 "按钮，当实际按下时，它会发出“按下”的信号。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:88
@@ -163,7 +166,7 @@ msgid ""
 "signal:"
 msgstr ""
 "为此，必须选择一个节点并打开节点选项卡。这将允许检查信号。一旦它们被显示，连"
-"接“按下”信号："
+"接“按下”信号:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:94
 msgid ""
@@ -172,22 +175,21 @@ msgid ""
 "receive the signal:"
 msgstr ""
 "这将打开连接对话框。在这个对话框中，您必须选择信号将被连接到的节点，以及接收"
-"信号的函数："
+"信号的函数:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:100
 msgid ""
 "If this is done right, a new function will be created in our script and a "
 "signal will automatically be connected to it:"
 msgstr ""
-"如果完全按照这样做，一个新的函数将创建在我们的脚本中和一个信号将自动连接到"
-"它："
+"如果完全按照这样做，一个新的函数将创建在我们的脚本中和一个信号将自动连接到它:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:107
-msgid "Creating a Function Manually"
+#, fuzzy
+msgid "Creating a function manually"
 msgstr "手动创建函数"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:109
-#, fuzzy
 msgid ""
 "The last way to create functions is to do it manually. In general, this is "
 "not as common unless you really need it. Custom functions work when another "
@@ -195,21 +197,21 @@ msgid ""
 "breaking a larger function up into several manageable chunks and reusing "
 "your visual code."
 msgstr ""
-"创建函数的最后一种方法是手动完成。一般来说，除非你真的需要，否则这是不常见"
-"的。当另一个（或同一个）脚本手动调用它们时，自定义函数会起作用。这样做的主要"
-"用例是将一个函数分成多个，或者重用您的可视化代码。"
+"创建函数的最后一种方法是手动完成。一般来说，除非您真的需要，否则这是不常见"
+"的。当另一个(或同一个)脚本手动调用它们时，自定义函数会起作用。这样做的主要用"
+"例是将一个函数分成多个，或者重用您的可视化代码。"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:113
 msgid ""
 "To create a function manually, push the big \"Plus\" button, and a new "
 "function will be added with a default name:"
-msgstr "要手动创建函数，请按下“Plus”按钮，然后将添加一个具有默认名称的新函数："
+msgstr "要手动创建函数，请按下“Plus”按钮，然后将添加一个具有默认名称的新函数:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:119
 msgid ""
 "This will add a new function, which can be renamed by simply double clicking "
 "its name:"
-msgstr "这将添加一个新函数，只需双击其名称即可重命名该函数："
+msgstr "这将添加一个新函数，只需双击其名称即可重命名该函数:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:125
 msgid ""
@@ -217,8 +219,8 @@ msgid ""
 "when you call this function), simply click the Function node and check the "
 "inspector:"
 msgstr ""
-"要编辑此函数得到的“参数”（调用此函数时传递给它的值），只需单击“函数”节点并检"
-"查属性面板："
+"要编辑此函数得到的“参数”(调用此函数时传递给它的值)，只需单击“函数”节点并检查"
+"属性面板:"
 
 #: ../../docs/getting_started/scripting/visual_script/getting_started.rst:131
 msgid "More on that will be explained later in this document."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,12 +129,13 @@ msgid "Vector operations"
 msgstr "Operaciones Vectoriales"
 
 #: ../../docs/tutorials/math/vector_math.rst:60
+#, fuzzy
 msgid ""
 "You can use either method (x and y coordinates or angle and magnitude) to "
-"refer to a vector, but for convenience programmers typically use the "
-"coordinate notation. For example, in Godot the origin is the top-left corner "
-"of the screen, so to place a 2D node named ``Node2D`` 400 pixels to the "
-"right and 300 pixels down, use the following code:"
+"refer to a vector, but for convenience, programmers typically use the "
+"coordinate notation. For example, in Godot, the origin is the top-left "
+"corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to "
+"the right and 300 pixels down, use the following code:"
 msgstr ""
 "Se puede utilizar cualquiera de los dos métodos (coordenadas x e y o ángulo "
 "y magnitud) para referirse a un vector, pero por conveniencia los "
@@ -144,10 +145,11 @@ msgstr ""
 "píxeles hacia abajo, usa el siguiente código:"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
+#, fuzzy
 msgid ""
 "Godot supports both :ref:`Vector2 <class_Vector2>` and :ref:`Vector3 "
-"<class_Vector3>` for 2D and 3D usage respectively. The same mathematical "
-"rules discussed in this article apply for both types."
+"<class_Vector3>` for 2D and 3D usage, respectively. The same mathematical "
+"rules discussed in this article apply to both types."
 msgstr ""
 "Godot soporta tanto :ref:`Vector2 <class_Vector2>` como `ref:`Vector3 "
 "<class_Vector3>` para uso 2D y 3D respectivamente. Las mismas reglas "
@@ -454,11 +456,12 @@ msgid "Cross product"
 msgstr "Producto vectorial"
 
 #: ../../docs/tutorials/math/vector_math.rst:341
+#, fuzzy
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
 "However, the result of the cross product is a vector with a direction that "
 "is perpendicular to both. Its magnitude depends on their relative angle. If "
-"two vectors are parallel, the result of their cross product will be null "
+"two vectors are parallel, the result of their cross product will be a null "
 "vector."
 msgstr ""
 "Al igual que el producto de puntos, el **producto vectorial** es una "
@@ -521,10 +524,11 @@ msgid "Pointing to a target"
 msgstr "Apuntar a un objetivo"
 
 #: ../../docs/tutorials/math/vector_math.rst:420
+#, fuzzy
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
-"angle between two vectors. However, in 3D this is not enough information. We "
-"also need to know what axis to rotate around. We can find that by "
+"angle between two vectors. However, in 3D, this is not enough information. "
+"We also need to know what axis to rotate around. We can find that by "
 "calculating the cross product of the current facing direction and the target "
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid ""
 "the style of game you're making, you may have special requirements, but in "
 "general the movement in most 2D games is based on a small number of designs."
 msgstr ""
-"每个初学者都会说：“我如何移动我的游戏角色呢？” 根据您正在制作的游戏风格，您可"
+"每个初学者都会说:“我如何移动我的游戏角色呢？” 根据您正在制作的游戏风格，您可"
 "能有特殊要求，但一般来说，大多数2D游戏的运动都只需要少量的设计。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:13
@@ -41,7 +41,7 @@ msgid ""
 "well."
 msgstr ""
 "对于这些示例，我们将使用 :ref:`KinematicBody2D <class_KinematicBody2D>` ，同"
-"时这些原则也适用于其他节点类型（Area2D，RigidBody2D）。"
+"时这些原则也适用于其他节点类型(Area2D，RigidBody2D)。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:17
 msgid "Setup"
@@ -55,8 +55,8 @@ msgid ""
 "any other 2D image you have."
 msgstr ""
 "以下每个示例都使用相同的场景设置。 从带有 ``Sprite`` 和 ``CollisionShape2D`` "
-"两个子节点的 ``KinematicBody2D`` 开始。 您可以使用Godot图标（“icon.png”）作为"
-"精灵的纹理或使用其他任何2D图像。"
+"两个子节点的 ``KinematicBody2D`` 开始。 您可以使用Godot图标(“icon.png”)作为精"
+"灵的纹理或使用其他任何2D图像。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:23
 msgid ""
@@ -65,7 +65,7 @@ msgid ""
 "details):"
 msgstr ""
 "打开 ``Project -> Project Settings`` 并选择 “Input Map” 选项卡。 添加以下输入"
-"操作（相关详细信息，请参阅 :ref:`InputEvent <doc_inputevent>` ）："
+"操作(相关详细信息，请参阅 :ref:`InputEvent <doc_inputevent>` ):"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:29
 msgid "8-way movement"
@@ -78,12 +78,12 @@ msgid ""
 "way movement\" comes from the fact that the player can move diagonally by "
 "pressing two keys at the same time."
 msgstr ""
-"在本情况下，您希望用户按下四个方向键（向上/向左/向下/向右或W / A / S / D）并"
-"沿所选方向移动。 “8向移动”意味着玩家可以通过同时按下两个键实现对角移动。"
+"在本情况下，您希望用户按下四个方向键(向上/向左/向下/向右或W / A / S / D)并沿"
+"所选方向移动。 “8向移动”意味着游戏角色可以通过同时按下两个键实现对角移动。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:37
 msgid "Add a script to the kinematic body and add the following code:"
-msgstr "将脚本添加到运动物体上，并添加以下代码："
+msgstr "将脚本添加到运动物体上，并添加以下代码:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:104
 msgid ""
@@ -137,7 +137,6 @@ msgstr ""
 "并导致没有旋转。 旋转直接应用于物体的 ``rotation`` 属性。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:200
-#, fuzzy
 msgid ""
 "To set the velocity, we use the ``Vector2.rotated()`` method, so that it "
 "points in the same direction as the body. ``rotated()`` is a useful vector "
@@ -145,12 +144,12 @@ msgid ""
 "need to apply trigonometric functions."
 msgstr ""
 "为了设置速度，我们使用 ``Vector2.rotated()`` 方法，使它的指向与物体方向相"
-"同。 ``rotated()``  是一个很有用的向量函数，你可以在许多情况下使用它，否则你"
-"就需要用到三角函数。"
+"同。 ``rotated()`` 是一个很有用的向量函数，您可以在许多情况下使用它，否则您就"
+"需要用到三角函数。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:206
 msgid "Rotation + movement (mouse)"
-msgstr "旋转+移动（鼠标）"
+msgstr "旋转+移动(鼠标)"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:208
 msgid ""
@@ -170,7 +169,7 @@ msgid ""
 msgstr ""
 "这里我们用到 :ref:`Node2D <class_Node2D>` 中的 ``look_at()`` 方法，使游戏角色"
 "朝向给定的位置。 如果没有此函数，为获得相同的效果，您可能需要像下面这样设置角"
-"度："
+"度:"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:283
 msgid "Click-and-move"
@@ -205,7 +204,7 @@ msgid ""
 "This technique can also be used as the basis of a \"following\" character. "
 "The ``target`` position can be that of any object you want to move to."
 msgstr ""
-"该技术也可以用到“跟随”游戏角色中。  ``目标`` 位置可以是移动中的任何对象的位"
+"该技术也可以用到“跟随”游戏角色中。 ``目标`` 位置可以是移动中的任何对象的位"
 "置。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:354
@@ -219,7 +218,7 @@ msgid ""
 "make."
 msgstr ""
 "您可能会发现这些代码示例可用到您自己的项目中。 请随意使用它们并试验它们，看看"
-"你能做些什么。"
+"您能做些什么。"
 
 #: ../../docs/tutorials/2d/2d_movement.rst:359
 msgid ""

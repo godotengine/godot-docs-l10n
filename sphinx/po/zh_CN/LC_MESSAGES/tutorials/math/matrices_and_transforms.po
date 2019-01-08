@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid ""
 "This tutorial will be about *transformations* and will cover a little about "
 "matrices (but not in-depth)."
-msgstr "本教程将介绍 *转换* 并将介绍一些关于矩阵的内容（但不深入）。"
+msgstr "本教程将介绍 *转换* 并将介绍一些关于矩阵的内容(但不深入)。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:15
 msgid ""
@@ -47,7 +47,7 @@ msgstr "转换大部分时间用于平移、旋转和缩放，因此这里将优
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:19
 msgid "Oriented coordinate system (OCS)"
-msgstr "定向坐标系（OCS）"
+msgstr "定向坐标系(OCS)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:21
 msgid ""
@@ -73,8 +73,8 @@ msgid ""
 "through a 3D DCC tool such as Blender, Max, Maya, etc."
 msgstr ""
 "我们应该意识到，在某个时刻，有人设计了这个宇宙飞船。无论是用于绘图中的2D，如"
-"Paint.net、Gimp、Photoshop等，还是通过3DDCC工具（如Blender、Max、Maya等）进行"
-"3D处理。"
+"Paint.net、Gimp、Photoshop等，还是通过3DDCC工具(如Blender、Max、Maya等)进行3D"
+"处理。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:35
 msgid ""
@@ -91,7 +91,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:43
 msgid "So, let's recall again that the ship was somewhere in space:"
-msgstr "那么，让我们再次回忆一下这艘船在太空的某个地方："
+msgstr "那么，让我们再次回忆一下这艘船在太空的某个地方:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:47
 msgid ""
@@ -110,7 +110,7 @@ msgid ""
 "their current position:"
 msgstr ""
 "但是变换是描述这个过程的术语过于泛化。为了解决这个难题，我们将将船只的原始设"
-"计位置叠加在当前位置："
+"计位置叠加在当前位置:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:58
 msgid ""
@@ -149,7 +149,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:89
 msgid "Doing this to the selected point will move it back to the center:"
-msgstr "对选定点执行此操作将将其移回中心："
+msgstr "对选定点执行此操作将将其移回中心:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:93
 msgid ""
@@ -215,8 +215,8 @@ msgid ""
 "*these directions*.\""
 msgstr ""
 "基础更有趣。 基础是来自新的转换位置的OCS中的X和Y的方向。 它以二维或三维方式告"
-"知已发生的变化。 原点（偏移）和基础（方向）通信“嘿，你的设计的原始X轴和Y轴正"
-"好 *在这里* ，指向 *这些方向* 。”"
+"知已发生的变化。 原点(偏移)和基础(方向)通信“嘿，您的设计的原始X轴和Y轴正好 *"
+"在这里* ，指向 *这些方向* 。”"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:139
 msgid ""
@@ -231,7 +231,7 @@ msgid ""
 "of a matrix."
 msgstr ""
 "向量在矩阵中水平地向上。 现在的下一个问题是......这个矩阵是什么东西？ 好吧，"
-"我们假设你从来没有听说过矩阵。"
+"我们假设您从来没有听说过矩阵。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:149
 msgid "Transforms in Godot"
@@ -244,7 +244,7 @@ msgid ""
 "be a lot simpler to understand after completing this tutorial. We'll just "
 "explain how to use transforms."
 msgstr ""
-"本教程不会深入解释矩阵数学（及其操作），只是实际应用。 网上有很多关于矩阵的资"
+"本教程不会深入解释矩阵数学(及其操作)，只是实际应用。 网上有很多关于矩阵的资"
 "料，但是完成本教程后应该会加深对矩阵理解。 我们将解释如何使用变换。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:157
@@ -267,7 +267,7 @@ msgid ""
 "Most operations will be explained with this datatype (Transform2D), but the "
 "same logic applies to 3D."
 msgstr ""
-"大多数操作将使用此数据类型（Transform2D）进行说明，但相同的逻辑适用于3D。"
+"大多数操作将使用此数据类型(Transform2D)进行说明，但相同的逻辑适用于3D。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:183
 msgid "Identity"
@@ -275,19 +275,19 @@ msgstr "单位矩阵"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:185
 msgid "An important transform is the \"identity\" matrix. This means:"
-msgstr "一个重要的变换是“单位”矩阵。 这意味着："
+msgstr "一个重要的变换是“单位”矩阵。 这意味着:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:187
 msgid "'X' Points right: Vector2(1,0)"
-msgstr "'X' 指向右侧：Vector2（1,0）"
+msgstr "X' 指向右侧:Vector2(1,0)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:188
 msgid "'Y' Points up (or down in pixels): Vector2(0,1)"
-msgstr "'Y'指向上方（或以像素为单位时，表示指向下方）：Vector2（0,1）"
+msgstr "Y'指向上方(或以像素为单位时，表示指向下方):Vector2(0,1)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:189
 msgid "'Origin' is the origin Vector2(0,0)"
-msgstr "'Origin'是原点 Vector2（0,0）"
+msgstr "'Origin'是原点 Vector2(0,0)"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:193
 msgid ""
@@ -308,7 +308,7 @@ msgstr "旋转"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:225
 msgid "Rotating Transform2D is done by using the \"rotated\" function:"
-msgstr "通过使用 \"rotated\" 函数完成旋转Transform2D："
+msgstr "通过使用 \"rotated\" 函数完成旋转Transform2D:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:241
 msgid "Translation"
@@ -318,26 +318,27 @@ msgstr "平移"
 msgid ""
 "There are two ways to translate a Transform2D, the first one is moving the "
 "origin:"
-msgstr "有两种方法可以平移Transform2D，第一种方法是移动原点："
+msgstr "有两种方法可以平移Transform2D，第一种方法是移动原点:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:263
 msgid "This will always work in global coordinates."
 msgstr "这将始终在全局坐标系中工作。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:265
+#, fuzzy
 msgid ""
 "If instead, translation is desired in *local* coordinates of the matrix "
 "(towards where the *basis* is oriented), there is the :ref:`Transform2D."
-"translated() <class_Transform2D_translated>` method:"
+"translated() <class_Transform2D_method_translated>` method:"
 msgstr ""
-"相反，如果需要在矩阵的 *局部* 坐标系中进行平移（朝向 *基* 的方向），则可以使"
-"用 :ref:`Transform2D.translated() <class_Transform2D_translated>` 方法："
+"相反，如果需要在矩阵的 *局部* 坐标系中进行平移(朝向 *基* 的方向)，则可以使"
+"用 :ref:`Transform2D.translated() <class_Transform2D_translated>` 方法:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:287
 msgid ""
 "You could also transform the global coordinates to local coordinates "
 "manually:"
-msgstr "您也可以手动将全局坐标系转换为局部坐标系："
+msgstr "您也可以手动将全局坐标系转换为局部坐标系:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:298
 msgid ""
@@ -355,15 +356,16 @@ msgid ""
 msgstr "有用于在局部坐标和全局坐标之间进行转换的辅助方法。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:305
+#, fuzzy
 msgid ""
-"There are :ref:`Node2D.to_local() <class_Node2D_to_local>` and :ref:`Node2D."
-"to_global() <class_Node2D_to_global>` for 2D as well as :ref:`Spatial."
-"to_local() <class_Spatial_to_local>` and :ref:`Spatial.to_global() "
-"<class_Spatial_to_global>` for 3D."
+"There are :ref:`Node2D.to_local() <class_Node2D_method_to_local>` and :ref:"
+"`Node2D.to_global() <class_Node2D_method_to_global>` for 2D as well as :ref:"
+"`Spatial.to_local() <class_Spatial_method_to_local>` and :ref:`Spatial."
+"to_global() <class_Spatial_method_to_global>` for 3D."
 msgstr ""
 "有用于2D的 :ref:`Node2D.to_local() <class_Node2D_to_local>` 和 :ref:`Node2D."
 "to_global() <class_Node2D_to_global>` 以及用于3D的 :ref:`Spatial.to_local() "
-"<class_Spatial_to_local>` 和  :ref:`Spatial.to_global() "
+"<class_Spatial_to_local>` 和 :ref:`Spatial.to_global() "
 "<class_Spatial_to_global>` 。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:309
@@ -376,8 +378,8 @@ msgid ""
 "vector (X vector by x component of the scale, Y vector by y component of the "
 "scale). It will leave the origin alone:"
 msgstr ""
-"矩阵也可以缩放。 缩放将基矢量乘以矢量（X矢量乘标量的x分量，Y矢量乘标量的y分"
-"量）。 它让原点不变："
+"矩阵也可以缩放。 缩放将基向量乘以向量(X向量乘标量的x分量，Y向量乘标量的y分"
+"量)。 它让原点不变:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:330
 msgid ""
@@ -386,7 +388,7 @@ msgid ""
 "planet long enough, a good reference of how transform works is this:"
 msgstr ""
 "矩阵中的这些操作是累积的。 这意味着每个操作都相对于前一个开始的。 对于那些一"
-"直生活在这个星球上足够长的人来说，变换如何工作的一个很好的参考是："
+"直生活在这个星球上足够长的人来说，变换如何工作的一个很好的参考是:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:337
 msgid ""
@@ -394,8 +396,8 @@ msgid ""
 "inside (and you are likely learning this many years *after* discovering "
 "Santa is not real)."
 msgstr ""
-"矩阵与乌龟类似。 乌龟可能内部有一个矩阵（你可能需要在发现圣诞老人是假的后，再"
-"过许多年才理解到这句话）。"
+"矩阵与乌龟类似。 乌龟可能内部有一个矩阵(您可能需要在发现圣诞老人是假的后，再"
+"过许多年才理解到这句话)。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:342
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:703
@@ -408,12 +410,12 @@ msgid ""
 "position (either 2D or 3D) from \"designer\" coordinate system to the OCS, "
 "the \"xform\" method is used."
 msgstr ""
-"变换是在坐标系之间切换的行为。 要将位置（2D或3D）从“设计者”坐标系转换为OCS，"
-"请使用“xform”方法。"
+"变换是在坐标系之间切换的行为。 要将位置(2D或3D)从“设计者”坐标系转换为OCS，请"
+"使用“xform”方法。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:357
 msgid "And only for basis (no translation):"
-msgstr "仅限基（无平移）："
+msgstr "仅限基(无平移):"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:369
 msgid "Inverse transform"
@@ -423,11 +425,11 @@ msgstr "逆变换"
 msgid ""
 "To do the opposite operation (what we did up there with the rocket), the "
 "\"xform_inv\" method is used:"
-msgstr "为了进行相反的操作（我们用火箭做了什么），使用了“xform_inv”方法："
+msgstr "为了进行相反的操作(我们用火箭做了什么)，使用了“xform_inv”方法:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:383
 msgid "Only for Basis:"
-msgstr "仅适用于基："
+msgstr "仅适用于基:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:395
 msgid "Orthonormal matrices"
@@ -438,8 +440,8 @@ msgid ""
 "However, if the matrix has been scaled (vectors are not unit length), or the "
 "basis vectors are not orthogonal (90°), the inverse transform will not work."
 msgstr ""
-"但是，如果矩阵已被缩放（向量不是单位长度），或者基向量不是正交的（90°），则逆"
-"变换将不起作用。"
+"但是，如果矩阵已被缩放(向量不是单位长度)，或者基向量不是正交的(90°)，则逆变换"
+"将不起作用。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:401
 msgid ""
@@ -452,7 +454,7 @@ msgstr ""
 msgid ""
 "The transform, or inverse transform of an identity matrix will return the "
 "position unchanged:"
-msgstr "单位矩阵的变换或逆变换将返回未改变的位置："
+msgstr "单位矩阵的变换或逆变换将返回未改变的位置:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:419
 msgid "Affine inverse"
@@ -466,11 +468,11 @@ msgid ""
 "method:"
 msgstr ""
 "仿射逆是一个矩阵，它执行另一个矩阵的逆运算，无论矩阵是否具有比例或者轴向量不"
-"是正交的。 使用affine_inverse（）方法计算仿射逆："
+"是正交的。 使用affine_inverse()方法计算仿射逆:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:441
 msgid "If the matrix is orthonormal, then:"
-msgstr "如果矩阵是正交的，那么："
+msgstr "如果矩阵是正交的，那么:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:459
 msgid "Matrix multiplication"
@@ -480,7 +482,7 @@ msgstr "矩阵乘法"
 msgid ""
 "Matrices can be multiplied. Multiplication of two matrices \"chains"
 "\" (concatenates) their transforms."
-msgstr "矩阵可以做乘法。 两个矩阵的乘法 “链”（连接）它们的变换。"
+msgstr "矩阵可以做乘法。 两个矩阵的乘法 “链”(连接)它们的变换。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:464
 msgid ""
@@ -489,19 +491,19 @@ msgstr "但是，按照惯例，乘法可以交换顺序。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:467
 msgid "Example:"
-msgstr "例："
+msgstr "例:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:478
 msgid "To make it a little clearer, this:"
-msgstr "为了更清楚一点，这个："
+msgstr "为了更清楚一点，这个:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:491
 msgid "Is the same as:"
-msgstr "与下面这个是相同的："
+msgstr "与下面这个是相同的:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:504
 msgid "However, this is not the same:"
-msgstr "实际上，这是不一样的："
+msgstr "实际上，这是不一样的:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:517
 msgid "Because in matrix math, A * B is not the same as B * A."
@@ -513,7 +515,7 @@ msgstr "乘以逆矩阵"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:522
 msgid "Multiplying a matrix by its inverse, results in identity:"
-msgstr "矩阵乘以逆，将得到单位矩阵："
+msgstr "矩阵乘以逆，将得到单位矩阵:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:536
 msgid "Multiplication by identity"
@@ -521,7 +523,7 @@ msgstr "乘以单位矩阵"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:538
 msgid "Multiplying a matrix by identity, will result in the unchanged matrix:"
-msgstr "矩阵乘以单位矩阵将得到矩阵本身："
+msgstr "矩阵乘以单位矩阵将得到矩阵本身:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:552
 msgid "Matrix tips"
@@ -533,21 +535,21 @@ msgid ""
 "reversed! To obtain the global transform for a hierarchy, do:"
 msgstr ""
 "使用变换层次结构时，请记住矩阵乘法是相反的！ 要获取层次结构的全局变换，请执行"
-"以下操作："
+"以下操作:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:566
 msgid "For 3 levels:"
-msgstr "对3个级别的情况："
+msgstr "对3个级别的情况:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:577
 msgid ""
 "To make a matrix relative to the parent, use the affine inverse (or regular "
 "inverse for orthonormal matrices)."
-msgstr "要制作相对于父级的矩阵，请使用仿射逆（或正交矩阵的常规逆）。"
+msgstr "要制作相对于父级的矩阵，请使用仿射逆(或正交矩阵的常规逆)。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:591
 msgid "Revert it just like the example above:"
-msgstr "恢复它就像上面的例子："
+msgstr "恢复它就像上面的示例:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:604
 msgid ""
@@ -568,25 +570,26 @@ msgstr ""
 "量，以及用于原点的额外向量。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:616
+#, fuzzy
 msgid ""
-"Godot has a special type for a 3x3 matrix, named :ref:`Basis <class_basis>`. "
+"Godot has a special type for a 3x3 matrix, named :ref:`Basis <class_Basis>`. "
 "It can be used to represent a 3D rotation and scale. Sub vectors can be "
 "accessed as:"
 msgstr ""
 "Godot有一个特殊类型的3x3矩阵，命名为 :ref:`Basis <class_basis>` 。 它可用于表"
-"示3D旋转和缩放。 子向量可以像这样被访问："
+"示3D旋转和缩放。 子向量可以像这样被访问:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:635
 msgid "Or, alternatively as:"
-msgstr "或者，像这样："
+msgstr "或者，像这样:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:652
 msgid "The Identity Basis has the following values:"
-msgstr "单位基具有以下值："
+msgstr "单位基具有以下值:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:656
 msgid "And can be accessed like this:"
-msgstr "并且可以像这样访问："
+msgstr "并且可以像这样访问:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:680
 msgid "Rotation in 3D"
@@ -598,7 +601,7 @@ msgid ""
 "same), because rotation is an implicit 2D operation. To rotate in 3D, an "
 "*axis*, must be picked. Rotation, then, happens around this axis."
 msgstr ""
-"3D中的旋转比2D中的旋转更复杂（平移和缩放是相同复杂度），因为旋转是个隐式2D操"
+"3D中的旋转比2D中的旋转更复杂(平移和缩放是相同复杂度)，因为旋转是个隐式2D操"
 "作。 要在3D中旋转，必须选取 *轴* 。 然后，围绕该轴旋转。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:686
@@ -606,7 +609,7 @@ msgid ""
 "The axis for the rotation must be a *normal vector*. As in, a vector that "
 "can point to any direction, but length must be one (1.0)."
 msgstr ""
-"旋转轴必须是 *法线向量* 。 就像可以指向任何方向的矢量，但长度必须为1（1.0）。"
+"旋转轴必须是 *法线向量* 。 就像可以指向任何方向的向量，但长度必须为1(1.0)。"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:705
 msgid ""
@@ -614,7 +617,7 @@ msgid ""
 "<class_Transform>` type. Transform has two members:"
 msgstr ""
 "为了将最终组件添加到混合中，Godot提供了 :ref:`Transform <class_Transform>` 类"
-"型。 变换有两个成员："
+"型。 变换有两个成员:"
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:708
 msgid "*basis* (of type :ref:`Basis <class_Basis>`)"
@@ -634,4 +637,4 @@ msgstr ""
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:715
 msgid "An example:"
-msgstr "一个例子："
+msgstr "一个示例:"

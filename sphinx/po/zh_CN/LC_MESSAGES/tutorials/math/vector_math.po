@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgid ""
 "is essential to becoming a strong game developer."
 msgstr ""
 "本教程是一个简短而实用的线性代数介绍，因为它适用于游戏开发。线性代数是研究向"
-"量及其用途的学科。矢量在二维和三维开发中都有许多应用，Godot对它们的应用非常广"
+"量及其用途的学科。向量在二维和三维开发中都有许多应用，Godot对它们的应用非常广"
 "泛。要成为一名优秀的游戏开发者，对向量数学的理解是必不可少的。"
 
 #: ../../docs/tutorials/math/vector_math.rst:15
@@ -48,7 +48,7 @@ msgstr ""
 
 #: ../../docs/tutorials/math/vector_math.rst:21
 msgid "Coordinate systems (2D)"
-msgstr "坐标系统（2D）"
+msgstr "坐标系统(2D)"
 
 #: ../../docs/tutorials/math/vector_math.rst:23
 msgid ""
@@ -66,8 +66,8 @@ msgid ""
 "in math class. However, this is common in most computer graphics "
 "applications."
 msgstr ""
-"如果你是计算机图形学的新手，你可能会觉得很奇怪， ``y`` 轴的正方向是 **向下"
-"**，而不是向上(你在数学课上学到的就像那样)。然而，这在大多数计算机图形应用程"
+"如果您是计算机图形学的新手，您可能会觉得很奇怪， ``y`` 轴的正方向是 **向下"
+"**，而不是向上(您在数学课上学到的就像那样)。然而，这在大多数计算机图形应用程"
 "序中是常见的。"
 
 #: ../../docs/tutorials/math/vector_math.rst:34
@@ -90,8 +90,8 @@ msgid ""
 "origin."
 msgstr ""
 "这是一个 **向量** 。向量表示许多有用的信息。除了告诉我们点在 ``(4, 3)`` 之"
-"外，我们还可以把它看成角度  ``θ``  和长度(或幅度) ``m``。在这种情况下，箭头是"
-"一个 **位置向量** -它表示空间中相对于原点的位置。"
+"外，我们还可以把它看成角度 ``θ`` 和长度(或幅度) ``m``。在这种情况下，箭头是一"
+"个 **位置向量** -它表示空间中相对于原点的位置。"
 
 #: ../../docs/tutorials/math/vector_math.rst:47
 msgid ""
@@ -99,8 +99,8 @@ msgid ""
 "**relative** direction and magnitude. There is no concept of a vector's "
 "position. The following two vectors are identical:"
 msgstr ""
-"关于向量，需要考虑的一个重要点是它们仅表示**相对**方向和大小。没有一个向量的"
-"位置的概念。以下两个向量相同："
+"关于向量，需要考虑的一个重要点是它们仅表示 **相对** 方向和大小。没有一个向量"
+"的位置的概念。以下两个向量相同:"
 
 #: ../../docs/tutorials/math/vector_math.rst:53
 msgid ""
@@ -108,7 +108,7 @@ msgid ""
 "starting point. It does not matter where on the plane you draw the vector, "
 "it always represents a relative direction and magnitude."
 msgstr ""
-"这两个向量都表示向右4个单位，在某个起始点以下3个单位。不管你在平面上画哪个向"
+"这两个向量都表示向右4个单位，在某个起始点以下3个单位。不管您在平面上画哪个向"
 "量，它总是代表一个相对的方向和大小。"
 
 #: ../../docs/tutorials/math/vector_math.rst:58
@@ -116,22 +116,24 @@ msgid "Vector operations"
 msgstr "向量运算"
 
 #: ../../docs/tutorials/math/vector_math.rst:60
+#, fuzzy
 msgid ""
 "You can use either method (x and y coordinates or angle and magnitude) to "
-"refer to a vector, but for convenience programmers typically use the "
-"coordinate notation. For example, in Godot the origin is the top-left corner "
-"of the screen, so to place a 2D node named ``Node2D`` 400 pixels to the "
-"right and 300 pixels down, use the following code:"
+"refer to a vector, but for convenience, programmers typically use the "
+"coordinate notation. For example, in Godot, the origin is the top-left "
+"corner of the screen, so to place a 2D node named ``Node2D`` 400 pixels to "
+"the right and 300 pixels down, use the following code:"
 msgstr ""
 "您可以使用任意一种方法(x和y坐标或角度和大小)来引用向量，但是为了方便起见，程"
 "序员通常使用坐标表示法。例如，在Godot中，原点是屏幕左上角，因此要将一个名为"
 "``Node2D`` 的2D节点向右放置400像素，向下放置300像素，请使用以下代码:"
 
 #: ../../docs/tutorials/math/vector_math.rst:76
+#, fuzzy
 msgid ""
 "Godot supports both :ref:`Vector2 <class_Vector2>` and :ref:`Vector3 "
-"<class_Vector3>` for 2D and 3D usage respectively. The same mathematical "
-"rules discussed in this article apply for both types."
+"<class_Vector3>` for 2D and 3D usage, respectively. The same mathematical "
+"rules discussed in this article apply to both types."
 msgstr ""
 "Godot支持 :ref:`Vector2 <class_Vector2>` 和 :ref:`Vector3 <class_Vector3>` 分"
 "别用于2D和3D。本文讨论的数学规则同样适用于这两种类型。"
@@ -173,7 +175,7 @@ msgstr "标量乘法"
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
 "magnitude is called a **scalar**."
-msgstr "矢量表示方向和幅度。仅表示幅值的值称为 **标量**。"
+msgstr "向量表示方向和幅度。仅表示幅值的值称为 **标量**。"
 
 #: ../../docs/tutorials/math/vector_math.rst:128
 msgid "A vector can be multiplied by a **scalar**:"
@@ -206,9 +208,9 @@ msgid ""
 "ship moves each step. We can find the position for step 2 by adding the "
 "velocity to the current position."
 msgstr ""
-"矢量可以表示具有大小和方向的任何量。典型的例子有:位置、速度、加速度和力。在这"
+"向量可以表示具有大小和方向的任何量。典型的示例有:位置、速度、加速度和力。在这"
 "幅图像中，在第一步的飞船有一个位置向量为``(1,3)``和一个速度向量为``(2,1)``。"
-"速度矢量表示船舶每一步移动的距离。通过将速度加到当前位置，我们可以求出步骤2的"
+"速度向量表示船舶每一步移动的距离。通过将速度加到当前位置，我们可以求出步骤2的"
 "位置。"
 
 #: ../../docs/tutorials/math/vector_math.rst:161
@@ -229,7 +231,7 @@ msgid ""
 "vector pointing from the tank to the robot."
 msgstr ""
 "在这个场景中，您有一个坦克，希望它的炮塔指向机器人。从机器人的位置减去坦克的"
-"位置就得到了从坦克指向机器人的矢量。"
+"位置就得到了从坦克指向机器人的向量。"
 
 #: ../../docs/tutorials/math/vector_math.rst:172
 msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
@@ -246,7 +248,7 @@ msgid ""
 "vectors are helpful when you need to keep track of a direction."
 msgstr ""
 "一个 **大小** 为 ``1`` 的向量称为 **单位向量** 。它们有时也被称为 **方向向量"
-"** 或 **法线** 。当你需要跟踪一个方向时，单位向量是有用的。"
+"** 或 **法线** 。当您需要跟踪一个方向时，单位向量是有用的。"
 
 #: ../../docs/tutorials/math/vector_math.rst:182
 msgid "Normalization"
@@ -258,8 +260,8 @@ msgid ""
 "its direction. This is done by dividing each of its components by its "
 "magnitude:"
 msgstr ""
-"**归一化** 矢量意味着在保持其方向的同时将其长度减少到 ``1`` 。这是通过将每个"
-"分量除以其大小来完成的："
+"**归一化** 向量意味着在保持其方向的同时将其长度减少到 ``1`` 。这是通过将每个"
+"分量除以其大小来完成的:"
 
 #: ../../docs/tutorials/math/vector_math.rst:203
 msgid ""
@@ -323,7 +325,7 @@ msgid ""
 "direction, a scalar value has only magnitude."
 msgstr ""
 "**点乘** 是向量数学中最重要的概念之一，但经常被误解。点乘是对两个向量的操作，"
-"它返回一个 **标量**。与同时包含大小和方向的矢量不同，标量值只有大小。"
+"它返回一个 **标量**。与同时包含大小和方向的向量不同，标量值只有大小。"
 
 #: ../../docs/tutorials/math/vector_math.rst:270
 msgid "The formula for dot product takes two common forms:"
@@ -348,7 +350,7 @@ msgid ""
 "However, in most cases it is easiest to use the built-in method. Note that "
 "the order of the two vectors does not matter:"
 msgstr ""
-"然而，在大多数情况下，使用内置方法是最容易的。注意，两个向量的顺序并不重要："
+"然而，在大多数情况下，使用内置方法是最容易的。注意，两个向量的顺序并不重要:"
 
 #: ../../docs/tutorials/math/vector_math.rst:296
 msgid ""
@@ -357,13 +359,13 @@ msgid ""
 "tell us something about the angle between two vectors:"
 msgstr ""
 "当与单位向量一起使用时，点积是最有用的，使得第一个公式减少到仅有 ``cosθ``。这"
-"意味着我们可以使用点积来告诉我们关于两个向量之间的角度的一些信息："
+"意味着我们可以使用点积来告诉我们关于两个向量之间的角度的一些信息:"
 
 #: ../../docs/tutorials/math/vector_math.rst:302
 msgid ""
 "When using unit vectors, the result will always be between ``-1`` (180°) and "
 "``1`` (0°)."
-msgstr "当使用单位向量,结果总是会在 ``-1`` (180°)  和 ``1`` (0°) 之间。"
+msgstr "当使用单位向量,结果总是会在 ``-1`` (180°) 和 ``1`` (0°) 之间。"
 
 #: ../../docs/tutorials/math/vector_math.rst:306
 msgid "Facing"
@@ -377,7 +379,7 @@ msgid ""
 "they see the player?"
 msgstr ""
 "我们可以利用这个事实来检测一个物体是否面向另一个物体。在下图中，游戏角色 "
-"``P`` 试图避开僵尸 ``A`` 和 ``B`` 。假设一个僵尸的视野是 **180°** , 他们能看"
+"``P`` 试图避开丧尸 ``A`` 和 ``B`` 。假设一个丧尸的视野是 **180°** , 他们能看"
 "到游戏角色吗?"
 
 #: ../../docs/tutorials/math/vector_math.rst:314
@@ -388,9 +390,10 @@ msgid ""
 "player using ``P - A`` and normalize it. If the angle between this vector "
 "and the facing vector is less than 90°, then the zombie can see the player."
 msgstr ""
-"绿色箭头 ``fA`` 和 ``fB`` 是 **单位向量** 表示僵尸的朝向，蓝色半圆表示其视"
-"野。对于僵尸 ``A`` ，我们使用 ``P - A`` 找到指向玩家的方向向量 ``AP`` 并将其"
-"归一化。如果这个向量和面向向量之间的夹角小于90°,那么僵尸可以看到玩家。"
+"绿色箭头 ``fA`` 和 ``fB`` 是 **单位向量** 表示丧尸的朝向，蓝色半圆表示其视"
+"野。对于丧尸 ``A`` ，我们使用 ``P - A`` 找到指向游戏角色的方向向量 ``AP`` 并"
+"将其归一化。如果这个向量和面向向量之间的夹角小于90°,那么丧尸可以看到游戏角"
+"色。"
 
 #: ../../docs/tutorials/math/vector_math.rst:321
 msgid "In code it would look like this:"
@@ -401,11 +404,12 @@ msgid "Cross product"
 msgstr "叉乘"
 
 #: ../../docs/tutorials/math/vector_math.rst:341
+#, fuzzy
 msgid ""
 "Like the dot product, the **cross product** is an operation on two vectors. "
 "However, the result of the cross product is a vector with a direction that "
 "is perpendicular to both. Its magnitude depends on their relative angle. If "
-"two vectors are parallel, the result of their cross product will be null "
+"two vectors are parallel, the result of their cross product will be a null "
 "vector."
 msgstr ""
 "和点乘一样， **叉乘** 是对两个向量的运算。然而，叉乘的结果是一个方向垂直于这"
@@ -461,10 +465,11 @@ msgid "Pointing to a target"
 msgstr "指向目标"
 
 #: ../../docs/tutorials/math/vector_math.rst:420
+#, fuzzy
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
-"angle between two vectors. However, in 3D this is not enough information. We "
-"also need to know what axis to rotate around. We can find that by "
+"angle between two vectors. However, in 3D, this is not enough information. "
+"We also need to know what axis to rotate around. We can find that by "
 "calculating the cross product of the current facing direction and the target "
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""

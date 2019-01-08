@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:4
 msgid "Using an external text editor"
-msgstr ""
+msgstr "Использование внешнего текстового редактора"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
 msgid ""
@@ -28,57 +28,65 @@ msgid ""
 "via the options under ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
+"Хотя у Godot есть встроенный текстовый редактор, некоторые разработчики "
+"предпочитают использовать знакомый им текстовый редактор. Godot "
+"предоставляет эту опцию через меню ``Редактор -> Настройки редактора -> Text "
+"Editor -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
+#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
-"allow you to better integrate the editor with godot. Godot will replace the "
+"allow you to better integrate the editor with Godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
+"Есть два поля: путь к исполняемому файлу и флаги командной строки. Флаги "
+"позволяют лучше интегрировать редактор с godot. Godot заменяет следующие "
+"параметры внутри флагов:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Field in Exec Flags"
-msgstr ""
+msgstr "Поле в Исполняемых Флагах"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
 msgid "Is replaced with"
-msgstr ""
+msgstr "Заменяется на"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "{project}"
-msgstr ""
+msgstr "{project}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:20
 msgid "The absolute path to the project directory"
-msgstr ""
+msgstr "Абсолютный путь к каталогу проекта"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "{file}"
-msgstr ""
+msgstr "{file}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:22
 msgid "The absolute path to the file"
-msgstr ""
+msgstr "Абсолютный путь к файлу"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "{col}"
-msgstr ""
+msgstr "{col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:24
 msgid "The column number of the error"
-msgstr ""
+msgstr "Номер столбца ошибки"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "{line}"
-msgstr ""
+msgstr "{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:26
 msgid "The line number of the error"
-msgstr ""
+msgstr "Номер строки ошибки"
 
 #: ../../docs/getting_started/editor/external_editor.rst:29
 msgid "Some example Exec Flags for various editors include:"
-msgstr ""
+msgstr "Некоторые примеры Исполняемых Флагов для различных редакторов:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Editor"
@@ -86,28 +94,28 @@ msgstr "Редактор"
 
 #: ../../docs/getting_started/editor/external_editor.rst:32
 msgid "Exec Flags"
-msgstr ""
+msgstr "Исполняемые Флаги"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "geany/kate"
-msgstr ""
+msgstr "geany/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
 msgid "{file} --line {line} --column {col}"
-msgstr ""
+msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "atom/sublime text"
-msgstr ""
+msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "{file}:{line}"
-msgstr ""
+msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "jetbrains rider"
-msgstr ""
+msgstr "jetbrains rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "--line {line} {file}"
-msgstr ""
+msgstr "--line {line} {file}"

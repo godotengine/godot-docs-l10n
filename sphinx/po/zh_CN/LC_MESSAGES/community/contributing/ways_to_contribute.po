@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,10 +53,11 @@ msgid ""
 "the word about our great engine, which has no marketing budget and can "
 "therefore only rely on its community to become more mainstream."
 msgstr ""
-"**成为社区的一份子** 最好方法有助于Godot和帮助它成为永远更好的就是使用引擎,促"
-"进口碑,学分或闪屏的游戏,博客文章、教程、视频、演示、gamedev或自由软件事件,支"
-"持问答,IRC,论坛、打等参与!作为一个用户和倡导者，有助于宣传我们伟大的引擎，它"
-"没有营销预算，因此只能依靠它的社区变得更加主流。"
+"**成为社区的一份子** 为Godot做出贡献并帮助它变得更好的最佳方式就是使用引擎,在"
+"下面环境中提升它的口碑：您游戏的闪屏中、博客文章、教程、视频、演示、游戏开发"
+"或自由软件事件中，在Q&A、IRC、论坛、Discord等处支持它。参与进来! 作为一个用户"
+"和倡导者， 这有助于宣传我们伟大的引擎，它没有营销预算，因此只能依靠它的社区变"
+"得更加主流。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:25
 msgid ""
@@ -70,7 +71,7 @@ msgstr ""
 "**制作游戏** 众所周知，为了说服新用户，尤其是整个行业，Godot是一个相关的市场"
 "参与者，我们需要使用Godot制作出色的游戏。 我们知道该引擎在2D和3D游戏方面具有"
 "很大的潜力，但考虑到它的年龄，我们仍然缺乏能够引起人们对Godot的关注。 因此，"
-"继续努力完成您的精彩项目，每个新游戏都会提高我们在gamedev市场的可信度！"
+"继续努力完成您的精彩项目，每个新游戏都会提高我们在游戏开发市场的可信度！"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:32
 msgid ""
@@ -82,8 +83,8 @@ msgid ""
 "those \"direct\" ways of contributing to the engine."
 msgstr ""
 "**参与引擎的开发** 这可以通过拉请求提供代码、测试开发快照或直接通过git "
-"*master* 分支、报告bug或建议对问题跟踪器的增强、改进官方文档（包括类参考和教"
-"程）来实现LS及其翻译。以下各节将介绍这些对引擎有贡献的“直接”方法。"
+"*master* 分支、报告bug或建议对问题跟踪器的增强、改进官方文档(包括类参考和教"
+"程)来实现LS及其翻译。以下各节将介绍这些对引擎有贡献的“直接”方法。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:40
 msgid ""
@@ -99,12 +100,12 @@ msgid ""
 "project, check `our website <https://godotengine.org/donate>`_ for details."
 msgstr ""
 "**捐赠** Godot是一个非盈利项目，但它仍然可以从用户捐赠中受益从而做许多事情。 "
-"除了通常的费用，如托管费用或活动宣传材料，我们还在必要时使用捐款钱购买硬件"
-"（例如我们使用捐款购买Macbook Pro来实施Retina/HiDPI支持以及各种其他与MacOS相"
-"关的功能）。 最重要的是，我们还使用捐款来聘请核心开发人员，以便他们可以全职地"
-"开发引擎。 即使月工资很低，我们也需要稳定的捐款收入才能继续这样做，这对目前的"
-"项目非常有利。 因此，如果您想向项目捐款，请查看 `我们的网站 <https://"
-"godotengine.org/donate>`_ 以了解详情。"
+"除了通常的费用，如托管费用或活动宣传材料，我们还在必要时使用捐款钱购买硬件(例"
+"如我们使用捐款购买Macbook Pro来实施Retina/HiDPI支持以及各种其他与MacOS相关的"
+"功能)。 最重要的是，我们还使用捐款来聘请核心开发人员，以便他们可以全职地开发"
+"引擎。 即使月工资很低，我们也需要稳定的捐款收入才能继续这样做，这对目前的项目"
+"非常有利。 因此，如果您想向项目捐款，请查看 `我们的网站 <https://godotengine."
+"org/donate>`_ 以了解详情。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:54
 msgid "Contributing code"
@@ -132,13 +133,13 @@ msgid ""
 "git commits (patches) into the main development branch."
 msgstr ""
 "因此，每个人都有权修改 `Godot的源代码 <https://github.com/godotengine/"
-"godot>`_，并以补丁的形式将这些修改发送回上游项目（描述更改的文本文件） 以我们"
-"使用的现代工作流程 - 通过所谓的“拉取请求”（PR），即直接将一个或多个git提交"
-"（补丁）合并到主要开发中的提议 科。"
+"godot>`_ ，并以补丁的形式将这些修改发送回上游项目(描述更改的文本文件) 以我们"
+"使用的现代工作流程 - 通过所谓的“拉取请求”(PR)，即直接将一个或多个git提交(补"
+"丁)合并到主要开发中的提议 科。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:68
 msgid "Contributing code changes upstream has two big advantages:"
-msgstr "上游贡献代码更改有两大优势："
+msgstr "上游贡献代码更改有两大优势:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:70
 msgid ""
@@ -173,7 +174,7 @@ msgid ""
 "workflow."
 msgstr ""
 "为了确保良好的协作和整体质量，Godot开发人员对代码贡献实施了一些规则，例如关于"
-"在C ++代码中使用的样式（缩进，括号等）或git和PR工作流。"
+"在C++代码中使用的样式(缩进，括号等)或git和PR工作流程。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:87
 msgid ""
@@ -200,7 +201,7 @@ msgid ""
 "to enforce them are outlined in :ref:`doc_code_style_guidelines`."
 msgstr ""
 "有关代码样式指南和用于强制执行它们的 ``clang-format`` 工具的详细信息，请参"
-"见  :ref:`doc_code_style_guidelines` 。"
+"见 :ref:`doc_code_style_guidelines` 。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:97
 msgid "Testing and reporting issues"
@@ -222,7 +223,7 @@ msgstr "测试开发版本"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:107
 msgid "To help with the testing, you have several possibilities:"
-msgstr "为了帮助进行测试，您有以下几种可能性："
+msgstr "为了帮助进行测试，您有以下几种可能性:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:109
 msgid ""
@@ -238,8 +239,8 @@ msgid ""
 "blog and other community platforms), such as alpha, beta and release "
 "candidate (RC) builds."
 msgstr ""
-"在宣布（通常在博客和其他社区平台上）时测试官方预发布二进制文件，例如alpha，"
-"beta和候选版本（RC）。"
+"在宣布(通常在博客和其他社区平台上)时测试官方预发布二进制文件，例如alpha，beta"
+"和候选版本(RC)。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:115
 msgid ""
@@ -285,8 +286,8 @@ msgid ""
 "developers to then help make the diagnosis of the issue you met, so that the "
 "actual cause of the bug can be identified and addressed."
 msgstr ""
-"当您报告错误时，您应该记住该过程类似于与您的医生预约。 您注意到*症状*会让您认"
-"为某些内容可能有问题（引擎崩溃，某些功能无法正常工作等）。 这是错误分类团队和"
+"当您报告错误时，您应该记住该过程类似于与您的医生预约。 您注意到 *症状* 会让您"
+"认为某些内容可能有问题(引擎崩溃，某些功能无法正常工作等)。 这是错误分类团队和"
 "开发人员的角色，然后帮助您对所遇到的问题进行诊断，以便识别和解决错误的实际原"
 "因。"
 
@@ -297,8 +298,8 @@ msgid ""
 "and hopefully fix it. Here are some of the most important infos that you "
 "should always provide:"
 msgstr ""
-"因此，您应该始终问自己：什么是相关信息，以便其他Godot贡献者可以理解错误，识别"
-"它并希望修复它。 以下是您应该始终提供的一些最重要的信息："
+"因此，您应该始终问自己:什么是相关信息，以便其他Godot贡献者可以理解错误，识别"
+"它并希望修复它。 以下是您应该始终提供的一些最重要的信息:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:144
 msgid ""
@@ -348,9 +349,9 @@ msgstr ""
 "**如何重现错误** 在大多数情况下，错误是可重现的，即可以通过遵循一些步骤可靠地"
 "触发它们。 请始终尽可能清楚地描述这些步骤，以便每个人都可以尝试重现问题并进行"
 "确认。 理想情况下，制作一个演示项目，可以立即重现此问题，将其压缩并将其附加到"
-"问题中（您可以通过拖放操作完成此操作）。 即使您认为重现问题很简单，添加一个可"
-"以重现它的最小项目也是一个很大的附加价值。 您必须记住，跟踪器中存在数千个问"
-"题，开发人员只能花费很少的时间来处理每个问题。"
+"问题中(您可以通过拖放操作完成此操作)。 即使您认为重现问题很简单，添加一个可以"
+"重现它的最小项目也是一个很大的附加价值。 您必须记住，跟踪器中存在数千个问题，"
+"开发人员只能花费很少的时间来处理每个问题。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:170
 msgid ""
@@ -368,7 +369,7 @@ msgstr "贡献文档"
 #: ../../docs/community/contributing/ways_to_contribute.rst:177
 msgid ""
 "There are two separate resources referred to as \"documentation\" in Godot:"
-msgstr "在Godot中有两个独立的称为“文档”的资源："
+msgstr "在Godot中有两个独立的称为“文档”的资源:"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:179
 msgid ""
@@ -379,10 +380,10 @@ msgid ""
 "the `doc/base/classes.xml` in Godot's git repository, and make a pull "
 "request. See :ref:`doc_updating_the_class_reference` for more details."
 msgstr ""
-"**类引用** 这是暴露于GDScript和其他脚本语言的完整Godot API的文档。 它可以离线"
-"查询，直接在Godot的代码编辑器中查询，或在线查询 :ref:`Godot API <toc-class-"
-"ref>` 。 要为类引用做出贡献，您必须在Godot的git存储库中编辑 `doc/base/"
-"classes.xml` ，并发出pull请求。 有关详细信息，请参阅 :ref:"
+"**类型参考** 这是暴露于GDScript和其他脚本语言的完整Godot API的文档。 它可以离"
+"线查询，直接在Godot的代码编辑器中查询，或在线查询 :ref:`Godot API <toc-class-"
+"ref>` 。 要为类型参考做出贡献，您必须在Godot的git存储库中编辑 `doc/base/"
+"classes.xml` ，并提交请求。 有关详细信息，请参阅 :ref:"
 "`doc_updating_the_class_reference` 。"
 
 #: ../../docs/community/contributing/ways_to_contribute.rst:187
@@ -395,7 +396,7 @@ msgid ""
 "GitHub repository. See :ref:`doc_documentation_guidelines` for more details."
 msgstr ""
 "**教程和引擎文档及其翻译** 这是您现在正在阅读的部分，它以HTML，PDF和EPUB格式"
-"分发。 它的内容是以reStructured Text（rst）格式的纯文本文件生成的，你可以通"
-"过 `godot-docs <https://github.com/godotengine/godot-docs>`_ GitHub存储库上的"
-"pull请求来贡献它们。 有关详细信息，请参阅 :ref:"
+"分发。 它的内容是以reStructured Text(rst)格式的纯文本文件生成的，您可以通过 "
+"`godot-docs <https://github.com/godotengine/godot-docs>`_ GitHub存储库上的提"
+"交请求来贡献它们。 有关详细信息，请参阅 :ref:"
 "`doc_documentation_guidelines`  。"

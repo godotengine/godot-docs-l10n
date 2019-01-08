@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,14 +35,14 @@ msgid ""
 msgstr ""
 "创建单个场景并向其中添加节点，这可能适用于小型项目，但随着项目规模和复杂度的"
 "增长，节点数量可能很快变得无法管理。为了解决这个问题，Godot允许一个项目被分成"
-"许多场景。这为你提供了一个强大的工具，能够帮助你组织游戏的不同组件。"
+"许多场景。这为您提供了一个强大的工具，能够帮助您组织游戏的不同组件。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:15
 msgid ""
 "In :ref:`doc_scenes_and_nodes` you learned that a scene is a collection of "
 "nodes organized in a tree structure, with a single node as the tree root."
 msgstr ""
-"在 :ref:`doc_scenes_and_nodes` 里你了解了场景是以树结构组织的节点集合，并由一"
+"在 :ref:`doc_scenes_and_nodes` 里您了解了场景是以树结构组织的节点集合，并由一"
 "个单独节点作为树的根节点。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:20
@@ -51,8 +51,8 @@ msgid ""
 "saved in this manner are called \"Packed Scenes\" and have a ``.tscn`` "
 "filename extension."
 msgstr ""
-"你可以创建很多场景并将其保存到磁盘。以这种方式保存的场景被称为“压缩场"
-"景”（Packed Scenes），有着 ``.tscn``扩展名。"
+"您可以创建很多场景并将其保存到磁盘。以这种方式保存的场景被称为“压缩场"
+"景”(Packed Scenes)，有着 ``.tscn`` 扩展名。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:26
 msgid ""
@@ -68,7 +68,7 @@ msgstr "在上面的图片中，场景B作为实例被加入到A中。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:34
 msgid "Instancing by example"
-msgstr "通过例子实例化"
+msgstr "通过示例实例化"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:36
 msgid ""
@@ -83,7 +83,7 @@ msgid ""
 "Unzip this project anywhere you like. Then open Godot and add this project "
 "to the project manager using the 'Import' button:"
 msgstr ""
-"解压到任意目录。然后打开Godot，用“导入”（Import）将项目加入到项目管理器中："
+"解压到任意目录。然后打开Godot，用“导入”(Import)将项目加入到项目管理器中:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:44
 msgid ""
@@ -91,8 +91,8 @@ msgid ""
 "can find inside it. After doing this, the new project will appear on the "
 "list of projects. Edit the project by pressing the 'Edit' button."
 msgstr ""
-"浏览到你解压到的目录，打开“project.godot”。然后，这个新的项目就会出现在项目列"
-"表里。按下“编辑”（Edit）来进入场景编辑器。"
+"浏览到您解压到的目录，打开“project.godot”。然后，这个新的项目就会出现在项目列"
+"表里。按下“编辑”(Edit)来进入场景编辑器。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:48
 msgid ""
@@ -101,13 +101,13 @@ msgid ""
 "behavior while the main scene has a set of obstacles for the ball to collide "
 "with (using :ref:`StaticBody2D <class_StaticBody2D>`)."
 msgstr ""
-"这个项目包含两个场景：“Ball.tscn”和“Main.tscn”。Ball场景用了 :ref:"
+"这个项目包含两个场景:“Ball.tscn”和“Main.tscn”。Ball场景用了 :ref:"
 "`RigidBody2D <class_RigidBody2D>` 来提供物理运动，Main场景则有一些障碍来和球"
-"体进行碰撞（使用 :ref:`StaticBody2D <class_StaticBody2D>`）。"
+"体进行碰撞(使用 :ref:`StaticBody2D <class_StaticBody2D>`)。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:57
 msgid "Open the ``Main`` scene, and then select the root node:"
-msgstr "打开 ``Main`` 场景，然后选择根节点："
+msgstr "打开 ``Main`` 场景，然后选择根节点:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:61
 msgid ""
@@ -115,8 +115,8 @@ msgid ""
 "Click the \"link\"-shaped button (its hover-text says \"Instance a scene "
 "file as a Node.\") and select the ``Ball.tscn`` file."
 msgstr ""
-"我们要添加一个 ``Ball``场景的实例，作为 ``Main`` 场景的子节点。点击“链接”形状"
-"的按钮（悬浮框写着“从场景文件实例化节点。”）然后选择 ``Ball.tscn``文件。"
+"我们要添加一个 ``Ball`` 场景的实例，作为 ``Main`` 场景的子节点。点击“链接”形"
+"状的按钮(悬浮框写着“从场景文件实例化节点。”)然后选择 ``Ball.tscn`` 文件。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:67
 msgid ""
@@ -124,12 +124,12 @@ msgid ""
 "``(0, 0)`` in screen coordinates). Click and drag the ball somewhere near "
 "the top-center of the scene:"
 msgstr ""
-"这个球会被放置在屏幕区域的左上角（即屏幕坐标 ``(0, 0)``）。按下并拖动球到中间"
-"上方："
+"这个球会被放置在屏幕区域的左上角(即屏幕坐标 ``(0, 0)``)。按下并拖动球到中间上"
+"方:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:73
 msgid "Press \"Play\" and watch the ball fall to the bottom of the screen:"
-msgstr "按下“运行”（Play），看到球落到屏幕底部："
+msgstr "按下“运行”(Play)，看到球落到屏幕底部:"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:78
 msgid "Multiple instances"
@@ -141,8 +141,8 @@ msgid ""
 "\"Instance\" button again, or by clicking on the ball instance and pressing "
 "\"Duplicate\" (Ctrl-D):"
 msgstr ""
-"你可以添加任意多的实例到一个场景中，通过再次用“实例化”（Instance）按钮，或者"
-"点击球的实力然后选择“拷贝”（Duplicate，快捷键Ctrl-D）："
+"您可以添加任意多的实例到一个场景中，通过再次用“实例化”(Instance)按钮，或者点"
+"击球的实力然后选择“拷贝”(Duplicate，快捷键Ctrl-D):"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:86
 msgid "Run the scene again and all of the balls will fall."
@@ -159,9 +159,9 @@ msgid ""
 "much more bouncy. Because the instanced balls are based on the saved scene, "
 "changes to that scene will affect all instances."
 msgstr ""
-"打开 ``Ball``场景并在属性编辑器（Inspector）里修改 ``Bounce``属性为1。运行，"
-"可以注意到这些实例化小球变得更有弹性。这是因为这些实例化小球都是基于那个被保"
-"存了的场景，修改它能影响所有的实例。"
+"打开 ``Ball`` 场景并在属性面板(Inspector)里修改 ``Bounce`` 属性为1。运行，可"
+"以注意到这些实例化小球变得更有弹性。这是因为这些实例化小球都是基于那个被保存"
+"了的场景，修改它能影响所有的实例。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:98
 msgid ""
@@ -169,8 +169,8 @@ msgid ""
 "``0.5`` and then in the ``Main`` scene, select one of the instanced balls. "
 "Set its ``Bounce`` to ``1`` and press \"Play\"."
 msgstr ""
-"你也可以调整单个实例。把弹性调回 ``0.5`` 然后回到 ``Main``场景中，选择其中一"
-"个小球，把它的 ``Bounce``设为 ``1``，然后运行。"
+"您也可以调整单个实例。把弹性调回 ``0.5`` 然后回到 ``Main`` 场景中，选择其中一"
+"个小球，把它的 ``Bounce`` 设为 ``1`` ，然后运行。"
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:104
 msgid ""
@@ -181,7 +181,7 @@ msgid ""
 "Pressing the revert button will restore the property to the value in the "
 "saved scene."
 msgstr ""
-"可以注意到调整后的属性旁边有一个“还原”按钮。当这个按钮出现，意味着你修改了这"
+"可以注意到调整后的属性旁边有一个“还原”按钮。当这个按钮出现，意味着您修改了这"
 "个实例化场景属性，覆盖了它原有的值。即便再次修改原场景的属性，它的值也会保持"
 "不变。按下还原按钮将会把属性值还原为原场景设定值。"
 
@@ -195,5 +195,5 @@ msgid ""
 "object. It is also possible to create instances in code by using GDScript, "
 "see :ref:`doc_scripting_continued`."
 msgstr ""
-"当你想创建同一对象的多个副本时，实例化会非常有用。你也可以使用代码创建实例"
-"（请参阅 :ref: `doc_scripting_continued`）。"
+"当您想创建同一对象的多个副本时，实例化会非常有用。您也可以使用代码创建实例(请"
+"参阅 :ref:`doc_scripting_continued`)。"

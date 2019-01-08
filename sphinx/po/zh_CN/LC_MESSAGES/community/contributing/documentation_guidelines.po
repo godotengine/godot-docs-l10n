@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Documentation guidelines"
 msgstr "文件指南"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:6
-#, fuzzy
 msgid ""
 "This page describes the rules to follow if you want to contribute to Godot "
 "Engine by writing or reviewing documentation, or by translating existing "
@@ -33,8 +32,8 @@ msgid ""
 msgstr ""
 "本页介绍了如果您想通过编写或查看文档或翻译现有文档来为Godot Engine做出贡献的"
 "规则。 另请参阅 `godot-docs GitHub存储库 <https://github.com/godotengine/"
-"godot-docs>`_ 的README和 `docs首页 <http://docs.godotengine.org>`_  关于要遵"
-"循的步骤以及如何联系文档团队。"
+"godot-docs>`_ 的README和 `docs首页 <http://docs.godotengine.org>`_ 关于要遵循"
+"的步骤以及如何联系文档团队。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:14
 msgid "How to contribute"
@@ -50,9 +49,9 @@ msgid ""
 "documentation."
 msgstr ""
 "创建或修改文档页面主要通过 `godot-docs GitHub存储库 <https://github.com/"
-"godotengine/godot-docs>`_ 来完成。 HTML（或PDF和EPUB）文档是从该存储库中的."
-"rst文件（reStructuredText标记语言）生成的。 在拉取请求中修改这些页面并将其合"
-"并将触发重建在线文档。"
+"godotengine/godot-docs>`_ 来完成。 HTML(或PDF和EPUB)文档是从该存储库中的.rst"
+"文件(reStructuredText标记语言)生成的。 在拉取请求中修改这些页面并将其合并将触"
+"发重建在线文档。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:23
 msgid ""
@@ -81,7 +80,7 @@ msgid ""
 "used to generate the in-editor documentation as well as the API reference of "
 "the online docs. Read more here: :ref:`doc_updating_the_class_reference`."
 msgstr ""
-"如果你想编辑 **API引用** ，请注意它不应该在godot-docs存储库中完成。 相反，你"
+"如果您想编辑 **API引用** ，请注意它不应该在godot-docs存储库中完成。 相反，您"
 "应该编辑Godot的主存储库的 ``doc / classes / *`` 的XML文件。 然后，这些文件将"
 "用于生成编辑器内文档以及在线文档的API参考。 在这里阅读更多 : :ref:"
 "`doc_updating_the_class_reference`。"
@@ -103,7 +102,7 @@ msgstr ""
 msgid ""
 "We differentiate tutorial pages from other documentation pages by these "
 "definitions:"
-msgstr "我们通过以下定义将教程页面与其他文档页面区分开来："
+msgstr "我们通过以下定义将教程页面与其他文档页面区分开来:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:49
 msgid ""
@@ -112,8 +111,8 @@ msgid ""
 "purpose (e.g. \"Making a simple 2d Pong game\", \"Applying forces to an "
 "object\")."
 msgstr ""
-"教程：旨在解释如何在编辑器或脚本中使用一个或多个概念以实现具有学习目的的特定"
-"目标的页面（例如“制作简单的2d乒乓游戏”，“将力施加到对象”）。"
+"教程:旨在解释如何在编辑器或脚本中使用一个或多个概念以实现具有学习目的的特定目"
+"标的页面(例如“制作简单的2d乒乓游戏”，“将力施加到对象”)。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:53
 msgid ""
@@ -121,15 +120,15 @@ msgid ""
 "time, if possible exhaustively (e.g. the list of methods of the Sprite "
 "class, or an overview of the input management in Godot)."
 msgstr ""
-"文档：一个页面，如果可能的话，一次只描述一个且只有一个概念（例如Sprite类的方"
-"法列表，或者Godot中输入管理的概述）。"
+"文档:一个页面，如果可能的话，一次只描述一个且只有一个概念(例如Sprite类的方法"
+"列表，或者Godot中输入管理的概述)。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:57
 msgid ""
 "You are free to write the kind of documentation you wish, as long as you "
 "respect the following rules (and the ones on the repo)."
 msgstr ""
-"只要您遵守以下规则（以及储存库中的规则），您就可以自由地编写所需的文档类型。"
+"只要您遵守以下规则(以及储存库中的规则)，您就可以自由地编写所需的文档类型。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:61
 msgid "Titles"
@@ -137,7 +136,7 @@ msgstr "标题"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:63
 msgid "Always begin pages with their title and a Sphinx reference name:"
-msgstr "始终以其标题和Sphinx参考名称开始页面："
+msgstr "始终以其标题和Sphinx参考名称开始页面:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:72
 msgid ""
@@ -145,9 +144,9 @@ msgid ""
 "``:ref:`doc_insert_your_title_here``` would link to the above example page "
 "(note the lack of leading underscore in the reference)."
 msgstr ""
-"引用允许使用 ``:ref:`` 格式链接到此页面，例如 ``:ref:"
-"`doc_insert_your_title_here``` 将链接到上面的示例页面（注意引用中缺少前导下划"
-"线）。"
+"引用允许使用 `` :ref:`` 格式链接到此页面，例如 `` :ref:"
+"`doc_insert_your_title_here``` 将链接到上面的示例页面(注意引用中缺少前导下划"
+"线)。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:76
 msgid ""
@@ -155,8 +154,8 @@ msgid ""
 "a capitalized letter, and every following word should not. Thus, this is a "
 "good example:"
 msgstr ""
-"另外，避免使用美国CamelCase标题：标题的第一个单词应以大写字母开头，而后面的每"
-"个单词都不应该。 因此，这是一个很好的例子："
+"另外，避免使用美国CamelCase标题:标题的第一个单词应以大写字母开头，而后面的每"
+"个单词都不应该。 因此，这是一个很好的示例:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:80
 msgid "Insert your title here"
@@ -164,7 +163,7 @@ msgstr "Insert your title here"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:82
 msgid "And this is a bad example:"
-msgstr "这是一个糟糕的例子："
+msgstr "这是一个糟糕的示例:"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:84
 msgid "Insert Your Title Here"
@@ -185,8 +184,8 @@ msgid ""
 "You can help to translate the official Godot documentation on our `Hosted "
 "Weblate <https://hosted.weblate.org/engage/godot-engine/>`_."
 msgstr ""
-"您可以帮助翻译我们托管在 `Weblate <https://hosted.weblate.org/engage/godot-"
-"engine/>`_上的官方Godot文档。"
+"您可以帮助我们翻译或校对托管在 `Weblate <https://hosted.weblate.org/engage/"
+"godot-engine/>`_ 上的官方Godot文档。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:99
 msgid ""
@@ -195,7 +194,7 @@ msgid ""
 "synced."
 msgstr ""
 "还有官方的 `Godot I18N存储库 <https://github.com/godotengine/godot-docs-"
-"l10n>`_。 您可以在哪里查看数据上次同步的时间。"
+"l10n>`_ 。 您可以在哪里查看数据上次同步的时间。"
 
 #: ../../docs/community/contributing/documentation_guidelines.rst:102
 msgid "License"

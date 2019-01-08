@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,10 +34,10 @@ msgid ""
 "offers many tools to make this process more straightforward, so this "
 "tutorial is more like a collection of tips and tricks."
 msgstr ""
-"如果全世界只讲一种语言，那将是很好的（这将是世界上唯一的一种语言）。不幸的"
-"是，对于我们的开发人员来说，情况并非如此。虽然独立或利基游戏通常不需要本地"
-"化，但瞄准更大市场的游戏通常需要本地化。Godot提供了许多工具来使这个过程更加简"
-"单，因此本教程更像一个技巧和技巧的集合。"
+"如果全世界只讲一种语言，那将是很好的(这将是世界上唯一的一种语言)。不幸的是，"
+"对于我们的开发人员来说，情况并非如此。虽然独立或利基游戏通常不需要本地化，但"
+"瞄准更大市场的游戏通常需要本地化。Godot提供了许多工具来使这个过程更加简单，因"
+"此本教程更像一个技巧和技巧的集合。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:17
 msgid ""
@@ -58,7 +58,7 @@ msgid ""
 "We will be using the official demo as an example; you can `download it from "
 "the Asset Library <https://godotengine.org/asset-library/asset/134>`_."
 msgstr ""
-"我们将使用官方演示作为一个例子, 你可以在 `Asset Library <https://godotengine."
+"我们将使用官方演示作为一个示例, 您可以在 `Asset Library <https://godotengine."
 "org/asset-library/asset/134>`_ 下载它们。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:29
@@ -88,8 +88,8 @@ msgid ""
 "(resources) depending on the current language. The **Remaps** tab can be "
 "used for this:"
 msgstr ""
-"根据当前语言，还可以指示Godot使用资产（资源）的替代版本。 **映射** 选项卡可用"
-"于此："
+"根据当前语言，还可以指示Godot使用资源(资源)的替代版本。 **映射** 选项卡可用于"
+"此:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:48
 msgid ""
@@ -109,17 +109,19 @@ msgid ""
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
 "then the text will be automatically translated."
 msgstr ""
-"一些控件如 ：ref：`Button <class_Button>` 和 ：ref：`Label <class_Label>` 将"
-"自动获取翻译, 如果它们的文本与翻译键匹配。 例如，如果标签的文本"
+"一些控件如 :ref:`Button <class_Button>` 和 :ref:`Label <class_Label>` 将自动"
+"获取翻译, 如果它们的文本与翻译键匹配。 例如，如果标签的文本"
 "是“MAIN_SCREEN_GREETING1”并且该键存在于当前翻译中，则文本将自动翻译。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
+#, fuzzy
 msgid ""
-"In code, the :ref:`Object.tr() <class_Object_tr>` function can be used. This "
-"will just look up the text in the translations and convert it if found:"
+"In code, the :ref:`Object.tr() <class_Object_method_tr>` function can be "
+"used. This will just look up the text in the translations and convert it if "
+"found:"
 msgstr ""
 "在代码中，可以使用 :ref:`Object.tr() <class_Object_tr>` 函数。 这将只查找翻译"
-"中的文本并在找到时进行转换："
+"中的文本并在找到时进行转换:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:69
 msgid "Making controls resizable"
@@ -133,10 +135,9 @@ msgid ""
 "<class_Container>` can be useful, as well as the text wrapping options "
 "available in :ref:`Label <class_Label>`."
 msgstr ""
-"不同语言的相同文本的长度差异很大。 为此，请务必阅读以下教程 ：ref："
-"`doc_size_and_anchors` ，因为动态调整控件大小可能有所帮助。 ：ref："
-"`Container <class_Container>` 可能很有用，以及 :ref:`Label <class_Label>` 的"
-"文本包裹选项。"
+"不同语言的相同文本的长度差异很大。 为此，请务必阅读以下教程 :ref:"
+"`doc_size_and_anchors` ，因为动态调整控件大小可能有所帮助。 :ref:`Container "
+"<class_Container>` 可能很有用，以及 :ref:`Label <class_Label>` 的文本包选项。"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:78
 msgid "TranslationServer"
@@ -162,8 +163,7 @@ msgid ""
 "Language can be tested when running Godot from the command line. For "
 "example, to test a game in French, the following argument can be supplied:"
 msgstr ""
-"从命令行运行Godot时可以测试语言。 例如，要使用法语测试游戏，可以提供以下参"
-"数："
+"从命令行运行Godot时可以测试语言。 例如，要使用法语测试游戏，可以提供以下参数:"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:97
 msgid "Translating the project name"
@@ -179,8 +179,7 @@ msgid ""
 msgstr ""
 "导出到不同的操作系统和平台时，项目名称将成为应用程序名称。 要以多种语言指定项"
 "目名称，请在 **项目设置** 中创建一个新设置 ``application / name`` ，并将语言"
-"环境标识符附加到其中。 例如，对于西班牙语，这将是 ``application / name_es`` "
-"："
+"环境标识符附加到其中。 例如，对于西班牙语，这将是 ``application / name_es`` :"
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:107
 msgid ""

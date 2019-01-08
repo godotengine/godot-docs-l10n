@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,12 +102,14 @@ msgstr ""
 "también se puede configurar manualmente en cada viewport."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:43
+#, fuzzy
 msgid ""
 "Input events received in the :ref:`MainLoop._input_event() "
-"<class_MainLoop__input_event>` callback are multiplied by this transform but "
-"lack the ones above. To convert InputEvent coordinates to local CanvasItem "
-"coordinates, the :ref:`CanvasItem.make_input_local() "
-"<class_CanvasItem_make_input_local>` function was added for convenience."
+"<class_MainLoop_method__input_event>` callback are multiplied by this "
+"transform but lack the ones above. To convert InputEvent coordinates to "
+"local CanvasItem coordinates, the :ref:`CanvasItem.make_input_local() "
+"<class_CanvasItem_method_make_input_local>` function was added for "
+"convenience."
 msgstr ""
 "Eventos de entrada (Input events) recibidos en el callback de :ref:`MainLoop."
 "_input_event() <class_MainLoop__input_event>` son multiplicados por este "
@@ -150,9 +152,10 @@ msgid "CanvasItem"
 msgstr "CanvasItem"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
+#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_global_transform() "
-"<class_CanvasItem_get_global_transform>`"
+"<class_CanvasItem_method_get_global_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_get_global_transform>`"
@@ -162,9 +165,10 @@ msgid "CanvasLayer"
 msgstr "CanvasLayer"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
+#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_canvas_transform() "
-"<class_CanvasItem_get_canvas_transform>`"
+"<class_CanvasItem_method_get_canvas_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_get_canvas_transform>`"
@@ -174,9 +178,10 @@ msgid "CanvasLayer+GlobalCanvas+Stretch"
 msgstr "CanvasLayer+GlobalCanvas+Stretch"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:69
+#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_viewport_transform() "
-"<class_CanvasItem_get_viewport_transform>`"
+"<class_CanvasItem_method_get_viewport_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_get_viewport_transform>`"

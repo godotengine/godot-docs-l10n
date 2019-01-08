@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid ""
 "pressed, the button can emit a signal when it's pressed."
 msgstr ""
 "信号是Godot版本的观察者模式。它允许一个节点发送消息到其他节点，令其他节点也可"
-"以监听和响应这个消息。举个例子，当按键按下时信号就会发出，而不是不停地检查按"
+"以监听和响应这个消息。举个示例，当按键按下时信号就会发出，而不是不停地检查按"
 "键是否被按压。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:14
@@ -41,7 +41,7 @@ msgid ""
 "You can read more about the observer pattern here: http://"
 "gameprogrammingpatterns.com/observer.html"
 msgstr ""
-"你可以在这里查看更多关于观察者模式： http://gameprogrammingpatterns.com/"
+"您可以在这里查看更多关于观察者模式: http://gameprogrammingpatterns.com/"
 "observer.html"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:16
@@ -59,11 +59,11 @@ msgstr ""
 msgid ""
 "Below you can see some examples of how you can use signals in your own "
 "projects."
-msgstr "接下来你可以看到一些如何在自己的项目中使用信号的示例。"
+msgstr "接下来您可以看到一些如何在自己的项目中使用信号的示例。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:24
 msgid "Timer example"
-msgstr "计时器例子"
+msgstr "计时器示例"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:26
 msgid ""
@@ -74,13 +74,13 @@ msgid ""
 "code to it yet."
 msgstr ""
 "要查看信号是如何工作的，让我们尝试使用 :ref:`Timer <class_Timer>` 节点。使用"
-"一个节点和两个子节点来创建一个新场景：一个是：Timer和一个 :ref:`Sprite "
-"<class_Sprite>`。您可以使用Godot图标作为Sprite的纹理，或者其他你喜欢的任意图"
+"一个节点和两个子节点来创建一个新场景:一个是:Timer和一个 :ref:`Sprite "
+"<class_Sprite>`。您可以使用Godot图标作为Sprite的纹理，或者其他您喜欢的任意图"
 "像。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
 msgid "Your scene tree should look like this:"
-msgstr "你的场景树应该是这样的:"
+msgstr "您的场景树应该是这样的:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:35
 msgid ""
@@ -88,8 +88,8 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
-"在Timer节点的属性中，勾选*自动启动*旁边的选框。这会令计时器在你运行场景时自动"
-"启动。你可以将*等待时间*保留为1秒。"
+"在Timer节点的属性中，勾选 *自动启动* 旁边的选框。这会令计时器在您运行场景时自"
+"动启动。您可以将 *等待时间* 保留为1秒。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
 msgid ""
@@ -98,9 +98,9 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
-"在 \"检查器\" 选项卡旁边是一个标记为 \"节点\" 的标签。单击此选项卡，您将看到"
-"所选节点可以发出的所有信号。在计时器节点的情况下，我们关心的是\"超时\"。每当"
-"计时器到达 ``0`` 时，就会发出这个信号。"
+"在 \"属性面板\" 选项卡旁边是一个标记为 \"节点\" 的标签。单击此选项卡，您将看"
+"到所选节点可以发出的所有信号。在计时器节点的情况下，我们关心的是\"超时\"。每"
+"当计时器到达 ``0`` 时，就会发出这个信号。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:46
 msgid ""
@@ -108,7 +108,7 @@ msgid ""
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
 "点击 \"timeout()\" 信号，点击 \"Connect...\"。您将看到以下窗口，您可以在其中"
-"定义如何连接信号："
+"定义如何连接信号:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
 msgid ""
@@ -117,7 +117,7 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
-"在左侧，您将看到你场景中的节点，并可以选择你想要“侦听”的节点信号。需要留意的"
+"在左侧，您将看到您场景中的节点，并可以选择您想要“侦听”的节点信号。需要留意的"
 "是，定时器节点变红——这不是一个错误，但它是节点发出信号的视觉提示。选择根节"
 "点。"
 
@@ -125,7 +125,7 @@ msgstr ""
 msgid ""
 "The target node *must* have a script attached or you'll receive an error "
 "message."
-msgstr "目标节点*必须*附加一个脚本，否则您将收到一条错误消息。"
+msgstr "目标节点 *必须* 附加一个脚本，否则您将收到一条错误消息。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:59
 msgid ""
@@ -134,7 +134,7 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
-"在窗口的底部有一个“节点中的方法”标签。这是你在目标节点脚本中要使用的函数名。"
+"在窗口的底部有一个“节点中的方法”标签。这是您在目标节点脚本中要使用的函数名。"
 "默认情况下，Godot将会按命名规则' ' _on_<node_name>_<signal_name> ' ' '创建这"
 "个函数，但您可以按您的意愿更改它。"
 
@@ -157,7 +157,7 @@ msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
-"运行这个场景，你会看到精灵每秒钟都在闪烁。您可以更改计时器的 *等待时间* 属性"
+"运行这个场景，您会看到精灵每秒钟都在闪烁。您可以更改计时器的 *等待时间* 属性"
 "来改变这一点。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
@@ -205,8 +205,8 @@ msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
-"一旦声明，你的自定义信号就会出现在检查器中，并且可以用与节点内置信号以相同的"
-"方式进行连接。"
+"一旦声明，您的自定义信号就会出现在属性面板中，并且可以用与节点内置信号以相同"
+"的方式进行连接。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
@@ -214,7 +214,7 @@ msgstr "要通过代码发出信号，使用 ``emit`` 函数:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
 msgid "Shooting example"
-msgstr "射击例子"
+msgstr "射击示例"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:205
 msgid ""
@@ -223,8 +223,8 @@ msgid ""
 "clicked, we create an instance of the bullet at the player's location. See :"
 "ref:`doc_instancing` for details."
 msgstr ""
-"作为信号使用的另一个例子，让我们考虑一个可以旋转并向鼠标射击的玩家角色。每次"
-"单击鼠标按钮，我们都会在玩家的位置创建子弹的实例。详情请参阅 :ref:"
+"作为信号使用的另一个示例，让我们考虑一个可以旋转并向鼠标射击的游戏角色角色。"
+"每次单击鼠标按钮，我们都会在游戏角色的位置创建子弹的实例。详情请参阅 :ref:"
 "`doc_instancing` 。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
@@ -232,8 +232,8 @@ msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
-"然而，如果子弹作为玩家的子节点添加，那么当它旋转时，子弹将仍然保持“附着”在玩"
-"家身上:"
+"然而，如果子弹作为游戏角色的子节点添加，那么当它旋转时，子弹将仍然保持“附"
+"着”在游戏角色身上:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
@@ -244,14 +244,14 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
-"相反，我们需要子弹独立于玩家的移动——一旦发射，子弹就会继续沿着直线运动，玩家"
-"就不能再影响它们了。与其作为玩家的孩子被添加到场景树中，不如将子弹作为“主”游"
-"戏场景的子节点添加上去更有意义，后者可能是玩家的父节点，甚至可能是更高层级的"
-"树。"
+"相反，我们需要子弹独立于游戏角色的移动——一旦发射，子弹就会继续沿着直线运动，"
+"游戏角色就不能再影响它们了。与其作为游戏角色的子节点被添加到场景树中，不如将"
+"子弹作为“主”游戏场景的子节点添加上去更有意义，后者可能是游戏角色的父节点，甚"
+"至可能是更高层级的树。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 msgid "You could do this by adding the bullet directly:"
-msgstr "你可以通过直接添加子弹来做到这一点："
+msgstr "您可以通过直接添加子弹来做到这一点:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
 msgid ""
@@ -262,10 +262,10 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
-"然而，这将导致一个不同的问题。现在如果你尝试独立测试你的“游戏角色”场景，它会"
-"在射击时崩溃，因为没有父节点可以访问。这使得独立测试玩家角色代码变得更加困"
-"难，也意味着如果你决定改变主场景的节点结构，玩家的父节点可能不再是接收子弹的"
-"合适节点。"
+"然而，这将导致一个不同的问题。现在如果您尝试独立测试您的“游戏角色”场景，它会"
+"在射击时崩溃，因为没有父节点可以访问。这使得独立测试游戏角色角色代码变得更加"
+"困难，也意味着如果您决定改变主场景的节点结构，游戏角色的父节点可能不再是接收"
+"子弹的合适节点。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""
@@ -274,25 +274,25 @@ msgid ""
 "after that - whatever node is connected to the signal can \"receive\" the "
 "bullets and take the appropriate action to spawn them."
 msgstr ""
-"解决这个问题的方法是使用一个信号来“发射”玩家的子弹。玩家不需要“知道”子弹在那"
-"之后发生了什么——任何连接到信号的节点都可以“接收”子弹并采取适当的行动来产生它"
-"们。"
+"解决这个问题的方法是使用一个信号来“发射”游戏角色的子弹。游戏角色不需要“知"
+"道”子弹在那之后发生了什么——任何连接到信号的节点都可以“接收”子弹并采取适当的行"
+"动来产生它们。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:247
 msgid "Here is the code for the player using signals to emit the bullet:"
-msgstr "下面是玩家使用信号发射子弹的代码:"
+msgstr "下面是游戏角色使用信号发射子弹的代码:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:290
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
-msgstr "在主场景中，我们连接玩家的信号(它将出现在“Node”选项卡中)。"
+msgstr "在主场景中，我们连接游戏角色的信号(它将出现在“Node”选项卡中)。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:314
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
-msgstr "现在子弹将保持自己的运动独立于玩家的旋转:"
+msgstr "现在子弹将保持自己的运动独立于游戏角色的旋转:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:320
 msgid "Conclusion"
@@ -306,8 +306,8 @@ msgid ""
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
 "Godot的许多内置节点类型都提供可以用来检测事件的信号。例如，代表硬币的 :ref:"
-"`Area2D <class_Area2D>` 在玩家的物理体进入碰撞形状时发出 ``body_entered`` 信"
-"号，让你知道玩家什么时候收集它。"
+"`Area2D <class_Area2D>` 在游戏角色的物理体进入碰撞形状时发出 "
+"``body_entered`` 信号，让您知道游戏角色什么时候收集它。"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:327
 msgid ""

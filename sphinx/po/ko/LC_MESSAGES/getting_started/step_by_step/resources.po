@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,9 +193,10 @@ msgstr ""
 "에 압축됩니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
+#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
-"instance() <class_PackedScene_instance>` method."
+"instance() <class_PackedScene_method_instance>` method."
 msgstr ""
 "씬의 인스턴스를 얻기 위해, :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` 메서드를 사용해야 합니다."
@@ -213,10 +214,10 @@ msgstr ""
 #, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
-"<class_PackedScene_instance>` function is pretty fast, you can create new "
-"enemies, bullets, effects, etc. without having to load them again from disk "
-"each time. Remember that, as always, images, meshes, etc. are all shared "
-"between the scene instances."
+"<class_PackedScene_method_instance>` function is pretty fast, you can create "
+"new enemies, bullets, effects, etc. without having to load them again from "
+"disk each time. Remember that, as always, images, meshes, etc. are all "
+"shared between the scene instances."
 msgstr ""
 "이 접근은 여러 장점이 있습니다. :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` 함수가 꽤 빠르기 때문에, 씬에 새로운 적, 총알, "
@@ -456,13 +457,17 @@ msgstr ""
 "추가하는 간단한 플러그인을 제작합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
-#, fuzzy
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
-"CurveTables은 예외로 실수 값의 배열이나 :ref:`Curve <class_Curve>`/:ref:"
-"`Curve2D <class_Curve2D>` 리소스 객체에 매핑된다는 점을 제외하면 같습니다."
+"두 가지 방법이 항상 호환되는 것은 아닙니다. 컨테이너는 자식을 제어하기 때문"
+"에, 레이아웃 메뉴를 그것들에게 사용할 수 없습니다. 각 컨테이너는 특정한 효과"
+"를 갖고 있으므로 당신은 제대로 동작하는 인터페이스를 얻기 위해 그들을 중첩"
+"(nest)할지도 모릅니다. 레이아웃 접근을 사용하는 경우 자식들을 아래계층에서 위"
+"계층 방향으로 작업합니다. 씬에 추가적이 컨테이너를 사용하지 않으므로 더 깨끗"
+"한 계층 구조를 만들 수 있지만, 항목을 행이나 열, 격자 등으로 배열하기는 더 어"
+"렵습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:357
 msgid ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Now that you've gotten your hands wet, let's talk about Godot's design."
 msgstr "Ahora que te has ensuciado las manos, hablemos del diseño de Godot."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:8
-#, fuzzy
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
 "they offer a range of features, but the design of each engine is unique. "
@@ -34,10 +33,10 @@ msgid ""
 "structures. This all stems from their respective design philosophies."
 msgstr ""
 "**Cada motor de videojuegos es diferente y se ajusta a diferentes "
-"necesidades.** No sólo ofrecen un amplio rango de características, el diseño "
-"de cada motor es único. Esto lleva a diferentes flujos de trabajo y "
-"diferentes modos de construir la estructura de los juegos. Todo esto surge "
-"de las respectivas filosofías de diseño."
+"necesidades.** No sólo ofrecen un amplio rango de características, si no que "
+"el diseño de cada motor es único. Esto lleva a diferentes flujos de trabajo "
+"y diferentes modos de construir la estructura de tus juegos. Todo esto surge "
+"de sus respectivas filosofías de diseño."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:13
 msgid ""
@@ -97,7 +96,6 @@ msgid "On top of that, you can **inherit** from any scene."
 msgstr "Además, puede **heredar** desde cualquier escena."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:38
-#, fuzzy
 msgid ""
 "A Godot scene could be a Weapon, a Character, an Item, a Door, a Level, part "
 "of a level… anything you’d like. It works like a class in pure code, except "
@@ -105,12 +103,11 @@ msgid ""
 "and matching the two."
 msgstr ""
 "Una escena de Godot puede ser un Arma, un Personaje, un Item, una Puerta, un "
-"Nivel, parte de un nivel, cualquier cosa que quieras. Esto trabaja como una "
+"Nivel, parte de un nivel… cualquier cosa que quieras. Esto funciona como una "
 "clase en código puro, excepto que eres libre de diseñarla usando el editor, "
-"utilizando sólo código o una mezcla de las dos."
+"usando sólo código, o una mezcla de las dos."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:43
-#, fuzzy
 msgid ""
 "It’s different from prefabs you find in several 3D engines, as you can then "
 "inherit from and extend those scenes. You may create a Magician that extends "
@@ -119,10 +116,10 @@ msgid ""
 "matches the game’s design."
 msgstr ""
 "Esto es diferente de los prefabs que se encuentran en distintos motores 3D, "
-"ya que se pueden heredar y extender las escenas. Se podría crear un Mago que "
+"ya que se pueden heredar y extender las escenas. Puedes crear un Mago que "
 "extienda tu Personaje. Modifica el Personaje en el editor y el Mago se "
-"actualizará. Esto ayuda a construir proyectos así las estructuras se ajustan "
-"al diseño del juego."
+"actualizará. Esto ayuda a construir tus proyectos de forma tal que su "
+"estructura se ajustan al diseño del juego."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
 msgid "|image0|"
@@ -291,17 +288,16 @@ msgstr ""
 "estos puede incluirse como plugins de terceros."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:120
-#, fuzzy
 msgid ""
 "On the other hand, an open codebase means you can **learn from and extend "
 "the engine** to your heart’s content. You can also debug games easily, as "
 "Godot will print errors with a stack trace, even if they come from the "
 "engine itself."
 msgstr ""
-"Por otra parte, tener un código base abierto significa que puedes **aprender "
-"y extender el motor** si lo deseas. Puedes también depurar juegos fácilmente "
-"ya que Godot imprimirá errores con un volcado de pila, aún si vienen del "
-"propio motor."
+"Por otra parte, tener una base de código abierta significa que puedes "
+"**aprender y extender el motor** todo lo que quieras. Puedes también depurar "
+"juegos fácilmente, ya que Godot imprimirá errores con un volcado de pila, "
+"aún si vienen del propio motor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:126
 msgid ""
@@ -361,14 +357,13 @@ msgstr ""
 "juegos, o **construir plugins y extender el editor.**"
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:151
-#, fuzzy
 msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``tool`` keyword, you can run any game code in the editor."
 msgstr ""
-"Esto lleva a un sistema confiable y flexible para UI ya que lo usa el editor "
-"mismo. Con la palabra clave ``tool``, puedes ejecutar código de juego en el "
-"editor."
+"Esto lleva a un sistema confiable y flexible para UI, ya que lo usa el "
+"editor mismo. Con la palabra clave ``tool``, puedes ejecutar cualquier "
+"código de juego en el editor."
 
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
 msgid "|image5|"

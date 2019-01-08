@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -373,24 +373,27 @@ msgid "Tag"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
+#, fuzzy
 msgid "Effect"
-msgstr ""
+msgstr "Effet"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
 msgid "Usage"
 msgstr "Utilisation"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:227
+#, fuzzy
 msgid "Result"
-msgstr ""
+msgstr "Résultat"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "[Class]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
+#, fuzzy
 msgid "Link a class"
-msgstr ""
+msgstr "Lier une classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:229
 msgid "Move the [Sprite]."
@@ -405,8 +408,9 @@ msgid "[method methodname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
+#, fuzzy
 msgid "Link to a method in this class"
-msgstr ""
+msgstr "Lien vers une méthode dans cette classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 msgid "Call [method hide]."
@@ -414,16 +418,18 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:231
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
-msgid "See :ref:`hide <class_spatial_hide>`."
-msgstr ""
+#, fuzzy
+msgid "See :ref:`hide <class_spatial_method_hide>`."
+msgstr ":ref:`String <class_String>`"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "[method Class.methodname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
+#, fuzzy
 msgid "Link to another class's method"
-msgstr ""
+msgstr "Lien vers une autre méthode de la classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "Call [method Spatial.hide]."
@@ -434,8 +440,9 @@ msgid "[member membername]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
+#, fuzzy
 msgid "Link to a member in this class"
-msgstr ""
+msgstr "Lien vers un membre dans la classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 msgid "Get [member scale]."
@@ -443,7 +450,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:235
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
-msgid "Get :ref:`scale <class_node2d_scale>`."
+msgid "Get :ref:`scale <class_node2d_property_scale>`."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
@@ -451,8 +458,9 @@ msgid "[member Class.membername]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
+#, fuzzy
 msgid "Link to another class's member"
-msgstr ""
+msgstr "Lien vers un autre membre de la classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:237
 msgid "Get [member Node2D.scale]."
@@ -463,8 +471,9 @@ msgid "[signal signalname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
+#, fuzzy
 msgid "Link to a signal in this class"
-msgstr ""
+msgstr "Lien vers un signal dans cette classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 msgid "Emit [signal renamed]."
@@ -472,7 +481,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:239
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
-msgid "Emit :ref:`renamed <class_node_renamed>`."
+msgid "Emit :ref:`renamed <class_node_signal_renamed>`."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
@@ -480,8 +489,9 @@ msgid "[signal Class.signalname]"
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
+#, fuzzy
 msgid "Link to another class's signal"
-msgstr ""
+msgstr "Lien vers un autre signal de la classe"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:241
 msgid "Emit [signal Node.renamed]."
@@ -542,31 +552,39 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "Multiline preformatted block"
-msgstr ""
+msgstr "Bloc multiligne préformaté"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:249
 msgid "*See below.*"
 msgstr "*Voir ci-dessous.*"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:252
+#, fuzzy
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
-"always use spaces for indentation (the parser will delete tabs). Example:"
+"always use **four spaces** for indentation (the parser will delete tabs). "
+"Example:"
 msgstr ""
+"Utiliser``[codeblock]`` pour des blocs de code préformatés. À l'intérieur de "
+"``[codeblock]``, utiliser toujours des espaces pour l'indentation "
+"(l'analyseur supprimera les tabulations). Par exemple :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:262
 msgid "Will display as:"
-msgstr ""
+msgstr "S'affichera comme cela :"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:272
 msgid "I don't know what this method does!"
-msgstr ""
+msgstr "Je ne sais pas ce que cette méthode fait !"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:274
 msgid ""
 "No problem. Leave it behind, and list the methods you skipped when you "
 "request a pull of your changes. Another writer will take care of it."
 msgstr ""
+"Aucun problème. Laissez-le derrière et lister les méthodes que vous avez "
+"passé quand vous faites un *pull request* de vos changements. Un autre "
+"contributeur s'en occupera."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:276
 msgid ""
@@ -585,9 +603,20 @@ msgstr "Localisation"
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:282
 msgid ""
-"Before we translate the documentation, we need to complete and proof-read it "
-"in English. We'll work on localization when we get past 90% completion."
+"The documentation can be translated in any language on `Hosted Weblate "
+"<https://hosted.weblate.org/projects/godot-engine/godot-docs/>`__."
 msgstr ""
-"Avant de traduire la documentation, nous avons besoin de la compléter et de "
-"la relire en anglais. Nous travaillerons sur la localisation quand nous "
-"aurons terminé plus de 90% de la documentation."
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:285
+msgid ""
+"Translated strings are synced manually by documentation maintainers in the "
+"`godot-docs-l10n <https://github.com/godotengine/godot-docs-l10n>`__ "
+"repository."
+msgstr ""
+
+#: ../../docs/community/contributing/updating_the_class_reference.rst:289
+msgid ""
+"Languages with a good level of completion have their own localized instances "
+"of ReadTheDocs. Open an issue on the ``godot-docs-l10n`` repository if you "
+"think that a new language is complete enough to get its own instance."
+msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgstr ""
 msgid ""
 "Godot's built-in script editor uses a lot of these conventions by default. "
 "Let it help you."
-msgstr "Godot的内置脚本编辑器默认使用了很多这些约定。 让它帮助你。"
+msgstr "Godot的内置脚本编辑器默认使用了很多这些约定。 让它帮助您。"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:22
 msgid "Code structure"
@@ -59,11 +59,11 @@ msgstr "缩进"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:27
 msgid "Indent type: Tabs *(editor default)*"
-msgstr "缩进类型：Tabs *（编辑器默认）*"
+msgstr "缩进类型:Tabs *(编辑器默认)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:29
 msgid "Indent size: 4 *(editor default)*"
-msgstr "缩进大小：4 *（编辑器默认）*"
+msgstr "缩进大小:4 *(编辑器默认)*"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:31
 msgid "Each indent level should be one greater than the block containing it."
@@ -96,7 +96,6 @@ msgid "Blank lines"
 msgstr "空白行"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:72
-#, fuzzy
 msgid "Surround functions and class definitions with a blank line."
 msgstr "用空行包围函数和类定义。"
 
@@ -140,7 +139,7 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:147
 msgid "**NEVER**:"
-msgstr "**决不要**："
+msgstr "**决不要**:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:156
 msgid "Naming conventions"
@@ -160,11 +159,11 @@ msgstr "类与节点"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:165
 msgid "Use PascalCase: ``extends KinematicBody``"
-msgstr "使用PascalCase：``extends KinematicBody``"
+msgstr "使用PascalCase:``extends KinematicBody``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:167
 msgid "Also when loading a class into a constant or variable:"
-msgstr "将类加载到常量或变量时："
+msgstr "将类加载到常量或变量时:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:174
 msgid "Functions and variables"
@@ -179,8 +178,8 @@ msgid ""
 "Prepend a single underscore (\\_) to virtual methods (functions the user "
 "must override), private functions, and private variables: ``func _ready()``"
 msgstr ""
-"在虚拟方法（用户必须覆盖的函数）中，私有函数和私有变量之前加上一个下划线 "
-"(\\_) ： ``func _ready()``"
+"在虚拟方法(用户必须覆盖的函数)中，私有函数和私有变量之前加上一个下划线 "
+"(\\_) : ``func _ready()``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:183
 msgid "Signals"

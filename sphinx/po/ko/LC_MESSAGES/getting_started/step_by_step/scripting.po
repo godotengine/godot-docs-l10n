@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,16 +36,14 @@ msgstr ""
 "를 추가하는 기능도 있습니다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
 msgstr ""
-"이것은 대단합니다, 기존의 경우에는 유연성을 제공해 주었지만, 다른 언어를 지원"
-"하기 어렵게 만들기도 했습니다."
+"이것은 대단합니다, 왜냐하면 큰 유연성을 제공해주기 때문입니다. 하지만 우리가 "
+"여러가지 언어를 지원하는 것을 더 어렵게 만들기는 합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:16
-#, fuzzy
 msgid ""
 "The \"main\" languages in Godot, though, are GDScript and VisualScript. The "
 "main reason to choose them is their level of integration with Godot, as this "
@@ -54,9 +52,9 @@ msgid ""
 "statically typed languages, go with C# and C++ instead."
 msgstr ""
 "Godot에서 \"메인\" 언어는 GDScript와 VisualScript입니다. 이들이 선택된 주된 "
-"이유는 Godot와 통합 능력이 좋기 때문입니다, 둘다 매끄러운 에디터 통합을 갖고 "
-"있습니다, 반면 C#과 C++는 별도의 IDE에 속합니다. 당신이 정적 언어를 좋아한다"
-"면, C#과 C++로 이동하세요."
+"이유는 Godot와 통합 능력이 좋기 때문입니다, 둘다 기본 에디터에서 매끄럽게 사"
+"용할 수 있습니다, 반면 C#과 C++는 별도의 IDE에서 편집해야 합니다. 당신이 정"
+"적 언어를 좋아한다면, C#과 C++을 선택하세요."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:22
 msgid "GDScript"
@@ -339,13 +337,12 @@ msgstr ""
 "명 및 기타 관련 옵션을 설정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"GDScript에서 파일 자체는 클래스를 나타내므로 클래스명 부분은 편집할 수 없습니"
-"다."
+"GDScript에서 파일 자체는 클래스를 나타내므로 클래스 이름 필드는 편집이 불가능"
+"합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -372,14 +369,13 @@ msgstr ""
 "서도 볼 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
 "where a default template will be included:"
 msgstr ""
 "스크립트를 편집하려면 위 이미지에 강조 표시된 두 버튼 중 하나를 선택합니다. "
-"그러면 기본 템플릿이 포함된 스크립트 에디터로 이동할겁니다:"
+"그러면 스크립트 에디터로 이동하고, 기본 템플릿이 나타납니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -470,17 +466,16 @@ msgstr ""
 "는 메서드를 실행할 (NodePath로 정의된) 하나의 노드와 그 메서드의 이름입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
-"왼쪽 위 구역은 씬에 있는 노드들을 보여주며 방출하는 노드 이름은 빨갛게 표시됩"
-"니다. \"Panel\" 노드를 선택해봅시다. 노드를 선택하면, 밑에 NodePath가 자동으"
-"로 방출하는 노드부터 선택된 노드까지의 경로를 가리키기 위해 자동으로 업데이트"
-"됩니다."
+"왼쪽 위 구역은 씬에 있는 노드들을 보여주며 신호를 내보내는(방출하는) 노드 이"
+"름은 빨갛게 표시됩니다. \"Panel\" 노드를 선택해봅시다. 노드를 선택하면, 밑에 "
+"NodePath가 자동으로 방출하는 노드부터 선택된 노드까지의 경로를 가리키기 위해 "
+"자동으로 업데이트됩니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:210
 msgid ""
@@ -495,21 +490,21 @@ msgstr ""
 "에 함수를 생성할 겁니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
 "the manual process!"
 msgstr ""
-"그리고 이것으로 시각 인터페이스를 사용하는 법에 관한 강좌를 마칩니다. 하지"
-"만, 이것이 스크립팅 튜토리얼이므로, 학습을 위해 수동 프로세스를 알아봅시다!"
+"그리고 이것으로 화면 인터페이스를 사용하는 법에 관한 강좌를 마칩니다. 하지"
+"만, 이것은 스크립팅 튜토리얼이므로, 학습을 위해 수동 프로세스를 알아봅시다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
+#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
-"used by Godot programmers: :ref:`Node.get_node() <class_Node_get_node>`. "
-"This function uses paths to fetch nodes anywhere in the scene, relative to "
-"the node that owns the script."
+"used by Godot programmers: :ref:`Node.get_node() "
+"<class_Node_method_get_node>`. This function uses paths to fetch nodes "
+"anywhere in the scene, relative to the node that owns the script."
 msgstr ""
 "이것을 달성하기 위해서, 우리는 Godot 프로그래머들이 가장 잘 사용하는 기능을 "
 "소개하겠습니다: :ref:`Node.get_node() <class_Node_get_node>` 입니다. 이 기능"
@@ -538,9 +533,10 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "그런 다음 버튼을 누르면 호출되는 기능을 작성합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
+#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
-"ref:`Object.connect() <class_Object_connect>`."
+"ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "마지막으로 버튼의 \"누름\" 신호를 :ref:`Object.connect() "
 "<class_Object_connect>` 을 사용하여 ``_Ready`` 에 연결합니다."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -180,16 +180,16 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr ""
+"Para este proyecto, seguiremos las convenciones de nomenclatura de Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Para este proyecto, usaremos las siguientes convenciones de nombres de "
-"Godot. Clases (nodos) usa ``PascalCase``, variables y funciones, utiliza "
-"``snake_case`` y las constantes ``ALL_CAPS``."
+"**GDScript**: Clases (nodos) usan PascalCase, variables y funciones utilizan "
+"snake_case, y las constantes TODO_MAYUSCULAS (Lee :ref:"
+"`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
 msgid ""
@@ -198,6 +198,11 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Las clases, las variables de exportación y los métodos usan "
+"PascalCase, los campos privados usan _camelCase, y las variables y "
+"parámetros locales usan camelCase (Ver :ref:`doc_c_sharp_styleguide`). Ten "
+"cuidado de escribir los nombres de los métodos de manera precisa al conectar "
+"señales."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -338,6 +343,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Si estás usando C#, necesitas (re)construir los archivos assembly del "
+"proyecto cada vez que quieras tener visibles las variables exportadas o las "
+"señales. Esta construcción puede ser lanzada manualmente pulsando en la "
+"palabra \"Mono\" en la parte inferior de la ventana de edición para revelar "
+"el Panel Mono, y luego haciendo clic en el botón \"Construir Proyecto\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -348,20 +358,19 @@ msgstr ""
 "un buen momento para averiguar el tamaño de la ventana de juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:209
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 "Ahora podemos utilizar la función ``_process()`` para definir lo que el "
-"jugador hará. En cada frame, se llama a ``_process()``, así que lo usaremos "
-"para actualizar elementos del juego, los que esperamos que cambien a menudo. "
-"Así es como lo haremos:"
+"jugador hará. En cada frame se llama a ``_process()``, así que la usaremos "
+"para actualizar elementos del juego que esperamos que cambien a menudo. Aquí "
+"la haremos:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid "Check for input."
-msgstr "Comprobando entradas."
+msgstr "Comprobar entradas."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:214
 msgid "Move in the given direction."
@@ -534,16 +543,15 @@ msgstr ""
 "abreviada de arriba:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:395
-#, fuzzy
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
 "line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
-"Reproduce la escena de nuevo y revisa que la animación es correcta para cada "
-"dirección. Cuando estés seguro de que el movimiento funciona correctamente, "
-"agrega esta línea a ``_ready()`` así el jugador estará oculto cuando "
-"comience el juego:"
+"Reproduce la escena de nuevo y revisa que las animaciones sean correctas "
+"para cada una de las direcciones. Cuando estés seguro de que el movimiento "
+"funciona correctamente, agrega esta línea a ``_ready()`` para que el jugador "
+"esté oculto cuando comience el juego:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:410
 msgid "Preparing for collisions"
@@ -821,13 +829,12 @@ msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "Mira :ref:`doc_instancing` para aprender más sobre instanciación."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:632
-#, fuzzy
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
 msgstr ""
-"Ahora agreguemos los siguientes nodos hijo a ``Main``, y nómbralos como se "
-"muestra (los valores son en segundos):"
+"Ahora agrega los siguientes nodos como hijos de ``Main``, y nómbralos como "
+"se muestra (los valores son en segundos):"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:635
 msgid ""
@@ -953,7 +960,6 @@ msgid "Main script"
 msgstr "Script Principal"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:682
-#, fuzzy
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -996,16 +1002,16 @@ msgstr ""
 "otros dos temporizadores. ``ScoreTimer`` incrementará la puntuación en 1."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:789
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
 "``PathFollow2D`` node will automatically rotate as it follows the path, so "
 "we will use that to select the mob's direction as well as its position."
 msgstr ""
-"En ``_on_MobTimer_timeout()`` crearemos la instancia del enemigo, toma una "
-"ubicación al azar de ``Path2D``, y crea el enemigo. El nodo ``PathFollow2D`` "
-"rotará automáticamente mientras recorre el camino, usaremos eso para "
+"En ``_on_MobTimer_timeout()``, crearemos una instancia del enemigo, "
+"tomaremos una ubicación aleatoria a lo largo del ``Path2D``, y luego "
+"pondermos al enemigo en movimiento. El nodo ``PathFollow2D`` rotará "
+"automáticamente mientras recorre el camino, así que usaremos eso para "
 "seleccionar la dirección y la posición del enemigo."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:795
@@ -1236,7 +1242,6 @@ msgid "Text: ``Start``"
 msgstr "Text: ``Start``"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:937
-#, fuzzy
 msgid ""
 "To make the text of the ``MessageLabel`` fit the game's window click the "
 "small icon next to your text property. This will open up a new window where "
@@ -1245,7 +1250,10 @@ msgid ""
 "game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
 "following for each of the three ``Control`` nodes:"
 msgstr ""
-"La fuente por defecto de nodos ``Control`` es pequeña y no escala bien. "
+"Para hacer que el texto de ``MessageLabel`` entre en la ventana del juego, "
+"pulsa en el ícono pequeño al costado la propiedad de texto. Esto abrirá una "
+"nueva ventana donde puedes agregar una línea nueva entre las palabras. La "
+"fuente por defecto de los nodos ``Control`` es pequeña y no escala bien. "
 "Entre los recursos del juego hay una fuente incluida, llamada \"Xolonium-"
 "Regular.ttf\". Para usar esta fuente, haz lo siguiente en los tres nodos "
 "``Control``:"
@@ -1296,9 +1304,8 @@ msgstr ""
 "botón \"Start\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
-#, fuzzy
 msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "Esta función se llamará en ``Main`` cuando el puntaje cambie."
+msgstr "Esta función será llamada por ``Main`` cada vez que el puntaje cambie."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1045
 msgid ""
@@ -1526,21 +1533,15 @@ msgid "Project files"
 msgstr "Archivos del Proyecto"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "You can find a completed version of this project at these locations:"
 msgstr ""
-"Encontrarás la versión completa de este proyecto aquí: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+"Encontrarás una versión completada de este proyecto en las siguientes "
+"direcciones:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
-#, fuzzy
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
-msgstr ""
-"Encontrarás la versión completa de este proyecto aquí: https://github.com/"
-"kidscancode/Godot3_dodge/releases"
+msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
-#, fuzzy
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
-"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"

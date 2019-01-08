@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,23 +33,30 @@ msgid ""
 "thinking is along the lines of *\"Oh, it's just like rotating in 2D, except "
 "now rotations happen in X, Y and Z\"*."
 msgstr ""
+"Gdy pierwszy raz tworzymy grę 3D, praca z rotacjami może się okazać "
+"skomplikowana. Osoby pracujące wcześniej w 2D mogą pomyśleć, że jest to *„to "
+"samo co w 2D, z tym że obracamy wokół osi X, Y i Z”*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:12
 msgid ""
 "At first this seems easy and for simple games, this way of thinking may even "
 "be enough. Unfortunately, it's often incorrect."
 msgstr ""
+"Z początku może się to wydawać proste i oczywiste. Dla prostych gier taki "
+"sposób myślenia czasem wystarczy. Niestety, często jest on nieprawidłowy."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:14
 msgid ""
 "Angles in three dimensions are most commonly referred to as \"Euler Angles\"."
-msgstr ""
+msgstr "Kąty obracające w trzech wymiarach zwykle nazywa się „kątami Eulera”."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:18
 msgid ""
 "Euler angles were introduced by mathematician Leonhard Euler in the early "
 "1700s."
 msgstr ""
+"Kąty Eulera zostały wprowadzone przez matematyka Leonarda Eulera na początku "
+"osiemnastego wieku."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:22
 msgid ""
@@ -61,18 +68,18 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:28
-#, fuzzy
 msgid "Problems of Euler angles"
-msgstr "Problem z kątami Eulera"
+msgstr "Problemy z kątami Eulera"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:30
 msgid ""
 "While it may seem intuitive that each axis has a rotation, the truth is that "
 "it's just not practical."
 msgstr ""
+"Obracanie wokół poszczególnych osi może i wydaje się intuicyjne, ale jest "
+"niepraktyczne."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:33
-#, fuzzy
 msgid "Axis order"
 msgstr "Kolejność osi"
 
@@ -84,6 +91,10 @@ msgid ""
 "only way an orientation can be produced from angles is to rotate the object "
 "angle by angle, in an *arbitrary order*."
 msgstr ""
+"Głównym problemem jest brak jednej, konsekwentnej metody wyznaczającej "
+"orientację na podstawie kątów. Nie ma w matematyce zwyczajnej funkcji, która "
+"dla trzech kątów stworzy nam obrót w 3D. Jedyne, co możemy zrobić, to "
+"wykonać kolejne obroty, jeden po drugim, w *pewnej kolejności*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:39
 msgid ""
@@ -94,6 +105,12 @@ msgid ""
 "are several ways to construct an orientation from 3 different angles, "
 "depending on *the order of the rotations*."
 msgstr ""
+"Możemy najpierw obrócić wokół osi *X*, potem *Y*, a następnie *Z*. Możemy "
+"też wybrać najpierw oś *Y*, potem *Z* i na końcu *X*. Tak czy inaczej obrót "
+"się wykona, ale w zależności od przyjętej kolejności *rezultat niekoniecznie "
+"będzie ten sam*. To oznacza, że mamy kilka sposobów na wyznaczenie "
+"orientacji na podstawie trzech kątów, różniących się *kolejnością "
+"poszczególnych rotacji*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:43
 msgid ""
@@ -113,6 +130,9 @@ msgid ""
 "Moving the mouse left and right controls your view angle parallel to the "
 "ground, while moving it up and down moves the player's view up and down."
 msgstr ""
+"Wyobraź sobie, że pracujesz nad kamerą pierwszoosobową (np. w FPS-ie). "
+"Poruszanie myszką w lewo i prawo powinno obracać widok równolegle do ziemi. "
+"Ruch myszką w górę i w dół oznacza natomiast patrzenie się w górę i w dół."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:51
 msgid ""
@@ -120,12 +140,16 @@ msgid ""
 "in the *Y* axis (\"up\" in this case, since Godot uses a \"Y-Up\" "
 "orientation), followed by rotation in the *X* axis."
 msgstr ""
+"Żeby osiągnąć zamierzony efekt, trzeba najpierw obrócić wokół osi *Y* (w "
+"Godocie oś *Y* jest skierowana ku górze), a następnie wokół osi *X*."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:55
 msgid ""
 "If we were to apply rotation in the *X* axis first, and then in *Y*, the "
 "effect would be undesired:"
 msgstr ""
+"Jeżeli zrobimy to w odwrotnej kolejności, tj. najpierw oś *X*, a następnie "
+"*Y*, uzyskamy coś nieoczekiwanego:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:59
 msgid ""
@@ -133,6 +157,9 @@ msgid ""
 "axis rotations to be applied may differ. Therefore, applying rotations in X, "
 "Y, and Z is not enough: you also need a *rotation order*."
 msgstr ""
+"W zależności od rodzaju gry lub zamierzonego efektu, pożądana kolejność "
+"obrotów może być różna. W związku z tym, nie można zwyczajnie obracać po X, "
+"Y i Z. *Kolejność obrotów* trzeba doprecyzować."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 msgid "Interpolation"
@@ -145,10 +172,14 @@ msgid ""
 "rotations). One logical way to approach this is to interpolate the angles "
 "from one position to the next. One would expect it to look like this:"
 msgstr ""
+"Kolejnym problemem z kątami Eulera jest interpolacja. Załóżmy, że chcemy "
+"płynnie przejść między dwoma położeniami kamery, czy przeciwników (włącznie "
+"z rotacjami). Najprostszy sposób to interpolowanie każdego kąta z "
+"pierwotnego do docelowego. Rezultat ma wyglądać tak:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:68
 msgid "But this does not always have the expected effect when using angles:"
-msgstr ""
+msgstr "Ale gdy używamy kątów, efekt może być inny:"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:72
 msgid "The camera actually rotated the opposite direction!"
@@ -165,6 +196,9 @@ msgid ""
 "degrees is not the same as going from ``270`` to ``360``, even though the "
 "angles are equivalent)."
 msgstr ""
+"Przekształcenie z obrotu do orientacji nie jest liniowe. Interpolacja może "
+"pójść dłuższą drogą (np. zmiana kąta z ``270`` do ``0`` stopni przebiega "
+"inaczej niż z ``270`` do ``360``, mimo iż kąty są równoważne)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:77
 msgid ""
@@ -174,7 +208,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:80
-#, fuzzy
 msgid "Say no to Euler angles"
 msgstr "Powiedz nie dla kątów Eulera"
 
@@ -186,10 +219,14 @@ msgid ""
 "rotations (generally just one axis, or even two in limited cases). As much "
 "as you may be tempted, don't use it."
 msgstr ""
+"Dlatego zaleca się **nie używać** własności ``rotation`` z węzłów :ref:"
+"`class_Spatial`. Istnieje, by była widoczna w edytorze, a także dla "
+"zachowania spójności z częścią 2D silnika. Nadaje się jedynie do prostych "
+"obrotów (głównie wokół jednej osi, czasami dwóch)."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:84
 msgid "Instead, there is a better way to solve your rotation problems."
-msgstr "Zamiast tego lepiej jest rozwiązać problemy z rotacją."
+msgstr "Istnieje lepszy sposób na obracanie."
 
 #: ../../docs/tutorials/3d/using_transforms.rst:87
 #, fuzzy

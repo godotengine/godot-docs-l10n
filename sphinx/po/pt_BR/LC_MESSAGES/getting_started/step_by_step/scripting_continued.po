@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,10 +42,12 @@ msgstr ""
 "quadro. Existem dois tipos de processamento: o ocioso e o físico."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
+#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
-"<class_Node__process>` is found in a script. It can be turned off and on "
-"with the :ref:`Node.set_process() <class_Node_set_process>` function."
+"<class_Node_method__process>` is found in a script. It can be turned off and "
+"on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
+"function."
 msgstr ""
 "Processamento ocioso é ativado quando o método :ref:`Node._process() "
 "<class_Node__process>` é encontrado em um roteiro. Ele pode ser desativado e "
@@ -148,10 +150,11 @@ msgstr ""
 "são inimigos:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
+#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
-"call_group() <class_SceneTree_call_group>`:"
+"call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
 "Desta maneira, se o jogador é descoberto se esgueirando pela base secreta, "
 "todos os inimigos podem ser notificados por alarme sonoro usando: :ref:"
@@ -167,9 +170,11 @@ msgstr ""
 "\")."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
+#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
-"ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
+"ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
 "É também possível conseguir a lista completa de nós ``inimigos`` chamando :"
 "ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
@@ -193,12 +198,13 @@ msgid "Notifications"
 msgstr "Notificações"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
+#, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
 "of them. It's just good to know they exist. For example, you may add an :ref:"
-"`Object._notification() <class_Object__notification>` function in your "
-"script:"
+"`Object._notification() <class_Object_method__notification>` function in "
+"your script:"
 msgstr ""
 "O Godot tem um sistema de notificações. Elas não costumam ser necessárias "
 "para roteirizar, já que são programação de baixo nível e se provê funções "
@@ -278,9 +284,10 @@ msgstr ""
 "caso frequentemente e lhe alertar sobre isso."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
+#, fuzzy
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
-"<class_Node_queue_free>`. This erases the node safely during idle."
+"<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
 "A forma mais segura de excluir um nó é usando :ref:`Node.queue_free() "
 "<class_Node_queue_free>`. Isso apaga o nó com segurança durante o tempo "
@@ -307,12 +314,13 @@ msgstr ""
 "de análise (apenas para GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
+#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
-"function :ref:`PackedScene.instance() <class_PackedScene_instance>` must be "
-"called. This will return the tree of nodes that can be added to the active "
-"scene:"
+"function :ref:`PackedScene.instance() <class_PackedScene_method_instance>` "
+"must be called. This will return the tree of nodes that can be added to the "
+"active scene:"
 msgstr ""
 "Mas ``scene`` ainda não é um nó. Ela está empacotada em um recurso especial "
 "chamado :ref:`PackedScene <class_PackedScene>`. Para criar um nó de fato, é "

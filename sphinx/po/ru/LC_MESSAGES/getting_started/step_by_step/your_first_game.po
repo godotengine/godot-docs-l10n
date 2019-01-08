@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,25 +179,28 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "Для этого проекта мы будем следовать правилам именования Godot."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Для этого проекта мы будем следовать соглашениям об именах Godot. Классы "
-"(узлы) используют ``PascalCase``, переменные и функции используют "
-"``snake_case``, а константы используют ``ALL_CAPS``."
+"**GDScript**: Классы (узлы) используют PascalCase, переменные и функции - "
+"snake_case, константы - ALL_CAPS (см. :ref:`doc_gdscript_styleguide`)."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
+#, fuzzy
 msgid ""
 "**C#**: Classes, export variables and methods use PascalCase, private fields "
 "use _camelCase, local variables and parameters use camelCase (See :ref:"
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Классы, экспортируемые переменные и методы используют PascalCase, "
+"приватные поля - _camelCase, локальные переменные и параметры - CamelCase "
+"(см. :ref:`doc_c_sharp_styleguide`).  Будьте осторожны, набирайте имена "
+"методов точно при подключении сигналов."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -339,6 +342,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Если вы используете C#, вам нужно (пере)собирать сборки проекта всякий раз, "
+"когда вы хотите увидеть новые экспортируемые переменные или сигналы. Эта "
+"сборка может быть запущена вручную путем нажатия на слово \"Mono\" в нижней "
+"части окна редактора, чтобы открыть Mono Panel, а затем на кнопку \"Build "
+"Project\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -1261,7 +1269,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:955
 msgid "Now add this script to ``HUD``:"
-msgstr "Теперь добавьте этот сценарий '' HUD'':"
+msgstr "Теперь добавьте этот скрипт в ``HUD``:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:974
 msgid ""
@@ -1532,4 +1540,4 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
+msgstr "https://github.com/godotengine/godot-demo-projects"

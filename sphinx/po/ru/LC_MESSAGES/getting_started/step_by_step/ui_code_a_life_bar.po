@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,20 +19,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:4
 msgid "Control the game's UI with code"
-msgstr "Контролирование игровым интерфейсом с помощью кода"
+msgstr "Управление игровым интерфейсом из кода"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:7
 msgid "Intro"
 msgstr "Введение"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
-#, fuzzy
 msgid ""
 "In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
-"В этом уроке вы присоедините шкалу жизни к персонажу и сделаете анимацию "
-"потери здоровья."
+"В этом уроке вы присоедините персонажа к шкале жизни и анимируете потерю "
+"здоровья."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
@@ -52,7 +51,7 @@ msgstr "Как **подключить** персонажа к интерфейс
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:21
 msgid "How to **control** a GUI with GDscript"
-msgstr "Как ** управлять** интерфейсом с помощью GDscript"
+msgstr "Как **управлять** интерфейсом с помощью GDscript"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:22
 msgid "How to **animate** a life bar with the :ref:`Tween <class_Tween>` node"
@@ -572,9 +571,9 @@ msgstr "Godot напишет метод обратного вызова для �
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
 #, fuzzy
 msgid ""
-"Inside the parens after the function name, add a ``player_health`` argument. "
-"When the player emits the ``health_changed`` signal, it will send its "
-"current ``health`` alongside it. Your code should look like:"
+"Inside the parentheses after the function name, add a ``player_health`` "
+"argument. When the player emits the ``health_changed`` signal, it will send "
+"its current ``health`` alongside it. Your code should look like:"
 msgstr ""
 "В скобках после имени функции добавьте аргумент ``player_health``. Когда "
 "игрок излучает сигнал ``health_changed``, он посылает его текущее ``health`` "
@@ -944,15 +943,21 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:571
 msgid "Fade the bar when the Player dies"
-msgstr ""
+msgstr "Исчезновение шкал, когда игрок умирает"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
+#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
 "well when the character died. We will reuse the same ``Tween`` node as it "
 "manages multiple animations in parallel for us."
 msgstr ""
+"Когда зеленый персонаж умирает, то проигрывается анимация смерти и он "
+"пропадает. На данный момент, мы не должны больше показывать интерфейс. "
+"Давайте когда персонаж погибает будет скрывать шкалы. Мы будем повторно "
+"использовать один и тот же узел ``Tween`, поскольку он управляет несколькими "
+"анимациями параллельно для нас."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
 msgid ""
@@ -961,16 +966,23 @@ msgid ""
 "the ``Player`` node in the Scene dock and click on the Node tab next to the "
 "Inspector."
 msgstr ""
+"Во-первых, ``GUI`` необходимо подключиться к сигналу ``died`` у``Player``, "
+"чтобы узнать, когда тот умер. Нажмите :kbd:`F1` для возврата в 2D-среду. "
+"Выберите вкладку ``Player`` в панели Сцен и щелкните на вкладку Узел рядом с "
+"Инспектором."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr ""
+"Найдите сигнал ``died``, выберите его и нажмите кнопку Connect (Подключить)."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
+#, fuzzy
 msgid "The signal should already have the Enemy connected to it"
-msgstr ""
+msgstr "Сигнал должен быть уже подключен к Врагу."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
+#, fuzzy
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -978,10 +990,17 @@ msgid ""
 "the bottom of the window. This will take you to the ``GUI.gd`` file in the "
 "Script Workspace."
 msgstr ""
+"В окне Connecting Signal (Подключение сигнала) снова подключитесь к узлу "
+"``GUI``. Путь к узлу должен быть ``../../GUI``, а метод в узле должен "
+"показывать ``_on_Player_died``. Оставьте опцию Сделать Функцию включенной и "
+"нажмите Подключить в нижней части окна. После этого вы перейдете в ``GUI."
+"gd`` во вкладке Script."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
 msgid "You should get these values in the Connecting Signal window"
 msgstr ""
+"Вы должны получить эти значения в окне Connecting Signal (Подключение "
+"сигнала)"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:601
 msgid ""
@@ -989,12 +1008,19 @@ msgid ""
 "information, we emit a new signal. Use them wisely: the more connections you "
 "add, the harder they are to track."
 msgstr ""
+"Теперь вы должны увидеть закономерность: каждый раз, когда графическому "
+"интерфейсу нужна новая информация, мы посылаем новый сигнал. Используйте их "
+"разумно: чем больше связей вы добавляете, тем сложнее их отслеживать."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:603
+#, fuzzy
 msgid ""
 "To animate a fade on a UI element, we have to use its ``modulate`` property. "
 "``modulate`` is a ``Color`` that multiplies the colors of our textures."
 msgstr ""
+"Чтобы анимировать исчезновение на елементе UI, мы должны использовать его "
+"свойство ``modulate``. ``modulate`` - это ``Color``, который умножает цвета "
+"наших текстур."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:609
 msgid ""
@@ -1002,15 +1028,24 @@ msgid ""
 "from it. It lets you toggle the visibility of the node, assign a shader to "
 "it, and modify it using a color with `modulate`."
 msgstr ""
+"`modulate` наследуется из класса `CanvasItem`, от него наследуются все 2D и "
+"UI узлы. Он позволяет переключать видимость узла, назначать ему шейдер и "
+"изменять его цвет с помощью `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
+#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
 "interface. If we lower the alpha channel, our interface fades out."
 msgstr ""
+"``modulate`` принимает значение ``Color`` с 4 каналами: красный, зеленый, "
+"синий и альфа-канал. Если мы сделаем темнее любой из первых трех каналов, то "
+"интерфейс будет темнее. Если мы снизим альфа-канал, наш интерфейс станет "
+"прозрачным."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
+#, fuzzy
 msgid ""
 "We're going to tween between two color values: from a white with an alpha of "
 "``1``, that is to say at full opacity, to a pure white with an alpha value "
@@ -1018,6 +1053,11 @@ msgid ""
 "``_on_Player_died`` method and name them ``start_color`` and ``end_color``. "
 "Use the ``Color()`` constructor to build two ``Color`` values."
 msgstr ""
+"Давайте анимировать переход от белого цвета с альфа-каналом ``1``, то есть "
+"при полной непрозрачности, к чисто белому со значением альфа ``0``, то есть "
+"полностью прозрачному. Добавим две переменные вверху метода "
+"``_on_on_Player_died`` и назовем их ``start_color`` и ``end_color``. "
+"Используйте конструктор ``Color()`` для построения двух ``Color`` значений."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:637
 msgid ""
@@ -1025,28 +1065,37 @@ msgid ""
 "respectively ``1.0`` and ``0.0`` in ``start_color`` and ``end_color``, is "
 "the alpha channel."
 msgstr ""
+"``Color(1.0, 1.0, 1.0, 1.0)`` соответствует белому цвету. Четвертый "
+"аргумент, соответственно ``1.0`` и ``0.0`` в ``start_color`` и "
+"``end_color``, - это альфа-канал."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:641
 msgid ""
 "We then have to call the ``interpolate_property`` method of the ``Tween`` "
 "node again:"
-msgstr ""
+msgstr "Затем снова вызываем метод ``interpolate_property`` узла ``Tween``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
+#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
+"На этот раз мы меняем свойство ``modulate`` и анимируем его из "
+"``start_color`` на `end_color``. Продолжительность составляет одну секунду, "
+"с линейным переходом. Здесь опять же, поскольку переход линейный, плавность "
+"не имеет значения. Вот полный метод ``_on_on_Player_died``:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr ""
+"И все. Теперь вы можете запустить игру, чтобы увидеть конечный результат!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
 msgid "The final result. Congratulations for getting there!"
-msgstr ""
+msgstr "Конечный результат. Поздравляю, что добрались сюда!"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:687
 msgid ""
@@ -1056,3 +1105,8 @@ msgid ""
 "signal to forward the information from the `Player` to the `GUI` and let the "
 "`GUI` process it."
 msgstr ""
+"Используя те же методы, вы можете изменить цвет бара, когда игрока "
+"отравляют, сделать бар красным, когда его здоровье падает, потрясти "
+"пользовательский интерфейс, когда он получает критический удар... принцип "
+"тот же самый: подать сигнал для передачи данных из `Player'a` в `GUI` и дать "
+"`GUI` обработать их."

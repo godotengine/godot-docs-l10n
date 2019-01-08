@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,8 +57,8 @@ msgid ""
 "In the physics world, Godot stores all the low level collision and physics "
 "information in a *space*. The current 2d space (for 2D Physics) can be "
 "obtained by accessing :ref:`CanvasItem.get_world_2d().space "
-"<class_CanvasItem_get_world_2d>`. For 3D, it's :ref:`Spatial.get_world()."
-"space <class_Spatial_get_world>`."
+"<class_CanvasItem_method_get_world_2d>`. For 3D, it's :ref:`Spatial."
+"get_world().space <class_Spatial_method_get_world>`."
 msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:33
@@ -77,8 +77,8 @@ msgid ""
 "Godot physics runs by default in the same thread as game logic, but may be "
 "set to run on a separate thread to work more efficiently. Due to this, the "
 "only time accessing space is safe is during the :ref:`Node."
-"_physics_process() <class_Node__physics_process>` callback. Accessing it "
-"from outside this function may result in an error due to space being "
+"_physics_process() <class_Node_method__physics_process>` callback. Accessing "
+"it from outside this function may result in an error due to space being "
 "*locked*."
 msgstr ""
 
@@ -109,13 +109,15 @@ msgstr ""
 msgid ""
 "For performing a 2D raycast query, the method :ref:"
 "`Physics2DDirectSpaceState.intersect_ray() "
-"<class_Physics2DDirectSpaceState_intersect_ray>` may be used. For example:"
+"<class_Physics2DDirectSpaceState_method_intersect_ray>` may be used. For "
+"example:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:123
 msgid ""
 "The result is a dictionary. If the ray didn't hit anything, the dictionary "
-"will be empty. If it did hit something it will contain collision information:"
+"will be empty. If it did hit something, it will contain collision "
+"information:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:137
@@ -166,8 +168,8 @@ msgstr ""
 #: ../../docs/tutorials/physics/ray-casting.rst:198
 msgid ""
 "The optional fourth argument for ``intersect_ray()`` is a collision mask. "
-"For example, to use same mask as the parent body, use the ``collision_mask`` "
-"member variable:"
+"For example, to use the same mask as the parent body, use the "
+"``collision_mask`` member variable:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:226
@@ -177,7 +179,7 @@ msgstr ""
 #: ../../docs/tutorials/physics/ray-casting.rst:228
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
-"There is not much of a need to do this because :ref:`CollisionObject "
+"There is not much need to do this because :ref:`CollisionObject "
 "<class_CollisionObject>` has an \"input_event\" signal that will let you "
 "know when it was clicked, but in case there is any desire to do it manually, "
 "here's how."

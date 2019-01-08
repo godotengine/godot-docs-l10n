@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,12 +64,13 @@ msgid "Space"
 msgstr "공간"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
+#, fuzzy
 msgid ""
 "In the physics world, Godot stores all the low level collision and physics "
 "information in a *space*. The current 2d space (for 2D Physics) can be "
 "obtained by accessing :ref:`CanvasItem.get_world_2d().space "
-"<class_CanvasItem_get_world_2d>`. For 3D, it's :ref:`Spatial.get_world()."
-"space <class_Spatial_get_world>`."
+"<class_CanvasItem_method_get_world_2d>`. For 3D, it's :ref:`Spatial."
+"get_world().space <class_Spatial_method_get_world>`."
 msgstr ""
 "물리 세계에서, Godot는 모든 낮은 수준의 충돌과 물리학 정보를 한 *공간*에 저장"
 "합니다. 현재 2D 공간(2D 물리용)은 :ref:`CanvasItem.get_world_2d().space "
@@ -91,12 +92,13 @@ msgid "Accessing space"
 msgstr "공간에 접근하기"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:40
+#, fuzzy
 msgid ""
 "Godot physics runs by default in the same thread as game logic, but may be "
 "set to run on a separate thread to work more efficiently. Due to this, the "
 "only time accessing space is safe is during the :ref:`Node."
-"_physics_process() <class_Node__physics_process>` callback. Accessing it "
-"from outside this function may result in an error due to space being "
+"_physics_process() <class_Node_method__physics_process>` callback. Accessing "
+"it from outside this function may result in an error due to space being "
 "*locked*."
 msgstr ""
 "Godot은 기본적으로 게임 로직과 동일한 스레드에서 실행되지만, 보다 효율적으로 "
@@ -132,19 +134,23 @@ msgid "Raycast query"
 msgstr "광선 투사 쿼리"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:102
+#, fuzzy
 msgid ""
 "For performing a 2D raycast query, the method :ref:"
 "`Physics2DDirectSpaceState.intersect_ray() "
-"<class_Physics2DDirectSpaceState_intersect_ray>` may be used. For example:"
+"<class_Physics2DDirectSpaceState_method_intersect_ray>` may be used. For "
+"example:"
 msgstr ""
 "2D 광선 투사 쿼리를 수행하려면 :ref:`Physics2DDirectSpaceState."
 "intersect_ray() <class_Physics2DDirectSpaceState_intersect_ray>` 방법을 사용"
 "할 수 있습니다. 예를 들면 다음과 같습니다:"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:123
+#, fuzzy
 msgid ""
 "The result is a dictionary. If the ray didn't hit anything, the dictionary "
-"will be empty. If it did hit something it will contain collision information:"
+"will be empty. If it did hit something, it will contain collision "
+"information:"
 msgstr ""
 "결과는 딕셔너리입니다. 만약 광선이 아무 것도 건드리지 않으면, 딕셔너리는 텅 "
 "비게 될 것입니다. 만약 충돌했을 경우 충돌 정보가 포함됩니다:"
@@ -204,10 +210,11 @@ msgstr ""
 "는 것이 훨씬 효율적입니다."
 
 #: ../../docs/tutorials/physics/ray-casting.rst:198
+#, fuzzy
 msgid ""
 "The optional fourth argument for ``intersect_ray()`` is a collision mask. "
-"For example, to use same mask as the parent body, use the ``collision_mask`` "
-"member variable:"
+"For example, to use the same mask as the parent body, use the "
+"``collision_mask`` member variable:"
 msgstr ""
 "``intersect_ray()`` 의 네 번째 선택적인 인수는 충돌 마스크이다. 예를 들어 부"
 "모body와 동일한 마스크를 사용하려면 ``collision_mask`` 멤버 변수를 사용해야 "
@@ -218,9 +225,10 @@ msgid "3D ray casting from screen"
 msgstr "화면에서의 3D ray casting(광선 투사)"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:228
+#, fuzzy
 msgid ""
 "Casting a ray from screen to 3D physics space is useful for object picking. "
-"There is not much of a need to do this because :ref:`CollisionObject "
+"There is not much need to do this because :ref:`CollisionObject "
 "<class_CollisionObject>` has an \"input_event\" signal that will let you "
 "know when it was clicked, but in case there is any desire to do it manually, "
 "here's how."

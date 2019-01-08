@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,6 @@ msgstr ""
 "supplémentaires !"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:13
-#, fuzzy
 msgid ""
 "This is great, mostly due to the large amount of flexibility provided, but "
 "it also makes our work supporting languages more difficult."
@@ -359,13 +358,12 @@ msgstr ""
 "d'autres options."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:139
-#, fuzzy
 msgid ""
 "In GDScript, the file itself represents the class, so the class name field "
 "is not editable."
 msgstr ""
-"Dans GDScript, le fichier lui-même représente la classe, de sorte que le "
-"champ du nom de la classe n'est pas modifiable."
+"Dans GDScript, le fichier lui-même représente la classe, ce qui rend le nom "
+"de la classe non modifiable."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:142
 msgid ""
@@ -394,7 +392,6 @@ msgstr ""
 "dans la propriété script dans l'Inspecteur :"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:156
-#, fuzzy
 msgid ""
 "To edit the script, select either of these buttons, both of which are "
 "highlighted in the above image. This will bring you to the script editor, "
@@ -499,18 +496,17 @@ msgstr ""
 "déclencher."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:205
-#, fuzzy
 msgid ""
 "The top-left section displays a list of your scene's nodes with the emitting "
 "node's name highlighted in red. Select the \"Panel\" node here. When you "
 "select a node, the NodePath at the bottom will automatically update to point "
 "to a relative path from the emitting node to the selected node."
 msgstr ""
-"La section en haut à gauche affiche une liste des noeuds de votre scène avec "
-"le nom du noeud émetteur mis en évidence en rouge. Sélectionnez ici le noeud "
-"\"Panel\". Quand vous sélectionnez un noeud, le NodePath en bas se mettra à "
-"jour automatiquement pour pointer vers un chemin relatif du noeud émetteur "
-"au noeud sélectionné."
+"La section en haut à gauche affiche une liste des nœuds de votre scène avec "
+"le nom du nœud émetteur surligné en rouge. Sélectionnez ici le nœud \"Panel"
+"\". Quand vous sélectionnez un nœud, le NodePath en bas se mettra à jour "
+"automatiquement pour pointer vers un chemin relatif du nœud émetteur au nœud "
+"sélectionné."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:210
 msgid ""
@@ -526,7 +522,6 @@ msgstr ""
 "mettre en place la connexion."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:215
-#, fuzzy
 msgid ""
 "And that concludes the guide on how to use the visual interface. However, "
 "this is a scripting tutorial, so for the sake of learning, let's dive into "
@@ -537,11 +532,12 @@ msgstr ""
 "d'apprentissage, penchons-nous sur la méthode manuelle !"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
+#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
-"used by Godot programmers: :ref:`Node.get_node() <class_Node_get_node>`. "
-"This function uses paths to fetch nodes anywhere in the scene, relative to "
-"the node that owns the script."
+"used by Godot programmers: :ref:`Node.get_node() "
+"<class_Node_method_get_node>`. This function uses paths to fetch nodes "
+"anywhere in the scene, relative to the node that owns the script."
 msgstr ""
 "Pour accomplir cela, nous allons introduire une fonction qui est "
 "probablement la plus utilisée par les programmeurs Godot : :ref:`Node."
@@ -573,9 +569,10 @@ msgstr ""
 "Ensuite, écrivez une fonction qui sera appelée quand le bouton est pressé :"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
+#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
-"ref:`Object.connect() <class_Object_connect>`."
+"ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "Pour terminer, connectez le signal \"pressed\" du bouton à ``_ready()`` en "
 "utilisant :ref:`Object.connect() <class_Object_connect>`."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,79 +19,88 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:4
 msgid "Exporting packs, patches, and mods"
-msgstr ""
+msgstr "Exporter des packs, des patchs, et des mods"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:7
-#, fuzzy
 msgid "Use cases"
-msgstr "Utiliser le temps passé :"
+msgstr "Cas d'utilisations"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:9
 msgid ""
 "Oftentimes one would like to add functionality to one's game after it has "
 "been deployed."
 msgstr ""
+"Souvent, on aimerait ajouter des fonctionnalités à son jeu une fois qu'il a "
+"été déployé."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:12
 msgid "Examples of this include..."
-msgstr ""
+msgstr "En voici quelques exemples..."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:14
 msgid ""
 "Downloadable Content: the ability to add features and content to one's game."
 msgstr ""
+"Contenu téléchargeable : la possibilité d'ajouter des fonctionnalités et du "
+"contenu à son jeu."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:15
 msgid "Patches: the ability to fix a bug that is present in a shipped product."
 msgstr ""
+"Patchs : la possibilité de corriger un bug présent dans un produit livré."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:16
 msgid "Mods: grant other people the ability to create content for one's game."
 msgstr ""
+"Mods : permettre à d'autres personnes de créer du contenu pour son jeu."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:18
 msgid ""
 "These tools help developers to extend their development beyond the initial "
 "release."
 msgstr ""
+"Ces outils aident les développeurs à étendre le développement de leur jeu au-"
+"delà de la sortie initiale."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:22
 msgid "Overview of PCK files"
-msgstr ""
+msgstr "Vue d'ensemble des fichiers PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:24
 msgid ""
 "Godot enables this via a feature called **resource packs** (PCK files, with "
 "extension ``.pck``)."
 msgstr ""
+"Godot permet de faire cela via une fonctionnalité appelée **packs de "
+"ressources** (fichiers PCK, avec l'extension ``.pck``)."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:27
 msgid "**Advantages:**"
-msgstr ""
+msgstr "**Avantages :**"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:29
 msgid "incremental updates/patches"
-msgstr ""
+msgstr "mises à jour et correctifs incrémentiels"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:30
 msgid "offer DLCs"
-msgstr ""
+msgstr "proposer des DLCs"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:31
 msgid "offer mod support"
-msgstr ""
+msgstr "offrir la prise en charge de mods"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:32
 msgid "no source code disclosure needed for mods"
-msgstr ""
+msgstr "aucune divulgation du code source nécessaire pour les mods"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:33
 msgid "more modular project structure"
-msgstr ""
+msgstr "une structure de projet plus modulaire"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:34
 msgid "users don’t have to replace the entire game"
-msgstr ""
+msgstr "les utilisateurs n'ont pas à remplacer tout le jeu"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:36
 msgid ""
@@ -99,57 +108,59 @@ msgid ""
 "to players. Then, when one wants to add functionality or content later on, "
 "they just deliver the updates via PCK files to the users."
 msgstr ""
+"La première chose à faire pour pouvoir les utiliser est d'exporter et de "
+"livrer le projet aux joueurs. Ensuite, lorsque l'on souhaite rajouter des "
+"fonctionnalités ou du contenu plus tard, on se contentera de livrer les "
+"mises à jours aux utilisateurs via les fichiers PCK."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:40
 msgid "PCK files usually contain, but are not limited to:"
 msgstr ""
+"Les fichiers PCK contiennent généralement, mais ne sont pas limités à :"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:42
-#, fuzzy
 msgid "scripts"
-msgstr "Script de filtrage"
+msgstr "des scripts"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:43
-#, fuzzy
 msgid "scenes"
-msgstr "Les scènes"
+msgstr "des scènes"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:44
 msgid "shaders"
-msgstr ""
+msgstr "des shaders"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:45
 msgid "models"
-msgstr ""
+msgstr "des modèles"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:46
-#, fuzzy
 msgid "textures"
-msgstr "Texture"
+msgstr "des textures"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:47
-#, fuzzy
 msgid "sound effects"
-msgstr "Effets sonores"
+msgstr "des effets sonores"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:48
 msgid "music"
-msgstr ""
+msgstr "de la musique"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:49
 msgid "any other asset suitable for import into the game"
-msgstr ""
+msgstr "tout autre ressource susceptible d'être importée dans le jeu"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:51
 msgid ""
 "The PCK files can even be an entirely different Godot project, which the "
 "original game loads in at runtime."
 msgstr ""
+"Les fichiers PCK peuvent même être un projet Godot entièrement différent, "
+"que le jeu original chargera à l'exécution."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:55
-#, fuzzy
 msgid "Generating PCK files"
-msgstr "Distribuer les fichiers"
+msgstr "Générer des fichiers PCK"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:57
 msgid ""
@@ -157,6 +168,9 @@ msgid ""
 "and go to Project/Export and click on “Export PCK/Zip”. Also make sure to "
 "have an export template selected while doing so."
 msgstr ""
+"Pour regrouper toutes les ressources d'un projet dans un fichier PCK, ouvrez "
+"le projet, allez dans Projet/Exportation et cliquez sur \"Exporter PCK/Zip"
+"\". Assurez-vous également d'avoir sélectionné un modèle d'exportation."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:63
 msgid ""
@@ -165,6 +179,10 @@ msgid ""
 "or ZIP file extension, then the export process will build that type of file "
 "for the chosen platform."
 msgstr ""
+"Une autre méthode serait :ref:`d'exporter depuis la ligne de commande "
+"<doc_command_line_tutorial_exporting>`. Si le fichier de sortie se termine "
+"par une extension PCK ou ZIP, alors le processus d'exportation compilera ce "
+"type de fichier pour la plate-forme choisie."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:69
 msgid ""
@@ -173,6 +191,10 @@ msgid ""
 "certain structure for the PCK's resources and/or a certain interface for its "
 "scripts, then either..."
 msgstr ""
+"Si l'on souhaite supporter les mods pour son jeu, il faut que ses "
+"utilisateurs créent des fichiers exportés similairement. En supposant que le "
+"jeu original s'attend à une certaine structure pour les ressources PCK et/ou "
+"une certaine interface pour ses scripts, alors ou bien..."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:74
 msgid ""
@@ -182,6 +204,12 @@ msgid ""
 "mod content for the game (so that it will work). Users would then use "
 "Godot's built in exporting tools to create a PCK file, as detailed above."
 msgstr ""
+"Le développeur doit publier la documentation de ces structures/ interfaces "
+"attendues, demander aux moddeurs d'installer Godot Engine, et ces moddeurs "
+"devront se conformer à l'API définie dans la documentation lorsqu'ils "
+"construiront du contenu moddé pour le jeu (pour qu'il fonctionne). Ils "
+"utiliseront alors les outils d'exportations intégrés à Godot pour créer un "
+"fichier PCK, comme décrit plus haut."
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:80
 msgid ""
@@ -189,15 +217,15 @@ msgid ""
 "content to a project. This Godot tool must either run on a tools-enabled "
 "build of the engine or have access to one (distributed alongside or perhaps "
 "in the original game's files). The tool can then use the Godot executable to "
-"export a PCK file from the command line with :ref:`OS.execute "
-"<class_OS_execute>`. It makes the most sense for the game to not use a tool-"
-"build though (for security) and for the modding tools to *do* use a tool-"
-"enabled engine build."
+"export a PCK file from the command line with :ref:`OS.execute() "
+"<class_OS_method_execute>`. It makes the most sense for the game to not use "
+"a tool-build though (for security) and for the modding tools to *do* use a "
+"tool-enabled engine build."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:90
 msgid "Opening PCK files at runtime"
-msgstr ""
+msgstr "Ouvrir des fichiers PCK à l'exécution"
 
 #: ../../docs/getting_started/workflow/export/exporting_pcks.rst:92
 msgid ""

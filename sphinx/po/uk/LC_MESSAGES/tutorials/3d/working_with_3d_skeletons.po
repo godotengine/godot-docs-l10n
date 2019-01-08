@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,9 +35,10 @@ msgstr ""
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:13
 msgid ""
 "The Skeleton node can be directly added anywhere you want on a scene. "
-"Usually the target mesh is a child of Skeleton, as it easier to manipulate "
-"this way, since Transforms within a skeleton are relative to where the "
-"Skeleton is. But you can specify a Skeleton node in every MeshInstance."
+"Usually the target mesh is a child of Skeleton, as it is easier to "
+"manipulate this way, since Transforms within a skeleton are relative to "
+"where the Skeleton is. But you can specify a Skeleton node in every "
+"MeshInstance."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:18
@@ -46,20 +47,21 @@ msgid ""
 "called \"bones\". Each \"bone\" is represented as a Transform, which is "
 "applied to a group of vertices within a mesh. You can directly control a "
 "group of vertices from Godot. For that please reference the :ref:"
-"`class_MeshDataTool` class and its method :ref:`set_vertex_bones "
-"<class_MeshDataTool_set_vertex_bones>`."
+"`class_MeshDataTool` class and its method :ref:`set_vertex_bones() "
+"<class_MeshDataTool_method_set_vertex_bones>`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:24
 msgid ""
-"The \"bones\" are organized hierarchically. Every bone, except for root "
-"bone(s) have a parent. Every bone also has an associated name you can use to "
+"The \"bones\" are organized hierarchically. Every bone, except for the root "
+"bone(s), has a parent. Every bone also has an associated name you can use to "
 "refer to it (e.g. \"root\" or \"hand.L\", etc.). All bones are numbered, and "
-"these numbers are bone IDs. Bone parents are referred by their numbered IDs."
+"these numbers are bone IDs. Bone parents are referred to by their numbered "
+"IDs."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:30
-msgid "For the rest of the article we consider the following scene:"
+msgid "For the rest of the article, we will consider the following scene:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:38
@@ -91,7 +93,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:73
 msgid ""
-"Now, we want to do something interesting with the ID, not just printing it. "
+"Now, we want to do something interesting with the ID, not just print it. "
 "Also, we might need additional information, finding bone parents to complete "
 "chains, etc. This is done with the get/set_bone\\_\\* functions."
 msgstr ""
@@ -103,13 +105,13 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:91
 msgid ""
-"The bone transforms are the things of our interest here. There are 3 kind of "
-"transforms: local, global, custom."
+"The bone transforms are what interests us here. There are 3 kinds of "
+"transform: local, global, custom."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:94
 msgid ""
-"**To find the local Transform of a bone we use get_bone_pose(id) function:**"
+"**To find the local Transform of a bone, we use get_bone_pose(id) function:**"
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:110
@@ -133,7 +135,7 @@ msgid ""
 "What we used here was the local pose. By default all bones are not modified. "
 "But this Transform tells us nothing about the relationship between bones. "
 "This information is needed for quite a number of tasks. How can we get it? "
-"Here the global transform comes into play:"
+"This is where the global transform comes into play:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:146
@@ -156,8 +158,9 @@ msgstr ""
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:183
 msgid ""
 "You will see a number. What does this number mean? It is a rotation point of "
-"the Transform. So it is base part of the bone. In Blender you can go to Pose "
-"mode and try there to rotate bones. They will rotate around their origin."
+"the Transform. So it is base part of the bone. In Blender, you can go to "
+"Pose mode and try to rotate bones there. They will rotate around their "
+"origin."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:188
@@ -185,12 +188,12 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:204
 msgid ""
-"Now as you know the basics we can apply these to make full FK-control of our "
-"arm (FK is forward-kinematics)."
+"Now, as you know the basics, we can apply these to make full FK-control of "
+"our arm (FK is forward-kinematics)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:207
-msgid "To fully control our arm we need the following parameters:"
+msgid "To fully control our arm, we need the following parameters:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:209
@@ -224,7 +227,7 @@ msgid "First we define the setup parameters:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:235
-msgid "Now we need to setup a way to change them. Let us use keys for that."
+msgid "Now we need to set up a way to change them. Let us use keys for that."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:237
@@ -261,7 +264,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:247
 msgid ""
-"So now we want to adjust the above parameters. Therefore we create code "
+"So now we want to adjust the above parameters. Therefore, we create code "
 "which does that:"
 msgstr ""
 
@@ -271,8 +274,8 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:327
 msgid ""
-"Pressing keys 1/2 selects upperarm/lowerarm, select the axis by pressing x, "
-"y, z, rotate using numpad \"+\"/\"-\""
+"Pressing keys 1/2 selects upperarm/lowerarm; select the axis by pressing x, "
+"y, z, rotate using numpad \"+\"/\"-\"."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:330
@@ -280,7 +283,7 @@ msgid ""
 "This way you fully control your arm in FK mode using 2 bones. You can add "
 "additional bones and/or improve the \"feel\" of the interface by using "
 "coefficients for the change. I recommend you play with this example a lot "
-"before going to next part."
+"before moving on to the next part."
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:335
@@ -296,7 +299,7 @@ msgid "https://github.com/slapin/godot-skel3d"
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:347
-msgid "Using 3D \"bones\" to implement Inverse Kinematics"
+msgid "Using 3D \"bones\" to implement inverse kinematics"
 msgstr ""
 
 #: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:349

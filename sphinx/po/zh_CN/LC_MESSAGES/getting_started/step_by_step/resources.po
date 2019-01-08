@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,9 @@ msgid ""
 "features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
-"在本教程之前, 我们重点介绍了Godot中的 :ref:`Node <class_Node>` 类： 因为它是"
-"您用来编写行为代码的类, 并且引擎的大多数功能都依赖于它们。还有另一种数据类型"
-"同样重要 :ref:`Resource <class_Resource>`。"
+"在本教程之前, 我们重点介绍了Godot中的 :ref:`Node <class_Node>` 类: 因为它是您"
+"用来编写行为代码的类, 并且引擎的大多数功能都依赖于它们。还有另一种数据类型同"
+"样重要 :ref:`Resource <class_Resource>`。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
 msgid ""
@@ -43,7 +43,7 @@ msgid ""
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
-"*节点*给你提供了功能：它们绘制精灵，3D模型，模拟物理，安排用户界面等。*资源*"
+"*节点*给您提供了功能:它们绘制精灵，3D模型，模拟物理，安排用户界面等。 *资源* "
 "是*数据容器*。它们不会自己作任何事情，而节点会使用资源包含的数据。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
@@ -56,10 +56,10 @@ msgid ""
 "<class_Translation>`."
 msgstr ""
 "Godot从磁盘保存或加载的任何内容都是一种资源。无论它是场景 (.tscn 或 .scn 文"
-"件)、图像、脚本..。下面是一些 ``资源`` 示例： :ref:`Texture "
-"<class_Texture>`, :ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :"
-"ref:`Animation <class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :"
-"ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`。"
+"件)、图像、脚本...下面是一些 ``资源`` 示例: :ref:`Texture <class_Texture>`, :"
+"ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
+"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
+"<class_Font>`, :ref:`Translation <class_Translation>`。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
 msgid ""
@@ -80,7 +80,7 @@ msgid ""
 msgstr ""
 "每个对象 (无论是节点还是资源) 都可以导出属性。有许多类型的属性, 如 string、整"
 "数、vector2等, 这些类型中的任何一种都可以成为资源。这意味着节点和资源都可以包"
-"含作为属性的资源："
+"含作为属性的资源:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:39
 msgid "External vs built-in"
@@ -88,7 +88,7 @@ msgstr "外部与内置"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:41
 msgid "There are two ways to save resources. They can be:"
-msgstr "有两种方法可以保存资源。它们可以是："
+msgstr "有两种方法可以保存资源。它们可以是:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:43
 msgid "**External** to a scene, saved on the disk as individual files."
@@ -106,7 +106,7 @@ msgid ""
 "`Sprite <class_Sprite>` node:"
 msgstr ""
 "更具体地说, 这里有一个 :ref:`精灵 <class_Sprite>` 节点中的 :ref:`纹理 "
-"<class_Texture>`："
+"<class_Texture>` :"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
 msgid ""
@@ -121,9 +121,9 @@ msgid ""
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
-"Path属性告诉我们资源来自何处。在这里，它来自一个叫``robi.png``的PNG图像。当资"
-"源来自这样的文件时，它属于外部资源。如果您去掉这个路径或此路径为空，则它将成"
-"为内置资源。"
+"Path属性告诉我们资源来自何处。在这里，它来自一个叫 ``robi.png`` 的PNG图像。当"
+"资源来自这样的文件时，它属于外部资源。如果您去掉这个路径或此路径为空，则它将"
+"成为内置资源。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:60
 msgid ""
@@ -139,7 +139,7 @@ msgid ""
 "Even if you save a built-in resource, when you instance a scene multiple "
 "times, the engine will only load one copy of it."
 msgstr ""
-"即使你把某个资源保存成内置资源，当你用这个场景创建多个实例时，引擎只会将资源"
+"即使您把某个资源保存成内置资源，当您用这个场景创建多个实例时，引擎只会将资源"
 "加载一次。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:70
@@ -150,7 +150,8 @@ msgstr "从代码中加载资源"
 msgid ""
 "There are two ways to load resources from code. First, you can use the "
 "``load()`` function anytime:"
-msgstr "你可以用两种方式在代码中加载资源。首先，您可以随时使用``load()``函数："
+msgstr ""
+"您可以用两种方式在代码中加载资源。首先，您可以随时使用 ``load()`` 函数:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:90
 msgid ""
@@ -158,9 +159,9 @@ msgid ""
 "the file from disk and load it at compile-time. As a result, you cannot call "
 "preload with a variable path: you need to use a constant string."
 msgstr ""
-"您也可以预加载资源。与``load``不同，``preload``会从硬盘中读取文件，并在编译的"
-"时候加载它。因此调用``preload``时你不能用变量当做文件路径，你只能用固定的字符"
-"串。"
+"您也可以预加载资源。与 ``load`` 不同， ``preload`` 会从硬盘中读取文件，并在编"
+"译的时候加载它。因此调用 ``preload`` 时您不能用变量当做文件路径，您只能用固定"
+"的字符串。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:106
 msgid "Loading scenes"
@@ -176,9 +177,10 @@ msgstr ""
 "<class_PackedScene>` 类型的资源。场景被打包在资源内部。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
+#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
-"instance() <class_PackedScene_instance>` method."
+"instance() <class_PackedScene_method_instance>` method."
 msgstr ""
 "要获取场景的实例，您必须使用 :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` 方法。"
@@ -193,12 +195,13 @@ msgstr ""
 "以将其添加为任何其他节点的子节点。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
+#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
-"<class_PackedScene_instance>` function is pretty fast, you can create new "
-"enemies, bullets, effects, etc. without having to load them again from disk "
-"each time. Remember that, as always, images, meshes, etc. are all shared "
-"between the scene instances."
+"<class_PackedScene_method_instance>` function is pretty fast, you can create "
+"new enemies, bullets, effects, etc. without having to load them again from "
+"disk each time. Remember that, as always, images, meshes, etc. are all "
+"shared between the scene instances."
 msgstr ""
 "这种方法有几个优点。由于 :ref:`PackedScene.instance() "
 "<class_PackedScene_instance>` 函数速度相当快, 您可以创建新的敌人、子弹、效果"
@@ -216,8 +219,8 @@ msgid ""
 "node, the engine frees all the resources it owns as well if no other node "
 "uses them."
 msgstr ""
-"当``资源``不再使用时, 它将自动释放自己。因为, 在大多数情况下, 资源包含在节点"
-"中, 当您释放节点时, 如果没有其他节点使用它所拥有的所有资源, 引擎也会释放它"
+"当 ``资源`` 不再使用时, 它将自动释放自己。因为, 在大多数情况下, 资源包含在节"
+"点中, 当您释放节点时, 如果没有其他节点使用它所拥有的所有资源, 引擎也会释放它"
 "们。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:151
@@ -245,10 +248,10 @@ msgid ""
 "`Resource <class_Resource>` features:"
 msgstr ""
 "与其他数据结构 (如 json、csv 或自定义 txt 文件) 相比, 这具有许多明显的优势。"
-"用户只能将这些资源导入为 :ref:`字典 <class_Dictionary>`  (JSON)或要分析的 :"
+"用户只能将这些资源导入为 :ref:`字典 <class_Dictionary>` (JSON)或要分析的 :"
 "ref:`文件 <class_File>` 。将资源区分开来的是它们对 :ref:`对象 "
 "<class_Object>` 、 :ref:`引用 <class_Reference>` 和 :ref:`资源 "
-"<class_Resource>` 功能的继承："
+"<class_Resource>` 功能的继承:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 msgid ""
@@ -308,14 +311,14 @@ msgid ""
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
-"godot 引擎检查器用开箱即用的方式呈现和编辑资源文件。因此, 用户通常不需要实现"
-"自定义逻辑来可视化或编辑其数据。为此, 请双击文件系统停靠中的资源文件, 或单击"
-"检查器中的文件夹图标, 然后在对话框中打开该文件。"
+"godot 引擎属性面板用开箱即用的方式呈现和编辑资源文件。因此, 用户通常不需要实"
+"现自定义逻辑来可视化或编辑其数据。为此, 请双击文件系统停靠中的资源文件, 或单"
+"击属性面板中的文件夹图标, 然后在对话框中打开该文件。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:181
 msgid ""
 "They can extend **other** resource types besides just the base Resource."
-msgstr "除了基本资源之外, 它们还可以扩展**其他**资源类型。"
+msgstr "除了基本资源之外, 它们还可以扩展 **其他** 资源类型。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:185
 msgid ""
@@ -331,19 +334,19 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/resources.rst:215
 msgid "Godot makes it easy to create custom Resources in the Inspector."
-msgstr "godot 使在检查器中创建自定义资源变得很容易。"
+msgstr "godot 使在属性面板中创建自定义资源变得很容易。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:217
 msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
-"在检查器中创建一个普通的资源对象。这甚至可以是派生资源的类型, 只要您的脚本扩"
-"展该类型。"
+"在属性面板中创建一个普通的资源对象。这甚至可以是派生资源的类型, 只要您的脚本"
+"扩展该类型。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:218
 msgid "Set the ``script`` property in the Inspector to be your script."
-msgstr "将检查器中的脚本属性设置为``script``。"
+msgstr "将属性面板中的脚本属性设置为 ``script``。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:220
 msgid ""
@@ -352,12 +355,11 @@ msgid ""
 "custom properties too! To save a resource from the Inspector, click the "
 "Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
-"检查器现在将显示您的资源脚本自定义属性。如果编辑了这些值并保存了资源, 检查器"
-"也会序列化自定义属性若要从检查器中保存资源, 请单击 \"检查器工具\" 菜单 (右上"
-"角), 然后选择 \"保存\" 或 \"另存为...\"。"
+"属性面板现在将显示您的资源脚本自定义属性。如果编辑了这些值并保存了资源, 属性"
+"面板也会序列化自定义属性若要从属性面板中保存资源, 请单击 \"属性面板工具\" 菜"
+"单 (右上角), 然后选择 \"保存\" 或 \"另存为...\"。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -365,12 +367,12 @@ msgid ""
 "creation dialog. This will auto-add your script to the Resource object you "
 "create."
 msgstr ""
-"如果脚本语言支持脚本类, 则简化了过程。仅定义脚本的名称会将其添加到检查器创建"
-"对话框中。这将自动将脚本添加到您创建的资源对象中。"
+"如果脚本语言支持脚本类, 则简化了过程。仅定义脚本的名称会将其添加到属性面板创"
+"建对话框中。这将自动将脚本添加到您创建的资源对象中。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
 msgid "Let's see some examples."
-msgstr "让我们看看一些例子。"
+msgstr "让我们看看一些示例。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:303
 msgid ""
@@ -380,9 +382,9 @@ msgid ""
 "ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and "
 "editors for their data."
 msgstr ""
-"资源脚本类似于Unity的脚本对象。检查器提供对自定义资源的内置支持。如果需要, 用"
-"户甚至可以设计自己的基于控件的工具脚本, 并将它们与 :ref:`EditorPlugin "
-"<class_EditorPlugin>`结合起来, 为其数据创建自定义可视化和编辑器。"
+"资源脚本类似于Unity的脚本对象。属性面板提供对自定义资源的内置支持。如果需要, "
+"用户甚至可以设计自己的基于控件的工具脚本, 并将它们与 :ref:`EditorPlugin "
+"<class_EditorPlugin>` 结合起来, 为其数据创建自定义可视化和编辑器。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:309
 msgid ""
@@ -397,13 +399,13 @@ msgstr ""
 msgid ""
 "Instead of just inlining the Dictionary values, one could also, "
 "alternatively..."
-msgstr "而不是只是内联字典值, 你也可以, 或者..。"
+msgstr "而不是只是内联字典值, 您也可以, 或者..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:347
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs, or..."
-msgstr "从电子表格导入值的表, 并生成这些键值对, 或..。"
+msgstr "从电子表格导入值的表, 并生成这些键值对, 或..."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:349
 msgid ""
@@ -411,7 +413,7 @@ msgid ""
 "adds it to the Inspector when you open these types of Resources."
 msgstr ""
 "在编辑器中设计可视化, 并创建一个简单的插件, 当您打开这些类型的资源时, 将其添"
-"加到检查器中。"
+"加到属性面板中。"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:352
 msgid ""
@@ -441,5 +443,5 @@ msgid ""
 "doesn't extend ``Resource``, and then determine that the script failed to "
 "load for the Resource object since the types are incompatible."
 msgstr ""
-"在下面的示例中, godot 将加载``节点``脚本, 查看它不会扩展``资源``, 然后确定该"
-"脚本未能为资源对象加载, 因为这些类型不兼容。"
+"在下面的示例中, godot 将加载 ``节点`` 脚本, 查看它不会扩展 ``资源`` , 然后确"
+"定该脚本未能为资源对象加载, 因为这些类型不兼容。"

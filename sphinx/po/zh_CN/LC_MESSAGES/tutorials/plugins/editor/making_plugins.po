@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:4
 msgid "Making plugins"
-msgstr "插件制作"
+msgstr "制作插件"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:7
 msgid "About plugins"
@@ -34,10 +34,10 @@ msgid ""
 "things you can do with them. Note that a plugin is similar to any scene you "
 "can already make, except it is created using a script to add functionality."
 msgstr ""
-"插件时可以用来扩展编辑器功能的好东西。它完全可以靠GDScript和多个标准场景来制"
-"作，甚至不用重启编辑器。不像模块，你用不着C++也用不着重新编译引擎。尽管说这样"
-"做插件可能比起做模块能搞的功能没那么多，但也能做很多有趣的东西。嘛，插件和你"
-"做好的那些场景很像，只是它使用脚本来添加些功能。"
+"插件是用来扩展编辑器功能的好东西。它完全可以靠GDScript和多个标准场景来制作，"
+"甚至不用重启编辑器。不像模块，您用不着C++也用不着重新编译引擎。尽管说这样做插"
+"件可能比起做模块能搞的功能没那么多，但也能做很多有趣的东西。嘛，插件和您做好"
+"的那些场景很像，只是它使用脚本来添加些功能。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:16
 msgid ""
@@ -46,7 +46,7 @@ msgid ""
 "will be a custom node that you can add to any scene in the project and the "
 "other will be a custom dock added to the editor."
 msgstr ""
-"这个教程会教你写两个简单的插件来帮助你理解插件如何运作和如何写插件。首先是一"
+"这个教程会教您写两个简单的插件来帮助您理解插件如何运作和如何写插件。首先是一"
 "个可以往任何场景添加的自定义节点，其次呢，是个可以往编辑器里添加的自定义面"
 "板。"
 
@@ -67,8 +67,8 @@ msgid ""
 "understand as such. You need two files for that: ``plugin.cfg`` for the "
 "configuration and a custom GDScript with the functionality."
 msgstr ""
-"你要做的第一件事情就是创建个编辑器能理解的新插件。为此你需要创建两个文件：用"
-"于配置的 ``plugin.cfg`` 和带着自定义功能的GDScript。"
+"您要做的第一件事情就是创建个编辑器能理解的新插件。为此您需要创建两个文件:用于"
+"配置的 ``plugin.cfg`` 和带着自定义功能的GDScript。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:31
 msgid ""
@@ -78,7 +78,7 @@ msgid ""
 msgstr ""
 "插件在项目文件夹中有一个标准路径，像 ``addons / plugin_name`` 。 对于此示例，"
 "在 ``addons`` 中创建一个名为 ``my_custom_node`` 文件夹。 您最终应该得到这样的"
-"目录结构："
+"目录结构:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:37
 msgid ""
@@ -102,7 +102,7 @@ msgstr ""
 "这是一个简单的INI文件，其中包含有关插件的元数据。 您需要设置名称和描述，以便"
 "人们可以理解它的作用。 不要忘记添加自己的名字，以便您可以正确记入。 添加版本"
 "号，以便人们可以看到他们是否有过时的版本; 如果您不确定如何提供版本号，请查看 "
-"`语义版本控制 <https://semver.org/>`_。 最后，设置主插件文件在插件处于活动状"
+"`语义版本控制 <https://semver.org/>`_ 。 最后，设置主插件文件在插件处于活动状"
 "态时加载。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:57
@@ -116,22 +116,24 @@ msgid ""
 "special and it has two requirements: it must be a ``tool`` script and it has "
 "to inherit from :ref:`class_EditorPlugin`."
 msgstr ""
-"打开脚本编辑器（F3）并在 ``my_custom_node`` 文件夹中创建一个名为 "
-"``custom_node.gd`` 的新GDScript文件。 这个脚本是特殊的，它有两个要求：它必须"
-"是一个 ``tool`` 脚本，它必须继承自 :ref:`class_EditorPlugin`。"
+"打开脚本编辑器(F3)并在 ``my_custom_node`` 文件夹中创建一个名为 ``custom_node."
+"gd`` 的新GDScript文件。 这个脚本是特殊的，它有两个要求:它必须是一个 ``tool`` "
+"脚本，它必须继承自 :ref:`class_EditorPlugin`。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:64
+#, fuzzy
 msgid ""
 "It's important to deal with initialization and clean-up of resources. A good "
 "practice is to use the virtual function :ref:`_enter_tree() "
-"<class_Node__enter_tree>` to initialize your plugin and :ref:`_exit_tree() "
-"<class_Node__exit_tree>` to clean it up. You can delete the default GDScript "
-"template from your file and replace it with the following structure:"
+"<class_Node_method__enter_tree>` to initialize your plugin and :ref:"
+"`_exit_tree() <class_Node_method__exit_tree>` to clean it up. You can delete "
+"the default GDScript template from your file and replace it with the "
+"following structure:"
 msgstr ""
-"处理资源的初始化和清理很重要。 一个好的做法是使用虚函数 ：ref："
-"`_enter_tree（）<class_Node__enter_tree>` 来初始化你的插件，并且 ：ref："
-"`_exit_tree（）<class_Node__exit_tree>` 来清理它。 您可以从文件中删除默认的"
-"GDScript模板，并将其替换为以下结构："
+"处理资源的初始化和清理很重要。 一个好的做法是使用虚函数 :ref:"
+"`_enter_tree()<class_Node__enter_tree>` 来初始化您的插件，并且 :ref:"
+"`_exit_tree()<class_Node__exit_tree>` 来清理它。 您可以从文件中删除默认的"
+"GDScript模板，并将其替换为以下结构:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:85
 msgid "This is a good template to use when creating new plugins."
@@ -150,22 +152,24 @@ msgid ""
 "a custom behavior."
 msgstr ""
 "有时您希望在许多节点中存在某种行为，例如可以重复使用的自定义场景或控件。 实例"
-"化在很多情况下都很有用，但有时它会很麻烦，特别是如果你在许多项目中使用它。 一"
+"化在很多情况下都很有用，但有时它会很麻烦，特别是如果您在许多项目中使用它。 一"
 "个很好的解决方案是创建一个插件，添加一个具有自定义行为的节点。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:96
+#, fuzzy
 msgid ""
 "To create a new node type, you can use the function :ref:`add_custom_type() "
-"<class_EditorPlugin_add_custom_type>` from the :ref:`class_EditorPlugin` "
-"class. This function can add new types to the editor (nodes or resources). "
-"However, before you can create the type, you need a script that will act as "
-"the logic for the type. While that script doesn't have to use the ``tool`` "
-"keyword, it can be added so the script runs in the editor."
+"<class_EditorPlugin_method_add_custom_type>` from the :ref:"
+"`class_EditorPlugin` class. This function can add new types to the editor "
+"(nodes or resources). However, before you can create the type, you need a "
+"script that will act as the logic for the type. While that script doesn't "
+"have to use the ``tool`` keyword, it can be added so the script runs in the "
+"editor."
 msgstr ""
 "要创建新的节点类型，可以使用来自 :ref:`class_EditorPlugin` 类的 :ref:"
 "`add_custom_type() <class_EditorPlugin_add_custom_type>` 函数。 此函数可以向"
-"编辑器（节点或资源）添加新类型。 但是，在创建类型之前，需要一个脚本作为该类型"
-"的逻辑。 虽然该脚本不必使用 ``tool`` 关键字，但可以添加它以便脚本在编辑器中运"
+"编辑器(节点或资源)添加新类型。 但是，在创建类型之前，需要一个脚本作为该类型的"
+"逻辑。 虽然该脚本不必使用 ``tool`` 关键字，但可以添加它以便脚本在编辑器中运"
 "行。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:103
@@ -175,7 +179,7 @@ msgid ""
 "`class_Button`. It could also extend :ref:`class_BaseButton` if you prefer::"
 msgstr ""
 "在本教程中，我们将创建一个简单的按钮，在单击时打印一条消息。 为此，我们需要一"
-"个拓展自 :ref:`class_Button` 的简单脚本。 如果你喜欢，它还可以扩展 :ref:"
+"个拓展自 :ref:`class_Button` 的简单脚本。 如果您喜欢，它还可以扩展 :ref:"
 "`class_BaseButton` ::"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:117
@@ -212,7 +216,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:144
 msgid "Then try it out by adding your new node:"
-msgstr "然后通过添加新节点来尝试："
+msgstr "然后通过添加新节点来尝试:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:148
 msgid ""
@@ -221,7 +225,7 @@ msgid ""
 "When you click the button, you can see some text in the console:"
 msgstr ""
 "添加节点时，您可以看到它已经创建了附加到它的脚本。 将文本设置为按钮，保存并运"
-"行场景。 单击该按钮时，您可以在控制台中看到一些文本："
+"行场景。 单击该按钮时，您可以在控制台中看到一些文本:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:155
 msgid "A custom dock"
@@ -235,7 +239,7 @@ msgid ""
 "usual GUI scenes."
 msgstr ""
 "有时，您需要扩展编辑器并添加始终可用的工具。 一种简单的方法是添加一个带插件的"
-"新扩展坞。 Docks只是基于Control的场景，因此它们的创建方式与通常的GUI场景类"
+"新扩展面板。 Docks只是基于Control的场景，因此它们的创建方式与通常的GUI场景类"
 "似。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:161
@@ -263,7 +267,7 @@ msgid ""
 "new scene in the editor then edit it."
 msgstr ""
 "由于我们正在尝试添加新的自定义窗口，因此我们需要创建窗口的内容。 这只不过是一"
-"个标准的Godot场景：只需在编辑器中创建一个新场景然后编辑它。"
+"个标准的Godot场景:只需在编辑器中创建一个新场景然后编辑它。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:181
 msgid ""
@@ -274,16 +278,17 @@ msgid ""
 "Also, don't forget to add some text to your button."
 msgstr ""
 "对于编辑器停靠站，根节点 **必须是** :ref:`Control <class_Control>` 或其子类之"
-"一。 在本教程中，您可以创建一个按钮。 根节点的名称也将是dock对话框中显示的名"
+"一。 在本教程中，您可以创建一个按钮。 根节点的名称也将是面板对话框中显示的名"
 "称，因此请务必为其指定一个简短的描述性名称。 另外，不要忘记在按钮上添加一些文"
 "字。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:189
+#, fuzzy
 msgid ""
 "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we "
 "created then add it as a dock in the editor. For this, you can rely on the "
 "function :ref:`add_control_to_dock() "
-"<class_EditorPlugin_add_control_to_dock>` from the :ref:`EditorPlugin "
+"<class_EditorPlugin_method_add_control_to_dock>` from the :ref:`EditorPlugin "
 "<class_EditorPlugin>` class."
 msgstr ""
 "将此场景另存为 ``my_dock.tscn``。 现在，我们需要抓住刚创建的场景，然后将其添"
@@ -297,16 +302,16 @@ msgid ""
 "the scene you just created). Don't forget to **remove the dock** when the "
 "plugin is deactivated. The script could look like this::"
 msgstr ""
-"您需要选择停靠位置并定义要添加的控件（这是您刚刚创建的场景）。 插件取消激活"
-"时，不要忘记 **移除窗口** 。 该脚本看起来像这样::"
+"您需要选择停靠位置并定义要添加的控件(这是您刚刚创建的场景)。 插件取消激活时，"
+"不要忘记 **移除窗口** 。 该脚本看起来像这样::"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:221
 msgid ""
 "Note that while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
 msgstr ""
-"请注意，虽然扩展坞最初将显示在其指定位置，但用户可以自由更改其位置并保存生成"
-"的布局。"
+"请注意，虽然扩展面板最初将显示在其指定位置，但用户可以自由更改其位置并保存生"
+"成的布局。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:225
 msgid "Checking the results"
@@ -329,7 +334,7 @@ msgid ""
 "close the settings window. You should now have a custom dock:"
 msgstr ""
 "您可以在 **Status** 列中看到该插件处于非激活状态; 点击状态选择 **Active** 。 "
-"在您关闭设置窗口之前，该扩展窗口应该可见。 你现在应该看到一个自定义窗口："
+"在您关闭设置窗口之前，该扩展窗口应该可见。 您现在应该看到一个自定义窗口:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:241
 msgid "Going beyond"
@@ -352,5 +357,5 @@ msgid ""
 "Library <https://godotengine.org/asset-library/>`_ so that people can "
 "benefit from your work."
 msgstr ""
-"您可以制作自己的插件来帮助自己或在 `资源库 <https://godotengine.org/asset-"
+"您可以制作自己的插件来帮助自己或在 `资源馆 <https://godotengine.org/asset-"
 "library/>`_ 中分享它们，以便人们可以从您的工作中受益。"

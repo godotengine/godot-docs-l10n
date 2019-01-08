@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,13 +46,18 @@ msgid "What is a kinematic body?"
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:22
+#, fuzzy
 msgid ""
 "``KinematicBody2D`` is for implementing bodies that are to be controlled via "
 "code. They detect collisions with other bodies when moving, but are not "
-"affected by engine physics properties like gravity or friction. While this "
+"affected by engine physics properties, like gravity or friction. While this "
 "means that you have to write some code to create their behavior, it also "
 "means you have more precise control over how they move and react."
 msgstr ""
+"Corpos :ref:`KinematicBody2D <class_KinematicBody2D>` detectam colisões com "
+"outros corpos, mas não são afetados por propriedades físicas como gravidade "
+"e atrito. Em vez disso, eles devem ser controlados pelo usuário via código. "
+"O motor de física não moverá um corpo cinemático."
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:28
 msgid ""
@@ -62,8 +67,9 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:33
-msgid "Movement and Collision"
-msgstr ""
+#, fuzzy
+msgid "Movement and collision"
+msgstr "Expressões e fluxo de controle"
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:35
 msgid ""
@@ -84,7 +90,7 @@ msgstr ""
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:43
 msgid ""
 "The two movement methods serve different purposes, and later in this "
-"tutorial you'll see examples of how they work."
+"tutorial, you'll see examples of how they work."
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:47
@@ -104,7 +110,7 @@ msgstr ""
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:55
 msgid ""
 "``KinematicCollision2D`` is an object containing data about the collision "
-"and the colliding object. Using this data you can calculate your collision "
+"and the colliding object. Using this data, you can calculate your collision "
 "response."
 msgstr ""
 
@@ -199,7 +205,7 @@ msgstr ""
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:106
 msgid ""
 "A common question from new Godot users is: \"How do you decide which "
-"movement function to use?\" Often the response is to use "
+"movement function to use?\" Often, the response is to use "
 "``move_and_slide()`` because it's \"simpler\", but this is not necessarily "
 "the case. One way to think of it is that ``move_and_slide()`` is a special "
 "case, and ``move_and_collide()`` is more general. For example, the following "
@@ -230,13 +236,13 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:150
 msgid ""
-"If you've downloaded the sample project, this example is in the "
-"\"BasicMovement.tscn\" scene."
+"If you've downloaded the sample project, this example is in \"BasicMovement."
+"tscn\"."
 msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:152
 msgid ""
-"For this example, Add a ``KinematicBody2D`` with two children: a ``Sprite`` "
+"For this example, add a ``KinematicBody2D`` with two children: a ``Sprite`` "
 "and a ``CollisionShape2D``. Use the Godot \"icon.png\" as the Sprite's "
 "texture (drag it from the Filesystem dock to the *Texture* property of the "
 "``Sprite``). In the ``CollisionShape2D``'s *Shape* property, select \"New "
@@ -322,7 +328,7 @@ msgstr ""
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:407
 msgid ""
 "The action happens in ``_physics_process()``. After using "
-"``move_and_collide()`` if a collision occurs, a ``KinematicCollision2D`` "
+"``move_and_collide()``, if a collision occurs, a ``KinematicCollision2D`` "
 "object is returned (otherwise, the return is ``Nil``)."
 msgstr ""
 
@@ -364,7 +370,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:517
 msgid ""
-"When using ``move_and_slide()`` the function returns a vector representing "
+"When using ``move_and_slide()``, the function returns a vector representing "
 "the movement that remained after the slide collision occurred. Setting that "
 "value back to the character's ``velocity`` allows us to smoothly move up and "
 "down slopes. Try removing ``velocity =`` and see what happens if you don't "
@@ -389,6 +395,6 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/using_kinematic_body_2d.rst:531
 msgid ""
-"This also allows you to implement other features like wall jumps using "
+"This also allows you to implement other features (like wall jumps) using "
 "``is_on_wall()``, for example."
 msgstr ""

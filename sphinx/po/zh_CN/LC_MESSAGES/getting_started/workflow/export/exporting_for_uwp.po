@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:4
 msgid "Exporting for Universal Windows Platform"
-msgstr "导出通用Windows平台"
+msgstr "导出到通用Windows平台"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:6
 msgid ""
@@ -27,8 +27,9 @@ msgid ""
 "installed as a Windows App or submitted to the Windows Store. Exporting UWP "
 "packages also works from any platform, not only from Windows."
 msgstr ""
-"没有额外的要求导出 ``.appx`` 包，可以安装为Windows应用程序或提交到Windows应用"
-"商店。 导出UWP软件包也可以在任何平台上运行，而不仅仅是Windows。"
+"导出为 ``.appx`` 包没有额外的要求，它可以作为Windows应用程序被安装或提交到"
+"Windows应用商店。 导出UWP软件包的功能也可以在任何平台上成功运行，而不仅仅是"
+"Windows。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:10
 msgid ""
@@ -50,13 +51,12 @@ msgid "Limitations on Xbox One"
 msgstr "Xbox One的限制"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:20
-#, fuzzy
 msgid ""
 "As described in the `UWP documentation <https://docs.microsoft.com/en-us/"
 "windows/uwp/xbox-apps/system-resource-allocation>`__:"
 msgstr ""
-"如`UWP文档 <https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-"
-"resource-allocation>`__ 中所述："
+"如 `UWP文档 <https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-"
+"resource-allocation>`__ 中所述:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "Submitted as an \"App\""
@@ -72,15 +72,15 @@ msgstr "分享2-4个CPU核"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:25
 msgid "shared access of GPU power (45%)"
-msgstr "共享GPU功率（45％）"
+msgstr "共享GPU功率(45％)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid ""
 "Submitted as a \"Game\" (through `Xbox Live Creators Program <https://www."
 "xbox.com/en-US/developers/creators-program>`__)"
 msgstr ""
-"提交为“游戏”（通过`Xbox Live Creators Program <https://www.xbox.com/en-US/"
-"developers/creators-program>`__）"
+"提交为“游戏”(通过 `Xbox Live Creators Program <https://www.xbox.com/en-US/"
+"developers/creators-program>`__)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:28
 msgid "available memory is 5GB"
@@ -92,7 +92,7 @@ msgstr "4个独有的CPU内核和2个共享CPU内核"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:30
 msgid "exclusive access to GPU power (100%)"
-msgstr "独家访问GPU功率（100％）"
+msgstr "独家访问GPU功率(100％)"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:32
 msgid ""
@@ -140,7 +140,7 @@ msgstr ""
 msgid ""
 "Next, create a Personal Information Exchange (.pfx) file using ``Pvk2Pfx."
 "exe``::"
-msgstr "接下来，使用 ``Pvk2Pfx.exe`` 创建个人信息交换（.pfx）文件::"
+msgstr "接下来，使用 ``Pvk2Pfx.exe`` 创建个人信息交换(.pfx)文件::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:55
 msgid ""
@@ -159,11 +159,11 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:64
 msgid "Signing the package"
-msgstr "签署包裹"
+msgstr "签署包"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:66
 msgid "Finally, use ``SignTool.exe`` from the Windows SDK or Visual Studio::"
-msgstr "最后，使用Windows SDK或Visual Studio中的 ``SignTool.exe``  ::"
+msgstr "最后，使用Windows SDK或Visual Studio中的 ``SignTool.exe`` ::"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:71
 msgid "Installing the package"
@@ -181,7 +181,7 @@ msgstr ""
 msgid ""
 "It's also possible to install by using the ``Add-AppxPackage`` PowerShell "
 "cmdlet."
-msgstr "也可以使用 ``Add-AppxPackage``  PowerShell cmdlet进行安装。"
+msgstr "也可以使用 ``Add-AppxPackage`` PowerShell cmdlet进行安装。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_uwp.rst:78
 msgid ""

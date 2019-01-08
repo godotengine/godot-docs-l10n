@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -527,11 +527,12 @@ msgstr ""
 "no processo manual!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
+#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
-"used by Godot programmers: :ref:`Node.get_node() <class_Node_get_node>`. "
-"This function uses paths to fetch nodes anywhere in the scene, relative to "
-"the node that owns the script."
+"used by Godot programmers: :ref:`Node.get_node() "
+"<class_Node_method_get_node>`. This function uses paths to fetch nodes "
+"anywhere in the scene, relative to the node that owns the script."
 msgstr ""
 "Para conseguir isso, nós lhe apresentaremos uma função que é provavelmente a "
 "mais usada por programadores Godot: :ref:`Node.get_node() "
@@ -563,9 +564,10 @@ msgstr ""
 "pressionado:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
+#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
-"ref:`Object.connect() <class_Object_connect>`."
+"ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "Finalmente, conecte o sinal \"pressed\" (pressionado) do botão à função "
 "``_ready()`` usando :ref:`Object.connect() <class_Object_connect>`."

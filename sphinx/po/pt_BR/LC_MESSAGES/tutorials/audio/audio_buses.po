@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,7 +46,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:19
 msgid ""
 "Even the effect processors were written exclusively for Godot (save for the "
-"pitch shifting library), with games in mind. This allows a efficient "
+"pitch shifting library), with games in mind. This allows an efficient "
 "tradeoff between performance and sound quality."
 msgstr ""
 
@@ -86,7 +86,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:35
 msgid ""
 "0dB is considered the maximum audible volume without *clipping*. This limit "
-"is not the human limit but a limit from the sound hardware. Your sound "
+"is not the human limit, but a limit from the sound hardware. Your sound "
 "output simply can't output any sound louder than 0dB without distorting it "
 "(clipping it)."
 msgstr ""
@@ -118,7 +118,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:45
-msgid "Audio buses can be found in the bottom panel of Godot Editor:"
+msgid "Audio buses can be found in the bottom panel of the Godot Editor:"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:49
@@ -140,7 +140,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:57
-msgid "In the above image, *Bus 2* is routing its output to *Master* bus."
+msgid "In the above image, *Bus 2* is routing its output to the *Master* bus."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:60
@@ -154,7 +154,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:66
-msgid "Finally toggle the \"playing\" property to on and sound will flow."
+msgid "Finally, toggle the \"playing\" property to on and sound will flow."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:68
@@ -220,13 +220,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:100
-msgid "Compressor has may uses in the mix, for example:"
+msgid "The compressor has many uses in the mix, for example:"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:102
 msgid ""
 "It can be used in the Master bus to compress the whole output (Although a "
-"Limiter is probably better)"
+"Limiter would probably be better)"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:103
@@ -236,7 +236,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:104
 msgid ""
-"It can be *Sidechained*. This means, it can reduce the sound level using "
+"It can be *Sidechained*. This means it can reduce the sound level using "
 "another audio bus for threshold detection. This technique is very common in "
 "video game mixing to download the level of Music/SFX while voices are being "
 "heard."
@@ -250,7 +250,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:107
 msgid ""
-"There is a lot of bibliography written about compressors, and Godot "
+"There is a lot of bibliography written about compressors, and the Godot "
 "implementation is rather standard."
 msgstr ""
 
@@ -282,7 +282,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:123
 msgid ""
-"Godot provides three model of equalizers with different band counts. "
+"Godot provides three models of equalizers with different band counts. "
 "Equalizers are useful on the Master Bus to completely master a mix and give "
 "it character. They are also useful when a game is run on a mobile device, to "
 "adjust the mix to that kind of speakers (it can be added but disabled when "
@@ -297,8 +297,8 @@ msgstr ""
 msgid ""
 "These are filters that cut frequencies below a specific *Cutoff*. A common "
 "use of high pass filters is to add it to effects (or voice) that were "
-"recorded too close too a mic and need to sound more realistic. It is "
-"commonly used for some types of environment like space."
+"recorded too close to a mic and need to sound more realistic. It is commonly "
+"used for some types of environment, like space."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:133
@@ -393,9 +393,9 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:179
 msgid ""
-"There is no need to disable buses manually when not in use, Godot detects "
-"that the bus has been silent for a few seconds and disable it (including all "
-"effects)."
+"There is no need to disable buses manually when not in use; Godot detects "
+"that the bus has been silent for a few seconds and disables it (including "
+"all effects)."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:183
@@ -422,7 +422,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:194
 msgid ""
 "The default bus layout is automatically saved to the ``res://"
-"default_bus_layout.tres`` file. Other bus layouts can be saved/retrieved "
-"from files in case of having to change snapshots, but in most cases this is "
+"default_bus_layout.tres`` file. Other bus layouts can be saved to/retrieved "
+"from files in case of having to change snapshots, but in most cases, this is "
 "not necessary."
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,6 @@ msgid "Multiple Actions For Single Object"
 msgstr "单个对象的多个动作"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:12
-#, fuzzy
 msgid ""
 "In most games, one object would have several animations to switch between. "
 "This add-on has support for exporting multiple actions all at once into a "
@@ -60,11 +59,10 @@ msgstr ""
 "单个动画播放器中，使切换动作变得很容易。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:16
-#, fuzzy
 msgid ""
 "This workflow makes use of blender nla_tracks. Here is a brief guide on how "
 "to use this feature:"
-msgstr "此工作流程使用blender nla_tracks。 以下是如何使用此功能的简要指南："
+msgstr "此工作流程使用blender nla_tracks。 以下是如何使用此功能的简要指南:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:19
 msgid "**1. Switch workspace to 'Dope Sheet'**"
@@ -75,48 +73,43 @@ msgid "**2. Stash the active action**"
 msgstr "**2. 存放主动行动**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:25
-#, fuzzy
 msgid "The stashed action, while not active, will still be exported."
-msgstr "仍未导出行动中的藏匿行动"
+msgstr "隐藏的操作虽然不活动，但仍会导出。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:29
 msgid "**3. Check stashed actions in 'NLA Editor' [optional]**"
 msgstr "**3. 检查“NLA编辑器”中的隐藏操作[可选] **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:31
-#, fuzzy
 msgid "Switch workspace to 'NLA Editor'."
-msgstr "将工作区切换为“NLA编辑器”"
+msgstr "将工作区切换为“NLA编辑器”。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:35
-#, fuzzy
 msgid "Make sure all stashed actions are muted."
-msgstr "确保所有隐藏的操作都被静音"
+msgstr "确保所有隐藏的操作都被静音。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:39
 msgid "**4. Export the scene**"
 msgstr "**4. 导出场景**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:41
-#, fuzzy
 msgid ""
 "All the stashed actions, as well as the active action, are exported to an "
 "AnimationPlayer."
-msgstr "所有存储的操作以及活动操作都将导出到AnimationPlayer"
+msgstr "所有存储的操作以及活动操作都将导出到AnimationPlayer。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:48
 msgid "Constraints"
 msgstr "约束"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:49
-#, fuzzy
 msgid ""
 "Sometimes complicated animation is built with object constraint; a usual "
 "example is inverse kinematics. The add-on would automatically check if an "
 "object has some constraint; if it does, all the constraints are baked into "
 "every action the object has and then exported."
 msgstr ""
-"有时使用对象约束构建复杂动画，通常的例子是反向运动学。 插件会自动检查对象是否"
+"有时使用对象约束构建复杂动画，通常的示例是反向运动学。 插件会自动检查对象是否"
 "有某些约束，如果有，则所有约束都被烘焙到对象具有的每个操作中，然后导出。"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:56
@@ -124,7 +117,6 @@ msgid "Animation Mode"
 msgstr "动画模式"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:57
-#, fuzzy
 msgid ""
 "Godot and Blender have different structure to store animation data. In Godot "
 "animation data is stored in an AnimationPlayer node, instead of in each "
@@ -140,7 +132,6 @@ msgid "**Mode 'Animation as Actions'**"
 msgstr "**'动作动画'模式**"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:66
-#, fuzzy
 msgid ""
 "Treat all the animations as object actions, so in the exported scene, every "
 "object would have its own AnimationPlayer and hold its actions."
@@ -153,7 +144,6 @@ msgid "**Mode 'Scene Animation'**"
 msgstr "**模式 '场景动画' **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:72
-#, fuzzy
 msgid ""
 "If you want your animation to generate the same result as playing at "
 "Blender's timeline, this is what you want. In this mode, all the animations "
@@ -167,7 +157,6 @@ msgid "**Mode 'Animation as Action with Squash'**"
 msgstr "**模式 '动画与压缩行为' **"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/animation.rst:78
-#, fuzzy
 msgid ""
 "This mode has very similar behaviour of mode 'Animation as Action', but it "
 "can generate fewer AnimationPlayers; objects in parent-children relationship "
@@ -176,5 +165,5 @@ msgid ""
 "AnimationPlayer."
 msgstr ""
 "此模式与“动画为动作”模式的行为非常相似，但它可以生成较少的AnimationPlayers，"
-"父子关系中的对象将共享其AnimationPlayer。 当你有几个装备，每个Skeleton和Mesh"
+"父子关系中的对象将共享其AnimationPlayer。 当您有几个装备，每个Skeleton和Mesh"
 "都有动作时，它很有用，那么一个装备只有一个AnimationPlayer。"

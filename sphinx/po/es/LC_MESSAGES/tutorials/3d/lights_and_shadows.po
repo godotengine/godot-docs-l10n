@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,9 +27,10 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:9
+#, fuzzy
 msgid ""
-"Lights emit light that mixes with the materials and produces a visible "
-"result. Light can come from several types of sources in a scene:"
+"Light sources emit light that mixes with the materials and produces a "
+"visible result. Light can come from several types of sources in a scene:"
 msgstr ""
 "Las luces emiten luz que se mezcla con los materiales produciendo un "
 "resultado visible. La luz puede proceder de varios tipos de fuentes en una "
@@ -182,8 +183,9 @@ msgstr ""
 "sombras se representa con el face-culling invertido."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:54
+#, fuzzy
 msgid ""
-"Below is an image of how tweaking bias looks like. Default values work for "
+"Below is an image of what tweaking bias looks like. Default values work for "
 "most cases, but in general it depends on the size and complexity of geometry."
 msgstr ""
 "A continuación se muestra una imagen de cómo se ve el ajuste de inclinación. "
@@ -236,10 +238,11 @@ msgstr ""
 "cualquier lugar de la escena."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:80
+#, fuzzy
 msgid ""
-"Every face whose front-side is hit by the light rays is lit while the others "
-"stay dark. Most light types have specific parameters, but directional lights "
-"are pretty simple in nature so they don't."
+"Every face whose front-side is hit by the light rays is lit, while the "
+"others stay dark. Most light types have specific parameters, but directional "
+"lights are pretty simple in nature, so they don't."
 msgstr ""
 "Cada rostro, cuyo lado frontal es golpeado por los rayos de luz, se enciende "
 "mientras los otros permanecen oscuros. La mayoría de los tipos de luz tienen "
@@ -309,9 +312,10 @@ msgstr ""
 "mayor será la calidad de las sombras."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:114
+#, fuzzy
 msgid ""
 "Sometimes, the transition between a split and the next can look bad. To fix "
-"this, the **\"Blend Splits\"** option can be turned on which sacrifices "
+"this, the **\"Blend Splits\"** option can be turned on, which sacrifices "
 "detail in exchange for smoother transitions:"
 msgstr ""
 "A veces, la transición entre una división y la siguiente puede verse mal. "
@@ -382,9 +386,10 @@ msgstr ""
 "Project Settings -> Rendering -> Quality:"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:140
+#, fuzzy
 msgid ""
-"Increasing it can solve bias problems but reduce performance. Shadow mapping "
-"is an art of tweaking."
+"Increasing it can solve bias problems, but decrease performance. Shadow "
+"mapping is an art of tweaking."
 msgstr ""
 "Aumentarlo puede arreglar problemas de inclinaciñon pero reduce el "
 "rendimiento. El mapeo de sombras es un elemento que requiere muchos ajustes."
@@ -402,8 +407,9 @@ msgstr ""
 "direcciones hasta un radio dado."
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:150
+#, fuzzy
 msgid ""
-"In real life, light attenuation is an inverse function which means omni "
+"In real life, light attenuation is an inverse function, which means omni "
 "lights don't have a radius. This is a problem because it means computing "
 "several omni lights would become demanding."
 msgstr ""
@@ -441,8 +447,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:168
 msgid ""
 "Omni Shadows can be rendered as either **\"Dual Paraboloid\" or \"Cube Mapped"
-"\"**. The former renders quickly but can cause deformations while the later "
-"is more correct but more costly."
+"\"**. The former renders quickly, but can cause deformations, while the "
+"later is more correct, but costlier."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:174
@@ -500,20 +506,20 @@ msgstr "Shadow Mapping"
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:202
 msgid ""
-"Unlike Directional lights which have their own shadow texture, Omni and Spot "
-"lights are assigned to slots of a shadow atlas. This atlas can be configured "
-"in Project Settings -> Rendering -> Quality -> Shadow Atlas."
+"Unlike Directional lights, which have their own shadow texture, Omni and "
+"Spot lights are assigned to slots of a shadow atlas. This atlas can be "
+"configured in Project Settings -> Rendering -> Quality -> Shadow Atlas."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:207
 msgid ""
-"The resolution applies to the whole Shadow Atlas. This atlas is divided in "
+"The resolution applies to the whole Shadow Atlas. This atlas is divided into "
 "four quadrants:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:211
 msgid ""
-"Each quadrant can be subdivided to allocate any number of shadow maps. The "
+"Each quadrant can be subdivided to allocate any number of shadow maps; the "
 "following is the default subdivision:"
 msgstr ""
 
@@ -526,7 +532,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:220
-msgid "Every frame, the following logic is done for all lights:"
+msgid "Every frame, the following procedure is performed for all lights:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:222
@@ -549,15 +555,15 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:226
 msgid ""
-"If the slots in a quadrant are full, lights are pushed back to smaller slots "
-"depending on size and distance."
+"If the slots in a quadrant are full, lights are pushed back to smaller "
+"slots, depending on size and distance."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:228
 msgid ""
 "This allocation strategy works for most games, but you may want to use a "
-"separate one in some cases (as example, a top-down game where all lights are "
-"around the same size and quadrants may have all the same subdivision)."
+"separate one in some cases (for example, a top-down game where all lights "
+"are around the same size and quadrants may all have the same subdivision)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:232

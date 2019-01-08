@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid ""
 "deformed plane that looks like a miniature terrain complete with dynamic "
 "lighting."
 msgstr ""
-"本教程将教您如何在着色器中替换：ref：`Plane Mesh <class_PlaneMesh>`的顶点。 "
+"本教程将教您如何在着色器中替换 :ref:`Plane Mesh <class_PlaneMesh>` 的顶点。 "
 "顶点位移可用于各种效果，但最常见的是它用作将平面转变为简单地形的快速方法。 通"
 "常这是使用高度图完成的，但为了保持所有内容的自包含，在本教程中我们将使用着色"
 "器中的噪声。 在本教程结束时，我们将看到一个变形的平面，看起来像一个完整的动态"
@@ -44,32 +44,32 @@ msgstr ""
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:18
 msgid "By reading this tutorial you should gain a basic understanding of:"
-msgstr "通过阅读本教程，您应该基本了解："
+msgstr "通过阅读本教程，您应该基本了解:"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:20
 msgid "How to create and subdivide a :ref:`Plane Mesh<class_PlaneMesh>`"
-msgstr "如何创建和细分：ref：`Plane Mesh <class_PlaneMesh>`"
+msgstr "如何创建和细分 :ref:`Plane Mesh <class_PlaneMesh>`"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:21
 msgid ""
 "How to create and assign a material to a :ref:`Mesh<class_MeshInstance>`"
-msgstr "如何创建和分配材料到：ref：`Mesh <class_MeshInstance>`"
+msgstr "如何创建和分配材质到 :ref:`Mesh <class_MeshInstance>`"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:22
 msgid ""
 "How to write a :ref:`Shader<class_Shader>` that displaces the vertices of a :"
 "ref:`Mesh<class_MeshInstance>`"
 msgstr ""
-"如何写一个：ref：`Shader <class_Shader>`替换a：ref：`Mesh "
-"<class_MeshInstance>的顶点"
+"如何写一个 :ref:`Shader <class_Shader>` 替换a :ref:`Mesh <class_MeshInstance>"
+"的顶点"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:23
 msgid ""
 "How to pass values (Uniforms) into a :ref:`Shader<class_Shader>` to update "
 "the :ref:`Mesh<class_MeshInstance>` in realtime"
 msgstr ""
-"如何将值（Uniforms）传递到：ref：`Shader <class_Shader>`以实时更新：ref："
-"`Mesh <class_MeshInstance>`"
+"如何将值(Uniforms)传递到 :ref:`Shader <class_Shader>` 以实时更新 :ref:`Mesh "
+"<class_MeshInstance>`"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:24
 msgid "How to approximate normals from a height function"
@@ -77,7 +77,7 @@ msgstr "如何从高度函数近似法线"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:25
 msgid "How to use a light with a custom material"
-msgstr "如何使用自定义材料的灯光"
+msgstr "如何使用自定义材质的灯光"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:28
 msgid "The plane mesh"
@@ -88,8 +88,8 @@ msgid ""
 "First, add a :ref:`Spatial<class_Spatial>` node to the scene to act as the "
 "root. Next, add a :ref:`MeshInstance<class_MeshInstance>` as a child."
 msgstr ""
-"首先，在场景中添加一个：ref：`Spatial <class_Spatial>`节点作为根。 接下来，添"
-"加：ref：`MeshInstance <class_MeshInstance>`作为孩子。"
+"首先，在场景中添加一个 :ref:`Spatial <class_Spatial>` 节点作为根。 接下来，添"
+"加 :ref:`MeshInstance <class_MeshInstance>` 作为子节点。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:35
 msgid ""
@@ -98,16 +98,16 @@ msgid ""
 "in the Inspector. This will bring up a list of :ref:"
 "`PrimitiveMeshes<class_PrimitiveMesh>`. Select \"New PlaneMesh\"."
 msgstr ""
-"选择新创建的：ref：`MeshInstance <class_MeshInstance>`。 然后单击Inspector"
-"中：ref：`Mesh <class_MeshInstance>`旁边的“null”按钮。 这将显示一个列表："
-"ref：`PrimitiveMeshes <class_PrimitiveMesh>`。 选择“New PlaneMesh”。"
+"选择新创建的 :ref:`MeshInstance <class_MeshInstance>`。 然后单击Inspector中 :"
+"ref:`Mesh <class_MeshInstance>` 旁边的“null”按钮。 这将显示一个列表 :ref:"
+"`PrimitiveMeshes <class_PrimitiveMesh>`。 选择“New PlaneMesh”。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:41
 msgid ""
 "The button will change into a small image of a plane. Click on it to enter "
 "into the Inspector for the :ref:`Plane Mesh<class_MeshInstance>`."
 msgstr ""
-"该按钮将变为平面的小图像。 单击它进入Inspector，进入：ref：`Plane Mesh "
+"该按钮将变为平面的小图像。 单击它进入Inspector，进入 :ref:`Plane Mesh "
 "<class_MeshInstance>`。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:44
@@ -116,7 +116,7 @@ msgid ""
 "[Perspective]. A menu will appear. In the middle of the menu are options for "
 "how to display the scene. Select 'Display Wireframe'."
 msgstr ""
-"然后，在视口中，单击左上角，显示[透视]。 将出现一个菜单。 菜单中间是如何显示"
+"然后，在视区中，单击左上角，显示[透视]。 将出现一个菜单。 菜单中间是如何显示"
 "场景的选项。 选择“显示线框”。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:50
@@ -133,7 +133,7 @@ msgid ""
 "`Mesh<class_MeshInstance>`. This will give us more vertices to work with and "
 "thus allow us to add more detail."
 msgstr ""
-"您可以看到现在有更多三角形：ref：`Mesh <class_MeshInstance>`。 这将为我们提供"
+"您可以看到现在有更多三角形 :ref:`Mesh <class_MeshInstance>`。 这将为我们提供"
 "更多顶点，从而允许我们添加更多细节。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:65
@@ -145,32 +145,32 @@ msgid ""
 "Now that we have a :ref:`Plane Mesh<class_MeshInstance>` to draw lets setup "
 "the material that will deform the :ref:`Mesh<class_MeshInstance>`."
 msgstr ""
-"现在我们有了一个：ref：`Plane Mesh <class_MeshInstance>`来绘制让我们设置将变"
-"形的材质：ref：`Mesh <class_MeshInstance>`。"
+"现在我们有了一个 :ref:`Plane Mesh <class_MeshInstance>` 来绘制让我们设置将变"
+"形的材质 :ref:`Mesh <class_MeshInstance>`。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:69
 msgid ""
 "Click beside material in the :ref:`Plane Mesh<class_MeshInstance>` Menu and "
 "create a new :ref:`ShaderMaterial<class_ShaderMaterial>`."
 msgstr ""
-"单击下面的材料：ref：`Plane Mesh <class_MeshInstance>`菜单并创建一个新的："
-"ref：`ShaderMaterial <class_ShaderMaterial>`。"
+"单击下面的材质 :ref:`Plane Mesh <class_MeshInstance>` 菜单并创建一个新的 :"
+"ref:`ShaderMaterial <class_ShaderMaterial>`。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:73
 msgid "Then click on the created :ref:`ShaderMaterial<class_ShaderMaterial>`."
-msgstr "然后单击created：ref：`ShaderMaterial <class_ShaderMaterial>`。"
+msgstr "然后单击created :ref:`ShaderMaterial <class_ShaderMaterial>`。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:75
 msgid ""
 "Then click beside 'shader' and create a new :ref:`Shader<class_Shader>`."
-msgstr "然后单击“着色器”旁边的并创建一个新的：ref：`Shader <class_Shader>`。"
+msgstr "然后单击“着色器”旁边的并创建一个新的 :ref:`Shader <class_Shader>`。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:79
 msgid ""
 "Click into the newly created :ref:`Shader<class_Shader>`. You should now see "
 "Godot's Shader editor."
 msgstr ""
-"单击新创建的：ref：`Shader <class_Shader>`。 你现在应该看看Godot的Shader编辑"
+"单击新创建的 :ref:`Shader <class_Shader>`。 您现在应该看看Godot的Shader编辑"
 "器。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:83
@@ -183,9 +183,10 @@ msgid ""
 "run the light shader on this object."
 msgstr ""
 "注意它是如何抛出错误的？ 这是因为着色器编辑器会自动重新加载着色器。 Godot着色"
-"器需要的第一件事就是声明它们是什么类型的着色器。 因此，我们将变量"
-"``shader_type``设置为``spatial``。 我们要添加的另一件事是``render_mode``，我"
-"们将它设置为``unshaded``。 这意味着Godot不会在此对象上运行灯光着色器。"
+"器需要的第一件事就是声明它们是什么类型的着色器。 因此，我们将变量 "
+"``shader_type`` 设置为 ``spatial`` 。 我们要添加的另一件事是 "
+"``render_mode`` ，我们将它设置为 ``unshaded`` 。 这意味着Godot不会在此对象上"
+"运行灯光着色器。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:94
 msgid ""
@@ -193,8 +194,8 @@ msgid ""
 "should turn white. If you were to comment out the ``render_mode`` the plane "
 "would appear blue because it would pick up the sky colors."
 msgstr ""
-"这应该删除错误，你的：ref：`Mesh <class_MeshInstance>`应该变成白色。 如果你要"
-"注释掉``render_mode``，飞机会显得很蓝，因为它会拾取天空的颜色。"
+"这应该删除错误，您的 :ref:`Mesh <class_MeshInstance>` 应该变成白色。 如果您要"
+"注释掉 ``render_mode`` ，飞机会显得很蓝，因为它会拾取天空的颜色。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:97
 msgid ""
@@ -203,21 +204,21 @@ msgid ""
 "We will be using it to offset the height of each vertex and make our flat "
 "plane appear like a little terrain."
 msgstr ""
-"接下来我们将定义一个顶点着色器。 顶点着色器确定最终场景中出现的地址：ref："
-"`Mesh <class_MeshInstance>`的顶点。 我们将使用它来偏移每个顶点的高度，并使我"
+"接下来我们将定义一个顶点着色器。 顶点着色器确定最终场景中出现的地址 :ref:"
+"`Mesh <class_MeshInstance>` 的顶点。 我们将使用它来偏移每个顶点的高度，并使我"
 "们的平面看起来像一个小地形。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:101
 msgid "We define the vertex shader like so:"
-msgstr "我们像这样定义顶点着色器："
+msgstr "我们像这样定义顶点着色器:"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:109
 msgid ""
 "With nothing in the ``vertex`` function Godot will use its default vertex "
 "shader. We can easily start to make changes by adding a single line:"
 msgstr ""
-"在``vertex``函数中没有任何内容，Godot将使用其默认的顶点着色器。 我们可以通过"
-"添加一行来轻松开始进行更改："
+"在 ``vertex`` 函数中没有任何内容，Godot将使用其默认的顶点着色器。 我们可以通"
+"过添加一行来轻松开始进行更改:"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:118
 msgid "Adding this line you should get an image like the one below."
@@ -230,9 +231,9 @@ msgid ""
 "``VERTEX`` as arguments to ``cos`` and ``sin`` this gives us a wave like "
 "appearance across the ``x`` and ``z`` axis."
 msgstr ""
-"好吧，让我们打开它。 ``VERTEX``的``y``值正在增加。 我们传递``VERTEX``的``x``"
-"和``z``组件作为``cos``和``sin``的参数，这给了我们一个横跨``x的波浪外观 ``和"
-"``z``轴。"
+"好吧，让我们打开它。 ``VERTEX``的``y``值正在增加。 我们传递 ``VERTEX`` 的"
+"``x``和``z``组件作为 ``cos`` 和``sin``的参数，这给了我们一个横跨``x的波浪外"
+"观 ``和 ``z`` 轴。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:126
 msgid ""
@@ -240,8 +241,8 @@ msgid ""
 "``sin`` already look kind of like hills. We do so by scaling the inputs to "
 "the ``cos`` and ``sin`` functions."
 msgstr ""
-"我们想要实现的是小山丘的外观，毕竟``cos``和``sin``看起来有点像山丘。 我们通过"
-"缩放“cos``和``sin``函数的输入来实现。"
+"我们想要实现的是小山丘的外观，毕竟 ``cos`` 和``sin``看起来有点像山丘。 我们通"
+"过缩放“cos``和``sin``函数的输入来实现。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:137
 msgid ""
@@ -250,15 +251,17 @@ msgid ""
 "is much too high. We correct this by multiplying the result by ``0.5`` to "
 "reduce the size."
 msgstr ""
-"这看起来更好，但它仍然太尖刻。 这是因为``cos``和``sin``在``-1``和````之间输出"
-"值，所以输出的范围太高了。 我们通过将结果乘以“0.5”来纠正这个问题以减小尺寸。"
+"这看起来更好，但它仍然太尖刻。 这是因为 ``cos`` 和``sin``在``-1``和````之间输"
+"出值，所以输出的范围太高了。 我们通过将结果乘以“0.5”来纠正这个问题以减小大"
+"小。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:148
 msgid ""
 "Looks much more hilly now. But ``cos`` and ``sin`` are boring. Lets move "
 "onto something more interesting."
 msgstr ""
-"现在看起来更加丘陵了。 但是``cos``和``sin``很无聊。 让我们进入更有趣的事情。"
+"现在看起来更加丘陵了。 但是 ``cos`` 和``sin``很无聊。 让我们进入更有趣的事"
+"情。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:151
 msgid "Noise"
@@ -317,7 +320,7 @@ msgstr ""
 msgid ""
 "We can now use this noise function in place of ``cos`` and ``sin`` in the "
 "previous section."
-msgstr "我们现在可以使用这个噪声函数代替上一节中的``cos``和``sin``。"
+msgstr "我们现在可以使用这个噪声函数代替上一节中的 ``cos`` 和``sin``。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:213
 msgid ""
@@ -340,16 +343,16 @@ msgid ""
 "`Mesh<class_MeshInstance>`."
 msgstr ""
 "顶点着色器和片段着色器之间的区别在于顶点着色器每个顶点运行并设置诸"
-"如“VERTEX”（位置）和“正常”的属性，而片段着色器按像素运行，最重要的是， 设置："
-"ref：`Mesh <class_MeshInstance>`的``ALBEDO``颜色。"
+"如“VERTEX”(位置)和“正常”的属性，而片段着色器按像素运行，最重要的是， 设置 :"
+"ref:`Mesh <class_MeshInstance>` 的 ``ALBEDO`` 颜色。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:223
 msgid ""
 "Now lets look at the :ref:`Mesh<class_MeshInstance>` with a regular shader "
 "instead of the wireframe. Set the viewport back to 'Display Normal'."
 msgstr ""
-"现在让我们看一下：ref：`Mesh <class_MeshInstance>`用常规着色器而不是线框。 将"
-"视口设置回“显示正常”。"
+"现在让我们看一下 :ref:`Mesh <class_MeshInstance>` 用常规着色器而不是线框。 将"
+"视区设置回“显示正常”。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:228
 msgid ""
@@ -360,10 +363,10 @@ msgid ""
 "``COLOR`` variable in the vertex shader. And by setting the ``ALBEDO`` in "
 "the fragment shader to the calculated ``COLOR`` variable."
 msgstr ""
-"：ref：`Mesh <class_MeshInstance>`看起来是完全白色的，因为片段着色器将每个像"
-"素着色为白色，但如果每个像素都是白色，我们就会丢失详细信息：ref：`Mesh "
+":ref:`Mesh <class_MeshInstance>` 看起来是完全白色的，因为片段着色器将每个像素"
+"着色为白色，但如果每个像素都是白色，我们就会丢失详细信息 :ref:`Mesh "
 "<class_MeshInstance>`。 因此，让我们根据顶点着色器中计算的高度为每个像素着"
-"色。 我们通过在顶点着色器中设置``COLOR``变量来实现。 并通过将片段着色器中"
+"色。 我们通过在顶点着色器中设置 ``COLOR`` 变量来实现。 并通过将片段着色器中"
 "的“ALBEDO”设置为计算的“COLOR”变量。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:245
@@ -372,8 +375,8 @@ msgid ""
 "`Mesh<class_MeshInstance>`, even without displaying the :ref:"
 "`Mesh<class_MeshInstance>`'s wireframe."
 msgstr ""
-"通过这个更改，我们可以看到：ref：`Mesh <class_MeshInstance>`的细节，即使没有"
-"显示：ref：`Mesh <class_MeshInstance>`的线框。"
+"通过这个更改，我们可以看到 :ref:`Mesh <class_MeshInstance>` 的细节，即使没有"
+"显示 :ref:`Mesh <class_MeshInstance>` 的线框。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:250
 msgid "Uniforms"
@@ -387,8 +390,8 @@ msgid ""
 "in your :ref:`Shader<class_Shader>` using the keyword ``uniform``."
 msgstr ""
 "统一变量允许您将数据从游戏传递到着色器。 它们对于控制着色器效果非常有用。 制"
-"服几乎可以是着色器中可以使用的任何数据类型。 要使用制服，请使用关键字"
-"``uniform``在：ref：`Shader <class_Shader>`中声明它。"
+"服几乎可以是着色器中可以使用的任何数据类型。 要使用制服，请使用关键字 "
+"``uniform`` 在 :ref:`Shader <class_Shader>` 中声明它。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:257
 msgid "Lets make a uniform that changes the height of the terrain."
@@ -402,9 +405,9 @@ msgid ""
 "passed from gdscript takes precedence over the value used to initialize it "
 "in the shader."
 msgstr ""
-"Godot允许你用值初始化一个制服，这里``height_scale``设置为``0.5``。 您可以通过"
-"在与着色器对应的材质上调用函数``set_shader_param``来设置gdscript中的制服。 从"
-"gdscript传递的值优先于用于在着色器中初始化它的值。"
+"Godot允许您用值初始化一个制服，这里 ``height_scale`` 设置为 ``0.5`` 。 您可以"
+"通过在与着色器对应的材质上调用函数 ``set_shader_param`` 来设置gdscript中的制"
+"服。 从gdscript传递的值优先于用于在着色器中初始化它的值。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:273
 msgid ""
@@ -414,9 +417,9 @@ msgid ""
 "we will use it to set the height value instead of arbitrarily multiplying by "
 "``0.5``."
 msgstr ""
-"请记住，传递给``set_shader_param``的字符串必须与：ref：`Shader "
-"<class_Shader>`中的统一变量的名称匹配。 您可以在：ref：`Shader "
-"<class_Shader>`中的任何位置使用统一变量。 在这里，我们将使用它来设置高度值，"
+"请记住，传递给 ``set_shader_param`` 的字符串必须与 :ref:`Shader "
+"<class_Shader>` 中的统一变量的名称匹配。 您可以在 :ref:`Shader "
+"<class_Shader>` 中的任何位置使用统一变量。 在这里，我们将使用它来设置高度值，"
 "而不是任意乘以“0.5”。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:282
@@ -424,12 +427,12 @@ msgid ""
 "The terrain should look exactly the same, but now we have control over the "
 "height easily. Here is the same terrain with ``height_scale`` set to ``1``:"
 msgstr ""
-"地形应该看起来完全一样，但现在我们可以轻松控制高度。 这里是``height_scale``设"
-"置为``1``的相同地形："
+"地形应该看起来完全一样，但现在我们可以轻松控制高度。 这里是 ``height_scale`` "
+"设置为 ``1`` 的相同地形:"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:287
 msgid "And here it is with ``height_scale`` set to ``0.2``:"
-msgstr "在这里，``height_scale``设置为``0.2``："
+msgstr "在这里， ``height_scale`` 设置为``0.2``:"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:291
 msgid ""
@@ -437,8 +440,8 @@ msgid ""
 "height of the terrain. Combined with :ref:`Tweens<class_Tween>` this can be "
 "especially useful for simple animations."
 msgstr ""
-"使用制服我们甚至可以改变每帧的值来设置地形的高度。 结合：ref：`Tweens "
-"<class_Tween>`这对简单的动画特别有用。"
+"使用制服我们甚至可以改变每帧的值来设置地形的高度。 结合 :ref:`Tweens "
+"<class_Tween>` 这对简单的动画特别有用。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:295
 msgid "Interacting with light"
@@ -451,7 +454,7 @@ msgid ""
 "scene."
 msgstr ""
 "作为本教程的最后一部分，我们尝试设置地形以与光交互。 首先，我们将向场景中添"
-"加：ref：`OmniLight <class_OmniLight>`。"
+"加 :ref:`OmniLight <class_OmniLight>` 。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:303
 msgid ""
@@ -459,8 +462,8 @@ msgid ""
 "``render_mode`` to ``unshaded`` at the beginning of this tutorial, lets "
 "remove that."
 msgstr ""
-"您应该注意到没有任何变化，这是因为我们在本教程的开头将``render_mode``设置为"
-"``unshaded``，让我们删除它。"
+"您应该注意到没有任何变化，这是因为我们在本教程的开头将 ``render_mode`` 设置"
+"为 ``unshaded`` ，让我们删除它。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:313
 msgid ""
@@ -476,14 +479,14 @@ msgid ""
 "shader. With ``NORMAL`` set Godot will do all the difficult lighting "
 "calculations for us."
 msgstr ""
-"它现在看起来稍微好一点，你可以看到影响地形的光线，并且它因天空而变成了蓝色。 "
-"问题是光线正在影响地形，好像它是一个平面。 这是因为灯光着色器使用：ref："
-"`Mesh <class_MeshInstance>`的法线来计算光。 法线存储在：ref：`Mesh "
-"<class_MeshInstance>`中，但是我们正在改变着色器中的：ref：`Mesh "
-"<class_MeshInstance>`的形状，因此法线不再正确。 要解决此问题，我们需要重新计"
+"它现在看起来稍微好一点，您可以看到影响地形的光线，并且它因天空而变成了蓝色。 "
+"问题是光线正在影响地形，好像它是一个平面。 这是因为灯光着色器使用 :ref:`Mesh "
+"<class_MeshInstance>` 的法线来计算光。 法线存储在 :ref:`Mesh "
+"<class_MeshInstance>` 中，但是我们正在改变着色器中的 :ref:`Mesh "
+"<class_MeshInstance>` 的形状，因此法线不再正确。 要解决此问题，我们需要重新计"
 "算着色器中的法线。 Godot让我们很容易，我们所要做的就是计算新法线并在顶点着色"
-"器中将``NORMAL``设置为该值。 通过``NORMAL``设置，戈多将为我们完成所有困难的灯"
-"光计算。"
+"器中将 ``NORMAL`` 设置为该值。 通过 ``NORMAL`` 设置，Godot将为我们完成所有困"
+"难的灯光计算。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:322
 msgid ""
@@ -508,12 +511,12 @@ msgid ""
 "from the ``VERTEX``. Setting ``e`` to a lower number will increase the level "
 "of detail of the normal."
 msgstr ""
-"变量``e``只是更容易从``VERTEX``中添加和减去正确的值。 将``e``设置为较低的数字"
-"将增加法线的细节水平。"
+"变量 ``e`` 只是更容易从 ``VERTEX`` 中添加和减去正确的值。 将 ``e`` 设置为较低"
+"的数字将增加法线的细节水平。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:339
 msgid "With ``NORMAL`` calculated the terrain now looks like:"
-msgstr "使用“NORMAL”计算地形现在看起来像："
+msgstr "使用“NORMAL”计算地形现在看起来像:"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:343
 msgid ""
@@ -525,9 +528,9 @@ msgid ""
 "``subdivision`` set to ``100``."
 msgstr ""
 "这看起来仍然不是我们想要的。 这里的问题是噪声变化比顶点变化得快。 因此，当我"
-"们计算“VERTEX”点时的法线时，它与我们在final中看到的不一致：ref：`Mesh "
+"们计算“VERTEX”点时的法线时，它与我们在final中看到的不一致 :ref:`Mesh "
 "<class_MeshInstance>`。 为了解决这个问题，我们添加了更多顶点。 下面的图像是"
-"用：ref：`Mesh <class_MeshInstance>`，``subdivision``设置为``100``。"
+"用 :ref:`Mesh <class_MeshInstance>`， ``subdivision`` 设置为 ``100`` 。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:351
 msgid ""
@@ -539,7 +542,7 @@ msgid ""
 "If you zoom the camera out you can see that the :ref:"
 "`Mesh<class_MeshInstance>` now looks like a small terrain."
 msgstr ""
-"如果你缩小相机，你可以看到：ref：`Mesh <class_MeshInstance>`现在看起来像一个"
+"如果您缩小相机，您可以看到 :ref:`Mesh <class_MeshInstance>` 现在看起来像一个"
 "小地形。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:361
@@ -550,14 +553,14 @@ msgid ""
 "Meshes<class_PrimitiveMesh>`, and try making your own functions to calculate "
 "``height``."
 msgstr ""
-"这就是本教程的一切。 希望您了解戈多的顶点着色器的基础知识。 作为进一步的练习"
-"尝试从gdscript更改``height_scale``，尝试使用不同的：ref：`Primitive Meshes "
-"<class_PrimitiveMesh>`，并尝试使用自己的函数来计算``height``。"
+"这就是本教程的一切。 希望您了解Godot的顶点着色器的基础知识。 作为进一步的练习"
+"尝试从gdscript更改 ``height_scale`` ，尝试使用不同的 :ref:`Primitive Meshes "
+"<class_PrimitiveMesh>`，并尝试使用自己的函数来计算 ``height`` 。"
 
 #: ../../docs/tutorials/shading/vertex_displacement_with_shaders.rst:366
 msgid ""
 "For further information on how to use shaders in Godot you should check out "
 "the :ref:`doc_shading_language` page."
 msgstr ""
-"有关如何在Godot中使用着色器的更多信息，请查看：ref：`doc_shading_language`页"
+"有关如何在Godot中使用着色器的更多信息，请查看 :ref:`doc_shading_language`页"
 "面。"

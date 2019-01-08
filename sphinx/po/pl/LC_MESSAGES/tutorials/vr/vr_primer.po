@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,9 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:4
-#, fuzzy
 msgid "AR/VR primer"
-msgstr "Serwer AR/VR"
+msgstr "Wstęp do AR/VR"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:6
 msgid ""
@@ -41,7 +40,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:12
-#, fuzzy
 msgid "AR/VR server"
 msgstr "Serwer AR/VR"
 
@@ -55,10 +53,10 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:16
 msgid ""
-"You can use the function :ref:`get_interfaces "
-"<class_ARVRServer_get_interfaces>` to return a list of available interfaces "
-"but for this tutorial we're going to use the :ref:`native mobile VR "
-"interface <class_MobileVRInterface>` in our examples. This interface is a "
+"You can use the function :ref:`get_interfaces() "
+"<class_ARVRServer_method_get_interfaces>` to return a list of available "
+"interfaces but for this tutorial we're going to use the :ref:`native mobile "
+"VR interface <class_MobileVRInterface>` in our examples. This interface is a "
 "straightforward implementation that uses the 3DOF sensors on your phone for "
 "orientation and outputs a stereoscopic image to screen. It is also available "
 "in the Godot core and outputs to screen on desktop which makes it ideal for "
@@ -98,7 +96,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:42
-#, fuzzy
 msgid "New AR/VR nodes"
 msgstr "Nowe węzły AR/VR"
 

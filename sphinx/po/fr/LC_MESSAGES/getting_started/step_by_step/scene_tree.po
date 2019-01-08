@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -169,10 +169,11 @@ msgstr ""
 "mode pause ou l'abandon du processus."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
+#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
-"get_tree() <class_Node_get_tree>`."
+"get_tree() <class_Node_method_get_tree>`."
 msgstr ""
 "Lorsqu'un nœud fait partie de l'arbre des scènes, le singleton :ref:"
 "`SceneTree <class_SceneTree>` peut être obtenu en appelant simplement :ref:"
@@ -308,28 +309,37 @@ msgstr ""
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
-msgstr "Quand une scène (ou une partie de celle-ci)"
+msgstr ""
+"Quand une scène (ou une partie de celle-ci) est enlevée, ils reçoivent la "
+"notification \"exit scene\" (fonction de rappel _exit_tree() dans GDScript), "
+"du nœud le plus bas vers celui le plus haut"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:141
 msgid "Changing current scene"
 msgstr "Changement de la scène courante"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
+#, fuzzy
 msgid ""
 "After a scene is loaded, it is often desired to change this scene for "
 "another one. The simple way to do this is to use the :ref:`SceneTree."
-"change_scene() <class_SceneTree_change_scene>` function:"
+"change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
 "Après qu'une scène soit chargée, il est souvent souhaitable de la remplacer "
 "par une autre. La façon la plus simple de le faire est d'utiliser la "
 "fonction :ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` :"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
+#, fuzzy
 msgid ""
 "Rather than using file paths, one can also use ready-made :ref:`PackedScene "
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
-"change_scene_to(PackedScene scene) <class_SceneTree_change_scene_to>`:"
+"change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
+"Au lieu d'utiliser des chemins de fichiers, vous pouvez aussi utiliser la "
+"ressource déjà prête :ref:`PackedScene <class_PackedScene>` en utilisant la "
+"fonction équivalente :ref:`SceneTree.change_scene_to(PackedScene scene) "
+"<class_SceneTree_change_scene_to>` :"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 #, fuzzy

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,9 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:9
+#, fuzzy
 msgid ""
-"Since version 3.1, Godot supports ragdoll physics. Ragdolls rely on physic "
+"Since version 3.1, Godot supports ragdoll physics. Ragdolls rely on physics "
 "simulation to create realistic procedural animation. They are used for death "
 "animations in many games."
 msgstr ""
@@ -47,7 +48,7 @@ msgid ""
 msgstr ""
 "您可以在 `GitHub <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/3d/platformer>`_ 上下载Platformer3D演示或使用 `Asset Library <https://"
-"godotengine.org/asset-library/asset/125>`_。"
+"godotengine.org/asset-library/asset/125>`_ 。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:16
 msgid "Setting up the ragdoll"
@@ -64,9 +65,9 @@ msgid ""
 "you can generate ``PhysicalBone`` nodes with the \"Create physical skeleton"
 "\" feature in the skeleton node."
 msgstr ""
-"与引擎中的许多其他功能一样，有一个节点可以设置一个布娃娃： :ref:"
-"`PhysicalBone <class_PhysicalBone>` 节点。 为了简化设置，您可以使用骨架节点中"
-"的“创建物理骨架”功能生成 ``PhysicalBone`` 节点。"
+"与引擎中的许多其他功能一样，有一个节点可以设置一个布娃娃: :ref:`PhysicalBone "
+"<class_PhysicalBone>` 节点。 为了简化设置，您可以使用骨架节点中的“创建物理骨"
+"架”功能生成 ``PhysicalBone`` 节点。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:23
 msgid ""
@@ -74,7 +75,7 @@ msgid ""
 "``Skeleton`` node. A skeleton button appears on the top bar menu:"
 msgstr ""
 "在Godot中打开平台演示，然后在Robi场景中打开。 选择 ``Skeleton`` 节点。 顶部栏"
-"菜单上显示骨架按钮："
+"菜单上显示骨架按钮:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:27
 msgid ""
@@ -83,14 +84,14 @@ msgid ""
 "skeleton and pin joints to connect them together:"
 msgstr ""
 "单击它并选择 ``创建物理骨架`` 选项。 Godot将为骨架中的每个骨骼生成 "
-"``PhysicalBone`` 节点和碰撞形状，并将针脚连接在一起以将它们连接在一起："
+"``PhysicalBone`` 节点和碰撞形状，并将针脚连接在一起以将它们连接在一起:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:31
 msgid ""
 "Some of the generated bones aren't necessary: the ``MASTER`` bone for "
 "example. So we're going to clean up the skeleton by removing them."
 msgstr ""
-"一些生成的骨骼不是必需的：例如 ``MASTER`` 骨骼。 因此，我们将通过删除它们来清"
+"一些生成的骨骼不是必需的:例如 ``MASTER`` 骨骼。 因此，我们将通过删除它们来清"
 "理骨架。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:34
@@ -98,10 +99,11 @@ msgid "Cleaning up the skeleton"
 msgstr "清理骨骼"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:36
+#, fuzzy
 msgid ""
-"Each ``PhysicalBone`` the engine needs to simulate has a performance cost so "
-"you want to remove every bone that is too small to make a difference in the "
-"simulation, as well as all utility bones."
+"Each ``PhysicalBone`` the engine needs to simulate has a performance cost, "
+"so you want to remove every bone that is too small to make a difference in "
+"the simulation, as well as all utility bones."
 msgstr ""
 "引擎需要模拟的每个“PhysicalBone”都具有性能成本，因此您希望删除每个骨骼，这些"
 "骨骼太小而不能在模拟中产生差异，以及所有实用程序骨骼。"
@@ -122,19 +124,20 @@ msgid ""
 "``headtracker``. This gives us an optimized skeleton and makes it easier to "
 "control the ragdoll."
 msgstr ""
-"删除这些物理骨骼： ``MASTER``, ``waist``, ``neck``, ``headtracker``。 这为我"
-"们提供了优化的骨架，使其更容易控制布娃娃。"
+"删除这些物理骨骼: ``MASTER``, ``waist``, ``neck``, ``headtracker``。 这为我们"
+"提供了优化的骨架，使其更容易控制布娃娃。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:43
 msgid "Collision shape adjustment"
 msgstr "碰撞形状调整"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:45
+#, fuzzy
 msgid ""
-"The next task is adjust the collision shape and the size of physical bones "
-"to match the part of body that each bone should simulate."
+"The next task is adjusting the collision shape and the size of physical "
+"bones to match the part of the body that each bone should simulate."
 msgstr ""
-"接下来的任务是调整碰撞形状和物理骨骼的大小，以匹配每个骨骼应该模拟的身体部"
+"接下来的任务是调整碰撞形状和物理骨骼的大小，以匹配每个骨骼应该模拟的物体部"
 "位。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:50
@@ -142,15 +145,16 @@ msgid "Joints adjustment"
 msgstr "关节调整"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:52
+#, fuzzy
 msgid ""
-"Once you adjusted the collision shapes your ragdoll is almost ready. You "
+"Once you adjusted the collision shapes, your ragdoll is almost ready. You "
 "just want to adjust the pin joints to get a better simulation. "
 "``PhysicalBone`` nodes have an unconstrained pin joint assigned to them by "
 "default. To change the pin joint, select the ``PhysicalBone`` and change the "
 "constraint type in the ``Joint`` section. There, you can change the "
 "constraint's orientation and its limits."
 msgstr ""
-"一旦你调整了碰撞形状，你的布娃娃几乎准备好了。 您只想调整销接头以获得更好的模"
+"一旦您调整了碰撞形状，您的布娃娃几乎准备好了。 您只想调整销接头以获得更好的模"
 "拟效果。 默认情况下， ``PhysicalBone`` 节点有一个无约束的pin关节。 要更改引脚"
 "接头，请选择“PhysicalBone”并在“Joint`”部分更改约束类型。 在那里，您可以更改约"
 "束的方向及其限制。"
@@ -170,14 +174,14 @@ msgid ""
 "method. Attach a script to the skeleton node and call the method in the "
 "``_ready`` method:"
 msgstr ""
-"布娃娃现在可以使用了。 要开始模拟并播放布娃娃动画，您需要调用"
-"``physical_bones_start_simulation``方法。 将脚本附加到骨架节点并在``_ready``"
-"方法中调用该方法："
+"布娃娃现在可以使用了。 要开始模拟并播放布娃娃动画，您需要调用 "
+"``physical_bones_start_simulation`` 方法。 将脚本附加到骨架节点并在 "
+"``_ready`` 方法中调用该方法:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:71
 msgid ""
 "To stop the simulation, call the ``physical_bones_stop_simulation()`` method."
-msgstr "要停止模拟，请调用 ``physical_bones_stop_simulation（）`` 方法。"
+msgstr "要停止模拟，请调用 ``physical_bones_stop_simulation()`` 方法。"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:75
 msgid ""
@@ -185,7 +189,7 @@ msgid ""
 "bone names as a parameter. Here's an example of partial ragdoll simulation:"
 msgstr ""
 "您还可以将模拟限制为仅几个骨骼。 为此，请将骨骼名称作为参数传递。 这是部分布"
-"娃娃模拟的一个例子："
+"娃娃模拟的一个示例:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:80
 msgid "Collision layer and mask"
@@ -195,7 +199,7 @@ msgstr "碰撞层与遮罩"
 msgid ""
 "Make sure to set up your collision layers and masks properly so the "
 "``KinematicBody``'s capsule doesn't get in the way of the physics simulation:"
-msgstr "确保正确设置碰撞层和遮罩，这样“KinematicBody”的胶囊不会妨碍物理模拟："
+msgstr "确保正确设置碰撞层和遮罩，这样“KinematicBody”的胶囊不会妨碍物理模拟:"
 
 #: ../../docs/tutorials/physics/ragdoll_system.rst:86
 msgid "For more information, read :ref:`doc_physics_introduction`"

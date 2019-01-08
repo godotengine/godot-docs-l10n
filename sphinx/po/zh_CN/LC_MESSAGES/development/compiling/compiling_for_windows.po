@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,7 @@ msgstr "需求"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:11
 msgid "For compiling under Windows, the following is required:"
-msgstr "要在Windows下进行编译，需要以下内容："
+msgstr "要在Windows下进行编译，需要以下内容:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:13
 msgid ""
@@ -36,9 +36,9 @@ msgid ""
 "read Installing Visual Studio caveats below or you will have to run/download "
 "the installer again.**"
 msgstr ""
-"Visual C ++，`Visual Studio社区 <https://www.visualstudio.com/vs/community/"
-">`__ （推荐），版本2013（12.0）或更高版本。 **请确保阅读下面的安装Visual "
-"Studio警告，或者您必须再次运行/下载安装程序。**"
+"Visual C++，`Visual Studio社区 <https://www.visualstudio.com/vs/community/"
+">`__ (推荐)，版本2013(12.0)或更高版本。 **请确保阅读下面的安装Visual Studio警"
+"告，或者您必须再次运行/下载安装程序。**"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:18
 msgid "`Python 2.7+ or Python 3.5+ <https://www.python.org/downloads/>`__."
@@ -50,7 +50,7 @@ msgid ""
 "parallel builds (which increase the build speed by a great factor)."
 msgstr ""
 "`Pywin32 Python Extension <https://github.com/mhammond/pywin32>`__用于并行构"
-"建（它可以提高构建速度）。"
+"建(它可以提高构建速度)。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:21
 msgid "`SCons <https://www.scons.org>`__ build system."
@@ -61,7 +61,7 @@ msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
 "`doc_introduction_to_the_buildsystem`."
 msgstr ""
-"有关Godot的SCons用法的一般概述，请参阅 ：ref："
+"有关Godot的SCons用法的一般概述，请参阅 :ref:"
 "`doc_introduction_to_the_buildsystem`。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:27
@@ -77,10 +77,10 @@ msgid ""
 "path or it can simply be copied to ``C:\\Python`` together with the "
 "interpreter executable."
 msgstr ""
-"Python将解释器（python.exe）添加到路径中。 它通常安装在``C：\\ Python``（或"
-"``C：\\ Python [Version]``）中。 SCons安装在Python安装中（通常在``Scripts``文"
-"件夹中），并提供一个名为``scons.bat``的批处理文件。 可以将此文件的位置添加到"
-"路径中，也可以将其与解释器可执行文件一起复制到“C：\\ Python”。"
+"Python将解释器(python.exe)添加到路径中。 它通常安装在``C:\\ Python``(或``C:"
+"\\ Python [Version]``)中。 SCons安装在Python安装中(通常在``Scripts``文件夹"
+"中)，并提供一个名为``scons.bat``的批处理文件。 可以将此文件的位置添加到路径"
+"中，也可以将其与解释器可执行文件一起复制到“C:\\ Python”。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:36
 msgid ""
@@ -88,8 +88,8 @@ msgid ""
 "``python --version`` and ``scons --version`` into the Windows Command Prompt "
 "(``cmd.exe``)."
 msgstr ""
-"要检查是否已正确安装Python和SCons，可以在Windows命令提示符（``cmd.exe``）中键"
-"入``python --version``和``scons --version``。"
+"要检查是否已正确安装Python和SCons，可以在Windows命令提示符(``cmd.exe``)中键入"
+"``python --version``和``scons --version``。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:40
 msgid ""
@@ -133,9 +133,9 @@ msgid ""
 "``pywin32-221.win-amd64-py2.7.exe``. Change the ``py`` number to install for "
 "your version of Python (check via ``python --version`` mentioned above)."
 msgstr ""
-"Pywin32的``amd64``版本适用于64位版本的Python``pywin32-221.win-amd64-py2.7."
-"exe``。 更改`py``数字以安装您的Python版本（通过上面提到的``python --version``"
-"检查）。"
+"Pywin32的 ``amd64`` 版本适用于64位版本的Python ``pywin32-221.win-amd64-py2.7."
+"exe`` 。 更改`py``数字以安装您的Python版本(通过上面提到的``python --version``"
+"检查)。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:63
 msgid "Installing Visual Studio caveats"
@@ -150,9 +150,9 @@ msgid ""
 "vcblog/2015/07/24/setup-changes-in-visual-studio-2015-affecting-c-developers/"
 ">`__ in Visual Studio 2015."
 msgstr ""
-"如果安装Visual Studio 2015或更高版本，请确保运行** Custom **安装，而不是**典"
-"型**并选择C ++作为语言（以及您可能需要的任何其他内容）。 安装程序默认不安装C "
-"++。 C ++是 `唯一的语言可选 <https://blogs.msdn.microsoft.com/"
+"如果安装Visual Studio 2015或更高版本，请确保运行** Custom **安装，而不是 **典"
+"型** 并选择C++作为语言(以及您可能需要的任何其他内容)。 安装程序默认不安装C+"
+"+。 C++是 `唯一的语言可选 <https://blogs.msdn.microsoft.com/"
 "vcblog/2015/07/24/setup-changes-in-visual-studio-2015-affecting-c-developers/"
 ">`__ 在Visual Studio 2015中。"
 
@@ -164,8 +164,8 @@ msgid ""
 "Remove programs will only give you the \"Repair\" option, which will do "
 "nothing for your problem."
 msgstr ""
-"如果您已经错误地安装了**典型**，安装，重新运行从Internet下载的可执行安装程"
-"序，它将为您提供**修改**按钮选项。 从“添加/删除程序”运行安装只会为您提供“修"
+"如果您已经错误地安装了 **典型** ，安装，重新运行从Internet下载的可执行安装程"
+"序，它将为您提供 **修改** 按钮选项。 从“添加/删除程序”运行安装只会为您提供“修"
 "复”选项，该选项对您的问题无效。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:77
@@ -173,11 +173,11 @@ msgid ""
 "If you're using Express, make sure you get/have a version that can compile "
 "for ***C++, Desktop***."
 msgstr ""
-"如果您正在使用Express，请确保您拥有可以为*** C ++，Desktop ***编译的版本。"
+"如果您正在使用Express，请确保您拥有可以为*** C++，Desktop ***编译的版本。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:81
 msgid "Downloading Godot's source"
-msgstr "下载戈多的来源"
+msgstr "下载Godot的来源"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:83
 msgid ""
@@ -185,14 +185,14 @@ msgid ""
 "GitHub. Downloading it (cloning) via `Git <https://git-scm.com/>`__ is "
 "recommended."
 msgstr ""
-"`戈多的 <https://github.com/godotengine/godot>`__来源托管在GitHub上。 建议通"
-"过`Git <https://git-scm.com/>`__下载（克隆）。"
+"`Godot的 <https://github.com/godotengine/godot>`__来源托管在GitHub上。 建议通"
+"过`Git <https://git-scm.com/>`__下载(克隆)。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:86
 msgid ""
 "The tutorial will presume from now on that you placed the source into ``C:"
 "\\godot``."
-msgstr "从现在开始，本教程将假设您将源放入``C：\\ godot``。"
+msgstr "从现在开始，本教程将假设您将源放入``C:\\ godot``。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:90
 msgid "Compiling"
@@ -204,8 +204,8 @@ msgid ""
 "Prompt (``cmd.exe``) because SCons and Visual C++ compiler will not be able "
 "to locate environment variables and executables they need for compilation."
 msgstr ""
-"从Windows命令提示符（``cmd.exe``）编译SCons将无法开箱即用，因为SCons和Visual "
-"C ++编译器将无法找到编译所需的环境变量和可执行文件。"
+"从Windows命令提示符(``cmd.exe``)编译SCons将无法开箱即用，因为SCons和Visual C+"
+"+编译器将无法找到编译所需的环境变量和可执行文件。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:97
 msgid ""
@@ -215,7 +215,7 @@ msgid ""
 "Visual Studio):"
 msgstr ""
 "因此，您需要启动Visual Studio命令提示符。 它设置SCons定位编译器所需的环境变"
-"量。 它应该被称为类似于以下名称之一（对于您的各自版本的Visual Studio）："
+"量。 它应该被称为类似于以下名称之一(对于您的各自版本的Visual Studio):"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:102
 msgid "\"Developer Command Prompt for VS2013\""
@@ -252,7 +252,7 @@ msgid ""
 "automatically searched by the start menu search option:"
 msgstr ""
 "但是Visual Studio有时似乎没有安装上述某些快捷方式，除了开发菜单搜索选项自动搜"
-"索的这些位置的开发者控制台："
+"索的这些位置的开发者控制台:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:121
 msgid ""
@@ -273,13 +273,13 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:129
 msgid "About the Developer/Tools Command Prompts and the Visual C++ compiler"
-msgstr "关于Developer / Tools命令提示符和Visual C ++编译器"
+msgstr "关于Developer / Tools命令提示符和Visual C++编译器"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:131
 msgid ""
 "There is a few things you need to know about these consoles and the Visual C+"
 "+ compiler."
-msgstr "关于这些控制台和Visual C ++编译器，您需要了解一些事项。"
+msgstr "关于这些控制台和Visual C++编译器，您需要了解一些事项。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:134
 msgid ""
@@ -288,17 +288,16 @@ msgid ""
 "compiler) will compile Godot for a different architecture (32-bit x86 or 64-"
 "bit x86; the ARM compiler is not supported)."
 msgstr ""
-"您的Visual Studio安装将附带几个Visual C ++编译器，它们或多或少相同，但每个"
-"``cl.exe``（Visual C ++编译器）将为不同的架构（32位x86或64位x86）编译Godot ;"
-"不支持ARM编译器）。"
+"您的Visual Studio安装将附带几个Visual C++编译器，它们或多或少相同，但每个 "
+"``cl.exe`` (Visual C++编译器)将为不同的架构(32位x86或64位x86)编译Godot ;不支"
+"持ARM编译器)。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:139
 msgid ""
 "The **Developer Command Prompt** will build a 32-bit version of Godot by "
 "using the 32-bit Visual C++ compiler."
 msgstr ""
-"** Developer Command Prompt **将使用32位Visual C ++编译器构建32位版本的"
-"Godot。"
+"** Developer Command Prompt **将使用32位Visual C++编译器构建32位版本的Godot。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:142
 msgid ""
@@ -307,9 +306,9 @@ msgid ""
 "the 64-bit cl.exe, it will compile a 64-bit executable (x64 Native Tools "
 "Command Prompt)."
 msgstr ""
-"**本机工具**当您希望32位cl.exe编译32位可执行文件（x86 Native Tools命令提示"
-"符）时，将使用提示（如上所述）。 对于64位cl.exe，它将编译64位可执行文件（x64 "
-"Native Tools命令提示符）。"
+"**本机工具**当您希望32位cl.exe编译32位可执行文件(x86 Native Tools命令提示符)"
+"时，将使用提示(如上所述)。 对于64位cl.exe，它将编译64位可执行文件(x64 Native "
+"Tools命令提示符)。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:147
 msgid ""
@@ -318,13 +317,13 @@ msgid ""
 "bit). As you might be familiar, 32-bit Windows can not run 64-bit "
 "executables, but you still might need to compile for them."
 msgstr ""
-"当您的Windows使用一种体系结构（例如32位）并且需要编译为不同的体系结构（64位）"
-"时，将使用** Cross Tools **。 您可能已经熟悉，32位Windows无法运行64位可执行文"
-"件，但您仍可能需要为它们进行编译。"
+"当您的Windows使用一种体系结构(例如32位)并且需要编译为不同的体系结构(64位)时，"
+"将使用** Cross Tools **。 您可能已经熟悉，32位Windows无法运行64位可执行文件，"
+"但您仍可能需要为它们进行编译。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:152
 msgid "For example:"
-msgstr "例如："
+msgstr "例如:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:154
 msgid ""
@@ -348,8 +347,8 @@ msgid ""
 "bit Windows cannot run 64-bit executables, so the Visual Studio installer "
 "won't even install shortcuts for some of these prompts."
 msgstr ""
-"在64位Windows上，您可以运行上述任何提示和编译器（``cl.exe``可执行文件），因为"
-"64位Windows可以运行任何32位应用程序。 32位Windows无法运行64位可执行文件，因此"
+"在64位Windows上，您可以运行上述任何提示和编译器(``cl.exe``可执行文件)，因为64"
+"位Windows可以运行任何32位应用程序。 32位Windows无法运行64位可执行文件，因此"
 "Visual Studio安装程序甚至不会为某些提示安装快捷方式。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:167
@@ -372,15 +371,15 @@ msgid ""
 "directory of the engine source code and type:"
 msgstr ""
 "进入** Developer Console / Tools Console Prompt **后，转到引擎源代码的根目录"
-"并输入："
+"并输入:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:182
 msgid ""
 "Tip: if you installed \"Pywin32 Python Extension\" you can append the -j "
 "command to instruct SCons to run parallel builds like this:"
 msgstr ""
-"提示：如果你安装了“Pywin32 Python Extension”，你可以附加-j命令来指示SCons运行"
-"这样的并行构建："
+"提示:如果您安装了“Pywin32 Python Extension”，您可以附加-j命令来指示SCons运行"
+"这样的并行构建:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:189
 msgid ""
@@ -401,9 +400,9 @@ msgid ""
 "architecture the environment (the prompt) is setup for and will build a "
 "corresponding executable."
 msgstr ""
-"如果一切顺利，生成的二进制可执行文件将放在``C：\\ godot \\ bin \\``中，名称为"
+"如果一切顺利，生成的二进制可执行文件将放在``C:\\ godot \\ bin \\``中，名称为"
 "``godot.windows.tools.32.exe``或``godot.windows.tools。64.exe``。 SCons将自动"
-"检测环境（提示）的设置编译器体系结构，并将构建相应的可执行文件。"
+"检测环境(提示)的设置编译器体系结构，并将构建相应的可执行文件。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:200
 msgid ""
@@ -448,7 +447,7 @@ msgid ""
 "taskbar:"
 msgstr ""
 "由于您可能正在使用Visual Studio 2013或2015，如果您需要手动重新创建它们，请使"
-"用以下文件夹，或将它们放在桌面/任务栏上："
+"用以下文件夹，或将它们放在桌面/任务栏上:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:227
 msgid ""
@@ -484,7 +483,7 @@ msgid ""
 "choose the starting directory of the command prompt (\"Start in\" field)."
 msgstr ""
 "创建快捷方式后，在快捷方式的属性中，可以通过在快捷方式上单击鼠标右键来访问该"
-"快捷方式，可以选择命令提示符的起始目录（“开始”字段）。"
+"快捷方式，可以选择命令提示符的起始目录(“开始”字段)。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:260
 msgid ""
@@ -494,9 +493,9 @@ msgid ""
 "in one of these locations, they are the actual compilers for the "
 "architecture you want to build from the command prompt."
 msgstr ""
-"其中一些快捷方式（即64位编译器）似乎在Visual Studio或Visual C ++的Express版本"
-"中不可用。 在重新创建命令之前，请确保其中一个位置中存在“cl.exe”可执行文件，它"
-"们是您要从命令提示符构建的体系结构的实际编译器。"
+"其中一些快捷方式(即64位编译器)似乎在Visual Studio或Visual C++的Express版本中"
+"不可用。 在重新创建命令之前，请确保其中一个位置中存在“cl.exe”可执行文件，它们"
+"是您要从命令提示符构建的体系结构的实际编译器。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:281
 msgid ""
@@ -508,7 +507,7 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:293
 msgid "How to run an automated build of Godot"
-msgstr "如何运行戈多的自动构建"
+msgstr "如何运行Godot的自动构建"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:295
 msgid ""
@@ -516,35 +515,35 @@ msgid ""
 "in the Windows Command Prompt you need to use the following command:"
 msgstr ""
 "如果只需要通过批处理文件或直接在Windows命令提示符下运行编译过程，则需要使用以"
-"下命令："
+"下命令:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:303
 msgid "with one of the following parameters:"
-msgstr "使用以下参数之一："
+msgstr "使用以下参数之一:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:305
 msgid "x86 (32-bit cl.exe to compile for the 32-bit architecture)"
-msgstr "x86（32位cl.exe编译为32位架构）"
+msgstr "x86(32位cl.exe编译为32位架构)"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:306
 msgid "amd64 (64-bit cl.exe to compile for the 64-bit architecture)"
-msgstr "amd64（为64位架构编译的64位cl.exe）"
+msgstr "amd64(为64位架构编译的64位cl.exe)"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:307
 msgid "x86_amd64 (32-bit cl.exe to compile for the 64-bit architecture)"
-msgstr "x86_amd64（为64位架构编译的32位cl.exe）"
+msgstr "x86_amd64(为64位架构编译的32位cl.exe)"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:308
 msgid "amd64_x86 (64-bit cl.exe to compile for the 32-bit architecture)"
-msgstr "amd64_x86（为32位架构编译的64位cl.exe）"
+msgstr "amd64_x86(为32位架构编译的64位cl.exe)"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:310
 msgid "and after that one, you can run SCons:"
-msgstr "在那之后，你可以运行SCons："
+msgstr "在那之后，您可以运行SCons:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:316
 msgid "or you can run them together:"
-msgstr "或者你可以一起运行它们："
+msgstr "或者您可以一起运行它们:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:327
 msgid "Development in Visual Studio or other IDEs"
@@ -565,7 +564,7 @@ msgid ""
 "``vsproj=yes`` parameter, like this:"
 msgstr ""
 "您可以通过使用``vsproj = yes``参数运行SCons来创建Visual Studio解决方案，如下"
-"所示："
+"所示:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:340
 msgid ""
@@ -575,8 +574,8 @@ msgid ""
 "properly."
 msgstr ""
 "您现在可以在Visual Studio解决方案中打开Godot的源代码，并能够通过Visual "
-"Studio ** Build **按钮构建Godot。 但是，请确保已安装Pywin32，以便并行（-j）构"
-"建正常工作。"
+"Studio ** Build **按钮构建Godot。 但是，请确保已安装Pywin32，以便并行(-j)构建"
+"正常工作。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:345
 msgid ""
@@ -587,8 +586,8 @@ msgid ""
 "They are equivalent."
 msgstr ""
 "如果需要编辑编译命令，它们位于“Godot”项目设置，NMAKE表中。 在命令结束时调用"
-"SCons。 如果出错，请从其他构建配置（debug，release_debug，release）或体系结构"
-"（Win32 / x64）中复制命令。 它们是等价的。"
+"SCons。 如果出错，请从其他构建配置(debug，release_debug，release)或体系结构"
+"(Win32 / x64)中复制命令。 它们是等价的。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:352
 msgid "Cross-compiling for Windows from other operating systems"
@@ -602,8 +601,8 @@ msgid ""
 "known ones:"
 msgstr ""
 "如果您是Linux或macOS用户，则需要安装`MinGW-w64 <https://mingw-w64.org/doku."
-"php>`_，它通常包含32位和64位变体。 包名称可能因您的发行版而异，以下是一些已知"
-"的发行版："
+"php>`_ ，它通常包含32位和64位变体。 包名称可能因您的发行版而异，以下是一些已"
+"知的发行版:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:359
 msgid "**Arch**"
@@ -629,7 +628,7 @@ msgstr "**Mageia**"
 msgid ""
 "Before allowing you to attempt the compilation, SCons will check for the "
 "following binaries in your ``$PATH``:"
-msgstr "在允许您尝试编译之前，SCons将在您的``$ PATH``中检查以下二进制文件："
+msgstr "在允许您尝试编译之前，SCons将在您的``$ PATH``中检查以下二进制文件:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:388
 msgid ""
@@ -637,8 +636,8 @@ msgid ""
 "can define the following environment variables to give a hint to the build "
 "system:"
 msgstr ""
-"如果二进制文件不在``$ PATH``中（例如``/ usr / bin``），你可以定义以下环境变量"
-"来给构建系统一个提示："
+"如果二进制文件不在``$ PATH``中(例如``/ usr / bin``)，您可以定义以下环境变量来"
+"给构建系统一个提示:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:397
 msgid ""
@@ -647,7 +646,7 @@ msgid ""
 "based on your system):"
 msgstr ""
 "为了确保您正确地执行操作，在shell中执行以下操作应该会生成一个正常工作的编译器"
-"（版本输出可能因您的系统而异）："
+"(版本输出可能因您的系统而异):"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:407
 msgid "Troubleshooting"
@@ -660,16 +659,16 @@ msgid ""
 "lacking support for POSIX threading."
 msgstr ""
 "某些版本的Ubuntu的交叉编译可能会导致 `此错误 <https://github.com/godotengine/"
-"godot/issues/9258>`_，因为默认配置缺乏对POSIX线程的支持。"
+"godot/issues/9258>`_ ，因为默认配置缺乏对POSIX线程的支持。"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:412
 msgid ""
 "You can change that configuration following those instructions, for 32-bit:"
-msgstr "您可以按照这些说明更改该配置，对于32位："
+msgstr "您可以按照这些说明更改该配置，对于32位:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:422
 msgid "And for 64-bit:"
-msgstr "而对于64位："
+msgstr "而对于64位:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:432
 msgid "Creating Windows export templates"
@@ -679,29 +678,29 @@ msgstr "创建Windows导出模板"
 msgid ""
 "Windows export templates are created by compiling Godot as release, with the "
 "following flags:"
-msgstr "Windows导出模板是通过将Godot编译为release来创建的，具有以下标志："
+msgstr "Windows导出模板是通过将Godot编译为release来创建的，具有以下标志:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:437
 msgid "(using Mingw32 command prompt, using the bits parameter)"
-msgstr "（使用Mingw32命令提示符，使用bits参数）"
+msgstr "(使用Mingw32命令提示符，使用bits参数)"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:444
 msgid "(using Mingw-w64 command prompt, using the bits parameter)"
-msgstr "（使用Mingw-w64命令提示符，使用bits参数）"
+msgstr "(使用Mingw-w64命令提示符，使用bits参数)"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:451
 msgid ""
 "(using the Visual Studio command prompts for the correct architecture, "
 "notice the lack of bits parameter)"
-msgstr "（使用Visual Studio命令提示正确的体系结构，注意缺少bits参数）"
+msgstr "(使用Visual Studio命令提示正确的体系结构，注意缺少bits参数)"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:459
 msgid "If you plan on replacing the standard templates, copy these to:"
-msgstr "如果您打算更换标准模板，请将这些模板复制到："
+msgstr "如果您打算更换标准模板，请将这些模板复制到:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:465
 msgid "With the following names:"
-msgstr "使用以下名称："
+msgstr "使用以下名称:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:474
 msgid ""
@@ -709,8 +708,8 @@ msgid ""
 "might instead want to configure your binaries as custom export templates "
 "here:"
 msgstr ""
-"此外，如果你正在开发自定义模块或修改引擎的其他 C++ 代码，则可以在此处将你编译"
-"好的二进制文件配置为自定义导出模板："
+"此外，如果您正在开发自定义模块或修改引擎的其他 C++ 代码，则可以在此处将您编译"
+"好的二进制文件配置为自定义导出模板:"
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:480
 msgid ""
@@ -718,5 +717,5 @@ msgid ""
 "in the ``bin\\`` directory of your Godot source folder, so the next time you "
 "build you automatically have the custom templates referenced."
 msgstr ""
-"你甚至不需要复制它们，你只需要在Godot源文件夹的``bin \\``目录中引用结果文件，"
-"这样你下次构建时就会自动引用自定义模板。"
+"您甚至不需要复制它们，您只需要在Godot源文件夹的``bin \\``目录中引用结果文件，"
+"这样您下次构建时就会自动引用自定义模板。"

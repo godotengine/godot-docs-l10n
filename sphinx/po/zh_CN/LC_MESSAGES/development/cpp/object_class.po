@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,8 +32,8 @@ msgid ""
 "reflection and editable properties, and declaring them is a matter of using "
 "a single macro like this."
 msgstr ""
-"：ref：`Object <class_object>`几乎是所有东西的基类。 Godot中的大多数类都直接"
-"或间接地从它继承。 对象提供反射和可编辑属性，并声明它们是使用像这样的单个宏。"
+":ref:`Object <class_object>` 几乎是所有东西的基类。 Godot中的大多数类都直接或"
+"间接地从它继承。 对象提供反射和可编辑属性，并声明它们是使用像这样的单个宏。"
 
 #: ../../docs/development/cpp/object_class.rst:21
 msgid "This makes Objects gain a lot of functionality, like for example"
@@ -71,7 +71,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:42
 msgid "Classes are registered by calling:"
-msgstr "通过调用来注册类："
+msgstr "通过调用来注册类:"
 
 #: ../../docs/development/cpp/object_class.rst:48
 msgid ""
@@ -91,7 +91,7 @@ msgid ""
 "only called once. If an Object derived class is instanced but has not been "
 "registered, it will be registered as virtual automatically."
 msgstr ""
-"对象派生类可以覆盖静态函数``static void _bind_methods（）``。 当一个类被注册"
+"对象派生类可以覆盖静态函数``static void _bind_methods()``。 当一个类被注册"
 "时，调用这个静态函数来注册所有对象方法，属性，常量等。它只被调用一次。 如果"
 "Object派生类已实例但尚未注册，则它将自动注册为虚拟。"
 
@@ -99,11 +99,11 @@ msgstr ""
 msgid ""
 "Inside ``_bind_methods``, there are a couple of things that can be done. "
 "Registering functions is one:"
-msgstr "在``_bind_methods``里面，有几件事可以做。 注册功能是一个："
+msgstr "在 ``_bind_methods`` 里面，有几件事可以做。 注册功能是一个:"
 
 #: ../../docs/development/cpp/object_class.rst:71
 msgid "Default values for arguments can be passed in reverse order:"
-msgstr "参数的默认值可以按相反的顺序传递："
+msgstr "参数的默认值可以按相反的顺序传递:"
 
 #: ../../docs/development/cpp/object_class.rst:77
 msgid ""
@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:82
 msgid "Check ``_bind_methods`` of Control or Object for more examples."
-msgstr "有关更多示例，请查看Control或Object的``_bind_methods``。"
+msgstr "有关更多示例，请查看Control或Object的 ``_bind_methods`` 。"
 
 #: ../../docs/development/cpp/object_class.rst:84
 msgid ""
@@ -125,7 +125,7 @@ msgid ""
 "documented as thoroughly, the ``D_METHOD()`` macro can safely be ignored and "
 "a string passing the name can be passed for brevity."
 msgstr ""
-"如果只是添加不希望被彻底记录的模块和功能，可以安全地忽略``D_METHOD（）``宏，"
+"如果只是添加不希望被彻底记录的模块和功能，可以安全地忽略 ``D_METHOD()`` 宏，"
 "并且为了简洁起见，可以传递传递名称的字符串。"
 
 #: ../../docs/development/cpp/object_class.rst:91
@@ -142,7 +142,7 @@ msgstr "常量"
 
 #: ../../docs/development/cpp/object_class.rst:96
 msgid "Classes often have enums such as:"
-msgstr "类通常有枚举，例如："
+msgstr "类通常有枚举，例如:"
 
 #: ../../docs/development/cpp/object_class.rst:105
 msgid ""
@@ -150,19 +150,19 @@ msgid ""
 "convertible to int, for this a macro is provided:"
 msgstr ""
 "为了使这些在绑定到方法时起作用，必须将枚举声明为可转换为int，为此提供了一个"
-"宏："
+"宏:"
 
 #: ../../docs/development/cpp/object_class.rst:112
 msgid "The constants can also be bound inside ``_bind_methods``, by using:"
-msgstr "常量也可以绑定在``_bind_methods``中，使用："
+msgstr "常量也可以绑定在 ``_bind_methods`` 中，使用:"
 
 #: ../../docs/development/cpp/object_class.rst:120
 msgid "Properties (set/get)"
-msgstr "属性（设置/获取）"
+msgstr "属性(设置/获取)"
 
 #: ../../docs/development/cpp/object_class.rst:122
 msgid "Objects export properties, properties are useful for the following:"
-msgstr "对象导出属性，属性对以下内容很有用："
+msgstr "对象导出属性，属性对以下内容很有用:"
 
 #: ../../docs/development/cpp/object_class.rst:124
 msgid "Serializing and deserializing the object."
@@ -176,11 +176,11 @@ msgstr "为Object派生类创建可编辑值列表。"
 msgid ""
 "Properties are usually defined by the PropertyInfo() class. Usually "
 "constructed as:"
-msgstr "属性通常由PropertyInfo（）类定义。 通常构造为："
+msgstr "属性通常由PropertyInfo()类定义。 通常构造为:"
 
 #: ../../docs/development/cpp/object_class.rst:134
 msgid "For example:"
-msgstr "例如："
+msgstr "例如:"
 
 #: ../../docs/development/cpp/object_class.rst:140
 msgid ""
@@ -188,12 +188,12 @@ msgid ""
 "from 0 to 49 in steps of 1 (integers). It is only usable for the editor "
 "(edit value visually) but won't be serialized."
 msgstr ""
-"这是一个整数属性，名为“amount”，提示是一个范围，范围从0到49，步长为1（整"
-"数）。 它仅适用于编辑器（可视化编辑值），但不会被序列化。"
+"这是一个整数属性，名为“amount”，提示是一个范围，范围从0到49，步长为1(整数)。 "
+"它仅适用于编辑器(可视化编辑值)，但不会被序列化。"
 
 #: ../../docs/development/cpp/object_class.rst:144
 msgid "Another example:"
-msgstr "另一个例子："
+msgstr "另一个示例:"
 
 #: ../../docs/development/cpp/object_class.rst:150
 msgid ""
@@ -218,7 +218,7 @@ msgid ""
 "such as \"animation/frame\" which also make indexing impossible unless using "
 "operator []."
 msgstr ""
-"属性也可以像C＃属性一样工作，并且可以使用索引从脚本访问，但通常不鼓励这种用"
+"属性也可以像C#属性一样工作，并且可以使用索引从脚本访问，但通常不鼓励这种用"
 "法，因为使用函数是易读性的首选。 许多属性也与类别绑定，例如“动画/帧”，除非使"
 "用operator []，否则也无法建立索引。"
 
@@ -227,8 +227,8 @@ msgid ""
 "From ``_bind_methods()``, properties can be created and bound as long as set/"
 "get functions exist. Example:"
 msgstr ""
-"从``_bind_methods（）``开始，只要存在set / get函数，就可以创建和绑定属性。 "
-"例："
+"从 ``_bind_methods()`` 开始，只要存在set / get函数，就可以创建和绑定属性。 "
+"例:"
 
 #: ../../docs/development/cpp/object_class.rst:170
 msgid "This creates the property using the setter and the getter."
@@ -243,8 +243,7 @@ msgid ""
 "An additional method of creating properties exists when more flexibility is "
 "desired (i.e. adding or removing properties on context)."
 msgstr ""
-"当需要更大的灵活性时（即在上下文中添加或删除属性），存在另一种创建属性的方"
-"法。"
+"当需要更大的灵活性时(即在上下文中添加或删除属性)，存在另一种创建属性的方法。"
 
 #: ../../docs/development/cpp/object_class.rst:178
 msgid ""
@@ -253,13 +252,13 @@ msgid ""
 "override and the previous ones are not invalidated (multilevel call)."
 msgstr ""
 "可以在Object派生类中重写以下函数，它们不是虚拟的，不要将它们设置为虚拟，它们"
-"会在每次覆盖时调用，而前一个函数不会失效（多级调用）。"
+"会在每次覆盖时调用，而前一个函数不会失效(多级调用)。"
 
 #: ../../docs/development/cpp/object_class.rst:189
 msgid ""
 "This is also a little less efficient since ``p_property`` must be compared "
 "against the desired names in serial order."
-msgstr "这也有点效率低，因为必须将``p_property``与所需的名称按顺序进行比较。"
+msgstr "这也有点效率低，因为必须将 ``p_property`` 与所需的名称按顺序进行比较。"
 
 #: ../../docs/development/cpp/object_class.rst:193
 msgid "Dynamic casting"
@@ -268,7 +267,7 @@ msgstr "动态铸造"
 #: ../../docs/development/cpp/object_class.rst:195
 msgid ""
 "Godot provides dynamic casting between Object-derived classes, for example:"
-msgstr "Godot在Object派生类之间提供动态转换，例如："
+msgstr "Godot在Object派生类之间提供动态转换，例如:"
 
 #: ../../docs/development/cpp/object_class.rst:205
 msgid ""
@@ -278,8 +277,8 @@ msgid ""
 "(with low memory footprint)."
 msgstr ""
 "如果强制转换失败，则返回NULL。 这个系统使用RTTI，但是当RTTI被禁用时它也可以正"
-"常工作（虽然有点慢）。 这在小型二进制大小理想的平台上非常有用，例如HTML5或控"
-"制台（内存占用少）。"
+"常工作(虽然有点慢)。 这在小型二进制大小理想的平台上非常有用，例如HTML5或控制"
+"台(内存占用少)。"
 
 #: ../../docs/development/cpp/object_class.rst:211
 msgid "Signals"
@@ -289,21 +288,21 @@ msgstr "信号"
 msgid ""
 "Objects can have a set of signals defined (similar to Delegates in other "
 "languages). Connecting to them is rather easy:"
-msgstr "对象可以定义一组信号（类似于其他语言的代理）。 连接它们很容易："
+msgstr "对象可以定义一组信号(类似于其他语言的代理)。 连接它们很容易:"
 
 #: ../../docs/development/cpp/object_class.rst:222
 msgid ""
 "The method ``_node_entered_tree`` must be registered to the class using "
 "``ClassDB::register_method`` (explained before)."
 msgstr ""
-"必须使用``ClassDB :: register_method``（之前解释过）将方法"
+"必须使用``ClassDB :: register_method``(之前解释过)将方法"
 "``_node_entered_tree``注册到类中。"
 
 #: ../../docs/development/cpp/object_class.rst:225
 msgid ""
 "Adding signals to a class is done in ``_bind_methods``, using the "
 "``ADD_SIGNAL`` macro, for example:"
-msgstr "使用``ADD_SIGNAL``宏在``_bind_methods``中添加信号到类中，例如："
+msgstr "使用 ``ADD_SIGNAL`` 宏在 ``_bind_methods`` 中添加信号到类中，例如:"
 
 #: ../../docs/development/cpp/object_class.rst:233
 msgid "References"
@@ -315,8 +314,8 @@ msgid ""
 "reference count. It is the base for reference counted object types. "
 "Declaring them must be done using Ref<> template. For example:"
 msgstr ""
-"：ref：`Reference <class_reference>`继承自Object并保存引用计数。 它是引用计数"
-"对象类型的基础。 必须使用Ref <>模板来声明它们。 例如："
+":ref:`Reference <class_reference>` 继承自Object并保存引用计数。 它是引用计数"
+"对象类型的基础。 必须使用Ref <>模板来声明它们。 例如:"
 
 #: ../../docs/development/cpp/object_class.rst:247
 msgid ""
@@ -344,10 +343,10 @@ msgid ""
 "This is normally done by the resource loader though. No two different "
 "resources can have the same path, attempt to do so will result in an error."
 msgstr ""
-"：ref：`Resource <class_resource>`继承自Reference，因此所有资源都被引用计"
-"数。 资源可以选择包含引用磁盘上文件的路径。 这可以用``resource."
-"set_path（path）``设置。 这通常由资源加载器完成。 没有两个不同的资源可以具有"
-"相同的路径，尝试这样做会导致错误。"
+":ref:`Resource <class_resource>` 继承自Reference，因此所有资源都被引用计数。 "
+"资源可以选择包含引用磁盘上文件的路径。 这可以用 ``resource.set_path(path)`` "
+"设置。 这通常由资源加载器完成。 没有两个不同的资源可以具有相同的路径，尝试这"
+"样做会导致错误。"
 
 #: ../../docs/development/cpp/object_class.rst:264
 msgid "Resources without a path are fine too."
@@ -367,7 +366,7 @@ msgstr "资源加载"
 
 #: ../../docs/development/cpp/object_class.rst:274
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
-msgstr "可以使用ResourceLoader API加载资源，如下所示："
+msgstr "可以使用ResourceLoader API加载资源，如下所示:"
 
 #: ../../docs/development/cpp/object_class.rst:280
 msgid ""
@@ -380,7 +379,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/object_class.rst:285
 msgid "resourceinteractiveloader (TODO)"
-msgstr "resourceinteractiveloader（TODO）"
+msgstr "resourceinteractiveloader(TODO)"
 
 #: ../../docs/development/cpp/object_class.rst:290
 msgid ""
@@ -396,7 +395,7 @@ msgstr "资源保存"
 
 #: ../../docs/development/cpp/object_class.rst:295
 msgid "Saving a resource can be done with the resource saver API:"
-msgstr "可以使用资源保护程序API保存资源："
+msgstr "可以使用资源保护程序API保存资源:"
 
 #: ../../docs/development/cpp/object_class.rst:301
 msgid ""
@@ -406,7 +405,7 @@ msgid ""
 "someresource.res::1\". This also helps to cache them when loaded."
 msgstr ""
 "实例将被保存。 具有文件路径的子资源将保存为对该资源的引用。 没有路径的子资源"
-"将与保存的资源和分配的子ID捆绑在一起，例如“res：//someresource.res :: 1”。 这"
+"将与保存的资源和分配的子ID捆绑在一起，例如“res://someresource.res :: 1”。 这"
 "也有助于在加载时缓存它们。"
 
 #: ../../docs/development/cpp/object_class.rst:309

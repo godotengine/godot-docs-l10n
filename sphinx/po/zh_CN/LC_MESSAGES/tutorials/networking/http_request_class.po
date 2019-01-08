@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid ""
 "For the sake of this example, we will create a simple UI with a button, that "
 "when pressed will start the HTTP request to the specified URL."
 msgstr ""
-"这个例子中，我们将创建一个带有按钮的简单UI，按下该按钮时将发送对指定网址的"
+"这个示例中，我们将创建一个带有按钮的简单UI，按下该按钮时将发送对指定网址的"
 "HTTP请求。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:12
@@ -52,8 +52,8 @@ msgid ""
 "script:"
 msgstr ""
 "创建一个新的空场景，添加CanvasLayer作为其根节点并向其添加脚本。 然后向其添加"
-"两个子节点：Button和HTTPRequest节点。 您需要将以下信号连接到CanvasLayer节点的"
-"脚本："
+"两个子节点:Button和HTTPRequest节点。 您需要将以下信号连接到CanvasLayer节点的"
+"脚本:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:16
 msgid "Button.pressed: When the button is pressed, we will start the request."
@@ -84,7 +84,7 @@ msgid ""
 "With this, you should see ``(hello:world)`` printed on the console; hello "
 "being a key, and world being a value, both of them strings."
 msgstr ""
-"有了这个，你应该在控制台上看到 ``(hello:world)`` ; hello是关键字，world是值，"
+"有了这个，您应该在控制台上看到 ``(hello:world)`` ; hello是关键字，world是值，"
 "两者都是字符串。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:42
@@ -92,7 +92,7 @@ msgid ""
 "For more information on parsing JSON, see the class references for :ref:"
 "`JSON <class_JSON>` and :ref:`JSONParseResult <class_JSONParseResult>`."
 msgstr ""
-"有关解析JSON的更多信息，请参阅类引用 :ref:`JSON <class_JSON>` 和 :ref:"
+"有关解析JSON的更多信息，请参阅类型参考 :ref:`JSON <class_JSON>` 和 :ref:"
 "`JSONParseResult <class_JSONParseResult>` 。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:44
@@ -102,7 +102,7 @@ msgid ""
 "class reference and :ref:`HTTPRequest <class_HTTPRequest>` for more."
 msgstr ""
 "请注意，您可能需要检查 ``result`` 是否等于 ``RESULT_SUCCESS`` 以及JSON解析错"
-"误是否发生，要了解更多信息, 请参阅JSON类引用和 :ref:`HTTPRequest "
+"误是否发生，要了解更多信息, 请参阅JSON类型参考和 :ref:`HTTPRequest "
 "<class_HTTPRequest>` 。"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:46
@@ -113,8 +113,8 @@ msgid ""
 "header) you could use the following:"
 msgstr ""
 "当然，您也可以设置自定义的HTTP头部。 它们以字符串数组的形式给出，每个字符串都"
-"包含一个格式为 ``\"header: value\"`` 的头部。 例如，要设置自定义用户代理"
-"（HTTP的 ``user-agent`` 头部部分），您可以像这样使用："
+"包含一个格式为 ``\"header: value\"`` 的头部。 例如，要设置自定义用户代理(HTTP"
+"的 ``user-agent`` 头部部分)，您可以像这样使用:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:53
 msgid ""
@@ -149,7 +149,7 @@ msgid ""
 "it:"
 msgstr ""
 "到目前为止，我们仅限于从服务器请求数据。 但是，如果您需要将数据发送到服务器"
-"呢？ 下面是一种常见的做法："
+"呢？ 下面是一种常见的做法:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:72
 msgid ""

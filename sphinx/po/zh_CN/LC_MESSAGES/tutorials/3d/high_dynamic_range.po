@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,13 +37,14 @@ msgstr ""
 "戏。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:14
+#, fuzzy
 msgid ""
-"So where does all this HDR stuff thing come from? The idea is that instead "
-"of dealing with colors that go from black to white (0 to 1), we use colors "
-"whiter than white (for example, 0 to 8 times white)."
+"So at what point does all this HDR business come into play? The idea is that "
+"instead of dealing with colors that go from black to white (0 to 1), we use "
+"colors whiter than white (for example, 0 to 8 times white)."
 msgstr ""
-"那么所有这些HDR东西的来源是从哪里来的？ 我们的想法是，不使用从黑色到白色（0到"
-"1）的颜色，而是使用比白色更白的颜色（例如，白色的0到8倍）。"
+"那么所有这些HDR东西的来源是从哪里来的？ 我们的想法是，不使用从黑色到白色(0到"
+"1)的颜色，而是使用比白色更白的颜色(例如，白色的0到8倍)。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:18
 msgid ""
@@ -51,19 +52,20 @@ msgid ""
 "light (generally 1.0) is set to 5.0. The whole scene will turn very bright "
 "(towards white) and look horrible."
 msgstr ""
-"更实际的是，想象一下在常规场景中，光的强度（通常为1.0）设置为5.0。 整个场景将"
-"变得非常明亮（朝向白色）并且看起来很可怕。"
+"更实际的是，想象一下在常规场景中，光的强度(通常为1.0)设置为5.0。 整个场景将变"
+"得非常明亮(朝向白色)并且看起来很可怕。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:22
+#, fuzzy
 msgid ""
-"After this the luminance of the scene is computed by averaging the luminance "
-"of every pixel of it, and this value is used to bring the scene back to "
-"normal ranges. This last operation is called tone-mapping. Finally, we are "
-"at a similar place from where we started:"
+"After this, the luminance of the scene is computed by averaging the "
+"luminance of every pixel of it, and this value is used to bring the scene "
+"back to normal ranges. This last operation is called tone-mapping. Finally, "
+"we are at a similar place from where we started:"
 msgstr ""
 "在此之后，通过平均场景的每个像素的亮度来计算场景的亮度，并且该值用于使场景回"
 "到正常范围。 最后一个操作称为色调映射。 最后，我们在与我们开始的地方类似的地"
-"方："
+"方:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:30
 msgid ""
@@ -73,7 +75,7 @@ msgid ""
 "happen:"
 msgstr ""
 "除了场景更加对比，因为在比赛中有更高的光线范围。 这有什么用呢？ 我们的想法"
-"是，当您在世界各地移动时，场景亮度会发生变化，从而允许这样的情况发生："
+"是，当您在世界各地移动时，场景亮度会发生变化，从而允许这样的情况发生:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:37
 msgid ""
@@ -99,26 +101,28 @@ msgstr ""
 "在屏幕上创作他们的艺术，因此他们的艺术有一个隐含的伽玛曲线应用于它。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:49
+#, fuzzy
 msgid ""
-"The color space where images created in computer monitors exist is called "
+"The color space where images created on computer monitors exist is called "
 "\"sRGB\". All visual content that people have on their computers or download "
 "from the internet (such as pictures, movies, etc.) is in this colorspace."
 msgstr ""
 "存在于计算机监视器中的图像的颜色空间称为“sRGB”。 人们在他们的计算机上或从互联"
-"网上下载的所有视觉内容（例如图片，电影等）都在这个颜色空间中。"
+"网上下载的所有视觉内容(例如图片，电影等)都在这个颜色空间中。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:56
+#, fuzzy
 msgid ""
 "The mathematics of HDR require that we multiply the scene by different "
 "values to adjust the luminance and exposure to different light ranges, and "
-"this curve gets in the way as we need colors in linear space for this."
+"this curve gets in the way, as we need colors in linear space for this."
 msgstr ""
 "HDR的数学要求我们将场景乘以不同的值来调整亮度和曝光到不同的光范围，这条曲线会"
 "妨碍我们在线性空间中需要颜色。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:62
 msgid "Linear color space & asset pipeline"
-msgstr "线性色彩空间和资产管道"
+msgstr "线性色彩空间和资源管道"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:64
 msgid ""
@@ -126,33 +130,36 @@ msgid ""
 "must be converted to linear space on import. There are two ways to do this:"
 msgstr ""
 "在HDR中工作不仅仅是按下开关。 首先，导入的图像资源必须在导入时转换为线性空"
-"间。 有两种方法可以做到这一点："
+"间。 有两种方法可以做到这一点:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:69
-msgid "SRGB -> linear conversion on image import"
-msgstr "SRGB - >图像导入的线性转换"
+#, fuzzy
+msgid "sRGB -> linear conversion on image import"
+msgstr "SRGB ->图像导入的线性转换"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:71
+#, fuzzy
 msgid ""
 "This is the most compatible way of using linear-space assets, and it will "
-"work everywhere including all mobile devices. The main issue with this is "
+"work everywhere, including all mobile devices. The main issue with this is "
 "loss of quality, as sRGB exists to avoid this same problem. Using 8 bits per "
 "channel to represent linear colors is inefficient from the point of view of "
-"the human eye. These textures might be later compressed too which makes the "
+"the human eye. These textures might later be compressed too, which makes the "
 "problem worse."
 msgstr ""
-"这是使用线性空间资产最兼容的方式，它可以在包括所有移动设备在内的任何地方使"
+"这是使用线性空间资源最兼容的方式，它可以在包括所有移动设备在内的任何地方使"
 "用。 这个问题的主要问题是质量下降，因为存在sRGB以避免同样的问题。 从人眼的角"
 "度来看，每个通道使用8位来表示线性颜色是低效的。 这些纹理可能会在以后被压缩，"
 "这会使问题变得更糟。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:78
-msgid "In any case though, this is the easy solution that works everywhere."
+#, fuzzy
+msgid "In any case, though, this is the easy solution that works everywhere."
 msgstr "无论如何，这是一个随处可用的简单解决方案。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:81
 msgid "Hardware sRGB -> linear conversion"
-msgstr "硬件sRGB - >线性转换"
+msgstr "硬件sRGB ->线性转换"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:83
 msgid ""
@@ -164,11 +171,11 @@ msgid ""
 msgstr ""
 "这是在线性空间中使用资源的最正确方法，因为GPU上的纹理采样器将在使用浮点读取纹"
 "素后执行转换。 这在PC和控制台上运行良好，但大多数移动设备不支持它，或者不支持"
-"压缩纹理格式（例如iOS）。"
+"压缩纹理格式(例如iOS)。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:90
 msgid "Linear -> sRGB at the end"
-msgstr "线性 - > sRGB结尾"
+msgstr "线性 -> sRGB结尾"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:92
 msgid ""
@@ -177,7 +184,7 @@ msgid ""
 "current :ref:`Environment <class_Environment>` (more on that below)."
 msgstr ""
 "完成所有渲染后，必须将线性空间渲染图像转换回sRGB。 要做到这一点，只需在当前启"
-"用sRGB转换 ：ref：`Environment <class_Environment>` （更多内容见下文）。"
+"用sRGB转换 :ref:`Environment <class_Environment>` (更多内容见下文)。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:96
 msgid ""
@@ -185,7 +192,7 @@ msgid ""
 "be **both** enabled. Failing to enable one of them will result in horrible "
 "visuals suitable only for avant-garde experimental indie games."
 msgstr ""
-"请记住，sRGB  - >线性和线性 - > sRGB转换必须始终** **启用。 未能启用其中一个"
+"请记住，sRGB ->线性和线性 -> sRGB转换必须始终 **都** 启用。 未能启用其中一个"
 "将导致可怕的视觉效果仅适用于前卫的实验性独立游戏。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:102
@@ -199,9 +206,9 @@ msgid ""
 "<class_WorldEnvironment>` node or set in a camera. There are many parameters "
 "for HDR:"
 msgstr ""
-"HDR可以在：ref：`Environment <class_Environment>`资源中找到。 这些在大多数情"
-"况下都可以在 ：ref：`WorldEnvironment <class_WorldEnvironment>` 节点中找到或"
-"在相机中设置。 HDR有许多参数："
+"HDR可以在 :ref:`Environment <class_Environment>` 资源中找到。 这些在大多数情"
+"况下都可以在 :ref:`WorldEnvironment <class_WorldEnvironment>` 节点中找到或在"
+"相机中设置。 HDR有许多参数:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:112
 msgid "ToneMapper"
@@ -211,7 +218,7 @@ msgstr "色调映射器"
 msgid ""
 "The ToneMapper is the heart of the algorithm. Many options for tonemappers "
 "are provided:"
-msgstr "ToneMapper是算法的核心。 提供了许多色调映射器的选项："
+msgstr "ToneMapper是算法的核心。 提供了许多色调映射器的选项:"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:117
 msgid ""
@@ -219,24 +226,26 @@ msgid ""
 "brightness, but if the differences in light are too big, it will cause "
 "colors to be too saturated."
 msgstr ""
-"**线性：**最简单的色调映射器。 它的作用是调整场景亮度，但是如果光线的差异太"
+"**线性:** 最简单的色调映射器。 它的作用是调整场景亮度，但是如果光线的差异太"
 "大，会导致颜色过饱和。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:120
 msgid "**Log:** Similar to linear but not as extreme."
-msgstr "**日志：**类似于线性而非极端。"
+msgstr "**日志:** 类似于线性而非极端。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:121
+#, fuzzy
 msgid ""
-"**Reinhardt:** Classical tonemapper (modified so it will not desaturate as "
+"**Reinhardt:** Classical tonemapper (modified, so it will not desaturate as "
 "much)"
-msgstr "** Reinhardt：**经典的色调映射器（经过修改，因此不会降低饱和度）"
+msgstr "** Reinhardt:** 经典的色调映射器(经过修改，因此不会降低饱和度)"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:123
+#, fuzzy
 msgid ""
-"**ReinhardtAutoWhite:** Same as above but uses the max scene luminance to "
+"**ReinhardtAutoWhite:** Same as above, but uses the max scene luminance to "
 "adjust the white value."
-msgstr "** ReinhardtAutoWhite：**与上述相同，但使用最大场景亮度来调整白色值。"
+msgstr "** ReinhardtAutoWhite:** 与上述相同，但使用最大场景亮度来调整白色值。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:127
 msgid "Exposure"
@@ -264,17 +273,19 @@ msgid "Glow threshold"
 msgstr "发光阈值"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:141
+#, fuzzy
 msgid ""
-"Determine above which value (from 0 to 1 after the scene is tonemapped), "
+"Determines above which value (from 0 to 1 after the scene is tonemapped) "
 "light will start bleeding."
-msgstr "确定上面的哪个值（场景在色调映射后从0到1），灯光将开始流血。"
+msgstr "确定上面的哪个值(场景在色调映射后从0到1)，灯光将开始流血。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:145
 msgid "Glow scale"
 msgstr "发光量表"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:147
-msgid "Determine how much light will bleed."
+#, fuzzy
+msgid "Determines how much light will bleed."
 msgstr "确定会有多少光线流出。"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:150
@@ -302,9 +313,10 @@ msgid "Exposure adjustment speed"
 msgstr "曝光调整速度"
 
 #: ../../docs/tutorials/3d/high_dynamic_range.rst:164
+#, fuzzy
 msgid ""
 "Auto-exposure will change slowly and will take a while to adjust (like in "
-"real cameras). Bigger values means faster adjustment."
+"real cameras). Bigger values mean faster adjustment."
 msgstr ""
-"自动曝光会缓慢变化，需要一段时间才能调整（就像在真实相机中一样）。 值越大意味"
-"着调整越快。"
+"自动曝光会缓慢变化，需要一段时间才能调整(就像在真实相机中一样)。 值越大意味着"
+"调整越快。"

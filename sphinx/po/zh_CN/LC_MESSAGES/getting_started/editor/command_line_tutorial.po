@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Command line tutorial"
 msgstr "命令行教程"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
-#, fuzzy
 msgid ""
 "Some developers like using the command line extensively. Godot is designed "
 "to be friendly to them, so here are the steps for working entirely from the "
@@ -31,22 +30,21 @@ msgid ""
 msgstr ""
 "一些开发人员喜欢广泛使用命令行。 Godot 被设计为对他们友好，所以这里是完全用命"
 "令行工作的步骤。 鉴于引擎几乎没有依赖于外部库，所以初始化时间非常快，使得其适"
-"用于此工作流。"
+"用于此工作流程。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:15
 msgid "Path"
 msgstr "路径"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid ""
 "It is recommended that your Godot binary be in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
 "You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
 "making sure it is called ``godot``."
 msgstr ""
-"建议您的 Godot 二进制文件位于PATH环境变量中，因此可以通过输入``godot``从任意"
-"位置轻松执行它。 您可以在Linux上通过将Godot二进制文件放入``/ usr / local / "
+"建议您的 Godot 二进制文件位于PATH环境变量中，因此可以通过输入 ``godot`` 从任"
+"意位置轻松执行它。 您可以在Linux上通过将Godot二进制文件放入``/ usr / local / "
 "bin``中并确保它被命名为``godot``来实现。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:23
@@ -68,17 +66,17 @@ msgid ""
 "project as either the first argument, like this:"
 msgstr ""
 "这需要通过将项目的`` project.godot ``文件的路径作为第一个参数来实现，如下所"
-"示："
+"示:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:36
 msgid "Or by using the ``--path`` argument:"
-msgstr "或者使用``--path``参数："
+msgstr "或者使用 ``--path`` 参数:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:42
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
 "might look like this:"
-msgstr "例如，用于导出游戏的完整命令（如下所述）可能看上去是这样的："
+msgstr "例如，用于导出游戏的完整命令(如下所述)可能看上去是这样的:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:49
 msgid "Creating a project"
@@ -106,8 +104,8 @@ msgid ""
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"运行编辑器是通过用``-e``标志执行Godot来完成的。 这必须在项目目录或子目录内完"
-"成，否则该命令将被忽略并显示项目管理器。"
+"运行编辑器是通过用 ``-e`` 标志执行Godot来完成的。 这必须在项目目录或子目录内"
+"完成，否则该命令将被忽略并显示项目管理器。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:77
 msgid ""
@@ -119,7 +117,7 @@ msgstr ""
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:85
 msgid "Erasing a scene"
-msgstr "擦除一个场景"
+msgstr "删除一个场景"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:87
 msgid ""
@@ -127,8 +125,8 @@ msgid ""
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
 "scene or else an error will be thrown upon opening."
 msgstr ""
-"Godot对你的文件系统非常友好，不会创建额外的元数据文件，只需使用``rm``来擦除文"
-"件。 确保没有对该场景的引用，否则在打开时会抛出错误。"
+"Godot对您的文件系统非常友好，不会创建额外的元数据文件，只需使用 ``rm`` 来删除"
+"文件。 确保没有对该场景的引用，否则在打开时会抛出错误。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:96
 msgid "Running the game"
@@ -151,14 +149,13 @@ msgid "Debugging"
 msgstr "调试"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:115
-#, fuzzy
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
-"捕捉命令行中的错误可能是一项艰巨的任务，因为它们一闪而过。 为此，通过添加``-"
-"d``来提供命令行调试器。 它适用于运行游戏或简单的场景。"
+"捕捉命令行中的错误可能是一项艰巨的任务，因为它们一闪而过。 为此，通过添加 ``-"
+"d`` 来提供命令行调试器。 它适用于运行游戏或简单的场景。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "Exporting"
@@ -170,8 +167,8 @@ msgid ""
 "especially useful for continuous integration setups. The version of Godot "
 "that is headless (server build, no video) is ideal for this."
 msgstr ""
-"从命令行导出项目也被支持。 这对建构持续集成特别有用。 headless的Godot版本（服"
-"务器版本，无视频）对此非常理想。"
+"从命令行导出项目也被支持。 这对建构持续集成特别有用。 headless的Godot版本(服"
+"务器版本，无视频)对此非常理想。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:141
 msgid ""
@@ -180,17 +177,17 @@ msgid ""
 "platforms from the command line, try exporting to a non-recognized platform "
 "and the full listing of platforms your configuration supports will be shown."
 msgstr ""
-"由``--export``开关识别的平台名称要与编辑器的导出向导中显示的相同。 要从命令行"
-"获取受支持平台的列表，只需尝试导出到未识别的平台，然后就会显示配置支持的完整"
-"平台列表。"
+"由 ``--export`` 开关识别的平台名称要与编辑器的导出向导中显示的相同。 要从命令"
+"行获取受支持平台的列表，只需尝试导出到未识别的平台，然后就会显示配置支持的完"
+"整平台列表。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:147
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export``. Their parameters and usage are the same."
 msgstr ""
-"要导出游戏的调试版本，请使用``--export-debug``开关而不是``--export``。 他们的"
-"参数和用法是相同的。"
+"要导出游戏的调试版本，请使用 ``--export-debug`` 开关而不是 ``--export`` 。 他"
+"们的参数和用法是相同的。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:151
 msgid "Running a script"
@@ -203,7 +200,7 @@ msgid ""
 "assets or custom import/export."
 msgstr ""
 "可以从命令行运行简单的 .gd 脚本。 此功能在非常大的项目中特别有用，可用于批量"
-"转换资产或自定义导入/导出。"
+"转换资源或自定义导入/导出。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:157
 msgid "The script must inherit from SceneTree or MainLoop."
@@ -211,16 +208,16 @@ msgstr "该脚本必须继承了场景树或主循环。"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:159
 msgid "Here is a simple example of how it works:"
-msgstr "下面是一个简单的示例，说明它是如何工作的："
+msgstr "下面是一个简单的示例，说明它是如何工作的:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:170
 msgid "And how to run it:"
-msgstr "以及如何运行它："
+msgstr "以及如何运行它:"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:177
 msgid ""
 "If no project.godot exists at the path, current path is assumed to be the "
 "current working directory (unless ``-path`` is specified)."
 msgstr ""
-"如果路径中不存在 project.godot ，则假定当前路径是当前工作目录（除非指定了``-"
-"path``参数）。"
+"如果路径中不存在 project.godot ，则假定当前路径是当前工作目录(除非指定了 ``-"
+"path`` 参数)。"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,10 +153,11 @@ msgstr ""
 "함합니다."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
+#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
-"get_tree() <class_Node_get_tree>`."
+"get_tree() <class_Node_method_get_tree>`."
 msgstr ""
 "노드가 씬 트리의 일부분일 때, :ref:`SceneTree <class_SceneTree>` 싱글톤"
 "(Singleton)은 간단히 :ref:`Node.get_tree() <class_Node_get_tree>` 를 호출해"
@@ -287,21 +288,27 @@ msgid "Changing current scene"
 msgstr "현재 씬 변경하기"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
+#, fuzzy
 msgid ""
 "After a scene is loaded, it is often desired to change this scene for "
 "another one. The simple way to do this is to use the :ref:`SceneTree."
-"change_scene() <class_SceneTree_change_scene>` function:"
+"change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
 "씬이 불러온 후, 그것을 다른 씬으로 바꾸고 싶을 수 있습니다. 간단한 방법으로 :"
 "ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` 함수를 사용하"
 "는 것입니다:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
+#, fuzzy
 msgid ""
 "Rather than using file paths, one can also use ready-made :ref:`PackedScene "
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
-"change_scene_to(PackedScene scene) <class_SceneTree_change_scene_to>`:"
+"change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
+"파일의 경로를 사용하기보다는, 이미 만들어져 있는 :ref:`PackedScene "
+"<class_PackedScene>` 리소스를 사용하세요. 이 리소스를 사용하기 위해서는 다음"
+"과 같이 함수를 사용합니다. :ref:`SceneTree.change_scene_to(PackedScene "
+"scene) <class_SceneTree_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 #, fuzzy

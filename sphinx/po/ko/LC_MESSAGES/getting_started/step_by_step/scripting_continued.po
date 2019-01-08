@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,10 +42,12 @@ msgstr ""
 "세싱에는 두가지 유형이 있습니다: 정적 프로세싱과 동적 프로세싱입니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
+#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
-"<class_Node__process>` is found in a script. It can be turned off and on "
-"with the :ref:`Node.set_process() <class_Node_set_process>` function."
+"<class_Node_method__process>` is found in a script. It can be turned off and "
+"on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
+"function."
 msgstr ""
 "정적 프로세싱은 스크립트에서 :ref:`Node._process() <class_Node__process>` 라"
 "는 메서드가 발견되면 활성화됩니다. :ref:`Node.set_process() "
@@ -135,19 +137,19 @@ msgstr ""
 "튼의 UI에서 시작합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:92
-#, fuzzy
 msgid ""
 "And the second way is from code. One example would be to tag nodes which are "
 "enemies:"
 msgstr ""
-"두 번째 방법은 코드로 시작합니다. 예를 들어 적으로 쓰는 씬에 태그를 지정할 "
-"수 있습니다:"
+"두 번째 방법은 코드를 사용하는 것입니다. 예를 들어 적으로 사용되는 노드에 태"
+"그를 지정할 수 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
+#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
-"call_group() <class_SceneTree_call_group>`:"
+"call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
 "이렇게 하면 플레이어가 비밀 기지에 몰래 들어간 것이 발견될 경우, :ref:"
 "`SceneTree.call_group() <class_SceneTree_call_group>` 을 사용하여 모든 적에"
@@ -161,9 +163,11 @@ msgstr ""
 "위의 코드는 모든 ``enemies`` 의 ``player_was_discovered`` 함수를 호출합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
+#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
-"ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
+"ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
 "또한 :ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_get_nodes_in_group>` 을 호출하여 ``enemies`` 노드의 전체 목"
@@ -188,12 +192,13 @@ msgid "Notifications"
 msgstr "알림(Notifications)"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
+#, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
 "of them. It's just good to know they exist. For example, you may add an :ref:"
-"`Object._notification() <class_Object__notification>` function in your "
-"script:"
+"`Object._notification() <class_Object_method__notification>` function in "
+"your script:"
 msgstr ""
 "Godot에는 알림(notification) 시스템이 있습니다. 보통은 스크립팅에 쓰이진 않습"
 "니다, 너무 로우 레벨이며 대부분의 경우 가상 함수를 제공하기 때문이죠. 그냥 존"
@@ -267,9 +272,10 @@ msgstr ""
 "면 이 경우를 발견하고 경고를 표시하는 경우가 많습니다."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
+#, fuzzy
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
-"<class_Node_queue_free>`. This erases the node safely during idle."
+"<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
 "노드를 삭제하는 가장 안전한 방법은 다음을 사용하는 것입니다. 이렇게 하면 대"
 "기 상태에서도 노드가 안전하게 지워집니다."
@@ -295,12 +301,13 @@ msgstr ""
 "(GDScript만):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
+#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
-"function :ref:`PackedScene.instance() <class_PackedScene_instance>` must be "
-"called. This will return the tree of nodes that can be added to the active "
-"scene:"
+"function :ref:`PackedScene.instance() <class_PackedScene_method_instance>` "
+"must be called. This will return the tree of nodes that can be added to the "
+"active scene:"
 msgstr ""
 "그러나 ``씬`` 은 아직 하나의 노드가 아닙니다. 이것은 :ref:`PackedScene "
 "<class_PackedScene>` 라는 특수 리소스에 들어 있습니다. 실제 노드를 생성하려"

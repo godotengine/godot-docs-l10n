@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,18 +25,20 @@ msgstr "Często zadawane pytania"
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
 msgstr ""
-"Co mogę stworzyć przy pomocy Godota? Ile on kosztuje? Jakie są zasady "
+"Co mogę zrobić z Godotem? Ile będzie mnie to kosztować? Jakie są warunki "
 "licencji?"
 
 #: ../../docs/about/faq.rst:9
+#, fuzzy
 msgid ""
 "Godot is `Free and Open-Source Software <https://en.wikipedia.org/wiki/"
 "Free_and_open-source_software>`_ available under the `OSI-approved <https://"
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot jest darmowym oprogramowaniem Open-Source dystrybuowanym na licencji "
-"`MIT <https://opensource.org/licenses/MIT>`_."
+"Godot jest `wolnym i otwartym oprogramowaniem <https://pl.wikipedia.org/wiki/"
+"Wolne_i_otwarte_oprogramowanie>`_ dostępnym na licencji `MIT <https://"
+"opensource.org/licenses/MIT>`_, zatwierdzonej przez OSI."
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -55,8 +57,8 @@ msgid ""
 "You are free to modify, distribute, redistribute, and remix Godot to your "
 "heart's content, for any reason, both non-commercially and commercially."
 msgstr ""
-"Możesz modyfikować, rozprowadzać i modyfikować Godota według twoich uznań, w "
-"jakichkolwiek celach, zarówno komercyjnie jak i niekomercyjnie"
+"Możesz rozprowadzać i modyfikować Godota według twoich uznań, w "
+"jakichkolwiek celach, zarówno komercyjnych jak i niekomercyjnych."
 
 #: ../../docs/about/faq.rst:16
 msgid ""
@@ -65,10 +67,9 @@ msgid ""
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Cała zawartość dokumentacji znajduje się na licencji Creative Commons "
-"Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/"
-">`_), z dopisikiem \"Juan Linietsky, Ariel Manzur and the Godot Engine "
-"community\"."
+"Cała zawartość dokumentacji jest na licencji Creative Commons Attribution "
+"3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_), z "
+"dopisikiem \"Juan Linietsky, Ariel Manzur and the Godot Engine community\"."
 
 #: ../../docs/about/faq.rst:20
 msgid ""
@@ -95,7 +96,6 @@ msgstr ""
 "LOGO_LICENSE.md>`_ znajdujących się w repozytorium Godota."
 
 #: ../../docs/about/faq.rst:28
-#, fuzzy
 msgid ""
 "Also, see `the license page on the Godot website <https://godotengine.org/"
 "license>`_."
@@ -155,8 +155,8 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
-"Istnieją udane kompilacje Godot  na systemach opartych o architekturę ARM na "
-"Linuxie, przykładowo Raspberry Pi."
+"Istnieją udane kompilacje Godot na systemach opartych o architekturę ARM na "
+"Linuksie, przykładowo Raspberry Pi."
 
 #: ../../docs/about/faq.rst:54
 msgid ""
@@ -236,10 +236,10 @@ msgid ""
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
 "Jeśli chodzi o nowe języki, wsparcie dla nich jest możliwe poprzez "
-"oprogramowanie third-party używając GDNative'a / NativeScript'a / "
-"PluginScript'a. Obecnie użytkownicy pracują nad bindigami do `Python "
-"<https://github.com/touilleMan/godot-python>`_ i `Nim <https://github.com/"
-"pragmagic/godot-nim>`_."
+"oprogramowanie third-party używając GDNative'a / NativeScripta / "
+"PluginScripta. Obecnie użytkownicy pracują nad bindigami do `Python <https://"
+"github.com/touilleMan/godot-python>`_ i `Nim <https://github.com/pragmagic/"
+"godot-nim>`_."
 
 #: ../../docs/about/faq.rst:88
 msgid "What is GDScript and why should I use it?"
@@ -314,11 +314,11 @@ msgstr ""
 "Ponieważ Godot jest projektem o otwartym kodzie źródłowym, od samego "
 "początku konieczne było nadanie priorytetu bardziej zintegrowanemu i "
 "bezproblemowemu doświadczeniu, jeśli chodzi o przyciąganie dodatkowych "
-"użytkowników dzięki obsłudze bardziej znanych języków programowania - "
+"użytkowników dzięki obsłudze bardziej znanych języków programowania – "
 "zwłaszcza, gdy obsługa tych bardziej znanych języków może spowodować gorsze "
-"wrażenia. Rozumiemy, czy wolisz używać innego języka w Godot (zobacz listę "
+"wrażenia. Rozumiemy, jeśli wolisz używać innego języka w Godot (zobacz listę "
 "obsługiwanych opcji powyżej). Biorąc to pod uwagę, jeśli nie wypróbowałeś "
-"GDScript, spróbuj przez ** trzy dni **. Podobnie jak Godot, gdy tylko "
+"GDScript, spróbuj przez **trzy dni**. Podobnie jak Godot, gdy tylko "
 "zobaczysz, jak potężny jest on i twój rozwój staje się szybki, myślimy, że "
 "GDScript będzie się rozwijać."
 
@@ -442,9 +442,9 @@ msgstr ""
 "poprzez wtyczki. (Zobacz pytanie o Wtyczki wyżej.)"
 
 #: ../../docs/about/faq.rst:159
+#, fuzzy
 msgid ""
-"Will [Insert closed SDK such as PhysX, GameWorks, etc.] be supported in "
-"Godot?"
+"Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
 "Czy [Zamknięte SDK takie jak PhysX, GameWorks, etc.] będzie wspierane w "
 "Godot?"
@@ -463,16 +463,15 @@ msgstr ""
 "tego z rdzeniem Godot'a byłoby przeciwne etyce Godot'a."
 
 #: ../../docs/about/faq.rst:166
-#, fuzzy
 msgid ""
 "That said, because Godot is open-source and modular, nothing prevents you or "
 "anyone else interested in adding those libraries as a module and shipping "
 "your game with them--as either open- or closed-source."
 msgstr ""
-"Ponieważ jest to oprogramowanie open source i modułowy, nic nie stoi na "
-"przeszkodzie, abyś ty lub ktokolwiek inny zainteresowany dodaniem tych "
-"bibliotek jako modułu i stworzeniem gry przy użyciu ich, jako oprogramowania "
-"otwarto lub zamknięto źródłowego. Wszystko jest dozwolone."
+"Ponieważ Godot jest open-source i modularny, nic nie stoi na przeszkodzie, "
+"abyś ty lub ktokolwiek inny zainteresowany dodał te biblioteki jako moduł i "
+"stworzył grę z ich pomocą – jako oprogramowanie z otwartym lub zamkniętym "
+"źródłem."
 
 #: ../../docs/about/faq.rst:170
 msgid ""
@@ -516,17 +515,15 @@ msgstr ""
 "rozmiarów i interfejsów DPI."
 
 #: ../../docs/about/faq.rst:189
-#, fuzzy
 msgid ""
 "The most common and proper way to achieve this is to, instead, use a single "
 "base resolution for the game and only handle different screen aspect ratios. "
 "This is mostly needed for 2D, as in 3D it's just a matter of Camera XFov or "
 "YFov."
 msgstr ""
-"Najpowszechniejszym i najodpowiedniejszym sposobem na osiągnięcie tego celu "
-"jest użycie jednej podstawowej rozdzielczości w grze i obsługiwanie tylko "
-"różnych aspektów ekranu. Jest to najbardziej potrzebne w przypadku kamer 2D, "
-"ponieważ w 3D jest to tylko kwestia Kamer XFov lub YFov."
+"Najlepiej użyć jednej podstawowej rozdzielczości w grze, a obsługiwać różne "
+"proporcje ekranów. Dotyczy to głównie widoku 2D, ponieważ w 3D wystarczy "
+"dostosować XFov lub YFov kamery."
 
 #: ../../docs/about/faq.rst:193
 msgid ""
@@ -595,22 +592,21 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:222
 msgid "How can I extend Godot?"
-msgstr ""
+msgstr "Jak mogę rozszerzyć Godota?"
 
 #: ../../docs/about/faq.rst:224
-#, fuzzy
 msgid ""
 "For extending Godot, like creating Godot Editor plugins or adding support "
 "for additional languages, take a look at :ref:`EditorPlugins "
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
-"By stworzyć wtyczki do edytora Godot, spójrz na :ref:`tworzenie wtyczek "
-"<doc_making_plugins>` i skryptów narzędziowych."
+"Jeśli chcesz rozszerzyć Godota, np. stworzyć wtyczki do edytora lub dodać "
+"wsparcie dla innych języków, przeczytaj o :ref:`tworzeniu wtyczek "
+"<doc_making_plugins>` i skryptach narzędziowych."
 
 #: ../../docs/about/faq.rst:228
-#, fuzzy
 msgid "Also, see the official blog posts on these topics:"
-msgstr "Zapoznaj się również z oficjalnymi wpisami na blogu na ten temat:"
+msgstr "Zapoznaj się również z wpisami na ten temat na oficjalnym blogu:"
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -639,13 +635,15 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:239
 msgid "I would like to contribute! How can I get started?"
-msgstr ""
+msgstr "Chciałbym przyczynić się do rozwoju Godota! Jak mogę zacząć?"
 
 #: ../../docs/about/faq.rst:241
 msgid ""
 "Awesome! As an open-source project, Godot thrives off of the innovation and "
 "ambition of developers like you."
 msgstr ""
+"Świetnie! Jako projekt open-source, Godot czerpie z innowacyjności i ambicji "
+"deweloperów takich jak ty."
 
 #: ../../docs/about/faq.rst:244
 msgid ""
@@ -717,8 +715,8 @@ msgid ""
 "reformulate them as a problem first, so developers and the community have a "
 "functional foundation to ground your ideas on."
 msgstr ""
-"Proszę nie czuć, że twoje pomysły na Godota są niepożądane. Zamiast tego "
-"spróbuj najpierw przeformułować problem tak, aby programiści i społeczność "
+"Nie odnieś wrażenia, że twoje pomysły na Godota są niechciane. Zamiast tego "
+"spróbuj najpierw je opisać jako problemy, tak, aby programiści i społeczność "
 "mieli podstawy do dyskusji."
 
 #: ../../docs/about/faq.rst:275
@@ -729,15 +727,19 @@ msgid ""
 "problems and ideas this way will help the whole community stay focused on "
 "improving developer experiences as a whole."
 msgstr ""
+"Jeżeli chcesz dzielić się pomysłami i problemami ze społecznością, zapoznaj "
+"nas ze swoją sytuacją. Wyjaśnij, co chcesz osiągnąć, co według ciebie "
+"powinno się wydarzyć, a co wydarzyło się w rzeczywistości. Opisywanie "
+"problemów w ten sposób pomoże społeczności skupić się na wprowadzaniu "
+"usprawnień dla ogółu."
 
 #: ../../docs/about/faq.rst:281
-#, fuzzy
 msgid ""
 "Bonus points for bringing screenshots, concrete numbers, test cases, or "
 "example projects (if applicable)."
 msgstr ""
 "Dodatkowe punkty za zrobienie zrzutów ekranu, przedstawienie konkretnych "
-"liczb lub przykładowych projektów (jeśli dotyczy)."
+"liczb, sposobów testowania lub przykładowych projektów (o ile to możliwe)."
 
 #: ../../docs/about/faq.rst:285
 msgid "How can I support Godot development or contribute?"

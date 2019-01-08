@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Exporting projects"
 msgstr "导出项目"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
-#, fuzzy
 msgid "Why export?"
 msgstr "为什么要导出？"
 
@@ -41,8 +40,8 @@ msgid ""
 "our company started taking more projects at the same time, it became evident "
 "that this was a bottleneck."
 msgstr ""
-"当更多的开发人员（甚至非程序员）开始使用它，并且当我们公司开始同时进行更多项"
-"目时，很明显这是一个瓶颈。"
+"当更多的开发人员(甚至非程序员)开始使用它，并且当我们公司开始同时进行更多项目"
+"时，很明显这是一个瓶颈。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:20
 msgid "On PC"
@@ -54,7 +53,7 @@ msgid ""
 "binary in the same directory as the ``project.godot`` file, then compress "
 "the project directory and you are done."
 msgstr ""
-"用Godot在PC上分发游戏项目相当容易。 只需将 godot.exe（或godot）二进制文件放在"
+"用Godot在PC上分发游戏项目相当容易。 只需将 godot.exe(或godot)二进制文件放在"
 "与 engine.cfg 文件相同的位置，然后将其压缩并完成。 这可以被利用来制作自定义安"
 "装程序。"
 
@@ -83,7 +82,6 @@ msgid "On mobile"
 msgstr "在移动端"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
-#, fuzzy
 msgid ""
 "The same scenario on mobile platforms is a little worse. To distribute a "
 "project on those devices, a binary for each of those platforms is built, "
@@ -111,8 +109,8 @@ msgid ""
 "formats for texture compression, such as PVRTC (iOS) or ETC (Android)."
 msgstr ""
 "这种方法还有另一个问题。 不同的设备偏好一些不同格式的数据来运行。 这个主要的"
-"例子是纹理压缩。 所有PC硬件都使用 S3TC（BC）压缩，并且已经标准化了十多年，但"
-"移动设备使用不同的格式进行纹理压缩，例如PVRCT（iOS）或ETC（Android）。"
+"示例是纹理压缩。 所有PC硬件都使用 S3TC(BC)压缩，并且已经标准化了十多年，但移"
+"动设备使用不同的格式进行纹理压缩，例如PVRCT(iOS)或ETC(Android)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:58
 msgid "Export menu"
@@ -124,7 +122,7 @@ msgid ""
 "proven to work the best. At the time of this writing, not all platforms are "
 "supported yet, but the supported platforms continue to grow."
 msgstr ""
-"经过多次尝试不同的导出工作流后，目前的工作流程已被证明是最好的。 在撰写本文"
+"经过多次尝试不同的导出工作流程后，目前的工作流程已被证明是最好的。 在撰写本文"
 "时，并不是所有平台都支持，但受支持的平台仍在继续增长。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
@@ -132,7 +130,6 @@ msgid "To open the export menu, click the **Export** button:"
 msgstr "要打开 \"导出\" 菜单, 只需单击 \"导出\" 按钮:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
-#, fuzzy
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
@@ -157,9 +154,9 @@ msgid ""
 "they resolve it:"
 msgstr ""
 "默认选项通常足以导出，因此调整它们不是必需的，但可以提供额外的控制。 但是，许"
-"多平台需要安装额外的工具（SDK）才能导出。 此外，Godot需要安装导出模板来创建"
+"多平台需要安装额外的工具(SDK)才能导出。 此外，Godot需要安装导出模板来创建"
 "包。 导出菜单会在缺少某些内容时给出提示，并且不会允许用户在解决该问题之前导出"
-"该平台："
+"该平台:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
@@ -179,13 +176,13 @@ msgid ""
 "godotengine.org/download>`_."
 msgstr ""
 "除了设置平台之外，还必须安装导出模板才能导出项目。 它们可以从 `网站 <https://"
-"www.godotengine.org/download>`_的下载页面以.tpz（更名为.zip）文件的形式获得。"
+"www.godotengine.org/download>`_ 的下载页面以.tpz(更名为.zip)文件的形式获得。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
 msgid ""
 "Once downloaded, they can be installed using the **Install Export "
 "Templates** option in the editor:"
-msgstr "下载后，可以使用编辑器中的“安装导出模板”选项进行安装："
+msgstr "下载后，可以使用编辑器中的“安装导出模板”选项进行安装:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:105
 msgid "Export mode"
@@ -195,8 +192,7 @@ msgstr "导出模式"
 msgid ""
 "When exporting, Godot makes a list of all the files to export and then "
 "creates the package. There are 3 different modes for exporting:"
-msgstr ""
-"导出时，Godot会列出所有要导出的文件，然后创建包。 有3种不同的导出模式："
+msgstr "导出时，Godot会列出所有要导出的文件，然后创建包。 有3种不同的导出模式:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:110
 msgid "Export every single file in the project"
@@ -230,7 +226,7 @@ msgid ""
 msgstr ""
 "**仅导出资源** - 仅导出资源。 对于大多数项目来说，这就够了。 然而，许多开发人"
 "员喜欢在他们的游戏中使用自定义数据文件。 为了弥补这一点，可以为额外的扩展名添"
-"加过滤器（如* .txt，*。csv等）。"
+"加过滤器(如* .txt，*。csv等)。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:126
 msgid ""
@@ -241,9 +237,9 @@ msgid ""
 "is performed to ensure that everything needed is added."
 msgstr ""
 "**仅导出选定资源** - 仅导出列表中的资源。 这对大多数项目来说可能是过度的，但"
-"在某些情况下它是合理的（通常是巨大的项目）。 该模式提供对输出内容的完全控"
-"制。 可以选择单个资源并执行依赖性检测以确保添加所需的所有内容。 此外，此模式"
-"允许将“场景”和依赖关系“捆绑”到单个文件中，这对于发布到光碟上的游戏非常有用。"
+"在某些情况下它是合理的(通常是巨大的项目)。 该模式提供对输出内容的完全控制。 "
+"可以选择单个资源并执行依赖性检测以确保添加所需的所有内容。 此外，此模式允许"
+"将“场景”和依赖关系“捆绑”到单个文件中，这对于发布到光碟上的游戏非常有用。"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
 msgid "Exporting from the command line"
@@ -256,9 +252,9 @@ msgid ""
 "from the command line still requires an export preset to define the export "
 "parameters. A basic invocation of the command would be:"
 msgstr ""
-"在生产中，自动化构建很有用，Godot使用``--export``和``--export-debug``命令行参"
-"数来支持它。 从命令行导出仍需要导出预设来定义导出参数。 该命令的基本调用将"
-"是："
+"在生产中，自动化构建很有用，Godot使用 ``--export`` 和 ``--export-debug`` 命令"
+"行参数来支持它。 从命令行导出仍需要导出预设来定义导出参数。 该命令的基本调用"
+"将是:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:147
 msgid ""
@@ -277,8 +273,8 @@ msgid ""
 "single export to be used with multiple Godot executables). This takes place "
 "if:"
 msgstr ""
-"您也可以将其配置为仅导出.pck或.zip文件（允许将单个导出与多个 Godot 可执行文件"
-"一起使用）。 这发生在以下情况下："
+"您也可以将其配置为仅导出.pck或.zip文件(允许将单个导出与多个 Godot 可执行文件"
+"一起使用)。 这发生在以下情况下:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:156
 msgid "the export preset is not marked as runnable,"
@@ -293,5 +289,5 @@ msgid ""
 "It is often useful to combine the ``--export`` flag with the ``--path`` "
 "flag, and to create a dedicated export preset for automated export:"
 msgstr ""
-"将``--export``标志与``--path``标志组合起来通常很有用，并为自动导出创建专用的"
-"导出预设："
+"将 ``--export`` 标志与 ``--path`` 标志组合起来通常很有用，并为自动导出创建专"
+"用的导出预设:"

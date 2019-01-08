@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid ""
 "This area is complex, usually a mobile game that monetizes needs special "
 "connections to a server for things like:"
 msgstr ""
-"这个区域很复杂，通常是一个移动游戏，货币化需要与服务器的特殊连接，例如："
+"这个区域很复杂，通常是一个移动游戏，货币化需要与服务器的特殊连接，例如:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:15
 msgid "Analytics"
@@ -106,13 +106,13 @@ msgstr "推送通知"
 msgid ""
 "On iOS, you can write a C++ module and take advantage of the C++/ObjC "
 "intercommunication."
-msgstr "在iOS上，您可以编写C ++模块并利用C ++ / ObjC互通。"
+msgstr "在iOS上，您可以编写C++模块并利用C++ / ObjC互通。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:35
 msgid ""
 "On Android, interfacing with C++ through JNI (Java Native Interface) isn't "
 "as convenient."
-msgstr "在Android上，通过JNI（Java Native Interface）与C ++连接并不方便。"
+msgstr "在Android上，通过JNI(Java Native Interface)与C++连接并不方便。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:38
 msgid "Maybe REST?"
@@ -136,7 +136,7 @@ msgid ""
 "Writing an Android module is similar to :ref:`doc_custom_modules_in_c++`, "
 "but needs a few more steps."
 msgstr ""
-"编写Android模块类似于：ref：`doc_custom_modules_in_c ++`，但需要更多步骤。"
+"编写Android模块类似于 :ref:`doc_custom_modules_in_c ++`，但需要更多步骤。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:51
 msgid ""
@@ -144,8 +144,8 @@ msgid ""
 "templates <doc_compiling_for_android>`, as well as creating :ref:"
 "`doc_custom_modules_in_c++`."
 msgstr ""
-"确保你熟悉构建自己的：ref：`Android export templates "
-"<doc_compiling_for_android>`，以及创建：ref：`doc_custom_modules_in_c ++`。"
+"确保您熟悉构建自己的 :ref:`Android export templates "
+"<doc_compiling_for_android>`，以及创建 :ref:`doc_custom_modules_in_c ++`。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:55
 msgid "config.py"
@@ -158,7 +158,7 @@ msgid ""
 "platform being built for and only enable building in this case:"
 msgstr ""
 "在模块的config.py中，为方便起见，提供了一些额外的功能。 首先，检测Android是否"
-"是正在构建的目标平台并且仅在此情况下启用构建通常是明智的："
+"是正在构建的目标平台并且仅在此情况下启用构建通常是明智的:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:66
 msgid ""
@@ -166,8 +166,8 @@ msgid ""
 "also for iOS), check manually for Android in the configure functions for "
 "Android (or other platform-specific) code:"
 msgstr ""
-"如果可以构建多个平台（例如，如果也为iOS实现模块），请在Android（或其他特定于"
-"平台）代码的配置功能中手动检查Android："
+"如果可以构建多个平台(例如，如果也为iOS实现模块)，请在Android(或其他特定于平"
+"台)代码的配置功能中手动检查Android:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:80
 msgid "Java singleton"
@@ -180,13 +180,13 @@ msgid ""
 "any additional resources you have provided for the module will be in the "
 "``com.godot.game.R`` class, so you'll likely want to import it."
 msgstr ""
-"Android模块通常会有一个单独的类来加载它，这个类继承自``Godot."
-"SingletonBase``。 您为该模块提供的任何其他资源的资源标识符将位于“com.godot."
+"Android模块通常会有一个单独的类来加载它，这个类继承自 ``Godot."
+"SingletonBase`` 。 您为该模块提供的任何其他资源的资源标识符将位于“com.godot."
 "game.R”类中，因此您可能希望导入它。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:87
 msgid "A singleton object template follows:"
-msgstr "单例对象模板如下："
+msgstr "单例对象模板如下:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:153
 msgid ""
@@ -195,22 +195,22 @@ msgid ""
 "``get_instance_ID()`` on the script. This returns an integer that can be "
 "passed to Java."
 msgstr ""
-"从Java回调Godot有点困难。 首先必须知道脚本的实例ID，这是通过在脚本上调用"
-"``get_instance_ID（）``获得的。 这将返回一个可以传递给Java的整数。"
+"从Java回调Godot有点困难。 首先必须知道脚本的实例ID，这是通过在脚本上调用 "
+"``get_instance_ID()`` 获得的。 这将返回一个可以传递给Java的整数。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:158
 msgid ""
 "From Java, use the ``calldeferred`` function to communicate back with Godot. "
 "Java will most likely run in a separate thread, so calls are deferred:"
 msgstr ""
-"从Java中，使用``calldeferred``函数与Godot进行通信。 Java很可能在一个单独的线"
-"程中运行，因此调用是延迟的："
+"从Java中，使用 ``calldeferred`` 函数与Godot进行通信。 Java很可能在一个单独的"
+"线程中运行，因此调用是延迟的:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:165
 msgid ""
 "Add this singleton to the build of the project by adding the following to "
 "config.py:"
-msgstr "通过将以下内容添加到config.py，将此单例添加到项目的构建中："
+msgstr "通过将以下内容添加到config.py，将此单例添加到项目的构建中:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:181
 msgid "AndroidManifest"
@@ -229,7 +229,7 @@ msgstr ""
 msgid ""
 "Create the custom chunk of android manifest and put it inside the module, "
 "add it like this:"
-msgstr "创建android清单的自定义块并将其放在模块中，像这样添加："
+msgstr "创建android清单的自定义块并将其放在模块中，像这样添加:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:204
 msgid "Resources"
@@ -239,33 +239,33 @@ msgstr "资源"
 msgid ""
 "In order to provide additional resources with your module you have to add "
 "something like this:"
-msgstr "为了向您的模块提供额外资源，您必须添加以下内容："
+msgstr "为了向您的模块提供额外资源，您必须添加以下内容:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:216
 msgid ""
 "Now you can refer to those resources by their id (``R.string.my_string``, "
 "and the like) by importing the ``com.godot.game.R`` class in your Java code."
 msgstr ""
-"现在，您可以通过在Java代码中导入``com.godot.game.R``类，通过它们的id（``R."
-"string.my_string``等）来引用这些资源。"
+"现在，您可以通过在Java代码中导入 ``com.godot.game.R`` 类，通过它们的id(``R."
+"string.my_string``等)来引用这些资源。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:220
 msgid "Assets"
-msgstr "资产"
+msgstr "资源"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:222
 msgid ""
 "Similarly, you can add any type of raw asset files to your app's asset "
 "directory like this:"
 msgstr ""
-"同样，您可以将任何类型的原始资产文件添加到应用程序的资产目录中，如下所示："
+"同样，您可以将任何类型的原始资源文件添加到应用程序的资源目录中，如下所示:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:231
 msgid ""
 "Assets don't have resource ids, but can be read with their file name as "
 "streams of bytes with the help of the Android AssetManager class."
 msgstr ""
-"资产没有资源ID，但可以在Android AssetManager类的帮助下将其文件名作为字节流读"
+"资源没有资源ID，但可以在Android AssetManager类的帮助下将其文件名作为字节流读"
 "取。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:235
@@ -279,7 +279,7 @@ msgid ""
 "integrate, put it in the module directory and add it:"
 msgstr ""
 "所以，最后是时候添加SDK库了。 该库可以有两种版本，一种是JAR文件，另一种是针对"
-"ant的Android项目。 JAR是最容易集成的，将它放在模块目录中并添加它："
+"ant的Android项目。 JAR是最容易集成的，将它放在模块目录中并添加它:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:257
 msgid "SDK project"
@@ -291,7 +291,7 @@ msgid ""
 "project folder inside the module directory and configure it:"
 msgstr ""
 "当这是一个Android项目时，事情通常会变得更加复杂。 复制模块目录中的项目文件夹"
-"并进行配置："
+"并进行配置:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:266
 msgid ""
@@ -301,12 +301,12 @@ msgid ""
 "android/AndroidManifest.xml.template>`__"
 msgstr ""
 "在撰写本文时，Godot使用minsdk 18并定位sdk 27.如果这一点发生变化，它应该反映在"
-"清单模板中： `AndroidManifest.xml.template <https://github.com/godotengine/"
+"清单模板中: `AndroidManifest.xml.template <https://github.com/godotengine/"
 "godot/blob/master/platform/android/AndroidManifest.xml.template>`__"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:270
 msgid "Then, add the module folder to the project:"
-msgstr "然后，将模块文件夹添加到项目中："
+msgstr "然后，将模块文件夹添加到项目中:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:286
 msgid "Building"
@@ -334,7 +334,7 @@ msgstr ""
 msgid ""
 "Afterwards, continue the steps for compiling android  :ref:"
 "`doc_compiling_for_android`."
-msgstr "然后，继续编译android：ref：`doc_compiling_for_android`的步骤。"
+msgstr "然后，继续编译android :ref:`doc_compiling_for_android`的步骤。"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:303
 msgid "Using the module"
@@ -344,16 +344,16 @@ msgstr "使用模块"
 msgid ""
 "To use the module from GDScript, first enable the singleton by adding the "
 "following line to project.godot:"
-msgstr "要使用GDScript中的模块，首先通过向project.godot添加以下行来启用单例："
+msgstr "要使用GDScript中的模块，首先通过向project.godot添加以下行来启用单例:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:314
 msgid ""
 "More than one singleton module can be enabled by separating with commas:"
-msgstr "通过逗号分隔可以启用多个单例模块："
+msgstr "通过逗号分隔可以启用多个单例模块:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:322
 msgid "Then request the singleton Java object from Globals like this:"
-msgstr "然后从Globals请求单例Java对象，如下所示："
+msgstr "然后从Globals请求单例Java对象，如下所示:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:335
 msgid "Troubleshooting"
@@ -361,11 +361,11 @@ msgstr "故障排除"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:338
 msgid "Godot crashes upon load"
-msgstr "戈多在装载时坠毁"
+msgstr "Godot在装载时坠毁"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:340
 msgid "Check ``adb logcat`` for possible problems, then:"
-msgstr "检查``adb logcat``是否存在可能的问题，然后："
+msgstr "检查``adb logcat``是否存在可能的问题，然后:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:342
 msgid "Make sure libgodot_android.so is in the ``libs/armeabi`` folder"
@@ -391,7 +391,7 @@ msgstr "Godot有一个实验性的Java API Wrapper，允许使用GDScript的整�
 
 #: ../../docs/development/cpp/creating_android_modules.rst:352
 msgid "It's simple to use and it's used like this:"
-msgstr "它使用起来很简单，就像这样："
+msgstr "它使用起来很简单，就像这样:"
 
 #: ../../docs/development/cpp/creating_android_modules.rst:358
 msgid ""

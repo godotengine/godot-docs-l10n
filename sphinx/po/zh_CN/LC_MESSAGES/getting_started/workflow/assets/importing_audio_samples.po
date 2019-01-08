@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Importing audio samples"
 msgstr "导入音频采样"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:7
-#, fuzzy
 msgid "Why import?"
 msgstr "为什么要导入？"
 
@@ -31,11 +30,10 @@ msgid ""
 "Raw audio data in general is large and undesired. Godot provides two main "
 "options to import your audio data: WAV and OGG Vorbis."
 msgstr ""
-"原始音频数据通常很大且不受欢迎。 Godot 提供了两个主要选项来导入您的音频数据："
+"原始音频数据通常很大且不受欢迎。 Godot 提供了两个主要选项来导入您的音频数据:"
 "WAV 和 OGG Vorbis。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:12
-#, fuzzy
 msgid ""
 "Each has different advantages. * Wav files use raw data or light "
 "compression, make few demands on the CPU to play back (hundreds of "
@@ -43,9 +41,9 @@ msgid ""
 "* Ogg Vorbis files use a stronger compression that results in much smaller "
 "file size, but require significantly more processing power to play back."
 msgstr ""
-"每个都有不同的优点。 * Wav 文件使用原始数据或轻量级压缩，需要少量 CPU 播放"
-"（数百个同时以这种格式播放的声音很好），但占用大量空间。 * Ogg Vorbis 文件使"
-"用更强大的压缩功能，文件尺寸更小，但使用的处理器数量更多。"
+"每个都有不同的优点。 * Wav 文件使用原始数据或轻量级压缩，需要少量 CPU 播放(数"
+"百个同时以这种格式播放的声音很好)，但占用大量空间。 * Ogg Vorbis 文件使用更强"
+"大的压缩功能，文件大小更小，但使用的处理器数量更多。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:19
 msgid "Here is a comparative chart."
@@ -109,11 +107,11 @@ msgstr ""
 "乐，声音和长音效。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:38
-msgid "Best Practices"
+#, fuzzy
+msgid "Best practices"
 msgstr "最佳做法"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:40
-#, fuzzy
 msgid ""
 "Godot 3+ has an amazing bus system with built-in effects. This saves SFX "
 "artists the need to add reverb to the sound effects, reducing their size "
@@ -131,7 +129,6 @@ msgid "Trimming"
 msgstr "修剪"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:52
-#, fuzzy
 msgid ""
 "One issue that happens often is that the waveform is exported with long "
 "silences at the beginning and at the end. These are inserted by DAWs when "
@@ -152,12 +149,12 @@ msgstr "循环"
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:63
 #, fuzzy
 msgid ""
-"Godot supports looping in the samples (Tools such as Sound Forge or Audition "
+"Godot supports looping in the samples (tools such as Sound Forge or Audition "
 "can add loop points to wav files). This is useful for sound effects, such as "
 "engines, machine guns etc. Ping-pong looping is also supported."
 msgstr ""
-"Godot 支持在采样中循环（Sound Forge或Audition等工具可以将循环点添加到 wav 文"
-"件中）。 这对发动机，机枪等音效非常有用。乒乓循环也受支持。"
+"Godot 支持在采样中循环(Sound Forge或Audition等工具可以将循环点添加到 wav 文件"
+"中)。 这对发动机，机枪等音效非常有用。乒乓循环也受支持。"
 
 #: ../../docs/getting_started/workflow/assets/importing_audio_samples.rst:68
 msgid ""

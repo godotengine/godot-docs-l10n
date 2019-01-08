@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,7 +177,7 @@ msgstr "Comutador de cena personalizado"
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
-"<class_SceneTree_change_scene>` method (see :ref:`doc_scene_tree` for "
+"<class_SceneTree_method_change_scene>` method (see :ref:`doc_scene_tree` for "
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
@@ -270,9 +270,9 @@ msgid ""
 "As mentioned in the comments above, we need to avoid the situation of "
 "deleting the current scene while it is still being used (i.e. its code is "
 "still running), so using :ref:`Object.call_deferred() "
-"<class_Object_call_deferred>` is required at this point. The result is that "
-"the second function will run at a later time when any code from the current "
-"scene has completed."
+"<class_Object_method_call_deferred>` is required at this point. The result "
+"is that the second function will run at a later time when any code from the "
+"current scene has completed."
 msgstr ""
 "Como mencionado anteriormente, queremos evitar a situação em que a cena "
 "atual é deletada enquanto em uso (código de suas funções sendo executado), "

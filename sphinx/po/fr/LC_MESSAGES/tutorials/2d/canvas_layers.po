@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,8 +53,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Viewport has the property :ref:`Viewport.canvas_transform "
-"<class_Viewport_canvas_transform>`, which allows to transform all the "
-"CanvasItem hierarchy by a custom :ref:`Transform2D <class_Transform2D>` "
+"<class_Viewport_property_canvas_transform>`, which allows to transform all "
+"the CanvasItem hierarchy by a custom :ref:`Transform2D <class_Transform2D>` "
 "transform. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
@@ -174,12 +174,13 @@ msgid "Performance"
 msgstr "Performance"
 
 #: ../../docs/tutorials/2d/canvas_layers.rst:72
+#, fuzzy
 msgid ""
 "Even though there shouldn't be any performance limitation, it is not advised "
 "to use excessive amount of layers to arrange drawing order of nodes. The "
 "most optimal way will always be arranging them by tree order. 2d nodes also "
 "have a property for controlling their drawing order (see :ref:`Node2D."
-"z_index <class_Node2D_z_index>`)."
+"z_index <class_Node2D_property_z_index>`)."
 msgstr ""
 "Même s'il ne devrait y avoir aucune limitation de performances, il est "
 "déconseillé d'utiliser un nombre excessif de couches pour organiser l'ordre "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -349,10 +349,11 @@ msgid "This will always work in global coordinates."
 msgstr "이 기능은 항상 전반적인 좌표에 적용됩니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:265
+#, fuzzy
 msgid ""
 "If instead, translation is desired in *local* coordinates of the matrix "
 "(towards where the *basis* is oriented), there is the :ref:`Transform2D."
-"translated() <class_Transform2D_translated>` method:"
+"translated() <class_Transform2D_method_translated>` method:"
 msgstr ""
 "대신 행렬의 *로컬* 좌표에 변환을 원하는 경우(*기저가 있는 위치), :ref:"
 "\"Transform2D.translated() <class_Transform2D_translated>`방법이 있다:"
@@ -380,11 +381,12 @@ msgid ""
 msgstr "로컬 좌표와 전역 좌표 사이를 변환하는 도우미 방법이 있습니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:305
+#, fuzzy
 msgid ""
-"There are :ref:`Node2D.to_local() <class_Node2D_to_local>` and :ref:`Node2D."
-"to_global() <class_Node2D_to_global>` for 2D as well as :ref:`Spatial."
-"to_local() <class_Spatial_to_local>` and :ref:`Spatial.to_global() "
-"<class_Spatial_to_global>` for 3D."
+"There are :ref:`Node2D.to_local() <class_Node2D_method_to_local>` and :ref:"
+"`Node2D.to_global() <class_Node2D_method_to_global>` for 2D as well as :ref:"
+"`Spatial.to_local() <class_Spatial_method_to_local>` and :ref:`Spatial."
+"to_global() <class_Spatial_method_to_global>` for 3D."
 msgstr ""
 "2D를 위한 것에는 :ref:`Node2D.to_local() <class_Node2D_to_local>` and :ref:"
 "`Node2D.to_global() <class_Node2D_to_global>` , 뿐만아니라 3D를 위한 :ref:"
@@ -601,8 +603,9 @@ msgstr ""
 "벡터 3개와 원점용 벡터 1개를 추가로 취급합니다."
 
 #: ../../docs/tutorials/math/matrices_and_transforms.rst:616
+#, fuzzy
 msgid ""
-"Godot has a special type for a 3x3 matrix, named :ref:`Basis <class_basis>`. "
+"Godot has a special type for a 3x3 matrix, named :ref:`Basis <class_Basis>`. "
 "It can be used to represent a 3D rotation and scale. Sub vectors can be "
 "accessed as:"
 msgstr ""

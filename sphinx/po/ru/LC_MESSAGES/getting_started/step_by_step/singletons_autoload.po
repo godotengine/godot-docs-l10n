@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr ""
+msgstr "Синглтоны (Автозагрузка)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -31,12 +31,17 @@ msgid ""
 "no method for storing information (e.g. a player's score or inventory) that "
 "is needed by more than one scene."
 msgstr ""
+"Система сцен Godot, будучи мощной и гибкой, имеет недостаток: отсутствует "
+"способ хранения информации (например, счет игрока или инвентарь), которая "
+"необходима для нескольких сцен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:13
 msgid ""
 "It's possible to address this with some workarounds, but they come with "
 "their own limitations:"
 msgstr ""
+"Можно решить эту проблему с помощью некоторых обходных путей, но у них есть "
+"свои ограничения:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:16
 msgid ""
@@ -44,6 +49,9 @@ msgid ""
 "children. However, this means you can no longer run those scenes "
 "individually and expect them to work correctly."
 msgstr ""
+"Вы можете использовать \"мастер-сцену\", которая загружает и выгружает "
+"другие сцены в качестве своих детей. Однако это означает, что вы больше не "
+"можете запускать эти сцены по отдельности и ожидать от них корректной работы."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:19
 msgid ""
@@ -51,6 +59,9 @@ msgid ""
 "that require it, but frequently saving and loading data is cumbersome and "
 "may be slow."
 msgstr ""
+"Информация может храниться на диске в ``user://``, а затем загружаться "
+"сценами, которые требуют этого, но увы сохранение и загрузка данных часто "
+"является громоздкой и может быть медленной."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
 msgid ""
@@ -60,32 +71,41 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
+"`Шаблон Одиночка (Синглтон) <https://ru.wikipedia.org/wiki/"
+"Одиночка_(шаблон_проектирования)>`_ - это инструмент для решения проблемы, "
+"когда необходимо хранить постоянную информацию между сценами. В нашем случае "
+"можно повторно использовать одну и ту же сцену или класс для нескольких "
+"синглотнов, при условии, что они имеют разные названия."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
-msgstr ""
+msgstr "Используя эту концепцию, вы можете создавать такие объекты:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
 msgid "Are always loaded, no matter which scene is currently running"
 msgstr ""
+"Всегда загружены, независимо от того, какая сцена в данный момент запущена"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
-msgstr ""
+msgstr "Может хранить глобальные переменные, такие как информация об игроке"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
 msgid "Can handle switching scenes and between-scene transitions"
 msgstr ""
+"Возможность переключения между сценами и переходами от одной сцены к другой"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
+"Действуйте как **одиночка**, так как GDScript не поддерживает глобальные "
+"переменные по дизайну"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 msgid "Autoloading nodes and scripts caters to this need."
-msgstr ""
+msgstr "Автозагрузка удовлетворяет наши потребности."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -98,12 +118,18 @@ msgid ""
 "and the script will be attached to it. This node will be added to the root "
 "viewport before any other scenes are loaded."
 msgstr ""
+"Вы можете использовать Автозагрузку для загрузки сцены или скрипта, "
+"унаследованного от :ref:`Node <class_Node>`. Примечание: при автозагрузке "
+"скрипта будет создан узел и к нему будет прикреплен скрипт. Этот узел будет "
+"добавлен в корневое окно(Viewport) перед загрузкой любых других сцен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:48
 msgid ""
 "To autoload a scene or script, select ``Project -> Project Settings`` from "
 "the menu and switch to the \"AutoLoad\" tab."
 msgstr ""
+"Чтобы автоматически загрузить сцену или скрипт, выберите в меню ``Проект -> "
+"Настройки проекта`` и перейдите на вкладку \"Автозагрузка\"."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
 msgid ""
@@ -112,18 +138,26 @@ msgid ""
 "order of the entries as they are added to the global scene tree can be "
 "manipulated using the up/down arrow keys."
 msgstr ""
+"Здесь вы можете добавить любое количество сцен или скриптов. Каждая запись в "
+"списке требует имя, которое присваивается свойству узла ``name``. Порядок "
+"расположения записей в дереве глобальной сцены может быть изменен с помощью "
+"клавиш со стрелками вверх/вниз."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
+"Это означает, что любой узел может получить доступ к синглтону с именем "
+"\"PlayerVariables\":"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
+"Если колонка \"Включить\" отмечена галочкой (по умолчанию true), то Синглтон "
+"можно просто получить напрямую:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -131,25 +165,37 @@ msgid ""
 "any other node in the scene tree. In fact, if you look at the running scene "
 "tree, you'll see the autoloaded nodes appear:"
 msgstr ""
+"Обратите внимание, что доступ к объектам автозагрузки (скриптам и/или "
+"сценам) осуществляется так же, как и к любому другому узлу дерева сцен. На "
+"самом деле, если вы посмотрите на дерево выполняющихся сцен, вы увидите, что "
+"появились узлы автозагрузки:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:93
 msgid "Custom scene switcher"
 msgstr "Пользовательский переключатель сцены"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
+#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
-"<class_SceneTree_change_scene>` method (see :ref:`doc_scene_tree` for "
+"<class_SceneTree_method_change_scene>` method (see :ref:`doc_scene_tree` for "
 "details). However, if you need more complex behavior when changing scenes, "
 "this method provides more functionality."
 msgstr ""
+"В данном руководстве будет продемонстрировано создание переключателя сцен с "
+"помощью автозагрузки. В основном для переключения сцены можно использовать "
+"метод :ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` "
+"(подробнее см. :ref:`doc_scene_tree`). Однако, если вам нужно более сложное "
+"поведение при смене сцен, этот метод обеспечивает большую функциональность."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
+"Для начала скачайте шаблон здесь: :download:`autoload.zip <files/autoload."
+"zip>` и откройте его в Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -158,6 +204,10 @@ msgid ""
 "``pressed()`` signal connected. When you run the project, it starts in "
 "``Scene1.tscn``. However, pressing the button does nothing."
 msgstr ""
+"Проект содержит две сцены: ``Scene1.tscn`` and ``Scene2.tscn``. Каждая сцена "
+"содержит Label, отображающий название сцены и кнопку с подключенным сигналом "
+"``pressed()``. Когда вы запускаете проект, он начинается в ``Scene1.tscn``. "
+"Однако, нажатие кнопки ничего не даст."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
 msgid "Global.gd"
@@ -168,6 +218,8 @@ msgid ""
 "Switch to the \"Script\" tab and create a new script called Global.gd. Make "
 "sure it inherits from ``Node``:"
 msgstr ""
+"Перейдите на вкладку \"Script\" и создайте новый скрипт под названием Global."
+"gd. Убедитесь, что он унаследован от ``Node``:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:117
 msgid ""
@@ -176,12 +228,18 @@ msgid ""
 "the script by clicking the ``..`` button or typing its path: ``res://Global."
 "gd``. Press \"Add\" to add it to the autoload list:"
 msgstr ""
+"Следующим шагом будет добавление этого скрипта в список автозагрузки. "
+"Откройте ``Проект > Настройки проекта``, перейдите на вкладку \"Автозагрузка"
+"\" и выберите скрипт, нажав на кнопку ``..`` или напечатав его путь: ``res://"
+"Global.gd``. Нажмите \"Добавить\", чтобы добавить его в список автозагрузки:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
 msgstr ""
+"Теперь всякий раз, когда мы запускаем какую-либо сцену в проекте, этот "
+"скрипт всегда будет загружен."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:126
 msgid ""
@@ -190,22 +248,35 @@ msgid ""
 "``global.gd`` are children of root, but autoloaded nodes are always first. "
 "This means that the last child of root is always the loaded scene."
 msgstr ""
+"Возвращаясь к скрипту, он должен получить текущую сцену в функции "
+"`_ready()`. Как текущая сцена (сцена с кнопкой), так и сцена ``global.gd`` "
+"являются детьми корня, но узлы автозагрузки всегда загружаются первыми. Это "
+"означает, что последним дочерним ребенком корня всегда будет загруженная "
+"сцена."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
 msgstr ""
+"Теперь нам нужна функция для смены сцены. Эта функция должна освободить "
+"(очистить) текущую сцену и заменить ее на нужную нам."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
+#, fuzzy
 msgid ""
 "As mentioned in the comments above, we need to avoid the situation of "
 "deleting the current scene while it is still being used (i.e. its code is "
 "still running), so using :ref:`Object.call_deferred() "
-"<class_Object_call_deferred>` is required at this point. The result is that "
-"the second function will run at a later time when any code from the current "
-"scene has completed."
+"<class_Object_method_call_deferred>` is required at this point. The result "
+"is that the second function will run at a later time when any code from the "
+"current scene has completed."
 msgstr ""
+"Как упоминалось в комментариях выше, нам нужно избегать ситуации удаления "
+"текущей сцены во время ее использования (т.е. ее код все еще работает), "
+"поэтому на данном этапе необходимо использовать :ref:`Object.call_deferred() "
+"<class_Object_Call_deferred>`. В результате вторая функция будет запущена "
+"позже, когда код с текущей сцены завершится."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
 msgid ""
@@ -232,3 +303,7 @@ msgid ""
 "appear. To learn how to handle this, see the next tutorial: :ref:"
 "`doc_background_loading`"
 msgstr ""
+"Примечание: Если сцены маленькие, переход происходит мгновенно. Однако, если "
+"ваши сцены более сложные, на их появление может уйти заметное количество "
+"времени. Чтобы узнать, как с этим справиться, см. следующее руководство: :"
+"ref:`doc_background_load`"

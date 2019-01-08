@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,13 @@ msgid "Changing application icon for Windows"
 msgstr "更改Windows的应用程序图标"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:6
-#, fuzzy
 msgid ""
 "By default, the exported project's icon will be the Godot icon. You will "
 "most likely want to change that for your project. There are two types of "
 "icons that can be changed on Windows: the file icon and the taskbar icon."
 msgstr ""
 "默认情况下，导出项目的图标将是Godot图标。 您很可能想要更改它。 在Windows上可"
-"以更改两种类型的图标：文件图标和任务栏图标。"
+"以更改两种类型的图标:文件图标和任务栏图标。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:11
 msgid "Changing the taskbar icon"
@@ -69,7 +68,7 @@ msgid ""
 "tool called **rcedit**. You can download it `here <https://github.com/"
 "electron/rcedit/releases>`_."
 msgstr ""
-"在导出选项中选择它之前，您需要安装一个名为 **rcedit** 的工具。 你可以在 `这"
+"在导出选项中选择它之前，您需要安装一个名为 **rcedit** 的工具。 您可以在 `这"
 "里 <https://github.com/electron/rcedit/releases>`_ 下载它。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:38
@@ -117,7 +116,7 @@ msgstr "测试结果"
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:64
 msgid ""
 "You can now export the project. If it worked correctly, you should see this:"
-msgstr "您现在可以导出项目了。 如果它正常工作，你应该看到："
+msgstr "您现在可以导出项目了。 如果它正常工作，您应该看到:"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:69
 msgid "ICO file requirements"
@@ -130,8 +129,8 @@ msgid ""
 "ensure the icon (and your executable) works on Windows."
 msgstr ""
 "无论您使用哪个程序创建 `ICO文件 <https://en.wikipedia.org/wiki/"
-"ICO_(file_format)>`_ ，都有一些要求可以确保图标（和您的可执行文件）在Windows"
-"上运行。"
+"ICO_(file_format)>`_ ，都有一些要求可以确保图标(和您的可执行文件)在Windows上"
+"运行。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:75
 msgid ""
@@ -139,15 +138,15 @@ msgid ""
 "threads: `one <https://stackoverflow.com/q/3236115/>`_, `two <https://"
 "stackoverflow.com/q/40749785/>`_."
 msgstr ""
-"这有点棘手，可以在下面的Stack Overflow线程中看到： `one <https://"
-"stackoverflow.com/q/3236115/>`_, `two <https://stackoverflow.com/q/40749785/"
+"这有点棘手，可以在下面的Stack Overflow线程中看到: `one <https://"
+"stackoverflow.com/q/3236115/>`_ , `two <https://stackoverflow.com/q/40749785/"
 ">`_ 。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:79
 msgid ""
 "Your ICO file should at least contain icons in the following resolutions: "
 "16×16, 48×48 and 256×256."
-msgstr "您的ICO文件至少应包含以下分辨率的图标：16×16,88×48和256×256。"
+msgstr "您的ICO文件至少应包含以下分辨率的图标:16×16,88×48和256×256。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:82
 msgid ""
@@ -155,9 +154,9 @@ msgid ""
 "supported icon sizes on Windows 10: 16, 20, 24, 28, 30, 31, 32, 40, 42, 47, "
 "48, 56, 60, 63, 84 and one larger than 255 pixels (such as 256, 512 or 1024)."
 msgstr ""
-"如果您想完全支持高DPI屏幕，这是Windows 10上支持的图标大小的完整列表：16, 20, "
-"24, 28, 30, 31, 32, 40, 42, 47, 48, 56, 60, 63, 84 和一个大于255像素（例如"
-"256,512或1024）。"
+"如果您想完全支持高DPI屏幕，这是Windows 10上支持的图标大小的完整列表:16, 20, "
+"24, 28, 30, 31, 32, 40, 42, 47, 48, 56, 60, 63, 84 和一个大于255像素(例如"
+"256,512或1024)。"
 
 #: ../../docs/getting_started/workflow/export/changing_application_icon_for_windows.rst:87
 msgid ""
@@ -165,4 +164,4 @@ msgid ""
 "using this `ImageMagick <https://www.imagemagick.org/>`_ command:"
 msgstr ""
 "也可以使用这个 `ImageMagick <https://www.imagemagick.org/>`_ 命令将PNG图像转"
-"换为hiDPI友好的ICO文件："
+"换为hiDPI友好的ICO文件:"

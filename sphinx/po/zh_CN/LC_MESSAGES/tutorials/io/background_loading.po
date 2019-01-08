@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,7 +30,7 @@ msgid ""
 "it's not good. This document discusses the ``ResourceInteractiveLoader`` "
 "class for smoother load screens."
 msgstr ""
-"当你切换游戏的主场景时(例如切换到一个新关卡)，你可能想创建一个可以显示进度的"
+"当您切换游戏的主场景时(例如切换到一个新关卡)，您可能想创建一个可以显示进度的"
 "加载界面。常用的加载方法( ``ResourceLoader::load`` 或GDScript的 ``load``)会在"
 "加载资源时阻塞线程，因此不被采用。本文将讨论用于平滑加载的 "
 "``ResourceInteractiveLoader`` 类。"
@@ -96,11 +96,11 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:54
 msgid "Load progress (optional)"
-msgstr "加载进度（可选）"
+msgstr "加载进度(可选)"
 
 #: ../../docs/tutorials/io/background_loading.rst:56
 msgid "To query the progress of the load, use the following methods:"
-msgstr "要查询加载进度，请使用以下方法："
+msgstr "要查询加载进度，请使用以下方法:"
 
 #: ../../docs/tutorials/io/background_loading.rst:63
 msgid ""
@@ -112,7 +112,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:67
 msgid "Forcing completion (optional)"
-msgstr "强制完成（可选）"
+msgstr "强制完成(可选)"
 
 #: ../../docs/tutorials/io/background_loading.rst:73
 msgid ""
@@ -131,7 +131,7 @@ msgstr "如果一切顺利，请使用此方法检索已加载的资源。"
 
 #: ../../docs/tutorials/io/background_loading.rst:87
 msgid "Example"
-msgstr "例子"
+msgstr "示例"
 
 #: ../../docs/tutorials/io/background_loading.rst:89
 msgid ""
@@ -144,7 +144,7 @@ msgstr ""
 msgid ""
 "First we setup some variables and initialize the ``current_scene`` with the "
 "main scene of the game:"
-msgstr "首先，我们设置一些变量并用游戏的主场景初始化 ``current_scene`` ："
+msgstr "首先，我们设置一些变量并用游戏的主场景初始化 ``current_scene`` :"
 
 #: ../../docs/tutorials/io/background_loading.rst:106
 msgid ""
@@ -168,8 +168,8 @@ msgid ""
 msgstr ""
 "``_process`` 是加载器被轮询的地方。 调用 ``poll`` ，然后我们处理该调用的返回"
 "值。 ``OK`` 表示保持轮询， ``ERR_FILE_EOF`` 表示加载完成，其他任何表示存在错"
-"误。 另请注意，我们跳过一帧（通过 ``wait_frames`` ，在 ``goto_scene`` 函数上"
-"设置）以允许加载屏幕显示。"
+"误。 另请注意，我们跳过一帧(通过 ``wait_frames`` ，在 ``goto_scene`` 函数上设"
+"置)以允许加载屏幕显示。"
 
 #: ../../docs/tutorials/io/background_loading.rst:134
 msgid ""
@@ -192,9 +192,9 @@ msgid ""
 "to be called on the resource obtained from the loader."
 msgstr ""
 "一些额外的辅助函数。 ``update_progress`` 更新进度条，或者也可以更新暂停的动画"
-"（动画从头到尾表示整个加载过程）。  ``set_new_scene`` 将新加载的场景放在树"
-"上。 因为它是一个被加载的场景，所以需要在从加载器获得的资源上调用 "
-"``instance（）`` 。"
+"(动画从头到尾表示整个加载过程)。 ``set_new_scene`` 将新加载的场景放在树上。 "
+"因为它是一个被加载的场景，所以需要在从加载器获得的资源上调用 "
+"``instance()`` 。"
 
 #: ../../docs/tutorials/io/background_loading.rst:195
 msgid "Using multiple threads"
@@ -205,20 +205,21 @@ msgid ""
 "ResourceInteractiveLoader can be used from multiple threads. A couple of "
 "things to keep in mind if you attempt it:"
 msgstr ""
-"多个线程可以用在ResourceInteractiveLoader中。 如果您尝试一下，请记住以下几"
-"点："
+"多个线程可以用在ResourceInteractiveLoader中。 如果您尝试一下，请记住以下几点:"
 
 #: ../../docs/tutorials/io/background_loading.rst:201
-msgid "Use a Semaphore"
+#, fuzzy
+msgid "Use a semaphore"
 msgstr "使用信号量"
 
 #: ../../docs/tutorials/io/background_loading.rst:203
+#, fuzzy
 msgid ""
 "While your thread waits for the main thread to request a new resource, use a "
-"Semaphore to sleep (instead of a busy loop or anything similar)."
+"``Semaphore`` to sleep (instead of a busy loop or anything similar)."
 msgstr ""
-"当您的线程等待主线程请求新资源时，使用信号量来休眠（而不是繁忙的循环或类似的"
-"东西）。"
+"当您的线程等待主线程请求新资源时，使用信号量来休眠(而不是繁忙的循环或类似的东"
+"西)。"
 
 #: ../../docs/tutorials/io/background_loading.rst:207
 msgid "Not blocking main thread during the polling"
@@ -233,10 +234,10 @@ msgid ""
 "them. This might cause a deadlock if the main thread is waiting for your "
 "mutex while your thread is waiting to load a resource."
 msgstr ""
-"如果你有一个互斥锁允许从主线程到你的加载器类的调用，那么在你在加载器上调用"
-"``poll``时不要锁定它。 当资源加载完毕时，可能需要来自低级API（VisualServer"
-"等）的一些资源，这可能需要锁定主线程以获取它们。 如果主线程在您的线程正在等待"
-"加载资源时等待您的互斥锁，则可能会导致死锁。"
+"如果您有一个互斥锁允许从主线程到您的加载器类的调用，那么在您在加载器上调用 "
+"``poll`` 时不要锁定它。 当资源加载完毕时，可能需要来自低级API(VisualServer等)"
+"的一些资源，这可能需要锁定主线程以获取它们。 如果主线程在您的线程正在等待加载"
+"资源时等待您的互斥锁，则可能会导致死锁。"
 
 #: ../../docs/tutorials/io/background_loading.rst:218
 msgid "Example class"
@@ -247,8 +248,8 @@ msgid ""
 "You can find an example class for loading resources in threads here: :"
 "download:`resource_queue.gd <files/resource_queue.gd>`. Usage is as follows:"
 msgstr ""
-"你可以在这里找到一个用于在线程中加载资源的示例类:: download：`resource_queue."
-"gd <files / resource_queue.gd>`。 用法如下："
+"您可以在这里找到一个用于在线程中加载资源的示例类: :download:`resource_queue."
+"gd <files / resource_queue.gd>`。 用法如下:"
 
 #: ../../docs/tutorials/io/background_loading.rst:227
 msgid "Call after you instance the class to start the thread."
@@ -275,9 +276,9 @@ msgid ""
 "progress of the load. Use mostly for cosmetic purposes (updating progress "
 "bars, etc), use ``is_ready`` to find out if a resource is actually ready."
 msgstr ""
-"获取资源的进度。 错误时返回-1（例如，如果资源不在队列中），或者在加载进度的情"
-"况下返回介于0.0和1.0之间的数字。 主要用于美容目的（更新进度条等），使用"
-"``is_ready``来查明资源是否实际就绪。"
+"获取资源的进度。 错误时返回-1(例如，如果资源不在队列中)，或者在加载进度的情况"
+"下返回介于0.0和1.0之间的数字。 主要用于美容目的(更新进度条等)，使用 "
+"``is_ready`` 来查明资源是否实际就绪。"
 
 #: ../../docs/tutorials/io/background_loading.rst:262
 msgid ""
@@ -286,18 +287,18 @@ msgid ""
 "finish the load. If the resource is not on the queue, it will call "
 "``ResourceLoader::load`` to load it normally and return it."
 msgstr ""
-"返回完全加载的资源，或者出错时返回null。 如果资源没有完成加载（``is_ready``返"
-"回false），它将阻塞你的线程并完成加载。 如果资源不在队列中，它将调用"
+"返回完全加载的资源，或者出错时返回null。 如果资源没有完成加载(``is_ready``返"
+"回false)，它将阻塞您的线程并完成加载。 如果资源不在队列中，它将调用"
 "``ResourceLoader :: load``来正常加载它并返回它。"
 
 #: ../../docs/tutorials/io/background_loading.rst:268
 msgid "Example:"
-msgstr "例："
+msgstr "例:"
 
 #: ../../docs/tutorials/io/background_loading.rst:298
 msgid ""
 "**Note**: this code in its current form is not tested in real world "
 "scenarios. Ask punto on IRC (#godotengine on irc.freenode.net) for help."
 msgstr ""
-"**注意**：当前形式的此代码未在实际场景中进行测试。 在IRC上询问punto（irc."
-"freenode.net上的#godotengine）寻求帮助。"
+"**注意**:当前形式的此代码未在实际场景中进行测试。 在IRC上询问punto(irc."
+"freenode.net上的#godotengine)寻求帮助。"

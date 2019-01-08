@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,8 +41,8 @@ msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to this guide :ref:`doc_custom_modules_in_c++`."
 msgstr ""
-"本指南假设读者知道如何创建C ++模块和Godot数据类型。 如果没有，请参考本指南："
-"ref：`doc_custom_modules_in_c ++`。"
+"本指南假设读者知道如何创建C++模块和Godot数据类型。 如果没有，请参考本指南 :"
+"ref:`doc_custom_modules_in_c ++`。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:18
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:39
@@ -111,8 +111,7 @@ msgstr "创建一个 ResourceFormatLoader"
 msgid ""
 "Each file format consist of a data container and a ``ResourceFormatLoader``."
 msgstr ""
-"每一种文件格式对应着一种数据的容器（Resource）和一个 "
-"``ResourceFormatLoader``。"
+"每一种文件格式对应着一种数据的容器(Resource)和一个 ``ResourceFormatLoader``。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:49
 msgid ""
@@ -143,11 +142,11 @@ msgid ""
 "additional binary formats such as machine learning models."
 msgstr ""
 "在 Godot 的 :ref:`doc_core_types` 或现有的资源类型中可能没有适当的替代品。 这"
-"时你需要一种新的注册数据类型来支持更多的二进制格式，例如机器学习模型。"
+"时您需要一种新的注册数据类型来支持更多的二进制格式，例如机器学习模型。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:116
 msgid "Here is an example of how to create a custom datatype"
-msgstr "这里有一个创建自定义数据类型的例子"
+msgstr "这里有一个创建自定义数据类型的示例"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:174
 msgid "Considerations"
@@ -157,13 +156,13 @@ msgstr "注意事项"
 msgid ""
 "Some libraries may not define certain common routines such as IO handling. "
 "Therefore, Godot call translations are required."
-msgstr "某些库可能无法定义某些常见例程，例如IO处理。 因此，需要戈多呼叫翻译。"
+msgstr "某些库可能无法定义某些常见例程，例如IO处理。 因此，需要Godot调用翻译。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:179
 msgid ""
 "For example, here is the code for translating ``FileAccess`` calls into "
 "``std::istream``."
-msgstr "这里有一段将 ``FileAccess`` 调用翻译成 ``std::istream`` 的例子。"
+msgstr "这里有一段将 ``FileAccess`` 调用翻译成 ``std::istream`` 的示例。"
 
 #: ../../docs/development/cpp/custom_resource_format_loaders.rst:215
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`__"

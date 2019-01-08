@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design interfaces with the Control nodes"
 msgstr "Conception d'interfaces avec les nœuds Control"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:6
-#, fuzzy
 msgid ""
 "Computer displays, mobile phones, and TV screen come in all shapes and "
 "sizes. To ship a game, you'll need to support different screen ratios and "
@@ -86,7 +85,6 @@ msgstr ""
 "Godot <doc_ui_game_user_interface_user_interface>`."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:30
-#, fuzzy
 msgid ""
 "Only use Control nodes when you design your interfaces. They have unique "
 "properties that allow them to work with one another. Other nodes, like "
@@ -95,7 +93,7 @@ msgid ""
 "nodes are CanvasItems like Node2D, so you can apply shaders to them."
 msgstr ""
 "Utilisez uniquement les nœuds Control lorsque vous concevez vos interfaces. "
-"Ils ont des propriétés uniques qui leur permettent d'intéragir les uns avec "
+"Ils ont des propriétés uniques qui leur permettent d’interagir les uns avec "
 "les autres. D'autres nœuds comme Node2D, Sprite, etc. ne fonctionneront pas. "
 "Vous pouvez toujours utiliser certains nœuds qui fonctionnent avec d'autres "
 "comme AnimationPlayer, Tween ou StreamPlayer. Les nœuds Control sont des "
@@ -114,7 +112,6 @@ msgid "Bounding rectangle"
 msgstr "Rectangle de délimitation"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-#, fuzzy
 msgid "Focus and focus neighbor"
 msgstr "Focus et focus voisin"
 
@@ -197,7 +194,6 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
-#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
@@ -259,12 +255,11 @@ msgstr ""
 "plus long est coupé aux limites du noeud"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
 msgstr ""
-"Comme pour les noeuds Sprite, vous pouvez moduler la couleur du noeud "
+"Comme pour les nœuds Sprite, vous pouvez moduler la couleur du nœud "
 "TextureRect. Cliquez sur la propriété ``Modulate`` et utilisez le sélecteur "
 "de couleur."
 
@@ -368,7 +363,6 @@ msgid "Label"
 msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
-#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -392,18 +386,17 @@ msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
-#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
 "corners. It is useful to build panels, dialog boxes and scalable backgrounds "
 "for your UI."
 msgstr ""
-"**NinePatchRect** prend une texture divisée en 3 lignes et 3 colonnes. Le "
-"centre et les côtés du carreau se dupliquent lorsque vous mettez à l'échelle "
-"la texture, mais jamais les coins. Il est utile pour créer des panneaux, des "
-"boîtes de dialogue et des arrière-plans flexible pour votre interface "
-"utilisateur."
+"**NinePatchRect** prend une texture divisée en 3 lignes et 3 colonnes. La "
+"tuile du centre et celles des côtés se dupliquent lorsque vous mettez à "
+"l'échelle la texture, celles des coins ne sont jamais dupliquées. Il est "
+"utile pour créer des panneaux, des boîtes de dialogue et des arrière-plans "
+"flexible pour votre interface utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:164
 msgid "NinePatchRect scaled with the min\\_size property"
@@ -440,7 +433,6 @@ msgstr ""
 "placer et redimensionner un élément d'interface utilisateur dans son parent."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
-#, fuzzy
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
@@ -453,9 +445,9 @@ msgstr ""
 "Les deux approches ne sont pas toujours compatibles. Puisqu'un conteneur "
 "contrôle ses enfants, vous ne pouvez pas utiliser le menu de mise en page "
 "sur eux. Chaque conteneur ayant un effet spécifique, vous aurez peut-être "
-"d'en emboîter plusieurs pour obtenir une interface fonctionnelle. Avec "
-"l'approche de mise en page, vous travaillez sur l'enfant à partir du bas "
-"vers le haut. Étant donné que vous n'insérez pas de conteneurs "
+"besoin d'en emboîter plusieurs pour obtenir une interface fonctionnelle. "
+"Avec l'approche de mise en page, vous travaillez sur l'enfant à partir du "
+"bas vers le haut. Étant donné que vous n'insérez pas de conteneurs "
 "supplémentaires dans la scène, vous obtiendrez des hiérarchies plus nettes, "
 "mais il sera plus difficile de disposer les éléments en rangée, en colonne, "
 "grille, etc."
@@ -657,19 +649,17 @@ msgid "Arrange control nodes automatically with containers"
 msgstr "Arrangez automatiquement les nœuds de contrôle avec les conteneurs"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
-#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor, so you can see the effect instantly."
 msgstr ""
-"Les conteneurs rangent automatiquement tous les nœuds Control enfants, y "
+"Les conteneurs rangent automatiquement tous les nœuds de contrôle enfants, y "
 "compris les autres conteneurs en rangées, colonnes et plus encore. Utilisez-"
-"les pour ajouter du rembourrage autour de votre interface ou des nœuds "
-"centraux dans leurs rectangles de délimitation. Tous les conteneurs intégrés "
-"sont mis à jour dans l'éditeur pour que vous puissiez voir l'effet "
-"instantanément."
+"les pour ajouter de l'espace autour de votre interface ou des nœuds centraux "
+"dans leurs rectangles de délimitation. Tous les conteneurs intégrés sont mis "
+"à jour dans l'éditeur pour que vous puissiez voir l'effet instantanément."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
 msgid ""
@@ -830,13 +820,12 @@ msgstr ""
 "automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
-#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
-"Le système d'interface utilisatuer de Godot est complexe et a beaucoup plus "
+"Le système d'interface utilisateur de Godot est complexe et a beaucoup plus "
 "à offrir. Pour apprendre à concevoir une interface plus avancée, rendez-vous "
 "dans la section :ref:`GUI section <toc-learn-features-gui>` de la "
 "documentation."

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,14 +173,12 @@ msgid "For now, let's start with a few containers."
 msgstr "Pour l'instant, commençons avec quelques conteneurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
 "Créez une nouvelle scène et ajoutez un ``MarginContainer``. Sélectionnez le "
-"nœud et nommez-le ``GUI``. Sauvegardez ensuite la scène sous le nom ``GUI."
-"tscn``. Il contiendra toute l'interface graphique."
+"nœud et nommez-le ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
 msgid ""
@@ -228,11 +226,12 @@ msgid ""
 "the base for our GUI scene."
 msgstr ""
 "Nous voulons empiler les barres verticalement à l'intérieur du "
-"``HBoxContainer``. Pour ce faire, ajoutons un ``VBoxContainer`` et donnez-"
-"lui le nom de \"Bars\". Sélectionnez à nouveau le parent ``HBoxContainer`` "
-"et cette fois, ajoutez un autre ``HBoxContainer``. Celui-ci contiendra les "
-"compteurs, alors appelez-le \"Counters\". Avec ces quatre conteneurs, nous "
-"avons la base de notre scène GUI."
+"``HBoxContainer``. Pour ce faire, ajoutez un ``VBoxContainer``comme enfant "
+"du ``HBoxContainer`` et donnez-lui le nom de \"Bars\". Sélectionnez à "
+"nouveau le parent ``HBoxContainer`` et cette fois, ajoutez comme enfant un "
+"autre ``HBoxContainer``. Celui-ci contiendra les compteurs, alors appelez-le "
+"\"Counters\". Avec ces quatre conteneurs, nous avons la base de notre scène "
+"GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
@@ -585,7 +584,6 @@ msgstr ""
 "l'instant, nous allons corriger la taille bientôt."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
-#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -706,7 +704,6 @@ msgstr ""
 "la police. Notre compteur fonctionne maintenant comme prévu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so we need to set the ``Bars`` container take all the available horizontal "
@@ -715,9 +712,9 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
-"Pendant que nous y sommes, faisons en sorte que les ``Counters`` "
-"s'enclenchent sur le bord droit de la fenêtre du viewport. Pour ce faire, "
-"nous allons régler le conteneur ``Bars`` pour qu'il s'étende et prenne tout "
+"Pendant que nous y sommes, faisons en sorte que les ``Counters`` soient "
+"positionnés sur le bord droit de la fenêtre du viewport. Pour ce faire, nous "
+"allons régler le conteneur ``Bars`` pour qu'il s'étende et prenne tout "
 "l'espace horizontal. Sélectionnez le nœud ``Bars`` et faites défiler vers le "
 "bas jusqu'à la catégorie ``Size Flags``. Dans la catégorie ``Horizontal``, "
 "cochez la valeur ``Expand``. Le nœud ``Bars`` devrait se redimensionner et "
@@ -809,7 +806,8 @@ msgid "With no extra changes, our Bar is ready to use"
 msgstr "Sans aucun autre changement, votre barre est prête à être utilisé"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
-msgid "Use Scene Inheritance to create the remaining elements"
+#, fuzzy
+msgid "Use scene inheritance to create the remaining elements"
 msgstr "Utiliser l'héritage de scène pour créer les éléments restants"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
@@ -1092,7 +1090,6 @@ msgid "The Count looks better now it's a bit smaller"
 msgstr "Le noeud Count est plus sympa maintenant qu'il est un peu plus petit"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:513
-#, fuzzy
 msgid ""
 "The Count node's size affects the position of the TextureProgress. As we'll "
 "align our bars vertically in a moment, we're better off using the Counter's "
@@ -1101,36 +1098,33 @@ msgid ""
 "align perfectly."
 msgstr ""
 "La taille du nœud ``Count`` affecte la position de ``TextureProgress``. "
-"Comme nous allons aligner nos barres verticalement, il vaut mieux utiliser "
-"la marge gauche du compteur pour redimensionner notre label EP. Ainsi, les "
-"nœuds du compteur de la barre d'énergie et de la barre de vie font une "
-"centaine de pixels de large donc les deux jauges s'alignent parfaitement."
+"Comme nous alignerons nos barres verticalement, il vaut mieux utiliser la "
+"marge gauche du compteur pour redimensionner notre label EP. De cette "
+"manière, les nœuds \"Count\" de \"EnergyBar's Count\" et \"LifeBar's Count\" "
+"ont une largeur de 100 pixels, de sorte que les deux jauges s'alignent "
+"parfaitement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:520
-#, fuzzy
 msgid "Prepare the bomb and rupee counters"
 msgstr "Préparer les compteurs de bombes et de rubis"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:522
-#, fuzzy
 msgid ""
 "Let us now take care of the counters. Go to ``Scene -> New Inherited Scene`` "
 "and select the ``Counter.tscn`` as a base. Rename the root node as "
 "``BombCounter`` too. Save the new scene as ``BombCounter.tscn``. That's all "
 "for this scene."
 msgstr ""
-"Occupons-nous maintenant des compteurs. Allez dans ``Scene -> New Inherited "
-"Scene`` et sélectionnez ``Counter.tscn`` comme base. Renommez le noeud "
+"Occupons-nous maintenant des compteurs. Allez dans ``Scène -> Nouvelle scène "
+"héritée`` et sélectionnez ``Counter.tscn`` comme base. Renommez le nœud "
 "racine en tant que ``BombCounter```. Sauvegardez la nouvelle scène sous le "
 "nom de ``BombCounter.tscn``. C'est tout pour cette scène."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:529
-#, fuzzy
 msgid "The bomb counter is the same as the original Counter scene"
 msgstr "Le compteur de bombes est le même que celui de la scène originale"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:531
-#, fuzzy
 msgid ""
 "Go to ``Scene -> New Inherited Scene`` again and select ``Counter.tscn`` "
 "once more. Rename the root node ``RupeeCounter`` and save the scene as "
@@ -1143,8 +1137,8 @@ msgid ""
 "keyboard to nudge its position. Save, and we're done with all the UI "
 "elements."
 msgstr ""
-"Allez à nouveau dans ``Scene -> New Inherited Scene`` et sélectionnez "
-"``Counter.tscn`` une fois de plus. Renommez le noeud racine ``RupeeCounter`` "
+"Allez à nouveau dans ``Scène -> Nouvelle scène héritée`` et sélectionnez "
+"``Counter.tscn`` une fois de plus. Renommez le nœud racine ``RupeeCounter`` "
 "et enregistrez la scène sous ``RupeeCounter.tscn``. Pour celui-ci, nous "
 "avons principalement besoin de remplacer l'icône de la bombe par l'icône du "
 "rubis. Dans l'onglet Système de fichiers, faites glisser le fichier "
@@ -1152,24 +1146,21 @@ msgstr ""
 "ci s'ancre déjà sur le bord droit du nœud \"Background\" afin que nous "
 "puissions changer sa position et qu'il se repositionne avec le conteneur "
 "\"RupeeCounter\". Déplacez un peu l'icône du rubis vers la droite et vers le "
-"bas. Utilisez les touches fléchées du clavier pour rectifier sa position. "
+"bas. Utilisez les touches flèches du clavier pour rectifier sa position. "
 "Sauvegardez, et nous en avons fini avec tous les éléments de l'interface "
 "utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The rupee counter should look about like this"
 msgstr "Le compteur de rubis devrait ressembler à ceci"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
-#, fuzzy
 msgid "Add the UI components to the final GUI"
 msgstr ""
 "Ajouter les composants de l'interface utilisateur à l'interface graphique "
-"finale."
+"finale"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:549
-#, fuzzy
 msgid ""
 "Time to add all the UI elements to the main GUI scene. Open the ``GUI.tscn`` "
 "scene again, and delete the ``Bar`` and ``Counter`` nodes. In the FileSystem "
@@ -1180,17 +1171,15 @@ msgstr ""
 "Il est temps d'ajouter tous les éléments de l'interface utilisateur à la "
 "scène principale de l'interface graphique. Ouvrez à nouveau la scène ``GUI."
 "tscn`` et supprimez les nœuds ``Bar`` et ``Counter``. Dans le dock "
-"FileSystem, trouvez le ``LifeBar.tscn`` et faites-le glisser et déposez-le "
-"sur le conteneur ``Bars`` dans l'arbre de scène. Faites de même pour "
+"FileSystem, trouvez ``LifeBar.tscn`` et faites-la glisser et déposez-la sur "
+"le conteneur ``Bars`` dans l'arbre de scène. Faites de même pour "
 "``EnergyBar``. Vous devriez les voir s'aligner verticalement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:557
-#, fuzzy
 msgid "The LifeBar and the EnergyBar align automatically"
-msgstr "La barre de vie et la barre d'énergie sont automatiquement aligné"
+msgstr "La barre de vie et la barre d'énergie sont automatiquement alignées"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:559
-#, fuzzy
 msgid ""
 "Now, drag and drop the ``BombCounter.tscn`` and ``RupeeCounter.tscn`` scenes "
 "onto the ``Counters`` node. They'll resize automatically."
@@ -1200,13 +1189,11 @@ msgstr ""
 "automatiquement."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:564
-#, fuzzy
 msgid "The nodes resize to take all the available vertical space"
 msgstr ""
 "Les nœuds se redimensionnent pour prendre tout l'espace vertical disponible"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:566
-#, fuzzy
 msgid ""
 "To let the ``RupeeCounter`` and ``BombCounter`` use the size we defined in "
 "``Counter.tscn``, we need to change the ``Size Flags`` on the ``Counters`` "
@@ -1216,10 +1203,10 @@ msgid ""
 "``HBoxContainer``."
 msgstr ""
 "Pour que ``RupeeCounter`` et ``BombCounter`` utilisent la taille que nous "
-"avons définie dans ``Counter.tscn``, nous devons changer ``Size Flags`` sur "
-"le conteneur ``Counters``. Sélectionnez le  nœud ``Counters`` et dépliez la "
-"section ``Size Flags`` dans l'Inspecteur. Décochez la balise ``Fill`` pour "
-"la propriété ``Vertical`` et cochez ``Shrink Center`` pour que le conteneur "
+"avons définie dans ``Counter.tscn``, nous devons changer ``Size Flags`` du "
+"conteneur ``Counters``. Sélectionnez le  nœud ``Counters`` et déroulez la "
+"section ``Size Flags`` dans l'Inspecteur. Décochez la case ``Fill`` pour la "
+"propriété ``Vertical`` et cochez ``Shrink Center`` pour que le conteneur "
 "soit centré à l'intérieur de ``HBoxContainer``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:575
@@ -1235,7 +1222,6 @@ msgstr ""
 "la hauteur du fond des compteurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -1249,7 +1235,7 @@ msgstr ""
 "barres doivent être alignées verticalement. Cliquez sur l'icône à côté du "
 "nœud ``EnergyBar`` pour ouvrir sa scène. Sélectionnez le nœud ``Count`` et "
 "faites défiler vers le bas jusqu'à la section ``Custom Constant``. Mettre "
-"``20`` à  ``Margin Left``. Dans la section ``Rect``, réglez ``Min Size`` à "
+"``Margin Left`` à ``20``. Dans la section ``Rect``, réglez ``Min Size`` à "
 "100, la même valeur que sur la barre de vie. ``Count`` devrait maintenant "
 "avoir une marge à gauche. Si vous sauvegardez et retournez à la scène de "
 "l'interface graphique, elle sera alignée verticalement avec ``LifeBar``."
@@ -1259,24 +1245,21 @@ msgid "The 2 bars align perfectly"
 msgstr "Les 2 barres sont parfaitement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
-#, fuzzy
 msgid ""
 "We could have setup the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
-"Nous aurions pu installer ``EnergyBar`` de cette façon il y a quelques "
-"instants. Mais cela vous montre que vous pouvez retourner à n'importe quelle "
-"scène à tout moment, l'ajuster et voir les changements se répercuter tout le "
-"long du projet !"
+"Nous aurions pu installer ``EnergyBar`` de cette façon plus tôt. Mais cela "
+"vous montre que vous pouvez retourner à n'importe quelle scène à tout "
+"moment, l'ajuster et voir les changements se répercuter tout le long du "
+"projet !"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
-#, fuzzy
 msgid "Place the GUI onto the game's mockup"
 msgstr "Placez l'interface graphique sur la maquette du jeu"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:604
-#, fuzzy
 msgid ""
 "To wrap up the tutorial we're going to insert the GUI onto the game's mockup "
 "scene."
@@ -1285,12 +1268,10 @@ msgstr ""
 "scène de la maquette du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:607
-#, fuzzy
 msgid "Head to the FileSystem dock and open ``LevelMockup.tscn``."
 msgstr "Dirigez-vous vers le dock FileSystem et ouvrez ``LevelMockup.tscn``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:609
-#, fuzzy
 msgid ""
 "Drag-and-drop the ``GUI.tscn`` scene right below the ``bg`` node and above "
 "the ``Characters``. The GUI will scale to fit the entire viewport. Head to "
@@ -1316,7 +1297,6 @@ msgstr ""
 "retrouver le projet final `ici <#>`__."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
-#, fuzzy
 msgid ""
 "**A final note about Responsive Design**. If you resize the GUI, you'll see "
 "the nodes move, but the textures and text won't scale. The GUI also has a "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Inverse kinematics"
 msgstr "Odwrócona kinematyka"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:6
-msgid "This tutorial is a follow-up of :ref:`doc_working_with_3d_skeletons`."
+msgid "This tutorial is a follow-up to :ref:`doc_working_with_3d_skeletons`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:8
@@ -46,20 +46,19 @@ msgstr "Początkowe problemy"
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:20
 msgid ""
-"Talking in Godot terminology, the task we want to solve here is to position "
-"the 2 angles on the joints of our upperarm and lowerarm so that the tip of "
-"the lowerarm bone is as close to the target point (which is set by the "
-"target Vector3) as possible using only rotations. This task is calculation-"
-"intensive and never resolved by analytical equation solving, as it is an "
-"under-constrained problem which means that there is more than one solution "
-"to an IK problem."
+"We want to position the 2 angles on the joints of our upperarm and lowerarm "
+"so that the tip of the lowerarm bone is as close to the target point (which "
+"is set by the target Vector3) as possible using only rotations. This task is "
+"calculation-intensive and never resolved by analytical equation solving, as "
+"it is an under-constrained problem, which means that there is more than one "
+"solution to an IK problem."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:30
 msgid ""
-"For easy calculation in this chapter, we consider the target being a child "
-"of Skeleton. If this is not the case for your setup you can always reparent "
-"it in your script, as you will save on calculations if you do so."
+"For easy calculation in this chapter, we assume the target is a child of "
+"Skeleton. If this is not the case for your setup, you can always reparent it "
+"in your script, as you will save on calculations if you do so."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:35
@@ -73,8 +72,8 @@ msgstr ""
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:40
 msgid ""
 "The rotation axis is easily calculated using the cross-product of the bone "
-"vector and the target vector. The rotation in this case will be always in "
-"positive direction. If ``t`` is the Transform which we get from the "
+"vector and the target vector. The rotation, in this case, will always be in "
+"the positive direction. If ``t`` is the Transform which we get from the "
 "get_bone_global_pose() function, the bone vector is"
 msgstr ""
 
@@ -148,13 +147,13 @@ msgid ""
 "Now we need to actually work with the target. The target should be placed "
 "somewhere accessible. Since \"arm\" is an imported scene, we better place "
 "the target node within our top level scene. But for us to work with target "
-"easily its Transform should be on the same level as the Skeleton."
+"easily, its Transform should be on the same level as the Skeleton."
 msgstr ""
 
 #: ../../docs/tutorials/3d/inverse_kinematics.rst:152
 msgid ""
 "To cope with this problem, we create a \"target\" node under our scene root "
-"node and at runtime we will reparent it, copying the global transform which "
+"node and will reparent it at runtime, copying the global transform, which "
 "will achieve the desired effect."
 msgstr ""
 

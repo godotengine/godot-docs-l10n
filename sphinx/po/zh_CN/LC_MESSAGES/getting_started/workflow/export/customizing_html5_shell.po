@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,6 @@ msgstr ""
 "Custom Html Shell`` 。"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:11
-#, fuzzy
 msgid ""
 "The default HTML page is available in the Godot Engine repository at `/misc/"
 "dist/html/default.html <https://github.com/godotengine/godot/blob/master/"
@@ -43,7 +42,7 @@ msgid ""
 msgstr ""
 "Godot Engine存储库中提供了默认的HTML页面 `/mist/dist/html/default.html "
 "<https://github.com/godotengine/godot/blob/master/misc/dist/html/default."
-"html>`_。 一些简单的用例，其中自定义默认页面很有用包括："
+"html>`_ 。 一些简单的用例，其中自定义默认页面很有用包括:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:15
 msgid "Loading files from a different directory"
@@ -67,18 +66,17 @@ msgstr "在引擎启动之前加载一些额外的文件，以便稍后在文件
 msgid ""
 "Passing custom \"command line\" arguments, e.g. ``-s`` to start a MainLoop "
 "script"
-msgstr "传递自定义“命令行”参数，例如  ``-s`` 启动MainLoop脚本"
+msgstr "传递自定义“命令行”参数，例如 ``-s`` 启动MainLoop脚本"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:23
 msgid "Placeholder substitution"
 msgstr "占位符替换"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:25
-#, fuzzy
 msgid ""
 "When exporting the game, several placeholders in the HTML page are replaced "
 "with values depending on the export:"
-msgstr "导出游戏时，HTML页面中的多个占位符将替换为值，具体取决于导出："
+msgstr "导出游戏时，HTML页面中的多个占位符将替换为值，具体取决于导出:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:29
 msgid "Placeholder"
@@ -96,7 +94,7 @@ msgstr "``$GODOT_BASENAME``"
 msgid ""
 "Basename of exported files without suffixes, e.g. ``game`` when exporting "
 "``game.html``"
-msgstr "没有后缀的导出文件的基本名称，例如  ``game`` 在导出 ``game.html`` 时"
+msgstr "没有后缀的导出文件的基本名称，例如 ``game`` 在导出 ``game.html`` 时"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:34
 msgid "``$GODOT_DEBUG_ENABLED``"
@@ -122,8 +120,8 @@ msgid ""
 "below <doc_javascript_engine_object>` for details."
 msgstr ""
 "HTML文件必须评估JavaScript文件 ``$ GODOT_BASENAME.js`` 。 这个文件定义了一个"
-"用于启动引擎的全局 ``Engine`` 对象，参见  :ref:`see below "
-"<doc_javascript_engine_object>`  了解详细信息。"
+"用于启动引擎的全局 ``Engine`` 对象，参见 :ref:`see below "
+"<doc_javascript_engine_object>` 了解详细信息。"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:44
 msgid ""
@@ -141,7 +139,6 @@ msgstr ""
 "``$ GODOT_DEBUG_ENABLED`` 可用于可选地显示，例如 输出控制台或其他调试工具。"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:50
-#, fuzzy
 msgid ""
 "``$GODOT_HEAD_INCLUDE`` is replaced with the string specified by the export "
 "option ``Html/Head Include``."
@@ -207,7 +204,7 @@ msgstr "启动 ``Engine`` 实例"
 msgid ""
 "The more interesting interface is accessed by instantiating ``Engine`` using "
 "the ``new`` operator:"
-msgstr "通过使用 ``new`` 运算符实例化 ``Engine`` 来访问更有趣的接口："
+msgstr "通过使用 ``new`` 运算符实例化 ``Engine`` 来访问更有趣的接口:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:92
 msgid ""
@@ -250,7 +247,6 @@ msgstr ""
 "用** 。"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:112
-#, fuzzy
 msgid ""
 "If ``file`` is a string, the file will be loaded from that URL. If ``file`` "
 "is an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
@@ -283,8 +279,8 @@ msgid ""
 "used, but usually the other methods whose names start with ``engine.start`` "
 "are simpler to use."
 msgstr ""
-"启动引擎实例，将传递的字符串作为参数传递给 ``main（）`` 函数。 这样可以很好地"
-"控制引擎的使用方式，但通常名称以 ``engine.start`` 开头的其他方法更易于使用。"
+"启动引擎实例，将传递的字符串作为参数传递给 ``main()`` 函数。 这样可以很好地控"
+"制引擎的使用方式，但通常名称以 ``engine.start`` 开头的其他方法更易于使用。"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:130
 msgid "Returns a promise that resolves once the engine started."
@@ -318,7 +314,7 @@ msgstr "配置启动行为"
 msgid ""
 "Beside starting the engine, other methods of the engine instance allow "
 "configuring the behavior:"
-msgstr "除启动引擎外，引擎实例的其他方法还允许配置行为："
+msgstr "除启动引擎外，引擎实例的其他方法还允许配置行为:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:150
 msgid "``engine.setUnloadAfterInit(enabled)``"
@@ -373,8 +369,8 @@ msgid ""
 "Language`` header. This method allows specifying such a custom locale string."
 msgstr ""
 "默认情况下，引擎将尝试从JavaScript环境猜测要使用的语言环境。通常最好使用服务"
-"器端用户指定的区域设置，或者至少使用HTTP ``Accept-Language``  header中请求的"
-"区域设置。该方法允许指定这样的自定义区域设置字符串。"
+"器端用户指定的区域设置，或者至少使用HTTP ``Accept-Language`` header中请求的区"
+"域设置。该方法允许指定这样的自定义区域设置字符串。"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:181
 msgid "``engine.setExecutableName(execName)``"
@@ -394,7 +390,7 @@ msgstr "自定义演示文稿"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:189
 msgid "The following methods are used to implement the presentation:"
-msgstr "以下方法用于实现演示："
+msgstr "以下方法用于实现演示:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:192
 msgid "``engine.setProgressFunc(func)``"
@@ -412,7 +408,7 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:206
 msgid "If the total is 0, it couldn't be calculated. Possible reasons include:"
-msgstr "如果总数为0，则无法计算。 可能的原因包括："
+msgstr "如果总数为0，则无法计算。 可能的原因包括:"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:209
 msgid "Files are delivered with server-side chunked compression"
@@ -426,7 +422,7 @@ msgstr "文件在Chromium上通过服务器端压缩提供"
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
-msgstr "并非所有文件下载都已开始（通常在没有多线程的服务器上）"
+msgstr "并非所有文件下载都已开始(通常在没有多线程的服务器上)"
 
 #: ../../docs/getting_started/workflow/export/customizing_html5_shell.rst:214
 msgid "``engine.setStdoutFunc(func)``, ``engine.setStderrFunc(func)``"
@@ -465,6 +461,6 @@ msgid ""
 "documentation for information on how to use it: https://kripken.github.io/"
 "emscripten-site/docs/api_reference/module.html"
 msgstr ""
-"如果你知道你在做什么，你可以访问运行时环境（Emscripten的 ``Module`` ）作为 "
-"``engine.rtenv`` 。 查看官方Emscripten文档以获取有关如何使用它的信息："
-"https://kripken.github.io/emscripten-site/docs/api_reference/module.html"
+"如果您知道您在做什么，您可以访问运行时环境(Emscripten的 ``Module`` )作为 "
+"``engine.rtenv`` 。 查看官方Emscripten文档以获取有关如何使用它的信息:https://"
+"kripken.github.io/emscripten-site/docs/api_reference/module.html"

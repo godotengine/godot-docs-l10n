@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:4
 msgid "Using a Viewport as a texture"
-msgstr "使用视口作为纹理"
+msgstr "使用视区作为纹理"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:7
 msgid "Introduction"
@@ -32,8 +32,8 @@ msgid ""
 "to do so it will walk you through the process of making a procedural planet "
 "like the one below:"
 msgstr ""
-"本教程将向您介绍如何使用：ref：`Viewport <class_Viewport>`作为可应用于3D对象"
-"的纹理。 为了做到这一点，它将引导您完成制作程序行星的过程，如下所示："
+"本教程将向您介绍如何使用 :ref:`Viewport <class_Viewport>` 作为可应用于3D对象"
+"的纹理。 为了做到这一点，它将引导您完成制作程序行星的过程，如下所示:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:15
 msgid ""
@@ -51,19 +51,19 @@ msgid ""
 "the :ref:`Viewport <class_Viewport>` to dynamically create textures that can "
 "be applied to the mesh."
 msgstr ""
-"本教程假设您熟悉如何设置基本场景，包括：a：ref：`Camera <class_Camera>`，a："
-"ref：`light source <class_OmniLight>`，a：ref：`Mesh Instance "
-"<class_MeshInstance>` 使用a：ref：`Primitive Mesh <class_PrimitiveMesh>`，并"
-"将：ref：`Spatial Material <class_SpatialMaterial>`应用于网格。 重点是使用："
-"ref：`Viewport <class_Viewport>`来动态创建可应用于网格的纹理。"
+"本教程假设您熟悉如何设置基本场景，包括:a :ref:`Camera <class_Camera>`，a :"
+"ref:`light source <class_OmniLight>`，a :ref:`Mesh Instance "
+"<class_MeshInstance>` 使用a :ref:`Primitive Mesh <class_PrimitiveMesh>`，并"
+"将 :ref:`Spatial Material <class_SpatialMaterial>` 应用于网格。 重点是使用 :"
+"ref:`Viewport <class_Viewport>` 来动态创建可应用于网格的纹理。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:23
 msgid "During the course of this tutorial will cover the following topics:"
-msgstr "在本教程中，课程将涵盖以下主题："
+msgstr "在本教程中，课程将涵盖以下主题:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:25
 msgid "How to use a :ref:`Viewport <class_Viewport>` as a render texture"
-msgstr "如何使用：ref：`Viewport <class_Viewport>`作为渲染纹理"
+msgstr "如何使用 :ref:`Viewport <class_Viewport>` 作为渲染纹理"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:26
 msgid "Mapping a texture to a sphere with equirectangular mapping"
@@ -77,15 +77,15 @@ msgstr "程序行星的碎片着色器技术"
 msgid ""
 "Setting a Roughness map from a :ref:`Viewport Texture "
 "<class_ViewportTexture>`"
-msgstr "从a：ref：`Viewport Texture <class_ViewportTexture>`设置粗糙度贴图"
+msgstr "从a :ref:`Viewport Texture <class_ViewportTexture>` 设置粗糙度贴图"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:31
 msgid "Setting up the Viewport"
-msgstr "设置视口"
+msgstr "设置视区"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:33
 msgid "First, add a :ref:`Viewport <class_Viewport>` to the scene."
-msgstr "首先，在场景中添加：ref：`Viewport <class_Viewport>`。"
+msgstr "首先，在场景中添加 :ref:`Viewport <class_Viewport>` 。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:35
 msgid ""
@@ -95,8 +95,8 @@ msgid ""
 "height so that the image will accurately map onto the sphere as we will be "
 "using equirectangular projection, but more on that later."
 msgstr ""
-"接下来，将：ref：`Viewport <class_Viewport>`的大小设置为``（1024,512）``。 ："
-"ref：`Viewport <class_Viewport>`实际上可以是任何大小，只要宽度是高度的两倍。 "
+"接下来，将 :ref:`Viewport <class_Viewport>` 的大小设置为``(1024,512)``。 :"
+"ref:`Viewport <class_Viewport>` 实际上可以是任何大小，只要宽度是高度的两倍。 "
 "宽度需要是高度的两倍，以便图像准确地映射到球体上，因为我们将使用"
 "equirectangular投影，但稍后会更多。"
 
@@ -108,13 +108,13 @@ msgid ""
 "the surface, so we don't need 3D either."
 msgstr ""
 "接下来，禁用HDR并禁用3D。 我们不需要HDR，因为我们的行星表面不会特别明亮，所"
-"以“0”和“1”之间的值会很好。 我们将使用：ref：`ColorRect <class_ColorRect>`来渲"
+"以“0”和“1”之间的值会很好。 我们将使用 :ref:`ColorRect <class_ColorRect>` 来渲"
 "染表面，所以我们也不需要3D。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:46
 msgid ""
 "Select the Viewport and add a :ref:`ColorRect <class_ColorRect>` as a child."
-msgstr "选择视口并添加：ref：`ColorRect <class_ColorRect>`作为子项。"
+msgstr "选择视区并添加 :ref:`ColorRect <class_ColorRect>` 作为子项。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:48
 msgid ""
@@ -122,15 +122,15 @@ msgid ""
 "margins are set to ``0``. This will ensure that the :ref:`ColorRect "
 "<class_ColorRect>` takes up the entire :ref:`Viewport <class_Viewport>`."
 msgstr ""
-"将锚“Right”和“Bottom”设置为“1”，然后确保所有边距都设置为“0”。 这将确保：ref："
-"`ColorRect <class_ColorRect>`占用整个：ref：`Viewport <class_Viewport>`。"
+"将锚“Right”和“Bottom”设置为“1”，然后确保所有边距都设置为“0”。 这将确保 :ref:"
+"`ColorRect <class_ColorRect>` 占用整个 :ref:`Viewport <class_Viewport>`。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:53
 msgid ""
 "Next, we add a :ref:`Shader Material <class_ShaderMaterial>` to the :ref:"
 "`ColorRect <class_ColorRect>`."
 msgstr ""
-"接下来，我们将：ref：`Shader Material <class_ShaderMaterial>`添加到：ref："
+"接下来，我们将 :ref:`Shader Material <class_ShaderMaterial>` 添加到 :ref:"
 "`ColorRect <class_ColorRect>`。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:55
@@ -139,7 +139,7 @@ msgid ""
 "even if you are new to shaders, all the code will be provided so you should "
 "have no problem following along."
 msgstr ""
-"我们假设您熟悉本教程的着色基础知识。 即使你不是，所有的代码仍然会提供，所以你"
+"我们假设您熟悉本教程的着色基础知识。 即使您不是，所有的代码仍然会提供，所以您"
 "应该没有问题。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:66
@@ -151,7 +151,7 @@ msgid ""
 "Now we have the basics of a :ref:`Viewport <class_Viewport>` that we render "
 "to and we have a unique image that we can apply to the sphere."
 msgstr ""
-"现在我们有一个基础：ref：`Viewport <class_Viewport>`我们渲染到的，我们有一个"
+"现在我们有一个基础 :ref:`Viewport <class_Viewport>` 我们渲染到的，我们有一个"
 "可以应用于球体的独特图像。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:74
@@ -165,10 +165,10 @@ msgid ""
 "`Shader Material <class_ShaderMaterial>` (although that would be a good idea "
 "for more advanced effects, like the atmosphere in the example above)."
 msgstr ""
-"现在我们进入：ref：`Mesh Instance <class_MeshInstance>`并向它添加一个：ref："
-"`Spatial Material <class_SpatialMaterial>`。 不需要特殊的：ref：`Shader "
-"Material <class_ShaderMaterial>`（虽然这对于更高级的效果来说是个好主意，比如"
-"上面例子中的氛围）。"
+"现在我们进入 :ref:`Mesh Instance <class_MeshInstance>` 并向它添加一个 :ref:"
+"`Spatial Material <class_SpatialMaterial>` 。 不需要特殊的 :ref:`Shader "
+"Material <class_ShaderMaterial>` (虽然这对于更高级的效果来说是个好主意，比如"
+"上面示例中的氛围)。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:80
 msgid ""
@@ -177,7 +177,7 @@ msgid ""
 "property to add an Albedo Texture. Here we will apply the texture we made. "
 "Choose \"New ViewportTexture\""
 msgstr ""
-"打开新创建的：ref：`Spatial Material <class_SpatialMaterial>`并向下滚动"
+"打开新创建的 :ref:`Spatial Material <class_SpatialMaterial>` 并向下滚动"
 "到“Albedo”部分，然后单击“Texture”属性旁边的以添加Albedo纹理。 在这里，我们将"
 "应用我们制作的纹理。 选择“New ViewportTexture”"
 
@@ -185,13 +185,13 @@ msgstr ""
 msgid ""
 "Then from the menu that pops up select the Viewport that we rendered to "
 "earlier."
-msgstr "然后从弹出的菜单中选择我们之前渲染的视口。"
+msgstr "然后从弹出的菜单中选择我们之前渲染的视区。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:90
 msgid ""
 "Your sphere should now be colored in with the colors we rendered to the "
 "Viewport"
-msgstr "现在，您的球体应使用我们渲染到视口的颜色进行着色"
+msgstr "现在，您的球体应使用我们渲染到视区的颜色进行着色"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:94
 msgid ""
@@ -220,7 +220,7 @@ msgid ""
 "domain of our texture. ``sin`` and ``cos`` are two such functions. Lets "
 "apply them to the texture and see what happens"
 msgstr ""
-"所以现在我们渲染到我们的：ref：`Viewport <class_Viewport>`它在球体上神奇地出"
+"所以现在我们渲染到我们的 :ref:`Viewport <class_Viewport>` 它在球体上神奇地出"
 "现了。 但是我们的纹理坐标会产生一个丑陋的缝隙。 那么我们如何以一种很好的方式"
 "获得围绕球体的一系列坐标？ 一种解决方案是使用在纹理域上重复的函数。 ``sin``和"
 "``cos``是两个这样的函数。 让我们将它们应用于纹理，看看会发生什么"
@@ -233,8 +233,8 @@ msgid ""
 "Material <class_SpatialMaterial>`. It uses a projection technique called "
 "equirectangular projection. Which translates a spherical map onto a 2D plane."
 msgstr ""
-"还不错。 如果你环顾四周，你可以看到接缝已经消失了，但在它的位置，我们已经在两"
-"极捏了一下。 这种捏合是由于Godot将纹理映射到其中的球体的方式：ref：`Spatial "
+"还不错。 如果您环顾四周，您可以看到接缝已经消失了，但在它的位置，我们已经在两"
+"极捏了一下。 这种捏合是由于Godot将纹理映射到其中的球体的方式 :ref:`Spatial "
 "Material <class_SpatialMaterial>`。 它使用一种称为equirectangular投影的投影技"
 "术。 这将球形地图转换为2D平面。"
 
@@ -247,7 +247,7 @@ msgid ""
 "center of the sphere to the point."
 msgstr ""
 "如果您对该技术的一些额外信息感兴趣，我们将从球坐标转换为笛卡尔坐标。 球面坐标"
-"映射球体的经度和纬度，而笛卡尔坐标用于所有意图和目的，是从球体中心到点的矢"
+"映射球体的经度和纬度，而笛卡尔坐标用于所有意图和目的，是从球体中心到点的向"
 "量。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:124
@@ -263,12 +263,12 @@ msgstr ""
 "对于每个像素，我们将计算其在球体上的3D位置。 由此我们将使用3D噪声来确定颜色"
 "值。 通过计算3D中的噪声，我们解决了极点挤压的问题。 要了解原因，请记录在球体"
 "表面而不是在2D平面上计算的噪声。 当您跨越球体表面进行计算时，您永远不会碰到边"
-"缘，因此您永远不会在杆上创建接缝或夹点。 以下代码将``UVs``转换为Cartesion坐"
+"缘，因此您永远不会在杆上创建接缝或夹点。 以下代码将 ``UVs`` 转换为Cartesion坐"
 "标。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:143
 msgid "And if we use ``unit`` as an output ``COLOR`` value we get."
-msgstr "如果我们使用``unit``作为输出``COLOR``值，我们得到。"
+msgstr "如果我们使用 ``unit`` 作为输出 ``COLOR`` 值，我们得到。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:147
 msgid ""
@@ -277,7 +277,7 @@ msgid ""
 "directly from a `Shadertoy <https://www.shadertoy.com/view/Xsl3Dl>`_:"
 msgstr ""
 "现在我们可以计算球体表面的3D位置，我们可以使用3D噪声来制作行星。 我们将直接从"
-"`Shadertoy <https://www.shadertoy.com/view/4dffRH>`_使用此噪音功能："
+"`Shadertoy <https://www.shadertoy.com/view/4dffRH>`_ 使用此噪音功能:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:175
 msgid ""
@@ -288,7 +288,7 @@ msgstr "归功于最初的作者Inigo Quilez。 它与 ``MIT`` 许可证一起�
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:177
 msgid ""
 "Now to use ``noise``, add the following to the    ``fragment`` function:"
-msgstr "现在使用 ``noised`` ，将以下内容添加到 ``fragment`` 函数中："
+msgstr "现在使用 ``noised`` ，将以下内容添加到 ``fragment`` 函数中:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:186
 msgid "In order to highlight the texture, we set the material to unshaded."
@@ -300,8 +300,8 @@ msgid ""
 "Although this looks nothing like the planet you were promised. So lets move "
 "onto something more colorful."
 msgstr ""
-"你现在可以看到噪音确实在球体周围无缝包裹。 虽然这看起来不像你所承诺的星球。 "
-"所以让我们进入更丰富多彩的东西。"
+"您现在可以看到噪音确实在球体周围无缝包。 虽然这看起来不像您所承诺的星球。 所"
+"以让我们进入更丰富多彩的东西。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:192
 msgid "Coloring the planet"
@@ -327,7 +327,7 @@ msgstr ""
 "要在glsl中创建渐变，我们使用 ``mix`` 函数。  ``mix`` 需要两个值来插值和第三个"
 "参数来选择在它们之间插入多少，实质上它*将两个值混合在一起。 在其他API中，此函"
 "数通常称为 ``lerp`` 。 虽然 ``lerp`` 通常用于将两个浮点数混合在一起，但 "
-"``mix`` 可以取任何值，无论它是浮点数还是矢量类型。"
+"``mix`` 可以取任何值，无论它是浮点数还是向量类型。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:207
 msgid ""
@@ -337,10 +337,10 @@ msgid ""
 "``-1`` and ``1``. So we map it into the ``0-1`` range that ``mix`` expects. "
 "Now you can see that the colors change between blue and red."
 msgstr ""
-"海洋的第一种颜色是蓝色。 第二种颜色是一种带红色的颜色（因为所有外星球都需要红"
-"色地形）。 最后他们通过``n.x * 0.5 + 0.5``混合在一起。 ``n.x``在``-1``和``1``"
-"之间平滑变化。 所以我们把它映射到``mix``期望的``0-1``范围。 现在您可以看到颜"
-"色在蓝色和红色之间变化。"
+"海洋的第一种颜色是蓝色。 第二种颜色是一种带红色的颜色(因为所有外星球都需要红"
+"色地形)。 最后他们通过``n.x * 0.5 + 0.5``混合在一起。 ``n.x``在``-1``和``1``"
+"之间平滑变化。 所以我们把它映射到 ``mix`` 期望的 ``0-1`` 范围。 现在您可以看"
+"到颜色在蓝色和红色之间变化。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:214
 msgid ""
@@ -350,8 +350,8 @@ msgid ""
 "whole line becomes:"
 msgstr ""
 "这比我们想要的要模糊一些。 行星通常在陆地和海洋之间具有相对清晰的分离。 为了"
-"做到这一点，我们将最后一个术语改为“smoothstep（-0.1,0.0，n.x）``。 因此整条线"
-"变为："
+"做到这一点，我们将最后一个术语改为“smoothstep(-0.1,0.0，n.x)``。 因此整条线变"
+"为:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:222
 msgid ""
@@ -363,9 +363,9 @@ msgid ""
 "``0``."
 msgstr ""
 "如果第三个参数低于第一个参数，那么`smoothstep``会返回``0``，如果第三个参数大"
-"于第二个参数，则返回1，如果第三个参数在第一个参数之间平滑地混合，则返回"
-"``0``` 第三个数字在第一个和第二个之间。 因此，当``nx``小于`-0.1``时，"
-"``smoothstep``返回``0``，并且每当``nx``高于``0时'它返回``1```。"
+"于第二个参数，则返回1，如果第三个参数在第一个参数之间平滑地混合，则返回 "
+"``0`` ` 第三个数字在第一个和第二个之间。 因此，当 ``nx`` 小于`-0.1``时， "
+"``smoothstep`` 返回 ``0`` ，并且每当 ``nx`` 高于``0时'它返回``1```。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:229
 msgid ""
@@ -380,15 +380,15 @@ msgstr ""
 "还有一件事要让它变得更加美丽。 土地不应该如此臃肿让边缘变得更粗糙。 在着色器"
 "中经常用于制作具有噪声的粗糙地形的技巧是在不同频率下将噪声层叠在彼此之上。 我"
 "们使用一层来构建大陆的整体blobby结构。 然后另一层分裂边缘，然后是另一层，依此"
-"类推。 我们要做的是用四行着色器代码计算``n``而不是一行。 ``n``成为："
+"类推。 我们要做的是用四行着色器代码计算 ``n`` 而不是一行。 ``n``成为:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:243
 msgid "And now the planet looks like:"
-msgstr "现在这个星球看起来像："
+msgstr "现在这个星球看起来像:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:247
 msgid "And with shading turned back on it looks like:"
-msgstr "随着阴影重新开启，它看起来像："
+msgstr "随着阴影重新开启，它看起来像:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:252
 msgid "Making an ocean"
@@ -402,8 +402,8 @@ msgid ""
 "channel of our output ``COLOR`` and using it as a Roughness map."
 msgstr ""
 "让这个看起来更像是一颗行星的最后一件事。 海洋和陆地以不同的方式反射光线。 因"
-"此，我们希望海洋比陆地更加闪耀。 我们可以通过将第四个值传递到输出``COLOR``的"
-"``alpha``通道并将其用作粗糙度图来实现。"
+"此，我们希望海洋比陆地更加闪耀。 我们可以通过将第四个值传递到输出 ``COLOR`` "
+"的``alpha``通道并将其用作粗糙度图来实现。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:262
 msgid ""
@@ -419,9 +419,9 @@ msgid ""
 "for this is the water reflects light really well, but isn't metallic. These "
 "values are not physically accurate, but they are good enough for this demo."
 msgstr ""
-"然后在“Metallic”部分下的材料中确保``Metallic``设置为``0``并且``Specular``设置"
-"为``1``。 原因是水很好地反射光，但不是金属。 这些值在物理上并不准确，但它们对"
-"于此演示来说已经足够好了。"
+"然后在“Metallic”部分下的材质中确保 ``Metallic`` 设置为 ``0`` 并且 "
+"``Specular`` 设置为 ``1`` 。 原因是水很好地反射光，但不是金属。 这些值在物理"
+"上并不准确，但它们对于此演示来说已经足够好了。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:269
 msgid ""
@@ -431,10 +431,10 @@ msgid ""
 "the ``Texture Channel`` to ``Alpha``. This instructs the renderer to use the "
 "``alpha`` channel of our output ``COLOR`` as the ``Roughness`` value."
 msgstr ""
-"接下来在“粗糙度”部分将“粗糙度”设置为“1”并将粗糙度纹理设置为：ref：`Viewport "
-"Texture <class_ViewportTexture>`指向我们的行星纹理：ref：`Viewport "
+"接下来在“粗糙度”部分将“粗糙度”设置为“1”并将粗糙度纹理设置为 :ref:`Viewport "
+"Texture <class_ViewportTexture>` 指向我们的行星纹理 :ref:`Viewport "
 "<class_Viewport>`。 最后将``Texture Channel``设置为``Alpha``。 这指示渲染器使"
-"用输出``COLOR``的``alpha``通道作为``Roughness``值。"
+"用输出 ``COLOR`` 的``alpha``通道作为``Roughness``值。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:276
 msgid ""
@@ -449,13 +449,13 @@ msgid ""
 "and set \"Transparent Bg\" to on. Since we are now rendering one transparent "
 "object on top of another we want to enable ``blend_premul_alpha``:"
 msgstr ""
-"除了行星不再反射天空之外，你会注意到很少的变化。 发生这种情况是因为默认情况"
-"下，当使用alpha值渲染某些内容时，它会在背景上绘制为透明对象。 由于：ref："
-"`Viewport <class_Viewport>`的默认背景是不透明的，因此：ref：`Viewport "
-"Texture <class_ViewportTexture>`的``alpha``通道是``1``，导致行星纹理被 随处可"
-"见的颜色略微偏淡，“粗糙度”值为“1”。 为了纠正这个问题，我们进入：ref："
-"`Viewport <class_Viewport>`并将“Transparent Bg”设置为on。 由于我们现在将一个"
-"透明对象渲染到另一个上面，我们想要启用``blend_premul_alpha``："
+"除了行星不再反射天空之外，您会注意到很少的变化。 发生这种情况是因为默认情况"
+"下，当使用alpha值渲染某些内容时，它会在背景上绘制为透明对象。 由于 :ref:"
+"`Viewport <class_Viewport>` 的默认背景是不透明的，因此 :ref:`Viewport "
+"Texture <class_ViewportTexture>` 的 ``alpha`` 通道是 ``1`` ，导致行星纹理被 "
+"随处可见的颜色略微偏淡，“粗糙度”值为“1”。 为了纠正这个问题，我们进入 :ref:"
+"`Viewport <class_Viewport>` 并将“Transparent Bg”设置为on。 由于我们现在将一个"
+"透明对象渲染到另一个上面，我们想要启用``blend_premul_alpha``:"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:289
 msgid ""
@@ -466,8 +466,8 @@ msgid ""
 "``blend_premul_alpha`` fixes that."
 msgstr ""
 "这会将颜色预先乘以“alpha”值，然后将它们正确地混合在一起。 通常情况下，当一个"
-"透明颜色混合在另一个上面时，即使背景的“alpha``为”0“（就像在这种情况下一样），"
-"你最终会出现奇怪的颜色流失问题。 设置``blend_premul_alpha``修复了这个问题。"
+"透明颜色混合在另一个上面时，即使背景的“alpha``为”0“(就像在这种情况下一样)，您"
+"最终会出现奇怪的颜色流失问题。 设置 ``blend_premul_alpha`` 修复了这个问题。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:293
 msgid ""
@@ -477,11 +477,11 @@ msgid ""
 "of the reflections on the ocean."
 msgstr ""
 "现在这个星球应该看起来像是在海洋上反射光而不是在陆地上。 如果您还没有这样做，"
-"请在场景中添加：ref：`OmniLight <class_OmniLight>`，这样您就可以移动它并查看"
+"请在场景中添加 :ref:`OmniLight <class_OmniLight>` ，这样您就可以移动它并查看"
 "反射对海洋的影响。"
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:299
 msgid ""
 "And there you have it. A procedural planet generated using a :ref:`Viewport "
 "<class_Viewport>`."
-msgstr "你有它。 使用：ref：`Viewport <class_Viewport>`生成的简单程序行星。"
+msgstr "您有它。 使用 :ref:`Viewport <class_Viewport>` 生成的简单程序行星。"

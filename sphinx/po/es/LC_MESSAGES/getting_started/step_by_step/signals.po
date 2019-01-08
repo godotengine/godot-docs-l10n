@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,9 +85,8 @@ msgstr ""
 "al Nodo Raiz, pero no le agregues codigo todavia."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:31
-#, fuzzy
 msgid "Your scene tree should look like this:"
-msgstr "El árbol de la escena debería verse así:"
+msgstr "Tu árbol de la escena debería verse así:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:35
 msgid ""
@@ -163,7 +162,7 @@ msgid ""
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
 "Ahora podemos reemplazar el código de relleno con cualquier código que "
-"querramos ejecutar cuando se reciba la señal. Hagamos que el Sprite parpadee."
+"queramos ejecutar cuando se reciba la señal. Hagamos que el Sprite parpadee:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
@@ -174,9 +173,8 @@ msgstr ""
 "la propiedad *Wait Time* para cambiar el resultado de este."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
-#, fuzzy
 msgid "Connecting signals in code"
-msgstr "Conectar una Señal (Signal) a una Función"
+msgstr "Conectar señales en código"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:112
 msgid ""
@@ -211,34 +209,31 @@ msgstr ""
 "conexión de nuestro Timer:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
-#, fuzzy
 msgid "Custom signals"
-msgstr "Itineradores personalizados"
+msgstr "Señales personalizadas"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
-"También puedes declarar tu propia señal (signal), personalizada dentro de "
+"También puedes declarar tus propia señales (signal) personalizadas dentro de "
 "Godot:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
-#, fuzzy
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
-"Una vez declarada, tu señal (signal), personalizada aparecerá en el "
-"Inspector y podrá ser conectada de la misma forma que las señales "
-"incorporadas en un nodo."
+"Una vez declaradas, tus señales (signal) personalizadas aparecerán en el "
+"Inspector y podrán ser conectadas de la misma forma que las señales "
+"integradas del nodo."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
 msgstr "Para emitir una señal por código, usa la función ``emit``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
-#, fuzzy
 msgid "Shooting example"
-msgstr "En el siguiente ejemplo:"
+msgstr "Ejemplo de disparos"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:205
 msgid ""
@@ -277,7 +272,6 @@ msgstr ""
 "jugador o incluso más arriba en el árbol."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
-#, fuzzy
 msgid "You could do this by adding the bullet directly:"
 msgstr "Tu podrías hacer esto directamente agregando la bala:"
 

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:4
 msgid "Size and anchors"
-msgstr "尺寸和锚定点"
+msgstr "大小和锚定点"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:6
 msgid ""
@@ -29,7 +29,7 @@ msgid ""
 "case."
 msgstr ""
 "如果一个游戏总是用同一分辨率在同样的设备上运行, 摆放控件将是一个简单的事, 只"
-"要逐个设置它们的位置属性和尺寸属性即可。不幸的是, 能像这样处理的情况很少。"
+"要逐个设置它们的位置属性和大小属性即可。不幸的是, 能像这样处理的情况很少。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:11
 msgid ""
@@ -58,9 +58,9 @@ msgid ""
 "represent a distance in pixels relative to the top-left corner of the parent "
 "control or (in case there is no parent control) the viewport."
 msgstr ""
-"这样的需求通过编辑控件的 * 边距 *（*margin*） 属性来实现。每个控件都有四个页"
-"边距: 左、右、下和上。默认情况下, 它们都表示相对于父控件或 (如果没有父控件) "
-"视区的左上角的像素距离。"
+"这样的需求通过编辑控件的 * 边距 *(*margin*) 属性来实现。每个控件都有四个页边"
+"距: 左、右、下和上。默认情况下, 它们都表示相对于父控件或 (如果没有父控件) 视"
+"区的左上角的像素距离。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:29
 msgid ""
@@ -77,5 +77,5 @@ msgid ""
 "parent, so when re-sizing the parent, the control will always cover it, "
 "leaving a 20 pixel margin:"
 msgstr ""
-"这幅图中的例子表示, 控件被设置为延展到父控件的右下角, 因此当重新调整父控件"
-"（或视口）大小时, 控件将始终覆盖父控件, 每边留下20像素的边距:"
+"这幅图中的示例表示, 控件被设置为延展到父控件的右下角, 因此当重新调整父控件(或"
+"视区)大小时, 控件将始终覆盖父控件, 每边留下20像素的边距:"

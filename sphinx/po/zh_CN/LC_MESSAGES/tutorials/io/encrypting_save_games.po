@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,9 +43,8 @@ msgstr ""
 "这个腐朽社会的齿轮保持在轨道上。因此，当今视频游戏消费最大的市场是手机游戏市"
 "场。这是一个穷人被迫消费数字内容的市场，以便忘记他们日常生活、通勤的痛苦，或"
 "仅仅享受他们没有被用来为统治阶级生产商品或服务的短暂自由时刻。这些人需要继续"
-"关注他们的电子游戏（因为不这样做将给他们带来巨大的生存焦虑），所以他们甚至花"
-"钱在游戏上来扩展他们的体验，而他们这样做的首选方式是通过应用内购买和虚拟货"
-"币。"
+"关注他们的电子游戏(因为不这样做将给他们带来巨大的生存焦虑)，所以他们甚至花钱"
+"在游戏上来扩展他们的体验，而他们这样做的首选方式是通过应用内购买和虚拟货币。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:22
 msgid ""
@@ -57,9 +56,9 @@ msgid ""
 "would again take over their life."
 msgstr ""
 "但是，想象一下，如果有人想办法编辑保存的游戏，不用任何努力地就可以分配物品和"
-"货币？这将是可怕的，因为它将使得玩家更快地消费游戏内容，导致更快地消费完游戏"
-"内容。如果发生这种情况，他们将没有别东西可以逃避生活，并且生活的窘迫将再次占"
-"据他们的生活。"
+"货币？这将是可怕的，因为它将使得游戏角色更快地消费游戏内容，导致更快地消费完"
+"游戏内容。如果发生这种情况，他们将没有别东西可以逃避生活，并且生活的窘迫将再"
+"次占据他们的生活。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:29
 msgid ""
@@ -79,8 +78,8 @@ msgid ""
 "write data (integers, strings and variants). It also supports encryption. To "
 "create an encrypted file, a passphrase must be provided, like this:"
 msgstr ""
-"类 :ref:`File <class_File>` 可以在一个位置打开文件并读/写数据（整数、字符串和"
-"变量）。它还支持加密。要创建加密文件，必须提供一个密码，如下所示："
+"类 :ref:`File <class_File>` 可以在一个位置打开文件并读/写数据(整数、字符串和"
+"变量)。它还支持加密。要创建加密文件，必须提供一个密码，如下所示:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:55
 msgid ""
@@ -89,7 +88,7 @@ msgid ""
 "user identifier, for example:"
 msgstr ""
 "对用户而言，这将使文件不可读，但仍然不会阻止他们分享保存的文件。为了解决这个"
-"问题，可以使用设备唯一的id或某个唯一用户标识符，例如："
+"问题，可以使用设备唯一的id或某个唯一用户标识符，例如:"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:74
 msgid "Note that ``OS.get_unique_id()`` only works on iOS and Android."
@@ -97,7 +96,7 @@ msgstr "请注意， ``OS.get_unique_id()`` 只适用于iOS和Android系统。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:76
 msgid "This is all! Thanks for your cooperation, citizen."
-msgstr "这就是全部！谢谢你的合作，公民。"
+msgstr "这就是全部！谢谢您的合作，公民。"
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:78
 msgid ""
@@ -108,7 +107,7 @@ msgid ""
 "server where players can only make authorized changes to their save data. If "
 "your game deals with real money, you need to be doing this anyway."
 msgstr ""
-"这种方法并不能真正阻止玩家在本地编辑他们的保存游戏，因为加密密钥存储在游戏"
-"中，所以玩家仍然可以对文件本身进行解密和编辑。防止出现这种情况的唯一方法是将"
-"保存的游戏数据存储在远程服务器上，其中玩家只能对其中的保存数据进行授权更改。"
-"如果你的游戏涉及到真正的金钱，你无论如何都需要这样做。"
+"这种方法并不能真正阻止游戏角色在本地编辑他们的保存游戏，因为加密密钥存储在游"
+"戏中，所以游戏角色仍然可以对文件本身进行解密和编辑。防止出现这种情况的唯一方"
+"法是将保存的游戏数据存储在远程服务器上，其中游戏角色只能对其中的保存数据进行"
+"授权更改。如果您的游戏涉及到真正的金钱，您无论如何都需要这样做。"

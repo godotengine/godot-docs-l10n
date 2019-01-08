@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to :ref:`doc_custom_modules_in_c++`."
 msgstr ""
-"本指南假设读者知道如何创建C ++模块和Godot数据类型。 如果没有，请参考 :ref:"
+"本指南假设读者知道如何创建C++模块和Godot数据类型。 如果没有，请参考 :ref:"
 "`doc_custom_modules_in_c++`。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:19
@@ -60,12 +60,11 @@ msgstr ""
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:22
 msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
-msgstr ""
-"`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
+msgstr "`单例模式 <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:23
 msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
-msgstr "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+msgstr "`Mediator 模式 <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:26
 msgid "What for?"
@@ -117,7 +116,7 @@ msgid ""
 "called. During debug mode only, RID_Owner maintains a list of RIDs. In "
 "practice, RIDs are similar to writing object-oriented C code."
 msgstr ""
-"Godot服务器实现了中介模式。 所有数据类型都继承``RID_Data``。 ```RID_Owner "
+"Godot服务器实现了中介模式。 所有数据类型都继承 ``RID_Data`` 。 ```RID_Owner "
 "<MyRID_Data>``在调用``make_rid``时拥有对象。 仅在调试模式期间，RID_Owner维护"
 "RID列表。 实际上，RID类似于编写面向对象的C代码。"
 
@@ -141,8 +140,8 @@ msgid ""
 "static instance and ``init()`` creates the managed thread; "
 "``unregister_types.cpp`` cleans up the server."
 msgstr ""
-"服务器分配在``register_types.cpp``中。 构造函数设置静态实例，``init（）``创建"
-"托管线程; ``unregister_types.cpp``清理服务器。"
+"服务器分配在 ``register_types.cpp`` 中。 构造函数设置静态实例， ``init()`` 创"
+"建托管线程; ``unregister_types.cpp``清理服务器。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:328
 msgid ""
@@ -159,7 +158,7 @@ msgid ""
 "In ``register_server_types()``, ``Engine::get_singleton()->add_singleton`` "
 "is used to register the dummy class in GDScript."
 msgstr ""
-"在``register_server_types（）``中，``Engine :: get_singleton（） - > "
+"在 ``register_server_types()`` 中，``Engine :: get_singleton() -> "
 "add_singleton``用于在GDScript中注册虚拟类。"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:376
@@ -226,7 +225,7 @@ msgstr "总结"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:482
 msgid "Here is the GDScript sample code:"
-msgstr "这是GDScript示例代码："
+msgstr "这是GDScript示例代码:"
 
 #: ../../docs/development/cpp/custom_godot_servers.rst:506
 msgid "Notes"

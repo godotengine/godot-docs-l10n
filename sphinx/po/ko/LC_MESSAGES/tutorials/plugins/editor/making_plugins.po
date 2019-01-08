@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,9 +101,10 @@ msgstr ""
 msgid ""
 "It's important to deal with initialization and clean-up of resources. A good "
 "practice is to use the virtual function :ref:`_enter_tree() "
-"<class_Node__enter_tree>` to initialize your plugin and :ref:`_exit_tree() "
-"<class_Node__exit_tree>` to clean it up. You can delete the default GDScript "
-"template from your file and replace it with the following structure:"
+"<class_Node_method__enter_tree>` to initialize your plugin and :ref:"
+"`_exit_tree() <class_Node_method__exit_tree>` to clean it up. You can delete "
+"the default GDScript template from your file and replace it with the "
+"following structure:"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:85
@@ -126,11 +127,12 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:96
 msgid ""
 "To create a new node type, you can use the function :ref:`add_custom_type() "
-"<class_EditorPlugin_add_custom_type>` from the :ref:`class_EditorPlugin` "
-"class. This function can add new types to the editor (nodes or resources). "
-"However, before you can create the type, you need a script that will act as "
-"the logic for the type. While that script doesn't have to use the ``tool`` "
-"keyword, it can be added so the script runs in the editor."
+"<class_EditorPlugin_method_add_custom_type>` from the :ref:"
+"`class_EditorPlugin` class. This function can add new types to the editor "
+"(nodes or resources). However, before you can create the type, you need a "
+"script that will act as the logic for the type. While that script doesn't "
+"have to use the ``tool`` keyword, it can be added so the script runs in the "
+"editor."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:103
@@ -222,7 +224,7 @@ msgid ""
 "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we "
 "created then add it as a dock in the editor. For this, you can rely on the "
 "function :ref:`add_control_to_dock() "
-"<class_EditorPlugin_add_control_to_dock>` from the :ref:`EditorPlugin "
+"<class_EditorPlugin_method_add_control_to_dock>` from the :ref:`EditorPlugin "
 "<class_EditorPlugin>` class."
 msgstr ""
 

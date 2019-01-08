@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,6 +96,9 @@ msgid ""
 "This will cause the timer to start automatically when you run the scene. You "
 "can leave the *Wait Time* at 1 second."
 msgstr ""
+"In den Eigenschaften des Timers, setze ein Häkchen in der \"An\" Box neben "
+"*Autostart*. Dies wird den Timer automatisch starten, wenn du die Szene "
+"startest. Die *Wait Time* solltest du bei 1 Sekunde lassen."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:39
 msgid ""
@@ -104,12 +107,18 @@ msgid ""
 "case of the Timer node, the one we're concerned with is \"timeout\". This "
 "signal is emitted whenever the Timer reaches ``0``."
 msgstr ""
+"Neben dem \"Inspektor\" Tab ist der \"Node\" Tab, wenn du auf diesen klickst "
+"siehst du alle Signale die der ausgewählte Node aktivieren kann. Im Fall der "
+"Timer Node interessiert uns gerade das \"timeout\" Signal, dies wird "
+"aktiviert sobald der Timer ``0`` erreicht."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:46
 msgid ""
 "Click on the \"timeout()\" signal and click \"Connect...\". You'll see the "
 "following window, where you can define how you want to connect the signal:"
 msgstr ""
+"Klick auf das \"timeout()\" Signal und danach auf \"Verbinden...\". Auf dem "
+"folgenden Fenster kannst du definieren wie das Signal verbunden werden soll:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:51
 msgid ""
@@ -118,6 +127,11 @@ msgid ""
 "- this is *not* an error, but is a visual indication that it's the node that "
 "is emitting the signal. Select the root node."
 msgstr ""
+"Auf der linken Seite sehen Sie die Knoten in Ihrer Szene und können den "
+"Knoten auswählen, den Sie auf das Signal \"hören\" möchten. Beachten Sie, "
+"dass der Timer-Knoten rot ist - dies ist *kein Fehler*, sondern ist eine "
+"visuelle Anzeige, dass es der Knoten ist, der das Signal aussendet. Wählen "
+"Sie den Wurzelknoten aus."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:56
 msgid ""
@@ -134,6 +148,11 @@ msgid ""
 "By default, Godot will create this function using the naming convention "
 "``_on_<node_name>_<signal_name>`` but you can change it if you wish."
 msgstr ""
+"Am unteren Rand des Fensters befindet sich ein Feld mit der Bezeichnung "
+"\"Methode im Knoten\". Dies ist der Name der Funktion im Skript des "
+"Zielknotens, die Sie verwenden möchten. Standardmäßig erstellt Godot diese "
+"Funktion mit der Namenskonvention ``_on_<node_name>_<signal_name>``, aber "
+"Sie können sie ändern, wenn Sie möchten."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:64
 msgid ""
@@ -148,12 +167,18 @@ msgid ""
 "Now we can replace the placeholder code with whatever code we want to run "
 "when the signal is received. Let's make the Sprite blink:"
 msgstr ""
+"Jetzt können wir den Platzhalter Code mit beliebigem Code ersetzen, den wir "
+"beim Empfangen des Signals ausführen möchten. Lasst uns die Sprite zum "
+"Blinzeln bringen:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:106
 msgid ""
 "Run the scene and you'll see the Sprite blinking on and off every second. "
 "You can change the Timer's *Wait Time* property to alter this."
 msgstr ""
+"Führen Sie die Szene aus und Sie werden sehen, wie das Sprite jede Sekunde "
+"blinkt. Sie können die Eigenschaft *Wartezeit* des Timers ändern, um dies zu "
+"verändern."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:110
 msgid "Connecting signals in code"
@@ -165,12 +190,18 @@ msgid ""
 "This is usually necessary when you're instancing nodes via code and so you "
 "can't use the editor to make the connection."
 msgstr ""
+"Sie können die Signalverbindung auch im Code und nicht mit dem Editor "
+"herstellen. Dies ist normalerweise notwendig, wenn Sie Knoten über Code "
+"instanziieren und daher nicht den Editor verwenden können, um die Verbindung "
+"herzustellen."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:116
 msgid ""
 "First, disconnect the signal by selecting the connection in the Timer's "
 "\"Node\" tab and clicking disconnect."
 msgstr ""
+"Trennen Sie zunächst das Signal, indem Sie die Verbindung auf der "
+"Registerkarte \"Knoten\" des Timers auswählen und auf Trennen klicken."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:121
 msgid ""
@@ -188,16 +219,21 @@ msgstr "Benutzerdefinierte Signale"
 #: ../../docs/getting_started/step_by_step/signals.rst:156
 msgid "You can also declare your own custom signals in Godot:"
 msgstr ""
+"Sie können auch Ihre eigenen benutzerdefinierten Signale in Godot erzeugen:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:174
 msgid ""
 "Once declared, your custom signals will appear in the Inspector and can be "
 "connected in the same way as a node's built-in signals."
 msgstr ""
+"Nach der Deklaration erscheinen Ihre benutzerdefinierten Signale im "
+"Inspektor und können wie die eingebauten Signale eines Knotens verbunden "
+"werden."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:177
 msgid "To emit a signal via code, use the ``emit`` function:"
 msgstr ""
+"Um ein Signal per Code auszusenden, verwenden Sie die Funktion ``emit``:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:203
 #, fuzzy
@@ -211,12 +247,18 @@ msgid ""
 "clicked, we create an instance of the bullet at the player's location. See :"
 "ref:`doc_instancing` for details."
 msgstr ""
+"Als ein weiteres Beispiel für die Signalverwendung betrachten wir einen "
+"Spielercharakter, der sich drehen und auf die Maus schießen kann. Jedes Mal, "
+"wenn die Maustaste gedrückt wird, erstellen wir eine Instanz der Kugel am "
+"Standort des Spielers. Siehe :ref:`doc_instancing` für Details."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:210
 msgid ""
 "However, if the bullets are added as children of the player, then they will "
 "remain \"attached\" to the player as it rotates:"
 msgstr ""
+"Wenn die Kugeln jedoch als Kinder des Spielers hinzugefügt werden, bleiben "
+"sie an den Spieler \"gebunden\", während er sich dreht:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:215
 msgid ""
@@ -227,10 +269,16 @@ msgid ""
 "\"main\" game scene, which may be the player's parent or even further up the "
 "tree."
 msgstr ""
+"Stattdessen müssen die Kugeln unabhängig von der Bewegung des Spielers sein "
+"- einmal abgefeuert, sollten sie sich weiterhin in einer geraden Linie "
+"bewegen und der Spieler kann sie nicht mehr beeinflussen. Anstatt als Kind "
+"des Spielers in den Szenenbaum aufgenommen zu werden, ist es sinnvoller, die "
+"Kugel als Kind der \"Haupt\"-Spielszene hinzuzufügen, die entweder der "
+"Elternteil des Spielers oder sogar weiter oben im Baum sein kann."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:221
 msgid "You could do this by adding the bullet directly:"
-msgstr ""
+msgstr "Sie können dies tun, indem Sie die Kugel direkt hinzufügen:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:234
 msgid ""
@@ -241,6 +289,13 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
+"Dies führt jedoch zu einem anderen Problem. Wenn Sie nun versuchen, Ihre "
+"\"Spieler\"-Szene unabhängig voneinander zu testen, stürzt sie beim Schießen "
+"ab, da kein übergeordneter Knoten zum Zugriff vorhanden ist. Dies macht es "
+"viel schwieriger, Ihren Spieler-Code unabhängig zu testen und bedeutet auch, "
+"dass, wenn Sie sich entscheiden, die Knotenstruktur Ihrer Hauptszene zu "
+"ändern, das übergeordnete Element des Spielers möglicherweise nicht mehr der "
+"geeignete Knoten ist, um die Kugeln zu erhalten."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
 msgid ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,8 @@ msgstr ""
 "提供了一些工具，使这个过程变得简单！"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:21
-msgid "SCREEN_TEXTURE built-in texture."
+#, fuzzy
+msgid "SCREEN_TEXTURE built-in texture"
 msgstr "SCREEN_TEXTURE内置纹理。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:23
@@ -58,10 +59,10 @@ msgid ""
 "in varying: SCREEN_UV can be used to obtain the UV for the current fragment. "
 "As a result, this simple 2D fragment shader:"
 msgstr ""
-"Godot :ref:`doc_shading_language` 有一个特殊的纹理，“SCREEN_TEXTURE”（对于深"
-"度，如果是3D，则为“DEPTH_TEXTURE”）。 它将屏幕的UV作为参数，并返回带有颜色的"
-"vec3 RGB。 一个特殊的内置变量：SCREEN_UV可用于获取当前片段的UV。 因此，这个简"
-"单的2D片段着色器："
+"Godot :ref:`doc_shading_language` 有一个特殊的纹理，“SCREEN_TEXTURE”(对于深"
+"度，如果是3D，则为“DEPTH_TEXTURE”)。 它将屏幕的UV作为参数，并返回带有颜色的"
+"vec3 RGB。 一个特殊的内置变量:SCREEN_UV可用于获取当前片段的UV。 因此，这个简"
+"单的2D片段着色器:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:34
 msgid "results in an invisible object, because it just shows what lies behind."
@@ -93,7 +94,7 @@ msgid ""
 "is a simple shader to adjust brightness, contrast and saturation:"
 msgstr ""
 "SCREEN_TEXTURE可用于很多事情。 有一个 *Screen Space Shaders* 的特殊演示，您可"
-"以下载查看和学习。 一个例子是一个简单的着色器来调整亮度，对比度和饱和度："
+"以下载查看和学习。 一个示例是一个简单的着色器来调整亮度，对比度和饱和度:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:69
 msgid "Behind the scenes"
@@ -116,7 +117,7 @@ msgid ""
 "not use the result of the first one, resulting in unexpected visuals:"
 msgstr ""
 "因此，如果使用SCREEN_TEXTURE的着色器重叠，则第二个着色器将不使用第一个着色器"
-"的结果，从而导致意外的视觉效果："
+"的结果，从而导致意外的视觉效果:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:83
 msgid ""
@@ -124,8 +125,8 @@ msgid ""
 "for SCREEN_TEXTURE as the first one below, so the first one \"disappears\", "
 "or is not visible."
 msgstr ""
-"在上图中，第二个球体（右上角）使用与下面第一个相同的SCREEN_TEXTURE源，因此第"
-"一个“消失”或不可见。"
+"在上图中，第二个球体(右上角)使用与下面第一个相同的SCREEN_TEXTURE源，因此第一"
+"个“消失”或不可见。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:87
 msgid ""
@@ -142,11 +143,11 @@ msgid ""
 msgstr ""
 "在2D中，这可以通过 :ref:`BackBufferCopy <class_BackBufferCopy>` 节点来纠正，"
 "该节点可以在两个球体之间实例化。 BackBufferCopy可以通过指定屏幕区域或整个屏幕"
-"来工作："
+"来工作:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:96
 msgid "With correct back-buffer copying, the two spheres blend correctly:"
-msgstr "通过正确的后缓冲区复制，两个球体正确混合："
+msgstr "通过正确的后缓冲区复制，两个球体正确混合:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:101
 msgid "Back-buffer logic"
@@ -156,7 +157,7 @@ msgstr "后缓冲逻辑"
 msgid ""
 "So, to make it clearer, here's how the backbuffer copying logic works in "
 "Godot:"
-msgstr "所以，为了更清楚，这里是backbuffer复制逻辑在Godot中的工作原理："
+msgstr "所以，为了更清楚，这里是backbuffer复制逻辑在Godot中的工作原理:"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:106
 msgid ""
@@ -175,10 +176,9 @@ msgid ""
 "screen only happens if SCREEN_TEXTURE is used in a node for the first time "
 "and no BackBufferCopy node (not disabled) was found before in tree-order."
 msgstr ""
-"如果在上述点的情况之前处理BackBufferCopy节点（即使未使用SCREEN_TEXTURE），则"
-"上述点中描述的此行为不会发生。 换句话说，只有在第一次在节点中使用"
-"SCREEN_TEXTURE并且在树顺序之前没有找到BackBufferCopy节点（未禁用）时，才会自"
-"动复制整个屏幕。"
+"如果在上述点的情况之前处理BackBufferCopy节点(即使未使用SCREEN_TEXTURE)，则上"
+"述点中描述的此行为不会发生。 换句话说，只有在第一次在节点中使用SCREEN_TEXTURE"
+"并且在树顺序之前没有找到BackBufferCopy节点(未禁用)时，才会自动复制整个屏幕。"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:115
 msgid ""
@@ -189,9 +189,9 @@ msgid ""
 "to copy back a region of the screen and then use SCREEN_TEXTURE on a "
 "different region. Avoid this behavior!"
 msgstr ""
-"BackBufferCopy可以复制整个屏幕或区域。 如果仅设置为区域（不是整个屏幕），并且"
-"着色器使用不在复制区域中的像素，则该读取的结果是未定义的（很可能是前一帧中的"
-"垃圾）。 换句话说，可以使用BackBufferCopy复制屏幕区域，然后在不同区域使用"
+"BackBufferCopy可以复制整个屏幕或区域。 如果仅设置为区域(不是整个屏幕)，并且着"
+"色器使用不在复制区域中的像素，则该读取的结果是未定义的(很可能是前一帧中的垃"
+"圾)。 换句话说，可以使用BackBufferCopy复制屏幕区域，然后在不同区域使用"
 "SCREEN_TEXTURE。 避免这种行为！"
 
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:124
@@ -210,4 +210,4 @@ msgstr ""
 #: ../../docs/tutorials/shading/screen-reading_shaders.rst:130
 msgid ""
 "The following code retrieves the 3D position below the pixel being drawn:"
-msgstr "以下代码检索正在绘制的像素下方的3D位置："
+msgstr "以下代码检索正在绘制的像素下方的3D位置:"

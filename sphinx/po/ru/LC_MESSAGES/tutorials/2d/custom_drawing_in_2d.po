@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr ""
 msgid ""
 "Add a script to any :ref:`CanvasItem <class_CanvasItem>` derived node, like :"
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
-"the _draw() function."
+"the ``_draw()`` function."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:58
@@ -96,15 +96,15 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:64
 msgid ""
-"The _draw() function is only called once, and then the draw commands are "
+"The ``_draw()`` function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:67
 msgid ""
 "If re-drawing is required because a state or something else changed, simply "
-"call :ref:`CanvasItem.update() <class_CanvasItem_update>` in that same node "
-"and a new _draw() call will happen."
+"call :ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that "
+"same node and a new ``_draw()`` call will happen."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:71
@@ -116,7 +116,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:115
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
-"update() from the _process() callback, like this:"
+"``update()`` from the ``_process()`` callback, like this:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:147
@@ -127,9 +127,9 @@ msgstr ""
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
 "something that Godot doesn't provide functions for. As an example, Godot "
-"provides a draw_circle() function that draws a whole circle. However, what "
-"about drawing a portion of a circle? You will have to code a function to "
-"perform this and draw it yourself."
+"provides a ``draw_circle()`` function that draws a whole circle. However, "
+"what about drawing a portion of a circle? You will have to code a function "
+"to perform this and draw it yourself."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
@@ -164,7 +164,7 @@ msgid ""
 "Remember the number of points our shape has to be decomposed into? We fixed "
 "this number in the ``nb_points`` variable to a value of ``32``. Then, we "
 "initialize an empty ``PoolVector2Array``, which is simply an array of "
-"``Vector2``s."
+"``Vector2``\\ s."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
@@ -180,22 +180,22 @@ msgstr ""
 msgid ""
 "The reason why each angle is decreased by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
-"stuff...). However, to be simple, cos() and sin() use radians, not degrees. "
-"The angle of 0° (0 radian) starts at 3 o'clock, although we want to start "
-"counting at 12 o'clock. So we decrease each angle by 90° in order to start "
-"counting from 12 o'clock."
+"stuff...). However, to be simple, ``cos()`` and ``sin()`` use radians, not "
+"degrees. The angle of 0° (0 radian) starts at 3 o'clock, although we want to "
+"start counting at 12 o'clock. So we decrease each angle by 90° in order to "
+"start counting from 12 o'clock."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:217
 msgid ""
-"The actual position of a point located on a circle at angle 'angle' (in "
-"radians) is given by Vector2(cos(angle), sin(angle)). Since cos() and sin() "
-"return values between -1 and 1, the position is located on a circle of "
-"radius 1. To have this position on our support circle, which has a radius of "
-"'radius', we simply need to multiply the position by 'radius'. Finally, we "
-"need to position our support circle at the 'center' position, which is "
-"performed by adding it to our Vector2 value. Finally, we insert the point in "
-"the PoolVector2Array which was previously defined."
+"The actual position of a point located on a circle at angle ``angle`` (in "
+"radians) is given by ``Vector2(cos(angle), sin(angle))``. Since ``cos()`` "
+"and ``sin()`` return values between -1 and 1, the position is located on a "
+"circle of radius 1. To have this position on our support circle, which has a "
+"radius of ``radius``, we simply need to multiply the position by ``radius``. "
+"Finally, we need to position our support circle at the ``center`` position, "
+"which is performed by adding it to our ``Vector2`` value. Finally, we insert "
+"the point in the ``PoolVector2Array`` which was previously defined."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:225
@@ -218,7 +218,7 @@ msgstr "Создание главного меню"
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:237
 msgid ""
 "We now have a function that draws stuff on the screen; it is time to call it "
-"inside the _draw() function:"
+"inside the ``_draw()`` function:"
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
@@ -254,7 +254,7 @@ msgstr ""
 msgid ""
 "First, we have to make both angle_from and angle_to variables global at the "
 "top of our script. Also note that you can store them in other nodes and "
-"access them using get_node()."
+"access them using ``get_node()``."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:341
@@ -264,25 +264,25 @@ msgstr ""
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:343
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
-"not forget to wrap() the resulting values between 0 and 360°! That is, if "
-"the angle is 361°, then it is actually 1°. If you don't wrap these values, "
-"the script will work correctly, but the angle values will grow bigger and "
-"bigger over time until they reach the maximum integer value Godot can manage "
-"(2^31 - 1). When this happens, Godot may crash or produce unexpected "
-"behavior. Since Godot doesn't provide a wrap() function, we'll create it "
-"here, as it is relatively simple."
+"not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
+"if the angle is 361°, then it is actually 1°. If you don't wrap these "
+"values, the script will work correctly, but the angle values will grow "
+"bigger and bigger over time until they reach the maximum integer value Godot "
+"can manage (``2^31 - 1``). When this happens, Godot may crash or produce "
+"unexpected behavior. Since Godot doesn't provide a ``wrap()`` function, "
+"we'll create it here, as it is relatively simple."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:352
 msgid ""
-"Finally, we must not forget to call the update() function, which "
-"automatically calls _draw(). This way, you can control when you want to "
+"Finally, we must not forget to call the ``update()`` function, which "
+"automatically calls ``_draw()``. This way, you can control when you want to "
 "refresh the frame."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:397
 msgid ""
-"Also, don't forget to modify the _draw() function to make use of these "
+"Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"
 msgstr ""
 
@@ -295,18 +295,19 @@ msgstr ""
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
 "can. We need to \"normalize\" the drawing by this speed; to achieve that, we "
-"have to make use of the 'delta' parameter of the _process() function. "
-"'delta' contains the time elapsed between the two last rendered frames. It "
+"have to make use of the ``delta`` parameter of the ``_process()`` function. "
+"``delta`` contains the time elapsed between the two last rendered frames. It "
 "is generally small (about 0.0003 seconds, but this depends on your "
-"hardware), so using 'delta' to control your drawing ensures that your "
+"hardware), so using ``delta`` to control your drawing ensures that your "
 "program runs at the same speed on everybody's hardware."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:432
 msgid ""
-"In our case, we simply need to multiply our 'rotation_angle' variable by "
-"'delta' in the _process() function. This way, our 2 angles will be increased "
-"by a much smaller value, which directly depends on the rendering speed."
+"In our case, we simply need to multiply our ``rotation_angle`` variable by "
+"``delta`` in the ``_process()`` function. This way, our 2 angles will be "
+"increased by a much smaller value, which directly depends on the rendering "
+"speed."
 msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:466

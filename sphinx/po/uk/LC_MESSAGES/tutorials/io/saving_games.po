@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,10 +68,10 @@ msgid ""
 "The next step is to serialize the data. This makes it much easier to read "
 "and store to disk. In this case, we're assuming each member of group Persist "
 "is an instanced node and thus has a path. GDScript has helper functions for "
-"this, such as :ref:`to_json() <class_@GDScript_to_json>` and :ref:"
-"`parse_json() <class_@GDScript_parse_json>`, so we will use a dictionary. "
-"Our node needs to contain a save function that returns this data. The save "
-"function will look like this:"
+"this, such as :ref:`to_json() <class_@GDScript_method_to_json>` and :ref:"
+"`parse_json() <class_@GDScript_method_parse_json>`, so we will use a "
+"dictionary. Our node needs to contain a save function that returns this "
+"data. The save function will look like this:"
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:114

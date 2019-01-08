@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "Here are some use cases:"
 msgstr ""
 "您可以使用它来做很多事情，它在层次设计中非常有用，可以直观地呈现难以预测的事"
-"物。 以下是一些用例："
+"物。 以下是一些用例:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:13
 msgid ""
@@ -50,8 +50,8 @@ msgid ""
 "you can draw cannonball's trajectory in the editor, making level design a "
 "lot easier."
 msgstr ""
-"如果你有一门大炮发出受物理（重力）影响的炮弹，你可以在编辑器中绘制炮弹的轨"
-"迹，使得关卡设计更容易。"
+"如果您有一门大炮发出受物理(重力)影响的炮弹，您可以在编辑器中绘制炮弹的轨迹，"
+"使得关卡设计更容易。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:14
 msgid ""
@@ -59,7 +59,7 @@ msgid ""
 "jump height a player would reach if it jumped on one, also making level "
 "design easier."
 msgstr ""
-"如果你有不同跳跃高度的跳线，你可以绘制游戏角色能跳过的最大跳跃高度，也可以让"
+"如果您有不同跳跃高度的跳线，您可以绘制游戏角色能跳过的最大跳跃高度，也可以让"
 "关卡设计变得更容易。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:15
@@ -86,13 +86,13 @@ msgstr "要检查您当前是否在编辑器中，请使用 : ``Engine.editor_hi
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:24
 msgid "For example, if you want to execute some code only in editor, use:"
-msgstr "例如，如果只想在编辑器中执行某些代码，请使用："
+msgstr "例如，如果只想在编辑器中执行某些代码，请使用:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:32
 msgid ""
 "On the other hand, if you want to execute code only in game, simply negate "
 "previous expression:"
-msgstr "另一方面，如果您只想在游戏中执行代码，只需否定先前的表达式："
+msgstr "另一方面，如果您只想在游戏中执行代码，只需否定先前的表达式:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:40
 msgid ""
@@ -102,7 +102,7 @@ msgstr "没有上述任何条件的代码片段将在编辑器和游戏中运行
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:42
 msgid "Here is how a ``_process()`` function might look like for you:"
-msgstr "以下是 ``_process()`` 函数的示例："
+msgstr "以下是 ``_process()`` 函数的示例:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:56
 msgid ""
@@ -123,26 +123,26 @@ msgid ""
 "Attach and open a script, and change it to this:"
 msgstr ""
 "在场景中添加一个 ``Sprite`` 节点，并将纹理设置为Godot图标。 添加并打开脚本，"
-"并将其更改为："
+"并将其更改为:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:72
 msgid ""
 "Save the script and return to the editor. You should now see your object "
 "rotate. If you run the game, it will also rotate."
 msgstr ""
-"保存脚本并返回编辑器。 现在您应该看到您的对象在旋转。 如果你运行游戏，它也会"
+"保存脚本并返回编辑器。 现在您应该看到您的对象在旋转。 如果您运行游戏，它也会"
 "旋转。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:76
 msgid ""
 "If you don't see the changes, reload the scene (close it and open it again)."
-msgstr "如果您没有看到变化，请重新加载场景（关闭它并再次打开）。"
+msgstr "如果您没有看到变化，请重新加载场景(关闭它并再次打开)。"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:78
 msgid ""
 "Now let's choose which code runs when. Modify your ``_process()`` function "
 "to look like this:"
-msgstr "现在让我们选择何时运行代码。 将 ``_process()`` 函数修改为："
+msgstr "现在让我们选择何时运行代码。 将 ``_process()`` 函数修改为:"
 
 #: ../../docs/tutorials/misc/running_code_in_the_editor.rst:89
 msgid ""
@@ -171,6 +171,6 @@ msgid ""
 "the top. Also make sure you divide your code into part that runs in editor "
 "and part that runs in game. This way you can find your bug easier."
 msgstr ""
-"不正确地使用 ``tool`` 可能会产生许多错误。 建议首先按照你想要的方式编写代码，"
+"不正确地使用 ``tool`` 可能会产生许多错误。 建议首先按照您想要的方式编写代码，"
 "然后只在顶部添加 ``tool`` 关键字。 还要确保将代码划分为在编辑器中运行的部分和"
 "在游戏中运行的部分。 这样您就可以更轻松地找到您的错误。"

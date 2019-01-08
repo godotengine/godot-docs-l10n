@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,8 +92,8 @@ msgid ""
 "value seems not to matter."
 msgstr ""
 "文件描述符看起来就像 :code:`[gd_scene load_steps=1 format=2]` 并且应该是文件"
-"中的第一个条目。 load_steps参数应该（理论上）是文件中的资源数量，但实际上它的"
-"值似乎并不重要。"
+"中的第一个条目。 load_steps参数应该(理论上)是文件中的资源数量，但实际上它的值"
+"似乎并不重要。"
 
 #: ../../docs/development/file_formats/tscn.rst:34
 msgid ""
@@ -103,8 +103,8 @@ msgid ""
 "external resources should start with :code:`[ext_resource .....]`"
 msgstr ""
 "这些部分应按顺序出现，但很难区分它们。 它们之间的唯一区别是标题中该部分中所有"
-"项目的第一个元素。 例如，所有外部资源的标题应该以：code："
-"`[ext_resource .....]`开头"
+"项目的第一个元素。 例如，所有外部资源的标题应该以:code:`[ext_resource .....]`"
+"开头"
 
 #: ../../docs/development/file_formats/tscn.rst:41
 msgid "Entries inside the file"
@@ -115,8 +115,8 @@ msgid ""
 "A heading looks like: :code:`[<resource_type> key=value key=value "
 "key=value ...]` Where resource_type is one of:"
 msgstr ""
-"标题如下:: code：`[<resource_type> key = value key = value key = value ...]`"
-"其中resource_type是以下之一："
+"标题如下:: code:`[<resource_type> key = value key = value key = value ...]`其"
+"中resource_type是以下之一:"
 
 #: ../../docs/development/file_formats/tscn.rst:47
 msgid "ext_resource"
@@ -140,8 +140,8 @@ msgid ""
 "values can be complex datatypes such as arrays, transformations, colors, and "
 "so on. For example, a spatial node looks like:"
 msgstr ""
-"在每个标题下面都是零或更多：代码：`key = value`对。 值可以是复杂的数据类型，"
-"例如数组，转换，颜色等。 例如，空间节点如下所示："
+"在每个标题下面都是零或更多:代码:`key = value`对。 值可以是复杂的数据类型，例"
+"如数组，转换，颜色等。 例如，空间节点如下所示:"
 
 #: ../../docs/development/file_formats/tscn.rst:62
 msgid "The scene tree"
@@ -153,13 +153,13 @@ msgid ""
 "its name, parent and (most of the time) a type. For example :code:`[node "
 "type=\"Camera\" name=\"PlayerCamera\" parent=\"Player/Head\"]`"
 msgstr ""
-"场景树由......节点组成！ 每个节点的标题由其名称，父级和（大多数时间）类型组"
-"成。 例如：code：`[node type =“Camera”name =“PlayerCamera”parent =“Player / "
+"场景树由......节点组成！ 每个节点的标题由其名称，父级和(大多数时间)类型组"
+"成。 例如:code:`[node type =“Camera”name =“PlayerCamera”parent =“Player / "
 "Head”]`"
 
 #: ../../docs/development/file_formats/tscn.rst:68
 msgid "Other valid keywords include:"
-msgstr "其他有效关键词包括："
+msgstr "其他有效关键词包括:"
 
 #: ../../docs/development/file_formats/tscn.rst:70
 msgid "instance"
@@ -175,7 +175,7 @@ msgstr "拥有者"
 
 #: ../../docs/development/file_formats/tscn.rst:73
 msgid "index (if two nodes have the same name)"
-msgstr "索引（如果两个节点具有相同的名称）"
+msgstr "索引(如果两个节点具有相同的名称)"
 
 #: ../../docs/development/file_formats/tscn.rst:74
 msgid "groups"
@@ -190,10 +190,10 @@ msgid ""
 "root's name. If it is a direct child of the scene root, it should be :code:`"
 "\".\"`. Here is an example scene tree (but without any node content)."
 msgstr ""
-"文件中的第一个节点不应该在其标题中包含：code：`parent = Path / To / Node`条"
-"目，它是场景根。 所有场景文件应该只有一个场景根。 它没有，戈多将无法导入文"
-"件。 其他节点的父路径应该是绝对的，但没有场景根的名称。 如果它是场景根的直接"
-"子节点，它应该是：code：`“。”`。 这是一个示例场景树（但没有任何节点内容）。"
+"文件中的第一个节点不应该在其标题中包含:code:`parent = Path / To / Node`条目，"
+"它是场景根。 所有场景文件应该只有一个场景根。 它没有，Godot将无法导入文件。 "
+"其他节点的父路径应该是绝对的，但没有场景根的名称。 如果它是场景根的直接子节"
+"点，它应该是:code:`“。”`。 这是一个示例场景树(但没有任何节点内容)。"
 
 #: ../../docs/development/file_formats/tscn.rst:90
 msgid ""
@@ -202,7 +202,7 @@ msgid ""
 "file with that node in it. Some example nodes are:"
 msgstr ""
 "与内部资源类似，每个节点的文档目前尚未完成。 幸运的是，很容易找到它，因为您只"
-"需保存包含该节点的文件即可。 一些示例节点是："
+"需保存包含该节点的文件即可。 一些示例节点是:"
 
 #: ../../docs/development/file_formats/tscn.rst:128
 msgid "NodePath"
@@ -216,10 +216,10 @@ msgid ""
 "NodePath like mesh node use :code:`NodePath()` to point to its skeleton, "
 "animation track use :code:`NodePath()` points to animated attribute in node."
 msgstr ""
-"树结构不足以表示整个场景，Godot使用a：code：`NodePath（Path / To / Node）`结"
-"构来引用场景树中任何位置的节点的另一个节点或属性。 NodePath的一些典型用法就像"
-"网格节点一样：代码：`NodePath（）`指向它的骨架，动画轨道使用：代码："
-"`NodePath（）`指向节点中的动画属性。"
+"树结构不足以表示整个场景，Godot使用a:code:`NodePath(Path / To / Node)`结构来"
+"引用场景树中任何位置的节点的另一个节点或属性。 NodePath的一些典型用法就像网格"
+"节点一样:代码:`NodePath()`指向它的骨架，动画轨道使用:代码:`NodePath()`指向节"
+"点中的动画属性。"
 
 #: ../../docs/development/file_formats/tscn.rst:153
 msgid "Skeleton"
@@ -232,7 +232,7 @@ msgid ""
 "Attribute=Value`, attributes of bone consists of"
 msgstr ""
 "Skeleton节点继承Spatial节点，除了它可能有一个以key，value对描述的骨骼列表，格"
-"式为：code：`bones / Id / Attribute = Value`，bone的属性由"
+"式为:code:`bones / Id / Attribute = Value`，bone的属性由"
 
 #: ../../docs/development/file_formats/tscn.rst:159
 msgid "name"
@@ -261,34 +261,33 @@ msgstr "bound_children"
 
 #: ../../docs/development/file_formats/tscn.rst:166
 msgid ":code:`name` must put as the first attribute of each bone"
-msgstr "：code：`name`必须作为每个骨骼的第一个属性"
+msgstr ":code:`name`必须作为每个骨骼的第一个属性"
 
 #: ../../docs/development/file_formats/tscn.rst:168
 msgid ""
 ":code:`parent` is the index of parent bone in the bone list, with parent "
 "index, the bone list is built to a bone tree"
 msgstr ""
-"：code：`parent`是骨骼列表中父骨骼的索引，带有父索引，骨骼列表构建到骨骼树"
+":code:`parent`是骨骼列表中父骨骼的索引，带有父索引，骨骼列表构建到骨骼树"
 
 #: ../../docs/development/file_formats/tscn.rst:171
 msgid ":code:`rest` is the transform matrix of bone in rest position"
-msgstr "：code：`rest`是休息位置骨骼的变换矩阵"
+msgstr ":code:`rest`是休息位置骨骼的变换矩阵"
 
 #: ../../docs/development/file_formats/tscn.rst:173
 msgid ":code:`pose` is the pose matrix use :code:`rest` as basis"
-msgstr "：code：`pose`是姿势矩阵用法：代码：`rest`作为基础"
+msgstr ":code:`pose`是姿势矩阵用法:代码:`rest`作为基础"
 
 #: ../../docs/development/file_formats/tscn.rst:175
 msgid ""
 ":code:`bound_children` is a list of NodePath() points to BoneAttachments "
 "belong to this bone"
 msgstr ""
-"：code：`bound_children`是一个NodePath（）的列表，指向BoneAttachments属于这个"
-"骨骼"
+":code:`bound_children`是一个NodePath()的列表，指向BoneAttachments属于这个骨骼"
 
 #: ../../docs/development/file_formats/tscn.rst:178
 msgid "An example of a skeleton node with two bones:"
-msgstr "具有两个骨骼的骨架节点的示例："
+msgstr "具有两个骨骼的骨架节点的示例:"
 
 #: ../../docs/development/file_formats/tscn.rst:198
 msgid "BoneAttachment"
@@ -302,12 +301,12 @@ msgid ""
 "BoneAttachment node in its :code:`bound_children` list."
 msgstr ""
 "BoneAttachment节点是一个中间节点，用于描述某个节点是Skeleton节点中单个骨骼的"
-"父级。 BoneAttachment有一个：code：`bone_name = NameOfBone`，作为父对应的骨骼"
-"在其:: code：`bound_children`列表中有BoneAttachment节点。"
+"父级。 BoneAttachment有一个:code:`bone_name = NameOfBone`，作为父对应的骨骼在"
+"其:: code:`bound_children`列表中有BoneAttachment节点。"
 
 #: ../../docs/development/file_formats/tscn.rst:205
 msgid "An example of one MeshInstance parented to a bone in Skeleton:"
-msgstr "一个MeshInstance的例子，它是Skeleton中一个骨骼的父级："
+msgstr "一个MeshInstance的示例，它是Skeleton中一个骨骼的父级:"
 
 #: ../../docs/development/file_formats/tscn.rst:229
 msgid "AnimationPlayer"
@@ -321,10 +320,10 @@ msgid ""
 "AnimationPlayer. The root node is stored as :code:`root_node=NodePath(Path/"
 "To/Node)`."
 msgstr ""
-"AnimationPlayer用作动画库。 它有以下格式列出的动画：代码：`anim / Name = "
-"SubResource（ResourceId）`，每个都引用一个动画内部资源。 所有动画资源都使用"
-"AnimationPlayer的根节点。 根节点存储为：code：`root_node = NodePath（Path / "
-"To / Node）`。"
+"AnimationPlayer用作动画库。 它有以下格式列出的动画:代码:`anim / Name = "
+"SubResource(ResourceId)`，每个都引用一个动画内部资源。 所有动画资源都使用"
+"AnimationPlayer的根节点。 根节点存储为:code:`root_node = NodePath(Path / "
+"To / Node)`。"
 
 #: ../../docs/development/file_formats/tscn.rst:249
 msgid "Resources"
@@ -347,23 +346,23 @@ msgid ""
 "methods to refer to internal and external resource, you can have the same ID "
 "for both an internal and external resource."
 msgstr ""
-"资源的引用由资源标题中的id号处理。 外部资源和内部资源用：代码："
-"`ExtResource（id）`和：code：`SubResource（id）`。 因为有不同的方法来引用内部"
-"和外部资源，所以内部和外部资源都可以使用相同的ID。"
+"资源的引用由资源标题中的id号处理。 外部资源和内部资源用:代码:"
+"`ExtResource(id)`和:code:`SubResource(id)`。 因为有不同的方法来引用内部和外部"
+"资源，所以内部和外部资源都可以使用相同的ID。"
 
 #: ../../docs/development/file_formats/tscn.rst:261
 msgid ""
 "For example, to refer to the resource :code:`[ext_resource id=3 type="
 "\"PackedScene\" path=....]` you would use :code:`ExtResource(3)`"
 msgstr ""
-"例如，要引用资源：代码：`[ext_resource id = 3 type =“PackedScene”path "
-"= ....]`你将使用：code：`ExtResource（3）`"
+"例如，要引用资源:代码:`[ext_resource id = 3 type =“PackedScene”path = ....]`"
+"您将使用:code:`ExtResource(3)`"
 
 #: ../../docs/development/file_formats/tscn.rst:268
 msgid ""
 "External resources are links to resources not contained within the TSCN file "
 "itself. An external resource consists of:"
-msgstr "外部资源是指TSCN文件本身未包含的资源的链接。 外部资源包括："
+msgstr "外部资源是指TSCN文件本身未包含的资源的链接。 外部资源包括:"
 
 #: ../../docs/development/file_formats/tscn.rst:271
 msgid "A path"
@@ -383,12 +382,12 @@ msgid ""
 "thus prefixed with :code:`res://`, but paths relative to the TSCN file's "
 "location are also valid."
 msgstr ""
-"Godot总是生成相对于资源目录的绝对路径，因此前缀为：code：`res：//`，但相对于"
-"TSCN文件位置的路径也是有效的。"
+"Godot总是生成相对于资源目录的绝对路径，因此前缀为:code:`res://`，但相对于TSCN"
+"文件位置的路径也是有效的。"
 
 #: ../../docs/development/file_formats/tscn.rst:279
 msgid "Some example external resources are:"
-msgstr "一些示例外部资源是："
+msgstr "一些示例外部资源是:"
 
 #: ../../docs/development/file_formats/tscn.rst:289
 msgid ""
@@ -398,9 +397,9 @@ msgid ""
 "have a path. Internal resources also have :code:`key=value` pairs under each "
 "heading. For example, a capsule collision shape looks like:"
 msgstr ""
-"TSCN文件可以包含网格，材料和其他数据，这些文件包含在文件的内部资源部分中。 内"
-"部资源的标题看起来与外部资源的标题类似，但没有路径。 内部资源也有：代码：每个"
-"标题下的`key = value`对。 例如，胶囊碰撞形状如下所示："
+"TSCN文件可以包含网格，材质和其他数据，这些文件包含在文件的内部资源部分中。 内"
+"部资源的标题看起来与外部资源的标题类似，但没有路径。 内部资源也有:代码:每个标"
+"题下的`key = value`对。 例如，胶囊碰撞形状如下所示:"
 
 #: ../../docs/development/file_formats/tscn.rst:302
 msgid ""
@@ -409,8 +408,8 @@ msgid ""
 "before the reference to it. Thus, in the internal resources section of the "
 "file, order does matter."
 msgstr ""
-"某些内部资源包含指向其他内部资源的链接（例如具有材质的网格）。 在这种情况下，"
-"引用资源必须出现在引用之前。 因此，在文件的内部资源部分，顺序确实很重要。"
+"某些内部资源包含指向其他内部资源的链接(例如具有材质的网格)。 在这种情况下，引"
+"用资源必须出现在引用之前。 因此，在文件的内部资源部分，顺序确实很重要。"
 
 #: ../../docs/development/file_formats/tscn.rst:307
 msgid ""
@@ -430,8 +429,8 @@ msgid ""
 "ArrayMesh consists of several surfaces, each in the format :code:`surface"
 "\\Index={}`, each surface is a set of vertex and a material."
 msgstr ""
-"ArrayMesh由几个表面组成，每个表面的格式为：code：`surface \\ Index = {}`，每"
-"个表面都是一组顶点和一个材质。"
+"ArrayMesh由几个表面组成，每个表面的格式为:code:`surface \\ Index = {}`，每个"
+"表面都是一组顶点和一个材质。"
 
 #: ../../docs/development/file_formats/tscn.rst:317
 msgid "TSCN support two format of surface,"
@@ -439,7 +438,7 @@ msgstr "TSCN支持两种格式的表面，"
 
 #: ../../docs/development/file_formats/tscn.rst:319
 msgid "for the old format, each surface has three essential keys:"
-msgstr "对于旧格式，每个表面都有三个基本键："
+msgstr "对于旧格式，每个表面都有三个基本键:"
 
 #: ../../docs/development/file_formats/tscn.rst:321
 msgid "primitive"
@@ -458,12 +457,12 @@ msgid ""
 ":code:`primitive` is an enumerate variable, :code:`primitive=4` which is "
 "PRIMITIVE_TRIANGLES is frequently used."
 msgstr ""
-"：code：`primitive`是一个枚举变量，：code：`primitive = 4`，经常使用"
+":code:`primitive`是一个枚举变量，:code:`primitive = 4`，经常使用"
 "PRIMITIVE_TRIANGLES。"
 
 #: ../../docs/development/file_formats/tscn.rst:328
 msgid ":code:`arrays` as the name suggests is an array of array, it contains:"
-msgstr "：code：`arrays`顾名思义就是一个数组数组，它包含："
+msgstr ":code:`arrays`顾名思义就是一个数组数组，它包含:"
 
 #: ../../docs/development/file_formats/tscn.rst:330
 msgid "An array of vertex position"
@@ -502,12 +501,12 @@ msgid ""
 ":code:`morph_arrays` is an array of morph, each morph is exactly an :code:"
 "`arrays` without vertex index array."
 msgstr ""
-"：code：`morph_arrays`是一个变形数组，每个变形都是一个：code：`arrays`，没有"
-"顶点索引数组。"
+":code:`morph_arrays`是一个变形数组，每个变形都是一个:code:`arrays`，没有顶点"
+"索引数组。"
 
 #: ../../docs/development/file_formats/tscn.rst:342
 msgid "An example of ArrayMesh:"
-msgstr "ArrayMesh的一个例子："
+msgstr "ArrayMesh的一个示例:"
 
 #: ../../docs/development/file_formats/tscn.rst:365
 msgid "Animation"
@@ -518,7 +517,7 @@ msgid ""
 "An animation resource consists of tracks. Besides, it has 'length', 'loop' "
 "and 'step' applied to all the tracks."
 msgstr ""
-"动画资源由轨道组成。 此外，它还有'长度'，'循环'和'步骤'应用于所有曲目。"
+"动画资源由轨道组成。 此外，它还有'长度'，'循环'和'步骤'应用于所有轨道。"
 
 #: ../../docs/development/file_formats/tscn.rst:370
 msgid "length"
@@ -534,15 +533,14 @@ msgstr "step"
 
 #: ../../docs/development/file_formats/tscn.rst:374
 msgid ":code:`length` and :code:`step` are both time in seconds"
-msgstr "：code：`length`和：code：`step`都是以秒为单位的时间"
+msgstr ":code:`length`和:code:`step`都是以秒为单位的时间"
 
 #: ../../docs/development/file_formats/tscn.rst:376
 msgid ""
 "Each track is described by a list of (key, value) pairs in the format :code:"
 "`tracks/Id/Attribute`, it includes:"
 msgstr ""
-"每个轨道由（键，值）对列表描述，格式为：code：`tracks / Id / Attribute`，它包"
-"括："
+"每个轨道由(键，值)对列表描述，格式为:code:`tracks / Id / Attribute`，它包括:"
 
 #: ../../docs/development/file_formats/tscn.rst:379
 msgid "type"
@@ -572,7 +570,7 @@ msgstr "imported"
 msgid ""
 "The :code:`type` must be put as the first attribute of each track. The value "
 "of :code:`type` can be:"
-msgstr "：code：`type`必须作为每个轨道的第一个属性。 值：code：`type`可以是："
+msgstr ":code:`type`必须作为每个轨道的第一个属性。 值:code:`type`可以是:"
 
 #: ../../docs/development/file_formats/tscn.rst:390
 msgid "'transform'"
@@ -592,35 +590,33 @@ msgid ""
 "is the path from animation root node (property of AnimationPlayer) to the "
 "animated node or attribute."
 msgstr ""
-"：code：`path`的格式为：code：`NodePath（Path / To / Node：Attribute）`。 它"
-"是从动画根节点（AnimationPlayer的属性）到动画节点或属性的路径。"
+":code:`path`的格式为:code:`NodePath(Path / To / Node:Attribute)`。 它是从动画"
+"根节点(AnimationPlayer的属性)到动画节点或属性的路径。"
 
 #: ../../docs/development/file_formats/tscn.rst:398
 msgid ""
 "The :code:`interp` is the method to interpolate frames from the keyframes. "
 "it is a enum variable and can has value:"
-msgstr ""
-"：code：`interp`是从关键帧插入帧的方法。 它是一个枚举变量，可以有价值："
+msgstr ":code:`interp`是从关键帧插入帧的方法。 它是一个枚举变量，可以有价值:"
 
 #: ../../docs/development/file_formats/tscn.rst:401
 msgid "0 (constant)"
-msgstr "0（常数）"
+msgstr "0(常数)"
 
 #: ../../docs/development/file_formats/tscn.rst:402
 msgid "1 (linear)"
-msgstr "1（线性）"
+msgstr "1(线性)"
 
 #: ../../docs/development/file_formats/tscn.rst:403
 msgid "2 (cubic)"
-msgstr "2（立方）"
+msgstr "2(立方)"
 
 #: ../../docs/development/file_formats/tscn.rst:405
 msgid ""
 "The :code:`keys` is the keyframes, it appears as a PoolRealArray() but have "
 "different structure for track with different type"
 msgstr ""
-"：code：`keys`是关键帧，它显示为PoolRealArray（）但具有不同类型的轨道的不同结"
-"构"
+":code:`keys`是关键帧，它显示为PoolRealArray()但具有不同类型的轨道的不同结构"
 
 #: ../../docs/development/file_formats/tscn.rst:408
 msgid ""
@@ -630,6 +626,6 @@ msgid ""
 "translation vector, followed by four number rotation quaternion (x,y,z,w) "
 "and finally a three number scale vector."
 msgstr ""
-"变换轨道使用：code：`keys`中的每12个实数来描述一个关键帧。 第一个数字是时间"
-"戳，第二个数字是转换（转换轨道中默认为1.0），后跟三个数字转换矢量，后跟四个数"
-"字旋转四元数（x，y，z，w），最后是三个数字刻度 向量。"
+"变换轨道使用:code:`keys`中的每12个实数来描述一个关键帧。 第一个数字是时间戳，"
+"第二个数字是转换(转换轨道中默认为1.0)，后跟三个数字转换向量，后跟四个数字旋转"
+"四元数(x，y，z，w)，最后是三个数字刻度 向量。"

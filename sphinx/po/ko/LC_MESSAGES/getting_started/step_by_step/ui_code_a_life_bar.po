@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2018, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-13 12:14+0100\n"
+"POT-Creation-Date: 2019-01-08 11:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,12 @@ msgid "Intro"
 msgstr "소개"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:9
-#, fuzzy
 msgid ""
 "In this tutorial, you will connect a character to a life bar and animate the "
 "health loss."
 msgstr ""
-"이 튜토리얼에서는 우리는 캐릭터를 체력 막대와 연결하고 체력이 줄어드는 것을 "
-"표현할 것입니다."
+"이 튜토리얼에서, 당신은 캐릭터를 체력 막대와 연결하고 체력이 줄어드는 것을 구"
+"현할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:14
 msgid ""
@@ -110,7 +109,6 @@ msgid "To do this, we will use **signals**."
 msgstr "그러기 위해서, 우리는 **시그널(signals)** 을 사용할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:49
-#, fuzzy
 msgid ""
 "Signals are Godot's version of the Observer pattern. They allow us to send "
 "out some message. Other nodes can connect to the object that **emits** the "
@@ -122,12 +120,12 @@ msgid ""
 "l0BkQxF7X3E>`_ on GDquest."
 msgstr ""
 "시그널은 옵저버 패턴의 Godot 버전입니다. 그들로 메시지를 전달할 수 있습니다. "
-"다른 노드는 시그널을 **방출(emits)** 하고 정보를 받을 수 있는 다른 물체로 연"
-"결할 수 있습니다. 이것은 사용자 인터페이스와 업적 달성 시스템에 많이 쓰일 강"
-"력한 도구입니다. 그래도 어디서든 그들을 사용하기를 권하진 않습니다. 두 노드"
-"를 연결하면 노드 간의 커플링이 생겨납니다. 많은 연결이 있다면, 관리하기가 어"
-"려워집니다. GDquest의 `signals video tutorial <https://youtu.be/"
-"l0BkQxF7X3E>`_ 에서 더 많은 정보를 보실 수 있습니다."
+"다른 노드들은 시그널을 **방출(emits)** 하고 정보를 받을 수 있는 다른 물체와 "
+"연결할 수 있습니다. 이것은 사용자 인터페이스와 업적 달성 시스템에 많이 쓰일 "
+"강력한 도구입니다. 그러나 그것들을 남용하기를 권하진 않습니다. 두 노드를 연결"
+"하면 노드 간의 커플링이 생겨납니다. 많은 연결이 있다면, 관리하기가 어려워집니"
+"다. GDquest의 `signals video tutorial <https://youtu.be/l0BkQxF7X3E>`_ 에서 "
+"더 많은 정보를 보실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:53
 msgid "Download and explore the start project"
@@ -540,9 +538,9 @@ msgstr "Godot는 콜백 메서드를 적어 사용자에게 전달합니다"
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
 #, fuzzy
 msgid ""
-"Inside the parens after the function name, add a ``player_health`` argument. "
-"When the player emits the ``health_changed`` signal, it will send its "
-"current ``health`` alongside it. Your code should look like:"
+"Inside the parentheses after the function name, add a ``player_health`` "
+"argument. When the player emits the ``health_changed`` signal, it will send "
+"its current ``health`` alongside it. Your code should look like:"
 msgstr ""
 "함수 이름 다음의 괄호 안에, ``player_health`` 인수를 추가하세요. 플레이어가 "
 "``health_changed`` 시그널을 방출할 때 그것을 ``health`` 와 함께 보낼 것입니"
