@@ -2,7 +2,7 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2018.
+# Yuri Chornoivan <yurchor@ukr.net>, 2018-2019.
 # Александр <ol-vin@mail.ru>, 2018.
 # Максим Якимчук <xpinovo@gmail.com>, 2018-2019.
 #
@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Ukrainian (Godot Engine)\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-08 11:44+0100\n"
-"PO-Revision-Date: 2019-01-08 08:59+0000\n"
+"PO-Revision-Date: 2019-01-09 09:13+0000\n"
 "Last-Translator: Максим Якимчук <xpinovo@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/uk/>\n"
@@ -75,7 +75,6 @@ msgstr ""
 "нам покращити документацію, повідомивши нам про це!"
 
 #: ../../docs/index.rst:29
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -84,12 +83,13 @@ msgid ""
 "discord.gg/zH7NUgz>`_, or the ``#godotengine-doc`` channel on `irc.freenode."
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
-"Надішліть проблему (issue) або потягніть запит (pull request) у `репозиторії "
-"GitHub <https://github.com/godotengine/godot-docs/issues>`_, допоможіть нам "
+"Створіть повідомлення щодо вади або запит щодо злиття коду у `сховищі GitHub "
+"<https://github.com/godotengine/godot-docs/issues>`_, допоможіть нам "
 "`перекласти документацію <https://hosted.weblate.org/engage/godot-engine/>`_ "
-"на вашу мову або обговоріть з нами по каналу ``#documentation`` на `Discord "
-"<https://discord.gg/zH7NUgz>`_, або на каналі ``#godotengine-doc`` у `irc."
-"freenode.net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
+"вашою рідною мовою або візміть участь у обговоренні на каналі "
+"``#documentation`` у `Discord <https://discord.gg/zH7NUgz>`_, або на каналі "
+"``#godotengine-doc`` у `irc.freenode.net <http://webchat.freenode.net/?"
+"channels=#godotengine-doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -598,6 +598,13 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"Якщо ви лише робите перші кроки з Godot або у розробці ігор загалом, - "
+"рекомендуємо мову GDScript для вивчення та використання, так як це рідна "
+"мова для Godot. Хоча скриптові мови програмування як правило менш "
+"продуктивні ніж низькорівневі в довгостроковій перспективі, для "
+"прототипування, розробки Мінімально Життєзданих Продуктів (MVPs)  та фокусі "
+"на Time-To-Market (TTM), GDScript забезпечить  швидкий, дружній та надійний "
+"спосіб для розробки ваших ігор."
 
 #: ../../docs/about/faq.rst:75
 msgid ""
@@ -609,6 +616,13 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"Зауважте, що підтримка C# все ще відносно нова, і тому ви можете зіткнутися "
+"з деякими проблемами. Наше дружнє та працьовите співтовариство розробників "
+"завжди готове вирішувати нові проблеми, коли вони виникають, але оскільки це "
+"проект з відкритим вихідним кодом, ми рекомендуємо спочатку самостійно "
+"провести певну ретельну перевірку. Пошук безпосередньо в дискусіях у `open "
+"issues <https://github.com/godotengine/godot/issues>`_ є відмінним способом "
+"розпочати вирішення виниклих проблем."
 
 #: ../../docs/about/faq.rst:82
 msgid ""
@@ -802,11 +816,10 @@ msgstr ""
 "`відкритою ліцензією <https://opensource.org/licenses/MIT>`_ наданою Godot."
 
 #: ../../docs/about/faq.rst:159
-#, fuzzy
 msgid ""
 "Will [insert closed SDK such as FMOD, GameWorks, etc.] be supported in Godot?"
 msgstr ""
-"Чи будуть [Пропрієтарні закриті SDK, такі як PhysX, GameWorks тощо] "
+"Чи будуть [Пропрієтарні закриті SDK, такі як FMOD, GameWorks тощо] "
 "підтримуватися в Godot?"
 
 #: ../../docs/about/faq.rst:161
@@ -4121,10 +4134,8 @@ msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
-#, fuzzy
 msgid "https://github.com/godotengine/godot-demo-projects"
-msgstr ""
-"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+msgstr "https://github.com/godotengine/godot-demo-projects"
 
 #: ../../docs/getting_started/step_by_step/exporting.rst:4
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
@@ -9349,9 +9360,8 @@ msgid "jetbrains rider"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-#, fuzzy
 msgid "--line {line} {file}"
-msgstr "{file} --line {line} --column {col}"
+msgstr "--line {line} {file}"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 msgid "GDScript basics"
@@ -9672,9 +9682,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
-#, fuzzy
 msgid "as"
-msgstr "case"
+msgstr "as"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Cast the value to a given type if possible."
@@ -10120,9 +10129,8 @@ msgid "NodePath or StringName"
 msgstr "NodePath або StringName"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:318
-#, fuzzy
 msgid "``$NodePath``"
-msgstr "NodePath"
+msgstr "``$NodePath``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:318
 msgid "Shorthand for ``get_node(\"NodePath\")``"
@@ -62757,9 +62765,8 @@ msgid "**Platforms:**"
 msgstr "Платформи"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:110
-#, fuzzy
 msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
-msgstr "*Android*, *HTML5*, *iOS*, *Linux*, *OS X*, *Windows*, *UWP*"
+msgstr "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
 
 #: ../../docs/community/contributing/bug_triage_guidelines.rst:112
 msgid ""
