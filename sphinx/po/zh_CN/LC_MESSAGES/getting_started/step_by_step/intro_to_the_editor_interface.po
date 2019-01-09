@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -225,40 +225,47 @@ msgid ""
 msgstr "您可以看到顶部有四个工作区按钮:2D、3D、脚本和资源馆。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
+#, fuzzy
 msgid ""
-"You’ll use the **2D workspace** for all types of games. On top of 2D games "
-"that is where you’ll build your interfaces. Press F1 to access it. |image15|"
+"You’ll use the **2D workspace** for all types of games. In addition to 2D "
+"games, the 2D workspace is where you'll build your interfaces. Press F1 to "
+"access it."
 msgstr ""
 "您可以为所有类型的游戏使用 **2D工作区** 。非2D游戏您可以用它创建界面。按下F1"
 "切换。\n"
 "|image15|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:109
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
+#, fuzzy
+msgid "|image15|"
+msgstr "|image1|"
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr "在 **3D工作区** 里，您可以使用网格、光照并设计3D游戏关卡。按下F2切换。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "|image16|"
 msgstr "|image16|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:114
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
 msgstr "注意工具栏下面的[透视]，这是一个按钮，用于选择与3D视图有关的选项。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:116
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid "|image20|"
 msgstr "|image20|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:119
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr "更多关于 **3D 工作区** 的细节，请查看 :ref:`doc_introduction_to_3d`。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:121
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
@@ -267,21 +274,21 @@ msgstr ""
 "**脚本** 工作区是一个完整的代码编辑器，有着调试器、自动补全和内置的代码参阅。"
 "按下F3切换。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:125
 msgid "|image17|"
 msgstr "|image17|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:127
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr "最后， **资源馆** 有免费的插件、脚本、资源可以用到您的项目中。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid "Modify the interface"
 msgstr "调整界面"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:132
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
@@ -290,30 +297,30 @@ msgstr ""
 "Godot界面存在于单一窗口中。您不能把它分离到多个屏幕中，不过您可以使用外置的代"
 "码编辑器如Atom或Visual Studio。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
 msgid "Move and resize docks"
 msgstr "移动、修改面板大小"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:139
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr "点击并拖动面板边缘可以修改水平或垂直大小。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:143
 msgid "|image18|"
 msgstr "|image18|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr "按下面板上方的三点标志可以改变位置。"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid "|image19|"
 msgstr "|image19|"
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:149
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,12 @@ msgid "Design the GUI"
 msgstr "GUI 설계하기"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
+#, fuzzy
 msgid ""
-"Now that you've nailed the basics, we're going to see how to build a Game "
-"User Interface (GUI) with reusable UI components: a life bar, an energy bar, "
-"and bomb and rupee counters. By the end of this tutorial, you'll have a game "
-"GUI, ready to control with GDscript or VisualScript:"
+"Now that you've nailed the basics, we're going to see how to build a game "
+"Graphical User Interface (GUI) with reusable UI components: a life bar, an "
+"energy bar, and bomb and rupee counters. By the end of this tutorial, you'll "
+"have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
 "이제 기초를 갖췄으니, 재 사용 가능한 UI 구성 요소를 가지고 어떻게 게임 사용"
 "자 인터페이스 (GUI) 를 만드는지 알아보겠습니다: UI 구성 요소는 체력 막대, 에"
@@ -205,12 +206,13 @@ msgstr ""
 "다. 이것은 왼쪽에 두 개의 막대와 오른쪽에 두 개의 카운터를 분리할 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
+#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
-"``VBoxContainer`` as a child of ``GUI`` and name it ``Bars``. Select the "
-"parent ``HBoxContainer`` again and this time, add another ``HBoxContainer`` "
-"as a child of it. Call it ``Counters``. With these four containers, we have "
-"the base for our GUI scene."
+"``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
+"Select the parent ``HBoxContainer`` again and this time, add another "
+"``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
+"containers, we have the base for our GUI scene."
 msgstr ""
 "``HBoxContainer`` 안에 막대를 세로로 쌓을 겁니다. ``GUI``의 자식으로 "
 "``VBoxContainer`` 를 추가하고 ``Bars`` 라고 이름 짓습니다. 부모 "
@@ -380,6 +382,7 @@ msgstr ""
 "의 통제권을 빼앗아 버립니다"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
+#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -389,7 +392,7 @@ msgid ""
 "resize to fit the ``Background``. Head to the Inspector and change its "
 "``Align`` property to ``Right``, and the ``VAlign`` property to ``Center``. "
 "The text should snap to the center of the ``Background``'s right edge. "
-"Resize the node horizontally so it takes the right half of the "
+"Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
 "``Title`` 을 선택하고 인스펙터에서, ``Stretch Mode`` 속성을 ``Keep "
@@ -645,9 +648,10 @@ msgstr ""
 "다. 카운터는 이제 생각한 대로 작동합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
+#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
-"so we need to set the ``Bars`` container take all the available horizontal "
+"so, we need to set the ``Bars`` container take all the available horizontal "
 "space it can. Select the ``Bars`` node and scroll down to the ``Size Flags`` "
 "category. In the ``Horizontal`` category, check the ``Expand`` value. The "
 "``Bars`` node should resize and push the counter to the right side of the "
@@ -698,10 +702,11 @@ msgstr ""
 "가 이제 하나의 ``Bar`` 노드로 된 것을 보실 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
+#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
-"the root along with one more children is a **branch**. We can encapsulate "
+"the root along with one or more children is a **branch**. We can encapsulate "
 "node branches into separate scenes, or load and merge them from other scenes "
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
@@ -713,12 +718,13 @@ msgstr ""
 "``선택 노드를 다른 씬으로 저장`` 이나 ``다른 씬에서 가져오기`` 를 선택하세요."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
+#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
 "appears to the right of the nodes in the scene tree. Click on the one next "
 "to ``Bar`` to open the corresponding scene. Resize the ``Bar`` node so that "
-"its bounding box fits its content. The way we named and place the Control "
+"its bounding box fits its content. The way we named and placed the Control "
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
@@ -762,12 +768,13 @@ msgstr ""
 "하나의 노드와 컨테이너 만을 갖게 될 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
+#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
 "the inherited scenes update to reflect the changes. If you change a value in "
-"the inherited scene, it will always overrides the parent's property. It's "
-"useful for UIs as they often require variations of the same elements. In "
+"the inherited scene, it will always override the parent's property. It's "
+"useful for UIs, as they often require variations of the same elements. In "
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
@@ -1046,7 +1053,8 @@ msgstr ""
 "니다. 저장하면, 이제 모든 UI 요소가 끝났습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-msgid "The rupee counter should look about like this"
+#, fuzzy
+msgid "The rupee counter should look something like this"
 msgstr "루피 카운터는 이것처럼 보여야 합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
@@ -1110,14 +1118,16 @@ msgstr ""
 "니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
+#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
 "open its scene. Select the ``Count`` node and scroll down to the ``Custom "
-"Constant`` section. Add a ``Margin Left`` of ``20``. In the ``Rect`` section "
-"set the node's ``Min Size`` back to 100, the same value as on the LifeBar. "
-"The ``Count`` should now have some margin on the left. If you save and go "
-"back to the GUI scene, it will be aligned vertically with the ``LifeBar``."
+"Constants`` section. Add a ``Margin Left`` of ``20``. In the ``Rect`` "
+"section set the node's ``Min Size`` back to 100, the same value as on the "
+"LifeBar. The ``Count`` should now have some margin on the left. If you save "
+"and go back to the GUI scene, it will be aligned vertically with the "
+"``LifeBar``."
 msgstr ""
 "EnergyBar의 EP 라벨에 한 가지 문제가 남았습니다: 두 막대는 수직으로 정렬되어"
 "야 합니다. ``EnergyBar`` 노드 옆의 아이콘을 클릭하여 노드의 씬을 엽니다. "
@@ -1132,8 +1142,9 @@ msgid "The 2 bars align perfectly"
 msgstr "완벽하게 정렬된 두 막대"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
+#, fuzzy
 msgid ""
-"We could have setup the ``EnergyBar`` this way a few moments ago. But this "
+"We could have set up the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
@@ -1171,9 +1182,11 @@ msgstr ""
 "이스가 어떻게 보이는지 볼 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
+#, fuzzy
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
-"final project `here <#>`__."
+"the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
+"zip>`."
 msgstr ""
 "이 긴 튜토리얼을 마친 것을 축하합니다. 최종 프로젝트를 찾아가세요 `여기서요 "
 "<#>`__."

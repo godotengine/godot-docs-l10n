@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,12 @@ msgid "Design the GUI"
 msgstr "设计GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
+#, fuzzy
 msgid ""
-"Now that you've nailed the basics, we're going to see how to build a Game "
-"User Interface (GUI) with reusable UI components: a life bar, an energy bar, "
-"and bomb and rupee counters. By the end of this tutorial, you'll have a game "
-"GUI, ready to control with GDscript or VisualScript:"
+"Now that you've nailed the basics, we're going to see how to build a game "
+"Graphical User Interface (GUI) with reusable UI components: a life bar, an "
+"energy bar, and bomb and rupee counters. By the end of this tutorial, you'll "
+"have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
 "既然您已经掌握了基本知识, 我们将看到如何利用可复用的 UI 组件构建游戏用户界面 "
 "(GUI): 生命条、能量条、炸弹和卢比计数器。直到本教程结束时, 您将拥有一个游戏 "
@@ -191,12 +192,13 @@ msgstr ""
 "`HBoxContainer`节点。这个将包含左边的两个栏，并将它们与右边的两个柜台分开。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
+#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
-"``VBoxContainer`` as a child of ``GUI`` and name it ``Bars``. Select the "
-"parent ``HBoxContainer`` again and this time, add another ``HBoxContainer`` "
-"as a child of it. Call it ``Counters``. With these four containers, we have "
-"the base for our GUI scene."
+"``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
+"Select the parent ``HBoxContainer`` again and this time, add another "
+"``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
+"containers, we have the base for our GUI scene."
 msgstr ""
 "我们想要在`HBoxContainer`中垂直堆叠栏。添加一个`VBoxContainer`作为`GUI`的子元"
 "素，并将其命名为`Bars`。再次选择父`HBoxContainer`，这一次，添加另一个"
@@ -353,6 +355,7 @@ msgstr ""
 "开"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
+#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -362,7 +365,7 @@ msgid ""
 "resize to fit the ``Background``. Head to the Inspector and change its "
 "``Align`` property to ``Right``, and the ``VAlign`` property to ``Center``. "
 "The text should snap to the center of the ``Background``'s right edge. "
-"Resize the node horizontally so it takes the right half of the "
+"Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
 "选择 ``Title`` ，在属性面板中，改变它的`Stretch Mode伸展模式`属性为`Keep "
@@ -598,9 +601,10 @@ msgstr ""
 "正常。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
+#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
-"so we need to set the ``Bars`` container take all the available horizontal "
+"so, we need to set the ``Bars`` container take all the available horizontal "
 "space it can. Select the ``Bars`` node and scroll down to the ``Size Flags`` "
 "category. In the ``Horizontal`` category, check the ``Expand`` value. The "
 "``Bars`` node should resize and push the counter to the right side of the "
@@ -648,10 +652,11 @@ msgstr ""
 "存场景为`Bar.tscn`。您应该看到节点分支将它转换为一个`Bar`节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
+#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
-"the root along with one more children is a **branch**. We can encapsulate "
+"the root along with one or more children is a **branch**. We can encapsulate "
 "node branches into separate scenes, or load and merge them from other scenes "
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
@@ -662,12 +667,13 @@ msgstr ""
 "任何节点，选择`Save Branch as Scene`或`Merge from Scene`。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
+#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
 "appears to the right of the nodes in the scene tree. Click on the one next "
 "to ``Bar`` to open the corresponding scene. Resize the ``Bar`` node so that "
-"its bounding box fits its content. The way we named and place the Control "
+"its bounding box fits its content. The way we named and placed the Control "
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
@@ -706,12 +712,13 @@ msgstr ""
 "继承的场景帮助我们保持GUI场景的干净。最后，每个UI组件只有容器和一个节点。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
+#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
 "the inherited scenes update to reflect the changes. If you change a value in "
-"the inherited scene, it will always overrides the parent's property. It's "
-"useful for UIs as they often require variations of the same elements. In "
+"the inherited scene, it will always override the parent's property. It's "
+"useful for UIs, as they often require variations of the same elements. In "
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
@@ -966,7 +973,8 @@ msgstr ""
 "盘上的箭头键来推动它的位置。保存，所有UI元素都完成了。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-msgid "The rupee counter should look about like this"
+#, fuzzy
+msgid "The rupee counter should look something like this"
 msgstr "卢比计数器应该是这样的"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
@@ -1026,14 +1034,16 @@ msgid ""
 msgstr "更改`Counters`容器的`Min Size`属性，以控制计数器背景的高度。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
+#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
 "open its scene. Select the ``Count`` node and scroll down to the ``Custom "
-"Constant`` section. Add a ``Margin Left`` of ``20``. In the ``Rect`` section "
-"set the node's ``Min Size`` back to 100, the same value as on the LifeBar. "
-"The ``Count`` should now have some margin on the left. If you save and go "
-"back to the GUI scene, it will be aligned vertically with the ``LifeBar``."
+"Constants`` section. Add a ``Margin Left`` of ``20``. In the ``Rect`` "
+"section set the node's ``Min Size`` back to 100, the same value as on the "
+"LifeBar. The ``Count`` should now have some margin on the left. If you save "
+"and go back to the GUI scene, it will be aligned vertically with the "
+"``LifeBar``."
 msgstr ""
 "在EnergyBar的EP标签上还剩下一个小问题:2个条形图应该垂直对齐。点击`EnergyBar`"
 "节点旁边的图标来打开场景。选择`Count`节点并向下滚动到`Custom Constant`部分。"
@@ -1046,8 +1056,9 @@ msgid "The 2 bars align perfectly"
 msgstr "两个条形图对齐得很好"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
+#, fuzzy
 msgid ""
-"We could have setup the ``EnergyBar`` this way a few moments ago. But this "
+"We could have set up the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
@@ -1082,9 +1093,11 @@ msgstr ""
 "整GUI的大小，使其在垂直方向上尽可能小。现在您可以看到界面在游戏环境中的样子。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
+#, fuzzy
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
-"final project `here <#>`__."
+"the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
+"zip>`."
 msgstr "祝贺您完成了这篇冗长的教程。您可以在`here <#>`__找到最终项目。"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625

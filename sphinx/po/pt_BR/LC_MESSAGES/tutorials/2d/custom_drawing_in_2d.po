@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,69 +61,67 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
 msgid ""
-"Managing drawing logic of a large amount of simple objects (in the hundreds "
-"of thousands). Using a thousand nodes is probably not nearly as efficient as "
-"drawing, but a thousand draw calls are cheap; take the \"Shower of Bullets\" "
-"demo as an example."
+"Drawing a large number of simple objects. Custom drawing avoids the overhead "
+"of using nodes which makes it less memory intensive and potentially faster."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:32
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but it's "
 "easy to run into the need to make a new, custom one."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:36
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:35
 msgid "OK, how?"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:38
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:37
 msgid ""
 "Add a script to any :ref:`CanvasItem <class_CanvasItem>` derived node, like :"
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
 "the ``_draw()`` function."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:58
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
 msgid "Updating"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:64
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:63
 msgid ""
 "The ``_draw()`` function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:67
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 msgid ""
 "If re-drawing is required because a state or something else changed, simply "
 "call :ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that "
 "same node and a new ``_draw()`` call will happen."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:71
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
 msgid ""
 "Here is a little more complex example, a texture variable that will be "
 "redrawn if modified:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:115
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:114
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "``update()`` from the ``_process()`` callback, like this:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:147
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
 msgid "An example: drawing circular arcs"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:149
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:148
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
 "something that Godot doesn't provide functions for. As an example, Godot "
@@ -132,11 +130,11 @@ msgid ""
 "to perform this and draw it yourself."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:154
 msgid "Arc function"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:156
 msgid ""
 "An arc is defined by its support circle parameters, that is, the center "
 "position and the radius. The arc itself is then defined by the angle it "
@@ -145,7 +143,7 @@ msgid ""
 "value, so we can draw the arc in different colors if we wish."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:162
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:161
 msgid ""
 "Basically, drawing a shape on the screen requires it to be decomposed into a "
 "certain number of points linked from one to the next. As you can imagine, "
@@ -159,7 +157,7 @@ msgid ""
 "radius."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:202
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
 msgid ""
 "Remember the number of points our shape has to be decomposed into? We fixed "
 "this number in the ``nb_points`` variable to a value of ``32``. Then, we "
@@ -167,7 +165,7 @@ msgid ""
 "``Vector2``\\ s."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:205
 msgid ""
 "The next step consists of computing the actual positions of these 32 points "
 "that compose an arc. This is done in the first for-loop: we iterate over the "
@@ -176,7 +174,7 @@ msgid ""
 "the starting and ending angles."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:211
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
 msgid ""
 "The reason why each angle is decreased by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
@@ -186,7 +184,7 @@ msgid ""
 "start counting from 12 o'clock."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:217
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:216
 msgid ""
 "The actual position of a point located on a circle at angle ``angle`` (in "
 "radians) is given by ``Vector2(cos(angle), sin(angle))``. Since ``cos()`` "
@@ -198,7 +196,7 @@ msgid ""
 "the point in the ``PoolVector2Array`` which was previously defined."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:225
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:224
 msgid ""
 "Now, we need to actually draw our points. As you can imagine, we will not "
 "simply draw our 32 points: we need to draw everything that is between each "
@@ -210,26 +208,26 @@ msgid ""
 "were to happen, we would simply need to increase the number of points."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:235
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:234
 #, fuzzy
 msgid "Draw the arc on the screen"
 msgstr "Criar uma tela do menu principal"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:237
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
 msgid ""
 "We now have a function that draws stuff on the screen; it is time to call it "
 "inside the ``_draw()`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:263
 msgid "Result:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:269
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:268
 msgid "Arc polygon function"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:271
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:270
 msgid ""
 "We can take this a step further and not only write a function that draws the "
 "plain portion of the disc defined by the arc, but also its shape. The method "
@@ -237,11 +235,11 @@ msgid ""
 "lines:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:311
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:310
 msgid "Dynamic custom drawing"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:313
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
 msgid ""
 "All right, we are now able to draw custom stuff on the screen. However, it "
 "is static; let's make this shape turn around the center. The solution to do "
@@ -250,18 +248,18 @@ msgid ""
 "to remain constant or else the rotation speed will change accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:319
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:318
 msgid ""
 "First, we have to make both angle_from and angle_to variables global at the "
 "top of our script. Also note that you can store them in other nodes and "
 "access them using ``get_node()``."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:341
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:340
 msgid "We make these values change in the _process(delta) function."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:343
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
@@ -273,25 +271,25 @@ msgid ""
 "we'll create it here, as it is relatively simple."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:352
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:351
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
 "automatically calls ``_draw()``. This way, you can control when you want to "
 "refresh the frame."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:397
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:396
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:421
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:420
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:423
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
 "can. We need to \"normalize\" the drawing by this speed; to achieve that, we "
@@ -302,7 +300,7 @@ msgid ""
 "program runs at the same speed on everybody's hardware."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:432
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:431
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
 "``delta`` in the ``_process()`` function. This way, our 2 angles will be "
@@ -310,21 +308,21 @@ msgid ""
 "speed."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:466
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:465
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:468
 msgid "Tools"
 msgstr "Ferramentas"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:470
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:475
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:474
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."

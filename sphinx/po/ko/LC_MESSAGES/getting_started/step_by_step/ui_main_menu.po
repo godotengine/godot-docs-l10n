@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -182,7 +182,7 @@ msgstr ""
 "획을 세워야 됩니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:277
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:278
 msgid "Break down the UI mockup"
 msgstr "UI 모형 파헤치기"
 
@@ -562,16 +562,18 @@ msgstr ""
 "코드 한 줄도 안 쓰고, 우리는 정확하고 반응하는 메인 메뉴를 갖게 되었습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
+#, fuzzy
 msgid ""
-"Congratulations for getting there! You can download the `final menu <#>`__ "
-"to compare with your own. In the next tutorial, you'll create a Game User "
-"Interface with bars and item counters."
+"Congratulations for getting there! You can download the final menu :download:"
+"`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
+"your own. In the next tutorial, you'll create a Game User Interface with "
+"bars and item counters."
 msgstr ""
 "여기까지 오신 것에 축하합니다! 당신의 것과 비교하기 위한 `final menu <#>`__ "
 "를 내려받으실 수 있습니다. 다음 튜토리얼에서, 당신은 막대와 아이템 수 카운터"
 "가 있는 게임 사용자 인터페이스를 만들 것입니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -582,7 +584,7 @@ msgstr ""
 "는 것을 의미합니다.TV 화면과 컴퓨터는 다른 크기와 비율을 갖습니다. Godot에"
 "서, 우리는 컨테이너를 사용하여 UI 요소들의 크기와 위치를 제어합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:285
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press the Q key to activate "
@@ -594,7 +596,7 @@ msgstr ""
 "택하고 컨테이너의 모서리를 클릭하고 드래그 하여 크기를 바꿔보세요. UI 구성 요"
 "소들이 내부에 있어야 합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:290
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:291
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -606,7 +608,7 @@ msgstr ""
 "하기를 원하지만, 또한 게임 전체가 다른 화면 해상도에 적응해야 합니다. 이를 위"
 "해, Godot는 창 전체를 위 아래로 크기를 조절합니다."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:296
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:297
 msgid ""
 "You can change the scale mode in the project settings: click the Project "
 "menu -> Project Settings. In the window's left column, look for the Display "

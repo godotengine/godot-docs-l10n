@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,41 +138,48 @@ msgstr ""
 "像这样生成:"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
+#, fuzzy
 msgid ""
-"This key is used to verify your developer identity, remember its password "
-"and keep it in a safe place! Use Google's Android Developer guides to learn "
-"more about `APK signing <https://developer.android.com/studio/publish/app-"
-"signing>`__."
+"This keystore and key are used to verify your developer identity, remember "
+"the password and keep it in a safe place! Use Google's Android Developer "
+"guides to learn more about `APK signing <https://developer.android.com/"
+"studio/publish/app-signing>`__."
 msgstr ""
 "此密钥用于验证您的开发人员身份，记住其密码并将其保存在安全的地方！ 使用Google"
 "的Android开发人员指南了解有关 `APK签名 <https://developer.android.com/studio/"
 "publish/app-signing>`__ 的更多信息。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
-msgid "Now fill the following forms in you Android Export Presets:"
+#, fuzzy
+msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr "现在在Android导出预设中填写以下表格:"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
 msgid "Release: Enter the path to the keystore file you just generated."
 msgstr "发布:输入刚刚生成的密钥库文件的路径。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
-msgid "Release User: Replace with what your key alias."
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+#, fuzzy
+msgid "Release User: Replace with the key alias."
 msgstr "发布用户:替换为您的密钥别名。"
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
-msgid "Release Password: Key password."
-msgstr "发布密码:密钥密码。"
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
-"Now your export_presets.cfg file contains sensitive info; if using a Version "
-"Control System, it is a good idea to remove it from public repositories."
+"Release Password: Key password. Note that the keystore password and the key "
+"password currently have to be the same."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+#, fuzzy
+msgid ""
+"**Now your export_presets.cfg file contains sensitive info;** if using a "
+"Version Control System, it is a good idea to remove it from public "
+"repositories."
 msgstr ""
 "现在您的export_presets.cfg文件包含敏感信息，如果使用版本控制系统，最好将其从"
 "公共存储库中删除。"
 
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid ""
 "Don't forget to disable the ``Export With Debug`` button while choosing the "
 "APK's name."

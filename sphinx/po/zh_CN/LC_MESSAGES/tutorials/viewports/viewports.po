@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,23 +26,25 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
+#, fuzzy
 msgid ""
-"Think of :ref:`Viewports <class_Viewport>` as a screen that the game is "
-"projected onto. In order to see the game we need to have a surface to draw "
-"it on, this surface is the Root :ref:`Viewport <class_Viewport>`."
+"Think of a :ref:`Viewport <class_Viewport>` as a screen onto which the game "
+"is projected. In order to see the game, we need to have a surface on which "
+"to draw it; that surface is the Root :ref:`Viewport <class_Viewport>`."
 msgstr ""
 "将 :ref:`Viewports <class_Viewport>` 想成投影游戏的荧幕。 为了看到游戏，我们"
 "需要有一个表面来绘制它，这个表面是根节点的 :ref:`Viewport <class_Viewport>`。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:16
+#, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` can also be added to the scene so that "
 "there are multiple surfaces to draw on. When we are drawing to a :ref:"
-"`Viewport <class_Viewport>` that is not the Root we call it a render target. "
-"We can access the contents of a render target by accessing its "
+"`Viewport <class_Viewport>` that is not the Root, we call it a render "
+"target. We can access the contents of a render target by accessing its "
 "corresponding :ref:`texture <class_ViewportTexture>`. By using a :ref:"
-"`Viewport <class_Viewport>` as a render target we can either render multiple "
-"scenes simultaneously or we can render to a :ref:`texture "
+"`Viewport <class_Viewport>` as a render target, we can either render "
+"multiple scenes simultaneously or we can render to a :ref:`texture "
 "<class_ViewportTexture>` which is applied to an object in the scene, for "
 "example a dynamic skybox."
 msgstr ""
@@ -54,8 +56,9 @@ msgstr ""
 "的 :ref:`texture <class_ViewportTexture>` ，例如 一个动态的天空盒。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:25
+#, fuzzy
 msgid ""
-":ref:`Viewports <class_Viewport>` have a variety of use cases including:"
+":ref:`Viewports <class_Viewport>` have a variety of use cases, including:"
 msgstr ":ref:`Viewports <class_Viewport>` 有各种用例，包括:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:27
@@ -79,10 +82,11 @@ msgid "Rendering multiple cameras in the same scene"
 msgstr "在同一场景中渲染多个摄像机"
 
 #: ../../docs/tutorials/viewports/viewports.rst:33
+#, fuzzy
 msgid ""
 "What all these use cases have in common is that you are given the ability to "
-"draw objects to a texture as if it were another screen and then you can "
-"choose what to do with the resulting texture."
+"draw objects to a texture as if it were another screen and can then choose "
+"what to do with the resulting texture."
 msgstr ""
 "所有这些用例的共同之处在于，您可以将对象绘制到纹理中，就像它在另一个屏幕那"
 "样，然后您可以选择如何处理生成的纹理。"
@@ -92,12 +96,13 @@ msgid "Input"
 msgstr "输入"
 
 #: ../../docs/tutorials/viewports/viewports.rst:40
+#, fuzzy
 msgid ""
 ":ref:`Viewports <class_Viewport>` are also responsible for delivering "
 "properly adjusted and scaled input events to all their children nodes. "
-"Typically input is received by the nearest :ref:`Viewport <class_Viewport>` "
-"in the tree, but you can set :ref:`Viewports <class_Viewport>` to not "
-"receive input by checking 'Disable Input' to 'on', this will allow the next "
+"Typically, input is received by the nearest :ref:`Viewport <class_Viewport>` "
+"in the tree, but you can set :ref:`Viewports <class_Viewport>` not to "
+"receive input by checking 'Disable Input' to 'on'; this will allow the next "
 "nearest :ref:`Viewport <class_Viewport>` in the tree to capture the input."
 msgstr ""
 ":ref:`Viewports <class_Viewport>` 还负责向其所有子节点提供正确调整和缩放的输"
@@ -106,8 +111,9 @@ msgstr ""
 "收输入，这将允许树中下个最近的 :ref:`Viewport <class_Viewport>` 来捕获输入。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
+#, fuzzy
 msgid ""
-"For more information on how Godot handles input please read the :ref:`Input "
+"For more information on how Godot handles input, please read the :ref:`Input "
 "Event Tutorial<doc_inputevent>`."
 msgstr ""
 "有关Godot如何处理输入的更多信息，请阅读 :ref:`Input Event "
@@ -118,8 +124,9 @@ msgid "Listener"
 msgstr "侦听器"
 
 #: ../../docs/tutorials/viewports/viewports.rst:53
+#, fuzzy
 msgid ""
-"Godot supports 3D sound (in both 2D and 3D nodes), more on this can be found "
+"Godot supports 3D sound (in both 2D and 3D nodes); more on this can be found "
 "in the :ref:`Audio Streams Tutorial<doc_audio-streams>`. For this type of "
 "sound to be audible, the :ref:`Viewport <class_Viewport>` needs to be "
 "enabled as a listener (for 2D or 3D). If you are using a custom :ref:"
@@ -177,11 +184,12 @@ msgid "Scale & stretching"
 msgstr "缩放和拉伸"
 
 #: ../../docs/tutorials/viewports/viewports.rst:86
+#, fuzzy
 msgid ""
-":ref:`Viewports <class_Viewport>` have a \"size\" property which represents "
+":ref:`Viewports <class_Viewport>` have a \"size\" property, which represents "
 "the size of the :ref:`Viewport <class_Viewport>` in pixels. For :ref:"
 "`Viewports <class_Viewport>` which are children of :ref:`ViewportContainers "
-"<class_viewportcontainer>`, these values are overridden, but for all others "
+"<class_viewportcontainer>`, these values are overridden, but for all others, "
 "this sets their resolution."
 msgstr ""
 ":ref:`Viewports <class_Viewport>` 有一个“size”属性，以像素为单位表示 :ref:"
@@ -190,9 +198,10 @@ msgstr ""
 "值被覆盖，但是在其他情况下，它设置了视区的分辨率。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:90
+#, fuzzy
 msgid ""
 "It is also possible to scale the 2D content and make the :ref:`Viewport "
-"<class_Viewport>` resolution different than the one specified in size, by "
+"<class_Viewport>` resolution different from the one specified in size, by "
 "calling:"
 msgstr ""
 "通过调用以下语句，还可以缩放2D内容, 使其忽略 :ref:`Viewport "
@@ -213,6 +222,7 @@ msgid "Worlds"
 msgstr "世界"
 
 #: ../../docs/tutorials/viewports/viewports.rst:104
+#, fuzzy
 msgid ""
 "For 3D, a :ref:`Viewport <class_Viewport>` will contain a :ref:`World "
 "<class_World>`. This is basically the universe that links physics and "
@@ -220,8 +230,8 @@ msgid ""
 "<class_World>` of the closest :ref:`Viewport <class_Viewport>`. By default, "
 "newly created :ref:`Viewports <class_Viewport>` do not contain a :ref:`World "
 "<class_World>` but use the same as their parent :ref:`Viewport "
-"<class_Viewport>` (root :ref:`Viewport <class_Viewport>` always contains a :"
-"ref:`World <class_World>`, which is the one objects are rendered to by "
+"<class_Viewport>` (the root :ref:`Viewport <class_Viewport>` always contains "
+"a :ref:`World <class_World>`, which is the one objects are rendered to by "
 "default). A :ref:`World <class_World>` can be set in a :ref:`Viewport "
 "<class_Viewport>` using the \"world\" property, and that will separate all "
 "children nodes of that :ref:`Viewport <class_Viewport>` from interacting "
@@ -263,8 +273,9 @@ msgstr ""
 "设置 :ref:`Viewport的 <class_Viewport>` :ref:`World2D <class_World2D>` 。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:125
+#, fuzzy
 msgid ""
-"For an example of how this works see the demo projects `3D in 2D <https://"
+"For an example of how this works, see the demo projects `3D in 2D <https://"
 "github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_in_2d>`_ "
 "and `2D in 3D <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/viewport/2d_in_3d>`_ respectively."
@@ -279,19 +290,21 @@ msgid "Capture"
 msgstr "截图"
 
 #: ../../docs/tutorials/viewports/viewports.rst:130
+#, fuzzy
 msgid ""
 "It is possible to query a capture of the :ref:`Viewport <class_Viewport>` "
-"contents. For the root :ref:`Viewport <class_Viewport>` this is effectively "
+"contents. For the root :ref:`Viewport <class_Viewport>`, this is effectively "
 "a screen capture. This is done with the following code:"
 msgstr ""
 "可以查询 :ref:`Viewport <class_Viewport>` 内容的捕获。 对于root :ref:"
 "`Viewport <class_Viewport>` 这实际上是一个屏幕截图。 这是通过以下代码完成的:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:147
+#, fuzzy
 msgid ""
 "But if you use this in _ready() or from the first frame of the :ref:"
-"`Viewport's <class_Viewport>` initialization you will get an empty texture "
-"cause there is nothing to get as texture. You can deal with it using (for "
+"`Viewport's <class_Viewport>` initialization, you will get an empty texture "
+"because there is nothing to get as texture. You can deal with it using (for "
 "example):"
 msgstr ""
 "但是如果您在_ready()或者从 :ref:`Viewport的<class_Viewport>` 初始化的第一帧中"
@@ -299,10 +312,11 @@ msgstr ""
 "它:"
 
 #: ../../docs/tutorials/viewports/viewports.rst:158
+#, fuzzy
 msgid ""
 "If the returned image is empty, capture still didn't happen, wait a little "
 "more, as Godot's rendering API is asynchronous. For a working example of "
-"this check out the `Screen Capture example <https://github.com/godotengine/"
+"this, check out the `Screen Capture example <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/viewport/screen_capture>`_ in the demo "
 "projects"
 msgstr ""
@@ -343,12 +357,13 @@ msgid "Rendering"
 msgstr "渲染"
 
 #: ../../docs/tutorials/viewports/viewports.rst:176
+#, fuzzy
 msgid ""
 "Due to the fact that the :ref:`Viewport <class_Viewport>` is an entryway "
 "into another rendering surface, it exposes a few rendering properties that "
-"can be different from the project settings. The first is MSAA, you can "
+"can be different from the project settings. The first is MSAA; you can "
 "choose to use a different level of MSAA for each :ref:`Viewport "
-"<class_Viewport>`, the default behavior is DISABLED. You can also set the :"
+"<class_Viewport>`; the default behavior is DISABLED. You can also set the :"
 "ref:`Viewport <class_Viewport>` to use HDR, HDR is very useful for when you "
 "want to store values in the texture that are outside the range 0.0 - 1.0."
 msgstr ""
@@ -359,10 +374,11 @@ msgstr ""
 "0.0  -  1.0范围的值时，HDR非常有用。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:181
+#, fuzzy
 msgid ""
 "If you know how the :ref:`Viewport <class_Viewport>` is going to be used, "
 "you can set its Usage to either 3D or 2D. Godot will then restrict how the :"
-"ref:`Viewport <class_Viewport>` is drawn to in accordance with your choice, "
+"ref:`Viewport <class_Viewport>` is drawn to in accordance with your choice; "
 "default is 3D."
 msgstr ""
 "如果您知道如何使用 :ref:`Viewport <class_Viewport>` ，您可以将其用法设置为3D"
@@ -421,10 +437,11 @@ msgid "Render target"
 msgstr "渲染目标"
 
 #: ../../docs/tutorials/viewports/viewports.rst:212
+#, fuzzy
 msgid ""
-"When rendering to a :ref:`Viewport <class_Viewport>` whatever is inside will "
-"not be visible in the scene editor. To display the contents, you have to "
-"draw the :ref:`Viewport's <class_Viewport>` :ref:`ViewportTexture "
+"When rendering to a :ref:`Viewport <class_Viewport>`, whatever is inside "
+"will not be visible in the scene editor. To display the contents, you have "
+"to draw the :ref:`Viewport's <class_Viewport>` :ref:`ViewportTexture "
 "<class_ViewportTexture>` somewhere. This can be requested via code using "
 "(for example):"
 msgstr ""
@@ -443,11 +460,12 @@ msgid ""
 msgstr "然后选择您想要使用的 :ref:`Viewport <class_Viewport>。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:230
+#, fuzzy
 msgid ""
-"Every frame the :ref:`Viewport <class_Viewport>`'s texture is cleared away "
+"Every frame, the :ref:`Viewport <class_Viewport>`'s texture is cleared away "
 "with the default clear color (or a transparent color if Transparent BG is "
 "set to true). This can be changed by setting Clear Mode to Never or Next "
-"Frame. As the name implies, Never means the texture will never be cleared "
+"Frame. As the name implies, Never means the texture will never be cleared, "
 "while next frame will clear the texture on the next frame and then set "
 "itself to Never."
 msgstr ""
@@ -457,11 +475,12 @@ msgstr ""
 "的纹理，然后将自己设置为Never。"
 
 #: ../../docs/tutorials/viewports/viewports.rst:235
+#, fuzzy
 msgid ""
 "By default, re-rendering of the :ref:`Viewport <class_Viewport>` happens "
 "when the :ref:`Viewport <class_Viewport>`'s :ref:`ViewportTexture "
 "<class_ViewportTexture>` has been drawn in a frame. If visible, it will be "
-"rendered, otherwise it will not. This behavior can be changed to manual "
+"rendered; otherwise, it will not. This behavior can be changed to manual "
 "rendering (once), or always render, no matter if visible or not. This "
 "flexibility allows users to render an image once and then use the texture "
 "without incurring the cost of rendering every frame."

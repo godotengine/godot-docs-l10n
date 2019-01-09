@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,8 @@ msgid "GUI skinning"
 msgstr "GUI 外观定制"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:7
-msgid "Oh beautiful GUI!"
+#, fuzzy
+msgid "Oh, beautiful GUI!"
 msgstr "哦, 美丽的 GUI!"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:9
@@ -38,9 +39,10 @@ msgstr ""
 "`TextureProgress <class_TextureProgress>`。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:15
+#, fuzzy
 msgid ""
 "However, many types of games often need complex user interfaces, like MMOs, "
-"traditional RPGs, Simulators, Strategy, etc. These kind of interfaces are "
+"traditional RPGs, Simulators, Strategy, etc. These kinds of interface are "
 "also common in some games that include editors to create content, or "
 "interfaces for network connectivity."
 msgstr ""
@@ -49,9 +51,10 @@ msgstr ""
 "或含有用于网络连接的界面的游戏来说也很常见。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:20
+#, fuzzy
 msgid ""
-"Godot user interface uses these kind of controls with the default theme, but "
-"they can be skinned to resemble pretty much any kind of user interface."
+"Godot's user interface uses these kinds of control with the default theme, "
+"but they can be skinned to resemble pretty much any kind of user interface."
 msgstr ""
 "Godot的用户界面使用了这些控件的默认主题, 但它们可以被外观定制成几乎任何类型的"
 "用户界面。"
@@ -61,13 +64,14 @@ msgid "Theme"
 msgstr "主题"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:27
+#, fuzzy
 msgid ""
 "The GUI is skinned through the :ref:`Theme <class_Theme>` resource. Theme "
 "contains all the information required to change the entire visual styling of "
 "all controls. Theme options are named, so it's not obvious which name "
 "changes what (especially from code), but several tools are provided. The "
 "ultimate place to look at what each theme option is for each control, which "
-"will always be more up to date than any documentation is the file `scene/"
+"will always be more up to date than any documentation, is the file `scene/"
 "resources/default_theme/default_theme.cpp <https://github.com/godotengine/"
 "godot/blob/master/scene/resources/default_theme/default_theme.cpp>`__. The "
 "rest of this document will explain the different tools used to customize the "
@@ -82,13 +86,14 @@ msgstr ""
 "义主题的不同工具。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:38
+#, fuzzy
 msgid ""
 "A Theme can be applied to any control in the scene. As a result, all "
-"children and grand-children controls will use that same theme too (unless "
+"children and grand-children controls will use that same theme, too (unless "
 "another theme is specified further down the tree). If a value is not found "
-"in a theme, it will be searched in themes higher up in the hierarchy towards "
-"the root. If nothing was found, the default theme is used. This system "
-"allows for flexible overriding of themes in complex user interfaces."
+"in a theme, it will be searched in themes higher up in the hierarchy, "
+"towards the root. If nothing was found, the default theme is used. This "
+"system allows for flexible overriding of themes in complex user interfaces."
 msgstr ""
 "一个“主题”能作用于场景中的任何控件。因此, 所有子孙控件也将使用相同的主题 (除"
 "非在节点树结构下额外指定了另一个主题)。如果在主题中找不到某个值, 则将在向着树"
@@ -117,9 +122,10 @@ msgstr ""
 "**颜色**:  一种颜色, 具备或不具备透明度皆可。颜色通常应用于字体和图标。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:55
+#, fuzzy
 msgid ""
 "**A Texture**: A single image. Textures are not often used, but when they "
-"are they represent handles to pick or icons in a complex control (such as "
+"are, they represent handles to pick or icons in a complex control (such as a "
 "file dialog)."
 msgstr ""
 "**纹理**: 一张图像。一般情况下纹理并不常用, 除非需要在复杂控件 (如文件对话"
@@ -140,7 +146,8 @@ msgstr ""
 "息)。"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:63
-msgid "Every option is associated to:"
+#, fuzzy
+msgid "Every option is associated with:"
 msgstr "每个选项都与以下内容关联:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:65
@@ -156,10 +163,11 @@ msgid "An example usage:"
 msgstr "示例用法:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:87
+#, fuzzy
 msgid ""
 "In the example above, a new theme is created. The \"font_color\" option is "
 "changed and then applied to a label. As a result, the label (and all "
-"children and grand children labels) will use that color."
+"children and grandchildren labels) will use that color."
 msgstr ""
 "在上面的示例中, 创建了一个新主题。\"font_color\" 选项被更改, 然后应用于一个标"
 "签。因此, 这个标签 (和所有他所有的子孙节点标签) 将使用这种颜色。"
@@ -167,8 +175,8 @@ msgstr ""
 #: ../../docs/tutorials/gui/gui_skinning.rst:91
 #, fuzzy
 msgid ""
-"It is possible to override those options without using the theme directly "
-"and only for a specific control by using the override API in :ref:`Control."
+"It is possible to override those options without using the theme directly, "
+"and only for a specific control, by using the override API in :ref:`Control."
 "add_color_override() <class_Control_method_add_color_override>`:"
 msgstr ""
 "不通过使用主题而直接针对指定的控件覆写那些选项也是可能的，通过这个API来覆写即"
@@ -197,8 +205,9 @@ msgstr ""
 "项作为特殊类型的属性(在检查面板上)。一旦勾选, 覆写就会生效:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:118
+#, fuzzy
 msgid ""
-"As can be see in the image above, theme options have little check-boxes. If "
+"As can be seen in the image above, theme options have little check boxes. If "
 "checked, they can be used to override the value of the theme just for that "
 "control."
 msgstr ""
@@ -210,10 +219,11 @@ msgid "Creating a theme"
 msgstr "创建主题"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:125
+#, fuzzy
 msgid ""
 "The simplest way to create a theme is to edit a theme resource. Create a "
-"Theme from the resource menu, the editor will appear immediately. Following "
-"to this, save it (to, as example, mytheme.thm):"
+"Theme from the resource menu; the editor will appear immediately. After "
+"that, save it (for example, with the name mytheme.theme):"
 msgstr ""
 "创建主题最简单的方法是编辑主题资源。从 \"资源\" 菜单创建一个主题, 编辑面板将"
 "立即出现。然后, 将其保存为主题文件 (例如, mytheme.thm):"
@@ -249,17 +259,19 @@ msgid ""
 msgstr "所有按钮主题选项都将立刻显示在属性面板中, 可以在其中进行编辑:"
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:152
+#, fuzzy
 msgid ""
-"Select the \"normal\" stylebox and create a new \"StyleBoxTexture\", then "
-"edit it. A texture stylebox basically contains a texture and the size of the "
-"margins that will not stretch when the texture is stretched. This is called "
-"\"3x3\" stretching:"
+"From ``Styles``, open the \"Normal\" drop-down menu next to where it "
+"probably says \"null\" and create a \"New StyleBoxTexture\", then edit it. A "
+"texture stylebox basically contains a texture and the size of the margins "
+"that will not stretch when the texture is stretched. This is called \"3x3\" "
+"stretching:"
 msgstr ""
 "选择名为\"Normal\"的stylebox 并创建一个新的 \"StyleBoxTexture\", 然后编辑它。"
 "纹理 stylebox 基本上包本身含纹理和“纹理拉伸保留边距”，拉伸时，边距范围内不受"
 "拉伸影响。这被称为 \"3x3\" 拉伸(译注:九宫格拉伸):"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:159
+#: ../../docs/tutorials/gui/gui_skinning.rst:160
 msgid ""
 "Repeat the steps and add the other assets. There is no hover or disabled "
 "image in the example files, so use the same stylebox as in normal. Set the "
@@ -270,20 +282,22 @@ msgstr ""
 "使用与“Normal”状态相同的 stylebox。将提供的字体设置为按钮字体, 并将字体颜色更"
 "改为黑色。很快地, 您的按钮将看起来不同了，并且变得复古:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:166
+#: ../../docs/tutorials/gui/gui_skinning.rst:167
+#, fuzzy
 msgid ""
-"Save this theme to the .thm file. Go to the 2D editor and create a few "
+"Save this theme to the .theme file. Go to the 2D editor and create a few "
 "buttons:"
 msgstr "将此主题保存到 .thm 文件中。转到 2D 编辑器并创建几个按钮:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:171
+#: ../../docs/tutorials/gui/gui_skinning.rst:172
+#, fuzzy
 msgid ""
 "Now, go to the root node of the scene and locate the \"theme\" property, "
-"replace it by the theme that was just created. It should look like this:"
+"replace it with the theme that was just created. It should look like this:"
 msgstr ""
 "现在, 转到场景的根节点并找到 \"Theme\" 属性, 将其替换为刚刚创建的主题。它应该"
 "看起来像这样:"
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:176
+#: ../../docs/tutorials/gui/gui_skinning.rst:177
 msgid "Congratulations! You have created a reusable GUI Theme!"
 msgstr "恭喜咯！您已经创建了一个可反复使用的 GUI 主题!"

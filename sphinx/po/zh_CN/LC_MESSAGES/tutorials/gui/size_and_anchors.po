@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,8 +41,9 @@ msgstr ""
 "脑、便携游戏主机和手机等等，都有不同的分辨率和纵横比。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:15
+#, fuzzy
 msgid ""
-"There are several ways to handle this, but for now let's just imagine that "
+"There are several ways to handle this, but for now, let's just imagine that "
 "the screen resolution has changed and the controls need to be re-positioned. "
 "Some will need to follow the bottom of the screen, others the top of the "
 "screen, or maybe the right or left margins."
@@ -52,9 +53,10 @@ msgstr ""
 "部, 或者可能是右边或左边的边距。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:22
+#, fuzzy
 msgid ""
 "This is done by editing the *margin* properties of controls. Each control "
-"has four margins: left, right, bottom and top. By default all of them "
+"has four margins: left, right, bottom and top. By default, all of them "
 "represent a distance in pixels relative to the top-left corner of the parent "
 "control or (in case there is no parent control) the viewport."
 msgstr ""
@@ -72,8 +74,9 @@ msgstr ""
 "区的右下角作为参照点。"
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:35
+#, fuzzy
 msgid ""
-"Here the control is set to expand its bottom-right corner with that of the "
+"Here, the control is set to expand its bottom-right corner with that of the "
 "parent, so when re-sizing the parent, the control will always cover it, "
 "leaving a 20 pixel margin:"
 msgstr ""

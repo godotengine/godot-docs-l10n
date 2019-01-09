@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,10 +38,11 @@ msgid "Hardware display coordinates"
 msgstr "硬件显示坐标"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
+#, fuzzy
 msgid ""
 "Using hardware coordinates makes sense in the case of writing complex UIs "
-"meant to run on PC, such as editors, MMOs, tools, etc. Yet, it does not make "
-"as much sense outside of that scope."
+"meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
+"make as much sense outside of that scope."
 msgstr ""
 "在编写用于在PC上运行的复杂用户界面(如编辑器、MMOs、工具等)时，使用硬件坐标是"
 "有意义的。但是，在这个范围之外，使用硬件坐标并没有多大意义。"
@@ -62,5 +63,7 @@ msgstr ""
 "大小，例如:"
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
-msgid "Alternatively it's possible to ask the viewport for the mouse position:"
+#, fuzzy
+msgid ""
+"Alternatively, it's possible to ask the viewport for the mouse position:"
 msgstr "或者，也可以询问视区的鼠标位置:"

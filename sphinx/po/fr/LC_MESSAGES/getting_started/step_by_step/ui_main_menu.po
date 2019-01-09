@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -195,7 +195,7 @@ msgstr ""
 "imbriquerons les conteneurs basés sur notre maquette."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:277
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:278
 msgid "Break down the UI mockup"
 msgstr "Décomposez la maquette de l'interface utilisateur"
 
@@ -600,17 +600,19 @@ msgstr ""
 "précisément aux dimensions de l'écran."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
+#, fuzzy
 msgid ""
-"Congratulations for getting there! You can download the `final menu <#>`__ "
-"to compare with your own. In the next tutorial, you'll create a Game User "
-"Interface with bars and item counters."
+"Congratulations for getting there! You can download the final menu :download:"
+"`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
+"your own. In the next tutorial, you'll create a Game User Interface with "
+"bars and item counters."
 msgstr ""
 "Félicitations d'être arrivé jusqu'ici ! Vous pouvez télécharger le `menu "
 "final <#>`__ pour le comparer avec le vôtre. Dans le prochain tutoriel, vous "
 "créerez une interface utilisateur de jeu avec des barres et des compteurs "
 "d'objets."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -623,7 +625,7 @@ msgstr ""
 "utilisons des conteneurs pour contrôler la position et la taille des "
 "éléments constituants notre interface."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:285
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press the Q key to activate "
@@ -637,7 +639,7 @@ msgstr ""
 "des coins du conteneur pour le redimensionner. Les éléments devraient se "
 "déplacer correctement à l'intérieur."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:290
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:291
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -650,7 +652,7 @@ msgstr ""
 "besoin d'adapter le jeu à des résolutions différentes. Pour cette raison, "
 "Godot redimensionne la fenêtre dans son intégralité."
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:296
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:297
 msgid ""
 "You can change the scale mode in the project settings: click the Project "
 "menu -> Project Settings. In the window's left column, look for the Display "

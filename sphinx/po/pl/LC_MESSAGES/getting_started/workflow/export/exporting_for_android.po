@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -127,35 +127,38 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""
-"This key is used to verify your developer identity, remember its password "
-"and keep it in a safe place! Use Google's Android Developer guides to learn "
-"more about `APK signing <https://developer.android.com/studio/publish/app-"
-"signing>`__."
+"This keystore and key are used to verify your developer identity, remember "
+"the password and keep it in a safe place! Use Google's Android Developer "
+"guides to learn more about `APK signing <https://developer.android.com/"
+"studio/publish/app-signing>`__."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
-msgid "Now fill the following forms in you Android Export Presets:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
-msgid "Release: Enter the path to the keystore file you just generated."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
-msgid "Release User: Replace with what your key alias."
+msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
-msgid "Release Password: Key password."
+msgid "Release: Enter the path to the keystore file you just generated."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+msgid "Release User: Replace with the key alias."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
-"Now your export_presets.cfg file contains sensitive info; if using a Version "
-"Control System, it is a good idea to remove it from public repositories."
+"Release Password: Key password. Note that the keystore password and the key "
+"password currently have to be the same."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+msgid ""
+"**Now your export_presets.cfg file contains sensitive info;** if using a "
+"Version Control System, it is a good idea to remove it from public "
+"repositories."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid ""
 "Don't forget to disable the ``Export With Debug`` button while choosing the "
 "APK's name."

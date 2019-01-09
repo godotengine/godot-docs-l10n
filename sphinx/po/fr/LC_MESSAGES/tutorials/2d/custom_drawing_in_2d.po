@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,19 +76,12 @@ msgstr ""
 "personnalisée pour dessiner les blocs."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
-#, fuzzy
 msgid ""
-"Managing drawing logic of a large amount of simple objects (in the hundreds "
-"of thousands). Using a thousand nodes is probably not nearly as efficient as "
-"drawing, but a thousand draw calls are cheap; take the \"Shower of Bullets\" "
-"demo as an example."
+"Drawing a large number of simple objects. Custom drawing avoids the overhead "
+"of using nodes which makes it less memory intensive and potentially faster."
 msgstr ""
-"Gestion de la logique de dessin d’un grand nombre d’objets simples (par "
-"centaines de milliers). Utiliser un millier de nœuds n’est probablement pas "
-"aussi efficace que dessiner, mais un millier d’appels à dessiner sont peu "
-"coûteux. Vérifiez la démo \"Shower of Bullets\" à titre d'exemple."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:32
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but it's "
 "easy to run into the need to make a new, custom one."
@@ -97,11 +90,11 @@ msgstr ""
 "nombreux contrôles disponibles, mais on peut rapidement avoir besoin d'en "
 "créer un nouveau, personnalisé."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:36
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:35
 msgid "OK, how?"
 msgstr "D'accord, comment ?"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:38
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:37
 #, fuzzy
 msgid ""
 "Add a script to any :ref:`CanvasItem <class_CanvasItem>` derived node, like :"
@@ -112,7 +105,7 @@ msgstr ""
 "<class_CanvasItem>, comme :ref:` Contrôle <contrôle_classe>` ou :ref:`Node2D "
 "<class_Node2D>`. Puis remplacez la fonction _draw()."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:58
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
@@ -120,11 +113,11 @@ msgstr ""
 "Les commandes de dessin sont décrites dans la référence de classe :ref:"
 "`Elément de Canevas <class_CanvasItem>`. Elles sont nombreuses."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
 msgid "Updating"
 msgstr "Mise à jour"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:64
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:63
 #, fuzzy
 msgid ""
 "The ``_draw()`` function is only called once, and then the draw commands are "
@@ -134,7 +127,7 @@ msgstr ""
 "sont mises en mémoire tampon et mémorisées, de sorte que les appels "
 "ultérieurs sont inutiles."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:67
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 #, fuzzy
 msgid ""
 "If re-drawing is required because a state or something else changed, simply "
@@ -145,7 +138,7 @@ msgstr ""
 "appelez simplement :ref:`CanvasItem.update() <class_CanvasItem_update>` dans "
 "ce même nœud et un nouvel appel _draw() aura lieu."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:71
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
 #, fuzzy
 msgid ""
 "Here is a little more complex example, a texture variable that will be "
@@ -154,7 +147,7 @@ msgstr ""
 "Voici un exemple un peu plus complexe. Une variable de texture qui sera "
 "redessinée si modifiée :"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:115
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:114
 #, fuzzy
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
@@ -163,11 +156,11 @@ msgstr ""
 "Dans certains cas, il peut être souhaitable de dessiner chaque image. Pour "
 "cela, appelez simplement update() à partir du rappel _process(), comme ceci :"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:147
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
 msgid "An example: drawing circular arcs"
 msgstr "Un exemple: dessiner des arcs de cercle"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:149
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:148
 #, fuzzy
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
@@ -183,11 +176,11 @@ msgstr ""
 "d'un cercle ? Vous devrez coder vous-même une fonction pour résoudre ça et "
 "la dessiner."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:154
 msgid "Arc function"
 msgstr "Fonction d'arc"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:156
 #, fuzzy
 msgid ""
 "An arc is defined by its support circle parameters, that is, the center "
@@ -203,7 +196,7 @@ msgstr ""
 "couleur afin que nous puissions dessiner l'arc de différentes couleurs si "
 "nous le souhaitons."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:162
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:161
 #, fuzzy
 msgid ""
 "Basically, drawing a shape on the screen requires it to be decomposed into a "
@@ -229,7 +222,7 @@ msgstr ""
 "exemple, nous utiliserons simplement un nombre fixe de points, quel que soit "
 "le rayon."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:202
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
 #, fuzzy
 msgid ""
 "Remember the number of points our shape has to be decomposed into? We fixed "
@@ -242,7 +235,7 @@ msgstr ""
 "nous initialisons un PoolVector2Array vide, qui est simplement un tableau de "
 "Vector2."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:205
 msgid ""
 "The next step consists of computing the actual positions of these 32 points "
 "that compose an arc. This is done in the first for-loop: we iterate over the "
@@ -256,7 +249,7 @@ msgstr ""
 "positions, plus un pour inclure le dernier point. Nous déterminons d'abord "
 "l'angle de chaque point, entre les angles de départ et d'arrivée."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:211
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
 #, fuzzy
 msgid ""
 "The reason why each angle is decreased by 90° is that we will compute 2D "
@@ -274,7 +267,7 @@ msgstr ""
 "à 12 heures. Nous réduisons donc chaque angle de 90° pour pouvoir compter à "
 "partir de 12 heures."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:217
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:216
 #, fuzzy
 msgid ""
 "The actual position of a point located on a circle at angle ``angle`` (in "
@@ -296,7 +289,7 @@ msgstr ""
 "Vector2. Enfin, nous insérons le point dans le PoolVector2Array défini "
 "précédemment."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:225
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:224
 #, fuzzy
 msgid ""
 "Now, we need to actually draw our points. As you can imagine, we will not "
@@ -318,12 +311,12 @@ msgstr ""
 "entre deux points ne sera jamais assez longue que pour les voir. Si cela se "
 "produit, il nous faudra simplement augmenter le nombre de points."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:235
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:234
 #, fuzzy
 msgid "Draw the arc on the screen"
 msgstr "Dessiner l'arc sur l'écran"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:237
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
 #, fuzzy
 msgid ""
 "We now have a function that draws stuff on the screen; it is time to call it "
@@ -332,15 +325,15 @@ msgstr ""
 "Nous avons maintenant une fonction qui dessine des choses à l'écran: il est "
 "temps d'appeler la fonction _draw()."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:263
 msgid "Result:"
 msgstr "Résultat :"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:269
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:268
 msgid "Arc polygon function"
 msgstr "Fonction de polygone d'arc"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:271
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:270
 #, fuzzy
 msgid ""
 "We can take this a step further and not only write a function that draws the "
@@ -353,11 +346,11 @@ msgstr ""
 "La méthode est exactement la même que précédemment, sauf que nous dessinons "
 "un polygone au lieu de lignes :"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:311
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:310
 msgid "Dynamic custom drawing"
 msgstr "Dessin personnalisé dynamique"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:313
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
 #, fuzzy
 msgid ""
 "All right, we are now able to draw custom stuff on the screen. However, it "
@@ -374,7 +367,7 @@ msgstr ""
 "d’incrément doit rester constante sinon la vitesse de rotation changera en "
 "conséquence."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:319
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:318
 #, fuzzy
 msgid ""
 "First, we have to make both angle_from and angle_to variables global at the "
@@ -385,13 +378,13 @@ msgstr ""
 "angle_destination au début de notre script. Notez également que vous pouvez "
 "les stocker dans d'autres nœuds et y accéder à l'aide de get_node()."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:341
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:340
 msgid "We make these values change in the _process(delta) function."
 msgstr ""
 "Nous faisons en sorte que ces valeurs changent dans la fonction "
 "_process(delta)."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:343
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
@@ -403,7 +396,7 @@ msgid ""
 "we'll create it here, as it is relatively simple."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:352
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:351
 #, fuzzy
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
@@ -414,7 +407,7 @@ msgstr ""
 "appelle automatiquement _draw(). De cette façon, vous pouvez contrôler le "
 "moment où vous souhaitez actualiser le cadre."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:397
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:396
 #, fuzzy
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
@@ -423,14 +416,14 @@ msgstr ""
 "De plus, n'oubliez pas de modifier la fonction _draw() pour faire usage de "
 "ces variables :"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:421
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:420
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 "Allons-y ! Cela fonctionne, mais l'arc tourne incroyablement vite ! Qu'est-"
 "ce qui ne va pas ?"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:423
 #, fuzzy
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
@@ -450,7 +443,7 @@ msgstr ""
 "assure que votre programme s'exécutera à la même vitesse sur le matériel de "
 "tout le monde."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:432
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:431
 #, fuzzy
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
@@ -463,21 +456,21 @@ msgstr ""
 "nos 2 angles seront augmentés d'une valeur beaucoup plus petite, qui dépend "
 "directement de la vitesse de rendu."
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:466
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:465
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr "Allons-y encore ! Cette fois, la rotation s'opère correctement !"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:468
 msgid "Tools"
 msgstr "Outils"
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:470
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:475
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:474
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."
