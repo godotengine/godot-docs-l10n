@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid "This example demonstrates how to load a new scene. Consider it in the con
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:92
-msgid "First we setup some variables and initialize the ``current_scene`` with the main scene of the game:"
+msgid "Firstly, we set up some variables and initialize the ``current_scene`` with the main scene of the game:"
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:106
@@ -109,7 +109,7 @@ msgid "``_process`` is where the loader is polled. ``poll`` is called, and then 
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:134
-msgid "Note how we use ``OS.get_ticks_msec`` to control how long we block the thread. Some stages might load fast, which means we might be able to cram more than one call to ``poll`` in one frame, some might take way more than your value for ``time_max``, so keep in mind we won't have precise control over the timings."
+msgid "Note how we use ``OS.get_ticks_msec`` to control how long we block the thread. Some stages might load fast, which means we might be able to cram more than one call to ``poll`` in one frame; some might take way more than your value for ``time_max``, so keep in mind we won't have precise control over the timings."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:170
@@ -137,7 +137,7 @@ msgid "Not blocking main thread during the polling"
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:209
-msgid "If you have a mutex to allow calls from the main thread to your loader class, don't lock it while you call ``poll`` on the loader. When a resource is finished loading, it might require some resources from the low level APIs (VisualServer, etc), which might need to lock the main thread to acquire them. This might cause a deadlock if the main thread is waiting for your mutex while your thread is waiting to load a resource."
+msgid "If you have a mutex to allow calls from the main thread to your loader class, don't lock the former while you call ``poll`` on the latter. When a resource is done loading, it might require some resources from the low-level APIs (VisualServer, etc), which might need to lock the main thread to acquire them. This might cause a deadlock if the main thread is waiting for your mutex while your thread is waiting to load a resource."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:218
@@ -153,7 +153,7 @@ msgid "Call after you instance the class to start the thread."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:233
-msgid "Queue a resource. Use optional parameter \"p_in_front\" to put it in front of the queue."
+msgid "Queue a resource. Use optional argument \"p_in_front\" to put it in front of the queue."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:240
@@ -177,6 +177,6 @@ msgid "Example:"
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:298
-msgid "**Note**: this code in its current form is not tested in real world scenarios. Ask punto on IRC (#godotengine on irc.freenode.net) for help."
+msgid "**Note**: this code, in its current form, is not tested in real world scenarios. Ask punto on IRC (#godotengine on irc.freenode.net) for help."
 msgstr ""
 
