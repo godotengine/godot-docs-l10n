@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-01-08 11:44+0100\n"
+"POT-Creation-Date: 2019-01-09 10:56+0100\n"
 "PO-Revision-Date: 2018-12-31 12:10+0000\n"
 "Last-Translator: Bas van Schoubroeck <basvanschoubroeck@hotmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/godot-engine/godot-"
@@ -156,6 +156,7 @@ msgstr "Over"
 #: ../../docs/tutorials/2d/using_tilemaps.rst:7
 #: ../../docs/tutorials/2d/2d_movement.rst:7
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:7
+#: ../../docs/tutorials/2d/2d_skeletons.rst:7
 #: ../../docs/tutorials/3d/using_transforms.rst:7
 #: ../../docs/tutorials/3d/3d_performance_and_limitations.rst:7
 #: ../../docs/tutorials/3d/spatial_material.rst:7
@@ -1244,87 +1245,92 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:105
 msgid ""
-"You’ll use the **2D workspace** for all types of games. On top of 2D games "
-"that is where you’ll build your interfaces. Press F1 to access it. |image15|"
+"You’ll use the **2D workspace** for all types of games. In addition to 2D "
+"games, the 2D workspace is where you'll build your interfaces. Press F1 to "
+"access it."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:109
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:108
+msgid "|image15|"
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:110
 msgid ""
 "In the **3D workspace**, you can work with meshes, lights, and design levels "
 "for 3D games. Press F2 to access it."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:112
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:113
 msgid "|image16|"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:114
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:115
 msgid ""
 "Notice the text [perspective] under the toolbar, it is a button that opens a "
 "list of options related to the 3D viewport."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:116
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:117
 msgid "|image20|"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:118
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:119
 msgid ""
 "Read :ref:`doc_introduction_to_3d` for more detail about **3D workspace**."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:120
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:121
 msgid ""
 "The **Script** workspace is a complete code editor with a debugger, rich "
 "auto-completion, and built-in code reference. Press F3 to access it, and F4 "
 "to search the reference."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:124
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:125
 msgid "|image17|"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:126
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:127
 msgid ""
 "Finally the **AssetLib** is a library of Free add-ons, scripts and assets to "
 "use in your projects."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:130
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:131
 msgid "Modify the interface"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:132
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:133
 msgid ""
 "Godot’s interface lives in a single window. You cannot split it across "
 "multiple screens although you can work with an external code editor like "
 "Atom or Visual Studio for instance."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:137
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:138
 msgid "Move and resize docks"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:139
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:140
 msgid ""
 "Click and drag on the edge of any dock or panel to resize it horizontally or "
 "vertically."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:142
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:143
 msgid "|image18|"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:144
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:145
 msgid ""
 "Click the three-dotted icon at the top of any dock to change its location."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:147
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:148
 msgid "|image19|"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:149
+#: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:150
 msgid ""
 "Go to the ``Editor`` menu and ``Editor Settings`` to fine-tune the look and "
 "feel of the editor."
@@ -5283,7 +5289,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:88
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:277
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:278
 msgid "Break down the UI mockup"
 msgstr ""
 
@@ -5574,12 +5580,13 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
 msgid ""
-"Congratulations for getting there! You can download the `final menu <#>`__ "
-"to compare with your own. In the next tutorial, you'll create a Game User "
-"Interface with bars and item counters."
+"Congratulations for getting there! You can download the final menu :download:"
+"`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
+"your own. In the next tutorial, you'll create a Game User Interface with "
+"bars and item counters."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:279
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -5587,7 +5594,7 @@ msgid ""
 "UI elements."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:284
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:285
 msgid ""
 "The order in which you nest matters. To see if your UI adapts nicely to "
 "different screen ratios, select the root node, press the Q key to activate "
@@ -5595,7 +5602,7 @@ msgid ""
 "container's corners to resize it. The UI components should flow inside of it."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:290
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:291
 msgid ""
 "You'll notice that although containers move sprites around, they don't scale "
 "them. This is normal. We want the UI system to handle different screen "
@@ -5603,7 +5610,7 @@ msgid ""
 "resolutions. To do this, Godot scales the entire window up and down."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:296
+#: ../../docs/getting_started/step_by_step/ui_main_menu.rst:297
 msgid ""
 "You can change the scale mode in the project settings: click the Project "
 "menu -> Project Settings. In the window's left column, look for the Display "
@@ -5619,10 +5626,10 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
 msgid ""
-"Now that you've nailed the basics, we're going to see how to build a Game "
-"User Interface (GUI) with reusable UI components: a life bar, an energy bar, "
-"and bomb and rupee counters. By the end of this tutorial, you'll have a game "
-"GUI, ready to control with GDscript or VisualScript:"
+"Now that you've nailed the basics, we're going to see how to build a game "
+"Graphical User Interface (GUI) with reusable UI components: a life bar, an "
+"energy bar, and bomb and rupee counters. By the end of this tutorial, you'll "
+"have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
@@ -5763,10 +5770,10 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
-"``VBoxContainer`` as a child of ``GUI`` and name it ``Bars``. Select the "
-"parent ``HBoxContainer`` again and this time, add another ``HBoxContainer`` "
-"as a child of it. Call it ``Counters``. With these four containers, we have "
-"the base for our GUI scene."
+"``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
+"Select the parent ``HBoxContainer`` again and this time, add another "
+"``HBoxContainer`` as a child of it. Call it ``Counters``. With these four "
+"containers, we have the base for our GUI scene."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
@@ -5896,7 +5903,7 @@ msgid ""
 "resize to fit the ``Background``. Head to the Inspector and change its "
 "``Align`` property to ``Right``, and the ``VAlign`` property to ``Center``. "
 "The text should snap to the center of the ``Background``'s right edge. "
-"Resize the node horizontally so it takes the right half of the "
+"Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
 
@@ -6076,7 +6083,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
-"so we need to set the ``Bars`` container take all the available horizontal "
+"so, we need to set the ``Bars`` container take all the available horizontal "
 "space it can. Select the ``Bars`` node and scroll down to the ``Size Flags`` "
 "category. In the ``Horizontal`` category, check the ``Expand`` value. The "
 "``Bars`` node should resize and push the counter to the right side of the "
@@ -6115,7 +6122,7 @@ msgstr ""
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
-"the root along with one more children is a **branch**. We can encapsulate "
+"the root along with one or more children is a **branch**. We can encapsulate "
 "node branches into separate scenes, or load and merge them from other scenes "
 "into the active one. Right click on any node in the Scene dock and select "
 "``Save Branch as Scene`` or ``Merge from Scene``."
@@ -6127,7 +6134,7 @@ msgid ""
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
 "appears to the right of the nodes in the scene tree. Click on the one next "
 "to ``Bar`` to open the corresponding scene. Resize the ``Bar`` node so that "
-"its bounding box fits its content. The way we named and place the Control "
+"its bounding box fits its content. The way we named and placed the Control "
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
@@ -6160,8 +6167,8 @@ msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
 "the inherited scenes update to reflect the changes. If you change a value in "
-"the inherited scene, it will always overrides the parent's property. It's "
-"useful for UIs as they often require variations of the same elements. In "
+"the inherited scene, it will always override the parent's property. It's "
+"useful for UIs, as they often require variations of the same elements. In "
 "general, in UI design, buttons, panels etc. share a common base style and "
 "interactions. We don't want to copy it over to all variations manually."
 msgstr ""
@@ -6359,7 +6366,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-msgid "The rupee counter should look about like this"
+msgid "The rupee counter should look something like this"
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
@@ -6414,10 +6421,11 @@ msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
 "open its scene. Select the ``Count`` node and scroll down to the ``Custom "
-"Constant`` section. Add a ``Margin Left`` of ``20``. In the ``Rect`` section "
-"set the node's ``Min Size`` back to 100, the same value as on the LifeBar. "
-"The ``Count`` should now have some margin on the left. If you save and go "
-"back to the GUI scene, it will be aligned vertically with the ``LifeBar``."
+"Constants`` section. Add a ``Margin Left`` of ``20``. In the ``Rect`` "
+"section set the node's ``Min Size`` back to 100, the same value as on the "
+"LifeBar. The ``Count`` should now have some margin on the left. If you save "
+"and go back to the GUI scene, it will be aligned vertically with the "
+"``LifeBar``."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:593
@@ -6426,7 +6434,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
 msgid ""
-"We could have setup the ``EnergyBar`` this way a few moments ago. But this "
+"We could have set up the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
@@ -6458,7 +6466,8 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
-"final project `here <#>`__."
+"the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
+"zip>`."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
@@ -6997,8 +7006,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
 msgid ""
-"The last two arguments combined correspond to an `easing equation <#>`__. "
-"This controls how the value evolves from the start to the end point."
+"The last two arguments combined correspond to an easing equation. This "
+"controls how the value evolves from the start to the end point."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
@@ -7780,7 +7789,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:21
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:68
 msgid "Implementation"
 msgstr ""
 
@@ -7909,7 +7917,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
 msgid ""
-"The second is that under Windows and macOS file and path names are case "
+"The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
 "saves an asset as \"myfile.PNG\", but then references it as \"myfile.png\", "
 "it will work fine on their platform, but not on other platforms, such as "
@@ -7919,7 +7927,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
 msgid ""
-"It is recommended that your team clearly defines a naming convention for "
+"It is recommended that your team clearly define a naming convention for "
 "files when working with Godot! One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
@@ -9387,9 +9395,9 @@ msgstr ""
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:366
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:431
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:15
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:112
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:115
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:166
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:17
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:70
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
@@ -18001,35 +18009,38 @@ msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:73
 msgid ""
-"This key is used to verify your developer identity, remember its password "
-"and keep it in a safe place! Use Google's Android Developer guides to learn "
-"more about `APK signing <https://developer.android.com/studio/publish/app-"
-"signing>`__."
+"This keystore and key are used to verify your developer identity, remember "
+"the password and keep it in a safe place! Use Google's Android Developer "
+"guides to learn more about `APK signing <https://developer.android.com/"
+"studio/publish/app-signing>`__."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:76
-msgid "Now fill the following forms in you Android Export Presets:"
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:78
-msgid "Release: Enter the path to the keystore file you just generated."
-msgstr ""
-
-#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:79
-msgid "Release User: Replace with what your key alias."
+msgid "Now fill in the following forms in your Android Export Presets:"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:80
-msgid "Release Password: Key password."
+msgid "Release: Enter the path to the keystore file you just generated."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:81
+msgid "Release User: Replace with the key alias."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:82
 msgid ""
-"Now your export_presets.cfg file contains sensitive info; if using a Version "
-"Control System, it is a good idea to remove it from public repositories."
+"Release Password: Key password. Note that the keystore password and the key "
+"password currently have to be the same."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/exporting_for_android.rst:84
+msgid ""
+"**Now your export_presets.cfg file contains sensitive info;** if using a "
+"Version Control System, it is a good idea to remove it from public "
+"repositories."
+msgstr ""
+
+#: ../../docs/getting_started/workflow/export/exporting_for_android.rst:86
 msgid ""
 "Don't forget to disable the ``Export With Debug`` button while choosing the "
 "APK's name."
@@ -19859,6 +19870,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/2d_movement.rst:17
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:22
+#: ../../docs/tutorials/2d/2d_skeletons.rst:25
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:41
 msgid "Setup"
 msgstr ""
@@ -20408,6 +20420,306 @@ msgid ""
 "``filter`` set the more expensive the shadows will be."
 msgstr ""
 
+#: ../../docs/tutorials/2d/2d_skeletons.rst:4
+msgid "2D skeletons"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:9
+msgid ""
+"When working with 3D, skeletal deforms are common for characters and "
+"creatures and most 3D modelling applications support it. For 2D, as this "
+"function is not used as often, it's difficult to find mainstream software "
+"aimed for this."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:13
+msgid ""
+"One option is to create animations in third-party software such as Spine or "
+"Dragonbones. From Godot 3.1 onwards, though, this functionality is supported "
+"built-in."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:16
+msgid ""
+"Why would you want to do skeletal animations directly in Godot? The answer "
+"is that there are many advantages to it:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:18
+msgid ""
+"Better integration with the engine, so less hassle importing and editing "
+"from an external tool."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:19
+msgid ""
+"Ability to control particle systems, shaders, sounds, call scripts, colors, "
+"transparency, etc. in animations."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:20
+msgid ""
+"The built-in skeletal system in Godot is very efficient and designed for "
+"performance."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:22
+msgid "The following tutorial will, then, explain 2D skeletal deformations."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:27
+msgid ""
+"Before starting, it is advised to go through the :ref:"
+"`doc_cutout_animations` tutorial to gain a general understanding of "
+"animating within Godot."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:30
+msgid ""
+"For this tutorial, we will be using a single image to construct our "
+"character. Download it from :download:`gBot_pieces.png <img/gBot_pieces."
+"png>` or save the image below."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:35
+msgid ""
+"It is also advised to download the final character image :download:"
+"`gBot_complete.png <img/gBot_complete.png>` to have a good reference for "
+"putting the different pieces together."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:41
+msgid "Creating the polygons"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:43
+msgid ""
+"Create a new scene for your model (if it's going to be an animated "
+"character, you may want to use a ``KinematicBody2D``). For ease of use, an "
+"empty 2D node is created as a root for the polygons."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:46
+msgid ""
+"Begin with a ``Polygon2D`` node. There is no need to place it anywhere in "
+"the scene for now, so simply create it like this:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:50
+msgid ""
+"Select it and assign the texture with the character pieces you have "
+"downloaded before:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:54
+msgid ""
+"Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog "
+"for the polygon:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:58
+msgid ""
+"Head over to the *Points* mode, select the pencil and draw a polygon around "
+"the desired piece:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:62
+msgid ""
+"Duplicate the polygon node, rename it properly, enter the \"UV\" dialog "
+"again and replace the old polygon with another one in the new desired piece."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:66
+msgid "Keep doing this until all pieces have been mapped."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:70
+msgid ""
+"You will notice that pieces for nodes appear in the same layout as they do "
+"in the original texture. This is because (by default) when you draw a "
+"polygon, the UV and points are the same."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:73
+msgid ""
+"Rearrange the pieces and build the character. This should be pretty quick. "
+"There is no need to change pivots, so don't bother making sure rotation "
+"pivots for each piece are right; you can leave them be for now."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:78
+msgid ""
+"Ah, the visual order of the pieces is not correct yet, as some are covering "
+"wrong pieces. Rearrange the order of the nodes to fix this:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:82
+msgid ""
+"And there you go! It was definitely much easier than in the cutout tutorial."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:85
+msgid "Creating the skeleton"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:87
+msgid ""
+"Create a ``Skeleton2D`` node as a child of the root node. This will be the "
+"base of our skeleton:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:91
+msgid ""
+"Create a ``Bone2D`` node as a child of the skeleton. Put it on the hip "
+"(usually skeletons start here). The bone will be pointing to the right, but "
+"you can ignore this for now."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:96
+msgid "Keep creating bones in hierarchy and naming them accordingly."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:100
+msgid ""
+"At the end of this chain, there will be a *jaw* node. It is, again, very "
+"short and pointing to the right. This is normal for bones without children. "
+"The length of *tip* bones can be changed with a property in the inspector:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:105
+msgid ""
+"In this case, we don't need to rotate the bone (coincidentially the jaw "
+"points right in the sprite), but in case you need to, feel free to do it. "
+"Again, this is only really needed for tip bones as nodes with children don't "
+"usually need a length or a specific rotation."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:108
+msgid "Keep going and build the whole skeleton:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:112
+msgid ""
+"You will notice that all bones raise an annoying warning about a missing "
+"rest pose. This means that it's time to set one. Go to the *skeleton* node "
+"and create a rest pose. This pose is the default one, you can come back to "
+"it anytime you want (which is very handy for animating):"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:117
+msgid ""
+"The warnings will go away. If you modify the skeleton (add/remove bones) you "
+"will need to set the rest pose again."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:120
+msgid "Deforming the polygons"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:122
+msgid ""
+"Select the previously created polygons and assign the skeleton node to their "
+"``Skeleton`` property. This will ensure that they can eventually by deformed "
+"by it."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:126
+msgid "Click the property highlighted above and select the skeleton node:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:130
+msgid ""
+"Again, open the UV editor for the polygon and go to the *Bones* section."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:134
+msgid ""
+"You will not be able to paint weights yet. For this you need to synchronize "
+"the list of bones from the skeleton with the polygon. This step is done "
+"manually and only once (unless you modify the skeleton). It ensures that "
+"your rigging information is kept in the polygon, even if a skeleton node is "
+"accidentally lost or the skeleton modified. Push the \"Sync Bones to Polygon"
+"\" button to sync the list."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:140
+msgid ""
+"The list of bones will automatically appear. By default, your polygon has no "
+"weight assigned to any of them. Select the bones you want to assign weight "
+"to and paint them:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:145
+msgid ""
+"Points in white have a full weight assigned, while points in black are not "
+"influenced by the bone. If the same point is painted white for multiple "
+"bones, the influence will be distributed amongst them (so usually there is "
+"not that much need to use shades in-between unless you want to polish the "
+"bending effect)."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:151
+msgid ""
+"After painting the weights, animating the bones (NOT the polygons!) will "
+"have the desired effect of modifying and bending the polygons accordingly. "
+"As you only need to animate bones in this approach, work becomes much easier!"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:154
+msgid ""
+"But it's not all roses. Trying to animate bones that bend the polygon will "
+"often yield unexpected results:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:158
+msgid ""
+"This happens because Godot generates internal triangles that connect the "
+"points when drawing the polygon. They don't always bend the way you would "
+"expect. To solve this, you need to set hints in the geometry to clarify how "
+"you expect it to deform."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:162
+msgid "Internal vertices"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:164
+msgid ""
+"Open the UV menu for each bone again and go to the *Points* section. Add "
+"some internal vertices in the regions where you expect the geometry to bend:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:168
+msgid ""
+"Now, go to the *Polygon* section and redraw your own polygons with more "
+"detail. Imagine that, as your polygons bend, you need to make sure they "
+"deform the least possible, so experiment a bit to find the right setup."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:173
+msgid ""
+"Once you start drawing, the original polygon will disappear and you will be "
+"free to create your own:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:177
+msgid ""
+"This amount of detail is usually fine, though you may want to have more fine-"
+"grained control over where triangles go. Experiment by yourself until you "
+"get the results you like."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:179
+msgid ""
+"**Note:** Don't forget that your newly added internal vertices also need "
+"weight painting! Go to the *Bones* section again to assign them to the right "
+"bones."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_skeletons.rst:181
+msgid "Once you are all set, you will get much better results:"
+msgstr ""
+
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:4
 msgid "Custom drawing in 2D"
 msgstr ""
@@ -20453,69 +20765,67 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:28
 msgid ""
-"Managing drawing logic of a large amount of simple objects (in the hundreds "
-"of thousands). Using a thousand nodes is probably not nearly as efficient as "
-"drawing, but a thousand draw calls are cheap; take the \"Shower of Bullets\" "
-"demo as an example."
+"Drawing a large number of simple objects. Custom drawing avoids the overhead "
+"of using nodes which makes it less memory intensive and potentially faster."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:32
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:31
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but it's "
 "easy to run into the need to make a new, custom one."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:36
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:35
 msgid "OK, how?"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:38
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:37
 msgid ""
 "Add a script to any :ref:`CanvasItem <class_CanvasItem>` derived node, like :"
 "ref:`Control <class_Control>` or :ref:`Node2D <class_Node2D>`. Then override "
 "the ``_draw()`` function."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:58
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:57
 msgid ""
 "Draw commands are described in the :ref:`CanvasItem <class_CanvasItem>` "
 "class reference. There are plenty of them."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:62
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:61
 msgid "Updating"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:64
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:63
 msgid ""
 "The ``_draw()`` function is only called once, and then the draw commands are "
 "cached and remembered, so further calls are unnecessary."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:67
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:66
 msgid ""
 "If re-drawing is required because a state or something else changed, simply "
 "call :ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that "
 "same node and a new ``_draw()`` call will happen."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:71
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
 msgid ""
 "Here is a little more complex example, a texture variable that will be "
 "redrawn if modified:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:115
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:114
 msgid ""
 "In some cases, it may be desired to draw every frame. For this, just call "
 "``update()`` from the ``_process()`` callback, like this:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:147
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
 msgid "An example: drawing circular arcs"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:149
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:148
 msgid ""
 "We will now use the custom drawing functionality of the Godot Engine to draw "
 "something that Godot doesn't provide functions for. As an example, Godot "
@@ -20524,11 +20834,11 @@ msgid ""
 "to perform this and draw it yourself."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:155
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:154
 msgid "Arc function"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:157
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:156
 msgid ""
 "An arc is defined by its support circle parameters, that is, the center "
 "position and the radius. The arc itself is then defined by the angle it "
@@ -20537,7 +20847,7 @@ msgid ""
 "value, so we can draw the arc in different colors if we wish."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:162
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:161
 msgid ""
 "Basically, drawing a shape on the screen requires it to be decomposed into a "
 "certain number of points linked from one to the next. As you can imagine, "
@@ -20551,7 +20861,7 @@ msgid ""
 "radius."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:202
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
 msgid ""
 "Remember the number of points our shape has to be decomposed into? We fixed "
 "this number in the ``nb_points`` variable to a value of ``32``. Then, we "
@@ -20559,7 +20869,7 @@ msgid ""
 "``Vector2``\\ s."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:206
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:205
 msgid ""
 "The next step consists of computing the actual positions of these 32 points "
 "that compose an arc. This is done in the first for-loop: we iterate over the "
@@ -20568,7 +20878,7 @@ msgid ""
 "the starting and ending angles."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:211
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
 msgid ""
 "The reason why each angle is decreased by 90° is that we will compute 2D "
 "positions out of each angle using trigonometry (you know, cosine and sine "
@@ -20578,7 +20888,7 @@ msgid ""
 "start counting from 12 o'clock."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:217
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:216
 msgid ""
 "The actual position of a point located on a circle at angle ``angle`` (in "
 "radians) is given by ``Vector2(cos(angle), sin(angle))``. Since ``cos()`` "
@@ -20590,7 +20900,7 @@ msgid ""
 "the point in the ``PoolVector2Array`` which was previously defined."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:225
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:224
 msgid ""
 "Now, we need to actually draw our points. As you can imagine, we will not "
 "simply draw our 32 points: we need to draw everything that is between each "
@@ -20602,25 +20912,25 @@ msgid ""
 "were to happen, we would simply need to increase the number of points."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:235
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:234
 msgid "Draw the arc on the screen"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:237
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
 msgid ""
 "We now have a function that draws stuff on the screen; it is time to call it "
 "inside the ``_draw()`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:264
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:263
 msgid "Result:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:269
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:268
 msgid "Arc polygon function"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:271
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:270
 msgid ""
 "We can take this a step further and not only write a function that draws the "
 "plain portion of the disc defined by the arc, but also its shape. The method "
@@ -20628,11 +20938,11 @@ msgid ""
 "lines:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:311
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:310
 msgid "Dynamic custom drawing"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:313
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:312
 msgid ""
 "All right, we are now able to draw custom stuff on the screen. However, it "
 "is static; let's make this shape turn around the center. The solution to do "
@@ -20641,18 +20951,18 @@ msgid ""
 "to remain constant or else the rotation speed will change accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:319
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:318
 msgid ""
 "First, we have to make both angle_from and angle_to variables global at the "
 "top of our script. Also note that you can store them in other nodes and "
 "access them using ``get_node()``."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:341
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:340
 msgid "We make these values change in the _process(delta) function."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:343
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:342
 msgid ""
 "We also increment our angle_from and angle_to values here. However, we must "
 "not forget to ``wrap()`` the resulting values between 0 and 360°! That is, "
@@ -20664,25 +20974,25 @@ msgid ""
 "we'll create it here, as it is relatively simple."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:352
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:351
 msgid ""
 "Finally, we must not forget to call the ``update()`` function, which "
 "automatically calls ``_draw()``. This way, you can control when you want to "
 "refresh the frame."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:397
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:396
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:421
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:420
 msgid ""
 "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:424
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:423
 msgid ""
 "The reason is that your GPU is actually displaying the frames as fast as it "
 "can. We need to \"normalize\" the drawing by this speed; to achieve that, we "
@@ -20693,7 +21003,7 @@ msgid ""
 "program runs at the same speed on everybody's hardware."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:432
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:431
 msgid ""
 "In our case, we simply need to multiply our ``rotation_angle`` variable by "
 "``delta`` in the ``_process()`` function. This way, our 2 angles will be "
@@ -20701,22 +21011,22 @@ msgid ""
 "speed."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:466
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:465
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:469
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:468
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:133
 msgid "Tools"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:471
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:470
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor to use as a preview or visualization of some feature or behavior."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:475
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:474
 msgid ""
 "Remember to use the \"tool\" keyword at the top of the script (check the :"
 "ref:`doc_gdscript` reference if you forgot what this does)."
@@ -25216,445 +25526,6 @@ msgid ""
 "You've successfully prototyped a room level with the CSG tools in Godot. CSG "
 "tools can be used for designing all kinds of level, such as a maze or a "
 "city; explore the limitations of it when designing your game."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:4
-msgid "Working with 3D skeletons"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:6
-msgid ""
-"Godot 3D skeleton support is currently quite rudimentary. The :ref:"
-"`class_Skeleton` node and class were designed mainly to support importing "
-"skeletal animations as a set of transformation matrices."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:11
-msgid "Skeleton node"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:13
-msgid ""
-"The Skeleton node can be directly added anywhere you want on a scene. "
-"Usually the target mesh is a child of Skeleton, as it is easier to "
-"manipulate this way, since Transforms within a skeleton are relative to "
-"where the Skeleton is. But you can specify a Skeleton node in every "
-"MeshInstance."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:18
-msgid ""
-"Naturally, Skeleton is intended to deform meshes and consists of structures "
-"called \"bones\". Each \"bone\" is represented as a Transform, which is "
-"applied to a group of vertices within a mesh. You can directly control a "
-"group of vertices from Godot. For that please reference the :ref:"
-"`class_MeshDataTool` class and its method :ref:`set_vertex_bones() "
-"<class_MeshDataTool_method_set_vertex_bones>`."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:24
-msgid ""
-"The \"bones\" are organized hierarchically. Every bone, except for the root "
-"bone(s), has a parent. Every bone also has an associated name you can use to "
-"refer to it (e.g. \"root\" or \"hand.L\", etc.). All bones are numbered, and "
-"these numbers are bone IDs. Bone parents are referred to by their numbered "
-"IDs."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:30
-msgid "For the rest of the article, we will consider the following scene:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:38
-msgid ""
-"This scene is imported from Blender. It contains an arm mesh with 2 bones, "
-"upperarm and lowerarm, with the lowerarm bone parented to the upperarm."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:42
-msgid "Skeleton class"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:44
-msgid ""
-"You can view Godots internal help for descriptions of all functions. "
-"Basically, all operations on bones are done using their numeric ID. You can "
-"convert from a name to a numeric ID and vice versa."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:48
-msgid ""
-"**To find the number of bones in a skeleton we use the get_bone_count() "
-"function:**"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:61
-msgid "**To find the ID of a bone, use the find_bone() function:**"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:73
-msgid ""
-"Now, we want to do something interesting with the ID, not just print it. "
-"Also, we might need additional information, finding bone parents to complete "
-"chains, etc. This is done with the get/set_bone\\_\\* functions."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:77
-msgid ""
-"**To find the parent of a bone we use the get_bone_parent(id) function:**"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:91
-msgid ""
-"The bone transforms are what interests us here. There are 3 kinds of "
-"transform: local, global, custom."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:94
-msgid ""
-"**To find the local Transform of a bone, we use get_bone_pose(id) function:**"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:110
-msgid ""
-"So we get a 3x4 matrix there, with the first column filled with 1s. What can "
-"we do with this matrix? It is a Transform, so we can do everything we can do "
-"with Transforms (basically translate, rotate and scale). We could also "
-"multiply transforms to have more complex transforms. Remember, \"bones\" in "
-"Godot are just Transforms over a group of vertices. We could also copy "
-"Transforms of other objects there. So let's rotate our \"upperarm\" bone:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:138
-msgid ""
-"Now we can rotate individual bones. The same happens for scale and "
-"translate. Try these on your own and check the results."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:141
-msgid ""
-"What we used here was the local pose. By default all bones are not modified. "
-"But this Transform tells us nothing about the relationship between bones. "
-"This information is needed for quite a number of tasks. How can we get it? "
-"This is where the global transform comes into play:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:146
-msgid ""
-"**To find the bone global Transform we use get_bone_global_pose(id) function:"
-"**"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:149
-msgid "Let's find the global Transform for the lowerarm bone:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:165
-msgid ""
-"As you can see, this transform is not zeroed. While being called global, it "
-"is actually relative to the Skeleton origin. For a root bone, the origin is "
-"always at 0 if not modified. Let's print the origin for our lowerarm bone:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:183
-msgid ""
-"You will see a number. What does this number mean? It is a rotation point of "
-"the Transform. So it is base part of the bone. In Blender, you can go to "
-"Pose mode and try to rotate bones there. They will rotate around their "
-"origin."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:188
-msgid ""
-"But what about the bone tip? We can't know things like the bone length, "
-"which we need for many things, without knowing the tip location. For all "
-"bones in a chain, except for the last one, we can calculate the tip "
-"location. It is simply a child bone's origin. There are situations when this "
-"is not true, such as for non-connected bones, but that is OK for us for now, "
-"as it is not important regarding Transforms."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:195
-msgid ""
-"Notice that the leaf bone tip is nowhere to be found. A leaf bone is a bone "
-"without children, so you don't have any information about its tip. But this "
-"is not a showstopper. You can overcome this by either adding an extra bone "
-"to the chain or just calculating the length of the leaf bone in Blender and "
-"storing the value in your script."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:202
-msgid "Using 3D \"bones\" for mesh control"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:204
-msgid ""
-"Now, as you know the basics, we can apply these to make full FK-control of "
-"our arm (FK is forward-kinematics)."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:207
-msgid "To fully control our arm, we need the following parameters:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:209
-msgid "Upperarm angle x, y, z"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:210
-msgid "Lowerarm angle x, y, z"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:212
-msgid "All of these parameters can be set, incremented, and decremented."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:214
-msgid "Create the following node tree:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:223
-msgid ""
-"Set up the Camera so that the arm is properly visible. Rotate DirectionLight "
-"so that the arm is properly lit while in scene play mode."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:226
-msgid "Now we need to create a new script under main:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:228
-msgid "First we define the setup parameters:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:235
-msgid "Now we need to set up a way to change them. Let us use keys for that."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:237
-msgid "Please create 7 actions under project settings -> Input Map:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:239
-msgid "**selext_x** - bind to X key"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:240
-msgid "**selext_y** - bind to Y key"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:241
-msgid "**selext_z** - bind to Z key"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:242
-msgid "**select_upperarm** - bind to key 1"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:243
-msgid "**select_lowerarm** - bind to key 2"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:244
-msgid "**increment** - bind to key numpad +"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:245
-msgid "**decrement** - bind to key numpad -"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:247
-msgid ""
-"So now we want to adjust the above parameters. Therefore, we create code "
-"which does that:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:275
-msgid "The full code for arm control is this:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:327
-msgid ""
-"Pressing keys 1/2 selects upperarm/lowerarm; select the axis by pressing x, "
-"y, z, rotate using numpad \"+\"/\"-\"."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:330
-msgid ""
-"This way you fully control your arm in FK mode using 2 bones. You can add "
-"additional bones and/or improve the \"feel\" of the interface by using "
-"coefficients for the change. I recommend you play with this example a lot "
-"before moving on to the next part."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:335
-msgid "You can clone the demo code for this chapter using"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:342
-msgid "Or you can browse it using the web-interface:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:344
-msgid "https://github.com/slapin/godot-skel3d"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:347
-msgid "Using 3D \"bones\" to implement inverse kinematics"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:349
-msgid "See :ref:`doc_inverse_kinematics`."
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:352
-msgid "Using 3D \"bones\" to implement ragdoll-like physics"
-msgstr ""
-
-#: ../../docs/tutorials/3d/working_with_3d_skeletons.rst:354
-msgid "TODO."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:4
-msgid "Inverse kinematics"
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:6
-msgid "This tutorial is a follow-up to :ref:`doc_working_with_3d_skeletons`."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:8
-msgid ""
-"Previously, we were able to control the rotations of bones in order to "
-"manipulate where our arm was (forward kinematics). But what if we wanted to "
-"solve this problem in reverse? Inverse kinematics (IK) tells us *how* to "
-"rotate our bones in order to reach a desired position."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:13
-msgid ""
-"A simple example of IK is the human arm: While we intuitively know the "
-"target position of an object we want to reach for, our brains need to figure "
-"out how much to move each joint in our arm to get to that target."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:18
-msgid "Initial problem"
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:20
-msgid ""
-"We want to position the 2 angles on the joints of our upperarm and lowerarm "
-"so that the tip of the lowerarm bone is as close to the target point (which "
-"is set by the target Vector3) as possible using only rotations. This task is "
-"calculation-intensive and never resolved by analytical equation solving, as "
-"it is an under-constrained problem, which means that there is more than one "
-"solution to an IK problem."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:30
-msgid ""
-"For easy calculation in this chapter, we assume the target is a child of "
-"Skeleton. If this is not the case for your setup, you can always reparent it "
-"in your script, as you will save on calculations if you do so."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:35
-msgid ""
-"In the picture, you see the angles alpha and beta. In this case, we don't "
-"use poles and constraints, so we need to add our own. On the picture the "
-"angles are 2D angles living in a plane which is defined by bone base, bone "
-"tip, and target."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:40
-msgid ""
-"The rotation axis is easily calculated using the cross-product of the bone "
-"vector and the target vector. The rotation, in this case, will always be in "
-"the positive direction. If ``t`` is the Transform which we get from the "
-"get_bone_global_pose() function, the bone vector is"
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:49
-msgid "So we have all the information we need to execute our algorithm."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:51
-msgid ""
-"In game dev it is common to resolve this problem by iteratively closing to "
-"the desired location, adding/subtracting small numbers to the angles until "
-"the distance change achieved is less than some small error value. Sounds "
-"easy enough, but there are still Godot problems we need to resolve to "
-"achieve our goal."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:57
-msgid "**How to find coordinates of the tip of the bone?**"
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:58
-msgid "**How to find the vector from the bone base to the target?**"
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:60
-msgid ""
-"For our goal (tip of the bone moved within area of target), we need to know "
-"where the tip of our IK bone is. As we don't use a leaf bone as IK bone, we "
-"know the coordinate of the bone base is the tip of the parent bone. All "
-"these calculations are quite dependent on the skeleton's structure. You "
-"could use pre-calculated constants, or you could add an extra bone at the "
-"tip of the IK bone and calculate using that."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:70
-msgid "We will use an exported variable for the bone length to make it easy."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:78
-msgid ""
-"Now, we need to apply our transformations from the IK bone to the base of "
-"the chain, so we apply a rotation to the IK bone, then move from our IK bone "
-"up to its parent, apply rotation again, then move to the parent of the "
-"current bone again, etc. So we need to limit our chain somewhat."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:87
-msgid "For the ``_ready()`` function:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:96
-msgid "Now we can write our chain-passing function:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:110
-msgid "And for the ``_process()`` function:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:117
-msgid ""
-"Executing this script will pass through the bone chain, printing bone "
-"transforms."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:147
-msgid ""
-"Now we need to actually work with the target. The target should be placed "
-"somewhere accessible. Since \"arm\" is an imported scene, we better place "
-"the target node within our top level scene. But for us to work with target "
-"easily, its Transform should be on the same level as the Skeleton."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:152
-msgid ""
-"To cope with this problem, we create a \"target\" node under our scene root "
-"node and will reparent it at runtime, copying the global transform, which "
-"will achieve the desired effect."
-msgstr ""
-
-#: ../../docs/tutorials/3d/inverse_kinematics.rst:156
-msgid ""
-"Create a new Spatial node under the root node and rename it to \"target\". "
-"Then modify the ``_ready()`` function to look like this:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/fps_tutorial/index.rst:2
@@ -34932,6 +34803,134 @@ msgid ""
 "com/godotengine/godot-demo-projects/tree/master/2d/kinematic_character."
 msgstr ""
 
+#: ../../docs/tutorials/physics/soft_body.rst:4
+msgid "SoftBody"
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:6
+msgid ""
+"Soft bodies (or *soft-body dynamics*) simulate movement, changing shape and "
+"other physical properties of deformable objects. This can for example be "
+"used to simulate cloth or to create more realistic characters."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:10
+msgid "Basic set-up"
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:12
+msgid ""
+"A :ref:`SoftBody <class_SoftBody>` node is used for soft body simulations."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:14
+msgid "We will create a bouncy cube to demonstrate the setup of a soft body."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:16
+msgid ""
+"Create a new scene with a ``Spatial`` node as root. Then, create a "
+"``Softbody`` node. Add a ``CubeMesh`` in the ``mesh`` property of the node "
+"in the inspector and increase the subdivision of the mesh for simulation."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:20
+msgid ""
+"Set the parameters to obtain the type of soft body you aim for. Try to keep "
+"the ``Simulation Precision`` above 5, otherwise, the soft body may collapse."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:24
+msgid ""
+"Handle some parameters with care, as some value can lead to strange results. "
+"For example, if the shape is not completely closed and you set pressure to "
+"more than 0, the softbody will fly around like a plastic bag under strong "
+"wind."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:26
+msgid "Play the scene to view the simulation."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:28
+msgid ""
+"To improve the simulation's result, increase the ``Simulation Precision``, "
+"this will give significant improvement at the cost of performance."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:31
+msgid "Cloak simulation"
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:33
+msgid "Let's make a cloak in the Platformer3D demo."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:35
+msgid ""
+"You can download the Platformer3D demo on `GitHub <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/platformer>` or `the Asset "
+"Library <https://godotengine.org/asset-library/asset/125>`_."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:37
+msgid ""
+"Open the ``Player`` scene, add a ``SoftBody`` node and assign a "
+"``PlaneMesh`` to it."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:39
+msgid ""
+"Open the ``PlaneMesh`` properties and set the size(x: 0.5 y: 1) then set "
+"``Subdivide Width`` and ``Subdivide Depth`` to 5. Adjust the ``SoftBody``'s "
+"position. You should end up with something like this:"
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:43
+msgid "Subdivision generates a more tessellated mesh for better simulations."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:45
+msgid ""
+"Add a :ref:`BoneAttachment <class_BoneAttachment>` node under the skeleton "
+"node and select the Neck bone to attach the cloak to the character skeleton."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:47
+msgid ""
+"``BoneAttachment`` node is to attach objects to a bone of a armature. The "
+"attached object will follow the bone's movement, weapon of a character can "
+"be attached this way."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:51
+msgid ""
+"To create pinned joints, select the upper vertices in the ``SoftBody`` node:"
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:55
+msgid ""
+"The pinned joints can be find in ``SoftBody``'s ``Attachments`` property, "
+"choose the ``BoneAttachment`` as the ``SpatialAttachment`` for each pinned "
+"joints, the pinned joints are now attached to the neck."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:59
+msgid ""
+"Last step is to avoid clipping by adding the Kinematic Body `Player` to "
+"``Parent Collision Ignore`` of the ``SoftBody``."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:63
+msgid "Play the scene and the cloak should simulate correctly."
+msgstr ""
+
+#: ../../docs/tutorials/physics/soft_body.rst:67
+msgid ""
+"This covers the basic settings of softbody, experiment with the parameters "
+"to achieve the effect you are aiming for when making your game."
+msgstr ""
+
 #: ../../docs/tutorials/math/vector_math.rst:4
 msgid "Vector math"
 msgstr ""
@@ -37400,6 +37399,21 @@ msgid ""
 "animation."
 msgstr ""
 
+#: ../../docs/tutorials/animation/cutout_animation.rst:365
+msgid "2D Skeletal deform"
+msgstr ""
+
+#: ../../docs/tutorials/animation/cutout_animation.rst:367
+msgid ""
+"Starting with Godot 3.1, 2D skeletal deform is supported, which can be used "
+"to enhance this workflow and add more flexibility (single pieces can deform "
+"more organically instead of having to use many separate ones)."
+msgstr ""
+
+#: ../../docs/tutorials/animation/cutout_animation.rst:370
+msgid "This process is described in a :ref:`separate tutorial <2d_skeletons>`."
+msgstr ""
+
 #: ../../docs/tutorials/inputs/index.rst:2
 msgid "Inputs"
 msgstr ""
@@ -37752,8 +37766,8 @@ msgstr ""
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:16
 msgid ""
 "Using hardware coordinates makes sense in the case of writing complex UIs "
-"meant to run on PC, such as editors, MMOs, tools, etc. Yet, it does not make "
-"as much sense outside of that scope."
+"meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
+"make as much sense outside of that scope."
 msgstr ""
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:21
@@ -37769,7 +37783,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:55
-msgid "Alternatively it's possible to ask the viewport for the mouse position:"
+msgid ""
+"Alternatively, it's possible to ask the viewport for the mouse position:"
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:4
@@ -37795,8 +37810,8 @@ msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:11
 msgid ""
-"Using project settings is a simpler but more limited way to customize the "
-"mouse cursor. The second way is more customizable but involves scripting."
+"Using project settings is a simpler (but more limited) way to customize the "
+"mouse cursor. The second way is more customizable, but involves scripting."
 msgstr ""
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:16
@@ -37956,8 +37971,8 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:92
 msgid ""
-"First we setup some variables and initialize the ``current_scene`` with the "
-"main scene of the game:"
+"Firstly, we set up some variables and initialize the ``current_scene`` with "
+"the main scene of the game:"
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:106
@@ -37982,7 +37997,7 @@ msgstr ""
 msgid ""
 "Note how we use ``OS.get_ticks_msec`` to control how long we block the "
 "thread. Some stages might load fast, which means we might be able to cram "
-"more than one call to ``poll`` in one frame, some might take way more than "
+"more than one call to ``poll`` in one frame; some might take way more than "
 "your value for ``time_max``, so keep in mind we won't have precise control "
 "over the timings."
 msgstr ""
@@ -38023,11 +38038,11 @@ msgstr ""
 #: ../../docs/tutorials/io/background_loading.rst:209
 msgid ""
 "If you have a mutex to allow calls from the main thread to your loader "
-"class, don't lock it while you call ``poll`` on the loader. When a resource "
-"is finished loading, it might require some resources from the low level APIs "
-"(VisualServer, etc), which might need to lock the main thread to acquire "
-"them. This might cause a deadlock if the main thread is waiting for your "
-"mutex while your thread is waiting to load a resource."
+"class, don't lock the former while you call ``poll`` on the latter. When a "
+"resource is done loading, it might require some resources from the low-level "
+"APIs (VisualServer, etc), which might need to lock the main thread to "
+"acquire them. This might cause a deadlock if the main thread is waiting for "
+"your mutex while your thread is waiting to load a resource."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:218
@@ -38046,8 +38061,8 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:233
 msgid ""
-"Queue a resource. Use optional parameter \"p_in_front\" to put it in front "
-"of the queue."
+"Queue a resource. Use optional argument \"p_in_front\" to put it in front of "
+"the queue."
 msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:240
@@ -38076,7 +38091,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/background_loading.rst:298
 msgid ""
-"**Note**: this code in its current form is not tested in real world "
+"**Note**: this code, in its current form, is not tested in real world "
 "scenarios. Ask punto on IRC (#godotengine on irc.freenode.net) for help."
 msgstr ""
 
@@ -38091,7 +38106,7 @@ msgstr ""
 #: ../../docs/tutorials/io/data_paths.rst:9
 msgid ""
 "For the sake of supporting as many platforms as possible, Godot only accepts "
-"UNIX-style path separators (``/``). These work on all platforms including "
+"UNIX-style path separators (``/``). These work on all platforms, including "
 "Windows."
 msgstr ""
 
@@ -38159,22 +38174,22 @@ msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:18
 msgid ""
-"First we should identify what objects we want to keep between game sessions "
-"and what information we want to keep from those objects. For this tutorial, "
-"we will use groups to mark and handle objects to be saved but other methods "
-"are certainly possible."
+"Firstly, we should identify what objects we want to keep between game "
+"sessions and what information we want to keep from those objects. For this "
+"tutorial, we will use groups to mark and handle objects to be saved, but "
+"other methods are certainly possible."
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:23
 msgid ""
 "We will start by adding objects we wish to save to the \"Persist\" group. As "
-"in the :ref:`doc_scripting_continued` tutorial, we can do this through the "
-"GUI or through script. Let's add the relevant nodes using the GUI:"
+"in the :ref:`doc_scripting_continued` tutorial, we can do this through "
+"either the GUI or script. Let's add the relevant nodes using the GUI:"
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:29
 msgid ""
-"Once this is done when we need to save the game we can get all objects to "
+"Once this is done, when we need to save the game, we can get all objects to "
 "save them and then tell them all to save with this script:"
 msgstr ""
 
@@ -38185,18 +38200,19 @@ msgstr ""
 #: ../../docs/tutorials/io/saving_games.rst:51
 msgid ""
 "The next step is to serialize the data. This makes it much easier to read "
-"and store to disk. In this case, we're assuming each member of group Persist "
-"is an instanced node and thus has a path. GDScript has helper functions for "
-"this, such as :ref:`to_json() <class_@GDScript_method_to_json>` and :ref:"
-"`parse_json() <class_@GDScript_method_parse_json>`, so we will use a "
-"dictionary. Our node needs to contain a save function that returns this "
-"data. The save function will look like this:"
+"from and store to disk. In this case, we're assuming each member of group "
+"Persist is an instanced node and thus has a path. GDScript has helper "
+"functions for this, such as :ref:`to_json() "
+"<class_@GDScript_method_to_json>` and :ref:`parse_json() "
+"<class_@GDScript_method_parse_json>`, so we will use a dictionary. Our node "
+"needs to contain a save function that returns this data. The save function "
+"will look like this:"
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:114
 msgid ""
 "This gives us a dictionary with the style ``{ \"variable_name\":"
-"that_variables_value }`` which will be useful when loading."
+"value_of_variable }``, which will be useful when loading."
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:119
@@ -38206,24 +38222,25 @@ msgstr ""
 #: ../../docs/tutorials/io/saving_games.rst:121
 msgid ""
 "As covered in the :ref:`doc_filesystem` tutorial, we'll need to open a file "
-"and write to it and then later read from it. Now that we have a way to call "
+"and write to it and then later, read from it. Now that we have a way to call "
 "our groups and get their relevant data, let's use to_json() to convert it "
 "into an easily stored string and store them in a file. Doing it this way "
-"ensures that each line is its own object so we have an easy way to pull the "
+"ensures that each line is its own object, so we have an easy way to pull the "
 "data out of the file as well."
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:166
 msgid ""
-"Game saved! Loading is fairly simple as well. For that we'll read each line, "
-"use parse_json() to read it back to a dict, and then iterate over the dict "
-"to read our values. But we'll need to first create the object and we can use "
-"the filename and parent values to achieve that. Here is our load function:"
+"Game saved! Loading is fairly simple as well. For that, we'll read each "
+"line, use parse_json() to read it back to a dict, and then iterate over the "
+"dict to read our values. But we'll need to first create the object and we "
+"can use the filename and parent values to achieve that. Here is our load "
+"function:"
 msgstr ""
 
 #: ../../docs/tutorials/io/saving_games.rst:254
 msgid ""
-"And now we can save and load an arbitrary number of objects laid out almost "
+"And now, we can save and load an arbitrary number of objects laid out almost "
 "anywhere across the scene tree! Each object can store different data "
 "depending on what it needs to save."
 msgstr ""
@@ -38243,10 +38260,11 @@ msgstr ""
 msgid ""
 "This implementation assumes no Persist objects are children of other Persist "
 "objects. Doing so would create invalid paths. If this is one of the needs of "
-"a project this needs to be considered. Saving objects in stages (parent "
-"objects first) so they are available when child objects are loaded will make "
-"sure they're available for the add_child() call. There will also need to be "
-"some way to link children to parents as the NodePath will likely be invalid."
+"a project, this needs to be considered. Saving objects in stages (parent "
+"objects first), so they are available when child objects are loaded, will "
+"make sure they're available for the add_child() call. There will also need "
+"to be some way to link children to parents, as the NodePath will likely be "
+"invalid."
 msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:4
@@ -38260,27 +38278,27 @@ msgid ""
 "of this rotten society on track. As such, the biggest market for video game "
 "consumption today is the mobile one. It is a market of poor souls forced to "
 "compulsively consume digital content in order to forget the misery of their "
-"every day life, commute, or just any other brief free moment they have that "
+"everyday life, commute, or just any other brief free moment they have that "
 "they are not using to produce goods or services for the ruling class. These "
 "individuals need to keep focusing on their video games (because not doing so "
-"will produce them a tremendous existential angst), so they go as far as "
+"will fill them with tremendous existential angst), so they go as far as "
 "spending money on them to extend their experience, and their preferred way "
 "of doing so is through in-app purchases and virtual currency."
 msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:22
 msgid ""
-"But, imagine if someone was to find a way to edit the saved games and assign "
-"the items and currency without effort? This would be terrible, because it "
-"would help players consume the content much faster, and as such run out of "
-"it sooner than expected. If this happens they will have nothing that avoids "
+"But what if someone were to find a way to edit the saved games and assign "
+"the items and currency without effort? That would be terrible, because it "
+"would help players consume the content much faster, and therefore run out of "
+"it sooner than expected. If that happens, they will have nothing that avoids "
 "them to think, and the tremendous agony of realizing their own irrelevance "
 "would again take over their life."
 msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:29
 msgid ""
-"No, we definitely do not want this to happen, so let's see how to encrypt "
+"No, we definitely do not want that to happen, so let's see how to encrypt "
 "savegames and protect the world order."
 msgstr ""
 
@@ -38298,8 +38316,8 @@ msgstr ""
 #: ../../docs/tutorials/io/encrypting_save_games.rst:55
 msgid ""
 "This will make the file unreadable to users, but will still not prevent them "
-"sharing save files. To solve this, use the device unique id or some unique "
-"user identifier, for example:"
+"from sharing savefiles. To solve this, use the device unique id or some "
+"unique user identifier, for example:"
 msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:74
@@ -38307,17 +38325,17 @@ msgid "Note that ``OS.get_unique_id()`` only works on iOS and Android."
 msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:76
-msgid "This is all! Thanks for your cooperation, citizen."
+msgid "That is all! Thank you for your cooperation, citizen."
 msgstr ""
 
 #: ../../docs/tutorials/io/encrypting_save_games.rst:78
 msgid ""
 "This method cannot really prevent players from editing their savegames "
-"locally, because since the encryption key is stored inside the game, the "
+"locally because, since the encryption key is stored inside the game, the "
 "player can still decrypt and edit the file themselves. The only way to "
 "prevent this from being possible is to store the save data on a remote "
-"server where players can only make authorized changes to their save data. If "
-"your game deals with real money, you need to be doing this anyway."
+"server, where players can only make authorized changes to their save data. "
+"If your game deals with real money, you need to be doing this anyway."
 msgstr ""
 
 #: ../../docs/tutorials/i18n/index.rst:2
@@ -38392,11 +38410,11 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:54
 msgid ""
-"Some controls such as :ref:`Button <class_Button>` and :ref:`Label "
-"<class_Label>` will automatically fetch a translation if their text matches "
+"Some controls, such as :ref:`Button <class_Button>` and :ref:`Label "
+"<class_Label>`, will automatically fetch a translation if their text matches "
 "a translation key. For example, if a label's text is "
 "\"MAIN_SCREEN_GREETING1\" and that key exists in the current translation, "
-"then the text will be automatically translated."
+"then the text will automatically be translated."
 msgstr ""
 
 #: ../../docs/tutorials/i18n/internationalizing_games.rst:59
@@ -41339,7 +41357,7 @@ msgid "GUI skinning"
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:7
-msgid "Oh beautiful GUI!"
+msgid "Oh, beautiful GUI!"
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:9
@@ -41353,15 +41371,15 @@ msgstr ""
 #: ../../docs/tutorials/gui/gui_skinning.rst:15
 msgid ""
 "However, many types of games often need complex user interfaces, like MMOs, "
-"traditional RPGs, Simulators, Strategy, etc. These kind of interfaces are "
+"traditional RPGs, Simulators, Strategy, etc. These kinds of interface are "
 "also common in some games that include editors to create content, or "
 "interfaces for network connectivity."
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:20
 msgid ""
-"Godot user interface uses these kind of controls with the default theme, but "
-"they can be skinned to resemble pretty much any kind of user interface."
+"Godot's user interface uses these kinds of control with the default theme, "
+"but they can be skinned to resemble pretty much any kind of user interface."
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:25
@@ -41375,7 +41393,7 @@ msgid ""
 "all controls. Theme options are named, so it's not obvious which name "
 "changes what (especially from code), but several tools are provided. The "
 "ultimate place to look at what each theme option is for each control, which "
-"will always be more up to date than any documentation is the file `scene/"
+"will always be more up to date than any documentation, is the file `scene/"
 "resources/default_theme/default_theme.cpp <https://github.com/godotengine/"
 "godot/blob/master/scene/resources/default_theme/default_theme.cpp>`__. The "
 "rest of this document will explain the different tools used to customize the "
@@ -41385,11 +41403,11 @@ msgstr ""
 #: ../../docs/tutorials/gui/gui_skinning.rst:38
 msgid ""
 "A Theme can be applied to any control in the scene. As a result, all "
-"children and grand-children controls will use that same theme too (unless "
+"children and grand-children controls will use that same theme, too (unless "
 "another theme is specified further down the tree). If a value is not found "
-"in a theme, it will be searched in themes higher up in the hierarchy towards "
-"the root. If nothing was found, the default theme is used. This system "
-"allows for flexible overriding of themes in complex user interfaces."
+"in a theme, it will be searched in themes higher up in the hierarchy, "
+"towards the root. If nothing was found, the default theme is used. This "
+"system allows for flexible overriding of themes in complex user interfaces."
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:47
@@ -41415,7 +41433,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/gui_skinning.rst:55
 msgid ""
 "**A Texture**: A single image. Textures are not often used, but when they "
-"are they represent handles to pick or icons in a complex control (such as "
+"are, they represent handles to pick or icons in a complex control (such as a "
 "file dialog)."
 msgstr ""
 
@@ -41432,7 +41450,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:63
-msgid "Every option is associated to:"
+msgid "Every option is associated with:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:65
@@ -41451,13 +41469,13 @@ msgstr ""
 msgid ""
 "In the example above, a new theme is created. The \"font_color\" option is "
 "changed and then applied to a label. As a result, the label (and all "
-"children and grand children labels) will use that color."
+"children and grandchildren labels) will use that color."
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:91
 msgid ""
-"It is possible to override those options without using the theme directly "
-"and only for a specific control by using the override API in :ref:`Control."
+"It is possible to override those options without using the theme directly, "
+"and only for a specific control, by using the override API in :ref:`Control."
 "add_color_override() <class_Control_method_add_color_override>`:"
 msgstr ""
 
@@ -41481,7 +41499,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:118
 msgid ""
-"As can be see in the image above, theme options have little check-boxes. If "
+"As can be seen in the image above, theme options have little check boxes. If "
 "checked, they can be used to override the value of the theme just for that "
 "control."
 msgstr ""
@@ -41493,8 +41511,8 @@ msgstr ""
 #: ../../docs/tutorials/gui/gui_skinning.rst:125
 msgid ""
 "The simplest way to create a theme is to edit a theme resource. Create a "
-"Theme from the resource menu, the editor will appear immediately. Following "
-"to this, save it (to, as example, mytheme.thm):"
+"Theme from the resource menu; the editor will appear immediately. After "
+"that, save it (for example, with the name mytheme.theme):"
 msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:131
@@ -41527,13 +41545,14 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/gui_skinning.rst:152
 msgid ""
-"Select the \"normal\" stylebox and create a new \"StyleBoxTexture\", then "
-"edit it. A texture stylebox basically contains a texture and the size of the "
-"margins that will not stretch when the texture is stretched. This is called "
-"\"3x3\" stretching:"
+"From ``Styles``, open the \"Normal\" drop-down menu next to where it "
+"probably says \"null\" and create a \"New StyleBoxTexture\", then edit it. A "
+"texture stylebox basically contains a texture and the size of the margins "
+"that will not stretch when the texture is stretched. This is called \"3x3\" "
+"stretching:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:159
+#: ../../docs/tutorials/gui/gui_skinning.rst:160
 msgid ""
 "Repeat the steps and add the other assets. There is no hover or disabled "
 "image in the example files, so use the same stylebox as in normal. Set the "
@@ -41541,19 +41560,19 @@ msgid ""
 "your button will look different and retro:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:166
+#: ../../docs/tutorials/gui/gui_skinning.rst:167
 msgid ""
-"Save this theme to the .thm file. Go to the 2D editor and create a few "
+"Save this theme to the .theme file. Go to the 2D editor and create a few "
 "buttons:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:171
+#: ../../docs/tutorials/gui/gui_skinning.rst:172
 msgid ""
 "Now, go to the root node of the scene and locate the \"theme\" property, "
-"replace it by the theme that was just created. It should look like this:"
+"replace it with the theme that was just created. It should look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/gui/gui_skinning.rst:176
+#: ../../docs/tutorials/gui/gui_skinning.rst:177
 msgid "Congratulations! You have created a reusable GUI Theme!"
 msgstr ""
 
@@ -41568,11 +41587,11 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:9
 msgid ""
 "Yet there are never enough. Creating your own custom controls that act just "
-"the way you want them is an obsession of almost every GUI programmer. Godot "
-"provides plenty of them, but they may not work exactly the way you want. "
-"Before contacting the developers with a pull-request to support diagonal "
-"scrollbars, at least it will be good to know how to create these controls "
-"easily from script."
+"the way you want them to is an obsession of almost every GUI programmer. "
+"Godot provides plenty of them, but they may not work exactly the way you "
+"want. Before contacting the developers with a pull-request to support "
+"diagonal scrollbars, at least it will be good to know how to create these "
+"controls easily from script."
 msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:17
@@ -41621,8 +41640,8 @@ msgstr ""
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:71
 msgid ""
 "As mentioned before, size is important to controls. This allows them to lay "
-"out properly, when set into grids, containers, or anchored. Controls most of "
-"the time provide a *minimum size* to help to properly lay them out. For "
+"out properly, when set into grids, containers, or anchored. Controls, most "
+"of the time, provide a *minimum size* to help properly lay them out. For "
 "example, if controls are placed vertically on top of each other using a :ref:"
 "`VBoxContainer <class_VBoxContainer>`, the minimum size will make sure your "
 "custom control is not squished by the other controls in the container."
@@ -41690,8 +41709,8 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:173
 msgid ""
-"Controls also have many useful notifications for which no callback exists, "
-"but can be checked with the _notification callback:"
+"Controls also have many useful notifications for which no dedicated callback "
+"exists, but which can be checked with the _notification callback:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:4
@@ -41715,7 +41734,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:15
 msgid ""
-"There are several ways to handle this, but for now let's just imagine that "
+"There are several ways to handle this, but for now, let's just imagine that "
 "the screen resolution has changed and the controls need to be re-positioned. "
 "Some will need to follow the bottom of the screen, others the top of the "
 "screen, or maybe the right or left margins."
@@ -41724,7 +41743,7 @@ msgstr ""
 #: ../../docs/tutorials/gui/size_and_anchors.rst:22
 msgid ""
 "This is done by editing the *margin* properties of controls. Each control "
-"has four margins: left, right, bottom and top. By default all of them "
+"has four margins: left, right, bottom and top. By default, all of them "
 "represent a distance in pixels relative to the top-left corner of the parent "
 "control or (in case there is no parent control) the viewport."
 msgstr ""
@@ -41738,7 +41757,7 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/size_and_anchors.rst:35
 msgid ""
-"Here the control is set to expand its bottom-right corner with that of the "
+"Here, the control is set to expand its bottom-right corner with that of the "
 "parent, so when re-sizing the parent, the control will always cover it, "
 "leaving a 20 pixel margin:"
 msgstr ""
@@ -41749,21 +41768,21 @@ msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:9
 msgid ""
-":ref:`class_RichTextLabel` allows to display complex text markup in a "
+":ref:`class_RichTextLabel` allows the display of complex text markup in a "
 "control. It has a built-in API for generating the markup, but can also parse "
 "a BBCode."
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:12
 msgid ""
-"Note that the BBCode tags can also be used to some extent in the :ref:`XML "
+"Note that the BBCode tags can also be used, to some extent, in the :ref:`XML "
 "source of the class reference <doc_updating_the_class_reference>`."
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:18
 msgid ""
-"For RichTextLabel to work properly, it must be set up. This means loading "
-"the intended fonts in the relevant properties:"
+"For a ``RichTextLabel`` to work properly, it must be set up. That means "
+"loading the intended fonts in the relevant properties:"
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:24
@@ -41945,7 +41964,7 @@ msgid "``[color=<code/name>]{text}[/color]``"
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:55
-msgid "Change {text} color, use # format such as #ff00ff or name."
+msgid "Change {text} color; use name or # format, such as #ff00ff."
 msgstr ""
 
 #: ../../docs/tutorials/gui/bbcode_in_richtextlabel.rst:59
@@ -42040,27 +42059,27 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:9
 msgid ""
-"Think of :ref:`Viewports <class_Viewport>` as a screen that the game is "
-"projected onto. In order to see the game we need to have a surface to draw "
-"it on, this surface is the Root :ref:`Viewport <class_Viewport>`."
+"Think of a :ref:`Viewport <class_Viewport>` as a screen onto which the game "
+"is projected. In order to see the game, we need to have a surface on which "
+"to draw it; that surface is the Root :ref:`Viewport <class_Viewport>`."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:16
 msgid ""
 ":ref:`Viewports <class_Viewport>` can also be added to the scene so that "
 "there are multiple surfaces to draw on. When we are drawing to a :ref:"
-"`Viewport <class_Viewport>` that is not the Root we call it a render target. "
-"We can access the contents of a render target by accessing its "
+"`Viewport <class_Viewport>` that is not the Root, we call it a render "
+"target. We can access the contents of a render target by accessing its "
 "corresponding :ref:`texture <class_ViewportTexture>`. By using a :ref:"
-"`Viewport <class_Viewport>` as a render target we can either render multiple "
-"scenes simultaneously or we can render to a :ref:`texture "
+"`Viewport <class_Viewport>` as a render target, we can either render "
+"multiple scenes simultaneously or we can render to a :ref:`texture "
 "<class_ViewportTexture>` which is applied to an object in the scene, for "
 "example a dynamic skybox."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:25
 msgid ""
-":ref:`Viewports <class_Viewport>` have a variety of use cases including:"
+":ref:`Viewports <class_Viewport>` have a variety of use cases, including:"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:27
@@ -42086,23 +42105,23 @@ msgstr ""
 #: ../../docs/tutorials/viewports/viewports.rst:33
 msgid ""
 "What all these use cases have in common is that you are given the ability to "
-"draw objects to a texture as if it were another screen and then you can "
-"choose what to do with the resulting texture."
+"draw objects to a texture as if it were another screen and can then choose "
+"what to do with the resulting texture."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:40
 msgid ""
 ":ref:`Viewports <class_Viewport>` are also responsible for delivering "
 "properly adjusted and scaled input events to all their children nodes. "
-"Typically input is received by the nearest :ref:`Viewport <class_Viewport>` "
-"in the tree, but you can set :ref:`Viewports <class_Viewport>` to not "
-"receive input by checking 'Disable Input' to 'on', this will allow the next "
+"Typically, input is received by the nearest :ref:`Viewport <class_Viewport>` "
+"in the tree, but you can set :ref:`Viewports <class_Viewport>` not to "
+"receive input by checking 'Disable Input' to 'on'; this will allow the next "
 "nearest :ref:`Viewport <class_Viewport>` in the tree to capture the input."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:48
 msgid ""
-"For more information on how Godot handles input please read the :ref:`Input "
+"For more information on how Godot handles input, please read the :ref:`Input "
 "Event Tutorial<doc_inputevent>`."
 msgstr ""
 
@@ -42112,7 +42131,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:53
 msgid ""
-"Godot supports 3D sound (in both 2D and 3D nodes), more on this can be found "
+"Godot supports 3D sound (in both 2D and 3D nodes); more on this can be found "
 "in the :ref:`Audio Streams Tutorial<doc_audio-streams>`. For this type of "
 "sound to be audible, the :ref:`Viewport <class_Viewport>` needs to be "
 "enabled as a listener (for 2D or 3D). If you are using a custom :ref:"
@@ -42156,17 +42175,17 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:86
 msgid ""
-":ref:`Viewports <class_Viewport>` have a \"size\" property which represents "
+":ref:`Viewports <class_Viewport>` have a \"size\" property, which represents "
 "the size of the :ref:`Viewport <class_Viewport>` in pixels. For :ref:"
 "`Viewports <class_Viewport>` which are children of :ref:`ViewportContainers "
-"<class_viewportcontainer>`, these values are overridden, but for all others "
+"<class_viewportcontainer>`, these values are overridden, but for all others, "
 "this sets their resolution."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:90
 msgid ""
 "It is also possible to scale the 2D content and make the :ref:`Viewport "
-"<class_Viewport>` resolution different than the one specified in size, by "
+"<class_Viewport>` resolution different from the one specified in size, by "
 "calling:"
 msgstr ""
 
@@ -42189,8 +42208,8 @@ msgid ""
 "<class_World>` of the closest :ref:`Viewport <class_Viewport>`. By default, "
 "newly created :ref:`Viewports <class_Viewport>` do not contain a :ref:`World "
 "<class_World>` but use the same as their parent :ref:`Viewport "
-"<class_Viewport>` (root :ref:`Viewport <class_Viewport>` always contains a :"
-"ref:`World <class_World>`, which is the one objects are rendered to by "
+"<class_Viewport>` (the root :ref:`Viewport <class_Viewport>` always contains "
+"a :ref:`World <class_World>`, which is the one objects are rendered to by "
 "default). A :ref:`World <class_World>` can be set in a :ref:`Viewport "
 "<class_Viewport>` using the \"world\" property, and that will separate all "
 "children nodes of that :ref:`Viewport <class_Viewport>` from interacting "
@@ -42219,7 +42238,7 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:125
 msgid ""
-"For an example of how this works see the demo projects `3D in 2D <https://"
+"For an example of how this works, see the demo projects `3D in 2D <https://"
 "github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_in_2d>`_ "
 "and `2D in 3D <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/viewport/2d_in_3d>`_ respectively."
@@ -42232,15 +42251,15 @@ msgstr "Vastleggen"
 #: ../../docs/tutorials/viewports/viewports.rst:130
 msgid ""
 "It is possible to query a capture of the :ref:`Viewport <class_Viewport>` "
-"contents. For the root :ref:`Viewport <class_Viewport>` this is effectively "
+"contents. For the root :ref:`Viewport <class_Viewport>`, this is effectively "
 "a screen capture. This is done with the following code:"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:147
 msgid ""
 "But if you use this in _ready() or from the first frame of the :ref:"
-"`Viewport's <class_Viewport>` initialization you will get an empty texture "
-"cause there is nothing to get as texture. You can deal with it using (for "
+"`Viewport's <class_Viewport>` initialization, you will get an empty texture "
+"because there is nothing to get as texture. You can deal with it using (for "
 "example):"
 msgstr ""
 
@@ -42248,7 +42267,7 @@ msgstr ""
 msgid ""
 "If the returned image is empty, capture still didn't happen, wait a little "
 "more, as Godot's rendering API is asynchronous. For a working example of "
-"this check out the `Screen Capture example <https://github.com/godotengine/"
+"this, check out the `Screen Capture example <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/viewport/screen_capture>`_ in the demo "
 "projects"
 msgstr ""
@@ -42277,9 +42296,9 @@ msgstr ""
 msgid ""
 "Due to the fact that the :ref:`Viewport <class_Viewport>` is an entryway "
 "into another rendering surface, it exposes a few rendering properties that "
-"can be different from the project settings. The first is MSAA, you can "
+"can be different from the project settings. The first is MSAA; you can "
 "choose to use a different level of MSAA for each :ref:`Viewport "
-"<class_Viewport>`, the default behavior is DISABLED. You can also set the :"
+"<class_Viewport>`; the default behavior is DISABLED. You can also set the :"
 "ref:`Viewport <class_Viewport>` to use HDR, HDR is very useful for when you "
 "want to store values in the texture that are outside the range 0.0 - 1.0."
 msgstr ""
@@ -42288,7 +42307,7 @@ msgstr ""
 msgid ""
 "If you know how the :ref:`Viewport <class_Viewport>` is going to be used, "
 "you can set its Usage to either 3D or 2D. Godot will then restrict how the :"
-"ref:`Viewport <class_Viewport>` is drawn to in accordance with your choice, "
+"ref:`Viewport <class_Viewport>` is drawn to in accordance with your choice; "
 "default is 3D."
 msgstr ""
 
@@ -42338,9 +42357,9 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:212
 msgid ""
-"When rendering to a :ref:`Viewport <class_Viewport>` whatever is inside will "
-"not be visible in the scene editor. To display the contents, you have to "
-"draw the :ref:`Viewport's <class_Viewport>` :ref:`ViewportTexture "
+"When rendering to a :ref:`Viewport <class_Viewport>`, whatever is inside "
+"will not be visible in the scene editor. To display the contents, you have "
+"to draw the :ref:`Viewport's <class_Viewport>` :ref:`ViewportTexture "
 "<class_ViewportTexture>` somewhere. This can be requested via code using "
 "(for example):"
 msgstr ""
@@ -42357,10 +42376,10 @@ msgstr ""
 
 #: ../../docs/tutorials/viewports/viewports.rst:230
 msgid ""
-"Every frame the :ref:`Viewport <class_Viewport>`'s texture is cleared away "
+"Every frame, the :ref:`Viewport <class_Viewport>`'s texture is cleared away "
 "with the default clear color (or a transparent color if Transparent BG is "
 "set to true). This can be changed by setting Clear Mode to Never or Next "
-"Frame. As the name implies, Never means the texture will never be cleared "
+"Frame. As the name implies, Never means the texture will never be cleared, "
 "while next frame will clear the texture on the next frame and then set "
 "itself to Never."
 msgstr ""
@@ -42370,7 +42389,7 @@ msgid ""
 "By default, re-rendering of the :ref:`Viewport <class_Viewport>` happens "
 "when the :ref:`Viewport <class_Viewport>`'s :ref:`ViewportTexture "
 "<class_ViewportTexture>` has been drawn in a frame. If visible, it will be "
-"rendered, otherwise it will not. This behavior can be changed to manual "
+"rendered; otherwise, it will not. This behavior can be changed to manual "
 "rendering (once), or always render, no matter if visible or not. This "
 "flexibility allows users to render an image once and then use the texture "
 "without incurring the cost of rendering every frame."
@@ -42637,7 +42656,7 @@ msgstr ""
 msgid ""
 "This tutorial will introduce you to using the :ref:`Viewport "
 "<class_Viewport>` as a texture that can be applied to 3D objects. In order "
-"to do so it will walk you through the process of making a procedural planet "
+"to do so, it will walk you through the process of making a procedural planet "
 "like the one below:"
 msgstr ""
 
@@ -42659,7 +42678,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:23
-msgid "During the course of this tutorial will cover the following topics:"
+msgid "During the course of this tutorial, we'll cover the following topics:"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:25
@@ -42693,16 +42712,16 @@ msgid ""
 "Next, set the size of the :ref:`Viewport <class_Viewport>` to ``(1024, "
 "512)``. The :ref:`Viewport <class_Viewport>` can actually be any size so "
 "long as the width is double the height. The width needs to be double the "
-"height so that the image will accurately map onto the sphere as we will be "
+"height so that the image will accurately map onto the sphere, as we will be "
 "using equirectangular projection, but more on that later."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:42
 msgid ""
-"Next, disable HDR and disable 3D. We don't need HDR because our planets "
-"surface will not be especially bright so values between ``0`` and ``1`` will "
-"be fine. And we will be using a :ref:`ColorRect <class_ColorRect>` to render "
-"the surface, so we don't need 3D either."
+"Next, disable HDR and disable 3D. We don't need HDR because our planet's "
+"surface will not be especially bright, so values between ``0`` and ``1`` "
+"will be fine. And we will be using a :ref:`ColorRect <class_ColorRect>` to "
+"render the surface, so we don't need 3D either."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:46
@@ -42720,31 +42739,44 @@ msgstr ""
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:53
 msgid ""
 "Next, we add a :ref:`Shader Material <class_ShaderMaterial>` to the :ref:"
-"`ColorRect <class_ColorRect>`."
+"`ColorRect <class_ColorRect>` (ColorRect > CanvasItem > Material > Material "
+"> ``New ShaderMaterial``)."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:55
 msgid ""
 "Basic familiarity with shading is recommended for this tutorial. However, "
-"even if you are new to shaders, all the code will be provided so you should "
+"even if you are new to shaders, all the code will be provided, so you should "
 "have no problem following along."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:66
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:58
+msgid ""
+"ColorRect > CanvasItem > Material > Material > click / Edit > ShaderMaterial "
+"> Shader > ``New Shader`` > click / Edit:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:68
 msgid "The above code renders a gradient like the one below."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:70
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:72
 msgid ""
 "Now we have the basics of a :ref:`Viewport <class_Viewport>` that we render "
 "to and we have a unique image that we can apply to the sphere."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:74
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:76
 msgid "Applying the texture"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:76
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:78
+msgid ""
+"MeshInstance > GeometryInstance > Geometry > Material Override > ``New "
+"SpatialMaterial``:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:80
 msgid ""
 "Now we go into the :ref:`Mesh Instance <class_MeshInstance>` and add a :ref:"
 "`Spatial Material <class_SpatialMaterial>` to it. No need for a special :ref:"
@@ -42752,7 +42784,13 @@ msgid ""
 "for more advanced effects, like the atmosphere in the example above)."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:80
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:84
+msgid ""
+"MeshInstance > GeometryInstance > Geometry > Material Override > ``click`` / "
+"``Edit``:"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:86
 msgid ""
 "Open the newly created :ref:`Spatial Material <class_SpatialMaterial>` and "
 "scroll down to the \"Albedo\" section and click beside the \"Texture\" "
@@ -42760,155 +42798,154 @@ msgid ""
 "Choose \"New ViewportTexture\""
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:86
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:92
 msgid ""
-"Then from the menu that pops up select the Viewport that we rendered to "
+"Then, from the menu that pops up, select the Viewport that we rendered to "
 "earlier."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:90
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:96
 msgid ""
 "Your sphere should now be colored in with the colors we rendered to the "
-"Viewport"
+"Viewport."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:94
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:100
 msgid ""
 "Notice the ugly seam that forms where the texture wraps around? This is "
 "because we are picking a color based on UV coordinates and UV coordinates do "
 "not wrap around the texture. This is a classic problem in 2D map projection. "
 "Game developers often have a 2-dimensional map they want to project onto a "
-"sphere but when it wraps around it has large seams. There is an elegant work "
-"around for this problem that we will illustrate in the next section."
+"sphere, but when it wraps around, it has large seams. There is an elegant "
+"workaround for this problem that we will illustrate in the next section."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:101
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:107
 msgid "Making the planet texture"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:103
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:109
 msgid ""
-"So now when we render to our :ref:`Viewport <class_Viewport>` it appears "
+"So now, when we render to our :ref:`Viewport <class_Viewport>`, it appears "
 "magically on the sphere. But there is an ugly seam created by our texture "
 "coordinates. So how do we get a range of coordinates that wrap around the "
 "sphere in a nice way? One solution is to use a function that repeats on the "
-"domain of our texture. ``sin`` and ``cos`` are two such functions. Lets "
-"apply them to the texture and see what happens"
+"domain of our texture. ``sin`` and ``cos`` are two such functions. Let's "
+"apply them to the texture and see what happens."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:114
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:120
 msgid ""
-"Not too bad. If you look around you can see that the seam has now "
-"disappeared, but in its place we have pinching at the poles. This pinching "
+"Not too bad. If you look around, you can see that the seam has now "
+"disappeared, but in its place, we have pinching at the poles. This pinching "
 "is due to the way Godot maps textures to spheres in its :ref:`Spatial "
 "Material <class_SpatialMaterial>`. It uses a projection technique called "
-"equirectangular projection. Which translates a spherical map onto a 2D plane."
+"equirectangular projection, which translates a spherical map onto a 2D plane."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:119
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:125
 msgid ""
 "If you are interested in a little extra information on the technique, we "
 "will be converting from spherical coordinates into Cartesian coordinates. "
 "Spherical coordinates map the longitude and latitude of the sphere, while "
-"Cartesian coordinates are for all intents and purposes a vector from the "
+"Cartesian coordinates are, for all intents and purposes, a vector from the "
 "center of the sphere to the point."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:124
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:130
 msgid ""
-"For each pixel we will calculate its 3D position on the sphere. From that we "
-"will use 3D noise to determine a color value. By calculating the noise in 3D "
-"we solve the problem of the pinching at the poles. To understand why, "
+"For each pixel, we will calculate its 3D position on the sphere. From that, "
+"we will use 3D noise to determine a color value. By calculating the noise in "
+"3D, we solve the problem of the pinching at the poles. To understand why, "
 "picture the noise being calculated across the surface of the sphere instead "
-"of across the 2D plane. When you calculate across the surface of the sphere "
+"of across the 2D plane. When you calculate across the surface of the sphere, "
 "you never hit an edge, and hence you never create a seam or a pinch point on "
-"the pole. The following code converts the ``UVs`` into Cartesion coordinates."
+"the pole. The following code converts the ``UVs`` into Cartesian coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:143
-msgid "And if we use ``unit`` as an output ``COLOR`` value we get."
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:149
+msgid "And if we use ``unit`` as an output ``COLOR`` value, we get:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:147
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:153
 msgid ""
-"Now that we can calculate the 3D position of the surface of the sphere we "
+"Now that we can calculate the 3D position of the surface of the sphere, we "
 "can use 3D noise to make the planet. We will be using this noise function "
 "directly from a `Shadertoy <https://www.shadertoy.com/view/Xsl3Dl>`_:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:175
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:181
 msgid ""
-"All credit goes to the author, Inigo Quilez. It is published with the "
+"All credit goes to the author, Inigo Quilez. It is published under the "
 "``MIT`` licence."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:177
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:183
 msgid ""
 "Now to use ``noise``, add the following to the    ``fragment`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:186
-msgid "In order to highlight the texture, we set the material to unshaded."
-msgstr ""
-
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:188
-msgid ""
-"You can see now that the noise indeed wraps seamlessly around the sphere. "
-"Although this looks nothing like the planet you were promised. So lets move "
-"onto something more colorful."
-msgstr ""
-
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:192
-msgid "Coloring the planet"
+msgid "In order to highlight the texture, we set the material to unshaded."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:194
 msgid ""
-"Now to make the planet colors. While, there are many ways to do this, for "
-"now we will stick with a gradient between water and land."
+"You can see now that the noise indeed wraps seamlessly around the sphere. "
+"Although this looks nothing like the planet you were promised. So let's move "
+"onto something more colorful."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:197
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:198
+msgid "Coloring the planet"
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:200
 msgid ""
-"To make a gradient in GLSL we use the ``mix`` function. ``mix`` takes two "
-"values to interpolate between and a third parameter to choose how much to "
-"interpolate between them, in essence it *mixes* the two values together. In "
-"other APIs this function is often called ``lerp``. Although, ``lerp`` is "
-"typically reserved for mixing two floats together, ``mix`` can take any "
+"Now to make the planet colors. While there are many ways to do this, for "
+"now, we will stick with a gradient between water and land."
+msgstr ""
+
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:203
+msgid ""
+"To make a gradient in GLSL, we use the ``mix`` function. ``mix`` takes two "
+"values to interpolate between and a third argument to choose how much to "
+"interpolate between them; in essence, it *mixes* the two values together. In "
+"other APIs, this function is often called ``lerp``. However, ``lerp`` is "
+"typically reserved for mixing two floats together; ``mix`` can take any "
 "values whether it be floats or vector types."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:207
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:213
 msgid ""
 "The first color is blue for the ocean. The second color is a kind of reddish "
-"color (because all alien planets need red terrain). And finally they are "
-"mixed together by ``n.x * 0.5 + 0.5``. ``n.x`` smoothly varies between "
-"``-1`` and ``1``. So we map it into the ``0-1`` range that ``mix`` expects. "
-"Now you can see that the colors change between blue and red."
+"color (because all alien planets need red terrain). And finally, they are "
+"mixed together by ``n * 0.5 + 0.5``. ``n`` smoothly varies between ``-1`` "
+"and ``1``. So we map it into the ``0-1`` range that ``mix`` expects. Now you "
+"can see that the colors change between blue and red."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:214
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:220
 msgid ""
 "That is a little more blurry than we want. Planets typically have a "
-"relatively clear separation between land and sea. In order to do that we "
-"will change the last term to ``smoothstep(-0.1, 0.0, n.x)``. And thus the "
+"relatively clear separation between land and sea. In order to do that, we "
+"will change the last term to ``smoothstep(-0.1, 0.0, n)``. And thus the "
 "whole line becomes:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:222
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:228
 msgid ""
-"What ``smoothstep`` does is return ``0`` if the third parameter is below the "
-"first and return 1 if the third parameter is larger than the second and "
-"smoothly blends between ``0`` and ``1`` if the third number is between the "
-"first and the second. So in this line ``smoothstep`` returns ``0`` whenever "
-"``n.x`` is less than ``-0.1`` and it returns ``1`` whenever ``n.x`` is above "
-"``0``."
+"What ``smoothstep`` does is return ``0`` if the third argument is below the "
+"first and ``1`` if the third argument is larger than the second and smoothly "
+"blends between ``0`` and ``1`` if the third number is between the first and "
+"the second. So in this line, ``smoothstep`` returns ``0`` whenever ``n`` is "
+"less than ``-0.1`` and it returns ``1`` whenever ``n`` is above ``0``."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:229
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:235
 msgid ""
 "One more thing to make this a little more planet-y. The land shouldn't be so "
-"blobby lets make the edges a little rougher. A trick that is often used in "
+"blobby; let's make the edges a little rougher. A trick that is often used in "
 "shaders to make rough looking terrain with noise is to layer levels of noise "
 "over one another at various frequencies. We use one layer to make the "
 "overall blobby structure of the continents. Then another layer breaks up the "
@@ -42916,19 +42953,19 @@ msgid ""
 "with four lines of shader code instead of just one. ``n`` becomes:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:243
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:249
 msgid "And now the planet looks like:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:247
-msgid "And with shading turned back on it looks like:"
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:253
+msgid "And with shading turned back on, it looks like:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:252
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:258
 msgid "Making an ocean"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:254
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:260
 msgid ""
 "One final thing to make this look more like a planet. The ocean and the land "
 "reflect light differently. So we want the ocean to shine a little more than "
@@ -42936,53 +42973,53 @@ msgid ""
 "channel of our output ``COLOR`` and using it as a Roughness map."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:262
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:268
 msgid ""
 "This line returns ``0.3`` for water and ``1.0`` for land. This means that "
-"the land is going to be quite rough while the water will be quite smooth."
+"the land is going to be quite rough, while the water will be quite smooth."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:265
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:271
 msgid ""
-"And then in the material under the \"Metallic\" section make sure "
+"And then, in the material, under the \"Metallic\" section, make sure "
 "``Metallic`` is set to ``0`` and ``Specular`` is set to ``1``. The reason "
 "for this is the water reflects light really well, but isn't metallic. These "
 "values are not physically accurate, but they are good enough for this demo."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:269
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:275
 msgid ""
-"Next under the \"Roughness\" section set ``Roughness`` to ``1`` and set the "
-"roughness texture to a :ref:`Viewport Texture <class_ViewportTexture>` "
-"pointing to our planet texture :ref:`Viewport <class_Viewport>`. Finally set "
-"the ``Texture Channel`` to ``Alpha``. This instructs the renderer to use the "
-"``alpha`` channel of our output ``COLOR`` as the ``Roughness`` value."
+"Next, under the \"Roughness\" section, set ``Roughness`` to ``1`` and set "
+"the roughness texture to a :ref:`Viewport Texture <class_ViewportTexture>` "
+"pointing to our planet texture :ref:`Viewport <class_Viewport>`. Finally, "
+"set the ``Texture Channel`` to ``Alpha``. This instructs the renderer to use "
+"the ``alpha`` channel of our output ``COLOR`` as the ``Roughness`` value."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:276
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:282
 msgid ""
 "You'll notice that very little changes except that the planet is no longer "
-"reflecting the sky. This is happening because by default when something is "
-"rendered with an alpha value it gets drawn as a transparent object over the "
+"reflecting the sky. This is happening because, by default, when something is "
+"rendered with an alpha value, it gets drawn as a transparent object over the "
 "background. And since the default background of the :ref:`Viewport "
 "<class_Viewport>` is opaque, the ``alpha`` channel of the :ref:`Viewport "
-"Texture <class_ViewportTexture>` is ``1`` resulting in the planet texture "
+"Texture <class_ViewportTexture>` is ``1``, resulting in the planet texture "
 "being drawn with slightly fainter colors and a ``Roughness`` value of ``1`` "
-"everywhere. To correct this we go into the :ref:`Viewport <class_Viewport>` "
+"everywhere. To correct this, we go into the :ref:`Viewport <class_Viewport>` "
 "and set \"Transparent Bg\" to on. Since we are now rendering one transparent "
-"object on top of another we want to enable ``blend_premul_alpha``:"
+"object on top of another, we want to enable ``blend_premul_alpha``:"
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:289
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:295
 msgid ""
 "This pre-multiplies the colors by the ``alpha`` value and then blends them "
-"correctly together. Typically when blending one transparent color on top of "
+"correctly together. Typically, when blending one transparent color on top of "
 "another, even if the background has an ``alpha`` of ``0`` (as it does in "
 "this case), you end up with weird color bleed issues. Setting "
 "``blend_premul_alpha`` fixes that."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:293
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:299
 msgid ""
 "Now the planet should look like it is reflecting light on the ocean but not "
 "the land. If you haven't done so already, add an :ref:`OmniLight "
@@ -42990,7 +43027,7 @@ msgid ""
 "of the reflections on the ocean."
 msgstr ""
 
-#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:299
+#: ../../docs/tutorials/viewports/using_viewport_as_texture.rst:305
 msgid ""
 "And there you have it. A procedural planet generated using a :ref:`Viewport "
 "<class_Viewport>`."
@@ -45191,50 +45228,57 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:84
-#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:47
 msgid ""
-"User can disable the built-in modelview transform (projection will still "
+"Users can disable the built-in modelview transform (projection will still "
 "happen later) and do it manually with the following code:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:99
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:98
 msgid ""
 "Other built-ins such as UV, UV2 and COLOR are also passed through to the "
 "fragment function if not modified."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:101
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:100
+msgid ""
+"Users can override the modelview and projection transforms using the "
+"``POSITION`` built-in. When ``POSITION`` is used the value from ``VERTEX`` "
+"is ignored and projection does not happen. However, the value passed to the "
+"fragment shader still comes from ``VERTEX``."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:104
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:62
 msgid ""
 "For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
 "data. When using particles, this information is usually:"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:104
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:107
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:65
 msgid "**x**: Rotation angle in radians."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:105
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:108
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:66
 msgid "**y**: Phase during lifetime (0 to 1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:106
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:109
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:67
 msgid "**z**: Animation frame."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:108
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:111
 msgid ""
 "This allows you to easily adjust the shader to a particle system using "
 "default particles material. When writing a custom particles shader, this "
 "value can be used as desired."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:112
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:257
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:115
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:166
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:262
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:70
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:115
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:164
@@ -45242,67 +45286,67 @@ msgstr ""
 msgid "Built-in"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:114
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:117
 msgid "out mat4 **WORLD_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:114
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:165
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:261
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:117
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
 msgid "Model space to world space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:116
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:167
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:263
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
 msgid "in mat4 **INV_CAMERA_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:116
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:167
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:263
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:119
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:172
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:268
 msgid "World space to view space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:118
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
 msgid "out mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:118
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:169
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:265
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:121
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:270
 msgid "View space to clip space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:120
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
 msgid "in mat4 **CAMERA_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:120
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:123
 msgid "View space to world space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:122
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
 msgid "out mat4 **MODELVIEW_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:122
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:125
 msgid "Model space to view space transform (use if possible)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:124
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
 msgid "out mat4 **INV_PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:124
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:171
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:267
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:127
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:272
 msgid "Clip space to view space transform."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:126
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:173
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:269
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:78
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:145
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:186
@@ -45310,123 +45354,131 @@ msgstr ""
 msgid "in float **TIME**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:126
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:173
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:269
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:129
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:178
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:274
 msgid "Elapsed total time in seconds."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:128
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:271
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:276
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:128
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:175
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:271
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:131
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:180
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:276
 msgid "Size of viewport (in pixels)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:130
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
 msgid "out vec3 **VERTEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:130
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:133
 msgid "Vertex in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:132
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:186
 msgid "out vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:132
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:135
 msgid "Normal in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:134
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:188
 msgid "out vec3 **TANGENT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:134
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:137
 msgid "Tangent in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:136
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:190
 msgid "out vec3 **BINORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:136
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:139
 msgid "Binormal in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:138
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 msgid "out vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:138
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:141
 msgid "UV main channel."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:140
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 msgid "out vec2 **UV2**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:140
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:143
 msgid "UV secondary channel."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:142
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 msgid "out vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:142
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:145
 msgid "Color from vertices."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:144
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 msgid "out float **POINT_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:144
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:147
 msgid "Point size for point rendering."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:146
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
+msgid "out vec4  **POSITION**"
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:149
+msgid "If written to, overrides final vertex position."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
 msgid "in int **INSTANCE_ID**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:146
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:151
 msgid "Instance ID for instancing."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:148
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:80
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:148
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:153
 msgid "Instance custom data (for particles, mostly)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:150
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
 msgid "out float **ROUGHNESS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:150
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:155
 msgid "Roughness for vertex lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:154
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:159
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:94
 msgid "Fragment built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:156
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:161
 msgid ""
 "The default use of a Godot fragment processor function is to set up the "
 "material properties of your object and to let the built-in renderer handle "
@@ -45435,300 +45487,300 @@ msgid ""
 "corresponding functionality."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:166
 msgid "in vec4 **FRAGCOORD**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:163
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:168
 msgid "Fragment coordinate, pixel adjusted. In screen space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:165
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:261
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:170
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:266
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:72
 msgid "in mat4 **WORLD_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:169
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:265
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:174
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:270
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:76
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:171
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:267
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:176
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:272
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:182
 msgid "in vec3 **VERTEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:177
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:182
 msgid "Vertex that comes from vertex function (default, in view space)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
 msgid "in bool **FRONT_FACING**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:179
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:184
 msgid "True if current face is front face."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:181
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:186
 msgid "Normal that comes from vertex function (default, in view space)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:183
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:188
 msgid "Tangent that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:185
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:190
 msgid "Binormal that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:192
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:121
 msgid "out vec3 **NORMALMAP**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:187
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:192
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:194
 msgid "out float **NORMALMAP_DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:189
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:194
 msgid "Depth from variable above. Defaults to 1.0."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:196
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:126
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:171
 msgid "in vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:191
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:196
 msgid "UV that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
 msgid "in vec2 **UV2**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:193
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:198
 msgid "UV2 that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:173
 msgid "in vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:195
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:200
 msgid "COLOR that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
 msgid "out vec3 **ALBEDO**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:197
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:202
 msgid "Albedo (default white)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
 msgid "out float **ALPHA**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:199
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
 msgid ""
 "Alpha (0..1), if written to the material will go to transparent pipeline."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
 msgid "out float **METALLIC**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:201
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
 msgid "Metallic (0..1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
 msgid "out float **SPECULAR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:203
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
 msgid ""
 "Specular. Defaults to 0.5, best to not modify unless you want to change IOR."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:205
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
 msgid "Roughness (0..1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
 msgid "out float **RIM**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:207
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:212
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
 msgid "out float **RIM_TINT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:209
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:214
 msgid ""
 "Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim "
 "lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
 msgid "out float **CLEARCOAT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:211
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:216
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
 msgid "out float **CLEARCOAT_GLOSS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:213
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:218
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
 msgid "out float **ANISOTROPY**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:215
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:220
 msgid "For distorting the specular blob according to tangent space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
 msgid "out vec2 **ANISOTROPY_FLOW**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:217
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:222
 msgid "Distortion direction, use with flowmaps."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
 msgid "out float **SSS_STRENGTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:219
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:224
 msgid ""
 "Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
 "applied to object."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
 msgid "out vec3 **TRANSMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:221
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:226
 msgid ""
 "Transmission mask (default 0,0,0). Allows light to pass through object. Only "
 "applied if used."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
 msgid "out float **AO**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:223
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:228
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
 msgid "out float **AO_LIGHT_AFFECT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:225
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
 msgid "How much AO affects lights (0..1. default 0)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
 msgid "out vec3 **EMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:227
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232
 msgid "Emission color (can go over 1,1,1 for HDR)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:229
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:234
 msgid ""
 "Built-in Texture for reading from the screen. Mipmaps contain increasingly "
 "blurred copies."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
 msgid "sampler2D **DEPTH_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:231
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:236
 msgid ""
 "Built-in Texture for reading depth from the screen. Must convert to linear "
 "using INV_PROJECTION."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
 msgid "out float **DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:233
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:238
 msgid "Custom depth value (0..1)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:139
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:182
 msgid "in vec2 **SCREEN_UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:235
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:240
 msgid "Screen UV coordinate for current pixel."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:143
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:184
 msgid "in vec2 **POINT_COORD**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:237
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:242
 msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
 msgid "out float **ALPHA_SCISSOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:239
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:244
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:243
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:248
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:153
 msgid "Light built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:245
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
 msgid ""
 "Writing light processor functions is completely optional. You can skip the "
 "light function by setting render_mode to ``unshaded``. If no light function "
@@ -45737,101 +45789,101 @@ msgid ""
 "render_mode)."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:250
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:255
 msgid ""
 "To write a light function, assign something to DIFFUSE_LIGHT or "
 "SPECULAR_LIGHT. Assigning nothing means no light is processed."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:253
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:258
 msgid ""
 "The light function is called for every light in every pixel. It is called "
 "within a loop for each light type."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:259
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:264
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:117
 msgid "Fragment coordinate, pixel adjusted."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:273
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:168
 msgid "in vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:273
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:278
 msgid "Normal vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:275
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
 msgid "in vec3 **VIEW**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:275
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:280
 msgid "View vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:277
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
 msgid "in vec3 **LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:277
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:282
 msgid "Light Vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:279
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:279
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:284
 msgid "Color of light multiplied by energy."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:281
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
 msgid "in vec3 **ATTENUATION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:281
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:286
 msgid "Attenuation based on distance or shadow."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:283
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
 msgid "in vec3 **ALBEDO**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:283
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:288
 msgid "Base albedo."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:285
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
 msgid "in vec3 **TRANSMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:285
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:290
 msgid "Transmission mask."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:287
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
 msgid "in float **ROUGHNESS**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:287
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:292
 msgid "Roughness."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:289
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
 msgid "out vec3 **DIFFUSE_LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:289
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:294
 msgid "Diffuse light result."
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:291
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
 msgid "out vec3 **SPECULAR_LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:291
+#: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:296
 msgid "Specular light result."
 msgstr ""
 
@@ -45877,6 +45929,12 @@ msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
 "relative to the camera). If not written to, these values will not be "
 "modified and be passed through as they came."
+msgstr ""
+
+#: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:47
+msgid ""
+"User can disable the built-in modelview transform (projection will still "
+"happen later) and do it manually with the following code:"
 msgstr ""
 
 #: ../../docs/tutorials/shading/shading_reference/canvas_item_shader.rst:60
@@ -56186,7 +56244,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:407
-#: ../../docs/development/compiling/compiling_for_android.rst:178
+#: ../../docs/development/compiling/compiling_for_android.rst:181
 #: ../../docs/development/cpp/creating_android_modules.rst:335
 msgid "Troubleshooting"
 msgstr ""
@@ -56580,17 +56638,20 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_for_android.rst:57
 msgid ""
 "Set the environment variable ``ANDROID_NDK_ROOT`` to point to the Android "
-"NDK."
+"NDK. You also might need to set the variable ``ANDROID_NDK_HOME`` to the "
+"same path, especially if you are using custom Android modules, since some "
+"Gradle plugins rely on the NDK and use this variable to determine its "
+"location."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:60
+#: ../../docs/development/compiling/compiling_for_android.rst:63
 msgid ""
 "To set those environment variables on Windows, press **Windows + R**, type "
 "\"control system\", then click on **Advanced system settings** in the left "
 "pane, then click on **Environment variables** on the window that appears."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:65
+#: ../../docs/development/compiling/compiling_for_android.rst:68
 msgid ""
 "To set those environment variables on Linux or macOS, use ``export "
 "ANDROID_HOME=/path/to/android-sdk`` and ``export ANDROID_NDK_ROOT=/path/to/"
@@ -56598,11 +56659,11 @@ msgid ""
 "point to the root of the SDK and NDK directories."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:72
+#: ../../docs/development/compiling/compiling_for_android.rst:75
 msgid "Building the export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:74
+#: ../../docs/development/compiling/compiling_for_android.rst:77
 msgid ""
 "Godot needs two export templates for Android: the optimized \"release\" "
 "template (``android_release.apk``) and the debug template (``android_debug."
@@ -56611,41 +56672,41 @@ msgid ""
 "both ARMv7 and ARMv8 libraries."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:80
+#: ../../docs/development/compiling/compiling_for_android.rst:83
 msgid ""
 "Compiling the standard export templates is done by calling SCons with the "
 "following arguments:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:83
+#: ../../docs/development/compiling/compiling_for_android.rst:86
 msgid ""
 "Release template (used when exporting with **Debugging Enabled** unchecked)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:96
+#: ../../docs/development/compiling/compiling_for_android.rst:99
 msgid "The resulting APK will be located at ``bin/android_release.apk``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:98
+#: ../../docs/development/compiling/compiling_for_android.rst:101
 msgid "Debug template (used when exporting with **Debugging Enabled** checked)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:111
+#: ../../docs/development/compiling/compiling_for_android.rst:114
 msgid "The resulting APK will be located at ``bin/android_debug.apk``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:114
+#: ../../docs/development/compiling/compiling_for_android.rst:117
 msgid "Adding support for x86 devices"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:116
+#: ../../docs/development/compiling/compiling_for_android.rst:119
 msgid ""
 "If you also want to include support for x86 devices, run the SCons command a "
 "third time with the ``android_arch=x86`` argument before building the APK "
 "with Gradle. For example, for the release template:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:132
+#: ../../docs/development/compiling/compiling_for_android.rst:135
 msgid ""
 "This will create a fat binary that works on all platforms. The final APK "
 "size of exported projects will depend on the platforms you choose to support "
@@ -56653,11 +56714,11 @@ msgid ""
 "APK."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:138
+#: ../../docs/development/compiling/compiling_for_android.rst:141
 msgid "Using the export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:140
+#: ../../docs/development/compiling/compiling_for_android.rst:143
 msgid ""
 "Godot needs release and debug APKs that were compiled against the same "
 "version/commit as the editor. If you are using official binaries for the "
@@ -56665,36 +56726,36 @@ msgid ""
 "own from the same version."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:145
+#: ../../docs/development/compiling/compiling_for_android.rst:148
 msgid ""
 "When exporting your game, Godot opens the APK, changes a few things inside "
 "and adds your files."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:149
+#: ../../docs/development/compiling/compiling_for_android.rst:152
 msgid "Installing the templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:151
+#: ../../docs/development/compiling/compiling_for_android.rst:154
 msgid ""
 "The newly-compiled templates (``android_debug.apk`` and ``android_release."
 "apk``) must be copied to Godot's templates folder with their respective "
 "names. The templates folder can be located in:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:155
+#: ../../docs/development/compiling/compiling_for_android.rst:158
 msgid "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:156
+#: ../../docs/development/compiling/compiling_for_android.rst:159
 msgid "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:157
+#: ../../docs/development/compiling/compiling_for_android.rst:160
 msgid "macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:159
+#: ../../docs/development/compiling/compiling_for_android.rst:162
 msgid ""
 "``<version>`` is of the form ``major.minor[.patch].status`` using values "
 "from ``version.py`` in your Godot source repository (e.g. ``3.0.5.stable`` "
@@ -56702,78 +56763,78 @@ msgid ""
 "``version.txt`` file located next to your export templates."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:166
+#: ../../docs/development/compiling/compiling_for_android.rst:169
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your APKs as custom export templates here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:172
+#: ../../docs/development/compiling/compiling_for_android.rst:175
 msgid ""
 "You don't even need to copy them, you can just reference the resulting file "
 "in the ``bin\\`` directory of your Godot source folder, so that the next "
 "time you build you will automatically have the custom templates referenced."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:181
+#: ../../docs/development/compiling/compiling_for_android.rst:184
 msgid "Application not installed"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:183
+#: ../../docs/development/compiling/compiling_for_android.rst:186
 msgid ""
 "Android might complain the application is not correctly installed. If so:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:186
+#: ../../docs/development/compiling/compiling_for_android.rst:189
 msgid "Check that the debug keystore is properly generated."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:187
+#: ../../docs/development/compiling/compiling_for_android.rst:190
 msgid "Check that the jarsigner executable is from JDK 8."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:189
+#: ../../docs/development/compiling/compiling_for_android.rst:192
 msgid ""
 "If it still fails, open a command line and run `logcat <https://developer."
 "android.com/studio/command-line/logcat>`_:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:195
+#: ../../docs/development/compiling/compiling_for_android.rst:198
 msgid ""
 "Then check the output while the application is installed; the error message "
 "should be presented there. Seek assistance if you can't figure it out."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:200
+#: ../../docs/development/compiling/compiling_for_android.rst:203
 msgid "Application exits immediately"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:202
+#: ../../docs/development/compiling/compiling_for_android.rst:205
 msgid ""
 "If the application runs but exits immediately, this might be due to one of "
 "the following reasons:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:205
+#: ../../docs/development/compiling/compiling_for_android.rst:208
 msgid ""
 "Make sure to use export templates that match your editor version; if you use "
 "a new Godot version, you *have* to update the templates too."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:207
+#: ../../docs/development/compiling/compiling_for_android.rst:210
 msgid ""
 "``libgodot_android.so`` is not in ``libs/<android_arch>/`` where "
 "``<android_arch>`` is the device's architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:209
+#: ../../docs/development/compiling/compiling_for_android.rst:212
 msgid ""
 "The device's architecture does not match the exported one(s). Make sure your "
 "templates were built for that device's architecture, and that the export "
 "settings included support for that architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_android.rst:213
+#: ../../docs/development/compiling/compiling_for_android.rst:216
 msgid "In any case, ``adb logcat`` should also show the cause of the error."
 msgstr ""
 
@@ -57766,6 +57827,81 @@ msgid ""
 "However, keep in mind that some antivirus programs may detect UPX-packed "
 "binaries as a virus. Therefore, if you are releasing a commercial game, make "
 "sure to sign your binaries or use a platform that will distribute them."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:6
+msgid "Compiling with script encryption key"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:8
+msgid ""
+"The export dialog gives you the option to encrypt your scripts with an "
+"256bit AES key, when releasing your game. This will make sure your scripts "
+"are not stored in plain text and can not easily be ripped by some script "
+"kiddie. Of course the key needs to be stored in the binary, but if it's "
+"compiled, optimized and without symbols, it would take some effort to find "
+"it."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:14
+msgid ""
+"For this to work, you need to build the export templates from source, with "
+"that same key."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:18
+msgid "Step by step (Linux)"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:20
+msgid ""
+"Generate a 256bit AES key in HEX. You can use the aes-256-cbc variant from "
+"`this service <https://asecuritysite.com/encryption/keygen>`_."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:23
+msgid "Alternatively, you can generate it yourself by using OpenSSL:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:29
+msgid "This should output the following to ``godot.gdkey`` file:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:37
+msgid ""
+"You can generate the key without redirecting the output to a file, but that "
+"way you can minimize the risk of exposing the key."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:41
+msgid ""
+"Set this key as environment variable in the console that you will use to "
+"compile Godot, like this:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:49
+msgid ""
+"Compile Godot export templates and set them as custom export templates in "
+"the export preset options."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:52
+msgid "Set the encryption key in the ``Script`` tab of the export preset:"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:56
+msgid "Export the project. The game should run with encrypted scripts now."
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:59
+msgid "Possible Errors"
+msgstr ""
+
+#: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:61
+msgid ""
+"If you get an error like below, it means the key wasn't properly included in "
+"your Godot build. Godot is encrypting the scripts during export, but can't "
+"read them at runtime."
 msgstr ""
 
 #: ../../docs/development/cpp/index.rst:2
