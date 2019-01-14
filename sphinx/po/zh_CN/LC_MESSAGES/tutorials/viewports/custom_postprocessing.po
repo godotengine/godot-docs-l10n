@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-09 10:56+0100\n"
+"POT-Creation-Date: 2019-01-14 16:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,8 +26,9 @@ msgid "Introduction"
 msgstr "简介"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:9
+#, fuzzy
 msgid ""
-"Godot provides many post-processing effects out of the box including, Bloom, "
+"Godot provides many post-processing effects out of the box, including Bloom, "
 "DOF, and SSAO. Sometimes you want to write your own custom effect. Here's "
 "how you can do so."
 msgstr ""
@@ -57,10 +58,12 @@ msgstr ""
 "reading_shaders>` 。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:22
+#, fuzzy
 msgid ""
-"At the time of writing Godot does not support rendering to multiple buffers "
-"at the same time. Your post-processing shader will not have access to "
-"normals or other render passes. You only have access to the rendered frame."
+"As of the time of writing, Godot does not support rendering to multiple "
+"buffers at the same time. Your post-processing shader will not have access "
+"to normals or other render passes. You only have access to the rendered "
+"frame."
 msgstr ""
 "在撰写本文时，Godot不支持同时渲染到多个缓冲区。 您的后期处理着色器将无法访问"
 "法线或其他渲染过程。 您只能访问渲染帧。"
@@ -81,34 +84,38 @@ msgstr ""
 "另一个屏幕内显示您的``Viewport`` :ref:`Control <class_Control>` 节点。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:36
+#, fuzzy
 msgid ""
-"Rendering using a ``Viewport`` gives you control over the how the scene "
-"render, including the framerate, and you can use the ``ViewportContainer`` "
-"to render 3D objects in a 2D scene."
+"Rendering using a ``Viewport`` gives you control over how the scene render, "
+"including the framerate, and you can use the ``ViewportContainer`` to render "
+"3D objects in a 2D scene."
 msgstr ""
 "使用 ``Viewport`` 渲染可以控制场景的渲染方式，包括帧速率，您可以使用 "
 "``ViewportContainer`` 在2D场景中渲染3D对象。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:40
+#, fuzzy
 msgid ""
-"For this demo we will use a :ref:`Node2D <class_Node2D>` with a "
-"``ViewportContainer`` and finally a ``Viewport``. Your Node tab should look "
-"like this:"
+"For this demo, we will use a :ref:`Node2D <class_Node2D>` with a "
+"``ViewportContainer`` and finally a ``Viewport``. Your **Scene** tab should "
+"look like this:"
 msgstr ""
 "对于这个演示，我们将使用 :ref:`Node2D <class_Node2D>` 和 "
 "``ViewportContainer`` ，最后是 ``Viewport`` 。 您的“节点”选项卡应如下所示:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:45
+#, fuzzy
 msgid ""
-"Inside the ``Viewport`` you can have whatever you want. This will contain "
-"your main scene. For this tutorial we will use a field of random boxes:"
+"Inside the ``Viewport``, you can have whatever you want. This will contain "
+"your main scene. For this tutorial, we will use a field of random boxes:"
 msgstr ""
 "在“Viewport”里，您可以得到任何您想要的东西。这将包含您的主场景。对于本教程，"
 "我们将使用一个随机框字段:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:50
+#, fuzzy
 msgid ""
-"Add a new a :ref:`ShaderMaterial <class_ShaderMaterial>` to the "
+"Add a new :ref:`ShaderMaterial <class_ShaderMaterial>` to the "
 "``ViewportContainer``, and assign a new shader resource to it. You can "
 "access your rendered ``Viewport`` with the built-in ``TEXTURE`` uniform."
 msgstr ""
@@ -117,9 +124,10 @@ msgstr ""
 "``TEXTURE`` 制服来访问渲染的 ``Viewport`` 。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:55
+#, fuzzy
 msgid ""
-"You can choose not to use a ``ViewportContainer``, but if you do so you will "
-"need to create your own uniform in the shader and pass the ``Viewport`` "
+"You can choose not to use a ``ViewportContainer``, but if you do so, you "
+"will need to create your own uniform in the shader and pass the ``Viewport`` "
 "texture in manually, like so:"
 msgstr ""
 "您可以选择不使用 ``ViewportContainer`` ，但如果这样做，您将需要在着色器中创建"
@@ -168,9 +176,10 @@ msgstr ""
 "其进行处理。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:108
+#, fuzzy
 msgid ""
 "To make a multi-pass post-processing shader, you stack ``Viewport`` nodes. "
-"In the example above you rendered the content of one ``Viewport`` object "
+"In the example above, you rendered the content of one ``Viewport`` object "
 "into the root ``Viewport``, through a ``ViewportContainer`` node. You can do "
 "the same thing for a multi-pass shader by rendering the content of one "
 "``Viewport`` into another and then rendering the last ``Viewport`` into the "
@@ -204,9 +213,10 @@ msgstr ""
 "地渲染它们。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:126
+#, fuzzy
 msgid ""
-"Besides the node structure, the steps are the same as with the single-pass "
-"post-processing shader."
+"Apart from the node structure, the steps are the same as with the single-"
+"pass post-processing shader."
 msgstr "除节点结构外，步骤与单遍后处理着色器相同。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:128
@@ -220,14 +230,16 @@ msgstr ""
 "`ViewportContainers <class_ViewportContainer>`。 应用着色器的顺序无关紧要:"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:168
+#, fuzzy
 msgid ""
-"Using the above code you should end up with a full screen blur effect like "
+"Using the above code, you should end up with a full screen blur effect like "
 "below."
 msgstr "使用上面的代码，您应该得到如下所示的全屏模糊效果。"
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:172
+#, fuzzy
 msgid ""
-"For more information on how ``Viewport`` nodes work see the :ref:`Viewports "
+"For more information on how ``Viewport`` nodes work, see the :ref:`Viewports "
 "Tutorial <doc_viewports>`."
 msgstr ""
 "有关 ``Viewport`` 节点如何工作的更多信息，请参阅 :ref:`Viewports Tutorial "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-09 10:56+0100\n"
+"POT-Creation-Date: 2019-01-14 16:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,25 +36,20 @@ msgid "The ability to subdivide scenes and make them easier to manage."
 msgstr "Możliwość podziału scen i ułatwienia zarządzania nimi."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
-#, fuzzy
-msgid ""
-"A more flexible alternative to prefabs you might know from Unity (and much "
-"more powerful given that instances can be nested)."
+msgid "A tool to manage and edit multiple node instances at once."
 msgstr ""
-"Bardziej elastyczna alternatywa dla obiektów będących szablonami (i o wiele "
-"mocniejsza, biorąc pod uwagę możliwość zagnieżdżenia się instancji)."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
 msgid "Design language"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This is pretty much what distinguishes "
@@ -66,7 +61,7 @@ msgstr ""
 "wszystkich innych silników. Godot został zaprojektowany od podstaw wokół "
 "tego konceptu."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
 "When making games with Godot, the recommended approach is to dismiss most "
 "common design patterns, such as MVC or Entity-Relationship diagrams, and "
@@ -80,11 +75,11 @@ msgstr ""
 "od wyobrażenia sobie elementów widocznych w grze, które mogą być nazwane nie "
 "tylko przez programistę, ale przez każdego."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
 msgid "For example, here's how a simple shooter game could be imagined:"
 msgstr "Na przykład, oto jak można sobie wyobrazić prostą grę strzelecką:"
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
 msgid ""
 "You can come up with a diagram like this for almost any kind of game. Write "
 "down the parts of the game that you can visualize, and then add arrows to "
@@ -94,7 +89,7 @@ msgstr ""
 "gry, które możesz wizualizować, a następnie dodaj strzałki, aby "
 "reprezentować własność jednego komponentu przez drugi."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:38
 msgid ""
 "Once you have a diagram like this, the recommended process for making a game "
 "is to create a scene for each element listed in the diagram. You'll use "
@@ -106,7 +101,7 @@ msgstr ""
 "instancjonowania (za pomocą kodu lub bezpośrednio w edytorze) dla relacji "
 "własnościowych."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
 #, fuzzy
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
@@ -125,7 +120,7 @@ msgstr ""
 "scenę, zastosowanie instancji opartej na projekcie oznacza, że nie jest "
 "potrzebny żaden inny kod architektoniczny."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:48
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
@@ -133,7 +128,7 @@ msgstr ""
 "Przyjrzyjmy się jeszcze jednemu, nieco bardziej złożonemu przykładowi gry "
 "typu open-world z dużą ilością zasobów i elementów zagnieżdżonych:"
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
 "Take a look at the room element. Let's say we started there. We could make a "
 "couple of different room scenes, with different arrangements of furniture "
@@ -145,7 +140,7 @@ msgstr ""
 "w nich. Potem mogliśmy stworzyć scenę dom, łączącą pokoje i tworzącą jej "
 "wnętrze."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
 msgid ""
 "Then, we could make a citadel scene, which is made out of many instanced "
 "houses. Then, we could start working on the world map terrain, adding the "
@@ -155,7 +150,7 @@ msgstr ""
 "domów. Wtedy moglibyśmy zacząć pracę na mapie świata, dodając do niej "
 "cytadelę."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
 msgid ""
 "Later, we could create scenes that represent guards (and other NPCs) and add "
 "them to the citadel as well. As a result, they would be indirectly added to "
@@ -165,7 +160,7 @@ msgstr ""
 "dodawać je do cytadeli. W rezultacie zostałyby one pośrednio dodane do "
 "całego świata gier."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instance more scenes. Furthermore, the editor UI is "
@@ -181,11 +176,11 @@ msgstr ""
 "lub 3D, projektantów poziomów, projektantów gier i animatorów, którzy "
 "współpracują z interfejsem edytora."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
 msgstr "Przeciążenie informacjami!"
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
 "This has been a lot of high level information dropped on you all at once. "
 "However, the important part of this tutorial was to create an awareness of "
@@ -195,7 +190,7 @@ msgstr ""
 "raz. Ważną częścią tego samouczka było jednak uświadomienie sobie, jak sceny "
 "i instancje są wykorzystywane w rzeczywistych projektach."
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
 msgid ""
 "Everything discussed here will become second nature to you once you start "
 "making games and putting these concepts into practice. For now, don't worry "

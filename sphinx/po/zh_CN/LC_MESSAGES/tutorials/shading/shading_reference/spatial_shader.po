@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-09 10:56+0100\n"
+"POT-Creation-Date: 2019-01-14 16:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -304,15 +304,16 @@ msgstr ""
 "成:"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:98
+#, fuzzy
 msgid ""
-"Other built-ins such as UV, UV2 and COLOR are also passed through to the "
+"Other built-ins, such as UV, UV2 and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr "如果不修改，其他内置函数(如UV，UV2和COLOR)也会传递给片段函数。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:100
 msgid ""
 "Users can override the modelview and projection transforms using the "
-"``POSITION`` built-in. When ``POSITION`` is used the value from ``VERTEX`` "
+"``POSITION`` built-in. When ``POSITION`` is used, the value from ``VERTEX`` "
 "is ignored and projection does not happen. However, the value passed to the "
 "fragment shader still comes from ``VERTEX``."
 msgstr ""
@@ -663,8 +664,10 @@ msgid "out float **ALPHA**"
 msgstr "out float **ALPHA**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:204
+#, fuzzy
 msgid ""
-"Alpha (0..1), if written to the material will go to transparent pipeline."
+"Alpha (0..1); if written to, the material will go to the transparent "
+"pipeline."
 msgstr "Alpha(0..1)，如果写入材质将转到透明管道。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:206
@@ -680,8 +683,9 @@ msgid "out float **SPECULAR**"
 msgstr "out float **SPECULAR**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:208
+#, fuzzy
 msgid ""
-"Specular. Defaults to 0.5, best to not modify unless you want to change IOR."
+"Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
 msgstr "镜面。 默认为0.5，除非您想要更改IOR，否则最好不要修改。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:210
@@ -774,7 +778,7 @@ msgstr "out float **AO_LIGHT_AFFECT**"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:230
 #, fuzzy
-msgid "How much AO affects lights (0..1. default 0)."
+msgid "How much AO affects lights (0..1; default 0)."
 msgstr "AO对灯光的影响程度(0..1。默认为0，无)。"
 
 #: ../../docs/tutorials/shading/shading_reference/spatial_shader.rst:232

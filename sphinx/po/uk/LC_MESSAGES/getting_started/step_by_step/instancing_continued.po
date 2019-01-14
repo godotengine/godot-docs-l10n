@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-09 10:56+0100\n"
+"POT-Creation-Date: 2019-01-14 16:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,22 +34,20 @@ msgid "The ability to subdivide scenes and make them easier to manage."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
-msgid ""
-"A more flexible alternative to prefabs you might know from Unity (and much "
-"more powerful given that instances can be nested)."
+msgid "A tool to manage and edit multiple node instances at once."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:14
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
 "A way to organize and embed complex game flows or even UIs (in Godot, UI "
 "Elements are nodes, too)."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:18
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:17
 msgid "Design language"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:20
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:19
 msgid ""
 "But the greatest strength that comes with instancing scenes is that it works "
 "as an excellent design language. This is pretty much what distinguishes "
@@ -57,7 +55,7 @@ msgid ""
 "ground up around this concept."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:25
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:24
 msgid ""
 "When making games with Godot, the recommended approach is to dismiss most "
 "common design patterns, such as MVC or Entity-Relationship diagrams, and "
@@ -66,18 +64,18 @@ msgid ""
 "programmer, but by anyone."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:31
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:30
 msgid "For example, here's how a simple shooter game could be imagined:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:35
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:34
 msgid ""
 "You can come up with a diagram like this for almost any kind of game. Write "
 "down the parts of the game that you can visualize, and then add arrows to "
 "represent ownership of one component by another."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:39
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:38
 msgid ""
 "Once you have a diagram like this, the recommended process for making a game "
 "is to create a scene for each element listed in the diagram. You'll use "
@@ -85,7 +83,7 @@ msgid ""
 "relationships."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:43
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:42
 msgid ""
 "A lot of time spent in programming games (or software in general) is on "
 "designing an architecture and fitting game components to that architecture. "
@@ -96,13 +94,13 @@ msgid ""
 "needed."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:49
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:48
 msgid ""
 "Let's take a look at one more, somewhat more complex, example of an open-"
 "world type game with lots of assets and nested elements:"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:54
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:53
 msgid ""
 "Take a look at the room element. Let's say we started there. We could make a "
 "couple of different room scenes, with different arrangements of furniture "
@@ -110,21 +108,21 @@ msgid ""
 "to make up its interior."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:59
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:58
 msgid ""
 "Then, we could make a citadel scene, which is made out of many instanced "
 "houses. Then, we could start working on the world map terrain, adding the "
 "citadel onto it."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:63
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:62
 msgid ""
 "Later, we could create scenes that represent guards (and other NPCs) and add "
 "them to the citadel as well. As a result, they would be indirectly added to "
 "the overall game world."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:67
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:66
 msgid ""
 "With Godot, it's easy to iterate on your game like this, as all you need to "
 "do is create and instance more scenes. Furthermore, the editor UI is "
@@ -134,18 +132,18 @@ msgid ""
 "interface."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:74
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:73
 msgid "Information overload!"
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:76
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:75
 msgid ""
 "This has been a lot of high level information dropped on you all at once. "
 "However, the important part of this tutorial was to create an awareness of "
 "how scenes and instancing are used in real projects."
 msgstr ""
 
-#: ../../docs/getting_started/step_by_step/instancing_continued.rst:80
+#: ../../docs/getting_started/step_by_step/instancing_continued.rst:79
 msgid ""
 "Everything discussed here will become second nature to you once you start "
 "making games and putting these concepts into practice. For now, don't worry "
