@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-09 10:56+0100\n"
+"POT-Creation-Date: 2019-01-14 16:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:9
-msgid "Godot provides many post-processing effects out of the box including, Bloom, DOF, and SSAO. Sometimes you want to write your own custom effect. Here's how you can do so."
+msgid "Godot provides many post-processing effects out of the box, including Bloom, DOF, and SSAO. Sometimes you want to write your own custom effect. Here's how you can do so."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:12
@@ -37,7 +37,7 @@ msgid "The easiest way to implement a custom post-processing shader is to use Go
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:22
-msgid "At the time of writing Godot does not support rendering to multiple buffers at the same time. Your post-processing shader will not have access to normals or other render passes. You only have access to the rendered frame."
+msgid "As of the time of writing, Godot does not support rendering to multiple buffers at the same time. Your post-processing shader will not have access to normals or other render passes. You only have access to the rendered frame."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:27
@@ -49,23 +49,23 @@ msgid "You will need a ``Viewport`` to render your scene to, and a scene to rend
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:36
-msgid "Rendering using a ``Viewport`` gives you control over the how the scene render, including the framerate, and you can use the ``ViewportContainer`` to render 3D objects in a 2D scene."
+msgid "Rendering using a ``Viewport`` gives you control over how the scene render, including the framerate, and you can use the ``ViewportContainer`` to render 3D objects in a 2D scene."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:40
-msgid "For this demo we will use a :ref:`Node2D <class_Node2D>` with a ``ViewportContainer`` and finally a ``Viewport``. Your Node tab should look like this:"
+msgid "For this demo, we will use a :ref:`Node2D <class_Node2D>` with a ``ViewportContainer`` and finally a ``Viewport``. Your **Scene** tab should look like this:"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:45
-msgid "Inside the ``Viewport`` you can have whatever you want. This will contain your main scene. For this tutorial we will use a field of random boxes:"
+msgid "Inside the ``Viewport``, you can have whatever you want. This will contain your main scene. For this tutorial, we will use a field of random boxes:"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:50
-msgid "Add a new a :ref:`ShaderMaterial <class_ShaderMaterial>` to the ``ViewportContainer``, and assign a new shader resource to it. You can access your rendered ``Viewport`` with the built-in ``TEXTURE`` uniform."
+msgid "Add a new :ref:`ShaderMaterial <class_ShaderMaterial>` to the ``ViewportContainer``, and assign a new shader resource to it. You can access your rendered ``Viewport`` with the built-in ``TEXTURE`` uniform."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:55
-msgid "You can choose not to use a ``ViewportContainer``, but if you do so you will need to create your own uniform in the shader and pass the ``Viewport`` texture in manually, like so:"
+msgid "You can choose not to use a ``ViewportContainer``, but if you do so, you will need to create your own uniform in the shader and pass the ``Viewport`` texture in manually, like so:"
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:64
@@ -89,7 +89,7 @@ msgid "Some post-processing effects like blur are resource intensive. If you bre
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:108
-msgid "To make a multi-pass post-processing shader, you stack ``Viewport`` nodes. In the example above you rendered the content of one ``Viewport`` object into the root ``Viewport``, through a ``ViewportContainer`` node. You can do the same thing for a multi-pass shader by rendering the content of one ``Viewport`` into another and then rendering the last ``Viewport`` into the root ``Viewport``."
+msgid "To make a multi-pass post-processing shader, you stack ``Viewport`` nodes. In the example above, you rendered the content of one ``Viewport`` object into the root ``Viewport``, through a ``ViewportContainer`` node. You can do the same thing for a multi-pass shader by rendering the content of one ``Viewport`` into another and then rendering the last ``Viewport`` into the root ``Viewport``."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:113
@@ -105,7 +105,7 @@ msgid "You can also render your Viewports separately without nesting them like t
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:126
-msgid "Besides the node structure, the steps are the same as with the single-pass post-processing shader."
+msgid "Apart from the node structure, the steps are the same as with the single-pass post-processing shader."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:128
@@ -113,10 +113,10 @@ msgid "As an example, you could write a full screen Gaussian blur effect by atta
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:168
-msgid "Using the above code you should end up with a full screen blur effect like below."
+msgid "Using the above code, you should end up with a full screen blur effect like below."
 msgstr ""
 
 #: ../../docs/tutorials/viewports/custom_postprocessing.rst:172
-msgid "For more information on how ``Viewport`` nodes work see the :ref:`Viewports Tutorial <doc_viewports>`."
+msgid "For more information on how ``Viewport`` nodes work, see the :ref:`Viewports Tutorial <doc_viewports>`."
 msgstr ""
 
