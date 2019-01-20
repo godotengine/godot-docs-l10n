@@ -2897,8 +2897,8 @@ msgid ""
 msgstr ""
 "Aby to osiągnąć, wprowadzimy funkcję, która jest prawdopodobnie najczęściej "
 "używana przez programistów Godota: :ref:`Node.get_node() "
-"<class_Node_get_node>`. Ta funkcja używa ścieżek do pobierania węzłów w "
-"dowolnym miejscu sceny, względem węzła, który jest właścicielem skryptu."
+"<class_Node_method_get_node>`. Ta funkcja używa ścieżek do pobierania węzłów "
+"w dowolnym miejscu sceny, względem węzła, który jest właścicielem skryptu."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:224
 msgid ""
@@ -2928,7 +2928,7 @@ msgid ""
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "Na koniec należy podłączyć przycisk do sygnału \"pressed\" do ``_ready()`` "
-"używając :ref:`Object.connect() <class_Object_connect>`."
+"używając :ref:`Object.connect() <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"
@@ -3103,7 +3103,7 @@ msgid ""
 msgstr ""
 "W ten sposób, jeśli gracz zostanie wykryty podczas skradania się do tajnej "
 "bazy, wszyscy wrogowie zostaną powiadomieni za pomocą :ref:`SceneTree."
-"call_group() <class_SceneTree_call_group>`:"
+"call_group() <class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 msgid ""
@@ -3122,7 +3122,7 @@ msgid ""
 msgstr ""
 "Możliwe jest również uzyskanie pełnej listy węzłów ``wrogów`` przez "
 "wywołanie :ref:`SceneTree.get_nodes_in_group() "
-"<class_SceneTree_get_nodes_in_group>`:"
+"<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -3235,8 +3235,8 @@ msgid ""
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
 "Najbezpieczniejszym sposobem usunięcia węzła jest użycie :ref:`Node."
-"queue_free() <class_Node_queue_free>`. Węzeł zostanie bezpiecznie usunięty, "
-"podczas gdy będzie bezczynny."
+"queue_free() <class_Node_method_queue_free>`. Węzeł zostanie bezpiecznie "
+"usunięty, podczas gdy będzie bezczynny."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
@@ -3267,8 +3267,9 @@ msgid ""
 msgstr ""
 "Ale ``scene`` nie jest jeszcze węzłem. Jest zapakowany w specjalny zasób o "
 "nazwie :ref:`PackedScene <class_PackedScene>`. Aby utworzyć węzeł należy "
-"wywołać funkcję :ref:`PackedScene.instance() <class_PackedScene_instance>`. "
-"Spowoduje to zwrócenie drzewa węzłów, które można dodać do aktywnej sceny:"
+"wywołać funkcję :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`. Spowoduje to zwrócenie drzewa węzłów, "
+"które można dodać do aktywnej sceny:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
 msgid ""
@@ -9091,7 +9092,7 @@ msgid ""
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
 "Aby uzyskać przykład sceny, należy użyć metody :ref:`PackedScene.instance() "
-"<class_PackedScene_instance>`."
+"<class_PackedScene_method_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 #, fuzzy
@@ -9114,7 +9115,7 @@ msgid ""
 "shared between the scene instances."
 msgstr ""
 "Podejście to ma kilka zalet. Ponieważ funkcja :ref:`PackedScene.instance() "
-"<class_PackedScene_instance>` jest dość szybka, dodawanie dodatkowej "
+"<class_PackedScene_method_instance>` jest dość szybka, dodawanie dodatkowej "
 "zawartości do sceny może być wykonane wydajnie. Nowi wrogowie, kule, efekty, "
 "itp. mogą być szybko dodawane lub usuwane, bez konieczności ponownego "
 "ładowania ich za każdym razem z dysku. Należy pamiętać, że jak zawsze "
@@ -10020,9 +10021,10 @@ msgid ""
 msgstr ""
 "Jak wspomniano w komentarzach powyżej, chcemy uniknąć sytuacji, w których w "
 "trakcie użytkowania jest usuwana obecna scena, więc w tym momencie pożądane "
-"jest użycie :ref:`Object.call_deferred() <class_Object_call_deferred>`. W "
-"rezultacie wykonanie komend w drugiej funkcji nastąpi później, gdy nie "
-"będzie uruchomiony żaden kod z bieżącej sceny."
+"jest użycie :ref:`Object.call_deferred() "
+"<class_Object_method_call_deferred>`. W rezultacie wykonanie komend w "
+"drugiej funkcji nastąpi później, gdy nie będzie uruchomiony żaden kod z "
+"bieżącej sceny."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
 #, fuzzy
@@ -23835,7 +23837,7 @@ msgid ""
 msgstr ""
 "Jeśli wymagane jest ponowne narysowanie, ponieważ stan lub innego się "
 "zmieniło, po prostu wywołaj :ref:`CanvasItem.update() "
-"<class_CanvasItem_update>` w tym samym węźle a nastąpi nowe wywołanie "
+"<class_CanvasItem_method_update>` w tym samym węźle a nastąpi nowe wywołanie "
 "_draw()."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
@@ -42448,7 +42450,7 @@ msgid ""
 "<class_Input_method_set_custom_mouse_cursor>`."
 msgstr ""
 "Sprawdź :ref:`Input.set_custom_mouse_cursor() "
-"<class_Input_set_custom_mouse_cursor>`."
+"<class_Input_method_set_custom_mouse_cursor>`."
 
 #: ../../docs/tutorials/inputs/custom_mouse_cursor.rst:68
 msgid "Demo project"
@@ -68927,7 +68929,7 @@ msgstr ""
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 #, fuzzy
 msgid "See :ref:`hide <class_spatial_method_hide>`."
-msgstr "Zobacz :ref:`hide <class_spatial_hide>`."
+msgstr "Zobacz :ref:`hide <class_spatial_method_hide>`."
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:233
 msgid "[method Class.methodname]"

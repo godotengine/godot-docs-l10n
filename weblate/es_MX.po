@@ -2981,8 +2981,8 @@ msgid ""
 msgstr ""
 "Para lograr esto, presentaremos una función que probablemente sea la más "
 "utilizada por los programadores Godot: :ref:`Node.get_node() "
-"<class_Node_get_node>`. Esta función utiliza rutas para buscar nodos en "
-"cualquier lugar de la escena, en relación con el nodo que posee el script."
+"<class_Node_method_get_node>`. Esta función utiliza rutas para buscar nodos "
+"en cualquier lugar de la escena, en relación con el nodo que posee el script."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:224
 msgid ""
@@ -3015,7 +3015,7 @@ msgid ""
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "Finalmente, conecte la señal \"presionada\" del botón a ``_ready()`` "
-"usando: :ref:`Object.connect() <class_Object_connect>`."
+"usando: :ref:`Object.connect() <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"
@@ -3102,8 +3102,9 @@ msgid ""
 "function."
 msgstr ""
 "El procesamiento inactivo se activa cuando el método :ref:`Node._process() "
-"<class_Node__process>` se encuentra en un script. Puede ser desactivado y "
-"activado con la funcion :ref:`Node.set_process() <class_Node_set_process>`."
+"<class_Node_method__process>` se encuentra en un script. Puede ser "
+"desactivado y activado con la funcion :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
@@ -3213,7 +3214,7 @@ msgstr ""
 "De esta manera, si el jugador es descubierto infiltrándose en una base "
 "secreta, se puede notificar a todos los enemigos con su sonido de alarma "
 "mediante el uso de :ref:`SceneTree.call_group() "
-"<class_SceneTree_call_group>`:"
+"<class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 msgid ""
@@ -3232,7 +3233,7 @@ msgid ""
 msgstr ""
 "También es posible obtener la lista completa de los nodos `` enemigos`` "
 "llamando al: :ref:`SceneTree.get_nodes_in_group() "
-"<class_SceneTree_get_nodes_in_group>`:"
+"<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -3266,7 +3267,7 @@ msgstr ""
 "para la creación de scripts, ya que son de muy bajo nivel y se proporcionan "
 "funciones virtuales para la mayoría de ellos. Es bueno saber que existen. "
 "Por ejemplo, puede agregar una función: :ref:`Object._notification() "
-"<class_Object__notification>` en su script:"
+"<class_Object_method__notification>` en su script:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -3347,8 +3348,8 @@ msgid ""
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
 "La forma más segura de eliminar un nodo es usando: :ref:`Node.queue_free() "
-"<class_Node_queue_free>`. Esto borra el nodo de forma segura durante la "
-"inactividad."
+"<class_Node_method_queue_free>`. Esto borra el nodo de forma segura durante "
+"la inactividad."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
@@ -3381,9 +3382,9 @@ msgid ""
 msgstr ""
 "Pero ``scene`` aún no es un nodo. Está empaquetado en un recurso especial "
 "llamado :ref:`PackedScene <class_PackedScene>`. Para crear el nodo actual, "
-"la función :ref:`PackedScene.instance() <class_PackedScene_instance>`debe "
-"ser llamada.  Esto devolverá el árbol de nodos que se puede agregar a la "
-"escena activa:"
+"la función :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`debe ser llamada.  Esto devolverá el "
+"árbol de nodos que se puede agregar a la escena activa:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
 msgid ""

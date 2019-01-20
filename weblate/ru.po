@@ -2980,8 +2980,8 @@ msgid ""
 msgstr ""
 "Для этого мы познакомимся с функцией, которая, вероятно, наиболее часто "
 "используется программистами Godot: :ref:`Node.get_node() "
-"<class_Node_get_node>`. Эта функция использует пути для извлечения узлов из "
-"любого места сцены, относительно узла, которому принадлежит скрипт."
+"<class_Node_method_get_node>`. Эта функция использует пути для извлечения "
+"узлов из любого места сцены, относительно узла, которому принадлежит скрипт."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:224
 msgid ""
@@ -3012,7 +3012,7 @@ msgid ""
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "Наконец, подключите сигнал \"pressed\" к функции ``_ready()``, используя :"
-"ref:`Object.connect() <class_Object_connect>`."
+"ref:`Object.connect() <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"
@@ -3098,8 +3098,9 @@ msgid ""
 "function."
 msgstr ""
 "Обработка простоя активируется, когда метод :ref:`Node._process() "
-"<class_Node__process>` находится в сценарии. Его можно отключить и включить "
-"с помощью функции :ref:`Node.set_process() <class_Node_set_process>`."
+"<class_Node_method__process>` находится в сценарии. Его можно отключить и "
+"включить с помощью функции :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
@@ -3205,7 +3206,7 @@ msgid ""
 msgstr ""
 "Таким образом, если игрок обнаружен крадущимся на секретной базе, все враги "
 "могут быть уведомлены об этом звуковым сигналом тревоги с помощью функции :"
-"ref:`SceneTree.call_group() <class_SceneTree_call_group>`:"
+"ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 msgid ""
@@ -3223,7 +3224,7 @@ msgid ""
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
 "Также можно получить полный список узлов ``enemies``, вызвав функцию :ref:"
-"`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
+"`SceneTree.get_nodes_in_group() <class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -3256,7 +3257,8 @@ msgstr ""
 "Godot имеет систему уведомлений. Они, как правило, не нужны для сценариев, "
 "так как это слишком низкоуровневые и для большинства из них есть виртуальные "
 "функции. Просто приятно знать, что они существуют. Например, можно добавить :"
-"ref:`Object._notification() <class_Object__notification>` в вашем сценарии:"
+"ref:`Object._notification() <class_Object_method__notification>` в вашем "
+"сценарии:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -3336,8 +3338,8 @@ msgid ""
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
 "Самый безопасный способ удалить узел - использовать функцию :ref:`Node."
-"queue_free() <class_Node_queue_free>`. Это безопасно удаляет узел во время "
-"его бездействия."
+"queue_free() <class_Node_method_queue_free>`. Это безопасно удаляет узел во "
+"время его бездействия."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
@@ -3371,7 +3373,7 @@ msgstr ""
 "Но ``scene`` еще не является узлом. Она упакована в специальный ресурс, "
 "называемый :ref:`PackedScene <class_PackedScene>`. Чтобы создать настоящий "
 "узел, необходимо вызвать функцию :ref:`PackedScene.instance() "
-"<class_PackedScene_instance>`. Это вернет дерево узлов, которое можно "
+"<class_PackedScene_method_instance>`. Это вернет дерево узлов, которое можно "
 "добавить в активную сцену:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
@@ -10274,7 +10276,7 @@ msgid ""
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
 "Для получения экземпляра сцены необходимо использовать метод :ref:"
-"`PackedScene.instance() <class_PackedScene_instance>`."
+"`PackedScene.instance() <class_PackedScene_method_instance>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 #, fuzzy
@@ -10297,10 +10299,10 @@ msgid ""
 "shared between the scene instances."
 msgstr ""
 "Такой подход имеет ряд преимуществ. Поскольку функция :ref:`PackedScene."
-"instance() <class_PackedScene_instance>` работает довольно быстро, вы можете "
-"создавать новых врагов, пули, эффекты и т.д. без необходимости каждый раз "
-"загружать их с диска. Помните, что, как всегда, все изображения, сетки и т."
-"д. делятся между экземплярами сцены."
+"instance() <class_PackedScene_method_instance>` работает довольно быстро, вы "
+"можете создавать новых врагов, пули, эффекты и т.д. без необходимости каждый "
+"раз загружать их с диска. Помните, что, как всегда, все изображения, сетки и "
+"т.д. делятся между экземплярами сцены."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
@@ -10976,7 +10978,7 @@ msgid ""
 msgstr ""
 "Когда узел является частью дерева сцен, :ref:`SceneTree <class_SceneTree>` "
 "синглтон (В следующем уроке будет рассмотрен подробнее.) можно получить, "
-"просто вызвав :ref:`Node.get_tree() <class_Node_get_tree>`."
+"просто вызвав :ref:`Node.get_tree() <class_Node_method_get_tree>`."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
 msgid "Root viewport"
@@ -11120,7 +11122,7 @@ msgid ""
 msgstr ""
 "После загрузки сцены часто бывает что нужно сменить её на другую. Самый "
 "простой способ заключается в использовании функции :ref:`SceneTree."
-"change_scene() <class_SceneTree_change_scene>`:"
+"change_scene() <class_SceneTree_method_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 #, fuzzy
@@ -11132,7 +11134,7 @@ msgstr ""
 "Вместо использования путей к файлам можно использовать готовые ресурсы :ref:"
 "`PackedScene <class_PackedScene>`, используя аналогичную функцию :ref:"
 "`SceneTree.change_scene_to(PackedScene scene) "
-"<class_SceneTree_change_scene_to>`:"
+"<class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 msgid ""
@@ -11314,7 +11316,7 @@ msgid ""
 msgstr ""
 "В данном руководстве будет продемонстрировано создание переключателя сцен с "
 "помощью автозагрузки. В основном для переключения сцены можно использовать "
-"метод :ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` "
+"метод :ref:`SceneTree.change_scene() <class_SceneTree_method_change_scene>` "
 "(подробнее см. :ref:`doc_scene_tree`). Однако, если вам нужно более сложное "
 "поведение при смене сцен, этот метод обеспечивает большую функциональность."
 
@@ -53072,10 +53074,11 @@ msgstr ""
 "всегда у сервера. Все что ниже 1 должно рассматриваться как недействительные "
 "id. Идентификатор локальной системы можно получить с помощью  :ref:"
 "`SceneTree.get_network_unique_id() "
-"<class_SceneTree_get_network_unique_id>`.  Эти идентификаторы будут полезны "
-"в основном для управления лобби и, как правило, должны храниться, поскольку "
-"они идентифицируют подключенные узлы и, следовательно, игроков. Можно также "
-"использовать идентификаторы для отправки сообщений только определенным узлам."
+"<class_SceneTree_method_get_network_unique_id>`.  Эти идентификаторы будут "
+"полезны в основном для управления лобби и, как правило, должны храниться, "
+"поскольку они идентифицируют подключенные узлы и, следовательно, игроков. "
+"Можно также использовать идентификаторы для отправки сообщений только "
+"определенным узлам."
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:135
 msgid "Clients:"
