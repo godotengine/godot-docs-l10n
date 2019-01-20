@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Command line tutorial"
 msgstr "Tutorial de línea de comandos"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:8
-#, fuzzy
 msgid ""
 "Some developers like using the command line extensively. Godot is designed "
 "to be friendly to them, so here are the steps for working entirely from the "
@@ -41,7 +40,6 @@ msgid "Path"
 msgstr "Ruta"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:17
-#, fuzzy
 msgid ""
 "It is recommended that your Godot binary be in your PATH environment "
 "variable, so it can be executed easily from any place by typing ``godot``. "
@@ -109,13 +107,12 @@ msgid "Running the editor"
 msgstr "Ejecutar el editor"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:69
-#, fuzzy
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
 "the command is ignored and the project manager appears."
 msgstr ""
-"Ejecutar el editor se hace ejecutando Godot con el flag ``-e``. Esto debe "
+"El editor se abre ejecutando Godot con el parámetro ``-e``. Esto debe "
 "hacerse desde el directorio del proyecto, o desde un subdirectorio, de lo "
 "contrario el comando se ignora y aparece el gestor de proyectos."
 
@@ -167,16 +164,15 @@ msgid "Debugging"
 msgstr "Depuración"
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:115
-#, fuzzy
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "just fly by. For this, a command line debugger is provided by adding ``-d``. "
 "It works for running either the game or a simple scene."
 msgstr ""
 "Capturar errores en línea de comandos puede ser una tarea difícil porque "
-"simplemente pasan volando. Para esto, se proporciona un depurador de línea "
-"de comandos añadiendo ``-d``. Funciona tanto para ejecutar el juego como "
-"para una escena simple."
+"simplemente pasan uno tras otro. Para esto, se proporciona un depurador de "
+"línea de comandos añadiendo ``-d``. Funciona tanto para ejecutar el juego "
+"como para una escena simple."
 
 #: ../../docs/getting_started/editor/command_line_tutorial.rst:130
 msgid "Exporting"

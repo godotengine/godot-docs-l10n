@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr "Singletons (AutoLoad)"
+msgstr "Singletons (Carregamento Automático)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:7
 msgid "Introduction"
@@ -156,6 +156,8 @@ msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
+"Se a coluna \"Enable\" estiver marcada (default true), então o singleton "
+"pode simplesmente ser acessado diretamente:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 #, fuzzy
@@ -182,10 +184,10 @@ msgid ""
 "this method provides more functionality."
 msgstr ""
 "Este breve tutorial explicará como fazer um switcher de cena usando o "
-"autoload. Para troca de cena simples, o método: ref: `SceneTree.change_scene "
-"() <class_SceneTree_change_scene>` é suficiente (descrito em: ref: "
-"`doc_scene_tree`), então este método é para um comportamento mais complexo "
-"ao alternar entre cenas."
+"autoload. Para troca de cena simples, o método: ref: `SceneTree."
+"change_scene() <class_SceneTree_method_change_scene>` é suficiente (descrito "
+"em: ref: `doc_scene_tree`), então este método é para um comportamento mais "
+"complexo ao alternar entre cenas."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 #, fuzzy
@@ -276,8 +278,8 @@ msgid ""
 msgstr ""
 "Como mencionado anteriormente, queremos evitar a situação em que a cena "
 "atual é deletada enquanto em uso (código de suas funções sendo executado), "
-"então usar :ref:`Object.call_deferred() <class_Object_call_deferred>` é "
-"desejado neste ponto. O resultado é que a execução dos comandos na segunda "
+"então usar :ref:`Object.call_deferred() <class_Object_method_call_deferred>` "
+"é desejado neste ponto. O resultado é que a execução dos comandos na segunda "
 "função acontecerá num momento posterior em que nenhum código da cena atual "
 "esteja rodando."
 

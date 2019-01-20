@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,6 @@ msgstr ""
 "También se pueden utilizar archivos de imagen individuales."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:29
-#, fuzzy
 msgid ""
 "Create a new project and move the above PNG image into the directory. Next, "
 "go into the image's import settings and turn off ``Filter``, keeping it on "
@@ -74,7 +73,7 @@ msgstr ""
 "Crea un proyecto nuevo y mueve la imagen PNG mostrada arriba dentro de la "
 "carpeta. Luego, en la configuración de importación (panel Importar) "
 "desactivar ``Filter`` de las opciones. ``Mipmaps`` debería estar "
-"desactivado, en caso contrario, desactivar esto también."
+"desactivado, en caso contrario, desactiva esto también."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:33
 msgid ""
@@ -88,22 +87,20 @@ msgstr ""
 "como se ve si se intenta editar el recurso manualmente:"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:40
-#, fuzzy
 msgid ""
 "There are enough properties to get by. With some effort, editing this way "
 "can work. But the easiest way to edit and maintain a tileset is exporting it "
 "from a specially-crafted scene!"
 msgstr ""
 "Hay muchas propiedades y, con un poco de esfuerzo, este modo de editar puede "
-"funcionar, pero el modo más simple para mantener tilesets ¡es exportándolos "
-"desde una escena creada especialmente para esto!"
+"funcionar, pero el modo más simple para mantener tilesets es exportándolos "
+"desde una escena creada especialmente para esto."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:45
 msgid "TileSet scene"
 msgstr "Escena TileSet"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:47
-#, fuzzy
 msgid ""
 "Create a new scene with a regular Node or Node2D as root. For each tile you "
 "want to define, add a sprite node as a child. Since tiles here are 50x50, "
@@ -112,10 +109,10 @@ msgid ""
 "still be a bit inaccurate, so use your arrow keys as well."
 msgstr ""
 "Crea una nueva escena con un Node o Node2D como raíz. Agrega un sprite por "
-"cada tile que quieras definir, como los tiles quií son de 50x50, deberías "
+"cada tile que quieras definir, como los tiles quí son de 50x50, deberías "
 "activar la rejilla (``Vista -> Mostrar rejilla``) y activa el fijado (botón "
-"``Usar Fijado`` o tecla ``S``). Mover tiles con el mouse puede seguir siendo "
-"poco preciso así que también conviene usar las flechas del teclado."
+"``Usar Fijado`` o tecla ``S``). Mover tiles con el mouse puede ser poco "
+"preciso así que también conviene usar las flechas del teclado."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:53
 msgid ""
@@ -128,14 +125,13 @@ msgstr ""
 "uniforme) del sprite para ajustar qué parte de la textura será utilizada."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:57
-#, fuzzy
 msgid ""
 "Finally, make sure to name your sprite node correctly. This will ensure "
 "that, in subsequent edits to the tileset (for example, if you've added "
 "collision, changed the region, etc), the tile will still be **identified "
 "correctly and updated**. This name should be unique."
 msgstr ""
-"Finalmente, cerciórate de nombrar tus nodos sprites correctamente. Para "
+"Finalmente, cerciórate de nombrar tus nodos Sprite correctamente. Para "
 "asegurarse de que en futuras ediciones (por ejemplo, agregando colisiones, "
 "cambiando regiones de imagen, etc.), el tile seguirá siendo **identificado y "
 "actualizado correctamente**. El nombre debe ser único."
@@ -177,7 +173,6 @@ msgstr ""
 "de editar."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:83
-#, fuzzy
 msgid ""
 "Finally, edit the polygon; this will give the tile a collision and fix the "
 "warning icon next to the CollisionPolygon node. **Remember to use snap!** "
@@ -273,7 +268,6 @@ msgid "Painting your world"
 msgstr "Pintando tu mundo"
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:139
-#, fuzzy
 msgid ""
 "With all set, make sure the TileMap node is selected. A red grid will appear "
 "on the screen, allowing you to paint on it with the selected tile on the "
@@ -281,7 +275,7 @@ msgid ""
 msgstr ""
 "Con todo listo, asegúrate que el nodo TileMap está seleccionado. Una rejilla "
 "roja aparecerá en pantalla, permitiendo pintar en esta con el tile "
-"seleccionado de la palera a la izquierda."
+"seleccionado de la paleta a la izquierda."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:145
 msgid ""
@@ -357,14 +351,13 @@ msgstr ""
 "tileset (ver :ref:`doc_import_images` tutorial de canalización de recursos)."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:178
-#, fuzzy
 msgid ""
 "Enable pixel snap (Set ``Project > Project Settings > Rendering > Quality > "
 "2d > Use Pixel Snap`` to true; you can also search for ``Pixel Snap``)."
 msgstr ""
-"Activa pixel snap, se encuentra en ``Project > Project Settings > Rendering "
-"> Quality > 2d > Use Pixel Snap``, también se puede escribir ``Pixel Snap`` "
-"en la barra de búsqueda para localizarlo rápidamente."
+"Activa pixel snap, se encuentra en ``Proyecto > Ajustes del proyecto > "
+"Rendering > Quality > 2d > Use Pixel Snap``, también se puede escribir "
+"``Pixel Snap`` en la barra de búsqueda para localizarlo rápidamente."
 
 #: ../../docs/tutorials/2d/using_tilemaps.rst:180
 #, fuzzy

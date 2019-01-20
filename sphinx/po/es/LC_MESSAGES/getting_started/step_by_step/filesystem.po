@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "File systems are yet another hot topic in engine development. The file "
 "system manages how the assets are stored and how they are accessed. A well-"
@@ -40,7 +39,6 @@ msgstr ""
 "mientras colaboran entre sí."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:14
-#, fuzzy
 msgid ""
 "Initial versions of the Godot engine (and previous iterations before it was "
 "named Godot) used a database. Assets were stored in it and assigned an ID. "
@@ -50,10 +48,10 @@ msgid ""
 msgstr ""
 "Las versiones iniciales del motor Godot (e iteraciones previas antes de que "
 "se llamara Godot) usaban una base de datos. En ésta se almacenaban los "
-"activos y se les asignaba un ID. También se probaron otros enfoques, como "
-"bases de datos locales, archivos con metadatos, etc. Al final el enfoque más "
-"simple ganó y ahora Godot almacena todos los recursos como archivos en el "
-"sistema de archivos."
+"recursos y se les asignaba un identificador. También se probaron otros "
+"enfoques, como bases de datos locales, archivos con metadatos, etc. Al final "
+"el enfoque más simple ganó y ahora Godot almacena todos los recursos como "
+"archivos en el sistema de archivos."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:21
 msgid "Implementation"
@@ -78,7 +76,6 @@ msgstr ""
 "menudo se agrupa junto con las texturas de fuente."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
-#, fuzzy
 msgid ""
 "In general, the Godot file system avoids using metadata files. The reason "
 "for this is simple, existing asset managers and VCSs are simply much better "
@@ -87,9 +84,9 @@ msgid ""
 msgstr ""
 "En general, el sistema de archivos Godot evita el uso de archivos de "
 "metadatos. La razón de esto es simple, los administradores de recursos y "
-"VCSs existentes son simplemente mucho mejor que cualquier cosa que podamos "
-"implementar, así que Godot intenta lo mejor para jugar con SVN, Git, "
-"Mercurial, Perforce, etc."
+"VCSs (sistemas de control de versiones) existentes son simplemente mucho "
+"mejor que cualquier cosa que podamos implementar, así que Godot intenta "
+"hacer lo mejor para funcionar bien con SVN, Git, Mercurial, Perforce, etc."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:35
 msgid "Example of a file system contents:"
@@ -100,7 +97,6 @@ msgid "project.godot"
 msgstr "project.godot"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:48
-#, fuzzy
 msgid ""
 "The project.godot file is the project description file, and it is always "
 "found at the root of the project. In fact, its location defines where the "
@@ -237,7 +233,6 @@ msgstr ""
 "ir por el camino difícil?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -248,20 +243,18 @@ msgid ""
 msgstr ""
 "La segunda es que bajo Windows y macOS los nombres de archivos y rutas no "
 "distinguen entre mayúsculas y minúsculas. Si un desarrollador que trabaja en "
-"un sistema de archivos host insensible a mayúsculas y minúsculas guarda un "
+"un sistema de archivos insensible a mayúsculas y minúsculas guarda un "
 "recurso como \"myfile.PNG\", pero luego se refiere a él como \"myfile.png\", "
 "funcionará bien en su plataforma, pero no en otras plataformas, como Linux, "
 "Android, etc. Esto también puede aplicarse a los binarios exportados, que "
 "utilizan un paquete comprimido para almacenar todos los archivos."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot! One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
-"¡Se recomienda que su equipo defina claramente una convención de "
-"nomenclatura para los archivos cuando trabaje con Godot! Una convención "
-"simple a prueba de tontos es permitir solamente nombres de archivos y rutas "
-"en minúsculas."
+"Se recomienda que su equipo defina claramente una convención de nomenclatura "
+"para los archivos cuando trabaje con Godot. Una convención simple a prueba "
+"de tontos es permitir solamente nombres de archivos y rutas en minúsculas."

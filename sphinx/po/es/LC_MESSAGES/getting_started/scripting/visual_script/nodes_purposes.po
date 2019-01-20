@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:4
-#, fuzzy
 msgid "Nodes and terminology"
 msgstr "Nodos y terminología"
 
@@ -43,7 +42,6 @@ msgstr ""
 "refiriendo a un *Nodo de visual script* si no se indica lo contrario."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:15
-#, fuzzy
 msgid "Node properties"
 msgstr "Propiedades de los nodos"
 
@@ -68,9 +66,8 @@ msgstr ""
 "cualquier nodo y edita sus propiedades en el *Inspector*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:25
-#, fuzzy
 msgid "Ports and connections"
-msgstr "Puertos y Conexiones"
+msgstr "Puertos y conexiones"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:27
 msgid ""
@@ -96,7 +93,6 @@ msgstr ""
 "*Datos*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:40
-#, fuzzy
 msgid ""
 "*Sequence Ports* indicate the order in which operations are executed. "
 "Typically when a *Node* is done processing, it will go to the next node from "
@@ -106,13 +102,13 @@ msgid ""
 "following the white lines. Not every *Node* has *Sequence Ports*. In fact, "
 "most do not."
 msgstr ""
-"Los *Puertos de Secuencia* indican el orden en el que se ejecutan las "
-"operaciones. Típicamente cuando un *Nodo* es procesado, irá al siguiente "
-"nodo desde uno de los puertos a su derecha. Si no hay nada conectado, la "
-"función puede terminar, o se puede intentar otra salida *Puerto de "
-"secuencia* (esto depende del nodo). Gracias a esto, puede seguir el flujo "
-"lógico dentro de una función siguiendo las líneas blancas. No todos los "
-"*Nodos* tienen *Puertos de Secuencia*. De hecho, la mayoría no lo hace."
+"Los *Puertos de Secuencia* (sequence ports) indican el orden en el que se "
+"ejecutan las operaciones. Típicamente cuando un *Nodo* es procesado, irá al "
+"siguiente nodo desde uno de los puertos a su derecha. Si no hay nada "
+"conectado, la función puede terminar, o se puede intentar otra salida "
+"*Puerto de secuencia* (esto depende del nodo). Gracias a esto, puede seguir "
+"el flujo lógico dentro de una función siguiendo las líneas blancas. No todos "
+"los *Nodos* tienen *Puertos de Secuencia*. De hecho, la mayoría no los posee."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:46
 msgid ""
@@ -163,14 +159,13 @@ msgstr ""
 "*Salida*."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:71
-#, fuzzy
 msgid ""
 "This may seem strange at first, but it happens because *Data Ports* are 1:N "
 "(A single output port can connect to many inputs), while *Sequence Ports* "
 "are N:1 (Many sequence outputs can be connected to a single input)."
 msgstr ""
 "Esto puede parecer extraño al principio, pero es así porque los *Puertos de "
-"DAtos* son 1:N (Una salida única puede conectarse a muchas entradas), "
+"Datos* son 1:N (una salida única puede conectarse a muchas entradas), "
 "mientras que los *Puertos de Secuencia* son N:1 (Muchas salidas pueden "
 "conectarse a una única entrada)."
 
@@ -189,9 +184,8 @@ msgid "While, for data, a contextual set/get/call menu will open:"
 msgstr "Mientras que, para datos, se abrirá el menú contextual set/get/call:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:87
-#, fuzzy
 msgid "Adding nodes"
-msgstr "Agregando Nodos"
+msgstr "Agregando nodos"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:89
 msgid ""
@@ -204,9 +198,8 @@ msgstr ""
 "tratados los nodos más comunes."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:94
-#, fuzzy
 msgid "Accessing scene nodes"
-msgstr "Accediendo a Nodos de la Escena"
+msgstr "Accediendo a nodos de la escena"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:96
 msgid ""
@@ -245,9 +238,8 @@ msgstr ""
 "una advertencia."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:113
-#, fuzzy
 msgid "Accessing scene node properties"
-msgstr "Accediendo a propiedades de Nodos de la Escena"
+msgstr "Accediendo a propiedades de nodos de la escena"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:115
 msgid ""
@@ -309,7 +301,6 @@ msgid "Right-clicking the variable allows you to configure its properties:"
 msgstr "Clic derecho en la variable permite configurar sus propiedades:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:147
-#, fuzzy
 msgid ""
 "As it can be seen above, the type and initial value of the variable can be "
 "changed, as well as some property hints. Ticking the \"Export\" option makes "
@@ -317,10 +308,10 @@ msgid ""
 "makes it available to other scripts via the method described in the previous "
 "step."
 msgstr ""
-"Como puede verse, el tipo y valor iniciales e la variable pueden ser "
-"cambiados, así como algunos hints de propiedades. Seleccionando la opción "
-"\"Export\" se hace que la variable sea visible en el Inspector  cuando se "
-"selecciona el nodo. Esto hace también la hace disponible a otros scripts "
+"Como puede verse, el tipo y valor iniciales de la variable pueden ser "
+"cambiados, así como algunos hints (tipos) de propiedades. Seleccionando la "
+"opción \"Export\" se hace que la variable sea visible en el Inspector cuando "
+"se selecciona el nodo. Esto también la hace disponible a otros scripts "
 "mediante el método descrito en el paso anterior."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:153
@@ -352,7 +343,6 @@ msgstr ""
 "anterior, pero para la sección *Signals*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:171
-#, fuzzy
 msgid ""
 "A signal can also be edited via the right-click menu to customize its "
 "arguments:"
@@ -361,7 +351,6 @@ msgstr ""
 "personalizar sus argumentos:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:176
-#, fuzzy
 msgid ""
 "The signal you have created will appear in the Inspector, along with the "
 "built-in node signals. This allows you to connect it from another script "
@@ -369,7 +358,7 @@ msgid ""
 msgstr ""
 "La señal que has creado aparecerá en el Inspector junto con las señales de "
 "nodo incorporadas. Esto permite conectarlo desde otro script procedente de "
-"otro *Nodo de Escena*:"
+"otro *Nodo de la Escena*:"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:181
 msgid "Finally, to emit the signal, simply drag it to the canvas:"
@@ -385,7 +374,6 @@ msgstr ""
 "venir de un puerto Sequence."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:190
-#, fuzzy
 msgid "Adding more nodes"
 msgstr "Agregando más nodos"
 
@@ -441,7 +429,6 @@ msgstr ""
 "tiempo son enteros o flotantes."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:219
-#, fuzzy
 msgid ""
 "The first one is \"Constant\", which allows you to select any value of any "
 "type as constant, from an integer (42) to a String (\"Hello!\"). In general, "
@@ -465,13 +452,12 @@ msgstr ""
 "para referirse a nombres clave, botones de joystick o ratón, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:224
-#, fuzzy
 msgid ""
 "The third one is MathConstant, which provides typical mathematical "
 "constants, such as PI, E, etc."
 msgstr ""
 "El tercero es MathConstant, el cual provee constantes típicas en matemáticas "
-"como PI, E, etc."
+"como PI, e, etc."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:228
 msgid "Data"
@@ -515,7 +501,6 @@ msgid "Engine Singleton"
 msgstr "Engine Singleton"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:251
-#, fuzzy
 msgid ""
 "Engine singletons are global interfaces (meaning they can be accessed "
 "without a reference; unlike Scene Nodes, they are always available). They "
@@ -592,7 +577,6 @@ msgid "SceneTree"
 msgstr "Árbol de Escenas"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:290
-#, fuzzy
 msgid ""
 "This node is similar to the Singleton node because it references the "
 "SceneTree, which contains the active scene. SceneTree, however, only works "
@@ -602,10 +586,9 @@ msgstr ""
 "Este nodo es similar al nodo Singleton porque hace referencia al SceneTree, "
 "que contiene la escena activa. El SceneTree, sin embargo, sólo funciona "
 "cuando el nodo se encuentra activo en la escena, de lo contrario, el acceso "
-"a él retornará como un error."
+"a él devolverá un error."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:294
-#, fuzzy
 msgid ""
 "SceneTree allows for many low-level things, like setting stretch options, "
 "calling groups, make timers, or even load another scene. It's a good class "
@@ -804,17 +787,16 @@ msgid "Built-In"
 msgstr "Funciones propias"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:400
-#, fuzzy
 msgid ""
 "There is a list of built-in helpers. The list is almost identical to the one "
 "from GDScript (@TODO, link to gdscript methods?). Most of them are "
 "mathematical functions, but others can be useful helpers. Make sure to take "
 "a look at the list at some point."
 msgstr ""
-"Hay una lista de helpers internos. La lista es casi idéntica a la de "
-"GDScript (@TODO, enlace a métodos gdscript?). La mayoría de ellos son "
-"funciones matemáticas, pero otros pueden ser útiles como ayuda. Asegúrate de "
-"echar un vistazo a la lista en algún momento."
+"Hay una lista de utilidades integradas. La lista es casi idéntica a la de "
+"GDScript. La mayoría de ellos son funciones matemáticas, pero otras pueden "
+"ser útiles para facilitar operaciones comunes. Asegúrate de echar un vistazo "
+"a la lista en algún momento."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:406
 msgid "By Type"
@@ -946,7 +928,6 @@ msgid "Operators"
 msgstr "Operadores"
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:474
-#, fuzzy
 msgid ""
 "These are mostly generic operators, such as addition, multiplication, "
 "comparison, etc. By default, these mostly accept any datatype (and will "
@@ -958,8 +939,8 @@ msgstr ""
 "comparaciones, etc. De forma predeterminada, aceptan cualquier tipo de datos "
 "(y se producirá un error en tiempo de ejecución si los tipos introducidos no "
 "coinciden con los del operador). Siempre se recomienda configurar el tipo "
-"correcto para que los operadores detecten los errores más rápidamente y "
-"faciliten la lectura del gráfico."
+"correcto para que los operadores detecten los errores rápidamente y "
+"faciliten la lectura del grafo."
 
 #: ../../docs/getting_started/scripting/visual_script/nodes_purposes.rst:483
 msgid "Expression Node"

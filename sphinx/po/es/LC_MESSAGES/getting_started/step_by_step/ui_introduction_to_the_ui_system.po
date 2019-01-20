@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,9 +110,8 @@ msgid "Bounding rectangle"
 msgstr "Rectangulo delimitador"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:41
-#, fuzzy
 msgid "Focus and focus neighbor"
-msgstr "Focus and focus neighbour"
+msgstr "Foco y vecinos (focus neighbour)"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:42
 msgid "Size flags"
@@ -191,15 +190,14 @@ msgid "TextureRect"
 msgstr "TextureRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:74
-#, fuzzy
 msgid ""
 "**TextureRect** displays a texture or image inside a UI. It seems similar to "
 "the Sprite node, but it offers multiple scaling modes. Set the Stretch Mode "
 "property to change its behavior:"
 msgstr ""
 "**TextureRect** muestra una textura o imagen dentro de una UI. Parece "
-"similar al nodo Sprite pero ofrece múltiples modos de escalado. Establece la "
-"propiedad Stretch Mode para cambiar su comportamiento:"
+"similar al nodo Sprite pero ofrece múltiples modos de escalado. Cambia la "
+"propiedad Stretch Mode para alterar su comportamiento:"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:78
 msgid ""
@@ -252,7 +250,6 @@ msgstr ""
 "límites del nodo"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:87
-#, fuzzy
 msgid ""
 "As with Sprite nodes, you can modulate the TextureRect's color. Click the "
 "``Modulate`` property and use the color picker."
@@ -360,7 +357,6 @@ msgid "Label"
 msgstr "Label"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:143
-#, fuzzy
 msgid ""
 "**Label** prints text to the screen. You'll find all its properties in the "
 "Label section, in the Inspector. Write the text in the ``Text`` property, "
@@ -368,12 +364,11 @@ msgid ""
 "is off, you won't be able to scale the node. You can align the text "
 "horizontally and vertically with Align and Valign, respectively."
 msgstr ""
-"**Label** imprime el texto en la pantalla. Encontrará todas sus propiedades "
-"en la sección Label, en el Inspector. Escribe el texto en la propiedad "
-"``Text`` y selecciona Autowrap si quieres que respete el tamaño del cuadro "
-"de texto. Si Autowrap está desactivado, no podrá escalar el nodo. Puede "
-"alinear el texto horizontal y verticalmente con Align y Valign "
-"respectivamente."
+"**Label** imprime texto en la pantalla. Encontrarás todas sus propiedades en "
+"la sección Label, en el Inspector. Escribe el texto en la propiedad ``Text`` "
+"y selecciona Autowrap si quieres que respete el tamaño del cuadro de texto. "
+"Si Autowrap está desactivado, no podrás escalar el nodo. Puedes alinear el "
+"texto horizontal y verticalmente con Align y Valign respectivamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:152
 msgid "Picture of a Label"
@@ -384,7 +379,6 @@ msgid "NinePatchRect"
 msgstr "NinePatchRect"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:157
-#, fuzzy
 msgid ""
 "**NinePatchRect** takes a texture split in 3 rows and 3 columns. The center "
 "and the sides tile when you scale the texture, but it never scales the "
@@ -392,7 +386,7 @@ msgid ""
 "for your UI."
 msgstr ""
 "**NinePatchRect** toma una textura dividida en 3 filas y 3 columnas. Alinea "
-"los centros y los lados de la textura, pero mantiene el tamaño original de "
+"los centros y los lados de la textura pero mantiene el tamaño original de "
 "las esquinas. Es útil para construir paneles, cuadros de diálogo y fondos "
 "escalables para su UI."
 
@@ -428,7 +422,6 @@ msgstr ""
 "colocar y redimensionar un elemento de UI dentro de su padre."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:174
-#, fuzzy
 msgid ""
 "The two approaches are not always compatible. Because a container controls "
 "its children, you cannot use the layout menu on them. Each container has a "
@@ -438,12 +431,12 @@ msgid ""
 "cleaner hierarchies, but it's harder to arrange items in a row, column, "
 "grid, etc."
 msgstr ""
-"Los dos enfoques no son siempre compatibles. Dado que un container controla "
+"Los dos enfoques no son siempre compatibles. Dado que un Container controla "
 "a sus hijos, no se puede utilizar el menú de disposición en ellos. Cada "
-"container tiene un efecto específico, por lo que puede ser necesario anidar "
+"Container tiene un efecto específico, por lo que puede ser necesario anidar "
 "varios de ellos para obtener una interfaz de trabajo. Con el enfoque de "
 "disposición se trabaja de abajo hacia arriba, en los hijos. Como no inserta "
-"containers adicionales en la escena, puede hacer que las jerarquías sean más "
+"Containers adicionales en la escena, puede hacer que las jerarquías sean más "
 "limpias, pero es más difícil organizar los elementos en una fila, columna, "
 "cuadrícula, etc."
 
@@ -633,17 +626,16 @@ msgid "Arrange control nodes automatically with containers"
 msgstr "Disposición automática de los nodos de control con contenedores"
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:275
-#, fuzzy
 msgid ""
 "Containers automatically arrange all children Control nodes including other "
 "containers in rows, columns, and more. Use them to add padding around your "
 "interface or center nodes in their bounding rectangles. All built-in "
 "containers update in the editor, so you can see the effect instantly."
 msgstr ""
-"Los containers organizan automáticamente todos los nodos de Control de los "
+"Los Containers organizan automáticamente todos los nodos de Control de los "
 "hijos, incluyendo otros contenedores en filas, columnas y más. Utilízalos "
 "para añadir relleno alrededor de tu interfaz o nodos centrales en sus "
-"rectángulos delimitadores. Todos los containers incorporados se actualizan "
+"rectángulos delimitadores. Todos los Containers incorporados se actualizan "
 "en el editor para que pueda ver el efecto instantáneamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:281
@@ -794,12 +786,11 @@ msgstr ""
 "automáticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_introduction_to_the_ui_system.rst:350
-#, fuzzy
 msgid ""
 "Godot's UI system is complex, and has a lot more to offer. To learn how to "
 "design more advanced interfaces, head to the :ref:`GUI section <toc-learn-"
 "features-gui>` of the docs."
 msgstr ""
-"El sistema de UI de Godot es complejo, y tiene mucho más que ofrecer. Para "
-"aprender a diseñar una interfaz más avanzada, consulta la sección :ref:`GUI "
+"El sistema de UI de Godot es complejo y tiene mucho más que ofrecer. Para "
+"aprender a diseñar interfaces más avanzada, consulta la sección :ref:`GUI "
 "section <toc-learn-features-gui>` de la documentación."

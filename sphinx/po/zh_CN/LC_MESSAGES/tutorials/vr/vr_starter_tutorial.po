@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,9 +52,10 @@ msgstr ""
 "在VR中，1个单位通常被认为是1米。 如果按照该标准设计资源，可以省去很多麻烦。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:18
+#, fuzzy
 msgid ""
 "In your 3D model program, see if there is a way to measure and use real "
-"world distances. In Blender you can use the MeasureIt add-on, in Maya you "
+"world distances. In Blender, you can use the MeasureIt add-on; in Maya, you "
 "can use the Measure Tool."
 msgstr ""
 "在3D模型程序中，查看是否有测量和使用真实世界距离的方法。 在Blender中，您可以"
@@ -92,13 +93,15 @@ msgid ""
 msgstr "如何制作用于移动游戏角色的定向移动系统(移动)。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
+#, fuzzy
 msgid ""
-"How to make a :ref:`RigidBody <class_RigidBody>` based pick up and drop "
+"How to make a :ref:`RigidBody <class_RigidBody>`-based pick up and drop "
 "system."
 msgstr "如何制作一个 :ref:`RigidBody <class_RigidBody>` 基于拾取和放下系统。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:28
-msgid "How to make various items that can be used in VR"
+#, fuzzy
+msgid "How to make various items that can be used in VR."
 msgstr "如何制作可在VR中使用的各种物品"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:30
@@ -113,20 +116,22 @@ msgstr ""
 "列。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:35
+#, fuzzy
 msgid ""
-"This tutorial assumes you know have experience working with the Godot "
-"editor, have basic programming experience in GDScript, and have basic 3D "
-"game development experience."
+"This tutorial assumes you know how to and have experience working with the "
+"Godot editor, have basic programming experience in GDScript, and have basic "
+"3D game development experience."
 msgstr ""
 "本教程假设您具有使用Godot编辑器的经验，具有GDScript的基本编程经验，并具有基本"
 "的3D游戏开发经验。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:38
+#, fuzzy
 msgid ""
-"Also, it is assumed you have both a OpenVR-ready headset and two OpenVR-"
+"Also, it is assumed you have both an OpenVR-ready headset and two OpenVR-"
 "ready controllers! This tutorial was written using a Windows Mixed Reality "
 "headset on Windows 10, so the tutorial is written to work on that headset. "
-"You may need to adjust the code to work with other VR headsets such as the "
+"You may need to adjust the code to work with other VR headsets, such as the "
 "Oculus Rift or HTC Vive."
 msgstr ""
 "此外，假设您有一个支持OpenVR的耳机和两个支持OpenVR的控制器！ 本教程是在"
@@ -219,10 +224,12 @@ msgid "Launch Godot and open up the project included in the starter assets."
 msgstr "启动Godot并打开启动资源中包含的项目。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:65
+#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
-"in this tutorial, they will make the tutorial much easier to follow as there "
-"are several premade scenes we will be using throughout the tutorial series."
+"in this tutorial, they will make the tutorial much easier to follow, as "
+"there are several premade scenes we will be using throughout the tutorial "
+"series."
 msgstr ""
 "虽然这些资源不一定需要使用本教程中提供的脚本，但它们将使教程更容易理解，因为"
 "我们将在整个教程系列中使用几个预制场景。"
@@ -253,8 +260,9 @@ msgstr ""
 "`MeshInstance <class_MeshInstance>` 节点。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:76
+#, fuzzy
 msgid ""
-"The other thing to notice before we jump into writing the code is how the :"
+"The other thing to notice, before we jump into writing the code, is how the :"
 "ref:`ARVROrigin <class_ARVROrigin>` node works. How it works is kind of hard "
 "to explain, especially if you have never used VR before, but here is the "
 "gist of it: The :ref:`ARVROrigin <class_ARVROrigin>` node is the center "
@@ -298,9 +306,10 @@ msgstr ""
 "们更适合这个世界。 如前所述，保持比例相对稳定非常重要！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:88
+#, fuzzy
 msgid ""
 "Another thing to notice here is how we have everything set up under the :ref:"
-"`ARVROrigin <class_ARVROrigin>` node. The player camera is a :ref:"
+"`ARVROrigin <class_ARVROrigin>` node. The player camera is an :ref:"
 "`ARVRCamera <class_ARVRCamera>` that represents the player's head in the "
 "game. The :ref:`ARVRCamera <class_ARVRCamera>` will be offset by the "
 "player's height, and if there is room tracking, then the camera can move "
@@ -329,11 +338,12 @@ msgstr ""
 "ref:`ARVROrigin <class_ARVROrigin>` 是因为我们希望它能够轻松访问VR控制器。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:96
+#, fuzzy
 msgid ""
 "The final thing to note is that there are two :ref:`ARVRController "
 "<class_ARVRController>` nodes, and these will represent the left and right "
-"controllers in 3D space. A :ref:`ARVRController <class_ARVRController>` with "
-"an ID of 1 is the left hand, while a :ref:`ARVRController "
+"controllers in 3D space. An :ref:`ARVRController <class_ARVRController>` "
+"with an ID of 1 is the left hand, while an :ref:`ARVRController "
 "<class_ARVRController>` with an ID of 2 is the right hand."
 msgstr ""
 "最后要注意的是有两个 :ref:`ARVRController <class_ARVRController>` 节点，这些"
@@ -346,8 +356,9 @@ msgid "Starting VR"
 msgstr "启动VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:102
+#, fuzzy
 msgid ""
-"First, let's get the VR up and going! While ``Game.tscn`` is open, select "
+"Firstly, let's get the VR up and going! While ``Game.tscn`` is open, select "
 "the ``Game`` node and make a new script called ``Game.gd``. Add the "
 "following code:"
 msgstr ""
@@ -371,20 +382,22 @@ msgid "With that done, let's quickly go over what this script does."
 msgstr "完成后，让我们快速浏览一下这个脚本的功能。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:125
+#, fuzzy
 msgid ""
-"First, we find a VR interface from the ARVR server. We do this because by "
-"default Godot does not include any VR interfaces, but rather exposes a API "
+"Firstly, we find a VR interface from the ARVR server. We do this because by "
+"default Godot does not include any VR interfaces, but rather exposes an API "
 "so anyone can make AR/VR interfaces with GDNative/C++. Next, we check to see "
-"if a OpenVR interface was found, and then we initialize it."
+"if an OpenVR interface was found, and then we initialize it."
 msgstr ""
 "首先，我们从ARVR服务器找到VR界面。 我们这样做是因为默认情况下，Godot不包含任"
 "何VR界面，而是公开API，因此任何人都可以使用GDNative / C++制作AR / VR界面。 接"
 "下来，我们检查是否找到了OpenVR界面，然后我们初始化它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:128
+#, fuzzy
 msgid ""
 "Assuming nothing went wrong with initializing, we then turn the main :ref:"
-"`Viewport <class_Viewport>` into a AR/VR viewport, by setting ``arvr`` to "
+"`Viewport <class_Viewport>` into an AR/VR viewport, by setting ``arvr`` to "
 "``true``. We also set HDR to ``false``, since you cannot use HDR in OpenVR."
 msgstr ""
 "假设初始化没有出错，我们将main :ref:`Viewport <class_Viewport>` 转换为AR / VR"
@@ -392,11 +405,12 @@ msgstr ""
 "OpenVR中使用HDR。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:131
+#, fuzzy
 msgid ""
-"Then we disable V-Sync and set the target FPS to 90 frames per second. Most "
-"VR headsets run at 90 Hz, and since the game will both display on the VR "
-"headset and on the computer's monitor, we want to disable V-Sync and set the "
-"target FPS manually so the computer's monitor does not drag the VR display "
+"Then, we disable V-Sync and set the target FPS to 90 frames per second. Most "
+"VR headsets run at 90 Hz, and since the game will display on both the VR "
+"headset and the computer's monitor, we want to disable V-Sync and set the "
+"target FPS manually, so the computer's monitor does not drag the VR display "
 "down to 60 FPS."
 msgstr ""
 "然后我们禁用V-Sync并将目标FPS设置为每秒90帧。 大多数VR头戴式耳机以90 Hz的频率"
@@ -427,9 +441,10 @@ msgid "Coding the controllers"
 msgstr "编码控制器"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:145
+#, fuzzy
 msgid ""
 "While perhaps interesting if we were making a VR film, we really want to do "
-"more than stand around and look. Currently we cannot move outside of the "
+"more than stand around and look. Currently, we cannot move outside of the "
 "room tracking boundaries (assuming your VR headset has room tracking) and we "
 "cannot interact with anything! Let's change that!"
 msgstr ""
@@ -449,19 +464,21 @@ msgstr ""
 "<class_RigidBody>` 节点。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:151
+#, fuzzy
 msgid ""
 "Open either ``Left_Controller.tscn`` or ``Right_Controller.tscn``. Feel free "
-"to look at how the scene is set up; there is only a couple things of note to "
-"point out."
+"to look at how the scene is set up; there are only a couple things of note "
+"to point out."
 msgstr ""
 "打开 ``Left_Controller.tscn`` 或``Right_Controller.tscn``。 随意看看场景是如"
 "何设置的; 只有几点值得注意。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:153
+#, fuzzy
 msgid ""
-"First, notice how there is a couple :ref:`Raycast <class_Raycast>` nodes. We "
-"will be using one :ref:`Raycast <class_Raycast>` to teleport around the game "
-"world (``Raycast``) and we will use the other for picking up objects "
+"Firstly, notice how there are a couple :ref:`Raycast <class_Raycast>` nodes. "
+"We will be using one :ref:`Raycast <class_Raycast>` to teleport around the "
+"game world (``Raycast``) and we will use the other for picking up objects "
 "(``GrabCast``) if the player is using :ref:`Raycast <class_Raycast>` nodes "
 "to pick up objects."
 msgstr ""
@@ -563,13 +580,15 @@ msgid ""
 msgstr "``hand_mesh``:手形网格，用于表示游戏角色手上没有任何东西时的手牌。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:426
+#, fuzzy
 msgid ""
-"``teleport_pos``: The position the teleport :ref:`Raycast <class_Raycast>` "
-"is aimed at."
+"``teleport_pos``: The position at which the teleport :ref:`Raycast "
+"<class_Raycast>` is aimed."
 msgstr "``teleport_pos``:传送的位置 :ref:`Raycast <class_Raycast>` 的目标是。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:427
-msgid "``teleport_mesh``: The meshed used to represent the teleport position."
+#, fuzzy
+msgid "``teleport_mesh``: The mesh used to represent the teleport position."
 msgstr "``teleport_mesh``:用于表示传送位置的网格。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:428
@@ -611,9 +630,10 @@ msgid "Next, let's go through ``_ready``."
 msgstr "接下来，让我们通过 ``_ready`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:438
+#, fuzzy
 msgid ""
-"First we get the teleport :ref:`Raycast <class_Raycast>` node and assign it "
-"to ``teleport_raycast``."
+"Firstly, we get the teleport :ref:`Raycast <class_Raycast>` node and assign "
+"it to ``teleport_raycast``."
 msgstr ""
 "首先我们得到teleport :ref:`Raycast <class_Raycast>` 节点并将其分配给 "
 "``teleport_raycast`` 。"
@@ -663,8 +683,9 @@ msgid "Now let's go through ``_physics_process``."
 msgstr "现在让我们来看看`_physics_process``。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:454
+#, fuzzy
 msgid ""
-"First, we check to see if the teleportation button is down or not. If the "
+"Firstly, we check to see if the teleportation button is down or not. If the "
 "teleportation button is down, we then force the teleportation :ref:`Raycast "
 "<class_Raycast>` to update, which will give us frame perfect collision "
 "detection. We then check to see if the :ref:`Raycast <class_Raycast>` is "
@@ -675,10 +696,11 @@ msgstr ""
 "ref:`Raycast <class_Raycast>` 是否与任何东西发生碰撞。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:457
+#, fuzzy
 msgid ""
 "Next, we check to see if the collision body the :ref:`Raycast "
 "<class_Raycast>` is colliding with is a :ref:`StaticBody "
-"<class_StaticBody>`. We do this to ensures the player can only teleport on :"
+"<class_StaticBody>`. We do this to ensure the player can only teleport on :"
 "ref:`StaticBody <class_StaticBody>` nodes. We then check to see if the ``Y`` "
 "value returned by the :ref:`Raycast <class_Raycast>`'s "
 "``get_collision_normal`` function is more than ``0.85``, which is mostly "
@@ -702,12 +724,13 @@ msgstr ""
 "``teleport_pos`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:464
+#, fuzzy
 msgid ""
 "The next thing we check is to see if the :ref:`ARVRController "
 "<class_ARVRController>` is active or not. If the :ref:`ARVRController "
 "<class_ARVRController>` is active, then that means there is a controller and "
 "it is being tracked. If the controller is active, we then reset "
-"``controller_velocity`` to a empty :ref:`Vector3 <class_Vector3>`."
+"``controller_velocity`` to an empty :ref:`Vector3 <class_Vector3>`."
 msgstr ""
 "接下来我们要检查的是 :ref:`ARVRController <class_ARVRController>` 是否处于活"
 "动状态。 如果 :ref:`ARVRController <class_ARVRController>` 处于活动状态，则表"
@@ -728,10 +751,11 @@ msgstr ""
 "数字，这是不现实的。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:470
+#, fuzzy
 msgid ""
-"Next we calculate the velocity from the position the controller currently "
-"is, from the position the controller was at. We can use this difference in "
-"position to help track the controller's velocity."
+"Next, we calculate the velocity from the position where the controller is "
+"currently, from the position the controller was at. We can use this "
+"difference in position to help track the controller's velocity."
 msgstr ""
 "接下来，我们从控制器当前所处的位置，从控制器所处的位置计算速度。 我们可以使用"
 "这种位置差异来帮助追踪控制器的速度。"
@@ -748,21 +772,23 @@ msgstr ""
 "位置，这样我们就可以在速度下一个物理帧的计算中使用它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:476
+#, fuzzy
 msgid ""
 "The way we are calculating velocity is not perfect by any means, since it "
-"relies on a consistent amount of frames per second. Ideally we would be able "
-"to find the velocity directly from the VR controller but currently in OpenVR "
-"there is not way to access the controller's velocity. We can get pretty "
-"close to the real velocity by comparing positions between frames though, and "
-"this will work just fine for this project."
+"relies on a consistent amount of frames per second. Ideally, we would be "
+"able to find the velocity directly from the VR controller, but currently in "
+"OpenVR, there is no way to access the controller's velocity. We can get "
+"pretty close to the real velocity by comparing positions between frames "
+"though, and this will work just fine for this project."
 msgstr ""
 "我们计算速度的方式无论如何都不是完美的，因为它依赖于每秒一致的帧数。 理想情况"
 "下，我们可以直接从VR控制器中找到速度，但目前在OpenVR中无法访问控制器的速度。 "
 "通过比较帧之间的位置，我们可以非常接近真实速度，这对于这个项目来说效果很好。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:480
+#, fuzzy
 msgid ""
-"Then we check to see if we have more than 30 stored velocities (more than a "
+"Then, we check to see if we have more than 30 stored velocities (more than a "
 "third of a second). If there are more than 30, we remove the oldest velocity "
 "from ``prior_controller_velocities``."
 msgstr ""
@@ -770,13 +796,14 @@ msgstr ""
 "从 ``prior_controller_velocities`` 中删除最旧的速度。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:484
+#, fuzzy
 msgid ""
-"Next we check to see if there is a held object. If there is, we update the "
-"position and rotation of the held object to the position and rotation of "
+"Next, we check to see whether there is a held object. If there is, we update "
+"the position and rotation of the held object to the position and rotation of "
 "``grab_pos_node``. Because of how scale works, we need to temporarily store "
-"the scale and then reset the scale once we have updated the transform, "
-"otherwise the scale will always be the same as the controller, which will "
-"break the immersion if the player grabs a scaled object."
+"the scale and then reset the scale once we have updated the transform; "
+"otherwise, the scale would always be the same as the controller, which would "
+"ruin immersion if the player grabbed a scaled object."
 msgstr ""
 "接下来我们检查是否有被保持的物体。 如果有，我们将被保持对象的位置和旋转更新"
 "为“grab_pos_node”的位置和旋转。 由于比例是如何工作的，我们需要暂时存储比例，"
@@ -792,9 +819,10 @@ msgstr ""
 "动VR控制器上的触控板/操纵杆。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:491
+#, fuzzy
 msgid ""
-"First, we convert the axis values into :ref:`Vector2 <class_Vector2>` "
-"variables so we can process them. We invert the X axis so moving the "
+"Firstly, we convert the axis values into :ref:`Vector2 <class_Vector2>` "
+"variables, so we can process them. We invert the X axis, so moving the "
 "trackpad/joystick left will move the player left."
 msgstr ""
 "首先，我们将轴值转换为 :ref:`Vector2 <class_Vector2>` 变量，以便我们可以处理"
@@ -807,8 +835,9 @@ msgid ""
 msgstr "根据您的VR控制器和操作系统，您可能需要更改代码，以便获得正确的轴值！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:496
+#, fuzzy
 msgid ""
-"Next we account for dead zones on both the trackpad and the joystick. The "
+"Next, we account for dead zones on both the trackpad and the joystick. The "
 "code for doing this is adapted from the link below, and I would highly "
 "recommend looking at it."
 msgstr ""
@@ -847,8 +876,9 @@ msgstr ""
 "他们当前所在的位置向前/向后和向右/向左移动游戏角色。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:506
+#, fuzzy
 msgid ""
-"Then we calculate how much the player will be moving by adding both the "
+"Then, we calculate how much the player will be moving by adding both the "
 "trackpad and the joystick vectors together and normalizing them."
 msgstr ""
 "然后我们通过将触控板和操纵杆向量一起添加并将它们标准化来计算游戏角色将移动多"
@@ -885,18 +915,20 @@ msgid "Now, let's look at ``button_pressed``."
 msgstr "现在，让我们看看 ``button_pressed`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:518
+#, fuzzy
 msgid ""
 "If the button pressed is button 15, which for the Windows Mixed Reality "
 "controllers is the trigger button, we will interact with the held object "
-"assuming the controller is holding one, and if the player is not holding a "
+"assuming the controller is holding one, and if the player is not holding an "
 "object, we will try to start teleporting."
 msgstr ""
 "如果按下的按钮是按钮15，对于Windows混合现实控制器是触发按钮，我们将与保持的对"
 "象交互，假设控制器持有一个，如果游戏角色没有持有对象，我们将尝试开始传送。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:521
+#, fuzzy
 msgid ""
-"If the controller is holding a object, and the held object has a method/"
+"If the controller is holding an object, and the held object has a method/"
 "function called ``interact``, we call the ``interact`` function on the held "
 "object."
 msgstr ""
@@ -904,14 +936,15 @@ msgstr ""
 "们在被保持的对象上调用 ``interact`` 函数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:524
+#, fuzzy
 msgid ""
-"If the controller is not holding a object, we then check to make sure the "
-"teleportation mesh is not visible. This check ensure the player cannot "
-"teleport cannot teleport with both hands/controllers at the same time. If "
-"the teleportation mesh is not visible, we set ``teleport_button_down`` to "
-"``true``, make ``teleport_mesh`` visible, and make the teleportation raycast "
-"visible. This makes it where the teleportation mesh will follow the :ref:"
-"`Raycast <class_Raycast>` coming from the pointer finger of the hand."
+"If the controller is not holding an object, we then check to make sure the "
+"teleportation mesh is not visible. This check ensures the player cannot "
+"teleport with both hands/controllers at the same time. If the teleportation "
+"mesh is not visible, we set ``teleport_button_down`` to ``true``, make "
+"``teleport_mesh`` visible, and make the teleportation raycast visible. This "
+"makes it where the teleportation mesh will follow the :ref:`Raycast "
+"<class_Raycast>` coming from the pointer finger of the hand."
 msgstr ""
 "如果控制器没有拿着物体，我们检查以确保隐形传送网格不可见。 此检查确保游戏角色"
 "不能同时传送不能用双手/控制器传送。 如果远程传送网格不可见，我们将 "
@@ -920,42 +953,48 @@ msgstr ""
 "来自手的指针。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:529
+#, fuzzy
 msgid ""
-"If the button pressed is button 2, which for the Windows Mixed Reality "
-"controllers is the grab/grip button, we will grab/throw a object."
+"If the button pressed is button 2, which, for the Windows Mixed Reality "
+"controllers, is the grab/grip button, we will grab/throw an object."
 msgstr ""
 "如果按下的按钮是按钮2，对于Windows混合现实控制器是抓取/抓握按钮，我们将抓取/"
 "抛出一个对象。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:531
+#, fuzzy
 msgid ""
-"First, we make sure the player is not trying to teleport, as we do not want "
-"the player to be able to grab something while in the middle of trying to "
-"teleport."
+"Firstly, we make sure the player is not trying to teleport, as we do not "
+"want the player to be able to grab something while in the middle of trying "
+"to teleport."
 msgstr ""
 "首先，我们确保游戏角色不会尝试传送，因为我们不希望游戏角色在尝试传送的过程中"
 "能够抓住某些东西。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:533
+#, fuzzy
 msgid ""
-"Then we check to see if the controller is already holding a object or not."
+"Then, we check to see whether the controller is already holding a object or "
+"not."
 msgstr "然后我们检查控制器是否已经持有一个对象。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:535
+#, fuzzy
 msgid ""
-"If the controller is not holding a object, we check to see which grab mode "
+"If the controller is not holding an object, we check to see which grab mode "
 "the player is using."
 msgstr "如果控制器没有拿着物体，我们会检查游戏角色正在使用哪种抓取模式。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:537
+#, fuzzy
 msgid ""
-"If the player is using the ``AREA`` grab mode, we then get all of the bodies "
-"overlapping the grab :ref:`Area <class_Area>`. We go through all of the "
-"bodies in the grab :ref:`Area <class_Area>` and see if there is a :ref:"
-"`RigidBody <class_RigidBody>`. We also check to make sure any :ref:"
-"`RigidBody <class_RigidBody>` nodes in the :ref:`Area <class_Area>` do not "
-"have a variable called ``NO_PICKUP``, since we do not want to be able to "
-"pick up nodes with that variable."
+"If the player is using the ``AREA`` grab mode, we then get all the bodies "
+"overlapping the grab :ref:`Area <class_Area>`. We go through all the bodies "
+"in the grab :ref:`Area <class_Area>` and see if there is a :ref:`RigidBody "
+"<class_RigidBody>`. We also check to make sure any :ref:`RigidBody "
+"<class_RigidBody>` nodes in the :ref:`Area <class_Area>` do not have a "
+"variable called ``NO_PICKUP``, since we do not want to be able to pick up "
+"nodes with that variable."
 msgstr ""
 "如果游戏角色正在使用 ``AREA`` 抓取模式，那么我们将获得所有与grab重叠的实体 :"
 "ref:`Area <class_Area>`。 我们遍历了grab中的所有实体 :ref:`Area "
@@ -974,9 +1013,10 @@ msgstr ""
 "``rigid_body`` 以获得额外的处理。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:544
+#, fuzzy
 msgid ""
 "If the player is using the ``RAYCAST`` grab mode, we first force the :ref:"
-"`Raycast <class_Raycast>` to update. We then check to see if the :ref:"
+"`Raycast <class_Raycast>` to update. We then check to see whether the :ref:"
 "`Raycast <class_Raycast>` is colliding with something."
 msgstr ""
 "如果游戏角色正在使用 ``RAYCAST`` 抓取模式，我们首先强制 :ref:`Raycast "
@@ -984,9 +1024,10 @@ msgstr ""
 "与某些东西发生碰撞。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:547
+#, fuzzy
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we then "
-"check to see if what is colliding with is a :ref:`RigidBody "
+"check to see if what it is colliding with is a :ref:`RigidBody "
 "<class_RigidBody>`, and that it does not have a variable called "
 "``NO_PICKUP``. If the :ref:`Raycast <class_Raycast>` is colliding with a :"
 "ref:`RigidBody <class_RigidBody>`, and it does not have a variable called "
@@ -999,14 +1040,15 @@ msgstr ""
 "配给 ``rigid_body`` 以获得额外的处理。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:551
+#, fuzzy
 msgid ""
 "If ``rigid_body`` is not ``null``, meaning we found a :ref:`RigidBody "
 "<class_RigidBody>` in the grab :ref:`Area <class_Area>`, we assign "
 "``held_object`` to it. Then we store the now held :ref:`RigidBody "
 "<class_RigidBody>`'s information in ``held_object_data``. We are storing "
-"the :ref:`RigidBody <class_RigidBody>` mode, layer, and mask so later when "
-"we drop it, we can reset all of those variables back to what they were "
-"before we picked up the :ref:`RigidBody <class_RigidBody>`."
+"the :ref:`RigidBody <class_RigidBody>` mode, layer, and mask so later, when "
+"we drop it, we can reset all those variables back to what they were before "
+"we picked up the :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
 "如果 ``rigid_body`` 不是 ``null`` ，意味着我们在grab :ref:`Area "
 "<class_Area>` 中找到了一个 :ref:`RigidBody <class_RigidBody>`，我们给它分配"
@@ -1047,35 +1089,39 @@ msgstr ""
 "``controller`` 的变量，我们将它设置为该控制器。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:564
+#, fuzzy
 msgid ""
-"If the controller is not holding a object, and the button pressed is 2, we "
+"If the controller is not holding an object, and the button pressed is 2, we "
 "want to drop/throw the held object."
 msgstr ""
 "如果控制器没有持有一个对象，并且按下的按钮是2，我们想要删除/抛出被保持的对"
 "象。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:566
+#, fuzzy
 msgid ""
-"First, we set the held :ref:`RigidBody <class_RigidBody>`'s mode, layer, and "
-"mask back to what they were when we picked the object up. We then apply a "
-"impulse to the held object, using the controller's velocity as the force."
+"Firstly, we set the held :ref:`RigidBody <class_RigidBody>`'s mode, layer, "
+"and mask back to what they were when we picked the object up. We then apply "
+"an impulse to the held object, using the controller's velocity as the force."
 msgstr ""
 "首先，我们将hold :ref:`RigidBody <class_RigidBody>的模式，图层和蒙版设置回我"
 "们拾取对象时的状态。 然后，我们使用控制器的速度作为力，对保持的对象施加脉冲。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:569
+#, fuzzy
 msgid ""
 "If the previously held :ref:`RigidBody <class_RigidBody>` has a function "
 "called ``dropped``, we call it. If the :ref:`RigidBody <class_RigidBody>` "
-"has a variable called ``controller`` we set it to ``null``."
+"has a variable called ``controller``, we set it to ``null``."
 msgstr ""
 "如果以前持有的 :ref:`RigidBody <class_RigidBody>` 有一个名为 ``dropped`` 的函"
 "数，我们称之为。 如果 :ref:`RigidBody <class_RigidBody>` 有一个名为 "
 "``controller`` 的变量，我们将它设置为 ``null`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:572
+#, fuzzy
 msgid ""
-"Then we set ``held_object`` to ``null``, since we are no longer holding any "
+"Then, we set ``held_object`` to ``null``, since we are no longer holding any "
 "objects, and we make the hand mesh visible again."
 msgstr ""
 "然后我们将 ``held_object`` 设置为 ``null`` ，因为我们不再持有任何对象，我们再"
@@ -1091,8 +1137,9 @@ msgstr ""
 "为可见，这样我们就可以看到用于显示抓取的网格 :ref:`Raycast <class_Raycast>`。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:576
+#, fuzzy
 msgid ""
-"Finally, regardless of whether we are grabbing a object or releasing it, we "
+"Finally, regardless of whether we are grabbing an object or releasing it, we "
 "play the sound loaded into ``AudioStreamPlayer3D``, which is a pick-up/drop "
 "noise."
 msgstr ""
@@ -1100,10 +1147,11 @@ msgstr ""
 "的声音，这是一种拾取/丢弃噪声。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:578
+#, fuzzy
 msgid ""
 "The last thing we are doing in ``button_pressed`` is checking to see if the "
-"button pressed is 1, which for the Windows Mixed Reality controllers is the "
-"menu button."
+"button pressed is 1, which, for the Windows Mixed Reality controllers, is "
+"the menu button."
 msgstr ""
 "我们在 ``button_pressed`` 中做的最后一件事是检查按下的按钮是否为1，对于"
 "Windows Mixed Reality控制器是菜单按钮。"
@@ -1128,10 +1176,12 @@ msgid ""
 msgstr "如果释放的按钮是按钮15，触发器，那么我们可能想要传送。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:588
+#, fuzzy
 msgid ""
-"First, we check to see if ``teleport_button_down`` is ``true``. If it is, "
-"that means the player is intending to teleport, while if it is ``false``, "
-"the player has simply released the trigger while holding a object."
+"Firstly, we check to see whether ``teleport_button_down`` is ``true``. If it "
+"is, that means the player is intending to teleport, while if it is "
+"``false``, the player has simply released the trigger while holding an "
+"object."
 msgstr ""
 "首先，我们检查 ``teleport_button_down`` 是否为 ``true`` 。 如果是，那意味着游"
 "戏角色打算传送，而如果它是“假”，游戏角色只需在拿着一个物体时释放扳机。"
@@ -1156,12 +1206,13 @@ msgstr ""
 "<class_ARVROrigin>` 使用房间尺度跟踪。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:596
+#, fuzzy
 msgid ""
 "Because we want to teleport the player in their current position to the "
-"teleport position, and remember because of room-scale tracking their current "
-"position can be offset from the origin, we have to figure out that offset so "
-"when we teleport we can remove it so that player's current position is "
-"teleported to the teleport position."
+"teleport position, and remember, because of room-scale tracking, their "
+"current position can be offset from the origin, we have to figure out that "
+"offset so when we teleport, we can remove it so that player's current "
+"position is teleported to the teleport position."
 msgstr ""
 "因为我们想将当前位置的游戏角色传送到传送位置，并且因为房间尺度跟踪而记住它们"
 "的当前位置可能偏离原点，我们必须弄清楚偏移，所以当我们传送时我们可以删除它 该"
@@ -1175,16 +1226,18 @@ msgstr ""
 "我们将camera_offset的Y值设置为零，因为我们不想考虑游戏角色身高的偏移量。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:601
+#, fuzzy
 msgid ""
-"Then we teleport the :ref:`ARVROrigin <class_ARVROrigin>` to the teleport "
+"Then, we teleport the :ref:`ARVROrigin <class_ARVROrigin>` to the teleport "
 "position, applying the camera offset."
 msgstr ""
 "然后我们将 :ref:`ARVROrigin <class_ARVROrigin>` 传送到传送位置，应用相机偏"
 "移。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:603
+#, fuzzy
 msgid ""
-"Regardless of whether we teleported or not, we reset all of the teleport-"
+"Regardless of whether we teleported or not, we reset all the teleport-"
 "related variables so the controller has to get new ones before teleporting "
 "again."
 msgstr ""
@@ -1197,12 +1250,13 @@ msgid ""
 msgstr "最后，让我们看一下 ``sleep_area_entered`` 和``sleep_area_exited``。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:609
+#, fuzzy
 msgid ""
-"When a body enters or exists the sleep area, we check if it has a variable "
-"called ``can_sleep``. If it does, we then set it to ``false`` and wake the "
-"body if it has entered the sleep area, while if it has exited we set it to "
-"``true`` so the :ref:`RigidBody <class_RigidBody>` nodes can sleep (which "
-"can decrease CPU usage)."
+"When a body enters or exists the sleep area, we check whether it has a "
+"variable called ``can_sleep``. If it does, we then set it to ``false`` and "
+"wake the body if it has entered the sleep area, while if it has exited, we "
+"set it to ``true`` so the :ref:`RigidBody <class_RigidBody>` nodes can sleep "
+"(which can decrease CPU usage)."
 msgstr ""
 "当物体进入或存在睡眠区域时，我们检查它是否有一个名为“can_sleep”的变量。 如果"
 "确实如此，我们将其设置为“false”并在物体进入睡眠区域时唤醒物体，如果已经退出，"
@@ -1210,8 +1264,9 @@ msgstr ""
 "以降低CPU使用率)。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:614
+#, fuzzy
 msgid ""
-"Okay, phew! That was a lot of code! Add the same script, ``VR_Controller."
+"Okay, whew! That was a lot of code! Add the same script, ``VR_Controller."
 "gd`` to the other controller so both controllers have the same script."
 msgstr ""
 "好的，p！ 那是很多代码！ 将相同的脚本 ``VR_Controller.gd`` 添加到另一个控制"
@@ -1308,8 +1363,9 @@ msgstr ""
 "的大小和位置，以便它覆盖VR中的整个视图。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:678
+#, fuzzy
 msgid ""
-"Then we get the left and right controllers, assigning them to "
+"Then, we get the left and right controllers, assigning them to "
 "``controller_one`` and ``controller_two``."
 msgstr ""
 "然后我们得到左右控制器，将它们分配给 ``controller_one`` 和"
@@ -1351,10 +1407,10 @@ msgid "Adding destroyable targets"
 msgstr "添加可销毁的目标"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:694
+#, fuzzy
 msgid ""
-"First, let's start by making some targets we will destroy in various "
-"different ways with various different special :ref:`RigidBody "
-"<class_RigidBody>` nodes."
+"Firstly, let's start by making some targets we will destroy in various ways "
+"with various special :ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 "首先，让我们从制作一些目标开始，我们将以各种不同的方式销毁各种不同的特殊目"
 "标 :ref:`RigidBody <class_RigidBody>` 节点。"
@@ -1384,7 +1440,9 @@ msgid "Let's go over how this script works, starting with the class variables."
 msgstr "让我们来看看这个脚本的工作原理，从类变量开始。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:748
-msgid "``destroyed``: A variable to track if this target is destroyed or not."
+#, fuzzy
+msgid ""
+"``destroyed``: A variable to track whether this target is destroyed or not."
 msgstr "``destroyed``:一个变量，用于跟踪此目标是否被销毁。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:749
@@ -1433,10 +1491,11 @@ msgid "Next, let's go over ``_physics_process``."
 msgstr "接下来，让我们回顾一下 ``_physics_process`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:765
+#, fuzzy
 msgid ""
-"First, we add time to ``destroyed_timer``. Then we check to see if enough "
-"time has passed and we can destroy the target. If enough time has passed, we "
-"free/destroy the target using ``queue_free``."
+"Firstly, we add time to ``destroyed_timer``. Then we check to see whether "
+"enough time has passed and we can destroy the target. If enough time has "
+"passed, we free/destroy the target using ``queue_free``."
 msgstr ""
 "首先，我们为 ``destroyed_timer`` 增加时间。 然后我们检查是否已经过了足够的时"
 "间，我们可以摧毁目标。 如果已经过了足够的时间，我们使用 ``queue_free`` 释放/"
@@ -1447,7 +1506,9 @@ msgid "Finally, let's go over ``damage``."
 msgstr "最后，让我们回顾一下 ``damage`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:772
-msgid "First, we check to make sure the target has not already been destroyed."
+#, fuzzy
+msgid ""
+"Firstly, we check to make sure the target has not already been destroyed."
 msgstr "首先，我们检查以确保目标尚未被销毁。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:774
@@ -1463,8 +1524,9 @@ msgid ""
 msgstr "如果目标的生命值为零或更低，则它已经受到足够的破坏。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:778
+#, fuzzy
 msgid ""
-"First, we disable the collision shape and make the whole target mesh "
+"Firstly, we disable the collision shape and make the whole target mesh "
 "invisible. Next, we spawn/instance the :ref:`RigidBody <class_RigidBody>` "
 "version of the target, and instance it at this target's position."
 msgstr ""
@@ -1472,8 +1534,9 @@ msgstr ""
 "`RigidBody <class_RigidBody>` 目标版本，并在此目标位置实例化它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:781
+#, fuzzy
 msgid ""
-"Then we set ``destroyed`` to ``true`` and start processing "
+"Then, we set ``destroyed`` to ``true`` and start processing "
 "``_physics_process``. Finally, we play a sound, and remove a sphere from "
 "``Game.gd`` by calling ``remove_sphere``."
 msgstr ""
@@ -1489,8 +1552,10 @@ msgstr ""
 "解决这个问题！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:788
+#, fuzzy
 msgid ""
-"First, open up ``Game.gd`` and add the following additional class variables:"
+"Firstly, open up ``Game.gd`` and add the following additional class "
+"variables:"
 msgstr "首先，打开 ``Game.gd`` 并添加以下附加类变量:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:795
@@ -1509,14 +1574,16 @@ msgstr ""
 "接下来，我们需要添加 ``remove_sphere`` 函数。 将以下内容添加到``Game.gd``:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:808
-msgid "What this function does is it removes one from ``spheres_left``."
+#, fuzzy
+msgid "What this function does is it subtracts one from ``spheres_left``."
 msgstr "这个函数的作用是从 ``spheres_left`` 中删除一个。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:810
+#, fuzzy
 msgid ""
-"Then it checks to see if ``sphere_ui`` is not null, and if it is not, then "
-"it calls its ``update_ui`` function, passing in the amount of sphere's left. "
-"We'll add the UI code later in this part."
+"Then, it checks to see whether ``sphere_ui`` is not null, and if it is not, "
+"then it calls its ``update_ui`` function, passing in the amount of spheres "
+"left. We'll add the UI code later in this part."
 msgstr ""
 "然后它检查 ``sphere_ui`` 是否为空，如果不是，则调用它的 ``update_ui`` 函数，"
 "传入球的左边数量。 我们将在本部分后面添加UI代码。"
@@ -1538,12 +1605,13 @@ msgstr ""
 "文件夹中找到它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:820
+#, fuzzy
 msgid ""
-"There is a few things to note here. The first thing to note is how "
+"There are a few things to note here. The first thing to note is how "
 "everything is rotated. This is to make the pistol rotate correctly when the "
 "player grabs it. The other thing to notice is how there is a laser sight "
-"mesh, and a flash mesh, both of these do what you'd expect: act as a laser "
-"pointer and act as a muzzle flash respectively."
+"mesh, and a flash mesh; both of these do what you'd expect: act as a laser "
+"pointer and muzzle flash, respectively."
 msgstr ""
 "这里有几点需要注意。 首先要注意的是如何旋转一切。 这是为了让游戏角色在抓住手"
 "枪时正确旋转。 另外需要注意的是激光瞄准网和闪光网是如何做到的，它们都可以达到"
@@ -1611,41 +1679,46 @@ msgid "Next, let's look at ``_physics_process``."
 msgstr "接下来，让我们看看`_physics_process``。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:912
+#, fuzzy
 msgid ""
-"First, we check to see if the flash is visible. We do this by checking to "
+"Firstly, we check to see if the flash is visible. We do this by checking to "
 "see if ``flash_timer`` is more than zero. This is because ``flash_timer`` "
-"will be a inverted timer, a timer that counts down instead of counting up."
+"will be an inverted timer, a timer that counts down instead of counting up."
 msgstr ""
 "首先，我们检查闪光灯是否可见。 我们通过检查 ``flash_timer`` 是否大于零来做到"
 "这一点。 这是因为 ``flash_timer`` 将是一个倒置计时器，一个计时器倒计时而不是"
 "计数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:915
+#, fuzzy
 msgid ""
-"If ``flash_timer`` is more than zero, we remove ``delta`` from it and check "
-"to see if it is equal to zero or less. If it is, we make the flash mesh "
-"invisible."
+"If ``flash_timer`` is more than zero, we subtract ``delta`` from it and "
+"check to see whether it is equal to zero or less. If it is, we make the "
+"flash mesh invisible."
 msgstr ""
 "如果 ``flash_timer`` 大于零，我们从中删除 ``delta`` 并检查它是否等于零或更"
 "小。 如果是，我们使闪光网不可见。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:918
+#, fuzzy
 msgid ""
 "This makes it where the flash mesh becomes invisible after ``FLASH_TIME`` "
-"many seconds has gone by."
+"many seconds have gone by."
 msgstr "这使得闪存网格在“FLASH_TIME”经过许多秒后变得不可见。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:922
+#, fuzzy
 msgid ""
-"Now let's look at ``interact``, which is called when the trigger button on "
+"Now, let's look at ``interact``, which is called when the trigger button on "
 "the VR controller is pressed and the pistol is being held."
 msgstr ""
 "现在让我们看一下 ``interact`` ，当按下VR控制器上的触发按钮并握住手枪时调用"
 "它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:924
+#, fuzzy
 msgid ""
-"First, we check to see if the flash timer is less than or equal to zero. "
+"Firstly, we check to see if the flash timer is less than or equal to zero. "
 "This check makes it where we cannot fire when the flash is visible, limiting "
 "how often the pistol can fire."
 msgstr ""
@@ -1668,10 +1741,11 @@ msgstr ""
 "然后我们更新 :ref:`Raycast <class_Raycast>` 并检查它是否与任何东西发生碰撞。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:931
+#, fuzzy
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we get "
 "the collider. We check to see if the collider has the ``damage`` function, "
-"and if it does we call it. If it does not, we then check to see if the "
+"and if it does, we call it. If it does not, we then check to see if the "
 "collider has the ``apply_impulse`` function, and if it does, we call it "
 "after calculating the direction from the :ref:`Raycast <class_Raycast>` to "
 "the collider."
@@ -1688,9 +1762,10 @@ msgid ""
 msgstr "最后，无论手枪是否击中，我们都会发出手枪发出的声音。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:939
+#, fuzzy
 msgid ""
 "Finally, let's look at ``picked_up`` and ``dropped``, which are called when "
-"the pistol is picked up and dropped respectively."
+"the pistol is picked up and dropped, respectively."
 msgstr ""
 "最后，让我们看一下 ``picked_up`` 和``dropped``，它们分别在拾取和放下手枪时被"
 "调用。"
@@ -1775,17 +1850,19 @@ msgstr ""
 "<class_Raycast>`。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1025
+#, fuzzy
 msgid ""
 "The only other change, besides there being nothing in ``picked_up`` and "
-"``dropped`` is in ``interact``."
+"``dropped``, is in ``interact``."
 msgstr ""
 "除了在 ``picked_up`` 和``dropped``中没有任何内容之外，唯一的另一个变化是 "
 "``interact`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1027
+#, fuzzy
 msgid ""
 "Now we go through each :ref:`Raycast <class_Raycast>` in ``raycasts``. We "
-"then rotate it on the X and Z axis, making within a 10 to ``-10`` cone. From "
+"then rotate it on the X and Z axes, making within a 10 to ``-10`` cone. From "
 "there, we process each :ref:`Raycast <class_Raycast>` like we did the "
 "single :ref:`Raycast <class_Raycast>` in the pistol, nothing changed at all, "
 "we are just doing it five times, once for each :ref:`Raycast "
@@ -1840,8 +1917,9 @@ msgstr ""
 "<class_Particles>` 节点！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1048
+#, fuzzy
 msgid ""
-"The only thing to notice his how long the explosion :ref:`Particles "
+"The only thing to notice is how long the explosion :ref:`Particles "
 "<class_Particles>` node will last, their lifetime, which is 0.75 seconds. We "
 "need to know this so we can time the removal of the bomb with the end of the "
 "explosion :ref:`Particles <class_Particles>`."
@@ -1873,7 +1951,8 @@ msgstr ""
 "``bomb_mesh``:用于炸弹网格的 :ref:`MeshInstance <class_MeshInstance>` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1145
-msgid "``FUSE_TIME``: The length of time the fuse burns for."
+#, fuzzy
+msgid "``FUSE_TIME``: The length of time for which the fuse burns."
 msgstr "``FUSE_TIME``:保险丝燃烧的时间长度。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1146
@@ -1935,8 +2014,9 @@ msgid "Let's go through ``_ready``."
 msgstr "让我们来看看 ``_ready`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1160
+#, fuzzy
 msgid ""
-"First, we get all of the nodes and assign them to the proper variables for "
+"Firstly, we get all the nodes and assign them to the proper variables for "
 "later use."
 msgstr "首先，我们获取所有节点并将它们分配给适当的变量供以后使用。"
 
@@ -1956,18 +2036,20 @@ msgid "Now, let's look at ``_physics_process``."
 msgstr "现在，让我们看看`_physics_process``。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1169
+#, fuzzy
 msgid ""
-"First we check to see if ``fuse_timer`` is less than ``FUSE_TIME``. If "
-"``fuse_timer`` is less than ``FUSE_TIME``, then the bomb must be burning "
+"Firstly we check to see whether ``fuse_timer`` is less than ``FUSE_TIME``. "
+"If ``fuse_timer`` is less than ``FUSE_TIME``, then the bomb must be burning "
 "down the fuse."
 msgstr ""
 "首先，我们检查 ``fuse_timer`` 是否小于 ``FUSE_TIME`` 。 如果 ``fuse_timer`` "
 "小于 ``FUSE_TIME`` ，那么炸弹必须烧掉保险丝。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1171
+#, fuzzy
 msgid ""
-"We then add time to ``fuse_timer``, and check to see if the bomb has waited "
-"long enough and has burned through the entire fuse."
+"We then add time to ``fuse_timer``, and check to see whether the bomb has "
+"waited long enough and has burned through the entire fuse."
 msgstr ""
 "然后我们将时间添加到 ``fuse_timer`` ，并检查炸弹是否已经等待足够长的时间并烧"
 "掉整个保险丝。"
@@ -1995,13 +2077,15 @@ msgstr ""
 "原位。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1179
+#, fuzzy
 msgid ""
-"Then we go through everything inside the explosion :ref:`Area <class_Area>`. "
-"We make sure the bodies inside the explosion :ref:`Area <class_Area>` are "
-"not the bomb itself, since we do not want to explode the bomb with itself. "
-"We then check to see if the bodies have the ``damage`` method/function, and "
-"if it does we call that, while if it does not we check to see if it has the "
-"``apply_impulse`` method/function, and call that instead."
+"Then, we go through everything inside the explosion :ref:`Area "
+"<class_Area>`. We make sure the bodies inside the explosion :ref:`Area "
+"<class_Area>` are not the bomb itself, since we do not want to explode the "
+"bomb with itself. We then check to see whether the bodies have the "
+"``damage`` method/function, and if it does, we call that, while if it does "
+"not, we check to see if it has the ``apply_impulse`` method/function, and "
+"call that instead."
 msgstr ""
 "然后我们浏览爆炸内的所有内容 :ref:`Area <class_Area>`。 我们确保爆炸内部的物"
 "体 :ref:`Area <class_Area>` 不是炸弹本身，因为我们不想用它自己爆炸炸弹。 然后"
@@ -2009,8 +2093,9 @@ msgstr ""
 "查它是否有 ``apply_impulse`` 方法/函数，并且 打电话给那个。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1183
+#, fuzzy
 msgid ""
-"Then we set ``explode`` to true since the bomb has exploded, and we play a "
+"Then, we set ``explode`` to true since the bomb has exploded, and we play a "
 "sound."
 msgstr "然后我们将 ``explode`` 设置为true，因为炸弹已爆炸，我们发出声音。"
 
@@ -2053,12 +2138,13 @@ msgstr ""
 "保险丝 :ref:`Particles <class_Particles>` 开始发射，所以烟雾从炸弹顶部出来。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1200
+#, fuzzy
 msgid ""
 "With that done, the bombs are ready to go! You can find them in the orange "
 "building. Because of how we are calculating velocity, it is easiest to throw "
 "bombs in a trusting-like motion as opposed to a more natural throwing like "
 "motion. The smooth curve of a throwing-like motion is harder to track, and "
-"the because of how we are tracking velocity it does not always work."
+"the because of how we are tracking velocity, it does not always work."
 msgstr ""
 "完成后，炸弹准备好了！ 您可以在橙色建筑中找到它们。 由于我们如何计算速度，最"
 "容易投掷类似信任的运动中的炸弹，而不是像运动那样更自然的投掷。 投掷式运动的平"
@@ -2089,8 +2175,9 @@ msgstr ""
 "我能弄清楚如何做到这一点的最简单(也是唯一的)方法。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1214
+#, fuzzy
 msgid ""
-"If you know how to find the point where a :ref:`Area <class_Area>` and a :"
+"If you know how to find the point where an :ref:`Area <class_Area>` and a :"
 "ref:`CollisionObject <class_CollisionObject>` meet, please let me know and/"
 "or make a PR on the Godot documentation! This method of using several small :"
 "ref:`Area <class_Area>` nodes works okay, but it is not ideal."
@@ -2120,9 +2207,10 @@ msgid "``SWORD_DAMAGE``: The amount of damage a single sword slice does."
 msgstr "``SWORD_DAMAGE``:单个剑片所造成的伤害量。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1284
+#, fuzzy
 msgid ""
 "``controller``: The controller that is holding the sword, if there is one. "
-"This is set by the controller, so we do not need to set it here in ``Sword."
+"This is set by the controller, so we do not need to set it here, in ``Sword."
 "gd``."
 msgstr ""
 "``controller``:拿着剑的控制器，如果有的话。 这是由控制器设置的，所以我们不需"
@@ -2133,11 +2221,12 @@ msgid "Let's go over ``_ready`` next."
 msgstr "让我们接下来回顾一下 ``_ready`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1290
+#, fuzzy
 msgid ""
 "All we are doing here is connecting each of the :ref:`Area <class_Area>` "
 "nodes ``body_entered`` signal to the ``body_entered_sword`` function, "
-"passing in a additional argument which will be the number of the damage :ref:"
-"`Area <class_Area>`, so we can figure out where on the sword the body "
+"passing in an additional argument, which will be the number of the damage :"
+"ref:`Area <class_Area>`, so we can figure out where on the sword the body "
 "collided."
 msgstr ""
 "我们在这里所做的就是将每个 :ref:`Area <class_Area>` nodes ``body_entered`` 信"
@@ -2149,7 +2238,9 @@ msgid "Now let's go over ``body_entered_sword``."
 msgstr "现在让我们回顾一下 ``body_entered_sword`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1297
-msgid "First, we make sure the body the sword has collided with is not itself."
+#, fuzzy
+msgid ""
+"Firstly, we make sure the body the sword has collided with is not itself."
 msgstr "首先，我们确保剑与之碰撞的物体本身并不存在。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1299
@@ -2159,19 +2250,21 @@ msgid ""
 msgstr "然后我们使用传入的数字找出物体碰撞的剑的哪一部分。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1301
+#, fuzzy
 msgid ""
-"Next, we check to see if the body the sword collided with has the ``damage`` "
-"function, and if it does, we call it and play a sound."
+"Next, we check to see whether the body the sword collided with has the "
+"``damage`` function, and if it does, we call it and play a sound."
 msgstr ""
 "接下来，我们检查剑与剑相撞的物体是否具有“伤害”功能，如果有，我们称之为并发出"
 "声音。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1303
+#, fuzzy
 msgid ""
-"If it does not have the damage function, we then check to see if it has the "
-"``apply_impulse`` function. If it does, we then calculation the direction "
+"If it does not have the damage function, we then check to see whether it has "
+"the ``apply_impulse`` function. If it does, we then calculate the direction "
 "from the sword part the body collided with to the body. We then check to see "
-"if the sword is being held or not."
+"whether the sword is being held or not."
 msgstr ""
 "如果它没有损坏功能，我们检查它是否具有 ``apply_impulse`` 功能。 如果是这样，"
 "我们然后计算从物体碰撞的剑部分到物体的方向。 然后我们检查剑是否被关押。"
@@ -2205,10 +2298,11 @@ msgid "Okay, let's update the UI as the sphere targets are destroyed."
 msgstr "好吧，让我们在球体目标被破坏时更新UI。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1322
+#, fuzzy
 msgid ""
 "Open up ``Game.tscn`` and then expand the ``GUI`` :ref:`MeshInstance "
 "<class_MeshInstance>`. From there, expand the ``GUI`` :ref:`Viewport "
-"<class_Viewport>` node and then select the ``base_control`` node. Add a new "
+"<class_Viewport>` node and then select the ``Base_Control`` node. Add a new "
 "script called ``Base_Control``, and add the following:"
 msgstr ""
 "打开 ``Game.tscn`` 然后展开``GUI`` :ref:`MeshInstance "
@@ -2221,8 +2315,9 @@ msgid "Let's go over what this script does quickly, as it is fairly simple."
 msgstr "让我们快速了解一下这个脚本的作用，因为它非常简单。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1344
+#, fuzzy
 msgid ""
-"First, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
+"Firstly, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
 "many spheres are left and assign it to the ``sphere_count_label`` class "
 "variable. Next, we get ``Game.gd`` by using ``get_tree().root`` and assign "
 "``sphere_ui`` to this script."
@@ -2232,11 +2327,12 @@ msgstr ""
 "``get_tree().root`` 获得 ``Game.gd`` 并将 ``sphere_ui`` 分配给该脚本。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1347
+#, fuzzy
 msgid ""
 "In ``update_ui``, we change the sphere :ref:`Label <class_Label>`'s text. If "
 "there is at least one sphere remaining, we change the text to show how many "
-"sphere's are still left in the world. If there are no more spheres "
-"remaining, we change the text and congratulate the player."
+"spheres are still left in the world. If there are no more spheres remaining, "
+"we change the text and congratulate the player."
 msgstr ""
 "在 ``update_ui`` 中，我们改变了球体 :ref:`Label <class_Label>的文本。 如果剩"
 "下至少一个球体，我们会更改文本以显示世界上还剩下多少球体。 如果没有更多的球"
@@ -2267,10 +2363,11 @@ msgid "Let's go over what this does quickly, as it is also fairly simple."
 msgstr "让我们快速回顾一下这个问题，因为它也很简单。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1396
+#, fuzzy
 msgid ""
-"First, we get the starting global :ref:`Transform <class_Transform>` in "
+"Firstly, we get the starting global :ref:`Transform <class_Transform>` in "
 "``_ready``, and assign it to ``start_transform``. We will use this to reset "
-"the position of the reset box ever so often."
+"the position of the reset box every so often."
 msgstr ""
 "首先，我们在 ``_ready`` 中得到起始全局 :ref:`Transform <class_Transform>` ，"
 "并将其赋值给 ``start_transform`` 。 我们将使用它来经常重置复位盒的位置。"
@@ -2301,9 +2398,10 @@ msgstr ""
 "当重置框被删除时，我们重置 :ref:`Transform <class_Transform>` 和计时器。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1407
+#, fuzzy
 msgid ""
 "With that done, when you grab and interact with the reset box, the entire "
-"scene will reset/restart and you can destroy all of the targets again!"
+"scene will reset/restart and you can destroy all the targets again!"
 msgstr ""
 "完成后，当您抓住并与重置框交互时，整个场景将重置/重新启动，您可以再次销毁所有"
 "目标！"
@@ -2313,7 +2411,8 @@ msgid "Final notes"
 msgstr "最后的笔记"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1414
-msgid "Phew! That was a lot of work. Now you have a fairly simple VR project!"
+#, fuzzy
+msgid "Whew! That was a lot of work. Now you have a fairly simple VR project!"
 msgstr "唷！ 这是很多工作。 现在您有一个相当简单的VR项目！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1416
@@ -2329,8 +2428,9 @@ msgstr ""
 "zip <files / VR_Starter_Tutorial_Complete.zip>`"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1420
+#, fuzzy
 msgid ""
-"This hopefully will serve as a introduction into making fully featured VR "
+"This will hopefully serve as an introduction to making fully-featured VR "
 "games in Godot! The code written here can be expanded to make puzzle games, "
 "action games, story-based games, and more!"
 msgstr ""

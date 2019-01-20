@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,14 +22,13 @@ msgid "GDScript format strings"
 msgstr "Cadenas de formato en GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:6
-#, fuzzy
 msgid ""
 "GDScript offers a feature called *format strings*, which allows reusing text "
 "templates to succinctly create different but similar strings."
 msgstr ""
 "GDScript ofrece una funcionalidad llamada *cadenas de formato* que permite "
-"reutilizar plantillas de texto para crear distintas cadenas de texto de una "
-"manera breve y compacta."
+"reutilizar plantillas de texto para crear distintas cadenas de una manera "
+"breve y compacta."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:9
 msgid ""
@@ -449,13 +448,12 @@ msgid "key"
 msgstr "clave"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
-#, fuzzy
 msgid ""
 "``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
 "\"3.0\"})``"
 msgstr ""
-"\"Hola, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
-"\"3.0\"})"
+"``\"Hola, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:244
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
@@ -473,9 +471,8 @@ msgid "index"
 msgstr "índice"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:246
-#, fuzzy
 msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
-msgstr "\"Hola, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})"
+msgstr "``\"Hola, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
@@ -483,11 +480,11 @@ msgid "mix"
 msgstr "mezcla"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:248
-#, fuzzy
 msgid ""
 "``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
 msgstr ""
-"\"Hola, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})"
+"``\"Hola, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":"
+"\"3.0\"})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
@@ -497,33 +494,28 @@ msgid "Array"
 msgstr "Arreglo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:250
-#, fuzzy
 msgid ""
 "``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
 "\"Godette\"]])``"
 msgstr ""
-"\"Hola, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":"
-"\"Godette\"])"
+"``\"Hola, {name} v{version}!\".format([[\"version\":\"3.0\"], [\"name\":"
+"\"Godette\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:252
-#, fuzzy
 msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
-msgstr "\"Hola, {0} v{1}!\".format([\"Godette\",\"3.0\"])"
+msgstr "``\"Hola, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:254
-#, fuzzy
 msgid "``\"Hi, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
-msgstr "\"Hola, {name} v{0}!\".format([3.0, [\"name\":\"Godette\"]])"
+msgstr "``\"Hola, {name} v{0}!\".format([3.0, [\"name\",\"Godette\"]])``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "no index"
-msgstr "índice"
+msgstr "sin índice"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:256
-#, fuzzy
 msgid "``\"Hi, {} v{}!\".format([\"Godette\", 3.0], \"{}\")``"
-msgstr "\"Hola, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Hola, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:259
 msgid ""
@@ -538,9 +530,8 @@ msgid "Infix (default)"
 msgstr "Infijo (por defecto)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
-#, fuzzy
 msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
-msgstr "\"Hola, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")"
+msgstr "``\"Hola, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:266
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
@@ -553,38 +544,34 @@ msgid "Postfix"
 msgstr "Sufijo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:268
-#, fuzzy
 msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
-msgstr "\"Hola, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")"
+msgstr "``\"Hola, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
 msgid "Prefix"
 msgstr "Prefijo"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:270
-#, fuzzy
 msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
-msgstr "\"Hola, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")"
+msgstr "``\"Hola, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:273
-#, fuzzy
 msgid ""
 "Combining both the ``String.format`` method and the ``%`` operator could be "
 "useful, as ``String.format`` does not have a way to manipulate the "
 "representation of numbers."
 msgstr ""
-"Combinar el método ``String.format`` y el operador ``%``, puede ser útil ya "
+"Combinar el método ``String.format`` y el operador ``%`` puede ser útil ya "
 "que ``String.format`` no tiene un modo de manipular la representación de "
 "números."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
-#, fuzzy
 msgid ""
 "``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
 "3.114})``"
 msgstr ""
-"\"Hola, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
-"3.114})"
+"``\"Hola, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:279
 msgid "Hi, Godette v3.11"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2048,18 +2048,26 @@ msgid ""
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
 "defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
+"В этом примере у ``Fire`` значение 1, у ``Water`` - 2, у ``Earth`` - 4 и у "
+"``Wind`` - 8. Обычно константы должны быть определены соответствующим "
+"образом (например, ``const ELEMENT_WIND = 8`` и так далее)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1332
+#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
+"Использование битовых флагов требует некоторого понимания побитовых "
+"операций. Если вы сомневаетесь, вместо этого следует экспортировать булевые "
+"переменные."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1336
 msgid "Exporting arrays"
-msgstr ""
+msgstr "Экспорт массивов"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1338
+#, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -2067,10 +2075,16 @@ msgid ""
 "cause them to change in all other instances. Exported arrays can have "
 "initializers, but they must be constant expressions."
 msgstr ""
+"Экспорт массивов работает, но с важной оговоркой: хотя обычные массивы "
+"создаются локально для каждого экземпляра класса, экспортируемые массивы "
+"являются *общими* для всех экземпляров. Это означает, что их редактирование "
+"в одном из экземпляров приведет к их изменению во всех других экземплярах. "
+"Экспортируемые массивы могут иметь инициализаторы, но они должны быть "
+"постоянными выражениями."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1375
 msgid "Setters/getters"
-msgstr ""
+msgstr "Сеттеры/геттеры"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1377
 msgid ""
@@ -2078,12 +2092,17 @@ msgid ""
 "whatever reason. It may also be desired to encapsulate its access in some "
 "way."
 msgstr ""
+"Часто полезно знать, когда переменная, входящая в состав класса, изменяется "
+"по какой-то причине. Возможно вы хотите ее инкапсулировать."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
+"Для этого GDScript предоставляет синтаксис *setter/getter*, используя "
+"ключевое слово ``setget``. Использовать непосредственно после определения "
+"переменной:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1387
 msgid ""
@@ -2094,26 +2113,38 @@ msgid ""
 "``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
 "``return`` the desired value. Below is an example:"
 msgstr ""
+"Всякий раз, когда значение ``variable`` изменяется *внешним* источником (т."
+"е. не от локального использования в классе), вызывается функция *setter* "
+"(``setterfunc`` выше). Это происходит *до* того, как значение изменится. "
+"*Сеттер* должен решить, что делать с новым значением. И наоборот, когда "
+"функция ``variable`` доступна, функция *getter* (``getterfunc`` выше) должна "
+"``return(возвращать)`` желаемое значение. Ниже приведен пример:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#, fuzzy
 msgid "Either of the *setter* or *getter* functions can be omitted:"
-msgstr ""
+msgstr "Любая из функций *setter* или *getter* может быть пропущена:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1413
+#, fuzzy
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
 msgstr ""
+"Гет/Сетеры особенно полезны при экспорте переменных в редактор в скриптах "
+"инструментах или плагинах для проверки ввода."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1416
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
+"Как уже говорилось, *локальный* доступ *не будет* запускать сеттер и геттер. "
+"Вот иллюстрация этого:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
 msgid "Tool mode"
-msgstr ""
+msgstr "Режим Инструмента"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
 msgid ""
@@ -2123,6 +2154,11 @@ msgid ""
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
 msgstr ""
+"Скрипты, по умолчанию, не запускаются внутри редактора и могут быть изменены "
+"только экспортируемые свойства. В некоторых случаях желательно, чтобы они "
+"выполнялись внутри редактора (до тех пор, пока они не запустится код игры "
+"или не сделают этого вручную). Для этого существует ключевое слово ``tool``, "
+"которое должно быть в верхней части файла:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1448
 msgid "Memory management"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,6 @@ msgstr ""
 "posición en reposo (transform en Godot) de los huesos."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:13
-#, fuzzy
 msgid ""
 "The three check boxes :code:`Inherit Rotation`, :code:`Inherit Scale`, :code:"
 "`Local Location` (colored in red) must be ticked when building armature in "
@@ -51,7 +50,6 @@ msgid "Bone Weights"
 msgstr "Peso de los huesos"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:21
-#, fuzzy
 msgid ""
 "Blender put rigged mesh vertices which has no bone weights at its original "
 "position, but these vertices would be placed at (0, 0, 0) in Godot, making "
@@ -59,16 +57,15 @@ msgid ""
 "vertex with no bone weights detected in a rigged mesh."
 msgstr ""
 "Blender pone los vértices que no tienen peso en los huesos de las mallas "
-"riggeadas en su posición original, pero estos vértices se colocan en (0,0,0) "
-"en Godot, lo que deforma la malla. Por lo tanto, el exportador da un error "
-"en cuanto detecta cualquier vértice sin pesos asignados en una malla."
+"riggeadas en su posición original, pero estos vértices se colocarán en "
+"(0,0,0) en Godot, lo que deforma la malla. Por lo tanto, el exportador da un "
+"error en cuanto detecta cualquier vértice sin pesos asignados en una malla."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:27
 msgid "Non-Deform Bone"
 msgstr "Hueso sin deformar"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:29
-#, fuzzy
 msgid ""
 "Note that the non-deform bone can be configured as not exported by enabling "
 "the :code:`Exclude Control Bones`; the deform bone checkbox is shown in the "
@@ -83,7 +80,6 @@ msgid "Bone Attachment"
 msgstr "Adjuntar hueso"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/skeleton.rst:36
-#, fuzzy
 msgid ""
 "A bone can be the parent of an object in Blender; this relation is exported "
 "as a BoneAttachment node in the Godot scene."

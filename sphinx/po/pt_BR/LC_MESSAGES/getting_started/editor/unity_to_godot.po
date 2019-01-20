@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,7 @@ msgstr "OS (exportar)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr "**Desktop:** Windows, macOS, Linux"
+msgstr "**Desktop:** Windows, mac OS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
@@ -104,7 +104,7 @@ msgstr "**TV:** Android TV, Samsung Smart TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr "**Desktop:** Windows, macOS, X11"
+msgstr "**Desktop:** Windows, mac OS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Mobile:** Android, iOS"
@@ -630,15 +630,15 @@ msgstr "Correspondência do glossário"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
 msgid "GameObject -> Node"
-msgstr ""
+msgstr "GameObject -> Nó"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:198
 msgid "Add a component -> Inheriting"
-msgstr ""
+msgstr "Adicionar um componente -> Herdar"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:199
 msgid "Prefab -> Externalized branch"
-msgstr ""
+msgstr "Prefab -> Ramificação Externa"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
@@ -768,19 +768,23 @@ msgstr "Animação por Sprites"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
 msgid "Unity can handle script serialization in two ways:"
-msgstr ""
+msgstr "O Unity pode manipular a serialização de scripts de duas maneiras:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
 msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
 msgstr ""
+"Implícito: Todos os campos públicos em uma classe são automaticamente "
+"serializados se o tipo for serializável (`` Dictionary`` não é serializável)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
 msgstr ""
+"Explicito: Campos não públicos podem ser serializados usando o atributo `` "
+"[SerializeField] ``."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
 msgid ""
@@ -790,6 +794,12 @@ msgid ""
 "`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. See "
 "the :ref:`exports documentation <doc_gdscript_exports>` for details."
 msgstr ""
+"Godot também possui um sistema de serialização de scripts embutido, mas "
+"funciona apenas explicitamente. Você pode serializar qualquer tipo "
+"serializável (: ref: `built-in e vários tipos de mecanismos "
+"<doc_binary_serialization_api>`, incluindo: ref: `class_Array` e: ref:` "
+"class_dictionary`) usando a palavra-chave `` export``. Veja a: ref: "
+"`documentação de exportações <doc_gdscript_exports>` para detalhes."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:255
 msgid ""
@@ -799,6 +809,12 @@ msgid ""
 "`class_Resource` will allow you to create custom serializable objects. More "
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
+"Unity também tem um tipo de dados chamado `` ScriptableObject`` usado para "
+"serializar objetos de ativos personalizados. Seu equivalente em Godot é a "
+"classe base para todos os recursos:: ref: `class_Resource`. Criar um script "
+"que herda: ref: `class_Resource` permitirá que você crie objetos "
+"serializáveis personalizados. Mais informações sobre recursos podem ser "
+"encontradas: ref: `here <doc_resources>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:260
 msgid "Using Godot in C++"

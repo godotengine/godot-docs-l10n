@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,7 +98,8 @@ msgid "Exec Flags"
 msgstr "Flagi Exec"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-msgid "geany/kate"
+#, fuzzy
+msgid "Geany/Kate"
 msgstr "geany/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
@@ -106,7 +107,8 @@ msgid "{file} --line {line} --column {col}"
 msgstr "{plik} --line {linia} --column {kol}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-msgid "atom/sublime text"
+#, fuzzy
+msgid "Atom/Sublime Text"
 msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
@@ -114,10 +116,19 @@ msgid "{file}:{line}"
 msgstr "{plik}:{linia}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-msgid "jetbrains rider"
+msgid "JetBrains Rider"
 msgstr ""
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
 msgid "--line {line} {file}"
 msgstr "{plik} --line {linia} --column {kol}"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+#, fuzzy
+msgid "Visual Studio Code"
+msgstr "Visual Studio lub VS Code"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "{project} --goto {file}:{line}:{col}"
+msgstr ""

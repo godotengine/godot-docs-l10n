@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,15 +116,15 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:109
-#, fuzzy
 msgid ""
 "The :ref:"
 "`get_visible_name()<class_EditorImportPlugin_method_get_visible_name>` "
 "method is responsible to inform the name of the type it imports and will be "
 "shown to the user in the Import dock."
 msgstr ""
-"El método :ref:`get_visible_name<class_EditorImportPlugin_get_visible_name>` "
-"es responsable de informar el nombre del tipo que importa y se mostrará al "
+"El método :ref:"
+"`get_visible_name()<class_EditorImportPlugin_method_get_visible_name>` es "
+"responsable de informar el nombre del tipo que importa y se mostrará al "
 "usuario en el panel de Importación."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:113
@@ -216,7 +216,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:195
-#, fuzzy
 msgid ""
 "The :ref:`get_preset_count() "
 "<class_EditorImportPlugin_method_get_preset_count>` method returns the "
@@ -224,22 +223,19 @@ msgid ""
 "but we can make this method future-proof by returning the size of our "
 "``Presets`` enumeration."
 msgstr ""
-"El método :ref:`get_preset_count<class_EditorImportPlugin_get_preset_count>` "
-"devuelve la cantidad de presets que definen estos plugins. Sólo tenemos un "
-"preset ahora, pero podemos hacer que este método esté preparado para el "
-"futuro devolviendo el tamaño de nuestra enumeración ``Presets``."
+"El método :ref:`get_preset_count() "
+"<class_EditorImportPlugin_method_get_preset_count>` devuelve la cantidad de "
+"presets que definen estos plugins. Sólo tenemos un preset ahora, pero "
+"podemos hacer que este método esté preparado para el futuro devolviendo el "
+"tamaño de nuestra enumeración ``Presets``."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:210
-#, fuzzy
 msgid ""
 "Here we have the :ref:`get_preset_name() "
 "<class_EditorImportPlugin_method_get_preset_name>` method, which gives names "
 "to the presets as they will be presented to the user, so be sure to use "
 "short and clear names."
 msgstr ""
-"El método :ref:`get_visible_name<class_EditorImportPlugin_get_visible_name>` "
-"es responsable de informar el nombre del tipo que importa y se mostrará al "
-"usuario en el panel de Importación."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:215
 msgid ""
@@ -444,14 +440,13 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:347
-#, fuzzy
 msgid ""
 "We also return the result from the :ref:`ResourceSaver.save() "
 "<class_ResourceSaver_method_save>` method, so if there's an error in this "
 "step, the editor will know about it."
 msgstr ""
-"También devolvemos el resultado del método :ref:`ResourceSaver."
-"save<class_ResourceSaver_save>`, así que si hay un error en este paso, el "
+"También devolvemos el resultado del método :ref:`ResourceSaver.save() "
+"<class_ResourceSaver_method_save>`, así que si hay un error en este paso, el "
 "editor lo sabrá."
 
 #: ../../docs/tutorials/plugins/editor/import_plugins.rst:352

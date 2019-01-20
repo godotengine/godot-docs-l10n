@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,6 @@ msgid "Example of GDScript"
 msgstr "Exemple de GDScript"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:51
-#, fuzzy
 msgid ""
 "Some people can learn better by taking a look at the syntax, so here's a "
 "simple example of how GDScript looks."
@@ -354,9 +353,8 @@ msgid ""
 msgstr "Teste si une variable étend une classe donnée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
-#, fuzzy
 msgid "as"
-msgstr "case"
+msgstr "as"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Cast the value to a given type if possible."
@@ -470,9 +468,8 @@ msgid "Editor helper for debugger breakpoints."
 msgstr "Assistant de l'éditeur de points d'arrêt du débogueur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
-#, fuzzy
 msgid "preload"
-msgstr "load"
+msgstr "preload"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:220
 msgid "Preloads a class or variable. See `Classes as resources`_."
@@ -524,14 +521,12 @@ msgid "puppet"
 msgstr "puppet"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
-#, fuzzy
 msgid "remotesync"
-msgstr "remote"
+msgstr "remotesync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:234
-#, fuzzy
 msgid "mastersync"
-msgstr "master"
+msgstr "mastersync"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "puppetsync"
@@ -579,7 +574,7 @@ msgstr "Opérateurs"
 #, fuzzy
 msgid "The following is the list of supported operators and their precedence."
 msgstr ""
-"Ce qui est suit est la liste des opérateurs supportés et leur précédence"
+"Ce qui est suit est la liste des opérateurs supportés et leur précédence."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:253
 msgid "**Operator**"
@@ -1239,7 +1234,6 @@ msgstr ""
 "erreur."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:565
-#, fuzzy
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
@@ -1264,9 +1258,8 @@ msgstr ""
 "défini, sinon une erreur sera générée."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:582
-#, fuzzy
 msgid "Valid types are:"
-msgstr "Les types valides sont:"
+msgstr "Les types valides sont :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:584
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
@@ -1606,18 +1599,15 @@ msgid "Basic syntax:"
 msgstr "Syntaxe de base :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:868
-#, fuzzy
 msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr ""
 "**Cours rapide pour ceux qui sont familiers avec les instructions switch** :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:870
-#, fuzzy
 msgid "Replace ``switch`` with ``match``"
-msgstr "Remplace ``switch`` avec ``match``"
+msgstr "Remplace ``switch`` par ``match``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:871
-#, fuzzy
 msgid "Remove ``case``"
 msgstr "Enlever ``case``"
 
@@ -1631,9 +1621,8 @@ msgstr ""
 "pouvez utiliser ``continue`` pour poursuivre l’exécution de ``match``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:873
-#, fuzzy
 msgid "Change ``default`` to a single underscore."
-msgstr "Remplacer ``default`` par un simple underscore (_)."
+msgstr "Remplacer ``default`` par un unique underscore (_)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:876
 msgid "**Control flow**:"
@@ -1923,7 +1912,6 @@ msgstr ""
 "n'est donc généralement pas nécessaire d'appeler ``._init()`` explicitement."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1111
-#, fuzzy
 msgid ""
 "Unlike the call of a regular function, like in the above example with ``."
 "some_func``, if the constructor from the inherited class takes arguments, "
@@ -1939,9 +1927,8 @@ msgstr ""
 "Ceci est mieux expliqué par des exemples. Disons que nous avons ce scénario :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1141
-#, fuzzy
 msgid "There are a few things to keep in mind here:"
-msgstr "Il n'y a aucune restriction d'utilisation de Godot"
+msgstr "Il y a plusieurs choses à garder à l'esprit ici :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1143
 #, fuzzy
@@ -1965,7 +1952,6 @@ msgstr ""
 "``State.gd``"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1147
-#, fuzzy
 msgid ""
 "in the example above, ``e`` passed to the ``State.gd`` constructor is the "
 "same ``e`` passed in to ``Idle.gd``"
@@ -2084,7 +2070,6 @@ msgstr ""
 "changés dans l'éditeur :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1319
-#, fuzzy
 msgid ""
 "Restricting the flags to a certain number of named flags is also possible. "
 "The syntax is similar to the enumeration syntax:"
@@ -2187,13 +2172,12 @@ msgstr ""
 "valider les entrées."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1416
-#, fuzzy
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
-"L'accès dit *local* ne déclenchera *pas* le setter et le getter. En voici "
-"une illustration :"
+"L'accès *local* ne déclenchera *pas* le setter et le getter. En voici une "
+"illustration :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
 msgid "Tool mode"
@@ -2284,7 +2268,6 @@ msgstr ""
 "dépourvu avec des valeurs personnalisées :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1502
-#, fuzzy
 msgid ""
 "This is useful when a signal from many objects is connected to a single "
 "callback and the sender must be identified:"
@@ -2360,7 +2343,6 @@ msgstr ""
 "passent à un état invalide, par exemple :"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1612
-#, fuzzy
 msgid ""
 "``my_func`` will only continue execution once both buttons have been pressed."
 msgstr ""

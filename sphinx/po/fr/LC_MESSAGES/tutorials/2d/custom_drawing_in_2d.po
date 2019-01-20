@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -135,11 +135,11 @@ msgid ""
 "same node and a new ``_draw()`` call will happen."
 msgstr ""
 "Si vous devez redessiner parce qu'un état ou quelque chose d'autre a changé, "
-"appelez simplement :ref:`CanvasItem.update() <class_CanvasItem_update>` dans "
-"ce même nœud et un nouvel appel _draw() aura lieu."
+"appelez simplement :ref:`CanvasItem.update() "
+"<class_CanvasItem_method_update>` dans ce même nœud et un nouvel appel "
+"_draw() aura lieu."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:70
-#, fuzzy
 msgid ""
 "Here is a little more complex example, a texture variable that will be "
 "redrawn if modified:"
@@ -312,18 +312,16 @@ msgstr ""
 "produit, il nous faudra simplement augmenter le nombre de points."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:234
-#, fuzzy
 msgid "Draw the arc on the screen"
-msgstr "Dessiner l'arc sur l'écran"
+msgstr "Dessiner l'arc à l'écran"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:236
-#, fuzzy
 msgid ""
 "We now have a function that draws stuff on the screen; it is time to call it "
 "inside the ``_draw()`` function:"
 msgstr ""
-"Nous avons maintenant une fonction qui dessine des choses à l'écran: il est "
-"temps d'appeler la fonction _draw()."
+"Nous avons maintenant une fonction qui dessine des choses à l'écran, il est "
+"temps de l'appeler dans la fonction _draw() :"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:263
 msgid "Result:"
@@ -408,7 +406,6 @@ msgstr ""
 "moment où vous souhaitez actualiser le cadre."
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:396
-#, fuzzy
 msgid ""
 "Also, don't forget to modify the ``_draw()`` function to make use of these "
 "variables:"

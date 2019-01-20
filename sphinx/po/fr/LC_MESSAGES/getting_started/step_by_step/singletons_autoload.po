@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,6 @@ msgid "Using this concept, you can create objects that:"
 msgstr "En utilisant ce concept, vous pouvez créer des objets qui :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running"
 msgstr ""
 "Sont toujours chargées, quelle que soit la scène qui est ouverte dans "
@@ -102,18 +101,16 @@ msgstr ""
 "d'information entre les scènes"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:33
-#, fuzzy
 msgid "Can handle switching scenes and between-scene transitions"
-msgstr "Peut se charger des changements de scènes et des transitions"
+msgstr "Peut s'occuper des changements de scènes et des transitions"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
 "Agit comme un singleton, puisque GDScript ne supporte pas les variables "
-"globales du fait de sa conception."
+"globales du fait de sa conception"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
 #, fuzzy
@@ -190,7 +187,6 @@ msgid "Custom scene switcher"
 msgstr "Sélecteur de scène personnalisé"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -200,18 +196,17 @@ msgid ""
 msgstr ""
 "Ce court tutoriel vous expliquera comment faire un sélecteur de scènes avec "
 "l'auto-chargement. Pour une sélection simple de scène, la méthode :ref:"
-"`SceneTree.change_scene() class_SceneTree_change_scene>` suffit (décrite "
-"dans:ref:`doc_scene_tree`), donc cette méthode convient pour des "
+"`SceneTree.change_scene() class_SceneTree_method_change_scene>` suffit "
+"(décrite dans:ref:`doc_scene_tree`), donc cette méthode convient pour des "
 "comportements plus complexes lorsqu'il s'agit de jongler entre les scènes."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
-#, fuzzy
 msgid ""
 "To begin, download the template from here: :download:`autoload.zip <files/"
 "autoload.zip>` and open it in Godot."
 msgstr ""
-"D'abord télécharger le template à partir d'ici :  :download:`autoload.zip "
-"<files/autoload.zip>`, ensuite, l\"ouvrir."
+"D'abord télécharger le modèle à partir d'ici :  :download:`autoload.zip "
+"<files/autoload.zip>` , ensuite, l'ouvrir dans Godot."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:104
 msgid ""
@@ -251,7 +246,6 @@ msgstr ""
 "nouvelle entrée avec, pour nom, \"global\", qui pointe vers ce fichier :"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:124
-#, fuzzy
 msgid ""
 "Now whenever we run any scene in the project, this script will always be "
 "loaded."
@@ -272,7 +266,6 @@ msgstr ""
 "Cela veut dire que le dernier enfant de root est toujours la scène chargée."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:158
-#, fuzzy
 msgid ""
 "Now we need a function for changing the scene. This function needs to free "
 "the current scene and replace it with the requested one."
@@ -293,9 +286,9 @@ msgstr ""
 "Comme précisé dans le commentaire ci-dessus, nous devons éviter de supprimer "
 "la scène en cours d'utilisation (ex: son code est toujours en cours "
 "d'exécution), ainsi utiliser :ref:`Object.call_deferred() "
-"<class_Object_call_deferred>` est nécessaire à ce niveau. Le résultat est "
-"que la deuxième fonction sera exécutée ultérieurement lorsque le code de la "
-"scène en cours sera terminé."
+"<class_Object_method_call_deferred>` est nécessaire à ce niveau. Le résultat "
+"est que la deuxième fonction sera exécutée ultérieurement lorsque le code de "
+"la scène en cours sera terminé."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
 msgid ""
@@ -309,7 +302,6 @@ msgid "and"
 msgstr "et"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:273
-#, fuzzy
 msgid ""
 "Run the project and test that you can switch between scenes by pressing the "
 "button!"

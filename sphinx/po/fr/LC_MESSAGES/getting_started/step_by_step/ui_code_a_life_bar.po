@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -594,7 +594,6 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot écrit la méthode de rappel pour vous et vous y emmène"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
-#, fuzzy
 msgid ""
 "Inside the parentheses after the function name, add a ``player_health`` "
 "argument. When the player emits the ``health_changed`` signal, it will send "
@@ -976,20 +975,18 @@ msgid "Fade the bar when the Player dies"
 msgstr "Réaliser un fondu de la barre quand le joueur meurt"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:573
-#, fuzzy
 msgid ""
 "When the green character dies, it plays a death animation and fades out. At "
 "this point, we shouldn't show the interface anymore. Let's fade the bar as "
 "well when the character died. We will reuse the same ``Tween`` node as it "
 "manages multiple animations in parallel for us."
 msgstr ""
-"Quand le personnage vert meurt, il joue une animation de mort et disparait. "
-"A ce moment on ne veut plus afficher l'interface. Il faut faire disparaître "
-"la barre quand le personnage meurt. On réutilisera le nœud ``Tween`` "
-"puisqu'il peut gérer plusieurs animations en parallèle."
+"Quand le personnage vert meurt, il joue une animation de mort et disparaît. "
+"À ce moment on ne veut plus afficher l'interface. Faisons disparaître la "
+"barre quand le personnage meurt. On réutilisera le nœud ``Tween`` puisqu'il "
+"peut gérer plusieurs animations en parallèle."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:578
-#, fuzzy
 msgid ""
 "First, the ``GUI`` needs to connect to the ``Player``'s ``died`` signal to "
 "know when it died. Press :kbd:`F1` to jump back to the 2D Workspace. Select "
@@ -1002,18 +999,15 @@ msgstr ""
 "scène et cliquer dans l'inspecteur sur l'onglet Node."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:583
-#, fuzzy
 msgid "Find the ``died`` signal, select it, and click the Connect button."
 msgstr ""
 "Trouver et sélectionner le signal ``died``, et cliquer sur le bouton Connect."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:587
-#, fuzzy
 msgid "The signal should already have the Enemy connected to it"
-msgstr "Ce signal est déjà connecté à l’ennemi."
+msgstr "Le signal devrait déjà être connecté à l’ennemi"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:589
-#, fuzzy
 msgid ""
 "In the Connecting Signal window, connect to the ``GUI`` node again. The Path "
 "to Node should be ``../../GUI`` and the Method in Node should show "
@@ -1022,12 +1016,12 @@ msgid ""
 "Script Workspace."
 msgstr ""
 "Dans la fenêtre de connexion des signaux, connecter le nœud ``GUI``. Le "
-"chemin du nœud devrait être ``../../GUI`` et la méthode ``_on_Player_died``. "
-"Laisser l'option Make Function activé et cliquer sur Connect au bas de la "
-"fenêtre. Cela vous emmènera sur le script ``GUI.gd``."
+"chemin du nœud devrait être ``../../GUI`` et ``_on_Player_died`` devrait "
+"être afficher dans Method in Node . Laisser l'option Make Function activé et "
+"cliquer sur Connect au bas de la fenêtre. Cela vous emmènera sur le script "
+"``GUI.gd``."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:597
-#, fuzzy
 msgid "You should get these values in the Connecting Signal window"
 msgstr ""
 "Vous devriez avoir ces valeurs dans la fenêtre de connexion des signaux"
@@ -1063,7 +1057,6 @@ msgstr ""
 "shader, et de le modifier en utilisant une couleur avec `modulate`."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
-#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
@@ -1072,7 +1065,7 @@ msgstr ""
 "``modulate`` prend une valeur ``Color`` avec 4 canaux : rouge, vert, bleu et "
 "alpha. Si vous assombrissons n'importe lequel des trois premiers canaux, "
 "cela assombrit l'interface. Si nous abaissons le canal alpha, notre "
-"interface disparaît."
+"interface disparaît petit à petit."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
 msgid ""
@@ -1107,7 +1100,6 @@ msgstr ""
 "noeud ``Tween`` :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
@@ -1121,14 +1113,12 @@ msgstr ""
 "``_on_Player_died`` complète :"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679
-#, fuzzy
 msgid "And that is it. You may now play the game to see the final result!"
 msgstr ""
-"Et voilà c'est tout. Vous pouvez jouer au jeu à présent afin de voir le "
+"Et voilà c'est tout. Vous pouvez lancer le jeu à présent afin de voir le "
 "résultat final !"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:683
-#, fuzzy
 msgid "The final result. Congratulations for getting there!"
 msgstr "Le résultat final. Félicitations d'être arrivé jusque là !"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,10 +19,9 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:4
 msgid "Design the GUI"
-msgstr "Créer l'IHM"
+msgstr "Créer la GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
@@ -30,10 +29,11 @@ msgid ""
 "have a game GUI, ready to control with GDscript or VisualScript:"
 msgstr ""
 "Maintenant que vous avez acquis les bases, nous allons voir comment "
-"construire une interface graphique de jeu ( ou GUI) avec des composants "
+"construire une interface graphique utilisateur ( ou GUI) avec des composants "
 "d'interface réutilisables : une jauge de vie, une jauge d'énergie et des "
-"compteurs de bombes et de roupies. A la fin de ce tutoriel, vous aurez une "
-"interface graphique de jeu prête à contrôler avec GDscript ou Visualscript :"
+"compteurs de bombes et de rubis. A la fin de ce tutoriel, vous aurez une "
+"interface graphique utilisateur prête à utiliser avec GDscript ou "
+"Visualscript :"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:621
@@ -99,7 +99,7 @@ msgstr "Les barres de vie et d’énergie"
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:36
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:42
 msgid "The bomb and rupee counters on the right"
-msgstr "Le compteur de bombes et de roupies sur la droite"
+msgstr "Le compteur de bombes et de rubis sur la droite"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:38
 msgid ""
@@ -128,7 +128,7 @@ msgstr ""
 "``HBoxContainer`` pour gérer nos deux colonnes. Les deux barres s'empilent "
 "l'une sur l'autre à l'intérieur d'un ``VBoxContainer``. Et nous aurons "
 "besoin d'un dernier \"HBoxContainer\" dans la colonne de droite pour placer "
-"les compteurs de bombes et de roupies côte à côte."
+"les compteurs de bombes et de rubis côte à côte."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:53
 msgid "We get a clean UI layout with only 4 containers"
@@ -218,7 +218,6 @@ msgstr ""
 "séparera des deux compteurs à droite."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -413,7 +412,6 @@ msgstr ""
 "prenons le contrôle du Count MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -432,7 +430,7 @@ msgstr ""
 "qu'il ne prenne que la moitié gauche de l'arrière-plan.  Ensuite, "
 "sélectionnez le noeud ``Number``. Dans la barre d'outil de la fenêtre "
 "d'affichage, cliquez sur le menu ``Layout`` et cliquez sur ``Full Rect``. Le "
-"nœud sera redimensionné pour s'adapter au ``Background``. Rendez-vous dans "
+"nœud sera redimensionné pour s'adapter à l'arrière-plan. Rendez-vous dans "
 "l'inspecteur et changez sa propriété ``Align`` en ``Right`` et la propriété "
 "``VAlign`` en ``Center``. Le texte doit s'accrocher au centre du bord droit "
 "de l'arrière-plan. Redimensionner le nœud horizontalement pour qu'il prenne "
@@ -706,7 +704,6 @@ msgstr ""
 "la police. Notre compteur fonctionne maintenant comme prévu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so, we need to set the ``Bars`` container take all the available horizontal "
@@ -721,7 +718,7 @@ msgstr ""
 "l'espace horizontal. Sélectionnez le nœud ``Bars`` et faites défiler vers le "
 "bas jusqu'à la catégorie ``Size Flags``. Dans la catégorie ``Horizontal``, "
 "cochez la valeur ``Expand``. Le nœud ``Bars`` devrait se redimensionner et "
-"pousser le compteur à l'extrême droite de l'écran."
+"pousser le compteur à la droite de l'écran."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:331
 msgid ""
@@ -768,7 +765,6 @@ msgstr ""
 "transformer en un seul nœud ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
-#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -787,7 +783,6 @@ msgstr ""
 "ou \" Fusionner à partir de la scène \"."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
-#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -811,7 +806,6 @@ msgid "With no extra changes, our Bar is ready to use"
 msgstr "Sans aucun autre changement, votre barre est prête à être utilisé"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
-#, fuzzy
 msgid "Use scene inheritance to create the remaining elements"
 msgstr "Utiliser l'héritage de scène pour créer les éléments restants"
 
@@ -840,7 +834,6 @@ msgstr ""
 "un nœud pour chaque composant de l'interface utilisateur(UI)."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
-#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -1157,7 +1150,6 @@ msgstr ""
 "utilisateur."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The rupee counter should look something like this"
 msgstr "Le compteur de rubis devrait ressembler à ceci"
 
@@ -1229,7 +1221,6 @@ msgstr ""
 "la hauteur du fond des compteurs."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -1243,7 +1234,7 @@ msgstr ""
 "Nous avons un petit problème avec le label EP sur la barre d'énergie : Les 2 "
 "barres doivent être alignées verticalement. Cliquez sur l'icône à côté du "
 "nœud ``EnergyBar`` pour ouvrir sa scène. Sélectionnez le nœud ``Count`` et "
-"faites défiler vers le bas jusqu'à la section ``Custom Constant``. Mettre "
+"faites défiler vers le bas jusqu'à la section ``Custom Constants``. Mettre "
 "``Margin Left`` à ``20``. Dans la section ``Rect``, réglez ``Min Size`` à "
 "100, la même valeur que sur la barre de vie. ``Count`` devrait maintenant "
 "avoir une marge à gauche. Si vous sauvegardez et retournez à la scène de "
@@ -1254,13 +1245,12 @@ msgid "The 2 bars align perfectly"
 msgstr "Les 2 barres sont parfaitement aligné"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
-#, fuzzy
 msgid ""
 "We could have set up the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
 "changes propagate through the project!"
 msgstr ""
-"Nous aurions pu installer ``EnergyBar`` de cette façon plus tôt. Mais cela "
+"Nous aurions pu implémenter ``EnergyBar`` de cette façon plus tôt. Mais cela "
 "vous montre que vous pouvez retourner à n'importe quelle scène à tout "
 "moment, l'ajuster et voir les changements se répercuter tout le long du "
 "projet !"
@@ -1299,14 +1289,14 @@ msgstr ""
 "vous pouvez voir à quoi ressemble l'interface dans le contexte du jeu."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
-#, fuzzy
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
 "zip>`."
 msgstr ""
 "Félicitation, vous avez atteint la fin de ce long tutoriel. Vous pouvez "
-"retrouver le projet final `ici <#>`__."
+"retrouver le projet final ici: :download:`ui_gui_design.zip <files/"
+"ui_gui_design.zip>`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
 msgid ""

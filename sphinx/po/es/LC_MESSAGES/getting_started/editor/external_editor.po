@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,27 +22,25 @@ msgid "Using an external text editor"
 msgstr "Uso de un editor de texto externo"
 
 #: ../../docs/getting_started/editor/external_editor.rst:6
-#, fuzzy
 msgid ""
 "While Godot has an inbuilt text editor, some developers have a tendency to "
 "want to use a text editor they are familiar with. Godot provides this option "
 "via the options under ``Editor -> Editor Settings -> Text Editor -> "
 "External``"
 msgstr ""
-"Mientras que godot tiene un editor de texto incorporado, algunos "
+"A pesar de que Godot tiene un editor de texto incorporado, algunos "
 "desarrolladores tienen la tendencia de querer usar un editor de texto con el "
 "que estén más familiarizados. Godot ofrece esta posibilidad en el apartado "
 "``Editor -> Ajustes del editor -> Text Editor -> External``"
 
 #: ../../docs/getting_started/editor/external_editor.rst:13
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command line flags. The flags "
 "allow you to better integrate the editor with Godot. Godot will replace the "
 "following inside the flags parameter:"
 msgstr ""
-"Hay dos campos: la ruta del ejecutable y los flags de la línea de comandos. "
-"Los flags te permiten integrar mejor el editor con Godot. Godot reemplazará "
+"Hay dos campos: la ruta del ejecutable y las flags de la línea de comandos. "
+"Las flags te permiten integrar mejor el editor con Godot. Godot reemplazará "
 "lo siguiente dentro del parámetro flags:"
 
 #: ../../docs/getting_started/editor/external_editor.rst:18
@@ -98,7 +96,8 @@ msgid "Exec Flags"
 msgstr "Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-msgid "geany/kate"
+#, fuzzy
+msgid "Geany/Kate"
 msgstr "geany/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
@@ -106,7 +105,8 @@ msgid "{file} --line {line} --column {col}"
 msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-msgid "atom/sublime text"
+#, fuzzy
+msgid "Atom/Sublime Text"
 msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
@@ -114,10 +114,19 @@ msgid "{file}:{line}"
 msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-msgid "jetbrains rider"
-msgstr ""
+#, fuzzy
+msgid "JetBrains Rider"
+msgstr "jetbrains rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-#, fuzzy
 msgid "--line {line} {file}"
-msgstr "{file} --line {line} --column {col}"
+msgstr "--line {line} {file}"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+#, fuzzy
+msgid "Visual Studio Code"
+msgstr "Visual Studio o VS Code"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "{project} --goto {file}:{line}:{col}"
+msgstr ""

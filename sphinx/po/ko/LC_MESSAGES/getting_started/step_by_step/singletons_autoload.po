@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -124,7 +124,6 @@ msgstr ""
 "을 선택하고 \"오토로드\" 탭으로 갑니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
-#, fuzzy
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which is assigned as the node's ``name`` property. The "
@@ -166,7 +165,6 @@ msgid "Custom scene switcher"
 msgstr "커스텀 씬 전환기"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -175,10 +173,10 @@ msgid ""
 "this method provides more functionality."
 msgstr ""
 "이 튜토리얼은 오토로드를 사용해 씬 전환기를 만드는 법을 설명할 것입니다. 기"
-"본 씬 전환을 위해,  :ref:`SceneTree.change_scene() "
-"<class_SceneTree_change_scene>` 메서드를 사용할 수 있습니다 (자세한 점은 :"
-"ref:`doc_scene_tree` 를 참고하세요). 하지만, 씬을 전환할 때 더 복잡한 행동을 "
-"원한다면, 이 메서드가 더 많은 기능성을 제공합니다."
+"본 씬 전환을 위해, :ref:`SceneTree.change_scene() "
+"<class_SceneTree_method_change_scene>` 메서드를 사용할 수 있습니다 (자세한 점"
+"은 :ref:`doc_scene_tree`\\ 를 참고하세요). 하지만, 씬을 전환할 때 더 복잡한 "
+"행동을 원한다면, 이 메서드가 더 많은 기능성을 제공합니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:101
 msgid ""
@@ -252,7 +250,6 @@ msgstr ""
 "고 요청하는 것으로 바꾸어야 합니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
-#, fuzzy
 msgid ""
 "As mentioned in the comments above, we need to avoid the situation of "
 "deleting the current scene while it is still being used (i.e. its code is "
@@ -263,8 +260,8 @@ msgid ""
 msgstr ""
 "위의 설명에서 언급했듯이, 우리는 현재 씬을 사용하는 도중 (즉 코드가 여전히 실"
 "행하는 도중) 삭제하는 상황을 피해야 합니다, 이 점에서 :ref:`Object."
-"call_deferred() <class_Object_call_deferred>` 를 사용해야 합니다. 결과는 현"
-"재 씬의 코드가 완료될 때 두 번째 함수가 나중에 실행하는 것입니다."
+"call_deferred() <class_Object_method_call_deferred>`\\ 를 사용해야 합니다. 결"
+"과는 현재 씬의 코드가 완료될 때 두 번째 함수가 나중에 실행하는 것입니다."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,7 +95,8 @@ msgid "Exec Flags"
 msgstr "Exec 标志"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-msgid "geany/kate"
+#, fuzzy
+msgid "Geany/Kate"
 msgstr "geany/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
@@ -103,7 +104,8 @@ msgid "{file} --line {line} --column {col}"
 msgstr "{file} --行 {line} --列 {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-msgid "atom/sublime text"
+#, fuzzy
+msgid "Atom/Sublime Text"
 msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
@@ -111,9 +113,18 @@ msgid "{file}:{line}"
 msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-msgid "jetbrains rider"
+#, fuzzy
+msgid "JetBrains Rider"
 msgstr "jetbrains车手"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "--line {line} {file}"
 msgstr "--行 {line} {file}"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "{project} --goto {file}:{line}:{col}"
+msgstr ""

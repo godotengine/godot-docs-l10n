@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,11 +113,12 @@ msgid ""
 "convenience."
 msgstr ""
 "Les événements d'entrées reçus dans le rappel :ref:`MainLoop._input_event() "
-"<class_MainLoop__input_event>` sont multipliés par cette transformation, "
-"mais ils sont absents de ceux mentionnés plus haut. Pour convertir les "
-"coordonnées InputEvent en coordonnées locales CanvasItem, la fonction :ref:"
-"`CanvasItem.make_input_local() <class_CanvasItem_make_input_local>` a été "
-"ajoutée pour plus de commodité."
+"<class_MainLoop_method__input_event>` sont multipliés par cette "
+"transformation, mais ils sont absents de ceux mentionnés plus haut. Pour "
+"convertir les coordonnées InputEvent en coordonnées locales CanvasItem, la "
+"fonction :ref:`CanvasItem.make_input_local() "
+"<class_CanvasItem_method_make_input_local>` a été ajoutée pour plus de "
+"commodité."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:50
 msgid "Transform order"
@@ -155,39 +156,36 @@ msgid "CanvasItem"
 msgstr "CanvasItem"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_global_transform() "
-"<class_CanvasItem_get_global_transform>`"
+"<class_CanvasItem_method_get_global_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid "CanvasLayer"
 msgstr "CanvasLayer"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_method_get_canvas_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_canvas_transform() "
-"<class_CanvasItem_get_canvas_transform>`"
+"<class_CanvasItem_method_get_canvas_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid "CanvasLayer+GlobalCanvas+Stretch"
 msgstr "CanvasLayer+GlobalCanvas+Etirement"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:69
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_viewport_transform() "
-"<class_CanvasItem_get_viewport_transform>`"
+"<class_CanvasItem_method_get_viewport_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:72
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,13 +40,12 @@ msgstr ""
 "dinero"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
-"Aprenderás a diseñar eficientemente la UI del juego y a usar los nodos de "
+"Aprenderás a diseñar eficientemente la UI del juego y a usar los nodos "
 "Control de Godot. Esta página se centra en la parte visual: todo lo que "
 "haces desde el editor. Para aprender a programar una barra de vida, lee :doc:"
 "`ui_code_a_life_bar`"
@@ -96,15 +95,14 @@ msgid "The UI's rough plan or mockup"
 msgstr "El plan aproximado o maqueta de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:47
-#, fuzzy
 msgid ""
 "Placeholder doesn't have to mean ugly, but you should keep the graphics "
 "simple and clean. Avoid special effects, animation, and detailed "
 "illustration before you have players playtest your UI. Otherwise:"
 msgstr ""
-"Los marcadores de posición no tienen por qué ser feos, pero debes mantener "
-"los gráficos simples y limpios. Evita los efectos especiales, la animación y "
-"las ilustraciones detalladas antes de que los jugadores prueben tu UI. De lo "
+"Los placeholders no tienen por qué ser feos, pero debes mantener los "
+"gráficos simples y limpios. Evita los efectos especiales, la animación y las "
+"ilustraciones detalladas antes de que los jugadores prueben tu UI. De lo "
 "contrario:"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:51
@@ -480,7 +478,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "No hay espacio entre el logo y los otros elementos de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid ""
 "To center the characters on the right, we'll use a ``CenterContainer``.  Add "
 "a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the "
@@ -494,9 +491,9 @@ msgstr ""
 "Añade un nodo ``CenterContainer`` como hijo del ``HBoxContainer``. A "
 "continuación, en el Inspector, baja hasta la categoría ``Size Flags`` y haz "
 "clic en el campo situado a la derecha de la propiedad ``Vertical`` y marca "
-"``Expand``. Haz lo mismo con la propiedad \"Horizontal\". Finalmente "
-"arrastra y suelta los elementos en el ``CenterContainer``. El elemento se "
-"centrará automáticamente."
+"``Expand`` además de ``Fill``. Haz lo mismo con la propiedad \"Horizontal\". "
+"Finalmente arrastra y suelta los elementos en el ``CenterContainer``. El "
+"elemento se centrará automáticamente."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
 msgid ""
@@ -531,7 +528,6 @@ msgstr ""
 "disposición de la UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -542,12 +538,12 @@ msgid ""
 "and ``Version`` elements."
 msgstr ""
 "Ahora que hemos agrupado las opciones del menú, podemos decirle a su "
-"container que se expanda para que ocupe el mayor espacio vertical posible. "
+"Container que se expanda para que ocupe el mayor espacio vertical posible. "
 "Selecciona el nodo ``MenuOptions``. En el Inspector, ve hacia abajo a la "
 "categoría ``Size Flags``. Haz clic en el campo a la derecha de la propiedad "
-"``Vertical`` y activa ``Expand``. El container se expande para ocupar todo "
-"el espacio vertical disponible. Pero respeta a sus prójimos, los elementos "
-"```Logo`` y ``Version``."
+"``Vertical`` y activa ``Expand`` y ``Fill``. El Container se expande para "
+"ocupar todo el espacio vertical disponible. Pero respeta a sus prójimos, los "
+"elementos ``Logo`` y ``Version``."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:252
 msgid ""
@@ -588,19 +584,18 @@ msgstr ""
 "Sin una sola línea de código, tenemos un menú principal preciso y responsivo."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
-"¡Felicidades por llegar hasta aquí! Puedes descargar el `menú final <#>`__ "
-"para compararlo con el tuyo. En el siguiente tutorial, crearás una Interfaz "
-"de Usuario de Juego (GUI) con barras y contadores de elementos."
+"¡Felicidades por llegar hasta aquí! Puedes descargar el menú final :download:"
+"`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` para compararlo "
+"con el tuyo. En el siguiente tutorial, crearás una Interfaz de Usuario de "
+"Juego (GUI) con barras y contadores de items."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
-#, fuzzy
 msgid ""
 "A responsive User Interface is all about making sure our UIs scale well on "
 "all screen types. TV screens and computer displays have different sizes and "
@@ -610,7 +605,7 @@ msgstr ""
 "Una interfaz de usuario con capacidad responsiva consiste en asegurarse de "
 "que nuestras interfaces de usuario se escalen bien en todos los tipos de "
 "pantalla. Las pantallas de TV y las pantallas de computadoras tienen "
-"diferentes tamaños y proporciones. En Godot, utilizamos containers para "
+"diferentes tamaños y proporciones. En Godot, utilizamos Containers para "
 "controlar la posición y el tamaño de los elementos UI."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:285

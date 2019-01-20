@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,6 @@ msgstr ""
 "cada tipo de objeto."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:16
-#, fuzzy
 msgid "In this guide, you will learn:"
 msgstr "En esta guía aprenderás:"
 
@@ -159,9 +158,8 @@ msgstr ""
 "movimiento y respuestas a colisiones debe ser implementado en código."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:55
-#, fuzzy
 msgid "Collision shapes"
-msgstr "Formas de Colisión"
+msgstr "Figuras de Colisión"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:57
 msgid ""
@@ -235,9 +233,9 @@ msgid ""
 msgstr ""
 "Para evitar esta inexactitud, cualquier código que necesite acceder a las "
 "propiedades de un cuerpo debe ejecutarse en la función :ref:`Nodo."
-"physics_process() <class_Node__physics_process>`, la cual es invocada por el "
-"motor de cada paso de la física a una velocidad de cuadro constante (60 "
-"veces por segundo por defecto)."
+"physics_process() <class_Node_method__physics_process>`, la cual es invocada "
+"por el motor de cada paso de la física a una velocidad de cuadro constante "
+"(60 veces por segundo por defecto)."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:90
 #, fuzzy
@@ -553,7 +551,7 @@ msgstr ""
 "cuerpo rígido puede resultar en un comportamiento inesperado. Si necesitas "
 "alterar cualquier propiedad relacionada a la física, deberás usar la función "
 "interna o callback :ref:`_integrate_forces() "
-"<class_RigidBody2D__integrate_forces>` callback instead of "
+"<class_RigidBody2D_method__integrate_forces>` callback instead of "
 "``_physics_process()``. En este callback, tienes acceso al :ref:"
 "`Physics2DDirectBodyState <class_Physics2DDirectBodyState>` (representación "
 "del estado físico) del cuerpo, lo que permite cambiar propiedades de manera "
@@ -586,9 +584,9 @@ msgstr ""
 "Cuando un cuerpo rígido se duerme, la función ``_integrate_forces`` no es "
 "llamada. Para evitar este comportamiento debemos mantener el cuerpo "
 "despierto creando una colisión, aplicando una fuerza sobre él, o "
-"desactivando la propiedad  :ref:`can_sleep <class_RigidBody2D_can_sleep>` "
-"(puede dormirse). Ten en cuenta que esto puede impactar negativamente en el "
-"desempeño."
+"desactivando la propiedad  :ref:`can_sleep "
+"<class_RigidBody2D_property_can_sleep>` (puede dormirse). Ten en cuenta que "
+"esto puede impactar negativamente en el desempeño."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:272
 msgid "Contact reporting"
@@ -609,10 +607,12 @@ msgstr ""
 "Por defecto, los cuerpos rígidos no mantienen registro de los contactos "
 "porque esto requiere gran cantidad de memoria si hay muchos en la escena. "
 "Para habilitar el reporte de contactos, asigna un valor mayor a cero a la "
-"propiedad :ref:`contacts_reported <class_RigidBody2D_contacts_reported>`. "
-"Los contactos se pueden obtener mediante la función :ref:"
-"`Physics2DDirectBodyState.get_contact_count() "
-"<class_Physics2DDirectBodyState_get_contact_count>` y otras relacionadas."
+"propiedad :ref:`contacts_reported "
+"<class_RigidBody2D_property_contacts_reported>`. Los contactos se pueden "
+"obtener mediante la función :ref:`Physics2DDirectBodyState."
+"get_contact_count() "
+"<class_Physics2DDirectBodyState_method_get_contact_count>` y otras "
+"relacionadas."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:281
 #, fuzzy
@@ -622,9 +622,9 @@ msgid ""
 "`RigidBody2D <class_RigidBody2D>` for the list of available signals."
 msgstr ""
 "El monitoreo de contactos mediante señales se puede activar mediante la "
-"propiedad  :ref:`contact_monitor <class_RigidBody2D_contact_monitor>`. Ver :"
-"ref:`RigidBody2D <class_RigidBody2D>` para conocer la lista de señales "
-"disponibles."
+"propiedad  :ref:`contact_monitor "
+"<class_RigidBody2D_property_contact_monitor>`. Ver :ref:`RigidBody2D "
+"<class_RigidBody2D>` para conocer la lista de señales disponibles."
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:286
 msgid "KinematicBody2D"
@@ -676,7 +676,8 @@ msgstr ""
 #: ../../docs/tutorials/physics/physics_introduction.rst:307
 #, fuzzy
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
-msgstr ":ref:`move_and_collide <class_KinematicBody2D_move_and_collide>`"
+msgstr ""
+":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:309
 msgid ""
@@ -706,7 +707,7 @@ msgstr "O para rebotar del objeto colisionado:"
 #: ../../docs/tutorials/physics/physics_introduction.rst:374
 #, fuzzy
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
-msgstr ":ref:`move_and_slide <class_KinematicBody2D_move_and_slide>`"
+msgstr ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:376
 msgid ""

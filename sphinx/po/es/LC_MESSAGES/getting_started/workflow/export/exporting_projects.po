@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Exporting projects"
 msgstr "Exportando proyectos"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:9
-#, fuzzy
 msgid "Why export?"
 msgstr "¿Porqué exportar?"
 
@@ -51,19 +50,16 @@ msgid "On PC"
 msgstr "En PC"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:22
-#, fuzzy
 msgid ""
 "Distributing a game project on PC with Godot is rather easy. Drop the Godot "
 "binary in the same directory as the ``project.godot`` file, then compress "
 "the project directory and you are done."
 msgstr ""
 "Distribuir un proyecto de juego en PC con Godot es bastante fácil. Deje el "
-"binario godot.exe (o godot) en el mismo lugar que el archivo engine.cfg, "
-"comprímalo y listo. Esto puede ser utilizado para hacer instaladores "
-"personalizados."
+"binario godot.exe (o godot) en el mismo lugar que el archivo project.godot, "
+"comprima el proyecto y listo."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:26
-#, fuzzy
 msgid ""
 "It sounds simple, but there are probably a few reasons why the developer may "
 "not want to do this. The first one is that it may not be desirable to "
@@ -73,11 +69,13 @@ msgid ""
 "binary, which is smaller in size, more optimized and does not include tools "
 "like the editor and debugger."
 msgstr ""
-"Suena sencillo, pero probablemente haya algunas razones por las que el "
-"desarrollador no quiera hacer esto. La primera es que podría no ser "
-"conveniente distribuir una gran cantidad de archivos. Algunos "
-"desarrolladores no les gustará que los usuarios curiosos se fijen en cómo se "
-"hizo el juego, otros pueden encontrarlo poco elegante, etc."
+"Esto suena sencillo, pero probablemente haya algunas razones por las que el "
+"desarrollador no quiera hacerlo. La primera es que podría no ser conveniente "
+"distribuir una gran cantidad de archivos. Algunos desarrolladores no les "
+"gustará que los usuarios curiosos se fijen en cómo se hizo el juego, otros "
+"pueden encontrarlo poco elegante, etc. Otra razon es que se puede querer "
+"tener un binario compilado especialmente para el juego, de menor tamaño o "
+"más optimizado, que no incluya herramientas del editor y depurador."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:34
 msgid ""
@@ -92,7 +90,6 @@ msgid "On mobile"
 msgstr "En móvil"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:40
-#, fuzzy
 msgid ""
 "The same scenario on mobile platforms is a little worse. To distribute a "
 "project on those devices, a binary for each of those platforms is built, "
@@ -116,7 +113,6 @@ msgstr ""
 "desarrollo, puede ser frustrante verse forzado a hacerlo cuando no se desea."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:50
-#, fuzzy
 msgid ""
 "There is also another problem with this approach: different devices prefer "
 "some data in different formats to run. The main example of this is texture "
@@ -124,8 +120,8 @@ msgid ""
 "standardized for more than a decade, but mobile devices use different "
 "formats for texture compression, such as PVRTC (iOS) or ETC (Android)."
 msgstr ""
-"Hay otro problema con este sistema. Diferentes dispositivos prefieren "
-"algunos tipos de datos en formatos diferentes para funcionar. El mayor "
+"Hay otro problema con este sistema: diferentes dispositivos prefieren "
+"algunos tipos de datos en formatos distintos para funcionar. El mejor "
 "ejemplo de esto es la compresión de texturas. Todo el hardware de PC usa "
 "compresión S3TC (BC) y ese ha sido el estándar desde hace más de una década, "
 "pero los dispositivos móviles usan diferentes formatos para la compresión de "
@@ -147,32 +143,30 @@ msgstr ""
 "continúa creciendo."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:64
-#, fuzzy
 msgid "To open the export menu, click the **Export** button:"
-msgstr "Para abrir el menú de exportación, haga clic en el botón \"Exportar\":"
+msgstr ""
+"Para la pantalla de exportación, haz clic en el el menu \"Proyecto>Exportar"
+"\":"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:68
-#, fuzzy
 msgid ""
 "The export menu will open. However, it will be completely empty. This is "
 "because we need to add an export preset."
 msgstr ""
-"Se abrirá el menú de exportación, no obstante estará completamente vacío."
+"Se abrirá el menú de exportación, no obstante estará completamente vacío. "
+"Esto es porque hay que agregar configuraciones de exportación (Presets)."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:73
-#, fuzzy
 msgid ""
 "To create an export preset, click the **Add…** button at the top of the "
 "export menu. This will open a drop-down list of platforms to choose from for "
 "an export preset."
 msgstr ""
-"Esto es porque primero necesitamos añadir algunos presets. Para añadirlos "
-"haz clic en el botón `Añadir` que hay encima del menú de exportación. Esto "
-"abrirá una lista con todas la plataformas elegibles para hacer un preset de "
-"exportación."
+"Para añadir un preset, haz click en el botón `Añadir` que hay encima del "
+"panel de exportación. Esto abrirá una lista con todas la plataformas "
+"disponibles para hacer un preset de exportación."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:79
-#, fuzzy
 msgid ""
 "The default options are often enough to export, so tweaking them is usually "
 "not necessary. However, many platforms require additional tools (SDKs) to be "
@@ -181,14 +175,13 @@ msgid ""
 "is missing and will not allow the user to export for that platform until "
 "they resolve it:"
 msgstr ""
-"Las opciones por defecto deberían ser suficientes para hacer una "
-"exportación, por lo tanto, ajustarlas no es necesario, pero proporciona un "
-"nivel extra de control. Ahora bien, muchas plataformas necesitan la "
-"instalación de herramientas adicionales (SDKs) para poder exportar. "
-"Adicionalmente, Godot necesita las plantillas de exportación instaladas para "
-"crear los empaquetados. El menú de exportación se quejará cuando algo no "
-"esté instalado y no dejará que el usuario exporte hasta que las dependencias "
-"sean resueltas:"
+"Las opciones por defecto deberían ser suficientes para hacer exportar, así "
+"que ajustarlas no es necesario normalmente. Ahora bien, muchas plataformas "
+"necesitan la instalación de herramientas adicionales (SDKs) para poder "
+"exportar. Adicionalmente, Godot necesita las plantillas de exportación "
+"instaladas para crear paquetes. El menú de exportación se mostrará un error "
+"cuando no encuentre algo y no dejará que el usuario exporte a la plataforma "
+"hasta que se resuelva el problema:"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:88
 msgid ""
@@ -203,16 +196,15 @@ msgid "Export templates"
 msgstr "Plantillas de exportación"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:94
-#, fuzzy
 msgid ""
 "Apart from setting up the platform, the export templates must be installed "
 "to be able to export projects. They can be obtained as a TPZ file (which is "
 "a renamed ZIP archive) from the `download page of the website <https://www."
 "godotengine.org/download>`_."
 msgstr ""
-"Aparte de configurar la plataforma, las plantillas de exportación deben de "
-"instalarse para poder exportar proyectos. Se pueden conseguir como un "
-"archivo .tpz (un .zip renombrado) desde la `página de descarga de la web "
+"Aparte de configurar la plataforma, las plantillas de exportación deben "
+"estar instaladas para poder exportar proyectos. Se pueden conseguir como un "
+"archivo TPZ (un ZIP renombrado) desde la `página de descarga de la web "
 "<https://www.godotengine.org/download>`_."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:99
@@ -300,9 +292,8 @@ msgstr ""
 "dispositivos ópticos."
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:136
-#, fuzzy
 msgid "Exporting from the command line"
-msgstr "Exportar desde la línea de comandos"
+msgstr "Exportando desde la línea de comandos"
 
 #: ../../docs/getting_started/workflow/export/exporting_projects.rst:138
 #, fuzzy

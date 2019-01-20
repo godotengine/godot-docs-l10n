@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,7 +171,7 @@ msgid ""
 msgstr ""
 "Когда узел является частью дерева сцен, :ref:`SceneTree <class_SceneTree>` "
 "синглтон (В следующем уроке будет рассмотрен подробнее.) можно получить, "
-"просто вызвав :ref:`Node.get_tree() <class_Node_get_tree>`."
+"просто вызвав :ref:`Node.get_tree() <class_Node_method_get_tree>`."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
 msgid "Root viewport"
@@ -314,7 +314,7 @@ msgid ""
 msgstr ""
 "После загрузки сцены часто бывает что нужно сменить её на другую. Самый "
 "простой способ заключается в использовании функции :ref:`SceneTree."
-"change_scene() <class_SceneTree_change_scene>`:"
+"change_scene() <class_SceneTree_method_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 #, fuzzy
@@ -326,7 +326,7 @@ msgstr ""
 "Вместо использования путей к файлам можно использовать готовые ресурсы :ref:"
 "`PackedScene <class_PackedScene>`, используя аналогичную функцию :ref:"
 "`SceneTree.change_scene_to(PackedScene scene) "
-"<class_SceneTree_change_scene_to>`:"
+"<class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 msgid ""

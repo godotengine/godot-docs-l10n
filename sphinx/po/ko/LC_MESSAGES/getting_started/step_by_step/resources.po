@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,30 +26,28 @@ msgid "Nodes and resources"
 msgstr "노드와 리소스"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:9
-#, fuzzy
 msgid ""
 "Up to this tutorial, we focused on the :ref:`Node <class_Node>` class in "
 "Godot as that's the one you use to code behavior and most of the engine's "
 "features rely on it. There is another datatype that is just as important: :"
 "ref:`Resource <class_Resource>`."
 msgstr ""
-"지금까지, :ref:`Nodes <class_Node>` 클래스는  Godot에서 가장 중요한 데이터 형"
+"지금까지, :ref:`Node <class_Node>` 클래스는  Godot에서 가장 중요한 데이터 형"
 "식으로 엔진 내 대부분의 기능과 작동이 이것으로 이루어 졌다는 것에 초점을 두었"
 "습니다. 이와 똑같이 중요한 데이터 형식이 있습니다: :ref:`Resource "
 "<class_Resource>` 입니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:15
-#, fuzzy
 msgid ""
 "*Nodes* give you functionality: they draw sprites, 3D models, simulate "
 "physics, arrange user interfaces, etc. **Resources** are **data "
 "containers**. They don't do anything on their own: instead, nodes use the "
 "data contained in resources."
 msgstr ""
-"*노드*는 다음과 같은 기능을 제공합니다: 스프라이트를 그려주고 3D 모델링을 해"
-"주며 물리 시뮬레이션을 해주고, 유저 인터페이스 정리 등을 해줍니다.\n"
-"**리소스**는 **데이터 컨테이너**입니다. 리소스 그 자체로는 아무 일도 하지 않"
-"습니다: 대신에 노드가 리소스에 포함되어 있는 데이터를 사용합니다."
+"*노드*\\ 는 다음과 같은 기능을 제공합니다: 스프라이트를 그려주고 3D 모델링을 "
+"해주며 물리 시뮬레이션을 해주고, 유저 인터페이스 정리 등을 해줍니다.\n"
+"**리소스**\\ 는 **데이터 컨테이너**\\ 입니다. 리소스 그 자체로는 아무 일도 하"
+"지 않습니다: 대신에 노드가 리소스에 포함되어 있는 데이터를 사용합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:19
 msgid ""
@@ -67,7 +65,6 @@ msgstr ""
 "ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:26
-#, fuzzy
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
 "copy of that resource is already in memory, trying to load the resource "
@@ -80,7 +77,6 @@ msgstr ""
 "없습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:31
-#, fuzzy
 msgid ""
 "Every object, be it a Node or a Resource, can export properties. There are "
 "many types of Properties, like String, integer, Vector2, etc., and any of "
@@ -119,21 +115,19 @@ msgstr ""
 "<class_Texture>` 가 있습니다:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:51
-#, fuzzy
 msgid ""
 "Clicking the resource preview allows us to view and edit the resource's "
 "properties."
 msgstr "리소스 미리보기를 클릭해서 리소스를 보고 속성을 편집합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:55
-#, fuzzy
 msgid ""
 "The path property tells us where the resource comes from. In this case, it "
 "comes from a PNG image called ``robi.png``. When the resource comes from a "
 "file like this, it is an external resource. If you erase the path or this "
 "path is empty, it becomes a built-in resource."
 msgstr ""
-"경로 속성은 리소스가 어디에서 오는지를 알려줍니다. 이 경우에 리소스는  "
+"경로 속성은 리소스가 어디에서 오는 지를 알려줍니다. 이 경우에 리소스는  "
 "``robi.png``\\ 라 부르는 PNG 이미지에서 왔습니다. 리소스가 이와 같은 파일에"
 "서 올 때, 그것은 외부 리소스 입니다. 경로를 지우거나 경로가 비어있다면, 그것"
 "은 내장 리소스가 됩니다."
@@ -193,13 +187,12 @@ msgstr ""
 "에 압축됩니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:112
-#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instance() <class_PackedScene_method_instance>` method."
 msgstr ""
 "씬의 인스턴스를 얻기 위해, :ref:`PackedScene.instance() "
-"<class_PackedScene_instance>` 메서드를 사용해야 합니다."
+"<class_PackedScene_method_instance>` 메서드를 사용해야 합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:133
 msgid ""
@@ -211,7 +204,6 @@ msgstr ""
 "로 반환합니다. 그런 뒤 이것을 다른 노드의 자식으로 추가할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:137
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` function is pretty fast, you can create "
@@ -220,10 +212,10 @@ msgid ""
 "shared between the scene instances."
 msgstr ""
 "이 접근은 여러 장점이 있습니다. :ref:`PackedScene.instance() "
-"<class_PackedScene_instance>` 함수가 꽤 빠르기 때문에, 씬에 새로운 적, 총알, "
-"효과 등이 빠르게 추가되고 삭제될 수 있습니다, 각각을 디스크에서 불러올 필요"
-"가 없다는 것입니다. 항상 그래왔듯, 이미지, 메시 등은 모두 씬 인스턴스와 공유"
-"한다는 것을 명심하세요."
+"<class_PackedScene_method_instance>` 함수가 꽤 빠르기 때문에, 씬에 새로운 "
+"적, 총알, 효과 등이 빠르게 추가되고 삭제될 수 있습니다, 각각을 디스크에서 불"
+"러올 필요가 없다는 것입니다. 항상 그래왔듯, 이미지, 메시 등은 모두 씬 인스턴"
+"스와 공유한다는 것을 명심하세요."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:144
 msgid "Freeing resources"
@@ -258,7 +250,6 @@ msgstr ""
 "계산 메모리 관리를 상속합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:158
-#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
@@ -393,7 +384,6 @@ msgstr ""
 "\"나 \"다른 이름으로 저장...\"을 선택합니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:225
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_scripting_continued_class_name>`, then it streamlines the process. "
@@ -401,11 +391,10 @@ msgid ""
 "creation dialog. This will auto-add your script to the Resource object you "
 "create."
 msgstr ""
-"스크립트의 언어가 `스크립트 클래스 <https://godot.readthedocs.io/en/latest/"
-"getting_started/step_by_step/scripting_continued.html#register-scripts-as-"
-"classes>`__\\ 를 지원한다면, 프로세스를 간소화합니다. 스크립트에 이름만 정의"
-"하는 것으로 인스펙터의 생성 대화 상자에 리소스를 추가할 것입니다. 이렇게 하"
-"면 생성된 리소스 객체에 스크립트가 자동으로 추가됩니다."
+"스크립트의 언어가 :ref:`스크립트 클래스 <doc_scripting_continued_class_name>`"
+"\\를 지원한다면, 프로세스가 간소화됩니다. 스크립트에 이름만 정의하는 것으로 "
+"인스펙터의 생성 대화 상자에 리소스를 추가할 것입니다. 이렇게 하면 생성된 리소"
+"스 객체에 스크립트가 자동으로 추가됩니다."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:230
 msgid "Let's see some examples."

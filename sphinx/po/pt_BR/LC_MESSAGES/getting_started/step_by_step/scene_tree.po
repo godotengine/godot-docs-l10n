@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -167,7 +167,7 @@ msgid ""
 msgstr ""
 "Quando um nó é parte da Scene Tree, o singleton: ref: `SceneTree "
 "<class_SceneTree> pode ser obtido simplesmente chamando: ref:` Node.get_tree "
-"() <class_Node_get_tree> `."
+"() <class_Node_method_get_tree> `."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
 msgid "Root viewport"
@@ -300,7 +300,6 @@ msgid "Changing current scene"
 msgstr "Alterando a cena atual"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
-#, fuzzy
 msgid ""
 "After a scene is loaded, it is often desired to change this scene for "
 "another one. The simple way to do this is to use the :ref:`SceneTree."
@@ -308,7 +307,7 @@ msgid ""
 msgstr ""
 "Depois que uma cena é carregada, muitas vezes é desejado mudar essa cena "
 "para outra. A maneira simples de fazer isso é usar a função: ref: `SceneTree."
-"change_scene () <class_SceneTree_change_scene>`:"
+"change_scene() <class_SceneTree_method_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 msgid ""
@@ -316,6 +315,10 @@ msgid ""
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
+"Em vez de usar caminhos de arquivo, também é possível usar recursos prontos: "
+"ref: `PackedScene <class_PackedScene>` usando a função equivalente: ref: "
+"`SceneTree.change_scene_to(PackedScene cena) "
+"<class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 #, fuzzy

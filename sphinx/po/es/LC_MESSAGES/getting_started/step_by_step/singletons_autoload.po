@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,6 @@ msgstr ""
 "engorroso y puede ser lento."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:23
-#, fuzzy
 msgid ""
 "The `Singleton Pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`_ "
 "is a useful tool for solving the common use case where you need to store "
@@ -73,19 +72,20 @@ msgid ""
 "same scene or class for multiple singletons, so long as they have different "
 "names."
 msgstr ""
-"El  `Singleton Pattern (instancia única) <https://en.wikipedia.org/wiki/"
-"Singleton_pattern>`es una herramienta útil para resolver el caso de uso "
-"común en el que necesita almacenar información persistente entre escenas."
+"El  `Patrón Singleton(instancia única) <https://es.wikipedia.org/wiki/"
+"Singleton>`_ es una herramienta útil para resolver el caso en el que "
+"necesita almacenar información persistente entre escenas. En nuestro caso es "
+"posible reutilizar la misma escena o clase para múltiples singletons "
+"mientras posean nombres distintos."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:29
 msgid "Using this concept, you can create objects that:"
 msgstr "Usando este concepto, puede crear objetos que:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:31
-#, fuzzy
 msgid "Are always loaded, no matter which scene is currently running"
 msgstr ""
-"Siempre se cargan, no importa qué escena se está ejecutando actualmente"
+"Están siempre cargados, no importa qué escena se esté ejecutando actualmente"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:32
 msgid "Can store global variables, such as player information"
@@ -96,18 +96,17 @@ msgid "Can handle switching scenes and between-scene transitions"
 msgstr "Puedes manejar el cambio de escenas y transiciones entre-escenas"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:34
-#, fuzzy
 msgid ""
 "Act like a singleton, since GDScript does not support global variables by "
 "design"
 msgstr ""
 "Actúa como un singleton, ya que GDScript no soporta variables globales por "
-"diseño."
+"diseño"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:36
-#, fuzzy
 msgid "Autoloading nodes and scripts caters to this need."
-msgstr "La carga automática de nodos y scripts satisface esta necesidad."
+msgstr ""
+"La carga automática (autoload) de nodos y scripts satisface esta necesidad."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:39
 msgid "AutoLoad"
@@ -132,31 +131,32 @@ msgstr ""
 "Project Settings`` desde el menú y cambie a la pestaña \"AutoLoad\"."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:53
-#, fuzzy
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which is assigned as the node's ``name`` property. The "
 "order of the entries as they are added to the global scene tree can be "
 "manipulated using the up/down arrow keys."
 msgstr ""
-"Aquí puede agregar la cantidad de scenas o scripts que quiera. Cada entrada "
-"en esta lista requiere un nombre, que es asignado como la propiedad ``name`` "
-"del nodo."
+"Aquí puedes agregar la cantidad de scenas o scripts que necesites. Cada "
+"entrada en esta lista requiere un nombre, que es asignado como la propiedad "
+"``name`` del nodo. El orden en el que son agregados al árbol de escenas "
+"puede manipularse usando las flechas de arriba y abajo."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:60
-#, fuzzy
 msgid ""
 "This means that any node can access a singleton named \"PlayerVariables\" "
 "with:"
 msgstr ""
 "Esto significa que cualquier nodo puede acceder a un singleton llamado "
-"\"playervariables\" con:"
+"\"PlayerVariables\" con:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:73
 msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
+"Si la columna \"Enable\" está marcada (que lo está por defecto ), se puede "
+"acceder al singleton directamente:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 msgid ""
@@ -174,7 +174,6 @@ msgid "Custom scene switcher"
 msgstr "Conmutador de escenas personalizado"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:95
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoload. For "
 "basic scene switching, you can use the :ref:`SceneTree.change_scene() "
@@ -183,9 +182,9 @@ msgid ""
 "this method provides more functionality."
 msgstr ""
 "Este tutorial mostrará cómo construir un conmutador de escenas usando la "
-"carga automática. Para el cambio de escenas basico, puedes usar el metodo :"
-"ref:`SceneTree.change_scene() <class_SceneTree_change_scene>` (mira :ref:"
-"`doc_scene_tree` para detalles), Sin embargo, sí tu necesitas un "
+"carga automática. Para el cambio de escenas básico, puedes usar el metodo :"
+"ref:`SceneTree.change_scene() <class_SceneTree_method_change_scene>` (mira "
+"en :ref:`doc_scene_tree` para más detalles), Sin embargo, si necesitas un "
 "comportamiento mas complejo al cambiar de escena, este método proporciona "
 "más funcionalidad."
 
@@ -210,9 +209,8 @@ msgstr ""
 "en ``Scene1.tscn``. Sin embargo, presionar el botón no hace nada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:110
-#, fuzzy
 msgid "Global.gd"
-msgstr "global.gd"
+msgstr "Global.gd"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:112
 msgid ""
@@ -265,7 +263,6 @@ msgstr ""
 "liberar la escena actual y reemplazarla con la solicitada."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:227
-#, fuzzy
 msgid ""
 "As mentioned in the comments above, we need to avoid the situation of "
 "deleting the current scene while it is still being used (i.e. its code is "
@@ -275,11 +272,11 @@ msgid ""
 "current scene has completed."
 msgstr ""
 "Como se ha mencionado anteriormente, necesitamos evitar la situación de "
-"eliminar la escena actual mientras se está utilizando(i.e. su código todavía "
-"se está ejecutando), por lo que es necesario usar :ref:`Object."
-"call_deferred() <class_Object_call_deferred>` en este punto. El resultado es "
-"que la segunda función se ejecutará en un momento posterior cuando se haya "
-"completado cualquier código de la escena actual."
+"eliminar la escena actual mientras se está utilizando(por ej. que su código "
+"todavía se esté ejecutando), por lo que es necesario usar :ref:`Object."
+"call_deferred() <class_Object_method_call_deferred>` en este punto. El "
+"resultado es que la segunda función se ejecutará en un momento posterior, "
+"cuando se haya terminado de procesar la escena actual."
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:233
 msgid ""

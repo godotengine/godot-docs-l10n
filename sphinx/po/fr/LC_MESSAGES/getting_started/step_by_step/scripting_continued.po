@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,6 @@ msgstr ""
 "et les traitements physiques."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
-#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
 "<class_Node_method__process>` is found in a script. It can be turned off and "
@@ -52,9 +51,9 @@ msgid ""
 "function."
 msgstr ""
 "Le traitement passif est activé lorsque la méthode :ref:`Node._process() "
-"<class_Node__process>` se trouve dans un script. Il peut être activé ou "
-"désactivé avec la fonction :ref:`Node.set_process() "
-"<class_Node_set_process>`."
+"<class_Node_method__process>` se trouve dans un script. Il peut être activé "
+"ou désactivé avec la fonction :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
@@ -153,7 +152,6 @@ msgstr ""
 "qui sont des ennemis :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
-#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
@@ -173,7 +171,6 @@ msgstr ""
 "membre du groupe ``ennemies``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
-#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() "
@@ -181,7 +178,7 @@ msgid ""
 msgstr ""
 "Il est également possible d'obtenir la liste complète des nœuds ``ennemies`` "
 "en appelant :ref:`SceneTree.get_nodes_in_group() "
-"<class_SceneTree_get_nodes_in_group_in_group>` :"
+"<class_SceneTree_method_get_nodes_in_group_in_group>` :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -202,7 +199,6 @@ msgid "Notifications"
 msgstr "Notifications"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
-#, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
@@ -215,7 +211,7 @@ msgstr ""
 "fonctions virtuelles sont fournies pour la plupart d'entre elles. C'est "
 "cependant bien de savoir qu'elles existent. Par exemple, vous pouvez ajouter "
 "une fonction :ref:`Object.Notification() "
-"<class_Object__notification__notification>` dans votre script :"
+"<class_Object_method__notification__notification>` dans votre script :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -290,7 +286,6 @@ msgstr ""
 "souvent de détecter ce cas et de vous en avertir."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
-#, fuzzy
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
@@ -320,7 +315,6 @@ msgstr ""
 "l'analyse du code (GDScript uniquement) :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
-#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -328,11 +322,11 @@ msgid ""
 "must be called. This will return the tree of nodes that can be added to the "
 "active scene:"
 msgstr ""
-"Mais ``scene`` n'est pas encore un nœud. Il est emballé dans une ressource "
-"spéciale appelée :ref:`PackedScene <class_PackedScene>`. Pour créer le "
-"noeud, la fonction :ref:`PackedScene.instance() "
-"<class_PackedScene_instance_PackedScene_instance>` doit être appelée. Celà "
-"retournera l'arborescence des nœuds qui peuvent être ajoutés à la scène "
+"Mais ``scene`` n'est pas encore un nœud. Elle est emballée dans une "
+"ressource spéciale appelée :ref:`PackedScene <class_PackedScene>`. Pour "
+"créer le nœud, la fonction :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance_PackedScene_instance>` doit être appelée. "
+"Cela retournera l'arborescence des nœuds qui peuvent être ajoutés à la scène "
 "active :"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:381

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,14 @@ msgid "About plugins"
 msgstr "关于插件"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
+#, fuzzy
 msgid ""
 "A plugin is a great way to extend the editor with useful tools. It can be "
 "made entirely with GDScript and standard scenes, without even reloading the "
 "editor. Unlike modules, you don't need to create C++ code nor recompile the "
-"engine. While this makes plugins less powerful, there's still a lot of "
-"things you can do with them. Note that a plugin is similar to any scene you "
-"can already make, except it is created using a script to add functionality."
+"engine. While this makes plugins less powerful, there are still many things "
+"you can do with them. Note that a plugin is similar to any scene you can "
+"already make, except it is created using a script to add functionality."
 msgstr ""
 "插件是用来扩展编辑器功能的好东西。它完全可以靠GDScript和多个标准场景来制作，"
 "甚至不用重启编辑器。不像模块，您用不着C++也用不着重新编译引擎。尽管说这样做插"
@@ -55,9 +56,10 @@ msgid "Creating a plugin"
 msgstr "创建一个插件"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
+#, fuzzy
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
-"serve as base to develop and test the plugins."
+"serve as a base to develop and test the plugins."
 msgstr ""
 "在开始前先谁便找个地方创建个空项目。这个空项目是制作和测试我们插件的基础。"
 
@@ -131,9 +133,9 @@ msgid ""
 "following structure:"
 msgstr ""
 "处理资源的初始化和清理很重要。 一个好的做法是使用虚函数 :ref:"
-"`_enter_tree()<class_Node__enter_tree>` 来初始化您的插件，并且 :ref:"
-"`_exit_tree()<class_Node__exit_tree>` 来清理它。 您可以从文件中删除默认的"
-"GDScript模板，并将其替换为以下结构:"
+"`_enter_tree()<class_Node_method__enter_tree>` 来初始化您的插件，并且 :ref:"
+"`_exit_tree()<class_Node_method__exit_tree>` 来清理它。 您可以从文件中删除默"
+"认的GDScript模板，并将其替换为以下结构:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:85
 msgid "This is a good template to use when creating new plugins."
@@ -167,10 +169,10 @@ msgid ""
 "editor."
 msgstr ""
 "要创建新的节点类型，可以使用来自 :ref:`class_EditorPlugin` 类的 :ref:"
-"`add_custom_type() <class_EditorPlugin_add_custom_type>` 函数。 此函数可以向"
-"编辑器(节点或资源)添加新类型。 但是，在创建类型之前，需要一个脚本作为该类型的"
-"逻辑。 虽然该脚本不必使用 ``tool`` 关键字，但可以添加它以便脚本在编辑器中运"
-"行。"
+"`add_custom_type() <class_EditorPlugin_method_add_custom_type>` 函数。 此函数"
+"可以向编辑器(节点或资源)添加新类型。 但是，在创建类型之前，需要一个脚本作为该"
+"类型的逻辑。 虽然该脚本不必使用 ``tool`` 关键字，但可以添加它以便脚本在编辑器"
+"中运行。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:103
 msgid ""
@@ -219,8 +221,9 @@ msgid "Then try it out by adding your new node:"
 msgstr "然后通过添加新节点来尝试:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:148
+#, fuzzy
 msgid ""
-"When you add the node, you can see that it already have the script you "
+"When you add the node, you can see that it already has the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
 "When you click the button, you can see some text in the console:"
 msgstr ""
@@ -294,7 +297,7 @@ msgstr ""
 "将此场景另存为 ``my_dock.tscn``。 现在，我们需要抓住刚创建的场景，然后将其添"
 "加为编辑器中的停靠点。 为此，您可以依赖来自 :ref:`EditorPlugin "
 "<class_EditorPlugin>` 类的函数 :ref:`add_control_to_dock() "
-"<class_EditorPlugin_add_control_to_dock>` 。"
+"<class_EditorPlugin_method_add_control_to_dock>` 。"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:194
 msgid ""
@@ -306,8 +309,9 @@ msgstr ""
 "不要忘记 **移除窗口** 。 该脚本看起来像这样::"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:221
+#, fuzzy
 msgid ""
-"Note that while the dock will initially appear at its specified position, "
+"Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
 msgstr ""
 "请注意，虽然扩展面板最初将显示在其指定位置，但用户可以自由更改其位置并保存生"

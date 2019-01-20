@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,6 @@ msgstr ""
 "zip 파일을 풀고 두 개의 폴더가 나옵니다: `start` 와 `end` 입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:58
-#, fuzzy
 msgid ""
 "Load the ``start`` project in Godot. In the ``FileSystem`` dock, double "
 "click on LevelMockup.tscn to open it. It's an RPG game's mockup where 2 "
@@ -155,8 +154,8 @@ msgstr ""
 "LevelMockup.tscn을 더블 클릭해서 엽니다. 이것은 두 캐릭터가 마주 보고 있는 "
 "RPG 게임의 모형입니다. 분홍색 적이 일정하게 공격하고 초록색 사각형이 맞는 것"
 "을 반복합니다, 죽을 때 까지 말이죠. 게임을 한번 해보세요: 기본 전투 구조는 이"
-"미 작동합니다. 하지만 캐릭터가 체력 막대와 연결되어 있지 않기 때문에 ``GUI`` "
-"는 아무것도 하지 않습니다."
+"미 작동합니다. 하지만 캐릭터가 체력 막대와 연결되어 있지 않기 때문에 ``GUI``"
+"\\ 는 아무것도 하지 않습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:68
 msgid ""
@@ -183,13 +182,12 @@ msgid "The scene tree, with the GUI scene set to display its children"
 msgstr "GUI 씬이 자식으로 보이게 놓은 씬 트리"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:77
-#, fuzzy
 msgid ""
 "The GUI scene encapsulates all of the game's Graphical User Interface. It "
 "comes with a barebones script where we get the path to nodes that exist "
 "inside the scene:"
 msgstr ""
-"GUI 씬은 모든 게임 사용자 인터페이스를 캡슐화 합니다. 씬 안에 존재하는 노드"
+"GUI 씬은 게임 사용자 인터페이스 전체를 캡슐화 합니다. 씬 안에 존재하는 노드"
 "의 경로를 얻는 스크립트와 함께 제공됩니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:105
@@ -431,16 +429,15 @@ msgstr ""
 "용할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:219
-#, fuzzy
 msgid ""
 "With this in mind, let's connect the ``GUI`` to the ``Player``. Click on the "
 "``Player`` node in the scene dock to select it. Head down to the Inspector "
 "and click on the Node tab. This is the place to connect nodes to listen to "
 "the one you selected."
 msgstr ""
-"이것을 염두해 두고 ``GUI`` 를 ``Player`` 에 연결합시다. 씬 독에서 ``Player`` "
-"노드를 클릭하여 선택합니다. 인스펙터에서 노드(Node) 탭을 클릭합니다. 여기가 "
-"당신이 선택한 노드를 듣기 위해 노드를 연결하는 곳입니다."
+"이것을 염두해두고 ``GUI`` 를 ``Player``\\ 에 연결합시다. 씬 독에서 "
+"``Player`` 노드를 클릭하여 선택합니다. 인스펙터에서 노드(Node) 탭을 클릭합니"
+"다. 여기가 당신이 선택한 시그널을 받기 위해 노드를 연결하는 곳입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:224
 msgid "The first section lists custom signals defined in ``Player.gd``:"
@@ -536,18 +533,16 @@ msgid "Godot writes the callback method for you and takes you to it"
 msgstr "Godot는 콜백 메서드를 적어 사용자에게 전달합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:274
-#, fuzzy
 msgid ""
 "Inside the parentheses after the function name, add a ``player_health`` "
 "argument. When the player emits the ``health_changed`` signal, it will send "
 "its current ``health`` alongside it. Your code should look like:"
 msgstr ""
 "함수 이름 다음의 괄호 안에, ``player_health`` 인수를 추가하세요. 플레이어가 "
-"``health_changed`` 시그널을 방출할 때 그것을 ``health`` 와 함께 보낼 것입니"
-"다. 코드는 다음과 같아야 합니다:"
+"``health_changed`` 시그널을 방출할 때, 현재 ``health``\\ 와 함께 보내질 것입"
+"니다. 코드는 다음과 같아야 합니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:292
-#, fuzzy
 msgid ""
 "The engine does not convert PascalCase to snake_case, for C# examples we'll "
 "be using PascalCase for method names & camelCase for method parameters, "
@@ -555,10 +550,10 @@ msgid ""
 "com/en-us/dotnet/standard/design-guidelines/capitalization-conventions>`_"
 msgstr ""
 "엔진은 파스칼 표기법(PascalCase)을 스네이크 표기법(snake_case)으로 변환하지 "
-"않기 때문에, C# 예제처럼 우리는 공식  `C# 명명 규칙 <https://docs.microsoft."
-"com/en-us/dotnet/standard/design-guidelines/capitalization-conventions>`_ 에 "
-"따라 파스칼 표기법을 메서드 이름에, 카멜 표기법(camelCase)을 메서드 매개 변수"
-"에 사용할 것입니다"
+"않기 때문에, C# 예제에서 메서드 이름에는 파스칼 표기법, 메서드 매개 변수에는 "
+"카멜 표기법(camelCase)을 사용할 것입니다, 공식 `C# 명명 규칙. <https://docs."
+"microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-"
+"conventions>`_에 따르는 것입니다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:299
 msgid ""
@@ -569,13 +564,12 @@ msgstr ""
 "다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:302
-#, fuzzy
 msgid ""
 "Inside ``_on_Player_health_changed``, let's call a second function called "
 "``update_health`` and pass it the ``player_health`` variable."
 msgstr ""
-"``_on_Player_health_changed`` 안에서 ``update_health`` 라는 두 번째 함수를 호"
-"출하고 ``player_health`` 변수를 전달하게 해봅시다."
+"``_on_Player_health_changed`` 안에서, ``update_health`` 라는 두 번째 함수를 "
+"호출하고 거기에 ``player_health`` 변수를 전달하게 해봅시다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:307
 msgid ""
@@ -620,14 +614,14 @@ msgid "set the ``TextureProgress``'s ``value`` to ``new_value``"
 msgstr "``TextureProgress`` 의 ``value`` 를 ``new_value`` 로 설정하는 것"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:350
-#, fuzzy
 msgid ""
 "``str`` is a built-in function that converts about any value to text. "
 "``Number``'s ``text`` property requires a string, so we can't assign it to "
 "``new_value`` directly"
 msgstr ""
-"``str`` 는 내장 함수로 어느 값을 문자로 변환합니다. ``Number`` 의 ``text`` 속"
-"성은 문자열을 요구하기 때문에 ``new_value`` 를 직접 지정할 수 없습니다"
+"``str``\\ 은 내장 함수로 어느 값을 문자로 변환합니다. ``Number``\\ 의 "
+"``text`` 속성은 문자열을 요구하기 때문에 ``new_value``\\ 를 직접 지정할 수 없"
+"습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:354
 msgid ""
@@ -652,7 +646,6 @@ msgid "Animate the loss of life with the Tween node"
 msgstr "Tween 노드로 체력이 감소하는 것을 애니메이트하기"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:367
-#, fuzzy
 msgid ""
 "Our interface is functional, but it could use some animation. That's a good "
 "opportunity to introduce the ``Tween`` node, an essential tool to animate "
@@ -663,9 +656,9 @@ msgid ""
 msgstr ""
 "인터페이스는 작동하지만, 몇 가지 애니메이션을 사용할 수 있습니다. 지금이 속성"
 "을 애니메이트 하는데 필수적인 도구, ``Tween`` 노드를 소개하기에 좋은 순간이네"
-"요. ``Tween`` 은 어떤 것이든 처음부터 끝을 일정 기간 동안 애니메이트 합니다. "
-"예를 들어 캐릭터가 피해를 입을 때  ``Player`` 의 현재 새로운 ``health`` 로 "
-"``TextureProgress`` 에서 체력을 애니메이트 할 수 있습니다."
+"요. ``Tween``\\ 은 어떤 것이든 처음부터 끝을 일정 기간 동안 애니메이트 합니"
+"다. 예를 들어 캐릭터가 피해를 입을 때  ``Player``\\ 의 현재 새로운 ``health``"
+"\\ 로 ``TextureProgress``\\ 에서 체력을 애니메이트 할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:374
 msgid ""
@@ -713,13 +706,12 @@ msgid "The easing to use in combination with the equation."
 msgstr "방정식과 함께 사용하는 완화."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:389
-#, fuzzy
 msgid ""
 "The last two arguments combined correspond to an easing equation. This "
 "controls how the value evolves from the start to the end point."
 msgstr ""
-"마지막 두 인수들은 `등식 <#>`__ 으로 동등하게 묶입니다. 이것은 시작에서 끝까"
-"지 값이 얼마나 증가하는 지를 제어합니다."
+"마지막 두 인수들은 완화 식(easing equation)으로 동등하게 묶입니다. 이것은 시"
+"작에서 끝까지 값이 얼마나 증가하는 지를 제어합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:393
 msgid ""
@@ -856,9 +848,8 @@ msgstr ""
 "해서, 체력 막대가 더 멋진 방식으로 움직이면 좋을 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:531
-#, fuzzy
 msgid "The animation is smooth, but the number is broken"
-msgstr "애니메이션은 부드럽지만 숫자는 그렇지 않습니다"
+msgstr "애니메이션은 부드럽지만 숫자는 망가졌습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:533
 msgid ""
@@ -876,7 +867,6 @@ msgid "Try the game again to see a nice blocky animation."
 msgstr "게임을 다시 실행하면 멋진 블록 애니메이션을 볼 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:559
-#, fuzzy
 msgid "By rounding out animated\\_health, we kill two birds with one stone"
 msgstr "animated\\_health를 반올림 해서 일석이조의 효과를 냈습니다"
 
@@ -977,15 +967,14 @@ msgstr ""
 "`modulate` 에서 색상을 사용하여 수정할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:611
-#, fuzzy
 msgid ""
 "``modulate`` takes a ``Color`` value with 4 channels: red, green, blue and "
 "alpha. If we darken any of the first three channels it darkens the "
 "interface. If we lower the alpha channel, our interface fades out."
 msgstr ""
-"``modulate`` 는 4 개의 채널로 ``Color`` 값을 갖습니다: 빨강, 초록, 파랑, 그리"
-"고 알파입니다. 처음 세 개의 채널들 중 하나를 어둡게 하면 그것은 인터페이스에"
-"서 어두워집니다. 알파 채널을 낮추면 인터페이스는 희미해집니다."
+"``modulate``\\ 는 4개의 채널로 ``Color`` 값을 갖습니다: 빨강, 초록, 파랑, 그"
+"리고 알파입니다. 처음 세 개의 채널들 중 하나를 어둡게 하면 그것은 인터페이스"
+"에서 어두워집니다. 알파 채널을 낮추면 인터페이스는 희미해집니다."
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:615
 msgid ""
@@ -1019,16 +1008,15 @@ msgstr ""
 "다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:654
-#, fuzzy
 msgid ""
 "This time, we change the ``modulate`` property and have it animate from "
 "``start_color`` to the ``end_color``. The duration is of one second, with a "
 "linear transition. Here again, because the transition is linear, the easing "
 "does not matter. Here's the complete ``_on_Player_died`` method:"
 msgstr ""
-"이번엔 ``modulate`` 속성을 바꾸고 그것이 ``start_color`` 에서 ``end_color`` "
-"로 애니메이트 해야 합니다. 지속 시간은 1초로 선형 전환입니다. 다시 말하지만, "
-"전환이 선형이기 때문에 완화는 아무 문제가 없습니다. 이것이 완전한 "
+"이번엔 ``modulate`` 속성을 바꾸고 그것이 ``start_color``\\ 에서 ``end_color``"
+"\\ 로 애니메이트 해야 합니다. 지속 시간은 1초로 선형 전환입니다. 다시 말하지"
+"만, 전환이 선형이기 때문에 완화는 아무 문제가 없습니다. 이것이 완전한 "
 "``_on_Player_died`` 메서드 입니다:"
 
 #: ../../docs/getting_started/step_by_step/ui_code_a_life_bar.rst:679

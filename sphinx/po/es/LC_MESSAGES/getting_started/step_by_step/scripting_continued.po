@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,16 +44,16 @@ msgstr ""
 "espera y procesamiento físico."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:16
-#, fuzzy
 msgid ""
 "Idle processing is activated when the method :ref:`Node._process() "
 "<class_Node_method__process>` is found in a script. It can be turned off and "
 "on with the :ref:`Node.set_process() <class_Node_method_set_process>` "
 "function."
 msgstr ""
-"El procesamiento en tiempo de espera se activa cuando el método :ref:`Node."
-"process() <class_Node__process>` se encuentra en un script. Se puede apagar "
-"y encender con la función :ref:`Node.set_process() <class_Node_set_process>`."
+"El procesamiento en tiempo de espera (idle) se activa cuando el método :ref:"
+"`Node._process() <class_Node_method__process>` se encuentra en un script. Se "
+"puede apagar y encender con la función  :ref:`Node.set_process() "
+"<class_Node_method_set_process>`."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:20
 msgid ""
@@ -85,9 +85,9 @@ msgid ""
 "For example, movement is often multiplied with a time delta to make movement "
 "speed both constant and independent from the frame rate."
 msgstr ""
-"Por ejemplo, el movimiento se multiplica a menudo con delta time para que la "
-"velocidad de movimiento sea constante e independiente de la frecuencia de "
-"imagen."
+"Por ejemplo, el movimiento a menudo se multiplica por un tiempo delta para "
+"que la velocidad de movimiento sea constante e independiente de la velocidad "
+"de fotogramas."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:46
 msgid ""
@@ -152,15 +152,14 @@ msgstr ""
 "representan a los enemigos ('enemies'):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:110
-#, fuzzy
 msgid ""
 "This way, if the player is discovered sneaking into a secret base, all "
 "enemies can be notified about its alarm sounding by using :ref:`SceneTree."
 "call_group() <class_SceneTree_method_call_group>`:"
 msgstr ""
-"De esta manera, si se descubre que el jugador se introduce a escondidas en "
-"una base secreta, se pueden avisar a todos los enemigos de que está sonando "
-"la alarma usando :ref:`SceneTree.call_group() <class_SceneTree_call_group>`:"
+"De esta manera, si se descubre al jugador entrando a escondidas en una base "
+"secreta, se puede avisar a todos los enemigos de que está sonando la alarma "
+"usando :ref:`SceneTree.call_group() <class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 msgid ""
@@ -171,14 +170,14 @@ msgstr ""
 "miembro del grupo ``enemies``."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:130
-#, fuzzy
 msgid ""
 "It is also possible to get the full list of ``enemies`` nodes by calling :"
 "ref:`SceneTree.get_nodes_in_group() "
 "<class_SceneTree_method_get_nodes_in_group>`:"
 msgstr ""
 "También es posible obtener la lista completa de nodos ``enemies`` llamando "
-"a :ref:`SceneTree.get_nodes_in_group() <class_SceneTree_get_nodes_in_group>`:"
+"a :ref:`SceneTree.get_nodes_in_group() "
+"<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -199,7 +198,6 @@ msgid "Notifications"
 msgstr "Notificaciones"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:153
-#, fuzzy
 msgid ""
 "Godot has a system of notifications. These are usually not needed for "
 "scripting, as it's too low-level and virtual functions are provided for most "
@@ -210,8 +208,8 @@ msgstr ""
 "Godot tiene un sistema de notificaciones. Por lo general, no son necesarios "
 "para la creación de scripts, ya que es de muy bajo nivel y se proporcionan "
 "funciones virtuales para la mayoría de estas. Pero es bueno saber que "
-"existen. Por ejemplo, puedes añadir un :ref:`Object._notification() "
-"<class_Object__notification>` en tu script:"
+"existen. Por ejemplo, puedes añadir una función :ref:`Object._notification() "
+"<class_Object_method__notification>` en tu script:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:188
 msgid ""
@@ -285,14 +283,13 @@ msgstr ""
 "menudo detectará este caso y te advertirá al respecto."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:322
-#, fuzzy
 msgid ""
 "The safest way to delete a node is by using :ref:`Node.queue_free() "
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
 "La forma más segura de eliminar un nodo es usando :ref:`Node.queue_free() "
-"<class_Node_queue_free>`. Esto borra el nodo de forma segura si está "
-"inactivo."
+"<class_Node_method_queue_free>`. Esto borra el nodo de forma segura mientras "
+"está inactivo."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
@@ -315,7 +312,6 @@ msgstr ""
 "(sólo GDScript):"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:363
-#, fuzzy
 msgid ""
 "But ``scene`` is not yet a node. It's packed in a special resource called :"
 "ref:`PackedScene <class_PackedScene>`. To create the actual node, the "
@@ -325,9 +321,9 @@ msgid ""
 msgstr ""
 "Pero ``scene`` todavía no es un nodo. Está empaquetado en un recurso "
 "especial llamado :ref:`PackedScene <class_PackedScene>`. Para crear el nodo "
-"actual, se debe llamar a la función :ref:`PackedScene.instance() "
-"<class_PackedScene_instance>`. Esto devolverá el árbol de nodos que se "
-"pueden añadir a la escena activa:"
+"se debe llamar a la función :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`. Esto retornará el árbol de nodos que "
+"se puede añadir a la escena activa:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
 msgid ""

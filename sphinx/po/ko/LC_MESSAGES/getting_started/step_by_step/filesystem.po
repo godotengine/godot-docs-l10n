@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "소개"
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:9
-#, fuzzy
 msgid ""
 "File systems are yet another hot topic in engine development. The file "
 "system manages how the assets are stored and how they are accessed. A well-"
@@ -73,7 +72,6 @@ msgstr ""
 "일로 저장됩니다. 예를 들어, 폰트 리소스는 종종 폰트 텍스쳐와 묶여집니다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:30
-#, fuzzy
 msgid ""
 "In general, the Godot file system avoids using metadata files. The reason "
 "for this is simple, existing asset managers and VCSs are simply much better "
@@ -222,7 +220,6 @@ msgstr ""
 "지하고 당신이 고치는 것을 어쨌든 도울 것이지만, 왜 어려운 길로 가시나요?)."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:108
-#, fuzzy
 msgid ""
 "The second is that, under Windows and macOS, file and path names are case "
 "insensitive. If a developer working in a case insensitive host file system "
@@ -239,11 +236,10 @@ msgstr ""
 "다."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:114
-#, fuzzy
 msgid ""
 "It is recommended that your team clearly define a naming convention for "
 "files when working with Godot! One simple fool-proof convention is to only "
 "allow lowercase file and path names."
 msgstr ""
-"Godot로 작업할 때 팀이 명명 규칙을 분명하게 정의하는 것을 추천합니다! 간단한 "
-"바보 같은 규칙은 오직 파일과 경로 이름을 소문자로만 허락하는 것입니다."
+"Godot로 작업할 때 팀이 명명 규칙을 분명하게 정의하는 것을 추천합니다! 간단히 "
+"바보 같은 규칙이라면 파일과 경로 이름을 소문자로만 허락하는 것입니다."

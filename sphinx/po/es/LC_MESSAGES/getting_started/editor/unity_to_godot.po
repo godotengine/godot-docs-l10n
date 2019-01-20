@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,7 +211,6 @@ msgstr ""
 "editor de escenas que desees."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:57
-#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
@@ -219,7 +218,7 @@ msgid ""
 "format, and no metadata. All this contributes to Godot being much friendlier "
 "to VCS systems, such as Git, Subversion, or Mercurial."
 msgstr ""
-"Aunque ambos editores pueden parecer similares, hay muchas diferencias bajo "
+"Aunque ambos editores puedan parecer similares, hay muchas diferencias bajo "
 "la superficie. Ambos permiten organizar el proyecto utilizando el sistema de "
 "archivos, pero el enfoque Godot es más simple, con un único archivo de "
 "configuración, un formato de texto minimalista y sin metadatos. Todo esto "
@@ -338,7 +337,6 @@ msgstr ""
 "componentes y scripts."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:95
-#, fuzzy
 msgid ""
 "Godot's scene system is different: it actually consists of a tree made of "
 "nodes. Each node serves a purpose: Sprite, Mesh, Light, etc. Basically, this "
@@ -347,11 +345,11 @@ msgid ""
 "compose a whole scene with different scenes stored in different files."
 msgstr ""
 "El sistema de escenas de Godot es diferente: en realidad consiste en un "
-"árbol hecho de nodos. Cada nodo tiene un propósito: Sprite, Mesh, Light... "
-"Básicamente, esto es similar al sistema de escena Unity. Sin embargo, cada "
-"nodo puede tener varios hijos, lo que hace de cada uno una subescena de la "
-"escena principal. Esto significa que se puede componer una escena completa "
-"con escenas diferentes, almacenadas en diferentes archivos."
+"árbol hecho de nodos. Cada nodo tiene un propósito: Sprite, Mesh, Light, "
+"etc... Básicamente, esto es similar al sistema de escena Unity. Sin embargo, "
+"cada nodo puede tener varios hijos, lo que hace de cada uno una subescena de "
+"la escena principal. Esto significa que se puede componer una escena "
+"completa con escenas diferentes, almacenadas en diferentes archivos."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:100
 msgid ""
@@ -470,7 +468,6 @@ msgstr ""
 "con 3D) o \"Control\" (tipo raíz de todos los nodos relacionados con GUI)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:140
-#, fuzzy
 msgid ""
 "As you can see, every scene is organized as a tree. The same goes for nodes' "
 "properties: you don't *add* a collision component to a node to make it "
@@ -483,7 +480,7 @@ msgstr ""
 "con las propiedades de los nodos: no se *añade* un componente de colisión a "
 "un nodo para hacerlo colisionable como lo hace Unity. En su lugar, este nodo "
 "se convierte en *hijo* de un nuevo nodo específico que tiene propiedades de "
-"colisión. Godot dispone de varios nodos de tipos de colisión, dependiendo "
+"colisión. Godot dispone de varios tipos de nodos de colisión, dependiendo "
 "del uso (ver :ref:`Physics introduction <doc_physics_introduction>`)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:145
@@ -508,7 +505,6 @@ msgstr ""
 "capacidades: esto es herencia."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:148
-#, fuzzy
 msgid ""
 "Second, it allows the extraction of a subtree of the scene to make it a "
 "scene of its own, which answers the second and third questions: even if a "
@@ -589,7 +585,6 @@ msgstr ""
 "prefab."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:177
-#, fuzzy
 msgid ""
 "Godot does not provide prefabs as such, but this functionality is here, "
 "again, filled thanks to its scene system: As we saw, the scene system is "
@@ -599,10 +594,10 @@ msgid ""
 "separate scene will be applied to its instances. However, any change you "
 "make to the instance will not have any impact on the 'template' scene."
 msgstr ""
-"Godot no proporciona prefabs como tal, pero esta funcionalidad se encuentra "
-"disponible gracias al sistema de escenas: como vimos el sistema de escenas "
-"está organizado como un árbol. Godot permite guardar un subárbol de una "
-"escena como una escena propia, guardada en su propio archivo. Esta nueva "
+"Godot no proporciona prefabs como tales, pero esta funcionalidad se "
+"encuentra disponible gracias al sistema de escenas: como vimos el sistema de "
+"escenas está organizado como un árbol. Godot permite guardar un subárbol de "
+"una escena como una escena propia, guardada en su propio archivo. Esta nueva "
 "escena puede ser instanciada tantas veces como se desee. Cualquier cambio "
 "que se realice en esta nueva escena separada se aplicará a sus instancias. "
 "Sin embargo, cualquier cambio que se realice en la instancia no tendrá "
@@ -635,15 +630,15 @@ msgstr "Correspondencia del glosario"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
 msgid "GameObject -> Node"
-msgstr ""
+msgstr "GameObject -> Nodo"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:198
 msgid "Add a component -> Inheriting"
-msgstr ""
+msgstr "Add a component -> Heredar"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:199
 msgid "Prefab -> Externalized branch"
-msgstr ""
+msgstr "Prefab ->Rama externalizada"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
@@ -662,7 +657,6 @@ msgstr ""
 "Visual Studio y otras características, como el tipado estático."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:210
-#, fuzzy
 msgid ""
 "Godot provides its own scripting language, :ref:`GDScript <doc_scripting>` "
 "as well as support for :ref:`Visual Script <toc-learn-scripting-"
@@ -675,8 +669,8 @@ msgid ""
 msgstr ""
 "Godot proporciona su propio lenguaje de scripting, :ref:`GDScript "
 "<doc_scripting>` así como soporte para :ref:`Visual Script <toc-learn-"
-"scripting-visual_script>` y :ref:`doc_c_sharp`. GDScript toma prestada su "
-"sintaxis de Python, pero no está relacionada con ésta. Si te preguntas sobre "
+"scripting-visual_script>` y :ref:`C# doc_c_sharp`. GDScript toma prestada su "
+"sintaxis de Python, pero no está relacionada con este. Si te preguntas sobre "
 "el razonamiento de un lenguaje de scripting personalizado, por favor lee las "
 "páginas :ref:`doc_gdscript` y :ref:`doc_faq`. GDScript está fuertemente "
 "unido a la API de Godot y es muy fácil de aprender: Entre una noche para un "
@@ -715,7 +709,6 @@ msgstr ""
 "luego añadir un script a este nuevo nodo."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:225
-#, fuzzy
 msgid ""
 "or, you can split your target node into multiple children and attach one "
 "script to each of them."
@@ -738,7 +731,6 @@ msgid "Connections: groups and signals"
 msgstr "Conexiones: grupos y señales"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
-#, fuzzy
 msgid ""
 "You can control nodes by accessing them using a script and calling functions "
 "(built-in or user-defined) on them. But there's more: You can also place "
@@ -747,45 +739,48 @@ msgid ""
 "<doc_scripting_continued>`."
 msgstr ""
 "Se puede controlar los nodos accediendo a ellos mediante un script, y llamar "
-"funciones (integradas o definidas por el usuario) en ellos. Pero hay más: "
+"sus funciones (integradas o definidas por el usuario). Pero hay más: "
 "¡también puedes colocarlos en un grupo y llamar a una función en todos los "
-"nodos que contiene este grupo! Esto se explica en :ref:`esta página "
-"<doc_scripting_continued>`."
+"nodos que contiene este grupo! Esto se explica en esta página :ref:"
+"`scripting documentation <doc_scripting_continued>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
-#, fuzzy
 msgid ""
 "But there's more! Certain nodes throw signals when certain actions happen. "
 "You can connect these signals to call a specific function when they happen. "
 "Note that you can define your own signals and send them whenever you want. "
 "See the :ref:`signals documentation <doc_gdscript_signals>` for details."
 msgstr ""
-"¡Pero hay más! Ciertos nodos emiten señales cuando ocurren ciertas acciones. "
-"Se pueden conectar estas señales para llamar a una función específica cuando "
-"se producen. Hay que tener en cuenta que puedes definir tus propias señales "
-"y enviarlas cuando quieras. Esta característica está documentada `aquí "
-"<gdscript.html#signals>`_."
+"¡Pero hay más! Algunos nodos emiten señales cuando ocurren ciertas acciones. "
+"Se pueden conectar estas señales para llamar a una función específica en el "
+"momento en que se produce. Hay que tener en cuenta que puedes definir tus "
+"propias señales y enviarlas cuando quieras. Esta característica está "
+"documentada aquí :ref:`signals documentation <doc_gdscript_signals>` ."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
-#, fuzzy
 msgid "Script serialization"
-msgstr "Animación del sprite"
+msgstr "Serialización de scripts"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
 msgid "Unity can handle script serialization in two ways:"
-msgstr ""
+msgstr "Unity puede manejar la serialización de scripts de dos maneras:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
 msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
 msgstr ""
+"Implícita: todos los campos públicos en una clase se serializan "
+"automáticamente si el tipo es un tipo serializable (``Dictionary`` no es "
+"serializable)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
 msgstr ""
+"Explícita: los campos no públicos se pueden serializar usando el atributo "
+"``[SerializeField]``."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
 msgid ""
@@ -795,6 +790,12 @@ msgid ""
 "`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. See "
 "the :ref:`exports documentation <doc_gdscript_exports>` for details."
 msgstr ""
+"Godot también tiene un sistema integrado de serialización de scripts, pero "
+"funciona solo explícitamente. Puede serializar cualquier tipo serializable (:"
+"ref:`incorporado y varios tipos de motores <doc_binary_serialization_api>`, "
+"incluyendo ref:`class_Array` y:ref:`class_Dictionary`) usando la palabra "
+"clave ``export``. Consulte la:ref:`documentación de exportaciones "
+"<doc_gdscript_exports>` para obtener más información."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:255
 msgid ""
@@ -804,6 +805,12 @@ msgid ""
 "`class_Resource` will allow you to create custom serializable objects. More "
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
+"Unity también tiene un tipo de datos llamado ``ScriptableObject`` que se "
+"utiliza para serializar objetos de recursos personalizados. Su equivalente "
+"en Godot es la clase base para todos los recursos: ref:`class_Resource`. "
+"Crear un script que herede :ref:`class_Resource` te permitirá crear objetos "
+"personalizados serializables. Se puede encontrar más información sobre los "
+"recursos :ref:`aquí <doc_resources>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:260
 msgid "Using Godot in C++"

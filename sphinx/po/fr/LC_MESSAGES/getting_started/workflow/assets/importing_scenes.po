@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,14 +18,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:4
-#, fuzzy
 msgid "Importing 3D scenes"
 msgstr "Importation de scènes 3D"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:7
-#, fuzzy
 msgid "Godot scene importer"
-msgstr "Importeur de scènes Godot"
+msgstr "Importateur de scènes Godot"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:9
 msgid ""
@@ -49,7 +47,6 @@ msgstr ""
 "Godot prend en charge les *formats de fichiers de scènes* 3D suivants :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:16
-#, fuzzy
 msgid "DAE (COLLADA), which is currently the most mature workflow."
 msgstr "DAE (Collada), qui est actuellement le flux de travail le plus abouti."
 
@@ -128,12 +125,11 @@ msgid "Exporting DAE files from Blender"
 msgstr "Exportation de fichiers DAE de Blender"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:45
-#, fuzzy
 msgid ""
 "Blender has built-in COLLADA support too, but it's also broken and should "
 "not be used."
 msgstr ""
-"Blender a également un support collada intégré, mais il est également bancal "
+"Blender a également un support COLLADA intégré, mais il est également bancal "
 "et ne devrait pas être utilisé."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:48
@@ -210,16 +206,14 @@ msgstr ""
 "enregistrées lorsque les sources changent."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:72
-#, fuzzy
 msgid ""
 "External scenes: Save each of the root nodes of the imported scenes as a "
 "separate scene."
 msgstr ""
-"Scènes externes : enregistre les nœuds racine des scènes importées chacun en "
-"tant que scène distincte."
+"Scènes externes : enregistrer les nœuds racine des scènes importées chacun "
+"en tant que scène distincte."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:73
-#, fuzzy
 msgid "Single scene: A single scene file with everything built in."
 msgstr "Scène unique : un fichier de scène unique avec tout intégré."
 
@@ -232,7 +226,6 @@ msgstr ""
 "d'importation est hautement personnalisable."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:80
-#, fuzzy
 msgid "Import options"
 msgstr "Options d'importation"
 
@@ -313,13 +306,12 @@ msgstr ""
 "distincte et seront instanciés dans la scène importée."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:128
-#, fuzzy
 msgid ""
 "Of course, instancing such imported scenes in other places manually works, "
 "too."
 msgstr ""
-"Bien entendu, l'instauration manuelle de ces scènes importées dans d'autres "
-"lieux fonctionne également."
+"Bien entendu, instancier manuellement des scènes importées à d'autres "
+"endroits fonctionne également."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:132
 msgid "Materials"
@@ -558,7 +550,6 @@ msgstr ""
 "dans un sous-répertoire nommé d’après la scène."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:211
-#, fuzzy
 msgid "Animation options"
 msgstr "Options d’animation"
 
@@ -657,7 +648,6 @@ msgstr ""
 "de spécifier l'option IPS ci-dessus)."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:254
-#, fuzzy
 msgid "Scene inheritance"
 msgstr "Héritage de scène"
 
@@ -710,7 +700,6 @@ msgid "Other than that, everything is allowed!"
 msgstr "Sinon, tout est permis !"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:272
-#, fuzzy
 msgid "Import hints"
 msgstr "Conseils pour l'importation"
 
@@ -723,7 +712,6 @@ msgstr ""
 "doivent être effectuées après l'exportation :"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:276
-#, fuzzy
 msgid "Adding collision detection to objects"
 msgstr "Ajout de la détection de collision aux objets :"
 
@@ -755,7 +743,6 @@ msgid "Remove nodes (-noimp)"
 msgstr "Supprimer les nœuds (-noimp)"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:287
-#, fuzzy
 msgid ""
 "Node names that have this suffix will be removed at import time, no matter "
 "what their type is. They will not appear in the imported scene."
@@ -797,13 +784,12 @@ msgstr ""
 "la collision réelle."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:303
-#, fuzzy
 msgid ""
 "Option \"-convcolonly\" will create a :ref:`class_convexpolygonshape` "
 "instead of a :ref:`class_concavepolygonshape`."
 msgstr ""
-"L'option \"-convcolonly\" créera :ref:`class_convexpolygonshape` au lieu de :"
-"ref:`class_concavepolygonshape`."
+"L'option \"-convcolonly\" créera une :ref:`class_convexpolygonshape` au lieu "
+"d'une :ref:`class_concavepolygonshape`."
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:305
 #, fuzzy
@@ -824,7 +810,6 @@ msgid "Single arrow will create a :ref:`class_rayshape`"
 msgstr "Une flèche simple créera une :ref:`class_rayshape`"
 
 #: ../../docs/getting_started/workflow/assets/importing_scenes.rst:313
-#, fuzzy
 msgid "Cube will create a :ref:`class_boxshape`"
 msgstr "Un cube créera une :ref:`class_boxshape`"
 

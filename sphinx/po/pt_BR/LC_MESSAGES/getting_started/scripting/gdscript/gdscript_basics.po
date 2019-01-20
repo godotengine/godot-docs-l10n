@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -352,7 +352,7 @@ msgstr "case"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Cast the value to a given type if possible."
-msgstr ""
+msgstr "Transmita o valor para um determinado tipo, se possível."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "self"
@@ -511,7 +511,7 @@ msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "puppet"
-msgstr ""
+msgstr "fantoche"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 #, fuzzy
@@ -525,7 +525,7 @@ msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "puppetsync"
-msgstr ""
+msgstr "sincronização de fantoches"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "PI"
@@ -629,6 +629,9 @@ msgid ""
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats)"
 msgstr ""
+"Esses operadores têm o mesmo comportamento que o C ++. A divisão inteira é "
+"truncada em vez de retornar um número fracionário, e o operador% está "
+"disponível apenas para ints (\"fmod\" para floats)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
 msgid "``+``"
@@ -1208,42 +1211,53 @@ msgid ""
 "specified, the variable will be forced to have always that same type, and "
 "trying to assign an incompatible value will raise an error."
 msgstr ""
+"As variáveis podem, opcionalmente, ter uma especificação de tipo. Quando um "
+"tipo é especificado, a variável será forçada a ter sempre esse mesmo tipo, e "
+"tentar atribuir um valor incompatível gerará um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:565
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
 msgstr ""
+"Os tipos são especificados na declaração da variável usando um símbolo ``: "
+"`` (dois-pontos) após o nome da variável, seguido pelo tipo."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:573
 msgid ""
 "If the variable is initialized within the declaration, the type can be "
 "inferred, so it's possible to omit the type name::"
 msgstr ""
+"Se a variável for inicializada dentro da declaração, o tipo pode ser "
+"inferido, então é possível omitir o nome do tipo ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:579
 msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
 msgstr ""
+"A inferência de tipos só é possível se o valor atribuído tiver um tipo "
+"definido, caso contrário, irá gerar um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:582
 msgid "Valid types are:"
-msgstr ""
+msgstr "Tipos válidos são:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:584
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
-msgstr ""
+msgstr "Tipos internos (Matriz, Vetor2, int, String, etc.)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
 msgid "Engine classes (Node, Resource, Reference, etc.)"
-msgstr ""
+msgstr "Classes de motor (nó, recurso, referência etc.)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:586
 msgid ""
 "Constant names if they contain a script resource (``MyScript`` if you "
 "declared ``const MyScript = preload(\"res://my_script.gd\")``)."
 msgstr ""
+"Nomes constantes se eles contiverem um recurso de script (`` MyScript`` se "
+"você declarar `` const MyScript = preload (\"res: //my_script.gd\") ``)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:587
 msgid ""
@@ -1251,14 +1265,17 @@ msgid ""
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
 "InnerClass`` in the same scope)"
 msgstr ""
+"Outras classes no mesmo script, respeitando o escopo (`` Inner Class.Nested "
+"Class`` se você declarou `` class Nested Class`` dentro da `` class "
+"InnerClass`` no mesmo escopo)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:588
 msgid "Script classes declared with the ``class_name`` keyword."
-msgstr ""
+msgstr "Classes de script declaradas com a palavra-chave `` class_name``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:591
 msgid "Casting"
-msgstr ""
+msgstr "Fundição"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:593
 msgid ""
@@ -1266,30 +1283,41 @@ msgid ""
 "needed to coerce a value to be of a certain type, in particular for object "
 "types, you can use the casting operator ``as``."
 msgstr ""
+"Valores atribuídos a variáveis digitadas devem ter um tipo compatível. Se "
+"for necessário forçar um valor a ser de um determinado tipo, em particular "
+"para tipos de objetos, você pode usar o operador de conversão `` as``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:597
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
 msgstr ""
+"A conversão entre tipos de objetos resulta no mesmo objeto se o valor for do "
+"mesmo tipo ou um subtipo do tipo de conversão."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:605
 msgid ""
 "If the value is not a subtype, the casting operation will result in a "
 "``null`` value."
 msgstr ""
+"Se o valor não for um subtipo, a operação de conversão resultará em um valor "
+"`` null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:612
 msgid ""
 "For built-in types, they will be forcibly converted if possible, otherwise "
 "the engine will raise an error."
 msgstr ""
+"Para tipos internos, eles serão convertidos à força, se possível, caso "
+"contrário, o mecanismo gerará um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:621
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with tree::"
 msgstr ""
+"Casting também é útil para ter melhores variáveis de tipo seguro ao "
+"interagir com a árvore ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:631
 msgid "Constants"
@@ -1308,10 +1336,12 @@ msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
 msgstr ""
+"Embora o tipo de constantes seja inferido a partir do valor atribuído, "
+"também é possível adicionar especificação de tipo explícito:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:653
 msgid "Assigning a value of an incompatible type will raise an error."
-msgstr ""
+msgstr "Atribuir um valor de um tipo incompatível gerará um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:656
 msgid "Enums"
@@ -1364,17 +1394,23 @@ msgid ""
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
+"Funções também podem ter especificação de tipo para os argumentos e para o "
+"valor de retorno. Tipos de argumentos podem ser adicionados de forma "
+"semelhante às variáveis:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:705
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr ""
+"Se um argumento de função tiver um valor padrão, é possível inferir o tipo::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:710
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
 msgstr ""
+"O tipo de retorno da função pode ser especificado após a lista de argumentos "
+"usando o token de seta (``->``)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:716
 msgid ""
@@ -1383,6 +1419,10 @@ msgid ""
 "functions can return early with the ``return`` keyword, but they can't "
 "return any value."
 msgstr ""
+"Funções que possuem um tipo de retorno **devem** retornar um valor adequado. "
+"Definir o tipo como ``void`` significa que a função não retorna nada. As "
+"funções void podem retornar cedo com a palavra-chave ``return``, mas não "
+"podem retornar nenhum valor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:725
 msgid ""
@@ -1392,6 +1432,12 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
+"Funções não void devem **sempre** retornar um valor, então se seu código "
+"possui instruções de ramificação (como um construtor ``if`` / ``else``), "
+"todos os caminhos possíveis devem ter um retorno. Por exemplo, se você tiver "
+"um ``return`` dentro de um bloco ``if``, mas não depois, o editor irá gerar "
+"um erro, porque se o bloco não for executado, a função não terá um valor "
+"válido para retornar."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
 msgid "Referencing Functions"

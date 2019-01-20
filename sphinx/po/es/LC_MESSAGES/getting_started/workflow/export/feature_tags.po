@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,20 +45,19 @@ msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:14
-#, fuzzy
 msgid "Platform type (desktop, mobile, Web)."
-msgstr "Tipo de plataforma (escritorio/móvil)."
+msgstr "Tipo de plataforma (escritorio, móvil, web)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:15
-#, fuzzy
 msgid "Supported texture compression algorithms on the platform."
-msgstr "Compresión de texturas soportada en la plataforma."
+msgstr "Algoritmos de compresión de texturas soportados en la plataforma."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:16
-#, fuzzy
 msgid ""
 "Whether a build is ``debug`` or ``release`` (``debug`` includes the editor)."
-msgstr "Si la compilación es depurada o lanzada."
+msgstr ""
+"Si la compilación es de depuración (``debug``, con editor) o final "
+"(``release``)."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:17
 msgid ""
@@ -70,11 +69,10 @@ msgid "Many more things."
 msgstr "Muchas más cosas."
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:20
-#, fuzzy
 msgid "Features can be queried at run-time from the singleton API by calling:"
 msgstr ""
-"Las funciones pueden consultarse en tiempo de ejecución a la API de "
-"singleton mediante una llamada:"
+"Las funciones pueden consultarse en tiempo de ejecución desde llamadas a la "
+"API del singleton haciendo:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:28
 msgid "Default features"
@@ -163,9 +161,8 @@ msgid "Running on X11 (Linux/BSD desktop)"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
-#, fuzzy
 msgid "**Server**"
-msgstr "**depth_draw_never**"
+msgstr "**Server**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:52
 msgid "Running on the headless server platform"
@@ -176,9 +173,8 @@ msgid "**debug**"
 msgstr "**debug**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:54
-#, fuzzy
 msgid "Running on a debug build (including the editor)"
-msgstr "Ejecución en una versión de depuración"
+msgstr "Ejecutando en una versión de depuración (incluyendo el editor)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:56
 msgid "**release**"
@@ -189,79 +185,68 @@ msgid "Running on a release build"
 msgstr "Ejecución en una versión de lanzamiento"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
-#, fuzzy
 msgid "**editor**"
-msgstr "**Operador**"
+msgstr "**editor**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:58
-#, fuzzy
 msgid "Running on an editor build"
-msgstr "Ejecutando en una versión de 32 bits"
+msgstr "Ejecutando en una compilación con editor"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
 msgid "**standalone**"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:60
-#, fuzzy
 msgid "Running on a non-editor build"
-msgstr "Ejecutando en una versión de 32 bits"
+msgstr "Ejecutando en una compilación sin editor"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
 msgid "**64**"
 msgstr "**64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:62
-#, fuzzy
 msgid "Running on a 64-bit build (any architecture)"
-msgstr "Ejecutando en una versión de 64 bits"
+msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
 msgid "**32**"
 msgstr "**32**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:64
-#, fuzzy
 msgid "Running on a 32-bit build (any architecture)"
-msgstr "Ejecutando en una versión de 32 bits"
+msgstr "Ejecutando en una versión de 32 bits (cualquier arquitectura)"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
-#, fuzzy
 msgid "**x86_64**"
-msgstr "**64**"
+msgstr "**x86_64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:66
-#, fuzzy
 msgid "Running on a 64-bit x86 build"
-msgstr "Ejecutando en una versión de 64 bits"
+msgstr "Ejecutando en una compilación de 64 bits"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
 msgid "**x86**"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:68
-#, fuzzy
 msgid "Running on a 32-bit x86 build"
-msgstr "Ejecutando en una versión de 32 bits"
+msgstr "Ejecutando en una compilación de 32 bits x86"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
-#, fuzzy
 msgid "**arm64**"
-msgstr "**64**"
+msgstr "**arm64**"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:70
-#, fuzzy
 msgid "Running on a 64-bit ARM build"
-msgstr "Ejecutando en una versión de 64 bits"
+msgstr "Ejecutando en una versión de 64 bits ARM"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
 msgid "**arm**"
 msgstr ""
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:72
-#, fuzzy
 msgid "Running on a 32-bit ARM build"
-msgstr "Ejecutando en una versión de 32 bits"
+msgstr "Ejecutando en una versión de 32 bits ARM"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:74
 msgid "**mobile**"
@@ -324,13 +309,12 @@ msgid "Custom features"
 msgstr "Funcionalidades personalizadas"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:92
-#, fuzzy
 msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
-"Es posible añadir funciones personalizadas a una compilación, usando el "
-"campo correspondiente en el *preset de exportación* utilizado para generarla:"
+"Es posible añadir funciones personalizadas a una compilación, usa el campo "
+"correspondiente en el *preset de exportación* utilizado para generarla:"
 
 #: ../../docs/getting_started/workflow/export/feature_tags.rst:98
 msgid "Overriding project settings"

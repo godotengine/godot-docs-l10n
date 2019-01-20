@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -375,7 +375,7 @@ msgid ""
 "where a default template will be included:"
 msgstr ""
 "스크립트를 편집하려면 위 이미지에 강조 표시된 두 버튼 중 하나를 선택합니다. "
-"그러면 스크립트 에디터로 이동하고, 기본 템플릿이 나타납니다."
+"그러면 스크립트 에디터로 이동하고, 기본 템플릿이 나타납니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:161
 msgid ""
@@ -499,17 +499,16 @@ msgstr ""
 "만, 이것은 스크립팅 튜토리얼이므로, 학습을 위해 수동 프로세스를 알아봅시다!"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
-#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
 "<class_Node_method_get_node>`. This function uses paths to fetch nodes "
 "anywhere in the scene, relative to the node that owns the script."
 msgstr ""
-"이것을 달성하기 위해서, 우리는 Godot 프로그래머들이 가장 잘 사용하는 기능을 "
-"소개하겠습니다: :ref:`Node.get_node() <class_Node_get_node>` 입니다. 이 기능"
-"은 스크립트를 소유한 노드라면 씬 내 어느 위치라도 경로를 사용해서 노드를 가져"
-"옵니다."
+"이것을 달성하기 위해서, 우리는 Godot 프로그래머들이 가장 잘 사용하는 함수를 "
+"소개하겠습니다: :ref:`Node.get_node() <class_Node_method_get_node>`\\ 입니"
+"다. 이 함수는 스크립트를 소유한 노드라면 씬 내 어느 위치라도 경로를 사용해서 "
+"노드를 가져옵니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:224
 msgid ""
@@ -533,13 +532,12 @@ msgid "Next, write a function which will be called when the button is pressed:"
 msgstr "그런 다음 버튼을 누르면 호출되는 기능을 작성합니다:"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
-"마지막으로 버튼의 \"누름\" 신호를 :ref:`Object.connect() "
-"<class_Object_connect>` 을 사용하여 ``_Ready`` 에 연결합니다."
+"마지막으로 버튼의 \"pressed\" 신호를 :ref:`Object.connect() "
+"<class_Object_method_connect>`\\ 를 사용하여 ``_ready()``\\ 에 연결합니다."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"

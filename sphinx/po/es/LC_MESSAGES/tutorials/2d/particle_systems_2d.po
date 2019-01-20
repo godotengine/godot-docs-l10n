@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgid "Intro"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:9
-#, fuzzy
 msgid ""
 "A simple (but flexible enough for most uses) particle system is provided. "
 "Particle systems are used to simulate complex physical effects, such as "
@@ -36,7 +35,7 @@ msgstr ""
 "Se proporciona un sistema de partículas simple (pero lo suficientemente "
 "flexible para la mayoría de los usos). Los sistemas de partículas se "
 "utilizan para simular efectos físicos complejos como chispas, fuego, "
-"partículas mágicas, humo, niebla, magia, etc."
+"partículas mágicas, humo, niebla, etc."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:13
 #, fuzzy
@@ -78,15 +77,14 @@ msgid "ParticlesMaterial"
 msgstr "ParticlesMaterial"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:32
-#, fuzzy
 msgid ""
 "To add a process material to your particles node, go to ``Process Material`` "
 "in your inspector panel. Click on the box next to ``Material``, and from the "
 "dropdown menu select ``New ParticlesMaterial``."
 msgstr ""
-"Para agregar un material de proceso a su nodo de partículas, vaya a Process "
-"Material en su panel del inspector. Haga clic en la casilla junto al "
-"material y, en el menú desplegable, seleccione Nuevo ParticlesMaterial."
+"Para agregar un material de proceso al nodo de partículas, ve a Process "
+"Material en el panel del inspector. Haz clic en la casilla junto al material "
+"y, en el menú desplegable, selecciona Nuevo ParticlesMaterial."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:38
 msgid "Your Particles2D node should now be emitting white points downward."
@@ -108,9 +106,8 @@ msgstr ""
 "establece a través de la relevante propiedad texture:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:53
-#, fuzzy
 msgid "Time parameters"
-msgstr "Parámetros de Tiempo"
+msgstr "Parámetros de Tiempo (Time)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
 msgid "Lifetime"
@@ -247,9 +244,8 @@ msgid "This can be used to turn Fract Delta on or off."
 msgstr "Esto se puede usar para activar o desactivar Fract Delta."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
-#, fuzzy
 msgid "Drawing parameters"
-msgstr "Drawing Parameters (Parámetros de Dibujo)"
+msgstr "Parámetros de Dibujo (Drawing)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:132
 msgid "Visibility Rect"
@@ -261,9 +257,11 @@ msgid ""
 "If this rectangle is outside of the viewport, the engine will not render the "
 "particles on screen."
 msgstr ""
+"El rectángulo de visibilidad controla la visibilidad del sistema de "
+"partícuas. Si el rectángulo está fuera del Viewport, el motor no dibujará en "
+"pantalla las particulas del sistema."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:137
-#, fuzzy
 msgid ""
 "The rectangle's ``W`` and ``H`` properties respectively control its Width "
 "and its Height. The ``X`` and ``Y`` properties control the position of the "
@@ -271,7 +269,7 @@ msgid ""
 msgstr ""
 "Los valores ``W`` y ``H`` controlan el ancho y alto del rectángulo de "
 "visibilidad. Los valores ``X`` y ``Y`` controlan la posición de la esquina "
-"superior izquierda del rectángulo de visibilidad con respecto al emisor de "
+"superior izquierda del rectángulo de visibilidad, relativo al emisor de "
 "partículas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:141
@@ -282,6 +280,12 @@ msgid ""
 "Particles2D node emitting particles for a few seconds and set the rectangle "
 "to fit the surface the particles take."
 msgstr ""
+"Puedes hacer que Godot genere un rectángulo de visibilidad automáticamente "
+"usando la barra de herramientas en la parte superior de la vista 2D. Para "
+"esto, selecciona el nodo Particles2D y haz click en ``Partículas > Generar "
+"rectángulo de visibilidad ``. Godot simulará el nodo Particles2D emitiendo "
+"partículas por algunos segundos y creará un rectángulo que se ajuste a la "
+"superficie ocupada por las partículas."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:143
 msgid ""
@@ -290,6 +294,10 @@ msgid ""
 "move around, you can temporarily change the ``preprocess`` duration on the "
 "Particles2D node."
 msgstr ""
+"Puedes controlar la duración de la emisión con la opción ``Tiempo de "
+"generación (seg)``. El valor máximo es de 25 segundos, si necesitas más "
+"tiempo para que tus partículas se muevan, puedes cambiar temporalmente la "
+"propiedad ``preprocess`` en el nodo Particles2D."
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:146
 msgid "Local Coords"
@@ -336,6 +344,7 @@ msgstr "Ajustes de ParticlesMaterial"
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:169
 msgid "Particles2D > Process Material > Material > drop-down menu > Edit:"
 msgstr ""
+"En Particles2D > Process Material > Material > menu desplegable > Editar:"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:188
 msgid "Spread"
@@ -483,12 +492,11 @@ msgid "Hue variation"
 msgstr "Hue variation (Variación de tono)"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:285
-#, fuzzy
 msgid ""
 "The ``Variation`` value sets the initial hue variation applied to each "
 "particle. The ``Variation Random`` value controls the hue variation "
 "randomness ratio."
 msgstr ""
-"El valor de Variation establece la variación de tono inicial aplicada a cada "
-"partícula. El valor Variation Rand controla la relación de aleatoriedad de "
-"la variación de tono."
+"El valor de ``Variation`` establece la variación de tono inicial aplicada a "
+"cada partícula. El valor ``Variation Random`` controla el ratio de "
+"aleatoriedad de la variación de tono."

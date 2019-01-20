@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,9 +57,8 @@ msgstr ""
 "\"Active\":"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:23
-#, fuzzy
 msgid "Collision shapes"
-msgstr "Formas de Colisión"
+msgstr "Figuras de Colisión"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:25
 msgid ""
@@ -88,7 +87,6 @@ msgstr ""
 "como con Godot"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:36
-#, fuzzy
 msgid ""
 "In Godot, you can have different collision groups and collision masks. In "
 "Blender you only have collision groups. As a result, the exported object's "
@@ -98,7 +96,7 @@ msgstr ""
 "En Godot, puedes tener diferentes grupos de colisión y máscaras de colisión. "
 "En Blender sólo tienes grupos de colisión. Como resultado, la máscara de "
 "colisión del objeto exportado es igual a su grupo de colisión. En la mayoría "
-"de los casos, esto era lo que buscabas."
+"de los casos, esto era lo que se desea."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:42
 msgid ""
@@ -111,12 +109,10 @@ msgstr ""
 "body de los padres, y el resto se usan como formas de colisión."
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:47
-#, fuzzy
 msgid "Collision geometry only"
-msgstr "Sólo Geometría de Colisión"
+msgstr "Sólo geometría de colisión"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:49
-#, fuzzy
 msgid ""
 "Frequently you want different geometry for your collision meshes and your "
 "graphical meshes, but by default the exporter will export a mesh along with "
@@ -125,7 +121,7 @@ msgid ""
 msgstr ""
 "Con frecuencia se necesita una geometría diferente para las mallas de "
 "colisión y las mallas gráficas, pero por defecto el exportador exportará una "
-"malla junto con la forma de la colisión. Para exportar sólo la forma de "
+"malla junto con la figura de colisión. Para exportar sólo la figura de "
 "colisión, establece el tipo de dibujo máximo para los objetos en Wire:"
 
 #: ../../docs/getting_started/workflow/assets/escn_exporter/physics.rst:56

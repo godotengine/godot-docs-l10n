@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,9 +43,10 @@ msgid "|image0|"
 msgstr "|image0|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:18
+#, fuzzy
 msgid ""
-"At the top you see the **header** which takes you to various other parts of "
-"the AssetLib - at the moment it's empty as we are not logged in."
+"At the top, you see the **header**, which takes you to various other parts "
+"of the AssetLib - at the moment, it's empty, as we are not logged in."
 msgstr ""
 "在顶部，您会看到 **标题** ，它将您带到AssetLib的各个其他部分 - 此时它还是空"
 "的，因为我们尚未登录。"
@@ -229,9 +230,10 @@ msgid "|image5|"
 msgstr "|image5|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:94
+#, fuzzy
 msgid ""
 "This will change the look of the AssetLib header. Now you get access to a "
-"handful new functions:"
+"handful of new functions:"
 msgstr "这将更改AssetLib标题部分的外观。 现在您可以访问一些新功能:"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:97
@@ -253,9 +255,10 @@ msgid "|image6|"
 msgstr "|image6|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:103
+#, fuzzy
 msgid ""
 "You can learn how to submit assets to the Library, and what the asset "
-"submission guidelines are, in the next part of this tutorial, ::ref:"
+"submission guidelines are, in the next part of this tutorial, :ref:"
 "`doc_uploading_to_assetlib`."
 msgstr ""
 "您可以在本教程的下一部分 : :ref:`doc_uploading_to_assetlib` 中学习如何向资源"
@@ -275,10 +278,14 @@ msgstr ""
 "的“模板”选项卡中，或则在项目内部的工作区列表中。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:113
-msgid "|image7| |image14|"
-msgstr "|image7| |image14|"
+msgid "|image7|"
+msgstr "|image7|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:116
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:115
+msgid "|image14|"
+msgstr "|image14|"
+
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:117
 msgid ""
 "Click on it, and Godot will fetch info about the assets from the AssetLib. "
 "Once it's finished, you will see a window similar to what the AssetLib "
@@ -287,11 +294,11 @@ msgstr ""
 "单击它，Godot将从AssetLib获取有关资源的信息。 一旦完成，您将看到一个类似于"
 "AssetLib网站的窗口，但有一些不同之处:"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:120
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
 msgstr "|image8|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:122
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:123
 msgid ""
 "Similarly to the web version of the AssetLib, here you can search for assets "
 "by category, name, and sort them by factors such as name or edit date."
@@ -299,7 +306,7 @@ msgstr ""
 "与AssetLib的网页版本类似，您可以在此处按类别，名称搜索资源，并按名称或编辑日"
 "期等因素对其进行排序。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:125
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:126
 msgid ""
 "Notably, you can only fetch assets for the current version of Godot you are "
 "running. Also, you can only download Projects, Demos and Templates from the "
@@ -314,7 +321,7 @@ msgstr ""
 "能从项目内的AssetLib下载。 此外，与使用网页前端不同的是，搜索结果会实时更新"
 "(您不必在每次更改搜索查询后再按搜索)。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:133
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:134
 msgid ""
 "In the future, you will be able to choose a different AssetLib provider to "
 "fetch assets from (using the Site dropdown menu), however currently only the "
@@ -326,15 +333,15 @@ msgstr ""
 "但是目前只支持官方的 `Godot网站 <https://godotengine.org>`_ 版本的AssetLib ，"
 "和可能在本地Web服务器上运行的资源馆(见localhost选项)。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:139
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:140
 msgid "When you click on an asset, you will see more information about it."
 msgstr "单击资源时，您将看到有关它的更多信息。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:141
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
 msgstr "|image9|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:143
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:144
 msgid ""
 "If you click on the Install button, Godot will fetch an archive of the "
 "asset, and will track download progress of it at the bottom of the editor "
@@ -343,22 +350,22 @@ msgstr ""
 "如果单击Install按钮，Godot引擎将下载资源的压缩包，并将在编辑器窗口的底部显示"
 "它的下载进度。 如果下载失败，您可以使用Retry按钮重试。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:147
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:148
 msgid "|image10|"
 msgstr "|image10|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:149
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:150
 msgid ""
 "When it finishes, you can proceed to install it using the Install button. "
 "This will bring up the Package Installer window."
 msgstr ""
 "完成后，您可以使用Install按钮继续安装它。 这将打开Package Installer窗口。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:152
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:153
 msgid "|image11|"
 msgstr "|image11|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:154
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:155
 msgid ""
 "Here you can see a list of all the files that will be installed. You can "
 "tick off any of the files that you do not wish to install, and Godot will "
@@ -370,11 +377,11 @@ msgstr ""
 "Godot引擎也会告知您无法安装的文件的任何问题。 这些文件将以红色显示，将鼠标悬"
 "停在它们上方会显示一条消息，说明无法安装的原因。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:160
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:161
 msgid "|image12|"
 msgstr "|image12|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:162
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:163
 msgid ""
 "Once you are done, you can press the Install button, which will unzip all "
 "the files in the archive, and import any assets contained therein, such as "
@@ -385,11 +392,11 @@ msgstr ""
 "所有资源，例如图像或3D模型。 完成此操作后，您应该会看到一条消息，指出Package"
 "安装已完成。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:167
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:168
 msgid "|image13|"
 msgstr "|image13|"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:169
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:170
 msgid ""
 "You may also use the Import button to import asset archives obtained "
 "elsewhere (such as downloading them directly from the AssetLib web "

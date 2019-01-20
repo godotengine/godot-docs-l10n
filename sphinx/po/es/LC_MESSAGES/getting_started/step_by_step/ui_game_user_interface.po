@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,6 @@ msgid "Design the GUI"
 msgstr "Diseñando la GUI"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:6
-#, fuzzy
 msgid ""
 "Now that you've nailed the basics, we're going to see how to build a game "
 "Graphical User Interface (GUI) with reusable UI components: a life bar, an "
@@ -32,7 +31,7 @@ msgstr ""
 "Ahora que has aprendido lo básico, vamos a ver cómo construir una Interfaz "
 "de Usuario de Juego (GUI) con componentes de UI reutilizables: una barra de "
 "vida, una barra de energía y contadores de bombas y rupias. Al final de este "
-"tutorial, tendrás una interfaz gráfica del juego, lista para controlar con "
+"tutorial tendrás una interfaz gráfica del juego lista para controlar con "
 "GDscript o VisualScript:"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:13
@@ -169,14 +168,12 @@ msgid "For now, let's start with a few containers."
 msgstr "Por ahora, empecemos con algunos containers."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:71
-#, fuzzy
 msgid ""
 "Create a new scene and add a ``MarginContainer``. Select the node and name "
 "it ``GUI``."
 msgstr ""
 "Crea una nueva escena y añade un ``MarginContainer``. Selecciona el nodo y "
-"llámalo ``GUI``. Luego guarda la escena como ``GUI.tscn``. Contendrá toda la "
-"GUI."
+"llámalo ``GUI``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:74
 msgid ""
@@ -186,6 +183,12 @@ msgid ""
 "parent, the viewport by default. It will resize automatically on the "
 "vertical axis to make space for its child UI components."
 msgstr ""
+"Queremos que nuestra interfaz se ancle a la parte superior de la pantalla. "
+"Seleccione el nodo `` GUI`` y haga clic en el botón Layout en la parte "
+"superior de la vista. Seleccione la opción `` Top Wide``. El nodo `` GUI`` "
+"se anclará al borde superior de su padre, la vista por defecto. Se "
+"redimensionará automáticamente en el eje vertical para hacer espacio para "
+"sus componentes UI hijos."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:80
 msgid "Save the scene as ``GUI.tscn``. We will put the entire GUI in it."
@@ -208,7 +211,6 @@ msgstr ""
 "izquierda y las separará de los dos contadores a la derecha."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:88
-#, fuzzy
 msgid ""
 "We want to stack the bars vertically inside the ``HBoxContainer``. Add a "
 "``VBoxContainer`` as a child of ``HBoxContainer`` and name it ``Bars``. "
@@ -218,10 +220,9 @@ msgid ""
 msgstr ""
 "Queremos colocar las barras verticalmente dentro del ``HBoxContainer``. Para "
 "hacer esto, agregaremos un ``VBoxContainer``. Nómbralo ``Bars``. Selecciona "
-"el padre ```HBoxContainer`` nuevamente y esta vez, agrega otro "
-"```HBoxContainer``. Este contendrá los contadores, así que llámalo "
-"``Counters``. Con estos cuatro containers, tenemos la base para nuestra "
-"escena GUI."
+"el padre ``HBoxContainer`` nuevamente y agrega otro ```HBoxContainer`` como "
+"hijo. Este contendrá los contadores, así que llámalo ``Counters``. Con estos "
+"cuatro Containers, tenemos la base para nuestra escena GUI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:95
 msgid "You should have 4 containers that look like this"
@@ -396,7 +397,6 @@ msgstr ""
 "control al Count MarginContainer"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:182
-#, fuzzy
 msgid ""
 "Select the ``Title`` and in the Inspector, change its ``Stretch Mode`` "
 "property to ``Keep Centered``. Next find the ``Rect`` category in the "
@@ -409,11 +409,11 @@ msgid ""
 "Resize the node horizontally, so it takes the right half of the "
 "``Background`` and there's a bit of padding with the right edge."
 msgstr ""
-"Selecciona el ``Title`` y en el Inspector, cambia la propiedad ``Stretch "
+"Selecciona el ``Title`` y, en el Inspector, cambia la propiedad ``Stretch "
 "Mode`` por ``Keep Centered``. A continuación, busca la categoría ``Rect`` en "
 "el Inspector y cambia la propiedad ``Size`` a (50, 40) para que sólo ocupe "
 "la mitad izquierda del fondo.  A continuación, selecciona el nodo "
-"``Number``. En la ventana de visualización, haz clic en el menú "
+"``Number``. En la ventana de visualización (viewport), haz clic en el menú "
 "``Disposición`` y, seguidamente, en ``Full Rect``. El nodo cambiará su "
 "tamaño para que se ajuste al ``Background``. Dirígete al Inspector y cambia "
 "su propiedad ```Align`` por ``Right``, y la propiedad ```VAlign`` por "
@@ -567,7 +567,6 @@ msgstr ""
 "arreglaremos el tamaño pronto."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:264
-#, fuzzy
 msgid ""
 "Rename the ``Count2`` node to ``Counter``. Unlike the bars, we want the "
 "number to be on the left, and an icon to sit on the right. The setup is the "
@@ -578,10 +577,10 @@ msgid ""
 msgstr ""
 "Cambia el nombre del nodo ``Count2`` por ``Counter``. A diferencia de las "
 "barras, queremos que el número esté a la izquierda, y que un icono se sitúe "
-"a la derecha. La configuración es la misma: necesitaremos un fondo, un "
-"``NinePatchFrame``, el título y los nodos numéricos. El nodo ``Title`` es un "
-"``TextureRect``, así que es lo que necesitamos para mostrar el icono. En el "
-"árbol de la escena, selecciona el nodo ``Title``, y renómbralo a ``Icon``."
+"a la derecha. La configuración es la misma: necesitaremos un fondo (un "
+"``NinePatchRect``), el título y los nodos para números. El nodo ``Title`` es "
+"un ``TextureRect``, así que es lo que necesitamos para mostrar el icono. En "
+"el árbol de la escena, selecciona el nodo ``Title``, y renómbralo a ``Icon``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:273
 msgid "Here's how your node tree should look so far"
@@ -685,7 +684,6 @@ msgstr ""
 "ahora funcionará como se esperaba."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:323
-#, fuzzy
 msgid ""
 "Let's make the ``Counters`` anchor to the right edge of the viewport. To do "
 "so, we need to set the ``Bars`` container take all the available horizontal "
@@ -694,10 +692,10 @@ msgid ""
 "``Bars`` node should resize and push the counter to the right side of the "
 "screen."
 msgstr ""
-"Ya que estamos en ello, hagamos que los ``Counters`` se coloquen en el borde "
-"derecho de la ventana. Para ello pondremos el container ``Bars`` para que se "
-"expanda y ocupe todo el espacio horizontal. Selecciona el nodo ``Bars`` y "
-"desplázate hacia abajo hasta la categoría ``Size Flags``. En la categoría "
+"Ahora hagamos que los ``Counters`` se anclen en el borde derecho de la "
+"ventana. Para ello pondremos el Container ``Bars`` para que se expanda y "
+"ocupe todo el espacio horizontal. Selecciona el nodo ``Bars`` y desplázate "
+"hacia abajo hasta la categoría ``Size Flags``. En la categoría "
 "``Horizontal``, marca el campo ``Expand``. El nodo ``Bars`` debe "
 "redimensionar y empujar el contador hacia la parte derecha de la pantalla."
 
@@ -744,7 +742,6 @@ msgstr ""
 "en un único nodo ``Bar``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:352
-#, fuzzy
 msgid ""
 "A scene is a tree of nodes. The topmost node is the tree's **root**, and the "
 "children at the bottom of the hierarchy are **leaves**. Any node other than "
@@ -755,14 +752,13 @@ msgid ""
 msgstr ""
 "Una escena es un árbol de nodos. El nodo superior es la **raíz** del árbol, "
 "y los hijos en la parte inferior de la jerarquía son **hojas**. Cualquier "
-"otro nodo que no sea la raíz junto con un hijo más es una **rama**. Podemos "
-"encapsular ramas de nodos en escenas separadas, o cargarlas y fusionarlas de "
-"otras escenas en la activa. Haz clic con el botón derecho del ratón en "
-"cualquier nodo del panel de Escenas y selecciona ```Guardar Rama como "
-"Escena`` o ``Fusionar desde Escena``."
+"otro nodo que no sea la raíz y además posea un hijo, es una **rama**. "
+"Podemos encapsular ramas de nodos en escenas separadas, o cargarlas y "
+"fusionarlas de otras escenas en la activa. Haz clic con el botón derecho del "
+"ratón en cualquier nodo del panel de Escenas y selecciona ``Guardar Rama "
+"como Escena`` o ``Fusionar desde Escena``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:360
-#, fuzzy
 msgid ""
 "Then, select the ``Counter`` node and do the same. Right click, ``Save "
 "Branch as Scene``, and save it as ``Counter.tscn``. A new edit scene icon "
@@ -772,23 +768,22 @@ msgid ""
 "nodes, we're ready to inherit this template and create the life bar. It's "
 "the same for the ``Counter``."
 msgstr ""
-"Luego, seleccione el nodo `` Counter`` y haga lo mismo. Haga clic derecho, "
-"`` Guardar rama como escena``, y guárdelo como `` Counter.tscn``. Aparece un "
-"nuevo ícono de escena de edición a la derecha de los nodos en el árbol de "
-"escenas. Haga clic en el que está junto a `` Barra`` para abrir la escena "
-"correspondiente. Cambiar el tamaño del nodo `` Barra`` para que su cuadro "
-"delimitador se ajuste a su contenido. La forma en que nombramos y colocamos "
-"los nodos Control, estamos listos para heredar esta plantilla y crear la "
-"barra de vida. Es lo mismo para el `` Contador``."
+"Luego, selecciona el nodo `` Counter`` y realiza lo mismo. Haz clic derecho, "
+"`` Guardar rama como escena``, y guárdalo como `` Counter.tscn``. Aparecerá "
+"un nuevo ícono de escena de edición a la derecha de los nodos en el árbol de "
+"escenas. Ahora haz clic en el que está junto a `` Bar`` para abrir la escena "
+"correspondiente. Cambia el tamaño del nodo ``Bar`` para que su cuadro "
+"delimitador se ajuste a su contenido. Por la forma en que nombramos y "
+"colocamos los nodos Control, estamos listos para heredar esta plantilla y "
+"crear la barra de vida. Es lo mismo para el ``Counter``."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:370
 msgid "With no extra changes, our Bar is ready to use"
 msgstr "Sin cambios adicionales, nuestra barra está lista para usar"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:373
-#, fuzzy
 msgid "Use scene inheritance to create the remaining elements"
-msgstr "Utiliza la Herencia de Escena para crear los elementos restantes"
+msgstr "Utiliza la herencia de escena para crear los elementos restantes"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:375
 msgid ""
@@ -814,7 +809,6 @@ msgstr ""
 "final, solo tendremos contenedores y un nodo para cada componente de UI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:386
-#, fuzzy
 msgid ""
 "On an inherited scene, you can change any property of every node in the "
 "inspector, aside from its name. If you modify and save the parent scene, all "
@@ -828,10 +822,10 @@ msgstr ""
 "el inspector, además de su nombre. Si modificas y guardas la escena "
 "principal, todas las escenas heredadas se actualizarán para reflejar los "
 "cambios. Si cambias un valor en la escena heredada, siempre anulará la "
-"propiedad del padre. Es útil para UI ya que a menudo requieren variaciones "
-"de los mismos elementos. En general, en el diseño de la interfaz de usuario, "
-"botones, paneles, etc. comparten un estilo de base común e interacciones. No "
-"queremos copiarlo a todas las variaciones de forma manual."
+"propiedad de la escena base. Es útil para UI ya que a menudo requieren "
+"variaciones de los mismos elementos. En general, en el diseño de la interfaz "
+"de usuario, botones, paneles, etc. comparten un estilo de base común e "
+"interacciones. No queremos copiarlo a todas las variaciones de forma manual."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:395
 msgid ""
@@ -1120,9 +1114,8 @@ msgstr ""
 "con todos los elementos de la UI."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:544
-#, fuzzy
 msgid "The rupee counter should look something like this"
-msgstr "El contador de rupias debe verse así"
+msgstr "El contador de rupias debería verse así"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:547
 msgid "Add the UI components to the final GUI"
@@ -1189,7 +1182,6 @@ msgstr ""
 "la altura del fondo del contador."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:582
-#, fuzzy
 msgid ""
 "We have one small issue left with the EP label on the EnergyBar: the 2 bars "
 "should align vertically. Click the icon next to the ``EnergyBar`` node to "
@@ -1204,8 +1196,8 @@ msgstr ""
 "barras deben alinearse verticalmente. Haz clic en el icono junto al nodo "
 "``EnergyBar`` para abrir la escena. Selecciona el nodo ``Count`` y "
 "desplázate hacia abajo hasta la sección ``Custom Constant``. Añade un "
-"``Margin Left`` de ``20``. En la sección ``Rect`` vuelve a poner el tamaño "
-"mínimo del nodo en 100, el mismo valor que en LifeBar. El ``Count``\" "
+"``Margin Left`` de ``20``. En la sección ``Rect`` vuelve a poner el ``Min "
+"Size`` del nodo en 100, el mismo valor que en LifeBar. El ``Count``\" "
 "debería tener un margen a la izquierda. Si guardas y vuelves a la escena "
 "GUI, se alineará verticalmente con la ``LifeBar``."
 
@@ -1214,7 +1206,6 @@ msgid "The 2 bars align perfectly"
 msgstr "Las 2 barras se alinean perfectamente"
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:597
-#, fuzzy
 msgid ""
 "We could have set up the ``EnergyBar`` this way a few moments ago. But this "
 "shows you that you can go back to any scene anytime, tweak it, and see the "
@@ -1222,8 +1213,8 @@ msgid ""
 msgstr ""
 "Podríamos haber configurado la ``EnergyBar`` de esta manera hace unos "
 "momentos. Pero esto demuestra que puedes volver a cualquier escena en "
-"cualquier momento, modificarla y ¡ver los cambios propagarse a través del "
-"proyecto!"
+"cualquier momento, modificarla y ver los cambios propagarse a través del "
+"proyecto."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:602
 msgid "Place the GUI onto the game's mockup"
@@ -1258,14 +1249,13 @@ msgstr ""
 "ver cómo se ve la interfaz en el contexto del juego."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:616
-#, fuzzy
 msgid ""
 "Congratulations for getting to the end of this long tutorial. You can find "
 "the final project here: :download:`ui_gui_design.zip <files/ui_gui_design."
 "zip>`."
 msgstr ""
 "Enhorabuena por llegar al final de este largo tutorial. Puedes encontrar el "
-"proyecto final `aquí <#>`__."
+"proyecto final aquí :download:`ui_gui_design.zip <files/ui_gui_design.zip>`."
 
 #: ../../docs/getting_started/step_by_step/ui_game_user_interface.rst:625
 msgid ""

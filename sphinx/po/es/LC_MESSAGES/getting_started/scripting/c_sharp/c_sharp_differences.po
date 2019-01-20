@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,27 +69,25 @@ msgid "Math"
 msgstr "Matemáticas"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:28
-#, fuzzy
 msgid ""
 "Math functions, like ``abs``, ``acos``, ``asin``, ``atan`` and ``atan2``, "
 "are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, ``Atan`` and "
 "``Atan2``, instead of in global scope. ``PI`` is ``Mathf.Pi``"
 msgstr ""
 "Las funciones matemáticas como ``abs``, ``acos``, ``asin``, ``atan`` y "
-"``atan2`` se encuentran bajo ``Mathf`` como ``Abs``, ``Acos``, ``Asin``, "
-"``Atan`` y ``Atan2``, en lugar de en el ámbito global. `PI`` es ``Mathf.Pi``"
+"``atan2`` se encuentran en ``Mathf`` como ser ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` y ``Atan2``, en lugar de en ámbito global. ``PI`` es ``Mathf.Pi``"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:33
 msgid "Random"
 msgstr "Random"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:35
-#, fuzzy
 msgid ""
 "Random functions, like ``rand_range`` and ``rand_seed``, are located under "
 "``Random``, so use ``Random.RandRange`` instead of ``rand_range``."
 msgstr ""
-"Las funciones random como ``rand_range`` y ```rand_seed`` se encuentran bajo "
+"Las funciones random como ``rand_range`` y ```rand_seed`` se encuentran en "
 "``Random``, así que usa ``Random.RandRange`` en lugar de ```rand_range``."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:39
@@ -286,13 +284,12 @@ msgid "Plane"
 msgstr "Plano"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:139
-#, fuzzy
 msgid ""
 "The following method was converted to a property with a *slightly* different "
 "name:"
 msgstr ""
 "Los siguientes métodos fueron convertidos a propiedades con sus respectivos "
-"nombres cambiados:"
+"nombres ligeramente cambiados:"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:144
 msgid "center()"
@@ -307,7 +304,6 @@ msgid "Rect2"
 msgstr "Rect2"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_differences.rst:150
-#, fuzzy
 msgid ""
 "The following field was converted to a property with a *slightly* different "
 "name:"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,16 +26,15 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:9
-#, fuzzy
 msgid ""
 "This is an overview of the 2D transforms going on for nodes from the moment "
 "they draw their content locally to the time they are drawn onto the screen. "
 "This overview discusses very low level details of the engine."
 msgstr ""
-"Este tutorial se crea después de un tema que es un poco confuso para la "
-"mayoría de los usuarios y explica todas las transformaciones 2D de los nodos "
-"desde el momento en que dibujan su contenido localmente hasta el momento en "
-"que son dibujados en la pantalla."
+"Esto es un resumen de lo que sucede con las matrices de transformación 2D en "
+"los nodos desde el momento en que dibujan su contenido localmente hasta el "
+"momento en que se muestran en pantalla. Aquí se mostrarán detalles de muy "
+"bajo nivel de el motor."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:14
 msgid "Canvas transform"
@@ -71,14 +70,13 @@ msgid "Global canvas transform"
 msgstr "Transformación global del canvas"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:29
-#, fuzzy
 msgid ""
 "Viewports also have a Global Canvas transform (also a :ref:`Transform2D "
 "<class_Transform2D>`). This is the master transform and affects all "
 "individual *Canvas Layer* transforms. Generally, this transform is not of "
 "much use, but is used in the CanvasItem Editor in Godot's editor."
 msgstr ""
-"Los viewports también tienen una transformación Global Canvas (también un :"
+"Los Viewports también tienen una transformación Global Canvas (también un :"
 "ref:`Transform2D <class_Transform2D>`). Esta es la transformación principal "
 "y afecta a todas las transformaciones individuales de *Canvas Layer*. "
 "Generalmente esta transformación no es de mucha utilidad, pero se usa en el "
@@ -89,20 +87,18 @@ msgid "Stretch transform"
 msgstr "Stretch transform"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:38
-#, fuzzy
 msgid ""
 "Finally, viewports have a *Stretch Transform*, which is used when resizing "
 "or stretching the screen. This transform is used internally (as described "
 "in :ref:`doc_multiple_resolutions`), but can also be manually set on each "
 "viewport."
 msgstr ""
-"Por último, los viewports tienen un *Stretch Transform*, que se utiliza al "
-"cambiar el tamaño o estirar la pantalla. Esta transformación se utiliza "
+"Por último, los Viewports tienen un *Stretch Transform*, que se utiliza al "
+"cambiar de tamaño o estirar la pantalla. Esta transformación se utiliza "
 "internamente (como se describe en :ref:`doc_multiple_resolutions`) pero "
-"también se puede configurar manualmente en cada viewport."
+"también se puede configurar manualmente en cada Viewport."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:43
-#, fuzzy
 msgid ""
 "Input events received in the :ref:`MainLoop._input_event() "
 "<class_MainLoop_method__input_event>` callback are multiplied by this "
@@ -111,12 +107,12 @@ msgid ""
 "<class_CanvasItem_method_make_input_local>` function was added for "
 "convenience."
 msgstr ""
-"Eventos de entrada (Input events) recibidos en el callback de :ref:`MainLoop."
-"_input_event() <class_MainLoop__input_event>` son multiplicados por este "
-"transform, pero carecen de los presentados anteriormente. Para convertir "
-"fácilmente coordenadas de InputEvent a coordenadas locales de CanvasItem, se "
-"agregó la función :ref:`CanvasItem.make_input_local() "
-"<class_CanvasItem_make_input_local>` por conveniencia."
+"Eventos de entrada (Input events) recibidos en el callback de  :ref:"
+"`MainLoop._input_event() <class_MainLoop_method__input_event>` son "
+"multiplicados por este transform, pero carecen de los presentados "
+"anteriormente. Para convertir fácilmente coordenadas de InputEvent a "
+"coordenadas locales de CanvasItem, se agregó la función :ref:`CanvasItem."
+"make_input_local() <class_CanvasItem_method_make_input_local>`."
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:50
 msgid "Transform order"
@@ -152,39 +148,36 @@ msgid "CanvasItem"
 msgstr "CanvasItem"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:65
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_global_transform() "
 "<class_CanvasItem_method_get_global_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_global_transform() "
-"<class_CanvasItem_get_global_transform>`"
+"<class_CanvasItem_method_get_global_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
 msgid "CanvasLayer"
 msgstr "CanvasLayer"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:67
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_canvas_transform() "
 "<class_CanvasItem_method_get_canvas_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_canvas_transform() "
-"<class_CanvasItem_get_canvas_transform>`"
+"<class_CanvasItem_method_get_canvas_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:69
 msgid "CanvasLayer+GlobalCanvas+Stretch"
 msgstr "CanvasLayer+GlobalCanvas+Stretch"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:69
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem.get_viewport_transform() "
 "<class_CanvasItem_method_get_viewport_transform>`"
 msgstr ""
 ":ref:`CanvasItem.get_viewport_transform() "
-"<class_CanvasItem_get_viewport_transform>`"
+"<class_CanvasItem_method_get_viewport_transform>`"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:72
 msgid ""

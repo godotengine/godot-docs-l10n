@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,16 +38,15 @@ msgid "A game UI with a health bar, energy bar, bomb and money counters"
 msgstr "체력 막대, 에너지 막대, 폭탄과 돈의 수를 표시하는 게임 UI"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:12
-#, fuzzy
 msgid ""
 "You will learn how to design game UIs efficiently, and how to use Godot's "
 "Control nodes. This page focuses on the visual part: everything you do from "
 "the editor. To learn how to code a life bar, read :doc:`ui_code_a_life_bar`"
 msgstr ""
 "어떻게 게임 UI를 효율적으로 설계하는지, 그리고 어떻게 Godot의 컨트롤 노드를 "
-"사용하는지 배울 겁니다. 이 페이지에서는 시각적인 부분에 중점을 두겠습니다: 모"
-"든 것은 에디터에서 할 수 있습니다. 어떻게 체력 막대를 코딩하는지 배우려면, :"
-"doc:`ui_code_a_life_bar` 를 읽어주세요"
+"사용하는지 배울겁니다. 이 페이지에서는 시각적인 부분에 중점을 두겠습니다: 모"
+"든 것은 에디터에서 할 수 있습니다. 어떻게 체력 막대를 코딩하는지 배우려면 :"
+"doc:`ui_code_a_life_bar`\\ 를 읽어주세요"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:20
 msgid "The GUI you're going to create"
@@ -460,7 +459,6 @@ msgid "There's no space between the logo and the other UI elements"
 msgstr "로고와 다른 UI 요소들 사이에 공간이 없습니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:219
-#, fuzzy
 msgid ""
 "To center the characters on the right, we'll use a ``CenterContainer``.  Add "
 "a ``CenterContainer`` node as a child of the ``HBoxContainer``. Then in the "
@@ -470,12 +468,13 @@ msgid ""
 "drop the Characters into the ``CenterContainer``. The Characters element "
 "will center automatically."
 msgstr ""
-"오른쪽에 캐릭터가 중앙에 오게 하려면, 우리는 ``CenterContainer`` 를 사용할 겁"
-"니다. ``CenterContainer`` 노드를 ``HBoxContainer`` 의 자식으로 추가하세요. "
-"그 후 인스펙터에서, ``Size Flags`` 카테고리로 내려서 ``Vertical`` 속성의 오른"
-"쪽에 있는 영역을 클릭하세요, 그리고 ``Expand`` 를 체크하세요. ``Horizontal`` "
-"속성에도 똑같이 적용하세요. 마지막으로 캐릭터를 ``CenterContainer`` 에 드래"
-"그 앤 드랍 하세요. 캐릭터 요소는 자동으로 중앙에 자리 잡을 것입니다."
+"오른쪽에 캐릭터가 중앙에 오게 하려면, 우리는 ``CenterContainer``\\ 를 사용할 "
+"겁니다. ``CenterContainer`` 노드를 ``HBoxContainer``\\ 의 자식으로 추가합니"
+"다. 그 후 인스펙터에서, ``Size Flags`` 카테고리로 내려서 ``Vertical`` 속성의 "
+"오른쪽에 있는 영역을 클릭하고, ``Expand``\\ 와 추가로 ``Fill``\\ 을 체크하세"
+"요. ``Horizontal`` 속성에도 똑같이 적용합니다. 마지막으로 캐릭터를 "
+"``CenterContainer``\\ 에 드래그 앤 드랍 하세요. 캐릭터 요소는 자동으로 중앙"
+"에 자리 잡을 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:228
 msgid ""
@@ -508,7 +507,6 @@ msgstr ""
 "UI 레이아웃을 유지하기 위해 다른 두 노드 사이에 새 컨테이너를 배치합니다"
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:244
-#, fuzzy
 msgid ""
 "Now we grouped the menu options together, we can tell their container to "
 "expand to take as much vertical space as possible. Select the "
@@ -521,9 +519,9 @@ msgstr ""
 "이제 우리는 메뉴 옵션들을 그룹화하여, 그들의 컨테이너를 가능한 많은 수직 공간"
 "을 차지하도록 확장시킬 수 있습니다. ``MenuOptions`` 노드를 선택합니다. 인스펙"
 "터에서, ``Size Flags`` 카테고리로 내립니다. ``Vertical`` 속성의 오른쪽 영역"
-"을 클릭하고, ``Expand`` 를 체크합니다. 컨테이너는 모든 사용 가능한 수직 공간"
-"을 차지하도록 확장합니다. 하지만 이웃들, ``Logo`` 와 ``Version``요소들은 그렇"
-"지 못합니다."
+"을 클릭하고, ``Expand``\\ 와 추가로 ``Fill``\\ 을 체크합니다. 컨테이너는 모"
+"든 사용 가능한 수직 공간을 차지하도록 확장합니다. 하지만 이웃들, ``Logo``\\ "
+"와 ``Version`` 요소들은 그렇지 못합니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:252
 msgid ""
@@ -562,16 +560,16 @@ msgstr ""
 "코드 한 줄도 안 쓰고, 우리는 정확하고 반응하는 메인 메뉴를 갖게 되었습니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:272
-#, fuzzy
 msgid ""
 "Congratulations for getting there! You can download the final menu :download:"
 "`ui_main_menu_design.zip <files/ui_main_menu_design.zip>` to compare with "
 "your own. In the next tutorial, you'll create a Game User Interface with "
 "bars and item counters."
 msgstr ""
-"여기까지 오신 것에 축하합니다! 당신의 것과 비교하기 위한 `final menu <#>`__ "
-"를 내려받으실 수 있습니다. 다음 튜토리얼에서, 당신은 막대와 아이템 수 카운터"
-"가 있는 게임 사용자 인터페이스를 만들 것입니다."
+"여기까지 오신 것에 축하합니다! 당신의 것과 비교하기 위한 :download:"
+"`ui_main_menu_design.zip <files/ui_main_menu_design.zip>`\\ 을 내려받으실 수 "
+"있습니다. 다음 튜토리얼에서는, 당신은 막대와 아이템 수 카운터가 있는 게임 사"
+"용자 인터페이스를 만들 것입니다."
 
 #: ../../docs/getting_started/step_by_step/ui_main_menu.rst:280
 msgid ""

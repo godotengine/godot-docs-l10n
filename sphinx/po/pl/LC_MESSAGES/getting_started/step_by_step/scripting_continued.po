@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,7 +150,7 @@ msgid ""
 msgstr ""
 "W ten sposób, jeśli gracz zostanie wykryty podczas skradania się do tajnej "
 "bazy, wszyscy wrogowie zostaną powiadomieni za pomocą :ref:`SceneTree."
-"call_group() <class_SceneTree_call_group>`:"
+"call_group() <class_SceneTree_method_call_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:127
 msgid ""
@@ -169,7 +169,7 @@ msgid ""
 msgstr ""
 "Możliwe jest również uzyskanie pełnej listy węzłów ``wrogów`` przez "
 "wywołanie :ref:`SceneTree.get_nodes_in_group() "
-"<class_SceneTree_get_nodes_in_group>`:"
+"<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:143
 msgid ""
@@ -215,7 +215,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:193
 msgid "Overrideable functions"
-msgstr "Możliwe do nadpisania funcje"
+msgstr "Funkcje możliwe do nadpisania"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:195
 msgid ""
@@ -281,8 +281,8 @@ msgid ""
 "<class_Node_method_queue_free>`. This erases the node safely during idle."
 msgstr ""
 "Najbezpieczniejszym sposobem usunięcia węzła jest użycie :ref:`Node."
-"queue_free() <class_Node_queue_free>`. Węzeł zostanie bezpiecznie usunięty, "
-"podczas gdy będzie bezczynny."
+"queue_free() <class_Node_method_queue_free>`. Węzeł zostanie bezpiecznie "
+"usunięty, podczas gdy będzie bezczynny."
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:340
 msgid "Instancing scenes"
@@ -313,8 +313,9 @@ msgid ""
 msgstr ""
 "Ale ``scene`` nie jest jeszcze węzłem. Jest zapakowany w specjalny zasób o "
 "nazwie :ref:`PackedScene <class_PackedScene>`. Aby utworzyć węzeł należy "
-"wywołać funkcję :ref:`PackedScene.instance() <class_PackedScene_instance>`. "
-"Spowoduje to zwrócenie drzewa węzłów, które można dodać do aktywnej sceny:"
+"wywołać funkcję :ref:`PackedScene.instance() "
+"<class_PackedScene_method_instance>`. Spowoduje to zwrócenie drzewa węzłów, "
+"które można dodać do aktywnej sceny:"
 
 #: ../../docs/getting_started/step_by_step/scripting_continued.rst:381
 msgid ""

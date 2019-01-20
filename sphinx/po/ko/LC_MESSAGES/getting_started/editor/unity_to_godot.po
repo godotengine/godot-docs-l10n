@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,7 +205,6 @@ msgstr ""
 "Godot 에디터는 당신이 원하는 씬 에디터 옆에 각 패널을 고정할 수 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:57
-#, fuzzy
 msgid ""
 "While both editors may seem similar, there are many differences below the "
 "surface. Both let you organize the project using the filesystem, but Godot's "
@@ -321,7 +320,6 @@ msgstr ""
 "설정함으로써 그들을 연결하도록 구성되어 있습니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:95
-#, fuzzy
 msgid ""
 "Godot's scene system is different: it actually consists of a tree made of "
 "nodes. Each node serves a purpose: Sprite, Mesh, Light, etc. Basically, this "
@@ -480,7 +478,6 @@ msgstr ""
 "게 자신의 능력을 제공합니다: 이것이 상속입니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:148
-#, fuzzy
 msgid ""
 "Second, it allows the extraction of a subtree of the scene to make it a "
 "scene of its own, which answers the second and third questions: even if a "
@@ -557,7 +554,6 @@ msgstr ""
 "만, 이 모두는 프리펩에 의해 정의된 같은 속성을 지닙니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:177
-#, fuzzy
 msgid ""
 "Godot does not provide prefabs as such, but this functionality is here, "
 "again, filled thanks to its scene system: As we saw, the scene system is "
@@ -598,15 +594,15 @@ msgstr "어휘 일치"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
 msgid "GameObject -> Node"
-msgstr ""
+msgstr "GameObject -> 노드"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:198
 msgid "Add a component -> Inheriting"
-msgstr ""
+msgstr "컴포넌트 추가 -> 상속"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:199
 msgid "Prefab -> Externalized branch"
-msgstr ""
+msgstr "프리펩 -> 외부화된 분기"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
@@ -696,7 +692,6 @@ msgid "Connections: groups and signals"
 msgstr "연결: 그룹과 시그널"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:233
-#, fuzzy
 msgid ""
 "You can control nodes by accessing them using a script and calling functions "
 "(built-in or user-defined) on them. But there's more: You can also place "
@@ -706,11 +701,10 @@ msgid ""
 msgstr ""
 "스크립트를 사용하여 노드에 접속하고 노드에서 (내장 또는 커스텀) 함수를 호출하"
 "여 노드를 제어할 수 있습니다. 하지만 더 있습니다: 노드를 그룹에 배치하고 이 "
-"그룹에 있는 모든 노드에서 함수를 호출할 수도 있습니다! 이것은 :ref:`이 페이지"
-"에서 <doc_scripting_continued>` 설명합니다."
+"그룹에 있는 모든 노드에서 함수를 호출할 수도 있습니다! :ref:`스크립팅 문서에"
+"서 <doc_scripting_continued>` 설명합니다."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:237
-#, fuzzy
 msgid ""
 "But there's more! Certain nodes throw signals when certain actions happen. "
 "You can connect these signals to call a specific function when they happen. "
@@ -719,11 +713,10 @@ msgid ""
 msgstr ""
 "하지만 더 있습니다! 특정 노드는 특정 동작이 발생할 때 시그널을 보냅니다. 이러"
 "한 신호를 연결하여 특정 기능을 호출할 수 있습니다. 자신만의 시그널을 정의하"
-"고 원할 때마다 시그널을 보낼 수도 있습니다. 이 기능은 `여기에서 <gdscript."
-"html#signals>`_ 설명합니다."
+"고 원할 때마다 시그널을 보낼 수도 있습니다.  자세한 설명은 :ref:`시그널 문서"
+"를 <doc_gdscript_signals>` 참고하세요."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:243
-#, fuzzy
 msgid "Script serialization"
 msgstr "스크립트 직렬화"
 

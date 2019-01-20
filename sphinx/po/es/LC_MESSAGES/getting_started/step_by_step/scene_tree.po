@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,7 +160,6 @@ msgstr ""
 "pausa o salir del proceso."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:65
-#, fuzzy
 msgid ""
 "When a node is part of the Scene Tree, the :ref:`SceneTree "
 "<class_SceneTree>` singleton can be obtained by simply calling :ref:`Node."
@@ -168,7 +167,7 @@ msgid ""
 msgstr ""
 "Cuando un nodo es parte del Árbol de Escenas, el singleton :ref:`SceneTree "
 "<class_SceneTree>` puede obtenerse simplemente llamando :ref:`Node."
-"get_tree() <class_Node_get_tree>`."
+"get_tree() <class_Node_method_get_tree>`."
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
 msgid "Root viewport"
@@ -301,15 +300,14 @@ msgid "Changing current scene"
 msgstr "Cambiando la escena actual"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:143
-#, fuzzy
 msgid ""
 "After a scene is loaded, it is often desired to change this scene for "
 "another one. The simple way to do this is to use the :ref:`SceneTree."
 "change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
 "Después de cargar una escena, a menudo se desea cambiar esta escena por "
-"otra. La forma más sencilla de hacerlo es usar la función :ref:`SceneTree."
-"change_scene() <class_SceneTree_change_scene>`:"
+"otra. La forma más sencilla de hacerlo es usando la función :ref:`SceneTree."
+"change_scene() <class_SceneTree_method_change_scene>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 msgid ""
@@ -317,9 +315,12 @@ msgid ""
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
+"En lugar de usar rutas de archivos, también se pueden usar recursos listos "
+"para usar :ref:`PackedScene <class_PackedScene>` usando la función "
+"equivalente :ref:`SceneTree.change_scene_to(PackedScene scene) "
+"<class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
-#, fuzzy
 msgid ""
 "These are quick and useful ways to switch scenes but have the drawback that "
 "the game will stall until the new scene is loaded and running. At some point "
@@ -330,7 +331,7 @@ msgid ""
 msgstr ""
 "Esta es una forma rápida y útil de cambiar de escena, pero tiene el "
 "inconveniente de que el juego se detendrá hasta que la nueva escena se "
-"cargue y se ejecute. En algún momento del juego, puede ser conveniente crear "
+"cargue y se ejecute. En algún momento del juego, puede ser preferible crear "
 "pantallas de carga adecuadas con una barra de progreso, indicadores animados "
-"o carga de hilos (fondo). Esto debe hacerse manualmente usando autoloads "
-"(¡ver el próximo capítulo!) y :ref:`doc_background_loading`."
+"o carga en hilos (background loading). Esto debe hacerse manualmente usando "
+"autoloads (ver el siguiente capítulo) y :ref:`doc_background_loading`."

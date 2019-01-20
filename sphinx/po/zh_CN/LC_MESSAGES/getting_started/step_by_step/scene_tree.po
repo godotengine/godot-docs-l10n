@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,7 +146,7 @@ msgid ""
 "get_tree() <class_Node_method_get_tree>`."
 msgstr ""
 "当节点是场景树的一部分时, 只需调用 :ref:`Node.get_tree() "
-"<class_Node_get_tree>` 即可获得 :ref:`场景树 <class_SceneTree>` 单例。"
+"<class_Node_method_get_tree>` 即可获得 :ref:`场景树 <class_SceneTree>` 单例。"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:71
 msgid "Root viewport"
@@ -277,7 +277,7 @@ msgid ""
 "change_scene() <class_SceneTree_method_change_scene>` function:"
 msgstr ""
 "加载场景后, 通常需要将此场景更改为另一个场景。简单的方法是使用 :ref:"
-"`SceneTree.change_scene() <class_SceneTree_change_scene>` 方法:"
+"`SceneTree.change_scene() <class_SceneTree_method_change_scene>` 方法:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:161
 #, fuzzy
@@ -287,8 +287,8 @@ msgid ""
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
 "除了使用文件路径, 也可以通过使用等效函数 :ref:`SceneTree."
-"change_scene_to(PackedScene scene)<class_SceneTree_change_scene_to>` 来利用现"
-"成的 :ref:`PackedScene <class_PackedScene>` 资源:"
+"change_scene_to(PackedScene scene)<class_SceneTree_method_change_scene_to>` "
+"来利用现成的 :ref:`PackedScene <class_PackedScene>` 资源:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 msgid ""

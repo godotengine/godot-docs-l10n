@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,29 +84,32 @@ msgstr ""
 "y por esta razón no puede ser usado en tipos \"valor\"."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:45
-#, fuzzy
 msgid "**Using the generic methods**"
-msgstr "**Utilizando el operador AS**"
+msgstr "**Utilizando métodos genéricos**"
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:47
 msgid ""
 "Generic methods are also provided to make this type conversion transparent."
 msgstr ""
+"Los métodos genéricos se proveen para hacer la conversión de tipo "
+"transparente."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:49
 msgid ""
 "``GetNode<T>()`` casts the node before returning it. It will throw an "
 "``InvalidCastException`` if the node cannot be cast to the desired type."
 msgstr ""
+"``GetNode<T>()`` realiza un casting del nodo antes de retornarlo. Lanzará "
+"una ``InvalidCastException`` si el nodo no puede ser convertido al tipo "
+"deseado."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:56
-#, fuzzy
 msgid ""
 "``GetNodeOrNull<T>()`` uses the ``as`` operator and will return ``null`` if "
 "the node cannot be cast to the desired type."
 msgstr ""
-"El operador ``as`` retorna null si el nodo no puede ser convertido a Sprite, "
-"y por esta razón no puede ser usado en tipos \"valor\"."
+"``GetNodeOrNull<T>()`` usa el operador ``as`` y retornará ``null`` si el "
+"nodo no puede ser convertido al tipo deseado."
 
 #: ../../docs/getting_started/scripting/c_sharp/c_sharp_features.rst:64
 msgid "**Type checking using the IS operator**"

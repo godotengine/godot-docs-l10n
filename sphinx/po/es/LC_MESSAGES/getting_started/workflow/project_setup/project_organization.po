@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,7 +26,6 @@ msgid "Introduction"
 msgstr "Introducción"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:9
-#, fuzzy
 msgid ""
 "This tutorial aims to propose a simple workflow on how to organize projects. "
 "Since Godot allows the programmer to use the filesystem as they please, "
@@ -35,20 +34,18 @@ msgid ""
 "workflow, which should work as a starting point, regardless of whether it is "
 "used."
 msgstr ""
-"Este tutorial está apuntado a proponer un flujo de trabajo simple para "
-"organizar proyectos. Como Godot permite que el programador utilice el "
-"sistema de archivos como lo desee, encontrar un modo de organizar proyectos "
-"cuando se comienza a usar el motor puede ser un desafío. A raíz de esto, un "
-"modo de trabajo simple será descripto, el que puede ser usado o no, pero "
-"servirá como punto de partida."
+"Este tutorial propone un flujo de trabajo simple para organizar proyectos. "
+"Como Godot permite que el programador utilice el sistema de archivos como lo "
+"desee, encontrar un modo de organizar proyectos cuando se comienza a usar el "
+"motor puede ser un desafío. A raíz de esto, se presenta este modo de trabajo "
+"simple, el que puede ser usado o no, pero servirá como punto de partida."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:16
-#, fuzzy
 msgid ""
 "Additionally, using version control can be challenging, so this proposition "
 "will include that too."
 msgstr ""
-"Adicionalmente, usando control deversiones puede ser otro desafío así que "
+"Adicionalmente, usando control de versiones puede ser otro desafío así que "
 "esta propuesta incluirá eso también."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:20
@@ -83,22 +80,20 @@ msgstr ""
 "escenas así, cuando el proyecto crece, se hace más manejable."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:32
-#, fuzzy
 msgid ""
 "As an example, one can usually place into a single folder their basic "
 "assets, such as sprite images, 3D model meshes, materials, and music, etc. "
 "They can then use a separate folder to store built levels that use them."
 msgstr ""
-"Un ejemplo, imágenes basadas en sprites, modelos de escenas 3D o mallas, "
-"materiales, etcétera, pueden usualmente organizarse en un lugar, mientras "
-"una carpeta separada es utilizada para construir los niveles que las usan."
+"Como ejemplo ejemplo, uno normalmente ubica los recursos básicos como "
+"imágenes, modelos de escenas 3D, materiales, etcétera, todos en una carpeta. "
+"Y una carpeta separada es utilizada para construir los niveles que los usan."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:53
 msgid "Importing"
 msgstr "Importando"
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:55
-#, fuzzy
 msgid ""
 "Godot versions prior to 3.0 did the import process from files outside the "
 "project. While this can be useful in large projects, it resulted in an "
@@ -106,8 +101,8 @@ msgid ""
 msgstr ""
 "La versión de Godot anterior a la 3.0 hacía el proceso de importación de "
 "archivos fuera del proyecto. Aunque esto puede ser útil en proyectos de gran "
-"tamaño, ha resultado ser una molestia en la organización para la mayoría de "
-"los desarrolladores."
+"tamaño, ha resultado ser una molestia en la organización del proyecto para "
+"la mayoría de los desarrolladores."
 
 #: ../../docs/getting_started/workflow/project_setup/project_organization.rst:59
 #, fuzzy

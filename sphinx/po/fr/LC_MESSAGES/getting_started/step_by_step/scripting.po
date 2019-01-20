@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -532,7 +532,6 @@ msgstr ""
 "d'apprentissage, penchons-nous sur la méthode manuelle !"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:219
-#, fuzzy
 msgid ""
 "To accomplish this, we will introduce a function that is probably the most "
 "used by Godot programmers: :ref:`Node.get_node() "
@@ -541,9 +540,9 @@ msgid ""
 msgstr ""
 "Pour accomplir cela, nous allons introduire une fonction qui est "
 "probablement la plus utilisée par les programmeurs Godot : :ref:`Node."
-"get_node() <class_Node_get_node>`. Cette fonction utilise des chemins pour "
-"récupérer des noeuds n'importe où dans la scène, de manière relative au "
-"noeud qui possède le script."
+"get_node() <class_Node_method_get_node>`. Cette fonction utilise des chemins "
+"pour récupérer des nœuds n'importe où dans la scène, de manière relative au "
+"nœud qui possède le script."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:224
 msgid ""
@@ -569,13 +568,12 @@ msgstr ""
 "Ensuite, écrivez une fonction qui sera appelée quand le bouton est pressé :"
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:259
-#, fuzzy
 msgid ""
 "Finally, connect the button's \"pressed\" signal to ``_ready()`` by using :"
 "ref:`Object.connect() <class_Object_method_connect>`."
 msgstr ""
 "Pour terminer, connectez le signal \"pressed\" du bouton à ``_ready()`` en "
-"utilisant :ref:`Object.connect() <class_Object_connect>`."
+"utilisant :ref:`Object.connect() <class_Object_method_connect>`."
 
 #: ../../docs/getting_started/step_by_step/scripting.rst:275
 msgid "The final script should look like this:"
