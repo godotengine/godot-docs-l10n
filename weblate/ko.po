@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: 2019-01-20 08:53+0000\n"
 "Last-Translator: 송태섭 <xotjq237@gmail.com>\n"
 "Language-Team: Korean <https://hosted.weblate.org/projects/godot-engine/"
@@ -42,20 +42,49 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.4-dev\n"
 
-#: ../../docs/index.rst:7
+#: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
 msgstr "Godot 문서 – *master* 분기"
 
-#: ../../docs/index.rst:9
+#: ../../docs/index.rst:6
 msgid ""
-"This is the documentation for the unstable (master) branch. Looking for the "
-"documentation of the current **stable** branch? `Have a look here <https://"
-"docs.godotengine.org/en/stable>`_."
+"Godot's documentation is available in various languages and versions. Expand "
+"the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
+msgstr ""
+
+#: ../../docs/index.rst:10
+#, fuzzy
+msgid ""
+"This is the documentation for the development (master) branch. Looking for "
+"the documentation of the current **stable** branch? `Have a look here "
+"<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
 "이 문서는 불안정한(master) 분기입니다. **안정한** 분기의 문서를 찾으시나요? `"
 "여기로 가세요 <http://docs.godotengine.org/en/stable>`_."
 
-#: ../../docs/index.rst:13
+#: ../../docs/index.rst:16
+msgid ""
+"This documentation is translated from the `original English one <https://"
+"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
+msgstr ""
+
+#: ../../docs/index.rst:20
+msgid ""
+"Depending on the translation effort's completion level, you may find "
+"paragraphs or whole pages which are still in English. You can help the "
+"community by providing new translations or reviewing existing ones on "
+"Weblate."
+msgstr ""
+
+#: ../../docs/index.rst:25
+msgid ""
+"For the time being, localized translations are only available for the "
+"\"latest\" (development) branch, but should be suitable to learn how to use "
+"stable Godot releases nevertheless."
+msgstr ""
+
+#: ../../docs/index.rst:29
 msgid ""
 "Welcome to the official documentation of Godot Engine, the free and open "
 "source community-driven 2D and 3D game engine! If you are new to this "
@@ -68,7 +97,7 @@ msgstr ""
 "<doc_about_intro>`\\ 를 읽어보시고 저희 문서가 전반적으로 무엇을 제공하는지 "
 "파악해보시기를 권장해드립니다."
 
-#: ../../docs/index.rst:18
+#: ../../docs/index.rst:34
 msgid ""
 "The table of contents below and in the sidebar should let you easily access "
 "the documentation for your topic of interest. You can also use the search "
@@ -77,7 +106,7 @@ msgstr ""
 "본문 아래 및 좌측 사이드 바의 목차로부터 원하시는 문서를 열람하실 수 있습니"
 "다. 또한 좌측 상단의 검색창에서 검색도 가능합니다."
 
-#: ../../docs/index.rst:22
+#: ../../docs/index.rst:38
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -91,7 +120,7 @@ msgstr ""
 "나 부족한 부분이 있다면 저희에게 알려주셔서 더 나은 문서를 만들 수 있게 도와"
 "주세요!"
 
-#: ../../docs/index.rst:29
+#: ../../docs/index.rst:45
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -107,32 +136,32 @@ msgstr ""
 "freenode.net/?channels=#godotengine-doc>`_\\ 의 ``#godotengine-doc``\\ 에서 "
 "저희와 함께 논의를 할 수도 있습니다!"
 
-#: ../../docs/index.rst:43
+#: ../../docs/index.rst:59
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr "이 사이트의 주요 문서는 다음과 같이 구성되어 있습니다:"
 
-#: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
+#: ../../docs/index.rst:61 ../../docs/community/resources.rst:9
 msgid "General"
 msgstr "일반"
 
-#: ../../docs/index.rst:53
+#: ../../docs/index.rst:69
 msgid "Getting started"
 msgstr "시작하기"
 
-#: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
+#: ../../docs/index.rst:80 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
 msgstr "튜토리얼"
 
-#: ../../docs/index.rst:90
+#: ../../docs/index.rst:106
 msgid "Development"
 msgstr "개발"
 
-#: ../../docs/index.rst:99
+#: ../../docs/index.rst:115
 msgid "Creating Content"
 msgstr "콘텐츠 만들기"
 
-#: ../../docs/index.rst:107 ../../docs/community/index.rst:2
+#: ../../docs/index.rst:123 ../../docs/community/index.rst:2
 msgid "Community"
 msgstr "커뮤니티"
 
@@ -1268,6 +1297,7 @@ msgstr ""
 "다. ``project.godot`` 파일이 들어있는 프로젝트의 폴더를 선택해서 가져옵니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:113
 msgid "|image7|"
 msgstr "|image7|"
 
@@ -1276,7 +1306,7 @@ msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "폴더 경로가 올바르다면 녹색 체크 표시가 나타납니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:120
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
 msgstr "|image8|"
 
@@ -1295,7 +1325,7 @@ msgstr ""
 "꿀 수 있습니다. 2D를 눌러 2D 작업 공간으로 바꾸세요."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:141
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
 msgstr "|image9|"
 
@@ -1304,7 +1334,7 @@ msgid "Now you should see this interface, with empty docks on the right side."
 msgstr "이제 인터페이스의 오른쪽에 빈 독이 있는 것을 확인할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:147
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:148
 msgid "|image10|"
 msgstr "|image10|"
 
@@ -1325,7 +1355,7 @@ msgstr ""
 "젝트 파일이나 에셋들을 관리할 수 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:152
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:153
 msgid "|image11|"
 msgstr "|image11|"
 
@@ -1338,7 +1368,7 @@ msgstr ""
 "로 아래에는 **인스펙터(Inspector)** 가 있습니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:160
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:161
 msgid "|image12|"
 msgstr "|image12|"
 
@@ -1352,7 +1382,7 @@ msgstr ""
 "에 있습니다. 툴바는 작업 공간마다 그 구성이 다릅니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:167
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:168
 msgid "|image13|"
 msgstr "|image13|"
 
@@ -1367,6 +1397,7 @@ msgstr ""
 "상태입니다."
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:115
 msgid "|image14|"
 msgstr "|image14|"
 
@@ -3570,10 +3601,11 @@ msgstr ""
 "용하는 방법에 대해 배우러 가세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
+#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
-"\"Width\" to 480 and \"Height\" to 720."
+"\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
 "이 게임은 세로 모드를 사용하므로 게임 창의 크기를 조정해야 합니다. Project -"
 "> ProjectSettings -> Display -> Window를 클릭하고 \"Width\"를 480으로, "
@@ -3584,13 +3616,14 @@ msgid "Organizing the project"
 msgstr "프로젝트 조직하기"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
+#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
 "project, it might be useful to make folders to hold the various scenes and "
 "their scripts, but for this relatively small game, you can save your scenes "
-"and scripts in the root folder, referred to as ``res://``.  You can see your "
-"project folders in the FileSystem Dock in the upper left corner:"
+"and scripts in the project's root folder, referred to as ``res://``.  You "
+"can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
 "이 프로젝트에서 우리는  ``Player`` , ``Mob`` , ``HUD`` 의 세 개의 독립적인 씬"
 "을 만들 것인데 이 씬 들은 우리가 게임의 ``Main`` 씬으로 결합될 것이다. 더 큰 "
@@ -3636,7 +3669,7 @@ msgstr ""
 "수 있습니다. 노드 이름을 클릭하여 이름을 ``Player`` 로 변경합니다. 이것은 씬"
 "의 루트 노드입니다. 플레이어에 노드를 추가하여 함수를 추가할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:74
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:75
 msgid ""
 "Before we add any children to the ``Player`` node, we want to make sure we "
 "don't accidentally move or resize them by clicking on them. Select the node "
@@ -3648,7 +3681,7 @@ msgstr ""
 "릭합니다. 노드의 툴 팁에 \"오브젝트의 자식노드가 선택될 수 없도록 설정합니다."
 "\" 라고 표시됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:81
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:82
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
@@ -3656,11 +3689,11 @@ msgstr ""
 "씬을 저장합니다. 씬 -> 씬 저장을 클릭하거나 윈도우/리눅스에서는 ``Ctrl+S`` "
 "를, 맥에서는 ``Command+S`` 를 누릅니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:83
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr "이 프로젝트에서, 우리는 Godot의 명명 규칙을 따를 것입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:85
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
@@ -3668,7 +3701,7 @@ msgstr ""
 "**GDScript**: 클래스(노드)는 ``PascalCase`` 를 사용하고', 변수와 함수는 "
 "``snake_case`` 를 사용하며, 상수는 ``ALL_CAPS`` 를 사용합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:89
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
 "**C#**: Classes, export variables and methods use PascalCase, private fields "
 "use _camelCase, local variables and parameters use camelCase (See :ref:"
@@ -3680,11 +3713,12 @@ msgstr ""
 "터는 camelCase를 사용합니다 (참고 :ref:`doc_c_sharp_styleguide`). 시그널을 연"
 "결할 때는 메쏘드 이름을 정확하게 입력하도록 주의하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:96
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid "Sprite animation"
 msgstr "스프라이트 애니메이션"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:98
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:99
+#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -3693,7 +3727,8 @@ msgid ""
 "<class_SpriteFrames>` resource, which is a list of the animations it can "
 "display. To create one, find the ``Frames`` property in the Inspector and "
 "click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
-"``<SpriteFrames>`` to open the \"SpriteFrames\" panel:"
+"``<SpriteFrames>``, then click \"Open Editor\" to open the \"SpriteFrames\" "
+"panel:"
 msgstr ""
 "``Player`` 노드를 클릭하고 :ref:`AnimatedSprite <class_AnimatedSprite>` 노드"
 "를 하위 노드로 추가합니다. ``AnimatedSprite`` 는 우리 선수를 위해 외모와 애니"
@@ -3704,7 +3739,7 @@ msgstr ""
 "다음 같은 위치에서 ``<SpriteFrames>`` 를 클릭하여 \"SpriteFrames\" 패널을 엽"
 "니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:110
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"right\". Then click the \"Add\" button to create a second animation "
@@ -3718,7 +3753,7 @@ msgstr ""
 "메이션 프레임\" 패널 안에 하나는 ``playerGrey_up[1/2]`` 다른 하나는 "
 "``playerGrey_walk[1/2]`` 라고 이름을 지읍니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:117
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:118
 msgid ""
 "The player images are a bit too large for the game window, so we need to "
 "scale them down. Click on the ``AnimatedSprite`` node and set the ``Scale`` "
@@ -3729,13 +3764,15 @@ msgstr ""
 "``AnimatedSprite`` 노드를 클릭하고 ``Scale`` 속성을 ``(0.5, 0.5)`` 로 설정하"
 "세요. 인스펙터의 ``Node2D`` 에서 찾으실 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:124
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:125
+#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
 "its collision area. For this character, a ``CapsuleShape2D`` node gives the "
 "best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
-"CapsuleShape2D\".  Resize the shape to cover the sprite:"
+"CapsuleShape2D\".  Using the two size handles, resize the shape to cover the "
+"sprite:"
 msgstr ""
 "마지막으로, :ref:`CollisionShape2D <class_CollisionShape2D>` 를 ``Player`` "
 "의 자식으로 추가하세요. 이것이 플레이어의 \"히트박스\", 즉 충돌 영역의 범위"
@@ -3743,23 +3780,15 @@ msgstr ""
 "므로 인스펙터의 \"Shape\" 옆 \"<null>\"\" -> \"New CapsuleShape2D\" 를 클릭하"
 "세요. 스프라이트를 덮도록 크기를 조정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:132
-msgid ""
-"Don't scale the shape's outline! Only use the size handles (circled in red) "
-"to adjust the shape!"
-msgstr ""
-"모양의 겉 테두리를 조정하지 마세요! 모양을 맞추기 위해 크기 핸들만 (빨간 동그"
-"라미 부분) 사용합니다!"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:135
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr "다 되셨다면, 당신의 ``Player`` 씬은 이렇게 되어야 합니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:140
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:139
 msgid "Moving the player"
 msgstr "플레이어 움직이기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:142
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:141
 msgid ""
 "Now we need to add some functionality that we can't get from a built-in "
 "node, so we'll add a script. Click the ``Player`` node and click the \"Add "
@@ -3769,7 +3798,7 @@ msgstr ""
 "스크립트를 만들겁니다. ``Player`` 노드를 클릭하고 \"스크립트 추가\" 버튼을 누"
 "르세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:148
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:147
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
@@ -3777,7 +3806,7 @@ msgstr ""
 "스크립트 설정 창에서는, 기본 설정으로 냅두어도 됩니다. 그냥 \"생성\"을 누르세"
 "요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:151
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:150
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
@@ -3785,7 +3814,7 @@ msgstr ""
 "만약 C# 스크립트나 다른 언어로 생성하려한다면, 생성을 누르기 전에 `언어` 메뉴"
 "에서 언어를 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:156
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:155
 msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
@@ -3793,22 +3822,25 @@ msgstr ""
 "처음 GDScript를 보시는 거라면, 계속하기 전에 :ref:`doc_scripting` 를 읽어주세"
 "요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:159
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:158
 msgid "Start by declaring the member variables this object will need:"
 msgstr "이 객체가 필요로 하는 멤버 변수를 선언함으로써 시작합시다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:180
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:179
+#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
 "to be able to adjust just like a node's built-in properties. Click on the "
-"``Player`` node and set the speed property to ``400``."
+"``Player`` node and you'll see the property now appears in the \"Script "
+"Variables\" section of the Inspector. Remember, if you change the value "
+"here, it will override the value written in the script."
 msgstr ""
 "``export`` 키워드로 첫 번째 변수인 ``speed`` 가 인스펙터 내 값을 설정하도록 "
 "합니다. 이것은 당신이 원하는 값을 노드의 내장 속성처럼 조절할 수 있기 때문에 "
 "편리합니다. ``Player`` 노드를 선택하고 speed 속성을 ``400`` 으로 설정하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:185
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:186
 msgid ""
 "If you're using C#, you need to (re)build the project assemblies whenever "
 "you want to see new export variables or signals. This build can be manually "
@@ -3820,7 +3852,7 @@ msgstr ""
 "파일은 편집기 의 밑에 \"Mono\" 단어를 클릭하여 Mono 패널이 나타나게 한 후 "
 "\"프로젝트 생성(Build)\" 버튼을 눌러서 수동으로 진행됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:193
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:194
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
@@ -3828,34 +3860,37 @@ msgstr ""
 "``_ready()`` 함수는 노드가 씬 트리에 들어올 때 호출됩니다, 이는 게임 창의 크"
 "기를 알아보기 좋은 순간입니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:209
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:210
+#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
-"of our game, which we expect will change often. Here we'll make it:"
+"of our game, which we expect will change often. For the player, we need to "
+"do the following:"
 msgstr ""
 "이제 우리는 ``_process()`` 함수를 사용해서 플레이어가 무엇을 할 지 정의할 수 "
 "있습니다. ``_process()`` 는 매 프레임마다 호출되므로, 게임에서 자주 변하는 요"
 "소들을 업데이트하기 위해서 사용할 수 있습니다. 다음은 우리가 만들고자 하는 것"
 "입니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:213
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
 msgstr "입력을 확인."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:214
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:216
 msgid "Move in the given direction."
 msgstr "주어진 방향으로 이동."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:215
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:217
 msgid "Play the appropriate animation."
 msgstr "적절한 애니메이션을 재생."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:217
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:219
+#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
-"Project Settings under \"Input Map\". You can define custom events and "
+"Project Settings under \"Input Map\". Here, you can define custom events and "
 "assign different keys, mouse events, or other inputs to them. For this demo, "
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
@@ -3867,7 +3902,7 @@ msgstr ""
 "이 데모에서는, 우리는 키보드에 있는 방향키가 지정된 기본 이벤트를 사용할 것입"
 "니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:224
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:226
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it is pressed or ``false`` if it isn't."
@@ -3875,13 +3910,15 @@ msgstr ""
 "``Input.is_action_pressed()`` 를 사용해서 키가 눌러졌는지를 감지할 수 있습니"
 "다, 눌러지면 ``true`` 값을 내보내고 그렇지 않으면 ``false`` 값을 내보냅니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:286
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:288
+#, fuzzy
 msgid ""
-"We check each input and add/subtract from the ``velocity`` to obtain a total "
-"direction. For example, if you hold ``right`` and ``down`` at the same time, "
-"the resulting ``velocity`` vector will be ``(1, 1)``. In this case, since "
-"we're adding a horizontal and a vertical movement, the player would move "
-"*faster* than if it just moved horizontally."
+"We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
+"should not be moving. Then we check each input and add/subtract from the "
+"``velocity`` to obtain a total direction. For example, if you hold ``right`` "
+"and ``down`` at the same time, the resulting ``velocity`` vector will be "
+"``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
+"movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
 "우리는 각 입력을 확인하고 ``velocity`` 에서 더하기/빼기를 해서 전체 방향을 얻"
 "습니다. 예를 들어 당신이 ``오른쪽`` 과 ``아래`` 를 동시에 누른다면, 결과 "
@@ -3889,7 +3926,7 @@ msgstr ""
 "을 추가한다면, 플레이어는 단순히 수평으로 움직이는 것보다 *더 빠르게* 움직일 "
 "겁니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:292
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:295
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed. This means no more "
@@ -3899,7 +3936,7 @@ msgstr ""
 "* 를 ``1`` 로 설정하고, 원하는 속도로 곱해줍니다. 이렇게 하면 더 이상 대각선 "
 "이동속도가 빨라지지 않습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:296
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:299
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
@@ -3909,7 +3946,7 @@ msgstr ""
 "한 설명을 :ref:`doc_vector_math` 에서 보실 수 있습니다. 보면 좋지만 나머지 튜"
 "토리얼을 위해 꼭 필수적인 것은 아닙니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:300
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:303
 msgid ""
 "We also check whether the player is moving so we can start or stop the "
 "AnimatedSprite animation."
@@ -3917,17 +3954,18 @@ msgstr ""
 "우리는 또 AnimatedSprite 애니메이션을 재생하고 정지할 수 있도록 플레이어가 움"
 "직이고 있는지를 확인할 것입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:303
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:306
+#, fuzzy
 msgid ""
-"``$`` returns the node at the relative path from this node, or returns "
-"``null`` if the node is not found. Since AnimatedSprite is a child of the "
-"current node, we can use ``$AnimatedSprite``."
+"In GDScript, ``$`` returns the node at the relative path from the current "
+"node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
+"a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
 "``$`` 는 이 노드에서 상대적인 경로에 있는 노드를 반환하거나, 노드가 없다면 "
 "``null`` 값을 반환합니다. AnimatedSprite가 지금 노드의 자식인 상태이므로, 우"
 "리는 ``$AnimatedSprite`` 를 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:306
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
 "``$`` is shorthand for ``get_node()``. So in the code above, ``"
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
@@ -3937,9 +3975,10 @@ msgstr ""
 "$AnimatedSprite.play()`` 는 ``get_node(\"AnimatedSprite\").play()`` 와 같습니"
 "다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:309
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:312
+#, fuzzy
 msgid ""
-"Now that we have a movement direction, we can update ``Player``'s position "
+"Now that we have a movement direction, we can update the player's position "
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
 "following to the bottom of the ``_process`` function:"
 msgstr ""
@@ -3947,12 +3986,12 @@ msgstr ""
 "으므로 ``_process`` 함수의 맨 아래에 ``clamp()`` 를 추가해서 플레이어가 화면"
 "에서 나가지 못하도록 합시다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:329
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid "*Clamping* a value means restricting it to a given range."
 msgstr ""
 "*클램핑(Clamping)* 값은 주어진 범위로 그것을 제한한다는 것을 의미합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:331
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:334
 msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions. The console output that opens upon playing the "
@@ -3963,7 +4002,7 @@ msgstr ""
 "지 확인하세요. 씬을 실행할 때 열리는 콘솔 출력은 하단 패널의 왼쪽 하단에 ``출"
 "력`` 을 클릭해서 닫으실 수 있습니다 (파란색으로 강조되어 있을 것입니다)."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:335
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:339
 msgid ""
 "If you get an error in the \"Debugger\" panel that refers to a \"null "
 "instance\", this likely means you spelled the node name wrong. Node names "
@@ -3975,11 +4014,11 @@ msgstr ""
 "$NodeName`` 이나 ``get_node(\"NodeName\")`` 이 씬 트리에서 보는 이름이 일치해"
 "야 합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:340
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:344
 msgid "Choosing animations"
 msgstr "애니메이션 고르기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:342
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:346
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on direction. We have a \"right\" animation, "
@@ -3994,7 +4033,7 @@ msgstr ""
 "직임으로 쓰려면 세로로 뒤집어야 하므로 ``flip_v`` 을 써줍니다. "
 "``_process()`` 아래에 이 코드를 작성해주세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:376
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:380
 msgid ""
 "The boolean assignments in the code above are a common shorthand for "
 "programmers. Consider this code versus the shortened boolean assignment "
@@ -4003,7 +4042,7 @@ msgstr ""
 "위 코드 내의 불 할당은 프로그래머를 위한 일반적인 속기입니다. 위의 단축된 불 "
 "할당을 이 코드와 비교해서 생각해보세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:395
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:399
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
@@ -4013,11 +4052,11 @@ msgstr ""
 "된다고 확신된다면, 플레이어가 게임이 시작할 때 안 보이도록 이 문장을 "
 "``_ready()`` 에 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:410
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:414
 msgid "Preparing for collisions"
 msgstr "충돌 준비하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:412
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:416
 msgid ""
 "We want ``Player`` to detect when it's hit by an enemy, but we haven't made "
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
@@ -4027,11 +4066,11 @@ msgstr ""
 "안 만들었습니다! 괜찮습니다, 왜냐하면 충돌이 작동하도록 우리는 Godot의 *시그"
 "널(signal)* 기능을 사용할 것이기 때문입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:416
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:420
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
 msgstr "``extends Area2d`` 다음에 스크립트 상단에 다음을 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:430
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:434
 msgid ""
 "This defines a custom signal called \"hit\" that we will have our player "
 "emit (send out) when it collides with an enemy. We will use ``Area2D`` to "
@@ -4043,15 +4082,16 @@ msgstr ""
 "지할 겁니다. ``Player`` 노드를 선택하고 인스펙터 탭 옆의 \"노드\" 탭을 클릭하"
 "고 플레이어가 방출할 수 있는 시그널들을 확인해 보세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:437
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:441
+#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered( Object "
 "body )`` signal; this will be emitted when a body contacts the player. Click "
 "\"Connect..\" and then \"Connect\" again on the \"Connecting Signal\" "
 "window. We don't need to change any of these settings - Godot will "
-"automatically create a function called ``_on_Player_body_entered`` in your "
-"player's script."
+"automatically create a function in your player's script. This function will "
+"be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
 "우리의 \"hit\" 시그널도 거기에 있다는 것에 주목하세요! 적들은 "
 "``RigidBody2D`` 노드가 될 것이기 때문에, 우리는 ``body_entered( Object "
@@ -4060,7 +4100,7 @@ msgstr ""
 "다. 우리는 어떤 설정도 바꿀 필요가 없습니다 - Godot는 자동으로 플레이어 스크"
 "립트에 ``_on_Player_body_entered`` 라는 함수를 생성해줍니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:445
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:450
 msgid ""
 "When connecting a signal, instead of having Godot create a function for you, "
 "you can also give the name of an existing function that you want to link the "
@@ -4069,20 +4109,25 @@ msgstr ""
 "시그널이 연결될 때, Godot가 함수를 만들어 주는 대신, 당신이 직접 연결하고 싶"
 "은 시그널에 존재하는 함수의 이름을 줄 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:449
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:454
 msgid "Add this code to the function:"
 msgstr "함수에 이 코드를 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:468
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:473
 msgid ""
-"Disabling the area's collision shape means it won't detect collisions. By "
-"turning it off, we make sure we don't trigger the ``hit`` signal more than "
-"once."
+"Each time an enemy hits the player, the signal is going to be emitted. We "
+"need to disable the player's collision so that we don't trigger the ``hit`` "
+"signal more than once."
 msgstr ""
-"영역의 충돌 모양을 사라지게 하는 것은 충돌을 감지하지 않는다를 의미합니다. 그"
-"것을 끈다면, ``hit`` 시그널을 두 번 이상 울리지 않게 됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:472
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:477
+msgid ""
+"Disabling the area's collision shape can cause an error if it happens in the "
+"middle of the engine's collision processing. Using ``call_deferred()`` "
+"allows us to have Godot wait to disable the shape until it's safe to do so."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
@@ -4090,11 +4135,11 @@ msgstr ""
 "우리 플레이어의 마지막 과제는 호출할 수 있는 함수를 추가해서 새 게임이 시작"
 "할 때 플레이어를 리셋할 수 있게 하는 겁니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:493
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:503
 msgid "Enemy scene"
 msgstr "적 씬"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:495
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:505
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
@@ -4105,7 +4150,7 @@ msgstr ""
 "진 않을겁니다: 적이 아무렇게나 화면의 가장자리에서 나타나고 무작위 방향으로 "
 "직선으로 나아갑니다, 그리고 화면을 벗어나면 사라집니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:500
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:510
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
@@ -4113,31 +4158,31 @@ msgstr ""
 "그러면 ``Mob`` 씬에 이 작업을 해야 합니다, 이것을 *인스턴스* 해서 게임에선 정"
 "해진 수 만큼의 적들을 만들 것입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:504
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:514
 msgid "Node setup"
 msgstr "노드 설정하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:506
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:516
 msgid "Click Scene -> New Scene and we'll create the Mob."
 msgstr "씬 -> 새 씬을 클릭하고 거기에서 적을 만들겁니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:508
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:518
 msgid "The Mob scene will use the following nodes:"
 msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:510
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:520
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
 msgstr ":ref:`RigidBody2D <class_RigidBody2D>` ( ``Mob`` 으로 이름지음)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:512
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:522
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:513
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:523
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:514
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:524
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
@@ -4145,7 +4190,7 @@ msgstr ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` ( ``Visibility`` 으"
 "로 이름지음)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:516
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:526
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
@@ -4153,7 +4198,7 @@ msgstr ""
 "플레이어 씬에서 한 것과 마찬가지로, 자식이 선택되지 않도록 설정하는 것을 잊지"
 "마세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:519
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:529
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
 "Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
@@ -4165,7 +4210,7 @@ msgstr ""
 "``PhysicsBody2D``  섹션의 ``Mask`` 속성을 클릭하고 첫 번째 상자의 체크를 푸세"
 "요. 이것은 적들끼리 충돌하지 않도록 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:526
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:536
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
 "player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
@@ -4179,13 +4224,13 @@ msgstr ""
 "\"Speed (FPS)\" 를 아래에 보이는대로 조정해줍시다. 우리는 이 애니메이션들 중 "
 "하나를 무작위로 선택해서, 적들이 다양하게 보이도록 할 겁니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:533
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:543
 msgid ""
 "``fly`` should be set to 3 FPS, with ``swim`` and ``walk`` set to 4 FPS."
 msgstr ""
 "``fly`` 는 3 FPS로 설정하고, ``swim`` 과 ``walk`` 는 4 FPS로 설정합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:535
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
@@ -4193,7 +4238,7 @@ msgstr ""
 "플레이어 이미지처럼, 이 적 이미지들도 크기를 줄일 필요가 있습니다. "
 "``AnimatedSprite`` 의 ``Scale`` 속성을 ``(0.75, 0.75)`` 으로 설정합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:538
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:548
 msgid ""
 "As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
@@ -4203,28 +4248,30 @@ msgstr ""
 "양이 같도록, ``Node2D`` 아래 ``Rotation Degrees`` 속성을 ``90`` 으로 설정해"
 "야 합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:543
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:553
 msgid "Enemy script"
 msgstr "적 스크립트"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:545
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:555
 msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr "``Mob`` 에게 스크립트를 추가해주고 다음의 멤버 변수를 추가해주세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:571
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:581
+#, fuzzy
 msgid ""
-"We'll pick a random value between ``min_speed`` and ``max_speed`` for how "
-"fast each mob will move (it would be boring if they were all moving at the "
-"same speed). Set them to ``150`` and ``250`` in the Inspector. We also have "
-"an array containing the names of the three animations, which we'll use to "
-"select a random one."
+"When we spawn a mob, we'll pick a random value between ``min_speed`` and "
+"``max_speed`` for how fast each mob will move (it would be boring if they "
+"were all moving at the same speed). We also have an array containing the "
+"names of the three animations, which we'll use to select a random one. Make "
+"sure you've spelled these the same in the script and in the SpriteFrames "
+"resource."
 msgstr ""
 "``min_speed`` 와 ``max_speed`` 사이 무작위 값으로 각 적들이 빠르게 움직이는 "
 "정도를 선택하도록 할겁니다 (모두가 같은 속도로 움직이면 지루할 것입니다). 인"
 "스펙터에서 각각 ``150 과 ``250`` 으로 설정합시다. 그리고 세 개의 애니메이션"
 "의 이름이 들어있는 배열이 있는데 이걸 무작위로 선택해서 사용할 겁니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:577
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
@@ -4232,7 +4279,7 @@ msgstr ""
 "이제 스크립트의 나머지를 봅시다. ``_ready()`` 에서 우리는 무작위로 세 개의 애"
 "니메이션 유형들 중 하나를 고릅니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:596
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:606
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
 "to be different every time you run the scene. We're going to use "
@@ -4244,7 +4291,7 @@ msgstr ""
 "사용할꺼니까, 더이상 여기 있으면 안됩니다. ``randi() % n`` 은  ``0`` 과 "
 "``n-1`` 사이의 무작위 정수 값을 얻는 기본적인 방법입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:602
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:612
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the ``Visibility`` node "
@@ -4253,15 +4300,15 @@ msgstr ""
 "적이 나갈 때 스스로를 삭제하는 것이 적의 마지막 과제입니다. ``Visubility`` 노"
 "드의 ``screen_exited()`` 시그널을 연결하고 이 코드를 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:619
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:629
 msgid "This completes the `Mob` scene."
 msgstr "이걸로 `적` 씬이 완성되었습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:622
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:632
 msgid "Main scene"
 msgstr "메인 씬"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:624
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:634
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
@@ -4271,11 +4318,11 @@ msgstr ""
 "`Node <class_Node>` 를 만드세요. \"인스턴스\" 버튼을 누르고 저장한 ``Player."
 "tscn`` 을 선택하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:630
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:640
 msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "인스턴스에 대해 더 알고 싶다면 :ref:`doc_instancing` 로 가세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:632
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:642
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -4283,7 +4330,7 @@ msgstr ""
 "``Main`` 의 자식으로 다음의 노드들을 추가하고, 여기에서 설명하는 대로 이름을 "
 "지으세요 (값은 초 단위 입니다):"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:635
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:645
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
@@ -4291,7 +4338,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``MobTimer`` 라고 이름지음) - 얼마나 자주 적이 스"
 "폰하는지를 조절함"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:636
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:646
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
@@ -4299,7 +4346,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``ScoreTimer`` 라고 이름지음) - 매 초마다 점수를 "
 "증가시킴"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:637
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:647
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
@@ -4307,7 +4354,7 @@ msgstr ""
 ":ref:`Timer <class_Timer>` (``StratTimer`` 라고 이름지음) - 시작하기 전에 지"
 "연시간을 줌"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:638
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:648
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
@@ -4315,24 +4362,24 @@ msgstr ""
 ":ref:`Position2D <class_Position2D>` (``StartPosition`` 이라고 이름지음) - 플"
 "레이어의 시작 위치를 표시함"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:640
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:650
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr "각  ``Timer`` 마다 ``Wait Time`` 속성을 다음과 같이 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:643
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:653
 msgid "``MobTimer``: ``0.5``"
 msgstr "``MobTimer``: ``0.5``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:644
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:654
 msgid "``ScoreTimer``: ``1``"
 msgstr "``ScoreTimer``: ``1``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:645
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:655
 msgid "``StartTimer``: ``2``"
 msgstr "``StartTimer``: ``2``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:647
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:657
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
@@ -4340,11 +4387,11 @@ msgstr ""
 "그리고, ``StartTimer`` 속성의 ``One Shot`` 을 \"On\"으로 설정하고 "
 "``StartPosition`` 노드의 ``Position`` 을 ``(240, 450)`` 으로 설정하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:651
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:661
 msgid "Spawning mobs"
 msgstr "적 스폰하기"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:653
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:663
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -4356,7 +4403,7 @@ msgstr ""
 "``Main`` 의 자식으로 추가하고 ``MobPath`` 라고 이름지으세요. ``Path2D`` 를 선"
 "택한다면, 당신은 에디터 위쪽에 새로운 버튼들이 보일 것입니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:660
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:670
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -4369,7 +4416,7 @@ msgstr ""
 "어있어야 합니다. 이 설정은 \"잠금\" 버튼 왼쪽과 \"스냅 설정\" 버튼 옆의 세 개"
 "의 점에서 찾을 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:668
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
@@ -4377,7 +4424,7 @@ msgstr ""
 "*시계 방향* 으로 그리세요, 그렇지 않으면 적들은 *안쪽* 이 아닌 *바깥쪽* 으로 "
 "향할 것입니다!"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:671
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
@@ -4385,7 +4432,7 @@ msgstr ""
 "이미지에서 ``4`` 포인트를 찍고 난 후, \"커브 닫기\" 버튼을 누르면 커브가 완성"
 "됩니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:674
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -4397,11 +4444,11 @@ msgstr ""
 "이 노드는 자동으로 회전하고 이동하면서 경로를 따라갈 것입니다, 그래서 우리는 "
 "이걸로 경로를 따라 임의의 위치와 방향을 선택하기 위해 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
 msgid "Main script"
 msgstr "메인 스크립트"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:692
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -4409,7 +4456,7 @@ msgstr ""
 "``Main`` 에 스크립트를 추가합니다. 스크립트의 위에 ``export (PackedScene)`` "
 "를 사용해서 우리가 인스턴스하길 원하는 적 씬을 고를 수 있도록 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:722
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:732
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property under the Script Variables of the ``Main`` node."
@@ -4417,7 +4464,7 @@ msgstr ""
 "\"파일 시스템\" 패널에서 ``Mob.tscn`` 을 드래그하고 ``Main`` 노드의 스크립트 "
 "속성 아래 ``Mob`` 속성에 드랍하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:725
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:735
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -4431,17 +4478,19 @@ msgstr ""
 "고 치세요. 다음의 코드를 추가하고 ``new_game`` 함수를 추가하여 새로운 게임을 "
 "위한 모든 것들을 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:762
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:772
+#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
-"(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
-"start the other two timers. ``ScoreTimer`` will increment the score by 1."
+"(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
+"``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
+"increment the score by 1."
 msgstr ""
 "이제 각 타이머 노드 (``StartTimer``, ``ScoreTimer`` ,그리고 ``MobTimer``) 의 "
 "``timeout()`` 시그널을 연결하세요. ``StartTimer`` 는 나머지 두 타이머를 시작"
 "하게 만들 것입니다. ``ScoreTimer`` 는 점수가 1씩 증가하게 합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:789
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:799
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -4453,12 +4502,12 @@ msgstr ""
 "``PathFollow2D`` 노드는 자동으로 경로를 따라 돌고, 그래서 이걸로 적들의 위치"
 "와 방향을 선택하기 위해서 사용할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:795
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:805
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr "새로운 인스턴스는 ``add_child()`` 를 사용해야 추가할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:798
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:808
 msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
@@ -4466,12 +4515,12 @@ msgstr ""
 "이제 씬 창에서 ``MobTimer`` 를 클릭하고 인스펙터 창으로 가서, 노드 화면으로 "
 "바꾼 후 ``timeout()`` 을 클릭하고 시그널을 연결합니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:801
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:811
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1091
 msgid "Add the following code:"
 msgstr "다음의 코드를 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:848
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:859
 msgid ""
 "In functions requiring angles, GDScript uses *radians*, not degrees. If "
 "you're more comfortable working with degrees, you'll need to use the "
@@ -4481,11 +4530,11 @@ msgstr ""
 "로 좀 더 편한 작업을 하고싶다면, ``deg2rad()`` 와 ``rad2deg()`` 함수로 이 둘"
 "을 전환할 수 있습니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:854
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:856
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:867
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -4498,7 +4547,7 @@ msgstr ""
 "<class_CanvasLayer>` 노드를 추가하고 ``HUD`` 라고 이름지으세요. \"HUD\"는 "
 "\"heads-up display\"의 약자로, 정보가 게임 화면 앞에 덮어씌우는 방식입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:862
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:873
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -4508,23 +4557,23 @@ msgstr ""
 "들을 그릴수 있게 해주고, 이로써 보여지는 정보가 플레이어나 적과 같은 게임 요"
 "소들에 의해 가려지지 않게 만듭니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:866
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:877
 msgid "The HUD displays the following information:"
 msgstr "HUD는 다음의 정보들을 보여줍니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:868
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:879
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "점수, ``ScoreTimer`` 가 바꿈."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:869
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "메시지, \"Game Over\"나 \"Get Ready!\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:870
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
 msgid "A \"Start\" button to begin the game."
 msgstr "게임을 시작하기 위한 \"Start\" 버튼."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:872
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -4534,27 +4583,57 @@ msgstr ""
 "기 위해, 우리는 두 가지 형식의 :ref:`Control <class_Control>` 노드를 쓸겁니"
 "다: :ref:`Label <class_Label>` 과 :ref:`Button <class_Button>` 입니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:876
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:887
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "다음에 맞춰 ``HUD`` 노드의 자식으로 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:878
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:889
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr "``ScoreLabel`` 로 이름지은 :ref:`Label <class_Label>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:879
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
 msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
 msgstr "``MessageLabel`` 로 이름지은 :ref:`Label <class_Label>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:891
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr "``StartButton`` 으로 이름지은 :ref:`Button <class_Button>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr "``MessageTimer`` 로 이름지은 :ref:`Timer <class_Timer>`."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:894
+#, fuzzy
+msgid ""
+"Click on the ``ScoreLabel`` and type a number into the _Text_ field in the "
+"Inspector. The default font for ``Control`` nodes is small and doesn't scale "
+"well. There is a font file included in the game assets called \"Xolonium-"
+"Regular.ttf\". To use this font, do the following for each of the three "
+"``Control`` nodes:"
+msgstr ""
+"``MessageLabel``\\ 의 텍스트가 게임 화면에 맞추기 위해 text 속성 옆에 작은 아"
+"이콘을 클릭합니다. 그러면 단어 사이에 새 줄을 추가할 수 있는 새로운 창이 나타"
+"납니다. ``Control`` 노드의 기본 폰트는 작고 잘 확장되지 않습니다. game assets"
+"에 포함된 \"Xolonium-Regular.ttf\"는 폰트 파일입니다. 이 폰트를 사용하기 위"
+"해 각 ``Control`` 노드마다 다음과 같이 하세요:"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:900
+msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
+msgstr "\"Custom Fonts\" 에서, \"새 DynamicFont\"를 선택하세요"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:904
+#, fuzzy
+msgid ""
+"Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
+"\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
+"font's ``Size``. A setting of ``64`` works well."
+msgstr ""
+"추가한 \"DynamicFont\"를 클릭하시고, \"Font Data\"에서, \"Load\"를 눌러서 "
+"\"Xolonium-Regular.ttf\" 파일을 선택하세요. 또한 폰트의 ``Size`` 도 설정해야 "
+"합니다. ``64`` 정도가 좋습니다."
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:910
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -4570,7 +4649,7 @@ msgstr ""
 "져 있는 지를 나타냅니다. 더 자세한 설명은 :ref:"
 "`doc_design_interfaces_with_the_control_nodes` 를 참고하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
 msgid ""
 "Arrange the nodes as shown below. Click the \"Anchor\" button to set a "
 "Control node's anchor:"
@@ -4578,7 +4657,7 @@ msgstr ""
 "하단에 보이는 대로 노드를 정렬하세요. \"Anchor\" 버튼을 클릭해 컨트롤 노드의 "
 "앵커를 설정하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:895
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:922
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
@@ -4586,136 +4665,76 @@ msgstr ""
 "당신은 노드들을 드래그해서 수동으로 놓을 수도 있습니다, 혹은 더 정확한 방법으"
 "로는, 다음의 설정을 사용하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:899
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:901
-msgid "``Layout``: \"Center Top\""
-msgstr "``레이아웃``: \"Center Top\""
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:902
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
-msgid "``Margin``:"
-msgstr "``Margin``:"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:904
-msgid "Left: ``-25``"
-msgstr "Left: ``-25``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:905
-msgid "Top: ``0``"
-msgstr "Top: ``0``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:906
-msgid "Right: ``25``"
-msgstr "Right: ``25``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
-msgid "Bottom: ``100``"
-msgstr "Bottom: ``100``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:909
-msgid "Text: ``0``"
+#, fuzzy
+msgid "*Text* : ``0``"
 msgstr "Text: ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:912
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:929
+msgid "*Layout* : \"Top Wide\""
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:930
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
+msgid "*Align* : \"Center\""
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
 msgstr "MessageLabel"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:914
-msgid "``Layout``: \"Center\""
-msgstr "``레이아웃``: \"Center\""
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
-msgid "Left: ``-200``"
-msgstr "Left: ``-200``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:918
-msgid "Top: ``-150``"
-msgstr "Top: ``-150``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:919
-msgid "Right: ``200``"
-msgstr "Right: ``200``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:920
-msgid "Bottom: ``0``"
-msgstr "Bottom: ``0``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:922
-msgid "Text: ``Dodge the Creeps!``"
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
+#, fuzzy
+msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "Text: ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:925
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
+#, fuzzy
+msgid "*Layout* : \"HCenter Wide\""
+msgstr "``레이아웃``: \"Center\""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:940
 msgid "StartButton"
 msgstr "StartButton"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:927
-msgid "``Layout``: \"Center Bottom\""
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:942
+#, fuzzy
+msgid "*Text* : ``Start``"
+msgstr "Text: ``Start``"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:943
+#, fuzzy
+msgid "*Layout* : \"Center Bottom\""
 msgstr "``레이아웃``: \"Center Bottom\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:930
-msgid "Left: ``-100``"
-msgstr "Left: ``-100``"
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
+#, fuzzy
+msgid "*Margin* :"
+msgstr "마진(Margin)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
 msgstr "Top: ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:932
-msgid "Right: ``100``"
-msgstr "Right: ``100``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
 msgid "Bottom: ``-100``"
 msgstr "Bottom: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
-msgid "Text: ``Start``"
-msgstr "Text: ``Start``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
-msgid ""
-"To make the text of the ``MessageLabel`` fit the game's window click the "
-"small icon next to your text property. This will open up a new window where "
-"you can add a new line between the words. The default font for ``Control`` "
-"nodes is small and doesn't scale well. There is a font file included in the "
-"game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
-"following for each of the three ``Control`` nodes:"
-msgstr ""
-"``MessageLabel``\\ 의 텍스트가 게임 화면에 맞추기 위해 text 속성 옆에 작은 아"
-"이콘을 클릭합니다. 그러면 단어 사이에 새 줄을 추가할 수 있는 새로운 창이 나타"
-"납니다. ``Control`` 노드의 기본 폰트는 작고 잘 확장되지 않습니다. game assets"
-"에 포함된 \"Xolonium-Regular.ttf\"는 폰트 파일입니다. 이 폰트를 사용하기 위"
-"해 각 ``Control`` 노드마다 다음과 같이 하세요:"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
-msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
-msgstr "\"Custom Fonts\" 에서, \"새 DynamicFont\"를 선택하세요"
-
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:949
-msgid ""
-"Click on the \"DynamicFont\" you added, and under \"Font Data\", choose "
-"\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
-"font's ``Size``. A setting of ``64`` works well."
-msgstr ""
-"추가한 \"DynamicFont\"를 클릭하시고, \"Font Data\"에서, \"Load\"를 눌러서 "
-"\"Xolonium-Regular.ttf\" 파일을 선택하세요. 또한 폰트의 ``Size`` 도 설정해야 "
-"합니다. ``64`` 정도가 좋습니다."
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:955
 msgid "Now add this script to ``HUD``:"
 msgstr "이제 ``HUD`` 에 이 스크립트를 추가하세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:974
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:968
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr "``start_game`` 시그널은 ``Main`` 노드에게 버튼이 눌려졌음을 알립니다."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:996
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:990
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
@@ -4725,13 +4744,23 @@ msgstr ""
 "\" 처럼 말이죠. ``MessageTimer`` 에서, ``WaitTime`` 을 ``2`` 로 설정하고 "
 "``OneShot`` 속성을 \"On\"으로 하세요."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
+#, fuzzy
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
-"for 2 seconds, then return to the title screen and show the \"Start\" button."
+"for 2 seconds, then return to the title screen and, after a brief pause, "
+"show the \"Start\" button."
 msgstr ""
 "이 함수는 플레이어가 패배했을 때 호출됩니다. 이것은 2초동안 \"Game Over\"를 "
 "보여주고, 타이틀 화면으로 돌아와서 \"Start\" 버튼을 보여줍니다."
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
+msgid ""
+"When you need to pause for a brief time, an alternative to using a Timer "
+"node is to use the SceneTree's ``create_timer()`` function. This can be very "
+"useful to delay, such as in the above code, where we want to wait a little "
+"bit of time before showing the \"Start\" button."
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
 msgid "This function is called by ``Main`` whenever the score changes."
@@ -4839,9 +4868,10 @@ msgstr ""
 "는 색깔을 고르고 ``ColorRect`` 의 크기를 조절해 화면을 덮도록 만듭시다."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
+#, fuzzy
 msgid ""
-"You can also add a background image, if you have one, by using a ``Sprite`` "
-"node."
+"You could also add a background image, if you have one, by using a "
+"``Sprite`` node."
 msgstr ""
 "또한 ``Sprite`` 노드를 사용해서 갖고 있는 배경 사진을 추가하실수도 있습니다."
 
@@ -4887,87 +4917,45 @@ msgstr ""
 "마지막으로, ``game_over()`` 함수에 ``$DeathSound.play()`` 를 추가하세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
-msgid "Particles"
-msgstr "파티클(Particles)"
+msgid "Keyboard Shortcut"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
-"For one last bit of visual appeal, let's add a trail effect to the player's "
-"movement. Choose your ``Player`` scene and add a :ref:`Particles2D "
-"<class_Particles2D>` node named ``Trail``."
+"Since the game is played with keyboard controls, it would be convenient if "
+"we could also start the game by pressing a key on the keyboard. One way to "
+"do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
-"마지막 시각적 효과를 위해, 플레이어의 움직임에 꼬리를 추가합시다. ``Player`` "
-"씬을 선택하고 :ref:`Particles2D <class_Particles2D>` 노드를 추가하고 "
-"``Trail`` 이라고 이름지으세요."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
-"There are a large number of properties to choose from when configuring "
-"particles. Feel free to experiment and create different effects. For the "
-"effect in this example, use the following settings:"
+"In the ``HUD`` scene, select the ``StartButton`` and find its _Shortcut_ "
+"property in the Inspector. Select \"New Shortcut\" and click on the "
+"\"Shortcut\" item. A second _Shortcut_ property will appear. Select \"New "
+"InputEventAction\" and click the new \"InputEvent\". Finally, in the "
+"_Action_ property, type the name \"ui_select\". This is the default input "
+"event associated with the spacebar."
 msgstr ""
-"파티클을 구성할 땐 많은 고를 수 있는 속성들이 있습니다. 다양한 이펙트들을 만"
-"들고 자유롭게 경험해보세요. 이 예시의 이펙트를 위해서는, 다음의 설정을 사용하"
-"세요:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1179
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid ""
-"You also need to create a ``Material`` by clicking on ``<null>`` and then "
-"\"New ParticlesMaterial\". The settings for that are below:"
+"Now when the start button appears, you can either click it or press the "
+"spacebar to start the game."
 msgstr ""
-"당신은 또한 ``<null>`` 에서 \"새 ParticlesMaterial\"을 클릭해서 ``Material`` "
-"을 추가할 수도 있습니다. 이 설정은 다음과 같습니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1184
-msgid ""
-"To make the gradient for the \"Color Ramp\" setting, we want a gradient "
-"taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to "
-"0.0 (fully transparent)."
-msgstr ""
-"\"Color Ramp\" 설정에 그라디언트를 만들려면, 알파 (투명도)를 0.5 (반투명) 에"
-"서 0.0 (완전 투명) 으로 설정하는 그라디언트가 필요합니다."
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
-msgid ""
-"Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient"
-"\". You'll see a window like this:"
-msgstr ""
-"\"새 GradientTexture\"를 클릭하고, \"Gradient\" 아래에, \"새 Gradient\"를 클"
-"릭하세요. 이렇게 생긴 창이 뜰 것입니다:"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1193
-msgid ""
-"The left and right boxes represent the start and end colors. Click on each "
-"and then click the large square on the right to choose the color. For the "
-"first color, set the ``A`` (alpha) value to around halfway. For the second, "
-"set it all the way to ``0``."
-msgstr ""
-"왼쪽과 오른쪽 상자는 시작과 끝 색상을 나타냅니다. 각각을 클릭하고 오른쪽 넓"
-"은 사각형을 클릭해서 색상을 선택합니다. 첫 색상으로, ``A`` (알파) 값을 거의 "
-"절반으로 설정합니다. 두 번째 색상으로 \n"
-" ``0`` 으로 끝까지 설정합니다."
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
-msgid ""
-"See :ref:`Particles2D <class_Particles2D>` for more details on using "
-"particle effects."
-msgstr ""
-"파티클 이펙트를 사용하는 더 많은 정보는 :ref:`Particles2D "
-"<class_Particles2D>` 를 참고하세요."
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1202
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "Project files"
 msgstr "프로젝트 파일"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
 msgid "You can find a completed version of this project at these locations:"
 msgstr "당신은 여기서 이 프로젝트의 완성 버전을 확인하실 수 있습니다:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"
 
@@ -11823,7 +11811,8 @@ msgid "Exec Flags"
 msgstr "Exec Flags"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-msgid "geany/kate"
+#, fuzzy
+msgid "Geany/Kate"
 msgstr "기니(geany)/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
@@ -11831,7 +11820,8 @@ msgid "{file} --line {line} --column {col}"
 msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-msgid "atom/sublime text"
+#, fuzzy
+msgid "Atom/Sublime Text"
 msgstr "아톰(atom)/서브라임 텍스트(sublime text)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
@@ -11839,12 +11829,23 @@ msgid "{file}:{line}"
 msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-msgid "jetbrains rider"
+#, fuzzy
+msgid "JetBrains Rider"
 msgstr "Jetbrains rider (일종의 통합 개발환경)"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "--line {line} {file}"
 msgstr "--line {line} {file}"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+#: ../../docs/development/cpp/configuring_an_ide.rst:267
+#, fuzzy
+msgid "Visual Studio Code"
+msgstr "비주얼 스튜디오 혹은 VS Code"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "{project} --goto {file}:{line}:{col}"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 #, fuzzy
@@ -52646,12 +52647,12 @@ msgstr ""
 msgid ""
 "Godot always supported standard low-level networking via UDP, TCP and some "
 "higher level protocols such as SSL and HTTP. These protocols are flexible "
-"and can be used for almost anything. However using them to synchronize game "
+"and can be used for almost anything. However, using them to synchronize game "
 "state manually can be a large amount of work. Sometimes that work can't be "
 "avoided or is worth it, for example when working with a custom server "
-"implementation on the backend. But in most cases it's worthwhile to consider "
-"Godot's high-level networking API, which sacrifices some of the fine-grained "
-"control of low-level networking for greater ease of use."
+"implementation on the backend. But in most cases, it's worthwhile to "
+"consider Godot's high-level networking API, which sacrifices some of the "
+"fine-grained control of low-level networking for greater ease of use."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:14
@@ -52672,7 +52673,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
 msgid ""
-"UDP is a simpler protocol which only sends packets (and has no concept of a "
+"UDP is a simpler protocol, which only sends packets (and has no concept of a "
 "\"connection\"). No error correction makes it pretty quick (low latency), "
 "but packets may be lost along the way or received in the wrong order. Added "
 "to that, the MTU (maximum packet size) for UDP is generally low (only a few "
@@ -52684,16 +52685,16 @@ msgstr ""
 msgid ""
 "In general, TCP can be thought of as reliable, ordered, and slow; UDP as "
 "unreliable, unordered and fast. Because of the large difference in "
-"performance it often makes sense to re-build the parts of TCP wanted for "
-"games (optional reliability and packet order) while avoiding the unwanted "
+"performance, it often makes sense to re-build the parts of TCP wanted for "
+"games (optional reliability and packet order), while avoiding the unwanted "
 "parts (congestion/traffic control features, Nagle's algorithm, etc). Due to "
-"this most game engines come with such an implementation, and Godot is no "
+"this, most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
 msgid ""
-"In summary you can use the low-level networking API for maximum control and "
+"In summary, you can use the low-level networking API for maximum control and "
 "implement everything on top of bare network protocols or use the high-level "
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
@@ -52776,7 +52777,7 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:66
 msgid ""
 "This class interface can abstract most types of network layers, topologies "
-"and libraries. By default Godot provides an implementation based on ENet (:"
+"and libraries. By default, Godot provides an implementation based on ENet (:"
 "ref:`NetworkedMultiplayerEnet <class_NetworkedMultiplayerENet>`), but this "
 "could be used to implement mobile APIs (for adhoc WiFi, Bluetooth) or custom "
 "device/console-specific networking APIs."
@@ -52807,7 +52808,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:79
 msgid ""
-"To create that object it first has to be initialized as a server or client."
+"To create that object, it first has to be initialized as a server or client."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:81
@@ -52877,7 +52878,7 @@ msgid ""
 "retrieve the ID for the local system via :ref:`SceneTree."
 "get_network_unique_id() <class_SceneTree_method_get_network_unique_id>`. "
 "These IDs will be useful mostly for lobby management and should generally be "
-"stored as they identify connected peers and thus players. You can also use "
+"stored, as they identify connected peers and thus players. You can also use "
 "IDs to send messages only to certain peers."
 msgstr ""
 
@@ -52900,10 +52901,10 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
 msgid ""
 "Again, all these functions are mainly useful for lobby management or for "
-"adding/removing players on the fly. For these tasks the server clearly has "
-"to work as a server and you have do tasks manually such as sending a newly "
-"connected player information about other already connected players (e.g. "
-"their names, stats, etc)."
+"adding/removing players on the fly. For these tasks, the server clearly has "
+"to work as a server and you have to perform tasks manually such as sending a "
+"newly connected player information about other already connected players (e."
+"g. their names, stats, etc)."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:145
@@ -52974,7 +52975,7 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:169
 msgid ""
 "Unreliable: if the function call does not arrive, it will not be re-"
-"transmitted, but if it arrives it will do it quickly."
+"transmitted; but if it arrives, it will do it quickly."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:171
@@ -52988,8 +52989,8 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
 msgid ""
-"There is also the `get_rpc_sender_id` function in `SceneTree` which can be "
-"used to check which peer (or peer ID) sent a RPC call."
+"There is also the `get_rpc_sender_id` function in `SceneTree`, which can be "
+"used to check which peer (or peer ID) sent an RPC."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:177
@@ -53004,14 +53005,14 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:230
 msgid ""
-"You might have noticed already something different, which is the usage of "
+"You might have already noticed something different, which is the usage of "
 "the `remote` keyword on the `register_player` function:"
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:236
 msgid ""
 "This keyword has two main uses. The first is to let Godot know that this "
-"function can be called from RPC. If no keywords are added Godot will block "
+"function can be called from RPC. If no keywords are added, Godot will block "
 "any attempts to call functions for security. This makes security work a lot "
 "easier (so a client can't call a function to delete a file on another "
 "client's system)."
@@ -53061,10 +53062,10 @@ msgstr ""
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:254
 msgid ""
 "With this, lobby management should be more or less explained. Once you have "
-"your game going you will most likely want to add some extra security to make "
-"sure clients don't do anything funny (just validate the info they send from "
-"time to time, or before game start). For the sake of simplicity and because "
-"each game will share different information, this is not shown here."
+"your game going, you will most likely want to add some extra security to "
+"make sure clients don't do anything funny (just validate the info they send "
+"from time to time, or before game start). For the sake of simplicity and "
+"because each game will share different information, this is not shown here."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:259
@@ -53092,8 +53093,8 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:270
 msgid ""
-"So, how to name such nodes? In Godot nodes need to have an unique name. It "
-"must also be relatively easy for a player to tell which nodes represent each "
+"So, how to name such nodes? In Godot, nodes need to have a unique name. It "
+"must also be relatively easy for a player to tell which node represents each "
 "player ID."
 msgstr ""
 
@@ -53106,8 +53107,8 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
 msgid ""
-"Depending on when you execute pre_configure_game() you may need to change "
-"any calls to ``add_child()`` to be deferred via ``call_deferred()`` as the "
+"Depending on when you execute pre_configure_game(), you may need to change "
+"any calls to ``add_child()`` to be deferred via ``call_deferred()``, as the "
 "SceneTree is locked while the scene is being created (e.g. when ``_ready()`` "
 "is being called)."
 msgstr ""
@@ -53118,8 +53119,8 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
 msgid ""
-"Setting up players might take different amount of time on every peer due to "
-"lag, different hardware, or other reasons. To make sure the game will "
+"Setting up players might take different amounts of time for every peer due "
+"to lag, different hardware, or other reasons. To make sure the game will "
 "actually start when everyone is ready, pausing the game until all players "
 "are ready can be useful:"
 msgstr ""
@@ -53136,9 +53137,9 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
 msgid ""
-"In most games the goal of multiplayer networking is that the game runs "
+"In most games, the goal of multiplayer networking is that the game runs "
 "synchronized on all the peers playing it. Besides supplying an RPC and "
-"remote member variable set implementation, Godot adds the concept network "
+"remote member variable set implementation, Godot adds the concept of network "
 "masters."
 msgstr ""
 
@@ -53154,9 +53155,9 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
 msgid ""
-"When not explicitly set the network master is inherited from the parent "
-"node, which if not changed is always going to be the server (ID 1). Thus the "
-"server has authority over all nodes by default."
+"When not explicitly set, the network master is inherited from the parent "
+"node, which if not changed, is always going to be the server (ID 1). Thus "
+"the server has authority over all nodes by default."
 msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:349
@@ -53231,7 +53232,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
 msgid ""
-"This instance, then, calls the `stun` function in the same instances of that "
+"This instance, then, calls the `stun` method in the same instances of that "
 "same player (but in different peers), and only those which are set as "
 "puppet, making the player look stunned in all the peers (as well as the "
 "current, master one)."
@@ -53241,7 +53242,7 @@ msgstr ""
 msgid ""
 "Note that you could also send the stun() message only to a specific player "
 "by using rpc_id(<id>, \"exploded\", bomb_owner). This may not make much "
-"sense for an area-of-effect case like the bomb but in other cases, like "
+"sense for an area-of-effect case like the bomb, but in other cases, like "
 "single target damage."
 msgstr ""
 
@@ -53269,7 +53270,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:14
 msgid ""
-"Create a new empty scene, add a CanvasLayer as the root node and add an "
+"Create a new empty scene, add a CanvasLayer as the root node and add a "
 "script to it. Then add two child nodes to it: a Button and an HTTPRequest "
 "node. You will need to connect the following signals to the CanvasLayer "
 "script:"
@@ -53321,8 +53322,8 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:53
 msgid ""
-"Please note that for SSL/TLS encryption and thus HTTPS URLs to work you may "
-"need to take some steps as described :ref:`here <doc_ssl_certificates>`."
+"Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you "
+"may need to take some steps as described :ref:`here <doc_ssl_certificates>`."
 msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:55
@@ -53341,7 +53342,7 @@ msgstr ""
 
 #: ../../docs/tutorials/networking/http_request_class.rst:61
 msgid ""
-"Until now we have limited ourselves to requesting data from a server. But "
+"Until now, we have limited ourselves to requesting data from a server. But "
 "what if you need to send data to the server? Here is a common way of doing "
 "it:"
 msgstr ""
@@ -53361,9 +53362,9 @@ msgstr ""
 #: ../../docs/tutorials/networking/http_client_class.rst:6
 msgid ""
 ":ref:`HTTPClient <class_HTTPClient>` provides low-level access to HTTP "
-"communication. For a more higher-level interface, you may want to take a "
-"look at :ref:`HTTPRequest <class_HTTPRequest>` first, which has a tutorial "
-"available :ref:`here <doc_http_request_class>`."
+"communication. For a higher-level interface, you may want to take a look at :"
+"ref:`HTTPRequest <class_HTTPRequest>` first, which has a tutorial available :"
+"ref:`here <doc_http_request_class>`."
 msgstr ""
 
 #: ../../docs/tutorials/networking/http_client_class.rst:10
@@ -53445,7 +53446,7 @@ msgstr ""
 msgid ""
 "Unless you are working with large companies or corporations, or need to "
 "connect to someone else's servers (i.e., connecting to Google or some other "
-"REST API provider via HTTPS) this method is not as useful."
+"REST API provider via HTTPS), this method is not as useful."
 msgstr ""
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:56
@@ -53492,7 +53493,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:11
 msgid ""
-"On the surface the Asset Library might look and function similar to asset "
+"On the surface, the Asset Library might look and function similar to asset "
 "stores available for other engines, such as Unity's Asset Store, or Unreal "
 "Engine's Marketplace, where you can submit both freely-available assets, as "
 "well as paid, commercial ones. In addition, often times such assets are "
@@ -53530,7 +53531,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:34
 msgid ""
-"Not to the official one, though in the future there might be other asset "
+"Not to the official one, though in the future, there might be other asset "
 "libraries which allow it. That said, you are allowed to monetize and sell "
 "Godot assets outside the Asset Library."
 msgstr ""
@@ -53552,8 +53553,8 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:18
 msgid ""
-"At the top you see the **header** which takes you to various other parts of "
-"the AssetLib - at the moment it's empty as we are not logged in."
+"At the top, you see the **header**, which takes you to various other parts "
+"of the AssetLib - at the moment, it's empty, as we are not logged in."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:22
@@ -53700,7 +53701,7 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:94
 msgid ""
 "This will change the look of the AssetLib header. Now you get access to a "
-"handful new functions:"
+"handful of new functions:"
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:97
@@ -53724,7 +53725,7 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:103
 msgid ""
 "You can learn how to submit assets to the Library, and what the asset "
-"submission guidelines are, in the next part of this tutorial, ::ref:"
+"submission guidelines are, in the next part of this tutorial, :ref:"
 "`doc_uploading_to_assetlib`."
 msgstr ""
 
@@ -53739,24 +53740,20 @@ msgid ""
 "project, from the workspaces list."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:113
-msgid "|image7| |image14|"
-msgstr ""
-
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:116
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:117
 msgid ""
 "Click on it, and Godot will fetch info about the assets from the AssetLib. "
 "Once it's finished, you will see a window similar to what the AssetLib "
 "website looks like, with some differences:"
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:122
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:123
 msgid ""
 "Similarly to the web version of the AssetLib, here you can search for assets "
 "by category, name, and sort them by factors such as name or edit date."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:125
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:126
 msgid ""
 "Notably, you can only fetch assets for the current version of Godot you are "
 "running. Also, you can only download Projects, Demos and Templates from the "
@@ -53767,7 +53764,7 @@ msgid ""
 "search query for the changes to take place)."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:133
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:134
 msgid ""
 "In the future, you will be able to choose a different AssetLib provider to "
 "fetch assets from (using the Site dropdown menu), however currently only the "
@@ -53776,24 +53773,24 @@ msgid ""
 "machine's web server (the localhost option)."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:139
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:140
 msgid "When you click on an asset, you will see more information about it."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:143
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:144
 msgid ""
 "If you click on the Install button, Godot will fetch an archive of the "
 "asset, and will track download progress of it at the bottom of the editor "
 "window. If the download fails, you can retry it using the Retry button."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:149
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:150
 msgid ""
 "When it finishes, you can proceed to install it using the Install button. "
 "This will bring up the Package Installer window."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:154
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:155
 msgid ""
 "Here you can see a list of all the files that will be installed. You can "
 "tick off any of the files that you do not wish to install, and Godot will "
@@ -53802,7 +53799,7 @@ msgid ""
 "stating why it cannot be installed."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:162
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:163
 msgid ""
 "Once you are done, you can press the Install button, which will unzip all "
 "the files in the archive, and import any assets contained therein, such as "
@@ -53810,7 +53807,7 @@ msgid ""
 "that the Package installation is complete."
 msgstr ""
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:169
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:170
 msgid ""
 "You may also use the Import button to import asset archives obtained "
 "elsewhere (such as downloading them directly from the AssetLib web "
@@ -53825,8 +53822,8 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:9
 msgid ""
-"This tutorial aims to serve as both a guide on how you can submit your own "
-"assets to the Godot Asset Library and share them with the Godot community."
+"This tutorial aims to serve as a guide on how you can submit your own assets "
+"to the Godot Asset Library and share them with the Godot community."
 msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:12
@@ -53882,7 +53879,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:38
 msgid ""
-"The version of the engine that the asset works with. Currently it's not "
+"The version of the engine that the asset works with. Currently, it's not "
 "possible to have a single asset entry contain downloads for multiple engine "
 "versions, so you may need to re-submit the asset multiple times, with an "
 "entry for each Godot version it supports. This is particularly important "
@@ -53910,7 +53907,7 @@ msgstr ""
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:51
 msgid ""
 "Assets uploaded to the AssetLib are not hosted on it directly. Instead, they "
-"point to repositories hosted on third-party Git providers such as GitHub, "
+"point to repositories hosted on third-party Git providers, such as GitHub, "
 "GitLab or Bitbucket. This is where you choose which provider your asset "
 "uses, so the site can compute the final download link."
 msgstr ""
@@ -54013,7 +54010,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:91
 msgid ""
-"An URL to a image that will be used as a thumbnail for the preview. This "
+"A URL to an image that will be used as a thumbnail for the preview. This "
 "option will be removed eventually, and thumbnails will be automatically "
 "computed instead."
 msgstr ""
@@ -54057,13 +54054,14 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_primer.rst:8
 msgid ""
 "A new architecture was introduced in Godot 3 called the AR/VR Server. On top "
-"of this architecture specific implementations are available as interfaces "
+"of this architecture, specific implementations are available as interfaces, "
 "most of which are plugins based on GDNative. This tutorial focuses purely on "
 "the core elements abstracted by the core architecture. This architecture has "
 "enough features for you to create an entire VR experience that can then be "
-"deployed for various interfaces. However each platform often has some unique "
-"features that are impossible to abstract. Such features will be documented "
-"on the relevant interfaces and fall outside of the scope of this primer."
+"deployed for various interfaces. However, each platform often has some "
+"unique features that are impossible to abstract. Such features will be "
+"documented on the relevant interfaces and fall outside of the scope of this "
+"primer."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:12
@@ -54072,9 +54070,9 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:14
 msgid ""
-"When Godot starts each available interface will make itself known to the AR/"
-"VR server. GDNative interfaces are setup as singletons, as long as they are "
-"added to the list of GDNative singletons in your project they will make "
+"When Godot starts, each available interface will make itself known to the AR/"
+"VR server. GDNative interfaces are setup as singletons; as long as they are "
+"added to the list of GDNative singletons in your project, they will make "
 "themselves known to the server."
 msgstr ""
 
@@ -54082,43 +54080,44 @@ msgstr ""
 msgid ""
 "You can use the function :ref:`get_interfaces() "
 "<class_ARVRServer_method_get_interfaces>` to return a list of available "
-"interfaces but for this tutorial we're going to use the :ref:`native mobile "
-"VR interface <class_MobileVRInterface>` in our examples. This interface is a "
-"straightforward implementation that uses the 3DOF sensors on your phone for "
-"orientation and outputs a stereoscopic image to screen. It is also available "
-"in the Godot core and outputs to screen on desktop which makes it ideal for "
-"prototyping or a tutorial such as this one."
+"interfaces, but for this tutorial, we're going to use the :ref:`native "
+"mobile VR interface <class_MobileVRInterface>` in our examples. This "
+"interface is a straightforward implementation that uses the 3DOF sensors on "
+"your phone for orientation and outputs a stereoscopic image to the screen. "
+"It is also available in the Godot core and outputs to screen on desktop, "
+"which makes it ideal for prototyping or a tutorial such as this one."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:18
-msgid "To enable an interface you execute the following code:"
-msgstr ""
+#, fuzzy
+msgid "To enable an interface, you execute the following code:"
+msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:35
 msgid ""
-"This code finds the interface we wish to use, initializes it and if that is "
-"successful binds the main viewport to the interface. This last step gives "
-"some control over the viewport to the interface which automatically enables "
+"This code finds the interface we wish to use, initializes it and, if that is "
+"successful, binds the main viewport to the interface. This last step gives "
+"some control over the viewport to the interface, which automatically enables "
 "things like stereoscopic rendering on the viewport."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:37
 msgid ""
-"For our mobile vr interface, and any interface where the main input is "
+"For our mobile VR interface, and any interface where the main input is "
 "directly displayed on screen, the main viewport needs to be the viewport "
 "where arvr is set to true. But for interfaces that render on an externally "
-"attached device you can use a secondary viewport. In this later case a "
+"attached device, you can use a secondary viewport. In the latter case, a "
 "viewport that shows its output on screen will show an undistorted version of "
-"the left eye while showing the fully processed stereoscopic output on the "
+"the left eye, while showing the fully processed stereoscopic output on the "
 "device."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:39
 msgid ""
-"Finally you should only initialize an interface once, switching scenes and "
+"Finally, you should only initialize an interface once; switching scenes and "
 "reinitializing interfaces will just introduce a lot of overhead. If you want "
-"to turn the headset off temporarily just disable the viewport or set arvr to "
-"false on the viewport. In most scenarios though you wouldn't disable the "
+"to turn the headset off temporarily, just disable the viewport or set arvr "
+"to false on the viewport. In most scenarios though, you wouldn't disable the "
 "headset once you're in VR, this can be disconcerting to the gamer."
 msgstr ""
 
@@ -54138,13 +54137,13 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:47
 msgid ""
-":ref:`ARVRCamera <class_ARVRCamera>` - a special subclass of the camera "
+":ref:`ARVRCamera <class_ARVRCamera>` - a special subclass of the camera, "
 "which is positionally tracked"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:48
 msgid ""
-":ref:`ARVRController <class_ARVRController>` - a new spatial class that "
+":ref:`ARVRController <class_ARVRController>` - a new spatial class, which "
 "tracks the location of a controller"
 msgstr ""
 
@@ -54166,23 +54165,23 @@ msgid ""
 "and only one of these somewhere in your scene. This node maps the center of "
 "your real world tracking space to a location in your virtual world. "
 "Everything else is positionally tracked in relation to this point. Where "
-"this point lies exactly differs from one implementation to another but the "
+"this point lies exactly differs from one implementation to another, but the "
 "best example to understand how this node works is to take a look at a room "
 "scale location. While we have functions to adjust the point to center it on "
-"the player by default the origin point will be the center location of the "
-"room you are in. As you physically walk around the room the location of the "
+"the player by default, the origin point will be the center location of the "
+"room you are in. As you physically walk around the room, the location of the "
 "HMD is tracked in relation to this center position and the tracking is "
 "mirror in the virtual world."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:55
 msgid ""
-"To keep things simple, when you physically move around your room the ARVR "
+"To keep things simple, when you physically move around your room, the ARVR "
 "Origin point stays where it is, the position of the camera and controllers "
 "will be adjusted according to your movements. When you move through the "
 "virtual world, either through controller input or when you implement a "
-"teleport system it is the origin point which you will have to adjust the "
-"position of."
+"teleport system, it is the position of the origin point which you will have "
+"to adjust."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:58
@@ -54192,30 +54191,31 @@ msgid ""
 "It is a subclass of Godot's normal camera. However, its position is "
 "automatically updated each frame based on the physical orientation and "
 "position of the HMD. Also due to the precision required for rendering to an "
-"HMD or rendering an AR overlay over a real world camera most of the standard "
-"camera properties are ignored. The only properties of the camera that are "
-"used are the near and far plane settings. The FOV, aspect ratio and "
+"HMD or rendering an AR overlay over a real world camera, most of the "
+"standard camera properties are ignored. The only properties of the camera "
+"that are used are the near and far plane settings. The FOV, aspect ratio and "
 "projection mode are all ignored."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:60
 msgid ""
-"Note that for our native mobile VR implementation there is no positional "
-"tracking, only the orientation of the phone and by extension the HMD is "
+"Note that, for our native mobile VR implementation, there is no positional "
+"tracking, only the orientation of the phone and by extension, the HMD is "
 "tracked. This implementation artificially places the camera at a height (Y) "
 "of 1.85."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:62
+#, fuzzy
 msgid ""
-"Conclusion, your minimum setup in your scene to make AR or VR work should "
+"Conclusion: your minimum setup in your scene to make AR or VR work should "
 "look like this:"
-msgstr ""
+msgstr "다 되셨다면, 당신의 ``Player`` 씬은 이렇게 되어야 합니다:"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:66
 msgid ""
-"And that's all you need to get started. Obviously you need to add something "
-"more into your scene so there is something to see but after that you can "
+"And that's all you need to get started. Obviously, you need to add something "
+"more into your scene, so there is something to see, but after that, you can "
 "export the game to your phone of choice, pop it into a viewer and away you "
 "go."
 msgstr ""
@@ -54232,27 +54232,27 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:73
 msgid ""
-"The first are our units. In normal 3D games you don't have to think a lot "
-"about units. As long as everything is at the same scale a box sized 1 unit "
+"The first are our units. In normal 3D games, you don't have to think a lot "
+"about units. As long as everything is at the same scale, a box sized 1 unit "
 "by 1 unit by 1 unit can be any size from a cube you can hold in your hand to "
-"something the size of a building. In AR and VR this changes because things "
+"something the size of a building. In AR and VR, this changes because things "
 "in your virtual world are mapped to things in the real world. If you step 1 "
 "meter forward in the real world, but you only move 1 cm forward in your "
 "virtual world, you have a problem. The same with the position of your "
-"controllers, if they don't appear in the right relative space it breaks the "
-"immersion for the player. Most VR platforms including our AR/VR Server "
-"assumes that 1 unit = 1 meter. The AR/VR server however has a property that "
-"for convenience is also exposed on the ARVROrigin node called world scale. "
-"For instance setting this to a value of 10 it changes our coordinate system "
-"so 10 units = 1 meter."
+"controllers; if they don't appear in the right relative space, it breaks the "
+"immersion for the player. Most VR platforms, including our AR/VR Server, "
+"assume that 1 unit = 1 meter. The AR/VR server, however, has a property "
+"that, for convenience, is also exposed on the ARVROrigin node called world "
+"scale. For instance, setting this to a value of 10 changes our coordinate "
+"system so 10 units = 1 meter."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:77
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
-"Especially VR taxes your game a lot more then most people realise. For "
-"mobile VR you have to be extra careful here but even for desktop games there "
-"are three factors that make life extra difficult:"
+"Especially VR taxes your game a lot more than most people realise. For "
+"mobile VR, you have to be extra careful here, but even for desktop games, "
+"there are three factors that make life extra difficult:"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:79
@@ -54265,11 +54265,11 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:80
 msgid ""
-"A normal game will run acceptable on 30fps and ideally manages 60fps. That "
+"A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
-"hardware. For any HMD application of AR or VR however 60fps is the absolute "
-"minimum and you should target your games to run at a stable 90fps to ensure "
-"your users don't get motion sickness right off the bat."
+"hardware. For any HMD application of AR or VR, however, 60fps is the "
+"absolute minimum and you should target your games to run at a stable 90fps "
+"to ensure your users don't get motion sickness right off the bat."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_primer.rst:81
@@ -54283,8 +54283,8 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_primer.rst:83
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
-"a fair amount higher. While things are in the pipeline to improve this such "
-"as MultiView and foveated rendering these aren't supported on all devices. "
+"a fair amount higher. While things are in the pipeline to improve this, such "
+"as MultiView and foveated rendering, these aren't supported on all devices. "
 "This is why you see many VR games using a more art style and if you pay "
 "close attention to those VR games that go for realism, you'll probably "
 "notice they're a bit more conservative on the effects or use some good old "
@@ -54319,7 +54319,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:18
 msgid ""
 "In your 3D model program, see if there is a way to measure and use real "
-"world distances. In Blender you can use the MeasureIt add-on, in Maya you "
+"world distances. In Blender, you can use the MeasureIt add-on; in Maya, you "
 "can use the Measure Tool."
 msgstr ""
 
@@ -54353,15 +54353,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
+#, fuzzy
 msgid ""
-"How to make a :ref:`RigidBody <class_RigidBody>` based pick up and drop "
+"How to make a :ref:`RigidBody <class_RigidBody>`-based pick up and drop "
 "system."
 msgstr ""
 ":ref:`RigidBody2D <class_RigidBody2D>` 기반으로 잡아서 놓는 시스템을 만드는 "
 "방법."
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:28
-msgid "How to make various items that can be used in VR"
+msgid "How to make various items that can be used in VR."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:30
@@ -54374,17 +54375,17 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:35
 msgid ""
-"This tutorial assumes you know have experience working with the Godot "
-"editor, have basic programming experience in GDScript, and have basic 3D "
-"game development experience."
+"This tutorial assumes you know how to and have experience working with the "
+"Godot editor, have basic programming experience in GDScript, and have basic "
+"3D game development experience."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:38
 msgid ""
-"Also, it is assumed you have both a OpenVR-ready headset and two OpenVR-"
+"Also, it is assumed you have both an OpenVR-ready headset and two OpenVR-"
 "ready controllers! This tutorial was written using a Windows Mixed Reality "
 "headset on Windows 10, so the tutorial is written to work on that headset. "
-"You may need to adjust the code to work with other VR headsets such as the "
+"You may need to adjust the code to work with other VR headsets, such as the "
 "Oculus Rift or HTC Vive."
 msgstr ""
 
@@ -54442,8 +54443,9 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:65
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
-"in this tutorial, they will make the tutorial much easier to follow as there "
-"are several premade scenes we will be using throughout the tutorial series."
+"in this tutorial, they will make the tutorial much easier to follow, as "
+"there are several premade scenes we will be using throughout the tutorial "
+"series."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:69
@@ -54466,7 +54468,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:76
 msgid ""
-"The other thing to notice before we jump into writing the code is how the :"
+"The other thing to notice, before we jump into writing the code, is how the :"
 "ref:`ARVROrigin <class_ARVROrigin>` node works. How it works is kind of hard "
 "to explain, especially if you have never used VR before, but here is the "
 "gist of it: The :ref:`ARVROrigin <class_ARVROrigin>` node is the center "
@@ -54499,7 +54501,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:88
 msgid ""
 "Another thing to notice here is how we have everything set up under the :ref:"
-"`ARVROrigin <class_ARVROrigin>` node. The player camera is a :ref:"
+"`ARVROrigin <class_ARVROrigin>` node. The player camera is an :ref:"
 "`ARVRCamera <class_ARVRCamera>` that represents the player's head in the "
 "game. The :ref:`ARVRCamera <class_ARVRCamera>` will be offset by the "
 "player's height, and if there is room tracking, then the camera can move "
@@ -54522,8 +54524,8 @@ msgstr ""
 msgid ""
 "The final thing to note is that there are two :ref:`ARVRController "
 "<class_ARVRController>` nodes, and these will represent the left and right "
-"controllers in 3D space. A :ref:`ARVRController <class_ARVRController>` with "
-"an ID of 1 is the left hand, while a :ref:`ARVRController "
+"controllers in 3D space. An :ref:`ARVRController <class_ARVRController>` "
+"with an ID of 1 is the left hand, while an :ref:`ARVRController "
 "<class_ARVRController>` with an ID of 2 is the right hand."
 msgstr ""
 
@@ -54533,7 +54535,7 @@ msgstr "VR 시작하기"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:102
 msgid ""
-"First, let's get the VR up and going! While ``Game.tscn`` is open, select "
+"Firstly, let's get the VR up and going! While ``Game.tscn`` is open, select "
 "the ``Game`` node and make a new script called ``Game.gd``. Add the "
 "following code:"
 msgstr ""
@@ -54553,25 +54555,25 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:125
 msgid ""
-"First, we find a VR interface from the ARVR server. We do this because by "
-"default Godot does not include any VR interfaces, but rather exposes a API "
+"Firstly, we find a VR interface from the ARVR server. We do this because by "
+"default Godot does not include any VR interfaces, but rather exposes an API "
 "so anyone can make AR/VR interfaces with GDNative/C++. Next, we check to see "
-"if a OpenVR interface was found, and then we initialize it."
+"if an OpenVR interface was found, and then we initialize it."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:128
 msgid ""
 "Assuming nothing went wrong with initializing, we then turn the main :ref:"
-"`Viewport <class_Viewport>` into a AR/VR viewport, by setting ``arvr`` to "
+"`Viewport <class_Viewport>` into an AR/VR viewport, by setting ``arvr`` to "
 "``true``. We also set HDR to ``false``, since you cannot use HDR in OpenVR."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:131
 msgid ""
-"Then we disable V-Sync and set the target FPS to 90 frames per second. Most "
-"VR headsets run at 90 Hz, and since the game will both display on the VR "
-"headset and on the computer's monitor, we want to disable V-Sync and set the "
-"target FPS manually so the computer's monitor does not drag the VR display "
+"Then, we disable V-Sync and set the target FPS to 90 frames per second. Most "
+"VR headsets run at 90 Hz, and since the game will display on both the VR "
+"headset and the computer's monitor, we want to disable V-Sync and set the "
+"target FPS manually, so the computer's monitor does not drag the VR display "
 "down to 60 FPS."
 msgstr ""
 
@@ -54597,7 +54599,7 @@ msgstr "컨트롤러를 코딩하기"
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:145
 msgid ""
 "While perhaps interesting if we were making a VR film, we really want to do "
-"more than stand around and look. Currently we cannot move outside of the "
+"more than stand around and look. Currently, we cannot move outside of the "
 "room tracking boundaries (assuming your VR headset has room tracking) and we "
 "cannot interact with anything! Let's change that!"
 msgstr ""
@@ -54613,15 +54615,15 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:151
 msgid ""
 "Open either ``Left_Controller.tscn`` or ``Right_Controller.tscn``. Feel free "
-"to look at how the scene is set up; there is only a couple things of note to "
-"point out."
+"to look at how the scene is set up; there are only a couple things of note "
+"to point out."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:153
 msgid ""
-"First, notice how there is a couple :ref:`Raycast <class_Raycast>` nodes. We "
-"will be using one :ref:`Raycast <class_Raycast>` to teleport around the game "
-"world (``Raycast``) and we will use the other for picking up objects "
+"Firstly, notice how there are a couple :ref:`Raycast <class_Raycast>` nodes. "
+"We will be using one :ref:`Raycast <class_Raycast>` to teleport around the "
+"game world (``Raycast``) and we will use the other for picking up objects "
 "(``GrabCast``) if the player is using :ref:`Raycast <class_Raycast>` nodes "
 "to pick up objects."
 msgstr ""
@@ -54701,12 +54703,12 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:426
 msgid ""
-"``teleport_pos``: The position the teleport :ref:`Raycast <class_Raycast>` "
-"is aimed at."
+"``teleport_pos``: The position at which the teleport :ref:`Raycast "
+"<class_Raycast>` is aimed."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:427
-msgid "``teleport_mesh``: The meshed used to represent the teleport position."
+msgid "``teleport_mesh``: The mesh used to represent the teleport position."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:428
@@ -54745,8 +54747,8 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:438
 msgid ""
-"First we get the teleport :ref:`Raycast <class_Raycast>` node and assign it "
-"to ``teleport_raycast``."
+"Firstly, we get the teleport :ref:`Raycast <class_Raycast>` node and assign "
+"it to ``teleport_raycast``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:440
@@ -54780,7 +54782,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:454
 msgid ""
-"First, we check to see if the teleportation button is down or not. If the "
+"Firstly, we check to see if the teleportation button is down or not. If the "
 "teleportation button is down, we then force the teleportation :ref:`Raycast "
 "<class_Raycast>` to update, which will give us frame perfect collision "
 "detection. We then check to see if the :ref:`Raycast <class_Raycast>` is "
@@ -54791,7 +54793,7 @@ msgstr ""
 msgid ""
 "Next, we check to see if the collision body the :ref:`Raycast "
 "<class_Raycast>` is colliding with is a :ref:`StaticBody "
-"<class_StaticBody>`. We do this to ensures the player can only teleport on :"
+"<class_StaticBody>`. We do this to ensure the player can only teleport on :"
 "ref:`StaticBody <class_StaticBody>` nodes. We then check to see if the ``Y`` "
 "value returned by the :ref:`Raycast <class_Raycast>`'s "
 "``get_collision_normal`` function is more than ``0.85``, which is mostly "
@@ -54812,7 +54814,7 @@ msgid ""
 "<class_ARVRController>` is active or not. If the :ref:`ARVRController "
 "<class_ARVRController>` is active, then that means there is a controller and "
 "it is being tracked. If the controller is active, we then reset "
-"``controller_velocity`` to a empty :ref:`Vector3 <class_Vector3>`."
+"``controller_velocity`` to an empty :ref:`Vector3 <class_Vector3>`."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:467
@@ -54826,9 +54828,9 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:470
 msgid ""
-"Next we calculate the velocity from the position the controller currently "
-"is, from the position the controller was at. We can use this difference in "
-"position to help track the controller's velocity."
+"Next, we calculate the velocity from the position where the controller is "
+"currently, from the position the controller was at. We can use this "
+"difference in position to help track the controller's velocity."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:473
@@ -54842,28 +54844,28 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:476
 msgid ""
 "The way we are calculating velocity is not perfect by any means, since it "
-"relies on a consistent amount of frames per second. Ideally we would be able "
-"to find the velocity directly from the VR controller but currently in OpenVR "
-"there is not way to access the controller's velocity. We can get pretty "
-"close to the real velocity by comparing positions between frames though, and "
-"this will work just fine for this project."
+"relies on a consistent amount of frames per second. Ideally, we would be "
+"able to find the velocity directly from the VR controller, but currently in "
+"OpenVR, there is no way to access the controller's velocity. We can get "
+"pretty close to the real velocity by comparing positions between frames "
+"though, and this will work just fine for this project."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:480
 msgid ""
-"Then we check to see if we have more than 30 stored velocities (more than a "
+"Then, we check to see if we have more than 30 stored velocities (more than a "
 "third of a second). If there are more than 30, we remove the oldest velocity "
 "from ``prior_controller_velocities``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:484
 msgid ""
-"Next we check to see if there is a held object. If there is, we update the "
-"position and rotation of the held object to the position and rotation of "
+"Next, we check to see whether there is a held object. If there is, we update "
+"the position and rotation of the held object to the position and rotation of "
 "``grab_pos_node``. Because of how scale works, we need to temporarily store "
-"the scale and then reset the scale once we have updated the transform, "
-"otherwise the scale will always be the same as the controller, which will "
-"break the immersion if the player grabs a scaled object."
+"the scale and then reset the scale once we have updated the transform; "
+"otherwise, the scale would always be the same as the controller, which would "
+"ruin immersion if the player grabbed a scaled object."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:489
@@ -54874,8 +54876,8 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:491
 msgid ""
-"First, we convert the axis values into :ref:`Vector2 <class_Vector2>` "
-"variables so we can process them. We invert the X axis so moving the "
+"Firstly, we convert the axis values into :ref:`Vector2 <class_Vector2>` "
+"variables, so we can process them. We invert the X axis, so moving the "
 "trackpad/joystick left will move the player left."
 msgstr ""
 
@@ -54887,7 +54889,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:496
 msgid ""
-"Next we account for dead zones on both the trackpad and the joystick. The "
+"Next, we account for dead zones on both the trackpad and the joystick. The "
 "code for doing this is adapted from the link below, and I would highly "
 "recommend looking at it."
 msgstr ""
@@ -54917,7 +54919,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:506
 msgid ""
-"Then we calculate how much the player will be moving by adding both the "
+"Then, we calculate how much the player will be moving by adding both the "
 "trackpad and the joystick vectors together and normalizing them."
 msgstr ""
 
@@ -54949,61 +54951,62 @@ msgstr ""
 msgid ""
 "If the button pressed is button 15, which for the Windows Mixed Reality "
 "controllers is the trigger button, we will interact with the held object "
-"assuming the controller is holding one, and if the player is not holding a "
+"assuming the controller is holding one, and if the player is not holding an "
 "object, we will try to start teleporting."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:521
 msgid ""
-"If the controller is holding a object, and the held object has a method/"
+"If the controller is holding an object, and the held object has a method/"
 "function called ``interact``, we call the ``interact`` function on the held "
 "object."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:524
 msgid ""
-"If the controller is not holding a object, we then check to make sure the "
-"teleportation mesh is not visible. This check ensure the player cannot "
-"teleport cannot teleport with both hands/controllers at the same time. If "
-"the teleportation mesh is not visible, we set ``teleport_button_down`` to "
-"``true``, make ``teleport_mesh`` visible, and make the teleportation raycast "
-"visible. This makes it where the teleportation mesh will follow the :ref:"
-"`Raycast <class_Raycast>` coming from the pointer finger of the hand."
+"If the controller is not holding an object, we then check to make sure the "
+"teleportation mesh is not visible. This check ensures the player cannot "
+"teleport with both hands/controllers at the same time. If the teleportation "
+"mesh is not visible, we set ``teleport_button_down`` to ``true``, make "
+"``teleport_mesh`` visible, and make the teleportation raycast visible. This "
+"makes it where the teleportation mesh will follow the :ref:`Raycast "
+"<class_Raycast>` coming from the pointer finger of the hand."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:529
 msgid ""
-"If the button pressed is button 2, which for the Windows Mixed Reality "
-"controllers is the grab/grip button, we will grab/throw a object."
+"If the button pressed is button 2, which, for the Windows Mixed Reality "
+"controllers, is the grab/grip button, we will grab/throw an object."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:531
 msgid ""
-"First, we make sure the player is not trying to teleport, as we do not want "
-"the player to be able to grab something while in the middle of trying to "
-"teleport."
+"Firstly, we make sure the player is not trying to teleport, as we do not "
+"want the player to be able to grab something while in the middle of trying "
+"to teleport."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:533
 msgid ""
-"Then we check to see if the controller is already holding a object or not."
+"Then, we check to see whether the controller is already holding a object or "
+"not."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:535
 msgid ""
-"If the controller is not holding a object, we check to see which grab mode "
+"If the controller is not holding an object, we check to see which grab mode "
 "the player is using."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:537
 msgid ""
-"If the player is using the ``AREA`` grab mode, we then get all of the bodies "
-"overlapping the grab :ref:`Area <class_Area>`. We go through all of the "
-"bodies in the grab :ref:`Area <class_Area>` and see if there is a :ref:"
-"`RigidBody <class_RigidBody>`. We also check to make sure any :ref:"
-"`RigidBody <class_RigidBody>` nodes in the :ref:`Area <class_Area>` do not "
-"have a variable called ``NO_PICKUP``, since we do not want to be able to "
-"pick up nodes with that variable."
+"If the player is using the ``AREA`` grab mode, we then get all the bodies "
+"overlapping the grab :ref:`Area <class_Area>`. We go through all the bodies "
+"in the grab :ref:`Area <class_Area>` and see if there is a :ref:`RigidBody "
+"<class_RigidBody>`. We also check to make sure any :ref:`RigidBody "
+"<class_RigidBody>` nodes in the :ref:`Area <class_Area>` do not have a "
+"variable called ``NO_PICKUP``, since we do not want to be able to pick up "
+"nodes with that variable."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:541
@@ -55016,14 +55019,14 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:544
 msgid ""
 "If the player is using the ``RAYCAST`` grab mode, we first force the :ref:"
-"`Raycast <class_Raycast>` to update. We then check to see if the :ref:"
+"`Raycast <class_Raycast>` to update. We then check to see whether the :ref:"
 "`Raycast <class_Raycast>` is colliding with something."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:547
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we then "
-"check to see if what is colliding with is a :ref:`RigidBody "
+"check to see if what it is colliding with is a :ref:`RigidBody "
 "<class_RigidBody>`, and that it does not have a variable called "
 "``NO_PICKUP``. If the :ref:`Raycast <class_Raycast>` is colliding with a :"
 "ref:`RigidBody <class_RigidBody>`, and it does not have a variable called "
@@ -55036,9 +55039,9 @@ msgid ""
 "<class_RigidBody>` in the grab :ref:`Area <class_Area>`, we assign "
 "``held_object`` to it. Then we store the now held :ref:`RigidBody "
 "<class_RigidBody>`'s information in ``held_object_data``. We are storing "
-"the :ref:`RigidBody <class_RigidBody>` mode, layer, and mask so later when "
-"we drop it, we can reset all of those variables back to what they were "
-"before we picked up the :ref:`RigidBody <class_RigidBody>`."
+"the :ref:`RigidBody <class_RigidBody>` mode, layer, and mask so later, when "
+"we drop it, we can reset all those variables back to what they were before "
+"we picked up the :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:555
@@ -55065,27 +55068,27 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:564
 msgid ""
-"If the controller is not holding a object, and the button pressed is 2, we "
+"If the controller is not holding an object, and the button pressed is 2, we "
 "want to drop/throw the held object."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:566
 msgid ""
-"First, we set the held :ref:`RigidBody <class_RigidBody>`'s mode, layer, and "
-"mask back to what they were when we picked the object up. We then apply a "
-"impulse to the held object, using the controller's velocity as the force."
+"Firstly, we set the held :ref:`RigidBody <class_RigidBody>`'s mode, layer, "
+"and mask back to what they were when we picked the object up. We then apply "
+"an impulse to the held object, using the controller's velocity as the force."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:569
 msgid ""
 "If the previously held :ref:`RigidBody <class_RigidBody>` has a function "
 "called ``dropped``, we call it. If the :ref:`RigidBody <class_RigidBody>` "
-"has a variable called ``controller`` we set it to ``null``."
+"has a variable called ``controller``, we set it to ``null``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:572
 msgid ""
-"Then we set ``held_object`` to ``null``, since we are no longer holding any "
+"Then, we set ``held_object`` to ``null``, since we are no longer holding any "
 "objects, and we make the hand mesh visible again."
 msgstr ""
 
@@ -55098,7 +55101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:576
 msgid ""
-"Finally, regardless of whether we are grabbing a object or releasing it, we "
+"Finally, regardless of whether we are grabbing an object or releasing it, we "
 "play the sound loaded into ``AudioStreamPlayer3D``, which is a pick-up/drop "
 "noise."
 msgstr ""
@@ -55106,8 +55109,8 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:578
 msgid ""
 "The last thing we are doing in ``button_pressed`` is checking to see if the "
-"button pressed is 1, which for the Windows Mixed Reality controllers is the "
-"menu button."
+"button pressed is 1, which, for the Windows Mixed Reality controllers, is "
+"the menu button."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:580
@@ -55129,9 +55132,10 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:588
 msgid ""
-"First, we check to see if ``teleport_button_down`` is ``true``. If it is, "
-"that means the player is intending to teleport, while if it is ``false``, "
-"the player has simply released the trigger while holding a object."
+"Firstly, we check to see whether ``teleport_button_down`` is ``true``. If it "
+"is, that means the player is intending to teleport, while if it is "
+"``false``, the player has simply released the trigger while holding an "
+"object."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:591
@@ -55152,10 +55156,10 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:596
 msgid ""
 "Because we want to teleport the player in their current position to the "
-"teleport position, and remember because of room-scale tracking their current "
-"position can be offset from the origin, we have to figure out that offset so "
-"when we teleport we can remove it so that player's current position is "
-"teleported to the teleport position."
+"teleport position, and remember, because of room-scale tracking, their "
+"current position can be offset from the origin, we have to figure out that "
+"offset so when we teleport, we can remove it so that player's current "
+"position is teleported to the teleport position."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:599
@@ -55166,13 +55170,13 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:601
 msgid ""
-"Then we teleport the :ref:`ARVROrigin <class_ARVROrigin>` to the teleport "
+"Then, we teleport the :ref:`ARVROrigin <class_ARVROrigin>` to the teleport "
 "position, applying the camera offset."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:603
 msgid ""
-"Regardless of whether we teleported or not, we reset all of the teleport-"
+"Regardless of whether we teleported or not, we reset all the teleport-"
 "related variables so the controller has to get new ones before teleporting "
 "again."
 msgstr ""
@@ -55184,16 +55188,16 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:609
 msgid ""
-"When a body enters or exists the sleep area, we check if it has a variable "
-"called ``can_sleep``. If it does, we then set it to ``false`` and wake the "
-"body if it has entered the sleep area, while if it has exited we set it to "
-"``true`` so the :ref:`RigidBody <class_RigidBody>` nodes can sleep (which "
-"can decrease CPU usage)."
+"When a body enters or exists the sleep area, we check whether it has a "
+"variable called ``can_sleep``. If it does, we then set it to ``false`` and "
+"wake the body if it has entered the sleep area, while if it has exited, we "
+"set it to ``true`` so the :ref:`RigidBody <class_RigidBody>` nodes can sleep "
+"(which can decrease CPU usage)."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:614
 msgid ""
-"Okay, phew! That was a lot of code! Add the same script, ``VR_Controller."
+"Okay, whew! That was a lot of code! Add the same script, ``VR_Controller."
 "gd`` to the other controller so both controllers have the same script."
 msgstr ""
 
@@ -55271,7 +55275,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:678
 msgid ""
-"Then we get the left and right controllers, assigning them to "
+"Then, we get the left and right controllers, assigning them to "
 "``controller_one`` and ``controller_two``."
 msgstr ""
 
@@ -55306,9 +55310,8 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:694
 msgid ""
-"First, let's start by making some targets we will destroy in various "
-"different ways with various different special :ref:`RigidBody "
-"<class_RigidBody>` nodes."
+"Firstly, let's start by making some targets we will destroy in various ways "
+"with various special :ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:696
@@ -55330,7 +55333,8 @@ msgid "Let's go over how this script works, starting with the class variables."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:748
-msgid "``destroyed``: A variable to track if this target is destroyed or not."
+msgid ""
+"``destroyed``: A variable to track whether this target is destroyed or not."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:749
@@ -55373,9 +55377,9 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:765
 msgid ""
-"First, we add time to ``destroyed_timer``. Then we check to see if enough "
-"time has passed and we can destroy the target. If enough time has passed, we "
-"free/destroy the target using ``queue_free``."
+"Firstly, we add time to ``destroyed_timer``. Then we check to see whether "
+"enough time has passed and we can destroy the target. If enough time has "
+"passed, we free/destroy the target using ``queue_free``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:770
@@ -55383,7 +55387,8 @@ msgid "Finally, let's go over ``damage``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:772
-msgid "First, we check to make sure the target has not already been destroyed."
+msgid ""
+"Firstly, we check to make sure the target has not already been destroyed."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:774
@@ -55400,14 +55405,14 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:778
 msgid ""
-"First, we disable the collision shape and make the whole target mesh "
+"Firstly, we disable the collision shape and make the whole target mesh "
 "invisible. Next, we spawn/instance the :ref:`RigidBody <class_RigidBody>` "
 "version of the target, and instance it at this target's position."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:781
 msgid ""
-"Then we set ``destroyed`` to ``true`` and start processing "
+"Then, we set ``destroyed`` to ``true`` and start processing "
 "``_physics_process``. Finally, we play a sound, and remove a sphere from "
 "``Game.gd`` by calling ``remove_sphere``."
 msgstr ""
@@ -55419,8 +55424,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:788
+#, fuzzy
 msgid ""
-"First, open up ``Game.gd`` and add the following additional class variables:"
+"Firstly, open up ``Game.gd`` and add the following additional class "
+"variables:"
 msgstr "먼저 ``Game.gd`` 를 열고 다음의 멤버 변수를 추가해주세요:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:795
@@ -55438,14 +55445,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:808
-msgid "What this function does is it removes one from ``spheres_left``."
+msgid "What this function does is it subtracts one from ``spheres_left``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:810
 msgid ""
-"Then it checks to see if ``sphere_ui`` is not null, and if it is not, then "
-"it calls its ``update_ui`` function, passing in the amount of sphere's left. "
-"We'll add the UI code later in this part."
+"Then, it checks to see whether ``sphere_ui`` is not null, and if it is not, "
+"then it calls its ``update_ui`` function, passing in the amount of spheres "
+"left. We'll add the UI code later in this part."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:813
@@ -55464,11 +55471,11 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:820
 msgid ""
-"There is a few things to note here. The first thing to note is how "
+"There are a few things to note here. The first thing to note is how "
 "everything is rotated. This is to make the pistol rotate correctly when the "
 "player grabs it. The other thing to notice is how there is a laser sight "
-"mesh, and a flash mesh, both of these do what you'd expect: act as a laser "
-"pointer and act as a muzzle flash respectively."
+"mesh, and a flash mesh; both of these do what you'd expect: act as a laser "
+"pointer and muzzle flash, respectively."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:823
@@ -55523,33 +55530,33 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:912
 msgid ""
-"First, we check to see if the flash is visible. We do this by checking to "
+"Firstly, we check to see if the flash is visible. We do this by checking to "
 "see if ``flash_timer`` is more than zero. This is because ``flash_timer`` "
-"will be a inverted timer, a timer that counts down instead of counting up."
+"will be an inverted timer, a timer that counts down instead of counting up."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:915
 msgid ""
-"If ``flash_timer`` is more than zero, we remove ``delta`` from it and check "
-"to see if it is equal to zero or less. If it is, we make the flash mesh "
-"invisible."
+"If ``flash_timer`` is more than zero, we subtract ``delta`` from it and "
+"check to see whether it is equal to zero or less. If it is, we make the "
+"flash mesh invisible."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:918
 msgid ""
 "This makes it where the flash mesh becomes invisible after ``FLASH_TIME`` "
-"many seconds has gone by."
+"many seconds have gone by."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:922
 msgid ""
-"Now let's look at ``interact``, which is called when the trigger button on "
+"Now, let's look at ``interact``, which is called when the trigger button on "
 "the VR controller is pressed and the pistol is being held."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:924
 msgid ""
-"First, we check to see if the flash timer is less than or equal to zero. "
+"Firstly, we check to see if the flash timer is less than or equal to zero. "
 "This check makes it where we cannot fire when the flash is visible, limiting "
 "how often the pistol can fire."
 msgstr ""
@@ -55570,7 +55577,7 @@ msgstr ""
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we get "
 "the collider. We check to see if the collider has the ``damage`` function, "
-"and if it does we call it. If it does not, we then check to see if the "
+"and if it does, we call it. If it does not, we then check to see if the "
 "collider has the ``apply_impulse`` function, and if it does, we call it "
 "after calculating the direction from the :ref:`Raycast <class_Raycast>` to "
 "the collider."
@@ -55585,7 +55592,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:939
 msgid ""
 "Finally, let's look at ``picked_up`` and ``dropped``, which are called when "
-"the pistol is picked up and dropped respectively."
+"the pistol is picked up and dropped, respectively."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:941
@@ -55651,13 +55658,13 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1025
 msgid ""
 "The only other change, besides there being nothing in ``picked_up`` and "
-"``dropped`` is in ``interact``."
+"``dropped``, is in ``interact``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1027
 msgid ""
 "Now we go through each :ref:`Raycast <class_Raycast>` in ``raycasts``. We "
-"then rotate it on the X and Z axis, making within a 10 to ``-10`` cone. From "
+"then rotate it on the X and Z axes, making within a 10 to ``-10`` cone. From "
 "there, we process each :ref:`Raycast <class_Raycast>` like we did the "
 "single :ref:`Raycast <class_Raycast>` in the pistol, nothing changed at all, "
 "we are just doing it five times, once for each :ref:`Raycast "
@@ -55701,7 +55708,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1048
 msgid ""
-"The only thing to notice his how long the explosion :ref:`Particles "
+"The only thing to notice is how long the explosion :ref:`Particles "
 "<class_Particles>` node will last, their lifetime, which is 0.75 seconds. We "
 "need to know this so we can time the removal of the bomb with the end of the "
 "explosion :ref:`Particles <class_Particles>`."
@@ -55726,7 +55733,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1145
-msgid "``FUSE_TIME``: The length of time the fuse burns for."
+msgid "``FUSE_TIME``: The length of time for which the fuse burns."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1146
@@ -55784,7 +55791,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1160
 msgid ""
-"First, we get all of the nodes and assign them to the proper variables for "
+"Firstly, we get all the nodes and assign them to the proper variables for "
 "later use."
 msgstr ""
 
@@ -55802,15 +55809,15 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1169
 msgid ""
-"First we check to see if ``fuse_timer`` is less than ``FUSE_TIME``. If "
-"``fuse_timer`` is less than ``FUSE_TIME``, then the bomb must be burning "
+"Firstly we check to see whether ``fuse_timer`` is less than ``FUSE_TIME``. "
+"If ``fuse_timer`` is less than ``FUSE_TIME``, then the bomb must be burning "
 "down the fuse."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1171
 msgid ""
-"We then add time to ``fuse_timer``, and check to see if the bomb has waited "
-"long enough and has burned through the entire fuse."
+"We then add time to ``fuse_timer``, and check to see whether the bomb has "
+"waited long enough and has burned through the entire fuse."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1173
@@ -55831,17 +55838,18 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1179
 msgid ""
-"Then we go through everything inside the explosion :ref:`Area <class_Area>`. "
-"We make sure the bodies inside the explosion :ref:`Area <class_Area>` are "
-"not the bomb itself, since we do not want to explode the bomb with itself. "
-"We then check to see if the bodies have the ``damage`` method/function, and "
-"if it does we call that, while if it does not we check to see if it has the "
-"``apply_impulse`` method/function, and call that instead."
+"Then, we go through everything inside the explosion :ref:`Area "
+"<class_Area>`. We make sure the bodies inside the explosion :ref:`Area "
+"<class_Area>` are not the bomb itself, since we do not want to explode the "
+"bomb with itself. We then check to see whether the bodies have the "
+"``damage`` method/function, and if it does, we call that, while if it does "
+"not, we check to see if it has the ``apply_impulse`` method/function, and "
+"call that instead."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1183
 msgid ""
-"Then we set ``explode`` to true since the bomb has exploded, and we play a "
+"Then, we set ``explode`` to true since the bomb has exploded, and we play a "
 "sound."
 msgstr ""
 
@@ -55879,7 +55887,7 @@ msgid ""
 "building. Because of how we are calculating velocity, it is easiest to throw "
 "bombs in a trusting-like motion as opposed to a more natural throwing like "
 "motion. The smooth curve of a throwing-like motion is harder to track, and "
-"the because of how we are tracking velocity it does not always work."
+"the because of how we are tracking velocity, it does not always work."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1205
@@ -55905,7 +55913,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1214
 msgid ""
-"If you know how to find the point where a :ref:`Area <class_Area>` and a :"
+"If you know how to find the point where an :ref:`Area <class_Area>` and a :"
 "ref:`CollisionObject <class_CollisionObject>` meet, please let me know and/"
 "or make a PR on the Godot documentation! This method of using several small :"
 "ref:`Area <class_Area>` nodes works okay, but it is not ideal."
@@ -55931,7 +55939,7 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1284
 msgid ""
 "``controller``: The controller that is holding the sword, if there is one. "
-"This is set by the controller, so we do not need to set it here in ``Sword."
+"This is set by the controller, so we do not need to set it here, in ``Sword."
 "gd``."
 msgstr ""
 
@@ -55943,8 +55951,8 @@ msgstr ""
 msgid ""
 "All we are doing here is connecting each of the :ref:`Area <class_Area>` "
 "nodes ``body_entered`` signal to the ``body_entered_sword`` function, "
-"passing in a additional argument which will be the number of the damage :ref:"
-"`Area <class_Area>`, so we can figure out where on the sword the body "
+"passing in an additional argument, which will be the number of the damage :"
+"ref:`Area <class_Area>`, so we can figure out where on the sword the body "
 "collided."
 msgstr ""
 
@@ -55953,7 +55961,8 @@ msgid "Now let's go over ``body_entered_sword``."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1297
-msgid "First, we make sure the body the sword has collided with is not itself."
+msgid ""
+"Firstly, we make sure the body the sword has collided with is not itself."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1299
@@ -55964,16 +55973,16 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1301
 msgid ""
-"Next, we check to see if the body the sword collided with has the ``damage`` "
-"function, and if it does, we call it and play a sound."
+"Next, we check to see whether the body the sword collided with has the "
+"``damage`` function, and if it does, we call it and play a sound."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1303
 msgid ""
-"If it does not have the damage function, we then check to see if it has the "
-"``apply_impulse`` function. If it does, we then calculation the direction "
+"If it does not have the damage function, we then check to see whether it has "
+"the ``apply_impulse`` function. If it does, we then calculate the direction "
 "from the sword part the body collided with to the body. We then check to see "
-"if the sword is being held or not."
+"whether the sword is being held or not."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1306
@@ -56006,7 +56015,7 @@ msgstr ""
 msgid ""
 "Open up ``Game.tscn`` and then expand the ``GUI`` :ref:`MeshInstance "
 "<class_MeshInstance>`. From there, expand the ``GUI`` :ref:`Viewport "
-"<class_Viewport>` node and then select the ``base_control`` node. Add a new "
+"<class_Viewport>` node and then select the ``Base_Control`` node. Add a new "
 "script called ``Base_Control``, and add the following:"
 msgstr ""
 
@@ -56016,7 +56025,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1344
 msgid ""
-"First, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
+"Firstly, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
 "many spheres are left and assign it to the ``sphere_count_label`` class "
 "variable. Next, we get ``Game.gd`` by using ``get_tree().root`` and assign "
 "``sphere_ui`` to this script."
@@ -56026,8 +56035,8 @@ msgstr ""
 msgid ""
 "In ``update_ui``, we change the sphere :ref:`Label <class_Label>`'s text. If "
 "there is at least one sphere remaining, we change the text to show how many "
-"sphere's are still left in the world. If there are no more spheres "
-"remaining, we change the text and congratulate the player."
+"spheres are still left in the world. If there are no more spheres remaining, "
+"we change the text and congratulate the player."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1351
@@ -56053,9 +56062,9 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1396
 msgid ""
-"First, we get the starting global :ref:`Transform <class_Transform>` in "
+"Firstly, we get the starting global :ref:`Transform <class_Transform>` in "
 "``_ready``, and assign it to ``start_transform``. We will use this to reset "
-"the position of the reset box ever so often."
+"the position of the reset box every so often."
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1398
@@ -56081,11 +56090,11 @@ msgstr ""
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1407
 msgid ""
 "With that done, when you grab and interact with the reset box, the entire "
-"scene will reset/restart and you can destroy all of the targets again!"
+"scene will reset/restart and you can destroy all the targets again!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1414
-msgid "Phew! That was a lot of work. Now you have a fairly simple VR project!"
+msgid "Whew! That was a lot of work. Now you have a fairly simple VR project!"
 msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1418
@@ -56096,7 +56105,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1420
 msgid ""
-"This hopefully will serve as a introduction into making fully featured VR "
+"This will hopefully serve as an introduction to making fully-featured VR "
 "games in Godot! The code written here can be expanded to make puzzle games, "
 "action games, story-based games, and more!"
 msgstr ""
@@ -56122,9 +56131,9 @@ msgid ""
 "A plugin is a great way to extend the editor with useful tools. It can be "
 "made entirely with GDScript and standard scenes, without even reloading the "
 "editor. Unlike modules, you don't need to create C++ code nor recompile the "
-"engine. While this makes plugins less powerful, there's still a lot of "
-"things you can do with them. Note that a plugin is similar to any scene you "
-"can already make, except it is created using a script to add functionality."
+"engine. While this makes plugins less powerful, there are still many things "
+"you can do with them. Note that a plugin is similar to any scene you can "
+"already make, except it is created using a script to add functionality."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:16
@@ -56142,7 +56151,7 @@ msgstr ""
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
-"serve as base to develop and test the plugins."
+"serve as a base to develop and test the plugins."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:27
@@ -56264,7 +56273,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:148
 msgid ""
-"When you add the node, you can see that it already have the script you "
+"When you add the node, you can see that it already has the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
 "When you click the button, you can see some text in the console:"
 msgstr ""
@@ -56329,7 +56338,7 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:221
 msgid ""
-"Note that while the dock will initially appear at its specified position, "
+"Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
 msgstr ""
 
@@ -63145,11 +63154,6 @@ msgstr ""
 msgid "It should break at the point!"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:267
-#, fuzzy
-msgid "Visual Studio Code"
-msgstr "비주얼 스튜디오 혹은 VS Code"
-
 #: ../../docs/development/cpp/configuring_an_ide.rst:269
 msgid ""
 "Ensure that C/C++ extension is installed. You can find instructions in `docs "
@@ -68700,6 +68704,118 @@ msgid ""
 "`KidsCanCode: An ongoing tutorial series <http://kidscancode.org/blog/tags/"
 "godot/>`_"
 msgstr ""
+
+#~ msgid ""
+#~ "Don't scale the shape's outline! Only use the size handles (circled in "
+#~ "red) to adjust the shape!"
+#~ msgstr ""
+#~ "모양의 겉 테두리를 조정하지 마세요! 모양을 맞추기 위해 크기 핸들만 (빨간 "
+#~ "동그라미 부분) 사용합니다!"
+
+#~ msgid ""
+#~ "Disabling the area's collision shape means it won't detect collisions. By "
+#~ "turning it off, we make sure we don't trigger the ``hit`` signal more "
+#~ "than once."
+#~ msgstr ""
+#~ "영역의 충돌 모양을 사라지게 하는 것은 충돌을 감지하지 않는다를 의미합니"
+#~ "다. 그것을 끈다면, ``hit`` 시그널을 두 번 이상 울리지 않게 됩니다."
+
+#~ msgid "``Layout``: \"Center Top\""
+#~ msgstr "``레이아웃``: \"Center Top\""
+
+#~ msgid "``Margin``:"
+#~ msgstr "``Margin``:"
+
+#~ msgid "Left: ``-25``"
+#~ msgstr "Left: ``-25``"
+
+#~ msgid "Top: ``0``"
+#~ msgstr "Top: ``0``"
+
+#~ msgid "Right: ``25``"
+#~ msgstr "Right: ``25``"
+
+#~ msgid "Bottom: ``100``"
+#~ msgstr "Bottom: ``100``"
+
+#~ msgid "Left: ``-200``"
+#~ msgstr "Left: ``-200``"
+
+#~ msgid "Top: ``-150``"
+#~ msgstr "Top: ``-150``"
+
+#~ msgid "Right: ``200``"
+#~ msgstr "Right: ``200``"
+
+#~ msgid "Bottom: ``0``"
+#~ msgstr "Bottom: ``0``"
+
+#~ msgid "Left: ``-100``"
+#~ msgstr "Left: ``-100``"
+
+#~ msgid "Right: ``100``"
+#~ msgstr "Right: ``100``"
+
+#~ msgid "Particles"
+#~ msgstr "파티클(Particles)"
+
+#~ msgid ""
+#~ "For one last bit of visual appeal, let's add a trail effect to the "
+#~ "player's movement. Choose your ``Player`` scene and add a :ref:"
+#~ "`Particles2D <class_Particles2D>` node named ``Trail``."
+#~ msgstr ""
+#~ "마지막 시각적 효과를 위해, 플레이어의 움직임에 꼬리를 추가합시다. "
+#~ "``Player`` 씬을 선택하고 :ref:`Particles2D <class_Particles2D>` 노드를 추"
+#~ "가하고 ``Trail`` 이라고 이름지으세요."
+
+#~ msgid ""
+#~ "There are a large number of properties to choose from when configuring "
+#~ "particles. Feel free to experiment and create different effects. For the "
+#~ "effect in this example, use the following settings:"
+#~ msgstr ""
+#~ "파티클을 구성할 땐 많은 고를 수 있는 속성들이 있습니다. 다양한 이펙트들을 "
+#~ "만들고 자유롭게 경험해보세요. 이 예시의 이펙트를 위해서는, 다음의 설정을 "
+#~ "사용하세요:"
+
+#~ msgid ""
+#~ "You also need to create a ``Material`` by clicking on ``<null>`` and then "
+#~ "\"New ParticlesMaterial\". The settings for that are below:"
+#~ msgstr ""
+#~ "당신은 또한 ``<null>`` 에서 \"새 ParticlesMaterial\"을 클릭해서 "
+#~ "``Material`` 을 추가할 수도 있습니다. 이 설정은 다음과 같습니다:"
+
+#~ msgid ""
+#~ "To make the gradient for the \"Color Ramp\" setting, we want a gradient "
+#~ "taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) "
+#~ "to 0.0 (fully transparent)."
+#~ msgstr ""
+#~ "\"Color Ramp\" 설정에 그라디언트를 만들려면, 알파 (투명도)를 0.5 (반투명) "
+#~ "에서 0.0 (완전 투명) 으로 설정하는 그라디언트가 필요합니다."
+
+#~ msgid ""
+#~ "Click \"New GradientTexture\", then under \"Gradient\", click \"New "
+#~ "Gradient\". You'll see a window like this:"
+#~ msgstr ""
+#~ "\"새 GradientTexture\"를 클릭하고, \"Gradient\" 아래에, \"새 Gradient\"를 "
+#~ "클릭하세요. 이렇게 생긴 창이 뜰 것입니다:"
+
+#~ msgid ""
+#~ "The left and right boxes represent the start and end colors. Click on "
+#~ "each and then click the large square on the right to choose the color. "
+#~ "For the first color, set the ``A`` (alpha) value to around halfway. For "
+#~ "the second, set it all the way to ``0``."
+#~ msgstr ""
+#~ "왼쪽과 오른쪽 상자는 시작과 끝 색상을 나타냅니다. 각각을 클릭하고 오른쪽 "
+#~ "넓은 사각형을 클릭해서 색상을 선택합니다. 첫 색상으로, ``A`` (알파) 값을 "
+#~ "거의 절반으로 설정합니다. 두 번째 색상으로 \n"
+#~ " ``0`` 으로 끝까지 설정합니다."
+
+#~ msgid ""
+#~ "See :ref:`Particles2D <class_Particles2D>` for more details on using "
+#~ "particle effects."
+#~ msgstr ""
+#~ "파티클 이펙트를 사용하는 더 많은 정보는 :ref:`Particles2D "
+#~ "<class_Particles2D>` 를 참고하세요."
 
 #~ msgid ""
 #~ "A more flexible alternative to prefabs you might know from Unity (and "

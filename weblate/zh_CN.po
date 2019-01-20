@@ -55,7 +55,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2019-01-14 16:05+0100\n"
+"POT-Creation-Date: 2019-01-20 10:29+0100\n"
 "PO-Revision-Date: 2019-01-20 08:53+0000\n"
 "Last-Translator: Jsheng <yangea@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
@@ -67,20 +67,52 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Weblate 3.4-dev\n"
 
-#: ../../docs/index.rst:7
+#: ../../docs/index.rst:2
 msgid "Godot Docs – *master* branch"
 msgstr "Godot 文档 - *主* 分支"
 
-#: ../../docs/index.rst:9
+#: ../../docs/index.rst:6
 msgid ""
-"This is the documentation for the unstable (master) branch. Looking for the "
-"documentation of the current **stable** branch? `Have a look here <https://"
-"docs.godotengine.org/en/stable>`_."
+"Godot's documentation is available in various languages and versions. Expand "
+"the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
+msgstr ""
+
+#: ../../docs/index.rst:10
+#, fuzzy
+msgid ""
+"This is the documentation for the development (master) branch. Looking for "
+"the documentation of the current **stable** branch? `Have a look here "
+"<https://docs.godotengine.org/en/stable>`_."
 msgstr ""
 "这是不稳定(主)分支的文档。想要看当前 **稳定** 分支的文档? `请查看这里 "
 "<http://docs.godotengine.org/en/stable>`_ 。"
 
-#: ../../docs/index.rst:13
+#: ../../docs/index.rst:16
+#, fuzzy
+msgid ""
+"This documentation is translated from the `original English one <https://"
+"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"hosted.weblate.org/projects/godot-engine/godot-docs>`_."
+msgstr ""
+"您可以帮助我们翻译或校对托管在 `Weblate <https://hosted.weblate.org/engage/"
+"godot-engine/>`_ 上的官方Godot文档。"
+
+#: ../../docs/index.rst:20
+msgid ""
+"Depending on the translation effort's completion level, you may find "
+"paragraphs or whole pages which are still in English. You can help the "
+"community by providing new translations or reviewing existing ones on "
+"Weblate."
+msgstr ""
+
+#: ../../docs/index.rst:25
+msgid ""
+"For the time being, localized translations are only available for the "
+"\"latest\" (development) branch, but should be suitable to learn how to use "
+"stable Godot releases nevertheless."
+msgstr ""
+
+#: ../../docs/index.rst:29
 msgid ""
 "Welcome to the official documentation of Godot Engine, the free and open "
 "source community-driven 2D and 3D game engine! If you are new to this "
@@ -92,7 +124,7 @@ msgstr ""
 "游戏引擎！如果您是第一次看这个文档，我们建议您先阅读 :ref:`简介 "
 "<doc_about_intro>` 以便对本文档所提供的内容有一个大概的了解。"
 
-#: ../../docs/index.rst:18
+#: ../../docs/index.rst:34
 msgid ""
 "The table of contents below and in the sidebar should let you easily access "
 "the documentation for your topic of interest. You can also use the search "
@@ -101,7 +133,7 @@ msgstr ""
 "在内容下面和侧栏中的列表应让您可以轻松访问感兴趣主题的文档。您也可以使用左上"
 "角的搜索功能。"
 
-#: ../../docs/index.rst:22
+#: ../../docs/index.rst:38
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -113,7 +145,7 @@ msgstr ""
 "助改进教程和类型参考。如果您有不明白，或无法在文档中找到您要查找的内容，请告"
 "知我们以帮助我们更好地编写文档！"
 
-#: ../../docs/index.rst:29
+#: ../../docs/index.rst:45
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -128,32 +160,32 @@ msgstr ""
 "``#documentation`` 频道，或 `irc.freenode.net <http://webchat.freenode.net/?"
 "channels=#godotengine-doc>`_ 的 ``#godotengine-doc`` 频道中和我们交流!"
 
-#: ../../docs/index.rst:43
+#: ../../docs/index.rst:59
 msgid ""
 "The main documentation for the site is organized into the following sections:"
 msgstr "该网站的文档主要是按照以下章节形式来组织的:"
 
-#: ../../docs/index.rst:45 ../../docs/community/resources.rst:9
+#: ../../docs/index.rst:61 ../../docs/community/resources.rst:9
 msgid "General"
 msgstr "常规"
 
-#: ../../docs/index.rst:53
+#: ../../docs/index.rst:69
 msgid "Getting started"
 msgstr "入门"
 
-#: ../../docs/index.rst:64 ../../docs/community/tutorials.rst:4
+#: ../../docs/index.rst:80 ../../docs/community/tutorials.rst:4
 msgid "Tutorials"
 msgstr "教程"
 
-#: ../../docs/index.rst:90
+#: ../../docs/index.rst:106
 msgid "Development"
 msgstr "开发"
 
-#: ../../docs/index.rst:99
+#: ../../docs/index.rst:115
 msgid "Creating Content"
 msgstr "创建内容"
 
-#: ../../docs/index.rst:107 ../../docs/community/index.rst:2
+#: ../../docs/index.rst:123 ../../docs/community/index.rst:2
 msgid "Community"
 msgstr "社区"
 
@@ -1229,6 +1261,7 @@ msgstr ""
 "项目目录就可以导入并编辑它了。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:113
 msgid "|image7|"
 msgstr "|image7|"
 
@@ -1237,7 +1270,7 @@ msgid "When the folder path is correct, you'll see a green checkmark."
 msgstr "如果目录路径正确您会看到绿色的对号。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:120
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:121
 msgid "|image8|"
 msgstr "|image8|"
 
@@ -1255,7 +1288,7 @@ msgstr ""
 "以在界面顶部切换当前工作区。点击2D切换到2D工作区。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:141
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:142
 msgid "|image9|"
 msgstr "|image9|"
 
@@ -1264,7 +1297,7 @@ msgid "Now you should see this interface, with empty docks on the right side."
 msgstr "现在您应该能看到这个界面，在右侧有着空面板。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:147
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:148
 msgid "|image10|"
 msgstr "|image10|"
 
@@ -1283,7 +1316,7 @@ msgstr ""
 "在左侧您可以看到 **文件系统面板** ，在这里您可以管理您的项目文件和资源。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:152
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:153
 msgid "|image11|"
 msgstr "|image11|"
 
@@ -1296,7 +1329,7 @@ msgstr ""
 "右下方。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:160
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:161
 msgid "|image12|"
 msgstr "|image12|"
 
@@ -1310,7 +1343,7 @@ msgstr ""
 "的不同而切换。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:91
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:167
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:168
 msgid "|image13|"
 msgstr "|image13|"
 
@@ -1324,6 +1357,7 @@ msgstr ""
 "们默认是折叠状态。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:97
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:115
 msgid "|image14|"
 msgstr "|image14|"
 
@@ -3380,10 +3414,11 @@ msgstr ""
 "`doc_scenes_and_nodes` ，那么赶紧看看，以了解如何设置项目并使用编辑器。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:38
+#, fuzzy
 msgid ""
 "This game will use portrait mode, so we need to adjust the size of the game "
 "window. Click on Project -> Project Settings -> Display -> Window and set "
-"\"Width\" to 480 and \"Height\" to 720."
+"\"Width\" to ``480`` and \"Height\" to ``720``."
 msgstr ""
 "这个游戏会使用竖屏模式，所以我们需要调整游戏窗口的大小。点击项目->项目设置->"
 "显示->窗口，设置“宽度”为480，“高度”为720。"
@@ -3393,13 +3428,14 @@ msgid "Organizing the project"
 msgstr "组织项目"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:45
+#, fuzzy
 msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene. In a larger "
 "project, it might be useful to make folders to hold the various scenes and "
 "their scripts, but for this relatively small game, you can save your scenes "
-"and scripts in the root folder, referred to as ``res://``.  You can see your "
-"project folders in the FileSystem Dock in the upper left corner:"
+"and scripts in the project's root folder, referred to as ``res://``.  You "
+"can see your project folders in the FileSystem Dock in the lower left corner:"
 msgstr ""
 "在这个项目里，我们会做出来3个独立的场景: ``Player`` , ``Mob`` 和 ``HUD`` ,我"
 "们游戏的 ``Main`` 场景由这3个场景组合而成。在更大的项目里，用不同的文件夹容纳"
@@ -3443,7 +3479,7 @@ msgstr ""
 "叠。点击节点将其重命名为 ``Player`` ，它是场景的根节点，我们可以对该游戏角色"
 "节点添加额外的节点来添加其功能。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:74
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:75
 msgid ""
 "Before we add any children to the ``Player`` node, we want to make sure we "
 "don't accidentally move or resize them by clicking on them. Select the node "
@@ -3454,7 +3490,7 @@ msgstr ""
 "小心移动或缩放他们，那就选中该节点然后点击锁头右侧的图标，它的工具提示描述"
 "为“确保物体的子节点不会被选中。”"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:81
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:82
 msgid ""
 "Save the scene. Click Scene -> Save, or press ``Ctrl+S`` on Windows/Linux or "
 "``Command+S`` on Mac."
@@ -3462,11 +3498,11 @@ msgstr ""
 "保存场景，点击场景→保存，或者在Windows/Linux平台上按下 ``Ctrl+S`` 或是Mac上按"
 "下 ``Command+S``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:83
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:84
 msgid "For this project, we will be following the Godot naming conventions."
 msgstr "对于这个项目，我们将遵循Godot命名约定。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:85
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:86
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
@@ -3475,7 +3511,7 @@ msgstr ""
 "命名，变量和函数使用 ``snake_case`` (下划线分隔)命名，常量使用 ``ALL_CAPS`` "
 "(全大写)命名。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:89
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:90
 msgid ""
 "**C#**: Classes, export variables and methods use PascalCase, private fields "
 "use _camelCase, local variables and parameters use camelCase (See :ref:"
@@ -3486,11 +3522,12 @@ msgstr ""
 "数使用camelCase(参见 :ref:`doc_c_sharp_styleguide`)。连接信号时，请注意精确键"
 "入方法名称。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:96
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:97
 msgid "Sprite animation"
 msgstr "精灵动画"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:98
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:99
+#, fuzzy
 msgid ""
 "Click on the ``Player`` node and add an :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` node as a child. The ``AnimatedSprite`` will handle "
@@ -3499,7 +3536,8 @@ msgid ""
 "<class_SpriteFrames>` resource, which is a list of the animations it can "
 "display. To create one, find the ``Frames`` property in the Inspector and "
 "click \"<null>\" -> \"New SpriteFrames\". Next, in the same location, click "
-"``<SpriteFrames>`` to open the \"SpriteFrames\" panel:"
+"``<SpriteFrames>``, then click \"Open Editor\" to open the \"SpriteFrames\" "
+"panel:"
 msgstr ""
 "点击 ``Player`` 节点然后添加一个 :ref:`AnimatedSprite "
 "<class_AnimatedSprite>` (动画精灵)节点作为子节点， ``AnimateSprite`` 会处理我"
@@ -3509,7 +3547,7 @@ msgstr ""
 "``Frames`` 属性，然后点击\"<无>\"→\"新建精灵帧集\"。接下来在同一位置点击 "
 "``<SpriteFrames>`` 打开\"SpriteFrames\"面板:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:110
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:111
 msgid ""
 "On the left is a list of animations. Click the \"default\" one and rename it "
 "to \"right\". Then click the \"Add\" button to create a second animation "
@@ -3521,7 +3559,7 @@ msgstr ""
 "建第二个动画名为“up”。将每个动画的两个图像(名"
 "为“playerGrey_up[1/2]”和“playerGrey_walk[1/2]”)拖到面板的“动画帧”一侧:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:117
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:118
 msgid ""
 "The player images are a bit too large for the game window, so we need to "
 "scale them down. Click on the ``AnimatedSprite`` node and set the ``Scale`` "
@@ -3532,13 +3570,15 @@ msgstr ""
 "``AnimatedSprite`` 节点并将 ``Scale`` 属性设置为 ``(0.5,0.5)`` 。 您可以在 "
 "``Node2D`` 标题下的属性面板中找到它。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:124
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:125
+#, fuzzy
 msgid ""
 "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child "
 "of ``Player``. This will determine the player's \"hitbox\", or the bounds of "
 "its collision area. For this character, a ``CapsuleShape2D`` node gives the "
 "best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
-"CapsuleShape2D\".  Resize the shape to cover the sprite:"
+"CapsuleShape2D\".  Using the two size handles, resize the shape to cover the "
+"sprite:"
 msgstr ""
 "最终，添加一个 :ref:`CollisionShape2D <class_CollisionShape2D>` 对象作为 "
 "``Player`` 的子节点。它用于决定游戏角色的“碰撞盒”，亦或者说是它碰撞区域的边"
@@ -3546,21 +3586,15 @@ msgstr ""
 "看器的“Shape”部分，点击“<null>”改为“新建 CapsuleShape2D”。然后重设形状的大小"
 "以盖住精灵:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:132
-msgid ""
-"Don't scale the shape's outline! Only use the size handles (circled in red) "
-"to adjust the shape!"
-msgstr "请勿缩放该形状的外框！只要用大小控制柄(红圈)来调整形状！"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:135
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:134
 msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr "完成后，您的 ``Player`` 场景看起来应该像这样:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:140
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:139
 msgid "Moving the player"
 msgstr "移动游戏角色"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:142
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:141
 msgid ""
 "Now we need to add some functionality that we can't get from a built-in "
 "node, so we'll add a script. Click the ``Player`` node and click the \"Add "
@@ -3569,13 +3603,13 @@ msgstr ""
 "现在我们需要添加一些内置节点所不具备的功能，因此我们要添加一个脚本。点击 "
 "``Player`` 节点然后点击“添加脚本”按钮:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:148
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:147
 msgid ""
 "In the script settings window, you can leave the default settings alone. "
 "Just click \"Create\":"
 msgstr "在脚本设定窗口中，您可以都留默认选项，只要点击“创建”就好:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:151
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:150
 msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
@@ -3583,28 +3617,31 @@ msgstr ""
 "如果您要创建一个C#脚本或者其他语言的脚本，那就在创建之前在 `语言` 下拉菜单中"
 "选择语言。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:156
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:155
 msgid ""
 "If this is your first time encountering GDScript, please read :ref:"
 "`doc_scripting` before continuing."
 msgstr "如果这是您第一次使用GDScript，请在继续之前阅读 :ref:`doc_scripting`。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:159
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:158
 msgid "Start by declaring the member variables this object will need:"
 msgstr "首先声明该对象将会用到的成员变量:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:180
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:179
+#, fuzzy
 msgid ""
 "Using the ``export`` keyword on the first variable ``speed`` allows us to "
 "set its value in the Inspector. This can be handy for values that you want "
 "to be able to adjust just like a node's built-in properties. Click on the "
-"``Player`` node and set the speed property to ``400``."
+"``Player`` node and you'll see the property now appears in the \"Script "
+"Variables\" section of the Inspector. Remember, if you change the value "
+"here, it will override the value written in the script."
 msgstr ""
 "对于第一个变量 ``speed`` 使用 ``export`` 关键词可以让我们能够在查看器中设置该"
 "变量的值，对于我们期望能够像节点内置属性一样去调整的值，这是一个非常便利的手"
 "段。点击 ``Player`` 节点并将speed属性设置为 ``400``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:185
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:186
 msgid ""
 "If you're using C#, you need to (re)build the project assemblies whenever "
 "you want to see new export variables or signals. This build can be manually "
@@ -3615,7 +3652,7 @@ msgstr ""
 "号。可以通过单击编辑器窗口底部的“Mono”一词来手动触发此构建，以显示Mono "
 "Panel，然后单击“Build Project”按钮。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:193
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:194
 msgid ""
 "The ``_ready()`` function is called when a node enters the scene tree, which "
 "is a good time to find the size of the game window:"
@@ -3623,33 +3660,36 @@ msgstr ""
 "``_ready()`` 函数会在节点进入场景树的时候被调用，这也是我们用来获取游戏窗口大"
 "小的好时候:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:209
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:210
+#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
-"of our game, which we expect will change often. Here we'll make it:"
+"of our game, which we expect will change often. For the player, we need to "
+"do the following:"
 msgstr ""
 "现在我们可以使用 ``_process()`` 函数来定义游戏角色将会做什么。 "
 "``_process()`` 在每一帧都会被调用，因此我们需要使用它来更新我们游戏中期望被经"
 "常改变的元素，这里我们就做到了:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:213
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:215
 msgid "Check for input."
 msgstr "检测输入。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:214
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:216
 msgid "Move in the given direction."
 msgstr "以给定方向移动。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:215
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:217
 msgid "Play the appropriate animation."
 msgstr "播放适当的动画。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:217
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:219
+#, fuzzy
 msgid ""
 "First, we need to check for input - is the player pressing a key? For this "
 "game, we have 4 direction inputs to check. Input actions are defined in the "
-"Project Settings under \"Input Map\". You can define custom events and "
+"Project Settings under \"Input Map\". Here, you can define custom events and "
 "assign different keys, mouse events, or other inputs to them. For this demo, "
 "we will use the default events that are assigned to the arrow keys on the "
 "keyboard."
@@ -3659,7 +3699,7 @@ msgstr ""
 "件并分配器不同的键位、鼠标亦或者是其他输入的事件。对于这个演示项目来说，我们"
 "会使用已经分配给键盘方向键的默认事件。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:224
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:226
 msgid ""
 "You can detect whether a key is pressed using ``Input.is_action_pressed()``, "
 "which returns ``true`` if it is pressed or ``false`` if it isn't."
@@ -3667,20 +3707,22 @@ msgstr ""
 "您可以通过 ``Input.is_action_pressed()`` 检测一个按键是否被按下，该函数会在按"
 "下时返回 ``true`` ，否则返回 ``false``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:286
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:288
+#, fuzzy
 msgid ""
-"We check each input and add/subtract from the ``velocity`` to obtain a total "
-"direction. For example, if you hold ``right`` and ``down`` at the same time, "
-"the resulting ``velocity`` vector will be ``(1, 1)``. In this case, since "
-"we're adding a horizontal and a vertical movement, the player would move "
-"*faster* than if it just moved horizontally."
+"We start by setting the ``velocity`` to ``(0, 0)`` - by default the player "
+"should not be moving. Then we check each input and add/subtract from the "
+"``velocity`` to obtain a total direction. For example, if you hold ``right`` "
+"and ``down`` at the same time, the resulting ``velocity`` vector will be "
+"``(1, 1)``. In this case, since we're adding a horizontal and a vertical "
+"movement, the player would move *faster* than if it just moved horizontally."
 msgstr ""
 "我们会检测每一个输入并增加/减少 ``velocity`` 以获取总的方向。比如说如果您同时"
 "按下了 ``→`` 和 ``↓`` ，那么最终的 ``velocity`` 就会是 ``(1,1)`` 。在这种情况"
 "下因为我们叠加了水平和垂直方向的运动，游戏角色会比仅在水平方向上移动得 *更快"
 "*。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:292
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:295
 msgid ""
 "We can prevent that if we *normalize* the velocity, which means we set its "
 "*length* to ``1``, and multiply by the desired speed. This means no more "
@@ -3689,7 +3731,7 @@ msgstr ""
 "我们可以通过对速度向量 *归一化* 来防止这件事，这也就意味着我们会把它的 *模* "
 "设置为 ``1`` ，并乘以想要的速度，这也就意味着不再有更快的对角线移动方式。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:296
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:299
 msgid ""
 "If you've never used vector math before, or need a refresher, you can see an "
 "explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to "
@@ -3699,23 +3741,24 @@ msgstr ""
 "`doc_vector_math` 关于向量在Godot中使用的解释说明。最好是了解一下尽管对于本教"
 "程剩下的部分来说这并不必要。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:300
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:303
 msgid ""
 "We also check whether the player is moving so we can start or stop the "
 "AnimatedSprite animation."
 msgstr ""
 "我们也会检测某个问价是否在移动，以便我们能够启动或停止AnimatedSprite的动画。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:303
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:306
+#, fuzzy
 msgid ""
-"``$`` returns the node at the relative path from this node, or returns "
-"``null`` if the node is not found. Since AnimatedSprite is a child of the "
-"current node, we can use ``$AnimatedSprite``."
+"In GDScript, ``$`` returns the node at the relative path from the current "
+"node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
+"a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
 "``$`` 返回该节点的相对路径，若该节点未找到则返回 ``null`` ，因为"
 "AnimatedSprite是当前节点的子节点，因此我们可以使用 ``$AnimatedSprite`` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:306
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:309
 msgid ""
 "``$`` is shorthand for ``get_node()``. So in the code above, ``"
 "$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\")."
@@ -3724,20 +3767,21 @@ msgstr ""
 "``$`` 是 ``get_node()`` 的简写，因此在上面的代码中， ``$AnimatedSprite."
 "play()`` 与 ``get_node(\"AnimatedSprite\").play()``等效。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:309
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:312
+#, fuzzy
 msgid ""
-"Now that we have a movement direction, we can update ``Player``'s position "
+"Now that we have a movement direction, we can update the player's position "
 "and use ``clamp()`` to prevent it from leaving the screen by adding the "
 "following to the bottom of the ``_process`` function:"
 msgstr ""
 "既然我们已经有了运动的方向，我们就可以更新 ``Player`` 的位置了并可以在 "
 "``_process()` `函数的底部使用 ``clamp()`` 函数来防止它离开屏幕:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:329
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:332
 msgid "*Clamping* a value means restricting it to a given range."
 msgstr "*夹住*一个值意味着将其限制在一个给定区间内。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:331
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:334
 msgid ""
 "Click \"Play Scene\" (``F6``) and confirm you can move the player around the "
 "screen in all directions. The console output that opens upon playing the "
@@ -3748,7 +3792,7 @@ msgstr ""
 "打开的控制台输出可以通过单击底部面板左下角的 ``日志`` (应该以蓝色突出显示)来"
 "关闭。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:335
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:339
 msgid ""
 "If you get an error in the \"Debugger\" panel that refers to a \"null "
 "instance\", this likely means you spelled the node name wrong. Node names "
@@ -3759,11 +3803,11 @@ msgstr ""
 "写有误。节点名是对大小写敏感的并且 ``$NodeName`` 或 ``get_node(\"NodeName"
 "\")`` 必须与您在场景书中见到的名字一致。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:340
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:344
 msgid "Choosing animations"
 msgstr "选择动画"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:342
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:346
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on direction. We have a \"right\" animation, "
@@ -3777,7 +3821,7 @@ msgstr ""
 "及一个“up”动画，其应该在向下的运动中通过 ``flip_v`` 属性上下翻转。那我们就在 "
 "``_process()`` 函数的结尾添加这些代码吧:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:376
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:380
 msgid ""
 "The boolean assignments in the code above are a common shorthand for "
 "programmers. Consider this code versus the shortened boolean assignment "
@@ -3785,7 +3829,7 @@ msgid ""
 msgstr ""
 "上面代码中的布尔赋值是程序员的常用简写。 考虑此代码与上面缩短的布尔赋值:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:395
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:399
 msgid ""
 "Play the scene again and check that the animations are correct in each of "
 "the directions. When you're sure the movement is working correctly, add this "
@@ -3794,11 +3838,11 @@ msgstr ""
 "再次运行场景并检查各方向的动画是否正确，当您确定移动正常工作的话，将下面一行"
 "代码加到 ``_ready()`` 中以便游戏角色在游戏开始时被隐藏:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:410
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:414
 msgid "Preparing for collisions"
 msgstr "准备碰撞"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:412
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:416
 msgid ""
 "We want ``Player`` to detect when it's hit by an enemy, but we haven't made "
 "any enemies yet! That's OK, because we're going to use Godot's *signal* "
@@ -3807,11 +3851,11 @@ msgstr ""
 "我们希望 ``Player`` 能够检测它何时被一个敌人撞到，但是我们还没做敌人呢！没关"
 "系，因为我们将要用Godot的 *信号* 功能来实现。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:416
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:420
 msgid "Add the following at the top of the script, after ``extends Area2d``:"
 msgstr "在脚本开头， ``extends Area2d`` 下添加:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:430
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:434
 msgid ""
 "This defines a custom signal called \"hit\" that we will have our player "
 "emit (send out) when it collides with an enemy. We will use ``Area2D`` to "
@@ -3822,15 +3866,16 @@ msgstr ""
 "我们就让 “hit” 发射(发送出去)。我们用 ``Area2D`` 来检测碰撞，选择 ``Player`` "
 "节点并点击属性面板标签页旁的 “节点” 标签页来查看游戏角色能够发射的所有信号:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:437
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:441
+#, fuzzy
 msgid ""
 "Notice our custom \"hit\" signal is there as well! Since our enemies are "
 "going to be ``RigidBody2D`` nodes, we want the ``body_entered( Object "
 "body )`` signal; this will be emitted when a body contacts the player. Click "
 "\"Connect..\" and then \"Connect\" again on the \"Connecting Signal\" "
 "window. We don't need to change any of these settings - Godot will "
-"automatically create a function called ``_on_Player_body_entered`` in your "
-"player's script."
+"automatically create a function in your player's script. This function will "
+"be called whenever the signal is emitted - it *handles* the signal."
 msgstr ""
 "请注意，我们自定义的 “hit” 信号也在其中！因为我们的敌人会是 ``RigidBody2D`` "
 "节点，因此我们要的是 ``body_entered( Object body )`` 信号；它会在一个实体与游"
@@ -3838,7 +3883,7 @@ msgstr ""
 "接” 。我们不需要对任何设定做改变——Godot会在您的游戏角色脚本中自动创建一个叫"
 "做 ``_on_Player_body_entered`` 的函数。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:445
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:450
 msgid ""
 "When connecting a signal, instead of having Godot create a function for you, "
 "you can also give the name of an existing function that you want to link the "
@@ -3847,30 +3892,35 @@ msgstr ""
 "当连接一个信号时，除了Godot为您创建的函数之外，您也要给出一个已有函数的名称用"
 "于将信号连接到它上。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:449
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:454
 msgid "Add this code to the function:"
 msgstr "为该节点添加函数:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:468
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:473
 msgid ""
-"Disabling the area's collision shape means it won't detect collisions. By "
-"turning it off, we make sure we don't trigger the ``hit`` signal more than "
-"once."
+"Each time an enemy hits the player, the signal is going to be emitted. We "
+"need to disable the player's collision so that we don't trigger the ``hit`` "
+"signal more than once."
 msgstr ""
-"禁用区域碰撞形体意味着它不会检测碰撞，通过关闭它我们能够确保不会多次触发 "
-"``hit`` 信号。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:472
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:477
+msgid ""
+"Disabling the area's collision shape can cause an error if it happens in the "
+"middle of the engine's collision processing. Using ``call_deferred()`` "
+"allows us to have Godot wait to disable the shape until it's safe to do so."
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:482
 msgid ""
 "The last piece for our player is to add a function we can call to reset the "
 "player when starting a new game."
 msgstr "游戏角色的最后一部分就是添加一个功能，用于在开始新游戏时重置游戏角色。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:493
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:503
 msgid "Enemy scene"
 msgstr "敌人场景"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:495
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:505
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
 "behavior will not be very complex: mobs will spawn randomly at the edges of "
@@ -3880,7 +3930,7 @@ msgstr ""
 "现在是时候去做一些游戏角色必须躲避的敌人了。他们的行为并不复杂:怪物会在屏幕边"
 "缘随机生成并以随机方向沿直线运动，然后会在离开屏幕时消失。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:500
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:510
 msgid ""
 "We will build this into a ``Mob`` scene, which we can then *instance* to "
 "create any number of independent mobs in the game."
@@ -3888,43 +3938,43 @@ msgstr ""
 "我们会将其构建到 ``Mob`` 场景中，我们稍后会实例化这个场景来在游戏中创建若干个"
 "独立的怪物。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:504
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:514
 msgid "Node setup"
 msgstr "节点设置"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:506
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:516
 msgid "Click Scene -> New Scene and we'll create the Mob."
 msgstr "点击场景→新建场景，然后我们就可以创建Mob了。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:508
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:518
 msgid "The Mob scene will use the following nodes:"
 msgstr "Mob场景将会使用如下节点:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:510
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:520
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
 msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (名为 ``Mob``)"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:512
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:522
 msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:513
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:523
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:514
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:524
 msgid ""
 ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (named "
 "``Visibility``)"
 msgstr "\n"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:516
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:526
 msgid ""
 "Don't forget to set the children so they can't be selected, like you did "
 "with the Player scene."
 msgstr "别忘记设置其子节点以不被选中，就像您在处理Player场景时一样。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:519
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:529
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
 "Scale`` to ``0``, so the mob will not fall downward. In addition, under the "
@@ -3935,7 +3985,7 @@ msgstr ""
 "``0``，以防止怪物向下移动。此外，在 ``PhysicsBody2D`` 部分下，点击 ``Mask`` "
 "属性并去除第一个复选框的勾选，这会确保怪物不会彼此碰撞。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:526
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:536
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
 "player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
@@ -3948,12 +3998,12 @@ msgstr ""
 "``Playing`` 属性设置为 \"On\" 并调整 \"速度 (FPS)\" 设置, 如下所示。我们将随"
 "机选择这些动画之一, 使怪物将有一些变量。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:533
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:543
 msgid ""
 "``fly`` should be set to 3 FPS, with ``swim`` and ``walk`` set to 4 FPS."
 msgstr "``fly`` 应设置为3 FPS, ``swim`` 和 ``walk``应设置为4 FPS."
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:535
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:545
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
@@ -3961,7 +4011,7 @@ msgstr ""
 "像游戏角色图片一样，这些怪物的图片也要缩小。设置 ``AnimatedSprite`` 的 "
 "``Scale`` 属性为 ``(0.75, 0.75)``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:538
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:548
 msgid ""
 "As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
 "align the shape with the image, you'll need to set the ``Rotation Degrees`` "
@@ -3970,27 +4020,29 @@ msgstr ""
 "正如在 \"游戏角色\" 场景中, 添加一个 \"CapsuleShape2D\" 的碰撞。要将形状与图"
 "像对齐, 您需要将 \"Rotation Degrees\" 属性设置为 \"Node2D\" 下的 \"90\"。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:543
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:553
 msgid "Enemy script"
 msgstr "敌人的脚本"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:545
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:555
 msgid "Add a script to the ``Mob`` and add the following member variables:"
 msgstr "添加一条脚本到 ``Mob`` 然后添加以下成员变量:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:571
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:581
+#, fuzzy
 msgid ""
-"We'll pick a random value between ``min_speed`` and ``max_speed`` for how "
-"fast each mob will move (it would be boring if they were all moving at the "
-"same speed). Set them to ``150`` and ``250`` in the Inspector. We also have "
-"an array containing the names of the three animations, which we'll use to "
-"select a random one."
+"When we spawn a mob, we'll pick a random value between ``min_speed`` and "
+"``max_speed`` for how fast each mob will move (it would be boring if they "
+"were all moving at the same speed). We also have an array containing the "
+"names of the three animations, which we'll use to select a random one. Make "
+"sure you've spelled these the same in the script and in the SpriteFrames "
+"resource."
 msgstr ""
 "我们将在\"min_speed\"和\"max_speed\"之间选择一个随机值来表示每个怪物移动的速"
 "度(如果它们都以相同的速度移动会很无趣)。在属性面板里将他们设置成\"150\"和"
 "\"250\"。我们还需要一个包含三个动画名字的数组，并随机选择其中一个。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:577
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:587
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we randomly choose "
 "one of the three animation types:"
@@ -3998,7 +4050,7 @@ msgstr ""
 "现在让我们来看看脚本的其余部分。在\"_ready()\" 中，我们从三个动画类型中随机选"
 "择一个:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:596
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:606
 msgid ""
 "You must use ``randomize()`` if you want your sequence of \"random\" numbers "
 "to be different every time you run the scene. We're going to use "
@@ -4010,7 +4062,7 @@ msgstr ""
 "我们不会在这里使用。 ``randi() % n``是一种标准的方式，用于产生 ``0`` 到 "
 "``n-1`` 的随机整数。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:602
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:612
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the ``Visibility`` node "
@@ -4019,15 +4071,15 @@ msgstr ""
 "最后一部分就是，当怪物离开屏幕后，让他们删除掉自己，连接 ``Visibility`` 的 "
 "``screen_exited()`` 信号节点然后增加代码:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:619
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:629
 msgid "This completes the `Mob` scene."
 msgstr "这会完成 `Mob`场景。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:622
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:632
 msgid "Main scene"
 msgstr "主场景"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:624
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:634
 msgid ""
 "Now it's time to bring it all together. Create a new scene and add a :ref:"
 "`Node <class_Node>` named ``Main``. Click the \"Instance\" button and select "
@@ -4036,11 +4088,11 @@ msgstr ""
 "现在是时候将其整合起来了。创建一个新场景并添加一个: :ref:`Node <class_Node>` "
 "命名为“Main”。点击“实例”按钮并选择您保存的 ``Player.tscn``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:630
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:640
 msgid "See :ref:`doc_instancing` to learn more about instancing."
 msgstr "查阅 :ref:`doc_instancing` 来学习更多关于实例的知识。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:632
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:642
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
 "(values are in seconds):"
@@ -4048,26 +4100,26 @@ msgstr ""
 "现在, 将以下节点添加为 \"Main\" 的子级, 并按显示的名称命名它们 (值以秒为单"
 "位):"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:635
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:645
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``MobTimer``) - to control how often mobs "
 "spawn"
 msgstr ""
 ":ref:`Timer <class_Timer>` (命名为 ``MobTimer`` ) - 可用来控制怪物产生的频率"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:636
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:646
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``ScoreTimer``) - to increment the score "
 "every second"
 msgstr ":ref:`Timer <class_Timer>` (命名为 ``ScoreTimer`` ) - 每秒钟增加分数"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:637
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:647
 msgid ""
 ":ref:`Timer <class_Timer>` (named ``StartTimer``) - to give a delay before "
 "starting"
 msgstr ":ref:`Timer <class_Timer>` (命名为 ``StartTimer``)-在开始前给出延迟"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:638
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:648
 msgid ""
 ":ref:`Position2D <class_Position2D>` (named ``StartPosition``) - to indicate "
 "the player's start position"
@@ -4075,24 +4127,24 @@ msgstr ""
 ":ref:`Position2D <class_Position2D>` (命名为 ``StartPosition`` ) - 表示游戏角"
 "色的起始位置"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:640
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:650
 msgid ""
 "Set the ``Wait Time`` property of each of the ``Timer`` nodes as follows:"
 msgstr "设置每个 ``Timer`` 节点的 ``Wait Time`` 属性，如下所示:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:643
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:653
 msgid "``MobTimer``: ``0.5``"
 msgstr "``MobTimer``: ``0.5``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:644
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:654
 msgid "``ScoreTimer``: ``1``"
 msgstr "``ScoreTimer``: ``1``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:645
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:655
 msgid "``StartTimer``: ``2``"
 msgstr "``StartTimer``: ``2``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:647
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:657
 msgid ""
 "In addition, set the ``One Shot`` property of ``StartTimer`` to \"On\" and "
 "set ``Position`` of the ``StartPosition`` node to ``(240, 450)``."
@@ -4100,11 +4152,11 @@ msgstr ""
 "另外, 将 \"StartTimer\" 的 \"One Shot\" 属性设置为 \"On\", 并将 "
 "\"StartPosition\" 节点的 \"Position\" 设置为 \"(240、450)\"。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:651
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:661
 msgid "Spawning mobs"
 msgstr "生成怪物"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:653
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:663
 msgid ""
 "The Main node will be spawning new mobs, and we want them to appear at a "
 "random location on the edge of the screen. Add a :ref:`Path2D "
@@ -4115,7 +4167,7 @@ msgstr ""
 "ref:`Path2D <class_Path2D>` 节点，命名为 ``MobPath``，作为 ``Main`` 的子节"
 "点。当您选择 ``Path2D`` 后，您就能在编辑器的上方看到一些新按钮:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:660
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:670
 msgid ""
 "Select the middle one (\"Add Point\") and draw the path by clicking to add "
 "the points at the corners shown. To have the points snap to the grid, make "
@@ -4127,19 +4179,19 @@ msgstr ""
 "到网格，确保“吸附到网格”被选中。此选项可以在“吸附选项(Snapping options)”按钮"
 "下方，“锁定(Lock)”按钮的左边找到，以一系列三个垂直点的形式出现。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:668
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:678
 msgid ""
 "Draw the path in *clockwise* order, or your mobs will spawn pointing "
 "*outwards* instead of *inwards*!"
 msgstr "按 *顺时针* 顺序绘制路径，否则您的怪物会指向 *向外* 而不是 *向内* !"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:671
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:681
 msgid ""
 "After placing point ``4`` in the image, click the \"Close Curve\" button and "
 "your curve will be complete."
 msgstr "在图像中放置点“4”后，点击“闭合曲线”按钮，您的曲线就完成了。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:674
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:684
 msgid ""
 "Now that the path is defined, add a :ref:`PathFollow2D <class_PathFollow2D>` "
 "node as a child of ``MobPath`` and name it ``MobSpawnLocation``. This node "
@@ -4150,11 +4202,11 @@ msgstr ""
 "为 ``MobPath`` 的子节点，并将其命名为 ``MobSpawnLocation``。此节点在移动时将"
 "自动旋转并跟随路径，因此我们可以使用它沿路径选择一个随机位置和方向。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:680
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:690
 msgid "Main script"
 msgstr "主脚本"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:682
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:692
 msgid ""
 "Add a script to ``Main``. At the top of the script, we use ``export "
 "(PackedScene)`` to allow us to choose the Mob scene we want to instance."
@@ -4162,7 +4214,7 @@ msgstr ""
 "在“Main”中添加一个脚本。在脚本的顶部，我们使用' export (PackedScene) ' '来允"
 "许我们选择我们想要实例化的Mob场景。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:722
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:732
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" panel and drop it in the ``Mob`` "
 "property under the Script Variables of the ``Main`` node."
@@ -4170,7 +4222,7 @@ msgstr ""
 "从“文件系统”面板中拖动“Mob.tscn”，并将其放在“Main”节点的脚本变量下的“Mob”属性"
 "中。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:725
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:735
 msgid ""
 "Next, click on the Player and connect the ``hit`` signal. We want to make a "
 "new function named ``game_over``, which will handle what needs to happen "
@@ -4183,16 +4235,18 @@ msgstr ""
 "键入“game_over”。添加以下代码，以及' ' new_game ' '函数来设置新游戏的所有内"
 "容:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:762
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:772
+#, fuzzy
 msgid ""
 "Now connect the ``timeout()`` signal of each of the Timer nodes "
-"(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``). ``StartTimer`` will "
-"start the other two timers. ``ScoreTimer`` will increment the score by 1."
+"(``StartTimer``, ``ScoreTimer`` ,and ``MobTimer``) to the main script. "
+"``StartTimer`` will start the other two timers. ``ScoreTimer`` will "
+"increment the score by 1."
 msgstr ""
 "现在连接每个计时器节点的‘timeout()’信号(‘开始计时器’’、‘记分定时器’和‘移动定"
 "时器’’)。“启动定时器”将启动其他两个定时器。‘记分计时器’将分数增加1。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:789
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:799
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -4203,12 +4257,12 @@ msgstr ""
 "选择一个随机起始位置, 并设置mob的运动。``PathFollow2D`` 节点会随着路径自动旋"
 "转，因此我们会使用它来选择mob的方向以及它的位置。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:795
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:805
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
 msgstr "注意，必须使用 ``add_child()`` 将新实例添加到场景中。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:798
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:808
 msgid ""
 "Now click on ``MobTimer`` in the scene window then head to inspector window, "
 "switch to node view then click on ``timeout()`` and connect the signal."
@@ -4216,12 +4270,12 @@ msgstr ""
 "现在在场景窗口中点击 ``MobTimer`` ，然后前往inspector窗口，切换到节点视图，然"
 "后点击 ``timeout()`` 并连接signal。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:801
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:811
 #: ../../docs/tutorials/3d/fps_tutorial/part_two.rst:1091
 msgid "Add the following code:"
 msgstr "添加以下代码:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:848
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:859
 msgid ""
 "In functions requiring angles, GDScript uses *radians*, not degrees. If "
 "you're more comfortable working with degrees, you'll need to use the "
@@ -4230,11 +4284,11 @@ msgstr ""
 "在需要角度的函数中，GDScript使用 *弧度* ，而不是角度。如果您更喜欢使用角度，"
 "则需要使用 ``deg2rad()`` 和 ``rad2deg()`` 函数在角度和弧度之间进行转换。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:854
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:865
 msgid "HUD"
 msgstr "HUD"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:856
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:867
 msgid ""
 "The final piece our game needs is a UI: an interface to display things like "
 "score, a \"game over\" message, and a restart button. Create a new scene, "
@@ -4247,7 +4301,7 @@ msgstr ""
 "<class_CanvasLayer>` 节点。\"HUD\"代表\"平视显示\", 一种显示在游戏视图上面的"
 "信息显示。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:862
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:873
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
 "on a layer above the rest of the game, so that the information it displays "
@@ -4256,23 +4310,23 @@ msgstr ""
 ":ref:`CanvasLayer <class_CanvasLayer>` 节点允许我们在游戏其余部分上面的层上绘"
 "制UI元素， 以便其显示的信息不会被任何游戏元素覆盖，比如游戏角色或mobs。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:866
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:877
 msgid "The HUD displays the following information:"
 msgstr "HUD显示以下信息:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:868
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:879
 msgid "Score, changed by ``ScoreTimer``."
 msgstr "分数，用 ``ScoreTimer`` 改变。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:869
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
 msgid "A message, such as \"Game Over\" or \"Get Ready!\""
 msgstr "一条信息，如”Game Over“或”Get Ready！“"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:870
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
 msgid "A \"Start\" button to begin the game."
 msgstr "一个“Start”按钮来开始游戏。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:872
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
 msgid ""
 "The basic node for UI elements is :ref:`Control <class_Control>`. To create "
 "our UI, we'll use two types of :ref:`Control <class_Control>` nodes: :ref:"
@@ -4282,27 +4336,56 @@ msgstr ""
 "`Control <class_Control>` 的两种节点: :ref:`Label <class_Label>` 和 :ref:"
 "`Button <class_Button>` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:876
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:887
 msgid "Create the following as children of the ``HUD`` node:"
 msgstr "创造以下节点作为 ``HUD`` 的子节点:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:878
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:889
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr ":ref:`Label <class_Label>` 命名为 ``ScoreLabel``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:879
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
 msgid ":ref:`Label <class_Label>` named ``MessageLabel``."
 msgstr ":ref:`Label <class_Label>` 命名为 ``MessageLabel``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:880
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:891
 msgid ":ref:`Button <class_Button>` named ``StartButton``."
 msgstr ":ref:`Button <class_Button>` 命名为 ``StartButton``。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:881
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:892
 msgid ":ref:`Timer <class_Timer>` named ``MessageTimer``."
 msgstr ":ref:`Timer <class_Timer>` 命名为 ``MessageTimer`` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:883
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:894
+#, fuzzy
+msgid ""
+"Click on the ``ScoreLabel`` and type a number into the _Text_ field in the "
+"Inspector. The default font for ``Control`` nodes is small and doesn't scale "
+"well. There is a font file included in the game assets called \"Xolonium-"
+"Regular.ttf\". To use this font, do the following for each of the three "
+"``Control`` nodes:"
+msgstr ""
+"为了使 ``MessageLabel`` 中的文本适配游戏窗口，点击文本属性旁边的小图标。这会"
+"打开一个新窗口，使您可以在单词之间添加新行。 ``Control`` 节点的默认字体很小并"
+"且不能很好的缩放。在游戏资源中包含一个名为 \"Xolonium-Regular.ttf\" 的字体。"
+"要使用这个字体，为三个 ``Control`` 节点分别执行以下操作:"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:900
+msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
+msgstr "在 \"Custom Fonts\" 的下拉选项中，选择 \"New DynamicFont\""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:904
+#, fuzzy
+msgid ""
+"Click on the \"DynamicFont\" you added, and under \"Font/Font Data\", choose "
+"\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
+"font's ``Size``. A setting of ``64`` works well."
+msgstr ""
+"点击您添加的 \"DynamicFont\" ，然后在 \"Font Data\" 的下拉选项中选择 \"Load"
+"\" 并选择 \"Xolonium-Regular.ttf\" 文件。您还必须设置字体的 ``Size`` 。设置"
+"为 ``64`` 就可以了。"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:910
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -4316,147 +4399,88 @@ msgstr ""
 "们表示从Control节点的边缘到其锚点的距离。详情请参阅 :ref:"
 "`doc_design_interfaces_with_the_control_nodes` 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:890
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
 msgid ""
 "Arrange the nodes as shown below. Click the \"Anchor\" button to set a "
 "Control node's anchor:"
 msgstr "按如下图所示排列节点。 点击\"Anchor\"按钮来设置Control节点的锚点:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:895
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:922
 msgid ""
 "You can drag the nodes to place them manually, or for more precise "
 "placement, use the following settings:"
 msgstr "您可以手动拖动节点来放置它们，或者为了更精确的放置，使用以下设置:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:899
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:926
 msgid "ScoreLabel"
 msgstr "记分牌"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:901
-msgid "``Layout``: \"Center Top\""
-msgstr "``布局``: \"中心 顶端\""
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:902
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:915
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:928
-msgid "``Margin``:"
-msgstr "``边界``:"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:904
-msgid "Left: ``-25``"
-msgstr "左侧: ``-25``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:905
-msgid "Top: ``0``"
-msgstr "顶部: ``0``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:906
-msgid "Right: ``25``"
-msgstr "右侧: ``25``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:907
-msgid "Bottom: ``100``"
-msgstr "底部: ``100``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:909
-msgid "Text: ``0``"
+#, fuzzy
+msgid "*Text* : ``0``"
 msgstr "文本: ``0``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:912
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:929
+msgid "*Layout* : \"Top Wide\""
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:930
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
+msgid "*Align* : \"Center\""
+msgstr ""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
 msgid "MessageLabel"
 msgstr "消息标签"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:914
-msgid "``Layout``: \"Center\""
-msgstr "``布局``: \"中心\""
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:917
-msgid "Left: ``-200``"
-msgstr "左侧: ``-200``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:918
-msgid "Top: ``-150``"
-msgstr "顶部: ``-150``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:919
-msgid "Right: ``200``"
-msgstr "右侧: ``200``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:920
-msgid "Bottom: ``0``"
-msgstr "底部: ``0``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:922
-msgid "Text: ``Dodge the Creeps!``"
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
+#, fuzzy
+msgid "*Text* : ``Dodge the Creeps!``"
 msgstr "文本: ``Dodge the Creeps!``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:925
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:936
+#, fuzzy
+msgid "*Layout* : \"HCenter Wide\""
+msgstr "``布局``: \"中心\""
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:940
 msgid "StartButton"
 msgstr "启动按钮"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:927
-msgid "``Layout``: \"Center Bottom\""
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:942
+#, fuzzy
+msgid "*Text* : ``Start``"
+msgstr "文本: ``Start``"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:943
+#, fuzzy
+msgid "*Layout* : \"Center Bottom\""
 msgstr "``布局``: \"中心 底部\""
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:930
-msgid "Left: ``-100``"
-msgstr "左侧: ``-100``"
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:944
+#, fuzzy
+msgid "*Margin* :"
+msgstr "边距"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:931
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:946
 msgid "Top: ``-200``"
 msgstr "顶部: ``-200``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:932
-msgid "Right: ``100``"
-msgstr "右侧: ``100``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:933
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:947
 msgid "Bottom: ``-100``"
 msgstr "底部: ``-100``"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:935
-msgid "Text: ``Start``"
-msgstr "文本: ``Start``"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:937
-msgid ""
-"To make the text of the ``MessageLabel`` fit the game's window click the "
-"small icon next to your text property. This will open up a new window where "
-"you can add a new line between the words. The default font for ``Control`` "
-"nodes is small and doesn't scale well. There is a font file included in the "
-"game assets called \"Xolonium-Regular.ttf\". To use this font, do the "
-"following for each of the three ``Control`` nodes:"
-msgstr ""
-"为了使 ``MessageLabel`` 中的文本适配游戏窗口，点击文本属性旁边的小图标。这会"
-"打开一个新窗口，使您可以在单词之间添加新行。 ``Control`` 节点的默认字体很小并"
-"且不能很好的缩放。在游戏资源中包含一个名为 \"Xolonium-Regular.ttf\" 的字体。"
-"要使用这个字体，为三个 ``Control`` 节点分别执行以下操作:"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:945
-msgid "Under \"Custom Fonts\", choose \"New DynamicFont\""
-msgstr "在 \"Custom Fonts\" 的下拉选项中，选择 \"New DynamicFont\""
-
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:949
-msgid ""
-"Click on the \"DynamicFont\" you added, and under \"Font Data\", choose "
-"\"Load\" and select the \"Xolonium-Regular.ttf\" file. You must also set the "
-"font's ``Size``. A setting of ``64`` works well."
-msgstr ""
-"点击您添加的 \"DynamicFont\" ，然后在 \"Font Data\" 的下拉选项中选择 \"Load"
-"\" 并选择 \"Xolonium-Regular.ttf\" 文件。您还必须设置字体的 ``Size`` 。设置"
-"为 ``64`` 就可以了。"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:955
 msgid "Now add this script to ``HUD``:"
 msgstr "现在增加该脚本到 ``HUD``:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:974
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:968
 msgid ""
 "The ``start_game`` signal tells the ``Main`` node that the button has been "
 "pressed."
 msgstr "“start_game”信号告诉“Main”节点按钮已经被按下。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:996
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:990
 msgid ""
 "This function is called when we want to display a message temporarily, such "
 "as \"Get Ready\". On the ``MessageTimer``, set the ``Wait Time`` to ``2`` "
@@ -4466,13 +4490,23 @@ msgstr ""
 "``MessageTimer`` 中，将 ``Wait Time`` 设置为 ``2`` 并将 ``One Shot`` 属性设置"
 "为 \"On\" 。"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1026
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1021
+#, fuzzy
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
-"for 2 seconds, then return to the title screen and show the \"Start\" button."
+"for 2 seconds, then return to the title screen and, after a brief pause, "
+"show the \"Start\" button."
 msgstr ""
 "当游戏角色输掉时调用这个函数。它将显示 \"Game Over\" 2秒，然后返回标题屏幕并"
 "显示 \"Start\" 按钮。"
+
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1025
+msgid ""
+"When you need to pause for a brief time, an alternative to using a Timer "
+"node is to use the SceneTree's ``create_timer()`` function. This can be very "
+"useful to delay, such as in the above code, where we want to wait a little "
+"bit of time before showing the \"Start\" button."
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1043
 msgid "This function is called by ``Main`` whenever the score changes."
@@ -4573,9 +4607,10 @@ msgstr ""
 "一个您喜欢的颜色并拖拽 ``ColorRect`` 的大小使它覆盖整个屏幕。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1145
+#, fuzzy
 msgid ""
-"You can also add a background image, if you have one, by using a ``Sprite`` "
-"node."
+"You could also add a background image, if you have one, by using a "
+"``Sprite`` node."
 msgstr "如果您有背景图片，您也可以通过使用 ``Sprite`` 节点来添加背景图片。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1149
@@ -4618,83 +4653,45 @@ msgid "Finally, add ``$DeathSound.play()`` in the ``game_over()`` function."
 msgstr "最后， 在 ``game_over()`` 函数中添加 ``$DeathSound.play()`` 。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1167
-msgid "Particles"
-msgstr "粒子"
+msgid "Keyboard Shortcut"
+msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1169
 msgid ""
-"For one last bit of visual appeal, let's add a trail effect to the player's "
-"movement. Choose your ``Player`` scene and add a :ref:`Particles2D "
-"<class_Particles2D>` node named ``Trail``."
+"Since the game is played with keyboard controls, it would be convenient if "
+"we could also start the game by pressing a key on the keyboard. One way to "
+"do this is using the \"Shortcut\" property of the ``Button`` node."
 msgstr ""
-"让我们为player的移动添加一个跟踪效果来增添一些视觉吸引力。选择 ``Player`` 场"
-"景并添加名为 ``Trail`` 的 :ref:`Particles2D <class_Particles2D>` 节点。"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:1173
 msgid ""
-"There are a large number of properties to choose from when configuring "
-"particles. Feel free to experiment and create different effects. For the "
-"effect in this example, use the following settings:"
+"In the ``HUD`` scene, select the ``StartButton`` and find its _Shortcut_ "
+"property in the Inspector. Select \"New Shortcut\" and click on the "
+"\"Shortcut\" item. A second _Shortcut_ property will appear. Select \"New "
+"InputEventAction\" and click the new \"InputEvent\". Finally, in the "
+"_Action_ property, type the name \"ui_select\". This is the default input "
+"event associated with the spacebar."
 msgstr ""
-"在配置粒子时，有大量的属性可供选择。请随意尝试并创造不同的效果。对于本例中的"
-"效果，使用下面的设置:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1179
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1181
 msgid ""
-"You also need to create a ``Material`` by clicking on ``<null>`` and then "
-"\"New ParticlesMaterial\". The settings for that are below:"
+"Now when the start button appears, you can either click it or press the "
+"spacebar to start the game."
 msgstr ""
-"您还需要通过点击 ``<null>`` 和 \"New ParticlesMaterial\" 来创建 "
-"``Material`` 。设置如下:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1184
-msgid ""
-"To make the gradient for the \"Color Ramp\" setting, we want a gradient "
-"taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) to "
-"0.0 (fully transparent)."
-msgstr ""
-"要使 \"Color Ramp\" 设置具有渐变效果，我们需要将sprite的alpha(透明度)设置为从"
-"0.5(半透明)到0.0(完全透明)。"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
-msgid ""
-"Click \"New GradientTexture\", then under \"Gradient\", click \"New Gradient"
-"\". You'll see a window like this:"
-msgstr ""
-"点击 \"New GradientTexture\" ，然后在 \"gradient\" 下拉选项中选择 \"New "
-"Gradient\" 并点击。您会看到这样一个窗口:"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1193
-msgid ""
-"The left and right boxes represent the start and end colors. Click on each "
-"and then click the large square on the right to choose the color. For the "
-"first color, set the ``A`` (alpha) value to around halfway. For the second, "
-"set it all the way to ``0``."
-msgstr ""
-"左边和右边的竖着的矩形方框表示开始和结束颜色。分别点击它们，然后点击右边的大"
-"方块来选择颜色。对于第一个颜色， 设置 ``A`` (alpha) 值为大约一半。对于第二个"
-"颜色，把所有值设置为0。"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1198
-msgid ""
-"See :ref:`Particles2D <class_Particles2D>` for more details on using "
-"particle effects."
-msgstr ""
-"参考 :ref:`Particles2D <class_Particles2D>` 来了解使用粒子效果的更多细节。"
-
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1202
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1185
 msgid "Project files"
 msgstr "项目文件"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
 msgid "You can find a completed version of this project at these locations:"
 msgstr "您可以在这里找到这个项目的完整版本:"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1205
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1188
 msgid "https://github.com/kidscancode/Godot3_dodge/releases"
 msgstr "https://github.com/kidscancode/Godot3_dodge/releases"
 
-#: ../../docs/getting_started/step_by_step/your_first_game.rst:1206
+#: ../../docs/getting_started/step_by_step/your_first_game.rst:1189
 msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"
 
@@ -11075,7 +11072,8 @@ msgid "Exec Flags"
 msgstr "Exec 标志"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
-msgid "geany/kate"
+#, fuzzy
+msgid "Geany/Kate"
 msgstr "geany/kate"
 
 #: ../../docs/getting_started/editor/external_editor.rst:34
@@ -11083,7 +11081,8 @@ msgid "{file} --line {line} --column {col}"
 msgstr "{file} --行 {line} --列 {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
-msgid "atom/sublime text"
+#, fuzzy
+msgid "Atom/Sublime Text"
 msgstr "atom/sublime text"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
@@ -11091,12 +11090,22 @@ msgid "{file}:{line}"
 msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
-msgid "jetbrains rider"
+#, fuzzy
+msgid "JetBrains Rider"
 msgstr "jetbrains车手"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "--line {line} {file}"
 msgstr "--行 {line} {file}"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+#: ../../docs/development/cpp/configuring_an_ide.rst:267
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+#: ../../docs/getting_started/editor/external_editor.rst:40
+msgid "{project} --goto {file}:{line}:{col}"
+msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:4
 #, fuzzy
@@ -57306,15 +57315,16 @@ msgstr ""
 "分!"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:11
+#, fuzzy
 msgid ""
 "Godot always supported standard low-level networking via UDP, TCP and some "
 "higher level protocols such as SSL and HTTP. These protocols are flexible "
-"and can be used for almost anything. However using them to synchronize game "
+"and can be used for almost anything. However, using them to synchronize game "
 "state manually can be a large amount of work. Sometimes that work can't be "
 "avoided or is worth it, for example when working with a custom server "
-"implementation on the backend. But in most cases it's worthwhile to consider "
-"Godot's high-level networking API, which sacrifices some of the fine-grained "
-"control of low-level networking for greater ease of use."
+"implementation on the backend. But in most cases, it's worthwhile to "
+"consider Godot's high-level networking API, which sacrifices some of the "
+"fine-grained control of low-level networking for greater ease of use."
 msgstr ""
 "Godot始终支持通过UDP、TCP和一些更高级别的协议(如SSL和HTTP)进行标准的低级网络"
 "连接。这些协议非常灵活，几乎可以用于任何事情。然而，使用它们来手动同步游戏状"
@@ -57344,8 +57354,9 @@ msgstr ""
 "接的 \"Nagle's algorithm\" )。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:18
+#, fuzzy
 msgid ""
-"UDP is a simpler protocol which only sends packets (and has no concept of a "
+"UDP is a simpler protocol, which only sends packets (and has no concept of a "
 "\"connection\"). No error correction makes it pretty quick (low latency), "
 "but packets may be lost along the way or received in the wrong order. Added "
 "to that, the MTU (maximum packet size) for UDP is generally low (only a few "
@@ -57358,13 +57369,14 @@ msgstr ""
 "织它们，并在部分失败时重试。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:23
+#, fuzzy
 msgid ""
 "In general, TCP can be thought of as reliable, ordered, and slow; UDP as "
 "unreliable, unordered and fast. Because of the large difference in "
-"performance it often makes sense to re-build the parts of TCP wanted for "
-"games (optional reliability and packet order) while avoiding the unwanted "
+"performance, it often makes sense to re-build the parts of TCP wanted for "
+"games (optional reliability and packet order), while avoiding the unwanted "
 "parts (congestion/traffic control features, Nagle's algorithm, etc). Due to "
-"this most game engines come with such an implementation, and Godot is no "
+"this, most game engines come with such an implementation, and Godot is no "
 "exception."
 msgstr ""
 "一般来说，TCP可以被认为是可靠的、有序的和缓慢的;UDP作为不可靠，无序和快速。由"
@@ -57373,8 +57385,9 @@ msgstr ""
 "此，大多数游戏引擎都带有这样的实现，Godot也不例外。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:26
+#, fuzzy
 msgid ""
-"In summary you can use the low-level networking API for maximum control and "
+"In summary, you can use the low-level networking API for maximum control and "
 "implement everything on top of bare network protocols or use the high-level "
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
@@ -57483,9 +57496,10 @@ msgstr ""
 "同时还包括当节点连接或断开时将通知您的信号。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:66
+#, fuzzy
 msgid ""
 "This class interface can abstract most types of network layers, topologies "
-"and libraries. By default Godot provides an implementation based on ENet (:"
+"and libraries. By default, Godot provides an implementation based on ENet (:"
 "ref:`NetworkedMultiplayerEnet <class_NetworkedMultiplayerENet>`), but this "
 "could be used to implement mobile APIs (for adhoc WiFi, Bluetooth) or custom "
 "device/console-specific networking APIs."
@@ -57524,8 +57538,9 @@ msgstr ""
 "为了初始化高级别网络，必须为SceneTree提供一个NetworkedMultiplayerPeer对象。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:79
+#, fuzzy
 msgid ""
-"To create that object it first has to be initialized as a server or client."
+"To create that object, it first has to be initialized as a server or client."
 msgstr "要创建该对象，必须首先将其初始化为服务器或客户端。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:81
@@ -57605,7 +57620,7 @@ msgid ""
 "retrieve the ID for the local system via :ref:`SceneTree."
 "get_network_unique_id() <class_SceneTree_method_get_network_unique_id>`. "
 "These IDs will be useful mostly for lobby management and should generally be "
-"stored as they identify connected peers and thus players. You can also use "
+"stored, as they identify connected peers and thus players. You can also use "
 "IDs to send messages only to certain peers."
 msgstr ""
 "当新的节点加入或断开时，上述信号会在每个连接到服务器的节点(包括在服务器上的节"
@@ -57632,12 +57647,13 @@ msgid "`server_disconnected`"
 msgstr "`server_disconnected`"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:141
+#, fuzzy
 msgid ""
 "Again, all these functions are mainly useful for lobby management or for "
-"adding/removing players on the fly. For these tasks the server clearly has "
-"to work as a server and you have do tasks manually such as sending a newly "
-"connected player information about other already connected players (e.g. "
-"their names, stats, etc)."
+"adding/removing players on the fly. For these tasks, the server clearly has "
+"to work as a server and you have to perform tasks manually such as sending a "
+"newly connected player information about other already connected players (e."
+"g. their names, stats, etc)."
 msgstr ""
 "再说一遍，所有这些函数主要用于大厅管理或动态添加/删除游戏角色。对于这些任务，"
 "服务器显然必须作为服务器工作，并且您必须手动执行任务，例如向一个新连接的游戏"
@@ -57716,9 +57732,10 @@ msgstr ""
 "被重新发送。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:169
+#, fuzzy
 msgid ""
 "Unreliable: if the function call does not arrive, it will not be re-"
-"transmitted, but if it arrives it will do it quickly."
+"transmitted; but if it arrives, it will do it quickly."
 msgstr ""
 "不可靠的:如果函数调用没有到达，它将不会被重新发送，但如果它到达，它将很快完"
 "成。"
@@ -57736,9 +57753,10 @@ msgstr ""
 "能会过时，因为对象在此期间进一步移动了，即使它被可靠地怨恨)。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:174
+#, fuzzy
 msgid ""
-"There is also the `get_rpc_sender_id` function in `SceneTree` which can be "
-"used to check which peer (or peer ID) sent a RPC call."
+"There is also the `get_rpc_sender_id` function in `SceneTree`, which can be "
+"used to check which peer (or peer ID) sent an RPC."
 msgstr ""
 "`SceneTree` 中还有 `get_rpc_sender_id` 函数，这可以用来检查是哪个节点(或节点"
 "ID)发送了RPC调用。"
@@ -57756,16 +57774,18 @@ msgstr ""
 "一个人。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:230
+#, fuzzy
 msgid ""
-"You might have noticed already something different, which is the usage of "
+"You might have already noticed something different, which is the usage of "
 "the `remote` keyword on the `register_player` function:"
 msgstr ""
 "您可能已经注意到一些不同，即 `register_player` 函数中使用 `remote` 关键字:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:236
+#, fuzzy
 msgid ""
 "This keyword has two main uses. The first is to let Godot know that this "
-"function can be called from RPC. If no keywords are added Godot will block "
+"function can be called from RPC. If no keywords are added, Godot will block "
 "any attempts to call functions for security. This makes security work a lot "
 "easier (so a client can't call a function to delete a file on another "
 "client's system)."
@@ -57821,12 +57841,13 @@ msgstr ""
 "用。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:254
+#, fuzzy
 msgid ""
 "With this, lobby management should be more or less explained. Once you have "
-"your game going you will most likely want to add some extra security to make "
-"sure clients don't do anything funny (just validate the info they send from "
-"time to time, or before game start). For the sake of simplicity and because "
-"each game will share different information, this is not shown here."
+"your game going, you will most likely want to add some extra security to "
+"make sure clients don't do anything funny (just validate the info they send "
+"from time to time, or before game start). For the sake of simplicity and "
+"because each game will share different information, this is not shown here."
 msgstr ""
 "基于上面的介绍，也多多少少地解释了大厅管理。一旦您开始开发游戏，您很可能会想"
 "增加一些额外的安全措施来确保客户不会做任何有趣的事情(仅仅验证他们随时发送的信"
@@ -57862,9 +57883,10 @@ msgstr ""
 "个4人游戏，每个客户端需要4个游戏角色节点实例。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:270
+#, fuzzy
 msgid ""
-"So, how to name such nodes? In Godot nodes need to have an unique name. It "
-"must also be relatively easy for a player to tell which nodes represent each "
+"So, how to name such nodes? In Godot, nodes need to have a unique name. It "
+"must also be relatively easy for a player to tell which node represents each "
 "player ID."
 msgstr ""
 "那么，如何命名这些节点呢？在Godot中, 节点需要具有唯一的名称。对于游戏角色来"
@@ -57880,9 +57902,10 @@ msgstr ""
 "它们在每一个客户端中都是一样的，RPC调用也会很容易！下面是一个示例:"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:301
+#, fuzzy
 msgid ""
-"Depending on when you execute pre_configure_game() you may need to change "
-"any calls to ``add_child()`` to be deferred via ``call_deferred()`` as the "
+"Depending on when you execute pre_configure_game(), you may need to change "
+"any calls to ``add_child()`` to be deferred via ``call_deferred()``, as the "
 "SceneTree is locked while the scene is being created (e.g. when ``_ready()`` "
 "is being called)."
 msgstr ""
@@ -57895,9 +57918,10 @@ msgid "Synchronizing game start"
 msgstr "同步游戏开始"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:307
+#, fuzzy
 msgid ""
-"Setting up players might take different amount of time on every peer due to "
-"lag, different hardware, or other reasons. To make sure the game will "
+"Setting up players might take different amounts of time for every peer due "
+"to lag, different hardware, or other reasons. To make sure the game will "
 "actually start when everyone is ready, pausing the game until all players "
 "are ready can be useful:"
 msgstr ""
@@ -57916,10 +57940,11 @@ msgid "Synchronizing the game"
 msgstr "同步游戏"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:339
+#, fuzzy
 msgid ""
-"In most games the goal of multiplayer networking is that the game runs "
+"In most games, the goal of multiplayer networking is that the game runs "
 "synchronized on all the peers playing it. Besides supplying an RPC and "
-"remote member variable set implementation, Godot adds the concept network "
+"remote member variable set implementation, Godot adds the concept of network "
 "masters."
 msgstr ""
 "在多数游戏中，多人联网的目标是确保游戏在所有正在玩游戏的客户端上同步运行。除"
@@ -57936,10 +57961,11 @@ msgid ""
 msgstr "一个节点的网络主人是对该节点具有终极权限的客户端。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:347
+#, fuzzy
 msgid ""
-"When not explicitly set the network master is inherited from the parent "
-"node, which if not changed is always going to be the server (ID 1). Thus the "
-"server has authority over all nodes by default."
+"When not explicitly set, the network master is inherited from the parent "
+"node, which if not changed, is always going to be the server (ID 1). Thus "
+"the server has authority over all nodes by default."
 msgstr ""
 "当未显式设置时，网络主人从父节点继承，这个父节点如果未更改，则始终是服务器"
 "(ID 1)。因此，默认情况下，服务器拥有所有节点的权限。"
@@ -58037,8 +58063,9 @@ msgstr ""
 "实际上获得该函数。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:417
+#, fuzzy
 msgid ""
-"This instance, then, calls the `stun` function in the same instances of that "
+"This instance, then, calls the `stun` method in the same instances of that "
 "same player (but in different peers), and only those which are set as "
 "puppet, making the player look stunned in all the peers (as well as the "
 "current, master one)."
@@ -58048,10 +58075,11 @@ msgstr ""
 "当前的主人)中看起来被击晕。"
 
 #: ../../docs/tutorials/networking/high_level_multiplayer.rst:420
+#, fuzzy
 msgid ""
 "Note that you could also send the stun() message only to a specific player "
 "by using rpc_id(<id>, \"exploded\", bomb_owner). This may not make much "
-"sense for an area-of-effect case like the bomb but in other cases, like "
+"sense for an area-of-effect case like the bomb, but in other cases, like "
 "single target damage."
 msgstr ""
 "请注意，您也可以使用 rpc_id(<id>, \"exploded\", bomb_owner) 将 stun() 消息仅"
@@ -58086,8 +58114,9 @@ msgid "Preparing scene"
 msgstr "准备场景"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:14
+#, fuzzy
 msgid ""
-"Create a new empty scene, add a CanvasLayer as the root node and add an "
+"Create a new empty scene, add a CanvasLayer as the root node and add a "
 "script to it. Then add two child nodes to it: a Button and an HTTPRequest "
 "node. You will need to connect the following signals to the CanvasLayer "
 "script:"
@@ -58154,9 +58183,10 @@ msgstr ""
 "的 ``user-agent`` 头部部分)，您可以像这样使用:"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:53
+#, fuzzy
 msgid ""
-"Please note that for SSL/TLS encryption and thus HTTPS URLs to work you may "
-"need to take some steps as described :ref:`here <doc_ssl_certificates>`."
+"Please note that, for SSL/TLS encryption and thus HTTPS URLs to work, you "
+"may need to take some steps as described :ref:`here <doc_ssl_certificates>`."
 msgstr ""
 "请注意，为可以用到SSL/TLS加密即HTTPS 格式的网址上，您可能需要额外的操作, 见 :"
 "ref:`here <doc_ssl_certificates>` 。"
@@ -58180,8 +58210,9 @@ msgid "Sending data to server"
 msgstr "将数据发送到服务器"
 
 #: ../../docs/tutorials/networking/http_request_class.rst:61
+#, fuzzy
 msgid ""
-"Until now we have limited ourselves to requesting data from a server. But "
+"Until now, we have limited ourselves to requesting data from a server. But "
 "what if you need to send data to the server? Here is a common way of doing "
 "it:"
 msgstr ""
@@ -58203,11 +58234,12 @@ msgid "HTTP client class"
 msgstr "HTTP客户端类"
 
 #: ../../docs/tutorials/networking/http_client_class.rst:6
+#, fuzzy
 msgid ""
 ":ref:`HTTPClient <class_HTTPClient>` provides low-level access to HTTP "
-"communication. For a more higher-level interface, you may want to take a "
-"look at :ref:`HTTPRequest <class_HTTPRequest>` first, which has a tutorial "
-"available :ref:`here <doc_http_request_class>`."
+"communication. For a higher-level interface, you may want to take a look at :"
+"ref:`HTTPRequest <class_HTTPRequest>` first, which has a tutorial available :"
+"ref:`here <doc_http_request_class>`."
 msgstr ""
 ":ref:`HTTPClient <class_HTTPClient>` 提供对HTTP通信的低级别访问。 关于更高级"
 "别的接口，您可能需要先看一下 :ref:`HTTPRequest <class_HTTPRequest>` ，这儿有"
@@ -58303,10 +58335,11 @@ msgstr ""
 "过程，但它更加“正式”并且确保您的身份被清晰地表示。"
 
 #: ../../docs/tutorials/networking/ssl_certificates.rst:52
+#, fuzzy
 msgid ""
 "Unless you are working with large companies or corporations, or need to "
 "connect to someone else's servers (i.e., connecting to Google or some other "
-"REST API provider via HTTPS) this method is not as useful."
+"REST API provider via HTTPS), this method is not as useful."
 msgstr ""
 "除非您在大型公司工作或与其合作，或者需要连接到其他人的服务器(即通过HTTPS连接"
 "到Google或其他REST API提供商)，否则此方法并不实用。"
@@ -58359,8 +58392,9 @@ msgstr ""
 "站 <https://godotengine.org/asset-library/asset>`_ 上下载。"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:11
+#, fuzzy
 msgid ""
-"On the surface the Asset Library might look and function similar to asset "
+"On the surface, the Asset Library might look and function similar to asset "
 "stores available for other engines, such as Unity's Asset Store, or Unreal "
 "Engine's Marketplace, where you can submit both freely-available assets, as "
 "well as paid, commercial ones. In addition, often times such assets are "
@@ -58408,8 +58442,9 @@ msgid "Can paid assets be uploaded to the asset library?"
 msgstr "需要收费的资源可以上传到资源馆吗？"
 
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:34
+#, fuzzy
 msgid ""
-"Not to the official one, though in the future there might be other asset "
+"Not to the official one, though in the future, there might be other asset "
 "libraries which allow it. That said, you are allowed to monetize and sell "
 "Godot assets outside the Asset Library."
 msgstr ""
@@ -58434,9 +58469,10 @@ msgstr ""
 "asset>`_ 上访问AssetLib的网页，这就是您第一次访问它时的样子:"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:18
+#, fuzzy
 msgid ""
-"At the top you see the **header** which takes you to various other parts of "
-"the AssetLib - at the moment it's empty as we are not logged in."
+"At the top, you see the **header**, which takes you to various other parts "
+"of the AssetLib - at the moment, it's empty, as we are not logged in."
 msgstr ""
 "在顶部，您会看到 **标题** ，它将您带到AssetLib的各个其他部分 - 此时它还是空"
 "的，因为我们尚未登录。"
@@ -58600,9 +58636,10 @@ msgid "Then, you can use your username and password to log in."
 msgstr "然后，您可以使用您的用户名和密码登录。"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:94
+#, fuzzy
 msgid ""
 "This will change the look of the AssetLib header. Now you get access to a "
-"handful new functions:"
+"handful of new functions:"
 msgstr "这将更改AssetLib标题部分的外观。 现在您可以访问一些新功能:"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:97
@@ -58624,9 +58661,10 @@ msgid "|image6|"
 msgstr "|image6|"
 
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:103
+#, fuzzy
 msgid ""
 "You can learn how to submit assets to the Library, and what the asset "
-"submission guidelines are, in the next part of this tutorial, ::ref:"
+"submission guidelines are, in the next part of this tutorial, :ref:"
 "`doc_uploading_to_assetlib`."
 msgstr ""
 "您可以在本教程的下一部分 : :ref:`doc_uploading_to_assetlib` 中学习如何向资源"
@@ -58645,11 +58683,7 @@ msgstr ""
 "您也可以直接在Godot引擎中访问AssetLib。 它可以从两个位置访问- 在项目管理器"
 "的“模板”选项卡中，或则在项目内部的工作区列表中。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:113
-msgid "|image7| |image14|"
-msgstr "|image7| |image14|"
-
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:116
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:117
 msgid ""
 "Click on it, and Godot will fetch info about the assets from the AssetLib. "
 "Once it's finished, you will see a window similar to what the AssetLib "
@@ -58658,7 +58692,7 @@ msgstr ""
 "单击它，Godot将从AssetLib获取有关资源的信息。 一旦完成，您将看到一个类似于"
 "AssetLib网站的窗口，但有一些不同之处:"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:122
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:123
 msgid ""
 "Similarly to the web version of the AssetLib, here you can search for assets "
 "by category, name, and sort them by factors such as name or edit date."
@@ -58666,7 +58700,7 @@ msgstr ""
 "与AssetLib的网页版本类似，您可以在此处按类别，名称搜索资源，并按名称或编辑日"
 "期等因素对其进行排序。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:125
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:126
 msgid ""
 "Notably, you can only fetch assets for the current version of Godot you are "
 "running. Also, you can only download Projects, Demos and Templates from the "
@@ -58681,7 +58715,7 @@ msgstr ""
 "能从项目内的AssetLib下载。 此外，与使用网页前端不同的是，搜索结果会实时更新"
 "(您不必在每次更改搜索查询后再按搜索)。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:133
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:134
 msgid ""
 "In the future, you will be able to choose a different AssetLib provider to "
 "fetch assets from (using the Site dropdown menu), however currently only the "
@@ -58693,11 +58727,11 @@ msgstr ""
 "但是目前只支持官方的 `Godot网站 <https://godotengine.org>`_ 版本的AssetLib ，"
 "和可能在本地Web服务器上运行的资源馆(见localhost选项)。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:139
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:140
 msgid "When you click on an asset, you will see more information about it."
 msgstr "单击资源时，您将看到有关它的更多信息。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:143
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:144
 msgid ""
 "If you click on the Install button, Godot will fetch an archive of the "
 "asset, and will track download progress of it at the bottom of the editor "
@@ -58706,14 +58740,14 @@ msgstr ""
 "如果单击Install按钮，Godot引擎将下载资源的压缩包，并将在编辑器窗口的底部显示"
 "它的下载进度。 如果下载失败，您可以使用Retry按钮重试。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:149
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:150
 msgid ""
 "When it finishes, you can proceed to install it using the Install button. "
 "This will bring up the Package Installer window."
 msgstr ""
 "完成后，您可以使用Install按钮继续安装它。 这将打开Package Installer窗口。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:154
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:155
 msgid ""
 "Here you can see a list of all the files that will be installed. You can "
 "tick off any of the files that you do not wish to install, and Godot will "
@@ -58725,7 +58759,7 @@ msgstr ""
 "Godot引擎也会告知您无法安装的文件的任何问题。 这些文件将以红色显示，将鼠标悬"
 "停在它们上方会显示一条消息，说明无法安装的原因。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:162
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:163
 msgid ""
 "Once you are done, you can press the Install button, which will unzip all "
 "the files in the archive, and import any assets contained therein, such as "
@@ -58736,7 +58770,7 @@ msgstr ""
 "所有资源，例如图像或3D模型。 完成此操作后，您应该会看到一条消息，指出Package"
 "安装已完成。"
 
-#: ../../docs/tutorials/assetlib/using_assetlib.rst:169
+#: ../../docs/tutorials/assetlib/using_assetlib.rst:170
 msgid ""
 "You may also use the Import button to import asset archives obtained "
 "elsewhere (such as downloading them directly from the AssetLib web "
@@ -58752,9 +58786,10 @@ msgid "Submitting to the Asset Library"
 msgstr "提交资源到资源馆"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:9
+#, fuzzy
 msgid ""
-"This tutorial aims to serve as both a guide on how you can submit your own "
-"assets to the Godot Asset Library and share them with the Godot community."
+"This tutorial aims to serve as a guide on how you can submit your own assets "
+"to the Godot Asset Library and share them with the Godot community."
 msgstr "本教程旨在指导您如何向Godot资源馆提交自己的资源并与Godot社区共享它们。"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:12
@@ -58816,8 +58851,9 @@ msgid "**Godot version**:"
 msgstr "**Godot 版本**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:38
+#, fuzzy
 msgid ""
-"The version of the engine that the asset works with. Currently it's not "
+"The version of the engine that the asset works with. Currently, it's not "
 "possible to have a single asset entry contain downloads for multiple engine "
 "versions, so you may need to re-submit the asset multiple times, with an "
 "entry for each Godot version it supports. This is particularly important "
@@ -58850,9 +58886,10 @@ msgid "**Repository host**:"
 msgstr "**存储库主机**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:51
+#, fuzzy
 msgid ""
 "Assets uploaded to the AssetLib are not hosted on it directly. Instead, they "
-"point to repositories hosted on third-party Git providers such as GitHub, "
+"point to repositories hosted on third-party Git providers, such as GitHub, "
 "GitLab or Bitbucket. This is where you choose which provider your asset "
 "uses, so the site can compute the final download link."
 msgstr ""
@@ -58973,8 +59010,9 @@ msgid "**Thumbnail URL**:"
 msgstr "**缩略图地址**:"
 
 #: ../../docs/tutorials/assetlib/uploading_to_assetlib.rst:91
+#, fuzzy
 msgid ""
-"An URL to a image that will be used as a thumbnail for the preview. This "
+"A URL to an image that will be used as a thumbnail for the preview. This "
 "option will be removed eventually, and thumbnails will be automatically "
 "computed instead."
 msgstr ""
@@ -59024,15 +59062,17 @@ msgid ""
 msgstr "本教程为您提供了迈向Godot游戏引擎中AR和VR世界的跳板。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:8
+#, fuzzy
 msgid ""
 "A new architecture was introduced in Godot 3 called the AR/VR Server. On top "
-"of this architecture specific implementations are available as interfaces "
+"of this architecture, specific implementations are available as interfaces, "
 "most of which are plugins based on GDNative. This tutorial focuses purely on "
 "the core elements abstracted by the core architecture. This architecture has "
 "enough features for you to create an entire VR experience that can then be "
-"deployed for various interfaces. However each platform often has some unique "
-"features that are impossible to abstract. Such features will be documented "
-"on the relevant interfaces and fall outside of the scope of this primer."
+"deployed for various interfaces. However, each platform often has some "
+"unique features that are impossible to abstract. Such features will be "
+"documented on the relevant interfaces and fall outside of the scope of this "
+"primer."
 msgstr ""
 "在Godot 3中引入了一种称为AR / VR Server的新架构。 在此体系结构之上，特定的实"
 "现可用作接口，其中大多数是基于GDNative的插件。 本教程仅关注核心架构抽象的核心"
@@ -59045,10 +59085,11 @@ msgid "AR/VR server"
 msgstr "AR / VR服务器"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:14
+#, fuzzy
 msgid ""
-"When Godot starts each available interface will make itself known to the AR/"
-"VR server. GDNative interfaces are setup as singletons, as long as they are "
-"added to the list of GDNative singletons in your project they will make "
+"When Godot starts, each available interface will make itself known to the AR/"
+"VR server. GDNative interfaces are setup as singletons; as long as they are "
+"added to the list of GDNative singletons in your project, they will make "
 "themselves known to the server."
 msgstr ""
 "当Godot启动时，每个可用的接口将使自己为AR / VR服务器所知。 GDNative接口设置为"
@@ -59059,12 +59100,12 @@ msgstr ""
 msgid ""
 "You can use the function :ref:`get_interfaces() "
 "<class_ARVRServer_method_get_interfaces>` to return a list of available "
-"interfaces but for this tutorial we're going to use the :ref:`native mobile "
-"VR interface <class_MobileVRInterface>` in our examples. This interface is a "
-"straightforward implementation that uses the 3DOF sensors on your phone for "
-"orientation and outputs a stereoscopic image to screen. It is also available "
-"in the Godot core and outputs to screen on desktop which makes it ideal for "
-"prototyping or a tutorial such as this one."
+"interfaces, but for this tutorial, we're going to use the :ref:`native "
+"mobile VR interface <class_MobileVRInterface>` in our examples. This "
+"interface is a straightforward implementation that uses the 3DOF sensors on "
+"your phone for orientation and outputs a stereoscopic image to the screen. "
+"It is also available in the Godot core and outputs to screen on desktop, "
+"which makes it ideal for prototyping or a tutorial such as this one."
 msgstr ""
 "您可以使用函数 :ref:`get_interfaces <class_ARVRServer_get_interfaces>` 返回可"
 "用接口列表，但在本教程中，我们将在示例中使用 :ref:`native mobile VR "
@@ -59073,27 +59114,30 @@ msgstr ""
 "出到桌面上的屏幕，这使其成为原型设计或此类教程的理想选择。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:18
-msgid "To enable an interface you execute the following code:"
+#, fuzzy
+msgid "To enable an interface, you execute the following code:"
 msgstr "要启用界面，请执行以下代码:"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:35
+#, fuzzy
 msgid ""
-"This code finds the interface we wish to use, initializes it and if that is "
-"successful binds the main viewport to the interface. This last step gives "
-"some control over the viewport to the interface which automatically enables "
+"This code finds the interface we wish to use, initializes it and, if that is "
+"successful, binds the main viewport to the interface. This last step gives "
+"some control over the viewport to the interface, which automatically enables "
 "things like stereoscopic rendering on the viewport."
 msgstr ""
 "此代码找到我们希望使用的界面，对其进行初始化，如果成功，则将主视区绑定到界"
 "面。 最后一步是对视区的一些控制，它可以自动启用视区上的立体渲染。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:37
+#, fuzzy
 msgid ""
-"For our mobile vr interface, and any interface where the main input is "
+"For our mobile VR interface, and any interface where the main input is "
 "directly displayed on screen, the main viewport needs to be the viewport "
 "where arvr is set to true. But for interfaces that render on an externally "
-"attached device you can use a secondary viewport. In this later case a "
+"attached device, you can use a secondary viewport. In the latter case, a "
 "viewport that shows its output on screen will show an undistorted version of "
-"the left eye while showing the fully processed stereoscopic output on the "
+"the left eye, while showing the fully processed stereoscopic output on the "
 "device."
 msgstr ""
 "对于我们的移动vr界面，以及主要输入直接显示在屏幕上的任何界面，主视区需要是"
@@ -59102,11 +59146,12 @@ msgstr ""
 "备上显示完全处理的立体输出。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:39
+#, fuzzy
 msgid ""
-"Finally you should only initialize an interface once, switching scenes and "
+"Finally, you should only initialize an interface once; switching scenes and "
 "reinitializing interfaces will just introduce a lot of overhead. If you want "
-"to turn the headset off temporarily just disable the viewport or set arvr to "
-"false on the viewport. In most scenarios though you wouldn't disable the "
+"to turn the headset off temporarily, just disable the viewport or set arvr "
+"to false on the viewport. In most scenarios though, you wouldn't disable the "
 "headset once you're in VR, this can be disconcerting to the gamer."
 msgstr ""
 "最后您应该只初始化一次界面，切换场景和重新初始化界面只会引入很多开销。 如果要"
@@ -59130,14 +59175,16 @@ msgid ":ref:`ARVROrigin <class_ARVROrigin>` - our origin point in the world"
 msgstr ":ref:`ARVROrigin <class_ARVROrigin>` - 我们在世界上的起源点"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:47
+#, fuzzy
 msgid ""
-":ref:`ARVRCamera <class_ARVRCamera>` - a special subclass of the camera "
+":ref:`ARVRCamera <class_ARVRCamera>` - a special subclass of the camera, "
 "which is positionally tracked"
 msgstr ":ref:`ARVRCamera <class_ARVRCamera>` - 位置跟踪的摄像机的特殊子类"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:48
+#, fuzzy
 msgid ""
-":ref:`ARVRController <class_ARVRController>` - a new spatial class that "
+":ref:`ARVRController <class_ARVRController>` - a new spatial class, which "
 "tracks the location of a controller"
 msgstr ""
 ":ref:`ARVRController <class_ARVRController>` - 一个轨道控制器位置的新空间类"
@@ -59157,16 +59204,17 @@ msgid ""
 msgstr "前两个必须存在于场景中，AR / VR才能工作，本教程仅关注它们。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:53
+#, fuzzy
 msgid ""
 ":ref:`ARVROrigin <class_ARVROrigin>` is an important node, you must have one "
 "and only one of these somewhere in your scene. This node maps the center of "
 "your real world tracking space to a location in your virtual world. "
 "Everything else is positionally tracked in relation to this point. Where "
-"this point lies exactly differs from one implementation to another but the "
+"this point lies exactly differs from one implementation to another, but the "
 "best example to understand how this node works is to take a look at a room "
 "scale location. While we have functions to adjust the point to center it on "
-"the player by default the origin point will be the center location of the "
-"room you are in. As you physically walk around the room the location of the "
+"the player by default, the origin point will be the center location of the "
+"room you are in. As you physically walk around the room, the location of the "
 "HMD is tracked in relation to this center position and the tracking is "
 "mirror in the virtual world."
 msgstr ""
@@ -59178,28 +59226,30 @@ msgstr ""
 "心进行跟踪 位置和跟踪在虚拟世界中是镜像。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:55
+#, fuzzy
 msgid ""
-"To keep things simple, when you physically move around your room the ARVR "
+"To keep things simple, when you physically move around your room, the ARVR "
 "Origin point stays where it is, the position of the camera and controllers "
 "will be adjusted according to your movements. When you move through the "
 "virtual world, either through controller input or when you implement a "
-"teleport system it is the origin point which you will have to adjust the "
-"position of."
+"teleport system, it is the position of the origin point which you will have "
+"to adjust."
 msgstr ""
 "为了简单起见，当您在房间内移动时，ARVR Origin点保持原样，相机和控制器的位置将"
 "根据您的移动进行调整。 当您在虚拟世界中移动时，无论是通过控制器输入还是实施传"
 "送系统，它都是您必须调整位置的原点。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:58
+#, fuzzy
 msgid ""
 ":ref:`ARVRCamera <class_ARVRCamera>` is the second node that must always be "
 "a part of your scene and it must always be a child node of your origin node. "
 "It is a subclass of Godot's normal camera. However, its position is "
 "automatically updated each frame based on the physical orientation and "
 "position of the HMD. Also due to the precision required for rendering to an "
-"HMD or rendering an AR overlay over a real world camera most of the standard "
-"camera properties are ignored. The only properties of the camera that are "
-"used are the near and far plane settings. The FOV, aspect ratio and "
+"HMD or rendering an AR overlay over a real world camera, most of the "
+"standard camera properties are ignored. The only properties of the camera "
+"that are used are the near and far plane settings. The FOV, aspect ratio and "
 "projection mode are all ignored."
 msgstr ""
 ":ref:`ARVRCamera <class_ARVRCamera>` 是第二个必须始终作为场景一部分的节点，它"
@@ -59209,9 +59259,10 @@ msgstr ""
 "设置。 FOV，宽高比和投影模式都被忽略。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:60
+#, fuzzy
 msgid ""
-"Note that for our native mobile VR implementation there is no positional "
-"tracking, only the orientation of the phone and by extension the HMD is "
+"Note that, for our native mobile VR implementation, there is no positional "
+"tracking, only the orientation of the phone and by extension, the HMD is "
 "tracked. This implementation artificially places the camera at a height (Y) "
 "of 1.85."
 msgstr ""
@@ -59219,15 +59270,17 @@ msgstr ""
 "该实现人为地将相机放置在1.85的高度(Y)处。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:62
+#, fuzzy
 msgid ""
-"Conclusion, your minimum setup in your scene to make AR or VR work should "
+"Conclusion: your minimum setup in your scene to make AR or VR work should "
 "look like this:"
 msgstr "结论，您在场景中进行AR或VR工作的最小设置应如下所示:"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:66
+#, fuzzy
 msgid ""
-"And that's all you need to get started. Obviously you need to add something "
-"more into your scene so there is something to see but after that you can "
+"And that's all you need to get started. Obviously, you need to add something "
+"more into your scene, so there is something to see, but after that, you can "
 "export the game to your phone of choice, pop it into a viewer and away you "
 "go."
 msgstr ""
@@ -59245,20 +59298,21 @@ msgid ""
 msgstr "我们需要在本入门手册中简要介绍一些其他一些重要的知识。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:73
+#, fuzzy
 msgid ""
-"The first are our units. In normal 3D games you don't have to think a lot "
-"about units. As long as everything is at the same scale a box sized 1 unit "
+"The first are our units. In normal 3D games, you don't have to think a lot "
+"about units. As long as everything is at the same scale, a box sized 1 unit "
 "by 1 unit by 1 unit can be any size from a cube you can hold in your hand to "
-"something the size of a building. In AR and VR this changes because things "
+"something the size of a building. In AR and VR, this changes because things "
 "in your virtual world are mapped to things in the real world. If you step 1 "
 "meter forward in the real world, but you only move 1 cm forward in your "
 "virtual world, you have a problem. The same with the position of your "
-"controllers, if they don't appear in the right relative space it breaks the "
-"immersion for the player. Most VR platforms including our AR/VR Server "
-"assumes that 1 unit = 1 meter. The AR/VR server however has a property that "
-"for convenience is also exposed on the ARVROrigin node called world scale. "
-"For instance setting this to a value of 10 it changes our coordinate system "
-"so 10 units = 1 meter."
+"controllers; if they don't appear in the right relative space, it breaks the "
+"immersion for the player. Most VR platforms, including our AR/VR Server, "
+"assume that 1 unit = 1 meter. The AR/VR server, however, has a property "
+"that, for convenience, is also exposed on the ARVROrigin node called world "
+"scale. For instance, setting this to a value of 10 changes our coordinate "
+"system so 10 units = 1 meter."
 msgstr ""
 "首先是我们的单位。 在普通的3D游戏中，您不必考虑很多单位。 只要所有东西都处于"
 "相同的比例，一个1个单位乘1个单位的盒子就可以是任何大小，从您可以握在手中的立"
@@ -59271,11 +59325,12 @@ msgstr ""
 "因此10个单位= 1米。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:77
+#, fuzzy
 msgid ""
 "Performance is another thing that needs to be carefully considered. "
-"Especially VR taxes your game a lot more then most people realise. For "
-"mobile VR you have to be extra careful here but even for desktop games there "
-"are three factors that make life extra difficult:"
+"Especially VR taxes your game a lot more than most people realise. For "
+"mobile VR, you have to be extra careful here, but even for desktop games, "
+"there are three factors that make life extra difficult:"
 msgstr ""
 "性能是另一件需要仔细考虑的事情。 特别是VR对您的游戏征税比大多数人意识到的要多"
 "得多。 对于移动VR，您必须要格外小心，但即使是桌面游戏，也有三个因素会让生活变"
@@ -59292,12 +59347,13 @@ msgstr ""
 "考虑到支持新的MultiView OpenGL扩展，但双眼渲染图像仍然存在额外的工作量"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:80
+#, fuzzy
 msgid ""
-"A normal game will run acceptable on 30fps and ideally manages 60fps. That "
+"A normal game will run acceptably on 30fps and ideally manages 60fps. That "
 "gives you a big range to play with between lower end and higher end "
-"hardware. For any HMD application of AR or VR however 60fps is the absolute "
-"minimum and you should target your games to run at a stable 90fps to ensure "
-"your users don't get motion sickness right off the bat."
+"hardware. For any HMD application of AR or VR, however, 60fps is the "
+"absolute minimum and you should target your games to run at a stable 90fps "
+"to ensure your users don't get motion sickness right off the bat."
 msgstr ""
 "正常游戏将以30fps的速度运行，理想情况下可以管理60fps。 这使您可以在低端和高端"
 "硬件之间进行大范围的操作。 对于AR或VR的任何HMD应用，但60fps是绝对最小值，您应"
@@ -59315,10 +59371,11 @@ msgstr ""
 "数AR应用程序来说，这不是一个问题。"
 
 #: ../../docs/tutorials/vr/vr_primer.rst:83
+#, fuzzy
 msgid ""
 "All in all, the workload your GPU has in comparison with a normal 3D game is "
-"a fair amount higher. While things are in the pipeline to improve this such "
-"as MultiView and foveated rendering these aren't supported on all devices. "
+"a fair amount higher. While things are in the pipeline to improve this, such "
+"as MultiView and foveated rendering, these aren't supported on all devices. "
 "This is why you see many VR games using a more art style and if you pay "
 "close attention to those VR games that go for realism, you'll probably "
 "notice they're a bit more conservative on the effects or use some good old "
@@ -59360,9 +59417,10 @@ msgstr ""
 "在VR中，1个单位通常被认为是1米。 如果按照该标准设计资源，可以省去很多麻烦。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:18
+#, fuzzy
 msgid ""
 "In your 3D model program, see if there is a way to measure and use real "
-"world distances. In Blender you can use the MeasureIt add-on, in Maya you "
+"world distances. In Blender, you can use the MeasureIt add-on; in Maya, you "
 "can use the Measure Tool."
 msgstr ""
 "在3D模型程序中，查看是否有测量和使用真实世界距离的方法。 在Blender中，您可以"
@@ -59400,13 +59458,15 @@ msgid ""
 msgstr "如何制作用于移动游戏角色的定向移动系统(移动)。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:27
+#, fuzzy
 msgid ""
-"How to make a :ref:`RigidBody <class_RigidBody>` based pick up and drop "
+"How to make a :ref:`RigidBody <class_RigidBody>`-based pick up and drop "
 "system."
 msgstr "如何制作一个 :ref:`RigidBody <class_RigidBody>` 基于拾取和放下系统。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:28
-msgid "How to make various items that can be used in VR"
+#, fuzzy
+msgid "How to make various items that can be used in VR."
 msgstr "如何制作可在VR中使用的各种物品"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:30
@@ -59421,20 +59481,22 @@ msgstr ""
 "列。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:35
+#, fuzzy
 msgid ""
-"This tutorial assumes you know have experience working with the Godot "
-"editor, have basic programming experience in GDScript, and have basic 3D "
-"game development experience."
+"This tutorial assumes you know how to and have experience working with the "
+"Godot editor, have basic programming experience in GDScript, and have basic "
+"3D game development experience."
 msgstr ""
 "本教程假设您具有使用Godot编辑器的经验，具有GDScript的基本编程经验，并具有基本"
 "的3D游戏开发经验。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:38
+#, fuzzy
 msgid ""
-"Also, it is assumed you have both a OpenVR-ready headset and two OpenVR-"
+"Also, it is assumed you have both an OpenVR-ready headset and two OpenVR-"
 "ready controllers! This tutorial was written using a Windows Mixed Reality "
 "headset on Windows 10, so the tutorial is written to work on that headset. "
-"You may need to adjust the code to work with other VR headsets such as the "
+"You may need to adjust the code to work with other VR headsets, such as the "
 "Oculus Rift or HTC Vive."
 msgstr ""
 "此外，假设您有一个支持OpenVR的耳机和两个支持OpenVR的控制器！ 本教程是在"
@@ -59510,10 +59572,12 @@ msgid "You can find the finished project at the bottom of this page."
 msgstr "您可以在本页底部找到已完成的项目。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:65
+#, fuzzy
 msgid ""
 "While these assets are not necessarily required to use the scripts provided "
-"in this tutorial, they will make the tutorial much easier to follow as there "
-"are several premade scenes we will be using throughout the tutorial series."
+"in this tutorial, they will make the tutorial much easier to follow, as "
+"there are several premade scenes we will be using throughout the tutorial "
+"series."
 msgstr ""
 "虽然这些资源不一定需要使用本教程中提供的脚本，但它们将使教程更容易理解，因为"
 "我们将在整个教程系列中使用几个预制场景。"
@@ -59544,8 +59608,9 @@ msgstr ""
 "`MeshInstance <class_MeshInstance>` 节点。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:76
+#, fuzzy
 msgid ""
-"The other thing to notice before we jump into writing the code is how the :"
+"The other thing to notice, before we jump into writing the code, is how the :"
 "ref:`ARVROrigin <class_ARVROrigin>` node works. How it works is kind of hard "
 "to explain, especially if you have never used VR before, but here is the "
 "gist of it: The :ref:`ARVROrigin <class_ARVROrigin>` node is the center "
@@ -59589,9 +59654,10 @@ msgstr ""
 "们更适合这个世界。 如前所述，保持比例相对稳定非常重要！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:88
+#, fuzzy
 msgid ""
 "Another thing to notice here is how we have everything set up under the :ref:"
-"`ARVROrigin <class_ARVROrigin>` node. The player camera is a :ref:"
+"`ARVROrigin <class_ARVROrigin>` node. The player camera is an :ref:"
 "`ARVRCamera <class_ARVRCamera>` that represents the player's head in the "
 "game. The :ref:`ARVRCamera <class_ARVRCamera>` will be offset by the "
 "player's height, and if there is room tracking, then the camera can move "
@@ -59620,11 +59686,12 @@ msgstr ""
 "ref:`ARVROrigin <class_ARVROrigin>` 是因为我们希望它能够轻松访问VR控制器。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:96
+#, fuzzy
 msgid ""
 "The final thing to note is that there are two :ref:`ARVRController "
 "<class_ARVRController>` nodes, and these will represent the left and right "
-"controllers in 3D space. A :ref:`ARVRController <class_ARVRController>` with "
-"an ID of 1 is the left hand, while a :ref:`ARVRController "
+"controllers in 3D space. An :ref:`ARVRController <class_ARVRController>` "
+"with an ID of 1 is the left hand, while an :ref:`ARVRController "
 "<class_ARVRController>` with an ID of 2 is the right hand."
 msgstr ""
 "最后要注意的是有两个 :ref:`ARVRController <class_ARVRController>` 节点，这些"
@@ -59637,8 +59704,9 @@ msgid "Starting VR"
 msgstr "启动VR"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:102
+#, fuzzy
 msgid ""
-"First, let's get the VR up and going! While ``Game.tscn`` is open, select "
+"Firstly, let's get the VR up and going! While ``Game.tscn`` is open, select "
 "the ``Game`` node and make a new script called ``Game.gd``. Add the "
 "following code:"
 msgstr ""
@@ -59662,20 +59730,22 @@ msgid "With that done, let's quickly go over what this script does."
 msgstr "完成后，让我们快速浏览一下这个脚本的功能。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:125
+#, fuzzy
 msgid ""
-"First, we find a VR interface from the ARVR server. We do this because by "
-"default Godot does not include any VR interfaces, but rather exposes a API "
+"Firstly, we find a VR interface from the ARVR server. We do this because by "
+"default Godot does not include any VR interfaces, but rather exposes an API "
 "so anyone can make AR/VR interfaces with GDNative/C++. Next, we check to see "
-"if a OpenVR interface was found, and then we initialize it."
+"if an OpenVR interface was found, and then we initialize it."
 msgstr ""
 "首先，我们从ARVR服务器找到VR界面。 我们这样做是因为默认情况下，Godot不包含任"
 "何VR界面，而是公开API，因此任何人都可以使用GDNative / C++制作AR / VR界面。 接"
 "下来，我们检查是否找到了OpenVR界面，然后我们初始化它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:128
+#, fuzzy
 msgid ""
 "Assuming nothing went wrong with initializing, we then turn the main :ref:"
-"`Viewport <class_Viewport>` into a AR/VR viewport, by setting ``arvr`` to "
+"`Viewport <class_Viewport>` into an AR/VR viewport, by setting ``arvr`` to "
 "``true``. We also set HDR to ``false``, since you cannot use HDR in OpenVR."
 msgstr ""
 "假设初始化没有出错，我们将main :ref:`Viewport <class_Viewport>` 转换为AR / VR"
@@ -59683,11 +59753,12 @@ msgstr ""
 "OpenVR中使用HDR。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:131
+#, fuzzy
 msgid ""
-"Then we disable V-Sync and set the target FPS to 90 frames per second. Most "
-"VR headsets run at 90 Hz, and since the game will both display on the VR "
-"headset and on the computer's monitor, we want to disable V-Sync and set the "
-"target FPS manually so the computer's monitor does not drag the VR display "
+"Then, we disable V-Sync and set the target FPS to 90 frames per second. Most "
+"VR headsets run at 90 Hz, and since the game will display on both the VR "
+"headset and the computer's monitor, we want to disable V-Sync and set the "
+"target FPS manually, so the computer's monitor does not drag the VR display "
 "down to 60 FPS."
 msgstr ""
 "然后我们禁用V-Sync并将目标FPS设置为每秒90帧。 大多数VR头戴式耳机以90 Hz的频率"
@@ -59718,9 +59789,10 @@ msgid "Coding the controllers"
 msgstr "编码控制器"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:145
+#, fuzzy
 msgid ""
 "While perhaps interesting if we were making a VR film, we really want to do "
-"more than stand around and look. Currently we cannot move outside of the "
+"more than stand around and look. Currently, we cannot move outside of the "
 "room tracking boundaries (assuming your VR headset has room tracking) and we "
 "cannot interact with anything! Let's change that!"
 msgstr ""
@@ -59740,19 +59812,21 @@ msgstr ""
 "<class_RigidBody>` 节点。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:151
+#, fuzzy
 msgid ""
 "Open either ``Left_Controller.tscn`` or ``Right_Controller.tscn``. Feel free "
-"to look at how the scene is set up; there is only a couple things of note to "
-"point out."
+"to look at how the scene is set up; there are only a couple things of note "
+"to point out."
 msgstr ""
 "打开 ``Left_Controller.tscn`` 或``Right_Controller.tscn``。 随意看看场景是如"
 "何设置的; 只有几点值得注意。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:153
+#, fuzzy
 msgid ""
-"First, notice how there is a couple :ref:`Raycast <class_Raycast>` nodes. We "
-"will be using one :ref:`Raycast <class_Raycast>` to teleport around the game "
-"world (``Raycast``) and we will use the other for picking up objects "
+"Firstly, notice how there are a couple :ref:`Raycast <class_Raycast>` nodes. "
+"We will be using one :ref:`Raycast <class_Raycast>` to teleport around the "
+"game world (``Raycast``) and we will use the other for picking up objects "
 "(``GrabCast``) if the player is using :ref:`Raycast <class_Raycast>` nodes "
 "to pick up objects."
 msgstr ""
@@ -59854,13 +59928,15 @@ msgid ""
 msgstr "``hand_mesh``:手形网格，用于表示游戏角色手上没有任何东西时的手牌。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:426
+#, fuzzy
 msgid ""
-"``teleport_pos``: The position the teleport :ref:`Raycast <class_Raycast>` "
-"is aimed at."
+"``teleport_pos``: The position at which the teleport :ref:`Raycast "
+"<class_Raycast>` is aimed."
 msgstr "``teleport_pos``:传送的位置 :ref:`Raycast <class_Raycast>` 的目标是。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:427
-msgid "``teleport_mesh``: The meshed used to represent the teleport position."
+#, fuzzy
+msgid "``teleport_mesh``: The mesh used to represent the teleport position."
 msgstr "``teleport_mesh``:用于表示传送位置的网格。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:428
@@ -59902,9 +59978,10 @@ msgid "Next, let's go through ``_ready``."
 msgstr "接下来，让我们通过 ``_ready`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:438
+#, fuzzy
 msgid ""
-"First we get the teleport :ref:`Raycast <class_Raycast>` node and assign it "
-"to ``teleport_raycast``."
+"Firstly, we get the teleport :ref:`Raycast <class_Raycast>` node and assign "
+"it to ``teleport_raycast``."
 msgstr ""
 "首先我们得到teleport :ref:`Raycast <class_Raycast>` 节点并将其分配给 "
 "``teleport_raycast`` 。"
@@ -59950,8 +60027,9 @@ msgstr ""
 "号。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:454
+#, fuzzy
 msgid ""
-"First, we check to see if the teleportation button is down or not. If the "
+"Firstly, we check to see if the teleportation button is down or not. If the "
 "teleportation button is down, we then force the teleportation :ref:`Raycast "
 "<class_Raycast>` to update, which will give us frame perfect collision "
 "detection. We then check to see if the :ref:`Raycast <class_Raycast>` is "
@@ -59962,10 +60040,11 @@ msgstr ""
 "ref:`Raycast <class_Raycast>` 是否与任何东西发生碰撞。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:457
+#, fuzzy
 msgid ""
 "Next, we check to see if the collision body the :ref:`Raycast "
 "<class_Raycast>` is colliding with is a :ref:`StaticBody "
-"<class_StaticBody>`. We do this to ensures the player can only teleport on :"
+"<class_StaticBody>`. We do this to ensure the player can only teleport on :"
 "ref:`StaticBody <class_StaticBody>` nodes. We then check to see if the ``Y`` "
 "value returned by the :ref:`Raycast <class_Raycast>`'s "
 "``get_collision_normal`` function is more than ``0.85``, which is mostly "
@@ -59989,12 +60068,13 @@ msgstr ""
 "``teleport_pos`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:464
+#, fuzzy
 msgid ""
 "The next thing we check is to see if the :ref:`ARVRController "
 "<class_ARVRController>` is active or not. If the :ref:`ARVRController "
 "<class_ARVRController>` is active, then that means there is a controller and "
 "it is being tracked. If the controller is active, we then reset "
-"``controller_velocity`` to a empty :ref:`Vector3 <class_Vector3>`."
+"``controller_velocity`` to an empty :ref:`Vector3 <class_Vector3>`."
 msgstr ""
 "接下来我们要检查的是 :ref:`ARVRController <class_ARVRController>` 是否处于活"
 "动状态。 如果 :ref:`ARVRController <class_ARVRController>` 处于活动状态，则表"
@@ -60015,10 +60095,11 @@ msgstr ""
 "数字，这是不现实的。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:470
+#, fuzzy
 msgid ""
-"Next we calculate the velocity from the position the controller currently "
-"is, from the position the controller was at. We can use this difference in "
-"position to help track the controller's velocity."
+"Next, we calculate the velocity from the position where the controller is "
+"currently, from the position the controller was at. We can use this "
+"difference in position to help track the controller's velocity."
 msgstr ""
 "接下来，我们从控制器当前所处的位置，从控制器所处的位置计算速度。 我们可以使用"
 "这种位置差异来帮助追踪控制器的速度。"
@@ -60035,21 +60116,23 @@ msgstr ""
 "位置，这样我们就可以在速度下一个物理帧的计算中使用它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:476
+#, fuzzy
 msgid ""
 "The way we are calculating velocity is not perfect by any means, since it "
-"relies on a consistent amount of frames per second. Ideally we would be able "
-"to find the velocity directly from the VR controller but currently in OpenVR "
-"there is not way to access the controller's velocity. We can get pretty "
-"close to the real velocity by comparing positions between frames though, and "
-"this will work just fine for this project."
+"relies on a consistent amount of frames per second. Ideally, we would be "
+"able to find the velocity directly from the VR controller, but currently in "
+"OpenVR, there is no way to access the controller's velocity. We can get "
+"pretty close to the real velocity by comparing positions between frames "
+"though, and this will work just fine for this project."
 msgstr ""
 "我们计算速度的方式无论如何都不是完美的，因为它依赖于每秒一致的帧数。 理想情况"
 "下，我们可以直接从VR控制器中找到速度，但目前在OpenVR中无法访问控制器的速度。 "
 "通过比较帧之间的位置，我们可以非常接近真实速度，这对于这个项目来说效果很好。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:480
+#, fuzzy
 msgid ""
-"Then we check to see if we have more than 30 stored velocities (more than a "
+"Then, we check to see if we have more than 30 stored velocities (more than a "
 "third of a second). If there are more than 30, we remove the oldest velocity "
 "from ``prior_controller_velocities``."
 msgstr ""
@@ -60057,13 +60140,14 @@ msgstr ""
 "从 ``prior_controller_velocities`` 中删除最旧的速度。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:484
+#, fuzzy
 msgid ""
-"Next we check to see if there is a held object. If there is, we update the "
-"position and rotation of the held object to the position and rotation of "
+"Next, we check to see whether there is a held object. If there is, we update "
+"the position and rotation of the held object to the position and rotation of "
 "``grab_pos_node``. Because of how scale works, we need to temporarily store "
-"the scale and then reset the scale once we have updated the transform, "
-"otherwise the scale will always be the same as the controller, which will "
-"break the immersion if the player grabs a scaled object."
+"the scale and then reset the scale once we have updated the transform; "
+"otherwise, the scale would always be the same as the controller, which would "
+"ruin immersion if the player grabbed a scaled object."
 msgstr ""
 "接下来我们检查是否有被保持的物体。 如果有，我们将被保持对象的位置和旋转更新"
 "为“grab_pos_node”的位置和旋转。 由于比例是如何工作的，我们需要暂时存储比例，"
@@ -60079,9 +60163,10 @@ msgstr ""
 "动VR控制器上的触控板/操纵杆。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:491
+#, fuzzy
 msgid ""
-"First, we convert the axis values into :ref:`Vector2 <class_Vector2>` "
-"variables so we can process them. We invert the X axis so moving the "
+"Firstly, we convert the axis values into :ref:`Vector2 <class_Vector2>` "
+"variables, so we can process them. We invert the X axis, so moving the "
 "trackpad/joystick left will move the player left."
 msgstr ""
 "首先，我们将轴值转换为 :ref:`Vector2 <class_Vector2>` 变量，以便我们可以处理"
@@ -60094,8 +60179,9 @@ msgid ""
 msgstr "根据您的VR控制器和操作系统，您可能需要更改代码，以便获得正确的轴值！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:496
+#, fuzzy
 msgid ""
-"Next we account for dead zones on both the trackpad and the joystick. The "
+"Next, we account for dead zones on both the trackpad and the joystick. The "
 "code for doing this is adapted from the link below, and I would highly "
 "recommend looking at it."
 msgstr ""
@@ -60134,8 +60220,9 @@ msgstr ""
 "他们当前所在的位置向前/向后和向右/向左移动游戏角色。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:506
+#, fuzzy
 msgid ""
-"Then we calculate how much the player will be moving by adding both the "
+"Then, we calculate how much the player will be moving by adding both the "
 "trackpad and the joystick vectors together and normalizing them."
 msgstr ""
 "然后我们通过将触控板和操纵杆向量一起添加并将它们标准化来计算游戏角色将移动多"
@@ -60172,18 +60259,20 @@ msgid "Now, let's look at ``button_pressed``."
 msgstr "现在，让我们看看 ``button_pressed`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:518
+#, fuzzy
 msgid ""
 "If the button pressed is button 15, which for the Windows Mixed Reality "
 "controllers is the trigger button, we will interact with the held object "
-"assuming the controller is holding one, and if the player is not holding a "
+"assuming the controller is holding one, and if the player is not holding an "
 "object, we will try to start teleporting."
 msgstr ""
 "如果按下的按钮是按钮15，对于Windows混合现实控制器是触发按钮，我们将与保持的对"
 "象交互，假设控制器持有一个，如果游戏角色没有持有对象，我们将尝试开始传送。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:521
+#, fuzzy
 msgid ""
-"If the controller is holding a object, and the held object has a method/"
+"If the controller is holding an object, and the held object has a method/"
 "function called ``interact``, we call the ``interact`` function on the held "
 "object."
 msgstr ""
@@ -60191,14 +60280,15 @@ msgstr ""
 "们在被保持的对象上调用 ``interact`` 函数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:524
+#, fuzzy
 msgid ""
-"If the controller is not holding a object, we then check to make sure the "
-"teleportation mesh is not visible. This check ensure the player cannot "
-"teleport cannot teleport with both hands/controllers at the same time. If "
-"the teleportation mesh is not visible, we set ``teleport_button_down`` to "
-"``true``, make ``teleport_mesh`` visible, and make the teleportation raycast "
-"visible. This makes it where the teleportation mesh will follow the :ref:"
-"`Raycast <class_Raycast>` coming from the pointer finger of the hand."
+"If the controller is not holding an object, we then check to make sure the "
+"teleportation mesh is not visible. This check ensures the player cannot "
+"teleport with both hands/controllers at the same time. If the teleportation "
+"mesh is not visible, we set ``teleport_button_down`` to ``true``, make "
+"``teleport_mesh`` visible, and make the teleportation raycast visible. This "
+"makes it where the teleportation mesh will follow the :ref:`Raycast "
+"<class_Raycast>` coming from the pointer finger of the hand."
 msgstr ""
 "如果控制器没有拿着物体，我们检查以确保隐形传送网格不可见。 此检查确保游戏角色"
 "不能同时传送不能用双手/控制器传送。 如果远程传送网格不可见，我们将 "
@@ -60207,42 +60297,48 @@ msgstr ""
 "来自手的指针。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:529
+#, fuzzy
 msgid ""
-"If the button pressed is button 2, which for the Windows Mixed Reality "
-"controllers is the grab/grip button, we will grab/throw a object."
+"If the button pressed is button 2, which, for the Windows Mixed Reality "
+"controllers, is the grab/grip button, we will grab/throw an object."
 msgstr ""
 "如果按下的按钮是按钮2，对于Windows混合现实控制器是抓取/抓握按钮，我们将抓取/"
 "抛出一个对象。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:531
+#, fuzzy
 msgid ""
-"First, we make sure the player is not trying to teleport, as we do not want "
-"the player to be able to grab something while in the middle of trying to "
-"teleport."
+"Firstly, we make sure the player is not trying to teleport, as we do not "
+"want the player to be able to grab something while in the middle of trying "
+"to teleport."
 msgstr ""
 "首先，我们确保游戏角色不会尝试传送，因为我们不希望游戏角色在尝试传送的过程中"
 "能够抓住某些东西。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:533
+#, fuzzy
 msgid ""
-"Then we check to see if the controller is already holding a object or not."
+"Then, we check to see whether the controller is already holding a object or "
+"not."
 msgstr "然后我们检查控制器是否已经持有一个对象。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:535
+#, fuzzy
 msgid ""
-"If the controller is not holding a object, we check to see which grab mode "
+"If the controller is not holding an object, we check to see which grab mode "
 "the player is using."
 msgstr "如果控制器没有拿着物体，我们会检查游戏角色正在使用哪种抓取模式。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:537
+#, fuzzy
 msgid ""
-"If the player is using the ``AREA`` grab mode, we then get all of the bodies "
-"overlapping the grab :ref:`Area <class_Area>`. We go through all of the "
-"bodies in the grab :ref:`Area <class_Area>` and see if there is a :ref:"
-"`RigidBody <class_RigidBody>`. We also check to make sure any :ref:"
-"`RigidBody <class_RigidBody>` nodes in the :ref:`Area <class_Area>` do not "
-"have a variable called ``NO_PICKUP``, since we do not want to be able to "
-"pick up nodes with that variable."
+"If the player is using the ``AREA`` grab mode, we then get all the bodies "
+"overlapping the grab :ref:`Area <class_Area>`. We go through all the bodies "
+"in the grab :ref:`Area <class_Area>` and see if there is a :ref:`RigidBody "
+"<class_RigidBody>`. We also check to make sure any :ref:`RigidBody "
+"<class_RigidBody>` nodes in the :ref:`Area <class_Area>` do not have a "
+"variable called ``NO_PICKUP``, since we do not want to be able to pick up "
+"nodes with that variable."
 msgstr ""
 "如果游戏角色正在使用 ``AREA`` 抓取模式，那么我们将获得所有与grab重叠的实体 :"
 "ref:`Area <class_Area>`。 我们遍历了grab中的所有实体 :ref:`Area "
@@ -60261,9 +60357,10 @@ msgstr ""
 "``rigid_body`` 以获得额外的处理。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:544
+#, fuzzy
 msgid ""
 "If the player is using the ``RAYCAST`` grab mode, we first force the :ref:"
-"`Raycast <class_Raycast>` to update. We then check to see if the :ref:"
+"`Raycast <class_Raycast>` to update. We then check to see whether the :ref:"
 "`Raycast <class_Raycast>` is colliding with something."
 msgstr ""
 "如果游戏角色正在使用 ``RAYCAST`` 抓取模式，我们首先强制 :ref:`Raycast "
@@ -60271,9 +60368,10 @@ msgstr ""
 "与某些东西发生碰撞。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:547
+#, fuzzy
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we then "
-"check to see if what is colliding with is a :ref:`RigidBody "
+"check to see if what it is colliding with is a :ref:`RigidBody "
 "<class_RigidBody>`, and that it does not have a variable called "
 "``NO_PICKUP``. If the :ref:`Raycast <class_Raycast>` is colliding with a :"
 "ref:`RigidBody <class_RigidBody>`, and it does not have a variable called "
@@ -60286,14 +60384,15 @@ msgstr ""
 "配给 ``rigid_body`` 以获得额外的处理。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:551
+#, fuzzy
 msgid ""
 "If ``rigid_body`` is not ``null``, meaning we found a :ref:`RigidBody "
 "<class_RigidBody>` in the grab :ref:`Area <class_Area>`, we assign "
 "``held_object`` to it. Then we store the now held :ref:`RigidBody "
 "<class_RigidBody>`'s information in ``held_object_data``. We are storing "
-"the :ref:`RigidBody <class_RigidBody>` mode, layer, and mask so later when "
-"we drop it, we can reset all of those variables back to what they were "
-"before we picked up the :ref:`RigidBody <class_RigidBody>`."
+"the :ref:`RigidBody <class_RigidBody>` mode, layer, and mask so later, when "
+"we drop it, we can reset all those variables back to what they were before "
+"we picked up the :ref:`RigidBody <class_RigidBody>`."
 msgstr ""
 "如果 ``rigid_body`` 不是 ``null`` ，意味着我们在grab :ref:`Area "
 "<class_Area>` 中找到了一个 :ref:`RigidBody <class_RigidBody>`，我们给它分配"
@@ -60334,35 +60433,39 @@ msgstr ""
 "``controller`` 的变量，我们将它设置为该控制器。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:564
+#, fuzzy
 msgid ""
-"If the controller is not holding a object, and the button pressed is 2, we "
+"If the controller is not holding an object, and the button pressed is 2, we "
 "want to drop/throw the held object."
 msgstr ""
 "如果控制器没有持有一个对象，并且按下的按钮是2，我们想要删除/抛出被保持的对"
 "象。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:566
+#, fuzzy
 msgid ""
-"First, we set the held :ref:`RigidBody <class_RigidBody>`'s mode, layer, and "
-"mask back to what they were when we picked the object up. We then apply a "
-"impulse to the held object, using the controller's velocity as the force."
+"Firstly, we set the held :ref:`RigidBody <class_RigidBody>`'s mode, layer, "
+"and mask back to what they were when we picked the object up. We then apply "
+"an impulse to the held object, using the controller's velocity as the force."
 msgstr ""
 "首先，我们将hold :ref:`RigidBody <class_RigidBody>的模式，图层和蒙版设置回我"
 "们拾取对象时的状态。 然后，我们使用控制器的速度作为力，对保持的对象施加脉冲。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:569
+#, fuzzy
 msgid ""
 "If the previously held :ref:`RigidBody <class_RigidBody>` has a function "
 "called ``dropped``, we call it. If the :ref:`RigidBody <class_RigidBody>` "
-"has a variable called ``controller`` we set it to ``null``."
+"has a variable called ``controller``, we set it to ``null``."
 msgstr ""
 "如果以前持有的 :ref:`RigidBody <class_RigidBody>` 有一个名为 ``dropped`` 的函"
 "数，我们称之为。 如果 :ref:`RigidBody <class_RigidBody>` 有一个名为 "
 "``controller`` 的变量，我们将它设置为 ``null`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:572
+#, fuzzy
 msgid ""
-"Then we set ``held_object`` to ``null``, since we are no longer holding any "
+"Then, we set ``held_object`` to ``null``, since we are no longer holding any "
 "objects, and we make the hand mesh visible again."
 msgstr ""
 "然后我们将 ``held_object`` 设置为 ``null`` ，因为我们不再持有任何对象，我们再"
@@ -60378,8 +60481,9 @@ msgstr ""
 "为可见，这样我们就可以看到用于显示抓取的网格 :ref:`Raycast <class_Raycast>`。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:576
+#, fuzzy
 msgid ""
-"Finally, regardless of whether we are grabbing a object or releasing it, we "
+"Finally, regardless of whether we are grabbing an object or releasing it, we "
 "play the sound loaded into ``AudioStreamPlayer3D``, which is a pick-up/drop "
 "noise."
 msgstr ""
@@ -60387,10 +60491,11 @@ msgstr ""
 "的声音，这是一种拾取/丢弃噪声。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:578
+#, fuzzy
 msgid ""
 "The last thing we are doing in ``button_pressed`` is checking to see if the "
-"button pressed is 1, which for the Windows Mixed Reality controllers is the "
-"menu button."
+"button pressed is 1, which, for the Windows Mixed Reality controllers, is "
+"the menu button."
 msgstr ""
 "我们在 ``button_pressed`` 中做的最后一件事是检查按下的按钮是否为1，对于"
 "Windows Mixed Reality控制器是菜单按钮。"
@@ -60415,10 +60520,12 @@ msgid ""
 msgstr "如果释放的按钮是按钮15，触发器，那么我们可能想要传送。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:588
+#, fuzzy
 msgid ""
-"First, we check to see if ``teleport_button_down`` is ``true``. If it is, "
-"that means the player is intending to teleport, while if it is ``false``, "
-"the player has simply released the trigger while holding a object."
+"Firstly, we check to see whether ``teleport_button_down`` is ``true``. If it "
+"is, that means the player is intending to teleport, while if it is "
+"``false``, the player has simply released the trigger while holding an "
+"object."
 msgstr ""
 "首先，我们检查 ``teleport_button_down`` 是否为 ``true`` 。 如果是，那意味着游"
 "戏角色打算传送，而如果它是“假”，游戏角色只需在拿着一个物体时释放扳机。"
@@ -60443,12 +60550,13 @@ msgstr ""
 "<class_ARVROrigin>` 使用房间尺度跟踪。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:596
+#, fuzzy
 msgid ""
 "Because we want to teleport the player in their current position to the "
-"teleport position, and remember because of room-scale tracking their current "
-"position can be offset from the origin, we have to figure out that offset so "
-"when we teleport we can remove it so that player's current position is "
-"teleported to the teleport position."
+"teleport position, and remember, because of room-scale tracking, their "
+"current position can be offset from the origin, we have to figure out that "
+"offset so when we teleport, we can remove it so that player's current "
+"position is teleported to the teleport position."
 msgstr ""
 "因为我们想将当前位置的游戏角色传送到传送位置，并且因为房间尺度跟踪而记住它们"
 "的当前位置可能偏离原点，我们必须弄清楚偏移，所以当我们传送时我们可以删除它 该"
@@ -60462,16 +60570,18 @@ msgstr ""
 "我们将camera_offset的Y值设置为零，因为我们不想考虑游戏角色身高的偏移量。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:601
+#, fuzzy
 msgid ""
-"Then we teleport the :ref:`ARVROrigin <class_ARVROrigin>` to the teleport "
+"Then, we teleport the :ref:`ARVROrigin <class_ARVROrigin>` to the teleport "
 "position, applying the camera offset."
 msgstr ""
 "然后我们将 :ref:`ARVROrigin <class_ARVROrigin>` 传送到传送位置，应用相机偏"
 "移。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:603
+#, fuzzy
 msgid ""
-"Regardless of whether we teleported or not, we reset all of the teleport-"
+"Regardless of whether we teleported or not, we reset all the teleport-"
 "related variables so the controller has to get new ones before teleporting "
 "again."
 msgstr ""
@@ -60484,12 +60594,13 @@ msgid ""
 msgstr "最后，让我们看一下 ``sleep_area_entered`` 和``sleep_area_exited``。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:609
+#, fuzzy
 msgid ""
-"When a body enters or exists the sleep area, we check if it has a variable "
-"called ``can_sleep``. If it does, we then set it to ``false`` and wake the "
-"body if it has entered the sleep area, while if it has exited we set it to "
-"``true`` so the :ref:`RigidBody <class_RigidBody>` nodes can sleep (which "
-"can decrease CPU usage)."
+"When a body enters or exists the sleep area, we check whether it has a "
+"variable called ``can_sleep``. If it does, we then set it to ``false`` and "
+"wake the body if it has entered the sleep area, while if it has exited, we "
+"set it to ``true`` so the :ref:`RigidBody <class_RigidBody>` nodes can sleep "
+"(which can decrease CPU usage)."
 msgstr ""
 "当物体进入或存在睡眠区域时，我们检查它是否有一个名为“can_sleep”的变量。 如果"
 "确实如此，我们将其设置为“false”并在物体进入睡眠区域时唤醒物体，如果已经退出，"
@@ -60497,8 +60608,9 @@ msgstr ""
 "以降低CPU使用率)。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:614
+#, fuzzy
 msgid ""
-"Okay, phew! That was a lot of code! Add the same script, ``VR_Controller."
+"Okay, whew! That was a lot of code! Add the same script, ``VR_Controller."
 "gd`` to the other controller so both controllers have the same script."
 msgstr ""
 "好的，p！ 那是很多代码！ 将相同的脚本 ``VR_Controller.gd`` 添加到另一个控制"
@@ -60595,8 +60707,9 @@ msgstr ""
 "的大小和位置，以便它覆盖VR中的整个视图。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:678
+#, fuzzy
 msgid ""
-"Then we get the left and right controllers, assigning them to "
+"Then, we get the left and right controllers, assigning them to "
 "``controller_one`` and ``controller_two``."
 msgstr ""
 "然后我们得到左右控制器，将它们分配给 ``controller_one`` 和"
@@ -60638,10 +60751,10 @@ msgid "Adding destroyable targets"
 msgstr "添加可销毁的目标"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:694
+#, fuzzy
 msgid ""
-"First, let's start by making some targets we will destroy in various "
-"different ways with various different special :ref:`RigidBody "
-"<class_RigidBody>` nodes."
+"Firstly, let's start by making some targets we will destroy in various ways "
+"with various special :ref:`RigidBody <class_RigidBody>` nodes."
 msgstr ""
 "首先，让我们从制作一些目标开始，我们将以各种不同的方式销毁各种不同的特殊目"
 "标 :ref:`RigidBody <class_RigidBody>` 节点。"
@@ -60671,7 +60784,9 @@ msgid "Let's go over how this script works, starting with the class variables."
 msgstr "让我们来看看这个脚本的工作原理，从类变量开始。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:748
-msgid "``destroyed``: A variable to track if this target is destroyed or not."
+#, fuzzy
+msgid ""
+"``destroyed``: A variable to track whether this target is destroyed or not."
 msgstr "``destroyed``:一个变量，用于跟踪此目标是否被销毁。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:749
@@ -60720,10 +60835,11 @@ msgid "Next, let's go over ``_physics_process``."
 msgstr "接下来，让我们回顾一下 ``_physics_process`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:765
+#, fuzzy
 msgid ""
-"First, we add time to ``destroyed_timer``. Then we check to see if enough "
-"time has passed and we can destroy the target. If enough time has passed, we "
-"free/destroy the target using ``queue_free``."
+"Firstly, we add time to ``destroyed_timer``. Then we check to see whether "
+"enough time has passed and we can destroy the target. If enough time has "
+"passed, we free/destroy the target using ``queue_free``."
 msgstr ""
 "首先，我们为 ``destroyed_timer`` 增加时间。 然后我们检查是否已经过了足够的时"
 "间，我们可以摧毁目标。 如果已经过了足够的时间，我们使用 ``queue_free`` 释放/"
@@ -60734,7 +60850,9 @@ msgid "Finally, let's go over ``damage``."
 msgstr "最后，让我们回顾一下 ``damage`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:772
-msgid "First, we check to make sure the target has not already been destroyed."
+#, fuzzy
+msgid ""
+"Firstly, we check to make sure the target has not already been destroyed."
 msgstr "首先，我们检查以确保目标尚未被销毁。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:774
@@ -60750,8 +60868,9 @@ msgid ""
 msgstr "如果目标的生命值为零或更低，则它已经受到足够的破坏。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:778
+#, fuzzy
 msgid ""
-"First, we disable the collision shape and make the whole target mesh "
+"Firstly, we disable the collision shape and make the whole target mesh "
 "invisible. Next, we spawn/instance the :ref:`RigidBody <class_RigidBody>` "
 "version of the target, and instance it at this target's position."
 msgstr ""
@@ -60759,8 +60878,9 @@ msgstr ""
 "`RigidBody <class_RigidBody>` 目标版本，并在此目标位置实例化它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:781
+#, fuzzy
 msgid ""
-"Then we set ``destroyed`` to ``true`` and start processing "
+"Then, we set ``destroyed`` to ``true`` and start processing "
 "``_physics_process``. Finally, we play a sound, and remove a sphere from "
 "``Game.gd`` by calling ``remove_sphere``."
 msgstr ""
@@ -60776,8 +60896,10 @@ msgstr ""
 "解决这个问题！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:788
+#, fuzzy
 msgid ""
-"First, open up ``Game.gd`` and add the following additional class variables:"
+"Firstly, open up ``Game.gd`` and add the following additional class "
+"variables:"
 msgstr "首先，打开 ``Game.gd`` 并添加以下附加类变量:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:795
@@ -60796,14 +60918,16 @@ msgstr ""
 "接下来，我们需要添加 ``remove_sphere`` 函数。 将以下内容添加到``Game.gd``:"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:808
-msgid "What this function does is it removes one from ``spheres_left``."
+#, fuzzy
+msgid "What this function does is it subtracts one from ``spheres_left``."
 msgstr "这个函数的作用是从 ``spheres_left`` 中删除一个。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:810
+#, fuzzy
 msgid ""
-"Then it checks to see if ``sphere_ui`` is not null, and if it is not, then "
-"it calls its ``update_ui`` function, passing in the amount of sphere's left. "
-"We'll add the UI code later in this part."
+"Then, it checks to see whether ``sphere_ui`` is not null, and if it is not, "
+"then it calls its ``update_ui`` function, passing in the amount of spheres "
+"left. We'll add the UI code later in this part."
 msgstr ""
 "然后它检查 ``sphere_ui`` 是否为空，如果不是，则调用它的 ``update_ui`` 函数，"
 "传入球的左边数量。 我们将在本部分后面添加UI代码。"
@@ -60825,12 +60949,13 @@ msgstr ""
 "文件夹中找到它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:820
+#, fuzzy
 msgid ""
-"There is a few things to note here. The first thing to note is how "
+"There are a few things to note here. The first thing to note is how "
 "everything is rotated. This is to make the pistol rotate correctly when the "
 "player grabs it. The other thing to notice is how there is a laser sight "
-"mesh, and a flash mesh, both of these do what you'd expect: act as a laser "
-"pointer and act as a muzzle flash respectively."
+"mesh, and a flash mesh; both of these do what you'd expect: act as a laser "
+"pointer and muzzle flash, respectively."
 msgstr ""
 "这里有几点需要注意。 首先要注意的是如何旋转一切。 这是为了让游戏角色在抓住手"
 "枪时正确旋转。 另外需要注意的是激光瞄准网和闪光网是如何做到的，它们都可以达到"
@@ -60894,41 +61019,46 @@ msgid "Next, let's look at ``_physics_process``."
 msgstr "接下来，让我们看看`_physics_process``。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:912
+#, fuzzy
 msgid ""
-"First, we check to see if the flash is visible. We do this by checking to "
+"Firstly, we check to see if the flash is visible. We do this by checking to "
 "see if ``flash_timer`` is more than zero. This is because ``flash_timer`` "
-"will be a inverted timer, a timer that counts down instead of counting up."
+"will be an inverted timer, a timer that counts down instead of counting up."
 msgstr ""
 "首先，我们检查闪光灯是否可见。 我们通过检查 ``flash_timer`` 是否大于零来做到"
 "这一点。 这是因为 ``flash_timer`` 将是一个倒置计时器，一个计时器倒计时而不是"
 "计数。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:915
+#, fuzzy
 msgid ""
-"If ``flash_timer`` is more than zero, we remove ``delta`` from it and check "
-"to see if it is equal to zero or less. If it is, we make the flash mesh "
-"invisible."
+"If ``flash_timer`` is more than zero, we subtract ``delta`` from it and "
+"check to see whether it is equal to zero or less. If it is, we make the "
+"flash mesh invisible."
 msgstr ""
 "如果 ``flash_timer`` 大于零，我们从中删除 ``delta`` 并检查它是否等于零或更"
 "小。 如果是，我们使闪光网不可见。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:918
+#, fuzzy
 msgid ""
 "This makes it where the flash mesh becomes invisible after ``FLASH_TIME`` "
-"many seconds has gone by."
+"many seconds have gone by."
 msgstr "这使得闪存网格在“FLASH_TIME”经过许多秒后变得不可见。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:922
+#, fuzzy
 msgid ""
-"Now let's look at ``interact``, which is called when the trigger button on "
+"Now, let's look at ``interact``, which is called when the trigger button on "
 "the VR controller is pressed and the pistol is being held."
 msgstr ""
 "现在让我们看一下 ``interact`` ，当按下VR控制器上的触发按钮并握住手枪时调用"
 "它。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:924
+#, fuzzy
 msgid ""
-"First, we check to see if the flash timer is less than or equal to zero. "
+"Firstly, we check to see if the flash timer is less than or equal to zero. "
 "This check makes it where we cannot fire when the flash is visible, limiting "
 "how often the pistol can fire."
 msgstr ""
@@ -60951,10 +61081,11 @@ msgstr ""
 "然后我们更新 :ref:`Raycast <class_Raycast>` 并检查它是否与任何东西发生碰撞。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:931
+#, fuzzy
 msgid ""
 "If the :ref:`Raycast <class_Raycast>` is colliding with something, we get "
 "the collider. We check to see if the collider has the ``damage`` function, "
-"and if it does we call it. If it does not, we then check to see if the "
+"and if it does, we call it. If it does not, we then check to see if the "
 "collider has the ``apply_impulse`` function, and if it does, we call it "
 "after calculating the direction from the :ref:`Raycast <class_Raycast>` to "
 "the collider."
@@ -60971,9 +61102,10 @@ msgid ""
 msgstr "最后，无论手枪是否击中，我们都会发出手枪发出的声音。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:939
+#, fuzzy
 msgid ""
 "Finally, let's look at ``picked_up`` and ``dropped``, which are called when "
-"the pistol is picked up and dropped respectively."
+"the pistol is picked up and dropped, respectively."
 msgstr ""
 "最后，让我们看一下 ``picked_up`` 和``dropped``，它们分别在拾取和放下手枪时被"
 "调用。"
@@ -61058,17 +61190,19 @@ msgstr ""
 "<class_Raycast>`。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1025
+#, fuzzy
 msgid ""
 "The only other change, besides there being nothing in ``picked_up`` and "
-"``dropped`` is in ``interact``."
+"``dropped``, is in ``interact``."
 msgstr ""
 "除了在 ``picked_up`` 和``dropped``中没有任何内容之外，唯一的另一个变化是 "
 "``interact`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1027
+#, fuzzy
 msgid ""
 "Now we go through each :ref:`Raycast <class_Raycast>` in ``raycasts``. We "
-"then rotate it on the X and Z axis, making within a 10 to ``-10`` cone. From "
+"then rotate it on the X and Z axes, making within a 10 to ``-10`` cone. From "
 "there, we process each :ref:`Raycast <class_Raycast>` like we did the "
 "single :ref:`Raycast <class_Raycast>` in the pistol, nothing changed at all, "
 "we are just doing it five times, once for each :ref:`Raycast "
@@ -61123,8 +61257,9 @@ msgstr ""
 "<class_Particles>` 节点！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1048
+#, fuzzy
 msgid ""
-"The only thing to notice his how long the explosion :ref:`Particles "
+"The only thing to notice is how long the explosion :ref:`Particles "
 "<class_Particles>` node will last, their lifetime, which is 0.75 seconds. We "
 "need to know this so we can time the removal of the bomb with the end of the "
 "explosion :ref:`Particles <class_Particles>`."
@@ -61156,7 +61291,8 @@ msgstr ""
 "``bomb_mesh``:用于炸弹网格的 :ref:`MeshInstance <class_MeshInstance>` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1145
-msgid "``FUSE_TIME``: The length of time the fuse burns for."
+#, fuzzy
+msgid "``FUSE_TIME``: The length of time for which the fuse burns."
 msgstr "``FUSE_TIME``:保险丝燃烧的时间长度。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1146
@@ -61218,8 +61354,9 @@ msgid "Let's go through ``_ready``."
 msgstr "让我们来看看 ``_ready`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1160
+#, fuzzy
 msgid ""
-"First, we get all of the nodes and assign them to the proper variables for "
+"Firstly, we get all the nodes and assign them to the proper variables for "
 "later use."
 msgstr "首先，我们获取所有节点并将它们分配给适当的变量供以后使用。"
 
@@ -61239,18 +61376,20 @@ msgid "Now, let's look at ``_physics_process``."
 msgstr "现在，让我们看看`_physics_process``。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1169
+#, fuzzy
 msgid ""
-"First we check to see if ``fuse_timer`` is less than ``FUSE_TIME``. If "
-"``fuse_timer`` is less than ``FUSE_TIME``, then the bomb must be burning "
+"Firstly we check to see whether ``fuse_timer`` is less than ``FUSE_TIME``. "
+"If ``fuse_timer`` is less than ``FUSE_TIME``, then the bomb must be burning "
 "down the fuse."
 msgstr ""
 "首先，我们检查 ``fuse_timer`` 是否小于 ``FUSE_TIME`` 。 如果 ``fuse_timer`` "
 "小于 ``FUSE_TIME`` ，那么炸弹必须烧掉保险丝。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1171
+#, fuzzy
 msgid ""
-"We then add time to ``fuse_timer``, and check to see if the bomb has waited "
-"long enough and has burned through the entire fuse."
+"We then add time to ``fuse_timer``, and check to see whether the bomb has "
+"waited long enough and has burned through the entire fuse."
 msgstr ""
 "然后我们将时间添加到 ``fuse_timer`` ，并检查炸弹是否已经等待足够长的时间并烧"
 "掉整个保险丝。"
@@ -61278,13 +61417,15 @@ msgstr ""
 "原位。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1179
+#, fuzzy
 msgid ""
-"Then we go through everything inside the explosion :ref:`Area <class_Area>`. "
-"We make sure the bodies inside the explosion :ref:`Area <class_Area>` are "
-"not the bomb itself, since we do not want to explode the bomb with itself. "
-"We then check to see if the bodies have the ``damage`` method/function, and "
-"if it does we call that, while if it does not we check to see if it has the "
-"``apply_impulse`` method/function, and call that instead."
+"Then, we go through everything inside the explosion :ref:`Area "
+"<class_Area>`. We make sure the bodies inside the explosion :ref:`Area "
+"<class_Area>` are not the bomb itself, since we do not want to explode the "
+"bomb with itself. We then check to see whether the bodies have the "
+"``damage`` method/function, and if it does, we call that, while if it does "
+"not, we check to see if it has the ``apply_impulse`` method/function, and "
+"call that instead."
 msgstr ""
 "然后我们浏览爆炸内的所有内容 :ref:`Area <class_Area>`。 我们确保爆炸内部的物"
 "体 :ref:`Area <class_Area>` 不是炸弹本身，因为我们不想用它自己爆炸炸弹。 然后"
@@ -61292,8 +61433,9 @@ msgstr ""
 "查它是否有 ``apply_impulse`` 方法/函数，并且 打电话给那个。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1183
+#, fuzzy
 msgid ""
-"Then we set ``explode`` to true since the bomb has exploded, and we play a "
+"Then, we set ``explode`` to true since the bomb has exploded, and we play a "
 "sound."
 msgstr "然后我们将 ``explode`` 设置为true，因为炸弹已爆炸，我们发出声音。"
 
@@ -61336,12 +61478,13 @@ msgstr ""
 "保险丝 :ref:`Particles <class_Particles>` 开始发射，所以烟雾从炸弹顶部出来。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1200
+#, fuzzy
 msgid ""
 "With that done, the bombs are ready to go! You can find them in the orange "
 "building. Because of how we are calculating velocity, it is easiest to throw "
 "bombs in a trusting-like motion as opposed to a more natural throwing like "
 "motion. The smooth curve of a throwing-like motion is harder to track, and "
-"the because of how we are tracking velocity it does not always work."
+"the because of how we are tracking velocity, it does not always work."
 msgstr ""
 "完成后，炸弹准备好了！ 您可以在橙色建筑中找到它们。 由于我们如何计算速度，最"
 "容易投掷类似信任的运动中的炸弹，而不是像运动那样更自然的投掷。 投掷式运动的平"
@@ -61372,8 +61515,9 @@ msgstr ""
 "我能弄清楚如何做到这一点的最简单(也是唯一的)方法。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1214
+#, fuzzy
 msgid ""
-"If you know how to find the point where a :ref:`Area <class_Area>` and a :"
+"If you know how to find the point where an :ref:`Area <class_Area>` and a :"
 "ref:`CollisionObject <class_CollisionObject>` meet, please let me know and/"
 "or make a PR on the Godot documentation! This method of using several small :"
 "ref:`Area <class_Area>` nodes works okay, but it is not ideal."
@@ -61403,9 +61547,10 @@ msgid "``SWORD_DAMAGE``: The amount of damage a single sword slice does."
 msgstr "``SWORD_DAMAGE``:单个剑片所造成的伤害量。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1284
+#, fuzzy
 msgid ""
 "``controller``: The controller that is holding the sword, if there is one. "
-"This is set by the controller, so we do not need to set it here in ``Sword."
+"This is set by the controller, so we do not need to set it here, in ``Sword."
 "gd``."
 msgstr ""
 "``controller``:拿着剑的控制器，如果有的话。 这是由控制器设置的，所以我们不需"
@@ -61416,11 +61561,12 @@ msgid "Let's go over ``_ready`` next."
 msgstr "让我们接下来回顾一下 ``_ready`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1290
+#, fuzzy
 msgid ""
 "All we are doing here is connecting each of the :ref:`Area <class_Area>` "
 "nodes ``body_entered`` signal to the ``body_entered_sword`` function, "
-"passing in a additional argument which will be the number of the damage :ref:"
-"`Area <class_Area>`, so we can figure out where on the sword the body "
+"passing in an additional argument, which will be the number of the damage :"
+"ref:`Area <class_Area>`, so we can figure out where on the sword the body "
 "collided."
 msgstr ""
 "我们在这里所做的就是将每个 :ref:`Area <class_Area>` nodes ``body_entered`` 信"
@@ -61432,7 +61578,9 @@ msgid "Now let's go over ``body_entered_sword``."
 msgstr "现在让我们回顾一下 ``body_entered_sword`` 。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1297
-msgid "First, we make sure the body the sword has collided with is not itself."
+#, fuzzy
+msgid ""
+"Firstly, we make sure the body the sword has collided with is not itself."
 msgstr "首先，我们确保剑与之碰撞的物体本身并不存在。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1299
@@ -61442,19 +61590,21 @@ msgid ""
 msgstr "然后我们使用传入的数字找出物体碰撞的剑的哪一部分。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1301
+#, fuzzy
 msgid ""
-"Next, we check to see if the body the sword collided with has the ``damage`` "
-"function, and if it does, we call it and play a sound."
+"Next, we check to see whether the body the sword collided with has the "
+"``damage`` function, and if it does, we call it and play a sound."
 msgstr ""
 "接下来，我们检查剑与剑相撞的物体是否具有“伤害”功能，如果有，我们称之为并发出"
 "声音。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1303
+#, fuzzy
 msgid ""
-"If it does not have the damage function, we then check to see if it has the "
-"``apply_impulse`` function. If it does, we then calculation the direction "
+"If it does not have the damage function, we then check to see whether it has "
+"the ``apply_impulse`` function. If it does, we then calculate the direction "
 "from the sword part the body collided with to the body. We then check to see "
-"if the sword is being held or not."
+"whether the sword is being held or not."
 msgstr ""
 "如果它没有损坏功能，我们检查它是否具有 ``apply_impulse`` 功能。 如果是这样，"
 "我们然后计算从物体碰撞的剑部分到物体的方向。 然后我们检查剑是否被关押。"
@@ -61488,10 +61638,11 @@ msgid "Okay, let's update the UI as the sphere targets are destroyed."
 msgstr "好吧，让我们在球体目标被破坏时更新UI。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1322
+#, fuzzy
 msgid ""
 "Open up ``Game.tscn`` and then expand the ``GUI`` :ref:`MeshInstance "
 "<class_MeshInstance>`. From there, expand the ``GUI`` :ref:`Viewport "
-"<class_Viewport>` node and then select the ``base_control`` node. Add a new "
+"<class_Viewport>` node and then select the ``Base_Control`` node. Add a new "
 "script called ``Base_Control``, and add the following:"
 msgstr ""
 "打开 ``Game.tscn`` 然后展开``GUI`` :ref:`MeshInstance "
@@ -61504,8 +61655,9 @@ msgid "Let's go over what this script does quickly, as it is fairly simple."
 msgstr "让我们快速了解一下这个脚本的作用，因为它非常简单。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1344
+#, fuzzy
 msgid ""
-"First, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
+"Firstly, in ``_ready``, we get the :ref:`Label <class_Label>` that shows how "
 "many spheres are left and assign it to the ``sphere_count_label`` class "
 "variable. Next, we get ``Game.gd`` by using ``get_tree().root`` and assign "
 "``sphere_ui`` to this script."
@@ -61515,11 +61667,12 @@ msgstr ""
 "``get_tree().root`` 获得 ``Game.gd`` 并将 ``sphere_ui`` 分配给该脚本。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1347
+#, fuzzy
 msgid ""
 "In ``update_ui``, we change the sphere :ref:`Label <class_Label>`'s text. If "
 "there is at least one sphere remaining, we change the text to show how many "
-"sphere's are still left in the world. If there are no more spheres "
-"remaining, we change the text and congratulate the player."
+"spheres are still left in the world. If there are no more spheres remaining, "
+"we change the text and congratulate the player."
 msgstr ""
 "在 ``update_ui`` 中，我们改变了球体 :ref:`Label <class_Label>的文本。 如果剩"
 "下至少一个球体，我们会更改文本以显示世界上还剩下多少球体。 如果没有更多的球"
@@ -61550,10 +61703,11 @@ msgid "Let's go over what this does quickly, as it is also fairly simple."
 msgstr "让我们快速回顾一下这个问题，因为它也很简单。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1396
+#, fuzzy
 msgid ""
-"First, we get the starting global :ref:`Transform <class_Transform>` in "
+"Firstly, we get the starting global :ref:`Transform <class_Transform>` in "
 "``_ready``, and assign it to ``start_transform``. We will use this to reset "
-"the position of the reset box ever so often."
+"the position of the reset box every so often."
 msgstr ""
 "首先，我们在 ``_ready`` 中得到起始全局 :ref:`Transform <class_Transform>` ，"
 "并将其赋值给 ``start_transform`` 。 我们将使用它来经常重置复位盒的位置。"
@@ -61584,15 +61738,17 @@ msgstr ""
 "当重置框被删除时，我们重置 :ref:`Transform <class_Transform>` 和计时器。"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1407
+#, fuzzy
 msgid ""
 "With that done, when you grab and interact with the reset box, the entire "
-"scene will reset/restart and you can destroy all of the targets again!"
+"scene will reset/restart and you can destroy all the targets again!"
 msgstr ""
 "完成后，当您抓住并与重置框交互时，整个场景将重置/重新启动，您可以再次销毁所有"
 "目标！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1414
-msgid "Phew! That was a lot of work. Now you have a fairly simple VR project!"
+#, fuzzy
+msgid "Whew! That was a lot of work. Now you have a fairly simple VR project!"
 msgstr "唷！ 这是很多工作。 现在您有一个相当简单的VR项目！"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1418
@@ -61604,8 +61760,9 @@ msgstr ""
 "zip <files / VR_Starter_Tutorial_Complete.zip>`"
 
 #: ../../docs/tutorials/vr/vr_starter_tutorial.rst:1420
+#, fuzzy
 msgid ""
-"This hopefully will serve as a introduction into making fully featured VR "
+"This will hopefully serve as an introduction to making fully-featured VR "
 "games in Godot! The code written here can be expanded to make puzzle games, "
 "action games, story-based games, and more!"
 msgstr ""
@@ -61629,13 +61786,14 @@ msgid "About plugins"
 msgstr "关于插件"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:9
+#, fuzzy
 msgid ""
 "A plugin is a great way to extend the editor with useful tools. It can be "
 "made entirely with GDScript and standard scenes, without even reloading the "
 "editor. Unlike modules, you don't need to create C++ code nor recompile the "
-"engine. While this makes plugins less powerful, there's still a lot of "
-"things you can do with them. Note that a plugin is similar to any scene you "
-"can already make, except it is created using a script to add functionality."
+"engine. While this makes plugins less powerful, there are still many things "
+"you can do with them. Note that a plugin is similar to any scene you can "
+"already make, except it is created using a script to add functionality."
 msgstr ""
 "插件是用来扩展编辑器功能的好东西。它完全可以靠GDScript和多个标准场景来制作，"
 "甚至不用重启编辑器。不像模块，您用不着C++也用不着重新编译引擎。尽管说这样做插"
@@ -61658,9 +61816,10 @@ msgid "Creating a plugin"
 msgstr "创建一个插件"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:24
+#, fuzzy
 msgid ""
 "Before starting, create a new empty project wherever you want. This will "
-"serve as base to develop and test the plugins."
+"serve as a base to develop and test the plugins."
 msgstr ""
 "在开始前先谁便找个地方创建个空项目。这个空项目是制作和测试我们插件的基础。"
 
@@ -61822,8 +61981,9 @@ msgid "Then try it out by adding your new node:"
 msgstr "然后通过添加新节点来尝试:"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:148
+#, fuzzy
 msgid ""
-"When you add the node, you can see that it already have the script you "
+"When you add the node, you can see that it already has the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
 "When you click the button, you can see some text in the console:"
 msgstr ""
@@ -61909,8 +62069,9 @@ msgstr ""
 "不要忘记 **移除窗口** 。 该脚本看起来像这样::"
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:221
+#, fuzzy
 msgid ""
-"Note that while the dock will initially appear at its specified position, "
+"Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
 msgstr ""
 "请注意，虽然扩展面板最初将显示在其指定位置，但用户可以自由更改其位置并保存生"
@@ -69927,10 +70088,6 @@ msgstr "在 platform/osx/godot_main_osx.mm 文件中设置一个断点"
 msgid "It should break at the point!"
 msgstr "这应该能够触发您下的断点！"
 
-#: ../../docs/development/cpp/configuring_an_ide.rst:267
-msgid "Visual Studio Code"
-msgstr "Visual Studio Code"
-
 #: ../../docs/development/cpp/configuring_an_ide.rst:269
 msgid ""
 "Ensure that C/C++ extension is installed. You can find instructions in `docs "
@@ -76454,6 +76611,115 @@ msgid ""
 "`KidsCanCode: An ongoing tutorial series <http://kidscancode.org/blog/tags/"
 "godot/>`_"
 msgstr ""
+
+#~ msgid ""
+#~ "Don't scale the shape's outline! Only use the size handles (circled in "
+#~ "red) to adjust the shape!"
+#~ msgstr "请勿缩放该形状的外框！只要用大小控制柄(红圈)来调整形状！"
+
+#~ msgid ""
+#~ "Disabling the area's collision shape means it won't detect collisions. By "
+#~ "turning it off, we make sure we don't trigger the ``hit`` signal more "
+#~ "than once."
+#~ msgstr ""
+#~ "禁用区域碰撞形体意味着它不会检测碰撞，通过关闭它我们能够确保不会多次触发 "
+#~ "``hit`` 信号。"
+
+#~ msgid "``Layout``: \"Center Top\""
+#~ msgstr "``布局``: \"中心 顶端\""
+
+#~ msgid "``Margin``:"
+#~ msgstr "``边界``:"
+
+#~ msgid "Left: ``-25``"
+#~ msgstr "左侧: ``-25``"
+
+#~ msgid "Top: ``0``"
+#~ msgstr "顶部: ``0``"
+
+#~ msgid "Right: ``25``"
+#~ msgstr "右侧: ``25``"
+
+#~ msgid "Bottom: ``100``"
+#~ msgstr "底部: ``100``"
+
+#~ msgid "Left: ``-200``"
+#~ msgstr "左侧: ``-200``"
+
+#~ msgid "Top: ``-150``"
+#~ msgstr "顶部: ``-150``"
+
+#~ msgid "Right: ``200``"
+#~ msgstr "右侧: ``200``"
+
+#~ msgid "Bottom: ``0``"
+#~ msgstr "底部: ``0``"
+
+#~ msgid "Left: ``-100``"
+#~ msgstr "左侧: ``-100``"
+
+#~ msgid "Right: ``100``"
+#~ msgstr "右侧: ``100``"
+
+#~ msgid "Particles"
+#~ msgstr "粒子"
+
+#~ msgid ""
+#~ "For one last bit of visual appeal, let's add a trail effect to the "
+#~ "player's movement. Choose your ``Player`` scene and add a :ref:"
+#~ "`Particles2D <class_Particles2D>` node named ``Trail``."
+#~ msgstr ""
+#~ "让我们为player的移动添加一个跟踪效果来增添一些视觉吸引力。选择 ``Player`` "
+#~ "场景并添加名为 ``Trail`` 的 :ref:`Particles2D <class_Particles2D>` 节点。"
+
+#~ msgid ""
+#~ "There are a large number of properties to choose from when configuring "
+#~ "particles. Feel free to experiment and create different effects. For the "
+#~ "effect in this example, use the following settings:"
+#~ msgstr ""
+#~ "在配置粒子时，有大量的属性可供选择。请随意尝试并创造不同的效果。对于本例中"
+#~ "的效果，使用下面的设置:"
+
+#~ msgid ""
+#~ "You also need to create a ``Material`` by clicking on ``<null>`` and then "
+#~ "\"New ParticlesMaterial\". The settings for that are below:"
+#~ msgstr ""
+#~ "您还需要通过点击 ``<null>`` 和 \"New ParticlesMaterial\" 来创建 "
+#~ "``Material`` 。设置如下:"
+
+#~ msgid ""
+#~ "To make the gradient for the \"Color Ramp\" setting, we want a gradient "
+#~ "taking the alpha (transparency) of the sprite from 0.5 (semi-transparent) "
+#~ "to 0.0 (fully transparent)."
+#~ msgstr ""
+#~ "要使 \"Color Ramp\" 设置具有渐变效果，我们需要将sprite的alpha(透明度)设置"
+#~ "为从0.5(半透明)到0.0(完全透明)。"
+
+#~ msgid ""
+#~ "Click \"New GradientTexture\", then under \"Gradient\", click \"New "
+#~ "Gradient\". You'll see a window like this:"
+#~ msgstr ""
+#~ "点击 \"New GradientTexture\" ，然后在 \"gradient\" 下拉选项中选择 \"New "
+#~ "Gradient\" 并点击。您会看到这样一个窗口:"
+
+#~ msgid ""
+#~ "The left and right boxes represent the start and end colors. Click on "
+#~ "each and then click the large square on the right to choose the color. "
+#~ "For the first color, set the ``A`` (alpha) value to around halfway. For "
+#~ "the second, set it all the way to ``0``."
+#~ msgstr ""
+#~ "左边和右边的竖着的矩形方框表示开始和结束颜色。分别点击它们，然后点击右边的"
+#~ "大方块来选择颜色。对于第一个颜色， 设置 ``A`` (alpha) 值为大约一半。对于第"
+#~ "二个颜色，把所有值设置为0。"
+
+#~ msgid ""
+#~ "See :ref:`Particles2D <class_Particles2D>` for more details on using "
+#~ "particle effects."
+#~ msgstr ""
+#~ "参考 :ref:`Particles2D <class_Particles2D>` 来了解使用粒子效果的更多细节。"
+
+#~ msgid "|image7| |image14|"
+#~ msgstr "|image7| |image14|"
 
 #~ msgid ""
 #~ "A more flexible alternative to prefabs you might know from Unity (and "
