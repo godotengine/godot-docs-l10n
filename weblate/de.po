@@ -12,7 +12,7 @@
 # Florian Findeiss <droddl@gmx.de>, 2018.
 # Gero <me@gero.io>, 2018.
 # Gordon <gkone@gmx.net>, 2018.
-# Headmade Games <janusdr@gmail.com>, 2018.
+# Headmade Games <janusdr@gmail.com>, 2018-2019.
 # heroldini <heroldini@gmail.com>, 2018.
 # Julian Retzlaff <julian.retzlaff@googlemail.com>, 2018.
 # Karl <karl.bittner@outlook.com>, 2019.
@@ -25,12 +25,13 @@
 # Mark B <berezun.mark@gmail.com>, 2018.
 # Martin Ziegler <martin.zie@gmx.de>, 2018.
 # Mathias Schmalisch <mathias.schmalisch@gmail.com>, 2018.
+# McDonnough <psbaechli@gmail.com>, 2019.
 # Neicul <neicul@gmx.de>, 2018.
 # Nijco <heijnk@posteo.de>, 2018.
 # nimradium <nimra242001@gmail.com>, 2018.
 # Otto Hakstetter <otto@hakstetter.de>, 2018.
 # Patrick Schönberger <patrick.schoenberger@posteo.de>, 2018.
-# Peter Koppatz <norbert@koppatz.com>, 2018.
+# Peter Koppatz <norbert@koppatz.com>, 2018-2019.
 # Philipp Wabnitz <philipp.wabnitz@s2011.tu-chemnitz.de>, 2018.
 # rama0x9 <5393a6cuwlun@opayq.com>, 2018.
 # RamonP.FreedomUnited <freedomunited@yandex.com>, 2018.
@@ -51,8 +52,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-14 16:05+0100\n"
-"PO-Revision-Date: 2019-01-08 08:58+0000\n"
-"Last-Translator: Manuel Schade <sprivat@protonmail.com>\n"
+"PO-Revision-Date: 2019-01-20 08:53+0000\n"
+"Last-Translator: Peter Koppatz <norbert@koppatz.com>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/de/>\n"
 "Language: de\n"
@@ -125,12 +126,12 @@ msgid ""
 "net <http://webchat.freenode.net/?channels=#godotengine-doc>`_!"
 msgstr ""
 "Reiche ein Issue oder einen Pull Request im `GitHub Repository <https://"
-"github.com/godotengine/godot-docs/issues>`_ ein, hilf uns  `die "
-"Dokumentation <https://hosted.weblate.org/engage/godot-engine/>`_ in deine "
-"Sprache zu übersetzen, oder diskutiere mit uns entweder im "
-"``#documentation`` Kanal auf `Discord <https://discord.gg/zH7NUgz>`_, oder "
-"dem ``#godotengine-doc`` Kanal auf `irc.freenode.net <http://webchat."
-"freenode.net/?channels=#godotengine-doc>`_!"
+"github.com/godotengine/godot-docs/issues>`_ ein, hilf uns `die Dokumentation "
+"<https://hosted.weblate.org/engage/godot-engine/>`_ in deine Sprache zu "
+"übersetzen, oder diskutiere mit uns entweder im ``#documentation`` Kanal auf "
+"`Discord <https://discord.gg/zH7NUgz>`_, oder dem ``#godotengine-doc`` Kanal "
+"auf `irc.freenode.net <http://webchat.freenode.net/?channels=#godotengine-"
+"doc>`_!"
 
 #: ../../docs/index.rst:43
 msgid ""
@@ -250,34 +251,32 @@ msgstr ""
 "Plattform und ohne jegliche Nutzungseinschränkung."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
 "where to look if you need info on a specific feature."
 msgstr ""
-"Diese Seite dient als grober Überblick über die Engine und die Inhalte der "
-"Dokumentation. Anfängern wird gezeigt wie sie mit Godot starten können, "
-"Fortgeschrittenen werden Verweise zu spezifischeren Themen aufgelistet."
+"Diese Seite gibt einen Überblick zur Game-Engine und über diese "
+"Dokumentation. Auf der einen Seite wird Anfängern gezeigt wie sie mit Godot "
+"starten können, andererseits werden Fortgeschrittene Verweise zu "
+"spezifischeren Themen finden."
 
 #: ../../docs/about/introduction.rst:21
 msgid "About Godot Engine"
 msgstr "Über die Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
 "Spiele-Engines sind komplexe Werkzeuge. Das macht es schwierig, Godot in "
-"wenigen Worten zu beschreiben. Nichtsdestotrotz finden Sie hier unseren PR-"
-"Text, die Sie gern benutzen können, wenn Sie eine kurze Beschreibung der "
-"Godot Engine benötigen."
+"wenigen Worten zu beschreiben. Nichtsdestotrotz findest Du hier eine kurze "
+"Zusammenfassung, die Du gern verwenden kannst, wenn Du eine Beschreibung der "
+"Godot Engine benötigst."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -287,14 +286,13 @@ msgid ""
 "mobile (Android, iOS) and web-based (HTML5) platforms."
 msgstr ""
 "Die Godot-Engine ist eine funktionsreiche, plattformunabhängige "
-"Spieleengine, mit der Spiele in 2D und 3D unter einer einheitlichen "
-"Schnittstelle erstellt werden können. Sie beinhaltetet ein umfassendes Set "
-"an Werkzeugen, damit der Anwender sich auf die Spieleentwicklung "
-"konzentrieren kann, ohne ständig das Rad neu erfinden zu müssen. Spiele "
-"können mit nur einem Klick zu vielen Plattformen exportiert werden, "
-"einschließlich den am meisten verbreiteten Desktop-Plattformen (Linux, "
-"MacOS, Windows), sowie mobilen Plattformen (Android, IOS) und dem Web "
-"(HTML5)."
+"Entwicklungsumgebung, welche die Erstellung von Spiele in 2D und 3D "
+"ermöglicht. Sie beinhaltetet eine umfassende Sammlung von Werkzeugen. Damit "
+"kann sich der Entwickler, ohne das Rad neu erfinden zu müssen, auf die "
+"Spieleentwicklung konzentrieren. Mit wenig Aufwand können Spiele für viele "
+"Plattformen exportiert werden. Dies schließt  die am meisten verbreiteten "
+"Desktop-Plattformen Linux, MacOS und Windows, mobile Betriebssysteme wie "
+"Android und IOS und webbasierte Versionen im HTML5-Format ein."
 
 #: ../../docs/about/introduction.rst:34
 msgid ""
@@ -329,7 +327,6 @@ msgid "About the documentation"
 msgstr "Über die Dokumentation"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -338,13 +335,12 @@ msgid ""
 "open source `Sphinx <http://www.sphinx-doc.org>`_ and `ReadTheDocs <https://"
 "readthedocs.org/>`_ tools."
 msgstr ""
-"Diese Dokumentation wird ständig weiter geschrieben, korrigiert, bearbeitet "
-"und umgestaltet von den Mitgliedern der Godot-Engine-Gemeinschaft. "
-"Bearbeitet wird sie mit Textdateien, geschrieben in der `reStructuredText "
-"<http://www.sphinx-doc.org/en/stable/rest.html>`_ markup language und dann "
-"kompiliert zu einer statischen Webseite oder einem Offline-Dokument mit den "
-"quell-offenen Werkzeugen `Sphinx <http://www.sphinx-doc.org>`_ und "
-"`ReadTheDocs <https://readthedocs.org/>`."
+"Diese Dokumentation wird von den Mitgliedern der Godot-Engine-Gemeinschaft "
+"ständig erweitert, korrigiert, bearbeitet und umgestaltet. Die Textdateien, "
+"werden im Format `reStructuredText <http://www.sphinx-doc.org/en/stable/rest."
+"html>`_ erstellt und danach zu einer statischen Webseite transformiert. Dies "
+"kann lokal mit dem quell-offenen Werkzeugen `Sphinx <http://www.sphinx-doc."
+"org>`_, bzw. online auf `ReadTheDocs <https://readthedocs.org/>` geschehen."
 
 #: ../../docs/about/introduction.rst:55
 msgid ""
@@ -403,11 +399,10 @@ msgid ""
 "engine to make games. It starts with the :ref:`Step by step <toc-learn-"
 "step_by_step>` tutorial which should be the entry point for all new users."
 msgstr ""
-"Der Abschnitt :ref:`sec-learn` ist der hauptsächliche Daseinszweck dieser "
-"Dokumentation, da er alle nötigen Informationen zur Verwendung der Engine "
-"zum Entwickeln von Spielen enthält. Er beginnt mit dem :ref:`Step by step "
-"<toc-learn-step_by_step>` Tutorial, welches der Einstiegspunkt für alle "
-"Neueinsteiger ist."
+"Der Abschnitt :ref:`sec-learn` beschreibt den zentralen Zweck dieser "
+"Dokumentation, da er alle nötigen Informationen zur Entwicklung von Spielen "
+"mit der Godot-Engine enthält. Er beginnt mit einer :ref:`Step by step <toc-"
+"learn-step_by_step>` Anleitung und für Neueinsteiger bestens geeignet."
 
 #: ../../docs/about/introduction.rst:80
 #, fuzzy
@@ -1670,7 +1665,7 @@ msgstr ""
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:46
 #: ../../docs/development/file_formats/tscn.rst:26
 msgid "Nodes"
-msgstr "Nodes"
+msgstr "Knoten"
 
 #: ../../docs/getting_started/step_by_step/scenes_and_nodes.rst:31
 msgid ""
@@ -2266,7 +2261,7 @@ msgstr "Die Möglichkeit Szenen aufzuteilen und diese einfacher zu Hand haben."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
-msgstr ""
+msgstr "Ein Werkzeug zum gleichzeitigen bearbeiten mehrerer Nodes."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
@@ -3633,6 +3628,11 @@ msgid ""
 "<target_node>, <target_function_name>)``. Here is the code for our Timer "
 "connection:"
 msgstr ""
+"Um die Verbindung im Code herzustellen, können wir die Funktion "
+"``connect``verwenden. Wir legen die Verbindung in ``_ready()``an, sodass sie "
+"direkt beim Ausführen erstellt wird. Die Syntax der Funktion ist "
+"``<source_node>.connect(<signal_name>, <target_node>, "
+"<target_function_name>)``. Hier ist der Code für unsere Timer-Verbindung:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:154
 msgid "Custom signals"
@@ -3720,28 +3720,40 @@ msgstr ""
 "geeignete Knoten ist, um die Kugeln zu erhalten."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
+#, fuzzy
 msgid ""
 "The solution to this is to use a signal to \"emit\" the bullets from the "
 "player. The player then has no need to \"know\" what happens to the bullets "
 "after that - whatever node is connected to the signal can \"receive\" the "
 "bullets and take the appropriate action to spawn them."
 msgstr ""
+"Die Lösung hierzu ist, ein Signal zu verwenden, um die Geschosse durch den "
+"Spieler \"abzufeuern\". Der Spieler braucht dann nicht mehr zu \"wissen\", "
+"was mit den Geschossen danach passiert - egal welches Node mit dem Signal "
+"verbunden ist, es kann die Geschosse \"empfangen\" und die angemessene "
+"Aktion durchführen um sie zu erzeugen."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:247
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr ""
+"Hier ist der Code für den Spieler, der Signale verwendet, um Geschosse "
+"abzufeuern:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:290
 msgid ""
 "In the main scene, we then connect the player's signal (it will appear in "
 "the \"Node\" tab)."
 msgstr ""
+"In der Hauptszene verbinden wir das Signal des Spielers (es erscheint im "
+"\"Node\"-Tab)"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:314
 msgid ""
 "Now the bullets will maintain their own movement independent of the player's "
 "rotation:"
 msgstr ""
+"Jetzt werden die Geschosse ihre Bewegung, unabhängig von der Drehung des "
+"Spielers, beibehalten:"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:322
 msgid ""
@@ -3750,12 +3762,21 @@ msgid ""
 "emits a ``body_entered`` signal whenever the player's physics body enters "
 "its collision shape, allowing you to know when the player collected it."
 msgstr ""
+"Viele von Godots eingebauten Node-Typen verfügen über Signale, welche du zum "
+"Erkennen von Events benutzen kannst. Zum Beispiel :ref:`Area2D "
+"<class_Area2D>` repräsentiert eine Münze die immer das Signal "
+"``body_entered`` sendet, wenn die Spielerfigur die Kollisions-Form der Münze "
+"erreicht. Damit registrierst Du, das der Spieler die Münze erreicht hat und "
+"einsammeln kann."
 
 #: ../../docs/getting_started/step_by_step/signals.rst:327
 msgid ""
 "In the next section, :ref:`doc_your_first_game`, you'll build a complete "
 "game including several uses of signals to connect different game components."
 msgstr ""
+"Im nächsten Abschnitt, :ref:`doc_your_first_game`, wirst du ein komplettes "
+"Spiel erstellen, inklusive der Nutzung von Signalen, um die verschiedenen "
+"Spielkomponenten miteinander zu verbinden."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:4
 msgid "Your first game"
@@ -3902,10 +3923,9 @@ msgid ""
 "functionality."
 msgstr ""
 "Mit ``Area2D`` können Objekte erkannt werden, die den Spieler überlappen "
-"oder an diesen anstoßen. Ändere den Namen des Nodes zu ``Player`` indem Du "
+"oder an diesen anstoßen. Ändere den Namen des Nodes zu ``Player``, indem Du "
 "auf dessen Namen klickst. Dieses Node ist der Ursprungs-Node der Szene. Man "
-"kann zusätzliche Nodes zu ihm hinzufügen, um ihm weitere Funktionalität zu "
-"geben."
+"kann weitere Nodes und damit weitere Funktionalität hinzufügen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:74
 msgid ""
@@ -3930,17 +3950,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:83
 msgid "For this project, we will be following the Godot naming conventions."
-msgstr ""
+msgstr "Für dieses Projekt halten wir uns an die Godot-Namenskonventionen."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:85
-#, fuzzy
 msgid ""
 "**GDScript**: Classes (nodes) use PascalCase, variables and functions use "
 "snake_case, and constants use ALL_CAPS (See :ref:`doc_gdscript_styleguide`)."
 msgstr ""
-"Für dieses Projekt werden wir den Godot Namenskonventionen folgen. Klassen "
-"(Nodes) nutzen ``PascalCase``, Variablen und Funktionen ``snake_case`` und "
-"Konstanten ``ALL_CAPS``."
+"**GDScript**: Klassen (Nodes) nutzen ``PascalCase``, Variablen und "
+"Funktionen ``snake_case`` und Konstanten ``ALL_CAPS``."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:89
 msgid ""
@@ -3949,11 +3967,14 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"**C#**: Klassen, Exportvariablen und Methoden verwenden CamelCase-"
+"Schreibweise, private Felder _camelCase, lokale Variablen und Parameter "
+"verwenden camelCase (See :ref:`doc_c_sharp_styleguide`).  Beachte die genaue "
+"Schreibweise, wenn Du Signale einbinden willst."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
-#, fuzzy
 msgid "Sprite animation"
-msgstr "Animation"
+msgstr "Sprite-Animation"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:98
 msgid ""
@@ -3970,11 +3991,11 @@ msgstr ""
 "<class_AnimatedSprite>` Node als Unterobjekt hinzu. Das ``AnimatedSprite`` "
 "kümmert sich um das aussehen und die animation unseres Spielers. Achte auf "
 "das Warnsymbol neben dem Node . Ein ``AnimatedSprite`` braucht eine :ref:"
-"`SpriteFrames <class_SpriteFrames>` Resource, dass ist eine liste der "
-"Animationen die er darstellen kann. Um einen zu erstellen suche die "
+"`SpriteFrames <class_SpriteFrames>` Resource, dass ist eine Liste aller "
+"Animationen die er darstellen kann. Um eine Animation zu erstellen suche die "
 "``Frames`` Eigenschaft im Inspektor und klicke  \"<null>\" -> \"Neues "
 "SpriteFrames\". Nun klicke an der selben Stelle ``<SpriteFrames>`` um das "
-"\"SpriteFrames\" panel zu öffnen:"
+"\"SpriteFrames\"-Panel zu öffnen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:110
 msgid ""
@@ -3984,11 +4005,11 @@ msgid ""
 "``playerGrey_up[1/2]`` and ``playerGrey_walk[1/2]``, into the \"Animation "
 "Frames\" side of the panel:"
 msgstr ""
-"Auf der linken Seite befindet sich die liste der Animationen. Klicke auf die "
+"Auf der linken Seite befindet sich die Liste der Animationen. Klicke auf die "
 "\"default\" Animation und benenne sie in \"right\" um. Dann klicke auf den "
-"\"hinzufügen\" Knopf um eine Zweite Animation, \"up\" genannt, hinzuzufügen. "
-"Ziehe die zwei Bilder für jede Animation, ``playerGrey_up[1/2]`` und "
-"``playerGrey_walk[1/2]``, in die \"Animationsframes\" Seite des Panels:"
+"\"hinzufügen\" Knopf um eine zweite Animation, \"up\" genannt, hinzuzufügen. "
+"Ziehe die zwei Bilder der Animation, ``playerGrey_up[1/2]`` und "
+"``playerGrey_walk[1/2]``, in die \"Animation Frames\" des Panels:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:117
 msgid ""
@@ -3997,10 +4018,10 @@ msgid ""
 "property to ``(0.5, 0.5)``. You can find it in the Inspector under the "
 "``Node2D`` heading."
 msgstr ""
-"Das Spieler-Bild ist ein bischen zu groß für das Spieler Fenster, also "
-"müssen wir es verkleinern. Klicke auf das  ``AnimatedSprite`` Node und setze "
-"die ``Scale`` Eigenschaft auf ``(0.5, 0.5)``. Du kannst sie im Inspektor "
-"unter ``Node2D``finden."
+"Das Spieler-Bild ist ein bischen zu groß für das Spielefenster, also müssen "
+"wir es verkleinern. Klicke auf das  ``AnimatedSprite`` Node und setze die "
+"Eigenschaft ``Scale`` auf ``(0.5, 0.5)``. Du kannst sie im Inspektor "
+"unterhalb der Überschrift ``Node2D``finden."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:124
 msgid ""
@@ -4010,24 +4031,26 @@ msgid ""
 "best fit, so next to \"Shape\" in the Inspector, click \"<null>\"\" -> \"New "
 "CapsuleShape2D\".  Resize the shape to cover the sprite:"
 msgstr ""
-"Jetzt füge ein :ref:`CollisionShape2D <class_CollisionShape2D>` als ein "
-"Unterobjekt von ``Player`` hinzu. Er bestimmt die \"hitbox\" des Spielers, "
-"oder die Grenzen seiner Kollision-Areals. Für diesen Charakter ist ein "
-"``CapsuleShape2D`` Node am besten geeignet, also klicke im Inspektor neben "
-"\"Shape\" auf \"<null>\"\" -> \"New CapsuleShape2D\". Verändere die Form so "
-"das sie den Sprite bedeckt:"
+"Abschließend füge ein :ref:`CollisionShape2D <class_CollisionShape2D>` als "
+"ein Unterobjekt von ``Player`` hinzu. Er bestimmt die \"hitbox\" des "
+"Spielers, oder die Grenzen seiner Kollision-Areals. Für diesen Charakter ist "
+"ein ``CapsuleShape2D`` Node am besten geeignet, also klicke im Inspektor "
+"neben \"Shape\" auf \"<null>\"\" -> \"New CapsuleShape2D\". Verändere die "
+"Form so, das sie die Form des Sprite überdeckt:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:132
 msgid ""
 "Don't scale the shape's outline! Only use the size handles (circled in red) "
 "to adjust the shape!"
 msgstr ""
-"Skaliere nicht die Kontur der Form! Verwende nur die Größengriffe (rot "
-"eingekreist), um die Form anzupassen!"
+"Skaliere nicht die Kontur des Sprite! Verwende nur die zwei Anfasser für die "
+"Größe (rot eingekreist), um die Form anzupassen!"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:135
 msgid "When you're finished, your ``Player`` scene should look like this:"
-msgstr "Wenn du fertig bist sollte deine ``Player`` Szene so aussehen:"
+msgstr ""
+"Wenn du fertig bist sollte Deine ``Player`` Szene die folgende Struktur "
+"besitzen:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:140
 msgid "Moving the player"
@@ -4056,8 +4079,8 @@ msgid ""
 "If you're creating a C# script or other languages, select the language from "
 "the `language` drop down menu before hitting create."
 msgstr ""
-"Wenn Du ein C#-Skript oder andere Sprachen erstellen willst, wähle die "
-"Sprache aus dem Aufklappmenü \"Sprache\", bevor Du auf Erstellen klickst."
+"Wenn Du ein C#-Skript oder andere Sprachen verwenden willst, wähle die "
+"Sprache aus dem Auswahlmenü \"Sprache\", bevor Du auf Erstellen klickst."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:156
 msgid ""
@@ -4093,6 +4116,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Wenn Du C# verwendest, musst Du die Projekt-Bausteine neu übersetzen, um "
+"neue Exportvariablen oder Signale sichtbar zu machen. Das kann manuell durch "
+"einen Klick auf das Wort \"Mono\" im unteren Fensterbereich geschehen, es "
+"wird das Mono-Panel eingeblendet und ein anschließender Klick auf \"Build "
+"Project\" führt die Aktion aus."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -4104,16 +4132,16 @@ msgstr ""
 "ermitteln:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:209
-#, fuzzy
 msgid ""
 "Now we can use the ``_process()`` function to define what the player will "
 "do. ``_process()`` is called every frame, so we'll use it to update elements "
 "of our game, which we expect will change often. Here we'll make it:"
 msgstr ""
 "Nun können wir mit der Funktion ``_process()`` definieren, was der Spieler "
-"tun soll. ``_process()`` wird mit jedem Frame aufgerufen, also werden wir es "
-"verwenden, um Elemente unseres Spiels zu aktualisieren, von denen wir "
-"erwarten, dass sie sich oft ändern werden. Hier lassen wir es:"
+"tun soll. ``_process()`` wird mit jedem Frame aufgerufen, deshalb verwenden "
+"wir es, für die Akualisierung unserer Spielelemente, von denen wir erwarten, "
+"dass sie sich oft ändern werden. Für den ``Player``müssen wir folgende "
+"Aktionen abarbeiten:"
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:213
 msgid "Check for input."
@@ -4138,10 +4166,10 @@ msgid ""
 msgstr ""
 "Zuerst müssen wir auf Eingaben prüfen - drückt der Spieler eine Taste? Für "
 "dieses Spiel haben wir 4 Richtungseingaben zu überprüfen. Eingabeaktionen "
-"werden in den Projekteinstellungen unter \"Input Map\" definiert. Sie können "
-"benutzerdefinierte Ereignisse definieren und ihnen verschiedene Tasten, "
-"Mausereignisse oder andere Eingaben zuweisen. Für diese Demo werden wir die "
-"Standardereignisse verwenden, die den Pfeiltasten auf der Tastatur "
+"werden in den Projekteinstellungen unter \"Eingabe-Zuordnung\" definiert. "
+"Sie können benutzerdefinierte Ereignisse definieren und ihnen verschiedene "
+"Tasten, Mausereignisse oder andere Eingaben zuweisen. Für diese Demo werden "
+"wir die Standardereignisse verwenden, die den Pfeiltasten auf der Tastatur "
 "zugeordnet sind."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:224
@@ -66354,7 +66382,7 @@ msgstr "Andere Chats"
 msgid ""
 "`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
 msgstr ""
-"`Matrix (IRC compatible) <https://matrix.to/#/#godotengine:matrix.org>`_"
+"`Matrix (IRC kompatibel) <https://matrix.to/#/#godotengine:matrix.org>`_"
 
 #: ../../docs/community/channels.rst:31
 #, fuzzy

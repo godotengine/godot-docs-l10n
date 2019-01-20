@@ -2,8 +2,8 @@
 # Copyright (C) 2014-2019, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
-# Hidetsugu Takahashi <manzyun@gmail.com>, 2018.
-# Kazuki Miyanishi <mozukichi.0807@gmail.com>, 2018.
+# Hidetsugu Takahashi <manzyun@gmail.com>, 2018-2019.
+# Kazuki Miyanishi <mozukichi.0807@gmail.com>, 2018-2019.
 # Nathan Lovato <nathan.lovato.art@gmail.com>, 2018.
 # nitenook <admin@alterbaum.net>, 2018.
 # nyanode <akaruooyagi@yahoo.co.jp>, 2018.
@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-14 16:05+0100\n"
-"PO-Revision-Date: 2018-12-31 12:11+0000\n"
-"Last-Translator: nitenook <admin@alterbaum.net>\n"
+"PO-Revision-Date: 2019-01-20 08:53+0000\n"
+"Last-Translator: Hidetsugu Takahashi <manzyun@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ja/>\n"
 "Language: ja\n"
@@ -398,10 +398,10 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
-"最後に、 :ref:`sec-class-ref` はGodot APIについてのドキュメントです。これは"
-"ゲームエンジンのスクリプトエディタに直接利用できます。それはメインソースリポ"
-"ジトリのファイルから自動的に生成されるため、ドキュメントのファイルは編集でき"
-"ません。詳しくは :ref:`doc_updating_the_class_reference` を御覧ください。"
+"最後に、:ref:`sec-class-ref` はGodot APIのドキュメントです。これはエンジンの"
+"スクリプトエディタで直接利用することもできます。 メインソースリポジトリのファ"
+"イルから自動的に生成されるため、生成されたドキュメントのファイルは変更されま"
+"せん。 詳細は:ref:`doc_updating_the_class_reference` を参照してください。"
 
 #: ../../docs/about/introduction.rst:96
 msgid ""
@@ -409,10 +409,12 @@ msgid ""
 "various `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`_."
 msgstr ""
+"このドキュメントに加えて、さまざまな `Godotデモプロジェクト <https://github."
+"com/godotengine/godot-demo-projects>`_ を見てみることもできます。"
 
 #: ../../docs/about/introduction.rst:99
 msgid "Have fun reading and making games with Godot Engine!"
-msgstr "楽しんでこのドキュメントを読んでGodot Engineでのゲーム開発を！"
+msgstr "Godot Engineでの学習やゲーム開発を楽しんでください！"
 
 #: ../../docs/about/faq.rst:4
 #: ../../docs/tutorials/assetlib/what_is_assetlib.rst:29
@@ -423,8 +425,7 @@ msgstr "よくある質問"
 msgid ""
 "What can I do with Godot? How much does it cost? What are the license terms?"
 msgstr ""
-"Godotで何ができますか？　利用料はかかりますか？　ライセンス条項はどの様になっ"
-"ていますか？"
+"Godotで何ができますか？費用はいくらかかりますか？ライセンス条項は何ですか？"
 
 #: ../../docs/about/faq.rst:9
 msgid ""
@@ -987,11 +988,11 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/index.rst:2
 #: ../../docs/tutorials/2d/2d_lights_and_shadows.rst:108
 msgid "Step by step"
-msgstr ""
+msgstr "ステップ・バイ・ステップ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:4
 msgid "Introduction to Godot’s editor"
-msgstr ""
+msgstr "Godotエディタ・イントロダクション"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:6
 msgid ""
@@ -1002,13 +1003,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:11
 msgid "Project manager"
-msgstr ""
+msgstr "プロジェクトマネージャー"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:13
 msgid ""
 "When you launch Godot, the first window you’ll see is the Project Manager. "
 "It lets you create, remove, import or play game projects."
 msgstr ""
+"Godotを起動したら、最初にプロジェクトマネージャーウィンドウが見えるでしょう。"
+"そこからゲームプロジェクトを作成、削除、インポートもしくはプレイしましょう。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:16
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:49
@@ -1022,6 +1025,8 @@ msgid ""
 "In the top-right corner you’ll find a drop-down menu to change the editor’s "
 "language."
 msgstr ""
+"ウィンドウ右上の角にエディタの言語を変更するドロップダウンメニューが見えるで"
+"しょう。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:21
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:57
@@ -1034,6 +1039,8 @@ msgid ""
 "From the **Templates** tab you can download open source project templates "
 "and demos to help you get started faster."
 msgstr ""
+"**テンプレート** タブからオープンソースプロジェクトテンプレートやデモをダウン"
+"ロードでき、すばやく開発を始めることができます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:26
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:71
@@ -1043,13 +1050,15 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:29
 msgid "Create or import a project"
-msgstr ""
+msgstr "プロジェクトの作成もしくはプロジェクトのインポート"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:31
 msgid ""
 "To create a new project, click the ``New Project`` button on the right. Give "
 "it a name and choose an empty folder on your computer to save it."
 msgstr ""
+"プロジェクトを作成するには、右の ``New Project`` ボタンをクリックします。名前"
+"とコンピューター上の空フォルダを入力して保存します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:34
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:91
@@ -1062,6 +1071,8 @@ msgid ""
 "Click the Browse button to open Godot’s file browser and pick a location or "
 "type the folder’s path in the Project Path field."
 msgstr ""
+"BrowseボタンをクリックするとGodotのファイルブラウザが開かれ、場所を選択するか"
+"フォルダパスをプロジェクトパスに入力します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:39
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:102
@@ -1075,12 +1086,17 @@ msgid ""
 "empty folder and you may click ``Create``. Godot will create the project for "
 "you and open it in the editor."
 msgstr ""
+"When you see the green tick on the right, エンジンが空フォルダを確認すると "
+"``Create`` をクリックすることができます。Godotはプロジェクトを作成しエディ"
+"ターを開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:45
 msgid ""
 "The next time you’ll open Godot, you’ll see your new project in the list. "
 "Double click on it to open it in the editor."
 msgstr ""
+"次回からGodotを起動すると、新しく作ったプロジェクトがリストに表示されます。リ"
+"スト項目をダブルクリックをするとエディターが開きます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:48
 #: ../../docs/getting_started/step_by_step/godot_design_philosophy.rst:154
@@ -1094,6 +1110,9 @@ msgid ""
 "Locate the folder that contains the project or the ``project.godot`` file to "
 "import and edit it."
 msgstr ""
+"他のプロジェクトをインポートするには、インポートボタンを使います。 ``project."
+"godot`` ファイルの入っているフォルダに移動し、 ``project.godot`` ファイルを選"
+"択すると、インポートを行い編集できます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:54
 msgid "|image7|"
@@ -1101,7 +1120,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:56
 msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr ""
+msgstr "フォルダパスが正しいときには、緑色のチェックマークが表示されます。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:58
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:120
@@ -1110,7 +1129,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:61
 msgid "Your first look at Godot’s editor"
-msgstr ""
+msgstr "はじめてのGodotエディタ"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:63
 msgid ""
@@ -1118,6 +1137,10 @@ msgid ""
 "interface with the 3D viewport active. You can change the current workspace "
 "at the top of the interface. Click on 2D to switch to the 2D workspace."
 msgstr ""
+"Godotへようこそ！　プロジェクトが開かれるとエディタのインターフェイスが3D"
+"ビューポートが有効化された状態で表示します。このワークスペースを上方向のイン"
+"ターフェイスで変更することができます。2Dワークスペースに変更するために、2Dを"
+"クリックします。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:68
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:141
@@ -1126,29 +1149,33 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:70
 msgid "Now you should see this interface, with empty docks on the right side."
-msgstr ""
+msgstr "こちらのインターフェイスになり、右側のドックは空っぽです。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:72
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:147
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:74
 msgid ""
 "At the top, from left to right, you can see the **main menus**, the "
 "**workspaces**, and the **playtest buttons**."
 msgstr ""
+"上から順番に、左から右へ **メインメニュー** 、 **ワークスペース** 、そして **"
+"テストプレイボタン** があります。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:77
 msgid ""
 "On the left side, you have the **FileSystem dock**, where you’ll manage your "
 "project files and assets."
 msgstr ""
+"右側には、 **ファイルシステム・ドック** があり、プロジェクトファイルやアセッ"
+"トはこちらで管理します。"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:80
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:152
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:82
 msgid ""
@@ -1159,7 +1186,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:85
 #: ../../docs/tutorials/assetlib/using_assetlib.rst:160
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
 #: ../../docs/getting_started/step_by_step/intro_to_the_editor_interface.rst:87
 msgid ""

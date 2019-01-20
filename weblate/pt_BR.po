@@ -19,6 +19,7 @@
 # Diego Schmidt <diegophh@gmail.com>, 2018.
 # Dimenicius <vinicius.costa.92@gmail.com>, 2018.
 # Douglas Fiedler <dognew@gmail.com>, 2018.
+# douglas neumeister <douglas.neumeister@gmail.com>, 2019.
 # Eduardo Abreu <eduo.abreu@gmail.com>, 2018.
 # Emerson Guerra <guerraemerson@gmail.com>, 2018.
 # Fathos Law <fathos23@gmail.com>, 2018.
@@ -35,6 +36,7 @@
 # Jessé Silva <starclock@gmail.com>, 2018.
 # João Victor Lima <victordevtb@outlook.com>, 2018.
 # Joaquim Ferreira <joaquimferreira1996@bol.com.br>, 2018.
+# Joel Landgraf Filho <joel.landgraf@gmail.com>, 2019.
 # Julio Yagami <juliohenrique31501234@hotmail.com>, 2018.
 # ieleny filgueira <ielenyfilgueira@hotmail.com>, 2018.
 # Klaus Dellano <klaus.dd.sa@gmail.com>, 2018.
@@ -62,6 +64,7 @@
 # Rodolfo R Gomes <rodolforg@gmail.com>, 2018.
 # ronybezerra <ronybezerra@gmail.com>, 2018.
 # ShallZ <vzinbr@gmail.com>, 2018.
+# Stephann Vasconcelos <stephann@protonmail.com>, 2019.
 # suxuf@2odem.com <suxuf@2odem.com>, 2018.
 # Thiago R. Silvestrini <thiagorossi.s@gmail.com>, 2018.
 # Tiago A. Reul <tiago@reul.space>, 2018.
@@ -74,8 +77,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-14 16:05+0100\n"
-"PO-Revision-Date: 2019-01-08 08:58+0000\n"
-"Last-Translator: Henrique Combochi <henrique.combochi@gmail.com>\n"
+"PO-Revision-Date: 2019-01-20 08:53+0000\n"
+"Last-Translator: Stephann Vasconcelos <stephann@protonmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "godot-engine/godot-docs/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -270,7 +273,6 @@ msgstr ""
 "qualquer plataforma e sem nenhuma restrição de uso."
 
 #: ../../docs/about/introduction.rst:16
-#, fuzzy
 msgid ""
 "This page gives a broad presentation of the engine and of the contents of "
 "this documentation, so that you know where to start if you are a beginner or "
@@ -286,19 +288,17 @@ msgid "About Godot Engine"
 msgstr "Sobre o Godot Engine"
 
 #: ../../docs/about/introduction.rst:23
-#, fuzzy
 msgid ""
 "A game engine is a complex tool, and it is therefore difficult to present "
 "Godot in a few words. Here's a quick synopsis, which you are free to reuse "
 "if you need a quick writeup about Godot Engine."
 msgstr ""
 "Um motor de jogos é uma ferramenta complexa e, portanto, é difícil "
-"apresentar o Godot em poucas palavras. No entanto, aqui está nossa "
-"apresentação para relações públicas, que você está livre para reutilizar se "
-"precisar de uma curta definição sobre Godot Engine."
+"apresentar o Godot em poucas palavras. No entanto, aqui está uma sinopse "
+"rápida, que você está livre para reutilizar se precisar de uma curta "
+"definição sobre Godot Engine."
 
 #: ../../docs/about/introduction.rst:27
-#, fuzzy
 msgid ""
 "Godot Engine is a feature-packed, cross-platform game engine to create 2D "
 "and 3D games from a unified interface. It provides a comprehensive set of "
@@ -347,7 +347,6 @@ msgid "About the documentation"
 msgstr "Sobre a documentação"
 
 #: ../../docs/about/introduction.rst:48
-#, fuzzy
 msgid ""
 "This documentation is continuously written, corrected, edited, and revamped "
 "by members of the Godot Engine community. It is edited via text files in the "
@@ -372,8 +371,8 @@ msgid ""
 "docs/>`_."
 msgstr ""
 "Você pode contribuir com a documentação do Godot abrindo chamados de "
-"problemas ou enviando patches através de \"pull requests\" no seu "
-"`repositório no GitHub <https://github.com/godotengine/godot-docs>`_, ou "
+"problemas ou enviando correções através de \"pull requests\" no GitHub "
+"`source repository <https://github.com/godotengine/godot-docs>`_, ou "
 "traduzindo isto para o seu idioma em `Hosted Weblate <https://hosted.weblate."
 "org/projects/godot-engine/godot-docs/>`_."
 
@@ -425,14 +424,12 @@ msgstr ""
 "step_by_step>`, que deve ser o ponto de entrada para todos os novos usuários."
 
 #: ../../docs/about/introduction.rst:80
-#, fuzzy
 msgid ""
 "The :ref:`sec-tutorials` section can be read as needed, in any order. It "
 "contains feature-specific tutorials and documentation."
 msgstr ""
-"A seção :ref:`sec-tutorials`, por outro lado, pode ser lida conforme "
-"necessário, em qualquer ordem. Ela contém muitos tutoriais e documentações "
-"de funcionalidades específicas."
+"A seção :ref:`sec-tutorials`, pode ser lida conforme necessário, em qualquer "
+"ordem. Ela contém tutoriais e documentações de funcionalidades específicas."
 
 #: ../../docs/about/introduction.rst:82
 msgid ""
@@ -445,7 +442,6 @@ msgstr ""
 "desenvolvimento de módulos em C++, ou plugins para o editor."
 
 #: ../../docs/about/introduction.rst:85
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -453,11 +449,11 @@ msgid ""
 "channels like IRC and Discord and contains a list of recommended third-party "
 "tutorials outside of this documentation."
 msgstr ""
-"A :ref:`sec-community` fornece informações relacionadas à contribuição do "
-"motor de desenvolvimento e à vida da comunidade, por exemplo, como reportar "
-"bugs, ajudar com a documentação, etc. Ela também mostra vários canais da "
-"comunidade, como IRC e Discord, e contém uma lista de recomendações de "
-"tutoriais feitas por terceiros, fora desta documentação."
+"A :ref:`sec-community` seção fornece informações relacionadas à contribuição "
+"do motor de desenvolvimento e à vida da comunidade, por exemplo, como "
+"reportar erros, ajuda com a documentação, etc. Ela também mostra vários "
+"canais da comunidade, como IRC e Discord, e contém uma lista de "
+"recomendações de tutoriais feitas por terceiros, fora desta documentação."
 
 #: ../../docs/about/introduction.rst:90
 msgid ""
@@ -506,10 +502,9 @@ msgid ""
 "opensource.org/licenses/MIT>`_ MIT license. This means it is free as in "
 "\"free speech\" as well as in \"free beer.\""
 msgstr ""
-"Godot é um `Software Gratuito/Livre de Código Aberto <https://en.wikipedia."
-"org/wiki/Free_and_open-source_software>`_ disponível sob a licença MIT "
-"`<https://opensource.org/licenses/MIT>`_ aprovada pela OSI. Você está livre "
-"para utilizar o Godot para qualquer finalidade."
+"Godot é 'Software Livre e de Código Aberto' disponível em https://opensource."
+"org/licenses/MIT> ` Licença MIT. Isso significa que é livre como em "
+"\"liberdade de expressão\", bem como em \"cerveja grátis.\""
 
 #: ../../docs/about/faq.rst:11
 msgid "In short:"
@@ -2260,6 +2255,7 @@ msgstr "A habilidade de subdividir cenas e torná-las mais fáceis de gerenciar.
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
 msgstr ""
+"Uma ferramenta para gerenciar e editar várias instâncias do nó de uma só vez."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
@@ -3932,6 +3928,10 @@ msgid ""
 "`doc_c_sharp_styleguide`).  Be careful to type the method names precisely "
 "when connecting signals."
 msgstr ""
+"** C # **: Classes, variáveis de exportação e métodos usam PascalCase, "
+"campos privados usam _camelCase, variáveis locais e parâmetros usam "
+"camelCase (Veja: ref: `doc_c_sharp_styleguide`). Tenha o cuidado de digitar "
+"os nomes dos métodos com precisão ao conectar os sinais."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:96
 msgid "Sprite animation"
@@ -4074,6 +4074,11 @@ msgid ""
 "triggered by clicking the word \"Mono\" at the bottom of the editor window "
 "to reveal the Mono Panel, then clicking the \"Build Project\" button."
 msgstr ""
+"Se você estiver usando o C #, precisará (re) construir os assemblies do "
+"projeto sempre que desejar ver novas variáveis ou sinais de exportação. Essa "
+"construção pode ser acionada manualmente clicando na palavra \"Mono\" na "
+"parte inferior da janela do editor para revelar o Mono Panel e, em seguida, "
+"clicando no botão \"Build Project\"."
 
 #: ../../docs/getting_started/step_by_step/your_first_game.rst:193
 msgid ""
@@ -10386,6 +10391,12 @@ msgid ""
 "ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
 "`Resource <class_Resource>` features:"
 msgstr ""
+"Isso vem com muitas vantagens distintas sobre estruturas de dados "
+"alternativas, como JSON, CSV ou arquivos TXT personalizados. Os usuários só "
+"podem importar esses recursos como: ref: `Dicionário <class_dictionary>` "
+"(JSON) ou como: ref: `File <class_file>` para analisar. O que diferencia "
+"Resources é sua herança de: ref: `Object <class_Object>`,: ref: `Referência "
+"<class_Reference>`, e: ref: `Resource <class_Resource>` caracteristicas:"
 
 #: ../../docs/getting_started/step_by_step/resources.rst:165
 #, fuzzy
@@ -10623,6 +10634,13 @@ msgid ""
 "keyword in GDScript) won't work. Godot will not serialize the custom "
 "properties on the script subclass properly."
 msgstr ""
+"Esteja ciente de que os arquivos de recursos (\\ *. Tres / \\ *. Res) "
+"armazenarão o caminho do script que eles usam no arquivo. Quando carregados, "
+"eles buscarão e carregarão esse script como uma extensão do tipo. Isso "
+"significa que tentar atribuir uma subclasse, ou seja, uma classe interna de "
+"um script (como usar a palavra-chave `` class`` no GDScript) não funcionará. "
+"Godot não serializará as propriedades customizadas na subclasse do script "
+"adequadamente."
 
 #: ../../docs/getting_started/step_by_step/resources.rst:363
 msgid ""
@@ -10630,6 +10648,9 @@ msgid ""
 "doesn't extend ``Resource``, and then determine that the script failed to "
 "load for the Resource object since the types are incompatible."
 msgstr ""
+"No exemplo abaixo, Godot carregaria o script `` Node``, veria que ele não "
+"estende `` Resource`` e determinará que o script falhou ao carregar o objeto "
+"Resource, pois os tipos são incompatíveis."
 
 #: ../../docs/getting_started/step_by_step/filesystem.rst:4
 msgid "File system"
@@ -11171,6 +11192,10 @@ msgid ""
 "<class_PackedScene>` resources using the equivalent function :ref:`SceneTree."
 "change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
 msgstr ""
+"Em vez de usar caminhos de arquivo, também é possível usar recursos prontos: "
+"ref: `PackedScene <class_PackedScene>` usando a função equivalente: ref: "
+"`SceneTree.change_scene_to (cena PackedScene) "
+"<class_SceneTree_method_change_scene_to>`:"
 
 #: ../../docs/getting_started/step_by_step/scene_tree.rst:182
 #, fuzzy
@@ -11191,7 +11216,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:4
 msgid "Singletons (AutoLoad)"
-msgstr "Singletons (AutoLoad)"
+msgstr "Singletons (Carregamento Automático)"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:9
 msgid ""
@@ -11324,6 +11349,8 @@ msgid ""
 "If the \"Enable\" column is checked (default true) then the singleton can "
 "simply be accessed directly:"
 msgstr ""
+"Se a coluna \"Enable\" estiver marcada (default true), então o singleton "
+"pode simplesmente ser acessado diretamente:"
 
 #: ../../docs/getting_started/step_by_step/singletons_autoload.rst:86
 #, fuzzy
@@ -11546,7 +11573,7 @@ msgstr "OS (exportar)"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Desktop:** Windows, macOS, Linux"
-msgstr "**Desktop:** Windows, macOS, Linux"
+msgstr "**Desktop:** Windows, mac OS, Linux"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Mobile:** Android, iOS, Windows Phone, Tizen"
@@ -11574,7 +11601,7 @@ msgstr "**TV:** Android TV, Samsung Smart TV, tvOS"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:23
 msgid "**Desktop:** Windows, macOS, X11"
-msgstr "**Desktop:** Windows, macOS, X11"
+msgstr "**Desktop:** Windows, mac OS, X11"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:24
 msgid "**Mobile:** Android, iOS"
@@ -12101,15 +12128,15 @@ msgstr "Correspondência do glossário"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:197
 msgid "GameObject -> Node"
-msgstr ""
+msgstr "GameObject -> Nó"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:198
 msgid "Add a component -> Inheriting"
-msgstr ""
+msgstr "Adicionar um componente -> Herdar"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:199
 msgid "Prefab -> Externalized branch"
-msgstr ""
+msgstr "Prefab -> Ramificação Externa"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:203
 msgid "Scripting: GDScript, C# and Visual Script"
@@ -12239,19 +12266,23 @@ msgstr "Animação por Sprites"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:245
 msgid "Unity can handle script serialization in two ways:"
-msgstr ""
+msgstr "O Unity pode manipular a serialização de scripts de duas maneiras:"
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:247
 msgid ""
 "Implicit: All public fields in a class are automatically serialized if the "
 "type is a serializable type (``Dictionary`` is not serializable)."
 msgstr ""
+"Implícito: Todos os campos públicos em uma classe são automaticamente "
+"serializados se o tipo for serializável (`` Dictionary`` não é serializável)."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:248
 msgid ""
 "Explicit: Non-public fields can be serialized using the ``[SerializeField]`` "
 "attribute."
 msgstr ""
+"Explicito: Campos não públicos podem ser serializados usando o atributo `` "
+"[SerializeField] ``."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:250
 msgid ""
@@ -12261,6 +12292,12 @@ msgid ""
 "`class_Array` and :ref:`class_Dictionary`) using the ``export`` keyword. See "
 "the :ref:`exports documentation <doc_gdscript_exports>` for details."
 msgstr ""
+"Godot também possui um sistema de serialização de scripts embutido, mas "
+"funciona apenas explicitamente. Você pode serializar qualquer tipo "
+"serializável (: ref: `built-in e vários tipos de mecanismos "
+"<doc_binary_serialization_api>`, incluindo: ref: `class_Array` e: ref:` "
+"class_dictionary`) usando a palavra-chave `` export``. Veja a: ref: "
+"`documentação de exportações <doc_gdscript_exports>` para detalhes."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:255
 msgid ""
@@ -12270,6 +12307,12 @@ msgid ""
 "`class_Resource` will allow you to create custom serializable objects. More "
 "information about resources can be found :ref:`here <doc_resources>`."
 msgstr ""
+"Unity também tem um tipo de dados chamado `` ScriptableObject`` usado para "
+"serializar objetos de ativos personalizados. Seu equivalente em Godot é a "
+"classe base para todos os recursos:: ref: `class_Resource`. Criar um script "
+"que herda: ref: `class_Resource` permitirá que você crie objetos "
+"serializáveis personalizados. Mais informações sobre recursos podem ser "
+"encontradas: ref: `here <doc_resources>`."
 
 #: ../../docs/getting_started/editor/unity_to_godot.rst:260
 msgid "Using Godot in C++"
@@ -12606,7 +12649,7 @@ msgstr "{file} --line {line} --column {col}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "atom/sublime text"
-msgstr "atom/sublime text"
+msgstr "atom/sublime texto"
 
 #: ../../docs/getting_started/editor/external_editor.rst:36
 msgid "{file}:{line}"
@@ -12614,7 +12657,7 @@ msgstr "{file}:{line}"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 msgid "jetbrains rider"
-msgstr ""
+msgstr "jetbrains rider"
 
 #: ../../docs/getting_started/editor/external_editor.rst:38
 #, fuzzy
@@ -13003,7 +13046,7 @@ msgstr "case"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:194
 msgid "Cast the value to a given type if possible."
-msgstr ""
+msgstr "Transmita o valor para um determinado tipo, se possível."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:196
 msgid "self"
@@ -13162,7 +13205,7 @@ msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:230
 msgid "puppet"
-msgstr ""
+msgstr "fantoche"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:232
 #, fuzzy
@@ -13176,7 +13219,7 @@ msgstr "master"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:236
 msgid "puppetsync"
-msgstr ""
+msgstr "sincronização de fantoches"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:238
 msgid "PI"
@@ -13283,6 +13326,9 @@ msgid ""
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats)"
 msgstr ""
+"Esses operadores têm o mesmo comportamento que o C ++. A divisão inteira é "
+"truncada em vez de retornar um número fracionário, e o operador% está "
+"disponível apenas para ints (\"fmod\" para floats)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:273
 #: ../../docs/getting_started/scripting/gdscript/gdscript_format_string.rst:134
@@ -13881,43 +13927,54 @@ msgid ""
 "specified, the variable will be forced to have always that same type, and "
 "trying to assign an incompatible value will raise an error."
 msgstr ""
+"As variáveis podem, opcionalmente, ter uma especificação de tipo. Quando um "
+"tipo é especificado, a variável será forçada a ter sempre esse mesmo tipo, e "
+"tentar atribuir um valor incompatível gerará um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:565
 msgid ""
 "Types are specified in the variable declaration using a ``:`` (colon) symbol "
 "after the variable name, followed by the type."
 msgstr ""
+"Os tipos são especificados na declaração da variável usando um símbolo ``: "
+"`` (dois-pontos) após o nome da variável, seguido pelo tipo."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:573
 msgid ""
 "If the variable is initialized within the declaration, the type can be "
 "inferred, so it's possible to omit the type name::"
 msgstr ""
+"Se a variável for inicializada dentro da declaração, o tipo pode ser "
+"inferido, então é possível omitir o nome do tipo ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:579
 msgid ""
 "Type inference is only possible if the assigned value has a defined type, "
 "otherwise it will raise an error."
 msgstr ""
+"A inferência de tipos só é possível se o valor atribuído tiver um tipo "
+"definido, caso contrário, irá gerar um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:582
 #: ../../docs/tutorials/shading/shading_reference/shaders.rst:39
 msgid "Valid types are:"
-msgstr ""
+msgstr "Tipos válidos são:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:584
 msgid "Built-in types (Array, Vector2, int, String, etc.)"
-msgstr ""
+msgstr "Tipos internos (Matriz, Vetor2, int, String, etc.)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:585
 msgid "Engine classes (Node, Resource, Reference, etc.)"
-msgstr ""
+msgstr "Classes de motor (nó, recurso, referência etc.)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:586
 msgid ""
 "Constant names if they contain a script resource (``MyScript`` if you "
 "declared ``const MyScript = preload(\"res://my_script.gd\")``)."
 msgstr ""
+"Nomes constantes se eles contiverem um recurso de script (`` MyScript`` se "
+"você declarar `` const MyScript = preload (\"res: //my_script.gd\") ``)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:587
 msgid ""
@@ -13925,15 +13982,18 @@ msgid ""
 "NestedClass`` if you declared ``class NestedClass`` inside the ``class "
 "InnerClass`` in the same scope)"
 msgstr ""
+"Outras classes no mesmo script, respeitando o escopo (`` Inner Class.Nested "
+"Class`` se você declarou `` class Nested Class`` dentro da `` class "
+"InnerClass`` no mesmo escopo)"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:588
 msgid "Script classes declared with the ``class_name`` keyword."
-msgstr ""
+msgstr "Classes de script declaradas com a palavra-chave `` class_name``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:591
 #: ../../docs/tutorials/shading/shading_reference/shading_language.rst:73
 msgid "Casting"
-msgstr ""
+msgstr "Fundição"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:593
 msgid ""
@@ -13941,30 +14001,41 @@ msgid ""
 "needed to coerce a value to be of a certain type, in particular for object "
 "types, you can use the casting operator ``as``."
 msgstr ""
+"Valores atribuídos a variáveis digitadas devem ter um tipo compatível. Se "
+"for necessário forçar um valor a ser de um determinado tipo, em particular "
+"para tipos de objetos, você pode usar o operador de conversão `` as``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:597
 msgid ""
 "Casting between object types results in the same object if the value is of "
 "the same type or a subtype of the cast type."
 msgstr ""
+"A conversão entre tipos de objetos resulta no mesmo objeto se o valor for do "
+"mesmo tipo ou um subtipo do tipo de conversão."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:605
 msgid ""
 "If the value is not a subtype, the casting operation will result in a "
 "``null`` value."
 msgstr ""
+"Se o valor não for um subtipo, a operação de conversão resultará em um valor "
+"`` null``."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:612
 msgid ""
 "For built-in types, they will be forcibly converted if possible, otherwise "
 "the engine will raise an error."
 msgstr ""
+"Para tipos internos, eles serão convertidos à força, se possível, caso "
+"contrário, o mecanismo gerará um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:621
 msgid ""
 "Casting is also useful to have better type-safe variables when interacting "
 "with tree::"
 msgstr ""
+"Casting também é útil para ter melhores variáveis de tipo seguro ao "
+"interagir com a árvore ::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:631
 #: ../../docs/getting_started/scripting/gdscript/gdscript_styleguide.rst:193
@@ -13987,10 +14058,12 @@ msgid ""
 "Although the type of constants is inferred from the assigned value, it's "
 "also possible to add explicit type specification::"
 msgstr ""
+"Embora o tipo de constantes seja inferido a partir do valor atribuído, "
+"também é possível adicionar especificação de tipo explícito:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:653
 msgid "Assigning a value of an incompatible type will raise an error."
-msgstr ""
+msgstr "Atribuir um valor de um tipo incompatível gerará um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:656
 msgid "Enums"
@@ -14045,17 +14118,23 @@ msgid ""
 "return value. Types for arguments can be added in a similar way to "
 "variables::"
 msgstr ""
+"Funções também podem ter especificação de tipo para os argumentos e para o "
+"valor de retorno. Tipos de argumentos podem ser adicionados de forma "
+"semelhante às variáveis:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:705
 msgid ""
 "If a function argument has a default value, it's possible to infer the type::"
 msgstr ""
+"Se um argumento de função tiver um valor padrão, é possível inferir o tipo::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:710
 msgid ""
 "The return type of the function can be specified after the arguments list "
 "using the arrow token (``->``)::"
 msgstr ""
+"O tipo de retorno da função pode ser especificado após a lista de argumentos "
+"usando o token de seta (``->``)::"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:716
 msgid ""
@@ -14064,6 +14143,10 @@ msgid ""
 "functions can return early with the ``return`` keyword, but they can't "
 "return any value."
 msgstr ""
+"Funções que possuem um tipo de retorno **devem** retornar um valor adequado. "
+"Definir o tipo como ``void`` significa que a função não retorna nada. As "
+"funções void podem retornar cedo com a palavra-chave ``return``, mas não "
+"podem retornar nenhum valor."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:725
 msgid ""
@@ -14073,6 +14156,12 @@ msgid ""
 "``if`` block but not after it, the editor will raise an error because if the "
 "block is not executed, the function won't have a valid value to return."
 msgstr ""
+"Funções não void devem **sempre** retornar um valor, então se seu código "
+"possui instruções de ramificação (como um construtor ``if`` / ``else``), "
+"todos os caminhos possíveis devem ter um retorno. Por exemplo, se você tiver "
+"um ``return`` dentro de um bloco ``if``, mas não depois, o editor irá gerar "
+"um erro, porque se o bloco não for executado, a função não terá um valor "
+"válido para retornar."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:733
 msgid "Referencing Functions"
@@ -15706,11 +15795,11 @@ msgstr "Neste guia, você aprenderá:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:8
 msgid "**How to use types in GDScript**"
-msgstr ""
+msgstr "**Como usar tipos no GDScript**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:9
 msgid "That **static types can help you avoid bugs**"
-msgstr ""
+msgstr "Que os **tipos estáticos podem ajudá-lo a evitar erros**"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:11
 msgid ""
@@ -15718,20 +15807,25 @@ msgid ""
 "can use it only in some sensitive GDScript files, use it everywhere, or "
 "write code like you always did!"
 msgstr ""
+"A decisão de onde e como você usa esse novo recurso de linguagem é "
+"inteiramente sua: você pode usá-lo apenas em alguns arquivos GDScript "
+"sensíveis, usá-lo em qualquer lugar ou escrever códigos como sempre fez!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:15
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
 msgstr ""
+"Tipos estáticos podem ser usados em variáveis, constantes, funções, "
+"parâmetros e tipos de retorno."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:20
 msgid "Typed GDScript is available since Godot 3.1."
-msgstr ""
+msgstr "O GDScript digitado está disponível desde Godot 3.1."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:23
 msgid "A brief look at static typing"
-msgstr ""
+msgstr "Uma breve olhada na tipagem estática"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:25
 msgid ""
@@ -15739,6 +15833,10 @@ msgid ""
 "gives you and your teammates more information as you’re working, as the "
 "arguments’ types show up when you call a method."
 msgstr ""
+"Com GDScript digitado, Godot pode detectar ainda mais erros enquanto você "
+"escreve o código! Ele fornece a você e a seus colegas de equipe mais "
+"informações enquanto você trabalha, pois os tipos de argumentos aparecem "
+"quando você chama um método."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:29
 msgid ""
@@ -15747,6 +15845,10 @@ msgid ""
 "with your code should always pass an ``Item`` to the ``Inventory.add`` "
 "method. With types, you can enforce this:"
 msgstr ""
+"Imagine que você esteja programando um sistema de inventário. Você codifica "
+"um nó ``Item``, depois um ``Inventário``. Para adicionar itens ao "
+"inventário, as pessoas que trabalham com seu código devem sempre passar um "
+"``Item`` para o método ``Inventário.add``. Com tipos, você pode impor isso:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:48
 msgid ""
@@ -15756,6 +15858,11 @@ msgid ""
 "issues at runtime, but lets you decide whether or not you want to leave the "
 "code as it is. More on that in a moment."
 msgstr ""
+"Outra vantagem significativa do GDScript digitado é o novo **sistema de "
+"alerta**. A partir da versão 3.1, Godot dá avisos sobre o seu código à "
+"medida que você o escreve: o motor identifica seções de seu código que podem "
+"levar a problemas em tempo de execução, mas permite que você decida se "
+"deseja ou não deixar o código como está. Mais sobre isso em um momento."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:54
 msgid ""
@@ -15763,12 +15870,17 @@ msgid ""
 "see the difference between a dynamic and a static typed completion options "
 "for a class called ``PlayerController``."
 msgstr ""
+"Os tipos estáticos também oferecem melhores opções de conclusão de código. "
+"Abaixo, você pode ver a diferença entre opções dinâmica e de estática "
+"completa para uma classe chamada ``PlayerController``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:58
 msgid ""
 "You’ve probably stored a node in a variable before, and typed a dot to be "
 "left with no autocomplete suggestions:"
 msgstr ""
+"Você provavelmente armazenou um nó em uma variável antes e digitou um ponto "
+"para ficar sem sugestões de preenchimento automático:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:64
 msgid ""
@@ -15776,12 +15888,18 @@ msgid ""
 "you’re passing to the function. If you write the type explicitly however, "
 "you will get all public methods and variables from the node:"
 msgstr ""
+"Isto é devido ao código dinâmico. Godot não pode saber qual nó ou tipo de "
+"valor você está passando para a função. Se você escrever o tipo "
+"explicitamente no entanto, você obterá todos os métodos e variáveis públicos "
+"do nó:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:71
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
 "Time compilation and other compiler improvements are already on the roadmap!"
 msgstr ""
+"No futuro, o GDScript digitado também aumentará o desempenho do código: a "
+"compilação Just-In-Time e outras melhorias do compilador já estão no roteiro!"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:75
 msgid ""
@@ -15793,10 +15911,17 @@ msgid ""
 "clearer and the more structured the code, the faster it is to understand, "
 "the faster you can move forward."
 msgstr ""
+"No geral, a programação digitada proporciona uma experiência mais "
+"estruturada. Ajuda a evitar erros e melhora o aspecto de autodocumentação "
+"dos seus scripts. Isso é especialmente útil quando você trabalha em equipe "
+"ou em um projeto de longo prazo: estudos mostram que os desenvolvedores "
+"passam a maior parte do tempo lendo o código de outras pessoas ou scripts "
+"que escreveram no passado e esqueceram. Quanto mais claro e mais estruturado "
+"o código, mais rápido será entender, mais rápido você poderá avançar."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:84
 msgid "How to use static typing"
-msgstr ""
+msgstr "Como usar a digitação estática"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:86
 msgid ""
@@ -15804,24 +15929,29 @@ msgid ""
 "variable’s name, followed by its type. E.g. ``var health: int``. This forces "
 "the variable's type to always stay the same:"
 msgstr ""
+"Para definir o tipo de uma variável ou uma constante, escreva dois pontos "
+"após o nome da variável, seguido por seu tipo. Por exemplo. ``var health: "
+"int``. Isso força o tipo da variável a permanecer sempre o mesmo:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:95
 msgid ""
 "Godot will try to infer types if you write a colon, but you omit the type:"
 msgstr ""
+"Godot tentará inferir tipos se você escrever dois pontos, mas omite o tipo:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:104
 msgid "Currently you can use three types of… types:"
-msgstr ""
+msgstr "Atualmente você pode usar três tipos de… tipos:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:106
 msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
-msgstr ""
+msgstr ":ref:`Embutido <doc_gdscript_builtin_types>`"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:107
 msgid ""
 "Core classes and nodes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)"
 msgstr ""
+"Classes e nós centrais (``Objeto``, ``Nó``, ``Area2D``, ``Camera2D``, etc.)"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:109
 msgid ""
@@ -15829,6 +15959,8 @@ msgid ""
 "<doc_scripting_continued_class_name>` feature to register types in the "
 "editor."
 msgstr ""
+"Suas próprias classes personalizadas. Veja o novo recurso: ref: `class_name "
+"<doc_scripting_continued_class_name>` para registrar tipos no editor."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:114
 msgid ""
@@ -15836,6 +15968,9 @@ msgid ""
 "automatically from the assigned value. But you can still do so to make the "
 "intent of your code clearer."
 msgstr ""
+"Você não precisa escrever dicas de tipo para constantes, já que Godot o "
+"define automaticamente a partir do valor atribuído. Mas você ainda pode "
+"fazer isso para tornar a intenção do seu código mais clara."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:117
 #, fuzzy
@@ -15848,12 +15983,17 @@ msgid ""
 "two ways to use them in scripts. The first method is to preload the script "
 "you want to use as a type in a constant:"
 msgstr ""
+"Você pode usar qualquer classe, incluindo suas classes personalizadas, como "
+"tipos. Existem duas maneiras de usá-los em scripts. O primeiro método é pré-"
+"carregar o script que você deseja usar como um tipo em uma constante:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:128
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
 "the example above, your Rifle.gd would look like this:"
 msgstr ""
+"O segundo método é usar a palavra-chave `` class_name`` quando você cria. "
+"Para o exemplo acima, o seu Rifle.gd ficaria assim:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:136
 msgid ""
@@ -15861,6 +16001,9 @@ msgid ""
 "editor, and you can use it anywhere, without having to preload it into a "
 "constant:"
 msgstr ""
+"Se você usa ``class_name``, Godot registra o tipo Rifle globalmente no "
+"editor, e você pode usá-lo em qualquer lugar, sem ter que pré-carregá-lo em "
+"uma constante:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:145
 #, fuzzy
@@ -15872,6 +16015,8 @@ msgid ""
 "Type casting is a key concept in typed languages. Casting is the conversion "
 "of a value from one type to another."
 msgstr ""
+"A conversão de tipos é um conceito-chave em idiomas tipados. Casting é a "
+"conversão de um valor de um tipo para outro."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:150
 #, fuzzy
@@ -15894,6 +16039,10 @@ msgid ""
 "use this type. This forces the variable to stick to the ``PlayerController`` "
 "type:"
 msgstr ""
+"Você pode verificar se este ``PhysicsBody2D`` é o seu Jogador com a palavra-"
+"chave ``as`` e usando os dois pontos ``:`` novamente para forçar a variável "
+"a usar este tipo. Isso força a variável a se ater ao tipo "
+"``PlayerController``:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:170
 #, fuzzy
@@ -15913,6 +16062,7 @@ msgid ""
 "If you try to cast with a built-in type and it fails, Godot will throw an "
 "error."
 msgstr ""
+"Se você tentar moldar com um tipo embutido e falhar, Godot lançará um erro."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:180
 #, fuzzy
@@ -15927,6 +16077,12 @@ msgid ""
 "information to know if an instruction will trigger an error or not at "
 "runtime."
 msgstr ""
+"Você também pode usar a moldagem para garantir linhas seguras. As linhas "
+"seguras são uma nova ferramenta do Godot 3.1 para lhe dizer quando linhas de "
+"código ambíguas são seguras para o tipo. Como você pode misturar e combinar "
+"códigos digitados e dinâmicos, às vezes, Godot não tem informações "
+"suficientes para saber se uma instrução disparará um erro ou não em tempo de "
+"execução."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:188
 #, fuzzy
@@ -15950,25 +16106,33 @@ msgid ""
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
+"Você pode usar casting para dizer a Godot o tipo que você espera quando você "
+"obtém um nó: `` ($ Timer as Timer) ``, `` ($ Player as KinematicBody2D) `` "
+"etc. Godot irá assegurar que o tipo funcione e se sim , o número da linha "
+"ficará verde à esquerda do editor de script."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:204
 msgid "Safe vs Unsafe Line"
-msgstr ""
+msgstr "Linha Segura vs Insegura"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:208
 msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr ""
+"Você pode desativar linhas seguras ou alterar suas cores nas configurações "
+"do editor."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:211
 msgid "Define the return type of a function with the arrow ->"
-msgstr ""
+msgstr "Defina o tipo de retorno de uma função com a seta ->"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:213
 msgid ""
 "To define the return type of a function, write a dash and a right angle "
 "bracket ``->`` after it’s declaration, followed by the return type:"
 msgstr ""
+"Para definir o tipo de retorno de uma função, coloque um traço e o símbolo "
+"de menor que ``->`` depois de sua declaração, seguido pelo tipo de retorno:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:221
 msgid ""
@@ -15978,11 +16142,11 @@ msgstr ""
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:230
 msgid "You can also use your own nodes as return types:"
-msgstr ""
+msgstr "Você também pode usar seus próprios nós como tipos de retorno:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:245
 msgid "Typed or dynamic: stick to one style"
-msgstr ""
+msgstr "Tipada ou dinâmica: Adote um estilo"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:247
 msgid ""
@@ -15991,6 +16155,11 @@ msgid ""
 "for your peers. It’s easier for everyone to work together if you follow the "
 "same guidelines, and faster to read and understand other people’s code."
 msgstr ""
+"GDScript tipado e GDScript dinâmico podem coexistir em um mesmo projeto. Mas "
+"eu recomendo adotar um dos dois estilos para manter a consistência do seu "
+"código base. Facilita para todos trabalharem juntos se vocês seguirem as "
+"mesmas diretrizes, a acelera a leitura e o entendimento do código de outras "
+"pessoas."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:253
 msgid ""
@@ -15998,10 +16167,13 @@ msgid ""
 "discussed above. Here’s an example of the same, empty script, in a dynamic "
 "style:"
 msgstr ""
+"Código tipado leva mais tempo para ser escrito, mas você terá os benefícios "
+"discutidos acima. Aqui está um exemplo do mesmo script vazio utilizando a "
+"tipagem dinâmica:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:265
 msgid "And with static typing:"
-msgstr ""
+msgstr "E com a tipagem estática:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:275
 msgid ""
@@ -16009,16 +16181,21 @@ msgid ""
 "Signal callbacks, like any methods, can also use types. Here’s a "
 "``body_entered`` signal in a dynamic style:"
 msgstr ""
+"Como você pode ver, você também pode usar tipos com os métodos virtuais da "
+"engine. Sinais de chamada de retorno, como qualquer método, também pode usar "
+"tipos. Aqui um sinal ``body_entered`` com a tipagem dinâmica:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:284
 msgid "And the same callback, with type hints:"
-msgstr ""
+msgstr "E a mesma chamada de retorno, com as dicas de tipo:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:291
 msgid ""
 "You’re free to replace, e.g. the ``PhysicsBody2D``, with your own type, to "
 "cast parameters automatically:"
 msgstr ""
+"Você é livre pra substituir, ex.: O ``PhysicsBody2D``, com seu próprio tipo, "
+"para converter os parâmetros automaticamente:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:301
 msgid ""
@@ -16027,6 +16204,11 @@ msgid ""
 "anything else, like an ``Area2D``, or any node that doesn’t extend "
 "``Bullet``, the ``bullet`` variable will be ``null``."
 msgstr ""
+"Aqui a variável ``bullet`` pode guardar qualquer objeto "
+"``CollisionObject2D``, mas temos que garantir que é o nosso ``Bullet``, um "
+"nó que criamos para o nosso projeto. Se for qualquer outra coisa, como uma "
+"``Area2D``, ou qualquer nó que não estenda ``Bullet``, a variável ``bullet`` "
+"será ``null``."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:307
 #, fuzzy
@@ -16039,12 +16221,17 @@ msgid ""
 "mistakes that are hard to spot during development, and that may lead to "
 "runtime errors."
 msgstr ""
+"O sistema de alerta complementa o GDScript tipado. Ele está aqui para te "
+"ajudar a evitar erros que são difíceis de perceber durante o "
+"desenvolvimento, e que podem levar a erros em tempo de execução."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:313
 msgid ""
 "You can configure warnings in the Project Settings under a new section "
 "called ``GDScript``:"
 msgstr ""
+"Você pode configurar os alertas nas configurações do projeto, na nova seção "
+"chamada ``GDScript``:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:319
 #, fuzzy
@@ -16056,6 +16243,8 @@ msgid ""
 "You can find a list of warnings for the active GDScript file in the script "
 "editor’s status bar. The example below has 3 warnings:"
 msgstr ""
+"Na barra de status do editor de scripts, você pode achar uma lista de "
+"alertas para o arquivo GDScript ativo. O exemplo abaixo tem três alertas:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:327
 #, fuzzy
@@ -16070,6 +16259,11 @@ msgid ""
 "corresponding line and the code won’t trigger the corresponding warning "
 "anymore:"
 msgstr ""
+"Para ignorar alertas específicos em um arquivo, insira um comentário "
+"especial na forma de ``#warning-ignore:warning-id``, ou clique no link de "
+"ignorar, à direita da descrição do alerta, assim a Godot irá adicionar um "
+"comentário acima da linha correspondente e o código não irá mais disparar o "
+"alerta correspondente:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:338
 #, fuzzy
@@ -16084,24 +16278,31 @@ msgid ""
 "on this option. Here’s the same file as the previous example with warnings "
 "as errors turned on:"
 msgstr ""
+"Alertas não irão previnir a execução do jogo, mas você pode transformá-los "
+"em erros se preferir. Dessa maneira seu jogo não irá compilar a menos que "
+"todos os alertas sejam corrigidos. Acesse a seção ``GDScript`` nas "
+"configurações do projeto para ativar essa opção. Aqui o mesmo arquivo do "
+"exemplo anterior configurado com os alertas sendo erros:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:349
 msgid "warnings as errors"
-msgstr ""
+msgstr "alertas como erros"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:352
 msgid "Cases where you can’t specify types"
-msgstr ""
+msgstr "Casos onde você não pode especificar os tipos"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:354
 msgid ""
 "To wrap up this introduction, let’s cover a few cases where you can’t use "
 "type hints. All the examples below **will trigger errors**."
 msgstr ""
+"Para finalizar essa introdução, vamos abordar alguns poucos casos onde você "
+"não pode usar tipos. Todos os exemplos abaixo **vão disparar erros**."
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:357
 msgid "You can’t use Enums as types:"
-msgstr ""
+msgstr "Você não pode usar Enums como tipos:"
 
 #: ../../docs/getting_started/scripting/gdscript/static_typing.rst:364
 msgid ""
@@ -47809,7 +48010,7 @@ msgstr "Ou de modo alternativo, preencha através de função:"
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:112
 #: ../../docs/tutorials/viewports/viewports.rst:38
 msgid "Input"
-msgstr ""
+msgstr "Entrada"
 
 #: ../../docs/tutorials/gui/custom_gui_controls.rst:114
 msgid ""

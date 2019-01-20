@@ -70,7 +70,7 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2019-01-14 16:05+0100\n"
-"PO-Revision-Date: 2019-01-09 09:13+0000\n"
+"PO-Revision-Date: 2019-01-20 08:53+0000\n"
 "Last-Translator: Александр <ol-vin@mail.ru>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ru/>\n"
@@ -399,7 +399,7 @@ msgid ""
 "information about the engine, its history, its licensing, authors, etc. It "
 "also contains the :ref:`doc_faq`."
 msgstr ""
-"Секция :ref:`sec-general`содержит это введение, информацию о движке, его "
+"Секция :ref:`sec-general` содержит это введение, информацию о движке, его "
 "историю, информацию о лицензиях, авторах, и прочее. Она также содержит :ref:"
 "`doc_faq`."
 
@@ -459,7 +459,7 @@ msgid ""
 "the generated files of the documentation are not meant to be modified. See :"
 "ref:`doc_updating_the_class_reference` for details."
 msgstr ""
-"Наконец, :ref:`sec-class-ref`это документация по Godot API, которая также "
+"Наконец, :ref:`sec-class-ref` это документация по Godot API, которая также "
 "доступна напрямую из редактора скриптов в движке. Она генерируется "
 "автоматически из файла в основном кодовом репозитории, сгенерированные файлы "
 "документации не должны быть изменены. Смотрите :ref:"
@@ -1041,7 +1041,7 @@ msgid ""
 "determine where controls should stay and move. If UIs are more complex, "
 "consider learning about Containers."
 msgstr ""
-"Для пользовательских интерфейсов используйте :ref: `закрепление "
+"Для пользовательских интерфейсов используйте :ref:`закрепление "
 "<doc_size_and_anchors>`, чтобы определить, где элементы управления должны "
 "оставаться и перемещаться. Если пользовательские интерфейсы являются очень "
 "сложными, подумайте о том, как использовать контейнеры."
@@ -1073,8 +1073,8 @@ msgid ""
 "<doc_making_plugins>` and tool scripts."
 msgstr ""
 "Для расширения Godot, например, для создания плагинов редактора Godot или "
-"добавления поддержки дополнительных языков, взгляните на :ref: "
-"`EditorPlugins <doc_making_plugins>` и инструмент-скрипты (tool скрипты)."
+"добавления поддержки дополнительных языков, взгляните на :ref:`EditorPlugins "
+"<doc_making_plugins>` и инструмент-скрипты (tool скрипты)."
 
 #: ../../docs/about/faq.rst:228
 msgid "Also, see the official blog posts on these topics:"
@@ -2247,8 +2247,8 @@ msgstr "Резюме"
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:9
 msgid "Instancing has many handy uses. At a glance, with instancing you have:"
 msgstr ""
-"У экземпляров есть много полезных применений. С первого взгляда, с помощью "
-"экземпляров вы можете:"
+"У экземпляров есть много полезных применений. С помощью экземпляров вы "
+"можете:"
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:11
 msgid "The ability to subdivide scenes and make them easier to manage."
@@ -2257,6 +2257,8 @@ msgstr "Возможность разделить сцены и сделать �
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:12
 msgid "A tool to manage and edit multiple node instances at once."
 msgstr ""
+"Инструмент для управления и редактирования нескольких экземпляров узлов "
+"одновременно."
 
 #: ../../docs/getting_started/step_by_step/instancing_continued.rst:13
 msgid ""
@@ -14710,18 +14712,26 @@ msgid ""
 "value 4 and ``Wind`` corresponds to value 8. Usually, constants should be "
 "defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
+"В этом примере у ``Fire`` значение 1, у ``Water`` - 2, у ``Earth`` - 4 и у "
+"``Wind`` - 8. Обычно константы должны быть определены соответствующим "
+"образом (например, ``const ELEMENT_WIND = 8`` и так далее)."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1332
+#, fuzzy
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, boolean variables should be exported instead."
 msgstr ""
+"Использование битовых флагов требует некоторого понимания побитовых "
+"операций. Если вы сомневаетесь, вместо этого следует экспортировать булевые "
+"переменные."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1336
 msgid "Exporting arrays"
-msgstr ""
+msgstr "Экспорт массивов"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1338
+#, fuzzy
 msgid ""
 "Exporting arrays works, but with an important caveat: While regular arrays "
 "are created local to every class instance, exported arrays are *shared* "
@@ -14729,10 +14739,16 @@ msgid ""
 "cause them to change in all other instances. Exported arrays can have "
 "initializers, but they must be constant expressions."
 msgstr ""
+"Экспорт массивов работает, но с важной оговоркой: хотя обычные массивы "
+"создаются локально для каждого экземпляра класса, экспортируемые массивы "
+"являются *общими* для всех экземпляров. Это означает, что их редактирование "
+"в одном из экземпляров приведет к их изменению во всех других экземплярах. "
+"Экспортируемые массивы могут иметь инициализаторы, но они должны быть "
+"постоянными выражениями."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1375
 msgid "Setters/getters"
-msgstr ""
+msgstr "Сеттеры/геттеры"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1377
 msgid ""
@@ -14740,12 +14756,17 @@ msgid ""
 "whatever reason. It may also be desired to encapsulate its access in some "
 "way."
 msgstr ""
+"Часто полезно знать, когда переменная, входящая в состав класса, изменяется "
+"по какой-то причине. Возможно вы хотите ее инкапсулировать."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1380
 msgid ""
 "For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
 "keyword. It is used directly after a variable definition:"
 msgstr ""
+"Для этого GDScript предоставляет синтаксис *setter/getter*, используя "
+"ключевое слово ``setget``. Использовать непосредственно после определения "
+"переменной:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1387
 msgid ""
@@ -14756,26 +14777,38 @@ msgid ""
 "``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
 "``return`` the desired value. Below is an example:"
 msgstr ""
+"Всякий раз, когда значение ``variable`` изменяется *внешним* источником (т."
+"е. не от локального использования в классе), вызывается функция *setter* "
+"(``setterfunc`` выше). Это происходит *до* того, как значение изменится. "
+"*Сеттер* должен решить, что делать с новым значением. И наоборот, когда "
+"функция ``variable`` доступна, функция *getter* (``getterfunc`` выше) должна "
+"``return(возвращать)`` желаемое значение. Ниже приведен пример:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1404
+#, fuzzy
 msgid "Either of the *setter* or *getter* functions can be omitted:"
-msgstr ""
+msgstr "Любая из функций *setter* или *getter* может быть пропущена:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1413
+#, fuzzy
 msgid ""
 "Get/Setters are especially useful when exporting variables to editor in tool "
 "scripts or plugins, for validating input."
 msgstr ""
+"Гет/Сетеры особенно полезны при экспорте переменных в редактор в скриптах "
+"инструментах или плагинах для проверки ввода."
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1416
 msgid ""
 "As said, *local* access will *not* trigger the setter and getter. Here is an "
 "illustration of this:"
 msgstr ""
+"Как уже говорилось, *локальный* доступ *не будет* запускать сеттер и геттер. "
+"Вот иллюстрация этого:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1431
 msgid "Tool mode"
-msgstr ""
+msgstr "Режим Инструмента"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1433
 msgid ""
@@ -14785,6 +14818,11 @@ msgid ""
 "doing so). For this, the ``tool`` keyword exists and must be placed at the "
 "top of the file:"
 msgstr ""
+"Скрипты, по умолчанию, не запускаются внутри редактора и могут быть изменены "
+"только экспортируемые свойства. В некоторых случаях желательно, чтобы они "
+"выполнялись внутри редактора (до тех пор, пока они не запустится код игры "
+"или не сделают этого вручную). Для этого существует ключевое слово ``tool``, "
+"которое должно быть в верхней части файла:"
 
 #: ../../docs/getting_started/scripting/gdscript/gdscript_basics.rst:1448
 msgid "Memory management"
